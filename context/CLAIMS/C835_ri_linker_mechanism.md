@@ -110,6 +110,46 @@ Regardless of interpretation, these are confirmed:
 4. **Sparse connectivity** - Only 0.6% of RI serve as linkers
 5. **Self-reference** - f87r has a self-loop (ctheody)
 
+## Hub Destination Characterization (2026-01-30)
+
+From linker_destination_characterization.py and linker_destination_followup.py:
+
+**Hub destinations are structurally typical:**
+
+| Destination | Tokens | Paras | RI% | z-tokens | z-paras |
+|-------------|--------|-------|-----|----------|---------|
+| f93v | 87 | 2 | 6.9% | -0.27 | -0.28 |
+| f32r | 77 | 2 | 7.8% | -0.52 | -0.28 |
+| Population | 98 (mean) | 2.8 | 8.7% | - | - |
+
+No z-score exceeds ±1. Destinations are NOT structural outliers.
+
+**Section concentration:** All 4 destinations and 8/9 source folios are in section H (herbal). Only f89v1 is in section B.
+
+**Linker positions in destinations:**
+
+| Linker | Destination | Position in Dest | Zone |
+|--------|-------------|------------------|------|
+| cthody | f93v | 1 | INITIAL |
+| ctho | f32r | 13 | MIDDLE |
+| ctheody | f87r | NOT FOUND | - |
+| qokoiiin | f37v | NOT FOUND | - |
+
+Linkers do NOT consistently appear as INITIAL in their destinations. The link is **folio-to-folio**, not necessarily paragraph-to-paragraph.
+
+**Source folio vocabulary similarity (Jaccard):**
+
+| Sources | Jaccard |
+|---------|---------|
+| f21r-f53v (cthody) | 0.77 |
+| f21r-f54r (cthody) | 0.59 |
+| f53v-f54r (cthody) | 0.72 |
+| f27r-f30v (ctho) | 0.50 |
+| f27r-f42r (ctho) | 0.50 |
+| f30v-f42r (ctho) | 0.52 |
+
+High Jaccard (0.50-0.77) indicates source folios share substantial vocabulary beyond the linker token. This favors the **OR (alternatives)** interpretation - sources are variations/alternatives, not distinct ingredients.
+
 ## Provenance
 
 - t18_ri_link_network.json: total_links=12, forward_links=8, mean_distance=+6.6

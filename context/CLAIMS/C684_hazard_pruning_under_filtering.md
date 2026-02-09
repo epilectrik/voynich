@@ -4,7 +4,13 @@
 
 ## Finding
 
-A-record filtering **eliminates all 17 forbidden transitions** in 83.9% of records. Filtering is a natural hazard suppression mechanism: by restricting the B vocabulary, most records remove the specific token pairs that constitute hazard transitions. The remaining 16.1% retain a mean of only 1.3 active transitions (max 5).
+A-record filtering **eliminates all 17 forbidden transitions** in 83.9% of records.
+
+> **Aggregation Note (2026-01-30):** This constraint analyzes at line level (1,562 units).
+> Per C881, A records are paragraphs (342 units). Per C885, the operational unit for
+> A-B vocabulary correspondence is the A FOLIO (114 units, 81% coverage).
+
+Filtering is a natural hazard suppression mechanism: by restricting the B vocabulary, most records remove the specific token pairs that constitute hazard transitions. The remaining 16.1% retain a mean of only 1.3 active transitions (max 5).
 
 ## Key Numbers
 

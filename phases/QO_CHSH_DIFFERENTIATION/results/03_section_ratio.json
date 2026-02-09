@@ -1,0 +1,48 @@
+{
+  "sections": {
+    "B": {
+      "qo": 2270,
+      "chsh": 1716,
+      "qo_pct": 56.9,
+      "chsh_pct": 43.1,
+      "ratio": 1.32
+    },
+    "C": {
+      "qo": 371,
+      "chsh": 287,
+      "qo_pct": 56.4,
+      "chsh_pct": 43.6,
+      "ratio": 1.29
+    },
+    "H": {
+      "qo": 796,
+      "chsh": 899,
+      "qo_pct": 47.0,
+      "chsh_pct": 53.0,
+      "ratio": 0.89
+    },
+    "S": {
+      "qo": 3390,
+      "chsh": 2736,
+      "qo_pct": 55.3,
+      "chsh_pct": 44.7,
+      "ratio": 1.24
+    },
+    "T": {
+      "qo": 166,
+      "chsh": 183,
+      "qo_pct": 47.6,
+      "chsh_pct": 52.4,
+      "ratio": 0.91
+    }
+  },
+  "global": {
+    "qo": 6993,
+    "chsh": 5821,
+    "qo_pct": 54.6,
+    "chsh_pct": 45.4,
+    "ratio": 1.2
+  },
+  "chi2": 57.92,
+  "p_value": 7.934628809930958e-12,
+  "significant": 

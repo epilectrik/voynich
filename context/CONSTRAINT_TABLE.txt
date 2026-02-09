@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 746 constraints | 2026-01-29
+CONSTRAINT_REFERENCE v2.6 | 794 constraints | 2026-02-06
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -245,8 +245,8 @@ C361	Adjacent B folios share 1.30x more vocabulary	2	GLOBAL	in: organization
 C362	Regime Vocabulary Fingerprints	2	GLOBAL	in: morphology
 C363	Vocabulary Independent of Profiles	2	GLOBAL	in: morphology
 C364	Hub-Peripheral Structure	2	GLOBAL	in: morphology
-C365	LINK tokens are SPATIALLY UNIFORM within folios and lines: no positional clustering (p=0.005), run lengths match random (z=0.14), line-position uniform (p=0.80); LINK has no positional marking function (LDF, Tier 2)	2	GLOBAL	in: morphology
-C366	LINK marks GRAMMAR STATE TRANSITIONS: preceded by AUXILIARY (1.50x), FLOW_OPERATOR (1.30x); followed by HIGH_IMPACT (2.70x), ENERGY_OPERATOR (1.15x); p<10^-18; LINK is boundary between monitoring and intervention phases (LDF, Tier 2)	2	GLOBAL	in: morphology
+C365	~~LINK tokens are SPATIALLY UNIFORM~~ **REFUTED by C805**	2	GLOBAL	in: morphology
+C366	LINK marks GRAMMAR STATE TRANSITIONS **REVISED by C804**	2	GLOBAL	in: morphology
 C367	Sections are QUIRE-ALIGNED (4.3x)	2	B	in: organization
 C368	Regime Clustering in Quires	2	B	in: organization
 C369	Quire Vocabulary Continuity	2	B	in: organization
@@ -272,14 +272,14 @@ C387	QO as Phase-Transition Hub	2	GLOBAL	in: morphology
 C388	Self-Transition Enrichment	2	GLOBAL	in: morphology
 C389	BIGRAM-DOMINANT local determinism (H=0.41 bits)	2	GLOBAL	in: grammar_system
 C390	No Recurring N-Grams	2	GLOBAL	in: morphology
-C391	TIME-REVERSAL SYMMETRY	2	GLOBAL	in: grammar_system
+C391	CONDITIONAL ENTROPY SYMMETRY (H(X|past)=H(X|future); constraint symmetry, not transition symmetry - see C886)	2	GLOBAL	in: grammar_system
 C392	ROLE-LEVEL CAPACITY (97.2% observed)	2	GLOBAL	in: grammar_system
 C393	FLAT TOPOLOGY (diameter=1)	2	GLOBAL	in: grammar_system
 C394	INTENSITY-ROLE DIFFERENTIATION	2	GLOBAL	in: operations
 C395	DUAL CONTROL STRATEGY	2	GLOBAL	in: operations
 C396	AUXILIARY Invariance	2	GLOBAL	in: morphology
 C397	qo-prefix = escape route (25-47%)	2	GLOBAL	in: grammar_system
-C398	Escape Role Stratification	2	GLOBAL	in: morphology
+C398	Post-Source Role Distribution (REVISED)	2	GLOBAL	in: morphology
 C399	Safe Precedence Pattern	2	GLOBAL	in: morphology
 C400	BOUNDARY HAZARD DEPLETION (5-7x)	2	GLOBAL	in: grammar_system
 C401	Self-Transition Dominance	2	GLOBAL	in: morphology
@@ -318,7 +318,7 @@ C438	AZC Practically Complete Basis	2	AZC	in: azc_system
 C439	Folio-Specific HT Profiles	2	AZC	in: azc_system
 C440	Uniform B-to-AZC Sourcing	2	AZC	in: azc_system
 C441	Vocabulary-Activated Constraints	2	AZC	in: azc_system
-C442	AZC Compatibility Filter	2	AZC	in: azc_system
+C442	AZC Compatibility Grouping	2	AZC	in: azc_system
 C443	Positional Escape Gradient	2	AZC	in: azc_system
 C444	A-Type Position Distribution	2	AZC	in: azc_system
 C450	HT Quire Clustering (H=47.20, p<0.0001, eta-sq=0.150)	2	HT/GLOBAL	-> C450_ht_quire_clustering.md
@@ -446,7 +446,7 @@ C558	**Singleton Class Structure** (only 3 singletons: Class 10/11/12; 2/3 CC cl
 C560	**Class 17 ol-Derived Control Operators** (9 tokens all PREFIX:ol + ENERGY-morph; BIO 1.72x enriched; PHARMA 0 occurrences; REGIME_3 1.90x; non-singleton CC is ol-derived)	2	B	-> C560_class17_ol_derivation.md
 C561	**Class 9 or->aiin Directional Bigram** (87.5% of chains are or->aiin; zero aiin->aiin; directional grammatical unit; HERBAL 21.7% chain rate; refines C559 "self-chaining")	2	B	-> C561_class9_or_aiin_bigram.md
 C562	**FLOW Role Structure** (19 tokens, 4.7% corpus; final-biased 17.5%; Class 40 59.7% final, ary 100% final; PHARMA 1.38x enriched, BIO 0.83x; ENERGY inverse pattern)	2	B	-> C562_flow_role_structure.md
-C563	**AX Internal Positional Stratification** (20 AX classes split into INIT/5, MED/9, FINAL/6; H=213.9 p=3.6e-47; 71.8% INIT-before-FINAL; Cohen's d=0.69; positional gradient not clusters)	2	B	-> C563_ax_positional_stratification.md
+C563	**AX Internal Positional Stratification** (19 AX classes split into INIT/5, MED/8, FINAL/6; H=208.8 p=4.6e-46; 71.8% INIT-before-FINAL; Cohen's d=0.69; positional gradient not clusters)	2	B	-> C563_ax_positional_stratification.md
 C564	**AX Morphological-Positional Correspondence** (AX_INIT: 17.5% articulator; AX_MED: ok/ot 88.8%; AX_FINAL: prefix-light 60.9%, zero articulators; prefix family predicts position)	2	B	-> C564_ax_morphological_positional_correspondence.md
 C565	**AX Execution Scaffold Function** (AX mirrors named role positions; 0% hazard; 1.09x self-chaining; AX_FINAL enriched R1 39.4% BIO 40.9%; structural frame not functional operations)	2	B	-> C565_ax_scaffold_function.md
 C566	**UN Token Resolution** (7042 UN = 30.5% of B; 74.1% hapax, 74.8% single-folio; morphologically normal; cosurvival threshold artifact; NOT a separate role)	2	B	-> C566_un_token_resolution.md
@@ -548,7 +548,7 @@ C661	**PREFIX x MIDDLE Behavioral Interaction** (within-MIDDLE between-PREFIX JS
 C662	**PREFIX Role Reclassification** (mean 75% class reduction median 82%; EN PREFIX->EN class 94.1%; AX PREFIX->AX/FQ 70.8%; 50.4% of pairs reduce to <20% of MIDDLE's classes)	2	B	-> C662_prefix_role_reclassification.md
 C663	**Effective PREFIX x MIDDLE Inventory** (1190 observed, 501 effective pairs, 1.24x expansion; best sil=0.350 k=2 vs C657 0.237; k=3 degenerate; binary EN/non-EN split)	2	B	-> C663_effective_prefix_middle_inventory.md
 C664	**Role Profile Trajectory** (AX increases late rho=+0.082 p<0.001 Q1=15.4% Q4=18.1%; EN marginal decline; CC/FL/FQ flat; EN slope regime-dependent KW p=0.038; folio trajectory clustering k=2 sil=0.451 two outliers)	2	B	-> C664_role_profile_trajectory.md
-C665	**LINK Density Trajectory** (stationary within folios rho=+0.020 p=0.333 KW p=0.559; extends C365 line-level uniformity to meso-temporal; REGIME_3 steepest +0.051 but NS)	2	B	-> C665_link_density_trajectory.md
+C665	**LINK Density Trajectory** (stationary within folios rho=+0.020 p=0.333 KW p=0.559; folio-scale stationarity independent of C365 line-level claim refuted by C805; REGIME_3 steepest +0.051 but NS)	2	B	-> C665_link_density_trajectory.md
 C666	**Kernel Contact Trajectory** (k/h/e all stationary within folios; e dominates ~29% flat; k rare ~0.2% flat; k/e ratio flat rho=-0.023 p=0.29; extends C458 between-folio clamping to within-folio)	2	B	-> C666_kernel_contact_trajectory.md
 C667	**Escape/Hazard Density Trajectory** (hazard density flat rho=+0.009 p=0.650; 0 forbidden events in corpus; escape density flat; Q4 escape efficiency drops 0.579 vs 0.636; REGIME_2/3 late hazard increase)	2	B	-> C667_escape_hazard_trajectory.md
 C668	**Lane Balance Trajectory** (QO fraction declines rho=-0.058 p=0.006 Q1=46.3% Q4=41.3%; REGIME_2 strongest -9.9pp; REGIME_4 flat +1.4pp; CHSH-ward drift = energy-to-stabilization shift)	2	B	-> C668_lane_balance_trajectory.md
@@ -750,3 +750,51 @@ C877	Role transition grammar: EN->EN 38.5%, CC->EN 37.7%, FQ->EN 29.5%	2	B	-> C8
 C878	Section program variation: BIO high EN, HERBAL_B high FL/FQ	2	B	-> C878_section_program_variation.md
 C879	Process domain: batch processing, 59.2% forward bias	3	B	-> C879_process_domain_verdict.md
 C880	Integrated control model: batch processing with escape handling	3	B	-> C880_integrated_control_model.md
+C881	A Record Paragraph Structure (paragraphs not lines; RI in first line 3.84x baseline)	2	A	-> C881_a_record_paragraph_structure.md
+C882	PRECISION Kernel Signature (ESCAPE+AUX shows k+e 3x baseline, suppressed h)	2	A	-> C882_precision_kernel_signature.md
+C883	Handling-Type Distribution Alignment (66% CAREFUL matches 60% Brunschwig degree-2)	3	A	-> C883_handling_distribution_alignment.md
+C884	PRECISION-Animal Correspondence (6 paragraphs pass kernel validation as animal candidates)	3	A	-> C884_precision_animal_correspondence.md
+C885	A-B Vocabulary Correspondence (A folios provide 81% coverage for B paragraphs; single A paragraphs insufficient at 58%)	2	A-B	-> C885_ab_vocabulary_correspondence.md
+C886	Transition Probability Directionality (P(A→B) uncorrelated with P(B→A), r=-0.055; symmetric constraints but directional execution)	2	B	-> C886_transition_directionality.md
+C887	WITHOUT-RI Backward Reference (1.23x backward/forward asymmetry; highest overlap 0.228 when following WITH-RI)	2	A	-> C887_without_ri_backward_reference.md
+C888	Section-Specific WITHOUT-RI Function (H: ct 3.87x cross-ref; P: qo/ok/ol safety protocols)	2	A	-> C888_section_specific_without_ri.md
+C889	ct-ho Reserved PP Vocabulary (MIDDLEs h/hy/ho 98-100% ct-prefixed; extends C837 to PP level)	2	A	-> C889_ct_ho_reserved_vocabulary.md
+C890	Recovery Rate-Pathway Independence (FQ rate and post-FQ kernel vary independently; extends C458)	2	B	-> C890_recovery_rate_pathway_independence.md
+C891	ENERGY-FREQUENT Inverse Correlation (rho=-0.80; high energy = low escape operators)	2	B	-> C891_energy_frequent_inverse.md
+C892	Post-FQ h-Dominance (h 24-36% post-FQ vs e 3-8%; recovery enters via phase-check)	2	B	-> C892_post_fq_h_dominance.md
+C893	Paragraph Kernel Signature Predicts Operation Type (HIGH_K=2x FQ p<0.0001; HIGH_H=elevated EN p=0.036; maps to Brunschwig operation categories)	2	B	-> C893_paragraph_kernel_operation_mapping.md
+C894	REGIME_4 Recovery Specialization Concentration (33% recovery-specialized folios in REGIME_4 vs 0-3% other REGIMEs; chi-sq=28.41 p=0.0001; validates C494 precision interpretation at paragraph level)	2	B	-> C894_regime4_recovery_concentration.md
+C895	Kernel-Recovery Correlation Asymmetry (k-FQ: r=+0.27; h-FQ: r=-0.29; e-FQ: n.s.; phase monitoring substitutes for recovery)	2	B	-> C895_kernel_recovery_correlation.md
+C896	Process Mode Discrimination via Kernel Profile (HIGH_K_LOW_H=2.5x FQ; discriminates distillation from boiling/decoction)	3	B	-> C896_process_mode_discrimination.md
+C897	Prefixed FL MIDDLEs as Line-Final State Markers (tokens contain FL TERMINAL MIDDLEs am/y/dy/ly per C777; 72.7% line-final; operation→state mapping extends FL state index)	2	B	-> C897_apparatus_output_markers.md
+C898	A PP Internal Structure (positional preferences p<0.0001; hub network CV=1.69; refines C234 aggregate position-freedom)	2	A	-> C898_a_pp_internal_structure.md
+C899	A-B Within-Line Positional Correspondence (shared MIDDLEs have consistent within-line positions across systems r=0.654 p<0.0001; corpus-level grammar property, not folio-level mapping)	2	A↔B	-> C899_ab_positional_correspondence.md
+C900	**AZC P-Text Annotation Pages** (f65v/f66v are 100% P-text, linguistically A (0.941 cosine), flanking f66r zodiac; 60%+ vocabulary overlap confirms annotation role)	2	AZC	-> C900_azc_ptext_annotation_pages.md
+C901	**Extended e Stability Gradient** (e→ee→eee→eeee forms stability depth continuum; quadruple-e in 11 folios concentrated late Currier A; odeeeey = maximum observed)	2	A	-> C901_extended_e_stability_gradient.md
+C902	**Late Currier A Register** (f100-f102 show distinct characteristics: p/f-domain concentration, extended vowels, short lines, MONSTERS; suggests appendix/addendum content)	2	A	-> C902_late_currier_a_register.md
+C903	**Prefix Rarity Gradient** (Common ch/sh/qo vs rare ct vs very-rare qk (9 folios) vs extremely-rare qy (3 folios); rarity correlates with specialization)	2	A	-> C903_prefix_rarity_gradient.md
+C904	**-ry Suffix S-Zone Enrichment (3.18x; cross-validates C839 OUTPUT marker)**	2	AZC	-> C904_ry_szone_enrichment.md
+C905	**FL_TERMINAL Early-Line Concentration** (TERMINAL FL = input-state declaration, not completion marking; early>late gradient -3.7%, p=0.0005; same-section vocabulary sharing 1.30x, p<0.0001; cross-folio chaining NOT supported)	2	B	-> C905_fl_terminal_early_concentration.md
+C906	**Vowel Primitive Suffix Saturation** (Vowel MIDDLEs a/e/o + END-class suffix = closed compound that suppresses further suffixation; e→98.3% suffix, edy→0.4% suffix; explains 38% of unmapped tokens)	2	GLOBAL	-> C906_vowel_primitive_suffix_saturation.md
+C907	**-hy Consonant Cluster Infrastructure** (Tokens with -hy suffix form formulaic class: ch/sh prefix + consonant cluster MIDDLE + hy; 910 tokens (3.9%); connector hypothesis FALSIFIED - 0.99x boundary enrichment)	4	B	-> C907_hy_consonant_cluster_infrastructure.md
+C908	**MIDDLE-Kernel Correlation** (55% of MIDDLEs significantly correlate with kernel profile; k-MIDDLEs→HIGH_K, e-MIDDLEs→HIGH_E, ch/sh→HIGH_H)	2	B	-> C908_middle_kernel_correlation.md
+C909	**Section-Specific MIDDLE Vocabularies** (96% of MIDDLEs section-specific; B=k-energy, H=k+h mixed, S=e-stability, T=h-monitoring, C=infrastructure)	2	B	-> C909_section_middle_vocabulary.md
+C910	**REGIME-MIDDLE Clustering** (67% REGIME-specific; REGIME_4 precision shows extreme enrichment: m=7.24x, ek=3.79x, y=2.57x)	2	B	-> C910_regime_middle_clustering.md
+C911	**PREFIX-MIDDLE Compatibility Constraints** (PREFIX selects MIDDLE family; qo→k-family 4.6x, da→infra 12.8x, ch/sh→e-family 2-3x; 102 forbidden combinations)	2	B	-> C911_prefix_middle_compatibility.md
+C912	**Precision Vocabulary - dam Token** (m MIDDLE 7.24x in REGIME_4; appears as `dam` 55% of cases; da- anchor prefix + no suffix; precision anchoring marker)	2	B	-> C912_precision_vocabulary_dam.md
+C913	**RI Derivational Morphology** (90.9% of RI MIDDLEs contain PP as substring; extensions 71.6% single-char; 53% suffix, 47% prefix; position preferences: 'd' 89% suffix, 'h' 79% prefix, 'q' 100% prefix)	2	A	-> C913_ri_derivational_morphology.md
+C914	**RI Label Enrichment** (RI 3.7x enriched in labels (27.3%) vs text (7.4%); labels identify specific illustrated items requiring instance-specific vocabulary from PP+extension system)	2	A	-> C914_ri_label_enrichment.md
+C915	**Section P Pure-RI Entries** (83% of pure-RI first-line paragraphs in Section P; 23/24 single-line; mean para 7.7; da/ot/sa prefixes NOT ct-; distinct from linker system)	2	A	-> C915_section_p_pure_ri_entries.md
+C916	**RI Instance Identification System** (RI functions as instance identification via PP+extension derivation; PP=category, RI=specific instance; explains A as index bridging B procedures to specific applications; labels 3.7x RI-enriched for illustration identification)	2	A	-> C916_ri_instance_identification_system.md
+C917	**Extension-Prefix Operational Alignment** (h-extension→ct prefix 82% vs 0% for others; chi-square=404.9, p=4.70e-90; mirrors B's ct+h linker signature 75%; k/t→qo 30-46%; secondary: o→ct 5.1x, l→da 3.1x, s→sh 3.1x)	2	A↔B	-> C917_extension_prefix_alignment.md
+C918	**Currier A as Operational Configuration Layer** (A provides context-specific material variants via RI=PP+extension; extensions encode operational context: h=monitoring, k=energy, t=terminal, d=transition; A parameterizes B's generic procedures)	2	A↔B	-> C918_currier_a_operational_configuration.md
+C919	**d-Extension Suffix Exclusion** (d-extension categorically excludes -y suffix family: 0% rate vs 46-83% for all other extensions; takes -iin/-al instead; indicates END-class grammatical behavior)	2	A	-> C919_d_extension_suffix_exclusion.md
+C920	**f57v R2 Extension Vocabulary Overlap** (92% of R2 chars are extension characters; only 'x' non-extension per C764; 'h' categorically absent)	2	AZC	-> C920_f57v_r2_extension_vocabulary.md
+C921	**f57v R2 Twelve-Character Period** (exact 12-char period with 4 cycles + 2-char terminal; 10/12 positions invariant; only positions 7-8 variable: k/m and f/p)	2	AZC	-> C921_f57v_r2_twelve_char_period.md
+C922	**Single-Character AZC Ring h-Exclusion** (single-char rings 1.9% h vs multi-char 7.4%; Fisher p=0.023; systematic under-representation of monitoring context in reference content)	2	AZC	-> C922_single_char_ring_h_exclusion.md
+C923	**Label Extension Bifurcation (r/h Axis)** (r-extension 4.9x enriched in labels p<0.0001; h-extension 0% in labels across 11 folios p=0.0002; broader ID/OP groupings NOT confirmed - only r/h strongly differentiate; n=87 labels)	2	A	-> C923_label_extension_bifurcation.md
+C924	**HT-RI Shared Derivational Morphology** (HT MIDDLEs 97.9% contain PP; 15/16 extension chars overlap with RI; same derivational system, different PREFIX layer; HT_PREFIX + [PP+ext] vs A/B_PREFIX + [PP+ext])	2	GLOBAL	-> C924_ht_ri_shared_derivation.md
+C925	**B Vocabulary Morphological Partition** (B-exclusive 66% has kernel density ~1.0; RI bases 20% have density 0.76; A's RI derivation draws selectively from lower-density subset; morphological not semantic partition per C522)	2	B, A↔B	-> C925_b_vocabulary_morphological_partition.md
+C926	**HT-RI Line-Level Anti-Correlation** (RI 0.48x in lines with HT; chi2=105.83 p<0.0001; same derivational system but partition space; HT tracks complexity, RI encodes instances; complementary not coordinated)	2	A	-> C926_ht_ri_anti_correlation.md
+C927	**HT Elevation in Label Contexts** (HT 45.0% in labels vs 18.6% in paragraphs; 2.42x enrichment chi2=107.33 p<0.0001; INCONSISTENT with C926 prediction; labels use HT vocabulary for identification, not spare capacity)	2	A, HT	-> C927_ht_label_elevation.md
+C928	**Jar Label AX_FINAL Concentration** (jar PP bases 35.1% AX_FINAL vs 16.7% baseline; 2.1x enrichment chi2=30.15 p=4e-08; jar labels identify materials B deploys at boundary/completion positions; content labels show only 1.14x AX enrichment)	2	A, B, Labels	-> C928_jar_label_ax_final_concentration.md

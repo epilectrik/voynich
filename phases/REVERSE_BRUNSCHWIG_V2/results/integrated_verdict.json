@@ -1,0 +1,43 @@
+{
+  "phase": "REVERSE_BRUNSCHWIG_V2",
+  "question": "Can we predict Brunschwig operational phases from Voynich MIDDLE distribution?",
+  "tests": [
+    {
+      "name": "Intra-Folio Sequence",
+      "verdict": "NOT SUPPORTED"
+    },
+    {
+      "name": "Paragraph Kernel x MIDDLE Tier",
+      "verdict": "SUPPORT"
+    },
+    {
+      "name": "Extended Form Context",
+      "verdict": "CONFIRMED"
+    },
+    {
+      "name": "Section Preparation Profiles",
+      "verdict": "NOT SUPPORTED"
+    },
+    {
+      "name": "REGIME x Preparation",
+      "verdict": "NOT SUPPORTED"
+    },
+    {
+      "name": "Line-Level Phase Prediction",
+      "verdict": "SUPPORT"
+    }
+  ],
+  "verdict_counts": {
+    "confirmed": 1,
+    "support": 2,
+    "not_supported": 3
+  },
+  "overall_verdict": "STRONG",
+  "key_findings": {
+    "extended_form_discrimination": "CONFIRMED - ke/kch are grammatically distinct from k/ch",
+    "line_level_prediction": "SUPPORT - EARLY lines appear earlier (d=-0.875)",
+    "paragraph_kernel_interaction": "SUPPORT - kernel type predicts MIDDLE tier (p<0.0001)",
+    "full_folio_sequence": "NOT CONFIRMED - only 31% show EARLY<MID<LATE"
+  },
+  "interpretation": "Procedural phases encoded at LINE level, not rigid folio-wide sequencing"
+}

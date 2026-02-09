@@ -6,6 +6,10 @@
 
 PP MIDDLE co-occurrence within Currier A lines is non-random but **fully explained by MIDDLE incompatibility** (C475). Lines are compatibility-valid subsets drawn from the folio pool, not actively specified selections.
 
+> **Aggregation Note (2026-01-30):** This constraint analyzes within-line MIDDLE co-occurrence.
+> Line-level patterns describe A-internal structure. For A-B vocabulary correspondence, the
+> operational unit is the A FOLIO (114 units, 81% coverage per C885).
+
 | Metric | Value |
 |--------|-------|
 | Lines with 2+ PP tokens | 1,506 (96.4% of 1,562 lines) |

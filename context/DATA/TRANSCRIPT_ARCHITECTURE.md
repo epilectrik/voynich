@@ -485,8 +485,84 @@ Before committing any script that loads the transcript:
 
 ---
 
-*Last updated: 2026-01-28*
+---
+
+## Annotation Data Files
+
+The systematic token annotation process (TOKEN_ANNOTATION phases) produces structured data files for token-level and folio-level observations.
+
+### Token Dictionary
+
+**File:** `data/token_dictionary.json`
+
+Contains token-level annotations with morphological analysis, system distribution, and researcher notes.
+
+```python
+from scripts.voynich import TokenDictionary
+
+td = TokenDictionary()
+entry = td.get('odeeeey')  # Get token entry
+# entry['systems'], entry['distribution'], entry['notes']
+
+td.add_note('odeeeey', 'Quadruple e - maximum stability encoding')
+td.save()
+```
+
+### Folio Notes
+
+**File:** `data/folio_notes.json`
+
+Contains folio-level observations aggregated during systematic annotation.
+
+```python
+from scripts.voynich import FolioNotes
+
+fn = FolioNotes()
+fn.add_note('f102v2', 'Heavy p-domain concentration, quadruple e discovered')
+fn.save()
+```
+
+Structure:
+```json
+{
+  "meta": {"version": "1.0", "created": "..."},
+  "folios": {
+    "f1r": {"notes": [{"text": "...", "date": "..."}]},
+    ...
+  }
+}
+```
+
+### Annotation Progress
+
+**File:** `data/annotation_progress.json`
+
+Tracks systematic annotation position for the pacemaker script.
+
+```json
+{
+  "current_folio": "f102v2",
+  "current_line": 18,
+  "mode": "currier_a",
+  "lines_completed": 1272,
+  "folios_completed": ["f1r", "f1v", ...]
+}
+```
+
+### Key Findings from Annotation
+
+Systematic annotation of 114 Currier A folios (1,272+ lines) established:
+
+- C901: Extended e stability gradient (e → ee → eee → eeee)
+- C902: Late Currier A register characteristics (f100-f102)
+- C903: Prefix rarity gradient (qk, qy extremely rare)
+- C833 refined: 50% of folios have RI outside L1
+
+---
+
+*Last updated: 2026-02-01*
 *This document prevents the transcriber filtering bug from recurring.*
 *Placement type taxonomy added from TRANSCRIPT-ARCHITECTURE-AUDIT (2026-01-16).*
 *AZC encoding cross-reference added from AZC_INTERFACE_VALIDATION (2026-01-19).*
 *MiddleAnalyzer added from COMPOUND_MIDDLE_ARCHITECTURE (2026-01-28).*
+*Annotation data files added from TOKEN_ANNOTATION phases (2026-02-01).*

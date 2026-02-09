@@ -4,7 +4,13 @@
 
 ## Finding
 
-Material class creates a weak gradient in PP co-occurrence structure, not a discrete partition. Forced co-occurrence clusters reduce material class entropy by 36.2% (overall 1.885 bits → within-pool 1.203 bits), but NMI(pool, material)=0.129 indicates low mutual information. Chi-squared pool×material is significant (p=0.002, Cramér's V=0.392) confirming non-random material association, but no pool is material-pure. The largest pool (69/203 members) is 54% MIXED material. All other axes show even weaker signal: pathway NMI=0.032, lane NMI=0.062, section NMI=0.087.
+Material class creates a weak gradient in PP co-occurrence structure, not a discrete partition.
+
+> **Aggregation Note (2026-01-30):** This constraint analyzes PP co-occurrence clustering.
+> Co-occurrence matrices derive from line-level analysis. Per C885, the operational unit for
+> A-B vocabulary correspondence is the A FOLIO (114 units, 81% coverage).
+
+Forced co-occurrence clusters reduce material class entropy by 36.2% (overall 1.885 bits → within-pool 1.203 bits), but NMI(pool, material)=0.129 indicates low mutual information. Chi-squared pool×material is significant (p=0.002, Cramér's V=0.392) confirming non-random material association, but no pool is material-pure. The largest pool (69/203 members) is 54% MIXED material. All other axes show even weaker signal: pathway NMI=0.032, lane NMI=0.062, section NMI=0.087.
 
 ## Evidence
 

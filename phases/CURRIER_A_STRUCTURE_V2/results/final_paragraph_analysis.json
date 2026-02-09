@@ -1,0 +1,95 @@
+{
+  "test": "FINAL_PARAGRAPH_ANALYSIS",
+  "counts": {
+    "final_with_ri": 44,
+    "final_without_ri": 42,
+    "non_final_with_ri": 156,
+    "non_final_without_ri": 72
+  },
+  "final_vs_non_final_without_ri": {
+    "avg_linkers_final": 0.16666666666666666,
+    "avg_linkers_non_final": 0.2361111111111111,
+    "linker_verdict": "FINAL_FEWER_LINKERS"
+  },
+  "significant_prefix_diffs": [
+    [
+      "al",
+      6.05
+    ],
+    [
+      "ar",
+      0.0
+    ],
+    [
+      "da",
+      0.0
+    ],
+    [
+      "dch",
+      1.9662500000000003
+    ],
+    [
+      "de",
+      1.5125
+    ],
+    [
+      "fch",
+      1.5125
+    ],
+    [
+      "ka",
+      2.0166666666666666
+    ],
+    [
+      "ke",
+      2.4200000000000004
+    ],
+    [
+      "lch",
+      6.05
+    ],
+    [
+      "lk",
+      0.0
+    ]
+  ],
+  "final_linker_examples": [
+    [
+      "f3v",
+      [
+        "cthodoaly"
+      ]
+    ],
+    [
+      "f6v",
+      [
+        "cthodam"
+      ]
+    ],
+    [
+      "f32r",
+      [
+        "ctho"
+      ]
+    ],
+    [
+      "f32v",
+      [
+        "ctho"
+      ]
+    ],
+    [
+      "f44v",
+      [
+        "ctho",
+        "cthees"
+      ]
+    ],
+    [
+      "f49r",
+      [
+        "cthodd"
+      ]
+    ]
+  ]
+}

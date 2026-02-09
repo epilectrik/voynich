@@ -1,0 +1,37 @@
+{
+  "summary": {
+    "within_paragraph": {
+      "hazard_proximity": {},
+      "qo_fraction": {
+        "rho": -0.0763103274278721,
+        "p": 0.0014358433306614906
+      },
+      "unique_middles": {
+        "rho": -0.2992569687918119,
+        "p": 1.830545990740443e-45
+      }
+    },
+    "across_paragraph": {
+      "hazard_proximity": {},
+      "qo_fraction": {
+        "rho": 0.053701578110391224,
+        "p": 0.2827618521433611
+      },
+      "unique_middles": {
+        "rho": 0.0037405555387650473,
+        "p": 0.9397356711060911
+      }
+    },
+    "folio_level": {
+      "hazard_proximity": {},
+      "qo_fraction": {
+        "rho": 0.010090892996987521,
+        "p": 0.6556704363649201
+      },
+      "unique_middles": {
+        "rho": -0.07914307849726852,
+        "p": 9.721987779283648e-05
+      }
+    }
+  }
+}

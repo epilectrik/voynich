@@ -1,0 +1,452 @@
+{
+  "discriminating_recipe_count": 98,
+  "animal_recipe_count": 8,
+  "unique_animal_matches": [
+    {
+      "record_id": "f58v:10",
+      "recipe": "ox blood water",
+      "score": 0.8280907075395602,
+      "ri": [
+        "ctholy",
+        "qotalom"
+      ]
+    },
+    {
+      "record_id": "f25v:1",
+      "recipe": "ox blood water",
+      "score": 0.8117356233937526,
+      "ri": [
+        "poeeaiin",
+        "qofchor",
+        "sos"
+      ]
+    },
+    {
+      "record_id": "f89r2:10",
+      "recipe": "ox blood water",
+      "score": 0.8110308092005997,
+      "ri": [
+        "yokeeol",
+        "eeeokor"
+      ]
+    },
+    {
+      "record_id": "f89v1:12",
+      "recipe": "ox blood water",
+      "score": 0.8087186999714989,
+      "ri": [
+        "okalda",
+        "dalg"
+      ]
+    },
+    {
+      "record_id": "f13r:7",
+      "recipe": "ox blood water",
+      "score": 0.8070437113061095,
+      "ri": [
+        "qokhy"
+      ]
+    },
+    {
+      "record_id": "f58v:16",
+      "recipe": "ox blood water",
+      "score": 0.806379200154458,
+      "ri": [
+        "cheockhey",
+        "taldar"
+      ]
+    },
+    {
+      "record_id": "f58v:31",
+      "recipe": "ox blood water",
+      "score": 0.8050638292307253,
+      "ri": [
+        "psheey"
+      ]
+    },
+    {
+      "record_id": "f58v:29",
+      "recipe": "ox blood water",
+      "score": 0.8034489299931388,
+      "ri": [
+        "sheoikhy"
+      ]
+    },
+    {
+      "record_id": "f58r:38",
+      "recipe": "ox blood water",
+      "score": 0.8017985389748165,
+      "ri": [
+        "dtshol",
+        "dytal",
+        "salol"
+      ]
+    },
+    {
+      "record_id": "f58v:35",
+      "recipe": "ox blood water",
+      "score": 0.7997260939734634,
+      "ri": [
+        "dalas"
+      ]
+    },
+    {
+      "record_id": "f88v:8",
+      "recipe": "ox blood water",
+      "score": 0.7940716693326808,
+      "ri": [
+        "qokeoda"
+      ]
+    },
+    {
+      "record_id": "f99v:7",
+      "recipe": "ox blood water",
+      "score": 0.7905045310070561,
+      "ri": [
+        "okeoldy",
+        "qokeolo",
+        "sheodol",
+        "qokeechom"
+      ]
+    },
+    {
+      "record_id": "f58v:34",
+      "recipe": "ox blood water",
+      "score": 0.7887485796506658,
+      "ri": [
+        "chhy",
+        "dalychs"
+      ]
+    },
+    {
+      "record_id": "f99r:7",
+      "recipe": "ox blood water",
+      "score": 0.7868459944216902,
+      "ri": [
+        "okoly",
+        "qokoly",
+        "okchol",
+        "qokold"
+      ]
+    },
+    {
+      "record_id": "f89v1:2",
+      "recipe": "ox blood water",
+      "score": 0.7863270684080463,
+      "ri": [
+        "otoikhy",
+        "cthody"
+      ]
+    }
+  ],
+  "validated_mappings": [
+    {
+      "recipe": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "record_id": "f58v:10",
+      "ri_tokens": [
+        "ctholy",
+        "qotalom"
+      ],
+      "score": 0.8280907075395602,
+      "prefix_similarity": 0.9718941883008725,
+      "regime_match": 1.0,
+      "competing_matches": 0,
+      "confidence": "HIGH"
+    },
+    {
+      "recipe": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "record_id": "f25v:1",
+      "ri_tokens": [
+        "poeeaiin",
+        "qofchor",
+        "sos"
+      ],
+      "score": 0.8117356233937526,
+      "prefix_similarity": 0.9127137950095245,
+      "regime_match": 1.0,
+      "competing_matches": 0,
+      "confidence": "HIGH"
+    },
+    {
+      "recipe": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "record_id": "f89r2:10",
+      "ri_tokens": [
+        "yokeeol",
+        "eeeokor"
+      ],
+      "score": 0.8110308092005997,
+      "prefix_similarity": 0.9018054180632274,
+      "regime_match": 1.0,
+      "competing_matches": 0,
+      "confidence": "HIGH"
+    },
+    {
+      "recipe": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "record_id": "f89v1:12",
+      "ri_tokens": [
+        "okalda",
+        "dalg"
+      ],
+      "score": 0.8087186999714989,
+      "prefix_similarity": 0.9371836815758414,
+      "regime_match": 1.0,
+      "competing_matches": 0,
+      "confidence": "HIGH"
+    },
+    {
+      "recipe": "hen (chicken)",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "record_id": "f88r:2",
+      "ri_tokens": [
+        "sheom",
+        "shekor"
+      ],
+      "score": 0.8077358400671598,
+      "prefix_similarity": 0.8935695796340185,
+      "regime_match": 1.0,
+      "competing_matches": 2,
+      "confidence": "MEDIUM"
+    },
+    {
+      "recipe": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "record_id": "f13r:7",
+      "ri_tokens": [
+        "qokhy"
+      ],
+      "score": 0.8070437113061095,
+      "prefix_similarity": 0.932996209912368,
+      "regime_match": 1.0,
+      "competing_matches": 0,
+      "confidence": "HIGH"
+    },
+    {
+      "recipe": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "record_id": "f58v:16",
+      "ri_tokens": [
+        "cheockhey",
+        "taldar"
+      ],
+      "score": 0.806379200154458,
+      "prefix_similarity": 0.9542007856917755,
+      "regime_match": 1.0,
+      "competing_matches": 0,
+      "confidence": "HIGH"
+    },
+    {
+      "recipe": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "record_id": "f58v:31",
+      "ri_tokens": [
+        "psheey"
+      ],
+      "score": 0.8050638292307253,
+      "prefix_similarity": 0.9189001632604928,
+      "regime_match": 1.0,
+      "competing_matches": 0,
+      "confidence": "HIGH"
+    },
+    {
+      "recipe": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "record_id": "f58v:29",
+      "ri_tokens": [
+        "sheoikhy"
+      ],
+      "score": 0.8034489299931388,
+      "prefix_similarity": 0.8828507200445753,
+      "regime_match": 1.0,
+      "competing_matches": 0,
+      "confidence": "HIGH"
+    },
+    {
+      "recipe": "hen (chicken)",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "record_id": "f102v2:4",
+      "ri_tokens": [
+        "oeoikhy"
+      ],
+      "score": 0.8033643202145772,
+      "prefix_similarity": 0.887213950734269,
+      "regime_match": 1.0,
+      "competing_matches": 2,
+      "confidence": "MEDIUM"
+    },
+    {
+      "recipe": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "record_id": "f58r:38",
+      "ri_tokens": [
+        "dtshol",
+        "dytal",
+        "salol"
+      ],
+      "score": 0.8017985389748165,
+      "prefix_similarity": 0.970188157132916,
+      "regime_match": 1.0,
+      "competing_matches": 0,
+      "confidence": "HIGH"
+    },
+    {
+      "recipe": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "record_id": "f58v:35",
+      "ri_tokens": [
+        "dalas"
+      ],
+      "score": 0.7997260939734634,
+      "prefix_similarity": 0.9147021665807528,
+      "regime_match": 1.0,
+      "competing_matches": 0,
+      "confidence": "HIGH"
+    },
+    {
+      "recipe": "hen (chicken)",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "record_id": "f89v1:15",
+      "ri_tokens": [
+        "a",
+        "cthody",
+        "olkeeycthy"
+      ],
+      "score": 0.795140193359096,
+      "prefix_similarity": 0.8712268043272735,
+      "regime_match": 1.0,
+      "competing_matches": 2,
+      "confidence": "MEDIUM"
+    },
+    {
+      "recipe": "hen (chicken)",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "record_id": "f58v:25",
+      "ri_tokens": [
+        "okalar"
+      ],
+      "score": 0.7944977722207299,
+      "prefix_similarity": 0.8604744100179438,
+      "regime_match": 1.0,
+      "competing_matches": 2,
+      "confidence": "MEDIUM"
+    },
+    {
+      "recipe": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "record_id": "f88v:8",
+      "ri_tokens": [
+        "qokeoda"
+      ],
+      "score": 0.7940716693326808,
+      "prefix_similarity": 0.9051392757105035,
+      "regime_match": 1.0,
+      "competing_matches": 0,
+      "confidence": "HIGH"
+    },
+    {
+      "recipe": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "record_id": "f99v:7",
+      "ri_tokens": [
+        "okeoldy",
+        "qokeolo",
+        "sheodol",
+        "qokeechom"
+      ],
+      "score": 0.7905045310070561,
+      "prefix_similarity": 0.8962214298964416,
+      "regime_match": 1.0,
+      "competing_matches": 0,
+      "confidence": "HIGH"
+    },
+    {
+      "recipe": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "record_id": "f58v:34",
+      "ri_tokens": [
+        "chhy",
+        "dalychs"
+      ],
+      "score": 0.7887485796506658,
+      "prefix_similarity": 0.8506730149201001,
+      "regime_match": 1.0,
+      "competing_matches": 0,
+      "confidence": "HIGH"
+    },
+    {
+      "recipe": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "record_id": "f99r:7",
+      "ri_tokens": [
+        "okoly",
+        "qokoly",
+        "okchol",
+        "qokold"
+      ],
+      "score": 0.7868459944216902,
+      "prefix_similarity": 0.8962214298964416,
+      "regime_match": 1.0,
+      "competing_matches": 0,
+      "confidence": "HIGH"
+    },
+    {
+      "recipe": "ox blood water",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "record_id": "f89v1:2",
+      "ri_tokens": [
+        "otoikhy",
+        "cthody"
+      ],
+      "score": 0.7863270684080463,
+      "prefix_similarity": 0.8537655782769661,
+      "regime_match": 1.0,
+      "competing_matches": 0,
+      "confidence": "HIGH"
+    },
+    {
+      "recipe": "hen (chicken)",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "record_id": "f10r:11",
+      "ri_tokens": [
+        "rotcho"
+      ],
+      "score": 0.785016092367251,
+      "prefix_similarity": 0.8962214298964416,
+      "regime_match": 1.0,
+      "competing_matches": 2,
+      "confidence": "MEDIUM"
+    }
+  ],
+  "validation_criteria": {
+    "score_threshold": 0.65,
+    "uniqueness_threshold": 0.1,
+    "convergence_min": 10
+  },
+  "eoschso_validation": {
+    "found_in_matches": false,
+    "matches": []
+  }
+}

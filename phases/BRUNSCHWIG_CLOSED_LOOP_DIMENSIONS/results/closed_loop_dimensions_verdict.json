@@ -1,0 +1,26 @@
+{
+  "phase": "BRUNSCHWIG_CLOSED_LOOP_DIMENSIONS",
+  "tests_run": 6,
+  "verdicts": {
+    "Folio ENERGY-FREQUENT": "CONFIRMED",
+    "Folio Post-FQ h-Dominance": "CONFIRMED",
+    "Monitoring Orthogonality": "SUPPORT",
+    "PREFIX-MIDDLE Orthogonality": "NOT SUPPORTED",
+    "Method-Kernel Signatures": "SUPPORT",
+    "Multi-Dimensional PCA": "SUPPORT"
+  },
+  "counts": {
+    "CONFIRMED": 2,
+    "SUPPORT": 3,
+    "PARTIAL": 0,
+    "NOT SUPPORTED": 1,
+    "NOT RUN": 0
+  },
+  "overall_verdict": "STRONG",
+  "key_findings": {
+    "energy_frequent_folio": -0.5290814105668177,
+    "h_dominance_pct": 97.36842105263158,
+    "n_dimensions": 5,
+    "link_independent": true
+  }
+}

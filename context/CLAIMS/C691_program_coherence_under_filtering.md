@@ -28,6 +28,10 @@ A line is "operationally complete" if it retains at least one token from:
 
 The work group (EN/FQ) survives best — up to 87% coverage for the most permissive record. The close group (FL/CC) is the bottleneck: FL's high depletion (C683: 60.9%) and CC's moderate depletion (44.6%) starve the close function. A filtered B folio is not a reduced-but-functional program; it is a **vocabulary projection** showing which instructions the A record permits. Full operational coherence requires aggregating multiple A records.
 
+> **Aggregation Note (2026-01-30):** This analysis demonstrates why line-level filtering is
+> insufficient for operational coherence. C885 establishes that A FOLIO (114 units, 81% PP
+> coverage) is the operational unit for A-B vocabulary correspondence.
+
 ## Provenance
 
 - Script: `phases/A_RECORD_B_FILTERING/scripts/instance_trace_analysis.py` (Test 10)

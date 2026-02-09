@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.54
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.63
 
 ---
 
@@ -20,6 +20,18 @@ This structural finding is FROZEN. The interpretations below attempt to explain 
 
 ---
 
+## Universal Boundaries
+
+All interpretations in this document respect these constraints. Individual sections may add section-specific caveats but these five apply universally:
+
+1. **Semantic ceiling** (C171, C120): No token-level meaning or translation is recoverable from internal analysis alone.
+2. **No entry-level A-B coupling** (C384): No mapping from individual A entries to individual B tokens exists.
+3. **No substance identification**: Specific plants, materials, or substances cannot be identified from the text.
+4. **No Brunschwig equivalence**: Voynich is not a cipher for Brunschwig; no folio-to-passage mapping exists.
+5. **Tier discipline**: All interpretations are Tier 3-4 speculation, consistent with but not proven by structural evidence.
+
+---
+
 ## 0. APPARATUS-CENTRIC SEMANTICS (CCM Phase)
 
 ### Tier 3: Core Finding
@@ -33,9 +45,9 @@ All recoverable semantics are those available to the apparatus and its control l
 Every Currier A/B token decomposes into four functional components:
 
 ```
-TOKEN = PREFIX   → material-behavior class (what kind of thing)
+TOKEN = PREFIX   → operation domain selector (selects allowed MIDDLE family)
       + SISTER   → operational mode (how carefully)
-      + MIDDLE   → variant discriminator (which specific variant)
+      + MIDDLE   → operation type (heating/cooling/monitoring)
       + SUFFIX   → context-dependent marker (system role + material class)
 ```
 
@@ -43,10 +55,26 @@ TOKEN = PREFIX   → material-behavior class (what kind of thing)
 
 | Component | Encodes | Classes | Evidence |
 |-----------|---------|---------|----------|
-| **PREFIX** | Material-behavior | 4 classes (M-A/B/C/D) | Grammar roles, enrichment |
+| **PREFIX** | Operation domain | 4 classes selecting MIDDLE families | C911: 102 forbidden combinations |
 | **SISTER** | Operational mode | 2 modes (precision/tolerance) | C412 anticorrelation |
-| **MIDDLE** | Variant identity | ~1,184 discriminators | 80% prefix-exclusive |
+| **MIDDLE** | Operation type | 3 families (k-energy, e-stability, h-monitoring) | C908-C910: kernel/section/REGIME correlation |
 | **SUFFIX** | Two-axis marker | A/B system role + material class | C283, C495, C527 |
+
+### PREFIX-MIDDLE Selection (C911 - Tier 2)
+
+PREFIX and MIDDLE are **not independent**. Each PREFIX selects which MIDDLE family is grammatically legal:
+
+| PREFIX Class | Selects For | Enrichment | Forbidden From |
+|--------------|-------------|------------|----------------|
+| **qo-** | k-family (k, ke, t, kch) | 4.6-5.5x | e-family, infrastructure |
+| **ch-/sh-** | e-family (edy, ey, eey) | 2.0-3.1x | k-family, infrastructure |
+| **da-/sa-** | infrastructure (iin, in, r, l) | 5.9-12.8x | All operational MIDDLEs |
+| **ot-/ol-** | h-family (ch, sh) | 3.3-6.8x | k-family |
+| **ok-** | e-family + infra | 2.6-3.3x | k-family |
+
+**102 forbidden combinations** where expected ≥5 but observed = 0 (e.g., qo+ey, da+edy, ok+k).
+
+This is **grammatical agreement**, not free combination. PREFIX determines the operation domain; MIDDLE specifies within that domain.
 
 **SUFFIX Two-Axis Model (revised 2026-01-24):**
 
@@ -59,14 +87,74 @@ Suffix operates on two orthogonal dimensions:
 
 The earlier "decision archetype (D1-D12)" mapping in ccm_suffix_mapping.md is **provisional and incomplete**. The fire-degree interpretation (C527) is conditional on Brunschwig alignment.
 
-### Material-Behavior Classes
+### Material-Behavior Classes (Revised with C911, C936)
 
-| Class | Phase | Composition | Prefixes | Example Role |
-|-------|-------|-------------|----------|--------------|
-| **M-A** | Mobile | Distinct | ch, sh, qo | Energy operations |
-| **M-B** | Mobile | Homogeneous | ok, ot | Routine operations |
-| **M-C** | Stable | Distinct | ct | Registry reference |
-| **M-D** | Stable | Homogeneous | ol, da | Structural anchor |
+| Class | Prefixes | Domain Target | Selects MIDDLE Family | Brunschwig Parallel |
+|-------|----------|---------------|----------------------|---------------------|
+| **Energy** | qo | Heat source | k-family only | Heating, distillation |
+| **Process Testing** | ch, sh | The process | e-family only | Finger test, drip watching |
+| **Vessel Management** | ok | The vessel/apparatus | e-family + infrastructure | Opening, closing, cooling vessel |
+| **Correction** | ot, ol | Adjustment/continuation | h-family, e-family | Rectification, continuation |
+| **Infrastructure** | da, sa | Setup configuration | iin/in/r/l only | Anchors, connectors |
+
+PREFIX is a **domain selector** (C570, C571, C936): it determines WHAT you're acting on, while MIDDLE provides the action. The same MIDDLE with different prefixes produces different domain targets: ok+aiin = "check vessel", ch+aiin = "test check", qo+aiin = "heat check" (378 same-MIDDLE pairs confirmed, C936).
+
+**ok specifically** was previously glossed as "seal" (then "seal/cover/plug" composite). Both verb-based approaches produce incoherent line readings. The vessel domain selector interpretation (C936 revised) produces the only coherent procedural readings across all four regimes. ok's restriction to e-family + infrastructure (C911) has a physical explanation: vessel operations are cooling/stability and apparatus management, not direct energy operations.
+
+The earlier M-A/B/C/D classification is superseded by this domain-selector model. PREFIX class determines both the target domain and which operations (MIDDLEs) are grammatically permitted.
+
+### MIDDLE Semantic Families (C908-C910 - Tier 2)
+
+MIDDLEs encode **operation types**, not just variant identity. Three functional families emerge from kernel correlation, section distribution, and REGIME clustering:
+
+| Family | MIDDLEs | Kernel Profile | Section Concentration | Function |
+|--------|---------|---------------|----------------------|----------|
+| **k-family** | k, ke, ck, ek, eck, kch, lk | HIGH_K (1.3-1.6x) | B (bathing) 1.5-2x | Heating, energy input |
+| **e-family** | e, ed, eed, eo, eeo, eod, eey | HIGH_E (1.2-1.6x) | S (recipes) 1.3-1.7x | Cooling, stabilization |
+| **h-family** | ch, sh, pch, opch, d | HIGH_H (1.2-1.6x) | T (text) 1.7-4x | Phase monitoring |
+
+**Evidence strength:**
+- 55% of MIDDLEs significantly correlate with kernel profile (C908)
+- 96% of MIDDLEs are section-specific (C909)
+- 67% of MIDDLEs are REGIME-specific (C910)
+
+### Section-MIDDLE Alignment (C909 - Tier 2)
+
+Manuscript sections use systematically different MIDDLE vocabularies, validating content interpretation:
+
+| Section | Content | MIDDLE Profile | Brunschwig Interpretation |
+|---------|---------|---------------|---------------------------|
+| **B** (Bathing) | Human figures in tubs | k-enriched 1.5-2x | Balneum marie (water bath heating) |
+| **H** (Herbal) | Plant illustrations | Mixed k+h | Extraction (heat + phase monitoring) |
+| **S** (Recipes) | Recipe-like text | e-enriched 1.3-1.7x | Final products, stabilization |
+| **T** (Text) | Text-only pages | h-enriched 1.7-4x | Instructions, procedures |
+| **C** (Cosmological) | Diagrams | Infrastructure | Relational, connectors |
+
+The "bathing figures" are not people bathing - they are **vessels in water baths** (balneum marie), the gentlest distillation method. The k-MIDDLE enrichment confirms heating operations.
+
+### Precision Vocabulary (C912 - Tier 2)
+
+The `m` MIDDLE (7.24x enriched in REGIME_4 precision folios) appears almost exclusively as the token `dam`:
+
+| Property | Value |
+|----------|-------|
+| Form | `dam` = da (anchor) + m + ø (no suffix) |
+| Frequency | 55% of all m-MIDDLE tokens |
+| Section | Herbal 41% (precision extraction) |
+| Function | Precision anchoring / verification marker |
+
+This is a **specific lexical item**, not a productive pattern. It marks precision verification steps in quality-critical procedures.
+
+### Two-Level Grammar Constraint (C908-C911)
+
+Grammar operates at two levels with different constraint profiles:
+
+| Level | Unit | Constraint Type | Freedom |
+|-------|------|-----------------|---------|
+| **Paragraph** | Multi-token sequence | Co-occurrence | Nearly free (585 positive pairs, 1 negative) |
+| **Token** | PREFIX + MIDDLE | Morphological selection | Tight (102 forbidden combinations) |
+
+**Interpretation:** A paragraph is a **recipe** containing multiple operation types. Individual tokens are **single operations** constrained to compatible PREFIX+MIDDLE combinations. You can have heating AND cooling in the same paragraph (different tokens), but a single qo- token cannot encode a cooling operation.
 
 ### Operational Modes (Sister Pairs)
 
@@ -232,7 +320,7 @@ The apparatus-centric perspective explains:
 
 ---
 
-## 0.A. CURRIER A COGNITIVE INTERFACE (PCC Phase) - NEW in v4.24
+## 0.A. CURRIER A COGNITIVE INTERFACE (PCC Phase)
 
 ### Tier 3: Core Finding
 
@@ -304,10 +392,9 @@ This is interface characterization, not semantic mapping. The system supports ex
 
 ### What This Does NOT Claim
 
-- ❌ Entries have semantic content
+Universal Boundaries apply. Additionally:
 - ❌ Closure markers are adaptive signals
 - ❌ Working-memory structure implies temporal ordering
-- ❌ A-AZC breadth enables material identification
 
 ### Cross-References
 
@@ -322,7 +409,188 @@ This is interface characterization, not semantic mapping. The system supports ex
 
 ---
 
-## 0.B. PP FUNCTIONAL ROLE CLOSURE (PP_B_EXECUTION_TEST Phase) - NEW in v4.33
+## 0.A.1. RI INSTANCE IDENTIFICATION SYSTEM (RI_EXTENSION_MAPPING Phase)
+
+### Tier 2/3: Core Finding
+
+> **RI vocabulary functions as an instance identification system built via derivational morphology from PP vocabulary. PP encodes general categories shared with B execution; RI extends PP with single-character markers to identify specific instances. This explains A's purpose as an index bridging general procedures (B) to specific applications (labels, illustrated items).**
+
+This resolves the fundamental question: "Why does Currier A exist if Currier B is self-sufficient for execution?"
+
+### The Three-Level Model
+
+| Level | Vocabulary | Function | Example |
+|-------|-----------|----------|---------|
+| **B (Execution)** | PP only | General operations | "Process 'od' at temperature 'kch'" |
+| **A (Registry)** | PP + RI | Specific instances | "Entry for 'odo': follow procedure X" |
+| **Labels** | RI-enriched (3.7x) | Illustration pointers | "This drawing = 'odo'" |
+
+### The Derivational System
+
+RI is built from PP through single-character extensions:
+
+```
+PP MIDDLE 'od' (category: herb/material class)
+     |
+     +-- 'odo' (instance 1) - used in label
+     +-- 'oda' (instance 2) - used in text
+     +-- 'odd' (instance 3) - used in text
+```
+
+**Structural evidence:**
+- 90.9% of RI MIDDLEs contain PP as substring (C913)
+- 71.6% of extensions are single characters
+- Position preferences exist: 'd' is 89% suffix, 'h' is 79% prefix
+
+### Dual-Use Pattern
+
+225 PP MIDDLEs appear both directly AND as RI bases, demonstrating the category/instance distinction:
+
+| PP MIDDLE | Direct Uses | As RI Base | Interpretation |
+|-----------|-------------|------------|----------------|
+| 'od' | 191 | 23 | Category AND instances |
+| 'eo' | 211 | 14 | Category AND instances |
+| 'ol' | 790 | 4 | Mostly category |
+
+### Why Labels Are RI-Enriched (3.7x)
+
+Labels point to **specific illustrated items**, not general categories:
+- Text: 7.4% RI (discusses general procedures)
+- Labels: 27.3% RI (points to THIS plant, not plants in general)
+
+The derivational system provides the instance-specificity labels require.
+
+### The A-B Relationship
+
+```
+Currier B = PROCEDURE LIBRARY
+  - General instructions for operations
+  - Uses PP vocabulary (categories only)
+  - "How to process herbs" (general)
+       |
+       v
+Currier A = REGISTRY/INDEX
+  - Specific instances of procedures
+  - Uses PP + RI vocabulary
+  - "Entry for THIS herb: follow procedure X"
+       |
+       v
+Labels = POINTERS
+  - Link illustrations to registry entries
+  - RI-enriched for instance-specificity
+```
+
+### What This Resolves
+
+| Question | Answer |
+|----------|--------|
+| Why does A exist if B is self-sufficient? | A indexes specific applications of general B procedures |
+| Why are labels RI-enriched? | Labels point to specific illustrated items |
+| What is RI vocabulary? | Instance identifiers derived from PP categories |
+| How do A and B relate? | Same conceptual vocabulary, different granularity |
+
+### What This Does NOT Claim
+
+Universal Boundaries apply. Additionally:
+- X RI encodes semantic content beyond instance differentiation
+
+### Cross-References
+
+| Constraint | Finding |
+|------------|---------|
+| C240 | A = Registry - now explains the indexing mechanism |
+| C913 | RI Derivational Morphology |
+| C914 | RI Label Enrichment (3.7x) |
+| C915 | Section P Pure-RI Entries |
+| C916 | RI Instance Identification System (synthesis) |
+
+**Source:** phases/RI_EXTENSION_MAPPING/README.md
+
+---
+
+## 0.A.2. LABEL-TO-B PIPELINE (LABEL_INVESTIGATION Phase)
+
+### Tier 2/3: Core Finding
+
+> **Labels connect to B through shared PP vocabulary, with jar labels specifically concentrating in AX_FINAL (material-carrying) positions at 2.1x baseline rate. This validates the three-level model: Labels identify materials that B procedures operate ON.**
+
+### The Complete Pipeline
+
+```
+ILLUSTRATION
+     |
+     v
+LABEL (uses RI/PP vocabulary)
+  - Jar labels: container identifiers (35.1% AX_FINAL in B)
+  - Content labels: material identifiers (roots, leaves)
+     |
+     v
+PP BASE (shared with B)
+  - 97.9% of labels connect to B vocabulary
+  - 104 unique PP bases from 192 labels
+     |
+     v
+B PROCEDURE (deploys PP in roles)
+  - AX_FINAL: maximum scaffold depth (material specification)
+  - EN: operational positions
+```
+
+### Jar vs Content Distinction
+
+| Label Type | B Connection | AX_FINAL Rate | Function |
+|------------|--------------|---------------|----------|
+| **Jar** | PP bases in B | **35.1%** (2.1x) | Container/configuration identifier |
+| **Content** | PP bases in B | 19.1% (1.14x) | Material identifier (root, leaf) |
+| B Baseline | - | 16.7% | Reference |
+
+Jar labels are statistically significant (chi2=30.15, p=4e-08); content labels show moderate enrichment.
+
+### What This Validates
+
+| Finding | Significance |
+|---------|--------------|
+| **C571 confirmed** | PREFIX selects role, MIDDLE carries material identity |
+| **Labels are functional** | They point to materials that B operates on |
+| **AX_FINAL = material slot** | Per C565, maximum scaffold depth = where materials are specified |
+| **Cross-system coherence** | A (labels) -> B (procedures) uses shared vocabulary in predictable positions |
+
+### The Jar-to-AX_FINAL Interpretation
+
+```
+JAR LABEL "okaradag" (f99r)
+     |
+     v
+PP BASE "ara" (extracted MIDDLE)
+     |
+     v
+B TOKEN "ot-ara-y" appearing in AX_FINAL position
+     = "the thing being processed"
+```
+
+Jar labels identify materials at **maximum scaffold depth** - the boundary/completion position where material identity is specified without operational modification. This is where you'd expect "what to process" to appear.
+
+### What This Does NOT Claim
+
+Universal Boundaries apply. Additionally:
+- X Specific jar-to-procedure mappings are recoverable
+- X Content labels have the same AX_FINAL concentration (they don't)
+
+### Cross-References
+
+| Constraint | Finding |
+|------------|---------|
+| C565 | AX_FINAL positional semantics |
+| C570 | AX PREFIX derivability |
+| C571 | PREFIX selects role, MIDDLE carries material |
+| C523 | Pharma jar label vocabulary bifurcation |
+| C914 | RI label enrichment (3.7x) |
+| C928 | Jar label AX_FINAL concentration (2.1x) |
+
+**Source:** phases/LABEL_INVESTIGATION/README.md
+
+---
+
+## 0.B. PP FUNCTIONAL ROLE CLOSURE (PP_B_EXECUTION_TEST Phase)
 
 ### Tier 2: Core Finding
 
@@ -487,7 +755,7 @@ This shifts from "what PP is" to "what the artifact does to the human."
 
 ---
 
-## 0.C. THREE-LAYER CONSTRAINT ARCHITECTURE (MIDDLE_SUBCOMPONENT_GRAMMAR Phase) - NEW in v4.38
+## 0.C. THREE-LAYER CONSTRAINT ARCHITECTURE (MIDDLE_SUBCOMPONENT_GRAMMAR Phase)
 
 ### Tier 2-3: Architectural Discovery
 
@@ -608,7 +876,7 @@ This explains why RI is:
 
 ---
 
-## 0.D. RI LEXICAL LAYER HYPOTHESIS (RI_STRUCTURE_ANALYSIS Phase) - NEW in v4.39
+## 0.D. RI LEXICAL LAYER HYPOTHESIS (RI_STRUCTURE_ANALYSIS Phase)
 
 ### Tier 3: Grammar vs Lexicon Distinction
 
@@ -692,7 +960,7 @@ Word Structure:
 - RI extensions encode **referential identity** (to what)
 - PREFIX/SUFFIX encode **grammatical context** (in what form)
 
-### RI PREFIX Bifurcation (C528) - NEW in v4.40
+### RI PREFIX Bifurcation (C528)
 
 RI MIDDLEs split into two nearly-disjoint populations based on PREFIX behavior:
 
@@ -750,10 +1018,8 @@ The system can **reference** specific substances without **encoding** which subs
 
 ### What This Does NOT Claim
 
-- ❌ RI extensions encode specific plants (we can't know which)
-- ❌ The lexical layer enables translation
-- ❌ Meaning can be recovered from the text
-- ❌ RI extensions are linguistic labels
+Universal Boundaries apply. Additionally:
+- ❌ RI extensions are linguistic labels (the distinction is functional, not semantic)
 
 **The distinction is functional, not semantic:** RI extensions POINT TO substances the way dictionary entries point to concepts - without encoding WHICH concepts.
 
@@ -802,7 +1068,7 @@ This is NOT compositional derivation (the PP-as-atoms theory was statistically i
 
 **Source:** GALLOWS_MIDDLE_ANALYSIS (2026-01-24)
 
-### RI Linker Mechanism: Convergent Inter-Record References (Tier 3) - NEW in v4.54
+### RI Linker Mechanism: Convergent Inter-Record References (Tier 3)
 
 **Finding (C835):** 0.6% of RI tokens (4 out of 707 types) function as "linkers" - they appear as FINAL in one paragraph and INITIAL in another, creating directed links between records.
 
@@ -841,11 +1107,34 @@ The same structural pattern supports both interpretations. An encoding where the
 
 The sparse linking (0.6%) suggests most records are self-contained. Only rare "hub" entries aggregate or accept alternatives from multiple sources.
 
-**Source:** A_RECORD_B_ROUTING_TOPOLOGY (2026-01-28)
+**New Evidence Favoring OR (2026-01-30):**
+
+From linker_destination_characterization.py and linker_destination_followup.py:
+
+1. **Hub destinations are structurally typical** - f93v and f32r show no outlier properties (all z-scores < |1|). They don't look like "aggregation points" that would combine inputs.
+
+2. **Linkers don't consistently appear as INITIAL in destinations:**
+   - cthody: INITIAL (pos 1) in f93v ✓
+   - ctho: MIDDLE (pos 13) in f32r ✗
+   - ctheody, qokoiiin: NOT FOUND in their destinations
+
+   This suggests linkers function as cross-references ("see also folio X") rather than procedural inputs.
+
+3. **High source vocabulary similarity (Jaccard 0.50-0.77):**
+   - If AND (aggregation): sources should have DIFFERENT content (distinct ingredients)
+   - If OR (alternatives): sources should have SIMILAR content (interchangeable)
+
+   Observed Jaccard similarity is high, supporting the OR interpretation. Sources share substantial vocabulary beyond the linker token.
+
+4. **Section concentration:** 96% (all destinations + 8/9 sources) are in section H. This suggests domain-specific cross-referencing within herbal content.
+
+**Interpretation refined:** Linkers likely function as **cross-references** marking alternative entries or variations, not as procedural input aggregation points. The ct-ho morphology may mark "see also" rather than "requires".
+
+**Source:** A_RECORD_B_ROUTING_TOPOLOGY (2026-01-28), LINKER_DESTINATION_CHARACTERIZATION (2026-01-30)
 
 ---
 
-## 0.E. B FOLIO AS CONDITIONAL PROCEDURE (CLASS_COMPATIBILITY_ANALYSIS Phase) - NEW in v4.41
+## 0.E. B FOLIO AS CONDITIONAL PROCEDURE (CLASS_COMPATIBILITY_ANALYSIS Phase)
 
 ### Tier 3: Core Finding
 
@@ -961,9 +1250,8 @@ Brunschwig recipe
 
 ### What This Does NOT Claim
 
+Universal Boundaries apply. Additionally:
 - ❌ Folio selection is encoded in the text (it's external/human)
-- ❌ Unique vocabulary has recoverable meaning (semantic ceiling applies)
-- ❌ Each folio maps to exactly one Brunschwig recipe
 - ❌ AZC "chooses" which folio runs
 
 ### What This DOES Claim (Tier 3)
@@ -1019,7 +1307,7 @@ The text encodes procedures and constraints. The decision of WHEN to use them is
 
 ---
 
-## 0.F. LINE-LEVEL EXECUTION SYNTAX (CLASS_SEMANTIC_VALIDATION Phase) - NEW in v4.43
+## 0.F. LINE-LEVEL EXECUTION SYNTAX (CLASS_SEMANTIC_VALIDATION Phase)
 
 ### Tier 2-3: Execution Cycle Discovery
 
@@ -1181,12 +1469,11 @@ Brunschwig writes: *"must be left to stand overnight to cool."* The FLOW final h
 
 ### What This Does NOT Claim
 
-- That specific Brunschwig passages map to specific tokens
+Universal Boundaries apply. Additionally:
 - That or→aiin literally means "sensory test"
 - That daiin literally means "begin heating"
-- That any token has recoverable referential meaning
 
-The interpretation is STRUCTURAL, not semantic: line-level syntax exhibits a cycle structure consistent with thermal processing, but the semantic ceiling (C171) still applies.
+The interpretation is STRUCTURAL, not semantic: line-level syntax exhibits a cycle structure consistent with thermal processing.
 
 ### Cross-References
 
@@ -1213,7 +1500,7 @@ The interpretation is STRUCTURAL, not semantic: line-level syntax exhibits a cyc
 
 ---
 
-## 0.G. THE SCAFFOLD AND THE SHADOW (AX_FUNCTIONAL_ANATOMY Phase) - NEW in v4.44
+## 0.G. THE SCAFFOLD AND THE SHADOW (AX_FUNCTIONAL_ANATOMY Phase)
 
 ### Tier 3-4: What the Other 28% Was Doing All Along
 
@@ -1311,7 +1598,7 @@ This is the final simplification. Currier B's 49 instruction classes decompose i
 
 ---
 
-## 0.H. ENERGY ANATOMY (EN_ANATOMY Phase) - NEW in v4.45
+## 0.H. ENERGY ANATOMY (EN_ANATOMY Phase)
 
 ### Tier 2: EN Internal Architecture
 
@@ -1362,7 +1649,7 @@ CHSH is triggered by AX (32.5%) and CC (11%). QO is triggered by EN-self (53.5%)
 
 ---
 
-## 0.I. SMALL ROLE ANATOMY AND FIVE-ROLE SYNTHESIS (SMALL_ROLE_ANATOMY Phase) - NEW in v4.45
+## 0.I. SMALL ROLE ANATOMY AND FIVE-ROLE SYNTHESIS (SMALL_ROLE_ANATOMY Phase)
 
 ### Tier 2: Complete Role Taxonomy
 
@@ -1495,7 +1782,7 @@ The suffix boundary confirms the apparatus-centric model: content tokens (EN) ca
 
 ---
 
-## 0.J. FQ INTERNAL ARCHITECTURE (FQ_ANATOMY Phase) - NEW in v4.47
+## 0.J. FQ INTERNAL ARCHITECTURE (FQ_ANATOMY Phase)
 
 ### Tier 2: FQ 3-Group Structure
 
@@ -1552,7 +1839,7 @@ The 13-14 complete bifurcation suggests two distinct iteration pathways sharing 
 
 ---
 
-## 0.K. SUB-ROLE INTERACTION GRAMMAR (SUB_ROLE_INTERACTION Phase) - NEW in v4.47
+## 0.K. SUB-ROLE INTERACTION GRAMMAR (SUB_ROLE_INTERACTION Phase)
 
 ### Tier 2: Cross-Boundary Sub-Group Routing
 
@@ -1620,7 +1907,7 @@ In the apparatus-centric model: daiin opens a hazardous processing sequence (hig
 
 ---
 
-## 0.L. LANE CONTROL ARCHITECTURE (LANE_CHANGE_HOLD_ANALYSIS Phase) - NEW in v4.49
+## 0.L. LANE CONTROL ARCHITECTURE (LANE_CHANGE_HOLD_ANALYSIS Phase)
 
 ### Tier 3: Core Finding
 
@@ -1806,6 +2093,144 @@ While token-level switching is memoryless-with-inertia, the system encodes **mac
 
 ---
 
+## 0.M. B PARAGRAPH AND FOLIO STRUCTURE (Annotation-Derived)
+
+### Tier 3: Core Finding
+
+> **B folios are sequential procedures where paragraphs represent named operations executed in order. Early paragraphs concentrate identification vocabulary (HT), middle paragraphs concentrate processing (QO/CHSH), and late paragraphs show terminal vocabulary signature (AX clustering + TERMINAL FL). Lines with HT at both boundaries mark explicit state transitions.**
+
+This interpretation derives from detailed line-by-line annotation of 10 Currier B folios (f41v, f43r, f43v, f46r, f46v, f103r, f103v, f104r, f104v, f105r) totaling ~350 lines with token-level role classification.
+
+### Evidence: Paragraph-Position Vocabulary Distribution
+
+Direct inspection of f105r (36 lines) revealed distinct vocabulary by folio position:
+
+| Position | HT Density | Dominant Roles | FL Profile | Line Length |
+|----------|------------|----------------|------------|-------------|
+| **Early** (L2-L10) | HIGH (4 HT in L10) | INFRA LINE-INITIAL, QO/CHSH processing | ar (INITIAL) | Normal (10-12) |
+| **Middle** (L11-L25) | VARIABLE (0-4 per line) | Heavy QO LANE, DOUBLED patterns | Mixed | Some SHORT (4-6) |
+| **Late** (L26-L36) | DECLINING (mostly 0-1) | AX clustering, FL concentration | aly, am (TERMINAL) | SHORT (4-7) |
+
+### The Terminal Vocabulary Signature
+
+Late folio lines show a distinctive structural pattern:
+
+1. **AX clustering** - L35 of f105r had 5 ot- tokens (otedaiin, otar, oteodar, otam, otaiin)
+2. **TERMINAL FL** - Final lines end with -aly (otaly in L36) and -am closures
+3. **Compressed length** - L36 had only 4 tokens vs normal 10-12
+4. **HT depletion** - Identification work complete; late lines have 0-1 HT
+
+**Interpretation:** Terminal paragraphs are "winding down" operations - auxiliary-heavy, completion-marked, stabilization-focused. The vocabulary shift from active processing (QO/CHSH/EN) to auxiliary completion (AX + TERMINAL FL) marks the transition from transformation to stabilization.
+
+### State Transition Marking (Bracket Patterns)
+
+Lines with HT at BOTH LINE-INITIAL and LINE-FINAL positions appeared multiple times:
+
+| Folio | Line | Pattern | Example |
+|-------|------|---------|---------|
+| f105r | L29 | HT CONSECUTIVE at both ends | oleedar...cheolkary |
+| f105r | L18 | HT bracketing | dsechey...aiiral |
+
+**Interpretation:** If HT tokens identify materials/states, then:
+- LINE-INITIAL HT = "starting with material/state X"
+- LINE-FINAL HT = "ending with material/state Y"
+
+The line documents a state transition: X → Y. This is explicit transformation tracking within the procedural record.
+
+### Paragraph = Named Operation Model
+
+Building on section 0.E (B Folio as Conditional Procedure), the internal structure is:
+
+```
+FOLIO = Complete procedure (e.g., "distill rose water")
+│
+├── PARAGRAPH 1 = Named operation (e.g., "maceration")
+│     ├── Line 1: HEADER (high HT - identifies operation)
+│     ├── Line 2-N: Control blocks (SETUP→WORK→CHECK→CLOSE)
+│     └── State transitions marked by HT brackets
+│
+├── PARAGRAPH 2 = Named operation (e.g., "first distillation")
+│     └── ... control blocks
+│
+└── PARAGRAPH N = Terminal operation (e.g., "stabilization")
+      └── AX + TERMINAL FL signature, SHORT lines
+```
+
+**Sequential, not parallel:** The progression from identification-heavy (early) to completion-focused (late) indicates sequential execution of operations, not parallel processes.
+
+### Strengthening the Brunschwig Alignment
+
+The annotation findings strengthen the distillation manual interpretation:
+
+| Observation | Brunschwig Parallel |
+|-------------|---------------------|
+| Paragraphs as named operations | Brunschwig organizes by operation (maceration, distillation, rectification) |
+| Early = identification heavy | Recipe headers identify materials/process |
+| Middle = processing heavy | Active transformation steps |
+| Late = terminal vocabulary | "Until done" completion markers |
+| State transition brackets | Brunschwig tracks material state changes |
+| AX clustering at end | Final stabilization/storage operations |
+
+### The FL STATE INDEX as Material Progression
+
+The FL token distribution supports material-state tracking:
+
+| FL Stage | Tokens | Mean Position | Interpretation |
+|----------|--------|---------------|----------------|
+| INITIAL | ar, r | 0.30-0.51 | Early material state |
+| LATE | al, l, ol | 0.61 | Intermediate state |
+| TERMINAL | aly, am, y | 0.78-0.94 | Final state |
+
+**Hypothesis:** FL tokens encode material progression stages within the folio. Early paragraphs use INITIAL FL; late paragraphs use TERMINAL FL. This is consistent with a transformation procedure tracking material state through sequential operations.
+
+### Quantitative Patterns from Annotation
+
+From 10 annotated folios:
+
+| Pattern | Frequency | Note |
+|---------|-----------|------|
+| HT LINE-INITIAL | Common | Identification at block entry |
+| HT LINE-FINAL | Common | State marking at block exit |
+| HT CONSECUTIVE | Occasional | Clusters of identification |
+| HT Bracket (both ends) | Rare but systematic | Explicit state transition |
+| EXCEPTIONAL lines (3+ HT) | ~15-30% per folio | Identification-critical blocks |
+| SHORT lines (4-7 tokens) | Concentrated late | Terminal compression |
+| AX clustering | Concentrated late | Completion operations |
+
+### What This Does NOT Claim
+
+Universal Boundaries apply. Additionally:
+- ❌ Paragraph boundaries are syntactically marked (they're visual)
+- ❌ All folios have identical paragraph structure
+- ❌ The progression is strictly monotonic
+
+### What This DOES Claim (Tier 3)
+
+- ✓ B folios have internal sequential structure (not random token distribution)
+- ✓ Vocabulary distribution correlates with folio position
+- ✓ Terminal paragraphs have distinctive signature (AX + TERMINAL FL + SHORT)
+- ✓ HT bracket patterns mark state transitions
+- ✓ This structure is consistent with sequential procedural documentation
+
+### Integration with Control-Loop Model
+
+The findings are robustly consistent with the control-loop interpretation:
+
+| Structural Finding | Control-Loop Interpretation |
+|-------------------|----------------------------|
+| Line = SETUP→WORK→CHECK→CLOSE | Line = one control cycle |
+| Paragraph = operation | Paragraph = series of related control cycles |
+| Folio = procedure | Folio = complete control program |
+| HT = identification | HT = state/material identification |
+| FL progression | Material state tracking through transformation |
+| Terminal signature | Stabilization and completion operations |
+
+The annotation work didn't just confirm patterns exist - it showed how they compose into a coherent procedural document. The pieces fit together as a working whole.
+
+**Source:** Manual annotation of f41v, f43r, f43v, f46r, f46v, f103r, f103v, f104r, f104v, f105r (2026-02-03)
+
+---
+
 ## I. Human Track (HT) Interpretation
 
 ### Tier 2: Core Finding (v2.13)
@@ -1916,7 +2341,7 @@ The manuscript distributes responsibility between system and human across four l
 |-------|------|-----------------|
 | **Currier B** | Constrains you | Execution grammar, safety envelope |
 | **Currier A** | Discriminates for you | Fine distinctions at complexity frontier |
-| **AZC** | Gates you | Phase-indexed decision legality, compatibility filtering |
+| **AZC** | Encodes position | Phase-indexed positional encoding, compatibility grouping |
 | **HT** | Prepares you | Anticipatory vigilance signal |
 
 ### Design Freedom vs Constraint (C458)
@@ -1944,7 +2369,7 @@ This suggests the manuscript is a **manual of responsibility allocation** rather
 
 ### Tier 2: Structural Findings
 
-AZC serves as a **decision-point grammar** that transforms static A-registry entries into phase-gated choice nodes:
+AZC serves as a **positional encoding system** where each PREFIX+MIDDLE has exactly one fixed position:
 
 | Finding | Evidence | Constraint |
 |---------|----------|------------|
@@ -1953,11 +2378,11 @@ AZC serves as a **decision-point grammar** that transforms static A-registry ent
 | Folio-specific HT profiles | 18pp escape variance | C439 |
 | Uniform B sourcing | 34-36 folios per B | C440 |
 | Vocabulary-activated constraints | 49% A-types in 1 folio | C441 |
-| Compatibility filter | 94% unique vocabulary | C442 |
+| Compatibility grouping | 94% unique vocabulary | C442 |
 
 ### Tier 3: Operational Interpretation
 
-**Core insight:** AZC converts static Currier A entries into phase-gated decision points.
+**Core insight:** AZC encodes vocabulary position; each PREFIX+MIDDLE has one fixed position reflecting its operational character.
 
 | System | Function | Type |
 |--------|----------|------|
@@ -1969,20 +2394,21 @@ AZC serves as a **decision-point grammar** that transforms static A-registry ent
 
 ### Phase-to-Workflow Mapping
 
-AZC positional grammar maps to operational workflow:
+AZC **diagram** positional grammar maps to operational workflow:
 
-| Position | Workflow Phase | Escape Rate | Meaning |
-|----------|----------------|-------------|---------|
-| C | Setup/Loading | 1.4% | Entry constrained, errors fixable |
-| P | Active work | 11.6% | Recovery permitted, intervention legal |
+| Diagram Position | Workflow Phase | Escape Rate | Meaning |
+|------------------|----------------|-------------|---------|
+| C | Core/Interior | ~1.4% | Moderate flexibility |
 | R1→R2→R3 | Progression | 2.0%→1.2%→0% | Options narrowing, committing |
-| S | Collection/Exit | 0-3.8% | Locked, must accept outcome |
+| S | Boundary/Exit | 0% | Locked, must accept outcome |
+
+*Note: P (Paragraph) is NOT a diagram position - it is Currier A text appearing on AZC folios.*
 
 In reflux distillation: early phases are reversible, late phases are committed. AZC encodes this grammatically.
 
-### Compatibility Filter Mechanism (v4.5 - REFINED)
+### Compatibility Grouping Mechanism (v4.5 - REFINED)
 
-AZC compatibility operates at the **Currier A constraint-bundle level**, not at execution level.
+AZC compatibility reflects vocabulary co-occurrence at the **Currier A positional encoding level**, not active filtering.
 
 **Precise Definition (C442 refined):**
 > Two AZC folio vocabularies are compatible iff there exists at least one Currier A entry whose vocabulary bridges both.
@@ -2020,7 +2446,7 @@ f116v shares NO bridging tokens with most other folios—it defines a discrimina
 AZC is not selected explicitly. Constraints activate automatically:
 - **Core vocabulary** (20+ folios) → broadly legal
 - **Specialized vocabulary** (1-3 folios) → activates specific profile
-- **Position (C→P→R→S)** → determines phase-specific rules
+- **Diagram position (C→R→S)** → determines phase-specific rules
 
 The vocabulary you use determines which constraints apply.
 
@@ -2065,7 +2491,7 @@ The vocabulary you use determines which constraints apply.
 
 See [efficiency_regimes.md](efficiency_regimes.md) for full test results.
 
-### PREFIX Sub-Families via AZC Clustering (v4.4)
+### PREFIX Sub-Families via AZC Clustering
 
 AZC folio co-occurrence can reveal sub-families within PREFIX classes that morphology alone doesn't show.
 
@@ -2095,7 +2521,7 @@ This strengthens the interpretation that PREFIX encodes more than material class
 
 ---
 
-## I.D. MIDDLE Atomic Incompatibility Layer (C475) - NEW in v4.6
+## I.D. MIDDLE Atomic Incompatibility Layer (C475)
 
 ### Tier 2: Core Finding
 
@@ -2175,7 +2601,7 @@ This explains several long-standing puzzles at once:
 4. ~~**HT Variance Decomposition**~~ — **DONE: R²=0.28, TAIL PRESSURE dominant** (see I.H below)
 5. ~~**Temporal Coverage Trajectories**~~ — **DONE: STRONG SCHEDULING with pedagogical pacing** (see I.I below)
 
-### I.E. Latent Discrimination Dimensionality (v4.7) - NEW
+### I.E. Latent Discrimination Dimensionality
 
 **Question:** How many latent "axes of distinction" are needed to explain the MIDDLE incompatibility graph?
 
@@ -2227,7 +2653,7 @@ The top-5 MIDDLEs by degree (weighted co-occurrence) match prior finding:
 
 These universal connectors remain valid; they simply have high compatibility across all 128 dimensions.
 
-### I.F. Bundle Generator Diagnostic (v4.8) - NEW
+### I.F. Bundle Generator Diagnostic
 
 **Question:** Can a generator constrained only by MIDDLE incompatibility + line length + PREFIX priors reproduce Currier A entries?
 
@@ -2262,7 +2688,7 @@ These universal connectors remain valid; they simply have high compatibility acr
 
 These are not noise — they are **discoverable constraints** waiting to be formalized.
 
-### I.G. Coverage Optimality CONFIRMED (v4.9) - NEW
+### I.G. Coverage Optimality CONFIRMED
 
 **Question:** Does Currier A optimize coverage of the discrimination space under cognitive constraints?
 
@@ -2303,7 +2729,7 @@ The correct question is not "how are A entries generated?" but "how is discrimin
 
 **New Constraint: C476 - COVERAGE OPTIMALITY** (Tier 2, CLOSED)
 
-### I.H. HT Variance Decomposition (v4.10) - NEW
+### I.H. HT Variance Decomposition
 
 **Question:** Can incompatibility degree explain HT density?
 
@@ -2334,18 +2760,11 @@ This confirms HT as a **cognitive load balancer** specifically tied to **tail di
 | Common MIDDLEs | LOW | Lower HT |
 | **Rare MIDDLEs (tail)** | **HIGH** | **Higher HT** |
 
-**Integration with Four-Layer Model:**
-
-| Layer | Role | Grounded By |
-|-------|------|-------------|
-| Currier B | Execution safety | Frozen Tier 0 |
-| Currier A | Coverage control | C476 (hub rationing) |
-| AZC | Decision gating | C437-C444 |
-| **HT** | **Vigilance signal** | **C477 (tail correlation)** |
+**Integration:** Adds HT as vigilance signal (C477) to the architecture. See Nine-Layer Model in Section I.N for the complete table.
 
 **New Constraint: C477 - HT TAIL CORRELATION** (Tier 2, CLOSED)
 
-### I.I. Temporal Coverage Trajectories (v4.11) - NEW
+### I.I. Temporal Coverage Trajectories
 
 **Question:** Is Currier A static-optimal or dynamically scheduled?
 
@@ -2396,19 +2815,11 @@ This is not accidental. It is structured temporal management of discrimination c
 | C476 | WHAT Currier A optimizes (coverage with hub rationing) |
 | **C478** | **HOW it achieves that (temporal scheduling)** |
 
-**Five-Layer Model Complete:**
-
-| Layer | Role | Mechanism |
-|-------|------|-----------|
-| Currier B | Execution safety | Frozen Tier 0 |
-| Currier A | Coverage control | C476: hub rationing |
-| - | - | **C478: temporal scheduling** |
-| AZC | Decision gating | C437-C444 |
-| HT | Vigilance signal | C477: tail correlation |
+**Integration:** Adds C478 temporal scheduling to the architecture. See Nine-Layer Model in Section I.N for the complete table.
 
 **New Constraint: C478 - TEMPORAL COVERAGE SCHEDULING** (Tier 2, CLOSED)
 
-### I.J. Process-Behavior Isomorphism (v4.12 / ECR-4) - NEW
+### I.J. Process-Behavior Isomorphism (v4.12 / ECR-4)
 
 **Question:** Does the Voynich control architecture behave like something built for real physical chemistry?
 
@@ -2447,6 +2858,8 @@ This is not accidental. It is structured temporal management of discrimination c
 | PHASE_ORDERING | 41% of hazards | Wrong phase/location state |
 | M-A | Mobile/Distinct | Phase-sensitive, mobile, requiring careful control |
 
+*Note: M-A uses superseded classification. See Energy/Stability/Monitoring/Infrastructure model (Section 0).*
+
 *Tier-3 commentary: In reflux distillation, k=heat source, h=cucurbit, e=condenser.*
 
 **Physics Violations:** None detected. All mappings are physically coherent.
@@ -2455,22 +2868,13 @@ This is not accidental. It is structured temporal management of discrimination c
 
 > The grammar structure is isomorphic to reflux-distillation behavior. This does not prove the domain but establishes maximal structural alignment within epistemological constraints.
 
-**Six-Layer Model Complete:**
-
-| Layer | Role | Mechanism |
-|-------|------|-----------|
-| Currier B | Execution safety | Frozen Tier 0 |
-| Currier A | Coverage control | C476: hub rationing |
-| - | - | C478: temporal scheduling |
-| AZC | Decision gating | C437-C444 |
-| HT | Vigilance signal | C477: tail correlation |
-| **Process** | **Behavior isomorphism** | **ECR-4: distillation alignment** |
+**Integration:** Adds Process behavior isomorphism (ECR-4: distillation alignment) to the architecture. See Nine-Layer Model in Section I.N for the complete table.
 
 ### f116v Correction
 
 f116v folio-level isolation (v2.19) is explained by **data sparsity** (only 2 words in AZC corpus: "oror", "sheey"), NOT by MIDDLE-level incompatibility. The f116v MIDDLEs ('ee', 'or') are actually universal connectors.
 
-### I.K. HT Two-Axis Model (v4.13) - NEW
+### I.K. HT Two-Axis Model
 
 **Question:** Does HT morphological complexity encode sensory/perceptual load?
 
@@ -2530,21 +2934,11 @@ The hypothesis "LATE means harder sensing / more senses needed" is **NOT SUPPORT
 >
 > HT does not encode what sensory modalities are needed. Sensory demands are implicit in the discrimination problem itself.
 
-**Seven-Layer Model Complete:**
-
-| Layer | Role | Mechanism |
-|-------|------|-----------|
-| Currier B | Execution safety | Frozen Tier 0 |
-| Currier A | Coverage control | C476: hub rationing |
-| - | - | C478: temporal scheduling |
-| AZC | Decision gating | C437-C444 |
-| HT | Vigilance signal | C477: tail correlation |
-| - | - | **Two-Axis: density vs morphology** |
-| Process | Behavior isomorphism | ECR-4: distillation alignment |
+**Integration:** Adds Two-Axis HT model (density vs morphology) to the architecture. See Nine-Layer Model in Section I.N for the complete table.
 
 See [ht_two_axis_model.md](ht_two_axis_model.md) for full details.
 
-### I.L. MIDDLE Zone Survival Profiles (v4.14) - NEW
+### I.L. MIDDLE Zone Survival Profiles
 
 **Question:** Do MIDDLEs exhibit stable, non-random survival profiles across AZC legality zones?
 
@@ -2581,9 +2975,7 @@ This is a characterization refinement, not a mechanism discovery:
 
 **What This Does NOT Show:**
 
-- ❌ MIDDLEs do not *force* positions (C313 intact)
-- ❌ No A→B entry-level coupling (C384 intact)
-- ❌ No semantic encoding (roles, not meanings)
+Universal Boundaries apply. Additionally: MIDDLEs do not *force* positions (C313 intact).
 
 **Cross-References (Tier 2):**
 
@@ -2604,28 +2996,19 @@ This is a distributional regularity, not a structural necessity. For promotion t
 
 Currently this shows: "Given this manuscript, MIDDLEs have stable zone preferences." That's characterization, not mechanism.
 
-**Eight-Layer Model:**
-
-| Layer | Role | Mechanism |
-|-------|------|-----------|
-| Currier B | Execution safety | Frozen Tier 0 |
-| Currier A | Coverage control | C476: hub rationing |
-| - | - | C478: temporal scheduling |
-| - | - | **Zone survival profiles** |
-| AZC | Decision gating | C437-C444 |
-| HT | Vigilance signal | C477: tail correlation |
-| - | - | Two-Axis: density vs morphology |
-| Process | Behavior isomorphism | ECR-4: distillation alignment |
+**Integration:** Adds Zone survival profiles to the architecture. See Nine-Layer Model in Section I.N for the complete table.
 
 See `phases/MIDDLE_ZONE_SURVIVAL/PHASE_SUMMARY.md` for full details.
 
-### I.M. Zone-Material Orthogonality (v4.15) - NEW
+### I.M. Zone-Material Orthogonality
 
 **Question:** Do zone survival clusters align with material behavior classes?
 
 **Answer:** NO. The axes are **orthogonal** (independent).
 
 **Test Results:**
+
+*Note: This test used the superseded M-A/B/C/D classification. The orthogonality conclusion is expected to hold under the current Energy/Stability/Monitoring/Infrastructure model.*
 
 | Zone | Predicted Class | Actual Dominant | Match |
 |------|-----------------|-----------------|-------|
@@ -2663,9 +3046,7 @@ Solvent identity would require collapsing these axes. The manuscript **keeps the
 
 **What This Does NOT Show:**
 
-- No refutation of either abstraction (both remain valid)
-- No material identification possible
-- No semantic decoding
+Universal Boundaries apply. No refutation of either abstraction (both remain valid).
 
 **Cross-References:**
 
@@ -2677,7 +3058,7 @@ Solvent identity would require collapsing these axes. The manuscript **keeps the
 
 See `phases/ZONE_MATERIAL_COHERENCE/PHASE_SUMMARY.md` for full details.
 
-### I.N. Semantic Ceiling Extension Tests (v4.16) - NEW
+### I.N. Semantic Ceiling Extension Tests
 
 **Question:** Can we push the semantic ceiling without reopening Tier 0-2 constraints?
 
@@ -2765,7 +3146,7 @@ See `phases/SEMANTIC_CEILING_EXTENSION/PHASE_SUMMARY.md` for full details.
 
 ---
 
-## I.O. Physical World Reverse Engineering Phases (v4.18) - UPDATED
+## I.O. Physical World Reverse Engineering Phases
 
 ### Overview
 
@@ -2938,22 +3319,9 @@ Together:
 
 Common signature: **CLOSED-LOOP CIRCULATORY THERMAL PROCESS CONTROL**
 
-### Line-Level Execution Cycle (NEW - v4.43)
+### Line-Level Execution Cycle
 
-CLASS_SEMANTIC_VALIDATION revealed that lines follow a thermal processing cycle:
-
-| Phase | Position | Markers | Distillation Parallel |
-|-------|----------|---------|----------------------|
-| SETUP | Initial | daiin trigger, AX context | Initiate fire, set degree |
-| WORK | Medial | ENERGY chains, qo↔ch-sh | Sustained heating with monitoring |
-| CHECK | Medial-final | or→aiin bigram | Sensory verification (scent/taste) |
-| CLOSE | Final | FLOW hierarchy, ary=100% final | Cooling/collection, batch commitment |
-
-ENERGY/FLOW anticorrelation by REGIME confirms operational mode interpretation:
-- REGIME_1 (EN/FL=7.57): Active heating
-- REGIME_2 (EN/FL=3.71): Cooling/collection
-
-See Section 0.F for full details (C547-C562).
+Lines follow SETUP→WORK→CHECK→CLOSE thermal processing cycle. See Section 0.F for full details (C547-C562).
 
 ### Historical Pattern Alignment
 
@@ -3126,15 +3494,15 @@ Only Tier 0-2 structural findings are binding.
 
 ## IX. Open Questions
 
-### Fully Answered (v4.43)
+### Fully Answered
 
 | Question | Status | Finding |
 |----------|--------|---------|
 | Why are some programs forgiving and others brittle? | PARTIALLY ANSWERED | Recovery varies freely (CV=0.82), hazard is clamped (CV=0.11) - C458 |
 | What does HT signal? | ANSWERED | Anticipatory vigilance, content-driven - C459 |
-| What role does AZC play in the manuscript? | **FULLY ANSWERED** | Decision-point grammar, compatibility filter, phase-indexed escape gating - C437-C444 |
+| What role does AZC play in the manuscript? | **FULLY ANSWERED** | Positional encoding, compatibility grouping, position reflects vocabulary character - C437-C444 |
 | Why are there so many AZC folios? | **FULLY ANSWERED** | Enumerates all compatibility classes; each folio = distinct legal combination space - C437, C442 |
-| How does AZC relate to A and B? | **FULLY ANSWERED** | AZC converts static A entries into phase-gated decision points within B procedures - F-AZC-011/012/013 |
+| How does AZC relate to A and B? | **FULLY ANSWERED** | AZC encodes vocabulary position; each PREFIX+MIDDLE has one fixed position reflecting operational character - F-AZC-011/012/013 |
 | How do roles flow within a line? | **FULLY ANSWERED** | SETUP→WORK→CHECK→CLOSE positional template (p=3e-89) - C547-C562 |
 | What is the relationship between ENERGY and FLOW? | **FULLY ANSWERED** | Anticorrelated by REGIME and section; heating vs cooling modes - C551, C562 |
 | What does daiin do? | **FULLY ANSWERED** | Line-initial ENERGY trigger (27.7% initial, 47.1% EN followers) - C557 |
@@ -3171,7 +3539,7 @@ Only Tier 0-2 structural findings are binding.
 >
 > **The alignment is regime-level and architectural, not textual or semantic.**
 >
-> **NEW (v4.22): Puff and Brunschwig preserve the original pedagogical progression of the Voynich Currier B corpus, which has been disrupted by early misbinding.**
+> **Puff and Brunschwig preserve the original pedagogical progression of the Voynich Currier B corpus, which has been disrupted by early misbinding.**
 
 This is stronger than "shared world" - it is **shared curriculum trajectory**: the same control ontology and pedagogical progression rendered in two epistemic registers. The misbinding concealed this relationship.
 
@@ -3198,8 +3566,6 @@ This is stronger than "shared world" - it is **shared curriculum trajectory**: t
 | Recovery Corridor | 4/4 tests | **PASS** |
 | Clamping Magnitude (C458) | 5/5 tests | **PASS** |
 | **Total** | **19/20** | **FULL PROCEDURAL ALIGNMENT** |
-
----
 
 ### X.1 Puff-Voynich: Mastery Horizon Isomorphism
 
@@ -3243,8 +3609,6 @@ This **grounds** the mastery horizon interpretation rather than replacing it:
 
 The question "why can experts learn ~83 things?" is answered by "because that's how many operationally distinct configurations exist."
 
----
-
 ### X.2 Voynich-Brunschwig: Regime-Degree Discrimination (5/6 PASS)
 
 Voynich regimes discriminate between Brunschwig's fire degrees:
@@ -3261,8 +3625,6 @@ Voynich regimes discriminate between Brunschwig's fire degrees:
 **CEI Ordering:** `REGIME_2 < REGIME_1 < REGIME_4 < REGIME_3`
 - Matches Brunschwig's fire degree escalation exactly.
 
----
-
 ### X.3 Suppression Alignment (5/5 PASS)
 
 **What Brunschwig explains, Voynich enforces.**
@@ -3277,8 +3639,6 @@ Voynich regimes discriminate between Brunschwig's fire degrees:
 
 Key insight: **Prevention by design produces minimal actual failures.** Brunschwig warns about fourth degree fire because it's dangerous; Voynich has 6% energy hazards because it prevents them grammatically.
 
----
-
 ### X.4 Recovery Corridor Alignment (4/4 PASS)
 
 | Brunschwig Narrative | Voynich Architecture |
@@ -3289,8 +3649,6 @@ Key insight: **Prevention by design produces minimal actual failures.** Brunschw
 | Cooling, not re-heating | e dominates, k is hazard source |
 
 Both systems: **return to stability, not energy re-application.**
-
----
 
 ### X.5 Clamping Magnitude - C458 Alignment (5/5 PASS)
 
@@ -3304,8 +3662,6 @@ Brunschwig's "twice only" rule produces the same variance signature as C458:
 | Near-miss | Material sensitivity varies | 0.72 | FREE |
 
 **"Twice only" = ceiling, not count.** Recovery is bounded but free within that bound; hazard ceiling is fixed universally.
-
----
 
 ### X.6 REGIME_4 Interpretation Correction
 
@@ -3321,20 +3677,13 @@ REGIME_4 IS "precision-constrained execution" (narrow tolerance window).
 
 **Voynich vendors the engineering alternative:** how to operate precisely without coercive fire.
 
----
-
 ### X.7 What This Does NOT Claim
 
-Even with full procedural alignment, the following remain **unproven and probably false**:
+Universal Boundaries apply. Even with full procedural alignment:
 
-- "This Voynich folio corresponds to this Brunschwig paragraph"
-- "Voynich is a cipher for Brunschwig"
-- "Voynich encodes named procedures"
-- "Voynich was meant to be read alongside Brunschwig"
+- "Voynich encodes named procedures" remains unproven and probably false
 
 The stronger the regime-level match becomes, the **less** likely direct textual dependence becomes - because the **division of labor is too clean**.
-
----
 
 ### X.8 Expert Assessment
 
@@ -3350,8 +3699,6 @@ The stronger the regime-level match becomes, the **less** likely direct textual 
 
 > "This is not parallel invention by accident. This is the same control ontology rendered in two epistemic registers."
 
----
-
 ### X.9 Tier Compliance (Expert Verified)
 
 This analysis is **epistemically clean**:
@@ -3363,8 +3710,6 @@ This analysis is **epistemically clean**:
 **Constraints NOT violated:** C384, C171, C476, C478, C179-C185, C490
 
 **C171 ("zero material encoding") remains UNCHANGED.** A encodes the same kinds of operational worries that historical experts talked about - without ever naming the things they worried about.
-
----
 
 ### X.10 Files
 
@@ -3379,8 +3724,6 @@ This analysis is **epistemically clean**:
 | `phases/TIER4_EXTENDED/brunschwig_procedure_match.py` | Procedure match test |
 | `phases/TIER4_EXTENDED/brunschwig_regime_discrimination.py` | Regime discrimination test |
 | `phases/TIER4_EXTENDED/brunschwig_suppression_alignment.py` | Suppression alignment tests |
-
----
 
 ### X.11 Curriculum Realignment Discovery (v4.22 - NEW)
 
@@ -3434,9 +3777,7 @@ See [curriculum_realignment.md](curriculum_realignment.md) for full details.
 
 ← [README.md](README.md) | ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)
 
----
-
-### X.12 Grammar-Level Embedding Result (2026-01-14) - NEW
+### X.12 Grammar-Level Embedding Result (2026-01-14)
 
 **Question:** Can Brunschwig distillation procedures be translated step-by-step into Voynich grammar without violating any validated constraints?
 
@@ -3461,8 +3802,6 @@ This is not a vibes-level parallel. It is a **grammar-level embedding** result:
 - REGIME_4 is NOT "most intense" - it is "least forgiving"
 
 **Files:** phases/BRUNSCHWIG_TEMPLATE_FIT/, context/SPECULATIVE/brunschwig_grammar_embedding.md
-
----
 
 ### X.13 Relationship Hierarchy (2026-01-14) - UPDATED
 
@@ -3494,8 +3833,6 @@ It now has something much better:
 > **A concrete, historically situated grammar that real procedures fit inside - and real hazards cannot escape.**
 
 **Puff status: CONTEXTUAL (demoted from PILLAR)**
-
----
 
 ### X.14 Curriculum Completeness Model (2026-01-14)
 
@@ -3529,8 +3866,6 @@ REGIME_3: Full execution (recovery completeness required)
 
 The same product (rose water) can appear at any curriculum stage - but advanced stages require complete procedures with proper recovery and monitoring.
 
----
-
 ### X.15 Backward Propagation: Product->A Signature (2026-01-14)
 
 **Two-Level A Model:**
@@ -3560,8 +3895,6 @@ Brunschwig recipe -> Product type -> REGIME -> B folio -> A register
 This enables prediction: Given a Brunschwig recipe, identify its product type, map to REGIME, find B folios in that REGIME, trace exclusive MIDDLEs back to A folios with matching PREFIX signatures.
 
 **Files:** phases/BRUNSCHWIG_TEMPLATE_FIT/exclusive_middle_backprop.py, brunschwig_product_predictions.py
-
----
 
 ### X.16 Puff Complexity Correlation (2026-01-15) - STRUCTURALLY ALIGNED
 
@@ -3623,8 +3956,6 @@ NOT: "Advanced folios just add options" (too casual, incorrect)
 Advanced grammar is a STRICTER CONTRACT, not a superset.
 
 **Files:** phases/PUFF_COMPLEXITY_CORRELATION/puff_regime_complexity_test.py
-
----
 
 ### X.17 Brunschwig Backprop Validation (2026-01-15) - EXPLANATORY SATURATION
 
@@ -3725,9 +4056,7 @@ The 18 jar labels share **zero tokens** with 191 content labels - fundamentally 
 
 **Files:** phases/PHARMA_LABEL_DECODING/README.md
 
----
-
-### X.19 Jars as Complementary Working Set Anchors (2026-01-17) - NEW
+### X.19 Jars as Complementary Working Set Anchors (2026-01-17)
 
 Extended investigation of jar function tested four mutually exclusive hypotheses. Three falsified, one confirmed.
 
@@ -3741,6 +4070,8 @@ Extended investigation of jar function tested four mutually exclusive hypotheses
 | Triplet stability | Role composition | **Confirmed** (1.77x) |
 
 #### Cross-Class Pair Enrichment
+
+*Note: This analysis used the superseded M-A/B/C/D classification. Cross-class enrichment pattern expected to hold under current model.*
 
 | Class Pair | Observed | Expected | Ratio |
 |------------|----------|----------|-------|
@@ -3772,16 +4103,13 @@ This:
 
 #### What This Does NOT Claim
 
-- Jars do NOT encode specific substances
-- Jars do NOT map to Brunschwig methods
+Universal Boundaries apply. Additionally:
 - Jars do NOT select processing regimes
 - This is Tier 3 interface characterization, NOT Tier 2 structure
 
 **Status:** CLOSED with explanatory saturation
 
 **Files:** phases/JAR_WORKING_SET_INTERFACE/README.md, phases/JAR_WORKING_SET_INTERFACE/results.json
-
----
 
 ### X.19.a Jar Labels as Compressed Configuration Signatures (2026-01-23)
 
@@ -3819,8 +4147,6 @@ This explains:
 **Constraints:** C523 (Pharma Label Vocabulary Bifurcation), C524 (Jar Label Morphological Compression)
 
 **Status:** CLOSED - Confirms apparatus interpretation with morphological evidence
-
----
 
 ### X.19.b Morphological Function Model: PP/RI Pipeline Architecture (2026-01-23)
 
@@ -3953,9 +4279,7 @@ The jar labels are the "last mile" - where abstract constraints meet physical ve
 
 **Status:** OPEN - Tier 4 synthesis for further investigation
 
----
-
-### X.20 A->AZC->B Pipeline Closure: Reachability Suppression (2026-01-17) - NEW
+### X.20 A->AZC->B Pipeline Closure: Reachability Suppression (2026-01-17)
 
 **Phase:** AZC_REACHABILITY_SUPPRESSION
 **Status:** COMPLETE - Real closure achieved
@@ -4063,18 +4387,11 @@ This completes the structural understanding of how the three layers co-produce s
 
 #### What This Does NOT Claim
 
-- NO semantic decoding occurred
-- NO specific substances identified
-- NO entry-level A->B mapping created
-- NO Tier 0-2 constraints violated
-
-This is mechanism characterization within established epistemological boundaries.
+Universal Boundaries apply. This is mechanism characterization within established epistemological boundaries.
 
 **Files:** phases/AZC_REACHABILITY_SUPPRESSION/
 
----
-
-### X.21 Constraint Substitution Interpretation (2026-01-19) - NEW
+### X.21 Constraint Substitution Interpretation (2026-01-19)
 
 **Phase:** SENSORY_LOAD_ENCODING + BRUNSCHWIG_REVERSE_ACTIVATION
 **Status:** COMPLETE - Explanatory model validated
@@ -4135,18 +4452,15 @@ Sensory load encodes through vocabulary selection, not direct signaling.
 
 #### What This Does NOT Claim
 
-- NO semantic encoding of sensory modalities
+Universal Boundaries apply. Additionally:
 - NO parametric encoding (C469 preserved)
-- NO entry-level mapping (C384 preserved)
 - SLI is constructed metric, not discovered structure
 
 **Tier:** 3 (Explanatory Interpretation)
 
 **Files:** phases/SENSORY_LOAD_ENCODING/, results/sensory_load_index.json
 
----
-
-### X.22 Zone Affinity Analysis (2026-01-19) - NEW
+### X.22 Zone Affinity Analysis (2026-01-19)
 
 **Phase:** BRUNSCHWIG_REVERSE_ACTIVATION
 **Status:** COMPLETE - 197/197 recipes processed
@@ -4220,9 +4534,7 @@ SIGHT (visual monitoring) -> P-zone affinity
 All mapping is AGGREGATE (zone-level, MIDDLE-level), not entry-level. No direct recipe->entry mapping.
 
 **What This Does NOT Claim:**
-- NO entry-level A-B coupling
-- NO semantic decoding
-- Modality assignments are external (from Brunschwig)
+Universal Boundaries apply. Additionally: modality assignments are external (from Brunschwig).
 
 **Tier:** 3 (Structural Characterization)
 
@@ -4230,9 +4542,7 @@ All mapping is AGGREGATE (zone-level, MIDDLE-level), not entry-level. No direct 
 
 **Files:** phases/BRUNSCHWIG_REVERSE_ACTIVATION/, results/brunschwig_reverse_activation.json
 
----
-
-### X.23 Two-Stage Sensory Addressing Model (2026-01-19) - NEW
+### X.23 Two-Stage Sensory Addressing Model (2026-01-19)
 
 **Phase:** ZONE_MODALITY_VALIDATION
 **Status:** COMPLETE - Rigorous statistical validation with REGIME stratification
@@ -4323,9 +4633,7 @@ All tested modalities AVOID S-zone:
 
 **Files:** phases/ZONE_MODALITY_VALIDATION/, results/regime_stratified_analysis.json
 
----
-
-### X.24 Semantic Ceiling Breach Attempt (2026-01-19) - NEW
+### X.24 Semantic Ceiling Breach Attempt (2026-01-19)
 
 **Phase:** SEMANTIC_CEILING_BREACH
 **Status:** COMPLETE - Tier 3 confirmed with stronger evidence
@@ -4412,9 +4720,7 @@ The semantic ceiling is confirmed at **aggregate characterization**:
 
 **Files:** phases/SEMANTIC_CEILING_BREACH/, results/scb_modality_prediction.json, results/scb_synthesis.json
 
----
-
-### X.25 Trajectory Semantics: Judgment-Gating System (2026-01-19) - NEW
+### X.25 Trajectory Semantics: Judgment-Gating System (2026-01-19)
 
 **Phase:** TRAJECTORY_SEMANTICS
 **Status:** COMPLETE - Semantic boundary resolution achieved
@@ -4503,9 +4809,7 @@ This is not a failure to "go further." This IS going further - into procedural s
 
 **Files:** phases/TRAJECTORY_SEMANTICS/, results/ts_judgment_trajectories.json, results/ts_synthesis.json
 
----
-
-### X.26 AZC Trajectory Shape: Scaffold Fingerprint Discovery (2026-01-19) - NEW
+### X.26 AZC Trajectory Shape: Scaffold Fingerprint Discovery (2026-01-19)
 
 **Phase:** AZC_TRAJECTORY_SHAPE
 **Status:** COMPLETE - Critical corrective insight achieved
@@ -4564,7 +4868,9 @@ This closes the architectural loop: **AZC legality -> vocabulary survival -> exe
 The apparatus-phase alignment hypothesis failed (rho=-0.20) because:
 - AZC does NOT mirror physical reversibility
 - AZC encodes **when human intervention must be permitted**
-- P-zone has highest escape (11.6%) because that's when operators need to intervene
+- Interior diagram positions (C, R-early) have higher escape than boundary positions (S)
+
+*Note: P (Paragraph) is Currier A text on AZC folios, not a diagram position.*
 
 > **Physics enforces order; AZC enforces responsibility allocation. These are orthogonal.**
 
@@ -4604,9 +4910,7 @@ This phase disentangles them cleanly:
 
 **Files:** phases/AZC_TRAJECTORY_SHAPE/, results/ats_*.json
 
----
-
-### X.27 Brunschwig-Voynich Relationship Bounded: Explanation-Enforcement Complementarity FALSIFIED (2026-01-19) - NEW
+### X.27 Brunschwig-Voynich Relationship Bounded: Explanation-Enforcement Complementarity FALSIFIED (2026-01-19)
 
 **Phase:** BC_EXPLANATION_ENFORCEMENT
 **Status:** COMPLETE - Clean falsification achieved
@@ -4692,9 +4996,7 @@ This formulation:
 
 **Files:** phases/BC_EXPLANATION_ENFORCEMENT/, results/bc_*.json
 
----
-
-### X.28 Recipe Triangulation Methodology: Multi-Dimensional PP Convergence (2026-01-21) - NEW
+### X.28 Recipe Triangulation Methodology: Multi-Dimensional PP Convergence (2026-01-21)
 
 **Phase:** ANIMAL_PRECISION_CORRELATION
 
@@ -4795,8 +5097,6 @@ Refines C384 (no entry-level A-B coupling):
 - Results: `phases/ANIMAL_PRECISION_CORRELATION/results/`
 - Scripts: `phases/ANIMAL_PRECISION_CORRELATION/scripts/`
 
----
-
 ### X.29 Material-Class REGIME Invariance: Precision as Universal Requirement (2026-01-25) - REVISED
 
 **REVISED FINDING:** Both animal AND herb material classes route preferentially to REGIME_4 (precision control). Material differentiation occurs at **token variant level**, not REGIME level.
@@ -4881,3 +5181,447 @@ Now demonstrated across BOTH material classes: REGIME_4 is universal precision i
 - Phase: `phases/MATERIAL_REGIME_MAPPING/`
 - PP Classification: `phases/PP_CLASSIFICATION/`
 - Results: `phases/*/results/`
+
+### X.30 Three-Tier MIDDLE Structure and AZC Bridge Tokens (2026-02-04)
+
+**Phase:** REVERSE_BRUNSCHWIG_V2
+**Status:** COMPLETE - Structural pattern with speculative interpretation
+
+#### Core Discovery
+
+The MIDDLE layer in Currier B exhibits a three-tier structure based on folio position and AZC presence:
+
+| Tier | MIDDLEs | Mean Position | AZC Presence | Origin |
+|------|---------|---------------|--------------|--------|
+| **EARLY** | ksh, lch, tch, pch, te | 0.31-0.41 | **6 tokens** | B-specific |
+| **MID** | k, t, e | 0.42-0.46 | **151 tokens** | Pipeline (A→AZC→B) |
+| **LATE** | ke, kch | 0.47-0.59 | **4 tokens** | B-specific |
+
+#### The AZC Discriminator
+
+AZC presence/absence distinguishes vocabulary origin:
+
+| Tier | % of AZC tier tokens | Interpretation |
+|------|---------------------|----------------|
+| MID | **93.8%** | Core operations flow through A→AZC→B pipeline |
+| EARLY+LATE | **6.2%** | B-specific vocabulary, not AZC-mediated |
+
+**The rule:** If a MIDDLE appears significantly in AZC → it's MID tier (pipeline vocabulary). If absent from AZC → it's EARLY or LATE tier (B-internal vocabulary).
+
+#### The 10 EARLY/LATE Tokens in AZC: Bridge Vocabulary
+
+Of ~900 EARLY/LATE tokens in B, only 10 appear in AZC. These split into two groups:
+
+**AZC-Only (3 tokens) - Pure Labels:**
+
+| Token | PREFIX | MIDDLE | In B? |
+|-------|--------|--------|-------|
+| orkeeey | or | ke | NO |
+| shkeal | sh | ke | NO |
+| ypolcheey | po | lch | NO |
+
+- Non-qo prefixes (or-, sh-, po-)
+- Appear only in Zodiac diagram positions
+- Function as positional labels, not executable operations
+
+**Bridge Tokens (7 tokens) - Cross to B:**
+
+| Token | PREFIX | MIDDLE | B Count | B Position |
+|-------|--------|--------|---------|------------|
+| qoteedy | **qo** | te | 73 | 0.43 (early) |
+| qokchdy | **qo** | kch | 54 | 0.45 (early) |
+| qopchey | **qo** | pch | 7 | - |
+| dalchdy | da | lch | 3 | - |
+| qoteor | **qo** | te | 3 | - |
+| dolchedy | do | lch | 2 | - |
+
+- **96.5% qo-prefixed** (vs 79.3% for other EARLY/LATE in B)
+- Appear **earlier** in B folios than other EARLY/LATE tokens (0.432 vs 0.479)
+- Dominated by two tokens: `qoteedy` (73) and `qokchdy` (54) = 89% of B occurrences
+
+#### The qo- PREFIX Discriminator
+
+The qo- prefix determines whether an EARLY/LATE token can cross from AZC to B:
+
+| Pattern | AZC Role | B Role |
+|---------|----------|--------|
+| qo- + EARLY/LATE MIDDLE | Bridge marker | Executable operation |
+| non-qo + EARLY/LATE MIDDLE | Position label | Absent or rare |
+
+**Example:** The MIDDLE `ke` appears in both groups:
+- `qokeedy` → 306 occurrences in B (executable)
+- `orkeeey` → 0 occurrences in B (AZC label only)
+
+Same MIDDLE, different PREFIX → different pipeline behavior.
+
+#### Speculative Interpretation: Sparse Indexing System
+
+The Zodiac diagrams function as **configuration templates** where:
+
+1. **Most vocabulary is simple labels** (y, o, r, l, ar, dy) - positional markers
+2. **MID tier tokens (k, t, e)** mark core operational states
+3. **Specific qo-EARLY/LATE tokens** mark phase boundaries:
+   - `qoteedy` (qo-te-edy) → preparation phase entry point
+   - `qokchdy` (qo-kch-dy) → extended operation marker
+
+**The Zodiac doesn't encode full procedural vocabulary.** It encodes **which procedural template/phase structure to activate**. B then generates appropriate EARLY/LATE vocabulary based on that configuration.
+
+```
+ZODIAC CONFIGURATION SPACE
+    │
+    ├─ Simple labels (y, o, r, l)     → Position markers only
+    ├─ MID tier (k, t, e)             → Core operational states
+    ├─ qoteedy                         → "Start preparation phase"
+    └─ qokchdy                         → "Include extended operations"
+    │
+    ▼
+B EXECUTION
+    │
+    ├─ EARLY tier (B-generated)       → Full preparation vocabulary
+    ├─ MID tier (from pipeline)       → Core operations
+    └─ LATE tier (B-generated)        → Extended operations
+```
+
+#### Alignment with Brunschwig Model
+
+This maps to Brunschwig's procedural structure:
+
+| Brunschwig Phase | Voynich Tier | AZC Role |
+|------------------|--------------|----------|
+| Preparation (14 ops) | EARLY | Sparse markers (qoteedy) |
+| Distillation (27 ops) | MID | Full vocabulary (k, t, e) |
+| Extended treatment | LATE | Sparse markers (qokchdy) |
+
+The Zodiac encodes **which phases are active**, not the full procedural detail. B supplies the detail.
+
+#### Structural Evidence
+
+| Finding | Evidence | Tier |
+|---------|----------|------|
+| Three-tier positional structure | ANOVA p=0.013, Cohen's d=-0.875 | 2 |
+| MID tier AZC dominance | 93.8% of AZC tier tokens | 2 |
+| qo- prefix bridge pattern | 96.5% vs 79.3% | 2 |
+| Bridge tokens earlier in B | 0.432 vs 0.479 mean position | 2 |
+| Sparse indexing interpretation | - | 4 (this section) |
+
+#### What This Does NOT Claim
+
+Universal Boundaries apply. Additionally:
+- ❌ Complete understanding of Zodiac function
+- ✓ Structural pattern of vocabulary flow through pipeline
+- ✓ PREFIX as execution-eligibility marker
+- ✓ Zodiac as sparse index, not full procedure encoding
+
+#### Tier Compliance
+
+- **F-BRU-011 (Tier 2):** Three-tier MIDDLE operational structure
+- **Structural patterns (Tier 2):** AZC presence, qo- discrimination, positional differences
+- **This interpretation (Tier 4):** Sparse indexing model for AZC→B phase activation
+
+**Files:**
+- Phase: `phases/REVERSE_BRUNSCHWIG_V2/`
+- Analysis scripts: `phases/REVERSE_BRUNSCHWIG_V2/scripts/`
+- Results: `phases/REVERSE_BRUNSCHWIG_V2/results/`
+
+### X.31 Preparation Operation Mapping and Modification System (2026-02-04)
+
+**Phase:** REVERSE_BRUNSCHWIG_V2
+**Status:** SUPPORTED - Statistical correlation with speculative interpretation
+**Fit:** F-BRU-012
+
+#### Core Discovery
+
+The 5 preparation-tier MIDDLEs correlate with Brunschwig preparation operations at statistically significant levels, with PREFIX and SUFFIX encoding operational modifications.
+
+#### Operation Mapping (Spearman rho = 1.000, p < 0.001)
+
+| Brunschwig Operation | MIDDLE | Evidence | Confidence |
+|---------------------|--------|----------|------------|
+| **GATHER** (selection) | te | Earliest position (0.410), most uniform morphology (87% -edy) | MEDIUM-HIGH |
+| **CHOP** (mechanical) | pch | HERBAL_B concentrated (36.5%), herb material class | MEDIUM |
+| **STRIP** (separation) | lch | BIO concentrated (37.5%), extreme PREFIX diversity (12 types) | MEDIUM |
+| **POUND** (intensive) | tch | OTHER concentrated (37.4%), pharma/intensive context | LOW-MEDIUM |
+| **Rare ops** (BREAK, WASH) | ksh | Lowest frequency (7.9%), specialized contexts | LOW |
+
+#### PREFIX Modification: Handling Mode
+
+| PREFIX | Rate | Position | Meaning | Pattern |
+|--------|------|----------|---------|---------|
+| qo- | 77.9% | 0.429 | Standard operation | All MIDDLEs |
+| ol- | 5.1% | 0.378 | Output/terminal form | All MIDDLEs |
+| so- | 4.5% | 0.478 | Tolerance mode | **Only lch** |
+| po- | 3.6% | 0.415 | Specialized/restricted | **Only lch** |
+| da- | 2.1% | 0.367 | Anchoring reference | **Only lch** |
+
+**Key finding:** `lch` (STRIP) has 12 different prefixes vs 2-5 for others. This matches Brunschwig's STRIP operation which applies to diverse materials (leaves, bark, feathers, stomach linings) requiring different handling modes.
+
+#### SUFFIX Modification: Operation Intensity
+
+| SUFFIX | Rate | Meaning | Brunschwig Parallel |
+|--------|------|---------|---------------------|
+| -edy | 56.2% | Complete/thorough | "chopped fine", "pounded well" |
+| -dy | 16.6% | Basic operation | Standard processing |
+| -ey | 14.8% | Selective/delicate | "lightly", careful handling |
+
+**Section correlation (statistical):**
+- BIO (delicate materials): 68.8% -edy (thorough processing)
+- HERBAL_B (herbs): 55.2% -edy, 22.9% -dy (more variation)
+- OTHER (intensive): 42.1% -edy, 20.6% -ey (selective in harsh context)
+
+#### Full Token Interpretation
+
+| Token | Count | Interpretation |
+|-------|-------|----------------|
+| qoteedy | 73 | Standard GATHER, complete |
+| qopchedy | 32 | Standard CHOP, complete |
+| qopchdy | 15 | Standard CHOP, basic |
+| solchedy | 8 | Tolerant STRIP, complete (delicate materials) |
+| dalchedy | 7 | Anchored STRIP, complete (registry reference) |
+| qotchedy | 24 | Standard POUND, complete |
+| qotchdy | 23 | Standard POUND, basic |
+
+#### Brunschwig Modifier System Parallel
+
+| Brunschwig | Voynich | Evidence |
+|------------|---------|----------|
+| Intensity ("fine" vs "coarse") | SUFFIX (-edy/-dy/-ey) | Section correlation (p<0.01) |
+| Material type (delicate vs tough) | PREFIX (qo-/so-/da-) | lch diversity pattern |
+| Downstream fire degree | Section distribution | Material-section alignment |
+
+#### What This Does NOT Claim
+
+Universal Boundaries apply. Additionally:
+- The specific operation names are hypothetical (MIDDLE "correlates with" not "encodes")
+- Token interpretations are illustrative, not proven
+
+#### Tier Compliance
+
+- **Statistical patterns (Tier 2):** Frequency correlation, section distributions, PREFIX diversity
+- **F-BRU-012 (Tier F3):** Operation mapping with section-material correspondence
+- **Token interpretations (Tier 4):** Specific semantic assignments
+
+#### Naming Note
+
+Uses "preparation-tier MIDDLEs" rather than "EARLY tier" to avoid collision with C539's EARLY/LATE PREFIX terminology.
+
+### X.32 Extended Operation Differentiation: ke vs kch (2026-02-04)
+
+**Phase:** REVERSE_BRUNSCHWIG_V2
+**Status:** SUPPORTED - Statistical differentiation with speculative interpretation
+**Fit:** F-BRU-013
+
+#### Core Discovery
+
+The two extended-tier MIDDLEs (ke, kch) encode different operational modes that map to Brunschwig's fire degree monitoring protocols.
+
+#### Section Specialization (Key Discriminator)
+
+| MIDDLE | BIO+HERBAL_B | OTHER | Processing Mode |
+|--------|--------------|-------|-----------------|
+| **ke** | **85.3%** | 14.7% | Gentle/sustained |
+| **kch** | 45.3% | **54.7%** | Intensive/precision |
+
+#### Suffix Pattern Differentiation
+
+| MIDDLE | -edy | -dy | -ey | Pattern |
+|--------|------|-----|-----|---------|
+| **ke** | 85.3% | 0% | 0% | Uniform (complete operation) |
+| **kch** | 32.4% | 41.2% | 19.6% | Mixed (context-dependent) |
+
+ke maintains uniform -edy regardless of section; kch adapts its suffix to context.
+
+#### Morphological Interpretation
+
+| MIDDLE | Components | Interpretation |
+|--------|------------|----------------|
+| **ke** | k + e | Heat + equilibration (sustained cycles) |
+| **kch** | k + ch | Heat + precision (C412: ch = precision mode) |
+
+#### Brunschwig Mapping
+
+| Fire Degree | Monitoring Mode | MIDDLE | Evidence |
+|-------------|-----------------|--------|----------|
+| Degree 1-2 (gentle) | Sustained heat cycles | **ke** | BIO/HERBAL_B concentration |
+| Degree 3 (critical) | "Finger test" precision | **kch** | OTHER concentration, tch co-occurrence |
+
+#### Co-occurrence Pattern
+
+kch is enriched 17x with `tch` (POUND equivalent), confirming that intensive operations require precision heat control.
+
+#### Complete Three-Tier Model
+
+| Tier | MIDDLEs | Function | Brunschwig Phase |
+|------|---------|----------|------------------|
+| **Preparation** | te, pch, lch, tch, ksh | Material preparation | GATHER, CHOP, STRIP, POUND |
+| **Core** | k, t, e | Base thermodynamic | Heat, timing, equilibrate |
+| **Extended** | ke, kch | Modified operations | Sustained (ke) or precision (kch) |
+
+#### Tier Compliance
+
+- **Section specialization (Tier 2):** Statistical measurement
+- **Suffix differentiation (Tier 2):** Statistical measurement
+- **F-BRU-013 (Tier F3):** Brunschwig monitoring parallel
+- **Morphological interpretation (Tier 4):** k+e, k+ch decomposition
+
+### X.33 Procedural Dimension Independence (2026-02-05)
+
+**Phase:** REVERSE_BRUNSCHWIG_V3
+**Status:** CONFIRMED - Statistical validation with Tier 2 findings
+**Fits:** F-BRU-015, F-BRU-016
+
+#### Core Discovery
+
+Procedural tier features add 2-3 independent dimensions beyond aggregate rate features in PCA.
+
+#### Dimensional Increase
+
+| Metric | Original | Combined |
+|--------|----------|----------|
+| Dims for 80% variance | **5** | **8** |
+| Independent procedural PCs | - | **2** (|r| < 0.3) |
+
+#### Independence Test
+
+| Procedural PC | Max |r| with Original PCs | Status |
+|---------------|----------------------------|--------|
+| Proc PC1 | 0.28 | INDEPENDENT |
+| Proc PC2 | 0.24 | INDEPENDENT |
+
+#### REGIME Differentiation
+
+6/12 procedural features show significant REGIME differences (Kruskal-Wallis p < 0.05):
+- prep_density: eta-squared = 0.18 (LARGE)
+- thermo_density: eta-squared = 0.16 (LARGE)
+- extended_density: eta-squared = 0.15 (LARGE)
+
+#### REGIME_4 Clarification (F-BRU-017)
+
+REGIME_4 shows HIGHER ke_kch ratio (more ke/sustained), clarifying "precision" in C494:
+- Precision = tight tolerance, not intensity
+- Achieved via sustained equilibration cycles (ke = k + e)
+- NOT via burst precision (kch = k + ch)
+
+#### Interpretation
+
+The three-tier procedural structure captures variance orthogonal to aggregate rates:
+- WHAT operations occur (rates) is partially independent from WHEN they occur (positions)
+- REGIMEs encode different procedural BALANCES, not just operation intensities
+
+### X.34 Root Illustration Processing Correlation: Tier 4 External Anchor (2026-02-05)
+
+**Phase:** REVERSE_BRUNSCHWIG_V3
+**Status:** CONFIRMED - Statistical significance with external semantic grounding
+**Fit:** F-BRU-018
+
+#### Core Discovery
+
+B folios using vocabulary from root-illustrated A folios show elevated root-processing operations (tch=POUND, pch=CHOP), providing external semantic anchoring.
+
+#### Statistical Evidence
+
+| Metric | Value | Interpretation |
+|--------|-------|----------------|
+| Pearson r | **0.366** | Moderate correlation |
+| p-value | **0.0007** | Highly significant |
+| Spearman rho | **0.315** | Robust to outliers |
+| Direction | CORRECT | Root overlap -> higher root ops |
+
+#### External Anchor Logic
+
+```
+Brunschwig (External): "POUND/CHOP roots" (dense materials need mechanical breakdown)
+          |
+          v
+Voynich illustrations: 73% emphasize root systems (PIAA phase classification)
+          |
+          v
+A folios with root illustrations -> PP bases (vocabulary extraction)
+          |
+          v
+B folios using root-sourced PP -> elevated tch (POUND) + pch (CHOP)
+```
+
+This is NOT circular reasoning - it connects:
+- Visual features (illustration root emphasis)
+- Brunschwig domain knowledge (root processing methods)
+- Voynich text patterns (prep MIDDLE distribution)
+
+#### Methodological Compliance (C384)
+
+The analysis operates at **folio aggregate level**:
+- C384 prohibits token-level A-B lookup
+- C384.a permits "record-level correspondence via multi-axis constraint composition"
+- PP-base overlap is aggregate vocabulary matching, not token mapping
+
+#### Effect Size Benchmark
+
+The r=0.37 correlation is comparable to validated Tier 3 findings:
+- C477 (HT-tail correlation): r=0.504
+- C459 (HT anticipatory): r=0.343
+- C412 (sister-escape anticorrelation): rho=-0.326
+
+#### What This Does Claim (Tier 4)
+
+- Illustrations DO encode material category information (even if epiphenomenal to execution)
+- The A->B vocabulary pipeline preserves material-category signals
+- Brunschwig material-operation mappings have predictive power for Voynich patterns
+
+#### What This Does NOT Claim
+
+Universal Boundaries apply. Additionally: this is aggregate statistical correspondence, not decipherment.
+
+#### Tier Compliance
+
+- **Statistical correlation (Tier 2):** Measured effect (r=0.37, p<0.001)
+- **F-BRU-018 (Tier 4):** External semantic anchoring via Brunschwig + illustrations
+
+**Files:** phases/REVERSE_BRUNSCHWIG_V3/, phases/PROCEDURAL_DIMENSION_EXTENSION/
+
+### X.35 Material Category Hierarchy: Marked vs Unmarked (2026-02-05)
+
+**Phase:** REVERSE_BRUNSCHWIG_V3
+**Status:** SUPPORTED - Explains asymmetric pathway evidence
+**Fit:** F-BRU-019
+
+#### Core Discovery
+
+The Voynich system marks **deviations from default processing**, not the default itself. Delicate plant materials (leaves, flowers, petals) are the unmarked default.
+
+#### Three-Pathway Summary
+
+| Material Category | A Signal | B Signal | Status |
+|-------------------|----------|----------|--------|
+| **Roots/Dense** | Illustration (root emphasis) | tch+pch elevated (r=0.37) | **CONFIRMED** |
+| **Animals** | Suffix -ey/-ol | REGIME_4, k+e >> h | **CONFIRMED** |
+| **Delicate plants** | Suffix -y/-dy | No distinctive signature | **UNMARKED DEFAULT** |
+
+#### Why Delicate Plants Have No Marker
+
+Herb-suffix pathway test showed:
+- Modest correlation with gentle density (r=0.24, p=0.028)
+- BUT no REGIME-specific routing (KW p=0.80)
+- Both herb AND animal overlap correlate similarly with B metrics
+
+**Interpretation:** Gentle processing is the baseline assumption. Only deviations require marking:
+- "POUND this" (roots)
+- "Precision timing" (animals)
+- [nothing] = proceed with gentle processing (flowers/leaves)
+
+#### Brunschwig Parallel
+
+Brunschwig's manual follows the same pattern:
+- Most recipes are for aromatic flowers/leaves (unmarked default)
+- Special instructions only for dense materials and animals
+
+#### Category Consolidation
+
+From this point forward:
+- **Delicate plant material** = leaves, flowers, petals, soft herbs (single category)
+- **Dense plant material** = roots, bark, seeds (requires marking)
+- **Animal material** = fats, organs, kermes (requires precision marking)
+
+#### Tier Compliance
+
+- Statistical tests: Tier 2 (null finding is still a finding)
+- Theoretical coherence: Tier 3 (Brunschwig alignment)
+- Material category consolidation: Tier 4 (interpretive)

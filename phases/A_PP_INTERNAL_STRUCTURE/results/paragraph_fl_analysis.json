@@ -1,0 +1,363 @@
+{
+  "fl_rate_by_line": {
+    "1": {
+      "fl_count": 1076,
+      "total": 4999,
+      "rate": 0.21524304860972193
+    },
+    "2": {
+      "fl_count": 1264,
+      "total": 4954,
+      "rate": 0.2551473556721841
+    },
+    "3": {
+      "fl_count": 945,
+      "total": 3761,
+      "rate": 0.2512629619781973
+    },
+    "4": {
+      "fl_count": 649,
+      "total": 2498,
+      "rate": 0.25980784627702164
+    },
+    "5": {
+      "fl_count": 460,
+      "total": 1678,
+      "rate": 0.27413587604290823
+    },
+    "6": {
+      "fl_count": 319,
+      "total": 1142,
+      "rate": 0.27933450087565675
+    },
+    "7": {
+      "fl_count": 174,
+      "total": 743,
+      "rate": 0.23418573351278602
+    },
+    "8": {
+      "fl_count": 163,
+      "total": 562,
+      "rate": 0.2900355871886121
+    },
+    "9": {
+      "fl_count": 99,
+      "total": 428,
+      "rate": 0.23130841121495327
+    },
+    "10": {
+      "fl_count": 72,
+      "total": 322,
+      "rate": 0.2236024844720497
+    },
+    "11": {
+      "fl_count": 67,
+      "total": 263,
+      "rate": 0.25475285171102663
+    },
+    "12": {
+      "fl_count": 54,
+      "total": 228,
+      "rate": 0.23684210526315788
+    },
+    "13": {
+      "fl_count": 51,
+      "total": 208,
+      "rate": 0.24519230769230768
+    },
+    "14": {
+      "fl_count": 39,
+      "total": 160,
+      "rate": 0.24375
+    },
+    "15": {
+      "fl_count": 39,
+      "total": 141,
+      "rate": 0.2765957446808511
+    },
+    "16": {
+      "fl_count": 31,
+      "total": 124,
+      "rate": 0.25
+    },
+    "17": {
+      "fl_count": 26,
+      "total": 103,
+      "rate": 0.2524271844660194
+    },
+    "18": {
+      "fl_count": 25,
+      "total": 86,
+      "rate": 0.29069767441860467
+    },
+    "19": {
+      "fl_count": 16,
+      "total": 72,
+      "rate": 0.2222222222222222
+    },
+    "20": {
+      "fl_count": 7,
+      "total": 50,
+      "rate": 0.14
+    },
+    "21": {
+      "fl_count": 18,
+      "total": 51,
+      "rate": 0.35294117647058826
+    },
+    "22": {
+      "fl_count": 9,
+      "total": 43,
+      "rate": 0.20930232558139536
+    },
+    "23": {
+      "fl_count": 9,
+      "total": 40,
+      "rate": 0.225
+    },
+    "24": {
+      "fl_count": 10,
+      "total": 46,
+      "rate": 0.21739130434782608
+    },
+    "25": {
+      "fl_count": 11,
+      "total": 33,
+      "rate": 0.3333333333333333
+    },
+    "26": {
+      "fl_count": 2,
+      "total": 21,
+      "rate": 0.09523809523809523
+    },
+    "27": {
+      "fl_count": 3,
+      "total": 21,
+      "rate": 0.14285714285714285
+    },
+    "28": {
+      "fl_count": 9,
+      "total": 26,
+      "rate": 0.34615384615384615
+    },
+    "29": {
+      "fl_count": 5,
+      "total": 19,
+      "rate": 0.2631578947368421
+    },
+    "30": {
+      "fl_count": 2,
+      "total": 5,
+      "rate": 0.4
+    }
+  },
+  "fl_stages_by_line": {
+    "1": {
+      "TERMINAL": 254,
+      "FINAL": 131,
+      "MEDIAL": 285,
+      "INITIAL": 38,
+      "LATE": 342,
+      "EARLY": 26
+    },
+    "2": {
+      "TERMINAL": 242,
+      "LATE": 459,
+      "MEDIAL": 318,
+      "FINAL": 151,
+      "EARLY": 61,
+      "INITIAL": 33
+    },
+    "3": {
+      "FINAL": 109,
+      "TERMINAL": 164,
+      "MEDIAL": 228,
+      "INITIAL": 36,
+      "LATE": 359,
+      "EARLY": 49
+    },
+    "4": {
+      "TERMINAL": 127,
+      "LATE": 234,
+      "MEDIAL": 169,
+      "INITIAL": 17,
+      "FINAL": 67,
+      "EARLY": 35
+    },
+    "5": {
+      "TERMINAL": 97,
+      "INITIAL": 11,
+      "MEDIAL": 111,
+      "FINAL": 44,
+      "LATE": 183,
+      "EARLY": 14
+    },
+    "6": {
+      "MEDIAL": 80,
+      "FINAL": 30,
+      "LATE": 123,
+      "TERMINAL": 65,
+      "INITIAL": 6,
+      "EARLY": 15
+    },
+    "7": {
+      "MEDIAL": 32,
+      "FINAL": 17,
+      "LATE": 70,
+      "TERMINAL": 42,
+      "EARLY": 9,
+      "INITIAL": 4
+    },
+    "8": {
+      "INITIAL": 4,
+      "TERMINAL": 33,
+      "MEDIAL": 43,
+      "LATE": 63,
+      "FINAL": 9,
+      "EARLY": 11
+    },
+    "9": {
+      "MEDIAL": 28,
+      "TERMINAL": 21,
+      "FINAL": 7,
+      "LATE": 37,
+      "EARLY": 4,
+      "INITIAL": 2
+    },
+    "11": {
+      "LATE": 25,
+      "INITIAL": 1,
+      "TERMINAL": 19,
+      "MEDIAL": 18,
+      "EARLY": 1,
+      "FINAL": 3
+    },
+    "10": {
+      "TERMINAL": 15,
+      "MEDIAL": 11,
+      "LATE": 39,
+      "EARLY": 3,
+      "FINAL": 2,
+      "INITIAL": 2
+    },
+    "12": {
+      "MEDIAL": 11,
+      "TERMINAL": 9,
+      "EARLY": 5,
+      "LATE": 25,
+      "FINAL": 4
+    },
+    "13": {
+      "EARLY": 1,
+      "LATE": 24,
+      "MEDIAL": 13,
+      "FINAL": 4,
+      "TERMINAL": 9
+    },
+    "14": {
+      "MEDIAL": 4,
+      "TERMINAL": 9,
+      "LATE": 20,
+      "FINAL": 3,
+      "EARLY": 2,
+      "INITIAL": 1
+    },
+    "15": {
+      "EARLY": 4,
+      "LATE": 22,
+      "MEDIAL": 4,
+      "TERMINAL": 6,
+      "FINAL": 2,
+      "INITIAL": 1
+    },
+    "16": {
+      "MEDIAL": 10,
+      "EARLY": 2,
+      "LATE": 14,
+      "TERMINAL": 3,
+      "FINAL": 2
+    },
+    "17": {
+      "LATE": 13,
+      "TERMINAL": 8,
+      "MEDIAL": 4,
+      "EARLY": 1
+    },
+    "18": {
+      "LATE": 15,
+      "EARLY": 2,
+      "TERMINAL": 2,
+      "MEDIAL": 4,
+      "INITIAL": 1,
+      "FINAL": 1
+    },
+    "19": {
+      "LATE": 6,
+      "MEDIAL": 4,
+      "FINAL": 2,
+      "EARLY": 3,
+      "TERMINAL": 1
+    },
+    "20": {
+      "LATE": 3,
+      "TERMINAL": 1,
+      "FINAL": 1,
+      "MEDIAL": 2
+    },
+    "21": {
+      "EARLY": 2,
+      "LATE": 8,
+      "TERMINAL": 3,
+      "MEDIAL": 3,
+      "INITIAL": 1,
+      "FINAL": 1
+    },
+    "22": {
+      "MEDIAL": 3,
+      "TERMINAL": 2,
+      "LATE": 4
+    },
+    "23": {
+      "LATE": 4,
+      "EARLY": 2,
+      "TERMINAL": 1,
+      "MEDIAL": 1,
+      "FINAL": 1
+    },
+    "24": {
+      "EARLY": 1,
+      "LATE": 3,
+      "TERMINAL": 3,
+      "MEDIAL": 3
+    },
+    "25": {
+      "LATE": 3,
+      "MEDIAL": 4,
+      "INITIAL": 2,
+      "TERMINAL": 2
+    },
+    "26": {
+      "EARLY": 1,
+      "TERMINAL": 1
+    },
+    "27": {
+      "MEDIAL": 2,
+      "LATE": 1
+    },
+    "28": {
+      "LATE": 4,
+      "TERMINAL": 2,
+      "MEDIAL": 2,
+      "FINAL": 1
+    },
+    "29": {
+      "LATE": 3,
+      "FINAL": 1,
+      "MEDIAL": 1
+    },
+    "30": {
+      "MEDIAL": 1,
+      "TERMINAL": 1
+    }
+  }
+}

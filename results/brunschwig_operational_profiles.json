@@ -1,0 +1,6945 @@
+{
+  "title": "Brunschwig Recipe Operational Profiles (Predicted Voynich Vectors)",
+  "recipe_count": 245,
+  "mapping_source": "F-BRU-012, F-BRU-013, F-BRU-020",
+  "dimensions": [
+    "prep_te",
+    "prep_pch",
+    "prep_lch",
+    "prep_tch",
+    "thermo_ke",
+    "thermo_kch",
+    "k_ratio",
+    "h_ratio",
+    "e_ratio",
+    "iteration_rate",
+    "checkpoint_rate",
+    "terminal_rate"
+  ],
+  "profiles": [
+    {
+      "recipe_id": 1,
+      "name": "horehound",
+      "name_german": "Andorn",
+      "material_class": "herb",
+      "fire_degree": 3,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.3333,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 2,
+      "name": "sorrel",
+      "name_german": "Ampffer",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 0,
+      "has_procedure": false,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {}
+    },
+    {
+      "recipe_id": 3,
+      "name": "apple tree mistletoe",
+      "name_german": "Affolter Mystel",
+      "material_class": "plant_parasite",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 4,
+      "name": "dwarf elder / danewort",
+      "name_german": "Attich",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 0,
+      "has_procedure": false,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {}
+    },
+    {
+      "recipe_id": 5,
+      "name": "elecampane herb and root",
+      "name_german": "Alant Krut",
+      "material_class": "herb",
+      "fire_degree": 3,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.3333,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 6,
+      "name": "elecampane root only",
+      "name_german": "Alant Wurtzel",
+      "material_class": "root",
+      "fire_degree": 3,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.3333333333333333,
+      "thermo_ke": 0,
+      "thermo_kch": 0.3333,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "POUND": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 7,
+      "name": "agrimony",
+      "name_german": "Agrimonien",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 8,
+      "name": "columbine",
+      "name_german": "Agleyen",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 9,
+      "name": "sow thistle / goose thistle / liver thistle",
+      "name_german": "Antifien",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.3333333333333333,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 10,
+      "name": "cuckoo-pint / lords-and-ladies",
+      "name_german": "Aron",
+      "material_class": "herb",
+      "fire_degree": 3,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.3333,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 11,
+      "name": "mandrake",
+      "name_german": "Alrunen",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.3333333333333333,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "POUND": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 12,
+      "name": "angelica",
+      "name_german": "Angelica",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 0,
+      "has_procedure": false,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {}
+    },
+    {
+      "recipe_id": 13,
+      "name": "scabious",
+      "name_german": "Abbis",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 4,
+      "has_procedure": true,
+      "prep_te": 0.25,
+      "prep_pch": 0.25,
+      "prep_lch": 0.0,
+      "prep_tch": 0.25,
+      "thermo_ke": 0.25,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "POUND": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 14,
+      "name": "magpie",
+      "name_german": "Atzeln",
+      "material_class": "ANIMAL",
+      "fire_degree": 2,
+      "step_count": 4,
+      "has_procedure": true,
+      "prep_te": 0.25,
+      "prep_pch": 0.25,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.25,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "PLUCK": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 15,
+      "name": "duck blood",
+      "name_german": "Antrechen Blut",
+      "material_class": "ANIMAL",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 0.5,
+      "h_ratio": 0.0,
+      "e_ratio": 0.5,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0.5,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "COLLECT": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 16,
+      "name": "borage herb",
+      "name_german": "Burretsch krut",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 4,
+      "has_procedure": true,
+      "prep_te": 0.25,
+      "prep_pch": 0.25,
+      "prep_lch": 0.0,
+      "prep_tch": 0.25,
+      "thermo_ke": 0.25,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "POUND": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 17,
+      "name": "borage flower",
+      "name_german": "Burretsch blumen",
+      "material_class": "flower",
+      "fire_degree": 1,
+      "step_count": 4,
+      "has_procedure": true,
+      "prep_te": 0.25,
+      "prep_pch": 0.25,
+      "prep_lch": 0.25,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.25,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "BREAK": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 18,
+      "name": "henbane",
+      "name_german": "Bülsen krut",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.3333333333333333,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "POUND": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 19,
+      "name": "blue iris flower",
+      "name_german": "Blow gilgen",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "step_count": 0,
+      "has_procedure": false,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {}
+    },
+    {
+      "recipe_id": 20,
+      "name": "blue iris root",
+      "name_german": "Blow gilgen wurtzel",
+      "material_class": "root",
+      "fire_degree": 3,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.3333,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 21,
+      "name": "blue iris stamen/pistil",
+      "name_german": "Blow gilgen blumlin",
+      "material_class": "flower_part",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 22,
+      "name": "birch leaf",
+      "name_german": "Byrcken loub",
+      "material_class": "leaf",
+      "fire_degree": 2,
+      "step_count": 4,
+      "has_procedure": true,
+      "prep_te": 0.25,
+      "prep_pch": 0.25,
+      "prep_lch": 0.0,
+      "prep_tch": 0.25,
+      "thermo_ke": 0.25,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "POUND": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 23,
+      "name": "birch sap",
+      "name_german": "Byrckin safft",
+      "material_class": "sap",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 0.5,
+      "h_ratio": 0.0,
+      "e_ratio": 0.5,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0.3333,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "BORE": 1,
+        "COLLECT": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 24,
+      "name": "purslane",
+      "name_german": "Burtzeln",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 25,
+      "name": "burnet saxifrage",
+      "name_german": "Bibinellen",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 4,
+      "has_procedure": true,
+      "prep_te": 0.25,
+      "prep_pch": 0.25,
+      "prep_lch": 0.0,
+      "prep_tch": 0.25,
+      "thermo_ke": 0.25,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "POUND": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 26,
+      "name": "dogwood/cornel leaf",
+      "name_german": "Beyn holtzin loub",
+      "material_class": "leaf",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 27,
+      "name": "dogwood/cornel flower",
+      "name_german": "Beyn holtzin blüt",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 28,
+      "name": "watercress",
+      "name_german": "Brun kressen",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 4,
+      "has_procedure": true,
+      "prep_te": 0.25,
+      "prep_pch": 0.25,
+      "prep_lch": 0.25,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.25,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "BREAK": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 29,
+      "name": "water mint",
+      "name_german": "Bachmüntz",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 30,
+      "name": "burnt lettuce",
+      "name_german": "Brant latich",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 0,
+      "has_procedure": false,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {}
+    },
+    {
+      "recipe_id": 31,
+      "name": "bean flower",
+      "name_german": "Bonen blügot",
+      "material_class": "flower",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 32,
+      "name": "bean (whole)",
+      "name_german": "Bonen",
+      "material_class": "legume",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 33,
+      "name": "bean pod",
+      "name_german": "Bon hülsen",
+      "material_class": "pod",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 34,
+      "name": "bean herb",
+      "name_german": "Bonen krut",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 35,
+      "name": "large basil",
+      "name_german": "Groß basilig",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 36,
+      "name": "curly basil / clove basil",
+      "name_german": "Krusen basilie",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 37,
+      "name": "blue may flower",
+      "name_german": "Blow meyblumen",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 38,
+      "name": "goat blood",
+      "name_german": "Bocks blut",
+      "material_class": "ANIMAL",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 0.5,
+      "h_ratio": 0.0,
+      "e_ratio": 0.5,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0.5,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "COLLECT": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 39,
+      "name": "rose hip leaf / dog rose leaf",
+      "name_german": "Butten laub",
+      "material_class": "leaf",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.0,
+      "prep_lch": 0.3333333333333333,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 40,
+      "name": "betony",
+      "name_german": "Bathonien",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 41,
+      "name": "beech leaf",
+      "name_german": "Büchin loub",
+      "material_class": "leaf",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 42,
+      "name": "goat's beard / salsify",
+      "name_german": "Bockßbart",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 43,
+      "name": "blackberry",
+      "name_german": "Bromber",
+      "material_class": "fruit",
+      "fire_degree": 2,
+      "step_count": 4,
+      "has_procedure": true,
+      "prep_te": 0.25,
+      "prep_pch": 0.0,
+      "prep_lch": 0.25,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.25,
+      "thermo_kch": 0,
+      "k_ratio": 0.5,
+      "h_ratio": 0.0,
+      "e_ratio": 0.5,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0.25,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "BREAK": 1,
+        "COLLECT": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 44,
+      "name": "pennyroyal",
+      "name_german": "Boley",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 45,
+      "name": "blue violet",
+      "name_german": "Blow violen",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 46,
+      "name": "mugwort",
+      "name_german": "Bucken",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.0,
+      "prep_lch": 0.3333333333333333,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 47,
+      "name": "broadleaf plantain",
+      "name_german": "Breit wegrich",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 0,
+      "has_procedure": false,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {}
+    },
+    {
+      "recipe_id": 48,
+      "name": "broadleaf plantain seed",
+      "name_german": "Breit wegrich samen",
+      "material_class": "seed",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 49,
+      "name": "broadleaf plantain bloom",
+      "name_german": "Breit wegrich blut",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 50,
+      "name": "herb bennet / blessed herb",
+      "name_german": "Bendicten krut",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 4,
+      "has_procedure": true,
+      "prep_te": 0.25,
+      "prep_pch": 0.25,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.25,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "WASH": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 51,
+      "name": "parsnip",
+      "name_german": "Bestennaw",
+      "material_class": "root",
+      "fire_degree": 3,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.3333,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 52,
+      "name": "mallow",
+      "name_german": "Bappeln",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 4,
+      "has_procedure": true,
+      "prep_te": 0.25,
+      "prep_pch": 0.25,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.25,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "WASH": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 53,
+      "name": "mallow bloom",
+      "name_german": "Bappeln blut",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 54,
+      "name": "self-heal / prunella",
+      "name_german": "Brunellen",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 55,
+      "name": "mercury herb / annual mercury",
+      "name_german": "Bingel krut",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 56,
+      "name": "chamomile",
+      "name_german": "Camillen",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 57,
+      "name": "blessed thistle",
+      "name_german": "Cardus benedictus",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 58,
+      "name": "bedstraw / madder",
+      "name_german": "Cliben",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 59,
+      "name": "crosswort",
+      "name_german": "Crutz wurtz",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 60,
+      "name": "small burning nettle",
+      "name_german": "Clein brennende nessel",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 4,
+      "has_procedure": true,
+      "prep_te": 0.25,
+      "prep_pch": 0.25,
+      "prep_lch": 0.0,
+      "prep_tch": 0.25,
+      "thermo_ke": 0.25,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "POUND": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 61,
+      "name": "cabbage",
+      "name_german": "Cabs krut",
+      "material_class": "vegetable",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "BREAK": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 62,
+      "name": "centaury / thousand gold herb",
+      "name_german": "Dusent guldin krut",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 63,
+      "name": "fumitory / dove's crop",
+      "name_german": "Duben kropff",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 64,
+      "name": "valerian",
+      "name_german": "Denmarck",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 65,
+      "name": "sow thistle / prickly lettuce",
+      "name_german": "Dudistel",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 66,
+      "name": "strawberry",
+      "name_german": "Ertber",
+      "material_class": "fruit",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 67,
+      "name": "gentian",
+      "name_german": "Encian",
+      "material_class": "root",
+      "fire_degree": 3,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.3333,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 68,
+      "name": "ash tree leaves",
+      "name_german": "Eschyn boum bletter",
+      "material_class": "leaf",
+      "fire_degree": 2,
+      "step_count": 4,
+      "has_procedure": true,
+      "prep_te": 0.25,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.25,
+      "thermo_ke": 0.25,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "POUND": 1,
+        "STEEP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 69,
+      "name": "fennel",
+      "name_german": "Fenchel",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 70,
+      "name": "milk thistle / Our Lady's thistle",
+      "name_german": "Fedistel",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "BREAK": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 71,
+      "name": "dropwort",
+      "name_german": "Filipendel",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 72,
+      "name": "pansy / heartsease",
+      "name_german": "Freissam krut",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 73,
+      "name": "cinquefoil / five-finger grass",
+      "name_german": "Funffinger krut",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 74,
+      "name": "golden bugle / middle comfrey",
+      "name_german": "Güldin gunsel",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 75,
+      "name": "large bugle",
+      "name_german": "Gross gunsel",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 76,
+      "name": "germander / wall germander",
+      "name_german": "Gamander",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 77,
+      "name": "silverweed / goosefoot",
+      "name_german": "Genserich",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 78,
+      "name": "silverweed flowers",
+      "name_german": "Genserich blumen",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 79,
+      "name": "ground ivy / gill-over-the-ground",
+      "name_german": "Gundreb",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 80,
+      "name": "wallflower / yellow gillyflower",
+      "name_german": "Gel violen",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 81,
+      "name": "yarrow / milfoil",
+      "name_german": "Garben",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 0,
+      "has_procedure": false,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {}
+    },
+    {
+      "recipe_id": 82,
+      "name": "golden clover / liverwort",
+      "name_german": "Güldin cle",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 83,
+      "name": "yellow iris / yellow flag",
+      "name_german": "Gel gilgen",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 84,
+      "name": "garden cress",
+      "name_german": "Garten kreß",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 85,
+      "name": "toadflax / butter-and-eggs",
+      "name_german": "Harn krut",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 86,
+      "name": "elder bark (middle bark)",
+      "name_german": "Holder rind",
+      "material_class": "bark",
+      "fire_degree": 1,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.6666666666666666,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "STRIP": 2,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 87,
+      "name": "elder leaves",
+      "name_german": "Holder bletter",
+      "material_class": "leaf",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 88,
+      "name": "elder flowers",
+      "name_german": "Holder blüt",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 89,
+      "name": "hound's tongue",
+      "name_german": "Hunds zung",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 90,
+      "name": "hart's tongue fern",
+      "name_german": "Hyrtz zung",
+      "material_class": "fern",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 91,
+      "name": "honey",
+      "name_german": "Hunig",
+      "material_class": "animal product",
+      "fire_degree": 3,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.3333,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "MIX": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 92,
+      "name": "houseleek / thunder-bar",
+      "name_german": "Huß wurtz",
+      "material_class": "succulent",
+      "fire_degree": 3,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.3333,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 93,
+      "name": "dogwood",
+      "name_german": "Harttrigeln",
+      "material_class": "tree/shrub",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 94,
+      "name": "cowslip / primrose",
+      "name_german": "Himelschlüssel",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 95,
+      "name": "wild ginger / asarabacca",
+      "name_german": "Hasel wurtz",
+      "material_class": "herb",
+      "fire_degree": 3,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.3333,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 96,
+      "name": "chicken stomach lining",
+      "name_german": "Hüner magen vel",
+      "material_class": "animal product",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 97,
+      "name": "heather",
+      "name_german": "Heid",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.3333333333333333,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 98,
+      "name": "birthwort",
+      "name_german": "Holwurtz",
+      "material_class": "herb",
+      "fire_degree": 3,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.3333,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 99,
+      "name": "chickweed",
+      "name_german": "Hüner serb krut",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 0,
+      "has_procedure": false,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {}
+    },
+    {
+      "recipe_id": 100,
+      "name": "hen (chicken)",
+      "name_german": "Hennen",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "step_count": 7,
+      "has_procedure": true,
+      "prep_te": 0.14285714285714285,
+      "prep_pch": 0.14285714285714285,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.2857,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "KILL": 1,
+        "PLUCK": 1,
+        "CLEAN": 1,
+        "CHOP": 1,
+        "DISTILL": 2
+      }
+    },
+    {
+      "recipe_id": 101,
+      "name": "hartshorn / deer antler",
+      "name_german": "Hyrtz horn",
+      "material_class": "animal product",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 102,
+      "name": "hops",
+      "name_german": "Hopffen",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 4,
+      "has_procedure": true,
+      "prep_te": 0.25,
+      "prep_pch": 0.25,
+      "prep_lch": 0.25,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.25,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "BREAK": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 103,
+      "name": "restharrow",
+      "name_german": "Heckel krut",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 104,
+      "name": "St. John's wort / heathen wound-herb",
+      "name_german": "Heidensch wundkrut",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 4,
+      "has_procedure": true,
+      "prep_te": 0.25,
+      "prep_pch": 0.25,
+      "prep_lch": 0.25,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.25,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 105,
+      "name": "rose hip / dog rose",
+      "name_german": "Hundsber",
+      "material_class": "berry",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 106,
+      "name": "vervain / verbena",
+      "name_german": "Isen krut",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 107,
+      "name": "winter cherry / Chinese lantern / physalis",
+      "name_german": "Juden kirsen",
+      "material_class": "berry",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 108,
+      "name": "hyssop",
+      "name_german": "Ysop",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 109,
+      "name": "marshmallow root",
+      "name_german": "Ibiſch wurtzel",
+      "material_class": "root",
+      "fire_degree": 3,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.5,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 110,
+      "name": "periwinkle",
+      "name_german": "Ingrüen",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 111,
+      "name": "teasel water",
+      "name_german": "Karten wasser",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.3333333333333333,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 112,
+      "name": "teasel water (macerated)",
+      "name_german": "Karten wasser das darin stat",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 1.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "MACERATE": 1,
+        "FILTER": 1
+      }
+    },
+    {
+      "recipe_id": 113,
+      "name": "cow parsley water",
+      "name_german": "Kölber kernen wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 0,
+      "has_procedure": false,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {}
+    },
+    {
+      "recipe_id": 114,
+      "name": "chervil water",
+      "name_german": "Körbel krut wasser",
+      "material_class": "herb",
+      "fire_degree": 3,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.3333,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 115,
+      "name": "garlic water",
+      "name_german": "Knoblouch wasser",
+      "material_class": "bulb",
+      "fire_degree": 3,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.5,
+      "thermo_ke": 0,
+      "thermo_kch": 0.5,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "POUND": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 116,
+      "name": "clover water",
+      "name_german": "Kle wasser",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 117,
+      "name": "quince water",
+      "name_german": "Kütten wasser",
+      "material_class": "fruit",
+      "fire_degree": 2,
+      "step_count": 4,
+      "has_procedure": true,
+      "prep_te": 0.25,
+      "prep_pch": 0.25,
+      "prep_lch": 0.0,
+      "prep_tch": 0.25,
+      "thermo_ke": 0.25,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "POUND": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 118,
+      "name": "quince blossom water",
+      "name_german": "Kütten blüet wasser",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 119,
+      "name": "gourd/pumpkin water",
+      "name_german": "Kürbs wasser",
+      "material_class": "fruit",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 120,
+      "name": "horsetail water",
+      "name_german": "Katzen zagel krut wasser",
+      "material_class": "herb",
+      "fire_degree": 3,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.5,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 121,
+      "name": "cow dung water",
+      "name_german": "Küetreck wasser",
+      "material_class": "animal product",
+      "fire_degree": 3,
+      "step_count": 4,
+      "has_procedure": true,
+      "prep_te": 0.25,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.25,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DRY": 1,
+        "DISTILL": 1,
+        "REFINE": 1
+      }
+    },
+    {
+      "recipe_id": 122,
+      "name": "calf blood water",
+      "name_german": "Kalbs blut wasser",
+      "material_class": "animal product",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 123,
+      "name": "calf blood and lung water",
+      "name_german": "Kalbs blut vnd kalbs lungen wasser",
+      "material_class": "animal product",
+      "fire_degree": 3,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.3333,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 124,
+      "name": "calf liver water",
+      "name_german": "Kalbs leber wasser",
+      "material_class": "animal product",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 125,
+      "name": "corn poppy water",
+      "name_german": "Klapper rosen wasser",
+      "material_class": "flower",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 126,
+      "name": "cabbage water",
+      "name_german": "Köl krut wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 127,
+      "name": "capon water",
+      "name_german": "Kappen wasser",
+      "material_class": "animal product",
+      "fire_degree": 3,
+      "step_count": 8,
+      "has_procedure": true,
+      "prep_te": 0.125,
+      "prep_pch": 0.125,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.25,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0.125,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "SELECT": 1,
+        "KILL": 1,
+        "PLUCK": 1,
+        "BUTCHER": 1,
+        "WASH": 1,
+        "CHOP": 1,
+        "DISTILL": 1,
+        "REDISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 128,
+      "name": "lettuce water",
+      "name_german": "Lattich wasser",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 129,
+      "name": "lovage water",
+      "name_german": "Lobstyckel wasser",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 130,
+      "name": "linden blossom water",
+      "name_german": "Linden blüet wasser",
+      "material_class": "flower",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 131,
+      "name": "leek water",
+      "name_german": "Louch wasser",
+      "material_class": "bulb",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 132,
+      "name": "honeysuckle water",
+      "name_german": "Lienen blumen wasser",
+      "material_class": "flower",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 133,
+      "name": "liverwort water",
+      "name_german": "Leber krut wasser",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 134,
+      "name": "lavender water",
+      "name_german": "Lauender wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 135,
+      "name": "lemon balm / melissa water",
+      "name_german": "Muter krut wasser",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 136,
+      "name": "lily of the valley water",
+      "name_german": "Mey blüemel wasser",
+      "material_class": "flower",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 137,
+      "name": "stonecrop / wall pepper water",
+      "name_german": "Muer pfeffer wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 0,
+      "has_procedure": false,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {}
+    },
+    {
+      "recipe_id": 138,
+      "name": "marjoram water",
+      "name_german": "Meigeronen wasser",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 139,
+      "name": "gromwell water",
+      "name_german": "Merhirß krut wasser",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 140,
+      "name": "bistort / snakeweed water",
+      "name_german": "Noter wurtz wasser",
+      "material_class": "root",
+      "fire_degree": 1,
+      "step_count": 4,
+      "has_procedure": true,
+      "prep_te": 0.25,
+      "prep_pch": 0.25,
+      "prep_lch": 0.0,
+      "prep_tch": 0.25,
+      "thermo_ke": 0.25,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "POUND": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 141,
+      "name": "catnip / catmint water",
+      "name_german": "Nebten wasser",
+      "material_class": "herb",
+      "fire_degree": 3,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.5,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 142,
+      "name": "nightshade water",
+      "name_german": "Nachtschet wasser",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 143,
+      "name": "nettle water",
+      "name_german": "Nesseln wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 144,
+      "name": "eyebright water",
+      "name_german": "Ougentrost wasser",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 145,
+      "name": "birthwort water (long type)",
+      "name_german": "Osterlucien wasser",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 146,
+      "name": "Greek sage water / ear-sage water",
+      "name_german": "Orecht salbei wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 147,
+      "name": "borage / bugloss water",
+      "name_german": "Ochsenzung wasser",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 148,
+      "name": "wild apple water",
+      "name_german": "Öpfeln wasser",
+      "material_class": "fruit",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 149,
+      "name": "apple blossom water",
+      "name_german": "Öpfel blüet wasser",
+      "material_class": "flower",
+      "fire_degree": 1,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 0.5,
+      "h_ratio": 0.0,
+      "e_ratio": 0.5,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0.3333,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "COLLECT": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 150,
+      "name": "ox blood water",
+      "name_german": "Ochsen blut wasser",
+      "material_class": "animal",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.6666666666666666,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "SELECT": 1,
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 151,
+      "name": "chanterelle / mushroom water",
+      "name_german": "Pfifferling wasser",
+      "material_class": "fungus",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 152,
+      "name": "parsley water",
+      "name_german": "Peterling wasser",
+      "material_class": "herb",
+      "fire_degree": 3,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.3333,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 153,
+      "name": "dandelion stem water",
+      "name_german": "Pfaffen krut rörlin wasser",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 154,
+      "name": "dandelion flower water",
+      "name_german": "Pfaffen krut blumen wasser",
+      "material_class": "flower",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 155,
+      "name": "peach leaf water",
+      "name_german": "Pfirsich loub wasser",
+      "material_class": "leaf",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 156,
+      "name": "peach blossom water",
+      "name_german": "Pfirsich blüet wasser",
+      "material_class": "flower",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 157,
+      "name": "broom flower water",
+      "name_german": "Pfrymen blüet wasser",
+      "material_class": "flower",
+      "fire_degree": 1,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 0.5,
+      "h_ratio": 0.0,
+      "e_ratio": 0.5,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0.3333,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "COLLECT": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 158,
+      "name": "peony water (tentative)",
+      "name_german": "Pfohen krut wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 0,
+      "has_procedure": false,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {}
+    },
+    {
+      "recipe_id": 159,
+      "name": "scabious water (broad-leaved type)",
+      "name_german": "Pastemen wasser",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 160,
+      "name": "wild thyme water",
+      "name_german": "Quendel wasser",
+      "material_class": "herb",
+      "fire_degree": 3,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.3333,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 161,
+      "name": "colchicum / meadow saffron ROOT water",
+      "name_german": "Quelcken wurtzel wasser",
+      "material_class": "root",
+      "fire_degree": 3,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.3333333333333333,
+      "thermo_ke": 0,
+      "thermo_kch": 0.3333,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "POUND": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 162,
+      "name": "colchicum / meadow saffron FLOWER water",
+      "name_german": "Quelcken blumen wasser",
+      "material_class": "flower",
+      "fire_degree": 3,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.5,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 163,
+      "name": "grapevine sap water (collected)",
+      "name_german": "Reben wasser",
+      "material_class": "plant sap",
+      "fire_degree": 2,
+      "step_count": 1,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 1.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 1.0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "COLLECT": 1
+      }
+    },
+    {
+      "recipe_id": 164,
+      "name": "vine leaf water",
+      "name_german": "Reb loub wasser",
+      "material_class": "leaf",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 165,
+      "name": "ox gall water",
+      "name_german": "Rinds gallen wasser",
+      "material_class": "animal",
+      "fire_degree": 3,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.5,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "SELECT": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 166,
+      "name": "radish ROOT water",
+      "name_german": "Rettich wasser",
+      "material_class": "root",
+      "fire_degree": 3,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.3333,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 167,
+      "name": "radish LEAF water",
+      "name_german": "Rettich loub wasser",
+      "material_class": "leaf",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 168,
+      "name": "rosemary water",
+      "name_german": "Rossmarinen wasser",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 169,
+      "name": "tansy water",
+      "name_german": "Reinfarn wasser",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.3333333333333333,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 170,
+      "name": "Roman kale / curly cabbage water",
+      "name_german": "Römisch köl wasser",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.3333333333333333,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 171,
+      "name": "red cabbage water",
+      "name_german": "Rot köl wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.3333333333333333,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 172,
+      "name": "rue water",
+      "name_german": "Ruten wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 173,
+      "name": "earthworm water",
+      "name_german": "Regen wurm wasser",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 0.5,
+      "h_ratio": 0.0,
+      "e_ratio": 0.5,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0.3333,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "COLLECT": 1,
+        "CLEAN": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 174,
+      "name": "larkspur water",
+      "name_german": "Ritter sporn wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 175,
+      "name": "corn cockle water",
+      "name_german": "Ratten krut wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 176,
+      "name": "rose water (general/wild rose)",
+      "name_german": "Rosen wasser",
+      "material_class": "flower",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 177,
+      "name": "red rose water",
+      "name_german": "Rot rosen wasser",
+      "material_class": "flower",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 178,
+      "name": "white rose water",
+      "name_german": "Wyss rosen wasser",
+      "material_class": "flower",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 179,
+      "name": "dog rose / hip rose water",
+      "name_german": "Butten rosen wasser",
+      "material_class": "flower",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 180,
+      "name": "rose bud water",
+      "name_german": "Rosen knöpff wasser",
+      "material_class": "flower",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 181,
+      "name": "peony rose water",
+      "name_german": "Beonien rosen wasser",
+      "material_class": "flower_root_compound",
+      "fire_degree": 2,
+      "step_count": 4,
+      "has_procedure": true,
+      "prep_te": 0.25,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.25,
+      "thermo_ke": 0.25,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "MIX": 1,
+        "POUND": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 182,
+      "name": "turnip water",
+      "name_german": "Ruben wasser",
+      "material_class": "root_vegetable",
+      "fire_degree": 2,
+      "step_count": 0,
+      "has_procedure": false,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {}
+    },
+    {
+      "recipe_id": 183,
+      "name": "St. John's wort water",
+      "name_german": "Sant Johanns krut wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 184,
+      "name": "star-shot water / star jelly water",
+      "name_german": "Stern geschütz wasser",
+      "material_class": "fungal_substance",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 0.5,
+      "h_ratio": 0.0,
+      "e_ratio": 0.5,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0.5,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "COLLECT": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 185,
+      "name": "orchid water (male)",
+      "name_german": "Stendel wurtz wasser das menlin",
+      "material_class": "root",
+      "fire_degree": 3,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.5,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 186,
+      "name": "orchid water (female)",
+      "name_german": "Stendel wurtz wasser das wyblin",
+      "material_class": "root",
+      "fire_degree": 3,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.5,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 187,
+      "name": "melilot water / sweet clover water",
+      "name_german": "Steyn kle wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 188,
+      "name": "St. Christopher's herb water / royal fern water",
+      "name_german": "Sant Cristofferus krut wasser",
+      "material_class": "fern",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 189,
+      "name": "water lily water",
+      "name_german": "Seblumen wasser",
+      "material_class": "aquatic_flower",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 190,
+      "name": "saxifrage water / stonebreak water",
+      "name_german": "Steinbrech wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 191,
+      "name": "scabious water",
+      "name_german": "Scabiosen krut wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 192,
+      "name": "sage water",
+      "name_german": "Salbeien wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 193,
+      "name": "sanicle water",
+      "name_german": "Sanickel wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 194,
+      "name": "earth snail water / slug water",
+      "name_german": "Erd schnecken wasser",
+      "material_class": "animal",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 0.5,
+      "h_ratio": 0.0,
+      "e_ratio": 0.5,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0.5,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "COLLECT": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 195,
+      "name": "ribwort plantain water / lance-leaf plantain water",
+      "name_german": "Spitz wegrich wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 196,
+      "name": "lady's mantle water",
+      "name_german": "Synnow wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 197,
+      "name": "pointed burdock water / small burdock water",
+      "name_german": "Spitz kletten wasser",
+      "material_class": "herb_fruit",
+      "fire_degree": 3,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.3333,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 198,
+      "name": "southernwood water",
+      "name_german": "Schoss wurtz wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 199,
+      "name": "greater celandine water",
+      "name_german": "Schelwurtz wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 200,
+      "name": "unripe sloe water / unripe blackthorn water",
+      "name_german": "Vnzitige schlehen wasser",
+      "material_class": "fruit",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.3333333333333333,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.3333333333333333,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "CRUSH": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 201,
+      "name": "sloe blossom water / blackthorn flower water",
+      "name_german": "Schlehen blüet wasser",
+      "material_class": "flower",
+      "fire_degree": 1,
+      "step_count": 0,
+      "has_procedure": false,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {}
+    },
+    {
+      "recipe_id": 202,
+      "name": "barberry water",
+      "name_german": "Surouch wasser",
+      "material_class": "fruit",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 203,
+      "name": "spikenard water",
+      "name_german": "Spicanardi wasser",
+      "material_class": "exotic_import",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "OBTAIN": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 204,
+      "name": "savin water / juniper savin water",
+      "name_german": "Seuen boum wasser",
+      "material_class": "shrub",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 205,
+      "name": "mustard herb water",
+      "name_german": "Senff krut wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 206,
+      "name": "pellitory-of-the-wall water",
+      "name_german": "Sant Peters krut wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 207,
+      "name": "asparagus water",
+      "name_german": "Spargen wasser",
+      "material_class": "vegetable",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 208,
+      "name": "spindle tree water / euonymus water",
+      "name_german": "Spindel boum wasser",
+      "material_class": "shrub",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 209,
+      "name": "caper spurge water / jumping seed spurge water",
+      "name_german": "Sprinck krut wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 210,
+      "name": "oregano water / wild marjoram water",
+      "name_german": "Tosten wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 211,
+      "name": "tormentil water / blood root water",
+      "name_german": "Tormentillen wasser",
+      "material_class": "herb",
+      "fire_degree": 3,
+      "step_count": 0,
+      "has_procedure": false,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {}
+    },
+    {
+      "recipe_id": 212,
+      "name": "dodder water / cuscuta water",
+      "name_german": "Tottern wasser",
+      "material_class": "parasitic plant",
+      "fire_degree": 2,
+      "step_count": 0,
+      "has_procedure": false,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {}
+    },
+    {
+      "recipe_id": 213,
+      "name": "grape marc water / wine lees water",
+      "name_german": "Binen trostern wasser",
+      "material_class": "plant byproduct",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 214,
+      "name": "tamarisk water",
+      "name_german": "Tamarisken wasser",
+      "material_class": "shrub",
+      "fire_degree": 2,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.3333333333333333,
+      "prep_lch": 0.3333333333333333,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.3333,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 215,
+      "name": "wormwood water / absinthium water",
+      "name_german": "Wermut wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 216,
+      "name": "comfrey water / consolida water / boneset water",
+      "name_german": "Walwurtz wasser",
+      "material_class": "herb",
+      "fire_degree": 3,
+      "step_count": 3,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.3333333333333333,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.3333,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "WASH": 1,
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 217,
+      "name": "willow leaf water",
+      "name_german": "Wilgen loub wasser",
+      "material_class": "tree",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 218,
+      "name": "willow blossom water",
+      "name_german": "Wilgen bluet wasser",
+      "material_class": "tree",
+      "fire_degree": 1,
+      "step_count": 0,
+      "has_procedure": false,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {}
+    },
+    {
+      "recipe_id": 219,
+      "name": "hemlock water / poison hemlock water",
+      "name_german": "Wuntscherling wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 220,
+      "name": "bindweed water / convolvulus water",
+      "name_german": "Winden krut wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 221,
+      "name": "chicory water / succory water",
+      "name_german": "Wegwyss wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 222,
+      "name": "chicory flower water",
+      "name_german": "Wegwyss blumen wasser",
+      "material_class": "herb",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 223,
+      "name": "mullein water / great mullein water",
+      "name_german": "Wullen krut wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 224,
+      "name": "knotgrass water / knotgrass water",
+      "name_german": "Weggras wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 225,
+      "name": "solomon's seal water / white root water",
+      "name_german": "Wyss wurtz wasser",
+      "material_class": "herb",
+      "fire_degree": 3,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.5,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 226,
+      "name": "wild sage water / wood sage water",
+      "name_german": "Wild salbei wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 227,
+      "name": "wintergreen water / pyrola water",
+      "name_german": "Winter gruen wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 228,
+      "name": "white pea water / pea water",
+      "name_german": "Wyss erbeiss wasser",
+      "material_class": "vegetable",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.5,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CRUSH": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 229,
+      "name": "wild pear water / wood pear water",
+      "name_german": "Wild bieren wasser",
+      "material_class": "fruit",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.5,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CRUSH": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 230,
+      "name": "clary sage water / domestic clary water",
+      "name_german": "Scharlach wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 231,
+      "name": "spurge water / wolf's milk water / euphorbia water",
+      "name_german": "Wolffs milch krut wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 232,
+      "name": "white lily water / madonna lily water",
+      "name_german": "Wyss gylgen wasser",
+      "material_class": "flower",
+      "fire_degree": 1,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 233,
+      "name": "white lily root water",
+      "name_german": "Wyss gylgen wurtzel wasser",
+      "material_class": "flower",
+      "fire_degree": 3,
+      "step_count": 0,
+      "has_procedure": false,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0,
+      "k_ratio": 0.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {}
+    },
+    {
+      "recipe_id": 234,
+      "name": "white lily flower AND root water combined",
+      "name_german": "Wyss gylgen mit iren wurtzeln wasser",
+      "material_class": "flower",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 235,
+      "name": "maidenhair fern water / capillus veneris water",
+      "name_german": "Wider tod krut wasser",
+      "material_class": "fern",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 236,
+      "name": "juniper berry water",
+      "name_german": "Weckolter beer wasser",
+      "material_class": "berry",
+      "fire_degree": 3,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.5,
+      "thermo_ke": 0,
+      "thermo_kch": 0.5,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "INPUT_VISUAL"
+      ],
+      "raw_action_counts": {
+        "CRUSH": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 237,
+      "name": "woodruff water / sweet woodruff water",
+      "name_german": "Walt meister wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 238,
+      "name": "safflower water / wild saffron water",
+      "name_german": "Wild saffron wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.5,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "GATHER": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 239,
+      "name": "christmas rose root water / black hellebore root water",
+      "name_german": "Xpi wurtz wurtzel wasser",
+      "material_class": "herb",
+      "fire_degree": 3,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.5,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 240,
+      "name": "christmas rose herb water / black hellebore herb water",
+      "name_german": "Xpi wurtz krut wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 241,
+      "name": "sweet flag root water / acorus water",
+      "name_german": "Xpian wurtzelen wasser",
+      "material_class": "herb",
+      "fire_degree": 3,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.0,
+      "prep_tch": 0.5,
+      "thermo_ke": 0,
+      "thermo_kch": 0.5,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CRUSH": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 242,
+      "name": "bittersweet water / woody nightshade water",
+      "name_german": "Ye lenger ye lieber wasser",
+      "material_class": "shrub",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.0,
+      "prep_lch": 0.5,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "STRIP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 243,
+      "name": "onion water",
+      "name_german": "Zybel wasser",
+      "material_class": "vegetable",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 244,
+      "name": "daisy water / bellis water",
+      "name_german": "Zytlosen krut wasser",
+      "material_class": "herb",
+      "fire_degree": 2,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0.5,
+      "thermo_kch": 0,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    },
+    {
+      "recipe_id": 245,
+      "name": "bryony root water / wild vine root water",
+      "name_german": "Zytwan wurtzel wasser",
+      "material_class": "vine",
+      "fire_degree": 3,
+      "step_count": 2,
+      "has_procedure": true,
+      "prep_te": 0.0,
+      "prep_pch": 0.5,
+      "prep_lch": 0.0,
+      "prep_tch": 0.0,
+      "thermo_ke": 0,
+      "thermo_kch": 0.5,
+      "k_ratio": 1.0,
+      "h_ratio": 0.0,
+      "e_ratio": 0.0,
+      "iteration_rate": 0,
+      "checkpoint_rate": 0,
+      "terminal_rate": 0,
+      "sensory_modality": [
+        "NONE"
+      ],
+      "raw_action_counts": {
+        "CHOP": 1,
+        "DISTILL": 1
+      }
+    }
+  ]
+}

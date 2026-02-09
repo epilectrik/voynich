@@ -1,0 +1,55 @@
+{
+  "test": "SECTION_H_CROSSREF_MECHANISM",
+  "ct_count": 386,
+  "ct_in_without_ri": 190,
+  "ct_words": {
+    "cthy": 95,
+    "cthol": 49,
+    "cthor": 41,
+    "cthey": 28,
+    "ctho": 15,
+    "cthar": 13,
+    "cthody": 13,
+    "cthaiin": 12,
+    "cthom": 9,
+    "ctheey": 6,
+    "cth": 5,
+    "cthal": 5,
+    "cty": 5,
+    "cto": 4,
+    "cthod": 4,
+    "cthain": 4,
+    "ctheor": 4,
+    "ctheody": 4,
+    "ctholy": 3,
+    "ctheol": 3
+  },
+  "ct_class_dist": {
+    "PP": 302,
+    "RI": 84
+  },
+  "ct_middles": {
+    "h": 182,
+    "hy": 96,
+    "ho": 36,
+    "hod": 11,
+    "o": 6,
+    "he": 6,
+    "heo": 6,
+    "y": 5,
+    "heod": 3,
+    "c": 2
+  },
+  "cooccur_prefixes": {
+    "ch": 464,
+    "sh": 245,
+    "qo": 211,
+    "ot": 103,
+    "ok": 101,
+    "ct": 91,
+    "tch": 46,
+    "dch": 45,
+    "yk": 38,
+    "kch": 29
+  }
+}

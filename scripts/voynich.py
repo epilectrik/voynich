@@ -214,10 +214,15 @@ class MorphAnalysis:
     prefix: Optional[str]
     middle: Optional[str]
     suffix: Optional[str]
+    prefix2: Optional[str] = None  # Secondary prefix (ch/sh after primary)
 
     @property
     def has_prefix(self) -> bool:
         return self.prefix is not None
+
+    @property
+    def has_prefix2(self) -> bool:
+        return self.prefix2 is not None
 
     @property
     def has_articulator(self) -> bool:
@@ -312,6 +317,17 @@ class Morphology:
         if prefix is None:
             remainder = token
 
+        # Step 2.5: Check for secondary prefix (ch/sh embedded after primary)
+        # Only ch and sh qualify — other strings after primary prefix are MIDDLEs
+        SECONDARY_PREFIXES = ['sh', 'ch']
+        prefix2 = None
+        if prefix is not None:
+            for sp in SECONDARY_PREFIXES:
+                if remainder.startswith(sp) and len(remainder) > len(sp):
+                    prefix2 = sp
+                    remainder = remainder[len(sp):]
+                    break
+
         # Step 3: Extract suffix from remainder
         middle, suffix = self._find_suffix(remainder)
 
@@ -319,7 +335,7 @@ class Morphology:
         # If prefix+suffix consumed everything, try alternative parses
         if middle == '':
             # Option A: Drop suffix, treat remainder as pure MIDDLE
-            alt_a = MorphAnalysis(articulator, prefix, remainder, None)
+            alt_a = MorphAnalysis(articulator, prefix, remainder, None, prefix2)
 
             # Option B: Drop prefix, treat token as MIDDLE+suffix
             if prefix is not None:
@@ -343,7 +359,7 @@ class Morphology:
             else:
                 return alt_c  # Pure MIDDLE, no affixes
 
-        return MorphAnalysis(articulator, prefix, middle, suffix)
+        return MorphAnalysis(articulator, prefix, middle, suffix, prefix2)
 
     def extract_tuple(self, token: str) -> Tuple[Optional[str], Optional[str], Optional[str]]:
         """Extract and return (prefix, middle, suffix) tuple for compatibility."""
@@ -1181,7 +1197,7 @@ class BTokenAnalysis:
     is_fl_role: bool             # True if FL-role token (pure FL vocab, no kernel/helper)
 
     # HT (Human Track) classification (C740, C747, C872)
-    is_ht: bool                  # True if HT/UN token (unclassified, identification layer)
+    is_ht: bool                  # True if HT/UN token (compound identification/specification, C935)
 
     # Kernel content
     kernels: List[str]           # ['k'], ['h', 'e'], etc.
@@ -1285,8 +1301,19 @@ class BTokenAnalysis:
             if prefix and prefix != 'qo' and hasattr(self, '_prefix_actions'):
                 prep_action = self._prefix_actions.get(prefix)
 
-            if prep_action:
+            # Secondary prefix action (ch/sh after primary prefix)
+            prep2_action = None
+            prefix2 = self.morph.prefix2 if self.morph else None
+            if prefix2 and hasattr(self, '_prefix_actions'):
+                prep2_action = self._prefix_actions.get(prefix2)
+
+            if prep_action and prep2_action:
+                composed.append(f"{prep_action}-{prep2_action}")
+            elif prep_action:
                 composed.append(prep_action)
+            elif prep2_action:
+                # qo suppressed but ch/sh still shows
+                composed.append(prep2_action)
             elif prefix and prefix != 'qo':
                 lane = self._get_prefix_lane(prefix)
                 composed.append(f"[{lane}]")
@@ -1333,8 +1360,19 @@ class BTokenAnalysis:
             prep_action = None
             if hasattr(self, '_prefix_actions'):
                 prep_action = self._prefix_actions.get(prefix)
-            if prep_action:
+
+            # Secondary prefix action (ch/sh after primary prefix)
+            prep2_action = None
+            prefix2 = self.morph.prefix2 if self.morph else None
+            if prefix2 and hasattr(self, '_prefix_actions'):
+                prep2_action = self._prefix_actions.get(prefix2)
+
+            if prep_action and prep2_action:
+                parts.append(f"{prep_action}-{prep2_action}")
+            elif prep_action:
                 parts.append(prep_action)
+            elif prep2_action:
+                parts.append(prep2_action)
             else:
                 lane = self._get_prefix_lane(prefix)
                 parts.append(f"[{lane}]")
@@ -1385,10 +1423,30 @@ class BTokenAnalysis:
             'flow_type': '',
         }
 
-        # OPERATION layer: prefix verb + middle gloss
+        # OPERATION layer: check token dictionary first (C936 composites)
         middle = self.morph.middle if self.morph else None
         prefix = self.morph.prefix if self.morph else None
         suffix = self.morph.suffix if self.morph else None
+
+        if hasattr(self, '_token_dict') and self._token_dict:
+            token_gloss = self._token_dict.get_gloss(self.word)
+            if token_gloss:
+                # Expand *middle references
+                if '*' in token_gloss and hasattr(self, '_middle_dict') and self._middle_dict:
+                    import re
+                    def replace_middle_ref(match):
+                        mid_name = match.group(1)
+                        mid_gloss = self._middle_dict.get_gloss(mid_name)
+                        return mid_gloss if mid_gloss else f"[{mid_name}]"
+                    token_gloss = re.sub(r'\*(\w+)', replace_middle_ref, token_gloss)
+                # Strip trailing punctuation for flow format
+                result['operation'] = token_gloss.rstrip('.,;')
+                # Suffix flow still applies unless gloss already includes it
+                if suffix and hasattr(self, '_suffix_flow'):
+                    flow_entry = self._suffix_flow.get(suffix, {})
+                    result['flow'] = flow_entry.get('value', '')
+                    result['flow_type'] = flow_entry.get('flow_type', '')
+                return result
 
         mid_meaning = None
         if middle and hasattr(self, '_middle_dict') and self._middle_dict:
@@ -1466,39 +1524,135 @@ class BTokenAnalysis:
             return (best[0], best[1], best[2])
         return None
 
+    def _segment_multi_atom(self, middle: str):
+        """Segment a MIDDLE into multiple atoms + extension characters using DP.
+
+        Fallback for long MIDDLEs where single-atom decomposition fails
+        (extension length > 3). Uses dynamic programming to find the
+        optimal segmentation that maximizes atom coverage.
+
+        Returns list of (segment, type, gloss) tuples where type is
+        'ATOM' or 'EXT', or None if segmentation fails.
+        """
+        if not hasattr(self, '_mid_analyzer') or not self._mid_analyzer:
+            return None
+        if not hasattr(self, '_middle_dict') or not self._middle_dict:
+            return None
+
+        core = self._mid_analyzer._core_middles
+        if not core or middle in core:
+            return None
+
+        # Build atom->gloss lookup (only atoms with glosses)
+        atom_glosses = {}
+        for name in core:
+            g = self._middle_dict.get_gloss(name)
+            if g:
+                atom_glosses[name] = g
+
+        if not atom_glosses:
+            return None
+
+        n = len(middle)
+        INF = float('inf')
+        # dp[i] = (min_cost, backtrack_info) for middle[:i]
+        dp = [(INF, None)] * (n + 1)
+        dp[0] = (0, None)
+
+        for i in range(n):
+            if dp[i][0] == INF:
+                continue
+
+            # Option 1: match a known atom starting at position i
+            for atom_name, atom_gloss in atom_glosses.items():
+                alen = len(atom_name)
+                if i + alen <= n and middle[i:i + alen] == atom_name:
+                    new_cost = dp[i][0]  # atoms are free (cost 0)
+                    if new_cost < dp[i + alen][0]:
+                        dp[i + alen] = (new_cost, ('ATOM', i, atom_name, atom_gloss))
+
+            # Option 2: single char as extension
+            ch = middle[i]
+            ch_gloss = self._middle_dict.get_gloss(ch)
+            ext_cost = 1 if ch_gloss else 10
+            new_cost = dp[i][0] + ext_cost
+            if new_cost < dp[i + 1][0]:
+                dp[i + 1] = (new_cost, ('EXT', i, ch, ch_gloss or f'?{ch}'))
+
+        if dp[n][0] == INF:
+            return None
+
+        # Backtrack
+        segments = []
+        pos = n
+        while pos > 0:
+            _, info = dp[pos]
+            if info is None:
+                break
+            seg_type, start, value, gloss = info
+            segments.append((value, seg_type, gloss))
+            pos = start if seg_type == 'EXT' else start
+
+        segments.reverse()
+
+        # Only return if at least one atom was found
+        if any(t == 'ATOM' for _, t, _ in segments):
+            return segments
+        return None
+
     def _compose_compound_gloss(self, middle: str):
         """Try to compose a gloss for a compound MIDDLE from atom + extension meanings.
 
         Uses PP atom gloss as the base operation, with extension character
         glosses as parameters. Compound MIDDLEs specify WHICH variant of an
         operation, not a different operation (C872, C522).
+
+        For short compounds (ext <= 3), uses single-atom decomposition.
+        For longer compounds, falls back to multi-atom DP segmentation.
         """
         decomp = self._decompose_compound(middle)
-        if not decomp:
-            return None
-        atom, pre_ext, suf_ext = decomp
+        if decomp:
+            atom, pre_ext, suf_ext = decomp
 
-        # Get atom gloss
-        atom_gloss = None
-        if hasattr(self, '_middle_dict') and self._middle_dict:
-            atom_gloss = self._middle_dict.get_gloss(atom)
-        if not atom_gloss:
-            return None
-
-        # Get extension glosses from single-char MIDDLE meanings
-        ext_glosses = []
-        for ch in pre_ext + suf_ext:
+            # Get atom gloss
+            atom_gloss = None
             if hasattr(self, '_middle_dict') and self._middle_dict:
-                g = self._middle_dict.get_gloss(ch)
-                if g:
-                    ext_glosses.append(g)
+                atom_gloss = self._middle_dict.get_gloss(atom)
+            if not atom_gloss:
+                return None
 
-        if ext_glosses:
-            return f"{atom_gloss} (+{', '.join(ext_glosses)})"
-        elif pre_ext or suf_ext:
-            return f"{atom_gloss} (+{pre_ext}{suf_ext})"
-        else:
-            return atom_gloss
+            # Get extension glosses from single-char MIDDLE meanings
+            ext_glosses = []
+            for ch in pre_ext + suf_ext:
+                if hasattr(self, '_middle_dict') and self._middle_dict:
+                    g = self._middle_dict.get_gloss(ch)
+                    if g:
+                        ext_glosses.append(g)
+
+            if ext_glosses:
+                return f"{atom_gloss} (+{', '.join(ext_glosses)})"
+            elif pre_ext or suf_ext:
+                return f"{atom_gloss} (+{pre_ext}{suf_ext})"
+            else:
+                return atom_gloss
+
+        # Fallback: multi-atom segmentation for long compounds
+        segments = self._segment_multi_atom(middle)
+        if not segments:
+            return None
+
+        atom_parts = []
+        ext_parts = []
+        for seg, stype, gloss in segments:
+            if stype == 'ATOM':
+                atom_parts.append(gloss)
+            else:
+                ext_parts.append(gloss)
+
+        result = ', '.join(atom_parts)
+        if ext_parts:
+            result += f" (+{', '.join(ext_parts)})"
+        return result
 
     @staticmethod
     def _get_prefix_lane(prefix: str) -> str:
@@ -1579,7 +1733,8 @@ class BLineAnalysis:
 
     # Line-level interpretation
     line_type: str               # 'INIT', 'PROCESS', 'TERMINAL', 'ESCAPE', 'HEADER'
-    is_header: bool = False      # C747: Line-1 is 50% HT, non-operational
+    is_header: bool = False      # C747/C935: Line-1 HEADER (50% HT, operationally redundant)
+    paragraph_zone: Optional[str] = None  # HEADER, SPECIFICATION, EXECUTION (C932, set by paragraph analysis)
 
     def structural(self) -> str:
         """Tier 0-2 technical line summary."""
@@ -1596,9 +1751,9 @@ class BLineAnalysis:
 
     def interpretive(self) -> str:
         """Tier 3-4 human-readable line summary."""
-        # C747: Line-1 is HEADER (50% HT, non-operational)
+        # C747/C935: Line-1 is HEADER (50% HT, operationally redundant)
         if self.is_header:
-            return f"[HEADER] Identification line - {self.token_count} tokens (50% unclassified per C747)"
+            return f"[HEADER] Identification/specification line - {self.token_count} tokens (HT compounds per C935)"
 
         parts = []
 
@@ -1698,6 +1853,14 @@ class BParagraphAnalysis:
     dominant_role: Optional[str]    # Most common prefix role
     fl_trend: str                   # EARLY_HEAVY, LATE_HEAVY, DISTRIBUTED
 
+    # Paragraph zones (C932: execution gradient)
+    zone_distribution: Dict[str, int] = None  # {'HEADER': 1, 'SPECIFICATION': 3, 'EXECUTION': 5}
+
+    # Spec→exec gradient (C933/C934)
+    spec_ht_rate: float = 0.0       # HT fraction in SPECIFICATION zone
+    exec_ht_rate: float = 0.0       # HT fraction in EXECUTION zone
+    gradient_direction: str = 'FLAT' # SPEC_TO_EXEC or FLAT
+
     def structural(self) -> str:
         """Tier 0-2 technical paragraph summary."""
         parts = [f"{self.paragraph_id}"]
@@ -1712,6 +1875,10 @@ class BParagraphAnalysis:
         parts.append(f"type=[{self.kernel_balance}]")
         if self.dominant_role:
             parts.append(f"role={self.dominant_role}")
+
+        if self.zone_distribution:
+            zone_str = '/'.join(f"{z[0]}:{c}" for z, c in sorted(self.zone_distribution.items()))
+            parts.append(f"zones=[{zone_str}]")
 
         return ' | '.join(parts)
 
@@ -1745,6 +1912,9 @@ class BParagraphAnalysis:
         }
         if self.fl_trend in fl_gloss:
             parts.append(fl_gloss[self.fl_trend])
+
+        if self.gradient_direction == 'SPEC_TO_EXEC':
+            parts.append("(spec->exec gradient)")
 
         return ' - '.join(parts) if parts else f"Paragraph with {self.line_count} steps"
 
@@ -2190,7 +2360,7 @@ class BFolioDecoder:
         # Collect role sequence
         role_sequence = [t.prefix_role for t in line_tokens if t.prefix_role]
 
-        # C747: Line-1 is HEADER (50% HT, non-operational)
+        # C747/C935: Line-1 is HEADER (HT = operationally redundant compounds)
         is_header = (line_id == '1')
 
         # Determine line type
@@ -2249,9 +2419,9 @@ class BFolioDecoder:
         def line_sort_key(item):
             line_id = item[0]
             try:
-                return int(line_id)
+                return (0, int(line_id))
             except (ValueError, TypeError):
-                return line_id
+                return (1, str(line_id))
         return [self.analyze_line(tokens, line_id)
                 for line_id, tokens in sorted(lines.items(), key=line_sort_key)]
 
@@ -2274,7 +2444,8 @@ class BFolioDecoder:
                 boundary_token=None, is_gallows_initial=False,
                 kernel_dist={}, role_dist={}, fl_distribution={},
                 init_lines=0, process_lines=0, escape_lines=0, terminal_lines=0,
-                kernel_balance='NO_KERNELS', dominant_role=None, fl_trend='DISTRIBUTED'
+                kernel_balance='NO_KERNELS', dominant_role=None, fl_trend='DISTRIBUTED',
+                zone_distribution={},
             )
 
         # Aggregate from lines
@@ -2321,6 +2492,28 @@ class BFolioDecoder:
         else:
             fl_trend = 'DISTRIBUTED'
 
+        # C932: Paragraph zone assignment (HEADER / SPECIFICATION / EXECUTION)
+        n = len(lines)
+        zone_dist = Counter()
+        for i, la in enumerate(lines):
+            pos = i / max(n - 1, 1)
+            if i == 0:
+                la.paragraph_zone = 'HEADER'
+            elif pos < 0.4:
+                la.paragraph_zone = 'SPECIFICATION'
+            else:
+                la.paragraph_zone = 'EXECUTION'
+            zone_dist[la.paragraph_zone] += 1
+
+        # C933/C934: spec→exec vocabulary gradient (HT concentration as proxy)
+        spec_tokens = [t for la in lines if la.paragraph_zone == 'SPECIFICATION'
+                       for t in la.tokens]
+        exec_tokens = [t for la in lines if la.paragraph_zone == 'EXECUTION'
+                       for t in la.tokens]
+        spec_ht = (sum(1 for t in spec_tokens if t.is_ht) / max(len(spec_tokens), 1))
+        exec_ht = (sum(1 for t in exec_tokens if t.is_ht) / max(len(exec_tokens), 1))
+        gradient = 'SPEC_TO_EXEC' if spec_ht > exec_ht else 'FLAT'
+
         return BParagraphAnalysis(
             paragraph_id=para_id,
             lines=lines,
@@ -2338,6 +2531,10 @@ class BFolioDecoder:
             kernel_balance=kernel_balance,
             dominant_role=dominant_role,
             fl_trend=fl_trend,
+            zone_distribution=dict(zone_dist),
+            spec_ht_rate=spec_ht,
+            exec_ht_rate=exec_ht,
+            gradient_direction=gradient,
         )
 
     def analyze_folio_paragraphs(self, folio: str) -> List[BParagraphAnalysis]:
@@ -2430,10 +2627,13 @@ class BFolioDecoder:
                 output.append(f"    Types: init={pa.init_lines}, process={pa.process_lines}, "
                             f"escape={pa.escape_lines}, terminal={pa.terminal_lines}")
                 output.append(f"    FL trend: {pa.fl_trend}")
+                if pa.gradient_direction == 'SPEC_TO_EXEC':
+                    output.append(f"    Gradient: SPEC({pa.spec_ht_rate:.0%} HT) -> EXEC({pa.exec_ht_rate:.0%} HT)")
 
                 # Show line summaries
                 for la in pa.lines[:3]:  # First 3 lines
-                    output.append(f"      L{la.line_id}: {la.structural()}")
+                    zone_tag = f"[{la.paragraph_zone}] " if la.paragraph_zone else ""
+                    output.append(f"      L{la.line_id}: {zone_tag}{la.structural()}")
                 if len(pa.lines) > 3:
                     output.append(f"      ... ({len(pa.lines) - 3} more lines)")
             else:

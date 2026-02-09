@@ -6,6 +6,11 @@
 
 Gallows-initial "paragraphs" in Currier A folios may be the **operational aggregation unit** for A->B filtering. Paragraphs provide 2.8x better token survival than single lines while maintaining manageable constraint complexity.
 
+> **Scope Clarification (2026-01-30):** Paragraph is the record unit for A-internal structure
+> (C881). For A-B vocabulary correspondence, C885 establishes that A FOLIO is the operational
+> unit (81% coverage vs paragraph's 58%). Paragraphs are intermediate aggregation showing
+> improvement over lines, but folio-level is required for sufficient B program coverage.
+
 ## Paragraph Definition
 
 A "paragraph" is defined as a contiguous sequence of A lines starting with a gallows-initial line (first token begins with k, t, p, or f) and continuing until the next gallows-initial line.

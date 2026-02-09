@@ -1,0 +1,16 @@
+{
+  "test": "ADJACENT_VOCABULARY_BRIDGE",
+  "counts": {
+    "middle_with_ri": 92,
+    "middle_without_ri": 41
+  },
+  "bridge_metrics": {
+    "avg_overlap_prev_with": 3.9782608695652173,
+    "avg_overlap_prev_without": 4.463414634146342,
+    "avg_union_coverage_with": 51.112175369769645,
+    "avg_union_coverage_without": 46.13313662608573,
+    "pct_true_bridge_with": 9.782608695652174,
+    "pct_true_bridge_without": 7.317073170731708
+  },
+  "verdict": "NO_BRIDGE_FUNCTION"
+}

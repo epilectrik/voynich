@@ -17,7 +17,7 @@ Currier A supports **two structurally distinct content types**:
    - coincide with abrupt prefix-regime transitions,
    - do not trigger Human Track activity.
 
-Registry control operators do **not** specify discriminative content and do **not** participate in compatibility filtering or execution gating. Their role is meta-structural, acting on the organization or scope of the Currier A registry itself rather than on operational specification.
+Registry control operators do **not** specify discriminative content and do **not** participate in compatibility grouping or positional encoding. Their role is meta-structural, acting on the organization or scope of the Currier A registry itself rather than on operational specification.
 
 ---
 

@@ -1,23 +1,10 @@
 # ============================================================
-# CASC: Currier A Structural Contract
-# Version: 1.0
-# ============================================================
-#
-# This is a DERIVED, READ-ONLY specification.
-# It introduces NO NEW CLAIMS.
-# Constraints remain authoritative.
-# Do not edit without constraint update.
-#
-# Purpose: Shallow interface to Currier A structure for
-# AI reasoning, validation, synthesis, and tooling.
-#
-# ============================================================
 
 meta:
   name: "Currier A Structural Contract"
   acronym: "CASC"
-  version: "1.4"
-  date: "2026-01-29"
+  version: "1.5"
+  date: "2026-01-31"
   status: "LOCKED"
   derived_from: "Tier-2 constraints only"
   governance: |
@@ -25,8 +12,6 @@ meta:
     CASC is a convenience layer for tooling and AI comprehension.
     Do not edit CASC without updating source constraints first.
 
-# ============================================================
-# SCOPE & GUARANTEES
 # ============================================================
 scope:
   system: "Currier A"
@@ -39,30 +24,23 @@ scope:
 guarantees:
   - id: "LINE_ATOMIC"
     statement: "Each line is an independent unit"
-    evidence: "Median 3 tokens/line, MI=0 across lines"
     provenance: "C233"
 
   - id: "POSITION_FREE"
     statement: "No positional grammar within lines"
-    evidence: "Zero JS divergence between positions"
     provenance: "C234"
 
   - id: "NON_SEQUENTIAL"
     statement: "No generative grammar exists"
-    evidence: "2.1% transition validity, silhouette=0.049"
     provenance: "C225, C230, C231, C240"
 
   - id: "FLAT_REGISTRY"
     statement: "Not hierarchical"
-    evidence: "Zero vocabulary overlap between markers"
     provenance: "C236"
 
 # ============================================================
-# RECORD TYPES (C484 bifurcation)
-# ============================================================
 record_types:
   control_operator:
-    description: "Meta-structural markers for registry scope/mode"
     token_count: 1
     frequency: "0.6% (10 instances)"
     vocabulary: "90% disjoint from registry entries"
@@ -79,7 +57,6 @@ record_types:
     provenance: "C484"
 
   registry_entry:
-    description: "Compound constraint bundles specifying discriminations"
     token_count: "2+"
     minimum_size: 2
     frequency: "99.4%"
@@ -88,8 +65,6 @@ record_types:
     function: "Define fine distinctions at complexity frontier"
     provenance: "C482, C484"
 
-# ============================================================
-# MORPHOLOGY (compositional structure)
 # ============================================================
 morphology:
   decomposition: "PREFIX + SISTER? + MIDDLE + SUFFIX + ARTICULATOR?"
@@ -125,7 +100,6 @@ morphology:
     incompatibility_rate: "95.7% of pairs are illegal"  # C475
     two_track_structure:
       # REGENERATED 2026-01-24: Atomic-suffix parser (voynich.py)
-      description: "MIDDLEs divide into shared-with-B (39.9%) and registry-internal (60.1%)"
       shared_with_b:
         count: 404
         substructure:  # C498.a - RE-VERIFIED 2026-01-24
@@ -142,17 +116,14 @@ morphology:
             percent: "18.4% of A vocabulary"
             role: "B operational vocabulary with incidental A presence"
             characteristics: "Zero AZC presence, avg 3.5 B folios"
-            note: "NOT pipeline-participating despite A&B membership"
         provenance: "C498.a"
       registry_internal:
         count: 609
         characteristics: "ct-prefix enriched, suffix-less, folio-localized"
         role: "Stay in A registry, encode within-category fine distinctions"
-        interpretation: "Below granularity threshold for execution"
 
         # Population structure (C498.b, C498.c, C498.d)
         population_structure:
-          description: "Single population with length-dependent uniqueness gradient"
           length_frequency_correlation:  # C498.d
             correlation: "rho = -0.367, p < 10^-42"
             short_2_chars: { singleton_rate: "48%", mean_freq: 3.45 }
@@ -161,24 +132,20 @@ morphology:
             mid_5_chars: { singleton_rate: "82%", mean_freq: 1.35 }
             long_6_chars: { singleton_rate: "96%", mean_freq: 1.04 }
             long_8plus: { singleton_rate: "100%", mean_freq: 1.00 }
-          interpretation: "Combinatorial effect from sub-component morphology - short MIDDLEs have fewer combinations"
           singleton_repeater_independence: "chi2 p=0.165 (not significant) - co-occurrence is near-random"
           provenance: "C498.b, C498.c, C498.d"
 
         # PREFIX lexical bifurcation (C528)
         prefix_bifurcation:  # C528
-          description: "RI MIDDLEs split into two nearly-disjoint PREFIX populations"
           prefix_required: { count: 334, percent: "50.1%" }
           prefix_forbidden: { count: 321, percent: "48.1%" }
           prefix_optional: { count: 12, percent: "1.8%" }
           disjoint_rate: "98.2%"
           section_independence: true  # Same ~50/50 split holds within each section
-          interpretation: "PREFIX attachment is lexically determined per-entry, not grammatically optional"
           provenance: "C528"
 
         # Orthogonal feature structure (C513-NOTE-B)
         orthogonal_features:  # C513-NOTE-B
-          description: "RI tokens encode 5 independent features that combine freely"
           axes:
             DOMAIN: { rate: "54.9%", feature: "Gallows presence (k/t/p/f)" }
             POSITION: { rate: "40.7%", feature: "Line-initial or line-final" }
@@ -189,12 +156,10 @@ morphology:
             articulator_x_gallows: { expected: 11.5, observed: 10, ratio: "0.87x" }
             gallows_x_record_scope: { expected: 181.7, observed: 166, ratio: "0.91x" }
             articulator_x_record_scope: { expected: 8.9, observed: 9, ratio: "1.01x" }
-          interpretation: "RI = feature bundle, not categorical type. Apparent subtypes are projections onto single dimensions."
           provenance: "C513-NOTE-B"
 
         # RI functional population structure (C831-C839)
         ri_functional_structure:
-          description: "RI MIDDLEs partition into three functional tiers with distinct behaviors"
 
           three_tier_population:  # C831
             singletons: { rate: "95.3%", count: 674, behavior: "Appear exactly once corpus-wide" }
@@ -207,12 +172,10 @@ morphology:
             final_only_count: 15
             middle_only_count: 8
             overlap_rate: "0% between INITIAL-only and FINAL-only"
-            interpretation: "Positional assignment is lexical, not contextual"
             provenance: "C832"
 
           line1_concentration:  # C833
             ri_line1_rate: "3.84x baseline"
-            interpretation: "Line 1 serves as paragraph header zone"
             provenance: "C833"
 
           linker_mechanism:  # C835-C838
@@ -234,7 +197,6 @@ morphology:
             asymmetry_ratio: "2.4x"
             strongest_input: ["ko- (9x)", "to- (inf)", "-r (7x)", "-ey (4.5x)"]
             strongest_output: ["-ry (0.20x = 5x OUTPUT bias)"]
-            interpretation: "Many inputs → fewer outputs (convergent processing)"
             provenance: "C839"
 
           provenance: "C831, C832, C833, C835, C836, C837, C838, C839"
@@ -244,7 +206,6 @@ morphology:
 
     # Gallows patterns (C529-C530)
     gallows:
-      description: "Gallows letters (p,t,k,f) show positional and distributional asymmetry"
 
       positional_asymmetry:  # C529
         pp_gallows_initial: "30.4%"
@@ -252,7 +213,6 @@ morphology:
         pp_gallows_medial: "39.3%"
         ri_gallows_medial: "57.8%"
         statistical_significance: "chi2=7.69, p<0.01"
-        interpretation: "PP gallows are atomic (initial); RI gallows are embedded (medial)"
         bench_gallows_ri_enriched:
           cph: "81% RI"
           ckh: "65% RI"
@@ -270,12 +230,10 @@ morphology:
         t_specialized_folios: ["f4r (69%)", "f10r (74%)", "f29v (71%)"]
         p_f_never_dominant: true
         ri_pp_coherence: "62.2% same dominant (vs 54% expected)"
-        interpretation: "k=default domain, t=alternative domain, p/f=specialized markers"
         provenance: "C530"
 
     # Sub-component grammar (C510-C513)
     sub_component_grammar:
-      description: "MIDDLEs exhibit internal compositional structure with systematic construction rules"
       sub_component_count: 218  # C267.a
       reconstruction_coverage: "97.8%"
 
@@ -287,13 +245,11 @@ morphology:
         constrained_rate: "41.2%"
         free_rate: "58.8%"
         statistical_significance: "z=34.16, p<0.0001"
-        interpretation: "Permissive grammar - constraints exist but majority of components are positionally free"
         provenance: "C510"
 
       derivational_productivity:  # C511
         seeding_ratio: "12.67x above chance"
         relationships_above_chance: "89.8%"
-        mechanism: "Short frequent forms extended into longer unique forms"
         explains: "C498.d length-frequency correlation"
         provenance: "C511"
 
@@ -303,7 +259,6 @@ morphology:
         section_invariance_ratio: "8.3x (PP vs RI)"
         pp_in_all_sections: "60.7%"
         ri_in_all_sections: "2.6%"
-        interpretation: "PP is universal substrate; RI is section-specific elaboration"
         provenance: "C512"
 
       positional_asymmetry:  # C512.a
@@ -313,12 +268,10 @@ morphology:
         pp_free_rate: "69.2%"
         architecture: "RI-START + PP-FREE + PP-END"
         pp_terminators: ["ch", "d", "e", "g", "h", "k", "s", "t"]
-        interpretation: "RI elaborates at start, PP terminates at end"
         provenance: "C512.a"
 
       short_singleton_variance:  # C513
         character_inventory_jaccard: "1.00"
-        interpretation: "Singleton status at ≤3 chars is sampling variance, not functional distinction"
         provenance: "C513"
 
       provenance: "C267.a, C510, C511, C512, C512.a, C513"
@@ -330,11 +283,9 @@ morphology:
     universal_rate: "22/25 appear in 6+ prefix classes"
     function: "Decision archetype (phase-indexed)"
     regime_association:
-      description: "SUFFIX associated with downstream REGIME compatibility breadth"
       enriched_universal: ["-r"]
       enriched_restricted: ["-ar", "-or"]
       effect_size: "Cramér's V = 0.159"
-      note: "Associative, not causal"
       provenance: "C495"
     provenance: "C269, C277, C495"
 
@@ -347,8 +298,6 @@ morphology:
     section_concentrated: true
     provenance: "C291, C292"
 
-# ============================================================
-# LINE STRUCTURE
 # ============================================================
 line_structure:
   atomicity:
@@ -364,17 +313,12 @@ line_structure:
 
   batch_semantics:
     enabled: true
-    description: "Multiple items co-processed as compound input"
     b_invariance: "B structure invariant to A line length"
     test_result: "p=1.0 (all A categories map to same B folios)"
     provenance: "C482"
 
   repetition:
     status: "INVALIDATED (2026-01-15)"
-    note: |
-      Block repetition patterns (C250-C262) were discovered to be transcriber artifacts.
-      When filtered to PRIMARY transcriber (H) only, block repetition rate is 0%.
-      The apparent patterns were caused by interleaved readings from multiple transcribers.
     provenance: "C250 INVALIDATED"
 
   da_articulation:
@@ -388,14 +332,10 @@ line_structure:
     provenance: "C422"
 
 # ============================================================
-# PARAGRAPH STRUCTURE (C827, C834, C846-C850, C854)
-# ============================================================
 paragraph_structure:
-  description: "Paragraphs serve as operational aggregation units with systematic organization"
 
   operational_unit:  # C827
     statement: "Paragraphs are the operational aggregation level (not lines, not folios)"
-    evidence: "Token survival rates increase with aggregation: line 11.2% -> paragraph 31.8% -> folio 50.0%"
     provenance: "C827"
 
   paragraph_granularity:  # C834
@@ -412,7 +352,6 @@ paragraph_structure:
         middle: { lines: 2.75, tokens: 18.7 }
         last: { lines: 5.36, tokens: 36.2 }
         only: { lines: 11.79, tokens: 73.4 }
-      interpretation: "'Only' paragraphs are complete programs; 'middle' paragraphs are compact metadata"
       provenance: "C847"
 
     ri_position_variance:  # C848
@@ -438,7 +377,6 @@ paragraph_structure:
     best_match_lift: "2.49x raw, 1.20x pool-size-controlled"
     hub_concentration: "Top 10 A paragraphs capture 85.9% of best matches"
     pool_size_correlation: "Spearman rho = 0.694"
-    interpretation: "Selection artifact from large PP pools, not specific correspondence"
     provenance: "C846"
 
   structural_parallel:  # C854
@@ -456,13 +394,10 @@ paragraph_structure:
       b_clusters: 5
       a_silhouette: 0.337
       b_silhouette: 0.237
-    interpretation: "Shared design principle: header zone (RI/HT) + body zone (PP/classified)"
     provenance: "C854"
 
   provenance: "C827, C834, C846, C847, C848, C849, C850, C854"
 
-# ============================================================
-# PARTICIPATION RULES
 # ============================================================
 participation:
   azc:
@@ -472,7 +407,6 @@ participation:
       compatibility_filtering: true
     control_operators:
       participates: false
-      evidence: "0/10 in AZC folios"
       azc_tokens_in_folios: 0
     provenance: "C441-C442, C484"
 
@@ -483,7 +417,6 @@ participation:
     control_operators:
       triggers_ht: false
       single_char_rate_nearby: "3.2%"
-      evidence: "7/10 show 0% single-char nearby"
     provenance: "C484"
 
   b_relationship:
@@ -503,17 +436,14 @@ participation:
 
     # Full morphological filtering cascade (C502.a)
     filtering_cascade:
-      description: "A record morphology constrains B vocabulary through three cascading filters"
       middle_only: { legal: "257 tokens (5.3%)", filtered: "94.7%" }
       middle_plus_prefix: { legal: "92 tokens (1.9%)", additional_reduction: "64%" }
       middle_plus_suffix: { legal: "130 tokens (2.7%)", additional_reduction: "50%" }
       full_morphology: { legal: "38 tokens (0.8%)", additional_reduction: "85% beyond MIDDLE" }
-      mechanism: "B token legal iff MIDDLE in A-record AND PREFIX in A-record AND SUFFIX in A-record"
       provenance: "C502.a"
 
     # A-record filtering validation (C824-C826)
     filtering_validation:
-      description: "Comprehensive validation of A->B filtering mechanism"
 
       mechanism_confirmation:  # C824
         mean_filtering_rate: "81.3%"
@@ -528,13 +458,11 @@ participation:
       routing_topology:  # C825
         model: "Continuous, not discrete"
         viability_distribution: "Continuous gradient, not categorical bins"
-        evidence: "No natural clustering in folio viability"
         provenance: "C825"
 
       model_reconciliation:  # C826
         correct_model: "Token filtering (C502)"
         rejected_model: "Subset viability"
-        interpretation: "B tokens legal when MIDDLE in A's PP set; more PP = more tokens survive"
         provenance: "C826"
 
       provenance: "C824, C825, C826"
@@ -542,13 +470,10 @@ participation:
     provenance: "C299, C384, C384.a, C502.a, C824, C825, C826"
 
 # ============================================================
-# POSITIONAL PROPERTIES
-# ============================================================
 positional:
   within_line:
     grammar: "position-free"
     folio_initial_exception:
-      description: "C+vowel prefixes (ko-, po-, to-) permitted at position 1 only"
       failure_rate_pos1: "75%"
       failure_rate_pos2_3: "31%"
       suffix_compatibility: "100% with standard forms"
@@ -584,57 +509,41 @@ positional:
     provenance: "C484"
 
 # ============================================================
-# DISALLOWED INTERPRETATIONS
-# ============================================================
-# These interpretations have been tested and rejected.
-# Do not resurrect without extraordinary new evidence.
 
 disallowed:
   - interpretation: "A tokens map to B folios (context-free)"
     reason: "No token-level or context-free lookup exists"
-    evidence: "C384 - no single-token correspondence"
     status: "FALSIFIED"
-    note: "Record-level correspondence via constraint collapse IS permitted (C384.a)"
 
   - interpretation: "Repetition encodes quantity or ratio"
     reason: "Magnitude has no downstream effect"
-    evidence: "C483, C287-C290 - ordinal emphasis only"
     status: "FALSIFIED"
 
   - interpretation: "A has sequential grammar"
     reason: "Transition validity is 2.1%"
-    evidence: "C225, C231 - regular but not grammatical"
     status: "FALSIFIED"
 
   - interpretation: "Prefixes are semantic categories"
     reason: "They are functional markers"
-    evidence: "C235 - mutual exclusion without semantic content"
     status: "FALSIFIED"
 
   - interpretation: "A is lookup table for B"
     reason: "No addressable mapping mechanism"
-    evidence: "Vocabulary sharing is statistical, not referential"
     status: "FALSIFIED"
 
   - interpretation: "A encodes danger or hazard"
     reason: "Correlation is entirely frequency-driven"
-    evidence: "Pre-registered test p=0.651; permutation p=0.111"
     status: "FALSIFIED"
 
   - interpretation: "Control operators are headers or section markers"
     reason: "No semantic category evidence"
-    evidence: "C484 - meta-structural function only"
     status: "UNSUBSTANTIATED"
 
   - interpretation: "A is generative or producible"
     reason: "A is maintained, not produced"
-    evidence: "C476 - coverage-optimal with hub rationing"
     status: "FALSIFIED"
 
 # ============================================================
-# PROVENANCE MAP
-# ============================================================
-# Maps CASC sections to authoritative constraint IDs
 
 provenance:
   scope:
@@ -687,6 +596,10 @@ provenance:
     - "C837"  # ct-ho linker signature
     - "C838"  # qo linker exception
     - "C839"  # Input-output morphological asymmetry
+    - "C887"  # WITHOUT-RI backward reference (1.23x asymmetry)
+    - "C888"  # Section-specific WITHOUT-RI function
+    - "C889"  # ct-ho reserved PP vocabulary
+    - "C898"  # A PP internal structure (positional preferences)
 
   line_structure:
     - "C250"  # INVALIDATED (was 64.1% repetition - transcriber artifact)
@@ -708,17 +621,23 @@ provenance:
     - "C849"  # A paragraph section profile
     - "C850"  # A paragraph cluster taxonomy
     - "C854"  # A-B paragraph structural parallel
+    - "C881"  # A record paragraph structure (RI first-line 3.84x)
+    - "C882"  # PRECISION kernel signature
+    - "C883"  # Handling-type distribution alignment
+    - "C884"  # PRECISION-animal correspondence
 
   participation:
     - "C299"  # Section distribution in B
     - "C384"  # No A-B coupling
     - "C441"  # AZC vocabulary-activated
-    - "C442"  # AZC compatibility filter
+    - "C442"  # AZC compatibility grouping
     - "C484"  # Control operator exclusion
     - "C502.a"  # Full morphological filtering cascade
     - "C824"  # A-record filtering mechanism validated
     - "C825"  # Continuous routing topology
     - "C826"  # Token filtering model reconciliation
+    - "C885"  # A-B vocabulary correspondence (81% coverage)
+    - "C899"  # A-B within-line positional correspondence
 
   positional:
     - "C260"  # Section isolation
@@ -741,6 +660,4 @@ provenance:
     - "C483"  # Ordinal only
     - "C484"  # No header interpretation
 
-# ============================================================
-# END OF CASC
 # ============================================================

@@ -1,0 +1,2223 @@
+{
+  "folios": [
+    {
+      "folio": "f103r",
+      "n_paragraphs": 12,
+      "paragraphs": [
+        {
+          "number": 1,
+          "position": "early",
+          "tokens": 49,
+          "unique_middles": 31,
+          "gallows_rate": 0.061224489795918366,
+          "top_prefixes": [
+            [
+              "ch",
+              12
+            ],
+            [
+              "sh",
+              6
+            ],
+            [
+              "qo",
+              4
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "al",
+              4
+            ],
+            [
+              "hy",
+              3
+            ],
+            [
+              "eey",
+              2
+            ]
+          ],
+          "fl_initial": 1,
+          "fl_late": 6,
+          "fl_terminal": 3,
+          "fl_initial_rate": 0.02040816326530612,
+          "fl_late_rate": 0.12244897959183673,
+          "fl_terminal_rate": 0.061224489795918366
+        },
+        {
+          "number": 2,
+          "position": "early",
+          "tokens": 94,
+          "unique_middles": 43,
+          "gallows_rate": 0.05319148936170213,
+          "top_prefixes": [
+            [
+              "sh",
+              17
+            ],
+            [
+              "ok",
+              14
+            ],
+            [
+              "ot",
+              12
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "edy",
+              7
+            ],
+            [
+              "ain",
+              5
+            ],
+            [
+              "y",
+              4
+            ]
+          ],
+          "fl_initial": 4,
+          "fl_late": 5,
+          "fl_terminal": 9,
+          "fl_initial_rate": 0.0425531914893617,
+          "fl_late_rate": 0.05319148936170213,
+          "fl_terminal_rate": 0.09574468085106383
+        },
+        {
+          "number": 3,
+          "position": "early",
+          "tokens": 51,
+          "unique_middles": 25,
+          "gallows_rate": 0.11764705882352941,
+          "top_prefixes": [
+            [
+              "qo",
+              12
+            ],
+            [
+              "sh",
+              11
+            ],
+            [
+              "ch",
+              7
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "ar",
+              4
+            ],
+            [
+              "edy",
+              4
+            ],
+            [
+              "hy",
+              4
+            ]
+          ],
+          "fl_initial": 5,
+          "fl_late": 4,
+          "fl_terminal": 3,
+          "fl_initial_rate": 0.09803921568627451,
+          "fl_late_rate": 0.0784313725490196,
+          "fl_terminal_rate": 0.058823529411764705
+        },
+        {
+          "number": 4,
+          "position": "early",
+          "tokens": 29,
+          "unique_middles": 15,
+          "gallows_rate": 0.034482758620689655,
+          "top_prefixes": [
+            [
+              "qo",
+              8
+            ],
+            [
+              "ok",
+              4
+            ],
+            [
+              "ch",
+              4
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "ain",
+              3
+            ],
+            [
+              "edy",
+              2
+            ],
+            [
+              "hy",
+              2
+            ]
+          ],
+          "fl_initial": 1,
+          "fl_late": 3,
+          "fl_terminal": 1,
+          "fl_initial_rate": 0.034482758620689655,
+          "fl_late_rate": 0.10344827586206896,
+          "fl_terminal_rate": 0.034482758620689655
+        },
+        {
+          "number": 5,
+          "position": "middle",
+          "tokens": 28,
+          "unique_middles": 21,
+          "gallows_rate": 0.07142857142857142,
+          "top_prefixes": [
+            [
+              "qo",
+              5
+            ],
+            [
+              "sh",
+              5
+            ],
+            [
+              "ch",
+              4
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "hy",
+              5
+            ],
+            [
+              "edy",
+              3
+            ],
+            [
+              "ar",
+              3
+            ]
+          ],
+          "fl_initial": 4,
+          "fl_late": 2,
+          "fl_terminal": 4,
+          "fl_initial_rate": 0.14285714285714285,
+          "fl_late_rate": 0.07142857142857142,
+          "fl_terminal_rate": 0.14285714285714285
+        },
+        {
+          "number": 6,
+          "position": "middle",
+          "tokens": 59,
+          "unique_middles": 32,
+          "gallows_rate": 0.05084745762711865,
+          "top_prefixes": [
+            [
+              "qo",
+              15
+            ],
+            [
+              "ok",
+              8
+            ],
+            [
+              "sh",
+              7
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "eey",
+              6
+            ],
+            [
+              "hy",
+              5
+            ],
+            [
+              "edy",
+              4
+            ]
+          ],
+          "fl_initial": 1,
+          "fl_late": 3,
+          "fl_terminal": 2,
+          "fl_initial_rate": 0.01694915254237288,
+          "fl_late_rate": 0.05084745762711865,
+          "fl_terminal_rate": 0.03389830508474576
+        },
+        {
+          "number": 7,
+          "position": "middle",
+          "tokens": 59,
+          "unique_middles": 36,
+          "gallows_rate": 0.05084745762711865,
+          "top_prefixes": [
+            [
+              "sh",
+              14
+            ],
+            [
+              "qo",
+              13
+            ],
+            [
+              "ch",
+              10
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "hy",
+              7
+            ],
+            [
+              "edy",
+              6
+            ],
+            [
+              "dy",
+              3
+            ]
+          ],
+          "fl_initial": 2,
+          "fl_late": 4,
+          "fl_terminal": 5,
+          "fl_initial_rate": 0.03389830508474576,
+          "fl_late_rate": 0.06779661016949153,
+          "fl_terminal_rate": 0.0847457627118644
+        },
+        {
+          "number": 8,
+          "position": "middle",
+          "tokens": 46,
+          "unique_middles": 27,
+          "gallows_rate": 0.043478260869565216,
+          "top_prefixes": [
+            [
+              "qo",
+              13
+            ],
+            [
+              "sh",
+              12
+            ],
+            [
+              "ot",
+              7
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "edy",
+              7
+            ],
+            [
+              "eey",
+              5
+            ],
+            [
+              "hy",
+              5
+            ]
+          ],
+          "fl_initial": 1,
+          "fl_late": 3,
+          "fl_terminal": 3,
+          "fl_initial_rate": 0.021739130434782608,
+          "fl_late_rate": 0.06521739130434782,
+          "fl_terminal_rate": 0.06521739130434782
+        },
+        {
+          "number": 9,
+          "position": "late",
+          "tokens": 4,
+          "unique_middles": 4,
+          "gallows_rate": 0.25,
+          "top_prefixes": [
+            [
+              "sh",
+              2
+            ],
+            [
+              "ch",
+              2
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "hy",
+              1
+            ],
+            [
+              "al",
+              1
+            ]
+          ],
+          "fl_initial": 0,
+          "fl_late": 1,
+          "fl_terminal": 0,
+          "fl_initial_rate": 0.0,
+          "fl_late_rate": 0.25,
+          "fl_terminal_rate": 0.0
+        },
+        {
+          "number": 10,
+          "position": "late",
+          "tokens": 42,
+          "unique_middles": 21,
+          "gallows_rate": 0.047619047619047616,
+          "top_prefixes": [
+            [
+              "qo",
+              11
+            ],
+            [
+              "sh",
+              10
+            ],
+            [
+              "ch",
+              6
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "edy",
+              8
+            ],
+            [
+              "al",
+              5
+            ],
+            [
+              "eey",
+              5
+            ]
+          ],
+          "fl_initial": 1,
+          "fl_late": 9,
+          "fl_terminal": 0,
+          "fl_initial_rate": 0.023809523809523808,
+          "fl_late_rate": 0.21428571428571427,
+          "fl_terminal_rate": 0.0
+        },
+        {
+          "number": 11,
+          "position": "late",
+          "tokens": 36,
+          "unique_middles": 22,
+          "gallows_rate": 0.05555555555555555,
+          "top_prefixes": [
+            [
+              "qo",
+              10
+            ],
+            [
+              "sh",
+              6
+            ],
+            [
+              "ch",
+              5
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "eey",
+              5
+            ],
+            [
+              "ain",
+              3
+            ],
+            [
+              "aiin",
+              2
+            ]
+          ],
+          "fl_initial": 2,
+          "fl_late": 3,
+          "fl_terminal": 1,
+          "fl_initial_rate": 0.05555555555555555,
+          "fl_late_rate": 0.08333333333333333,
+          "fl_terminal_rate": 0.027777777777777776
+        },
+        {
+          "number": 12,
+          "position": "late",
+          "tokens": 25,
+          "unique_middles": 15,
+          "gallows_rate": 0.08,
+          "top_prefixes": [
+            [
+              "qo",
+              12
+            ],
+            [
+              "ot",
+              3
+            ],
+            [
+              "sh",
+              3
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "eey",
+              5
+            ],
+            [
+              "y",
+              3
+            ],
+            [
+              "ey",
+              2
+            ]
+          ],
+          "fl_initial": 0,
+          "fl_late": 2,
+          "fl_terminal": 3,
+          "fl_initial_rate": 0.0,
+          "fl_late_rate": 0.08,
+          "fl_terminal_rate": 0.12
+        }
+      ],
+      "fl_by_position": {
+        "early": {
+          "INITIAL": 0.04932735426008968,
+          "LATE": 0.08071748878923767,
+          "TERMINAL": 0.07174887892376682,
+          "n_tokens": 223
+        },
+        "middle": {
+          "INITIAL": 0.041666666666666664,
+          "LATE": 0.0625,
+          "TERMINAL": 0.07291666666666667,
+          "n_tokens": 192
+        },
+        "late": {
+          "INITIAL": 0.028037383177570093,
+          "LATE": 0.14018691588785046,
+          "TERMINAL": 0.037383177570093455,
+          "n_tokens": 107
+        }
+      },
+      "vocabulary_progression": {
+        "P1_to_P2": 0.6129032258064516,
+        "P1_to_P3": 0.5483870967741935,
+        "P1_to_P4": 0.3225806451612903,
+        "P1_to_P5": 0.3548387096774194,
+        "P1_to_P6": 0.4838709677419355,
+        "P1_to_P7": 0.45161290322580644,
+        "P1_to_P8": 0.3225806451612903,
+        "P1_to_P9": 0.06451612903225806,
+        "P1_to_P10": 0.3870967741935484,
+        "P1_to_P11": 0.3225806451612903,
+        "P1_to_P12": 0.2903225806451613
+      }
+    },
+    {
+      "folio": "f104r",
+      "n_paragraphs": 11,
+      "paragraphs": [
+        {
+          "number": 1,
+          "position": "early",
+          "tokens": 41,
+          "unique_middles": 30,
+          "gallows_rate": 0.07317073170731707,
+          "top_prefixes": [
+            [
+              "ch",
+              9
+            ],
+            [
+              "qo",
+              7
+            ],
+            [
+              "ot",
+              5
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "edy",
+              9
+            ],
+            [
+              "ar",
+              3
+            ],
+            [
+              "aiin",
+              3
+            ]
+          ],
+          "fl_initial": 5,
+          "fl_late": 4,
+          "fl_terminal": 5,
+          "fl_initial_rate": 0.12195121951219512,
+          "fl_late_rate": 0.0975609756097561,
+          "fl_terminal_rate": 0.12195121951219512
+        },
+        {
+          "number": 2,
+          "position": "early",
+          "tokens": 49,
+          "unique_middles": 29,
+          "gallows_rate": 0.061224489795918366,
+          "top_prefixes": [
+            [
+              "qo",
+              12
+            ],
+            [
+              "ch",
+              9
+            ],
+            [
+              "lk",
+              3
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "edy",
+              6
+            ],
+            [
+              "dy",
+              4
+            ],
+            [
+              "al",
+              3
+            ]
+          ],
+          "fl_initial": 3,
+          "fl_late": 7,
+          "fl_terminal": 6,
+          "fl_initial_rate": 0.061224489795918366,
+          "fl_late_rate": 0.14285714285714285,
+          "fl_terminal_rate": 0.12244897959183673
+        },
+        {
+          "number": 3,
+          "position": "early",
+          "tokens": 20,
+          "unique_middles": 18,
+          "gallows_rate": 0.05,
+          "top_prefixes": [
+            [
+              "ch",
+              4
+            ],
+            [
+              "ot",
+              4
+            ],
+            [
+              "sh",
+              2
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "r",
+              3
+            ],
+            [
+              "dy",
+              2
+            ],
+            [
+              "or",
+              2
+            ]
+          ],
+          "fl_initial": 5,
+          "fl_late": 1,
+          "fl_terminal": 3,
+          "fl_initial_rate": 0.25,
+          "fl_late_rate": 0.05,
+          "fl_terminal_rate": 0.15
+        },
+        {
+          "number": 4,
+          "position": "early",
+          "tokens": 66,
+          "unique_middles": 42,
+          "gallows_rate": 0.06060606060606061,
+          "top_prefixes": [
+            [
+              "qo",
+              17
+            ],
+            [
+              "ch",
+              11
+            ],
+            [
+              "ok",
+              5
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "dy",
+              10
+            ],
+            [
+              "ey",
+              7
+            ],
+            [
+              "hy",
+              4
+            ]
+          ],
+          "fl_initial": 6,
+          "fl_late": 6,
+          "fl_terminal": 13,
+          "fl_initial_rate": 0.09090909090909091,
+          "fl_late_rate": 0.09090909090909091,
+          "fl_terminal_rate": 0.19696969696969696
+        },
+        {
+          "number": 5,
+          "position": "middle",
+          "tokens": 29,
+          "unique_middles": 19,
+          "gallows_rate": 0.06896551724137931,
+          "top_prefixes": [
+            [
+              "ch",
+              7
+            ],
+            [
+              "qo",
+              5
+            ],
+            [
+              "sh",
+              3
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "ar",
+              4
+            ],
+            [
+              "edy",
+              3
+            ],
+            [
+              "aiin",
+              3
+            ]
+          ],
+          "fl_initial": 5,
+          "fl_late": 3,
+          "fl_terminal": 3,
+          "fl_initial_rate": 0.1724137931034483,
+          "fl_late_rate": 0.10344827586206896,
+          "fl_terminal_rate": 0.10344827586206896
+        },
+        {
+          "number": 6,
+          "position": "middle",
+          "tokens": 50,
+          "unique_middles": 31,
+          "gallows_rate": 0.14,
+          "top_prefixes": [
+            [
+              "ch",
+              13
+            ],
+            [
+              "sh",
+              6
+            ],
+            [
+              "ok",
+              3
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "or",
+              4
+            ],
+            [
+              "ey",
+              3
+            ],
+            [
+              "dy",
+              3
+            ]
+          ],
+          "fl_initial": 8,
+          "fl_late": 7,
+          "fl_terminal": 5,
+          "fl_initial_rate": 0.16,
+          "fl_late_rate": 0.14,
+          "fl_terminal_rate": 0.1
+        },
+        {
+          "number": 7,
+          "position": "middle",
+          "tokens": 73,
+          "unique_middles": 46,
+          "gallows_rate": 0.0273972602739726,
+          "top_prefixes": [
+            [
+              "ch",
+              12
+            ],
+            [
+              "qo",
+              11
+            ],
+            [
+              "ok",
+              7
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "ar",
+              7
+            ],
+            [
+              "aiin",
+              7
+            ],
+            [
+              "eey",
+              5
+            ]
+          ],
+          "fl_initial": 8,
+          "fl_late": 12,
+          "fl_terminal": 5,
+          "fl_initial_rate": 0.1095890410958904,
+          "fl_late_rate": 0.1643835616438356,
+          "fl_terminal_rate": 0.0684931506849315
+        },
+        {
+          "number": 8,
+          "position": "late",
+          "tokens": 19,
+          "unique_middles": 15,
+          "gallows_rate": 0.15789473684210525,
+          "top_prefixes": [
+            [
+              "ch",
+              7
+            ],
+            [
+              "qo",
+              6
+            ],
+            [
+              "sh",
+              2
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "al",
+              3
+            ],
+            [
+              "dy",
+              2
+            ],
+            [
+              "aiin",
+              2
+            ]
+          ],
+          "fl_initial": 0,
+          "fl_late": 5,
+          "fl_terminal": 3,
+          "fl_initial_rate": 0.0,
+          "fl_late_rate": 0.2631578947368421,
+          "fl_terminal_rate": 0.15789473684210525
+        },
+        {
+          "number": 9,
+          "position": "late",
+          "tokens": 25,
+          "unique_middles": 17,
+          "gallows_rate": 0.12,
+          "top_prefixes": [
+            [
+              "qo",
+              10
+            ],
+            [
+              "ok",
+              6
+            ],
+            [
+              "ch",
+              2
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "dy",
+              4
+            ],
+            [
+              "ar",
+              3
+            ],
+            [
+              "ly",
+              1
+            ]
+          ],
+          "fl_initial": 4,
+          "fl_late": 3,
+          "fl_terminal": 5,
+          "fl_initial_rate": 0.16,
+          "fl_late_rate": 0.12,
+          "fl_terminal_rate": 0.2
+        },
+        {
+          "number": 10,
+          "position": "late",
+          "tokens": 35,
+          "unique_middles": 25,
+          "gallows_rate": 0.02857142857142857,
+          "top_prefixes": [
+            [
+              "qo",
+              10
+            ],
+            [
+              "ch",
+              3
+            ],
+            [
+              "ol",
+              3
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "r",
+              3
+            ],
+            [
+              "hy",
+              3
+            ],
+            [
+              "or",
+              2
+            ]
+          ],
+          "fl_initial": 7,
+          "fl_late": 4,
+          "fl_terminal": 2,
+          "fl_initial_rate": 0.2,
+          "fl_late_rate": 0.11428571428571428,
+          "fl_terminal_rate": 0.05714285714285714
+        },
+        {
+          "number": 11,
+          "position": "late",
+          "tokens": 31,
+          "unique_middles": 19,
+          "gallows_rate": 0.06451612903225806,
+          "top_prefixes": [
+            [
+              "qo",
+              8
+            ],
+            [
+              "ot",
+              6
+            ],
+            [
+              "ch",
+              3
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "aiin",
+              3
+            ],
+            [
+              "edy",
+              2
+            ],
+            [
+              "l",
+              1
+            ]
+          ],
+          "fl_initial": 1,
+          "fl_late": 4,
+          "fl_terminal": 1,
+          "fl_initial_rate": 0.03225806451612903,
+          "fl_late_rate": 0.12903225806451613,
+          "fl_terminal_rate": 0.03225806451612903
+        }
+      ],
+      "fl_by_position": {
+        "early": {
+          "INITIAL": 0.10795454545454546,
+          "LATE": 0.10227272727272728,
+          "TERMINAL": 0.1534090909090909,
+          "n_tokens": 176
+        },
+        "middle": {
+          "INITIAL": 0.13815789473684212,
+          "LATE": 0.14473684210526316,
+          "TERMINAL": 0.08552631578947369,
+          "n_tokens": 152
+        },
+        "late": {
+          "INITIAL": 0.10909090909090909,
+          "LATE": 0.14545454545454545,
+          "TERMINAL": 0.1,
+          "n_tokens": 110
+        }
+      },
+      "vocabulary_progression": {
+        "P1_to_P2": 0.43333333333333335,
+        "P1_to_P3": 0.2,
+        "P1_to_P4": 0.4,
+        "P1_to_P5": 0.3,
+        "P1_to_P6": 0.36666666666666664,
+        "P1_to_P7": 0.5666666666666667,
+        "P1_to_P8": 0.26666666666666666,
+        "P1_to_P9": 0.23333333333333334,
+        "P1_to_P10": 0.3,
+        "P1_to_P11": 0.2
+      }
+    },
+    {
+      "folio": "f105r",
+      "n_paragraphs": 8,
+      "paragraphs": [
+        {
+          "number": 1,
+          "position": "early",
+          "tokens": 56,
+          "unique_middles": 31,
+          "gallows_rate": 0.07142857142857142,
+          "top_prefixes": [
+            [
+              "qo",
+              9
+            ],
+            [
+              "ch",
+              8
+            ],
+            [
+              "te",
+              5
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "dy",
+              6
+            ],
+            [
+              "aiin",
+              5
+            ],
+            [
+              "eey",
+              5
+            ]
+          ],
+          "fl_initial": 1,
+          "fl_late": 8,
+          "fl_terminal": 8,
+          "fl_initial_rate": 0.017857142857142856,
+          "fl_late_rate": 0.14285714285714285,
+          "fl_terminal_rate": 0.14285714285714285
+        },
+        {
+          "number": 2,
+          "position": "early",
+          "tokens": 35,
+          "unique_middles": 23,
+          "gallows_rate": 0.02857142857142857,
+          "top_prefixes": [
+            [
+              "qo",
+              10
+            ],
+            [
+              "sh",
+              4
+            ],
+            [
+              "ok",
+              3
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "dy",
+              6
+            ],
+            [
+              "edy",
+              5
+            ],
+            [
+              "eey",
+              3
+            ]
+          ],
+          "fl_initial": 2,
+          "fl_late": 3,
+          "fl_terminal": 6,
+          "fl_initial_rate": 0.05714285714285714,
+          "fl_late_rate": 0.08571428571428572,
+          "fl_terminal_rate": 0.17142857142857143
+        },
+        {
+          "number": 3,
+          "position": "early",
+          "tokens": 32,
+          "unique_middles": 25,
+          "gallows_rate": 0.21875,
+          "top_prefixes": [
+            [
+              "qo",
+              6
+            ],
+            [
+              "ch",
+              5
+            ],
+            [
+              "ot",
+              2
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "dy",
+              5
+            ],
+            [
+              "edy",
+              3
+            ],
+            [
+              "aiin",
+              3
+            ]
+          ],
+          "fl_initial": 3,
+          "fl_late": 3,
+          "fl_terminal": 5,
+          "fl_initial_rate": 0.09375,
+          "fl_late_rate": 0.09375,
+          "fl_terminal_rate": 0.15625
+        },
+        {
+          "number": 4,
+          "position": "middle",
+          "tokens": 102,
+          "unique_middles": 55,
+          "gallows_rate": 0.06862745098039216,
+          "top_prefixes": [
+            [
+              "ch",
+              11
+            ],
+            [
+              "ot",
+              9
+            ],
+            [
+              "ok",
+              8
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "edy",
+              10
+            ],
+            [
+              "dy",
+              10
+            ],
+            [
+              "aiin",
+              7
+            ]
+          ],
+          "fl_initial": 8,
+          "fl_late": 14,
+          "fl_terminal": 13,
+          "fl_initial_rate": 0.0784313725490196,
+          "fl_late_rate": 0.13725490196078433,
+          "fl_terminal_rate": 0.12745098039215685
+        },
+        {
+          "number": 5,
+          "position": "middle",
+          "tokens": 19,
+          "unique_middles": 17,
+          "gallows_rate": 0.15789473684210525,
+          "top_prefixes": [
+            [
+              "da",
+              4
+            ],
+            [
+              "ch",
+              3
+            ],
+            [
+              "pch",
+              2
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "eey",
+              2
+            ],
+            [
+              "edy",
+              2
+            ],
+            [
+              "s",
+              2
+            ]
+          ],
+          "fl_initial": 1,
+          "fl_late": 1,
+          "fl_terminal": 1,
+          "fl_initial_rate": 0.05263157894736842,
+          "fl_late_rate": 0.05263157894736842,
+          "fl_terminal_rate": 0.05263157894736842
+        },
+        {
+          "number": 6,
+          "position": "late",
+          "tokens": 19,
+          "unique_middles": 17,
+          "gallows_rate": 0.10526315789473684,
+          "top_prefixes": [
+            [
+              "qo",
+              4
+            ],
+            [
+              "ch",
+              3
+            ],
+            [
+              "da",
+              2
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "edy",
+              4
+            ],
+            [
+              "al",
+              2
+            ],
+            [
+              "hy",
+              1
+            ]
+          ],
+          "fl_initial": 1,
+          "fl_late": 2,
+          "fl_terminal": 2,
+          "fl_initial_rate": 0.05263157894736842,
+          "fl_late_rate": 0.10526315789473684,
+          "fl_terminal_rate": 0.10526315789473684
+        },
+        {
+          "number": 7,
+          "position": "late",
+          "tokens": 31,
+          "unique_middles": 29,
+          "gallows_rate": 0.0967741935483871,
+          "top_prefixes": [
+            [
+              "qo",
+              6
+            ],
+            [
+              "ch",
+              3
+            ],
+            [
+              "pch",
+              2
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "edy",
+              6
+            ],
+            [
+              "r",
+              4
+            ],
+            [
+              "aiin",
+              3
+            ]
+          ],
+          "fl_initial": 5,
+          "fl_late": 3,
+          "fl_terminal": 4,
+          "fl_initial_rate": 0.16129032258064516,
+          "fl_late_rate": 0.0967741935483871,
+          "fl_terminal_rate": 0.12903225806451613
+        },
+        {
+          "number": 8,
+          "position": "late",
+          "tokens": 76,
+          "unique_middles": 43,
+          "gallows_rate": 0.10526315789473684,
+          "top_prefixes": [
+            [
+              "ot",
+              12
+            ],
+            [
+              "qo",
+              6
+            ],
+            [
+              "ch",
+              5
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "r",
+              6
+            ],
+            [
+              "aiin",
+              5
+            ],
+            [
+              "dy",
+              3
+            ]
+          ],
+          "fl_initial": 8,
+          "fl_late": 8,
+          "fl_terminal": 8,
+          "fl_initial_rate": 0.10526315789473684,
+          "fl_late_rate": 0.10526315789473684,
+          "fl_terminal_rate": 0.10526315789473684
+        }
+      ],
+      "fl_by_position": {
+        "early": {
+          "INITIAL": 0.04878048780487805,
+          "LATE": 0.11382113821138211,
+          "TERMINAL": 0.15447154471544716,
+          "n_tokens": 123
+        },
+        "middle": {
+          "INITIAL": 0.0743801652892562,
+          "LATE": 0.12396694214876033,
+          "TERMINAL": 0.11570247933884298,
+          "n_tokens": 121
+        },
+        "late": {
+          "INITIAL": 0.1111111111111111,
+          "LATE": 0.10317460317460317,
+          "TERMINAL": 0.1111111111111111,
+          "n_tokens": 126
+        }
+      },
+      "vocabulary_progression": {
+        "P1_to_P2": 0.41935483870967744,
+        "P1_to_P3": 0.3225806451612903,
+        "P1_to_P4": 0.5806451612903226,
+        "P1_to_P5": 0.22580645161290322,
+        "P1_to_P6": 0.22580645161290322,
+        "P1_to_P7": 0.2903225806451613,
+        "P1_to_P8": 0.4838709677419355
+      }
+    },
+    {
+      "folio": "f41v",
+      "n_paragraphs": 3,
+      "paragraphs": [
+        {
+          "number": 1,
+          "position": "early",
+          "tokens": 1,
+          "unique_middles": 1,
+          "gallows_rate": 1.0,
+          "top_prefixes": [
+            [
+              "ke",
+              1
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "al",
+              1
+            ]
+          ],
+          "fl_initial": 0,
+          "fl_late": 1,
+          "fl_terminal": 0,
+          "fl_initial_rate": 0.0,
+          "fl_late_rate": 1.0,
+          "fl_terminal_rate": 0.0
+        },
+        {
+          "number": 2,
+          "position": "middle",
+          "tokens": 43,
+          "unique_middles": 30,
+          "gallows_rate": 0.06976744186046512,
+          "top_prefixes": [
+            [
+              "qo",
+              7
+            ],
+            [
+              "ok",
+              5
+            ],
+            [
+              "ch",
+              4
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "dy",
+              8
+            ],
+            [
+              "y",
+              4
+            ],
+            [
+              "ey",
+              2
+            ]
+          ],
+          "fl_initial": 1,
+          "fl_late": 2,
+          "fl_terminal": 12,
+          "fl_initial_rate": 0.023255813953488372,
+          "fl_late_rate": 0.046511627906976744,
+          "fl_terminal_rate": 0.27906976744186046
+        },
+        {
+          "number": 3,
+          "position": "late",
+          "tokens": 24,
+          "unique_middles": 16,
+          "gallows_rate": 0.041666666666666664,
+          "top_prefixes": [
+            [
+              "ok",
+              4
+            ],
+            [
+              "ch",
+              3
+            ],
+            [
+              "ol",
+              3
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "dy",
+              3
+            ],
+            [
+              "al",
+              2
+            ],
+            [
+              "aiin",
+              1
+            ]
+          ],
+          "fl_initial": 0,
+          "fl_late": 3,
+          "fl_terminal": 3,
+          "fl_initial_rate": 0.0,
+          "fl_late_rate": 0.125,
+          "fl_terminal_rate": 0.125
+        }
+      ],
+      "fl_by_position": {
+        "early": {
+          "INITIAL": 0.0,
+          "LATE": 1.0,
+          "TERMINAL": 0.0,
+          "n_tokens": 1
+        },
+        "middle": {
+          "INITIAL": 0.023255813953488372,
+          "LATE": 0.046511627906976744,
+          "TERMINAL": 0.27906976744186046,
+          "n_tokens": 43
+        },
+        "late": {
+          "INITIAL": 0.0,
+          "LATE": 0.125,
+          "TERMINAL": 0.125,
+          "n_tokens": 24
+        }
+      },
+      "vocabulary_progression": {
+        "P1_to_P2": 0.0,
+        "P1_to_P3": 0.0
+      }
+    },
+    {
+      "folio": "f43r",
+      "n_paragraphs": 5,
+      "paragraphs": [
+        {
+          "number": 1,
+          "position": "early",
+          "tokens": 59,
+          "unique_middles": 35,
+          "gallows_rate": 0.0847457627118644,
+          "top_prefixes": [
+            [
+              "da",
+              9
+            ],
+            [
+              "ch",
+              7
+            ],
+            [
+              "ot",
+              6
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "dy",
+              9
+            ],
+            [
+              "y",
+              5
+            ],
+            [
+              "ar",
+              4
+            ]
+          ],
+          "fl_initial": 5,
+          "fl_late": 2,
+          "fl_terminal": 14,
+          "fl_initial_rate": 0.0847457627118644,
+          "fl_late_rate": 0.03389830508474576,
+          "fl_terminal_rate": 0.23728813559322035
+        },
+        {
+          "number": 2,
+          "position": "early",
+          "tokens": 5,
+          "unique_middles": 4,
+          "gallows_rate": 0.2,
+          "top_prefixes": [
+            [
+              "ch",
+              3
+            ],
+            [
+              "kch",
+              1
+            ],
+            [
+              "da",
+              1
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "dy",
+              1
+            ],
+            [
+              "hy",
+              1
+            ]
+          ],
+          "fl_initial": 0,
+          "fl_late": 0,
+          "fl_terminal": 1,
+          "fl_initial_rate": 0.0,
+          "fl_late_rate": 0.0,
+          "fl_terminal_rate": 0.2
+        },
+        {
+          "number": 3,
+          "position": "middle",
+          "tokens": 29,
+          "unique_middles": 20,
+          "gallows_rate": 0.1724137931034483,
+          "top_prefixes": [
+            [
+              "sh",
+              7
+            ],
+            [
+              "ch",
+              5
+            ],
+            [
+              "ot",
+              2
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "dy",
+              3
+            ],
+            [
+              "y",
+              2
+            ],
+            [
+              "ar",
+              1
+            ]
+          ],
+          "fl_initial": 2,
+          "fl_late": 0,
+          "fl_terminal": 5,
+          "fl_initial_rate": 0.06896551724137931,
+          "fl_late_rate": 0.0,
+          "fl_terminal_rate": 0.1724137931034483
+        },
+        {
+          "number": 4,
+          "position": "late",
+          "tokens": 39,
+          "unique_middles": 22,
+          "gallows_rate": 0.07692307692307693,
+          "top_prefixes": [
+            [
+              "sh",
+              9
+            ],
+            [
+              "qo",
+              8
+            ],
+            [
+              "ot",
+              5
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "dy",
+              10
+            ],
+            [
+              "y",
+              4
+            ],
+            [
+              "edy",
+              3
+            ]
+          ],
+          "fl_initial": 2,
+          "fl_late": 2,
+          "fl_terminal": 14,
+          "fl_initial_rate": 0.05128205128205128,
+          "fl_late_rate": 0.05128205128205128,
+          "fl_terminal_rate": 0.358974358974359
+        },
+        {
+          "number": 5,
+          "position": "late",
+          "tokens": 18,
+          "unique_middles": 18,
+          "gallows_rate": 0.05555555555555555,
+          "top_prefixes": [
+            [
+              "ch",
+              5
+            ],
+            [
+              "sh",
+              3
+            ],
+            [
+              "qo",
+              2
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "hy",
+              6
+            ],
+            [
+              "edy",
+              2
+            ],
+            [
+              "dy",
+              2
+            ]
+          ],
+          "fl_initial": 1,
+          "fl_late": 1,
+          "fl_terminal": 2,
+          "fl_initial_rate": 0.05555555555555555,
+          "fl_late_rate": 0.05555555555555555,
+          "fl_terminal_rate": 0.1111111111111111
+        }
+      ],
+      "fl_by_position": {
+        "early": {
+          "INITIAL": 0.078125,
+          "LATE": 0.03125,
+          "TERMINAL": 0.234375,
+          "n_tokens": 64
+        },
+        "middle": {
+          "INITIAL": 0.06896551724137931,
+          "LATE": 0.0,
+          "TERMINAL": 0.1724137931034483,
+          "n_tokens": 29
+        },
+        "late": {
+          "INITIAL": 0.05263157894736842,
+          "LATE": 0.05263157894736842,
+          "TERMINAL": 0.2807017543859649,
+          "n_tokens": 57
+        }
+      },
+      "vocabulary_progression": {
+        "P1_to_P2": 0.02857142857142857,
+        "P1_to_P3": 0.22857142857142856,
+        "P1_to_P4": 0.34285714285714286,
+        "P1_to_P5": 0.14285714285714285
+      }
+    },
+    {
+      "folio": "f46r",
+      "n_paragraphs": 7,
+      "paragraphs": [
+        {
+          "number": 1,
+          "position": "early",
+          "tokens": 37,
+          "unique_middles": 26,
+          "gallows_rate": 0.02702702702702703,
+          "top_prefixes": [
+            [
+              "sh",
+              10
+            ],
+            [
+              "da",
+              7
+            ],
+            [
+              "qo",
+              4
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "hy",
+              4
+            ],
+            [
+              "y",
+              2
+            ],
+            [
+              "aiin",
+              2
+            ]
+          ],
+          "fl_initial": 1,
+          "fl_late": 3,
+          "fl_terminal": 2,
+          "fl_initial_rate": 0.02702702702702703,
+          "fl_late_rate": 0.08108108108108109,
+          "fl_terminal_rate": 0.05405405405405406
+        },
+        {
+          "number": 2,
+          "position": "early",
+          "tokens": 20,
+          "unique_middles": 14,
+          "gallows_rate": 0.1,
+          "top_prefixes": [
+            [
+              "sh",
+              6
+            ],
+            [
+              "ch",
+              6
+            ],
+            [
+              "qo",
+              2
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "hy",
+              3
+            ],
+            [
+              "y",
+              3
+            ],
+            [
+              "dy",
+              2
+            ]
+          ],
+          "fl_initial": 2,
+          "fl_late": 1,
+          "fl_terminal": 5,
+          "fl_initial_rate": 0.1,
+          "fl_late_rate": 0.05,
+          "fl_terminal_rate": 0.25
+        },
+        {
+          "number": 3,
+          "position": "middle",
+          "tokens": 37,
+          "unique_middles": 26,
+          "gallows_rate": 0.05405405405405406,
+          "top_prefixes": [
+            [
+              "ch",
+              11
+            ],
+            [
+              "sh",
+              6
+            ],
+            [
+              "qo",
+              3
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "dy",
+              3
+            ],
+            [
+              "edy",
+              2
+            ],
+            [
+              "or",
+              2
+            ]
+          ],
+          "fl_initial": 3,
+          "fl_late": 2,
+          "fl_terminal": 5,
+          "fl_initial_rate": 0.08108108108108109,
+          "fl_late_rate": 0.05405405405405406,
+          "fl_terminal_rate": 0.13513513513513514
+        },
+        {
+          "number": 4,
+          "position": "middle",
+          "tokens": 13,
+          "unique_middles": 10,
+          "gallows_rate": 0.38461538461538464,
+          "top_prefixes": [
+            [
+              "sh",
+              4
+            ],
+            [
+              "kch",
+              1
+            ],
+            [
+              "ta",
+              1
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "y",
+              2
+            ],
+            [
+              "edy",
+              1
+            ],
+            [
+              "dy",
+              1
+            ]
+          ],
+          "fl_initial": 0,
+          "fl_late": 1,
+          "fl_terminal": 4,
+          "fl_initial_rate": 0.0,
+          "fl_late_rate": 0.07692307692307693,
+          "fl_terminal_rate": 0.3076923076923077
+        },
+        {
+          "number": 5,
+          "position": "middle",
+          "tokens": 9,
+          "unique_middles": 8,
+          "gallows_rate": 0.1111111111111111,
+          "top_prefixes": [
+            [
+              "sh",
+              3
+            ],
+            [
+              "ch",
+              2
+            ],
+            [
+              "tch",
+              1
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "dy",
+              2
+            ],
+            [
+              "al",
+              1
+            ],
+            [
+              "r",
+              1
+            ]
+          ],
+          "fl_initial": 1,
+          "fl_late": 1,
+          "fl_terminal": 2,
+          "fl_initial_rate": 0.1111111111111111,
+          "fl_late_rate": 0.1111111111111111,
+          "fl_terminal_rate": 0.2222222222222222
+        },
+        {
+          "number": 6,
+          "position": "late",
+          "tokens": 10,
+          "unique_middles": 10,
+          "gallows_rate": 0.1,
+          "top_prefixes": [
+            [
+              "sh",
+              4
+            ],
+            [
+              "pch",
+              1
+            ],
+            [
+              "qo",
+              1
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "dy",
+              3
+            ],
+            [
+              "edy",
+              2
+            ],
+            [
+              "r",
+              1
+            ]
+          ],
+          "fl_initial": 2,
+          "fl_late": 1,
+          "fl_terminal": 3,
+          "fl_initial_rate": 0.2,
+          "fl_late_rate": 0.1,
+          "fl_terminal_rate": 0.3
+        },
+        {
+          "number": 7,
+          "position": "late",
+          "tokens": 31,
+          "unique_middles": 26,
+          "gallows_rate": 0.06451612903225806,
+          "top_prefixes": [
+            [
+              "ch",
+              7
+            ],
+            [
+              "sh",
+              6
+            ],
+            [
+              "da",
+              3
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "hy",
+              4
+            ],
+            [
+              "am",
+              3
+            ],
+            [
+              "ar",
+              3
+            ]
+          ],
+          "fl_initial": 3,
+          "fl_late": 2,
+          "fl_terminal": 5,
+          "fl_initial_rate": 0.0967741935483871,
+          "fl_late_rate": 0.06451612903225806,
+          "fl_terminal_rate": 0.16129032258064516
+        }
+      ],
+      "fl_by_position": {
+        "early": {
+          "INITIAL": 0.05263157894736842,
+          "LATE": 0.07017543859649122,
+          "TERMINAL": 0.12280701754385964,
+          "n_tokens": 57
+        },
+        "middle": {
+          "INITIAL": 0.06779661016949153,
+          "LATE": 0.06779661016949153,
+          "TERMINAL": 0.1864406779661017,
+          "n_tokens": 59
+        },
+        "late": {
+          "INITIAL": 0.12195121951219512,
+          "LATE": 0.07317073170731707,
+          "TERMINAL": 0.1951219512195122,
+          "n_tokens": 41
+        }
+      },
+      "vocabulary_progression": {
+        "P1_to_P2": 0.23076923076923078,
+        "P1_to_P3": 0.34615384615384615,
+        "P1_to_P4": 0.15384615384615385,
+        "P1_to_P5": 0.07692307692307693,
+        "P1_to_P6": 0.07692307692307693,
+        "P1_to_P7": 0.3076923076923077
+      }
+    },
+    {
+      "folio": "f46v",
+      "n_paragraphs": 3,
+      "paragraphs": [
+        {
+          "number": 1,
+          "position": "early",
+          "tokens": 63,
+          "unique_middles": 35,
+          "gallows_rate": 0.09523809523809523,
+          "top_prefixes": [
+            [
+              "ch",
+              10
+            ],
+            [
+              "da",
+              7
+            ],
+            [
+              "ok",
+              6
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "dy",
+              8
+            ],
+            [
+              "edy",
+              4
+            ],
+            [
+              "y",
+              3
+            ]
+          ],
+          "fl_initial": 4,
+          "fl_late": 4,
+          "fl_terminal": 11,
+          "fl_initial_rate": 0.06349206349206349,
+          "fl_late_rate": 0.06349206349206349,
+          "fl_terminal_rate": 0.1746031746031746
+        },
+        {
+          "number": 2,
+          "position": "middle",
+          "tokens": 36,
+          "unique_middles": 26,
+          "gallows_rate": 0.027777777777777776,
+          "top_prefixes": [
+            [
+              "ch",
+              10
+            ],
+            [
+              "qo",
+              4
+            ],
+            [
+              "da",
+              4
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "edy",
+              5
+            ],
+            [
+              "dy",
+              3
+            ],
+            [
+              "y",
+              3
+            ]
+          ],
+          "fl_initial": 3,
+          "fl_late": 0,
+          "fl_terminal": 6,
+          "fl_initial_rate": 0.08333333333333333,
+          "fl_late_rate": 0.0,
+          "fl_terminal_rate": 0.16666666666666666
+        },
+        {
+          "number": 3,
+          "position": "late",
+          "tokens": 12,
+          "unique_middles": 9,
+          "gallows_rate": 0.08333333333333333,
+          "top_prefixes": [
+            [
+              "ch",
+              5
+            ],
+            [
+              "ot",
+              2
+            ],
+            [
+              "da",
+              2
+            ]
+          ],
+          "top_suffixes": [
+            [
+              "am",
+              2
+            ],
+            [
+              "ey",
+              1
+            ],
+            [
+              "r",
+              1
+            ]
+          ],
+          "fl_initial": 1,
+          "fl_late": 0,
+          "fl_terminal": 2,
+          "fl_initial_rate": 0.08333333333333333,
+          "fl_late_rate": 0.0,
+          "fl_terminal_rate": 0.16666666666666666
+        }
+      ],
+      "fl_by_position": {
+        "early": {
+          "INITIAL": 0.06349206349206349,
+          "LATE": 0.06349206349206349,
+          "TERMINAL": 0.1746031746031746,
+          "n_tokens": 63
+        },
+        "middle": {
+          "INITIAL": 0.08333333333333333,
+          "LATE": 0.0,
+          "TERMINAL": 0.16666666666666666,
+          "n_tokens": 36
+        },
+        "late": {
+          "INITIAL": 0.08333333333333333,
+          "LATE": 0.0,
+          "TERMINAL": 0.16666666666666666,
+          "n_tokens": 12
+        }
+      },
+      "vocabulary_progression": {
+        "P1_to_P2": 0.34285714285714286,
+        "P1_to_P3": 0.14285714285714285
+      }
+    }
+  ]
+}

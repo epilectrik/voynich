@@ -1,0 +1,76 @@
+{
+  "test": "SEQUENTIAL_COHERENCE",
+  "n_paragraphs": 342,
+  "cluster_distribution": {
+    "LINKER_RICH": 87,
+    "MIDDLE_RI_ONLY": 58,
+    "NO_RI": 53,
+    "STANDARD": 82,
+    "SHORT_RI_HEAVY": 62
+  },
+  "coherence_by_type": {
+    "LINKER_RICH": {
+      "prefix_continuity": 0.17092535134014744,
+      "middle_repetition": 0.1435664268158776,
+      "cond_entropy": 0.22266843147964446,
+      "unique_ratio": 0.9000277372098557,
+      "n": 87
+    },
+    "MIDDLE_RI_ONLY": {
+      "prefix_continuity": 0.2117058595412591,
+      "middle_repetition": 0.16130984033971113,
+      "cond_entropy": 0.21592974977507923,
+      "unique_ratio": 0.8950507844578082,
+      "n": 58
+    },
+    "NO_RI": {
+      "prefix_continuity": 0.18112359249737667,
+      "middle_repetition": 0.19896903079459863,
+      "cond_entropy": 0.1529309097670373,
+      "unique_ratio": 0.9254642326107398,
+      "n": 45
+    },
+    "STANDARD": {
+      "prefix_continuity": 0.19863828768556666,
+      "middle_repetition": 0.15516187011597146,
+      "cond_entropy": 0.19028429862850443,
+      "unique_ratio": 0.9066281629339347,
+      "n": 82
+    },
+    "SHORT_RI_HEAVY": {
+      "prefix_continuity": 0.14801501019988414,
+      "middle_repetition": 0.2344906114359619,
+      "cond_entropy": 0.08074638654995799,
+      "unique_ratio": 0.9592683963537564,
+      "n": 56
+    }
+  },
+  "high_coherence_examples": [
+    {
+      "folio": "f2v",
+      "cluster_type": "MIDDLE_RI_ONLY",
+      "prefix_continuity": 0.55
+    },
+    {
+      "folio": "f25r",
+      "cluster_type": "NO_RI",
+      "prefix_continuity": 1.0
+    },
+    {
+      "folio": "f42v",
+      "cluster_type": "NO_RI",
+      "prefix_continuity": 0.6666666666666666
+    },
+    {
+      "folio": "f49v",
+      "cluster_type": "STANDARD",
+      "prefix_continuity": 0.5172413793103449
+    },
+    {
+      "folio": "f102v1",
+      "cluster_type": "MIDDLE_RI_ONLY",
+      "prefix_continuity": 0.6666666666666666
+    }
+  ],
+  "verdict": "MEASUREMENT_ARTIFACTS"
+}

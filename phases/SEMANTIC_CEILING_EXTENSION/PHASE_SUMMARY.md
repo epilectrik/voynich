@@ -15,7 +15,7 @@
 | Test | Question | Verdict | Significance |
 |------|----------|---------|--------------|
 | 2A | Do B programs share temporal hazard trajectories? | BORDERLINE_ARCHETYPES | p=0.062, 14/15 share PEAK_MID |
-| 1A | Does B behavior constrain upstream A zones? | STRONG_DIFFERENTIATION | p<0.0001, high-escape -> +10.4% P-zone |
+| 1A | Does B behavior constrain upstream A zones? | STRONG_DIFFERENTIATION | p<0.0001, high qo-density -> +10.4% P-text |
 | 3A | Is the e-operator structurally necessary? | E_NECESSARY | Kernel contact collapses -98.6% |
 | 3B | Is hazard asymmetry architecturally necessary? | ASYMMETRY_NECESSARY | h->k perfectly suppressed (0%) |
 | 1B | Does HT correlate with zone diversity? | HT_ZONE_CORRELATED | r=0.24, p=0.0006 |
@@ -39,11 +39,14 @@
 **Question:** Given distinctive B behaviors, what MIDDLE zones must have been active upstream?
 
 **Result:**
-- High-escape folios use +10.4% more P-zone MIDDLEs (p<0.0001)
+- High qo-density folios use +10.4% more P-text MIDDLEs (p<0.0001)
 - High-hazard and high-link folios show zone differentiation (p<0.05)
 - Option space narrowing: 24% (reduced from 4 zones to ~3)
 
-**Interpretation:** B-regime behavior successfully constrains A-layer inference. Escape-heavy programs preferentially draw from P-zone (peripheral) materials.
+**Interpretation:** B-regime behavior successfully constrains A-layer inference. High qo-density programs (energy-intensive) preferentially draw from P-text (Currier A paragraph) vocabulary.
+
+> **TERMINOLOGY NOTE (2026-01-31):** Original test used "escape" to mean qo_density.
+> Per C397/C398 revision, qo is the energy lane operating hazard-DISTANT, not an escape mechanism.
 
 ### Test 3A: Remove e (NECESSARY)
 
@@ -114,7 +117,7 @@
 
 1. **e-operator is load-bearing** - Grammar collapses without stability anchor
 2. **Hazard asymmetry is load-bearing** - h->k suppression prevents oscillation
-3. **B behavior constrains A inference** - Escape profile maps to P-zone preference
+3. **B behavior constrains A inference** - QO-density maps to P-text vocabulary preference
 4. **HT tracks operational load** - Predicts strategy viability and zone diversity
 
 ### New Interpretive Support (Tier 3)
@@ -174,5 +177,5 @@ All findings remain **Tier 3/4 exploratory**. Results:
 ## Recommended Follow-Up
 
 1. **Test 2A replication** - Run on larger folio set to confirm/reject PEAK_MID archetype
-2. **P-zone investigation** - Why do escape-heavy programs prefer peripheral materials?
+2. **P-text investigation** - Why do high qo-density programs prefer P-text vocabulary?
 3. **HT-strategy mechanism** - What about HT tracks this operational load?

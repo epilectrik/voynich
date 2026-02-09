@@ -1,0 +1,26 @@
+{
+  "linker_occurrences": {
+    "ctho": 15,
+    "cthody": 16,
+    "qokoiiin": 2,
+    "ctheody": 6
+  },
+  "source_folio_count": 29,
+  "source_mean_ri_ratio": 0.07372931672066506,
+  "dest_mean_ri_ratio": 0.10718017614569339,
+  "flow_result": "NEUTRAL",
+  "linker_by_section": {
+    "H": 33,
+    "P": 6
+  },
+  "destinations": {
+    "f93v": {
+      "section": "H",
+      "ri_ratio": 0.14942528735632185
+    },
+    "f32r": {
+      "section": "H",
+      "ri_ratio": 0.06493506493506493
+    }
+  }
+}

@@ -44,6 +44,21 @@ Currier A functions as a non-sequential categorical registry - analogous to a pa
 - C229 - A is DISJOINT from B grammar
 - C233-239 - Defining property details
 - C267 - Compositional morphology (897 combinations)
+- C913-C916 - RI derivational system explains the indexing mechanism
+
+---
+
+## RI Instance Identification (C916)
+
+The registry function is implemented via **RI derivational morphology**:
+
+| Vocabulary | Function | Granularity |
+|------------|----------|-------------|
+| PP (shared with B) | Category reference | General |
+| RI (PP + extension) | Instance identification | Specific |
+
+Labels are 3.7x RI-enriched because they point to specific illustrated items.
+See C916 for the complete functional model.
 
 ---
 

@@ -1,0 +1,100 @@
+{
+  "top_predecessors": [
+    [
+      "daiin",
+      8
+    ],
+    [
+      "aiin",
+      8
+    ],
+    [
+      "chedy",
+      6
+    ],
+    [
+      "ar",
+      5
+    ],
+    [
+      "ol",
+      5
+    ],
+    [
+      "otedy",
+      4
+    ],
+    [
+      "or",
+      4
+    ],
+    [
+      "qokain",
+      4
+    ],
+    [
+      "otar",
+      4
+    ],
+    [
+      "dar",
+      4
+    ],
+    [
+      "qokar",
+      4
+    ],
+    [
+      "qokaiin",
+      4
+    ],
+    [
+      "cheky",
+      3
+    ],
+    [
+      "otal",
+      3
+    ],
+    [
+      "oty",
+      3
+    ],
+    [
+      "shedy",
+      3
+    ],
+    [
+      "qokeedy",
+      3
+    ],
+    [
+      "shey",
+      3
+    ],
+    [
+      "ain",
+      3
+    ],
+    [
+      "oky",
+      2
+    ]
+  ],
+  "fixed_collocations": [],
+  "next_line_roles": {
+    "ENERGY_OPERATOR": 26,
+    "UNKNOWN": 71,
+    "AUXILIARY": 59,
+    "FREQUENT_OPERATOR": 12,
+    "CORE_CONTROL": 6,
+    "FLOW_OPERATOR": 6
+  },
+  "section_totals": {
+    "H": 57,
+    "T": 10,
+    "B": 77,
+    "C": 26,
+    "S": 83
+  }
+}

@@ -1,0 +1,12 @@
+{
+  "observed_linking_tokens": 129,
+  "observed_edges": 2188,
+  "null_mean_linking": 129.0,
+  "null_std_linking": 0.0,
+  "null_mean_edges": 2188.0,
+  "null_std_edges": 0.0,
+  "z_linking": NaN,
+  "z_edges": NaN,
+  "p_linking": 2.0,
+  "p_edges": 2.0
+}

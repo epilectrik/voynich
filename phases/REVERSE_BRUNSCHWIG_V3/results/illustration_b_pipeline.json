@@ -1,0 +1,20 @@
+{
+  "phase": "PROCEDURAL_DIMENSION_EXTENSION",
+  "test": "illustration_b_pipeline",
+  "tier": 4,
+  "methodology": "A->B pipeline tracing",
+  "sample_sizes": {
+    "root_illustrated_a_folios": 7,
+    "nonroot_illustrated_a_folios": 23,
+    "root_pp_bases": 141,
+    "nonroot_pp_bases": 274,
+    "b_root_sourced": 22,
+    "b_nonroot_sourced": 0
+  },
+  "correlation": {
+    "pearson_r": 0.36559709050941824,
+    "pearson_p": 0.0007314094476324428,
+    "spearman_rho": 0.3148545056533073,
+    "spearman_p": 0.003963934304869245
+  }
+}

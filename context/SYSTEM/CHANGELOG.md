@@ -4,6 +4,1020 @@
 
 ---
 
+## Version 3.10 (2026-02-03) - B Paragraph Structure Analysis
+
+### Summary
+
+Detailed line-by-line annotation of **10 Currier B folios** (~350 lines) revealed paragraph-level vocabulary distribution patterns. New section 0.M added to INTERPRETATION_SUMMARY.md documenting sequential paragraph structure, terminal vocabulary signature, and state transition marking.
+
+### Key Findings (Tier 3)
+
+| Finding | Evidence |
+|---------|----------|
+| **Sequential paragraph structure** | Vocabulary distribution correlates with folio position (early=HT-heavy, late=AX+FL-heavy) |
+| **Terminal vocabulary signature** | Late paragraphs show AX clustering + TERMINAL FL (-aly, -am) + SHORT lines |
+| **State transition brackets** | HT at BOTH line-initial AND line-final marks explicit X→Y transformation |
+| **FL STATE INDEX confirmation** | FL tokens (ar→al→aly) track material progression through folio |
+
+### Interpretation Strengthened
+
+The annotation work significantly strengthened the Brunschwig/distillation interpretation:
+- Paragraphs correspond to named operations (maceration, distillation, rectification)
+- Early identification → middle processing → late completion matches recipe structure
+- State transition brackets match material state tracking in distillation manuals
+
+### Files Updated
+
+- `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` - Version 4.56, Section 0.M added
+- `context/SYSTEM/CHANGELOG.md` - This entry
+
+### Annotated Folios
+
+First 5: f41v, f43r, f43v, f46r, f46v
+Next 5: f103r, f103v, f104r, f104v, f105r
+
+### Source
+
+Manual token-level annotation using pacemaker workflow (`scripts/annotate_next_line.py --mode b`)
+
+---
+
+## Version 3.09 (2026-02-01) - Token Annotation Findings
+
+### Summary
+
+Systematic token-by-token annotation of all **114 Currier A folios** (1,272+ lines) completed. Three new constraints document previously invisible patterns. Annotation data infrastructure added to context system.
+
+### New Constraints
+
+| # | Name | Finding |
+|---|------|---------|
+| C901 | Extended e Stability Gradient | e→ee→eee→eeee forms stability depth continuum; quadruple-e rare (11 folios), concentrated in late Currier A |
+| C902 | Late Currier A Register | f100-f102 show distinct characteristics: p/f-domain concentration, extended vowels, very short lines, morphological MONSTERS |
+| C903 | Prefix Rarity Gradient | Common→rare→very-rare→extremely-rare prefix distribution (ch/sh > ct > qk > qy) |
+
+### Constraint Refinement
+
+**C833 (RI First-Line Concentration):** Added refinement note that 50% of folios have RI outside L1, establishing this as a preference rather than a requirement.
+
+### New Data Files Documented
+
+| File | Purpose |
+|------|---------|
+| `data/token_dictionary.json` | Token-level annotations with morphology, distribution, notes |
+| `data/folio_notes.json` | Folio-level observations from systematic annotation |
+| `data/annotation_progress.json` | Pacemaker script progress tracking |
+
+Documentation added to `DATA/TRANSCRIPT_ARCHITECTURE.md` with usage examples.
+
+### Expert Analysis Findings
+
+Key patterns identified across 114 folios:
+
+- **Doubled patterns**: 81 folios (71%)
+- **Short lines**: 70 folios (61%)
+- **QO concentration**: 64 folios (56%)
+- **C833 flags (non-L1 RI)**: 57 folios (50%)
+- **P-domain markers**: 51 folios (45%)
+- **Linkers**: 47 folios (41%)
+- **Triple e patterns**: 41 folios (36%)
+- **Quadruple e patterns**: 11 folios (10%)
+- **Rare qk-prefix**: 9 folios (8%)
+- **Extremely rare qy-prefix**: 3 folios (3%)
+
+### Files Updated
+
+- `context/CLAIMS/INDEX.md` - Version 3.22, 768 constraints
+- `context/CLAUDE_INDEX.md` - Version 3.09, constraint count updated
+- `context/DATA/TRANSCRIPT_ARCHITECTURE.md` - Annotation data section added
+- `context/CLAIMS/C833_ri_first_line_concentration.md` - Refinement added
+- `context/CONSTRAINT_TABLE.txt` - Regenerated
+- `context/MODEL_FITS/FIT_TABLE.txt` - Regenerated
+- `.claude/agents/expert-advisor.md` - Regenerated with new constraints
+
+### Cross-References
+
+C901, C902, C903, C833 (refined), TOKEN_ANNOTATION_BATCH_11 phase
+
+---
+
+## Version 3.00 (2026-01-31) - Kernel Layer Clarification
+
+### Summary
+
+**Major clarification:** k, h, e "kernel" characters operate at CONSTRUCTION level (within-token morphology), not EXECUTION level (token-to-token sequencing). The 17 "forbidden transitions" operate at CLASS level, not k/h/e character level. These are INDEPENDENT constraint systems.
+
+### KERNEL_STATE_SEMANTICS Phase Findings
+
+| Test | Finding |
+|------|---------|
+| T1-T6 | Between-token k/h/e transitions are UNIFORM (O/E 0.87-1.21) |
+| T7 | Class-level transitions show STRONG structure (O/E 0.20-7.31) |
+| T9 | Within-token k/h/e transitions confirm C521 (5/5 claims) |
+| T10 | k/h/e content does NOT predict forbidden transition participation |
+
+### Key Discovery
+
+Two independent constraint systems share the same symbol substrate:
+1. **CONSTRUCTION layer (C521):** Within-token k→h→e ordering with strong asymmetry
+2. **EXECUTION layer (C109):** Class-level forbidden transitions operating on instruction classes
+
+C522 (layer independence) CONFIRMED with additional evidence.
+
+### Files Updated
+
+**BCSC v2.0:**
+- KERNEL_CENTRALITY guarantee: Reframed from "control core" to "morphological core"
+- kernel_boundary_adjacency invariant: Clarified as correlational, not causal
+- kernel section: Added scope note that operators describe morphological contribution, not execution state
+
+**Constraints:**
+- C107: Added scope clarification (correlational not causal)
+- C522: Added KERNEL_STATE_SEMANTICS evidence table
+
+**Metrics:**
+- hazard_metrics.md: Added scope note on class-level vs character-level
+
+### Cross-References
+
+C107, C109, C521, C522, KERNEL_STATE_SEMANTICS phase
+
+---
+
+## Version 2.99 (2026-01-31) - Escape Terminology Revision
+
+### Summary
+
+**Major terminology correction:** "Escape routes" (C397/C398) reframed as "lane transitions."
+
+### Problem Identified
+
+The HAV phase (C397-C398) introduced "escape" terminology that was later contradicted:
+- C397 claimed "qo-prefix = escape route" after hazard sources
+- But C645 shows CHSH dominates post-hazard (75.2%), QO is depleted (0.55x)
+- C601 shows QO has zero hazard participation (0/19)
+- The "escape to energy" framing was backwards
+
+### Correct Model
+
+| Lane | Kernel | Hazard Role |
+|------|--------|-------------|
+| CHSH | e-rich (68.7%) | Handles hazard-adjacent contexts, recovery |
+| QO | k-rich (70.7%) | Operates hazard-distant, depleted near hazards |
+
+What C397/C398 actually measured: the normal CHSH→QO lane transition pattern (C643), not escape.
+
+### Files Updated
+
+- `phases/HAV_hazard_avoidance/summary.md` - Revised interpretation
+- `context/CLAIMS/morphology.md` - C397/C398 descriptions corrected
+- `context/CONSTRAINT_TABLE.txt` - C397/C398 entries updated
+- `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml` - Recovery section rewritten
+- `context/METRICS/hazard_metrics.md` - Escape section replaced
+
+### Cross-References
+
+C601 (QO zero hazard), C643 (QO-CHSH alternation), C645 (CHSH post-hazard dominance)
+
+---
+
+## Version 2.98 (2026-01-31) - P-TEXT FOLIO ANALYSIS Phase
+
+### Summary
+
+Investigated why P-text appears on 9 specific AZC folios and discovered it represents a **privileged Currier A vocabulary subset** with high transmission to B.
+
+### Key Findings
+
+| Finding | Value |
+|---------|-------|
+| P-text folios | 9 of 29 AZC folios (f65v-f70r2) |
+| P-text to B transmission | **76.7%** (vs 39.9% for general A) |
+| Same-folio Jaccard | 0.195 (vs 0.040 baseline) |
+| Correlation with B TTR | r=0.524, p<0.0001 |
+
+### Interpretation
+
+P-text is not "A text on AZC folios" but a **privileged vocabulary subset** that:
+- Has high transmission to B execution
+- Correlates with high qo-density B folios (vocabulary diversity)
+- Has content relationship to same-folio diagrams
+
+### Constraints Updated
+
+- **C492**: Added reframing note - "P-zone" → "P-text (Currier A paragraph)"
+- **C486**: Added reframing note - strengthened by vocabulary-based interpretation
+
+### Anomaly Noted
+
+f65v is 100% P-text with 0 diagram tokens - unique among AZC folios.
+
+---
+
+## Version 2.97 (2026-01-31) - P Position Clarification
+
+### Summary
+
+Audited and corrected context system to clarify that **P (Paragraph) is NOT an AZC diagram position**. P is paragraph text that appears on AZC folios but is physically separate from the circular diagrams.
+
+### Authoritative Source
+
+From `context/ARCHITECTURE/azc_transcript_encoding.md`:
+
+| Code | Physical Meaning |
+|------|------------------|
+| R, R1-R4 | Ring text (concentric circles) |
+| S, S0-S3 | Star/spoke OR nymph-interrupted ring |
+| C, C1-C2 | Circle text (continuous ring) |
+| **P** | **Paragraph (separate from diagram)** |
+
+### Files Updated
+
+- `azc_activation.act.yaml`: Removed P from positional zones; added clarification
+- `fits_azc.md`: Removed P from workflow phase table; added clarification notes
+- `AZC_POSITION_VOCABULARY/README.md`: Labeled P as "(not diagram)" throughout
+- `azc_system.md`: Updated C443 to focus on diagram positions (C, R, S)
+- `CHANGELOG.md`: Fixed v2.96 entry which incorrectly listed P
+
+---
+
+## Version 2.96 (2026-01-31) - AZC Terminology Cleanup
+
+### Summary
+
+Fixed pervasive "filter/gate/route" language that incorrectly implied AZC actively affects execution. AZC is a static positional encoding: each PREFIX+MIDDLE has ONE fixed position, and position reflects vocabulary character, not causal effect.
+
+### Correct Model
+
+**AZC is NOT:**
+- A filter that selects/blocks tokens
+- A gate that controls execution flow
+- A router that directs content
+- An active transformation layer
+
+**AZC IS:**
+- A static lookup table (PREFIX+MIDDLE → position)
+- A vocabulary classifier (position reflects operational character)
+- A positional encoding (each token type has one fixed position)
+
+### Key Finding (AZC_POSITION_VOCABULARY Phase)
+
+AZC **diagram** position vocabulary signatures (C, R, S only - P is paragraph text, not diagram):
+
+| Position | Character | Indicators |
+|----------|-----------|------------|
+| S-series | Stabilization | Highest AX% (35-45%), highest ok/ot% (41-45%), lowest EN% |
+| R-series | Processing | Balanced profile, interior positions |
+| C | Core | Balanced |
+
+*P (Paragraph) is Currier A text on AZC folios, not a diagram position.*
+
+Position has NO independent effect beyond vocabulary composition (Test 4: 0/10 MIDDLEs showed position effect when controlling for MIDDLE).
+
+### Documentation Updates
+
+| File | Change |
+|------|--------|
+| phases/AZC_POSITION_VOCABULARY/ | New phase documenting position vocabulary analysis |
+| azc_activation.act.yaml | Replaced "gates/filters" → "encodes/groups" |
+| currier_AZC.md | "gates" → "encodes position" |
+| azc_system.md | "compatibility filter" → "compatibility grouping" |
+| C384a | "AZC legality routing" → "AZC positional encoding" |
+| C765 | "constrains execution" → "has characteristic B behavior" |
+| fits_azc.md | Multiple filter/gate references corrected |
+
+### Terminology Corrections
+
+| Wrong | Right |
+|-------|-------|
+| AZC gates | AZC encodes position |
+| AZC filters | AZC positions reflect |
+| compatibility filter | compatibility grouping |
+| AZC routes | AZC maps |
+| AZC constrains B execution | AZC vocabulary has characteristic B behavior |
+
+---
+
+## Version 2.95 (2026-01-31) - FL Terminology Disambiguation
+
+### Summary
+
+Added terminology disambiguation for "FL" which was being used for two different concepts:
+
+1. **FL (MIDDLE taxonomy)** - C777 material state index (~25% of tokens)
+2. **FLOW_OPERATOR (FO)** - 49-class behavioral role (4.7% of tokens)
+
+### Documentation Updates
+
+| File | Change |
+|------|--------|
+| TERMINOLOGY/fl_disambiguation.md | New file explaining the distinction |
+| C777_fl_state_index.md | Added terminology note |
+| currierB.bcsc.yaml | Added FO abbreviation and disambiguation note |
+| CLAIMS/INDEX.md | Added terminology note to FL section |
+
+### Why This Matters
+
+FL MIDDLEs (y, m, am, dy, r, l, etc.) appear in ~25% of all tokens across all 49 classes. FLOW_OPERATOR is a specific behavioral role with only 4.7% of tokens. Confusing them leads to incorrect analysis (e.g., expecting "FL rate" of 25% but seeing 4.7% when using 49-class role).
+
+---
+
+## Version 2.94 (2026-01-31) - A-B Within-Line Positional Correspondence
+
+### Summary
+
+Extended A_PP_INTERNAL_STRUCTURE phase with cross-system analysis. Major finding: shared vocabulary has consistent within-line positional roles across A and B.
+
+### Key Finding (C899)
+
+**A-B Within-Line Positional Correspondence:** PP MIDDLEs maintain consistent within-line positions across systems.
+
+| Metric | Value |
+|--------|-------|
+| Corpus-level r | 0.654 (p < 0.0001) |
+| Folio-level r (mean) | 0.149 (weak) |
+| Zone preservation | 92.5% (vs 33% chance) |
+| Hub zone stability | 5/5 MIDDLE in both systems |
+
+**Interpretation:** This is a **corpus-level grammar property**, not a folio-level mapping. Vocabulary items carry positional semantics (EARLY/MIDDLE/LATE roles) that are consistent across both systems. This differs from C885, which establishes folio-level vocabulary correspondence.
+
+### Documentation Updates
+
+| File | Change |
+|------|--------|
+| INDEX.md | Updated A PP Internal Structure section (C898-C899) |
+| C899_ab_positional_correspondence.md | New constraint file |
+
+### Constraint Count
+
+- Before: 764 constraints
+- After: 765 constraints (+1: C899)
+
+---
+
+## Version 2.93 (2026-01-30) - A PP Internal Structure
+
+### Summary
+
+New phase A_PP_INTERNAL_STRUCTURE reveals that Currier A PP vocabulary has significant internal organization, refining C234's aggregate "position-free" finding.
+
+### Key Findings (C898)
+
+1. **PP Positional Grammar** (C898.a)
+   - 50% of MIDDLEs have significant position bias (KS p<0.0001)
+   - LATE-biased: m (0.85), am (0.79), d (0.75), dy (0.73) - closure markers
+   - EARLY-biased: or (0.35), pch (0.31), dch (0.38) - opening/initiation
+
+2. **PP Hub Network Structure** (C898.b)
+   - Scale-free network with CV=1.69 (hub-dominated)
+   - Top hub: iin (degree 277, mega-hub connector)
+   - Secondary hubs: ol (208), s (197), or (188), y (181)
+   - Consistent with C475: hubs are "legal connectors" bridging otherwise incompatible vocabulary
+
+3. **Bimodal Position Distribution**
+   - INITIAL zone (0.0-0.1): 13.9%
+   - MIDDLE zone (0.4-0.6): 17.8% (valley)
+   - FINAL zone (0.9-1.0): 18.9%
+   - Aligns with C830 FINAL-bias (0.675) since C828 confirms 100% of repeats are PP
+
+### Relationship to C234
+
+C234 establishes aggregate position-freedom. C898 refines this: the aggregate may be uniform, but the PP subpopulation has bimodal structure. Analogous to C498.d refining C498 for RI length-frequency correlation.
+
+### Phase Verdict
+
+**STRONG** (2 confirmed, 1 support, 1 not supported)
+
+| Test | Verdict |
+|------|---------|
+| 1. Positional Preferences | CONFIRMED |
+| 2. Network Topology | CONFIRMED |
+| 4. WITH-RI vs WITHOUT-RI | SUPPORT (sample imbalanced) |
+| 6. Gradient Analysis | NOT SUPPORTED (primary axis is DIVERSITY vs CLOSURE) |
+
+### Documentation Updates
+
+| File | Change |
+|------|--------|
+| INDEX.md | Added C898 section |
+| C898_a_pp_internal_structure.md | New constraint file |
+| phases/A_PP_INTERNAL_STRUCTURE/ | New phase directory |
+
+### Constraint Count
+
+- Before: 763 constraints
+- After: 764 constraints (+1: C898)
+
+---
+
+## Version 2.92 (2026-01-30) - Section-Specific Registry Architecture
+
+### Summary
+
+Extended C888 with comprehensive section architecture comparison. Sections (H, P, T) have distinct registry architectures, not just different content.
+
+### Key Findings
+
+1. **WITH-RI ratio differs significantly** (p=0.044)
+   - P section: 64.5% WITH-RI (material specification focus)
+   - H section: 49.1% WITH-RI (cross-reference balance)
+
+2. **Section-distinctive PREFIXes**
+   - H: kch, sch, dch, tch, ct (gallows-ch compounds, cross-ref)
+   - P: or, ol (LINK prefixes - monitoring/safety)
+   - T: al, ar, ta (highly distinctive)
+
+3. **Low vocabulary overlap** (Jaccard ~0.2)
+   - H: 69% exclusive MIDDLEs
+   - P: 46% exclusive MIDDLEs
+
+### Documentation Updates
+
+| File | Change |
+|------|--------|
+| C888 | Renamed to "Section-Specific Registry Architecture", added C888.a (WITH-RI ratio), C888.c (vocabulary distinctiveness), C888.d (section PREFIXes) |
+
+### Scripts Created
+
+- `scripts/section_architecture_comparison.py`
+- `scripts/ri_positional_function_test.py` (investigation closed - effect explained by PREFIX)
+- `scripts/ri_pp_control_test.py`
+- `scripts/ri_pp_dual_use_analysis.py`
+
+### Constraint Count
+
+- No change: 763 constraints (extension of C888, not new constraint)
+
+---
+
+## Version 2.91 (2026-01-30) - Linker Destination Characterization
+
+### Summary
+
+Characterized the structural properties of linker destination folios (C835) and refined understanding of linker function. Expert validation confirmed findings are consistent with existing constraints.
+
+### Key Findings
+
+1. **Hub destinations are structurally typical** - f93v and f32r show no outlier properties (z-scores < |1|)
+2. **Linkers don't consistently appear as INITIAL** in destinations - suggests cross-reference function
+3. **High source vocabulary similarity** (Jaccard 0.50-0.77) favors OR (alternatives) over AND (aggregation)
+4. **Section concentration** - 96% in section H (herbal)
+5. **ct-ho is necessary but not sufficient** - only 3/42 ct-ho tokens are linkers (7.1%)
+
+### Documentation Updates
+
+| File | Change |
+|------|--------|
+| C835 | Added "Hub Destination Characterization" section with structural metrics, positions, Jaccard analysis |
+| C837 | Added "ct-ho is Necessary But Not Sufficient" section (7.1% linker rate) |
+| INTERPRETATION_SUMMARY.md | Added new evidence favoring OR interpretation under RI Linker Mechanism |
+
+### Scripts Created
+
+- `scripts/linker_destination_characterization.py`
+- `scripts/linker_destination_followup.py`
+
+### Constraint Count
+
+- No change: 763 constraints (refinement of existing, not new constraint)
+
+---
+
+## Version 2.90 (2026-01-30) - RI Chain Investigation (No New Constraint)
+
+### Summary
+
+Investigated whether RI token connections form a "procedural network" in Currier A.
+
+### Investigation
+
+1. Found 93.7% of A records connected via shared RI tokens
+2. Common tokens (daiin, chol) create dense connectivity
+3. Initially interpreted as procedural chaining
+
+### Null Test Result
+
+Chi-square testing revealed the pattern is **positional grammar**, not procedural linking:
+- daiin, dy, chol = significantly OUTPUT-biased (end of paragraphs)
+- sho, cthol, okol = significantly INPUT-biased (start of paragraphs)
+- da- prefix = grammatical closure marker
+
+### Expert Validation
+
+Checked against existing constraints:
+- **C422**: DA as internal articulation punctuation (75% separation)
+- **C839**: RI Input-Output morphological asymmetry
+- **C830**: Repetition tokens late-biased
+
+**Verdict:** Pattern already covered by existing constraints. No new constraint needed.
+
+### Constraint Count
+
+- No change: 763 constraints
+
+---
+
+## Version 2.89 (2026-01-30) - Prefixed FL MIDDLEs as State Markers
+
+### Summary
+
+Analysis of tokens ending in -am/-y reveals they contain **FL MIDDLEs** (am, y, dy, ly, m) from C777's state index. These prefixed FL MIDDLEs inherit FL's state-indexing function, explaining their line-final concentration and operation→state mappings.
+
+### New Constraint
+
+| Constraint | Statement |
+|------------|-----------|
+| **C897** | Prefixed FL MIDDLEs as Line-Final State Markers (Tier 2) |
+
+### Key Discovery: FL MIDDLE Connection
+
+All tokens contain FL MIDDLEs from C777:
+
+| Token | Prefix | MIDDLE | FL Stage | Position |
+|-------|--------|--------|----------|----------|
+| am | - | am | FINAL | 0.802 |
+| dam | da | m | TERMINAL | 0.861 |
+| otam | ot | am | FINAL | 0.802 |
+| oly | ol | y | TERMINAL | 0.942 |
+| oldy | ol | dy | TERMINAL | 0.908 |
+| daly | da | ly | FINAL | 0.785 |
+| ary | ar | y | TERMINAL | 0.942 |
+
+### Why This Wasn't Obvious
+
+1. Role classification masks FL MIDDLEs - prefixes shift tokens to AUXILIARY/FREQUENT_OPERATOR
+2. Tokens analyzed as wholes - morphological decomposition reveals FL core
+3. FL constraints (C770-C777) focus on pure FL tokens, not prefixed forms
+
+### Operation → State Mappings (Extends C777)
+
+| ENERGY Operation | Terminal State | FL MIDDLE |
+|------------------|----------------|-----------|
+| shey | → ldy | l (LATE) |
+| cheky, chedy | → daly | ly (FINAL) |
+| qokain, qokeedy | → oly | y (TERMINAL) |
+
+Different heating operations produce different FL terminal states.
+
+### Constraint Count
+
+713 validated constraints (+1 from 712).
+
+---
+
+## Version 2.88 (2026-01-30) - Process Type Discrimination
+
+### Summary
+
+Discovered kernel-recovery correlations that discriminate thermal process types. Phase monitoring (h) anti-correlates with recovery (FQ), while fire control (k) positively correlates. This supports process mode discrimination: distillation (high h) vs boiling/decoction (high k, low h).
+
+### New Constraints
+
+| Constraint | Statement |
+|------------|-----------|
+| **C895** | Kernel-Recovery Correlation Asymmetry: k-FQ r=+0.27, h-FQ r=-0.29 (Tier 2) |
+| **C896** | Process Mode Discrimination: HIGH_K_LOW_H = 2.5x FQ, non-distillation (Tier 3) |
+
+### Key Findings
+
+**Kernel-FQ correlations (527 paragraphs):**
+
+| Kernel | Correlation | p-value | Interpretation |
+|--------|-------------|---------|----------------|
+| k% | +0.268 | < 10^-6 | Fire control requires recovery |
+| h% | -0.286 | < 10^-6 | Phase monitoring substitutes for recovery |
+| e% | +0.040 | 0.36 | Equilibration neutral |
+
+**Process interpretation:**
+- HIGH_H = DISTILLATION (drip feedback reduces errors)
+- HIGH_K_LOW_H = BOILING/DECOCTION (no drip feedback, more recovery needed)
+
+### Convergent Evidence
+
+This is convergent with C781 ("FQ has 0% h; escape routes bypass phase management"). The negative h-FQ correlation (r=-0.286) quantifies this architectural bypass.
+
+### Constraint Count
+
+712 validated constraints (+2 from 710).
+
+---
+
+## Version 2.87 (2026-01-30) - REGIME-Paragraph Recovery Concentration
+
+### Summary
+
+Extended C893 to REGIME level, discovering that recovery-specialized folios cluster in REGIME_4 (33% vs 0-3% other REGIMEs). This validates C494's precision interpretation at paragraph level.
+
+### New Constraint
+
+| Constraint | Statement |
+|------------|-----------|
+| **C894** | REGIME_4 Recovery Specialization Concentration: 33% recovery-specialized folios in REGIME_4 (chi-sq=28.41, p=0.0001); validates C494 precision interpretation |
+
+### Key Findings
+
+**Folio specialization by REGIME:**
+
+| REGIME | Recovery% | K/(K+H) | Interpretation |
+|--------|-----------|---------|----------------|
+| REGIME_4 | 33% | 0.32 | Precision + recovery capacity |
+| REGIME_1 | 3% | 0.21 | Moderate, forgiving |
+| REGIME_2 | 0% | 0.27 | Low intensity |
+| REGIME_3 | 0% | 0.10 | Aggressive, distillation-focused |
+
+**Confounding analysis:**
+- Effect persists within sections (controlling for section composition)
+- Section H: REGIME_4 has 56% higher K/(K+H) than REGIME_3
+
+**Multi-level validation chain:**
+- Token level: C780 (FQ is k-rich)
+- Paragraph level: C893 (HIGH_K = recovery)
+- Folio level: Recovery-specialized folios exist
+- REGIME level: REGIME_4 concentrates recovery-specialized folios
+
+### Relationship to Existing Constraints
+
+| Constraint | Relationship |
+|------------|--------------|
+| C494 | VALIDATES - paragraph-level confirmation of precision interpretation |
+| C893 | EXTENDS - from paragraph-level to REGIME aggregation |
+| C780 | ALIGNS - FQ is k-rich explains HIGH_K -> recovery link |
+
+### Constraint Count
+
+710 validated constraints (+1 from 709).
+
+---
+
+## Version 2.86 (2026-01-30) - Paragraph Kernel-Operation Mapping
+
+### Summary
+
+Discovered that B paragraph kernel signatures predict operation types, mapping to Brunschwig operation categories. HIGH_K paragraphs concentrate escape/recovery operations; HIGH_H paragraphs concentrate active processing operations.
+
+### New Constraint
+
+| Constraint | Statement |
+|------------|-----------|
+| **C893** | Paragraph Kernel Signature Predicts Operation Type: HIGH_K=2x FQ enrichment (p<0.0001), HIGH_H=elevated EN (p=0.036) |
+
+### Key Findings
+
+**Paragraph-level operation specialization:**
+
+| Para Type | Count | FQ Rate | EN Rate | Brunschwig Mapping |
+|-----------|-------|---------|---------|-------------------|
+| HIGH_K | 58 | 19.7% | 19.3% | Recovery procedures |
+| HIGH_H | 203 | 9.7% | 22.0% | Active distillation |
+| BALANCED | 235 | 12.6% | 23.9% | General procedures |
+
+**Statistical significance:**
+- FQ difference (HIGH_K vs HIGH_H): p < 0.0001 (Tier 2)
+- EN difference: p = 0.036 (supporting evidence)
+
+**Brunschwig operation categories (Tier 3 interpretation):**
+- HIGH_K = "If it overheats, remove from fire" (crisis response)
+- HIGH_H = "Distill with fire, watching drip rate" (careful processing)
+- BALANCED = Standard distillation steps
+
+### Relationship to C780
+
+This extends C780 (Role Kernel Taxonomy) from token-level to paragraph-level:
+- C780: "FQ tokens use k+e with 0% h" (token property)
+- C893: "HIGH_K paragraphs concentrate FQ operations" (spatial organization)
+
+The concentration of recovery operations in HIGH_K paragraphs is new structural information.
+
+### Expert Validation
+
+Approved for Tier 2 documentation. No conflicts with existing constraints (C780, C781, C778, C103-105).
+
+### Constraint Count
+
+709 validated constraints (+1 from 708).
+
+---
+
+## Version 2.85 (2026-01-30) - Closed-Loop Orthogonality Discovery
+
+### Summary
+
+Discovered orthogonal control dimensions in the Voynich closed-loop model that Brunschwig's linear recipe model cannot capture. Added 3 new constraints (C890-C892) and extended REVERSE_BRUNSCHWIG_TEST to 10 tests.
+
+### New Constraints
+
+| Constraint | Statement |
+|------------|-----------|
+| **C890** | Recovery Rate-Pathway Independence: FQ rate and post-FQ kernel vary independently |
+| **C891** | ENERGY-FREQUENT Inverse: rho=-0.80 at REGIME level |
+| **C892** | Post-FQ h-Dominance: h (24-36%) dominates over e (3-8%) in recovery |
+
+### Key Findings
+
+**Recovery orthogonality (C890, C892):**
+- FQ rate ranking: R4 > R2 > R1 > R3
+- Post-FQ e% ranking: R2 > R1 > R3 > R4 (nearly inverse)
+- h dominates post-FQ in ALL 4 REGIMEs (phase-check before equilibration)
+
+**Role composition orthogonality (C891):**
+- ENERGY_OPERATOR vs FREQUENT_OPERATOR: rho = -0.80 (strong inverse)
+- CORE_CONTROL vs FREQUENT_OPERATOR: rho = 0.00 (perfectly orthogonal)
+- R3 (intense): highest ENERGY (36.5%), lowest FREQUENT (11.2%)
+- R4 (precision): lowest ENERGY (22.7%), highest FREQUENT (15.1%)
+
+### Phase Update
+
+REVERSE_BRUNSCHWIG_TEST upgraded from MODERATE-STRONG to STRONG:
+- Tests 9-10 added (recovery_orthogonality, role_orthogonality)
+- Overall: 2 STRONG + 5 SUPPORT + 2 WEAK + 1 NEUTRAL = STRONG correspondence
+
+### Expert Validation
+
+Findings validated against existing constraints:
+- Consistent with C458 (recovery is free)
+- Refines C105 (e = STABILITY_ANCHOR) - h is entry point, e is anchor
+- Strengthens C494 (REGIME_4 precision)
+- No conflicts detected
+
+### Constraint Count
+
+758 validated constraints (+3 from 755).
+
+---
+
+## Version 2.84 (2026-01-30) - Escape Terminology Clarification
+
+### Summary
+
+Discovered that two distinct "escape" measures exist in the constraint system with nearly inverse REGIME rankings. Added terminology clarifications to affected constraints.
+
+### Discovery
+
+| Measure | Definition | Classes | Used In | REGIME Ranking |
+|---------|------------|---------|---------|----------------|
+| qo_density | qo-prefixed tokens | 32, 33, 36 | C494, REGIME profiles | R3 > R1 > R2 > R4 |
+| FQ_density | FREQUENT_OPERATOR role | 9, 13, 14, 23 | BCSC, escape recovery | R4 > R2 > R1 > R3 |
+
+**Overlap: 0 tokens** - completely disjoint sets with orthogonal semantics:
+- qo_density = thermal/energy operation intensity (C838: "execution-facing, kernel-adjacent")
+- FQ_density = grammatical escape/flow control operators
+
+**Key Insight:** REGIME_4's apparent contradiction (lowest "escape" in C494 but highest error handling) is resolved:
+- Low qo_density = gentle heat (precision processing)
+- High FQ_density = tight tolerances require more error correction
+
+### Changes
+
+**C494_regime4_precision_axis.md:**
+- Added terminology note clarifying "escape rate" = qo_density (morphological), not FQ_density (grammatical)
+- Changed table label from "Escape rate" to "Escape rate (qo)" for clarity
+
+**REVERSE_BRUNSCHWIG_TEST phase:**
+- Updated README with "Methodology Discovery: Dual Escape Measures" section
+- Updated fire_stability_proxy.json with terminology clarification
+- Updated reverse_brunschwig_verdict.json with methodology_discovery section
+
+### Source
+
+REVERSE_BRUNSCHWIG_TEST phase, Test 8 verification
+
+---
+
+## Version 2.83 (2026-01-30) - Aggregation Level Cleanup Round 2
+
+### Summary
+
+Extended aggregation annotations to additional constraints. Round 1 covered 14 constraints; Round 2 covered 17 more for a total of 31 annotated constraints.
+
+### Round 2 Changes
+
+**A-Record Filtering constraints annotated (line-level):**
+- C682 (survivor distribution profile)
+- C683 (role composition under filtering)
+- C684 (hazard pruning under filtering)
+- C685 (LINK/kernel survival rates)
+- C686 (role vulnerability gradient)
+- C687 (composition-filtering interaction)
+- C688 (REGIME filtering robustness)
+- C689 (survivor set uniqueness)
+
+**PP Structure constraints annotated:**
+- C640 (PP role projection architecture)
+- C641 (PP population execution profiles)
+- C656 (PP co-occurrence continuity)
+- C658 (PP material gradient)
+
+**Cross-System constraints annotated:**
+- C642 (A record role material architecture)
+- C825 (continuous not discrete routing)
+- C691 (program coherence) - added C885 reference
+
+**RI Structure constraints clarified:**
+- C831 (RI three-tier structure) - scope note added
+- C833 (RI first-line concentration) - scope clarification added
+- C834 (paragraph granularity validation) - scope clarification added
+
+**Verified correct (no changes needed):**
+- C722 (within-line accessibility) - already uses "A-folio filtering"
+- C725 (across-line accessibility) - B-scope analysis
+
+### Constraint Count
+
+755 validated constraints (no new constraints, annotations only).
+
+---
+
+## Version 2.82 (2026-01-30) - Aggregation Level Cleanup Round 1
+
+### Summary
+
+Annotated constraints that analyze Currier A at line or paragraph level to clarify the three-level hierarchy established by C881 and C885:
+
+| Level | Count | Purpose |
+|-------|-------|---------|
+| Line | 1,575 | Transcript structure (not operationally meaningful) |
+| Paragraph | 342 | A-internal record unit (C881) |
+| **Folio** | 114 | **A-B operational unit** (C885: 81% coverage) |
+
+### Changes
+
+**Line-level constraints annotated:**
+- C481 (survivor-set uniqueness)
+- C690 (line-level legality distribution)
+- C693 (usability gradient)
+- C728 (PP co-occurrence incompatibility)
+- C730 (PREFIX-MIDDLE within-line coupling)
+- C731 (adjacent line continuity)
+- C732 (within-line selection uniformity)
+- C733 (PP token variant line structure)
+- C824 (A-record filtering mechanism)
+
+**Paragraph-level constraints annotated:**
+- C827 (paragraph operational unit) - clarified: paragraph is A-internal, folio is A-B operational
+- C846 (A-B paragraph pool) - noted folio achieves higher coverage
+- C881 (A record paragraph structure) - clarified distinction from A-B operational level
+
+**Multi-level constraints linked to C885:**
+- C826 (token filtering model) - added C885 reference
+
+### Constraint Count
+
+755 validated constraints (no new constraints, annotations only).
+
+---
+
+## Version 2.81 (2026-01-30) - CURRIER_A_STRUCTURE_V2 Phase + C887-C889
+
+### Summary
+
+Comprehensive characterization of Currier A paragraph-level structure. Extended existing constraints (C881, C837) and added new constraints documenting WITHOUT-RI paragraph behavior.
+
+### Key Findings
+
+**Two Paragraph Opening Types:**
+- WITH-RI (62.9%): Material-focused records with RI in first line
+- WITHOUT-RI (37.1%): Process-focused annotations with pure PP
+
+**WITHOUT-RI Backward Reference (C887):**
+- 1.23x backward/forward asymmetry
+- Highest overlap (Jaccard 0.228) when following WITH-RI paragraph
+- Mechanism: process instructions apply to just-identified material
+
+**Section-Specific Function (C888):**
+- Section H: ct-prefix 3.87x enriched (cross-referencing)
+- Section P: qo/ok/ol enriched (safety protocols)
+
+**ct-ho PP Vocabulary (C889):**
+- MIDDLEs h, hy, ho are 98-100% ct-prefixed in Section H
+- Extends C837 linker signature to PP level
+- Reserved vocabulary for linking/transfer operations
+
+### Changes
+
+- **C881 updated:** Integrated CURRIER_A_STRUCTURE_V2 findings into existing paragraph structure constraint
+- **C837 updated:** Added cross-reference to C889 (PP-level extension)
+- **C887 added:** WITHOUT-RI Backward Reference mechanism
+- **C888 added:** Section-Specific WITHOUT-RI Function
+- **C889 added:** ct-ho Reserved PP Vocabulary
+
+### Constraint Count
+
+755 validated constraints.
+
+---
+
+## Version 2.80 (2026-01-30) - C391 Clarification + C886 Transition Directionality
+
+### Summary
+
+Clarified C391 (time-reversal symmetry) and added C886 (transition directionality) based on external audit.
+
+### Key Finding
+
+C391 and C886 measure **different properties** that together are diagnostic:
+
+| Property | Voynich | Natural Language | Procedural |
+|----------|---------|------------------|------------|
+| Conditional entropy symmetry (C391) | Yes (1.00) | No (~0.85) | ~0.9 |
+| Transition probability correlation (C886) | **Near-zero (-0.055)** | High (~0.99) | High (~0.99) |
+
+**Interpretation:** Grammar constraints are bidirectional (C391), but execution paths are directional (C886). This combination excludes both natural language AND simple procedural text.
+
+### Changes
+
+- **C391 renamed/clarified:** "Conditional Entropy Symmetry" - explicitly distinguishes constraint symmetry from transition symmetry
+- **C886 added:** "Transition Probability Directionality" - P(A→B) uncorrelated with P(B→A)
+- **BCSC contract updated:** TIME_REVERSAL_SYMMETRIC → CONDITIONAL_ENTROPY_SYMMETRIC with dual provenance
+
+### Constraint Count
+
+752 validated constraints.
+
+---
+
+## Version 2.79 (2026-01-29) - A-B Vocabulary Correspondence Definitive Answer
+
+### Summary
+
+**DEFINITIVE ANSWER:** A folios provide 81.2% vocabulary coverage for B paragraphs (1.71x vs random). Single A paragraphs provide only 58.3% coverage (2.04x vs random). The A-B relationship is real but requires folio-level or multi-paragraph aggregation.
+
+### Key Finding (C885)
+
+| A Unit | B Unit | Coverage | vs Random |
+|--------|--------|----------|-----------|
+| Paragraph | Paragraph (>=10 PP) | 58.3% | 2.04x |
+| **Folio** | **Paragraph** | **81.2%** | 1.71x |
+| 2-3 Paragraphs | Paragraph | 76-80% | - |
+
+### What Works vs Doesn't
+
+**Works:**
+- A folio -> B paragraph: 81% coverage, 1.71x lift
+- Multi-paragraph aggregation: 80%+ with 3 paragraphs
+
+**Doesn't Work (Artifacts/Null):**
+- Lane balance correlation: 0.99x (artifact of best-match)
+- Kernel matching: 1.17x (marginal)
+- Linker bundles: 0.99x (no better than random)
+
+### Interpretation
+
+A folios are "material contexts" that define available vocabulary. B paragraphs are "mini-programs" that execute with that vocabulary. The operator selects an A context (folio) appropriate for their material.
+
+### Documentation
+
+- `context/CLAIMS/C885_ab_vocabulary_correspondence.md` - New constraint
+- `phases/A_B_CORRESPONDENCE_SYSTEMATIC/FINDINGS.md` - Full analysis
+- `context/CLAIMS/C384a_conditional_correspondence.md` - Updated with quantitative evidence
+
+### Constraint Count
+
+751 validated constraints.
+
+---
+
+## Version 2.78 (2026-01-29) - Record Unit Correction (eoschso Invalidated)
+
+### Summary
+
+**CRITICAL CORRECTION:** The eoschso = chicken identification is **INVALIDATED**. The previous methodology incorrectly treated lines as records.
+
+A records are **paragraphs**, not lines. Initial RI (material identifier) appears in the **first line** of a paragraph.
+
+### Evidence
+
+- eoschso (MIDDLE of "okeoschso") appears at position 41/70 in paragraph A_268
+- This is in the MIDDLE lines of the paragraph, not the first line
+- Therefore eoschso is NOT initial RI and cannot be a material identifier
+
+### Corrected Methodology
+
+New paragraph-level PP triangulation (MATERIAL_MAPPING_V2, Scripts 09-11):
+1. Group paragraph tokens by LINE
+2. Extract RI from FIRST LINE only (initial RI = material ID)
+3. Match PP patterns against Brunschwig handling types
+4. Validate via kernel signature (k+e vs h ratio)
+
+### New PRECISION Candidates (Potential Animals)
+
+6 paragraphs pass both PP pattern AND kernel validation (k+e >> h):
+
+| Para | Initial RI | Folio | k+e | h |
+|------|-----------|-------|-----|---|
+| A_194 | opolch | f58v | 0.53 | 0.05 |
+| A_196 | eoik | f58v | 0.50 | 0.06 |
+| A_283 | qkol | f99v | 0.50 | 0.09 |
+| A_280 | opsho, eoef | f99r | 0.60 | 0.23 |
+| A_332 | ho, efchocp | f102r2 | 0.78 | 0.22 |
+| A_324 | qekeol, laii | f101v2 | 0.48 | 0.12 |
+
+### Documentation Updated
+
+- `context/SPECULATIVE/recipe_triangulation_methodology.md` - Marked as INVALIDATED
+- `phases/MATERIAL_MAPPING_V2/FINDINGS.md` - New corrected analysis
+
+---
+
 ## Version 2.77 (2026-01-21) - Recipe Triangulation Methodology + C384 Scope Fix
 
 ### Summary

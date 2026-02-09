@@ -1,0 +1,33 @@
+{
+  "test": "Paragraph Kernel x MIDDLE Tier Interaction",
+  "question": "Do paragraph kernel types use different MIDDLE tiers?",
+  "results": [
+    {
+      "kernel_type": "HIGH_K",
+      "n": 172,
+      "early_pct": 0.5813953488372093,
+      "mid_pct": 23.25581395348837,
+      "late_pct": 8.720930232558139
+    },
+    {
+      "kernel_type": "HIGH_H",
+      "n": 19010,
+      "early_pct": 1.499210941609679,
+      "mid_pct": 14.408206207259337,
+      "late_pct": 2.2567069963177278
+    },
+    {
+      "kernel_type": "BALANCED",
+      "n": 2717,
+      "early_pct": 1.3986013986013985,
+      "mid_pct": 24.401913875598087,
+      "late_pct": 4.600662495399337
+    }
+  ],
+  "statistics": {
+    "chi_square": 26.67961239619929,
+    "p_value": 2.3074859237829507e-05,
+    "cramers_v": 0.05547281553780019
+  },
+  "verdict": "SUPPORT"
+}

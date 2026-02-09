@@ -1,0 +1,49 @@
+{
+  "phase": "AZC_PATTERN_AUDIT",
+  "date": "2026-02-02",
+  "status": "COMPLETE",
+  "investigations": [
+    {
+      "name": "F-character cluster",
+      "original_hypothesis": "F-character tokens concentrated in f71v-f73v",
+      "finding": "NOT_CONFIRMED",
+      "details": {
+        "late_folios_percentage": 43.1,
+        "early_folios_percentage": 56.9,
+        "secondary_finding": "S-zone enrichment 2.6x (independent of -ry)"
+      }
+    },
+    {
+      "name": "Output markers (-ry suffix)",
+      "original_hypothesis": "-ry suffix tokens at S-zone boundary positions",
+      "finding": "CONFIRMED",
+      "details": {
+        "ry_in_szones": 19,
+        "ry_total": 39,
+        "ry_szone_rate": 48.7,
+        "baseline_szone_rate": 15.3,
+        "enrichment_ratio": 3.18
+      }
+    }
+  ],
+  "independence_test": {
+    "f_tokens_in_szones": 23,
+    "ry_tokens_in_szones": 19,
+    "overlap": 1,
+    "overlap_token": "yfary",
+    "patterns_independent": true
+  },
+  "constraints_drafted": [
+    {
+      "id": "C904",
+      "title": "-ry Suffix S-Zone Enrichment",
+      "tier": 2,
+      "file": "context/CLAIMS/C904_ry_szone_enrichment.md"
+    }
+  ],
+  "cross_validations": [
+    "C839 (-ry as OUTPUT marker)",
+    "C435 (S/R positional division)",
+    "C443 (S-zone zero escape)"
+  ]
+}

@@ -1,0 +1,24 @@
+{
+  "test": "AL_PREFIX_LINK_TEST",
+  "al_rates": {
+    "Final WITH-RI": 0.4480955937266617,
+    "Final WITHOUT-RI": 0.3325020781379884,
+    "Non-final WITH-RI": 0.42283298097251587,
+    "Non-final WITHOUT-RI": 0.05685048322910745
+  },
+  "colocation": {
+    "final_without_ri": 0.0,
+    "final_with_ri": 0.0,
+    "non_final_without_ri": 0.0,
+    "non_final_with_ri": 0.0
+  },
+  "al_token_counts": {
+    "alg": 1,
+    "aldy": 1,
+    "laldan": 1,
+    "alsy": 1
+  },
+  "position_specific": true,
+  "opening_type_effect": false,
+  "verdict": "INCONCLUSIVE"
+}

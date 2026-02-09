@@ -4,6 +4,10 @@
 **Scope:** B
 **Phase:** FL_PRIMITIVE_ARCHITECTURE
 
+> **Terminology Note:** "FL" here refers to the MIDDLE-based material state taxonomy
+> (~25% of tokens), NOT the FLOW_OPERATOR 49-class role (classes 7/30/38/40, 4.7% of tokens).
+> See [TERMINOLOGY/fl_disambiguation.md](../TERMINOLOGY/fl_disambiguation.md).
+
 ## Constraint
 
 FL MIDDLEs function as state indices marking material progression through a process. The 17 FL MIDDLEs show strong positional differentiation (range 0.64) with 'i'-forms at process start and 'y'-forms at process end.

@@ -1,0 +1,34 @@
+{
+  "total_bigrams": 20676,
+  "total_violations": 3216,
+  "violation_rate": 0.1555426581543819,
+  "section_violation_rates": {
+    "H": 0.1482329842931937,
+    "T": 0.1399662731871838,
+    "B": 0.16118961551100888,
+    "C": 0.10864745011086474,
+    "S": 0.16186900292031706
+  },
+  "folio_violation_cv": 0.2348691350644015,
+  "high_violation_folios": [
+    "f82r",
+    "f103r",
+    "f41r",
+    "f108r",
+    "f108v"
+  ],
+  "low_violation_folios": [
+    "f86v5",
+    "f85r2",
+    "f55v",
+    "f95v2",
+    "f33v"
+  ],
+  "violation_mean_position": 0.3931402863967083,
+  "non_violation_mean_position": 0.4505533126545353,
+  "position_p_value": 1.560004510164178e-25,
+  "e_after_violation": 0.06767676767676768,
+  "e_after_non_violation": 0.06395500915511379,
+  "hazard_support": 0,
+  "hazard_contradict": 2
+}

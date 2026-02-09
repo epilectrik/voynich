@@ -382,6 +382,96 @@ Test: Does Brunschwig's "twice only" rule produce the same variance signature as
 
 ---
 
+## Folio Position Procedural Phase Mapping (2026-02-04)
+
+### F-BRU-010: Within-Folio Procedural Phases
+
+Test: Do Voynich B folios encode Brunschwig procedural phases (PREPARATION → EXECUTION → COMPLETION) through within-folio vocabulary distribution?
+
+**Brunschwig Expanded Recipe Structure (~55 operations):**
+
+| Phase | Operations | % of Total |
+|-------|------------|------------|
+| Preparation | 14 (gather, assess, chop/macerate, select apparatus) | 25% |
+| Execution | 27 (heat, monitor, state track, recovery) | 49% |
+| Validation | 5 (quality checks) | 9% |
+| Completion | 6 (cooling, storage) | 11% |
+| Specific | 3 (recipe parameters) | 5% |
+
+**Voynich Finding 1: Folio = Complete Procedure**
+- 97.6% of B folios meet all procedure component criteria
+- 37.2% of paragraphs do
+- Ratio: 5.1 tokens per Brunschwig operation
+
+**Voynich Finding 2: QO-Dominance Early (Preparation Signature)**
+
+| Position | QO:CHSH Ratio | qo- Prefix |
+|----------|---------------|------------|
+| EARLY (first 25%) | 0.84 | 19.1% |
+| LATE (last 25%) | 0.71 | 15.7% |
+
+Consistent with C668 (QO fraction declines rho=-0.058, p=0.006).
+
+**Voynich Finding 3: Suffix Distribution by Position**
+
+EARLY-ENRICHED (preparation candidates):
+| Suffix | Early | Late | Ratio |
+|--------|-------|------|-------|
+| -edy | 19.6% | 14.6% | 1.34x |
+| -ody | 2.7% | 2.0% | 1.40x |
+| -dy | 4.8% | 3.7% | 1.28x |
+| -am | 2.4% | 1.9% | 1.23x |
+
+LATE-ENRICHED (completion candidates):
+| Suffix | Early | Late | Ratio |
+|--------|-------|------|-------|
+| -eey | 4.9% | 7.2% | 1.45x late |
+| -ain | 5.2% | 6.9% | 1.32x late |
+| -ey | 4.9% | 6.3% | 1.28x late |
+
+Consistent with C676 ("morphological simplification late").
+
+**Proposed Brunschwig-Voynich Phase Mapping:**
+
+| Brunschwig Phase | Voynich Signature |
+|------------------|-------------------|
+| **Preparation** | QO-dominant, -edy/-ody suffix enriched, early-line vocabulary |
+| **Execution** | CHSH/QO balanced, -aiin monitoring, middle-folio lines |
+| **Completion** | -eey/-ain/-ey suffix enriched, late-line vocabulary |
+
+**Interpretation:**
+- Early-folio QO tokens with -edy suffix = preparation operations (material assessment, mechanical prep)
+- Late-folio tokens with -eey/-ain/-ey = completion operations (cooling, storage)
+- QO-dominance early supports QO = "energy-intensive broadly" (including mechanical work, not just heat)
+
+**Refinement: Hierarchical k-EDY vs t-EDY Structure**
+
+Within QO-EDY, k-series and t-series show nested positional structure:
+
+| Level | Earlier | Data |
+|-------|---------|------|
+| FOLIO | t-EDY | mean 0.382 vs 0.441 |
+| LINE | k-EDY | mean 0.463 vs 0.519 |
+
+90.8% line-level exclusivity. On lines with both: k first 60%.
+
+Interpretation:
+- **t-EDY** = folio-level setup (assessment, concentrated in early lines)
+- **k-EDY** = instruction initiator (action, starts operations)
+- k-series: 641 tokens (qokedy 271, qokeedy 306)
+- t-series: 200 tokens (qotedy 91, qoteedy 73)
+
+**Status:** PARTIAL (F3 fit)
+- Consistent with C668, C676
+- Pattern-consistent across suffix family
+- 1,026 early-only tokens vs 780 late-only tokens (distinct vocabularies exist)
+- Hierarchical k/t nesting adds structural detail
+- Does not prove preparation encoding; depends on Brunschwig interpretation
+
+**Files:** Session scratchpad: `preparation_signature_test.py`, `edy_suffix_test.py`, `expanded_recipe_v2.py`, `qo_edy_inventory.py`, `k_vs_t_edy_position.py`, `k_vs_t_line_position.py`
+
+---
+
 ## Conclusion
 
 **Status: FULL_PROCEDURAL_ALIGNMENT (upgraded from SYSTEMATIC_MATCH)**

@@ -1,0 +1,37 @@
+{
+  "phase": "CURRIER_A_STRUCTURE_V2",
+  "tests_run": [
+    "position_cluster",
+    "pp_composition",
+    "ri_morphology",
+    "linker_targets",
+    "sequential_coherence"
+  ],
+  "gaps_addressed": 3,
+  "gaps_remaining": [
+    "Middle-line RI function unclear",
+    "5 cluster types unexplained"
+  ],
+  "overall_verdict": "MODERATE",
+  "potential_constraints": [
+    {
+      "id": "C8XX",
+      "title": "Paragraph Position Predicts Structure",
+      "content": "Paragraph ordinal position within folio predicts cluster type (chi2=102.2, HIGHLY_SIGNIFICANT)",
+      "source": "CURRIER_A_STRUCTURE_V2"
+    },
+    {
+      "id": "C8XX",
+      "title": "Two Paragraph Opening Types",
+      "content": "First lines WITH initial RI have different PP profiles than WITHOUT (Jaccard=0.164)",
+      "source": "CURRIER_A_STRUCTURE_V2"
+    }
+  ],
+  "test_verdicts": {
+    "position_cluster": "POSITION_PREDICTS_CLUSTER",
+    "pp_composition": "TWO_OPENING_TYPES",
+    "ri_morphology": "UNIFORM_FUNCTION",
+    "linker_targets": "STRUCTURALLY_DISTINCT",
+    "sequential_coherence": "MEASUREMENT_ARTIFACTS"
+  }
+}

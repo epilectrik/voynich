@@ -4,6 +4,19 @@
 
 ---
 
+## Scope Note (KERNEL_STATE_SEMANTICS, 2026-01)
+
+The 17 "forbidden transitions" operate at **CLASS level** (instruction classes 9, 10, 11, 12, 17, 23, 31, 32), not at k/h/e CHARACTER level. The term "hazard" refers to disfavored class-to-class transitions, not to k/h/e characters representing dangerous states.
+
+- k, h, e operate at CONSTRUCTION level (within-token morphology, C521)
+- Forbidden transitions operate at EXECUTION level (between-token class sequencing, C109)
+- These layers are INDEPENDENT (C522)
+- k/h/e content does NOT predict forbidden transition participation
+
+See KERNEL_STATE_SEMANTICS phase for full evidence.
+
+---
+
 ## Forbidden Transitions
 
 | Metric | Value | Tier | Constraint |
@@ -52,13 +65,24 @@ Apparatus hazards require faster response (no waiting allowed).
 
 ---
 
-## Escape Routes
+## Post-Hazard Handling (REVISED 2026-01-31)
+
+> **Note:** Original "escape routes" terminology was incorrect. C397/C398 measured
+> lane transitions, not escape. Actual hazard recovery is CHSH-dominant (C645).
 
 | Metric | Value | Constraint |
 |--------|-------|------------|
-| qo-prefix escape rate | 25-47% | C397 |
-| ENERGY_OPERATOR as escape | 40-67% | C398 |
-| CORE_CONTROL as escape | 22-32% | C398 |
+| CHSH post-hazard rate | 75.2% | C645 |
+| QO post-hazard rate | 24.8% (depleted 0.55x) | C645 |
+| QO hazard participation | 0/19 events | C601 |
+
+## Lane Transition After Hazard Sources (C397/C398 Corrected)
+
+| Metric | Value | Interpretation |
+|--------|-------|----------------|
+| qo-prefix after sources | 25-47% | CHSH→QO lane transition (not escape) |
+| ENERGY_OP after sources | 40-67% | Baseline role frequency after CHSH |
+| CORE_CONTROL after sources | 22-32% | Baseline role frequency after CHSH |
 | Safe precedence (ENERGY_OP) | 33-67% | C399 |
 
 ---

@@ -1,0 +1,192 @@
+{
+  "test": "label_ht_patterns",
+  "goal": "Test if C926 extends to label contexts",
+  "sample": {
+    "mixed_folios": 17,
+    "label_tokens": 280,
+    "para_tokens": 3065
+  },
+  "ht_density": {
+    "labels": 0.45,
+    "paragraphs": 0.18564437194127242,
+    "ratio": 2.4239894551845342
+  },
+  "statistics": {
+    "test_type": "chi-square",
+    "p_value": 3.7768886140419144e-25,
+    "significant": true
+  },
+  "c926_consistency": "INCONSISTENT with C926 (HT elevated in labels)",
+  "per_folio": [
+    {
+      "folio": "f67r2",
+      "label_tokens": 9,
+      "label_ht": 2,
+      "label_ht_rate": 0.2222222222222222,
+      "para_tokens": 33,
+      "para_ht": 10,
+      "para_ht_rate": 0.30303030303030304,
+      "section": "A"
+    },
+    {
+      "folio": "f102v2",
+      "label_tokens": 19,
+      "label_ht": 13,
+      "label_ht_rate": 0.6842105263157895,
+      "para_tokens": 161,
+      "para_ht": 44,
+      "para_ht_rate": 0.2732919254658385,
+      "section": "P"
+    },
+    {
+      "folio": "f68v3",
+      "label_tokens": 2,
+      "label_ht": 1,
+      "label_ht_rate": 0.5,
+      "para_tokens": 40,
+      "para_ht": 4,
+      "para_ht_rate": 0.1,
+      "section": "C"
+    },
+    {
+      "folio": "f89r2",
+      "label_tokens": 25,
+      "label_ht": 10,
+      "label_ht_rate": 0.4,
+      "para_tokens": 220,
+      "para_ht": 37,
+      "para_ht_rate": 0.16818181818181818,
+      "section": "P"
+    },
+    {
+      "folio": "f89v2",
+      "label_tokens": 17,
+      "label_ht": 4,
+      "label_ht_rate": 0.23529411764705882,
+      "para_tokens": 158,
+      "para_ht": 27,
+      "para_ht_rate": 0.17088607594936708,
+      "section": "P"
+    },
+    {
+      "folio": "f75v",
+      "label_tokens": 31,
+      "label_ht": 13,
+      "label_ht_rate": 0.41935483870967744,
+      "para_tokens": 341,
+      "para_ht": 69,
+      "para_ht_rate": 0.20234604105571846,
+      "section": "B"
+    },
+    {
+      "folio": "f77v",
+      "label_tokens": 4,
+      "label_ht": 3,
+      "label_ht_rate": 0.75,
+      "para_tokens": 325,
+      "para_ht": 32,
+      "para_ht_rate": 0.09846153846153846,
+      "section": "B"
+    },
+    {
+      "folio": "f100r",
+      "label_tokens": 19,
+      "label_ht": 7,
+      "label_ht_rate": 0.3684210526315789,
+      "para_tokens": 92,
+      "para_ht": 17,
+      "para_ht_rate": 0.18478260869565216,
+      "section": "P"
+    },
+    {
+      "folio": "f102v1",
+      "label_tokens": 10,
+      "label_ht": 4,
+      "label_ht_rate": 0.4,
+      "para_tokens": 117,
+      "para_ht": 21,
+      "para_ht_rate": 0.1794871794871795,
+      "section": "P"
+    },
+    {
+      "folio": "f102r1",
+      "label_tokens": 4,
+      "label_ht": 3,
+      "label_ht_rate": 0.75,
+      "para_tokens": 105,
+      "para_ht": 35,
+      "para_ht_rate": 0.3333333333333333,
+      "section": "P"
+    },
+    {
+      "folio": "f99v",
+      "label_tokens": 28,
+      "label_ht": 16,
+      "label_ht_rate": 0.5714285714285714,
+      "para_tokens": 147,
+      "para_ht": 62,
+      "para_ht_rate": 0.4217687074829932,
+      "section": "P"
+    },
+    {
+      "folio": "f99r",
+      "label_tokens": 35,
+      "label_ht": 18,
+      "label_ht_rate": 0.5142857142857142,
+      "para_tokens": 162,
+      "para_ht": 40,
+      "para_ht_rate": 0.24691358024691357,
+      "section": "P"
+    },
+    {
+      "folio": "f68r2",
+      "label_tokens": 11,
+      "label_ht": 5,
+      "label_ht_rate": 0.45454545454545453,
+      "para_tokens": 37,
+      "para_ht": 11,
+      "para_ht_rate": 0.2972972972972973,
+      "section": "A"
+    },
+    {
+      "folio": "f49v",
+      "label_tokens": 26,
+      "label_ht": 0,
+      "label_ht_rate": 0.0,
+      "para_tokens": 142,
+      "para_ht": 6,
+      "para_ht_rate": 0.04225352112676056,
+      "section": "H"
+    },
+    {
+      "folio": "f75r",
+      "label_tokens": 10,
+      "label_ht": 4,
+      "label_ht_rate": 0.4,
+      "para_tokens": 412,
+      "para_ht": 69,
+      "para_ht_rate": 0.16747572815533981,
+      "section": "B"
+    },
+    {
+      "folio": "f82v",
+      "label_tokens": 15,
+      "label_ht": 14,
+      "label_ht_rate": 0.9333333333333333,
+      "para_tokens": 298,
+      "para_ht": 58,
+      "para_ht_rate": 0.19463087248322147,
+      "section": "B"
+    },
+    {
+      "folio": "f82r",
+      "label_tokens": 15,
+      "label_ht": 9,
+      "label_ht_rate": 0.6,
+      "para_tokens": 275,
+      "para_ht": 27,
+      "para_ht_rate": 0.09818181818181818,
+      "section": "B"
+    }
+  ]
+}

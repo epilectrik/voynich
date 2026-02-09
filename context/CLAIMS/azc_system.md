@@ -1,6 +1,6 @@
 # AZC System Constraints (C300-C322, C430-C444, C468-C470, C496)
 
-**Scope:** Astronomical/Zodiac/Cosmological hybrid system - decision-point grammar and compatibility filter
+**Scope:** Astronomical/Zodiac/Cosmological hybrid system - positional encoding and compatibility grouping
 **Status:** CLOSED (all sections)
 
 > **P-Text Note (2026-01-19):** Constraints C302-C322 were validated with P-placement tokens included. P-text (398 tokens, 12.1%) has been reclassified as Currier A for analytical purposes. Diagram-only statistics use 2,901 tokens. See C300 note and AZC_INTERFACE_VALIDATION phase. Constraints operating at folio/family level (C430-C444, C468-C473) and Zodiac-focused constraints (C454-C460) are unaffected.
@@ -372,9 +372,9 @@ AZC constraint activation is vocabulary-driven:
 The vocabulary used determines which constraints apply.
 **Source:** F-AZC-011
 
-### C442 - AZC Compatibility Filter
+### C442 - AZC Compatibility Grouping
 **Tier:** 2 | **Status:** CLOSED
-AZC folios function as compatibility filters: specialized vocabulary from one folio cannot be combined with specialized vocabulary from another. The 94% unique vocabulary per folio (C437) creates mutual exclusion. Incompatible A-registry entries are grammatically blocked from co-occurring.
+AZC folios group vocabulary by compatibility signature: specialized vocabulary from one folio appears at distinct positions from another. The 94% unique vocabulary per folio (C437) reflects positional exclusivity. Each PREFIX+MIDDLE appears at exactly one position; incompatible combinations simply don't occur together in the transcript.
 **Source:** F-AZC-011, azc_a_navigation analysis
 
 ---
@@ -383,14 +383,14 @@ AZC folios function as compatibility filters: specialized vocabulary from one fo
 
 ### C443 - Positional Escape Gradient
 **Tier:** 2 | **Status:** CLOSED
-Escape rates vary systematically by AZC position for A-types:
-- Position P (interior): 11.6% escape
-- Position P2: 24.7% escape (highest)
+Escape rates vary systematically by AZC **diagram** positions for A-types:
+- Position C: ~1.4% escape
 - Position R1→R2→R3: 2.0%→1.2%→0% (decreasing)
 - Position S1, S2: 0% escape
 
-Interior positions permit intervention; boundary positions forbid it.
-**P-text note (2026-01-19):** P and P2 escape rates (11.6%, 24.7%) now characterize Currier A material on AZC folios, not AZC diagram text. R/S escape rates remain valid for diagram positions. The structural pattern (interior permits, boundary forbids) is unaffected.
+Interior diagram positions permit some intervention; boundary positions (S) forbid it.
+
+**P-text clarification (2026-01-19):** P (Paragraph) is NOT a diagram position - it is Currier A text appearing on AZC folios. Original P/P2 escape rates (11.6%, 24.7%) characterize this Currier A material, not diagram text. R/S/C escape rates remain valid for diagram positions.
 **Source:** azc_a_navigation analysis
 
 ### C444 - A-Type Position Distribution
@@ -449,7 +449,7 @@ The A -> AZC -> B control pipeline is structurally, behaviorally, and morphologi
 
 - **AZC folio** = Complete legality regime. A bundled set of phase-indexed permissions and recoveries. Answers: which MIDDLE-level distinctions may be active together, at which phases intervention is legal, how forgiving mistakes are. Does not choose, interpret, or predict.
 
-- **Currier B program** = Blind execution. Sees only grammar + legal/illegal tokens + recovery budget. Operator chooses vocabulary -> activates constraint bundle -> AZC filters legality -> B grammar runs blindly.
+- **Currier B program** = Blind execution. Sees only grammar + legal/illegal tokens + recovery budget. Operator chooses vocabulary -> vocabulary has AZC positional encoding -> B grammar runs with corresponding availability.
 
 **Evidence:**
 - F-AZC-015: AZC is ambient legality field (70% of folios active per window)

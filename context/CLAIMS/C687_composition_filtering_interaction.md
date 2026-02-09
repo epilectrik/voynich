@@ -4,7 +4,13 @@
 
 ## Finding
 
-A record composition (PURE_RI, PURE_PP, MIXED) is the **primary determinant** of filtering severity. PURE_RI records admit near-zero B classes (mean 0.44), confirming that Registry-Internal tokens provide no B vocabulary access. MIXED and PURE_PP records are statistically indistinguishable (Mann-Whitney p=0.997, mean 11.26 vs 11.13 classes).
+A record composition (PURE_RI, PURE_PP, MIXED) is the **primary determinant** of filtering severity.
+
+> **Aggregation Note (2026-01-30):** This constraint analyzes at line level (1,562 units).
+> Per C881, A records are paragraphs (342 units). Per C885, the operational unit for
+> A-B vocabulary correspondence is the A FOLIO (114 units, 81% coverage).
+
+PURE_RI records admit near-zero B classes (mean 0.44), confirming that Registry-Internal tokens provide no B vocabulary access. MIXED and PURE_PP records are statistically indistinguishable (Mann-Whitney p=0.997, mean 11.26 vs 11.13 classes).
 
 ## Key Numbers
 

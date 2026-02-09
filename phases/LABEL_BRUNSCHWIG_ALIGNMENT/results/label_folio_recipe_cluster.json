@@ -1,0 +1,147 @@
+{
+  "test": "label_folio_recipe_cluster",
+  "question": "Do label-rich A folios connect to specific B folio clusters?",
+  "sample": {
+    "a_folios_with_labels": 7,
+    "total_labels": 114,
+    "median_labels": 14.0,
+    "high_label_folios": 4,
+    "low_label_folios": 3
+  },
+  "concentration": {
+    "high_label_mean_gini": 0.06442561688123578,
+    "low_label_mean_gini": 0.044256756756756756,
+    "t_statistic": 0.5712244201442557,
+    "p_value": 0.5984109902591254,
+    "significant": false
+  },
+  "reach": {
+    "high_label_mean_b_folios": 82.0,
+    "low_label_mean_b_folios": 26.666666666666668,
+    "t_statistic": 2.527336003257076,
+    "p_value": 0.05270087822800715
+  },
+  "top_b_folios": {
+    "f113r": 358,
+    "f107v": 320,
+    "f106v": 319,
+    "f86v5": 311,
+    "f111v": 251,
+    "f111r": 244,
+    "f116r": 241,
+    "f108v": 216,
+    "f107r": 189,
+    "f86v6": 185,
+    "f106r": 166,
+    "f79r": 158,
+    "f80r": 150,
+    "f80v": 136,
+    "f104v": 121,
+    "f75r": 117,
+    "f115r": 107,
+    "f103r": 106,
+    "f113v": 105,
+    "f108r": 103
+  },
+  "per_folio_connections": {
+    "f102r1": {
+      "pp_bases": 6,
+      "b_folios_reached": 1,
+      "total_b_tokens": 1,
+      "b_distribution": {
+        "f83v": 1
+      }
+    },
+    "f102r2": {
+      "pp_bases": 4,
+      "b_folios_reached": 0,
+      "total_b_tokens": 0,
+      "b_distribution": {}
+    },
+    "f102v1": {
+      "pp_bases": 8,
+      "b_folios_reached": 79,
+      "total_b_tokens": 1102,
+      "b_distribution": {
+        "f113r": 39,
+        "f79r": 35,
+        "f104r": 34,
+        "f104v": 31,
+        "f106r": 29,
+        "f78v": 27,
+        "f80r": 26,
+        "f106v": 26,
+        "f115r": 25,
+        "f80v": 24
+      }
+    },
+    "f102v2": {
+      "pp_bases": 18,
+      "b_folios_reached": 82,
+      "total_b_tokens": 3632,
+      "b_distribution": {
+        "f113r": 102,
+        "f106v": 92,
+        "f111r": 92,
+        "f104v": 90,
+        "f116r": 84,
+        "f115r": 82,
+        "f108v": 81,
+        "f106r": 78,
+        "f86v5": 77,
+        "f112r": 77
+      }
+    },
+    "f88v": {
+      "pp_bases": 13,
+      "b_folios_reached": 82,
+      "total_b_tokens": 2391,
+      "b_distribution": {
+        "f113v": 105,
+        "f86v5": 102,
+        "f86v6": 83,
+        "f113r": 77,
+        "f106v": 67,
+        "f107r": 66,
+        "f107v": 66,
+        "f105v": 64,
+        "f104r": 62,
+        "f106r": 59
+      }
+    },
+    "f99r": {
+      "pp_bases": 26,
+      "b_folios_reached": 82,
+      "total_b_tokens": 5750,
+      "b_distribution": {
+        "f116r": 157,
+        "f111r": 152,
+        "f111v": 148,
+        "f113r": 140,
+        "f108v": 135,
+        "f106v": 134,
+        "f86v5": 132,
+        "f107v": 127,
+        "f79r": 123,
+        "f107r": 123
+      }
+    },
+    "f99v": {
+      "pp_bases": 24,
+      "b_folios_reached": 82,
+      "total_b_tokens": 4375,
+      "b_distribution": {
+        "f107v": 127,
+        "f80r": 124,
+        "f75r": 117,
+        "f80v": 112,
+        "f103r": 106,
+        "f108r": 103,
+        "f111v": 103,
+        "f86v6": 102,
+        "f84v": 99,
+        "f76r": 96
+      }
+    }
+  }
+}

@@ -1,0 +1,138 @@
+{
+  "with_ri_lines": 1477,
+  "without_ri_lines": 73,
+  "jaccard_middles": 0.232,
+  "with_ri_only_count": 96,
+  "without_ri_only_count": 0,
+  "chi_square_p": 0.9971747210309988,
+  "mann_whitney_p": 0.056662010969190206,
+  "prefix_comparison": [
+    {
+      "prefix": "al",
+      "with_ri_pct": 0.7106598984771574,
+      "without_ri_pct": 1.271186440677966,
+      "ratio": 1.7887409200968523
+    },
+    {
+      "prefix": "ar",
+      "with_ri_pct": 0.5329949238578681,
+      "without_ri_pct": 0.0,
+      "ratio": 0.0
+    },
+    {
+      "prefix": "ct",
+      "with_ri_pct": 10.83756345177665,
+      "without_ri_pct": 10.169491525423728,
+      "ratio": 0.9383558925098242
+    },
+    {
+      "prefix": "da",
+      "with_ri_pct": 25.83756345177665,
+      "without_ri_pct": 25.423728813559322,
+      "ratio": 0.9839832173420798
+    },
+    {
+      "prefix": "dch",
+      "with_ri_pct": 3.50253807106599,
+      "without_ri_pct": 4.661016949152542,
+      "ratio": 1.3307541144681896
+    },
+    {
+      "prefix": "de",
+      "with_ri_pct": 0.5076142131979695,
+      "without_ri_pct": 0.847457627118644,
+      "ratio": 1.6694915254237288
+    },
+    {
+      "prefix": "fch",
+      "with_ri_pct": 0.5583756345177665,
+      "without_ri_pct": 0.423728813559322,
+      "ratio": 0.7588597842835131
+    },
+    {
+      "prefix": "ka",
+      "with_ri_pct": 0.9644670050761421,
+      "without_ri_pct": 0.423728813559322,
+      "ratio": 0.43933987511150757
+    },
+    {
+      "prefix": "kch",
+      "with_ri_pct": 3.2233502538071064,
+      "without_ri_pct": 2.1186440677966103,
+      "ratio": 0.6572801281195784
+    },
+    {
+      "prefix": "ke",
+      "with_ri_pct": 2.33502538071066,
+      "without_ri_pct": 2.1186440677966103,
+      "ratio": 0.9073323507737657
+    },
+    {
+      "prefix": "ok",
+      "with_ri_pct": 14.16243654822335,
+      "without_ri_pct": 13.559322033898304,
+      "ratio": 0.9574144948666544
+    },
+    {
+      "prefix": "ol",
+      "with_ri_pct": 4.49238578680203,
+      "without_ri_pct": 5.084745762711864,
+      "ratio": 1.131858661304223
+    },
+    {
+      "prefix": "or",
+      "with_ri_pct": 1.2690355329949239,
+      "without_ri_pct": 2.1186440677966103,
+      "ratio": 1.6694915254237288
+    },
+    {
+      "prefix": "ot",
+      "with_ri_pct": 11.269035532994923,
+      "without_ri_pct": 11.440677966101696,
+      "ratio": 1.0152313330279432
+    },
+    {
+      "prefix": "pch",
+      "with_ri_pct": 1.7766497461928934,
+      "without_ri_pct": 1.694915254237288,
+      "ratio": 0.9539951573849879
+    },
+    {
+      "prefix": "sa",
+      "with_ri_pct": 2.99492385786802,
+      "without_ri_pct": 2.9661016949152543,
+      "ratio": 0.9903763286411952
+    },
+    {
+      "prefix": "sch",
+      "with_ri_pct": 0.9898477157360406,
+      "without_ri_pct": 1.271186440677966,
+      "ratio": 1.2842242503259451
+    },
+    {
+      "prefix": "ta",
+      "with_ri_pct": 1.700507614213198,
+      "without_ri_pct": 1.694915254237288,
+      "ratio": 0.9967113584619276
+    },
+    {
+      "prefix": "tch",
+      "with_ri_pct": 4.213197969543147,
+      "without_ri_pct": 4.237288135593221,
+      "ratio": 1.0057177863998368
+    },
+    {
+      "prefix": "te",
+      "with_ri_pct": 1.5228426395939085,
+      "without_ri_pct": 2.1186440677966103,
+      "ratio": 1.3912429378531075
+    },
+    {
+      "prefix": "yk",
+      "with_ri_pct": 5.6091370558375635,
+      "without_ri_pct": 6.3559322033898304,
+      "ratio": 1.1331390444052458
+    }
+  ],
+  "verdict": "SUPPORT"
+}

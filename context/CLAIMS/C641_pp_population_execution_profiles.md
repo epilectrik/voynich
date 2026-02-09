@@ -4,6 +4,11 @@
 
 ## Statement
 
+> **Aggregation Note (2026-01-30):** This constraint analyzes PP population behavior.
+> A-record statistics (1,521 records) are at line level. Per C881, A records are paragraphs
+> (342 units). Per C885, the operational unit for A-B vocabulary correspondence is the
+> A FOLIO (114 units, 81% coverage).
+
 AZC-Mediated and B-Native PP populations differ in B-side behavioral profiles across multiple dimensions: role composition (Fisher p=0.006 AX, p=0.001 EN), REGIME distribution (MW p=0.0004 REGIME_2, p<0.0001 REGIME_3), and suffix diversity (MW p<0.0001, confounded by frequency rho=0.795). EN sub-family membership is **partially predictable from A-record composition**: PREFIX-to-EN-score correlation is rho=0.510 (partially independent), QO-dominant A records are smaller (5.5 vs 7.4 tokens, p<0.0001), have fewer PP MIDDLEs (5.2 vs 6.9, p=0.0001), and are enriched for ANIMAL material class (19.7% vs 12.2%, Fisher p=0.0034).
 
 ## Evidence

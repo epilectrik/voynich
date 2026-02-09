@@ -6,6 +6,11 @@
 
 A-record filtering renders **most B folio lines empty**. Across 32 representative (record, folio) pairings, 25/32 (78.1%) have >50% empty lines. Only the least restrictive A record (Max-classes, 38 surviving classes) keeps most lines populated (7-27% empty). The median record makes 74-100% of lines empty. **Legality does not vary with line position** (Spearman rho=0.005, p=0.87).
 
+> **Aggregation Note (2026-01-30):** This constraint analyzes at line level with individual
+> A records. Per C885, the operational unit for A-B correspondence is the A FOLIO (114 units,
+> 81% coverage), not single paragraphs or lines. Single-record sparsity is expected; folio-level
+> aggregation provides sufficient vocabulary coverage.
+
 ## Key Pairings
 
 | Record Profile | PP | Classes | Empty Line % (across 4 folios) |

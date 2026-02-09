@@ -8,6 +8,11 @@
 
 AZC survivor sets are essentially unique per Currier A line (0 collisions in 1,575 lines), functioning as high-dimensional constraint fingerprints rather than grouping labels or variant lists.
 
+> **Aggregation Note (2026-01-30):** This constraint analyzes at line level (1,575 units) and
+> demonstrates that fine-grained discrimination power exists. For A-B vocabulary correspondence,
+> the operational unit is the A FOLIO (114 units, 81% coverage per C885), not lines or
+> paragraphs (342 units, 58% coverage).
+
 ---
 
 ## Structural Interpretation

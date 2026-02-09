@@ -1,0 +1,57 @@
+{
+  "hypothesis": "e->h->k ordering enriched in post-FQ (recovery) contexts",
+  "baseline_ehk_rate": 0.136,
+  "post_fq": {
+    "total_sequences": 873,
+    "sequences_with_all_three": 518,
+    "ehk_count": 12,
+    "ehk_rate": 0.0232,
+    "orderings": {
+      "h->e->k": 283,
+      "h->e": 190,
+      "k->h->e": 87,
+      "k->e->h": 78,
+      "k->e": 69,
+      "h->k->e": 50,
+      "h->k": 33,
+      "k->h": 30,
+      "e->h": 22,
+      "e->h->k": 12
+    },
+    "e_before_h_rate": 0.1644,
+    "e_before_k_rate": 0.5251
+  },
+  "non_post_fq": {
+    "total_sequences": 2051,
+    "sequences_with_all_three": 1546,
+    "ehk_count": 56,
+    "ehk_rate": 0.0362,
+    "orderings": {
+      "h->e->k": 896,
+      "h->e": 324,
+      "k->h->e": 204,
+      "k->e->h": 199,
+      "h->k->e": 145,
+      "k->e": 78,
+      "e->h->k": 56,
+      "e->k->h": 46,
+      "h->k": 35,
+      "e->h": 29
+    },
+    "e_before_h_rate": 0.1738,
+    "e_before_k_rate": 0.6185
+  },
+  "comparison": {
+    "ehk_rate_ratio": 0.64,
+    "test_type": "chi2",
+    "p_value": 0.194071,
+    "significant": false
+  },
+  "e_first_comparison": {
+    "post_fq_e_before_h": 0.1644,
+    "non_post_fq_e_before_h": 0.1738,
+    "post_fq_e_before_k": 0.5251,
+    "non_post_fq_e_before_k": 0.6185
+  },
+  "verdict": "NEUTRAL - no significant difference"
+}

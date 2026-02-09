@@ -1,0 +1,224 @@
+{
+  "total_ey_tokens": 618,
+  "unique_ey_types": 212,
+  "top_types": [
+    {
+      "word": "qokey",
+      "count": 88,
+      "gloss": "apply heat, release."
+    },
+    {
+      "word": "chckhey",
+      "count": 26,
+      "gloss": "check heat check, release."
+    },
+    {
+      "word": "olchey",
+      "count": 24,
+      "gloss": "continue, monitor, release."
+    },
+    {
+      "word": "qokchey",
+      "count": 24,
+      "gloss": "precision heat, release."
+    },
+    {
+      "word": "opchey",
+      "count": 21,
+      "gloss": null
+    },
+    {
+      "word": "qotey",
+      "count": 20,
+      "gloss": null
+    },
+    {
+      "word": "okchey",
+      "count": 18,
+      "gloss": "lock, monitor. [selective]"
+    },
+    {
+      "word": "otchey",
+      "count": 17,
+      "gloss": null
+    },
+    {
+      "word": "olshey",
+      "count": 11,
+      "gloss": null
+    },
+    {
+      "word": "qolchey",
+      "count": 11,
+      "gloss": null
+    },
+    {
+      "word": "qotchey",
+      "count": 11,
+      "gloss": null
+    },
+    {
+      "word": "olkey",
+      "count": 10,
+      "gloss": "continue, sustain."
+    },
+    {
+      "word": "shckhey",
+      "count": 9,
+      "gloss": "heat check, release."
+    },
+    {
+      "word": "cthey",
+      "count": 9,
+      "gloss": "check hazards. [selective]"
+    },
+    {
+      "word": "okshey",
+      "count": 8,
+      "gloss": null
+    },
+    {
+      "word": "qockhey",
+      "count": 8,
+      "gloss": null
+    },
+    {
+      "word": "lkchey",
+      "count": 8,
+      "gloss": null
+    },
+    {
+      "word": "qokshey",
+      "count": 8,
+      "gloss": null
+    },
+    {
+      "word": "checkhey",
+      "count": 7,
+      "gloss": "check hard heat, release."
+    },
+    {
+      "word": "qopchey",
+      "count": 7,
+      "gloss": null
+    },
+    {
+      "word": "otshey",
+      "count": 6,
+      "gloss": null
+    },
+    {
+      "word": "qochey",
+      "count": 6,
+      "gloss": null
+    },
+    {
+      "word": "oshey",
+      "count": 6,
+      "gloss": null
+    },
+    {
+      "word": "chekey",
+      "count": 5,
+      "gloss": "check precision, release."
+    },
+    {
+      "word": "solchey",
+      "count": 5,
+      "gloss": null
+    }
+  ],
+  "position_stats": {
+    "mean": 0.435,
+    "pct_first_two_slots": 22.8,
+    "slot_distribution": {
+      "0": 58,
+      "1": 83,
+      "2": 99,
+      "3": 76,
+      "4": 81,
+      "5": 55,
+      "6": 46,
+      "7": 48
+    }
+  },
+  "preceding_suffix_top5": [
+    {
+      "suffix": "(none)",
+      "count": 261
+    },
+    {
+      "suffix": "edy",
+      "count": 67
+    },
+    {
+      "suffix": "hy",
+      "count": 39
+    },
+    {
+      "suffix": "eey",
+      "count": 32
+    },
+    {
+      "suffix": "ey",
+      "count": 31
+    }
+  ],
+  "following_suffix_top5": [
+    {
+      "suffix": "(none)",
+      "count": 248
+    },
+    {
+      "suffix": "edy",
+      "count": 58
+    },
+    {
+      "suffix": "eey",
+      "count": 34
+    },
+    {
+      "suffix": "ain",
+      "count": 33
+    },
+    {
+      "suffix": "ey",
+      "count": 31
+    }
+  ],
+  "prefix_distribution": {
+    "qo": 201,
+    "ch": 88,
+    "(none)": 70,
+    "ol": 63,
+    "sh": 45,
+    "ok": 37,
+    "ot": 28,
+    "lk": 15,
+    "ct": 11,
+    "so": 9,
+    "or": 6,
+    "yk": 6,
+    "al": 6,
+    "ke": 5,
+    "to": 5
+  },
+  "middle_distribution": {
+    "k": 103,
+    "ch": 88,
+    "ckh": 47,
+    "sh": 32,
+    "kch": 29,
+    "t": 24,
+    "opch": 23,
+    "lch": 20,
+    "eckh": 14,
+    "cth": 14,
+    "tch": 12,
+    "h": 10,
+    "ksh": 9,
+    "ek": 8,
+    "pch": 8
+  },
+  "minimal_pair_count": 17
+}

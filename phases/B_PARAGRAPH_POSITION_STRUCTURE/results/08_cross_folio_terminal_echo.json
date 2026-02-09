@@ -1,0 +1,193 @@
+{
+  "summary": {
+    "folios_analyzed": 82,
+    "echo_words": 110,
+    "late_only_words": 210,
+    "early_only_words": 286,
+    "echo_rate": 0.34375,
+    "observed_overlap_mean": 0.4288980338363054,
+    "null_overlap_mean": 0.43417899382821984,
+    "z_score": -0.6066270668956927,
+    "same_section_jaccard": 0.030786230208873094,
+    "diff_section_jaccard": 0.02370539769334469
+  },
+  "shared_middles": [
+    "epch",
+    "s",
+    "eeo",
+    "ea",
+    "eeol",
+    "kech",
+    "ked",
+    "eek",
+    "cth",
+    "to",
+    "o",
+    "olk",
+    "eok",
+    "ksh",
+    "op",
+    "ail",
+    "t",
+    "ech",
+    "dch",
+    "ek",
+    "dy",
+    "teeo",
+    "ed",
+    "keo",
+    "al",
+    "lk",
+    "tch",
+    "r",
+    "airo",
+    "eol",
+    "ii",
+    "e",
+    "cph",
+    "ok",
+    "efch",
+    "keeo",
+    "eeod",
+    "l",
+    "teed",
+    "yt",
+    "cheo",
+    "eot",
+    "et",
+    "od",
+    "sh",
+    "ch",
+    "d",
+    "a",
+    "opch",
+    "otch",
+    "ot",
+    "teo",
+    "ar",
+    "eo",
+    "fch",
+    "ep",
+    "aiin",
+    "rod",
+    "y",
+    "ko",
+    "cfh",
+    "edy",
+    "kch",
+    "pch",
+    "eet",
+    "ta",
+    "lsh",
+    "k",
+    "at",
+    "h",
+    "ol",
+    "kalch",
+    "ckh",
+    "chs",
+    "ka"
+  ],
+  "top_shared_middles": [
+    {
+      "middle": "k",
+      "early_folios": 42,
+      "late_folios": 42
+    },
+    {
+      "middle": "o",
+      "early_folios": 41,
+      "late_folios": 36
+    },
+    {
+      "middle": "eo",
+      "early_folios": 30,
+      "late_folios": 34
+    },
+    {
+      "middle": "ek",
+      "early_folios": 21,
+      "late_folios": 29
+    },
+    {
+      "middle": "t",
+      "early_folios": 23,
+      "late_folios": 19
+    },
+    {
+      "middle": "ch",
+      "early_folios": 20,
+      "late_folios": 21
+    },
+    {
+      "middle": "l",
+      "early_folios": 17,
+      "late_folios": 17
+    },
+    {
+      "middle": "kch",
+      "early_folios": 17,
+      "late_folios": 16
+    },
+    {
+      "middle": "eeo",
+      "early_folios": 16,
+      "late_folios": 7
+    },
+    {
+      "middle": "et",
+      "early_folios": 12,
+      "late_folios": 10
+    },
+    {
+      "middle": "eek",
+      "early_folios": 11,
+      "late_folios": 9
+    },
+    {
+      "middle": "a",
+      "early_folios": 7,
+      "late_folios": 11
+    },
+    {
+      "middle": "d",
+      "early_folios": 10,
+      "late_folios": 5
+    },
+    {
+      "middle": "tch",
+      "early_folios": 7,
+      "late_folios": 8
+    },
+    {
+      "middle": "r",
+      "early_folios": 6,
+      "late_folios": 8
+    },
+    {
+      "middle": "s",
+      "early_folios": 9,
+      "late_folios": 5
+    },
+    {
+      "middle": "ckh",
+      "early_folios": 9,
+      "late_folios": 4
+    },
+    {
+      "middle": "pch",
+      "early_folios": 8,
+      "late_folios": 5
+    },
+    {
+      "middle": "ed",
+      "early_folios": 10,
+      "late_folios": 2
+    },
+    {
+      "middle": "opch",
+      "early_folios": 5,
+      "late_folios": 7
+    }
+  ]
+}

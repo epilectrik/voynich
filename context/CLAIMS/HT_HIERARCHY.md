@@ -18,13 +18,13 @@
 
 | Property | Constraint | Evidence |
 |----------|------------|----------|
-| Non-operational | C404, C405 | Terminal independence (p=0.92), causal decoupling (V=0.10) |
+| Operationally redundant (revised from "non-operational", C935) | C404, C405, C935 | Terminal independence (p=0.92), causal decoupling (V=0.10), body encodes same atoms |
 | Non-executing | C120 | PURE_OPERATIONAL verdict excludes HT |
-| Removable without effect | C404 | Grammar unchanged after HT removal |
+| Removable without effect | C404 | Grammar unchanged after HT removal (redundancy, not emptiness) |
 | Not read by any system | C415 | Non-predictivity (MAE worsens with HT conditioning) |
 | Directionally downstream | C416 | System→HT: V=0.324; HT→System: V=0.202 (1.6x asymmetry) |
 
-**Summary:** HT is formally inert. Systems do not consume it.
+**Summary:** HT is operationally redundant. Compound specifications whose atoms are unpacked in body lines. (Revised 2026-02-06 per C935; previously "formally inert.")
 
 ---
 
@@ -102,18 +102,19 @@
 
 ---
 
-## Tier 3: Human-Behavior Interpretation (Open, Non-binding)
+## Tier 3: Human-Behavior Interpretation (WEAKENED by C935)
 
-These interpretations are **consistent with** the structural evidence but **not entailed by it**.
+> **Revision (2026-02-06):** C935 provides a simpler structural explanation for HT properties.
+> The attention/practice interpretation is not falsified but is no longer the best fit.
+> Compound specification (operational + identifying) explains the same structural evidence
+> without invoking human behavioral hypotheses.
 
-**Dual-Purpose Attention Mechanism:**
+**Previous interpretation (weakened):**
 
-| Function | Evidence |
-|----------|----------|
-| Attention maintenance during waiting | Phase-synchronized (C348), waiting-profile correlated (C341) |
-| Guild training in written form | 7.81x rare grapheme engagement, 24.5% boundary-pushing, family rotation |
-
-This is NOT "doodling" or "scribbling" - it is **deliberate skill acquisition** that doubles as attention maintenance.
+| Function | Evidence | C935 Alternative |
+|----------|----------|-----------------|
+| Attention maintenance during waiting | Phase-synchronized (C348) | Specification concentrated at program start |
+| Guild training in written form | 7.81x rare grapheme engagement | Compound MIDDLEs are rare by construction |
 
 | Structural Property | Interpretation |
 |---------------------|----------------|
@@ -173,7 +174,9 @@ When discussing HT in documentation, code, or UI:
 
 ## Summary Statement
 
-> **HT is a structured, modular, non-operative human-generated layer that exhibits system-conditioned positional alignment without predictive or causal influence on system behavior.**
+> **HT is a structured, modular, operationally redundant compound specification layer that serves dual purpose: encoding operations (same atoms as body) and identifying programs (rare combinations). It exhibits system-conditioned positional alignment without predictive or causal influence on system behavior.**
+>
+> Revised 2026-02-06 per C935. Previously: "non-operative human-generated layer."
 
 - In Currier A: aligned with registry layout
 - In Currier B: aligned with temporal/attentional context

@@ -1,0 +1,68 @@
+{
+  "test": "Section-Specific Preparation Profiles",
+  "question": "Do sections differ in preparation MIDDLE usage?",
+  "results": [
+    {
+      "section": "HERBAL_B",
+      "n_folios": 16,
+      "n_tokens": 7226,
+      "early_pct": 1.3146969277608636,
+      "mid_pct": 15.637973982839744,
+      "late_pct": 2.836977580957653
+    },
+    {
+      "section": "BIO",
+      "n_folios": 20,
+      "n_tokens": 6562,
+      "early_pct": 1.8744285278878392,
+      "mid_pct": 21.228284059737884,
+      "late_pct": 3.3678756476683938
+    },
+    {
+      "section": "OTHER",
+      "n_folios": 46,
+      "n_tokens": 8302,
+      "early_pct": 1.2888460611900747,
+      "mid_pct": 11.298482293423271,
+      "late_pct": 1.7224765116839316
+    }
+  ],
+  "prep_profiles": [
+    {
+      "section": "HERBAL_B",
+      "profile": {
+        "ksh": 0.05535566011624688,
+        "lch": 0.1245502352615555,
+        "tch": 0.23526155549404926,
+        "pch": 0.4843620260171603,
+        "te": 0.41516745087185164
+      }
+    },
+    {
+      "section": "BIO",
+      "profile": {
+        "ksh": 0.19811033221578786,
+        "lch": 0.6552880219445292,
+        "tch": 0.12191405059433098,
+        "pch": 0.24382810118866197,
+        "te": 0.6552880219445292
+      }
+    },
+    {
+      "section": "OTHER",
+      "profile": {
+        "ksh": 0.10840761262346424,
+        "lch": 0.1927246446639364,
+        "tch": 0.481811611659841,
+        "pch": 0.33726812816188867,
+        "te": 0.16863406408094433
+      }
+    }
+  ],
+  "statistics": {
+    "chi_square": 1.8705151383233671,
+    "p_value": 0.39248476054056747,
+    "cramers_v": 0.024302815059274396
+  },
+  "verdict": "NOT SUPPORTED"
+}

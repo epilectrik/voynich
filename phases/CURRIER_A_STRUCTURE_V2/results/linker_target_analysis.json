@@ -1,0 +1,788 @@
+{
+  "test": "LINKER_TARGET_CHARACTERIZATION",
+  "linker_ri": [
+    {
+      "folio": "f1r",
+      "line": "1",
+      "word": "cthres"
+    },
+    {
+      "folio": "f1r",
+      "line": "19",
+      "word": "cthols"
+    },
+    {
+      "folio": "f1r",
+      "line": "24",
+      "word": "ctholdar"
+    },
+    {
+      "folio": "f1r",
+      "line": "3",
+      "word": "cthoary"
+    },
+    {
+      "folio": "f3v",
+      "line": "9",
+      "word": "cthodoaly"
+    },
+    {
+      "folio": "f4v",
+      "line": "8",
+      "word": "cthory"
+    },
+    {
+      "folio": "f6r",
+      "line": "10",
+      "word": "ctheod"
+    },
+    {
+      "folio": "f6v",
+      "line": "17",
+      "word": "cthodam"
+    },
+    {
+      "folio": "f7v",
+      "line": "2",
+      "word": "cthd"
+    },
+    {
+      "folio": "f8r",
+      "line": "14",
+      "word": "ctho"
+    },
+    {
+      "folio": "f8r",
+      "line": "16",
+      "word": "cthaichar"
+    },
+    {
+      "folio": "f8v",
+      "line": "1",
+      "word": "cthod"
+    },
+    {
+      "folio": "f9r",
+      "line": "3",
+      "word": "cthod"
+    },
+    {
+      "folio": "f9v",
+      "line": "6",
+      "word": "cthod"
+    },
+    {
+      "folio": "f10r",
+      "line": "2",
+      "word": "cthoor"
+    },
+    {
+      "folio": "f10r",
+      "line": "4",
+      "word": "ctho"
+    },
+    {
+      "folio": "f11v",
+      "line": "4",
+      "word": "ctho"
+    },
+    {
+      "folio": "f13v",
+      "line": "3",
+      "word": "cthody"
+    },
+    {
+      "folio": "f14v",
+      "line": "9",
+      "word": "ctholdg"
+    },
+    {
+      "folio": "f15r",
+      "line": "8",
+      "word": "ctholy"
+    },
+    {
+      "folio": "f17v",
+      "line": "2",
+      "word": "cthodal"
+    },
+    {
+      "folio": "f19r",
+      "line": "11",
+      "word": "cthyd"
+    },
+    {
+      "folio": "f20r",
+      "line": "2",
+      "word": "cthody"
+    },
+    {
+      "folio": "f21r",
+      "line": "8",
+      "word": "cthodaiin"
+    },
+    {
+      "folio": "f21r",
+      "line": "9",
+      "word": "cthody"
+    },
+    {
+      "folio": "f21v",
+      "line": "5",
+      "word": "ctho"
+    },
+    {
+      "folio": "f22r",
+      "line": "3",
+      "word": "ctholo"
+    },
+    {
+      "folio": "f22r",
+      "line": "8",
+      "word": "ctholy"
+    },
+    {
+      "folio": "f23r",
+      "line": "3",
+      "word": "ctho"
+    },
+    {
+      "folio": "f24r",
+      "line": "5",
+      "word": "cthckeom"
+    },
+    {
+      "folio": "f27r",
+      "line": "4",
+      "word": "cthody"
+    },
+    {
+      "folio": "f27r",
+      "line": "5",
+      "word": "ctho"
+    },
+    {
+      "folio": "f27v",
+      "line": "5",
+      "word": "cthodol"
+    },
+    {
+      "folio": "f28r",
+      "line": "5",
+      "word": "cthody"
+    },
+    {
+      "folio": "f29v",
+      "line": "2",
+      "word": "cthold"
+    },
+    {
+      "folio": "f29v",
+      "line": "6",
+      "word": "cthod"
+    },
+    {
+      "folio": "f29v",
+      "line": "8",
+      "word": "cthody"
+    },
+    {
+      "folio": "f30r",
+      "line": "7",
+      "word": "cthorchy"
+    },
+    {
+      "folio": "f30v",
+      "line": "1",
+      "word": "cthscthain"
+    },
+    {
+      "folio": "f30v",
+      "line": "2",
+      "word": "ctholdy"
+    },
+    {
+      "folio": "f30v",
+      "line": "7",
+      "word": "ctho"
+    },
+    {
+      "folio": "f32r",
+      "line": "10",
+      "word": "ctho"
+    },
+    {
+      "folio": "f32v",
+      "line": "9",
+      "word": "ctho"
+    },
+    {
+      "folio": "f35r",
+      "line": "1",
+      "word": "cthoo"
+    },
+    {
+      "folio": "f35r",
+      "line": "3",
+      "word": "cthory"
+    },
+    {
+      "folio": "f36r",
+      "line": "5",
+      "word": "ctholy"
+    },
+    {
+      "folio": "f37v",
+      "line": "21",
+      "word": "cthols"
+    },
+    {
+      "folio": "f38r",
+      "line": "5",
+      "word": "ctho"
+    },
+    {
+      "folio": "f42r",
+      "line": "1",
+      "word": "cthachcthy"
+    },
+    {
+      "folio": "f42r",
+      "line": "18",
+      "word": "cthochy"
+    },
+    {
+      "folio": "f42r",
+      "line": "9a",
+      "word": "ctho"
+    },
+    {
+      "folio": "f44v",
+      "line": "12",
+      "word": "ctho"
+    },
+    {
+      "folio": "f44v",
+      "line": "9",
+      "word": "cthees"
+    },
+    {
+      "folio": "f45v",
+      "line": "3",
+      "word": "ctho"
+    },
+    {
+      "folio": "f49r",
+      "line": "13",
+      "word": "cthodd"
+    },
+    {
+      "folio": "f51v",
+      "line": "6",
+      "word": "ctheody"
+    },
+    {
+      "folio": "f52v",
+      "line": "2",
+      "word": "cthodaiis"
+    },
+    {
+      "folio": "f53r",
+      "line": "9",
+      "word": "ctheees"
+    },
+    {
+      "folio": "f53v",
+      "line": "5",
+      "word": "ctheody"
+    },
+    {
+      "folio": "f53v",
+      "line": "9",
+      "word": "cthody"
+    },
+    {
+      "folio": "f54r",
+      "line": "3",
+      "word": "cthody"
+    },
+    {
+      "folio": "f54r",
+      "line": "4",
+      "word": "ctheotol"
+    },
+    {
+      "folio": "f54v",
+      "line": "2",
+      "word": "cthaildy"
+    },
+    {
+      "folio": "f58v",
+      "line": "10",
+      "word": "ctholy"
+    },
+    {
+      "folio": "f87r",
+      "line": "2",
+      "word": "cthodal"
+    },
+    {
+      "folio": "f87r",
+      "line": "3",
+      "word": "ctheody"
+    },
+    {
+      "folio": "f87r",
+      "line": "5",
+      "word": "cthody"
+    },
+    {
+      "folio": "f87r",
+      "line": "9a",
+      "word": "cthos"
+    },
+    {
+      "folio": "f87r",
+      "line": "9a",
+      "word": "ctheody"
+    },
+    {
+      "folio": "f87v",
+      "line": "3a",
+      "word": "cthosy"
+    },
+    {
+      "folio": "f87v",
+      "line": "6",
+      "word": "cthodol"
+    },
+    {
+      "folio": "f89r1",
+      "line": "3",
+      "word": "ctheody"
+    },
+    {
+      "folio": "f89v1",
+      "line": "15",
+      "word": "cthody"
+    },
+    {
+      "folio": "f89v1",
+      "line": "2",
+      "word": "cthody"
+    },
+    {
+      "folio": "f89v1",
+      "line": "3",
+      "word": "cthody"
+    },
+    {
+      "folio": "f90r2",
+      "line": "3",
+      "word": "ctheo"
+    },
+    {
+      "folio": "f90v2",
+      "line": "2",
+      "word": "ctheod"
+    },
+    {
+      "folio": "f90v1",
+      "line": "2",
+      "word": "cthchy"
+    },
+    {
+      "folio": "f90v1",
+      "line": "8",
+      "word": "cthodaim"
+    },
+    {
+      "folio": "f93r",
+      "line": "17",
+      "word": "cthody"
+    },
+    {
+      "folio": "f93r",
+      "line": "2",
+      "word": "cthodar"
+    },
+    {
+      "folio": "f93r",
+      "line": "2",
+      "word": "cthoshol"
+    },
+    {
+      "folio": "f93r",
+      "line": "29",
+      "word": "ctho"
+    },
+    {
+      "folio": "f93r",
+      "line": "29",
+      "word": "cthosm"
+    },
+    {
+      "folio": "f93r",
+      "line": "9",
+      "word": "ctho"
+    },
+    {
+      "folio": "f93v",
+      "line": "2",
+      "word": "cthog"
+    },
+    {
+      "folio": "f93v",
+      "line": "5",
+      "word": "cthody"
+    },
+    {
+      "folio": "f93v",
+      "line": "6",
+      "word": "ctha"
+    },
+    {
+      "folio": "f93v",
+      "line": "6",
+      "word": "cthody"
+    },
+    {
+      "folio": "f93v",
+      "line": "7",
+      "word": "ctheos"
+    },
+    {
+      "folio": "f96r",
+      "line": "3",
+      "word": "ctheodal"
+    },
+    {
+      "folio": "f96r",
+      "line": "9",
+      "word": "cthody"
+    },
+    {
+      "folio": "f96v",
+      "line": "4",
+      "word": "ctheodody"
+    },
+    {
+      "folio": "f100r",
+      "line": "1",
+      "word": "cthdaoto"
+    },
+    {
+      "folio": "f100v",
+      "line": "1",
+      "word": "cthdeecthy"
+    },
+    {
+      "folio": "f100v",
+      "line": "4",
+      "word": "cthoral"
+    },
+    {
+      "folio": "f101r1",
+      "line": "3",
+      "word": "ctheea"
+    },
+    {
+      "folio": "f101v2",
+      "line": "6",
+      "word": "ctheody"
+    },
+    {
+      "folio": "f101v2",
+      "line": "6",
+      "word": "ctheockhosho"
+    },
+    {
+      "folio": "f102r1",
+      "line": "2",
+      "word": "ctheoly"
+    },
+    {
+      "folio": "f102r2",
+      "line": "9",
+      "word": "cthchy"
+    }
+  ],
+  "known_targets": [
+    "f93v",
+    "f32r"
+  ],
+  "n_target_folios": 2,
+  "n_non_target_folios": 112,
+  "metric_comparison": {
+    "n_lines": {
+      "target_avg": 14.5,
+      "non_target_avg": 13.660714285714286,
+      "ratio": 1.061437908496732
+    },
+    "n_tokens": {
+      "target_avg": 82.0,
+      "non_target_avg": 98.30357142857143,
+      "ratio": 0.8341507720254314
+    },
+    "n_ri": {
+      "target_avg": 8.0,
+      "non_target_avg": 6.616071428571429,
+      "ratio": 1.2091767881241564
+    },
+    "n_pp": {
+      "target_avg": 58.0,
+      "non_target_avg": 78.57142857142857,
+      "ratio": 0.7381818181818182
+    },
+    "pp_vocab_size": {
+      "target_avg": 52.0,
+      "non_target_avg": 63.142857142857146,
+      "ratio": 0.8235294117647058
+    },
+    "ri_vocab_size": {
+      "target_avg": 7.5,
+      "non_target_avg": 6.580357142857143,
+      "ratio": 1.1397557666214382
+    }
+  },
+  "prefix_comparison": {
+    "al": {
+      "target_pct": 0.0,
+      "non_target_pct": 0.43277956163618597,
+      "ratio": 0.0
+    },
+    "ar": {
+      "target_pct": 0.0,
+      "non_target_pct": 0.26525198938992045,
+      "ratio": 0.0
+    },
+    "ch": {
+      "target_pct": 16.3265306122449,
+      "non_target_pct": 29.079994415747592,
+      "ratio": 0.561435135744168
+    },
+    "ct": {
+      "target_pct": 7.142857142857143,
+      "non_target_pct": 4.760575177998046,
+      "ratio": 1.5004189359028068
+    },
+    "da": {
+      "target_pct": 0.0,
+      "non_target_pct": 0.027921262041044254,
+      "ratio": 0.0
+    },
+    "dch": {
+      "target_pct": 7.142857142857143,
+      "non_target_pct": 1.954488342873098,
+      "ratio": 3.654591836734694
+    },
+    "de": {
+      "target_pct": 0.0,
+      "non_target_pct": 0.26525198938992045,
+      "ratio": 0.0
+    },
+    "do": {
+      "target_pct": 0.0,
+      "non_target_pct": 0.05584252408208851,
+      "ratio": 0.0
+    },
+    "fch": {
+      "target_pct": 2.0408163265306123,
+      "non_target_pct": 0.26525198938992045,
+      "ratio": 7.693877551020408
+    },
+    "ka": {
+      "target_pct": 0.0,
+      "non_target_pct": 0.5165433477593188,
+      "ratio": 0.0
+    },
+    "kch": {
+      "target_pct": 0.0,
+      "non_target_pct": 1.8148820326678765,
+      "ratio": 0.0
+    },
+    "ke": {
+      "target_pct": 0.0,
+      "non_target_pct": 1.31229931592908,
+      "ratio": 0.0
+    },
+    "ko": {
+      "target_pct": 1.0204081632653061,
+      "non_target_pct": 1.3681418400111685,
+      "ratio": 0.7458350687213662
+    },
+    "lch": {
+      "target_pct": 0.0,
+      "non_target_pct": 0.16752757224626552,
+      "ratio": 0.0
+    },
+    "lk": {
+      "target_pct": 0.0,
+      "non_target_pct": 0.06980315510261063,
+      "ratio": 0.0
+    },
+    "lsh": {
+      "target_pct": 0.0,
+      "non_target_pct": 0.05584252408208851,
+      "ratio": 0.0
+    },
+    "ok": {
+      "target_pct": 10.204081632653061,
+      "non_target_pct": 7.817953371492392,
+      "ratio": 1.3052113702623906
+    },
+    "ol": {
+      "target_pct": 2.0408163265306123,
+      "non_target_pct": 2.42914979757085,
+      "ratio": 0.8401360544217688
+    },
+    "or": {
+      "target_pct": 0.0,
+      "non_target_pct": 0.6980315510261064,
+      "ratio": 0.0
+    },
+    "ot": {
+      "target_pct": 8.16326530612245,
+      "non_target_pct": 6.128717018009214,
+      "ratio": 1.3319696899260844
+    },
+    "pch": {
+      "target_pct": 0.0,
+      "non_target_pct": 0.977244171436549,
+      "ratio": 0.0
+    },
+    "po": {
+      "target_pct": 0.0,
+      "non_target_pct": 0.4048582995951417,
+      "ratio": 0.0
+    },
+    "qo": {
+      "target_pct": 18.367346938775512,
+      "non_target_pct": 13.97459165154265,
+      "ratio": 1.314338722501988
+    },
+    "rch": {
+      "target_pct": 0.0,
+      "non_target_pct": 0.12564567918469915,
+      "ratio": 0.0
+    },
+    "sch": {
+      "target_pct": 3.061224489795918,
+      "non_target_pct": 0.5444646098003629,
+      "ratio": 5.622448979591837
+    },
+    "se": {
+      "target_pct": 0.0,
+      "non_target_pct": 0.09772441714365489,
+      "ratio": 0.0
+    },
+    "sh": {
+      "target_pct": 16.3265306122449,
+      "non_target_pct": 15.231048443389641,
+      "ratio": 1.0719242784189753
+    },
+    "so": {
+      "target_pct": 0.0,
+      "non_target_pct": 0.06980315510261063,
+      "ratio": 0.0
+    },
+    "ta": {
+      "target_pct": 0.0,
+      "non_target_pct": 0.977244171436549,
+      "ratio": 0.0
+    },
+    "tch": {
+      "target_pct": 4.081632653061225,
+      "non_target_pct": 2.3314253804271954,
+      "ratio": 1.7507026762800928
+    },
+    "te": {
+      "target_pct": 3.061224489795918,
+      "non_target_pct": 0.8515984922518498,
+      "ratio": 3.594680495148879
+    },
+    "to": {
+      "target_pct": 0.0,
+      "non_target_pct": 1.8009214016473545,
+      "ratio": 0.0
+    },
+    "yk": {
+      "target_pct": 1.0204081632653061,
+      "non_target_pct": 3.1271813485969564,
+      "ratio": 0.3263028425655977
+    }
+  },
+  "pp_vocabulary_overlap": {
+    "target_combined_size": 98,
+    "avg_overlap_pct": 20.62879709819551,
+    "top_overlapping": [
+      [
+        "f4r",
+        35.8974358974359
+      ],
+      [
+        "f44r",
+        34.0
+      ],
+      [
+        "f37r",
+        32.69230769230769
+      ],
+      [
+        "f19v",
+        32.6530612244898
+      ],
+      [
+        "f22v",
+        32.6530612244898
+      ],
+      [
+        "f21v",
+        31.428571428571427
+      ],
+      [
+        "f13r",
+        30.612244897959183
+      ],
+      [
+        "f27r",
+        28.26086956521739
+      ],
+      [
+        "f11v",
+        28.125
+      ],
+      [
+        "f25v",
+        27.77777777777778
+      ]
+    ]
+  },
+  "distinctive_features": [
+    "DEPLETED for al prefix (0.0x)",
+    "DEPLETED for ar prefix (0.0x)",
+    "DEPLETED for da prefix (0.0x)",
+    "ENRICHED for dch prefix (3.7x)",
+    "DEPLETED for de prefix (0.0x)",
+    "DEPLETED for do prefix (0.0x)",
+    "ENRICHED for fch prefix (7.7x)",
+    "DEPLETED for ka prefix (0.0x)",
+    "DEPLETED for kch prefix (0.0x)",
+    "DEPLETED for ke prefix (0.0x)",
+    "DEPLETED for lch prefix (0.0x)",
+    "DEPLETED for lk prefix (0.0x)",
+    "DEPLETED for lsh prefix (0.0x)",
+    "DEPLETED for or prefix (0.0x)",
+    "DEPLETED for pch prefix (0.0x)",
+    "DEPLETED for po prefix (0.0x)",
+    "DEPLETED for rch prefix (0.0x)",
+    "ENRICHED for sch prefix (5.6x)",
+    "DEPLETED for se prefix (0.0x)",
+    "DEPLETED for so prefix (0.0x)",
+    "DEPLETED for ta prefix (0.0x)",
+    "ENRICHED for te prefix (3.6x)",
+    "DEPLETED for to prefix (0.0x)",
+    "DEPLETED for yk prefix (0.3x)"
+  ],
+  "verdict": "STRUCTURALLY_DISTINCT"
+}

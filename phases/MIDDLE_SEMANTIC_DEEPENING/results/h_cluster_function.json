@@ -1,0 +1,271 @@
+{
+  "h_cluster_counts": {
+    "ch": 351,
+    "d": 312,
+    "opch": 107,
+    "sh": 109,
+    "pch": 79
+  },
+  "by_middle": {
+    "ch": {
+      "count": 351,
+      "prefix_distribution": {
+        "ol": 90,
+        "ok": 71,
+        "te": 2,
+        "ot": 85,
+        "yk": 14,
+        "ke": 8,
+        "to": 1,
+        "ar": 1,
+        "al": 15,
+        "po": 4,
+        "or": 8,
+        "null": 2,
+        "lk": 33,
+        "qo": 11,
+        "sh": 3,
+        "se": 1,
+        "ch": 2
+      },
+      "suffix_distribution": {
+        "edy": 130,
+        "dy": 72,
+        "eey": 19,
+        "ey": 88,
+        "eol": 8,
+        "ol": 2,
+        "null": 3,
+        "l": 2,
+        "ar": 5,
+        "hy": 1,
+        "s": 4,
+        "or": 9,
+        "aiin": 3,
+        "eeol": 1,
+        "am": 2,
+        "al": 1,
+        "ain": 1
+      },
+      "section_distribution": {
+        "H": 43,
+        "T": 17,
+        "B": 97,
+        "C": 23,
+        "S": 171
+      },
+      "mean_position": 0.0,
+      "top_forms": {
+        "olchedy": 37,
+        "otchedy": 34,
+        "otchdy": 26,
+        "olchey": 24,
+        "okchedy": 21,
+        "okchdy": 20,
+        "okchey": 18,
+        "otchey": 17,
+        "lkchedy": 16,
+        "olcheey": 9
+      }
+    },
+    "sh": {
+      "count": 109,
+      "prefix_distribution": {
+        "ol": 49,
+        "null": 4,
+        "al": 3,
+        "ke": 2,
+        "ot": 22,
+        "yk": 3,
+        "ok": 13,
+        "pe": 1,
+        "de": 1,
+        "qo": 1,
+        "lk": 7,
+        "ar": 2,
+        "ko": 1
+      },
+      "suffix_distribution": {
+        "eol": 5,
+        "null": 5,
+        "edy": 45,
+        "ey": 32,
+        "dy": 9,
+        "eey": 10,
+        "or": 1,
+        "s": 1,
+        "ol": 1
+      },
+      "section_distribution": {
+        "H": 10,
+        "T": 7,
+        "B": 48,
+        "C": 6,
+        "S": 38
+      },
+      "mean_position": 0.0,
+      "top_forms": {
+        "olshedy": 23,
+        "otshedy": 11,
+        "olshey": 11,
+        "okshey": 8,
+        "olsheey": 6,
+        "otshey": 6,
+        "sh": 4,
+        "olshdy": 4,
+        "lkshedy": 4,
+        "olsheol": 3
+      }
+    },
+    "pch": {
+      "count": 79,
+      "prefix_distribution": {
+        "qo": 67,
+        "ch": 3,
+        "ol": 7,
+        "lch": 1,
+        "al": 1
+      },
+      "suffix_distribution": {
+        "dy": 18,
+        "edy": 37,
+        "ey": 8,
+        "eol": 1,
+        "ol": 5,
+        "er": 1,
+        "eey": 5,
+        "ar": 2,
+        "s": 1,
+        "am": 1
+      },
+      "section_distribution": {
+        "H": 3,
+        "B": 16,
+        "T": 2,
+        "C": 8,
+        "S": 50
+      },
+      "mean_position": null,
+      "top_forms": {
+        "qopchedy": 32,
+        "qopchdy": 15,
+        "qopchey": 7,
+        "qopchol": 5,
+        "olpchedy": 4,
+        "qopcheey": 4,
+        "chpchedy": 1,
+        "qopcheol": 1,
+        "lchpchdy": 1,
+        "olpchdy": 1
+      }
+    },
+    "d": {
+      "count": 312,
+      "prefix_distribution": {
+        "pch": 19,
+        "sh": 37,
+        "ol": 11,
+        "ch": 91,
+        "do": 2,
+        "qo": 52,
+        "ke": 6,
+        "tch": 6,
+        "dch": 4,
+        "to": 8,
+        "al": 5,
+        "or": 1,
+        "null": 24,
+        "te": 15,
+        "ar": 1,
+        "po": 7,
+        "lch": 7,
+        "ko": 3,
+        "fch": 1,
+        "so": 3,
+        "ot": 1,
+        "kch": 3,
+        "se": 1,
+        "lsh": 3,
+        "da": 1
+      },
+      "suffix_distribution": {
+        "ar": 63,
+        "or": 15,
+        "al": 39,
+        "null": 35,
+        "l": 17,
+        "ain": 29,
+        "am": 22,
+        "aiin": 70,
+        "m": 2,
+        "ol": 8,
+        "r": 1,
+        "dy": 3,
+        "eey": 4,
+        "oiin": 1,
+        "an": 1,
+        "edy": 2
+      },
+      "section_distribution": {
+        "H": 92,
+        "T": 19,
+        "B": 24,
+        "C": 36,
+        "S": 141
+      },
+      "mean_position": 0.0,
+      "top_forms": {
+        "qodaiin": 27,
+        "chdal": 19,
+        "chdar": 18,
+        "chdaiin": 16,
+        "dl": 15,
+        "chdam": 10,
+        "qodain": 10,
+        "chdain": 8,
+        "chdor": 8,
+        "shdar": 8
+      }
+    },
+    "opch": {
+      "count": 107,
+      "prefix_distribution": {
+        "null": 103,
+        "ch": 3,
+        "sh": 1
+      },
+      "suffix_distribution": {
+        "edy": 51,
+        "dy": 20,
+        "ey": 23,
+        "null": 1,
+        "eey": 3,
+        "or": 2,
+        "eol": 4,
+        "ar": 1,
+        "al": 1,
+        "ol": 1
+      },
+      "section_distribution": {
+        "H": 11,
+        "T": 3,
+        "B": 24,
+        "C": 11,
+        "S": 58
+      },
+      "mean_position": null,
+      "top_forms": {
+        "opchedy": 50,
+        "opchey": 21,
+        "opchdy": 19,
+        "opcheol": 4,
+        "opcheey": 3,
+        "opchor": 2,
+        "opch": 1,
+        "chopchedy": 1,
+        "shopchey": 1,
+        "opchar": 1
+      }
+    }
+  }
+}

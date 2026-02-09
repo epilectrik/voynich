@@ -4,7 +4,7 @@
 
 ## Statement
 
-AZC constrains Currier B execution by limiting kernel access, not by limiting escape directly. AZC-mediated vocabulary is escape-prone (31.3%) but kernel-shallow (51.3% kernel contact), while B-native vocabulary is escape-resistant (21.5%) but kernel-deep (77.8% kernel contact). Folios with high AZC-mediation lack kernel depth, resulting in simpler execution with less escape needed.
+AZC-appearing vocabulary has characteristic B behavior: escape-prone (31.3%) but kernel-shallow (51.3% kernel contact), while B-native vocabulary is escape-resistant (21.5%) but kernel-deep (77.8% kernel contact). Folios with high AZC-vocabulary proportion lack kernel depth, resulting in simpler execution with less escape needed. AZC does not actively constrain - its vocabulary has intrinsically different operational character.
 
 ## Evidence
 
@@ -81,14 +81,14 @@ Low AZC-mediation means:
 
 ## Functional Interpretation
 
-AZC acts as a **vocabulary bottleneck** that controls execution complexity:
+AZC vocabulary has characteristic operational properties that correlate with execution complexity:
 
-1. **Not about filtering escape** - AZC vocabulary actually enables MORE escape per token
-2. **About limiting kernel access** - AZC vocabulary has less kernel contact
-3. **Controls complexity** - Kernel depth determines execution complexity
-4. **Indirect escape control** - Simple execution needs less escape recovery
+1. **AZC vocabulary enables MORE escape per token** - 31.3% vs 21.5% escape rate
+2. **AZC vocabulary has LESS kernel contact** - 51.3% vs 77.8% kernel contact
+3. **Kernel depth determines execution complexity** - more kernel contact = more complex paths
+4. **Simple execution needs less escape** - explains folio-level correlation
 
-This explains why AZC has zero KERNEL/LINK tokens (C757) - AZC provides vocabulary that interacts with the kernel from the OUTSIDE, not vocabulary that participates in kernel execution directly.
+This explains why AZC has zero KERNEL/LINK tokens (C757) - vocabulary appearing in AZC positions interacts with the kernel from the OUTSIDE, not vocabulary that participates in kernel execution directly. AZC position reflects vocabulary character, not causal control.
 
 ## Cross-References
 

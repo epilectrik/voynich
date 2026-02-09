@@ -1,0 +1,463 @@
+{
+  "title": "Folio Discrimination Analysis",
+  "folio_count": 82,
+  "feature_cv": {
+    "token_count": 0.5699988740770722,
+    "line_count": 0.5453737731329613,
+    "paragraph_count": 0.5453737731329613,
+    "tokens_per_line": 0.3471133304932552,
+    "unique_middle_count": 0.4062911125118292,
+    "compound_rate": 0.39903865811598827,
+    "mean_word_length": 0.06362662612514385,
+    "mean_middle_length": 0.07720615149679975,
+    "articulator_rate": 0.600929902189125,
+    "prefix_diversity": 0.5159714197569446,
+    "suffix_diversity": 0.5174511629229499,
+    "middle_diversity": 0.35937373835762093,
+    "folio_unique_count": 0.7251178403812991,
+    "folio_unique_rate": 0.43814402116342416
+  },
+  "top5_overlap": {
+    "mean_jaccard": 0.2507,
+    "most_common_top5": [
+      [
+        "k",
+        64
+      ],
+      [
+        "edy",
+        64
+      ],
+      [
+        "aiin",
+        30
+      ],
+      [
+        "dy",
+        26
+      ],
+      [
+        "r",
+        22
+      ],
+      [
+        "l",
+        22
+      ],
+      [
+        "ol",
+        20
+      ],
+      [
+        "ar",
+        19
+      ],
+      [
+        "ey",
+        18
+      ],
+      [
+        "e",
+        18
+      ],
+      [
+        "eo",
+        12
+      ],
+      [
+        "iin",
+        10
+      ],
+      [
+        "eey",
+        9
+      ],
+      [
+        "or",
+        9
+      ],
+      [
+        "t",
+        8
+      ]
+    ]
+  },
+  "most_distinctive": [
+    {
+      "folio": "f114r",
+      "unique_count": 34,
+      "total_middles": 145,
+      "examples": [
+        "ofchedaii",
+        "ocp",
+        "dairod",
+        "dod",
+        "edalo",
+        "opailo",
+        "cheshd",
+        "chedai",
+        "lpchd",
+        "opdairo"
+      ]
+    },
+    {
+      "folio": "f105v",
+      "unique_count": 32,
+      "total_middles": 128,
+      "examples": [
+        "iii",
+        "pchesd",
+        "opchedd",
+        "ook",
+        "roee",
+        "ckhoda",
+        "ckhdd",
+        "iish",
+        "ord",
+        "cphe"
+      ]
+    },
+    {
+      "folio": "f105r",
+      "unique_count": 25,
+      "total_middles": 126,
+      "examples": [
+        "rais",
+        "eeeod",
+        "aiisock",
+        "aiiro",
+        "oes",
+        "oeeolc",
+        "yaii",
+        "dll",
+        "oekeo",
+        "eedd"
+      ]
+    },
+    {
+      "folio": "f115r",
+      "unique_count": 24,
+      "total_middles": 137,
+      "examples": [
+        "eopoltee",
+        "oech",
+        "rdy",
+        "eeeos",
+        "tote",
+        "oloro",
+        "airorlc",
+        "cpholro",
+        "cthed",
+        "tolchd"
+      ]
+    },
+    {
+      "folio": "f86v6",
+      "unique_count": 24,
+      "total_middles": 125,
+      "examples": [
+        "archee",
+        "ik",
+        "eeal",
+        "airolk",
+        "holct",
+        "cpholk",
+        "ecf",
+        "qckhe",
+        "oif",
+        "ecfh"
+      ]
+    },
+    {
+      "folio": "f113r",
+      "unique_count": 23,
+      "total_middles": 144,
+      "examples": [
+        "esfc",
+        "eeos",
+        "liir",
+        "kcheo",
+        "yh",
+        "rl",
+        "cphoit",
+        "ckhy",
+        "eoes",
+        "pcho"
+      ]
+    },
+    {
+      "folio": "f104r",
+      "unique_count": 22,
+      "total_middles": 133,
+      "examples": [
+        "osai",
+        "edar",
+        "edacp",
+        "kecho",
+        "eocka",
+        "odc",
+        "teode",
+        "ocheoith",
+        "ctheo",
+        "yteo"
+      ]
+    },
+    {
+      "folio": "f111r",
+      "unique_count": 22,
+      "total_middles": 127,
+      "examples": [
+        "olchd",
+        "aiip",
+        "etals",
+        "keea",
+        "eeks",
+        "re",
+        "eolai",
+        "eodo",
+        "kyde",
+        "eoty"
+      ]
+    },
+    {
+      "folio": "f115v",
+      "unique_count": 22,
+      "total_middles": 127,
+      "examples": [
+        "tad",
+        "opol",
+        "qetd",
+        "eeocho",
+        "qt",
+        "eeok",
+        "talch",
+        "oto",
+        "ros",
+        "teeotc"
+      ]
+    },
+    {
+      "folio": "f106r",
+      "unique_count": 21,
+      "total_middles": 136,
+      "examples": [
+        "leeo",
+        "kchsd",
+        "rarc",
+        "teedo",
+        "tok",
+        "eeolch",
+        "eopc",
+        "tolc",
+        "tchor",
+        "ear"
+      ]
+    },
+    {
+      "folio": "f103r",
+      "unique_count": 19,
+      "total_middles": 113,
+      "examples": [
+        "echypc",
+        "cphh",
+        "lok",
+        "keal",
+        "adch",
+        "ofcho",
+        "eedar",
+        "ikhyk",
+        "efh",
+        "kechc"
+      ]
+    },
+    {
+      "folio": "f106v",
+      "unique_count": 19,
+      "total_middles": 118,
+      "examples": [
+        "opaiir",
+        "amc",
+        "eokc",
+        "eoto",
+        "raro",
+        "eolsho",
+        "olkai",
+        "qed",
+        "odalo",
+        "eolchd"
+      ]
+    },
+    {
+      "folio": "f113v",
+      "unique_count": 19,
+      "total_middles": 124,
+      "examples": [
+        "orar",
+        "keedo",
+        "eykeeo",
+        "samok",
+        "qeeee",
+        "eolc",
+        "eodoiid",
+        "eshd",
+        "eala",
+        "otai"
+      ]
+    },
+    {
+      "folio": "f114v",
+      "unique_count": 18,
+      "total_middles": 120,
+      "examples": [
+        "odal",
+        "dcheo",
+        "qepoep",
+        "oeeo",
+        "ckhed",
+        "epched",
+        "rkchek",
+        "oypsh",
+        "oshsod",
+        "edck"
+      ]
+    },
+    {
+      "folio": "f85r1",
+      "unique_count": 18,
+      "total_middles": 107,
+      "examples": [
+        "pdsheo",
+        "efo",
+        "odeed",
+        "ltsh",
+        "ldo",
+        "tdct",
+        "efshoro",
+        "opak",
+        "oeesea",
+        "dx"
+      ]
+    },
+    {
+      "folio": "f104v",
+      "unique_count": 17,
+      "total_middles": 129,
+      "examples": [
+        "kam",
+        "oeeod",
+        "eodal",
+        "odl",
+        "lchec",
+        "eeta",
+        "ind",
+        "keoc",
+        "olkc",
+        "olksh"
+      ]
+    },
+    {
+      "folio": "f107r",
+      "unique_count": 17,
+      "total_middles": 119,
+      "examples": [
+        "eesod",
+        "okcho",
+        "irolc",
+        "dykch",
+        "lchl",
+        "lshos",
+        "qeeo",
+        "alos",
+        "ilch",
+        "aiisod"
+      ]
+    },
+    {
+      "folio": "f107v",
+      "unique_count": 17,
+      "total_middles": 95,
+      "examples": [
+        "alkc",
+        "dck",
+        "lcheolk",
+        "pchcf",
+        "ockheo",
+        "aiira",
+        "akaiik",
+        "raikc",
+        "lkee",
+        "tysh"
+      ]
+    },
+    {
+      "folio": "f108v",
+      "unique_count": 17,
+      "total_middles": 107,
+      "examples": [
+        "edalk",
+        "loet",
+        "darx",
+        "edeed",
+        "leed",
+        "keeed",
+        "opshol",
+        "ofaramot",
+        "lkeed",
+        "eykech"
+      ]
+    },
+    {
+      "folio": "f112v",
+      "unique_count": 17,
+      "total_middles": 106,
+      "examples": [
+        "alai",
+        "eaik",
+        "oeeek",
+        "oees",
+        "eei",
+        "eeedeed",
+        "teos",
+        "opcheeo",
+        "raif",
+        "odaro"
+      ]
+    }
+  ],
+  "paragraph_distribution": {
+    "54": 2,
+    "46": 3,
+    "45": 6,
+    "44": 4,
+    "37": 2,
+    "38": 1,
+    "47": 3,
+    "51": 3,
+    "49": 2,
+    "50": 2,
+    "53": 1,
+    "41": 3,
+    "10": 2,
+    "9": 4,
+    "16": 4,
+    "11": 9,
+    "7": 2,
+    "15": 2,
+    "14": 2,
+    "19": 1,
+    "8": 1,
+    "12": 3,
+    "13": 3,
+    "34": 3,
+    "35": 2,
+    "40": 1,
+    "32": 2,
+    "42": 1,
+    "43": 1,
+    "31": 2,
+    "27": 1,
+    "39": 2,
+    "22": 1,
+    "5": 1
+  }
+}

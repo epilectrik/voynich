@@ -1,0 +1,1370 @@
+================================================================================
+CURRIER A ANNOTATION CONTEXT
+================================================================================
+Last updated: 2026-01-31
+Source phases: A_PP_PROCEDURAL_MODES, A_PP_INTERNAL_STRUCTURE, CURRIER_A_STRUCTURE_V2,
+               KERNEL_STATE_SEMANTICS, A_INTERNAL_STRATIFICATION, LINE_line_level_analysis,
+               A-ARCH_global_type_system, CLASS_COMPATIBILITY_ANALYSIS
+
+NOTE TO CLAUDE: You may edit this file to add new structural patterns,
+surprising findings, or corrections discovered during annotation. This file
+persists across conversation compactions. Be thoughtful. Consider the whole folio
+structure when annotating lines. When you add observations to folio_notes.json at
+the end of the annotation process, carefully consider the whole folio. Add
+recommendations for future investigations. Be careful not to skip line 1 on
+new folios as you progress. When you compact, keep all the context from this document
+along with context regarding your workflow and current step. If a token is already
+annotated, remember you can add additional notes if you notice something interesting
+about how its used in context to the folio.
+
+================================================================================
+WORKFLOW RULES (MANDATORY)
+================================================================================
+
+LINE-BY-LINE MODE (Currier A, AZC):
+- ONE LINE/POSITION at a time (pacemaker controls advancement)
+- BATCH within a single line is OK (generate script for all tokens in line)
+- NEVER batch across multiple lines/positions
+- Run --next to advance after processing each line
+
+PARAGRAPH MODE (Currier B - PREFERRED):
+- ONE PARAGRAPH at a time
+- Use --paragraph-out to display paragraph and save expected tokens
+- Annotate ALL tokens (even those with existing notes get folio context)
+- Use --paragraph-in to VALIDATE before advancing
+- Only use --paragraph-next AFTER validation passes
+- NEVER skip the validation step
+
+PARAGRAPH MODE WORKFLOW:
+1. Run: python scripts/annotate_next_line.py --paragraph-out
+2. READ THE PARAGRAPH - actually read it, don't just scan for TODOs
+3. ANALYZE before annotating:
+   - What is this paragraph doing? (identification? processing? terminal?)
+   - Where do tokens cluster? (line-initial, line-final, specific lines?)
+   - What co-occurs? (which tokens appear together repeatedly?)
+   - What's unusual? (unexpected positions, rare combinations, anomalies?)
+4. Write OBSERVATION notes, not morphology:
+   BAD:  "chedy: ch-CHSH + edy-MIDDLE" (a script can do this)
+   GOOD: "chedy: Clusters at line-final in P2. Co-occurs with qokeedy 4x.
+          May mark processing completion."
+5. Add notes to ALREADY-ANNOTATED tokens when you see interesting usage
+6. Run: python scripts/annotate_next_line.py --paragraph-in
+7. If validation fails: annotate missing tokens, repeat step 6
+8. If validation passes: python scripts/annotate_next_line.py --paragraph-next
+9. At folio completion: add structural notes to Section 43 below
+
+CRITICAL: The --paragraph-in validation is NOT optional. It ensures no tokens
+are missed. Do NOT skip directly from --paragraph-out to --paragraph-next.
+
+THE POINT OF MANUAL ANNOTATION:
+- Morphology (prefix/middle/suffix) can be automated - DON'T waste notes on it
+- Manual annotation exists to OBSERVE patterns a script cannot see
+- You are building understanding of how the "program" works
+- Each note should add insight, not just classify structure
+
+WHAT TO LOOK FOR:
+- Positional patterns: Does this token prefer line-initial? Line-final?
+- Co-occurrence: What tokens appear together? Is this a "phrase"?
+- Paragraph role: Is this paragraph doing identification, processing, or closing?
+- Kernel access: Where do k/h/e operators appear? What surrounds them?
+- Hazard adjacencies: Any forbidden transitions? What's the context?
+- FL clustering: Where are escape routes? Do they cluster?
+- Anomalies: Anything unexpected based on the structural context below?
+
+DO NOT:
+- NEVER write pure morphology notes (prefix + middle + suffix)
+- NEVER skip the validation step (--paragraph-in)
+- NEVER advance without validation passing
+- NEVER treat this as a checkbox exercise
+
+MUST:
+- ALWAYS read the paragraph as a unit before annotating
+- ALWAYS write observations about usage, not just structure
+- ALWAYS add notes to already-annotated tokens when you see patterns
+- ALWAYS consult the structural context (Parts I-IV below) while annotating
+
+If you find yourself writing "PREFIX + MIDDLE + SUFFIX": STOP.
+Ask: What is this token DOING here? Why is it in THIS position?
+
+================================================================================
+PART I: TOKEN CLASSIFICATION
+================================================================================
+
+================================================================================
+1. RI vs PP VOCABULARY STRATIFICATION (C498, C504-C506)
+================================================================================
+
+Every token belongs to one of two vocabulary tracks:
+
+PP (Pipeline-Participating) - 404 MIDDLEs (39.9%):
+  - Shared with Currier B
+  - Short MIDDLEs: mean 1.46 characters
+  - Broad folio spread: avg 7.96 folios
+  - PP COUNT predicts B class survival (r=0.715)
+
+RI (Registry-Internal) - 609 MIDDLEs (60.1%):
+  - A-exclusive, never reach B execution
+  - Longer MIDDLEs: mean 3.96 characters
+  - Folio-localized: avg 1.34 folios
+  - 95.3% are SINGLETONS (appear exactly once)
+  - Provide within-category discrimination
+
+INFRA tokens (da-, do-, sa-):
+  - Infrastructure/scaffolding vocabulary
+  - Common line boundaries
+  - Not RI or PP - structural markers
+
+Use RecordAnalyzer from voynich.py for classification.
+
+================================================================================
+2. THREE-TIER RI POPULATION (C831)
+================================================================================
+
+RI tokens stratify into three tiers:
+
+SINGLETONS (95.3%):
+  - Appear exactly once in entire corpus
+  - Maximum discrimination power
+  - Folio-unique identifiers
+
+POSITION-LOCKED (~4%):
+  - Repeat but stay in fixed position (INITIAL/MIDDLE/FINAL)
+  - 0% overlap between INITIAL-only and FINAL-only
+  - Positional assignment is LEXICAL, not contextual
+
+LINKERS (0.6% - only 4 tokens):
+  - Cross-paragraph bridges
+  - Appear FINAL in one paragraph, INITIAL in another
+  - cthody, ctho, ctheody, qokoiiin
+  - Convergent topology: many sources → few destinations
+  - f93v receives 5 incoming links (major collector)
+
+================================================================================
+3. PREFIX LEXICAL BIFURCATION (C528)
+================================================================================
+
+RI MIDDLEs have LEXICAL PREFIX requirements (not optional):
+
+PREFIX-REQUIRED (334, 50.1%): ALWAYS appear with PREFIX
+PREFIX-FORBIDDEN (321, 48.1%): NEVER appear with PREFIX
+OPTIONAL (12, 1.8%): Rare - can appear either way
+
+This is per-entry lexical determination, not grammatical choice.
+
+================================================================================
+4. LINE BOUNDARY MARKERS (C357-C360)
+================================================================================
+
+Lines are FORMAL CONTROL BLOCKS (3.3x more regular than random).
+
+LINE-INITIAL markers (3-11x enrichment):
+  - daiin, saiin, sain
+
+LINE-FINAL markers (4-31x enrichment):
+  - am, oly, dy
+
+LINK tokens SUPPRESSED at boundaries (0.60x):
+  - Lines are structural units, not pause points
+  - Grammar forbidden transitions respected across breaks (0/2,338 violations)
+
+================================================================================
+5. LINE-1 CONCENTRATION (C833)
+================================================================================
+
+RI tokens concentrate 3.84x at paragraph first lines.
+Line-1 functions as a "header zone" for material identification.
+
+FLAG: RI tokens NOT in line-1 are unusual and worth noting.
+
+================================================================================
+PART II: MORPHOLOGICAL PATTERNS
+================================================================================
+
+================================================================================
+6. GLOBAL TYPE SYSTEM (C383-C385)
+================================================================================
+
+PREFIX families encode morphological TYPE consistently across A, B, AZC:
+
+INTERVENTION type: ch, sh, ok
+MONITORING type: da, sa
+
+PREFIX classification applies universally - same function in all systems.
+
+================================================================================
+7. GALLOWS DOMAIN COHERENCE (C530)
+================================================================================
+
+When RI contains gallows letter X, PP in same record is enriched for X:
+
+k-domain: 2.3x enrichment
+t-domain: 2.1x enrichment
+p-domain: 4.9x enrichment
+f-domain: 3.6x enrichment
+
+Track gallows consistency within records.
+
+================================================================================
+8. INPUT/OUTPUT MORPHOLOGICAL ASYMMETRY (C839)
+================================================================================
+
+INPUT markers (12 types): ko-, to-, -r, -ey
+OUTPUT markers (5 types): -ry (2.4x asymmetry)
+
+FLAG: Tokens with -ry suffix have strong OUTPUT bias.
+
+================================================================================
+9. RESERVED VOCABULARY SYSTEM (ct-ho) (C837, C889)
+================================================================================
+
+MIDDLEs h, hy, ho are almost exclusively ct-prefixed (98-100%):
+  - Creates dedicated vocabulary for linking/transfer operations
+  - 3 of 4 linker tokens have ct- prefix
+  - Exception: qokoiiin (the only non-ct linker)
+
+Linker targets (f93v, f32r) are structurally distinct:
+  - Enriched for: dch (3.7x), fch (7.7x), sch (5.6x), te (3.6x)
+
+================================================================================
+10. TWO-LANE MODEL (KERNEL_STATE_SEMANTICS)
+================================================================================
+
+CRITICAL TERMINOLOGY:
+  - "QO lane" = energy-intensive alternative pathway (k-rich)
+  - "CHSH lane" = standard processing pathway (e-rich)
+  - qo-prefix marks LANE TRANSITION (switching from CHSH to QO lane)
+  - NOT "escape" - QO operates FURTHER from hazard, not closer
+
+TWO-LAYER CONSTRAINT SYSTEM:
+  1. CONSTRUCTION LAYER (within-token): k -> h -> e ordering (C521)
+     - This is MORPHOLOGICAL grammar for building tokens
+     - k, h, e are token-building components, NOT execution states
+
+  2. EXECUTION LAYER (between-token): UNIFORM at character level
+     - No statistically detectable preferences between consecutive tokens
+     - Real structure exists at the 49-CLASS level, not character level
+
+THE KERNEL (k, h, e) IS MORPHOLOGICAL, NOT EXECUTION:
+  - Kernel grammar constrains how tokens are BUILT
+  - Does NOT constrain how tokens are SEQUENCED in execution
+
+TWO-LANE FOLIO MODEL (C605):
+  CHSH LANE: ch/sh-prefixed EN tokens
+    - e-rich composition (68.7% e-class)
+    - Standard processing pathway
+
+  QO LANE: qo-prefixed EN tokens
+    - k-rich composition (70.7% k-class)
+    - Energy-intensive pathway, operates hazard-distant
+    - qo-prefix = LANE TRANSITION marker (CHSH -> QO transition)
+
+================================================================================
+PART III: PARAGRAPH AND FOLIO STRUCTURE
+================================================================================
+
+================================================================================
+11. TWO PARAGRAPH OPENING TYPES
+================================================================================
+
+WITH-RI paragraphs (63% of paragraphs):
+  - Have RI tokens (material identification)
+  - Broader PP vocabulary
+  - Distinctive prefixes: ke (3.5x), te (4.8x), al, ar, de, lch, lk
+
+WITHOUT-RI paragraphs (37% of paragraphs):
+  - Pure PP first lines (no RI tokens)
+  - Process annotation referencing preceding material
+  - Constrained PP subset (Jaccard 0.164 with WITH-RI)
+  - Distinctive prefixes: ct, dch, tch, po
+  - 1.35x higher linker density
+  - 2.7x enriched for LINK prefixes (ol, or)
+
+BACKWARD REFERENCE PATTERN:
+  - WITHOUT-RI paragraphs show 1.23x backward asymmetry
+  - Sequential convention: process descriptions apply to just-identified material
+
+================================================================================
+12. PARAGRAPH POSITION ARCHITECTURE
+================================================================================
+
+Folio position predicts paragraph cluster type (chi2=102.22, p<0.01):
+
+  - Single-paragraph folios: 2.67x enriched for LINKER_RICH
+  - First paragraphs: Setup function
+  - Middle paragraphs: 1.90x enriched for SHORT_RI_HEAVY (content)
+  - Last paragraphs: 1.99x enriched for MIDDLE_RI_ONLY, 1.62x WITHOUT-RI (closure)
+
+================================================================================
+13. SECTION SPECIALIZATION
+================================================================================
+
+Section H (Herbal, 95 folios):
+  - 48.7% WITHOUT-RI paragraphs
+  - ct-prefix 3.87x enriched in WITHOUT-RI (cross-referencing function)
+
+Section P (Pharmaceutical, 16 folios):
+  - 20.8% WITHOUT-RI paragraphs
+  - qo, ok, ol prefixes enriched (alternative pathway protocols)
+
+Section T (f1r, f58r, f58v):
+  - Contains NO section-characteristic vocabulary
+  - Only infrastructure tokens (generic, universal)
+  - Functions as template/scaffolding, not specialized content
+
+================================================================================
+14. PP NETWORK HUB STRUCTURE
+================================================================================
+
+TOP HUBS (by degree and betweenness centrality):
+  1. iin: degree 277, betweenness 1.0, freq 618 - THE UNIVERSAL HUB
+  2. ol:  degree 208, betweenness 0.467, freq 325
+  3. s:   degree 197, betweenness 0.467, freq 227
+  4. or:  degree 188, betweenness 0.507, freq 249
+  5. y:   degree 181, betweenness 0.32, freq 303
+
+BRIDGE NODES (high betweenness ratio):
+  - l:   bridge_ratio 1.17 (maximum)
+  - iin: bridge_ratio 1.0 (universal connector)
+
+PP POSITIONAL GRAMMAR:
+  CLOSURE MARKERS (concentrate LATE, pos 0.65-0.85): m, am, d, dy, hy
+  OPENING MARKERS (concentrate EARLY): or
+
+================================================================================
+PART IV: ANNOTATION GUIDANCE
+================================================================================
+
+================================================================================
+15. ANNOTATION CHECKLIST
+================================================================================
+
+For each token, consider:
+
+CLASSIFICATION:
+  [ ] Is this PP, RI, or INFRA? (Use RecordAnalyzer)
+  [ ] If RI: Is it PREFIX-REQUIRED or PREFIX-FORBIDDEN?
+  [ ] If RI: Is it a SINGLETON, POSITION-LOCKED, or LINKER?
+
+POSITION:
+  [ ] Position in line (early/middle/late) - does it match expected role?
+  [ ] If RI in line-1: normal header zone
+  [ ] If RI NOT in line-1: FLAG as unusual
+  [ ] Is it a line boundary marker? (daiin, saiin, sain = INITIAL; am, oly, dy = FINAL)
+
+MORPHOLOGY:
+  [ ] Is it a hub token? (iin, ol, s, or, y)
+  [ ] ct-prefix? Check for linking/transfer function
+  [ ] qo-prefix? Lane transition marker (CHSH -> QO)
+  [ ] -ry suffix? Strong OUTPUT marker
+  [ ] Gallows letter present? Check domain coherence in record
+
+CONTEXT:
+  [ ] Paragraph type - WITH-RI or WITHOUT-RI?
+  [ ] If WITHOUT-RI, what preceding material might it reference?
+  [ ] Section context (H vs P vs T) - does behavior match section norms?
+
+================================================================================
+16. QUESTIONS TO ASK (for hypothesis generation)
+================================================================================
+
+STRUCTURAL:
+  - Why does this RI appear HERE and not elsewhere? (87% are single-folio)
+  - Does this MIDDLE contain multiple PP atoms? (85.4% of RI do)
+  - Does it share gallows domain with other tokens in this record?
+  - Is this a potential linker? (FINAL position, ct-prefix, appears INITIAL elsewhere)
+
+RELATIONAL:
+  - Does this token appear in adjacent records? (clustered adjacency C424)
+  - Is this token in a working-memory-sized cluster? (median 2, max 7)
+  - Does the PP composition predict B class survival? (C506)
+
+================================================================================
+17. KNOWLEDGE GAPS (what we don't understand)
+================================================================================
+
+Track observations that might illuminate these open questions:
+
+WHY SPECIFIC RI MIDDLES APPEAR WHERE THEY DO:
+  - We know length predicts uniqueness, but not why 609 specific forms exist
+  - What determines which folio a singleton RI appears on?
+  - Is there recoverable logic beyond "folio-localized"?
+
+LINKER SEMANTIC CONTENT:
+  - Is the relationship AND (aggregation) or OR (alternatives)?
+  - Why do f93v and f32r serve as collectors?
+  - Why is qokoiiin the only non-ct linker?
+
+SECTION-SPECIFIC WITHOUT-RI FUNCTIONS:
+  - Why does Section H have ct-prefix cross-reference pattern?
+  - Why does Section P have qo/ok/ol alternative pathway pattern?
+
+================================================================================
+18. WHAT NOT TO EXPECT
+================================================================================
+
+DISCRETE PROCEDURAL MODES: Data is continuous, not discrete clusters.
+The 3-cluster hypothesis failed (k=2 optimal, silhouette=0.286 weak).
+Don't force tokens into rigid procedural categories.
+
+SECTION-INDEPENDENT PATTERNS: Section confounding is significant (p=0.019).
+H and P sections behave differently. Always note section context.
+
+RI SEMANTIC CONTENT: RI tokens are identifiers, not instructions.
+They discriminate WHAT, not HOW.
+
+================================================================================
+19. DISCOVERED PATTERNS (add during annotation)
+================================================================================
+
+(Add patterns discovered during Currier A annotation here)
+
+================================================================================
+================================================================================
+================================================================================
+
+                         AZC ANNOTATION CONTEXT
+
+================================================================================
+================================================================================
+================================================================================
+Last updated: 2026-02-02
+Source phases: AZC_POSITION_VOCABULARY (01/31), AZC_B_CONSTRAINT_MECHANISM (01/28),
+               AZC_REASSESSMENT (01/28), AZC_FOLIO_DIFFERENTIATION (01/28),
+               AZC_PIPELINE_VALIDATION (01/25), AZC_INTERFACE_VALIDATION (01/19),
+               AZC_TRAJECTORY_SHAPE (01/19), AZC_REACHABILITY_SUPPRESSION (01/17),
+               AZC_AXIS_axis_connectivity (01/16), AZC_constraint_hunting (01/15)
+
+NOTE TO CLAUDE: AZC annotation is POSITION-by-POSITION within each folio.
+The pacemaker iterates through diagram positions (C, R1, R2, R3, S0, S1, S2, etc.).
+Focus on POSITION-VOCABULARY CORRESPONDENCE - does this MIDDLE belong here?
+
+================================================================================
+PART V: AZC CORE PRINCIPLES (READ FIRST)
+================================================================================
+
+================================================================================
+20. THE KEY INSIGHT: AZC IS A LOOKUP TABLE, NOT A FILTER
+================================================================================
+
+CRITICAL MENTAL MODEL:
+  AZC is NOT: A filter, gate, router, or active transformation layer
+  AZC IS: A static lookup table (PREFIX+MIDDLE -> position)
+
+Each PREFIX+MIDDLE combination has EXACTLY ONE fixed position.
+Position encodes VOCABULARY CHARACTER, not causal effect.
+MIDDLE composition determines escape/kernel rates, NOT position itself.
+
+OUTDATED INTERPRETATIONS TO AVOID:
+  | Wrong Model                          | Correct Understanding               |
+  |--------------------------------------|-------------------------------------|
+  | "AZC filters/routes vocabulary"      | AZC is static lookup table          |
+  | "Position determines escape rate"    | MIDDLE composition determines       |
+  | "P is a diagram position"            | P is Currier A paragraph text       |
+  | "Zodiac encodes product types"       | F-AZC-017 FALSIFIED - no strat     |
+  | "AZC families differ functionally"   | Differ in scaffold, not function    |
+
+================================================================================
+21. AZC STATISTICS
+================================================================================
+
+CORPUS:
+  Total AZC tokens: ~2,901 (excluding P-text)
+  P-text tokens: 398 (Currier A material, NOT diagram)
+  AZC folios: ~25-30 folios across A/Z/C sections
+
+TWO FAMILIES (same function, different scaffold):
+  ZODIAC: 15 folios with ORDERED subscripts (R1->R2->R3, S0->S2)
+  A/C: 21 folios with UNORDERED positions
+
+VOCABULARY:
+  70% of MIDDLEs are FOLIO-EXCLUSIVE (appear on only one AZC folio)
+  Only 13 MIDDLEs are UNIVERSAL (appear on multiple AZC folios)
+
+KERNEL ACCESS BOTTLENECK (C765):
+  AZC-mediated vocabulary: 51.3% kernel contact (lower)
+  B-native vocabulary: 77.8% kernel contact (higher)
+  -> High AZC mediation = less kernel access = simpler B execution
+
+================================================================================
+22. POSITION ZONE GUIDE
+================================================================================
+
+                           C (Core/Central)
+--------------------------------------------------------------------------------
+FUNCTION: Interior placement, rotation-tolerant
+ESCAPE: Moderate (~1.4%)
+VOCABULARY: Balanced PREFIX profile, pipeline vocabulary (PP MIDDLEs common)
+
+EXPECT:
+  - No strong PREFIX skew
+  - Moderate kernel access (~50%)
+  - Pipeline-participating vocabulary
+
+ANNOTATE FOR:
+  - Any strong PREFIX concentration (flag as C_PREFIX_ANOMALY)
+  - Universal vs folio-exclusive MIDDLE status
+  - Kernel character presence (k/h/e)
+
+ASK: "Does this MIDDLE feel like it belongs in a central/interior position?"
+
+
+                         R1 (First Restricting)
+--------------------------------------------------------------------------------
+FUNCTION: First interior ring, entry point to restriction sequence
+ESCAPE: Highest in R-series (2.0%)
+VOCABULARY: Broadest pool (~316 unique MIDDLEs across corpus)
+
+EXPECT:
+  - Operational prefixes present
+  - Vocabulary that feels "active" or "beginning commitment"
+
+ANNOTATE FOR:
+  - Vocabulary that seems too specialized for R1 (should be in R2/R3)
+  - Compare to R2/R3 - is this MIDDLE more or less restricted?
+
+ASK: "Could this MIDDLE appear in more restricted positions?"
+
+
+                        R2 (Second Restricting)
+--------------------------------------------------------------------------------
+FUNCTION: Middle interior ring, transition zone
+ESCAPE: Reduced (1.2%)
+VOCABULARY: Narrowed from R1 (~217 unique MIDDLEs)
+
+EXPECT:
+  - More specialized than R1
+  - Vocabulary that feels "mid-commitment"
+
+SPECIAL CASE - f57v R2 (C763, C764):
+  - 100% SINGLE-CHARACTER tokens
+  - ~27-character repeating pattern with p/f variation
+  - Flag as COORDINATE_SYSTEM (structural, not vocabulary)
+
+ANNOTATE FOR:
+  - Vocabulary narrowing from R1
+  - Any MIDDLE that also appears in R1 (note shared status)
+  - f57v anomaly patterns
+
+ASK: "Is this MIDDLE more specialized than typical R1 vocabulary?"
+
+
+                         R3 (Third Restricting)
+--------------------------------------------------------------------------------
+FUNCTION: Innermost interior ring, commitment locked
+ESCAPE: ZERO (0%)
+VOCABULARY: Most restricted (~128 unique MIDDLEs)
+
+EXPECT:
+  - Highly specialized vocabulary
+  - Vocabulary that feels "terminal" or "committed"
+
+ANNOTATE FOR:
+  - Vocabulary that feels "locked in"
+  - Any unexpected breadth (vocabulary seems too general)
+  - Confirm restriction gradient from R1/R2
+
+ASK: "Is this MIDDLE appropriately specialized for zero-escape position?"
+
+
+                    S0/S1/S2 (Stabilization/Boundary)
+--------------------------------------------------------------------------------
+FUNCTION: Boundary markers, outcome locked
+ESCAPE: ZERO (0%)
+VOCABULARY SIGNATURE:
+  ok/ot PREFIX: 42-45% (DOMINANT)
+  qo PREFIX: 0-0.5% (NEARLY ABSENT)
+  AX enrichment: Highest of any zone
+  Feeds B-terminal states: 3.5x enrichment
+
+EXPECT:
+  - Strong ok/ot PREFIX dominance
+  - Near-zero qo PREFIX
+  - Vocabulary that marks boundaries or closures
+
+ANNOTATE FOR:
+  - ok/ot PREFIX presence (expected, confirm)
+  - qo PREFIX presence (ANOMALY - flag immediately as S_QO_ANOMALY)
+  - AX-class morphological patterns
+  - Vocabulary that would naturally flow to terminal B states
+
+NOTE: S2 appears EARLIER than S1 (C320) - ordering is backward from subscript
+
+ASK: "Does this token mark a boundary or completion?"
+
+
+                           P (Paragraph Text)
+--------------------------------------------------------------------------------
+FUNCTION: NOT A DIAGRAM POSITION - this is Currier A material
+PREFIX COSINE: 0.97 to Currier A, 0.74 to diagram
+VOCABULARY: Linguistically Currier A
+
+CRITICAL: P-text should be annotated like Currier A, not like diagrams.
+It happens to appear on AZC folios but is separate from diagram structure.
+
+================================================================================
+23. CLASSIFICATION IN AZC CONTEXT
+================================================================================
+
+PP vs RI in AZC:
+  Most AZC MIDDLEs should be PP (shared with B)
+  RI MIDDLEs are RARE in diagram positions (A-exclusive shouldn't appear much)
+  70% of MIDDLEs are folio-exclusive regardless of PP/RI status
+
+FLAGS:
+  - RI MIDDLE in diagram position: UNEXPECTED (flag as AZC_RI_ANOMALY)
+  - Universal MIDDLE in restricted position: note the context
+
+FOLIO EXCLUSIVITY:
+  70% folio-exclusive = NORMAL
+  Universal MIDDLEs (13 total) anchor navigation across folios
+  Annotate as FOLIO_EXCLUSIVE or UNIVERSAL
+
+KERNEL ACCESS:
+  Track whether tokens contain k, h, or e
+  AZC-mediated should show ~51% kernel contact
+  Flag tokens that break this pattern
+
+================================================================================
+24. KEY PATTERNS TO WATCH
+================================================================================
+
+PATTERN 1: Position-Vocabulary Correspondence Violations
+  When a MIDDLE appears in a zone that doesn't match its vocabulary character:
+  - S-series anomaly: Any qo-prefixed token (should be 0-0.5%)
+  - R-series anomaly: ok/ot dominance increasing (should DECREASE R1->R3)
+  - C-zone anomaly: Extreme PREFIX skew
+
+PATTERN 2: Folio Boundary Patterns
+  - Note when vocabulary "resets" between folios
+  - Flag any MIDDLE that appears on multiple folios (the 30% non-exclusive)
+  - Watch for the 13 universal MIDDLEs as anchoring points
+
+PATTERN 3: f57v R2 Anomaly (C763, C764)
+  The ONLY folio with 100% single-character tokens in R2:
+  - ~27-character repeating pattern with p/f variation
+  - Characters m and n as unique terminators
+  - Coordinate system interpretation (structural, not vocabulary)
+
+PATTERN 4: Kernel Access Patterns
+  Track whether tokens contain k, h, or e:
+  - AZC-mediated should show ~51% kernel contact
+  - Flag tokens that break this pattern
+
+PATTERN 5: Zodiac vs A/C Behavioral Differences
+  - Zodiac: Ordered subscripts, uniform scaffold (C436)
+  - A/C: Unordered positions, varied scaffold
+  - Note any family-specific vocabulary preferences
+
+================================================================================
+25. AZC ANNOTATION CHECKLIST
+================================================================================
+
+For each token, consider:
+
+POSITION:
+  [ ] Position zone (C / R1 / R2 / R3 / S0 / S1 / S2 / other)
+  [ ] Does MIDDLE feel appropriate for this zone?
+  [ ] Any position-vocabulary violation?
+
+PREFIX:
+  [ ] PREFIX identified (ch/sh/ok/ot/qo/da/ol/ct/other)
+  [ ] PREFIX appropriate for zone?
+      - S-series: ok/ot expected, qo ANOMALOUS
+      - R-series: balanced expected
+      - C: balanced expected
+
+MIDDLE:
+  [ ] MIDDLE extracted
+  [ ] MIDDLE folio-exclusive or universal? (13 universal exist)
+  [ ] PP or RI? (RI in AZC diagram = unusual)
+
+KERNEL:
+  [ ] Kernel characters present? (k/h/e)
+  [ ] Does kernel access match expected ~51%?
+
+ANOMALY FLAGS:
+  [ ] S_QO_ANOMALY: qo-prefix in S-series
+  [ ] AZC_RI_ANOMALY: RI MIDDLE in diagram position
+  [ ] C_PREFIX_ANOMALY: strong PREFIX skew in C position
+  [ ] POSITION_VIOLATION: MIDDLE seems misplaced for its character
+
+SUBJECTIVE:
+  [ ] Does vocabulary "fit" this position zone?
+  [ ] If f57v: does this relate to the single-char anomaly?
+
+================================================================================
+26. HIGH-VALUE OBSERVATIONS (extend constraint system)
+================================================================================
+
+DISCOVERIES THAT COULD GENERATE NEW CONSTRAINTS:
+
+1. Position-MIDDLE Binding Exceptions
+   If a MIDDLE reliably appears in MULTIPLE positions, this challenges
+   the "exactly one position" claim. Document: MIDDLE, positions, folios.
+
+2. Kernel Character Correlations by Zone
+   Does k/h/e distribution vary systematically by position?
+   Could refine C765 (kernel access bottleneck).
+
+3. Cross-Folio Vocabulary Patterns
+   Are the 13 universal MIDDLEs concentrated in specific positions?
+   Do folio-exclusive MIDDLEs cluster in specific zones?
+
+4. R-Series Vocabulary Narrowing Verification
+   Constraint claims R1(316)->R2(217)->R3(128) unique MIDDLEs.
+   Does annotation support this monotonic restriction?
+
+5. S-Series -> B-Terminal Flow
+   S-zone vocabulary is claimed 3.5x enriched in B-terminal states.
+   Annotate tokens that feel "terminal" or "boundary-marking".
+
+================================================================================
+27. AZC FALSIFIED HYPOTHESES (don't re-test these)
+================================================================================
+
+F-AZC-017: Zodiac family DOES NOT stratify by product type
+F-AZC-018: A/C family DOES NOT stratify by product type
+Both families show NO internal stratification (p >> 0.05).
+AZC is uniformly product-agnostic.
+
+ROUTING MODEL INVALIDATED (AZC_REASSESSMENT):
+A->AZC->B is CONSTRAINT PROPAGATION, not CONTENT ROUTING.
+Vocabulary filtering, not content routing.
+
+================================================================================
+28. AZC-SPECIFIC CONSTRAINTS REFERENCE
+================================================================================
+
+IDENTITY (C300-C306):
+  C300: 3,299 tokens unclassified by Currier A/B
+  C301: AZC is HYBRID (straddles 70% coverage threshold)
+  C302: Distinct line structure (8 tokens/line median)
+  C303: Elevated LINK density (7.6%)
+  C304: 25.4% unique vocabulary
+  C305: Unique vocabulary has labeling signature
+  C306: Formal PLACEMENT-CODING axis
+
+AXIS CONNECTIVITY (C307-C312):
+  C307: Placement x Morphology dependency (V=0.18)
+  C308: Numeric subscripts are ORDERED
+  C309: Placement transitions show grammar-like constraints
+  C310: Placement constrains repetition depth
+  C311: Boundary vs interior position specialists
+  C312: Section x Placement strong dependency (V=0.631)
+
+MECHANISM (C441-C444, C765):
+  C441: Vocabulary-activated positional encoding
+  C442: Compatibility grouping (not filtering)
+  C443: Positional escape gradient (MIDDLE composition causes)
+  C444: A-type position distribution
+  C765: KERNEL ACCESS BOTTLENECK (AZC 51% vs B-native 78%)
+
+================================================================================
+29. AZC DISCOVERED PATTERNS (add during annotation)
+================================================================================
+
+(Add patterns discovered during AZC annotation here)
+
+================================================================================
+================================================================================
+================================================================================
+
+                         CURRIER B ANNOTATION CONTEXT
+
+================================================================================
+================================================================================
+================================================================================
+Last updated: 2026-02-02
+Source phases: KERNEL_STATE_SEMANTICS, B_CONTROL_FLOW_SEMANTICS,
+               RECOVERY_ARCHITECTURE_DECOMPOSITION, HAV_hazard_avoidance,
+               REVERSE_BRUNSCHWIG_TEST, KERNEL_ordering_constraints
+
+NOTE TO CLAUDE: Currier B annotation is LINE-by-LINE within each folio.
+B is the EXECUTION GRAMMAR - 49 instruction classes compressed into 5 roles.
+Focus on ROLE CLASSIFICATION and POSITION-IN-LINE patterns.
+Folio = program, Line = control block. Tokens are NOT semantic - they are
+instruction roles in a feedback control system.
+
+================================================================================
+PART VI: CURRIER B CORE PRINCIPLES (READ FIRST)
+================================================================================
+
+================================================================================
+30. THE KEY INSIGHT: B IS A CONTROL GRAMMAR, NOT RECIPES
+================================================================================
+
+CRITICAL MENTAL MODEL:
+  B is NOT: Recipes, instructions, ingredient lists, or readable text
+  B IS: A 49-class execution grammar encoding feedback control loops
+
+ARCHITECTURE:
+  - 49 instruction classes (9.8x compression from 479 token types)
+  - 100% grammar coverage (C124) - no exceptions
+  - Universal across all 83 folios (C121)
+  - Classes are deliberately over-specified (~40% reducible)
+
+STRUCTURAL HIERARCHY:
+  FOLIO = Program (independent processing unit)
+  LINE = Control block (positional grammar: SETUP→WORK→CHECK→CLOSE)
+  TOKEN = Instruction role (not semantic content)
+
+REFERENCE: context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml (USE THIS FIRST)
+
+================================================================================
+*** CRITICAL: HT DETECTION - DO THIS BEFORE ANYTHING ELSE ***
+================================================================================
+
+HT (Human Track / Identification Vocabulary) tokens are B-ONLY SINGLETONS.
+
+HOW TO IDENTIFY HT:
+  The pacemaker displays: "Systems: B (1 occurrences)"
+
+  IF Systems == ['B'] AND occurrences == 1:
+      → THIS TOKEN IS HT
+      → Do NOT apply PREFIX-based classification
+      → Annotate as: "HT (B-only singleton). [position notes]"
+
+WHY THIS MATTERS:
+  - ~45% of Line 1 tokens are HT (C840: header zone)
+  - HT tokens are folio-specific identifiers
+  - They do NOT follow PREFIX rules (ch/sh/qo etc.)
+  - Missing HT = failing to recognize identification vocabulary
+
+COMMON MISTAKE:
+  Trying to classify HT tokens by PREFIX (ch→EN, qo→EN, etc.)
+  HT tokens may LOOK like EN/AX tokens but they are NOT operational.
+  They are identification vocabulary that labels the folio/paragraph.
+
+================================================================================
+*** CURRIER B IS WHERE EVERYTHING CONVERGES - ANALYZE THOROUGHLY ***
+================================================================================
+
+Currier B is the EXECUTION layer where Currier A entries and AZC constraints
+come together. This is our best opportunity to observe the complete system.
+
+TOKEN-LEVEL ANALYSIS IS NOT ENOUGH. You must also track:
+
+CROSS-LINE PATTERNS (within folio):
+  - Do the same tokens recur across lines? (doubled tokens)
+  - Is there a progression? (FL stages advancing line-to-line)
+  - Does lane usage (CHSH vs QO) change across lines?
+  - Are CC tokens (daiin, ol) consistently positioned across lines?
+  - Do hazard-involved classes cluster in specific lines?
+
+FOLIO-LEVEL COHERENCE:
+  - What is the overall HT density? (expected ~12% folio-wide, ~45% in L1)
+  - Is there a dominant lane (CHSH or QO)?
+  - What is the kernel distribution pattern?
+  - Are there anomalous lines (very short, very long)?
+  - Do paragraphs show consistent structure?
+
+PATTERNS THAT SPAN LINES:
+  - FL state progression: Do FL tokens show INITIAL→RISING→LATE→TERMINAL
+    progression ACROSS lines (not just within)?
+  - Recovery sequences: After a hazard line, does the next line show
+    recovery patterns (h-entry, FQ triggers)?
+  - Control loop continuity: Do daiin-initiated sequences in one line
+    connect to ol in subsequent lines?
+
+WHAT TO DOCUMENT IN FOLIO NOTES:
+  - Unusual line lengths (Line 6 in f26r had only 2 tokens - why?)
+  - Token repetition patterns across lines
+  - Lane switching events
+  - Any vocabulary that appears in BOTH L1 (header) and body lines
+  - Paragraph boundary markers (gallows-initial tokens)
+  - Folio-unique vocabulary vs shared vocabulary ratio
+
+THE GOAL IS FOLIO-LEVEL UNDERSTANDING, NOT JUST TOKEN CLASSIFICATION.
+
+After annotating all lines, step back and ask:
+  - What is this folio's "program" doing?
+  - What patterns repeat across lines?
+  - What makes this folio different from others?
+  - What should we investigate further?
+
+================================================================================
+31. THE 5-ROLE CLASSIFICATION SYSTEM (C591)
+================================================================================
+
+*** ONLY APPLY THESE ROLES TO NON-HT TOKENS ***
+
+Use the 5 ICC-validated roles (NOT all 49 classes) for practical annotation:
+
+ENERGY (EN) - 18 classes, 31.2% of B:
+  Recognition: ch-, sh-, qo- prefixes
+  Function: Primary processing operations
+  Kernel content: 92% (h+e dominant)
+  Position: Medial concentration
+
+AUXILIARY (AX) - 19 classes, 16.6% of B:
+  Recognition: ok-, ot- prefixes
+  Function: Scaffold layer, position-determined
+  Kernel content: 57%
+  NOTE: 19 classes collapse to ≤2 behavioral groups (C572)
+
+FREQUENT (FQ) - 4 classes, 12.5% of B:
+  Recognition: aiin, or, dy tokens
+  Function: State markers, self-chaining
+  Kernel content: 46% (k+e only, 0% h)
+  Position: Pre-final concentration
+
+CORE CONTROL (CC) - 4 classes, 4.4% of B:
+  Recognition: ONLY daiin and ol (and ol-compounds)
+  Function: Flow control, lane initialization
+  Kernel content: 25%
+  CRITICAL: CC is NOT a broad category - it is literally just:
+    - Class 10 = daiin only
+    - Class 11 = ol only
+    - Class 17 = ol-prefixed compounds (olkeedy, olkeey, etc.)
+
+FLOW (FL) - 4 classes, 4.7% of B:
+  Recognition: ar, al, dar, aly tokens
+  Function: Escape routes, state resolution
+  Kernel content: 0% (primitive substrate)
+  Position: Line-final bias (72.7%)
+
+--------------------------------------------------------------------------------
+ROLE DECISION TREE:
+--------------------------------------------------------------------------------
+*** STEP 0 - CHECK HT FIRST (BEFORE PREFIX CLASSIFICATION) ***
+
+0. Is it B-ONLY and SINGLETON?  → HT (identification vocabulary)
+
+   The pacemaker shows: "Systems: B (1 occurrences)"
+   IF Systems == ['B'] AND total == 1 → THIS IS HT
+
+   HT tokens are folio-specific identifiers. They appear in ~45% of Line 1
+   tokens (header zone) but can appear anywhere. They do NOT follow PREFIX
+   rules because they are identification vocabulary, not operational tokens.
+
+   ANNOTATE AS: "HT (B-only singleton). [any other observations]"
+
+*** STEPS 1-7 - ONLY FOR NON-HT TOKENS ***
+
+1. Is it daiin or ol?           → CC
+2. ol-prefixed compound?        → CC (Class 17)
+3. ch-/sh-/qo- prefix?          → EN
+4. ok-/ot- prefix?              → AX
+5. aiin, or, dy?                → FQ
+6. ar, al, dar, aly?            → FL
+7. Not classifiable?            → UN (unknown)
+
+================================================================================
+32. KERNEL STRUCTURE (k, h, e) - TWO INDEPENDENT LAYERS
+================================================================================
+
+CRITICAL: The kernel operates in TWO INDEPENDENT LAYERS (C521-C522):
+
+CONSTRUCTION LAYER (within-token morphology):
+  - k → h → e positional ordering CONFIRMED
+  - k (position 0.443) = latest/activation
+  - h (position 0.410) = middle/alignment
+  - e (position 0.404) = earliest/stability
+  - This is MORPHOLOGICAL grammar for building tokens
+
+EXECUTION LAYER (between-token class transitions):
+  - UNIFORM at character level - no detectable preferences
+  - Real structure exists at 49-CLASS level, not k/h/e level
+  - Forbidden transitions operate on CLASSES, not characters
+
+WITHIN-TOKEN KERNEL GRAMMAR (C521):
+  Elevated transitions:
+    k → e: 4.0x (energy to stability)
+    h → e: 6.1x (phase to stability)
+  Suppressed transitions:
+    e → h: BLOCKED (0.004x) - cannot destabilize once stable
+    h → k: 0.24x - phase before energy
+  Dominant pattern: 97.2% of kernel trigrams are e→e→e
+
+ROLE KERNEL PROFILES (C780):
+  | Role | Kernel % | Composition |
+  |------|----------|-------------|
+  | EN   | 92%      | h+e dominant |
+  | AX   | 57%      | balanced |
+  | FQ   | 46%      | k+e only, 0% h |
+  | CC   | 25%      | kernel-light |
+  | FL   | 0%       | NO kernel (primitive) |
+
+FLAG: FL tokens having kernel characters is UNEXPECTED - note if seen.
+
+================================================================================
+33. HAZARD TOPOLOGY - 17 FORBIDDEN TRANSITIONS (C109)
+================================================================================
+
+5 HAZARD FAILURE CLASSES:
+  | Class              | Count | %   | Description |
+  |--------------------|-------|-----|-------------|
+  | PHASE_ORDERING     | 7     | 41% | Material in wrong phase |
+  | COMPOSITION_JUMP   | 4     | 24% | Impure fractions |
+  | CONTAINMENT_TIMING | 4     | 24% | Overflow/pressure |
+  | RATE_MISMATCH      | 1     | 6%  | Flow imbalance |
+  | ENERGY_OVERSHOOT   | 1     | 6%  | Thermal damage |
+
+CRITICAL UNDERSTANDING:
+  - Forbidden transitions are DISFAVORED, not prohibited
+  - ~65% compliance rate (34% violations observed)
+  - FL is hazard SOURCE (initiates 4.5x more than receives)
+  - EN is hazard TARGET (absorbs most forbidden transitions)
+
+KEY HAZARD-INVOLVED CLASSES:
+  Atomic (always active): 7, 9, 23 (ar, aiin, dy)
+  Decomposable: 8, 11, 30, 31, 33, 41
+
+FLAG: When tokens from hazard-involved classes appear adjacent, note the
+      transition. Violations (~34%) are meaningful, not errors.
+
+================================================================================
+34. LINE STRUCTURE GRAMMAR (C556-C562)
+================================================================================
+
+Lines follow 5-POSITION FUNCTIONAL ROLE GRAMMAR:
+
+SETUP (line-initial):
+  - Typical roles: CC (daiin), AX_INIT
+  - daiin appears 27.7% line-initial (C557)
+  - Gallows-initial tokens mark paragraph boundaries (3.2x enrichment)
+
+WORK (early-medial):
+  - Typical roles: EN processing
+  - ch/sh/qo interleaving
+  - Primary activity zone
+
+CHECK (mid-line):
+  - Transition/verification zone
+  - or→aiin bigram is checkpoint marker (87.5% directional, C561)
+
+CLOSE (line-final):
+  - Typical roles: FL, AX_FINAL, CC
+  - ary is 100% final (C559)
+  - FL concentrated here (72.7%)
+  - Hierarchy: FL > CC for final position
+
+KEY BIGRAM: or → aiin
+  - or initiates (85%), aiin terminates (90%)
+  - Zero aiin→aiin sequences exist
+  - Marks checkpoint/handoff in line execution
+
+================================================================================
+35. CONTROL LOOP ARCHITECTURE (C810-C820)
+================================================================================
+
+CANONICAL ORDERING:
+
+daiin (0.413) → LINK (0.476) → KERNEL (0.482) → ol (0.511) → FL (0.576)
+    ↑                                                              ↓
+    └──────────────── RECOVERY FEEDBACK ────────────────────────┘
+
+CC TOKEN FUNCTIONS:
+  daiin (Class 10):
+    - Position: 0.370 mean (initial-biased)
+    - Line-initial: 27.1%
+    - Kernel: 0%
+    - Function: Initiates CHSH lane (90.8%)
+
+  ol (Class 11):
+    - Position: 0.461 mean (medial)
+    - Line-initial: 5.0%
+    - Kernel: 0%
+    - Function: Routes to QO lane (57.4%)
+
+  ol-compounds (Class 17):
+    - 88% contain kernel characters
+    - Function: CC-KERNEL interface
+
+LINK OPERATOR:
+  - Position: 41.7% in first third of line (early)
+  - Function: Monitoring checkpoint
+  - Routes to: EN (35.4%) or FQ (11.5% if hazard)
+  - 85.9% have kernel BEFORE, 83.6% have kernel AFTER
+  - "Kernel sandwich" = control transition point
+
+================================================================================
+36. RECOVERY & ESCAPE PATTERNS
+================================================================================
+
+ESCAPE TRIGGER PATTERN (C875):
+  - FQ is triggered by hazard FL states (80.4%)
+  - Most escapes resolve in 1 token (84.3%)
+  - FL stages that trigger FQ:
+    | Stage   | Type   | Pre-FQ % |
+    |---------|--------|----------|
+    | MEDIAL  | HAZARD | 70.4%    |
+    | LATE    | SAFE   | 6.7%     |
+    | EARLY   | HAZARD | 6.2%     |
+
+POST-ESCAPE RECOVERY (C892):
+  - Recovery enters via h (phase-checking), NOT e
+  - Post-FQ kernel distribution: h=24-36%, k=17-25%, e=2-8%
+  - Pathway: FQ → h (check) → e (stabilize)
+  - Jumping straight to e is rare
+
+TWO-LANE MODEL:
+  CHSH LANE (ch/sh-prefixed EN):
+    - Primary recovery pathway (75.2% post-hazard)
+    - e-rich composition (68.7% e-class)
+    - Standard processing
+
+  QO LANE (qo-prefixed EN):
+    - Hazard-distant operations (depleted near hazards, 0.55x)
+    - k-rich composition (70.7% k-class)
+    - Energy-intensive alternative
+
+RECOVERY FREEDOM (C636):
+  - Recovery is UNCONDITIONALLY FREE per folio
+  - 0/13 REGIME effects on kernel absorption
+  - Each folio independently determines strategy
+
+================================================================================
+37. FL STATE INDEX (C897)
+================================================================================
+
+FL MIDDLEs encode a 5-STAGE MATERIAL PROGRESSION:
+
+| MIDDLE    | Stage    | Position | Interpretation |
+|-----------|----------|----------|----------------|
+| i, ii     | INITIAL  | 0.30     | Material just added |
+| r, ar     | RISING   | 0.51     | Heat building |
+| al, l, ol | LATE     | 0.61     | Near completion |
+| o, ly     | TERMINAL | 0.78-0.85| Final state |
+| am, y     | FINAL    | 0.89-0.94| Processing complete |
+
+ANNOTATOR ACTION:
+  When you see FL tokens (ary, daly, dam, ldy, etc.), note the MIDDLE.
+  The MIDDLE indexes the stage of material transformation.
+  Line-final FL tokens (72.7%) typically carry TERMINAL/FINAL MIDDLEs.
+
+================================================================================
+38. PARAGRAPH STRUCTURE (C840-C845)
+================================================================================
+
+PARAGRAPH = MINI-PROGRAM (not recipe step):
+  - Mean 7.1 paragraphs per folio
+  - Parallel independent units, not variations on template
+  - Each paragraph is self-contained processing unit
+
+HEADER-BODY STRUCTURE:
+  Line-1 = HEADER ZONE
+    - 44.9% HT (identification vocabulary)
+    - RI concentration 3.84x (material identification)
+    - Gallows-initial tokens mark boundaries (3.2x enrichment)
+
+  Lines 2+ = BODY ZONE
+    - 29.1% HT
+    - Operational content
+
+PARAGRAPH BOUNDARY MARKERS:
+  - Gallows-initial tokens: t, k, p, f at paragraph start
+  - Transition vocabulary shifts between paragraphs
+
+================================================================================
+PART VII: CURRIER B ANNOTATION GUIDANCE
+================================================================================
+
+================================================================================
+39. WHAT NOT TO EXPECT (COMMON MISCONCEPTIONS)
+================================================================================
+
+| Wrong Expectation              | Correct Understanding        | Constraint |
+|--------------------------------|------------------------------|------------|
+| Tokens have semantic meanings  | Instruction roles only       | C120       |
+| Lines are recipe steps         | Control blocks in loops      | C171       |
+| Similar tokens = similar func  | Same class = same slot only  | C506.b     |
+| Forbidden = never happens      | 34% violation rate           | C789       |
+| 19 AX classes = 19 functions   | ≤2 behavioral groups         | C572       |
+| REGIME changes line grammar    | Changes WHAT, not WHERE      | C821       |
+| HT tokens are transcription err| Identification vocabulary    | C747       |
+
+DO NOT ATTEMPT:
+  - Semantic interpretation of tokens
+  - Mapping tokens to specific substances/materials
+  - Identifying "what this line means"
+  - Distinguishing within-class token variants
+
+================================================================================
+40. ANNOTATION CHECKLIST
+================================================================================
+
+For each token, consider:
+
+*** STEP 0: HT CHECK (DO THIS FIRST) ***
+  [ ] Check pacemaker output: "Systems: B (X occurrences)"
+  [ ] If Systems == B AND occurrences == 1 → THIS IS HT
+  [ ] Annotate: "HT (B-only singleton). [position] [other notes]"
+  [ ] If HT: Skip PREFIX classification (HT is identification vocabulary)
+
+CLASSIFICATION (only for non-HT tokens):
+  [ ] Role identified (EN/AX/FQ/CC/FL or UN)
+  [ ] PREFIX family noted (ch/sh vs qo vs ok/ot vs da/sa)
+  [ ] If CC: Is it daiin, ol, or ol-compound?
+
+KERNEL:
+  [ ] Kernel characters present? (k, h, e)
+  [ ] If FL with kernel: FLAG as anomaly
+  [ ] Note kernel ordering if multiple present
+
+POSITION:
+  [ ] Line position (initial/medial/final)
+  [ ] Does position match expected role?
+    - daiin should be initial
+    - FL should be final
+    - EN should be medial
+
+HAZARD:
+  [ ] Adjacent to hazard-involved class? (7, 9, 23, 30)
+  [ ] If forbidden transition: note, don't ignore
+
+CONTEXT:
+  [ ] Paragraph position (Line-1 header vs body)
+  [ ] Is this gallows-initial? (paragraph boundary)
+  [ ] LINK presence? (monitoring checkpoint)
+
+CROSS-LINE (after each line, before advancing):
+  [ ] Did any tokens in this line appear in previous lines?
+  [ ] What FL stage(s) appeared? Does it advance from previous line?
+  [ ] Lane usage: primarily CHSH or QO?
+  [ ] Any anomalies compared to previous lines?
+  [ ] If short line: flag for folio notes
+
+FOLIO COMPLETION (after all lines):
+  [ ] HT distribution: L1 concentration vs body distribution
+  [ ] Overall lane balance (CHSH vs QO)
+  [ ] Token recurrence map (which tokens appeared multiple times)
+  [ ] FL progression across folio
+  [ ] Anomalous lines documented
+  [ ] Cross-line patterns documented in folio_notes.json
+
+================================================================================
+41. KEY PATTERNS TO WATCH
+================================================================================
+
+PATTERN 1: or → aiin Checkpoint
+  When you see 'or' followed by 'aiin', this is a checkpoint marker.
+  or initiates (85%), aiin terminates (90%).
+  Note when this pattern is present or absent.
+
+PATTERN 2: FL State Progression
+  Track FL MIDDLEs through the line.
+  INITIAL → RISING → LATE → TERMINAL should progress monotonically.
+  Non-monotonic FL sequences are FLAG-worthy.
+
+PATTERN 3: LINK Positioning
+  LINK tokens should appear early (first third).
+  LINK appearing late in line is unusual - note it.
+
+PATTERN 4: Recovery Entry Point
+  After FQ (escape), recovery should enter via h.
+  Direct FQ → e is rare and worth noting.
+
+PATTERN 5: Lane Switching
+  qo-prefix marks switch to QO lane (energy-intensive).
+  Track when folios switch between CHSH and QO processing.
+
+PATTERN 6: Hazard Adjacency
+  FL→EN transitions can be hazardous.
+  When you see FL followed by EN, check if classes are hazard-involved.
+
+--------------------------------------------------------------------------------
+CROSS-LINE PATTERNS (check these after completing each line):
+--------------------------------------------------------------------------------
+
+PATTERN 7: Token Recurrence Across Lines
+  Does the same token appear in multiple lines?
+  - Doubled within line: note positions
+  - Recurring across lines: note which lines, positions
+  - High recurrence may indicate control anchors
+
+PATTERN 8: FL Stage Progression Across Lines
+  Track FL MIDDLEs across the ENTIRE folio, not just within lines.
+  - Line 1 FL: what stage?
+  - Line N FL: did stage advance?
+  - Folio should show overall INITIAL→TERMINAL progression
+
+PATTERN 9: Lane Consistency
+  Does the folio use primarily CHSH or QO lane?
+  - Count ch/sh tokens vs qo tokens
+  - Note where lane switches occur
+  - Is lane switching random or patterned?
+
+PATTERN 10: CC Distribution Across Lines
+  daiin and ol should appear in specific patterns:
+  - daiin: more frequent in early lines? consistently initial?
+  - ol: concentrated in specific lines?
+  - Do CC tokens mark paragraph boundaries?
+
+PATTERN 11: Line Length Anomalies
+  Normal lines: 8-11 tokens
+  Short lines (2-4 tokens): Why? Paragraph boundary? Processing pause?
+  Long lines (12+ tokens): Extended processing sequence?
+
+PATTERN 12: HT Concentration by Line
+  - L1 expected: ~45% HT
+  - Other lines expected: lower HT density
+  - High HT in non-L1: possible paragraph restart
+
+================================================================================
+42. KEY CONSTRAINTS REFERENCE
+================================================================================
+
+FOUNDATIONAL:
+  C121 - 49 instruction classes
+  C124 - 100% grammar coverage
+  C591 - 5 ICC-validated roles
+
+KERNEL:
+  C521 - Within-token k→h→e ordering
+  C522 - Construction vs execution layer independence
+
+HAZARDS:
+  C109 - 17 forbidden transitions, 5 classes
+  C789 - 65% compliance (disfavored not prohibited)
+
+LINE STRUCTURE:
+  C556-C562 - 5-position execution syntax
+  C557 - daiin 27.7% initial
+  C559 - ary 100% final
+
+CONTROL LOOP:
+  C810-C820 - daiin→LINK→KERNEL→ol→FL ordering
+  C874 - daiin/ol control functions
+  C876 - LINK as checkpoint operator
+
+RECOVERY:
+  C636 - Recovery unconditionally free
+  C875 - FQ triggered by hazard FL (80.4%)
+  C892 - Post-FQ recovery via h
+
+STATE:
+  C897 - FL MIDDLE encodes 5-stage progression
+
+================================================================================
+43. DISCOVERED PATTERNS (add during annotation)
+================================================================================
+
+f105r: 36 lines, 273 unique. QO-heavy (qo- throughout). Mixed CHSH/QO lanes.
+       Many hapax UNKNOWN-role tokens. Single detected paragraph.
+
+f105v: 38 lines, 283 unique. Opens with po- (unusual vs da-/pa-). Heavy QO-lane.
+       CHSH+QO lane mixing throughout. High hapax rate, many compound MIDDLEs.
+
+f106r: 46 lines, 297 unique. Line 29 missing. Heavy QO+CHSH mixing.
+       Many long compound MIDDLEs. Triple-e tokens. Unusual prefixes (psh-,tsh-,dl-).
+
+f106v: 47 lines, 308 unique. TWO paragraphs (43+4 lines). Heavy QO+CHSH mixing.
+       Unusual prefixes (fsh-,tsh-,py-,ksh-). Short terminal P2. Doubled -or patterns.
+
+f107r: 51 lines, 316 unique. TWO paragraphs (13+38 lines). Heavy QO+CHSH mixing.
+       Triple-e tokens (sheees, lkeeol). Rare x (salxar). Doubled patterns (kalkal).
+       Unusual q- without qo- (qeeey, qeeoy). P1 opens with pchdlar (gallows-initial).
+
+f107v: 49 lines, 256 unique. SINGLE paragraph. Heavy QO-lane. Triple-e tokens.
+       Unusual q- without qo- (qcthey). Multiple so-INFRA tokens. Long compounds.
+
+f108r: 50 lines, 277 unique. TWO paragraphs (8+42 lines). Repetitive qokedy pattern.
+       Unusual cs- tokens (cseam, csedly). Rare x (todasihx). Many q- without qo-.
+
+f108v: 52 lines, 296 unique. SINGLE paragraph. Quadruple-e tokens (cheeedaiin).
+       Double-s tokens (ssheedal, ssheodain). Rare x (kedarxy). Very long compounds.
+
+================================================================================
+END OF CONTEXT FILE
+================================================================================

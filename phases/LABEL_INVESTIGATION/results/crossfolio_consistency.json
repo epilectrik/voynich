@@ -1,0 +1,150 @@
+{
+  "test": "crossfolio_consistency",
+  "goal": "Verify extension pattern is universal",
+  "summary": {
+    "total_folios": 11,
+    "r_enriched_folios": 7,
+    "h_absent_folios": 11,
+    "r_consistency_pct": 63.63636363636363,
+    "h_consistency_pct": 100.0
+  },
+  "per_folio": [
+    {
+      "folio": "f100r",
+      "total_ext": 11,
+      "r_count": 2,
+      "r_rate": 0.18181818181818182,
+      "h_count": 0,
+      "h_rate": 0.0,
+      "id_rate": 0.6363636363636364,
+      "op_rate": 0.0,
+      "r_enriched": true,
+      "h_absent": true
+    },
+    {
+      "folio": "f101v2",
+      "total_ext": 2,
+      "r_count": 0,
+      "r_rate": 0.0,
+      "h_count": 0,
+      "h_rate": 0.0,
+      "id_rate": 1.0,
+      "op_rate": 0.0,
+      "r_enriched": false,
+      "h_absent": true
+    },
+    {
+      "folio": "f102r1",
+      "total_ext": 8,
+      "r_count": 2,
+      "r_rate": 0.25,
+      "h_count": 0,
+      "h_rate": 0.0,
+      "id_rate": 0.375,
+      "op_rate": 0.125,
+      "r_enriched": true,
+      "h_absent": true
+    },
+    {
+      "folio": "f102r2",
+      "total_ext": 8,
+      "r_count": 1,
+      "r_rate": 0.125,
+      "h_count": 0,
+      "h_rate": 0.0,
+      "id_rate": 0.5,
+      "op_rate": 0.25,
+      "r_enriched": true,
+      "h_absent": true
+    },
+    {
+      "folio": "f102v1",
+      "total_ext": 9,
+      "r_count": 1,
+      "r_rate": 0.1111111111111111,
+      "h_count": 0,
+      "h_rate": 0.0,
+      "id_rate": 0.4444444444444444,
+      "op_rate": 0.2222222222222222,
+      "r_enriched": true,
+      "h_absent": true
+    },
+    {
+      "folio": "f102v2",
+      "total_ext": 5,
+      "r_count": 1,
+      "r_rate": 0.2,
+      "h_count": 0,
+      "h_rate": 0.0,
+      "id_rate": 0.6,
+      "op_rate": 0.0,
+      "r_enriched": true,
+      "h_absent": true
+    },
+    {
+      "folio": "f88v",
+      "total_ext": 6,
+      "r_count": 2,
+      "r_rate": 0.3333333333333333,
+      "h_count": 0,
+      "h_rate": 0.0,
+      "id_rate": 0.5,
+      "op_rate": 0.3333333333333333,
+      "r_enriched": true,
+      "h_absent": true
+    },
+    {
+      "folio": "f89r1",
+      "total_ext": 6,
+      "r_count": 0,
+      "r_rate": 0.0,
+      "h_count": 0,
+      "h_rate": 0.0,
+      "id_rate": 0.0,
+      "op_rate": 0.5,
+      "r_enriched": false,
+      "h_absent": true
+    },
+    {
+      "folio": "f89r2",
+      "total_ext": 5,
+      "r_count": 2,
+      "r_rate": 0.4,
+      "h_count": 0,
+      "h_rate": 0.0,
+      "id_rate": 0.6,
+      "op_rate": 0.0,
+      "r_enriched": true,
+      "h_absent": true
+    },
+    {
+      "folio": "f99r",
+      "total_ext": 12,
+      "r_count": 1,
+      "r_rate": 0.08333333333333333,
+      "h_count": 0,
+      "h_rate": 0.0,
+      "id_rate": 0.4166666666666667,
+      "op_rate": 0.16666666666666666,
+      "r_enriched": false,
+      "h_absent": true
+    },
+    {
+      "folio": "f99v",
+      "total_ext": 15,
+      "r_count": 1,
+      "r_rate": 0.06666666666666667,
+      "h_count": 0,
+      "h_rate": 0.0,
+      "id_rate": 0.5333333333333333,
+      "op_rate": 0.0,
+      "r_enriched": false,
+      "h_absent": true
+    }
+  ],
+  "verdict": {
+    "r_consistent": true,
+    "h_consistent": true,
+    "overall_consistent": true
+  }
+}

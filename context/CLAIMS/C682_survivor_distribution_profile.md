@@ -4,7 +4,13 @@
 
 ## Finding
 
-Under full morphological filtering (C502.a), each A record admits a **mean of 11.08 / 49 B instruction classes** (22.6%). The distribution is right-skewed: median 10, std 5.79, range 0-38. Only 1.2% of records (18/1562) eliminate all B classes entirely.
+Under full morphological filtering (C502.a), each A record admits a **mean of 11.08 / 49 B instruction classes** (22.6%).
+
+> **Aggregation Note (2026-01-30):** This constraint analyzes at line level (1,562 units).
+> Per C881, A records are paragraphs (342 units). Per C885, the operational unit for
+> A-B vocabulary correspondence is the A FOLIO (114 units, 81% coverage).
+
+The distribution is right-skewed: median 10, std 5.79, range 0-38. Only 1.2% of records (18/1562) eliminate all B classes entirely.
 
 ## Key Numbers
 

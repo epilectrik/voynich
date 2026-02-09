@@ -1,0 +1,184 @@
+{
+  "total_records": 317,
+  "connected_records": 297,
+  "connection_rate": 0.9369085173501577,
+  "linking_tokens": 129,
+  "total_edges": 2167,
+  "chains_found": 1500290,
+  "max_chain_length": 6,
+  "cross_folio_chains": 1500287,
+  "same_folio_chains": 3,
+  "top_linking_tokens": [
+    {
+      "token": "daiin",
+      "edges": 845
+    },
+    {
+      "token": "chor",
+      "edges": 192
+    },
+    {
+      "token": "chol",
+      "edges": 182
+    },
+    {
+      "token": "shol",
+      "edges": 83
+    },
+    {
+      "token": "dy",
+      "edges": 53
+    },
+    {
+      "token": "cheor",
+      "edges": 50
+    },
+    {
+      "token": "ar",
+      "edges": 42
+    },
+    {
+      "token": "ol",
+      "edges": 40
+    },
+    {
+      "token": "cthy",
+      "edges": 35
+    },
+    {
+      "token": "cthor",
+      "edges": 33
+    },
+    {
+      "token": "cheol",
+      "edges": 28
+    },
+    {
+      "token": "shor",
+      "edges": 27
+    },
+    {
+      "token": "dair",
+      "edges": 25
+    },
+    {
+      "token": "chy",
+      "edges": 24
+    },
+    {
+      "token": "shy",
+      "edges": 24
+    },
+    {
+      "token": "s",
+      "edges": 24
+    },
+    {
+      "token": "sho",
+      "edges": 21
+    },
+    {
+      "token": "or",
+      "edges": 20
+    },
+    {
+      "token": "sheol",
+      "edges": 18
+    },
+    {
+      "token": "chey",
+      "edges": 18
+    }
+  ],
+  "top_output_hubs": [
+    {
+      "record": "f47r:1",
+      "out_degree": 34
+    },
+    {
+      "record": "f7r:1",
+      "out_degree": 33
+    },
+    {
+      "record": "f20v:0",
+      "out_degree": 32
+    },
+    {
+      "record": "f56v:1",
+      "out_degree": 32
+    },
+    {
+      "record": "f35v:2",
+      "out_degree": 32
+    },
+    {
+      "record": "f54r:3",
+      "out_degree": 31
+    },
+    {
+      "record": "f93r:3",
+      "out_degree": 30
+    },
+    {
+      "record": "f49r:2",
+      "out_degree": 30
+    },
+    {
+      "record": "f15v:0",
+      "out_degree": 29
+    },
+    {
+      "record": "f36v:0",
+      "out_degree": 24
+    }
+  ],
+  "top_input_sinks": [
+    {
+      "record": "f89r2:1",
+      "in_degree": 106
+    },
+    {
+      "record": "f100r:1",
+      "in_degree": 76
+    },
+    {
+      "record": "f22r:3",
+      "in_degree": 65
+    },
+    {
+      "record": "f102v1:3",
+      "in_degree": 58
+    },
+    {
+      "record": "f13r:1",
+      "in_degree": 56
+    },
+    {
+      "record": "f21r:1",
+      "in_degree": 54
+    },
+    {
+      "record": "f99r:0",
+      "in_degree": 53
+    },
+    {
+      "record": "f2r:0",
+      "in_degree": 53
+    },
+    {
+      "record": "f10v:0",
+      "in_degree": 53
+    },
+    {
+      "record": "f22r:1",
+      "in_degree": 53
+    }
+  ],
+  "chain_length_distribution": {
+    "3": 674,
+    "4": 5085,
+    "5": 34375,
+    "6": 1460054,
+    "2": 102
+  }
+}

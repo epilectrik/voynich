@@ -1,0 +1,15 @@
+{
+  "initial_only_count": 189,
+  "final_only_count": 127,
+  "shared_count": 88,
+  "initial_only_survival_mean": 0.031100787198348172,
+  "final_only_survival_mean": 0.053869790666410594,
+  "para_classes": {
+    "BALANCED": 255,
+    "INITIAL_DOM": 25,
+    "FINAL_DOM": 30,
+    "SHORT": 7
+  },
+  "a_folios_analyzed": 49,
+  "b_folios_analyzed": 82
+}

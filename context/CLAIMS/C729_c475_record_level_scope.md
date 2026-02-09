@@ -19,7 +19,7 @@ When PP MIDDLEs are freely shuffled across lines within a folio (preserving line
 
 C475 was originally established on AZC folios. This result confirms the same incompatibility structure operates on Currier A records. MIDDLEs that never co-occur in AZC contexts also never co-occur within A lines. The incompatibility constraint is system-wide, applying to all text contexts where MIDDLEs appear together.
 
-This means that each A record (line) is a **legal combination** of MIDDLEs drawn from the folio pool — the incompatibility filter operates before or during line composition.
+This means that each A record (line) is a **legal combination** of MIDDLEs drawn from the folio pool — incompatible combinations simply don't appear (they reflect fixed positional encoding).
 
 ## Key Numbers
 

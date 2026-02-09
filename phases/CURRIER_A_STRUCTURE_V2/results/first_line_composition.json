@@ -1,0 +1,20 @@
+{
+  "test": "FIRST_LINE_COMPOSITION",
+  "counts": {
+    "with_ri": 205,
+    "without_ri": 137
+  },
+  "first_line_metrics": {
+    "avg_ri_with": 1.673170731707317,
+    "avg_ri_without": 0.072992700729927,
+    "avg_pp_with": 7.092682926829268,
+    "avg_pp_without": 6.649635036496351
+  },
+  "categories": {
+    "PURE_PP": 127,
+    "LINKER_ONLY": 10
+  },
+  "pct_pure_pp": 92.7007299270073,
+  "pct_linker_only": 7.299270072992701,
+  "first_line_type": "PURE_PP"
+}

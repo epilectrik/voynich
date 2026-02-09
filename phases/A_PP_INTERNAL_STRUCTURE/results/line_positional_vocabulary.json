@@ -1,0 +1,236 @@
+{
+  "middle_enrichment": [
+    {
+      "middle": "m",
+      "initial_count": 0,
+      "final_count": 45,
+      "enrichment_final": Infinity
+    },
+    {
+      "middle": "hy",
+      "initial_count": 0,
+      "final_count": 28,
+      "enrichment_final": Infinity
+    },
+    {
+      "middle": "am",
+      "initial_count": 2,
+      "final_count": 27,
+      "enrichment_final": 13.499999999999998
+    },
+    {
+      "middle": "dy",
+      "initial_count": 6,
+      "final_count": 65,
+      "enrichment_final": 10.833333333333334
+    },
+    {
+      "middle": "h",
+      "initial_count": 3,
+      "final_count": 30,
+      "enrichment_final": 10.0
+    },
+    {
+      "middle": "om",
+      "initial_count": 2,
+      "final_count": 18,
+      "enrichment_final": 9.0
+    },
+    {
+      "middle": "al",
+      "initial_count": 6,
+      "final_count": 27,
+      "enrichment_final": 4.5
+    },
+    {
+      "middle": "s",
+      "initial_count": 20,
+      "final_count": 50,
+      "enrichment_final": 2.5
+    },
+    {
+      "middle": "in",
+      "initial_count": 15,
+      "final_count": 29,
+      "enrichment_final": 1.9333333333333333
+    },
+    {
+      "middle": "aiin",
+      "initial_count": 19,
+      "final_count": 36,
+      "enrichment_final": 1.8947368421052633
+    },
+    {
+      "middle": "d",
+      "initial_count": 23,
+      "final_count": 41,
+      "enrichment_final": 1.7826086956521738
+    },
+    {
+      "middle": "i",
+      "initial_count": 11,
+      "final_count": 16,
+      "enrichment_final": 1.4545454545454544
+    },
+    {
+      "middle": "iin",
+      "initial_count": 94,
+      "final_count": 133,
+      "enrichment_final": 1.4148936170212765
+    },
+    {
+      "middle": "y",
+      "initial_count": 49,
+      "final_count": 63,
+      "enrichment_final": 1.2857142857142856
+    },
+    {
+      "middle": "ain",
+      "initial_count": 10,
+      "final_count": 10,
+      "enrichment_final": 1.0
+    },
+    {
+      "middle": "l",
+      "initial_count": 54,
+      "final_count": 54,
+      "enrichment_final": 1.0
+    },
+    {
+      "middle": "od",
+      "initial_count": 32,
+      "final_count": 31,
+      "enrichment_final": 0.96875
+    },
+    {
+      "middle": "ok",
+      "initial_count": 16,
+      "final_count": 15,
+      "enrichment_final": 0.9375
+    },
+    {
+      "middle": "r",
+      "initial_count": 69,
+      "final_count": 56,
+      "enrichment_final": 0.8115942028985508
+    },
+    {
+      "middle": "e",
+      "initial_count": 30,
+      "final_count": 24,
+      "enrichment_final": 0.7999999999999999
+    },
+    {
+      "middle": "ar",
+      "initial_count": 19,
+      "final_count": 13,
+      "enrichment_final": 0.6842105263157894
+    },
+    {
+      "middle": "t",
+      "initial_count": 31,
+      "final_count": 19,
+      "enrichment_final": 0.6129032258064516
+    },
+    {
+      "middle": "eol",
+      "initial_count": 19,
+      "final_count": 11,
+      "enrichment_final": 0.5789473684210527
+    },
+    {
+      "middle": "o",
+      "initial_count": 109,
+      "final_count": 63,
+      "enrichment_final": 0.5779816513761467
+    },
+    {
+      "middle": "ey",
+      "initial_count": 21,
+      "final_count": 12,
+      "enrichment_final": 0.5714285714285714
+    },
+    {
+      "middle": "k",
+      "initial_count": 46,
+      "final_count": 25,
+      "enrichment_final": 0.5434782608695652
+    },
+    {
+      "middle": "ol",
+      "initial_count": 86,
+      "final_count": 34,
+      "enrichment_final": 0.3953488372093023
+    },
+    {
+      "middle": "eo",
+      "initial_count": 24,
+      "final_count": 9,
+      "enrichment_final": 0.37500000000000006
+    },
+    {
+      "middle": "tch",
+      "initial_count": 19,
+      "final_count": 6,
+      "enrichment_final": 0.3157894736842105
+    },
+    {
+      "middle": "ch",
+      "initial_count": 45,
+      "final_count": 12,
+      "enrichment_final": 0.26666666666666666
+    },
+    {
+      "middle": "or",
+      "initial_count": 117,
+      "final_count": 21,
+      "enrichment_final": 0.1794871794871795
+    },
+    {
+      "middle": "tc",
+      "initial_count": 19,
+      "final_count": 3,
+      "enrichment_final": 0.15789473684210525
+    },
+    {
+      "middle": "eey",
+      "initial_count": 25,
+      "final_count": 3,
+      "enrichment_final": 0.12000000000000001
+    }
+  ],
+  "terminal_markers": {
+    "at_final": 126,
+    "at_initial": 7,
+    "chi2": 109.38468517096584,
+    "p_value": 1.3365824984055875e-25
+  },
+  "reference_markers": {
+    "at_initial": 316,
+    "at_final": 224,
+    "enrichment_at_initial": 1.4107142857142856
+  },
+  "top_final_words": {
+    "dy": 51,
+    "dam": 25,
+    "dan": 11,
+    "dom": 6,
+    "sam": 3,
+    "chdy": 3,
+    "n": 3,
+    "m": 3,
+    "ytody": 1,
+    "kchdy": 1,
+    "kom": 1,
+    "tan": 1,
+    "dchm": 1,
+    "kan": 1,
+    "qody": 1,
+    "mol": 1,
+    "dady": 1,
+    "mar": 1,
+    "dys": 1,
+    "tom": 1
+  },
+  "finding": "A lines have positional structure: INITIAL=reference, FINAL=closure"
+}

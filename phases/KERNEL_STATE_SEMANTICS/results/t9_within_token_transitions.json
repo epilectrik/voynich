@@ -1,0 +1,88 @@
+{
+  "total_bigrams": 95979,
+  "kernel_transitions": {
+    "k->k": {
+      "observed": 0,
+      "expected": 0,
+      "ratio": 0,
+      "c521_claim": "--"
+    },
+    "k->h": {
+      "observed": 559,
+      "expected": 505.7,
+      "ratio": 1.105,
+      "c521_claim": "1.10x"
+    },
+    "k->e": {
+      "observed": 2850,
+      "expected": 709.6,
+      "ratio": 4.016,
+      "c521_claim": "4.32x"
+    },
+    "h->k": {
+      "observed": 121,
+      "expected": 505.7,
+      "ratio": 0.239,
+      "c521_claim": "0.22"
+    },
+    "h->h": {
+      "observed": 50,
+      "expected": 700.5,
+      "ratio": 0.071,
+      "c521_claim": "--"
+    },
+    "h->e": {
+      "observed": 5991,
+      "expected": 983.0,
+      "ratio": 6.095,
+      "c521_claim": "7.00x"
+    },
+    "e->k": {
+      "observed": 313,
+      "expected": 709.6,
+      "ratio": 0.441,
+      "c521_claim": "0.27"
+    },
+    "e->h": {
+      "observed": 4,
+      "expected": 983.0,
+      "ratio": 0.004,
+      "c521_claim": "0.00"
+    },
+    "e->e": {
+      "observed": 3720,
+      "expected": 1379.4,
+      "ratio": 2.697,
+      "c521_claim": "--"
+    }
+  },
+  "validations": [
+    [
+      "e->h blocked",
+      true,
+      "0.00 < 0.1"
+    ],
+    [
+      "h->k suppressed",
+      true,
+      "0.24 < 0.5"
+    ],
+    [
+      "e->k suppressed",
+      true,
+      "0.44 < 0.5"
+    ],
+    [
+      "h->e elevated",
+      true,
+      "6.09 > 3.0"
+    ],
+    [
+      "k->e elevated",
+      true,
+      "4.02 > 2.0"
+    ]
+  ],
+  "passed": 5,
+  "total_claims": 5
+}

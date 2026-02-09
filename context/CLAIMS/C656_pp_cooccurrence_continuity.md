@@ -4,7 +4,13 @@
 
 ## Finding
 
-PP MIDDLEs (404 total, 203 with ≥3 A-record occurrences) form a continuous co-occurrence space with no discrete pools. Jaccard similarity matrix: 76.0% zero pairs, mean non-zero Jaccard=0.023, max=0.246. Hierarchical clustering (UPGMA, Ward) yields maximum silhouette of 0.016 across k=2..20 (threshold: 0.25). All 203 filtered PP form a single connected component. Within-Herbal analysis confirms (163 PP, sil=0.020). Section NMI=0.087 — section membership does not drive co-occurrence.
+PP MIDDLEs (404 total, 203 with ≥3 A-record occurrences) form a continuous co-occurrence space with no discrete pools.
+
+> **Aggregation Note (2026-01-30):** This constraint analyzes PP co-occurrence at line level
+> (1,553 A records). Per C881, A records are paragraphs (342 units). Per C885, the
+> operational unit for A-B vocabulary correspondence is the A FOLIO (114 units, 81% coverage).
+
+Jaccard similarity matrix: 76.0% zero pairs, mean non-zero Jaccard=0.023, max=0.246. Hierarchical clustering (UPGMA, Ward) yields maximum silhouette of 0.016 across k=2..20 (threshold: 0.25). All 203 filtered PP form a single connected component. Within-Herbal analysis confirms (163 PP, sil=0.020). Section NMI=0.087 — section membership does not drive co-occurrence.
 
 ## Evidence
 

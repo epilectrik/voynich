@@ -1,0 +1,49 @@
+{
+  "summary": {
+    "chi2": 3.895754815209571,
+    "p_value": 0.4202976958760607,
+    "terminal_trend_rho": -0.5,
+    "terminal_trend_p": 0.6666666666666667,
+    "initial_trend_rho": -0.5,
+    "initial_trend_p": 0.6666666666666667
+  },
+  "fl_rates_by_position": {
+    "early": {
+      "INITIAL": 0.07282170871316515,
+      "LATE": 0.08681365274538902,
+      "TERMINAL": 0.08914564341742633
+    },
+    "middle": {
+      "INITIAL": 0.07541625857002938,
+      "LATE": 0.09174012406137773,
+      "TERMINAL": 0.09516813581456089
+    },
+    "late": {
+      "INITIAL": 0.06717198118139049,
+      "LATE": 0.08403031887088343,
+      "TERMINAL": 0.07605854678515421
+    }
+  },
+  "raw_counts": {
+    "early": {
+      "LATE": 819,
+      "TERMINAL": 841,
+      "INITIAL": 687
+    },
+    "middle": {
+      "TERMINAL": 583,
+      "INITIAL": 462,
+      "LATE": 562
+    },
+    "late": {
+      "LATE": 643,
+      "INITIAL": 514,
+      "TERMINAL": 582
+    }
+  },
+  "token_counts": {
+    "early": 9434,
+    "middle": 6126,
+    "late": 7652
+  }
+}

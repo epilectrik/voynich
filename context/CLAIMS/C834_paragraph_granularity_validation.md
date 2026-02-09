@@ -8,6 +8,10 @@
 
 The INITIAL vs FINAL RI distinction and first-line RI concentration are visible ONLY at paragraph level, validating the paragraph (gallows-initial chunk) as the correct operational record size.
 
+> **Scope Clarification (2026-01-30):** Paragraph is the correct unit for A-internal structure
+> (RI positions, record boundaries). For A-B vocabulary correspondence, C885 establishes
+> that folio is the operational unit (81% coverage vs paragraph's 58%).
+
 ## Evidence
 
 From t15_granularity_validation.py:

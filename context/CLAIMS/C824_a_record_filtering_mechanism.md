@@ -10,6 +10,11 @@ The A->B filtering mechanism is **structurally real**:
 
 This confirms C502 (~80% filtering) and validates the token-filtering mechanism.
 
+> **Aggregation Note (2026-01-30):** This constraint analyzes at line level (1,559 "A-records").
+> Per C881, A records are paragraphs (342 units). Per C885, the operational unit for A-B
+> vocabulary correspondence is the A FOLIO (114 units, 81% coverage). Line-level analysis
+> shows that aggregation helps; folio-level is required for sufficient coverage.
+
 **NOTE:** Original T1-T4 tests used a subset-viability model (later shown to be wrong question).
 See C826 for model reconciliation: C502 token filtering is the correct interpretation.
 

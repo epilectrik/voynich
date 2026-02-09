@@ -1,8 +1,27 @@
 # Recipe Triangulation Methodology
 
 **Tier**: 3 (Interpretive - requires Brunschwig alignment)
-**Status**: REVISED - Only 2 materials validated (chicken, thyme)
-**Phase**: ANIMAL_PRECISION_CORRELATION
+**Status**: INVALIDATED - Methodology was based on incorrect record unit
+**Phase**: ANIMAL_PRECISION_CORRELATION, MATERIAL_MAPPING_V2
+
+---
+
+## CRITICAL INVALIDATION (2026-01-29)
+
+**The entire methodology described below is INVALID because it treats lines as records.**
+
+A records are **paragraphs**, not lines. Initial RI (material ID) appears in the **first line** of a paragraph, not as the first token of a "record" defined by line.
+
+**Evidence:**
+- eoschso (MIDDLE of "okeoschso") appears at position 41/70 in paragraph A_268
+- This is in the MIDDLE of the paragraph, not the first line
+- Therefore eoschso is NOT an initial RI (material identifier)
+
+**The eoschso = chicken identification is INVALID.**
+
+See `phases/MATERIAL_MAPPING_V2/FINDINGS.md` for corrected paragraph-level methodology.
+
+---
 
 ---
 
@@ -197,7 +216,7 @@ Match PREFIX profile to instruction sequence:
 | [AUX, UNKNOWN] | High aux only |
 | [UNKNOWN, LINK] | Link operations |
 
-**Example result**: eoschso was the only animal RI token in a record with BOTH escape PP (ke, keo) AND aux PP (ch), matching chicken's unique [e_ESCAPE, AUX, UNKNOWN, e_ESCAPE] pattern.
+**Example result (INVALIDATED)**: ~~eoschso was the only animal RI token in a record with BOTH escape PP (ke, keo) AND aux PP (ch), matching chicken's unique [e_ESCAPE, AUX, UNKNOWN, e_ESCAPE] pattern.~~ This finding is invalid because eoschso is not initial RI - it appears at position 41/70 in paragraph A_268, not in the first line.
 
 ---
 
@@ -237,7 +256,9 @@ Expanding to chicken-like folios (relaxed threshold): f40v, f41v, f85r1, f94v, f
 ### Step 8 Result
 Only **eoschso** has BOTH escape AND aux PP, matching chicken's [e_ESCAPE, AUX, UNKNOWN, e_ESCAPE].
 
-**Conclusion**: eoschso = ennen (chicken)
+**~~Conclusion: eoschso = ennen (chicken)~~**
+
+**INVALIDATED (2026-01-29):** This conclusion is based on treating lines as records. eoschso appears at position 41/70 in paragraph A_268 - it is NOT initial RI.
 
 ---
 
@@ -245,20 +266,21 @@ Only **eoschso** has BOTH escape AND aux PP, matching chicken's [e_ESCAPE, AUX, 
 
 | Material | Brunschwig | Token | Location | CORRECTED Steps | Confidence |
 |----------|------------|-------|----------|-----------------|------------|
-| Chicken | hennen | **eoschso** | f90r1:6 | AUX, e_ESCAPE, FLOW, k_ENERGY | HIGH |
+| ~~Chicken~~ | ~~hennen~~ | ~~eoschso~~ | ~~f90r1:6~~ | ~~AUX, e_ESCAPE, FLOW, k_ENERGY~~ | **INVALIDATED** |
 | Thyme | quendel | **keolo** | f99v:7 | AUX, e_ESCAPE | MEDIUM (needs reverification) |
 
 ### INVALIDATED Identifications
 
 | Material | Token | Reason |
 |----------|-------|--------|
+| **Chicken** | **eoschso** | **METHODOLOGY ERROR** - eoschso is NOT initial RI; appears at position 41/70 in paragraph A_268 (middle lines, not first line) |
 | ~~Frog~~ | ~~ofy~~ | OCR CORRUPTED - no readable procedure in source text |
 | ~~Scharlach~~ | ~~chald~~ | MISCLASSIFIED - Scharlach is CLARY SAGE (herb), not kermes insect (animal) |
 | ~~Beste~~ | ~~heo~~ | FALSE POSITIVE - "beste" is an adjective, not a material name |
 
 ### Discrimination Notes (Updated)
 
-**Chicken identification remains valid** despite sequence correction. The AUX+e_ESCAPE+FLOW+k_ENERGY pattern is unique among curated animals. The PREFIX profile matching (high escape + high aux) still discriminates eoschso.
+**Chicken identification is INVALID.** The methodology treated lines as records, but A records are paragraphs. eoschso appears in the middle of its paragraph, not as initial RI in the first line.
 
 **Thyme identification needs reverification** - original claimed [RECOVERY, LINK] but actual text shows [AUX, e_ESCAPE]. Same pattern as many herbs. keolo may have been found via different mechanism than claimed.
 

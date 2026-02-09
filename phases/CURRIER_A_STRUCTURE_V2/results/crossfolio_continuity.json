@@ -1,0 +1,25 @@
+{
+  "test": "CROSSFOLIO_CONTINUITY",
+  "cross_folio_overlap": {
+    "without_ri_first": 0.2093914350103273,
+    "with_ri_first": 0.2228896056859226,
+    "ratio": 0.9394401069800636
+  },
+  "within_folio_overlap": {
+    "without_ri": 0.20161691736514342,
+    "with_ri": 0.18857690105844088
+  },
+  "transition_counts": {
+    "WITHOUT_RI -> WITHOUT_RI": 23,
+    "WITHOUT_RI -> WITH_RI": 31,
+    "WITH_RI -> WITHOUT_RI": 18,
+    "WITH_RI -> WITH_RI": 39
+  },
+  "transition_overlaps": {
+    "WITHOUT_RI -> WITHOUT_RI": 0.2191980436896754,
+    "WITHOUT_RI -> WITH_RI": 0.21943178099284197,
+    "WITH_RI -> WITHOUT_RI": 0.19686076836449373,
+    "WITH_RI -> WITH_RI": 0.22563813300606364
+  },
+  "verdict": "INCONCLUSIVE"
+}

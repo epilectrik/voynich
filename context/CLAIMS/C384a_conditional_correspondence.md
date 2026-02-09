@@ -9,7 +9,7 @@
 C384 does not prohibit correspondence between Currier A records and Currier B folios that emerges conditionally through:
 
 - Multi-axis constraint composition
-- AZC legality routing
+- AZC positional encoding
 - Survivor-set collapse (C481)
 - External expert priors (e.g., Brunschwig)
 - Multi-dimensional PP convergence at RECORD level
@@ -55,18 +55,24 @@ PERMITTED (C384.a):
 
 > **"Currier A never names anything, but Currier A records can correspond to Currier B execution contexts when sufficient constraints collapse through AZC."**
 
-## Evidence: ANIMAL_PRECISION_CORRELATION
+## Evidence: ANIMAL_PRECISION_CORRELATION + MATERIAL_MAPPING_V2
 
-The recipe triangulation methodology (v2.77) demonstrates:
+The recipe triangulation methodology demonstrates:
 
 1. Single PP tokens: 90% folio overlap (non-discriminative)
 2. Multi-dimensional PP at RECORD level: discriminates
 3. PREFIX profile matching: identifies instruction patterns
-4. Result: eoschso = ennen (chicken) [Tier 3 hypothesis]
+4. ~~Result: eoschso = ennen (chicken)~~ **INVALIDATED (v2.78)** - eoschso is NOT initial RI
+
+**Corrected Evidence (MATERIAL_MAPPING_V2):**
+- A records are paragraphs, not lines
+- Initial RI = RI tokens in first line of paragraph
+- 6 PRECISION candidates identified via paragraph-level PP triangulation
+- Kernel signature (k+e >> h) validates BRSC predictions
 
 This process:
 - Uses multi-axis constraint composition
-- Routes through AZC via REGIME mapping
+- Maps through AZC positional correspondence
 - Achieves record-level correspondence
 - Does NOT violate C384's prohibition on primitive lookup
 
@@ -78,14 +84,28 @@ This process:
 - Context-free entry-folio claims
 - Bypassing AZC routing
 
+## Quantitative Evidence (A_B_CORRESPONDENCE_SYSTEMATIC)
+
+C885 establishes the definitive operational answer:
+
+| A Unit | B Unit | Coverage | Lift vs Random |
+|--------|--------|----------|----------------|
+| Single Paragraph | B Paragraph | 58.3% | 2.04x |
+| **A Folio** | **B Paragraph** | **81.2%** | **1.71x** |
+| 2-3 A Paragraphs | B Paragraph | 76-80% | - |
+
+**Interpretation:** A folios are the operational unit for B vocabulary correspondence. Single A paragraphs are insufficient (58%) but aggregation to folio level achieves 81% coverage, which is sufficient for B program execution.
+
 ## Related Constraints
 
 - **C384** - No token-level or context-free A-B lookup
+- **C885** - A-B Vocabulary Correspondence (81% at folio level)
 - C473 - A record = constraint bundle
 - C481 - Survivor-set uniqueness
-- C442-444 - AZC legality routing
+- C442-444 - AZC positional encoding
 - C335 - 69.8% vocabulary integration
 - C383 - Global type system
+- C846 - A-B paragraph pool relationship
 
 ---
 

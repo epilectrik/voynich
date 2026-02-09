@@ -1,0 +1,50 @@
+{
+  "phase": "LABEL_BRUNSCHWIG_ALIGNMENT",
+  "date": "2026-02-05",
+  "verdict": "WEAK",
+  "significant_count": 1,
+  "total_tests": 5,
+  "test_results": [
+    {
+      "test": "Test 1: Jar Product Type Clustering",
+      "significant": true,
+      "p_value": 4.624519629175551e-06,
+      "effect": "Chi2=27.50",
+      "finding": "81.2% of jar labels cluster with PRECISION product type"
+    },
+    {
+      "test": "Test 2: Root vs Leaf Handling Profiles",
+      "significant": false,
+      "p_value": 0.8830954642504065,
+      "effect": "V=0.109",
+      "finding": "Root and leaf labels show similar handling profiles"
+    },
+    {
+      "test": "Test 3: Label-Rich Folio B Concentration",
+      "significant": false,
+      "p_value": 0.5984109902591254,
+      "effect": "Gini comparison",
+      "finding": "Label-rich folios do not show more concentrated B connections"
+    },
+    {
+      "test": "Test 4: Section-Level Label Differentiation",
+      "significant": false,
+      "p_value": 0.5230222794224486,
+      "effect": "V=0.168",
+      "finding": "Labels do not differ by section in handling profile"
+    },
+    {
+      "test": "Test 5: Label-Prep Operation Co-occurrence",
+      "significant": false,
+      "p_value": 0.999999382720411,
+      "effect": "prep op distribution",
+      "finding": "No prep op differentiation; Brunschwig prediction NOT supported"
+    }
+  ],
+  "interpretation": {
+    "jar_clustering": "Jar labels cluster with PRECISION product type - suggests output product identification",
+    "vocabulary_ubiquity": "Label PP bases are ubiquitous in B (96-100% of lines) - dilutes semantic signal",
+    "brunschwig_alignment": "Limited - only jar clustering is significant",
+    "conclusion": "Labels identify materials at vocabulary level but do not encode Brunschwig processing categories"
+  }
+}

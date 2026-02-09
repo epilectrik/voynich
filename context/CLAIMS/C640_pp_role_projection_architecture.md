@@ -4,6 +4,10 @@
 
 ## Statement
 
+> **Aggregation Note (2026-01-30):** This constraint analyzes PP MIDDLE projection to B roles.
+> PP MIDDLE inventories derive from line-level analysis. Per C885, the operational unit for
+> A-B vocabulary correspondence is the A FOLIO (114 units, 81% coverage).
+
 Projecting A's 404 PP (Pipeline-Participating) MIDDLEs onto B's 49-class, 5-role instruction system yields **89 matches (22.0%)** because B's classified vocabulary contains only 90 distinct MIDDLEs across 480 token types. AZC-Mediated (235) and B-Native (169) PP populations show **significantly different role profiles**: B-Native matched PP MIDDLEs are 100% ENERGY_OPERATOR-dominant (8/8), while AZC-Mediated distribute across AUXILIARY (53.1%), ENERGY_OPERATOR (40.7%), FLOW_OPERATOR (4.9%), and FREQUENT_OPERATOR (1.2%). PP role distribution **differs from B token shares** (chi2=42.37, p<0.0001): AUXILIARY is over-represented and CORE_CONTROL/FREQUENT_OPERATOR are under-represented among PP MIDDLEs.
 
 ## Evidence

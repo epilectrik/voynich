@@ -1,0 +1,112 @@
+{
+  "hub_destinations": [
+    "f93v",
+    "f32r"
+  ],
+  "all_destinations": [
+    "f93v",
+    "f32r",
+    "f87r",
+    "f37v"
+  ],
+  "source_folios": [
+    "f42r",
+    "f30v",
+    "f54r",
+    "f89v1",
+    "f53v",
+    "f21r",
+    "f87r",
+    "f27r",
+    "f93r"
+  ],
+  "linker_network": {
+    "cthody": {
+      "sources": [
+        "f21r",
+        "f53v",
+        "f54r",
+        "f87r",
+        "f89v1"
+      ],
+      "destination": "f93v"
+    },
+    "ctho": {
+      "sources": [
+        "f27r",
+        "f30v",
+        "f42r",
+        "f93r"
+      ],
+      "destination": "f32r"
+    },
+    "ctheody": {
+      "sources": [
+        "f53v",
+        "f87r"
+      ],
+      "destination": "f87r"
+    },
+    "qokoiiin": {
+      "sources": [
+        "f89v1"
+      ],
+      "destination": "f37v"
+    }
+  },
+  "destination_metrics": {
+    "f93v": {
+      "folio": "f93v",
+      "n_tokens": 87,
+      "n_paragraphs": 2,
+      "n_lines": 10,
+      "n_ri": 6,
+      "n_pp": 81,
+      "unique_ri": 6,
+      "unique_pp": 70,
+      "ri_density": 0.06896551724137931,
+      "tokens_per_para": 43.5
+    },
+    "f32r": {
+      "folio": "f32r",
+      "n_tokens": 77,
+      "n_paragraphs": 2,
+      "n_lines": 19,
+      "n_ri": 6,
+      "n_pp": 71,
+      "unique_ri": 6,
+      "unique_pp": 57,
+      "ri_density": 0.07792207792207792,
+      "tokens_per_para": 38.5
+    },
+    "f87r": {
+      "folio": "f87r",
+      "n_tokens": 98,
+      "n_paragraphs": 5,
+      "n_lines": 16,
+      "n_ri": 15,
+      "n_pp": 83,
+      "unique_ri": 15,
+      "unique_pp": 72,
+      "ri_density": 0.15306122448979592,
+      "tokens_per_para": 19.6
+    },
+    "f37v": {
+      "folio": "f37v",
+      "n_tokens": 88,
+      "n_paragraphs": 2,
+      "n_lines": 23,
+      "n_ri": 6,
+      "n_pp": 82,
+      "unique_ri": 6,
+      "unique_pp": 59,
+      "ri_density": 0.06818181818181818,
+      "tokens_per_para": 44.0
+    }
+  },
+  "population_means": {
+    "n_tokens": 98.01754385964912,
+    "n_paragraphs": 2.780701754385965,
+    "ri_density": 0.08670951027162212
+  }
+}

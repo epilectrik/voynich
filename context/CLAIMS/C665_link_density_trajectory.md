@@ -4,7 +4,7 @@
 
 ## Finding
 
-LINK density is **stationary within folios** (rho=+0.020, p=0.333, KW H=2.06, p=0.559). Monitoring does not concentrate at any particular folio position. This extends C365 (LINK is spatially uniform within lines) to the meso-temporal level.
+LINK density is **stationary within folios** (rho=+0.020, p=0.333, KW H=2.06, p=0.559). Monitoring does not concentrate at any particular folio position. Note: C365 (within-line uniformity) was refuted by C805 (LINK shows boundary enrichment at line edges). This finding (within-folio stationarity) remains valid independently.
 
 Regime stratification shows REGIME_3 has the steepest positive LINK slope (+0.051) and REGIME_2 the only negative slope (-0.012), but no regime breaks the corpus-wide null result.
 
@@ -34,11 +34,11 @@ Spearman rho = +0.020, p = 0.333. KW H = 2.06, p = 0.559.
 
 Monitoring is deployed uniformly throughout program execution. There is no "cautious startup" (early LINK) or "final verification" (late LINK) pattern. Every line of the program maintains the same monitoring posture.
 
-Combined with C365 (uniform within lines) and C609 (13.2% corpus-wide), LINK operates as a truly position-invariant monitoring layer at all scales: within-line, within-folio, and (within section) across folios.
+Combined with C609 (13.2% corpus-wide), LINK density is stationary at the folio and cross-folio scales. Note: C365's within-line uniformity claim was refuted by C805 (LINK shows boundary enrichment), so the "all scales" position-invariance claim no longer holds. Within-line, LINK is boundary-enriched; within-folio and across-folio, LINK density is stationary.
 
 ## Cross-References
 
-- C365: LINK spatially uniform within lines (p=0.80)
+- C365: ~~LINK spatially uniform within lines~~ REFUTED by C805 (boundary enrichment)
 - C609: LINK density 13.2% (token-level)
 - C458.a: Hazard-LINK anticorrelation (r=-0.945) — if hazard is flat within folios (C667), LINK being flat is consistent
 

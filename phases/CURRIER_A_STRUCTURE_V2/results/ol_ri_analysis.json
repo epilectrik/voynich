@@ -1,0 +1,29 @@
+{
+  "test": "OL_RI_ANALYSIS",
+  "ol_prefix_counts": {
+    "with_ri": 6,
+    "without_ri": 7
+  },
+  "or_prefix_counts": {
+    "with_ri": 6,
+    "without_ri": 1
+  },
+  "link_prefix_enrichment": {
+    "with_ri_pct": 1.7191977077363896,
+    "without_ri_pct": 4.624277456647399
+  },
+  "ol_tokens_without_ri": {
+    "olchad": 1,
+    "oloro": 1,
+    "olcheety": 1,
+    "oltsho": 1,
+    "olkeeycthy": 1,
+    "olsheod": 1,
+    "olkeeoldy": 1
+  },
+  "final_position_rate": {
+    "with_ri": 33.333333333333336,
+    "without_ri": 71.42857142857143
+  },
+  "verdict": "LINK_ENRICHED"
+}

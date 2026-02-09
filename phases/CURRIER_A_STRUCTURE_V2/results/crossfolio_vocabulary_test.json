@@ -1,0 +1,22 @@
+{
+  "test": "CROSSFOLIO_VOCABULARY_TEST",
+  "n_folios": 114,
+  "vocabulary_classification": {
+    "universal": 25,
+    "common": 24,
+    "rare": 964
+  },
+  "coverage_metrics": {
+    "with_ri_avg_other_folios": 58.64232413100718,
+    "without_ri_avg_other_folios": 58.980050564741596,
+    "with_ri_pct_common": 73.6321345932987,
+    "without_ri_pct_common": 73.21978640894218,
+    "with_ri_pct_unique": 2.746278925952973,
+    "without_ri_pct_unique": 1.9385767488132528
+  },
+  "statistical_test": {
+    "t_statistic": -0.22502531396613856,
+    "significance": "NOT_SIGNIFICANT"
+  },
+  "verdict": "INCONCLUSIVE"
+}

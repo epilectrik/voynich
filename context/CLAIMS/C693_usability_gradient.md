@@ -6,6 +6,11 @@
 
 The usability of filtered B folios spans a **266x dynamic range**. The composite usability metric (legality x role_coverage x (1 - empty_rate)) ranges from 0.000 (total elimination) to 0.107 (marginally functional). **25 of 32 pairings (78%) render the folio unusable** (>50% empty lines). Only the most permissive A records (~14 PP MIDDLEs) produce non-trivial residual programs.
 
+> **Aggregation Note (2026-01-30):** This constraint tests single A records against B folios.
+> The finding that single records are insufficient is consistent with C885, which establishes
+> A FOLIO (not single paragraph/record) as the operational unit for A-B correspondence (81%
+> coverage at folio level vs 58% at paragraph level).
+
 ## Usability Matrix
 
 | Record | Largest | REGIME_1 | REGIME_2 | REGIME_4 |

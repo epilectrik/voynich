@@ -1,0 +1,154 @@
+{
+  "regime_suffix_profiles": {
+    "1": {
+      "suffix_rate": 0.5129493621955934,
+      "suffix_class": "HIGH",
+      "total_tokens": 7761,
+      "tokens_with_suffix": 3981,
+      "top_suffixes": [
+        [
+          "edy",
+          845
+        ],
+        [
+          "hy",
+          343
+        ],
+        [
+          "ain",
+          332
+        ],
+        [
+          "dy",
+          284
+        ],
+        [
+          "al",
+          270
+        ]
+      ]
+    },
+    "2": {
+      "suffix_rate": 0.49384098544232924,
+      "suffix_class": "HIGH",
+      "total_tokens": 6251,
+      "tokens_with_suffix": 3087,
+      "top_suffixes": [
+        [
+          "edy",
+          444
+        ],
+        [
+          "dy",
+          346
+        ],
+        [
+          "aiin",
+          298
+        ],
+        [
+          "ar",
+          255
+        ],
+        [
+          "hy",
+          238
+        ]
+      ]
+    },
+    "3": {
+      "suffix_rate": 0.47058823529411764,
+      "suffix_class": "HIGH",
+      "total_tokens": 1734,
+      "tokens_with_suffix": 816,
+      "top_suffixes": [
+        [
+          "edy",
+          188
+        ],
+        [
+          "dy",
+          82
+        ],
+        [
+          "aiin",
+          72
+        ],
+        [
+          "hy",
+          57
+        ],
+        [
+          "y",
+          55
+        ]
+      ]
+    },
+    "4": {
+      "suffix_rate": 0.5134693877551021,
+      "suffix_class": "HIGH",
+      "total_tokens": 7350,
+      "tokens_with_suffix": 3774,
+      "top_suffixes": [
+        [
+          "edy",
+          670
+        ],
+        [
+          "dy",
+          369
+        ],
+        [
+          "aiin",
+          322
+        ],
+        [
+          "ar",
+          282
+        ],
+        [
+          "hy",
+          272
+        ]
+      ]
+    }
+  },
+  "fire_suffix_mapping": [
+    {
+      "fire_degree": 1,
+      "regime": 2,
+      "suffix_rate": 0.49384098544232924
+    },
+    {
+      "fire_degree": 2,
+      "regime": 1,
+      "suffix_rate": 0.5129493621955934
+    },
+    {
+      "fire_degree": 3,
+      "regime": 3,
+      "suffix_rate": 0.47058823529411764
+    },
+    {
+      "fire_degree": 4,
+      "regime": 4,
+      "suffix_rate": 0.5134693877551021
+    }
+  ],
+  "suffix_predictions": {
+    "1": "HIGH",
+    "2": "MEDIUM",
+    "3": "LOW",
+    "4": "HIGH"
+  },
+  "prediction_accuracy": {
+    "correct": 2,
+    "total": 4,
+    "accuracy": 0.5
+  },
+  "degree_1_vs_3_contrast": {
+    "degree_1_suffix_rate": 0.49384098544232924,
+    "degree_3_suffix_rate": 0.47058823529411764,
+    "result": "CONFIRMED"
+  }
+}

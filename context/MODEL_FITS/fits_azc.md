@@ -246,7 +246,7 @@ Key insight: AZC does NOT compress overall entropy. It REDIRECTS:
 - MIDDLE EXPANDS (-14.0% in Zodiac)
 - Escape logic SUPPRESSED by 90%
 
-AZC filters hazardous options (escape prefixes like qo, ct) while EXPANDING recognition options (MIDDLE variety). This is selective filtering, not blanket simplification.
+AZC vocabulary is depleted in escape prefixes (qo, ct) while EXPANDED in recognition options (MIDDLE variety). Vocabulary appearing at AZC positions has different PREFIX composition than A or B averages - this is positional character, not active filtering.
 
 #### Limitations
 Does not explain WHY escape logic is suppressed in AZC. Does not establish causal mechanism.
@@ -343,7 +343,7 @@ Key findings:
 2. **A/C suppresses escape at boundaries** (C, S) vs interior (P, R)
 3. Pattern supports AZC = TRANSITION STABILIZER hypothesis
 
-This refines F-AZC-004: escape suppression is not blanket filtering but selective by position. AZC allows more escape logic in "interior" positions while clamping down at boundaries.
+This refines F-AZC-004: escape vocabulary varies by position. Interior positions have higher escape vocabulary rates; boundary positions have lower escape vocabulary rates. This reflects vocabulary character at each position, not active suppression.
 
 #### Limitations
 Does not explain WHY boundaries need stronger escape suppression. Mechanism remains speculative.
@@ -481,7 +481,7 @@ N/A - frame is discarded.
 **Tier:** F4 | **Result:** FALSIFIED | **Supports:** (strengthens null hypothesis)
 
 #### Hypothesis (Synthesis)
-> Zodiac and A/C gate DIFFERENT domains:
+> Zodiac and A/C encode DIFFERENT domains:
 > - Zodiac = seasonal/material gating (should align with Currier A)
 > - A/C = operation-type gating (should align with Currier B)
 
@@ -525,7 +525,7 @@ Data: 5,101 A types, 7,263 B types, 1,335 Zodiac types, 1,667 A/C types.
 **CALENDRIC/SEASONAL SYNTHESIS FALSIFIED.** Zodiac and A/C have essentially identical cross-system alignment patterns to within 0.2 percentage points.
 
 Key findings:
-1. **Both families gate the SAME domain** - they share vocabulary alignment profiles
+1. **Both families encode the SAME domain** - they share vocabulary alignment profiles
 2. **The family distinction is NOT about cross-system reference** - it's about positional parameterization and visual organization
 3. **If Zodiac is seasonally-indexed, A/C must be too** - or neither is
 
@@ -534,7 +534,7 @@ This is the most extensive calendric stress test performed on AZC. The clean nul
 **Historical note:** The possibility of proto-greenhouses, wintergardens, or year-round material availability in a large operation would further weaken any calendric interpretation. Seasonal constraints may not have been absolute for a well-resourced guild.
 
 #### Limitations
-Does not rule out external seasonal association (operator knowing which page to use when). Rules out the hypothesis that Zodiac and A/C gate DIFFERENT domains.
+Does not rule out external seasonal association (operator knowing which page to use when). Rules out the hypothesis that Zodiac and A/C encode DIFFERENT domains.
 
 ---
 
@@ -854,7 +854,7 @@ Key findings:
 
 This completes the pipeline validation:
 - A provides the registry (WHAT exists)
-- AZC provides the legality filter (WHEN things can combine)
+- AZC encodes positional compatibility (vocabulary with shared positions can co-occur)
 - B respects AZC constraints during execution (HOW things proceed)
 
 The manuscript is a **causally connected control system**, not just correlated text layers.
@@ -873,7 +873,7 @@ Do different Zodiac AZC folios preferentially admit different regions of the Cur
 
 This tests whether the 12 Zodiac folios (C321: independent vocabularies, Jaccard 0.076) represent internal legality stratification, or whether their multiplicity exists purely for coverage optimality.
 
-**Critical framing note:** This is NOT a test of "product routing through gates." AZC filters constraint bundles; product types are downstream inferences from B behavior.
+**Critical framing note:** This is NOT a test of "product routing." AZC vocabulary has positional encoding; product types are downstream inferences from B behavior.
 
 #### Method
 
@@ -911,13 +911,13 @@ All products show near-maximum entropy (spread across all folios).
 
 Product-associated MIDDLEs are uniformly distributed across all 13 Zodiac folios. The null hypothesis (no internal stratification) is strongly confirmed.
 
-**Conclusion:** Zodiac multiplicity exists purely for **coverage optimality**, not for internal stratification of the legality manifold. The 12 Zodiac folios are structurally equivalent gates.
+**Conclusion:** Zodiac multiplicity exists purely for **coverage optimality**, not for internal stratification of the legality manifold. The 12 Zodiac folios have structurally equivalent positional encoding.
 
 This closes the door definitively on the hypothesis that Zodiac folios realize different sub-regions of incompatibility space correlated with product inference.
 
 #### Implications
 
-1. **Validates existing model** — Zodiac folios ARE equivalent gates (C431 "structural clones" confirmed)
+1. **Validates existing model** — Zodiac folios have equivalent positional encoding (C431 "structural clones" confirmed)
 2. **No hidden routing** — Product differentiation is NOT encoded at the Zodiac level
 3. **Coverage is the answer** — Zodiac needed 12 copies to cover the full MIDDLE space, not to stratify it
 4. **Refines C436 (Dual Rigidity)** — The uniform scaffold is also uniformly populated
@@ -936,7 +936,7 @@ Do different A/C AZC folios preferentially admit different regions of the Currie
 
 This tests whether the A/C family (C430: low cross-folio consistency 0.340, each folio has its own scaffold) shows product-correlated stratification that Zodiac does not.
 
-**Critical framing note:** This is NOT a test of "product routing through gates." AZC filters constraint bundles; product types are downstream inferences from B behavior.
+**Critical framing note:** This is NOT a test of "product routing." AZC vocabulary has positional encoding; product types are downstream inferences from B behavior.
 
 #### Method
 
@@ -1001,7 +1001,7 @@ Product-associated MIDDLEs are uniformly distributed across all 17 A/C folios. T
 1. **AZC is uniformly product-agnostic** — Neither family shows product-correlated stratification
 2. **Validates C430** — A/C diversity is structural, not semantic
 3. **Closes stratification hypothesis** — Product differentiation is NOT encoded at ANY AZC level
-4. **Supports universal filtering** — AZC filters constraint bundles uniformly regardless of downstream product inference
+4. **Supports universal encoding** — AZC positional encoding applies uniformly regardless of downstream product inference
 
 #### Source Phase
 `phases/AZC_ZODIAC_INTERNAL_STRATIFICATION/`
@@ -1140,7 +1140,7 @@ Three semantic frames were tested following the protocol: **Name boldly. Test ru
 
 **Finding:** C and S have distinct vocabularies (Jaccard=7.3%) but identical entropy and cross-system reference profiles. Zodiac and A/C have identical cross-system alignment to within 0.2 percentage points.
 
-**Calendric Stress Test (F-AZC-010):** The most extensive test of seasonal/calendric interpretation. Result: 0/4 predictions met, all directions wrong. Both AZC families gate the SAME domain with the SAME vocabulary alignment. The family distinction is about positional parameterization and visual organization, not functional domain.
+**Calendric Stress Test (F-AZC-010):** The most extensive test of seasonal/calendric interpretation. Result: 0/4 predictions met, all directions wrong. Both AZC families encode the SAME domain with the SAME vocabulary alignment. The family distinction is about positional parameterization and visual organization, not functional domain.
 
 ### Functional Closure (F-AZC-011, F-AZC-012, F-AZC-013) - FINAL
 
@@ -1180,7 +1180,7 @@ The structural findings (Tier 2) support a coherent operational interpretation o
 
 ### AZC as Decision-Point Grammar
 
-**Core insight:** AZC converts static Currier A registry entries into phase-gated decision points.
+**Core insight:** AZC encodes vocabulary position; each PREFIX+MIDDLE has one fixed AZC position reflecting its operational character.
 
 | System | Function | Type |
 |--------|----------|------|
@@ -1188,30 +1188,33 @@ The structural findings (Tier 2) support a coherent operational interpretation o
 | Currier B | HOW to proceed | Procedural sequence |
 | AZC | WHEN to decide | Decision grammar |
 
-A Currier A entry (e.g., "daiin") in isolation is a material class - static, descriptive. The SAME token in AZC becomes a decision point:
-- In position P: intervention is legal (11.6% escape)
-- In position S: intervention is forbidden (0% escape)
+A Currier A entry (e.g., "daiin") in isolation is a material class - static, descriptive. The SAME token in an AZC diagram becomes a decision point:
+- In interior positions (C, R-series): intervention options vary by position
+- In boundary positions (S-series): intervention is forbidden (0% escape)
+
+*Note: P (Paragraph) is paragraph text on AZC folios, NOT a diagram position.*
 
 **AZC is the interface layer** that converts static knowledge (A) into actionable decision points within procedures (B).
 
 ### Phase-to-Workflow Mapping
 
-The positional grammar maps to operational workflow phases:
+The diagram positional grammar maps to operational workflow phases:
 
-| AZC Position | Workflow Phase | Escape Rate | Operational Meaning |
-|--------------|----------------|-------------|---------------------|
-| C | Setup/Loading | 1.4% | Entry constrained, errors fixable |
-| P | Active work | 11.6% | Recovery permitted, intervention legal |
+| AZC Diagram Position | Workflow Phase | Escape Rate | Operational Meaning |
+|----------------------|----------------|-------------|---------------------|
+| C | Core/Interior | ~1.4% | Moderate flexibility |
 | R1→R2→R3 | Progression | 2.0%→1.2%→0% | Options narrowing, committing |
-| S | Collection/Exit | 0-3.8% | Locked, must accept outcome |
+| S | Boundary/Exit | 0% | Locked, must accept outcome |
+
+*Note: P (Paragraph) is NOT a diagram position - it is Currier A text appearing on AZC folios.*
 
 This matches the physical reality of reflux distillation: early phases are reversible, late phases are committed.
 
-### Compatibility Filter Mechanism
+### Compatibility Grouping Mechanism
 
 **Key structural fact:** AZC folios have 94% unique vocabulary (Jaccard = 0.056).
 
-This means AZC folios function as **compatibility filters**:
+This means AZC folios group vocabulary by **compatibility signature**:
 - Specialized A-types appear in only 1-3 folios
 - Using vocabulary from one folio excludes vocabulary from others
 - Incompatible A-registry entries cannot be combined in the same constraint space
@@ -1224,7 +1227,7 @@ AZC folios are not selected explicitly. They operate as a parallel constraint fi
 
 1. **Core vocabulary** (appears in 20+ folios) → broadly legal, moderate constraints
 2. **Specialized vocabulary** (appears in 1-3 folios) → activates specific constraint profile
-3. **Position (C→P→R→S)** → determines phase-specific rules within that profile
+3. **Diagram position (C→R→S)** → determines phase-specific rules within that profile
 
 The vocabulary you use determines which constraints apply. B procedures touch ALL AZC folios because they use diverse vocabulary that spans the constraint space.
 
@@ -1239,7 +1242,7 @@ The family distinction encodes **context risk profiles**, not different domains 
 
 ### Summary Statement
 
-> **AZC is a decision-point grammar that transforms static material references into phase-gated choice nodes, enforces compatibility between materials and operations, and encodes when intervention is legal versus when outcomes must be accepted.**
+> **AZC is a positional encoding system: each PREFIX+MIDDLE appears at exactly one position, vocabulary at each position has characteristic operational properties (escape rate, kernel contact), and position reflects vocabulary character (stabilization/processing/energetic) not causal control.**
 
 This explains:
 - Why AZC is large (enumerates all compatibility classes)

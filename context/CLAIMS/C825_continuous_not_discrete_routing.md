@@ -2,6 +2,10 @@
 
 ## Constraint
 
+> **Aggregation Note (2026-01-30):** This constraint analyzes at line level (1,205 A-records).
+> Per C881, A records are paragraphs (342 units). Per C885, the operational unit for
+> A-B vocabulary correspondence is the A FOLIO (114 units, 81% coverage).
+
 A-records do **NOT** cluster into discrete routing categories. Instead, they form a **continuous parameter space**:
 - Best silhouette score: **0.124** (very poor clustering)
 - Clusters are imbalanced: 1,204 vs 1 at k=2

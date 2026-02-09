@@ -1,0 +1,34 @@
+{
+  "n_a_folios": 114,
+  "n_matched": 98,
+  "fire_role_data": {
+    "2": {
+      "CORE": 37.656067920759114,
+      "ESCAPE": 11.619776926918595,
+      "LINK": 1.847844181787914,
+      "CROSS-REF": 5.67671050441152
+    }
+  },
+  "section_spec": {
+    "H": {
+      "dominant": "RECOVERY",
+      "k_avg": 0.2834793661079792,
+      "h_avg": 0.3576405935375694,
+      "spec_counts": {
+        "BALANCED": 11,
+        "RECOVERY": 13,
+        "DISTILL": 8
+      }
+    },
+    "T": {
+      "dominant": "BALANCED",
+      "k_avg": 0.20274583898542298,
+      "h_avg": 0.3892244256400319,
+      "spec_counts": {
+        "BALANCED": 1,
+        "DISTILL": 1
+      }
+    }
+  },
+  "significant_prefixes": []
+}

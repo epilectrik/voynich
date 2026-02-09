@@ -1,0 +1,638 @@
+{
+  "total_lines": 2420,
+  "label_pp_lines": 2419,
+  "prep_op_lines": 571,
+  "both_lines": 571,
+  "expected_both": 570.7640495867769,
+  "ratio": 1.0004133939644482,
+  "prep_distribution": {
+    "CHOP": 276,
+    "GATHER": 187,
+    "STRIP": 135,
+    "POUND": 113,
+    "BREAK/WASH": 43
+  },
+  "examples": [
+    {
+      "folio": "f26r",
+      "line": "1",
+      "label_pps": [
+        "y",
+        "f",
+        "k",
+        "ii",
+        "ai",
+        "eod"
+      ],
+      "prep_ops": [
+        [
+          "pch",
+          "CHOP"
+        ]
+      ],
+      "tokens": [
+        "psheoky",
+        "odaiir",
+        "qoy",
+        "ofseod",
+        "chypchey",
+        "ypchedy",
+        "ain",
+        "chofochcphdy"
+      ]
+    },
+    {
+      "folio": "f26r",
+      "line": "3",
+      "label_pps": [
+        "c",
+        "o",
+        "y",
+        "e",
+        "s",
+        "d",
+        "ii"
+      ],
+      "prep_ops": [
+        [
+          "te",
+          "GATHER"
+        ]
+      ],
+      "tokens": [
+        "oaiin",
+        "shcthy",
+        "eteeda",
+        "oloy",
+        "ykeedy",
+        "olchedy",
+        "gal",
+        "y",
+        "sheey",
+        "saiin",
+        "s"
+      ]
+    },
+    {
+      "folio": "f26r",
+      "line": "7",
+      "label_pps": [
+        "c",
+        "o",
+        "y",
+        "k",
+        "e",
+        "s",
+        "r",
+        "ii"
+      ],
+      "prep_ops": [
+        [
+          "lch",
+          "STRIP"
+        ],
+        [
+          "pch",
+          "CHOP"
+        ]
+      ],
+      "tokens": [
+        "pcho",
+        "qokedy",
+        "dar",
+        "sheo",
+        "ypchseds",
+        "s",
+        "aiin",
+        "shapchedyfeey",
+        "dalchedy",
+        "sas"
+      ]
+    },
+    {
+      "folio": "f26r",
+      "line": "8",
+      "label_pps": [
+        "ol",
+        "y",
+        "k",
+        "s",
+        "d",
+        "ii"
+      ],
+      "prep_ops": [
+        [
+          "te",
+          "GATHER"
+        ]
+      ],
+      "tokens": [
+        "daiin",
+        "shedy",
+        "qokeedy",
+        "qoteedar",
+        "s",
+        "ok",
+        "ol",
+        "otedy",
+        "qokchdy",
+        "qokedy"
+      ]
+    },
+    {
+      "folio": "f26v",
+      "line": "5",
+      "label_pps": [
+        "ar",
+        "f",
+        "eol",
+        "e",
+        "k",
+        "s",
+        "eeo",
+        "opc"
+      ],
+      "prep_ops": [
+        [
+          "te",
+          "GATHER"
+        ],
+        [
+          "pch",
+          "CHOP"
+        ]
+      ],
+      "tokens": [
+        "deeol",
+        "eeeody",
+        "qoteedy",
+        "qokody",
+        "qotedy",
+        "qotedy",
+        "opchedy",
+        "ofchy",
+        "chs",
+        "ar"
+      ]
+    },
+    {
+      "folio": "f31v",
+      "line": "1",
+      "label_pps": [
+        "ol",
+        "ar",
+        "y",
+        "e",
+        "s",
+        "d",
+        "r"
+      ],
+      "prep_ops": [
+        [
+          "lch",
+          "STRIP"
+        ]
+      ],
+      "tokens": [
+        "podair",
+        "sheedy",
+        "otedy",
+        "oteedy",
+        "qotolcheo",
+        "s",
+        "arar",
+        "oteey",
+        "dkarar",
+        "als"
+      ]
+    },
+    {
+      "folio": "f31v",
+      "line": "7",
+      "label_pps": [
+        "ol",
+        "y",
+        "eol",
+        "e",
+        "k",
+        "d",
+        "r",
+        "ec",
+        "al"
+      ],
+      "prep_ops": [
+        [
+          "te",
+          "GATHER"
+        ]
+      ],
+      "tokens": [
+        "olteedam",
+        "ches",
+        "chol",
+        "keeol",
+        "checkhy",
+        "okeol",
+        "okal",
+        "oky",
+        "cheokar",
+        "okor",
+        "ary"
+      ]
+    },
+    {
+      "folio": "f31v",
+      "line": "9",
+      "label_pps": [
+        "c",
+        "e",
+        "k",
+        "oek",
+        "ii"
+      ],
+      "prep_ops": [
+        [
+          "tch",
+          "POUND"
+        ]
+      ],
+      "tokens": [
+        "ytecheol",
+        "sheoeky",
+        "okeos",
+        "aiin",
+        "acthedy",
+        "chkaiin",
+        "chetchey",
+        "ctheey",
+        "okear"
+      ]
+    },
+    {
+      "folio": "f33r",
+      "line": "1",
+      "label_pps": [
+        "c",
+        "y",
+        "f",
+        "e",
+        "d",
+        "ii"
+      ],
+      "prep_ops": [
+        [
+          "pch",
+          "CHOP"
+        ]
+      ],
+      "tokens": [
+        "tshdar",
+        "shdor",
+        "shepchdy",
+        "cphody",
+        "yfoldy",
+        "qofockhdy",
+        "otchedy",
+        "lfchdy",
+        "daiin"
+      ]
+    },
+    {
+      "folio": "f34r",
+      "line": "4",
+      "label_pps": [
+        "c",
+        "y",
+        "m",
+        "k",
+        "ec",
+        "ii"
+      ],
+      "prep_ops": [
+        [
+          "tch",
+          "POUND"
+        ]
+      ],
+      "tokens": [
+        "ytedy",
+        "daiin",
+        "chey",
+        "aiin",
+        "shy",
+        "chckhy",
+        "oltchedy",
+        "otedy",
+        "dam",
+        "checthy"
+      ]
+    },
+    {
+      "folio": "f34r",
+      "line": "5",
+      "label_pps": [
+        "ol",
+        "ar",
+        "y",
+        "e",
+        "d",
+        "ii"
+      ],
+      "prep_ops": [
+        [
+          "te",
+          "GATHER"
+        ]
+      ],
+      "tokens": [
+        "qoteedy",
+        "shedy",
+        "shedy",
+        "ol",
+        "okes",
+        "ar",
+        "ykeedl",
+        "chedy",
+        "otey",
+        "okaiin"
+      ]
+    },
+    {
+      "folio": "f34r",
+      "line": "9",
+      "label_pps": [
+        "ar",
+        "c",
+        "d",
+        "r",
+        "ii",
+        "ai"
+      ],
+      "prep_ops": [
+        [
+          "lch",
+          "STRIP"
+        ]
+      ],
+      "tokens": [
+        "ykchdy",
+        "qod",
+        "ar",
+        "chct",
+        "aikhy",
+        "orlchey",
+        "todaly",
+        "okaiin",
+        "dardy"
+      ]
+    },
+    {
+      "folio": "f34r",
+      "line": "16",
+      "label_pps": [
+        "ol",
+        "eol",
+        "y",
+        "k"
+      ],
+      "prep_ops": [
+        [
+          "lch",
+          "STRIP"
+        ]
+      ],
+      "tokens": [
+        "sair",
+        "chekar",
+        "cheky",
+        "shek",
+        "cholchedy",
+        "qokedy",
+        "yk",
+        "cheolchcthy"
+      ]
+    },
+    {
+      "folio": "f34v",
+      "line": "1",
+      "label_pps": [
+        "c",
+        "y",
+        "f",
+        "s",
+        "al"
+      ],
+      "prep_ops": [
+        [
+          "lch",
+          "STRIP"
+        ],
+        [
+          "pch",
+          "CHOP"
+        ]
+      ],
+      "tokens": [
+        "kschdy",
+        "chdy",
+        "chefchy",
+        "shdy",
+        "qopchdy",
+        "shdydy",
+        "chdalchdy",
+        "ypchdy",
+        "chcthdy",
+        "spaiin"
+      ]
+    },
+    {
+      "folio": "f39r",
+      "line": "2",
+      "label_pps": [
+        "c",
+        "y",
+        "k",
+        "s",
+        "d",
+        "l"
+      ],
+      "prep_ops": [
+        [
+          "ksh",
+          "BREAK/WASH"
+        ]
+      ],
+      "tokens": [
+        "olchey",
+        "cheky",
+        "qokedy",
+        "shekshey",
+        "qolain",
+        "chckshy",
+        "chdy",
+        "dair",
+        "shckhey",
+        "dold"
+      ]
+    },
+    {
+      "folio": "f39r",
+      "line": "3",
+      "label_pps": [
+        "y",
+        "k",
+        "e",
+        "d",
+        "r",
+        "ec",
+        "al"
+      ],
+      "prep_ops": [
+        [
+          "lch",
+          "STRIP"
+        ]
+      ],
+      "tokens": [
+        "qokalchdy",
+        "chekaiin",
+        "checkhy",
+        "dar",
+        "shed",
+        "qokeedar",
+        "eeedy",
+        "dar",
+        "or",
+        "cheey",
+        "dy",
+        "ckhy"
+      ]
+    },
+    {
+      "folio": "f39r",
+      "line": "4",
+      "label_pps": [
+        "ol",
+        "y",
+        "e",
+        "d",
+        "r",
+        "ii",
+        "al"
+      ],
+      "prep_ops": [
+        [
+          "lch",
+          "STRIP"
+        ]
+      ],
+      "tokens": [
+        "tohedy",
+        "chdy",
+        "olaiin",
+        "chedy",
+        "shckhdchy",
+        "chol",
+        "or",
+        "ordy",
+        "chees",
+        "aly",
+        "okalcheg"
+      ]
+    },
+    {
+      "folio": "f39r",
+      "line": "6",
+      "label_pps": [
+        "y",
+        "m",
+        "f",
+        "e",
+        "lo",
+        "ock",
+        "d",
+        "opc"
+      ],
+      "prep_ops": [
+        [
+          "pch",
+          "CHOP"
+        ]
+      ],
+      "tokens": [
+        "pchdaiin",
+        "she",
+        "dam",
+        "qofchedy",
+        "shedy",
+        "kchdy",
+        "dydy",
+        "opchekaiin",
+        "shockhchy",
+        "shdalo",
+        "ry"
+      ]
+    },
+    {
+      "folio": "f39r",
+      "line": "12",
+      "label_pps": [
+        "y",
+        "k",
+        "e",
+        "d",
+        "r",
+        "l",
+        "ii"
+      ],
+      "prep_ops": [
+        [
+          "lch",
+          "STRIP"
+        ]
+      ],
+      "tokens": [
+        "tolchdaiin",
+        "chckhy",
+        "saiin",
+        "olor",
+        "chls",
+        "aiin",
+        "oky",
+        "ches",
+        "aiin",
+        "dal"
+      ]
+    },
+    {
+      "folio": "f40r",
+      "line": "1",
+      "label_pps": [
+        "ar",
+        "y",
+        "k",
+        "d",
+        "opc",
+        "al"
+      ],
+      "prep_ops": [
+        [
+          "pch",
+          "CHOP"
+        ]
+      ],
+      "tokens": [
+        "pchey",
+        "keodar",
+        "aldydy",
+        "qoky",
+        "okal",
+        "shdy",
+        "olkedy",
+        "opches",
+        "ar",
+        "ordaiin"
+      ]
+    }
+  ]
+}
