@@ -1,0 +1,167 @@
+{
+  "test": "Integrated Verdict",
+  "tests": {
+    "01": {
+      "name": "Positional Token Exclusivity",
+      "verdict": "PASS",
+      "score": 1.0
+    },
+    "02": {
+      "name": "Mandatory/Forbidden Bigrams",
+      "verdict": "PASS",
+      "score": 1.0
+    },
+    "03": {
+      "name": "Line Length Determinants",
+      "verdict": "PASS",
+      "score": 1.0
+    },
+    "04": {
+      "name": "Opener Instruction Header",
+      "verdict": "PARTIAL",
+      "score": 0.5
+    },
+    "05": {
+      "name": "Boundary Constraint Sets",
+      "verdict": "FAIL",
+      "score": 0.0
+    },
+    "06": {
+      "name": "Within-Zone Ordering",
+      "verdict": "FAIL",
+      "score": 0.0
+    },
+    "07": {
+      "name": "Phase Interleaving",
+      "verdict": "PARTIAL_INTERLEAVED",
+      "score": 0.5
+    },
+    "08": {
+      "name": "Paragraph Line Progression",
+      "verdict": "FAIL",
+      "score": 0.0
+    },
+    "09": {
+      "name": "Positional Bigram Grammar",
+      "verdict": "WEAK",
+      "score": 0.5
+    }
+  },
+  "pass_count": 3,
+  "partial_count": 3,
+  "fail_count": 3,
+  "grammar_strength_score": 0.5,
+  "negative_control": {
+    "n_structural": 3,
+    "n_lexical": 1,
+    "details": {
+      "exclusivity": true,
+      "forbidden_bigrams": true,
+      "opener_classification": true,
+      "boundary_gini": false
+    }
+  },
+  "gap_assessment": {
+    "1_opening_closing_grammar": {
+      "description": "Token-level opening/closing constraints",
+      "status": "PARTIALLY_RESOLVED",
+      "avg_score": 0.5
+    },
+    "2_token_bigrams": {
+      "description": "Token-level bigram constraints",
+      "status": "RESOLVED",
+      "avg_score": 0.75
+    },
+    "3_line_length": {
+      "description": "Line length determinants",
+      "status": "RESOLVED",
+      "avg_score": 1.0
+    },
+    "4_position_vocabulary": {
+      "description": "Position-specific token vocabulary",
+      "status": "RESOLVED",
+      "avg_score": 1.0
+    },
+    "5_opener_prediction": {
+      "description": "Opening token line-profile prediction",
+      "status": "RESOLVED",
+      "avg_score": 0.75
+    },
+    "6_within_zone_ordering": {
+      "description": "Within-zone token ordering",
+      "status": "UNRESOLVED (negative result)",
+      "avg_score": 0.0
+    },
+    "7_phase_interleaving": {
+      "description": "Phase interleaving pattern",
+      "status": "PARTIALLY_RESOLVED",
+      "avg_score": 0.5
+    },
+    "8_paragraph_progression": {
+      "description": "Paragraph-internal line progression",
+      "status": "UNRESOLVED (negative result)",
+      "avg_score": 0.0
+    }
+  },
+  "dominant_signal_source": "opener_header_only",
+  "overall_verdict": "MODERATE",
+  "verdict_description": "Token-level grammar exists for some phenomena",
+  "narrative": "Positional token exclusivity is real (192/334 tokens zone-exclusive, 2.7x shuffle), but the negative control shows this is primarily structural (role/position driven). Half the exclusivity survives suffix-stripping, indicating both stem and suffix contribute. Token-level bigram constraints exist: 26 mandatory bigrams and 9 forbidden, including 2 genuinely token-specific forbidden bigrams (chey->chedy, chey->shedy, both ENERGY class). Again, the negative control indicates this is mostly structural. Line length is strongly determined by the opener: opener class adds 24.9% partial R-squared beyond folio+regime. The opener+folio combination explains 93.7% of length variance. This is the strongest token-level finding. Opener role modestly predicts line body (29.2% accuracy, 1.46x chance), but specific opener tokens add nothing beyond their role. The opener is a role marker, not an instruction header. Boundary vocabularies are NOT concentrated into small closed sets (Gini 0.47, below 0.60). Opening and closing positions draw from nearly the full vocabulary. Within-zone token ordering is random. EN and AX tokens in the WORK zone show no systematic sequence (tau ~ 0, p ~ 0.5). Phases (KERNEL/LINK/FL) show weak clustering (alternation below shuffle, p<0.001) but not sequential blocking. KERNEL->FL and LINK->FL show moderate ordering (~0.63). Phases are tendencies, not strict sequences. Paragraph body lines are compositionally homogeneous. The only progression is line shortening (rho=-0.23). After length control, no compositional features survive. Bigram grammar varies by zone: boundaries show strong zone-specific patterns (KL=1.05 bits at INITIAL), but only early-medial zone is significant vs shuffle. Core zone matches global.",
+  "architectural_interpretation": "Currier B lines operate as BOUNDARY-CONSTRAINED control blocks with a FREE interior. The opener and closer positions carry role-level constraints that shape line length and boundary bigrams, but the WORK zone (medial positions) is role-governed without additional token-level syntax. Token identity matters at boundaries (positional exclusivity, mandatory bigrams) but this is primarily structural \u2014 driven by which ROLES can open/close lines, not which specific tokens. The system is essentially role-complete: the 49 instruction classes and 5 roles capture nearly all syntactic structure, with token-level effects emerging as consequences of role membership rather than independent grammatical constraints.",
+  "constraint_candidates": [
+    {
+      "id": "C956",
+      "topic": "Positional token exclusivity",
+      "evidence": "192/334 zone-exclusive, 2.7x shuffle, 50% suffix-independent",
+      "strength": "STRONG"
+    },
+    {
+      "id": "C957",
+      "topic": "Token-level bigram constraints",
+      "evidence": "26 mandatory, 9 forbidden (2 token-specific), p=0.000",
+      "strength": "STRONG"
+    },
+    {
+      "id": "C958",
+      "topic": "Opener determines line length",
+      "evidence": "24.9% partial R-squared beyond folio+regime",
+      "strength": "STRONG"
+    },
+    {
+      "id": "C959",
+      "topic": "Opener is role marker not instruction header",
+      "evidence": "Token-level JSD not significant, role accuracy 29.2%",
+      "strength": "MODERATE"
+    },
+    {
+      "id": "C960",
+      "topic": "Boundary vocabulary is open",
+      "evidence": "Gini 0.47 < 0.60, 663 tokens for 80% coverage",
+      "strength": "MODERATE"
+    },
+    {
+      "id": "C961",
+      "topic": "Within-zone ordering absent",
+      "evidence": "Tau ~ 0 for EN and AX, p ~ 0.5",
+      "strength": "STRONG"
+    },
+    {
+      "id": "C962",
+      "topic": "Phase interleaving pattern",
+      "evidence": "Weak clustering but not sequential, compliance 32.7% vs 21.7% shuffle",
+      "strength": "MODERATE"
+    },
+    {
+      "id": "C963",
+      "topic": "Paragraph body homogeneity",
+      "evidence": "Only length progression, no compositional change after length control",
+      "strength": "STRONG"
+    },
+    {
+      "id": "C964",
+      "topic": "Boundary-constrained free-interior grammar",
+      "evidence": "Integrated verdict: boundary_grammar, score 0.39",
+      "strength": "SYNTHESIS"
+    }
+  ]
+}

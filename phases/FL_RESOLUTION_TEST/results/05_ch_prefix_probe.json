@@ -1,0 +1,31 @@
+{
+  "test": "ch-Prefix FL Probe",
+  "hypothesis": "ch-FL shows stronger effects due to precision semantics (C412, C929)",
+  "priority": "PREFIX-SPECIFIC PROBE",
+  "scope": "Currier B strong-forward folios (11), ch-prefixed FL only",
+  "ch_fl_tokens": 64,
+  "ch_fl_pairs": 113,
+  "ch_stage_distribution": {"2": 6, "3": 24, "4": 12, "5": 22},
+  "variant_selection": {
+    "ch_nmi": 0.155607,
+    "all_fl_nmi": 0.055226,
+    "ratio": 2.8,
+    "ch_p": 0.380,
+    "verdict": "FAIL (sample too small, but 2.8x stronger)"
+  },
+  "link_distance": {
+    "ch_mean": 3.80,
+    "other_fl_mean": 3.81,
+    "verdict": "identical"
+  },
+  "suffix_effect": {
+    "ch_nmi": 0.189113,
+    "ch_shuffle_mean": 0.129339,
+    "ch_p": 0.004,
+    "all_fl_nmi": 0.026761,
+    "ratio": 7.0,
+    "verdict": "SIGNIFICANT"
+  },
+  "verdict": "PARTIAL - ch-FL shows significant suffix effect (p=0.004, 7x global) and stronger variant signal (2.8x but ns). Consistent with precision annotation submode.",
+  "interpretation": "ch-prefixed FL tokens interact with execution morphology at the suffix level in ways that general FL does not. This is consistent with ch having known precision semantics (C412, C929). ch-FL may represent a precision-annotation submode where state declarations are more tightly coupled to execution parameters."
+}

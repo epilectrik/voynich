@@ -1,0 +1,31 @@
+{
+  "n_paragraphs": 366,
+  "preamble_rates": {
+    "FIRST": 0.2978142076502732,
+    "MIDDLE": 0.3609077598828697,
+    "LAST": 0.18579234972677597
+  },
+  "coda_rates": {
+    "FIRST": 0.1994535519125683,
+    "MIDDLE": 0.23865300146412885,
+    "LAST": 0.1885245901639344
+  },
+  "pair_position_cramers_v": 0.19,
+  "first_last_same_pair": 0.048,
+  "expected_same_pair": 0.073,
+  "within_para_jaccard": 0.0359,
+  "between_para_jaccard": 0.0193,
+  "jaccard_lift": 1.86,
+  "mean_pair_diversity": 0.844,
+  "signals": {
+    "preamble_first_enriched": false,
+    "coda_last_enriched": false,
+    "pair_varies_by_position": true,
+    "vocab_coherence": true,
+    "first_last_pair_match": false,
+    "low_pair_diversity": false
+  },
+  "n_signals": 2,
+  "verdict": "WEAKLY_STRUCTURED",
+  "explanation": "Some paragraph-level organization but no strong internal grammar"
+}

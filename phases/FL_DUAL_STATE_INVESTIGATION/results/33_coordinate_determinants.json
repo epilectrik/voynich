@@ -1,0 +1,47 @@
+{
+  "n_lines": 1176,
+  "folio_effect": {
+    "low_cramers_v": 0.302,
+    "high_cramers_v": 0.273,
+    "mean_unique_pairs_per_folio": 9.6,
+    "mean_top_pair_coverage": 26.6
+  },
+  "section_effect": {
+    "low_cramers_v": 0.189,
+    "high_cramers_v": 0.17
+  },
+  "line_position_effect": {
+    "low_rho": -0.046,
+    "low_p": 0.1112,
+    "high_rho": 0.005,
+    "high_p": 0.8689
+  },
+  "paragraph_position_effect": {
+    "low_kw_p": 0.0351,
+    "high_kw_p": 0.5362
+  },
+  "adjacent_continuity": {
+    "same_pair_rate": 0.113,
+    "same_pair_expected": 0.068,
+    "same_low_lift": 1.35,
+    "same_high_lift": 1.07,
+    "mean_low_step": 1.18,
+    "mean_high_step": 1.34
+  },
+  "within_para_continuity": {
+    "same_pair_rate": 0.115,
+    "between_same_pair_rate": 0.099
+  },
+  "paragraph_sequences": {
+    "low_flat_pct": 9.2,
+    "low_mixed_pct": 61.8,
+    "high_flat_pct": 4.0,
+    "high_mixed_pct": 67.6
+  },
+  "primary_determinants": [
+    "FOLIO",
+    "SECTION",
+    "LOCAL_CONTINUITY"
+  ],
+  "verdict": "MIXED"
+}

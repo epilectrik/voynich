@@ -1,0 +1,15 @@
+{
+  "n_middles_tested": 12,
+  "n_bimodal_global": 10,
+  "n_unimodal_within_component": 0,
+  "mean_separation": 0.518,
+  "gmm_low_mean_avg": 0.298,
+  "gmm_high_mean_avg": 0.816,
+  "fl_low_nesting_mean": 0.198,
+  "fl_high_nesting_mean": 0.871,
+  "within_mode_concordance": 0.696,
+  "cross_mode_concordance": 0.462,
+  "overall_concordance": 0.57,
+  "verdict": "BIMODALITY_IS_NESTING",
+  "explanation": "The bimodality is explained by nesting roles (3/4 checks pass)"
+}

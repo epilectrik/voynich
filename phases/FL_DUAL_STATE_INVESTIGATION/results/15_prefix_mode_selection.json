@@ -1,0 +1,669 @@
+{
+  "total_assigned": 5790,
+  "prefix_mode_distribution": {
+    "NONE": {
+      "low": 753,
+      "high": 886,
+      "total": 1639,
+      "low_pct": 45.9,
+      "high_pct": 54.1,
+      "bias": "balanced"
+    },
+    "da": {
+      "low": 246,
+      "high": 356,
+      "total": 602,
+      "low_pct": 40.9,
+      "high_pct": 59.1,
+      "bias": "lean-HIGH"
+    },
+    "ch": {
+      "low": 282,
+      "high": 203,
+      "total": 485,
+      "low_pct": 58.1,
+      "high_pct": 41.9,
+      "bias": "lean-LOW"
+    },
+    "ot": {
+      "low": 212,
+      "high": 241,
+      "total": 453,
+      "low_pct": 46.8,
+      "high_pct": 53.2,
+      "bias": "balanced"
+    },
+    "ok": {
+      "low": 191,
+      "high": 186,
+      "total": 377,
+      "low_pct": 50.7,
+      "high_pct": 49.3,
+      "bias": "balanced"
+    },
+    "sh": {
+      "low": 197,
+      "high": 77,
+      "total": 274,
+      "low_pct": 71.9,
+      "high_pct": 28.1,
+      "bias": "STRONG-LOW"
+    },
+    "qo": {
+      "low": 143,
+      "high": 69,
+      "total": 212,
+      "low_pct": 67.5,
+      "high_pct": 32.5,
+      "bias": "STRONG-LOW"
+    },
+    "sa": {
+      "low": 107,
+      "high": 80,
+      "total": 187,
+      "low_pct": 57.2,
+      "high_pct": 42.8,
+      "bias": "lean-LOW"
+    },
+    "ta": {
+      "low": 65,
+      "high": 91,
+      "total": 156,
+      "low_pct": 41.7,
+      "high_pct": 58.3,
+      "bias": "lean-HIGH"
+    },
+    "ol": {
+      "low": 53,
+      "high": 100,
+      "total": 153,
+      "low_pct": 34.6,
+      "high_pct": 65.4,
+      "bias": "STRONG-HIGH"
+    },
+    "ka": {
+      "low": 38,
+      "high": 114,
+      "total": 152,
+      "low_pct": 25.0,
+      "high_pct": 75.0,
+      "bias": "STRONG-HIGH"
+    },
+    "te": {
+      "low": 74,
+      "high": 42,
+      "total": 116,
+      "low_pct": 63.8,
+      "high_pct": 36.2,
+      "bias": "lean-LOW"
+    },
+    "so": {
+      "low": 87,
+      "high": 15,
+      "total": 102,
+      "low_pct": 85.3,
+      "high_pct": 14.7,
+      "bias": "STRONG-LOW"
+    },
+    "do": {
+      "low": 60,
+      "high": 32,
+      "total": 92,
+      "low_pct": 65.2,
+      "high_pct": 34.8,
+      "bias": "STRONG-LOW"
+    },
+    "ke": {
+      "low": 58,
+      "high": 32,
+      "total": 90,
+      "low_pct": 64.4,
+      "high_pct": 35.6,
+      "bias": "lean-LOW"
+    },
+    "lk": {
+      "low": 42,
+      "high": 45,
+      "total": 87,
+      "low_pct": 48.3,
+      "high_pct": 51.7,
+      "bias": "balanced"
+    },
+    "ar": {
+      "low": 22,
+      "high": 58,
+      "total": 80,
+      "low_pct": 27.5,
+      "high_pct": 72.5,
+      "bias": "STRONG-HIGH"
+    },
+    "yk": {
+      "low": 32,
+      "high": 35,
+      "total": 67,
+      "low_pct": 47.8,
+      "high_pct": 52.2,
+      "bias": "balanced"
+    },
+    "al": {
+      "low": 25,
+      "high": 39,
+      "total": 64,
+      "low_pct": 39.1,
+      "high_pct": 60.9,
+      "bias": "lean-HIGH"
+    },
+    "or": {
+      "low": 13,
+      "high": 43,
+      "total": 56,
+      "low_pct": 23.2,
+      "high_pct": 76.8,
+      "bias": "STRONG-HIGH"
+    },
+    "po": {
+      "low": 48,
+      "high": 8,
+      "total": 56,
+      "low_pct": 85.7,
+      "high_pct": 14.3,
+      "bias": "STRONG-LOW"
+    },
+    "to": {
+      "low": 38,
+      "high": 15,
+      "total": 53,
+      "low_pct": 71.7,
+      "high_pct": 28.3,
+      "bias": "STRONG-LOW"
+    },
+    "tch": {
+      "low": 33,
+      "high": 15,
+      "total": 48,
+      "low_pct": 68.8,
+      "high_pct": 31.2,
+      "bias": "STRONG-LOW"
+    },
+    "lch": {
+      "low": 23,
+      "high": 23,
+      "total": 46,
+      "low_pct": 50.0,
+      "high_pct": 50.0,
+      "bias": "balanced"
+    },
+    "pch": {
+      "low": 18,
+      "high": 16,
+      "total": 34,
+      "low_pct": 52.9,
+      "high_pct": 47.1,
+      "bias": "balanced"
+    },
+    "kch": {
+      "low": 21,
+      "high": 11,
+      "total": 32,
+      "low_pct": 65.6,
+      "high_pct": 34.4,
+      "bias": "STRONG-LOW"
+    },
+    "ko": {
+      "low": 7,
+      "high": 19,
+      "total": 26,
+      "low_pct": 26.9,
+      "high_pct": 73.1,
+      "bias": "STRONG-HIGH"
+    },
+    "dch": {
+      "low": 14,
+      "high": 2,
+      "total": 16,
+      "low_pct": 87.5,
+      "high_pct": 12.5,
+      "bias": "STRONG-LOW"
+    },
+    "fch": {
+      "low": 6,
+      "high": 4,
+      "total": 10,
+      "low_pct": 60.0,
+      "high_pct": 40.0,
+      "bias": "lean-LOW"
+    }
+  },
+  "prefix_family_results": {
+    "qo": {
+      "low": 143,
+      "high": 69,
+      "total": 212,
+      "low_pct": 67.5,
+      "bias": "STRONG-LOW"
+    },
+    "ch": {
+      "low": 282,
+      "high": 203,
+      "total": 485,
+      "low_pct": 58.1,
+      "bias": "lean-LOW"
+    },
+    "sh": {
+      "low": 197,
+      "high": 77,
+      "total": 274,
+      "low_pct": 71.9,
+      "bias": "STRONG-LOW"
+    },
+    "da": {
+      "low": 246,
+      "high": 356,
+      "total": 602,
+      "low_pct": 40.9,
+      "bias": "lean-HIGH"
+    },
+    "ok/ot/ol": {
+      "low": 456,
+      "high": 527,
+      "total": 983,
+      "low_pct": 46.4,
+      "bias": "balanced"
+    },
+    "Xo (ko,so,to,do,po)": {
+      "low": 240,
+      "high": 89,
+      "total": 329,
+      "low_pct": 72.9,
+      "bias": "STRONG-LOW"
+    },
+    "Xa (ka,sa,ta)": {
+      "low": 210,
+      "high": 285,
+      "total": 495,
+      "low_pct": 42.4,
+      "bias": "lean-HIGH"
+    },
+    "Xch (pch,tch,kch,lch,dch,fch,rch,sch)": {
+      "low": 123,
+      "high": 76,
+      "total": 199,
+      "low_pct": 61.8,
+      "bias": "lean-LOW"
+    },
+    "Xe (ke,te)": {
+      "low": 132,
+      "high": 74,
+      "total": 206,
+      "low_pct": 64.1,
+      "bias": "lean-LOW"
+    },
+    "Xk (lk,yk)": {
+      "low": 74,
+      "high": 80,
+      "total": 154,
+      "low_pct": 48.1,
+      "bias": "balanced"
+    },
+    "NONE": {
+      "low": 753,
+      "high": 886,
+      "total": 1639,
+      "low_pct": 45.9,
+      "bias": "balanced"
+    },
+    "Xr/Xl (ar,al,or)": {
+      "low": 60,
+      "high": 140,
+      "total": 200,
+      "low_pct": 30.0,
+      "bias": "STRONG-HIGH"
+    }
+  },
+  "chi_squared": {
+    "chi2": 344.1,
+    "p": 7.489563634827088e-58,
+    "dof": 25,
+    "cramers_v": 0.245
+  },
+  "per_middle_prefix_mode": {
+    "i": {
+      "da": {
+        "low": 23,
+        "high": 40,
+        "total": 63,
+        "low_pct": 36.5
+      }
+    },
+    "in": {
+      "da": {
+        "low": 35,
+        "high": 82,
+        "total": 117,
+        "low_pct": 29.9
+      }
+    },
+    "r": {
+      "qo": {
+        "low": 15,
+        "high": 5,
+        "total": 20,
+        "low_pct": 75.0
+      },
+      "ch": {
+        "low": 4,
+        "high": 1,
+        "total": 5,
+        "low_pct": 80.0
+      },
+      "da": {
+        "low": 100,
+        "high": 108,
+        "total": 208,
+        "low_pct": 48.1
+      },
+      "NONE": {
+        "low": 80,
+        "high": 135,
+        "total": 215,
+        "low_pct": 37.2
+      }
+    },
+    "ar": {
+      "qo": {
+        "low": 4,
+        "high": 2,
+        "total": 6,
+        "low_pct": 66.7
+      },
+      "ch": {
+        "low": 20,
+        "high": 25,
+        "total": 45,
+        "low_pct": 44.4
+      },
+      "sh": {
+        "low": 21,
+        "high": 7,
+        "total": 28,
+        "low_pct": 75.0
+      },
+      "NONE": {
+        "low": 110,
+        "high": 138,
+        "total": 248,
+        "low_pct": 44.4
+      },
+      "ok": {
+        "low": 53,
+        "high": 63,
+        "total": 116,
+        "low_pct": 45.7
+      },
+      "ot": {
+        "low": 43,
+        "high": 87,
+        "total": 130,
+        "low_pct": 33.1
+      }
+    },
+    "al": {
+      "ch": {
+        "low": 23,
+        "high": 10,
+        "total": 33,
+        "low_pct": 69.7
+      },
+      "sh": {
+        "low": 10,
+        "high": 3,
+        "total": 13,
+        "low_pct": 76.9
+      },
+      "NONE": {
+        "low": 93,
+        "high": 93,
+        "total": 186,
+        "low_pct": 50.0
+      },
+      "ok": {
+        "low": 54,
+        "high": 55,
+        "total": 109,
+        "low_pct": 49.5
+      },
+      "ot": {
+        "low": 52,
+        "high": 64,
+        "total": 116,
+        "low_pct": 44.8
+      }
+    },
+    "l": {
+      "qo": {
+        "low": 105,
+        "high": 52,
+        "total": 157,
+        "low_pct": 66.9
+      },
+      "ch": {
+        "low": 18,
+        "high": 12,
+        "total": 30,
+        "low_pct": 60.0
+      },
+      "da": {
+        "low": 73,
+        "high": 92,
+        "total": 165,
+        "low_pct": 44.2
+      },
+      "NONE": {
+        "low": 70,
+        "high": 129,
+        "total": 199,
+        "low_pct": 35.2
+      }
+    },
+    "ol": {
+      "ch": {
+        "low": 69,
+        "high": 40,
+        "total": 109,
+        "low_pct": 63.3
+      },
+      "sh": {
+        "low": 54,
+        "high": 17,
+        "total": 71,
+        "low_pct": 76.1
+      },
+      "NONE": {
+        "low": 222,
+        "high": 199,
+        "total": 421,
+        "low_pct": 52.7
+      },
+      "ok": {
+        "low": 11,
+        "high": 13,
+        "total": 24,
+        "low_pct": 45.8
+      },
+      "ot": {
+        "low": 19,
+        "high": 17,
+        "total": 36,
+        "low_pct": 52.8
+      }
+    },
+    "o": {
+      "ch": {
+        "low": 37,
+        "high": 46,
+        "total": 83,
+        "low_pct": 44.6
+      },
+      "sh": {
+        "low": 36,
+        "high": 20,
+        "total": 56,
+        "low_pct": 64.3
+      },
+      "NONE": {
+        "low": 63,
+        "high": 45,
+        "total": 108,
+        "low_pct": 58.3
+      },
+      "ok": {
+        "low": 7,
+        "high": 8,
+        "total": 15,
+        "low_pct": 46.7
+      },
+      "ot": {
+        "low": 9,
+        "high": 12,
+        "total": 21,
+        "low_pct": 42.9
+      }
+    },
+    "am": {
+      "ch": {
+        "low": 2,
+        "high": 4,
+        "total": 6,
+        "low_pct": 33.3
+      },
+      "sh": {
+        "low": 0,
+        "high": 5,
+        "total": 5,
+        "low_pct": 0.0
+      },
+      "NONE": {
+        "low": 12,
+        "high": 47,
+        "total": 59,
+        "low_pct": 20.3
+      },
+      "ok": {
+        "low": 5,
+        "high": 16,
+        "total": 21,
+        "low_pct": 23.8
+      },
+      "ot": {
+        "low": 12,
+        "high": 26,
+        "total": 38,
+        "low_pct": 31.6
+      }
+    },
+    "m": {
+      "da": {
+        "low": 15,
+        "high": 30,
+        "total": 45,
+        "low_pct": 33.3
+      }
+    },
+    "dy": {
+      "qo": {
+        "low": 9,
+        "high": 3,
+        "total": 12,
+        "low_pct": 75.0
+      },
+      "ch": {
+        "low": 77,
+        "high": 58,
+        "total": 135,
+        "low_pct": 57.0
+      },
+      "sh": {
+        "low": 36,
+        "high": 21,
+        "total": 57,
+        "low_pct": 63.2
+      },
+      "NONE": {
+        "low": 34,
+        "high": 79,
+        "total": 113,
+        "low_pct": 30.1
+      },
+      "ok": {
+        "low": 9,
+        "high": 13,
+        "total": 22,
+        "low_pct": 40.9
+      },
+      "ot": {
+        "low": 14,
+        "high": 16,
+        "total": 30,
+        "low_pct": 46.7
+      }
+    },
+    "y": {
+      "qo": {
+        "low": 4,
+        "high": 1,
+        "total": 5,
+        "low_pct": 80.0
+      },
+      "ch": {
+        "low": 32,
+        "high": 7,
+        "total": 39,
+        "low_pct": 82.1
+      },
+      "sh": {
+        "low": 37,
+        "high": 2,
+        "total": 39,
+        "low_pct": 94.9
+      },
+      "NONE": {
+        "low": 69,
+        "high": 15,
+        "total": 84,
+        "low_pct": 82.1
+      },
+      "ok": {
+        "low": 52,
+        "high": 16,
+        "total": 68,
+        "low_pct": 76.5
+      },
+      "ot": {
+        "low": 62,
+        "high": 15,
+        "total": 77,
+        "low_pct": 80.5
+      }
+    }
+  },
+  "strong_low_prefixes": [
+    "sh",
+    "qo",
+    "so",
+    "do",
+    "po",
+    "to",
+    "tch",
+    "kch",
+    "dch"
+  ],
+  "strong_high_prefixes": [
+    "ol",
+    "ka",
+    "ar",
+    "or",
+    "ko"
+  ],
+  "verdict": "PREFIX_DETERMINES_MODE",
+  "explanation": "Clear PREFIX->mode mapping. LOW-biased: ['sh', 'qo', 'so', 'do', 'po', 'to', 'tch', 'kch', 'dch']. HIGH-biased: ['ol', 'ka', 'ar', 'or', 'ko']."
+}

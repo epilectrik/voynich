@@ -1,0 +1,16 @@
+{
+  "n_lines": 582,
+  "n_pre_fl_tokens": 807,
+  "n_post_fl_tokens": 385,
+  "pct_lines_with_pre": 58.1,
+  "pct_lines_with_post": 37.3,
+  "pre_unknown_rate": 0.405,
+  "post_unknown_rate": 0.431,
+  "center_unknown_rate": 0.277,
+  "pre_unclassified_rate": 0.405,
+  "post_unclassified_rate": 0.431,
+  "pre_pair_cramers_v": 0.356,
+  "post_pair_cramers_v": 0.521,
+  "verdict": "FOURTH_LAYER_ADDRESSING",
+  "explanation": "Pre/post tokens are distinct from center AND carry pair-specific information"
+}

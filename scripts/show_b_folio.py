@@ -100,8 +100,18 @@ def display_flow(folio_id: str, line_num: int = None, para_num: int = None, use_
                 # Control-flow label (bright)
                 if fg['flow']:
                     s += f" {Style.BRIGHT}[{fg['flow']}]{Style.RESET_ALL}"
-                tok_parts.append(s)
-            flow_line = ' -> '.join(tok_parts)
+                tok_parts.append((s, tok.prefix_phase))
+
+            # Join with zone-aware separators (C961, C964)
+            if len(tok_parts) <= 1:
+                flow_line = tok_parts[0][0] if tok_parts else ''
+            else:
+                flow_line = tok_parts[0][0]
+                for j in range(1, len(tok_parts)):
+                    prev_phase = tok_parts[j-1][1]
+                    curr_phase = tok_parts[j][1]
+                    sep = ' | ' if prev_phase == 'WORK' and curr_phase == 'WORK' else ' -> '
+                    flow_line += sep + tok_parts[j][0]
         else:
             flow_line = la.flow_render()
 

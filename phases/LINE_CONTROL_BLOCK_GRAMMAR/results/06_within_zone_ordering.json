@@ -1,0 +1,324 @@
+{
+  "test": "06_within_zone_ordering",
+  "phase": "LINE_CONTROL_BLOCK_GRAMMAR",
+  "purpose": "Determine whether tokens within the WORK zone follow a predictable ordering by instruction class, prefix, middle length, or kernel content.",
+  "data": {
+    "total_lines": 2420,
+    "qualifying_en_lines": 1201,
+    "qualifying_ax_lines": 328
+  },
+  "en_tau_analysis": {
+    "vs_class": {
+      "n": 1201,
+      "mean": -0.000131,
+      "std": 0.528952,
+      "median": 0.0
+    },
+    "vs_prefix": {
+      "n": 1201,
+      "mean": -0.087585,
+      "std": 0.461051,
+      "median": 0.0
+    },
+    "vs_middle_len": {
+      "n": 1201,
+      "mean": -0.048642,
+      "std": 0.499291,
+      "median": 0.0
+    },
+    "vs_kernel": {
+      "n": 1201,
+      "mean": -0.044569,
+      "std": 0.493647,
+      "median": 0.0
+    }
+  },
+  "ax_tau_analysis": {
+    "vs_class": {
+      "n": 328,
+      "mean": -0.032748,
+      "std": 0.5959,
+      "median": 0.0
+    },
+    "vs_prefix": {
+      "n": 328,
+      "mean": -0.012728,
+      "std": 0.522465,
+      "median": 0.0
+    },
+    "vs_middle_len": {
+      "n": 328,
+      "mean": -0.051701,
+      "std": 0.551898,
+      "median": 0.0
+    },
+    "vs_kernel": {
+      "n": 328,
+      "mean": -0.088027,
+      "std": 0.527148,
+      "median": 0.0
+    }
+  },
+  "kernel_position_analysis": {
+    "kernel_bearing_en": {
+      "count": 3878,
+      "mean_relative_position": 0.47284
+    },
+    "kernel_free_en": {
+      "count": 1120,
+      "mean_relative_position": 0.494103
+    },
+    "position_difference": -0.021262
+  },
+  "directional_pairs": {
+    "total_qualifying_pairs": 78,
+    "pairs_with_3to1_bias": 3,
+    "top_pairs": [
+      {
+        "pair": [
+          47,
+          48
+        ],
+        "lo_first": 9,
+        "hi_first": 2,
+        "total": 11,
+        "ratio": 4.5,
+        "dominant": "lo_first"
+      },
+      {
+        "pair": [
+          34,
+          44
+        ],
+        "lo_first": 12,
+        "hi_first": 3,
+        "total": 15,
+        "ratio": 4.0,
+        "dominant": "lo_first"
+      },
+      {
+        "pair": [
+          34,
+          42
+        ],
+        "lo_first": 16,
+        "hi_first": 5,
+        "total": 21,
+        "ratio": 3.2,
+        "dominant": "lo_first"
+      },
+      {
+        "pair": [
+          39,
+          48
+        ],
+        "lo_first": 4,
+        "hi_first": 11,
+        "total": 15,
+        "ratio": 2.75,
+        "dominant": "hi_first"
+      },
+      {
+        "pair": [
+          39,
+          46
+        ],
+        "lo_first": 3,
+        "hi_first": 8,
+        "total": 11,
+        "ratio": 2.67,
+        "dominant": "hi_first"
+      },
+      {
+        "pair": [
+          35,
+          47
+        ],
+        "lo_first": 4,
+        "hi_first": 9,
+        "total": 13,
+        "ratio": 2.25,
+        "dominant": "hi_first"
+      },
+      {
+        "pair": [
+          31,
+          49
+        ],
+        "lo_first": 10,
+        "hi_first": 22,
+        "total": 32,
+        "ratio": 2.2,
+        "dominant": "hi_first"
+      },
+      {
+        "pair": [
+          35,
+          36
+        ],
+        "lo_first": 11,
+        "hi_first": 5,
+        "total": 16,
+        "ratio": 2.2,
+        "dominant": "lo_first"
+      },
+      {
+        "pair": [
+          8,
+          48
+        ],
+        "lo_first": 12,
+        "hi_first": 25,
+        "total": 37,
+        "ratio": 2.08,
+        "dominant": "hi_first"
+      },
+      {
+        "pair": [
+          33,
+          37
+        ],
+        "lo_first": 4,
+        "hi_first": 8,
+        "total": 12,
+        "ratio": 2.0,
+        "dominant": "hi_first"
+      },
+      {
+        "pair": [
+          35,
+          46
+        ],
+        "lo_first": 4,
+        "hi_first": 8,
+        "total": 12,
+        "ratio": 2.0,
+        "dominant": "hi_first"
+      },
+      {
+        "pair": [
+          36,
+          47
+        ],
+        "lo_first": 5,
+        "hi_first": 10,
+        "total": 15,
+        "ratio": 2.0,
+        "dominant": "hi_first"
+      },
+      {
+        "pair": [
+          32,
+          39
+        ],
+        "lo_first": 22,
+        "hi_first": 12,
+        "total": 34,
+        "ratio": 1.83,
+        "dominant": "lo_first"
+      },
+      {
+        "pair": [
+          36,
+          46
+        ],
+        "lo_first": 6,
+        "hi_first": 11,
+        "total": 17,
+        "ratio": 1.83,
+        "dominant": "hi_first"
+      },
+      {
+        "pair": [
+          34,
+          46
+        ],
+        "lo_first": 47,
+        "hi_first": 26,
+        "total": 73,
+        "ratio": 1.81,
+        "dominant": "lo_first"
+      },
+      {
+        "pair": [
+          34,
+          48
+        ],
+        "lo_first": 13,
+        "hi_first": 23,
+        "total": 36,
+        "ratio": 1.77,
+        "dominant": "hi_first"
+      },
+      {
+        "pair": [
+          31,
+          46
+        ],
+        "lo_first": 35,
+        "hi_first": 20,
+        "total": 55,
+        "ratio": 1.75,
+        "dominant": "lo_first"
+      },
+      {
+        "pair": [
+          35,
+          43
+        ],
+        "lo_first": 4,
+        "hi_first": 7,
+        "total": 11,
+        "ratio": 1.75,
+        "dominant": "hi_first"
+      },
+      {
+        "pair": [
+          33,
+          49
+        ],
+        "lo_first": 23,
+        "hi_first": 40,
+        "total": 63,
+        "ratio": 1.74,
+        "dominant": "hi_first"
+      },
+      {
+        "pair": [
+          34,
+          49
+        ],
+        "lo_first": 23,
+        "hi_first": 14,
+        "total": 37,
+        "ratio": 1.64,
+        "dominant": "lo_first"
+      }
+    ]
+  },
+  "shuffle": {
+    "n_iterations": 1000,
+    "seed": 42,
+    "en": {
+      "observed_mean_tau": -0.000131,
+      "shuffle_mean": 0.000126,
+      "shuffle_std": 0.015381,
+      "p_value_one_tail": 0.498,
+      "p_value_two_tail": 0.997,
+      "significant_001": false,
+      "significant_two_tail_001": false
+    },
+    "ax": {
+      "observed_mean_tau": -0.032748,
+      "shuffle_mean": -0.001792,
+      "shuffle_std": 0.033131,
+      "p_value_one_tail": 0.828,
+      "p_value_two_tail": 0.32,
+      "significant_001": false,
+      "significant_two_tail_001": false
+    }
+  },
+  "verdict": "FAIL",
+  "verdict_detail": "No significant ordering. EN p=0.4980, AX p=0.8280. 3 pair(s) with >3:1 bias.",
+  "pass_criteria": "PASS: mean tau significantly >0 (p<0.001 vs shuffle) for EN or AX, AND 1+ class pair with >3:1 directional bias. FAIL: tau not different from shuffle (p>0.05)."
+}

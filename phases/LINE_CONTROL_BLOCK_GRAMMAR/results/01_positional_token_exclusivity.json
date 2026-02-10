@@ -1,0 +1,4140 @@
+{
+  "test": "01_positional_token_exclusivity",
+  "phase": "LINE_CONTROL_BLOCK_GRAMMAR",
+  "verdict": "PASS",
+  "verdict_detail": "Exclusive count 192 is 2.72x shuffle mean (p=0.000000), 16 Fisher-significant tokens",
+  "summary": {
+    "total_lines": 2420,
+    "total_tokens": 23096,
+    "total_per_zone": {
+      "INITIAL": 2420,
+      "MEDIAL": 18262,
+      "FINAL": 2414
+    }
+  },
+  "raw_pass": {
+    "qualified_tokens": 334,
+    "exclusive_count": 192,
+    "fisher_sig_count": 16,
+    "top_exclusive": [
+      {
+        "token": "aiin",
+        "total": 351,
+        "INITIAL": 0,
+        "MEDIAL": 337,
+        "FINAL": 14,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 9,
+        "role": "FREQUENT_OPERATOR"
+      },
+      {
+        "token": "al",
+        "total": 186,
+        "INITIAL": 0,
+        "MEDIAL": 158,
+        "FINAL": 28,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 7,
+        "role": "FLOW_OPERATOR"
+      },
+      {
+        "token": "chdy",
+        "total": 132,
+        "INITIAL": 0,
+        "MEDIAL": 118,
+        "FINAL": 14,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 31,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "dy",
+        "total": 109,
+        "INITIAL": 0,
+        "MEDIAL": 70,
+        "FINAL": 39,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 23,
+        "role": "FREQUENT_OPERATOR"
+      },
+      {
+        "token": "otain",
+        "total": 92,
+        "INITIAL": 0,
+        "MEDIAL": 83,
+        "FINAL": 9,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 13,
+        "role": "FREQUENT_OPERATOR"
+      },
+      {
+        "token": "sheedy",
+        "total": 82,
+        "INITIAL": 3,
+        "MEDIAL": 79,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 34,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "ain",
+        "total": 79,
+        "INITIAL": 0,
+        "MEDIAL": 71,
+        "FINAL": 8,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 24,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "raiin",
+        "total": 64,
+        "INITIAL": 0,
+        "MEDIAL": 59,
+        "FINAL": 5,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 29,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "oty",
+        "total": 60,
+        "INITIAL": 0,
+        "MEDIAL": 49,
+        "FINAL": 11,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 14,
+        "role": "FREQUENT_OPERATOR"
+      },
+      {
+        "token": "chcthy",
+        "total": 56,
+        "INITIAL": 0,
+        "MEDIAL": 52,
+        "FINAL": 4,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 34,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "am",
+        "total": 55,
+        "INITIAL": 0,
+        "MEDIAL": 11,
+        "FINAL": 44,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 23,
+        "role": "FREQUENT_OPERATOR"
+      },
+      {
+        "token": "cheedy",
+        "total": 54,
+        "INITIAL": 0,
+        "MEDIAL": 52,
+        "FINAL": 2,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 34,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "shckhy",
+        "total": 54,
+        "INITIAL": 0,
+        "MEDIAL": 54,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 34,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "keedy",
+        "total": 53,
+        "INITIAL": 0,
+        "MEDIAL": 49,
+        "FINAL": 4,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 29,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "opchedy",
+        "total": 50,
+        "INITIAL": 0,
+        "MEDIAL": 48,
+        "FINAL": 2,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 29,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "oky",
+        "total": 49,
+        "INITIAL": 0,
+        "MEDIAL": 36,
+        "FINAL": 13,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 14,
+        "role": "FREQUENT_OPERATOR"
+      },
+      {
+        "token": "chody",
+        "total": 47,
+        "INITIAL": 0,
+        "MEDIAL": 46,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 34,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "kaiin",
+        "total": 47,
+        "INITIAL": 1,
+        "MEDIAL": 46,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 29,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "oly",
+        "total": 46,
+        "INITIAL": 0,
+        "MEDIAL": 12,
+        "FINAL": 34,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 15,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "kain",
+        "total": 46,
+        "INITIAL": 0,
+        "MEDIAL": 43,
+        "FINAL": 3,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 28,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "cheky",
+        "total": 45,
+        "INITIAL": 0,
+        "MEDIAL": 41,
+        "FINAL": 4,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 34,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "checkhy",
+        "total": 45,
+        "INITIAL": 0,
+        "MEDIAL": 44,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 34,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "kedy",
+        "total": 44,
+        "INITIAL": 0,
+        "MEDIAL": 42,
+        "FINAL": 2,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 28,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "dam",
+        "total": 42,
+        "INITIAL": 0,
+        "MEDIAL": 14,
+        "FINAL": 28,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 30,
+        "role": "FLOW_OPERATOR"
+      },
+      {
+        "token": "lkeedy",
+        "total": 41,
+        "INITIAL": 0,
+        "MEDIAL": 37,
+        "FINAL": 4,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 29,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "olkeey",
+        "total": 38,
+        "INITIAL": 6,
+        "MEDIAL": 32,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 17,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "otam",
+        "total": 37,
+        "INITIAL": 0,
+        "MEDIAL": 12,
+        "FINAL": 25,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 14,
+        "role": "FREQUENT_OPERATOR"
+      },
+      {
+        "token": "aiiin",
+        "total": 37,
+        "INITIAL": 0,
+        "MEDIAL": 36,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 28,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "chy",
+        "total": 36,
+        "INITIAL": 0,
+        "MEDIAL": 30,
+        "FINAL": 6,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 31,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "otey",
+        "total": 36,
+        "INITIAL": 0,
+        "MEDIAL": 35,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 14,
+        "role": "FREQUENT_OPERATOR"
+      },
+      {
+        "token": "sheckhy",
+        "total": 35,
+        "INITIAL": 0,
+        "MEDIAL": 34,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 47,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "lkain",
+        "total": 35,
+        "INITIAL": 0,
+        "MEDIAL": 30,
+        "FINAL": 5,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 28,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "cheo",
+        "total": 33,
+        "INITIAL": 1,
+        "MEDIAL": 32,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 31,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "chor",
+        "total": 32,
+        "INITIAL": 1,
+        "MEDIAL": 31,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 31,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "tchedy",
+        "total": 32,
+        "INITIAL": 20,
+        "MEDIAL": 12,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 29,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "sor",
+        "total": 32,
+        "INITIAL": 25,
+        "MEDIAL": 7,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 24,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "qoteey",
+        "total": 31,
+        "INITIAL": 2,
+        "MEDIAL": 29,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 36,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "lkar",
+        "total": 30,
+        "INITIAL": 0,
+        "MEDIAL": 28,
+        "FINAL": 2,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 28,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "o",
+        "total": 29,
+        "INITIAL": 9,
+        "MEDIAL": 20,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 9,
+        "role": "FREQUENT_OPERATOR"
+      },
+      {
+        "token": "chedar",
+        "total": 28,
+        "INITIAL": 0,
+        "MEDIAL": 28,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 47,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "sheky",
+        "total": 28,
+        "INITIAL": 0,
+        "MEDIAL": 28,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 35,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "chal",
+        "total": 28,
+        "INITIAL": 0,
+        "MEDIAL": 26,
+        "FINAL": 2,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 35,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "checthy",
+        "total": 27,
+        "INITIAL": 0,
+        "MEDIAL": 24,
+        "FINAL": 3,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 47,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "ches",
+        "total": 27,
+        "INITIAL": 0,
+        "MEDIAL": 26,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 35,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "taiin",
+        "total": 27,
+        "INITIAL": 9,
+        "MEDIAL": 18,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 28,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "olkedy",
+        "total": 27,
+        "INITIAL": 0,
+        "MEDIAL": 23,
+        "FINAL": 4,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 17,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "shcthy",
+        "total": 26,
+        "INITIAL": 0,
+        "MEDIAL": 26,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 47,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "ykar",
+        "total": 26,
+        "INITIAL": 4,
+        "MEDIAL": 22,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 28,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "otchdy",
+        "total": 26,
+        "INITIAL": 0,
+        "MEDIAL": 22,
+        "FINAL": 4,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 18,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "shor",
+        "total": 26,
+        "INITIAL": 4,
+        "MEDIAL": 22,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 31,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "chckhey",
+        "total": 26,
+        "INITIAL": 0,
+        "MEDIAL": 24,
+        "FINAL": 2,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 47,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "chear",
+        "total": 26,
+        "INITIAL": 0,
+        "MEDIAL": 25,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 34,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "qotol",
+        "total": 24,
+        "INITIAL": 1,
+        "MEDIAL": 23,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 36,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "qokchey",
+        "total": 24,
+        "INITIAL": 2,
+        "MEDIAL": 22,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 46,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "sheor",
+        "total": 24,
+        "INITIAL": 2,
+        "MEDIAL": 22,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 34,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "tol",
+        "total": 23,
+        "INITIAL": 12,
+        "MEDIAL": 11,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 24,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "qotchdy",
+        "total": 23,
+        "INITIAL": 0,
+        "MEDIAL": 21,
+        "FINAL": 2,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 46,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "qokeeey",
+        "total": 23,
+        "INITIAL": 3,
+        "MEDIAL": 20,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 46,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "sheo",
+        "total": 22,
+        "INITIAL": 0,
+        "MEDIAL": 22,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 35,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "ldy",
+        "total": 22,
+        "INITIAL": 0,
+        "MEDIAL": 6,
+        "FINAL": 16,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 20,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "yteey",
+        "total": 22,
+        "INITIAL": 3,
+        "MEDIAL": 19,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 28,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "qokam",
+        "total": 22,
+        "INITIAL": 0,
+        "MEDIAL": 3,
+        "FINAL": 19,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 36,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "kchedy",
+        "total": 22,
+        "INITIAL": 2,
+        "MEDIAL": 20,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 26,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "shar",
+        "total": 22,
+        "INITIAL": 1,
+        "MEDIAL": 21,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 35,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "cheal",
+        "total": 22,
+        "INITIAL": 0,
+        "MEDIAL": 21,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 35,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "pol",
+        "total": 22,
+        "INITIAL": 17,
+        "MEDIAL": 5,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 20,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "keey",
+        "total": 21,
+        "INITIAL": 0,
+        "MEDIAL": 21,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 28,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "okol",
+        "total": 21,
+        "INITIAL": 0,
+        "MEDIAL": 20,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 14,
+        "role": "FREQUENT_OPERATOR"
+      },
+      {
+        "token": "ched",
+        "total": 21,
+        "INITIAL": 0,
+        "MEDIAL": 21,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 39,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "opchey",
+        "total": 21,
+        "INITIAL": 0,
+        "MEDIAL": 20,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 26,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "sair",
+        "total": 20,
+        "INITIAL": 7,
+        "MEDIAL": 13,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 28,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "okchdy",
+        "total": 20,
+        "INITIAL": 0,
+        "MEDIAL": 16,
+        "FINAL": 4,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 16,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "qokor",
+        "total": 20,
+        "INITIAL": 0,
+        "MEDIAL": 19,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 36,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "kal",
+        "total": 20,
+        "INITIAL": 0,
+        "MEDIAL": 18,
+        "FINAL": 2,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 20,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "chl",
+        "total": 20,
+        "INITIAL": 0,
+        "MEDIAL": 19,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 41,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "qotey",
+        "total": 20,
+        "INITIAL": 2,
+        "MEDIAL": 18,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 36,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "qoeedy",
+        "total": 20,
+        "INITIAL": 3,
+        "MEDIAL": 17,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 49,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "chees",
+        "total": 19,
+        "INITIAL": 0,
+        "MEDIAL": 19,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 35,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "okam",
+        "total": 19,
+        "INITIAL": 0,
+        "MEDIAL": 5,
+        "FINAL": 14,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 19,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "chdal",
+        "total": 19,
+        "INITIAL": 0,
+        "MEDIAL": 19,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 39,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "opchdy",
+        "total": 19,
+        "INITIAL": 0,
+        "MEDIAL": 15,
+        "FINAL": 4,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 26,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "shecthy",
+        "total": 19,
+        "INITIAL": 0,
+        "MEDIAL": 18,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 48,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "rol",
+        "total": 19,
+        "INITIAL": 0,
+        "MEDIAL": 14,
+        "FINAL": 5,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 20,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "cheeky",
+        "total": 18,
+        "INITIAL": 1,
+        "MEDIAL": 17,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 47,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "okeol",
+        "total": 18,
+        "INITIAL": 0,
+        "MEDIAL": 16,
+        "FINAL": 2,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 13,
+        "role": "FREQUENT_OPERATOR"
+      },
+      {
+        "token": "okeeey",
+        "total": 18,
+        "INITIAL": 0,
+        "MEDIAL": 17,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 18,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "oldy",
+        "total": 18,
+        "INITIAL": 0,
+        "MEDIAL": 6,
+        "FINAL": 12,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 25,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "chdar",
+        "total": 18,
+        "INITIAL": 0,
+        "MEDIAL": 17,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 39,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "olkar",
+        "total": 18,
+        "INITIAL": 0,
+        "MEDIAL": 18,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 25,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "lshey",
+        "total": 18,
+        "INITIAL": 3,
+        "MEDIAL": 15,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 6,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "daly",
+        "total": 17,
+        "INITIAL": 0,
+        "MEDIAL": 8,
+        "FINAL": 9,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 40,
+        "role": "FLOW_OPERATOR"
+      },
+      {
+        "token": "chedain",
+        "total": 17,
+        "INITIAL": 0,
+        "MEDIAL": 16,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 48,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "aly",
+        "total": 17,
+        "INITIAL": 0,
+        "MEDIAL": 8,
+        "FINAL": 9,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 40,
+        "role": "FLOW_OPERATOR"
+      },
+      {
+        "token": "okair",
+        "total": 17,
+        "INITIAL": 1,
+        "MEDIAL": 16,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 16,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "lchdy",
+        "total": 17,
+        "INITIAL": 0,
+        "MEDIAL": 13,
+        "FINAL": 4,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 6,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "qokeeo",
+        "total": 17,
+        "INITIAL": 2,
+        "MEDIAL": 15,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 49,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "oiin",
+        "total": 17,
+        "INITIAL": 1,
+        "MEDIAL": 16,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 28,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "qo",
+        "total": 17,
+        "INITIAL": 1,
+        "MEDIAL": 16,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 41,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "lky",
+        "total": 17,
+        "INITIAL": 0,
+        "MEDIAL": 13,
+        "FINAL": 4,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 21,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "otchey",
+        "total": 17,
+        "INITIAL": 1,
+        "MEDIAL": 16,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 18,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "otair",
+        "total": 17,
+        "INITIAL": 1,
+        "MEDIAL": 16,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 16,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "cheos",
+        "total": 16,
+        "INITIAL": 0,
+        "MEDIAL": 15,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 35,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "ary",
+        "total": 16,
+        "INITIAL": 0,
+        "MEDIAL": 0,
+        "FINAL": 16,
+        "zero_zones": [
+          "INITIAL",
+          "MEDIAL"
+        ],
+        "class": 40,
+        "role": "FLOW_OPERATOR"
+      },
+      {
+        "token": "aiir",
+        "total": 16,
+        "INITIAL": 0,
+        "MEDIAL": 16,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 27,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "chdaiin",
+        "total": 16,
+        "INITIAL": 0,
+        "MEDIAL": 16,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 48,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "qokeol",
+        "total": 16,
+        "INITIAL": 1,
+        "MEDIAL": 15,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 33,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "cheeo",
+        "total": 16,
+        "INITIAL": 4,
+        "MEDIAL": 12,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 39,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "rar",
+        "total": 16,
+        "INITIAL": 0,
+        "MEDIAL": 15,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 20,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "lkchedy",
+        "total": 16,
+        "INITIAL": 0,
+        "MEDIAL": 15,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 4,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "keody",
+        "total": 15,
+        "INITIAL": 0,
+        "MEDIAL": 15,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 27,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "qokeody",
+        "total": 15,
+        "INITIAL": 2,
+        "MEDIAL": 13,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 46,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "okeody",
+        "total": 15,
+        "INITIAL": 0,
+        "MEDIAL": 14,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 18,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "tchdy",
+        "total": 15,
+        "INITIAL": 4,
+        "MEDIAL": 11,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 6,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "qopchdy",
+        "total": 15,
+        "INITIAL": 0,
+        "MEDIAL": 15,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 44,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "chety",
+        "total": 15,
+        "INITIAL": 0,
+        "MEDIAL": 15,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 39,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "shear",
+        "total": 15,
+        "INITIAL": 0,
+        "MEDIAL": 15,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 39,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "sho",
+        "total": 15,
+        "INITIAL": 2,
+        "MEDIAL": 13,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 31,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "dl",
+        "total": 15,
+        "INITIAL": 0,
+        "MEDIAL": 9,
+        "FINAL": 6,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 20,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "ror",
+        "total": 15,
+        "INITIAL": 0,
+        "MEDIAL": 11,
+        "FINAL": 4,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 21,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "qokeed",
+        "total": 14,
+        "INITIAL": 3,
+        "MEDIAL": 11,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 49,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "chky",
+        "total": 14,
+        "INITIAL": 0,
+        "MEDIAL": 13,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 39,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "odain",
+        "total": 14,
+        "INITIAL": 0,
+        "MEDIAL": 9,
+        "FINAL": 5,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 6,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "shedaiin",
+        "total": 14,
+        "INITIAL": 0,
+        "MEDIAL": 14,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 48,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "lo",
+        "total": 14,
+        "INITIAL": 0,
+        "MEDIAL": 5,
+        "FINAL": 9,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 21,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "teey",
+        "total": 14,
+        "INITIAL": 1,
+        "MEDIAL": 13,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 27,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "qoaiin",
+        "total": 13,
+        "INITIAL": 3,
+        "MEDIAL": 10,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 49,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "chckhdy",
+        "total": 13,
+        "INITIAL": 0,
+        "MEDIAL": 13,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 42,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "teedy",
+        "total": 13,
+        "INITIAL": 0,
+        "MEDIAL": 13,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 5,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "dary",
+        "total": 13,
+        "INITIAL": 0,
+        "MEDIAL": 5,
+        "FINAL": 8,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 40,
+        "role": "FLOW_OPERATOR"
+      },
+      {
+        "token": "ychedy",
+        "total": 13,
+        "INITIAL": 7,
+        "MEDIAL": 6,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 4,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "sheeky",
+        "total": 13,
+        "INITIAL": 0,
+        "MEDIAL": 12,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 43,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "shal",
+        "total": 13,
+        "INITIAL": 0,
+        "MEDIAL": 13,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 39,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "ram",
+        "total": 13,
+        "INITIAL": 0,
+        "MEDIAL": 0,
+        "FINAL": 13,
+        "zero_zones": [
+          "INITIAL",
+          "MEDIAL"
+        ],
+        "class": 21,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "lcheey",
+        "total": 13,
+        "INITIAL": 3,
+        "MEDIAL": 10,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 4,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "lr",
+        "total": 12,
+        "INITIAL": 0,
+        "MEDIAL": 7,
+        "FINAL": 5,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 22,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "qotor",
+        "total": 12,
+        "INITIAL": 1,
+        "MEDIAL": 11,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 36,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "cho",
+        "total": 12,
+        "INITIAL": 0,
+        "MEDIAL": 12,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 31,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "qotchy",
+        "total": 12,
+        "INITIAL": 2,
+        "MEDIAL": 10,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 33,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "ly",
+        "total": 12,
+        "INITIAL": 0,
+        "MEDIAL": 4,
+        "FINAL": 8,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 22,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "choty",
+        "total": 12,
+        "INITIAL": 0,
+        "MEDIAL": 10,
+        "FINAL": 2,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 35,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "qokaly",
+        "total": 12,
+        "INITIAL": 0,
+        "MEDIAL": 9,
+        "FINAL": 3,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 49,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "tair",
+        "total": 12,
+        "INITIAL": 5,
+        "MEDIAL": 7,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 6,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "tal",
+        "total": 12,
+        "INITIAL": 0,
+        "MEDIAL": 11,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 20,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "otchy",
+        "total": 12,
+        "INITIAL": 0,
+        "MEDIAL": 12,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 19,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "sheal",
+        "total": 12,
+        "INITIAL": 0,
+        "MEDIAL": 12,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 39,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "qokair",
+        "total": 12,
+        "INITIAL": 0,
+        "MEDIAL": 12,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 49,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "ypchedy",
+        "total": 11,
+        "INITIAL": 1,
+        "MEDIAL": 10,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 4,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "pchedar",
+        "total": 11,
+        "INITIAL": 8,
+        "MEDIAL": 3,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 4,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "kair",
+        "total": 11,
+        "INITIAL": 0,
+        "MEDIAL": 10,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 6,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "chkain",
+        "total": 11,
+        "INITIAL": 0,
+        "MEDIAL": 11,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 43,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "fchedy",
+        "total": 11,
+        "INITIAL": 1,
+        "MEDIAL": 10,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 4,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "ykal",
+        "total": 11,
+        "INITIAL": 0,
+        "MEDIAL": 11,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 6,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "pchey",
+        "total": 11,
+        "INITIAL": 6,
+        "MEDIAL": 5,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 5,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "tor",
+        "total": 11,
+        "INITIAL": 5,
+        "MEDIAL": 6,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 20,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "om",
+        "total": 11,
+        "INITIAL": 0,
+        "MEDIAL": 3,
+        "FINAL": 8,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 20,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "chkal",
+        "total": 11,
+        "INITIAL": 0,
+        "MEDIAL": 11,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 43,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "arody",
+        "total": 11,
+        "INITIAL": 0,
+        "MEDIAL": 5,
+        "FINAL": 6,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 38,
+        "role": "FLOW_OPERATOR"
+      },
+      {
+        "token": "chckhedy",
+        "total": 11,
+        "INITIAL": 0,
+        "MEDIAL": 10,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": null,
+        "role": null
+      },
+      {
+        "token": "orol",
+        "total": 11,
+        "INITIAL": 0,
+        "MEDIAL": 7,
+        "FINAL": 4,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 6,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "ytain",
+        "total": 11,
+        "INITIAL": 1,
+        "MEDIAL": 10,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 5,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "otshedy",
+        "total": 11,
+        "INITIAL": 0,
+        "MEDIAL": 9,
+        "FINAL": 2,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 1,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "qokshedy",
+        "total": 11,
+        "INITIAL": 6,
+        "MEDIAL": 5,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": null,
+        "role": null
+      },
+      {
+        "token": "qolchey",
+        "total": 11,
+        "INITIAL": 1,
+        "MEDIAL": 10,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": null,
+        "role": null
+      },
+      {
+        "token": "qotchey",
+        "total": 11,
+        "INITIAL": 0,
+        "MEDIAL": 11,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 49,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "olkal",
+        "total": 11,
+        "INITIAL": 0,
+        "MEDIAL": 8,
+        "FINAL": 3,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": null,
+        "role": null
+      },
+      {
+        "token": "aral",
+        "total": 11,
+        "INITIAL": 0,
+        "MEDIAL": 5,
+        "FINAL": 6,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 38,
+        "role": "FLOW_OPERATOR"
+      },
+      {
+        "token": "shedain",
+        "total": 11,
+        "INITIAL": 0,
+        "MEDIAL": 10,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": null,
+        "role": null
+      },
+      {
+        "token": "oaiin",
+        "total": 10,
+        "INITIAL": 4,
+        "MEDIAL": 6,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 28,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "sheos",
+        "total": 10,
+        "INITIAL": 0,
+        "MEDIAL": 10,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 39,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "ory",
+        "total": 10,
+        "INITIAL": 0,
+        "MEDIAL": 3,
+        "FINAL": 7,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 21,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "ytchedy",
+        "total": 10,
+        "INITIAL": 6,
+        "MEDIAL": 4,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": null,
+        "role": null
+      },
+      {
+        "token": "shek",
+        "total": 10,
+        "INITIAL": 0,
+        "MEDIAL": 10,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 37,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "ckhy",
+        "total": 10,
+        "INITIAL": 0,
+        "MEDIAL": 8,
+        "FINAL": 2,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 28,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "she",
+        "total": 10,
+        "INITIAL": 0,
+        "MEDIAL": 10,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 41,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "chdam",
+        "total": 10,
+        "INITIAL": 0,
+        "MEDIAL": 4,
+        "FINAL": 6,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": null,
+        "role": null
+      },
+      {
+        "token": "ky",
+        "total": 10,
+        "INITIAL": 0,
+        "MEDIAL": 9,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 20,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "pchdy",
+        "total": 10,
+        "INITIAL": 0,
+        "MEDIAL": 9,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 5,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "arol",
+        "total": 10,
+        "INITIAL": 0,
+        "MEDIAL": 7,
+        "FINAL": 3,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 38,
+        "role": "FLOW_OPERATOR"
+      },
+      {
+        "token": "tchey",
+        "total": 10,
+        "INITIAL": 2,
+        "MEDIAL": 8,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 27,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "dshey",
+        "total": 10,
+        "INITIAL": 9,
+        "MEDIAL": 1,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 5,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "olkey",
+        "total": 10,
+        "INITIAL": 0,
+        "MEDIAL": 8,
+        "FINAL": 2,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 3,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "chaiin",
+        "total": 10,
+        "INITIAL": 0,
+        "MEDIAL": 9,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": 34,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "sy",
+        "total": 10,
+        "INITIAL": 1,
+        "MEDIAL": 0,
+        "FINAL": 9,
+        "zero_zones": [
+          "MEDIAL"
+        ],
+        "class": 20,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "qolchedy",
+        "total": 10,
+        "INITIAL": 1,
+        "MEDIAL": 9,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": null,
+        "role": null
+      },
+      {
+        "token": "yshedy",
+        "total": 10,
+        "INITIAL": 8,
+        "MEDIAL": 2,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": null,
+        "role": null
+      },
+      {
+        "token": "yshey",
+        "total": 10,
+        "INITIAL": 9,
+        "MEDIAL": 1,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 5,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "ycheol",
+        "total": 10,
+        "INITIAL": 9,
+        "MEDIAL": 1,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 4,
+        "role": "AUXILIARY"
+      },
+      {
+        "token": "otedar",
+        "total": 10,
+        "INITIAL": 0,
+        "MEDIAL": 10,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": null,
+        "role": null
+      },
+      {
+        "token": "qodain",
+        "total": 10,
+        "INITIAL": 0,
+        "MEDIAL": 10,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": null,
+        "role": null
+      },
+      {
+        "token": "araiin",
+        "total": 10,
+        "INITIAL": 0,
+        "MEDIAL": 9,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ],
+        "class": null,
+        "role": null
+      },
+      {
+        "token": "qoeey",
+        "total": 10,
+        "INITIAL": 0,
+        "MEDIAL": 10,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ],
+        "class": 39,
+        "role": "ENERGY_OPERATOR"
+      },
+      {
+        "token": "okeeo",
+        "total": 10,
+        "INITIAL": 2,
+        "MEDIAL": 8,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ],
+        "class": 2,
+        "role": "AUXILIARY"
+      }
+    ],
+    "fisher_results": {
+      "ain": {
+        "INITIAL": {
+          "p_value": 0.00029722654510945935,
+          "table": [
+            [
+              0,
+              79
+            ],
+            [
+              2420,
+              20597
+            ]
+          ]
+        }
+      },
+      "dy": {
+        "INITIAL": {
+          "p_value": 1.092266384839488e-05,
+          "table": [
+            [
+              0,
+              109
+            ],
+            [
+              2420,
+              20567
+            ]
+          ]
+        }
+      },
+      "shcthy": {
+        "INITIAL": {
+          "p_value": 0.10449280676191053,
+          "table": [
+            [
+              0,
+              26
+            ],
+            [
+              2420,
+              20650
+            ]
+          ]
+        },
+        "FINAL": {
+          "p_value": 0.10442502122315378,
+          "table": [
+            [
+              0,
+              26
+            ],
+            [
+              2414,
+              20656
+            ]
+          ]
+        }
+      },
+      "sheo": {
+        "INITIAL": {
+          "p_value": 0.16055348116869395,
+          "table": [
+            [
+              0,
+              22
+            ],
+            [
+              2420,
+              20654
+            ]
+          ]
+        },
+        "FINAL": {
+          "p_value": 0.1604876722288423,
+          "table": [
+            [
+              0,
+              22
+            ],
+            [
+              2414,
+              20660
+            ]
+          ]
+        }
+      },
+      "aiin": {
+        "INITIAL": {
+          "p_value": 2.3861865145061578e-17,
+          "table": [
+            [
+              0,
+              351
+            ],
+            [
+              2420,
+              20325
+            ]
+          ]
+        }
+      },
+      "cheky": {
+        "INITIAL": {
+          "p_value": 0.012551845474897023,
+          "table": [
+            [
+              0,
+              45
+            ],
+            [
+              2420,
+              20631
+            ]
+          ]
+        }
+      },
+      "sair": {
+        "FINAL": {
+          "p_value": 0.25936611534509446,
+          "table": [
+            [
+              0,
+              20
+            ],
+            [
+              2414,
+              20662
+            ]
+          ]
+        }
+      },
+      "okchdy": {
+        "INITIAL": {
+          "p_value": 0.25971470720512163,
+          "table": [
+            [
+              0,
+              20
+            ],
+            [
+              2420,
+              20656
+            ]
+          ]
+        }
+      },
+      "opchedy": {
+        "INITIAL": {
+          "p_value": 0.00859226413064743,
+          "table": [
+            [
+              0,
+              50
+            ],
+            [
+              2420,
+              20626
+            ]
+          ]
+        }
+      },
+      "chy": {
+        "INITIAL": {
+          "p_value": 0.028805228911981173,
+          "table": [
+            [
+              0,
+              36
+            ],
+            [
+              2420,
+              20640
+            ]
+          ]
+        }
+      },
+      "ldy": {
+        "INITIAL": {
+          "p_value": 0.16055348116869395,
+          "table": [
+            [
+              0,
+              22
+            ],
+            [
+              2420,
+              20654
+            ]
+          ]
+        }
+      },
+      "checthy": {
+        "INITIAL": {
+          "p_value": 0.10710850969392799,
+          "table": [
+            [
+              0,
+              27
+            ],
+            [
+              2420,
+              20649
+            ]
+          ]
+        }
+      },
+      "tol": {
+        "FINAL": {
+          "p_value": 0.16377769787973667,
+          "table": [
+            [
+              0,
+              23
+            ],
+            [
+              2414,
+              20659
+            ]
+          ]
+        }
+      },
+      "keey": {
+        "INITIAL": {
+          "p_value": 0.15929695986529008,
+          "table": [
+            [
+              0,
+              21
+            ],
+            [
+              2420,
+              20655
+            ]
+          ]
+        },
+        "FINAL": {
+          "p_value": 0.15935409935950395,
+          "table": [
+            [
+              0,
+              21
+            ],
+            [
+              2414,
+              20661
+            ]
+          ]
+        }
+      },
+      "sheedy": {
+        "FINAL": {
+          "p_value": 0.00019301769234818155,
+          "table": [
+            [
+              0,
+              82
+            ],
+            [
+              2414,
+              20600
+            ]
+          ]
+        }
+      },
+      "keedy": {
+        "INITIAL": {
+          "p_value": 0.00549911360681188,
+          "table": [
+            [
+              0,
+              53
+            ],
+            [
+              2420,
+              20623
+            ]
+          ]
+        }
+      },
+      "o": {
+        "FINAL": {
+          "p_value": 0.06741635698418649,
+          "table": [
+            [
+              0,
+              29
+            ],
+            [
+              2414,
+              20653
+            ]
+          ]
+        }
+      },
+      "chedar": {
+        "INITIAL": {
+          "p_value": 0.11118290799216285,
+          "table": [
+            [
+              0,
+              28
+            ],
+            [
+              2420,
+              20648
+            ]
+          ]
+        },
+        "FINAL": {
+          "p_value": 0.11090288469243591,
+          "table": [
+            [
+              0,
+              28
+            ],
+            [
+              2414,
+              20654
+            ]
+          ]
+        }
+      },
+      "al": {
+        "INITIAL": {
+          "p_value": 1.8201683948979136e-09,
+          "table": [
+            [
+              0,
+              186
+            ],
+            [
+              2420,
+              20490
+            ]
+          ]
+        }
+      },
+      "ches": {
+        "INITIAL": {
+          "p_value": 0.10710850969392799,
+          "table": [
+            [
+              0,
+              27
+            ],
+            [
+              2420,
+              20649
+            ]
+          ]
+        }
+      },
+      "checkhy": {
+        "INITIAL": {
+          "p_value": 0.012551845474897023,
+          "table": [
+            [
+              0,
+              45
+            ],
+            [
+              2420,
+              20631
+            ]
+          ]
+        }
+      },
+      "oky": {
+        "INITIAL": {
+          "p_value": 0.0082984477374844,
+          "table": [
+            [
+              0,
+              49
+            ],
+            [
+              2420,
+              20627
+            ]
+          ]
+        }
+      },
+      "taiin": {
+        "FINAL": {
+          "p_value": 0.10693615024870318,
+          "table": [
+            [
+              0,
+              27
+            ],
+            [
+              2414,
+              20655
+            ]
+          ]
+        }
+      },
+      "cheedy": {
+        "INITIAL": {
+          "p_value": 0.005721931002781892,
+          "table": [
+            [
+              0,
+              54
+            ],
+            [
+              2420,
+              20622
+            ]
+          ]
+        }
+      },
+      "otam": {
+        "INITIAL": {
+          "p_value": 0.02892760897083363,
+          "table": [
+            [
+              0,
+              37
+            ],
+            [
+              2420,
+              20639
+            ]
+          ]
+        }
+      },
+      "yteey": {
+        "FINAL": {
+          "p_value": 0.1604876722288423,
+          "table": [
+            [
+              0,
+              22
+            ],
+            [
+              2414,
+              20660
+            ]
+          ]
+        }
+      },
+      "sheky": {
+        "INITIAL": {
+          "p_value": 0.11118290799216285,
+          "table": [
+            [
+              0,
+              28
+            ],
+            [
+              2420,
+              20648
+            ]
+          ]
+        },
+        "FINAL": {
+          "p_value": 0.11090288469243591,
+          "table": [
+            [
+              0,
+              28
+            ],
+            [
+              2414,
+              20654
+            ]
+          ]
+        }
+      },
+      "dam": {
+        "INITIAL": {
+          "p_value": 0.01952281050207927,
+          "table": [
+            [
+              0,
+              42
+            ],
+            [
+              2420,
+              20634
+            ]
+          ]
+        }
+      },
+      "chdy": {
+        "INITIAL": {
+          "p_value": 9.464896681387028e-07,
+          "table": [
+            [
+              0,
+              132
+            ],
+            [
+              2420,
+              20544
+            ]
+          ]
+        }
+      },
+      "qokor": {
+        "INITIAL": {
+          "p_value": 0.25971470720512163,
+          "table": [
+            [
+              0,
+              20
+            ],
+            [
+              2420,
+              20656
+            ]
+          ]
+        }
+      },
+      "chody": {
+        "INITIAL": {
+          "p_value": 0.013551548659421445,
+          "table": [
+            [
+              0,
+              47
+            ],
+            [
+              2420,
+              20629
+            ]
+          ]
+        }
+      },
+      "ykar": {
+        "FINAL": {
+          "p_value": 0.10442502122315378,
+          "table": [
+            [
+              0,
+              26
+            ],
+            [
+              2414,
+              20656
+            ]
+          ]
+        }
+      },
+      "chor": {
+        "FINAL": {
+          "p_value": 0.07309912238205196,
+          "table": [
+            [
+              0,
+              32
+            ],
+            [
+              2414,
+              20650
+            ]
+          ]
+        }
+      },
+      "qotol": {
+        "FINAL": {
+          "p_value": 0.16908293957101977,
+          "table": [
+            [
+              0,
+              24
+            ],
+            [
+              2414,
+              20658
+            ]
+          ]
+        }
+      },
+      "otey": {
+        "INITIAL": {
+          "p_value": 0.028805228911981173,
+          "table": [
+            [
+              0,
+              36
+            ],
+            [
+              2420,
+              20640
+            ]
+          ]
+        }
+      },
+      "oly": {
+        "INITIAL": {
+          "p_value": 0.012934701095270227,
+          "table": [
+            [
+              0,
+              46
+            ],
+            [
+              2420,
+              20630
+            ]
+          ]
+        }
+      },
+      "otchdy": {
+        "INITIAL": {
+          "p_value": 0.10449280676191053,
+          "table": [
+            [
+              0,
+              26
+            ],
+            [
+              2420,
+              20650
+            ]
+          ]
+        }
+      },
+      "aiiin": {
+        "INITIAL": {
+          "p_value": 0.02892760897083363,
+          "table": [
+            [
+              0,
+              37
+            ],
+            [
+              2420,
+              20639
+            ]
+          ]
+        }
+      },
+      "chcthy": {
+        "INITIAL": {
+          "p_value": 0.003556543902274785,
+          "table": [
+            [
+              0,
+              56
+            ],
+            [
+              2420,
+              20620
+            ]
+          ]
+        }
+      },
+      "kedy": {
+        "INITIAL": {
+          "p_value": 0.012397741644311212,
+          "table": [
+            [
+              0,
+              44
+            ],
+            [
+              2420,
+              20632
+            ]
+          ]
+        }
+      },
+      "otain": {
+        "INITIAL": {
+          "p_value": 5.551594489001568e-05,
+          "table": [
+            [
+              0,
+              92
+            ],
+            [
+              2420,
+              20584
+            ]
+          ]
+        }
+      },
+      "kal": {
+        "INITIAL": {
+          "p_value": 0.25971470720512163,
+          "table": [
+            [
+              0,
+              20
+            ],
+            [
+              2420,
+              20656
+            ]
+          ]
+        }
+      },
+      "kain": {
+        "INITIAL": {
+          "p_value": 0.012934701095270227,
+          "table": [
+            [
+              0,
+              46
+            ],
+            [
+              2420,
+              20630
+            ]
+          ]
+        }
+      },
+      "tchedy": {
+        "FINAL": {
+          "p_value": 0.07309912238205196,
+          "table": [
+            [
+              0,
+              32
+            ],
+            [
+              2414,
+              20650
+            ]
+          ]
+        }
+      },
+      "shckhy": {
+        "INITIAL": {
+          "p_value": 0.005721931002781892,
+          "table": [
+            [
+              0,
+              54
+            ],
+            [
+              2420,
+              20622
+            ]
+          ]
+        },
+        "FINAL": {
+          "p_value": 0.005692870309583133,
+          "table": [
+            [
+              0,
+              54
+            ],
+            [
+              2414,
+              20628
+            ]
+          ]
+        }
+      },
+      "qokam": {
+        "INITIAL": {
+          "p_value": 0.16055348116869395,
+          "table": [
+            [
+              0,
+              22
+            ],
+            [
+              2420,
+              20654
+            ]
+          ]
+        }
+      },
+      "sor": {
+        "FINAL": {
+          "p_value": 0.07309912238205196,
+          "table": [
+            [
+              0,
+              32
+            ],
+            [
+              2414,
+              20650
+            ]
+          ]
+        }
+      },
+      "chl": {
+        "INITIAL": {
+          "p_value": 0.25971470720512163,
+          "table": [
+            [
+              0,
+              20
+            ],
+            [
+              2420,
+              20656
+            ]
+          ]
+        }
+      },
+      "am": {
+        "INITIAL": {
+          "p_value": 0.0035294807541642586,
+          "table": [
+            [
+              0,
+              55
+            ],
+            [
+              2420,
+              20621
+            ]
+          ]
+        }
+      },
+      "olkedy": {
+        "INITIAL": {
+          "p_value": 0.10710850969392799,
+          "table": [
+            [
+              0,
+              27
+            ],
+            [
+              2420,
+              20649
+            ]
+          ]
+        }
+      },
+      "kaiin": {
+        "FINAL": {
+          "p_value": 0.013480963631373348,
+          "table": [
+            [
+              0,
+              47
+            ],
+            [
+              2414,
+              20635
+            ]
+          ]
+        }
+      },
+      "okol": {
+        "INITIAL": {
+          "p_value": 0.15929695986529008,
+          "table": [
+            [
+              0,
+              21
+            ],
+            [
+              2420,
+              20655
+            ]
+          ]
+        }
+      },
+      "kchedy": {
+        "FINAL": {
+          "p_value": 0.1604876722288423,
+          "table": [
+            [
+              0,
+              22
+            ],
+            [
+              2414,
+              20660
+            ]
+          ]
+        }
+      },
+      "qokchey": {
+        "FINAL": {
+          "p_value": 0.16908293957101977,
+          "table": [
+            [
+              0,
+              24
+            ],
+            [
+              2414,
+              20658
+            ]
+          ]
+        }
+      },
+      "cheo": {
+        "FINAL": {
+          "p_value": 0.04408962075543598,
+          "table": [
+            [
+              0,
+              33
+            ],
+            [
+              2414,
+              20649
+            ]
+          ]
+        }
+      },
+      "oty": {
+        "INITIAL": {
+          "p_value": 0.0023552456021893207,
+          "table": [
+            [
+              0,
+              60
+            ],
+            [
+              2420,
+              20616
+            ]
+          ]
+        }
+      },
+      "sheckhy": {
+        "INITIAL": {
+          "p_value": 0.04635572153125111,
+          "table": [
+            [
+              0,
+              35
+            ],
+            [
+              2420,
+              20641
+            ]
+          ]
+        }
+      },
+      "shor": {
+        "FINAL": {
+          "p_value": 0.10442502122315378,
+          "table": [
+            [
+              0,
+              26
+            ],
+            [
+              2414,
+              20656
+            ]
+          ]
+        }
+      },
+      "ched": {
+        "INITIAL": {
+          "p_value": 0.15929695986529008,
+          "table": [
+            [
+              0,
+              21
+            ],
+            [
+              2420,
+              20655
+            ]
+          ]
+        },
+        "FINAL": {
+          "p_value": 0.15935409935950395,
+          "table": [
+            [
+              0,
+              21
+            ],
+            [
+              2414,
+              20661
+            ]
+          ]
+        }
+      },
+      "opchey": {
+        "INITIAL": {
+          "p_value": 0.15929695986529008,
+          "table": [
+            [
+              0,
+              21
+            ],
+            [
+              2420,
+              20655
+            ]
+          ]
+        }
+      },
+      "lkeedy": {
+        "INITIAL": {
+          "p_value": 0.019030992832898837,
+          "table": [
+            [
+              0,
+              41
+            ],
+            [
+              2420,
+              20635
+            ]
+          ]
+        }
+      },
+      "chckhey": {
+        "INITIAL": {
+          "p_value": 0.10449280676191053,
+          "table": [
+            [
+              0,
+              26
+            ],
+            [
+              2420,
+              20650
+            ]
+          ]
+        }
+      },
+      "qotchdy": {
+        "INITIAL": {
+          "p_value": 0.16396970501168692,
+          "table": [
+            [
+              0,
+              23
+            ],
+            [
+              2420,
+              20653
+            ]
+          ]
+        }
+      },
+      "shar": {
+        "FINAL": {
+          "p_value": 0.1604876722288423,
+          "table": [
+            [
+              0,
+              22
+            ],
+            [
+              2414,
+              20660
+            ]
+          ]
+        }
+      },
+      "qokeeey": {
+        "FINAL": {
+          "p_value": 0.16377769787973667,
+          "table": [
+            [
+              0,
+              23
+            ],
+            [
+              2414,
+              20659
+            ]
+          ]
+        }
+      },
+      "qotey": {
+        "FINAL": {
+          "p_value": 0.25936611534509446,
+          "table": [
+            [
+              0,
+              20
+            ],
+            [
+              2414,
+              20662
+            ]
+          ]
+        }
+      },
+      "sheor": {
+        "FINAL": {
+          "p_value": 0.16908293957101977,
+          "table": [
+            [
+              0,
+              24
+            ],
+            [
+              2414,
+              20658
+            ]
+          ]
+        }
+      },
+      "raiin": {
+        "INITIAL": {
+          "p_value": 0.0015628934753216936,
+          "table": [
+            [
+              0,
+              64
+            ],
+            [
+              2420,
+              20612
+            ]
+          ]
+        }
+      },
+      "chal": {
+        "INITIAL": {
+          "p_value": 0.11118290799216285,
+          "table": [
+            [
+              0,
+              28
+            ],
+            [
+              2420,
+              20648
+            ]
+          ]
+        }
+      },
+      "olkeey": {
+        "FINAL": {
+          "p_value": 0.029491964001622337,
+          "table": [
+            [
+              0,
+              38
+            ],
+            [
+              2414,
+              20644
+            ]
+          ]
+        }
+      },
+      "qoteey": {
+        "FINAL": {
+          "p_value": 0.07016706440499748,
+          "table": [
+            [
+              0,
+              31
+            ],
+            [
+              2414,
+              20651
+            ]
+          ]
+        }
+      },
+      "lkar": {
+        "INITIAL": {
+          "p_value": 0.06833118181054962,
+          "table": [
+            [
+              0,
+              30
+            ],
+            [
+              2420,
+              20646
+            ]
+          ]
+        }
+      },
+      "lkain": {
+        "INITIAL": {
+          "p_value": 0.04635572153125111,
+          "table": [
+            [
+              0,
+              35
+            ],
+            [
+              2420,
+              20641
+            ]
+          ]
+        }
+      },
+      "chear": {
+        "INITIAL": {
+          "p_value": 0.10449280676191053,
+          "table": [
+            [
+              0,
+              26
+            ],
+            [
+              2420,
+              20650
+            ]
+          ]
+        }
+      },
+      "cheal": {
+        "INITIAL": {
+          "p_value": 0.16055348116869395,
+          "table": [
+            [
+              0,
+              22
+            ],
+            [
+              2420,
+              20654
+            ]
+          ]
+        }
+      },
+      "qoeedy": {
+        "FINAL": {
+          "p_value": 0.25936611534509446,
+          "table": [
+            [
+              0,
+              20
+            ],
+            [
+              2414,
+              20662
+            ]
+          ]
+        }
+      },
+      "pol": {
+        "FINAL": {
+          "p_value": 0.1604876722288423,
+          "table": [
+            [
+              0,
+              22
+            ],
+            [
+              2414,
+              20660
+            ]
+          ]
+        }
+      }
+    }
+  },
+  "stripped_pass": {
+    "qualified_tokens": 331,
+    "exclusive_count": 157,
+    "fisher_sig_count": 19,
+    "survived_stripping": 93,
+    "lost_by_stripping": 99,
+    "survived_tokens": [
+      "om",
+      "kedy",
+      "araiin",
+      "chety",
+      "sheky",
+      "chl",
+      "qotchy",
+      "qokeed",
+      "lchdy",
+      "ly",
+      "tol",
+      "dy",
+      "shek",
+      "lky",
+      "ary",
+      "kair",
+      "otain",
+      "otedar",
+      "lkar",
+      "ytchedy",
+      "chckhedy",
+      "lshey",
+      "ykal",
+      "opchey",
+      "pchdy",
+      "otam",
+      "okair",
+      "qokshedy",
+      "tchedy",
+      "okeol",
+      "qo",
+      "shcthy",
+      "qoeey",
+      "shecthy",
+      "lkeedy",
+      "qokeeo",
+      "opchdy",
+      "chcthy",
+      "lkain",
+      "oty",
+      "ckhy",
+      "ory",
+      "orol",
+      "kchedy",
+      "qoaiin",
+      "teey",
+      "arol",
+      "chckhey",
+      "keody",
+      "okol",
+      "qokaly",
+      "checkhy",
+      "al",
+      "keey",
+      "aiir",
+      "chal",
+      "otchy",
+      "am",
+      "tchey",
+      "okchdy",
+      "dam",
+      "chaiin",
+      "qolchey",
+      "tor",
+      "ky",
+      "pchey",
+      "qolchedy",
+      "keedy",
+      "dary",
+      "cheeky",
+      "lcheey",
+      "choty",
+      "shal",
+      "pchedar",
+      "aral",
+      "kain",
+      "chckhdy",
+      "shckhy",
+      "yteey",
+      "aiin",
+      "aly",
+      "fchedy",
+      "cheeo",
+      "kaiin",
+      "kal",
+      "daly",
+      "ain",
+      "okam",
+      "opchedy",
+      "qokair",
+      "cheky",
+      "chy",
+      "chdy"
+    ],
+    "lost_tokens": [
+      "sheckhy",
+      "lr",
+      "sair",
+      "odain",
+      "chdal",
+      "oldy",
+      "yshedy",
+      "ches",
+      "sor",
+      "arody",
+      "okeeo",
+      "cheo",
+      "ldy",
+      "dshey",
+      "oiin",
+      "chody",
+      "qotchdy",
+      "rol",
+      "teedy",
+      "chdam",
+      "chky",
+      "chedain",
+      "shedain",
+      "aiiin",
+      "tair",
+      "qopchdy",
+      "sy",
+      "lkchedy",
+      "olkar",
+      "olkal",
+      "ram",
+      "qokor",
+      "cheedy",
+      "chdar",
+      "sheo",
+      "dl",
+      "ched",
+      "tal",
+      "chkal",
+      "qokeol",
+      "cheal",
+      "olkey",
+      "she",
+      "qoteey",
+      "chedar",
+      "olkedy",
+      "shar",
+      "qokeeey",
+      "qodain",
+      "chkain",
+      "qotey",
+      "oky",
+      "cho",
+      "okeeey",
+      "yshey",
+      "okeody",
+      "otshedy",
+      "qokeody",
+      "ytain",
+      "sheal",
+      "ypchedy",
+      "o",
+      "pol",
+      "oly",
+      "raiin",
+      "cheos",
+      "chor",
+      "otey",
+      "otchey",
+      "qotol",
+      "sheos",
+      "ykar",
+      "shor",
+      "lo",
+      "ycheol",
+      "ychedy",
+      "rar",
+      "chdaiin",
+      "shedaiin",
+      "taiin",
+      "chear",
+      "tchdy",
+      "checthy",
+      "olkeey",
+      "sho",
+      "otchdy",
+      "shear",
+      "qotchey",
+      "sheor",
+      "sheedy",
+      "qokchey",
+      "qotor",
+      "qoeedy",
+      "chees",
+      "oaiin",
+      "ror",
+      "otair",
+      "qokam",
+      "sheeky"
+    ],
+    "top_stripped_exclusive": [
+      {
+        "stem": "aiin",
+        "total": 354,
+        "INITIAL": 0,
+        "MEDIAL": 337,
+        "FINAL": 17,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "al",
+        "total": 186,
+        "INITIAL": 0,
+        "MEDIAL": 158,
+        "FINAL": 28,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "chdy",
+        "total": 135,
+        "INITIAL": 0,
+        "MEDIAL": 120,
+        "FINAL": 15,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "dy",
+        "total": 113,
+        "INITIAL": 0,
+        "MEDIAL": 72,
+        "FINAL": 41,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "opch",
+        "total": 103,
+        "INITIAL": 0,
+        "MEDIAL": 96,
+        "FINAL": 7,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "chek",
+        "total": 93,
+        "INITIAL": 0,
+        "MEDIAL": 86,
+        "FINAL": 7,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "otain",
+        "total": 92,
+        "INITIAL": 0,
+        "MEDIAL": 83,
+        "FINAL": 9,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "ain",
+        "total": 79,
+        "INITIAL": 0,
+        "MEDIAL": 71,
+        "FINAL": 8,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "oty",
+        "total": 77,
+        "INITIAL": 0,
+        "MEDIAL": 62,
+        "FINAL": 15,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "chckh",
+        "total": 68,
+        "INITIAL": 0,
+        "MEDIAL": 61,
+        "FINAL": 7,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "shek",
+        "total": 60,
+        "INITIAL": 0,
+        "MEDIAL": 59,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "am",
+        "total": 59,
+        "INITIAL": 0,
+        "MEDIAL": 12,
+        "FINAL": 47,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "chct",
+        "total": 59,
+        "INITIAL": 0,
+        "MEDIAL": 55,
+        "FINAL": 4,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "keedy",
+        "total": 56,
+        "INITIAL": 0,
+        "MEDIAL": 51,
+        "FINAL": 5,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "lke",
+        "total": 55,
+        "INITIAL": 0,
+        "MEDIAL": 50,
+        "FINAL": 5,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "shck",
+        "total": 54,
+        "INITIAL": 0,
+        "MEDIAL": 54,
+        "FINAL": 0,
+        "zero_zones": [
+          "INITIAL",
+          "FINAL"
+        ]
+      },
+      {
+        "stem": "kedy",
+        "total": 52,
+        "INITIAL": 0,
+        "MEDIAL": 49,
+        "FINAL": 3,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "kain",
+        "total": 49,
+        "INITIAL": 0,
+        "MEDIAL": 46,
+        "FINAL": 3,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "kaiin",
+        "total": 49,
+        "INITIAL": 1,
+        "MEDIAL": 48,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ]
+      },
+      {
+        "stem": "check",
+        "total": 45,
+        "INITIAL": 0,
+        "MEDIAL": 44,
+        "FINAL": 1,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "dam",
+        "total": 45,
+        "INITIAL": 0,
+        "MEDIAL": 15,
+        "FINAL": 30,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "tchedy",
+        "total": 43,
+        "INITIAL": 26,
+        "MEDIAL": 17,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ]
+      },
+      {
+        "stem": "chok",
+        "total": 43,
+        "INITIAL": 1,
+        "MEDIAL": 42,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ]
+      },
+      {
+        "stem": "cheeo",
+        "total": 40,
+        "INITIAL": 11,
+        "MEDIAL": 29,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ]
+      },
+      {
+        "stem": "chy",
+        "total": 39,
+        "INITIAL": 0,
+        "MEDIAL": 32,
+        "FINAL": 7,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "otam",
+        "total": 38,
+        "INITIAL": 0,
+        "MEDIAL": 12,
+        "FINAL": 26,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "teey",
+        "total": 38,
+        "INITIAL": 4,
+        "MEDIAL": 34,
+        "FINAL": 0,
+        "zero_zones": [
+          "FINAL"
+        ]
+      },
+      {
+        "stem": "chet",
+        "total": 35,
+        "INITIAL": 0,
+        "MEDIAL": 33,
+        "FINAL": 2,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "lkain",
+        "total": 35,
+        "INITIAL": 0,
+        "MEDIAL": 30,
+        "FINAL": 5,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      },
+      {
+        "stem": "chot",
+        "total": 34,
+        "INITIAL": 0,
+        "MEDIAL": 29,
+        "FINAL": 5,
+        "zero_zones": [
+          "INITIAL"
+        ]
+      }
+    ]
+  },
+  "shuffle_null": {
+    "n_shuffles": 1000,
+    "seed": 42,
+    "observed_exclusive": 192,
+    "shuffle_mean": 70.59,
+    "shuffle_std": 6.231845633518211,
+    "ratio": 2.7199320016999575,
+    "p_value": 0.0,
+    "shuffle_min": 55,
+    "shuffle_max": 89,
+    "distribution_percentiles": {
+      "5": 60.0,
+      "25": 66.0,
+      "50": 70.5,
+      "75": 75.0,
+      "95": 81.0
+    }
+  },
+  "pass_criteria": {
+    "ratio_gt_2x": true,
+    "shuffle_p_lt_0.001": true,
+    "fisher_sig_ge_5": true,
+    "ratio_le_1.5_fail": false
+  }
+}

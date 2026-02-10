@@ -1,0 +1,456 @@
+{
+  "kernel_free_pp_count": 160,
+  "fl_middles_count": 17,
+  "non_fl_kernel_free_count": 143,
+  "aggregate_role_distribution": {
+    "UNKNOWN": 1369,
+    "FREQUENT_OPERATOR": 1186,
+    "AUXILIARY": 916,
+    "ENERGY_OPERATOR": 868,
+    "CORE_CONTROL": 314
+  },
+  "role_to_middles": {
+    "UNKNOWN": [
+      {
+        "middle": "d",
+        "count": 337
+      },
+      {
+        "middle": "od",
+        "count": 177
+      },
+      {
+        "middle": "s",
+        "count": 144
+      },
+      {
+        "middle": "a",
+        "count": 64
+      },
+      {
+        "middle": "p",
+        "count": 47
+      },
+      {
+        "middle": "ot",
+        "count": 46
+      },
+      {
+        "middle": "op",
+        "count": 36
+      },
+      {
+        "middle": "lo",
+        "count": 33
+      },
+      {
+        "middle": "om",
+        "count": 25
+      },
+      {
+        "middle": "dai",
+        "count": 23
+      }
+    ],
+    "AUXILIARY": [
+      {
+        "middle": "ai",
+        "count": 174
+      },
+      {
+        "middle": "aii",
+        "count": 32
+      },
+      {
+        "middle": "oiin",
+        "count": 32
+      },
+      {
+        "middle": "yt",
+        "count": 12
+      },
+      {
+        "middle": "opc",
+        "count": 9
+      }
+    ],
+    "ENERGY_OPERATOR": [
+      {
+        "middle": "t",
+        "count": 576
+      },
+      {
+        "middle": "ct",
+        "count": 95
+      },
+      {
+        "middle": "qo",
+        "count": 18
+      },
+      {
+        "middle": "tc",
+        "count": 16
+      },
+      {
+        "middle": "cp",
+        "count": 10
+      },
+      {
+        "middle": "pc",
+        "count": 10
+      }
+    ],
+    "FREQUENT_OPERATOR": [
+      {
+        "middle": "aiin",
+        "count": 834
+      },
+      {
+        "middle": "or",
+        "count": 446
+      },
+      {
+        "middle": "ain",
+        "count": 420
+      }
+    ],
+    "CORE_CONTROL": [
+      {
+        "middle": "iin",
+        "count": 560
+      }
+    ]
+  },
+  "fl_characters": [
+    "a",
+    "d",
+    "i",
+    "l",
+    "m",
+    "n",
+    "o",
+    "r",
+    "y"
+  ],
+  "non_fl_characters": [
+    "a",
+    "c",
+    "d",
+    "f",
+    "g",
+    "i",
+    "l",
+    "m",
+    "n",
+    "o",
+    "p",
+    "q",
+    "r",
+    "s",
+    "t",
+    "y"
+  ],
+  "extra_characters": [
+    "c",
+    "f",
+    "g",
+    "p",
+    "q",
+    "s",
+    "t"
+  ],
+  "fl_char_only_non_fl_middles": [
+    "a",
+    "ad",
+    "ai",
+    "aii",
+    "aiin",
+    "aiino",
+    "ain",
+    "air",
+    "ala",
+    "ald",
+    "alo",
+    "alod",
+    "an",
+    "ara",
+    "aro",
+    "d",
+    "da",
+    "dai",
+    "dair",
+    "dii",
+    "dl",
+    "do",
+    "dyd",
+    "dydy",
+    "iin",
+    "iir",
+    "ind",
+    "ir",
+    "irai",
+    "iro",
+    "la",
+    "lai",
+    "ld",
+    "lo",
+    "oai",
+    "oaii",
+    "od",
+    "oda",
+    "odai",
+    "odaii",
+    "odal",
+    "odo",
+    "ody",
+    "oi",
+    "oii",
+    "oiin",
+    "oin",
+    "ola",
+    "old",
+    "olo",
+    "olyd",
+    "om",
+    "ool",
+    "or",
+    "ord",
+    "oy",
+    "ra",
+    "rai",
+    "rain",
+    "ro",
+    "rod",
+    "rol",
+    "yai",
+    "yaii",
+    "yd",
+    "yl",
+    "yod"
+  ],
+  "fl_char_only_count": 67,
+  "fl_char_only_roles": {
+    "a": {
+      "UNKNOWN": 36,
+      "AUXILIARY": 28
+    },
+    "ad": {
+      "UNKNOWN": 7
+    },
+    "ai": {
+      "AUXILIARY": 119,
+      "UNKNOWN": 55
+    },
+    "aii": {
+      "AUXILIARY": 16,
+      "UNKNOWN": 16
+    },
+    "aiin": {
+      "FREQUENT_OPERATOR": 627,
+      "AUXILIARY": 142,
+      "UNKNOWN": 36
+    },
+    "aiino": {
+      "UNKNOWN": 1
+    },
+    "ain": {
+      "FREQUENT_OPERATOR": 227,
+      "AUXILIARY": 151,
+      "UNKNOWN": 34
+    },
+    "air": {
+      "UNKNOWN": 6
+    },
+    "ala": {
+      "UNKNOWN": 1
+    },
+    "ald": {
+      "UNKNOWN": 4
+    },
+    "alo": {
+      "UNKNOWN": 3
+    },
+    "alod": {
+      "UNKNOWN": 1
+    },
+    "an": {
+      "UNKNOWN": 16,
+      "ENERGY_OPERATOR": 2
+    },
+    "ara": {
+      "UNKNOWN": 3
+    },
+    "aro": {
+      "UNKNOWN": 3
+    },
+    "d": {
+      "UNKNOWN": 232,
+      "ENERGY_OPERATOR": 84,
+      "AUXILIARY": 15
+    },
+    "da": {
+      "UNKNOWN": 13
+    },
+    "dai": {
+      "UNKNOWN": 23
+    },
+    "dair": {
+      "UNKNOWN": 1
+    },
+    "dii": {
+      "UNKNOWN": 1
+    },
+    "dl": {
+      "UNKNOWN": 3
+    },
+    "do": {
+      "UNKNOWN": 8,
+      "AUXILIARY": 2
+    },
+    "dyd": {
+      "UNKNOWN": 1
+    },
+    "dydy": {
+      "UNKNOWN": 1
+    },
+    "iin": {
+      "CORE_CONTROL": 314,
+      "AUXILIARY": 222,
+      "UNKNOWN": 24
+    },
+    "iir": {
+      "UNKNOWN": 3
+    },
+    "ind": {
+      "UNKNOWN": 1
+    },
+    "ir": {
+      "UNKNOWN": 19
+    },
+    "irai": {
+      "UNKNOWN": 1
+    },
+    "iro": {
+      "UNKNOWN": 5
+    },
+    "la": {
+      "UNKNOWN": 2
+    },
+    "lai": {
+      "UNKNOWN": 6
+    },
+    "ld": {
+      "UNKNOWN": 13
+    },
+    "lo": {
+      "UNKNOWN": 19,
+      "AUXILIARY": 14
+    },
+    "oai": {
+      "UNKNOWN": 3
+    },
+    "oaii": {
+      "UNKNOWN": 3
+    },
+    "od": {
+      "UNKNOWN": 74,
+      "AUXILIARY": 68,
+      "ENERGY_OPERATOR": 35
+    },
+    "oda": {
+      "UNKNOWN": 4
+    },
+    "odai": {
+      "UNKNOWN": 8
+    },
+    "odaii": {
+      "UNKNOWN": 1
+    },
+    "odal": {
+      "UNKNOWN": 1
+    },
+    "odo": {
+      "UNKNOWN": 1
+    },
+    "ody": {
+      "UNKNOWN": 1
+    },
+    "oi": {
+      "UNKNOWN": 13
+    },
+    "oii": {
+      "UNKNOWN": 4
+    },
+    "oiin": {
+      "AUXILIARY": 17,
+      "UNKNOWN": 15
+    },
+    "oin": {
+      "UNKNOWN": 6
+    },
+    "ola": {
+      "UNKNOWN": 1
+    },
+    "old": {
+      "UNKNOWN": 4
+    },
+    "olo": {
+      "UNKNOWN": 3
+    },
+    "olyd": {
+      "UNKNOWN": 1
+    },
+    "om": {
+      "UNKNOWN": 14,
+      "AUXILIARY": 11
+    },
+    "ool": {
+      "UNKNOWN": 2
+    },
+    "or": {
+      "FREQUENT_OPERATOR": 273,
+      "UNKNOWN": 59,
+      "ENERGY_OPERATOR": 58
+    },
+    "ord": {
+      "UNKNOWN": 1
+    },
+    "oy": {
+      "UNKNOWN": 1
+    },
+    "ra": {
+      "UNKNOWN": 3
+    },
+    "rai": {
+      "UNKNOWN": 12
+    },
+    "rain": {
+      "UNKNOWN": 1
+    },
+    "ro": {
+      "UNKNOWN": 13
+    },
+    "rod": {
+      "UNKNOWN": 7
+    },
+    "rol": {
+      "UNKNOWN": 2
+    },
+    "yai": {
+      "UNKNOWN": 1
+    },
+    "yaii": {
+      "UNKNOWN": 1
+    },
+    "yd": {
+      "UNKNOWN": 2
+    },
+    "yl": {
+      "UNKNOWN": 4
+    },
+    "yod": {
+      "UNKNOWN": 1
+    }
+  },
+  "verdict": "67 non-FL kernel-free MIDDLEs use only FL characters"
+}

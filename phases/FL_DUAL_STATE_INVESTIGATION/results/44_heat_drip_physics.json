@@ -1,0 +1,26 @@
+{
+  "correlation": {
+    "rho": 0.084,
+    "p": 0.003984
+  },
+  "diagonal_dominance": {
+    "diagonal_pct": 63.4,
+    "below_pct": 22.7,
+    "above_pct": 13.9
+  },
+  "asymmetry_ratio": 1.63,
+  "transition_physics": {
+    "heat_up_drip_change": 0.078,
+    "heat_down_drip_change": -0.12
+  },
+  "mean_diagonal_distance": 1.24,
+  "checks": [
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "verdict": "PHYSICS_CONSISTENT",
+  "explanation": "Grid behavior matches heat x drip rate physics: correlated, diagonal-heavy, asymmetric lag"
+}

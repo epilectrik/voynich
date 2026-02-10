@@ -420,17 +420,17 @@
           "tier": 3
         },
         "aiin": {
-          "value": " [checkpoint]",
-          "constraint": "C495, C527, C539, C588, C906-907, C919",
+          "value": " [gate]",
+          "constraint": "C495, C527, C539, C561, C588, C906-907, C919",
           "tier": 3
         },
         "ain": {
-          "value": " [checkpoint]",
+          "value": " [check]",
           "constraint": "C495, C527, C539, C588, C906-907, C919",
           "tier": 3
         },
         "iin": {
-          "value": " [checkpoint]",
+          "value": " [loop]",
           "constraint": "C495, C527, C539, C588, C906-907, C919",
           "tier": 3
         },
@@ -475,7 +475,7 @@
           "tier": 3
         },
         "in": {
-          "value": ",",
+          "value": ", [step]",
           "constraint": "C495, C527, C539, C588, C906-907, C919",
           "tier": 3
         },
@@ -485,17 +485,17 @@
           "tier": 3
         },
         "am": {
-          "value": ".",
+          "value": ". [final]",
           "constraint": "C495, C527, C539, C588, C906-907, C919",
           "tier": 3
         },
         "om": {
-          "value": ".",
+          "value": ". [seal]",
           "constraint": "C495, C527, C539, C588, C906-907, C919",
           "tier": 3
         },
         "im": {
-          "value": ".",
+          "value": ". [cycle]",
           "constraint": "C495, C527, C539, C588, C906-907, C919",
           "tier": 3
         },

@@ -3,8 +3,8 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.2"
-  date: "2026-02-08"
+  version: "3.3"
+  date: "2026-02-10"
   status: "LOCKED"
   layer_type: "grammar contract"
   derived_from: "Tier 0-2 constraints (structural); Tier 3 operational layer clearly marked"
@@ -559,13 +559,23 @@ program_structure:
     provenance: "C178, C531, C535"
 
   line:
-    function: "Formal control block with internal positional grammar and FL state tracking"
+    function: "Boundary-constrained control block with free interior and FL state tracking"
     regularity: "3.3x more regular than random"
+    architecture: "BOUNDARY_CONSTRAINED_FREE_INTERIOR"  # C964
     boundary_markers:
       initial: ["daiin", "saiin", "sain"]
       final: ["am", "oly", "dy"]
+      vocabulary_openness: "Boundary vocabulary is OPEN — 663 tokens cover 80% of openers; Gini 0.47 (C960)"
     link_suppressed_at_boundary: true
     grammar_line_invariant: true
+    opener_properties:
+      role_marker: "Opener is a ROLE marker, not an instruction header — specific token adds no predictive power beyond role (C959)"
+      length_determination: "Opener class determines line length — 24.9% partial R-squared beyond folio+regime; folio+opener_token = 93.7% (C958)"
+    token_level_constraints:
+      positional_exclusivity: "192/334 common tokens are zone-exclusive (2.72x shuffle); STRUCTURAL per negative control (C956)"
+      mandatory_bigrams: "26 mandatory token bigrams (obs/exp > 5x); includes or->aiin (C561) + 25 new (C957)"
+      forbidden_bigrams: "9 forbidden token bigrams (obs=0, exp>=5); 2 genuinely token-specific: chey->chedy, chey->shedy (C957)"
+      structural_origin: "Most token-level effects are STRUCTURAL (role/position driven), not lexical — confirmed by negative control (C956, C964)"
     fl_state_tracking:
       statement: "FL MIDDLEs track state progression WITHIN each line (C777)"
       scope: "LINE-LEVEL"
@@ -583,6 +593,7 @@ program_structure:
           location: "early-medial"
           dominant_roles: ["EN", "FQ"]
           function: "Primary operational activity"
+          internal_ordering: "UNORDERED — tokens within WORK zone show no systematic sequence (Kendall tau ~ 0, p ~ 0.5); operations are a concurrent SET, not a sequence (C961)"
         - position: "CHECK"
           location: "mid-line"
           dominant_roles: ["EN", "AX_MED"]
@@ -598,7 +609,16 @@ program_structure:
         ENERGY: "medial (peaks at positions 3-6)"
         FLOW: "final (hierarchy FL > CC at line end, C562)"
         AX: "distributed across INIT/MED/FINAL sub-positions"
-      provenance: "C556, C557, C561, C562"
+      phase_interleaving:
+        statement: "KERNEL/LINK/FL phases show weak clustering but NOT sequential blocking (C962)"
+        alternation_rate: "0.566 (shuffle 0.596, p<0.001)"
+        sequential_compliance: "32.7% (shuffle 21.7%)"
+        pair_ordering:
+          LINK_to_KERNEL: "0.517 (neutral)"
+          KERNEL_to_FL: "0.623 (moderately ordered)"
+          LINK_to_FL: "0.659 (moderately ordered)"
+        interpretation: "Phases are positional tendencies, not rigid blocks — consistent with C815 (eta-squared=0.015)"
+      provenance: "C556, C557, C561, C562, C956-C964"
     provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897"
 
   paragraph:
@@ -619,8 +639,15 @@ program_structure:
         interpretation: "Header compounds are compressed specifications that body lines unpack"
       provenance: "C840, C935"
 
+    body_homogeneity:
+      statement: "Body lines are compositionally homogeneous — only length progression (rho=-0.23), no role-composition change after length control (C963)"
+      length_progression: "rho = -0.229, p = 0.001"
+      composition_after_control: "EN/FL/CC fractions collapse to rho ~ 0 after controlling for line length"
+      interpretation: "Paragraphs shrink toward their ends but each body line is a structurally equivalent control block"
+      provenance: "C963, C677"
+
     execution_gradient:
-      statement: "Body lines follow a specification→execution gradient"
+      statement: "Body lines follow a specification->execution gradient"
       spec_exec_vocabulary:
         rare_middle_trend: "r=-0.97 (Q0→Q4)"
         universal_middle_trend: "r=+0.92 (Q0→Q4)"
@@ -1417,6 +1444,15 @@ provenance:
     - "C557"   # daiin trigger
     - "C561"   # or→aiin bigram
     - "C562"   # FLOW final hierarchy
+    - "C956"   # Positional token exclusivity (structural, role-driven)
+    - "C957"   # Token-level bigram constraints (26 mandatory, 9 forbidden)
+    - "C958"   # Opener class determines line length
+    - "C959"   # Opener is role marker, not instruction header
+    - "C960"   # Boundary vocabulary is open
+    - "C961"   # WORK zone is unordered
+    - "C962"   # Phase interleaving (tendencies, not blocks)
+    - "C963"   # Paragraph body homogeneity
+    - "C964"   # Boundary-constrained free-interior grammar (synthesis)
 
   ax_architecture:
     - "C563"   # AX positional sub-structure

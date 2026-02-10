@@ -1,0 +1,12 @@
+{
+  "n_lines_with_pairs": 1209,
+  "n_folios": 81,
+  "mean_diversity_per_folio": 0.63,
+  "mean_top_pair_coverage": 0.264,
+  "mean_folios_per_pair": 29.4,
+  "mean_pairs_per_folio": 9.6,
+  "section_clustering_lift": 1.281,
+  "mean_grid_coverage": 0.266,
+  "nav_model": "DISTRIBUTED",
+  "explanation": "Each folio covers many states - the folio IS the procedure, FL tags are in-page navigation"
+}

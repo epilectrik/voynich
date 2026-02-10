@@ -1,0 +1,45 @@
+{
+  "center_of_mass": {
+    "action": 3.1,
+    "oversight": 2.83
+  },
+  "top_state": {
+    "state": [
+      3,
+      3
+    ],
+    "count": 190,
+    "pct": 16.2
+  },
+  "convergence": {
+    "toward_rate": 1.0,
+    "rho_dist_vs_shift": 0.881,
+    "p": 0.0
+  },
+  "content_gradient": {
+    "rho_qo": -0.058,
+    "rho_sh": -0.038,
+    "rho_ok": 0.043,
+    "p_qo": 0.0481
+  },
+  "per_folio": {
+    "mean_top_pct": 26.6,
+    "com_spread": {
+      "action": 0.54,
+      "oversight": 0.35
+    }
+  },
+  "stability": {
+    "rho_dist_vs_self_rate": -0.584,
+    "p": 0.0009
+  },
+  "checks": [
+    true,
+    true,
+    true,
+    true,
+    true
+  ],
+  "verdict": "ATTRACTOR_MODEL",
+  "explanation": "Clear attractor state with convergent flow, content gradient, and stability gradient. Lines away from attractor are corrective."
+}

@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 802 validated constraints and 55 explanatory fits loaded
+embedded below. You have ALL 818 validated constraints and 55 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -61,8 +61,8 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # EMBEDDED EXPERT CONTEXT
 
-**Generated:** 2026-02-09 12:46
-**Version:** FROZEN STATE (802 constraints, 55 fits)
+**Generated:** 2026-02-10 13:02
+**Version:** FROZEN STATE (818 constraints, 55 fits)
 
 ---
 
@@ -1556,7 +1556,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 813 constraints | 2026-02-09
+CONSTRAINT_REFERENCE v2.6 | 829 constraints | 2026-02-10
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2375,6 +2375,22 @@ C945	**No Folio-Persistent Rare MIDDLEs as Material Markers FALSIFIED** (0 rare 
 C946	**A Folios Show No Material-Domain Routing FALSIFIED** (cosine similarity 0.997; ARI=-0.007; RI extension V=0.071; A is generic pool)
 C947	**No Specification Vocabulary Gradient FALSIFIED** (early 62.5% vs late 64.2%; difference -1.7pp; Wilcoxon p=0.632)
 C948	**Gloss Gap Paragraph-Start Enrichment** (4.03x at par_start; section H gap rate 8.6% vs B 2.4%; 16 distinct gaps all hapax)
+C949	**FL Non-Executive Verdict** (6-test battery; variant NMI 97.1th pctile but fails 99.9th threshold; FL is deliberately low-impact ordered annotation layer, non-executive)
+C950	**FL Two-Dimensional Structure** (PREFIX x STAGE; PREFIX determines position KW p=10^-15; STAGE determines value; chi2 p=4.8x10^-82, V=0.349)
+C951	**FL-LINK Spatial Independence** (KS p=0.853; MWU p=0.289; no complementary zoning within lines; C813 is global tendency not local structure)
+C952	**FL Stage-Suffix Global Independence** (chi2 p=0.751; NMI p=0.657; Spearman rho=0.008; flat suffix distributions across all FL stages)
+C953	**ch-FL Precision Annotation Submode** (suffix NMI p=0.004, 7x global; ch-prefix FL interacts with execution morphology; sole surviving execution-level FL signal)
+C954	**Section T FL Enrichment** (28.4% FL vs S/B 21.2%; gradient anomaly NOT from suppression; T also shows suffix effect p=0.038)
+C955	**FL Killed Hypotheses Registry** (12 hypotheses falsified: active control, loops, routing, batch processing, cross-line state, testing criteria, assessment output)
+C956	**Positional Token Exclusivity** (192/334 tokens zone-exclusive, 2.72x shuffle; 50% survive suffix-stripping; effect is STRUCTURAL per negative control)
+C957	**Token-Level Bigram Constraints** (26 mandatory, 9 forbidden; 2 genuinely token-specific: chey->chedy, chey->shedy both ENERGY; effect is STRUCTURAL)
+C958	**Opener Class Determines Line Length** (24.9% partial R^2 beyond folio+regime; folio+opener_token = 93.7% R^2; strongest token-level finding)
+C959	**Opener Is Role Marker, Not Instruction Header** (role accuracy 29.2% = 1.46x chance; token JSD not significant; free substitution within role)
+C960	**Boundary Vocabulary Is Open** (Gini 0.47 < 0.60; 663 tokens for 80% coverage; no closed boundary set)
+C961	**WORK Zone Is Unordered** (EN tau ~ 0, AX tau ~ 0; no systematic within-zone sequence; interior operations are parallel)
+C962	**Phase Interleaving Pattern** (KERNEL/LINK/FL weakly clustered, p<0.001; compliance 32.7% vs 21.7% shuffle; phases are tendencies not blocks)
+C963	**Paragraph Body Homogeneity** (only length progression rho=-0.23; no compositional change after length control; body lines are equivalent)
+C964	**Boundary-Constrained Free-Interior Grammar** (SYNTHESIS: grammar strength 0.500; boundaries constrained by role, interior free; system is role-complete)
 
 ---
 
@@ -2382,7 +2398,7 @@ C948	**Gloss Gap Paragraph-Start Enrichment** (4.03x at par_start; section H gap
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-02-09
+# Generated: 2026-02-10
 # Total: 55 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
@@ -8699,8 +8715,8 @@ provenance:
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.2"
-  date: "2026-02-08"
+  version: "3.3"
+  date: "2026-02-10"
   status: "LOCKED"
   layer_type: "grammar contract"
   derived_from: "Tier 0-2 constraints (structural); Tier 3 operational layer clearly marked"
@@ -9255,13 +9271,23 @@ program_structure:
     provenance: "C178, C531, C535"
 
   line:
-    function: "Formal control block with internal positional grammar and FL state tracking"
+    function: "Boundary-constrained control block with free interior and FL state tracking"
     regularity: "3.3x more regular than random"
+    architecture: "BOUNDARY_CONSTRAINED_FREE_INTERIOR"  # C964
     boundary_markers:
       initial: ["daiin", "saiin", "sain"]
       final: ["am", "oly", "dy"]
+      vocabulary_openness: "Boundary vocabulary is OPEN — 663 tokens cover 80% of openers; Gini 0.47 (C960)"
     link_suppressed_at_boundary: true
     grammar_line_invariant: true
+    opener_properties:
+      role_marker: "Opener is a ROLE marker, not an instruction header — specific token adds no predictive power beyond role (C959)"
+      length_determination: "Opener class determines line length — 24.9% partial R-squared beyond folio+regime; folio+opener_token = 93.7% (C958)"
+    token_level_constraints:
+      positional_exclusivity: "192/334 common tokens are zone-exclusive (2.72x shuffle); STRUCTURAL per negative control (C956)"
+      mandatory_bigrams: "26 mandatory token bigrams (obs/exp > 5x); includes or->aiin (C561) + 25 new (C957)"
+      forbidden_bigrams: "9 forbidden token bigrams (obs=0, exp>=5); 2 genuinely token-specific: chey->chedy, chey->shedy (C957)"
+      structural_origin: "Most token-level effects are STRUCTURAL (role/position driven), not lexical — confirmed by negative control (C956, C964)"
     fl_state_tracking:
       statement: "FL MIDDLEs track state progression WITHIN each line (C777)"
       scope: "LINE-LEVEL"
@@ -9279,6 +9305,7 @@ program_structure:
           location: "early-medial"
           dominant_roles: ["EN", "FQ"]
           function: "Primary operational activity"
+          internal_ordering: "UNORDERED — tokens within WORK zone show no systematic sequence (Kendall tau ~ 0, p ~ 0.5); operations are a concurrent SET, not a sequence (C961)"
         - position: "CHECK"
           location: "mid-line"
           dominant_roles: ["EN", "AX_MED"]
@@ -9294,7 +9321,16 @@ program_structure:
         ENERGY: "medial (peaks at positions 3-6)"
         FLOW: "final (hierarchy FL > CC at line end, C562)"
         AX: "distributed across INIT/MED/FINAL sub-positions"
-      provenance: "C556, C557, C561, C562"
+      phase_interleaving:
+        statement: "KERNEL/LINK/FL phases show weak clustering but NOT sequential blocking (C962)"
+        alternation_rate: "0.566 (shuffle 0.596, p<0.001)"
+        sequential_compliance: "32.7% (shuffle 21.7%)"
+        pair_ordering:
+          LINK_to_KERNEL: "0.517 (neutral)"
+          KERNEL_to_FL: "0.623 (moderately ordered)"
+          LINK_to_FL: "0.659 (moderately ordered)"
+        interpretation: "Phases are positional tendencies, not rigid blocks — consistent with C815 (eta-squared=0.015)"
+      provenance: "C556, C557, C561, C562, C956-C964"
     provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897"
 
   paragraph:
@@ -9315,8 +9351,15 @@ program_structure:
         interpretation: "Header compounds are compressed specifications that body lines unpack"
       provenance: "C840, C935"
 
+    body_homogeneity:
+      statement: "Body lines are compositionally homogeneous — only length progression (rho=-0.23), no role-composition change after length control (C963)"
+      length_progression: "rho = -0.229, p = 0.001"
+      composition_after_control: "EN/FL/CC fractions collapse to rho ~ 0 after controlling for line length"
+      interpretation: "Paragraphs shrink toward their ends but each body line is a structurally equivalent control block"
+      provenance: "C963, C677"
+
     execution_gradient:
-      statement: "Body lines follow a specification→execution gradient"
+      statement: "Body lines follow a specification->execution gradient"
       spec_exec_vocabulary:
         rare_middle_trend: "r=-0.97 (Q0→Q4)"
         universal_middle_trend: "r=+0.92 (Q0→Q4)"
@@ -10113,6 +10156,15 @@ provenance:
     - "C557"   # daiin trigger
     - "C561"   # or→aiin bigram
     - "C562"   # FLOW final hierarchy
+    - "C956"   # Positional token exclusivity (structural, role-driven)
+    - "C957"   # Token-level bigram constraints (26 mandatory, 9 forbidden)
+    - "C958"   # Opener class determines line length
+    - "C959"   # Opener is role marker, not instruction header
+    - "C960"   # Boundary vocabulary is open
+    - "C961"   # WORK zone is unordered
+    - "C962"   # Phase interleaving (tendencies, not blocks)
+    - "C963"   # Paragraph body homogeneity
+    - "C964"   # Boundary-constrained free-interior grammar (synthesis)
 
   ax_architecture:
     - "C563"   # AX positional sub-structure

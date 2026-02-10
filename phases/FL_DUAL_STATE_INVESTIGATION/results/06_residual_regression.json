@@ -1,0 +1,156 @@
+{
+  "n_samples": 5895,
+  "model_1_expected_only": {
+    "r_squared": 0.0274,
+    "resid_std": 0.3325,
+    "resid_kurtosis": -1.243
+  },
+  "model_2_expected_length": {
+    "r_squared": 0.0276,
+    "resid_std": 0.3324,
+    "resid_kurtosis": -1.243
+  },
+  "model_3_full": {
+    "r_squared": 0.3368,
+    "resid_std": 0.2745,
+    "resid_kurtosis": -1.004,
+    "top_features": [
+      [
+        "role_LINE_START",
+        -0.5254
+      ],
+      [
+        "expected_pos",
+        0.2039
+      ],
+      [
+        "role_FREQUENT_OPERATOR",
+        0.1439
+      ],
+      [
+        "role_FLOW_OPERATOR",
+        0.1078
+      ],
+      [
+        "role_CORE_CONTROL",
+        0.0855
+      ],
+      [
+        "role_ENERGY_OPERATOR",
+        0.0789
+      ],
+      [
+        "role_AUXILIARY",
+        0.0667
+      ],
+      [
+        "role_UNKNOWN",
+        0.0428
+      ],
+      [
+        "section_C",
+        -0.0267
+      ],
+      [
+        "section_H",
+        -0.0245
+      ]
+    ]
+  },
+  "per_middle_residuals": {
+    "ii": {
+      "n": 23,
+      "resid_mean": 0.016,
+      "resid_std": 0.214,
+      "resid_kurtosis": -0.33
+    },
+    "i": {
+      "n": 137,
+      "resid_mean": 0.0358,
+      "resid_std": 0.2287,
+      "resid_kurtosis": -0.17
+    },
+    "in": {
+      "n": 264,
+      "resid_mean": 0.0213,
+      "resid_std": 0.2256,
+      "resid_kurtosis": -0.409
+    },
+    "r": {
+      "n": 748,
+      "resid_mean": 0.0346,
+      "resid_std": 0.2573,
+      "resid_kurtosis": -0.79
+    },
+    "ar": {
+      "n": 677,
+      "resid_mean": -0.0117,
+      "resid_std": 0.2758,
+      "resid_kurtosis": -1.106
+    },
+    "al": {
+      "n": 521,
+      "resid_mean": -0.003,
+      "resid_std": 0.2778,
+      "resid_kurtosis": -1.046
+    },
+    "l": {
+      "n": 855,
+      "resid_mean": 0.0053,
+      "resid_std": 0.2666,
+      "resid_kurtosis": -0.921
+    },
+    "ol": {
+      "n": 762,
+      "resid_mean": -0.0793,
+      "resid_std": 0.2763,
+      "resid_kurtosis": -1.101
+    },
+    "o": {
+      "n": 388,
+      "resid_mean": -0.076,
+      "resid_std": 0.2688,
+      "resid_kurtosis": -0.976
+    },
+    "ly": {
+      "n": 49,
+      "resid_mean": 0.14,
+      "resid_std": 0.2623,
+      "resid_kurtosis": -1.029
+    },
+    "am": {
+      "n": 174,
+      "resid_mean": 0.2858,
+      "resid_std": 0.1823,
+      "resid_kurtosis": 5.633
+    },
+    "m": {
+      "n": 76,
+      "resid_mean": 0.217,
+      "resid_std": 0.2417,
+      "resid_kurtosis": 1.869
+    },
+    "dy": {
+      "n": 675,
+      "resid_mean": -0.0429,
+      "resid_std": 0.2694,
+      "resid_kurtosis": -1.021
+    },
+    "ry": {
+      "n": 33,
+      "resid_mean": 0.1881,
+      "resid_std": 0.2377,
+      "resid_kurtosis": 1.42
+    },
+    "y": {
+      "n": 513,
+      "resid_mean": 0.0152,
+      "resid_std": 0.2804,
+      "resid_kurtosis": -0.957
+    }
+  },
+  "bimodal_after_regression": 9,
+  "total_middles_tested": 15,
+  "verdict": "PARTIAL",
+  "explanation": "Full model R\u00b2=0.337, residual kurtosis=-1.004. 9/15 MIDDLEs remain bimodal after regression."
+}

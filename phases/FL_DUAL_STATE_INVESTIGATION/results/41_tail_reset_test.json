@@ -1,0 +1,28 @@
+{
+  "body_to_tail_drop": {
+    "n": 102,
+    "action_mean_drop": 0.059,
+    "oversight_mean_drop": -0.029,
+    "action_drop_pct": 18.6,
+    "p_wilcoxon_action": 0.4166
+  },
+  "proportional_reset": {
+    "rho_action": 0.39,
+    "p_action": 0.0001
+  },
+  "tail_to_header": {
+    "n": 61,
+    "mean_distance": 2.475,
+    "random_baseline": 2.872,
+    "action_rise": 0.328
+  },
+  "checks": [
+    false,
+    false,
+    true,
+    true,
+    false
+  ],
+  "verdict": "PARTIAL_RESET",
+  "explanation": "Some reset behavior but not consistent across all measures"
+}

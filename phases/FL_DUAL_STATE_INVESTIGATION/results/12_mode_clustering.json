@@ -1,0 +1,541 @@
+{
+  "n_middles": 12,
+  "mode_coordinates": {
+    "i": {
+      "low_mean": 0.0,
+      "high_mean": 0.574,
+      "weight_low": 0.292,
+      "weight_high": 0.708,
+      "stage": "INITIAL"
+    },
+    "in": {
+      "low_mean": 0.0,
+      "high_mean": 0.583,
+      "weight_low": 0.295,
+      "weight_high": 0.705,
+      "stage": "EARLY"
+    },
+    "r": {
+      "low_mean": 0.2,
+      "high_mean": 0.821,
+      "weight_low": 0.519,
+      "weight_high": 0.481,
+      "stage": "MEDIAL"
+    },
+    "ar": {
+      "low_mean": 0.255,
+      "high_mean": 0.778,
+      "weight_low": 0.433,
+      "weight_high": 0.567,
+      "stage": "MEDIAL"
+    },
+    "al": {
+      "low_mean": 0.367,
+      "high_mean": 0.832,
+      "weight_low": 0.495,
+      "weight_high": 0.505,
+      "stage": "LATE"
+    },
+    "l": {
+      "low_mean": 0.246,
+      "high_mean": 0.835,
+      "weight_low": 0.529,
+      "weight_high": 0.471,
+      "stage": "LATE"
+    },
+    "ol": {
+      "low_mean": 0.265,
+      "high_mean": 0.781,
+      "weight_low": 0.566,
+      "weight_high": 0.434,
+      "stage": "LATE"
+    },
+    "o": {
+      "low_mean": 0.187,
+      "high_mean": 0.753,
+      "weight_low": 0.52,
+      "weight_high": 0.48,
+      "stage": "FINAL"
+    },
+    "am": {
+      "low_mean": 0.671,
+      "high_mean": 1.0,
+      "weight_low": 0.23,
+      "weight_high": 0.77,
+      "stage": "FINAL"
+    },
+    "m": {
+      "low_mean": 0.564,
+      "high_mean": 1.0,
+      "weight_low": 0.342,
+      "weight_high": 0.658,
+      "stage": "TERMINAL"
+    },
+    "dy": {
+      "low_mean": 0.345,
+      "high_mean": 0.839,
+      "weight_low": 0.523,
+      "weight_high": 0.477,
+      "stage": "TERMINAL"
+    },
+    "y": {
+      "low_mean": 0.478,
+      "high_mean": 1.0,
+      "weight_low": 0.71,
+      "weight_high": 0.29,
+      "stage": "TERMINAL"
+    }
+  },
+  "merge_distances": [
+    0.009,
+    0.0104,
+    0.0231,
+    0.0481,
+    0.086,
+    0.0863,
+    0.0942,
+    0.1732,
+    0.2235,
+    0.6175,
+    0.9303
+  ],
+  "gaps": [
+    0.0014,
+    0.0126,
+    0.025,
+    0.0379,
+    0.0003,
+    0.0079,
+    0.079,
+    0.0503,
+    0.394,
+    0.3128
+  ],
+  "natural_k": 3,
+  "cluster_assignments": {
+    "2": {
+      "1": {
+        "members": [
+          "am",
+          "m",
+          "y"
+        ],
+        "stages": [
+          "FINAL",
+          "TERMINAL",
+          "TERMINAL"
+        ],
+        "avg_low_mean": 0.571,
+        "avg_high_mean": 1.0,
+        "avg_weight_low": 0.427,
+        "low_monotonic": false,
+        "high_monotonic": true
+      },
+      "2": {
+        "members": [
+          "i",
+          "in",
+          "r",
+          "ar",
+          "al",
+          "l",
+          "ol",
+          "o",
+          "dy"
+        ],
+        "stages": [
+          "INITIAL",
+          "EARLY",
+          "MEDIAL",
+          "MEDIAL",
+          "LATE",
+          "LATE",
+          "LATE",
+          "FINAL",
+          "TERMINAL"
+        ],
+        "avg_low_mean": 0.207,
+        "avg_high_mean": 0.755,
+        "avg_weight_low": 0.464,
+        "low_monotonic": false,
+        "high_monotonic": false
+      }
+    },
+    "3": {
+      "1": {
+        "members": [
+          "am",
+          "m",
+          "y"
+        ],
+        "stages": [
+          "FINAL",
+          "TERMINAL",
+          "TERMINAL"
+        ],
+        "avg_low_mean": 0.571,
+        "avg_high_mean": 1.0,
+        "avg_weight_low": 0.427,
+        "low_monotonic": false,
+        "high_monotonic": true
+      },
+      "2": {
+        "members": [
+          "i",
+          "in"
+        ],
+        "stages": [
+          "INITIAL",
+          "EARLY"
+        ],
+        "avg_low_mean": 0.0,
+        "avg_high_mean": 0.579,
+        "avg_weight_low": 0.293,
+        "low_monotonic": true,
+        "high_monotonic": true
+      },
+      "3": {
+        "members": [
+          "r",
+          "ar",
+          "al",
+          "l",
+          "ol",
+          "o",
+          "dy"
+        ],
+        "stages": [
+          "MEDIAL",
+          "MEDIAL",
+          "LATE",
+          "LATE",
+          "LATE",
+          "FINAL",
+          "TERMINAL"
+        ],
+        "avg_low_mean": 0.266,
+        "avg_high_mean": 0.806,
+        "avg_weight_low": 0.512,
+        "low_monotonic": false,
+        "high_monotonic": false
+      }
+    },
+    "4": {
+      "1": {
+        "members": [
+          "am",
+          "m",
+          "y"
+        ],
+        "stages": [
+          "FINAL",
+          "TERMINAL",
+          "TERMINAL"
+        ],
+        "avg_low_mean": 0.571,
+        "avg_high_mean": 1.0,
+        "avg_weight_low": 0.427,
+        "low_monotonic": false,
+        "high_monotonic": true
+      },
+      "2": {
+        "members": [
+          "i",
+          "in"
+        ],
+        "stages": [
+          "INITIAL",
+          "EARLY"
+        ],
+        "avg_low_mean": 0.0,
+        "avg_high_mean": 0.579,
+        "avg_weight_low": 0.293,
+        "low_monotonic": true,
+        "high_monotonic": true
+      },
+      "3": {
+        "members": [
+          "al",
+          "dy"
+        ],
+        "stages": [
+          "LATE",
+          "TERMINAL"
+        ],
+        "avg_low_mean": 0.356,
+        "avg_high_mean": 0.835,
+        "avg_weight_low": 0.509,
+        "low_monotonic": true,
+        "high_monotonic": true
+      },
+      "4": {
+        "members": [
+          "r",
+          "ar",
+          "l",
+          "ol",
+          "o"
+        ],
+        "stages": [
+          "MEDIAL",
+          "MEDIAL",
+          "LATE",
+          "LATE",
+          "FINAL"
+        ],
+        "avg_low_mean": 0.231,
+        "avg_high_mean": 0.794,
+        "avg_weight_low": 0.513,
+        "low_monotonic": false,
+        "high_monotonic": false
+      }
+    },
+    "5": {
+      "1": {
+        "members": [
+          "m",
+          "y"
+        ],
+        "stages": [
+          "TERMINAL",
+          "TERMINAL"
+        ],
+        "avg_low_mean": 0.521,
+        "avg_high_mean": 1.0,
+        "avg_weight_low": 0.526,
+        "low_monotonic": false,
+        "high_monotonic": true
+      },
+      "2": {
+        "members": [
+          "am"
+        ],
+        "stages": [
+          "FINAL"
+        ],
+        "avg_low_mean": 0.671,
+        "avg_high_mean": 1.0,
+        "avg_weight_low": 0.23,
+        "low_monotonic": true,
+        "high_monotonic": true
+      },
+      "3": {
+        "members": [
+          "i",
+          "in"
+        ],
+        "stages": [
+          "INITIAL",
+          "EARLY"
+        ],
+        "avg_low_mean": 0.0,
+        "avg_high_mean": 0.579,
+        "avg_weight_low": 0.293,
+        "low_monotonic": true,
+        "high_monotonic": true
+      },
+      "4": {
+        "members": [
+          "al",
+          "dy"
+        ],
+        "stages": [
+          "LATE",
+          "TERMINAL"
+        ],
+        "avg_low_mean": 0.356,
+        "avg_high_mean": 0.835,
+        "avg_weight_low": 0.509,
+        "low_monotonic": true,
+        "high_monotonic": true
+      },
+      "5": {
+        "members": [
+          "r",
+          "ar",
+          "l",
+          "ol",
+          "o"
+        ],
+        "stages": [
+          "MEDIAL",
+          "MEDIAL",
+          "LATE",
+          "LATE",
+          "FINAL"
+        ],
+        "avg_low_mean": 0.231,
+        "avg_high_mean": 0.794,
+        "avg_weight_low": 0.513,
+        "low_monotonic": false,
+        "high_monotonic": false
+      }
+    },
+    "6": {
+      "1": {
+        "members": [
+          "m",
+          "y"
+        ],
+        "stages": [
+          "TERMINAL",
+          "TERMINAL"
+        ],
+        "avg_low_mean": 0.521,
+        "avg_high_mean": 1.0,
+        "avg_weight_low": 0.526,
+        "low_monotonic": false,
+        "high_monotonic": true
+      },
+      "2": {
+        "members": [
+          "am"
+        ],
+        "stages": [
+          "FINAL"
+        ],
+        "avg_low_mean": 0.671,
+        "avg_high_mean": 1.0,
+        "avg_weight_low": 0.23,
+        "low_monotonic": true,
+        "high_monotonic": true
+      },
+      "3": {
+        "members": [
+          "i",
+          "in"
+        ],
+        "stages": [
+          "INITIAL",
+          "EARLY"
+        ],
+        "avg_low_mean": 0.0,
+        "avg_high_mean": 0.579,
+        "avg_weight_low": 0.293,
+        "low_monotonic": true,
+        "high_monotonic": true
+      },
+      "4": {
+        "members": [
+          "al",
+          "dy"
+        ],
+        "stages": [
+          "LATE",
+          "TERMINAL"
+        ],
+        "avg_low_mean": 0.356,
+        "avg_high_mean": 0.835,
+        "avg_weight_low": 0.509,
+        "low_monotonic": true,
+        "high_monotonic": true
+      },
+      "5": {
+        "members": [
+          "r",
+          "ar",
+          "l",
+          "ol"
+        ],
+        "stages": [
+          "MEDIAL",
+          "MEDIAL",
+          "LATE",
+          "LATE"
+        ],
+        "avg_low_mean": 0.242,
+        "avg_high_mean": 0.804,
+        "avg_weight_low": 0.512,
+        "low_monotonic": true,
+        "high_monotonic": false
+      },
+      "6": {
+        "members": [
+          "o"
+        ],
+        "stages": [
+          "FINAL"
+        ],
+        "avg_low_mean": 0.187,
+        "avg_high_mean": 0.753,
+        "avg_weight_low": 0.52,
+        "low_monotonic": true,
+        "high_monotonic": true
+      }
+    }
+  },
+  "natural_cluster_profiles": {
+    "1": {
+      "members": [
+        "am",
+        "m",
+        "y"
+      ],
+      "stages": [
+        "FINAL",
+        "TERMINAL",
+        "TERMINAL"
+      ],
+      "low_range": [
+        0.478,
+        0.671
+      ],
+      "high_range": [
+        1.0,
+        1.0
+      ],
+      "avg_weight_low": 0.427,
+      "profile": "HIGH_FLOOR / BOUNDARY_PINNED_ONE"
+    },
+    "2": {
+      "members": [
+        "i",
+        "in"
+      ],
+      "stages": [
+        "INITIAL",
+        "EARLY"
+      ],
+      "low_range": [
+        0.0,
+        0.0
+      ],
+      "high_range": [
+        0.574,
+        0.583
+      ],
+      "avg_weight_low": 0.293,
+      "profile": "BOUNDARY_PINNED_ZERO / LOW_CEILING"
+    },
+    "3": {
+      "members": [
+        "r",
+        "ar",
+        "al",
+        "l",
+        "ol",
+        "o",
+        "dy"
+      ],
+      "stages": [
+        "MEDIAL",
+        "MEDIAL",
+        "LATE",
+        "LATE",
+        "LATE",
+        "FINAL",
+        "TERMINAL"
+      ],
+      "low_range": [
+        0.187,
+        0.367
+      ],
+      "high_range": [
+        0.753,
+        0.839
+      ],
+      "avg_weight_low": 0.512,
+      "profile": "INTERIOR / INTERIOR"
+    }
+  }
+}

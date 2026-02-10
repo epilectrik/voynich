@@ -1,0 +1,333 @@
+{
+  "n_fl_middles_analyzed": 12,
+  "mode_specialization": {
+    "low_dominant": [
+      "y"
+    ],
+    "high_dominant": [
+      "i",
+      "in",
+      "am"
+    ],
+    "dual_role": [
+      "r",
+      "ar",
+      "al",
+      "l",
+      "ol",
+      "o",
+      "m",
+      "dy"
+    ]
+  },
+  "grid_types": {
+    "anchors": [],
+    "moderates": [],
+    "floaters": [
+      "i",
+      "in",
+      "r",
+      "ar",
+      "al",
+      "l",
+      "ol",
+      "o",
+      "am",
+      "m",
+      "dy",
+      "y"
+    ]
+  },
+  "middle_profiles": {
+    "i": {
+      "stage": "INITIAL",
+      "global_position": 0.345,
+      "total_occurrences": 128,
+      "low_count": 33,
+      "high_count": 95,
+      "low_pct": 25.8,
+      "bias": "HIGH-dom",
+      "grid_type": "FLOATER",
+      "low_gmm_mean": 0.0,
+      "high_gmm_mean": 0.574
+    },
+    "in": {
+      "stage": "EARLY",
+      "global_position": 0.421,
+      "total_occurrences": 253,
+      "low_count": 69,
+      "high_count": 184,
+      "low_pct": 27.3,
+      "bias": "HIGH-dom",
+      "grid_type": "FLOATER",
+      "low_gmm_mean": 0.0,
+      "high_gmm_mean": 0.583
+    },
+    "r": {
+      "stage": "MEDIAL",
+      "global_position": 0.507,
+      "total_occurrences": 720,
+      "low_count": 366,
+      "high_count": 354,
+      "low_pct": 50.8,
+      "bias": "DUAL",
+      "grid_type": "FLOATER",
+      "low_gmm_mean": 0.2,
+      "high_gmm_mean": 0.821
+    },
+    "ar": {
+      "stage": "MEDIAL",
+      "global_position": 0.545,
+      "total_occurrences": 656,
+      "low_count": 280,
+      "high_count": 376,
+      "low_pct": 42.7,
+      "bias": "DUAL",
+      "grid_type": "FLOATER",
+      "low_gmm_mean": 0.255,
+      "high_gmm_mean": 0.778
+    },
+    "al": {
+      "stage": "LATE",
+      "global_position": 0.606,
+      "total_occurrences": 512,
+      "low_count": 253,
+      "high_count": 259,
+      "low_pct": 49.4,
+      "bias": "DUAL",
+      "grid_type": "FLOATER",
+      "low_gmm_mean": 0.367,
+      "high_gmm_mean": 0.832
+    },
+    "l": {
+      "stage": "LATE",
+      "global_position": 0.618,
+      "total_occurrences": 830,
+      "low_count": 445,
+      "high_count": 385,
+      "low_pct": 53.6,
+      "bias": "DUAL",
+      "grid_type": "FLOATER",
+      "low_gmm_mean": 0.246,
+      "high_gmm_mean": 0.835
+    },
+    "ol": {
+      "stage": "LATE",
+      "global_position": 0.643,
+      "total_occurrences": 732,
+      "low_count": 412,
+      "high_count": 320,
+      "low_pct": 56.3,
+      "bias": "DUAL",
+      "grid_type": "FLOATER",
+      "low_gmm_mean": 0.265,
+      "high_gmm_mean": 0.781
+    },
+    "o": {
+      "stage": "FINAL",
+      "global_position": 0.751,
+      "total_occurrences": 372,
+      "low_count": 196,
+      "high_count": 176,
+      "low_pct": 52.7,
+      "bias": "DUAL",
+      "grid_type": "FLOATER",
+      "low_gmm_mean": 0.187,
+      "high_gmm_mean": 0.753
+    },
+    "am": {
+      "stage": "FINAL",
+      "global_position": 0.802,
+      "total_occurrences": 168,
+      "low_count": 40,
+      "high_count": 128,
+      "low_pct": 23.8,
+      "bias": "HIGH-dom",
+      "grid_type": "FLOATER",
+      "low_gmm_mean": 0.671,
+      "high_gmm_mean": 1.0
+    },
+    "m": {
+      "stage": "TERMINAL",
+      "global_position": 0.861,
+      "total_occurrences": 70,
+      "low_count": 25,
+      "high_count": 45,
+      "low_pct": 35.7,
+      "bias": "DUAL",
+      "grid_type": "FLOATER",
+      "low_gmm_mean": 0.564,
+      "high_gmm_mean": 1.0
+    },
+    "dy": {
+      "stage": "TERMINAL",
+      "global_position": 0.908,
+      "total_occurrences": 646,
+      "low_count": 336,
+      "high_count": 310,
+      "low_pct": 52.0,
+      "bias": "DUAL",
+      "grid_type": "FLOATER",
+      "low_gmm_mean": 0.345,
+      "high_gmm_mean": 0.839
+    },
+    "y": {
+      "stage": "TERMINAL",
+      "global_position": 0.942,
+      "total_occurrences": 493,
+      "low_count": 350,
+      "high_count": 143,
+      "low_pct": 71.0,
+      "bias": "LOW-dom",
+      "grid_type": "FLOATER",
+      "low_gmm_mean": 0.478,
+      "high_gmm_mean": 1.0
+    }
+  },
+  "top_co_occurrences": [
+    {
+      "low_mid": "l",
+      "high_mid": "l",
+      "count": 86,
+      "pct": 2.55,
+      "lift": 1.36
+    },
+    {
+      "low_mid": "r",
+      "high_mid": "ar",
+      "count": 72,
+      "pct": 2.14,
+      "lift": 1.13
+    },
+    {
+      "low_mid": "l",
+      "high_mid": "ol",
+      "count": 72,
+      "pct": 2.14,
+      "lift": 1.21
+    },
+    {
+      "low_mid": "ol",
+      "high_mid": "r",
+      "count": 70,
+      "pct": 2.08,
+      "lift": 1.1
+    },
+    {
+      "low_mid": "dy",
+      "high_mid": "dy",
+      "count": 69,
+      "pct": 2.05,
+      "lift": 1.57
+    },
+    {
+      "low_mid": "l",
+      "high_mid": "r",
+      "count": 69,
+      "pct": 2.05,
+      "lift": 1.01
+    },
+    {
+      "low_mid": "ol",
+      "high_mid": "l",
+      "count": 64,
+      "pct": 1.9,
+      "lift": 1.09
+    },
+    {
+      "low_mid": "r",
+      "high_mid": "ol",
+      "count": 64,
+      "pct": 1.9,
+      "lift": 1.12
+    },
+    {
+      "low_mid": "r",
+      "high_mid": "r",
+      "count": 61,
+      "pct": 1.81,
+      "lift": 0.92
+    },
+    {
+      "low_mid": "y",
+      "high_mid": "r",
+      "count": 60,
+      "pct": 1.78,
+      "lift": 1.05
+    },
+    {
+      "low_mid": "ol",
+      "high_mid": "ol",
+      "count": 60,
+      "pct": 1.78,
+      "lift": 1.08
+    },
+    {
+      "low_mid": "ol",
+      "high_mid": "ar",
+      "count": 56,
+      "pct": 1.66,
+      "lift": 0.91
+    },
+    {
+      "low_mid": "r",
+      "high_mid": "dy",
+      "count": 55,
+      "pct": 1.63,
+      "lift": 1.01
+    },
+    {
+      "low_mid": "y",
+      "high_mid": "l",
+      "count": 55,
+      "pct": 1.63,
+      "lift": 1.05
+    },
+    {
+      "low_mid": "al",
+      "high_mid": "ar",
+      "count": 54,
+      "pct": 1.6,
+      "lift": 1.25
+    },
+    {
+      "low_mid": "ar",
+      "high_mid": "ar",
+      "count": 53,
+      "pct": 1.57,
+      "lift": 1.2
+    },
+    {
+      "low_mid": "dy",
+      "high_mid": "r",
+      "count": 53,
+      "pct": 1.57,
+      "lift": 0.99
+    },
+    {
+      "low_mid": "r",
+      "high_mid": "l",
+      "count": 53,
+      "pct": 1.57,
+      "lift": 0.87
+    },
+    {
+      "low_mid": "y",
+      "high_mid": "ar",
+      "count": 52,
+      "pct": 1.54,
+      "lift": 0.95
+    },
+    {
+      "low_mid": "l",
+      "high_mid": "dy",
+      "count": 52,
+      "pct": 1.54,
+      "lift": 0.92
+    }
+  ],
+  "global_position_vs_low_pct": {
+    "rho": 0.434,
+    "p": 0.1591
+  }
+}

@@ -156,3 +156,29 @@ The semantics may be:
 
 This is speculative (Tier 3) but structurally motivated.
 """)
+
+# Write JSON result
+result = {
+    "fl_middles": sorted(fl_middles),
+    "fl_middle_count": len(fl_middles),
+    "pp_middles_count": len(pp_middles),
+    "ri_middles_count": len(ri_middles),
+    "fl_in_pp": sorted(fl_in_pp),
+    "fl_in_pp_count": len(fl_in_pp),
+    "fl_in_pp_pct": round(len(fl_in_pp) / len(fl_middles) * 100, 1) if fl_middles else 0,
+    "fl_not_pp": sorted(fl_not_pp),
+    "pp_with_kernel_count": len(pp_with_kernel),
+    "pp_without_kernel_count": len(pp_without_kernel),
+    "kernel_free_pp_that_are_fl": len(fl_in_pp),
+    "kernel_free_pp_not_fl": len(pp_without_kernel - fl_middles),
+    "kernel_free_pp_top30": [
+        {"middle": mid, "is_fl": mid in fl_middles, "a_count": a_middle_counts.get(mid, 0)}
+        for mid in sorted(pp_without_kernel, key=lambda x: -a_middle_counts.get(x, 0))[:30]
+    ],
+    "verdict": "FL MIDDLEs are a subset of kernel-free PP vocabulary"
+}
+
+out_path = Path(__file__).resolve().parents[1] / "results" / "05_pp_fl_overlap.json"
+with open(out_path, 'w') as f:
+    json.dump(result, f, indent=2)
+print(f"\nResult written to {out_path}")

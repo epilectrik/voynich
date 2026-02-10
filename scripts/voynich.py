@@ -1707,8 +1707,9 @@ class BLineAnalysis:
     """
     Line-level analysis of a Currier B control block.
 
-    Lines are formal control blocks (C357), not scribal wrapping.
-    Each line represents a micro-stage in the procedure.
+    Lines are boundary-constrained control blocks with free interior (C964).
+    Boundaries (SETUP/CLOSE) are positionally constrained; the WORK zone
+    interior is an unordered bag of operations (C961).
     """
     line_id: str
     tokens: List[BTokenAnalysis]
@@ -1724,15 +1725,15 @@ class BLineAnalysis:
     fl_stages: List[str]         # Sequence of FL stages
     fl_progression: str          # 'FORWARD', 'STATIC', 'MIXED'
 
-    # Kernel sequence (C873: e < h < k)
-    kernel_sequence: List[str]   # Order of kernels encountered
-    kernel_order_compliant: bool # Does it follow e->h->k pattern?
+    # Kernel inventory (C961: WORK zone is unordered, no within-line kernel ordering)
+    kernel_sequence: List[str]   # Kernels encountered (order not meaningful per C961)
 
     # Role sequence
     role_sequence: List[str]     # Sequence of prefix roles
 
     # Line-level interpretation
     line_type: str               # 'INIT', 'PROCESS', 'TERMINAL', 'ESCAPE', 'HEADER'
+    opener_role: Optional[str] = None     # C959: Role of opening token (determines line character)
     is_header: bool = False      # C747/C935: Line-1 HEADER (50% HT, operationally redundant)
     paragraph_zone: Optional[str] = None  # HEADER, SPECIFICATION, EXECUTION (C932, set by paragraph analysis)
 
@@ -1799,7 +1800,11 @@ class BLineAnalysis:
         return ' - '.join(parts) if parts else f"Line with {self.token_count} operations"
 
     def flow_render(self) -> str:
-        """Render line as operations with control-flow labels and inline FL markers."""
+        """Render line as operations with control-flow labels and inline FL markers.
+
+        Uses ' -> ' for boundary tokens (SETUP/CLOSE) to show sequential structure,
+        and ' | ' for WORK zone tokens to reflect unordered interior (C961, C964).
+        """
         if not self.tokens:
             return ''
 
@@ -1811,9 +1816,23 @@ class BLineAnalysis:
                 s += f" {{FL:{fg['fl_stage']}}}"
             if fg['flow']:
                 s += f" [{fg['flow']}]"
-            parts.append(s)
+            parts.append((s, tok.prefix_phase))
 
-        return ' -> '.join(parts)
+        # Join with zone-aware separators
+        if len(parts) <= 1:
+            return parts[0][0] if parts else ''
+
+        result = parts[0][0]
+        for i in range(1, len(parts)):
+            prev_phase = parts[i-1][1]
+            curr_phase = parts[i][1]
+            # Boundary-to-boundary or boundary-to-work: sequential arrow
+            # Work-to-work: unordered pipe (C961)
+            if prev_phase == 'WORK' and curr_phase == 'WORK':
+                result += ' | ' + parts[i][0]
+            else:
+                result += ' -> ' + parts[i][0]
+        return result
 
 
 @dataclass
@@ -2316,7 +2335,7 @@ class BFolioDecoder:
                 has_init_marker=False, has_final_marker=False,
                 init_token=None, final_token=None,
                 fl_stages=[], fl_progression='EMPTY',
-                kernel_sequence=[], kernel_order_compliant=True,
+                kernel_sequence=[],
                 role_sequence=[], line_type='EMPTY',
                 is_header=(line_id == '1')
             )
@@ -2344,18 +2363,12 @@ class BFolioDecoder:
             else:
                 fl_progression = 'MIXED'
 
-        # Collect kernel sequence
+        # Collect kernel inventory (C961: order not meaningful within WORK zone)
         kernel_sequence = []
         for t in line_tokens:
             for k in t.kernels:
                 if k not in kernel_sequence[-1:]:  # Avoid consecutive duplicates
                     kernel_sequence.append(k)
-
-        # Check kernel order compliance (C873: e < h < k)
-        kernel_order = {'e': 0, 'h': 1, 'k': 2}
-        kernel_nums = [kernel_order.get(k, 1) for k in kernel_sequence]
-        kernel_order_compliant = all(kernel_nums[i] <= kernel_nums[i+1]
-                                     for i in range(len(kernel_nums)-1)) if len(kernel_nums) > 1 else True
 
         # Collect role sequence
         role_sequence = [t.prefix_role for t in line_tokens if t.prefix_role]
@@ -2370,12 +2383,15 @@ class BFolioDecoder:
             line_type = 'INIT'
         elif has_final and any(s in ['TERMINAL', 'LATE'] for s in fl_stages):
             line_type = 'TERMINAL'
-        elif 'FQ' in str(role_sequence) or fl_progression == 'BACKWARD':
+        elif 'FQ' in str(role_sequence):
             line_type = 'ESCAPE'
         elif 'AX_LATE' in role_sequence or 'EN_KERNEL' in role_sequence:
             line_type = 'MONITOR' if 'AX_LATE' in role_sequence else 'PROCESS'
         else:
             line_type = 'PROCESS'
+
+        # C959: Opener role determines line character (not specific token)
+        opener_role = line_tokens[0].prefix_role if line_tokens else None
 
         return BLineAnalysis(
             line_id=line_id,
@@ -2388,9 +2404,9 @@ class BFolioDecoder:
             fl_stages=fl_stages,
             fl_progression=fl_progression,
             kernel_sequence=kernel_sequence,
-            kernel_order_compliant=kernel_order_compliant,
             role_sequence=role_sequence,
             line_type=line_type,
+            opener_role=opener_role,
             is_header=is_header,
         )
 

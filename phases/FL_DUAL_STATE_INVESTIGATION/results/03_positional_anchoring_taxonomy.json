@@ -1,0 +1,321 @@
+{
+  "total_fl_records": 5895,
+  "taxonomy": {
+    "ii": {
+      "n": 23,
+      "mean": 0.329,
+      "std": 0.321,
+      "anchor_type": "FLEXIBLE",
+      "stage": "INITIAL",
+      "stage_order": 0,
+      "chars": {
+        "has_y": false,
+        "has_i": true,
+        "has_consonant": false,
+        "has_vowel_ao": false
+      },
+      "hazard_safe": {
+        "hazard": 0,
+        "safe": 7,
+        "other": 16
+      }
+    },
+    "i": {
+      "n": 137,
+      "mean": 0.407,
+      "std": 0.349,
+      "anchor_type": "FLEXIBLE",
+      "stage": "INITIAL",
+      "stage_order": 0,
+      "chars": {
+        "has_y": false,
+        "has_i": true,
+        "has_consonant": false,
+        "has_vowel_ao": false
+      },
+      "hazard_safe": {
+        "hazard": 49,
+        "safe": 0,
+        "other": 88
+      }
+    },
+    "in": {
+      "n": 264,
+      "mean": 0.411,
+      "std": 0.351,
+      "anchor_type": "FLEXIBLE",
+      "stage": "EARLY",
+      "stage_order": 1,
+      "chars": {
+        "has_y": false,
+        "has_i": true,
+        "has_consonant": true,
+        "has_vowel_ao": false
+      },
+      "hazard_safe": {
+        "hazard": 113,
+        "safe": 0,
+        "other": 151
+      }
+    },
+    "r": {
+      "n": 748,
+      "mean": 0.498,
+      "std": 0.355,
+      "anchor_type": "FLEXIBLE",
+      "stage": "MEDIAL",
+      "stage_order": 2,
+      "chars": {
+        "has_y": false,
+        "has_i": false,
+        "has_consonant": true,
+        "has_vowel_ao": false
+      },
+      "hazard_safe": {
+        "hazard": 188,
+        "safe": 0,
+        "other": 560
+      }
+    },
+    "ar": {
+      "n": 677,
+      "mean": 0.551,
+      "std": 0.303,
+      "anchor_type": "FLEXIBLE",
+      "stage": "MEDIAL",
+      "stage_order": 2,
+      "chars": {
+        "has_y": false,
+        "has_i": false,
+        "has_consonant": true,
+        "has_vowel_ao": true
+      },
+      "hazard_safe": {
+        "hazard": 248,
+        "safe": 0,
+        "other": 429
+      }
+    },
+    "al": {
+      "n": 521,
+      "mean": 0.602,
+      "std": 0.284,
+      "anchor_type": "MODERATE",
+      "stage": "LATE",
+      "stage_order": 3,
+      "chars": {
+        "has_y": false,
+        "has_i": false,
+        "has_consonant": true,
+        "has_vowel_ao": true
+      },
+      "hazard_safe": {
+        "hazard": 186,
+        "safe": 11,
+        "other": 324
+      }
+    },
+    "l": {
+      "n": 855,
+      "mean": 0.523,
+      "std": 0.347,
+      "anchor_type": "FLEXIBLE",
+      "stage": "LATE",
+      "stage_order": 3,
+      "chars": {
+        "has_y": false,
+        "has_i": false,
+        "has_consonant": true,
+        "has_vowel_ao": false
+      },
+      "hazard_safe": {
+        "hazard": 130,
+        "safe": 0,
+        "other": 725
+      }
+    },
+    "ol": {
+      "n": 762,
+      "mean": 0.489,
+      "std": 0.307,
+      "anchor_type": "FLEXIBLE",
+      "stage": "LATE",
+      "stage_order": 3,
+      "chars": {
+        "has_y": false,
+        "has_i": false,
+        "has_consonant": true,
+        "has_vowel_ao": true
+      },
+      "hazard_safe": {
+        "hazard": 0,
+        "safe": 10,
+        "other": 752
+      }
+    },
+    "o": {
+      "n": 388,
+      "mean": 0.459,
+      "std": 0.333,
+      "anchor_type": "FLEXIBLE",
+      "stage": "FINAL",
+      "stage_order": 4,
+      "chars": {
+        "has_y": false,
+        "has_i": false,
+        "has_consonant": false,
+        "has_vowel_ao": true
+      },
+      "hazard_safe": {
+        "hazard": 0,
+        "safe": 11,
+        "other": 377
+      }
+    },
+    "ly": {
+      "n": 49,
+      "mean": 0.765,
+      "std": 0.284,
+      "anchor_type": "MODERATE",
+      "stage": "FINAL",
+      "stage_order": 4,
+      "chars": {
+        "has_y": true,
+        "has_i": false,
+        "has_consonant": true,
+        "has_vowel_ao": false
+      },
+      "hazard_safe": {
+        "hazard": 0,
+        "safe": 17,
+        "other": 32
+      }
+    },
+    "am": {
+      "n": 174,
+      "mean": 0.924,
+      "std": 0.181,
+      "anchor_type": "RIGID",
+      "stage": "FINAL",
+      "stage_order": 4,
+      "chars": {
+        "has_y": false,
+        "has_i": false,
+        "has_consonant": true,
+        "has_vowel_ao": true
+      },
+      "hazard_safe": {
+        "hazard": 0,
+        "safe": 8,
+        "other": 166
+      }
+    },
+    "m": {
+      "n": 76,
+      "mean": 0.851,
+      "std": 0.263,
+      "anchor_type": "MODERATE",
+      "stage": "TERMINAL",
+      "stage_order": 5,
+      "chars": {
+        "has_y": false,
+        "has_i": false,
+        "has_consonant": true,
+        "has_vowel_ao": false
+      },
+      "hazard_safe": {
+        "hazard": 42,
+        "safe": 0,
+        "other": 34
+      }
+    },
+    "dy": {
+      "n": 675,
+      "mean": 0.581,
+      "std": 0.306,
+      "anchor_type": "FLEXIBLE",
+      "stage": "TERMINAL",
+      "stage_order": 5,
+      "chars": {
+        "has_y": true,
+        "has_i": false,
+        "has_consonant": false,
+        "has_vowel_ao": false
+      },
+      "hazard_safe": {
+        "hazard": 0,
+        "safe": 6,
+        "other": 669
+      }
+    },
+    "ry": {
+      "n": 33,
+      "mean": 0.806,
+      "std": 0.311,
+      "anchor_type": "FLEXIBLE",
+      "stage": "TERMINAL",
+      "stage_order": 5,
+      "chars": {
+        "has_y": true,
+        "has_i": false,
+        "has_consonant": true,
+        "has_vowel_ao": false
+      },
+      "hazard_safe": {
+        "hazard": 0,
+        "safe": 13,
+        "other": 20
+      }
+    },
+    "y": {
+      "n": 513,
+      "mean": 0.629,
+      "std": 0.348,
+      "anchor_type": "FLEXIBLE",
+      "stage": "TERMINAL",
+      "stage_order": 5,
+      "chars": {
+        "has_y": true,
+        "has_i": false,
+        "has_consonant": false,
+        "has_vowel_ao": false
+      },
+      "hazard_safe": {
+        "hazard": 0,
+        "safe": 33,
+        "other": 480
+      }
+    }
+  },
+  "type_counts": {
+    "FLEXIBLE": 11,
+    "MODERATE": 3,
+    "RIGID": 1
+  },
+  "stage_type_matrix": {
+    "INITIAL": {
+      "FLEXIBLE": 2
+    },
+    "EARLY": {
+      "FLEXIBLE": 1
+    },
+    "MEDIAL": {
+      "FLEXIBLE": 2
+    },
+    "LATE": {
+      "MODERATE": 1,
+      "FLEXIBLE": 2
+    },
+    "FINAL": {
+      "FLEXIBLE": 1,
+      "MODERATE": 1,
+      "RIGID": 1
+    },
+    "TERMINAL": {
+      "MODERATE": 1,
+      "FLEXIBLE": 3
+    }
+  },
+  "verdict": "WEAK_PARTITION",
+  "explanation": "Weak partition: 1 RIGID, 11 FLEXIBLE, but most are MODERATE (3)"
+}

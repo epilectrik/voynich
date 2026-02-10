@@ -1,0 +1,11 @@
+{
+  "n_outer_left": 582,
+  "n_outer_right": 582,
+  "n_center": 1589,
+  "layer_class_cramers_v": 0.228,
+  "layer_class_p": 1.8415729274311782e-17,
+  "n_layer_preferring_classes": 14,
+  "outer_max_asymmetry": 0.114,
+  "verdict": "CLASS_STRATIFIED_NESTING",
+  "explanation": "Specific classes preferentially occupy specific nesting layers, with L/R asymmetry"
+}

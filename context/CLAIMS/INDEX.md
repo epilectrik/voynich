@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 802 validated constraints | **Version:** 3.38 | **Date:** 2026-02-09
+**Total:** 818 validated constraints | **Version:** 3.40 | **Date:** 2026-02-10
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -1587,6 +1587,50 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - No specification gradient: early and late paragraph vocabulary discriminate section equally
 - Gloss gaps enriched at paragraph starts (4.03x) but all distinct gaps are hapax
 - Semantic ceiling (C120/C171) reinforced: material information is bound to section identity and cannot be recovered from individual tokens
+
+### FL Resolution Test (C949-C955) - Phase: FL_RESOLUTION_TEST
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **949** | **FL Non-Executive Verdict** (6-test battery; variant NMI 97.1th pctile but fails 99.9th threshold; FL is deliberately low-impact ordered annotation layer, non-executive) | 2 | B | -> [C949_fl_non_executive_verdict.md](C949_fl_non_executive_verdict.md) |
+| **950** | **FL Two-Dimensional Structure** (PREFIX x STAGE; PREFIX determines position KW p=10^-15; STAGE determines value; chi2 p=4.8x10^-82, V=0.349) | 2 | B | -> [C950_fl_two_dimensional_structure.md](C950_fl_two_dimensional_structure.md) |
+| **951** | **FL-LINK Spatial Independence** (KS p=0.853; MWU p=0.289; no complementary zoning within lines; C813 is global tendency not local structure) | 2 | B | -> [C951_fl_link_independence.md](C951_fl_link_independence.md) |
+| **952** | **FL Stage-Suffix Global Independence** (chi2 p=0.751; NMI p=0.657; Spearman rho=0.008; flat suffix distributions across all FL stages) | 2 | B | -> [C952_fl_suffix_independence.md](C952_fl_suffix_independence.md) |
+| **953** | **ch-FL Precision Annotation Submode** (suffix NMI p=0.004, 7x global; ch-prefix FL interacts with execution morphology; sole surviving execution-level FL signal) | 2 | B | -> [C953_ch_fl_precision_submode.md](C953_ch_fl_precision_submode.md) |
+| **954** | **Section T FL Enrichment** (28.4% FL vs S/B 21.2%; gradient anomaly NOT from suppression; T also shows suffix effect p=0.038) | 2 | B | -> [C954_section_t_fl_enrichment.md](C954_section_t_fl_enrichment.md) |
+| **955** | **FL Killed Hypotheses Registry** (12 hypotheses falsified: active control, loops, routing, batch processing, cross-line state, testing criteria, assessment output) | 1 | B | -> [C955_fl_killed_hypotheses.md](C955_fl_killed_hypotheses.md) |
+
+**Phase findings:**
+- FL is a **non-executive annotation layer** — structurally real but largely ignored by execution grammar
+- FL is **two-dimensional** (PREFIX = position, STAGE = value) with strong correlation (V=0.349)
+- FL has **no control-loop role** — no LINK zoning, no suffix parameterization, no role prediction
+- The sole execution-level signal is **ch-FL suffix coupling** (p=0.004), consistent with precision annotation submode
+- Section T has **more FL, not less** — gradient anomaly has a different cause
+- 12 execution-level hypotheses falsified with proper shuffle controls
+- FL is deliberately low-impact by architectural necessity (C120, C171 compliance)
+
+### Line Control Block Grammar (C956-C964) - Phase: LINE_CONTROL_BLOCK_GRAMMAR
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **956** | **Positional Token Exclusivity** (192/334 tokens zone-exclusive, 2.72x shuffle; 50% survive suffix-stripping; effect is STRUCTURAL per negative control) | 2 | B | -> [C956_positional_token_exclusivity.md](C956_positional_token_exclusivity.md) |
+| **957** | **Token-Level Bigram Constraints** (26 mandatory, 9 forbidden; 2 genuinely token-specific: chey->chedy, chey->shedy both ENERGY; effect is STRUCTURAL) | 2 | B | -> [C957_token_bigram_constraints.md](C957_token_bigram_constraints.md) |
+| **958** | **Opener Class Determines Line Length** (24.9% partial R^2 beyond folio+regime; folio+opener_token = 93.7% R^2; strongest token-level finding) | 2 | B | -> [C958_opener_determines_line_length.md](C958_opener_determines_line_length.md) |
+| **959** | **Opener Is Role Marker, Not Instruction Header** (role accuracy 29.2% = 1.46x chance; token JSD not significant; free substitution within role) | 2 | B | -> [C959_opener_is_role_marker.md](C959_opener_is_role_marker.md) |
+| **960** | **Boundary Vocabulary Is Open** (Gini 0.47 < 0.60; 663 tokens for 80% coverage; no closed boundary set) | 2 | B | -> [C960_boundary_vocabulary_open.md](C960_boundary_vocabulary_open.md) |
+| **961** | **WORK Zone Is Unordered** (EN tau ~ 0, AX tau ~ 0; no systematic within-zone sequence; interior operations are parallel) | 2 | B | -> [C961_work_zone_unordered.md](C961_work_zone_unordered.md) |
+| **962** | **Phase Interleaving Pattern** (KERNEL/LINK/FL weakly clustered, p<0.001; compliance 32.7% vs 21.7% shuffle; phases are tendencies not blocks) | 2 | B | -> [C962_phase_interleaving.md](C962_phase_interleaving.md) |
+| **963** | **Paragraph Body Homogeneity** (only length progression rho=-0.23; no compositional change after length control; body lines are equivalent) | 2 | B | -> [C963_paragraph_body_homogeneity.md](C963_paragraph_body_homogeneity.md) |
+| **964** | **Boundary-Constrained Free-Interior Grammar** (SYNTHESIS: grammar strength 0.500; boundaries constrained by role, interior free; system is role-complete) | 2 | B | -> [C964_boundary_constrained_free_interior.md](C964_boundary_constrained_free_interior.md) |
+
+**Phase findings:**
+- Currier B lines are **boundary-constrained control blocks with a free interior**
+- **Boundaries** have positional exclusivity, mandatory bigrams, and opener-length coupling — but these are role-driven (negative control confirms)
+- **Interior** (WORK zone) is unordered, phases interleave, paragraph bodies are homogeneous
+- The system is **role-complete**: 49 instruction classes and 5 roles capture all syntactic structure
+- Token-level effects are consequences of role membership, not independent grammatical constraints
+- Only **2 genuine token-specific constraints** found: chey->chedy and chey->shedy forbidden (same ENERGY class)
+- The system deliberately minimized lexical syntax to reduce cognitive load and error
 
 ---
 

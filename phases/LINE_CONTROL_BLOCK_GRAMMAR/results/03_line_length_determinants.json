@@ -1,0 +1,138 @@
+{
+  "test": "Line Length Determinants",
+  "test_id": "03_line_length_determinants",
+  "phase": "LINE_CONTROL_BLOCK_GRAMMAR",
+  "purpose": "Determine what predicts line length in Currier B; test if opener instruction class adds explanatory power beyond folio and regime",
+  "method": "Group-mean R2 for categorical predictors, OLS R2 for continuous; hierarchical decomposition; within-folio shuffle null",
+  "n_lines": 2420,
+  "mean_line_length": 9.5438,
+  "std_line_length": 3.2482,
+  "ss_total": 25532.36,
+  "individual_r2": {
+    "opener_class": 0.017704,
+    "opener_role": 0.004206,
+    "folio": 0.299574,
+    "section": 0.039026,
+    "regime": 0.003437,
+    "par_position": 0.013363,
+    "line_position_in_folio": 0.00516
+  },
+  "hierarchical_r2": [
+    {
+      "step": "folio",
+      "cumulative_r2": 0.299574,
+      "incremental_r2": 0.299574
+    },
+    {
+      "step": "regime",
+      "cumulative_r2": 0.299574,
+      "incremental_r2": 0.0
+    },
+    {
+      "step": "opener_class",
+      "cumulative_r2": 0.548344,
+      "incremental_r2": 0.248771
+    },
+    {
+      "step": "opener_word",
+      "cumulative_r2": 0.936679,
+      "incremental_r2": 0.388334
+    },
+    {
+      "step": "par_position",
+      "cumulative_r2": 0.941852,
+      "incremental_r2": 0.005173
+    }
+  ],
+  "opener_partial_r2_beyond_folio_regime": 0.248771,
+  "shuffle_test": {
+    "n_shuffles": 1000,
+    "seed": 42,
+    "method": "shuffle line lengths within each folio, recompute opener_class R2",
+    "observed_opener_class_r2": 0.017704,
+    "shuffle_mean_r2": 0.020738,
+    "shuffle_std_r2": 0.009165,
+    "shuffle_max_r2": 0.075423,
+    "p_value": 0.593,
+    "n_exceed": 593
+  },
+  "opener_class_mean_lengths": [
+    {
+      "class": "UNKNOWN",
+      "role": "UNKNOWN",
+      "count": 1140,
+      "mean_length": 9.63,
+      "std_length": 3.27
+    },
+    {
+      "class": "33",
+      "role": "ENERGY_OPERATOR",
+      "count": 146,
+      "mean_length": 8.89,
+      "std_length": 2.18
+    },
+    {
+      "class": "29",
+      "role": "AUXILIARY",
+      "count": 144,
+      "mean_length": 9.44,
+      "std_length": 3.64
+    },
+    {
+      "class": "24",
+      "role": "AUXILIARY",
+      "count": 131,
+      "mean_length": 9.77,
+      "std_length": 2.49
+    },
+    {
+      "class": "10",
+      "role": "CORE_CONTROL",
+      "count": 85,
+      "mean_length": 9.88,
+      "std_length": 2.45
+    },
+    {
+      "class": "28",
+      "role": "AUXILIARY",
+      "count": 80,
+      "mean_length": 9.86,
+      "std_length": 4.56
+    },
+    {
+      "class": "30",
+      "role": "FLOW_OPERATOR",
+      "count": 78,
+      "mean_length": 9.32,
+      "std_length": 2.79
+    },
+    {
+      "class": "26",
+      "role": "AUXILIARY",
+      "count": 47,
+      "mean_length": 9.38,
+      "std_length": 2.04
+    },
+    {
+      "class": "4",
+      "role": "AUXILIARY",
+      "count": 47,
+      "mean_length": 9.49,
+      "std_length": 6.09
+    },
+    {
+      "class": "13",
+      "role": "FREQUENT_OPERATOR",
+      "count": 46,
+      "mean_length": 9.13,
+      "std_length": 2.58
+    }
+  ],
+  "verdict": "PASS",
+  "verdict_reason": "Opener class adds 0.2488 partial R2 (>=3%) beyond folio+regime",
+  "thresholds": {
+    "pass": ">=3% partial R2 beyond folio+regime",
+    "weak": "1-2% partial R2",
+    "fail": "<1% partial R2"
+  }
+}

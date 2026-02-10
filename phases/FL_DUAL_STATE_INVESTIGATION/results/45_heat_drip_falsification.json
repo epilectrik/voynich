@@ -1,0 +1,94 @@
+{
+  "n_lines": 1176,
+  "test_1_null_distribution": {
+    "n_shuffles": 1000,
+    "observed": {
+      "rho": 0.084,
+      "diagonal_fraction": 0.634,
+      "asymmetry_ratio": 1.63,
+      "heat_up_drip_mean": 0.078
+    },
+    "null_95th": {
+      "rho": 0.0472,
+      "diagonal_fraction": 0.619,
+      "asymmetry_ratio": 1.6364,
+      "heat_up_drip_mean": 0.1305
+    },
+    "p_values": {
+      "rho": 0.002,
+      "diagonal_fraction": 0.003,
+      "asymmetry_ratio": 0.063,
+      "heat_up_drip_mean": 0.15
+    },
+    "sub_tests_passed": 2,
+    "survives": false
+  },
+  "test_2_axis_swap": {
+    "original_asymmetry": 1.63,
+    "swapped_asymmetry": 0.61,
+    "lo_up_ho_change": 0.078,
+    "ho_up_lo_change": 0.106,
+    "asymmetry_diff": 0.027,
+    "directional": false,
+    "survives": false
+  },
+  "test_3_section_windows": {
+    "kw_lo_p": 0.0,
+    "kw_ho_p": 0.001503,
+    "sections": {
+      "B": {
+        "n_lines": 370,
+        "lo_mean": 3.08,
+        "ho_mean": 2.81
+      },
+      "C": {
+        "n_lines": 72,
+        "lo_mean": 2.97,
+        "ho_mean": 2.61
+      },
+      "H": {
+        "n_lines": 197,
+        "lo_mean": 3.61,
+        "ho_mean": 3.2
+      },
+      "S": {
+        "n_lines": 502,
+        "lo_mean": 2.9,
+        "ho_mean": 2.73
+      },
+      "T": {
+        "n_lines": 35,
+        "lo_mean": 3.49,
+        "ho_mean": 2.74
+      }
+    },
+    "survives": true
+  },
+  "test_4_extreme_content": {
+    "danger_tokens": 231,
+    "impossible_tokens": 115,
+    "normal_tokens": 4680,
+    "jaccard_danger_normal": 0.067,
+    "jaccard_impossible_normal": 0.04,
+    "jaccard_baseline": 0.207,
+    "has_sufficient_data": true,
+    "survives": true
+  },
+  "test_5_folio_range": {
+    "n_folios": 68,
+    "center_rho": 0.403,
+    "center_p": 0.000661,
+    "range_rho": 0.347,
+    "range_p": 0.003714,
+    "permutation_p": 0.001,
+    "survives": true
+  },
+  "overall": {
+    "survived": 3,
+    "killed": 2,
+    "inconclusive": 0,
+    "total_testable": 5,
+    "verdict": "PARTIALLY_SURVIVES",
+    "explanation": "Heat/drip model survives 3/5 tests but fails: T1_null_distribution, T2_axis_swap. Model needs refinement."
+  }
+}

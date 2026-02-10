@@ -1,0 +1,1135 @@
+{
+  "total_fl_records": 5895,
+  "global_kurtosis": {
+    "ii": -0.993,
+    "i": -1.408,
+    "in": -1.385,
+    "r": -1.418,
+    "ar": -1.198,
+    "al": -1.063,
+    "l": -1.315,
+    "ol": -1.175,
+    "o": -1.265,
+    "ly": -0.605,
+    "am": 7.069,
+    "m": 2.108,
+    "dy": -1.052,
+    "ry": 1.082,
+    "y": -1.148
+  },
+  "stratified_by_prev_role": {
+    "i": {
+      "strata": {
+        "UNKNOWN": {
+          "n": 31,
+          "kurtosis": -1.071,
+          "mean": 0.518
+        },
+        "ENERGY_OPERATOR": {
+          "n": 36,
+          "kurtosis": -0.677,
+          "mean": 0.632
+        },
+        "LINE_START": {
+          "n": 40,
+          "kurtosis": NaN,
+          "mean": 0.0
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": -1.408,
+      "n_strata": 3
+    },
+    "in": {
+      "strata": {
+        "FREQUENT_OPERATOR": {
+          "n": 23,
+          "kurtosis": -0.643,
+          "mean": 0.677
+        },
+        "UNKNOWN": {
+          "n": 46,
+          "kurtosis": -1.37,
+          "mean": 0.555
+        },
+        "ENERGY_OPERATOR": {
+          "n": 75,
+          "kurtosis": -1.1,
+          "mean": 0.568
+        },
+        "LINE_START": {
+          "n": 78,
+          "kurtosis": NaN,
+          "mean": 0.0
+        },
+        "AUXILIARY": {
+          "n": 26,
+          "kurtosis": -1.43,
+          "mean": 0.564
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": -1.385,
+      "n_strata": 5
+    },
+    "r": {
+      "strata": {
+        "ENERGY_OPERATOR": {
+          "n": 215,
+          "kurtosis": -1.224,
+          "mean": 0.633
+        },
+        "FREQUENT_OPERATOR": {
+          "n": 70,
+          "kurtosis": -0.783,
+          "mean": 0.693
+        },
+        "UNKNOWN": {
+          "n": 163,
+          "kurtosis": -1.258,
+          "mean": 0.578
+        },
+        "AUXILIARY": {
+          "n": 116,
+          "kurtosis": -1.283,
+          "mean": 0.584
+        },
+        "LINE_START": {
+          "n": 143,
+          "kurtosis": NaN,
+          "mean": 0.0
+        },
+        "FLOW_OPERATOR": {
+          "n": 21,
+          "kurtosis": -1.338,
+          "mean": 0.606
+        },
+        "CORE_CONTROL": {
+          "n": 20,
+          "kurtosis": -1.161,
+          "mean": 0.677
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": -1.418,
+      "n_strata": 7
+    },
+    "ar": {
+      "strata": {
+        "ENERGY_OPERATOR": {
+          "n": 189,
+          "kurtosis": -0.997,
+          "mean": 0.604
+        },
+        "FREQUENT_OPERATOR": {
+          "n": 123,
+          "kurtosis": -0.908,
+          "mean": 0.64
+        },
+        "UNKNOWN": {
+          "n": 176,
+          "kurtosis": -1.474,
+          "mean": 0.508
+        },
+        "AUXILIARY": {
+          "n": 99,
+          "kurtosis": -1.296,
+          "mean": 0.555
+        },
+        "FLOW_OPERATOR": {
+          "n": 44,
+          "kurtosis": -0.965,
+          "mean": 0.617
+        },
+        "LINE_START": {
+          "n": 30,
+          "kurtosis": NaN,
+          "mean": 0.0
+        },
+        "CORE_CONTROL": {
+          "n": 16,
+          "kurtosis": -1.408,
+          "mean": 0.557
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": -1.198,
+      "n_strata": 7
+    },
+    "al": {
+      "strata": {
+        "ENERGY_OPERATOR": {
+          "n": 137,
+          "kurtosis": -0.911,
+          "mean": 0.594
+        },
+        "UNKNOWN": {
+          "n": 129,
+          "kurtosis": -1.23,
+          "mean": 0.573
+        },
+        "FREQUENT_OPERATOR": {
+          "n": 100,
+          "kurtosis": -0.865,
+          "mean": 0.663
+        },
+        "CORE_CONTROL": {
+          "n": 17,
+          "kurtosis": -1.684,
+          "mean": 0.572
+        },
+        "AUXILIARY": {
+          "n": 87,
+          "kurtosis": -1.275,
+          "mean": 0.606
+        },
+        "FLOW_OPERATOR": {
+          "n": 47,
+          "kurtosis": -1.198,
+          "mean": 0.625
+        }
+      },
+      "mean_within_kurtosis": -1.194,
+      "global_kurtosis": -1.063,
+      "n_strata": 6
+    },
+    "l": {
+      "strata": {
+        "UNKNOWN": {
+          "n": 178,
+          "kurtosis": -1.348,
+          "mean": 0.575
+        },
+        "FREQUENT_OPERATOR": {
+          "n": 87,
+          "kurtosis": -1.049,
+          "mean": 0.678
+        },
+        "ENERGY_OPERATOR": {
+          "n": 302,
+          "kurtosis": -1.184,
+          "mean": 0.623
+        },
+        "LINE_START": {
+          "n": 128,
+          "kurtosis": NaN,
+          "mean": 0.0
+        },
+        "AUXILIARY": {
+          "n": 112,
+          "kurtosis": -1.259,
+          "mean": 0.592
+        },
+        "FLOW_OPERATOR": {
+          "n": 22,
+          "kurtosis": -1.289,
+          "mean": 0.651
+        },
+        "CORE_CONTROL": {
+          "n": 26,
+          "kurtosis": -1.184,
+          "mean": 0.67
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": -1.315,
+      "n_strata": 7
+    },
+    "ol": {
+      "strata": {
+        "UNKNOWN": {
+          "n": 178,
+          "kurtosis": -1.126,
+          "mean": 0.484
+        },
+        "ENERGY_OPERATOR": {
+          "n": 228,
+          "kurtosis": -1.244,
+          "mean": 0.547
+        },
+        "FREQUENT_OPERATOR": {
+          "n": 95,
+          "kurtosis": -0.976,
+          "mean": 0.571
+        },
+        "AUXILIARY": {
+          "n": 148,
+          "kurtosis": -1.397,
+          "mean": 0.497
+        },
+        "FLOW_OPERATOR": {
+          "n": 38,
+          "kurtosis": -1.267,
+          "mean": 0.601
+        },
+        "LINE_START": {
+          "n": 54,
+          "kurtosis": NaN,
+          "mean": 0.0
+        },
+        "CORE_CONTROL": {
+          "n": 21,
+          "kurtosis": -0.388,
+          "mean": 0.539
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": -1.175,
+      "n_strata": 7
+    },
+    "o": {
+      "strata": {
+        "LINE_START": {
+          "n": 58,
+          "kurtosis": NaN,
+          "mean": 0.0
+        },
+        "UNKNOWN": {
+          "n": 107,
+          "kurtosis": -1.133,
+          "mean": 0.5
+        },
+        "FREQUENT_OPERATOR": {
+          "n": 50,
+          "kurtosis": -1.111,
+          "mean": 0.643
+        },
+        "AUXILIARY": {
+          "n": 57,
+          "kurtosis": -1.441,
+          "mean": 0.519
+        },
+        "FLOW_OPERATOR": {
+          "n": 20,
+          "kurtosis": -1.32,
+          "mean": 0.5
+        },
+        "ENERGY_OPERATOR": {
+          "n": 81,
+          "kurtosis": -1.171,
+          "mean": 0.589
+        },
+        "CORE_CONTROL": {
+          "n": 15,
+          "kurtosis": -0.46,
+          "mean": 0.34
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": -1.265,
+      "n_strata": 7
+    },
+    "ly": {
+      "strata": {
+        "ENERGY_OPERATOR": {
+          "n": 23,
+          "kurtosis": -1.021,
+          "mean": 0.778
+        }
+      },
+      "mean_within_kurtosis": -1.021,
+      "global_kurtosis": -0.605,
+      "n_strata": 1
+    },
+    "am": {
+      "strata": {
+        "AUXILIARY": {
+          "n": 38,
+          "kurtosis": 7.16,
+          "mean": 0.924
+        },
+        "UNKNOWN": {
+          "n": 47,
+          "kurtosis": 24.35,
+          "mean": 0.955
+        },
+        "FREQUENT_OPERATOR": {
+          "n": 33,
+          "kurtosis": 5.844,
+          "mean": 0.92
+        },
+        "ENERGY_OPERATOR": {
+          "n": 41,
+          "kurtosis": 2.109,
+          "mean": 0.882
+        }
+      },
+      "mean_within_kurtosis": 9.866,
+      "global_kurtosis": 7.069,
+      "n_strata": 4
+    },
+    "m": {
+      "strata": {
+        "AUXILIARY": {
+          "n": 18,
+          "kurtosis": 4.835,
+          "mean": 0.874
+        },
+        "UNKNOWN": {
+          "n": 21,
+          "kurtosis": 3.394,
+          "mean": 0.889
+        }
+      },
+      "mean_within_kurtosis": 4.114,
+      "global_kurtosis": 2.108,
+      "n_strata": 2
+    },
+    "dy": {
+      "strata": {
+        "ENERGY_OPERATOR": {
+          "n": 218,
+          "kurtosis": -1.116,
+          "mean": 0.586
+        },
+        "AUXILIARY": {
+          "n": 126,
+          "kurtosis": -1.157,
+          "mean": 0.592
+        },
+        "FREQUENT_OPERATOR": {
+          "n": 85,
+          "kurtosis": -0.658,
+          "mean": 0.708
+        },
+        "UNKNOWN": {
+          "n": 163,
+          "kurtosis": -1.188,
+          "mean": 0.608
+        },
+        "LINE_START": {
+          "n": 35,
+          "kurtosis": NaN,
+          "mean": 0.0
+        },
+        "FLOW_OPERATOR": {
+          "n": 27,
+          "kurtosis": -1.043,
+          "mean": 0.684
+        },
+        "CORE_CONTROL": {
+          "n": 21,
+          "kurtosis": -1.366,
+          "mean": 0.571
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": -1.052,
+      "n_strata": 7
+    },
+    "y": {
+      "strata": {
+        "UNKNOWN": {
+          "n": 126,
+          "kurtosis": -1.21,
+          "mean": 0.646
+        },
+        "AUXILIARY": {
+          "n": 90,
+          "kurtosis": -0.377,
+          "mean": 0.739
+        },
+        "ENERGY_OPERATOR": {
+          "n": 126,
+          "kurtosis": -1.369,
+          "mean": 0.673
+        },
+        "FREQUENT_OPERATOR": {
+          "n": 74,
+          "kurtosis": -0.925,
+          "mean": 0.736
+        },
+        "CORE_CONTROL": {
+          "n": 17,
+          "kurtosis": -0.666,
+          "mean": 0.713
+        },
+        "FLOW_OPERATOR": {
+          "n": 33,
+          "kurtosis": -0.967,
+          "mean": 0.708
+        },
+        "LINE_START": {
+          "n": 47,
+          "kurtosis": NaN,
+          "mean": 0.0
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": -1.148,
+      "n_strata": 7
+    }
+  },
+  "stratified_by_next_role": {
+    "i": {
+      "strata": {
+        "ENERGY_OPERATOR": {
+          "n": 44,
+          "kurtosis": -1.511,
+          "mean": 0.362
+        },
+        "AUXILIARY": {
+          "n": 17,
+          "kurtosis": -1.504,
+          "mean": 0.428
+        },
+        "UNKNOWN": {
+          "n": 31,
+          "kurtosis": -1.537,
+          "mean": 0.417
+        },
+        "FREQUENT_OPERATOR": {
+          "n": 18,
+          "kurtosis": -1.457,
+          "mean": 0.364
+        }
+      },
+      "mean_within_kurtosis": -1.502,
+      "global_kurtosis": -1.408,
+      "n_strata": 4
+    },
+    "in": {
+      "strata": {
+        "AUXILIARY": {
+          "n": 28,
+          "kurtosis": -1.441,
+          "mean": 0.347
+        },
+        "ENERGY_OPERATOR": {
+          "n": 102,
+          "kurtosis": -1.289,
+          "mean": 0.314
+        },
+        "LINE_END": {
+          "n": 20,
+          "kurtosis": NaN,
+          "mean": 1.0
+        },
+        "FREQUENT_OPERATOR": {
+          "n": 35,
+          "kurtosis": -1.167,
+          "mean": 0.369
+        },
+        "UNKNOWN": {
+          "n": 49,
+          "kurtosis": -1.427,
+          "mean": 0.417
+        },
+        "FLOW_OPERATOR": {
+          "n": 16,
+          "kurtosis": -1.438,
+          "mean": 0.498
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": -1.385,
+      "n_strata": 6
+    },
+    "r": {
+      "strata": {
+        "ENERGY_OPERATOR": {
+          "n": 183,
+          "kurtosis": -1.087,
+          "mean": 0.296
+        },
+        "FREQUENT_OPERATOR": {
+          "n": 125,
+          "kurtosis": -1.455,
+          "mean": 0.443
+        },
+        "UNKNOWN": {
+          "n": 151,
+          "kurtosis": -1.262,
+          "mean": 0.513
+        },
+        "FLOW_OPERATOR": {
+          "n": 52,
+          "kurtosis": -1.248,
+          "mean": 0.509
+        },
+        "LINE_END": {
+          "n": 93,
+          "kurtosis": NaN,
+          "mean": 1.0
+        },
+        "AUXILIARY": {
+          "n": 106,
+          "kurtosis": -1.434,
+          "mean": 0.47
+        },
+        "CORE_CONTROL": {
+          "n": 38,
+          "kurtosis": -1.285,
+          "mean": 0.436
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": -1.418,
+      "n_strata": 7
+    },
+    "ar": {
+      "strata": {
+        "LINE_END": {
+          "n": 51,
+          "kurtosis": NaN,
+          "mean": 1.0
+        },
+        "ENERGY_OPERATOR": {
+          "n": 128,
+          "kurtosis": -1.249,
+          "mean": 0.436
+        },
+        "FREQUENT_OPERATOR": {
+          "n": 137,
+          "kurtosis": -1.318,
+          "mean": 0.504
+        },
+        "UNKNOWN": {
+          "n": 168,
+          "kurtosis": -1.369,
+          "mean": 0.532
+        },
+        "AUXILIARY": {
+          "n": 97,
+          "kurtosis": -0.944,
+          "mean": 0.557
+        },
+        "CORE_CONTROL": {
+          "n": 19,
+          "kurtosis": -1.225,
+          "mean": 0.545
+        },
+        "FLOW_OPERATOR": {
+          "n": 77,
+          "kurtosis": -0.965,
+          "mean": 0.568
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": -1.198,
+      "n_strata": 7
+    },
+    "al": {
+      "strata": {
+        "LINE_END": {
+          "n": 71,
+          "kurtosis": NaN,
+          "mean": 1.0
+        },
+        "UNKNOWN": {
+          "n": 125,
+          "kurtosis": -1.036,
+          "mean": 0.587
+        },
+        "FREQUENT_OPERATOR": {
+          "n": 57,
+          "kurtosis": -0.754,
+          "mean": 0.589
+        },
+        "AUXILIARY": {
+          "n": 98,
+          "kurtosis": -1.18,
+          "mean": 0.536
+        },
+        "ENERGY_OPERATOR": {
+          "n": 128,
+          "kurtosis": -1.051,
+          "mean": 0.463
+        },
+        "FLOW_OPERATOR": {
+          "n": 30,
+          "kurtosis": -0.925,
+          "mean": 0.548
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": -1.063,
+      "n_strata": 6
+    },
+    "l": {
+      "strata": {
+        "LINE_END": {
+          "n": 136,
+          "kurtosis": NaN,
+          "mean": 1.0
+        },
+        "UNKNOWN": {
+          "n": 162,
+          "kurtosis": -1.283,
+          "mean": 0.479
+        },
+        "ENERGY_OPERATOR": {
+          "n": 269,
+          "kurtosis": -1.178,
+          "mean": 0.342
+        },
+        "FREQUENT_OPERATOR": {
+          "n": 88,
+          "kurtosis": -1.029,
+          "mean": 0.495
+        },
+        "AUXILIARY": {
+          "n": 141,
+          "kurtosis": -1.157,
+          "mean": 0.483
+        },
+        "FLOW_OPERATOR": {
+          "n": 36,
+          "kurtosis": -1.106,
+          "mean": 0.542
+        },
+        "CORE_CONTROL": {
+          "n": 23,
+          "kurtosis": -1.207,
+          "mean": 0.457
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": -1.315,
+      "n_strata": 7
+    },
+    "ol": {
+      "strata": {
+        "FREQUENT_OPERATOR": {
+          "n": 82,
+          "kurtosis": -1.022,
+          "mean": 0.478
+        },
+        "AUXILIARY": {
+          "n": 168,
+          "kurtosis": -1.138,
+          "mean": 0.465
+        },
+        "FLOW_OPERATOR": {
+          "n": 32,
+          "kurtosis": -1.28,
+          "mean": 0.499
+        },
+        "UNKNOWN": {
+          "n": 161,
+          "kurtosis": -1.425,
+          "mean": 0.487
+        },
+        "CORE_CONTROL": {
+          "n": 22,
+          "kurtosis": -0.684,
+          "mean": 0.468
+        },
+        "ENERGY_OPERATOR": {
+          "n": 232,
+          "kurtosis": -1.004,
+          "mean": 0.37
+        },
+        "LINE_END": {
+          "n": 65,
+          "kurtosis": NaN,
+          "mean": 1.0
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": -1.175,
+      "n_strata": 7
+    },
+    "o": {
+      "strata": {
+        "ENERGY_OPERATOR": {
+          "n": 111,
+          "kurtosis": -1.246,
+          "mean": 0.409
+        },
+        "AUXILIARY": {
+          "n": 58,
+          "kurtosis": -1.09,
+          "mean": 0.368
+        },
+        "UNKNOWN": {
+          "n": 109,
+          "kurtosis": -1.227,
+          "mean": 0.392
+        },
+        "FLOW_OPERATOR": {
+          "n": 15,
+          "kurtosis": -1.17,
+          "mean": 0.366
+        },
+        "FREQUENT_OPERATOR": {
+          "n": 40,
+          "kurtosis": -1.372,
+          "mean": 0.398
+        },
+        "LINE_END": {
+          "n": 41,
+          "kurtosis": NaN,
+          "mean": 1.0
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": -1.265,
+      "n_strata": 6
+    },
+    "ly": {
+      "strata": {
+        "LINE_END": {
+          "n": 25,
+          "kurtosis": NaN,
+          "mean": 1.0
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": -0.605,
+      "n_strata": 1
+    },
+    "am": {
+      "strata": {
+        "LINE_END": {
+          "n": 134,
+          "kurtosis": NaN,
+          "mean": 1.0
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": 7.069,
+      "n_strata": 1
+    },
+    "m": {
+      "strata": {
+        "LINE_END": {
+          "n": 50,
+          "kurtosis": NaN,
+          "mean": 1.0
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": 2.108,
+      "n_strata": 1
+    },
+    "dy": {
+      "strata": {
+        "FREQUENT_OPERATOR": {
+          "n": 60,
+          "kurtosis": -0.66,
+          "mean": 0.537
+        },
+        "UNKNOWN": {
+          "n": 167,
+          "kurtosis": -1.105,
+          "mean": 0.497
+        },
+        "ENERGY_OPERATOR": {
+          "n": 156,
+          "kurtosis": -0.709,
+          "mean": 0.439
+        },
+        "LINE_END": {
+          "n": 113,
+          "kurtosis": NaN,
+          "mean": 1.0
+        },
+        "AUXILIARY": {
+          "n": 125,
+          "kurtosis": -0.872,
+          "mean": 0.521
+        },
+        "CORE_CONTROL": {
+          "n": 16,
+          "kurtosis": -0.84,
+          "mean": 0.6
+        },
+        "FLOW_OPERATOR": {
+          "n": 38,
+          "kurtosis": -1.275,
+          "mean": 0.545
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": -1.052,
+      "n_strata": 7
+    },
+    "ry": {
+      "strata": {
+        "LINE_END": {
+          "n": 20,
+          "kurtosis": NaN,
+          "mean": 1.0
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": 1.082,
+      "n_strata": 1
+    },
+    "y": {
+      "strata": {
+        "UNKNOWN": {
+          "n": 108,
+          "kurtosis": -1.196,
+          "mean": 0.515
+        },
+        "ENERGY_OPERATOR": {
+          "n": 103,
+          "kurtosis": -1.159,
+          "mean": 0.374
+        },
+        "AUXILIARY": {
+          "n": 87,
+          "kurtosis": -1.037,
+          "mean": 0.516
+        },
+        "LINE_END": {
+          "n": 149,
+          "kurtosis": NaN,
+          "mean": 1.0
+        },
+        "FLOW_OPERATOR": {
+          "n": 16,
+          "kurtosis": -0.91,
+          "mean": 0.589
+        },
+        "FREQUENT_OPERATOR": {
+          "n": 39,
+          "kurtosis": -1.355,
+          "mean": 0.515
+        }
+      },
+      "mean_within_kurtosis": NaN,
+      "global_kurtosis": -1.148,
+      "n_strata": 6
+    }
+  },
+  "stratified_by_line_half": {
+    "ii": {
+      "strata": {
+        "FIRST": {
+          "n": 16,
+          "kurtosis": -1.09,
+          "mean": 0.144
+        }
+      },
+      "mean_within_kurtosis": -1.09,
+      "global_kurtosis": -0.993,
+      "n_strata": 1
+    },
+    "i": {
+      "strata": {
+        "FIRST": {
+          "n": 75,
+          "kurtosis": -0.935,
+          "mean": 0.121
+        },
+        "SECOND": {
+          "n": 62,
+          "kurtosis": -0.977,
+          "mean": 0.752
+        }
+      },
+      "mean_within_kurtosis": -0.956,
+      "global_kurtosis": -1.408,
+      "n_strata": 2
+    },
+    "in": {
+      "strata": {
+        "FIRST": {
+          "n": 149,
+          "kurtosis": -1.115,
+          "mean": 0.137
+        },
+        "SECOND": {
+          "n": 115,
+          "kurtosis": -1.135,
+          "mean": 0.766
+        }
+      },
+      "mean_within_kurtosis": -1.125,
+      "global_kurtosis": -1.385,
+      "n_strata": 2
+    },
+    "r": {
+      "strata": {
+        "FIRST": {
+          "n": 355,
+          "kurtosis": -1.354,
+          "mean": 0.166
+        },
+        "SECOND": {
+          "n": 393,
+          "kurtosis": -1.051,
+          "mean": 0.799
+        }
+      },
+      "mean_within_kurtosis": -1.203,
+      "global_kurtosis": -1.418,
+      "n_strata": 2
+    },
+    "ar": {
+      "strata": {
+        "SECOND": {
+          "n": 407,
+          "kurtosis": -1.014,
+          "mean": 0.767
+        },
+        "FIRST": {
+          "n": 270,
+          "kurtosis": -1.131,
+          "mean": 0.226
+        }
+      },
+      "mean_within_kurtosis": -1.073,
+      "global_kurtosis": -1.198,
+      "n_strata": 2
+    },
+    "al": {
+      "strata": {
+        "SECOND": {
+          "n": 340,
+          "kurtosis": -1.272,
+          "mean": 0.776
+        },
+        "FIRST": {
+          "n": 181,
+          "kurtosis": -1.198,
+          "mean": 0.275
+        }
+      },
+      "mean_within_kurtosis": -1.235,
+      "global_kurtosis": -1.063,
+      "n_strata": 2
+    },
+    "l": {
+      "strata": {
+        "SECOND": {
+          "n": 468,
+          "kurtosis": -1.265,
+          "mean": 0.798
+        },
+        "FIRST": {
+          "n": 387,
+          "kurtosis": -1.455,
+          "mean": 0.191
+        }
+      },
+      "mean_within_kurtosis": -1.36,
+      "global_kurtosis": -1.315,
+      "n_strata": 2
+    },
+    "ol": {
+      "strata": {
+        "SECOND": {
+          "n": 378,
+          "kurtosis": -1.251,
+          "mean": 0.756
+        },
+        "FIRST": {
+          "n": 384,
+          "kurtosis": -1.176,
+          "mean": 0.227
+        }
+      },
+      "mean_within_kurtosis": -1.213,
+      "global_kurtosis": -1.175,
+      "n_strata": 2
+    },
+    "o": {
+      "strata": {
+        "FIRST": {
+          "n": 204,
+          "kurtosis": -1.316,
+          "mean": 0.182
+        },
+        "SECOND": {
+          "n": 184,
+          "kurtosis": -1.285,
+          "mean": 0.766
+        }
+      },
+      "mean_within_kurtosis": -1.3,
+      "global_kurtosis": -1.265,
+      "n_strata": 2
+    },
+    "ly": {
+      "strata": {
+        "SECOND": {
+          "n": 41,
+          "kurtosis": -1.011,
+          "mean": 0.862
+        }
+      },
+      "mean_within_kurtosis": -1.011,
+      "global_kurtosis": -0.605,
+      "n_strata": 1
+    },
+    "am": {
+      "strata": {
+        "SECOND": {
+          "n": 165,
+          "kurtosis": 7.361,
+          "mean": 0.959
+        }
+      },
+      "mean_within_kurtosis": 7.361,
+      "global_kurtosis": 7.069,
+      "n_strata": 1
+    },
+    "m": {
+      "strata": {
+        "SECOND": {
+          "n": 67,
+          "kurtosis": 2.445,
+          "mean": 0.934
+        }
+      },
+      "mean_within_kurtosis": 2.445,
+      "global_kurtosis": 2.108,
+      "n_strata": 1
+    },
+    "dy": {
+      "strata": {
+        "SECOND": {
+          "n": 422,
+          "kurtosis": -1.377,
+          "mean": 0.779
+        },
+        "FIRST": {
+          "n": 253,
+          "kurtosis": -1.142,
+          "mean": 0.25
+        }
+      },
+      "mean_within_kurtosis": -1.26,
+      "global_kurtosis": -1.052,
+      "n_strata": 2
+    },
+    "ry": {
+      "strata": {
+        "SECOND": {
+          "n": 28,
+          "kurtosis": 0.186,
+          "mean": 0.927
+        }
+      },
+      "mean_within_kurtosis": 0.186,
+      "global_kurtosis": 1.082,
+      "n_strata": 1
+    },
+    "y": {
+      "strata": {
+        "FIRST": {
+          "n": 175,
+          "kurtosis": -1.414,
+          "mean": 0.202
+        },
+        "SECOND": {
+          "n": 338,
+          "kurtosis": -0.933,
+          "mean": 0.85
+        }
+      },
+      "mean_within_kurtosis": -1.173,
+      "global_kurtosis": -1.148,
+      "n_strata": 2
+    }
+  },
+  "bimodal_middles_tested": 12,
+  "context_explains_count": 0,
+  "intrinsic_count": 12,
+  "verdict": "INTRINSIC",
+  "explanation": "12/12 bimodal MIDDLEs persist after context stratification; only 0 resolved by context"
+}

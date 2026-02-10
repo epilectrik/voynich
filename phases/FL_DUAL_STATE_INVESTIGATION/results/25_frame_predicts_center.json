@@ -1,0 +1,13 @@
+{
+  "n_lines": 582,
+  "frame_prefix_cramers_v": 0.179,
+  "frame_role_cramers_v": 0.161,
+  "mi_frame_center": 0.984,
+  "nmi": 0.3047,
+  "mi_perm_mean": 1.0435,
+  "mi_z_score": -1.0,
+  "mi_perm_p": 1.0,
+  "mean_entropy_reduction": 39.6,
+  "verdict": "WEAK_FRAME_EFFECT",
+  "explanation": "Some frame->center association but not strong enough to confirm constraint"
+}

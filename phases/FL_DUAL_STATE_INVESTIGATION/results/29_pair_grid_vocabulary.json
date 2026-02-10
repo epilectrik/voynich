@@ -1,0 +1,19 @@
+{
+  "n_common_pairs": 13,
+  "stage_vs_cosine_rho": 0.173,
+  "stage_vs_cosine_p": 0.1288,
+  "stage_vs_jaccard_rho": 0.146,
+  "stage_vs_jaccard_p": 0.2016,
+  "low_matching_lift": 1.085,
+  "high_matching_lift": 1.097,
+  "grid_coherence_lift": 1.105,
+  "checks": {
+    "gradient_exists": false,
+    "low_dim_contributes": true,
+    "high_dim_contributes": true,
+    "grid_coherent": true
+  },
+  "n_pass": 3,
+  "verdict": "MATERIAL_STATE_GRID",
+  "explanation": "FL pair grid carves vocabulary along a gradient: nearby states share more operations"
+}

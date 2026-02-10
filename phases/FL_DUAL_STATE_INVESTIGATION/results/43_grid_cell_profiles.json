@@ -1,0 +1,16 @@
+{
+  "n_lines": 1176,
+  "n_cells": 36,
+  "attractor_profile": {
+    "qo_rate": 22.6,
+    "sh_rate": 13.5,
+    "ch_rate": 19.1,
+    "ok_rate": 5.6
+  },
+  "periphery_profile": {
+    "qo_rate": 20.6,
+    "sh_rate": 11.2,
+    "ch_rate": 18.7,
+    "ok_rate": 6.7
+  }
+}

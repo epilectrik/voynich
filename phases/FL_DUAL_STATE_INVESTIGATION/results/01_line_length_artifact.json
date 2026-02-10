@@ -1,0 +1,262 @@
+{
+  "total_fl_tokens": 5895,
+  "length_bin_kurtosis": {
+    "short": {
+      "i": {
+        "n": 18,
+        "mean": 0.181,
+        "std": 0.31,
+        "kurtosis": 0.494
+      },
+      "in": {
+        "n": 22,
+        "mean": 0.192,
+        "std": 0.286,
+        "kurtosis": -0.543
+      },
+      "r": {
+        "n": 51,
+        "mean": 0.383,
+        "std": 0.384,
+        "kurtosis": -1.395
+      },
+      "ar": {
+        "n": 39,
+        "mean": 0.486,
+        "std": 0.329,
+        "kurtosis": -0.981
+      },
+      "al": {
+        "n": 19,
+        "mean": 0.699,
+        "std": 0.318,
+        "kurtosis": -0.872
+      },
+      "l": {
+        "n": 51,
+        "mean": 0.533,
+        "std": 0.391,
+        "kurtosis": -1.463
+      },
+      "ol": {
+        "n": 59,
+        "mean": 0.507,
+        "std": 0.324,
+        "kurtosis": -1.213
+      },
+      "o": {
+        "n": 23,
+        "mean": 0.48,
+        "std": 0.35,
+        "kurtosis": -1.232
+      },
+      "dy": {
+        "n": 45,
+        "mean": 0.627,
+        "std": 0.328,
+        "kurtosis": -0.963
+      },
+      "y": {
+        "n": 28,
+        "mean": 0.56,
+        "std": 0.393,
+        "kurtosis": -1.434
+      }
+    },
+    "medium": {
+      "ii": {
+        "n": 15,
+        "mean": 0.392,
+        "std": 0.34,
+        "kurtosis": -1.304
+      },
+      "i": {
+        "n": 96,
+        "mean": 0.448,
+        "std": 0.342,
+        "kurtosis": -1.408
+      },
+      "in": {
+        "n": 203,
+        "mean": 0.441,
+        "std": 0.352,
+        "kurtosis": -1.406
+      },
+      "r": {
+        "n": 582,
+        "mean": 0.501,
+        "std": 0.353,
+        "kurtosis": -1.39
+      },
+      "ar": {
+        "n": 521,
+        "mean": 0.559,
+        "std": 0.307,
+        "kurtosis": -1.226
+      },
+      "al": {
+        "n": 413,
+        "mean": 0.596,
+        "std": 0.285,
+        "kurtosis": -1.108
+      },
+      "l": {
+        "n": 663,
+        "mean": 0.521,
+        "std": 0.35,
+        "kurtosis": -1.332
+      },
+      "ol": {
+        "n": 585,
+        "mean": 0.48,
+        "std": 0.305,
+        "kurtosis": -1.139
+      },
+      "o": {
+        "n": 310,
+        "mean": 0.453,
+        "std": 0.331,
+        "kurtosis": -1.229
+      },
+      "ly": {
+        "n": 40,
+        "mean": 0.762,
+        "std": 0.295,
+        "kurtosis": -0.587
+      },
+      "am": {
+        "n": 141,
+        "mean": 0.928,
+        "std": 0.171,
+        "kurtosis": 7.685
+      },
+      "m": {
+        "n": 58,
+        "mean": 0.847,
+        "std": 0.268,
+        "kurtosis": 2.303
+      },
+      "dy": {
+        "n": 538,
+        "mean": 0.583,
+        "std": 0.303,
+        "kurtosis": -1.04
+      },
+      "ry": {
+        "n": 29,
+        "mean": 0.824,
+        "std": 0.31,
+        "kurtosis": 1.643
+      },
+      "y": {
+        "n": 404,
+        "mean": 0.643,
+        "std": 0.344,
+        "kurtosis": -1.075
+      }
+    },
+    "long": {
+      "i": {
+        "n": 23,
+        "mean": 0.41,
+        "std": 0.341,
+        "kurtosis": -1.315
+      },
+      "in": {
+        "n": 39,
+        "mean": 0.377,
+        "std": 0.329,
+        "kurtosis": -1.161
+      },
+      "r": {
+        "n": 115,
+        "mean": 0.537,
+        "std": 0.345,
+        "kurtosis": -1.397
+      },
+      "ar": {
+        "n": 117,
+        "mean": 0.539,
+        "std": 0.274,
+        "kurtosis": -1.192
+      },
+      "al": {
+        "n": 89,
+        "mean": 0.606,
+        "std": 0.267,
+        "kurtosis": -0.804
+      },
+      "l": {
+        "n": 141,
+        "mean": 0.533,
+        "std": 0.309,
+        "kurtosis": -1.231
+      },
+      "ol": {
+        "n": 118,
+        "mean": 0.528,
+        "std": 0.306,
+        "kurtosis": -1.256
+      },
+      "o": {
+        "n": 55,
+        "mean": 0.484,
+        "std": 0.337,
+        "kurtosis": -1.41
+      },
+      "am": {
+        "n": 24,
+        "mean": 0.881,
+        "std": 0.246,
+        "kurtosis": 2.39
+      },
+      "m": {
+        "n": 11,
+        "mean": 0.796,
+        "std": 0.291,
+        "kurtosis": -0.714
+      },
+      "dy": {
+        "n": 92,
+        "mean": 0.548,
+        "std": 0.307,
+        "kurtosis": -1.136
+      },
+      "y": {
+        "n": 81,
+        "mean": 0.583,
+        "std": 0.342,
+        "kurtosis": -1.311
+      }
+    }
+  },
+  "length_bin_concordance": {
+    "short": {
+      "multi_fl_lines": 106,
+      "concordant": 109,
+      "discordant": 67,
+      "tied": 18,
+      "concordance_rate": 0.6193
+    },
+    "medium": {
+      "multi_fl_lines": 1296,
+      "concordant": 2821,
+      "discordant": 2182,
+      "tied": 799,
+      "concordance_rate": 0.5639
+    },
+    "long": {
+      "multi_fl_lines": 191,
+      "concordant": 1058,
+      "discordant": 864,
+      "tied": 303,
+      "concordance_rate": 0.5505
+    }
+  },
+  "long_line_bimodal_count": 11,
+  "long_line_total_middles": 12,
+  "long_line_concordance": 0.5505,
+  "all_bins_bimodal": true,
+  "verdict": "REAL",
+  "explanation": "Bimodality persists in all bins including long lines (11/12 bimodal, concordance 0.550)"
+}
