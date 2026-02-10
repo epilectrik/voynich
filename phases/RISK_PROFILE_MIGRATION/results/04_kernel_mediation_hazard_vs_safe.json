@@ -1,0 +1,99 @@
+{
+  "test": "04_kernel_mediation_hazard_vs_safe",
+  "phase": "RISK_PROFILE_MIGRATION",
+  "verdict": "PARTIAL",
+  "verdict_detail": "Kernel shift present in safe pool ONLY, absent from hazard pool. Hazard: h_sig=False, e_sig=False. Safe: h_sig=True, e_sig=False.",
+  "counts": {
+    "total_paragraphs": 573,
+    "big_paragraphs": 187,
+    "total_body_lines": 1261,
+    "hazard_lines": 606,
+    "safe_lines": 1221,
+    "excluded_hazard_lines": 655,
+    "excluded_safe_lines": 40
+  },
+  "bonferroni_alpha": 0.0025,
+  "hazard_h_frac": {
+    "n_lines": 606,
+    "insufficient": false,
+    "partial_rho": 0.048361,
+    "partial_p": 0.23454,
+    "shuffle_p": 0.122,
+    "significant": false,
+    "quintile_means": {
+      "Q0": 0.500644,
+      "Q1": 0.430291,
+      "Q2": 0.492805,
+      "Q3": 0.488462,
+      "Q4": 0.545946
+    }
+  },
+  "hazard_e_frac": {
+    "n_lines": 606,
+    "insufficient": false,
+    "partial_rho": -0.048361,
+    "partial_p": 0.23454,
+    "shuffle_p": 0.129,
+    "significant": false,
+    "quintile_means": {
+      "Q0": 0.499356,
+      "Q1": 0.569709,
+      "Q2": 0.507195,
+      "Q3": 0.511538,
+      "Q4": 0.454054
+    }
+  },
+  "safe_h_frac": {
+    "n_lines": 1221,
+    "insufficient": false,
+    "partial_rho": 0.089781,
+    "partial_p": 0.001687,
+    "shuffle_p": 0.0,
+    "significant": true,
+    "quintile_means": {
+      "Q0": 0.194574,
+      "Q1": 0.216224,
+      "Q2": 0.201414,
+      "Q3": 0.218375,
+      "Q4": 0.237355
+    }
+  },
+  "safe_e_frac": {
+    "n_lines": 1221,
+    "insufficient": false,
+    "partial_rho": -0.052672,
+    "partial_p": 0.065781,
+    "shuffle_p": 0.033,
+    "significant": false,
+    "quintile_means": {
+      "Q0": 0.624674,
+      "Q1": 0.63037,
+      "Q2": 0.642344,
+      "Q3": 0.609848,
+      "Q4": 0.595593
+    }
+  },
+  "significance_summary": {
+    "hazard_h_sig": false,
+    "hazard_e_sig": false,
+    "safe_h_sig": true,
+    "safe_e_sig": false,
+    "hazard_any": false,
+    "safe_any": true
+  },
+  "parameters": {
+    "min_paragraph_lines": 5,
+    "min_kernel_tokens_per_pool": 2,
+    "hazard_classes": [
+      7,
+      8,
+      9,
+      23,
+      30,
+      31
+    ],
+    "n_shuffles": 1000,
+    "random_seed": 42,
+    "bonferroni_alpha": 0.0025
+  }
+}

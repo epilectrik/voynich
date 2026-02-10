@@ -1,0 +1,71 @@
+{
+  "test": "01_total_hazard_rate_flatness",
+  "phase": "RISK_PROFILE_MIGRATION",
+  "verdict": "PASS",
+  "verdict_detail": "Hazard rate flatness confirmed: |partial rho|=0.0066 (< 0.05) and shuffle p=0.8022 (> 0.10). Hazard-involved token fraction does not vary systematically with paragraph body position. Confirms C458 design clamp at paragraph level.",
+  "counts": {
+    "total_paragraphs": 537,
+    "big_paragraphs": 174,
+    "body_lines": 1322,
+    "unique_paragraphs_analyzed": 174,
+    "tokens_in_class_map": 480,
+    "mean_hazard_fraction": 0.228347,
+    "mean_hazard_count_per_line": 1.6725
+  },
+  "raw_spearman": {
+    "rho": -0.028513,
+    "analytic_p": 0.30022990406560773,
+    "shuffle_p": 0.265734
+  },
+  "partial_spearman": {
+    "rho": 0.006592,
+    "analytic_p": 0.8107492781714987,
+    "shuffle_p": 0.802198
+  },
+  "quintile_means": {
+    "Q0": 0.242002,
+    "Q1": 0.209553,
+    "Q2": 0.24679,
+    "Q3": 0.220595,
+    "Q4": 0.224438
+  },
+  "quintile_rho": -0.1,
+  "quintile_hazcount_means": {
+    "Q0": 1.9119,
+    "Q1": 1.5703,
+    "Q2": 1.875,
+    "Q3": 1.6627,
+    "Q4": 1.4081
+  },
+  "shuffle_distribution": {
+    "raw": {
+      "mean": -6.6e-05,
+      "std": 0.026513,
+      "observed_rho": -0.028513
+    },
+    "partial": {
+      "mean": 0.000335,
+      "std": 0.026631,
+      "observed_rho": 0.006592
+    }
+  },
+  "line_length_confound": {
+    "rho_with_hazard_fraction": 0.204546,
+    "p": 5.928154222662953e-14
+  },
+  "hazard_classes": [
+    7,
+    8,
+    9,
+    23,
+    30,
+    31
+  ],
+  "parameters": {
+    "min_paragraph_lines": 5,
+    "n_shuffles": 1000,
+    "random_seed": 42,
+    "pass_threshold_partial_rho": 0.05,
+    "pass_threshold_shuffle_p": 0.1
+  }
+}
