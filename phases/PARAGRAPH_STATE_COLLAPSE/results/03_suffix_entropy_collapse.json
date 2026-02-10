@@ -1,0 +1,38 @@
+{
+  "test": "03_suffix_entropy_collapse",
+  "phase": "PARAGRAPH_STATE_COLLAPSE",
+  "verdict": "FAIL",
+  "counts": {
+    "total_paragraphs": 537,
+    "big_paragraphs": 174,
+    "body_lines": 1324
+  },
+  "suffix_entropy": {
+    "raw_rho": -0.047369,
+    "partial_rho": -0.011127,
+    "shuffle_p_raw": 0.075924,
+    "shuffle_p_partial": 0.685315,
+    "quintile_means": {
+      "Q0": 1.6743,
+      "Q1": 1.7126,
+      "Q2": 1.6611,
+      "Q3": 1.6943,
+      "Q4": 1.614
+    }
+  },
+  "n_distinct_suffixes": {
+    "raw_rho": -0.10722,
+    "partial_rho": -0.000431,
+    "shuffle_p_raw": 0.000999,
+    "shuffle_p_partial": 0.99001,
+    "quintile_means": {
+      "Q0": 4.4814,
+      "Q1": 4.488,
+      "Q2": 4.3462,
+      "Q3": 4.464,
+      "Q4": 4.0779
+    }
+  },
+  "bonferroni_alpha": 0.005,
+  "significant_metrics": []
+}

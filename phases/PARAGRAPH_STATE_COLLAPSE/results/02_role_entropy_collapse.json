@@ -1,0 +1,42 @@
+{
+  "test": "02_role_entropy_collapse",
+  "phase": "PARAGRAPH_STATE_COLLAPSE",
+  "verdict": "FAIL",
+  "counts": {
+    "total_paragraphs": 573,
+    "big_paragraphs": 187,
+    "body_lines": 1261
+  },
+  "role_entropy": {
+    "raw_rho": -0.155974,
+    "raw_p": 0.0,
+    "partial_rho": 0.009064,
+    "partial_p": 0.747794,
+    "shuffle_p_raw": 0.0,
+    "shuffle_p_partial": 0.611,
+    "quintile_means": {
+      "Q0": 1.813413,
+      "Q1": 1.797898,
+      "Q2": 1.743184,
+      "Q3": 1.768952,
+      "Q4": 1.62397
+    }
+  },
+  "n_distinct_roles": {
+    "raw_rho": -0.182821,
+    "raw_p": 0.0,
+    "partial_rho": 0.024187,
+    "partial_p": 0.390802,
+    "shuffle_p_raw": 0.0,
+    "shuffle_p_partial": 0.783,
+    "quintile_means": {
+      "Q0": 4.196429,
+      "Q1": 4.094262,
+      "Q2": 3.994652,
+      "Q3": 4.07377,
+      "Q4": 3.643791
+    }
+  },
+  "bonferroni_alpha": 0.005,
+  "significant_metrics": []
+}

@@ -1,0 +1,100 @@
+{
+  "test": "05_ax_terminal_scaffold",
+  "phase": "PARAGRAPH_STATE_COLLAPSE",
+  "verdict": "FAIL",
+  "counts": {
+    "total_paragraphs": 573,
+    "big_paragraphs": 187,
+    "body_lines": 1261
+  },
+  "ax_fraction": {
+    "raw_rho": 0.013801,
+    "raw_p": 0.624404,
+    "partial_rho": 0.042228,
+    "partial_p": 0.133946,
+    "shuffle_p_raw": 0.335,
+    "shuffle_p_partial": 0.073,
+    "quintile_means": {
+      "Q0": 0.187826,
+      "Q1": 0.184139,
+      "Q2": 0.187398,
+      "Q3": 0.186484,
+      "Q4": 0.200317
+    }
+  },
+  "ax_init_fraction": {
+    "raw_rho": -0.004336,
+    "raw_p": 0.877748,
+    "partial_rho": 0.026891,
+    "partial_p": 0.340009,
+    "shuffle_p_raw": 0.574,
+    "shuffle_p_partial": 0.225,
+    "quintile_means": {
+      "Q0": 0.052933,
+      "Q1": 0.052959,
+      "Q2": 0.047361,
+      "Q3": 0.046755,
+      "Q4": 0.063475
+    }
+  },
+  "ax_medial_fraction": {
+    "raw_rho": -0.045845,
+    "raw_p": 0.103692,
+    "partial_rho": 0.00224,
+    "partial_p": 0.936659,
+    "shuffle_p_raw": 0.936,
+    "shuffle_p_partial": 0.454,
+    "quintile_means": {
+      "Q0": 0.128236,
+      "Q1": 0.125082,
+      "Q2": 0.126119,
+      "Q3": 0.124593,
+      "Q4": 0.121817
+    }
+  },
+  "ax_final_fraction": {
+    "raw_rho": -0.045368,
+    "raw_p": 0.107341,
+    "partial_rho": 0.021762,
+    "partial_p": 0.440051,
+    "shuffle_p_raw": 0.953,
+    "shuffle_p_partial": 0.316,
+    "quintile_means": {
+      "Q0": 0.028118,
+      "Q1": 0.028047,
+      "Q2": 0.025218,
+      "Q3": 0.034405,
+      "Q4": 0.023959
+    }
+  },
+  "bonferroni_alpha": 0.0025,
+  "significant_metrics": [],
+  "subgroup_classes": {
+    "INIT": [
+      4,
+      5,
+      6,
+      24,
+      26
+    ],
+    "FINAL": [
+      15,
+      19,
+      20,
+      21,
+      22,
+      25
+    ],
+    "MEDIAL": [
+      1,
+      2,
+      3,
+      14,
+      16,
+      18,
+      27,
+      28,
+      29
+    ]
+  }
+}

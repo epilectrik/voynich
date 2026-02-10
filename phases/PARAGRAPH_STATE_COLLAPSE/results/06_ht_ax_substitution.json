@@ -1,0 +1,49 @@
+{
+  "test": "06_ht_ax_substitution",
+  "phase": "PARAGRAPH_STATE_COLLAPSE",
+  "verdict": "FAIL",
+  "counts": {
+    "total_paragraphs": 573,
+    "big_paragraphs": 187,
+    "body_lines": 1261
+  },
+  "ht_rate": {
+    "raw_rho": -0.017732,
+    "raw_p": 0.529275,
+    "partial_rho": -0.005624,
+    "partial_p": 0.841856,
+    "shuffle_p_raw": 0.258,
+    "shuffle_p_partial": 0.441,
+    "quintile_means": {
+      "Q0": 0.044489,
+      "Q1": 0.036411,
+      "Q2": 0.042421,
+      "Q3": 0.054797,
+      "Q4": 0.047818
+    }
+  },
+  "ax_rate": {
+    "raw_rho": 0.013801,
+    "raw_p": 0.624404,
+    "partial_rho": 0.042228,
+    "partial_p": 0.133946,
+    "shuffle_p_raw": 0.353,
+    "shuffle_p_partial": 0.074,
+    "quintile_means": {
+      "Q0": 0.187826,
+      "Q1": 0.184139,
+      "Q2": 0.187398,
+      "Q3": 0.186484,
+      "Q4": 0.200317
+    }
+  },
+  "ht_ax_cross_correlation": {
+    "rho": -0.100108,
+    "p": 0.00037,
+    "shuffle_p": 0.0
+  },
+  "bonferroni_alpha": 0.005,
+  "significant_metrics": [
+    "ht_ax_cross_correlation"
+  ]
+}

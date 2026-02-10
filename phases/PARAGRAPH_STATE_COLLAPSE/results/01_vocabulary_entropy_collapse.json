@@ -1,0 +1,60 @@
+{
+  "test": "01_vocabulary_entropy_collapse",
+  "phase": "PARAGRAPH_STATE_COLLAPSE",
+  "verdict": "FAIL",
+  "verdict_detail": "No entropy collapse detected: partial shuffle p=0.4486 (>= 0.01) and |quintile_rho|=0.7000 (<= 0.80). MIDDLE vocabulary diversity does not systematically change through paragraph body.",
+  "counts": {
+    "total_paragraphs": 537,
+    "big_paragraphs": 174,
+    "body_lines": 1324,
+    "unique_paragraphs_analyzed": 174
+  },
+  "raw_spearman": {
+    "rho": -0.181117,
+    "analytic_p": 3.1575820456191445e-11,
+    "shuffle_p": 0.000999
+  },
+  "partial_spearman": {
+    "rho": -0.019775,
+    "analytic_p": 0.472181082649504,
+    "shuffle_p": 0.448551
+  },
+  "quintile_means": {
+    "Q0": 2.883296,
+    "Q1": 2.818929,
+    "Q2": 2.804435,
+    "Q3": 2.847708,
+    "Q4": 2.637809
+  },
+  "quintile_rho": -0.7,
+  "quintile_n_unique_means": {
+    "Q0": 8.139,
+    "Q1": 7.816,
+    "Q2": 7.7837,
+    "Q3": 7.932,
+    "Q4": 6.9159
+  },
+  "shuffle_distribution": {
+    "raw": {
+      "mean": 0.000301,
+      "std": 0.024394,
+      "observed_rho": -0.181117
+    },
+    "partial": {
+      "mean": -0.000736,
+      "std": 0.026398,
+      "observed_rho": -0.019775
+    }
+  },
+  "line_length_confound": {
+    "rho_with_entropy": 0.745486,
+    "p": 3.55002783008256e-235
+  },
+  "parameters": {
+    "min_paragraph_lines": 5,
+    "n_shuffles": 1000,
+    "random_seed": 42,
+    "pass_threshold_shuffle_p": 0.01,
+    "pass_threshold_quintile_rho": 0.8
+  }
+}

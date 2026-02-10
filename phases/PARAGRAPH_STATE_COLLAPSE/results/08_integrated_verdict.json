@@ -1,0 +1,67 @@
+{
+  "test": "08_integrated_verdict",
+  "phase": "PARAGRAPH_STATE_COLLAPSE",
+  "phase_verdict": "NO_COLLAPSE",
+  "total_score": 0.0,
+  "max_score": 7.0,
+  "test_scores": {
+    "Vocabulary Entropy": {
+      "verdict": "FAIL",
+      "score": 0.0
+    },
+    "Role Entropy": {
+      "verdict": "FAIL",
+      "score": 0.0
+    },
+    "Suffix Entropy": {
+      "verdict": "FAIL",
+      "score": 0.0
+    },
+    "Effective Instruction Set": {
+      "verdict": "FAIL",
+      "score": 0.0
+    },
+    "AX Terminal Scaffold": {
+      "verdict": "FAIL",
+      "score": 0.0
+    },
+    "HT-AX Substitution": {
+      "verdict": "FAIL",
+      "score": 0.0
+    },
+    "Kernel Diversity": {
+      "verdict": "FAIL",
+      "score": 0.0
+    }
+  },
+  "notable_findings": [
+    {
+      "source": "T07",
+      "finding": "Kernel composition shift",
+      "detail": "h-fraction rises (partial rho=+0.1005, p=0.0004), e-fraction drops (partial rho=-0.0863, p=0.0022). Survives length control. Not a diversity collapse but a composition shift."
+    },
+    {
+      "source": "T06",
+      "finding": "HT-AX negative cross-correlation",
+      "detail": "rho=-0.1001, p=0.000370. Lines with more HT have less AX and vice versa. Not a positional trend but a per-line trade-off."
+    },
+    {
+      "source": "T01",
+      "finding": "Line length dominates entropy",
+      "detail": "Line length correlates with MIDDLE entropy at rho=+0.7455. All raw entropy/diversity declines are driven by C677 (line shortening), not by independent collapse."
+    }
+  ],
+  "interpretation": "Paragraph body lines show NO measurable state collapse beyond line shortening (C677). C963 (body homogeneity) is comprehensively confirmed: role fractions, entropy, distinct counts, suffix diversity, AX subgroup distribution, HT rates, and kernel diversity are ALL flat after controlling for line length. The 'quiet and rigid' appearance of late paragraphs is entirely explained by C677 (fewer tokens per line) \u2014 the effective instruction set does not shrink. One genuine signal survived: kernel composition shifts from e-dominant to h-dominant across paragraph bodies (T07), but this is a composition change, not a diversity collapse.",
+  "constraint_candidates": [
+    {
+      "id": "C965",
+      "statement": "B paragraph body kernel composition shifts: h-kernel fraction increases and e-kernel fraction decreases through body lines, controlling for line length. This is a composition shift, not a diversity collapse.",
+      "tier": 2
+    },
+    {
+      "id": "C963_EXTENDED",
+      "statement": "C963 body homogeneity extends to all diversity metrics: Shannon entropy (vocabulary, role, suffix, kernel), distinct counts (roles, classes, MIDDLEs, suffixes), and rate-normalized versions. All are flat after line-length control. 7/7 tests FAIL the collapse hypothesis.",
+      "tier": 2
+    }
+  ]
+}
