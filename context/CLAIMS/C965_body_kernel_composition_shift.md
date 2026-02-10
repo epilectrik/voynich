@@ -28,9 +28,9 @@ B paragraph body lines exhibit a kernel composition shift: h-kernel fraction (ch
 
 Late body lines favor h-kernel tokens (ch/sh prefix) over e-kernel tokens, while k-kernel remains stable. This is the only genuine positional signal within paragraph bodies that survives the C677 line-length confound, apart from C932's vocabulary rarity shift.
 
-This is compatible with the "job card" model (C932): early lines specify parameters using more e-kernel vocabulary (which tends toward specification), while late lines shift toward h-kernel vocabulary (which tends toward execution/monitoring). The transition is gradual and partial — both kernels remain present throughout.
-
 This is NOT a diversity collapse: the number of distinct kernels per line is flat, and kernel entropy is flat. The system does not lose options; it changes which kernel it favors.
+
+**Risk profile migration (RISK_PROFILE_MIGRATION phase):** The kernel composition shift operates exclusively in non-hazard tokens (safe pool: h_fraction partial rho = +0.090, p=0.002; hazard pool: rho = +0.048, p=0.23). Hazard sub-group mix is completely flat through body lines (T02, T03, T05 all FAIL). The controller does not reduce what it can do — it changes what kinds of mistakes are still possible. Late body lines shift toward monitoring vocabulary (h-kernel, ch/sh prefix) within the safe operational space, while the hazard management strategy remains invariant. AX scaffold tokens increase proportionally in late lines not because extra scaffolding is added, but because fewer active interventions remain — the scaffold fraction rises as the intervention fraction falls (C568: AX is structurally obligatory, not optional).
 
 ## Relationship to Existing Constraints
 
@@ -45,7 +45,9 @@ This is NOT a diversity collapse: the number of distinct kernels per line is fla
 
 - `phases/PARAGRAPH_STATE_COLLAPSE/scripts/07_kernel_diversity_collapse.py`
 - `phases/PARAGRAPH_STATE_COLLAPSE/results/07_kernel_diversity_collapse.json`
-- Related: C677, C842, C932, C963
+- `phases/RISK_PROFILE_MIGRATION/scripts/04_kernel_mediation_hazard_vs_safe.py` (safe-only localization)
+- `phases/RISK_PROFILE_MIGRATION/results/07_integrated_verdict.json` (phase verdict: WEAK)
+- Related: C677, C842, C932, C963, C458, C568
 
 ## Status
 

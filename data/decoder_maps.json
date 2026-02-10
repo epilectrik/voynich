@@ -272,23 +272,27 @@
         },
         "da": {
           "value": "AX_SCAFFOLD",
-          "constraint": "C371-374",
-          "tier": 2
+          "constraint": "C371-374, C568",
+          "tier": 2,
+          "note": "Obligatory scaffold (C568): structurally mandatory, not optional. AX proportion rises in late body lines as active interventions decrease."
         },
         "sa": {
           "value": "AX_SCAFFOLD",
-          "constraint": "C371-374",
-          "tier": 2
+          "constraint": "C371-374, C568",
+          "tier": 2,
+          "note": "Obligatory scaffold (C568): structurally mandatory, not optional. AX proportion rises in late body lines as active interventions decrease."
         },
         "ka": {
           "value": "AX_SCAFFOLD",
-          "constraint": "C371-374",
-          "tier": 2
+          "constraint": "C371-374, C568",
+          "tier": 2,
+          "note": "Obligatory scaffold (C568): structurally mandatory, not optional. AX proportion rises in late body lines as active interventions decrease."
         },
         "ta": {
           "value": "AX_SCAFFOLD",
-          "constraint": "C371-374",
-          "tier": 2
+          "constraint": "C371-374, C568",
+          "tier": 2,
+          "note": "Obligatory scaffold (C568): structurally mandatory, not optional. AX proportion rises in late body lines as active interventions decrease."
         },
         "al": {
           "value": "AX_LATE",
