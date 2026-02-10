@@ -1,0 +1,132 @@
+{
+  "test": "06_risk_kernel_cross_correlation",
+  "phase": "RISK_PROFILE_MIGRATION",
+  "verdict": "PASS",
+  "verdict_detail": "Both cross-correlations significant after double-partial control. CC1 (en_chsh vs h_frac): rho=+0.4766, shuffle_p=0.0010. CC2 (fl_haz vs e_frac): rho=+0.2369, shuffle_p=0.0010. Hazard sub-group composition and kernel composition co-vary across body lines, controlling for both line length and position.",
+  "counts": {
+    "total_paragraphs": 537,
+    "big_paragraphs": 174,
+    "body_lines_with_hazard": 1034,
+    "tokens_in_class_map": 480,
+    "mean_hazard_tokens_per_line": 2.1383,
+    "mean_en_chsh_share": 0.521247,
+    "mean_fl_haz_share": 0.229574,
+    "mean_h_fraction": 0.300933,
+    "mean_e_fraction": 0.580842
+  },
+  "cross_correlation_1": {
+    "description": "en_chsh_share vs h_fraction",
+    "raw_spearman": {
+      "rho": 0.489404,
+      "p": 2.219549898793565e-63
+    },
+    "single_partial_spearman": {
+      "rho": 0.475744,
+      "p": 1.6229239228460106e-59,
+      "controlled_for": "line_length"
+    },
+    "double_partial_spearman": {
+      "rho": 0.476629,
+      "p": 9.230306489240865e-60,
+      "controlled_for": [
+        "line_length",
+        "body_position"
+      ]
+    },
+    "shuffle_p": 0.000999,
+    "shuffle_null": {
+      "mean": -3.4e-05,
+      "std": 0.030721
+    },
+    "significant": true
+  },
+  "cross_correlation_2": {
+    "description": "fl_haz_share vs e_fraction",
+    "raw_spearman": {
+      "rho": 0.239896,
+      "p": 5.316251748596867e-15
+    },
+    "single_partial_spearman": {
+      "rho": 0.237596,
+      "p": 9.786645685231665e-15,
+      "controlled_for": "line_length"
+    },
+    "double_partial_spearman": {
+      "rho": 0.2369,
+      "p": 1.1757290586688258e-14,
+      "controlled_for": [
+        "line_length",
+        "body_position"
+      ]
+    },
+    "shuffle_p": 0.000999,
+    "shuffle_null": {
+      "mean": -0.003866,
+      "std": 0.030531
+    },
+    "significant": true
+  },
+  "quintile_analysis": {
+    "en_chsh_vs_h_frac": {
+      "en_chsh_means": {
+        "Q0": 0.518315,
+        "Q1": 0.502228,
+        "Q2": 0.559538,
+        "Q3": 0.493886,
+        "Q4": 0.535273
+      },
+      "h_frac_means": {
+        "Q0": 0.290702,
+        "Q1": 0.295391,
+        "Q2": 0.292255,
+        "Q3": 0.300966,
+        "Q4": 0.322585
+      },
+      "quintile_rho": -0.2,
+      "quintile_p": 0.74706
+    },
+    "fl_haz_vs_e_frac": {
+      "fl_haz_means": {
+        "Q0": 0.243527,
+        "Q1": 0.233957,
+        "Q2": 0.188631,
+        "Q3": 0.243384,
+        "Q4": 0.229167
+      },
+      "e_frac_means": {
+        "Q0": 0.587862,
+        "Q1": 0.588269,
+        "Q2": 0.594903,
+        "Q3": 0.576146,
+        "Q4": 0.561169
+      },
+      "quintile_rho": -0.3,
+      "quintile_p": 0.623838
+    }
+  },
+  "hazard_subgroups": {
+    "FL_HAZ": [
+      7,
+      30
+    ],
+    "EN_CHSH": [
+      8,
+      31
+    ],
+    "ALL_HAZARD": [
+      7,
+      8,
+      9,
+      23,
+      30,
+      31
+    ]
+  },
+  "parameters": {
+    "min_paragraph_lines": 5,
+    "n_shuffles": 1000,
+    "random_seed": 42,
+    "bonferroni_alpha": 0.005,
+    "shuffle_type": "pool hazard class labels across lines, permute, redistribute"
+  }
+}

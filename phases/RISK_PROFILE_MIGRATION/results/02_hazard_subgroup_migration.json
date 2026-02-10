@@ -1,0 +1,167 @@
+{
+  "test": "02_hazard_subgroup_migration",
+  "phase": "RISK_PROFILE_MIGRATION",
+  "verdict": "FAIL",
+  "verdict_detail": "No hazard sub-group fraction showed significant migration (Bonferroni alpha=0.0025). Shuffle p-values: fl_haz=0.9171, en_chsh=0.5614, fq_conn=0.3397, fq_closer=0.3646.",
+  "counts": {
+    "total_paragraphs": 537,
+    "big_paragraphs": 174,
+    "total_body_lines": 1324,
+    "excluded_zero_hazard": 290,
+    "exclusion_rate": 0.219033,
+    "body_lines_analyzed": 1034,
+    "unique_paragraphs_analyzed": 174
+  },
+  "subgroups": {
+    "fl_haz": {
+      "raw_spearman": {
+        "rho": -0.033894,
+        "analytic_p": 0.27620417955753884
+      },
+      "partial_spearman": {
+        "rho": 0.003499,
+        "analytic_p": 0.9105184425665583,
+        "shuffle_p": 0.917083
+      },
+      "quintile_means": {
+        "Q0": 0.243527,
+        "Q1": 0.233957,
+        "Q2": 0.188631,
+        "Q3": 0.243384,
+        "Q4": 0.229167
+      },
+      "quintile_rho": -0.5,
+      "line_length_confound": {
+        "rho_with_frac": 0.194646,
+        "p": 2.755982243632344e-10
+      },
+      "shuffle_distribution": {
+        "mean": 0.009673,
+        "std": 0.030062,
+        "observed_rho": 0.003499
+      },
+      "significant": false
+    },
+    "en_chsh": {
+      "raw_spearman": {
+        "rho": 0.019541,
+        "analytic_p": 0.5302318940509834
+      },
+      "partial_spearman": {
+        "rho": -0.016859,
+        "analytic_p": 0.5881596117821308,
+        "shuffle_p": 0.561439
+      },
+      "quintile_means": {
+        "Q0": 0.518315,
+        "Q1": 0.502228,
+        "Q2": 0.559538,
+        "Q3": 0.493886,
+        "Q4": 0.535273
+      },
+      "quintile_rho": 0.1,
+      "line_length_confound": {
+        "rho_with_frac": -0.137711,
+        "p": 8.827675401169598e-06
+      },
+      "shuffle_distribution": {
+        "mean": -0.008828,
+        "std": 0.027181,
+        "observed_rho": -0.016859
+      },
+      "significant": false
+    },
+    "fq_conn": {
+      "raw_spearman": {
+        "rho": -0.023096,
+        "analytic_p": 0.4581560098828109
+      },
+      "partial_spearman": {
+        "rho": 0.029826,
+        "analytic_p": 0.3379970035973435,
+        "shuffle_p": 0.33966
+      },
+      "quintile_means": {
+        "Q0": 0.135044,
+        "Q1": 0.150178,
+        "Q2": 0.15217,
+        "Q3": 0.155946,
+        "Q4": 0.140948
+      },
+      "quintile_rho": 0.4,
+      "line_length_confound": {
+        "rho_with_frac": 0.113332,
+        "p": 0.00026055317882436413
+      },
+      "shuffle_distribution": {
+        "mean": -0.004265,
+        "std": 0.029938,
+        "observed_rho": 0.029826
+      },
+      "significant": false
+    },
+    "fq_closer": {
+      "raw_spearman": {
+        "rho": -0.041534,
+        "analytic_p": 0.18203657052021846
+      },
+      "partial_spearman": {
+        "rho": 0.028815,
+        "analytic_p": 0.35463737977902987,
+        "shuffle_p": 0.364635
+      },
+      "quintile_means": {
+        "Q0": 0.103114,
+        "Q1": 0.113636,
+        "Q2": 0.099662,
+        "Q3": 0.106784,
+        "Q4": 0.094612
+      },
+      "quintile_rho": -0.5,
+      "line_length_confound": {
+        "rho_with_frac": 0.125074,
+        "p": 5.510490208200608e-05
+      },
+      "shuffle_distribution": {
+        "mean": 0.003055,
+        "std": 0.033056,
+        "observed_rho": 0.028815
+      },
+      "significant": false
+    }
+  },
+  "significant_subgroups": [],
+  "complementary_directions": false,
+  "parameters": {
+    "min_paragraph_lines": 5,
+    "n_shuffles": 1000,
+    "random_seed": 42,
+    "bonferroni_alpha": 0.0025,
+    "base_alpha": 0.01,
+    "n_tests": 4,
+    "hazard_classes": [
+      7,
+      8,
+      9,
+      23,
+      30,
+      31
+    ],
+    "subgroup_definitions": {
+      "fl_haz": [
+        7,
+        30
+      ],
+      "en_chsh": [
+        8,
+        31
+      ],
+      "fq_conn": [
+        9
+      ],
+      "fq_closer": [
+        23
+      ]
+    }
+  }
+}

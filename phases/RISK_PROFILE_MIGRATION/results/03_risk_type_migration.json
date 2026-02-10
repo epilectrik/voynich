@@ -1,0 +1,165 @@
+{
+  "test": "03_risk_type_migration",
+  "phase": "RISK_PROFILE_MIGRATION",
+  "verdict": "FAIL",
+  "verdict_detail": "No failure class shifts detected: 0 of 4 failure types reached significance (Bonferroni alpha=0.0025). Failure class exposure profile does not shift systematically through body lines.",
+  "counts": {
+    "total_paragraphs": 537,
+    "big_paragraphs": 174,
+    "body_lines_with_hazard_tokens": 1034,
+    "unique_paragraphs_analyzed": 174,
+    "mean_hazard_tokens_per_line": 2.1383
+  },
+  "failure_type_results": {
+    "PHASE_ORDERING": {
+      "raw_spearman": {
+        "rho": -0.000772,
+        "analytic_p": 0.9802177916721737
+      },
+      "partial_spearman": {
+        "rho": 0.017505,
+        "analytic_p": 0.573934637422489,
+        "shuffle_p": 0.554446
+      },
+      "quintile_means": {
+        "Q0": 0.450394,
+        "Q1": 0.47702,
+        "Q2": 0.503081,
+        "Q3": 0.465341,
+        "Q4": 0.453269
+      },
+      "quintile_rho": 0.1,
+      "significant": false,
+      "direction": "positive",
+      "shuffle_distribution": {
+        "mean": -0.003048,
+        "std": 0.029192,
+        "observed_rho": 0.017505
+      }
+    },
+    "COMPOSITION_JUMP": {
+      "raw_spearman": {
+        "rho": 0.005169,
+        "analytic_p": 0.8681345918053814
+      },
+      "partial_spearman": {
+        "rho": -0.025132,
+        "analytic_p": 0.41949146049325226,
+        "shuffle_p": 0.420579
+      },
+      "quintile_means": {
+        "Q0": 0.148551,
+        "Q1": 0.14489,
+        "Q2": 0.147304,
+        "Q3": 0.144821,
+        "Q4": 0.154813
+      },
+      "quintile_rho": 0.1,
+      "significant": false,
+      "direction": "negative",
+      "shuffle_distribution": {
+        "mean": -0.012886,
+        "std": 0.028816,
+        "observed_rho": -0.025132
+      }
+    },
+    "CONTAINMENT_TIMING": {
+      "raw_spearman": {
+        "rho": -0.015675,
+        "analytic_p": 0.6146306835578038
+      },
+      "partial_spearman": {
+        "rho": -0.039123,
+        "analytic_p": 0.20875341787328505,
+        "shuffle_p": 0.182817
+      },
+      "quintile_means": {
+        "Q0": 0.279291,
+        "Q1": 0.261111,
+        "Q2": 0.2553,
+        "Q3": 0.268146,
+        "Q4": 0.277335
+      },
+      "quintile_rho": -0.1,
+      "significant": false,
+      "direction": "negative",
+      "shuffle_distribution": {
+        "mean": 0.002079,
+        "std": 0.029238,
+        "observed_rho": -0.039123
+      }
+    },
+    "RATE_MISMATCH": {
+      "raw_spearman": {
+        "rho": -0.033721,
+        "analytic_p": 0.27866363450636034
+      },
+      "partial_spearman": {
+        "rho": 0.003503,
+        "analytic_p": 0.9104159287543983,
+        "shuffle_p": 0.906094
+      },
+      "quintile_means": {
+        "Q0": 0.121764,
+        "Q1": 0.116979,
+        "Q2": 0.094315,
+        "Q3": 0.121692,
+        "Q4": 0.114583
+      },
+      "quintile_rho": -0.5,
+      "significant": false,
+      "direction": "positive",
+      "shuffle_distribution": {
+        "mean": 0.00708,
+        "std": 0.029989,
+        "observed_rho": 0.003503
+      }
+    }
+  },
+  "significant_count": 0,
+  "significant_types": [],
+  "has_complementary_directions": false,
+  "class_failure_type_mapping": {
+    "7": [
+      "PHASE_ORDERING",
+      "RATE_MISMATCH"
+    ],
+    "8": [
+      "COMPOSITION_JUMP",
+      "CONTAINMENT_TIMING",
+      "PHASE_ORDERING"
+    ],
+    "9": [
+      "COMPOSITION_JUMP",
+      "CONTAINMENT_TIMING",
+      "PHASE_ORDERING"
+    ],
+    "23": [
+      "CONTAINMENT_TIMING",
+      "PHASE_ORDERING"
+    ],
+    "30": [
+      "CONTAINMENT_TIMING",
+      "RATE_MISMATCH"
+    ],
+    "31": [
+      "PHASE_ORDERING"
+    ]
+  },
+  "parameters": {
+    "min_paragraph_lines": 5,
+    "n_shuffles": 1000,
+    "random_seed": 42,
+    "bonferroni_alpha": 0.0025,
+    "base_alpha": 0.01,
+    "n_failure_types": 4,
+    "hazard_classes": [
+      7,
+      8,
+      9,
+      23,
+      30,
+      31
+    ]
+  }
+}

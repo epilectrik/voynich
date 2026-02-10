@@ -1,0 +1,103 @@
+{
+  "test": "05_hazard_escape_positional_dynamics",
+  "phase": "RISK_PROFILE_MIGRATION",
+  "verdict": "FAIL",
+  "verdict_detail": "No FL sub-type shift detected. 0 of 3 metrics significant (Bonferroni alpha=0.0033). Hazard FL composition does not systematically change through paragraph body.",
+  "counts": {
+    "total_paragraphs": 537,
+    "big_paragraphs": 174,
+    "body_lines": 1322,
+    "fl_lines": 460
+  },
+  "fl_classes": {
+    "FL_HAZ": [
+      7,
+      30
+    ],
+    "FL_SAFE": [
+      38,
+      40
+    ],
+    "ALL_FL": [
+      7,
+      30,
+      38,
+      40
+    ]
+  },
+  "bonferroni_alpha": 0.003333,
+  "metrics": {
+    "fl_haz_rate": {
+      "n_lines": 1322,
+      "partial_spearman": {
+        "rho": -0.020713,
+        "analytic_p": 0.45176842095476877,
+        "shuffle_p": 0.467532
+      },
+      "quintile_means": {
+        "Q0": 0.061294,
+        "Q1": 0.052252,
+        "Q2": 0.050771,
+        "Q3": 0.061862,
+        "Q4": 0.054991
+      },
+      "quintile_rho": 0.1,
+      "shuffle_distribution": {
+        "mean": 0.000498,
+        "std": 0.02887,
+        "observed_rho": -0.020713
+      },
+      "significant": false
+    },
+    "fl_safe_rate": {
+      "n_lines": 1322,
+      "partial_spearman": {
+        "rho": -0.018573,
+        "analytic_p": 0.4998434133947104,
+        "shuffle_p": 0.852148
+      },
+      "quintile_means": {
+        "Q0": 0.009958,
+        "Q1": 0.006274,
+        "Q2": 0.007456,
+        "Q3": 0.006561,
+        "Q4": 0.008943
+      },
+      "quintile_rho": -0.1,
+      "shuffle_distribution": {
+        "mean": -0.000269,
+        "std": 0.038197,
+        "observed_rho": -0.018573
+      },
+      "significant": false
+    },
+    "fl_haz_frac_of_fl": {
+      "n_lines": 460,
+      "partial_spearman": {
+        "rho": 0.028366,
+        "analytic_p": 0.5439436677500864,
+        "shuffle_p": 0.396603
+      },
+      "quintile_means": {
+        "Q0": 0.881356,
+        "Q1": 0.894118,
+        "Q2": 0.857143,
+        "Q3": 0.906028,
+        "Q4": 0.860215
+      },
+      "quintile_rho": -0.1,
+      "shuffle_distribution": {
+        "mean": -0.009047,
+        "std": 0.034803,
+        "observed_rho": 0.028366
+      },
+      "significant": false
+    }
+  },
+  "parameters": {
+    "min_paragraph_lines": 5,
+    "n_shuffles": 1000,
+    "random_seed": 42,
+    "bonferroni_alpha": 0.003333
+  }
+}
