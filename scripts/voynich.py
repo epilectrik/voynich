@@ -1250,6 +1250,11 @@ class BTokenAnalysis:
         Auto-composition activates when MIDDLE has a learned or tier-based
         gloss. Otherwise falls back to structural format.
         """
+        # 0. HT SPECIFICATION BUNDLE (C404/C405: non-executable, C935: atom decomposition)
+        ht_bundle = self._ht_spec_bundle()
+        if ht_bundle:
+            return ht_bundle
+
         # 1. WHOLE-TOKEN LOOKUP (manual gloss takes priority)
         if hasattr(self, '_token_dict') and self._token_dict:
             gloss = self._token_dict.get_gloss(self.word)
@@ -1422,6 +1427,12 @@ class BTokenAnalysis:
             'flow': '',
             'flow_type': '',
         }
+
+        # HT SPECIFICATION BUNDLE (C404/C405: non-executable, C935: atom decomposition)
+        ht_bundle = self._ht_spec_bundle()
+        if ht_bundle:
+            result['operation'] = ht_bundle
+            return result
 
         # OPERATION layer: check token dictionary first (C936 composites)
         middle = self.morph.middle if self.morph else None
@@ -1653,6 +1664,48 @@ class BTokenAnalysis:
         if ext_parts:
             result += f" (+{', '.join(ext_parts)})"
         return result
+
+    def _ht_spec_bundle(self) -> Optional[str]:
+        """Render HT token as compressed specification bundle.
+
+        HT tokens contain real PP atoms but are NOT executable (C404/C405).
+        Their compound MIDDLEs decompose into core atoms that predict body
+        content (C935, 71.6% hit rate). Render as raw atom inventory with
+        NO verbs, NO implied order, NO execution claim.
+
+        HT Rendering Rule (FROZEN):
+          1. Never rendered as actions
+          2. Expose atomic composition (C935) as unordered set
+          3. No verbs, no arrows, no sequencing
+          4. Suffix shown as raw morphology (form marker), never operational gloss
+
+        Returns formatted spec string, or None if not an HT token.
+        """
+        if not self.is_ht:
+            return None
+
+        middle = self.morph.middle if self.morph else None
+        suffix = self.morph.suffix if self.morph else None
+
+        if not middle:
+            return f"[HT: spec {{{self.word}}}]"
+
+        # Atom decomposition via MiddleAnalyzer
+        atoms = []
+        if hasattr(self, '_mid_analyzer') and self._mid_analyzer:
+            atoms = self._mid_analyzer.get_contained_atoms(middle)
+
+        if atoms:
+            atom_str = ' + '.join(atoms)
+            spec = f"[HT: spec {{{atom_str}}}]"
+        else:
+            spec = f"[HT: spec {{{middle}}}]"
+
+        # Suffix as raw form marker (never operational gloss — C404/C405)
+        if suffix:
+            spec += f" [-{suffix}]"
+
+        return spec
 
     @staticmethod
     def _get_prefix_lane(prefix: str) -> str:

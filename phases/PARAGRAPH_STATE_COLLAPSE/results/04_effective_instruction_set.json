@@ -1,0 +1,136 @@
+{
+  "test": "04_effective_instruction_set",
+  "phase": "PARAGRAPH_STATE_COLLAPSE",
+  "verdict": "FAIL",
+  "counts": {
+    "total_paragraphs": 573,
+    "big_paragraphs": 187,
+    "body_lines": 1261
+  },
+  "metrics": {
+    "n_unique_roles_raw": {
+      "raw_rho": -0.182821,
+      "raw_p": 0.0,
+      "partial_rho": 0.024187,
+      "partial_p": 0.390802,
+      "shuffle_p_raw": 0.0,
+      "shuffle_p_partial": 0.783,
+      "quintile_means": {
+        "Q0": 4.196429,
+        "Q1": 4.094262,
+        "Q2": 3.994652,
+        "Q3": 4.07377,
+        "Q4": 3.643791
+      }
+    },
+    "n_unique_roles_rate": {
+      "raw_rho": 0.216592,
+      "raw_p": 0.0,
+      "partial_rho": 0.063734,
+      "partial_p": 0.023618,
+      "shuffle_p_raw": 1.0,
+      "shuffle_p_partial": 0.986,
+      "quintile_means": {
+        "Q0": 0.427631,
+        "Q1": 0.425569,
+        "Q2": 0.421301,
+        "Q3": 0.436383,
+        "Q4": 0.522275
+      }
+    },
+    "n_unique_classes_raw": {
+      "raw_rho": -0.274987,
+      "raw_p": 0.0,
+      "partial_rho": -0.009554,
+      "partial_p": 0.734646,
+      "shuffle_p_raw": 0.0,
+      "shuffle_p_partial": 0.348,
+      "quintile_means": {
+        "Q0": 7.189286,
+        "Q1": 7.045082,
+        "Q2": 6.839572,
+        "Q3": 6.942623,
+        "Q4": 5.565359
+      }
+    },
+    "n_unique_classes_rate": {
+      "raw_rho": 0.074514,
+      "raw_p": 0.008118,
+      "partial_rho": -0.003805,
+      "partial_p": 0.892626,
+      "shuffle_p_raw": 0.995,
+      "shuffle_p_partial": 0.428,
+      "quintile_means": {
+        "Q0": 0.721518,
+        "Q1": 0.714317,
+        "Q2": 0.714719,
+        "Q3": 0.722307,
+        "Q4": 0.749498
+      }
+    },
+    "n_unique_middles_raw": {
+      "raw_rho": -0.281272,
+      "raw_p": 0.0,
+      "partial_rho": 0.02651,
+      "partial_p": 0.346906,
+      "shuffle_p_raw": 0.0,
+      "shuffle_p_partial": 0.833,
+      "quintile_means": {
+        "Q0": 8.214286,
+        "Q1": 8.081967,
+        "Q2": 7.759358,
+        "Q3": 8.016393,
+        "Q4": 6.470588
+      }
+    },
+    "n_unique_middles_rate": {
+      "raw_rho": 0.149637,
+      "raw_p": 0.0,
+      "partial_rho": 0.04748,
+      "partial_p": 0.091927,
+      "shuffle_p_raw": 1.0,
+      "shuffle_p_partial": 0.957,
+      "quintile_means": {
+        "Q0": 0.824129,
+        "Q1": 0.818229,
+        "Q2": 0.806037,
+        "Q3": 0.835371,
+        "Q4": 0.872109
+      }
+    },
+    "n_unique_suffixes_raw": {
+      "raw_rho": -0.180659,
+      "raw_p": 0.0,
+      "partial_rho": -0.026266,
+      "partial_p": 0.351354,
+      "shuffle_p_raw": 0.0,
+      "shuffle_p_partial": 0.21,
+      "quintile_means": {
+        "Q0": 4.589286,
+        "Q1": 4.540984,
+        "Q2": 4.518717,
+        "Q3": 4.491803,
+        "Q4": 3.875817
+      }
+    },
+    "n_unique_suffixes_rate": {
+      "raw_rho": 0.14766,
+      "raw_p": 0.0,
+      "partial_rho": 0.000171,
+      "partial_p": 0.995151,
+      "shuffle_p_raw": 1.0,
+      "shuffle_p_partial": 0.529,
+      "quintile_means": {
+        "Q0": 0.469087,
+        "Q1": 0.474208,
+        "Q2": 0.476472,
+        "Q3": 0.476493,
+        "Q4": 0.547559
+      }
+    }
+  },
+  "bonferroni_alpha": 0.00125,
+  "significant_residualized": [],
+  "significant_rate": [],
+  "significant_both": []
+}

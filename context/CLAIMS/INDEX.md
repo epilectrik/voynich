@@ -1632,6 +1632,19 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - Only **2 genuine token-specific constraints** found: chey->chedy and chey->shedy forbidden (same ENERGY class)
 - The system deliberately minimized lexical syntax to reduce cognitive load and error
 
+### Paragraph State Collapse (C965) - Phase: PARAGRAPH_STATE_COLLAPSE
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **965** | **Body Kernel Composition Shift** (h-kernel fraction rises +0.10, e-kernel drops -0.086 through body; survives length control; composition shift not diversity collapse) | 2 | B | -> [C965_body_kernel_composition_shift.md](C965_body_kernel_composition_shift.md) |
+
+**Phase findings:**
+- **NO COLLAPSE** (0.0/7.0) — All 7 pre-registered collapse hypotheses falsified
+- C963 body homogeneity comprehensively confirmed: entropy, distinct counts, rates ALL flat after length control
+- Line length confound (C677) explains all raw diversity declines (rho=+0.75 with MIDDLE entropy)
+- Only genuine positional signal: kernel composition shift (C965) — h-kernel rises, e-kernel drops
+- The "quiet and rigid" appearance of late paragraphs is an optical illusion of line shortening
+
 ---
 
 ## Navigation
