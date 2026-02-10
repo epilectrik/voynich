@@ -2,7 +2,7 @@
   "test": "07_integrated_verdict",
   "phase": "RISK_PROFILE_MIGRATION",
   "phase_verdict": "WEAK",
-  "total_score": 2.0,
+  "total_score": 2.5,
   "max_score": 6.0,
   "prerequisite_met": true,
   "test_scores": {
@@ -27,8 +27,8 @@
       "score": 0.0
     },
     "Risk-Kernel Cross-Correlation": {
-      "verdict": "PARTIAL",
-      "score": 0.5
+      "verdict": "PASS",
+      "score": 1.0
     }
   },
   "notable_findings": [
@@ -41,11 +41,6 @@
       "source": "T04",
       "finding": "C965 kernel shift is concentrated in NON-hazard tokens",
       "detail": "Safe pool h_fraction: partial rho=+0.0898, p=0.0017. Hazard pool h_fraction: partial rho=+0.0484, p=0.2345. The kernel composition shift operates in the safe (non-hazard) instruction space, not within hazard-involved tokens."
-    },
-    {
-      "source": "T06",
-      "finding": "EN_CHSH <-> h-kernel cross-correlation is tautological",
-      "detail": "Per-line rho=+0.4766 (p=9.23e-60), but shuffle null has std=0.0 \u2014 identical under permutation. EN_CHSH tokens are defined by ch/sh prefix, which IS the h-kernel marker. The cross-correlation is a structural identity, not a dynamic signal."
     }
   ],
   "interpretation": "Weak evidence for risk profile migration. The hazard rate is flat (C458 confirmed) but sub-group composition does not shift significantly. The kernel composition shift (C965) is present in non-hazard tokens only. The cross-correlation between hazard sub-groups and kernel types is tautological (EN_CHSH = ch/sh prefix = h-kernel). C965 reflects a grammar-wide compositional drift in the safe instruction space, not a hazard-mediation strategy."

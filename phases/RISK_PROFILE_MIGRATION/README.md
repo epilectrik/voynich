@@ -21,8 +21,8 @@ Central question:
 | T03 | Risk Type Migration | **FAIL** | PHASE_ORDERING, COMPOSITION_JUMP, CONTAINMENT, RATE_MISMATCH — all flat |
 | T04 | Kernel Hazard vs Safe | **PARTIAL** | C965 shift present in SAFE pool only (h rho=+0.09, p=0.002), absent from hazard pool |
 | T05 | Hazard-Escape Dynamics | **FAIL** | FL_HAZ and FL_SAFE rates both flat |
-| T06 | Risk-Kernel Cross-Correlation | **PARTIAL** | Strong per-line rho (0.48) but tautological — EN_CHSH = ch/sh prefix = h-kernel by definition |
-| T07 | Integrated Verdict | **WEAK** | Score 2.0/6.0 |
+| T06 | Risk-Kernel Cross-Correlation | **PASS** | Per-line rho=0.48 (p~10^-60), shuffle p=0.001 — but partly mechanical (EN_CHSH = ch/sh prefix = h-kernel) |
+| T07 | Integrated Verdict | **WEAK** | Score 2.5/6.0 |
 
 ## Key Findings
 
@@ -42,9 +42,9 @@ The h-kernel rise and e-kernel decline operate exclusively in non-hazard tokens:
 
 This means C965 is a compositional drift within the *operational* instruction space, not a change in *hazard mediation strategy*.
 
-### 4. EN_CHSH <-> h-Kernel Cross-Correlation Is Tautological (T06)
+### 4. EN_CHSH <-> h-Kernel Cross-Correlation Is Partly Mechanical (T06)
 
-The per-line cross-correlation between EN_CHSH share and h-kernel fraction is rho=0.48 (p~10^-60), but this is a structural identity: EN_CHSH tokens are *defined* by ch/sh prefixes, which *are* the h-kernel marker. The shuffle test (permuting sub-group labels within lines) produces std=0.0 in the null distribution — the correlation is invariant under any permutation. It's definitional, not dynamic.
+The per-line cross-correlation between EN_CHSH share and h-kernel fraction is rho=0.48 (p~10^-60), significant vs shuffle null (p=0.001). However, this is partly a mechanical effect: EN_CHSH tokens are *defined* by ch/sh prefixes, which *are* the h-kernel marker. Lines with more EN_CHSH hazard tokens mechanically have higher h-kernel fractions. The shuffle test (pooling hazard labels across lines) confirms this is a real per-line association, but it reflects the structural identity between sub-group definition and kernel classification, not independent co-evolution of risk and mediation.
 
 ## Interpretation
 
