@@ -1,0 +1,44 @@
+{
+  "placement_mean_b_positions": {
+    "S1": 0.552,
+    "S2": 0.6125,
+    "R1": 0.5123,
+    "R2": 0.5318,
+    "R3": 0.5397,
+    "R4": 0.4826,
+    "C": 0.5315,
+    "C1": 0.4569,
+    "R": 0.5045,
+    "S": 0.5029,
+    "X": 0.5444,
+    "Y": 0.5868,
+    "O": 0.4921
+  },
+  "placement_asymmetries": {
+    "S0": 0.775,
+    "S1": 0.75,
+    "S2": 0.645,
+    "R1": 0.909,
+    "R2": 0.832,
+    "R3": 0.852,
+    "C": 0.873,
+    "R": 0.894,
+    "S": 0.79
+  },
+  "family_positions": {
+    "zodiac_mean": 0.5345,
+    "ac_mean": 0.5223,
+    "separation": 0.0122,
+    "p_value": 0.0132
+  },
+  "checks": {
+    "s_subscripts_asymmetric": false,
+    "r_gradient_exists": false,
+    "c_is_centered": false,
+    "families_map_to_sides": false,
+    "quintile_shift_visible": false
+  },
+  "n_pass": 0,
+  "verdict": "NO_VENN",
+  "explanation": "AZC subscripts do not map to opposite halves of B lines"
+}

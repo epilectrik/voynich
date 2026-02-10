@@ -1,0 +1,137 @@
+{
+  "n_lines_coordinated": 1176,
+  "n_lines_with_kernel_data": 1172,
+  "group_sizes": {
+    "LOW_DOMINANT": 265,
+    "HIGH_DOMINANT": 164,
+    "BALANCED": 743,
+    "HIGH_LO": 337,
+    "LOW_LO": 73,
+    "HIGH_HO": 281,
+    "LOW_HO": 131
+  },
+  "group_profiles": {
+    "LOW_DOMINANT": {
+      "n": 265,
+      "k_mean": 0.2726,
+      "h_mean": 0.0937,
+      "e_mean": 0.4487
+    },
+    "HIGH_DOMINANT": {
+      "n": 164,
+      "k_mean": 0.2372,
+      "h_mean": 0.0954,
+      "e_mean": 0.4755
+    },
+    "BALANCED": {
+      "n": 743,
+      "k_mean": 0.2615,
+      "h_mean": 0.0866,
+      "e_mean": 0.4673
+    },
+    "HIGH_LO": {
+      "n": 337,
+      "k_mean": 0.2614,
+      "h_mean": 0.0983,
+      "e_mean": 0.4558
+    },
+    "LOW_LO": {
+      "n": 73,
+      "k_mean": 0.224,
+      "h_mean": 0.0818,
+      "e_mean": 0.5346
+    },
+    "HIGH_HO": {
+      "n": 281,
+      "k_mean": 0.2515,
+      "h_mean": 0.0996,
+      "e_mean": 0.4605
+    },
+    "LOW_HO": {
+      "n": 131,
+      "k_mean": 0.2594,
+      "h_mean": 0.0887,
+      "e_mean": 0.4678
+    }
+  },
+  "mann_whitney_lo_vs_hi_dominant": {
+    "k": {
+      "lo_dom_mean": 0.2726,
+      "hi_dom_mean": 0.2372,
+      "U": 23774.0,
+      "p": 0.099957,
+      "significant": false
+    },
+    "h": {
+      "lo_dom_mean": 0.0937,
+      "hi_dom_mean": 0.0954,
+      "U": 21592.0,
+      "p": 0.904353,
+      "significant": false
+    },
+    "e": {
+      "lo_dom_mean": 0.4487,
+      "hi_dom_mean": 0.4755,
+      "U": 20446.5,
+      "p": 0.302978,
+      "significant": false
+    }
+  },
+  "spearman_correlations": {
+    "k": {
+      "rho_lo": 0.0425,
+      "p_lo": 0.145531,
+      "rho_ho": -0.0071,
+      "p_ho": 0.808625,
+      "rho_diff": 0.0496
+    },
+    "h": {
+      "rho_lo": 0.0215,
+      "p_lo": 0.461213,
+      "rho_ho": 0.0126,
+      "p_ho": 0.667562,
+      "rho_diff": 0.009
+    },
+    "e": {
+      "rho_lo": -0.0274,
+      "p_lo": 0.347939,
+      "rho_ho": 0.0411,
+      "p_ho": 0.159283,
+      "rho_diff": 0.0686
+    }
+  },
+  "kruskal_wallis": {
+    "k": {
+      "lo_H": 14.3,
+      "lo_p": 0.013804,
+      "lo_n_groups": 6,
+      "ho_H": 2.97,
+      "ho_p": 0.704562,
+      "ho_n_groups": 6
+    },
+    "h": {
+      "lo_H": 6.82,
+      "lo_p": 0.234492,
+      "lo_n_groups": 6,
+      "ho_H": 5.77,
+      "ho_p": 0.329067,
+      "ho_n_groups": 6
+    },
+    "e": {
+      "lo_H": 17.68,
+      "lo_p": 0.00337,
+      "lo_n_groups": 6,
+      "ho_H": 16.66,
+      "ho_p": 0.005186,
+      "ho_n_groups": 6
+    }
+  },
+  "checks": {
+    "check_1_mw_significant": false,
+    "check_2_rho_diff_gt_015": false,
+    "check_3_kw_both_axes": true
+  },
+  "n_checks_passed": 1,
+  "verdict": "WEAK_DISTINCTION",
+  "explanation": "Some evidence for axis-specific kernel contact, but not enough for confident distinction. One check passed out of three."
+}

@@ -1,0 +1,1064 @@
+{
+  "test": "05_opener_closer_constraint_sets",
+  "phase": "LINE_CONTROL_BLOCK_GRAMMAR",
+  "verdict": "FAIL",
+  "summary": {
+    "n_lines": 2414,
+    "total_tokens": 23090,
+    "unique_tokens": 4886
+  },
+  "opener": {
+    "n_unique": 1145,
+    "gini": 0.470272,
+    "tokens_for_80pct": 663,
+    "tokens_for_95pct": 1025,
+    "gini_ratio_vs_shuffle": 0.9309,
+    "shuffle_gini_mean": 0.505184,
+    "shuffle_gini_std": 0.006045,
+    "mandatory_count": 947,
+    "high_commitment_count": 855,
+    "gini_pass": false,
+    "commitment_pass": true,
+    "top_tokens": [
+      {
+        "rank": 1,
+        "token": "daiin",
+        "count": 85,
+        "cum_fraction": 0.035211
+      },
+      {
+        "rank": 2,
+        "token": "saiin",
+        "count": 48,
+        "cum_fraction": 0.055095
+      },
+      {
+        "rank": 3,
+        "token": "dain",
+        "count": 34,
+        "cum_fraction": 0.06918
+      },
+      {
+        "rank": 4,
+        "token": "sain",
+        "count": 34,
+        "cum_fraction": 0.083264
+      },
+      {
+        "rank": 5,
+        "token": "qokeedy",
+        "count": 31,
+        "cum_fraction": 0.096106
+      },
+      {
+        "rank": 6,
+        "token": "dshedy",
+        "count": 29,
+        "cum_fraction": 0.108119
+      },
+      {
+        "rank": 7,
+        "token": "y",
+        "count": 27,
+        "cum_fraction": 0.119304
+      },
+      {
+        "rank": 8,
+        "token": "qokeey",
+        "count": 26,
+        "cum_fraction": 0.130075
+      },
+      {
+        "rank": 9,
+        "token": "sol",
+        "count": 26,
+        "cum_fraction": 0.140845
+      },
+      {
+        "rank": 10,
+        "token": "sor",
+        "count": 25,
+        "cum_fraction": 0.151201
+      },
+      {
+        "rank": 11,
+        "token": "qokain",
+        "count": 24,
+        "cum_fraction": 0.161143
+      },
+      {
+        "rank": 12,
+        "token": "qokaiin",
+        "count": 23,
+        "cum_fraction": 0.170671
+      },
+      {
+        "rank": 13,
+        "token": "sar",
+        "count": 22,
+        "cum_fraction": 0.179785
+      },
+      {
+        "rank": 14,
+        "token": "dar",
+        "count": 21,
+        "cum_fraction": 0.188484
+      },
+      {
+        "rank": 15,
+        "token": "ol",
+        "count": 21,
+        "cum_fraction": 0.197183
+      },
+      {
+        "rank": 16,
+        "token": "tchedy",
+        "count": 20,
+        "cum_fraction": 0.205468
+      },
+      {
+        "rank": 17,
+        "token": "dair",
+        "count": 19,
+        "cum_fraction": 0.213339
+      },
+      {
+        "rank": 18,
+        "token": "qokedy",
+        "count": 19,
+        "cum_fraction": 0.22121
+      },
+      {
+        "rank": 19,
+        "token": "pol",
+        "count": 17,
+        "cum_fraction": 0.228252
+      },
+      {
+        "rank": 20,
+        "token": "qol",
+        "count": 16,
+        "cum_fraction": 0.23488
+      },
+      {
+        "rank": 21,
+        "token": "dchedy",
+        "count": 16,
+        "cum_fraction": 0.241508
+      },
+      {
+        "rank": 22,
+        "token": "ycheey",
+        "count": 15,
+        "cum_fraction": 0.247722
+      },
+      {
+        "rank": 23,
+        "token": "tar",
+        "count": 13,
+        "cum_fraction": 0.253107
+      },
+      {
+        "rank": 24,
+        "token": "pchedy",
+        "count": 12,
+        "cum_fraction": 0.258078
+      },
+      {
+        "rank": 25,
+        "token": "tol",
+        "count": 12,
+        "cum_fraction": 0.263049
+      },
+      {
+        "rank": 26,
+        "token": "or",
+        "count": 11,
+        "cum_fraction": 0.267606
+      },
+      {
+        "rank": 27,
+        "token": "qokal",
+        "count": 11,
+        "cum_fraction": 0.272162
+      },
+      {
+        "rank": 28,
+        "token": "dshey",
+        "count": 9,
+        "cum_fraction": 0.275891
+      },
+      {
+        "rank": 29,
+        "token": "yshey",
+        "count": 9,
+        "cum_fraction": 0.279619
+      },
+      {
+        "rank": 30,
+        "token": "ycheol",
+        "count": 9,
+        "cum_fraction": 0.283347
+      }
+    ],
+    "mandatory_set": [
+      {
+        "token": "ycheo",
+        "boundary_count": 9,
+        "corpus_count": 9,
+        "expected": 0.94,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "AUXILIARY",
+        "role_short": "AX"
+      },
+      {
+        "token": "dsheey",
+        "boundary_count": 6,
+        "corpus_count": 6,
+        "expected": 0.63,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "pchedal",
+        "boundary_count": 5,
+        "corpus_count": 5,
+        "expected": 0.52,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "solkeedy",
+        "boundary_count": 5,
+        "corpus_count": 5,
+        "expected": 0.52,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "pcheor",
+        "boundary_count": 4,
+        "corpus_count": 4,
+        "expected": 0.42,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "pchedaiin",
+        "boundary_count": 4,
+        "corpus_count": 4,
+        "expected": 0.42,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "yaiin",
+        "boundary_count": 4,
+        "corpus_count": 4,
+        "expected": 0.42,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "todaiin",
+        "boundary_count": 4,
+        "corpus_count": 4,
+        "expected": 0.42,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "f",
+        "boundary_count": 4,
+        "corpus_count": 4,
+        "expected": 0.42,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "dshol",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "dcheedy",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "dcheo",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "ychol",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "AUXILIARY",
+        "role_short": "AX"
+      },
+      {
+        "token": "saraiin",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "pchodain",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "pchdaiin",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "tchedor",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "x",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "dshor",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "AUXILIARY",
+        "role_short": "AX"
+      },
+      {
+        "token": "sokeedy",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "soin",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "poiin",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "ssheey",
+        "boundary_count": 2,
+        "corpus_count": 2,
+        "expected": 0.21,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "polarar",
+        "boundary_count": 2,
+        "corpus_count": 2,
+        "expected": 0.21,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "ycheody",
+        "boundary_count": 2,
+        "corpus_count": 2,
+        "expected": 0.21,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "tshdol",
+        "boundary_count": 2,
+        "corpus_count": 2,
+        "expected": 0.21,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "tshedar",
+        "boundary_count": 2,
+        "corpus_count": 2,
+        "expected": 0.21,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "ysheo",
+        "boundary_count": 2,
+        "corpus_count": 2,
+        "expected": 0.21,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "ysheeody",
+        "boundary_count": 2,
+        "corpus_count": 2,
+        "expected": 0.21,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "ychedaiin",
+        "boundary_count": 2,
+        "corpus_count": 2,
+        "expected": 0.21,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      }
+    ],
+    "role_composition": {
+      "UNK": {
+        "count": 1136,
+        "fraction": 0.4706
+      },
+      "AX": {
+        "count": 638,
+        "fraction": 0.2643
+      },
+      "EN": {
+        "count": 333,
+        "fraction": 0.1379
+      },
+      "FQ": {
+        "count": 117,
+        "fraction": 0.0485
+      },
+      "CC": {
+        "count": 106,
+        "fraction": 0.0439
+      },
+      "FL": {
+        "count": 84,
+        "fraction": 0.0348
+      }
+    }
+  },
+  "closer": {
+    "n_unique": 1127,
+    "gini": 0.470884,
+    "tokens_for_80pct": 645,
+    "tokens_for_95pct": 1007,
+    "gini_ratio_vs_shuffle": 0.9314,
+    "shuffle_gini_mean": 0.505564,
+    "shuffle_gini_std": 0.006487,
+    "mandatory_count": 875,
+    "high_commitment_count": 772,
+    "gini_pass": false,
+    "commitment_pass": true,
+    "top_tokens": [
+      {
+        "rank": 1,
+        "token": "am",
+        "count": 44,
+        "cum_fraction": 0.018227
+      },
+      {
+        "rank": 2,
+        "token": "ol",
+        "count": 40,
+        "cum_fraction": 0.034797
+      },
+      {
+        "rank": 3,
+        "token": "dy",
+        "count": 39,
+        "cum_fraction": 0.050953
+      },
+      {
+        "rank": 4,
+        "token": "chedy",
+        "count": 36,
+        "cum_fraction": 0.065866
+      },
+      {
+        "rank": 5,
+        "token": "oly",
+        "count": 34,
+        "cum_fraction": 0.07995
+      },
+      {
+        "rank": 6,
+        "token": "dam",
+        "count": 28,
+        "cum_fraction": 0.091549
+      },
+      {
+        "rank": 7,
+        "token": "al",
+        "count": 28,
+        "cum_fraction": 0.103148
+      },
+      {
+        "rank": 8,
+        "token": "otam",
+        "count": 25,
+        "cum_fraction": 0.113505
+      },
+      {
+        "rank": 9,
+        "token": "daiin",
+        "count": 24,
+        "cum_fraction": 0.123447
+      },
+      {
+        "rank": 10,
+        "token": "dal",
+        "count": 22,
+        "cum_fraction": 0.13256
+      },
+      {
+        "rank": 11,
+        "token": "qoky",
+        "count": 21,
+        "cum_fraction": 0.141259
+      },
+      {
+        "rank": 12,
+        "token": "qokam",
+        "count": 19,
+        "cum_fraction": 0.14913
+      },
+      {
+        "rank": 13,
+        "token": "lchedy",
+        "count": 17,
+        "cum_fraction": 0.156172
+      },
+      {
+        "rank": 14,
+        "token": "ary",
+        "count": 16,
+        "cum_fraction": 0.1628
+      },
+      {
+        "rank": 15,
+        "token": "shedy",
+        "count": 16,
+        "cum_fraction": 0.169428
+      },
+      {
+        "rank": 16,
+        "token": "chey",
+        "count": 16,
+        "cum_fraction": 0.176056
+      },
+      {
+        "rank": 17,
+        "token": "ldy",
+        "count": 16,
+        "cum_fraction": 0.182684
+      },
+      {
+        "rank": 18,
+        "token": "dar",
+        "count": 15,
+        "cum_fraction": 0.188898
+      },
+      {
+        "rank": 19,
+        "token": "lol",
+        "count": 15,
+        "cum_fraction": 0.195112
+      },
+      {
+        "rank": 20,
+        "token": "ar",
+        "count": 15,
+        "cum_fraction": 0.201326
+      },
+      {
+        "rank": 21,
+        "token": "aiin",
+        "count": 14,
+        "cum_fraction": 0.207125
+      },
+      {
+        "rank": 22,
+        "token": "chdy",
+        "count": 14,
+        "cum_fraction": 0.212925
+      },
+      {
+        "rank": 23,
+        "token": "okam",
+        "count": 14,
+        "cum_fraction": 0.218724
+      },
+      {
+        "rank": 24,
+        "token": "oky",
+        "count": 13,
+        "cum_fraction": 0.224109
+      },
+      {
+        "rank": 25,
+        "token": "ram",
+        "count": 13,
+        "cum_fraction": 0.229495
+      },
+      {
+        "rank": 26,
+        "token": "oldy",
+        "count": 12,
+        "cum_fraction": 0.234466
+      },
+      {
+        "rank": 27,
+        "token": "qoty",
+        "count": 11,
+        "cum_fraction": 0.239022
+      },
+      {
+        "rank": 28,
+        "token": "oty",
+        "count": 11,
+        "cum_fraction": 0.243579
+      },
+      {
+        "rank": 29,
+        "token": "qokeey",
+        "count": 10,
+        "cum_fraction": 0.247722
+      },
+      {
+        "rank": 30,
+        "token": "y",
+        "count": 10,
+        "cum_fraction": 0.251864
+      }
+    ],
+    "mandatory_set": [
+      {
+        "token": "ary",
+        "boundary_count": 16,
+        "corpus_count": 16,
+        "expected": 1.67,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "FLOW_OPERATOR",
+        "role_short": "FL"
+      },
+      {
+        "token": "ram",
+        "boundary_count": 13,
+        "corpus_count": 13,
+        "expected": 1.36,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "AUXILIARY",
+        "role_short": "AX"
+      },
+      {
+        "token": "alkam",
+        "boundary_count": 5,
+        "corpus_count": 5,
+        "expected": 0.52,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "sham",
+        "boundary_count": 5,
+        "corpus_count": 5,
+        "expected": 0.52,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "lam",
+        "boundary_count": 5,
+        "corpus_count": 5,
+        "expected": 0.52,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "alom",
+        "boundary_count": 5,
+        "corpus_count": 5,
+        "expected": 0.52,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "lom",
+        "boundary_count": 5,
+        "corpus_count": 5,
+        "expected": 0.52,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "cheom",
+        "boundary_count": 4,
+        "corpus_count": 4,
+        "expected": 0.42,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "m",
+        "boundary_count": 4,
+        "corpus_count": 4,
+        "expected": 0.42,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "AUXILIARY",
+        "role_short": "AX"
+      },
+      {
+        "token": "daram",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "opam",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "ykam",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "g",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "AUXILIARY",
+        "role_short": "AX"
+      },
+      {
+        "token": "otaram",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "dalam",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "alky",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "otedam",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "raram",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "lcheam",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "chealy",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "opary",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "koldy",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "oroly",
+        "boundary_count": 3,
+        "corpus_count": 3,
+        "expected": 0.31,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "ltary",
+        "boundary_count": 2,
+        "corpus_count": 2,
+        "expected": 0.21,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "oteeam",
+        "boundary_count": 2,
+        "corpus_count": 2,
+        "expected": 0.21,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "chary",
+        "boundary_count": 2,
+        "corpus_count": 2,
+        "expected": 0.21,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "roly",
+        "boundary_count": 2,
+        "corpus_count": 2,
+        "expected": 0.21,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "cholkar",
+        "boundary_count": 2,
+        "corpus_count": 2,
+        "expected": 0.21,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "adam",
+        "boundary_count": 2,
+        "corpus_count": 2,
+        "expected": 0.21,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      },
+      {
+        "token": "alod",
+        "boundary_count": 2,
+        "corpus_count": 2,
+        "expected": 0.21,
+        "enrichment_ratio": 9.565,
+        "boundary_commitment": 1.0,
+        "role": "UNK",
+        "role_short": "UNK"
+      }
+    ],
+    "role_composition": {
+      "UNK": {
+        "count": 1043,
+        "fraction": 0.4321
+      },
+      "AX": {
+        "count": 477,
+        "fraction": 0.1976
+      },
+      "EN": {
+        "count": 369,
+        "fraction": 0.1529
+      },
+      "FQ": {
+        "count": 275,
+        "fraction": 0.1139
+      },
+      "FL": {
+        "count": 186,
+        "fraction": 0.0771
+      },
+      "CC": {
+        "count": 64,
+        "fraction": 0.0265
+      }
+    }
+  },
+  "pass_criteria": {
+    "gini_threshold": 0.6,
+    "gini_ratio_threshold": 2.0,
+    "commitment_threshold": 0.4,
+    "min_high_commitment_tokens": 3,
+    "fail_gini_below": 0.3,
+    "fail_ratio_below": 1.5
+  }
+}

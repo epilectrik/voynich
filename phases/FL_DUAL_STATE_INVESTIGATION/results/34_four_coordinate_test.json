@@ -1,0 +1,35 @@
+{
+  "n_lines": 762,
+  "vocabulary": {
+    "ol_types": 368,
+    "or_types": 394,
+    "center_types": 640,
+    "ol_ttr": 0.4829,
+    "or_ttr": 0.5171,
+    "center_ttr": 0.4028,
+    "ol_entropy_norm": 0.892,
+    "or_entropy_norm": 0.918,
+    "center_entropy_norm": 0.879
+  },
+  "independence": {
+    "ol_or_cramers_v": 0.146,
+    "ol_vs_fl_low_v": 0.146,
+    "or_vs_fl_high_v": 0.12
+  },
+  "predictive_power": {
+    "baseline_entropy": 3.361,
+    "fl_pair_reduction_pct": 9.6,
+    "olor_reduction_pct": 26.8,
+    "all4_reduction_pct": 52.1
+  },
+  "checks": {
+    "ol_constrained_vocab": false,
+    "or_constrained_vocab": false,
+    "ol_or_independent": true,
+    "four_coords_predict_center": true,
+    "olor_adds_to_fl": true
+  },
+  "n_pass": 3,
+  "verdict": "PARTIAL_COORDINATES",
+  "explanation": "OL/OR are semi-coordinate: constrained but not fully independent"
+}

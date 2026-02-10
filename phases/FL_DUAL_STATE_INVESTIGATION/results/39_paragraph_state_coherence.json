@@ -1,0 +1,39 @@
+{
+  "within_vs_between": {
+    "mean_within": 2.502,
+    "mean_between": 2.483,
+    "ratio": 1.0075,
+    "p_mannwhitney": 0.657933,
+    "cohens_d": -0.012,
+    "p_permutation": 0.367,
+    "pass": false
+  },
+  "centroid_spread": {
+    "mean_spread": 1.534,
+    "n_folios": 64,
+    "pass": true
+  },
+  "header_body": {
+    "match_rate": 0.136,
+    "mean_header_body_dist": 2.602,
+    "n_paragraphs": 273,
+    "pass": false
+  },
+  "paragraph_diameter": {
+    "mean_diameter": 3.58,
+    "mean_unique_states": 3.1,
+    "tight_pct": 30.0,
+    "wide_pct": 31.5,
+    "n_paragraphs": 273,
+    "pass": false
+  },
+  "execution_gradient": {
+    "mean_rho_action": -0.006,
+    "mean_rho_oversight": -0.066,
+    "n_paragraphs": 94,
+    "pass": false
+  },
+  "verdict": "STRUCTURAL_ONLY",
+  "explanation": "Paragraph boundaries don't align with state coordinates - paragraphs partition structure, not state",
+  "checks_passed": 1
+}

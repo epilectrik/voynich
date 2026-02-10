@@ -1,0 +1,62 @@
+{
+  "n_lines": 1176,
+  "observed": {
+    "attractor": [
+      3,
+      3
+    ],
+    "attractor_label": [
+      "LATE",
+      "LATE"
+    ],
+    "convergence_frac": 1.0,
+    "distance_correction_rho": 0.866,
+    "n_states_tested": 32
+  },
+  "null_distribution": {
+    "n_shuffles": 1000,
+    "convergence": {
+      "mean": 0.99,
+      "percentile_95": 1.0,
+      "min": 0.913,
+      "max": 1.0,
+      "p_value": 0.771
+    },
+    "rho": {
+      "mean": 0.786,
+      "percentile_95": 0.867,
+      "min": 0.564,
+      "max": 0.916,
+      "p_value": 0.052
+    },
+    "attractor_location": {
+      "observed_in_null_frac": 1.0,
+      "most_common_null": [
+        3,
+        3
+      ],
+      "most_common_null_frac": 1.0,
+      "top_5": [
+        {
+          "cell": [
+            3,
+            3
+          ],
+          "label": [
+            "LATE",
+            "LATE"
+          ],
+          "count": 1000,
+          "frac": 1.0
+        }
+      ]
+    }
+  },
+  "checks": {
+    "check_1_convergence_exceeds_null": false,
+    "check_2_rho_exceeds_null": false,
+    "check_3_location_is_special": false
+  },
+  "verdict": "ARTIFACT",
+  "explanation": "Neither convergence fraction nor distance-correction rho exceeds the null distribution. The apparent attractor at (LATE,LATE) is an artifact of FL's positional gradient making LATE tokens more common."
+}

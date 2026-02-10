@@ -1,0 +1,708 @@
+{
+  "total_assigned": 5790,
+  "line_to_line_transitions": {
+    "LOW->LOW": 335,
+    "HIGH->LOW": 1216,
+    "LOW->HIGH": 111,
+    "HIGH->HIGH": 371
+  },
+  "same_para_transitions": {
+    "LOW->LOW": 241,
+    "HIGH->LOW": 1001,
+    "LOW->HIGH": 80,
+    "HIGH->HIGH": 303
+  },
+  "cross_para_transitions": {
+    "LOW->LOW": 94,
+    "LOW->HIGH": 31,
+    "HIGH->LOW": 215,
+    "HIGH->HIGH": 68
+  },
+  "reset_rate_overall": 0.7662,
+  "reset_rate_same_para": 0.7676,
+  "reset_rate_cross_para": 0.7597,
+  "paragraph_gradients": {
+    "n_tested": 323,
+    "mean_rho": 0.0094,
+    "median_rho": 0.0,
+    "first_line_avg_high_pct": 0.4809,
+    "last_line_avg_high_pct": 0.4633
+  },
+  "folio_gradients": {
+    "n_tested": 82,
+    "mean_rho": -0.0174,
+    "median_rho": 0.0045,
+    "first_q_avg_high_pct": 0.4938,
+    "last_q_avg_high_pct": 0.4842,
+    "per_folio": [
+      {
+        "folio": "f26r",
+        "n_lines": 9,
+        "rho": 0.5006939628599933,
+        "p": 0.1697827741222682,
+        "first_quarter_high": 0.2222222222222222,
+        "last_quarter_high": 0.7777777777777778
+      },
+      {
+        "folio": "f26v",
+        "n_lines": 9,
+        "rho": 0.2885426844228509,
+        "p": 0.45145597034295837,
+        "first_quarter_high": 0.5555555555555556,
+        "last_quarter_high": 0.7777777777777778
+      },
+      {
+        "folio": "f31r",
+        "n_lines": 7,
+        "rho": 0.23643312187173024,
+        "p": 0.6097426924107068,
+        "first_quarter_high": 0.625,
+        "last_quarter_high": 1.0
+      },
+      {
+        "folio": "f31v",
+        "n_lines": 10,
+        "rho": -0.525486787309028,
+        "p": 0.11878409062075249,
+        "first_quarter_high": 0.8333333333333334,
+        "last_quarter_high": 0.4444444444444444
+      },
+      {
+        "folio": "f33r",
+        "n_lines": 7,
+        "rho": -0.6923450994227358,
+        "p": 0.08472434870236926,
+        "first_quarter_high": 0.75,
+        "last_quarter_high": 0.41666666666666663
+      },
+      {
+        "folio": "f33v",
+        "n_lines": 11,
+        "rho": 0.35616809668223404,
+        "p": 0.2823374184643414,
+        "first_quarter_high": 0.32857142857142857,
+        "last_quarter_high": 0.47777777777777775
+      },
+      {
+        "folio": "f34r",
+        "n_lines": 14,
+        "rho": -0.2828760373014107,
+        "p": 0.32710736000043517,
+        "first_quarter_high": 0.3375,
+        "last_quarter_high": 0.225
+      },
+      {
+        "folio": "f34v",
+        "n_lines": 11,
+        "rho": 0.14817355731532722,
+        "p": 0.6637130685382354,
+        "first_quarter_high": 0.3111111111111111,
+        "last_quarter_high": 0.5
+      },
+      {
+        "folio": "f39r",
+        "n_lines": 16,
+        "rho": 0.09641353680829162,
+        "p": 0.7224398897377425,
+        "first_quarter_high": 0.3833333333333333,
+        "last_quarter_high": 0.5
+      },
+      {
+        "folio": "f39v",
+        "n_lines": 13,
+        "rho": -0.4543725000502669,
+        "p": 0.11880387742758693,
+        "first_quarter_high": 0.5,
+        "last_quarter_high": 0.3125
+      },
+      {
+        "folio": "f40r",
+        "n_lines": 11,
+        "rho": -0.1336533260147324,
+        "p": 0.6952257070781379,
+        "first_quarter_high": 0.3333333333333333,
+        "last_quarter_high": 0.41666666666666663
+      },
+      {
+        "folio": "f40v",
+        "n_lines": 17,
+        "rho": 0.006412786608267021,
+        "p": 0.9805122869470125,
+        "first_quarter_high": 0.6,
+        "last_quarter_high": 0.6571428571428571
+      },
+      {
+        "folio": "f41r",
+        "n_lines": 8,
+        "rho": 0.3068928850876477,
+        "p": 0.4596851913195994,
+        "first_quarter_high": 0.25,
+        "last_quarter_high": 0.4444444444444444
+      },
+      {
+        "folio": "f41v",
+        "n_lines": 6,
+        "rho": -0.48795003647426655,
+        "p": 0.3261642353450604,
+        "first_quarter_high": 1.0,
+        "last_quarter_high": 0.5
+      },
+      {
+        "folio": "f43r",
+        "n_lines": 12,
+        "rho": -0.08084470891712844,
+        "p": 0.8027698378138917,
+        "first_quarter_high": 0.36041666666666666,
+        "last_quarter_high": 0.375
+      },
+      {
+        "folio": "f43v",
+        "n_lines": 15,
+        "rho": -0.0718584295307272,
+        "p": 0.7991167497847947,
+        "first_quarter_high": 0.5875,
+        "last_quarter_high": 0.5833333333333334
+      },
+      {
+        "folio": "f46r",
+        "n_lines": 13,
+        "rho": 0.17395154251015027,
+        "p": 0.5697922085294029,
+        "first_quarter_high": 0.3333333333333333,
+        "last_quarter_high": 0.4
+      },
+      {
+        "folio": "f46v",
+        "n_lines": 11,
+        "rho": -0.5167110326499096,
+        "p": 0.10364201660673934,
+        "first_quarter_high": 0.39444444444444443,
+        "last_quarter_high": 0.16666666666666666
+      },
+      {
+        "folio": "f48r",
+        "n_lines": 9,
+        "rho": -0.3847235792304679,
+        "p": 0.3065946939469488,
+        "first_quarter_high": 0.4666666666666667,
+        "last_quarter_high": 0.16666666666666666
+      },
+      {
+        "folio": "f48v",
+        "n_lines": 11,
+        "rho": -0.16168394687448084,
+        "p": 0.6348236393784416,
+        "first_quarter_high": 0.3333333333333333,
+        "last_quarter_high": 0.25396825396825395
+      },
+      {
+        "folio": "f50r",
+        "n_lines": 9,
+        "rho": -0.6778302010921357,
+        "p": 0.04480926269300501,
+        "first_quarter_high": 0.7,
+        "last_quarter_high": 0.3333333333333333
+      },
+      {
+        "folio": "f50v",
+        "n_lines": 11,
+        "rho": 0.2580809098964746,
+        "p": 0.4435476286906216,
+        "first_quarter_high": 0.2777777777777778,
+        "last_quarter_high": 0.4444444444444444
+      },
+      {
+        "folio": "f55r",
+        "n_lines": 13,
+        "rho": 0.47976957692315647,
+        "p": 0.09709020022481572,
+        "first_quarter_high": 0.29166666666666663,
+        "last_quarter_high": 0.5791666666666666
+      },
+      {
+        "folio": "f55v",
+        "n_lines": 11,
+        "rho": -0.267750262373135,
+        "p": 0.4260277187405289,
+        "first_quarter_high": 0.6111111111111112,
+        "last_quarter_high": 0.5238095238095238
+      },
+      {
+        "folio": "f57r",
+        "n_lines": 7,
+        "rho": -0.5102520385624569,
+        "p": 0.2419819225024226,
+        "first_quarter_high": 0.5,
+        "last_quarter_high": 0.0
+      },
+      {
+        "folio": "f66r",
+        "n_lines": 31,
+        "rho": 0.32137664970938357,
+        "p": 0.07791348038741336,
+        "first_quarter_high": 0.19999999999999998,
+        "last_quarter_high": 0.6208333333333333
+      },
+      {
+        "folio": "f66v",
+        "n_lines": 13,
+        "rho": 0.13584494601434183,
+        "p": 0.6581238659808248,
+        "first_quarter_high": 0.7291666666666666,
+        "last_quarter_high": 0.75
+      },
+      {
+        "folio": "f75r",
+        "n_lines": 44,
+        "rho": 0.35220505697368554,
+        "p": 0.019042878414485452,
+        "first_quarter_high": 0.4083333333333333,
+        "last_quarter_high": 0.6551587301587302
+      },
+      {
+        "folio": "f75v",
+        "n_lines": 33,
+        "rho": 0.11008393671781952,
+        "p": 0.541955542594902,
+        "first_quarter_high": 0.5407407407407407,
+        "last_quarter_high": 0.6574074074074074
+      },
+      {
+        "folio": "f76r",
+        "n_lines": 46,
+        "rho": -0.34546343494310366,
+        "p": 0.018699272683671584,
+        "first_quarter_high": 0.7305555555555555,
+        "last_quarter_high": 0.5229166666666667
+      },
+      {
+        "folio": "f76v",
+        "n_lines": 32,
+        "rho": -0.024584378666447478,
+        "p": 0.8937527473918927,
+        "first_quarter_high": 0.5037037037037037,
+        "last_quarter_high": 0.42592592592592593
+      },
+      {
+        "folio": "f77r",
+        "n_lines": 29,
+        "rho": 0.014750831665161305,
+        "p": 0.9394624970329704,
+        "first_quarter_high": 0.5104166666666666,
+        "last_quarter_high": 0.5
+      },
+      {
+        "folio": "f77v",
+        "n_lines": 32,
+        "rho": 0.08482710861402425,
+        "p": 0.6443705865469099,
+        "first_quarter_high": 0.6407407407407407,
+        "last_quarter_high": 0.6037037037037037
+      },
+      {
+        "folio": "f78r",
+        "n_lines": 38,
+        "rho": 0.13359158508450428,
+        "p": 0.4239438082679343,
+        "first_quarter_high": 0.45,
+        "last_quarter_high": 0.5416666666666666
+      },
+      {
+        "folio": "f78v",
+        "n_lines": 31,
+        "rho": -0.30493052417261074,
+        "p": 0.09531454077452356,
+        "first_quarter_high": 0.7291666666666666,
+        "last_quarter_high": 0.4375
+      },
+      {
+        "folio": "f79r",
+        "n_lines": 42,
+        "rho": 0.04915456267517115,
+        "p": 0.7572216803669213,
+        "first_quarter_high": 0.39545454545454545,
+        "last_quarter_high": 0.4621212121212121
+      },
+      {
+        "folio": "f79v",
+        "n_lines": 36,
+        "rho": 0.27956244098272703,
+        "p": 0.09867965296869562,
+        "first_quarter_high": 0.3333333333333333,
+        "last_quarter_high": 0.5578571428571428
+      },
+      {
+        "folio": "f80r",
+        "n_lines": 39,
+        "rho": 0.005248173581124843,
+        "p": 0.9747043831129193,
+        "first_quarter_high": 0.48333333333333334,
+        "last_quarter_high": 0.44833333333333336
+      },
+      {
+        "folio": "f80v",
+        "n_lines": 40,
+        "rho": -0.010075985727299137,
+        "p": 0.9507962688263262,
+        "first_quarter_high": 0.6545454545454545,
+        "last_quarter_high": 0.5777056277056277
+      },
+      {
+        "folio": "f81r",
+        "n_lines": 26,
+        "rho": 0.025097898984044565,
+        "p": 0.9031369536079592,
+        "first_quarter_high": 0.4738095238095238,
+        "last_quarter_high": 0.39285714285714285
+      },
+      {
+        "folio": "f81v",
+        "n_lines": 25,
+        "rho": -0.036128749408677996,
+        "p": 0.8638691445663668,
+        "first_quarter_high": 0.625,
+        "last_quarter_high": 0.4666666666666667
+      },
+      {
+        "folio": "f82r",
+        "n_lines": 25,
+        "rho": 0.15035799573591166,
+        "p": 0.4731302021093313,
+        "first_quarter_high": 0.3333333333333333,
+        "last_quarter_high": 0.42857142857142855
+      },
+      {
+        "folio": "f82v",
+        "n_lines": 24,
+        "rho": -0.04197934797210104,
+        "p": 0.8455787273358001,
+        "first_quarter_high": 0.41904761904761906,
+        "last_quarter_high": 0.42857142857142855
+      },
+      {
+        "folio": "f83r",
+        "n_lines": 33,
+        "rho": 0.015150408537996075,
+        "p": 0.9333098260159374,
+        "first_quarter_high": 0.49074074074074076,
+        "last_quarter_high": 0.5185185185185185
+      },
+      {
+        "folio": "f83v",
+        "n_lines": 26,
+        "rho": -0.049822948781460166,
+        "p": 0.8090098030528573,
+        "first_quarter_high": 0.2619047619047619,
+        "last_quarter_high": 0.25
+      },
+      {
+        "folio": "f84r",
+        "n_lines": 32,
+        "rho": 0.1502091158309328,
+        "p": 0.41188812534008257,
+        "first_quarter_high": 0.2722222222222222,
+        "last_quarter_high": 0.5111111111111111
+      },
+      {
+        "folio": "f84v",
+        "n_lines": 33,
+        "rho": -0.21323144559002494,
+        "p": 0.23347584651166525,
+        "first_quarter_high": 0.5555555555555556,
+        "last_quarter_high": 0.3888888888888889
+      },
+      {
+        "folio": "f85r1",
+        "n_lines": 33,
+        "rho": -0.013153197498053706,
+        "p": 0.9420854844868265,
+        "first_quarter_high": 0.6722222222222223,
+        "last_quarter_high": 0.6462962962962963
+      },
+      {
+        "folio": "f85r2",
+        "n_lines": 14,
+        "rho": 0.29931228981199953,
+        "p": 0.2985304958521521,
+        "first_quarter_high": 0.24404761904761907,
+        "last_quarter_high": 0.5
+      },
+      {
+        "folio": "f86v4",
+        "n_lines": 5,
+        "rho": 0.8999999999999998,
+        "p": 0.03738607346849874,
+        "first_quarter_high": 0.5694444444444444,
+        "last_quarter_high": 0.6568627450980392
+      },
+      {
+        "folio": "f86v6",
+        "n_lines": 41,
+        "rho": -0.11848729018032841,
+        "p": 0.46061700503603775,
+        "first_quarter_high": 0.546969696969697,
+        "last_quarter_high": 0.36645021645021647
+      },
+      {
+        "folio": "f86v5",
+        "n_lines": 38,
+        "rho": -0.026392451272807534,
+        "p": 0.8750191130422469,
+        "first_quarter_high": 0.47714285714285715,
+        "last_quarter_high": 0.45285714285714285
+      },
+      {
+        "folio": "f86v3",
+        "n_lines": 15,
+        "rho": -0.007227237300457706,
+        "p": 0.9796061684819835,
+        "first_quarter_high": 0.3875,
+        "last_quarter_high": 0.3666666666666667
+      },
+      {
+        "folio": "f94r",
+        "n_lines": 9,
+        "rho": -0.40406881213262624,
+        "p": 0.28077071939594483,
+        "first_quarter_high": 0.5833333333333334,
+        "last_quarter_high": 0.4166666666666667
+      },
+      {
+        "folio": "f94v",
+        "n_lines": 11,
+        "rho": 0.33539308516937355,
+        "p": 0.3133105621605412,
+        "first_quarter_high": 0.2777777777777778,
+        "last_quarter_high": 0.3888888888888889
+      },
+      {
+        "folio": "f95r1",
+        "n_lines": 11,
+        "rho": 0.5308031517221798,
+        "p": 0.09296047052876867,
+        "first_quarter_high": 0.08333333333333333,
+        "last_quarter_high": 0.6444444444444444
+      },
+      {
+        "folio": "f95r2",
+        "n_lines": 9,
+        "rho": -0.45769286494404704,
+        "p": 0.21541170296009043,
+        "first_quarter_high": 0.6888888888888889,
+        "last_quarter_high": 0.2777777777777778
+      },
+      {
+        "folio": "f95v2",
+        "n_lines": 7,
+        "rho": -0.39285714285714296,
+        "p": 0.38331687042697266,
+        "first_quarter_high": 0.375,
+        "last_quarter_high": 0.29166666666666663
+      },
+      {
+        "folio": "f95v1",
+        "n_lines": 12,
+        "rho": 0.042866985897240854,
+        "p": 0.8947650686292311,
+        "first_quarter_high": 0.48333333333333334,
+        "last_quarter_high": 0.4583333333333333
+      },
+      {
+        "folio": "f103r",
+        "n_lines": 41,
+        "rho": -0.11130277048251883,
+        "p": 0.48843333851727966,
+        "first_quarter_high": 0.5833333333333334,
+        "last_quarter_high": 0.4015151515151515
+      },
+      {
+        "folio": "f103v",
+        "n_lines": 41,
+        "rho": 0.012675572652266088,
+        "p": 0.9373059723896303,
+        "first_quarter_high": 0.5075757575757576,
+        "last_quarter_high": 0.45606060606060606
+      },
+      {
+        "folio": "f104r",
+        "n_lines": 41,
+        "rho": -0.00044613937166336455,
+        "p": 0.9977911880203949,
+        "first_quarter_high": 0.5727272727272728,
+        "last_quarter_high": 0.49242424242424243
+      },
+      {
+        "folio": "f104v",
+        "n_lines": 33,
+        "rho": 0.05454039794898938,
+        "p": 0.763068013286931,
+        "first_quarter_high": 0.4537037037037037,
+        "last_quarter_high": 0.6555555555555556
+      },
+      {
+        "folio": "f105r",
+        "n_lines": 30,
+        "rho": -0.041313702484819,
+        "p": 0.8283941436882793,
+        "first_quarter_high": 0.5,
+        "last_quarter_high": 0.4583333333333333
+      },
+      {
+        "folio": "f105v",
+        "n_lines": 30,
+        "rho": 0.04248039813911978,
+        "p": 0.8236223676590689,
+        "first_quarter_high": 0.4895833333333333,
+        "last_quarter_high": 0.5166666666666667
+      },
+      {
+        "folio": "f106r",
+        "n_lines": 38,
+        "rho": 0.1401129595319524,
+        "p": 0.4014625641815266,
+        "first_quarter_high": 0.44166666666666665,
+        "last_quarter_high": 0.5833333333333334
+      },
+      {
+        "folio": "f106v",
+        "n_lines": 46,
+        "rho": -0.02638265364559911,
+        "p": 0.8618327325366204,
+        "first_quarter_high": 0.5513888888888889,
+        "last_quarter_high": 0.4583333333333333
+      },
+      {
+        "folio": "f107r",
+        "n_lines": 48,
+        "rho": -0.1833978083159608,
+        "p": 0.21212656789745069,
+        "first_quarter_high": 0.6666666666666666,
+        "last_quarter_high": 0.4652014652014652
+      },
+      {
+        "folio": "f107v",
+        "n_lines": 46,
+        "rho": 0.02374171893938065,
+        "p": 0.8755485347965772,
+        "first_quarter_high": 0.5555555555555556,
+        "last_quarter_high": 0.4861111111111111
+      },
+      {
+        "folio": "f108r",
+        "n_lines": 43,
+        "rho": 0.0933182944630631,
+        "p": 0.5517108730152372,
+        "first_quarter_high": 0.6136363636363636,
+        "last_quarter_high": 0.7121212121212122
+      },
+      {
+        "folio": "f108v",
+        "n_lines": 41,
+        "rho": 0.07728673216054589,
+        "p": 0.6310199143150771,
+        "first_quarter_high": 0.49242424242424243,
+        "last_quarter_high": 0.5909090909090909
+      },
+      {
+        "folio": "f111r",
+        "n_lines": 46,
+        "rho": -0.047601086638797065,
+        "p": 0.7534150878917312,
+        "first_quarter_high": 0.5861111111111111,
+        "last_quarter_high": 0.575
+      },
+      {
+        "folio": "f111v",
+        "n_lines": 45,
+        "rho": -0.35963100580640234,
+        "p": 0.015250081756317719,
+        "first_quarter_high": 0.7958333333333333,
+        "last_quarter_high": 0.4513888888888889
+      },
+      {
+        "folio": "f112r",
+        "n_lines": 40,
+        "rho": -0.15917867135396765,
+        "p": 0.3265509699333228,
+        "first_quarter_high": 0.5162337662337663,
+        "last_quarter_high": 0.35454545454545455
+      },
+      {
+        "folio": "f112v",
+        "n_lines": 40,
+        "rho": 0.0690227375632383,
+        "p": 0.6721487143411112,
+        "first_quarter_high": 0.3106060606060606,
+        "last_quarter_high": 0.3606060606060606
+      },
+      {
+        "folio": "f113r",
+        "n_lines": 42,
+        "rho": 0.16399980959180774,
+        "p": 0.2993572674243314,
+        "first_quarter_high": 0.5303030303030303,
+        "last_quarter_high": 0.6454545454545455
+      },
+      {
+        "folio": "f113v",
+        "n_lines": 45,
+        "rho": 0.003687264225322428,
+        "p": 0.9808215518994674,
+        "first_quarter_high": 0.5909722222222222,
+        "last_quarter_high": 0.5625
+      },
+      {
+        "folio": "f114r",
+        "n_lines": 37,
+        "rho": -0.05011075602191596,
+        "p": 0.7683491392911542,
+        "first_quarter_high": 0.5433333333333333,
+        "last_quarter_high": 0.49166666666666664
+      },
+      {
+        "folio": "f114v",
+        "n_lines": 32,
+        "rho": 0.034738178985220226,
+        "p": 0.8502909006302273,
+        "first_quarter_high": 0.5388888888888889,
+        "last_quarter_high": 0.5740740740740741
+      },
+      {
+        "folio": "f115r",
+        "n_lines": 40,
+        "rho": -0.3791535237153066,
+        "p": 0.015830743098723194,
+        "first_quarter_high": 0.7924242424242425,
+        "last_quarter_high": 0.4590909090909091
+      },
+      {
+        "folio": "f115v",
+        "n_lines": 35,
+        "rho": -0.15458051544578988,
+        "p": 0.37527042939116606,
+        "first_quarter_high": 0.46296296296296297,
+        "last_quarter_high": 0.3962962962962963
+      },
+      {
+        "folio": "f116r",
+        "n_lines": 49,
+        "rho": 0.2798919406950709,
+        "p": 0.051439988580523816,
+        "first_quarter_high": 0.3791208791208791,
+        "last_quarter_high": 0.6679487179487179
+      }
+    ]
+  },
+  "paragraph_boundaries": {
+    "first_token_modes": {
+      "LOW": 369,
+      "HIGH": 121
+    },
+    "last_token_modes": {
+      "LOW": 148,
+      "HIGH": 342
+    }
+  },
+  "verdict": "LINE_LEVEL_RESET",
+  "explanation": "HIGH->LOW reset rate = 77% at line boundaries. No paragraph-level accumulation. LOW->HIGH is a per-line process that resets each line."
+}

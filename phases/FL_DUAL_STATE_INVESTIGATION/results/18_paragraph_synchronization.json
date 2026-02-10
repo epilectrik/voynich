@@ -1,0 +1,37 @@
+{
+  "n_paragraphs": 621,
+  "n_lines": 2420,
+  "boundary_stages": {
+    "first": {
+      "n": 990,
+      "mean": 3.312,
+      "std": 1.297
+    },
+    "last": {
+      "n": 764,
+      "mean": 3.065,
+      "std": 1.309
+    },
+    "interior": {
+      "n": 3444,
+      "mean": 3.111,
+      "std": 1.25
+    }
+  },
+  "middle_diversity": {
+    "mean": 0.59,
+    "median": 0.571
+  },
+  "consecutive_overlap": {
+    "within_para_jaccard": 0.198,
+    "cross_para_jaccard": 0.157
+  },
+  "terminal_concentration": {
+    "first": 0.397,
+    "last": 0.28,
+    "interior": 0.307
+  },
+  "sync_evidence": [],
+  "verdict": "NO_SYNC",
+  "explanation": "No evidence of paragraph-level synchronization"
+}

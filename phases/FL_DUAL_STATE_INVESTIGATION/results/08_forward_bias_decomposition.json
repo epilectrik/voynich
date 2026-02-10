@@ -1,0 +1,142 @@
+{
+  "total_transitions": 3766,
+  "global_bias": {
+    "n": 3766,
+    "forward": 1502,
+    "backward": 1155,
+    "same": 1109,
+    "fwd_rate": 0.3988,
+    "bwd_rate": 0.3067,
+    "same_rate": 0.2945,
+    "fwd_bwd_ratio": 1.3
+  },
+  "by_hazard_class": {
+    "HAZARD": {
+      "n": 645,
+      "forward": 404,
+      "backward": 84,
+      "same": 157,
+      "fwd_rate": 0.6264,
+      "bwd_rate": 0.1302,
+      "same_rate": 0.2434,
+      "fwd_bwd_ratio": 4.81
+    },
+    "SAFE": {
+      "n": 28,
+      "forward": 7,
+      "backward": 16,
+      "same": 5,
+      "fwd_rate": 0.25,
+      "bwd_rate": 0.5714,
+      "same_rate": 0.1786,
+      "fwd_bwd_ratio": 0.44
+    },
+    "OTHER": {
+      "n": 3093,
+      "forward": 1091,
+      "backward": 1055,
+      "same": 947,
+      "fwd_rate": 0.3527,
+      "bwd_rate": 0.3411,
+      "same_rate": 0.3062,
+      "fwd_bwd_ratio": 1.03
+    }
+  },
+  "by_stage_group": {
+    "EARLY_STAGES": {
+      "n": 296,
+      "forward": 284,
+      "backward": 1,
+      "same": 11,
+      "fwd_rate": 0.9595,
+      "bwd_rate": 0.0034,
+      "same_rate": 0.0372,
+      "fwd_bwd_ratio": 284.0
+    },
+    "MEDIAL_STAGES": {
+      "n": 981,
+      "forward": 691,
+      "backward": 42,
+      "same": 248,
+      "fwd_rate": 0.7044,
+      "bwd_rate": 0.0428,
+      "same_rate": 0.2528,
+      "fwd_bwd_ratio": 16.45
+    },
+    "LATE_STAGES": {
+      "n": 2489,
+      "forward": 527,
+      "backward": 1112,
+      "same": 850,
+      "fwd_rate": 0.2117,
+      "bwd_rate": 0.4468,
+      "same_rate": 0.3415,
+      "fwd_bwd_ratio": 0.47
+    }
+  },
+  "by_individual_stage": {
+    "INITIAL": {
+      "n": 102,
+      "forward": 97,
+      "backward": 0,
+      "same": 5,
+      "fwd_rate": 0.951,
+      "bwd_rate": 0.0,
+      "same_rate": 0.049,
+      "fwd_bwd_ratio": "inf"
+    },
+    "EARLY": {
+      "n": 194,
+      "forward": 187,
+      "backward": 1,
+      "same": 6,
+      "fwd_rate": 0.9639,
+      "bwd_rate": 0.0052,
+      "same_rate": 0.0309,
+      "fwd_bwd_ratio": 187.0
+    },
+    "MEDIAL": {
+      "n": 981,
+      "forward": 691,
+      "backward": 42,
+      "same": 248,
+      "fwd_rate": 0.7044,
+      "bwd_rate": 0.0428,
+      "same_rate": 0.2528,
+      "fwd_bwd_ratio": 16.45
+    },
+    "LATE": {
+      "n": 1427,
+      "forward": 451,
+      "backward": 421,
+      "same": 555,
+      "fwd_rate": 0.316,
+      "bwd_rate": 0.295,
+      "same_rate": 0.3889,
+      "fwd_bwd_ratio": 1.07
+    },
+    "FINAL": {
+      "n": 319,
+      "forward": 76,
+      "backward": 187,
+      "same": 56,
+      "fwd_rate": 0.2382,
+      "bwd_rate": 0.5862,
+      "same_rate": 0.1755,
+      "fwd_bwd_ratio": 0.41
+    },
+    "TERMINAL": {
+      "n": 743,
+      "forward": 0,
+      "backward": 504,
+      "same": 239,
+      "fwd_rate": 0.0,
+      "bwd_rate": 0.6783,
+      "same_rate": 0.3217,
+      "fwd_bwd_ratio": 0.0
+    }
+  },
+  "ratio_spread": 10.93,
+  "verdict": "SUBTYPE_DRIVEN",
+  "explanation": "Forward bias varies >3x across hazard classes (spread=10.9x). Ratios: HAZARD={'n': 645, 'forward': 404, 'backward': 84, 'same': 157, 'fwd_rate': 0.6264, 'bwd_rate': 0.1302, 'same_rate': 0.2434, 'fwd_bwd_ratio': 4.81}, SAFE={'n': 28, 'forward': 7, 'backward': 16, 'same': 5, 'fwd_rate': 0.25, 'bwd_rate': 0.5714, 'same_rate': 0.1786, 'fwd_bwd_ratio': 0.44}, OTHER={'n': 3093, 'forward': 1091, 'backward': 1055, 'same': 947, 'fwd_rate': 0.3527, 'bwd_rate': 0.3411, 'same_rate': 0.3062, 'fwd_bwd_ratio': 1.03}"
+}

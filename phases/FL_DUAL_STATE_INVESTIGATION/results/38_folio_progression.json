@@ -1,0 +1,98 @@
+{
+  "n_folios": 60,
+  "n_with_progression": 60,
+  "connectivity": {
+    "connected_rate": 0.7,
+    "mean_unique_states": 10.3,
+    "mean_lo_span": 3.7,
+    "mean_ho_span": 4.1
+  },
+  "progression_types": {
+    "GRID_PATCH": 58,
+    "HIGH_SWEEP": 1,
+    "POSITIVE_DIAGONAL": 1
+  },
+  "section_profiles": {
+    "H": {
+      "n_folios": 12,
+      "mean_lo_center": 3.53,
+      "mean_ho_center": 3.07,
+      "dominant_type": "GRID_PATCH"
+    },
+    "T": {
+      "n_folios": 2,
+      "mean_lo_center": 3.55,
+      "mean_ho_center": 2.91,
+      "dominant_type": "GRID_PATCH"
+    },
+    "B": {
+      "n_folios": 20,
+      "mean_lo_center": 3.03,
+      "mean_ho_center": 2.82,
+      "dominant_type": "GRID_PATCH"
+    },
+    "C": {
+      "n_folios": 3,
+      "mean_lo_center": 3.09,
+      "mean_ho_center": 2.69,
+      "dominant_type": "GRID_PATCH"
+    },
+    "S": {
+      "n_folios": 23,
+      "mean_lo_center": 2.96,
+      "mean_ho_center": 2.75,
+      "dominant_type": "GRID_PATCH"
+    }
+  },
+  "universal_states": [
+    {
+      "low": "MEDIAL",
+      "high": "MEDIAL",
+      "rate": 65.0
+    },
+    {
+      "low": "MEDIAL",
+      "high": "LATE",
+      "rate": 75.0
+    },
+    {
+      "low": "LATE",
+      "high": "MEDIAL",
+      "rate": 85.0
+    },
+    {
+      "low": "LATE",
+      "high": "LATE",
+      "rate": 80.0
+    },
+    {
+      "low": "MEDIAL",
+      "high": "TERMINAL",
+      "rate": 43.3
+    },
+    {
+      "low": "TERMINAL",
+      "high": "MEDIAL",
+      "rate": 61.7
+    },
+    {
+      "low": "LATE",
+      "high": "TERMINAL",
+      "rate": 51.7
+    },
+    {
+      "low": "TERMINAL",
+      "high": "LATE",
+      "rate": 68.3
+    },
+    {
+      "low": "TERMINAL",
+      "high": "TERMINAL",
+      "rate": 43.3
+    }
+  ],
+  "transitions": {
+    "action_up_pct": 52.8,
+    "oversight_up_pct": 48.3
+  }
+}

@@ -1,0 +1,131 @@
+{
+  "test": "08_paragraph_line_progression",
+  "phase": "LINE_CONTROL_BLOCK_GRAMMAR",
+  "verdict": "FAIL",
+  "verdict_detail": "Only 1 feature(s) significant after Bonferroni correction (threshold p<0.0014): body lines are homogeneous.",
+  "parameters": {
+    "min_paragraph_lines": 5,
+    "n_shuffles": 1000,
+    "random_seed": 42,
+    "alpha": 0.01,
+    "bonferroni_alpha": 0.001429,
+    "n_tests": 7
+  },
+  "counts": {
+    "total_paragraphs": 537,
+    "paragraphs_5plus_lines": 174,
+    "total_body_lines": 1324,
+    "unique_paragraphs_analyzed": 174
+  },
+  "raw_spearman": {
+    "EN_fraction": {
+      "rho": -0.023192,
+      "analytic_p": 0.3991110613806952,
+      "shuffle_p": 0.34965,
+      "significant_bonferroni": false
+    },
+    "FL_fraction": {
+      "rho": -0.050114,
+      "analytic_p": 0.0683192267932524,
+      "shuffle_p": 0.067932,
+      "significant_bonferroni": false
+    },
+    "CC_fraction": {
+      "rho": -0.048861,
+      "analytic_p": 0.0755236285446475,
+      "shuffle_p": 0.075924,
+      "significant_bonferroni": false
+    },
+    "mean_middle_length": {
+      "rho": 0.031771,
+      "analytic_p": 0.24799545593348044,
+      "shuffle_p": 0.224775,
+      "significant_bonferroni": false
+    },
+    "line_length": {
+      "rho": -0.228701,
+      "analytic_p": 3.584642921288748e-17,
+      "shuffle_p": 0.000999,
+      "significant_bonferroni": true
+    },
+    "TTR": {
+      "rho": 0.063433,
+      "analytic_p": 0.020984455561886155,
+      "shuffle_p": 0.013986,
+      "significant_bonferroni": false
+    },
+    "qo_prefix_fraction": {
+      "rho": -0.05125,
+      "analytic_p": 0.06228056236315927,
+      "shuffle_p": 0.045954,
+      "significant_bonferroni": false
+    }
+  },
+  "length_controlled_partial_spearman": {
+    "EN_fraction": {
+      "partial_rho": -0.032972,
+      "partial_analytic_p": 0.23055778674512703,
+      "shuffle_p": 0.170829,
+      "significant_bonferroni": false
+    },
+    "FL_fraction": {
+      "partial_rho": 0.003467,
+      "partial_analytic_p": 0.899712634235394,
+      "shuffle_p": 0.897103,
+      "significant_bonferroni": false
+    },
+    "CC_fraction": {
+      "partial_rho": -0.003246,
+      "partial_analytic_p": 0.9060793823709191,
+      "shuffle_p": 0.916084,
+      "significant_bonferroni": false
+    },
+    "qo_prefix_fraction": {
+      "partial_rho": -0.075847,
+      "partial_analytic_p": 0.005759196528407713,
+      "shuffle_p": 0.003996,
+      "significant_bonferroni": false
+    }
+  },
+  "significant_features_after_length_control": [
+    "line_length"
+  ],
+  "n_significant": 1,
+  "shuffle_distributions": {
+    "EN_fraction": {
+      "mean": 7.9e-05,
+      "std": 0.02372,
+      "observed_rho": -0.023192
+    },
+    "FL_fraction": {
+      "mean": -0.001096,
+      "std": 0.027232,
+      "observed_rho": -0.050114
+    },
+    "CC_fraction": {
+      "mean": -0.000938,
+      "std": 0.026337,
+      "observed_rho": -0.048861
+    },
+    "mean_middle_length": {
+      "mean": 0.000356,
+      "std": 0.026239,
+      "observed_rho": 0.031771
+    },
+    "line_length": {
+      "mean": 0.000736,
+      "std": 0.023183,
+      "observed_rho": -0.228701
+    },
+    "TTR": {
+      "mean": -0.000757,
+      "std": 0.026514,
+      "observed_rho": 0.063433
+    },
+    "qo_prefix_fraction": {
+      "mean": 0.000223,
+      "std": 0.0253,
+      "observed_rho": -0.05125
+    }
+  }
+}

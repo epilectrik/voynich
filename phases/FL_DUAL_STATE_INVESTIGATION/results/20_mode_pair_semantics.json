@@ -1,0 +1,191 @@
+{
+  "n_lines_with_pairs": 1209,
+  "pair_frequency": {
+    "LATE->LATE": 192,
+    "LATE->MEDIAL": 131,
+    "MEDIAL->LATE": 107,
+    "MEDIAL->MEDIAL": 99,
+    "TERMINAL->LATE": 78,
+    "TERMINAL->MEDIAL": 66,
+    "TERMINAL->TERMINAL": 60,
+    "LATE->TERMINAL": 51,
+    "LATE->FINAL": 41,
+    "LATE->EARLY": 40,
+    "MEDIAL->TERMINAL": 38,
+    "FINAL->MEDIAL": 34,
+    "MEDIAL->FINAL": 31,
+    "FINAL->LATE": 26,
+    "MEDIAL->EARLY": 25,
+    "TERMINAL->FINAL": 24,
+    "FINAL->FINAL": 20,
+    "EARLY->LATE": 19,
+    "TERMINAL->EARLY": 18,
+    "LATE->INITIAL": 16,
+    "FINAL->TERMINAL": 13,
+    "EARLY->MEDIAL": 10,
+    "MEDIAL->INITIAL": 9,
+    "INITIAL->LATE": 8,
+    "INITIAL->MEDIAL": 8,
+    "EARLY->TERMINAL": 8,
+    "EARLY->EARLY": 6,
+    "TERMINAL->INITIAL": 5,
+    "FINAL->INITIAL": 5,
+    "INITIAL->FINAL": 4,
+    "EARLY->FINAL": 4,
+    "INITIAL->TERMINAL": 4,
+    "INITIAL->EARLY": 3,
+    "FINAL->EARLY": 3,
+    "EARLY->INITIAL": 2,
+    "INITIAL->INITIAL": 1
+  },
+  "enriched_pairs": {
+    "FINAL->FINAL": {
+      "obs": 20,
+      "exp": 10.4,
+      "ratio": 1.93
+    },
+    "TERMINAL->TERMINAL": {
+      "obs": 60,
+      "exp": 36.1,
+      "ratio": 1.66
+    }
+  },
+  "depleted_pairs": {},
+  "chi_squared_pair_independence": {
+    "chi2": 51.6,
+    "p": 0.0013366088704946065,
+    "cramers_v": 0.092
+  },
+  "pair_role_profiles": {
+    "LATE->LATE": {
+      "ENERGY_OPERATOR": 49.6,
+      "UNKNOWN": 22.3,
+      "AUXILIARY": 15.1,
+      "FREQUENT_OPERATOR": 10.3,
+      "CORE_CONTROL": 2.8
+    },
+    "LATE->MEDIAL": {
+      "ENERGY_OPERATOR": 47.1,
+      "UNKNOWN": 26.0,
+      "AUXILIARY": 14.3,
+      "FREQUENT_OPERATOR": 10.2,
+      "CORE_CONTROL": 2.3
+    },
+    "MEDIAL->LATE": {
+      "ENERGY_OPERATOR": 39.2,
+      "UNKNOWN": 29.9,
+      "AUXILIARY": 15.6,
+      "FREQUENT_OPERATOR": 14.3,
+      "CORE_CONTROL": 1.0
+    },
+    "MEDIAL->MEDIAL": {
+      "ENERGY_OPERATOR": 44.1,
+      "UNKNOWN": 26.5,
+      "AUXILIARY": 14.3,
+      "FREQUENT_OPERATOR": 13.5,
+      "CORE_CONTROL": 1.6
+    },
+    "TERMINAL->LATE": {
+      "ENERGY_OPERATOR": 42.0,
+      "UNKNOWN": 36.4,
+      "AUXILIARY": 13.1,
+      "FREQUENT_OPERATOR": 7.4,
+      "CORE_CONTROL": 1.1
+    },
+    "TERMINAL->MEDIAL": {
+      "ENERGY_OPERATOR": 41.8,
+      "UNKNOWN": 32.9,
+      "AUXILIARY": 11.4,
+      "FREQUENT_OPERATOR": 10.8,
+      "CORE_CONTROL": 3.2
+    },
+    "TERMINAL->TERMINAL": {
+      "ENERGY_OPERATOR": 43.1,
+      "UNKNOWN": 32.3,
+      "AUXILIARY": 11.5,
+      "FREQUENT_OPERATOR": 11.5,
+      "CORE_CONTROL": 1.5
+    },
+    "LATE->TERMINAL": {
+      "ENERGY_OPERATOR": 45.2,
+      "UNKNOWN": 26.0,
+      "AUXILIARY": 13.0,
+      "FREQUENT_OPERATOR": 15.8,
+      "CORE_CONTROL": 0.0
+    },
+    "LATE->FINAL": {
+      "ENERGY_OPERATOR": 38.5,
+      "UNKNOWN": 32.4,
+      "AUXILIARY": 15.5,
+      "FREQUENT_OPERATOR": 11.5,
+      "CORE_CONTROL": 2.0
+    },
+    "LATE->EARLY": {
+      "ENERGY_OPERATOR": 43.8,
+      "UNKNOWN": 18.8,
+      "AUXILIARY": 25.0,
+      "FREQUENT_OPERATOR": 8.3,
+      "CORE_CONTROL": 4.2
+    },
+    "MEDIAL->TERMINAL": {
+      "ENERGY_OPERATOR": 36.4,
+      "UNKNOWN": 30.1,
+      "AUXILIARY": 16.1,
+      "FREQUENT_OPERATOR": 14.7,
+      "CORE_CONTROL": 2.8
+    },
+    "FINAL->MEDIAL": {
+      "ENERGY_OPERATOR": 43.6,
+      "UNKNOWN": 27.7,
+      "AUXILIARY": 11.9,
+      "FREQUENT_OPERATOR": 14.9,
+      "CORE_CONTROL": 2.0
+    },
+    "MEDIAL->FINAL": {
+      "ENERGY_OPERATOR": 24.1,
+      "UNKNOWN": 39.1,
+      "AUXILIARY": 19.5,
+      "FREQUENT_OPERATOR": 16.1,
+      "CORE_CONTROL": 0.0
+    },
+    "FINAL->LATE": {
+      "ENERGY_OPERATOR": 42.6,
+      "UNKNOWN": 29.8,
+      "AUXILIARY": 11.7,
+      "FREQUENT_OPERATOR": 14.9,
+      "CORE_CONTROL": 1.1
+    },
+    "MEDIAL->EARLY": {
+      "ENERGY_OPERATOR": 46.3,
+      "UNKNOWN": 36.6,
+      "AUXILIARY": 7.3,
+      "FREQUENT_OPERATOR": 9.8,
+      "CORE_CONTROL": 0.0
+    }
+  },
+  "chi_squared_pair_role": {
+    "chi2": 77.9,
+    "p": 0.027989639741688763,
+    "cramers_v": 0.084
+  },
+  "chi_squared_pair_section": {
+    "chi2": 193.7,
+    "p": 1.6961210910118964e-23,
+    "cramers_v": 0.237
+  },
+  "mutual_information": {
+    "pair_gap": 0.1438,
+    "low_gap": 0.0336,
+    "high_gap": 0.0404,
+    "low_high": 0.029,
+    "pair_gain": 0.1034
+  },
+  "direction": {
+    "forward": 349,
+    "same": 378,
+    "backward": 482,
+    "ratio": 0.72
+  },
+  "verdict": "PAIR_CARRIES_MEANING",
+  "explanation": "The LOW+HIGH pair encodes information beyond either mode alone"
+}

@@ -1,0 +1,9 @@
+{
+  "test": "middle_uniqueness",
+  "verdict": "PASS",
+  "middle_collisions": 0,
+  "suffix_collision_groups": 0,
+  "token_triple_shared_glosses": 155,
+  "glossed_middles": 340,
+  "distinct_middle_glosses": 340
+}

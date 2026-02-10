@@ -1,0 +1,20 @@
+{
+  "n_annotated_lines": 548,
+  "n_selected": 20,
+  "layer_prefix_outer_left_top3": [
+    "ch",
+    "sh",
+    "qo"
+  ],
+  "layer_prefix_outer_right_top3": [
+    "qo",
+    "ch",
+    "ot"
+  ],
+  "layer_prefix_center_top3": [
+    "qo",
+    "ch",
+    "sh"
+  ],
+  "verdict": "HIERARCHICAL_READTHROUGH_COMPLETE"
+}

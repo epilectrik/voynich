@@ -1,0 +1,100 @@
+{
+  "n_decomposed_lines": 1101,
+  "gap_size_vs_stage": {
+    "rho": 0.1424,
+    "p": 0.5339
+  },
+  "gap_bins": {
+    "SAME_OR_BACK": {
+      "n_lines": 682,
+      "mean_gap_size": 2.82
+    },
+    "LARGE_ADVANCE": {
+      "n_lines": 41,
+      "mean_gap_size": 4.76
+    },
+    "SMALL_ADVANCE": {
+      "n_lines": 250,
+      "mean_gap_size": 3.07
+    },
+    "MEDIUM_ADVANCE": {
+      "n_lines": 128,
+      "mean_gap_size": 3.29
+    }
+  },
+  "role_rates_by_gap": {
+    "ENERGY_OPERATOR": {
+      "SAME_OR_BACK": 45.13780551222049,
+      "SMALL_ADVANCE": 40.88541666666667,
+      "MEDIUM_ADVANCE": 38.242280285035626,
+      "LARGE_ADVANCE": 43.58974358974359
+    },
+    "CORE_CONTROL": {
+      "SAME_OR_BACK": 2.132085283411336,
+      "SMALL_ADVANCE": 1.8229166666666667,
+      "MEDIUM_ADVANCE": 0.7125890736342043,
+      "LARGE_ADVANCE": 0.5128205128205128
+    },
+    "FREQUENT_OPERATOR": {
+      "SAME_OR_BACK": 10.972438897555904,
+      "SMALL_ADVANCE": 13.020833333333334,
+      "MEDIUM_ADVANCE": 17.339667458432302,
+      "LARGE_ADVANCE": 10.256410256410255
+    },
+    "AUXILIARY": {
+      "SAME_OR_BACK": 13.884555382215288,
+      "SMALL_ADVANCE": 15.364583333333334,
+      "MEDIUM_ADVANCE": 15.439429928741092,
+      "LARGE_ADVANCE": 14.871794871794872
+    },
+    "FLOW_OPERATOR": {
+      "SAME_OR_BACK": 0.0,
+      "SMALL_ADVANCE": 0.13020833333333331,
+      "MEDIUM_ADVANCE": 0.0,
+      "LARGE_ADVANCE": 0.0
+    }
+  },
+  "transition_matrix": {
+    "TERMINAL->TERMINAL": 55,
+    "MEDIAL->TERMINAL": 38,
+    "FINAL->MEDIAL": 32,
+    "MEDIAL->INITIAL": 8,
+    "MEDIAL->MEDIAL": 90,
+    "LATE->MEDIAL": 127,
+    "FINAL->FINAL": 18,
+    "INITIAL->LATE": 8,
+    "LATE->TERMINAL": 49,
+    "MEDIAL->FINAL": 29,
+    "LATE->FINAL": 41,
+    "LATE->LATE": 182,
+    "FINAL->LATE": 25,
+    "TERMINAL->MEDIAL": 55,
+    "TERMINAL->FINAL": 22,
+    "MEDIAL->LATE": 102,
+    "TERMINAL->INITIAL": 4,
+    "TERMINAL->EARLY": 11,
+    "INITIAL->MEDIAL": 8,
+    "EARLY->TERMINAL": 8,
+    "LATE->EARLY": 28,
+    "TERMINAL->LATE": 68,
+    "INITIAL->FINAL": 4,
+    "FINAL->TERMINAL": 12,
+    "LATE->INITIAL": 9,
+    "EARLY->MEDIAL": 9,
+    "EARLY->LATE": 18,
+    "MEDIAL->EARLY": 18,
+    "EARLY->EARLY": 5,
+    "EARLY->FINAL": 4,
+    "EARLY->INITIAL": 1,
+    "FINAL->INITIAL": 3,
+    "INITIAL->TERMINAL": 4,
+    "FINAL->EARLY": 3,
+    "INITIAL->EARLY": 2,
+    "INITIAL->INITIAL": 1
+  },
+  "forward_pct": 30.5,
+  "same_pct": 31.9,
+  "backward_pct": 37.6,
+  "verdict": "NO_CORRELATION",
+  "explanation": "Gap kernel composition does not vary with stage advancement. Kernel operators behave the same regardless of FL transition."
+}

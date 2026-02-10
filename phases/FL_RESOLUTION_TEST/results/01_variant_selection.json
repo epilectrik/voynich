@@ -1,0 +1,28 @@
+{
+  "test": "FL Stage -> Token-Variant Selection",
+  "hypothesis": "H1: FL stage biases which token variants are selected within an already-chosen role",
+  "priority": "PRIMARY",
+  "scope": "Currier B strong-forward folios (11)",
+  "window": 2,
+  "n_shuffles": 1000,
+  "total_pairs": 1072,
+  "global": {
+    "real_nmi": 0.055226,
+    "shuffle_mean": 0.048473,
+    "shuffle_std": 0.003491,
+    "percentile": 97.1,
+    "p_value": 0.029
+  },
+  "per_role": {
+    "ENERGY_OPERATOR": {"nmi": 0.082972, "shuffle_mean": 0.072464, "percentile": 96.7, "p": 0.033, "n": "majority"},
+    "AUXILIARY": {"nmi": 0.098667, "shuffle_mean": 0.103674, "percentile": 32.9, "p": 0.671, "verdict": "FAIL"},
+    "FREQUENT_OPERATOR": {"nmi": 0.060140, "shuffle_mean": 0.051954, "percentile": 78.7, "p": 0.213, "verdict": "FAIL"},
+    "CORE_CONTROL": {"verdict": "insufficient_data", "n": 24}
+  },
+  "per_role_prefix_significant": {
+    "FQ-ok": {"nmi": 0.1458, "shuffle_mean": 0.0985, "p": 0.041, "n": 56}
+  },
+  "pass_threshold": "99.9th percentile",
+  "verdict": "WEAK PASS",
+  "interpretation": "FL stage shows real but small token-variant bias (97.1th percentile), primarily through EN neighbors. Fails pre-registered 99.9th threshold. Effect too small for assessment signal; consistent with occasional opportunistic reuse."
+}

@@ -1,0 +1,852 @@
+{
+  "n_common_pairs": 20,
+  "n_lines_analyzed": 1088,
+  "low_axis": {
+    "n_significant_gradients": 4,
+    "significant_metrics": {
+      "qo_pct": {
+        "rho": 0.738,
+        "p": 0.0002
+      },
+      "y_sfx": {
+        "rho": 0.57,
+        "p": 0.0087
+      },
+      "mean_morphemes": {
+        "rho": 0.544,
+        "p": 0.0132
+      },
+      "none_sfx": {
+        "rho": -0.456,
+        "p": 0.0434
+      }
+    },
+    "proposed_label": "ACTION_INTENSITY"
+  },
+  "high_axis": {
+    "n_significant_gradients": 3,
+    "significant_metrics": {
+      "ok_pct": {
+        "rho": 0.569,
+        "p": 0.0089
+      },
+      "freq_pct": {
+        "rho": 0.55,
+        "p": 0.012
+      },
+      "sh_pct": {
+        "rho": -0.463,
+        "p": 0.0396
+      }
+    },
+    "proposed_label": "UNKNOWN"
+  },
+  "low_profiles": {
+    "INITIAL": {
+      "n_lines": 24,
+      "n_gap_tokens": 85,
+      "mean_word_len": 5.73,
+      "mean_morphemes": 2.39,
+      "role_pcts": {
+        "ENERGY_OPERATOR": 37.6,
+        "FREQUENT_OPERATOR": 17.6,
+        "CORE_CONTROL": 0.0,
+        "AUXILIARY": 12.9,
+        "UNKNOWN": 31.8
+      },
+      "top_prefixes": {
+        "ch": 22.4,
+        "sh": 12.9,
+        "qo": 17.6,
+        "NONE": 16.5,
+        "ok": 9.4,
+        "ot": 7.1,
+        "d": 0.0,
+        "s": 0.0
+      },
+      "section_pcts": {
+        "B": 4.2,
+        "C": 8.3,
+        "H": 20.8,
+        "S": 66.7
+      },
+      "top_words": [
+        [
+          "qokedy",
+          3
+        ],
+        [
+          "or",
+          3
+        ],
+        [
+          "okaiin",
+          3
+        ],
+        [
+          "qokaiin",
+          2
+        ],
+        [
+          "shedy",
+          2
+        ],
+        [
+          "chckhaiin",
+          2
+        ],
+        [
+          "okain",
+          2
+        ],
+        [
+          "otaiin",
+          2
+        ]
+      ]
+    },
+    "EARLY": {
+      "n_lines": 49,
+      "n_gap_tokens": 193,
+      "mean_word_len": 5.56,
+      "mean_morphemes": 2.41,
+      "role_pcts": {
+        "ENERGY_OPERATOR": 46.1,
+        "FREQUENT_OPERATOR": 15.5,
+        "CORE_CONTROL": 1.0,
+        "AUXILIARY": 16.1,
+        "UNKNOWN": 21.2
+      },
+      "top_prefixes": {
+        "ch": 18.7,
+        "sh": 14.5,
+        "qo": 21.8,
+        "NONE": 4.1,
+        "ok": 10.4,
+        "ot": 7.3,
+        "d": 0.0,
+        "s": 0.0
+      },
+      "section_pcts": {
+        "B": 34.7,
+        "C": 4.1,
+        "H": 6.1,
+        "S": 53.1,
+        "T": 2.0
+      },
+      "top_words": [
+        [
+          "chedy",
+          12
+        ],
+        [
+          "okeey",
+          7
+        ],
+        [
+          "otedy",
+          6
+        ],
+        [
+          "okedy",
+          5
+        ],
+        [
+          "shey",
+          5
+        ],
+        [
+          "shedy",
+          5
+        ],
+        [
+          "sheey",
+          5
+        ],
+        [
+          "qokeedy",
+          5
+        ]
+      ]
+    },
+    "MEDIAL": {
+      "n_lines": 297,
+      "n_gap_tokens": 819,
+      "mean_word_len": 5.65,
+      "mean_morphemes": 2.43,
+      "role_pcts": {
+        "ENERGY_OPERATOR": 38.9,
+        "FREQUENT_OPERATOR": 13.7,
+        "CORE_CONTROL": 1.3,
+        "AUXILIARY": 15.4,
+        "UNKNOWN": 30.5
+      },
+      "top_prefixes": {
+        "ch": 18.3,
+        "sh": 11.5,
+        "qo": 21.5,
+        "NONE": 16.5,
+        "ok": 7.3,
+        "ot": 6.1,
+        "d": 0.0,
+        "s": 0.0
+      },
+      "section_pcts": {
+        "B": 23.2,
+        "C": 9.1,
+        "H": 14.8,
+        "S": 50.8,
+        "T": 2.0
+      },
+      "top_words": [
+        [
+          "aiin",
+          26
+        ],
+        [
+          "shedy",
+          23
+        ],
+        [
+          "qokain",
+          18
+        ],
+        [
+          "chedy",
+          17
+        ],
+        [
+          "or",
+          16
+        ],
+        [
+          "shey",
+          14
+        ],
+        [
+          "chey",
+          13
+        ],
+        [
+          "qokeey",
+          13
+        ]
+      ]
+    },
+    "LATE": {
+      "n_lines": 466,
+      "n_gap_tokens": 1325,
+      "mean_word_len": 5.57,
+      "mean_morphemes": 2.46,
+      "role_pcts": {
+        "ENERGY_OPERATOR": 46.8,
+        "FREQUENT_OPERATOR": 10.7,
+        "CORE_CONTROL": 2.3,
+        "AUXILIARY": 14.9,
+        "UNKNOWN": 25.3
+      },
+      "top_prefixes": {
+        "ch": 19.2,
+        "sh": 13.4,
+        "qo": 24.6,
+        "NONE": 11.9,
+        "ok": 5.4,
+        "ot": 5.4,
+        "d": 0.0,
+        "s": 0.0
+      },
+      "section_pcts": {
+        "B": 45.5,
+        "C": 4.1,
+        "H": 9.0,
+        "S": 38.8,
+        "T": 2.6
+      },
+      "top_words": [
+        [
+          "shedy",
+          57
+        ],
+        [
+          "chedy",
+          50
+        ],
+        [
+          "chey",
+          37
+        ],
+        [
+          "aiin",
+          31
+        ],
+        [
+          "daiin",
+          30
+        ],
+        [
+          "qokaiin",
+          29
+        ],
+        [
+          "qokedy",
+          28
+        ],
+        [
+          "qokeey",
+          28
+        ]
+      ]
+    },
+    "FINAL": {
+      "n_lines": 98,
+      "n_gap_tokens": 309,
+      "mean_word_len": 5.74,
+      "mean_morphemes": 2.51,
+      "role_pcts": {
+        "ENERGY_OPERATOR": 41.4,
+        "FREQUENT_OPERATOR": 13.3,
+        "CORE_CONTROL": 2.3,
+        "AUXILIARY": 12.0,
+        "UNKNOWN": 31.1
+      },
+      "top_prefixes": {
+        "ch": 20.7,
+        "sh": 10.7,
+        "qo": 22.3,
+        "NONE": 13.3,
+        "ok": 5.8,
+        "ot": 7.4,
+        "d": 0.0,
+        "s": 0.0
+      },
+      "section_pcts": {
+        "B": 8.2,
+        "C": 9.2,
+        "H": 20.4,
+        "S": 55.1,
+        "T": 7.1
+      },
+      "top_words": [
+        [
+          "chedy",
+          12
+        ],
+        [
+          "aiin",
+          10
+        ],
+        [
+          "okaiin",
+          7
+        ],
+        [
+          "daiin",
+          7
+        ],
+        [
+          "qokeedy",
+          7
+        ],
+        [
+          "chey",
+          6
+        ],
+        [
+          "qokedy",
+          5
+        ],
+        [
+          "oteey",
+          5
+        ]
+      ]
+    },
+    "TERMINAL": {
+      "n_lines": 242,
+      "n_gap_tokens": 536,
+      "mean_word_len": 5.62,
+      "mean_morphemes": 2.54,
+      "role_pcts": {
+        "ENERGY_OPERATOR": 42.2,
+        "FREQUENT_OPERATOR": 10.8,
+        "CORE_CONTROL": 1.7,
+        "AUXILIARY": 13.2,
+        "UNKNOWN": 32.1
+      },
+      "top_prefixes": {
+        "ch": 17.9,
+        "sh": 10.4,
+        "qo": 27.2,
+        "NONE": 12.5,
+        "ok": 6.3,
+        "ot": 5.4,
+        "d": 0.0,
+        "s": 0.0
+      },
+      "section_pcts": {
+        "B": 26.0,
+        "C": 5.4,
+        "H": 34.3,
+        "S": 30.6,
+        "T": 3.7
+      },
+      "top_words": [
+        [
+          "qokedy",
+          18
+        ],
+        [
+          "chedy",
+          15
+        ],
+        [
+          "shedy",
+          13
+        ],
+        [
+          "qokain",
+          13
+        ],
+        [
+          "qokar",
+          12
+        ],
+        [
+          "shey",
+          11
+        ],
+        [
+          "or",
+          11
+        ],
+        [
+          "qokeey",
+          10
+        ]
+      ]
+    }
+  },
+  "high_profiles": {
+    "INITIAL": {
+      "n_lines": 38,
+      "n_gap_tokens": 64,
+      "mean_word_len": 6.11,
+      "mean_morphemes": 2.5,
+      "role_pcts": {
+        "ENERGY_OPERATOR": 32.8,
+        "FREQUENT_OPERATOR": 7.8,
+        "CORE_CONTROL": 0.0,
+        "AUXILIARY": 14.1,
+        "UNKNOWN": 45.3
+      },
+      "top_prefixes": {
+        "ch": 14.1,
+        "sh": 18.8,
+        "qo": 21.9,
+        "NONE": 17.2,
+        "ok": 3.1,
+        "ot": 3.1,
+        "d": 0.0,
+        "s": 0.0
+      },
+      "section_pcts": {
+        "B": 7.9,
+        "C": 10.5,
+        "H": 10.5,
+        "S": 63.2,
+        "T": 7.9
+      },
+      "top_words": [
+        [
+          "shedy",
+          4
+        ],
+        [
+          "shey",
+          3
+        ],
+        [
+          "qokchdy",
+          3
+        ],
+        [
+          "aiin",
+          2
+        ],
+        [
+          "chey",
+          2
+        ],
+        [
+          "qokedy",
+          1
+        ],
+        [
+          "okey",
+          1
+        ],
+        [
+          "qokeody",
+          1
+        ]
+      ]
+    },
+    "EARLY": {
+      "n_lines": 94,
+      "n_gap_tokens": 146,
+      "mean_word_len": 5.73,
+      "mean_morphemes": 2.51,
+      "role_pcts": {
+        "ENERGY_OPERATOR": 49.3,
+        "FREQUENT_OPERATOR": 8.9,
+        "CORE_CONTROL": 1.4,
+        "AUXILIARY": 17.8,
+        "UNKNOWN": 22.6
+      },
+      "top_prefixes": {
+        "ch": 17.1,
+        "sh": 15.1,
+        "qo": 25.3,
+        "NONE": 8.9,
+        "ok": 3.4,
+        "ot": 8.2,
+        "d": 0.0,
+        "s": 0.0
+      },
+      "section_pcts": {
+        "B": 44.7,
+        "C": 8.5,
+        "H": 9.6,
+        "S": 37.2
+      },
+      "top_words": [
+        [
+          "chey",
+          6
+        ],
+        [
+          "qokaiin",
+          5
+        ],
+        [
+          "qokeey",
+          5
+        ],
+        [
+          "shckhy",
+          4
+        ],
+        [
+          "cheey",
+          4
+        ],
+        [
+          "or",
+          3
+        ],
+        [
+          "sheol",
+          3
+        ],
+        [
+          "qokal",
+          3
+        ]
+      ]
+    },
+    "MEDIAL": {
+      "n_lines": 342,
+      "n_gap_tokens": 949,
+      "mean_word_len": 5.64,
+      "mean_morphemes": 2.48,
+      "role_pcts": {
+        "ENERGY_OPERATOR": 44.2,
+        "FREQUENT_OPERATOR": 12.6,
+        "CORE_CONTROL": 2.1,
+        "AUXILIARY": 13.6,
+        "UNKNOWN": 27.5
+      },
+      "top_prefixes": {
+        "ch": 21.0,
+        "sh": 11.1,
+        "qo": 24.8,
+        "NONE": 12.2,
+        "ok": 5.7,
+        "ot": 5.6,
+        "d": 0.0,
+        "s": 0.0
+      },
+      "section_pcts": {
+        "B": 24.3,
+        "C": 7.3,
+        "H": 18.1,
+        "S": 46.2,
+        "T": 4.1
+      },
+      "top_words": [
+        [
+          "chedy",
+          35
+        ],
+        [
+          "shedy",
+          28
+        ],
+        [
+          "qokain",
+          25
+        ],
+        [
+          "aiin",
+          24
+        ],
+        [
+          "qokedy",
+          20
+        ],
+        [
+          "daiin",
+          20
+        ],
+        [
+          "qokaiin",
+          18
+        ],
+        [
+          "or",
+          17
+        ]
+      ]
+    },
+    "LATE": {
+      "n_lines": 420,
+      "n_gap_tokens": 1227,
+      "mean_word_len": 5.59,
+      "mean_morphemes": 2.46,
+      "role_pcts": {
+        "ENERGY_OPERATOR": 45.0,
+        "FREQUENT_OPERATOR": 11.7,
+        "CORE_CONTROL": 1.9,
+        "AUXILIARY": 14.7,
+        "UNKNOWN": 26.7
+      },
+      "top_prefixes": {
+        "ch": 17.9,
+        "sh": 13.8,
+        "qo": 23.7,
+        "NONE": 12.1,
+        "ok": 6.8,
+        "ot": 5.4,
+        "d": 0.0,
+        "s": 0.0
+      },
+      "section_pcts": {
+        "B": 43.8,
+        "C": 4.0,
+        "H": 9.5,
+        "S": 40.7,
+        "T": 1.9
+      },
+      "top_words": [
+        [
+          "shedy",
+          48
+        ],
+        [
+          "chedy",
+          47
+        ],
+        [
+          "aiin",
+          33
+        ],
+        [
+          "qokain",
+          33
+        ],
+        [
+          "chey",
+          33
+        ],
+        [
+          "shey",
+          27
+        ],
+        [
+          "qokeey",
+          25
+        ],
+        [
+          "daiin",
+          23
+        ]
+      ]
+    },
+    "FINAL": {
+      "n_lines": 121,
+      "n_gap_tokens": 391,
+      "mean_word_len": 5.57,
+      "mean_morphemes": 2.43,
+      "role_pcts": {
+        "ENERGY_OPERATOR": 36.8,
+        "FREQUENT_OPERATOR": 12.8,
+        "CORE_CONTROL": 1.8,
+        "AUXILIARY": 15.9,
+        "UNKNOWN": 32.5
+      },
+      "top_prefixes": {
+        "ch": 18.9,
+        "sh": 7.9,
+        "qo": 21.7,
+        "NONE": 17.9,
+        "ok": 8.7,
+        "ot": 6.1,
+        "d": 0.0,
+        "s": 0.0
+      },
+      "section_pcts": {
+        "B": 7.4,
+        "C": 9.1,
+        "H": 26.4,
+        "S": 52.1,
+        "T": 5.0
+      },
+      "top_words": [
+        [
+          "aiin",
+          12
+        ],
+        [
+          "or",
+          10
+        ],
+        [
+          "chey",
+          7
+        ],
+        [
+          "daiin",
+          7
+        ],
+        [
+          "qokaiin",
+          7
+        ],
+        [
+          "chedy",
+          7
+        ],
+        [
+          "qokedy",
+          6
+        ],
+        [
+          "shedy",
+          6
+        ]
+      ]
+    },
+    "TERMINAL": {
+      "n_lines": 161,
+      "n_gap_tokens": 490,
+      "mean_word_len": 5.6,
+      "mean_morphemes": 2.47,
+      "role_pcts": {
+        "ENERGY_OPERATOR": 42.0,
+        "FREQUENT_OPERATOR": 13.5,
+        "CORE_CONTROL": 1.4,
+        "AUXILIARY": 13.9,
+        "UNKNOWN": 29.2
+      },
+      "top_prefixes": {
+        "ch": 19.0,
+        "sh": 12.2,
+        "qo": 22.9,
+        "NONE": 13.3,
+        "ok": 6.5,
+        "ot": 7.3,
+        "d": 0.0,
+        "s": 0.0
+      },
+      "section_pcts": {
+        "B": 30.4,
+        "C": 4.3,
+        "H": 31.1,
+        "S": 31.7,
+        "T": 2.5
+      },
+      "top_words": [
+        [
+          "chedy",
+          15
+        ],
+        [
+          "shedy",
+          15
+        ],
+        [
+          "qokeey",
+          14
+        ],
+        [
+          "otedy",
+          12
+        ],
+        [
+          "qokedy",
+          12
+        ],
+        [
+          "qokeedy",
+          11
+        ],
+        [
+          "or",
+          8
+        ],
+        [
+          "daiin",
+          7
+        ]
+      ]
+    }
+  },
+  "grid_lines": {
+    "INITIAL>INITIAL": 1,
+    "INITIAL>EARLY": 3,
+    "INITIAL>MEDIAL": 8,
+    "INITIAL>LATE": 7,
+    "INITIAL>FINAL": 4,
+    "INITIAL>TERMINAL": 1,
+    "EARLY>INITIAL": 2,
+    "EARLY>EARLY": 6,
+    "EARLY>MEDIAL": 10,
+    "EARLY>LATE": 19,
+    "EARLY>FINAL": 4,
+    "EARLY>TERMINAL": 8,
+    "MEDIAL>INITIAL": 9,
+    "MEDIAL>EARLY": 24,
+    "MEDIAL>MEDIAL": 97,
+    "MEDIAL>LATE": 104,
+    "MEDIAL>FINAL": 29,
+    "MEDIAL>TERMINAL": 34,
+    "LATE>INITIAL": 16,
+    "LATE>EARLY": 40,
+    "LATE>MEDIAL": 130,
+    "LATE>LATE": 190,
+    "LATE>FINAL": 40,
+    "LATE>TERMINAL": 50,
+    "FINAL>INITIAL": 5,
+    "FINAL>EARLY": 3,
+    "FINAL>MEDIAL": 32,
+    "FINAL>LATE": 26,
+    "FINAL>FINAL": 20,
+    "FINAL>TERMINAL": 12,
+    "TERMINAL>INITIAL": 5,
+    "TERMINAL>EARLY": 18,
+    "TERMINAL>MEDIAL": 65,
+    "TERMINAL>LATE": 74,
+    "TERMINAL>FINAL": 24,
+    "TERMINAL>TERMINAL": 56
+  }
+}

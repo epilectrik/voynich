@@ -1,0 +1,118 @@
+{
+  "test": "07_phase_interleaving",
+  "phase": "LINE_CONTROL_BLOCK_GRAMMAR",
+  "purpose": "Determine whether KERNEL, LINK, and FL phases within a line follow strict sequential ordering (C813) or are interleaved",
+  "provenance": [
+    "C813",
+    "C815",
+    "C807",
+    "C810"
+  ],
+  "data": {
+    "total_lines_currier_b": 2420,
+    "total_tokens": 23096,
+    "phase_instance_counts": {
+      "OTHER": 13995,
+      "KERNEL": 7211,
+      "LINK": 812,
+      "FL": 1078
+    },
+    "multi_phase_lines": 1191,
+    "phase_combination_distribution": {
+      "FL-KERNEL": 541,
+      "KERNEL-LINK": 438,
+      "FL-KERNEL-LINK": 201,
+      "FL-LINK": 11
+    }
+  },
+  "phase_assignment": {
+    "KERNEL": "ENERGY_OPERATOR role (classes: [8, 31, 32, 33, 34, 35, 36, 37, 39, 41, 42, 43, 44, 45, 46, 47, 48, 49])",
+    "LINK": "Class 29",
+    "FL": "FLOW_OPERATOR role (classes: [7, 30, 38, 40])",
+    "OTHER": "Everything else (AUXILIARY, CORE_CONTROL, FREQUENT_OPERATOR, UNK)"
+  },
+  "metrics": {
+    "mean_alternation_rate": 0.5660002932043234,
+    "sequential_compliance_rate": 0.3266162888329135,
+    "mean_phase_runs_per_line": 2.7556675062972293,
+    "run_count_distribution": {
+      "2": 598,
+      "3": 373,
+      "4": 157,
+      "5": 48,
+      "6": 10,
+      "7": 3,
+      "9": 2
+    }
+  },
+  "pairwise_ordering": {
+    "LINK->KERNEL": {
+      "mean_strength": 0.5172452688591186,
+      "median_strength": 0.5,
+      "n_lines_with_pair": 639,
+      "total_pairwise_comparisons": 2468
+    },
+    "KERNEL->FL": {
+      "mean_strength": 0.6229104649842521,
+      "median_strength": 0.6666666666666666,
+      "n_lines_with_pair": 742,
+      "total_pairwise_comparisons": 3122
+    },
+    "LINK->FL": {
+      "mean_strength": 0.6585242587601078,
+      "median_strength": 1.0,
+      "n_lines_with_pair": 212,
+      "total_pairwise_comparisons": 349
+    }
+  },
+  "combo_details": {
+    "FL-KERNEL": {
+      "n_lines": 541,
+      "compliance_rate": 0.4029574861367837,
+      "mean_alternation_rate": 0.5314090202260258
+    },
+    "FL-KERNEL-LINK": {
+      "n_lines": 201,
+      "compliance_rate": 0.14427860696517414,
+      "mean_alternation_rate": 0.6812119058387714
+    },
+    "FL-LINK": {
+      "n_lines": 11,
+      "compliance_rate": 0.45454545454545453,
+      "mean_alternation_rate": 0.9015151515151515
+    },
+    "KERNEL-LINK": {
+      "n_lines": 438,
+      "compliance_rate": 0.3127853881278539,
+      "mean_alternation_rate": 0.547428788867145
+    }
+  },
+  "shuffle_test": {
+    "n_shuffles": 1000,
+    "seed": 42,
+    "method": "Permute ALL token positions within each line",
+    "alternation_rate": {
+      "real": 0.5660002932043234,
+      "shuffle_mean": 0.5962797931334456,
+      "shuffle_std": 0.0047760151705464665,
+      "z_score": -6.339908657714252,
+      "p_value": 0.0
+    },
+    "sequential_compliance": {
+      "real": 0.3266162888329135,
+      "shuffle_mean": 0.21701847187237616,
+      "shuffle_std": 0.011300349368393055,
+      "z_score": 9.698621997217284,
+      "p_value": 0.0,
+      "excess_over_shuffle": 0.10959781696053733,
+      "excess_pp": 10.959781696053733
+    }
+  },
+  "verdict": "PARTIAL_INTERLEAVED",
+  "verdict_detail": "Low compliance excess 11.0 pp but alternation rate significantly different from shuffle (p=0.0000).",
+  "pass_criteria": {
+    "PASS_SEQUENTIAL": "Compliance >30pp above shuffle AND alternation p<0.001",
+    "PASS_INTERLEAVED": "Compliance <15pp above shuffle AND alternation p>0.05",
+    "MIXED": "Compliance 15-30pp, some pairs ordered"
+  }
+}

@@ -1,0 +1,77 @@
+{
+  "tests_loaded": 10,
+  "tests_missing": [],
+  "scores": {
+    "artifact_line_length": 0,
+    "context_driven": 0,
+    "clear_partition": 0,
+    "section_t_artifact": 1,
+    "strong_forward": 0,
+    "confounds_explain": 0,
+    "residual_bimodal": 1,
+    "gmm_dual": 1,
+    "gmm_single": 0,
+    "bias_subtype_driven": 1,
+    "c773_explains": 0,
+    "c773_independent": 1,
+    "prefix_selects": 1
+  },
+  "artifact_score": 0,
+  "context_score": 1,
+  "dual_score": 4,
+  "integrated_verdict": "DUAL_STATE",
+  "confidence": "HIGH",
+  "explanation": "Bimodality persists within hazard/safe classes. GMM prefers 2-component for 100% of MIDDLEs. 9 MIDDLEs remain bimodal after regression. PREFIX choice shifts FL position significantly.",
+  "test_summary": [
+    {
+      "test": "01_line_length",
+      "verdict": "REAL",
+      "explanation": "Bimodality persists in all bins including long lines (11/12 bimodal, concordance 0.550)"
+    },
+    {
+      "test": "02_context_kurtosis",
+      "verdict": "INTRINSIC",
+      "explanation": "12/12 bimodal MIDDLEs persist after context stratification; only 0 resolved by context"
+    },
+    {
+      "test": "03_anchoring",
+      "verdict": "WEAK_PARTITION",
+      "explanation": "Weak partition: 1 RIGID, 11 FLEXIBLE, but most are MODERATE (3)"
+    },
+    {
+      "test": "04_section_t",
+      "verdict": "SAMPLE_SIZE_ARTIFACT",
+      "explanation": "T's gradient failure is explainable by small sample size: 50.6% of random subsamples at n=188 also fail"
+    },
+    {
+      "test": "05_subsequences",
+      "verdict": "WEAK_OR_NO_BIAS_RECURRENT_PATTERNS",
+      "explanation": "Within-line forward:backward ratio = 1.3:1 (C786 global = 5:1). Top bigram: l->l (106x)"
+    },
+    {
+      "test": "06_regression",
+      "verdict": "PARTIAL",
+      "explanation": "Full model R\u00b2=0.337, residual kurtosis=-1.004. 9/15 MIDDLEs remain bimodal after regression."
+    },
+    {
+      "test": "07_gmm",
+      "verdict": "DUAL_STATE",
+      "explanation": "12/12 (100%) FL MIDDLEs prefer 2-component GMM, 12 well-separated. Strong dual-state evidence."
+    },
+    {
+      "test": "08_forward_bias",
+      "verdict": "SUBTYPE_DRIVEN",
+      "explanation": "Forward bias varies >3x across hazard classes (spread=10.9x). Ratios: HAZARD={'n': 645, 'forward': 404, 'backward': 84, 'same': 157, 'fwd_rate': 0.6264, 'bwd_rate': 0.1302, 'same_rate': 0.2434, 'fwd_bwd_ratio': 4.81}, SAFE={'n': 28, 'forward': 7, 'backward': 16, 'same': 5, 'fwd_rate': 0.25, 'bwd_rate': 0.5714, 'same_rate': 0.1786, 'fwd_bwd_ratio': 0.44}, OTHER={'n': 3093, 'forward': 1091, 'backward': 1055, 'same': 947, 'fwd_rate': 0.3527, 'bwd_rate': 0.3411, 'same_rate': 0.3062, 'fwd_bwd_ratio': 1.03}"
+    },
+    {
+      "test": "09_hazard_safe",
+      "verdict": "INDEPENDENT",
+      "explanation": "Bimodality persists within hazard/safe classes: 11/12 remain bimodal. Dual-state is independent of C773."
+    },
+    {
+      "test": "10_prefix",
+      "verdict": "PREFIX_SELECTS_MODE",
+      "explanation": "PREFIX significantly shifts FL position for 9/11 (82%) of MIDDLEs (p < 0.01). PREFIX selects FL mode."
+    }
+  ]
+}

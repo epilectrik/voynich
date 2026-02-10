@@ -1,0 +1,13 @@
+{
+  "test": "Negative Control: FL Stage Does NOT Predict Role Choice",
+  "hypothesis": "Reconfirm Chi2(FL stage x role) = NS, V < 0.05",
+  "priority": "SANITY CHECK",
+  "scope": "Currier B strong-forward folios (11)",
+  "total_pairs": 1072,
+  "chi_squared": 15.2,
+  "dof": 15,
+  "p_value": 0.4405,
+  "cramers_v": 0.0686,
+  "verdict": "CONFIRMED",
+  "interpretation": "FL stage does NOT predict role choice. Chi-squared NS (p=0.44), Cramer's V = 0.069. Negative control passes. No model violation."
+}

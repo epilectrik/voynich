@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 813 constraints | 2026-02-09
+CONSTRAINT_REFERENCE v2.6 | 829 constraints | 2026-02-10
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -817,3 +817,19 @@ C945	**No Folio-Persistent Rare MIDDLEs as Material Markers FALSIFIED** (0 rare 
 C946	**A Folios Show No Material-Domain Routing FALSIFIED** (cosine similarity 0.997; ARI=-0.007; RI extension V=0.071; A is generic pool)	1	A	-> C946_no_a_material_routing.md
 C947	**No Specification Vocabulary Gradient FALSIFIED** (early 62.5% vs late 64.2%; difference -1.7pp; Wilcoxon p=0.632)	1	B	-> C947_no_specification_vocabulary_gradient.md
 C948	**Gloss Gap Paragraph-Start Enrichment** (4.03x at par_start; section H gap rate 8.6% vs B 2.4%; 16 distinct gaps all hapax)	2	B	-> C948_gloss_gap_paragraph_start_enrichment.md
+C949	**FL Non-Executive Verdict** (6-test battery; variant NMI 97.1th pctile but fails 99.9th threshold; FL is deliberately low-impact ordered annotation layer, non-executive)	2	B	-> C949_fl_non_executive_verdict.md
+C950	**FL Two-Dimensional Structure** (PREFIX x STAGE; PREFIX determines position KW p=10^-15; STAGE determines value; chi2 p=4.8x10^-82, V=0.349)	2	B	-> C950_fl_two_dimensional_structure.md
+C951	**FL-LINK Spatial Independence** (KS p=0.853; MWU p=0.289; no complementary zoning within lines; C813 is global tendency not local structure)	2	B	-> C951_fl_link_independence.md
+C952	**FL Stage-Suffix Global Independence** (chi2 p=0.751; NMI p=0.657; Spearman rho=0.008; flat suffix distributions across all FL stages)	2	B	-> C952_fl_suffix_independence.md
+C953	**ch-FL Precision Annotation Submode** (suffix NMI p=0.004, 7x global; ch-prefix FL interacts with execution morphology; sole surviving execution-level FL signal)	2	B	-> C953_ch_fl_precision_submode.md
+C954	**Section T FL Enrichment** (28.4% FL vs S/B 21.2%; gradient anomaly NOT from suppression; T also shows suffix effect p=0.038)	2	B	-> C954_section_t_fl_enrichment.md
+C955	**FL Killed Hypotheses Registry** (12 hypotheses falsified: active control, loops, routing, batch processing, cross-line state, testing criteria, assessment output)	1	B	-> C955_fl_killed_hypotheses.md
+C956	**Positional Token Exclusivity** (192/334 tokens zone-exclusive, 2.72x shuffle; 50% survive suffix-stripping; effect is STRUCTURAL per negative control)	2	B	-> C956_positional_token_exclusivity.md
+C957	**Token-Level Bigram Constraints** (26 mandatory, 9 forbidden; 2 genuinely token-specific: chey->chedy, chey->shedy both ENERGY; effect is STRUCTURAL)	2	B	-> C957_token_bigram_constraints.md
+C958	**Opener Class Determines Line Length** (24.9% partial R^2 beyond folio+regime; folio+opener_token = 93.7% R^2; strongest token-level finding)	2	B	-> C958_opener_determines_line_length.md
+C959	**Opener Is Role Marker, Not Instruction Header** (role accuracy 29.2% = 1.46x chance; token JSD not significant; free substitution within role)	2	B	-> C959_opener_is_role_marker.md
+C960	**Boundary Vocabulary Is Open** (Gini 0.47 < 0.60; 663 tokens for 80% coverage; no closed boundary set)	2	B	-> C960_boundary_vocabulary_open.md
+C961	**WORK Zone Is Unordered** (EN tau ~ 0, AX tau ~ 0; no systematic within-zone sequence; interior operations are parallel)	2	B	-> C961_work_zone_unordered.md
+C962	**Phase Interleaving Pattern** (KERNEL/LINK/FL weakly clustered, p<0.001; compliance 32.7% vs 21.7% shuffle; phases are tendencies not blocks)	2	B	-> C962_phase_interleaving.md
+C963	**Paragraph Body Homogeneity** (only length progression rho=-0.23; no compositional change after length control; body lines are equivalent)	2	B	-> C963_paragraph_body_homogeneity.md
+C964	**Boundary-Constrained Free-Interior Grammar** (SYNTHESIS: grammar strength 0.500; boundaries constrained by role, interior free; system is role-complete)	2	B	-> C964_boundary_constrained_free_interior.md

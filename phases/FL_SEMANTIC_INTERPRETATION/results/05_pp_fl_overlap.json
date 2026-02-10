@@ -1,0 +1,203 @@
+{
+  "fl_middles": [
+    "al",
+    "am",
+    "ar",
+    "dy",
+    "i",
+    "ii",
+    "im",
+    "in",
+    "l",
+    "ly",
+    "m",
+    "n",
+    "o",
+    "ol",
+    "r",
+    "ry",
+    "y"
+  ],
+  "fl_middle_count": 17,
+  "pp_middles_count": 393,
+  "ri_middles_count": 579,
+  "fl_in_pp": [
+    "al",
+    "am",
+    "ar",
+    "dy",
+    "i",
+    "ii",
+    "im",
+    "in",
+    "l",
+    "ly",
+    "m",
+    "n",
+    "o",
+    "ol",
+    "r",
+    "ry",
+    "y"
+  ],
+  "fl_in_pp_count": 17,
+  "fl_in_pp_pct": 100.0,
+  "fl_not_pp": [],
+  "pp_with_kernel_count": 233,
+  "pp_without_kernel_count": 160,
+  "kernel_free_pp_that_are_fl": 17,
+  "kernel_free_pp_not_fl": 143,
+  "kernel_free_pp_top30": [
+    {
+      "middle": "ol",
+      "is_fl": true,
+      "a_count": 831
+    },
+    {
+      "middle": "iin",
+      "is_fl": false,
+      "a_count": 654
+    },
+    {
+      "middle": "y",
+      "is_fl": true,
+      "a_count": 605
+    },
+    {
+      "middle": "o",
+      "is_fl": true,
+      "a_count": 602
+    },
+    {
+      "middle": "or",
+      "is_fl": false,
+      "a_count": 596
+    },
+    {
+      "middle": "l",
+      "is_fl": true,
+      "a_count": 355
+    },
+    {
+      "middle": "r",
+      "is_fl": true,
+      "a_count": 342
+    },
+    {
+      "middle": "aiin",
+      "is_fl": false,
+      "a_count": 271
+    },
+    {
+      "middle": "s",
+      "is_fl": false,
+      "a_count": 243
+    },
+    {
+      "middle": "od",
+      "is_fl": false,
+      "a_count": 198
+    },
+    {
+      "middle": "dy",
+      "is_fl": true,
+      "a_count": 183
+    },
+    {
+      "middle": "ar",
+      "is_fl": true,
+      "a_count": 161
+    },
+    {
+      "middle": "t",
+      "is_fl": false,
+      "a_count": 156
+    },
+    {
+      "middle": "d",
+      "is_fl": false,
+      "a_count": 152
+    },
+    {
+      "middle": "al",
+      "is_fl": true,
+      "a_count": 143
+    },
+    {
+      "middle": "in",
+      "is_fl": true,
+      "a_count": 115
+    },
+    {
+      "middle": "i",
+      "is_fl": true,
+      "a_count": 82
+    },
+    {
+      "middle": "m",
+      "is_fl": true,
+      "a_count": 79
+    },
+    {
+      "middle": "ot",
+      "is_fl": false,
+      "a_count": 76
+    },
+    {
+      "middle": "tc",
+      "is_fl": false,
+      "a_count": 57
+    },
+    {
+      "middle": "am",
+      "is_fl": true,
+      "a_count": 56
+    },
+    {
+      "middle": "oiin",
+      "is_fl": false,
+      "a_count": 50
+    },
+    {
+      "middle": "om",
+      "is_fl": false,
+      "a_count": 50
+    },
+    {
+      "middle": "ain",
+      "is_fl": false,
+      "a_count": 47
+    },
+    {
+      "middle": "a",
+      "is_fl": false,
+      "a_count": 44
+    },
+    {
+      "middle": "ct",
+      "is_fl": false,
+      "a_count": 35
+    },
+    {
+      "middle": "oct",
+      "is_fl": false,
+      "a_count": 33
+    },
+    {
+      "middle": "ai",
+      "is_fl": false,
+      "a_count": 32
+    },
+    {
+      "middle": "n",
+      "is_fl": true,
+      "a_count": 25
+    },
+    {
+      "middle": "ii",
+      "is_fl": true,
+      "a_count": 24
+    }
+  ],
+  "verdict": "FL MIDDLEs are a subset of kernel-free PP vocabulary"
+}

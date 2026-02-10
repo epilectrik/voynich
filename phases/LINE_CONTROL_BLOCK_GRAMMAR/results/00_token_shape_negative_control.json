@@ -1,0 +1,44 @@
+{
+  "test": "Token-Shape Negative Control",
+  "purpose": "Separate structural (role/position) effects from lexical (token-identity) effects",
+  "method": "Build synthetic corpus preserving role, prefix_family, has_suffix but randomizing token identity",
+  "n_lines": 2420,
+  "n_shape_groups": 55,
+  "n_shuffles": 1000,
+  "controls": {
+    "exclusivity": {
+      "real": 192,
+      "synthetic": 192,
+      "real_shuffle_mean": 70.56,
+      "real_p": 0.0,
+      "syn_p": 0.0,
+      "survives": true
+    },
+    "forbidden_bigrams": {
+      "real": 15,
+      "synthetic": 15,
+      "real_shuffle_mean": 0.944,
+      "real_p": 0.0,
+      "syn_p": 0.0,
+      "survives": true
+    },
+    "opener_classification": {
+      "real_accuracy": 0.3241758241758242,
+      "synthetic_accuracy": 0.3241758241758242,
+      "chance": 0.2,
+      "n": 1274,
+      "survives": true
+    },
+    "boundary_gini": {
+      "real_initial": 0.47027203033252174,
+      "real_final": 0.47088376073025656,
+      "synthetic_initial": 0.47027203033252174,
+      "synthetic_final": 0.47088376073025656,
+      "shuffle_initial_mean": 0.5060193508056021,
+      "shuffle_final_mean": 0.5055599434718334,
+      "survives": false
+    }
+  },
+  "n_survive": 3,
+  "interpretation": "Most effects are structural (role/position driven)"
+}

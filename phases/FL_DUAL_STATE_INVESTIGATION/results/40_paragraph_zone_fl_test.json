@@ -1,0 +1,46 @@
+{
+  "fl_rate_by_zone": {
+    "HEADER": {
+      "mean": 0.212,
+      "n_lines": 469
+    },
+    "BODY": {
+      "mean": 0.262,
+      "n_lines": 1378
+    },
+    "TAIL": {
+      "mean": 0.243,
+      "n_lines": 460
+    }
+  },
+  "coord_rate_by_zone": {
+    "HEADER": {
+      "rate": 45.0,
+      "n": 469
+    },
+    "BODY": {
+      "rate": 56.2,
+      "n": 1378
+    },
+    "TAIL": {
+      "rate": 36.3,
+      "n": 460
+    }
+  },
+  "state_distribution_test": {
+    "v_low": 0.132,
+    "v_high": 0.1,
+    "p_low": 0.0,
+    "p_high": 0.0098
+  },
+  "checks": {
+    "fl_rate_differs": true,
+    "header_lower_coord": true,
+    "state_dist_differs": true,
+    "body_higher_jaccard": true,
+    "stage_preference": true
+  },
+  "verdict": "ZONE_SPECIFIC_FL",
+  "explanation": "FL coordinate system is specific to paragraph body lines. Headers and tails operate differently.",
+  "checks_passed": 5
+}

@@ -1,0 +1,19 @@
+{
+  "test": "Section T Diagnostic",
+  "hypothesis": "H4: Section T lacks FL gradient because it suppresses assessment output",
+  "priority": "OPTIONAL",
+  "scope": "Section T Currier B tokens",
+  "section_t_tokens": 662,
+  "section_t_fl": 188,
+  "section_t_fl_rate": 0.284,
+  "section_sb_fl_rate": 0.212,
+  "section_t_lines": 69,
+  "section_t_folios": 2,
+  "stage_distribution": {"0": 12, "1": 2, "2": 44, "3": 56, "4": 27, "5": 47},
+  "prefix_distribution": {"_": 46, "da": 41, "ot": 19, "ok": 12, "ch": 11, "sh": 10, "ka": 7, "do": 6, "ke": 6, "sa": 5},
+  "variant_nmi": {"real": 0.138528, "shuffle_mean": 0.129169, "p": 0.204},
+  "suffix_nmi": {"real": 0.103611, "shuffle_mean": 0.081991, "p": 0.038},
+  "fl_link_distance": {"fl_mean": 3.26, "op_mean": 3.08},
+  "verdict": "REJECTED - Section T has MORE FL (28.4%) than S/B (21.2%), not less. Suppression hypothesis is wrong.",
+  "interpretation": "Section T is FL-enriched, not FL-suppressed. The gradient anomaly has a different cause (possibly restricted MIDDLE vocabulary or positional dynamics). Section T independently shows a suffix effect (p=0.038), similar to ch-FL, suggesting text-heavy monitoring contexts may have tighter FL-suffix coupling."
+}

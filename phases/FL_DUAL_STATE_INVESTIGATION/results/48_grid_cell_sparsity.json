@@ -1,0 +1,120 @@
+{
+  "n_lines": 1176,
+  "sparsity": {
+    "total_cells": 36,
+    "populated": 36,
+    "cells_ge_5": 29,
+    "cells_ge_10": 22,
+    "cells_ge_20": 17,
+    "max_count": 190,
+    "median_populated": 18.5,
+    "empty_cells": 0
+  },
+  "diagonal": {
+    "diagonal_count": 370,
+    "diagonal_fraction": 0.315,
+    "band_count": 745,
+    "band_fraction": 0.634,
+    "off_diagonal_count": 431
+  },
+  "effective_dimensionality": {
+    "entropy_nats": 2.983,
+    "max_entropy_nats": 3.584,
+    "entropy_ratio": 0.833,
+    "effective_cells": 19.8
+  },
+  "corners": {
+    "extreme_corners_populated": 4,
+    "far_corners_populated": 6,
+    "far_corner_cells": [
+      {
+        "lo": 0,
+        "ho": 4,
+        "count": 4
+      },
+      {
+        "lo": 0,
+        "ho": 5,
+        "count": 1
+      },
+      {
+        "lo": 1,
+        "ho": 5,
+        "count": 8
+      },
+      {
+        "lo": 4,
+        "ho": 0,
+        "count": 5
+      },
+      {
+        "lo": 5,
+        "ho": 0,
+        "count": 5
+      },
+      {
+        "lo": 5,
+        "ho": 1,
+        "count": 18
+      }
+    ]
+  },
+  "grid_matrix": [
+    [
+      1,
+      3,
+      8,
+      7,
+      4,
+      1
+    ],
+    [
+      2,
+      6,
+      10,
+      19,
+      4,
+      8
+    ],
+    [
+      9,
+      24,
+      97,
+      104,
+      29,
+      34
+    ],
+    [
+      16,
+      40,
+      130,
+      190,
+      40,
+      50
+    ],
+    [
+      5,
+      3,
+      32,
+      26,
+      20,
+      12
+    ],
+    [
+      5,
+      18,
+      65,
+      74,
+      24,
+      56
+    ]
+  ],
+  "checks": {
+    "check_1_populated_ge_20": true,
+    "check_2_adequate_ge_15": true,
+    "check_3_effective_dim_gt_12": true,
+    "check_4_far_corners_ge_2": true,
+    "n_passed": 4
+  },
+  "verdict": "WELL_POPULATED"
+}

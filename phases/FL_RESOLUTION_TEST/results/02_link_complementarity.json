@@ -1,0 +1,29 @@
+{
+  "test": "FL-LINK Complementarity Along Lines",
+  "hypothesis": "H2: FL and LINK occupy distinct, non-overlapping phases of the control loop",
+  "priority": "SECONDARY",
+  "scope": "Currier B strong-forward folios (11)",
+  "lines_with_both": 83,
+  "fl_link_distances": 179,
+  "op_link_distances": 413,
+  "fl_mean_dist_to_link": 3.80,
+  "op_mean_dist_to_link": 3.58,
+  "ks_test": {"statistic": 0.0529, "p": 0.853},
+  "mann_whitney": {"statistic": 38016, "p": 0.289, "alternative": "FL > OP one-sided"},
+  "link_adjacent_depletion": {
+    "baseline_fl_rate": 0.212,
+    "dist_1_rate": 0.185,
+    "dist_1_enrichment": 0.87,
+    "dist_2_rate": 0.221,
+    "dist_2_enrichment": 1.04
+  },
+  "shuffle_control": {
+    "real_mean": 3.804,
+    "shuffle_mean": 3.761,
+    "shuffle_std": 0.135,
+    "percentile": 60.4,
+    "p": 0.396
+  },
+  "verdict": "FAIL",
+  "interpretation": "No spatial separation between FL and LINK within lines. FL does not avoid LINK-proximate zones. LINK-adjacent FL depletion is mild (0.87x at dist=1) and not significant. FL and LINK are independently distributed annotations, not complementary control-loop phases."
+}

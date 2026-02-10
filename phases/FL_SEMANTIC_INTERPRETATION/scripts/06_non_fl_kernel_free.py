@@ -164,3 +164,30 @@ if fl_char_only:
         roles = middle_to_roles.get(mid, {})
         role_str = ', '.join(f"{r}:{c}" for r, c in roles.most_common(2))
         print(f"  {mid:12} -> {role_str}")
+
+# Write JSON result
+result = {
+    "kernel_free_pp_count": len(kernel_free_pp),
+    "fl_middles_count": len(fl_middles),
+    "non_fl_kernel_free_count": len(non_fl_kernel_free),
+    "aggregate_role_distribution": {role: count for role, count in total_role_counts.most_common()},
+    "role_to_middles": {
+        role: [{"middle": mid, "count": count} for mid, count in sorted(mids, key=lambda x: -x[1])[:10]]
+        for role, mids in role_to_middles.items()
+    },
+    "fl_characters": sorted(fl_chars),
+    "non_fl_characters": sorted(non_fl_chars),
+    "extra_characters": sorted(non_fl_chars - fl_chars),
+    "fl_char_only_non_fl_middles": sorted(fl_char_only),
+    "fl_char_only_count": len(fl_char_only),
+    "fl_char_only_roles": {
+        mid: {r: c for r, c in middle_to_roles.get(mid, {}).most_common(3)}
+        for mid in sorted(fl_char_only)
+    },
+    "verdict": f"{len(fl_char_only)} non-FL kernel-free MIDDLEs use only FL characters"
+}
+
+out_path = Path(__file__).resolve().parents[1] / "results" / "06_non_fl_kernel_free.json"
+with open(out_path, 'w') as f:
+    json.dump(result, f, indent=2)
+print(f"\nResult written to {out_path}")

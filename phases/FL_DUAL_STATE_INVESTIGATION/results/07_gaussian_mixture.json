@@ -1,0 +1,311 @@
+{
+  "min_n": 50,
+  "middles_tested": 12,
+  "prefer_2_component": 12,
+  "well_separated": 12,
+  "pct_prefer_2": 1.0,
+  "per_middle": {
+    "i": {
+      "n": 137,
+      "stage": "INITIAL",
+      "bic_1": 110.2,
+      "bic_2": -264.2,
+      "bic_3": -264.4,
+      "delta_bic_2v1": 374.3,
+      "delta_bic_3v2": 0.3,
+      "comp_means": [
+        0.0,
+        0.574
+      ],
+      "comp_weights": [
+        0.292,
+        0.708
+      ],
+      "comp_stds": [
+        0.001,
+        0.275
+      ],
+      "separation": 0.574,
+      "weight_balance": 0.412,
+      "prefers_2": true,
+      "well_separated": true
+    },
+    "in": {
+      "n": 264,
+      "stage": "EARLY",
+      "bic_1": 207.6,
+      "bic_2": -541.8,
+      "bic_3": -553.8,
+      "delta_bic_2v1": 749.4,
+      "delta_bic_3v2": 12.0,
+      "comp_means": [
+        0.0,
+        0.583
+      ],
+      "comp_weights": [
+        0.295,
+        0.705
+      ],
+      "comp_stds": [
+        0.001,
+        0.273
+      ],
+      "separation": 0.583,
+      "weight_balance": 0.419,
+      "prefers_2": true,
+      "well_separated": true
+    },
+    "r": {
+      "n": 748,
+      "stage": "MEDIAL",
+      "bic_1": 588.5,
+      "bic_2": 390.4,
+      "bic_3": -867.0,
+      "delta_bic_2v1": 198.1,
+      "delta_bic_3v2": 1257.4,
+      "comp_means": [
+        0.2,
+        0.821
+      ],
+      "comp_weights": [
+        0.519,
+        0.481
+      ],
+      "comp_stds": [
+        0.193,
+        0.15
+      ],
+      "separation": 0.621,
+      "weight_balance": 0.925,
+      "prefers_2": true,
+      "well_separated": true
+    },
+    "ar": {
+      "n": 677,
+      "stage": "MEDIAL",
+      "bic_1": 317.5,
+      "bic_2": 187.4,
+      "bic_3": 153.4,
+      "delta_bic_2v1": 130.1,
+      "delta_bic_3v2": 34.0,
+      "comp_means": [
+        0.255,
+        0.778
+      ],
+      "comp_weights": [
+        0.433,
+        0.567
+      ],
+      "comp_stds": [
+        0.168,
+        0.149
+      ],
+      "separation": 0.522,
+      "weight_balance": 0.765,
+      "prefers_2": true,
+      "well_separated": true
+    },
+    "al": {
+      "n": 521,
+      "stage": "LATE",
+      "bic_1": 180.6,
+      "bic_2": 126.5,
+      "bic_3": 107.9,
+      "delta_bic_2v1": 54.1,
+      "delta_bic_3v2": 18.6,
+      "comp_means": [
+        0.367,
+        0.832
+      ],
+      "comp_weights": [
+        0.495,
+        0.505
+      ],
+      "comp_stds": [
+        0.184,
+        0.142
+      ],
+      "separation": 0.464,
+      "weight_balance": 0.98,
+      "prefers_2": true,
+      "well_separated": true
+    },
+    "l": {
+      "n": 855,
+      "stage": "LATE",
+      "bic_1": 627.8,
+      "bic_2": 467.0,
+      "bic_3": -709.6,
+      "delta_bic_2v1": 160.8,
+      "delta_bic_3v2": 1176.6,
+      "comp_means": [
+        0.246,
+        0.835
+      ],
+      "comp_weights": [
+        0.529,
+        0.471
+      ],
+      "comp_stds": [
+        0.204,
+        0.157
+      ],
+      "separation": 0.589,
+      "weight_balance": 0.889,
+      "prefers_2": true,
+      "well_separated": true
+    },
+    "ol": {
+      "n": 762,
+      "stage": "LATE",
+      "bic_1": 378.2,
+      "bic_2": 284.2,
+      "bic_3": 244.7,
+      "delta_bic_2v1": 94.0,
+      "delta_bic_3v2": 39.5,
+      "comp_means": [
+        0.265,
+        0.781
+      ],
+      "comp_weights": [
+        0.566,
+        0.434
+      ],
+      "comp_stds": [
+        0.175,
+        0.164
+      ],
+      "separation": 0.516,
+      "weight_balance": 0.767,
+      "prefers_2": true,
+      "well_separated": true
+    },
+    "o": {
+      "n": 388,
+      "stage": "FINAL",
+      "bic_1": 260.6,
+      "bic_2": 201.0,
+      "bic_3": -248.0,
+      "delta_bic_2v1": 59.6,
+      "delta_bic_3v2": 449.0,
+      "comp_means": [
+        0.187,
+        0.753
+      ],
+      "comp_weights": [
+        0.52,
+        0.48
+      ],
+      "comp_stds": [
+        0.163,
+        0.189
+      ],
+      "separation": 0.567,
+      "weight_balance": 0.924,
+      "prefers_2": true,
+      "well_separated": true
+    },
+    "am": {
+      "n": 174,
+      "stage": "FINAL",
+      "bic_1": -90.9,
+      "bic_2": -1391.5,
+      "bic_3": -1391.2,
+      "delta_bic_2v1": 1300.6,
+      "delta_bic_3v2": -0.3,
+      "comp_means": [
+        0.671,
+        1.0
+      ],
+      "comp_weights": [
+        0.23,
+        0.77
+      ],
+      "comp_stds": [
+        0.243,
+        0.001
+      ],
+      "separation": 0.329,
+      "weight_balance": 0.299,
+      "prefers_2": true,
+      "well_separated": true
+    },
+    "m": {
+      "n": 76,
+      "stage": "TERMINAL",
+      "bic_1": 21.4,
+      "bic_2": -472.6,
+      "bic_3": -468.7,
+      "delta_bic_2v1": 494.0,
+      "delta_bic_3v2": -3.9,
+      "comp_means": [
+        0.564,
+        1.0
+      ],
+      "comp_weights": [
+        0.342,
+        0.658
+      ],
+      "comp_stds": [
+        0.277,
+        0.001
+      ],
+      "separation": 0.436,
+      "weight_balance": 0.521,
+      "prefers_2": true,
+      "well_separated": true
+    },
+    "dy": {
+      "n": 675,
+      "stage": "TERMINAL",
+      "bic_1": 329.3,
+      "bic_2": 265.4,
+      "bic_3": -640.7,
+      "delta_bic_2v1": 63.8,
+      "delta_bic_3v2": 906.2,
+      "comp_means": [
+        0.345,
+        0.839
+      ],
+      "comp_weights": [
+        0.523,
+        0.477
+      ],
+      "comp_stds": [
+        0.203,
+        0.153
+      ],
+      "separation": 0.494,
+      "weight_balance": 0.912,
+      "prefers_2": true,
+      "well_separated": true
+    },
+    "y": {
+      "n": 513,
+      "stage": "TERMINAL",
+      "bic_1": 384.0,
+      "bic_2": -975.6,
+      "bic_3": -1032.2,
+      "delta_bic_2v1": 1359.6,
+      "delta_bic_3v2": 56.6,
+      "comp_means": [
+        0.478,
+        1.0
+      ],
+      "comp_weights": [
+        0.71,
+        0.29
+      ],
+      "comp_stds": [
+        0.302,
+        0.001
+      ],
+      "separation": 0.522,
+      "weight_balance": 0.408,
+      "prefers_2": true,
+      "well_separated": true
+    }
+  },
+  "verdict": "DUAL_STATE",
+  "explanation": "12/12 (100%) FL MIDDLEs prefer 2-component GMM, 12 well-separated. Strong dual-state evidence."
+}

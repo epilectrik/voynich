@@ -1,0 +1,167 @@
+{
+  "n_profiled_lines": 1647,
+  "stage_gap_role_pcts": {
+    "INITIAL": {
+      "AUXILIARY": 11.7,
+      "CORE_CONTROL": 0.0,
+      "ENERGY_OPERATOR": 39.8,
+      "FLOW_OPERATOR": 0.0,
+      "FREQUENT_OPERATOR": 14.8,
+      "UNKNOWN": 33.6
+    },
+    "EARLY": {
+      "AUXILIARY": 15.3,
+      "CORE_CONTROL": 0.7,
+      "ENERGY_OPERATOR": 46.0,
+      "FLOW_OPERATOR": 0.0,
+      "FREQUENT_OPERATOR": 16.7,
+      "UNKNOWN": 21.3
+    },
+    "MEDIAL": {
+      "AUXILIARY": 14.7,
+      "CORE_CONTROL": 1.3,
+      "ENERGY_OPERATOR": 37.8,
+      "FLOW_OPERATOR": 0.1,
+      "FREQUENT_OPERATOR": 14.5,
+      "UNKNOWN": 31.7
+    },
+    "LATE": {
+      "AUXILIARY": 14.9,
+      "CORE_CONTROL": 1.6,
+      "ENERGY_OPERATOR": 45.4,
+      "FLOW_OPERATOR": 0.0,
+      "FREQUENT_OPERATOR": 11.6,
+      "UNKNOWN": 26.5
+    },
+    "FINAL": {
+      "AUXILIARY": 13.7,
+      "CORE_CONTROL": 1.9,
+      "ENERGY_OPERATOR": 39.3,
+      "FLOW_OPERATOR": 0.0,
+      "FREQUENT_OPERATOR": 13.5,
+      "UNKNOWN": 31.5
+    },
+    "TERMINAL": {
+      "AUXILIARY": 14.6,
+      "CORE_CONTROL": 1.6,
+      "ENERGY_OPERATOR": 38.2,
+      "FLOW_OPERATOR": 0.0,
+      "FREQUENT_OPERATOR": 11.6,
+      "UNKNOWN": 34.0
+    }
+  },
+  "chi_squared_role": {
+    "chi2": 56.4,
+    "p": 0.0003258193599673001,
+    "cramers_v": 0.047
+  },
+  "top_gap_words_by_stage": {
+    "TERMINAL": {
+      "qokedy": 28,
+      "chedy": 21,
+      "or": 17,
+      "qokain": 17,
+      "shedy": 16,
+      "qokar": 15,
+      "qokeey": 14,
+      "daiin": 13,
+      "shey": 13,
+      "qokeedy": 12
+    },
+    "FINAL": {
+      "chedy": 19,
+      "aiin": 15,
+      "okaiin": 10,
+      "daiin": 9,
+      "qokedy": 8,
+      "qokeedy": 8,
+      "saiin": 6,
+      "chey": 6,
+      "oteedy": 6,
+      "qokain": 6
+    },
+    "MEDIAL": {
+      "aiin": 41,
+      "shedy": 38,
+      "chedy": 28,
+      "qokain": 26,
+      "or": 23,
+      "okaiin": 19,
+      "okain": 17,
+      "chey": 17,
+      "daiin": 16,
+      "shey": 16
+    },
+    "LATE": {
+      "chedy": 85,
+      "shedy": 79,
+      "chey": 46,
+      "qokaiin": 44,
+      "aiin": 44,
+      "qokain": 43,
+      "qokedy": 39,
+      "or": 35,
+      "daiin": 34,
+      "qokeey": 33
+    },
+    "INITIAL": {
+      "qokedy": 5,
+      "chedy": 4,
+      "okaiin": 4,
+      "or": 3,
+      "otaiin": 3,
+      "cheky": 2,
+      "shek": 2,
+      "qotedy": 2,
+      "chokaiin": 2,
+      "oraiin": 2
+    },
+    "EARLY": {
+      "chedy": 16,
+      "qokeedy": 10,
+      "otedy": 7,
+      "shey": 7,
+      "shedy": 7,
+      "okeey": 7,
+      "okedy": 6,
+      "chey": 6,
+      "sheey": 6,
+      "qokeey": 6
+    }
+  },
+  "jaccard_matrix": {
+    "INITIAL_vs_EARLY": 0.16,
+    "INITIAL_vs_MEDIAL": 0.23,
+    "INITIAL_vs_LATE": 0.2,
+    "INITIAL_vs_FINAL": 0.18,
+    "INITIAL_vs_TERMINAL": 0.2,
+    "EARLY_vs_INITIAL": 0.16,
+    "EARLY_vs_MEDIAL": 0.39,
+    "EARLY_vs_LATE": 0.41,
+    "EARLY_vs_FINAL": 0.28,
+    "EARLY_vs_TERMINAL": 0.33,
+    "MEDIAL_vs_INITIAL": 0.23,
+    "MEDIAL_vs_EARLY": 0.39,
+    "MEDIAL_vs_LATE": 0.59,
+    "MEDIAL_vs_FINAL": 0.39,
+    "MEDIAL_vs_TERMINAL": 0.52,
+    "LATE_vs_INITIAL": 0.2,
+    "LATE_vs_EARLY": 0.41,
+    "LATE_vs_MEDIAL": 0.59,
+    "LATE_vs_FINAL": 0.41,
+    "LATE_vs_TERMINAL": 0.56,
+    "FINAL_vs_INITIAL": 0.18,
+    "FINAL_vs_EARLY": 0.28,
+    "FINAL_vs_MEDIAL": 0.39,
+    "FINAL_vs_LATE": 0.41,
+    "FINAL_vs_TERMINAL": 0.35,
+    "TERMINAL_vs_INITIAL": 0.2,
+    "TERMINAL_vs_EARLY": 0.33,
+    "TERMINAL_vs_MEDIAL": 0.52,
+    "TERMINAL_vs_LATE": 0.56,
+    "TERMINAL_vs_FINAL": 0.35
+  },
+  "vocab_differentiated": true,
+  "verdict": "VOCABULARY_DIVERGENCE",
+  "explanation": "Stage vocabularies differ but role distribution is uniform"
+}

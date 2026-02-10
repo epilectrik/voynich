@@ -1,0 +1,261 @@
+{
+  "test": "04_opener_instruction_header",
+  "phase": "LINE_CONTROL_BLOCK_GRAMMAR",
+  "purpose": "Determine whether line openers function as specific instruction headers (token-level) or merely as role markers (role-level)",
+  "data": {
+    "total_lines_currier_b": 2420,
+    "lines_with_3plus_tokens": 2406,
+    "lines_with_valid_role_opener": 1274,
+    "valid_roles": [
+      "AUXILIARY",
+      "CORE_CONTROL",
+      "ENERGY_OPERATOR",
+      "FLOW_OPERATOR",
+      "FREQUENT_OPERATOR"
+    ],
+    "vocabulary_size": 339,
+    "top5_openers": [
+      {
+        "token": "daiin",
+        "role": "CORE_CONTROL",
+        "count": 85
+      },
+      {
+        "token": "saiin",
+        "role": "AUXILIARY",
+        "count": 48
+      },
+      {
+        "token": "dain",
+        "role": "FLOW_OPERATOR",
+        "count": 34
+      },
+      {
+        "token": "sain",
+        "role": "AUXILIARY",
+        "count": 34
+      },
+      {
+        "token": "qokeedy",
+        "role": "ENERGY_OPERATOR",
+        "count": 31
+      }
+    ]
+  },
+  "role_level_classifier": {
+    "accuracy": 0.29199372056514916,
+    "chance": 0.2,
+    "n_samples": 1274,
+    "n_roles": 5,
+    "confusion_matrix": [
+      {
+        "true_role": "AUXILIARY",
+        "predicted_role": "AUXILIARY",
+        "count": 186
+      },
+      {
+        "true_role": "AUXILIARY",
+        "predicted_role": "CORE_CONTROL",
+        "count": 96
+      },
+      {
+        "true_role": "AUXILIARY",
+        "predicted_role": "ENERGY_OPERATOR",
+        "count": 179
+      },
+      {
+        "true_role": "AUXILIARY",
+        "predicted_role": "FLOW_OPERATOR",
+        "count": 79
+      },
+      {
+        "true_role": "AUXILIARY",
+        "predicted_role": "FREQUENT_OPERATOR",
+        "count": 95
+      },
+      {
+        "true_role": "CORE_CONTROL",
+        "predicted_role": "AUXILIARY",
+        "count": 24
+      },
+      {
+        "true_role": "CORE_CONTROL",
+        "predicted_role": "CORE_CONTROL",
+        "count": 19
+      },
+      {
+        "true_role": "CORE_CONTROL",
+        "predicted_role": "ENERGY_OPERATOR",
+        "count": 21
+      },
+      {
+        "true_role": "CORE_CONTROL",
+        "predicted_role": "FLOW_OPERATOR",
+        "count": 18
+      },
+      {
+        "true_role": "CORE_CONTROL",
+        "predicted_role": "FREQUENT_OPERATOR",
+        "count": 24
+      },
+      {
+        "true_role": "ENERGY_OPERATOR",
+        "predicted_role": "AUXILIARY",
+        "count": 70
+      },
+      {
+        "true_role": "ENERGY_OPERATOR",
+        "predicted_role": "CORE_CONTROL",
+        "count": 46
+      },
+      {
+        "true_role": "ENERGY_OPERATOR",
+        "predicted_role": "ENERGY_OPERATOR",
+        "count": 129
+      },
+      {
+        "true_role": "ENERGY_OPERATOR",
+        "predicted_role": "FLOW_OPERATOR",
+        "count": 44
+      },
+      {
+        "true_role": "ENERGY_OPERATOR",
+        "predicted_role": "FREQUENT_OPERATOR",
+        "count": 43
+      },
+      {
+        "true_role": "FLOW_OPERATOR",
+        "predicted_role": "AUXILIARY",
+        "count": 17
+      },
+      {
+        "true_role": "FLOW_OPERATOR",
+        "predicted_role": "CORE_CONTROL",
+        "count": 17
+      },
+      {
+        "true_role": "FLOW_OPERATOR",
+        "predicted_role": "ENERGY_OPERATOR",
+        "count": 21
+      },
+      {
+        "true_role": "FLOW_OPERATOR",
+        "predicted_role": "FLOW_OPERATOR",
+        "count": 19
+      },
+      {
+        "true_role": "FLOW_OPERATOR",
+        "predicted_role": "FREQUENT_OPERATOR",
+        "count": 10
+      },
+      {
+        "true_role": "FREQUENT_OPERATOR",
+        "predicted_role": "AUXILIARY",
+        "count": 23
+      },
+      {
+        "true_role": "FREQUENT_OPERATOR",
+        "predicted_role": "CORE_CONTROL",
+        "count": 25
+      },
+      {
+        "true_role": "FREQUENT_OPERATOR",
+        "predicted_role": "ENERGY_OPERATOR",
+        "count": 36
+      },
+      {
+        "true_role": "FREQUENT_OPERATOR",
+        "predicted_role": "FLOW_OPERATOR",
+        "count": 14
+      },
+      {
+        "true_role": "FREQUENT_OPERATOR",
+        "predicted_role": "FREQUENT_OPERATOR",
+        "count": 19
+      }
+    ],
+    "role_counts": {
+      "AUXILIARY": 635,
+      "CORE_CONTROL": 106,
+      "ENERGY_OPERATOR": 332,
+      "FLOW_OPERATOR": 84,
+      "FREQUENT_OPERATOR": 117
+    }
+  },
+  "token_level_classifier": {
+    "accuracy": 0.25862068965517243,
+    "chance": 0.2,
+    "n_samples": 232,
+    "n_classes": 5
+  },
+  "jsd_analysis": {
+    "daiin": {
+      "jsd": 0.4440159961074483,
+      "role": "CORE_CONTROL",
+      "n_tok": 85,
+      "n_other": 21,
+      "shuffle_mean": 0.42091234251308,
+      "shuffle_std": 0.03130944173203215,
+      "p_value": 0.22,
+      "ratio_to_shuffle": 1.0548894657173193,
+      "significant": false
+    },
+    "saiin": {
+      "jsd": 0.27097901573333855,
+      "role": "AUXILIARY",
+      "n_tok": 48,
+      "n_other": 587,
+      "shuffle_mean": 0.24822199918612278,
+      "shuffle_std": 0.013986509594616142,
+      "p_value": 0.061,
+      "ratio_to_shuffle": 1.0916800953252819,
+      "significant": false
+    },
+    "dain": {
+      "jsd": 0.40257002581508405,
+      "role": "FLOW_OPERATOR",
+      "n_tok": 34,
+      "n_other": 50,
+      "shuffle_mean": 0.38715115272082173,
+      "shuffle_std": 0.029746110921128693,
+      "p_value": 0.297,
+      "ratio_to_shuffle": 1.0398264940860993,
+      "significant": false
+    },
+    "sain": {
+      "jsd": 0.29188436339936186,
+      "role": "AUXILIARY",
+      "n_tok": 34,
+      "n_other": 601,
+      "shuffle_mean": 0.2894015904620273,
+      "shuffle_std": 0.018340513651339794,
+      "p_value": 0.417,
+      "ratio_to_shuffle": 1.008578988572146,
+      "significant": false
+    },
+    "qokeedy": {
+      "jsd": 0.32232476363936324,
+      "role": "ENERGY_OPERATOR",
+      "n_tok": 31,
+      "n_other": 301,
+      "shuffle_mean": 0.31018482606995595,
+      "shuffle_std": 0.020240512396580174,
+      "p_value": 0.28,
+      "ratio_to_shuffle": 1.0391377544905094,
+      "significant": false
+    }
+  },
+  "shuffle": {
+    "n_shuffles": 1000,
+    "seed": 42,
+    "method": "Shuffle opener tokens across lines within same folio"
+  },
+  "verdict": "PARTIAL",
+  "verdict_detail": "Mixed results: role_accuracy=0.292, jsd_significant=0",
+  "pass_criteria": {
+    "role_accuracy_threshold": 0.4,
+    "jsd_significant_needed": 2,
+    "jsd_p_threshold": 0.01,
+    "jsd_ratio_threshold": 2.0
+  }
+}

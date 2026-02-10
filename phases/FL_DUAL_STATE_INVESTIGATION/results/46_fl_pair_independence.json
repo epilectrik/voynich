@@ -1,0 +1,161 @@
+{
+  "n_lines": 1176,
+  "lo_marginal": {
+    "0": 24,
+    "1": 49,
+    "2": 297,
+    "3": 466,
+    "4": 98,
+    "5": 242
+  },
+  "ho_marginal": {
+    "0": 38,
+    "1": 94,
+    "2": 342,
+    "3": 420,
+    "4": 121,
+    "5": 161
+  },
+  "test_1_chi_squared": {
+    "contingency_table": [
+      [
+        1,
+        3,
+        8,
+        7,
+        4,
+        1
+      ],
+      [
+        2,
+        6,
+        10,
+        19,
+        4,
+        8
+      ],
+      [
+        9,
+        24,
+        97,
+        104,
+        29,
+        34
+      ],
+      [
+        16,
+        40,
+        130,
+        190,
+        40,
+        50
+      ],
+      [
+        5,
+        3,
+        32,
+        26,
+        20,
+        12
+      ],
+      [
+        5,
+        18,
+        65,
+        74,
+        24,
+        56
+      ]
+    ],
+    "chi2_statistic": 53.231,
+    "dof": 25,
+    "p_value": 0.0008351416915082924,
+    "cramers_v": 0.0951,
+    "check_1": true
+  },
+  "test_2_mutual_information": {
+    "observed_mi_bits": 0.030718,
+    "null_mi_mean": 0.01583,
+    "null_mi_95th": 0.02418,
+    "null_mi_99th": 0.028091,
+    "permutation_p": 0.006,
+    "n_shuffles": 1000,
+    "check_2": true
+  },
+  "test_3_conditional_distribution": {
+    "n_lo_tested": 6,
+    "n_lo_significant": 2,
+    "fraction_significant": 0.333,
+    "per_lo_results": [
+      {
+        "lo_stage": "INITIAL",
+        "lo_val": 0,
+        "n": 24,
+        "chi2": 3.651,
+        "dof": 5,
+        "p": 0.600686,
+        "kl_divergence": 0.120784,
+        "significant": false
+      },
+      {
+        "lo_stage": "EARLY",
+        "lo_val": 1,
+        "n": 49,
+        "chi2": 3.078,
+        "dof": 5,
+        "p": 0.687985,
+        "kl_divergence": 0.045051,
+        "significant": false
+      },
+      {
+        "lo_stage": "MEDIAL",
+        "lo_val": 2,
+        "n": 297,
+        "chi2": 2.559,
+        "dof": 5,
+        "p": 0.767631,
+        "kl_divergence": 0.006255,
+        "significant": false
+      },
+      {
+        "lo_stage": "LATE",
+        "lo_val": 3,
+        "n": 466,
+        "chi2": 8.127,
+        "dof": 5,
+        "p": 0.149382,
+        "kl_divergence": 0.012845,
+        "significant": false
+      },
+      {
+        "lo_stage": "FINAL",
+        "lo_val": 4,
+        "n": 98,
+        "chi2": 16.69,
+        "dof": 5,
+        "p": 0.005127,
+        "kl_divergence": 0.11395,
+        "significant": true
+      },
+      {
+        "lo_stage": "TERMINAL",
+        "lo_val": 5,
+        "n": 242,
+        "chi2": 19.126,
+        "dof": 5,
+        "p": 0.001821,
+        "kl_divergence": 0.049618,
+        "significant": true
+      }
+    ],
+    "check_3": false
+  },
+  "checks": {
+    "check_1": true,
+    "check_2": true,
+    "check_3": false,
+    "n_pass": 2
+  },
+  "verdict": "GENUINE_2D",
+  "explanation": "The (lo, ho) joint distribution is NOT explained by two independent marginals. 2/3 independence tests reject the null hypothesis. The 2D FL grid contains genuine pairwise structure beyond what independent 1D gradients would produce."
+}

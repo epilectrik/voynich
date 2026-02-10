@@ -1,0 +1,23 @@
+{
+  "test": "FL Stage -> Suffix Profile of Co-Occurring Tokens",
+  "hypothesis": "H3: Later FL stages correspond to more complete/closed token morphology",
+  "priority": "TERTIARY",
+  "scope": "Currier B strong-forward folios (11)",
+  "total_pairs": 1048,
+  "global_chi_squared": {"chi2": 38.3, "dof": 45, "p": 0.751, "cramers_v": 0.089},
+  "monotonicity": {"spearman_rho": 0.0076, "p": 0.806},
+  "nmi_shuffle": {
+    "real_nmi": 0.026761,
+    "shuffle_mean": 0.028214,
+    "shuffle_std": 0.003491,
+    "percentile": 34.3,
+    "p": 0.657
+  },
+  "per_role": {
+    "ENERGY_OPERATOR": {"chi2": 40.3, "p": 0.247, "cramers_v": 0.128},
+    "AUXILIARY": {"chi2": 20.5, "p": 0.975, "cramers_v": 0.129},
+    "FREQUENT_OPERATOR": {"chi2": 2.3, "p": 0.687, "cramers_v": 0.106}
+  },
+  "verdict": "FAIL",
+  "interpretation": "Completely flat suffix distributions across FL stages. No monotonic shift, no significant chi-squared, NMI below shuffle mean. FL stage does not affect execution morphology globally."
+}

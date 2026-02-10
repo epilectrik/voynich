@@ -1,0 +1,15 @@
+{
+  "n_lines": 1209,
+  "within_pair_jaccard": 0.0147,
+  "between_pair_jaccard": 0.0108,
+  "within_pair_cosine": 0.0281,
+  "between_pair_cosine": 0.019,
+  "jaccard_lift": 1.359,
+  "cosine_lift": 1.478,
+  "jaccard_p": 0.0858951357773472,
+  "cosine_p": 0.08655518255336908,
+  "within_role_cosine": 0.6027,
+  "between_role_cosine": 0.5666,
+  "verdict": "NO_PAIR_COHERENCE",
+  "explanation": "Same-pair lines are no more similar than random pairs"
+}

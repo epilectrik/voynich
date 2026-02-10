@@ -1,0 +1,232 @@
+{
+  "total_assigned": 5790,
+  "low_count": 2926,
+  "high_count": 2864,
+  "transition_types": {
+    "CROSS": 1374,
+    "HIGH": 1102,
+    "LOW": 1199
+  },
+  "mode_direction": {
+    "LOW": {
+      "same": 395,
+      "forward": 522,
+      "backward": 282
+    },
+    "HIGH": {
+      "backward": 269,
+      "forward": 541,
+      "same": 292
+    },
+    "CROSS": {
+      "same": 414,
+      "forward": 384,
+      "backward": 576
+    }
+  },
+  "forward_bias": {
+    "LOW": 1.8511,
+    "HIGH": 2.0112
+  },
+  "cross_mode_pct": 0.3739,
+  "line_coherence": {
+    "pure_low": 182,
+    "pure_high": 178,
+    "mixed": 1209,
+    "mixed_pct": 0.7706
+  },
+  "top_bigrams": {
+    "LOW": [
+      [
+        "ol->dy",
+        40
+      ],
+      [
+        "r->ol",
+        39
+      ],
+      [
+        "dy->dy",
+        38
+      ],
+      [
+        "l->ol",
+        38
+      ],
+      [
+        "l->l",
+        37
+      ],
+      [
+        "ol->ol",
+        32
+      ],
+      [
+        "r->al",
+        30
+      ],
+      [
+        "ar->ar",
+        30
+      ],
+      [
+        "r->y",
+        28
+      ],
+      [
+        "r->l",
+        28
+      ],
+      [
+        "l->dy",
+        28
+      ],
+      [
+        "ol->l",
+        27
+      ],
+      [
+        "r->ar",
+        25
+      ],
+      [
+        "ar->al",
+        25
+      ],
+      [
+        "y->dy",
+        24
+      ]
+    ],
+    "HIGH": [
+      [
+        "ar->ar",
+        39
+      ],
+      [
+        "l->l",
+        33
+      ],
+      [
+        "ar->al",
+        32
+      ],
+      [
+        "dy->dy",
+        27
+      ],
+      [
+        "ol->r",
+        26
+      ],
+      [
+        "ol->l",
+        25
+      ],
+      [
+        "l->r",
+        23
+      ],
+      [
+        "r->dy",
+        22
+      ],
+      [
+        "ar->ol",
+        22
+      ],
+      [
+        "ar->dy",
+        21
+      ],
+      [
+        "r->ol",
+        21
+      ],
+      [
+        "ar->r",
+        20
+      ],
+      [
+        "l->dy",
+        20
+      ],
+      [
+        "ol->dy",
+        20
+      ],
+      [
+        "r->ar",
+        20
+      ]
+    ],
+    "CROSS": [
+      [
+        "l->l",
+        36
+      ],
+      [
+        "ol->l",
+        35
+      ],
+      [
+        "dy->dy",
+        33
+      ],
+      [
+        "l->ol",
+        33
+      ],
+      [
+        "l->r",
+        31
+      ],
+      [
+        "y->l",
+        29
+      ],
+      [
+        "r->ar",
+        27
+      ],
+      [
+        "ol->r",
+        27
+      ],
+      [
+        "ol->in",
+        26
+      ],
+      [
+        "ol->ol",
+        26
+      ],
+      [
+        "ol->ar",
+        25
+      ],
+      [
+        "dy->ar",
+        24
+      ],
+      [
+        "dy->l",
+        23
+      ],
+      [
+        "r->ol",
+        23
+      ],
+      [
+        "r->r",
+        22
+      ]
+    ]
+  },
+  "cross_transitions": {
+    "LOW->HIGH": 1258,
+    "HIGH->LOW": 116
+  },
+  "verdict": "PARTIALLY_COHERENT",
+  "explanation": "Some forward bias within modes (LOW=1.9:1, HIGH=2.0:1), cross-mode=37%. Modes are partially coherent but frequently interleaved."
+}

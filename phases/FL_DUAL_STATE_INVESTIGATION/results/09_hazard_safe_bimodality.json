@@ -1,0 +1,334 @@
+{
+  "total_fl_records": 5895,
+  "per_middle": {
+    "ii": {
+      "n": 23,
+      "global_kurtosis": -0.993,
+      "class_analysis": {
+        "OTHER": {
+          "n": 16,
+          "mean": 0.341,
+          "std": 0.296,
+          "kurtosis": -0.66
+        }
+      },
+      "mann_whitney": null,
+      "within_class_bimodal": false
+    },
+    "i": {
+      "n": 137,
+      "global_kurtosis": -1.408,
+      "class_analysis": {
+        "HAZARD": {
+          "n": 49,
+          "mean": 0.345,
+          "std": 0.344,
+          "kurtosis": -1.441
+        },
+        "OTHER": {
+          "n": 88,
+          "mean": 0.441,
+          "std": 0.347,
+          "kurtosis": -1.36
+        }
+      },
+      "mann_whitney": null,
+      "within_class_bimodal": true
+    },
+    "in": {
+      "n": 264,
+      "global_kurtosis": -1.385,
+      "class_analysis": {
+        "HAZARD": {
+          "n": 113,
+          "mean": 0.421,
+          "std": 0.349,
+          "kurtosis": -1.415
+        },
+        "OTHER": {
+          "n": 151,
+          "mean": 0.403,
+          "std": 0.352,
+          "kurtosis": -1.35
+        }
+      },
+      "mann_whitney": null,
+      "within_class_bimodal": true
+    },
+    "r": {
+      "n": 748,
+      "global_kurtosis": -1.418,
+      "class_analysis": {
+        "HAZARD": {
+          "n": 188,
+          "mean": 0.507,
+          "std": 0.32,
+          "kurtosis": -1.259
+        },
+        "OTHER": {
+          "n": 560,
+          "mean": 0.495,
+          "std": 0.366,
+          "kurtosis": -1.471
+        }
+      },
+      "mann_whitney": null,
+      "within_class_bimodal": true
+    },
+    "ar": {
+      "n": 677,
+      "global_kurtosis": -1.198,
+      "class_analysis": {
+        "HAZARD": {
+          "n": 248,
+          "mean": 0.545,
+          "std": 0.3,
+          "kurtosis": -1.338
+        },
+        "OTHER": {
+          "n": 429,
+          "mean": 0.555,
+          "std": 0.305,
+          "kurtosis": -1.116
+        }
+      },
+      "mann_whitney": null,
+      "within_class_bimodal": true
+    },
+    "al": {
+      "n": 521,
+      "global_kurtosis": -1.063,
+      "class_analysis": {
+        "HAZARD": {
+          "n": 186,
+          "mean": 0.593,
+          "std": 0.298,
+          "kurtosis": -1.189
+        },
+        "SAFE": {
+          "n": 11,
+          "mean": 0.817,
+          "std": 0.283,
+          "kurtosis": 1.16
+        },
+        "OTHER": {
+          "n": 324,
+          "mean": 0.599,
+          "std": 0.273,
+          "kurtosis": -0.982
+        }
+      },
+      "mann_whitney": {
+        "U": 559.0,
+        "p": 0.011417,
+        "hazard_mean": 0.593,
+        "safe_mean": 0.817,
+        "separation": 0.224
+      },
+      "within_class_bimodal": true
+    },
+    "l": {
+      "n": 855,
+      "global_kurtosis": -1.315,
+      "class_analysis": {
+        "HAZARD": {
+          "n": 130,
+          "mean": 0.618,
+          "std": 0.301,
+          "kurtosis": -1.071
+        },
+        "OTHER": {
+          "n": 725,
+          "mean": 0.506,
+          "std": 0.351,
+          "kurtosis": -1.347
+        }
+      },
+      "mann_whitney": null,
+      "within_class_bimodal": true
+    },
+    "ol": {
+      "n": 762,
+      "global_kurtosis": -1.175,
+      "class_analysis": {
+        "SAFE": {
+          "n": 10,
+          "mean": 0.643,
+          "std": 0.334,
+          "kurtosis": -1.243
+        },
+        "OTHER": {
+          "n": 752,
+          "mean": 0.487,
+          "std": 0.307,
+          "kurtosis": -1.168
+        }
+      },
+      "mann_whitney": null,
+      "within_class_bimodal": true
+    },
+    "o": {
+      "n": 388,
+      "global_kurtosis": -1.265,
+      "class_analysis": {
+        "SAFE": {
+          "n": 11,
+          "mean": 0.751,
+          "std": 0.298,
+          "kurtosis": -0.668
+        },
+        "OTHER": {
+          "n": 377,
+          "mean": 0.45,
+          "std": 0.331,
+          "kurtosis": -1.256
+        }
+      },
+      "mann_whitney": null,
+      "within_class_bimodal": true
+    },
+    "ly": {
+      "n": 49,
+      "global_kurtosis": -0.605,
+      "class_analysis": {
+        "SAFE": {
+          "n": 17,
+          "mean": 0.785,
+          "std": 0.257,
+          "kurtosis": -1.318
+        },
+        "OTHER": {
+          "n": 32,
+          "mean": 0.754,
+          "std": 0.297,
+          "kurtosis": -0.52
+        }
+      },
+      "mann_whitney": null,
+      "within_class_bimodal": true
+    },
+    "am": {
+      "n": 174,
+      "global_kurtosis": 7.069,
+      "class_analysis": {
+        "OTHER": {
+          "n": 166,
+          "mean": 0.93,
+          "std": 0.173,
+          "kurtosis": 8.046
+        }
+      },
+      "mann_whitney": null,
+      "within_class_bimodal": false
+    },
+    "m": {
+      "n": 76,
+      "global_kurtosis": 2.108,
+      "class_analysis": {
+        "HAZARD": {
+          "n": 42,
+          "mean": 0.861,
+          "std": 0.261,
+          "kurtosis": 2.563
+        },
+        "OTHER": {
+          "n": 34,
+          "mean": 0.838,
+          "std": 0.265,
+          "kurtosis": 1.643
+        }
+      },
+      "mann_whitney": null,
+      "within_class_bimodal": false
+    },
+    "dy": {
+      "n": 675,
+      "global_kurtosis": -1.052,
+      "class_analysis": {
+        "OTHER": {
+          "n": 669,
+          "mean": 0.578,
+          "std": 0.305,
+          "kurtosis": -1.05
+        }
+      },
+      "mann_whitney": null,
+      "within_class_bimodal": true
+    },
+    "ry": {
+      "n": 33,
+      "global_kurtosis": 1.082,
+      "class_analysis": {
+        "SAFE": {
+          "n": 13,
+          "mean": 0.913,
+          "std": 0.122,
+          "kurtosis": -0.122
+        },
+        "OTHER": {
+          "n": 20,
+          "mean": 0.737,
+          "std": 0.371,
+          "kurtosis": -0.665
+        }
+      },
+      "mann_whitney": null,
+      "within_class_bimodal": true
+    },
+    "y": {
+      "n": 513,
+      "global_kurtosis": -1.148,
+      "class_analysis": {
+        "SAFE": {
+          "n": 33,
+          "mean": 0.942,
+          "std": 0.145,
+          "kurtosis": 13.294
+        },
+        "OTHER": {
+          "n": 480,
+          "mean": 0.608,
+          "std": 0.347,
+          "kurtosis": -1.207
+        }
+      },
+      "mann_whitney": null,
+      "within_class_bimodal": true
+    }
+  },
+  "globally_bimodal": [
+    "ii",
+    "i",
+    "in",
+    "r",
+    "ar",
+    "al",
+    "l",
+    "ol",
+    "o",
+    "ly",
+    "dy",
+    "y"
+  ],
+  "resolved_by_hazard_safe": [
+    "ii"
+  ],
+  "persists_within_class": [
+    "i",
+    "in",
+    "r",
+    "ar",
+    "al",
+    "l",
+    "ol",
+    "o",
+    "ly",
+    "dy",
+    "y"
+  ],
+  "significant_separation": [
+    "al"
+  ],
+  "verdict": "INDEPENDENT",
+  "explanation": "Bimodality persists within hazard/safe classes: 11/12 remain bimodal. Dual-state is independent of C773."
+}

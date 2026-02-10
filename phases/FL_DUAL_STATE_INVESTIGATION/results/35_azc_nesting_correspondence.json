@@ -1,0 +1,89 @@
+{
+  "word_overlap": {
+    "S_SERIES": {
+      "FL_BOOKEND": 0.0787,
+      "OL": 0.0576,
+      "OR": 0.058,
+      "CENTER_B": 0.0415
+    },
+    "R_SERIES": {
+      "FL_BOOKEND": 0.1429,
+      "OL": 0.1322,
+      "OR": 0.1228,
+      "CENTER_B": 0.1429
+    },
+    "CENTER_AZC": {
+      "FL_BOOKEND": 0.119,
+      "OL": 0.1013,
+      "OR": 0.1019,
+      "CENTER_B": 0.1
+    }
+  },
+  "prefix_cosine": {
+    "S_SERIES": {
+      "FL_BOOKEND": 0.8618,
+      "OL": 0.6107,
+      "OR": 0.5924,
+      "CENTER_B": 0.4796
+    },
+    "R_SERIES": {
+      "FL_BOOKEND": 0.933,
+      "OL": 0.7738,
+      "OR": 0.6907,
+      "CENTER_B": 0.5763
+    },
+    "CENTER_AZC": {
+      "FL_BOOKEND": 0.9291,
+      "OL": 0.809,
+      "OR": 0.7039,
+      "CENTER_B": 0.5794
+    }
+  },
+  "role_cosine": {
+    "S_SERIES": {
+      "FL_BOOKEND": 0.7028,
+      "OL": 0.6436,
+      "OR": 0.7109,
+      "CENTER_B": 0.6172
+    },
+    "R_SERIES": {
+      "FL_BOOKEND": 0.7911,
+      "OL": 0.7525,
+      "OR": 0.8141,
+      "CENTER_B": 0.7279
+    },
+    "CENTER_AZC": {
+      "FL_BOOKEND": 0.8424,
+      "OL": 0.8067,
+      "OR": 0.8541,
+      "CENTER_B": 0.7783
+    }
+  },
+  "enrichment": {
+    "s_at_fl": {
+      "lift": 3.06
+    },
+    "s_at_ol": {
+      "lift": 1.24
+    },
+    "r_at_ol": {
+      "lift": 1.242
+    },
+    "r_at_or": {
+      "lift": 0.93
+    },
+    "c_at_center": {
+      "lift": 0.403
+    }
+  },
+  "checks": {
+    "s_maps_to_boundary": true,
+    "r_maps_to_frame": false,
+    "c_maps_to_center": false,
+    "s_enriched_at_boundary": true,
+    "c_enriched_at_center": false
+  },
+  "n_pass": 2,
+  "verdict": "WEAK_SIGNAL",
+  "explanation": "Marginal correspondence, may be driven by shared vocabulary"
+}
