@@ -1678,6 +1678,8 @@ class BTokenAnalysis:
           2. Expose atomic composition (C935) as unordered set
           3. No verbs, no arrows, no sequencing
           4. Suffix shown as raw morphology (form marker), never operational gloss
+          5. form=simple (single atom) / compound (multiple atoms)
+          6. density=low/high (proportion of line that is HT, set by line analysis)
 
         Returns formatted spec string, or None if not an HT token.
         """
@@ -1697,9 +1699,16 @@ class BTokenAnalysis:
 
         if atoms:
             atom_str = ' + '.join(atoms)
-            spec = f"[HT: spec {{{atom_str}}}]"
+            form = 'compound' if len(atoms) > 1 else 'simple'
+            spec = f"[HT: spec {{{atom_str}}}; form={form}"
         else:
-            spec = f"[HT: spec {{{middle}}}]"
+            spec = f"[HT: spec {{{middle}}}; form=simple"
+
+        # Density: proportion of line that is HT (set by analyze_line)
+        density = getattr(self, '_ht_line_density', None)
+        if density:
+            spec += f"; density={density}"
+        spec += "]"
 
         # Suffix as raw form marker (never operational gloss — C404/C405)
         if suffix:
@@ -2445,6 +2454,15 @@ class BFolioDecoder:
 
         # C959: Opener role determines line character (not specific token)
         opener_role = line_tokens[0].prefix_role if line_tokens else None
+
+        # Set HT density on HT tokens (for spec bundle rendering)
+        # C747: header lines have ~50% HT; density=high when HT >= 40% of line
+        ht_count = sum(1 for t in line_tokens if t.is_ht)
+        if ht_count > 0:
+            ht_density = 'high' if ht_count >= len(line_tokens) * 0.4 else 'low'
+            for t in line_tokens:
+                if t.is_ht:
+                    t._ht_line_density = ht_density
 
         return BLineAnalysis(
             line_id=line_id,
