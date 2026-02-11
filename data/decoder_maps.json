@@ -408,7 +408,7 @@
           "tier": 3
         },
         "hy": {
-          "value": ". [verify-maintain]",
+          "value": ". [verify]",
           "constraint": "C495, C527, C907",
           "tier": 3,
           "note": "C907: maintenance checkpoint formula (ch/sh + consonant MIDDLE + hy)"
@@ -439,7 +439,7 @@
           "tier": 3
         },
         "oiin": {
-          "value": " [late-check]",
+          "value": " [settle]",
           "constraint": "C495, C527, C539, C588, C906-907, C919",
           "tier": 3
         },
@@ -474,7 +474,7 @@
           "tier": 3
         },
         "s": {
-          "value": ";",
+          "value": "; [next]",
           "constraint": "C495, C527, C539, C588, C906-907, C919",
           "tier": 3
         },
@@ -518,7 +518,7 @@
         "aiin": {"value": "CHECKPOINT", "flow_type": "GATE", "tier": 3},
         "ain": {"value": "CHECKPOINT", "flow_type": "GATE", "tier": 3},
         "iin": {"value": "ITERATE", "flow_type": "LOOP", "tier": 3},
-        "oiin": {"value": "LATE-CHECK", "flow_type": "GATE", "tier": 3},
+        "oiin": {"value": "SETTLE", "flow_type": "GATE", "tier": 3},
         "hy": {"value": "VERIFY", "flow_type": "CHECK", "tier": 3},
         "ol": {"value": "HOLD", "flow_type": "HOLD", "tier": 3},
         "al": {"value": "TRANSFER", "flow_type": "MOVE", "tier": 3},
@@ -534,7 +534,7 @@
         "ey": {"value": "SELECTIVE", "flow_type": "CRITERION", "tier": 3},
         "ry": {"value": "COMPLETE", "flow_type": "TERMINAL", "tier": 3},
         "ly": {"value": "SETTLED", "flow_type": "CRITERION", "tier": 3},
-        "ar": {"value": "CLOSE-IN", "flow_type": "MOVE", "tier": 3},
+        "ar": {"value": "CLOSE", "flow_type": "MOVE", "tier": 3},
         "or": {"value": "PORTION", "flow_type": "MOVE", "tier": 3},
         "r": {"value": "CONTINUE", "flow_type": "SEQUENCE", "tier": 3},
         "l": {"value": "FRAME", "flow_type": "SEQUENCE", "tier": 3},
@@ -1724,18 +1724,18 @@
           "note": "Dry/macerate (pre-treatment). 43.8% line-initial (3.89x init/final). Selects continuation MIDDLEs (iin 10.6x, i 11.2x, in 13.6x). Jaccard 0.67 with da, 0.00 with ch/sh/ok/ot."
         },
         "so": {
-          "value": "scaffold-work",
+          "value": "scaffold",
           "constraint": "C556",
           "tier": 3
         },
         "lk": {
-          "value": "watch-fire",
+          "value": "watch",
           "constraint": "C556, C930",
           "tier": 3,
           "note": "Monitor drips / regulate fire. 81.7% section S (1.78x, C930). Selects checkpoint MIDDLEs (aiin 4.7x, ain 4.5x, ech 9.3x). Completely avoids k/t/ke. Fire-method specific."
         },
         "lsh": {
-          "value": "link-monitor",
+          "value": "link",
           "constraint": "C556",
           "tier": 3
         },
@@ -1746,7 +1746,7 @@
           "note": "Cool/settle (thermal equilibration). Late position (init/final 0.29x). H-enriched 1.37x. Selects dy (7.3x), o (5.0x), eo (2.6x). Avoids k/l/t/iin/r."
         },
         "ka": {
-          "value": "heat-anchor",
+          "value": "anchor",
           "constraint": "C556",
           "tier": 3
         },
@@ -1761,17 +1761,17 @@
           "tier": 3
         },
         "ko": {
-          "value": "heat-work",
+          "value": "heat",
           "constraint": "C556",
           "tier": 3
         },
         "to": {
-          "value": "transfer-work",
+          "value": "transfer",
           "constraint": "C556",
           "tier": 3
         },
         "po": {
-          "value": "pre-work",
+          "value": "setup",
           "constraint": "C556",
           "tier": 3
         },
@@ -1799,7 +1799,7 @@
           "note": "Pour/strain (liquid transfer). Final position (init/final 0.40x). B-enriched 1.30x, H-depleted 0.24x. Selects edy (4.1x), ey (3.6x). Co-occurs with lk (1.39x)."
         },
         "kch": {
-          "value": "precision-chop",
+          "value": "chop",
           "constraint": "F-BRU-012",
           "tier": 3
         },
@@ -1824,7 +1824,7 @@
           "tier": 4
         },
         "ksh": {
-          "value": "special-prep",
+          "value": "special",
           "constraint": "F-BRU-012 (low confidence)",
           "tier": 4
         },
@@ -1840,7 +1840,7 @@
           "tier": 3
         },
         "se": {
-          "value": "scaffold-sustain",
+          "value": "scaffold",
           "constraint": "C556",
           "tier": 4
         },
@@ -1850,7 +1850,7 @@
           "tier": 4
         },
         "al": {
-          "value": "transfer-close",
+          "value": "close",
           "constraint": "C539",
           "tier": 3
         },

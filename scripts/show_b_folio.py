@@ -10,6 +10,7 @@ Usage:
     python scripts/show_b_folio.py f26r --paragraph  # Flowing paragraph view
     python scripts/show_b_folio.py f26r -p --no-color # Paragraph without colors
     python scripts/show_b_folio.py f26r --flow       # Control-flow rendering
+    python scripts/show_b_folio.py f26r -s           # Raw morpheme structural view
 """
 import argparse
 import sys
@@ -233,10 +234,13 @@ def display_folio(folio_id: str,
                   show_token: bool = True,
                   show_calc: bool = True,
                   show_manual: bool = True,
-                  line_num: int = None):
+                  line_num: int = None,
+                  debug_ht: bool = False,
+                  structural_mode: bool = False):
     """Display a B folio with configurable columns."""
 
     d = BFolioDecoder()
+    d._debug_ht = debug_ht
     td = TokenDictionary()
 
     lines = d.analyze_folio_lines(folio_id)
@@ -260,12 +264,23 @@ def display_folio(folio_id: str,
     print(f"FOLIO: {folio_id}")
     print(f"{'='*80}")
 
+    # Epistemological warning (expert recommendation)
+    if show_calc:
+        mode_label = "STRUCTURAL" if structural_mode else "GLOSS"
+        print(f"  [{mode_label} PROJECTION] This output is structural, not")
+        print(f"  semantic. Sequential appearance does not imply procedural")
+        print(f"  order. Labels are display tokens, not translations.")
+        if not structural_mode:
+            print(f"  Use --structural-mode to compare raw morphemes.")
+        print()
+
     # Column headers
     headers = []
     if show_token:
         headers.append(f"{'TOKEN':<14}")
     if show_calc:
-        headers.append(f"{'CALCULATED':<35}")
+        col_name = 'STRUCTURAL' if structural_mode else 'CALCULATED'
+        headers.append(f"{col_name:<35}")
     if show_manual:
         headers.append(f"{'MANUAL GLOSS':<30}")
     print(' | '.join(headers))
@@ -284,7 +299,10 @@ def display_folio(folio_id: str,
 
             # Get calculated gloss (temporarily disable dict lookup)
             tok._token_dict = None  # Force fallback
-            calc_gloss = tok.interpretive()
+            if structural_mode:
+                calc_gloss = tok.structural_gloss()
+            else:
+                calc_gloss = tok.interpretive()
             tok._token_dict = td  # Restore
 
             # Build row
@@ -320,6 +338,9 @@ def main():
                         help='Control-flow view (FL stage + operation + suffix semantics)')
     parser.add_argument('--para', type=int, help='Show only specific paragraph number (1, 2, etc.)')
     parser.add_argument('--no-color', action='store_true', help='Disable color output')
+    parser.add_argument('--debug-ht', action='store_true', help='Show HT atom details')
+    parser.add_argument('--structural-mode', '-s', action='store_true',
+                        help='Raw morpheme notation (strips English MIDDLE/suffix labels)')
 
     args = parser.parse_args()
 
@@ -346,7 +367,9 @@ def main():
         show_token=show_token,
         show_calc=show_calc,
         show_manual=show_manual,
-        line_num=args.line
+        line_num=args.line,
+        debug_ht=args.debug_ht,
+        structural_mode=args.structural_mode
     )
 
 
