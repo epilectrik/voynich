@@ -1255,6 +1255,15 @@ class BTokenAnalysis:
         if ht_bundle:
             return ht_bundle
 
+        # MIDDLE signature for gloss discrimination (C506.b, C908)
+        # Kernel is mandatory (primary discriminator), regime conditional.
+        # Computed early so it applies to ALL gloss paths (manual + auto-compose).
+        mid_sig = ''
+        if self.middle_kernel:
+            mid_sig = f"[{self.middle_kernel.lower()}]"
+            if self.middle_regime:
+                mid_sig += f":{self.middle_regime.lower()}"
+
         # 1. WHOLE-TOKEN LOOKUP (manual gloss takes priority)
         if hasattr(self, '_token_dict') and self._token_dict:
             gloss = self._token_dict.get_gloss(self.word)
@@ -1267,6 +1276,21 @@ class BTokenAnalysis:
                         mid_gloss = self._middle_dict.get_gloss(mid_name)
                         return mid_gloss if mid_gloss else f"[{mid_name}]"
                     gloss = re.sub(r'\*(\w+)', replace_middle_ref, gloss)
+                # Inject MIDDLE signature for behavioral discrimination
+                if mid_sig:
+                    import re as _re
+                    # Insert before suffix tags like " [thorough]" or trailing punct
+                    m = _re.search(r'(\s+\[.+)$', gloss)
+                    if m:
+                        # Gloss has suffix tags: insert signature before them
+                        pre = gloss[:m.start()].rstrip('.,;:! ')
+                        trail_punct = gloss[len(gloss[:m.start()].rstrip('.,;:! ')):m.start()]
+                        gloss = pre + mid_sig + trail_punct + m.group(1)
+                    else:
+                        # Simple gloss: insert before trailing punctuation
+                        stripped = gloss.rstrip('.,;:! ')
+                        trailing = gloss[len(stripped):]
+                        gloss = stripped + mid_sig + trailing
                 return gloss
 
         middle = self.morph.middle if self.morph else None
@@ -1293,7 +1317,7 @@ class BTokenAnalysis:
                 mid_meaning = self._compose_compound_gloss(middle)
 
         if mid_meaning:
-            # Compose: [PREFIX_ACTION] MIDDLE_MEANING [SUFFIX_GLOSS]
+            # Compose: [PREFIX_ACTION] MIDDLE_MEANING[signature] [SUFFIX_GLOSS]
             composed = []
 
             # Prefix: use prep action if available, otherwise lane tag
@@ -1339,10 +1363,10 @@ class BTokenAnalysis:
             }
             suffix_consumed = False
             if middle == 'k' and suffix in _K_SUFFIX_COMPOSE:
-                composed.append(_K_SUFFIX_COMPOSE[suffix])
+                composed.append(_K_SUFFIX_COMPOSE[suffix] + mid_sig)
                 suffix_consumed = True
             else:
-                composed.append(mid_meaning)
+                composed.append(mid_meaning + mid_sig)
 
             # FL-role marking
             if self.is_fl_role:
@@ -1451,7 +1475,14 @@ class BTokenAnalysis:
                         return mid_gloss if mid_gloss else f"[{mid_name}]"
                     token_gloss = re.sub(r'\*(\w+)', replace_middle_ref, token_gloss)
                 # Strip trailing punctuation for flow format
-                result['operation'] = token_gloss.rstrip('.,;')
+                op = token_gloss.rstrip('.,;')
+                # Append compressed kernel signature for flow discrimination
+                if self.middle_kernel:
+                    flow_sig = self.middle_kernel.lower()
+                    if self.middle_regime:
+                        flow_sig += f":{self.middle_regime[:4].lower()}"
+                    op += f" <{flow_sig}>"
+                result['operation'] = op
                 # Suffix flow still applies unless gloss already includes it
                 if suffix and hasattr(self, '_suffix_flow'):
                     flow_entry = self._suffix_flow.get(suffix, {})
@@ -1500,6 +1531,13 @@ class BTokenAnalysis:
             result['operation'] = effective_mid
         else:
             result['operation'] = self.word
+
+        # Append compressed kernel signature for flow discrimination
+        if self.middle_kernel:
+            flow_sig = self.middle_kernel.lower()
+            if self.middle_regime:
+                flow_sig += f":{self.middle_regime[:4].lower()}"
+            result['operation'] += f" <{flow_sig}>"
 
         # FLOW layer: suffix control-flow semantics (skip if suffix was composed into operation)
         if not suffix_consumed and suffix and hasattr(self, '_suffix_flow'):
@@ -1666,22 +1704,20 @@ class BTokenAnalysis:
         return result
 
     def _ht_spec_bundle(self) -> Optional[str]:
-        """Render HT token as compressed specification bundle.
+        """Render HT token as posture gloss.
 
-        HT tokens contain real PP atoms but are NOT executable (C404/C405).
-        Their compound MIDDLEs decompose into core atoms that predict body
-        content (C935, 71.6% hit rate). Render as raw atom inventory with
-        NO verbs, NO implied order, NO execution claim.
+        HT tokens are NOT executable (C404/C405). Instead of pretending
+        they carry semantic content, render as operator posture:
+          - density (line-level HT proportion) -> vigilance: attend/hold
+          - form (atom count) -> cognitive load: heavy/light
 
         HT Rendering Rule (FROZEN):
           1. Never rendered as actions
-          2. Expose atomic composition (C935) as unordered set
+          2. Posture grammar: [mode-load] (attend/hold, heavy/light)
           3. No verbs, no arrows, no sequencing
           4. Suffix shown as raw morphology (form marker), never operational gloss
-          5. form=simple (single atom) / compound (multiple atoms)
-          6. density=low/high (proportion of line that is HT, set by line analysis)
 
-        Returns formatted spec string, or None if not an HT token.
+        Returns formatted posture string, or None if not an HT token.
         """
         if not self.is_ht:
             return None
@@ -1689,26 +1725,27 @@ class BTokenAnalysis:
         middle = self.morph.middle if self.morph else None
         suffix = self.morph.suffix if self.morph else None
 
-        if not middle:
-            return f"[HT: spec {{{self.word}}}]"
-
-        # Atom decomposition via MiddleAnalyzer
+        # Determine form from atom decomposition
         atoms = []
-        if hasattr(self, '_mid_analyzer') and self._mid_analyzer:
+        if middle and hasattr(self, '_mid_analyzer') and self._mid_analyzer:
             atoms = self._mid_analyzer.get_contained_atoms(middle)
+        form = 'compound' if len(atoms) > 1 else 'simple'
 
+        # Posture grammar (expert design):
+        # density -> vigilance mode: high=attend, low=hold
+        # form -> cognitive load: compound=heavy, simple=light
+        density = getattr(self, '_ht_line_density', 'low')
+        mode = 'attend' if density == 'high' else 'hold'
+        load = 'heavy' if form == 'compound' else 'light'
+
+        # Include atoms for discrimination (expert: "atom data after, not instead of")
         if atoms:
             atom_str = ' + '.join(atoms)
-            form = 'compound' if len(atoms) > 1 else 'simple'
-            spec = f"[HT: spec {{{atom_str}}}; form={form}"
+            spec = f"[{mode}-{load} {{{atom_str}}}]"
+        elif middle:
+            spec = f"[{mode}-{load} {{{middle}}}]"
         else:
-            spec = f"[HT: spec {{{middle}}}; form=simple"
-
-        # Density: proportion of line that is HT (set by analyze_line)
-        density = getattr(self, '_ht_line_density', None)
-        if density:
-            spec += f"; density={density}"
-        spec += "]"
+            spec = f"[{mode}-{load}]"
 
         # Suffix as raw form marker (never operational gloss — C404/C405)
         if suffix:
