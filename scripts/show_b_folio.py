@@ -81,7 +81,7 @@ def display_flow(folio_id: str, line_num: int = None, para_num: int = None, use_
 
     # Legend
     if color_enabled:
-        print(f"FL markers shown inline as {{FL:STAGE}} — only on FL-role tokens")
+        print(f"FL markers shown inline as (FL:STAGE) — only on FL-role tokens")
     print()
 
     for la in lines:

@@ -767,6 +767,23 @@ class MiddleAnalyzer:
                 found.append(atom)
         return sorted(found, key=len, reverse=True)
 
+    def get_maximal_atoms(self, middle: str, use_core: bool = True) -> List[str]:
+        """Get non-redundant atoms (remove substrings of longer atoms).
+
+        Returns only maximal atoms — those not contained within any other
+        returned atom. E.g., for MIDDLE 'odeey': returns ['eey', 'od']
+        instead of ['eey', 'ee', 'ey', 'od'].
+        """
+        atoms = self.get_contained_atoms(middle, use_core)
+        if len(atoms) <= 1:
+            return atoms
+        # atoms is sorted longest-first; keep only those not substrings of longer ones
+        maximal = []
+        for atom in atoms:
+            if not any(atom in longer for longer in maximal):
+                maximal.append(atom)
+        return maximal
+
     def get_compound_rate(self, middles: List[str], use_core: bool = True) -> float:
         """
         Calculate compound rate for a list of MIDDLEs.
@@ -1261,7 +1278,11 @@ class BTokenAnalysis:
         mid_sig = ''
         if self.middle_kernel:
             mid_sig = f"[{self.middle_kernel.lower()}]"
-            if self.middle_regime:
+            # Regime is conditional: only append when needed to break collisions
+            _regime_needed = (self.middle_regime
+                              and hasattr(self, '_needs_regime')
+                              and self.word in self._needs_regime)
+            if _regime_needed:
                 mid_sig += f":{self.middle_regime.lower()}"
 
         # 1. WHOLE-TOKEN LOOKUP (manual gloss takes priority)
@@ -1366,11 +1387,17 @@ class BTokenAnalysis:
                 composed.append(_K_SUFFIX_COMPOSE[suffix] + mid_sig)
                 suffix_consumed = True
             else:
-                composed.append(mid_meaning + mid_sig)
+                # When prefix verb present and MIDDLE gloss has colon,
+                # use qualifier only: "test collect:gather" → "test gather"
+                display_mid = mid_meaning
+                has_verb = prep_action or prep2_action
+                if has_verb and display_mid and ':' in display_mid:
+                    display_mid = display_mid.split(':')[-1]
+                composed.append(display_mid + mid_sig)
 
             # FL-role marking
             if self.is_fl_role:
-                composed.append('{FL}')
+                composed.append('(FL)')
 
             # Suffix: use interpretive gloss if available (skip if already composed)
             if not suffix_consumed and suffix and hasattr(self, '_suffix_gloss'):
@@ -1413,7 +1440,7 @@ class BTokenAnalysis:
             parts.append(f"{middle}{kernel_hint}")
 
         if self.is_fl_role:
-            parts.append('{FL}')
+            parts.append('(FL)')
 
         # Suffix structural properties (C375-378)
         suffix_props = {
@@ -1479,7 +1506,10 @@ class BTokenAnalysis:
                 # Append compressed kernel signature for flow discrimination
                 if self.middle_kernel:
                     flow_sig = self.middle_kernel.lower()
-                    if self.middle_regime:
+                    _regime_needed = (self.middle_regime
+                                      and hasattr(self, '_needs_regime')
+                                      and self.word in self._needs_regime)
+                    if _regime_needed:
                         flow_sig += f":{self.middle_regime[:4].lower()}"
                     op += f" <{flow_sig}>"
                 result['operation'] = op
@@ -1519,6 +1549,9 @@ class BTokenAnalysis:
             suffix_consumed = True
         else:
             effective_mid = mid_meaning
+            # Simplify colon-gloss when prefix verb present
+            if prep_action and effective_mid and ':' in effective_mid:
+                effective_mid = effective_mid.split(':')[-1]
 
         if prep_action and effective_mid:
             result['operation'] = f"{prep_action} {effective_mid}"
@@ -1535,7 +1568,10 @@ class BTokenAnalysis:
         # Append compressed kernel signature for flow discrimination
         if self.middle_kernel:
             flow_sig = self.middle_kernel.lower()
-            if self.middle_regime:
+            _regime_needed = (self.middle_regime
+                              and hasattr(self, '_needs_regime')
+                              and self.word in self._needs_regime)
+            if _regime_needed:
                 flow_sig += f":{self.middle_regime[:4].lower()}"
             result['operation'] += f" <{flow_sig}>"
 
@@ -1728,7 +1764,7 @@ class BTokenAnalysis:
         # Determine form from atom decomposition
         atoms = []
         if middle and hasattr(self, '_mid_analyzer') and self._mid_analyzer:
-            atoms = self._mid_analyzer.get_contained_atoms(middle)
+            atoms = self._mid_analyzer.get_maximal_atoms(middle)
         form = 'compound' if len(atoms) > 1 else 'simple'
 
         # Posture grammar (expert design):
@@ -1912,7 +1948,7 @@ class BLineAnalysis:
             fg = tok.flow_gloss()
             s = fg['operation']
             if fg['fl_stage']:
-                s += f" {{FL:{fg['fl_stage']}}}"
+                s += f" (FL:{fg['fl_stage']})"
             if fg['flow']:
                 s += f" [{fg['flow']}]"
             parts.append((s, tok.prefix_phase))
@@ -2129,6 +2165,71 @@ class BFolioDecoder:
         self._cache_middle_kernel = {}
         self._cache_middle_regime = {}
         self._cache_middle_section = {}
+
+        # Pre-compute which tokens need regime for collision breaking.
+        # Default: kernel-only gloss. Regime appended only when two tokens
+        # with different regime would otherwise render the same gloss.
+        # Initialize empty first (analyze_token refs this during build).
+        self._needs_regime = set()
+        self._needs_regime = self._build_regime_need_set()
+
+    def _build_regime_need_set(self) -> set:
+        """Pre-compute set of words that need regime suffix for disambiguation.
+
+        Strategy:
+        1. For each unique B token, compute its gloss with kernel only (no regime)
+        2. Group tokens by that kernel-only gloss string
+        3. For collision groups (2+ tokens → same gloss): check if members
+           have different middle_regime values
+        4. If regime would split the group, mark those words as needing regime
+
+        Returns:
+            Set of word strings that should display regime in their gloss.
+        """
+        needs_regime = set()
+        # Collect unique words with kernel-only glosses
+        # Use a lightweight approach: analyze each word, compute gloss parts
+        seen = set()
+        word_data = []  # (word, kernel_only_gloss, middle_regime)
+
+        for token in self.tx.currier_b():
+            w = token.word
+            if '*' in w or not w.strip() or w in seen:
+                continue
+            seen.add(w)
+            analysis = self.analyze_token(w)
+            # Skip HT tokens (they use posture grammar, not kernel/regime)
+            if analysis.is_ht:
+                continue
+            regime = analysis.middle_regime
+            if not analysis.middle_kernel:
+                continue  # No kernel = no regime question
+
+            # Compute kernel-only gloss (suppress regime temporarily)
+            saved_regime = analysis.middle_regime
+            analysis.middle_regime = None
+            gloss = analysis.interpretive()
+            analysis.middle_regime = saved_regime
+
+            word_data.append((w, gloss, regime))
+
+        # Group by kernel-only gloss
+        from collections import defaultdict
+        gloss_groups = defaultdict(list)
+        for w, gloss, regime in word_data:
+            gloss_groups[gloss].append((w, regime))
+
+        # Find collision groups where regime would help
+        for gloss, members in gloss_groups.items():
+            if len(members) < 2:
+                continue
+            regimes = set(r for _, r in members if r)
+            if len(regimes) > 1:
+                # Different regimes in this collision group — mark all for regime
+                for w, _ in members:
+                    needs_regime.add(w)
+
+        return needs_regime
 
     def _get_prefix_role(self, prefix: Optional[str]) -> Optional[str]:
         """Get functional role for a prefix (C371-374)."""
@@ -2354,6 +2455,7 @@ class BFolioDecoder:
         analysis._prefix_actions = self.PREFIX_ACTIONS
         analysis._middle_tiers = self.MIDDLE_TIERS
         analysis._mid_analyzer = self.mid_analyzer
+        analysis._needs_regime = self._needs_regime
         return analysis
 
     def _interpret_kernel_balance(self, kernel_dist: Dict[str, int]) -> str:
