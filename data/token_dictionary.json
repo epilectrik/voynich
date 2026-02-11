@@ -6770,7 +6770,7 @@
           ]
         }
       },
-      "gloss": "setup step, {FL}",
+      "gloss": "setup step, (FL)",
       "fl_state": "INITIAL",
       "fl_meaning": "input",
       "is_fl_role": true
@@ -7582,7 +7582,7 @@
           ]
         }
       },
-      "gloss": "work. {FL}",
+      "gloss": "work. (FL)",
       "fl_state": "LATE",
       "fl_meaning": "nearly done",
       "is_fl_role": true
@@ -27092,7 +27092,7 @@
           ]
         }
       },
-      "gloss": "end, close. {FL}",
+      "gloss": "end, close. (FL)",
       "fl_state": "TERMINAL",
       "fl_meaning": "done",
       "is_fl_role": true
@@ -28667,7 +28667,7 @@
           ]
         }
       },
-      "gloss": "transfer. {FL}",
+      "gloss": "transfer. (FL)",
       "fl_state": "MEDIAL",
       "fl_meaning": "adjusting",
       "is_fl_role": true
@@ -45433,7 +45433,7 @@
           ]
         }
       },
-      "gloss": "collect, transfer. {FL}",
+      "gloss": "collect, transfer. (FL)",
       "fl_state": "MEDIAL",
       "fl_meaning": "during",
       "is_fl_role": true
@@ -58074,7 +58074,7 @@
         "positions": [],
         "by_folio": {}
       },
-      "gloss": "mark. {FL}",
+      "gloss": "mark. (FL)",
       "fl_state": "MEDIAL",
       "fl_meaning": "during",
       "is_fl_role": true
@@ -61434,7 +61434,7 @@
         "positions": [],
         "by_folio": {}
       },
-      "gloss": "collect, end. {FL}",
+      "gloss": "collect, end. (FL)",
       "fl_state": "TERMINAL",
       "fl_meaning": "finished",
       "is_fl_role": true
@@ -78603,7 +78603,7 @@
         "positions": [],
         "by_folio": {}
       },
-      "gloss": "close, close. {FL}",
+      "gloss": "close, close. (FL)",
       "fl_state": "TERMINAL",
       "fl_meaning": "yielded",
       "is_fl_role": true
@@ -123555,7 +123555,7 @@
           ]
         }
       },
-      "gloss": "close, close. {FL}",
+      "gloss": "close, close. (FL)",
       "fl_state": "MEDIAL",
       "fl_meaning": "needs adjust",
       "is_fl_role": true
@@ -124984,7 +124984,7 @@
         "positions": [],
         "by_folio": {}
       },
-      "gloss": "close, check. {FL}",
+      "gloss": "close, check. (FL)",
       "fl_state": "MEDIAL",
       "fl_meaning": "still separating",
       "is_fl_role": true
@@ -125266,7 +125266,7 @@
           ]
         }
       },
-      "gloss": "end. {FL}",
+      "gloss": "end. (FL)",
       "fl_state": "TERMINAL",
       "fl_meaning": "done",
       "is_fl_role": true
@@ -135394,7 +135394,7 @@
           ]
         }
       },
-      "gloss": "continue, portion. {FL}",
+      "gloss": "continue, portion. (FL)",
       "fl_state": "MEDIAL",
       "fl_meaning": "continue",
       "is_fl_role": true
@@ -141140,7 +141140,7 @@
         "positions": [],
         "by_folio": {}
       },
-      "gloss": "portion. {FL}",
+      "gloss": "portion. (FL)",
       "fl_state": "TERMINAL",
       "fl_meaning": "yielded",
       "is_fl_role": true
@@ -141299,7 +141299,7 @@
           ]
         }
       },
-      "gloss": "transfer, end. {FL}",
+      "gloss": "transfer, end. (FL)",
       "fl_state": "TERMINAL",
       "fl_meaning": "done",
       "is_fl_role": true
@@ -142319,7 +142319,7 @@
         "positions": [],
         "by_folio": {}
       },
-      "gloss": "frame, check. {FL}",
+      "gloss": "frame, check. (FL)",
       "fl_state": "MEDIAL",
       "fl_meaning": "separating",
       "is_fl_role": true
@@ -142863,7 +142863,7 @@
         "positions": [],
         "by_folio": {}
       },
-      "gloss": "mark. {FL}",
+      "gloss": "mark. (FL)",
       "fl_state": "MEDIAL",
       "fl_meaning": "during",
       "is_fl_role": true
@@ -142907,7 +142907,7 @@
         "positions": [],
         "by_folio": {}
       },
-      "gloss": "input. {FL}",
+      "gloss": "input. (FL)",
       "fl_state": "INITIAL",
       "fl_meaning": "raw input",
       "is_fl_role": true
@@ -142950,7 +142950,7 @@
         "positions": [],
         "by_folio": {}
       },
-      "gloss": "portion. {FL}",
+      "gloss": "portion. (FL)",
       "fl_state": "MEDIAL",
       "fl_meaning": "during",
       "is_fl_role": true
