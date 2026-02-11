@@ -1255,6 +1255,85 @@ class BTokenAnalysis:
             parts.append(f"kern:{','.join(self.kernels)}")
         return ' + '.join(parts) if parts else '(unclassified)'
 
+    def structural_gloss(self) -> str:
+        """
+        Morpheme-level notation — strips English MIDDLE/suffix labels.
+
+        Shows: PREFIX_VERB MIDDLE_RAW[kernel] (SUFFIX_RAW)
+        Compare against interpretive() to detect narrative weight
+        added by English label choices (the 'procedural mirage' test).
+        """
+        # HT tokens: already sandboxed, no narrative risk
+        ht_bundle = self._ht_spec_bundle()
+        if ht_bundle:
+            return ht_bundle
+
+        middle = self.morph.middle if self.morph else None
+        prefix = self.morph.prefix if self.morph else None
+        prefix2 = self.morph.prefix2 if self.morph else None
+        suffix = self.morph.suffix if self.morph else None
+
+        # Kernel signature (same as interpretive)
+        mid_sig = ''
+        _ek = self.middle_kernel
+        if not _ek and self.kernels:
+            _ek = self.kernels[0]
+        if _ek:
+            mid_sig = f'[{_ek.lower()}]'
+
+        parts = []
+
+        # PREFIX verb (same qo-suppression as interpretive)
+        prep_action = None
+        if prefix and prefix != 'qo' and hasattr(self, '_prefix_actions'):
+            prep_action = self._prefix_actions.get(prefix)
+        prep2_action = None
+        if prefix2 and hasattr(self, '_prefix_actions'):
+            prep2_action = self._prefix_actions.get(prefix2)
+
+        if prep_action and prep2_action:
+            parts.append(prep_action)
+        elif prep_action:
+            parts.append(prep_action)
+        elif prep2_action:
+            parts.append(prep2_action)
+
+        # MIDDLE: raw morpheme + kernel (no English label)
+        if middle:
+            parts.append(f'{middle}{mid_sig}')
+
+        # FL marker
+        if self.is_fl_role:
+            parts.append('(FL)')
+
+        # SUFFIX: raw morpheme in parens (no English label)
+        if suffix:
+            parts.append(f'({suffix})')
+
+        return ' '.join(parts) if parts else self.word
+
+    @staticmethod
+    def _lint_gloss(gloss: str) -> str:
+        """Enforce gloss format discipline.
+
+        Rules (expert round 3.5):
+        - No comma-separated verbs (suffix structural commas OK)
+        - No hyphenated compound verbs (HT hold-light/hold-heavy OK)
+        - Max 2 core words before suffix brackets
+        """
+        import re
+        # Strip suffix brackets and FL markers for core word count
+        core = re.sub(r'[.,;]\s*\[.*?\]', '', gloss)
+        core = re.sub(r'\[.*?\]', '', core)
+        core = re.sub(r'\(FL\)', '', core)
+        core = core.strip()
+        # Check for verb-commas in core (not suffix punctuation)
+        if ',' in core:
+            # Keep first word only from comma-separated core
+            first = core.split(',')[0].strip()
+            gloss = gloss.replace(core, first, 1)
+        return gloss
+
     def interpretive(self) -> str:
         """
         Auto-composed interpretive gloss.
@@ -1276,8 +1355,11 @@ class BTokenAnalysis:
         # Kernel is mandatory (primary discriminator), regime conditional.
         # Computed early so it applies to ALL gloss paths (manual + auto-compose).
         mid_sig = ''
-        if self.middle_kernel:
-            mid_sig = f"[{self.middle_kernel.lower()}]"
+        _effective_kernel = self.middle_kernel
+        if not _effective_kernel and self.kernels:
+            _effective_kernel = self.kernels[0]
+        if _effective_kernel:
+            mid_sig = f"[{_effective_kernel.lower()}]"
             # Regime is conditional: only append when needed to break collisions
             _regime_needed = (self.middle_regime
                               and hasattr(self, '_needs_regime')
@@ -1329,8 +1411,10 @@ class BTokenAnalysis:
             # with the prep action, not the actual MIDDLE semantics
             # Skip "contains X" substring matches — compound decomposition is better
             if not mid_meaning and self.middle_meaning and self.prefix_role != 'PREP_TIER':
-                if not str(self.middle_meaning).startswith('contains '):
-                    mid_meaning = self.middle_meaning
+                tier_gloss = str(self.middle_meaning)
+                if not tier_gloss.startswith('contains '):
+                    # One-verb rule: use first word only from tier glosses
+                    mid_meaning = tier_gloss.split()[0] if ' ' in tier_gloss else tier_gloss
 
             # Compound MIDDLE decomposition: atom_gloss (+extension_gloss)
             # Compound MIDDLEs = PP atom + parameter extensions (C872, C522)
@@ -1358,7 +1442,7 @@ class BTokenAnalysis:
                 prep2_action = self._prefix_actions.get(prefix2)
 
             if prep_action and prep2_action:
-                composed.append(f"{prep_action}-{prep2_action}")
+                composed.append(prep_action)  # primary prefix verb only
             elif prep_action:
                 composed.append(prep_action)
             elif prep2_action:
@@ -1368,45 +1452,27 @@ class BTokenAnalysis:
                 lane = self._get_prefix_lane(prefix)
                 composed.append(f"[{lane}]")
 
-            # Suffix-into-operation composition for k-MIDDLE:
-            # Folds suffix semantics INTO the heat term so each k+suffix
-            # renders as a distinct heat operation.
-            # Criterion suffixes: k+edy B-enriched 2.08x, k+eey S-enriched
-            # 1.25x, k+ey B-enriched 1.54x.
-            # Gate suffixes: k+ain B-enriched 1.92x (inline check, self-chains),
-            # k+aiin evenly distributed (quality gate, follows thorough ops).
-            _K_SUFFIX_COMPOSE = {
-                'edy':  'thorough heat',   # complete heat cycle (B 2.08x)
-                'eey':  'prolonged heat',  # extended = sustained duration (S 1.25x)
-                'ey':   'selective heat',  # selective = targeted application (B 1.54x)
-                'ain':  'heat-check',      # inline progress check (B 1.92x, self-chains)
-                'aiin': 'heat-verify',     # quality gate (even distribution, post-thorough)
-            }
-            suffix_consumed = False
-            if middle == 'k' and suffix in _K_SUFFIX_COMPOSE:
-                composed.append(_K_SUFFIX_COMPOSE[suffix] + mid_sig)
-                suffix_consumed = True
-            else:
-                # When prefix verb present and MIDDLE gloss has colon,
-                # use qualifier only: "test collect:gather" → "test gather"
-                display_mid = mid_meaning
-                has_verb = prep_action or prep2_action
-                if has_verb and display_mid and ':' in display_mid:
-                    display_mid = display_mid.split(':')[-1]
-                composed.append(display_mid + mid_sig)
+            # MIDDLE label + kernel signature (dedup if same as prefix verb)
+            effective_verb = prep_action or prep2_action
+            if not effective_verb or mid_meaning != effective_verb:
+                composed.append(mid_meaning + mid_sig)
+            elif mid_sig and composed:
+                # Prefix verb = MIDDLE label: attach kernel sig to prefix
+                composed[-1] = composed[-1] + mid_sig
+
 
             # FL-role marking
             if self.is_fl_role:
                 composed.append('(FL)')
 
-            # Suffix: use interpretive gloss if available (skip if already composed)
-            if not suffix_consumed and suffix and hasattr(self, '_suffix_gloss'):
+            # Suffix: use interpretive gloss if available
+            if suffix and hasattr(self, '_suffix_gloss'):
                 suf_gloss = self._suffix_gloss.get(suffix)
                 if suf_gloss:
                     composed.append(suf_gloss)
                 else:
                     composed.append(f"[-{suffix}]")
-            return ' '.join(composed)
+            return self._lint_gloss(' '.join(composed))
 
         # 3. STRUCTURAL FALLBACK (no MIDDLE meaning available)
         parts = []
@@ -1424,7 +1490,7 @@ class BTokenAnalysis:
                 prep2_action = self._prefix_actions.get(prefix2)
 
             if prep_action and prep2_action:
-                parts.append(f"{prep_action}-{prep2_action}")
+                parts.append(prep_action)  # primary prefix verb only
             elif prep_action:
                 parts.append(prep_action)
             elif prep2_action:
@@ -1459,7 +1525,7 @@ class BTokenAnalysis:
             else:
                 parts.append(f"[-{suffix}]")
 
-        return ' '.join(parts) if parts else self.word
+        return self._lint_gloss(' '.join(parts)) if parts else self.word
 
     def flow_gloss(self) -> dict:
         """Three-layer flow rendering: FL_STAGE + OPERATION + CONTROL_FLOW.
@@ -1535,23 +1601,7 @@ class BTokenAnalysis:
         if prefix and prefix != 'qo' and hasattr(self, '_prefix_actions'):
             prep_action = self._prefix_actions.get(prefix)
 
-        # Suffix-into-operation composition for k-MIDDLE (same as interpretive())
-        _K_SUFFIX_COMPOSE = {
-            'edy':  'thorough heat',
-            'eey':  'prolonged heat',
-            'ey':   'selective heat',
-            'ain':  'heat-check',
-            'aiin': 'heat-verify',
-        }
-        suffix_consumed = False
-        if middle == 'k' and suffix in _K_SUFFIX_COMPOSE:
-            effective_mid = _K_SUFFIX_COMPOSE[suffix]
-            suffix_consumed = True
-        else:
-            effective_mid = mid_meaning
-            # Simplify colon-gloss when prefix verb present
-            if prep_action and effective_mid and ':' in effective_mid:
-                effective_mid = effective_mid.split(':')[-1]
+        effective_mid = mid_meaning
 
         if prep_action and effective_mid:
             result['operation'] = f"{prep_action} {effective_mid}"
@@ -1575,8 +1625,8 @@ class BTokenAnalysis:
                 flow_sig += f":{self.middle_regime[:4].lower()}"
             result['operation'] += f" <{flow_sig}>"
 
-        # FLOW layer: suffix control-flow semantics (skip if suffix was composed into operation)
-        if not suffix_consumed and suffix and hasattr(self, '_suffix_flow'):
+        # FLOW layer: suffix control-flow semantics
+        if suffix and hasattr(self, '_suffix_flow'):
             flow_entry = self._suffix_flow.get(suffix, {})
             result['flow'] = flow_entry.get('value', '')
             result['flow_type'] = flow_entry.get('flow_type', '')
@@ -1706,38 +1756,19 @@ class BTokenAnalysis:
             if not atom_gloss:
                 return None
 
-            # Get extension glosses from single-char MIDDLE meanings
-            ext_glosses = []
-            for ch in pre_ext + suf_ext:
-                if hasattr(self, '_middle_dict') and self._middle_dict:
-                    g = self._middle_dict.get_gloss(ch)
-                    if g:
-                        ext_glosses.append(g)
-
-            if ext_glosses:
-                return f"{atom_gloss} (+{', '.join(ext_glosses)})"
-            elif pre_ext or suf_ext:
-                return f"{atom_gloss} (+{pre_ext}{suf_ext})"
-            else:
-                return atom_gloss
+            # Expert rule: standalone label only, no extension descriptions
+            return atom_gloss
 
         # Fallback: multi-atom segmentation for long compounds
         segments = self._segment_multi_atom(middle)
         if not segments:
             return None
 
-        atom_parts = []
-        ext_parts = []
+        # Use first atom gloss only (standalone label)
         for seg, stype, gloss in segments:
-            if stype == 'ATOM':
-                atom_parts.append(gloss)
-            else:
-                ext_parts.append(gloss)
-
-        result = ', '.join(atom_parts)
-        if ext_parts:
-            result += f" (+{', '.join(ext_parts)})"
-        return result
+            if stype == 'ATOM' and gloss:
+                return gloss
+        return None
 
     def _ht_spec_bundle(self) -> Optional[str]:
         """Render HT token as posture gloss.
@@ -1774,12 +1805,17 @@ class BTokenAnalysis:
         mode = 'attend' if density == 'high' else 'hold'
         load = 'heavy' if form == 'compound' else 'light'
 
-        # Include atoms for discrimination (expert: "atom data after, not instead of")
-        if atoms:
-            atom_str = ' + '.join(atoms)
-            spec = f"[{mode}-{load} {{{atom_str}}}]"
-        elif middle:
-            spec = f"[{mode}-{load} {{{middle}}}]"
+        # Compact mode (default): hide atom details
+        # Debug mode: show atoms for discrimination
+        debug_ht = getattr(self, '_debug_ht', False)
+        if debug_ht:
+            if atoms:
+                atom_str = ' + '.join(atoms)
+                spec = f"[{mode}-{load} {{{atom_str}}}]"
+            elif middle:
+                spec = f"[{mode}-{load} {{{middle}}}]"
+            else:
+                spec = f"[{mode}-{load}]"
         else:
             spec = f"[{mode}-{load}]"
 
@@ -2456,6 +2492,7 @@ class BFolioDecoder:
         analysis._middle_tiers = self.MIDDLE_TIERS
         analysis._mid_analyzer = self.mid_analyzer
         analysis._needs_regime = self._needs_regime
+        analysis._debug_ht = getattr(self, '_debug_ht', False)
         return analysis
 
     def _interpret_kernel_balance(self, kernel_dist: Dict[str, int]) -> str:

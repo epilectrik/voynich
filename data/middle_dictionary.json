@@ -20,7 +20,7 @@
     "eok": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "cool-down",
+      "gloss": "cool",
       "token_count": 39,
       "folio_count": 24,
       "example_tokens": [
@@ -37,7 +37,7 @@
     "odaii": {
       "kernel": null,
       "regime": "PRECISION",
-      "gloss": "raw material",
+      "gloss": null,
       "token_count": 1,
       "folio_count": 1,
       "example_tokens": [
@@ -83,7 +83,7 @@
     "ypch": {
       "kernel": "H",
       "regime": null,
-      "gloss": "stabilization",
+      "gloss": null,
       "token_count": 2,
       "folio_count": 2,
       "example_tokens": [
@@ -189,7 +189,7 @@
     "ecth": {
       "kernel": "HE",
       "regime": null,
-      "gloss": "cool-cut",
+      "gloss": null,
       "token_count": 12,
       "folio_count": 8,
       "example_tokens": [
@@ -206,7 +206,7 @@
     "dy": {
       "kernel": "K",
       "regime": "PRECISION",
-      "gloss": "close:seal",
+      "gloss": "seal",
       "token_count": 594,
       "folio_count": 79,
       "example_tokens": [
@@ -223,7 +223,7 @@
     "l": {
       "kernel": "K",
       "regime": null,
-      "gloss": "stage:late",
+      "gloss": "late",
       "token_count": 853,
       "folio_count": 78,
       "example_tokens": [
@@ -241,7 +241,7 @@
     "o": {
       "kernel": null,
       "regime": null,
-      "gloss": "stage:near-end",
+      "gloss": "near",
       "token_count": 376,
       "folio_count": 72,
       "example_tokens": [
@@ -311,7 +311,7 @@
     "ch": {
       "kernel": "H",
       "regime": null,
-      "gloss": "check:fire",
+      "gloss": "check",
       "token_count": 351,
       "folio_count": 72,
       "example_tokens": [
@@ -352,7 +352,7 @@
     "eey": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "cool:deep",
+      "gloss": "deep",
       "token_count": 615,
       "folio_count": 72,
       "example_tokens": [
@@ -434,7 +434,7 @@
     "eo": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "cool:open",
+      "gloss": "open",
       "token_count": 340,
       "folio_count": 53,
       "example_tokens": [
@@ -458,7 +458,7 @@
     "ek": {
       "kernel": "K",
       "regime": "PRECISION",
-      "gloss": "precision",
+      "gloss": "exact",
       "token_count": 166,
       "folio_count": 63,
       "example_tokens": [
@@ -475,7 +475,7 @@
     "od": {
       "kernel": null,
       "regime": "PRECISION",
-      "gloss": "collect:precise",
+      "gloss": "precise",
       "token_count": 173,
       "folio_count": 52,
       "example_tokens": [
@@ -509,7 +509,7 @@
     "ke": {
       "kernel": "K",
       "regime": null,
-      "gloss": "heat:steady",
+      "gloss": "steady",
       "token_count": 421,
       "folio_count": 61,
       "example_tokens": [
@@ -526,7 +526,7 @@
     "r": {
       "kernel": "K",
       "regime": null,
-      "gloss": "stage:mid",
+      "gloss": "mid",
       "token_count": 749,
       "folio_count": 81,
       "example_tokens": [
@@ -556,7 +556,7 @@
     "aiin": {
       "kernel": null,
       "regime": "SETTLING",
-      "gloss": "check:settle",
+      "gloss": "settle",
       "token_count": 831,
       "folio_count": 80,
       "example_tokens": [
@@ -591,7 +591,7 @@
     "lch": {
       "kernel": "K",
       "regime": null,
-      "gloss": "frame, check",
+      "gloss": "strip",
       "token_count": 74,
       "folio_count": 38,
       "example_tokens": [
@@ -606,7 +606,7 @@
     "teed": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "gather, discharge",
+      "gloss": null,
       "token_count": 9,
       "folio_count": 9,
       "example_tokens": [
@@ -662,7 +662,7 @@
     "kch": {
       "kernel": "K",
       "regime": null,
-      "gloss": "heat:pulse",
+      "gloss": "pulse",
       "token_count": 148,
       "folio_count": 57,
       "example_tokens": [
@@ -690,7 +690,7 @@
     "ck": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "heat:hard",
+      "gloss": "hard",
       "token_count": 196,
       "folio_count": 67,
       "example_tokens": [
@@ -707,7 +707,7 @@
     "eec": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "deep cool, close",
+      "gloss": null,
       "token_count": 6,
       "folio_count": 6,
       "example_tokens": [
@@ -734,7 +734,7 @@
     "al": {
       "kernel": "K",
       "regime": null,
-      "gloss": "collect:gather",
+      "gloss": "gather",
       "token_count": 520,
       "folio_count": 77,
       "example_tokens": [
@@ -800,7 +800,7 @@
     "eet": {
       "kernel": "E",
       "regime": "PRECISION",
-      "gloss": "deep cool, transfer",
+      "gloss": null,
       "token_count": 22,
       "folio_count": 16,
       "example_tokens": [
@@ -815,7 +815,7 @@
     "i": {
       "kernel": null,
       "regime": "PRECISION",
-      "gloss": "stage:early",
+      "gloss": "early",
       "token_count": 137,
       "folio_count": 50,
       "example_tokens": [
@@ -862,7 +862,7 @@
     "et": {
       "kernel": "E",
       "regime": "PRECISION",
-      "gloss": "energy-path",
+      "gloss": "path",
       "token_count": 58,
       "folio_count": 37,
       "example_tokens": [
@@ -903,7 +903,7 @@
     "ee": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "cool:long",
+      "gloss": "long",
       "token_count": 146,
       "folio_count": 54,
       "example_tokens": [
@@ -945,7 +945,7 @@
     "op": {
       "kernel": null,
       "regime": null,
-      "gloss": "process start",
+      "gloss": "start",
       "token_count": 36,
       "folio_count": 27,
       "example_tokens": [
@@ -962,7 +962,7 @@
     "eeol": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "overnight standing",
+      "gloss": "overnight",
       "token_count": 46,
       "folio_count": 23,
       "example_tokens": [
@@ -986,7 +986,7 @@
     "ofch": {
       "kernel": "H",
       "regime": null,
-      "gloss": "work, mark, check",
+      "gloss": null,
       "token_count": 17,
       "folio_count": 14,
       "example_tokens": [
@@ -1001,7 +1001,7 @@
     "ckh": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "heat:watch",
+      "gloss": "firm",
       "token_count": 127,
       "folio_count": 60,
       "example_tokens": [
@@ -1029,7 +1029,7 @@
     "eeeo": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "deep extended cool, open",
+      "gloss": null,
       "token_count": 10,
       "folio_count": 8,
       "example_tokens": [
@@ -1051,7 +1051,7 @@
     "eol": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "sustain output",
+      "gloss": "sustain",
       "token_count": 281,
       "folio_count": 64,
       "example_tokens": [
@@ -1075,7 +1075,7 @@
     "te": {
       "kernel": "E",
       "regime": null,
-      "gloss": "rapid gather",
+      "gloss": "gather",
       "token_count": 87,
       "folio_count": 41,
       "example_tokens": [
@@ -1092,7 +1092,7 @@
     "ko": {
       "kernel": "K",
       "regime": null,
-      "gloss": "precision heat-work",
+      "gloss": null,
       "token_count": 16,
       "folio_count": 15,
       "example_tokens": [
@@ -1126,7 +1126,7 @@
     "opch": {
       "kernel": "H",
       "regime": null,
-      "gloss": "process",
+      "gloss": "operate",
       "token_count": 107,
       "folio_count": 48,
       "example_tokens": [
@@ -1154,7 +1154,7 @@
     "ar": {
       "kernel": null,
       "regime": null,
-      "gloss": "close:release",
+      "gloss": "release",
       "token_count": 670,
       "folio_count": 78,
       "example_tokens": [
@@ -1178,7 +1178,7 @@
     "eek": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "energy-lock",
+      "gloss": "lock",
       "token_count": 54,
       "folio_count": 35,
       "example_tokens": [
@@ -1206,7 +1206,7 @@
     "odai": {
       "kernel": null,
       "regime": "PRECISION",
-      "gloss": "collect, open",
+      "gloss": null,
       "token_count": 8,
       "folio_count": 8,
       "example_tokens": [
@@ -1221,7 +1221,7 @@
     "eeo": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "cool:wide",
+      "gloss": "wide",
       "token_count": 130,
       "folio_count": 34,
       "example_tokens": [
@@ -1245,7 +1245,7 @@
     "es": {
       "kernel": "E",
       "regime": null,
-      "gloss": "cool-sequence",
+      "gloss": null,
       "token_count": 14,
       "folio_count": 13,
       "example_tokens": [
@@ -1280,7 +1280,7 @@
     "fch": {
       "kernel": "H",
       "regime": null,
-      "gloss": "mark, check",
+      "gloss": "note",
       "token_count": 23,
       "folio_count": 19,
       "example_tokens": [
@@ -1317,7 +1317,7 @@
     "kee": {
       "kernel": "K",
       "regime": "SETTLING",
-      "gloss": "deep heat",
+      "gloss": "deep",
       "token_count": 34,
       "folio_count": 23,
       "example_tokens": [
@@ -1345,7 +1345,7 @@
     "rai": {
       "kernel": null,
       "regime": "SETTLING",
-      "gloss": "input, open",
+      "gloss": null,
       "token_count": 12,
       "folio_count": 11,
       "example_tokens": [
@@ -1360,7 +1360,7 @@
     "lk": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "frame-lock",
+      "gloss": "frame",
       "token_count": 58,
       "folio_count": 36,
       "example_tokens": [
@@ -1399,7 +1399,7 @@
     "ep": {
       "kernel": "E",
       "regime": null,
-      "gloss": "precision cool",
+      "gloss": null,
       "token_count": 16,
       "folio_count": 13,
       "example_tokens": [
@@ -1414,7 +1414,7 @@
     "eed": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "extended discharge",
+      "gloss": "extended",
       "token_count": 84,
       "folio_count": 36,
       "example_tokens": [
@@ -1438,7 +1438,7 @@
     "eckh": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "direct heat hazard",
+      "gloss": "danger",
       "token_count": 28,
       "folio_count": 17,
       "example_tokens": [
@@ -1453,7 +1453,7 @@
     "eod": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "standing cool",
+      "gloss": "stand",
       "token_count": 80,
       "folio_count": 32,
       "example_tokens": [
@@ -1470,7 +1470,7 @@
     "keo": {
       "kernel": "K",
       "regime": "SETTLING",
-      "gloss": "heat-open",
+      "gloss": "open",
       "token_count": 26,
       "folio_count": 19,
       "example_tokens": [
@@ -1487,7 +1487,7 @@
     "ect": {
       "kernel": "E",
       "regime": null,
-      "gloss": "energy-control",
+      "gloss": "regulate",
       "token_count": 47,
       "folio_count": 21,
       "example_tokens": [
@@ -1517,7 +1517,7 @@
     "cth": {
       "kernel": "H",
       "regime": null,
-      "gloss": "precision hazard",
+      "gloss": "hazard",
       "token_count": 48,
       "folio_count": 34,
       "example_tokens": [
@@ -1532,7 +1532,7 @@
     "so": {
       "kernel": null,
       "regime": null,
-      "gloss": "sequence, work",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -1579,7 +1579,7 @@
     "kc": {
       "kernel": "K",
       "regime": null,
-      "gloss": "intense heat-seal",
+      "gloss": "bond",
       "token_count": 33,
       "folio_count": 26,
       "example_tokens": [
@@ -1592,7 +1592,7 @@
     "she": {
       "kernel": "H",
       "regime": null,
-      "gloss": "verify, cool",
+      "gloss": null,
       "token_count": 7,
       "folio_count": 7,
       "example_tokens": [
@@ -1607,7 +1607,7 @@
     "edai": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "discharge, open",
+      "gloss": null,
       "token_count": 10,
       "folio_count": 8,
       "example_tokens": [
@@ -1633,7 +1633,7 @@
     "dai": {
       "kernel": null,
       "regime": "SETTLING",
-      "gloss": "start, step",
+      "gloss": null,
       "token_count": 23,
       "folio_count": 15,
       "example_tokens": [
@@ -1659,7 +1659,7 @@
     "octh": {
       "kernel": "H",
       "regime": null,
-      "gloss": "work, control, hazard",
+      "gloss": null,
       "token_count": 15,
       "folio_count": 14,
       "example_tokens": [
@@ -1674,7 +1674,7 @@
     "ockh": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "work, heat-check",
+      "gloss": null,
       "token_count": 16,
       "folio_count": 12,
       "example_tokens": [
@@ -1724,7 +1724,7 @@
     "efch": {
       "kernel": "H",
       "regime": null,
-      "gloss": "cool, mark, check",
+      "gloss": null,
       "token_count": 6,
       "folio_count": 6,
       "example_tokens": [
@@ -1739,7 +1739,7 @@
     "eef": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "deep cool, mark",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 5,
       "example_tokens": [
@@ -1753,7 +1753,7 @@
     "eck": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "hard precision",
+      "gloss": "rigid",
       "token_count": 88,
       "folio_count": 41,
       "example_tokens": [
@@ -1770,7 +1770,7 @@
     "yk": {
       "kernel": "K",
       "regime": null,
-      "gloss": "end, heat",
+      "gloss": null,
       "token_count": 11,
       "folio_count": 10,
       "example_tokens": [
@@ -1867,7 +1867,7 @@
     "ckheo": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "heat-check, cool-open",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -1880,7 +1880,7 @@
     "epch": {
       "kernel": "H",
       "regime": null,
-      "gloss": "cool-pause, check",
+      "gloss": null,
       "token_count": 8,
       "folio_count": 6,
       "example_tokens": [
@@ -1895,7 +1895,7 @@
     "cpho": {
       "kernel": "H",
       "regime": null,
-      "gloss": "measure, work",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -1930,7 +1930,7 @@
     "kal": {
       "kernel": "K",
       "regime": null,
-      "gloss": "heat-attach, frame",
+      "gloss": null,
       "token_count": 10,
       "folio_count": 10,
       "example_tokens": [
@@ -1967,7 +1967,7 @@
     "eke": {
       "kernel": "K",
       "regime": "PRECISION",
-      "gloss": "precision, cool",
+      "gloss": null,
       "token_count": 7,
       "folio_count": 7,
       "example_tokens": [
@@ -2022,7 +2022,7 @@
     "pai": {
       "kernel": null,
       "regime": "SETTLING",
-      "gloss": "pause, open",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -2086,7 +2086,7 @@
     "m": {
       "kernel": null,
       "regime": "PRECISION",
-      "gloss": "stage:final",
+      "gloss": "final",
       "token_count": 76,
       "folio_count": 40,
       "example_tokens": [
@@ -2104,7 +2104,7 @@
     "hy": {
       "kernel": "H",
       "regime": null,
-      "gloss": "acute hazard",
+      "gloss": null,
       "token_count": 7,
       "folio_count": 7,
       "example_tokens": [
@@ -2127,7 +2127,7 @@
     "kai": {
       "kernel": "K",
       "regime": "SETTLING",
-      "gloss": "heat-attach, step",
+      "gloss": "step",
       "token_count": 24,
       "folio_count": 17,
       "example_tokens": [
@@ -2142,7 +2142,7 @@
     "lod": {
       "kernel": null,
       "regime": "PRECISION",
-      "gloss": "frame-open, mark",
+      "gloss": null,
       "token_count": 7,
       "folio_count": 7,
       "example_tokens": [
@@ -2177,7 +2177,7 @@
     "edo": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "discharge, work",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 5,
       "example_tokens": [
@@ -2203,7 +2203,7 @@
     "yt": {
       "kernel": null,
       "regime": null,
-      "gloss": "end, transfer",
+      "gloss": null,
       "token_count": 12,
       "folio_count": 9,
       "example_tokens": [
@@ -2217,7 +2217,7 @@
     "tch": {
       "kernel": null,
       "regime": null,
-      "gloss": "rapid transfer-check",
+      "gloss": "pound",
       "token_count": 65,
       "folio_count": 32,
       "example_tokens": [
@@ -2232,7 +2232,7 @@
     "aii": {
       "kernel": null,
       "regime": "SETTLING",
-      "gloss": "unseal",
+      "gloss": "open",
       "token_count": 32,
       "folio_count": 21,
       "example_tokens": [
@@ -2256,7 +2256,7 @@
     "che": {
       "kernel": "H",
       "regime": null,
-      "gloss": "check cooling",
+      "gloss": null,
       "token_count": 15,
       "folio_count": 12,
       "example_tokens": [
@@ -2282,7 +2282,7 @@
     "aik": {
       "kernel": "K",
       "regime": "SETTLING",
-      "gloss": "open, heat",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -2316,7 +2316,7 @@
     "ld": {
       "kernel": null,
       "regime": null,
-      "gloss": "frame, mark",
+      "gloss": null,
       "token_count": 13,
       "folio_count": 12,
       "example_tokens": [
@@ -2342,7 +2342,7 @@
     "och": {
       "kernel": "H",
       "regime": null,
-      "gloss": "work, check",
+      "gloss": null,
       "token_count": 20,
       "folio_count": 17,
       "example_tokens": [
@@ -2357,7 +2357,7 @@
     "ly": {
       "kernel": null,
       "regime": null,
-      "gloss": "cool-end",
+      "gloss": "end",
       "token_count": 49,
       "folio_count": 31,
       "example_tokens": [
@@ -2374,7 +2374,7 @@
     "olch": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "continue, check",
+      "gloss": null,
       "token_count": 8,
       "folio_count": 7,
       "example_tokens": [
@@ -2400,7 +2400,7 @@
     "efc": {
       "kernel": "E",
       "regime": null,
-      "gloss": "cool, mark, close",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -2411,7 +2411,7 @@
     "pch": {
       "kernel": "H",
       "regime": null,
-      "gloss": "pause, check",
+      "gloss": "pause",
       "token_count": 79,
       "folio_count": 37,
       "example_tokens": [
@@ -2470,7 +2470,7 @@
     "ked": {
       "kernel": "K",
       "regime": "SETTLING",
-      "gloss": "heat-release",
+      "gloss": "release",
       "token_count": 32,
       "folio_count": 25,
       "example_tokens": [
@@ -2487,7 +2487,7 @@
     "ech": {
       "kernel": "H",
       "regime": null,
-      "gloss": "energy-check",
+      "gloss": "check",
       "token_count": 34,
       "folio_count": 20,
       "example_tokens": [
@@ -2511,7 +2511,7 @@
     "eka": {
       "kernel": "K",
       "regime": "PRECISION",
-      "gloss": "precision, attach",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -2524,7 +2524,7 @@
     "olk": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "sustain seal",
+      "gloss": "hold",
       "token_count": 27,
       "folio_count": 22,
       "example_tokens": [
@@ -2541,7 +2541,7 @@
     "chd": {
       "kernel": "H",
       "regime": null,
-      "gloss": "check, mark",
+      "gloss": null,
       "token_count": 21,
       "folio_count": 18,
       "example_tokens": [
@@ -2563,7 +2563,7 @@
     "cp": {
       "kernel": null,
       "regime": null,
-      "gloss": "close, pause",
+      "gloss": null,
       "token_count": 10,
       "folio_count": 10,
       "example_tokens": [
@@ -2576,7 +2576,7 @@
     "do": {
       "kernel": null,
       "regime": null,
-      "gloss": "mark, work",
+      "gloss": null,
       "token_count": 9,
       "folio_count": 9,
       "example_tokens": [
@@ -2591,7 +2591,7 @@
     "shd": {
       "kernel": "H",
       "regime": null,
-      "gloss": "verify, mark",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 3,
       "example_tokens": [
@@ -2628,7 +2628,7 @@
     "of": {
       "kernel": null,
       "regime": null,
-      "gloss": "work, mark",
+      "gloss": null,
       "token_count": 15,
       "folio_count": 12,
       "example_tokens": [
@@ -2643,7 +2643,7 @@
     "eksh": {
       "kernel": "K",
       "regime": "PRECISION",
-      "gloss": "precision, verify",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -2666,7 +2666,7 @@
     "kalch": {
       "kernel": "K",
       "regime": null,
-      "gloss": "heat-attach, frame, check",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -2678,7 +2678,7 @@
     "keed": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "heat-discharge",
+      "gloss": "vent",
       "token_count": 30,
       "folio_count": 20,
       "example_tokens": [
@@ -2751,7 +2751,7 @@
     "ry": {
       "kernel": null,
       "regime": null,
-      "gloss": "collect-end",
+      "gloss": "finish",
       "token_count": 33,
       "folio_count": 28,
       "example_tokens": [
@@ -2768,7 +2768,7 @@
     "eees": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "deep cool, cool-sequence",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -2781,7 +2781,7 @@
     "cfh": {
       "kernel": "H",
       "regime": null,
-      "gloss": "close, mark, hazard",
+      "gloss": null,
       "token_count": 9,
       "folio_count": 9,
       "example_tokens": [
@@ -2796,7 +2796,7 @@
     "ir": {
       "kernel": null,
       "regime": null,
-      "gloss": "input-step",
+      "gloss": null,
       "token_count": 19,
       "folio_count": 17,
       "example_tokens": [
@@ -2822,7 +2822,7 @@
     "lchd": {
       "kernel": "K",
       "regime": null,
-      "gloss": "frame, check, mark",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 5,
       "example_tokens": [
@@ -2837,7 +2837,7 @@
     "eolk": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "sustain, heat",
+      "gloss": null,
       "token_count": 9,
       "folio_count": 8,
       "example_tokens": [
@@ -2863,7 +2863,7 @@
     "ad": {
       "kernel": null,
       "regime": null,
-      "gloss": "attach, mark",
+      "gloss": null,
       "token_count": 7,
       "folio_count": 7,
       "example_tokens": [
@@ -2911,7 +2911,7 @@
     "osh": {
       "kernel": "H",
       "regime": null,
-      "gloss": "work-verify",
+      "gloss": null,
       "token_count": 13,
       "folio_count": 11,
       "example_tokens": [
@@ -2937,7 +2937,7 @@
     "om": {
       "kernel": null,
       "regime": null,
-      "gloss": "work, precision marker",
+      "gloss": "work",
       "token_count": 25,
       "folio_count": 18,
       "example_tokens": [
@@ -2971,7 +2971,7 @@
     "opc": {
       "kernel": null,
       "regime": null,
-      "gloss": "work-start, close",
+      "gloss": null,
       "token_count": 9,
       "folio_count": 7,
       "example_tokens": [
@@ -3005,7 +3005,7 @@
     "oek": {
       "kernel": "K",
       "regime": "PRECISION",
-      "gloss": "work, precision",
+      "gloss": null,
       "token_count": 6,
       "folio_count": 5,
       "example_tokens": [
@@ -3031,7 +3031,7 @@
     "ock": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "work, hard heat",
+      "gloss": null,
       "token_count": 13,
       "folio_count": 12,
       "example_tokens": [
@@ -3055,7 +3055,7 @@
     "olo": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "continue, work",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -3068,7 +3068,7 @@
     "opche": {
       "kernel": "H",
       "regime": null,
-      "gloss": "process, cool",
+      "gloss": null,
       "token_count": 6,
       "folio_count": 6,
       "example_tokens": [
@@ -3081,7 +3081,7 @@
     "alo": {
       "kernel": "K",
       "regime": null,
-      "gloss": "collect, work",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -3094,7 +3094,7 @@
     "ckhd": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "heat-check, mark",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -3128,7 +3128,7 @@
     "kchd": {
       "kernel": "K",
       "regime": null,
-      "gloss": "precision heat, mark",
+      "gloss": null,
       "token_count": 6,
       "folio_count": 5,
       "example_tokens": [
@@ -3140,7 +3140,7 @@
     "ef": {
       "kernel": "E",
       "regime": null,
-      "gloss": "cool, mark",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 4,
       "example_tokens": [
@@ -3155,7 +3155,7 @@
     "ait": {
       "kernel": null,
       "regime": "SETTLING",
-      "gloss": "open, transfer",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -3177,7 +3177,7 @@
     "ka": {
       "kernel": "K",
       "regime": null,
-      "gloss": "sustained fire",
+      "gloss": "fire",
       "token_count": 25,
       "folio_count": 20,
       "example_tokens": [
@@ -3205,7 +3205,7 @@
     "dal": {
       "kernel": "K",
       "regime": null,
-      "gloss": "start, frame",
+      "gloss": null,
       "token_count": 8,
       "folio_count": 7,
       "example_tokens": [
@@ -3220,7 +3220,7 @@
     "ekch": {
       "kernel": "K",
       "regime": "PRECISION",
-      "gloss": "precision, check",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -3244,7 +3244,7 @@
     "tche": {
       "kernel": "H",
       "regime": null,
-      "gloss": "transfer, check, cool",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 5,
       "example_tokens": [
@@ -3278,7 +3278,7 @@
     "ekc": {
       "kernel": "K",
       "regime": "PRECISION",
-      "gloss": "precision, close",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 5,
       "example_tokens": [
@@ -3301,7 +3301,7 @@
     "tc": {
       "kernel": null,
       "regime": null,
-      "gloss": "transfer, close",
+      "gloss": null,
       "token_count": 16,
       "folio_count": 13,
       "example_tokens": [
@@ -3338,7 +3338,7 @@
     "ky": {
       "kernel": "K",
       "regime": null,
-      "gloss": "heat, end",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -3362,7 +3362,7 @@
     "qekch": {
       "kernel": "K",
       "regime": "PRECISION",
-      "gloss": "energy, precision, check",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -3429,7 +3429,7 @@
     "keeo": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "sustained heat, extended cool",
+      "gloss": "cycle",
       "token_count": 38,
       "folio_count": 20,
       "example_tokens": [
@@ -3446,7 +3446,7 @@
     "rod": {
       "kernel": null,
       "regime": "PRECISION",
-      "gloss": "input-work, mark",
+      "gloss": null,
       "token_count": 7,
       "folio_count": 5,
       "example_tokens": [
@@ -3472,7 +3472,7 @@
     "cph": {
       "kernel": "H",
       "regime": null,
-      "gloss": "precision measure",
+      "gloss": "measure",
       "token_count": 36,
       "folio_count": 24,
       "example_tokens": [
@@ -3489,7 +3489,7 @@
     "yp": {
       "kernel": null,
       "regime": null,
-      "gloss": "end, pause",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 5,
       "example_tokens": [
@@ -3502,7 +3502,7 @@
     "ty": {
       "kernel": null,
       "regime": null,
-      "gloss": "transfer, end",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -3526,7 +3526,7 @@
     "olt": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "continue, transfer",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -3539,7 +3539,7 @@
     "ta": {
       "kernel": null,
       "regime": null,
-      "gloss": "transfer, attach",
+      "gloss": null,
       "token_count": 9,
       "folio_count": 9,
       "example_tokens": [
@@ -3553,7 +3553,7 @@
     "to": {
       "kernel": null,
       "regime": null,
-      "gloss": "transfer, work",
+      "gloss": null,
       "token_count": 11,
       "folio_count": 9,
       "example_tokens": [
@@ -3590,7 +3590,7 @@
     "ocph": {
       "kernel": "H",
       "regime": null,
-      "gloss": "work, measure",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 5,
       "example_tokens": [
@@ -3683,7 +3683,7 @@
     "ode": {
       "kernel": "E",
       "regime": "PRECISION",
-      "gloss": "collect, cool",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 5,
       "example_tokens": [
@@ -3762,7 +3762,7 @@
     "oct": {
       "kernel": null,
       "regime": null,
-      "gloss": "work, control",
+      "gloss": null,
       "token_count": 14,
       "folio_count": 12,
       "example_tokens": [
@@ -3831,7 +3831,7 @@
     "ot": {
       "kernel": null,
       "regime": null,
-      "gloss": "work-path",
+      "gloss": "route",
       "token_count": 45,
       "folio_count": 25,
       "example_tokens": [
@@ -3870,7 +3870,7 @@
     "eor": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "cool-open, input",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -3884,7 +3884,7 @@
     "ro": {
       "kernel": null,
       "regime": null,
-      "gloss": "input-work",
+      "gloss": null,
       "token_count": 13,
       "folio_count": 12,
       "example_tokens": [
@@ -3899,7 +3899,7 @@
     "eee": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "deep extended cool",
+      "gloss": null,
       "token_count": 13,
       "folio_count": 11,
       "example_tokens": [
@@ -3914,7 +3914,7 @@
     "eocp": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "cool-open, close, pause",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -3938,7 +3938,7 @@
     "os": {
       "kernel": null,
       "regime": null,
-      "gloss": "work, sequence",
+      "gloss": null,
       "token_count": 16,
       "folio_count": 12,
       "example_tokens": [
@@ -4025,7 +4025,7 @@
     "dyt": {
       "kernel": "K",
       "regime": "PRECISION",
-      "gloss": "close, transfer",
+      "gloss": null,
       "token_count": 7,
       "folio_count": 6,
       "example_tokens": [
@@ -4073,7 +4073,7 @@
     "rd": {
       "kernel": null,
       "regime": null,
-      "gloss": "input, mark",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -4130,7 +4130,7 @@
     "eock": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "cool-open, hard heat",
+      "gloss": null,
       "token_count": 7,
       "folio_count": 7,
       "example_tokens": [
@@ -4143,7 +4143,7 @@
     "ak": {
       "kernel": "K",
       "regime": null,
-      "gloss": "attach, heat",
+      "gloss": null,
       "token_count": 12,
       "folio_count": 10,
       "example_tokens": [
@@ -4192,7 +4192,7 @@
     "chs": {
       "kernel": "H",
       "regime": null,
-      "gloss": "check, sequence",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -4205,7 +4205,7 @@
     "im": {
       "kernel": null,
       "regime": null,
-      "gloss": "step-mark",
+      "gloss": null,
       "token_count": 8,
       "folio_count": 5,
       "example_tokens": [
@@ -4219,7 +4219,7 @@
     "alsh": {
       "kernel": "K",
       "regime": null,
-      "gloss": "collect, verify",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 5,
       "example_tokens": [
@@ -4287,7 +4287,7 @@
     "lsh": {
       "kernel": "H",
       "regime": null,
-      "gloss": "frame, verify",
+      "gloss": "verify",
       "token_count": 24,
       "folio_count": 14,
       "example_tokens": [
@@ -4313,7 +4313,7 @@
     "opal": {
       "kernel": "K",
       "regime": null,
-      "gloss": "work-start, collect",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -4350,7 +4350,7 @@
     "teo": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "gather, work",
+      "gloss": null,
       "token_count": 18,
       "folio_count": 14,
       "example_tokens": [
@@ -4409,7 +4409,7 @@
     "eeod": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "deep cool, work, mark",
+      "gloss": null,
       "token_count": 16,
       "folio_count": 14,
       "example_tokens": [
@@ -4424,7 +4424,7 @@
     "ched": {
       "kernel": "H",
       "regime": "SETTLING",
-      "gloss": "check, discharge",
+      "gloss": null,
       "token_count": 20,
       "folio_count": 14,
       "example_tokens": [
@@ -4458,7 +4458,7 @@
     "lo": {
       "kernel": null,
       "regime": null,
-      "gloss": "frame-open",
+      "gloss": "open",
       "token_count": 33,
       "folio_count": 24,
       "example_tokens": [
@@ -4498,7 +4498,7 @@
     "cho": {
       "kernel": "H",
       "regime": null,
-      "gloss": "check, work",
+      "gloss": null,
       "token_count": 9,
       "folio_count": 8,
       "example_tokens": [
@@ -4597,7 +4597,7 @@
     "lkc": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "frame-lock, close",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -4611,7 +4611,7 @@
     "el": {
       "kernel": "E",
       "regime": null,
-      "gloss": "cool, frame",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -4669,7 +4669,7 @@
     "otch": {
       "kernel": "H",
       "regime": null,
-      "gloss": "work-path, check",
+      "gloss": null,
       "token_count": 7,
       "folio_count": 6,
       "example_tokens": [
@@ -4684,7 +4684,7 @@
     "oe": {
       "kernel": "E",
       "regime": null,
-      "gloss": "work, cool",
+      "gloss": null,
       "token_count": 11,
       "folio_count": 8,
       "example_tokens": [
@@ -4699,7 +4699,7 @@
     "qek": {
       "kernel": "K",
       "regime": "PRECISION",
-      "gloss": "energy, precision",
+      "gloss": null,
       "token_count": 10,
       "folio_count": 9,
       "example_tokens": [
@@ -4714,7 +4714,7 @@
     "chek": {
       "kernel": "K",
       "regime": "PRECISION",
-      "gloss": "check, precision",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -4738,7 +4738,7 @@
     "is": {
       "kernel": null,
       "regime": null,
-      "gloss": "step, sequence",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -4829,7 +4829,7 @@
     "ald": {
       "kernel": "K",
       "regime": null,
-      "gloss": "collect, mark",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -4843,7 +4843,7 @@
     "oi": {
       "kernel": null,
       "regime": null,
-      "gloss": "work, step",
+      "gloss": null,
       "token_count": 12,
       "folio_count": 12,
       "example_tokens": [
@@ -4904,7 +4904,7 @@
     "ees": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "deep cool, sequence",
+      "gloss": null,
       "token_count": 9,
       "folio_count": 9,
       "example_tokens": [
@@ -4926,7 +4926,7 @@
     "ea": {
       "kernel": "E",
       "regime": null,
-      "gloss": "cool, attach",
+      "gloss": null,
       "token_count": 8,
       "folio_count": 8,
       "example_tokens": [
@@ -4985,7 +4985,7 @@
     "keec": {
       "kernel": "K",
       "regime": "SETTLING",
-      "gloss": "heat-cool, close",
+      "gloss": null,
       "token_count": 8,
       "folio_count": 8,
       "example_tokens": [
@@ -4997,7 +4997,7 @@
     "eop": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "cool-open, pause",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -5010,7 +5010,7 @@
     "ocfh": {
       "kernel": "H",
       "regime": null,
-      "gloss": "work, close, mark, hazard",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -5034,7 +5034,7 @@
     "eot": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "cool-open, transfer",
+      "gloss": null,
       "token_count": 13,
       "folio_count": 12,
       "example_tokens": [
@@ -5082,7 +5082,7 @@
     "eoct": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "cool-open, control",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 4,
       "example_tokens": [
@@ -5094,7 +5094,7 @@
     "tcho": {
       "kernel": "H",
       "regime": null,
-      "gloss": "transfer, check, work",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -5117,7 +5117,7 @@
     "kcho": {
       "kernel": "K",
       "regime": null,
-      "gloss": "precision heat, work",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -5129,7 +5129,7 @@
     "ctho": {
       "kernel": "H",
       "regime": null,
-      "gloss": "control, hazard, work",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -5154,7 +5154,7 @@
     "chod": {
       "kernel": "H",
       "regime": "PRECISION",
-      "gloss": "check, collect",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -5166,7 +5166,7 @@
     "old": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "continue, mark",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -5202,7 +5202,7 @@
     "qcth": {
       "kernel": "H",
       "regime": null,
-      "gloss": "energy, control, hazard",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -5225,7 +5225,7 @@
     "ec": {
       "kernel": "E",
       "regime": null,
-      "gloss": "cool, close",
+      "gloss": null,
       "token_count": 14,
       "folio_count": 13,
       "example_tokens": [
@@ -5270,7 +5270,7 @@
     "er": {
       "kernel": "E",
       "regime": null,
-      "gloss": "cool, input",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -5294,7 +5294,7 @@
     "edal": {
       "kernel": "K",
       "regime": "SETTLING",
-      "gloss": "discharge, collect",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -5308,7 +5308,7 @@
     "kshd": {
       "kernel": "H",
       "regime": null,
-      "gloss": "heat, verify, mark",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -5319,7 +5319,7 @@
     "ted": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "gather, mark",
+      "gloss": null,
       "token_count": 17,
       "folio_count": 13,
       "example_tokens": [
@@ -5367,7 +5367,7 @@
     "ks": {
       "kernel": "K",
       "regime": null,
-      "gloss": "heat, sequence",
+      "gloss": null,
       "token_count": 7,
       "folio_count": 7,
       "example_tokens": [
@@ -5379,7 +5379,7 @@
     "oda": {
       "kernel": null,
       "regime": "PRECISION",
-      "gloss": "collect, attach",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -5404,7 +5404,7 @@
     "ekai": {
       "kernel": "K",
       "regime": "PRECISION",
-      "gloss": "precision, open",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -5439,7 +5439,7 @@
     "sd": {
       "kernel": null,
       "regime": null,
-      "gloss": "sequence, mark",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -5463,7 +5463,7 @@
     "kaii": {
       "kernel": "K",
       "regime": "SETTLING",
-      "gloss": "heat-attach, repeat",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -5520,7 +5520,7 @@
     "iro": {
       "kernel": null,
       "regime": null,
-      "gloss": "input-step, work",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 4,
       "example_tokens": [
@@ -5566,7 +5566,7 @@
     "sheo": {
       "kernel": "H",
       "regime": "SETTLING",
-      "gloss": "verify, cool-open",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -5580,7 +5580,7 @@
     "de": {
       "kernel": "E",
       "regime": null,
-      "gloss": "mark, cool",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 5,
       "example_tokens": [
@@ -5637,7 +5637,7 @@
     "alch": {
       "kernel": "K",
       "regime": null,
-      "gloss": "collect:gather, check:fire",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 2,
       "example_tokens": [
@@ -5649,7 +5649,7 @@
     "cheo": {
       "kernel": "H",
       "regime": "SETTLING",
-      "gloss": "check, cool-open",
+      "gloss": null,
       "token_count": 15,
       "folio_count": 12,
       "example_tokens": [
@@ -5819,7 +5819,7 @@
     "ra": {
       "kernel": null,
       "regime": null,
-      "gloss": "input, attach",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -5844,7 +5844,7 @@
     "q": {
       "kernel": null,
       "regime": null,
-      "gloss": "qo-form",
+      "gloss": null,
       "token_count": 10,
       "folio_count": 7,
       "example_tokens": [
@@ -5872,7 +5872,7 @@
     "ksh": {
       "kernel": "H",
       "regime": null,
-      "gloss": "ignition check",
+      "gloss": "scan",
       "token_count": 26,
       "folio_count": 18,
       "example_tokens": [
@@ -5898,7 +5898,7 @@
     "epc": {
       "kernel": "E",
       "regime": null,
-      "gloss": "cool-pause, close",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -5911,7 +5911,7 @@
     "eda": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "discharge, attach",
+      "gloss": null,
       "token_count": 9,
       "folio_count": 8,
       "example_tokens": [
@@ -5971,7 +5971,7 @@
     "ls": {
       "kernel": null,
       "regime": null,
-      "gloss": "frame, sequence",
+      "gloss": null,
       "token_count": 7,
       "folio_count": 7,
       "example_tokens": [
@@ -5985,7 +5985,7 @@
     "kech": {
       "kernel": "K",
       "regime": null,
-      "gloss": "gentle heat, check",
+      "gloss": null,
       "token_count": 8,
       "folio_count": 7,
       "example_tokens": [
@@ -6009,7 +6009,7 @@
     "cs": {
       "kernel": null,
       "regime": null,
-      "gloss": "close, sequence",
+      "gloss": null,
       "token_count": 12,
       "folio_count": 9,
       "example_tokens": [
@@ -6024,7 +6024,7 @@
     "oche": {
       "kernel": "H",
       "regime": null,
-      "gloss": "work, check, cool",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -6048,7 +6048,7 @@
     "oin": {
       "kernel": "K",
       "regime": null,
-      "gloss": "work, link",
+      "gloss": null,
       "token_count": 6,
       "folio_count": 6,
       "example_tokens": [
@@ -6062,7 +6062,7 @@
     "shed": {
       "kernel": "H",
       "regime": "SETTLING",
-      "gloss": "verify, discharge",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -6086,7 +6086,7 @@
     "odch": {
       "kernel": "H",
       "regime": "PRECISION",
-      "gloss": "collect:precise, check:fire",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -6132,7 +6132,7 @@
     "shee": {
       "kernel": "H",
       "regime": "SETTLING",
-      "gloss": "verify, deep cool",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -6145,7 +6145,7 @@
     "oiin": {
       "kernel": "K",
       "regime": "SETTLING",
-      "gloss": "work-loop",
+      "gloss": "loop",
       "token_count": 32,
       "folio_count": 22,
       "example_tokens": [
@@ -6173,7 +6173,7 @@
     "oqok": {
       "kernel": "K",
       "regime": null,
-      "gloss": "work, energy, lock",
+      "gloss": "dense",
       "token_count": 5,
       "folio_count": 5,
       "example_tokens": [
@@ -6182,7 +6182,9 @@
         "oqokeol",
         "oqoky"
       ],
-      "notes": []
+      "notes": [
+        "Morphology edge case: no prefix recognized for oqok-. Dictionary entry prevents compound decomposition from producing ok=seal in verb position. K-family neutral adjective."
+      ]
     },
     "qekyted": {
       "kernel": "K",
@@ -6198,7 +6200,7 @@
     "esh": {
       "kernel": "H",
       "regime": null,
-      "gloss": "cool-sequence, hazard",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -6222,7 +6224,7 @@
     "opsh": {
       "kernel": "H",
       "regime": null,
-      "gloss": "work-start, verify",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 4,
       "example_tokens": [
@@ -6236,7 +6238,7 @@
     "lp": {
       "kernel": null,
       "regime": null,
-      "gloss": "frame, pause",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 3,
       "example_tokens": [
@@ -6272,7 +6274,7 @@
     "kar": {
       "kernel": "K",
       "regime": null,
-      "gloss": "heat-attach, input",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -6306,7 +6308,7 @@
     "qo": {
       "kernel": null,
       "regime": null,
-      "gloss": "energy, work",
+      "gloss": null,
       "token_count": 18,
       "folio_count": 10,
       "example_tokens": [
@@ -6329,7 +6331,7 @@
     "lai": {
       "kernel": null,
       "regime": "SETTLING",
-      "gloss": "frame, open",
+      "gloss": null,
       "token_count": 6,
       "folio_count": 6,
       "example_tokens": [
@@ -6344,7 +6346,7 @@
     "qe": {
       "kernel": "E",
       "regime": null,
-      "gloss": "energy, cool",
+      "gloss": null,
       "token_count": 6,
       "folio_count": 6,
       "example_tokens": [
@@ -6379,7 +6381,7 @@
     "eeed": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "deep cool, discharge",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -6415,7 +6417,7 @@
     "yl": {
       "kernel": null,
       "regime": null,
-      "gloss": "end, frame",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -6429,7 +6431,7 @@
     "rch": {
       "kernel": "H",
       "regime": null,
-      "gloss": "input, check",
+      "gloss": null,
       "token_count": 7,
       "folio_count": 7,
       "example_tokens": [
@@ -6444,7 +6446,7 @@
     "eolch": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "sustain, check",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -6457,7 +6459,7 @@
     "lc": {
       "kernel": null,
       "regime": null,
-      "gloss": "frame, close",
+      "gloss": null,
       "token_count": 6,
       "folio_count": 6,
       "example_tokens": [
@@ -6471,7 +6473,7 @@
     "lche": {
       "kernel": "K",
       "regime": null,
-      "gloss": "frame, check, cool",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 5,
       "example_tokens": [
@@ -6529,7 +6531,7 @@
     "qk": {
       "kernel": "K",
       "regime": null,
-      "gloss": "energy, heat",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -6574,7 +6576,7 @@
     "fchd": {
       "kernel": "H",
       "regime": null,
-      "gloss": "mark, check, mark",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -6587,7 +6589,7 @@
     "opa": {
       "kernel": null,
       "regime": null,
-      "gloss": "work-start, attach",
+      "gloss": null,
       "token_count": 6,
       "folio_count": 6,
       "example_tokens": [
@@ -6624,7 +6626,7 @@
     "olke": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "sustain-lock, cool",
+      "gloss": null,
       "token_count": 8,
       "folio_count": 7,
       "example_tokens": [
@@ -6661,7 +6663,7 @@
     "tee": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "gather, cool",
+      "gloss": null,
       "token_count": 7,
       "folio_count": 7,
       "example_tokens": [
@@ -6674,7 +6676,7 @@
     "lke": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "frame-lock, cool",
+      "gloss": null,
       "token_count": 20,
       "folio_count": 13,
       "example_tokens": [
@@ -6701,7 +6703,7 @@
     "ecp": {
       "kernel": "E",
       "regime": null,
-      "gloss": "cool, close, pause",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -6758,7 +6760,7 @@
     "eoke": {
       "kernel": "K",
       "regime": "SETTLING",
-      "gloss": "cool-down, cool",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -6889,7 +6891,7 @@
     "lte": {
       "kernel": "E",
       "regime": null,
-      "gloss": "frame, gather",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -6902,7 +6904,7 @@
     "lshe": {
       "kernel": "H",
       "regime": null,
-      "gloss": "frame, verify, cool",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -6914,7 +6916,7 @@
     "eal": {
       "kernel": "K",
       "regime": null,
-      "gloss": "cool, collect",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -6928,7 +6930,7 @@
     "qet": {
       "kernel": "E",
       "regime": "PRECISION",
-      "gloss": "energy, energy-path",
+      "gloss": null,
       "token_count": 6,
       "folio_count": 6,
       "example_tokens": [
@@ -6943,7 +6945,7 @@
     "oii": {
       "kernel": null,
       "regime": null,
-      "gloss": "work, repeat",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 3,
       "example_tokens": [
@@ -7002,7 +7004,7 @@
     "iir": {
       "kernel": null,
       "regime": null,
-      "gloss": "repeat, input",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -7047,7 +7049,7 @@
     "psh": {
       "kernel": "H",
       "regime": null,
-      "gloss": "pause, verify",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 4,
       "example_tokens": [
@@ -7070,7 +7072,7 @@
     "qeed": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "energy, deep discharge",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -7082,7 +7084,7 @@
     "loh": {
       "kernel": "H",
       "regime": null,
-      "gloss": "frame-open, hazard",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -7107,7 +7109,7 @@
     "qckh": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "energy, heat-check",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -7142,7 +7144,7 @@
     "qch": {
       "kernel": "H",
       "regime": null,
-      "gloss": "energy, check",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -7232,7 +7234,7 @@
     "kesh": {
       "kernel": "K",
       "regime": null,
-      "gloss": "gentle heat, verify",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 5,
       "example_tokens": [
@@ -7280,7 +7282,7 @@
     "oik": {
       "kernel": "K",
       "regime": null,
-      "gloss": "work, step, heat",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 3,
       "example_tokens": [
@@ -7292,7 +7294,7 @@
     "tsh": {
       "kernel": "H",
       "regime": null,
-      "gloss": "transfer, verify",
+      "gloss": null,
       "token_count": 9,
       "folio_count": 6,
       "example_tokens": [
@@ -7307,7 +7309,7 @@
     "eyk": {
       "kernel": "KE",
       "regime": null,
-      "gloss": "set, heat",
+      "gloss": null,
       "token_count": 8,
       "folio_count": 7,
       "example_tokens": [
@@ -7412,7 +7414,7 @@
     "cse": {
       "kernel": "E",
       "regime": null,
-      "gloss": "close, sequence, cool",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -7425,7 +7427,7 @@
     "lt": {
       "kernel": null,
       "regime": null,
-      "gloss": "frame, transfer",
+      "gloss": null,
       "token_count": 7,
       "folio_count": 7,
       "example_tokens": [
@@ -7519,7 +7521,7 @@
     "tai": {
       "kernel": null,
       "regime": "SETTLING",
-      "gloss": "transfer, open",
+      "gloss": null,
       "token_count": 8,
       "folio_count": 6,
       "example_tokens": [
@@ -7556,7 +7558,7 @@
     "lched": {
       "kernel": "K",
       "regime": "SETTLING",
-      "gloss": "frame, check, discharge",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -7580,7 +7582,7 @@
     "rc": {
       "kernel": null,
       "regime": null,
-      "gloss": "input, close",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 3,
       "example_tokens": [
@@ -7806,7 +7808,7 @@
     "oee": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "work, deep cool",
+      "gloss": null,
       "token_count": 10,
       "folio_count": 8,
       "example_tokens": [
@@ -7821,7 +7823,7 @@
     "oched": {
       "kernel": "H",
       "regime": "SETTLING",
-      "gloss": "work, check, discharge",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -8090,7 +8092,7 @@
     "ara": {
       "kernel": null,
       "regime": null,
-      "gloss": "close, attach",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -8103,7 +8105,7 @@
     "lksh": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "frame-lock, verify",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -8329,7 +8331,7 @@
     "qee": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "energy, deep cool",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 4,
       "example_tokens": [
@@ -8343,7 +8345,7 @@
     "oq": {
       "kernel": null,
       "regime": null,
-      "gloss": "work, energy",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -8366,7 +8368,7 @@
     "ecph": {
       "kernel": "HE",
       "regime": null,
-      "gloss": "cool, measure",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -8378,7 +8380,7 @@
     "edk": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "discharge, heat",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 4,
       "example_tokens": [
@@ -8448,7 +8450,7 @@
     "sa": {
       "kernel": null,
       "regime": null,
-      "gloss": "sequence, attach",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -8472,7 +8474,7 @@
     "eekc": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "energy-lock, close",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -8549,7 +8551,7 @@
     "tal": {
       "kernel": "K",
       "regime": null,
-      "gloss": "transfer, transfer",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 2,
       "example_tokens": [
@@ -8606,7 +8608,7 @@
     "eeck": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "deep cool, hard heat",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -8663,7 +8665,7 @@
     "opo": {
       "kernel": null,
       "regime": null,
-      "gloss": "work-start, work",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -8686,7 +8688,7 @@
     "opalk": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "work-start, transfer, heat",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 3,
       "example_tokens": [
@@ -8744,7 +8746,7 @@
     "chct": {
       "kernel": "H",
       "regime": null,
-      "gloss": "check, control",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 3,
       "example_tokens": [
@@ -8844,7 +8846,7 @@
     "kec": {
       "kernel": "K",
       "regime": null,
-      "gloss": "gentle heat, close",
+      "gloss": null,
       "token_count": 12,
       "folio_count": 9,
       "example_tokens": [
@@ -8912,7 +8914,7 @@
     "eolke": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "sustain, gentle heat",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -8924,7 +8926,7 @@
     "pche": {
       "kernel": "H",
       "regime": null,
-      "gloss": "pause, check, cool",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 5,
       "example_tokens": [
@@ -8982,7 +8984,7 @@
     "keeod": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "heat, deep cool, mark",
+      "gloss": null,
       "token_count": 6,
       "folio_count": 5,
       "example_tokens": [
@@ -9008,7 +9010,7 @@
     "eocth": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "cool-open, control, hazard",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 2,
       "example_tokens": [
@@ -9076,7 +9078,7 @@
     "ede": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "discharge, cool",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 5,
       "example_tokens": [
@@ -9202,7 +9204,7 @@
     "tchd": {
       "kernel": "H",
       "regime": null,
-      "gloss": "transfer, check, mark",
+      "gloss": null,
       "token_count": 7,
       "folio_count": 6,
       "example_tokens": [
@@ -9428,7 +9430,7 @@
     "airo": {
       "kernel": null,
       "regime": "SETTLING",
-      "gloss": "open, input-work",
+      "gloss": null,
       "token_count": 7,
       "folio_count": 6,
       "example_tokens": [
@@ -9474,7 +9476,7 @@
     "pc": {
       "kernel": null,
       "regime": null,
-      "gloss": "pause, close",
+      "gloss": null,
       "token_count": 10,
       "folio_count": 8,
       "example_tokens": [
@@ -9487,7 +9489,7 @@
     "lr": {
       "kernel": null,
       "regime": null,
-      "gloss": "frame, input",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -9524,7 +9526,7 @@
     "teeo": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "gather, cool-open",
+      "gloss": null,
       "token_count": 8,
       "folio_count": 7,
       "example_tokens": [
@@ -9548,7 +9550,7 @@
     "ox": {
       "kernel": null,
       "regime": null,
-      "gloss": "work, cross",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 2,
       "example_tokens": [
@@ -9684,7 +9686,7 @@
     "opd": {
       "kernel": null,
       "regime": null,
-      "gloss": "work-start, mark",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 2,
       "example_tokens": [
@@ -9816,7 +9818,7 @@
     "eockh": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "cool-open, heat-check",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -9840,7 +9842,7 @@
     "alk": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "transfer, heat",
+      "gloss": null,
       "token_count": 10,
       "folio_count": 9,
       "example_tokens": [
@@ -9900,7 +9902,7 @@
     "cf": {
       "kernel": null,
       "regime": null,
-      "gloss": "close, mark",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -9956,7 +9958,7 @@
     "eyt": {
       "kernel": "E",
       "regime": null,
-      "gloss": "set, transfer",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -10159,7 +10161,7 @@
     "tched": {
       "kernel": "H",
       "regime": "SETTLING",
-      "gloss": "transfer, check, discharge",
+      "gloss": null,
       "token_count": 7,
       "folio_count": 4,
       "example_tokens": [
@@ -10171,7 +10173,7 @@
     "taii": {
       "kernel": null,
       "regime": "SETTLING",
-      "gloss": "transfer, open-wide",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -10217,7 +10219,7 @@
     "pched": {
       "kernel": "H",
       "regime": "SETTLING",
-      "gloss": "pause, check, discharge",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -10230,7 +10232,7 @@
     "aro": {
       "kernel": null,
       "regime": null,
-      "gloss": "close, work",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -10522,7 +10524,7 @@
     "cheed": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "check, deep discharge",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -10770,7 +10772,7 @@
     "eolsh": {
       "kernel": "K",
       "regime": "HIGH_ENERGY",
-      "gloss": "sustain, verify",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -10783,7 +10785,7 @@
     "it": {
       "kernel": null,
       "regime": null,
-      "gloss": "step, transfer",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -10909,7 +10911,7 @@
     "keech": {
       "kernel": "K",
       "regime": "SETTLING",
-      "gloss": "heat-cool, check",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -10944,7 +10946,7 @@
     "eesh": {
       "kernel": "H",
       "regime": "SETTLING",
-      "gloss": "deep cool, verify",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -10979,7 +10981,7 @@
     "opai": {
       "kernel": null,
       "regime": "SETTLING",
-      "gloss": "work-start, open",
+      "gloss": null,
       "token_count": 6,
       "folio_count": 4,
       "example_tokens": [
@@ -11003,7 +11005,7 @@
     "llo": {
       "kernel": null,
       "regime": null,
-      "gloss": "frame, frame-open",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -11196,7 +11198,7 @@
     "oai": {
       "kernel": null,
       "regime": "SETTLING",
-      "gloss": "work, open",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -11231,7 +11233,7 @@
     "cheeo": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "check, deep cool, work",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -11333,7 +11335,7 @@
     "at": {
       "kernel": null,
       "regime": null,
-      "gloss": "attach, transfer",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -11367,7 +11369,7 @@
     "tcheo": {
       "kernel": "H",
       "regime": "SETTLING",
-      "gloss": "transfer, check, cool-open",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 2,
       "example_tokens": [
@@ -11400,7 +11402,7 @@
     "okch": {
       "kernel": "K",
       "regime": null,
-      "gloss": "lock, check",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 5,
       "example_tokens": [
@@ -11414,7 +11416,7 @@
     "sho": {
       "kernel": "H",
       "regime": null,
-      "gloss": "verify, work",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 2,
       "example_tokens": [
@@ -11438,7 +11440,7 @@
     "air": {
       "kernel": null,
       "regime": "SETTLING",
-      "gloss": "open, input",
+      "gloss": null,
       "token_count": 6,
       "folio_count": 6,
       "example_tokens": [
@@ -11519,7 +11521,7 @@
     "eeda": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "deep discharge, attach",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 2,
       "example_tokens": [
@@ -11830,7 +11832,7 @@
     "opched": {
       "kernel": "H",
       "regime": "SETTLING",
-      "gloss": "process, discharge",
+      "gloss": null,
       "token_count": 7,
       "folio_count": 5,
       "example_tokens": [
@@ -11855,7 +11857,7 @@
     "ail": {
       "kernel": null,
       "regime": "SETTLING",
-      "gloss": "open, frame",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 2,
       "example_tokens": [
@@ -12145,7 +12147,7 @@
     "pcheo": {
       "kernel": "H",
       "regime": "SETTLING",
-      "gloss": "pause, check, cool-open",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 3,
       "example_tokens": [
@@ -12192,7 +12194,7 @@
     "oke": {
       "kernel": "K",
       "regime": null,
-      "gloss": "lock, cool",
+      "gloss": null,
       "token_count": 5,
       "folio_count": 5,
       "example_tokens": [
@@ -12294,7 +12296,7 @@
     "oaii": {
       "kernel": null,
       "regime": "SETTLING",
-      "gloss": "work, open-wide",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -12318,7 +12320,7 @@
     "keod": {
       "kernel": "E",
       "regime": "SETTLING",
-      "gloss": "gentle heat, collect",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -12840,7 +12842,7 @@
     "dl": {
       "kernel": null,
       "regime": null,
-      "gloss": "mark, frame",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 2,
       "example_tokens": [
@@ -12965,7 +12967,7 @@
     "ll": {
       "kernel": null,
       "regime": null,
-      "gloss": "frame, frame",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 3,
       "example_tokens": [
@@ -13046,7 +13048,7 @@
     "pair": {
       "kernel": null,
       "regime": "SETTLING",
-      "gloss": "pause, open, input",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 4,
       "example_tokens": [
@@ -13236,7 +13238,7 @@
     "kod": {
       "kernel": "K",
       "regime": "PRECISION",
-      "gloss": "heat-work, mark",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 3,
       "example_tokens": [
@@ -13426,7 +13428,7 @@
     "okc": {
       "kernel": "K",
       "regime": null,
-      "gloss": "lock, close",
+      "gloss": null,
       "token_count": 4,
       "folio_count": 3,
       "example_tokens": [
@@ -13505,7 +13507,7 @@
     "esho": {
       "kernel": "H",
       "regime": null,
-      "gloss": "cool-sequence, hazard, work",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
@@ -14150,7 +14152,7 @@
     "opchd": {
       "kernel": "H",
       "regime": null,
-      "gloss": "process, mark",
+      "gloss": null,
       "token_count": 3,
       "folio_count": 3,
       "example_tokens": [
