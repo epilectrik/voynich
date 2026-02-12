@@ -4,6 +4,30 @@
 
 ---
 
+## Version 3.51 (2026-02-12) - Bubble-Point Oscillation Falsified
+
+### Summary
+
+Tier 4 exploratory phase testing whether QO/CHSH lane oscillation follows bubble-point dynamics (hotter REGIME = faster switching). **Falsified**: alternation rate *decreases* with REGIME intensity (rho=-0.44, p<0.0001). Effect is primarily section-driven (T7: rho=0.011, p=0.924 after section control). Modest REGIME residual only in double partial (rho=0.278, p=0.016). REGIME_4 has anomalously long CHSH runs (2.19), consistent with C494 precision axis. Eliminates physics-driven switching mechanism; supports operator-driven duty cycles. Distillation narrative strengthened. 1 new constraint (C1005), 870 total. Phase 325.
+
+### New Constraints
+
+| # | Name | Tier | Key Evidence |
+|---|------|------|-------------|
+| C1005 | Bubble-Point Oscillation Falsified (Duty-Cycle Pattern) | 4 | Alt rate rho=-0.44 p<0.0001; T7 section-controlled rho=0.011; R4 CHSH=2.19 |
+
+### Key Findings
+
+**BUBBLE_POINT_OSCILLATION_TEST (7 tests):**
+- Hotter REGIMEs have *longer* runs in both lanes (opposite to bubble-point prediction)
+- Alternation rate decreases with intensity (rho=-0.44, p<0.0001)
+- Section absorbs REGIME effect completely (T7: partial rho=0.011, p=0.924)
+- REGIME_4 anomalously long CHSH runs (2.19 vs 1.58-1.89) = precision monitoring
+- Double partial (section + QO fraction) shows modest residual (rho=0.278, p=0.016)
+- Confirms C650 (section-specific oscillation rates) as primary pace-setter
+
+---
+
 ## Version 3.50 (2026-02-11) - HUB Decomposition & PREFIX Dual Encoding
 
 ### Summary

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 869 validated constraints | **Version:** 3.50 | **Date:** 2026-02-12
+**Total:** 870 validated constraints | **Version:** 3.50 | **Date:** 2026-02-12
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -1901,6 +1901,20 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - Suffix conditioning reduces entropy by 5.6% — real but insufficient to justify doubled state space
 - Combined with C1002 (no cross-token signal) and C1003 (no three-way synergy): grammar is saturated
 - 49-class instruction grammar captures all exploitable sequential structure
+
+---
+
+### Bubble-Point Oscillation Falsified (C1005) - Phase: BUBBLE_POINT_OSCILLATION_TEST
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1005** | **Bubble-Point Oscillation Falsified — Duty-Cycle Pattern** (QO run lengths do NOT decrease with REGIME intensity; alternation rate decreases rho=-0.44 p<0.0001; effect is section-driven T7 rho=0.011 p=0.924 after section control; modest REGIME residual only in double partial rho=0.278 p=0.016; REGIME_4 has anomalously long CHSH runs 2.19 consistent with C494 precision axis; eliminates physics-driven switching, supports operator-driven duty cycles) | 4 | B | -> [C1005_bubble_point_falsified.md](C1005_bubble_point_falsified.md) |
+
+**Phase findings:**
+- Bubble-point oscillation prediction falsified: hotter REGIMEs oscillate slower, not faster
+- Section is the primary oscillation pace-setter (confirms C650), not REGIME
+- REGIME_4 extended CHSH runs (2.19) = precision monitoring (C494, F-BRU-017)
+- Distillation narrative unaffected: operator-driven duty cycles fit Brunschwig better than physics-driven switching
 
 ---
 
