@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 870 validated constraints | **Version:** 3.50 | **Date:** 2026-02-12
+**Total:** 872 validated constraints | **Version:** 3.52 | **Date:** 2026-02-12
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -1915,6 +1915,26 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - Section is the primary oscillation pace-setter (confirms C650), not REGIME
 - REGIME_4 extended CHSH runs (2.19) = precision monitoring (C494, F-BRU-017)
 - Distillation narrative unaffected: operator-driven duty cycles fit Brunschwig better than physics-driven switching
+
+---
+
+### REGIME Dwell Architecture (C1006-C1007) - Phase: REGIME_DWELL_ARCHITECTURE
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1006** | **Macro-State Dwell Non-Geometricity is Topology Artifact** (first-order Markov null reproduces AXM dwell KS D=0.020 p=0.074; simulated data also non-geometric chi2=5097; 49-class runs mean=1.054 nearly all length-1; compositional drift within AXM runs chi2=52.09 p=0.010; Weibull k=1.55 REGIME-invariant range=0.096; non-geometricity correlates with compression ratio: AXM 32-class strongest, FQ 4-class moderate, FL_HAZ 2-class geometric) | 2 | B | -> [C1006_dwell_topology_artifact.md](C1006_dwell_topology_artifact.md) |
+| **1007** | **AXM Exit-Boundary Gatekeeper Subset** (specific classes 3-10x enriched at run exit boundaries chi2=178.21 p<0.0001; top enriched: class 22 at 9.58x, class 21 at 4.25x, class 15 at 3.08x; AXM exits to FQ 57.1%, enters from FQ 55.1%; FQ is principal interchange state) | 2 | B | -> [C1007_axm_gatekeeper_subset.md](C1007_axm_gatekeeper_subset.md) |
+
+**Phase findings (T1-T8):**
+- T1: REGIME selectively stretches AXm dwell only (rho=+0.306, p=0.007 section-controlled)
+- T2: Longer dwell = lower hazard density (rho=-0.416, p=0.0001)
+- T3: Shallower MIDDLEs = longer dwell (rho=-0.318, p=0.004), independent of REGIME
+- T4: HT density null (p=0.109); LINK density positive (rho=+0.389, p=0.0003)
+- T5+T5b: Non-geometric AXM dwell is topology artifact (first-order null reproduces)
+- T6: Non-geometricity correlates with class compression (AXM>FQ>FL_HAZ)
+- T6b: Compositional drift within AXM runs (C977 internal structure)
+- T7: Weibull k=1.55 REGIME-invariant; REGIME modulates scale only (C979 reinforced)
+- T8: Gatekeeper subset at AXM exit boundaries (chi2=178.21, p<0.0001)
 
 ---
 
