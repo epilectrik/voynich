@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 794 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 869 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -41,7 +41,7 @@ Every Currier B token is compositional. It decomposes into parts that each carry
 [ARTICULATOR] + [PREFIX] + MIDDLE + [SUFFIX]
 ```
 
-- **PREFIX** selects the operational channel — it determines which family of core actions is grammatically legal. For instance, one prefix selects heat-related operations; another selects monitoring operations. There are 8 prefix families organized into functional groups (including sister pairs ch/sh and ok/ot that function as equivalent mode selectors).
+- **PREFIX** selects the operational channel AND encodes line position. It determines which family of core actions is grammatically legal (one prefix selects energy operations, another selects monitoring) while simultaneously encoding where in the line the token appears — prefixes cluster into initial, central, and final positional zones. There are 8 prefix families organized into functional groups (including sister pairs ch/sh and ok/ot that function as equivalent mode selectors).
 - **MIDDLE** is the primary discriminative content — the specific action variant within the channel the prefix opened. Approximately 30 core MIDDLEs handle 67.6% of all tokens, with a long tail of ~1,150 rarer variants.
 - **SUFFIX** encodes context-dependent markers that relate to control flow — what happens next, how broad the operation's scope is.
 - **ARTICULATOR** is an optional refinement layer that doesn't change the core meaning.
@@ -59,6 +59,21 @@ The classes fall into five functional roles:
 | FREQUENT_OPERATOR | 4 | 12.5% | Common control instructions |
 | CORE_CONTROL | 4 | 4.4% | Execution boundaries |
 | FLOW_OPERATOR | 4 | 4.7% | Flow control and escape routes |
+
+### Six-State Macro Grammar
+
+The 49 instruction classes further compress into just 6 macro states — the coarsest description of what any token is doing:
+
+| State | What It Does | Share |
+|-------|-------------|-------|
+| **AXM** | Major scaffold — structural support | Largest group |
+| **AXm** | Minor scaffold — infrastructure | |
+| **FQ** | Frequency — common operations | |
+| **CC** | Control change — execution boundaries | |
+| **FL_HAZ** | Hazard flow — dangerous transitions | Smallest groups |
+| **FL_SAFE** | Safe flow — escape routes | |
+
+This compression is lossless: no transition information is lost when collapsing 49 classes to 6 states. The macro grammar reveals that the majority of the manuscript is scaffold (structural support), with only a small fraction devoted to hazard exposure or active control changes. A researcher scanning a folio can immediately classify every token into one of these six categories to see the macro structure of the program.
 
 ### The Kernel: Three Core Operators
 
@@ -83,6 +98,8 @@ The grammar enforces 17 forbidden transitions organized into 5 hazard classes:
 | ENERGY_OVERSHOOT | Thermal damage to material |
 
 Most hazards describe difficult-to-reverse failures — material contamination, phase disorder, or thermal damage. The grammar strongly disfavors these transitions (~65% compliance rate), though they are not absolutely prohibited. One hazard class (RATE_MISMATCH) describes recoverable imbalances rather than permanent damage. The entire grammar is organized around minimizing exposure to these transitions.
+
+All 17 forbidden transitions are mediated through 23 "hub" MIDDLEs — the most connected vocabulary items that appear across all instruction classes. These hub MIDDLEs decompose into four functional sub-roles: hazard sources (6), hazard targets (6), safety buffers (3), and connectors (8). The hazard topology is entirely a hub phenomenon — non-hub MIDDLEs never participate in forbidden transitions.
 
 ### Program Structure
 
@@ -309,5 +326,7 @@ These interpretations have been structurally ruled out:
 | See the Currier A registry contract | `context/STRUCTURAL_CONTRACTS/currierA.casc.yaml` |
 | See AZC activation mechanics | `context/STRUCTURAL_CONTRACTS/azc_activation.act.yaml` |
 | See the Brunschwig comparison | `context/SPECULATIVE/brunschwig_comparison.md` |
-| Run the core analysis library | `scripts/voynich.py` (see README.md for examples) |
-| View a decoded folio | `python scripts/show_b_folio.py f76r --flow` |
+| Run the core analysis library | `scripts/voynich.py` (see `CLAUDE.md` for examples) |
+| View a decoded folio | `python scripts/show_b_folio.py f76r -p` (paragraph view) |
+| View control flow | `python scripts/show_b_folio.py f76r --flow` (macro states + FL stages) |
+| View full metadata | `python scripts/show_b_folio.py f76r --detail 4` (all classification layers) |
