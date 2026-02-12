@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 874 validated constraints | **Version:** 3.53 | **Date:** 2026-02-12
+**Total:** 875 validated constraints | **Version:** 3.54 | **Date:** 2026-02-12
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -1957,6 +1957,22 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - T9: Gatekeepers are NOT structural bridges (betweenness p=0.514)
 - T10: No constrained sub-role exit motif (pre-GK p=0.940, exit entropy matches baseline)
 - T11: REGIME does NOT modulate curvature slope (rho=+0.800, p=0.200) - shape-invariant
+
+---
+
+### Macro-Automaton Necessity (C1010) - Phase: MACRO_AUTOMATON_NECESSITY
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1010** | **6-State Macro-Automaton is Minimal Invariant-Preserving Partition** (k<6 breaks role integrity and depletion separation: k=5 has 2 violations, k=4 has 5, k=3 has 9; AIC minimum at k=6 with ~110 point advantage over k=5; k>6 preserves constraints but adds no structural benefit; depletion gap persists at all k z=7-9 — 49-class phenomenon; independent spectral clustering ARI=0.059 — partition is structurally forced not spectrally natural) | 2 | B | -> [C1010_6state_minimal_invariant_partition.md](C1010_6state_minimal_invariant_partition.md) |
+
+**Phase findings (T1-T6):**
+- T1: Constraint retention = 1.0 at k>=6, degrades below (dep_cross: 0.789 at k=5, 0.263 at k=3)
+- T2: AIC minimum at k=6 (91299); BIC minimum at k=3 (parsimony); LL jumps 70 points at k=6
+- T3: k=5 first violation is FQ role merge + depletion (9,33); each k step adds distinct violations
+- T4: Five 7-state alternatives all fail to close depletion gap (z=7.24-7.58)
+- T5: Spectral clustering produces structurally different partitions (max ARI=0.081); role purity 0.0-0.5
+- T6: Verdict STRUCTURALLY_FORCED
 
 ---
 
