@@ -61,7 +61,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # EMBEDDED EXPERT CONTEXT
 
-**Generated:** 2026-02-12 12:16
+**Generated:** 2026-02-12 12:19
 **Version:** FROZEN STATE (869 constraints, 56 fits)
 
 ---
