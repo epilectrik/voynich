@@ -6,7 +6,7 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 
 ## Project Status
 
-**Analysis: CLOSED** | **Structural inspection: FROZEN** | **Version: 3.50**
+**Analysis: CLOSED** | **Structural inspection: FROZEN** | **Version: 3.53**
 
 | Metric | Value |
 |--------|-------|
@@ -128,16 +128,16 @@ Renders any Currier B folio with morphological parse, structural roles, interpre
 
 ```
 voynich/
-  context/            # Constraint system (869 validated constraints)
+  context/            # Constraint system (874 validated constraints)
     CLAUDE_INDEX.md   # Start here for full documentation
     CLAIMS/           # Individual constraint files
     ARCHITECTURE/     # System architecture docs (A, B, AZC, cross-system)
     STRUCTURAL_CONTRACTS/  # API-layer contracts (CASC, BCSC, ACT, BRSC)
-    MODEL_FITS/       # 55 tested model fits
+    MODEL_FITS/       # 56 tested model fits
     SPECULATIVE/      # Tier 3-4 interpretations
   data/               # Transcript, dictionaries, Brunschwig recipes
   scripts/            # voynich.py core library + analysis tools
-  phases/             # 325 completed research phases
+  phases/             # 327 completed research phases
   results/            # Analysis outputs (JSON)
   folio_analysis/     # Per-folio hazard maps
   annotation_data/    # Folio annotation work
