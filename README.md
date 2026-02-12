@@ -6,13 +6,13 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 
 ## Project Status
 
-**Analysis: CLOSED** | **Structural inspection: FROZEN** | **Version: 3.12**
+**Analysis: CLOSED** | **Structural inspection: FROZEN** | **Version: 3.50**
 
 | Metric | Value |
 |--------|-------|
-| Validated constraints | 794 |
-| Research phases completed | 299 |
-| Model fits tested | 55 |
+| Validated constraints | 869 |
+| Research phases completed | 324 |
+| Model fits tested | 56 |
 | Constraint tiers | 0 (frozen fact) through 4 (exploratory) |
 
 ## Core Finding
@@ -49,7 +49,7 @@ The manuscript comprises four structurally distinct systems that form a layered 
 
 Every Currier B token decomposes as: **[ARTICULATOR] + [PREFIX] + MIDDLE + [SUFFIX]**
 
-- **PREFIX** encodes the operational frame (test, monitor, vessel, rectify, store...)
+- **PREFIX** encodes the operational domain AND line position (test, monitor, energy, vessel, scaffold...)
 - **MIDDLE** encodes the core action (apply heat, check hazards, let settle...)
 - **SUFFIX** encodes control flow (checkpoint, iterate, thorough, close, transfer...)
 
@@ -117,16 +117,18 @@ print(decoder.decode_summary('f76r', mode='interpretive'))
 ### Folio Renderer
 
 ```
-python scripts/show_b_folio.py f76r --flow
+python scripts/show_b_folio.py f76r -p         # Paragraph view (gloss + tokens)
+python scripts/show_b_folio.py f76r --flow     # Control-flow view (macro states + FL stages)
+python scripts/show_b_folio.py f76r --detail 4 # Full metadata dump (all classification layers)
 ```
 
-Renders any Currier B folio with morphological parse, structural roles, and interpretive glosses.
+Renders any Currier B folio with morphological parse, structural roles, interpretive glosses, 6-state macro classification, and hub/affordance metadata.
 
 ## Directory Structure
 
 ```
 voynich/
-  context/            # Constraint system (794 validated constraints)
+  context/            # Constraint system (869 validated constraints)
     CLAUDE_INDEX.md   # Start here for full documentation
     CLAIMS/           # Individual constraint files
     ARCHITECTURE/     # System architecture docs (A, B, AZC, cross-system)
@@ -135,7 +137,7 @@ voynich/
     SPECULATIVE/      # Tier 3-4 interpretations
   data/               # Transcript, dictionaries, Brunschwig recipes
   scripts/            # voynich.py core library + analysis tools
-  phases/             # 299 completed research phases
+  phases/             # 324 completed research phases
   results/            # Analysis outputs (JSON)
   folio_analysis/     # Per-folio hazard maps
   annotation_data/    # Folio annotation work
