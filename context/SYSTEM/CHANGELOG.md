@@ -4,6 +4,35 @@
 
 ---
 
+## Version 3.52 (2026-02-12) - REGIME Dwell Architecture
+
+### Summary
+
+8-test phase probing dwell-time interactions in the 6-state macro-automaton. T1-T4 characterize dwell correlates (REGIME selectively stretches AXm, longer dwell = lower hazard density, shallower MIDDLEs = longer dwell, LINK density positive). T5-T8 investigate whether non-geometric AXM run lengths (chi2=52.79) represent genuine temporal memory. **RESOLVED: topology artifact.** First-order Markov null reproduces empirical dwell (KS p=0.074), simulated data also non-geometric (chi2=5097), confirming phase-type distribution from 32-class compression. Weibull k=1.55 REGIME-invariant. Compositional drift within AXM runs (T6b, p=0.010) connects to C977 S3/S4 directional flow. However, T8 discovers genuine gatekeeper subset: specific classes 3-10x enriched at AXM exit boundaries (chi2=178.21, p<0.0001). 2 new constraints (C1006-C1007), 872 total. Phase 326.
+
+### New Constraints
+
+| # | Name | Tier | Key Evidence |
+|---|------|------|-------------|
+| C1006 | Macro-State Dwell Non-Geometricity is Topology Artifact | 2 | KS p=0.074 null reproduces; Weibull k=1.55 REGIME-invariant; compositional drift p=0.010 |
+| C1007 | AXM Exit-Boundary Gatekeeper Subset | 2 | chi2=178.21 p<0.0001; class 22 9.58x enriched; FQ principal interchange 57.1% |
+
+### Key Findings
+
+**REGIME_DWELL_ARCHITECTURE (8 tests):**
+- T1: REGIME selectively stretches AXm only (rho=+0.306, p=0.007); AXM regime-independent
+- T2: Longer dwell = lower hazard density (rho=-0.416, p=0.0001) — dwell is safety property
+- T3: Shallower MIDDLEs = longer dwell (rho=-0.318, p=0.004), independent of REGIME
+- T4: HT density null; LINK density positive (rho=+0.389, p=0.0003) — more monitoring = longer dwell
+- T5: Increasing hazard function at 6-state level (rho=+0.95); flat at 49-class (mean run 1.054)
+- T5b: First-order Markov null REPRODUCES empirical AXM dwell (KS p=0.074) — TOPOLOGY ARTIFACT
+- T6: Non-geometricity correlates with compression ratio (AXM 32-class, FQ 4-class, FL_HAZ geometric)
+- T6b: Compositional drift DETECTED within AXM runs (chi2=52.09, p=0.010)
+- T7: Weibull k=1.55 across all REGIMEs (range 0.096) — shape invariant, scale varies
+- T8: Gatekeeper subset at AXM exit boundaries (chi2=178.21, p<0.0001)
+
+---
+
 ## Version 3.51 (2026-02-12) - Bubble-Point Oscillation Falsified
 
 ### Summary

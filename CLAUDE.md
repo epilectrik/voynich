@@ -142,8 +142,8 @@ Use these to verify your filtering is correct:
 | Metric | Value |
 |--------|-------|
 | Version | 3.50 FROZEN STATE |
-| Constraints | 870 validated |
-| Phases | 325 completed |
+| Constraints | 872 validated |
+| Phases | 326 completed |
 | Folios | 83 (Currier B) |
 | Analysis | CLOSED (PCA-v1 CERTIFIED) |
 

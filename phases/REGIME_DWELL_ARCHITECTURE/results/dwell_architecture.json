@@ -1,0 +1,2890 @@
+{
+  "phase": "REGIME_DWELL_ARCHITECTURE",
+  "n_folios": 82,
+  "total_classified_tokens": 16054,
+  "mean_AXM_occupancy": 0.6488393439860868,
+  "T1_dwell_geometry": {
+    "regime_state_means": {
+      "REGIME_2": {
+        "FL_HAZ": {
+          "n": 14,
+          "mean": 1.059710953346856,
+          "std": 0.09728639633732405
+        },
+        "FQ": {
+          "n": 15,
+          "mean": 1.417293424144515,
+          "std": 0.24695144365088775
+        },
+        "CC": {
+          "n": 15,
+          "mean": 1.0133333333333332,
+          "std": 0.051639777949432225
+        },
+        "AXm": {
+          "n": 13,
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "AXM": {
+          "n": 15,
+          "mean": 1.9656399335089758,
+          "std": 0.3161960054209773
+        },
+        "FL_SAFE": {
+          "n": 6,
+          "mean": 1.1666666666666667,
+          "std": 0.408248290463863
+        }
+      },
+      "REGIME_1": {
+        "FL_HAZ": {
+          "n": 32,
+          "mean": 1.0643142858136465,
+          "std": 0.08483514588204652
+        },
+        "FQ": {
+          "n": 32,
+          "mean": 1.196757894539625,
+          "std": 0.13660529185299408
+        },
+        "CC": {
+          "n": 32,
+          "mean": 1.0471022580227742,
+          "std": 0.08343213209626975
+        },
+        "AXm": {
+          "n": 31,
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "AXM": {
+          "n": 32,
+          "mean": 2.7840667144524085,
+          "std": 0.5764846783996854
+        },
+        "FL_SAFE": {
+          "n": 26,
+          "mean": 1.0,
+          "std": 0.0
+        }
+      },
+      "REGIME_4": {
+        "FL_HAZ": {
+          "n": 15,
+          "mean": 1.0355555555555553,
+          "std": 0.07688833837769708
+        },
+        "FQ": {
+          "n": 15,
+          "mean": 1.2171941963828372,
+          "std": 0.17370269977094108
+        },
+        "CC": {
+          "n": 14,
+          "mean": 1.0119047619047619,
+          "std": 0.04454354031873742
+        },
+        "AXm": {
+          "n": 12,
+          "mean": 1.0509259259259258,
+          "std": 0.14498409939005255
+        },
+        "AXM": {
+          "n": 15,
+          "mean": 2.155697925030452,
+          "std": 0.49719767840379947
+        },
+        "FL_SAFE": {
+          "n": 11,
+          "mean": 1.0,
+          "std": 0.0
+        }
+      },
+      "REGIME_3": {
+        "FL_HAZ": {
+          "n": 20,
+          "mean": 1.1196752988297105,
+          "std": 0.09683359451794538
+        },
+        "FQ": {
+          "n": 20,
+          "mean": 1.2636937039504863,
+          "std": 0.13171020803735878
+        },
+        "CC": {
+          "n": 20,
+          "mean": 1.0271428571428571,
+          "std": 0.06715005560516374
+        },
+        "AXm": {
+          "n": 20,
+          "mean": 1.0447294372294371,
+          "std": 0.08408639024316972
+        },
+        "AXM": {
+          "n": 20,
+          "mean": 2.39869593521059,
+          "std": 0.38873293717767443
+        },
+        "FL_SAFE": {
+          "n": 18,
+          "mean": 1.0,
+          "std": 0.0
+        }
+      }
+    },
+    "per_state_spearman": {
+      "FL_HAZ": {
+        "n": 81,
+        "raw_rho": 0.2004063018575565,
+        "raw_p": 0.07283408335689012,
+        "section_controlled_rho": 0.09040258698860491,
+        "section_controlled_p": 0.4221928792317057
+      },
+      "FQ": {
+        "n": 82,
+        "raw_rho": -0.11447701308140522,
+        "raw_p": 0.3057925327335221,
+        "section_controlled_rho": -0.17858550363708336,
+        "section_controlled_p": 0.10843497512742294
+      },
+      "CC": {
+        "n": 81,
+        "raw_rho": -0.052474823570828985,
+        "raw_p": 0.6417497757587338,
+        "section_controlled_rho": -0.0840082544603578,
+        "section_controlled_p": 0.45588354250718766
+      },
+      "AXm": {
+        "n": 76,
+        "raw_rho": 0.424056070553608,
+        "raw_p": 0.00013488255457718305,
+        "section_controlled_rho": 0.3062089286993495,
+        "section_controlled_p": 0.007141443738252551
+      },
+      "AXM": {
+        "n": 82,
+        "raw_rho": 0.10393661860050477,
+        "raw_p": 0.3527558559319308,
+        "section_controlled_rho": 0.04871903533564342,
+        "section_controlled_p": 0.6638128017295648
+      },
+      "FL_SAFE": {
+        "n": 61,
+        "raw_rho": -0.21370219187086162,
+        "raw_p": 0.098187885549336,
+        "section_controlled_rho": -0.13388590131336803,
+        "section_controlled_p": 0.30362546792681516
+      }
+    },
+    "geometric_test_AXM": {
+      "mean": 2.535831381733021,
+      "p_geo": 0.3943479867011452,
+      "chi2": 52.78909952848176,
+      "chi2_p": 1.9608740439997352e-07,
+      "is_geometric": false
+    }
+  },
+  "T2_hazard_proximity": {
+    "n": 82,
+    "raw_rho": -0.4635368767108431,
+    "raw_p": 1.1563663389373622e-05,
+    "section_controlled_rho": -0.4160730514153281,
+    "section_controlled_p": 0.00010120442889369038
+  },
+  "T3_energy_depth": {
+    "n": 82,
+    "raw_rho": -0.3850109653356674,
+    "raw_p": 0.00035476924186230135,
+    "section_controlled_rho": -0.3177714531422044,
+    "section_controlled_p": 0.003623839978948502,
+    "section_regime_controlled_rho": -0.35105190409333814,
+    "section_regime_controlled_p": 0.0012220586985622545,
+    "depth_range": [
+      0.0,
+      2.5738072171498323
+    ]
+  },
+  "T4_ht_cognitive_pacing": {
+    "n": 82,
+    "raw_rho": -0.035045711797997384,
+    "raw_p": 0.7546024462581199,
+    "section_controlled_rho": -0.08490376086455241,
+    "section_controlled_p": 0.44820913776628657,
+    "multi_controlled_rho": -0.1785461629716699,
+    "multi_controlled_p": 0.1085140625460523,
+    "link_density_check": {
+      "rho": 0.3893924700912601,
+      "p": 0.000299437339811922
+    }
+  },
+  "T5_hazard_function": {
+    "level_6state_AXM": {
+      "n_runs": 4270,
+      "mean_run": 2.535831381733021,
+      "hazard": [
+        0.3805620608899297,
+        0.3826086956521739,
+        0.37783221065523576,
+        0.3956692913385827,
+        0.4234527687296417,
+        0.5451977401129944,
+        0.4906832298136646,
+        0.5609756097560976,
+        0.6666666666666666,
+        0.75,
+        null,
+        null,
+        null
+      ],
+      "n_at_risk": [
+        4270,
+        2645,
+        1633,
+        1016,
+        614,
+        354,
+        161,
+        82,
+        36,
+        12,
+        3,
+        1,
+        1
+      ],
+      "shape": "increasing (fatigue/deadline)",
+      "shape_rho": 0.9515151515151514,
+      "shape_p": 2.279854920641689e-05
+    },
+    "level_49class_AXM": {
+      "n_runs": 10274,
+      "mean_run": 1.0539225228732723,
+      "hazard": [
+        0.9517227954058789,
+        0.8991935483870968,
+        0.9,
+        null,
+        null
+      ],
+      "n_at_risk": [
+        10274,
+        496,
+        50,
+        5,
+        3
+      ],
+      "shape": "insufficient_data",
+      "shape_rho": null,
+      "shape_p": null
+    },
+    "level_EN_only": {
+      "n_runs": 4204,
+      "mean_run": 2.6912464319695526,
+      "hazard": [
+        0.3510941960038059,
+        0.36070381231671556,
+        0.3646788990825688,
+        0.3637184115523466,
+        0.40283687943262414,
+        0.49643705463182897,
+        0.4811320754716981,
+        0.5636363636363636,
+        0.5833333333333334,
+        0.65,
+        null,
+        null,
+        null,
+        null,
+        null
+      ],
+      "n_at_risk": [
+        4204,
+        2728,
+        1744,
+        1108,
+        705,
+        421,
+        212,
+        110,
+        48,
+        20,
+        7,
+        3,
+        2,
+        1,
+        1
+      ],
+      "shape": "increasing (fatigue/deadline)",
+      "shape_rho": 0.9757575757575757,
+      "shape_p": 1.4675461874042197e-06
+    }
+  },
+  "T5b_null_model": {
+    "n_simulations": 100,
+    "ks_statistic": 0.019709403964772276,
+    "ks_p": 0.07390477940116025,
+    "null_reproduces": true,
+    "empirical_mean": 2.535831381733021,
+    "simulated_mean": 2.4675541571401154,
+    "simulated_mean_95ci": [
+      2.414869150946516,
+      2.5107949997008556
+    ],
+    "hazard_outside_95ci": "4/10",
+    "outside_fraction": 0.4,
+    "sim_hazard_mean": [
+      0.3783427216934151,
+      0.3965897238960441,
+      0.41115463609989467,
+      0.4381824243585903,
+      0.4660841944539037,
+      0.503113260173788,
+      0.5280834734885252,
+      0.5692309961640355,
+      0.6119125698387571,
+      0.6293672726978445,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "sim_hazard_95ci_lo": [
+      0.36720647302281695,
+      0.3827488371641236,
+      0.3910545193687231,
+      0.41026070073379023,
+      0.4244965930018416,
+      0.4480634334619903,
+      0.4548630717108978,
+      0.44899052841475573,
+      0.45305316091954023,
+      0.4409090909090909,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "sim_hazard_95ci_hi": [
+      0.39097544167151244,
+      0.4108288749343673,
+      0.43646435000101746,
+      0.4713951534959141,
+      0.50330569247621,
+      0.5540442708333333,
+      0.6007342657342657,
+      0.6571134868421052,
+      0.761002722323049,
+      0.9125874125874126,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null,
+      null
+    ],
+    "sim_geometric_test": {
+      "chi2": 5097.308553976899,
+      "p": 0.0,
+      "is_geometric": false
+    },
+    "verdict": "TOPOLOGY_ARTIFACT"
+  },
+  "T6_all_state_geometric": {
+    "FL_HAZ": {
+      "n": 873,
+      "mean": 1.092783505154639,
+      "p_geo": 0.9150943396226416,
+      "chi2": 2.1716268931029754,
+      "p": 0.3376270326159392,
+      "is_geometric": true
+    },
+    "FQ": {
+      "n": 2284,
+      "mean": 1.2626970227670753,
+      "p_geo": 0.7919556171983356,
+      "chi2": 10.196734377196124,
+      "p": 0.01696575951514188,
+      "is_geometric": false
+    },
+    "CC": {
+      "n": 708,
+      "mean": 1.036723163841808,
+      "status": "insufficient_bins"
+    },
+    "AXm": {
+      "n": 476,
+      "mean": 1.0210084033613445,
+      "status": "insufficient_bins"
+    },
+    "AXM": {
+      "n": 4270,
+      "mean": 2.535831381733021,
+      "p_geo": 0.3943479867011452,
+      "chi2": 52.78909952848176,
+      "p": 1.9608740439997352e-07,
+      "is_geometric": false
+    },
+    "FL_SAFE": {
+      "n": 120,
+      "mean": 1.0083333333333333,
+      "status": "insufficient_bins"
+    }
+  },
+  "T6b_compositional_drift": {
+    "n_long_runs": 354,
+    "min_run_length": 6,
+    "early_entropy": 4.001005228559704,
+    "late_entropy": 4.104639262298189,
+    "chi2": 52.09229956562946,
+    "p": 0.010240993306212224,
+    "dof": 31,
+    "drift_detected": true
+  },
+  "T7_weibull_regime": {
+    "global_weibull": {
+      "k": 1.5449009750458813,
+      "lambda": 2.8447011821694694,
+      "n": 4270
+    },
+    "per_regime": {
+      "REGIME_2": {
+        "n": 415,
+        "mean": 2.0506024096385542,
+        "weibull_k": 1.5902395244665473,
+        "weibull_lambda": 2.310613127815433,
+        "interpretation": "deadline"
+      },
+      "REGIME_1": {
+        "n": 2350,
+        "mean": 2.743404255319149,
+        "weibull_k": 1.5410076649942799,
+        "weibull_lambda": 3.0741311345145776,
+        "interpretation": "deadline"
+      },
+      "REGIME_4": {
+        "n": 376,
+        "mean": 2.172872340425532,
+        "weibull_k": 1.63714909308201,
+        "weibull_lambda": 2.4522908022606407,
+        "interpretation": "deadline"
+      },
+      "REGIME_3": {
+        "n": 1129,
+        "mean": 2.403011514614703,
+        "weibull_k": 1.590308635311079,
+        "weibull_lambda": 2.7033732767489673,
+        "interpretation": "deadline"
+      }
+    },
+    "regime_shape_test": {
+      "k_range": 0.09614142808773019,
+      "k_mean": 1.589676229463479,
+      "k_values": [
+        1.5902395244665473,
+        1.5410076649942799,
+        1.63714909308201,
+        1.590308635311079
+      ],
+      "regime_k_rho": 0.6000000000000001,
+      "regime_k_p": 0.3999999999999999,
+      "regime_modulates_shape": false
+    }
+  },
+  "T8_exit_triggers": {
+    "exit_skyline": {
+      "FL_HAZ": 488,
+      "FQ": 1627,
+      "CC": 393,
+      "AXm": 268,
+      "FL_SAFE": 71
+    },
+    "exit_total": 2847,
+    "exit_fractions": {
+      "FL_HAZ": 0.17140850017562345,
+      "FQ": 0.5714787495609414,
+      "CC": 0.1380400421496312,
+      "AXm": 0.09413417632595715,
+      "FL_SAFE": 0.024938531787846857
+    },
+    "entry_skyline": {
+      "FL_HAZ": 431,
+      "FQ": 1420,
+      "CC": 424,
+      "AXm": 274,
+      "FL_SAFE": 30
+    },
+    "entry_total": 2579,
+    "boundary_vs_midrun_chi2": 178.20752691880452,
+    "boundary_vs_midrun_p": 1.3409854318589835e-22,
+    "gatekeeper_detected": true,
+    "top_exit_enriched": [
+      {
+        "class": 22,
+        "enrichment": 9.584813227189223
+      },
+      {
+        "class": 21,
+        "enrichment": 4.247814952958859
+      },
+      {
+        "class": 15,
+        "enrichment": 3.080832823025107
+      },
+      {
+        "class": 20,
+        "enrichment": 2.6814656052255565
+      },
+      {
+        "class": 25,
+        "enrichment": 2.3040416411512554
+      },
+      {
+        "class": 44,
+        "enrichment": 1.797152480097979
+      },
+      {
+        "class": 24,
+        "enrichment": 1.6214909594868985
+      },
+      {
+        "class": 2,
+        "enrichment": 1.4745866503368035
+      },
+      {
+        "class": 36,
+        "enrichment": 1.4377219840783833
+      },
+      {
+        "class": 17,
+        "enrichment": 1.2685782212456325
+      }
+    ]
+  },
+  "findings": [
+    "REGIME selectively modulates dwell in: AXm",
+    "Dwell correlates with hazard density (rho=-0.416)",
+    "Depth predicts dwell (rho=-0.318)",
+    "HT density does not independently predict dwell",
+    "Hazard shape at 6-state level: increasing (fatigue/deadline)",
+    "NON-GEOMETRIC DWELL IS TOPOLOGY ARTIFACT (KS p=0.0739)",
+    "Non-geometric states: ['FQ', 'AXM']",
+    "Compositional drift within AXM runs (C977 internal structure)",
+    "Global Weibull k=1.545 (non-memoryless)",
+    "Gatekeeper subset detected in AXM exit boundary (top enriched: class 22)"
+  ],
+  "folio_details": [
+    {
+      "folio": "f26r",
+      "regime": "REGIME_4",
+      "section": "H",
+      "overall_run_length": 1.588235294117647,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.3636363636363635,
+        "CC": 1.0,
+        "AXm": null,
+        "AXM": 1.9411764705882353,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.018518518518518517,
+        "FQ": 0.2777777777777778,
+        "CC": 0.07407407407407407,
+        "AXm": 0.0,
+        "AXM": 0.6111111111111112,
+        "FL_SAFE": 0.018518518518518517
+      },
+      "body_ht_density": 0.09090909090909091,
+      "line1_ht_density": 0.25,
+      "link_density": 0.0,
+      "hazard_density": 0.018518518518518517,
+      "n_classified": 54,
+      "mean_depth": 2.1282039259245242
+    },
+    {
+      "folio": "f26v",
+      "regime": "REGIME_4",
+      "section": "H",
+      "overall_run_length": 1.7407407407407407,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.0,
+        "CC": null,
+        "AXm": null,
+        "AXM": 2.25,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.10638297872340426,
+        "FQ": 0.1276595744680851,
+        "CC": 0.0,
+        "AXm": 0.0,
+        "AXM": 0.7659574468085106,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.05,
+      "line1_ht_density": 0.0,
+      "link_density": 0.0,
+      "hazard_density": 0.10638297872340426,
+      "n_classified": 47,
+      "mean_depth": 2.0130151427245178
+    },
+    {
+      "folio": "f31r",
+      "regime": "REGIME_1",
+      "section": "H",
+      "overall_run_length": 1.558139534883721,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.4,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.0,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.08955223880597014,
+        "FQ": 0.208955223880597,
+        "CC": 0.05970149253731343,
+        "AXm": 0.029850746268656716,
+        "AXM": 0.5970149253731343,
+        "FL_SAFE": 0.014925373134328358
+      },
+      "body_ht_density": 0.05319148936170213,
+      "line1_ht_density": 0.3333333333333333,
+      "link_density": 0.0,
+      "hazard_density": 0.08955223880597014,
+      "n_classified": 67,
+      "mean_depth": 2.1104555228672846
+    },
+    {
+      "folio": "f31v",
+      "regime": "REGIME_4",
+      "section": "H",
+      "overall_run_length": 1.2941176470588236,
+      "state_run_lengths": {
+        "FL_HAZ": 1.2,
+        "FQ": 1.5,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 1.3043478260869565,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.09090909090909091,
+        "FQ": 0.3181818181818182,
+        "CC": 0.030303030303030304,
+        "AXm": 0.09090909090909091,
+        "AXM": 0.45454545454545453,
+        "FL_SAFE": 0.015151515151515152
+      },
+      "body_ht_density": 0.061224489795918366,
+      "line1_ht_density": 0.1,
+      "link_density": 0.0,
+      "hazard_density": 0.09090909090909091,
+      "n_classified": 66,
+      "mean_depth": 2.1237570885237043
+    },
+    {
+      "folio": "f33r",
+      "regime": "REGIME_2",
+      "section": "H",
+      "overall_run_length": 1.5666666666666667,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.75,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 1.8,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.06382978723404255,
+        "FQ": 0.44680851063829785,
+        "CC": 0.06382978723404255,
+        "AXm": 0.0425531914893617,
+        "AXM": 0.3829787234042553,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.047619047619047616,
+      "line1_ht_density": 0.1111111111111111,
+      "link_density": 0.0,
+      "hazard_density": 0.06382978723404255,
+      "n_classified": 47,
+      "mean_depth": 2.2661257153364542
+    },
+    {
+      "folio": "f33v",
+      "regime": "REGIME_2",
+      "section": "H",
+      "overall_run_length": 1.34375,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.3333333333333333,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 1.5769230769230769,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.13953488372093023,
+        "FQ": 0.32558139534883723,
+        "CC": 0.03488372093023256,
+        "AXm": 0.023255813953488372,
+        "AXM": 0.47674418604651164,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.030303030303030304,
+      "line1_ht_density": 0.0,
+      "link_density": 0.0,
+      "hazard_density": 0.13953488372093023,
+      "n_classified": 86,
+      "mean_depth": 2.223764185898267
+    },
+    {
+      "folio": "f34r",
+      "regime": "REGIME_3",
+      "section": "H",
+      "overall_run_length": 1.4603174603174602,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.0833333333333333,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.037037037037037,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.14130434782608695,
+        "FQ": 0.14130434782608695,
+        "CC": 0.05434782608695652,
+        "AXm": 0.05434782608695652,
+        "AXM": 0.5978260869565217,
+        "FL_SAFE": 0.010869565217391304
+      },
+      "body_ht_density": 0.037037037037037035,
+      "line1_ht_density": 0.2222222222222222,
+      "link_density": 0.0,
+      "hazard_density": 0.14130434782608695,
+      "n_classified": 92,
+      "mean_depth": 2.0903944198117634
+    },
+    {
+      "folio": "f34v",
+      "regime": "REGIME_3",
+      "section": "H",
+      "overall_run_length": 2.0526315789473686,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.2727272727272727,
+        "CC": 1.0,
+        "AXm": 1.3333333333333333,
+        "AXM": 2.8947368421052633,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.02564102564102564,
+        "FQ": 0.1794871794871795,
+        "CC": 0.038461538461538464,
+        "AXm": 0.05128205128205128,
+        "AXM": 0.7051282051282052,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.0380952380952381,
+      "line1_ht_density": 0.3,
+      "link_density": 0.0,
+      "hazard_density": 0.02564102564102564,
+      "n_classified": 78,
+      "mean_depth": 2.0345375584090135
+    },
+    {
+      "folio": "f39r",
+      "regime": "REGIME_3",
+      "section": "H",
+      "overall_run_length": 1.639344262295082,
+      "state_run_lengths": {
+        "FL_HAZ": 1.1818181818181819,
+        "FQ": 1.1666666666666667,
+        "CC": 1.2,
+        "AXm": 1.0,
+        "AXM": 2.259259259259259,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.13,
+        "FQ": 0.14,
+        "CC": 0.06,
+        "AXm": 0.05,
+        "AXM": 0.61,
+        "FL_SAFE": 0.01
+      },
+      "body_ht_density": 0.0851063829787234,
+      "line1_ht_density": 0.23076923076923078,
+      "link_density": 0.006493506493506494,
+      "hazard_density": 0.13,
+      "n_classified": 100,
+      "mean_depth": 2.1497134709658936
+    },
+    {
+      "folio": "f39v",
+      "regime": "REGIME_2",
+      "section": "H",
+      "overall_run_length": 1.6363636363636365,
+      "state_run_lengths": {
+        "FL_HAZ": 1.25,
+        "FQ": 1.5217391304347827,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 1.9333333333333333,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.09259259259259259,
+        "FQ": 0.32407407407407407,
+        "CC": 0.018518518518518517,
+        "AXm": 0.018518518518518517,
+        "AXM": 0.5370370370370371,
+        "FL_SAFE": 0.009259259259259259
+      },
+      "body_ht_density": 0.05426356589147287,
+      "line1_ht_density": 0.15384615384615385,
+      "link_density": 0.007042253521126761,
+      "hazard_density": 0.09259259259259259,
+      "n_classified": 108,
+      "mean_depth": 2.2477189131034963
+    },
+    {
+      "folio": "f40r",
+      "regime": "REGIME_2",
+      "section": "H",
+      "overall_run_length": 1.5217391304347827,
+      "state_run_lengths": {
+        "FL_HAZ": 1.125,
+        "FQ": 1.6153846153846154,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 1.8333333333333333,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.12857142857142856,
+        "FQ": 0.3,
+        "CC": 0.05714285714285714,
+        "AXm": 0.04285714285714286,
+        "AXM": 0.4714285714285714,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.034482758620689655,
+      "line1_ht_density": 0.0,
+      "link_density": 0.0,
+      "hazard_density": 0.12857142857142856,
+      "n_classified": 70,
+      "mean_depth": 2.2605099872106353
+    },
+    {
+      "folio": "f40v",
+      "regime": "REGIME_2",
+      "section": "H",
+      "overall_run_length": 1.4067796610169492,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.1111111111111112,
+        "CC": 1.2,
+        "AXm": 1.0,
+        "AXM": 1.7777777777777777,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.03614457831325301,
+        "FQ": 0.24096385542168675,
+        "CC": 0.07228915662650602,
+        "AXm": 0.03614457831325301,
+        "AXM": 0.5783132530120482,
+        "FL_SAFE": 0.03614457831325301
+      },
+      "body_ht_density": 0.02912621359223301,
+      "line1_ht_density": 0.3333333333333333,
+      "link_density": 0.0,
+      "hazard_density": 0.03614457831325301,
+      "n_classified": 83,
+      "mean_depth": 2.186740214240346
+    },
+    {
+      "folio": "f41r",
+      "regime": "REGIME_4",
+      "section": "H",
+      "overall_run_length": 2.2916666666666665,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.1428571428571428,
+        "CC": 1.0,
+        "AXm": null,
+        "AXM": 3.5,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.05454545454545454,
+        "FQ": 0.14545454545454545,
+        "CC": 0.01818181818181818,
+        "AXm": 0.0,
+        "AXM": 0.7636363636363637,
+        "FL_SAFE": 0.01818181818181818
+      },
+      "body_ht_density": 0.07865168539325842,
+      "line1_ht_density": 0.375,
+      "link_density": 0.0,
+      "hazard_density": 0.05454545454545454,
+      "n_classified": 55,
+      "mean_depth": 1.9245637955069106
+    },
+    {
+      "folio": "f41v",
+      "regime": "REGIME_4",
+      "section": "H",
+      "overall_run_length": 1.263157894736842,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.2727272727272727,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 1.4375,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.041666666666666664,
+        "FQ": 0.2916666666666667,
+        "CC": 0.10416666666666667,
+        "AXm": 0.08333333333333333,
+        "AXM": 0.4791666666666667,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.01694915254237288,
+      "line1_ht_density": 0.3333333333333333,
+      "link_density": 0.0,
+      "hazard_density": 0.041666666666666664,
+      "n_classified": 48,
+      "mean_depth": 2.110630070114831
+    },
+    {
+      "folio": "f43r",
+      "regime": "REGIME_4",
+      "section": "H",
+      "overall_run_length": 1.5625,
+      "state_run_lengths": {
+        "FL_HAZ": 1.1111111111111112,
+        "FQ": 1.0588235294117647,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.1333333333333333,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.1,
+        "FQ": 0.18,
+        "CC": 0.03,
+        "AXm": 0.04,
+        "AXM": 0.64,
+        "FL_SAFE": 0.01
+      },
+      "body_ht_density": 0.08633093525179857,
+      "line1_ht_density": 0.09090909090909091,
+      "link_density": 0.0,
+      "hazard_density": 0.1,
+      "n_classified": 100,
+      "mean_depth": 2.111225230397784
+    },
+    {
+      "folio": "f43v",
+      "regime": "REGIME_4",
+      "section": "H",
+      "overall_run_length": 1.4852941176470589,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.05,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.032258064516129,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.039603960396039604,
+        "FQ": 0.2079207920792079,
+        "CC": 0.019801980198019802,
+        "AXm": 0.0891089108910891,
+        "AXM": 0.6237623762376238,
+        "FL_SAFE": 0.019801980198019802
+      },
+      "body_ht_density": 0.04929577464788732,
+      "line1_ht_density": 0.2727272727272727,
+      "link_density": 0.0,
+      "hazard_density": 0.039603960396039604,
+      "n_classified": 101,
+      "mean_depth": 2.0342966731464536
+    },
+    {
+      "folio": "f46r",
+      "regime": "REGIME_3",
+      "section": "H",
+      "overall_run_length": 1.8333333333333333,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.1428571428571428,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.4827586206896552,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.030303030303030304,
+        "FQ": 0.16161616161616163,
+        "CC": 0.06060606060606061,
+        "AXm": 0.010101010101010102,
+        "AXM": 0.7272727272727273,
+        "FL_SAFE": 0.010101010101010102
+      },
+      "body_ht_density": 0.1111111111111111,
+      "line1_ht_density": 0.07692307692307693,
+      "link_density": 0.0,
+      "hazard_density": 0.030303030303030304,
+      "n_classified": 99,
+      "mean_depth": 2.1657089137683836
+    },
+    {
+      "folio": "f46v",
+      "regime": "REGIME_4",
+      "section": "H",
+      "overall_run_length": 1.5490196078431373,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.25,
+        "CC": 1.0,
+        "AXm": 1.5,
+        "AXM": 2.090909090909091,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.08860759493670886,
+        "FQ": 0.189873417721519,
+        "CC": 0.06329113924050633,
+        "AXm": 0.0379746835443038,
+        "AXM": 0.5822784810126582,
+        "FL_SAFE": 0.0379746835443038
+      },
+      "body_ht_density": 0.08080808080808081,
+      "line1_ht_density": 0.08333333333333333,
+      "link_density": 0.0,
+      "hazard_density": 0.08860759493670886,
+      "n_classified": 79,
+      "mean_depth": 2.0154250370714495
+    },
+    {
+      "folio": "f48r",
+      "regime": "REGIME_4",
+      "section": "H",
+      "overall_run_length": 1.4848484848484849,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.125,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 1.9375,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.08163265306122448,
+        "FQ": 0.1836734693877551,
+        "CC": 0.02040816326530612,
+        "AXm": 0.08163265306122448,
+        "AXM": 0.6326530612244898,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.0759493670886076,
+      "line1_ht_density": 0.1,
+      "link_density": 0.0,
+      "hazard_density": 0.08163265306122448,
+      "n_classified": 49,
+      "mean_depth": 2.2071715386264525
+    },
+    {
+      "folio": "f48v",
+      "regime": "REGIME_4",
+      "section": "H",
+      "overall_run_length": 1.5,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.2083333333333333,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.0,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.03225806451612903,
+        "FQ": 0.3118279569892473,
+        "CC": 0.010752688172043012,
+        "AXm": 0.053763440860215055,
+        "AXM": 0.5591397849462365,
+        "FL_SAFE": 0.03225806451612903
+      },
+      "body_ht_density": 0.035398230088495575,
+      "line1_ht_density": 0.15384615384615385,
+      "link_density": 0.0,
+      "hazard_density": 0.03225806451612903,
+      "n_classified": 93,
+      "mean_depth": 2.0419978193898767
+    },
+    {
+      "folio": "f50r",
+      "regime": "REGIME_2",
+      "section": "H",
+      "overall_run_length": 1.4615384615384615,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.1111111111111112,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 1.9444444444444444,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.10526315789473684,
+        "FQ": 0.17543859649122806,
+        "CC": 0.017543859649122806,
+        "AXm": 0.08771929824561403,
+        "AXM": 0.6140350877192983,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.04938271604938271,
+      "line1_ht_density": 0.25,
+      "link_density": 0.0,
+      "hazard_density": 0.10526315789473684,
+      "n_classified": 57,
+      "mean_depth": 2.200526720549108
+    },
+    {
+      "folio": "f50v",
+      "regime": "REGIME_2",
+      "section": "H",
+      "overall_run_length": 1.7692307692307692,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.3125,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.4705882352941178,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.028985507246376812,
+        "FQ": 0.30434782608695654,
+        "CC": 0.043478260869565216,
+        "AXm": 0.014492753623188406,
+        "AXM": 0.6086956521739131,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.045454545454545456,
+      "line1_ht_density": 0.0,
+      "link_density": 0.0,
+      "hazard_density": 0.028985507246376812,
+      "n_classified": 69,
+      "mean_depth": 2.169467066662576
+    },
+    {
+      "folio": "f55r",
+      "regime": "REGIME_2",
+      "section": "H",
+      "overall_run_length": 1.3709677419354838,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.3181818181818181,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 1.6153846153846154,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.08235294117647059,
+        "FQ": 0.3411764705882353,
+        "CC": 0.07058823529411765,
+        "AXm": 0.011764705882352941,
+        "AXM": 0.49411764705882355,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.05217391304347826,
+      "line1_ht_density": 0.1111111111111111,
+      "link_density": 0.0,
+      "hazard_density": 0.08235294117647059,
+      "n_classified": 85,
+      "mean_depth": 2.288635539692157
+    },
+    {
+      "folio": "f55v",
+      "regime": "REGIME_2",
+      "section": "H",
+      "overall_run_length": 1.368421052631579,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.5294117647058822,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 1.5,
+        "FL_SAFE": 2.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.05128205128205128,
+        "FQ": 0.3333333333333333,
+        "CC": 0.1282051282051282,
+        "AXm": 0.038461538461538464,
+        "AXM": 0.4230769230769231,
+        "FL_SAFE": 0.02564102564102564
+      },
+      "body_ht_density": 0.04081632653061224,
+      "line1_ht_density": 0.3333333333333333,
+      "link_density": 0.0,
+      "hazard_density": 0.05128205128205128,
+      "n_classified": 78,
+      "mean_depth": 2.2447127047489244
+    },
+    {
+      "folio": "f57r",
+      "regime": "REGIME_4",
+      "section": "H",
+      "overall_run_length": 1.6428571428571428,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.0,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.2,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.043478260869565216,
+        "FQ": 0.10869565217391304,
+        "CC": 0.021739130434782608,
+        "AXm": 0.08695652173913043,
+        "AXM": 0.717391304347826,
+        "FL_SAFE": 0.021739130434782608
+      },
+      "body_ht_density": 0.11688311688311688,
+      "line1_ht_density": 0.1,
+      "link_density": 0.0,
+      "hazard_density": 0.043478260869565216,
+      "n_classified": 46,
+      "mean_depth": 2.0649791805131694
+    },
+    {
+      "folio": "f66r",
+      "regime": "REGIME_4",
+      "section": "T",
+      "overall_run_length": 1.608,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.1724137931034482,
+        "CC": 1.1666666666666667,
+        "AXm": 1.0,
+        "AXM": 2.2545454545454544,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.07462686567164178,
+        "FQ": 0.1691542288557214,
+        "CC": 0.06965174129353234,
+        "AXm": 0.029850746268656716,
+        "AXM": 0.6169154228855721,
+        "FL_SAFE": 0.03980099502487562
+      },
+      "body_ht_density": 0.08544303797468354,
+      "line1_ht_density": 0.38461538461538464,
+      "link_density": 0.0,
+      "hazard_density": 0.07462686567164178,
+      "n_classified": 201,
+      "mean_depth": 2.1339904144472577
+    },
+    {
+      "folio": "f66v",
+      "regime": "REGIME_4",
+      "section": "H",
+      "overall_run_length": 1.7179487179487178,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.5,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.263157894736842,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.11940298507462686,
+        "FQ": 0.1791044776119403,
+        "CC": 0.04477611940298507,
+        "AXm": 0.014925373134328358,
+        "AXM": 0.6417910447761194,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.09523809523809523,
+      "line1_ht_density": 0.375,
+      "link_density": 0.0,
+      "hazard_density": 0.11940298507462686,
+      "n_classified": 67,
+      "mean_depth": 2.1875136488613363
+    },
+    {
+      "folio": "f75r",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 2.188679245283019,
+      "state_run_lengths": {
+        "FL_HAZ": 1.1,
+        "FQ": 1.275,
+        "CC": 1.0833333333333333,
+        "AXm": 1.0,
+        "AXM": 3.1341463414634148,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.06321839080459771,
+        "FQ": 0.14655172413793102,
+        "CC": 0.03735632183908046,
+        "AXm": 0.011494252873563218,
+        "AXM": 0.7385057471264368,
+        "FL_SAFE": 0.0028735632183908046
+      },
+      "body_ht_density": 0.024752475247524754,
+      "line1_ht_density": 0.0,
+      "link_density": 0.0,
+      "hazard_density": 0.06321839080459771,
+      "n_classified": 348,
+      "mean_depth": 2.099866824067193
+    },
+    {
+      "folio": "f75v",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 1.9361702127659575,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0714285714285714,
+        "FQ": 1.0606060606060606,
+        "CC": 1.0555555555555556,
+        "AXm": 1.0,
+        "AXM": 2.8028169014084505,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.054945054945054944,
+        "FQ": 0.1282051282051282,
+        "CC": 0.0695970695970696,
+        "AXm": 0.014652014652014652,
+        "AXM": 0.7289377289377289,
+        "FL_SAFE": 0.003663003663003663
+      },
+      "body_ht_density": 0.04559270516717325,
+      "line1_ht_density": 0.1,
+      "link_density": 0.0029498525073746312,
+      "hazard_density": 0.054945054945054944,
+      "n_classified": 273,
+      "mean_depth": 2.134071949532717
+    },
+    {
+      "folio": "f76r",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 2.234375,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0666666666666667,
+        "FQ": 1.2608695652173914,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 3.23,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.07459207459207459,
+        "FQ": 0.1351981351981352,
+        "CC": 0.016317016317016316,
+        "AXm": 0.018648018648018648,
+        "AXM": 0.752913752913753,
+        "FL_SAFE": 0.002331002331002331
+      },
+      "body_ht_density": 0.03917910447761194,
+      "line1_ht_density": 0.5,
+      "link_density": 0.0018315018315018315,
+      "hazard_density": 0.07459207459207459,
+      "n_classified": 429,
+      "mean_depth": 2.018254845782113
+    },
+    {
+      "folio": "f76v",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 2.230769230769231,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.4848484848484849,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 3.028169014084507,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.02413793103448276,
+        "FQ": 0.16896551724137931,
+        "CC": 0.03793103448275862,
+        "AXm": 0.02413793103448276,
+        "AXM": 0.7413793103448276,
+        "FL_SAFE": 0.0034482758620689655
+      },
+      "body_ht_density": 0.05641025641025641,
+      "line1_ht_density": 0.4,
+      "link_density": 0.005,
+      "hazard_density": 0.02413793103448276,
+      "n_classified": 290,
+      "mean_depth": 1.9808623385897652
+    },
+    {
+      "folio": "f77r",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 2.7472527472527473,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.0,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 3.9444444444444446,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.028,
+        "FQ": 0.048,
+        "CC": 0.048,
+        "AXm": 0.012,
+        "AXM": 0.852,
+        "FL_SAFE": 0.012
+      },
+      "body_ht_density": 0.03194888178913738,
+      "line1_ht_density": 0.16666666666666666,
+      "link_density": 0.006153846153846154,
+      "hazard_density": 0.028,
+      "n_classified": 250,
+      "mean_depth": 2.0019747428576777
+    },
+    {
+      "folio": "f77v",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 2.388888888888889,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.0,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 3.5,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.06201550387596899,
+        "FQ": 0.03488372093023256,
+        "CC": 0.06201550387596899,
+        "AXm": 0.011627906976744186,
+        "AXM": 0.813953488372093,
+        "FL_SAFE": 0.015503875968992248
+      },
+      "body_ht_density": 0.02830188679245283,
+      "line1_ht_density": 0.15384615384615385,
+      "link_density": 0.0,
+      "hazard_density": 0.06201550387596899,
+      "n_classified": 258,
+      "mean_depth": 2.0674124127870934
+    },
+    {
+      "folio": "f78r",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 1.5684931506849316,
+      "state_run_lengths": {
+        "FL_HAZ": 1.1,
+        "FQ": 1.1395348837209303,
+        "CC": 1.0625,
+        "AXm": 1.0,
+        "AXM": 2.0273972602739727,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.048034934497816595,
+        "FQ": 0.21397379912663755,
+        "CC": 0.07423580786026202,
+        "AXm": 0.013100436681222707,
+        "AXM": 0.6462882096069869,
+        "FL_SAFE": 0.004366812227074236
+      },
+      "body_ht_density": 0.045454545454545456,
+      "line1_ht_density": 0.125,
+      "link_density": 0.003401360544217687,
+      "hazard_density": 0.048034934497816595,
+      "n_classified": 229,
+      "mean_depth": 2.0915508371279885
+    },
+    {
+      "folio": "f78v",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 1.6174496644295302,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0909090909090908,
+        "FQ": 1.1842105263157894,
+        "CC": 1.0434782608695652,
+        "AXm": 1.0,
+        "AXM": 2.1527777777777777,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.04979253112033195,
+        "FQ": 0.18672199170124482,
+        "CC": 0.0995850622406639,
+        "AXm": 0.008298755186721992,
+        "AXM": 0.6431535269709544,
+        "FL_SAFE": 0.012448132780082987
+      },
+      "body_ht_density": 0.0176678445229682,
+      "line1_ht_density": 0.0,
+      "link_density": 0.0,
+      "hazard_density": 0.04979253112033195,
+      "n_classified": 241,
+      "mean_depth": 2.1360003179178944
+    },
+    {
+      "folio": "f79r",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 1.8987341772151898,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.1891891891891893,
+        "CC": 1.0869565217391304,
+        "AXm": 1.0,
+        "AXM": 2.6219512195121952,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.03,
+        "FQ": 0.14666666666666667,
+        "CC": 0.08333333333333333,
+        "AXm": 0.023333333333333334,
+        "AXM": 0.7166666666666667,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.021108179419525065,
+      "line1_ht_density": 0.1,
+      "link_density": 0.0,
+      "hazard_density": 0.03,
+      "n_classified": 300,
+      "mean_depth": 2.210358990548193
+    },
+    {
+      "folio": "f79v",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 1.8680555555555556,
+      "state_run_lengths": {
+        "FL_HAZ": 1.1111111111111112,
+        "FQ": 1.1818181818181819,
+        "CC": 1.0666666666666667,
+        "AXm": 1.0,
+        "AXM": 2.6666666666666665,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.03717472118959108,
+        "FQ": 0.19330855018587362,
+        "CC": 0.05947955390334572,
+        "AXm": 0.026022304832713755,
+        "AXM": 0.6840148698884758,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.0345821325648415,
+      "line1_ht_density": 0.14285714285714285,
+      "link_density": 0.002824858757062147,
+      "hazard_density": 0.03717472118959108,
+      "n_classified": 269,
+      "mean_depth": 2.165661020630592
+    },
+    {
+      "folio": "f80r",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 2.4100719424460433,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.054054054054054,
+        "CC": 1.0555555555555556,
+        "AXm": 1.0,
+        "AXM": 3.643835616438356,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.01791044776119403,
+        "FQ": 0.11641791044776119,
+        "CC": 0.056716417910447764,
+        "AXm": 0.008955223880597015,
+        "AXM": 0.7940298507462686,
+        "FL_SAFE": 0.005970149253731343
+      },
+      "body_ht_density": 0.027906976744186046,
+      "line1_ht_density": 0.09090909090909091,
+      "link_density": 0.0022675736961451248,
+      "hazard_density": 0.01791044776119403,
+      "n_classified": 335,
+      "mean_depth": 2.0794497151563642
+    },
+    {
+      "folio": "f80v",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 2.0205479452054793,
+      "state_run_lengths": {
+        "FL_HAZ": 1.1111111111111112,
+        "FQ": 1.1290322580645162,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.8227848101265822,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.03389830508474576,
+        "FQ": 0.11864406779661017,
+        "CC": 0.06440677966101695,
+        "AXm": 0.010169491525423728,
+        "AXM": 0.7559322033898305,
+        "FL_SAFE": 0.01694915254237288
+      },
+      "body_ht_density": 0.03234501347708895,
+      "line1_ht_density": 0.14285714285714285,
+      "link_density": 0.0,
+      "hazard_density": 0.03389830508474576,
+      "n_classified": 295,
+      "mean_depth": 2.1448989722911054
+    },
+    {
+      "folio": "f81r",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 1.8064516129032258,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.1304347826086956,
+        "CC": 1.3571428571428572,
+        "AXm": 1.0,
+        "AXM": 2.36734693877551,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.023809523809523808,
+        "FQ": 0.15476190476190477,
+        "CC": 0.1130952380952381,
+        "AXm": 0.005952380952380952,
+        "AXM": 0.6904761904761905,
+        "FL_SAFE": 0.011904761904761904
+      },
+      "body_ht_density": 0.035,
+      "line1_ht_density": 0.14285714285714285,
+      "link_density": 0.0,
+      "hazard_density": 0.023809523809523808,
+      "n_classified": 168,
+      "mean_depth": 2.121760537362059
+    },
+    {
+      "folio": "f81v",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 1.6779661016949152,
+      "state_run_lengths": {
+        "FL_HAZ": 1.125,
+        "FQ": 1.125,
+        "CC": 1.0869565217391304,
+        "AXm": 1.0,
+        "AXM": 2.2131147540983607,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.045454545454545456,
+        "FQ": 0.13636363636363635,
+        "CC": 0.12626262626262627,
+        "AXm": 0.010101010101010102,
+        "AXM": 0.6818181818181818,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.045081967213114756,
+      "line1_ht_density": 0.0,
+      "link_density": 0.0,
+      "hazard_density": 0.045454545454545456,
+      "n_classified": 198,
+      "mean_depth": 2.130547449510906
+    },
+    {
+      "folio": "f82r",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 2.6794871794871793,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.0769230769230769,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 3.6530612244897958,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.019138755980861243,
+        "FQ": 0.06698564593301436,
+        "CC": 0.04784688995215311,
+        "AXm": 0.004784688995215311,
+        "AXM": 0.8564593301435407,
+        "FL_SAFE": 0.004784688995215311
+      },
+      "body_ht_density": 0.03745318352059925,
+      "line1_ht_density": 0.125,
+      "link_density": 0.0,
+      "hazard_density": 0.019138755980861243,
+      "n_classified": 209,
+      "mean_depth": 2.039550713045222
+    },
+    {
+      "folio": "f82v",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 2.6470588235294117,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.2222222222222223,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 3.72,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.04,
+        "FQ": 0.09777777777777778,
+        "CC": 0.022222222222222223,
+        "AXm": 0.008888888888888889,
+        "AXM": 0.8266666666666667,
+        "FL_SAFE": 0.0044444444444444444
+      },
+      "body_ht_density": 0.06228373702422145,
+      "line1_ht_density": 0.1111111111111111,
+      "link_density": 0.003355704697986577,
+      "hazard_density": 0.04,
+      "n_classified": 225,
+      "mean_depth": 2.092817027924493
+    },
+    {
+      "folio": "f83r",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 2.3461538461538463,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.1333333333333333,
+        "CC": 1.1428571428571428,
+        "AXm": 1.0,
+        "AXM": 3.0757575757575757,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.040983606557377046,
+        "FQ": 0.06967213114754098,
+        "CC": 0.03278688524590164,
+        "AXm": 0.02459016393442623,
+        "AXM": 0.8319672131147541,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.06927710843373494,
+      "line1_ht_density": 0.25,
+      "link_density": 0.0029411764705882353,
+      "hazard_density": 0.040983606557377046,
+      "n_classified": 244,
+      "mean_depth": 1.9374220912821705
+    },
+    {
+      "folio": "f83v",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 2.4814814814814814,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.0,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 3.5531914893617023,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.04477611940298507,
+        "FQ": 0.07462686567164178,
+        "CC": 0.03482587064676617,
+        "AXm": 0.014925373134328358,
+        "AXM": 0.8308457711442786,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.05511811023622047,
+      "line1_ht_density": 0.0,
+      "link_density": 0.0076045627376425855,
+      "hazard_density": 0.04477611940298507,
+      "n_classified": 201,
+      "mean_depth": 2.075960423330717
+    },
+    {
+      "folio": "f84r",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 1.7361963190184049,
+      "state_run_lengths": {
+        "FL_HAZ": 1.05,
+        "FQ": 1.1142857142857143,
+        "CC": 1.0555555555555556,
+        "AXm": 1.0,
+        "AXM": 2.4805194805194803,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.07420494699646643,
+        "FQ": 0.13780918727915195,
+        "CC": 0.06713780918727916,
+        "AXm": 0.038869257950530034,
+        "AXM": 0.6749116607773852,
+        "FL_SAFE": 0.007067137809187279
+      },
+      "body_ht_density": 0.03151862464183381,
+      "line1_ht_density": 0.3333333333333333,
+      "link_density": 0.0,
+      "hazard_density": 0.07420494699646643,
+      "n_classified": 283,
+      "mean_depth": 2.0642937453034134
+    },
+    {
+      "folio": "f84v",
+      "regime": "REGIME_1",
+      "section": "B",
+      "overall_run_length": 1.5722543352601157,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.2291666666666667,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.0352941176470587,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.04044117647058824,
+        "FQ": 0.21691176470588236,
+        "CC": 0.09191176470588236,
+        "AXm": 0.011029411764705883,
+        "AXM": 0.6360294117647058,
+        "FL_SAFE": 0.003676470588235294
+      },
+      "body_ht_density": 0.02976190476190476,
+      "line1_ht_density": 0.09090909090909091,
+      "link_density": 0.0,
+      "hazard_density": 0.04044117647058824,
+      "n_classified": 272,
+      "mean_depth": 2.089360995029513
+    },
+    {
+      "folio": "f85r1",
+      "regime": "REGIME_3",
+      "section": "T",
+      "overall_run_length": 1.3835616438356164,
+      "state_run_lengths": {
+        "FL_HAZ": 1.125,
+        "FQ": 1.21875,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 1.734375,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.0891089108910891,
+        "FQ": 0.19306930693069307,
+        "CC": 0.0594059405940594,
+        "AXm": 0.10396039603960396,
+        "AXM": 0.5495049504950495,
+        "FL_SAFE": 0.0049504950495049506
+      },
+      "body_ht_density": 0.09006211180124224,
+      "line1_ht_density": 0.09090909090909091,
+      "link_density": 0.0,
+      "hazard_density": 0.0891089108910891,
+      "n_classified": 202,
+      "mean_depth": 2.1191771928229786
+    },
+    {
+      "folio": "f85r2",
+      "regime": "REGIME_3",
+      "section": "C",
+      "overall_run_length": 1.532258064516129,
+      "state_run_lengths": {
+        "FL_HAZ": 1.125,
+        "FQ": 1.4,
+        "CC": 1.1428571428571428,
+        "AXm": 1.0,
+        "AXM": 2.0869565217391304,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.09473684210526316,
+        "FQ": 0.22105263157894736,
+        "CC": 0.08421052631578947,
+        "AXm": 0.07368421052631578,
+        "AXM": 0.5052631578947369,
+        "FL_SAFE": 0.021052631578947368
+      },
+      "body_ht_density": 0.0594059405940594,
+      "line1_ht_density": 0.09259259259259259,
+      "link_density": 0.0,
+      "hazard_density": 0.09473684210526316,
+      "n_classified": 95,
+      "mean_depth": 2.1207763242930904
+    },
+    {
+      "folio": "f86v4",
+      "regime": "REGIME_4",
+      "section": "C",
+      "overall_run_length": 1.619718309859155,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.4761904761904763,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.4166666666666665,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.12173913043478261,
+        "FQ": 0.26956521739130435,
+        "CC": 0.08695652173913043,
+        "AXm": 0.008695652173913044,
+        "AXM": 0.5043478260869565,
+        "FL_SAFE": 0.008695652173913044
+      },
+      "body_ht_density": 0.07142857142857142,
+      "line1_ht_density": 0.16666666666666666,
+      "link_density": 0.0,
+      "hazard_density": 0.12173913043478261,
+      "n_classified": 115,
+      "mean_depth": 2.068237408869462
+    },
+    {
+      "folio": "f86v6",
+      "regime": "REGIME_2",
+      "section": "C",
+      "overall_run_length": 1.7065217391304348,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0344827586206897,
+        "FQ": 1.148936170212766,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.4698795180722892,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.09554140127388536,
+        "FQ": 0.17197452229299362,
+        "CC": 0.041401273885350316,
+        "AXm": 0.03503184713375796,
+        "AXM": 0.6528662420382165,
+        "FL_SAFE": 0.0031847133757961785
+      },
+      "body_ht_density": 0.07066381156316917,
+      "line1_ht_density": 0.16666666666666666,
+      "link_density": 0.0,
+      "hazard_density": 0.09554140127388536,
+      "n_classified": 314,
+      "mean_depth": 2.2183592633710423
+    },
+    {
+      "folio": "f86v5",
+      "regime": "REGIME_2",
+      "section": "C",
+      "overall_run_length": 1.7169811320754718,
+      "state_run_lengths": {
+        "FL_HAZ": 1.1764705882352942,
+        "FQ": 1.5333333333333334,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.191780821917808,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.07326007326007326,
+        "FQ": 0.25274725274725274,
+        "CC": 0.04395604395604396,
+        "AXm": 0.040293040293040296,
+        "AXM": 0.5860805860805861,
+        "FL_SAFE": 0.003663003663003663
+      },
+      "body_ht_density": 0.037940379403794036,
+      "line1_ht_density": 0.08333333333333333,
+      "link_density": 0.0,
+      "hazard_density": 0.07326007326007326,
+      "n_classified": 273,
+      "mean_depth": 2.2577630566724443
+    },
+    {
+      "folio": "f86v3",
+      "regime": "REGIME_3",
+      "section": "C",
+      "overall_run_length": 1.7777777777777777,
+      "state_run_lengths": {
+        "FL_HAZ": 1.125,
+        "FQ": 1.1612903225806452,
+        "CC": 1.0,
+        "AXm": 1.0833333333333333,
+        "AXM": 2.6041666666666665,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.046875,
+        "FQ": 0.1875,
+        "CC": 0.026041666666666668,
+        "AXm": 0.06770833333333333,
+        "AXM": 0.6510416666666666,
+        "FL_SAFE": 0.020833333333333332
+      },
+      "body_ht_density": 0.056910569105691054,
+      "line1_ht_density": 0.12903225806451613,
+      "link_density": 0.0,
+      "hazard_density": 0.046875,
+      "n_classified": 192,
+      "mean_depth": 2.1407031254967395
+    },
+    {
+      "folio": "f94r",
+      "regime": "REGIME_2",
+      "section": "H",
+      "overall_run_length": 1.7575757575757576,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.25,
+        "CC": 1.0,
+        "AXm": null,
+        "AXM": 2.375,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.05172413793103448,
+        "FQ": 0.25862068965517243,
+        "CC": 0.034482758620689655,
+        "AXm": 0.0,
+        "AXM": 0.6551724137931034,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.0273972602739726,
+      "line1_ht_density": 0.2222222222222222,
+      "link_density": 0.0,
+      "hazard_density": 0.05172413793103448,
+      "n_classified": 58,
+      "mean_depth": 2.154502220222625
+    },
+    {
+      "folio": "f94v",
+      "regime": "REGIME_3",
+      "section": "H",
+      "overall_run_length": 1.5217391304347827,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.4666666666666666,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.1333333333333333,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.05714285714285714,
+        "FQ": 0.3142857142857143,
+        "CC": 0.08571428571428572,
+        "AXm": 0.07142857142857142,
+        "AXM": 0.45714285714285713,
+        "FL_SAFE": 0.014285714285714285
+      },
+      "body_ht_density": 0.010752688172043012,
+      "line1_ht_density": 0.125,
+      "link_density": 0.0,
+      "hazard_density": 0.05714285714285714,
+      "n_classified": 70,
+      "mean_depth": 2.2241713933094105
+    },
+    {
+      "folio": "f95r1",
+      "regime": "REGIME_1",
+      "section": "H",
+      "overall_run_length": 2.1470588235294117,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.0,
+        "CC": 1.0,
+        "AXm": null,
+        "AXM": 3.1666666666666665,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.0136986301369863,
+        "FQ": 0.1232876712328767,
+        "CC": 0.0684931506849315,
+        "AXm": 0.0,
+        "AXM": 0.7808219178082192,
+        "FL_SAFE": 0.0136986301369863
+      },
+      "body_ht_density": 0.0,
+      "line1_ht_density": 0.1111111111111111,
+      "link_density": 0.0,
+      "hazard_density": 0.0136986301369863,
+      "n_classified": 73,
+      "mean_depth": 2.19281053438848
+    },
+    {
+      "folio": "f95r2",
+      "regime": "REGIME_2",
+      "section": "H",
+      "overall_run_length": 1.7142857142857142,
+      "state_run_lengths": {
+        "FL_HAZ": null,
+        "FQ": 1.4166666666666667,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.25,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.0,
+        "FQ": 0.2833333333333333,
+        "CC": 0.06666666666666667,
+        "AXm": 0.03333333333333333,
+        "AXM": 0.6,
+        "FL_SAFE": 0.016666666666666666
+      },
+      "body_ht_density": 0.014084507042253521,
+      "line1_ht_density": 0.125,
+      "link_density": 0.0,
+      "hazard_density": 0.0,
+      "n_classified": 60,
+      "mean_depth": 2.2457718699641265
+    },
+    {
+      "folio": "f95v2",
+      "regime": "REGIME_2",
+      "section": "H",
+      "overall_run_length": 1.7307692307692308,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 2.0,
+        "CC": 1.0,
+        "AXm": null,
+        "AXM": 1.8461538461538463,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.08888888888888889,
+        "FQ": 0.35555555555555557,
+        "CC": 0.022222222222222223,
+        "AXm": 0.0,
+        "AXM": 0.5333333333333333,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.01818181818181818,
+      "line1_ht_density": 0.1111111111111111,
+      "link_density": 0.0,
+      "hazard_density": 0.08888888888888889,
+      "n_classified": 45,
+      "mean_depth": 2.2395096783827695
+    },
+    {
+      "folio": "f95v1",
+      "regime": "REGIME_2",
+      "section": "H",
+      "overall_run_length": 1.5348837209302326,
+      "state_run_lengths": {
+        "FL_HAZ": 1.25,
+        "FQ": 1.3076923076923077,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 1.9,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.07575757575757576,
+        "FQ": 0.25757575757575757,
+        "CC": 0.045454545454545456,
+        "AXm": 0.045454545454545456,
+        "AXM": 0.5757575757575758,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.046296296296296294,
+      "line1_ht_density": 0.6666666666666666,
+      "link_density": 0.0,
+      "hazard_density": 0.07575757575757576,
+      "n_classified": 66,
+      "mean_depth": 2.141013695577868
+    },
+    {
+      "folio": "f103r",
+      "regime": "REGIME_1",
+      "section": "S",
+      "overall_run_length": 2.027027027027027,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.1935483870967742,
+        "CC": 1.125,
+        "AXm": 1.0,
+        "AXM": 2.882978723404255,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.029333333333333333,
+        "FQ": 0.19733333333333333,
+        "CC": 0.024,
+        "AXm": 0.024,
+        "AXM": 0.7226666666666667,
+        "FL_SAFE": 0.0026666666666666666
+      },
+      "body_ht_density": 0.047151277013752456,
+      "line1_ht_density": 0.07692307692307693,
+      "link_density": 0.0,
+      "hazard_density": 0.029333333333333333,
+      "n_classified": 375,
+      "mean_depth": 2.07506358084838
+    },
+    {
+      "folio": "f103v",
+      "regime": "REGIME_1",
+      "section": "S",
+      "overall_run_length": 1.9261363636363635,
+      "state_run_lengths": {
+        "FL_HAZ": 1.1818181818181819,
+        "FQ": 1.3137254901960784,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.6292134831460676,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.038348082595870206,
+        "FQ": 0.1976401179941003,
+        "CC": 0.05604719764011799,
+        "AXm": 0.011799410029498525,
+        "AXM": 0.6902654867256637,
+        "FL_SAFE": 0.0058997050147492625
+      },
+      "body_ht_density": 0.038901601830663615,
+      "line1_ht_density": 0.08333333333333333,
+      "link_density": 0.0,
+      "hazard_density": 0.038348082595870206,
+      "n_classified": 339,
+      "mean_depth": 2.1254384600313947
+    },
+    {
+      "folio": "f104r",
+      "regime": "REGIME_3",
+      "section": "S",
+      "overall_run_length": 1.7891156462585034,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.3823529411764706,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.4305555555555554,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.06463878326996197,
+        "FQ": 0.17870722433460076,
+        "CC": 0.03802281368821293,
+        "AXm": 0.049429657794676805,
+        "AXM": 0.6653992395437263,
+        "FL_SAFE": 0.0038022813688212928
+      },
+      "body_ht_density": 0.09836065573770492,
+      "line1_ht_density": 0.0,
+      "link_density": 0.0045662100456621,
+      "hazard_density": 0.06463878326996197,
+      "n_classified": 263,
+      "mean_depth": 2.1262081060282387
+    },
+    {
+      "folio": "f104v",
+      "regime": "REGIME_3",
+      "section": "S",
+      "overall_run_length": 2.121212121212121,
+      "state_run_lengths": {
+        "FL_HAZ": 1.2857142857142858,
+        "FQ": 1.2424242424242424,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 3.0,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.03214285714285714,
+        "FQ": 0.14642857142857144,
+        "CC": 0.03571428571428571,
+        "AXm": 0.03571428571428571,
+        "AXM": 0.7392857142857143,
+        "FL_SAFE": 0.010714285714285714
+      },
+      "body_ht_density": 0.09192825112107623,
+      "line1_ht_density": 0.0,
+      "link_density": 0.0,
+      "hazard_density": 0.03214285714285714,
+      "n_classified": 280,
+      "mean_depth": 2.111324946451141
+    },
+    {
+      "folio": "f105r",
+      "regime": "REGIME_4",
+      "section": "S",
+      "overall_run_length": 1.7768595041322315,
+      "state_run_lengths": {
+        "FL_HAZ": 1.2222222222222223,
+        "FQ": 1.1379310344827587,
+        "CC": 1.0,
+        "AXm": 1.1111111111111112,
+        "AXM": 2.574074074074074,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.10232558139534884,
+        "FQ": 0.15348837209302327,
+        "CC": 0.037209302325581395,
+        "AXm": 0.046511627906976744,
+        "AXM": 0.6465116279069767,
+        "FL_SAFE": 0.013953488372093023
+      },
+      "body_ht_density": 0.11977715877437325,
+      "line1_ht_density": 0.0,
+      "link_density": 0.0,
+      "hazard_density": 0.10232558139534884,
+      "n_classified": 215,
+      "mean_depth": 2.1039179361001334
+    },
+    {
+      "folio": "f105v",
+      "regime": "REGIME_3",
+      "section": "S",
+      "overall_run_length": 1.5347222222222223,
+      "state_run_lengths": {
+        "FL_HAZ": 1.3125,
+        "FQ": 1.475,
+        "CC": 1.0,
+        "AXm": 1.0909090909090908,
+        "AXM": 1.8666666666666667,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.09502262443438914,
+        "FQ": 0.2669683257918552,
+        "CC": 0.07692307692307693,
+        "AXm": 0.05429864253393665,
+        "AXM": 0.5067873303167421,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.13123359580052493,
+      "line1_ht_density": 0.1111111111111111,
+      "link_density": 0.002564102564102564,
+      "hazard_density": 0.09502262443438914,
+      "n_classified": 221,
+      "mean_depth": 2.1514413004786115
+    },
+    {
+      "folio": "f106r",
+      "regime": "REGIME_3",
+      "section": "S",
+      "overall_run_length": 1.9130434782608696,
+      "state_run_lengths": {
+        "FL_HAZ": 1.1538461538461537,
+        "FQ": 1.1951219512195121,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.681159420289855,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.056818181818181816,
+        "FQ": 0.1856060606060606,
+        "CC": 0.022727272727272728,
+        "AXm": 0.022727272727272728,
+        "AXM": 0.7007575757575758,
+        "FL_SAFE": 0.011363636363636364
+      },
+      "body_ht_density": 0.08536585365853659,
+      "line1_ht_density": 0.2727272727272727,
+      "link_density": 0.004750593824228029,
+      "hazard_density": 0.056818181818181816,
+      "n_classified": 264,
+      "mean_depth": 2.089292085659777
+    },
+    {
+      "folio": "f106v",
+      "regime": "REGIME_3",
+      "section": "S",
+      "overall_run_length": 1.7901234567901234,
+      "state_run_lengths": {
+        "FL_HAZ": 1.2,
+        "FQ": 1.2391304347826086,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.3734939759036147,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.06206896551724138,
+        "FQ": 0.19655172413793104,
+        "CC": 0.020689655172413793,
+        "AXm": 0.034482758620689655,
+        "AXM": 0.6793103448275862,
+        "FL_SAFE": 0.006896551724137931
+      },
+      "body_ht_density": 0.05491990846681922,
+      "line1_ht_density": 0.16666666666666666,
+      "link_density": 0.0,
+      "hazard_density": 0.06206896551724138,
+      "n_classified": 290,
+      "mean_depth": 2.1305727091493223
+    },
+    {
+      "folio": "f107r",
+      "regime": "REGIME_3",
+      "section": "S",
+      "overall_run_length": 1.8439306358381502,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0588235294117647,
+        "FQ": 1.488888888888889,
+        "CC": 1.0,
+        "AXm": 1.1818181818181819,
+        "AXM": 2.3908045977011496,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.05642633228840126,
+        "FQ": 0.21003134796238246,
+        "CC": 0.03134796238244514,
+        "AXm": 0.04075235109717868,
+        "AXM": 0.6520376175548589,
+        "FL_SAFE": 0.009404388714733543
+      },
+      "body_ht_density": 0.0502092050209205,
+      "line1_ht_density": 0.1,
+      "link_density": 0.004098360655737705,
+      "hazard_density": 0.05642633228840126,
+      "n_classified": 319,
+      "mean_depth": 2.1861983978929063
+    },
+    {
+      "folio": "f107v",
+      "regime": "REGIME_1",
+      "section": "S",
+      "overall_run_length": 1.9204545454545454,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0588235294117647,
+        "FQ": 1.2295081967213115,
+        "CC": 1.2857142857142858,
+        "AXm": 1.0,
+        "AXM": 2.746987951807229,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.05325443786982249,
+        "FQ": 0.22189349112426035,
+        "CC": 0.026627218934911243,
+        "AXm": 0.01775147928994083,
+        "AXM": 0.6745562130177515,
+        "FL_SAFE": 0.005917159763313609
+      },
+      "body_ht_density": 0.0472972972972973,
+      "line1_ht_density": 0.09090909090909091,
+      "link_density": 0.0,
+      "hazard_density": 0.05325443786982249,
+      "n_classified": 338,
+      "mean_depth": 2.194155922673162
+    },
+    {
+      "folio": "f108r",
+      "regime": "REGIME_1",
+      "section": "S",
+      "overall_run_length": 1.7058823529411764,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0434782608695652,
+        "FQ": 1.4029850746268657,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.195876288659794,
+        "FL_SAFE": null
+      },
+      "occupancy": {
+        "FL_HAZ": 0.06896551724137931,
+        "FQ": 0.27011494252873564,
+        "CC": 0.022988505747126436,
+        "AXm": 0.02586206896551724,
+        "AXM": 0.6120689655172413,
+        "FL_SAFE": 0.0
+      },
+      "body_ht_density": 0.04573804573804574,
+      "line1_ht_density": 0.4,
+      "link_density": 0.004073319755600814,
+      "hazard_density": 0.06896551724137931,
+      "n_classified": 348,
+      "mean_depth": 2.0067713521554444
+    },
+    {
+      "folio": "f108v",
+      "regime": "REGIME_1",
+      "section": "S",
+      "overall_run_length": 1.914691943127962,
+      "state_run_lengths": {
+        "FL_HAZ": 1.1666666666666667,
+        "FQ": 1.1904761904761905,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.762376237623762,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.05198019801980198,
+        "FQ": 0.18564356435643564,
+        "CC": 0.04950495049504951,
+        "AXm": 0.017326732673267328,
+        "AXM": 0.6905940594059405,
+        "FL_SAFE": 0.0049504950495049506
+      },
+      "body_ht_density": 0.05555555555555555,
+      "line1_ht_density": 0.0,
+      "link_density": 0.0035087719298245615,
+      "hazard_density": 0.05198019801980198,
+      "n_classified": 404,
+      "mean_depth": 2.0558882176365603
+    },
+    {
+      "folio": "f111r",
+      "regime": "REGIME_1",
+      "section": "S",
+      "overall_run_length": 1.8144796380090498,
+      "state_run_lengths": {
+        "FL_HAZ": 1.2,
+        "FQ": 1.1355932203389831,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.6116504854368934,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.08977556109725686,
+        "FQ": 0.16708229426433915,
+        "CC": 0.03740648379052369,
+        "AXm": 0.029925187032418952,
+        "AXM": 0.6708229426433915,
+        "FL_SAFE": 0.004987531172069825
+      },
+      "body_ht_density": 0.06135986733001658,
+      "line1_ht_density": 0.2727272727272727,
+      "link_density": 0.003257328990228013,
+      "hazard_density": 0.08977556109725686,
+      "n_classified": 401,
+      "mean_depth": 2.0692584840129267
+    },
+    {
+      "folio": "f111v",
+      "regime": "REGIME_1",
+      "section": "S",
+      "overall_run_length": 2.088082901554404,
+      "state_run_lengths": {
+        "FL_HAZ": 1.125,
+        "FQ": 1.3148148148148149,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.891089108910891,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.04466501240694789,
+        "FQ": 0.1761786600496278,
+        "CC": 0.019851116625310174,
+        "AXm": 0.03225806451612903,
+        "AXM": 0.7245657568238213,
+        "FL_SAFE": 0.0024813895781637717
+      },
+      "body_ht_density": 0.04900181488203267,
+      "line1_ht_density": 0.1,
+      "link_density": 0.0,
+      "hazard_density": 0.04466501240694789,
+      "n_classified": 403,
+      "mean_depth": 2.0737414907814746
+    },
+    {
+      "folio": "f112r",
+      "regime": "REGIME_1",
+      "section": "S",
+      "overall_run_length": 1.5257142857142858,
+      "state_run_lengths": {
+        "FL_HAZ": 1.3846153846153846,
+        "FQ": 1.5098039215686274,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 1.7176470588235293,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.06741573033707865,
+        "FQ": 0.2883895131086142,
+        "CC": 0.02247191011235955,
+        "AXm": 0.06367041198501873,
+        "AXM": 0.5468164794007491,
+        "FL_SAFE": 0.011235955056179775
+      },
+      "body_ht_density": 0.046753246753246755,
+      "line1_ht_density": 0.1111111111111111,
+      "link_density": 0.0,
+      "hazard_density": 0.06741573033707865,
+      "n_classified": 267,
+      "mean_depth": 2.118377002850783
+    },
+    {
+      "folio": "f112v",
+      "regime": "REGIME_1",
+      "section": "S",
+      "overall_run_length": 1.5875706214689265,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0,
+        "FQ": 1.2448979591836735,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.057471264367816,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.05693950177935943,
+        "FQ": 0.21708185053380782,
+        "CC": 0.042704626334519574,
+        "AXm": 0.042704626334519574,
+        "AXM": 0.6370106761565836,
+        "FL_SAFE": 0.0035587188612099642
+      },
+      "body_ht_density": 0.06419753086419754,
+      "line1_ht_density": 0.1,
+      "link_density": 0.0024096385542168677,
+      "hazard_density": 0.05693950177935943,
+      "n_classified": 281,
+      "mean_depth": 2.0929086187383046
+    },
+    {
+      "folio": "f113r",
+      "regime": "REGIME_3",
+      "section": "S",
+      "overall_run_length": 1.6927374301675977,
+      "state_run_lengths": {
+        "FL_HAZ": 1.1538461538461537,
+        "FQ": 1.2666666666666666,
+        "CC": 1.0,
+        "AXm": 1.0476190476190477,
+        "AXM": 2.2247191011235956,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.04950495049504951,
+        "FQ": 0.18811881188118812,
+        "CC": 0.0297029702970297,
+        "AXm": 0.07260726072607261,
+        "AXM": 0.6534653465346535,
+        "FL_SAFE": 0.006600660066006601
+      },
+      "body_ht_density": 0.07297830374753451,
+      "line1_ht_density": 0.18181818181818182,
+      "link_density": 0.0,
+      "hazard_density": 0.04950495049504951,
+      "n_classified": 303,
+      "mean_depth": 2.1321924169147994
+    },
+    {
+      "folio": "f113v",
+      "regime": "REGIME_3",
+      "section": "S",
+      "overall_run_length": 1.5757575757575757,
+      "state_run_lengths": {
+        "FL_HAZ": 1.2592592592592593,
+        "FQ": 1.328125,
+        "CC": 1.0,
+        "AXm": 1.0666666666666667,
+        "AXM": 2.0365853658536586,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.10897435897435898,
+        "FQ": 0.2724358974358974,
+        "CC": 0.022435897435897436,
+        "AXm": 0.05128205128205128,
+        "AXM": 0.5352564102564102,
+        "FL_SAFE": 0.009615384615384616
+      },
+      "body_ht_density": 0.057692307692307696,
+      "line1_ht_density": 0.36363636363636365,
+      "link_density": 0.0020876826722338203,
+      "hazard_density": 0.10897435897435898,
+      "n_classified": 312,
+      "mean_depth": 2.169643910531293
+    },
+    {
+      "folio": "f114r",
+      "regime": "REGIME_3",
+      "section": "S",
+      "overall_run_length": 1.6181818181818182,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0476190476190477,
+        "FQ": 1.2647058823529411,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.108433734939759,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.08239700374531835,
+        "FQ": 0.16104868913857678,
+        "CC": 0.056179775280898875,
+        "AXm": 0.03745318352059925,
+        "AXM": 0.6554307116104869,
+        "FL_SAFE": 0.00749063670411985
+      },
+      "body_ht_density": 0.13470319634703196,
+      "line1_ht_density": 0.0,
+      "link_density": 0.0,
+      "hazard_density": 0.08239700374531835,
+      "n_classified": 267,
+      "mean_depth": 2.0735487335434337
+    },
+    {
+      "folio": "f114v",
+      "regime": "REGIME_3",
+      "section": "S",
+      "overall_run_length": 1.8448275862068966,
+      "state_run_lengths": {
+        "FL_HAZ": 1.1111111111111112,
+        "FQ": 1.3125,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.581818181818182,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.04672897196261682,
+        "FQ": 0.19626168224299065,
+        "CC": 0.04672897196261682,
+        "AXm": 0.028037383177570093,
+        "AXM": 0.6635514018691588,
+        "FL_SAFE": 0.018691588785046728
+      },
+      "body_ht_density": 0.09375,
+      "line1_ht_density": 0.1,
+      "link_density": 0.0,
+      "hazard_density": 0.04672897196261682,
+      "n_classified": 214,
+      "mean_depth": 2.08865484890918
+    },
+    {
+      "folio": "f115r",
+      "regime": "REGIME_3",
+      "section": "S",
+      "overall_run_length": 2.2644628099173554,
+      "state_run_lengths": {
+        "FL_HAZ": 1.1428571428571428,
+        "FQ": 1.1666666666666667,
+        "CC": 1.2,
+        "AXm": 1.0,
+        "AXM": 3.1470588235294117,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.08759124087591241,
+        "FQ": 0.07664233576642336,
+        "CC": 0.021897810218978103,
+        "AXm": 0.025547445255474453,
+        "AXM": 0.781021897810219,
+        "FL_SAFE": 0.0072992700729927005
+      },
+      "body_ht_density": 0.059770114942528735,
+      "line1_ht_density": 0.3333333333333333,
+      "link_density": 0.0045045045045045045,
+      "hazard_density": 0.08759124087591241,
+      "n_classified": 274,
+      "mean_depth": 2.1133421114237056
+    },
+    {
+      "folio": "f115v",
+      "regime": "REGIME_3",
+      "section": "S",
+      "overall_run_length": 2.1717171717171717,
+      "state_run_lengths": {
+        "FL_HAZ": 1.1111111111111112,
+        "FQ": 1.0,
+        "CC": 1.0,
+        "AXm": 1.0909090909090908,
+        "AXM": 2.9,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.046511627906976744,
+        "FQ": 0.07441860465116279,
+        "CC": 0.009302325581395349,
+        "AXm": 0.05581395348837209,
+        "AXM": 0.8093023255813954,
+        "FL_SAFE": 0.004651162790697674
+      },
+      "body_ht_density": 0.08762886597938144,
+      "line1_ht_density": 0.2727272727272727,
+      "link_density": 0.007518796992481203,
+      "hazard_density": 0.046511627906976744,
+      "n_classified": 215,
+      "mean_depth": 2.0739998173011163
+    },
+    {
+      "folio": "f116r",
+      "regime": "REGIME_1",
+      "section": "S",
+      "overall_run_length": 1.9663461538461537,
+      "state_run_lengths": {
+        "FL_HAZ": 1.0714285714285714,
+        "FQ": 1.3703703703703705,
+        "CC": 1.0,
+        "AXm": 1.0,
+        "AXM": 2.7549019607843137,
+        "FL_SAFE": 1.0
+      },
+      "occupancy": {
+        "FL_HAZ": 0.07334963325183375,
+        "FQ": 0.18092909535452323,
+        "CC": 0.02689486552567237,
+        "AXm": 0.019559902200488997,
+        "AXM": 0.687041564792176,
+        "FL_SAFE": 0.012224938875305624
+      },
+      "body_ht_density": 0.04174573055028463,
+      "line1_ht_density": 0.3,
+      "link_density": 0.00931098696461825,
+      "hazard_density": 0.07334963325183375,
+      "n_classified": 409,
+      "mean_depth": 2.119580416498745
+    }
+  ]
+}
