@@ -61,7 +61,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # EMBEDDED EXPERT CONTEXT
 
-**Generated:** 2026-02-12 15:54
+**Generated:** 2026-02-12 16:08
 **Version:** FROZEN STATE (874 constraints, 56 fits)
 
 ---
@@ -8877,7 +8877,7 @@ provenance:
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.4"
+  version: "3.5"
   date: "2026-02-12"
   status: "LOCKED"
   layer_type: "grammar contract"
@@ -8927,6 +8927,10 @@ guarantees:
     statement: "49-class grammar applies to all 83 folios without exception"
     provenance: "C121, C124"
 
+  - id: "FORTY_NINE_CLASS_OPTIMALITY"
+    statement: "49-class is the optimal resolution for transition dynamics; token-level Markov is 38% worse due to sparsity; suffix conditioning reduces next-class entropy by only 5.6% (0.259 bits), not justifying state-space doubling"
+    provenance: "C1004"
+
   - id: "TOTAL_COVERAGE"
     statement: "Every Currier B token parses; zero non-executable"
     provenance: "C115, C124"
@@ -8964,8 +8968,8 @@ guarantees:
     provenance: "C171"
 
   - id: "MACRO_AUTOMATON_COMPRESSION"
-    statement: "49 instruction classes compress to 6 macro-states (8.17x) with spectral gap 0.894; EN/AX merge, FL splits HAZ/SAFE"
-    provenance: "C976, C977, C978"
+    statement: "49 instruction classes compress to 6 macro-states (8.17x) with spectral gap 0.894; EN/AX merge, FL splits HAZ/SAFE; non-geometric dwell is aggregation artifact"
+    provenance: "C976, C977, C978, C1006"
 
   - id: "AFFORDANCE_BIN_SYSTEM"
     statement: "972 MIDDLEs classify into 9 functional bins by affordance signature; chromatic number 3 for PREFIX-lane interaction; HUB_UNIVERSAL (23 MIDDLEs) monopolizes all 17/17 forbidden transitions"
@@ -9002,6 +9006,10 @@ guarantees:
   - id: "MORPHOLOGICAL_COMPOSITIONALITY"
     statement: "Every token decomposes into [ARTICULATOR] + PREFIX + MIDDLE + [SUFFIX] with predictable combination rules"
     provenance: "C267, C382, C383"
+
+  - id: "PAIRWISE_COMPOSITIONALITY"
+    statement: "TOKEN information is fully captured by pairwise component interactions (PREFIX x MIDDLE, PREFIX x SUFFIX, MIDDLE x SUFFIX); no three-way synergy exists (Co-I < 0.02 bits on all 4 targets; R-squared increment = 0)"
+    provenance: "C1003"
 
   - id: "PREFIX_MIDDLE_SELECTIVITY"
     statement: "PREFIX selects MIDDLE family (102 forbidden combinations) and transforms MIDDLE behavior (within-MIDDLE between-PREFIX JSD = 97.5% of between-MIDDLE JSD)"
@@ -9085,6 +9093,14 @@ invariants:
     statement: "PREFIX encodes line position independently of regime"
     provenance: "C1001"
 
+  pairwise_interaction_sufficiency:
+    statement: "Pairwise morphological component interactions capture all exploitable TOKEN structure; no three-way synergy"
+    provenance: "C1003"
+
+  dwell_shape_regime_invariance:
+    statement: "Weibull dwell shape (k=1.55) is invariant across REGIMEs; REGIME modulates scale only"
+    provenance: "C1006"
+
 # ============================================================
 grammar:
 
@@ -9094,7 +9110,8 @@ grammar:
     compression_ratio: "9.8x"
     coverage: "100%"
     exceptions: 0
-    provenance: "C121, C124"
+    optimality: "49-class is optimal: token-level (479 states) overfits by 38%; suffix-augmented (98 states) gains only 5.6%; 6-state macro underfits but useful as coarse view (perplexity 2.75 vs 28.76 vs 39.73)"
+    provenance: "C121, C124, C1004"
 
   primitives:
     count: 10
@@ -9145,13 +9162,14 @@ morphology:
         required: false
         unique_count: 35
         function: "Flow control — determines WHAT HAPPENS NEXT after the operation"
+        sequential_state: "SUFFIX is a within-token modifier and positional/sequential grammar participant, but NOT a sequential state carrier. Only 1/17 testable classes shows suffix-differentiated transition distributions after Bonferroni correction (C1004)."
         suffix_strata: |
           EN: 17 types, 39% bare (suffix-rich, most flow options)
           AX: 19 types, 62% bare (moderate)
           FL: 2 types, 94% bare (suffix-depleted)
           FQ: 1 type, 93% bare (suffix-depleted)
           CC: 0 types, 100% bare (suffix-free)
-        provenance: "C267, C382, C588"
+        provenance: "C267, C382, C588, C1004"
 
   prefix_channel_architecture:
     # Tier 2 structural fact: PREFIX selects MIDDLE family and transforms behavior
@@ -9787,7 +9805,52 @@ safety_buffer_architecture:
     SAFETY_BUFFER: ["eol", "k", "od"]
     PURE_CONNECTOR: ["d", "e", "eey", "ek", "eo", "iin", "s", "y"]
   behavioral_homogeneity: "0/14 KW dimensions significant — functional diversity beneath behavioral uniformity"
-  provenance: "C997, C1000"
+  exit_boundary_connection: "HAZARD_TARGET MIDDLEs accumulate at AXM exit boundaries (C1009) — linking safety/hazard vocabulary to gatekeeper mechanism"
+  provenance: "C997, C1000, C1009"
+
+# ============================================================
+axm_internal_architecture:
+
+  dwell_dynamics:
+    statement: "Non-geometric AXM dwell is a phase-type aggregation artifact, not temporal memory"
+    mechanism: "32 AXM classes almost never repeat (mean run 1.054 at 49-class); long 6-state runs are diverse class sequences"
+    null_model: "First-order Markov null reproduces empirical dwell (KS D=0.020, p=0.074)"
+    weibull_shape: "k=1.55 globally; REGIME-invariant (range 0.096)"
+    regime_modulation: "REGIME modulates dwell SCALE (lambda: 2.3-3.1) but NOT shape — consistent with C979"
+    non_geometricity_gradient: "Correlates with class compression: AXM (32 classes) > FQ (4 classes) > FL_HAZ (2 classes, geometric)"
+    provenance: "C1006"
+
+  gatekeeper_mechanism:
+    statement: "Five AUXILIARY classes {15, 20, 21, 22, 25} form exit-boundary specialists enriched 2-10x at AXM run exits"
+    enrichment:
+      class_22: "9.58x"
+      class_21: "4.25x"
+      class_15: "3.08x"
+      class_20: "2.68x"
+      class_25: "2.30x"
+    properties:
+      directional: "Exit-enriched, NOT entry-enriched (chi2=152.60, p<0.0001)"
+      genuine: "Survives mid-line positional control (chi2=58.42, p=0.002)"
+      low_entropy: "4.123 vs 4.555 bits (p=0.016) — constrained exit points"
+      destination_agnostic: "No target-state routing specificity (p=0.286)"
+      peripheral: "Low betweenness centrality (p=0.514) — endpoints, not bridges"
+      single_token: "No multi-step exit motif (pre-GK p=0.940, exit entropy matches baseline)"
+      regime_contextual: "Specific gatekeeper class identity shifts across REGIMEs (mean cross-rho=-0.245) but mechanism is universal"
+    provenance: "C1007, C1008"
+
+  exit_curvature:
+    statement: "HAZARD_TARGET MIDDLE density increases from ~10% at t-3 to ~16% at exit token (rho=-0.055, p=0.0001)"
+    mechanism: "Compositional (which sub-role appears), NOT spectral-geometric (radial depth p=0.098)"
+    subrole_enrichment: "Exit boundaries enriched in HAZARD_TARGET (22.7% vs 17.5%, chi2=13.89, p=0.003)"
+    gatekeeper_spike: "GK fraction rises from ~2% at t-3 to 8.7% at t-0 — single-token switching"
+    regime_invariance: "Curvature slope does NOT vary with REGIME intensity (p=0.200)"
+    provenance: "C1009"
+
+  interchange_state:
+    statement: "FQ is the principal interchange state for AXM"
+    exit_skyline: "AXM exits to FQ 57.1%, FL_HAZ 17.1%, CC 13.8%, AXm 9.4%, FL_SAFE 2.5%"
+    entry_skyline: "AXM enters from FQ 55.1%, FL_HAZ 16.7%, CC 16.4%, AXm 10.6%, FL_SAFE 1.2%"
+    provenance: "C1007"
 
 # ============================================================
 design_freedom:
@@ -10341,6 +10404,8 @@ provenance:
     - "C911"   # PREFIX-MIDDLE compatibility constraints (102 forbidden)
     - "C936"   # ok = vessel domain selector (revised from three-operation composite)
     - "C1001"  # PREFIX dual encoding (content + position)
+    - "C1003"  # Pairwise compositionality (no three-way synergy)
+    - "C1004"  # SUFFIX is not a sequential state carrier
 
   link:
     - "C334"   # LINK section conditioning
@@ -10596,12 +10661,23 @@ provenance:
     - "C978"   # FL HAZ/SAFE split
     - "C979"   # Spectral gap 0.894
     - "C980"   # Macro-automaton integrated verdict
+    - "C1004"  # 49-class optimality confirmed (token-level 38% worse)
+    - "C1006"  # Non-geometric dwell is topology artifact
 
   affordance_system:
     - "C995"   # 9-bin affordance system
     - "C996"   # Forbidden transition bin concentration (17/17 HUB per C1000)
     - "C997"   # Safety buffer mechanism (22 buffers, QO-enriched)
     - "C1000"  # HUB sub-role decomposition (corrects C996 from 13/17 to 17/17)
+    - "C1007"  # AXM gatekeeper subset (exit-boundary enrichment)
+    - "C1008"  # AXM directional gating mechanism
+    - "C1009"  # AXM exit hazard-target compositional curvature
+
+  axm_internal_architecture:
+    - "C1006"  # Dwell non-geometricity is topology artifact
+    - "C1007"  # Gatekeeper subset {15, 20, 21, 22, 25}
+    - "C1008"  # Directional gating (entry/exit asymmetry)
+    - "C1009"  # Hazard-target compositional curvature at exit
 
   prefix_information_decomposition:
     - "C1001"  # PREFIX dual encoding (content + positional grammar)
