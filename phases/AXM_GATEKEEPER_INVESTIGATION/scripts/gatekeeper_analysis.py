@@ -11,6 +11,8 @@ Probes the exit-boundary gatekeeper subset discovered in C1007:
   T7: Transition entropy (successor predictability)
   T8: Approach-to-boundary geometry (radial depth + hazard-target gradient)
   T9: AXM internal subgraph profiling (betweenness centrality)
+  T10: Sub-role micro-exit schema (Markov motifs within AXM)
+  T11: REGIME x curvature slope modulation (C979 micro-scale test)
 
 Builds on Phase 326 finding: classes 22, 21, 15, 20, 25 are 3-10x enriched
 at AXM run exit boundaries (chi2=178.21, p<0.0001).
@@ -1042,6 +1044,340 @@ t9_result = {
 
 
 # =============================================================================
+# T10: SUB-ROLE MICRO-EXIT SCHEMA (Markov motifs within AXM)
+# =============================================================================
+
+print("\n" + "=" * 70)
+print("T10: SUB-ROLE MICRO-EXIT SCHEMA (Markov motifs within AXM)")
+print("=" * 70)
+
+# Map each AXM class to its dominant sub-role via MIDDLE frequency
+# For each class, collect all MIDDLEs that occur in AXM positions, find dominant sub-role
+class_dominant_subrole = {}
+class_subrole_counts = defaultdict(lambda: defaultdict(int))
+
+for run in axm_runs:
+    for cls, mid in zip(run['classes'], run['middles']):
+        sr = MIDDLE_TO_SUBROLE.get(mid)
+        if sr and cls in MACRO_PARTITION['AXM']:
+            class_subrole_counts[cls][sr] += 1
+
+for cls in AXM_CLASSES:
+    counts = class_subrole_counts[cls]
+    if counts:
+        class_dominant_subrole[cls] = max(counts, key=counts.get)
+    else:
+        class_dominant_subrole[cls] = 'UNKNOWN'
+
+# Build 4x4 sub-role transition matrix within AXM
+subrole_names = ['HAZARD_SOURCE', 'HAZARD_TARGET', 'SAFETY_BUFFER', 'PURE_CONNECTOR']
+sr_idx = {sr: i for i, sr in enumerate(subrole_names)}
+sr_trans = np.zeros((4, 4), dtype=int)
+
+for folio, lines_dict in folio_lines.items():
+    for line_key, tokens in sorted(lines_dict.items()):
+        for i in range(len(tokens) - 1):
+            if tokens[i]['macro'] == 'AXM' and tokens[i + 1]['macro'] == 'AXM':
+                mid1 = tokens[i].get('middle', '')
+                mid2 = tokens[i + 1].get('middle', '')
+                sr1 = MIDDLE_TO_SUBROLE.get(mid1)
+                sr2 = MIDDLE_TO_SUBROLE.get(mid2)
+                if sr1 and sr2:
+                    sr_trans[sr_idx[sr1]][sr_idx[sr2]] += 1
+
+# Normalize to probabilities
+sr_probs = np.zeros((4, 4))
+for i in range(4):
+    row_sum = sr_trans[i].sum()
+    if row_sum > 0:
+        sr_probs[i] = sr_trans[i] / row_sum
+
+print(f"\n  Sub-role transition matrix (rows=from, cols=to):")
+print(f"  {'':>20} {'HS':>8} {'HT':>8} {'SB':>8} {'PC':>8}")
+for i, sr in enumerate(subrole_names):
+    abbrev = {'HAZARD_SOURCE': 'HS', 'HAZARD_TARGET': 'HT',
+              'SAFETY_BUFFER': 'SB', 'PURE_CONNECTOR': 'PC'}[sr]
+    row = '  '.join(f"{sr_probs[i][j]:.3f}" for j in range(4))
+    print(f"  {abbrev:>20}   {row}  (n={sr_trans[i].sum()})")
+
+# Test: Are HAZARD_TARGET tokens attractor-predecessors to gatekeeper classes?
+# For each gatekeeper exit, what was the sub-role of token at t-1?
+pre_gk_subroles = defaultdict(int)
+pre_nongk_subroles = defaultdict(int)
+total_pre_gk = 0
+total_pre_nongk = 0
+
+for run in axm_runs:
+    n = run['length']
+    if n < 2:
+        continue
+    for i in range(1, n):
+        mid_prev = run['middles'][i - 1]
+        sr_prev = MIDDLE_TO_SUBROLE.get(mid_prev)
+        if not sr_prev:
+            continue
+        # Is this token a gatekeeper at exit position?
+        if i == n - 1 and run['classes'][i] in GATEKEEPER_CLASSES:
+            pre_gk_subroles[sr_prev] += 1
+            total_pre_gk += 1
+        elif i == n - 1:
+            pre_nongk_subroles[sr_prev] += 1
+            total_pre_nongk += 1
+
+print(f"\n  Sub-role at t-1 position BEFORE gatekeeper exit (n={total_pre_gk}):")
+if total_pre_gk > 0 and total_pre_nongk > 0:
+    print(f"  {'Sub-role':<20} {'Pre-GK':>10} {'Pre-nonGK':>10} {'Ratio':>10}")
+    gk_fracs = []
+    nongk_fracs = []
+    for sr in subrole_names:
+        gk_frac = pre_gk_subroles[sr] / total_pre_gk if total_pre_gk else 0
+        nongk_frac = pre_nongk_subroles[sr] / total_pre_nongk if total_pre_nongk else 0
+        ratio = gk_frac / nongk_frac if nongk_frac > 0 else float('inf')
+        print(f"  {sr:<20} {gk_frac:>10.3f} {nongk_frac:>10.3f} {ratio:>10.2f}x")
+        gk_fracs.append(pre_gk_subroles[sr])
+        nongk_fracs.append(pre_nongk_subroles[sr])
+
+    # Chi2: pre-gatekeeper vs pre-non-gatekeeper sub-role distribution
+    obs_pre = np.array([gk_fracs, nongk_fracs])
+    if obs_pre.min() >= 0 and obs_pre.sum() > 0:
+        chi2_pre, p_pre, _, _ = stats.chi2_contingency(obs_pre)
+        print(f"\n  Chi2 (pre-GK vs pre-nonGK sub-role): chi2={chi2_pre:.2f}, p={p_pre:.4f}")
+        pre_gk_different = bool(p_pre < 0.05)
+    else:
+        chi2_pre, p_pre = None, None
+        pre_gk_different = False
+else:
+    chi2_pre, p_pre = None, None
+    pre_gk_different = False
+
+# Micro-motif analysis: 2-step and 3-step sub-role sequences before exit
+# Count sequences of sub-roles in last 2 and 3 positions of AXM runs
+exit_bigrams = defaultdict(int)
+exit_trigrams = defaultdict(int)
+all_bigrams = defaultdict(int)
+all_trigrams = defaultdict(int)
+
+for run in axm_runs:
+    # Map run to sub-role sequence
+    sr_seq = []
+    for mid in run['middles']:
+        sr = MIDDLE_TO_SUBROLE.get(mid, 'UNK')
+        sr_seq.append(sr)
+
+    # All bigrams/trigrams (for baseline)
+    for i in range(len(sr_seq) - 1):
+        if sr_seq[i] != 'UNK' and sr_seq[i + 1] != 'UNK':
+            all_bigrams[(sr_seq[i], sr_seq[i + 1])] += 1
+    for i in range(len(sr_seq) - 2):
+        if sr_seq[i] != 'UNK' and sr_seq[i + 1] != 'UNK' and sr_seq[i + 2] != 'UNK':
+            all_trigrams[(sr_seq[i], sr_seq[i + 1], sr_seq[i + 2])] += 1
+
+    # Exit bigrams (last 2 positions) and trigrams (last 3)
+    if len(sr_seq) >= 2 and sr_seq[-1] != 'UNK' and sr_seq[-2] != 'UNK':
+        exit_bigrams[(sr_seq[-2], sr_seq[-1])] += 1
+    if len(sr_seq) >= 3 and sr_seq[-1] != 'UNK' and sr_seq[-2] != 'UNK' and sr_seq[-3] != 'UNK':
+        exit_trigrams[(sr_seq[-3], sr_seq[-2], sr_seq[-1])] += 1
+
+# Top exit bigrams vs baseline enrichment
+total_exit_bi = sum(exit_bigrams.values())
+total_all_bi = sum(all_bigrams.values())
+
+print(f"\n  Exit bigram motifs (last 2 positions, n={total_exit_bi}):")
+if total_exit_bi > 0 and total_all_bi > 0:
+    abbrev_map = {'HAZARD_SOURCE': 'HS', 'HAZARD_TARGET': 'HT',
+                  'SAFETY_BUFFER': 'SB', 'PURE_CONNECTOR': 'PC'}
+    # Sort by exit count
+    top_exit_bi = sorted(exit_bigrams.items(), key=lambda x: -x[1])[:10]
+    print(f"  {'Motif':<12} {'Exit_n':>8} {'Exit_%':>8} {'Base_%':>8} {'Enrich':>8}")
+    for (s1, s2), count in top_exit_bi:
+        exit_frac = count / total_exit_bi
+        base_frac = all_bigrams[(s1, s2)] / total_all_bi
+        enrich = exit_frac / base_frac if base_frac > 0 else float('inf')
+        label = f"{abbrev_map.get(s1, '?')}->{abbrev_map.get(s2, '?')}"
+        print(f"  {label:<12} {count:>8} {exit_frac:>8.3f} {base_frac:>8.3f} {enrich:>8.2f}x")
+
+# Top exit trigrams
+total_exit_tri = sum(exit_trigrams.values())
+total_all_tri = sum(all_trigrams.values())
+
+print(f"\n  Exit trigram motifs (last 3 positions, n={total_exit_tri}):")
+if total_exit_tri > 0 and total_all_tri > 0:
+    top_exit_tri = sorted(exit_trigrams.items(), key=lambda x: -x[1])[:8]
+    print(f"  {'Motif':<18} {'Exit_n':>8} {'Exit_%':>8} {'Base_%':>8} {'Enrich':>8}")
+    for (s1, s2, s3), count in top_exit_tri:
+        exit_frac = count / total_exit_tri
+        base_frac = all_trigrams[(s1, s2, s3)] / total_all_tri
+        enrich = exit_frac / base_frac if base_frac > 0 else float('inf')
+        label = f"{abbrev_map.get(s1, '?')}->{abbrev_map.get(s2, '?')}->{abbrev_map.get(s3, '?')}"
+        print(f"  {label:<18} {count:>8} {exit_frac:>8.3f} {base_frac:>8.3f} {enrich:>8.2f}x")
+
+# Test: Is there a constrained exit motif?
+# Measure entropy of exit bigrams vs all bigrams
+if total_exit_bi > 0 and total_all_bi > 0:
+    exit_bi_probs = np.array([c / total_exit_bi for c in exit_bigrams.values()])
+    all_bi_probs = np.array([c / total_all_bi for c in all_bigrams.values()])
+    h_exit = float(-np.sum(exit_bi_probs * np.log2(exit_bi_probs + 1e-15)))
+    h_all = float(-np.sum(all_bi_probs * np.log2(all_bi_probs + 1e-15)))
+    print(f"\n  Exit bigram entropy: {h_exit:.3f} bits")
+    print(f"  Baseline bigram entropy: {h_all:.3f} bits")
+    if h_exit < h_all:
+        print(f"  -> Exit motifs are MORE CONSTRAINED ({h_all - h_exit:.3f} bits less entropy)")
+    else:
+        print(f"  -> Exit motifs are NOT more constrained")
+    exit_more_constrained = bool(h_exit < h_all)
+else:
+    h_exit, h_all = None, None
+    exit_more_constrained = False
+
+t10_result = {
+    'sr_transition_matrix': {
+        subrole_names[i]: {subrole_names[j]: int(sr_trans[i][j]) for j in range(4)}
+        for i in range(4)
+    },
+    'sr_transition_probs': {
+        subrole_names[i]: {subrole_names[j]: float(sr_probs[i][j]) for j in range(4)}
+        for i in range(4)
+    },
+    'pre_gk_subrole_distribution': {sr: pre_gk_subroles[sr] for sr in subrole_names},
+    'pre_nongk_subrole_distribution': {sr: pre_nongk_subroles[sr] for sr in subrole_names},
+    'pre_gk_chi2': float(chi2_pre) if chi2_pre is not None else None,
+    'pre_gk_p': float(p_pre) if p_pre is not None else None,
+    'pre_gk_different': pre_gk_different,
+    'top_exit_bigrams': [
+        {'motif': f"{s1}->{s2}", 'count': int(c), 'exit_frac': c / total_exit_bi}
+        for (s1, s2), c in sorted(exit_bigrams.items(), key=lambda x: -x[1])[:10]
+    ] if total_exit_bi > 0 else [],
+    'exit_bigram_entropy': h_exit,
+    'baseline_bigram_entropy': h_all,
+    'exit_more_constrained': exit_more_constrained,
+}
+
+
+# =============================================================================
+# T11: REGIME x CURVATURE SLOPE MODULATION (C979 micro-scale test)
+# =============================================================================
+
+print("\n" + "=" * 70)
+print("T11: REGIME x CURVATURE SLOPE MODULATION (C979 micro-scale test)")
+print("=" * 70)
+
+# Per REGIME: compute hazard-target density slope in last 4 positions before exit
+# Use AXM runs >= 4 with known REGIME
+
+REGIME_CEI = {'REGIME_2': 0.367, 'REGIME_1': 0.510, 'REGIME_4': 0.584, 'REGIME_3': 0.717}
+
+regime_ht_profiles = defaultdict(lambda: defaultdict(list))  # regime -> pos -> [ht_flag]
+
+for run in axm_runs:
+    n = run['length']
+    if n < 4:
+        continue
+    folio = run['folio']
+    reg = regime_map.get(folio)
+    if not reg:
+        continue
+
+    # Last 4 positions: t-0 to t-3
+    for offset in range(4):
+        idx = n - 1 - offset
+        if idx < 0:
+            continue
+        mid = run['middles'][idx]
+        sr = MIDDLE_TO_SUBROLE.get(mid)
+        is_ht = 1 if sr == 'HAZARD_TARGET' else 0
+        regime_ht_profiles[reg][offset].append(is_ht)
+
+# Per REGIME: compute slope (linear regression of HT density vs position-from-end)
+regime_slopes = {}
+print(f"\n  REGIME-specific hazard-target curvature (last 4 positions):")
+print(f"  {'REGIME':<12} {'HT@t-3':>8} {'HT@t-2':>8} {'HT@t-1':>8} {'HT@t-0':>8} {'Slope':>8} {'n':>6}")
+
+for reg in REGIME_ORDER:
+    if reg not in regime_ht_profiles:
+        continue
+    positions = []
+    means = []
+    for pos in range(4):  # 0=exit, 3=earliest
+        vals = regime_ht_profiles[reg][pos]
+        if vals:
+            positions.append(pos)
+            means.append(np.mean(vals))
+
+    if len(positions) >= 3:
+        # Slope: position from end (0=exit) vs HT density
+        # Negative slope means HT increases toward exit
+        slope, intercept, r_val, p_val, se = stats.linregress(positions, means)
+        regime_slopes[reg] = {
+            'slope': float(slope),
+            'intercept': float(intercept),
+            'r_squared': float(r_val**2),
+            'p_value': float(p_val),
+            'n_runs': len(regime_ht_profiles[reg][0]),
+        }
+        ht_values = [np.mean(regime_ht_profiles[reg][3 - i]) if regime_ht_profiles[reg][3 - i] else 0
+                     for i in range(4)]
+        print(f"  {reg:<12} {ht_values[0]:>8.3f} {ht_values[1]:>8.3f} "
+              f"{ht_values[2]:>8.3f} {ht_values[3]:>8.3f} {slope:>+8.4f} "
+              f"{len(regime_ht_profiles[reg][0]):>6}")
+
+# Test: Does slope magnitude correlate with REGIME intensity (CEI)?
+if len(regime_slopes) >= 3:
+    cei_values = []
+    slope_values = []
+    for reg in REGIME_ORDER:
+        if reg in regime_slopes:
+            cei_values.append(REGIME_CEI[reg])
+            slope_values.append(regime_slopes[reg]['slope'])
+
+    if len(cei_values) >= 3:
+        rho_regime_slope, p_regime_slope = stats.spearmanr(cei_values, slope_values)
+        print(f"\n  Spearman (REGIME CEI vs HT curvature slope): rho={rho_regime_slope:+.3f}, p={p_regime_slope:.4f}")
+
+        # Interpretation
+        if p_regime_slope < 0.05 and rho_regime_slope < 0:
+            print("  -> Steeper hazard-target buildup in more intense REGIMEs (C979 micro-validation)")
+            slope_modulated = True
+        elif p_regime_slope < 0.05 and rho_regime_slope > 0:
+            print("  -> Weaker hazard-target buildup in more intense REGIMEs")
+            slope_modulated = True
+        else:
+            print("  -> Curvature slope does NOT vary with REGIME intensity")
+            slope_modulated = False
+    else:
+        rho_regime_slope, p_regime_slope = None, None
+        slope_modulated = False
+else:
+    rho_regime_slope, p_regime_slope = None, None
+    slope_modulated = False
+
+# Global curvature slope (all REGIMEs combined)
+global_positions = []
+global_means = []
+for pos in range(4):
+    all_vals = []
+    for reg in REGIME_ORDER:
+        all_vals.extend(regime_ht_profiles[reg].get(pos, []))
+    if all_vals:
+        global_positions.append(pos)
+        global_means.append(np.mean(all_vals))
+
+if len(global_positions) >= 3:
+    g_slope, g_intercept, g_r, g_p, g_se = stats.linregress(global_positions, global_means)
+    print(f"\n  Global HT curvature slope: {g_slope:+.4f} (p={g_p:.4f}, R2={g_r**2:.3f})")
+else:
+    g_slope, g_p = None, None
+
+t11_result = {
+    'per_regime': regime_slopes,
+    'regime_cei_vs_slope_rho': float(rho_regime_slope) if rho_regime_slope is not None else None,
+    'regime_cei_vs_slope_p': float(p_regime_slope) if p_regime_slope is not None else None,
+    'slope_modulated': slope_modulated,
+    'global_slope': float(g_slope) if g_slope is not None else None,
+    'global_slope_p': float(g_p) if g_p is not None else None,
+}
+
+
+# =============================================================================
 # SUMMARY
 # =============================================================================
 
@@ -1128,6 +1464,29 @@ if gk_higher_bw:
 else:
     findings.append("Gatekeepers do not have higher betweenness centrality")
 
+# T10
+print(f"T10: Exit motif constrained: {'YES' if exit_more_constrained else 'NO'} "
+      f"(exit H={h_exit:.2f} vs base H={h_all:.2f})" if h_exit is not None else "T10: Insufficient data")
+if pre_gk_different:
+    findings.append("Pre-gatekeeper sub-role distribution DIFFERS from pre-non-gatekeeper")
+else:
+    findings.append("Pre-gatekeeper sub-role distribution same as pre-non-gatekeeper")
+if exit_more_constrained:
+    findings.append(f"Exit bigram motifs are MORE CONSTRAINED than baseline ({h_all - h_exit:.2f} bits less entropy)")
+else:
+    findings.append("Exit bigram motifs are not more constrained than baseline")
+
+# T11
+if rho_regime_slope is not None:
+    print(f"T11: REGIME x curvature slope: {'MODULATED' if slope_modulated else 'NOT MODULATED'} "
+          f"(rho={rho_regime_slope:+.3f}, p={p_regime_slope:.4f})")
+else:
+    print("T11: Insufficient data for REGIME slope test")
+if slope_modulated:
+    findings.append(f"Hazard-target curvature slope varies with REGIME intensity (rho={rho_regime_slope:+.3f})")
+else:
+    findings.append("Hazard-target curvature slope does NOT vary with REGIME intensity")
+
 print(f"\nTotal findings: {len(findings)}")
 for fi, f in enumerate(findings, 1):
     print(f"  {fi}. {f}")
@@ -1149,6 +1508,8 @@ results = {
     'T7_transition_entropy': t7_result,
     'T8_boundary_geometry': t8_result,
     'T9_subgraph_profiling': t9_result,
+    'T10_subrole_micro_exit': t10_result,
+    'T11_regime_curvature_slope': t11_result,
     'findings': findings,
 }
 

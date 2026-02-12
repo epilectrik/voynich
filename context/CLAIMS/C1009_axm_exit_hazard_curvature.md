@@ -59,6 +59,10 @@ HAZARD_TARGET is the only sub-role with substantial enrichment at exit boundarie
 
 4. **Radial depth is uninformative.** The spectral embedding geometry (C982, C991) does not predict exit behavior within AXM. The relevant structure is compositional (which sub-role appears) not geometric (where in the compatibility space).
 
+5. **REGIME does NOT modulate curvature slope (T11).** Per-REGIME hazard-target buildup slopes show no systematic relationship with REGIME intensity (Spearman rho=+0.800, p=0.200, n=4). The curvature mechanism is REGIME-invariant in shape, consistent with a structural property rather than a contextual one. This does NOT contradict C979 (REGIME modulates weights) — REGIME modulates gatekeeper class identity (T5) but not the hazard-target accumulation rate.
+
+6. **No micro-exit schema (T10).** The sub-role at t-1 before gatekeeper exit is indistinguishable from pre-non-gatekeeper (chi2=0.40, p=0.94). Exit bigram entropy matches baseline. There is no constrained 2-3 step motif preceding exit — the gatekeeper mechanism is a single-token boundary phenomenon.
+
 ---
 
 ## Cross-References
@@ -69,6 +73,7 @@ HAZARD_TARGET is the only sub-role with substantial enrichment at exit boundarie
 | C991 | Context: radial depth as energy predictor (NOT predictive within AXM) |
 | C1000 | Connected: HUB sub-role decomposition (HAZARD_TARGET enrichment at exit) |
 | C1007 | Parent: gatekeeper subset discovery |
+| C979 | Tested: REGIME modulates weights but NOT curvature slope (T11) |
 | C1008 | Companion: directional gating mechanism |
 
 ---
@@ -77,7 +82,7 @@ HAZARD_TARGET is the only sub-role with substantial enrichment at exit boundarie
 
 - **Phase:** AXM_GATEKEEPER_INVESTIGATION
 - **Date:** 2026-02-12
-- **Script:** gatekeeper_analysis.py (T6, T8)
+- **Script:** gatekeeper_analysis.py (T6, T8, T10, T11)
 - **Results:** `phases/AXM_GATEKEEPER_INVESTIGATION/results/gatekeeper_analysis.json`
 
 ---

@@ -51,8 +51,10 @@ Lower entropy = more constrained successor distribution = routing switches with 
 | T4: Duration prediction | Gatekeeper identity does not predict run length | 0.128 |
 | T5: REGIME invariance | Pattern varies by REGIME (2/4 significant) | mixed |
 | T9: Betweenness centrality | Gatekeepers are NOT structural bridges | 0.514 |
+| T10: Sub-role micro-exit motif | No constrained 2-3 step exit schema | 0.940 |
+| T10: Exit bigram entropy | Exit motifs NOT more constrained than baseline | - |
 
-Gatekeepers are peripheral exit-specialists, not central routing hubs.
+Gatekeepers are peripheral exit-specialists, not central routing hubs. No predictable sub-role motif precedes gatekeeper exit (T10).
 
 ---
 

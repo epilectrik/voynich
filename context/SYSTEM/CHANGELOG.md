@@ -8,7 +8,7 @@
 
 ### Summary
 
-9-test phase fully characterizing the AXM exit-boundary gatekeeper mechanism discovered in Phase 326 (C1007). Confirms directional gating: entry/exit class compositions are asymmetric (chi2=152.60, p<0.0001) with 5 AUXILIARY classes {15,20,21,22,25} enriched 2-10x at exit only. Gatekeepers have lower transition entropy (4.12 vs 4.56 bits, p=0.016) and are enriched in HAZARD_TARGET sub-role (C1000). Effect survives mid-line positional control (p=0.002). T8-T9 probe geometric layer: hazard-target compositional curvature toward exit (rho=-0.055, p=0.0001) but NO radial depth gradient (p=0.098) and gatekeepers are NOT structural bridges (betweenness p=0.514). The mechanism is compositional, not spectral-geometric. 2 new constraints (C1008-C1009), 874 total. Phase 327.
+11-test phase fully characterizing the AXM exit-boundary gatekeeper mechanism discovered in Phase 326 (C1007). Confirms directional gating: entry/exit class compositions are asymmetric (chi2=152.60, p<0.0001) with 5 AUXILIARY classes {15,20,21,22,25} enriched 2-10x at exit only. Gatekeepers have lower transition entropy (4.12 vs 4.56 bits, p=0.016) and are enriched in HAZARD_TARGET sub-role (C1000). Effect survives mid-line positional control (p=0.002). T8-T9 probe geometric layer: hazard-target compositional curvature toward exit (rho=-0.055, p=0.0001) but NO radial depth gradient (p=0.098) and gatekeepers are NOT structural bridges (betweenness p=0.514). T10-T11 probe saturation boundary: no constrained sub-role exit motif (pre-GK indistinguishable p=0.940, exit entropy matches baseline) and REGIME does NOT modulate curvature slope (p=0.200). AXM architecture fully characterized. 2 new constraints (C1008-C1009), 874 total. Phase 327.
 
 ### New Constraints
 
@@ -29,6 +29,8 @@
 - T7: Lower gatekeeper entropy (4.12 vs 4.56 bits, p=0.016) - routing switches
 - T8: Hazard-target compositional curvature toward exit (rho=-0.055, p=0.0001); NO depth gradient
 - T9: Gatekeepers NOT structural bridges (betweenness p=0.514, PageRank p=0.183)
+- T10: No constrained sub-role exit motif (pre-GK p=0.940, exit entropy matches baseline)
+- T11: REGIME does NOT modulate curvature slope (rho=+0.800, p=0.200) - mechanism shape-invariant
 
 ---
 
