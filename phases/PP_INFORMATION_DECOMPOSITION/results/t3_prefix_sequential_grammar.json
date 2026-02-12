@@ -1,0 +1,533 @@
+{
+  "metadata": {
+    "phase": "PP_INFORMATION_DECOMPOSITION",
+    "test": "T3_PREFIX_SEQUENTIAL_GRAMMAR"
+  },
+  "corpus": {
+    "n_lines": 2414,
+    "n_bigrams": 20676,
+    "prefix_vocab_size": 36,
+    "middle_vocab_size": 1103
+  },
+  "transition_matrix": {
+    "chi2": 2644.024307676712,
+    "df": 335,
+    "p": 0.0,
+    "cramers_v": 0.06044570368375282
+  },
+  "forbidden_transitions": [
+    {
+      "from": "BARE",
+      "to": "qo",
+      "observed": 243,
+      "expected": 595.1065970207003,
+      "std_residual": -14.433670265830443
+    },
+    {
+      "from": "da",
+      "to": "qo",
+      "observed": 54,
+      "expected": 163.76397755852196,
+      "std_residual": -8.577300929303421
+    },
+    {
+      "from": "sh",
+      "to": "ch",
+      "observed": 198,
+      "expected": 360.17474366415166,
+      "std_residual": -8.545285796945112
+    },
+    {
+      "from": "ch",
+      "to": "sh",
+      "observed": 181,
+      "expected": 313.98331398723155,
+      "std_residual": -7.5048819799922395
+    },
+    {
+      "from": "sh",
+      "to": "BARE",
+      "observed": 262,
+      "expected": 390.2524182627201,
+      "std_residual": -6.492213019203695
+    },
+    {
+      "from": "sa",
+      "to": "qo",
+      "observed": 9,
+      "expected": 53.73505513639002,
+      "std_residual": -6.102659338592757
+    },
+    {
+      "from": "qo",
+      "to": "BARE",
+      "observed": 527,
+      "expected": 667.4589862642678,
+      "std_residual": -5.436723388741242
+    },
+    {
+      "from": "ta",
+      "to": "qo",
+      "observed": 12,
+      "expected": 38.016637647514024,
+      "std_residual": -4.21953230842647
+    },
+    {
+      "from": "ka",
+      "to": "qo",
+      "observed": 13,
+      "expected": 38.016637647514024,
+      "std_residual": -4.05734638857031
+    },
+    {
+      "from": "BARE",
+      "to": "lk",
+      "observed": 37,
+      "expected": 67.87270265041595,
+      "std_residual": -3.7473743396113215
+    },
+    {
+      "from": "da",
+      "to": "lk",
+      "observed": 3,
+      "expected": 18.677500483652544,
+      "std_residual": -3.6275837241289195
+    },
+    {
+      "from": "qo",
+      "to": "al",
+      "observed": 11,
+      "expected": 30.347455987618495,
+      "std_residual": -3.51206643290808
+    },
+    {
+      "from": "qo",
+      "to": "ka",
+      "observed": 20,
+      "expected": 42.93054749467982,
+      "std_residual": -3.499703167784614
+    },
+    {
+      "from": "sh",
+      "to": "ok",
+      "observed": 111,
+      "expected": 152.76862062294447,
+      "std_residual": -3.379349070304019
+    },
+    {
+      "from": "po",
+      "to": "ch",
+      "observed": 6,
+      "expected": 21.414054942929,
+      "std_residual": -3.330944881998323
+    },
+    {
+      "from": "ok",
+      "to": "BARE",
+      "observed": 183,
+      "expected": 231.499758173728,
+      "std_residual": -3.187603553605214
+    },
+    {
+      "from": "al",
+      "to": "qo",
+      "observed": 6,
+      "expected": 19.73940800928613,
+      "std_residual": -3.0924376969511105
+    },
+    {
+      "from": "sh",
+      "to": "da",
+      "observed": 66,
+      "expected": 95.53448442638808,
+      "std_residual": -3.0216858567838556
+    },
+    {
+      "from": "BARE",
+      "to": "lch",
+      "observed": 26,
+      "expected": 46.45579415747727,
+      "std_residual": -3.0012101079956155
+    }
+  ],
+  "enriched_transitions": [
+    {
+      "from": "sh",
+      "to": "qo",
+      "observed": 823,
+      "expected": 408.86162700715806,
+      "std_residual": 20.481289519365237
+    },
+    {
+      "from": "BARE",
+      "to": "BARE",
+      "observed": 921,
+      "expected": 568.0205068678662,
+      "std_residual": 14.810423172190383
+    },
+    {
+      "from": "ot",
+      "to": "ot",
+      "observed": 170,
+      "expected": 88.14553105049333,
+      "std_residual": 8.718509516976866
+    },
+    {
+      "from": "lk",
+      "to": "lk",
+      "observed": 32,
+      "expected": 8.29647900947959,
+      "std_residual": 8.229357944166123
+    },
+    {
+      "from": "da",
+      "to": "sh",
+      "observed": 149,
+      "expected": 88.27394080092861,
+      "std_residual": 6.463367364556164
+    },
+    {
+      "from": "BARE",
+      "to": "al",
+      "observed": 56,
+      "expected": 25.826272006190752,
+      "std_residual": 5.937424642397548
+    },
+    {
+      "from": "lsh",
+      "to": "qo",
+      "observed": 46,
+      "expected": 20.104952602050687,
+      "std_residual": 5.775175461275775
+    },
+    {
+      "from": "sa",
+      "to": "BARE",
+      "observed": 91,
+      "expected": 51.28932095182821,
+      "std_residual": 5.544901540594149
+    },
+    {
+      "from": "so",
+      "to": "sh",
+      "observed": 41,
+      "expected": 17.73360417875798,
+      "std_residual": 5.524978686288786
+    },
+    {
+      "from": "BARE",
+      "to": "ar",
+      "observed": 45,
+      "expected": 20.314567614625652,
+      "std_residual": 5.476926933417679
+    },
+    {
+      "from": "da",
+      "to": "ch",
+      "observed": 207,
+      "expected": 144.26310698394275,
+      "std_residual": 5.223304762505487
+    },
+    {
+      "from": "po",
+      "to": "sh",
+      "observed": 32,
+      "expected": 13.10316308763784,
+      "std_residual": 5.220367072679682
+    },
+    {
+      "from": "sa",
+      "to": "sh",
+      "observed": 54,
+      "expected": 28.964886825304703,
+      "std_residual": 4.651720809989064
+    },
+    {
+      "from": "qo",
+      "to": "ch",
+      "observed": 728,
+      "expected": 616.0163474559877,
+      "std_residual": 4.511890072722292
+    },
+    {
+      "from": "ok",
+      "to": "lk",
+      "observed": 51,
+      "expected": 27.661878506480946,
+      "std_residual": 4.437364060746342
+    },
+    {
+      "from": "ch",
+      "to": "lk",
+      "observed": 102,
+      "expected": 66.43436834977751,
+      "std_residual": 4.363491367909631
+    },
+    {
+      "from": "do",
+      "to": "sh",
+      "observed": 26,
+      "expected": 11.723882762623331,
+      "std_residual": 4.169407778929614
+    },
+    {
+      "from": "lch",
+      "to": "lk",
+      "observed": 15,
+      "expected": 5.4823466821435485,
+      "std_residual": 4.064869748142925
+    },
+    {
+      "from": "ch",
+      "to": "ka",
+      "observed": 60,
+      "expected": 35.76049526020507,
+      "std_residual": 4.053423487408584
+    },
+    {
+      "from": "ok",
+      "to": "ok",
+      "observed": 129,
+      "expected": 90.62313793770555,
+      "std_residual": 4.031344505417031
+    },
+    {
+      "from": "qo",
+      "to": "qo",
+      "observed": 805,
+      "expected": 699.2868059585993,
+      "std_residual": 3.997620171498543
+    },
+    {
+      "from": "BARE",
+      "to": "ka",
+      "observed": 60,
+      "expected": 36.534726252660086,
+      "std_residual": 3.882153436726906
+    },
+    {
+      "from": "te",
+      "to": "ot",
+      "observed": 35,
+      "expected": 18.4569549235829,
+      "std_residual": 3.8506622495718026
+    },
+    {
+      "from": "ol",
+      "to": "ol",
+      "observed": 47,
+      "expected": 27.20971174308377,
+      "std_residual": 3.7939373020335383
+    },
+    {
+      "from": "ch",
+      "to": "lch",
+      "observed": 71,
+      "expected": 45.47131940414007,
+      "std_residual": 3.7858167785858723
+    },
+    {
+      "from": "sh",
+      "to": "pch",
+      "observed": 28,
+      "expected": 14.173292706519636,
+      "std_residual": 3.6726825451556318
+    },
+    {
+      "from": "ok",
+      "to": "yk",
+      "observed": 30,
+      "expected": 15.595908299477655,
+      "std_residual": 3.647376041806301
+    },
+    {
+      "from": "ch",
+      "to": "qo",
+      "observed": 669,
+      "expected": 582.4953085703231,
+      "std_residual": 3.5842099848630053
+    },
+    {
+      "from": "lk",
+      "to": "lch",
+      "observed": 14,
+      "expected": 5.678564519249371,
+      "std_residual": 3.4920380562448634
+    },
+    {
+      "from": "ta",
+      "to": "ot",
+      "observed": 27,
+      "expected": 14.114142000386922,
+      "std_residual": 3.4299366587495457
+    },
+    {
+      "from": "ka",
+      "to": "ok",
+      "observed": 27,
+      "expected": 14.204681756626039,
+      "std_residual": 3.394965286478649
+    },
+    {
+      "from": "ch",
+      "to": "ta",
+      "observed": 47,
+      "expected": 28.8241923002515,
+      "std_residual": 3.3854401928330926
+    },
+    {
+      "from": "ch",
+      "to": "sa",
+      "observed": 46,
+      "expected": 28.8241923002515,
+      "std_residual": 3.1991794087866188
+    },
+    {
+      "from": "lk",
+      "to": "ok",
+      "observed": 43,
+      "expected": 27.18011220739021,
+      "std_residual": 3.0344345609676746
+    },
+    {
+      "from": "ke",
+      "to": "qo",
+      "observed": 64,
+      "expected": 44.04812342812923,
+      "std_residual": 3.0062150451246414
+    }
+  ],
+  "run_stats": {
+    "qo": {
+      "n_runs": 3264,
+      "mean_length": 1.2466299019607843,
+      "max_length": 6,
+      "self_observed": 805,
+      "self_expected": 699.2868059585993,
+      "self_ratio": 1.1511728709030717
+    },
+    "ch": {
+      "n_runs": 3008,
+      "mean_length": 1.1605718085106382,
+      "max_length": 5,
+      "self_observed": 483,
+      "self_expected": 513.1322789707874,
+      "self_ratio": 0.9412777558425576
+    },
+    "BARE": {
+      "n_runs": 2940,
+      "mean_length": 1.313265306122449,
+      "max_length": 6,
+      "self_observed": 921,
+      "self_expected": 568.0205068678662,
+      "self_ratio": 1.6214203340624187
+    },
+    "sh": {
+      "n_runs": 2109,
+      "mean_length": 1.1043148411569463,
+      "max_length": 4,
+      "self_observed": 220,
+      "self_expected": 220.38929193267558,
+      "self_ratio": 0.9982336168456202
+    },
+    "ok": {
+      "n_runs": 1347,
+      "mean_length": 1.0957683741648108,
+      "max_length": 4,
+      "self_observed": 129,
+      "self_expected": 90.62313793770555,
+      "self_ratio": 1.4234775239042676
+    },
+    "ot": {
+      "n_runs": 1278,
+      "mean_length": 1.1330203442879498,
+      "max_length": 4,
+      "self_observed": 170,
+      "self_expected": 88.14553105049333,
+      "self_ratio": 1.9286286891007227
+    },
+    "da": {
+      "n_runs": 1037,
+      "mean_length": 1.0443587270973964,
+      "max_length": 3,
+      "self_observed": 46,
+      "self_expected": 38.265041594118784,
+      "self_ratio": 1.2021416437469665
+    },
+    "ol": {
+      "n_runs": 828,
+      "mean_length": 1.0567632850241546,
+      "max_length": 3,
+      "self_observed": 47,
+      "self_expected": 27.20971174308377,
+      "self_ratio": 1.727324436354846
+    },
+    "lk": {
+      "n_runs": 406,
+      "mean_length": 1.0788177339901477,
+      "max_length": 4,
+      "self_observed": 32,
+      "self_expected": 8.29647900947959,
+      "self_ratio": 3.8570579113665775
+    },
+    "sa": {
+      "n_runs": 326,
+      "mean_length": 1.00920245398773,
+      "max_length": 2,
+      "self_observed": 3,
+      "self_expected": 2.659024956471271,
+      "self_ratio": 1.1282331114263886
+    },
+    "yk": {
+      "n_runs": 304,
+      "mean_length": 1.0328947368421053,
+      "max_length": 3,
+      "self_observed": 10,
+      "self_expected": 3.4318049912942543,
+      "self_ratio": 2.91391848469474
+    },
+    "lch": {
+      "n_runs": 301,
+      "mean_length": 1.0465116279069768,
+      "max_length": 3,
+      "self_observed": 14,
+      "self_expected": 3.7524182627200617,
+      "self_ratio": 3.730927369981311
+    },
+    "te": {
+      "n_runs": 280,
+      "mean_length": 1.0321428571428573,
+      "max_length": 2,
+      "self_observed": 9,
+      "self_expected": 3.065196362932869,
+      "self_ratio": 2.9361903559707145
+    },
+    "ke": {
+      "n_runs": 256,
+      "mean_length": 1.0078125,
+      "max_length": 2,
+      "self_observed": 2,
+      "self_expected": 2.960630682917392,
+      "self_ratio": 0.675531741104976
+    },
+    "pch": {
+      "n_runs": 237,
+      "mean_length": 1.0337552742616034,
+      "max_length": 2,
+      "self_observed": 8,
+      "self_expected": 1.5142677500483652,
+      "self_ratio": 5.283081542048612
+    }
+  },
+  "sequential_mi": {
+    "prefix_to_prefix": 0.12392960228702803,
+    "middle_to_middle": 1.1947142898229548,
+    "prefix_to_middle": 0.38723968812107584,
+    "middle_to_prefix": 0.49902776618290484,
+    "prefix_seq_perm_p": 0.0,
+    "prefix_seq_null_mean": 0.037875648891656566,
+    "seq_ratio": 0.10373158113425864
+  },
+  "verdict": "PREFIX_SEQUENTIAL_GRAMMAR_PARTIAL",
+  "verdict_detail": "Some PREFIX sequential structure exists (V=0.0604, 19 forbidden) but not strongly grammatical."
+}

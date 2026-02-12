@@ -1,0 +1,107 @@
+{
+  "test": "T3_kernel_lane_role_overlay",
+  "n_middles": 972,
+  "overlay_distributions": {
+    "lane": {
+      "OTHER": 436,
+      "CHSH": 412,
+      "QO": 124
+    },
+    "kernel": {
+      "NONE": 342,
+      "H": 166,
+      "E": 137,
+      "MULTI": 246,
+      "K": 81
+    },
+    "compound": {
+      "BASE": 278,
+      "COMPOUND": 694
+    },
+    "frequency": {
+      "MED": 62,
+      "HAPAX": 634,
+      "LOW": 239,
+      "HIGH": 37
+    }
+  },
+  "svm_results": {
+    "lane": {
+      "accuracy": 0.44548770816812056,
+      "std": 0.014461461963596697,
+      "chance": 0.448559670781893,
+      "lift": 0.9931514961913146,
+      "n_samples": 972,
+      "n_classes": 3
+    },
+    "kernel": {
+      "accuracy": 0.3219984139571769,
+      "std": 0.0368802095035611,
+      "chance": 0.35185185185185186,
+      "lift": 0.9151533870361869,
+      "n_samples": 972,
+      "n_classes": 5
+    },
+    "compound": {
+      "accuracy": 0.6810203542162305,
+      "std": 0.029104949389737393,
+      "chance": 0.7139917695473251,
+      "lift": 0.9538210148388704,
+      "n_samples": 972,
+      "n_classes": 2
+    },
+    "frequency": {
+      "accuracy": 0.6758921490880253,
+      "std": 0.01593874399716154,
+      "chance": 0.6522633744855967,
+      "lift": 1.0362258184756477,
+      "n_samples": 972,
+      "n_classes": 4
+    }
+  },
+  "fisher_criteria": {
+    "lane": 0.0027331961679785744,
+    "kernel": 0.006259221278343485,
+    "compound": 0.0015199089571747853,
+    "frequency": 0.007447599779037863
+  },
+  "independence": {
+    "lane-kernel": {
+      "cramers_v": 0.29300989012546375,
+      "chi2": 166.90172286283786,
+      "p": 5.749054919304462e-32
+    },
+    "lane-compound": {
+      "cramers_v": 0.16691189055288452,
+      "chi2": 27.079510990115832,
+      "p": 1.3175251137299995e-06
+    },
+    "lane-frequency": {
+      "cramers_v": 0.07089333189585235,
+      "chi2": 9.770280602182407,
+      "p": 0.13466532532092326
+    },
+    "kernel-compound": {
+      "cramers_v": 0.3017434028350529,
+      "chi2": 88.49970688215167,
+      "p": 2.742521256978232e-18
+    },
+    "kernel-frequency": {
+      "cramers_v": 0.09961019132575766,
+      "chi2": 28.933106669722,
+      "p": 0.004031087642093537
+    },
+    "compound-frequency": {
+      "cramers_v": 0.3202398765926328,
+      "chi2": 99.68207836038289,
+      "p": 1.8190865777542186e-21
+    }
+  },
+  "pca_variance": [
+    0.022916678531633403,
+    0.021599117084747613,
+    0.01911648493931447
+  ],
+  "verdict": "SEPARABLE_AXES",
+  "explanation": "2 overlays predictable at \u226565% accuracy, 4/6 overlay pairs have V<0.30 (partially independent). The manifold encodes multiple separable constraint dimensions."
+}

@@ -1,0 +1,88 @@
+{
+  "test": "T6_null_ensemble",
+  "n_trials": 100,
+  "n_nodes": 972,
+  "density": 0.02376108801329078,
+  "real_metrics": {
+    "lambda_1": 81.97675337170396,
+    "lambda_2": 19.159221044361463,
+    "spectral_gap": 4.278710140766899,
+    "n_eig_above_12": 18.0,
+    "effective_rank_top50": 27.717813387156927,
+    "clustering": 0.8732337259827936,
+    "mean_degree": 23.07201646090535,
+    "max_degree": 496.0,
+    "n_edges": 11213.0
+  },
+  "comparison": {
+    "lambda_1": {
+      "real": 81.97675337170396,
+      "cm_mean": 57.025452004380526,
+      "cm_std": 0.3133875133606892,
+      "cm_z": 79.61804572157943,
+      "cm_percentile": 100.0,
+      "cm_anomalous": true,
+      "er_mean": 24.04552099254732,
+      "er_std": 0.2116650662282921,
+      "er_z": 273.69293106059695,
+      "er_percentile": 100.0,
+      "er_anomalous": true
+    },
+    "spectral_gap": {
+      "real": 4.278710140766899,
+      "cm_mean": 4.291794221318309,
+      "cm_std": 0.06431792854081794,
+      "cm_z": -0.20342820187541583,
+      "cm_percentile": 45.0,
+      "cm_anomalous": false,
+      "er_mean": 2.5155806576698017,
+      "er_std": 0.020109142714997842,
+      "er_z": 87.67800338808657,
+      "er_percentile": 100.0,
+      "er_anomalous": true
+    },
+    "n_eig_above_12": {
+      "real": 18.0,
+      "cm_mean": 7.17,
+      "cm_std": 0.6173329733620261,
+      "cm_z": 17.543206773840836,
+      "cm_percentile": 100.0,
+      "cm_anomalous": true,
+      "er_mean": 1.0,
+      "er_std": 0.0,
+      "er_z": 0.0,
+      "er_percentile": 100.0,
+      "er_anomalous": true
+    },
+    "effective_rank_top50": {
+      "real": 27.717813387156927,
+      "cm_mean": 20.239548085049748,
+      "cm_std": 0.4714903842881731,
+      "cm_z": 15.860907351053191,
+      "cm_percentile": 100.0,
+      "cm_anomalous": true,
+      "er_mean": 23.803724243982273,
+      "er_std": 0.5957638990759037,
+      "er_z": 6.569866266227011,
+      "er_percentile": 100.0,
+      "er_anomalous": true
+    },
+    "clustering": {
+      "real": 0.8732337259827936,
+      "cm_mean": 0.24974565461804954,
+      "cm_std": 0.004553021513831679,
+      "cm_z": 136.93940814262402,
+      "cm_percentile": 100.0,
+      "cm_anomalous": true,
+      "er_mean": 0.0237240880032489,
+      "er_std": 0.0006275073083988882,
+      "er_z": 1353.7844525621622,
+      "er_percentile": 100.0,
+      "er_anomalous": true
+    }
+  },
+  "anomalous_cm": 4,
+  "anomalous_er": 5,
+  "verdict": "RARE",
+  "explanation": "The spectral profile is anomalous even under degree-preserving randomization. The structure goes beyond degree heterogeneity."
+}

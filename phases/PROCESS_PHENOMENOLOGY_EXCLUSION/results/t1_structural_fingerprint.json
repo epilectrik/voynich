@@ -1,0 +1,258 @@
+{
+  "test": "T1_structural_fingerprint_compilation",
+  "n_source_files_loaded": 18,
+  "n_source_files_total": 18,
+  "missing_sources": [],
+  "fingerprint": {
+    "automaton": {
+      "instruction_classes": 49,
+      "states": 6,
+      "state_compression": "8.2x (49 -> 6)",
+      "forbidden_transitions": 17,
+      "hazard_classes": 5,
+      "hazard_distribution": {
+        "PHASE_ORDERING": 0.41,
+        "COMPOSITION_JUMP": 0.24,
+        "CONTAINMENT_TIMING": 0.24,
+        "RATE_MISMATCH": 0.06,
+        "ENERGY_OVERSHOOT": 0.06
+      },
+      "hazard_involved_classes": "6/49 (12.2%)",
+      "hazard_compliance_rate": 1.0,
+      "hazard_asymmetry_rate": 0.65,
+      "convergence_target": "STATE-C",
+      "terminal_state_c_pct": 0.578,
+      "provenance": [
+        "C109",
+        "C110",
+        "C111",
+        "C121",
+        "C124",
+        "C541",
+        "C789",
+        "C976"
+      ]
+    },
+    "kernel": {
+      "operators": {
+        "k": "ENERGY_MODULATOR",
+        "h": "PHASE_MANAGER",
+        "e": "STABILITY_ANCHOR"
+      },
+      "e_recovery_rate": 0.547,
+      "k_to_e_elevation": 4.32,
+      "h_to_e_elevation": 7.0,
+      "e_to_h_suppressed": true,
+      "e_to_k_suppressed": true,
+      "kernel_boundary_adjacent": true,
+      "provenance": [
+        "C089",
+        "C103",
+        "C104",
+        "C105",
+        "C107",
+        "C521",
+        "C522"
+      ]
+    },
+    "lane_oscillation": {
+      "model_type": "first_order_markov_plus_hazard_gate",
+      "parameters": 12,
+      "alternation_rate": 0.554,
+      "hazard_gate_chsh_fraction": 0.752,
+      "hazard_gate_decay_tokens": 1,
+      "bic_best_model": "markov_haz",
+      "section_variation": true,
+      "provenance": [
+        "C643",
+        "C644",
+        "C645",
+        "C650",
+        "C966"
+      ]
+    },
+    "discrimination_space": {
+      "n_middles": 972,
+      "dimensionality": 101,
+      "effective_rank": 344,
+      "leading_eigenvalue": 81.97675337170392,
+      "compatibility_pct": 2.2,
+      "prefix_enrichment": 3.92,
+      "opaque_eigenvectors": 27,
+      "total_analyzed_eigenvectors": 29,
+      "provenance": [
+        "C475",
+        "C506",
+        "C983",
+        "C987",
+        "C991"
+      ]
+    },
+    "transitivity": {
+      "clustering_coefficient": 0.873,
+      "z_score_vs_config_model": 136.9,
+      "z_score_vs_erdos_renyi": 286.7,
+      "provenance": [
+        "C983"
+      ]
+    },
+    "affordance_mapping": {
+      "n_clusters": 5,
+      "families": [
+        "THERMAL",
+        "MONITORING",
+        "FLOW",
+        "PHASE",
+        "RECOVERY"
+      ],
+      "med_plus_coverage": 0.6388888888888888,
+      "exclusion_explanation_rate": 1.0,
+      "mapping_verdict": "COHERENT_MAPPING"
+    },
+    "uniqueness": {
+      "discriminating_features": [
+        "F2_depleted_asymmetry",
+        "F10_low_cross_line_MI",
+        "F9_role_position_MI"
+      ],
+      "non_discriminating_features": [
+        "F3_clustering",
+        "F4_one_way_kernel",
+        "F5_first_order_sufficiency",
+        "F6_1token_gate",
+        "F7_incompatibility",
+        "F8_hub_rationing",
+        "F11_suffix_role_chi2"
+      ],
+      "fisher_p": 7.669083090799944e-08,
+      "overall_verdict": "UNCOMMON"
+    },
+    "program_structure": {
+      "folio_is_program": true,
+      "line_is_control_block": true,
+      "link_density": 0.132,
+      "energy_initial_enrichment": 0.45,
+      "energy_final_enrichment": 0.5,
+      "flow_final_enrichment": 1.65,
+      "design_asymmetry": "hazard_clamped_recovery_free",
+      "recovery_free_features": "10/12",
+      "provenance": [
+        "C178",
+        "C357",
+        "C458",
+        "C556",
+        "C636"
+      ]
+    },
+    "hazard_enforcement": {
+      "forbidden_observed": 0,
+      "near_misses": 114,
+      "buffer_positions": 481,
+      "hazard_density_mean": 0.251
+    }
+  },
+  "feature_vector": {
+    "F01_1token_response_time": {
+      "value": true,
+      "evidence": "Hazard gate KL returns to baseline at offset+2, gate duration 1 token",
+      "source": "LANE_OSCILLATION T2, C967"
+    },
+    "F02_first_order_markov_sufficient": {
+      "value": true,
+      "evidence": "BIC selects markov_haz (12 params) over full model (18 params)",
+      "source": "LANE_OSCILLATION T6, C966"
+    },
+    "F03_categorical_not_numeric": {
+      "value": true,
+      "evidence": "No ratio encoding (C287-C290), no magnitude encoding, discrete MIDDLE variants",
+      "source": "C287, C288, C289, C290, C469"
+    },
+    "F04_high_dimensional_incompatibility": {
+      "value": true,
+      "evidence": "101D discrimination space, effective rank 344, 972 MIDDLEs",
+      "source": "DISCRIMINATION_SPACE T1/T5, C987"
+    },
+    "F05_strong_transitivity": {
+      "value": true,
+      "evidence": "Clustering coefficient 0.873, z=+136.9 vs configuration model",
+      "source": "C983"
+    },
+    "F06_hazard_asymmetry": {
+      "value": true,
+      "evidence": "65% of forbidden transitions are asymmetric (directed hazards)",
+      "source": "C111, C789"
+    },
+    "F07_absorbing_stabilization_state": {
+      "value": true,
+      "evidence": "e-operator absorbs 54.7% of recovery paths, one-way valve k,h->e",
+      "source": "C105, C521"
+    },
+    "F08_lane_oscillation": {
+      "value": true,
+      "evidence": "QO/CHSH alternation at 55.4%, post-hazard CHSH spike to 75.2%",
+      "source": "C643, C645, C966"
+    },
+    "F09_energy_medial_concentration": {
+      "value": true,
+      "evidence": "ENERGY operators 0.45x at initial, 0.50x at final (boundary avoidance)",
+      "source": "C556"
+    },
+    "F10_recovery_unconditionally_free": {
+      "value": true,
+      "evidence": "10/12 recovery features REGIME-independent, escape is folio-specific design",
+      "source": "C636, C635"
+    },
+    "F11_universal_grammar": {
+      "value": true,
+      "evidence": "49 classes, 100% coverage across 83 folios, 0 exceptions",
+      "source": "C124"
+    },
+    "F12_phase_ordering_dominant_hazard": {
+      "value": true,
+      "evidence": "PHASE_ORDERING is 41% of hazard transitions (7/17), largest class",
+      "source": "C109, C110"
+    },
+    "F13_convergent_monostate": {
+      "value": true,
+      "evidence": "57.8% of programs terminate in STATE-C, convergent attractor",
+      "source": "C079, C323"
+    },
+    "F14_exactly_5_hazard_classes": {
+      "value": true,
+      "evidence": "5 failure classes covering 17 forbidden transitions in 6 instruction classes",
+      "source": "C109, C541"
+    },
+    "F15_closed_loop_not_batch": {
+      "value": true,
+      "evidence": "Circulatory: line resets (C670), no long-range carry, mixing time 1.1 tokens",
+      "source": "C670, C966"
+    },
+    "F16_line_boundary_memory_reset": {
+      "value": true,
+      "evidence": "Hard line resets, cross-line MI = 0.52 bits (below null Markov 0.72-0.77)",
+      "source": "C670, FINGERPRINT_UNIQUENESS F10"
+    },
+    "F17_link_monitoring_phase": {
+      "value": true,
+      "evidence": "LINK density 13.2%, LINK mean position 0.476 (early-line bias)",
+      "source": "C609, C813"
+    },
+    "F18_e_recovery_dominance": {
+      "value": true,
+      "evidence": "54.7% recovery paths through e, kernel exit rate 98-100%",
+      "source": "C105, C634"
+    },
+    "F19_folio_vocabulary_uniqueness": {
+      "value": true,
+      "evidence": "Each folio has unique MIDDLE vocabulary, program = folio",
+      "source": "C178, C531"
+    },
+    "F20_design_asymmetry": {
+      "value": true,
+      "evidence": "Hazard topology clamped (same 17 in all folios), recovery free (varies per folio)",
+      "source": "C458, C636"
+    }
+  },
+  "n_features": 20,
+  "verdict": "COMPILED"
+}

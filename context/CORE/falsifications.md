@@ -144,6 +144,66 @@ The following purpose classes were eliminated by structural incompatibility:
 
 ---
 
+## Lane Oscillation Falsifications (2026-02-10)
+
+### Hidden Lane Accumulator (FALSIFIED)
+**Hypothesis:** EN lane oscillation requires a hidden accumulator or multi-line state memory beyond first-order Markov.
+**Test:** 9-test generative battery (LANE_OSCILLATION_CONTROL_LAW phase). Assembled Markov, Markov+hazard, and full PHMC-CG models. Tested 2nd-order alternation correction.
+**Result:** Section-specific first-order Markov + 1-token hazard gate (12 params) achieves composite deviation 0.975 on 8 valid metrics. No cross-line memory improves fidelity.
+**Status:** Do not hypothesize hidden lane state. The system is first-order.
+
+### Multi-Token Hazard Dampening (FALSIFIED)
+**Hypothesis:** The post-hazard CHSH dominance (C645) decays gradually over multiple tokens.
+**Test:** KL divergence and chi-squared at offsets +1 through +5 (T2).
+**Result:** KL drops from 0.098 at offset +1 to 0.0005 at offset +2 (p=0.58, not significant). Gate is exactly 1 token.
+**Status:** Do not model gradual hazard recovery. It is a 1-step pulse.
+
+### Intrinsic Within-Folio Drift (FALSIFIED)
+**Hypothesis:** QO fraction drifts systematically within folios (e.g., toward CHSH in later lines).
+**Test:** Spearman correlation of QO fraction vs quartile position, with partial correlation controlling EN density (T5).
+**Result:** rho=0.059, p=0.292. Partial rho=0.030, p=0.590. No REGIME shows significant drift.
+**Status:** Do not model within-folio drift. Apparent drift is emergent from composition.
+
+### 2nd-Order Alternation Correction Improves Fidelity (FALSIFIED)
+**Hypothesis:** Adding a post-SWITCH/post-STAY correction to the Markov model will close the generative gap.
+**Test:** Estimated epsilon=+0.062, delta=-0.067 from T8 second-order data. Applied in T9 generative simulation.
+**Result:** Composite deviation worsened from 1.427 to 1.495. Fixes QO runs but breaks CHSH runs (asymmetric effect).
+**Status:** Do not add alternation correction. First-order markov_haz is the structural optimum.
+
+---
+
+## Thermal Plant Simulation Falsifications (2026-02-11)
+
+### Analog Thermal Physics Necessarily Produces Voynich Topology (FALSIFIED)
+**Hypothesis:** A minimal reflux distillation simulation, governed only by thermodynamics and proportional control, necessarily produces Voynich-like macro-state grammar topology.
+**Test:** 100 LHS-randomized parameterizations × 10 runs. P-controller with 3-step delay. GMM+BIC state extraction. Scored against 10 quantitative Voynich targets. Two null models (batch still, open heating) for discrimination.
+**Result:** Median 3/10 hits (STRUCTURAL_DIVERGENCE). Spectral gap 1% hit rate. Forbidden pairs 4%. Post-overshoot cooling 2%. Null models score equally or higher (batch=3, open=4).
+**Status:** Do not assume continuous thermal dynamics produce Voynich-like discrete structure. The grammar's topology (6-state hub-spoke, spectral gap 0.894, 17 forbidden pairs) requires a discrete encoding layer.
+
+### Reflux-Specific Dynamics Improve Voynich Fidelity Over Generic Control (FALSIFIED)
+**Hypothesis:** Reflux-specific physics (vaporization + condensation cycling) produces better Voynich fidelity than simpler thermal models.
+**Test:** Compared reflux model (full α, β) against Batch Still (β=0, no reflux return) and Open Heating (α=0, no phase transition).
+**Result:** Reflux median=3, Batch Still median=3, Open Heating median=4. No reflux advantage. Open heating actually scores higher.
+**Status:** Do not claim reflux-specific dynamics are necessary for Voynich topology. The matching features (oscillation variation, buffer rate) come from generic P-controller dynamics.
+
+---
+
+## Categorical Discretization Falsifications (2026-02-11)
+
+### Categorical Discretization Bridges Voynich Topology Gap (FALSIFIED)
+**Hypothesis:** Discretizing continuous thermal plant simulation data into categorical states (using physically-motivated binning strategies) bridges the gap between analog dynamics and Voynich grammar topology.
+**Test:** 5 physical strategies + 1 random null across 100 LHS-randomized parameterizations. Direction-of-movement scoring against continuous baseline (C998). BIC-emergent K. Legality imposition layer.
+**Result:** Best physical strategy (lane_temp) moves 3/9 metrics toward Voynich — identical to random binning (3/9). Zero forbidden transitions from any strategy. Hub mass degrades under all strategies.
+**Status:** Do not attempt to derive Voynich topology from physical simulation + discretization. The encoding layer is designed, not emergent.
+
+### Physical Discretization Outperforms Random Binning (FALSIFIED)
+**Hypothesis:** Physically-motivated state definitions (lane × temperature, operational regime, Q-action × phase) produce better Voynich fidelity than random label assignment.
+**Test:** Compared 5 physics-based strategies against random null (K matched to best physical).
+**Result:** All physical strategies score 2-3/9 metrics toward Voynich. Random scores 3/9. No physical advantage. Spectral gap from random (0.940) exceeds Voynich target (0.894).
+**Status:** Do not claim physical binning has discriminative advantage for Voynich topology. The structure is in the encoding rules, not the bin definitions.
+
+---
+
 ## Rule
 
 **Do not retry falsified approaches.**

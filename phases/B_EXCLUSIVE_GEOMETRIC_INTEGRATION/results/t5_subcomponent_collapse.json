@@ -1,0 +1,68 @@
+{
+  "test": "T5_subcomponent_collapse",
+  "n_exclusive": 900,
+  "n_shared": 393,
+  "thresholds": {
+    "all_a": {
+      "n_atoms_available": 953,
+      "n_with_atoms": 847,
+      "pct_with_atoms": 0.9411111111111111,
+      "mean_coverage": 0.885818783068783,
+      "n_high_coverage": 715,
+      "pct_high_coverage": 0.7944444444444444
+    },
+    "core_a": {
+      "n_atoms_available": 373,
+      "n_with_atoms": 847,
+      "pct_with_atoms": 0.9411111111111111,
+      "mean_coverage": 0.8840833333333333,
+      "n_high_coverage": 713,
+      "pct_high_coverage": 0.7922222222222223
+    },
+    "frequent_a": {
+      "n_atoms_available": 83,
+      "n_with_atoms": 768,
+      "pct_with_atoms": 0.8533333333333334,
+      "mean_coverage": 0.6418712522045855,
+      "n_high_coverage": 330,
+      "pct_high_coverage": 0.36666666666666664
+    }
+  },
+  "atom_count_distribution": {
+    "0": 53,
+    "1": 126,
+    "2": 489,
+    "3": 182,
+    "4": 44,
+    "5": 6
+  },
+  "top_atoms": {
+    "ed": 63,
+    "eed": 37,
+    "he": 33,
+    "aii": 28,
+    "ch": 27,
+    "da": 27,
+    "hd": 25,
+    "op": 25,
+    "lk": 24,
+    "ec": 23,
+    "al": 21,
+    "ar": 20,
+    "sh": 20,
+    "pch": 18,
+    "dy": 18,
+    "ai": 17,
+    "olk": 17,
+    "te": 16,
+    "lo": 15,
+    "eee": 15
+  },
+  "coverage_summary": {
+    "fully_covered": 665,
+    "partial": 182,
+    "none": 53
+  },
+  "verdict": "FULL_COLLAPSE",
+  "explanation": "94% of B-exclusive MIDDLEs contain A atoms, mean coverage 89%. They are superstring variants of A discrimination axes."
+}

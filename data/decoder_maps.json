@@ -1,12 +1,14 @@
 {
   "meta": {
-    "version": "1.4",
+    "version": "1.6",
     "description": "Externalized BFolioDecoder maps with constraint citations",
     "source": "Extracted from scripts/voynich.py BFolioDecoder class",
     "v1.1_changes": "Expert validation: fixed -ey (strong→selective), -dy (gentle→basic), -ar (recover→close), removed sch=grind (unsupported), demoted ksh/FL glosses to Tier 4, fixed CC_TOKENS to use C874 labels",
     "v1.2_changes": "Fixed lch/te prefix_roles: PREP→PREP_TIER to separate role taxonomy from phase taxonomy",
     "v1.3_changes": "Expert deep validation: ct CC_CORE→A_ENRICHED (C282), al/ar/or AX_LINK→AX_LATE (C539/C609), ly WATER demoted to Tier 4, OIL_MARKER kc/okch demoted to Tier 4 (F-BRU-020 is F4)",
     "v1.4_changes": "Expert f26r glossing: -edy energy-check→thorough (C283), -dy basic→close (C597), -hy maintain→verify-maintain (C907)",
+    "v1.5_changes": "Control grammar viewer: added macro_state (C976, 49→6-state), hub_sub_role (C1000, 23 hub MIDDLEs), prefix_zone (C1001, positional bias)",
+    "v1.6_changes": "Verb consolidation: synced 10 prefix_actions entries to GLOSSING.md (pch=chop, tch=pound, te=gather, ke=sustain, kch=precision-heat, lch=modified energy, ot=scaffold, qo=energy, rch=input-test, dch=divide-test). Deprecated brunschwig_gloss map. Fixed self-description from 'Operational verbs' to 'PREFIX operational labels'.",
     "tier_note": "tier 0-2 = structural (constraint-backed), tier 3 = interpretive (Brunschwig-grounded), tier 4 = speculative"
   },
   "maps": {
@@ -783,6 +785,8 @@
     "brunschwig_gloss": {
       "constraint_group": "F-BRU-011",
       "tier": 3,
+      "DEPRECATED": true,
+      "deprecation_note": "DEPRECATED: Use prefix_actions for all PREFIX labels. This map predates C929 (ch/sh discrimination) and is no longer maintained. Kept for historical reference only.",
       "entries": {
         "k": {
           "value": "apply heat",
@@ -1667,7 +1671,7 @@
     "prefix_actions": {
       "constraint_group": "C556, C929, C930, C931, F-BRU-012",
       "tier": 3,
-      "note": "Operational verbs. PREP from F-BRU-012, WORK from C929/C556, Brunschwig mapping from C930/C931/BRUNSCHWIG_APPARATUS_MAPPING phase.",
+      "note": "PREFIX operational labels (domain selectors and behavioral categories). Verb labels are Tier 3 Brunschwig overlay. GLOSSING.md is authoritative source. PREP from F-BRU-012, WORK from C929/C556, positional from C931.",
       "entries": {
         "ch": {
           "value": "test",
@@ -1682,10 +1686,10 @@
           "note": "Ongoing watch (C929: sh=monitor, ch=test discrimination)"
         },
         "qo": {
-          "value": "execute",
-          "constraint": "C556, C931",
+          "value": "energy",
+          "constraint": "C644, C556, C931",
           "tier": 3,
-          "note": "Core distillation/execution. Rank 1 prefix, selects kernel MIDDLEs (k,t,ke) exclusively. Uniform positional distribution (always present). B-enriched 1.30x."
+          "note": "Energy domain selector (C644). Rank 1 prefix, selects kernel MIDDLEs (k,t,ke) exclusively. Uniform positional distribution (always present). B-enriched 1.30x."
         },
         "ok": {
           "value": "vessel",
@@ -1694,10 +1698,10 @@
           "note": "DOMAIN SELECTOR: vessel/apparatus target (C936 revised). MIDDLE provides action on vessel. Late position (mean 0.538). H-enriched 1.36x. e-family + infra MIDDLEs (C911). Sister pair with ot (proactive/corrective). Jaccard 0.82 with ot."
         },
         "ot": {
-          "value": "rectify",
-          "constraint": "C556, C931",
+          "value": "scaffold",
+          "constraint": "C556, C931, C911",
           "tier": 3,
-          "note": "Post-process (rectify/filter/pour). Late position (init/final 0.36x). C-enriched 1.48x. Selects finalize MIDDLEs (al 4.6x, am 4.3x, ar 4.0x). Jaccard 0.82 with ok."
+          "note": "Scaffold — often silent/structural. Late position (init/final 0.36x). C-enriched 1.48x. Selects finalize MIDDLEs (al 4.6x, am 4.3x, ar 4.0x). Jaccard 0.82 with ok."
         },
         "da": {
           "value": "setup",
@@ -1740,10 +1744,10 @@
           "tier": 3
         },
         "ke": {
-          "value": "cool",
-          "constraint": "C556, C931",
+          "value": "sustain",
+          "constraint": "F-BRU-017, C556, C931",
           "tier": 3,
-          "note": "Cool/settle (thermal equilibration). Late position (init/final 0.29x). H-enriched 1.37x. Selects dy (7.3x), o (5.0x), eo (2.6x). Avoids k/l/t/iin/r."
+          "note": "Sustain (sustained heat cycles, F-BRU-017). Late position (init/final 0.29x). H-enriched 1.37x. Selects dy (7.3x), o (5.0x), eo (2.6x). Avoids k/l/t/iin/r."
         },
         "ka": {
           "value": "anchor",
@@ -1781,32 +1785,34 @@
           "tier": 3
         },
         "pch": {
-          "value": "gather",
+          "value": "chop",
           "constraint": "F-BRU-012, C931",
           "tier": 3,
-          "note": "Gather/collect. 48.2% line-initial, 25.5x par-initial (highest procedure opener). Even section distribution (universal operation)."
+          "note": "Chop (F-BRU-012 prep operation). 48.2% line-initial, 25.5x par-initial (highest procedure opener). Even section distribution (universal operation)."
         },
         "tch": {
-          "value": "chop",
+          "value": "pound",
           "constraint": "F-BRU-012, C931",
           "tier": 3,
-          "note": "Chop/cut. 52.9% line-initial, 10.7x par-initial. C-enriched 2.33x, H-enriched 1.82x."
+          "note": "Pound (F-BRU-012 prep operation). 52.9% line-initial, 10.7x par-initial. C-enriched 2.33x, H-enriched 1.82x."
         },
         "lch": {
-          "value": "pour",
-          "constraint": "F-BRU-012, C931",
+          "value": "modified energy",
+          "constraint": "C298, F-BRU-012, C931",
           "tier": 3,
-          "note": "Pour/strain (liquid transfer). Final position (init/final 0.40x). B-enriched 1.30x, H-depleted 0.24x. Selects edy (4.1x), ey (3.6x). Co-occurs with lk (1.39x)."
+          "note": "L-compound: modified energy (C298). Final position (init/final 0.40x). B-enriched 1.30x, H-depleted 0.24x. Selects edy (4.1x), ey (3.6x). Co-occurs with lk (1.39x)."
         },
         "kch": {
-          "value": "chop",
-          "constraint": "F-BRU-012",
-          "tier": 3
+          "value": "precision-heat",
+          "constraint": "F-BRU-013, F-BRU-012",
+          "tier": 3,
+          "note": "Precision-heat (F-BRU-013: ke vs kch differentiation). Intensive sections 54.7% OTHER."
         },
         "dch": {
-          "value": "divide",
+          "value": "divide-test",
           "constraint": "F-BRU-012",
-          "tier": 3
+          "tier": 3,
+          "note": "Compound [C]+ch: divide-test (Test 18)"
         },
         "fch": {
           "value": "prepare",
@@ -1814,9 +1820,10 @@
           "tier": 3
         },
         "rch": {
-          "value": "prepare",
+          "value": "input-test",
           "constraint": "F-BRU-012",
-          "tier": 3
+          "tier": 3,
+          "note": "Compound [C]+ch: input-test (Test 18)"
         },
         "sch": {
           "value": "prepare",
@@ -1829,10 +1836,10 @@
           "tier": 4
         },
         "te": {
-          "value": "strip",
+          "value": "gather",
           "constraint": "F-BRU-012, C931",
           "tier": 3,
-          "note": "Strip/wash (preparation). 19.7% line-initial (3.35x init/final). C-enriched 1.91x, H-enriched 1.40x. Selects dy (10.4x), o, d, ey."
+          "note": "Gather (F-BRU-012 prep operation). 19.7% line-initial (3.35x init/final). C-enriched 1.91x, H-enriched 1.40x. Selects dy (10.4x), o, d, ey."
         },
         "de": {
           "value": "divide",
@@ -1875,6 +1882,151 @@
         "h",
         "e"
       ]
+    },
+    "macro_state": {
+      "constraint_group": "C976",
+      "tier": 2,
+      "note": "49-class → 6-state compression from MINIMAL_STATE_AUTOMATON final_partition",
+      "labels": {
+        "FL_HAZ": "hazard flow",
+        "FQ": "frequency",
+        "CC": "control change",
+        "AXm": "minor scaffold",
+        "AXM": "major scaffold",
+        "FL_SAFE": "safe flow"
+      },
+      "entries": {
+        "7": {"value": "FL_HAZ", "constraint": "C976", "tier": 2},
+        "30": {"value": "FL_HAZ", "constraint": "C976", "tier": 2},
+        "9": {"value": "FQ", "constraint": "C976", "tier": 2},
+        "13": {"value": "FQ", "constraint": "C976", "tier": 2},
+        "14": {"value": "FQ", "constraint": "C976", "tier": 2},
+        "23": {"value": "FQ", "constraint": "C976", "tier": 2},
+        "10": {"value": "CC", "constraint": "C976", "tier": 2},
+        "11": {"value": "CC", "constraint": "C976", "tier": 2},
+        "12": {"value": "CC", "constraint": "C976", "tier": 2},
+        "3": {"value": "AXm", "constraint": "C976", "tier": 2},
+        "5": {"value": "AXm", "constraint": "C976", "tier": 2},
+        "18": {"value": "AXm", "constraint": "C976", "tier": 2},
+        "19": {"value": "AXm", "constraint": "C976", "tier": 2},
+        "42": {"value": "AXm", "constraint": "C976", "tier": 2},
+        "45": {"value": "AXm", "constraint": "C976", "tier": 2},
+        "1": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "2": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "4": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "6": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "8": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "15": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "16": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "17": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "20": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "21": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "22": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "24": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "25": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "26": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "27": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "28": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "29": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "31": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "32": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "33": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "34": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "35": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "36": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "37": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "39": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "41": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "43": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "44": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "46": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "47": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "48": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "49": {"value": "AXM", "constraint": "C976", "tier": 2},
+        "38": {"value": "FL_SAFE", "constraint": "C976", "tier": 2},
+        "40": {"value": "FL_SAFE", "constraint": "C976", "tier": 2}
+      }
+    },
+    "hub_sub_role": {
+      "constraint_group": "C1000",
+      "tier": 2,
+      "note": "23 hub MIDDLEs decomposed into 4 functional sub-roles from HUB_ROLE_DECOMPOSITION",
+      "labels": {
+        "HAZARD_SOURCE": "hazard source",
+        "HAZARD_TARGET": "hazard target",
+        "SAFETY_BUFFER": "safety buffer",
+        "PURE_CONNECTOR": "connector"
+      },
+      "entries": {
+        "ar": {"value": "HAZARD_SOURCE", "constraint": "C1000", "tier": 2},
+        "dy": {"value": "HAZARD_SOURCE", "constraint": "C1000", "tier": 2},
+        "ey": {"value": "HAZARD_SOURCE", "constraint": "C1000", "tier": 2},
+        "l": {"value": "HAZARD_SOURCE", "constraint": "C1000", "tier": 2},
+        "ol": {"value": "HAZARD_SOURCE", "constraint": "C1000", "tier": 2},
+        "or": {"value": "HAZARD_SOURCE", "constraint": "C1000", "tier": 2},
+        "aiin": {"value": "HAZARD_TARGET", "constraint": "C1000", "tier": 2},
+        "al": {"value": "HAZARD_TARGET", "constraint": "C1000", "tier": 2},
+        "ee": {"value": "HAZARD_TARGET", "constraint": "C1000", "tier": 2},
+        "o": {"value": "HAZARD_TARGET", "constraint": "C1000", "tier": 2},
+        "r": {"value": "HAZARD_TARGET", "constraint": "C1000", "tier": 2},
+        "t": {"value": "HAZARD_TARGET", "constraint": "C1000", "tier": 2},
+        "eol": {"value": "SAFETY_BUFFER", "constraint": "C1000", "tier": 2},
+        "k": {"value": "SAFETY_BUFFER", "constraint": "C1000", "tier": 2},
+        "od": {"value": "SAFETY_BUFFER", "constraint": "C1000", "tier": 2},
+        "d": {"value": "PURE_CONNECTOR", "constraint": "C1000", "tier": 2},
+        "e": {"value": "PURE_CONNECTOR", "constraint": "C1000", "tier": 2},
+        "eey": {"value": "PURE_CONNECTOR", "constraint": "C1000", "tier": 2},
+        "ek": {"value": "PURE_CONNECTOR", "constraint": "C1000", "tier": 2},
+        "eo": {"value": "PURE_CONNECTOR", "constraint": "C1000", "tier": 2},
+        "iin": {"value": "PURE_CONNECTOR", "constraint": "C1000", "tier": 2},
+        "s": {"value": "PURE_CONNECTOR", "constraint": "C1000", "tier": 2},
+        "y": {"value": "PURE_CONNECTOR", "constraint": "C1000", "tier": 2}
+      }
+    },
+    "prefix_zone": {
+      "constraint_group": "C1001",
+      "tier": 2,
+      "note": "PREFIX intrinsic line-position bias from PP_INFORMATION_DECOMPOSITION T2",
+      "labels": {
+        "INITIAL_BIASED": "initial",
+        "CENTRAL": "central",
+        "FINAL_BIASED": "final",
+        "UNIFORM": "uniform"
+      },
+      "entries": {
+        "po": {"value": "INITIAL_BIASED", "constraint": "C1001", "tier": 2},
+        "dch": {"value": "INITIAL_BIASED", "constraint": "C1001", "tier": 2},
+        "so": {"value": "INITIAL_BIASED", "constraint": "C1001", "tier": 2},
+        "tch": {"value": "INITIAL_BIASED", "constraint": "C1001", "tier": 2},
+        "sh": {"value": "INITIAL_BIASED", "constraint": "C1001", "tier": 2},
+        "pch": {"value": "INITIAL_BIASED", "constraint": "C1001", "tier": 2},
+        "sa": {"value": "INITIAL_BIASED", "constraint": "C1001", "tier": 2},
+        "lsh": {"value": "INITIAL_BIASED", "constraint": "C1001", "tier": 2},
+        "to": {"value": "INITIAL_BIASED", "constraint": "C1001", "tier": 2},
+        "yk": {"value": "INITIAL_BIASED", "constraint": "C1001", "tier": 2},
+        "te": {"value": "INITIAL_BIASED", "constraint": "C1001", "tier": 2},
+        "qo": {"value": "CENTRAL", "constraint": "C1001", "tier": 2},
+        "ch": {"value": "CENTRAL", "constraint": "C1001", "tier": 2},
+        "ok": {"value": "CENTRAL", "constraint": "C1001", "tier": 2},
+        "da": {"value": "CENTRAL", "constraint": "C1001", "tier": 2},
+        "ke": {"value": "CENTRAL", "constraint": "C1001", "tier": 2},
+        "ta": {"value": "CENTRAL", "constraint": "C1001", "tier": 2},
+        "lk": {"value": "CENTRAL", "constraint": "C1001", "tier": 2},
+        "BARE": {"value": "FINAL_BIASED", "constraint": "C1001", "tier": 2},
+        "ot": {"value": "FINAL_BIASED", "constraint": "C1001", "tier": 2},
+        "al": {"value": "FINAL_BIASED", "constraint": "C1001", "tier": 2},
+        "ar": {"value": "FINAL_BIASED", "constraint": "C1001", "tier": 2},
+        "or": {"value": "FINAL_BIASED", "constraint": "C1001", "tier": 2},
+        "ol": {"value": "FINAL_BIASED", "constraint": "C1001", "tier": 2},
+        "ka": {"value": "FINAL_BIASED", "constraint": "C1001", "tier": 2},
+        "ko": {"value": "FINAL_BIASED", "constraint": "C1001", "tier": 2},
+        "lch": {"value": "UNIFORM", "constraint": "C1001", "tier": 2},
+        "do": {"value": "UNIFORM", "constraint": "C1001", "tier": 2},
+        "kch": {"value": "UNIFORM", "constraint": "C1001", "tier": 2},
+        "ct": {"value": "UNIFORM", "constraint": "C1001", "tier": 2},
+        "fch": {"value": "UNIFORM", "constraint": "C1001", "tier": 2},
+        "rch": {"value": "UNIFORM", "constraint": "C1001", "tier": 2}
+      }
     }
   }
 }

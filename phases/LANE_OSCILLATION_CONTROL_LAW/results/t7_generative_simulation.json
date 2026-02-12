@@ -1,0 +1,134 @@
+{
+  "test": "T7_generative_simulation",
+  "n_simulations": 1000,
+  "n_line_templates": 1831,
+  "n_en_positions": 6727,
+  "observed_metrics": {
+    "global_alternation": 0.5486111111111112,
+    "section_rates": {
+      "H": 0.45588235294117646,
+      "T": 0.4105263157894737,
+      "B": 0.5949622166246852,
+      "C": 0.5112107623318386,
+      "S": 0.536136041568257
+    },
+    "qo_run_mean": 1.406787540678754,
+    "chsh_run_mean": 1.5642434488588335,
+    "post_haz_chsh_rate": 0.7002724795640327,
+    "post_cc_daiin_chsh_rate": 0.7411764705882353,
+    "folio_qo_mean": 0.4147947569338551,
+    "n_pairs": 4896,
+    "n_qo_runs": 2151,
+    "n_chsh_runs": 2366,
+    "n_post_haz": 367,
+    "n_post_cc_daiin": 170
+  },
+  "fidelity": {
+    "global_alternation": {
+      "observed": 0.5486111111111112,
+      "simulated_mean": 0.5456917892156864,
+      "simulated_sd": 0.007065131226242557,
+      "ci_95": [
+        0.5318576388888889,
+        0.5590328839869281
+      ],
+      "within_ci": true,
+      "deviation": 0.41320136908162497
+    },
+    "qo_run_mean": {
+      "observed": 1.406787540678754,
+      "simulated_mean": 1.4388318812505156,
+      "simulated_sd": 0.015842477602618154,
+      "ci_95": [
+        1.4089806026854481,
+        1.4710018824374362
+      ],
+      "within_ci": false,
+      "deviation": 2.022684921862597
+    },
+    "chsh_run_mean": {
+      "observed": 1.5642434488588335,
+      "simulated_mean": 1.545873448810125,
+      "simulated_sd": 0.01728023684226566,
+      "ci_95": [
+        1.5129561877047222,
+        1.58039384719405
+      ],
+      "within_ci": true,
+      "deviation": 1.0630641360063702
+    },
+    "post_haz_chsh_rate": {
+      "observed": 0.7002724795640327,
+      "simulated_mean": 0.7502561307901908,
+      "simulated_sd": 0.022949455040467543,
+      "ci_95": [
+        0.7057220708446866,
+        0.7956403269754768
+      ],
+      "within_ci": false,
+      "deviation": 2.1779885900567253
+    },
+    "post_cc_daiin_chsh_rate": {
+      "observed": 0.7411764705882353,
+      "simulated_mean": 0.5536882352941176,
+      "simulated_sd": 0.037290067974598454,
+      "ci_95": [
+        0.4822058823529412,
+        0.6294117647058823
+      ],
+      "within_ci": false,
+      "deviation": 5.027833025722358
+    },
+    "folio_qo_mean": {
+      "observed": 0.4147947569338551,
+      "simulated_mean": 0.42231990417041343,
+      "simulated_sd": 0.009078600847305024,
+      "ci_95": [
+        0.4046101207918097,
+        0.4387754482147351
+      ],
+      "within_ci": true,
+      "deviation": 0.8288884337053074
+    },
+    "section_rate_B": {
+      "observed": 0.5949622166246852,
+      "simulated_mean": 0.5883632241813602,
+      "simulated_sd": 0.010803963078754116,
+      "ci_95": [
+        0.5682619647355164,
+        0.6110831234256927
+      ],
+      "within_ci": true,
+      "deviation": 0.6107936870222936
+    },
+    "section_rate_H": {
+      "observed": 0.45588235294117646,
+      "simulated_mean": 0.4679411764705883,
+      "simulated_sd": 0.024050208761821238,
+      "ci_95": [
+        0.42436974789915966,
+        0.5147584033613445
+      ],
+      "within_ci": true,
+      "deviation": 0.5014020314266358
+    },
+    "section_rate_S": {
+      "observed": 0.536136041568257,
+      "simulated_mean": 0.534027397260274,
+      "simulated_sd": 0.010915007290077806,
+      "ci_95": [
+        0.5129900803023146,
+        0.5545701464336324
+      ],
+      "within_ci": true,
+      "deviation": 0.19318762250390895
+    }
+  },
+  "summary": {
+    "n_metrics": 9,
+    "n_within_ci": 6,
+    "composite_deviation": 1.4265604241542027
+  },
+  "verdict": "PARTIAL_SUCCESS",
+  "verdict_text": "Major patterns captured. Failed metrics: ['qo_run_mean', 'post_haz_chsh_rate', 'post_cc_daiin_chsh_rate']"
+}

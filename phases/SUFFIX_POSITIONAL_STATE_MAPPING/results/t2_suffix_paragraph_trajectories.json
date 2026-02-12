@@ -1,0 +1,337 @@
+{
+  "metadata": {
+    "phase": "SUFFIX_POSITIONAL_STATE_MAPPING",
+    "test": "T2_SUFFIX_PARAGRAPH_TRAJECTORIES",
+    "min_tokens": 50,
+    "bonferroni_threshold": 0.002380952380952381
+  },
+  "corpus": {
+    "paragraph_lines": 2406,
+    "testable_suffixes": 21,
+    "quintile_totals": {
+      "0": 5113,
+      "1": 4654,
+      "2": 4296,
+      "3": 4411,
+      "4": 4503
+    }
+  },
+  "suffix_trajectories": {
+    "NONE": {
+      "n": 11866,
+      "quintile_freqs_pct": [
+        49.54038724819089,
+        50.98839707778255,
+        50.628491620111724,
+        52.25572432554976,
+        55.07439484787919
+      ],
+      "spearman_rho": 0.8999999999999998,
+      "spearman_p": 0.03738607346849874,
+      "trend": "RISING",
+      "is_monotonic": false
+    },
+    "edy": {
+      "n": 1971,
+      "quintile_freqs_pct": [
+        10.365734402503422,
+        8.788139235066609,
+        8.682495344506517,
+        8.184085241441851,
+        6.617810348656452
+      ],
+      "spearman_rho": -0.9999999999999999,
+      "spearman_p": 1.4042654220543672e-24,
+      "trend": "FALLING",
+      "is_monotonic": true
+    },
+    "dy": {
+      "n": 997,
+      "quintile_freqs_pct": [
+        4.948171327987483,
+        4.877524709926945,
+        4.4692737430167595,
+        3.8540013602357743,
+        3.4421496779924494
+      ],
+      "spearman_rho": -0.9999999999999999,
+      "spearman_p": 1.4042654220543672e-24,
+      "trend": "FALLING",
+      "is_monotonic": true
+    },
+    "aiin": {
+      "n": 944,
+      "quintile_freqs_pct": [
+        3.7551339722276547,
+        4.275891706059304,
+        4.213221601489757,
+        4.4207662661528,
+        3.930712858094604
+      ],
+      "spearman_rho": 0.3,
+      "spearman_p": 0.6238376647810728,
+      "trend": "FLAT",
+      "is_monotonic": false
+    },
+    "hy": {
+      "n": 847,
+      "quintile_freqs_pct": [
+        3.813807940543712,
+        3.9321014181349376,
+        3.677839851024209,
+        3.4459306279755157,
+        3.530979347101932
+      ],
+      "spearman_rho": -0.7999999999999999,
+      "spearman_p": 0.10408803866182788,
+      "trend": "FALLING",
+      "is_monotonic": false
+    },
+    "ar": {
+      "n": 826,
+      "quintile_freqs_pct": [
+        3.8920398982984548,
+        3.4379028792436617,
+        3.4916201117318435,
+        4.1713897075493085,
+        2.9535864978902953
+      ],
+      "spearman_rho": -0.3,
+      "spearman_p": 0.6238376647810728,
+      "trend": "FLAT",
+      "is_monotonic": false
+    },
+    "ain": {
+      "n": 739,
+      "quintile_freqs_pct": [
+        2.9532564052415413,
+        3.287494628276751,
+        2.956238361266294,
+        3.4459306279755157,
+        3.46435709526982
+      ],
+      "spearman_rho": 0.8999999999999998,
+      "spearman_p": 0.03738607346849874,
+      "trend": "RISING",
+      "is_monotonic": false
+    },
+    "y": {
+      "n": 676,
+      "quintile_freqs_pct": [
+        3.442206141208684,
+        2.9007305543618394,
+        2.909683426443203,
+        2.629789163454999,
+        2.7537197423939594
+      ],
+      "spearman_rho": -0.7999999999999999,
+      "spearman_p": 0.10408803866182788,
+      "trend": "FALLING",
+      "is_monotonic": false
+    },
+    "al": {
+      "n": 659,
+      "quintile_freqs_pct": [
+        2.8359084686094267,
+        3.1585732703051135,
+        2.6303538175046555,
+        2.607118567218318,
+        3.0868310015545193
+      ],
+      "spearman_rho": -0.19999999999999998,
+      "spearman_p": 0.747060078104662,
+      "trend": "FLAT",
+      "is_monotonic": false
+    },
+    "eey": {
+      "n": 590,
+      "quintile_freqs_pct": [
+        2.3469587326422845,
+        2.1916630855178343,
+        2.700186219739292,
+        2.5164361822715935,
+        3.1312458361092603
+      ],
+      "spearman_rho": 0.7999999999999999,
+      "spearman_p": 0.10408803866182788,
+      "trend": "RISING",
+      "is_monotonic": false
+    },
+    "ey": {
+      "n": 498,
+      "quintile_freqs_pct": [
+        1.584197144533542,
+        1.9123334765792865,
+        2.5139664804469275,
+        2.584447970981637,
+        2.353986231401288
+      ],
+      "spearman_rho": 0.7,
+      "spearman_p": 0.1881204043741873,
+      "trend": "RISING",
+      "is_monotonic": false
+    },
+    "s": {
+      "n": 420,
+      "quintile_freqs_pct": [
+        1.9362409544298846,
+        1.6974645466265579,
+        1.8156424581005588,
+        1.7683065064611199,
+        1.9098378858538754
+      ],
+      "spearman_rho": -0.09999999999999999,
+      "spearman_p": 0.8728885715695383,
+      "trend": "FLAT",
+      "is_monotonic": false
+    },
+    "r": {
+      "n": 407,
+      "quintile_freqs_pct": [
+        1.7993350283590848,
+        1.654490760636012,
+        1.9785847299813781,
+        1.813647698934482,
+        1.621141461248057
+      ],
+      "spearman_rho": -0.19999999999999998,
+      "spearman_p": 0.747060078104662,
+      "trend": "FLAT",
+      "is_monotonic": false
+    },
+    "or": {
+      "n": 406,
+      "quintile_freqs_pct": [
+        1.5646391550948564,
+        2.0627417275461966,
+        2.281191806331471,
+        1.586941736567672,
+        1.3768598711969797
+      ],
+      "spearman_rho": -0.3,
+      "spearman_p": 0.6238376647810728,
+      "trend": "FLAT",
+      "is_monotonic": false
+    },
+    "ol": {
+      "n": 292,
+      "quintile_freqs_pct": [
+        1.6819870917269706,
+        1.2677266867211001,
+        1.3733705772811917,
+        0.793470868283836,
+        1.176993115700644
+      ],
+      "spearman_rho": -0.7999999999999999,
+      "spearman_p": 0.10408803866182788,
+      "trend": "FALLING",
+      "is_monotonic": false
+    },
+    "am": {
+      "n": 233,
+      "quintile_freqs_pct": [
+        0.9583414824955995,
+        1.2677266867211001,
+        1.000931098696462,
+        0.793470868283836,
+        1.0437486120364203
+      ],
+      "spearman_rho": 0.0,
+      "spearman_p": 1.0,
+      "trend": "FLAT",
+      "is_monotonic": false
+    },
+    "iin": {
+      "n": 114,
+      "quintile_freqs_pct": [
+        0.37160179933502835,
+        0.5156854318865491,
+        0.4888268156424581,
+        0.6121060983903877,
+        0.5107705973795247
+      ],
+      "spearman_rho": 0.49999999999999994,
+      "spearman_p": 0.39100221895577053,
+      "trend": "FLAT",
+      "is_monotonic": false
+    },
+    "ly": {
+      "n": 107,
+      "quintile_freqs_pct": [
+        0.33248582045765696,
+        0.5371723248818221,
+        0.37243947858473,
+        0.6347766946270688,
+        0.4663557628247834
+      ],
+      "spearman_rho": 0.49999999999999994,
+      "spearman_p": 0.39100221895577053,
+      "trend": "FLAT",
+      "is_monotonic": false
+    },
+    "l": {
+      "n": 99,
+      "quintile_freqs_pct": [
+        0.35204380989634265,
+        0.25784271594327457,
+        0.5353817504655494,
+        0.5667649059170256,
+        0.4663557628247834
+      ],
+      "spearman_rho": 0.6,
+      "spearman_p": 0.28475697986529375,
+      "trend": "RISING",
+      "is_monotonic": false
+    },
+    "ry": {
+      "n": 69,
+      "quintile_freqs_pct": [
+        0.41071777821239974,
+        0.21486892995272885,
+        0.37243947858473,
+        0.22670596236681026,
+        0.2664890073284477
+      ],
+      "spearman_rho": -0.3,
+      "spearman_p": 0.6238376647810728,
+      "trend": "FLAT",
+      "is_monotonic": false
+    },
+    "eol": {
+      "n": 56,
+      "quintile_freqs_pct": [
+        0.37160179933502835,
+        0.30081650193382037,
+        0.16294227188081936,
+        0.20403536613012924,
+        0.1554519209415945
+      ],
+      "spearman_rho": -0.8999999999999998,
+      "spearman_p": 0.03738607346849874,
+      "trend": "FALLING",
+      "is_monotonic": false
+    }
+  },
+  "monotonic_count": 2,
+  "monotonic_list": [
+    "edy",
+    "dy"
+  ],
+  "rising": [
+    "NONE",
+    "ain",
+    "eey",
+    "ey",
+    "l"
+  ],
+  "falling": [
+    "edy",
+    "dy",
+    "hy",
+    "y",
+    "ol",
+    "eol"
+  ],
+  "verdict": "NO_SUFFIX_PARAGRAPH_TRAJECTORIES",
+  "verdict_detail": "Only 2/21 suffixes are monotonic. C932 category gradients do NOT decompose to individual suffixes."
+}

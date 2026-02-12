@@ -1,0 +1,35 @@
+{
+  "test": "T5_synthesis",
+  "dimensionality_estimates": {
+    "spectral_eigenvalues_gt1": 443,
+    "effective_rank_spectral_entropy": 344,
+    "cv_plateau_k": 4,
+    "cv_elbow_k": 96,
+    "nmf_elbow_k": 128,
+    "morphological_k95": 101,
+    "factored_estimate": 86
+  },
+  "median_estimate": 101,
+  "mean_estimate": 172,
+  "cv_converged": true,
+  "best_cv_auc": 0.9339320659637451,
+  "structure_verdict": "PREFIX_DOMINATED",
+  "prefix_enrichment": 3.923854435254934,
+  "prefix_alignment": "NONE",
+  "feature_prediction_auc": 0.714274873804837,
+  "feature_sufficiency": "INSUFFICIENT",
+  "matrix_characterization": {
+    "decay_profile": "SLOW_DECAY",
+    "eigenvalues_above_random": 1,
+    "mean_participation_ratio": 131.0701196331652
+  },
+  "nature": "STRUCTURED_HIGH_DIMENSIONAL",
+  "explanation": "The discrimination space has internal structure (PREFIX influence, degree stratification) but remains high-dimensional. Not reducible to a small number of named axes.",
+  "dimensionality_class": "HIGH",
+  "verdict": {
+    "D_estimate": 101,
+    "class": "HIGH",
+    "nature": "STRUCTURED_HIGH_DIMENSIONAL",
+    "converged": true
+  }
+}

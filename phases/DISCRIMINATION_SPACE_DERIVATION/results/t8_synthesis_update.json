@@ -1,0 +1,28 @@
+{
+  "test": "T8_synthesis_update",
+  "matrix": {
+    "n_middles": 972,
+    "pct_compatible": 2.2,
+    "leading_eigenvalue": 81.97675337170392,
+    "effective_rank": 344.2604277665535,
+    "decay_profile": "SLOW_DECAY"
+  },
+  "dimensionality": {
+    "median_estimate": 101,
+    "cv_plateau_k": 256,
+    "cv_best_auc": 0.9339320659637451,
+    "morphological_d": 101,
+    "factored_estimate": 85.5
+  },
+  "null_ensemble": {
+    "verdict": "RARE",
+    "anomalous_cm": 4,
+    "anomalous_er": 5
+  },
+  "stability": {
+    "verdict": "STABLE",
+    "max_cv_20pct": 0.05457602451240729
+  },
+  "final_verdict": "FINGERPRINT_CONFIRMED",
+  "explanation": "The spectral profile of the MIDDLE discrimination space is ANOMALOUS under degree-preserving randomization AND STABLE under subsampling. This is a genuine structural fingerprint of the underlying constraint system, not an artifact of sparse graph statistics or sampling noise."
+}

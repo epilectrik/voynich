@@ -1,0 +1,155 @@
+{
+  "test": "T1_baseline_transition_matrix",
+  "description": "Section-stratified first-order Markov transition matrices for EN lane sequences",
+  "n_lines": 1831,
+  "n_en_tokens": 6727,
+  "n_transitions_unfiltered": 4896,
+  "n_transitions_filtered": 3306,
+  "unfiltered_matrix": {
+    "QO_to_QO": 0.4051803885291397,
+    "QO_to_CHSH": 0.5948196114708603,
+    "CHSH_to_QO": 0.5120525931336742,
+    "CHSH_to_CHSH": 0.48794740686632576,
+    "alternation_rate": 0.5486111111111112
+  },
+  "filtered_matrix": {
+    "QO_to_QO": 0.42247043363994746,
+    "QO_to_CHSH": 0.5775295663600526,
+    "CHSH_to_QO": 0.5346756152125279,
+    "CHSH_to_CHSH": 0.465324384787472,
+    "alternation_rate": 0.5544464609800362
+  },
+  "isolation_check": {
+    "max_delta": 0.02262302207885375,
+    "pass": true,
+    "threshold": 0.05
+  },
+  "bootstrap": {
+    "n_resamples": 1000,
+    "resample_unit": "line",
+    "QO_to_CHSH_ci": [
+      0.5500625802310655,
+      0.6035766132844547
+    ],
+    "CHSH_to_QO_ci": [
+      0.5105766920508699,
+      0.5601611944024317
+    ],
+    "alternation_ci": [
+      0.5360553929445975,
+      0.5739621493338288
+    ],
+    "ci_width_ok": false
+  },
+  "section_matrices": {
+    "B": {
+      "name": "BIO",
+      "n_transitions": 1269,
+      "QO_to_CHSH": 0.5802650957290133,
+      "CHSH_to_QO": 0.6380471380471381,
+      "alternation_rate": 0.607565011820331,
+      "stationary_QO": 0.5237139711463906,
+      "stationary_CHSH": 0.4762860288536094,
+      "bootstrap": {
+        "name": "BIO",
+        "QO_CHSH_ci": [
+          0.540810785767235,
+          0.6238353490011315
+        ],
+        "CHSH_QO_ci": [
+          0.5949130625365283,
+          0.6817541477585414
+        ]
+      }
+    },
+    "C": {
+      "name": "COSMO",
+      "n_transitions": 139,
+      "QO_to_CHSH": 0.5555555555555556,
+      "CHSH_to_QO": 0.5,
+      "alternation_rate": 0.5251798561151079,
+      "stationary_QO": 0.47368421052631576,
+      "stationary_CHSH": 0.5263157894736843,
+      "bootstrap": {
+        "name": "COSMO",
+        "QO_CHSH_ci": [
+          0.4303345388788427,
+          0.6875
+        ],
+        "CHSH_QO_ci": [
+          0.38636363636363635,
+          0.6440677966101694
+        ]
+      }
+    },
+    "H": {
+      "name": "HERBAL_B",
+      "n_transitions": 302,
+      "QO_to_CHSH": 0.7083333333333334,
+      "CHSH_to_QO": 0.3523809523809524,
+      "alternation_rate": 0.46357615894039733,
+      "stationary_QO": 0.3322109988776656,
+      "stationary_CHSH": 0.6677890011223344,
+      "bootstrap": {
+        "name": "HERBAL_B",
+        "QO_CHSH_ci": [
+          0.6185473289597001,
+          0.7948795180722891
+        ],
+        "CHSH_QO_ci": [
+          0.2825889328063241,
+          0.4286059351276742
+        ]
+      }
+    },
+    "S": {
+      "name": "STARS",
+      "n_transitions": 1542,
+      "QO_to_CHSH": 0.5616641901931649,
+      "CHSH_to_QO": 0.5211912943871707,
+      "alternation_rate": 0.5389105058365758,
+      "stationary_QO": 0.4813119588059898,
+      "stationary_CHSH": 0.5186880411940102,
+      "bootstrap": {
+        "name": "STARS",
+        "QO_CHSH_ci": [
+          0.5235880722780004,
+          0.604295812216591
+        ],
+        "CHSH_QO_ci": [
+          0.487826377262218,
+          0.5568344983941054
+        ]
+      }
+    },
+    "T": {
+      "name": "RECIPE",
+      "n_transitions": 54,
+      "QO_to_CHSH": 0.42105263157894735,
+      "CHSH_to_QO": 0.3076923076923077,
+      "alternation_rate": 0.3333333333333333,
+      "stationary_QO": 0.4222222222222223,
+      "stationary_CHSH": 0.5777777777777777,
+      "bootstrap": {
+        "name": "RECIPE",
+        "QO_CHSH_ci": [
+          0.2777777777777778,
+          0.6
+        ],
+        "CHSH_QO_ci": [
+          0.16666666666666666,
+          0.46434523809523803
+        ]
+      }
+    }
+  },
+  "c643_comparison": {
+    "target_QO_CHSH": 0.6,
+    "actual_QO_CHSH": 0.5775295663600526,
+    "delta_QO_CHSH": 0.022470433639947385,
+    "target_CHSH_QO": 0.53,
+    "actual_CHSH_QO": 0.5346756152125279,
+    "delta_CHSH_QO": 0.004675615212527906
+  },
+  "verdict": "PARTIAL"
+}

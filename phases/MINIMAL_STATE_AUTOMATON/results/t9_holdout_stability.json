@@ -1,0 +1,95 @@
+{
+  "test": "T9_holdout_stability",
+  "n_trials": 100,
+  "n_holdout_folios": 5,
+  "canonical_n_states": 6,
+  "canonical_signature": [
+    2,
+    2,
+    3,
+    4,
+    6,
+    32
+  ],
+  "state_count_distribution": {
+    "6": 100
+  },
+  "ari_mean": 0.9393,
+  "ari_median": 0.93596,
+  "ari_min": 0.81827,
+  "ari_max": 1.0,
+  "ari_std": 0.06467,
+  "exact_match_count": 46,
+  "exact_match_rate": 0.46,
+  "sig_match_count": 65,
+  "sig_match_rate": 0.65,
+  "verdict": "MOSTLY_STABLE",
+  "worst_trials": [
+    {
+      "trial": 3,
+      "holdout_folios": [
+        "f114r",
+        "f41r",
+        "f41v",
+        "f50r",
+        "f82r"
+      ],
+      "n_states": 6,
+      "ari": 0.81827,
+      "sig_match": false
+    },
+    {
+      "trial": 8,
+      "holdout_folios": [
+        "f108r",
+        "f33r",
+        "f41v",
+        "f43v",
+        "f77r"
+      ],
+      "n_states": 6,
+      "ari": 0.81827,
+      "sig_match": false
+    },
+    {
+      "trial": 17,
+      "holdout_folios": [
+        "f108r",
+        "f116r",
+        "f40v",
+        "f55r",
+        "f76r"
+      ],
+      "n_states": 6,
+      "ari": 0.81827,
+      "sig_match": false
+    },
+    {
+      "trial": 34,
+      "holdout_folios": [
+        "f107r",
+        "f26r",
+        "f31r",
+        "f50r",
+        "f77r"
+      ],
+      "n_states": 6,
+      "ari": 0.81827,
+      "sig_match": false
+    },
+    {
+      "trial": 36,
+      "holdout_folios": [
+        "f104v",
+        "f108v",
+        "f114r",
+        "f94r",
+        "f95r2"
+      ],
+      "n_states": 6,
+      "ari": 0.81827,
+      "sig_match": false
+    }
+  ],
+  "elapsed_seconds": 141.8
+}

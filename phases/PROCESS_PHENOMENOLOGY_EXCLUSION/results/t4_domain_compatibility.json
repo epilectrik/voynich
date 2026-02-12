@@ -1,0 +1,949 @@
+{
+  "test": "T4_domain_compatibility_matrix",
+  "n_features": 20,
+  "n_domains": 8,
+  "domain_scores": {
+    "DISTILLATION": {
+      "total_score": 20.0,
+      "normalized": 1.0
+    },
+    "FERMENTATION": {
+      "total_score": 3.0,
+      "normalized": 0.15
+    },
+    "METALLURGY": {
+      "total_score": 7.5,
+      "normalized": 0.375
+    },
+    "GLASS_WORKING": {
+      "total_score": 4.0,
+      "normalized": 0.2
+    },
+    "PHARMACOLOGICAL": {
+      "total_score": 1.0,
+      "normalized": 0.05
+    },
+    "RITUAL_CALENDAR": {
+      "total_score": 1.0,
+      "normalized": 0.05
+    },
+    "TEXTILE_DYEING": {
+      "total_score": 5.0,
+      "normalized": 0.25
+    },
+    "AGRICULTURAL": {
+      "total_score": 0.5,
+      "normalized": 0.025
+    }
+  },
+  "domain_details": {
+    "DISTILLATION": {
+      "F01_1token_response_time": {
+        "score": 1.0,
+        "reason": "Thermal hazards require immediate response: reduce fire, open vent, redirect flow"
+      },
+      "F02_first_order_markov_sufficient": {
+        "score": 1.0,
+        "reason": "Thermal state visible now; no need to remember previous temperatures"
+      },
+      "F03_categorical_not_numeric": {
+        "score": 1.0,
+        "reason": "Pre-instrument distillation uses sensory categories: hot/warm/cool, clear/cloudy"
+      },
+      "F04_high_dimensional_incompatibility": {
+        "score": 1.0,
+        "reason": "Hundreds of aromatic compounds with complex cross-reactivity and co-occurrence rules"
+      },
+      "F05_strong_transitivity": {
+        "score": 1.0,
+        "reason": "Compatible materials share physical properties (volatility, polarity) that propagate"
+      },
+      "F06_hazard_asymmetry": {
+        "score": 1.0,
+        "reason": "Phase transitions are asymmetric: heating past boil is dangerous, cooling past boil is safe"
+      },
+      "F07_absorbing_stabilization_state": {
+        "score": 1.0,
+        "reason": "Cooling/condensation IS the natural attractor \u2014 system returns to equilibrium via cooling"
+      },
+      "F08_lane_oscillation": {
+        "score": 1.0,
+        "reason": "Natural heating/monitoring oscillation: apply heat (QO), check result (CHSH), adjust"
+      },
+      "F09_energy_medial_concentration": {
+        "score": 1.0,
+        "reason": "Setup (prepare apparatus) -> Heat (distill) -> Close (collect/seal) matches medial energy"
+      },
+      "F10_recovery_unconditionally_free": {
+        "score": 1.0,
+        "reason": "Recovery from a near-boilover or contamination has many valid strategies depending on setup"
+      },
+      "F11_universal_grammar": {
+        "score": 1.0,
+        "reason": "Same control vocabulary applies to all materials/runs (same apparatus, same operations)"
+      },
+      "F12_phase_ordering_dominant_hazard": {
+        "score": 1.0,
+        "reason": "Phase ordering is THE central challenge: liquid/vapor boundary management"
+      },
+      "F13_convergent_monostate": {
+        "score": 1.0,
+        "reason": "Distillation naturally converges to steady-state reflux as the operational target"
+      },
+      "F14_exactly_5_hazard_classes": {
+        "score": 1.0,
+        "reason": "Phase, composition, containment, rate, energy = 5 natural failure families in distillation"
+      },
+      "F15_closed_loop_not_batch": {
+        "score": 1.0,
+        "reason": "Pelican reflux IS a closed-loop circulatory system by definition"
+      },
+      "F16_line_boundary_memory_reset": {
+        "score": 1.0,
+        "reason": "Each fraction/operation starts fresh from current apparatus state, not from history"
+      },
+      "F17_link_monitoring_phase": {
+        "score": 1.0,
+        "reason": "Constant monitoring between interventions: watch the still, check the drip, smell the output"
+      },
+      "F18_e_recovery_dominance": {
+        "score": 1.0,
+        "reason": "Cooling IS the primary recovery in distillation: reduce heat, let system equilibrate"
+      },
+      "F19_folio_vocabulary_uniqueness": {
+        "score": 1.0,
+        "reason": "Different distillation runs process different materials with distinct properties"
+      },
+      "F20_design_asymmetry": {
+        "score": 1.0,
+        "reason": "Physics of failure is universal (same for all materials) but recovery depends on what you are distilling"
+      }
+    },
+    "FERMENTATION": {
+      "F01_1token_response_time": {
+        "score": 0.0,
+        "reason": "Fermentation operates on hour/day timescale; no immediate hazard response needed"
+      },
+      "F02_first_order_markov_sufficient": {
+        "score": 0.0,
+        "reason": "Fermentation progress depends on cumulative biological history"
+      },
+      "F03_categorical_not_numeric": {
+        "score": 0.5,
+        "reason": "Some categorical (taste, color) but also quantitative (time, volume)"
+      },
+      "F04_high_dimensional_incompatibility": {
+        "score": 0.0,
+        "reason": "Simple: few ingredients (grain, water, yeast), low-dimensional parameter space"
+      },
+      "F05_strong_transitivity": {
+        "score": 0.0,
+        "reason": "Fermentation compatibility is not transitive (yeast A+sugar does not predict yeast B+sugar)"
+      },
+      "F06_hazard_asymmetry": {
+        "score": 0.0,
+        "reason": "Fermentation hazards (contamination) are mostly symmetric"
+      },
+      "F07_absorbing_stabilization_state": {
+        "score": 0.5,
+        "reason": "Fermentation has completion (all sugar consumed) as attractor but this is terminal, not recovery"
+      },
+      "F08_lane_oscillation": {
+        "score": 0.0,
+        "reason": "No rapid oscillation in fermentation; it is passive waiting"
+      },
+      "F09_energy_medial_concentration": {
+        "score": 0.0,
+        "reason": "Energy is not a major concept in fermentation (it is biological, not thermal)"
+      },
+      "F10_recovery_unconditionally_free": {
+        "score": 0.0,
+        "reason": "Fermentation recovery is limited (contaminated batch is usually lost)"
+      },
+      "F11_universal_grammar": {
+        "score": 0.0,
+        "reason": "Different ferments require very different procedures (wine vs beer vs vinegar)"
+      },
+      "F12_phase_ordering_dominant_hazard": {
+        "score": 0.0,
+        "reason": "Fermentation has no phase ordering (single liquid phase throughout)"
+      },
+      "F13_convergent_monostate": {
+        "score": 1.0,
+        "reason": "Fermentation also converges to completion (all sugar consumed)"
+      },
+      "F14_exactly_5_hazard_classes": {
+        "score": 0.0,
+        "reason": "Fermentation has ~2 failure modes (contamination, stuck fermentation), not 5"
+      },
+      "F15_closed_loop_not_batch": {
+        "score": 0.0,
+        "reason": "Fermentation is batch (start to finish, no circulation)"
+      },
+      "F16_line_boundary_memory_reset": {
+        "score": 0.0,
+        "reason": "Fermentation is continuous; no memory resets between stages"
+      },
+      "F17_link_monitoring_phase": {
+        "score": 0.5,
+        "reason": "Some monitoring (check gravity, taste, smell) but infrequent (daily not continuous)"
+      },
+      "F18_e_recovery_dominance": {
+        "score": 0.0,
+        "reason": "No cooling-as-recovery in fermentation"
+      },
+      "F19_folio_vocabulary_uniqueness": {
+        "score": 0.5,
+        "reason": "Different ferments use different ingredients but vocabulary is much smaller"
+      },
+      "F20_design_asymmetry": {
+        "score": 0.0,
+        "reason": "Fermentation failure and recovery are both material-dependent, not asymmetric"
+      }
+    },
+    "METALLURGY": {
+      "F01_1token_response_time": {
+        "score": 0.5,
+        "reason": "Furnace has fast hazards (crack, spill) but response is physical, not categorical"
+      },
+      "F02_first_order_markov_sufficient": {
+        "score": 0.5,
+        "reason": "Current metal state is somewhat visible but thermal history matters for annealing"
+      },
+      "F03_categorical_not_numeric": {
+        "score": 0.0,
+        "reason": "Requires numeric: weight of ore, assay results, temperature estimation"
+      },
+      "F04_high_dimensional_incompatibility": {
+        "score": 0.5,
+        "reason": "Moderate: many alloy compositions but compatibility is lower-dimensional"
+      },
+      "F05_strong_transitivity": {
+        "score": 0.5,
+        "reason": "Alloy compatibility is partially transitive (similar melting points cluster)"
+      },
+      "F06_hazard_asymmetry": {
+        "score": 0.5,
+        "reason": "Some asymmetry (heating iron is different from cooling) but less pronounced"
+      },
+      "F07_absorbing_stabilization_state": {
+        "score": 0.5,
+        "reason": "Cooling is important in metallurgy but not a dominant recovery mechanism in the same way"
+      },
+      "F08_lane_oscillation": {
+        "score": 0.0,
+        "reason": "Metallurgy has heating but no systematic oscillation with monitoring"
+      },
+      "F09_energy_medial_concentration": {
+        "score": 1.0,
+        "reason": "Metallurgy also has: prepare furnace -> heat -> remove product. Similar medial pattern"
+      },
+      "F10_recovery_unconditionally_free": {
+        "score": 0.5,
+        "reason": "Some recovery flexibility in metallurgy but options are more constrained by material"
+      },
+      "F11_universal_grammar": {
+        "score": 0.5,
+        "reason": "Partially universal (furnace operations shared) but metals require specialized operations"
+      },
+      "F12_phase_ordering_dominant_hazard": {
+        "score": 0.5,
+        "reason": "Phase matters (solid/liquid/gas) but not as dominant as in distillation"
+      },
+      "F13_convergent_monostate": {
+        "score": 0.5,
+        "reason": "Metal working has target states but they vary (different alloys, different products)"
+      },
+      "F14_exactly_5_hazard_classes": {
+        "score": 0.5,
+        "reason": "Metallurgy has several failure modes but different classes (crack, wrong alloy, oxidation)"
+      },
+      "F15_closed_loop_not_batch": {
+        "score": 0.0,
+        "reason": "Metallurgy is batch processing (heat, transform, cool, done)"
+      },
+      "F16_line_boundary_memory_reset": {
+        "score": 0.5,
+        "reason": "Each heating cycle somewhat independent but thermal history affects metal"
+      },
+      "F17_link_monitoring_phase": {
+        "score": 0.0,
+        "reason": "Metallurgy has less monitoring between actions (fire-and-wait pattern)"
+      },
+      "F18_e_recovery_dominance": {
+        "score": 0.0,
+        "reason": "Metallurgy recovery is not cooling-dominated; re-heating is equally common"
+      },
+      "F19_folio_vocabulary_uniqueness": {
+        "score": 0.5,
+        "reason": "Different ores have different properties but the vocabulary is smaller"
+      },
+      "F20_design_asymmetry": {
+        "score": 0.0,
+        "reason": "Both hazards and recovery vary by metal type; not clearly asymmetric"
+      }
+    },
+    "GLASS_WORKING": {
+      "F01_1token_response_time": {
+        "score": 0.5,
+        "reason": "Glass cracking/burning requires fast response but less categorical decision space"
+      },
+      "F02_first_order_markov_sufficient": {
+        "score": 0.5,
+        "reason": "Current viscosity visible but thermal history affects stress accumulation"
+      },
+      "F03_categorical_not_numeric": {
+        "score": 0.0,
+        "reason": "Requires numeric: temperature estimation, thickness, timing"
+      },
+      "F04_high_dimensional_incompatibility": {
+        "score": 0.0,
+        "reason": "Low-dimensional: few components (silica, soda, lime), simple compatibility"
+      },
+      "F05_strong_transitivity": {
+        "score": 0.0,
+        "reason": "Glass compatibility is not strongly transitive"
+      },
+      "F06_hazard_asymmetry": {
+        "score": 0.5,
+        "reason": "Some asymmetry in heating/cooling glass but thermal shock is more symmetric"
+      },
+      "F07_absorbing_stabilization_state": {
+        "score": 0.0,
+        "reason": "Glass has no absorbing state \u2014 you keep heating or it cools and freezes (different logic)"
+      },
+      "F08_lane_oscillation": {
+        "score": 0.0,
+        "reason": "Glass working is continuous heating, not oscillatory"
+      },
+      "F09_energy_medial_concentration": {
+        "score": 1.0,
+        "reason": "Glass: prepare tools -> heat glass -> shape/finish. Similar medial pattern"
+      },
+      "F10_recovery_unconditionally_free": {
+        "score": 0.0,
+        "reason": "Glass recovery is very limited \u2014 once cracked or mis-shaped, material is lost"
+      },
+      "F11_universal_grammar": {
+        "score": 0.0,
+        "reason": "Different glass types require different techniques (blowing vs fusing vs annealing)"
+      },
+      "F12_phase_ordering_dominant_hazard": {
+        "score": 0.5,
+        "reason": "Viscous-liquid transition matters but it is gradual, not a sharp ordering problem"
+      },
+      "F13_convergent_monostate": {
+        "score": 0.5,
+        "reason": "Annealing converges to cooled state, but working has many target shapes"
+      },
+      "F14_exactly_5_hazard_classes": {
+        "score": 0.0,
+        "reason": "Glass has ~2-3 failure modes (thermal shock, wrong shape, crystallization)"
+      },
+      "F15_closed_loop_not_batch": {
+        "score": 0.5,
+        "reason": "Glass annealing involves controlled cooling but not a circulatory loop"
+      },
+      "F16_line_boundary_memory_reset": {
+        "score": 0.0,
+        "reason": "Glass state carries forward continuously; no clean resets"
+      },
+      "F17_link_monitoring_phase": {
+        "score": 0.0,
+        "reason": "Glass working is continuous action, not monitor-then-act"
+      },
+      "F18_e_recovery_dominance": {
+        "score": 0.0,
+        "reason": "Glass recovery is not cooling-dominated (re-heating broken piece is standard)"
+      },
+      "F19_folio_vocabulary_uniqueness": {
+        "score": 0.0,
+        "reason": "Glass recipes are relatively uniform; limited vocabulary variation"
+      },
+      "F20_design_asymmetry": {
+        "score": 0.0,
+        "reason": "Both failure modes and recovery are glass-type dependent"
+      }
+    },
+    "PHARMACOLOGICAL": {
+      "F01_1token_response_time": {
+        "score": 0.0,
+        "reason": "No continuous hazard; compounding is step-by-step at room temperature"
+      },
+      "F02_first_order_markov_sufficient": {
+        "score": 0.0,
+        "reason": "Recipe progress requires tracking what has been added (cumulative state)"
+      },
+      "F03_categorical_not_numeric": {
+        "score": 0.0,
+        "reason": "Requires precise quantities: weights, measures, proportions are central"
+      },
+      "F04_high_dimensional_incompatibility": {
+        "score": 0.5,
+        "reason": "Moderate: drug interactions exist but typical formulary has <100 ingredients"
+      },
+      "F05_strong_transitivity": {
+        "score": 0.0,
+        "reason": "Drug interactions are famously non-transitive (A+B safe, B+C safe, A+C toxic)"
+      },
+      "F06_hazard_asymmetry": {
+        "score": 0.0,
+        "reason": "Compounding order sometimes matters but this is recipe, not hazard"
+      },
+      "F07_absorbing_stabilization_state": {
+        "score": 0.0,
+        "reason": "No absorbing state in compounding; each step is discrete"
+      },
+      "F08_lane_oscillation": {
+        "score": 0.0,
+        "reason": "No oscillation in sequential recipe execution"
+      },
+      "F09_energy_medial_concentration": {
+        "score": 0.0,
+        "reason": "No thermal energy phase in compounding"
+      },
+      "F10_recovery_unconditionally_free": {
+        "score": 0.0,
+        "reason": "Wrong proportion in pharmacy is typically not recoverable"
+      },
+      "F11_universal_grammar": {
+        "score": 0.0,
+        "reason": "Each recipe is unique; no universal grammar of compounding"
+      },
+      "F12_phase_ordering_dominant_hazard": {
+        "score": 0.0,
+        "reason": "No phase ordering in compounding"
+      },
+      "F13_convergent_monostate": {
+        "score": 0.0,
+        "reason": "Each recipe has its own endpoint; no universal convergent state"
+      },
+      "F14_exactly_5_hazard_classes": {
+        "score": 0.0,
+        "reason": "Pharmacy has ~2 failure modes (wrong amount, wrong ingredient)"
+      },
+      "F15_closed_loop_not_batch": {
+        "score": 0.0,
+        "reason": "Compounding is linear sequential, not circulatory"
+      },
+      "F16_line_boundary_memory_reset": {
+        "score": 0.0,
+        "reason": "Each step depends on what was added before; no resets"
+      },
+      "F17_link_monitoring_phase": {
+        "score": 0.0,
+        "reason": "No continuous monitoring in compounding"
+      },
+      "F18_e_recovery_dominance": {
+        "score": 0.0,
+        "reason": "No thermal recovery in pharmacy"
+      },
+      "F19_folio_vocabulary_uniqueness": {
+        "score": 0.5,
+        "reason": "Different medicines use different ingredients; moderate vocabulary"
+      },
+      "F20_design_asymmetry": {
+        "score": 0.0,
+        "reason": "Both errors and corrections are recipe-specific"
+      }
+    },
+    "RITUAL_CALENDAR": {
+      "F01_1token_response_time": {
+        "score": 0.0,
+        "reason": "No physical process requiring immediate response"
+      },
+      "F02_first_order_markov_sufficient": {
+        "score": 0.0,
+        "reason": "Calendar position requires knowing date (cumulative time)"
+      },
+      "F03_categorical_not_numeric": {
+        "score": 0.5,
+        "reason": "Calendar uses categorical (which day/planet) but also counts (which hour)"
+      },
+      "F04_high_dimensional_incompatibility": {
+        "score": 0.0,
+        "reason": "No material incompatibility concept applies"
+      },
+      "F05_strong_transitivity": {
+        "score": 0.0,
+        "reason": "No transitivity concept applies to calendar/ritual"
+      },
+      "F06_hazard_asymmetry": {
+        "score": 0.0,
+        "reason": "No directional hazard concept"
+      },
+      "F07_absorbing_stabilization_state": {
+        "score": 0.0,
+        "reason": "No physical absorbing state"
+      },
+      "F08_lane_oscillation": {
+        "score": 0.0,
+        "reason": "No physical oscillation"
+      },
+      "F09_energy_medial_concentration": {
+        "score": 0.0,
+        "reason": "No energy concept"
+      },
+      "F10_recovery_unconditionally_free": {
+        "score": 0.0,
+        "reason": "No physical recovery concept"
+      },
+      "F11_universal_grammar": {
+        "score": 0.5,
+        "reason": "Calendar has universal structure (months, hours) but content varies by tradition"
+      },
+      "F12_phase_ordering_dominant_hazard": {
+        "score": 0.0,
+        "reason": "No physical phases"
+      },
+      "F13_convergent_monostate": {
+        "score": 0.0,
+        "reason": "No physical convergent state"
+      },
+      "F14_exactly_5_hazard_classes": {
+        "score": 0.0,
+        "reason": "No physical failure modes"
+      },
+      "F15_closed_loop_not_batch": {
+        "score": 0.0,
+        "reason": "No physical loop"
+      },
+      "F16_line_boundary_memory_reset": {
+        "score": 0.0,
+        "reason": "Calendar is continuous; no memory resets"
+      },
+      "F17_link_monitoring_phase": {
+        "score": 0.0,
+        "reason": "No physical monitoring"
+      },
+      "F18_e_recovery_dominance": {
+        "score": 0.0,
+        "reason": "No physical recovery"
+      },
+      "F19_folio_vocabulary_uniqueness": {
+        "score": 0.0,
+        "reason": "No material vocabulary per entry"
+      },
+      "F20_design_asymmetry": {
+        "score": 0.0,
+        "reason": "No physical design asymmetry"
+      }
+    },
+    "TEXTILE_DYEING": {
+      "F01_1token_response_time": {
+        "score": 0.0,
+        "reason": "Dyeing hazards are slow (color wrong, mordant failure); no immediate gate needed"
+      },
+      "F02_first_order_markov_sufficient": {
+        "score": 0.5,
+        "reason": "Current dye state partially visible but mordant history matters"
+      },
+      "F03_categorical_not_numeric": {
+        "score": 0.5,
+        "reason": "Some categorical (color matching) but also quantitative (dye amounts, timing)"
+      },
+      "F04_high_dimensional_incompatibility": {
+        "score": 0.0,
+        "reason": "Low-dimensional: limited dye/mordant combinations, mostly independent"
+      },
+      "F05_strong_transitivity": {
+        "score": 0.0,
+        "reason": "Dye compatibility is not transitive (mordant-dependent)"
+      },
+      "F06_hazard_asymmetry": {
+        "score": 0.0,
+        "reason": "Dyeing order matters (mordant before dye) but not in a hazard sense"
+      },
+      "F07_absorbing_stabilization_state": {
+        "score": 0.5,
+        "reason": "Rinse/cool is a recovery step but not a dominant attractor (17% not 55%)"
+      },
+      "F08_lane_oscillation": {
+        "score": 0.0,
+        "reason": "No rapid heating/monitoring oscillation in dyeing"
+      },
+      "F09_energy_medial_concentration": {
+        "score": 0.5,
+        "reason": "Heat bath in middle of dye process, but not as pronounced as distillation"
+      },
+      "F10_recovery_unconditionally_free": {
+        "score": 0.5,
+        "reason": "Some recovery options in dyeing (re-dye, re-mordant) but limited"
+      },
+      "F11_universal_grammar": {
+        "score": 0.0,
+        "reason": "Different dyes require different procedures (mordant type, temperature, timing)"
+      },
+      "F12_phase_ordering_dominant_hazard": {
+        "score": 0.0,
+        "reason": "No significant phase ordering hazard in dyeing"
+      },
+      "F13_convergent_monostate": {
+        "score": 0.5,
+        "reason": "Dyeing converges to \"done\" (color achieved) but this is binary, not a state"
+      },
+      "F14_exactly_5_hazard_classes": {
+        "score": 0.0,
+        "reason": "Dyeing has ~2 failure modes (wrong color, poor fixation)"
+      },
+      "F15_closed_loop_not_batch": {
+        "score": 0.5,
+        "reason": "Vat dyeing involves immersion/removal cycles but not a true closed loop"
+      },
+      "F16_line_boundary_memory_reset": {
+        "score": 0.5,
+        "reason": "Rinse between dye baths provides partial reset"
+      },
+      "F17_link_monitoring_phase": {
+        "score": 0.5,
+        "reason": "Some monitoring (check color) but less frequent than distillation"
+      },
+      "F18_e_recovery_dominance": {
+        "score": 0.0,
+        "reason": "Recovery in dyeing is not cooling-dominated"
+      },
+      "F19_folio_vocabulary_uniqueness": {
+        "score": 0.5,
+        "reason": "Different dyes have different properties but limited vocabulary"
+      },
+      "F20_design_asymmetry": {
+        "score": 0.0,
+        "reason": "Failure and recovery both dye-dependent"
+      }
+    },
+    "AGRICULTURAL": {
+      "F01_1token_response_time": {
+        "score": 0.0,
+        "reason": "Seasonal timescale; no sub-minute hazard response"
+      },
+      "F02_first_order_markov_sufficient": {
+        "score": 0.0,
+        "reason": "Crop state depends on season history; not first-order"
+      },
+      "F03_categorical_not_numeric": {
+        "score": 0.0,
+        "reason": "Requires numeric: planting dates, water amounts, field dimensions"
+      },
+      "F04_high_dimensional_incompatibility": {
+        "score": 0.0,
+        "reason": "Low-dimensional: crop rotation rules are simple (3-4 categories)"
+      },
+      "F05_strong_transitivity": {
+        "score": 0.0,
+        "reason": "Crop rotation compatibility is not strongly transitive"
+      },
+      "F06_hazard_asymmetry": {
+        "score": 0.0,
+        "reason": "No directional hazard concept in farming"
+      },
+      "F07_absorbing_stabilization_state": {
+        "score": 0.0,
+        "reason": "No absorbing state in seasonal agriculture"
+      },
+      "F08_lane_oscillation": {
+        "score": 0.0,
+        "reason": "No short-timescale oscillation"
+      },
+      "F09_energy_medial_concentration": {
+        "score": 0.0,
+        "reason": "No concentrated energy phase"
+      },
+      "F10_recovery_unconditionally_free": {
+        "score": 0.0,
+        "reason": "Crop failure recovery is seasonal; not a within-process concept"
+      },
+      "F11_universal_grammar": {
+        "score": 0.0,
+        "reason": "Crops are highly variable; no universal agricultural grammar"
+      },
+      "F12_phase_ordering_dominant_hazard": {
+        "score": 0.0,
+        "reason": "No phase ordering concept"
+      },
+      "F13_convergent_monostate": {
+        "score": 0.5,
+        "reason": "Harvest is a convergent endpoint but it is annual, not per-run"
+      },
+      "F14_exactly_5_hazard_classes": {
+        "score": 0.0,
+        "reason": "Agriculture has failures but they are not within-process hazards"
+      },
+      "F15_closed_loop_not_batch": {
+        "score": 0.0,
+        "reason": "Agriculture is seasonal linear, not circulatory"
+      },
+      "F16_line_boundary_memory_reset": {
+        "score": 0.0,
+        "reason": "Soil state carries between seasons"
+      },
+      "F17_link_monitoring_phase": {
+        "score": 0.0,
+        "reason": "Monitoring is seasonal/weekly, not within-process"
+      },
+      "F18_e_recovery_dominance": {
+        "score": 0.0,
+        "reason": "No thermal recovery in agriculture"
+      },
+      "F19_folio_vocabulary_uniqueness": {
+        "score": 0.0,
+        "reason": "Limited crop vocabulary; not per-field unique"
+      },
+      "F20_design_asymmetry": {
+        "score": 0.0,
+        "reason": "Both failure and recovery are crop/season dependent"
+      }
+    }
+  },
+  "rankings": [
+    {
+      "rank": 1,
+      "domain": "DISTILLATION",
+      "total_score": 20.0,
+      "normalized": 1.0
+    },
+    {
+      "rank": 2,
+      "domain": "METALLURGY",
+      "total_score": 7.5,
+      "normalized": 0.375
+    },
+    {
+      "rank": 3,
+      "domain": "TEXTILE_DYEING",
+      "total_score": 5.0,
+      "normalized": 0.25
+    },
+    {
+      "rank": 4,
+      "domain": "GLASS_WORKING",
+      "total_score": 4.0,
+      "normalized": 0.2
+    },
+    {
+      "rank": 5,
+      "domain": "FERMENTATION",
+      "total_score": 3.0,
+      "normalized": 0.15
+    },
+    {
+      "rank": 6,
+      "domain": "PHARMACOLOGICAL",
+      "total_score": 1.0,
+      "normalized": 0.05
+    },
+    {
+      "rank": 7,
+      "domain": "RITUAL_CALENDAR",
+      "total_score": 1.0,
+      "normalized": 0.05
+    },
+    {
+      "rank": 8,
+      "domain": "AGRICULTURAL",
+      "total_score": 0.5,
+      "normalized": 0.025
+    }
+  ],
+  "exclusion_gap": 0.625,
+  "best_alternative": {
+    "domain": "METALLURGY",
+    "score": 0.375,
+    "closest_features": [
+      {
+        "feature": "F01_1token_response_time",
+        "score": 0.5,
+        "reason": "Furnace has fast hazards (crack, spill) but response is physical, not categorical"
+      },
+      {
+        "feature": "F02_first_order_markov_sufficient",
+        "score": 0.5,
+        "reason": "Current metal state is somewhat visible but thermal history matters for annealing"
+      },
+      {
+        "feature": "F04_high_dimensional_incompatibility",
+        "score": 0.5,
+        "reason": "Moderate: many alloy compositions but compatibility is lower-dimensional"
+      },
+      {
+        "feature": "F05_strong_transitivity",
+        "score": 0.5,
+        "reason": "Alloy compatibility is partially transitive (similar melting points cluster)"
+      },
+      {
+        "feature": "F06_hazard_asymmetry",
+        "score": 0.5,
+        "reason": "Some asymmetry (heating iron is different from cooling) but less pronounced"
+      },
+      {
+        "feature": "F07_absorbing_stabilization_state",
+        "score": 0.5,
+        "reason": "Cooling is important in metallurgy but not a dominant recovery mechanism in the same way"
+      },
+      {
+        "feature": "F09_energy_medial_concentration",
+        "score": 1.0,
+        "reason": "Metallurgy also has: prepare furnace -> heat -> remove product. Similar medial pattern"
+      },
+      {
+        "feature": "F10_recovery_unconditionally_free",
+        "score": 0.5,
+        "reason": "Some recovery flexibility in metallurgy but options are more constrained by material"
+      },
+      {
+        "feature": "F11_universal_grammar",
+        "score": 0.5,
+        "reason": "Partially universal (furnace operations shared) but metals require specialized operations"
+      },
+      {
+        "feature": "F12_phase_ordering_dominant_hazard",
+        "score": 0.5,
+        "reason": "Phase matters (solid/liquid/gas) but not as dominant as in distillation"
+      },
+      {
+        "feature": "F13_convergent_monostate",
+        "score": 0.5,
+        "reason": "Metal working has target states but they vary (different alloys, different products)"
+      },
+      {
+        "feature": "F14_exactly_5_hazard_classes",
+        "score": 0.5,
+        "reason": "Metallurgy has several failure modes but different classes (crack, wrong alloy, oxidation)"
+      },
+      {
+        "feature": "F16_line_boundary_memory_reset",
+        "score": 0.5,
+        "reason": "Each heating cycle somewhat independent but thermal history affects metal"
+      },
+      {
+        "feature": "F19_folio_vocabulary_uniqueness",
+        "score": 0.5,
+        "reason": "Different ores have different properties but the vocabulary is smaller"
+      }
+    ]
+  },
+  "killer_features": [
+    "F01_1token_response_time",
+    "F02_first_order_markov_sufficient",
+    "F03_categorical_not_numeric",
+    "F04_high_dimensional_incompatibility",
+    "F05_strong_transitivity",
+    "F06_hazard_asymmetry",
+    "F07_absorbing_stabilization_state",
+    "F08_lane_oscillation",
+    "F10_recovery_unconditionally_free",
+    "F11_universal_grammar",
+    "F12_phase_ordering_dominant_hazard",
+    "F14_exactly_5_hazard_classes",
+    "F15_closed_loop_not_batch",
+    "F16_line_boundary_memory_reset",
+    "F17_link_monitoring_phase",
+    "F18_e_recovery_dominance",
+    "F19_folio_vocabulary_uniqueness",
+    "F20_design_asymmetry"
+  ],
+  "n_killer_features": 18,
+  "feature_discrimination": {
+    "F01_1token_response_time": {
+      "n_compatible": 0,
+      "n_partial": 2,
+      "n_excluded": 5
+    },
+    "F02_first_order_markov_sufficient": {
+      "n_compatible": 0,
+      "n_partial": 3,
+      "n_excluded": 4
+    },
+    "F03_categorical_not_numeric": {
+      "n_compatible": 0,
+      "n_partial": 3,
+      "n_excluded": 4
+    },
+    "F04_high_dimensional_incompatibility": {
+      "n_compatible": 0,
+      "n_partial": 2,
+      "n_excluded": 5
+    },
+    "F05_strong_transitivity": {
+      "n_compatible": 0,
+      "n_partial": 1,
+      "n_excluded": 6
+    },
+    "F06_hazard_asymmetry": {
+      "n_compatible": 0,
+      "n_partial": 2,
+      "n_excluded": 5
+    },
+    "F07_absorbing_stabilization_state": {
+      "n_compatible": 0,
+      "n_partial": 3,
+      "n_excluded": 4
+    },
+    "F08_lane_oscillation": {
+      "n_compatible": 0,
+      "n_partial": 0,
+      "n_excluded": 7
+    },
+    "F09_energy_medial_concentration": {
+      "n_compatible": 2,
+      "n_partial": 1,
+      "n_excluded": 4
+    },
+    "F10_recovery_unconditionally_free": {
+      "n_compatible": 0,
+      "n_partial": 2,
+      "n_excluded": 5
+    },
+    "F11_universal_grammar": {
+      "n_compatible": 0,
+      "n_partial": 2,
+      "n_excluded": 5
+    },
+    "F12_phase_ordering_dominant_hazard": {
+      "n_compatible": 0,
+      "n_partial": 2,
+      "n_excluded": 5
+    },
+    "F13_convergent_monostate": {
+      "n_compatible": 1,
+      "n_partial": 4,
+      "n_excluded": 2
+    },
+    "F14_exactly_5_hazard_classes": {
+      "n_compatible": 0,
+      "n_partial": 1,
+      "n_excluded": 6
+    },
+    "F15_closed_loop_not_batch": {
+      "n_compatible": 0,
+      "n_partial": 2,
+      "n_excluded": 5
+    },
+    "F16_line_boundary_memory_reset": {
+      "n_compatible": 0,
+      "n_partial": 2,
+      "n_excluded": 5
+    },
+    "F17_link_monitoring_phase": {
+      "n_compatible": 0,
+      "n_partial": 2,
+      "n_excluded": 5
+    },
+    "F18_e_recovery_dominance": {
+      "n_compatible": 0,
+      "n_partial": 0,
+      "n_excluded": 7
+    },
+    "F19_folio_vocabulary_uniqueness": {
+      "n_compatible": 0,
+      "n_partial": 4,
+      "n_excluded": 3
+    },
+    "F20_design_asymmetry": {
+      "n_compatible": 0,
+      "n_partial": 0,
+      "n_excluded": 7
+    }
+  },
+  "verdict": "EXCLUDED",
+  "explanation": "Distillation scores 100.0%. Best alternative (METALLURGY) scores 37.5%. Exclusion gap: 62.5%. Killer features: 18/20. All alternatives below 50% with gap >= 30%. The structural fingerprint is uniquely compatible with thermal circulatory distillation."
+}

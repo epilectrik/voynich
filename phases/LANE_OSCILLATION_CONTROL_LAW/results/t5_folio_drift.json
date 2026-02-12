@@ -1,0 +1,797 @@
+{
+  "test": "T5_folio_drift_estimation",
+  "description": "Within-folio temporal drift in lane balance (QO fraction across quartiles)",
+  "overall": {
+    "n_folios": 82,
+    "n_observations": 324,
+    "spearman_rho": 0.058691142694701985,
+    "spearman_p": 0.2922192255027657,
+    "linear_slope": 0.010141638401638557,
+    "linear_intercept": 0.38761757288455556
+  },
+  "overall_partial_correlation": {
+    "partial_rho": 0.030048288742628076,
+    "partial_p": 0.5899555105257291,
+    "controlling_for": "EN_density",
+    "method": "residual_regression_then_spearman"
+  },
+  "drift_classification": {
+    "overall": "no_significant_drift",
+    "per_regime": {
+      "REGIME_1": "no_significant_drift",
+      "REGIME_2": "no_significant_drift",
+      "REGIME_3": "no_significant_drift",
+      "REGIME_4": "no_significant_drift"
+    },
+    "criteria": {
+      "significance_threshold": 0.05,
+      "partial_near_zero_threshold": 0.03,
+      "logic": "intrinsic if raw rho significant AND partial rho significant and not near zero; density_emergent if raw rho significant but partial rho near zero or insignificant; no_significant_drift if raw rho not significant"
+    }
+  },
+  "per_regime": {
+    "REGIME_1": {
+      "n_folios": 23,
+      "n_observations": 92,
+      "mean_qo_per_quartile": {
+        "Q1": 0.43507694116042744,
+        "Q2": 0.4514968016789385,
+        "Q3": 0.45677833269518037,
+        "Q4": 0.46448833619784663
+      },
+      "mean_en_density_per_quartile": {
+        "Q1": 0.3549042738315779,
+        "Q2": 0.3692980265173732,
+        "Q3": 0.3843361210930088,
+        "Q4": 0.39117762326307765
+      },
+      "delta_QO": 0.00935157161284995,
+      "spearman_rho": 0.03240404171467457,
+      "spearman_p": 0.7591177031428273,
+      "partial_rho_controlling_en_density": 0.006673550853073995,
+      "partial_p_controlling_en_density": 0.9496582473635736,
+      "drift_classification": "no_significant_drift"
+    },
+    "REGIME_2": {
+      "n_folios": 24,
+      "n_observations": 92,
+      "mean_qo_per_quartile": {
+        "Q1": 0.3742886935561893,
+        "Q2": 0.3537765948479283,
+        "Q3": 0.31000981942672706,
+        "Q4": 0.36256684659817306
+      },
+      "mean_en_density_per_quartile": {
+        "Q1": 0.21932640549575688,
+        "Q2": 0.23596980869722492,
+        "Q3": 0.25191545350186867,
+        "Q4": 0.24838569055276627
+      },
+      "delta_QO": -0.008718148745526271,
+      "spearman_rho": -0.03139415333533737,
+      "spearman_p": 0.7664067810782442,
+      "partial_rho_controlling_en_density": -0.05218744942858201,
+      "partial_p_controlling_en_density": 0.6212657348810641,
+      "drift_classification": "no_significant_drift"
+    },
+    "REGIME_3": {
+      "n_folios": 8,
+      "n_observations": 32,
+      "mean_qo_per_quartile": {
+        "Q1": 0.39436524088226876,
+        "Q2": 0.34290674603174603,
+        "Q3": 0.416693722943723,
+        "Q4": 0.471031746031746
+      },
+      "mean_en_density_per_quartile": {
+        "Q1": 0.2888771186440678,
+        "Q2": 0.275243297436518,
+        "Q3": 0.27576454134974315,
+        "Q4": 0.30442911287923
+      },
+      "delta_QO": 0.03037864923604088,
+      "spearman_rho": 0.11366768136153764,
+      "spearman_p": 0.5356318574121556,
+      "partial_rho_controlling_en_density": 0.11364677895773985,
+      "partial_p_controlling_en_density": 0.5357073707962668,
+      "drift_classification": "no_significant_drift"
+    },
+    "REGIME_4": {
+      "n_folios": 27,
+      "n_observations": 108,
+      "mean_qo_per_quartile": {
+        "Q1": 0.3785680111082084,
+        "Q2": 0.37206359056310306,
+        "Q3": 0.45299201144428164,
+        "Q4": 0.41371772102322385
+      },
+      "mean_en_density_per_quartile": {
+        "Q1": 0.23997988703297696,
+        "Q2": 0.2619208204885743,
+        "Q3": 0.2626599321675032,
+        "Q4": 0.27039147757483684
+      },
+      "delta_QO": 0.018637755062622503,
+      "spearman_rho": 0.11195443571078537,
+      "spearman_p": 0.24868183956458148,
+      "partial_rho_controlling_en_density": 0.09707567797171826,
+      "partial_p_controlling_en_density": 0.3175700133145838,
+      "drift_classification": "no_significant_drift"
+    }
+  },
+  "per_folio_drift": [
+    {
+      "folio": "f26r",
+      "regime": "REGIME_3",
+      "n_lines": 10,
+      "QO_Q1": 0.0,
+      "QO_Q4": 0.42857142857142855,
+      "delta": 0.42857142857142855
+    },
+    {
+      "folio": "f26v",
+      "regime": "REGIME_2",
+      "n_lines": 9,
+      "QO_Q1": 0.3333333333333333,
+      "QO_Q4": null,
+      "delta": null
+    },
+    {
+      "folio": "f31r",
+      "regime": "REGIME_4",
+      "n_lines": 16,
+      "QO_Q1": 0.5714285714285714,
+      "QO_Q4": 0.4166666666666667,
+      "delta": -0.1547619047619047
+    },
+    {
+      "folio": "f31v",
+      "regime": "REGIME_2",
+      "n_lines": 11,
+      "QO_Q1": 0.0,
+      "QO_Q4": 0.0,
+      "delta": 0.0
+    },
+    {
+      "folio": "f33r",
+      "regime": "REGIME_4",
+      "n_lines": 7,
+      "QO_Q1": 0.6666666666666666,
+      "QO_Q4": 0.0,
+      "delta": -0.6666666666666666
+    },
+    {
+      "folio": "f33v",
+      "regime": "REGIME_2",
+      "n_lines": 11,
+      "QO_Q1": 0.0,
+      "QO_Q4": 0.0,
+      "delta": 0.0
+    },
+    {
+      "folio": "f34r",
+      "regime": "REGIME_3",
+      "n_lines": 15,
+      "QO_Q1": 0.3333333333333333,
+      "QO_Q4": 0.5,
+      "delta": 0.16666666666666669
+    },
+    {
+      "folio": "f34v",
+      "regime": "REGIME_4",
+      "n_lines": 11,
+      "QO_Q1": 0.125,
+      "QO_Q4": 0.3333333333333333,
+      "delta": 0.20833333333333331
+    },
+    {
+      "folio": "f39r",
+      "regime": "REGIME_1",
+      "n_lines": 16,
+      "QO_Q1": 0.0,
+      "QO_Q4": 0.2,
+      "delta": 0.2
+    },
+    {
+      "folio": "f39v",
+      "regime": "REGIME_2",
+      "n_lines": 14,
+      "QO_Q1": 0.2857142857142857,
+      "QO_Q4": 0.25,
+      "delta": -0.0357142857142857
+    },
+    {
+      "folio": "f40r",
+      "regime": "REGIME_2",
+      "n_lines": 11,
+      "QO_Q1": 0.3333333333333333,
+      "QO_Q4": null,
+      "delta": null
+    },
+    {
+      "folio": "f40v",
+      "regime": "REGIME_2",
+      "n_lines": 19,
+      "QO_Q1": 0.6,
+      "QO_Q4": 0.2,
+      "delta": -0.39999999999999997
+    },
+    {
+      "folio": "f41r",
+      "regime": "REGIME_1",
+      "n_lines": 11,
+      "QO_Q1": 0.6666666666666666,
+      "QO_Q4": 0.375,
+      "delta": -0.29166666666666663
+    },
+    {
+      "folio": "f41v",
+      "regime": "REGIME_4",
+      "n_lines": 8,
+      "QO_Q1": 1.0,
+      "QO_Q4": 0.0,
+      "delta": -1.0
+    },
+    {
+      "folio": "f43r",
+      "regime": "REGIME_4",
+      "n_lines": 14,
+      "QO_Q1": 0.3333333333333333,
+      "QO_Q4": 0.125,
+      "delta": -0.20833333333333331
+    },
+    {
+      "folio": "f43v",
+      "regime": "REGIME_4",
+      "n_lines": 16,
+      "QO_Q1": 0.14285714285714285,
+      "QO_Q4": 0.0,
+      "delta": -0.14285714285714285
+    },
+    {
+      "folio": "f46r",
+      "regime": "REGIME_4",
+      "n_lines": 15,
+      "QO_Q1": 0.17647058823529413,
+      "QO_Q4": 0.17647058823529413,
+      "delta": 0.0
+    },
+    {
+      "folio": "f46v",
+      "regime": "REGIME_4",
+      "n_lines": 12,
+      "QO_Q1": 0.0,
+      "QO_Q4": 0.125,
+      "delta": 0.125
+    },
+    {
+      "folio": "f48r",
+      "regime": "REGIME_4",
+      "n_lines": 9,
+      "QO_Q1": 0.6666666666666666,
+      "QO_Q4": 0.0,
+      "delta": -0.6666666666666666
+    },
+    {
+      "folio": "f48v",
+      "regime": "REGIME_2",
+      "n_lines": 11,
+      "QO_Q1": 0.0,
+      "QO_Q4": 0.0,
+      "delta": 0.0
+    },
+    {
+      "folio": "f50r",
+      "regime": "REGIME_4",
+      "n_lines": 10,
+      "QO_Q1": 0.0,
+      "QO_Q4": 1.0,
+      "delta": 1.0
+    },
+    {
+      "folio": "f50v",
+      "regime": "REGIME_2",
+      "n_lines": 11,
+      "QO_Q1": 0.6666666666666666,
+      "QO_Q4": 0.5,
+      "delta": -0.16666666666666663
+    },
+    {
+      "folio": "f55r",
+      "regime": "REGIME_2",
+      "n_lines": 13,
+      "QO_Q1": 0.6666666666666666,
+      "QO_Q4": 0.42857142857142855,
+      "delta": -0.23809523809523808
+    },
+    {
+      "folio": "f55v",
+      "regime": "REGIME_4",
+      "n_lines": 12,
+      "QO_Q1": 0.0,
+      "QO_Q4": 0.75,
+      "delta": 0.75
+    },
+    {
+      "folio": "f57r",
+      "regime": "REGIME_4",
+      "n_lines": 11,
+      "QO_Q1": 0.0,
+      "QO_Q4": 0.0,
+      "delta": 0.0
+    },
+    {
+      "folio": "f66r",
+      "regime": "REGIME_1",
+      "n_lines": 34,
+      "QO_Q1": 0.20833333333333334,
+      "QO_Q4": 0.625,
+      "delta": 0.41666666666666663
+    },
+    {
+      "folio": "f66v",
+      "regime": "REGIME_1",
+      "n_lines": 13,
+      "QO_Q1": 0.0,
+      "QO_Q4": 0.3,
+      "delta": 0.3
+    },
+    {
+      "folio": "f75r",
+      "regime": "REGIME_1",
+      "n_lines": 46,
+      "QO_Q1": 0.5370370370370371,
+      "QO_Q4": 0.575,
+      "delta": 0.037962962962962865
+    },
+    {
+      "folio": "f75v",
+      "regime": "REGIME_1",
+      "n_lines": 35,
+      "QO_Q1": 0.5263157894736842,
+      "QO_Q4": 0.6551724137931034,
+      "delta": 0.12885662431941924
+    },
+    {
+      "folio": "f76r",
+      "regime": "REGIME_1",
+      "n_lines": 47,
+      "QO_Q1": 0.3389830508474576,
+      "QO_Q4": 0.35714285714285715,
+      "delta": 0.01815980629539954
+    },
+    {
+      "folio": "f76v",
+      "regime": "REGIME_1",
+      "n_lines": 41,
+      "QO_Q1": 0.425,
+      "QO_Q4": 0.3235294117647059,
+      "delta": -0.10147058823529409
+    },
+    {
+      "folio": "f77r",
+      "regime": "REGIME_1",
+      "n_lines": 40,
+      "QO_Q1": 0.5882352941176471,
+      "QO_Q4": 0.5428571428571428,
+      "delta": -0.04537815126050426
+    },
+    {
+      "folio": "f77v",
+      "regime": "REGIME_1",
+      "n_lines": 37,
+      "QO_Q1": 0.5641025641025641,
+      "QO_Q4": 0.46808510638297873,
+      "delta": -0.09601745771958536
+    },
+    {
+      "folio": "f78r",
+      "regime": "REGIME_4",
+      "n_lines": 41,
+      "QO_Q1": 0.5909090909090909,
+      "QO_Q4": 0.7037037037037037,
+      "delta": 0.11279461279461278
+    },
+    {
+      "folio": "f78v",
+      "regime": "REGIME_3",
+      "n_lines": 32,
+      "QO_Q1": 0.5757575757575758,
+      "QO_Q4": 0.6111111111111112,
+      "delta": 0.03535353535353536
+    },
+    {
+      "folio": "f79r",
+      "regime": "REGIME_1",
+      "n_lines": 44,
+      "QO_Q1": 0.37209302325581395,
+      "QO_Q4": 0.43137254901960786,
+      "delta": 0.05927952576379392
+    },
+    {
+      "folio": "f79v",
+      "regime": "REGIME_4",
+      "n_lines": 42,
+      "QO_Q1": 0.725,
+      "QO_Q4": 0.6875,
+      "delta": -0.03749999999999998
+    },
+    {
+      "folio": "f80r",
+      "regime": "REGIME_1",
+      "n_lines": 43,
+      "QO_Q1": 0.4897959183673469,
+      "QO_Q4": 0.5,
+      "delta": 0.010204081632653073
+    },
+    {
+      "folio": "f80v",
+      "regime": "REGIME_1",
+      "n_lines": 44,
+      "QO_Q1": 0.5882352941176471,
+      "QO_Q4": 0.5454545454545454,
+      "delta": -0.042780748663101664
+    },
+    {
+      "folio": "f81r",
+      "regime": "REGIME_2",
+      "n_lines": 31,
+      "QO_Q1": 0.47058823529411764,
+      "QO_Q4": 0.4666666666666667,
+      "delta": -0.0039215686274509665
+    },
+    {
+      "folio": "f81v",
+      "regime": "REGIME_3",
+      "n_lines": 27,
+      "QO_Q1": 0.5294117647058824,
+      "QO_Q4": 0.35714285714285715,
+      "delta": -0.1722689075630252
+    },
+    {
+      "folio": "f82r",
+      "regime": "REGIME_1",
+      "n_lines": 32,
+      "QO_Q1": 0.6,
+      "QO_Q4": 0.4864864864864865,
+      "delta": -0.11351351351351346
+    },
+    {
+      "folio": "f82v",
+      "regime": "REGIME_1",
+      "n_lines": 34,
+      "QO_Q1": 0.5294117647058824,
+      "QO_Q4": 0.525,
+      "delta": -0.004411764705882337
+    },
+    {
+      "folio": "f83r",
+      "regime": "REGIME_1",
+      "n_lines": 44,
+      "QO_Q1": 0.3333333333333333,
+      "QO_Q4": 0.5666666666666667,
+      "delta": 0.23333333333333334
+    },
+    {
+      "folio": "f83v",
+      "regime": "REGIME_1",
+      "n_lines": 31,
+      "QO_Q1": 0.525,
+      "QO_Q4": 0.5666666666666667,
+      "delta": 0.04166666666666663
+    },
+    {
+      "folio": "f84r",
+      "regime": "REGIME_1",
+      "n_lines": 34,
+      "QO_Q1": 0.5135135135135135,
+      "QO_Q4": 0.47058823529411764,
+      "delta": -0.042925278219395846
+    },
+    {
+      "folio": "f84v",
+      "regime": "REGIME_3",
+      "n_lines": 39,
+      "QO_Q1": 0.48717948717948717,
+      "QO_Q4": 0.6666666666666666,
+      "delta": 0.17948717948717946
+    },
+    {
+      "folio": "f85r1",
+      "regime": "REGIME_2",
+      "n_lines": 35,
+      "QO_Q1": 0.125,
+      "QO_Q4": 0.5882352941176471,
+      "delta": 0.4632352941176471
+    },
+    {
+      "folio": "f85r2",
+      "regime": "REGIME_2",
+      "n_lines": 22,
+      "QO_Q1": 0.5454545454545454,
+      "QO_Q4": 0.16666666666666666,
+      "delta": -0.3787878787878788
+    },
+    {
+      "folio": "f86v4",
+      "regime": "REGIME_2",
+      "n_lines": 5,
+      "QO_Q1": 0.22727272727272727,
+      "QO_Q4": null,
+      "delta": null
+    },
+    {
+      "folio": "f86v6",
+      "regime": "REGIME_4",
+      "n_lines": 45,
+      "QO_Q1": 0.5384615384615384,
+      "QO_Q4": 0.4864864864864865,
+      "delta": -0.05197505197505192
+    },
+    {
+      "folio": "f86v5",
+      "regime": "REGIME_2",
+      "n_lines": 39,
+      "QO_Q1": 0.3888888888888889,
+      "QO_Q4": 0.35714285714285715,
+      "delta": -0.031746031746031744
+    },
+    {
+      "folio": "f86v3",
+      "regime": "REGIME_2",
+      "n_lines": 16,
+      "QO_Q1": 0.5833333333333334,
+      "QO_Q4": 0.5,
+      "delta": -0.08333333333333337
+    },
+    {
+      "folio": "f94r",
+      "regime": "REGIME_3",
+      "n_lines": 9,
+      "QO_Q1": 0.5555555555555556,
+      "QO_Q4": 0.4,
+      "delta": -0.15555555555555556
+    },
+    {
+      "folio": "f94v",
+      "regime": "REGIME_4",
+      "n_lines": 12,
+      "QO_Q1": 0.4444444444444444,
+      "QO_Q4": 0.6666666666666666,
+      "delta": 0.2222222222222222
+    },
+    {
+      "folio": "f95r1",
+      "regime": "REGIME_4",
+      "n_lines": 11,
+      "QO_Q1": 0.25,
+      "QO_Q4": 0.3333333333333333,
+      "delta": 0.08333333333333331
+    },
+    {
+      "folio": "f95r2",
+      "regime": "REGIME_3",
+      "n_lines": 9,
+      "QO_Q1": 0.2,
+      "QO_Q4": 0.4,
+      "delta": 0.2
+    },
+    {
+      "folio": "f95v2",
+      "regime": "REGIME_2",
+      "n_lines": 7,
+      "QO_Q1": 0.2857142857142857,
+      "QO_Q4": 0.5,
+      "delta": 0.2142857142857143
+    },
+    {
+      "folio": "f95v1",
+      "regime": "REGIME_1",
+      "n_lines": 13,
+      "QO_Q1": 0.2857142857142857,
+      "QO_Q4": 0.5,
+      "delta": 0.2142857142857143
+    },
+    {
+      "folio": "f103r",
+      "regime": "REGIME_4",
+      "n_lines": 54,
+      "QO_Q1": 0.42105263157894735,
+      "QO_Q4": 0.5555555555555556,
+      "delta": 0.13450292397660824
+    },
+    {
+      "folio": "f103v",
+      "regime": "REGIME_2",
+      "n_lines": 46,
+      "QO_Q1": 0.4418604651162791,
+      "QO_Q4": 0.3488372093023256,
+      "delta": -0.09302325581395349
+    },
+    {
+      "folio": "f104r",
+      "regime": "REGIME_4",
+      "n_lines": 45,
+      "QO_Q1": 0.45454545454545453,
+      "QO_Q4": 0.6296296296296297,
+      "delta": 0.17508417508417512
+    },
+    {
+      "folio": "f104v",
+      "regime": "REGIME_2",
+      "n_lines": 44,
+      "QO_Q1": 0.43902439024390244,
+      "QO_Q4": 0.4666666666666667,
+      "delta": 0.027642276422764234
+    },
+    {
+      "folio": "f105r",
+      "regime": "REGIME_2",
+      "n_lines": 37,
+      "QO_Q1": 0.30434782608695654,
+      "QO_Q4": 0.7058823529411765,
+      "delta": 0.40153452685422
+    },
+    {
+      "folio": "f105v",
+      "regime": "REGIME_4",
+      "n_lines": 38,
+      "QO_Q1": 0.25,
+      "QO_Q4": 0.3,
+      "delta": 0.04999999999999999
+    },
+    {
+      "folio": "f106r",
+      "regime": "REGIME_2",
+      "n_lines": 46,
+      "QO_Q1": 0.4642857142857143,
+      "QO_Q4": 0.5294117647058824,
+      "delta": 0.06512605042016806
+    },
+    {
+      "folio": "f106v",
+      "regime": "REGIME_1",
+      "n_lines": 47,
+      "QO_Q1": 0.41935483870967744,
+      "QO_Q4": 0.2903225806451613,
+      "delta": -0.12903225806451613
+    },
+    {
+      "folio": "f107r",
+      "regime": "REGIME_4",
+      "n_lines": 51,
+      "QO_Q1": 0.25806451612903225,
+      "QO_Q4": 0.4838709677419355,
+      "delta": 0.22580645161290325
+    },
+    {
+      "folio": "f107v",
+      "regime": "REGIME_4",
+      "n_lines": 49,
+      "QO_Q1": 0.5102040816326531,
+      "QO_Q4": 0.7297297297297297,
+      "delta": 0.21952564809707664
+    },
+    {
+      "folio": "f108r",
+      "regime": "REGIME_4",
+      "n_lines": 50,
+      "QO_Q1": 0.5151515151515151,
+      "QO_Q4": 0.5625,
+      "delta": 0.04734848484848486
+    },
+    {
+      "folio": "f108v",
+      "regime": "REGIME_4",
+      "n_lines": 53,
+      "QO_Q1": 0.4473684210526316,
+      "QO_Q4": 0.6136363636363636,
+      "delta": 0.16626794258373206
+    },
+    {
+      "folio": "f111r",
+      "regime": "REGIME_4",
+      "n_lines": 54,
+      "QO_Q1": 0.2826086956521739,
+      "QO_Q4": 0.42857142857142855,
+      "delta": 0.14596273291925466
+    },
+    {
+      "folio": "f111v",
+      "regime": "REGIME_1",
+      "n_lines": 51,
+      "QO_Q1": 0.40625,
+      "QO_Q4": 0.3404255319148936,
+      "delta": -0.06582446808510639
+    },
+    {
+      "folio": "f112r",
+      "regime": "REGIME_4",
+      "n_lines": 45,
+      "QO_Q1": 0.46875,
+      "QO_Q4": 0.6111111111111112,
+      "delta": 0.14236111111111116
+    },
+    {
+      "folio": "f112v",
+      "regime": "REGIME_2",
+      "n_lines": 47,
+      "QO_Q1": 0.5806451612903226,
+      "QO_Q4": 0.35714285714285715,
+      "delta": -0.22350230414746547
+    },
+    {
+      "folio": "f113r",
+      "regime": "REGIME_2",
+      "n_lines": 51,
+      "QO_Q1": 0.35,
+      "QO_Q4": 0.3617021276595745,
+      "delta": 0.011702127659574513
+    },
+    {
+      "folio": "f113v",
+      "regime": "REGIME_2",
+      "n_lines": 49,
+      "QO_Q1": 0.5652173913043478,
+      "QO_Q4": 0.45454545454545453,
+      "delta": -0.11067193675889325
+    },
+    {
+      "folio": "f114r",
+      "regime": "REGIME_3",
+      "n_lines": 45,
+      "QO_Q1": 0.47368421052631576,
+      "QO_Q4": 0.40476190476190477,
+      "delta": -0.068922305764411
+    },
+    {
+      "folio": "f114v",
+      "regime": "REGIME_4",
+      "n_lines": 41,
+      "QO_Q1": 0.38235294117647056,
+      "QO_Q4": 0.45161290322580644,
+      "delta": 0.06925996204933588
+    },
+    {
+      "folio": "f115r",
+      "regime": "REGIME_1",
+      "n_lines": 45,
+      "QO_Q1": 0.5227272727272727,
+      "QO_Q4": 0.5384615384615384,
+      "delta": 0.01573426573426573
+    },
+    {
+      "folio": "f115v",
+      "regime": "REGIME_1",
+      "n_lines": 45,
+      "QO_Q1": 0.5666666666666667,
+      "QO_Q4": 0.5,
+      "delta": -0.06666666666666665
+    },
+    {
+      "folio": "f116r",
+      "regime": "REGIME_2",
+      "n_lines": 50,
+      "QO_Q1": 0.32558139534883723,
+      "QO_Q4": 0.43243243243243246,
+      "delta": 0.10685103708359522
+    }
+  ],
+  "c668_comparison": {
+    "target_overall_rho": -0.058,
+    "actual_overall_rho": 0.058691142694701985,
+    "delta": 0.11669114269470199,
+    "target_strongest_regime": "REGIME_2",
+    "actual_strongest_regime": "REGIME_3",
+    "strongest_match": false,
+    "target_flat_regime": "REGIME_4",
+    "regime_4_delta_QO": 0.018637755062622503,
+    "regime_4_flat": false
+  },
+  "verdict": {
+    "drift_significant": false,
+    "drift_type": "no_significant_drift",
+    "model_recommendation": "EXCLUDE",
+    "rationale": "Overall Spearman rho = 0.0587 (p = 0.292219). Drift classified as no_significant_drift. Drift too weak to model."
+  }
+}

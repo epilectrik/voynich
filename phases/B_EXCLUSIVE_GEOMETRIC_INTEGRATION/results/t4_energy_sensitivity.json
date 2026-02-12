@@ -1,0 +1,40 @@
+{
+  "test": "T4_energy_sensitivity",
+  "n_valid_lines": 2412,
+  "baseline_mean_E": -0.01114489805256804,
+  "exclusive_presence": {
+    "lines_with": 942,
+    "lines_without": 1470,
+    "mean_count": 0.5725538971807629
+  },
+  "energy_comparison": {
+    "with_mean": -0.010780047346297528,
+    "without_mean": -0.011378700341892414,
+    "shift": 0.0005986529955948859,
+    "mw_p": 0.11771347162590519
+  },
+  "count_correlation": {
+    "rho": 0.029657052810286685,
+    "p": 0.14536887728954728
+  },
+  "bin_energy": {
+    "0": {
+      "n": 1470,
+      "mean_E": -0.011378700341892414
+    },
+    "1": {
+      "n": 627,
+      "mean_E": -0.011026323844069805
+    },
+    "2": {
+      "n": 229,
+      "mean_E": -0.010972291404939823
+    },
+    "3+": {
+      "n": 86,
+      "mean_E": -0.008472614165689356
+    }
+  },
+  "verdict": "SURFACE_ELABORATION",
+  "explanation": "B-exclusive MIDDLEs do NOT materially affect energy: shift=+0.00060 (p=1.2e-01), count correlation rho=+0.030. They are surface decoration on A-space backbone."
+}

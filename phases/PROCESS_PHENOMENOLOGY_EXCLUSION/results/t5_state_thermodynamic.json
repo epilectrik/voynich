@@ -1,0 +1,178 @@
+{
+  "test": "T5_state_thermodynamic_necessity",
+  "n_states": 6,
+  "state_map": {
+    "S0_FL_HAZ": {
+      "grammar_label": "FL_HAZ",
+      "pct": 5.9,
+      "physical_function": "HAZARDOUS_FLOW_INTERVENTION",
+      "description": "Emergency flow redirection. These are the flow operators that participate in forbidden transitions. In distillation: emergency vent, emergency seal, forced liquid redirect when apparatus is in danger of boil-over or pressure breach.",
+      "distillation_observable": "Operator must physically intervene in flow: open a vent, close a seal, redirect liquid return. These are the \"hands on the apparatus\" moments during crisis.",
+      "constraint_anchor": [
+        "C549",
+        "C786",
+        "C976"
+      ],
+      "physical_necessity_score": 1.0,
+      "why_necessary": "CANNOT merge with FL_SAFE because hazardous flow operations have forbidden transition partners (17 forbidden pairs) while safe flow does not. Merging would destroy the hazard boundary that prevents PHASE_ORDERING and CONTAINMENT_TIMING failures. In distillation terms: emergency venting and routine drip monitoring are categorically different."
+    },
+    "S1_FQ": {
+      "grammar_label": "FQ",
+      "pct": 18.0,
+      "physical_function": "ROUTINE_SCAFFOLD_OPERATIONS",
+      "description": "High-frequency routine operations that provide the structural scaffold. In distillation: standard fire maintenance, routine checking, periodic adjustment \u2014 the \"background hum\" of normal operation.",
+      "distillation_observable": "Operator performs routine tasks: stoke fire slightly, check temperature by touch, observe steady drip. These are the most common operations, the \"muscle memory\" of operation.",
+      "constraint_anchor": [
+        "C124",
+        "C976"
+      ],
+      "physical_necessity_score": 1.0,
+      "why_necessary": "CANNOT merge with CC because core control primitives have REGIME-conditioned routing while frequent operators do not. CANNOT merge with AX/EN because ROLE integrity requires distinguishing scaffold from content. In distillation terms: routine fire tending is categorically different from deliberate control adjustments."
+    },
+    "S2_CC": {
+      "grammar_label": "CC",
+      "pct": 4.6,
+      "physical_function": "CORE_CONTROL_PRIMITIVES",
+      "description": "The fundamental control operations that route program execution. In distillation: the deliberate decisions \u2014 change fraction, adjust fire degree, initiate new processing phase.",
+      "distillation_observable": "Operator makes deliberate control decisions: \"now I cut to the next fraction,\" \"now I increase the fire,\" \"now I begin the reflux cycle.\" These are the decision points, not the routine maintenance.",
+      "constraint_anchor": [
+        "C976"
+      ],
+      "physical_necessity_score": 1.0,
+      "why_necessary": "CANNOT merge with FQ because CC routing is REGIME-conditioned (control decisions depend on which operational regime the system is in) while FQ is regime-independent. CANNOT merge with AX/EN because CC has distinct transition probabilities. In distillation terms: deliberate fraction-change decisions cannot be treated as routine fire-tending."
+    },
+    "S3_AXm": {
+      "grammar_label": "AXm",
+      "pct": 3.0,
+      "physical_function": "SPECIALIZED_AUXILIARY_OPERATIONS",
+      "description": "Minor specialized operations that complement the main operational mass. In distillation: specific techniques like rapid cooling, targeted agitation, precise timing operations \u2014 specialist skills used infrequently.",
+      "distillation_observable": "Operator performs specialized techniques: quench a specific vessel section, apply targeted cooling cloth, perform a specific glass-working adjustment. These are the \"expert tricks\" rather than routine operations.",
+      "constraint_anchor": [
+        "C976"
+      ],
+      "physical_necessity_score": 0.8,
+      "why_necessary": "CANNOT merge with AXM because depletion asymmetry (C976 binding constraint): AXm classes have different transition probabilities that would violate observed depleted pairs if merged. In distillation terms: specialist techniques have different sequencing constraints than bulk operations, reflecting their nature as context-dependent expert interventions."
+    },
+    "S4_AXM": {
+      "grammar_label": "AXM",
+      "pct": 67.7,
+      "physical_function": "MAIN_OPERATIONAL_MASS",
+      "description": "The bulk of operational instructions \u2014 the main body of work. In distillation: the actual processing steps \u2014 heating at specific rates, monitoring specific parameters, managing specific material behaviors. This is where the 100D discrimination space lives.",
+      "distillation_observable": "The core work of distillation: managing heat application, monitoring condensation, tracking fraction progress, adjusting for material-specific behaviors. This state contains the richest vocabulary because it encodes the material-specific parameters that vary between different distillation runs.",
+      "constraint_anchor": [
+        "C976",
+        "C475"
+      ],
+      "physical_necessity_score": 1.0,
+      "why_necessary": "The \"everything else\" state \u2014 but it is genuinely distinct from S0-S3 and S5 because those states have specific structural roles (hazard, scaffold, control, specialist, safe flow). AXM is the operational residual: the actual content of the work. In distillation terms: the detailed material processing instructions that vary from run to run."
+    },
+    "S5_FL_SAFE": {
+      "grammar_label": "FL_SAFE",
+      "pct": 0.8,
+      "physical_function": "SAFE_FLOW_TRANSITION",
+      "description": "Non-hazardous flow transitions \u2014 routine flow management that does not risk hazard boundaries. In distillation: normal drip collection, gentle liquid return, standard product flow.",
+      "distillation_observable": "Operator observes normal product flow: steady drip into receiver, smooth reflux return, no pressure events. These are the \"everything is fine\" flow markers.",
+      "constraint_anchor": [
+        "C549",
+        "C773",
+        "C976"
+      ],
+      "physical_necessity_score": 0.9,
+      "why_necessary": "CANNOT merge with FL_HAZ because FL ordering violation (C586, C773): safe flow and hazardous flow have different transition constraints. Merging would destroy the distinction between \"normal product flow\" and \"emergency flow intervention.\" The 0.8% frequency is low but structurally essential \u2014 it marks the transition to safe conditions."
+    }
+  },
+  "binding_constraints": [
+    {
+      "merge_candidate": "FL_HAZ + FL_SAFE",
+      "constraint_violated": "FL ordering violation (C586, C773)",
+      "physical_necessity": "Emergency flow intervention (venting, sealing) and normal product flow (steady drip, gentle reflux) require categorically different operator responses. Merging them would conflate \"the apparatus is about to burst\" with \"product is flowing normally.\" An operator who cannot distinguish these will die.",
+      "distillation_example": "Pelican has both normal reflux return (safe) and emergency pressure release (hazardous). The operator must respond to the second immediately and ignore the first.",
+      "necessity_score": 1.0
+    },
+    {
+      "merge_candidate": "FQ + CC",
+      "constraint_violated": "REGIME-conditioned routing destroyed",
+      "physical_necessity": "Routine scaffold operations (fire tending, temperature checking) are performed identically regardless of regime. Core control decisions (fraction change, fire degree adjustment) depend on which regime the system is in. Merging destroys this regime sensitivity.",
+      "distillation_example": "You tend the fire the same way whether distilling rose water or aqua vitae. But the decision to change fraction depends on what material you are processing. These are categorically different operation types.",
+      "necessity_score": 1.0
+    },
+    {
+      "merge_candidate": "FQ + AX/EN",
+      "constraint_violated": "ROLE integrity + depleted pair violation",
+      "physical_necessity": "Scaffold operations are universal (same across all programs). Content operations are program-specific (different materials require different processing). Merging destroys the distinction between \"what everyone does\" and \"what this specific run requires.\"",
+      "distillation_example": "Fire tending is the same for all distillations. But the specific adjustments for distilling frankincense vs camphor are different. The grammar must distinguish these.",
+      "necessity_score": 1.0
+    },
+    {
+      "merge_candidate": "AXm + AXM",
+      "constraint_violated": "DEPLETION asymmetry violation",
+      "physical_necessity": "Specialist techniques (AXm) have different sequencing constraints than bulk operations (AXM). Specifically, certain specialist techniques cannot follow certain bulk operations (depleted pairs). Merging would hide these constraints.",
+      "distillation_example": "Rapid quenching (specialist) cannot follow certain heating operations because thermal shock would crack the vessel. This constraint does not apply to normal temperature adjustments. The depletion asymmetry encodes this physical reality.",
+      "necessity_score": 0.8
+    },
+    {
+      "merge_candidate": "FL + AX/EN",
+      "constraint_violated": "ROLE integrity violation",
+      "physical_necessity": "Flow operations and processing operations serve fundamentally different physical functions. Flow = material transport. Processing = material transformation. Merging would conflate \"moving material\" with \"changing material.\"",
+      "distillation_example": "Collecting distillate in the receiver (flow) is categorically different from adjusting the fire to change the distillation rate (processing). The operator uses different body parts, different attention, different skills.",
+      "necessity_score": 1.0
+    }
+  ],
+  "missing_state_analysis": [
+    {
+      "candidate_state": "IDLE / PRE-HEAT",
+      "physical_description": "System at rest before operation begins",
+      "present_in_grammar": false,
+      "explanation": "The grammar has no dedicated idle state because the text describes operational programs, not apparatus setup. Pre-heat is implicit in the first line of each folio. This is consistent with a training manual that assumes the operator has already prepared the apparatus.",
+      "necessity": "NOT_NEEDED (implicit in program start)"
+    },
+    {
+      "candidate_state": "POST-PROCESS / CLEANUP",
+      "physical_description": "System shutdown and apparatus cleaning",
+      "present_in_grammar": false,
+      "explanation": "No dedicated cleanup state. Consistent with a manual focused on active processing, not housekeeping. The convergence to STATE-C represents completion of the active process, not apparatus cleanup.",
+      "necessity": "NOT_NEEDED (out of scope for active control)"
+    },
+    {
+      "candidate_state": "PAUSE / WAITING",
+      "physical_description": "Deliberate waiting period between interventions",
+      "present_in_grammar": "Partially (LINK operator, 13.2%)",
+      "explanation": "LINK operators serve the monitoring/waiting function but are not a separate state \u2014 they are distributed across states. This is consistent with monitoring being interleaved with action, not a separate phase.",
+      "necessity": "PARTIALLY_PRESENT (distributed, not a state)"
+    }
+  ],
+  "state_count_derivation": {
+    "n_physically_necessary": 6,
+    "n_mergeable": 0,
+    "n_missing": 0,
+    "mean_state_necessity": 0.95,
+    "mean_binding_necessity": 0.96,
+    "derivation_score": 0.964
+  },
+  "terminal_distribution_check": {
+    "observed": {
+      "STATE_C": 0.578,
+      "transitional": 0.386,
+      "initial": 0.036
+    },
+    "alignment": "HIGH",
+    "note": "Terminal distribution (57.8% STATE-C) matches distillation expectation: the operator spends the majority of time in steady-state operation (watching the still run), with minority time in transitions (adjusting, recovering, starting). This is exactly the pattern of a well-operated distillation: long periods of stable reflux punctuated by brief interventions."
+  },
+  "frequency_distribution": {
+    "bulk_operational": {
+      "AXM": 67.7,
+      "FQ": 18.0,
+      "combined": 85.7
+    },
+    "special_operations": {
+      "FL_HAZ": 5.9,
+      "CC": 4.6,
+      "AXm": 3.0,
+      "FL_SAFE": 0.8,
+      "combined": 14.3
+    },
+    "note": "Frequency distribution (AXM 67.7%, FQ 18.0%, rest 14.3%) matches distillation: most time is spent on actual material processing (AXM), with regular routine maintenance (FQ), and infrequent control decisions, hazard events, and specialist techniques making up the remainder."
+  },
+  "verdict": "DERIVED",
+  "explanation": "6/6 states physically necessary (all >= 0.7 threshold). 5 binding constraints support irreducibility. 0 missing states needed. Terminal distribution: HIGH. The 6-state count is thermodynamically derivable: each state maps to a physically distinct operational mode in thermal process control, and no pair can merge without destroying essential safety or control distinctions."
+}

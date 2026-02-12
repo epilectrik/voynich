@@ -1,0 +1,70 @@
+{
+  "test": "T2_candidate_scoring",
+  "tier": "3/4",
+  "n_candidates": 5,
+  "n_criteria": 12,
+  "candidates": {
+    "CV-1": "Temperature / Thermal State",
+    "CV-2": "Vapor Composition / Fraction Purity",
+    "CV-3": "Liquid Concentration / Solvent Ratio",
+    "CV-4": "Phase Boundary Position",
+    "CV-5": "Product Quality / Sensory State"
+  },
+  "ranking": [
+    {
+      "rank": 1,
+      "id": "CV-1",
+      "name": "Temperature / Thermal State",
+      "total": 23,
+      "max": 24,
+      "pct": 95.8
+    },
+    {
+      "rank": 2,
+      "id": "CV-4",
+      "name": "Phase Boundary Position",
+      "total": 18,
+      "max": 24,
+      "pct": 75.0
+    },
+    {
+      "rank": 3,
+      "id": "CV-2",
+      "name": "Vapor Composition / Fraction Purity",
+      "total": 12,
+      "max": 24,
+      "pct": 50.0
+    },
+    {
+      "rank": 4,
+      "id": "CV-5",
+      "name": "Product Quality / Sensory State",
+      "total": 3,
+      "max": 24,
+      "pct": 12.5
+    },
+    {
+      "rank": 5,
+      "id": "CV-3",
+      "name": "Liquid Concentration / Solvent Ratio",
+      "total": -2,
+      "max": 24,
+      "pct": -8.3
+    }
+  ],
+  "top_candidate": {
+    "id": "CV-1",
+    "name": "Temperature / Thermal State",
+    "score": 23,
+    "pct": 95.8
+  },
+  "runner_up": {
+    "id": "CV-4",
+    "name": "Phase Boundary Position",
+    "score": 18,
+    "pct": 75.0
+  },
+  "synthesis": "Thermal state is the controlled variable; phase boundary is its primary effect. Temperature (input) controls phase boundary (output). Grammar tracks the input side.",
+  "verdict": "THERMAL_STATE",
+  "confidence": "HIGH within distillation framework"
+}

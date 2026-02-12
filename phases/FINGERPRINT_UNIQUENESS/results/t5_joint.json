@@ -1,0 +1,119 @@
+{
+  "test": "T5_joint_fingerprint",
+  "per_test_verdicts": {
+    "T1": "RARE",
+    "T2": "RARE",
+    "T3": "UNCOMMON",
+    "T4": "UNCOMMON"
+  },
+  "per_test_worst_joint_p": {
+    "T1": 0.0001,
+    "T2": 0.0,
+    "T3": 0.012,
+    "T4": 0.0236
+  },
+  "properties": {
+    "F2_depleted_asymmetry": {
+      "observed": "18 depleted, 100% asymmetric",
+      "best_p": 0.0,
+      "worst_p": 0.0001,
+      "discriminating": true,
+      "source": "T1",
+      "note": "100% asymmetry is killer \u2014 every depleted pair has non-depleted reverse"
+    },
+    "F3_clustering": {
+      "observed": "coefficient 0.099",
+      "best_p": 0.0,
+      "worst_p": 1.0,
+      "discriminating": false,
+      "source": "T1",
+      "note": "NOT discriminating \u2014 random graphs show similar or more clustering"
+    },
+    "F4_one_way_kernel": {
+      "observed": "0 one-way pairs at class level",
+      "best_p": 0.0,
+      "worst_p": 1.0,
+      "discriminating": false,
+      "source": "T1",
+      "note": "NOT detected at 49-class granularity. Operates within roles (C521)."
+    },
+    "F5_first_order_sufficiency": {
+      "observed": "BIC diff -598061",
+      "best_p": 1.0,
+      "worst_p": 1.0,
+      "discriminating": false,
+      "source": "T2",
+      "note": "NOT discriminating \u2014 100% of all null Markov chains also prefer 1st order"
+    },
+    "F6_1token_gate": {
+      "observed": "KL ratio 1.0x (not sharp)",
+      "best_p": 0.0,
+      "worst_p": 0.349,
+      "discriminating": false,
+      "source": "T2",
+      "note": "NOT detected at 49-class level (ratio=1.0x). Gate operates within roles (C967)."
+    },
+    "F10_low_cross_line_MI": {
+      "observed": "MI = 0.5212 bits",
+      "best_p": 0.0,
+      "worst_p": 0.0,
+      "discriminating": true,
+      "source": "T2",
+      "note": "KILLER \u2014 Voynich has unusually LOW cross-line MI vs all null Markov chains (null MI 0.72-0.77)"
+    },
+    "F7_incompatibility": {
+      "observed": "0.4602 (85 MIDDLEs)",
+      "best_p": 0.0,
+      "worst_p": 1.0,
+      "discriminating": false,
+      "source": "T3",
+      "note": "Kills latent models (p=0.0) but not class reassignment (p=1.0). Partially discriminating."
+    },
+    "F8_hub_rationing": {
+      "observed": "0.2982 savings vs greedy",
+      "best_p": 0.0,
+      "worst_p": 1.0,
+      "discriminating": false,
+      "source": "T3",
+      "note": "Kills latent models (p=0.0) but not others. Partially discriminating."
+    },
+    "F11_suffix_role_chi2": {
+      "observed": "chi2 = 3872.2",
+      "best_p": 0.0,
+      "worst_p": 1.0,
+      "discriminating": false,
+      "source": "T3",
+      "note": "KILLER vs class reassignment (p=0.0) \u2014 role-suffix binding real. Not discriminating vs shuffle (roles preserved)."
+    },
+    "F9_role_position_MI": {
+      "observed": "MI = 0.0216 bits",
+      "best_p": 0.0,
+      "worst_p": 0.0742,
+      "discriminating": true,
+      "source": "T4",
+      "note": "Strong vs within-line shuffle (p=0.0), marginal vs cross-line (p=0.074)."
+    }
+  },
+  "joint_probability": {
+    "fisher_p": 7.669083090799944e-08,
+    "fisher_statistic": 48.57490569420605,
+    "fisher_df": 8,
+    "conservative_product": 2.832e-10
+  },
+  "discriminating_count": 3,
+  "non_discriminating_count": 7,
+  "overall_verdict": "UNCOMMON",
+  "overall_worst_p": 0.0236,
+  "strongest_discriminators": [
+    "F2_depleted_asymmetry (p<=0.0001)",
+    "F10_low_cross_line_MI (p=0.000)",
+    "F11_suffix_role_chi2 (p=0.000 vs class reassign)",
+    "F9_role_position_MI (p=0.000 vs within-line)"
+  ],
+  "non_discriminating": [
+    "F3_clustering",
+    "F4_one_way_kernel",
+    "F5_first_order_sufficiency",
+    "F6_1token_gate"
+  ]
+}

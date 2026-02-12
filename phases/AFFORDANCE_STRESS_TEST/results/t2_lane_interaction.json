@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "phase": "AFFORDANCE_STRESS_TEST",
+    "test": "T2_LANE_INTERACTION",
+    "qo_threshold": 0.6,
+    "chsh_threshold": 0.4
+  },
+  "per_bin": {
+    "0": {
+      "label": "FLOW_TERMINAL",
+      "total_tokens": 1985,
+      "qo_fraction": 0.2529,
+      "chsh_fraction": 0.0791,
+      "neutral_fraction": 0.668,
+      "mean_qo_run": 1.584,
+      "mean_chsh_run": 1.955,
+      "lane_inertia": 0.5067,
+      "n_qo_runs": 502,
+      "n_chsh_runs": 157
+    },
+    "1": {
+      "label": "ROUTINE_SPECIALIZED",
+      "total_tokens": 156,
+      "qo_fraction": 0.2692,
+      "chsh_fraction": 0.4872,
+      "neutral_fraction": 0.2436,
+      "mean_qo_run": 1.643,
+      "mean_chsh_run": 2.013,
+      "lane_inertia": 0.5538,
+      "n_qo_runs": 42,
+      "n_chsh_runs": 76
+    },
+    "2": {
+      "label": "PRECISION_SPECIALIZED",
+      "total_tokens": 51,
+      "qo_fraction": 0.0392,
+      "chsh_fraction": 0.4902,
+      "neutral_fraction": 0.4706,
+      "mean_qo_run": 1.5,
+      "mean_chsh_run": 2.32,
+      "lane_inertia": 0.7857,
+      "n_qo_runs": 2,
+      "n_chsh_runs": 25
+    },
+    "3": {
+      "label": "COMPOUND_TERMINAL",
+      "total_tokens": 263,
+      "qo_fraction": 0.2357,
+      "chsh_fraction": 0.2433,
+      "neutral_fraction": 0.5209,
+      "mean_qo_run": 1.258,
+      "mean_chsh_run": 1.797,
+      "lane_inertia": 0.4576,
+      "n_qo_runs": 62,
+      "n_chsh_runs": 64
+    },
+    "5": {
+      "label": "SETTLING_SPECIALIZED",
+      "total_tokens": 114,
+      "qo_fraction": 0.0439,
+      "chsh_fraction": 0.6316,
+      "neutral_fraction": 0.3246,
+      "mean_qo_run": 1.0,
+      "mean_chsh_run": 2.222,
+      "lane_inertia": 0.7838,
+      "n_qo_runs": 5,
+      "n_chsh_runs": 72
+    },
+    "6": {
+      "label": "HUB_UNIVERSAL",
+      "total_tokens": 13670,
+      "qo_fraction": 0.1945,
+      "chsh_fraction": 0.3641,
+      "neutral_fraction": 0.4414,
+      "mean_qo_run": 1.421,
+      "mean_chsh_run": 2.001,
+      "lane_inertia": 0.5425,
+      "n_qo_runs": 2659,
+      "n_chsh_runs": 4977
+    },
+    "7": {
+      "label": "ENERGY_SPECIALIZED",
+      "total_tokens": 151,
+      "qo_fraction": 0.4768,
+      "chsh_fraction": 0.2715,
+      "neutral_fraction": 0.2517,
+      "mean_qo_run": 1.403,
+      "mean_chsh_run": 1.732,
+      "lane_inertia": 0.3962,
+      "n_qo_runs": 72,
+      "n_chsh_runs": 41
+    },
+    "8": {
+      "label": "STABILITY_CRITICAL",
+      "total_tokens": 3905,
+      "qo_fraction": 0.0,
+      "chsh_fraction": 0.7941,
+      "neutral_fraction": 0.2059,
+      "mean_qo_run": null,
+      "mean_chsh_run": 1.992,
+      "lane_inertia": 0.5805,
+      "n_qo_runs": 0,
+      "n_chsh_runs": 3101
+    },
+    "9": {
+      "label": "PHASE_SENSITIVE",
+      "total_tokens": 1381,
+      "qo_fraction": 0.3838,
+      "chsh_fraction": 0.0594,
+      "neutral_fraction": 0.5568,
+      "mean_qo_run": 1.485,
+      "mean_chsh_run": 2.122,
+      "lane_inertia": 0.5033,
+      "n_qo_runs": 530,
+      "n_chsh_runs": 82
+    }
+  },
+  "statistical_tests": {
+    "chi2_bin_lane": {
+      "chi2": 4556.198251170253,
+      "df": 16,
+      "p": 0.0
+    },
+    "kruskal_qo_runs": {
+      "H": 25.81768713016081,
+      "p": 0.00024074189036357057
+    },
+    "kruskal_chsh_runs": {
+      "H": 10.737399237286343,
+      "p": 0.21702701451098363
+    },
+    "chi2_lane_inertia": {
+      "chi2": 30.610553951356806,
+      "df": 8,
+      "p": 0.00016478102526950035
+    }
+  },
+  "predictions": {
+    "PHASE_SENSITIVE longer CHSH runs": {
+      "confirmed": true,
+      "detail": "mean_chsh_run=2.12 vs median=2.00"
+    },
+    "ENERGY_SPECIALIZED longer QO runs": {
+      "confirmed": false,
+      "detail": "mean_qo_run=1.40 vs median=1.45"
+    },
+    "ENERGY_SPECIALIZED QO-leaning": {
+      "confirmed": true,
+      "detail": "qo_fraction=0.477"
+    },
+    "STABILITY_CRITICAL CHSH-leaning": {
+      "confirmed": true,
+      "detail": "chsh_fraction=0.794"
+    },
+    "HUB_UNIVERSAL lane-neutral": {
+      "confirmed": true,
+      "detail": "qo=0.195, chsh=0.364, diff=0.170"
+    }
+  }
+}

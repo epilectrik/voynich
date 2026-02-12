@@ -1498,3 +1498,83 @@ Line-final position: "completion" of oil procedure differs from water
 
 - `phases/REVERSE_BRUNSCHWIG_V3/results/output_category_signatures.json`
 - `phases/REVERSE_BRUNSCHWIG_V3/scripts/09_output_category_signatures.py`
+
+---
+
+## F-BRU-021: Controlled Variable Identification (Temperature / Thermal State)
+
+**Tier:** F3 (Model-Level Structural Fit)
+**Scope:** B
+**Result:** SUCCESS
+**Supports:** C976 (6-State Topology), C978 (Hub-and-Spoke), C979 (REGIME Modulates Weights), C980 (Free Variation Envelope)
+**Added:** 2026-02-11 (CONTROLLED_VARIABLE_ANALYSIS)
+
+### Hypothesis
+
+The controlled variable tracked by the 6-state automaton grammar is **temperature / thermal state** — the fire degree and heating/cooling condition of the apparatus. Five distillation-context candidates were tested against the structural signature.
+
+### Method
+
+1. Extract 14 quantitative properties from the 6-state automaton as a "structural signature" (SIG-01 through SIG-14)
+2. Define 5 candidate controlled variables with specific state mappings:
+   - CV-1: Temperature / Thermal State
+   - CV-2: Vapor Composition / Fraction Purity
+   - CV-3: Liquid Concentration / Solvent Ratio
+   - CV-4: Phase Boundary Position
+   - CV-5: Product Quality / Sensory State
+3. Score each candidate against 12 criteria derived from the structural signature (SC-01 through SC-12)
+4. Each criterion scored {+2, +1, 0, -1, -2} based on fit quality
+
+### Finding
+
+| Rank | Candidate | Score | Max | Pct |
+|------|-----------|-------|-----|-----|
+| 1 | **Temperature / Thermal State** | 23 | 24 | **95.8%** |
+| 2 | Phase Boundary Position | 18 | 24 | 75.0% |
+| 3 | Vapor Composition / Fraction Purity | 12 | 24 | 50.0% |
+| 4 | Product Quality / Sensory State | 3 | 24 | 12.5% |
+| 5 | Liquid Concentration / Solvent Ratio | -2 | 24 | -8.3% |
+
+**Key discriminators:**
+
+- **Dominant steady-state** (SIG-01): Temperature has a natural baseline (ambient/fire-maintained); liquid concentration does not.
+- **No long-range memory** (SIG-03): Temperature resets rapidly when heat source changes; product quality accumulates.
+- **Binary lane oscillation** (SIG-06): Heating/cooling phases alternate; vapor composition doesn't have binary modes.
+- **Categorical control** (SIG-11): Temperature assessed by observing fire (categorical), not by thermometer reading (quantitative).
+- **Regime intensity scaling** (SIG-07): Higher REGIME = hotter fire, same control topology; concentration would need structural change.
+
+### Interpretation
+
+1. **Temperature is the input variable**: The grammar tracks what the operator controls (fire degree), not what changes downstream (distillate composition).
+
+2. **Phase boundary is the primary effect**: CV-4 scores second (75%) because phase boundary position is the direct physical consequence of thermal state. Temperature (input) determines phase boundary (output).
+
+3. **Grammar tracks the control side, not the measurement side**: Consistent with SIG-11 (categorical, not quantitative control) — a distiller watches the fire and the liquid surface, not a thermometer.
+
+4. **CV-1 only weakness — binary oscillation**: The two thermal modes may correspond to heating/cooling phases, fire-above/fire-below configurations, or active-heating/passive-cooling cycles. This remains underspecified.
+
+### External Anchor Logic
+
+```
+Brunschwig: "Govern the fire" is the primary instruction across all procedures
+          ↓
+Temperature is the ONE variable the distiller directly controls
+          ↓
+6-state automaton: dominant steady-state (68%), fast recovery (1.1 tokens),
+categorical assessment, regime-scaled intensity
+          ↓
+All 14 structural signature properties consistent with thermal state tracking
+```
+
+### Status
+
+- Structural signature extraction: **COMPLETE** (14 properties)
+- Candidate scoring: **SUCCESS** (95.8% fit, 20.8 pp gap over runner-up)
+- Confidence: **HIGH within distillation framework** (Tier 3/4 — framework-dependent)
+
+### Files
+
+- `phases/CONTROLLED_VARIABLE_ANALYSIS/results/t1_structural_signature.json`
+- `phases/CONTROLLED_VARIABLE_ANALYSIS/results/t2_candidate_scoring.json`
+- `phases/CONTROLLED_VARIABLE_ANALYSIS/scripts/t1_structural_signature.py`
+- `phases/CONTROLLED_VARIABLE_ANALYSIS/scripts/t2_candidate_scoring.py`

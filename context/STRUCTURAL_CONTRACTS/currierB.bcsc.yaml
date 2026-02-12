@@ -3,8 +3,8 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.3"
-  date: "2026-02-10"
+  version: "3.4"
+  date: "2026-02-12"
   status: "LOCKED"
   layer_type: "grammar contract"
   derived_from: "Tier 0-2 constraints (structural); Tier 3 operational layer clearly marked"
@@ -88,6 +88,18 @@ guarantees:
   - id: "CLOSED_LOOP_ONLY"
     statement: "Execution is closed-loop control, not batch, decision tree, or state machine"
     provenance: "C171"
+
+  - id: "MACRO_AUTOMATON_COMPRESSION"
+    statement: "49 instruction classes compress to 6 macro-states (8.17x) with spectral gap 0.894; EN/AX merge, FL splits HAZ/SAFE"
+    provenance: "C976, C977, C978"
+
+  - id: "AFFORDANCE_BIN_SYSTEM"
+    statement: "972 MIDDLEs classify into 9 functional bins by affordance signature; chromatic number 3 for PREFIX-lane interaction; HUB_UNIVERSAL (23 MIDDLEs) monopolizes all 17/17 forbidden transitions"
+    provenance: "C995, C996, C997, C1000"
+
+  - id: "PREFIX_DUAL_ENCODING"
+    statement: "PREFIX simultaneously encodes content (lane, suffix compatibility) and line position; positional grammar is regime-invariant (p=0.97)"
+    provenance: "C1001"
 
   - id: "FOLIO_VOCABULARY_UNIQUENESS"
     statement: "98.8% of folios contribute unique vocabulary appearing in no other folio"
@@ -195,6 +207,10 @@ invariants:
     statement: "PREFIX constrains which MIDDLE families are allowed (102 forbidden pairs)"
     provenance: "C911"
 
+  prefix_positional_grammar:
+    statement: "PREFIX encodes line position independently of regime"
+    provenance: "C1001"
+
 # ============================================================
 grammar:
 
@@ -296,6 +312,41 @@ morphology:
         sister_pair: "ot (C408) — ok=proactive vessel management, ot=corrective adjustment"
         note: "ok is NOT a verb. Same-MIDDLE pairing with other prefixes (378 pairs) confirms PREFIX selects target domain, MIDDLE provides action. Semantic label 'VESSEL' is Tier 3."
     provenance: "C911, C661, C662, C936"
+
+  prefix_positional_zones:
+    # Tier 2 structural fact: PREFIX encodes line position (dual encoding with content)
+    statement: "PREFIXes occupy distinct line zones, regime-invariant"
+    zones:
+      LINE_INITIAL:
+        prefixes: ["po", "dch", "so", "to", "tch", "pch", "sa", "lsh", "sh"]
+        mean_position_range: "0.11-0.40"
+        extreme: "po 86% Q1 (4.30x concentration)"
+      CENTRAL:
+        prefixes: ["qo", "ke", "ta", "ch", "da", "lk", "ok"]
+        mean_position_range: "0.49-0.54"
+      LINE_FINAL:
+        prefixes: ["BARE", "ot", "ol", "ka", "ko", "or", "al", "ar"]
+        mean_position_range: "0.56-0.74"
+        extreme: "ar 61% Q5 (3.05x concentration)"
+    variance_decomposition:
+      prefix_alone_r2: 0.069
+      middle_alone_r2: 0.062
+      additive_r2: 0.118
+      full_pp_with_interaction_r2: 0.168
+    provenance: "C1001"
+
+  prefix_sequential_grammar:
+    statement: "PREFIX transitions are structured with forbidden and enriched sequences"
+    key_enrichments:
+      - pair: "sh→qo"
+        sigma: "+20.5"
+        interpretation: "sh opens (initial zone), qo continues (central zone)"
+      - pair: "BARE→qo"
+        sigma: "-14.4"
+        interpretation: "Strong avoidance"
+    cross_component_mi: "I(MIDDLE_t; PREFIX_{t+1}) = 0.499 bits"
+    prefix_sequential_mi: "0.124 bits (10.4% of MIDDLE's 1.195 bits)"
+    provenance: "C1001"
 
   morphological_phase_encoding:
     statement: "Morphological composition (PREFIX + SUFFIX) encodes control phase"
@@ -583,6 +634,12 @@ program_structure:
       pattern: "[i/ii] → [r/ar] → [al/l/ol] → [o/ly/am] → [y/ry/dy]"
       prefixed_fl_line_final: "72.7% (C897)"
       provenance: "C777, C897"
+    cross_line_information:
+      statement: "Lines carry mutual information about neighbors despite formal independence"
+      cross_line_mi: "0.521 bits"
+      folio_fingerprint_auc: "0.994 (single line identifies folio)"
+      provenance: "C971, C975"
+
     execution_syntax:
       positions:
         - position: "SETUP"
@@ -832,6 +889,31 @@ recovery:
 
   safe_precedence:
     provenance: "C399"
+
+# ============================================================
+safety_buffer_architecture:
+
+  statement: "22 safety buffer tokens prevent forbidden transitions by intervening between hazard pairs"
+  buffer_rate: "0.12% of interior tokens"
+  bin_distribution:
+    HUB_UNIVERSAL: "68% (15/22)"
+    STABILITY_CRITICAL: "18% (4/22)"
+    FLOW_TERMINAL: "9% (2/22)"
+  prefix_mechanism:
+    qo_enrichment: "3.82x (46.7% vs 18.6% baseline, Fisher p=0.012)"
+    interpretation: "QO-PREFIX selects safety buffer function within HUB"
+  top_prevented_pairs:
+    - pair: "chey → chedy"
+      count: 9
+    - pair: "chey → shedy"
+      count: 5
+  hub_sub_roles:
+    HAZARD_SOURCE: ["ar", "dy", "ey", "l", "ol", "or"]
+    HAZARD_TARGET: ["aiin", "al", "ee", "o", "r", "t"]
+    SAFETY_BUFFER: ["eol", "k", "od"]
+    PURE_CONNECTOR: ["d", "e", "eey", "ek", "eo", "iin", "s", "y"]
+  behavioral_homogeneity: "0/14 KW dimensions significant — functional diversity beneath behavioral uniformity"
+  provenance: "C997, C1000"
 
 # ============================================================
 design_freedom:
@@ -1384,6 +1466,7 @@ provenance:
     - "C662"   # PREFIX role reclassification (75% class reduction)
     - "C911"   # PREFIX-MIDDLE compatibility constraints (102 forbidden)
     - "C936"   # ok = vessel domain selector (revised from three-operation composite)
+    - "C1001"  # PREFIX dual encoding (content + position)
 
   link:
     - "C334"   # LINK section conditioning
@@ -1632,6 +1715,26 @@ provenance:
 
   apparatus_markers:
     - "C897"   # Prefixed FL MIDDLEs as line-final state markers
+
+  macro_automaton:
+    - "C976"   # 6-state macro-automaton (8.17x compression)
+    - "C977"   # EN/AX behavioral merge
+    - "C978"   # FL HAZ/SAFE split
+    - "C979"   # Spectral gap 0.894
+    - "C980"   # Macro-automaton integrated verdict
+
+  affordance_system:
+    - "C995"   # 9-bin affordance system
+    - "C996"   # Forbidden transition bin concentration (17/17 HUB per C1000)
+    - "C997"   # Safety buffer mechanism (22 buffers, QO-enriched)
+    - "C1000"  # HUB sub-role decomposition (corrects C996 from 13/17 to 17/17)
+
+  prefix_information_decomposition:
+    - "C1001"  # PREFIX dual encoding (content + positional grammar)
+
+  fingerprint:
+    - "C971"   # Cross-line MI = 0.521 bits
+    - "C975"   # Folio fingerprint AUC = 0.994
 
   paragraph_execution:
     - "C932"   # Body vocabulary gradient (RARE r=-0.97, UNIVERSAL r=+0.92)

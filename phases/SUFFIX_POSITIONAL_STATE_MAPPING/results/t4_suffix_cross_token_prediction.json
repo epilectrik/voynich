@@ -1,0 +1,37 @@
+{
+  "metadata": {
+    "phase": "SUFFIX_POSITIONAL_STATE_MAPPING",
+    "test": "T4_SUFFIX_CROSS_TOKEN_PREDICTION",
+    "n_permutations": 2000
+  },
+  "corpus": {
+    "n_pairs": 13645
+  },
+  "marginal_mi": {
+    "suffix_to_next_prefix": 0.052537888681419585,
+    "middle_to_next_prefix": 0.09405100387937611,
+    "suffix_to_next_middle": 0.053424692630723504,
+    "middle_to_next_middle": 0.10550385838256104
+  },
+  "joint_mi": {
+    "ms_to_next_prefix": 0.020235370616773496,
+    "ms_to_next_middle": 0.01691061904601837
+  },
+  "conditional_mi": {
+    "suffix_given_middle_to_next_prefix": -0.07381563326260261,
+    "suffix_given_middle_to_next_middle": -0.08859323933654267,
+    "middle_given_suffix_to_next_prefix": -0.03230251806464609,
+    "redundancy_next_prefix": 0.1263535219440222
+  },
+  "permutation_test_next_prefix": {
+    "null_mean": -0.09405100387937608,
+    "null_std": 2.7755575615628914e-17,
+    "z_score": 729056060555239.0,
+    "p_value": 0.0
+  },
+  "permutation_test_next_middle": {
+    "p_value": 0.0
+  },
+  "verdict": "NO_SUFFIX_CROSS_TOKEN_SIGNAL",
+  "verdict_detail": "I(SUF; PREFIX_{t+1} | MID) = -0.0738 bits (p=0.0000). Suffix adds negligible next-token prediction."
+}

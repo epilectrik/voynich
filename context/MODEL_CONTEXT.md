@@ -1,6 +1,6 @@
 # MODEL_CONTEXT.md
 
-**Version:** 3.14 | **Date:** 2026-02-04 | **Status:** FROZEN
+**Version:** 3.15 | **Date:** 2026-02-12 | **Status:** FROZEN
 
 This document explains how to read and interpret the constraint system. It does not duplicate constraints. It provides the architectural lens, epistemic governance, and integration logic required to understand them as a coherent model.
 
@@ -16,7 +16,7 @@ It is:
 - A family of closed-loop control programs (Currier B)
 - A complexity-frontier registry (Currier A)
 - A placement-coded hybrid workflow system (AZC)
-- A human-pacing layer (HT)
+- An operationally redundant specification + vigilance layer (HT)
 
 It is definitively NOT:
 - A language (natural or constructed)
@@ -113,7 +113,7 @@ The Voynich Manuscript contains four coexisting systems sharing a morphological 
 | Currier B | Sequential | Closed-loop control programs | Yes | 49-class |
 | Currier A | Non-sequential | Complexity-frontier registry | No | None |
 | AZC | Placement-coded | Positional encoding | Hybrid | Positional |
-| Human Track | Distributed | Non-operational human pacing | No | Statistical |
+| Human Track | Distributed | Operationally redundant compound specifications + vigilance | No | Statistical |
 
 ### Critical Distinctions
 
@@ -164,6 +164,21 @@ Prefixes encode **functional type**, not semantic category:
 - Kernel-heavy vs kernel-light distinction is GLOBAL
 - Sister pairs (ch/sh, ok/ot) are **equivalent slots**, not different concepts
 
+**PREFIX as Dual Encoder (C661, C911, C1001):**
+
+PREFIX simultaneously determines three things:
+1. **MIDDLE family selection:** 102 forbidden PREFIX×MIDDLE combinations (C911). qo selects k-family (4.6-5.5x), ch/sh select e-family (2-3x), da/sa select infrastructure (5.9-12.8x).
+2. **Behavioral transformation:** Within-MIDDLE between-PREFIX JSD = 0.425, which is 97.5% of between-MIDDLE JSD (C661). PREFIX nearly completely rewrites a MIDDLE's behavioral profile.
+3. **Line position:** PREFIX encodes where in the line a token appears, regime-invariant (C1001):
+
+| Zone | PREFIXes | Mean Position |
+|------|----------|---------------|
+| LINE-INITIAL | po (86%), dch, so, tch, sh | 0.11-0.40 |
+| CENTRAL | qo, ke, ch, da, ok | 0.49-0.54 |
+| LINE-FINAL | ar (61%), al, or, BARE, ot | 0.56-0.74 |
+
+**Sequential grammar:** sh→qo enrichment +20.5σ. Cross-component: I(MIDDLE_t; PREFIX_{t+1}) = 0.499 bits.
+
 **Positional Classes (C539):**
 - EARLY position (line-start): ENERGY prefixes (ch, sh, qo compounds) dominate (79%)
 - LATE position (line-end): V+L prefixes (al, ar, or) cluster at 3.78x enrichment
@@ -206,6 +221,18 @@ MIDDLEs are the primary vocabulary layer:
 - 80% are prefix-exclusive (domain-specific within each system)
 - 20% are shared across prefixes
 - 27 universal MIDDLEs appear in 6+ prefix classes
+
+**Compound Structure (C935):**
+- MIDDLEs can be simple (single atom: k, e, ch) or compound (multiple atoms: opcheodai = op+ch+e+od+ai)
+- 100% of compounds decompose into core atoms
+- Compound rate: 31.5% (grammar types), 45.8% (HT/UN types)
+- Line-1 compounds predict body simple MIDDLEs at 71.6% hit rate (1.21x lift over 59.2% random)
+- Compounds are compressed specifications that body lines unpack
+
+**Affordance Bins (C995):**
+- 972 MIDDLEs classify into 9 functional bins by 17-dimensional behavioral signature
+- Chromatic number 3 for PREFIX-lane interaction
+- HUB_UNIVERSAL (23 MIDDLEs, 59% of tokens) monopolizes all 17/17 forbidden transitions (C1000)
 
 **Frequency Distribution (Tier 3):**
 - Core (top 30): 67.6% of usage, mode-flexible, section-stable
@@ -516,6 +543,90 @@ Each role's internal class structure has been characterized. Key findings:
 
 **Reference:** See constraint files C573-C602; `phases/EN_ANATOMY/`, `phases/SMALL_ROLE_ANATOMY/`, `phases/FQ_ANATOMY/`, `phases/SUB_ROLE_INTERACTION/` for evidence.
 
+### Macro-Automaton Compression (C976-C980)
+
+The 49 instruction classes compress to **6 macro-states** (8.17x compression) with spectral gap 0.894:
+
+| Macro-State | Merges | Function |
+|-------------|--------|----------|
+| EN+AX | ENERGY + AUXILIARY | Primary execution (merge: AX is scaffold mode of same vocabulary) |
+| FL_HAZ | FL hazard classes {7, 30} | Hazard-source flow control |
+| FL_SAFE | FL safe classes {38, 40} | Safe flow control / escape |
+| FQ | Frequent operators | Common instructions |
+| CC | Core control | Execution boundaries |
+
+Key findings: EN/AX merge confirms AX behavioral collapse (C572). FL splits into hazard/safe confirms C586. The 6-state automaton maps to physically necessary operational modes.
+
+### Line Grammar Synthesis (C956-C964)
+
+Lines are **boundary-constrained free-interior** control blocks:
+
+- **Boundary tokens** are zone-exclusive (192/334 common tokens at 2.72x shuffle, C956)
+- **26 mandatory bigrams** (obs/exp > 5x) including or→aiin (C957)
+- **9 forbidden bigrams** (obs=0, exp≥5), 2 genuinely token-specific: chey→chedy, chey→shedy (C957)
+- **Opener determines line length** (24.9% partial R² beyond folio+regime, C958)
+- **Opener is role marker, not instruction header** — specific token adds no predictive power beyond role (C959)
+- **WORK zone is unordered** — tokens within WORK show no systematic sequence (Kendall tau ≈ 0, C961)
+- **Phase interleaving** — KERNEL/LINK/FL show tendencies, not rigid blocks (alternation rate 0.566, C962)
+- **Body homogeneity** — paragraph body lines differ only in length (rho=-0.229), not composition (C963)
+
+Most token-level constraints are STRUCTURAL (role/position driven), not lexical — confirmed by negative control (C964).
+
+### Paragraph Execution Gradient (C932-C935)
+
+Paragraph body lines follow a **specification → execution gradient**:
+
+| Metric | Early Body (Q0) | Late Body (Q4) | Correlation |
+|--------|-----------------|-----------------|-------------|
+| Rare MIDDLEs | High | Low | r = -0.97 |
+| Universal MIDDLEs | Low | High | r = +0.92 |
+| Tokens per line | 10.3 | 8.7 | r = -0.97 |
+| Terminal suffixes | High | Low | r = -0.89 |
+| Iterate suffixes | Low | High | r = +0.83 |
+
+**Compound specification model (C935):** Line-1 compound MIDDLEs (45.8% vs 31.5% body) predict body simple MIDDLEs at 71.6% hit rate (vs 59.2% random, 1.21x lift). Header compounds are compressed specifications that body lines unpack.
+
+### Affordance Bin System (C995-C997, C1000)
+
+972 MIDDLEs classify into **9 functional bins** by affordance signature (17-dimensional behavioral profiles):
+
+| Bin | MIDDLEs | Tokens | Key Signature |
+|-----|---------|--------|---------------|
+| HUB_UNIVERSAL | 23 | 13,670 | 59% of B tokens, all 17/17 forbidden transitions |
+| STABILITY_CRITICAL | — | 3,905 | 0% QO, 79.4% CHSH, e_ratio=0.515 |
+| FLOW_TERMINAL | — | 1,985 | Highest final_rate |
+| PHASE_SENSITIVE | — | 1,381 | 38.4% QO, highest regime entropy |
+| ENERGY_SPECIALIZED | — | 151 | 47.7% QO, 89% REGIME_1 |
+| + 4 others | — | ~800 | Specialized roles |
+
+**HUB sub-role decomposition (C1000):** HUB's 23 MIDDLEs decompose into HAZARD_SOURCE (6), HAZARD_TARGET (6), SAFETY_BUFFER (3), PURE_CONNECTOR (8). Behaviorally homogeneous (0/14 KW significant) but functionally distinct. All 17/17 forbidden transitions involve HUB (corrects C996's 13/17).
+
+**Safety buffer mechanism (C997):** 22 tokens prevent forbidden transitions by intervening between hazard pairs. 68% are HUB MIDDLEs. QO-PREFIX enrichment 3.82x (p=0.012) — QO selects safety buffer function within HUB.
+
+### PREFIX Dual Encoding (C1001)
+
+PREFIX simultaneously encodes **content** (lane, suffix compatibility) and **line position**:
+
+| Zone | PREFIXes | Mean Position |
+|------|----------|---------------|
+| LINE-INITIAL | po (86%), dch, so, tch, sh | 0.11-0.40 |
+| CENTRAL | qo, ke, ch, da, ok | 0.49-0.54 |
+| LINE-FINAL | ar (61%), al, or, BARE, ot | 0.56-0.74 |
+
+**Position R² decomposition:** PREFIX alone=0.069, MIDDLE alone=0.062, Full PP with interaction=0.168.
+
+**Sequential grammar:** sh→qo enrichment +20.5σ (sh opens in initial zone, qo continues in central zone). Cross-component MI: I(MIDDLE_t; PREFIX_{t+1}) = 0.499 bits — current MIDDLE predicts next PREFIX.
+
+**Regime invariance:** PREFIX positional grammar is invariant across all four regimes (REGIME main effect H=0.27, p=0.97).
+
+### Cross-Line Information (C971, C975)
+
+Lines carry **mutual information about neighbors** despite formal independence:
+- Cross-line MI = 0.521 bits
+- Folio fingerprint AUC = 0.994 (a single line identifies its folio)
+
+Forbidden transition compliance is **~65%** (soft depletion, not absolute prohibition — C789).
+
 ---
 
 ## VII. CURRIER A - FINAL INTERPRETATION
@@ -717,22 +828,22 @@ AZC's structure is fully characterized (CLOSED). Semantic content of individual 
 
 Human Track tokens form a distinct layer with specific structural properties. Interpretation must respect the tier boundary.
 
-### Core Understanding (v2.13)
+### Core Understanding (v3.0)
 
-> **HT is a scalar signal of required human vigilance that varies with content characteristics, not with codicology, singular hazards, or execution failure modes.**
+> **HT tokens are operationally redundant compound specifications — they encode the same operations as body simple MIDDLEs (71.6% atom-body prediction) but in compressed compound form. They also function as anticipatory vigilance markers that vary with content characteristics.**
 
-HT functions as **anticipatory vigilance** - it prepares the human operator for upcoming demands rather than reacting to past events.
+HT functions as **dual-purpose**: compressed specification of upcoming operations AND anticipatory vigilance signal. The compound specification model (C935) replaces the earlier "non-operational" characterization.
 
 ### Tier 2 (Structural, Binding)
 
 These findings constrain the model:
 
-- HT is **non-operational** (terminal independence p=0.92)
-- HT has **causal decoupling** from program execution (V=0.10)
+- HT is **operationally redundant** — compound MIDDLEs decompose to core atoms with 71.6% body prediction hit rate (C935). HT contains operational content but it is redundant with body simple MIDDLEs (1.21x lift vs 59.2% random).
+- HT has **causal decoupling** from program execution (V=0.10, C405)
 - HT exhibits **generative structure** (Zipf=0.89)
 - HT **avoids hazards entirely** (0/35 forbidden seam presence)
 - HT **synchronizes statistically** with preceding grammar phase
-- HT removal **does not affect execution** outcomes
+- HT removal **does not affect execution** outcomes (because of redundancy, not emptiness)
 - HT **anticipates B stress** at quire level (r=0.343, p=0.0015) - C459
 - HT is **content-driven**, not production-driven (no quire boundary alignment)
 - HT is **front-loaded** in the manuscript (global decreasing trend)
@@ -856,6 +967,7 @@ The systems share a **type space** but not **semantics**:
 The Component-to-Class Mapping (CCM) phase achieved complete role-level semantic decomposition of tokens. This is the maximum recoverable internal meaning.
 
 > **REVISION (2026-01-11):** PREFIX interpretation updated from "material-behavior class" to "control-flow participation" based on F-A-014b. See C466-C467.
+> **REVISION (2026-02-12):** ok reclassified from "verb" (seal/close/cap) to **domain selector** (VESSEL/apparatus) per C936. PREFIX dual encoding (content + line position) per C1001.
 
 ### Token Decomposition
 
@@ -881,12 +993,13 @@ TOKEN = PREFIX   → operation domain selector (which MIDDLE family is legal)
 
 PREFIX and MIDDLE are NOT independent. Each PREFIX class selects which MIDDLE family is grammatically legal:
 
-| PREFIX Class | Selects For | Enrichment |
-|--------------|-------------|------------|
-| **qo-** | k-family (heating) | 4.6-5.5x |
-| **ch-/sh-** | e-family (stability) | 2.0-3.1x |
-| **da-/sa-** | infrastructure (iin, in, r, l) | 5.9-12.8x |
-| **ot-/ol-** | h-family (monitoring) | 3.3-6.8x |
+| PREFIX Class | Selects For | Enrichment | Line Zone (C1001) |
+|--------------|-------------|------------|-------------------|
+| **qo-** | k-family (heating) | 4.6-5.5x | CENTRAL (0.49) |
+| **ch-/sh-** | e-family (stability) | 2.0-3.1x | INITIAL→CENTRAL (sh=0.40, ch=0.52) |
+| **da-/sa-** | infrastructure (iin, in, r, l) | 5.9-12.8x | INITIAL (da=0.52, sa=0.36) |
+| **ot-/ol-** | h-family (monitoring) | 3.3-6.8x | FINAL (ot=0.59, ol=0.56) |
+| **ok-** | e-family + infrastructure (VESSEL) | C911, C936 | CENTRAL (0.54) |
 
 ### MIDDLE Semantic Families (C908-C910 - Tier 2)
 
@@ -903,18 +1016,21 @@ MIDDLEs encode operation types, not just variant identity:
 > The manuscript encodes the operational worldview of a controlled apparatus, not the descriptive worldview of a human observer.
 
 From the apparatus's perspective:
-- PREFIX encodes **which operation domain** is being addressed
+- PREFIX encodes **which operation domain** is being addressed AND **where in the line** the token appears (dual encoding, C1001)
 - MIDDLE encodes **what operation type** within that domain
 - SUFFIX encodes **when decisions are allowed** (phase)
 - SISTER encodes **how tightly to execute** (mode)
 
+The ok PREFIX (C936) demonstrates the domain selector principle most clearly: ok+aiin = "check vessel," ok+ar = "close vessel," ok+e = "cool vessel," ok+ai = "open vessel." The MIDDLE carries the action; the PREFIX selects the target. This generalizes: ch/sh target the PROCESS, qo targets HEAT, ok targets the VESSEL, da/sa target SETUP.
+
 ### Semantic Ceiling
 
 **Recoverable (role-level):**
-- 4 operation domains (PREFIX): energy, stability, monitoring, infrastructure
+- 5 operation domains (PREFIX): energy (qo), stability (ch/sh), vessel (ok), adjustment (ot/ol), infrastructure (da/sa)
 - 2 operational modes (SISTER): precision, tolerance
 - 3 operation type families (MIDDLE): k-heating, e-cooling, h-monitoring
 - 12 decision archetypes (SUFFIX): phase-indexed
+- 3 positional zones (PREFIX, C1001): line-initial, central, line-final — regime-invariant
 
 **Irrecoverable (entity-level):**
 - Specific substances, plants, devices
@@ -1144,7 +1260,7 @@ The cross-system vocabulary architecture is formally characterized via four stru
 | CASC | `currierA.casc.yaml` | LOCKED v1.6 | Currier A registry structure |
 | AZC-ACT | `azc_activation.act.yaml` | LOCKED v1.2 | A/AZC positional classification |
 | AZC-B-ACT | `azc_b_activation.act.yaml` | LOCKED v1.2 | AZC/B vocabulary correlation |
-| BCSC | `currierB.bcsc.yaml` | LOCKED v1.2 | Currier B internal grammar |
+| BCSC | `currierB.bcsc.yaml` | LOCKED v3.4 | Currier B internal grammar |
 
 Each contract is derived from Tier 0-2 constraints and introduces no new claims. Constraints remain authoritative.
 

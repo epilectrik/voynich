@@ -1,0 +1,31 @@
+{
+  "test": "T5_synthesis",
+  "spectral_effective_rank": 48,
+  "spectral_gap_states": 2,
+  "nmf_elbow": 3,
+  "minimum_states": 6,
+  "compression_ratio": 8.17,
+  "binding_constraints": {
+    "ROLE": 14,
+    "DEPLETION": 8
+  },
+  "generative_fidelity": 0.8,
+  "generation_verdict": "HIGH_FIDELITY",
+  "metric_matches": {
+    "zipf_slope": true,
+    "n_depleted": false,
+    "asymmetry": true,
+    "cross_line_mi": true,
+    "n_active_classes": true
+  },
+  "verdict": "COMPRESSIBLE",
+  "state_labels": [
+    "FL_HAZ (hazard flow markers)",
+    "FQ (frequent operators)",
+    "CC (core control primitives)",
+    "AX/EN minor (secondary execution)",
+    "AX/EN major (primary execution mass)",
+    "FL_SAFE (safe flow markers)"
+  ],
+  "key_finding": "Grammar compresses to 6 states. EN/AX merge. FL splits HAZ/SAFE. 4/5 corpus metrics reproduced."
+}

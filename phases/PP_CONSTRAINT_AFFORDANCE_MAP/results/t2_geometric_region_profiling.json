@@ -1,0 +1,269 @@
+{
+  "test": "T2_geometric_region_profiling",
+  "n_middles": 972,
+  "bic_selection": {
+    "best_k": 5,
+    "bic_scores": {
+      "3": -236263.61393208444,
+      "4": -238490.7816107127,
+      "5": -241809.0985570917,
+      "6": -237021.60901252404,
+      "7": -238225.3161172705,
+      "8": -240573.50531829442,
+      "9": -240640.17326988626,
+      "10": -241112.88156697602,
+      "11": -240624.73435667373,
+      "12": -239788.2350626635,
+      "13": -240293.4820616464,
+      "14": -239651.15345533268,
+      "15": -239136.5240074125,
+      "16": -238770.96735665493,
+      "17": -238505.5785831512,
+      "18": -237751.9665256657,
+      "19": -236952.89583999774,
+      "20": -236657.47519792497
+    },
+    "gmm_silhouette": -0.1594015413265732,
+    "kmeans_silhouette": 0.22441244974289068
+  },
+  "cluster_profiles": {
+    "0": {
+      "n": 23,
+      "mean_length": 1.8695652173913044,
+      "mean_contains_k": 0.08695652173913043,
+      "mean_contains_e": 0.21739130434782608,
+      "mean_contains_h": 0.08695652173913043,
+      "mean_kernel_count": 0.43478260869565216,
+      "mean_a_count": 321.69565217391306,
+      "mean_a_folios": 84.1304347826087,
+      "mean_b_count": 574.4782608695652,
+      "mean_in_b": 1.0,
+      "mean_is_compound": 0.21739130434782608,
+      "mean_hub_loading": -0.14076500245370963,
+      "mean_residual_norm": 2.3326850445981138,
+      "mean_log_freq": 5.619393816924041,
+      "lane_dist": {
+        "OTHER": 0.5652173913043478,
+        "CHSH": 0.391304347826087,
+        "QO": 0.043478260869565216
+      },
+      "dominant_lane": "OTHER",
+      "section_dist": {
+        "S": 0.7391304347826086,
+        "H": 0.13043478260869565,
+        "B": 0.13043478260869565
+      },
+      "dominant_section": "S",
+      "top_initials": {
+        "e": 0.21739130434782608,
+        "o": 0.17391304347826086,
+        "a": 0.13043478260869565,
+        "d": 0.08695652173913043,
+        "i": 0.08695652173913043
+      }
+    },
+    "1": {
+      "n": 106,
+      "mean_length": 4.632075471698113,
+      "mean_contains_k": 0.2830188679245283,
+      "mean_contains_e": 0.42452830188679247,
+      "mean_contains_h": 0.44339622641509435,
+      "mean_kernel_count": 1.509433962264151,
+      "mean_a_count": 1.028301886792453,
+      "mean_a_folios": 1.028301886792453,
+      "mean_b_count": 1.669811320754717,
+      "mean_in_b": 0.19811320754716982,
+      "mean_is_compound": 0.8867924528301887,
+      "mean_hub_loading": -0.006857254146803423,
+      "mean_residual_norm": 0.351877324532324,
+      "mean_log_freq": 0.7046226081479122,
+      "lane_dist": {
+        "OTHER": 0.42452830188679247,
+        "CHSH": 0.42452830188679247,
+        "QO": 0.1509433962264151
+      },
+      "dominant_lane": "OTHER",
+      "section_dist": {
+        "NONE": 0.8018867924528302,
+        "S": 0.11320754716981132,
+        "B": 0.04716981132075472,
+        "H": 0.02830188679245283,
+        "C": 0.009433962264150943
+      },
+      "dominant_section": "NONE",
+      "top_initials": {
+        "o": 0.2830188679245283,
+        "e": 0.14150943396226415,
+        "k": 0.07547169811320754,
+        "a": 0.0660377358490566,
+        "c": 0.0660377358490566
+      }
+    },
+    "2": {
+      "n": 130,
+      "mean_length": 2.746153846153846,
+      "mean_contains_k": 0.23076923076923078,
+      "mean_contains_e": 0.2153846153846154,
+      "mean_contains_h": 0.27692307692307694,
+      "mean_kernel_count": 0.823076923076923,
+      "mean_a_count": 20.246153846153845,
+      "mean_a_folios": 14.9,
+      "mean_b_count": 52.16923076923077,
+      "mean_in_b": 0.9230769230769231,
+      "mean_is_compound": 0.45384615384615384,
+      "mean_hub_loading": -0.05098907361128974,
+      "mean_residual_norm": 1.4930609447716081,
+      "mean_log_freq": 2.6262702367054596,
+      "lane_dist": {
+        "OTHER": 0.4230769230769231,
+        "CHSH": 0.36923076923076925,
+        "QO": 0.2076923076923077
+      },
+      "dominant_lane": "OTHER",
+      "section_dist": {
+        "S": 0.6076923076923076,
+        "H": 0.13076923076923078,
+        "B": 0.12307692307692308,
+        "NONE": 0.07692307692307693,
+        "T": 0.038461538461538464
+      },
+      "dominant_section": "S",
+      "top_initials": {
+        "o": 0.25384615384615383,
+        "e": 0.11538461538461539,
+        "c": 0.1076923076923077,
+        "k": 0.1076923076923077,
+        "t": 0.07692307692307693
+      }
+    },
+    "3": {
+      "n": 351,
+      "mean_length": 4.150997150997151,
+      "mean_contains_k": 0.2962962962962963,
+      "mean_contains_e": 0.3646723646723647,
+      "mean_contains_h": 0.33903133903133903,
+      "mean_kernel_count": 1.2735042735042734,
+      "mean_a_count": 1.1054131054131053,
+      "mean_a_folios": 1.0997150997150997,
+      "mean_b_count": 1.1196581196581197,
+      "mean_in_b": 0.22792022792022792,
+      "mean_is_compound": 0.7663817663817664,
+      "mean_hub_loading": -0.009119300493533974,
+      "mean_residual_norm": 0.5257199835462738,
+      "mean_log_freq": 0.7342106957215412,
+      "lane_dist": {
+        "OTHER": 0.47863247863247865,
+        "CHSH": 0.396011396011396,
+        "QO": 0.12535612535612536
+      },
+      "dominant_lane": "OTHER",
+      "section_dist": {
+        "NONE": 0.7720797720797721,
+        "S": 0.11396011396011396,
+        "H": 0.04843304843304843,
+        "B": 0.042735042735042736,
+        "C": 0.019943019943019943
+      },
+      "dominant_section": "NONE",
+      "top_initials": {
+        "o": 0.23646723646723647,
+        "e": 0.15954415954415954,
+        "c": 0.07692307692307693,
+        "y": 0.07692307692307693,
+        "a": 0.05982905982905983
+      }
+    },
+    "4": {
+      "n": 362,
+      "mean_length": 4.116022099447513,
+      "mean_contains_k": 0.20994475138121546,
+      "mean_contains_e": 0.35082872928176795,
+      "mean_contains_h": 0.3674033149171271,
+      "mean_kernel_count": 1.091160220994475,
+      "mean_a_count": 1.7845303867403315,
+      "mean_a_folios": 1.7375690607734806,
+      "mean_b_count": 3.165745856353591,
+      "mean_in_b": 0.4116022099447514,
+      "mean_is_compound": 0.7375690607734806,
+      "mean_hub_loading": -0.014325346548095976,
+      "mean_residual_norm": 0.8301179278790092,
+      "mean_log_freq": 0.9512896036298809,
+      "lane_dist": {
+        "OTHER": 0.4281767955801105,
+        "CHSH": 0.4723756906077348,
+        "QO": 0.09944751381215469
+      },
+      "dominant_lane": "CHSH",
+      "section_dist": {
+        "NONE": 0.5883977900552486,
+        "S": 0.21823204419889503,
+        "B": 0.0856353591160221,
+        "H": 0.07734806629834254,
+        "C": 0.022099447513812154
+      },
+      "dominant_section": "NONE",
+      "top_initials": {
+        "o": 0.3149171270718232,
+        "e": 0.1574585635359116,
+        "c": 0.06077348066298342,
+        "d": 0.052486187845303865,
+        "a": 0.049723756906077346
+      }
+    }
+  },
+  "top_contrasts": [
+    {
+      "pair": "0-1",
+      "discriminator": "mean_contains_h",
+      "normalized_diff": 1.0
+    },
+    {
+      "pair": "0-3",
+      "discriminator": "mean_contains_k",
+      "normalized_diff": 1.0
+    },
+    {
+      "pair": "1-2",
+      "discriminator": "mean_contains_e",
+      "normalized_diff": 1.0
+    },
+    {
+      "pair": "0-4",
+      "discriminator": "mean_a_count",
+      "normalized_diff": 0.9976417040921978
+    },
+    {
+      "pair": "0-2",
+      "discriminator": "mean_a_count",
+      "normalized_diff": 0.9400691964986332
+    },
+    {
+      "pair": "2-3",
+      "discriminator": "mean_in_b",
+      "normalized_diff": 0.8669012904307023
+    },
+    {
+      "pair": "2-4",
+      "discriminator": "mean_contains_e",
+      "normalized_diff": 0.6476127305700077
+    },
+    {
+      "pair": "3-4",
+      "discriminator": "mean_contains_k",
+      "normalized_diff": 0.41249468763280916
+    },
+    {
+      "pair": "1-4",
+      "discriminator": "mean_contains_e",
+      "normalized_diff": 0.3523872694299923
+    },
+    {
+      "pair": "1-3",
+      "discriminator": "mean_contains_h",
+      "normalized_diff": 0.29279815355764727
+    }
+  ],
+  "n_structured_clusters": 2,
+  "verdict": "PARTIALLY_STRUCTURED",
+  "explanation": "2/5 clusters have \u22653 discriminating properties. Some regions are property-coherent, others are generic."
+}

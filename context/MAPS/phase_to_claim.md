@@ -135,6 +135,17 @@ Look up phase to find constraints it produced.
 
 ---
 
+## Saturation Frontier Phases
+
+| Phase | Constraints Produced |
+|-------|---------------------|
+| PP_INFORMATION_DECOMPOSITION | C1001 |
+| SUFFIX_POSITIONAL_STATE_MAPPING | C1002 |
+| PREFIX_MIDDLE_SUFFIX_SYNERGY | C1003 |
+| FULL_TOKEN_TRANSITION_DEPTH | C1004 |
+
+---
+
 ## Navigation
 
 ← [claim_to_phase.md](claim_to_phase.md) | [phase_index.md](phase_index.md) →

@@ -17,7 +17,7 @@ from scripts.voynich import Transcript
 
 BASE = Path('C:/git/voynich')
 CLASS_MAP = BASE / 'phases/CLASS_COSURVIVAL_TEST/results/class_token_map.json'
-REGIME_FILE = BASE / 'phases/REGIME_SEMANTIC_INTERPRETATION/results/regime_folio_mapping.json'
+REGIME_FILE = BASE / 'data' / 'regime_folio_mapping.json'
 HAZARD_FILE = BASE / 'phases/SMALL_ROLE_ANATOMY/results/sr_hazard_anatomy.json'
 TRANS_RESULTS = BASE / 'phases/SUB_ROLE_INTERACTION/results/sub_role_transitions.json'
 RESULTS = BASE / 'phases/SUB_ROLE_INTERACTION/results'
@@ -97,10 +97,7 @@ token_to_class = {tok: int(cls) for tok, cls in class_data['token_to_class'].ite
 
 with open(REGIME_FILE) as f:
     regime_data = json.load(f)
-folio_regime = {}
-for regime, folios in regime_data.items():
-    for folio in folios:
-        folio_regime[folio] = regime
+folio_regime = {folio: data['regime'] for folio, data in regime_data['regime_assignments'].items()}
 
 with open(HAZARD_FILE) as f:
     hazard_data = json.load(f)

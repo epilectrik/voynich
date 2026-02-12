@@ -1,0 +1,208 @@
+{
+  "metadata": {
+    "phase": "AFFORDANCE_STRESS_TEST",
+    "test": "T4_ENERGY_RECOVERY",
+    "fq_classes": [
+      9,
+      13,
+      14,
+      23
+    ],
+    "e_dominant_threshold": 0.3
+  },
+  "per_bin": {
+    "0": {
+      "label": "FLOW_TERMINAL",
+      "mean_radial_depth": 1.3049,
+      "mean_e_ratio": 0.0,
+      "mean_k_ratio": 0.0746,
+      "mean_regime_entropy": 1.0248,
+      "fq_adjacency_rate": 0.2071,
+      "mean_fq_distance": 3.069,
+      "mean_recovery_depth": 2.097,
+      "regime_distribution": {
+        "REGIME_1": 913,
+        "REGIME_2": 243,
+        "REGIME_3": 613,
+        "REGIME_4": 216
+      }
+    },
+    "1": {
+      "label": "ROUTINE_SPECIALIZED",
+      "mean_radial_depth": 0.8483,
+      "mean_e_ratio": 0.1547,
+      "mean_k_ratio": 0.1248,
+      "mean_regime_entropy": 0.4463,
+      "fq_adjacency_rate": 0.1987,
+      "mean_fq_distance": 2.892,
+      "mean_recovery_depth": 2.337,
+      "regime_distribution": {
+        "REGIME_1": 55,
+        "REGIME_2": 27,
+        "REGIME_3": 74,
+        "REGIME_4": 0
+      }
+    },
+    "2": {
+      "label": "PRECISION_SPECIALIZED",
+      "mean_radial_depth": 0.7622,
+      "mean_e_ratio": 0.1322,
+      "mean_k_ratio": 0.0611,
+      "mean_regime_entropy": 0.2508,
+      "fq_adjacency_rate": 0.0588,
+      "mean_fq_distance": 3.929,
+      "mean_recovery_depth": 2.636,
+      "regime_distribution": {
+        "REGIME_1": 2,
+        "REGIME_2": 0,
+        "REGIME_3": 13,
+        "REGIME_4": 36
+      }
+    },
+    "3": {
+      "label": "COMPOUND_TERMINAL",
+      "mean_radial_depth": 0.9246,
+      "mean_e_ratio": 0.1012,
+      "mean_k_ratio": 0.088,
+      "mean_regime_entropy": 0.8531,
+      "fq_adjacency_rate": 0.1901,
+      "mean_fq_distance": 3.006,
+      "mean_recovery_depth": 2.192,
+      "regime_distribution": {
+        "REGIME_1": 103,
+        "REGIME_2": 23,
+        "REGIME_3": 101,
+        "REGIME_4": 36
+      }
+    },
+    "5": {
+      "label": "SETTLING_SPECIALIZED",
+      "mean_radial_depth": 0.7573,
+      "mean_e_ratio": 0.1383,
+      "mean_k_ratio": 0.0284,
+      "mean_regime_entropy": 0.039,
+      "fq_adjacency_rate": 0.1316,
+      "mean_fq_distance": 3.841,
+      "mean_recovery_depth": 2.448,
+      "regime_distribution": {
+        "REGIME_1": 0,
+        "REGIME_2": 1,
+        "REGIME_3": 106,
+        "REGIME_4": 7
+      }
+    },
+    "6": {
+      "label": "HUB_UNIVERSAL",
+      "mean_radial_depth": 2.3131,
+      "mean_e_ratio": 0.1957,
+      "mean_k_ratio": 0.0652,
+      "mean_regime_entropy": 1.129,
+      "fq_adjacency_rate": 0.2139,
+      "mean_fq_distance": 2.981,
+      "mean_recovery_depth": 2.111,
+      "regime_distribution": {
+        "REGIME_1": 7220,
+        "REGIME_2": 1444,
+        "REGIME_3": 3827,
+        "REGIME_4": 1179
+      }
+    },
+    "7": {
+      "label": "ENERGY_SPECIALIZED",
+      "mean_radial_depth": 0.6713,
+      "mean_e_ratio": 0.1215,
+      "mean_k_ratio": 0.0795,
+      "mean_regime_entropy": 0.0566,
+      "fq_adjacency_rate": 0.2053,
+      "mean_fq_distance": 3.08,
+      "mean_recovery_depth": 2.149,
+      "regime_distribution": {
+        "REGIME_1": 135,
+        "REGIME_2": 2,
+        "REGIME_3": 9,
+        "REGIME_4": 5
+      }
+    },
+    "8": {
+      "label": "STABILITY_CRITICAL",
+      "mean_radial_depth": 1.0197,
+      "mean_e_ratio": 0.5152,
+      "mean_k_ratio": 0.0804,
+      "mean_regime_entropy": 1.0408,
+      "fq_adjacency_rate": 0.2049,
+      "mean_fq_distance": 2.921,
+      "mean_recovery_depth": 2.091,
+      "regime_distribution": {
+        "REGIME_1": 2348,
+        "REGIME_2": 161,
+        "REGIME_3": 1007,
+        "REGIME_4": 389
+      }
+    },
+    "9": {
+      "label": "PHASE_SENSITIVE",
+      "mean_radial_depth": 1.5142,
+      "mean_e_ratio": 0.0,
+      "mean_k_ratio": 0.0536,
+      "mean_regime_entropy": 1.0801,
+      "fq_adjacency_rate": 0.1785,
+      "mean_fq_distance": 2.9,
+      "mean_recovery_depth": 2.111,
+      "regime_distribution": {
+        "REGIME_1": 714,
+        "REGIME_2": 125,
+        "REGIME_3": 444,
+        "REGIME_4": 98
+      }
+    }
+  },
+  "statistical_tests": {
+    "kruskal_depth": {
+      "H": 157.22263645232226,
+      "p": 6.0886178206424825e-30
+    },
+    "kruskal_fq_dist": {
+      "H": 19.37620605246211,
+      "p": 0.012972140650945872
+    },
+    "kruskal_recovery_depth": {
+      "H": 8.070738578457245,
+      "p": 0.42659086246098327
+    },
+    "spearman_depth_fq": {
+      "rho": -0.5666666666666667,
+      "p": 0.11163298761149111
+    },
+    "chi2_bin_regime": {
+      "chi2": 886.9665207588848,
+      "df": 24,
+      "p": 8.376132536267578e-172
+    }
+  },
+  "predictions": {
+    "STABILITY_CRITICAL high e_ratio": {
+      "confirmed": true,
+      "detail": "e_ratio=0.515 vs median=0.132"
+    },
+    "STABILITY_CRITICAL close to FQ (recovery)": {
+      "confirmed": true,
+      "detail": "fq_dist=2.92 vs median=3.01"
+    },
+    "PHASE_SENSITIVE deepest radial depth": {
+      "confirmed": false,
+      "detail": "depth=1.514 vs max=2.313"
+    },
+    "ENERGY_SPECIALIZED highest k_ratio": {
+      "confirmed": false,
+      "detail": "k_ratio=0.079 vs max=0.125"
+    },
+    "HUB_UNIVERSAL shallowest depth": {
+      "confirmed": false,
+      "detail": "depth=2.313 vs min=0.671"
+    },
+    "STABILITY_CRITICAL R2-enriched": {
+      "confirmed": false,
+      "detail": "R2_fraction=0.041"
+    }
+  }
+}

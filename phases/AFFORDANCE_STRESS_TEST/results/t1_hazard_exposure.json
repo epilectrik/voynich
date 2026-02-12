@@ -1,0 +1,207 @@
+{
+  "metadata": {
+    "phase": "AFFORDANCE_STRESS_TEST",
+    "test": "T1_HAZARD_EXPOSURE",
+    "n_functional_bins": 9,
+    "n_forbidden_transitions": 17,
+    "hazard_classes": [
+      7,
+      8,
+      9,
+      23,
+      30,
+      31
+    ],
+    "hazard_middles": [
+      "aiin",
+      "al",
+      "ar",
+      "c",
+      "dy",
+      "edy",
+      "ee",
+      "ey",
+      "he",
+      "l",
+      "o",
+      "ol",
+      "or",
+      "r",
+      "t"
+    ]
+  },
+  "per_bin": {
+    "0": {
+      "label": "FLOW_TERMINAL",
+      "total_tokens": 1985,
+      "hazard_class_rate": 0.1305,
+      "hazard_adjacent_rate": 0.2688,
+      "mean_distance_to_hazard_class": 2.42,
+      "median_distance_to_hazard_class": 2.0,
+      "forbidden_middle_rate": 0.0025,
+      "mean_distance_to_forbidden_middle": 1.79
+    },
+    "1": {
+      "label": "ROUTINE_SPECIALIZED",
+      "total_tokens": 156,
+      "hazard_class_rate": 0.0,
+      "hazard_adjacent_rate": 0.2308,
+      "mean_distance_to_hazard_class": 2.673,
+      "median_distance_to_hazard_class": 2.0,
+      "forbidden_middle_rate": 0.0128,
+      "mean_distance_to_forbidden_middle": 1.849
+    },
+    "2": {
+      "label": "PRECISION_SPECIALIZED",
+      "total_tokens": 51,
+      "hazard_class_rate": 0.0,
+      "hazard_adjacent_rate": 0.1569,
+      "mean_distance_to_hazard_class": 3.583,
+      "median_distance_to_hazard_class": 3.0,
+      "forbidden_middle_rate": 0.0,
+      "mean_distance_to_forbidden_middle": 2.082
+    },
+    "3": {
+      "label": "COMPOUND_TERMINAL",
+      "total_tokens": 263,
+      "hazard_class_rate": 0.0,
+      "hazard_adjacent_rate": 0.1749,
+      "mean_distance_to_hazard_class": 2.974,
+      "median_distance_to_hazard_class": 3.0,
+      "forbidden_middle_rate": 0.0,
+      "mean_distance_to_forbidden_middle": 2.047
+    },
+    "5": {
+      "label": "SETTLING_SPECIALIZED",
+      "total_tokens": 114,
+      "hazard_class_rate": 0.0,
+      "hazard_adjacent_rate": 0.2456,
+      "mean_distance_to_hazard_class": 3.177,
+      "median_distance_to_hazard_class": 2.0,
+      "forbidden_middle_rate": 0.0,
+      "mean_distance_to_forbidden_middle": 1.991
+    },
+    "6": {
+      "label": "HUB_UNIVERSAL",
+      "total_tokens": 13670,
+      "hazard_class_rate": 0.1944,
+      "hazard_adjacent_rate": 0.3013,
+      "mean_distance_to_hazard_class": 2.021,
+      "median_distance_to_hazard_class": 1.0,
+      "forbidden_middle_rate": 0.5503,
+      "mean_distance_to_forbidden_middle": 0.766
+    },
+    "7": {
+      "label": "ENERGY_SPECIALIZED",
+      "total_tokens": 151,
+      "hazard_class_rate": 0.0,
+      "hazard_adjacent_rate": 0.2715,
+      "mean_distance_to_hazard_class": 2.707,
+      "median_distance_to_hazard_class": 2.0,
+      "forbidden_middle_rate": 0.0,
+      "mean_distance_to_forbidden_middle": 1.828
+    },
+    "8": {
+      "label": "STABILITY_CRITICAL",
+      "total_tokens": 3905,
+      "hazard_class_rate": 0.2323,
+      "hazard_adjacent_rate": 0.2322,
+      "mean_distance_to_hazard_class": 2.073,
+      "median_distance_to_hazard_class": 1.0,
+      "forbidden_middle_rate": 0.4963,
+      "mean_distance_to_forbidden_middle": 0.885
+    },
+    "9": {
+      "label": "PHASE_SENSITIVE",
+      "total_tokens": 1381,
+      "hazard_class_rate": 0.0,
+      "hazard_adjacent_rate": 0.2766,
+      "mean_distance_to_hazard_class": 2.602,
+      "median_distance_to_hazard_class": 2.0,
+      "forbidden_middle_rate": 0.0,
+      "mean_distance_to_forbidden_middle": 1.725
+    }
+  },
+  "statistical_tests": {
+    "kruskal_hazard_class_distance": {
+      "H": 351.399926834848,
+      "p": 4.550670906448804e-71
+    },
+    "kruskal_forbidden_middle_distance": {
+      "H": 3475.2518469129022,
+      "p": 0.0
+    },
+    "chi2_hazard_membership": {
+      "chi2": 596.3638374211536,
+      "df": 8,
+      "p": 1.4154921572446629e-123
+    },
+    "chi2_forbidden_middle": {
+      "chi2": 3928.2879528770704,
+      "df": 8,
+      "p": 0.0
+    }
+  },
+  "forbidden_bin_topology": {
+    "6_6": {
+      "source_bin": 6,
+      "source_label": "HUB_UNIVERSAL",
+      "target_bin": 6,
+      "target_label": "HUB_UNIVERSAL",
+      "forbidden_count": 8
+    },
+    "6_0": {
+      "source_bin": 6,
+      "source_label": "HUB_UNIVERSAL",
+      "target_bin": 0,
+      "target_label": "FLOW_TERMINAL",
+      "forbidden_count": 1
+    },
+    "8_6": {
+      "source_bin": 8,
+      "source_label": "STABILITY_CRITICAL",
+      "target_bin": 6,
+      "target_label": "HUB_UNIVERSAL",
+      "forbidden_count": 3
+    },
+    "6_8": {
+      "source_bin": 6,
+      "source_label": "HUB_UNIVERSAL",
+      "target_bin": 8,
+      "target_label": "STABILITY_CRITICAL",
+      "forbidden_count": 2
+    },
+    "0_6": {
+      "source_bin": 0,
+      "source_label": "FLOW_TERMINAL",
+      "target_bin": 6,
+      "target_label": "HUB_UNIVERSAL",
+      "forbidden_count": 1
+    },
+    "1_6": {
+      "source_bin": 1,
+      "source_label": "ROUTINE_SPECIALIZED",
+      "target_bin": 6,
+      "target_label": "HUB_UNIVERSAL",
+      "forbidden_count": 2
+    }
+  },
+  "predictions": {
+    "PHASE_SENSITIVE near hazard": {
+      "confirmed": true,
+      "detail": "mean_dist=2.60 vs median=2.67"
+    },
+    "STABILITY_CRITICAL near hazard": {
+      "confirmed": true,
+      "detail": "mean_dist=2.07 vs median=2.67"
+    },
+    "ENERGY_SPECIALIZED hazard-distant": {
+      "confirmed": true,
+      "detail": "mean_dist=2.71 vs median=2.67"
+    },
+    "FLOW_TERMINAL outside forbidden topology": {
+      "confirmed": false,
+      "detail": "forbidden_mid_rate=0.003 vs median=0.000"
+    }
+  }
+}

@@ -1,0 +1,232 @@
+{
+  "test": "T6_model_assembly_validation",
+  "n_folds": 5,
+  "n_folios": 82,
+  "n_lines": 1831,
+  "model_types": [
+    "null",
+    "markov",
+    "markov_haz",
+    "full"
+  ],
+  "n_params": {
+    "null": 1,
+    "markov": 10,
+    "markov_haz": 12,
+    "full": 18
+  },
+  "fold_results": [
+    {
+      "fold": 0,
+      "n_test_folios": 18,
+      "n_test_tokens": 1563,
+      "null": {
+        "log_likelihood": -1059.8724892604964,
+        "n_tokens": 1563,
+        "ll_per_token": -0.6781014006785006,
+        "perplexity": 1.9701336846550794,
+        "bic": 2127.099340851414
+      },
+      "markov": {
+        "log_likelihood": -1054.8571941396897,
+        "n_tokens": 1563,
+        "ll_per_token": -0.6748926386050478,
+        "perplexity": 1.9638221259685926,
+        "bic": 2183.258011583594
+      },
+      "markov_haz": {
+        "log_likelihood": -1049.271463578291,
+        "n_tokens": 1563,
+        "ll_per_token": -0.6713189146374223,
+        "perplexity": 1.9568164933235481,
+        "bic": 2186.79527512164
+      },
+      "full": {
+        "log_likelihood": -1048.5843642742102,
+        "n_tokens": 1563,
+        "ll_per_token": -0.6708793117557327,
+        "perplexity": 1.955956460204514,
+        "bic": 2229.547250496007
+      }
+    },
+    {
+      "fold": 1,
+      "n_test_folios": 18,
+      "n_test_tokens": 1348,
+      "null": {
+        "log_likelihood": -915.0896186930016,
+        "n_tokens": 1348,
+        "ll_per_token": -0.6788498654992594,
+        "perplexity": 1.9716088123819766,
+        "bic": 1837.3856146774756
+      },
+      "markov": {
+        "log_likelihood": -908.5395784864203,
+        "n_tokens": 1348,
+        "ll_per_token": -0.6739907852273147,
+        "perplexity": 1.962051844738061,
+        "bic": 1889.142929887563
+      },
+      "markov_haz": {
+        "log_likelihood": -905.5504909265827,
+        "n_tokens": 1348,
+        "ll_per_token": -0.6717733612215006,
+        "perplexity": 1.9577059639877514,
+        "bic": 1897.5775093508325
+      },
+      "full": {
+        "log_likelihood": -904.4503038447282,
+        "n_tokens": 1348,
+        "ll_per_token": -0.6709571986978695,
+        "perplexity": 1.9561088096050896,
+        "bic": 1938.6153989359568
+      }
+    },
+    {
+      "fold": 2,
+      "n_test_folios": 16,
+      "n_test_tokens": 1219,
+      "null": {
+        "log_likelihood": -834.3237848965109,
+        "n_tokens": 1219,
+        "ll_per_token": -0.6844329654606324,
+        "perplexity": 1.9826472872471776,
+        "bic": 1675.753355922503
+      },
+      "markov": {
+        "log_likelihood": -827.7540533139976,
+        "n_tokens": 1219,
+        "ll_per_token": -0.6790435219967167,
+        "perplexity": 1.971990664211789,
+        "bic": 1726.5659679228079
+      },
+      "markov_haz": {
+        "log_likelihood": -828.9845571474591,
+        "n_tokens": 1219,
+        "ll_per_token": -0.6800529591037401,
+        "perplexity": 1.9739822697941225,
+        "bic": 1743.2385478486935
+      },
+      "full": {
+        "log_likelihood": -827.1092952056846,
+        "n_tokens": 1219,
+        "ll_per_token": -0.6785145981999053,
+        "perplexity": 1.9709479072162024,
+        "bic": 1782.122740742032
+      }
+    },
+    {
+      "fold": 3,
+      "n_test_folios": 15,
+      "n_test_tokens": 1222,
+      "null": {
+        "log_likelihood": -832.4732337812834,
+        "n_tokens": 1222,
+        "ll_per_token": -0.6812383255165986,
+        "perplexity": 1.9763235494392988,
+        "bic": 1672.0547117022984
+      },
+      "markov": {
+        "log_likelihood": -825.8387637235079,
+        "n_tokens": 1222,
+        "ll_per_token": -0.6758091356166186,
+        "perplexity": 1.9656227881029906,
+        "bic": 1722.7599688443313
+      },
+      "markov_haz": {
+        "log_likelihood": -817.3346971934656,
+        "n_tokens": 1222,
+        "ll_per_token": -0.668849997703327,
+        "perplexity": 1.9519912349783348,
+        "bic": 1719.9683240637096
+      },
+      "full": {
+        "log_likelihood": -815.1335131318516,
+        "n_tokens": 1222,
+        "ll_per_token": -0.6670487014172272,
+        "perplexity": 1.9484782852977383,
+        "bic": 1758.215420778871
+      }
+    },
+    {
+      "fold": 4,
+      "n_test_folios": 15,
+      "n_test_tokens": 1375,
+      "null": {
+        "log_likelihood": -947.840489347939,
+        "n_tokens": 1375,
+        "ll_per_token": -0.689338537707592,
+        "perplexity": 1.992397201657438,
+        "bic": 1902.9071877059787
+      },
+      "markov": {
+        "log_likelihood": -931.3237598603237,
+        "n_tokens": 1375,
+        "ll_per_token": -0.6773263708075081,
+        "perplexity": 1.9686073637481725,
+        "bic": 1934.9096098216542
+      },
+      "markov_haz": {
+        "log_likelihood": -929.1156173844632,
+        "n_tokens": 1375,
+        "ll_per_token": -0.6757204490068823,
+        "perplexity": 1.965448471411786,
+        "bic": 1944.9457428901346
+      },
+      "full": {
+        "log_likelihood": -924.6679004608739,
+        "n_tokens": 1375,
+        "ll_per_token": -0.6724857457897264,
+        "perplexity": 1.9591011003834378,
+        "bic": 1979.4075631035598
+      }
+    }
+  ],
+  "aggregate": {
+    "null": {
+      "total_ll": -4589.599615979231,
+      "total_tokens": 6727,
+      "ll_per_token": -0.6822654401634058,
+      "perplexity": 1.9783545031363539,
+      "bic": 9188.013116516488,
+      "n_params": 1
+    },
+    "markov": {
+      "total_ll": -4548.313349523939,
+      "total_tokens": 6727,
+      "ll_per_token": -0.6761280436337058,
+      "perplexity": 1.9662497409335145,
+      "bic": 9184.765544628133,
+      "n_params": 10
+    },
+    "markov_haz": {
+      "total_ll": -4530.256826230262,
+      "total_tokens": 6727,
+      "ll_per_token": -0.673443857028432,
+      "perplexity": 1.9609790366577422,
+      "bic": 9166.280267156832,
+      "n_params": 12
+    },
+    "full": {
+      "total_ll": -4519.945376917349,
+      "total_tokens": 6727,
+      "ll_per_token": -0.6719110118800875,
+      "perplexity": 1.9579754620508814,
+      "bic": 9198.540675879158,
+      "n_params": 18
+    }
+  },
+  "comparisons": {
+    "full_vs_markov_ppx_pct": 0.42081525608769976,
+    "full_vs_markov_bic_delta": -13.775131251024504,
+    "hazard_gate_improves": true,
+    "best_model_by_ll": "full"
+  },
+  "verdicts": {
+    "ppx_improvement_pass": false,
+    "bic_pass": false,
+    "best_ll_pass": true,
+    "hazard_improves": true,
+    "overall": "PASS"
+  }
+}

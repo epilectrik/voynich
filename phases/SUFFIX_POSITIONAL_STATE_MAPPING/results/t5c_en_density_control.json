@@ -1,0 +1,9 @@
+{
+  "raw_rho": 0.2384316277486147,
+  "raw_p": 3.6095574404215132e-31,
+  "ctrl_length_rho": 0.26721997608871656,
+  "ctrl_length_p": 5.327154991745581e-39,
+  "ctrl_both_rho": 0.2629341883995001,
+  "ctrl_both_p": 9.038867256589587e-38,
+  "verdict": "SURVIVES_EN_CONTROL"
+}

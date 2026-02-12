@@ -1,0 +1,322 @@
+{
+  "test": "T5_physical_affordance_mapping",
+  "n_middles": 972,
+  "n_clusters": 5,
+  "cluster_affordances": {
+    "0": {
+      "n": 23,
+      "confidence": "HIGH",
+      "score": 7,
+      "assignments": [
+        {
+          "family": "THERMAL",
+          "class": "APPARATUS_BASELINE",
+          "reason": "Universal connectors: high frequency, short, compatible with everything",
+          "anchor": "C476 (universal connector), C986 (hub = frequency)"
+        },
+        {
+          "family": "MONITORING",
+          "class": "RATE_TRACKING",
+          "reason": "Universal presence suggests monitoring/tracking function",
+          "anchor": "C475 (compatibility baseline)"
+        },
+        {
+          "family": "PHASE",
+          "class": "PHASE_TRANSITION",
+          "reason": "Deep (depth=2.33), moderate freq (322)",
+          "anchor": "C991 (depth = constraint tension)"
+        },
+        {
+          "family": "PHASE",
+          "class": "BOILING_REGIME",
+          "reason": "S-section dominant, high B presence (100%)",
+          "anchor": "C909 (section-MIDDLE alignment)"
+        }
+      ],
+      "top_examples": [
+        [
+          "ol",
+          831
+        ],
+        [
+          "iin",
+          654
+        ],
+        [
+          "y",
+          605
+        ],
+        [
+          "o",
+          602
+        ],
+        [
+          "or",
+          596
+        ]
+      ]
+    },
+    "1": {
+      "n": 106,
+      "confidence": "HIGH",
+      "score": 8,
+      "assignments": [
+        {
+          "family": "RECOVERY",
+          "class": "APPARATUS_BASELINE",
+          "reason": "Hapax compounds: one-time specifications, setup/preparation",
+          "anchor": "C618 (unique MIDDLE identity), C935 (compound = specification)"
+        },
+        {
+          "family": "THERMAL",
+          "class": "HEAT_APPLICATION",
+          "reason": "k-enriched (28%), QO-biased (15%)",
+          "anchor": "C647 (QO = k-rich), C911 (k = energy modulator)"
+        },
+        {
+          "family": "THERMAL",
+          "class": "THERMAL_STABILITY",
+          "reason": "e-enriched (42%), CHSH-biased (42%)",
+          "anchor": "C647 (CHSH = e-rich), C992 (e = compatibility kernel)"
+        },
+        {
+          "family": "MONITORING",
+          "class": "QUALITY_ASSESSMENT",
+          "reason": "h-enriched (44%)",
+          "anchor": "C908-C910 (h = monitoring)"
+        },
+        {
+          "family": "FLOW",
+          "class": "VAPOR_TRANSPORT",
+          "reason": "Shallow (depth=0.35), low internal compat (0.003)",
+          "anchor": "C991 (shallow = low constraint), C987 (continuous manifold)"
+        }
+      ],
+      "top_examples": [
+        [
+          "eed",
+          2
+        ],
+        [
+          "tchod",
+          2
+        ],
+        [
+          "teee",
+          2
+        ],
+        [
+          "aiee",
+          1
+        ],
+        [
+          "aiikh",
+          1
+        ]
+      ]
+    },
+    "2": {
+      "n": 130,
+      "confidence": "MEDIUM",
+      "score": 3,
+      "assignments": [
+        {
+          "family": "PHASE",
+          "class": "PHASE_TRANSITION",
+          "reason": "Deep (depth=1.49), moderate freq (20)",
+          "anchor": "C991 (depth = constraint tension)"
+        },
+        {
+          "family": "PHASE",
+          "class": "BOILING_REGIME",
+          "reason": "S-section dominant, high B presence (92%)",
+          "anchor": "C909 (section-MIDDLE alignment)"
+        }
+      ],
+      "top_examples": [
+        [
+          "t",
+          156
+        ],
+        [
+          "hy",
+          104
+        ],
+        [
+          "ok",
+          99
+        ],
+        [
+          "i",
+          82
+        ],
+        [
+          "ck",
+          81
+        ]
+      ]
+    },
+    "3": {
+      "n": 351,
+      "confidence": "LOW",
+      "score": 1,
+      "assignments": [
+        {
+          "family": "FLOW",
+          "class": "VAPOR_TRANSPORT",
+          "reason": "Shallow (depth=0.53), low internal compat (0.001)",
+          "anchor": "C991 (shallow = low constraint), C987 (continuous manifold)"
+        }
+      ],
+      "top_examples": [
+        [
+          "hold",
+          3
+        ],
+        [
+          "mo",
+          3
+        ],
+        [
+          "okeeo",
+          3
+        ],
+        [
+          "on",
+          3
+        ],
+        [
+          "otsh",
+          3
+        ]
+      ]
+    },
+    "4": {
+      "n": 362,
+      "confidence": "MEDIUM",
+      "score": 3,
+      "assignments": [
+        {
+          "family": "THERMAL",
+          "class": "THERMAL_STABILITY",
+          "reason": "e-enriched (35%), CHSH-biased (47%)",
+          "anchor": "C647 (CHSH = e-rich), C992 (e = compatibility kernel)"
+        },
+        {
+          "family": "MONITORING",
+          "class": "QUALITY_ASSESSMENT",
+          "reason": "h-enriched (37%)",
+          "anchor": "C908-C910 (h = monitoring)"
+        }
+      ],
+      "top_examples": [
+        [
+          "otch",
+          9
+        ],
+        [
+          "ea",
+          7
+        ],
+        [
+          "eock",
+          7
+        ],
+        [
+          "okeo",
+          7
+        ],
+        [
+          "es",
+          6
+        ]
+      ]
+    }
+  },
+  "coverage": {
+    "HIGH": {
+      "n_clusters": 2,
+      "n_middles": 129,
+      "pct": 0.13271604938271606
+    },
+    "MEDIUM": {
+      "n_clusters": 2,
+      "n_middles": 492,
+      "pct": 0.5061728395061729
+    },
+    "LOW": {
+      "n_clusters": 1,
+      "n_middles": 351,
+      "pct": 0.3611111111111111
+    },
+    "SPECULATIVE": {
+      "n_clusters": 0,
+      "n_middles": 0,
+      "pct": 0.0
+    }
+  },
+  "med_plus_coverage_pct": 0.6388888888888888,
+  "exclusion_explanations": [
+    {
+      "pair": "1-2",
+      "explanation": "Different families: {'MONITORING', 'RECOVERY', 'THERMAL', 'FLOW'} vs {'PHASE'}",
+      "families_i": [
+        "MONITORING",
+        "RECOVERY",
+        "THERMAL",
+        "FLOW"
+      ],
+      "families_j": [
+        "PHASE"
+      ]
+    },
+    {
+      "pair": "1-3",
+      "explanation": "Setup/specification vs active operation",
+      "families_i": [
+        "MONITORING",
+        "RECOVERY",
+        "THERMAL",
+        "FLOW"
+      ],
+      "families_j": [
+        "FLOW"
+      ]
+    },
+    {
+      "pair": "1-4",
+      "explanation": "Setup/specification vs active operation",
+      "families_i": [
+        "MONITORING",
+        "RECOVERY",
+        "THERMAL",
+        "FLOW"
+      ],
+      "families_j": [
+        "MONITORING",
+        "THERMAL"
+      ]
+    },
+    {
+      "pair": "3-4",
+      "explanation": "Different families: {'FLOW'} vs {'MONITORING', 'THERMAL'}",
+      "families_i": [
+        "FLOW"
+      ],
+      "families_j": [
+        "MONITORING",
+        "THERMAL"
+      ]
+    }
+  ],
+  "exclusion_explanation_rate": 1.0,
+  "family_distribution": {
+    "THERMAL": 597,
+    "MONITORING": 491,
+    "FLOW": 457,
+    "PHASE": 306,
+    "RECOVERY": 106
+  },
+  "verdict": "COHERENT_MAPPING",
+  "explanation": "64% coverage at MEDIUM+ confidence, 100% exclusion pairs explained. The discrimination space admits a coherent distillation-anchored interpretation."
+}

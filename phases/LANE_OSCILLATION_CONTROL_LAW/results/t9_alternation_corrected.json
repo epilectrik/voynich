@@ -1,0 +1,164 @@
+{
+  "test": "T9_alternation_corrected_simulation",
+  "model": "markov_haz_altcorr",
+  "n_simulations": 1000,
+  "n_line_templates": 1831,
+  "n_en_positions": 6727,
+  "correction_parameters": {
+    "epsilon": 0.06147002921479028,
+    "epsilon_qc": 0.06402574778729953,
+    "epsilon_cq": 0.05891431064228103,
+    "delta": -0.0665349374072702,
+    "delta_qq": -0.04991012281120766,
+    "delta_cc": -0.08315975200333275,
+    "description": "epsilon: post-SWITCH boost to P(switch), delta: post-STAY shift to P(switch)"
+  },
+  "model_params": {
+    "section_matrices": 10,
+    "hazard_gate": 2,
+    "alternation_correction": 2,
+    "total": 14
+  },
+  "observed_metrics": {
+    "global_alternation": 0.5486111111111112,
+    "section_rates": {
+      "H": 0.45588235294117646,
+      "T": 0.4105263157894737,
+      "B": 0.5949622166246852,
+      "C": 0.5112107623318386,
+      "S": 0.536136041568257
+    },
+    "qo_run_mean": 1.406787540678754,
+    "chsh_run_mean": 1.5642434488588335,
+    "post_haz_chsh_rate": 0.7002724795640327,
+    "post_cc_daiin_chsh_rate": 0.7411764705882353,
+    "folio_qo_mean": 0.4147947569338551,
+    "n_pairs": 4896,
+    "n_qo_runs": 2151,
+    "n_chsh_runs": 2366,
+    "n_post_haz": 367,
+    "n_post_cc_daiin": 170
+  },
+  "fidelity": {
+    "global_alternation": {
+      "observed": 0.5486111111111112,
+      "simulated_mean": 0.5540334967320262,
+      "simulated_sd": 0.007493186668430688,
+      "ci_95": [
+        0.5394199346405228,
+        0.5682240604575163
+      ],
+      "within_ci": true,
+      "deviation": 0.723642137965133
+    },
+    "qo_run_mean": {
+      "observed": 1.406787540678754,
+      "simulated_mean": 1.4287677015547053,
+      "simulated_sd": 0.017060168858861347,
+      "ci_95": [
+        1.3973985245462948,
+        1.4649660093345251
+      ],
+      "within_ci": true,
+      "deviation": 1.288390581464524
+    },
+    "chsh_run_mean": {
+      "observed": 1.5642434488588335,
+      "simulated_mean": 1.5294272084801726,
+      "simulated_sd": 0.0171146413979871,
+      "ci_95": [
+        1.4963917783257643,
+        1.5625452488687783
+      ],
+      "within_ci": false,
+      "deviation": 2.0342956401502965
+    },
+    "post_haz_chsh_rate": {
+      "observed": 0.7002724795640327,
+      "simulated_mean": 0.7525395095367847,
+      "simulated_sd": 0.022688382931446503,
+      "ci_95": [
+        0.7084468664850136,
+        0.7956403269754768
+      ],
+      "within_ci": false,
+      "deviation": 2.3036912824804703
+    },
+    "post_cc_daiin_chsh_rate": {
+      "observed": 0.7411764705882353,
+      "simulated_mean": 0.5437235294117647,
+      "simulated_sd": 0.03634395043970886,
+      "ci_95": [
+        0.47058823529411764,
+        0.6176470588235294
+      ],
+      "within_ci": false,
+      "deviation": 5.432897051299532
+    },
+    "folio_qo_mean": {
+      "observed": 0.4147947569338551,
+      "simulated_mean": 0.41807645357400586,
+      "simulated_sd": 0.009295027477486414,
+      "ci_95": [
+        0.4008618322576997,
+        0.43702877329835355
+      ],
+      "within_ci": true,
+      "deviation": 0.3530593802008008
+    },
+    "section_rate_B": {
+      "observed": 0.5949622166246852,
+      "simulated_mean": 0.608695717884131,
+      "simulated_sd": 0.011512970566554998,
+      "ci_95": [
+        0.5874055415617129,
+        0.6312468513853904
+      ],
+      "within_ci": true,
+      "deviation": 1.1928720897924854
+    },
+    "section_rate_H": {
+      "observed": 0.45588235294117646,
+      "simulated_mean": 0.4575441176470589,
+      "simulated_sd": 0.026204757552292075,
+      "ci_95": [
+        0.4054621848739496,
+        0.5105042016806722
+      ],
+      "within_ci": true,
+      "deviation": 0.06341461860756911
+    },
+    "section_rate_S": {
+      "observed": 0.536136041568257,
+      "simulated_mean": 0.5368889938592347,
+      "simulated_sd": 0.011616233787681845,
+      "ci_95": [
+        0.5134506376948512,
+        0.5588214454416627
+      ],
+      "within_ci": true,
+      "deviation": 0.06481896841437243
+    }
+  },
+  "summary": {
+    "n_metrics": 9,
+    "n_within_ci": 6,
+    "composite_deviation": 1.4952313055972426
+  },
+  "comparison_with_t7": {
+    "t7_composite_deviation": 1.4265604241542027,
+    "t7_within_ci": 6,
+    "t9_composite_deviation": 1.4952313055972426,
+    "t9_within_ci": 6,
+    "improvement": -0.0686708814430399
+  },
+  "checks": {
+    "composite_below_1.2": false,
+    "qo_run_fixed": true,
+    "chsh_run_preserved": false,
+    "metrics_7_of_9": false,
+    "improvement_over_t7": false
+  },
+  "verdict": "NO_IMPROVEMENT",
+  "verdict_text": "Alternation correction does not improve generative fidelity."
+}

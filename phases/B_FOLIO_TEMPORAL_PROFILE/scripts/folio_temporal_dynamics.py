@@ -115,17 +115,14 @@ else:
 
 print(f"  Loaded class_token_map: {len(token_to_class)} tokens mapped")
 
-# Load regime mapping
-regime_path = PROJECT_ROOT / 'phases' / 'REGIME_SEMANTIC_INTERPRETATION' / 'results' / 'regime_folio_mapping.json'
+# Load regime mapping (authoritative v2, GMM k=4)
+regime_path = PROJECT_ROOT / 'data' / 'regime_folio_mapping.json'
 with open(regime_path, 'r', encoding='utf-8') as f:
     regime_data = json.load(f)
 
-folio_to_regime = {}
-for regime, folios in regime_data.items():
-    for folio in folios:
-        folio_to_regime[folio] = regime
+folio_to_regime = {folio: data['regime'] for folio, data in regime_data['regime_assignments'].items()}
 
-print(f"  Loaded regime mapping: {len(folio_to_regime)} folios")
+print(f"  Loaded regime mapping: {len(folio_to_regime)} folios (v2 authoritative)")
 
 # Load forbidden transitions (17 pairs)
 forbidden_path = PROJECT_ROOT / 'phases' / '15-20_kernel_grammar' / 'phase18a_forbidden_inventory.json'

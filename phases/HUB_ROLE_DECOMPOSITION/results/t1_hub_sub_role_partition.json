@@ -1,0 +1,397 @@
+{
+  "metadata": {
+    "phase": "HUB_ROLE_DECOMPOSITION",
+    "test": "T1_HUB_SUB_ROLE_PARTITION"
+  },
+  "hub_middles": 23,
+  "hub_middle_list": [
+    "aiin",
+    "al",
+    "ar",
+    "d",
+    "dy",
+    "e",
+    "ee",
+    "eey",
+    "ek",
+    "eo",
+    "eol",
+    "ey",
+    "iin",
+    "k",
+    "l",
+    "o",
+    "od",
+    "ol",
+    "or",
+    "r",
+    "s",
+    "t",
+    "y"
+  ],
+  "sub_roles": {
+    "aiin": [
+      "HAZARD_TARGET",
+      "SAFETY_BUFFER"
+    ],
+    "al": [
+      "HAZARD_TARGET",
+      "SAFETY_BUFFER"
+    ],
+    "ar": [
+      "HAZARD_SOURCE"
+    ],
+    "d": [
+      "PURE_CONNECTOR"
+    ],
+    "dy": [
+      "HAZARD_SOURCE"
+    ],
+    "e": [
+      "PURE_CONNECTOR"
+    ],
+    "ee": [
+      "HAZARD_TARGET"
+    ],
+    "eey": [
+      "PURE_CONNECTOR"
+    ],
+    "ek": [
+      "PURE_CONNECTOR"
+    ],
+    "eo": [
+      "PURE_CONNECTOR"
+    ],
+    "eol": [
+      "SAFETY_BUFFER"
+    ],
+    "ey": [
+      "HAZARD_SOURCE",
+      "HAZARD_TARGET"
+    ],
+    "iin": [
+      "PURE_CONNECTOR"
+    ],
+    "k": [
+      "SAFETY_BUFFER"
+    ],
+    "l": [
+      "HAZARD_SOURCE",
+      "HAZARD_TARGET",
+      "SAFETY_BUFFER"
+    ],
+    "o": [
+      "HAZARD_TARGET"
+    ],
+    "od": [
+      "SAFETY_BUFFER"
+    ],
+    "ol": [
+      "HAZARD_SOURCE",
+      "HAZARD_TARGET",
+      "SAFETY_BUFFER"
+    ],
+    "or": [
+      "HAZARD_SOURCE",
+      "HAZARD_TARGET"
+    ],
+    "r": [
+      "HAZARD_TARGET",
+      "SAFETY_BUFFER"
+    ],
+    "s": [
+      "PURE_CONNECTOR"
+    ],
+    "t": [
+      "HAZARD_TARGET"
+    ],
+    "y": [
+      "PURE_CONNECTOR"
+    ]
+  },
+  "primary_roles": {
+    "aiin": "HAZARD_TARGET",
+    "al": "HAZARD_TARGET",
+    "ar": "HAZARD_SOURCE",
+    "d": "PURE_CONNECTOR",
+    "dy": "HAZARD_SOURCE",
+    "e": "PURE_CONNECTOR",
+    "ee": "HAZARD_TARGET",
+    "eey": "PURE_CONNECTOR",
+    "ek": "PURE_CONNECTOR",
+    "eo": "PURE_CONNECTOR",
+    "eol": "SAFETY_BUFFER",
+    "ey": "HAZARD_SOURCE",
+    "iin": "PURE_CONNECTOR",
+    "k": "SAFETY_BUFFER",
+    "l": "HAZARD_SOURCE",
+    "o": "HAZARD_TARGET",
+    "od": "SAFETY_BUFFER",
+    "ol": "HAZARD_SOURCE",
+    "or": "HAZARD_SOURCE",
+    "r": "HAZARD_TARGET",
+    "s": "PURE_CONNECTOR",
+    "t": "HAZARD_TARGET",
+    "y": "PURE_CONNECTOR"
+  },
+  "role_groups": {
+    "HAZARD_SOURCE": [
+      "ar",
+      "dy",
+      "ey",
+      "l",
+      "ol",
+      "or"
+    ],
+    "HAZARD_TARGET": [
+      "aiin",
+      "al",
+      "ee",
+      "o",
+      "r",
+      "t"
+    ],
+    "SAFETY_BUFFER": [
+      "eol",
+      "k",
+      "od"
+    ],
+    "PURE_CONNECTOR": [
+      "d",
+      "e",
+      "eey",
+      "ek",
+      "eo",
+      "iin",
+      "s",
+      "y"
+    ]
+  },
+  "overlap": {
+    "source_and_target": [
+      "ey",
+      "l",
+      "ol",
+      "or"
+    ],
+    "source_and_buffer": [
+      "l",
+      "ol"
+    ],
+    "target_and_buffer": [
+      "aiin",
+      "al",
+      "l",
+      "ol",
+      "r"
+    ],
+    "all_three": [
+      "l",
+      "ol"
+    ]
+  },
+  "behavioral_comparison": {
+    "length": {
+      "KW_H": 0.4839577329490848,
+      "p": 0.9224014252497296,
+      "eta_sq": 0.0,
+      "per_role_means": {
+        "HAZARD_SOURCE": 1.8333333333333333,
+        "HAZARD_TARGET": 1.8333333333333333,
+        "SAFETY_BUFFER": 2.0,
+        "PURE_CONNECTOR": 1.75
+      }
+    },
+    "k_ratio": {
+      "KW_H": 3.647727272727289,
+      "p": 0.30210172520459166,
+      "eta_sq": 0.03409090909090994,
+      "per_role_means": {
+        "HAZARD_SOURCE": 0.0,
+        "HAZARD_TARGET": 0.0,
+        "SAFETY_BUFFER": 0.3333333333333333,
+        "PURE_CONNECTOR": 0.0625
+      }
+    },
+    "e_ratio": {
+      "KW_H": 2.4778752800597488,
+      "p": 0.4793027883610892,
+      "eta_sq": 0.0,
+      "per_role_means": {
+        "HAZARD_SOURCE": 0.08333333333333333,
+        "HAZARD_TARGET": 0.16666666666666666,
+        "SAFETY_BUFFER": 0.11109999999999999,
+        "PURE_CONNECTOR": 0.3333375
+      }
+    },
+    "h_ratio": {
+      "KW_H": 0.0,
+      "p": 1.0,
+      "eta_sq": 0.0,
+      "per_role_means": {
+        "HAZARD_SOURCE": 0.0,
+        "HAZARD_TARGET": 0.0,
+        "SAFETY_BUFFER": 0.0,
+        "PURE_CONNECTOR": 0.0
+      }
+    },
+    "is_compound": {
+      "KW_H": 2.0263157894736845,
+      "p": 0.5669627691910764,
+      "eta_sq": 0.0,
+      "per_role_means": {
+        "HAZARD_SOURCE": 0.0,
+        "HAZARD_TARGET": 0.16666666666666666,
+        "SAFETY_BUFFER": 0.3333333333333333,
+        "PURE_CONNECTOR": 0.25
+      }
+    },
+    "qo_affinity": {
+      "KW_H": 0.7126831501831525,
+      "p": 0.8702167671585611,
+      "eta_sq": 0.0,
+      "per_role_means": {
+        "HAZARD_SOURCE": 0.25,
+        "HAZARD_TARGET": 0.4166666666666667,
+        "SAFETY_BUFFER": 0.3333333333333333,
+        "PURE_CONNECTOR": 0.3125
+      }
+    },
+    "regime_1_enrichment": {
+      "KW_H": 1.4420289855072497,
+      "p": 0.6957131449245018,
+      "eta_sq": 0.0,
+      "per_role_means": {
+        "HAZARD_SOURCE": 1.0245,
+        "HAZARD_TARGET": 0.8419166666666666,
+        "SAFETY_BUFFER": 0.922,
+        "PURE_CONNECTOR": 0.806725
+      }
+    },
+    "regime_2_enrichment": {
+      "KW_H": 2.158514492753625,
+      "p": 0.5401658770673692,
+      "eta_sq": 0.0,
+      "per_role_means": {
+        "HAZARD_SOURCE": 1.3857833333333334,
+        "HAZARD_TARGET": 1.43405,
+        "SAFETY_BUFFER": 0.9198333333333334,
+        "PURE_CONNECTOR": 1.0601875
+      }
+    },
+    "regime_3_enrichment": {
+      "KW_H": 2.868659420289859,
+      "p": 0.41232171054823397,
+      "eta_sq": 0.0,
+      "per_role_means": {
+        "HAZARD_SOURCE": 0.86285,
+        "HAZARD_TARGET": 1.1310833333333334,
+        "SAFETY_BUFFER": 1.1915666666666667,
+        "PURE_CONNECTOR": 1.1734875
+      }
+    },
+    "regime_4_enrichment": {
+      "KW_H": 3.8106884057970944,
+      "p": 0.28264533532295105,
+      "eta_sq": 0.042667810831426026,
+      "per_role_means": {
+        "HAZARD_SOURCE": 0.9078333333333334,
+        "HAZARD_TARGET": 1.0437333333333332,
+        "SAFETY_BUFFER": 0.9184,
+        "PURE_CONNECTOR": 1.478375
+      }
+    },
+    "regime_entropy": {
+      "KW_H": 2.933876811594203,
+      "p": 0.4019328301675261,
+      "eta_sq": 0.0,
+      "per_role_means": {
+        "HAZARD_SOURCE": 1.1049166666666668,
+        "HAZARD_TARGET": 1.18865,
+        "SAFETY_BUFFER": 1.0033333333333332,
+        "PURE_CONNECTOR": 1.1493625
+      }
+    },
+    "initial_rate": {
+      "KW_H": 1.8722826086956559,
+      "p": 0.5993331326691707,
+      "eta_sq": 0.0,
+      "per_role_means": {
+        "HAZARD_SOURCE": 0.08853333333333334,
+        "HAZARD_TARGET": 0.09523333333333334,
+        "SAFETY_BUFFER": 0.13549999999999998,
+        "PURE_CONNECTOR": 0.1373625
+      }
+    },
+    "final_rate": {
+      "KW_H": 0.9456521739130466,
+      "p": 0.8143992126914003,
+      "eta_sq": 0.0,
+      "per_role_means": {
+        "HAZARD_SOURCE": 0.1054,
+        "HAZARD_TARGET": 0.10151666666666664,
+        "SAFETY_BUFFER": 0.07863333333333333,
+        "PURE_CONNECTOR": 0.12126250000000001
+      }
+    },
+    "folio_spread": {
+      "KW_H": 1.7339330024813866,
+      "p": 0.6294162495305136,
+      "eta_sq": 0.0,
+      "per_role_means": {
+        "HAZARD_SOURCE": 0.9491666666666667,
+        "HAZARD_TARGET": 0.8882,
+        "SAFETY_BUFFER": 0.8008000000000001,
+        "PURE_CONNECTOR": 0.858225
+      }
+    }
+  },
+  "lane_distribution_by_role": {
+    "HAZARD_SOURCE": {
+      "NEUTRAL": 3,
+      "CHSH": 3
+    },
+    "HAZARD_TARGET": {
+      "NEUTRAL": 3,
+      "CHSH": 2,
+      "QO": 1
+    },
+    "SAFETY_BUFFER": {
+      "CHSH": 2,
+      "QO": 1
+    },
+    "PURE_CONNECTOR": {
+      "NEUTRAL": 4,
+      "CHSH": 4
+    }
+  },
+  "token_lane_by_role": {
+    "HAZARD_SOURCE": {
+      "total_tokens": 4304,
+      "QO": 0,
+      "CHSH": 2097,
+      "NEUTRAL": 2207
+    },
+    "HAZARD_TARGET": {
+      "total_tokens": 3219,
+      "QO": 576,
+      "CHSH": 539,
+      "NEUTRAL": 2104
+    },
+    "SAFETY_BUFFER": {
+      "total_tokens": 2554,
+      "QO": 2083,
+      "CHSH": 471,
+      "NEUTRAL": 0
+    },
+    "PURE_CONNECTOR": {
+      "total_tokens": 3593,
+      "QO": 0,
+      "CHSH": 2039,
+      "NEUTRAL": 1554
+    }
+  },
+  "verdict": "HOMOGENEOUS",
+  "verdict_detail": "No dimension significantly differentiates sub-roles. HUB is behaviorally homogeneous despite functional diversity.",
+  "significant_dimensions": 0
+}

@@ -1,0 +1,350 @@
+{
+  "test": "T1_transition_structure",
+  "properties": [
+    "F2_depleted_asymmetry",
+    "F3_clustering",
+    "F4_one_way_kernel"
+  ],
+  "methodology": {
+    "depletion_threshold": 0.2,
+    "min_expected": 5.0,
+    "enrichment_threshold": 3.0,
+    "note": "C789: forbidden transitions are ~65% compliant, not absolute zeros. Depletion ratio (obs/exp) used instead of zero-count criterion."
+  },
+  "observed": {
+    "n_depleted": 18,
+    "asymmetry": 1.0,
+    "clustering_coefficient": 0.0989010989010989,
+    "clustering_sources": 13,
+    "clustering_targets": 14,
+    "has_one_way": false,
+    "n_one_way": 0,
+    "best_enrichment": 0.0,
+    "depleted_pairs": [
+      {
+        "src_class": 11,
+        "tgt_class": 36,
+        "src_role": "CORE_CONTROL",
+        "tgt_role": "ENERGY_OPERATOR",
+        "depletion_ratio": 0.0,
+        "reverse_ratio": 1.1
+      },
+      {
+        "src_class": 13,
+        "tgt_class": 40,
+        "src_role": "FREQUENT_OPERATOR",
+        "tgt_role": "FLOW_OPERATOR",
+        "depletion_ratio": 0.0,
+        "reverse_ratio": null
+      },
+      {
+        "src_class": 9,
+        "tgt_class": 33,
+        "src_role": "FREQUENT_OPERATOR",
+        "tgt_role": "ENERGY_OPERATOR",
+        "depletion_ratio": 0.117,
+        "reverse_ratio": 0.3372
+      },
+      {
+        "src_class": 24,
+        "tgt_class": 30,
+        "src_role": "AUXILIARY",
+        "tgt_role": "FLOW_OPERATOR",
+        "depletion_ratio": 0.1337,
+        "reverse_ratio": 0.9418
+      },
+      {
+        "src_class": 14,
+        "tgt_class": 46,
+        "src_role": "FREQUENT_OPERATOR",
+        "tgt_role": "ENERGY_OPERATOR",
+        "depletion_ratio": 0.1374,
+        "reverse_ratio": 0.5823
+      },
+      {
+        "src_class": 9,
+        "tgt_class": 27,
+        "src_role": "FREQUENT_OPERATOR",
+        "tgt_role": "AUXILIARY",
+        "depletion_ratio": 0.1427,
+        "reverse_ratio": 0.6435
+      },
+      {
+        "src_class": 9,
+        "tgt_class": 32,
+        "src_role": "FREQUENT_OPERATOR",
+        "tgt_role": "ENERGY_OPERATOR",
+        "depletion_ratio": 0.1452,
+        "reverse_ratio": 0.5887
+      },
+      {
+        "src_class": 5,
+        "tgt_class": 34,
+        "src_role": "AUXILIARY",
+        "tgt_role": "ENERGY_OPERATOR",
+        "depletion_ratio": 0.1475,
+        "reverse_ratio": null
+      },
+      {
+        "src_class": 47,
+        "tgt_class": 11,
+        "src_role": "ENERGY_OPERATOR",
+        "tgt_role": "CORE_CONTROL",
+        "depletion_ratio": 0.1713,
+        "reverse_ratio": 1.125
+      },
+      {
+        "src_class": 19,
+        "tgt_class": 33,
+        "src_role": "AUXILIARY",
+        "tgt_role": "ENERGY_OPERATOR",
+        "depletion_ratio": 0.1721,
+        "reverse_ratio": 0.6824
+      },
+      {
+        "src_class": 7,
+        "tgt_class": 32,
+        "src_role": "FLOW_OPERATOR",
+        "tgt_role": "ENERGY_OPERATOR",
+        "depletion_ratio": 0.1725,
+        "reverse_ratio": 0.4668
+      },
+      {
+        "src_class": 11,
+        "tgt_class": 14,
+        "src_role": "CORE_CONTROL",
+        "tgt_role": "FREQUENT_OPERATOR",
+        "depletion_ratio": 0.1742,
+        "reverse_ratio": 1.3983
+      },
+      {
+        "src_class": 3,
+        "tgt_class": 33,
+        "src_role": "AUXILIARY",
+        "tgt_role": "ENERGY_OPERATOR",
+        "depletion_ratio": 0.1823,
+        "reverse_ratio": 0.7961
+      },
+      {
+        "src_class": 33,
+        "tgt_class": 38,
+        "src_role": "ENERGY_OPERATOR",
+        "tgt_role": "FLOW_OPERATOR",
+        "depletion_ratio": 0.1829,
+        "reverse_ratio": null
+      },
+      {
+        "src_class": 18,
+        "tgt_class": 28,
+        "src_role": "AUXILIARY",
+        "tgt_role": "AUXILIARY",
+        "depletion_ratio": 0.189,
+        "reverse_ratio": 1.03
+      },
+      {
+        "src_class": 7,
+        "tgt_class": 47,
+        "src_role": "FLOW_OPERATOR",
+        "tgt_role": "ENERGY_OPERATOR",
+        "depletion_ratio": 0.1896,
+        "reverse_ratio": 0.6438
+      },
+      {
+        "src_class": 13,
+        "tgt_class": 5,
+        "src_role": "FREQUENT_OPERATOR",
+        "tgt_role": "AUXILIARY",
+        "depletion_ratio": 0.1905,
+        "reverse_ratio": 1.4835
+      },
+      {
+        "src_class": 10,
+        "tgt_class": 28,
+        "src_role": "CORE_CONTROL",
+        "tgt_role": "AUXILIARY",
+        "depletion_ratio": 0.1931,
+        "reverse_ratio": 1.4612
+      }
+    ]
+  },
+  "holdout_validation": {
+    "n_splits": 20,
+    "avg_jaccard": 0.0717,
+    "avg_train_depleted": 24.1,
+    "avg_test_depleted": 24.1,
+    "splits": [
+      {
+        "train_n": 24,
+        "test_n": 30,
+        "overlap": 4,
+        "jaccard": 0.08
+      },
+      {
+        "train_n": 27,
+        "test_n": 23,
+        "overlap": 2,
+        "jaccard": 0.0417
+      },
+      {
+        "train_n": 26,
+        "test_n": 20,
+        "overlap": 3,
+        "jaccard": 0.0698
+      },
+      {
+        "train_n": 30,
+        "test_n": 21,
+        "overlap": 4,
+        "jaccard": 0.0851
+      },
+      {
+        "train_n": 22,
+        "test_n": 26,
+        "overlap": 4,
+        "jaccard": 0.0909
+      },
+      {
+        "train_n": 22,
+        "test_n": 22,
+        "overlap": 1,
+        "jaccard": 0.0233
+      },
+      {
+        "train_n": 21,
+        "test_n": 15,
+        "overlap": 4,
+        "jaccard": 0.125
+      },
+      {
+        "train_n": 31,
+        "test_n": 28,
+        "overlap": 2,
+        "jaccard": 0.0351
+      },
+      {
+        "train_n": 21,
+        "test_n": 30,
+        "overlap": 5,
+        "jaccard": 0.1087
+      },
+      {
+        "train_n": 30,
+        "test_n": 25,
+        "overlap": 5,
+        "jaccard": 0.1
+      },
+      {
+        "train_n": 27,
+        "test_n": 27,
+        "overlap": 3,
+        "jaccard": 0.0588
+      },
+      {
+        "train_n": 18,
+        "test_n": 31,
+        "overlap": 3,
+        "jaccard": 0.0652
+      },
+      {
+        "train_n": 21,
+        "test_n": 27,
+        "overlap": 4,
+        "jaccard": 0.0909
+      },
+      {
+        "train_n": 26,
+        "test_n": 25,
+        "overlap": 3,
+        "jaccard": 0.0625
+      },
+      {
+        "train_n": 16,
+        "test_n": 22,
+        "overlap": 2,
+        "jaccard": 0.0556
+      },
+      {
+        "train_n": 23,
+        "test_n": 18,
+        "overlap": 1,
+        "jaccard": 0.025
+      },
+      {
+        "train_n": 29,
+        "test_n": 25,
+        "overlap": 5,
+        "jaccard": 0.102
+      },
+      {
+        "train_n": 25,
+        "test_n": 16,
+        "overlap": 3,
+        "jaccard": 0.0789
+      },
+      {
+        "train_n": 17,
+        "test_n": 28,
+        "overlap": 1,
+        "jaccard": 0.0227
+      },
+      {
+        "train_n": 25,
+        "test_n": 24,
+        "overlap": 5,
+        "jaccard": 0.1136
+      }
+    ]
+  },
+  "ensembles": {
+    "NULL_A_density": {
+      "p_depleted": 1.0,
+      "p_asymmetry_given_depleted": 0.0,
+      "p_clustering_given_depleted": 1.0,
+      "p_one_way": 0.9804,
+      "p_joint_F2_F3_F4": 0.0,
+      "null_depleted_mean": 214.32,
+      "null_depleted_std": 10.41,
+      "null_depleted_max": 260,
+      "null_asymmetry_mean": 0.69,
+      "null_oneway_fraction": 0.9804,
+      "n_with_depleted_ge_obs": 10000,
+      "time_seconds": 86.4
+    },
+    "NULL_B_degree": {
+      "p_depleted": 0.0,
+      "p_asymmetry_given_depleted": 0.0,
+      "p_clustering_given_depleted": 0.0,
+      "p_one_way": 0.0,
+      "p_joint_F2_F3_F4": 0.0,
+      "null_depleted_mean": 2.9,
+      "null_depleted_std": 1.7,
+      "null_depleted_max": 10,
+      "null_asymmetry_mean": 0.842,
+      "null_oneway_fraction": 0.0,
+      "n_with_depleted_ge_obs": 0,
+      "time_seconds": 27.4
+    },
+    "NULL_C_random": {
+      "p_depleted": 1.0,
+      "p_asymmetry_given_depleted": 0.0001,
+      "p_clustering_given_depleted": 1.0,
+      "p_one_way": 0.9105,
+      "p_joint_F2_F3_F4": 0.0001,
+      "null_depleted_mean": 169.43,
+      "null_depleted_std": 10.65,
+      "null_depleted_max": 211,
+      "null_asymmetry_mean": 0.742,
+      "null_oneway_fraction": 0.9105,
+      "n_with_depleted_ge_obs": 10000,
+      "time_seconds": 49.3
+    }
+  },
+  "verdict": "RARE",
+  "best_joint_p": 0.0,
+  "worst_joint_p": 0.0001,
+  "n_samples_per_ensemble": 10000,
+  "n_classes": 49,
+  "n_transitions": 13645,
+  "n_eligible_pairs": 612,
+  "elapsed_seconds": 164.8
+}

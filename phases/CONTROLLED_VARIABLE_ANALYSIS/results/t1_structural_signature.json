@@ -1,0 +1,104 @@
+{
+  "test": "T1_structural_signature",
+  "n_properties": 14,
+  "signature": [
+    {
+      "id": "SIG-01",
+      "property": "Operational mass dominance",
+      "value": "68% of tokens in S4 (AX/EN major)",
+      "numeric": 0.677,
+      "implication": "The system spends ~2/3 of its time in a single undifferentiated operational state. The controlled variable must have a dominant steady-state regime."
+    },
+    {
+      "id": "SIG-02",
+      "property": "Universal attractor topology",
+      "value": "All states exit to S4 at >56%. S4 self-loop = 0.698",
+      "numeric": 0.698,
+      "implication": "The controlled variable returns to baseline after every perturbation. Deviations are transient, not cumulative."
+    },
+    {
+      "id": "SIG-03",
+      "property": "Sub-2-token mixing time",
+      "value": "Spectral gap = 0.893494, mixing time = 1.12 tokens",
+      "numeric": 1.12,
+      "implication": "The controlled variable has no long-range memory. Current state conveys all information about future evolution. The variable resets rapidly."
+    },
+    {
+      "id": "SIG-04",
+      "property": "Hazard/safe asymmetry",
+      "value": "FL_HAZ entry 6.5x more likely than FL_SAFE from operational mass",
+      "numeric": 6.5,
+      "implication": "Risk events are much more common than safe-completion events. The controlled variable operates near hazard boundaries most of the time."
+    },
+    {
+      "id": "SIG-05",
+      "property": "Single-token hazard gate duration",
+      "value": "Hazard perturbation decays in exactly 1 token (C967)",
+      "numeric": 1,
+      "implication": "Hazard events are sharp pulses, not sustained crises. The controlled variable can be destabilized briefly but recovers in one step."
+    },
+    {
+      "id": "SIG-06",
+      "property": "Binary lane oscillation within operational mass",
+      "value": "QO/CHSH alternation with section-specific Markov + hazard gate (C966-C970)",
+      "numeric": 2,
+      "implication": "The controlled variable has two complementary modes or phases that alternate. Not continuous variation \u2014 binary switching."
+    },
+    {
+      "id": "SIG-07",
+      "property": "REGIME modulates transition weights, topology fixed",
+      "value": "Global chi2=475.54, p=1.47e-48. FL markers regime-independent.",
+      "numeric": 475.54,
+      "implication": "There is an external parameter (REGIME) that changes HOW INTENSELY the system operates without changing WHAT it does. The controlled variable responds to intensity scaling."
+    },
+    {
+      "id": "SIG-08",
+      "property": "Boundary markers regime-independent",
+      "value": "FL_HAZ p=0.127, FL_SAFE p=0.107 (not regime-dependent)",
+      "numeric": 0.127,
+      "implication": "The MEANING of hazard and safe conditions does not change with operating intensity. Only the frequency of operational transitions changes."
+    },
+    {
+      "id": "SIG-09",
+      "property": "e-dominated recovery with 2-retry limit",
+      "value": "54.7% of recovery paths go through e (stability anchor). Max 2 recovery cycles (89% reversibility).",
+      "numeric": 0.547,
+      "implication": "The controlled variable can be stabilized by a specific operation (e). Recovery is not symmetric with destabilization \u2014 it requires a dedicated mechanism. And it has a hard limit."
+    },
+    {
+      "id": "SIG-10",
+      "property": "Closed-loop with no external reference",
+      "value": "C171: no external reference points. C384: no A-B entry coupling.",
+      "numeric": 0,
+      "implication": "The controlled variable is internal to the system. It does not reference external standards or measurements. All control is relative to internal state."
+    },
+    {
+      "id": "SIG-11",
+      "property": "Categorical (not quantitative) control",
+      "value": "C469: no parametric encoding. C287-C290: no magnitudes.",
+      "numeric": 0,
+      "implication": "The controlled variable is assessed by categorical tests (pass/fail, present/absent), not by measurement. No numbers, no arithmetic."
+    },
+    {
+      "id": "SIG-12",
+      "property": "Minor execution group as transient feeder",
+      "value": "AXm->AXM 24.4x stronger than reverse. AXm = 3% of tokens.",
+      "numeric": 24.4,
+      "implication": "There is a brief preparatory or transitional phase that feeds into the main operational regime. Not a separate mode \u2014 a ramp-up."
+    },
+    {
+      "id": "SIG-13",
+      "property": "FQ as recurrence modulator (18%)",
+      "value": "FQ self-loop 0.251. All states flow to FQ at 9.5-25.1%.",
+      "numeric": 0.18,
+      "implication": "There is a periodic monitoring/checking function that interrupts operational flow. In REGIME_4 (precision), this interruption rate increases."
+    },
+    {
+      "id": "SIG-14",
+      "property": "FL_SAFE heavily line-final",
+      "value": "Mean position = 0.816, 73% in final third of line.",
+      "numeric": 0.816,
+      "implication": "Safe/completion marking occurs at the end of control blocks (lines), not during them. It is a closure signal, not an ongoing status."
+    }
+  ]
+}

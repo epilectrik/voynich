@@ -1,0 +1,313 @@
+{
+  "test": "T3_cc_routing_gate_estimation",
+  "description": "CC routing gate estimation: P(lane | cc_type, offset) with CC-hazard interaction",
+  "baseline": {
+    "source": "t1_transition_matrices.json",
+    "stationary_QO": 0.4626122067241009,
+    "stationary_CHSH": 0.537387793275899
+  },
+  "gate_distributions": {
+    "DAIIN": {
+      "offset_1": {
+        "n": 215,
+        "qo": 46,
+        "chsh": 169,
+        "p_qo": 0.21395348837209302,
+        "p_chsh": 0.786046511627907,
+        "chi2_vs_baseline": 53.47378878203257,
+        "p_value": 2.6201263381153694e-13,
+        "significant": true,
+        "deviation_from_baseline_qo": -0.2486587183520079,
+        "deviation_from_baseline_chsh": 0.24865871835200792,
+        "skip": false
+      },
+      "offset_2": {
+        "n": 141,
+        "qo": 67,
+        "chsh": 74,
+        "p_qo": 0.475177304964539,
+        "p_chsh": 0.524822695035461,
+        "chi2_vs_baseline": 0.08954596154425465,
+        "p_value": 0.7647551668766955,
+        "significant": false,
+        "deviation_from_baseline_qo": 0.01256509824043811,
+        "deviation_from_baseline_chsh": -0.012565098240438055,
+        "skip": false
+      },
+      "offset_3": {
+        "n": 87,
+        "qo": 32,
+        "chsh": 55,
+        "p_qo": 0.367816091954023,
+        "p_chsh": 0.632183908045977,
+        "chi2_vs_baseline": 3.1448174704232765,
+        "p_value": 0.07616852263425089,
+        "significant": false,
+        "deviation_from_baseline_qo": -0.09479611477007793,
+        "deviation_from_baseline_chsh": 0.09479611477007799,
+        "skip": false
+      }
+    },
+    "OL": {
+      "offset_1": {
+        "n": 275,
+        "qo": 56,
+        "chsh": 219,
+        "p_qo": 0.20363636363636364,
+        "p_chsh": 0.7963636363636364,
+        "chi2_vs_baseline": 74.19016204059025,
+        "p_value": 0.0,
+        "significant": true,
+        "deviation_from_baseline_qo": -0.25897584308773725,
+        "deviation_from_baseline_chsh": 0.25897584308773736,
+        "skip": false
+      },
+      "offset_2": {
+        "n": 175,
+        "qo": 98,
+        "chsh": 77,
+        "p_qo": 0.56,
+        "p_chsh": 0.44,
+        "chi2_vs_baseline": 6.676397928965507,
+        "p_value": 0.009769785787854923,
+        "significant": true,
+        "deviation_from_baseline_qo": 0.09738779327589914,
+        "deviation_from_baseline_chsh": -0.09738779327589903,
+        "skip": false
+      },
+      "offset_3": {
+        "n": 94,
+        "qo": 36,
+        "chsh": 58,
+        "p_qo": 0.3829787234042553,
+        "p_chsh": 0.6170212765957447,
+        "chi2_vs_baseline": 2.397807941661756,
+        "p_value": 0.12150540367356022,
+        "significant": false,
+        "deviation_from_baseline_qo": -0.0796334833198456,
+        "deviation_from_baseline_chsh": 0.07963348331984565,
+        "skip": false
+      }
+    },
+    "OL_DERIVED": {
+      "offset_1": {
+        "n": 175,
+        "qo": 80,
+        "chsh": 95,
+        "p_qo": 0.45714285714285713,
+        "p_chsh": 0.5428571428571428,
+        "chi2_vs_baseline": 0.02105738943111974,
+        "p_value": 0.8846227244557598,
+        "significant": false,
+        "deviation_from_baseline_qo": -0.0054693495812437876,
+        "deviation_from_baseline_chsh": 0.0054693495812437876,
+        "skip": false
+      },
+      "offset_2": {
+        "n": 94,
+        "qo": 41,
+        "chsh": 53,
+        "p_qo": 0.43617021276595747,
+        "p_chsh": 0.5638297872340425,
+        "chi2_vs_baseline": 0.26436951334086556,
+        "p_value": 0.6071340074428779,
+        "significant": false,
+        "deviation_from_baseline_qo": -0.02644199395814345,
+        "deviation_from_baseline_chsh": 0.026441993958143506,
+        "skip": false
+      },
+      "offset_3": {
+        "n": 43,
+        "qo": 22,
+        "chsh": 21,
+        "p_qo": 0.5116279069767442,
+        "p_chsh": 0.4883720930232558,
+        "chi2_vs_baseline": 0.4155602445639527,
+        "p_value": 0.5191607508131753,
+        "significant": false,
+        "deviation_from_baseline_qo": 0.04901570025264329,
+        "deviation_from_baseline_chsh": -0.049015700252643235,
+        "skip": false
+      }
+    },
+    "OTHER_CC": {
+      "offset_1": {
+        "n": 0,
+        "qo": 0,
+        "chsh": 0,
+        "skip": true,
+        "reason": "too_few"
+      },
+      "offset_2": {
+        "n": 0,
+        "qo": 0,
+        "chsh": 0,
+        "skip": true,
+        "reason": "too_few"
+      },
+      "offset_3": {
+        "n": 0,
+        "qo": 0,
+        "chsh": 0,
+        "skip": true,
+        "reason": "too_few"
+      }
+    }
+  },
+  "c817_targets": {
+    "DAIIN": {
+      "testable": true,
+      "expected_lane": "CHSH",
+      "target_rate": 0.91,
+      "actual_rate": 0.786046511627907,
+      "delta": 0.12395348837209308,
+      "within_10pp": false
+    },
+    "OL": {
+      "testable": true,
+      "expected_lane": "CHSH",
+      "target_rate": 0.93,
+      "actual_rate": 0.7963636363636364,
+      "delta": 0.13363636363636366,
+      "within_10pp": false
+    },
+    "OL_DERIVED": {
+      "testable": true,
+      "expected_lane": "QO",
+      "target_rate": 0.57,
+      "actual_rate": 0.45714285714285713,
+      "delta": 0.11285714285714282,
+      "within_10pp": false
+    }
+  },
+  "decay_analysis": {
+    "DAIIN": {
+      "testable": true,
+      "offset_1_significant": true,
+      "offset_1_max_deviation": 0.24865871835200792,
+      "offset_2_significant": false,
+      "offset_2_max_deviation": 0.01256509824043811,
+      "decay_to_baseline_by_2": true,
+      "magnitude_decays": true
+    },
+    "OL": {
+      "testable": true,
+      "offset_1_significant": true,
+      "offset_1_max_deviation": 0.25897584308773736,
+      "offset_2_significant": true,
+      "offset_2_max_deviation": 0.09738779327589914,
+      "decay_to_baseline_by_2": false,
+      "magnitude_decays": true
+    },
+    "OL_DERIVED": {
+      "testable": true,
+      "offset_1_significant": false,
+      "offset_1_max_deviation": 0.0054693495812437876,
+      "offset_2_significant": false,
+      "offset_2_max_deviation": 0.026441993958143506,
+      "decay_to_baseline_by_2": true,
+      "magnitude_decays": false
+    },
+    "OTHER_CC": {
+      "testable": false
+    },
+    "summary": {
+      "testable_types": 3,
+      "decay_confirmed_types": 2
+    }
+  },
+  "gate_parameters": {
+    "DAIIN": {
+      "estimable": true,
+      "dominant_lane": "CHSH",
+      "p_dominant": 0.786046511627907,
+      "p_qo": 0.21395348837209302,
+      "p_chsh": 0.786046511627907,
+      "ci_95": [
+        0.7264592412442853,
+        0.8355911184679449
+      ],
+      "n": 215
+    },
+    "OL": {
+      "estimable": true,
+      "dominant_lane": "CHSH",
+      "p_dominant": 0.7963636363636364,
+      "p_qo": 0.20363636363636364,
+      "p_chsh": 0.7963636363636364,
+      "ci_95": [
+        0.7448373300871612,
+        0.8397239405410378
+      ],
+      "n": 275
+    },
+    "OL_DERIVED": {
+      "estimable": true,
+      "dominant_lane": "CHSH",
+      "p_dominant": 0.5428571428571428,
+      "p_qo": 0.45714285714285713,
+      "p_chsh": 0.5428571428571428,
+      "ci_95": [
+        0.46891937006133627,
+        0.6149537332882198
+      ],
+      "n": 175
+    },
+    "OTHER_CC": {
+      "estimable": false
+    }
+  },
+  "cc_hazard_interaction": {
+    "n_both": 22,
+    "n_cc_only": 586,
+    "n_haz_only": 382,
+    "both_lane_dist": {
+      "QO": 5,
+      "CHSH": 17
+    },
+    "cc_only_lane_dist": {
+      "QO": 196,
+      "CHSH": 390
+    },
+    "haz_only_lane_dist": {
+      "QO": 113,
+      "CHSH": 269
+    },
+    "interaction_model": "CC_PRIORITY",
+    "model_description": "CC dominates: hazard presence does not significantly alter CC routing",
+    "fisher_p": 0.36128019811078904,
+    "qo_shift_with_hazard": -0.10719826248836486,
+    "estimated_hazard_weight": 1.0,
+    "estimated_cc_weight": 0.0,
+    "by_cc_type": {
+      "DAIIN": {
+        "QO": 1,
+        "CHSH": 3,
+        "n": 4,
+        "p_qo": 0.25,
+        "p_chsh": 0.75
+      },
+      "OL": {
+        "QO": 2,
+        "CHSH": 9,
+        "n": 11,
+        "p_qo": 0.18181818181818182,
+        "p_chsh": 0.8181818181818182
+      },
+      "OL_DERIVED": {
+        "QO": 2,
+        "CHSH": 5,
+        "n": 7,
+        "p_qo": 0.2857142857142857,
+        "p_chsh": 0.7142857142857143
+      }
+    }
+  },
+  "checks": {
+    "daiin_routes_chsh": true,
+    "ol_routes_chsh": true,
+    "ol_derived_routes_qo": false,
+    "decay_to_baseline": true
+  },
+  "verdict": "STRONG"
+}

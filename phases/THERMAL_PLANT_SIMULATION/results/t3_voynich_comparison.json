@@ -1,0 +1,4751 @@
+{
+ "verdict": "STRUCTURAL_DIVERGENCE",
+ "verdict_detail": "Minimal reflux model alone does not reproduce Voynich grammar topology. See per-metric analysis for diagnostic detail.",
+ "median_hits": 3.0,
+ "mean_hits": 3.07,
+ "max_possible": 10,
+ "hit_count_distribution": {
+  "0": 0,
+  "1": 0,
+  "2": 31,
+  "3": 39,
+  "4": 22,
+  "5": 8,
+  "6": 0,
+  "7": 0,
+  "8": 0,
+  "9": 0,
+  "10": 0
+ },
+ "metric_hit_rates": {
+  "state_count": {
+   "hit_rate": 0.17,
+   "n_hits": 17,
+   "n_total": 100,
+   "simulated_stats": {
+    "mean": 9.38,
+    "median": 10.0,
+    "std": 2.365502060874182
+   },
+   "voynich_target": "6 (range 5-7)"
+  },
+  "hub_mass": {
+   "hit_rate": 0.06,
+   "n_hits": 6,
+   "n_total": 100,
+   "simulated_stats": {
+    "mean": 0.6308621229219648,
+    "median": 0.5575978555644725,
+    "std": 0.31275954104505777
+   },
+   "voynich_target": "0.68 (range 0.60-0.70)"
+  },
+  "spectral_gap": {
+   "hit_rate": 0.01,
+   "n_hits": 1,
+   "n_total": 100,
+   "simulated_stats": {
+    "mean": 0.03409039222598778,
+    "median": 1.1102230246251565e-16,
+    "std": 0.11680520530661141
+   },
+   "voynich_target": "0.894 (threshold >0.80)"
+  },
+  "alternation_rate": {
+   "hit_rate": 0.26,
+   "n_hits": 26,
+   "n_total": 100,
+   "simulated_stats": {
+    "mean": 0.4942924395522833,
+    "median": 0.4621336741121398,
+    "std": 0.09646407841493355
+   },
+   "voynich_target": "0.549 (range 0.50-0.60)"
+  },
+  "alternation_asymmetry": {
+   "hit_rate": 0.46,
+   "n_hits": 46,
+   "n_total": 100,
+   "simulated_stats": {
+    "mean": 0.004707239822410126,
+    "median": -0.002478614721742961,
+    "std": 0.03864353791567431
+   },
+   "voynich_target": "+0.043 (heat_to_cool > cool_to_heat)"
+  },
+  "post_overshoot_cooling": {
+   "hit_rate": 0.02,
+   "n_hits": 2,
+   "n_total": 100,
+   "simulated_stats": {
+    "mean": 0.19927202262364171,
+    "median": 0.21490272555840567,
+    "std": 0.21204439009467277
+   },
+   "voynich_target": "0.752 (threshold >0.70)"
+  },
+  "forbidden_count": {
+   "hit_rate": 0.04,
+   "n_hits": 4,
+   "n_total": 100,
+   "simulated_stats": {
+    "mean": 1.98,
+    "median": 0.0,
+    "std": 3.7735394525564447
+   },
+   "voynich_target": "17 (range 10-25)"
+  },
+  "buffer_rate": {
+   "hit_rate": 0.92,
+   "n_hits": 92,
+   "n_total": 100,
+   "simulated_stats": {
+    "mean": 0.023112852328138582,
+    "median": 0.0,
+    "std": 0.11886898511437474
+   },
+   "voynich_target": "0.0012 (threshold <0.01)"
+  },
+  "oscillation_variation": {
+   "hit_rate": 1.0,
+   "hit": true,
+   "detail": "spread = 0.434 (threshold > 0.20)"
+  },
+  "run_length_median": {
+   "hit_rate": 0.13,
+   "n_hits": 13,
+   "n_total": 100,
+   "simulated_stats": {
+    "heat_median": 2.0,
+    "cool_median": 2.0
+   },
+   "voynich_target": "(1.0, 1.0)"
+  }
+ },
+ "classification": {
+  "robust": [
+   "buffer_rate",
+   "oscillation_variation"
+  ],
+  "moderate": [
+   "alternation_rate",
+   "alternation_asymmetry"
+  ],
+  "fragile": [
+   "state_count",
+   "hub_mass",
+   "spectral_gap",
+   "post_overshoot_cooling",
+   "forbidden_count",
+   "run_length_median"
+  ]
+ },
+ "oscillation_variation": {
+  "spread": 0.4341950561211975,
+  "min": 0.35195154777927323,
+  "max": 0.7861466039004708,
+  "hit": true
+ },
+ "per_parameterization": [
+  {
+   "param_id": 0,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 11
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.42620125227723066
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 1.1102230246251565e-16
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5695006747638327
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.0011619436147738416
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      1.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 1,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.8478230502317138
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": -4.440892098500626e-16
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4260752688172043
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.012601754560320921
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.3310104529616725
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 2
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 2,
+   "hits": {
+    "state_count": {
+     "hit": true,
+     "value": 6
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.39637480338551445
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.014650134944309112
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.6554508748317631
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.00798492862836031
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.2857142857142857
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": true,
+     "value": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "hit_count": 4,
+   "total_targets": 9
+  },
+  {
+   "param_id": 3,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 11
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4213709677419355
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.0036095474155062313
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 4,
+   "hits": {
+    "state_count": {
+     "hit": true,
+     "value": 5
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.5662921348314615
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4026936026936027
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.02277462774337341
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.5
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 5,
+   "hits": {
+    "state_count": {
+     "hit": true,
+     "value": 7
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.411674325415254
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.007119662165219309
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.6952124072825354
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.0016951557106013038
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": true,
+     "value": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "hit_count": 4,
+   "total_targets": 9
+  },
+  {
+   "param_id": 6,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 11
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.43367003367003365
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.005256799555947378
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 7,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 10
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 6.661338147750939e-16
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5388251181634031
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.012161269966332267
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 8,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 11
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.2663833756160182
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.3572179688281114
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.7388963660834454
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.1969187577026451
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": true,
+     "value": 16
+    },
+    "buffer_rate": {
+     "hit": false,
+     "value": 0.23915989159891599
+    },
+    "run_length_median": {
+     "hit": true,
+     "value": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 9,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.44586415601882984
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.01605191627667929
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.5
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 2
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 10,
+   "hits": {
+    "state_count": {
+     "hit": true,
+     "value": 6
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.2831568530077795
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.18863383204872064
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.7861466039004708
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.1730843174951936
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.12403100775193798
+    },
+    "forbidden_count": {
+     "hit": true,
+     "value": 19
+    },
+    "buffer_rate": {
+     "hit": false,
+     "value": 0.9160460392687881
+    },
+    "run_length_median": {
+     "hit": true,
+     "value": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "hit_count": 4,
+   "total_targets": 9
+  },
+  {
+   "param_id": 11,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 11
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4280913978494624
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.027074548621851713
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 1
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0013531799729364006
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 12,
+   "hits": {
+    "state_count": {
+     "hit": true,
+     "value": 6
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.4616980960069263
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.008539765990236536
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5664429530201343
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.03922092022891188
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.3382352941176471
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 2
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 13,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": true,
+     "value": 0.6559766763848397
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.47181208053691276
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.0027602409985874043
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.3333333333333333
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 1
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 14,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 11
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.3267641375461031
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.11162289334576336
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.7312626603646185
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.050332003856942475
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.2828282828282828
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 6
+    },
+    "buffer_rate": {
+     "hit": false,
+     "value": 0.04758667573079538
+    },
+    "run_length_median": {
+     "hit": true,
+     "value": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 15,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 11
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.8456375838926175
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.43548387096774194
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.01722196414982824
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 1
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 16,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.19279526994474572
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.00807728259649998
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.445265278710544
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.020798356494770187
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.2813852813852814
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 9
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.002028397565922921
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 17,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 8
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.45094086021505375
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.0025562972531095185
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.37777777777777777
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 18,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.28495260415181795
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.004539882086287306
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.6590450571620713
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.01507092198581561
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.25146198830409355
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 5
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": true,
+     "value": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 19,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 9
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0004485544360962601
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4784366576819407
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.0050424319925598815
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 20,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4798115746971736
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.037562696706665566
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.25
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 21,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.2573342751927556
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 1.1102230246251565e-16
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.44489247311827956
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.0023919123013664834
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.55
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 22,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 10
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.3294427346456285
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0026048200578974168
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.3951612903225806
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.0031868364144838623
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 23,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 9
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.25614850022608904
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.09704059873091386
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.6001344086021505
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.002957355903420722
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 6
+    },
+    "buffer_rate": {
+     "hit": false,
+     "value": 0.016914749661705007
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      1.0,
+      1.5
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 24,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4226110363391655
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.00682592620101341
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 25,
+   "hits": {
+    "state_count": {
+     "hit": true,
+     "value": 6
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.3728221759774988
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.014256385928593462
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5630478759271746
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.011561618917689809
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.265625
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 1
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.002036659877800407
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 26,
+   "hits": {
+    "state_count": {
+     "hit": true,
+     "value": 7
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.5916473317865428
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.47817327065144394
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.029154887370066662
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 27,
+   "hits": {
+    "state_count": {
+     "hit": true,
+     "value": 7
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.510752688172043
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.015224710876884706
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.22070844686648503
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 4
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 28,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 8
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.5497382198952886
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5057316250842886
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.026652832386777403
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.2780487804878049
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 2
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0006788866259334691
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 29,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 11
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.23501305815895654
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.05983748182190074
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.42348993288590603
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.00961827851377145
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.3333333333333333
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 4
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.002702702702702703
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 30,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 10
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.4744424392877763
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": -4.440892098500626e-16
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5613207547169812
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.006217543171328499
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.31746031746031744
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      1.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 31,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 8
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 2.220446049250313e-16
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.37592468056489575
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.016707943197700137
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 1
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 32,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 9
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.49664429530200277
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4171159029649596
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.0006702327651187945
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 33,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 11
+    },
+    "hub_mass": {
+     "hit": true,
+     "value": 0.6222728752849235
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 1.1102230246251565e-16
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5643097643097643
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.0190057153225075
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.21252796420581654
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 3
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      1.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 4,
+   "total_targets": 9
+  },
+  {
+   "param_id": 34,
+   "hits": {
+    "state_count": {
+     "hit": true,
+     "value": 7
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.25027863504193343
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0021989780847082585
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5844594594594594
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.010164030837286009
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.203125
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      1.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 35,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 10
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.5648577531068887
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 1.1102230246251565e-16
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5322147651006711
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.02546863734679161
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.22336769759450173
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 3
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 36,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 9
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.38601210490921317
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.016713414523805203
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.38207547169811323
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 3
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0006770480704129993
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 37,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 9
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.43087248322147653
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.004998009084340949
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.47058823529411764
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 3
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 38,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 11
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 1.1102230246251565e-16
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.39878950907868194
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.011524081493787364
+    },
+    "post_overshoot_cooling": {
+     "hit": true,
+     "value": 1.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 3
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 39,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 8
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.4121667805878355
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.014643249458924479
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4087248322147651
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.011827761267731274
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 1
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 40,
+   "hits": {
+    "state_count": {
+     "hit": true,
+     "value": 7
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.29876906599397685
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0076612226519474635
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.39314516129032256
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.0024009321903764036
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 41,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.368850122556925
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0014696947667690585
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4494609164420485
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.0006811506541770651
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.25901639344262295
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 42,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 2
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5242587601078167
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.011306085376930008
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 43,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.2995298858294394
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.002821845775477061
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5030221625251847
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.0020188352457242154
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.27299703264094954
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 44,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.4590240496766602
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.002915105416118169
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5374241402562373
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.002275306648042319
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.21727748691099477
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 3
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0013577732518669382
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 45,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 11
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.21014818131413493
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.005201238054578616
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.43454790823211875
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.009852216748768461
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.2966666666666667
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 1
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 46,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 11
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5194630872483221
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.03490259740259738
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 47,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 11
+    },
+    "hub_mass": {
+     "hit": true,
+     "value": 0.6403172101705934
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 4.440892098500626e-16
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.38415043653458697
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.026964502427184456
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 48,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 9
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4344317417619368
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.018121371382240903
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.2899628252788104
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 49,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 3
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.5991935545758759
+    },
+    "spectral_gap": {
+     "hit": true,
+     "value": 0.8593007833853574
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.699798522498321
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.03884398116042531
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.20860927152317882
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": true,
+     "value": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "hit_count": 4,
+   "total_targets": 9
+  },
+  {
+   "param_id": 50,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 10
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.5250875145857643
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.3861652115513768
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.014561441519517604
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 51,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 11
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.4432716211405753
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.45998655010087425
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.006805822397342842
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 52,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 11
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 4.440892098500626e-16
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.49159381304640215
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.0032834038858135517
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 2
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.005416384563303994
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 53,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.27388523535630926
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.07136448880955859
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.45698924731182794
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.023904786021777702
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 1
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0020297699594046007
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 54,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5610249494268374
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.000756608502388012
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.19331742243436753
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 1
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 55,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 9
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.37314439946018896
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.012107093222978482
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 56,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4612794612794613
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.005904183535762497
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 57,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 9
+    },
+    "hub_mass": {
+     "hit": true,
+     "value": 0.6265356265356268
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4158815612382234
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.0046923010029567
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.36231884057971014
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 58,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 11
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 1.1102230246251565e-16
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.026897464263248128
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.24836601307189543
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 59,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.41952861952861953
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.005302071127202546
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.46875
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 7
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.002033898305084746
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 60,
+   "hits": {
+    "state_count": {
+     "hit": true,
+     "value": 7
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.5503379580220563
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 6.661338147750939e-16
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5651586765698852
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.03537012702584319
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.1791767554479419
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 61,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.3975561200532316
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0025678341797952253
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5944855413584398
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.02588756057924435
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.22991071428571427
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": true,
+     "value": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "hit_count": 4,
+   "total_targets": 9
+  },
+  {
+   "param_id": 62,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.30604350156788285
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.011136621405436808
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.49260752688172044
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.018564533121779914
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 3
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0013531799729364006
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 63,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.4046620409669716
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.008617537778362827
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4032258064516129
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.017351069982648903
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 1
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 64,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 9
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.5239059119145701
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.46024258760107817
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.015812962922581553
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.5
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 65,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 10
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.3409766473023159
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.012487297593670288
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4209818426361802
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.014869188782232257
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.3253968253968254
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 3
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 66,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 10
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.43548387096774194
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.014397328688412037
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 67,
+   "hits": {
+    "state_count": {
+     "hit": true,
+     "value": 7
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4649122807017544
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.021249842826606302
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.2507836990595611
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 1
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 68,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 4
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.38684536830187416
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.6075572401866473
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.6976430976430976
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.14142217401182944
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.3623853211009174
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": true,
+     "value": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 69,
+   "hits": {
+    "state_count": {
+     "hit": true,
+     "value": 6
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.7550335570469788
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.35195154777927323
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.013818587767514268
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.5157894736842106
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 70,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 11
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.3904011461318054
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4583333333333333
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.0047046070460704525
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.42857142857142855
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 1
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 71,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 10
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.44075189998651243
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.006168147138008173
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4153225806451613
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.02906341569294213
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.3087719298245614
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 4
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0013531799729364006
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 72,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 9
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4386792452830189
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.008442803999069992
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 2
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0013568521031207597
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 73,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 8
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.44272237196765496
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.009085409388438048
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 3
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 74,
+   "hits": {
+    "state_count": {
+     "hit": true,
+     "value": 7
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.3687227371132587
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0019886356284861684
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5087483176312247
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.04390363413638215
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.25
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 75,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 10
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4204163868368032
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.015956448282335223
+    },
+    "post_overshoot_cooling": {
+     "hit": true,
+     "value": 1.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 76,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 4
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 3.3306690738754696e-16
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5559299191374663
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.002544667912663945
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 77,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 9
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.18538771794906944
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0985601188084978
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5305574210879785
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.017986896962477683
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 1
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 78,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.42183288409703507
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.010655477144128678
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.4520547945205479
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 3
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0006784260515603799
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 79,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 9
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.478590162968317
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.002170194605673137
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5876010781671159
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.0009445134665824195
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": true,
+     "value": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "hit_count": 4,
+   "total_targets": 9
+  },
+  {
+   "param_id": 80,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 8
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.23548574090450397
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.1939137473708804
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.779054054054054
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.14679140886060316
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.12084592145015106
+    },
+    "forbidden_count": {
+     "hit": true,
+     "value": 23
+    },
+    "buffer_rate": {
+     "hit": false,
+     "value": 0.7068027210884353
+    },
+    "run_length_median": {
+     "hit": true,
+     "value": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 81,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 9
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.19342988006887218
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.023395574269649444
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5232010759919301
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.002235970910669627
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 5
+    },
+    "buffer_rate": {
+     "hit": false,
+     "value": 0.020311442112389978
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 82,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 11
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.2835320267411918
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.011126786483163342
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.46639784946236557
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.007523035230352304
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 5
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0027063599458728013
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 83,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 8
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.7114093959731544
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5174496644295302
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.023482910950941682
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 84,
+   "hits": {
+    "state_count": {
+     "hit": true,
+     "value": 7
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4252021563342318
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.01206688282789753
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.42567567567567566
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 85,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 11
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.24468996383884864
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.07997603098891115
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.6028225806451613
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.010000234874531833
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.22887323943661972
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 6
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0013531799729364006
+    },
+    "run_length_median": {
+     "hit": true,
+     "value": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 86,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 10
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.26735875341557674
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.004020497087349417
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.49527665317139
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.014707811133780224
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.3069306930693069
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 87,
+   "hits": {
+    "state_count": {
+     "hit": true,
+     "value": 7
+    },
+    "hub_mass": {
+     "hit": true,
+     "value": 0.6935123042505597
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4082044384667115
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.027055842157661325
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 4,
+   "total_targets": 9
+  },
+  {
+   "param_id": 88,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4629878869448183
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.007279183311140691
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.4318181818181818
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 89,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 10
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.226483137294429
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.30687002650804784
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.6459878624409979
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.06470007036579273
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.3905109489051095
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 7
+    },
+    "buffer_rate": {
+     "hit": false,
+     "value": 0.09164969450101833
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      1.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 90,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.19442626017025072
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.005477929864429187
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.39703903095558546
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.006412892449996654
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.5
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 91,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 10
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.19592556378685572
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.1701084149764116
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.7146720757268424
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.08768169138158866
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": true,
+     "value": 11
+    },
+    "buffer_rate": {
+     "hit": false,
+     "value": 0.2430224642614023
+    },
+    "run_length_median": {
+     "hit": true,
+     "value": [
+      1.0,
+      1.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 92,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 10
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0007866449265054865
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4348993288590604
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.010039476837312544
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.2895622895622896
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 3
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0006756756756756757
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 93,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 8
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5212407282535402
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.010372825126136354
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 1
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 94,
+   "hits": {
+    "state_count": {
+     "hit": true,
+     "value": 5
+    },
+    "hub_mass": {
+     "hit": true,
+     "value": 0.647425660424517
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4358629952988583
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.005096977898060406
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.345679012345679
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 3,
+   "total_targets": 9
+  },
+  {
+   "param_id": 95,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 10
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.37164750957855186
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 5.551115123125783e-16
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.3913920645595158
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.006959243112212576
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.5
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 1
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 96,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 4
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.3854081732795093
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.019944073414861485
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.4795164539959704
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.029010029362158574
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 97,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 12
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.3725032761176569
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.40671140939597317
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.015790773156766913
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.45454545454545453
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 1
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 1,
+   "total_targets": 9
+  },
+  {
+   "param_id": 98,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 8
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 0.41060857210513624
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": false,
+     "value": 0.45558546433378194
+    },
+    "alternation_asymmetry": {
+     "hit": true,
+     "value": 0.005024998188537022
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  },
+  {
+   "param_id": 99,
+   "hits": {
+    "state_count": {
+     "hit": false,
+     "value": 9
+    },
+    "hub_mass": {
+     "hit": false,
+     "value": 1.0
+    },
+    "spectral_gap": {
+     "hit": false,
+     "value": 0.0
+    },
+    "alternation_rate": {
+     "hit": true,
+     "value": 0.5295698924731183
+    },
+    "alternation_asymmetry": {
+     "hit": false,
+     "value": -0.015342727110121857
+    },
+    "post_overshoot_cooling": {
+     "hit": false,
+     "value": 0.0
+    },
+    "forbidden_count": {
+     "hit": false,
+     "value": 0
+    },
+    "buffer_rate": {
+     "hit": true,
+     "value": 0.0
+    },
+    "run_length_median": {
+     "hit": false,
+     "value": [
+      2.0,
+      2.0
+     ]
+    }
+   },
+   "hit_count": 2,
+   "total_targets": 9
+  }
+ ]
+}

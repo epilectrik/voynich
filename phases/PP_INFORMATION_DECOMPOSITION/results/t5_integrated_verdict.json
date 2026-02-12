@@ -1,0 +1,32 @@
+{
+  "metadata": {
+    "phase": "PP_INFORMATION_DECOMPOSITION",
+    "test": "T5_INTEGRATED_VERDICT"
+  },
+  "dimension_scores": {
+    "information_decomposition": {
+      "score": 1.0,
+      "evidence": "3/4 targets significant, avg PREFIX dominance=8.0%, POSITION dominance=51.3%",
+      "verdict": "MIDDLE_IS_PRIMARY_OPERATOR"
+    },
+    "positional_grammar": {
+      "score": 1.0,
+      "evidence": "KW eta\u00b2=0.0318, R\u00b2(PREFIX)=0.0692, R\u00b2(MIDDLE)=0.0624, R\u00b2(PP)=0.1684, Interaction=0.0505",
+      "verdict": "PREFIX_POSITIONAL_GRAMMAR_CONFIRMED"
+    },
+    "sequential_grammar": {
+      "score": 0.33,
+      "evidence": "Cram\u00e9r's V=0.0604, forbidden=19, enriched=35, PREFIX MI=0.1239, MIDDLE MI=1.1947, ratio=0.104",
+      "verdict": "PREFIX_SEQUENTIAL_GRAMMAR_PARTIAL"
+    },
+    "positional_stability": {
+      "score": 0.75,
+      "evidence": "Regime-stable: 8/24 (33.3%), Folio-consistent: 7/10",
+      "verdict": "POSITIONAL_GRAMMAR_MOSTLY_STABLE"
+    }
+  },
+  "total_score": 3.08,
+  "high_dimensions": 3,
+  "verdict": "DUAL_ENCODING",
+  "verdict_detail": "PREFIX encodes both positional grammar and content: strong positional profiles (T2), stable across regimes (T4), with unique information on multiple targets (T1). Score: 3.08/4.0."
+}
