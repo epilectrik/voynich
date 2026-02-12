@@ -4,6 +4,25 @@ This project uses a **progressive context system**.
 
 ---
 
+## Git Remotes
+
+This project pushes to two remotes:
+
+| Remote | URL | Branch |
+|--------|-----|--------|
+| `origin` | `https://gitea.opentesla.org/epilectrik/voynich.git` | `master` |
+| `github` | `https://github.com/epilectrik/voynich.git` | `main` |
+
+**Push workflow:** Always push to both. Gitea uses `master`, GitHub uses `main`.
+
+```bash
+git push origin master && git push github master:main
+```
+
+> **Note:** GitHub also has a stale `master` branch from an early accidental push. Do not update it — it preserves original timestamps. All new work goes to `main`.
+
+---
+
 ## START HERE
 
 **Primary Entry Point:** [context/CLAUDE_INDEX.md](context/CLAUDE_INDEX.md)
