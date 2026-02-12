@@ -35,7 +35,7 @@ This is the only file that should be read automatically. All other files are loa
 | `ARCHITECTURE/` | Currier A, B, AZC structural analysis | When working on specific text type |
 | `STRUCTURAL_CONTRACTS/` | API layer: CASC, AZC-ACT, AZC-B-ACT, BCSC | **First stop for structural validation** |
 | `OPERATIONS/` | OPS doctrine, program taxonomy | When analyzing program behavior |
-| `CLAIMS/` | All 353 constraints, indexed and grouped | When citing or checking constraints |
+| `CLAIMS/` | All 869 constraints, indexed and grouped | When citing or checking constraints |
 | `TERMINOLOGY/` | Definitions of key terms | When confused about vocabulary |
 | `METRICS/` | Quantitative facts and thresholds | When checking numbers |
 | `SPECULATIVE/` | Tier 3-4 interpretive content | Only when explicitly relevant |
@@ -75,5 +75,7 @@ When a new phase produces findings:
 ## Version
 
 - **System Version:** 1.0
-- **Project Version:** 2.38 FROZEN STATE
+- **Project Version:** 3.50 FROZEN STATE
+- **Constraints:** 869 validated
+- **Phases:** 324 completed
 - **Created:** 2026-01-08
