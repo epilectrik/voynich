@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 850 validated constraints | **Version:** 3.50 | **Date:** 2026-02-12
+**Total:** 869 validated constraints | **Version:** 3.50 | **Date:** 2026-02-12
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
