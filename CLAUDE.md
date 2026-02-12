@@ -14,6 +14,16 @@ This project uses a **progressive context system**.
 
 > **All agents writing Python scripts MUST follow these rules.**
 
+### Script Placement Rule
+
+| Directory | What goes here |
+|-----------|----------------|
+| `scripts/` | **Permanent reusable tools only** — libraries, renderers, annotation tools, dictionary builders |
+| `phases/PHASE_NAME/scripts/` | Phase-specific analysis scripts (one-off, tied to a research question) |
+| `archive/scripts/` | Retired or obsolete scripts |
+
+**Never put throwaway, test, or phase-specific scripts in `scripts/`.** If a script answers a specific research question or runs once to produce a result, it belongs in its phase directory.
+
 ### 0. USE THE CANONICAL LIBRARY (PREFERRED)
 
 **Before writing custom data loading code, use `scripts/voynich.py`:**
