@@ -358,6 +358,167 @@
     "nongk_mean_pagerank": 0.03454140320239066,
     "pagerank_mannwhitney_p": 0.18313006515175595
   },
+  "T10_subrole_micro_exit": {
+    "sr_transition_matrix": {
+      "HAZARD_SOURCE": {
+        "HAZARD_SOURCE": 259,
+        "HAZARD_TARGET": 148,
+        "SAFETY_BUFFER": 246,
+        "PURE_CONNECTOR": 168
+      },
+      "HAZARD_TARGET": {
+        "HAZARD_SOURCE": 136,
+        "HAZARD_TARGET": 106,
+        "SAFETY_BUFFER": 121,
+        "PURE_CONNECTOR": 130
+      },
+      "SAFETY_BUFFER": {
+        "HAZARD_SOURCE": 253,
+        "HAZARD_TARGET": 151,
+        "SAFETY_BUFFER": 257,
+        "PURE_CONNECTOR": 156
+      },
+      "PURE_CONNECTOR": {
+        "HAZARD_SOURCE": 154,
+        "HAZARD_TARGET": 127,
+        "SAFETY_BUFFER": 202,
+        "PURE_CONNECTOR": 130
+      }
+    },
+    "sr_transition_probs": {
+      "HAZARD_SOURCE": {
+        "HAZARD_SOURCE": 0.315468940316687,
+        "HAZARD_TARGET": 0.18026796589524968,
+        "SAFETY_BUFFER": 0.29963459196102316,
+        "PURE_CONNECTOR": 0.2046285018270402
+      },
+      "HAZARD_TARGET": {
+        "HAZARD_SOURCE": 0.27586206896551724,
+        "HAZARD_TARGET": 0.2150101419878296,
+        "SAFETY_BUFFER": 0.24543610547667344,
+        "PURE_CONNECTOR": 0.26369168356997974
+      },
+      "SAFETY_BUFFER": {
+        "HAZARD_SOURCE": 0.30966952264381886,
+        "HAZARD_TARGET": 0.18482252141982863,
+        "SAFETY_BUFFER": 0.31456548347613217,
+        "PURE_CONNECTOR": 0.1909424724602203
+      },
+      "PURE_CONNECTOR": {
+        "HAZARD_SOURCE": 0.25122349102773245,
+        "HAZARD_TARGET": 0.20717781402936378,
+        "SAFETY_BUFFER": 0.3295269168026101,
+        "PURE_CONNECTOR": 0.21207177814029363
+      }
+    },
+    "pre_gk_subrole_distribution": {
+      "HAZARD_SOURCE": 40,
+      "HAZARD_TARGET": 27,
+      "SAFETY_BUFFER": 42,
+      "PURE_CONNECTOR": 35
+    },
+    "pre_nongk_subrole_distribution": {
+      "HAZARD_SOURCE": 422,
+      "HAZARD_TARGET": 301,
+      "SAFETY_BUFFER": 461,
+      "PURE_CONNECTOR": 337
+    },
+    "pre_gk_chi2": 0.4009715430456948,
+    "pre_gk_p": 0.9400417237225596,
+    "pre_gk_different": false,
+    "top_exit_bigrams": [
+      {
+        "motif": "HAZARD_SOURCE->HAZARD_SOURCE",
+        "count": 107,
+        "exit_frac": 0.09700815956482321
+      },
+      {
+        "motif": "SAFETY_BUFFER->SAFETY_BUFFER",
+        "count": 101,
+        "exit_frac": 0.09156844968268359
+      },
+      {
+        "motif": "SAFETY_BUFFER->HAZARD_SOURCE",
+        "count": 90,
+        "exit_frac": 0.0815956482320943
+      },
+      {
+        "motif": "HAZARD_SOURCE->SAFETY_BUFFER",
+        "count": 85,
+        "exit_frac": 0.0770625566636446
+      },
+      {
+        "motif": "PURE_CONNECTOR->SAFETY_BUFFER",
+        "count": 82,
+        "exit_frac": 0.0743427017225748
+      },
+      {
+        "motif": "SAFETY_BUFFER->HAZARD_TARGET",
+        "count": 69,
+        "exit_frac": 0.06255666364460562
+      },
+      {
+        "motif": "HAZARD_TARGET->PURE_CONNECTOR",
+        "count": 67,
+        "exit_frac": 0.06074342701722575
+      },
+      {
+        "motif": "HAZARD_SOURCE->PURE_CONNECTOR",
+        "count": 63,
+        "exit_frac": 0.057116953762466005
+      },
+      {
+        "motif": "SAFETY_BUFFER->PURE_CONNECTOR",
+        "count": 63,
+        "exit_frac": 0.057116953762466005
+      },
+      {
+        "motif": "PURE_CONNECTOR->HAZARD_TARGET",
+        "count": 63,
+        "exit_frac": 0.057116953762466005
+      }
+    ],
+    "exit_bigram_entropy": 3.9515681870635184,
+    "baseline_bigram_entropy": 3.936844472812883,
+    "exit_more_constrained": false
+  },
+  "T11_regime_curvature_slope": {
+    "per_regime": {
+      "REGIME_2": {
+        "slope": -0.03207547169811321,
+        "intercept": 0.2509433962264151,
+        "r_squared": 0.5838383838383838,
+        "p_value": 0.2359068225416588,
+        "n_runs": 53
+      },
+      "REGIME_1": {
+        "slope": -0.02141756548536209,
+        "intercept": 0.1295839753466872,
+        "r_squared": 0.8543444616405041,
+        "p_value": 0.07569244207325442,
+        "n_runs": 649
+      },
+      "REGIME_4": {
+        "slope": 0.023333333333333327,
+        "intercept": 0.09833333333333334,
+        "r_squared": 0.3769230769230768,
+        "p_value": 0.38605938648507965,
+        "n_runs": 60
+      },
+      "REGIME_3": {
+        "slope": -0.016929133858267716,
+        "intercept": 0.1858267716535433,
+        "r_squared": 0.7293885601577906,
+        "p_value": 0.145957518528621,
+        "n_runs": 254
+      }
+    },
+    "regime_cei_vs_slope_rho": 0.7999999999999999,
+    "regime_cei_vs_slope_p": 0.20000000000000007,
+    "slope_modulated": false,
+    "global_slope": -0.018208661417322837,
+    "global_slope_p": 0.05660119767881967
+  },
   "findings": [
     "Entry and exit boundaries have DIFFERENT class composition (directional gating)",
     "Gatekeeper classes route similarly (no target-state specialization)",
@@ -368,6 +529,9 @@
     "Gatekeepers have lower transition entropy (routing switches)",
     "No significant depth gradient toward AXM exit",
     "Hazard-target density INCREASES toward exit (rho=-0.055, p=0.0001)",
-    "Gatekeepers do not have higher betweenness centrality"
+    "Gatekeepers do not have higher betweenness centrality",
+    "Pre-gatekeeper sub-role distribution same as pre-non-gatekeeper",
+    "Exit bigram motifs are not more constrained than baseline",
+    "Hazard-target curvature slope does NOT vary with REGIME intensity"
   ]
 }

@@ -1955,6 +1955,8 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - T7: Lower gatekeeper entropy (4.12 vs 4.56 bits, p=0.016) - routing switches
 - T8: Hazard-target compositional curvature toward exit (rho=-0.055, p=0.0001); no depth gradient
 - T9: Gatekeepers are NOT structural bridges (betweenness p=0.514)
+- T10: No constrained sub-role exit motif (pre-GK p=0.940, exit entropy matches baseline)
+- T11: REGIME does NOT modulate curvature slope (rho=+0.800, p=0.200) - shape-invariant
 
 ---
 
