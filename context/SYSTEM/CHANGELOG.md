@@ -4,6 +4,30 @@
 
 ---
 
+## Version 3.54 (2026-02-12) - Macro-Automaton Necessity
+
+### Summary
+
+6-test phase proving the 6-state macro-automaton (C976) is the minimal invariant-preserving partition. k-sweep from 3 to 12 with constraint retention scoring, emission-aware AIC/BIC, five alternative 7-state partitions, and independent spectral clustering. k<6 breaks role integrity and depletion separation (k=5: 2 violations, k=4: 5, k=3: 9). AIC minimum at k=6 (~110 point advantage). k>6 preserves constraints but adds no structural benefit — depletion gap persists at z=7-9 at all k, confirmed as 49-class phenomenon. Independent spectral clustering finds structurally different partitions (ARI=0.059). Verdict: STRUCTURALLY_FORCED. 1 new constraint (C1010), 875 total. Phase 328.
+
+### New Constraints
+
+| # | Name | Tier | Key Evidence |
+|---|------|------|-------------|
+| C1010 | 6-State Minimal Invariant-Preserving Partition | 2 | k<6 breaks invariants (2-9 violations); AIC min at k=6; k>6 no structural gain; depletion z=7-9 at all k; spectral ARI=0.059 |
+
+### Key Findings
+
+**MACRO_AUTOMATON_NECESSITY (6 tests):**
+- T1: Constraint retention 1.0 at k>=6; degrades to 0.263 at k=3; fidelity flat at 0.80 all k
+- T2: AIC minimum k=6 (91299); BIC minimum k=3; LL jump of 70 at k=6
+- T3: k=5 first breaks FQ role integrity + depletion (9,33); k=4 adds CC mixing; k=3 has 9 violations
+- T4: Five 7-state alternatives (spectral, gatekeeper, affordance, entropy-max, JSD-greedy) — none close depletion gap
+- T5: Spectral clustering ARI=0.059 vs agglomerative; role purity 0.0-0.5; structurally poor partitions
+- T6: Verdict STRUCTURALLY_FORCED — 6 is minimal, AIC-optimal, upward refinement decorative
+
+---
+
 ## Version 3.53 (2026-02-12) - AXM Gatekeeper Investigation
 
 ### Summary

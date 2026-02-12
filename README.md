@@ -6,12 +6,12 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 
 ## Project Status
 
-**Analysis: CLOSED** | **Structural inspection: FROZEN** | **Version: 3.53**
+**Analysis: CLOSED** | **Structural inspection: FROZEN** | **Version: 3.54**
 
 | Metric | Value |
 |--------|-------|
-| Validated constraints | 874 |
-| Research phases completed | 327 |
+| Validated constraints | 875 |
+| Research phases completed | 328 |
 | Model fits tested | 56 |
 | Constraint tiers | 0 (frozen fact) through 4 (exploratory) |
 
@@ -53,7 +53,7 @@ Every Currier B token decomposes as: **[ARTICULATOR] + [PREFIX] + MIDDLE + [SUFF
 - **MIDDLE** encodes the core action (apply heat, check hazards, let settle...)
 - **SUFFIX** encodes control flow (checkpoint, iterate, thorough, close, transfer...)
 
-This compositional structure was derived statistically and independently confirmed by two external researchers reading the manuscript procedurally.
+This compositional structure was derived statistically from distributional analysis of the transcript.
 
 ## Brunschwig Connection
 
@@ -128,7 +128,7 @@ Renders any Currier B folio with morphological parse, structural roles, interpre
 
 ```
 voynich/
-  context/            # Constraint system (874 validated constraints)
+  context/            # Constraint system (875 validated constraints)
     CLAUDE_INDEX.md   # Start here for full documentation
     CLAIMS/           # Individual constraint files
     ARCHITECTURE/     # System architecture docs (A, B, AZC, cross-system)

@@ -1,0 +1,3114 @@
+{
+  "phase": "MACRO_AUTOMATON_NECESSITY",
+  "phase_number": 328,
+  "question": "Is k=6 the minimal invariant-preserving macro abstraction?",
+  "n_synthetic_per_k": 200,
+  "real_metrics": {
+    "zipf_slope": -1.1413,
+    "n_depleted": 19,
+    "asymmetry": 0.8421,
+    "cross_line_mi": 0.5212,
+    "n_active_classes": 48
+  },
+  "t1_ksweep": {
+    "3": {
+      "k": 3,
+      "partition": [
+        [
+          7,
+          30
+        ],
+        [
+          38,
+          40
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          10,
+          11,
+          12,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          39,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49
+        ]
+      ],
+      "spectral_gap": 0.947458,
+      "retention": {
+        "depleted_cross_state": 5,
+        "depleted_within_state": 14,
+        "depleted_cross_fraction": 0.2632,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 0.6667
+      },
+      "fidelity": 0.8,
+      "comparison": {
+        "zipf_slope": {
+          "real": -1.1413,
+          "syn_mean": -1.1437,
+          "syn_std": 0.0138,
+          "z_score": 0.18,
+          "match": true
+        },
+        "n_depleted": {
+          "real": 19.0,
+          "syn_mean": 3.22,
+          "syn_std": 1.8899,
+          "z_score": 8.35,
+          "match": false
+        },
+        "asymmetry": {
+          "real": 0.8421,
+          "syn_mean": 0.8203,
+          "syn_std": 0.2719,
+          "z_score": 0.08,
+          "match": true
+        },
+        "cross_line_mi": {
+          "real": 0.5212,
+          "syn_mean": 0.5029,
+          "syn_std": 0.0149,
+          "z_score": 1.23,
+          "match": true
+        },
+        "n_active_classes": {
+          "real": 48.0,
+          "syn_mean": 48.0,
+          "syn_std": 0.0,
+          "z_score": 0.0,
+          "match": true
+        }
+      },
+      "log_likelihood": -45652.52,
+      "aic": 91409.05,
+      "bic": 91799.85,
+      "params": 52,
+      "forced_merges": [
+        {
+          "merged": [
+            [
+              1,
+              2,
+              4,
+              6,
+              8,
+              15,
+              16,
+              17,
+              20,
+              21,
+              22,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              39,
+              41,
+              43,
+              44,
+              46,
+              47,
+              48,
+              49
+            ],
+            [
+              9,
+              13,
+              14,
+              23
+            ]
+          ],
+          "jsd": 0.12849,
+          "violations": [
+            "ROLE: FQ mixed with non-FQ",
+            "DEPLETION: (9,33) merged"
+          ],
+          "states_after": 5
+        },
+        {
+          "merged": [
+            [
+              3,
+              5,
+              18,
+              19,
+              42,
+              45
+            ],
+            [
+              1,
+              2,
+              4,
+              6,
+              8,
+              9,
+              13,
+              14,
+              15,
+              16,
+              17,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              39,
+              41,
+              43,
+              44,
+              46,
+              47,
+              48,
+              49
+            ]
+          ],
+          "jsd": 0.133113,
+          "violations": [
+            "ROLE: FQ mixed with non-FQ",
+            "DEPLETION: (13,5) merged",
+            "DEPLETION: (5,34) merged"
+          ],
+          "states_after": 4
+        },
+        {
+          "merged": [
+            [
+              10,
+              11,
+              12
+            ],
+            [
+              1,
+              2,
+              3,
+              4,
+              5,
+              6,
+              8,
+              9,
+              13,
+              14,
+              15,
+              16,
+              17,
+              18,
+              19,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              39,
+              41,
+              42,
+              43,
+              44,
+              45,
+              46,
+              47,
+              48,
+              49
+            ]
+          ],
+          "jsd": 0.210931,
+          "violations": [
+            "ROLE: CC mixed with non-CC",
+            "ROLE: FQ mixed with non-FQ",
+            "DEPLETION: (11,14) merged",
+            "DEPLETION: (11,36) merged"
+          ],
+          "states_after": 3
+        }
+      ]
+    },
+    "4": {
+      "k": 4,
+      "partition": [
+        [
+          7,
+          30
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          38,
+          40
+        ],
+        [
+          1,
+          2,
+          3,
+          4,
+          5,
+          6,
+          8,
+          9,
+          13,
+          14,
+          15,
+          16,
+          17,
+          18,
+          19,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          39,
+          41,
+          42,
+          43,
+          44,
+          45,
+          46,
+          47,
+          48,
+          49
+        ]
+      ],
+      "spectral_gap": 0.943263,
+      "retention": {
+        "depleted_cross_state": 9,
+        "depleted_within_state": 10,
+        "depleted_cross_fraction": 0.4737,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 0.75
+      },
+      "fidelity": 0.8,
+      "comparison": {
+        "zipf_slope": {
+          "real": -1.1413,
+          "syn_mean": -1.1418,
+          "syn_std": 0.0116,
+          "z_score": 0.04,
+          "match": true
+        },
+        "n_depleted": {
+          "real": 19.0,
+          "syn_mean": 3.28,
+          "syn_std": 1.6768,
+          "z_score": 9.38,
+          "match": false
+        },
+        "asymmetry": {
+          "real": 0.8421,
+          "syn_mean": 0.8521,
+          "syn_std": 0.2461,
+          "z_score": -0.04,
+          "match": true
+        },
+        "cross_line_mi": {
+          "real": 0.5212,
+          "syn_mean": 0.5067,
+          "syn_std": 0.0125,
+          "z_score": 1.16,
+          "match": true
+        },
+        "n_active_classes": {
+          "real": 48.0,
+          "syn_mean": 48.0,
+          "syn_std": 0.0,
+          "z_score": 0.0,
+          "match": true
+        }
+      },
+      "log_likelihood": -45647.87,
+      "aic": 91409.74,
+      "bic": 91838.11,
+      "params": 57,
+      "forced_merges": [
+        {
+          "merged": [
+            [
+              1,
+              2,
+              4,
+              6,
+              8,
+              15,
+              16,
+              17,
+              20,
+              21,
+              22,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              39,
+              41,
+              43,
+              44,
+              46,
+              47,
+              48,
+              49
+            ],
+            [
+              9,
+              13,
+              14,
+              23
+            ]
+          ],
+          "jsd": 0.12849,
+          "violations": [
+            "ROLE: FQ mixed with non-FQ",
+            "DEPLETION: (9,33) merged"
+          ],
+          "states_after": 5
+        },
+        {
+          "merged": [
+            [
+              3,
+              5,
+              18,
+              19,
+              42,
+              45
+            ],
+            [
+              1,
+              2,
+              4,
+              6,
+              8,
+              9,
+              13,
+              14,
+              15,
+              16,
+              17,
+              20,
+              21,
+              22,
+              23,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              39,
+              41,
+              43,
+              44,
+              46,
+              47,
+              48,
+              49
+            ]
+          ],
+          "jsd": 0.133113,
+          "violations": [
+            "ROLE: FQ mixed with non-FQ",
+            "DEPLETION: (13,5) merged",
+            "DEPLETION: (5,34) merged"
+          ],
+          "states_after": 4
+        }
+      ]
+    },
+    "5": {
+      "k": 5,
+      "partition": [
+        [
+          3,
+          5,
+          18,
+          19,
+          42,
+          45
+        ],
+        [
+          7,
+          30
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          38,
+          40
+        ],
+        [
+          1,
+          2,
+          4,
+          6,
+          8,
+          9,
+          13,
+          14,
+          15,
+          16,
+          17,
+          20,
+          21,
+          22,
+          23,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          39,
+          41,
+          43,
+          44,
+          46,
+          47,
+          48,
+          49
+        ]
+      ],
+      "spectral_gap": 0.943258,
+      "retention": {
+        "depleted_cross_state": 15,
+        "depleted_within_state": 4,
+        "depleted_cross_fraction": 0.7895,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 0.8
+      },
+      "fidelity": 0.8,
+      "comparison": {
+        "zipf_slope": {
+          "real": -1.1413,
+          "syn_mean": -1.1478,
+          "syn_std": 0.0127,
+          "z_score": 0.51,
+          "match": true
+        },
+        "n_depleted": {
+          "real": 19.0,
+          "syn_mean": 3.04,
+          "syn_std": 1.6995,
+          "z_score": 9.39,
+          "match": false
+        },
+        "asymmetry": {
+          "real": 0.8421,
+          "syn_mean": 0.836,
+          "syn_std": 0.2905,
+          "z_score": 0.02,
+          "match": true
+        },
+        "cross_line_mi": {
+          "real": 0.5212,
+          "syn_mean": 0.5044,
+          "syn_std": 0.0151,
+          "z_score": 1.11,
+          "match": true
+        },
+        "n_active_classes": {
+          "real": 48.0,
+          "syn_mean": 48.0,
+          "syn_std": 0.0,
+          "z_score": 0.0,
+          "match": true
+        }
+      },
+      "log_likelihood": -45646.45,
+      "aic": 91420.91,
+      "bic": 91901.89,
+      "params": 64,
+      "forced_merges": [
+        {
+          "merged": [
+            [
+              1,
+              2,
+              4,
+              6,
+              8,
+              15,
+              16,
+              17,
+              20,
+              21,
+              22,
+              24,
+              25,
+              26,
+              27,
+              28,
+              29,
+              31,
+              32,
+              33,
+              34,
+              35,
+              36,
+              37,
+              39,
+              41,
+              43,
+              44,
+              46,
+              47,
+              48,
+              49
+            ],
+            [
+              9,
+              13,
+              14,
+              23
+            ]
+          ],
+          "jsd": 0.12849,
+          "violations": [
+            "ROLE: FQ mixed with non-FQ",
+            "DEPLETION: (9,33) merged"
+          ],
+          "states_after": 5
+        }
+      ]
+    },
+    "6": {
+      "k": 6,
+      "partition": [
+        [
+          1,
+          2,
+          4,
+          6,
+          8,
+          15,
+          16,
+          17,
+          20,
+          21,
+          22,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          39,
+          41,
+          43,
+          44,
+          46,
+          47,
+          48,
+          49
+        ],
+        [
+          3,
+          5,
+          18,
+          19,
+          42,
+          45
+        ],
+        [
+          7,
+          30
+        ],
+        [
+          9,
+          13,
+          14,
+          23
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          38,
+          40
+        ]
+      ],
+      "spectral_gap": 0.893811,
+      "retention": {
+        "depleted_cross_state": 19,
+        "depleted_within_state": 0,
+        "depleted_cross_fraction": 1.0,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 1.0
+      },
+      "fidelity": 0.8,
+      "comparison": {
+        "zipf_slope": {
+          "real": -1.1413,
+          "syn_mean": -1.1521,
+          "syn_std": 0.0121,
+          "z_score": 0.9,
+          "match": true
+        },
+        "n_depleted": {
+          "real": 19.0,
+          "syn_mean": 3.665,
+          "syn_std": 1.8742,
+          "z_score": 8.18,
+          "match": false
+        },
+        "asymmetry": {
+          "real": 0.8421,
+          "syn_mean": 0.8488,
+          "syn_std": 0.2374,
+          "z_score": -0.03,
+          "match": true
+        },
+        "cross_line_mi": {
+          "real": 0.5212,
+          "syn_mean": 0.5029,
+          "syn_std": 0.0141,
+          "z_score": 1.3,
+          "match": true
+        },
+        "n_active_classes": {
+          "real": 48.0,
+          "syn_mean": 48.0,
+          "syn_std": 0.0,
+          "z_score": 0.0,
+          "match": true
+        }
+      },
+      "log_likelihood": -45576.25,
+      "aic": 91298.5,
+      "bic": 91847.11,
+      "params": 73
+    },
+    "7": {
+      "k": 7,
+      "partition": [
+        [
+          1,
+          2,
+          4,
+          6,
+          8,
+          15,
+          16,
+          17,
+          20,
+          21,
+          22,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          39,
+          41,
+          43,
+          44,
+          46,
+          47,
+          48,
+          49
+        ],
+        [
+          3,
+          5,
+          18,
+          19,
+          42,
+          45
+        ],
+        [
+          7,
+          30
+        ],
+        [
+          9,
+          13,
+          14,
+          23
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          38
+        ],
+        [
+          40
+        ]
+      ],
+      "spectral_gap": 0.89364,
+      "retention": {
+        "depleted_cross_state": 19,
+        "depleted_within_state": 0,
+        "depleted_cross_fraction": 1.0,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 1.0
+      },
+      "fidelity": 0.8,
+      "comparison": {
+        "zipf_slope": {
+          "real": -1.1413,
+          "syn_mean": -1.1505,
+          "syn_std": 0.0127,
+          "z_score": 0.72,
+          "match": true
+        },
+        "n_depleted": {
+          "real": 19.0,
+          "syn_mean": 3.95,
+          "syn_std": 1.7769,
+          "z_score": 8.47,
+          "match": false
+        },
+        "asymmetry": {
+          "real": 0.8421,
+          "syn_mean": 0.8488,
+          "syn_std": 0.2203,
+          "z_score": -0.03,
+          "match": true
+        },
+        "cross_line_mi": {
+          "real": 0.5212,
+          "syn_mean": 0.5043,
+          "syn_std": 0.0145,
+          "z_score": 1.17,
+          "match": true
+        },
+        "n_active_classes": {
+          "real": 48.0,
+          "syn_mean": 48.0,
+          "syn_std": 0.0,
+          "z_score": 0.0,
+          "match": true
+        }
+      },
+      "log_likelihood": -45571.85,
+      "aic": 91311.71,
+      "bic": 91942.99,
+      "params": 84
+    },
+    "8": {
+      "k": 8,
+      "partition": [
+        [
+          1,
+          2,
+          4,
+          6,
+          8,
+          15,
+          16,
+          17,
+          20,
+          21,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          39,
+          41,
+          43,
+          44,
+          46,
+          47,
+          48,
+          49
+        ],
+        [
+          3,
+          5,
+          18,
+          19,
+          42,
+          45
+        ],
+        [
+          7,
+          30
+        ],
+        [
+          9,
+          13,
+          14,
+          23
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          22
+        ],
+        [
+          38
+        ],
+        [
+          40
+        ]
+      ],
+      "spectral_gap": 0.894622,
+      "retention": {
+        "depleted_cross_state": 19,
+        "depleted_within_state": 0,
+        "depleted_cross_fraction": 1.0,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 1.0
+      },
+      "fidelity": 0.8,
+      "comparison": {
+        "zipf_slope": {
+          "real": -1.1413,
+          "syn_mean": -1.1493,
+          "syn_std": 0.0137,
+          "z_score": 0.59,
+          "match": true
+        },
+        "n_depleted": {
+          "real": 19.0,
+          "syn_mean": 4.235,
+          "syn_std": 2.1071,
+          "z_score": 7.01,
+          "match": false
+        },
+        "asymmetry": {
+          "real": 0.8421,
+          "syn_mean": 0.8418,
+          "syn_std": 0.2201,
+          "z_score": 0.0,
+          "match": true
+        },
+        "cross_line_mi": {
+          "real": 0.5212,
+          "syn_mean": 0.5031,
+          "syn_std": 0.0145,
+          "z_score": 1.25,
+          "match": true
+        },
+        "n_active_classes": {
+          "real": 48.0,
+          "syn_mean": 48.0,
+          "syn_std": 0.0,
+          "z_score": 0.0,
+          "match": true
+        }
+      },
+      "log_likelihood": -45567.84,
+      "aic": 91329.69,
+      "bic": 92058.67,
+      "params": 97
+    },
+    "9": {
+      "k": 9,
+      "partition": [
+        [
+          1,
+          2,
+          4,
+          6,
+          8,
+          15,
+          16,
+          17,
+          20,
+          21,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          39,
+          41,
+          43,
+          44,
+          46,
+          47,
+          48,
+          49
+        ],
+        [
+          3
+        ],
+        [
+          5,
+          18,
+          19,
+          42,
+          45
+        ],
+        [
+          7,
+          30
+        ],
+        [
+          9,
+          13,
+          14,
+          23
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          22
+        ],
+        [
+          38
+        ],
+        [
+          40
+        ]
+      ],
+      "spectral_gap": 0.894568,
+      "retention": {
+        "depleted_cross_state": 19,
+        "depleted_within_state": 0,
+        "depleted_cross_fraction": 1.0,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 1.0
+      },
+      "fidelity": 0.8,
+      "comparison": {
+        "zipf_slope": {
+          "real": -1.1413,
+          "syn_mean": -1.1495,
+          "syn_std": 0.0122,
+          "z_score": 0.67,
+          "match": true
+        },
+        "n_depleted": {
+          "real": 19.0,
+          "syn_mean": 4.005,
+          "syn_std": 2.0724,
+          "z_score": 7.24,
+          "match": false
+        },
+        "asymmetry": {
+          "real": 0.8421,
+          "syn_mean": 0.8286,
+          "syn_std": 0.2564,
+          "z_score": 0.05,
+          "match": true
+        },
+        "cross_line_mi": {
+          "real": 0.5212,
+          "syn_mean": 0.5047,
+          "syn_std": 0.0144,
+          "z_score": 1.15,
+          "match": true
+        },
+        "n_active_classes": {
+          "real": 48.0,
+          "syn_mean": 48.0,
+          "syn_std": 0.0,
+          "z_score": 0.0,
+          "match": true
+        }
+      },
+      "log_likelihood": -45565.99,
+      "aic": 91355.97,
+      "bic": 92197.69,
+      "params": 112
+    },
+    "10": {
+      "k": 10,
+      "partition": [
+        [
+          1,
+          2,
+          4,
+          6,
+          8,
+          16,
+          17,
+          20,
+          21,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          39,
+          41,
+          43,
+          44,
+          46,
+          47,
+          48,
+          49
+        ],
+        [
+          3
+        ],
+        [
+          5,
+          18,
+          19,
+          42,
+          45
+        ],
+        [
+          7,
+          30
+        ],
+        [
+          9,
+          13,
+          14,
+          23
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          15
+        ],
+        [
+          22
+        ],
+        [
+          38
+        ],
+        [
+          40
+        ]
+      ],
+      "spectral_gap": 0.894647,
+      "retention": {
+        "depleted_cross_state": 19,
+        "depleted_within_state": 0,
+        "depleted_cross_fraction": 1.0,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 1.0
+      },
+      "fidelity": 0.8,
+      "comparison": {
+        "zipf_slope": {
+          "real": -1.1413,
+          "syn_mean": -1.1479,
+          "syn_std": 0.0136,
+          "z_score": 0.49,
+          "match": true
+        },
+        "n_depleted": {
+          "real": 19.0,
+          "syn_mean": 4.05,
+          "syn_std": 1.8351,
+          "z_score": 8.15,
+          "match": false
+        },
+        "asymmetry": {
+          "real": 0.8421,
+          "syn_mean": 0.8778,
+          "syn_std": 0.1955,
+          "z_score": -0.18,
+          "match": true
+        },
+        "cross_line_mi": {
+          "real": 0.5212,
+          "syn_mean": 0.5032,
+          "syn_std": 0.0139,
+          "z_score": 1.29,
+          "match": true
+        },
+        "n_active_classes": {
+          "real": 48.0,
+          "syn_mean": 48.0,
+          "syn_std": 0.0,
+          "z_score": 0.0,
+          "match": true
+        }
+      },
+      "log_likelihood": -45557.76,
+      "aic": 91373.53,
+      "bic": 92343.0,
+      "params": 129
+    },
+    "11": {
+      "k": 11,
+      "partition": [
+        [
+          1,
+          2,
+          4,
+          6,
+          8,
+          16,
+          17,
+          20,
+          21,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          39,
+          41,
+          43,
+          44,
+          46,
+          47,
+          48,
+          49
+        ],
+        [
+          3
+        ],
+        [
+          5,
+          18,
+          19,
+          45
+        ],
+        [
+          7,
+          30
+        ],
+        [
+          9,
+          13,
+          14,
+          23
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          15
+        ],
+        [
+          22
+        ],
+        [
+          38
+        ],
+        [
+          40
+        ],
+        [
+          42
+        ]
+      ],
+      "spectral_gap": 0.894237,
+      "retention": {
+        "depleted_cross_state": 19,
+        "depleted_within_state": 0,
+        "depleted_cross_fraction": 1.0,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 1.0
+      },
+      "fidelity": 0.8,
+      "comparison": {
+        "zipf_slope": {
+          "real": -1.1413,
+          "syn_mean": -1.1453,
+          "syn_std": 0.0136,
+          "z_score": 0.29,
+          "match": true
+        },
+        "n_depleted": {
+          "real": 19.0,
+          "syn_mean": 3.985,
+          "syn_std": 1.8934,
+          "z_score": 7.93,
+          "match": false
+        },
+        "asymmetry": {
+          "real": 0.8421,
+          "syn_mean": 0.8355,
+          "syn_std": 0.2384,
+          "z_score": 0.03,
+          "match": true
+        },
+        "cross_line_mi": {
+          "real": 0.5212,
+          "syn_mean": 0.5036,
+          "syn_std": 0.015,
+          "z_score": 1.18,
+          "match": true
+        },
+        "n_active_classes": {
+          "real": 48.0,
+          "syn_mean": 48.0,
+          "syn_std": 0.0,
+          "z_score": 0.0,
+          "match": true
+        }
+      },
+      "log_likelihood": -45543.65,
+      "aic": 91383.3,
+      "bic": 92495.57,
+      "params": 148
+    },
+    "12": {
+      "k": 12,
+      "partition": [
+        [
+          1,
+          4,
+          6,
+          8,
+          16,
+          17,
+          20,
+          21,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          39,
+          41,
+          43,
+          44,
+          46,
+          47,
+          48,
+          49
+        ],
+        [
+          2
+        ],
+        [
+          3
+        ],
+        [
+          5,
+          18,
+          19,
+          45
+        ],
+        [
+          7,
+          30
+        ],
+        [
+          9,
+          13,
+          14,
+          23
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          15
+        ],
+        [
+          22
+        ],
+        [
+          38
+        ],
+        [
+          40
+        ],
+        [
+          42
+        ]
+      ],
+      "spectral_gap": 0.889136,
+      "retention": {
+        "depleted_cross_state": 19,
+        "depleted_within_state": 0,
+        "depleted_cross_fraction": 1.0,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 1.0
+      },
+      "fidelity": 0.8,
+      "comparison": {
+        "zipf_slope": {
+          "real": -1.1413,
+          "syn_mean": -1.1441,
+          "syn_std": 0.0131,
+          "z_score": 0.21,
+          "match": true
+        },
+        "n_depleted": {
+          "real": 19.0,
+          "syn_mean": 3.985,
+          "syn_std": 2.1272,
+          "z_score": 7.06,
+          "match": false
+        },
+        "asymmetry": {
+          "real": 0.8421,
+          "syn_mean": 0.8257,
+          "syn_std": 0.2566,
+          "z_score": 0.06,
+          "match": true
+        },
+        "cross_line_mi": {
+          "real": 0.5212,
+          "syn_mean": 0.5062,
+          "syn_std": 0.014,
+          "z_score": 1.07,
+          "match": true
+        },
+        "n_active_classes": {
+          "real": 48.0,
+          "syn_mean": 48.0,
+          "syn_std": 0.0,
+          "z_score": 0.0,
+          "match": true
+        }
+      },
+      "log_likelihood": -45527.98,
+      "aic": 91393.97,
+      "bic": 92664.06,
+      "params": 169
+    }
+  },
+  "t2_information_criteria": {
+    "aic_values": {
+      "3": 91409.05,
+      "4": 91409.74,
+      "5": 91420.91,
+      "6": 91298.5,
+      "7": 91311.71,
+      "8": 91329.69,
+      "9": 91355.97,
+      "10": 91373.53,
+      "11": 91383.3,
+      "12": 91393.97
+    },
+    "bic_values": {
+      "3": 91799.85,
+      "4": 91838.11,
+      "5": 91901.89,
+      "6": 91847.11,
+      "7": 91942.99,
+      "8": 92058.67,
+      "9": 92197.69,
+      "10": 92343.0,
+      "11": 92495.57,
+      "12": 92664.06
+    },
+    "aic_minimum_k": 6,
+    "bic_minimum_k": 3,
+    "aic_6_7_pct_diff": 0.01,
+    "caution": "Models are induced by hard merges; interpret directionally"
+  },
+  "t3_constraint_violations": {
+    "5": {
+      "total_violations": 2,
+      "role_violations": 1,
+      "depletion_violations": 1,
+      "all_violations": [
+        "ROLE: FQ mixed with non-FQ",
+        "DEPLETION: (9,33) merged"
+      ],
+      "first_merge_violations": [
+        "ROLE: FQ mixed with non-FQ",
+        "DEPLETION: (9,33) merged"
+      ],
+      "retention": {
+        "depleted_cross_state": 15,
+        "depleted_within_state": 4,
+        "depleted_cross_fraction": 0.7895,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 0.8
+      }
+    },
+    "4": {
+      "total_violations": 5,
+      "role_violations": 2,
+      "depletion_violations": 3,
+      "all_violations": [
+        "ROLE: FQ mixed with non-FQ",
+        "DEPLETION: (9,33) merged",
+        "ROLE: FQ mixed with non-FQ",
+        "DEPLETION: (13,5) merged",
+        "DEPLETION: (5,34) merged"
+      ],
+      "first_merge_violations": [
+        "ROLE: FQ mixed with non-FQ",
+        "DEPLETION: (9,33) merged"
+      ],
+      "retention": {
+        "depleted_cross_state": 9,
+        "depleted_within_state": 10,
+        "depleted_cross_fraction": 0.4737,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 0.75
+      }
+    },
+    "3": {
+      "total_violations": 9,
+      "role_violations": 4,
+      "depletion_violations": 5,
+      "all_violations": [
+        "ROLE: FQ mixed with non-FQ",
+        "DEPLETION: (9,33) merged",
+        "ROLE: FQ mixed with non-FQ",
+        "DEPLETION: (13,5) merged",
+        "DEPLETION: (5,34) merged",
+        "ROLE: CC mixed with non-CC",
+        "ROLE: FQ mixed with non-FQ",
+        "DEPLETION: (11,14) merged",
+        "DEPLETION: (11,36) merged"
+      ],
+      "first_merge_violations": [
+        "ROLE: FQ mixed with non-FQ",
+        "DEPLETION: (9,33) merged"
+      ],
+      "retention": {
+        "depleted_cross_state": 5,
+        "depleted_within_state": 14,
+        "depleted_cross_fraction": 0.2632,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 0.6667
+      }
+    }
+  },
+  "t4_upward_splits": {
+    "jsd_greedy": {
+      "k": 7,
+      "partition": [
+        [
+          1,
+          2,
+          4,
+          6,
+          8,
+          15,
+          16,
+          17,
+          20,
+          21,
+          22,
+          24,
+          25,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          39,
+          41,
+          43,
+          44,
+          46,
+          47,
+          48,
+          49
+        ],
+        [
+          3,
+          5,
+          18,
+          19,
+          42,
+          45
+        ],
+        [
+          7,
+          30
+        ],
+        [
+          9,
+          13,
+          14,
+          23
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          38
+        ],
+        [
+          40
+        ]
+      ],
+      "spectral_gap": 0.89364,
+      "retention": {
+        "depleted_cross_state": 19,
+        "depleted_within_state": 0,
+        "depleted_cross_fraction": 1.0,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 1.0
+      },
+      "fidelity": 0.8,
+      "comparison": {
+        "zipf_slope": {
+          "real": -1.1413,
+          "syn_mean": -1.152,
+          "syn_std": 0.0127,
+          "z_score": 0.85,
+          "match": true
+        },
+        "n_depleted": {
+          "real": 19.0,
+          "syn_mean": 3.99,
+          "syn_std": 2.0347,
+          "z_score": 7.38,
+          "match": false
+        },
+        "asymmetry": {
+          "real": 0.8421,
+          "syn_mean": 0.8421,
+          "syn_std": 0.2478,
+          "z_score": -0.0,
+          "match": true
+        },
+        "cross_line_mi": {
+          "real": 0.5212,
+          "syn_mean": 0.5031,
+          "syn_std": 0.0141,
+          "z_score": 1.29,
+          "match": true
+        },
+        "n_active_classes": {
+          "real": 48.0,
+          "syn_mean": 48.0,
+          "syn_std": 0.0,
+          "z_score": 0.0,
+          "match": true
+        }
+      },
+      "log_likelihood": -45571.85,
+      "aic": 91311.71,
+      "bic": 91942.99
+    },
+    "axm_spectral": {
+      "k": 7,
+      "partition": [
+        [
+          3,
+          5,
+          18,
+          19,
+          42,
+          45
+        ],
+        [
+          7,
+          30
+        ],
+        [
+          9,
+          13,
+          14,
+          23
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          38,
+          40
+        ],
+        [
+          1,
+          4,
+          8,
+          17,
+          26,
+          29,
+          31,
+          33,
+          34,
+          36,
+          37,
+          43,
+          44,
+          46,
+          47,
+          48,
+          49
+        ],
+        [
+          2,
+          6,
+          15,
+          16,
+          20,
+          21,
+          22,
+          24,
+          25,
+          27,
+          28,
+          32,
+          35,
+          39,
+          41
+        ]
+      ],
+      "spectral_gap": 0.893335,
+      "retention": {
+        "depleted_cross_state": 19,
+        "depleted_within_state": 0,
+        "depleted_cross_fraction": 1.0,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 1.0
+      },
+      "fidelity": 0.8,
+      "comparison": {
+        "zipf_slope": {
+          "real": -1.1413,
+          "syn_mean": -1.1532,
+          "syn_std": 0.0134,
+          "z_score": 0.88,
+          "match": true
+        },
+        "n_depleted": {
+          "real": 19.0,
+          "syn_mean": 4.145,
+          "syn_std": 2.0528,
+          "z_score": 7.24,
+          "match": false
+        },
+        "asymmetry": {
+          "real": 0.8421,
+          "syn_mean": 0.882,
+          "syn_std": 0.2003,
+          "z_score": -0.2,
+          "match": true
+        },
+        "cross_line_mi": {
+          "real": 0.5212,
+          "syn_mean": 0.5029,
+          "syn_std": 0.0137,
+          "z_score": 1.33,
+          "match": true
+        },
+        "n_active_classes": {
+          "real": 48.0,
+          "syn_mean": 48.0,
+          "syn_std": 0.0,
+          "z_score": 0.0,
+          "match": true
+        }
+      },
+      "log_likelihood": -45551.47,
+      "aic": 91270.95,
+      "bic": 91902.23,
+      "split_sizes": [
+        17,
+        15
+      ]
+    },
+    "gatekeeper": {
+      "k": 7,
+      "partition": [
+        [
+          3,
+          5,
+          18,
+          19,
+          42,
+          45
+        ],
+        [
+          7,
+          30
+        ],
+        [
+          9,
+          13,
+          14,
+          23
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          38,
+          40
+        ],
+        [
+          15,
+          20,
+          21,
+          22,
+          25
+        ],
+        [
+          1,
+          2,
+          4,
+          6,
+          8,
+          16,
+          17,
+          24,
+          26,
+          27,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          37,
+          39,
+          41,
+          43,
+          44,
+          46,
+          47,
+          48,
+          49
+        ]
+      ],
+      "spectral_gap": 0.892191,
+      "retention": {
+        "depleted_cross_state": 19,
+        "depleted_within_state": 0,
+        "depleted_cross_fraction": 1.0,
+        "fl_separated": true,
+        "enax_violation": true,
+        "role_purity": 1.0
+      },
+      "fidelity": 0.8,
+      "comparison": {
+        "zipf_slope": {
+          "real": -1.1413,
+          "syn_mean": -1.1464,
+          "syn_std": 0.0135,
+          "z_score": 0.38,
+          "match": true
+        },
+        "n_depleted": {
+          "real": 19.0,
+          "syn_mean": 3.925,
+          "syn_std": 1.9898,
+          "z_score": 7.58,
+          "match": false
+        },
+        "asymmetry": {
+          "real": 0.8421,
+          "syn_mean": 0.8516,
+          "syn_std": 0.2314,
+          "z_score": -0.04,
+          "match": true
+        },
+        "cross_line_mi": {
+          "real": 0.5212,
+          "syn_mean": 0.5042,
+          "syn_std": 0.0137,
+          "z_score": 1.24,
+          "match": true
+        },
+        "n_active_classes": {
+          "real": 48.0,
+          "syn_mean": 48.0,
+          "syn_std": 0.0,
+          "z_score": 0.0,
+          "match": true
+        }
+      },
+      "log_likelihood": -45563.31,
+      "aic": 91294.61,
+      "bic": 91925.9,
+      "split_sizes": [
+        5,
+        27
+      ]
+    },
+    "affordance": {
+      "k": 7,
+      "partition": [
+        [
+          3,
+          5,
+          18,
+          19,
+          42,
+          45
+        ],
+        [
+          7,
+          30
+        ],
+        [
+          9,
+          13,
+          14,
+          23
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          38,
+          40
+        ],
+        [
+          1,
+          2,
+          4,
+          8,
+          16,
+          17,
+          26,
+          29,
+          33,
+          39,
+          43,
+          44,
+          46,
+          47,
+          48,
+          49
+        ],
+        [
+          6,
+          15,
+          20,
+          21,
+          22,
+          24,
+          25,
+          27,
+          28,
+          31,
+          32,
+          34,
+          35,
+          36,
+          37,
+          41
+        ]
+      ],
+      "spectral_gap": 0.88574,
+      "retention": {
+        "depleted_cross_state": 19,
+        "depleted_within_state": 0,
+        "depleted_cross_fraction": 1.0,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 1.0
+      },
+      "fidelity": 0.8,
+      "comparison": {
+        "zipf_slope": {
+          "real": -1.1413,
+          "syn_mean": -1.1525,
+          "syn_std": 0.0129,
+          "z_score": 0.87,
+          "match": true
+        },
+        "n_depleted": {
+          "real": 19.0,
+          "syn_mean": 4.095,
+          "syn_std": 1.999,
+          "z_score": 7.46,
+          "match": false
+        },
+        "asymmetry": {
+          "real": 0.8421,
+          "syn_mean": 0.8624,
+          "syn_std": 0.2124,
+          "z_score": -0.1,
+          "match": true
+        },
+        "cross_line_mi": {
+          "real": 0.5212,
+          "syn_mean": 0.5035,
+          "syn_std": 0.0157,
+          "z_score": 1.13,
+          "match": true
+        },
+        "n_active_classes": {
+          "real": 48.0,
+          "syn_mean": 48.0,
+          "syn_std": 0.0,
+          "z_score": 0.0,
+          "match": true
+        }
+      },
+      "log_likelihood": -45540.68,
+      "aic": 91249.36,
+      "bic": 91880.64,
+      "split_sizes": [
+        16,
+        16
+      ],
+      "median_stab_frac": 0.0976
+    },
+    "entropy_max": {
+      "k": 7,
+      "partition": [
+        [
+          3,
+          5,
+          18,
+          19,
+          42,
+          45
+        ],
+        [
+          7,
+          30
+        ],
+        [
+          9,
+          13,
+          14,
+          23
+        ],
+        [
+          10,
+          11,
+          12
+        ],
+        [
+          38,
+          40
+        ],
+        [
+          1,
+          2,
+          4,
+          15,
+          16,
+          20,
+          21,
+          22,
+          25,
+          27,
+          37,
+          41,
+          44,
+          46,
+          48,
+          49
+        ],
+        [
+          6,
+          8,
+          17,
+          24,
+          26,
+          28,
+          29,
+          31,
+          32,
+          33,
+          34,
+          35,
+          36,
+          39,
+          43,
+          47
+        ]
+      ],
+      "spectral_gap": 0.893546,
+      "retention": {
+        "depleted_cross_state": 19,
+        "depleted_within_state": 0,
+        "depleted_cross_fraction": 1.0,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 1.0
+      },
+      "fidelity": 0.8,
+      "comparison": {
+        "zipf_slope": {
+          "real": -1.1413,
+          "syn_mean": -1.1566,
+          "syn_std": 0.0132,
+          "z_score": 1.16,
+          "match": true
+        },
+        "n_depleted": {
+          "real": 19.0,
+          "syn_mean": 4.35,
+          "syn_std": 1.9691,
+          "z_score": 7.44,
+          "match": false
+        },
+        "asymmetry": {
+          "real": 0.8421,
+          "syn_mean": 0.865,
+          "syn_std": 0.2032,
+          "z_score": -0.11,
+          "match": true
+        },
+        "cross_line_mi": {
+          "real": 0.5212,
+          "syn_mean": 0.5031,
+          "syn_std": 0.0139,
+          "z_score": 1.3,
+          "match": true
+        },
+        "n_active_classes": {
+          "real": 48.0,
+          "syn_mean": 48.0,
+          "syn_std": 0.0,
+          "z_score": 0.0,
+          "match": true
+        }
+      },
+      "log_likelihood": -45557.09,
+      "aic": 91282.17,
+      "bic": 91913.46,
+      "split_sizes": [
+        16,
+        16
+      ]
+    }
+  },
+  "t5_spectral_clustering": {
+    "3": {
+      "k": 3,
+      "actual_states": 3,
+      "partition": [
+        [
+          3,
+          6,
+          7,
+          9,
+          10,
+          11,
+          12,
+          14,
+          15,
+          16,
+          20,
+          23,
+          24,
+          27,
+          28,
+          30,
+          32,
+          35,
+          36,
+          39
+        ],
+        [
+          1,
+          2,
+          19,
+          21,
+          22,
+          25,
+          37,
+          38,
+          40,
+          41,
+          42,
+          44,
+          45
+        ],
+        [
+          4,
+          5,
+          8,
+          13,
+          17,
+          18,
+          26,
+          29,
+          31,
+          33,
+          34,
+          43,
+          46,
+          47,
+          48,
+          49
+        ]
+      ],
+      "spectral_gap": 0.937603,
+      "retention": {
+        "depleted_cross_state": 10,
+        "depleted_within_state": 9,
+        "depleted_cross_fraction": 0.5263,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 0.0
+      },
+      "log_likelihood": -45634.81,
+      "aic": 91373.62,
+      "bic": 91764.42,
+      "ari_vs_agglomerative": 0.0027
+    },
+    "4": {
+      "k": 4,
+      "actual_states": 4,
+      "partition": [
+        [
+          4,
+          5,
+          6,
+          8,
+          13,
+          17,
+          18,
+          26,
+          29,
+          31,
+          33,
+          34,
+          35,
+          39,
+          43,
+          47,
+          49
+        ],
+        [
+          1,
+          16,
+          38,
+          40,
+          44,
+          46,
+          48
+        ],
+        [
+          3,
+          7,
+          9,
+          10,
+          11,
+          12,
+          14,
+          20,
+          24,
+          27,
+          28,
+          30,
+          32,
+          36
+        ],
+        [
+          2,
+          15,
+          19,
+          21,
+          22,
+          23,
+          25,
+          37,
+          41,
+          42,
+          45
+        ]
+      ],
+      "spectral_gap": 0.93855,
+      "retention": {
+        "depleted_cross_state": 10,
+        "depleted_within_state": 9,
+        "depleted_cross_fraction": 0.5263,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 0.0
+      },
+      "log_likelihood": -45626.71,
+      "aic": 91367.42,
+      "bic": 91795.79,
+      "ari_vs_agglomerative": 0.045
+    },
+    "5": {
+      "k": 5,
+      "actual_states": 5,
+      "partition": [
+        [
+          4,
+          5,
+          6,
+          8,
+          17,
+          18,
+          26,
+          29,
+          31,
+          33,
+          34,
+          39,
+          43,
+          46,
+          47,
+          49
+        ],
+        [
+          7,
+          9,
+          20,
+          21,
+          22,
+          23,
+          24,
+          35,
+          41,
+          42
+        ],
+        [
+          1,
+          3,
+          16,
+          38,
+          40,
+          44,
+          48
+        ],
+        [
+          10,
+          12,
+          13,
+          14,
+          27,
+          28,
+          30,
+          32,
+          36
+        ],
+        [
+          2,
+          11,
+          15,
+          19,
+          25,
+          37,
+          45
+        ]
+      ],
+      "spectral_gap": 0.840452,
+      "retention": {
+        "depleted_cross_state": 17,
+        "depleted_within_state": 2,
+        "depleted_cross_fraction": 0.8947,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 0.2
+      },
+      "log_likelihood": -45495.12,
+      "aic": 91118.23,
+      "bic": 91599.21,
+      "ari_vs_agglomerative": 0.0806
+    },
+    "6": {
+      "k": 6,
+      "actual_states": 6,
+      "partition": [
+        [
+          1,
+          2,
+          11,
+          25,
+          32,
+          43,
+          48
+        ],
+        [
+          7,
+          9,
+          20,
+          21,
+          22,
+          23,
+          24,
+          35,
+          41
+        ],
+        [
+          4,
+          5,
+          6,
+          8,
+          17,
+          18,
+          26,
+          29,
+          31,
+          34,
+          39,
+          47,
+          49
+        ],
+        [
+          10,
+          12,
+          13,
+          14,
+          27,
+          28,
+          30,
+          33,
+          36
+        ],
+        [
+          3,
+          16,
+          38,
+          40,
+          44,
+          46
+        ],
+        [
+          15,
+          19,
+          37,
+          42,
+          45
+        ]
+      ],
+      "spectral_gap": 0.843123,
+      "retention": {
+        "depleted_cross_state": 17,
+        "depleted_within_state": 2,
+        "depleted_cross_fraction": 0.8947,
+        "fl_separated": true,
+        "enax_violation": false,
+        "role_purity": 0.3333
+      },
+      "log_likelihood": -45433.31,
+      "aic": 91012.62,
+      "bic": 91561.23,
+      "ari_vs_agglomerative": 0.0588
+    },
+    "7": {
+      "k": 7,
+      "actual_states": 7,
+      "partition": [
+        [
+          4,
+          5,
+          8,
+          18,
+          26,
+          29,
+          31,
+          33,
+          34,
+          47,
+          49
+        ],
+        [
+          6,
+          7,
+          9,
+          20,
+          21,
+          23,
+          24,
+          35,
+          39,
+          41
+        ],
+        [
+          12,
+          38,
+          40,
+          44,
+          46
+        ],
+        [
+          2,
+          11,
+          19,
+          25,
+          37,
+          45
+        ],
+        [
+          15,
+          16,
+          22,
+          42
+        ],
+        [
+          3,
+          10,
+          13,
+          14,
+          27,
+          28,
+          30,
+          32,
+          36
+        ],
+        [
+          1,
+          17,
+          43,
+          48
+        ]
+      ],
+      "spectral_gap": 0.849061,
+      "retention": {
+        "depleted_cross_state": 17,
+        "depleted_within_state": 2,
+        "depleted_cross_fraction": 0.8947,
+        "fl_separated": true,
+        "enax_violation": true,
+        "role_purity": 0.4286
+      },
+      "log_likelihood": -45478.36,
+      "aic": 91124.73,
+      "bic": 91756.01,
+      "ari_vs_agglomerative": 0.0124
+    },
+    "8": {
+      "k": 8,
+      "actual_states": 8,
+      "partition": [
+        [
+          5,
+          6,
+          25,
+          39,
+          41,
+          43,
+          49
+        ],
+        [
+          2,
+          12,
+          38,
+          40,
+          44,
+          46
+        ],
+        [
+          3,
+          9,
+          10,
+          15,
+          16,
+          27,
+          30
+        ],
+        [
+          1,
+          19,
+          37,
+          45
+        ],
+        [
+          11,
+          13,
+          14,
+          28,
+          32,
+          33,
+          36,
+          48
+        ],
+        [
+          7,
+          20,
+          21,
+          23,
+          24,
+          35
+        ],
+        [
+          4,
+          8,
+          17,
+          18,
+          26,
+          29,
+          31,
+          34,
+          47
+        ],
+        [
+          22,
+          42
+        ]
+      ],
+      "spectral_gap": 0.88005,
+      "retention": {
+        "depleted_cross_state": 16,
+        "depleted_within_state": 3,
+        "depleted_cross_fraction": 0.8421,
+        "fl_separated": true,
+        "enax_violation": true,
+        "role_purity": 0.5
+      },
+      "log_likelihood": -45415.55,
+      "aic": 91025.09,
+      "bic": 91754.08,
+      "ari_vs_agglomerative": 0.0328
+    },
+    "9": {
+      "k": 9,
+      "actual_states": 9,
+      "partition": [
+        [
+          1,
+          3,
+          15
+        ],
+        [
+          21,
+          22,
+          23,
+          35
+        ],
+        [
+          10,
+          14,
+          27,
+          28,
+          30,
+          32,
+          36
+        ],
+        [
+          16,
+          19,
+          38,
+          44
+        ],
+        [
+          2,
+          6,
+          25,
+          39,
+          41,
+          45
+        ],
+        [
+          8,
+          13,
+          17,
+          18,
+          29,
+          33,
+          43,
+          47,
+          48,
+          49
+        ],
+        [
+          7,
+          9,
+          11,
+          20,
+          24
+        ],
+        [
+          4,
+          5,
+          26,
+          31,
+          34,
+          37
+        ],
+        [
+          12,
+          40,
+          42,
+          46
+        ]
+      ],
+      "spectral_gap": 0.835838,
+      "retention": {
+        "depleted_cross_state": 17,
+        "depleted_within_state": 2,
+        "depleted_cross_fraction": 0.8947,
+        "fl_separated": true,
+        "enax_violation": true,
+        "role_purity": 0.3333
+      },
+      "log_likelihood": -45342.53,
+      "aic": 90909.07,
+      "bic": 91750.78,
+      "ari_vs_agglomerative": 0.0222
+    },
+    "10": {
+      "k": 10,
+      "actual_states": 10,
+      "partition": [
+        [
+          8,
+          13,
+          17,
+          18,
+          29,
+          33,
+          34,
+          43,
+          47,
+          48,
+          49
+        ],
+        [
+          6,
+          21,
+          23,
+          31,
+          35,
+          41
+        ],
+        [
+          16,
+          38,
+          44
+        ],
+        [
+          3,
+          10,
+          14,
+          27,
+          28,
+          30,
+          32,
+          36
+        ],
+        [
+          1,
+          5,
+          22,
+          26,
+          39
+        ],
+        [
+          15
+        ],
+        [
+          2,
+          12,
+          25
+        ],
+        [
+          4,
+          11,
+          19,
+          37,
+          45
+        ],
+        [
+          7,
+          9,
+          20,
+          24
+        ],
+        [
+          40,
+          42,
+          46
+        ]
+      ],
+      "spectral_gap": 0.831612,
+      "retention": {
+        "depleted_cross_state": 18,
+        "depleted_within_state": 1,
+        "depleted_cross_fraction": 0.9474,
+        "fl_separated": true,
+        "enax_violation": true,
+        "role_purity": 0.2
+      },
+      "log_likelihood": -45361.98,
+      "aic": 90981.96,
+      "bic": 91951.44,
+      "ari_vs_agglomerative": 0.0352
+    },
+    "11": {
+      "k": 11,
+      "actual_states": 11,
+      "partition": [
+        [
+          4,
+          8,
+          18,
+          31,
+          34,
+          47
+        ],
+        [
+          21,
+          23,
+          25,
+          41
+        ],
+        [
+          38,
+          44,
+          46
+        ],
+        [
+          1,
+          5,
+          22,
+          26,
+          39
+        ],
+        [
+          16,
+          27,
+          49
+        ],
+        [
+          43,
+          48
+        ],
+        [
+          15,
+          19,
+          37,
+          42,
+          45
+        ],
+        [
+          13,
+          17,
+          29,
+          33
+        ],
+        [
+          2,
+          12,
+          40
+        ],
+        [
+          6,
+          7,
+          9,
+          14,
+          24,
+          30,
+          35
+        ],
+        [
+          3,
+          10,
+          11,
+          20,
+          28,
+          32,
+          36
+        ]
+      ],
+      "spectral_gap": 0.867967,
+      "retention": {
+        "depleted_cross_state": 16,
+        "depleted_within_state": 3,
+        "depleted_cross_fraction": 0.8421,
+        "fl_separated": true,
+        "enax_violation": true,
+        "role_purity": 0.4545
+      },
+      "log_likelihood": -45268.28,
+      "aic": 90832.56,
+      "bic": 91944.83,
+      "ari_vs_agglomerative": -0.0041
+    },
+    "12": {
+      "k": 12,
+      "actual_states": 12,
+      "partition": [
+        [
+          5,
+          16,
+          27,
+          49
+        ],
+        [
+          6,
+          7,
+          9,
+          14,
+          24,
+          30
+        ],
+        [
+          4,
+          31
+        ],
+        [
+          10,
+          13,
+          28,
+          29,
+          33,
+          36,
+          43
+        ],
+        [
+          1,
+          3
+        ],
+        [
+          11,
+          20,
+          32,
+          37
+        ],
+        [
+          26,
+          38,
+          42,
+          44,
+          46
+        ],
+        [
+          12,
+          25,
+          40
+        ],
+        [
+          2,
+          15,
+          22,
+          39
+        ],
+        [
+          19,
+          45
+        ],
+        [
+          21,
+          23,
+          35,
+          41
+        ],
+        [
+          8,
+          17,
+          18,
+          34,
+          47,
+          48
+        ]
+      ],
+      "spectral_gap": 0.869969,
+      "retention": {
+        "depleted_cross_state": 17,
+        "depleted_within_state": 2,
+        "depleted_cross_fraction": 0.8947,
+        "fl_separated": true,
+        "enax_violation": true,
+        "role_purity": 0.5
+      },
+      "log_likelihood": -45290.98,
+      "aic": 90919.95,
+      "bic": 92190.04,
+      "ari_vs_agglomerative": 0.0194
+    }
+  },
+  "t6_synthesis": {
+    "constrained_minimum": true,
+    "k5_violations": 2,
+    "k4_violations": 5,
+    "k3_violations": 9,
+    "aic_minimum_k": 6,
+    "bic_minimum_k": 3,
+    "it_optimum_aic": true,
+    "it_optimum_bic": false,
+    "depletion_z_6": 8.18,
+    "depletion_z_7": 8.47,
+    "depletion_z_8": 7.01,
+    "depletion_closed_at_7": false,
+    "depletion_closed_at_8": false,
+    "best_alt_7state": "jsd_greedy",
+    "best_alt_7state_fidelity": 0.8,
+    "spectral_k6_ari": 0.0588,
+    "independent_convergence": false,
+    "verdict": "STRUCTURALLY_FORCED",
+    "explanation": "6 is minimal under constraints, BIC-optimal or near-optimal, and upward refinement does not close the depletion gap"
+  },
+  "elapsed_seconds": 689.4
+}
