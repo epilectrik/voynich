@@ -4,6 +4,34 @@
 
 ---
 
+## Version 3.53 (2026-02-12) - AXM Gatekeeper Investigation
+
+### Summary
+
+9-test phase fully characterizing the AXM exit-boundary gatekeeper mechanism discovered in Phase 326 (C1007). Confirms directional gating: entry/exit class compositions are asymmetric (chi2=152.60, p<0.0001) with 5 AUXILIARY classes {15,20,21,22,25} enriched 2-10x at exit only. Gatekeepers have lower transition entropy (4.12 vs 4.56 bits, p=0.016) and are enriched in HAZARD_TARGET sub-role (C1000). Effect survives mid-line positional control (p=0.002). T8-T9 probe geometric layer: hazard-target compositional curvature toward exit (rho=-0.055, p=0.0001) but NO radial depth gradient (p=0.098) and gatekeepers are NOT structural bridges (betweenness p=0.514). The mechanism is compositional, not spectral-geometric. 2 new constraints (C1008-C1009), 874 total. Phase 327.
+
+### New Constraints
+
+| # | Name | Tier | Key Evidence |
+|---|------|------|-------------|
+| C1008 | AXM Directional Gating Mechanism | 2 | Entry/exit asymmetry chi2=152.60 p<0.0001; entropy 4.12 vs 4.56 bits p=0.016; mid-line control p=0.002 |
+| C1009 | AXM Exit Hazard-Target Compositional Curvature | 2 | HAZARD_TARGET density 10%->16% at exit rho=-0.055 p=0.0001; no depth gradient; compositional not spectral |
+
+### Key Findings
+
+**AXM_GATEKEEPER_INVESTIGATION (9 tests):**
+- T1: Directional gating - entry/exit asymmetry (chi2=152.60, p<0.0001)
+- T2: No exit routing specificity (p=0.286) - destination-agnostic
+- T3: Mid-line positional control passed (chi2=58.42, p=0.002) - genuine gating
+- T4: No duration prediction (KW p=0.128)
+- T5: REGIME-variable gatekeeper identity (mean cross-rho=-0.245)
+- T6: HAZARD_TARGET sub-role enriched at exit (chi2=13.89, p=0.003)
+- T7: Lower gatekeeper entropy (4.12 vs 4.56 bits, p=0.016) - routing switches
+- T8: Hazard-target compositional curvature toward exit (rho=-0.055, p=0.0001); NO depth gradient
+- T9: Gatekeepers NOT structural bridges (betweenness p=0.514, PageRank p=0.183)
+
+---
+
 ## Version 3.52 (2026-02-12) - REGIME Dwell Architecture
 
 ### Summary

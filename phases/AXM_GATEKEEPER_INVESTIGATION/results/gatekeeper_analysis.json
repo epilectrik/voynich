@@ -1,0 +1,373 @@
+{
+  "phase": "AXM_GATEKEEPER_INVESTIGATION",
+  "n_axm_runs": 4270,
+  "n_axm_exits": 2847,
+  "gatekeeper_classes": [
+    15,
+    20,
+    21,
+    22,
+    25
+  ],
+  "T1_entry_exit_asymmetry": {
+    "per_class": {
+      "15": {
+        "entry_frac": 0.001837109614206981,
+        "exit_frac": 0.011022657685241886,
+        "midrun_frac": 0.0035778175313059034,
+        "entry_enrichment": 0.5134721371708512,
+        "exit_enrichment": 3.080832823025107
+      },
+      "20": {
+        "entry_frac": 0.017146356399265157,
+        "exit_frac": 0.02878138395590937,
+        "midrun_frac": 0.01073345259391771,
+        "entry_enrichment": 1.597468871198204,
+        "exit_enrichment": 2.6814656052255565
+      },
+      "21": {
+        "entry_frac": 0.002449479485609308,
+        "exit_frac": 0.023882424984690752,
+        "midrun_frac": 0.005622284692052134,
+        "entry_enrichment": 0.43567332850860097,
+        "exit_enrichment": 4.247814952958859
+      },
+      "22": {
+        "entry_frac": 0.001224739742804654,
+        "exit_frac": 0.01224739742804654,
+        "midrun_frac": 0.001277791975466394,
+        "entry_enrichment": 0.9584813227189223,
+        "exit_enrichment": 9.584813227189223
+      },
+      "25": {
+        "entry_frac": 0.001224739742804654,
+        "exit_frac": 0.015309246785058175,
+        "midrun_frac": 0.006644518272425249,
+        "entry_enrichment": 0.18432333129210043,
+        "exit_enrichment": 2.3040416411512554
+      }
+    },
+    "chi2_entry_vs_exit": 152.59761989919673,
+    "p_entry_vs_exit": 5.314634241930734e-18,
+    "asymmetric": true
+  },
+  "T2_exit_routing": {
+    "gatekeeper_routing": {
+      "15": {
+        "FL_HAZ": 0,
+        "FQ": 6,
+        "CC": 0,
+        "AXm": 2,
+        "FL_SAFE": 0
+      },
+      "20": {
+        "FL_HAZ": 10,
+        "FQ": 25,
+        "CC": 11,
+        "AXm": 3,
+        "FL_SAFE": 2
+      },
+      "21": {
+        "FL_HAZ": 4,
+        "FQ": 16,
+        "CC": 5,
+        "AXm": 0,
+        "FL_SAFE": 1
+      },
+      "22": {
+        "FL_HAZ": 3,
+        "FQ": 3,
+        "CC": 0,
+        "AXm": 0,
+        "FL_SAFE": 0
+      },
+      "25": {
+        "FL_HAZ": 6,
+        "FQ": 20,
+        "CC": 4,
+        "AXm": 4,
+        "FL_SAFE": 0
+      }
+    },
+    "non_gatekeeper_routing": {
+      "FL_HAZ": 465,
+      "FQ": 1557,
+      "CC": 373,
+      "AXm": 259,
+      "FL_SAFE": 68
+    },
+    "chi2": 18.677561604351883,
+    "p": 0.2857377780570174,
+    "routing_dependent": false
+  },
+  "T3_positional_confound": {
+    "per_class": {
+      "15": {
+        "midline_exit_enrichment": 0.7804370447450572,
+        "lineend_exit_enrichment": 5.580357142857143,
+        "midrun_frac": 0.004
+      },
+      "20": {
+        "midline_exit_enrichment": 1.768990634755463,
+        "lineend_exit_enrichment": 4.464285714285714,
+        "midrun_frac": 0.01
+      },
+      "21": {
+        "midline_exit_enrichment": 1.387443635102324,
+        "lineend_exit_enrichment": 5.753968253968254,
+        "midrun_frac": 0.0075
+      },
+      "22": {
+        "midline_exit_enrichment": 0.0,
+        "lineend_exit_enrichment": 0.0,
+        "midrun_frac": 0.0
+      },
+      "25": {
+        "midline_exit_enrichment": 1.891968593321351,
+        "lineend_exit_enrichment": 4.058441558441559,
+        "midrun_frac": 0.0055
+      }
+    },
+    "midline_chi2": 58.41611566733619,
+    "midline_p": 0.0020648413506412252,
+    "midline_gating": true,
+    "gk_mean_position": 0.6683160173160173,
+    "non_gk_mean_position": 0.470752895511461,
+    "position_mannwhitney_p": 6.871664379835148e-38
+  },
+  "T4_run_length_prediction": {
+    "per_class": {
+      "15": {
+        "n": 26,
+        "mean": 3.6923076923076925,
+        "median": 3.0
+      },
+      "20": {
+        "n": 70,
+        "mean": 3.7857142857142856,
+        "median": 3.0
+      },
+      "21": {
+        "n": 54,
+        "mean": 4.111111111111111,
+        "median": 4.0
+      },
+      "22": {
+        "n": 27,
+        "mean": 4.333333333333333,
+        "median": 3.0
+      },
+      "25": {
+        "n": 44,
+        "mean": 3.1818181818181817,
+        "median": 3.0
+      }
+    },
+    "non_gatekeeper_mean": 3.450082508250825,
+    "kruskal_wallis_H": 7.157397897672583,
+    "kruskal_wallis_p": 0.1278005972958898,
+    "gatekeeper_predicts_duration": false,
+    "gk_vs_nongk_mannwhitney_p": 0.03161545952101681,
+    "gk_shorter_runs": false
+  },
+  "T5_regime_invariance": {
+    "per_regime": {
+      "REGIME_2": {
+        "chi2": 35.76841602234375,
+        "p": 0.18040890625907577,
+        "significant": false
+      },
+      "REGIME_1": {
+        "chi2": 141.71711209424313,
+        "p": 4.26490409872127e-16,
+        "significant": true
+      },
+      "REGIME_4": {
+        "chi2": 37.16645206613098,
+        "p": 0.17234259109659417,
+        "significant": false
+      },
+      "REGIME_3": {
+        "chi2": 55.57381334302968,
+        "p": 0.004325924081495445,
+        "significant": true
+      }
+    },
+    "enrichment_profiles": {
+      "REGIME_2": {
+        "15": 0.0,
+        "20": 0.9734513274336284,
+        "21": 0.9734513274336284,
+        "22": 0.0,
+        "25": 3.2448377581120944
+      },
+      "REGIME_1": {
+        "15": 3.9610058712750633,
+        "20": 2.3644779945876655,
+        "21": 5.484469667919319,
+        "22": 8.912263210368893,
+        "25": 2.14430393031432
+      },
+      "REGIME_4": {
+        "15": 2.0353982300884956,
+        "20": 2.5442477876106193,
+        "21": 0.0,
+        "22": 0.0,
+        "25": 0.0
+      },
+      "REGIME_3": {
+        "15": 0.0,
+        "20": 5.25,
+        "21": 2.892857142857143,
+        "22": 6.75,
+        "25": 9.0
+      }
+    },
+    "cross_regime_rhos": [
+      -0.7378647873726218,
+      -0.17677669529663687,
+      0.5270462766947298,
+      -0.3354101966249684,
+      -0.3,
+      -0.4472135954999579
+    ],
+    "mean_cross_regime_rho": -0.2450364996832425
+  },
+  "T6_hub_subrole": {
+    "exit_boundary_subroles": {
+      "HAZARD_SOURCE": 289,
+      "HAZARD_TARGET": 253,
+      "SAFETY_BUFFER": 361,
+      "PURE_CONNECTOR": 211
+    },
+    "midrun_subroles": {
+      "HAZARD_SOURCE": 720,
+      "HAZARD_TARGET": 443,
+      "SAFETY_BUFFER": 877,
+      "PURE_CONNECTOR": 485
+    },
+    "exit_boundary_total": 1114,
+    "midrun_total": 2525,
+    "chi2": 13.89098428652932,
+    "p": 0.0030573605092305764,
+    "subrole_enriched": true
+  },
+  "T7_transition_entropy": {
+    "gatekeeper_entropies": {
+      "15": {
+        "entropy": 4.01506101220307,
+        "n_transitions": 30
+      },
+      "20": {
+        "entropy": 4.629835222942913,
+        "n_transitions": 137
+      },
+      "21": {
+        "entropy": 4.146005592778009,
+        "n_transitions": 56
+      },
+      "22": {
+        "entropy": 3.4548223999466066,
+        "n_transitions": 17
+      },
+      "25": {
+        "entropy": 4.37081092409508,
+        "n_transitions": 67
+      }
+    },
+    "gatekeeper_mean_entropy": 4.123307030393136,
+    "non_gatekeeper_mean_entropy": 4.5545748384090565,
+    "mannwhitney_U": 22.0,
+    "mannwhitney_p": 0.015900603845542666,
+    "gatekeepers_lower_entropy": true
+  },
+  "T8_boundary_geometry": {
+    "n_long_runs": 1016,
+    "positions": {
+      "t-0": {
+        "depth_mean": 2.066430050103398,
+        "depth_std": 0.45924288781513006,
+        "hazard_target_pct": 0.15551181102362205,
+        "gatekeeper_pct": 0.08661417322834646,
+        "n": 1016
+      },
+      "t-1": {
+        "depth_mean": 2.0117902374038628,
+        "depth_std": 0.48493393794555006,
+        "hazard_target_pct": 0.11811023622047244,
+        "gatekeeper_pct": 0.027559055118110236,
+        "n": 1016
+      },
+      "t-2": {
+        "depth_mean": 2.0619118071398574,
+        "depth_std": 0.45695656459467676,
+        "hazard_target_pct": 0.11318897637795275,
+        "gatekeeper_pct": 0.028543307086614175,
+        "n": 1016
+      },
+      "t-3": {
+        "depth_mean": 2.0246929402452882,
+        "depth_std": 0.48620500409993783,
+        "hazard_target_pct": 0.09645669291338582,
+        "gatekeeper_pct": 0.02066929133858268,
+        "n": 1016
+      },
+      "t-4": {
+        "depth_mean": 2.030165833093707,
+        "depth_std": 0.4765466116467282,
+        "hazard_target_pct": 0.10097719869706841,
+        "gatekeeper_pct": 0.024429967426710098,
+        "n": 614
+      },
+      "t-5": {
+        "depth_mean": 2.029467831818179,
+        "depth_std": 0.48638642685661304,
+        "hazard_target_pct": 0.10734463276836158,
+        "gatekeeper_pct": 0.025423728813559324,
+        "n": 354
+      }
+    },
+    "depth_gradient_rho": -0.023315198808708498,
+    "depth_gradient_p": 0.09818551125485375,
+    "haztarget_gradient_rho": -0.05525505688149356,
+    "haztarget_gradient_p": 8.795283975526224e-05,
+    "exit_vs_interior_depth_p": 0.0069712293567079555,
+    "depth_curvature": false
+  },
+  "T9_subgraph_profiling": {
+    "n_active_classes": 32,
+    "gatekeeper_betweenness": {
+      "15": 0.0032258064516129032,
+      "20": 0.002150537634408602,
+      "21": 0.001075268817204301,
+      "22": 0.005376344086021506,
+      "25": 0.004301075268817204
+    },
+    "gk_mean_betweenness": 0.0032258064516129032,
+    "nongk_mean_betweenness": 0.011031461569095978,
+    "betweenness_mannwhitney_p": 0.5136703983681008,
+    "gk_higher_betweenness": false,
+    "gatekeeper_pagerank": {
+      "15": 0.009878500604525015,
+      "20": 0.019444587236931023,
+      "21": 0.01508680602504738,
+      "22": 0.009049421241888376,
+      "25": 0.01392279842706029
+    },
+    "gk_mean_pagerank": 0.013476422707090416,
+    "nongk_mean_pagerank": 0.03454140320239066,
+    "pagerank_mannwhitney_p": 0.18313006515175595
+  },
+  "findings": [
+    "Entry and exit boundaries have DIFFERENT class composition (directional gating)",
+    "Gatekeeper classes route similarly (no target-state specialization)",
+    "Gatekeeper enrichment survives positional control (genuine gating)",
+    "Gatekeeper identity does not predict run duration",
+    "Gatekeeper pattern varies by REGIME",
+    "Exit-boundary tokens have different HUB sub-role composition (C1000 connection)",
+    "Gatekeepers have lower transition entropy (routing switches)",
+    "No significant depth gradient toward AXM exit",
+    "Hazard-target density INCREASES toward exit (rho=-0.055, p=0.0001)",
+    "Gatekeepers do not have higher betweenness centrality"
+  ]
+}

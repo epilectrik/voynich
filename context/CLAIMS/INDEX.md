@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 872 validated constraints | **Version:** 3.52 | **Date:** 2026-02-12
+**Total:** 874 validated constraints | **Version:** 3.53 | **Date:** 2026-02-12
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -1935,6 +1935,26 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - T6b: Compositional drift within AXM runs (C977 internal structure)
 - T7: Weibull k=1.55 REGIME-invariant; REGIME modulates scale only (C979 reinforced)
 - T8: Gatekeeper subset at AXM exit boundaries (chi2=178.21, p<0.0001)
+
+---
+
+### AXM Gatekeeper Investigation (C1008-C1009) - Phase: AXM_GATEKEEPER_INVESTIGATION
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1008** | **AXM Directional Gating Mechanism** (entry/exit asymmetry chi2=152.60 p<0.0001; 5 AUXILIARY classes {15,20,21,22,25} enriched 2-10x at exit only; lower transition entropy 4.12 vs 4.56 bits p=0.016; survives mid-line control p=0.002; not structural bridges betweenness p=0.514; REGIME-contextual class identity) | 2 | B | -> [C1008_axm_directional_gating.md](C1008_axm_directional_gating.md) |
+| **1009** | **AXM Exit Hazard-Target Compositional Curvature** (HAZARD_TARGET density increases from ~10% at t-3 to ~16% at exit rho=-0.055 p=0.0001; no radial depth gradient p=0.098; exit sub-role composition different chi2=13.89 p=0.003; compositional not spectral mechanism) | 2 | B | -> [C1009_axm_exit_hazard_curvature.md](C1009_axm_exit_hazard_curvature.md) |
+
+**Phase findings (T1-T9):**
+- T1: Directional gating - entry/exit class asymmetry (chi2=152.60, p<0.0001)
+- T2: No exit routing specificity (p=0.286) - gatekeepers are destination-agnostic
+- T3: Mid-line positional control passed (chi2=58.42, p=0.002) - genuine gating
+- T4: No duration prediction (KW p=0.128)
+- T5: REGIME-variable gatekeeper identity (mean cross-rho=-0.245)
+- T6: HAZARD_TARGET sub-role enriched at exit (chi2=13.89, p=0.003)
+- T7: Lower gatekeeper entropy (4.12 vs 4.56 bits, p=0.016) - routing switches
+- T8: Hazard-target compositional curvature toward exit (rho=-0.055, p=0.0001); no depth gradient
+- T9: Gatekeepers are NOT structural bridges (betweenness p=0.514)
 
 ---
 
