@@ -1,0 +1,63 @@
+{
+  "test": "T2_markov_dynamics",
+  "properties": [
+    "F5_first_order_sufficiency",
+    "F6_1_token_gate",
+    "F10_no_cross_line"
+  ],
+  "observed": {
+    "bic_diff": -598060.6,
+    "first_order_wins": true,
+    "kl_offset1": 0.7489,
+    "kl_offset2": 0.7354,
+    "kl_ratio": 1.0,
+    "has_sharp_gate": false,
+    "cross_line_mi": 0.521202
+  },
+  "ensembles": {
+    "NULL_D_density": {
+      "p_first_order_wins": 1.0,
+      "p_sharp_gate": 0.0,
+      "p_low_cross_mi": 0.0,
+      "p_joint_F5_F6_F10": 0.0,
+      "null_first_order_fraction": 1.0,
+      "null_gate_fraction": 0.0,
+      "null_mi_mean": 0.767402,
+      "time_seconds": 299.6
+    },
+    "NULL_E_uniform": {
+      "p_first_order_wins": 1.0,
+      "p_sharp_gate": 0.349,
+      "p_low_cross_mi": 0.0,
+      "p_joint_F5_F6_F10": 0.0,
+      "null_first_order_fraction": 1.0,
+      "null_gate_fraction": 0.349,
+      "null_mi_mean": 0.772419,
+      "time_seconds": 316.7
+    },
+    "NULL_F_zipf": {
+      "p_first_order_wins": 1.0,
+      "p_sharp_gate": 0.086,
+      "p_low_cross_mi": 0.0,
+      "p_joint_F5_F6_F10": 0.0,
+      "null_first_order_fraction": 1.0,
+      "null_gate_fraction": 0.086,
+      "null_mi_mean": 0.717828,
+      "time_seconds": 311.2
+    }
+  },
+  "verdict": "RARE",
+  "best_joint_p": 0.0,
+  "worst_joint_p": 0.0,
+  "n_samples": 1000,
+  "n_states": 49,
+  "n_lines": 2488,
+  "mean_line_length": 6.5,
+  "transition_zero_frac": 0.334,
+  "notes": {
+    "F5": "First-order wins universally (100pct of ALL nulls also first-order). F5 alone NOT discriminating.",
+    "F6": "Sharp gate NOT detected at 49-class level (ratio=1.0x). Gate operates within roles (C967). F6 non-discriminating at this granularity.",
+    "F10": "Cross-line MI=0.521 bits. ALL null ensembles have HIGHER MI (0.72-0.77). Voynich has unusually LOW cross-line memory. Killer discriminator.",
+    "joint_driver": "Joint p=0.000 driven entirely by F10 (low cross-line MI)."
+  }
+}

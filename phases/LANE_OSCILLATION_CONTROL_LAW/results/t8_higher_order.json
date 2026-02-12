@@ -1,0 +1,349 @@
+{
+  "test": "T8_higher_order_dependency",
+  "description": "Test for higher-order (2nd/3rd order Markov) dependencies in EN lane sequences",
+  "data_summary": {
+    "min_en_per_line": 4,
+    "n_lines": 869,
+    "n_filtered_lines": 533,
+    "n_en_tokens": 4334,
+    "n_filtered_tokens": 2658,
+    "n_bigrams": 2125,
+    "n_trigrams": 1592
+  },
+  "first_order_baseline": {
+    "QO_to_QO": 0.41211519364448856,
+    "QO_to_CHSH": 0.5878848063555114,
+    "CHSH_to_QO": 0.5626118067978533,
+    "CHSH_to_CHSH": 0.43738819320214667
+  },
+  "second_order_transitions": {
+    "QQ": {
+      "conditioning_state": "QO->QO",
+      "count_total": 316,
+      "count_next_QO": 146,
+      "count_next_CHSH": 170,
+      "P_QO_given_context": 0.4620253164556962,
+      "P_CHSH_given_context": 0.5379746835443038,
+      "P_QO_first_order": 0.41211519364448856,
+      "P_CHSH_first_order": 0.5878848063555114
+    },
+    "QC": {
+      "conditioning_state": "QO->CHSH",
+      "count_total": 458,
+      "count_next_QO": 287,
+      "count_next_CHSH": 171,
+      "P_QO_given_context": 0.6266375545851528,
+      "P_CHSH_given_context": 0.37336244541484714,
+      "P_QO_first_order": 0.5626118067978533,
+      "P_CHSH_first_order": 0.43738819320214667
+    },
+    "CQ": {
+      "conditioning_state": "CHSH->QO",
+      "count_total": 453,
+      "count_next_QO": 160,
+      "count_next_CHSH": 293,
+      "P_QO_given_context": 0.35320088300220753,
+      "P_CHSH_given_context": 0.6467991169977925,
+      "P_QO_first_order": 0.41211519364448856,
+      "P_CHSH_first_order": 0.5878848063555114
+    },
+    "CC": {
+      "conditioning_state": "CHSH->CHSH",
+      "count_total": 365,
+      "count_next_QO": 175,
+      "count_next_CHSH": 190,
+      "P_QO_given_context": 0.4794520547945205,
+      "P_CHSH_given_context": 0.5205479452054794,
+      "P_QO_first_order": 0.5626118067978533,
+      "P_CHSH_first_order": 0.43738819320214667
+    }
+  },
+  "second_order_chi2_tests": {
+    "QQ": {
+      "chi2_statistic": 3.2490283233515713,
+      "p_value": 0.07146581223266768,
+      "df": 1,
+      "significant": false,
+      "expected_QO": 130.22840119165838,
+      "expected_CHSH": 185.77159880834162
+    },
+    "QC": {
+      "chi2_statistic": 7.6295495790798915,
+      "p_value": 0.005741964060797522,
+      "df": 1,
+      "significant": true,
+      "expected_QO": 257.6762075134168,
+      "expected_CHSH": 200.3237924865832
+    },
+    "CQ": {
+      "chi2_statistic": 6.48976454412602,
+      "p_value": 0.01084973468974293,
+      "df": 1,
+      "significant": true,
+      "expected_QO": 186.6881827209533,
+      "expected_CHSH": 266.3118172790467
+    },
+    "CC": {
+      "chi2_statistic": 10.257542806521215,
+      "p_value": 0.0013612687151117742,
+      "df": 1,
+      "significant": true,
+      "expected_QO": 205.35330948121646,
+      "expected_CHSH": 159.64669051878354
+    }
+  },
+  "conditional_mutual_information": {
+    "cmi_bits": 0.012159610635298114,
+    "threshold": 0.01,
+    "below_threshold": false
+  },
+  "run_length_analysis": {
+    "QO": {
+      "n_runs": 867,
+      "max_run": 6,
+      "observed_mean": 1.4786620530565167,
+      "theoretical_mean": 1.7010135135135134,
+      "p_self": 0.41211519364448856,
+      "histogram": {
+        "1": 598,
+        "2": 168,
+        "3": 67,
+        "4": 25,
+        "5+": 9
+      },
+      "expected_histogram": {
+        "1": 509.6961271102284,
+        "2": 210.05351812387764,
+        "3": 86.56624629732792,
+        "4": 35.67526535589979,
+        "5+": 25.008843112666234
+      },
+      "chi2_goodness_of_fit": {
+        "chi2_statistic": 41.58234073530228,
+        "p_value": 2.0360572894340123e-08,
+        "df": 4,
+        "n_bins_after_pooling": 5,
+        "fits_geometric": false
+      },
+      "hazard_function": {
+        "data_points": [
+          {
+            "k": 1,
+            "n_ending_at_k": 598,
+            "n_at_least_k": 867,
+            "hazard_rate": 0.6897347174163783,
+            "theoretical_hazard": 0.5878848063555114
+          },
+          {
+            "k": 2,
+            "n_ending_at_k": 168,
+            "n_at_least_k": 269,
+            "hazard_rate": 0.6245353159851301,
+            "theoretical_hazard": 0.5878848063555114
+          },
+          {
+            "k": 3,
+            "n_ending_at_k": 67,
+            "n_at_least_k": 101,
+            "hazard_rate": 0.6633663366336634,
+            "theoretical_hazard": 0.5878848063555114
+          },
+          {
+            "k": 4,
+            "n_ending_at_k": 25,
+            "n_at_least_k": 34,
+            "hazard_rate": 0.7352941176470589,
+            "theoretical_hazard": 0.5878848063555114
+          },
+          {
+            "k": 5,
+            "n_ending_at_k": 7,
+            "n_at_least_k": 9,
+            "hazard_rate": 0.7777777777777778,
+            "theoretical_hazard": 0.5878848063555114
+          },
+          {
+            "k": 6,
+            "n_ending_at_k": 2,
+            "n_at_least_k": 2,
+            "hazard_rate": 1.0,
+            "theoretical_hazard": 0.5878848063555114
+          }
+        ],
+        "theoretical_constant": 0.5878848063555114,
+        "reliable_mean": 0.6782326219205577,
+        "reliable_std": 0.04028870684911196,
+        "reliable_cv": 0.05940249045382991,
+        "is_flat": true
+      }
+    },
+    "CHSH": {
+      "n_runs": 887,
+      "max_run": 8,
+      "observed_mean": 1.5512965050732808,
+      "theoretical_mean": 1.777424483306836,
+      "p_self": 0.43738819320214667,
+      "histogram": {
+        "1": 588,
+        "2": 191,
+        "3": 53,
+        "4": 38,
+        "5+": 17
+      },
+      "expected_histogram": {
+        "1": 499.03667262969594,
+        "2": 218.2727485831139,
+        "3": 95.4699231280346,
+        "4": 41.757417182118886,
+        "5+": 32.463238477036775
+      },
+      "chi2_goodness_of_fit": {
+        "chi2_statistic": 45.86369711274715,
+        "p_value": 2.6290627452851822e-09,
+        "df": 4,
+        "n_bins_after_pooling": 5,
+        "fits_geometric": false
+      },
+      "hazard_function": {
+        "data_points": [
+          {
+            "k": 1,
+            "n_ending_at_k": 588,
+            "n_at_least_k": 887,
+            "hazard_rate": 0.6629086809470124,
+            "theoretical_hazard": 0.5626118067978534
+          },
+          {
+            "k": 2,
+            "n_ending_at_k": 191,
+            "n_at_least_k": 299,
+            "hazard_rate": 0.6387959866220736,
+            "theoretical_hazard": 0.5626118067978534
+          },
+          {
+            "k": 3,
+            "n_ending_at_k": 53,
+            "n_at_least_k": 108,
+            "hazard_rate": 0.49074074074074076,
+            "theoretical_hazard": 0.5626118067978534
+          },
+          {
+            "k": 4,
+            "n_ending_at_k": 38,
+            "n_at_least_k": 55,
+            "hazard_rate": 0.6909090909090909,
+            "theoretical_hazard": 0.5626118067978534
+          },
+          {
+            "k": 5,
+            "n_ending_at_k": 12,
+            "n_at_least_k": 17,
+            "hazard_rate": 0.7058823529411765,
+            "theoretical_hazard": 0.5626118067978534
+          },
+          {
+            "k": 6,
+            "n_ending_at_k": 2,
+            "n_at_least_k": 5,
+            "hazard_rate": 0.4,
+            "theoretical_hazard": 0.5626118067978534
+          },
+          {
+            "k": 7,
+            "n_ending_at_k": 1,
+            "n_at_least_k": 3,
+            "hazard_rate": 0.3333333333333333,
+            "theoretical_hazard": 0.5626118067978534
+          },
+          {
+            "k": 8,
+            "n_ending_at_k": 2,
+            "n_at_least_k": 2,
+            "hazard_rate": 1.0,
+            "theoretical_hazard": 0.5626118067978534
+          }
+        ],
+        "theoretical_constant": 0.5626118067978534,
+        "reliable_mean": 0.6378473704320189,
+        "reliable_std": 0.07708908441736755,
+        "reliable_cv": 0.1208581989844287,
+        "is_flat": true
+      }
+    }
+  },
+  "trigram_analysis": {
+    "total_trigrams": 1592,
+    "trigram_details": {
+      "QQQ": {
+        "observed": 146,
+        "expected": 128.1300075939015,
+        "residual": 17.869992406098504,
+        "chi2_contribution": 2.4922860350257046
+      },
+      "QQC": {
+        "observed": 170,
+        "expected": 182.77822770021612,
+        "residual": -12.77822770021612,
+        "chi2_contribution": 0.8933400067013425
+      },
+      "QCQ": {
+        "observed": 287,
+        "expected": 249.5253524150268,
+        "residual": 37.47464758497321,
+        "chi2_contribution": 5.62808226909999
+      },
+      "QCC": {
+        "observed": 171,
+        "expected": 193.98711817320844,
+        "residual": -22.987118173208444,
+        "chi2_contribution": 2.723931397533531
+      },
+      "CQQ": {
+        "observed": 160,
+        "expected": 194.20186693147963,
+        "residual": -34.20186693147963,
+        "chi2_contribution": 6.023462699312615
+      },
+      "CQC": {
+        "observed": 293,
+        "expected": 277.03013306852034,
+        "residual": 15.969866931479658,
+        "chi2_contribution": 0.9206097798252402
+      },
+      "CCQ": {
+        "observed": 175,
+        "expected": 206.111313059034,
+        "residual": -31.11131305903399,
+        "chi2_contribution": 4.696073135878723
+      },
+      "CCC": {
+        "observed": 190,
+        "expected": 160.23598105861308,
+        "residual": 29.764018941386922,
+        "chi2_contribution": 5.528700967725753
+      }
+    },
+    "chi2_goodness_of_fit": {
+      "chi2_statistic": 28.9064862911029,
+      "p_value": 8.166874732928875e-06,
+      "df": 4,
+      "fits_first_order": false
+    }
+  },
+  "evidence_summary": {
+    "conditioning_tests_all_nonsignificant": false,
+    "cmi_below_threshold": false,
+    "run_lengths_fit_geometric": false,
+    "hazard_functions_flat": true,
+    "trigram_fit_first_order": false
+  },
+  "higher_order_patterns": [
+    "Conditioning state QC: P(QO|QC)=0.6266 vs P(QO|C)=0.5626 (chi2=7.6295, p=0.0057)",
+    "Conditioning state CQ: P(QO|CQ)=0.3532 vs P(QO|Q)=0.4121 (chi2=6.4898, p=0.0108)",
+    "Conditioning state CC: P(QO|CC)=0.4795 vs P(QO|C)=0.5626 (chi2=10.2575, p=0.0014)",
+    "QO run lengths depart from geometric (chi2=41.5823, p=0.0000)",
+    "CHSH run lengths depart from geometric (chi2=45.8637, p=0.0000)",
+    "Trigram frequencies depart from first-order prediction (chi2=28.9065, p=0.0000)"
+  ],
+  "verdict": "HIGHER_ORDER_DETECTED"
+}

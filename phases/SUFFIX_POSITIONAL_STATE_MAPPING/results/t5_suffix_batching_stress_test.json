@@ -1,0 +1,60 @@
+{
+  "metadata": {
+    "phase": "SUFFIX_POSITIONAL_STATE_MAPPING",
+    "test": "T5_SUFFIX_BATCHING_STRESS_TEST"
+  },
+  "corpus": {
+    "n_lines": 2406
+  },
+  "test1_hazard_adjacency": {
+    "spearman_rho": 0.3151071422998057,
+    "spearman_p": 1.3214267874350287e-56,
+    "long_vs_short_p": 4.2901956470053515e-32,
+    "significant": true
+  },
+  "test2_lane_switch": {
+    "spearman_rho": 0.09629558633383928,
+    "spearman_p": 2.223847127447345e-06,
+    "long_vs_short_p": 1.9591192991557938e-05,
+    "significant": false
+  },
+  "test3_recovery_path": {
+    "recovery_long": {
+      "EN": 332,
+      "FQ": 203,
+      "AX": 195,
+      "CC": 43,
+      "FL": 93
+    },
+    "recovery_short": {
+      "EN": 140,
+      "FQ": 30,
+      "AX": 57,
+      "FL": 30,
+      "CC": 7
+    },
+    "chi2": 27.368024951012536,
+    "chi2_p": 1.6747640751435533e-05,
+    "significant": true
+  },
+  "test4_regime_clustering": {
+    "regime_means": {
+      "REGIME_4": 0.30193096119911234,
+      "REGIME_1": 0.3326292141416558,
+      "REGIME_2": 0.36094943703639354,
+      "REGIME_3": 0.30227516479019734
+    },
+    "regime_n": {
+      "REGIME_4": 206,
+      "REGIME_1": 1286,
+      "REGIME_2": 230,
+      "REGIME_3": 684
+    },
+    "kruskal_H": 27.053318519735715,
+    "kruskal_p": 5.737755535284071e-06,
+    "significant": true
+  },
+  "significant_count": 3,
+  "verdict": "SUFFIX_BATCHING_ARCHITECTURALLY_RELEVANT",
+  "verdict_detail": "3/4 execution dynamics altered by suffix runs."
+}

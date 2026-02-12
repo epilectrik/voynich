@@ -1,0 +1,42 @@
+{
+  "test": "T1_residual_projection",
+  "n_a_middles": 972,
+  "n_b_exclusive": 900,
+  "n_b_shared": 393,
+  "frequency_profile": {
+    "exclusive_mean": 1.538888888888889,
+    "exclusive_median": 1.0,
+    "shared_mean": 55.2442748091603,
+    "shared_median": 3.0
+  },
+  "length_profile": {
+    "exclusive_mean": 4.497777777777777,
+    "shared_mean": 3.1017811704834606
+  },
+  "folio_spread": {
+    "exclusive_mean": 1.46,
+    "shared_mean": 12.358778625954198
+  },
+  "atom_coverage": 0.9411111111111111,
+  "n_projected": 847,
+  "n_no_atoms": 53,
+  "norm_analysis": {
+    "projected_mean": 0.861757525736162,
+    "a_space_mean": 0.7922624273286373,
+    "shared_mean": 1.0534704976198077,
+    "norm_ratio": 1.0877172714624994
+  },
+  "distance_analysis": {
+    "projected_to_a_mean": 0.5784196996184513,
+    "a_to_a_nn_mean": 0.46700309027173753,
+    "dist_ratio": 1.2385778845315203
+  },
+  "cosine_analysis": {
+    "projected_mean_cos": 0.0012156024628612232,
+    "projected_max_cos": 0.8456877957784488,
+    "a_mean_cos": 0.0032763092537429488,
+    "a_max_cos": 0.7604280379719011
+  },
+  "verdict": "SUBORDINATE",
+  "explanation": "B-exclusive MIDDLEs project into A's manifold: 94% contain A atoms, norm ratio 1.09, distance ratio 1.24. They are manifold tail extensions, not a second geometry."
+}

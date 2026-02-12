@@ -4,6 +4,236 @@
 
 ---
 
+## Version 3.50 (2026-02-11) - HUB Decomposition & PREFIX Dual Encoding
+
+### Summary
+
+Two phases decomposing PP (PREFIX+MIDDLE) structure. HUB_ROLE_DECOMPOSITION classifies 23 HUB_UNIVERSAL MIDDLEs into 4 functional sub-roles and discovers all 17/17 forbidden transitions involve HUB (correcting C996's 13/17). PP_INFORMATION_DECOMPOSITION uses conditional MI to prove PREFIX is a dual-axis encoder: it selects content (lane, class) AND line position. PREFIX defines clear positional zones (po=86% initial, ar=61% final), is regime-invariant for major PREFIXes, and reveals sequential grammar (sh→qo +20.5σ enrichment). 2 new constraints (C1000-C1001), 846 total.
+
+### New Constraints
+
+| # | Name | Tier | Key Evidence |
+|---|------|------|-------------|
+| C1000 | HUB_UNIVERSAL Decomposes Into Functional Sub-Roles | 2 | 4 sub-roles; 17/17 forbidden involve HUB (perm p=0.0000); PREFIX V=0.689; sil=0.398 |
+| C1001 | PREFIX Dual Encoding — Content and Positional Grammar | 2 | R²(PREFIX)=0.069≈R²(MIDDLE)=0.062 for position; 20/32 non-uniform; regime-invariant; sh→qo +20.5σ |
+
+### Key Findings
+
+**HUB_ROLE_DECOMPOSITION (5 tests):**
+- HUB MIDDLEs partition into HAZARD_SOURCE(6), HAZARD_TARGET(6), SAFETY_BUFFER(3), PURE_CONNECTOR(8)
+- Behaviorally homogeneous (0/14 KW significant) but functionally distinct
+- ALL 17/17 forbidden transitions involve HUB MIDDLEs (corrects C996)
+- PREFIX differentiates lanes within HUB: chi²=12957, Cramér's V=0.689
+- Safety buffers 3.8x qo-enriched (Fisher p=0.012)
+
+**PP_INFORMATION_DECOMPOSITION (5 tests):**
+- MIDDLE is primary for suffix (45.4% of H) and regime (7.1%); PREFIX is co-equal for position (10.1% vs 9.6%)
+- PREFIX positional zones: INITIAL (po, dch, so), CENTRAL (qo, ch, ok), FINAL (ar, al, or, BARE)
+- sh→qo enrichment (+20.5σ) reveals line-opening → continuation grammar
+- Cross-component MI: I(MIDDLE_t; PREFIX_{t+1}) = 0.499 bits
+- Positional grammar is universal: REGIME main effect H=0.27, p=0.97
+
+### Existing Constraints Extended
+- C996: Corrected from 13/17 to 17/17 HUB involvement in forbidden transitions
+- C661: PREFIX behavioral transformation (JSD=0.425) now includes positional encoding
+- C662: PREFIX role reclassification (75% reduction) operates alongside positional control
+- C997: Safety buffer QO mechanism confirmed and quantified within HUB (3.8x enrichment)
+
+---
+
+## Version 3.47 (2026-02-11) - B-Exclusive Geometric Integration (Architecture Complete)
+
+### Summary
+
+Binary-outcome micro-phase testing whether 900 B-exclusive MIDDLEs are geometrically subordinate or architecturally independent. All 5 tests converge: **SUBORDINATE**. 94% contain A atoms (89% string coverage), 33× A-compatible neighbor enrichment, 80% hapax, 81% single-folio, no energy effect. B-exclusive vocabulary is morphological elaboration of A's discrimination geometry, not a second system. Phase CLOSED with 1 constraint (C994). **Architecture complete** per expert directive — A's 972-MIDDLE discrimination geometry is the unified constraint surface.
+
+### New Constraints
+
+| # | Name | Tier | Key Evidence |
+|---|------|------|-------------|
+| C994 | B-Exclusive MIDDLEs Are Geometrically Subordinate | 2 | 5/5 tests SUBORDINATE; 94% A atoms, 89% coverage, 33× enrichment |
+
+### Key Findings (T1-T5)
+
+- B-exclusive MIDDLEs project into A's manifold (norm ratio 1.09, distance ratio 1.24) — **not a second geometry** (T1)
+- B-exclusive co-occurrence respects A's topology at 33× enrichment, clustering 0.748 (86% of A's 0.873) (T2)
+- 80% hapax, 94% compound, 81% single-folio — **morphological periphery**, not core vocabulary (T3)
+- No material energy effect (shift +0.0006, p=0.12) — **surface decoration** on A-space backbone (T4)
+- 89% mean string coverage by A atoms; most are 2-atom superstrings (54.3%) — **FULL_COLLAPSE** (T5)
+- 53/900 (5.9%) genuinely novel (no A atoms) — all single-character or rare bigrams, no structural significance
+- Expert prediction (Possibility A: SUBORDINATE) confirmed on all five axes
+
+---
+
+## Version 3.46 (2026-02-11) - Constraint Energy Functional
+
+### Summary
+
+Scalarized the ~100D discrimination space into a per-line compatibility energy E(line) = mean pairwise residual cosine. Five tests (T1-T5). B operates at **elevated constraint tension** (E = -0.011, below random by 0.016) — NOT minimizing energy. Radial depth in the manifold is the dominant predictor (ρ = -0.517). e-kernel is the compatibility kernel (ρ = +0.309), geometrically confirming C105. REGIME_4 uniquely converges in energy (var ratio 0.28). **Geometric closure**: escape rate, radial depth, and energy form a coherent triangle. Phase CLOSED with 4 constraints (C990-C993).
+
+### New Constraints
+
+| # | Name | Tier | Key Evidence |
+|---|------|------|-------------|
+| C990 | B Operates at Elevated Constraint Tension | 2 | E=-0.011, shift -0.016, p=10⁻¹⁰¹ |
+| C991 | Radial Depth Dominates Line-Level Energy | 2 | depth→E ρ=-0.517, p=10⁻¹⁶⁴ |
+| C992 | e-Kernel Is the Compatibility Kernel | 2 | e→E ρ=+0.309, p=2×10⁻⁵⁴ |
+| C993 | REGIME_4 Uniquely Converges in Energy | 2 | trend ρ=-0.90, var ratio 0.28 |
+
+### Key Findings (T1-T5)
+
+- B lines have **more constraint tension** than random MIDDLE subsets — inverted from prediction
+- The 80% token concordance (C989) coexists with net negative cosine — B respects boundaries while operating near them
+- **Radial depth** (ρ=-0.517) is the strongest single predictor of line energy — dwarfs all others
+- AZC zone restrictiveness maps to radial depth: R3 deepest, C shallowest — mechanizes C443
+- **e-kernel dominates compatibility** (3× stronger than h, 6× stronger than k) — stability anchor confirmed geometrically
+- REGIME_4 starts with widest energy spread and converges to tightest — unique among all REGIMEs
+- HT (first lines) have higher energy (-0.003 vs -0.011) and higher compound fraction (0.188 vs 0.102)
+- B's grammar uses constraint tension **functionally** — not a penalty to avoid, an operating parameter
+
+---
+
+## Version 3.45 (2026-02-11) - Discrimination Space Phase Closure
+
+### Summary
+
+Completed the DISCRIMINATION_SPACE_DERIVATION phase with T10-T12 (AZC submanifold projection, hub-residual structure, B-side validation). Hub eigenmode (λ₁=82) identified as frequency gradient (ρ=-0.792). Residual space is continuous curved manifold, not blocks. AZC folio cohesion is entirely hub-driven (27/27→0/27 after removal). B execution inhabits A's geometry at 37× token-level enrichment. **A→AZC→B pipeline is geometrically closed.** Phase CLOSED with 9 constraints (C981-C989).
+
+### New Constraints
+
+| # | Name | Tier | Key Evidence |
+|---|------|------|-------------|
+| C986 | Hub Eigenmode Is Frequency Gradient | 2 | λ₁=82, hub-frequency ρ=-0.792, monotonic with frequency band |
+| C987 | Discrimination Manifold Is Continuous | 2 | Best k=5, sil=0.245, gap=-0.014, 865/972 in one cluster |
+| C988 | AZC Folio Cohesion Is Hub-Driven | 2 | Full: 27/27 z=+13.26; Residual: 0/27 z=-2.68 |
+| C989 | B Execution Inhabits A's Discrimination Geometry | 2 | 80.2% token-level, 37× enrichment, residual cosine aligned |
+
+### Key Findings (T10-T12)
+
+- Hub eigenmode is the **frequency/centrality axis** — separable from constraint structure
+- Removing hub reveals **continuous manifold** (fuzzy bands, not blocks) — resolves C984 mechanism
+- AZC folio "coherence" is an artifact of **hub frequency alignment** — no deep manifold partitioning
+- B execution **massively respects** A's compatibility boundaries (37× enrichment at token level)
+- Violations concentrate in **rare MIDDLEs** — observation gap, not structural exception
+- Section S stands alone in B residual space — consistent with C941
+
+---
+
+## Version 3.44 (2026-02-11) - Discrimination Space Derivation
+
+### Summary
+
+Full characterization of the MIDDLE discrimination space (972 MIDDLEs, C475 basis). Nine tests (T1-T9) establish: spectral fingerprint is genuine (RARE under Configuration Model, 4/5 metrics anomalous z=+17 to +137; STABLE under bootstrap CV<0.055); dimensionality ~101 from 7 convergent methods; clustering 0.873 is +137σ above random (transitive compatibility); independent binary feature model categorically fails (clustering ceiling 0.49); character features partially predict compatibility (AUC 0.71 vs spectral 0.93).
+
+### New Constraints
+
+| # | Name | Tier | Key Evidence |
+|---|------|------|-------------|
+| C981 | MIDDLE Discrimination Space Is a Structural Fingerprint | 2 | 4/5 metrics anomalous under CM, z=+17 to +137, CV<0.055 |
+| C982 | Discrimination Space Dimensionality ~101 | 2 | Median of 7 methods, STRUCTURED_HIGH_DIMENSIONAL |
+| C983 | Compatibility Is Strongly Transitive | 2 | Clustering 0.873 vs CM 0.253, z=+136.9 |
+| C984 | Independent Binary Features Insufficient | 2 | AND-model clustering ceiling 0.49 vs target 0.87 |
+| C985 | Character-Level Features Insufficient for Discrimination | 2 | AUC 0.71 vs spectral 0.93, PREFIX ARI=0.006 |
+
+### Key Findings
+
+- FINGERPRINT_CONFIRMED: spectral profile is anomalous AND stable — genuine structural property
+- ~101 effective dimensions quantify the "token-level parameterization" layer of C976's three-layer architecture
+- Clustering 0.873 is the single most anomalous property (+137σ) — compatibility is strongly transitive
+- Independent features produce clustering ~0.44 regardless of K — constraint features must be correlated/hierarchical
+- Character features explain 71% but miss 29% — discrimination requires non-morphological information
+- Architecture: Hub manifold (λ₁=82) + 28 structured axes + 70 fine-grained axes + noise tail
+
+---
+
+## Version 3.43 (2026-02-11) - Controlled Variable Analysis
+
+### Summary
+
+Tier 3/4 comparative analysis identifying the controlled variable tracked by the 6-state automaton. Five distillation-context candidates scored against a 14-property structural signature extracted from C976-C980. **Temperature / Thermal State wins at 95.8% (23/24), 20.8pp gap over runner-up (Phase Boundary Position, 75.0%).** Documented as fit F-BRU-021, not as a constraint (framework-dependent interpretation).
+
+### New Fits
+
+| # | Name | Tier | Result |
+|---|------|------|--------|
+| F-BRU-021 | Controlled Variable Identification (Temperature) | F3 | SUCCESS (95.8%) |
+
+### Key Findings
+
+- Grammar tracks the input variable (fire degree) not the output measurement (distillate quality)
+- Phase boundary is the primary physical effect of thermal state — input controls output
+- Categorical control (SIG-11) matches visual fire assessment, not thermometer reading
+- REGIME intensity scaling (C979) maps directly to fire degree escalation
+- Only weakness: binary lane oscillation mapping to thermal modes is underspecified
+
+---
+
+## Version 3.42 (2026-02-11) - Minimal State Automaton Phase
+
+### Summary
+
+Structural compression of 49-class Currier B grammar into minimal latent state automaton. **Verdict: 6 states (COMPRESSIBLE, 8.2x compression).** Holdout-invariant (100/100 trials produce 6 states). Hub-and-spoke topology with AXM as universal attractor. REGIME modulates transition weights, not topology. Three-layer architecture established: 6-state control topology / 49-class grammar / token-level parameterization.
+
+### New Constraints
+
+| # | Name | Tier | Key Evidence |
+|---|------|------|-------------|
+| C976 | Transition Topology Compresses to 6 States | 2 | 49→6, 8.2x, holdout ARI=0.939 |
+| C977 | EN/AX Transitionally Indistinguishable | 2 | 38 classes merge, AXm→AXM 24.4x asymmetry |
+| C978 | Hub-and-Spoke with Sub-2-Token Mixing | 2 | Spectral gap 0.894, mixing 1.1 tokens |
+| C979 | REGIME Modulates Weights Not Topology | 2 | chi2=475.5, FL regime-independent |
+| C980 | Free Variation Envelope | 2 | 48 eigenvalues, 6 necessary states |
+
+### Key Findings
+
+- Grammar is a 6-state automaton dressed in 49 classes; classes provide lexical diversity, states provide structural law
+- EN/AX merge at topology level (foreshadowed by C572, C574, C615) but remain morphologically distinct
+- FL_HAZ/FL_SAFE regime-independent — boundary markers are constants, operational interior is parameterized
+- Role taxonomy and dynamic constraints produce convergent boundaries — roles are not cosmetic
+- Depletion is within-state texture (real 19 vs synthetic 3.8, z=+7.6) — not captured by 6-state macro model
+- REGIME_4 has highest FQ scaffolding rate (0.237 vs pooled 0.173), confirming precision interpretation (C494)
+- 6-state count perfectly holdout-stable; partition ARI=0.939 with instability only at AXm/AXM boundary
+
+---
+
+## Version 3.41 (2026-02-10) - Fingerprint Uniqueness Phase
+
+### Summary
+
+Null-model stress test of 11-property Voynich B statistical fingerprint against generic sparse categorical grammars. **Verdict: UNCOMMON** (Fisher p = 7.67e-08, worst-case single-test p = 0.024). Four tests with 11 null ensembles total (30,000+ random instances). Four of eleven fingerprint properties discriminate universally; four are non-discriminating at 49-class granularity (they operate within roles).
+
+### New Constraints
+
+| # | Name | Tier | Key Evidence |
+|---|------|------|-------------|
+| C971 | Transition Asymmetry Structurally Rare | 2 | 18 depleted, 100% asymmetric, p<=0.0001 |
+| C972 | Cross-Line Independence Stronger Than Random Markov | 2 | MI=0.521 vs null 0.72-0.77, p=0.000 |
+| C973 | Compositional Sparsity Exceeds Low-Dimensional Models | 2 | Latent 3-5D: incomp 0.001 vs 0.460, p=0.000 |
+| C974 | Suffix-Role Binding Structural Not Random | 2 | chi2=3872 vs null 390, p=0.000 |
+| C975 | Fingerprint Joint Uniqueness UNCOMMON | 2 | Fisher p=7.67e-08, 4/11 discriminate |
+
+### Key Findings
+
+- Strongest discriminators: 100% transition asymmetry (F2) and unusually low cross-line MI (F10)
+- Latent feature models (3-5 dimensions) produce near-zero incompatibility (0.001 vs 0.460) — dimensional necessity confirmed
+- First-order BIC sufficiency is universal (100% of null chains also first-order) — NOT discriminating
+- Sharp hazard gate invisible at 49-class level — operates within roles (C967)
+- Suffix-role chi2 drops 10x under random class reassignment — binding is class-structure property
+- Joint constellation cannot be generated by random categorical grammars
+
+### Files
+
+- `context/CLAIMS/C971_transition_asymmetry_rare.md` - new
+- `context/CLAIMS/C972_cross_line_independence_rare.md` - new
+- `context/CLAIMS/C973_compositional_sparsity_exceeds_latent.md` - new
+- `context/CLAIMS/C974_suffix_role_binding_structural.md` - new
+- `context/CLAIMS/C975_fingerprint_joint_uncommon.md` - new
+- `context/CLAIMS/INDEX.md` - updated (823 constraints, v3.41)
+- `context/MAPS/claim_to_phase.md` - updated
+- `phases/FINGERPRINT_UNIQUENESS/` - 5 test scripts + 5 result JSONs
+
+---
+
 ## Version 3.38 (2026-02-09) - Material Locus Search Phase
 
 ### Summary

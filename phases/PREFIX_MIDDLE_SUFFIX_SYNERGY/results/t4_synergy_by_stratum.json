@@ -1,0 +1,23 @@
+{
+  "strata": {
+    "EN_SUFFIX_RICH": {
+      "n": 7211,
+      "co_info_position": -0.00014680389945363054,
+      "co_info_regime": -0.006820567215141793,
+      "skipped": false
+    },
+    "AX_SUFFIX_MODERATE": {
+      "n": 4140,
+      "co_info_position": -0.021962036977484,
+      "co_info_regime": -0.012067849560431027,
+      "skipped": false
+    },
+    "DEPLETED": {
+      "n": 4703,
+      "co_info_position": 0.0011101610552679692,
+      "co_info_regime": 0.0020751359066575603,
+      "skipped": false
+    }
+  },
+  "verdict": "SYNERGY_UNIFORM"
+}

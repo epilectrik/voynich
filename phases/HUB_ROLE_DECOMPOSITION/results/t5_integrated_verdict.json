@@ -1,0 +1,65 @@
+{
+  "metadata": {
+    "phase": "HUB_ROLE_DECOMPOSITION",
+    "test": "T5_INTEGRATED_VERDICT"
+  },
+  "dimension_scores": {
+    "sub_role_decomposability": {
+      "score": 0.0,
+      "evidence": "0/14 dimensions significant (T1 verdict: HOMOGENEOUS)",
+      "verdict": "HOMOGENEOUS"
+    },
+    "prefix_differentiation": {
+      "score": 0.6666666666666666,
+      "evidence": "Lane chi2 p=0.00e+00, Buffer Fisher p=0.0124, MI gain=0.0% (T2 verdict: PREFIX_PARTIAL)",
+      "verdict": "PREFIX_PARTIAL"
+    },
+    "forbidden_concentration": {
+      "score": 1.0,
+      "evidence": "Permutation p=0.0000, observed=17/17 (verdict: HUB_MONOPOLY_STRUCTURAL)",
+      "verdict": "HUB_MONOPOLY_STRUCTURAL"
+    },
+    "internal_structure": {
+      "score": 1.0,
+      "evidence": "Compound sig dims=2, Position p=1.0000, Regime sil=0.398 (T4 verdict: MULTI_SIGNAL_SUBROLES)",
+      "verdict": "MULTI_SIGNAL_SUBROLES"
+    }
+  },
+  "total_score": 2.6666666666666665,
+  "high_dimensions": 3,
+  "verdict": "HUB_DECOMPOSABLE",
+  "verdict_detail": "3/4 dimensions show significant sub-structure (total score 2.7/4.0). HUB should be split in future analysis.",
+  "sub_role_groups": {
+    "HAZARD_SOURCE": [
+      "ar",
+      "dy",
+      "ey",
+      "l",
+      "ol",
+      "or"
+    ],
+    "HAZARD_TARGET": [
+      "aiin",
+      "al",
+      "ee",
+      "o",
+      "r",
+      "t"
+    ],
+    "SAFETY_BUFFER": [
+      "eol",
+      "k",
+      "od"
+    ],
+    "PURE_CONNECTOR": [
+      "d",
+      "e",
+      "eey",
+      "ek",
+      "eo",
+      "iin",
+      "s",
+      "y"
+    ]
+  }
+}

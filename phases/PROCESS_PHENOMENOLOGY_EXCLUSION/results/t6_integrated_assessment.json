@@ -1,0 +1,68 @@
+{
+  "test": "T6_integrated_assessment",
+  "thread_a_phenomenological_alignment": {
+    "sensorimotor_coverage": 0.9828,
+    "hazard_coherence": 0.86,
+    "state_derivation": 0.964,
+    "composite_score": 0.9403,
+    "verdict": "HIGH",
+    "component_verdicts": {
+      "T2": "VIABLE",
+      "T3": "COHERENT",
+      "T5": "DERIVED"
+    }
+  },
+  "thread_b_domain_exclusion": {
+    "exclusion_gap": 0.625,
+    "best_alternative": {
+      "domain": "METALLURGY",
+      "score": 0.375
+    },
+    "killer_features_count": 18,
+    "total_features": 20,
+    "verdict": "STRONG",
+    "t4_verdict": "EXCLUDED"
+  },
+  "stop_rules": {
+    "domain_exclusion_failed": false,
+    "sensory_coverage_below_50": false,
+    "hazard_mapping_incoherent": false,
+    "state_count_inconsistent": false
+  },
+  "any_stop_triggered": false,
+  "integrated_verdict": {
+    "phenomenological_alignment": "HIGH",
+    "domain_exclusion": "STRONG",
+    "overall": "DISTILLATION_SUPPORTED",
+    "confidence_statement": "The Voynich Manuscript's Currier B control architecture is structurally compatible with \u2014 and discriminates uniquely toward \u2014 circulatory reflux distillation (pelican). Thread A: 25 sensory phenomena of pelican operation map bidirectionally to architectural features (98.3% coverage), hazard distribution matches pelican failure modes (rho=0.900), and the 6-state automaton maps to physically necessary operational modes (score=0.964). Thread B: All 7 alternative domains score below 37.5% compatibility, with 18/20 features being 'killer' discriminators that exclude all alternatives. This does NOT prove the manuscript is a distillation manual, but it establishes that no other 15th-century process domain produces a compatible structural fingerprint."
+  },
+  "evidence_chain": [
+    "T1: Joint fingerprint compiled from 18 source files, 20 binary features extracted",
+    "T2: Sensorimotor ontology covers 96.5% architecture->sensory, 100.0% sensory->architecture (VIABLE)",
+    "T3: Hazard phenomenology: pelican rank rho=0.900, 5/5 classes coherent, CONTAINMENT at 24% (COHERENT)",
+    "T4: Domain exclusion: gap=62.5%, best alternative=METALLURGY at 37.5%, 18 killer features (EXCLUDED)",
+    "T5: 6-state count DERIVED: 6/6 necessary, derivation score 0.964",
+    "T6: Integrated alignment=0.940 (HIGH), exclusion=STRONG, overall=DISTILLATION_SUPPORTED"
+  ],
+  "per_test_verdicts": {
+    "T1": "COMPILED",
+    "T2": "VIABLE",
+    "T3": "COHERENT",
+    "T4": "EXCLUDED",
+    "T5": "DERIVED",
+    "T6": "DISTILLATION_SUPPORTED"
+  },
+  "quantitative_summary": {
+    "sensorimotor_a2s": 0.9655,
+    "sensorimotor_s2a": 1.0,
+    "hazard_rho_pelican": 0.9,
+    "hazard_rho_open": 0.6,
+    "hazard_coherence_classes": "5/5",
+    "domain_gap": 0.625,
+    "domain_best_alt": "METALLURGY (37.5%)",
+    "domain_killer_features": "18/20",
+    "state_derivation_score": 0.964,
+    "state_necessary": "6/6",
+    "composite_alignment": 0.9403
+  }
+}

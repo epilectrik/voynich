@@ -1,0 +1,615 @@
+{
+  "_metadata": {
+    "method": "GMM k=4 on 15 standardized folio features",
+    "source_features": [
+      "k_ratio",
+      "h_ratio",
+      "e_ratio",
+      "iteration_rate",
+      "checkpoint_rate",
+      "terminal_rate",
+      "thermo_ke",
+      "thermo_kch",
+      "energy_rate",
+      "frequent_rate",
+      "link_rate",
+      "vocab_richness",
+      "mean_line_length",
+      "qo_fraction",
+      "fq_rate"
+    ],
+    "n_folios": 82,
+    "n_clusters": 4,
+    "silhouette": 0.2457,
+    "bic": 1521.8,
+    "bic_comparison": {
+      "3": 1506.1,
+      "4": 1521.8,
+      "5": 1481.1,
+      "6": 1492.9
+    },
+    "silhouette_comparison": {
+      "3": 0.2507,
+      "4": 0.2457,
+      "5": 0.2466,
+      "6": 0.1874
+    },
+    "source_files": [
+      "results/folio_operational_profiles.json",
+      "phases/BRUNSCHWIG_CLOSED_LOOP_DIMENSIONS/results/folio_energy_frequent.json",
+      "Transcript-derived (scripts/voynich.py)"
+    ],
+    "replaces": "phases/REGIME_SEMANTIC_INTERPRETATION/results/regime_folio_mapping.json",
+    "warning": "This is the authoritative regime mapping. Do not use other sources."
+  },
+  "regime_assignments": {
+    "f103r": {
+      "regime": "REGIME_1",
+      "probability": 0.9997,
+      "cluster_id": 3
+    },
+    "f103v": {
+      "regime": "REGIME_1",
+      "probability": 0.9974,
+      "cluster_id": 3
+    },
+    "f104r": {
+      "regime": "REGIME_3",
+      "probability": 0.9925,
+      "cluster_id": 2
+    },
+    "f104v": {
+      "regime": "REGIME_3",
+      "probability": 0.998,
+      "cluster_id": 2
+    },
+    "f105r": {
+      "regime": "REGIME_4",
+      "probability": 0.7992,
+      "cluster_id": 1
+    },
+    "f105v": {
+      "regime": "REGIME_3",
+      "probability": 0.684,
+      "cluster_id": 2
+    },
+    "f106r": {
+      "regime": "REGIME_3",
+      "probability": 0.9065,
+      "cluster_id": 2
+    },
+    "f106v": {
+      "regime": "REGIME_3",
+      "probability": 0.9815,
+      "cluster_id": 2
+    },
+    "f107r": {
+      "regime": "REGIME_3",
+      "probability": 0.6869,
+      "cluster_id": 2
+    },
+    "f107v": {
+      "regime": "REGIME_1",
+      "probability": 0.9923,
+      "cluster_id": 3
+    },
+    "f108r": {
+      "regime": "REGIME_1",
+      "probability": 0.995,
+      "cluster_id": 3
+    },
+    "f108v": {
+      "regime": "REGIME_1",
+      "probability": 0.9998,
+      "cluster_id": 3
+    },
+    "f111r": {
+      "regime": "REGIME_1",
+      "probability": 0.9961,
+      "cluster_id": 3
+    },
+    "f111v": {
+      "regime": "REGIME_1",
+      "probability": 0.9904,
+      "cluster_id": 3
+    },
+    "f112r": {
+      "regime": "REGIME_1",
+      "probability": 0.4307,
+      "cluster_id": 3
+    },
+    "f112v": {
+      "regime": "REGIME_1",
+      "probability": 0.4921,
+      "cluster_id": 3
+    },
+    "f113r": {
+      "regime": "REGIME_3",
+      "probability": 0.9955,
+      "cluster_id": 2
+    },
+    "f113v": {
+      "regime": "REGIME_3",
+      "probability": 0.8693,
+      "cluster_id": 2
+    },
+    "f114r": {
+      "regime": "REGIME_3",
+      "probability": 0.983,
+      "cluster_id": 2
+    },
+    "f114v": {
+      "regime": "REGIME_3",
+      "probability": 0.9958,
+      "cluster_id": 2
+    },
+    "f115r": {
+      "regime": "REGIME_3",
+      "probability": 0.984,
+      "cluster_id": 2
+    },
+    "f115v": {
+      "regime": "REGIME_3",
+      "probability": 0.9903,
+      "cluster_id": 2
+    },
+    "f116r": {
+      "regime": "REGIME_1",
+      "probability": 0.9965,
+      "cluster_id": 3
+    },
+    "f26r": {
+      "regime": "REGIME_4",
+      "probability": 0.8098,
+      "cluster_id": 1
+    },
+    "f26v": {
+      "regime": "REGIME_4",
+      "probability": 0.957,
+      "cluster_id": 1
+    },
+    "f31r": {
+      "regime": "REGIME_1",
+      "probability": 0.8074,
+      "cluster_id": 3
+    },
+    "f31v": {
+      "regime": "REGIME_4",
+      "probability": 0.8793,
+      "cluster_id": 1
+    },
+    "f33r": {
+      "regime": "REGIME_2",
+      "probability": 0.9998,
+      "cluster_id": 0
+    },
+    "f33v": {
+      "regime": "REGIME_2",
+      "probability": 0.9935,
+      "cluster_id": 0
+    },
+    "f34r": {
+      "regime": "REGIME_3",
+      "probability": 0.6306,
+      "cluster_id": 2
+    },
+    "f34v": {
+      "regime": "REGIME_3",
+      "probability": 0.9434,
+      "cluster_id": 2
+    },
+    "f39r": {
+      "regime": "REGIME_3",
+      "probability": 0.8921,
+      "cluster_id": 2
+    },
+    "f39v": {
+      "regime": "REGIME_2",
+      "probability": 1.0,
+      "cluster_id": 0
+    },
+    "f40r": {
+      "regime": "REGIME_2",
+      "probability": 0.9905,
+      "cluster_id": 0
+    },
+    "f40v": {
+      "regime": "REGIME_2",
+      "probability": 0.7114,
+      "cluster_id": 0
+    },
+    "f41r": {
+      "regime": "REGIME_4",
+      "probability": 0.9904,
+      "cluster_id": 1
+    },
+    "f41v": {
+      "regime": "REGIME_4",
+      "probability": 0.9993,
+      "cluster_id": 1
+    },
+    "f43r": {
+      "regime": "REGIME_4",
+      "probability": 0.7665,
+      "cluster_id": 1
+    },
+    "f43v": {
+      "regime": "REGIME_4",
+      "probability": 0.9431,
+      "cluster_id": 1
+    },
+    "f46r": {
+      "regime": "REGIME_3",
+      "probability": 0.4226,
+      "cluster_id": 2
+    },
+    "f46v": {
+      "regime": "REGIME_4",
+      "probability": 0.9994,
+      "cluster_id": 1
+    },
+    "f48r": {
+      "regime": "REGIME_4",
+      "probability": 1.0,
+      "cluster_id": 1
+    },
+    "f48v": {
+      "regime": "REGIME_4",
+      "probability": 0.8384,
+      "cluster_id": 1
+    },
+    "f50r": {
+      "regime": "REGIME_2",
+      "probability": 1.0,
+      "cluster_id": 0
+    },
+    "f50v": {
+      "regime": "REGIME_2",
+      "probability": 0.9921,
+      "cluster_id": 0
+    },
+    "f55r": {
+      "regime": "REGIME_2",
+      "probability": 1.0,
+      "cluster_id": 0
+    },
+    "f55v": {
+      "regime": "REGIME_2",
+      "probability": 0.9983,
+      "cluster_id": 0
+    },
+    "f57r": {
+      "regime": "REGIME_4",
+      "probability": 0.9998,
+      "cluster_id": 1
+    },
+    "f66r": {
+      "regime": "REGIME_4",
+      "probability": 0.9529,
+      "cluster_id": 1
+    },
+    "f66v": {
+      "regime": "REGIME_4",
+      "probability": 0.9964,
+      "cluster_id": 1
+    },
+    "f75r": {
+      "regime": "REGIME_1",
+      "probability": 1.0,
+      "cluster_id": 3
+    },
+    "f75v": {
+      "regime": "REGIME_1",
+      "probability": 0.9989,
+      "cluster_id": 3
+    },
+    "f76r": {
+      "regime": "REGIME_1",
+      "probability": 0.9981,
+      "cluster_id": 3
+    },
+    "f76v": {
+      "regime": "REGIME_1",
+      "probability": 0.9748,
+      "cluster_id": 3
+    },
+    "f77r": {
+      "regime": "REGIME_1",
+      "probability": 1.0,
+      "cluster_id": 3
+    },
+    "f77v": {
+      "regime": "REGIME_1",
+      "probability": 1.0,
+      "cluster_id": 3
+    },
+    "f78r": {
+      "regime": "REGIME_1",
+      "probability": 0.9993,
+      "cluster_id": 3
+    },
+    "f78v": {
+      "regime": "REGIME_1",
+      "probability": 0.9869,
+      "cluster_id": 3
+    },
+    "f79r": {
+      "regime": "REGIME_1",
+      "probability": 0.9856,
+      "cluster_id": 3
+    },
+    "f79v": {
+      "regime": "REGIME_1",
+      "probability": 0.9998,
+      "cluster_id": 3
+    },
+    "f80r": {
+      "regime": "REGIME_1",
+      "probability": 1.0,
+      "cluster_id": 3
+    },
+    "f80v": {
+      "regime": "REGIME_1",
+      "probability": 1.0,
+      "cluster_id": 3
+    },
+    "f81r": {
+      "regime": "REGIME_1",
+      "probability": 0.9974,
+      "cluster_id": 3
+    },
+    "f81v": {
+      "regime": "REGIME_1",
+      "probability": 0.9695,
+      "cluster_id": 3
+    },
+    "f82r": {
+      "regime": "REGIME_1",
+      "probability": 1.0,
+      "cluster_id": 3
+    },
+    "f82v": {
+      "regime": "REGIME_1",
+      "probability": 1.0,
+      "cluster_id": 3
+    },
+    "f83r": {
+      "regime": "REGIME_1",
+      "probability": 0.9947,
+      "cluster_id": 3
+    },
+    "f83v": {
+      "regime": "REGIME_1",
+      "probability": 1.0,
+      "cluster_id": 3
+    },
+    "f84r": {
+      "regime": "REGIME_1",
+      "probability": 0.9998,
+      "cluster_id": 3
+    },
+    "f84v": {
+      "regime": "REGIME_1",
+      "probability": 0.9995,
+      "cluster_id": 3
+    },
+    "f85r1": {
+      "regime": "REGIME_3",
+      "probability": 0.9247,
+      "cluster_id": 2
+    },
+    "f85r2": {
+      "regime": "REGIME_3",
+      "probability": 0.9539,
+      "cluster_id": 2
+    },
+    "f86v3": {
+      "regime": "REGIME_3",
+      "probability": 0.7254,
+      "cluster_id": 2
+    },
+    "f86v4": {
+      "regime": "REGIME_4",
+      "probability": 1.0,
+      "cluster_id": 1
+    },
+    "f86v5": {
+      "regime": "REGIME_2",
+      "probability": 0.6552,
+      "cluster_id": 0
+    },
+    "f86v6": {
+      "regime": "REGIME_2",
+      "probability": 0.9811,
+      "cluster_id": 0
+    },
+    "f94r": {
+      "regime": "REGIME_2",
+      "probability": 0.9953,
+      "cluster_id": 0
+    },
+    "f94v": {
+      "regime": "REGIME_3",
+      "probability": 0.8033,
+      "cluster_id": 2
+    },
+    "f95r1": {
+      "regime": "REGIME_1",
+      "probability": 0.9735,
+      "cluster_id": 3
+    },
+    "f95r2": {
+      "regime": "REGIME_2",
+      "probability": 0.9994,
+      "cluster_id": 0
+    },
+    "f95v1": {
+      "regime": "REGIME_2",
+      "probability": 0.5156,
+      "cluster_id": 0
+    },
+    "f95v2": {
+      "regime": "REGIME_2",
+      "probability": 1.0,
+      "cluster_id": 0
+    }
+  },
+  "regime_descriptions": {
+    "REGIME_2": {
+      "size": 15,
+      "description": "High: k_ratio, iteration_rate, terminal_rate, frequent_rate. Low: thermo_ke, link_rate, fq_rate.",
+      "high_features": [
+        "k_ratio",
+        "iteration_rate",
+        "terminal_rate",
+        "frequent_rate"
+      ],
+      "low_features": [
+        "thermo_ke",
+        "link_rate",
+        "fq_rate"
+      ],
+      "centroid": {
+        "k_ratio": 0.4178,
+        "h_ratio": 0.1747,
+        "e_ratio": 0.4075,
+        "iteration_rate": 0.0144,
+        "checkpoint_rate": 0.159,
+        "terminal_rate": 0.2934,
+        "thermo_ke": 0.0098,
+        "thermo_kch": 0.0108,
+        "energy_rate": 0.2137,
+        "frequent_rate": 0.2067,
+        "link_rate": 0.0,
+        "vocab_richness": 0.4011,
+        "mean_line_length": 9.1463,
+        "qo_fraction": 0.2845,
+        "fq_rate": 0.0709
+      }
+    },
+    "REGIME_4": {
+      "size": 15,
+      "description": "High: terminal_rate, link_rate, vocab_richness. Low: iteration_rate, checkpoint_rate, qo_fraction.",
+      "high_features": [
+        "terminal_rate",
+        "link_rate",
+        "vocab_richness"
+      ],
+      "low_features": [
+        "iteration_rate",
+        "checkpoint_rate",
+        "qo_fraction"
+      ],
+      "centroid": {
+        "k_ratio": 0.2215,
+        "h_ratio": 0.1705,
+        "e_ratio": 0.608,
+        "iteration_rate": 0.0041,
+        "checkpoint_rate": 0.0522,
+        "terminal_rate": 0.3278,
+        "thermo_ke": 0.029,
+        "thermo_kch": 0.0091,
+        "energy_rate": 0.2157,
+        "frequent_rate": 0.1316,
+        "link_rate": 0.0018,
+        "vocab_richness": 0.4649,
+        "mean_line_length": 11.3516,
+        "qo_fraction": 0.182,
+        "fq_rate": 0.1013
+      }
+    },
+    "REGIME_3": {
+      "size": 20,
+      "description": "High: h_ratio, thermo_kch. Low: fq_rate.",
+      "high_features": [
+        "h_ratio",
+        "thermo_kch"
+      ],
+      "low_features": [
+        "fq_rate"
+      ],
+      "centroid": {
+        "k_ratio": 0.2486,
+        "h_ratio": 0.2244,
+        "e_ratio": 0.527,
+        "iteration_rate": 0.0109,
+        "checkpoint_rate": 0.1651,
+        "terminal_rate": 0.1989,
+        "thermo_ke": 0.0207,
+        "thermo_kch": 0.0136,
+        "energy_rate": 0.2661,
+        "frequent_rate": 0.1162,
+        "link_rate": 0.0009,
+        "vocab_richness": 0.3234,
+        "mean_line_length": 9.9272,
+        "qo_fraction": 0.263,
+        "fq_rate": 0.0805
+      }
+    },
+    "REGIME_1": {
+      "size": 32,
+      "description": "High: thermo_ke, link_rate, fq_rate. Low: terminal_rate, thermo_kch, vocab_richness.",
+      "high_features": [
+        "thermo_ke",
+        "link_rate",
+        "fq_rate"
+      ],
+      "low_features": [
+        "terminal_rate",
+        "thermo_kch",
+        "vocab_richness"
+      ],
+      "centroid": {
+        "k_ratio": 0.3446,
+        "h_ratio": 0.1194,
+        "e_ratio": 0.536,
+        "iteration_rate": 0.0069,
+        "checkpoint_rate": 0.1383,
+        "terminal_rate": 0.1443,
+        "thermo_ke": 0.0411,
+        "thermo_kch": 0.0046,
+        "energy_rate": 0.3737,
+        "frequent_rate": 0.1175,
+        "link_rate": 0.0016,
+        "vocab_richness": 0.2204,
+        "mean_line_length": 9.2004,
+        "qo_fraction": 0.3399,
+        "fq_rate": 0.1929
+      }
+    }
+  },
+  "feature_means": {
+    "k_ratio": 0.3121,
+    "h_ratio": 0.1645,
+    "e_ratio": 0.5235,
+    "iteration_rate": 0.0087,
+    "checkpoint_rate": 0.1329,
+    "terminal_rate": 0.2184,
+    "thermo_ke": 0.0282,
+    "thermo_kch": 0.0088,
+    "energy_rate": 0.2893,
+    "frequent_rate": 0.1361,
+    "link_rate": 0.0011,
+    "vocab_richness": 0.3233,
+    "mean_line_length": 9.7613,
+    "qo_fraction": 0.2821,
+    "fq_rate": 0.1264
+  },
+  "feature_stds": {
+    "k_ratio": 0.0953,
+    "h_ratio": 0.0565,
+    "e_ratio": 0.0928,
+    "iteration_rate": 0.0105,
+    "checkpoint_rate": 0.0749,
+    "terminal_rate": 0.0998,
+    "thermo_ke": 0.0222,
+    "thermo_kch": 0.0093,
+    "energy_rate": 0.0932,
+    "frequent_rate": 0.0562,
+    "link_rate": 0.0023,
+    "vocab_richness": 0.1177,
+    "mean_line_length": 3.3883,
+    "qo_fraction": 0.0869,
+    "fq_rate": 0.0651
+  }
+}

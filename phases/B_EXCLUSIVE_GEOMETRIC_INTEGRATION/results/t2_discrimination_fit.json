@@ -1,0 +1,27 @@
+{
+  "test": "T2_discrimination_fit",
+  "n_exclusive": 900,
+  "n_shared": 393,
+  "pair_counts": {
+    "exc_exc": 608,
+    "exc_sha": 8795,
+    "sha_sha": 8587
+  },
+  "density": {
+    "exclusive": 0.0015029044617476208,
+    "a_matrix": 0.022731221895886045,
+    "ratio": 0.06611630772121495
+  },
+  "shared_compat_rate": 0.3938511703738209,
+  "neighbor_analysis": {
+    "n_exclusives_analyzed": 896,
+    "mean_compat_rate": 0.7576679937768104,
+    "enrichment": 33.33159991341843
+  },
+  "clustering": {
+    "mean_cc": 0.7481333862797125,
+    "a_baseline": 0.873
+  },
+  "verdict": "COMPATIBLE_TOPOLOGY",
+  "explanation": "Exclusive neighbors are A-compatible (33.3\u00d7 enrichment) but density differs (0.07\u00d7). Compatible extension with different sparsity."
+}

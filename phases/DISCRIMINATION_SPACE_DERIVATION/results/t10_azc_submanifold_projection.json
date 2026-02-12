@@ -1,0 +1,652 @@
+{
+  "test": "T10_azc_submanifold_projection",
+  "embedding_dim": 100,
+  "n_middles_total": 972,
+  "n_azc_middles_in_space": 250,
+  "azc_coverage_pct": 25.720164609053498,
+  "n_folios_tested": 27,
+  "n_coherent": 27,
+  "pct_coherent": 100.0,
+  "mean_cos_z": 13.257093635021828,
+  "cohesion_by_folio": {
+    "f57v": {
+      "n_middles": 44,
+      "mean_cosine_sim": 0.12111551771360363,
+      "mean_radius": 1.8407092621571566,
+      "null_cos_mean": 0.03626724182232272,
+      "null_cos_std": 0.006363538978402338,
+      "cos_z": 13.333504545073652,
+      "null_radius_mean": 0.8026579499027202,
+      "null_radius_std": 0.06967288831429039,
+      "radius_z": 14.898927507811168,
+      "section": "C"
+    },
+    "f67r1": {
+      "n_middles": 53,
+      "mean_cosine_sim": 0.12276154849709645,
+      "mean_radius": 1.7793170004675305,
+      "null_cos_mean": 0.03633012596126756,
+      "null_cos_std": 0.005705186528235541,
+      "cos_z": 15.149622559765767,
+      "null_radius_mean": 0.8034764923102437,
+      "null_radius_std": 0.06455285524533602,
+      "radius_z": 15.116922473042614,
+      "section": "A"
+    },
+    "f67r2": {
+      "n_middles": 51,
+      "mean_cosine_sim": 0.11281712101092674,
+      "mean_radius": 1.7284499250013148,
+      "null_cos_mean": 0.036331852841053315,
+      "null_cos_std": 0.005881139614924252,
+      "cos_z": 13.00517810796072,
+      "null_radius_mean": 0.803483131029345,
+      "null_radius_std": 0.06606889714457112,
+      "radius_z": 14.000033812399943,
+      "section": "A"
+    },
+    "f67v1": {
+      "n_middles": 40,
+      "mean_cosine_sim": 0.11799786607132692,
+      "mean_radius": 1.7376229858550984,
+      "null_cos_mean": 0.03631368973025233,
+      "null_cos_std": 0.0068101501352457305,
+      "cos_z": 11.994475117122684,
+      "null_radius_mean": 0.8015848661361246,
+      "null_radius_std": 0.07299207089868237,
+      "radius_z": 12.823832893003601,
+      "section": "A"
+    },
+    "f67v2": {
+      "n_middles": 32,
+      "mean_cosine_sim": 0.12156101613057765,
+      "mean_radius": 1.7671851625566166,
+      "null_cos_mean": 0.036319698789846235,
+      "null_cos_std": 0.007863653285506611,
+      "cos_z": 10.839912982663986,
+      "null_radius_mean": 0.7998509282240437,
+      "null_radius_std": 0.08230199382898785,
+      "radius_z": 11.753472660000917,
+      "section": "C"
+    },
+    "f68r1": {
+      "n_middles": 20,
+      "mean_cosine_sim": 0.13482091808020208,
+      "mean_radius": 1.9038925108479006,
+      "null_cos_mean": 0.036277154282303464,
+      "null_cos_std": 0.0108266077247196,
+      "cos_z": 9.101998179254325,
+      "null_radius_mean": 0.798942127670607,
+      "null_radius_std": 0.1065109423161257,
+      "radius_z": 10.374055089079844,
+      "section": "A"
+    },
+    "f68r2": {
+      "n_middles": 22,
+      "mean_cosine_sim": 0.13420249218329894,
+      "mean_radius": 1.906079807284829,
+      "null_cos_mean": 0.036465572057162686,
+      "null_cos_std": 0.010122329929601066,
+      "cos_z": 9.655575426396735,
+      "null_radius_mean": 0.799155460360091,
+      "null_radius_std": 0.09994868562630392,
+      "radius_z": 11.074926498417344,
+      "section": "A"
+    },
+    "f68r3": {
+      "n_middles": 39,
+      "mean_cosine_sim": 0.12883224451677508,
+      "mean_radius": 1.8980077369822725,
+      "null_cos_mean": 0.03634432024898604,
+      "null_cos_std": 0.006886788635050027,
+      "cos_z": 13.429760831786759,
+      "null_radius_mean": 0.8017906772558188,
+      "null_radius_std": 0.07434079544196202,
+      "radius_z": 14.74583441311537,
+      "section": "A"
+    },
+    "f68v1": {
+      "n_middles": 41,
+      "mean_cosine_sim": 0.13757473070591425,
+      "mean_radius": 1.975623327696426,
+      "null_cos_mean": 0.03627696956372119,
+      "null_cos_std": 0.006662311039963875,
+      "cos_z": 15.204598004289865,
+      "null_radius_mean": 0.8023151174500269,
+      "null_radius_std": 0.07223530668094974,
+      "radius_z": 16.24286327776926,
+      "section": "A"
+    },
+    "f68v2": {
+      "n_middles": 31,
+      "mean_cosine_sim": 0.1258640849091194,
+      "mean_radius": 1.8357305983550498,
+      "null_cos_mean": 0.03638993132144907,
+      "null_cos_std": 0.008135284919221584,
+      "cos_z": 10.998281495496972,
+      "null_radius_mean": 0.7999487212226035,
+      "null_radius_std": 0.08300186886683557,
+      "radius_z": 12.479018741062418,
+      "section": "A"
+    },
+    "f68v3": {
+      "n_middles": 55,
+      "mean_cosine_sim": 0.12200901399511697,
+      "mean_radius": 1.7813549319291317,
+      "null_cos_mean": 0.03638617585443742,
+      "null_cos_std": 0.005577075303749001,
+      "cos_z": 15.352641568802648,
+      "null_radius_mean": 0.8045027275185036,
+      "null_radius_std": 0.0633989117661038,
+      "radius_z": 15.408027948721067,
+      "section": "C"
+    },
+    "f69r": {
+      "n_middles": 51,
+      "mean_cosine_sim": 0.12678352592625733,
+      "mean_radius": 1.8307548608867215,
+      "null_cos_mean": 0.036331852841053315,
+      "null_cos_std": 0.005881139614924252,
+      "cos_z": 15.379956778388609,
+      "null_radius_mean": 0.803483131029345,
+      "null_radius_std": 0.06606889714457112,
+      "radius_z": 15.548492168856908,
+      "section": "C"
+    },
+    "f69v": {
+      "n_middles": 43,
+      "mean_cosine_sim": 0.1216262883089408,
+      "mean_radius": 1.839018623049208,
+      "null_cos_mean": 0.03629394579038288,
+      "null_cos_std": 0.006478901204063713,
+      "cos_z": 13.170804713773926,
+      "null_radius_mean": 0.802417534660098,
+      "null_radius_std": 0.07046998902295293,
+      "radius_z": 14.709823327082916,
+      "section": "C"
+    },
+    "f70r1": {
+      "n_middles": 36,
+      "mean_cosine_sim": 0.1341517407724829,
+      "mean_radius": 1.8452452558838957,
+      "null_cos_mean": 0.036281382209098795,
+      "null_cos_std": 0.007230199555321092,
+      "cos_z": 13.536328812854974,
+      "null_radius_mean": 0.802099506800119,
+      "null_radius_std": 0.07656823996682008,
+      "radius_z": 13.623739419056927,
+      "section": "C"
+    },
+    "f70r2": {
+      "n_middles": 46,
+      "mean_cosine_sim": 0.13060125266784317,
+      "mean_radius": 1.8682818359866709,
+      "null_cos_mean": 0.036355323362402756,
+      "null_cos_std": 0.006232211236086056,
+      "cos_z": 15.12239006915122,
+      "null_radius_mean": 0.8036602871917721,
+      "null_radius_std": 0.06873466454752292,
+      "radius_z": 15.48885930851998,
+      "section": "C"
+    },
+    "f70v1": {
+      "n_middles": 40,
+      "mean_cosine_sim": 0.1300803115789295,
+      "mean_radius": 1.9354959005444201,
+      "null_cos_mean": 0.03631368973025233,
+      "null_cos_std": 0.0068101501352457305,
+      "cos_z": 13.768657076059275,
+      "null_radius_mean": 0.8015848661361246,
+      "null_radius_std": 0.07299207089868237,
+      "radius_z": 15.534715215605216,
+      "section": "Z"
+    },
+    "f70v2": {
+      "n_middles": 54,
+      "mean_cosine_sim": 0.1182107779359534,
+      "mean_radius": 1.7915403823037641,
+      "null_cos_mean": 0.03639566247372074,
+      "null_cos_std": 0.005624285483165966,
+      "cos_z": 14.54675722047063,
+      "null_radius_mean": 0.8040400911906095,
+      "null_radius_std": 0.06393347918699177,
+      "radius_z": 15.445746167276885,
+      "section": "Z"
+    },
+    "f71r": {
+      "n_middles": 38,
+      "mean_cosine_sim": 0.13194303628842718,
+      "mean_radius": 1.9029138518238746,
+      "null_cos_mean": 0.036365045243874634,
+      "null_cos_std": 0.007012108906823306,
+      "cos_z": 13.630420222302599,
+      "null_radius_mean": 0.8015999528454303,
+      "null_radius_std": 0.07517237768300404,
+      "radius_z": 14.650513033159571,
+      "section": "Z"
+    },
+    "f71v": {
+      "n_middles": 39,
+      "mean_cosine_sim": 0.12393381872108909,
+      "mean_radius": 1.8431774135551866,
+      "null_cos_mean": 0.03634432024898604,
+      "null_cos_std": 0.006886788635050027,
+      "cos_z": 12.718482171257575,
+      "null_radius_mean": 0.8017906772558188,
+      "null_radius_std": 0.07434079544196202,
+      "radius_z": 14.008280784571106,
+      "section": "Z"
+    },
+    "f72r1": {
+      "n_middles": 43,
+      "mean_cosine_sim": 0.12195227638769522,
+      "mean_radius": 1.8541435574581717,
+      "null_cos_mean": 0.03629394579038288,
+      "null_cos_std": 0.006478901204063713,
+      "cos_z": 13.221120047884895,
+      "null_radius_mean": 0.802417534660098,
+      "null_radius_std": 0.07046998902295293,
+      "radius_z": 14.924452768901578,
+      "section": "Z"
+    },
+    "f72r2": {
+      "n_middles": 42,
+      "mean_cosine_sim": 0.13465685315566614,
+      "mean_radius": 1.956839517677923,
+      "null_cos_mean": 0.03630555155576612,
+      "null_cos_std": 0.006533682388655104,
+      "cos_z": 15.052966420693233,
+      "null_radius_mean": 0.8025172896518231,
+      "null_radius_std": 0.07142671645437197,
+      "radius_z": 16.160930885903053,
+      "section": "Z"
+    },
+    "f72r3": {
+      "n_middles": 51,
+      "mean_cosine_sim": 0.11562228670677702,
+      "mean_radius": 1.7845809430563,
+      "null_cos_mean": 0.036331852841053315,
+      "null_cos_std": 0.005881139614924252,
+      "cos_z": 13.482154660044566,
+      "null_radius_mean": 0.803483131029345,
+      "null_radius_std": 0.06606889714457112,
+      "radius_z": 14.84961690642617,
+      "section": "Z"
+    },
+    "f72v1": {
+      "n_middles": 45,
+      "mean_cosine_sim": 0.11684871057781153,
+      "mean_radius": 1.748377296748079,
+      "null_cos_mean": 0.03631487558022968,
+      "null_cos_std": 0.006320161289694062,
+      "cos_z": 12.742370219080316,
+      "null_radius_mean": 0.8032564032602085,
+      "null_radius_std": 0.06911468578227346,
+      "radius_z": 13.674675400611822,
+      "section": "Z"
+    },
+    "f72v2": {
+      "n_middles": 43,
+      "mean_cosine_sim": 0.1277791134158429,
+      "mean_radius": 1.8275181330244974,
+      "null_cos_mean": 0.03629394579038288,
+      "null_cos_std": 0.006478901204063713,
+      "cos_z": 14.120475794271789,
+      "null_radius_mean": 0.802417534660098,
+      "null_radius_std": 0.07046998902295293,
+      "radius_z": 14.546626338064446,
+      "section": "Z"
+    },
+    "f72v3": {
+      "n_middles": 40,
+      "mean_cosine_sim": 0.12967095036128867,
+      "mean_radius": 1.8810673414692036,
+      "null_cos_mean": 0.03631368973025233,
+      "null_cos_std": 0.0068101501352457305,
+      "cos_z": 13.708546621882624,
+      "null_radius_mean": 0.8015848661361246,
+      "null_radius_std": 0.07299207089868237,
+      "radius_z": 14.789037522054544,
+      "section": "Z"
+    },
+    "f73r": {
+      "n_middles": 45,
+      "mean_cosine_sim": 0.12183880808913011,
+      "mean_radius": 1.7891723700377065,
+      "null_cos_mean": 0.03631487558022968,
+      "null_cos_std": 0.006320161289694062,
+      "cos_z": 13.531922460327015,
+      "null_radius_mean": 0.8032564032602085,
+      "null_radius_std": 0.06911468578227346,
+      "radius_z": 14.264927281639551,
+      "section": "Z"
+    },
+    "f73v": {
+      "n_middles": 43,
+      "mean_cosine_sim": 0.11496482025192342,
+      "mean_radius": 1.7854006918670908,
+      "null_cos_mean": 0.03629394579038288,
+      "null_cos_std": 0.006478901204063713,
+      "cos_z": 12.142626038532025,
+      "null_radius_mean": 0.802417534660098,
+      "null_radius_std": 0.07046998902295293,
+      "radius_z": 13.948961406632593,
+      "section": "Z"
+    }
+  },
+  "separation": {
+    "mean_interfolio_cos": 0.9474732666881351,
+    "null_inter_cos_mean": 0.6197683893103927,
+    "null_inter_cos_std": 0.011121150483261018,
+    "inter_cos_z": 29.466814415557717,
+    "mean_interfolio_dist": 0.272113456900835,
+    "null_inter_dist_mean": 0.20338613073021036,
+    "null_inter_dist_std": 0.00544004201688869,
+    "inter_dist_z": 12.633602085656626
+  },
+  "section_structure": {
+    "mean_within_dist": 0.2617229155578215,
+    "mean_between_dist": 0.2771766444196763,
+    "within_between_ratio": 0.9442459198024775,
+    "n_within_pairs": 115,
+    "n_between_pairs": 236,
+    "mannwhitney_U": 10695.0,
+    "mannwhitney_p": 0.0006373012558471533,
+    "mean_within_cos": 0.9512968412132765,
+    "mean_between_cos": 0.9456100841864773
+  },
+  "zone_trajectories": {
+    "f57v": {
+      "zones": [
+        "R1",
+        "R2",
+        "R3"
+      ],
+      "zone_sizes": {
+        "R1": 26,
+        "R2": 12,
+        "R3": 19
+      },
+      "sequential_distances": [
+        0.5376135587354512,
+        0.5813555683034596
+      ],
+      "total_trajectory_length": 1.1189691270389108
+    },
+    "f70v1": {
+      "zones": [
+        "R1",
+        "R2",
+        "S1",
+        "S2"
+      ],
+      "zone_sizes": {
+        "R1": 18,
+        "R2": 19,
+        "S1": 7,
+        "S2": 12
+      },
+      "sequential_distances": [
+        0.5377609748540918,
+        0.8709304465339546,
+        0.9486737212825577
+      ],
+      "total_trajectory_length": 2.357365142670604
+    },
+    "f70v2": {
+      "zones": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ],
+      "zone_sizes": {
+        "R1": 12,
+        "R2": 24,
+        "R3": 30,
+        "S1": 8,
+        "S2": 14
+      },
+      "sequential_distances": [
+        0.5764837450003961,
+        0.32673378013710647,
+        0.6144726666208149,
+        0.6389515686776277
+      ],
+      "total_trajectory_length": 2.156641760435945
+    },
+    "f71r": {
+      "zones": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ],
+      "zone_sizes": {
+        "R1": 20,
+        "R2": 15,
+        "R3": 9,
+        "S1": 9,
+        "S2": 5
+      },
+      "sequential_distances": [
+        0.46348817882418447,
+        0.7235809276232448,
+        0.8117656539788886,
+        1.3165989448774666
+      ],
+      "total_trajectory_length": 3.315433705303785
+    },
+    "f71v": {
+      "zones": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ],
+      "zone_sizes": {
+        "R1": 23,
+        "R2": 20,
+        "R3": 9,
+        "S1": 9,
+        "S2": 5
+      },
+      "sequential_distances": [
+        0.3846562383041296,
+        0.6297489419032228,
+        0.9759953721130182,
+        1.0950939430209494
+      ],
+      "total_trajectory_length": 3.0854944953413197
+    },
+    "f72r1": {
+      "zones": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ],
+      "zone_sizes": {
+        "R1": 26,
+        "R2": 16,
+        "R3": 10,
+        "S1": 11,
+        "S2": 5
+      },
+      "sequential_distances": [
+        0.4854504480190016,
+        0.7079510078697177,
+        0.8184164533909037,
+        0.9375619211677618
+      ],
+      "total_trajectory_length": 2.9493798304473846
+    },
+    "f72r2": {
+      "zones": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ],
+      "zone_sizes": {
+        "R1": 23,
+        "R2": 18,
+        "R3": 13,
+        "S1": 11,
+        "S2": 5
+      },
+      "sequential_distances": [
+        0.5050144467292258,
+        0.6483679341144958,
+        0.6601699468458998,
+        0.9648902665808141
+      ],
+      "total_trajectory_length": 2.7784425942704356
+    },
+    "f72r3": {
+      "zones": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ],
+      "zone_sizes": {
+        "R1": 21,
+        "R2": 18,
+        "R3": 16,
+        "S1": 12,
+        "S2": 14
+      },
+      "sequential_distances": [
+        0.42066179510341284,
+        0.535061823901169,
+        0.5919582520358887,
+        0.5791354954508914
+      ],
+      "total_trajectory_length": 2.1268173664913617
+    },
+    "f72v1": {
+      "zones": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ],
+      "zone_sizes": {
+        "R1": 19,
+        "R2": 14,
+        "R3": 9,
+        "S1": 14,
+        "S2": 8
+      },
+      "sequential_distances": [
+        0.640455510126399,
+        0.9580983865618378,
+        1.0004256479834392,
+        0.7557916486894041
+      ],
+      "total_trajectory_length": 3.3547711933610804
+    },
+    "f72v2": {
+      "zones": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ],
+      "zone_sizes": {
+        "R1": 17,
+        "R2": 20,
+        "R3": 10,
+        "S1": 9,
+        "S2": 8
+      },
+      "sequential_distances": [
+        0.4945613882215887,
+        0.6934764044076024,
+        0.8714601757110656,
+        0.8223405296662253
+      ],
+      "total_trajectory_length": 2.881838498006482
+    },
+    "f72v3": {
+      "zones": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ],
+      "zone_sizes": {
+        "R1": 19,
+        "R2": 14,
+        "R3": 8,
+        "S1": 13,
+        "S2": 10
+      },
+      "sequential_distances": [
+        0.5259528678184795,
+        0.8244464905057002,
+        0.8529195937657673,
+        0.6733410491354501
+      ],
+      "total_trajectory_length": 2.876660001225397
+    },
+    "f73r": {
+      "zones": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ],
+      "zone_sizes": {
+        "R1": 21,
+        "R2": 16,
+        "R3": 5,
+        "S1": 13,
+        "S2": 7
+      },
+      "sequential_distances": [
+        0.5714934675963509,
+        0.9552173141606671,
+        1.019714297798959,
+        0.8946842814691673
+      ],
+      "total_trajectory_length": 3.4411093610251444
+    },
+    "f73v": {
+      "zones": [
+        "R1",
+        "R2",
+        "R3",
+        "S1",
+        "S2"
+      ],
+      "zone_sizes": {
+        "R1": 25,
+        "R2": 16,
+        "R3": 6,
+        "S1": 11,
+        "S2": 8
+      },
+      "sequential_distances": [
+        0.43892700570582427,
+        0.819758309071147,
+        1.0026135395817095,
+        0.7488266405397525
+      ],
+      "total_trajectory_length": 3.0101254948984333
+    }
+  },
+  "verdict": "COHERENT_SUBMANIFOLDS",
+  "explanation": "27/27 AZC folios show significantly tighter MIDDLE clustering than random subsets (mean cos_z=13.26). Section structure is significant (p=0.0006). AZC folios correspond to coherent subregions of the discrimination space."
+}

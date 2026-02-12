@@ -11,6 +11,7 @@ Usage:
     python scripts/show_b_folio.py f26r -p --no-color # Paragraph without colors
     python scripts/show_b_folio.py f26r --flow       # Control-flow rendering
     python scripts/show_b_folio.py f26r -s           # Raw morpheme structural view
+    python scripts/show_b_folio.py f26r --detail 4   # Full metadata dump
 """
 import argparse
 import sys
@@ -88,6 +89,17 @@ def display_flow(folio_id: str, line_num: int = None, para_num: int = None, use_
     for la in lines:
         total_count += len(la.tokens)
 
+        # Build macro sigils for all tokens (always available)
+        sigils = []
+        for tok in la.tokens:
+            fg = tok.flow_gloss()
+            macro = fg.get('macro_state', '') or ''
+            if macro.startswith('FL_'):
+                sigils.append('FL')
+            else:
+                sigils.append(macro[:3] if macro else '---')
+        sigil_line = ' '.join(sigils)
+
         # Build flow rendering with colors
         if color_enabled:
             tok_parts = []
@@ -121,6 +133,7 @@ def display_flow(folio_id: str, line_num: int = None, para_num: int = None, use_
 
         zone_tag = f" [{la.paragraph_zone}]" if la.paragraph_zone else ""
         print(f"L{la.line_id}{zone_tag}: {flow_line}")
+        print(f"    macro: {sigil_line}")
         print(f"    [{token_row}]")
         print()
 
@@ -236,7 +249,8 @@ def display_folio(folio_id: str,
                   show_manual: bool = True,
                   line_num: int = None,
                   debug_ht: bool = False,
-                  structural_mode: bool = False):
+                  structural_mode: bool = False,
+                  detail_level: int = 2):
     """Display a B folio with configurable columns."""
 
     d = BFolioDecoder()
@@ -317,6 +331,23 @@ def display_folio(folio_id: str,
 
             print(' | '.join(cols))
 
+            # Detail level 4: full metadata dump per token
+            if detail_level >= 4:
+                meta_parts = []
+                if tok.macro_state:
+                    desc = tok.MACRO_LABELS.get(tok.macro_state, tok.macro_state)
+                    meta_parts.append(f"macro:{tok.macro_state} ({desc})")
+                if tok.hub_sub_role:
+                    meta_parts.append(f"hub:{tok.hub_sub_role}")
+                if tok.middle_affordance_bin:
+                    meta_parts.append(f"bin:{tok.middle_affordance_bin}")
+                if tok.middle_affordance_family:
+                    meta_parts.append(f"family:{tok.middle_affordance_family}")
+                if tok.prefix_zone:
+                    meta_parts.append(f"zone:{tok.prefix_zone}")
+                if meta_parts:
+                    print(f"{'':>14}   {'  '.join(meta_parts)}")
+
     # Summary
     print()
     print(f"{'='*80}")
@@ -341,6 +372,8 @@ def main():
     parser.add_argument('--debug-ht', action='store_true', help='Show HT atom details')
     parser.add_argument('--structural-mode', '-s', action='store_true',
                         help='Raw morpheme notation (strips English MIDDLE/suffix labels)')
+    parser.add_argument('--detail', type=int, default=2, choices=[1, 2, 3, 4],
+                        help='Detail level: 1=macro only, 2=macro+refinement (default), 3=all layers, 4=full metadata')
 
     args = parser.parse_args()
 
@@ -369,7 +402,8 @@ def main():
         show_manual=show_manual,
         line_num=args.line,
         debug_ht=args.debug_ht,
-        structural_mode=args.structural_mode
+        structural_mode=args.structural_mode,
+        detail_level=args.detail,
     )
 
 

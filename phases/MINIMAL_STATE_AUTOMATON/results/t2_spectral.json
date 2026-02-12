@@ -1,0 +1,329 @@
+{
+  "test": "T2_spectral_analysis",
+  "eigenvalues": [
+    {
+      "magnitude": 1.000001,
+      "real": 1.000001,
+      "imag": 0.0
+    },
+    {
+      "magnitude": 0.208187,
+      "real": 0.208187,
+      "imag": 0.0
+    },
+    {
+      "magnitude": 0.135063,
+      "real": -0.135063,
+      "imag": 0.0
+    },
+    {
+      "magnitude": 0.08778,
+      "real": 0.08778,
+      "imag": 0.0
+    },
+    {
+      "magnitude": 0.080406,
+      "real": 0.070587,
+      "imag": 0.038504
+    },
+    {
+      "magnitude": 0.080406,
+      "real": 0.070587,
+      "imag": -0.038504
+    },
+    {
+      "magnitude": 0.073518,
+      "real": 0.072308,
+      "imag": 0.013286
+    },
+    {
+      "magnitude": 0.073518,
+      "real": 0.072308,
+      "imag": -0.013286
+    },
+    {
+      "magnitude": 0.071758,
+      "real": 0.049137,
+      "imag": 0.052295
+    },
+    {
+      "magnitude": 0.071758,
+      "real": 0.049137,
+      "imag": -0.052295
+    },
+    {
+      "magnitude": 0.063513,
+      "real": -0.063513,
+      "imag": 0.0
+    },
+    {
+      "magnitude": 0.057259,
+      "real": -0.028933,
+      "imag": -0.049412
+    },
+    {
+      "magnitude": 0.057259,
+      "real": -0.028933,
+      "imag": 0.049412
+    },
+    {
+      "magnitude": 0.05556,
+      "real": 0.05556,
+      "imag": 0.0
+    },
+    {
+      "magnitude": 0.055064,
+      "real": 0.012804,
+      "imag": -0.053555
+    },
+    {
+      "magnitude": 0.055064,
+      "real": 0.012804,
+      "imag": 0.053555
+    },
+    {
+      "magnitude": 0.053736,
+      "real": -0.022774,
+      "imag": 0.048671
+    },
+    {
+      "magnitude": 0.053736,
+      "real": -0.022774,
+      "imag": -0.048671
+    },
+    {
+      "magnitude": 0.05188,
+      "real": -0.051168,
+      "imag": -0.008566
+    },
+    {
+      "magnitude": 0.05188,
+      "real": -0.051168,
+      "imag": 0.008566
+    },
+    {
+      "magnitude": 0.051675,
+      "real": -0.037627,
+      "imag": -0.035419
+    },
+    {
+      "magnitude": 0.051675,
+      "real": -0.037627,
+      "imag": 0.035419
+    },
+    {
+      "magnitude": 0.049589,
+      "real": -0.041668,
+      "imag": 0.026887
+    },
+    {
+      "magnitude": 0.049589,
+      "real": -0.041668,
+      "imag": -0.026887
+    },
+    {
+      "magnitude": 0.048643,
+      "real": 0.032008,
+      "imag": 0.036629
+    },
+    {
+      "magnitude": 0.048643,
+      "real": 0.032008,
+      "imag": -0.036629
+    },
+    {
+      "magnitude": 0.046064,
+      "real": 0.009297,
+      "imag": 0.045116
+    },
+    {
+      "magnitude": 0.046064,
+      "real": 0.009297,
+      "imag": -0.045116
+    },
+    {
+      "magnitude": 0.044173,
+      "real": 0.004397,
+      "imag": 0.043954
+    },
+    {
+      "magnitude": 0.044173,
+      "real": 0.004397,
+      "imag": -0.043954
+    },
+    {
+      "magnitude": 0.040893,
+      "real": -0.040893,
+      "imag": 0.0
+    },
+    {
+      "magnitude": 0.040799,
+      "real": 0.037815,
+      "imag": 0.015317
+    },
+    {
+      "magnitude": 0.040799,
+      "real": 0.037815,
+      "imag": -0.015317
+    },
+    {
+      "magnitude": 0.038867,
+      "real": 0.03192,
+      "imag": 0.022177
+    },
+    {
+      "magnitude": 0.038867,
+      "real": 0.03192,
+      "imag": -0.022177
+    },
+    {
+      "magnitude": 0.03435,
+      "real": -0.009353,
+      "imag": 0.033052
+    },
+    {
+      "magnitude": 0.03435,
+      "real": -0.009353,
+      "imag": -0.033052
+    },
+    {
+      "magnitude": 0.033123,
+      "real": 0.033123,
+      "imag": 0.0
+    },
+    {
+      "magnitude": 0.030099,
+      "real": -0.02514,
+      "imag": 0.01655
+    },
+    {
+      "magnitude": 0.030099,
+      "real": -0.02514,
+      "imag": -0.01655
+    },
+    {
+      "magnitude": 0.022732,
+      "real": 0.021338,
+      "imag": 0.007839
+    },
+    {
+      "magnitude": 0.022732,
+      "real": 0.021338,
+      "imag": -0.007839
+    },
+    {
+      "magnitude": 0.017398,
+      "real": 0.004145,
+      "imag": 0.016897
+    },
+    {
+      "magnitude": 0.017398,
+      "real": 0.004145,
+      "imag": -0.016897
+    },
+    {
+      "magnitude": 0.014211,
+      "real": -0.013768,
+      "imag": -0.00352
+    },
+    {
+      "magnitude": 0.014211,
+      "real": -0.013768,
+      "imag": 0.00352
+    },
+    {
+      "magnitude": 0.010941,
+      "real": -0.008433,
+      "imag": -0.00697
+    },
+    {
+      "magnitude": 0.010941,
+      "real": -0.008433,
+      "imag": 0.00697
+    },
+    {
+      "magnitude": 0.0,
+      "real": 0.0,
+      "imag": 0.0
+    }
+  ],
+  "spectral_gap": {
+    "position": 2,
+    "gap_size": 0.073124,
+    "suggested_states": 2
+  },
+  "effective_rank": {
+    "0.1": 3,
+    "0.05": 22,
+    "0.01": 48,
+    "0.005": 48
+  },
+  "nmf_errors": {
+    "2": {
+      "absolute": 0.8197,
+      "relative": 0.4766
+    },
+    "3": {
+      "absolute": 0.7499,
+      "relative": 0.436
+    },
+    "4": {
+      "absolute": 0.6844,
+      "relative": 0.3979
+    },
+    "5": {
+      "absolute": 0.6194,
+      "relative": 0.3601
+    },
+    "6": {
+      "absolute": 0.5737,
+      "relative": 0.3336
+    },
+    "7": {
+      "absolute": 0.5317,
+      "relative": 0.3092
+    },
+    "8": {
+      "absolute": 0.4982,
+      "relative": 0.2897
+    },
+    "9": {
+      "absolute": 0.4628,
+      "relative": 0.2691
+    },
+    "10": {
+      "absolute": 0.4281,
+      "relative": 0.2489
+    },
+    "11": {
+      "absolute": 0.3947,
+      "relative": 0.2295
+    },
+    "12": {
+      "absolute": 0.371,
+      "relative": 0.2157
+    },
+    "13": {
+      "absolute": 0.343,
+      "relative": 0.1994
+    },
+    "14": {
+      "absolute": 0.323,
+      "relative": 0.1878
+    },
+    "15": {
+      "absolute": 0.306,
+      "relative": 0.1779
+    }
+  },
+  "nmf_elbow": 3,
+  "role_eigenvalues": [
+    1.00004,
+    0.120464,
+    0.030955,
+    0.025837,
+    0.000597
+  ],
+  "role_effective_rank": 4,
+  "elapsed_seconds": 0.6
+}

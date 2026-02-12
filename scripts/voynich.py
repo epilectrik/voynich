@@ -1236,6 +1236,35 @@ class BTokenAnalysis:
     middle_regime: Optional[str]     # PRECISION, HIGH_ENERGY, SETTLING
     middle_section: Optional[str]    # HERBAL, BIO, STARS
 
+    # Control grammar viewer layers (C976, C1000, C995, C1001)
+    macro_state: Optional[str] = None              # FL_HAZ, FQ, CC, AXm, AXM, FL_SAFE
+    hub_sub_role: Optional[str] = None             # HAZARD_SOURCE, HAZARD_TARGET, SAFETY_BUFFER, PURE_CONNECTOR
+    middle_affordance_bin: Optional[str] = None    # 10 affordance bin labels (C995)
+    middle_affordance_family: Optional[str] = None # THERMAL, PHASE, FLOW, RECOVERY
+    prefix_zone: Optional[str] = None              # INITIAL_BIASED, CENTRAL, FINAL_BIASED, UNIFORM
+
+    # Descriptive label maps (human-readable register)
+    MACRO_LABELS = {
+        'FL_HAZ': 'hazard flow', 'FL_SAFE': 'safe flow',
+        'FQ': 'frequency', 'CC': 'control change',
+        'AXm': 'minor scaffold', 'AXM': 'major scaffold',
+    }
+    HUB_LABELS = {
+        'HAZARD_SOURCE': 'hazard source', 'HAZARD_TARGET': 'hazard target',
+        'SAFETY_BUFFER': 'safety buffer', 'PURE_CONNECTOR': 'connector',
+    }
+    ZONE_LABELS = {
+        'INITIAL_BIASED': 'initial', 'CENTRAL': 'central',
+        'FINAL_BIASED': 'final', 'UNIFORM': None,  # suppress
+    }
+    AFFORDANCE_LABELS = {
+        'FLOW_TERMINAL': 'flow terminal', 'ROUTINE_SPECIALIZED': 'routine',
+        'PRECISION_SPECIALIZED': 'precision', 'COMPOUND_TERMINAL': 'compound terminal',
+        'SETTLING_SPECIALIZED': 'settling', 'HUB_UNIVERSAL': None,  # suppress (redundant with hub)
+        'ENERGY_SPECIALIZED': 'energy', 'STABILITY_CRITICAL': 'stability critical',
+        'PHASE_SENSITIVE': 'phase sensitive', 'BULK_OPERATIONAL': 'bulk',
+    }
+
     def structural(self) -> str:
         """
         Tier 0-2 technical representation.
@@ -1253,6 +1282,15 @@ class BTokenAnalysis:
             parts.append(self.suffix_role)
         if self.kernels:
             parts.append(f"kern:{','.join(self.kernels)}")
+        # Control grammar viewer layers (technical register)
+        if self.macro_state:
+            parts.append(f"M:{self.macro_state}")
+        if self.hub_sub_role:
+            parts.append(f"HUB:{self.hub_sub_role}")
+        if self.middle_affordance_bin:
+            parts.append(f"AFF:{self.middle_affordance_bin}")
+        if self.prefix_zone:
+            parts.append(f"Z:{self.prefix_zone}")
         return ' + '.join(parts) if parts else '(unclassified)'
 
     def structural_gloss(self) -> str:
@@ -1475,6 +1513,33 @@ class BTokenAnalysis:
             return self._lint_gloss(' '.join(composed))
 
         # 3. STRUCTURAL FALLBACK (no MIDDLE meaning available)
+        # Control grammar viewer: dot-separated descriptive phrases (C976/C1000/C995)
+        # Format: macro_descriptor · refinement · position (three chunks max)
+        descriptive_parts = []
+
+        # Chunk 1: macro state (always show if available)
+        if self.macro_state:
+            label = self.MACRO_LABELS.get(self.macro_state)
+            if label:
+                descriptive_parts.append(label)
+
+        # Chunk 2: refinement (hub sub-role > affordance bin, with suppression)
+        if self.hub_sub_role:
+            hub_label = self.HUB_LABELS.get(self.hub_sub_role)
+            if hub_label:
+                descriptive_parts.append(hub_label)
+        elif self.middle_affordance_bin:
+            aff_label = self.AFFORDANCE_LABELS.get(self.middle_affordance_bin)
+            # Suppress HUB_UNIVERSAL (None) and BULK_OPERATIONAL for AXM (it's the default)
+            if aff_label and not (self.middle_affordance_bin == 'BULK_OPERATIONAL'
+                                  and self.macro_state == 'AXM'):
+                descriptive_parts.append(aff_label)
+
+        # If we have descriptive parts, use the new format
+        if descriptive_parts:
+            return ' \u00b7 '.join(descriptive_parts)
+
+        # Legacy fallback: bare structural format (for tokens with no classification)
         parts = []
 
         if prefix:
@@ -1543,6 +1608,7 @@ class BTokenAnalysis:
             'operation': '',
             'flow': '',
             'flow_type': '',
+            'macro_state': self.macro_state,
         }
 
         # HT SPECIFICATION BUNDLE (C404/C405: non-executable, C935: atom decomposition)
@@ -2185,6 +2251,29 @@ class BFolioDecoder:
         # Simple list
         self.KERNEL_CHARS = maps['kernel_chars']['value']
 
+        # Control grammar viewer layers (C976, C1000, C995, C1001)
+        self.MACRO_STATE = self._extract_simple(maps['macro_state'])  # class_id str → state label
+        self.HUB_SUB_ROLE = self._extract_simple(maps['hub_sub_role'])  # middle → sub-role
+        self.PREFIX_ZONE = self._extract_simple(maps['prefix_zone'])  # prefix → zone
+
+        # Token → 49-class mapping (for macro_state chain)
+        _ctm_path = PROJECT_ROOT / 'phases/CLASS_COSURVIVAL_TEST/results/class_token_map.json'
+        with open(_ctm_path, 'r', encoding='utf-8') as f:
+            _ctm = json.load(f)
+        self._token_to_class = {t: int(c) for t, c in _ctm['token_to_class'].items()}
+
+        # Affordance table (972 MIDDLEs → bin + family)
+        _aff_path = PROJECT_ROOT / 'data' / 'middle_affordance_table.json'
+        with open(_aff_path, 'r', encoding='utf-8') as f:
+            _aff_data = json.load(f)
+        self._middle_to_affordance_bin = {}
+        self._middle_to_affordance_family = {}
+        for mid, entry in _aff_data.get('middles', {}).items():
+            if 'affordance_label' in entry:
+                self._middle_to_affordance_bin[mid] = entry['affordance_label']
+            if 'primary_family' in entry:
+                self._middle_to_affordance_family[mid] = entry['primary_family']
+
         # Pre-sort substring-matching maps (longest first) for _get_*() methods
         self._middle_tiers_sorted = sorted(
             self.MIDDLE_TIERS.items(), key=lambda x: len(x[0]), reverse=True)
@@ -2493,6 +2582,22 @@ class BFolioDecoder:
         analysis._mid_analyzer = self.mid_analyzer
         analysis._needs_regime = self._needs_regime
         analysis._debug_ht = getattr(self, '_debug_ht', False)
+
+        # Control grammar viewer layers (C976, C1000, C995, C1001)
+        # Macro state: token → 49-class → 6-state
+        token_class = self._token_to_class.get(word)
+        if token_class is not None:
+            analysis.macro_state = self.MACRO_STATE.get(str(token_class))
+        # Hub sub-role: MIDDLE → sub-role (23 hub MIDDLEs)
+        if m.middle:
+            analysis.hub_sub_role = self.HUB_SUB_ROLE.get(m.middle)
+            # Affordance bin + family: MIDDLE → bin/family (972 MIDDLEs)
+            analysis.middle_affordance_bin = self._middle_to_affordance_bin.get(m.middle)
+            analysis.middle_affordance_family = self._middle_to_affordance_family.get(m.middle)
+        # PREFIX zone: prefix → positional bias
+        pz_key = m.prefix if m.prefix else 'BARE'
+        analysis.prefix_zone = self.PREFIX_ZONE.get(pz_key)
+
         return analysis
 
     def _interpret_kernel_balance(self, kernel_dist: Dict[str, int]) -> str:

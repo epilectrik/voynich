@@ -1,0 +1,13 @@
+{
+  "r2_main": 0.07815940321597625,
+  "r2_twoway": 0.10379079331170382,
+  "r2_threeway": 0.10384972199865727,
+  "r2_increment": 5.8928686953452214e-05,
+  "f_stat": 0.004343119080629335,
+  "f_p": 0.9999999999999999,
+  "params_main": 101,
+  "params_twoway": 499,
+  "params_threeway": 731,
+  "n_pcs_combos": 232,
+  "verdict": "NO_THREE_WAY_INTERACTION"
+}

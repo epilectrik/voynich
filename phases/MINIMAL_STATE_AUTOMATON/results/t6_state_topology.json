@@ -1,0 +1,130 @@
+{
+  "test": "T6_state_topology",
+  "n_states": 6,
+  "transition_matrix": [
+    [
+      0.107,
+      0.239,
+      0.047,
+      0.026,
+      0.564,
+      0.016
+    ],
+    [
+      0.074,
+      0.251,
+      0.043,
+      0.033,
+      0.589,
+      0.009
+    ],
+    [
+      0.07,
+      0.175,
+      0.041,
+      0.033,
+      0.673,
+      0.008
+    ],
+    [
+      0.06,
+      0.188,
+      0.033,
+      0.025,
+      0.684,
+      0.01
+    ],
+    [
+      0.052,
+      0.173,
+      0.042,
+      0.028,
+      0.698,
+      0.008
+    ],
+    [
+      0.071,
+      0.095,
+      0.095,
+      0.024,
+      0.69,
+      0.024
+    ]
+  ],
+  "state_labels": [
+    "S0: FL_HAZ",
+    "S1: FQ",
+    "S2: CC",
+    "S3: AX/EN minor",
+    "S4: AX/EN major",
+    "S5: FL_SAFE"
+  ],
+  "edge_counts": {
+    "strong": 12,
+    "moderate": 14,
+    "weak": 7,
+    "negligible": 3
+  },
+  "self_loops": {
+    "FL_H": 0.107,
+    "FQ": 0.251,
+    "CC": 0.041,
+    "AXm": 0.025,
+    "AXM": 0.698,
+    "FL_S": 0.024
+  },
+  "expected_dwell": {
+    "FL_H": 1.12,
+    "FQ": 1.34,
+    "CC": 1.04,
+    "AXm": 1.03,
+    "AXM": 3.31,
+    "FL_S": 1.02
+  },
+  "stationary_distribution": {
+    "FL_H": 0.0607,
+    "FQ": 0.19171,
+    "CC": 0.04265,
+    "AXm": 0.02892,
+    "AXM": 0.66716,
+    "FL_S": 0.00887
+  },
+  "spectral_gap": 0.893494,
+  "mixing_time": 1.12,
+  "eigenvalues": [
+    {
+      "magnitude": 1.000406,
+      "real": 1.000406,
+      "imag": 0.0
+    },
+    {
+      "magnitude": 0.106506,
+      "real": 0.106506,
+      "imag": 0.0
+    },
+    {
+      "magnitude": 0.040821,
+      "real": 0.040821,
+      "imag": 0.0
+    },
+    {
+      "magnitude": 0.012547,
+      "real": -0.002765,
+      "imag": 0.012238
+    },
+    {
+      "magnitude": 0.012547,
+      "real": -0.002765,
+      "imag": -0.012238
+    },
+    {
+      "magnitude": 0.003797,
+      "real": 0.003797,
+      "imag": 0.0
+    }
+  ],
+  "hazard_safe_ratio": 6.5,
+  "topology": "HUB_AND_SPOKE",
+  "hub_state": "S4 (AX/EN major)",
+  "secondary_hub": "S1 (FQ)"
+}

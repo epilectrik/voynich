@@ -1,0 +1,218 @@
+{
+  "metadata": {
+    "phase": "AFFORDANCE_STRESS_TEST",
+    "test": "T3_POSITIONAL_TRAJECTORY",
+    "n_folios": 82
+  },
+  "per_bin": {
+    "0": {
+      "label": "FLOW_TERMINAL",
+      "total_tokens": 1985,
+      "quartile_density": {
+        "Q1": 0.2725,
+        "Q2": 0.2564,
+        "Q3": 0.2368,
+        "Q4": 0.2343
+      },
+      "trajectory_slope": -1.3451,
+      "peak_quartile": "Q1",
+      "initial_rate": 0.1018,
+      "final_rate": 0.2282,
+      "mean_line_position": 0.5791,
+      "depth_slope_across_quartiles": 0.01258
+    },
+    "1": {
+      "label": "ROUTINE_SPECIALIZED",
+      "total_tokens": 156,
+      "quartile_density": {
+        "Q1": 0.2885,
+        "Q2": 0.2564,
+        "Q3": 0.1795,
+        "Q4": 0.2756
+      },
+      "trajectory_slope": -1.1538,
+      "peak_quartile": "Q1",
+      "initial_rate": 0.1282,
+      "final_rate": 0.0128,
+      "mean_line_position": 0.4354,
+      "depth_slope_across_quartiles": 0.0095
+    },
+    "2": {
+      "label": "PRECISION_SPECIALIZED",
+      "total_tokens": 51,
+      "quartile_density": {
+        "Q1": 0.4118,
+        "Q2": 0.2745,
+        "Q3": 0.2353,
+        "Q4": 0.0784
+      },
+      "trajectory_slope": -10.3922,
+      "peak_quartile": "Q1",
+      "initial_rate": 0.2157,
+      "final_rate": 0.1373,
+      "mean_line_position": 0.4442,
+      "depth_slope_across_quartiles": 0.07959
+    },
+    "3": {
+      "label": "COMPOUND_TERMINAL",
+      "total_tokens": 263,
+      "quartile_density": {
+        "Q1": 0.3118,
+        "Q2": 0.2205,
+        "Q3": 0.2662,
+        "Q4": 0.2015
+      },
+      "trajectory_slope": -2.8517,
+      "peak_quartile": "Q1",
+      "initial_rate": 0.0722,
+      "final_rate": 0.1635,
+      "mean_line_position": 0.5227,
+      "depth_slope_across_quartiles": 0.03134
+    },
+    "5": {
+      "label": "SETTLING_SPECIALIZED",
+      "total_tokens": 114,
+      "quartile_density": {
+        "Q1": 0.307,
+        "Q2": 0.193,
+        "Q3": 0.3158,
+        "Q4": 0.1842
+      },
+      "trajectory_slope": -2.4561,
+      "peak_quartile": "Q3",
+      "initial_rate": 0.2281,
+      "final_rate": 0.114,
+      "mean_line_position": 0.4225,
+      "depth_slope_across_quartiles": 0.04562
+    },
+    "6": {
+      "label": "HUB_UNIVERSAL",
+      "total_tokens": 13670,
+      "quartile_density": {
+        "Q1": 0.2627,
+        "Q2": 0.2492,
+        "Q3": 0.2562,
+        "Q4": 0.232
+      },
+      "trajectory_slope": -0.8515,
+      "peak_quartile": "Q1",
+      "initial_rate": 0.1002,
+      "final_rate": 0.0944,
+      "mean_line_position": 0.4973,
+      "depth_slope_across_quartiles": -0.00016
+    },
+    "7": {
+      "label": "ENERGY_SPECIALIZED",
+      "total_tokens": 151,
+      "quartile_density": {
+        "Q1": 0.2914,
+        "Q2": 0.2384,
+        "Q3": 0.2384,
+        "Q4": 0.2318
+      },
+      "trajectory_slope": -1.7881,
+      "peak_quartile": "Q1",
+      "initial_rate": 0.2914,
+      "final_rate": 0.1258,
+      "mean_line_position": 0.4137,
+      "depth_slope_across_quartiles": 0.00956
+    },
+    "8": {
+      "label": "STABILITY_CRITICAL",
+      "total_tokens": 3905,
+      "quartile_density": {
+        "Q1": 0.2707,
+        "Q2": 0.2405,
+        "Q3": 0.2469,
+        "Q4": 0.242
+      },
+      "trajectory_slope": -0.7964,
+      "peak_quartile": "Q1",
+      "initial_rate": 0.1096,
+      "final_rate": 0.0594,
+      "mean_line_position": 0.466,
+      "depth_slope_across_quartiles": 0.00641
+    },
+    "9": {
+      "label": "PHASE_SENSITIVE",
+      "total_tokens": 1381,
+      "quartile_density": {
+        "Q1": 0.2867,
+        "Q2": 0.2578,
+        "Q3": 0.2448,
+        "Q4": 0.2107
+      },
+      "trajectory_slope": -2.4113,
+      "peak_quartile": "Q1",
+      "initial_rate": 0.0825,
+      "final_rate": 0.0797,
+      "mean_line_position": 0.4983,
+      "depth_slope_across_quartiles": 0.00989
+    }
+  },
+  "statistical_tests": {
+    "chi2_bin_quartile": {
+      "chi2": 37.0238905386559,
+      "df": 24,
+      "p": 0.04352040772577773
+    },
+    "kruskal_line_position": {
+      "H": 191.3644211241552,
+      "p": 4.205065097907535e-37
+    },
+    "uniformity_bin_0": {
+      "chi2": 7.719395465994962,
+      "p": 0.05218128779599612
+    },
+    "uniformity_bin_1": {
+      "chi2": 4.461538461538462,
+      "p": 0.2157467327728196
+    },
+    "uniformity_bin_2": {
+      "chi2": 11.509803921568626,
+      "p": 0.009265676560031334
+    },
+    "uniformity_bin_3": {
+      "chi2": 7.676806083650192,
+      "p": 0.05318541283100635
+    },
+    "uniformity_bin_5": {
+      "chi2": 6.912280701754386,
+      "p": 0.07474686650417174
+    },
+    "uniformity_bin_6": {
+      "chi2": 28.71602048280907,
+      "p": 2.5692148552146455e-06
+    },
+    "uniformity_bin_7": {
+      "chi2": 1.3973509933774833,
+      "p": 0.7061557904593292
+    },
+    "uniformity_bin_8": {
+      "chi2": 9.254545454545456,
+      "p": 0.026091187161024605
+    },
+    "uniformity_bin_9": {
+      "chi2": 16.471397538015932,
+      "p": 0.0009075861108587853
+    }
+  },
+  "predictions": {
+    "FLOW_TERMINAL late-positioned": {
+      "confirmed": false,
+      "detail": "slope=-1.35"
+    },
+    "HUB_UNIVERSAL uniform quartile": {
+      "confirmed": false,
+      "detail": "chi2=28.72, p=0.0000"
+    },
+    "Bins differ in positional profile": {
+      "confirmed": true,
+      "detail": "chi2=37.0, p=4.35e-02"
+    },
+    "FLOW_TERMINAL highest final_rate": {
+      "confirmed": true,
+      "detail": "final_rate=0.228 vs max=0.228"
+    }
+  }
+}

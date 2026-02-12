@@ -1,0 +1,83 @@
+{
+  "test": "C894_reverification",
+  "regime_mapping": "data/regime_folio_mapping.json (v2, GMM k=4)",
+  "n_paragraphs": 527,
+  "n_folios_analyzed": 70,
+  "regime_specialization": {
+    "REGIME_1": {
+      "recovery": 1,
+      "distill": 0,
+      "mixed": 27,
+      "total": 28,
+      "pct_recovery": 3.6,
+      "mean_kh_ratio": 0.188
+    },
+    "REGIME_2": {
+      "recovery": 5,
+      "distill": 1,
+      "mixed": 6,
+      "total": 12,
+      "pct_recovery": 41.7,
+      "mean_kh_ratio": 0.683
+    },
+    "REGIME_3": {
+      "recovery": 0,
+      "distill": 9,
+      "mixed": 9,
+      "total": 18,
+      "pct_recovery": 0.0,
+      "mean_kh_ratio": 0.062
+    },
+    "REGIME_4": {
+      "recovery": 0,
+      "distill": 3,
+      "mixed": 9,
+      "total": 12,
+      "pct_recovery": 0.0,
+      "mean_kh_ratio": 0.05
+    }
+  },
+  "recovery_folios": {
+    "f39v": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "regime_probability": 1.0
+    },
+    "f40r": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "regime_probability": 0.9905
+    },
+    "f50r": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "regime_probability": 1.0
+    },
+    "f50v": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "regime_probability": 0.9921
+    },
+    "f94r": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "regime_probability": 0.9953
+    },
+    "f107v": {
+      "section": "S",
+      "regime": "REGIME_1",
+      "regime_probability": 0.9923
+    }
+  },
+  "chi_square": {
+    "chi2": 38.73,
+    "df": 6,
+    "p": 1e-06
+  },
+  "old_c894": {
+    "regime4_recovery_pct": 33,
+    "chi2": 28.41,
+    "p": 0.0001
+  },
+  "verdict": "SURVIVES_MODIFIED"
+}

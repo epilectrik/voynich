@@ -1,0 +1,147 @@
+{
+  "test": "T3_escape_zone_association",
+  "n_middles_with_azc": 234,
+  "zone_counts": {
+    "R1": 613,
+    "R2": 348,
+    "R3": 183,
+    "R4": 37,
+    "S1": 267,
+    "C": 561,
+    "S2": 119,
+    "S0": 11,
+    "S3": 5
+  },
+  "escape_norm_correlation": {
+    "rho": -0.016662360220089975,
+    "p": 0.7998526712432454,
+    "description": "MIDDLE-level: escape score vs residual norm"
+  },
+  "zone_radial_depth": {
+    "C": {
+      "n": 110,
+      "mean_norm": 1.4489280852250708,
+      "escape_rate": 1.4
+    },
+    "R1": {
+      "n": 136,
+      "mean_norm": 1.4170536245345753,
+      "escape_rate": 2.0
+    },
+    "R2": {
+      "n": 84,
+      "mean_norm": 1.5323011134952569,
+      "escape_rate": 1.2
+    },
+    "R3": {
+      "n": 64,
+      "mean_norm": 1.739509215021569,
+      "escape_rate": 0.0
+    },
+    "S1": {
+      "n": 99,
+      "mean_norm": 1.4700357427710233,
+      "escape_rate": 0.0
+    },
+    "S2": {
+      "n": 54,
+      "mean_norm": 1.6193359348499545,
+      "escape_rate": 0.0
+    }
+  },
+  "n_lines": 2412,
+  "mean_azc_coverage": 0.901927989701357,
+  "energy_escape_correlation": {
+    "rho": 0.10022288624695048,
+    "p": 8.137999434749343e-07,
+    "description": "Line-level: E vs mean escape score"
+  },
+  "energy_norm_correlation": {
+    "rho": -0.5166287234816668,
+    "p": 1.0355120978207456e-164,
+    "description": "Line-level: E vs mean radial depth"
+  },
+  "escape_norm_line_correlation": {
+    "rho": -0.10213926815560258,
+    "p": 4.986632312200632e-07,
+    "description": "Line-level: escape score vs radial depth"
+  },
+  "escape_bin_energy": {
+    "low_escape": {
+      "n": 603,
+      "mean_E": -0.012787415174436023,
+      "std_E": 0.020344534002826986
+    },
+    "med_low": {
+      "n": 603,
+      "mean_E": -0.013149925023310496,
+      "std_E": 0.022412349587427615
+    },
+    "med_high": {
+      "n": 603,
+      "mean_E": -0.0120695410053199,
+      "std_E": 0.0213086551099352
+    },
+    "high_escape": {
+      "n": 603,
+      "mean_E": -0.006572711007205749,
+      "std_E": 0.02344230028779281
+    }
+  },
+  "depth_bin_energy": {
+    "shallow": {
+      "n": 603,
+      "mean_E": 0.0007290436518846698,
+      "std_E": 0.027614967852600796
+    },
+    "mid_shallow": {
+      "n": 603,
+      "mean_E": -0.005793329268777973,
+      "std_E": 0.020088156529961824
+    },
+    "mid_deep": {
+      "n": 603,
+      "mean_E": -0.012520551365740245,
+      "std_E": 0.014388891774857818
+    },
+    "deep": {
+      "n": 603,
+      "mean_E": -0.02699475522763862,
+      "std_E": 0.012344662590682877
+    }
+  },
+  "zone_line_energy": {
+    "C": {
+      "n_lines": 2412,
+      "mean_E": -0.01114489805256804,
+      "std_E": 0.022069727897140887
+    },
+    "R1": {
+      "n_lines": 2412,
+      "mean_E": -0.01114489805256804,
+      "std_E": 0.022069727897140887
+    },
+    "R2": {
+      "n_lines": 2412,
+      "mean_E": -0.01114489805256804,
+      "std_E": 0.022069727897140887
+    },
+    "R3": {
+      "n_lines": 2412,
+      "mean_E": -0.01114489805256804,
+      "std_E": 0.022069727897140887
+    },
+    "S1": {
+      "n_lines": 2410,
+      "mean_E": -0.01114874534375236,
+      "std_E": 0.022034923330323888
+    },
+    "S2": {
+      "n_lines": 2403,
+      "mean_E": -0.011194889802592232,
+      "std_E": 0.021975223919311688
+    }
+  },
+  "verdict": "GEOMETRIC_CLOSURE",
+  "explanation": "2/3 geometric links significant. escape\u2192energy (rho=0.100); depth\u2192energy (rho=-0.517)"
+}

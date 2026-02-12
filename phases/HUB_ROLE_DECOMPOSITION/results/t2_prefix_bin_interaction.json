@@ -1,0 +1,196 @@
+{
+  "metadata": {
+    "phase": "HUB_ROLE_DECOMPOSITION",
+    "test": "T2_PREFIX_BIN_INTERACTION"
+  },
+  "test_2a_prefix_lane": {
+    "chi2": 12957.127188550241,
+    "p": 0.0,
+    "cramers_v": 0.6886241076496663,
+    "testable_prefixes": 33,
+    "prefix_lane_data": {
+      "qo": {
+        "total": 2551,
+        "QO": 2207,
+        "CHSH": 66,
+        "NEUTRAL": 278
+      },
+      "BARE": {
+        "total": 2394,
+        "QO": 25,
+        "CHSH": 881,
+        "NEUTRAL": 1488
+      },
+      "ch": {
+        "total": 1722,
+        "QO": 99,
+        "CHSH": 1224,
+        "NEUTRAL": 399
+      },
+      "sh": {
+        "total": 1199,
+        "QO": 33,
+        "CHSH": 974,
+        "NEUTRAL": 192
+      },
+      "ok": {
+        "total": 952,
+        "QO": 0,
+        "CHSH": 450,
+        "NEUTRAL": 502
+      },
+      "ot": {
+        "total": 904,
+        "QO": 0,
+        "CHSH": 431,
+        "NEUTRAL": 473
+      },
+      "da": {
+        "total": 713,
+        "QO": 1,
+        "CHSH": 0,
+        "NEUTRAL": 712
+      },
+      "ol": {
+        "total": 564,
+        "QO": 236,
+        "CHSH": 139,
+        "NEUTRAL": 189
+      },
+      "lk": {
+        "total": 275,
+        "QO": 0,
+        "CHSH": 152,
+        "NEUTRAL": 123
+      },
+      "te": {
+        "total": 206,
+        "QO": 0,
+        "CHSH": 102,
+        "NEUTRAL": 104
+      },
+      "sa": {
+        "total": 201,
+        "QO": 1,
+        "CHSH": 0,
+        "NEUTRAL": 200
+      },
+      "yk": {
+        "total": 188,
+        "QO": 0,
+        "CHSH": 100,
+        "NEUTRAL": 88
+      },
+      "ke": {
+        "total": 161,
+        "QO": 0,
+        "CHSH": 94,
+        "NEUTRAL": 67
+      },
+      "lch": {
+        "total": 158,
+        "QO": 0,
+        "CHSH": 110,
+        "NEUTRAL": 48
+      },
+      "ta": {
+        "total": 156,
+        "QO": 0,
+        "CHSH": 0,
+        "NEUTRAL": 156
+      }
+    },
+    "jsd_pairs": {
+      "qo_vs_BARE": 0.6682987890502257,
+      "qo_vs_ch": 0.6098767691049191,
+      "qo_vs_sh": 0.6970714612484534,
+      "BARE_vs_ch": 0.11960327001505125,
+      "BARE_vs_sh": 0.16964426459858742,
+      "ch_vs_sh": 0.011078620615573319
+    }
+  },
+  "test_2b_safety_buffer_prefix": {
+    "total_hub_buffers": 15,
+    "total_hub_nonbuffers": 13655,
+    "qo_rate_in_buffers": 0.4666666666666667,
+    "qo_rate_in_nonbuffers": 0.18630538264372024,
+    "fishers_p": 0.012359595583819646,
+    "odds_ratio": 3.8215900157232703,
+    "buffer_prefix_counts": {
+      "da": 4,
+      "BARE": 1,
+      "ch": 2,
+      "lch": 1,
+      "qo": 9,
+      "ok": 2,
+      "lk": 1,
+      "to": 1,
+      "ke": 1
+    },
+    "contingency_table": [
+      [
+        7,
+        2544
+      ],
+      [
+        8,
+        11111
+      ]
+    ]
+  },
+  "test_2c_mutual_information": {
+    "MI_bin_class": 0.0,
+    "MI_prefixbin_class": 0.0,
+    "MI_gain": 0.0,
+    "MI_gain_pct": 0.0,
+    "per_bin_mi": {
+      "0": {
+        "label": "FLOW_TERMINAL",
+        "tokens": 0,
+        "mi_prefix_class": 0.0
+      },
+      "1": {
+        "label": "ROUTINE_SPECIALIZED",
+        "tokens": 0,
+        "mi_prefix_class": 0.0
+      },
+      "2": {
+        "label": "PRECISION_SPECIALIZED",
+        "tokens": 0,
+        "mi_prefix_class": 0.0
+      },
+      "3": {
+        "label": "COMPOUND_TERMINAL",
+        "tokens": 0,
+        "mi_prefix_class": 0.0
+      },
+      "5": {
+        "label": "SETTLING_SPECIALIZED",
+        "tokens": 0,
+        "mi_prefix_class": 0.0
+      },
+      "6": {
+        "label": "HUB_UNIVERSAL",
+        "tokens": 0,
+        "mi_prefix_class": 0.0
+      },
+      "7": {
+        "label": "ENERGY_SPECIALIZED",
+        "tokens": 0,
+        "mi_prefix_class": 0.0
+      },
+      "8": {
+        "label": "STABILITY_CRITICAL",
+        "tokens": 0,
+        "mi_prefix_class": 0.0
+      },
+      "9": {
+        "label": "PHASE_SENSITIVE",
+        "tokens": 0,
+        "mi_prefix_class": 0.0
+      }
+    }
+  },
+  "verdict": "PREFIX_PARTIAL",
+  "verdict_detail": "PREFIX shows partial differentiation within HUB on some dimensions but not strong enough for clear sub-role isolation."
+}

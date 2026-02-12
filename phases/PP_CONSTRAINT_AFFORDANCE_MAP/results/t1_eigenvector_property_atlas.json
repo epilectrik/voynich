@@ -1,0 +1,413 @@
+{
+  "test": "T1_eigenvector_property_atlas",
+  "n_middles": 972,
+  "n_eigvecs_analyzed": 29,
+  "hub_sanity": {
+    "hub_vs_log_freq_rho": -0.7892688281832632,
+    "hub_eigenvalue": 81.97675337170392
+  },
+  "best_per_eigvec": {
+    "eigvec_2": {
+      "best_property": "residual_norm",
+      "rho": 0.21199177454922757,
+      "p": 2.4426011023154858e-11,
+      "eigenvalue": 19.159221044361416
+    },
+    "eigvec_3": {
+      "best_property": "contains_e",
+      "rho": -0.259252194129063,
+      "p": 2.1553820460671818e-16,
+      "eigenvalue": 17.222459639686228
+    },
+    "eigvec_4": {
+      "best_property": "contains_e",
+      "rho": -0.07910606070093043,
+      "p": 0.013625941494565218,
+      "eigenvalue": 15.311182957566105
+    },
+    "eigvec_5": {
+      "best_property": "contains_e",
+      "rho": 0.09253377024507436,
+      "p": 0.003884374594933994,
+      "eigenvalue": 15.236845318955725
+    },
+    "eigvec_6": {
+      "best_property": "contains_h",
+      "rho": 0.08897100946768789,
+      "p": 0.005506969037831153,
+      "eigenvalue": 15.043473573057373
+    },
+    "eigvec_7": {
+      "best_property": "kernel_count",
+      "rho": 0.10928702351576482,
+      "p": 0.0006423411428530262,
+      "eigenvalue": 14.645866789507687
+    },
+    "eigvec_8": {
+      "best_property": "contains_k",
+      "rho": 0.0846522419526528,
+      "p": 0.008277388949581575,
+      "eigenvalue": 14.160267459962585
+    },
+    "eigvec_9": {
+      "best_property": "is_compound",
+      "rho": -0.082987626632469,
+      "p": 0.009641318096934078,
+      "eigenvalue": 13.851795406745396
+    },
+    "eigvec_10": {
+      "best_property": "residual_norm",
+      "rho": 0.07173770378568349,
+      "p": 0.025314823367296697,
+      "eigenvalue": 13.586521530012387
+    },
+    "eigvec_11": {
+      "best_property": "contains_k",
+      "rho": -0.05301628215523172,
+      "p": 0.09855105562244089,
+      "eigenvalue": 13.426153928091892
+    },
+    "eigvec_12": {
+      "best_property": "residual_norm",
+      "rho": 0.06170524588007563,
+      "p": 0.05446290765781382,
+      "eigenvalue": 13.230060900176124
+    },
+    "eigvec_13": {
+      "best_property": "residual_norm",
+      "rho": 0.10021537911328242,
+      "p": 0.0017584209424032428,
+      "eigenvalue": 13.144899169213394
+    },
+    "eigvec_14": {
+      "best_property": "in_b",
+      "rho": 0.044554371877418696,
+      "p": 0.16514627060954498,
+      "eigenvalue": 13.125685392552308
+    },
+    "eigvec_15": {
+      "best_property": "contains_h",
+      "rho": 0.08511508383090813,
+      "p": 0.007930127415004182,
+      "eigenvalue": 12.927083200512923
+    },
+    "eigvec_16": {
+      "best_property": "length",
+      "rho": -0.07491399954794146,
+      "p": 0.019498281630260877,
+      "eigenvalue": 12.659483770571633
+    },
+    "eigvec_17": {
+      "best_property": "contains_h",
+      "rho": 0.0733393391883442,
+      "p": 0.022217313350319512,
+      "eigenvalue": 12.48230893886056
+    },
+    "eigvec_18": {
+      "best_property": "contains_h",
+      "rho": 0.06189487378950126,
+      "p": 0.05372367555743812,
+      "eigenvalue": 12.167462768214703
+    },
+    "eigvec_19": {
+      "best_property": "is_compound",
+      "rho": -0.0844521450601184,
+      "p": 0.008431678511093865,
+      "eigenvalue": 11.966196879837758
+    },
+    "eigvec_20": {
+      "best_property": "lane_code",
+      "rho": 0.0570569196206012,
+      "p": 0.07540084819889122,
+      "eigenvalue": 11.895516581358358
+    },
+    "eigvec_21": {
+      "best_property": "kernel_count",
+      "rho": -0.07192863868567574,
+      "p": 0.02492696913466484,
+      "eigenvalue": 11.670389262713883
+    },
+    "eigvec_22": {
+      "best_property": "contains_h",
+      "rho": 0.06689869913388904,
+      "p": 0.037037752358724516,
+      "eigenvalue": 11.54274831997139
+    },
+    "eigvec_23": {
+      "best_property": "contains_e",
+      "rho": 0.05826914401581289,
+      "p": 0.06939223204231097,
+      "eigenvalue": 11.199981764226383
+    },
+    "eigvec_24": {
+      "best_property": "lane_code",
+      "rho": 0.04096045070587923,
+      "p": 0.20198637542135803,
+      "eigenvalue": 11.091680740364058
+    },
+    "eigvec_25": {
+      "best_property": "is_compound",
+      "rho": -0.07470751026185823,
+      "p": 0.019837440476457954,
+      "eigenvalue": 10.999870189139717
+    },
+    "eigvec_26": {
+      "best_property": "contains_e",
+      "rho": 0.11840411169097922,
+      "p": 0.00021581491761355235,
+      "eigenvalue": 10.742710993001744
+    },
+    "eigvec_27": {
+      "best_property": "lane_code",
+      "rho": 0.030713215802295135,
+      "p": 0.3388010895494945,
+      "eigenvalue": 10.642694083215591
+    },
+    "eigvec_28": {
+      "best_property": "a_prefix_diversity",
+      "rho": -0.04764121302290079,
+      "p": 0.13774589840818147,
+      "eigenvalue": 10.469121046004895
+    },
+    "eigvec_29": {
+      "best_property": "length",
+      "rho": 0.046650534118392734,
+      "p": 0.1461295157983334,
+      "eigenvalue": 10.116549457120309
+    },
+    "eigvec_30": {
+      "best_property": "contains_h",
+      "rho": -0.06907126032639453,
+      "p": 0.03130062314930709,
+      "eigenvalue": 9.999834359166348
+    }
+  },
+  "multi_view_top15": {
+    "eigvec_2": [
+      {
+        "prop": "residual_norm",
+        "rho": 0.21199177454922757
+      },
+      {
+        "prop": "b_token_count",
+        "rho": 0.18415463934545293
+      },
+      {
+        "prop": "in_b",
+        "rho": 0.13729042697247557
+      }
+    ],
+    "eigvec_3": [
+      {
+        "prop": "contains_e",
+        "rho": -0.259252194129063
+      },
+      {
+        "prop": "kernel_count",
+        "rho": -0.21045714142106253
+      },
+      {
+        "prop": "contains_k",
+        "rho": -0.14577891740507548
+      }
+    ],
+    "eigvec_4": [
+      {
+        "prop": "contains_e",
+        "rho": -0.07910606070093043
+      },
+      {
+        "prop": "lane_code",
+        "rho": 0.06436433236815962
+      },
+      {
+        "prop": "in_b",
+        "rho": -0.05577235923457437
+      }
+    ],
+    "eigvec_5": [
+      {
+        "prop": "contains_e",
+        "rho": 0.09253377024507436
+      },
+      {
+        "prop": "length",
+        "rho": 0.07710310039611862
+      },
+      {
+        "prop": "b_token_count",
+        "rho": -0.055428161471683134
+      }
+    ],
+    "eigvec_6": [
+      {
+        "prop": "contains_h",
+        "rho": 0.08897100946768789
+      },
+      {
+        "prop": "a_folio_count",
+        "rho": 0.06609046407032815
+      },
+      {
+        "prop": "a_line_count",
+        "rho": 0.058184271211326015
+      }
+    ],
+    "eigvec_7": [
+      {
+        "prop": "kernel_count",
+        "rho": 0.10928702351576482
+      },
+      {
+        "prop": "contains_e",
+        "rho": 0.08049672852453024
+      },
+      {
+        "prop": "contains_k",
+        "rho": 0.059320585113885244
+      }
+    ],
+    "eigvec_8": [
+      {
+        "prop": "contains_k",
+        "rho": 0.0846522419526528
+      },
+      {
+        "prop": "lane_code",
+        "rho": 0.05021044024370394
+      },
+      {
+        "prop": "kernel_count",
+        "rho": 0.04132923492686685
+      }
+    ],
+    "eigvec_9": [
+      {
+        "prop": "is_compound",
+        "rho": -0.082987626632469
+      },
+      {
+        "prop": "in_b",
+        "rho": -0.06030362955400584
+      },
+      {
+        "prop": "b_token_count",
+        "rho": -0.04084671882586013
+      }
+    ],
+    "eigvec_10": [
+      {
+        "prop": "residual_norm",
+        "rho": 0.07173770378568349
+      },
+      {
+        "prop": "contains_h",
+        "rho": 0.03800441030028727
+      },
+      {
+        "prop": "lane_code",
+        "rho": -0.03631878363755459
+      }
+    ],
+    "eigvec_11": [
+      {
+        "prop": "contains_k",
+        "rho": -0.05301628215523172
+      },
+      {
+        "prop": "contains_e",
+        "rho": 0.052493996591873565
+      },
+      {
+        "prop": "residual_norm",
+        "rho": 0.048762539502649964
+      }
+    ],
+    "eigvec_12": [
+      {
+        "prop": "residual_norm",
+        "rho": 0.06170524588007563
+      },
+      {
+        "prop": "contains_k",
+        "rho": -0.06014306028199982
+      },
+      {
+        "prop": "hub_loading",
+        "rho": -0.05244145960295004
+      }
+    ],
+    "eigvec_13": [
+      {
+        "prop": "residual_norm",
+        "rho": 0.10021537911328242
+      },
+      {
+        "prop": "b_token_count",
+        "rho": 0.04910261945215632
+      },
+      {
+        "prop": "kernel_count",
+        "rho": -0.0483462753873609
+      }
+    ],
+    "eigvec_14": [
+      {
+        "prop": "in_b",
+        "rho": 0.044554371877418696
+      },
+      {
+        "prop": "a_prefix_diversity",
+        "rho": 0.040990407114071155
+      },
+      {
+        "prop": "contains_k",
+        "rho": -0.039551289114318856
+      }
+    ],
+    "eigvec_15": [
+      {
+        "prop": "contains_h",
+        "rho": 0.08511508383090813
+      },
+      {
+        "prop": "contains_k",
+        "rho": -0.0681220004881653
+      },
+      {
+        "prop": "a_token_count",
+        "rho": -0.04490695338806233
+      }
+    ],
+    "eigvec_16": [
+      {
+        "prop": "length",
+        "rho": -0.07491399954794146
+      },
+      {
+        "prop": "residual_norm",
+        "rho": 0.06539179229024576
+      },
+      {
+        "prop": "a_prefix_diversity",
+        "rho": 0.06423649451162661
+      }
+    ]
+  },
+  "property_dominance": {
+    "residual_norm": 1,
+    "contains_e": 1
+  },
+  "strength_counts": {
+    "strong_020": 2,
+    "moderate_015": 2,
+    "weak_010": 5
+  },
+  "categorical_significance": {
+    "lane": 0,
+    "b_dominant_section": 1,
+    "initial_char": 3
+  },
+  "verdict": "OPAQUE",
+  "explanation": "Only 2 eigenvectors have |\u03c1|\u22650.15. Known properties do not explain the spectral structure."
+}

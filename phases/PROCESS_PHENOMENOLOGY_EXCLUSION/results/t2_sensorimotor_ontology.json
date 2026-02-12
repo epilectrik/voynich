@@ -1,0 +1,584 @@
+{
+  "test": "T2_sensorimotor_ontology",
+  "n_phenomena": 25,
+  "n_architectural_features": 29,
+  "ontology": {
+    "VAPOR_DENSITY": {
+      "modality": "VISUAL",
+      "description": "Density and opacity of rising vapor in the neck/helm",
+      "distillation_context": "Indicates current heating rate and energy input level; thin vapor = gentle, dense = vigorous",
+      "architecture_mapping": [
+        {
+          "feature": "k_operator_concentration",
+          "relationship": "k (ENERGY_MODULATOR) presence tracks energy input intensity",
+          "constraint": "C103"
+        },
+        {
+          "feature": "QO_lane",
+          "relationship": "QO lane is k-rich, encoding energy-application phases",
+          "constraint": "C647"
+        }
+      ],
+      "confidence": "HIGH"
+    },
+    "CONDENSATE_DRIP_RATE": {
+      "modality": "VISUAL",
+      "description": "Rate of condensate drops from condenser into receiver",
+      "distillation_context": "Primary indicator of distillation progress; too fast = inadequate separation, too slow = energy waste",
+      "architecture_mapping": [
+        {
+          "feature": "FL_operator_progression",
+          "relationship": "FLOW operators track product movement and output rate",
+          "constraint": "C549"
+        },
+        {
+          "feature": "FL_final_position",
+          "relationship": "FL enriched at line end (position 0.576) = output check at control block close",
+          "constraint": "C813"
+        }
+      ],
+      "confidence": "HIGH"
+    },
+    "FOAM_ONSET": {
+      "modality": "VISUAL",
+      "description": "Appearance of foam/froth at liquid surface indicating boil transition",
+      "distillation_context": "Critical danger signal: foam precedes boil-over, the most common failure mode",
+      "architecture_mapping": [
+        {
+          "feature": "PHASE_ORDERING_hazard",
+          "relationship": "PHASE_ORDERING (41%) = material in wrong phase/location, foam is precursor",
+          "constraint": "C110"
+        },
+        {
+          "feature": "h_operator",
+          "relationship": "h (PHASE_MANAGER) handles phase boundary transitions",
+          "constraint": "C104"
+        }
+      ],
+      "confidence": "HIGH"
+    },
+    "LIQUID_COLOR": {
+      "modality": "VISUAL",
+      "description": "Color of liquid in flask and receiver indicating composition",
+      "distillation_context": "Fraction identity indicator; different fractions have characteristic colors",
+      "architecture_mapping": [
+        {
+          "feature": "MIDDLE_discrimination",
+          "relationship": "PP MIDDLEs encode material property distinctions in 100D space",
+          "constraint": "C475"
+        },
+        {
+          "feature": "folio_vocabulary",
+          "relationship": "Each folio/program has unique MIDDLE vocabulary = distinct material profiles",
+          "constraint": "C531"
+        }
+      ],
+      "confidence": "MEDIUM"
+    },
+    "PHASE_BOUNDARY_VISIBILITY": {
+      "modality": "VISUAL",
+      "description": "Visible interface between liquid and vapor phases in the vessel",
+      "distillation_context": "Tracking this boundary is core to managing distillation; it moves with temperature",
+      "architecture_mapping": [
+        {
+          "feature": "h_operator",
+          "relationship": "h (PHASE_MANAGER) manages the liquid-vapor boundary",
+          "constraint": "C104"
+        },
+        {
+          "feature": "lane_boundary",
+          "relationship": "QO/CHSH lane transition marks shift between energy modes",
+          "constraint": "C647"
+        }
+      ],
+      "confidence": "HIGH"
+    },
+    "SURFACE_AGITATION": {
+      "modality": "VISUAL",
+      "description": "Turbulence and roiling at the liquid surface",
+      "distillation_context": "Intensity of agitation tracks energy input; excessive = approaching overshoot",
+      "architecture_mapping": [
+        {
+          "feature": "ENERGY_OVERSHOOT_hazard",
+          "relationship": "ENERGY_OVERSHOOT (6%) = thermal damage from excessive energy",
+          "constraint": "C109"
+        },
+        {
+          "feature": "k_e_boundary",
+          "relationship": "Kernel boundary k->e is the energy-to-stability transition",
+          "constraint": "C107"
+        }
+      ],
+      "confidence": "MEDIUM"
+    },
+    "CONDENSER_CLARITY": {
+      "modality": "VISUAL",
+      "description": "Clarity vs cloudiness of condensate output",
+      "distillation_context": "Cloudy condensate indicates contamination or mixed fractions",
+      "architecture_mapping": [
+        {
+          "feature": "COMPOSITION_JUMP_hazard",
+          "relationship": "COMPOSITION_JUMP (24%) = impure fraction passing through",
+          "constraint": "C109"
+        }
+      ],
+      "confidence": "HIGH"
+    },
+    "FLOW_DIRECTION": {
+      "modality": "VISUAL",
+      "description": "Direction of liquid flow through apparatus (reflux return vs distillate forward)",
+      "distillation_context": "In pelican reflux, liquid circulates; wrong flow direction means apparatus failure",
+      "architecture_mapping": [
+        {
+          "feature": "FL_operator",
+          "relationship": "FLOW_OPERATOR classes (7, 30) track directional flow",
+          "constraint": "C549"
+        },
+        {
+          "feature": "FL_HAZ_vs_FL_SAFE",
+          "relationship": "Two distinct FL states: hazardous (S0) vs safe (S5) flow",
+          "constraint": "C976"
+        }
+      ],
+      "confidence": "HIGH"
+    },
+    "BUBBLE_CADENCE": {
+      "modality": "AUDITORY",
+      "description": "Rhythm and frequency of boiling bubbles",
+      "distillation_context": "Steady cadence = stable boil; irregular = approaching transition; rapid = energy excess",
+      "architecture_mapping": [
+        {
+          "feature": "lane_oscillation",
+          "relationship": "QO/CHSH alternation (55.4%) creates rhythmic energy/stability oscillation",
+          "constraint": "C966"
+        },
+        {
+          "feature": "first_order_sufficiency",
+          "relationship": "Cadence is first-order (current state predicts next), no accumulation needed",
+          "constraint": "C966"
+        }
+      ],
+      "confidence": "HIGH"
+    },
+    "PITCH_CHANGE": {
+      "modality": "AUDITORY",
+      "description": "Change in boiling sound pitch as conditions shift",
+      "distillation_context": "Pitch change signals phase transition or temperature shift at boil point",
+      "architecture_mapping": [
+        {
+          "feature": "state_transitions",
+          "relationship": "6-state automaton transitions mark qualitative system state changes",
+          "constraint": "C976"
+        },
+        {
+          "feature": "convergence_gradient",
+          "relationship": "System converges to STATE-C (steady state) with increasing completion",
+          "constraint": "C323"
+        }
+      ],
+      "confidence": "MEDIUM"
+    },
+    "CONDENSER_HISS": {
+      "modality": "AUDITORY",
+      "description": "Hissing sound of hot vapor contacting cool condenser surface",
+      "distillation_context": "Normal hiss = condensation working; absence = condenser too hot or no vapor",
+      "architecture_mapping": [
+        {
+          "feature": "e_operator",
+          "relationship": "e (STABILITY_ANCHOR) represents cooling/equilibration engagement",
+          "constraint": "C105"
+        },
+        {
+          "feature": "CHSH_lane",
+          "relationship": "CHSH lane is e-rich, encoding stabilization/monitoring phases",
+          "constraint": "C647"
+        }
+      ],
+      "confidence": "MEDIUM"
+    },
+    "PRESSURE_THUD": {
+      "modality": "AUDITORY",
+      "description": "Sudden thump or bang from overpressure event in sealed vessel",
+      "distillation_context": "Immediate danger signal in pelican (sealed vessel); requires emergency response",
+      "architecture_mapping": [
+        {
+          "feature": "CONTAINMENT_TIMING_hazard",
+          "relationship": "CONTAINMENT_TIMING (24%) = pressure/overflow in sealed vessel",
+          "constraint": "C109"
+        },
+        {
+          "feature": "1_token_hazard_gate",
+          "relationship": "Hazard gate fires in 1 token = immediate categorical response",
+          "constraint": "C967"
+        }
+      ],
+      "confidence": "HIGH"
+    },
+    "FRAGRANCE_SHIFT": {
+      "modality": "OLFACTORY",
+      "description": "Change in distillate odor indicating different fraction emerging",
+      "distillation_context": "Primary fraction identification method; each aromatic fraction has characteristic smell",
+      "architecture_mapping": [
+        {
+          "feature": "MIDDLE_discrimination_space",
+          "relationship": "972 MIDDLEs in 100D space encode material property distinctions",
+          "constraint": "C475"
+        },
+        {
+          "feature": "folio_vocabulary_uniqueness",
+          "relationship": "Each program uses distinct MIDDLE vocabulary = distinct material profiles",
+          "constraint": "C531"
+        },
+        {
+          "feature": "PP_affordance_families",
+          "relationship": "5 affordance families map to distinct material behavior classes",
+          "constraint": "PP_CONSTRAINT T5"
+        }
+      ],
+      "confidence": "HIGH"
+    },
+    "OFF_ODOR": {
+      "modality": "OLFACTORY",
+      "description": "Unexpected or foul smell indicating contamination",
+      "distillation_context": "Detection of contamination or wrong fraction; requires trained nose",
+      "architecture_mapping": [
+        {
+          "feature": "COMPOSITION_JUMP_hazard",
+          "relationship": "COMPOSITION_JUMP (24%) = impure fraction, detectable by smell",
+          "constraint": "C109"
+        },
+        {
+          "feature": "HT_vigilance",
+          "relationship": "HT correlates with discrimination difficulty (r=0.504); olfactory contexts require expert attention",
+          "constraint": "C477"
+        }
+      ],
+      "confidence": "HIGH"
+    },
+    "BURNING_SCENT": {
+      "modality": "OLFACTORY",
+      "description": "Acrid smell of material burning/scorching on vessel wall",
+      "distillation_context": "Catastrophic failure indicator; material is being destroyed",
+      "architecture_mapping": [
+        {
+          "feature": "ENERGY_OVERSHOOT_hazard",
+          "relationship": "ENERGY_OVERSHOOT (6%) = thermal damage/scorching",
+          "constraint": "C109"
+        }
+      ],
+      "confidence": "HIGH"
+    },
+    "FRACTION_IDENTITY": {
+      "modality": "OLFACTORY",
+      "description": "Recognition of which specific product/fraction is currently distilling",
+      "distillation_context": "Expert knowledge: each fraction has a signature smell that identifies the cut point",
+      "architecture_mapping": [
+        {
+          "feature": "PP_MIDDLE_identity",
+          "relationship": "PP MIDDLEs encode material property parameters, not substance names",
+          "constraint": "C469"
+        },
+        {
+          "feature": "incompatibility_lattice",
+          "relationship": "100D incompatibility encodes what materials cannot co-occur in a process step",
+          "constraint": "C475"
+        }
+      ],
+      "confidence": "MEDIUM"
+    },
+    "VESSEL_HEAT": {
+      "modality": "TACTILE",
+      "description": "Temperature of apparatus walls felt by hand",
+      "distillation_context": "Direct thermal state assessment; hand on vessel gives crude but categorical temperature",
+      "architecture_mapping": [
+        {
+          "feature": "k_operator",
+          "relationship": "k (ENERGY_MODULATOR) tracks energy input state",
+          "constraint": "C103"
+        },
+        {
+          "feature": "QO_lane",
+          "relationship": "QO lane is k-rich, encoding energy-application phases",
+          "constraint": "C647"
+        },
+        {
+          "feature": "THERMAL_affordance",
+          "relationship": "THERMAL is largest affordance family (597 MIDDLEs)",
+          "constraint": "PP_CONSTRAINT T5"
+        }
+      ],
+      "confidence": "HIGH"
+    },
+    "VIBRATION": {
+      "modality": "TACTILE",
+      "description": "Apparatus tremor from vigorous boiling or pressure buildup",
+      "distillation_context": "Physical vibration signals rate of reaction; sudden change = danger",
+      "architecture_mapping": [
+        {
+          "feature": "RATE_MISMATCH_hazard",
+          "relationship": "RATE_MISMATCH (6%) = flow balance destroyed, vibration is symptom",
+          "constraint": "C109"
+        }
+      ],
+      "confidence": "MEDIUM"
+    },
+    "CONDENSATE_WARMTH": {
+      "modality": "TACTILE",
+      "description": "Temperature of output condensate in the receiver",
+      "distillation_context": "Warm condensate = condenser not cooling enough; cold = good separation",
+      "architecture_mapping": [
+        {
+          "feature": "e_operator",
+          "relationship": "e (STABILITY_ANCHOR) represents cooling/equilibration",
+          "constraint": "C105"
+        },
+        {
+          "feature": "e_recovery_dominance",
+          "relationship": "54.7% of recovery paths through e = cooling is primary recovery",
+          "constraint": "C105"
+        }
+      ],
+      "confidence": "MEDIUM"
+    },
+    "GLASS_TENSION": {
+      "modality": "TACTILE",
+      "description": "Physical stress on glass vessel walls under thermal/pressure load",
+      "distillation_context": "Experienced operator can feel vessel stress; crack risk under thermal shock",
+      "architecture_mapping": [
+        {
+          "feature": "CONTAINMENT_TIMING_hazard",
+          "relationship": "CONTAINMENT_TIMING (24%) includes vessel failure risk",
+          "constraint": "C109"
+        }
+      ],
+      "confidence": "LOW"
+    },
+    "ADJUSTMENT_DELAY": {
+      "modality": "TEMPORAL",
+      "description": "Lag between adjusting heat and seeing effect on distillation",
+      "distillation_context": "Thermal lag is real; operator must anticipate rather than react",
+      "architecture_mapping": [
+        {
+          "feature": "1_token_hazard_gate",
+          "relationship": "Hazard gate: 1-token response, decay by offset+2 = minimal lag",
+          "constraint": "C967"
+        },
+        {
+          "feature": "first_order_sufficiency",
+          "relationship": "No hidden accumulator; system responds to current state only",
+          "constraint": "C966"
+        }
+      ],
+      "confidence": "HIGH"
+    },
+    "RETURN_TO_EQUILIBRIUM": {
+      "modality": "TEMPORAL",
+      "description": "Time for system to settle after a perturbation or adjustment",
+      "distillation_context": "After changing heat, system needs time to re-stabilize; faster = more controllable",
+      "architecture_mapping": [
+        {
+          "feature": "e_recovery",
+          "relationship": "e absorbs 54.7% of recovery paths; convergence to STATE-C (57.8% terminal)",
+          "constraint": "C105"
+        },
+        {
+          "feature": "post_hazard_recovery",
+          "relationship": "Post-hazard QO recovery median 1.0 CHSH tokens = fast return",
+          "constraint": "C651"
+        }
+      ],
+      "confidence": "HIGH"
+    },
+    "RATE_OF_CHANGE": {
+      "modality": "TEMPORAL",
+      "description": "How quickly system state is shifting (fast change = danger, slow = stable)",
+      "distillation_context": "Experienced operator monitors rate of change, not just absolute state",
+      "architecture_mapping": [
+        {
+          "feature": "LINK_monitoring",
+          "relationship": "LINK operators (13.2% density) encode monitoring/observation phases",
+          "constraint": "C609"
+        },
+        {
+          "feature": "LINK_position",
+          "relationship": "LINK mean position 0.476 (early-line) = monitoring before action",
+          "constraint": "C813"
+        }
+      ],
+      "confidence": "MEDIUM"
+    },
+    "CYCLE_DURATION": {
+      "modality": "TEMPORAL",
+      "description": "Duration of one complete distillation cycle or fraction collection",
+      "distillation_context": "Each fraction takes a characteristic time; knowing when to expect completion",
+      "architecture_mapping": [
+        {
+          "feature": "program_structure",
+          "relationship": "Folio = program = one distillation run/cycle",
+          "constraint": "C178"
+        },
+        {
+          "feature": "line_as_control_block",
+          "relationship": "Line = control block = one operation within the cycle",
+          "constraint": "C357"
+        }
+      ],
+      "confidence": "MEDIUM"
+    },
+    "INTER_FRACTION_GAP": {
+      "modality": "TEMPORAL",
+      "description": "Time between end of one fraction and start of next",
+      "distillation_context": "Gap management: system must be re-prepared between fractions",
+      "architecture_mapping": [
+        {
+          "feature": "line_boundary_reset",
+          "relationship": "Hard line resets (C670): each control block starts fresh",
+          "constraint": "C670"
+        },
+        {
+          "feature": "low_cross_line_MI",
+          "relationship": "Cross-line MI = 0.52 bits (below null 0.72-0.77) = memory resets between blocks",
+          "constraint": "FINGERPRINT_UNIQUENESS F10"
+        }
+      ],
+      "confidence": "MEDIUM"
+    }
+  },
+  "coverage": {
+    "s2a": {
+      "total_phenomena": 25,
+      "mapped_phenomena": 25,
+      "coverage_pct": 1.0,
+      "unmapped": []
+    },
+    "a2s": {
+      "total_features": 29,
+      "mapped_features": 28,
+      "coverage_pct": 0.9655,
+      "unmapped": [
+        "design_asymmetry"
+      ]
+    }
+  },
+  "modality_distribution": {
+    "AUDITORY": {
+      "n_phenomena": 4,
+      "phenomena": [
+        "BUBBLE_CADENCE",
+        "PITCH_CHANGE",
+        "CONDENSER_HISS",
+        "PRESSURE_THUD"
+      ],
+      "architecture_features_covered": 8,
+      "features": [
+        "convergence_gradient",
+        "state_transitions",
+        "CONTAINMENT_TIMING_hazard",
+        "1_token_hazard_gate",
+        "CHSH_lane",
+        "e_operator",
+        "lane_oscillation",
+        "first_order_sufficiency"
+      ]
+    },
+    "OLFACTORY": {
+      "n_phenomena": 4,
+      "phenomena": [
+        "FRAGRANCE_SHIFT",
+        "OFF_ODOR",
+        "BURNING_SCENT",
+        "FRACTION_IDENTITY"
+      ],
+      "architecture_features_covered": 8,
+      "features": [
+        "PP_MIDDLE_identity",
+        "MIDDLE_discrimination_space",
+        "COMPOSITION_JUMP_hazard",
+        "PP_affordance_families",
+        "ENERGY_OVERSHOOT_hazard",
+        "incompatibility_lattice",
+        "folio_vocabulary_uniqueness",
+        "HT_vigilance"
+      ]
+    },
+    "TACTILE": {
+      "n_phenomena": 4,
+      "phenomena": [
+        "VESSEL_HEAT",
+        "VIBRATION",
+        "CONDENSATE_WARMTH",
+        "GLASS_TENSION"
+      ],
+      "architecture_features_covered": 7,
+      "features": [
+        "THERMAL_affordance",
+        "QO_lane",
+        "e_recovery_dominance",
+        "RATE_MISMATCH_hazard",
+        "CONTAINMENT_TIMING_hazard",
+        "k_operator",
+        "e_operator"
+      ]
+    },
+    "TEMPORAL": {
+      "n_phenomena": 5,
+      "phenomena": [
+        "ADJUSTMENT_DELAY",
+        "RETURN_TO_EQUILIBRIUM",
+        "RATE_OF_CHANGE",
+        "CYCLE_DURATION",
+        "INTER_FRACTION_GAP"
+      ],
+      "architecture_features_covered": 10,
+      "features": [
+        "LINK_monitoring",
+        "post_hazard_recovery",
+        "1_token_hazard_gate",
+        "line_as_control_block",
+        "e_recovery",
+        "low_cross_line_MI",
+        "first_order_sufficiency",
+        "program_structure",
+        "LINK_position",
+        "line_boundary_reset"
+      ]
+    },
+    "VISUAL": {
+      "n_phenomena": 8,
+      "phenomena": [
+        "VAPOR_DENSITY",
+        "CONDENSATE_DRIP_RATE",
+        "FOAM_ONSET",
+        "LIQUID_COLOR",
+        "PHASE_BOUNDARY_VISIBILITY",
+        "SURFACE_AGITATION",
+        "CONDENSER_CLARITY",
+        "FLOW_DIRECTION"
+      ],
+      "architecture_features_covered": 14,
+      "features": [
+        "k_operator_concentration",
+        "FL_operator_progression",
+        "PHASE_ORDERING_hazard",
+        "FL_final_position",
+        "MIDDLE_discrimination",
+        "QO_lane",
+        "lane_boundary",
+        "ENERGY_OVERSHOOT_hazard",
+        "COMPOSITION_JUMP_hazard",
+        "FL_operator",
+        "h_operator",
+        "folio_vocabulary",
+        "k_e_boundary",
+        "FL_HAZ_vs_FL_SAFE"
+      ]
+    }
+  },
+  "confidence_distribution": {
+    "HIGH": 14,
+    "MEDIUM": 10,
+    "LOW": 1
+  },
+  "verdict": "VIABLE",
+  "explanation": "Architecture->Sensory: 96.6% (28/29). Sensory->Architecture: 100.0% (25/25). Both directions exceed 60% threshold. The control architecture is compatible with sensory-driven pelican reflux operation."
+}

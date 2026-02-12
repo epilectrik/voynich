@@ -1,0 +1,400 @@
+{
+  "test": "T11_hub_residual_structure",
+  "embedding_dim": 99,
+  "hub_eigenvalue": 81.97675337170392,
+  "residual_eigenvalue_range": [
+    19.159221044361416,
+    3.7707515990723373
+  ],
+  "hub_frequency_rho": -0.791833517170362,
+  "hub_frequency_p": 6.139688259260833e-210,
+  "residual_norm_frequency_rho": 0.7274735235293688,
+  "connector_residual_ratio": 2.4722016055991216,
+  "hub_by_frequency": {
+    "rare (1-2 lines)": {
+      "count": 748,
+      "mean_hub_loading": -0.00978656543116762,
+      "mean_residual_norm": 0.6126969700135088
+    },
+    "uncommon (3-10)": {
+      "count": 131,
+      "mean_hub_loading": -0.029280330799045844,
+      "mean_residual_norm": 1.0712239815173734
+    },
+    "common (11-50)": {
+      "count": 59,
+      "mean_hub_loading": -0.060466945288638725,
+      "mean_residual_norm": 1.6228698600722744
+    },
+    "universal (51+)": {
+      "count": 34,
+      "mean_hub_loading": -0.1251785129378603,
+      "mean_residual_norm": 2.226531837361494
+    }
+  },
+  "clustering": {
+    "5": {
+      "silhouette": 0.24523331741415114,
+      "sizes": [
+        865,
+        87,
+        11,
+        8,
+        1
+      ],
+      "max_cluster": 865,
+      "min_cluster": 1
+    },
+    "8": {
+      "silhouette": 0.058759468245225425,
+      "sizes": [
+        578,
+        255,
+        100,
+        14,
+        9,
+        8,
+        7,
+        1
+      ],
+      "max_cluster": 578,
+      "min_cluster": 1
+    },
+    "10": {
+      "silhouette": 0.07917136848865454,
+      "sizes": [
+        721,
+        141,
+        66,
+        16,
+        11,
+        7,
+        7,
+        1,
+        1,
+        1
+      ],
+      "max_cluster": 721,
+      "min_cluster": 1
+    },
+    "12": {
+      "silhouette": -0.018489985777868787,
+      "sizes": [
+        484,
+        239,
+        114,
+        33,
+        32,
+        31,
+        10,
+        9,
+        7,
+        6,
+        6,
+        1
+      ],
+      "max_cluster": 484,
+      "min_cluster": 1
+    },
+    "15": {
+      "silhouette": -0.04031590539592223,
+      "sizes": [
+        296,
+        287,
+        225,
+        94,
+        15,
+        11,
+        9,
+        9,
+        8,
+        7,
+        7,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_cluster": 296,
+      "min_cluster": 1
+    },
+    "20": {
+      "silhouette": -0.04231985959728485,
+      "sizes": [
+        407,
+        190,
+        109,
+        85,
+        64,
+        30,
+        17,
+        15,
+        9,
+        9,
+        7,
+        6,
+        6,
+        5,
+        5,
+        4,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_cluster": 407,
+      "min_cluster": 1
+    },
+    "30": {
+      "silhouette": 0.009486815547501292,
+      "sizes": [
+        431,
+        216,
+        113,
+        73,
+        33,
+        18,
+        9,
+        8,
+        7,
+        7,
+        7,
+        7,
+        6,
+        6,
+        6,
+        6,
+        6,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "max_cluster": 431,
+      "min_cluster": 1
+    }
+  },
+  "best_k": 5,
+  "best_silhouette": 0.24523331741415114,
+  "gap_statistic": -0.014413343584590343,
+  "structure_type": "MIXED_BANDS",
+  "structure_explanation": "Silhouette 0.245 \u2208 [0.15, 0.30] with k=5. Residual space has fuzzy bands \u2014 not clean blocks, not smooth manifold.",
+  "folio_cohesion_residual": {
+    "f57v": {
+      "n_middles": 44,
+      "section": "C",
+      "mean_cosine_sim": -0.008070891182329336,
+      "null_cos_mean": 0.005199891375968165,
+      "cos_z": -2.8539208088564707
+    },
+    "f67r1": {
+      "n_middles": 53,
+      "section": "A",
+      "mean_cosine_sim": -0.008229150444685453,
+      "null_cos_mean": 0.005283853536337302,
+      "cos_z": -3.4158107921474126
+    },
+    "f67r2": {
+      "n_middles": 51,
+      "section": "A",
+      "mean_cosine_sim": -0.004384750820732088,
+      "null_cos_mean": 0.004989931323587936,
+      "cos_z": -2.3353016095406844
+    },
+    "f67v1": {
+      "n_middles": 40,
+      "section": "A",
+      "mean_cosine_sim": -0.005448884759105455,
+      "null_cos_mean": 0.005466755571274571,
+      "cos_z": -2.064281246254693
+    },
+    "f67v2": {
+      "n_middles": 32,
+      "section": "C",
+      "mean_cosine_sim": -0.0046977207849906825,
+      "null_cos_mean": 0.004854785814282124,
+      "cos_z": -1.5721048769570871
+    },
+    "f68r1": {
+      "n_middles": 20,
+      "section": "A",
+      "mean_cosine_sim": -0.008354807934880592,
+      "null_cos_mean": 0.004622768223351076,
+      "cos_z": -1.377204046611443
+    },
+    "f68r2": {
+      "n_middles": 22,
+      "section": "A",
+      "mean_cosine_sim": -0.005424425132521245,
+      "null_cos_mean": 0.0058110570618095676,
+      "cos_z": -1.2706001332331043
+    },
+    "f68r3": {
+      "n_middles": 39,
+      "section": "A",
+      "mean_cosine_sim": -0.011235779676705455,
+      "null_cos_mean": 0.004912171059473716,
+      "cos_z": -3.340711295092737
+    },
+    "f68v1": {
+      "n_middles": 41,
+      "section": "A",
+      "mean_cosine_sim": -0.010297256906389132,
+      "null_cos_mean": 0.0052485577019809335,
+      "cos_z": -3.1784355689570307
+    },
+    "f68v2": {
+      "n_middles": 31,
+      "section": "A",
+      "mean_cosine_sim": -0.006284395156547059,
+      "null_cos_mean": 0.005081410238836777,
+      "cos_z": -1.748414270582435
+    },
+    "f68v3": {
+      "n_middles": 55,
+      "section": "C",
+      "mean_cosine_sim": -0.009027160952947566,
+      "null_cos_mean": 0.005598910347109759,
+      "cos_z": -3.8023803275087444
+    },
+    "f69r": {
+      "n_middles": 51,
+      "section": "C",
+      "mean_cosine_sim": -0.006969752296610866,
+      "null_cos_mean": 0.005190381881244425,
+      "cos_z": -2.9994660527549275
+    },
+    "f69v": {
+      "n_middles": 43,
+      "section": "C",
+      "mean_cosine_sim": -0.008909626139949455,
+      "null_cos_mean": 0.0051136411990156195,
+      "cos_z": -3.0048535975727297
+    },
+    "f70r1": {
+      "n_middles": 36,
+      "section": "C",
+      "mean_cosine_sim": -0.0028265998599482953,
+      "null_cos_mean": 0.005609112594202275,
+      "cos_z": -1.4491822167168749
+    },
+    "f70r2": {
+      "n_middles": 46,
+      "section": "C",
+      "mean_cosine_sim": -0.010387071807157127,
+      "null_cos_mean": 0.0048760597075005,
+      "cos_z": -3.4733081460260253
+    },
+    "f70v1": {
+      "n_middles": 40,
+      "section": "Z",
+      "mean_cosine_sim": -0.012144381590401907,
+      "null_cos_mean": 0.0050945290963922705,
+      "cos_z": -3.3904515835488405
+    },
+    "f70v2": {
+      "n_middles": 54,
+      "section": "Z",
+      "mean_cosine_sim": -0.007303241214108329,
+      "null_cos_mean": 0.004863953662237236,
+      "cos_z": -3.301761408319986
+    },
+    "f71r": {
+      "n_middles": 38,
+      "section": "Z",
+      "mean_cosine_sim": -0.008866385635458975,
+      "null_cos_mean": 0.005147815790154763,
+      "cos_z": -2.755785549818756
+    },
+    "f71v": {
+      "n_middles": 39,
+      "section": "Z",
+      "mean_cosine_sim": -0.009251508859215168,
+      "null_cos_mean": 0.005172592582090905,
+      "cos_z": -2.7635823596694884
+    },
+    "f72r1": {
+      "n_middles": 43,
+      "section": "Z",
+      "mean_cosine_sim": -0.011510407227267769,
+      "null_cos_mean": 0.005156812857843169,
+      "cos_z": -3.553972856836433
+    },
+    "f72r2": {
+      "n_middles": 42,
+      "section": "Z",
+      "mean_cosine_sim": -0.012898958499628896,
+      "null_cos_mean": 0.005388892024347541,
+      "cos_z": -3.813768867902062
+    },
+    "f72r3": {
+      "n_middles": 51,
+      "section": "Z",
+      "mean_cosine_sim": -0.00789923802963338,
+      "null_cos_mean": 0.005036089942580903,
+      "cos_z": -3.093154785514367
+    },
+    "f72v1": {
+      "n_middles": 45,
+      "section": "Z",
+      "mean_cosine_sim": -0.004287219076706447,
+      "null_cos_mean": 0.005284600913448079,
+      "cos_z": -2.022649848978814
+    },
+    "f72v2": {
+      "n_middles": 43,
+      "section": "Z",
+      "mean_cosine_sim": -0.008256296894610517,
+      "null_cos_mean": 0.005173264185798579,
+      "cos_z": -2.856129954330126
+    },
+    "f72v3": {
+      "n_middles": 40,
+      "section": "Z",
+      "mean_cosine_sim": -0.007043079969271027,
+      "null_cos_mean": 0.005305119032136586,
+      "cos_z": -2.6090451786920688
+    },
+    "f73r": {
+      "n_middles": 45,
+      "section": "Z",
+      "mean_cosine_sim": -0.004199816881801585,
+      "null_cos_mean": 0.004994190800234179,
+      "cos_z": -1.9516226276741508
+    },
+    "f73v": {
+      "n_middles": 43,
+      "section": "Z",
+      "mean_cosine_sim": -0.006311154790575257,
+      "null_cos_mean": 0.004968658084793504,
+      "cos_z": -2.468745639751844
+    }
+  },
+  "n_coherent": 0,
+  "n_tested": 27,
+  "pct_coherent": 0.0,
+  "mean_cos_z": -2.6839498388833087,
+  "interfolio_cos_residual": 0.21578088773171372,
+  "interfolio_dist_residual": 0.2632022561532247,
+  "section_structure": {
+    "mean_within_dist": 0.25190582812607965,
+    "mean_between_dist": 0.2687068715054351,
+    "ratio": 0.9374744557694885,
+    "mannwhitney_p": 0.0003497790676953644,
+    "mean_within_cos": 0.25730247053086747,
+    "mean_between_cos": 0.19554791306263453
+  },
+  "cluster_section_ari": 0.008519071206023736,
+  "cluster_section_nmi": 0.016893940885493803,
+  "nn_dist_mean": 0.4768358246539049,
+  "nn_dist_cv": 0.9827642181510345
+}

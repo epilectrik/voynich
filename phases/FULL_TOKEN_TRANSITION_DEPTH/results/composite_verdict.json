@@ -1,0 +1,7 @@
+{
+  "t1": "NO_TOKEN_LEVEL_IMPROVEMENT",
+  "t3": "NO_SUFFIX_HIDDEN_STATE",
+  "t5": "SUFFIX_ENTROPY_REDUCTION_SIGNIFICANT",
+  "passes": 1,
+  "composite": "WEAK_HIDDEN_STATE"
+}

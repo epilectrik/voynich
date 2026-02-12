@@ -1,0 +1,83 @@
+{
+  "test": "T4_positional_structure",
+  "properties": [
+    "F9_boundary_constrained_free_interior"
+  ],
+  "observed": {
+    "zone_exclusivity": 0.046228710462287104,
+    "n_exclusive": 19,
+    "n_common": 411,
+    "entropy_gradient": -0.09050000000000047,
+    "role_position_mi": 0.021642152646042176,
+    "entropies": {
+      "-1": {
+        "entropy": 7.572,
+        "n_tokens": 2129,
+        "n_types": 343
+      },
+      "-2": {
+        "entropy": 7.43,
+        "n_tokens": 1890,
+        "n_types": 331
+      },
+      "-3": {
+        "entropy": 7.416,
+        "n_tokens": 1600,
+        "n_types": 327
+      },
+      "0": {
+        "entropy": 7.511,
+        "n_tokens": 2277,
+        "n_types": 356
+      },
+      "1": {
+        "entropy": 7.486,
+        "n_tokens": 2277,
+        "n_types": 358
+      },
+      "2": {
+        "entropy": 7.543,
+        "n_tokens": 2277,
+        "n_types": 368
+      },
+      "interior": {
+        "entropy": 7.451,
+        "n_tokens": 3387,
+        "n_types": 388
+      }
+    }
+  },
+  "ensembles": {
+    "NULL_J_within_line": {
+      "p_exclusivity": 0.0072,
+      "p_gradient": 0.9644,
+      "p_mi": 0.0,
+      "p_joint_F9": 0.0,
+      "null_excl_mean": 0.0261,
+      "null_excl_std": 0.0074,
+      "null_grad_mean": -0.0232,
+      "null_mi_mean": 0.0004,
+      "exclusivity_ratio": 1.77,
+      "time_seconds": 311.6
+    },
+    "NULL_K_cross_line": {
+      "p_exclusivity": 0.4466,
+      "p_gradient": 0.7576,
+      "p_mi": 0.0742,
+      "p_joint_F9": 0.0236,
+      "null_excl_mean": 0.0452,
+      "null_excl_std": 0.0021,
+      "null_grad_mean": -0.0746,
+      "null_mi_mean": 0.0212,
+      "exclusivity_ratio": 1.02,
+      "time_seconds": 483.3
+    }
+  },
+  "verdict": "UNCOMMON",
+  "best_joint_p": 0.0,
+  "worst_joint_p": 0.0236,
+  "n_samples": 5000,
+  "n_lines": 2409,
+  "n_tokens": 16054,
+  "elapsed_seconds": 796.3
+}

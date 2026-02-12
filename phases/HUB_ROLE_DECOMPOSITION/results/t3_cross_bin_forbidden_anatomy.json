@@ -1,0 +1,445 @@
+{
+  "metadata": {
+    "phase": "HUB_ROLE_DECOMPOSITION",
+    "test": "T3_CROSS_BIN_FORBIDDEN_ANATOMY"
+  },
+  "bin_pair_matrix": {
+    "(6,6)": 8,
+    "(8,6)": 3,
+    "(6,8)": 2,
+    "(1,6)": 2,
+    "(6,0)": 1,
+    "(0,6)": 1
+  },
+  "transition_details": [
+    {
+      "id": 1,
+      "source_token": "shey",
+      "target_token": "aiin",
+      "source_middle": "ey",
+      "target_middle": "aiin",
+      "source_bin": 6,
+      "target_bin": 6,
+      "source_bin_label": "HUB_UNIVERSAL",
+      "target_bin_label": "HUB_UNIVERSAL"
+    },
+    {
+      "id": 2,
+      "source_token": "shey",
+      "target_token": "al",
+      "source_middle": "ey",
+      "target_middle": "al",
+      "source_bin": 6,
+      "target_bin": 6,
+      "source_bin_label": "HUB_UNIVERSAL",
+      "target_bin_label": "HUB_UNIVERSAL"
+    },
+    {
+      "id": 3,
+      "source_token": "shey",
+      "target_token": "c",
+      "source_middle": "ey",
+      "target_middle": "c",
+      "source_bin": 6,
+      "target_bin": 0,
+      "source_bin_label": "HUB_UNIVERSAL",
+      "target_bin_label": "FLOW_TERMINAL"
+    },
+    {
+      "id": 4,
+      "source_token": "chol",
+      "target_token": "r",
+      "source_middle": "ol",
+      "target_middle": "r",
+      "source_bin": 6,
+      "target_bin": 6,
+      "source_bin_label": "HUB_UNIVERSAL",
+      "target_bin_label": "HUB_UNIVERSAL"
+    },
+    {
+      "id": 5,
+      "source_token": "chedy",
+      "target_token": "ee",
+      "source_middle": "edy",
+      "target_middle": "ee",
+      "source_bin": 8,
+      "target_bin": 6,
+      "source_bin_label": "STABILITY_CRITICAL",
+      "target_bin_label": "HUB_UNIVERSAL"
+    },
+    {
+      "id": 6,
+      "source_token": "dy",
+      "target_token": "aiin",
+      "source_middle": "dy",
+      "target_middle": "aiin",
+      "source_bin": 6,
+      "target_bin": 6,
+      "source_bin_label": "HUB_UNIVERSAL",
+      "target_bin_label": "HUB_UNIVERSAL"
+    },
+    {
+      "id": 7,
+      "source_token": "dy",
+      "target_token": "chey",
+      "source_middle": "dy",
+      "target_middle": "ey",
+      "source_bin": 6,
+      "target_bin": 6,
+      "source_bin_label": "HUB_UNIVERSAL",
+      "target_bin_label": "HUB_UNIVERSAL"
+    },
+    {
+      "id": 8,
+      "source_token": "l",
+      "target_token": "chol",
+      "source_middle": "l",
+      "target_middle": "ol",
+      "source_bin": 6,
+      "target_bin": 6,
+      "source_bin_label": "HUB_UNIVERSAL",
+      "target_bin_label": "HUB_UNIVERSAL"
+    },
+    {
+      "id": 9,
+      "source_token": "or",
+      "target_token": "dal",
+      "source_middle": "or",
+      "target_middle": "l",
+      "source_bin": 6,
+      "target_bin": 6,
+      "source_bin_label": "HUB_UNIVERSAL",
+      "target_bin_label": "HUB_UNIVERSAL"
+    },
+    {
+      "id": 10,
+      "source_token": "chey",
+      "target_token": "chedy",
+      "source_middle": "ey",
+      "target_middle": "edy",
+      "source_bin": 6,
+      "target_bin": 8,
+      "source_bin_label": "HUB_UNIVERSAL",
+      "target_bin_label": "STABILITY_CRITICAL"
+    },
+    {
+      "id": 11,
+      "source_token": "chey",
+      "target_token": "shedy",
+      "source_middle": "ey",
+      "target_middle": "edy",
+      "source_bin": 6,
+      "target_bin": 8,
+      "source_bin_label": "HUB_UNIVERSAL",
+      "target_bin_label": "STABILITY_CRITICAL"
+    },
+    {
+      "id": 12,
+      "source_token": "ar",
+      "target_token": "dal",
+      "source_middle": "ar",
+      "target_middle": "l",
+      "source_bin": 6,
+      "target_bin": 6,
+      "source_bin_label": "HUB_UNIVERSAL",
+      "target_bin_label": "HUB_UNIVERSAL"
+    },
+    {
+      "id": 13,
+      "source_token": "c",
+      "target_token": "ee",
+      "source_middle": "c",
+      "target_middle": "ee",
+      "source_bin": 0,
+      "target_bin": 6,
+      "source_bin_label": "FLOW_TERMINAL",
+      "target_bin_label": "HUB_UNIVERSAL"
+    },
+    {
+      "id": 14,
+      "source_token": "he",
+      "target_token": "t",
+      "source_middle": "he",
+      "target_middle": "t",
+      "source_bin": 1,
+      "target_bin": 6,
+      "source_bin_label": "ROUTINE_SPECIALIZED",
+      "target_bin_label": "HUB_UNIVERSAL"
+    },
+    {
+      "id": 15,
+      "source_token": "he",
+      "target_token": "or",
+      "source_middle": "he",
+      "target_middle": "or",
+      "source_bin": 1,
+      "target_bin": 6,
+      "source_bin_label": "ROUTINE_SPECIALIZED",
+      "target_bin_label": "HUB_UNIVERSAL"
+    },
+    {
+      "id": 16,
+      "source_token": "shedy",
+      "target_token": "aiin",
+      "source_middle": "edy",
+      "target_middle": "aiin",
+      "source_bin": 8,
+      "target_bin": 6,
+      "source_bin_label": "STABILITY_CRITICAL",
+      "target_bin_label": "HUB_UNIVERSAL"
+    },
+    {
+      "id": 17,
+      "source_token": "shedy",
+      "target_token": "o",
+      "source_middle": "edy",
+      "target_middle": "o",
+      "source_bin": 8,
+      "target_bin": 6,
+      "source_bin_label": "STABILITY_CRITICAL",
+      "target_bin_label": "HUB_UNIVERSAL"
+    }
+  ],
+  "source_middles": [
+    "ar",
+    "c",
+    "dy",
+    "edy",
+    "ey",
+    "he",
+    "l",
+    "ol",
+    "or"
+  ],
+  "target_middles": [
+    "aiin",
+    "al",
+    "c",
+    "edy",
+    "ee",
+    "ey",
+    "l",
+    "o",
+    "ol",
+    "or",
+    "r",
+    "t"
+  ],
+  "all_hazard_middles": [
+    "aiin",
+    "al",
+    "ar",
+    "c",
+    "dy",
+    "edy",
+    "ee",
+    "ey",
+    "he",
+    "l",
+    "o",
+    "ol",
+    "or",
+    "r",
+    "t"
+  ],
+  "source_target_comparison": {
+    "length": {
+      "U": 60.5,
+      "p": 0.6377519087057935,
+      "effect_r": 0.10274665524945897,
+      "source_mean": 1.8888888888888888,
+      "target_mean": 1.8333333333333333
+    },
+    "k_ratio": {
+      "U": 54.0,
+      "p": 1.0,
+      "effect_r": 0.0,
+      "source_mean": 0.0,
+      "target_mean": 0.0
+    },
+    "e_ratio": {
+      "U": 57.5,
+      "p": 0.7887411537373223,
+      "effect_r": 0.0584705346204686,
+      "source_mean": 0.14814444444444444,
+      "target_mean": 0.152775
+    },
+    "h_ratio": {
+      "U": 60.0,
+      "p": 0.28983871760750823,
+      "effect_r": 0.23097828906119447,
+      "source_mean": 0.05555555555555555,
+      "target_mean": 0.0
+    },
+    "is_compound": {
+      "U": 51.0,
+      "p": 0.7696723627338158,
+      "effect_r": 0.06389495919836616,
+      "source_mean": 0.1111111111111111,
+      "target_mean": 0.16666666666666666
+    },
+    "qo_affinity": {
+      "U": 49.0,
+      "p": 0.7171395005923142,
+      "effect_r": 0.0790569415042095,
+      "source_mean": 0.2222222222222222,
+      "target_mean": 0.2916666666666667
+    },
+    "regime_1_enrichment": {
+      "U": 57.0,
+      "p": 0.8587116798922004,
+      "effect_r": 0.038845923161818216,
+      "source_mean": 0.9726888888888889,
+      "target_mean": 0.9410750000000001
+    },
+    "regime_2_enrichment": {
+      "U": 47.0,
+      "p": 0.6434809235350512,
+      "effect_r": 0.10099940022072726,
+      "source_mean": 1.4528999999999999,
+      "target_mean": 1.4931999999999999
+    },
+    "regime_3_enrichment": {
+      "U": 49.0,
+      "p": 0.7486455019456401,
+      "effect_r": 0.06992266169127276,
+      "source_mean": 0.8424666666666667,
+      "target_mean": 0.8801
+    },
+    "regime_4_enrichment": {
+      "U": 50.0,
+      "p": 0.8031905039455556,
+      "effect_r": 0.05438429242654546,
+      "source_mean": 1.1936555555555557,
+      "target_mean": 1.2129583333333334
+    },
+    "regime_entropy": {
+      "U": 45.0,
+      "p": 0.5450136266977901,
+      "effect_r": 0.13207613875018182,
+      "source_mean": 1.0367555555555554,
+      "target_mean": 1.1032916666666666
+    },
+    "initial_rate": {
+      "U": 46.0,
+      "p": 0.5933116805930467,
+      "effect_r": 0.11653776948545456,
+      "source_mean": 0.09167777777777776,
+      "target_mean": 0.10761666666666668
+    },
+    "final_rate": {
+      "U": 53.0,
+      "p": 0.9715990145298677,
+      "effect_r": 0.007769184632363611,
+      "source_mean": 0.12233333333333335,
+      "target_mean": 0.12154166666666666
+    },
+    "folio_spread": {
+      "U": 54.5,
+      "p": 1.0,
+      "effect_r": 0.0,
+      "source_mean": 0.7533777777777778,
+      "target_mean": 0.84755
+    }
+  },
+  "participation_rates": {
+    "0": {
+      "label": "FLOW_TERMINAL",
+      "bin_size": 67,
+      "hazard_middles": 1,
+      "participation_rate": 0.014925373134328358,
+      "middles": [
+        "c"
+      ]
+    },
+    "1": {
+      "label": "ROUTINE_SPECIALIZED",
+      "bin_size": 53,
+      "hazard_middles": 1,
+      "participation_rate": 0.018867924528301886,
+      "middles": [
+        "he"
+      ]
+    },
+    "2": {
+      "label": "PRECISION_SPECIALIZED",
+      "bin_size": 30,
+      "hazard_middles": 0,
+      "participation_rate": 0.0,
+      "middles": []
+    },
+    "3": {
+      "label": "COMPOUND_TERMINAL",
+      "bin_size": 43,
+      "hazard_middles": 0,
+      "participation_rate": 0.0,
+      "middles": []
+    },
+    "4": {
+      "label": "BULK_OPERATIONAL",
+      "bin_size": 566,
+      "hazard_middles": 0,
+      "participation_rate": 0.0,
+      "middles": []
+    },
+    "5": {
+      "label": "SETTLING_SPECIALIZED",
+      "bin_size": 54,
+      "hazard_middles": 0,
+      "participation_rate": 0.0,
+      "middles": []
+    },
+    "6": {
+      "label": "HUB_UNIVERSAL",
+      "bin_size": 23,
+      "hazard_middles": 12,
+      "participation_rate": 0.5217391304347826,
+      "middles": [
+        "aiin",
+        "al",
+        "ar",
+        "dy",
+        "ee",
+        "ey",
+        "l",
+        "o",
+        "ol",
+        "or",
+        "r",
+        "t"
+      ]
+    },
+    "7": {
+      "label": "ENERGY_SPECIALIZED",
+      "bin_size": 52,
+      "hazard_middles": 0,
+      "participation_rate": 0.0,
+      "middles": []
+    },
+    "8": {
+      "label": "STABILITY_CRITICAL",
+      "bin_size": 56,
+      "hazard_middles": 1,
+      "participation_rate": 0.017857142857142856,
+      "middles": [
+        "edy"
+      ]
+    },
+    "9": {
+      "label": "PHASE_SENSITIVE",
+      "bin_size": 28,
+      "hazard_middles": 0,
+      "participation_rate": 0.0,
+      "middles": []
+    }
+  },
+  "permutation_test": {
+    "observed_hub_transitions": 17,
+    "n_permutations": 10000,
+    "null_mean": 0.782,
+    "null_std": 1.525278990873473,
+    "p_value": 0.0
+  },
+  "concentration_verdict": "HUB_MONOPOLY_STRUCTURAL",
+  "concentration_detail": "HUB concentration (17/17) is highly significant (p=0.0000). Not a frequency artifact."
+}

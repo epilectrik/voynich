@@ -1,0 +1,336 @@
+{
+  "metadata": {
+    "phase": "HUB_ROLE_DECOMPOSITION",
+    "test": "T4_COMPOUND_POSITION_ANALYSIS"
+  },
+  "compound_analysis": {
+    "compound_hub": [
+      "aiin",
+      "eey",
+      "eol",
+      "iin"
+    ],
+    "atomic_hub": [
+      "al",
+      "ar",
+      "d",
+      "dy",
+      "e",
+      "ee",
+      "ek",
+      "eo",
+      "ey",
+      "k",
+      "l",
+      "o",
+      "od",
+      "ol",
+      "or",
+      "r",
+      "s",
+      "t",
+      "y"
+    ],
+    "comparison": {
+      "length": {
+        "p_permutation": 0.0,
+        "compound_mean": 3.25,
+        "atomic_mean": 1.5263157894736843
+      },
+      "k_ratio": {
+        "p_permutation": 0.8458,
+        "compound_mean": 0.0,
+        "atomic_mean": 0.07894736842105263
+      },
+      "e_ratio": {
+        "p_permutation": 0.8976,
+        "compound_mean": 0.25,
+        "atomic_mean": 0.18421052631578946
+      },
+      "h_ratio": {
+        "p_permutation": 1.0,
+        "compound_mean": 0.0,
+        "atomic_mean": 0.0
+      },
+      "is_compound": {
+        "p_permutation": 0.0,
+        "compound_mean": 1.0,
+        "atomic_mean": 0.0
+      },
+      "qo_affinity": {
+        "p_permutation": 0.709,
+        "compound_mean": 0.25,
+        "atomic_mean": 0.34210526315789475
+      },
+      "regime_1_enrichment": {
+        "p_permutation": 0.6135,
+        "compound_mean": 0.9642249999999999,
+        "atomic_mean": 0.8716526315789475
+      },
+      "regime_2_enrichment": {
+        "p_permutation": 0.3953,
+        "compound_mean": 0.9750000000000001,
+        "atomic_mean": 1.276842105263158
+      },
+      "regime_3_enrichment": {
+        "p_permutation": 0.8473,
+        "compound_mean": 1.124425,
+        "atomic_mean": 1.0751842105263159
+      },
+      "regime_4_enrichment": {
+        "p_permutation": 0.2531,
+        "compound_mean": 0.8372,
+        "atomic_mean": 1.2075157894736839
+      },
+      "regime_entropy": {
+        "p_permutation": 0.5141,
+        "compound_mean": 1.082675,
+        "atomic_mean": 1.1387157894736841
+      },
+      "initial_rate": {
+        "p_permutation": 0.1265,
+        "compound_mean": 0.1622,
+        "atomic_mean": 0.1031157894736842
+      },
+      "final_rate": {
+        "p_permutation": 0.051,
+        "compound_mean": 0.0468,
+        "atomic_mean": 0.11896315789473684
+      },
+      "folio_spread": {
+        "p_permutation": 0.5998,
+        "compound_mean": 0.911575,
+        "atomic_mean": 0.8761105263157895
+      }
+    },
+    "significant_dimensions": 2
+  },
+  "position_analysis": {
+    "hazard_adjacent_n": 0,
+    "non_hazard_n": 13670,
+    "hazard_adj_mean_pos": NaN,
+    "non_hazard_mean_pos": 0.4973613921934861,
+    "position_MW_U": 0.0,
+    "position_p": 1.0,
+    "per_middle_position": {
+      "aiin": {
+        "n_tokens": 834,
+        "mean_position": 0.5260450925568653,
+        "initial_pct": 4.1966426858513195,
+        "final_pct": 5.875299760191846,
+        "mid_pct": 89.92805755395683
+      },
+      "al": {
+        "n_tokens": 521,
+        "mean_position": 0.6018541341247932,
+        "initial_pct": 0.7677543186180422,
+        "final_pct": 13.62763915547025,
+        "mid_pct": 85.6046065259117
+      },
+      "ar": {
+        "n_tokens": 677,
+        "mean_position": 0.55138578274422,
+        "initial_pct": 4.431314623338257,
+        "final_pct": 7.533234859675036,
+        "mid_pct": 88.0354505169867
+      },
+      "d": {
+        "n_tokens": 337,
+        "mean_position": 0.49064526144512305,
+        "initial_pct": 16.023738872403563,
+        "final_pct": 12.759643916913946,
+        "mid_pct": 71.2166172106825
+      },
+      "dy": {
+        "n_tokens": 675,
+        "mean_position": 0.5807928693524202,
+        "initial_pct": 5.185185185185185,
+        "final_pct": 16.74074074074074,
+        "mid_pct": 78.07407407407408
+      },
+      "e": {
+        "n_tokens": 867,
+        "mean_position": 0.45977670334332466,
+        "initial_pct": 8.996539792387544,
+        "final_pct": 5.4209919261822375,
+        "mid_pct": 85.58246828143022
+      },
+      "ee": {
+        "n_tokens": 151,
+        "mean_position": 0.4717628794619827,
+        "initial_pct": 11.920529801324504,
+        "final_pct": 5.298013245033113,
+        "mid_pct": 82.78145695364239
+      },
+      "eey": {
+        "n_tokens": 644,
+        "mean_position": 0.41922286597430675,
+        "initial_pct": 11.180124223602485,
+        "final_pct": 3.4161490683229814,
+        "mid_pct": 85.40372670807453
+      },
+      "ek": {
+        "n_tokens": 169,
+        "mean_position": 0.47038663177716433,
+        "initial_pct": 0.0,
+        "final_pct": 4.733727810650888,
+        "mid_pct": 95.26627218934911
+      },
+      "eo": {
+        "n_tokens": 359,
+        "mean_position": 0.39457499355123193,
+        "initial_pct": 18.105849582172702,
+        "final_pct": 4.735376044568245,
+        "mid_pct": 77.15877437325905
+      },
+      "eol": {
+        "n_tokens": 294,
+        "mean_position": 0.35790885069000566,
+        "initial_pct": 17.346938775510203,
+        "final_pct": 3.061224489795918,
+        "mid_pct": 79.59183673469387
+      },
+      "ey": {
+        "n_tokens": 889,
+        "mean_position": 0.43354444962780453,
+        "initial_pct": 9.223847019122609,
+        "final_pct": 5.399325084364454,
+        "mid_pct": 85.37682789651294
+      },
+      "iin": {
+        "n_tokens": 560,
+        "mean_position": 0.3925721191234881,
+        "initial_pct": 29.642857142857142,
+        "final_pct": 5.892857142857142,
+        "mid_pct": 64.46428571428572
+      },
+      "k": {
+        "n_tokens": 2083,
+        "mean_position": 0.49646075070013135,
+        "initial_pct": 7.009121459433509,
+        "final_pct": 7.105136821891503,
+        "mid_pct": 85.88574171867499
+      },
+      "l": {
+        "n_tokens": 855,
+        "mean_position": 0.5234023935778321,
+        "initial_pct": 14.97076023391813,
+        "final_pct": 15.906432748538013,
+        "mid_pct": 69.12280701754386
+      },
+      "o": {
+        "n_tokens": 388,
+        "mean_position": 0.4589144103380163,
+        "initial_pct": 14.948453608247423,
+        "final_pct": 10.56701030927835,
+        "mid_pct": 74.48453608247422
+      },
+      "od": {
+        "n_tokens": 177,
+        "mean_position": 0.5162360754912285,
+        "initial_pct": 14.689265536723164,
+        "final_pct": 12.994350282485875,
+        "mid_pct": 72.31638418079096
+      },
+      "ol": {
+        "n_tokens": 762,
+        "mean_position": 0.48929122306710243,
+        "initial_pct": 7.086614173228346,
+        "final_pct": 8.530183727034121,
+        "mid_pct": 84.38320209973753
+      },
+      "or": {
+        "n_tokens": 446,
+        "mean_position": 0.4844608274627053,
+        "initial_pct": 8.520179372197308,
+        "final_pct": 6.950672645739911,
+        "mid_pct": 84.52914798206278
+      },
+      "r": {
+        "n_tokens": 749,
+        "mean_position": 0.4984358976939699,
+        "initial_pct": 19.225634178905207,
+        "final_pct": 12.416555407209612,
+        "mid_pct": 68.35781041388518
+      },
+      "s": {
+        "n_tokens": 144,
+        "mean_position": 0.5760572765054354,
+        "initial_pct": 11.805555555555555,
+        "final_pct": 24.305555555555554,
+        "mid_pct": 63.888888888888886
+      },
+      "t": {
+        "n_tokens": 576,
+        "mean_position": 0.5650621534949644,
+        "initial_pct": 3.8194444444444446,
+        "final_pct": 8.506944444444445,
+        "mid_pct": 87.67361111111111
+      },
+      "y": {
+        "n_tokens": 513,
+        "mean_position": 0.6291617381790662,
+        "initial_pct": 9.161793372319687,
+        "final_pct": 29.0448343079922,
+        "mid_pct": 61.79337231968811
+      }
+    }
+  },
+  "regime_clustering": {
+    "best_k": 4,
+    "best_silhouette": 0.3977029740570785,
+    "cluster_results": {
+      "2": {
+        "silhouette": 0.36652878078709294,
+        "cluster_sizes": [
+          8,
+          15
+        ]
+      },
+      "3": {
+        "silhouette": 0.38473771115914746,
+        "cluster_sizes": [
+          8,
+          3,
+          12
+        ]
+      },
+      "4": {
+        "silhouette": 0.3977029740570785,
+        "cluster_sizes": [
+          8,
+          3,
+          4,
+          8
+        ]
+      }
+    },
+    "cluster_assignments": {
+      "aiin": 4,
+      "al": 4,
+      "ar": 4,
+      "d": 2,
+      "dy": 3,
+      "e": 1,
+      "ee": 4,
+      "eey": 1,
+      "ek": 3,
+      "eo": 2,
+      "eol": 1,
+      "ey": 1,
+      "iin": 4,
+      "k": 1,
+      "l": 1,
+      "o": 3,
+      "od": 2,
+      "ol": 1,
+      "or": 4,
+      "r": 4,
+      "s": 3,
+      "t": 1,
+      "y": 4
+    }
+  },
+  "verdict": "MULTI_SIGNAL_SUBROLES",
+  "verdict_detail": "Multiple dimensions predict sub-roles: COMPOUND, REGIME."
+}

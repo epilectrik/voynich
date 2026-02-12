@@ -1,0 +1,614 @@
+{
+ "verdict": "DISCRETIZATION_INSUFFICIENT",
+ "verdict_detail": "Categorical discretization does not significantly improve over continuous baseline or random null. Voynich topology requires engineered symbolic structure beyond categorization.",
+ "ranking": [
+  {
+   "strategy": "lane_temp",
+   "metrics_toward_voynich": 3
+  },
+  {
+   "strategy": "operational",
+   "metrics_toward_voynich": 3
+  },
+  {
+   "strategy": "q_phase",
+   "metrics_toward_voynich": 3
+  },
+  {
+   "strategy": "random",
+   "metrics_toward_voynich": 3
+  },
+  {
+   "strategy": "gmm_bic",
+   "metrics_toward_voynich": 2
+  },
+  {
+   "strategy": "t_bins",
+   "metrics_toward_voynich": 2
+  }
+ ],
+ "best_physical": {
+  "strategy": "lane_temp",
+  "toward_count": 3
+ },
+ "null_toward_count": 3,
+ "movements": {
+  "lane_temp": {
+   "spectral_gap": {
+    "value": 0.5777452372843115,
+    "baseline": 0.0,
+    "voynich": 0.894,
+    "delta": 0.5777452372843115,
+    "toward_voynich": true,
+    "pct_gap_closed": 64.62474689981113
+   },
+   "hub_mass": {
+    "value": 0.35998613634652465,
+    "baseline": 0.558,
+    "voynich": 0.68,
+    "delta": -0.1980138636534754,
+    "toward_voynich": false,
+    "pct_gap_closed": -162.30644561760278
+   },
+   "n_forbidden": {
+    "value": 0.0,
+    "baseline": 0.0,
+    "voynich": 17.0,
+    "delta": 0.0,
+    "toward_voynich": false,
+    "pct_gap_closed": 0.0
+   },
+   "alternation_rate": {
+    "value": 0.4621336741121398,
+    "baseline": 0.462,
+    "voynich": 0.549,
+    "delta": 0.00013367411213976998,
+    "toward_voynich": true,
+    "pct_gap_closed": 0.15364840475835626
+   },
+   "asymmetry": {
+    "value": -0.002478614721742961,
+    "baseline": -0.002,
+    "voynich": 0.043,
+    "delta": -0.000478614721742961,
+    "toward_voynich": false,
+    "pct_gap_closed": -1.0635882705399096
+   },
+   "post_overshoot_cool_rate": {
+    "value": 0.49730820508361595,
+    "baseline": 0.215,
+    "voynich": 0.752,
+    "delta": 0.282308205083616,
+    "toward_voynich": true,
+    "pct_gap_closed": 52.57136035076647
+   },
+   "heat_run_median": {
+    "value": 2.0,
+    "baseline": 2.0,
+    "voynich": 1.0,
+    "delta": 0.0,
+    "toward_voynich": false,
+    "pct_gap_closed": 0.0
+   },
+   "cool_run_median": {
+    "value": 2.0,
+    "baseline": 2.0,
+    "voynich": 1.0,
+    "delta": 0.0,
+    "toward_voynich": false,
+    "pct_gap_closed": 0.0
+   },
+   "buffer_rate": {
+    "value": 0.0,
+    "baseline": 0.0,
+    "voynich": 0.0012,
+    "delta": 0.0,
+    "toward_voynich": false,
+    "pct_gap_closed": 0.0
+   }
+  },
+  "operational": {
+   "spectral_gap": {
+    "value": 0.6534704082200304,
+    "baseline": 0.0,
+    "voynich": 0.894,
+    "delta": 0.6534704082200304,
+    "toward_voynich": true,
+    "pct_gap_closed": 73.09512396197209
+   },
+   "hub_mass": {
+    "value": 0.5094540600311885,
+    "baseline": 0.558,
+    "voynich": 0.68,
+    "delta": -0.04854593996881151,
+    "toward_voynich": false,
+    "pct_gap_closed": -39.79175407279632
+   },
+   "n_forbidden": {
+    "value": 0.0,
+    "baseline": 0.0,
+    "voynich": 17.0,
+    "delta": 0.0,
+    "toward_voynich": false,
+    "pct_gap_closed": 0.0
+   },
+   "alternation_rate": {
+    "value": 0.373485868102288,
+    "baseline": 0.462,
+    "voynich": 0.549,
+    "delta": -0.08851413189771201,
+    "toward_voynich": false,
+    "pct_gap_closed": -101.74038149162297
+   },
+   "asymmetry": {
+    "value": -0.46323576040849573,
+    "baseline": -0.002,
+    "voynich": 0.043,
+    "delta": -0.46123576040849573,
+    "toward_voynich": false,
+    "pct_gap_closed": -1024.968356463324
+   },
+   "post_overshoot_cool_rate": {
+    "value": 0.25370076515085643,
+    "baseline": 0.215,
+    "voynich": 0.752,
+    "delta": 0.03870076515085644,
+    "toward_voynich": true,
+    "pct_gap_closed": 7.206846396807534
+   },
+   "heat_run_median": {
+    "value": 3.0,
+    "baseline": 2.0,
+    "voynich": 1.0,
+    "delta": 1.0,
+    "toward_voynich": false,
+    "pct_gap_closed": -100.0
+   },
+   "cool_run_median": {
+    "value": 1.0,
+    "baseline": 2.0,
+    "voynich": 1.0,
+    "delta": -1.0,
+    "toward_voynich": true,
+    "pct_gap_closed": 100.0
+   },
+   "buffer_rate": {
+    "value": 0.0,
+    "baseline": 0.0,
+    "voynich": 0.0012,
+    "delta": 0.0,
+    "toward_voynich": false,
+    "pct_gap_closed": 0.0
+   }
+  },
+  "gmm_bic": {
+   "spectral_gap": {
+    "value": 1.1102230246251565e-16,
+    "baseline": 0.0,
+    "voynich": 0.894,
+    "delta": 1.1102230246251565e-16,
+    "toward_voynich": true,
+    "pct_gap_closed": 1.241860206515835e-14
+   },
+   "hub_mass": {
+    "value": 0.5575978555644725,
+    "baseline": 0.558,
+    "voynich": 0.68,
+    "delta": -0.00040214443552755164,
+    "toward_voynich": false,
+    "pct_gap_closed": -0.32962658649799315
+   },
+   "n_forbidden": {
+    "value": 0.0,
+    "baseline": 0.0,
+    "voynich": 17.0,
+    "delta": 0.0,
+    "toward_voynich": false,
+    "pct_gap_closed": 0.0
+   },
+   "alternation_rate": {
+    "value": 0.0464177650901804,
+    "baseline": 0.462,
+    "voynich": 0.549,
+    "delta": -0.4155822349098196,
+    "toward_voynich": false,
+    "pct_gap_closed": -477.6807297814018
+   },
+   "asymmetry": {
+    "value": -0.008720242512319811,
+    "baseline": -0.002,
+    "voynich": 0.043,
+    "delta": -0.006720242512319811,
+    "toward_voynich": false,
+    "pct_gap_closed": -14.933872249599583
+   },
+   "post_overshoot_cool_rate": {
+    "value": 0.4052514829769204,
+    "baseline": 0.215,
+    "voynich": 0.752,
+    "delta": 0.19025148297692038,
+    "toward_voynich": true,
+    "pct_gap_closed": 35.42858155994793
+   },
+   "heat_run_median": {
+    "value": 3.0,
+    "baseline": 2.0,
+    "voynich": 1.0,
+    "delta": 1.0,
+    "toward_voynich": false,
+    "pct_gap_closed": -100.0
+   },
+   "cool_run_median": {
+    "value": 2.0,
+    "baseline": 2.0,
+    "voynich": 1.0,
+    "delta": 0.0,
+    "toward_voynich": false,
+    "pct_gap_closed": 0.0
+   },
+   "buffer_rate": {
+    "value": 0.0,
+    "baseline": 0.0,
+    "voynich": 0.0012,
+    "delta": 0.0,
+    "toward_voynich": false,
+    "pct_gap_closed": 0.0
+   }
+  },
+  "t_bins": {
+   "spectral_gap": {
+    "value": 0.24457220808418856,
+    "baseline": 0.0,
+    "voynich": 0.894,
+    "delta": 0.24457220808418856,
+    "toward_voynich": true,
+    "pct_gap_closed": 27.357070255502077
+   },
+   "hub_mass": {
+    "value": 0.3497617746546011,
+    "baseline": 0.558,
+    "voynich": 0.68,
+    "delta": -0.20823822534539893,
+    "toward_voynich": false,
+    "pct_gap_closed": -170.68706995524502
+   },
+   "n_forbidden": {
+    "value": 0.0,
+    "baseline": 0.0,
+    "voynich": 17.0,
+    "delta": 0.0,
+    "toward_voynich": false,
+    "pct_gap_closed": 0.0
+   },
+   "alternation_rate": {
+    "value": 0.33927996882236455,
+    "baseline": 0.462,
+    "voynich": 0.549,
+    "delta": -0.12272003117763547,
+    "toward_voynich": false,
+    "pct_gap_closed": -141.0575071007304
+   },
+   "asymmetry": {
+    "value": -0.0942375366249854,
+    "baseline": -0.002,
+    "voynich": 0.043,
+    "delta": -0.09223753662498539,
+    "toward_voynich": false,
+    "pct_gap_closed": -204.97230361107864
+   },
+   "post_overshoot_cool_rate": {
+    "value": 0.36381977135171484,
+    "baseline": 0.215,
+    "voynich": 0.752,
+    "delta": 0.14881977135171484,
+    "toward_voynich": true,
+    "pct_gap_closed": 27.713179022665706
+   },
+   "heat_run_median": {
+    "value": 2.0,
+    "baseline": 2.0,
+    "voynich": 1.0,
+    "delta": 0.0,
+    "toward_voynich": false,
+    "pct_gap_closed": 0.0
+   },
+   "cool_run_median": {
+    "value": 2.0,
+    "baseline": 2.0,
+    "voynich": 1.0,
+    "delta": 0.0,
+    "toward_voynich": false,
+    "pct_gap_closed": 0.0
+   },
+   "buffer_rate": {
+    "value": 0.0,
+    "baseline": 0.0,
+    "voynich": 0.0012,
+    "delta": 0.0,
+    "toward_voynich": false,
+    "pct_gap_closed": 0.0
+   }
+  },
+  "q_phase": {
+   "spectral_gap": {
+    "value": 0.9134817473490097,
+    "baseline": 0.0,
+    "voynich": 0.894,
+    "delta": 0.9134817473490097,
+    "toward_voynich": true,
+    "pct_gap_closed": 97.8208336298647
+   },
+   "hub_mass": {
+    "value": 0.3344603773577579,
+    "baseline": 0.558,
+    "voynich": 0.68,
+    "delta": -0.22353962264224214,
+    "toward_voynich": false,
+    "pct_gap_closed": -183.22919888708373
+   },
+   "n_forbidden": {
+    "value": 0.0,
+    "baseline": 0.0,
+    "voynich": 17.0,
+    "delta": 0.0,
+    "toward_voynich": false,
+    "pct_gap_closed": 0.0
+   },
+   "alternation_rate": {
+    "value": 0.4240993824284862,
+    "baseline": 0.462,
+    "voynich": 0.549,
+    "delta": -0.037900617571513806,
+    "toward_voynich": false,
+    "pct_gap_closed": -43.56392824311931
+   },
+   "asymmetry": {
+    "value": 0.286714060482787,
+    "baseline": -0.002,
+    "voynich": 0.043,
+    "delta": 0.288714060482787,
+    "toward_voynich": false,
+    "pct_gap_closed": -441.58680107286017
+   },
+   "post_overshoot_cool_rate": {
+    "value": 0.33504485374635845,
+    "baseline": 0.215,
+    "voynich": 0.752,
+    "delta": 0.12004485374635845,
+    "toward_voynich": true,
+    "pct_gap_closed": 22.35472136803696
+   },
+   "heat_run_median": {
+    "value": 1.0,
+    "baseline": 2.0,
+    "voynich": 1.0,
+    "delta": -1.0,
+    "toward_voynich": true,
+    "pct_gap_closed": 100.0
+   },
+   "cool_run_median": {
+    "value": 2.0,
+    "baseline": 2.0,
+    "voynich": 1.0,
+    "delta": 0.0,
+    "toward_voynich": false,
+    "pct_gap_closed": 0.0
+   },
+   "buffer_rate": {
+    "value": 0.0,
+    "baseline": 0.0,
+    "voynich": 0.0012,
+    "delta": 0.0,
+    "toward_voynich": false,
+    "pct_gap_closed": 0.0
+   }
+  },
+  "random": {
+   "spectral_gap": {
+    "value": 0.9399742028981519,
+    "baseline": 0.0,
+    "voynich": 0.894,
+    "delta": 0.9399742028981519,
+    "toward_voynich": true,
+    "pct_gap_closed": 94.85747171161611
+   },
+   "hub_mass": {
+    "value": 0.17852379762350523,
+    "baseline": 0.558,
+    "voynich": 0.68,
+    "delta": -0.3794762023764948,
+    "toward_voynich": false,
+    "pct_gap_closed": -311.0460675217171
+   },
+   "n_forbidden": {
+    "value": 0.0,
+    "baseline": 0.0,
+    "voynich": 17.0,
+    "delta": 0.0,
+    "toward_voynich": false,
+    "pct_gap_closed": 0.0
+   },
+   "alternation_rate": {
+    "value": 0.4601946173323163,
+    "baseline": 0.462,
+    "voynich": 0.549,
+    "delta": -0.0018053826676837081,
+    "toward_voynich": false,
+    "pct_gap_closed": -2.0751524915904684
+   },
+   "asymmetry": {
+    "value": -0.019005682881793856,
+    "baseline": -0.002,
+    "voynich": 0.043,
+    "delta": -0.017005682881793854,
+    "toward_voynich": false,
+    "pct_gap_closed": -37.790406403986346
+   },
+   "post_overshoot_cool_rate": {
+    "value": 0.4787885493718552,
+    "baseline": 0.215,
+    "voynich": 0.752,
+    "delta": 0.26378854937185525,
+    "toward_voynich": true,
+    "pct_gap_closed": 49.122634892338034
+   },
+   "heat_run_median": {
+    "value": 2.0,
+    "baseline": 2.0,
+    "voynich": 1.0,
+    "delta": 0.0,
+    "toward_voynich": false,
+    "pct_gap_closed": 0.0
+   },
+   "cool_run_median": {
+    "value": 1.0,
+    "baseline": 2.0,
+    "voynich": 1.0,
+    "delta": -1.0,
+    "toward_voynich": true,
+    "pct_gap_closed": 100.0
+   },
+   "buffer_rate": {
+    "value": 0.0,
+    "baseline": 0.0,
+    "voynich": 0.0012,
+    "delta": 0.0,
+    "toward_voynich": false,
+    "pct_gap_closed": 0.0
+   }
+  }
+ },
+ "forbidden_analysis": {
+  "lane_temp": {
+   "median_forbidden": 0.0,
+   "above_random": 0.0,
+   "legality": {
+    "defined_rules": 8,
+    "truly_absent": 8.0,
+    "violation_rate": 0.0
+   }
+  },
+  "operational": {
+   "median_forbidden": 0.0,
+   "above_random": 0.0,
+   "legality": {
+    "defined_rules": 6,
+    "truly_absent": 4.0,
+    "violation_rate": 0.11626349336966944
+   }
+  },
+  "gmm_bic": {
+   "median_forbidden": 0.0,
+   "above_random": 0.0
+  },
+  "t_bins": {
+   "median_forbidden": 0.0,
+   "above_random": 0.0
+  },
+  "q_phase": {
+   "median_forbidden": 0.0,
+   "above_random": 0.0,
+   "legality": {
+    "defined_rules": 8,
+    "truly_absent": 6.0,
+    "violation_rate": 0.2061889448345961
+   }
+  },
+  "random": {
+   "median_forbidden": 0.0,
+   "above_random": 0.0
+  }
+ },
+ "metric_table": {
+  "spectral_gap": {
+   "baseline": 0.0,
+   "voynich": 0.894,
+   "lane_temp": 0.5777452372843115,
+   "operational": 0.6534704082200304,
+   "gmm_bic": 1.1102230246251565e-16,
+   "t_bins": 0.24457220808418856,
+   "q_phase": 0.9134817473490097,
+   "random": 0.9399742028981519
+  },
+  "hub_mass": {
+   "baseline": 0.558,
+   "voynich": 0.68,
+   "lane_temp": 0.35998613634652465,
+   "operational": 0.5094540600311885,
+   "gmm_bic": 0.5575978555644725,
+   "t_bins": 0.3497617746546011,
+   "q_phase": 0.3344603773577579,
+   "random": 0.17852379762350523
+  },
+  "n_forbidden": {
+   "baseline": 0,
+   "voynich": 17,
+   "lane_temp": 0.0,
+   "operational": 0.0,
+   "gmm_bic": 0.0,
+   "t_bins": 0.0,
+   "q_phase": 0.0,
+   "random": 0.0
+  },
+  "alternation_rate": {
+   "baseline": 0.462,
+   "voynich": 0.549,
+   "lane_temp": 0.4621336741121398,
+   "operational": 0.373485868102288,
+   "gmm_bic": 0.0464177650901804,
+   "t_bins": 0.33927996882236455,
+   "q_phase": 0.4240993824284862,
+   "random": 0.4601946173323163
+  },
+  "asymmetry": {
+   "baseline": -0.002,
+   "voynich": 0.043,
+   "lane_temp": -0.002478614721742961,
+   "operational": -0.46323576040849573,
+   "gmm_bic": -0.008720242512319811,
+   "t_bins": -0.0942375366249854,
+   "q_phase": 0.286714060482787,
+   "random": -0.019005682881793856
+  },
+  "post_overshoot_cool_rate": {
+   "baseline": 0.215,
+   "voynich": 0.752,
+   "lane_temp": 0.49730820508361595,
+   "operational": 0.25370076515085643,
+   "gmm_bic": 0.4052514829769204,
+   "t_bins": 0.36381977135171484,
+   "q_phase": 0.33504485374635845,
+   "random": 0.4787885493718552
+  },
+  "heat_run_median": {
+   "baseline": 2.0,
+   "voynich": 1.0,
+   "lane_temp": 2.0,
+   "operational": 3.0,
+   "gmm_bic": 3.0,
+   "t_bins": 2.0,
+   "q_phase": 1.0,
+   "random": 2.0
+  },
+  "cool_run_median": {
+   "baseline": 2.0,
+   "voynich": 1.0,
+   "lane_temp": 2.0,
+   "operational": 1.0,
+   "gmm_bic": 2.0,
+   "t_bins": 2.0,
+   "q_phase": 2.0,
+   "random": 1.0
+  },
+  "buffer_rate": {
+   "baseline": 0.0,
+   "voynich": 0.0012,
+   "lane_temp": 0.0,
+   "operational": 0.0,
+   "gmm_bic": 0.0,
+   "t_bins": 0.0,
+   "q_phase": 0.0,
+   "random": 0.0
+  }
+ }
+}

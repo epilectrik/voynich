@@ -1,0 +1,7 @@
+{
+  "h_unconditional": 4.63108152636105,
+  "h_conditioned": 4.371820849645945,
+  "reduction_bits": 0.25926067671510467,
+  "reduction_pct": 5.598274943754296,
+  "verdict": "SUFFIX_ENTROPY_REDUCTION_SIGNIFICANT"
+}

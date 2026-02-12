@@ -1,0 +1,4227 @@
+{
+ "comparison": {
+  "reflux": {
+   "median": 3.0,
+   "mean": 3.07
+  },
+  "batch_still": {
+   "median": 3.0,
+   "mean": 2.88,
+   "oscillation_variation_hit": true
+  },
+  "open_heating": {
+   "median": 4.0,
+   "mean": 4.26,
+   "oscillation_variation_hit": true
+  }
+ },
+ "discrimination": {
+  "reflux_vs_batch": 0.0,
+  "reflux_vs_open": -1.0,
+  "reflux_advantage": false
+ },
+ "batch_results": [
+  {
+   "param_id": 0,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 4,
+    "hub_mass": 0.3290596959183933,
+    "spectral_gap": 0.2027671267414074,
+    "alternation_rate": 0.4154362416107383
+   }
+  },
+  {
+   "param_id": 1,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 11,
+    "hub_mass": 0.37753267268083684,
+    "spectral_gap": 0.1646228196312658,
+    "alternation_rate": 0.3859060402684564
+   }
+  },
+  {
+   "param_id": 2,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 0.37967322304954493,
+    "spectral_gap": 0.33534505913614354,
+    "alternation_rate": 0.4885906040268456
+   }
+  },
+  {
+   "param_id": 3,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 3,
+    "hub_mass": 0.463358649269022,
+    "spectral_gap": 0.11188888625191395,
+    "alternation_rate": 0.3718120805369127
+   }
+  },
+  {
+   "param_id": 4,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 0.26382731583619856,
+    "spectral_gap": 0.13196892064326948,
+    "alternation_rate": 0.3476510067114094
+   }
+  },
+  {
+   "param_id": 5,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 4,
+    "hub_mass": 0.341419600482079,
+    "spectral_gap": 0.1948550909801703,
+    "alternation_rate": 0.4906040268456376
+   }
+  },
+  {
+   "param_id": 6,
+   "hit_count": 2,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 7,
+    "hub_mass": 0.2848306178075724,
+    "spectral_gap": 0.07686076495544991,
+    "alternation_rate": 0.3832214765100671
+   }
+  },
+  {
+   "param_id": 7,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 12,
+    "hub_mass": 0.2766955686931321,
+    "spectral_gap": 0.2478975559541543,
+    "alternation_rate": 0.42013422818791946
+   }
+  },
+  {
+   "param_id": 8,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": true,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 3,
+    "hub_mass": 0.4612337321330704,
+    "spectral_gap": 0.8578602891726024,
+    "alternation_rate": 0.49731543624161073
+   }
+  },
+  {
+   "param_id": 9,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 10,
+    "hub_mass": 0.3250361269902667,
+    "spectral_gap": 0.05286233580644495,
+    "alternation_rate": 0.3838926174496644
+   }
+  },
+  {
+   "param_id": 10,
+   "hit_count": 3,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": true,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 4,
+    "hub_mass": 0.3473416549582486,
+    "spectral_gap": 0.3642140077295527,
+    "alternation_rate": 0.5375838926174497
+   }
+  },
+  {
+   "param_id": 11,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 11,
+    "hub_mass": 0.21819957978517643,
+    "spectral_gap": 0.03270196434344763,
+    "alternation_rate": 0.3704697986577181
+   }
+  },
+  {
+   "param_id": 12,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 2,
+    "hub_mass": 0.5856147277787028,
+    "spectral_gap": 0.7794401186503522,
+    "alternation_rate": 0.45167785234899327
+   }
+  },
+  {
+   "param_id": 13,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 3,
+    "hub_mass": 0.42148858188719285,
+    "spectral_gap": 0.5770309027480888,
+    "alternation_rate": 0.41006711409395974
+   }
+  },
+  {
+   "param_id": 14,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": true,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 4,
+    "hub_mass": 0.37916704447923705,
+    "spectral_gap": 0.540434009810091,
+    "alternation_rate": 0.5422818791946309
+   }
+  },
+  {
+   "param_id": 15,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 11,
+    "hub_mass": 0.3077543219628463,
+    "spectral_gap": 0.012788503001887941,
+    "alternation_rate": 0.42013422818791946
+   }
+  },
+  {
+   "param_id": 16,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 7,
+    "hub_mass": 0.31260219673606304,
+    "spectral_gap": 0.0894065945148228,
+    "alternation_rate": 0.41073825503355704
+   }
+  },
+  {
+   "param_id": 17,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 9,
+    "hub_mass": 0.21178420300346934,
+    "spectral_gap": 0.1309045939105543,
+    "alternation_rate": 0.37718120805369126
+   }
+  },
+  {
+   "param_id": 18,
+   "hit_count": 3,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": true,
+    "alternation_rate": true,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 3,
+    "hub_mass": 0.527907260733977,
+    "spectral_gap": 0.8174850466220859,
+    "alternation_rate": 0.5322147651006711
+   }
+  },
+  {
+   "param_id": 19,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.27857775568807963,
+    "spectral_gap": 0.2642105837283396,
+    "alternation_rate": 0.4
+   }
+  },
+  {
+   "param_id": 20,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 4,
+    "hub_mass": 0.440832212426687,
+    "spectral_gap": 0.26574966282695134,
+    "alternation_rate": 0.4120805369127517
+   }
+  },
+  {
+   "param_id": 21,
+   "hit_count": 2,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.43967604105304753,
+    "spectral_gap": 0.0830494505700835,
+    "alternation_rate": 0.3932885906040268
+   }
+  },
+  {
+   "param_id": 22,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 8,
+    "hub_mass": 0.2970717189317322,
+    "spectral_gap": 0.09377572051978844,
+    "alternation_rate": 0.35906040268456374
+   }
+  },
+  {
+   "param_id": 23,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 7,
+    "hub_mass": 0.4189357749462236,
+    "spectral_gap": 0.4276497342509583,
+    "alternation_rate": 0.42013422818791946
+   }
+  },
+  {
+   "param_id": 24,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 9,
+    "hub_mass": 0.24872871813759972,
+    "spectral_gap": 0.046987323615582,
+    "alternation_rate": 0.3711409395973154
+   }
+  },
+  {
+   "param_id": 25,
+   "hit_count": 2,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 7,
+    "hub_mass": 0.4076069930030032,
+    "spectral_gap": 0.16825179421612269,
+    "alternation_rate": 0.4677852348993289
+   }
+  },
+  {
+   "param_id": 26,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 8,
+    "hub_mass": 0.18668199023776746,
+    "spectral_gap": 0.0854192208948582,
+    "alternation_rate": 0.43355704697986575
+   }
+  },
+  {
+   "param_id": 27,
+   "hit_count": 2,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 0.32828874507109995,
+    "spectral_gap": 0.14492981335981137,
+    "alternation_rate": 0.44228187919463086
+   }
+  },
+  {
+   "param_id": 28,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 3,
+    "hub_mass": 0.422586162016986,
+    "spectral_gap": 0.6554914687831318,
+    "alternation_rate": 0.4167785234899329
+   }
+  },
+  {
+   "param_id": 29,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 10,
+    "hub_mass": 0.5811358054572211,
+    "spectral_gap": 0.31550563437879076,
+    "alternation_rate": 0.374496644295302
+   }
+  },
+  {
+   "param_id": 30,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 8,
+    "hub_mass": 0.3430148463100704,
+    "spectral_gap": 0.11017393381715712,
+    "alternation_rate": 0.4154362416107383
+   }
+  },
+  {
+   "param_id": 31,
+   "hit_count": 2,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 7,
+    "hub_mass": 0.3351350588500079,
+    "spectral_gap": 0.08525129890827621,
+    "alternation_rate": 0.3691275167785235
+   }
+  },
+  {
+   "param_id": 32,
+   "hit_count": 2,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 7,
+    "hub_mass": 0.3388840316012359,
+    "spectral_gap": 0.02105920095778735,
+    "alternation_rate": 0.363758389261745
+   }
+  },
+  {
+   "param_id": 33,
+   "hit_count": 2,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 7,
+    "hub_mass": 0.28269973582124414,
+    "spectral_gap": 0.23517435931850594,
+    "alternation_rate": 0.4677852348993289
+   }
+  },
+  {
+   "param_id": 34,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 4,
+    "hub_mass": 0.32472892797645786,
+    "spectral_gap": 0.2100668409717813,
+    "alternation_rate": 0.47315436241610737
+   }
+  },
+  {
+   "param_id": 35,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": true,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 3,
+    "hub_mass": 0.4388155031347862,
+    "spectral_gap": 0.825319871193146,
+    "alternation_rate": 0.4785234899328859
+   }
+  },
+  {
+   "param_id": 36,
+   "hit_count": 2,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 0.2631934275500004,
+    "spectral_gap": 0.024360922556427744,
+    "alternation_rate": 0.36308724832214767
+   }
+  },
+  {
+   "param_id": 37,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.3332420815677344,
+    "spectral_gap": 0.12588023721000885,
+    "alternation_rate": 0.37919463087248323
+   }
+  },
+  {
+   "param_id": 38,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 9,
+    "hub_mass": 0.2581604618391958,
+    "spectral_gap": 0.08736771161005719,
+    "alternation_rate": 0.3926174496644295
+   }
+  },
+  {
+   "param_id": 39,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 3,
+    "hub_mass": 0.40369964631644706,
+    "spectral_gap": 0.1447982313834414,
+    "alternation_rate": 0.3718120805369127
+   }
+  },
+  {
+   "param_id": 40,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 8,
+    "hub_mass": 0.44187911451409584,
+    "spectral_gap": 0.0519077270831233,
+    "alternation_rate": 0.3288590604026846
+   }
+  },
+  {
+   "param_id": 41,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 0.41776441346027415,
+    "spectral_gap": 0.17833419879809853,
+    "alternation_rate": 0.425503355704698
+   }
+  },
+  {
+   "param_id": 42,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 3,
+    "hub_mass": 0.44354101031478804,
+    "spectral_gap": 0.3578292866326208,
+    "alternation_rate": 0.4369127516778524
+   }
+  },
+  {
+   "param_id": 43,
+   "hit_count": 2,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 7,
+    "hub_mass": 0.4490383335069391,
+    "spectral_gap": 0.06037901479661656,
+    "alternation_rate": 0.4449664429530201
+   }
+  },
+  {
+   "param_id": 44,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": false,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 10,
+    "hub_mass": 0.24738522315001935,
+    "spectral_gap": 0.2125972971303539,
+    "alternation_rate": 0.4476510067114094
+   }
+  },
+  {
+   "param_id": 45,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 9,
+    "hub_mass": 0.17076958916383528,
+    "spectral_gap": 0.0443483223157779,
+    "alternation_rate": 0.3859060402684564
+   }
+  },
+  {
+   "param_id": 46,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 3,
+    "hub_mass": 0.43887115919532693,
+    "spectral_gap": 0.6456390180466939,
+    "alternation_rate": 0.4389261744966443
+   }
+  },
+  {
+   "param_id": 47,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.3477473788076477,
+    "spectral_gap": 0.19296498595560274,
+    "alternation_rate": 0.3738255033557047
+   }
+  },
+  {
+   "param_id": 48,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 11,
+    "hub_mass": 0.2196170580143171,
+    "spectral_gap": 0.014405015785900699,
+    "alternation_rate": 0.38456375838926177
+   }
+  },
+  {
+   "param_id": 49,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": true,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 3,
+    "hub_mass": 0.4073693410936116,
+    "spectral_gap": 0.8792389702035286,
+    "alternation_rate": 0.4825503355704698
+   }
+  },
+  {
+   "param_id": 50,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 12,
+    "hub_mass": 0.2581671110722562,
+    "spectral_gap": 0.0594573420535256,
+    "alternation_rate": 0.35637583892617447
+   }
+  },
+  {
+   "param_id": 51,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 11,
+    "hub_mass": 0.25585412492915444,
+    "spectral_gap": 0.07608407604168765,
+    "alternation_rate": 0.38791946308724834
+   }
+  },
+  {
+   "param_id": 52,
+   "hit_count": 2,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.3149072076850672,
+    "spectral_gap": 0.20095960861257067,
+    "alternation_rate": 0.35637583892617447
+   }
+  },
+  {
+   "param_id": 53,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.4343096231751326,
+    "spectral_gap": 0.22997389602171536,
+    "alternation_rate": 0.4080536912751678
+   }
+  },
+  {
+   "param_id": 54,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 11,
+    "hub_mass": 0.3414817801148657,
+    "spectral_gap": 0.07626315302168285,
+    "alternation_rate": 0.42080536912751676
+   }
+  },
+  {
+   "param_id": 55,
+   "hit_count": 2,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 7,
+    "hub_mass": 0.2583012010751645,
+    "spectral_gap": 0.0662801795852801,
+    "alternation_rate": 0.351006711409396
+   }
+  },
+  {
+   "param_id": 56,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.3145587509643577,
+    "spectral_gap": 0.21590062316690628,
+    "alternation_rate": 0.3604026845637584
+   }
+  },
+  {
+   "param_id": 57,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 2,
+    "hub_mass": 0.8330798710383844,
+    "spectral_gap": 0.5389394311941644,
+    "alternation_rate": 0.3959731543624161
+   }
+  },
+  {
+   "param_id": 58,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 3,
+    "hub_mass": 0.40849488559998776,
+    "spectral_gap": 0.7247618072725852,
+    "alternation_rate": 0.4442953020134228
+   }
+  },
+  {
+   "param_id": 59,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 2,
+    "hub_mass": 0.8441158784620282,
+    "spectral_gap": 0.5771476400457293,
+    "alternation_rate": 0.3946308724832215
+   }
+  },
+  {
+   "param_id": 60,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 9,
+    "hub_mass": 0.25777851695808557,
+    "spectral_gap": 0.1362264895425076,
+    "alternation_rate": 0.44228187919463086
+   }
+  },
+  {
+   "param_id": 61,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 10,
+    "hub_mass": 0.4015482319386656,
+    "spectral_gap": 0.09099803952419849,
+    "alternation_rate": 0.44966442953020136
+   }
+  },
+  {
+   "param_id": 62,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 8,
+    "hub_mass": 0.3126607684530751,
+    "spectral_gap": 0.2047668003764308,
+    "alternation_rate": 0.40738255033557047
+   }
+  },
+  {
+   "param_id": 63,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 2,
+    "hub_mass": 0.7577535035650311,
+    "spectral_gap": 0.4871584278698903,
+    "alternation_rate": 0.351006711409396
+   }
+  },
+  {
+   "param_id": 64,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 3,
+    "hub_mass": 0.41250721257175654,
+    "spectral_gap": 0.11858243648897748,
+    "alternation_rate": 0.38859060402684564
+   }
+  },
+  {
+   "param_id": 65,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 12,
+    "hub_mass": 0.3064590533542215,
+    "spectral_gap": 0.007334614145475871,
+    "alternation_rate": 0.38926174496644295
+   }
+  },
+  {
+   "param_id": 66,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.367311122061965,
+    "spectral_gap": 0.0715859898576865,
+    "alternation_rate": 0.39865771812080536
+   }
+  },
+  {
+   "param_id": 67,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 9,
+    "hub_mass": 0.33491934823346536,
+    "spectral_gap": 0.07567920934609562,
+    "alternation_rate": 0.3832214765100671
+   }
+  },
+  {
+   "param_id": 68,
+   "hit_count": 3,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": true,
+    "alternation_rate": true,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 3,
+    "hub_mass": 0.5565782368796361,
+    "spectral_gap": 0.8662690534380739,
+    "alternation_rate": 0.5060402684563758
+   }
+  },
+  {
+   "param_id": 69,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 0.40914981476248313,
+    "spectral_gap": 0.06438102958385505,
+    "alternation_rate": 0.3288590604026846
+   }
+  },
+  {
+   "param_id": 70,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 11,
+    "hub_mass": 0.26156361179129844,
+    "spectral_gap": 0.14748089985485835,
+    "alternation_rate": 0.4053691275167785
+   }
+  },
+  {
+   "param_id": 71,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 10,
+    "hub_mass": 0.22352370868077223,
+    "spectral_gap": 0.09022026715249776,
+    "alternation_rate": 0.38859060402684564
+   }
+  },
+  {
+   "param_id": 72,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 8,
+    "hub_mass": 0.2731350228816365,
+    "spectral_gap": 0.044207615245795195,
+    "alternation_rate": 0.3812080536912752
+   }
+  },
+  {
+   "param_id": 73,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 2,
+    "hub_mass": 0.7806715300715252,
+    "spectral_gap": 0.5557345658633213,
+    "alternation_rate": 0.36577181208053694
+   }
+  },
+  {
+   "param_id": 74,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": true,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 2,
+    "hub_mass": 0.6923719531438544,
+    "spectral_gap": 0.6871608865000935,
+    "alternation_rate": 0.4134228187919463
+   }
+  },
+  {
+   "param_id": 75,
+   "hit_count": 3,
+   "hits": {
+    "state_count": false,
+    "hub_mass": true,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 3,
+    "hub_mass": 0.6203643125236759,
+    "spectral_gap": 0.027808235194361597,
+    "alternation_rate": 0.36845637583892615
+   }
+  },
+  {
+   "param_id": 76,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 12,
+    "hub_mass": 0.23256215733093488,
+    "spectral_gap": 0.15918696879912198,
+    "alternation_rate": 0.4449664429530201
+   }
+  },
+  {
+   "param_id": 77,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": true,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 2,
+    "hub_mass": 0.6378857371866233,
+    "spectral_gap": 0.6593042031609337,
+    "alternation_rate": 0.38926174496644295
+   }
+  },
+  {
+   "param_id": 78,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 9,
+    "hub_mass": 0.40200730559758235,
+    "spectral_gap": 0.06162427176401586,
+    "alternation_rate": 0.3919463087248322
+   }
+  },
+  {
+   "param_id": 79,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 4,
+    "hub_mass": 0.32564676050297287,
+    "spectral_gap": 0.22510311729774646,
+    "alternation_rate": 0.4080536912751678
+   }
+  },
+  {
+   "param_id": 80,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": true,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 7,
+    "hub_mass": 0.29739741792450347,
+    "spectral_gap": 0.44024018283298494,
+    "alternation_rate": 0.5161073825503356
+   }
+  },
+  {
+   "param_id": 81,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": false,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 8,
+    "hub_mass": 0.31179501035277374,
+    "spectral_gap": 0.26347665452092905,
+    "alternation_rate": 0.2785234899328859
+   }
+  },
+  {
+   "param_id": 82,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 10,
+    "hub_mass": 0.37951070522453373,
+    "spectral_gap": 0.0805440245560628,
+    "alternation_rate": 0.3939597315436242
+   }
+  },
+  {
+   "param_id": 83,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 7,
+    "hub_mass": 0.2793728669226097,
+    "spectral_gap": 0.11123098549803179,
+    "alternation_rate": 0.425503355704698
+   }
+  },
+  {
+   "param_id": 84,
+   "hit_count": 2,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 0.2572618303426969,
+    "spectral_gap": 0.04859466647357513,
+    "alternation_rate": 0.36845637583892615
+   }
+  },
+  {
+   "param_id": 85,
+   "hit_count": 2,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 0.46207298280056364,
+    "spectral_gap": 0.43353942004537993,
+    "alternation_rate": 0.4563758389261745
+   }
+  },
+  {
+   "param_id": 86,
+   "hit_count": 2,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.3878707730130775,
+    "spectral_gap": 0.0912721247785715,
+    "alternation_rate": 0.42751677852348996
+   }
+  },
+  {
+   "param_id": 87,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.35879587365849974,
+    "spectral_gap": 0.2534436160575253,
+    "alternation_rate": 0.3859060402684564
+   }
+  },
+  {
+   "param_id": 88,
+   "hit_count": 2,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.30554614727331514,
+    "spectral_gap": 0.11164398302236411,
+    "alternation_rate": 0.39932885906040266
+   }
+  },
+  {
+   "param_id": 89,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": true,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 8,
+    "hub_mass": 0.5098017496549245,
+    "spectral_gap": 0.5370785031771825,
+    "alternation_rate": 0.5073825503355704
+   }
+  },
+  {
+   "param_id": 90,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 2,
+    "hub_mass": 0.7726167124362494,
+    "spectral_gap": 0.48395671160053155,
+    "alternation_rate": 0.3812080536912752
+   }
+  },
+  {
+   "param_id": 91,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 4,
+    "hub_mass": 0.38439784894994355,
+    "spectral_gap": 0.3785885511431476,
+    "alternation_rate": 0.4442953020134228
+   }
+  },
+  {
+   "param_id": 92,
+   "hit_count": 3,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 8,
+    "hub_mass": 0.16858474646950064,
+    "spectral_gap": 0.11603494508875312,
+    "alternation_rate": 0.3825503355704698
+   }
+  },
+  {
+   "param_id": 93,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 4,
+    "hub_mass": 0.37597301279959383,
+    "spectral_gap": 0.18029852541011648,
+    "alternation_rate": 0.42818791946308726
+   }
+  },
+  {
+   "param_id": 94,
+   "hit_count": 2,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.3094971565216822,
+    "spectral_gap": 0.10092224840251252,
+    "alternation_rate": 0.3859060402684564
+   }
+  },
+  {
+   "param_id": 95,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 10,
+    "hub_mass": 0.1572166747594617,
+    "spectral_gap": 0.1558710035039924,
+    "alternation_rate": 0.34630872483221475
+   }
+  },
+  {
+   "param_id": 96,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 2,
+    "hub_mass": 0.7939597315436242,
+    "spectral_gap": 0.6564220044550789,
+    "alternation_rate": 0.39865771812080536
+   }
+  },
+  {
+   "param_id": 97,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 3,
+    "hub_mass": 0.534807974282767,
+    "spectral_gap": 0.34193753702894303,
+    "alternation_rate": 0.3926174496644295
+   }
+  },
+  {
+   "param_id": 98,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 12,
+    "hub_mass": 0.4374379416928579,
+    "spectral_gap": 0.07983920344799844,
+    "alternation_rate": 0.37651006711409396
+   }
+  },
+  {
+   "param_id": 99,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": true,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 2,
+    "hub_mass": 0.6891306519963089,
+    "spectral_gap": 0.7130959965128756,
+    "alternation_rate": 0.43355704697986575
+   }
+  }
+ ],
+ "open_results": [
+  {
+   "param_id": 0,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 9,
+    "hub_mass": 0.3132309190546051,
+    "spectral_gap": 0.02722981221585341,
+    "alternation_rate": 0.14966442953020134
+   }
+  },
+  {
+   "param_id": 1,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.020108891372483506,
+    "alternation_rate": 0.2738255033557047
+   }
+  },
+  {
+   "param_id": 2,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.06209524432290148,
+    "alternation_rate": 0.30134228187919465
+   }
+  },
+  {
+   "param_id": 3,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.07285915014685018,
+    "alternation_rate": 0.2657718120805369
+   }
+  },
+  {
+   "param_id": 4,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.02633177225327532,
+    "alternation_rate": 0.2342281879194631
+   }
+  },
+  {
+   "param_id": 5,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 0.873066822293551,
+    "spectral_gap": 0.04378578057515159,
+    "alternation_rate": 0.16174496644295303
+   }
+  },
+  {
+   "param_id": 6,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.03665894394197289,
+    "alternation_rate": 0.26375838926174494
+   }
+  },
+  {
+   "param_id": 7,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.06756756756756754,
+    "alternation_rate": 0.2543624161073825
+   }
+  },
+  {
+   "param_id": 8,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 0.7966631908237654,
+    "spectral_gap": 0.02383608851395591,
+    "alternation_rate": 0.15838926174496645
+   }
+  },
+  {
+   "param_id": 9,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.04372328027545702,
+    "alternation_rate": 0.2791946308724832
+   }
+  },
+  {
+   "param_id": 10,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 10,
+    "hub_mass": 0.4090101930955437,
+    "spectral_gap": 0.024119800853861673,
+    "alternation_rate": 0.14697986577181207
+   }
+  },
+  {
+   "param_id": 11,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.05673836550046296,
+    "alternation_rate": 0.28389261744966443
+   }
+  },
+  {
+   "param_id": 12,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.029691183281322253,
+    "alternation_rate": 0.3040268456375839
+   }
+  },
+  {
+   "param_id": 13,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.03967045407190073,
+    "alternation_rate": 0.2979865771812081
+   }
+  },
+  {
+   "param_id": 14,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.03891050583657585,
+    "alternation_rate": 0.23087248322147652
+   }
+  },
+  {
+   "param_id": 15,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.05236106238286753,
+    "alternation_rate": 0.30268456375838926
+   }
+  },
+  {
+   "param_id": 16,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.023095633899578583,
+    "alternation_rate": 0.3080536912751678
+   }
+  },
+  {
+   "param_id": 17,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.03885293456022021,
+    "alternation_rate": 0.2973154362416107
+   }
+  },
+  {
+   "param_id": 18,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.05988023952095811,
+    "alternation_rate": 0.2825503355704698
+   }
+  },
+  {
+   "param_id": 19,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.025887088932431523,
+    "alternation_rate": 0.20604026845637585
+   }
+  },
+  {
+   "param_id": 20,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.07407407407407407,
+    "alternation_rate": 0.31208053691275167
+   }
+  },
+  {
+   "param_id": 21,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.05988023952095811,
+    "alternation_rate": 0.2570469798657718
+   }
+  },
+  {
+   "param_id": 22,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.04363955286464416,
+    "alternation_rate": 0.31073825503355706
+   }
+  },
+  {
+   "param_id": 23,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 4,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.0680272108843537,
+    "alternation_rate": 0.23288590604026846
+   }
+  },
+  {
+   "param_id": 24,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 7,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.08437734511796868,
+    "alternation_rate": 0.19463087248322147
+   }
+  },
+  {
+   "param_id": 25,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.05132627863836703,
+    "alternation_rate": 0.2543624161073825
+   }
+  },
+  {
+   "param_id": 26,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 4,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.05696202531645567,
+    "alternation_rate": 0.3053691275167785
+   }
+  },
+  {
+   "param_id": 27,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.04840643653078858,
+    "alternation_rate": 0.2966442953020134
+   }
+  },
+  {
+   "param_id": 28,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.059171597633136064,
+    "alternation_rate": 0.31208053691275167
+   }
+  },
+  {
+   "param_id": 29,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.8775337644827568,
+    "spectral_gap": 0.02374431209248784,
+    "alternation_rate": 0.3053691275167785
+   }
+  },
+  {
+   "param_id": 30,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 10,
+    "hub_mass": 0.2579923487387447,
+    "spectral_gap": 0.02967182581957073,
+    "alternation_rate": 0.1523489932885906
+   }
+  },
+  {
+   "param_id": 31,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.05012834789578546,
+    "alternation_rate": 0.3181208053691275
+   }
+  },
+  {
+   "param_id": 32,
+   "hit_count": 3,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 8,
+    "hub_mass": 0.7469863005245607,
+    "spectral_gap": 0.06579324480756854,
+    "alternation_rate": 0.1691275167785235
+   }
+  },
+  {
+   "param_id": 33,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.9370956146656919,
+    "spectral_gap": 0.02919044417238259,
+    "alternation_rate": 0.22416107382550335
+   }
+  },
+  {
+   "param_id": 34,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.028901734104046284,
+    "alternation_rate": 0.21208053691275167
+   }
+  },
+  {
+   "param_id": 35,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.05747126436781613,
+    "alternation_rate": 0.3174496644295302
+   }
+  },
+  {
+   "param_id": 36,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.030413726072868297,
+    "alternation_rate": 0.2979865771812081
+   }
+  },
+  {
+   "param_id": 37,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.050519371051474526,
+    "alternation_rate": 0.31409395973154364
+   }
+  },
+  {
+   "param_id": 38,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.03561459712355908,
+    "alternation_rate": 0.30671140939597313
+   }
+  },
+  {
+   "param_id": 39,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 4,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.05988023952095811,
+    "alternation_rate": 0.32416107382550335
+   }
+  },
+  {
+   "param_id": 40,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.04502151888870232,
+    "alternation_rate": 0.21946308724832214
+   }
+  },
+  {
+   "param_id": 41,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 4,
+    "hub_mass": 0.9228775813200165,
+    "spectral_gap": 0.019944098896348073,
+    "alternation_rate": 0.23691275167785236
+   }
+  },
+  {
+   "param_id": 42,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.04219409282700426,
+    "alternation_rate": 0.25838926174496646
+   }
+  },
+  {
+   "param_id": 43,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.05609020528136632,
+    "alternation_rate": 0.3208053691275168
+   }
+  },
+  {
+   "param_id": 44,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.03129451631542046,
+    "alternation_rate": 0.3040268456375839
+   }
+  },
+  {
+   "param_id": 45,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.032362459546925515,
+    "alternation_rate": 0.2825503355704698
+   }
+  },
+  {
+   "param_id": 46,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.06534349207354573,
+    "alternation_rate": 0.2731543624161074
+   }
+  },
+  {
+   "param_id": 47,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.8694356706067039,
+    "spectral_gap": 0.0206197179646731,
+    "alternation_rate": 0.3208053691275168
+   }
+  },
+  {
+   "param_id": 48,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 8,
+    "hub_mass": 0.97942288550628,
+    "spectral_gap": 0.0446598737510141,
+    "alternation_rate": 0.24697986577181208
+   }
+  },
+  {
+   "param_id": 49,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.040121746946689796,
+    "alternation_rate": 0.2080536912751678
+   }
+  },
+  {
+   "param_id": 50,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.9731263543339155,
+    "spectral_gap": 0.0374525183015767,
+    "alternation_rate": 0.3194630872483222
+   }
+  },
+  {
+   "param_id": 51,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 4,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.05586592178770955,
+    "alternation_rate": 0.23355704697986576
+   }
+  },
+  {
+   "param_id": 52,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 12,
+    "hub_mass": 0.373512619769579,
+    "spectral_gap": 0.02337722700278355,
+    "alternation_rate": 0.14630872483221477
+   }
+  },
+  {
+   "param_id": 53,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.03465278208852984,
+    "alternation_rate": 0.3040268456375839
+   }
+  },
+  {
+   "param_id": 54,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 10,
+    "hub_mass": 0.35765492200231996,
+    "spectral_gap": 0.030933921531112962,
+    "alternation_rate": 0.1563758389261745
+   }
+  },
+  {
+   "param_id": 55,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.03078054684945508,
+    "alternation_rate": 0.31208053691275167
+   }
+  },
+  {
+   "param_id": 56,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.05553574641125414,
+    "alternation_rate": 0.24228187919463087
+   }
+  },
+  {
+   "param_id": 57,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.027671562043979026,
+    "alternation_rate": 0.31140939597315437
+   }
+  },
+  {
+   "param_id": 58,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.06818181818181823,
+    "alternation_rate": 0.31140939597315437
+   }
+  },
+  {
+   "param_id": 59,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.9342018085502257,
+    "spectral_gap": 0.025871907626582535,
+    "alternation_rate": 0.2570469798657718
+   }
+  },
+  {
+   "param_id": 60,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.022514044861422833,
+    "alternation_rate": 0.23624161073825503
+   }
+  },
+  {
+   "param_id": 61,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.9852673413743843,
+    "spectral_gap": 0.04921686812679571,
+    "alternation_rate": 0.22684563758389262
+   }
+  },
+  {
+   "param_id": 62,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.07042253521126762,
+    "alternation_rate": 0.27046979865771814
+   }
+  },
+  {
+   "param_id": 63,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.02936490153306981,
+    "alternation_rate": 0.31342281879194633
+   }
+  },
+  {
+   "param_id": 64,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.05569175856213682,
+    "alternation_rate": 0.25838926174496646
+   }
+  },
+  {
+   "param_id": 65,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.9290441016863178,
+    "spectral_gap": 0.018640003932478666,
+    "alternation_rate": 0.3496644295302013
+   }
+  },
+  {
+   "param_id": 66,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.0714285714285714,
+    "alternation_rate": 0.2832214765100671
+   }
+  },
+  {
+   "param_id": 67,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.028154320137352307,
+    "alternation_rate": 0.2342281879194631
+   }
+  },
+  {
+   "param_id": 68,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.044642857142857095,
+    "alternation_rate": 0.2825503355704698
+   }
+  },
+  {
+   "param_id": 69,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 0.9255301606147553,
+    "spectral_gap": 0.025674179549715737,
+    "alternation_rate": 0.29194630872483224
+   }
+  },
+  {
+   "param_id": 70,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.0574784163351425,
+    "alternation_rate": 0.24093959731543624
+   }
+  },
+  {
+   "param_id": 71,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.02240411221152827,
+    "alternation_rate": 0.2879194630872483
+   }
+  },
+  {
+   "param_id": 72,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.05192401502746247,
+    "alternation_rate": 0.2684563758389262
+   }
+  },
+  {
+   "param_id": 73,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.07017543859649122,
+    "alternation_rate": 0.2731543624161074
+   }
+  },
+  {
+   "param_id": 74,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.029141291386732493,
+    "alternation_rate": 0.24899328859060402
+   }
+  },
+  {
+   "param_id": 75,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.9759894954042411,
+    "spectral_gap": 0.038471674684745105,
+    "alternation_rate": 0.2865771812080537
+   }
+  },
+  {
+   "param_id": 76,
+   "hit_count": 3,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 11,
+    "hub_mass": 0.8636203827842464,
+    "spectral_gap": 0.039108137642312246,
+    "alternation_rate": 0.15704697986577182
+   }
+  },
+  {
+   "param_id": 77,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.059523809523809534,
+    "alternation_rate": 0.3053691275167785
+   }
+  },
+  {
+   "param_id": 78,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.9574436536180013,
+    "spectral_gap": 0.02538729409356688,
+    "alternation_rate": 0.2758389261744966
+   }
+  },
+  {
+   "param_id": 79,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 8,
+    "hub_mass": 0.5308661255421947,
+    "spectral_gap": 0.029984277847609597,
+    "alternation_rate": 0.1697986577181208
+   }
+  },
+  {
+   "param_id": 80,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 7,
+    "hub_mass": 0.3390322483306155,
+    "spectral_gap": 0.025997688449980516,
+    "alternation_rate": 0.14966442953020134
+   }
+  },
+  {
+   "param_id": 81,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 12,
+    "hub_mass": 0.28287047190396203,
+    "spectral_gap": 0.04107486661988213,
+    "alternation_rate": 0.14697986577181207
+   }
+  },
+  {
+   "param_id": 82,
+   "hit_count": 1,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 10,
+    "hub_mass": 0.8225199991837072,
+    "spectral_gap": 0.04051700509456424,
+    "alternation_rate": 0.20268456375838925
+   }
+  },
+  {
+   "param_id": 83,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.05383038243005944,
+    "alternation_rate": 0.27046979865771814
+   }
+  },
+  {
+   "param_id": 84,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 7,
+    "hub_mass": 0.9684210526316117,
+    "spectral_gap": 0.03190469008605035,
+    "alternation_rate": 0.2993288590604027
+   }
+  },
+  {
+   "param_id": 85,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.9340551181102384,
+    "spectral_gap": 0.026112350564739928,
+    "alternation_rate": 0.2979865771812081
+   }
+  },
+  {
+   "param_id": 86,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.05202629366648792,
+    "alternation_rate": 0.24563758389261744
+   }
+  },
+  {
+   "param_id": 87,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.029491818577312756,
+    "alternation_rate": 0.3214765100671141
+   }
+  },
+  {
+   "param_id": 88,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.07246376811594202,
+    "alternation_rate": 0.32281879194630875
+   }
+  },
+  {
+   "param_id": 89,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.02373371044341921,
+    "alternation_rate": 0.2859060402684564
+   }
+  },
+  {
+   "param_id": 90,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.023582193106449933,
+    "alternation_rate": 0.3268456375838926
+   }
+  },
+  {
+   "param_id": 91,
+   "hit_count": 2,
+   "hits": {
+    "state_count": false,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": false,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 9,
+    "hub_mass": 0.3348116128776975,
+    "spectral_gap": 0.02937495965025494,
+    "alternation_rate": 0.14966442953020134
+   }
+  },
+  {
+   "param_id": 92,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.9213513771345255,
+    "spectral_gap": 0.018780825922165678,
+    "alternation_rate": 0.2986577181208054
+   }
+  },
+  {
+   "param_id": 93,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 6,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.08571428571428574,
+    "alternation_rate": 0.24496644295302014
+   }
+  },
+  {
+   "param_id": 94,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 0.9477573339244808,
+    "spectral_gap": 0.03237694909175082,
+    "alternation_rate": 0.2966442953020134
+   }
+  },
+  {
+   "param_id": 95,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.020964776806291496,
+    "alternation_rate": 0.28993288590604027
+   }
+  },
+  {
+   "param_id": 96,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.06493506493506496,
+    "alternation_rate": 0.24228187919463087
+   }
+  },
+  {
+   "param_id": 97,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.04090847110098761,
+    "alternation_rate": 0.2959731543624161
+   }
+  },
+  {
+   "param_id": 98,
+   "hit_count": 3,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": false,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.04934567614395169,
+    "alternation_rate": 0.2993288590604027
+   }
+  },
+  {
+   "param_id": 99,
+   "hit_count": 4,
+   "hits": {
+    "state_count": true,
+    "hub_mass": false,
+    "spectral_gap": false,
+    "alternation_rate": false,
+    "alternation_asymmetry": true,
+    "post_overshoot_cooling": false,
+    "forbidden_count": true,
+    "buffer_rate": true,
+    "run_length_median": false
+   },
+   "automaton_summary": {
+    "optimal_k": 5,
+    "hub_mass": 1.0,
+    "spectral_gap": 0.052131699152025535,
+    "alternation_rate": 0.28523489932885904
+   }
+  }
+ ]
+}

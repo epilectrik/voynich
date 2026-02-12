@@ -1,0 +1,410 @@
+{
+  "test": "T7_contextual_eigenvector_annotation",
+  "n_middles": 972,
+  "n_eigvecs": 29,
+  "n_contextual_features": 17,
+  "best_per_eigvec": {
+    "eigvec_2": {
+      "best_feature": "mean_neighbor_depth",
+      "rho": -0.336737758142796,
+      "p": 3.368969157851368e-27,
+      "eigenvalue": 19.159221044361416
+    },
+    "eigvec_3": {
+      "best_feature": "a_section_kl",
+      "rho": 0.3638312108499946,
+      "p": 8.632934216638958e-32,
+      "eigenvalue": 17.222459639686228
+    },
+    "eigvec_4": {
+      "best_feature": "b_section_kl",
+      "rho": -0.060416138211734076,
+      "p": 0.05971592767919773,
+      "eigenvalue": 15.311182957566105
+    },
+    "eigvec_5": {
+      "best_feature": "b_successor_entropy",
+      "rho": -0.053138914295816374,
+      "p": 0.0977733680874266,
+      "eigenvalue": 15.236845318955725
+    },
+    "eigvec_6": {
+      "best_feature": "a_section_kl",
+      "rho": -0.08397939022355012,
+      "p": 0.008806454243659435,
+      "eigenvalue": 15.043473573057373
+    },
+    "eigvec_7": {
+      "best_feature": "mean_neighbor_depth",
+      "rho": 0.06046612684670256,
+      "p": 0.0595046776805392,
+      "eigenvalue": 14.645866789507687
+    },
+    "eigvec_8": {
+      "best_feature": "a_prefix_entropy",
+      "rho": -0.05510477114826824,
+      "p": 0.08596257472286523,
+      "eigenvalue": 14.160267459962585
+    },
+    "eigvec_9": {
+      "best_feature": "b_section_kl",
+      "rho": -0.07004237551722095,
+      "p": 0.02899331396890403,
+      "eigenvalue": 13.851795406745396
+    },
+    "eigvec_10": {
+      "best_feature": "residual_norm",
+      "rho": 0.07173773950032161,
+      "p": 0.025314750333759916,
+      "eigenvalue": 13.586521530012387
+    },
+    "eigvec_11": {
+      "best_feature": "residual_norm",
+      "rho": 0.04876261344322322,
+      "p": 0.1287082870342132,
+      "eigenvalue": 13.426153928091892
+    },
+    "eigvec_12": {
+      "best_feature": "compat_degree",
+      "rho": 0.06502147830064407,
+      "p": 0.04269253695598508,
+      "eigenvalue": 13.230060900176124
+    },
+    "eigvec_13": {
+      "best_feature": "residual_norm",
+      "rho": 0.10021533436720642,
+      "p": 0.0017584293418002176,
+      "eigenvalue": 13.144899169213394
+    },
+    "eigvec_14": {
+      "best_feature": "a_section_kl",
+      "rho": -0.0502641750707228,
+      "p": 0.11733565125210305,
+      "eigenvalue": 13.125685392552308
+    },
+    "eigvec_15": {
+      "best_feature": "mean_neighbor_depth",
+      "rho": -0.050292251907782325,
+      "p": 0.11713075743552105,
+      "eigenvalue": 12.927083200512923
+    },
+    "eigvec_16": {
+      "best_feature": "residual_norm",
+      "rho": 0.0653917885337256,
+      "p": 0.04152266696312494,
+      "eigenvalue": 12.659483770571633
+    },
+    "eigvec_17": {
+      "best_feature": "a_successor_entropy",
+      "rho": 0.035947986519625,
+      "p": 0.26285567050541386,
+      "eigenvalue": 12.48230893886056
+    },
+    "eigvec_18": {
+      "best_feature": "a_successor_diversity",
+      "rho": 0.06471806833652782,
+      "p": 0.043671685743394015,
+      "eigenvalue": 12.167462768214703
+    },
+    "eigvec_19": {
+      "best_feature": "b_presence",
+      "rho": 0.03707572347486125,
+      "p": 0.248165650440632,
+      "eigenvalue": 11.966196879837758
+    },
+    "eigvec_20": {
+      "best_feature": "mean_neighbor_depth",
+      "rho": 0.07229790166968543,
+      "p": 0.02419142800220944,
+      "eigenvalue": 11.895516581358358
+    },
+    "eigvec_21": {
+      "best_feature": "a_suffix_diversity",
+      "rho": -0.041377513876769384,
+      "p": 0.19742754768452428,
+      "eigenvalue": 11.670389262713883
+    },
+    "eigvec_22": {
+      "best_feature": "mean_neighbor_depth",
+      "rho": -0.05022715083086588,
+      "p": 0.11760626905887225,
+      "eigenvalue": 11.54274831997139
+    },
+    "eigvec_23": {
+      "best_feature": "b_section_kl",
+      "rho": 0.04947547124202651,
+      "p": 0.12320687467254693,
+      "eigenvalue": 11.199981764226383
+    },
+    "eigvec_24": {
+      "best_feature": "a_prefix_entropy",
+      "rho": -0.05490924844304413,
+      "p": 0.08708313620910513,
+      "eigenvalue": 11.091680740364058
+    },
+    "eigvec_25": {
+      "best_feature": "a_section_kl",
+      "rho": -0.07071367372615221,
+      "p": 0.027485160619064024,
+      "eigenvalue": 10.999870189139717
+    },
+    "eigvec_26": {
+      "best_feature": "folio_count",
+      "rho": -0.11515242503972675,
+      "p": 0.0003213512700295781,
+      "eigenvalue": 10.742710993001744
+    },
+    "eigvec_27": {
+      "best_feature": "b_section_kl",
+      "rho": 0.04379398009874664,
+      "p": 0.17248612027557,
+      "eigenvalue": 10.642694083215591
+    },
+    "eigvec_28": {
+      "best_feature": "a_prefix_diversity",
+      "rho": -0.04764121302290079,
+      "p": 0.13774589840818147,
+      "eigenvalue": 10.469121046004895
+    },
+    "eigvec_29": {
+      "best_feature": "mean_neighbor_depth",
+      "rho": -0.05562732474499332,
+      "p": 0.08302477444285297,
+      "eigenvalue": 10.116549457120309
+    },
+    "eigvec_30": {
+      "best_feature": "a_prefix_diversity",
+      "rho": 0.05834978033876537,
+      "p": 0.06900688355054013,
+      "eigenvalue": 9.999834359166348
+    }
+  },
+  "multi_view_top15": {
+    "eigvec_2": [
+      {
+        "feature": "mean_neighbor_depth",
+        "rho": -0.336737758142796
+      },
+      {
+        "feature": "residual_norm",
+        "rho": 0.21199193382525994
+      },
+      {
+        "feature": "b_successor_entropy",
+        "rho": 0.20343044682562675
+      }
+    ],
+    "eigvec_3": [
+      {
+        "feature": "a_section_kl",
+        "rho": 0.3638312108499946
+      },
+      {
+        "feature": "mean_neighbor_depth",
+        "rho": -0.20082902220156776
+      },
+      {
+        "feature": "a_successor_diversity",
+        "rho": 0.11719550012338102
+      }
+    ],
+    "eigvec_4": [
+      {
+        "feature": "b_section_kl",
+        "rho": -0.060416138211734076
+      },
+      {
+        "feature": "b_presence",
+        "rho": -0.05577235923457437
+      },
+      {
+        "feature": "mean_neighbor_depth",
+        "rho": -0.041685035784980555
+      }
+    ],
+    "eigvec_5": [
+      {
+        "feature": "b_successor_entropy",
+        "rho": -0.053138914295816374
+      },
+      {
+        "feature": "b_presence",
+        "rho": -0.044591737529046216
+      },
+      {
+        "feature": "residual_norm",
+        "rho": 0.04325292914415438
+      }
+    ],
+    "eigvec_6": [
+      {
+        "feature": "a_section_kl",
+        "rho": -0.08397939022355012
+      },
+      {
+        "feature": "a_successor_diversity",
+        "rho": 0.06995976715165247
+      },
+      {
+        "feature": "a_successor_entropy",
+        "rho": 0.06651965812330675
+      }
+    ],
+    "eigvec_7": [
+      {
+        "feature": "mean_neighbor_depth",
+        "rho": 0.06046612684670256
+      },
+      {
+        "feature": "a_successor_diversity",
+        "rho": 0.046370434342478374
+      },
+      {
+        "feature": "a_successor_entropy",
+        "rho": 0.038835923277769635
+      }
+    ],
+    "eigvec_8": [
+      {
+        "feature": "a_prefix_entropy",
+        "rho": -0.05510477114826824
+      },
+      {
+        "feature": "a_suffix_diversity",
+        "rho": -0.03359565980749631
+      },
+      {
+        "feature": "a_prefix_diversity",
+        "rho": -0.032414257948575914
+      }
+    ],
+    "eigvec_9": [
+      {
+        "feature": "b_section_kl",
+        "rho": -0.07004237551722095
+      },
+      {
+        "feature": "a_section_kl",
+        "rho": -0.06203429435401056
+      },
+      {
+        "feature": "mean_neighbor_depth",
+        "rho": -0.06090947448863443
+      }
+    ],
+    "eigvec_10": [
+      {
+        "feature": "residual_norm",
+        "rho": 0.07173773950032161
+      },
+      {
+        "feature": "mean_neighbor_depth",
+        "rho": -0.053775780079289875
+      },
+      {
+        "feature": "a_successor_entropy",
+        "rho": 0.0459379041831239
+      }
+    ],
+    "eigvec_11": [
+      {
+        "feature": "residual_norm",
+        "rho": 0.04876261344322322
+      },
+      {
+        "feature": "compat_degree",
+        "rho": 0.03587864282527485
+      },
+      {
+        "feature": "a_suffix_diversity",
+        "rho": 0.027165102465662873
+      }
+    ],
+    "eigvec_12": [
+      {
+        "feature": "compat_degree",
+        "rho": 0.06502147830064407
+      },
+      {
+        "feature": "residual_norm",
+        "rho": 0.0617052256329703
+      },
+      {
+        "feature": "b_successor_entropy",
+        "rho": 0.057470421000843604
+      }
+    ],
+    "eigvec_13": [
+      {
+        "feature": "residual_norm",
+        "rho": 0.10021533436720642
+      },
+      {
+        "feature": "compat_degree",
+        "rho": 0.07780570323296407
+      },
+      {
+        "feature": "a_successor_entropy",
+        "rho": 0.05816564573365786
+      }
+    ],
+    "eigvec_14": [
+      {
+        "feature": "a_section_kl",
+        "rho": -0.0502641750707228
+      },
+      {
+        "feature": "b_section_kl",
+        "rho": 0.04739876564522934
+      },
+      {
+        "feature": "a_predecessor_entropy",
+        "rho": 0.04549774938750135
+      }
+    ],
+    "eigvec_15": [
+      {
+        "feature": "mean_neighbor_depth",
+        "rho": -0.050292251907782325
+      },
+      {
+        "feature": "log_freq",
+        "rho": -0.04490695338806233
+      },
+      {
+        "feature": "a_section_kl",
+        "rho": -0.04490040565536368
+      }
+    ],
+    "eigvec_16": [
+      {
+        "feature": "residual_norm",
+        "rho": 0.0653917885337256
+      },
+      {
+        "feature": "a_prefix_diversity",
+        "rho": 0.06423649451162661
+      },
+      {
+        "feature": "a_prefix_entropy",
+        "rho": 0.06421398295795543
+      }
+    ]
+  },
+  "property_dominance": {
+    "mean_neighbor_depth": 1,
+    "a_section_kl": 1
+  },
+  "strength_counts": {
+    "strong_020": 2,
+    "moderate_015": 2,
+    "weak_010": 4
+  },
+  "comparison_to_t1": {
+    "t1_moderate": 2,
+    "t7_moderate": 2,
+    "improvement": 0
+  },
+  "verdict": "INTRINSIC_OPACITY",
+  "explanation": "Only 2/29 contextual correlations at |\u03c1|\u22650.15. The eigenspace encodes neither intrinsic properties nor contextual routing \u2014 it reflects irreducible manifold curvature."
+}

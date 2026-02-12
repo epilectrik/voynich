@@ -1,0 +1,44 @@
+{
+  "test": "T3_role_distribution",
+  "n_exclusive": 900,
+  "n_shared": 393,
+  "frequency": {
+    "exclusive_dist": {
+      "1": 722,
+      "2": 93,
+      "3-5": 59,
+      "6-10": 20,
+      "11-50": 6,
+      "51-100": 0,
+      "101+": 0
+    },
+    "shared_dist": {
+      "1": 100,
+      "2": 55,
+      "3-5": 79,
+      "6-10": 44,
+      "11-50": 65,
+      "51-100": 14,
+      "101+": 36
+    },
+    "exclusive_median": 1.0,
+    "shared_median": 3.0,
+    "exclusive_hapax_rate": 0.8022222222222222
+  },
+  "length": {
+    "exclusive_mean": 4.497777777777777,
+    "shared_mean": 3.1017811704834606
+  },
+  "compound": {
+    "exclusive_rate": 0.9411111111111111,
+    "shared_rate": 0.7022900763358778
+  },
+  "folio_spread": {
+    "exclusive_single_folio_rate": 0.81,
+    "shared_single_folio_rate": 0.2595419847328244,
+    "exclusive_mean_folios": 1.46,
+    "shared_mean_folios": 12.358778625954198
+  },
+  "verdict": "MORPHOLOGICAL_TAIL",
+  "explanation": "B-exclusive MIDDLEs are rare (median count=1), compound (94% contain A atoms), and folio-specific (81% single-folio). They are the morphological periphery, not an independent system."
+}

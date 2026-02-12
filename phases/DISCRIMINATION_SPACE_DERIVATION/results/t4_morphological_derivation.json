@@ -1,0 +1,30 @@
+{
+  "test": "T4_morphological_derivation",
+  "n_middles": 972,
+  "n_features_raw": 245,
+  "independent_features": {
+    "k_90": 72,
+    "k_95": 101,
+    "k_99": 161,
+    "effective_rank": 66.11146523797818,
+    "n_features_raw": 245
+  },
+  "prediction": {
+    "auc": 0.714274873804837,
+    "accuracy": 0.66825,
+    "n_features": 245,
+    "n_train": 16000,
+    "n_test": 4000
+  },
+  "information_content": {
+    "mean_row_entropy": 0.11740894542061091,
+    "total_entropy_upper": 114.1214949488338,
+    "approx_description_bits": 4396.691939097361,
+    "n_eigenvalues_gt1": 443,
+    "mean_row_pair_mi": 0.01111915498220574
+  },
+  "feature_sufficiency": "INSUFFICIENT",
+  "derivation_verdict": "SPECTRAL_EXCEEDS_MORPHOLOGICAL",
+  "spectral_d": 443,
+  "morphological_d": 101
+}

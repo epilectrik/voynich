@@ -1,0 +1,91 @@
+{
+  "metadata": {
+    "phase": "PREFIX_MIDDLE_SUFFIX_SYNERGY",
+    "test": "T1_THREE_WAY_COINFORMATION",
+    "n_permutations": 1000
+  },
+  "corpus": {
+    "n_records": 16054
+  },
+  "targets": {
+    "ROLE": {
+      "marginal": {
+        "prefix": 1.3899385719734623,
+        "class": 0.7986824311848849,
+        "suffix": 0.2838924706701912
+      },
+      "pairwise": {
+        "prefix_class": 1.7457643699963026,
+        "prefix_suffix": 1.5197878771314666,
+        "class_suffix": 0.8712911636264207
+      },
+      "full": 1.7747048067697284,
+      "co_information": 0.11037486984407607,
+      "type": "REDUNDANCY",
+      "perm_null_mean": 0.14782597037969328,
+      "perm_null_std": 0.002908447187332066,
+      "p_value": 1.0,
+      "significant_synergy": false
+    },
+    "REGIME": {
+      "marginal": {
+        "prefix": 0.04063406964496234,
+        "class": 0.06081744075516514,
+        "suffix": 0.044956010392150046
+      },
+      "pairwise": {
+        "prefix_class": 0.10840800652516551,
+        "prefix_suffix": 0.09084203972940941,
+        "class_suffix": 0.11031064344091471
+      },
+      "full": 0.1517330201310922,
+      "co_information": -0.011420148772119942,
+      "type": "SYNERGY",
+      "perm_null_mean": 0.02173072124218983,
+      "perm_null_std": 0.0026680482447022703,
+      "p_value": 0.0,
+      "significant_synergy": false
+    },
+    "POSITION": {
+      "marginal": {
+        "prefix": 0.050648512962991894,
+        "class": 0.03215416719705917,
+        "suffix": 0.012124927157895808
+      },
+      "pairwise": {
+        "prefix_class": 0.07880586038794138,
+        "prefix_suffix": 0.06568725468858189,
+        "class_suffix": 0.0524963808682434
+      },
+      "full": 0.09681473111207672,
+      "co_information": -0.005247157514743056,
+      "type": "SYNERGY",
+      "perm_null_mean": -0.005333140585601984,
+      "perm_null_std": 0.0031795029929877643,
+      "p_value": 0.496,
+      "significant_synergy": false
+    },
+    "SECTION": {
+      "marginal": {
+        "prefix": 0.0,
+        "class": 0.0,
+        "suffix": 0.0
+      },
+      "pairwise": {
+        "prefix_class": 0.0,
+        "prefix_suffix": 0.0,
+        "class_suffix": 0.0
+      },
+      "full": 0.0,
+      "co_information": 0.0,
+      "type": "REDUNDANCY",
+      "perm_null_mean": 0.0,
+      "perm_null_std": 0.0,
+      "p_value": 1.0,
+      "significant_synergy": false
+    }
+  },
+  "significant_synergy_count": 0,
+  "verdict": "NO_THREE_WAY_SYNERGY",
+  "verdict_detail": "Co-Information is non-negative or non-significant on all targets. TOKEN is well-described by pairwise component interactions."
+}

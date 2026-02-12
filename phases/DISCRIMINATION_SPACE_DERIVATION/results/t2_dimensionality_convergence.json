@@ -1,0 +1,159 @@
+{
+  "test": "T2_dimensionality_convergence",
+  "n_middles": 972,
+  "cross_validation": {
+    "4": {
+      "mean_auc": 0.9031633377075196,
+      "std_auc": 0.004728908095082504
+    },
+    "8": {
+      "mean_auc": 0.8981709480285645,
+      "std_auc": 0.004197182367218452
+    },
+    "16": {
+      "mean_auc": 0.9017087936401367,
+      "std_auc": 0.005053377989509897
+    },
+    "32": {
+      "mean_auc": 0.9124985218048096,
+      "std_auc": 0.0047468863279996505
+    },
+    "48": {
+      "mean_auc": 0.919990062713623,
+      "std_auc": 0.003977319548478904
+    },
+    "64": {
+      "mean_auc": 0.9237932682037353,
+      "std_auc": 0.004159998205535921
+    },
+    "96": {
+      "mean_auc": 0.9277099609375,
+      "std_auc": 0.004544371628019091
+    },
+    "128": {
+      "mean_auc": 0.9302350044250488,
+      "std_auc": 0.0041847351625205476
+    },
+    "192": {
+      "mean_auc": 0.9322658061981202,
+      "std_auc": 0.004620890118817023
+    },
+    "256": {
+      "mean_auc": 0.9339320659637451,
+      "std_auc": 0.004341812521482649
+    },
+    "384": {
+      "mean_auc": 0.9338346958160401,
+      "std_auc": 0.004352752309665378
+    }
+  },
+  "nmf_reconstruction": {
+    "4": {
+      "frobenius_error": 112.5134360209577,
+      "relative_error": 0.7681574546533203,
+      "n_iter": 300
+    },
+    "8": {
+      "frobenius_error": 108.93493092697734,
+      "relative_error": 0.743726102615117,
+      "n_iter": 300
+    },
+    "16": {
+      "frobenius_error": 102.86266060659148,
+      "relative_error": 0.7022691897500111,
+      "n_iter": 300
+    },
+    "32": {
+      "frobenius_error": 91.58385528780487,
+      "relative_error": 0.6252659562553408,
+      "n_iter": 300
+    },
+    "64": {
+      "frobenius_error": 73.8957480008425,
+      "relative_error": 0.504504810282899,
+      "n_iter": 105
+    },
+    "128": {
+      "frobenius_error": 52.87650541419218,
+      "relative_error": 0.361001167917071,
+      "n_iter": 99
+    },
+    "256": {
+      "frobenius_error": 34.20959619933978,
+      "relative_error": 0.23355749562485956,
+      "n_iter": 166
+    }
+  },
+  "convergence": {
+    "elbow_k": 96,
+    "plateau_k": 4,
+    "best_k": 256,
+    "best_auc": 0.9339320659637451,
+    "still_rising": false,
+    "nmf_elbow_k": 128
+  },
+  "diminishing_returns": [
+    {
+      "from_k": 4,
+      "to_k": 8,
+      "delta_auc": -0.0049923896789551,
+      "relative_improvement": -0.051554747505865806
+    },
+    {
+      "from_k": 8,
+      "to_k": 16,
+      "delta_auc": 0.003537845611572221,
+      "relative_improvement": 0.0347429887601265
+    },
+    {
+      "from_k": 16,
+      "to_k": 32,
+      "delta_auc": 0.01078972816467294,
+      "relative_improvement": 0.1097730768934947
+    },
+    {
+      "from_k": 32,
+      "to_k": 48,
+      "delta_auc": 0.007491540908813432,
+      "relative_improvement": 0.08561616391828678
+    },
+    {
+      "from_k": 48,
+      "to_k": 64,
+      "delta_auc": 0.0038032054901122603,
+      "relative_improvement": 0.0475341640594737
+    },
+    {
+      "from_k": 64,
+      "to_k": 96,
+      "delta_auc": 0.003916692733764715,
+      "relative_improvement": 0.051395626558244964
+    },
+    {
+      "from_k": 96,
+      "to_k": 128,
+      "delta_auc": 0.0025250434875487837,
+      "relative_improvement": 0.034929341812538886
+    },
+    {
+      "from_k": 128,
+      "to_k": 192,
+      "delta_auc": 0.0020308017730713557,
+      "relative_improvement": 0.02910917937318107
+    },
+    {
+      "from_k": 192,
+      "to_k": 256,
+      "delta_auc": 0.0016662597656249556,
+      "relative_improvement": 0.024599979266582986
+    },
+    {
+      "from_k": 256,
+      "to_k": 384,
+      "delta_auc": -9.737014770505592e-05,
+      "relative_improvement": -0.0014737882904624364
+    }
+  ],
+  "verdict": "CONVERGED",
+  "explanation": "AUC plateaus at K\u22484. Marginal improvement negligible beyond."
+}

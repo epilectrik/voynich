@@ -1,0 +1,424 @@
+{
+  "test": "T3_structural_decomposition",
+  "n_middles": 972,
+  "prefix_block": {
+    "within_rate": 0.05754429464331835,
+    "cross_rate": 0.014665247040332598,
+    "enrichment": 3.923854435254934,
+    "prefix_blocks": {
+      "ch": {
+        "count": 130,
+        "block_density": 0.0022659511031604056
+      },
+      "ct": {
+        "count": 36,
+        "block_density": 0.004761904761904762
+      },
+      "da": {
+        "count": 40,
+        "block_density": 0.002564102564102564
+      },
+      "dch": {
+        "count": 3,
+        "block_density": 0.0
+      },
+      "de": {
+        "count": 3,
+        "block_density": 0.0
+      },
+      "do": {
+        "count": 11,
+        "block_density": 0.0
+      },
+      "kch": {
+        "count": 3,
+        "block_density": 0.0
+      },
+      "ke": {
+        "count": 3,
+        "block_density": 0.0
+      },
+      "ko": {
+        "count": 13,
+        "block_density": 0.0
+      },
+      "ok": {
+        "count": 17,
+        "block_density": 0.0
+      },
+      "ol": {
+        "count": 8,
+        "block_density": 0.0
+      },
+      "or": {
+        "count": 3,
+        "block_density": 0.0
+      },
+      "ot": {
+        "count": 19,
+        "block_density": 0.0
+      },
+      "pch": {
+        "count": 4,
+        "block_density": 0.0
+      },
+      "po": {
+        "count": 11,
+        "block_density": 0.01818181818181818
+      },
+      "qo": {
+        "count": 84,
+        "block_density": 0.002294893861158921
+      },
+      "sa": {
+        "count": 5,
+        "block_density": 0.0
+      },
+      "sh": {
+        "count": 47,
+        "block_density": 0.0037002775208140612
+      },
+      "so": {
+        "count": 9,
+        "block_density": 0.0
+      },
+      "to": {
+        "count": 10,
+        "block_density": 0.0
+      },
+      "yk": {
+        "count": 7,
+        "block_density": 0.0
+      }
+    },
+    "prefix_distribution": {
+      "MULTI": 210,
+      "NONE": 285,
+      "al": 1,
+      "ar": 2,
+      "ch": 130,
+      "ct": 36,
+      "da": 40,
+      "dch": 3,
+      "de": 3,
+      "do": 11,
+      "fch": 1,
+      "ka": 2,
+      "kch": 3,
+      "ke": 3,
+      "ko": 13,
+      "ok": 17,
+      "ol": 8,
+      "or": 3,
+      "ot": 19,
+      "pch": 4,
+      "po": 11,
+      "qo": 84,
+      "rch": 1,
+      "sa": 5,
+      "sch": 2,
+      "sh": 47,
+      "so": 9,
+      "ta": 1,
+      "tch": 1,
+      "to": 10,
+      "yk": 7
+    }
+  },
+  "spectral_communities": {
+    "4": {
+      "modularity": 0.0015590864977783397,
+      "sizes": [
+        964,
+        4,
+        2,
+        2
+      ],
+      "max_cluster": 964,
+      "min_cluster": 2
+    },
+    "6": {
+      "modularity": 0.0033053617752597975,
+      "sizes": [
+        957,
+        4,
+        4,
+        3,
+        2,
+        2
+      ],
+      "max_cluster": 957,
+      "min_cluster": 2
+    },
+    "8": {
+      "modularity": 0.005042693334558571,
+      "sizes": [
+        950,
+        4,
+        4,
+        4,
+        3,
+        3,
+        2,
+        2
+      ],
+      "max_cluster": 950,
+      "min_cluster": 2
+    },
+    "10": {
+      "modularity": 0.006759930132589022,
+      "sizes": [
+        943,
+        4,
+        4,
+        4,
+        4,
+        3,
+        3,
+        3,
+        2,
+        2
+      ],
+      "max_cluster": 943,
+      "min_cluster": 2
+    },
+    "12": {
+      "modularity": 0.009402269669674926,
+      "sizes": [
+        933,
+        7,
+        4,
+        4,
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2
+      ],
+      "max_cluster": 933,
+      "min_cluster": 2
+    },
+    "16": {
+      "modularity": 0.03669880744671511,
+      "sizes": [
+        845,
+        60,
+        15,
+        11,
+        6,
+        4,
+        4,
+        4,
+        4,
+        3,
+        3,
+        3,
+        3,
+        3,
+        2,
+        2
+      ],
+      "max_cluster": 845,
+      "min_cluster": 2
+    }
+  },
+  "best_spectral_k": 16,
+  "prefix_spectral_alignment": {
+    "ari": 0.005607626320723413,
+    "nmi": 0.07834456505488391,
+    "alignment": "NONE",
+    "cluster_dominant": {
+      "0": {
+        "dominant_prefix": "sh",
+        "count": 4,
+        "total": 15,
+        "purity": 0.26666666666666666
+      },
+      "1": {
+        "dominant_prefix": "ch",
+        "count": 1,
+        "total": 2,
+        "purity": 0.5
+      },
+      "2": {
+        "dominant_prefix": "sa",
+        "count": 1,
+        "total": 2,
+        "purity": 0.5
+      },
+      "3": {
+        "dominant_prefix": "NONE",
+        "count": 2,
+        "total": 3,
+        "purity": 0.6666666666666666
+      },
+      "4": {
+        "dominant_prefix": "NONE",
+        "count": 3,
+        "total": 4,
+        "purity": 0.75
+      },
+      "5": {
+        "dominant_prefix": "NONE",
+        "count": 2,
+        "total": 3,
+        "purity": 0.6666666666666666
+      },
+      "6": {
+        "dominant_prefix": "NONE",
+        "count": 18,
+        "total": 60,
+        "purity": 0.3
+      },
+      "7": {
+        "dominant_prefix": "or",
+        "count": 1,
+        "total": 3,
+        "purity": 0.3333333333333333
+      },
+      "8": {
+        "dominant_prefix": "NONE",
+        "count": 2,
+        "total": 3,
+        "purity": 0.6666666666666666
+      },
+      "9": {
+        "dominant_prefix": "NONE",
+        "count": 3,
+        "total": 4,
+        "purity": 0.75
+      },
+      "10": {
+        "dominant_prefix": "sh",
+        "count": 1,
+        "total": 4,
+        "purity": 0.25
+      },
+      "11": {
+        "dominant_prefix": "NONE",
+        "count": 5,
+        "total": 11,
+        "purity": 0.45454545454545453
+      },
+      "12": {
+        "dominant_prefix": "ch",
+        "count": 3,
+        "total": 3,
+        "purity": 1.0
+      },
+      "13": {
+        "dominant_prefix": "NONE",
+        "count": 242,
+        "total": 845,
+        "purity": 0.2863905325443787
+      },
+      "14": {
+        "dominant_prefix": "NONE",
+        "count": 2,
+        "total": 4,
+        "purity": 0.5
+      },
+      "15": {
+        "dominant_prefix": "po",
+        "count": 1,
+        "total": 6,
+        "purity": 0.16666666666666666
+      }
+    }
+  },
+  "degree_stratification": {
+    "quartiles": [
+      6.0,
+      8.0,
+      14.25
+    ],
+    "band_compatibility": {
+      "low_x_low": {
+        "rate": 0.001193966955208681,
+        "count_i": 338,
+        "count_j": 338
+      },
+      "low_x_mid_low": {
+        "rate": 5.582226191805292e-05,
+        "count_i": 338,
+        "count_j": 212
+      },
+      "low_x_mid_high": {
+        "rate": 0.0007107203067667184,
+        "count_i": 338,
+        "count_j": 179
+      },
+      "mid_low_x_mid_low": {
+        "rate": 0.0030403290709112045,
+        "count_i": 212,
+        "count_j": 212
+      },
+      "mid_high_x_mid_low": {
+        "rate": 0.0007905554969958891,
+        "count_i": 179,
+        "count_j": 212
+      },
+      "mid_high_x_mid_high": {
+        "rate": 0.0042056368087376814,
+        "count_i": 179,
+        "count_j": 179
+      },
+      "high_x_low": {
+        "rate": 0.01618087515523413,
+        "count_i": 243,
+        "count_j": 338
+      },
+      "high_x_mid_low": {
+        "rate": 0.026923674198307324,
+        "count_i": 243,
+        "count_j": 212
+      },
+      "high_x_mid_high": {
+        "rate": 0.040853392187966985,
+        "count_i": 243,
+        "count_j": 179
+      },
+      "high_x_high": {
+        "rate": 0.1859674182906506,
+        "count_i": 243,
+        "count_j": 243
+      }
+    }
+  },
+  "factored_dimensionality": {
+    "between_rank": 28,
+    "between_eigenvalues": [
+      2.0041231919808915,
+      1.0007130389431829,
+      1.0002651826744593,
+      1.0000311297058204,
+      0.5010363429985255,
+      0.5002311200932215,
+      0.4999999999999998,
+      0.4452654491138943,
+      0.3364953263381103,
+      0.3337344570723018
+    ],
+    "mean_within_rank": 57.5,
+    "within_ranks": {
+      "NONE": 303,
+      "ch": 115,
+      "ct": 33,
+      "da": 38,
+      "do": 11,
+      "ko": 13,
+      "ok": 17,
+      "ot": 19,
+      "po": 10,
+      "qo": 77,
+      "sh": 44,
+      "to": 10
+    },
+    "factored_estimate": 85.5,
+    "factored_plausible": true
+  },
+  "structure_verdict": "PREFIX_DOMINATED"
+}

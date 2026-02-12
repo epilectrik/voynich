@@ -1,0 +1,37 @@
+{
+  "test": "T12_b_side_validation",
+  "n_a_middles": 972,
+  "n_b_middles_total": 1293,
+  "n_b_in_a_space": 393,
+  "n_b_not_in_a": 900,
+  "b_coverage_of_a": 0.404320987654321,
+  "n_b_cooccur_pairs": 8587,
+  "compatibility": {
+    "n_compatible": 3382,
+    "n_incompatible": 5205,
+    "b_compat_rate": 0.3938511703738209,
+    "a_baseline_rate": 0.02170135577848131,
+    "enrichment": 18.148689620781987,
+    "binomial_p": 0.0,
+    "token_level_rate": 0.8021431899363255,
+    "token_level_enrichment": 36.962814587451575
+  },
+  "distances_full": {
+    "b_compat": 2.8037264778867867,
+    "b_incompat": 2.2600007766076184,
+    "random": 1.500896418914891,
+    "b_compat_cos": 0.20629574833098258,
+    "b_incompat_cos": 0.03241280839023986,
+    "random_cos": 0.049559476327191654
+  },
+  "distances_residual": {
+    "b_compat": 2.6782355795962927,
+    "b_incompat": 2.150252658830359,
+    "random": 1.4667818268677981,
+    "b_compat_cos": 0.07581561486673451,
+    "b_incompat_cos": -0.050648601999453216,
+    "random_cos": 0.003406406260272521
+  },
+  "verdict": "COMPATIBILITY_CONCORDANCE",
+  "explanation": "B respects A's compatibility boundaries (39%, 18x enrichment) but distance structure in residual space is not differentiated."
+}
