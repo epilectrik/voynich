@@ -61,7 +61,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # EMBEDDED EXPERT CONTEXT
 
-**Generated:** 2026-02-12 16:08
+**Generated:** 2026-02-12 16:26
 **Version:** FROZEN STATE (874 constraints, 56 fits)
 
 ---
@@ -84,7 +84,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.13 | **Status:** FROZEN | **Constraints:** 869 | **Date:** 2026-02-12
+**Version:** 3.53 | **Status:** FROZEN | **Constraints:** 874 | **Date:** 2026-02-12
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
