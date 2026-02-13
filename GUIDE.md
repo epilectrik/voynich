@@ -73,7 +73,7 @@ The 49 instruction classes further compress into just 6 macro states — the coa
 | **FL_HAZ** | Hazard flow — dangerous transitions | Smallest groups |
 | **FL_SAFE** | Safe flow — escape routes | |
 
-This compression is lossless: no transition information is lost when collapsing 49 classes to 6 states. The macro grammar reveals that the majority of the manuscript is scaffold (structural support), with only a small fraction devoted to hazard exposure or active control changes. A researcher scanning a folio can immediately classify every token into one of these six categories to see the macro structure of the program.
+This compression preserves all structural invariants — role families, depletion separation, and hazard topology are intact at 6 states. Fine-grained depletion asymmetry (a 49-class-level phenomenon) is not captured. The macro grammar reveals that the majority of the manuscript is scaffold (structural support), with only a small fraction devoted to hazard exposure or active control changes. A researcher scanning a folio can immediately classify every token into one of these six categories to see the macro structure of the program.
 
 ### The Kernel: Three Core Operators
 
@@ -268,7 +268,7 @@ The four layers are independent systems that share vocabulary but serve differen
 
 ## The Brunschwig Connection
 
-The strongest external validation for the "control system" interpretation comes from systematic comparison with Hieronymus Brunschwig's *Liber de arte distillandi* (1500) — the first printed manual on distillation.
+The strongest external corroboration for the "control system" interpretation comes from systematic comparison with Hieronymus Brunschwig's *Liber de arte distillandi* (1500) — the first printed manual on distillation.
 
 This comparison is a **Tier 3 interpretation** (speculative but structurally grounded). The structural findings about grammar, hazards, and control flow are Tier 0-2 (proven). The identification of the specific domain as distillation is an inference from structural parallels, not a proof.
 
