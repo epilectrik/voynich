@@ -1,0 +1,1250 @@
+{
+  "phase": "PREFIX_MACRO_STATE_ENFORCEMENT",
+  "phase_number": 330,
+  "question": "Do the 102 forbidden PREFIX \u00d7 MIDDLE combinations enforce the 6-state macro-automaton topology?",
+  "n_tokens_mapped": 16054,
+  "n_tokens_unmapped": 7042,
+  "t1_selectivity": {
+    "weighted_mean_entropy": 0.6029971655094003,
+    "max_entropy": 2.584962500721156,
+    "entropy_reduction": 0.766728853768217,
+    "chi2": 31500.322995733903,
+    "chi2_p": 0.0,
+    "chi2_dof": 155,
+    "perm_z": 1139.4972902160487,
+    "perm_p": 0.0,
+    "null_mean": 0.4304787998872513,
+    "null_std": 0.00029508631285749936,
+    "n_prefixes": 32,
+    "per_prefix_entropy": {
+      "(none)": 1.943054134517542,
+      "al": -0.0,
+      "ar": -0.0,
+      "ch": 0.10837069741046033,
+      "ct": -0.0,
+      "da": 1.3219524182259317,
+      "dch": -0.0,
+      "do": -0.0,
+      "fch": -0.0,
+      "ka": -0.0,
+      "kch": -0.0,
+      "ke": 0.4048000181834446,
+      "ko": -0.0,
+      "lch": -0.0,
+      "lk": -0.0,
+      "lsh": -0.0,
+      "ok": 0.8923811621978978,
+      "ol": 0.3479926920994887,
+      "or": -0.0,
+      "ot": 0.8130446060946144,
+      "pch": 0.8812908992306927,
+      "po": -0.0,
+      "qo": 0.08273066083592882,
+      "rch": -0.0,
+      "sa": -0.0,
+      "sh": 0.14529544538163575,
+      "so": -0.0,
+      "ta": 0.3318399155702335,
+      "tch": 0.173781322679433,
+      "te": 0.3945375643132797,
+      "to": -0.0,
+      "yk": 0.09227724774457388
+    },
+    "per_prefix_concentration": {
+      "(none)": 0.36537753222836095,
+      "al": 1.0,
+      "ar": 1.0,
+      "ch": 0.9856573705179282,
+      "ct": 1.0,
+      "da": 0.58,
+      "dch": 1.0,
+      "do": 1.0,
+      "fch": 1.0,
+      "ka": 1.0,
+      "kch": 1.0,
+      "ke": 0.9192546583850931,
+      "ko": 1.0,
+      "lch": 1.0,
+      "lk": 1.0,
+      "lsh": 1.0,
+      "ok": 0.809282700421941,
+      "ol": 0.9347368421052632,
+      "or": 1.0,
+      "ot": 0.8258575197889182,
+      "pch": 0.7,
+      "po": 1.0,
+      "qo": 0.9897067997504678,
+      "rch": 1.0,
+      "sa": 1.0,
+      "sh": 0.9793103448275862,
+      "so": 1.0,
+      "ta": 0.9388888888888889,
+      "tch": 0.974025974025974,
+      "te": 0.9221556886227545,
+      "to": 1.0,
+      "yk": 0.9882352941176471
+    }
+  },
+  "t2_cross_state": {
+    "n_forbidden": 102,
+    "n_classifiable": 56,
+    "n_cross_state": 13,
+    "n_within_state": 14,
+    "n_mixed": 29,
+    "cross_state_fraction": 0.23214285714285715,
+    "null_mean": 0.2782647058823529,
+    "null_std": 0.029100164752450485,
+    "z_score": -1.584934282394807,
+    "p_perm": 0.958,
+    "type_counts": {
+      "UNMAPPED_MIDDLE": 46,
+      "CROSS_STATE": 13,
+      "MIXED": 29,
+      "WITHIN_STATE": 14
+    }
+  },
+  "t2_classifications": [
+    {
+      "prefix": "qo",
+      "middle": "ey",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "(none)",
+      "middle": "edy",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "(none)",
+      "middle": "ey",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "(none)",
+      "middle": "iin",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "ch",
+      "middle": "iin",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "sh",
+      "middle": "iin",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "ok",
+      "middle": "k",
+      "type": "CROSS_STATE",
+      "prefix_home": "FQ",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "CC"
+      ]
+    },
+    {
+      "prefix": "ok",
+      "middle": "t",
+      "type": "CROSS_STATE",
+      "prefix_home": "FQ",
+      "middle_macros": [
+        "AXM"
+      ]
+    },
+    {
+      "prefix": "ot",
+      "middle": "k",
+      "type": "CROSS_STATE",
+      "prefix_home": "FQ",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "CC"
+      ]
+    },
+    {
+      "prefix": "ot",
+      "middle": "r",
+      "type": "MIXED",
+      "prefix_home": "FQ",
+      "middle_macros": [
+        "AXM",
+        "FL_HAZ",
+        "FL_SAFE",
+        "FQ"
+      ]
+    },
+    {
+      "prefix": "ot",
+      "middle": "t",
+      "type": "CROSS_STATE",
+      "prefix_home": "FQ",
+      "middle_macros": [
+        "AXM"
+      ]
+    },
+    {
+      "prefix": "ot",
+      "middle": "iin",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "da",
+      "middle": "edy",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "da",
+      "middle": "e",
+      "type": "CROSS_STATE",
+      "prefix_home": "FL_HAZ",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "FQ"
+      ]
+    },
+    {
+      "prefix": "da",
+      "middle": "aiin",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "da",
+      "middle": "ey",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "da",
+      "middle": "ol",
+      "type": "CROSS_STATE",
+      "prefix_home": "FL_HAZ",
+      "middle_macros": [
+        "AXM",
+        "AXm"
+      ]
+    },
+    {
+      "prefix": "da",
+      "middle": "eey",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "da",
+      "middle": "t",
+      "type": "CROSS_STATE",
+      "prefix_home": "FL_HAZ",
+      "middle_macros": [
+        "AXM"
+      ]
+    },
+    {
+      "prefix": "da",
+      "middle": "al",
+      "type": "CROSS_STATE",
+      "prefix_home": "FL_HAZ",
+      "middle_macros": [
+        "AXM"
+      ]
+    },
+    {
+      "prefix": "ol",
+      "middle": "edy",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "ol",
+      "middle": "ey",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "ol",
+      "middle": "iin",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "lk",
+      "middle": "k",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "CC"
+      ]
+    },
+    {
+      "prefix": "lk",
+      "middle": "r",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "FL_HAZ",
+        "FL_SAFE",
+        "FQ"
+      ]
+    },
+    {
+      "prefix": "lk",
+      "middle": "dy",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "lk",
+      "middle": "t",
+      "type": "WITHIN_STATE",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM"
+      ]
+    },
+    {
+      "prefix": "lk",
+      "middle": "iin",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "sa",
+      "middle": "edy",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "sa",
+      "middle": "e",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "FQ"
+      ]
+    },
+    {
+      "prefix": "sa",
+      "middle": "aiin",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "sa",
+      "middle": "ey",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "sa",
+      "middle": "ol",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "AXm"
+      ]
+    },
+    {
+      "prefix": "sa",
+      "middle": "ar",
+      "type": "CROSS_STATE",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXm"
+      ]
+    },
+    {
+      "prefix": "sa",
+      "middle": "eey",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "sa",
+      "middle": "dy",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "sa",
+      "middle": "t",
+      "type": "WITHIN_STATE",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM"
+      ]
+    },
+    {
+      "prefix": "sa",
+      "middle": "al",
+      "type": "WITHIN_STATE",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM"
+      ]
+    },
+    {
+      "prefix": "sa",
+      "middle": "y",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "FL_SAFE",
+        "FQ"
+      ]
+    },
+    {
+      "prefix": "lch",
+      "middle": "k",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "CC"
+      ]
+    },
+    {
+      "prefix": "lch",
+      "middle": "aiin",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "lch",
+      "middle": "t",
+      "type": "WITHIN_STATE",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM"
+      ]
+    },
+    {
+      "prefix": "lch",
+      "middle": "iin",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "yk",
+      "middle": "k",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "CC"
+      ]
+    },
+    {
+      "prefix": "yk",
+      "middle": "r",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "FL_HAZ",
+        "FL_SAFE",
+        "FQ"
+      ]
+    },
+    {
+      "prefix": "yk",
+      "middle": "t",
+      "type": "WITHIN_STATE",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM"
+      ]
+    },
+    {
+      "prefix": "yk",
+      "middle": "iin",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "te",
+      "middle": "k",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "CC"
+      ]
+    },
+    {
+      "prefix": "te",
+      "middle": "l",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "FL_HAZ",
+        "FL_SAFE",
+        "FQ"
+      ]
+    },
+    {
+      "prefix": "te",
+      "middle": "aiin",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "te",
+      "middle": "r",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "FL_HAZ",
+        "FL_SAFE",
+        "FQ"
+      ]
+    },
+    {
+      "prefix": "te",
+      "middle": "t",
+      "type": "WITHIN_STATE",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM"
+      ]
+    },
+    {
+      "prefix": "te",
+      "middle": "iin",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "te",
+      "middle": "al",
+      "type": "WITHIN_STATE",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM"
+      ]
+    },
+    {
+      "prefix": "ke",
+      "middle": "k",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "CC"
+      ]
+    },
+    {
+      "prefix": "ke",
+      "middle": "l",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "FL_HAZ",
+        "FL_SAFE",
+        "FQ"
+      ]
+    },
+    {
+      "prefix": "ke",
+      "middle": "aiin",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "ke",
+      "middle": "r",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "FL_HAZ",
+        "FL_SAFE",
+        "FQ"
+      ]
+    },
+    {
+      "prefix": "ke",
+      "middle": "ar",
+      "type": "CROSS_STATE",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXm"
+      ]
+    },
+    {
+      "prefix": "ke",
+      "middle": "t",
+      "type": "WITHIN_STATE",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM"
+      ]
+    },
+    {
+      "prefix": "ke",
+      "middle": "iin",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "ke",
+      "middle": "al",
+      "type": "WITHIN_STATE",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM"
+      ]
+    },
+    {
+      "prefix": "pch",
+      "middle": "k",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "CC"
+      ]
+    },
+    {
+      "prefix": "pch",
+      "middle": "l",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "FL_HAZ",
+        "FL_SAFE",
+        "FQ"
+      ]
+    },
+    {
+      "prefix": "pch",
+      "middle": "aiin",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "pch",
+      "middle": "r",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "FL_HAZ",
+        "FL_SAFE",
+        "FQ"
+      ]
+    },
+    {
+      "prefix": "pch",
+      "middle": "t",
+      "type": "WITHIN_STATE",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM"
+      ]
+    },
+    {
+      "prefix": "pch",
+      "middle": "iin",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "ka",
+      "middle": "k",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "CC"
+      ]
+    },
+    {
+      "prefix": "ka",
+      "middle": "e",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "FQ"
+      ]
+    },
+    {
+      "prefix": "ka",
+      "middle": "aiin",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "ka",
+      "middle": "ey",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "ka",
+      "middle": "ol",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "AXm"
+      ]
+    },
+    {
+      "prefix": "ka",
+      "middle": "ar",
+      "type": "CROSS_STATE",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXm"
+      ]
+    },
+    {
+      "prefix": "ka",
+      "middle": "eey",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "ka",
+      "middle": "dy",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "ka",
+      "middle": "t",
+      "type": "WITHIN_STATE",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM"
+      ]
+    },
+    {
+      "prefix": "ka",
+      "middle": "al",
+      "type": "WITHIN_STATE",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM"
+      ]
+    },
+    {
+      "prefix": "ta",
+      "middle": "k",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "CC"
+      ]
+    },
+    {
+      "prefix": "ta",
+      "middle": "edy",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "ta",
+      "middle": "e",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "FQ"
+      ]
+    },
+    {
+      "prefix": "ta",
+      "middle": "aiin",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "ta",
+      "middle": "ey",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "ta",
+      "middle": "ol",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "AXm"
+      ]
+    },
+    {
+      "prefix": "ta",
+      "middle": "ar",
+      "type": "CROSS_STATE",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXm"
+      ]
+    },
+    {
+      "prefix": "ta",
+      "middle": "eey",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "ta",
+      "middle": "dy",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "ta",
+      "middle": "t",
+      "type": "WITHIN_STATE",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM"
+      ]
+    },
+    {
+      "prefix": "ta",
+      "middle": "al",
+      "type": "WITHIN_STATE",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM"
+      ]
+    },
+    {
+      "prefix": "so",
+      "middle": "edy",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "so",
+      "middle": "ey",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "so",
+      "middle": "ol",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "AXm"
+      ]
+    },
+    {
+      "prefix": "so",
+      "middle": "eey",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "al",
+      "middle": "edy",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "al",
+      "middle": "l",
+      "type": "MIXED",
+      "prefix_home": "FL_SAFE",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "FL_HAZ",
+        "FL_SAFE",
+        "FQ"
+      ]
+    },
+    {
+      "prefix": "al",
+      "middle": "e",
+      "type": "CROSS_STATE",
+      "prefix_home": "FL_SAFE",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "FQ"
+      ]
+    },
+    {
+      "prefix": "al",
+      "middle": "ey",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "al",
+      "middle": "r",
+      "type": "MIXED",
+      "prefix_home": "FL_SAFE",
+      "middle_macros": [
+        "AXM",
+        "FL_HAZ",
+        "FL_SAFE",
+        "FQ"
+      ]
+    },
+    {
+      "prefix": "or",
+      "middle": "edy",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "or",
+      "middle": "l",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "AXm",
+        "FL_HAZ",
+        "FL_SAFE",
+        "FQ"
+      ]
+    },
+    {
+      "prefix": "or",
+      "middle": "ey",
+      "type": "UNMAPPED_MIDDLE"
+    },
+    {
+      "prefix": "or",
+      "middle": "r",
+      "type": "MIXED",
+      "prefix_home": "AXM",
+      "middle_macros": [
+        "AXM",
+        "FL_HAZ",
+        "FL_SAFE",
+        "FQ"
+      ]
+    }
+  ],
+  "t3_forbidden_coverage": {
+    "n_depleted": 18,
+    "n_backed": 7,
+    "forbidden_coverage": 0.3888888888888889,
+    "null_mean": 0.4622222222222222,
+    "null_std": 0.12033389760819786,
+    "z_score": -0.6094154248381747,
+    "p_perm": 0.786
+  },
+  "t3_details": [
+    {
+      "class_i": 11,
+      "class_j": 36,
+      "macro_i": "CC",
+      "macro_j": "AXM",
+      "forward_backed": false,
+      "forward_prefix": null,
+      "forward_middle": null,
+      "reverse_backed": false,
+      "reverse_prefix": null,
+      "reverse_middle": null,
+      "either_backed": false
+    },
+    {
+      "class_i": 13,
+      "class_j": 40,
+      "macro_i": "FQ",
+      "macro_j": "FL_SAFE",
+      "forward_backed": true,
+      "forward_prefix": "ot",
+      "forward_middle": "r",
+      "reverse_backed": true,
+      "reverse_prefix": "da",
+      "reverse_middle": "e",
+      "either_backed": true
+    },
+    {
+      "class_i": 9,
+      "class_j": 33,
+      "macro_i": "FQ",
+      "macro_j": "AXM",
+      "forward_backed": false,
+      "forward_prefix": null,
+      "forward_middle": null,
+      "reverse_backed": false,
+      "reverse_prefix": null,
+      "reverse_middle": null,
+      "either_backed": false
+    },
+    {
+      "class_i": 24,
+      "class_j": 30,
+      "macro_i": "AXM",
+      "macro_j": "FL_HAZ",
+      "forward_backed": false,
+      "forward_prefix": null,
+      "forward_middle": null,
+      "reverse_backed": false,
+      "reverse_prefix": null,
+      "reverse_middle": null,
+      "either_backed": false
+    },
+    {
+      "class_i": 14,
+      "class_j": 46,
+      "macro_i": "FQ",
+      "macro_j": "AXM",
+      "forward_backed": false,
+      "forward_prefix": null,
+      "forward_middle": null,
+      "reverse_backed": false,
+      "reverse_prefix": null,
+      "reverse_middle": null,
+      "either_backed": false
+    },
+    {
+      "class_i": 9,
+      "class_j": 27,
+      "macro_i": "FQ",
+      "macro_j": "AXM",
+      "forward_backed": false,
+      "forward_prefix": null,
+      "forward_middle": null,
+      "reverse_backed": false,
+      "reverse_prefix": null,
+      "reverse_middle": null,
+      "either_backed": false
+    },
+    {
+      "class_i": 9,
+      "class_j": 32,
+      "macro_i": "FQ",
+      "macro_j": "AXM",
+      "forward_backed": false,
+      "forward_prefix": null,
+      "forward_middle": null,
+      "reverse_backed": false,
+      "reverse_prefix": null,
+      "reverse_middle": null,
+      "either_backed": false
+    },
+    {
+      "class_i": 5,
+      "class_j": 34,
+      "macro_i": "AXm",
+      "macro_j": "AXM",
+      "forward_backed": true,
+      "forward_prefix": "ta",
+      "forward_middle": "e",
+      "reverse_backed": false,
+      "reverse_prefix": null,
+      "reverse_middle": null,
+      "either_backed": true
+    },
+    {
+      "class_i": 47,
+      "class_j": 11,
+      "macro_i": "AXM",
+      "macro_j": "CC",
+      "forward_backed": false,
+      "forward_prefix": null,
+      "forward_middle": null,
+      "reverse_backed": false,
+      "reverse_prefix": null,
+      "reverse_middle": null,
+      "either_backed": false
+    },
+    {
+      "class_i": 19,
+      "class_j": 33,
+      "macro_i": "AXm",
+      "macro_j": "AXM",
+      "forward_backed": true,
+      "forward_prefix": "ot",
+      "forward_middle": "k",
+      "reverse_backed": false,
+      "reverse_prefix": null,
+      "reverse_middle": null,
+      "either_backed": true
+    },
+    {
+      "class_i": 7,
+      "class_j": 32,
+      "macro_i": "FL_HAZ",
+      "macro_j": "AXM",
+      "forward_backed": false,
+      "forward_prefix": null,
+      "forward_middle": null,
+      "reverse_backed": false,
+      "reverse_prefix": null,
+      "reverse_middle": null,
+      "either_backed": false
+    },
+    {
+      "class_i": 11,
+      "class_j": 14,
+      "macro_i": "CC",
+      "macro_j": "FQ",
+      "forward_backed": false,
+      "forward_prefix": null,
+      "forward_middle": null,
+      "reverse_backed": false,
+      "reverse_prefix": null,
+      "reverse_middle": null,
+      "either_backed": false
+    },
+    {
+      "class_i": 3,
+      "class_j": 33,
+      "macro_i": "AXm",
+      "macro_j": "AXM",
+      "forward_backed": true,
+      "forward_prefix": "ot",
+      "forward_middle": "k",
+      "reverse_backed": false,
+      "reverse_prefix": null,
+      "reverse_middle": null,
+      "either_backed": true
+    },
+    {
+      "class_i": 33,
+      "class_j": 38,
+      "macro_i": "AXM",
+      "macro_j": "FL_SAFE",
+      "forward_backed": false,
+      "forward_prefix": null,
+      "forward_middle": null,
+      "reverse_backed": true,
+      "reverse_prefix": "da",
+      "reverse_middle": "t",
+      "either_backed": true
+    },
+    {
+      "class_i": 18,
+      "class_j": 28,
+      "macro_i": "AXm",
+      "macro_j": "AXM",
+      "forward_backed": false,
+      "forward_prefix": null,
+      "forward_middle": null,
+      "reverse_backed": false,
+      "reverse_prefix": null,
+      "reverse_middle": null,
+      "either_backed": false
+    },
+    {
+      "class_i": 7,
+      "class_j": 47,
+      "macro_i": "FL_HAZ",
+      "macro_j": "AXM",
+      "forward_backed": false,
+      "forward_prefix": null,
+      "forward_middle": null,
+      "reverse_backed": false,
+      "reverse_prefix": null,
+      "reverse_middle": null,
+      "either_backed": false
+    },
+    {
+      "class_i": 13,
+      "class_j": 5,
+      "macro_i": "FQ",
+      "macro_j": "AXm",
+      "forward_backed": false,
+      "forward_prefix": null,
+      "forward_middle": null,
+      "reverse_backed": true,
+      "reverse_prefix": "ta",
+      "reverse_middle": "e",
+      "either_backed": true
+    },
+    {
+      "class_i": 10,
+      "class_j": 28,
+      "macro_i": "CC",
+      "macro_j": "AXM",
+      "forward_backed": true,
+      "forward_prefix": "da",
+      "forward_middle": "e",
+      "reverse_backed": false,
+      "reverse_prefix": null,
+      "reverse_middle": null,
+      "either_backed": true
+    }
+  ],
+  "t4_positional_mediation": {
+    "mi_position_macro": 0.011316392142030883,
+    "mi_position_macro_given_prefix": 0.006801607920802157,
+    "mi_prefix_macro": 0.8763704984726648,
+    "mediation_fraction": 0.3989596829593858,
+    "mi_null_mean": 0.0006746306738895433,
+    "mi_null_std": 0.0002376697361637845,
+    "mi_z": 44.77541667655919,
+    "mi_p": 0.0,
+    "quartile_distributions": {
+      "Q1": {
+        "AXM": 3123,
+        "AXm": 144,
+        "CC": 240,
+        "FL_HAZ": 244,
+        "FL_SAFE": 10,
+        "FQ": 606
+      },
+      "Q2": {
+        "AXM": 2209,
+        "AXm": 71,
+        "CC": 145,
+        "FL_HAZ": 146,
+        "FL_SAFE": 6,
+        "FQ": 538
+      },
+      "Q3": {
+        "AXM": 2487,
+        "AXm": 107,
+        "CC": 136,
+        "FL_HAZ": 205,
+        "FL_SAFE": 19,
+        "FQ": 732
+      },
+      "Q4": {
+        "AXM": 3044,
+        "AXm": 166,
+        "CC": 214,
+        "FL_HAZ": 361,
+        "FL_SAFE": 87,
+        "FQ": 1014
+      }
+    }
+  },
+  "t5_synthesis": {
+    "predictions": {
+      "P1_selectivity": {
+        "value": 0.766728853768217,
+        "threshold": 0.1,
+        "pass": true
+      },
+      "P2_cross_state": {
+        "value": 0.23214285714285715,
+        "threshold": 0.6,
+        "pass": false
+      },
+      "P3_forbidden_coverage": {
+        "ratio": 0.8413461538461539,
+        "p": 0.786,
+        "pass": false
+      },
+      "P4_mediation": {
+        "mediation": 0.3989596829593858,
+        "mi_p": 0.0,
+        "pass": false
+      },
+      "P5_en_channeling": {
+        "value": 1.0,
+        "threshold": 0.9,
+        "pass": true
+      },
+      "P6_fl_cc_enrichment": {
+        "enrichment": 2.1407567166428962,
+        "threshold": 2.0,
+        "pass": true
+      }
+    },
+    "n_pass": 3,
+    "n_total": 6,
+    "verdict": "PARTIAL_ENFORCEMENT"
+  },
+  "elapsed_seconds": 51.0
+}
