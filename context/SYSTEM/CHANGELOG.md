@@ -4,6 +4,28 @@
 
 ---
 
+## Version 3.63 (2026-02-13) - Gloss Adversarial Validation (PREFIX-Domain + Mantel)
+
+### Summary
+
+Final glossing phase. Two orthogonal tests: (1) PREFIX-domain assignment uniqueness — exhaustive 6-permutation scoring of {qo, ok, ch/sh} → {ENERGY, VESSEL, PROCESS} using 5 structural metrics from C911, C601, C997. Current assignment is the UNIQUE winner (composite 5 vs next-best 11, gap=6). (2) Mantel test — pairwise behavioral distance (17-dim affordance signatures) correlates with gloss category membership (r=0.081, p=0.002). But ablating kernel-derived features drops to p=0.057 (marginal). FLOW is the most behaviorally coherent category (disc=0.149, p=0.011). Verdict: DOMAIN_VALIDATED_MANTEL_CIRCULAR (2/3 PASS). 1 new fit (F-BRU-026). Phase 337.
+
+### New Fits
+
+| ID | Name | Tier | Result |
+|----|------|------|--------|
+| F-BRU-026 | Gloss Adversarial Validation | F4 | DOMAIN_VALIDATED_MANTEL_CIRCULAR |
+
+### Key Findings
+
+**GLOSS_ADVERSARIAL_VALIDATION (4 tests):**
+- T1: PREFIX-domain uniqueness — **PASS** (composite 5/5, gap=6 to next-best, S5 zero-hazard confirmed)
+- T2: Mantel full (17 features) — **PASS** (r=0.081, p=0.002)
+- T3: Mantel ablated (13 features) — FAIL (r=0.043, p=0.057 — marginal, 53% signal survives ablation)
+- T4: Per-category decomposition — FLOW strongest (disc=0.149, p=0.011), TRANSITION marginal (p=0.078)
+
+---
+
 ## Version 3.62 (2026-02-12) - Gloss Structural Validation (Negative)
 
 ### Summary

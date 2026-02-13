@@ -6,13 +6,13 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 
 ## Project Status
 
-**Analysis: CLOSED** | **Structural inspection: FROZEN** | **Version: 3.62**
+**Analysis: CLOSED** | **Structural inspection: FROZEN** | **Version: 3.63**
 
 | Metric | Value |
 |--------|-------|
 | Validated constraints | 879 |
-| Research phases completed | 336 |
-| Model fits tested | 60 |
+| Research phases completed | 337 |
+| Model fits tested | 61 |
 | Constraint tiers | 0 (frozen fact) through 4 (exploratory) |
 
 ## Core Finding
@@ -137,7 +137,7 @@ voynich/
     SPECULATIVE/      # Tier 3-4 interpretations
   data/               # Transcript, dictionaries, Brunschwig recipes
   scripts/            # voynich.py core library + analysis tools
-  phases/             # 336 completed research phases
+  phases/             # 337 completed research phases
   results/            # Analysis outputs (JSON)
   folio_analysis/     # Per-folio hazard maps
   annotation_data/    # Folio annotation work
