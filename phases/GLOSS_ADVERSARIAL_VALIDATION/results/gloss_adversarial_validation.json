@@ -1,0 +1,335 @@
+{
+  "phase": 337,
+  "title": "GLOSS_ADVERSARIAL_VALIDATION",
+  "tests": {
+    "t1_prefix_domain_uniqueness": {
+      "pass": true,
+      "assignments": [
+        {
+          "qo": "ENERGY",
+          "ok": "VESSEL",
+          "chsh": "PROCESS",
+          "S1_value": 4.6532,
+          "S1_rank": 1,
+          "S2_value": 2.967,
+          "S2_rank": 1,
+          "S3_value": 0.0,
+          "S3_rank": 1,
+          "S4_value": 0.4091,
+          "S4_rank": 1,
+          "S5_value": true,
+          "S5_rank": 1,
+          "composite": 5
+        },
+        {
+          "qo": "ENERGY",
+          "ok": "PROCESS",
+          "chsh": "VESSEL",
+          "S1_value": 4.6532,
+          "S1_rank": 2,
+          "S2_value": 1.1112,
+          "S2_rank": 3,
+          "S3_value": 0.0,
+          "S3_rank": 2,
+          "S4_value": 0.4091,
+          "S4_rank": 2,
+          "S5_value": true,
+          "S5_rank": 2,
+          "composite": 11
+        },
+        {
+          "qo": "VESSEL",
+          "ok": "ENERGY",
+          "chsh": "PROCESS",
+          "S1_value": 0.0,
+          "S1_rank": 5,
+          "S2_value": 1.0,
+          "S2_rank": 5,
+          "S3_value": 0.0,
+          "S3_rank": 3,
+          "S4_value": 0.0909,
+          "S4_rank": 3,
+          "S5_value": true,
+          "S5_rank": 3,
+          "composite": 19
+        },
+        {
+          "qo": "VESSEL",
+          "ok": "PROCESS",
+          "chsh": "ENERGY",
+          "S1_value": 1.0,
+          "S1_rank": 3,
+          "S2_value": 1.0,
+          "S2_rank": 6,
+          "S3_value": 0.529412,
+          "S3_rank": 5,
+          "S4_value": 0.0909,
+          "S4_rank": 4,
+          "S5_value": false,
+          "S5_rank": 5,
+          "composite": 23
+        },
+        {
+          "qo": "PROCESS",
+          "ok": "ENERGY",
+          "chsh": "VESSEL",
+          "S1_value": 0.0,
+          "S1_rank": 6,
+          "S2_value": 1.1112,
+          "S2_rank": 4,
+          "S3_value": 0.0,
+          "S3_rank": 4,
+          "S4_value": 0.0909,
+          "S4_rank": 5,
+          "S5_value": true,
+          "S5_rank": 4,
+          "composite": 23
+        },
+        {
+          "qo": "PROCESS",
+          "ok": "VESSEL",
+          "chsh": "ENERGY",
+          "S1_value": 1.0,
+          "S1_rank": 4,
+          "S2_value": 2.967,
+          "S2_rank": 2,
+          "S3_value": 0.529412,
+          "S3_rank": 6,
+          "S4_value": 0.0909,
+          "S4_rank": 6,
+          "S5_value": false,
+          "S5_rank": 6,
+          "composite": 24
+        }
+      ],
+      "current_assignment_is_winner": true,
+      "gap_to_next": 6,
+      "s5_current_zero_hazard": true,
+      "s5_true_count": 4,
+      "source_prefix_distribution": {
+        "sh": 5,
+        "ch": 4,
+        "(none)": 8
+      },
+      "threshold": "unique maximum, gap >= 2, current has S5, current assignment wins"
+    },
+    "t2_mantel_full": {
+      "pass": true,
+      "mantel_r": 0.080836,
+      "p_value": 0.0024,
+      "n_eligible": 49,
+      "n_features": 17,
+      "n_permutations": 10000,
+      "eligible_middles": [
+        "k",
+        "edy",
+        "ey",
+        "e",
+        "l",
+        "aiin",
+        "ol",
+        "r",
+        "ar",
+        "dy",
+        "eey",
+        "t",
+        "iin",
+        "al",
+        "y",
+        "or",
+        "ke",
+        "ain",
+        "ed",
+        "o",
+        "eo",
+        "d",
+        "eol",
+        "in",
+        "ck",
+        "od",
+        "am",
+        "ai",
+        "ek",
+        "ee",
+        "kch",
+        "s",
+        "i",
+        "eeo",
+        "ckh",
+        "opch",
+        "ct",
+        "eck",
+        "eed",
+        "te",
+        "eod",
+        "pch",
+        "m",
+        "lch",
+        "ok",
+        "tch",
+        "a",
+        "et",
+        "lk"
+      ],
+      "category_distribution": {
+        "THERMAL": 6,
+        "STAGING": 7,
+        "OPERATION": 7,
+        "FLOW": 8,
+        "CONTAINMENT": 6,
+        "TRANSITION": 5,
+        "OTHER": 1,
+        "STRUCTURAL": 6,
+        "MONITORING": 3
+      },
+      "threshold": "r > 0, p < 0.05"
+    },
+    "t3_mantel_ablated": {
+      "pass": false,
+      "mantel_r": 0.043062,
+      "p_value": 0.0567,
+      "n_eligible": 49,
+      "n_features": 13,
+      "n_permutations": 10000,
+      "ablated_features": [
+        "k_ratio",
+        "e_ratio",
+        "h_ratio",
+        "qo_affinity"
+      ],
+      "threshold": "r > 0, p < 0.05"
+    },
+    "t4_category_decomposition": {
+      "per_category": {
+        "THERMAL": {
+          "n_members": 6,
+          "mean_within_dist": 6.0522,
+          "mean_between_dist": 6.0359,
+          "discriminability": -0.0027,
+          "p_value": 0.474
+        },
+        "STAGING": {
+          "n_members": 7,
+          "mean_within_dist": 5.7348,
+          "mean_between_dist": 5.8383,
+          "discriminability": 0.0177,
+          "p_value": 0.346
+        },
+        "OPERATION": {
+          "n_members": 7,
+          "mean_within_dist": 5.8408,
+          "mean_between_dist": 5.9003,
+          "discriminability": 0.0101,
+          "p_value": 0.435
+        },
+        "FLOW": {
+          "n_members": 8,
+          "mean_within_dist": 4.4796,
+          "mean_between_dist": 5.2625,
+          "discriminability": 0.1488,
+          "p_value": 0.011
+        },
+        "CONTAINMENT": {
+          "n_members": 6,
+          "mean_within_dist": 5.5415,
+          "mean_between_dist": 5.862,
+          "discriminability": 0.0547,
+          "p_value": 0.23
+        },
+        "TRANSITION": {
+          "n_members": 5,
+          "mean_within_dist": 5.1381,
+          "mean_between_dist": 5.8809,
+          "discriminability": 0.1263,
+          "p_value": 0.078
+        },
+        "STRUCTURAL": {
+          "n_members": 6,
+          "mean_within_dist": 5.1452,
+          "mean_between_dist": 5.6997,
+          "discriminability": 0.0973,
+          "p_value": 0.106
+        },
+        "MONITORING": {
+          "n_members": 3,
+          "mean_within_dist": 5.4479,
+          "mean_between_dist": 5.3103,
+          "discriminability": -0.0259,
+          "p_value": 0.566
+        }
+      },
+      "n_permutations": 1000
+    }
+  },
+  "synthesis": {
+    "verdict": "DOMAIN_VALIDATED_MANTEL_CIRCULAR",
+    "t1_pass": true,
+    "t2_pass": true,
+    "t3_pass": false
+  },
+  "metadata": {
+    "n_glossed_middles": 90,
+    "n_top49": 49,
+    "n_top49_eligible_full": 49,
+    "n_top49_eligible_ablated": 49,
+    "prefix_families": {
+      "qo": [
+        "qo"
+      ],
+      "ok": [
+        "ok"
+      ],
+      "chsh": [
+        "ch",
+        "sh"
+      ]
+    },
+    "n_buffer_tokens": 22,
+    "buffer_prefix_distribution": {
+      "qo": 9,
+      "da": 4,
+      "(none)": 1,
+      "ch": 2,
+      "lch": 1,
+      "ok": 2,
+      "lk": 1,
+      "to": 1,
+      "ke": 1
+    },
+    "n_forbidden_pairs": 17,
+    "feature_list_full": [
+      "radial_depth",
+      "compat_degree",
+      "token_frequency",
+      "length",
+      "k_ratio",
+      "e_ratio",
+      "h_ratio",
+      "is_compound",
+      "qo_affinity",
+      "regime_1_enrichment",
+      "regime_2_enrichment",
+      "regime_3_enrichment",
+      "regime_4_enrichment",
+      "regime_entropy",
+      "initial_rate",
+      "final_rate",
+      "folio_spread"
+    ],
+    "feature_list_ablated": [
+      "radial_depth",
+      "compat_degree",
+      "token_frequency",
+      "length",
+      "is_compound",
+      "regime_1_enrichment",
+      "regime_2_enrichment",
+      "regime_3_enrichment",
+      "regime_4_enrichment",
+      "regime_entropy",
+      "initial_rate",
+      "final_rate",
+      "folio_spread"
+    ]
+  }
+}
