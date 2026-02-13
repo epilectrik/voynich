@@ -49,15 +49,15 @@ The manuscript comprises four structurally distinct systems that form a layered 
 
 Every Currier B token decomposes as: **[ARTICULATOR] + [PREFIX] + MIDDLE + [SUFFIX]**
 
-- **PREFIX** encodes the operational domain AND line position (test, monitor, energy, vessel, scaffold...)
-- **MIDDLE** encodes the core action (apply heat, check hazards, let settle...)
-- **SUFFIX** encodes control flow (checkpoint, iterate, thorough, close, transfer...)
+- **PREFIX** encodes the operational domain AND line position (e.g. energy operations, monitoring, scaffold support — Tier 3 glosses grounded in Tier 2 structural differentiation; C911, C661)
+- **MIDDLE** encodes the core action (e.g. apply heat, check hazards, let settle — Tier 3 glosses grounded in Tier 2 behavioral profiles; C267, C506.b)
+- **SUFFIX** encodes role-dependent and positional markers (line-final clustering, role selectivity — but carries zero unique cross-token prediction beyond MIDDLE class; C1002, C1004)
 
 This compositional structure was derived statistically from distributional analysis of the transcript.
 
 ## Brunschwig Connection
 
-The strongest external validation comes from systematic comparison with Brunschwig's distillation manual (1500):
+The strongest external corroboration comes from systematic comparison with Brunschwig's distillation manual (1500):
 
 | Test Suite | Score |
 |------------|-------|
@@ -137,7 +137,7 @@ voynich/
     SPECULATIVE/      # Tier 3-4 interpretations
   data/               # Transcript, dictionaries, Brunschwig recipes
   scripts/            # voynich.py core library + analysis tools
-  phases/             # 327 completed research phases
+  phases/             # 328 completed research phases
   results/            # Analysis outputs (JSON)
   folio_analysis/     # Per-folio hazard maps
   annotation_data/    # Folio annotation work
