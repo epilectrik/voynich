@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 879 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 881 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -75,6 +75,16 @@ The 49 instruction classes further compress into just 6 macro states — the coa
 
 This compression preserves all structural invariants — role families, depletion separation, and hazard topology are intact at 6 states. Fine-grained depletion asymmetry (a 49-class-level phenomenon) is not captured. The macro grammar reveals that the majority of the manuscript is scaffold (structural support), with only a small fraction devoted to hazard exposure or active control changes. A researcher scanning a folio can immediately classify every token into one of these six categories to see the macro structure of the program.
 
+### How the Macro States Flow
+
+The 6 states don't just classify tokens — they form a dynamic system with well-defined transition behavior. AXM is a massive attractor: 70% of the time, an AXM token is followed by another AXM token, and every other state returns to AXM as its dominant exit. FL_SAFE is the opposite — a fleeting excursion lasting barely one token before snapping back. CC (control change) is a pure initiator that fires once and immediately hands off. The whole system is ergodic, meaning every state can reach every other state, and transitions mix almost instantly.
+
+### Folio-Level Dynamical Profiles
+
+When you zoom into individual folios, each program tunes its own version of these macro dynamics. The 72 folios with enough data cluster into 6 dynamical archetypes — ranging from "strong attractor" programs (where AXM dominates with 82% self-transition and the system rarely leaves its home state) to "active interchange" programs (where AXM self-transition drops to 47% and the system spends much more time cycling through FQ operations and hazard states).
+
+These archetypes are almost completely unrelated to the 4 REGIMEs that classify programs by aggregate behavior. REGIMEs describe *what* a program does overall; archetypes describe *how* its macro-automaton behaves moment to moment. REGIME and section membership together explain only about a third of the variation between folio transition profiles — the remaining two-thirds is program-specific tuning. Each folio individually configures its position within the shared 6-state topology.
+
 ### The Kernel: Three Core Operators
 
 At the center of the grammar sit three irreducible operators, designated **k**, **h**, and **e**:
@@ -119,6 +129,8 @@ When the system drifts toward a hazard, the grammar provides escape routes. The 
 - **Recovery strategy is locally variable** — each program can recover in its own way
 
 This means the manuscript clamps risk uniformly while leaving operators free to adapt their recovery approach to local conditions. Recovery paths converge on the **e** operator (stable state) in 54.7% of cases.
+
+At the macro-state level, the forgiveness mechanism has a concrete realization: forgiving programs have a strong AXM attractor — the system stays in AXM longer, leaves less often, and returns faster when it does leave. Brittle programs have a weaker attractor and spend more time cycling through FQ interchange operations. The "design freedom" in recovery is specifically the freedom to tune how strong the AXM attractor is — how readily the system leaves and returns to its dominant operational state.
 
 ### What B Cannot Tell You
 
@@ -261,6 +273,8 @@ The four layers are independent systems that share vocabulary but serve differen
 **A and B share types but not structure.** Both use the same morphological system (PREFIX + MIDDLE + SUFFIX) and the same kernel-heavy/kernel-light dichotomy. But A has no sequential grammar, no forbidden transitions, and no line structure. They're aligned through shared vocabulary, not through functional coupling.
 
 **AZC and B share vocabulary but not organization.** AZC classifies tokens by operational character in positional diagrams. B deploys the same tokens in sequential control programs. The 69.7% vocabulary overlap reflects shared domain, not causal connection — AZC position has zero independent effect on B behavior after controlling for MIDDLE.
+
+**The bridge backbone connects A's vocabulary geometry to B's execution dynamics.** Of the 972 MIDDLEs in Currier A's discrimination space, 85 are "bridge" MIDDLEs that also appear in Currier B. These bridges carry nearly all of the information that connects vocabulary structure (which MIDDLEs a folio uses) to dynamical behavior (how that folio's macro-automaton operates). Non-bridge MIDDLEs contribute almost nothing to predicting a folio's dynamical profile. The bridge backbone is where vocabulary geometry and execution topology overlap — it's the concrete mechanism through which A's discrimination index constrains B's behavioral space.
 
 **The only structural element that transfers perfectly across all systems** is the morphological type dichotomy: kernel-heavy prefixes (ch, sh, ok) make ~100% kernel character contact and avoid LINK positions; kernel-light prefixes (da, sa) make less than 5% kernel contact and cluster near LINK positions. This division reflects control-flow participation and is universal across all four systems.
 

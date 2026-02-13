@@ -3,8 +3,8 @@
 meta:
   name: "Currier A Structural Contract"
   acronym: "CASC"
-  version: "1.7"
-  date: "2026-02-12"
+  version: "1.8"
+  date: "2026-02-13"
   status: "LOCKED"
   derived_from: "Tier-2 constraints only"
   governance: |
@@ -430,6 +430,7 @@ participation:
       - "survivor-set collapse (C481)"
       - "bridge MIDDLE topological selection (C1013)"
       - "geometric viability alignment via bridge backbone (C1014)"
+      - "bridge conduit mediation — bridge MIDDLEs carry 3.8x more archetype-predictive information than non-bridges in B folio dynamical behavior (C1016)"
       - "multi-dimensional PP convergence at RECORD level"
     section_distribution:
       H_in_B: "91.6% (76/83 folios)"
@@ -482,8 +483,16 @@ participation:
           class_propagation_r: 0.622
           bridge_signal_share: "91% (r=0.905 vs non-bridge r=0.194)"
           provenance: "C1014"
+        bridge_density_dynamics:
+          mean_folio_bridge_density: 0.727  # 72.7% of manifold MIDDLEs per folio are bridges
+          bridge_archetype_ari: 0.141  # bridge-only manifold features predict B dynamical archetypes
+          nonbridge_archetype_ari: 0.037  # non-bridge features carry essentially no archetype information
+          bridge_advantage: "3.8x"  # bridge/non-bridge ARI ratio
+          bridge_density_vs_axm_self: { rho: -0.308, p: 0.009 }  # more bridges = weaker attractor = more dynamical options
+          interpretation: "Bridge backbone is the geometry→dynamics conduit — the A-derived vocabulary that directly shapes B's macro-state behavior at folio level"
+          provenance: "C1016"
 
-    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014"
+    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016"
 
 # ============================================================
 positional:
@@ -656,6 +665,7 @@ provenance:
     - "C899"  # A-B within-line positional correspondence
     - "C1013"  # Bridge MIDDLE topological selection (freq AUC=0.978)
     - "C1014"  # Manifold viability alignment (r=0.914, bridge-mediated)
+    - "C1016"  # Bridge conduit: bridge MIDDLEs carry 3.8x more B dynamical archetype info than non-bridges
 
   positional:
     - "C260"  # Section isolation

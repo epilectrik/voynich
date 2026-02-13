@@ -10,16 +10,16 @@
   "t1_centroid_correlation": {
     "n_records": 1528,
     "n_pairs": 1166628,
-    "pearson_r": 0.9046694599013938,
+    "pearson_r": 0.9046694597767608,
     "pearson_p": 0.0,
     "spearman_r": 0.9143425094066089,
     "spearman_p": 0.0,
     "mantel": {
       "observed_r": -0.9143425094066089,
-      "p_value": 0.000999000999000999,
-      "null_mean": -0.0006917685538239114,
-      "null_std": 0.008899894468393316,
-      "z_score": -102.65860388541493
+      "p_value": 1.0,
+      "null_mean": -0.0006917685538239109,
+      "null_std": 0.008899894468393317,
+      "z_score": -102.65860388541492
     }
   },
   "t2_hub_control": {
@@ -40,10 +40,10 @@
     "spearman_p": 0.0,
     "mantel": {
       "observed_r": -0.62163602936031,
-      "p_value": 0.000999000999000999,
-      "null_mean": -0.0007571329812402554,
-      "null_std": 0.012005408712690326,
-      "z_score": -51.716598013257915
+      "p_value": 1.0,
+      "null_mean": -0.0007571329812402536,
+      "null_std": 0.01200540871269032,
+      "z_score": -51.71659801325794
     },
     "middle_class_jaccard_r": 0.6984723721121736
   },
@@ -51,7 +51,7 @@
     "n_bridge_records": 1447,
     "n_nonbridge_records": 605,
     "n_both": 562,
-    "bridge_r": -0.9050397502063536,
+    "bridge_r": -0.9050397483150057,
     "bridge_p": 0.0,
     "nonbridge_r": -0.19347716777121807,
     "nonbridge_p": 0.0,
@@ -60,8 +60,8 @@
   "t6_synthesis": {
     "predictions": {
       "P1_mantel_significant": {
-        "pass": true,
-        "p": 0.000999000999000999
+        "pass": false,
+        "p": 1.0
       },
       "P2_residual_persists": {
         "pass": true,
@@ -72,8 +72,8 @@
         "retention": 1.0014732804948518
       },
       "P4_class_level": {
-        "pass": true,
-        "p": 0.000999000999000999
+        "pass": false,
+        "p": 1.0
       },
       "P5_nonbridge_signal": {
         "pass": false,
@@ -84,8 +84,8 @@
         "ratio": 1.031135471545507
       }
     },
-    "n_pass": 4,
-    "verdict": "PARTIAL_ALIGNMENT"
+    "n_pass": 2,
+    "verdict": "ORTHOGONAL_SYSTEMS"
   },
-  "elapsed_seconds": 957.4
+  "elapsed_seconds": 6861.7
 }

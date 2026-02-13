@@ -1,0 +1,701 @@
+{
+  "t1_folio_census": {
+    "n_folios": 82,
+    "n_sufficient": 72,
+    "n_total_transitions": 13645,
+    "n_total_tokens": 16054,
+    "transition_quantiles": {
+      "min": 37,
+      "q1": 66,
+      "median": 177,
+      "q3": 239,
+      "max": 382
+    },
+    "n_low_n": 10,
+    "state_occupancy_stats": {
+      "AXM": {
+        "mean": 0.6487,
+        "std": 0.104,
+        "cv": 0.16
+      },
+      "AXm": {
+        "mean": 0.0337,
+        "std": 0.0247,
+        "cv": 0.733
+      },
+      "FL_HAZ": {
+        "mean": 0.063,
+        "std": 0.0314,
+        "cv": 0.498
+      },
+      "FQ": {
+        "mean": 0.1973,
+        "std": 0.0783,
+        "cv": 0.397
+      },
+      "CC": {
+        "mean": 0.0486,
+        "std": 0.0267,
+        "cv": 0.55
+      },
+      "FL_SAFE": {
+        "mean": 0.0087,
+        "std": 0.009,
+        "cv": 1.04
+      }
+    },
+    "mean_sparsity": 0.502,
+    "pass": true
+  },
+  "t2_archetype_discovery": {
+    "n_folios_used": 72,
+    "feature_names": [
+      "AXM_self",
+      "AXM_to_FQ",
+      "FQ_to_AXM",
+      "FL_HAZ_occ",
+      "FL_SAFE_occ",
+      "CC_occ"
+    ],
+    "silhouette_scores": {
+      "2": 0.1509,
+      "3": 0.17,
+      "4": 0.1622,
+      "5": 0.1691,
+      "6": 0.1846,
+      "7": 0.1825,
+      "8": 0.1464
+    },
+    "best_k": 6,
+    "best_silhouette": 0.1846,
+    "ari_regime": 0.0654,
+    "ari_section": 0.185,
+    "archetype_sizes": {
+      "1": 10,
+      "2": 13,
+      "3": 7,
+      "4": 5,
+      "5": 7,
+      "6": 30
+    },
+    "folio_labels": {
+      "f103r": 6,
+      "f103v": 2,
+      "f104r": 6,
+      "f104v": 6,
+      "f105r": 6,
+      "f105v": 5,
+      "f106r": 6,
+      "f106v": 6,
+      "f107r": 6,
+      "f107v": 6,
+      "f108r": 6,
+      "f108v": 2,
+      "f111r": 6,
+      "f111v": 6,
+      "f112r": 6,
+      "f112v": 6,
+      "f113r": 6,
+      "f113v": 6,
+      "f114r": 2,
+      "f114v": 3,
+      "f115r": 6,
+      "f115v": 1,
+      "f116r": 6,
+      "f31r": 4,
+      "f31v": 5,
+      "f33v": 5,
+      "f34r": 6,
+      "f34v": 6,
+      "f39r": 6,
+      "f39v": 6,
+      "f40r": 5,
+      "f40v": 3,
+      "f43r": 6,
+      "f43v": 3,
+      "f46r": 2,
+      "f46v": 4,
+      "f48v": 3,
+      "f50v": 6,
+      "f55r": 5,
+      "f55v": 4,
+      "f66r": 3,
+      "f66v": 6,
+      "f75r": 6,
+      "f75v": 2,
+      "f76r": 6,
+      "f76v": 6,
+      "f77r": 1,
+      "f77v": 1,
+      "f78r": 2,
+      "f78v": 2,
+      "f79r": 2,
+      "f79v": 2,
+      "f80r": 1,
+      "f80v": 1,
+      "f81r": 2,
+      "f81v": 2,
+      "f82r": 1,
+      "f82v": 1,
+      "f83r": 1,
+      "f83v": 1,
+      "f84r": 2,
+      "f84v": 2,
+      "f85r1": 5,
+      "f85r2": 4,
+      "f86v3": 3,
+      "f86v4": 5,
+      "f86v5": 6,
+      "f86v6": 6,
+      "f94v": 4,
+      "f95r1": 1,
+      "f95r2": 3,
+      "f95v1": 6
+    },
+    "pass": true
+  },
+  "t3_c458_realization": {
+    "n_folios_used": 72,
+    "hazard_cv": 1.8139,
+    "recovery_cv": 0.2894,
+    "initiator_cv": 2.1978,
+    "hazard_details": [
+      {
+        "from": "FL_HAZ",
+        "to": "CC",
+        "mean": 0.0457,
+        "std": 0.0828,
+        "cv": 1.812
+      },
+      {
+        "from": "AXm",
+        "to": "FL_HAZ",
+        "mean": 0.0625,
+        "std": 0.1478,
+        "cv": 2.365
+      },
+      {
+        "from": "FL_HAZ",
+        "to": "AXm",
+        "mean": 0.0209,
+        "std": 0.0442,
+        "cv": 2.112
+      },
+      {
+        "from": "FL_HAZ",
+        "to": "AXM",
+        "mean": 0.5598,
+        "std": 0.2427,
+        "cv": 0.433
+      },
+      {
+        "from": "CC",
+        "to": "FL_HAZ",
+        "mean": 0.0685,
+        "std": 0.1088,
+        "cv": 1.589
+      },
+      {
+        "from": "FL_HAZ",
+        "to": "FQ",
+        "mean": 0.2491,
+        "std": 0.2168,
+        "cv": 0.87
+      },
+      {
+        "from": "AXM",
+        "to": "FL_HAZ",
+        "mean": 0.0587,
+        "std": 0.0393,
+        "cv": 0.669
+      },
+      {
+        "from": "FL_HAZ",
+        "to": "FL_HAZ",
+        "mean": 0.0889,
+        "std": 0.106,
+        "cv": 1.192
+      },
+      {
+        "from": "FQ",
+        "to": "FL_HAZ",
+        "mean": 0.077,
+        "std": 0.0625,
+        "cv": 0.812
+      },
+      {
+        "from": "FL_HAZ",
+        "to": "FL_SAFE",
+        "mean": 0.0216,
+        "std": 0.061,
+        "cv": 2.823
+      },
+      {
+        "from": "FL_SAFE",
+        "to": "FL_HAZ",
+        "mean": 0.0136,
+        "std": 0.0715,
+        "cv": 5.275
+      }
+    ],
+    "recovery_details": [
+      {
+        "from": "AXM",
+        "to": "AXM",
+        "mean": 0.6607,
+        "std": 0.1147,
+        "cv": 0.174
+      },
+      {
+        "from": "AXM",
+        "to": "FQ",
+        "mean": 0.1927,
+        "std": 0.0862,
+        "cv": 0.447
+      },
+      {
+        "from": "FQ",
+        "to": "AXM",
+        "mean": 0.6063,
+        "std": 0.1498,
+        "cv": 0.247
+      }
+    ],
+    "initiator_details": [
+      {
+        "from": "CC",
+        "to": "CC",
+        "mean": 0.0354,
+        "std": 0.0744,
+        "cv": 2.1
+      },
+      {
+        "from": "FL_HAZ",
+        "to": "CC",
+        "mean": 0.0457,
+        "std": 0.0828,
+        "cv": 1.812
+      },
+      {
+        "from": "CC",
+        "to": "AXM",
+        "mean": 0.6582,
+        "std": 0.2317,
+        "cv": 0.352
+      },
+      {
+        "from": "AXM",
+        "to": "CC",
+        "mean": 0.0458,
+        "std": 0.0323,
+        "cv": 0.706
+      },
+      {
+        "from": "FQ",
+        "to": "CC",
+        "mean": 0.0443,
+        "std": 0.0455,
+        "cv": 1.027
+      },
+      {
+        "from": "CC",
+        "to": "FQ",
+        "mean": 0.1967,
+        "std": 0.2007,
+        "cv": 1.021
+      },
+      {
+        "from": "FL_SAFE",
+        "to": "CC",
+        "mean": 0.0274,
+        "std": 0.1358,
+        "cv": 4.947
+      },
+      {
+        "from": "CC",
+        "to": "FL_HAZ",
+        "mean": 0.0685,
+        "std": 0.1088,
+        "cv": 1.589
+      },
+      {
+        "from": "AXm",
+        "to": "CC",
+        "mean": 0.0523,
+        "std": 0.1794,
+        "cv": 3.433
+      },
+      {
+        "from": "CC",
+        "to": "FL_SAFE",
+        "mean": 0.009,
+        "std": 0.0429,
+        "cv": 4.783
+      },
+      {
+        "from": "CC",
+        "to": "AXm",
+        "mean": 0.0322,
+        "std": 0.0775,
+        "cv": 2.406
+      }
+    ],
+    "recovery_hazard_ratio": 0.16,
+    "pass": "False"
+  },
+  "t4_forgiveness_decomposition": {
+    "n_folios_used": 72,
+    "n_features": 42,
+    "bonferroni_threshold": 0.0002381,
+    "n_significant": 6,
+    "top_correlations": [
+      {
+        "feature": "occ_AXM",
+        "rho": 0.6776,
+        "p_value": 0.0,
+        "abs_rho": 0.6775676892404657
+      },
+      {
+        "feature": "AXM->AXM",
+        "rho": 0.6512,
+        "p_value": 0.0,
+        "abs_rho": 0.6511725125018485
+      },
+      {
+        "feature": "occ_FQ",
+        "rho": -0.563,
+        "p_value": 0.0,
+        "abs_rho": 0.5630471658099317
+      },
+      {
+        "feature": "FQ->AXM",
+        "rho": 0.5592,
+        "p_value": 0.0,
+        "abs_rho": 0.5591972095028356
+      },
+      {
+        "feature": "AXM->FQ",
+        "rho": -0.5219,
+        "p_value": 3e-06,
+        "abs_rho": 0.5218509826797022
+      },
+      {
+        "feature": "FQ->FQ",
+        "rho": -0.4527,
+        "p_value": 6.5e-05,
+        "abs_rho": 0.4527082232594885
+      },
+      {
+        "feature": "AXM->FL_HAZ",
+        "rho": -0.3834,
+        "p_value": 0.000887,
+        "abs_rho": 0.3833896142622062
+      },
+      {
+        "feature": "occ_FL_HAZ",
+        "rho": -0.3781,
+        "p_value": 0.001056,
+        "abs_rho": 0.37814632892669076
+      },
+      {
+        "feature": "AXM->AXm",
+        "rho": -0.3521,
+        "p_value": 0.002421,
+        "abs_rho": 0.35208980715713517
+      },
+      {
+        "feature": "occ_AXm",
+        "rho": -0.3264,
+        "p_value": 0.00514,
+        "abs_rho": 0.32639017293302536
+      },
+      {
+        "feature": "AXm->AXM",
+        "rho": 0.304,
+        "p_value": 0.009426,
+        "abs_rho": 0.30400814332907444
+      },
+      {
+        "feature": "CC->AXM",
+        "rho": 0.269,
+        "p_value": 0.022295,
+        "abs_rho": 0.2690469244505811
+      },
+      {
+        "feature": "CC->FQ",
+        "rho": -0.2689,
+        "p_value": 0.022394,
+        "abs_rho": 0.2688558389631189
+      },
+      {
+        "feature": "FQ->FL_HAZ",
+        "rho": -0.2435,
+        "p_value": 0.039311,
+        "abs_rho": 0.2434742556720426
+      },
+      {
+        "feature": "occ_FL_SAFE",
+        "rho": -0.2434,
+        "p_value": 0.039391,
+        "abs_rho": 0.24337904703394192
+      }
+    ],
+    "pass": true
+  },
+  "t5_restart_signature": {
+    "restart_profiles": {
+      "f50v": {
+        "regime": "REGIME_4",
+        "n_tokens": 69,
+        "n_transitions": 58,
+        "state_dist": {
+          "AXM": 0.6087,
+          "AXm": 0.0145,
+          "FL_HAZ": 0.029,
+          "FQ": 0.3043,
+          "CC": 0.0435,
+          "FL_SAFE": 0.0
+        },
+        "z_scores": {
+          "AXM": 0.44,
+          "AXm": -0.99,
+          "FL_HAZ": -1.48,
+          "FQ": 0.91,
+          "CC": -0.32,
+          "FL_SAFE": -0.92
+        }
+      },
+      "f57r": {
+        "regime": "REGIME_4",
+        "n_tokens": 48,
+        "n_transitions": 37,
+        "state_dist": {
+          "AXM": 0.7083,
+          "AXm": 0.0833,
+          "FL_HAZ": 0.0417,
+          "FQ": 0.1042,
+          "CC": 0.0417,
+          "FL_SAFE": 0.0208
+        },
+        "z_scores": {
+          "AXM": 1.63,
+          "AXm": 1.22,
+          "FL_HAZ": -1.08,
+          "FQ": -2.06,
+          "CC": -0.38,
+          "FL_SAFE": 0.89
+        }
+      },
+      "f82v": {
+        "regime": "REGIME_1",
+        "n_tokens": 225,
+        "n_transitions": 191,
+        "state_dist": {
+          "AXM": 0.8267,
+          "AXm": 0.0089,
+          "FL_HAZ": 0.04,
+          "FQ": 0.0978,
+          "CC": 0.0222,
+          "FL_SAFE": 0.0044
+        },
+        "z_scores": {
+          "AXM": 1.93,
+          "AXm": -1.0,
+          "FL_HAZ": -0.71,
+          "FQ": -1.3,
+          "CC": -1.12,
+          "FL_SAFE": -0.3
+        }
+      }
+    },
+    "any_elevated_f57r": false,
+    "any_extreme_z": true,
+    "pass": true
+  },
+  "t6_variance_decomposition": {
+    "n_folios_used": 72,
+    "n_regimes": 4,
+    "n_sections": 5,
+    "features": [
+      {
+        "feature": "AXM_self",
+        "type": "transition",
+        "eta2_regime": 0.2892,
+        "eta2_section": 0.3604,
+        "eta2_combined": 0.4499,
+        "residual": 0.5501
+      },
+      {
+        "feature": "AXM_to_FQ",
+        "type": "transition",
+        "eta2_regime": 0.2052,
+        "eta2_section": 0.2987,
+        "eta2_combined": 0.435,
+        "residual": 0.565
+      },
+      {
+        "feature": "FQ_to_AXM",
+        "type": "transition",
+        "eta2_regime": 0.221,
+        "eta2_section": 0.2681,
+        "eta2_combined": 0.3903,
+        "residual": 0.6097
+      },
+      {
+        "feature": "AXM_to_FL_HAZ",
+        "type": "transition",
+        "eta2_regime": 0.0821,
+        "eta2_section": 0.1424,
+        "eta2_combined": 0.2831,
+        "residual": 0.7169
+      },
+      {
+        "feature": "FL_HAZ_self",
+        "type": "transition",
+        "eta2_regime": 0.0583,
+        "eta2_section": 0.1908,
+        "eta2_combined": 0.2658,
+        "residual": 0.7342
+      },
+      {
+        "feature": "AXM_to_CC",
+        "type": "transition",
+        "eta2_regime": 0.0618,
+        "eta2_section": 0.1641,
+        "eta2_combined": 0.2128,
+        "residual": 0.7872
+      },
+      {
+        "feature": "CC_to_AXM",
+        "type": "transition",
+        "eta2_regime": 0.0579,
+        "eta2_section": 0.1024,
+        "eta2_combined": 0.2091,
+        "residual": 0.7909
+      },
+      {
+        "feature": "FQ_self",
+        "type": "transition",
+        "eta2_regime": 0.0703,
+        "eta2_section": 0.1812,
+        "eta2_combined": 0.2432,
+        "residual": 0.7568
+      },
+      {
+        "feature": "occ_AXM",
+        "type": "occupancy",
+        "eta2_regime": 0.331,
+        "eta2_section": 0.4464,
+        "eta2_combined": 0.5285,
+        "residual": 0.4715
+      },
+      {
+        "feature": "occ_FL_HAZ",
+        "type": "occupancy",
+        "eta2_regime": 0.1283,
+        "eta2_section": 0.1861,
+        "eta2_combined": 0.292,
+        "residual": 0.708
+      },
+      {
+        "feature": "occ_FQ",
+        "type": "occupancy",
+        "eta2_regime": 0.215,
+        "eta2_section": 0.3751,
+        "eta2_combined": 0.4541,
+        "residual": 0.5459
+      },
+      {
+        "feature": "occ_CC",
+        "type": "occupancy",
+        "eta2_regime": 0.0627,
+        "eta2_section": 0.2035,
+        "eta2_combined": 0.2857,
+        "residual": 0.7143
+      }
+    ],
+    "mean_eta2_regime": 0.1486,
+    "mean_eta2_section": 0.2433,
+    "mean_eta2_combined": 0.3375,
+    "mean_residual": 0.6625,
+    "pass": "True"
+  },
+  "t7_geometry_topology_independence": {
+    "n_folios_manifold": 72,
+    "n_common": 72,
+    "mean_middles_per_folio": 62.2,
+    "ari_manifold_vs_archetype": 0.1631,
+    "loo_accuracy": 0.4444,
+    "chance_accuracy": 0.1667,
+    "ari_z_score": 5.56,
+    "ari_p_value": 0.0,
+    "best_k": 6,
+    "pass": true
+  },
+  "t8_bridge_conduit": {
+    "n_common": 72,
+    "n_bridge_middles": 85,
+    "mean_bridge_density": 0.727,
+    "ari_full": 0.1631,
+    "ari_bridge": 0.1406,
+    "ari_nonbridge": 0.0366,
+    "ari_bridge_augmented": 0.1496,
+    "loo_full": 0.4444,
+    "loo_bridge": 0.4444,
+    "loo_nonbridge": 0.4444,
+    "loo_bridge_augmented": 0.4167,
+    "bridge_advantage_ari": false,
+    "bridge_advantage_loo": false,
+    "bridge_vs_nonbridge": true,
+    "rho_bridge_density_axm_self": -0.3075,
+    "p_bridge_density_axm_self": 0.008593,
+    "pass": true
+  },
+  "t9_synthesis": {
+    "predictions": {
+      "P1_folio_census": {
+        "description": ">=70 folios with N>=50 transitions",
+        "value": "72",
+        "pass": true
+      },
+      "P2_archetype_discovery": {
+        "description": "Optimal k>4 OR ARI(REGIME)<0.5",
+        "value": "k=6, ARI=0.0654",
+        "pass": true
+      },
+      "P3_c458_realization": {
+        "description": "Hazard CV<0.20, recovery CV>0.50",
+        "value": "haz_cv=1.8139, rec_cv=0.2894",
+        "pass": "False"
+      },
+      "P4_forgiveness_decomposition": {
+        "description": ">=1 transition predicts forgiveness (Bonferroni p<0.01)",
+        "value": "6",
+        "pass": true
+      },
+      "P5_restart_signature": {
+        "description": "f57r elevated FL_HAZ or depressed FL_SAFE vs controls",
+        "value": "f57r_elevated=False, any_extreme=True",
+        "pass": true
+      },
+      "P6_variance_decomposition": {
+        "description": "REGIME+section explains <70% transition variance",
+        "value": "0.3375",
+        "pass": "True"
+      },
+      "P7_geometry_topology_independence": {
+        "description": "ARI(manifold clusters, archetypes) < 0.3",
+        "value": "0.1631",
+        "pass": true
+      },
+      "P8_bridge_conduit": {
+        "description": "Bridge features predict archetypes better than non-bridge",
+        "value": "ARI bridge=0.1406 vs non-bridge=0.0366",
+        "pass": true
+      }
+    },
+    "n_pass": 7,
+    "n_total": 8,
+    "verdict": "FOLIO_DECOMPOSITION_CONFIRMED"
+  }
+}
