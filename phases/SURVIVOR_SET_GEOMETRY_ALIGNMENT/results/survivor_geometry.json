@@ -1,0 +1,91 @@
+{
+  "phase": "SURVIVOR_SET_GEOMETRY_ALIGNMENT",
+  "phase_number": 332,
+  "question": "Does the discrimination manifold encode viability structure?",
+  "n_manifold_middles": 972,
+  "n_bridge_middles": 85,
+  "n_records_total": 1579,
+  "n_records_usable": 1528,
+  "hub_eigenvalue": 81.97675337170392,
+  "t1_centroid_correlation": {
+    "n_records": 1528,
+    "n_pairs": 1166628,
+    "pearson_r": 0.9046694599013938,
+    "pearson_p": 0.0,
+    "spearman_r": 0.9143425094066089,
+    "spearman_p": 0.0,
+    "mantel": {
+      "observed_r": -0.9143425094066089,
+      "p_value": 0.000999000999000999,
+      "null_mean": -0.0006917685538239114,
+      "null_std": 0.008899894468393316,
+      "z_score": -102.65860388541493
+    }
+  },
+  "t2_hub_control": {
+    "hub_included_r": -0.8867336394083659,
+    "hub_included_p": 0.0,
+    "hub_removed_r": -0.9143425094066089,
+    "hub_removed_p": 0.0,
+    "ratio": 1.031135471545507
+  },
+  "t3_size_control": {
+    "raw_r": -0.9143425094066089,
+    "partial_r": -0.9156895923913315,
+    "partial_p": 0.0,
+    "retention": 1.0014732804948518
+  },
+  "t4_class_alignment": {
+    "spearman_r": -0.62163602936031,
+    "spearman_p": 0.0,
+    "mantel": {
+      "observed_r": -0.62163602936031,
+      "p_value": 0.000999000999000999,
+      "null_mean": -0.0007571329812402554,
+      "null_std": 0.012005408712690326,
+      "z_score": -51.716598013257915
+    },
+    "middle_class_jaccard_r": 0.6984723721121736
+  },
+  "t5_bridge_split": {
+    "n_bridge_records": 1447,
+    "n_nonbridge_records": 605,
+    "n_both": 562,
+    "bridge_r": -0.9050397502063536,
+    "bridge_p": 0.0,
+    "nonbridge_r": -0.19347716777121807,
+    "nonbridge_p": 0.0,
+    "nonbridge_full_ratio": 0.21160250757320812
+  },
+  "t6_synthesis": {
+    "predictions": {
+      "P1_mantel_significant": {
+        "pass": true,
+        "p": 0.000999000999000999
+      },
+      "P2_residual_persists": {
+        "pass": true,
+        "r": -0.9143425094066089
+      },
+      "P3_size_controlled": {
+        "pass": true,
+        "retention": 1.0014732804948518
+      },
+      "P4_class_level": {
+        "pass": true,
+        "p": 0.000999000999000999
+      },
+      "P5_nonbridge_signal": {
+        "pass": false,
+        "ratio": 0.21160250757320812
+      },
+      "P6_hub_stronger": {
+        "pass": false,
+        "ratio": 1.031135471545507
+      }
+    },
+    "n_pass": 4,
+    "verdict": "PARTIAL_ALIGNMENT"
+  },
+  "elapsed_seconds": 957.4
+}

@@ -3,7 +3,7 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.5"
+  version: "3.6"
   date: "2026-02-12"
   status: "LOCKED"
   layer_type: "grammar contract"
@@ -94,8 +94,8 @@ guarantees:
     provenance: "C171"
 
   - id: "MACRO_AUTOMATON_COMPRESSION"
-    statement: "49 instruction classes compress to 6 macro-states (8.17x) with spectral gap 0.894; EN/AX merge, FL splits HAZ/SAFE; non-geometric dwell is aggregation artifact"
-    provenance: "C976, C977, C978, C1006"
+    statement: "49 instruction classes compress to 6 macro-states (8.17x) with spectral gap 0.894; EN/AX merge, FL splits HAZ/SAFE; non-geometric dwell is aggregation artifact; partition is MINIMAL (no coarser grouping preserves invariants); geometrically independent of discrimination manifold"
+    provenance: "C976, C977, C978, C1006, C1010, C1011"
 
   - id: "AFFORDANCE_BIN_SYSTEM"
     statement: "972 MIDDLEs classify into 9 functional bins by affordance signature; chromatic number 3 for PREFIX-lane interaction; HUB_UNIVERSAL (23 MIDDLEs) monopolizes all 17/17 forbidden transitions"
@@ -138,8 +138,8 @@ guarantees:
     provenance: "C1003"
 
   - id: "PREFIX_MIDDLE_SELECTIVITY"
-    statement: "PREFIX selects MIDDLE family (102 forbidden combinations) and transforms MIDDLE behavior (within-MIDDLE between-PREFIX JSD = 97.5% of between-MIDDLE JSD)"
-    provenance: "C911, C661"
+    statement: "PREFIX selects MIDDLE family (102 forbidden combinations) and transforms MIDDLE behavior (within-MIDDLE between-PREFIX JSD = 97.5% of between-MIDDLE JSD); PREFIX also channels macro-state selection (76.7% entropy reduction via positive inclusion, not the 102 prohibitions)"
+    provenance: "C911, C661, C1012"
 
   - id: "PARAGRAPH_EXECUTION_GRADIENT"
     statement: "Paragraph body lines follow a specification→execution gradient: early lines have rare/unique vocabulary (specification), late lines have universal vocabulary (generic execution loop)"
@@ -1789,6 +1789,9 @@ provenance:
     - "C980"   # Macro-automaton integrated verdict
     - "C1004"  # 49-class optimality confirmed (token-level 38% worse)
     - "C1006"  # Non-geometric dwell is topology artifact
+    - "C1010"  # 6-state partition is minimal (no coarser grouping preserves invariants)
+    - "C1011"  # Macro-automaton geometrically independent of discrimination manifold
+    - "C1012"  # PREFIX channels macro-state selection (76.7% entropy reduction)
 
   affordance_system:
     - "C995"   # 9-bin affordance system
@@ -1807,6 +1810,7 @@ provenance:
 
   prefix_information_decomposition:
     - "C1001"  # PREFIX dual encoding (content + positional grammar)
+    - "C1012"  # PREFIX positive macro-state channeling (inclusion > prohibition)
 
   fingerprint:
     - "C971"   # Cross-line MI = 0.521 bits

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 875 validated constraints | **Version:** 3.54 | **Date:** 2026-02-12
+**Total:** 879 validated constraints | **Version:** 3.58 | **Date:** 2026-02-12
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -1973,6 +1973,69 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - T4: Five 7-state alternatives all fail to close depletion gap (z=7.24-7.58)
 - T5: Spectral clustering produces structurally different partitions (max ARI=0.081); role purity 0.0-0.5
 - T6: Verdict STRUCTURALLY_FORCED
+
+---
+
+### Geometric Macro-State Footprint (C1011) — Phase: GEOMETRIC_MACRO_STATE_FOOTPRINT
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1011** | **Discrimination Manifold and Macro-Automaton are Geometrically Independent** (only 85/972 MIDDLEs (8.7%) bridge A manifold → B grammar; macro-state silhouette = -0.126 z=-0.96 p=0.843 — no geometric footprint; forbidden transitions not at geometric boundaries ratio=0.991 p=1.0; HUB MIDDLEs peripheral not central norm 2.31 vs 0.76 p≈0; HUB sub-roles not geometrically distinct p=0.577; 3/6 pre-registered predictions passed; manifold = A-level compatibility, automaton = B-level transition topology — complementary not redundant) | 2 | A→B | -> [C1011_geometric_independence.md](C1011_geometric_independence.md) |
+
+**Phase findings (T1-T6):**
+- T1: Eigenvector embedding of 972×972 compatibility matrix; hub eigenmode λ₁=81.98 removed; 100D residual space
+- T2: 85 bridging MIDDLEs; silhouette -0.126 (z=-0.96, p=0.843); all per-state silhouettes negative except AXm (+0.12)
+- T3: 2/17 forbidden transitions representable; distance ratio 0.991 (p=1.0) — not at geometric boundaries
+- T4: HUB MIDDLEs farther from origin (2.31 vs 0.76, p=2.7e-16); sub-roles not distinct (p=0.577)
+- T5: Affordance bins × macro-states = many-to-many; dominated by AXM (75% of mapped MIDDLEs)
+- T6: Verdict GEOMETRIC_INDEPENDENCE — 3/6 predictions passed
+
+---
+
+### PREFIX Macro-State Enforcement (C1012) — Phase: PREFIX_MACRO_STATE_ENFORCEMENT
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1012** | **PREFIX is Macro-State Selector via Positive Channeling, Not Negative Prohibition** (76.7% entropy reduction z=1139 p≈0; many PREFIXes 100% single-state; but 102 prohibitions NOT cross-state targeted 23.2% vs 27.8% null z=-1.58; forbidden transitions not preferentially backed 38.9% vs 46.2% null; positional mediation 39.9%; EN PREFIXes 100% AXM+AXm; FL_HAZ+CC prohibition enrichment 2.14x; enforcement is inclusion-based not exclusion-based) | 2 | B | -> [C1012_prefix_macro_state_selectivity.md](C1012_prefix_macro_state_selectivity.md) |
+
+**Phase findings (T1-T5):**
+- T1: PREFIX macro-state entropy reduction 76.7% (chi2=31500, p≈0); I(PREFIX;macro-state)=0.876 bits; 10+ PREFIXes at 100% concentration
+- T2: 56 classifiable prohibitions — 13 cross-state (23.2%), 14 within-state, 29 mixed; z=-1.58 below null
+- T3: 7/18 depleted pairs morphologically backed (38.9%); null=46.2%; z=-0.61 — not enriched
+- T4: I(position;macro-state)=0.0113 bits (z=44.78); PREFIX mediates 39.9%; AXM declines Q1→Q4
+- T5: Verdict PARTIAL_ENFORCEMENT — 3/6 predictions passed
+
+---
+
+### Bridge MIDDLE Selection Mechanism (C1013) — Phase: BRIDGE_MIDDLE_SELECTION_MECHANISM
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1013** | A->B Vocabulary Bridge is a Topological Generality Filter | 2 | A->B | → [C1013_bridge_topological_selection.md](C1013_bridge_topological_selection.md) |
+
+**Phase findings (T1-T6):**
+- T1: 15/17 predictors significant (Bonferroni); frequency 55x, folio_spread 26x, compat_degree 12x, hub_loading 6x, length 0.55x
+- T2: Frequency-only AUC = 0.978 — near-perfect prediction of bridge status
+- T3: Full multivariate AUC = 0.904 on 125 valid MIDDLEs; structural features do not improve beyond frequency
+- T4: Affordance bin chi2=479.5 (p=1.4e-97); HUB_UNIVERSAL 23/23=100% (11.44x); 4 bins at 0% (725 MIDDLEs)
+- T5: Bridge profile: shorter (2.27 vs 4.11), atomic (67% vs 26%), AXM-dominated (75.3%)
+- T6: Verdict TOPOLOGICAL_SELECTION — 5/6 predictions passed; bridging is a generality filter
+
+---
+
+### Survivor-Set Geometry Alignment (C1014) — Phase: SURVIVOR_SET_GEOMETRY_ALIGNMENT
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1014** | Discrimination Manifold Encodes Viability Structure via Bridge Backbone | 2 | A->B | -> [C1014_manifold_viability_alignment.md](C1014_manifold_viability_alignment.md) |
+
+**Phase findings (T1-T6):**
+- T1: MIDDLE Jaccard vs centroid cosine Spearman r=0.914 (Mantel p=0.001, z=-102.66); 1,528 records, 1.17M pairs
+- T2: Hub-removed r=0.914 STRONGER than hub-included r=0.887 (ratio=1.031); viability in residual geometry not frequency
+- T3: Size-controlled partial r=-0.916 (retention=100.1%); zero size confounding
+- T4: Class-level Mantel r=0.622 (p=0.001, z=-51.72); propagates through MIDDLE->class mapping
+- T5: Bridge-only r=0.905 (91% of signal), non-bridge r=0.194 (21%); viability mediated by bridge backbone
+- T6: Verdict PARTIAL_ALIGNMENT — 4/6 predictions passed; manifold is viability landscape via bridge backbone
 
 ---
 

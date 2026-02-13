@@ -1,0 +1,226 @@
+{
+  "phase": "GEOMETRIC_MACRO_STATE_FOOTPRINT",
+  "phase_number": 329,
+  "question": "Does the discrimination manifold have geometric structure corresponding to the 6-state macro-automaton?",
+  "t1_embedding": {
+    "n_middles": 972,
+    "n_dims": 100,
+    "hub_eigenvalue": 81.97675337170392,
+    "residual_eigenvalue_range": [
+      19.159221044361416,
+      3.7457299860250406
+    ],
+    "hub_variance_pct": 3.7,
+    "residual_variance_pct": 35.8,
+    "combined_variance_pct": 39.5,
+    "eigenvalue_check_max_diff": 0.0
+  },
+  "t2_footprints": {
+    "n_mapped": 85,
+    "per_state_counts": {
+      "AXM": 64,
+      "AXm": 2,
+      "FL_HAZ": 5,
+      "FQ": 7,
+      "CC": 2,
+      "FL_SAFE": 5
+    },
+    "within_dispersion": {
+      "AXM": 2.5037772527269113,
+      "AXm": 1.841842618439352,
+      "FL_HAZ": 3.0918914913845414,
+      "FQ": 3.2346695468351903,
+      "CC": 3.56887126798479,
+      "FL_SAFE": 2.2727345461828317
+    },
+    "between_distances": {
+      "AXM-AXm": 0.9750909498447852,
+      "AXM-FL_HAZ": 0.981772994547761,
+      "AXM-FQ": 0.8930174752420403,
+      "AXM-CC": 1.9213124652418456,
+      "AXM-FL_SAFE": 0.7202098418453797,
+      "AXm-FL_HAZ": 1.4177280944523971,
+      "AXm-FQ": 1.2295397144507179,
+      "AXm-CC": 1.9744301637274,
+      "AXm-FL_SAFE": 1.2184140965288723,
+      "FL_HAZ-FQ": 1.2856962107796703,
+      "FL_HAZ-CC": 2.194354733038849,
+      "FL_HAZ-FL_SAFE": 1.1344695974366907,
+      "FQ-CC": 2.102425416216288,
+      "FQ-FL_SAFE": 1.0483548776205343,
+      "CC-FL_SAFE": 2.0237989579818483
+    },
+    "overall_silhouette": -0.12563635403514808,
+    "per_state_silhouette": {
+      "AXM": -0.12394749824155053,
+      "AXm": 0.12104147329396844,
+      "FL_HAZ": -0.16545429951393192,
+      "FQ": -0.19296308392074632,
+      "CC": -0.21131267310535284,
+      "FL_SAFE": -0.07757894417814032
+    },
+    "silhouette_z": -0.956004888959238,
+    "silhouette_p": 0.843,
+    "null_silhouette_mean": -0.08248194720797719,
+    "null_silhouette_std": 0.04514036206880832,
+    "axm_axm_overlap": 0.0,
+    "axm_small_axm_overlap": 0.0
+  },
+  "t3_forbidden_boundaries": {
+    "n_forbidden_pairs": 2,
+    "n_with_centroids": 1,
+    "forbidden_mean_dist": 1.988021002843659,
+    "allowed_mean_dist": 2.005523823452533,
+    "dist_ratio": 0.991,
+    "mannwhitney_u": 0.0,
+    "mannwhitney_p": 1.0,
+    "cross_state_fraction": 1.0,
+    "cross_state_count": 2,
+    "within_state_count": 0
+  },
+  "t4_hub_sub_roles": {
+    "sub_role_counts": {
+      "HAZARD_SOURCE": 6,
+      "HAZARD_TARGET": 6,
+      "SAFETY_BUFFER": 3,
+      "PURE_CONNECTOR": 8
+    },
+    "between_sub_role_distances": {
+      "HAZARD_SOURCE-HAZARD_TARGET": 1.3766052435788465,
+      "HAZARD_SOURCE-SAFETY_BUFFER": 1.7131139106419597,
+      "HAZARD_SOURCE-PURE_CONNECTOR": 1.2692627818473714,
+      "HAZARD_TARGET-SAFETY_BUFFER": 1.629352720104045,
+      "HAZARD_TARGET-PURE_CONNECTOR": 1.2314964166604003,
+      "SAFETY_BUFFER-PURE_CONNECTOR": 1.5353181833584952
+    },
+    "within_mean": 3.3380078959635413,
+    "between_mean": 3.33315846720593,
+    "dispersion_ratio": 0.9985472087218621,
+    "ratio_z": -0.2734838633948148,
+    "ratio_p": 0.577,
+    "hub_mean_norm": 2.31330124338665,
+    "non_hub_mean_norm": 0.7577861610705969,
+    "centrality_p": 2.720199722082748e-16,
+    "centrality_direction": "farther"
+  },
+  "t5_affordance_alignment": {
+    "bin_counts": {
+      "0": 67,
+      "4": 566,
+      "8": 56,
+      "6": 23,
+      "5": 54,
+      "1": 53,
+      "9": 28,
+      "3": 43,
+      "7": 52,
+      "2": 30
+    },
+    "cross_tabulation": {
+      "0": {
+        "AXM": 18,
+        "FQ": 1,
+        "FL_HAZ": 3,
+        "FL_SAFE": 5,
+        "AXm": 1
+      },
+      "8": {
+        "AXM": 19
+      },
+      "6": {
+        "FQ": 5,
+        "FL_HAZ": 2,
+        "AXM": 14,
+        "CC": 2
+      },
+      "9": {
+        "FQ": 1,
+        "AXM": 10
+      },
+      "3": {
+        "AXM": 2
+      },
+      "2": {
+        "AXM": 1,
+        "AXm": 1
+      }
+    },
+    "bin_concentration": {
+      "0": 0.643,
+      "8": 1.0,
+      "6": 0.609,
+      "9": 0.909,
+      "3": 1.0,
+      "2": 0.5
+    },
+    "mean_concentration": 0.7767739506869941,
+    "mapping_type": "many-to-many",
+    "macro_to_bins": {
+      "AXM": [
+        0,
+        8,
+        6,
+        9,
+        3,
+        2
+      ]
+    },
+    "bin_to_dominant_macro": {
+      "0": "AXM",
+      "8": "AXM",
+      "6": "AXM",
+      "9": "AXM",
+      "3": "AXM",
+      "2": "AXM"
+    }
+  },
+  "t6_synthesis": {
+    "predictions": {
+      "P1_ENAX_no_separation": {
+        "expected": "Overlapping footprints",
+        "axm_silhouette": -0.12394749824155053,
+        "axm_small_silhouette": 0.12104147329396844,
+        "overlap_score": 0.0,
+        "pass": false
+      },
+      "P2_FL_separation": {
+        "expected": "Distinct regions",
+        "fl_haz_silhouette": -0.16545429951393192,
+        "fl_safe_silhouette": -0.07757894417814032,
+        "fl_centroid_distance": 1.1344695974366907,
+        "pass": true
+      },
+      "P3_FQ_intermediate": {
+        "expected": "Between core and periphery",
+        "fq_silhouette": -0.19296308392074632,
+        "pass": false
+      },
+      "P4_CC_peripheral": {
+        "expected": "Outlier positions",
+        "cc_silhouette": -0.21131267310535284,
+        "cc_dispersion": 3.56887126798479,
+        "pass": false
+      },
+      "P5_HUB_central": {
+        "expected": "Clustered near origin OR high residual norm",
+        "hub_norm": 2.31330124338665,
+        "non_hub_norm": 0.7577861610705969,
+        "direction": "farther",
+        "p_value": 2.720199722082748e-16,
+        "pass": true
+      },
+      "P6_no_clean_basins": {
+        "expected": "Silhouette < 0.3",
+        "overall_silhouette": -0.12563635403514808,
+        "pass": true
+      }
+    },
+    "n_pass": 3,
+    "n_total": 6,
+    "silhouette_significant": false,
+    "forbidden_at_boundaries": false,
+    "hub_sub_roles_structured": false,
+    "verdict": "GEOMETRIC_INDEPENDENCE"
+  },
+  "elapsed_seconds": 22.1
+}

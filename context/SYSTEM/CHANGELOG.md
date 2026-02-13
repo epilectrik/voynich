@@ -4,6 +4,100 @@
 
 ---
 
+## Version 3.58 (2026-02-12) - Survivor-Set Geometry Alignment
+
+### Summary
+
+5-test phase testing whether the discrimination manifold (C982) encodes viability structure — do A records with geometrically similar MIDDLE inventories produce similar B vocabulary restrictions (C502/C689)? MIDDLE Jaccard vs centroid cosine Spearman r=0.914 (Mantel p=0.001, z=-102.66, n=1,528 records, 1.17M pairs). Hub-removed r=0.914 is STRONGER than hub-included r=0.887 (ratio=1.031) — viability encoded in residual compatibility geometry, not frequency. Size-controlled retention=100.1%. Class-level r=0.622 (p=0.001). Bridge-only r=0.905 (91% of signal), non-bridge r=0.194 (21%). Verdict: PARTIAL_ALIGNMENT — manifold is a viability landscape, mediated by the 85-MIDDLE bridge backbone, through residual compatibility geometry. 1 new constraint (C1014), 879 total. Phase 332.
+
+### New Constraints
+
+| # | Name | Tier | Key Evidence |
+|---|------|------|-------------|
+| C1014 | Discrimination Manifold Encodes Viability via Bridge Backbone | 2 | Spearman r=0.914 z=-102.66; hub-removed stronger (1.031); size retention 100.1%; class r=0.622; bridge 91%, non-bridge 21%; 4/6 predictions |
+
+### Key Findings
+
+**SURVIVOR_SET_GEOMETRY_ALIGNMENT (5 tests):**
+- T1: MIDDLE Jaccard vs centroid cosine r=0.914 (Mantel p=0.001, z=-102.66)
+- T2: Hub-removed r=0.914 > hub-included r=0.887; residual geometry encodes viability
+- T3: Partial r=-0.916, retention=100.1%; zero size confounding
+- T4: Class-level r=0.622 (p=0.001); propagates through class mapping
+- T5: Bridge 91% of signal, non-bridge 21%; bridge backbone mediates viability
+
+---
+
+## Version 3.57 (2026-02-12) - Bridge MIDDLE Selection Mechanism
+
+### Summary
+
+6-test phase testing what predicts which 85/972 MIDDLEs bridge from A's discrimination manifold into B's 49-class grammar (resolving C1011). Bridge MIDDLEs are overwhelmingly selected by topological generality: frequency alone achieves AUC=0.978. They are 55x more frequent, 26x wider folio spread, 12x more compatible, 6x higher hub loading, half the character length, 2x less compound. Affordance bin enrichment is extreme: HUB_UNIVERSAL 23/23=100% bridging (11.44x), 4 specialized bins at 0% bridging (725 MIDDLEs). 15/17 univariate predictors significant (Bonferroni). Full multivariate model (AUC=0.904) does not improve beyond frequency. Verdict: TOPOLOGICAL_SELECTION — the A->B vocabulary boundary is a natural generality filter, not an active selection mechanism. 1 new constraint (C1013), 878 total. Phase 331.
+
+### New Constraints
+
+| # | Name | Tier | Key Evidence |
+|---|------|------|-------------|
+| C1013 | A->B Vocabulary Bridge is Topological Generality Filter | 2 | Freq AUC=0.978; 15/17 predictors significant; HUB_UNIVERSAL 100% bridge (11.44x); 4 bins at 0%; length 2.27 vs 4.11; 5/6 predictions |
+
+### Key Findings
+
+**BRIDGE_MIDDLE_SELECTION_MECHANISM (6 tests):**
+- T1: 15/17 univariate predictors significant; frequency 55x, folio_spread 26x, compat_degree 12x
+- T2: Frequency-only AUC = 0.978 (near-perfect)
+- T3: Full model AUC = 0.904 on 125 valid; no improvement over frequency
+- T4: Affordance bin chi2=479.5 (p=1.4e-97); HUB_UNIVERSAL 23/23=100%; 4 bins at 0%
+- T5: Bridge MIDDLEs shorter, atomic, AXM-dominated (75.3%)
+- T6: Verdict TOPOLOGICAL_SELECTION — 5/6 predictions passed
+
+---
+
+## Version 3.56 (2026-02-12) - PREFIX Macro-State Enforcement
+
+### Summary
+
+5-test phase testing whether the 102 forbidden PREFIX × MIDDLE combinations (C911) enforce the 6-state macro-automaton topology. PREFIX is a massive macro-state selector — 76.7% entropy reduction (chi2=31500, z=1139), with many PREFIXes channeling 100% of tokens to a single state. However, the 102 specific prohibitions are NOT the enforcement mechanism: only 23.2% target cross-state combinations (below 27.8% null, z=-1.58), and forbidden transitions are not preferentially backed (38.9% vs 46.2% null). PREFIX enforces macro-state through positive selectivity (which MIDDLEs it includes), not negative prohibition. Positional mediation 39.9%. EN PREFIXes (ch/sh) channel 100% to AXM+AXm. Verdict: PARTIAL_ENFORCEMENT — enforcement is inclusion-based, not exclusion-based. 1 new constraint (C1012), 877 total. Phase 330.
+
+### New Constraints
+
+| # | Name | Tier | Key Evidence |
+|---|------|------|-------------|
+| C1012 | PREFIX Macro-State Selector via Positive Channeling | 2 | 76.7% entropy reduction z=1139; prohibitions not cross-state z=-1.58; forbidden coverage 38.9% below null; mediation 39.9%; 3/6 predictions |
+
+### Key Findings
+
+**PREFIX_MACRO_STATE_ENFORCEMENT (5 tests):**
+- T1: 76.7% entropy reduction (chi2=31500); I(PREFIX;macro)=0.876 bits; 10+ PREFIXes at 100%
+- T2: Prohibitions not cross-state targeted (23.2% vs 27.8% null, z=-1.58, p=0.958)
+- T3: 7/18 forbidden transitions backed (38.9%); below null 46.2% (z=-0.61)
+- T4: Position→macro-state significant (z=44.78) but PREFIX mediates only 39.9%
+- T5: Verdict PARTIAL_ENFORCEMENT — 3/6 predictions passed
+
+---
+
+## Version 3.55 (2026-02-12) - Geometric Macro-State Footprint
+
+### Summary
+
+6-test phase testing whether the ~101D discrimination manifold (C982) has geometric structure corresponding to the 6-state macro-automaton (C976/C1010). Only 85/972 MIDDLEs (8.7%) bridge A discrimination space → B execution grammar. Macro-state silhouette = -0.126 (z=-0.96, p=0.843) — worse than random, no geometric footprint. Forbidden transitions not at geometric boundaries (ratio=0.991, p=1.0). HUB MIDDLEs are geometrically peripheral not central (norm 2.31 vs 0.76, p≈0), reversing prediction from C1000. HUB sub-roles not geometrically distinct (p=0.577). 3/6 pre-registered predictions passed (P2: FL separation, P5: HUB significant, P6: no basins). Verdict: GEOMETRIC_INDEPENDENCE — manifold and automaton describe orthogonal structural levels (A-level compatibility vs B-level transition topology). 1 new constraint (C1011), 876 total. Phase 329.
+
+### New Constraints
+
+| # | Name | Tier | Key Evidence |
+|---|------|------|-------------|
+| C1011 | Discrimination Manifold and Macro-Automaton Geometrically Independent | 2 | 85/972 bridge (8.7%); silhouette -0.126 z=-0.96 p=0.843; forbidden ratio 0.991 p=1.0; HUB peripheral 2.31 vs 0.76 p≈0; sub-roles p=0.577; 3/6 predictions |
+
+### Key Findings
+
+**GEOMETRIC_MACRO_STATE_FOOTPRINT (6 tests):**
+- T1: Eigenvector embedding 972×972 compatibility matrix; hub eigenmode λ₁=81.98 removed; 100D residual
+- T2: 85 bridging MIDDLEs; silhouette -0.126 (z=-0.96 p=0.843); all per-state negative except AXm (+0.12)
+- T3: 2/17 forbidden transitions representable; distance ratio 0.991 (p=1.0) — no boundary alignment
+- T4: HUB MIDDLEs farther from origin (2.31 vs 0.76, p=2.7e-16); sub-role dispersion ratio 0.999 (p=0.577)
+- T5: Affordance bins × macro-states many-to-many; AXM dominates mapped set (75%)
+- T6: Verdict GEOMETRIC_INDEPENDENCE — complementary not redundant descriptions
+
+---
+
 ## Version 3.54 (2026-02-12) - Macro-Automaton Necessity
 
 ### Summary

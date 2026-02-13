@@ -1,0 +1,679 @@
+{
+  "phase": "BRIDGE_MIDDLE_SELECTION_MECHANISM",
+  "phase_number": 331,
+  "question": "What predicts which MIDDLEs bridge from A discrimination manifold into B 49-class grammar?",
+  "n_a_middles": 972,
+  "n_bridges": 85,
+  "bridge_rate": 0.0874485596707819,
+  "t1_univariate": [
+    {
+      "feature": "compat_degree",
+      "test": "mann_whitney",
+      "U": 73838.0,
+      "p": 1.139824038564573e-48,
+      "rank_biserial": -0.9586975263611646,
+      "bridge_mean": 132.72941176470587,
+      "bridge_median": 88.0,
+      "nonbridge_mean": 11.467869222096956,
+      "nonbridge_median": 8.0,
+      "n_bridge": 85,
+      "n_nonbridge": 887,
+      "significant": "True"
+    },
+    {
+      "feature": "token_frequency",
+      "test": "mann_whitney",
+      "U": 73648.5,
+      "p": 9.277968428840676e-66,
+      "rank_biserial": -0.9536706678161682,
+      "bridge_mean": 110.48235294117647,
+      "bridge_median": 41.0,
+      "nonbridge_mean": 2.0101465614430665,
+      "nonbridge_median": 1.0,
+      "n_bridge": 85,
+      "n_nonbridge": 887,
+      "significant": "True"
+    },
+    {
+      "feature": "radial_depth",
+      "test": "mann_whitney",
+      "U": 72837.0,
+      "p": 7.727268971769787e-46,
+      "rank_biserial": -0.9321440413820545,
+      "bridge_mean": 1.8071870588235295,
+      "bridge_median": 1.8324,
+      "nonbridge_mean": 0.6950021420518602,
+      "nonbridge_median": 0.6384,
+      "n_bridge": 85,
+      "n_nonbridge": 887,
+      "significant": "True"
+    },
+    {
+      "feature": "length",
+      "test": "mann_whitney",
+      "U": 9707.0,
+      "p": 3.930491605858051e-31,
+      "rank_biserial": 0.7425028184892897,
+      "bridge_mean": 2.2705882352941176,
+      "bridge_median": 2.0,
+      "nonbridge_mean": 4.109357384441939,
+      "nonbridge_median": 4.0,
+      "n_bridge": 85,
+      "n_nonbridge": 887,
+      "significant": "True"
+    },
+    {
+      "feature": "k_ratio",
+      "test": "mann_whitney",
+      "U": 37574.0,
+      "p": 0.9477224402000015,
+      "rank_biserial": 0.0032760793156044743,
+      "bridge_mean": 0.08823176470588234,
+      "bridge_median": 0.0,
+      "nonbridge_mean": 0.06479278466741827,
+      "nonbridge_median": 0.0,
+      "n_bridge": 85,
+      "n_nonbridge": 887,
+      "significant": "False"
+    },
+    {
+      "feature": "e_ratio",
+      "test": "mann_whitney",
+      "U": 36404.0,
+      "p": 0.5362815194602186,
+      "rank_biserial": 0.03431262020027859,
+      "bridge_mean": 0.13725294117647058,
+      "bridge_median": 0.0,
+      "nonbridge_mean": 0.12551228861330327,
+      "nonbridge_median": 0.0,
+      "n_bridge": 85,
+      "n_nonbridge": 887,
+      "significant": "False"
+    },
+    {
+      "feature": "h_ratio",
+      "test": "mann_whitney",
+      "U": 29529.0,
+      "p": 9.754117005171747e-05,
+      "rank_biserial": 0.21668545659526495,
+      "bridge_mean": 0.04901764705882352,
+      "bridge_median": 0.0,
+      "nonbridge_mean": 0.08414396843291994,
+      "nonbridge_median": 0.0,
+      "n_bridge": 85,
+      "n_nonbridge": 887,
+      "significant": "True"
+    },
+    {
+      "feature": "is_compound",
+      "test": "mann_whitney",
+      "U": 22235.5,
+      "p": 2.6428580268070883e-15,
+      "rank_biserial": 0.41015982492207703,
+      "bridge_mean": 0.32941176470588235,
+      "bridge_median": 0.0,
+      "nonbridge_mean": 0.7395715896279594,
+      "nonbridge_median": 1.0,
+      "n_bridge": 85,
+      "n_nonbridge": 887,
+      "significant": "True"
+    },
+    {
+      "feature": "qo_affinity",
+      "test": "mann_whitney",
+      "U": 45340.0,
+      "p": 0.0013291924060106792,
+      "rank_biserial": -0.2027322766761721,
+      "bridge_mean": 0.4656847058823529,
+      "bridge_median": 0.5,
+      "nonbridge_mean": 0.36301747463359635,
+      "nonbridge_median": 0.3333,
+      "n_bridge": 85,
+      "n_nonbridge": 887,
+      "significant": "True"
+    },
+    {
+      "feature": "regime_entropy",
+      "test": "mann_whitney",
+      "U": 22249.5,
+      "p": 1.8236297623867896e-12,
+      "rank_biserial": 0.40978844750978183,
+      "bridge_mean": 1.0508658823529413,
+      "bridge_median": 1.0794,
+      "nonbridge_mean": 1.068700563697858,
+      "nonbridge_median": 1.3863,
+      "n_bridge": 85,
+      "n_nonbridge": 887,
+      "significant": "True"
+    },
+    {
+      "feature": "initial_rate",
+      "test": "mann_whitney",
+      "U": 59957.5,
+      "p": 2.316235270030332e-38,
+      "rank_biserial": -0.5904900855494397,
+      "bridge_mean": 0.08751411764705883,
+      "bridge_median": 0.0595,
+      "nonbridge_mean": 0.0598445321307779,
+      "nonbridge_median": 0.0,
+      "n_bridge": 85,
+      "n_nonbridge": 887,
+      "significant": "True"
+    },
+    {
+      "feature": "final_rate",
+      "test": "mann_whitney",
+      "U": 64891.5,
+      "p": 2.1984249762616586e-56,
+      "rank_biserial": -0.7213740964254924,
+      "bridge_mean": 0.15485176470588236,
+      "bridge_median": 0.0798,
+      "nonbridge_mean": 0.05869729425028184,
+      "nonbridge_median": 0.0,
+      "n_bridge": 85,
+      "n_nonbridge": 887,
+      "significant": "True"
+    },
+    {
+      "feature": "folio_spread",
+      "test": "mann_whitney",
+      "U": 74234.5,
+      "p": 2.755972277141585e-62,
+      "rank_biserial": -0.9692154652165264,
+      "bridge_mean": 0.4969870588235294,
+      "bridge_median": 0.4512,
+      "nonbridge_mean": 0.019155242390078916,
+      "nonbridge_median": 0.0,
+      "n_bridge": 85,
+      "n_nonbridge": 887,
+      "significant": "True"
+    },
+    {
+      "feature": "hub_loading",
+      "test": "mann_whitney",
+      "U": 73925.0,
+      "p": 1.3088988936177408e-48,
+      "rank_biserial": -0.9610053717089992,
+      "bridge_mean": 0.08366613369023006,
+      "bridge_median": 0.07278697044541642,
+      "nonbridge_mean": 0.013380013670164335,
+      "nonbridge_median": 0.009906061935045255,
+      "n_bridge": 85,
+      "n_nonbridge": 887,
+      "significant": "True"
+    },
+    {
+      "feature": "residual_norm",
+      "test": "mann_whitney",
+      "U": 72696.0,
+      "p": 1.7422547709831363e-45,
+      "rank_biserial": -0.928403740301081,
+      "bridge_mean": 0.5932022713151893,
+      "bridge_median": 0.6363627485904046,
+      "nonbridge_mean": 0.25438032392292176,
+      "nonbridge_median": 0.232535386815754,
+      "n_bridge": 85,
+      "n_nonbridge": 887,
+      "significant": "True"
+    },
+    {
+      "feature": "n_prefixes",
+      "test": "mann_whitney",
+      "U": 2584.0,
+      "p": 0.00018015775046654927,
+      "rank_biserial": -0.3982683982683983,
+      "bridge_mean": 10.467532467532468,
+      "bridge_median": 8.0,
+      "nonbridge_mean": 5.541666666666667,
+      "nonbridge_median": 5.0,
+      "n_bridge": 77,
+      "n_nonbridge": 48,
+      "significant": "True"
+    },
+    {
+      "feature": "affordance_bin",
+      "test": "chi2",
+      "statistic": 479.47307052127064,
+      "p": 1.4240699215861017e-97,
+      "bridge_mean": 4.694117647058824,
+      "nonbridge_mean": 4.0349492671927845,
+      "n_bridge": 85,
+      "n_nonbridge": 887,
+      "significant": "True"
+    }
+  ],
+  "t2_frequency_baseline": {
+    "auc_frequency_only": 0.977637774388222,
+    "n_valid": 972,
+    "n_bridge": 85
+  },
+  "t3_multivariate": {
+    "auc_full": 0.9036796536796536,
+    "n_valid": 125,
+    "n_bridge": 77,
+    "n_features": 16,
+    "feature_importances": {
+      "folio_spread": {
+        "auc_drop": 0.026129599567099482,
+        "perm_mean": 0.8775500541125542,
+        "perm_std": 0.005882201242328664
+      },
+      "h_ratio": {
+        "auc_drop": 0.01394615800865806,
+        "perm_mean": 0.8897334956709956,
+        "perm_std": 0.0062685836644507985
+      },
+      "regime_entropy": {
+        "auc_drop": 0.011040313852813788,
+        "perm_mean": 0.8926393398268399,
+        "perm_std": 0.005088644687553415
+      },
+      "initial_rate": {
+        "auc_drop": 0.01004870129870128,
+        "perm_mean": 0.8936309523809524,
+        "perm_std": 0.005260205094989025
+      },
+      "compat_degree": {
+        "auc_drop": 0.004077380952380971,
+        "perm_mean": 0.8996022727272727,
+        "perm_std": 0.004609385211355995
+      },
+      "token_frequency": {
+        "auc_drop": 0.0036688311688312103,
+        "perm_mean": 0.9000108225108224,
+        "perm_std": 0.005849204168773276
+      },
+      "hub_loading": {
+        "auc_drop": 0.00357819264069259,
+        "perm_mean": 0.900101461038961,
+        "perm_std": 0.005164875159969714
+      },
+      "radial_depth": {
+        "auc_drop": 0.0010579004329003272,
+        "perm_mean": 0.9026217532467533,
+        "perm_std": 0.005098524792375693
+      },
+      "length": {
+        "auc_drop": 0.0008576839826839322,
+        "perm_mean": 0.9028219696969697,
+        "perm_std": 0.004427824838522963
+      },
+      "qo_affinity": {
+        "auc_drop": 0.0007995129870129736,
+        "perm_mean": 0.9028801406926407,
+        "perm_std": 0.005278422224469242
+      },
+      "k_ratio": {
+        "auc_drop": 7.440476190467837e-05,
+        "perm_mean": 0.903605248917749,
+        "perm_std": 0.005300678749921338
+      },
+      "residual_norm": {
+        "auc_drop": -0.000936147186147207,
+        "perm_mean": 0.9046158008658008,
+        "perm_std": 0.005043136180139972
+      },
+      "is_compound": {
+        "auc_drop": -0.001406926406926523,
+        "perm_mean": 0.9050865800865802,
+        "perm_std": 0.004903684311345966
+      },
+      "n_prefixes": {
+        "auc_drop": -0.0024066558441558916,
+        "perm_mean": 0.9060863095238095,
+        "perm_std": 0.005349443879330095
+      },
+      "final_rate": {
+        "auc_drop": -0.0038663419913420594,
+        "perm_mean": 0.9075459956709957,
+        "perm_std": 0.004956366572303926
+      },
+      "e_ratio": {
+        "auc_drop": -0.0038947510822511244,
+        "perm_mean": 0.9075744047619048,
+        "perm_std": 0.005610828520512959
+      }
+    },
+    "coefficients": {
+      "compat_degree": 0.872135888997171,
+      "token_frequency": 0.6304766972760952,
+      "radial_depth": 0.7962485138825501,
+      "length": 0.1894797027913343,
+      "k_ratio": -0.12084196684767468,
+      "e_ratio": 0.21099306757423597,
+      "h_ratio": -0.5884177830551839,
+      "is_compound": 0.02905785730498087,
+      "qo_affinity": 0.671165427236115,
+      "regime_entropy": -0.6130615684462656,
+      "initial_rate": -0.4194600726373303,
+      "final_rate": 0.16677071725535397,
+      "folio_spread": 1.3704248697146142,
+      "hub_loading": 0.9167745935359441,
+      "residual_norm": 0.18729162157156148,
+      "n_prefixes": 0.12216557573058967
+    }
+  },
+  "t4_bin_enrichment": {
+    "chi2": 479.47307052127064,
+    "chi2_p": 1.4240699215861017e-97,
+    "chi2_dof": 9,
+    "hub_fisher_p": 1.2288149068587904e-14,
+    "base_rate": 0.0874485596707819,
+    "per_bin": {
+      "0": {
+        "label": "FLOW_TERMINAL",
+        "n_total": 67,
+        "n_bridge": 28,
+        "rate": 0.417910447761194,
+        "enrichment": 4.77892888498683
+      },
+      "1": {
+        "label": "ROUTINE_SPECIALIZED",
+        "n_total": 53,
+        "n_bridge": 0,
+        "rate": 0.0,
+        "enrichment": 0.0
+      },
+      "2": {
+        "label": "PRECISION_SPECIALIZED",
+        "n_total": 30,
+        "n_bridge": 2,
+        "rate": 0.06666666666666667,
+        "enrichment": 0.7623529411764706
+      },
+      "3": {
+        "label": "COMPOUND_TERMINAL",
+        "n_total": 43,
+        "n_bridge": 2,
+        "rate": 0.046511627906976744,
+        "enrichment": 0.5318741450068399
+      },
+      "4": {
+        "label": "BULK_OPERATIONAL",
+        "n_total": 566,
+        "n_bridge": 0,
+        "rate": 0.0,
+        "enrichment": 0.0
+      },
+      "5": {
+        "label": "SETTLING_SPECIALIZED",
+        "n_total": 54,
+        "n_bridge": 0,
+        "rate": 0.0,
+        "enrichment": 0.0
+      },
+      "6": {
+        "label": "HUB_UNIVERSAL",
+        "n_total": 23,
+        "n_bridge": 23,
+        "rate": 1.0,
+        "enrichment": 11.435294117647059
+      },
+      "7": {
+        "label": "ENERGY_SPECIALIZED",
+        "n_total": 52,
+        "n_bridge": 0,
+        "rate": 0.0,
+        "enrichment": 0.0
+      },
+      "8": {
+        "label": "STABILITY_CRITICAL",
+        "n_total": 56,
+        "n_bridge": 19,
+        "rate": 0.3392857142857143,
+        "enrichment": 3.8798319327731092
+      },
+      "9": {
+        "label": "PHASE_SENSITIVE",
+        "n_total": 28,
+        "n_bridge": 11,
+        "rate": 0.39285714285714285,
+        "enrichment": 4.492436974789916
+      }
+    }
+  },
+  "t5_structural_profile": {
+    "n_bridge": 85,
+    "n_nonbridge": 887,
+    "macro_state_distribution": {
+      "AXM": 64,
+      "FL_HAZ": 5,
+      "FL_SAFE": 5,
+      "FQ": 7,
+      "CC": 2,
+      "AXm": 2
+    },
+    "feature_profiles": {
+      "compat_degree": {
+        "bridge_mean": 132.72941176470587,
+        "bridge_median": 88.0,
+        "nonbridge_mean": 11.467869222096956,
+        "nonbridge_median": 8.0,
+        "ratio": 11.574025583493325
+      },
+      "token_frequency": {
+        "bridge_mean": 110.48235294117647,
+        "bridge_median": 41.0,
+        "nonbridge_mean": 2.0101465614430665,
+        "nonbridge_median": 1.0,
+        "ratio": 54.9623371053413
+      },
+      "radial_depth": {
+        "bridge_mean": 1.8071870588235295,
+        "bridge_median": 1.8324,
+        "nonbridge_mean": 0.6950021420518602,
+        "nonbridge_median": 0.6384,
+        "ratio": 2.600261135150112
+      },
+      "length": {
+        "bridge_mean": 2.2705882352941176,
+        "bridge_median": 2.0,
+        "nonbridge_mean": 4.109357384441939,
+        "nonbridge_median": 4.0,
+        "ratio": 0.5525409505365932
+      },
+      "k_ratio": {
+        "bridge_mean": 0.08823176470588234,
+        "bridge_median": 0.0,
+        "nonbridge_mean": 0.06479278466741827,
+        "nonbridge_median": 0.0,
+        "ratio": 1.3617529352809343
+      },
+      "e_ratio": {
+        "bridge_mean": 0.13725294117647058,
+        "bridge_median": 0.0,
+        "nonbridge_mean": 0.12551228861330327,
+        "nonbridge_median": 0.0,
+        "ratio": 1.0935418570793465
+      },
+      "h_ratio": {
+        "bridge_mean": 0.04901764705882352,
+        "bridge_median": 0.0,
+        "nonbridge_mean": 0.08414396843291994,
+        "nonbridge_median": 0.0,
+        "ratio": 0.5825449877361165
+      },
+      "is_compound": {
+        "bridge_mean": 0.32941176470588235,
+        "bridge_median": 0.0,
+        "nonbridge_mean": 0.7395715896279594,
+        "nonbridge_median": 1.0,
+        "ratio": 0.4454088952654232
+      },
+      "qo_affinity": {
+        "bridge_mean": 0.4656847058823529,
+        "bridge_median": 0.5,
+        "nonbridge_mean": 0.36301747463359635,
+        "nonbridge_median": 0.3333,
+        "ratio": 1.2828162235230727
+      },
+      "regime_entropy": {
+        "bridge_mean": 1.0508658823529413,
+        "bridge_median": 1.0794,
+        "nonbridge_mean": 1.068700563697858,
+        "nonbridge_median": 1.3863,
+        "ratio": 0.9833118069263423
+      },
+      "initial_rate": {
+        "bridge_mean": 0.08751411764705883,
+        "bridge_median": 0.0595,
+        "nonbridge_mean": 0.0598445321307779,
+        "nonbridge_median": 0.0,
+        "ratio": 1.4623577882740355
+      },
+      "final_rate": {
+        "bridge_mean": 0.15485176470588236,
+        "bridge_median": 0.0798,
+        "nonbridge_mean": 0.05869729425028184,
+        "nonbridge_median": 0.0,
+        "ratio": 2.638141445593786
+      },
+      "folio_spread": {
+        "bridge_mean": 0.4969870588235294,
+        "bridge_median": 0.4512,
+        "nonbridge_mean": 0.019155242390078916,
+        "nonbridge_median": 0.0,
+        "ratio": 25.945224221278146
+      },
+      "hub_loading": {
+        "bridge_mean": 0.08366613369023006,
+        "bridge_median": 0.07278697044541642,
+        "nonbridge_mean": 0.013380013670164335,
+        "nonbridge_median": 0.009906061935045255,
+        "ratio": 6.253067878158786
+      },
+      "residual_norm": {
+        "bridge_mean": 0.5932022713151893,
+        "bridge_median": 0.6363627485904046,
+        "nonbridge_mean": 0.25438032392292176,
+        "nonbridge_median": 0.232535386815754,
+        "ratio": 2.331950294610569
+      },
+      "n_prefixes": {
+        "bridge_mean": 10.467532467532468,
+        "bridge_median": 8.0,
+        "nonbridge_mean": 5.541666666666667,
+        "nonbridge_median": 5.0,
+        "ratio": 1.888878039253979
+      }
+    },
+    "bridge_middles": [
+      "a",
+      "ai",
+      "aii",
+      "aiin",
+      "ain",
+      "al",
+      "am",
+      "an",
+      "ar",
+      "ck",
+      "ckh",
+      "cp",
+      "cph",
+      "ct",
+      "d",
+      "do",
+      "dy",
+      "e",
+      "eck",
+      "ect",
+      "ed",
+      "edy",
+      "ee",
+      "eek",
+      "eeo",
+      "eeol",
+      "eey",
+      "ek",
+      "eo",
+      "eod",
+      "eol",
+      "et",
+      "ey",
+      "g",
+      "h",
+      "hy",
+      "i",
+      "ii",
+      "iin",
+      "im",
+      "in",
+      "k",
+      "ka",
+      "kai",
+      "kc",
+      "kch",
+      "ke",
+      "kec",
+      "keed",
+      "keeo",
+      "keo",
+      "l",
+      "lo",
+      "ly",
+      "m",
+      "n",
+      "o",
+      "ock",
+      "oct",
+      "od",
+      "oiin",
+      "ok",
+      "okc",
+      "ol",
+      "om",
+      "op",
+      "opc",
+      "opch",
+      "or",
+      "ot",
+      "pc",
+      "pch",
+      "qo",
+      "r",
+      "ry",
+      "s",
+      "sh",
+      "t",
+      "tc",
+      "tch",
+      "tcho",
+      "te",
+      "teo",
+      "y",
+      "yt"
+    ]
+  },
+  "t6_synthesis": {
+    "predictions": {
+      "P1_compat_degree": {
+        "pass": true
+      },
+      "P2_shorter": {
+        "pass": true
+      },
+      "P3_structural_beyond_freq": {
+        "auc_diff": -0.07395812070856833,
+        "pass": false
+      },
+      "P4_hub_enrichment": {
+        "enrichment": 4.77892888498683,
+        "pass": true
+      },
+      "P5_folio_spread": {
+        "pass": true
+      },
+      "P6_prefix_promiscuity": {
+        "pass": true
+      }
+    },
+    "n_pass": 5,
+    "n_total": 6,
+    "auc_frequency": 0.977637774388222,
+    "auc_full": 0.9036796536796536,
+    "auc_diff": -0.07395812070856833,
+    "verdict": "TOPOLOGICAL_SELECTION"
+  },
+  "elapsed_seconds": 148.2
+}

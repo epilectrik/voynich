@@ -3,8 +3,8 @@
 meta:
   name: "Currier A Structural Contract"
   acronym: "CASC"
-  version: "1.6"
-  date: "2026-02-06"
+  version: "1.7"
+  date: "2026-02-12"
   status: "LOCKED"
   derived_from: "Tier-2 constraints only"
   governance: |
@@ -428,6 +428,8 @@ participation:
       - "multi-axis constraint composition"
       - "AZC legality routing"
       - "survivor-set collapse (C481)"
+      - "bridge MIDDLE topological selection (C1013)"
+      - "geometric viability alignment via bridge backbone (C1014)"
       - "multi-dimensional PP convergence at RECORD level"
     section_distribution:
       H_in_B: "91.6% (76/83 folios)"
@@ -467,7 +469,21 @@ participation:
 
       provenance: "C824, C825, C826"
 
-    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826"
+      viability_landscape:  # C1013, C1014
+        bridge_mechanism:
+          bridge_count: 85  # out of 972 MIDDLEs
+          selection_principle: "Topological generality (frequency AUC=0.978)"
+          hub_universal_coverage: "100% (23/23)"
+          provenance: "C1013"
+        geometric_alignment:
+          manifold_viability_r: 0.914  # Mantel p=0.001
+          hub_removed_stronger: true  # ratio=1.031
+          size_independent: true  # retention=100.1%
+          class_propagation_r: 0.622
+          bridge_signal_share: "91% (r=0.905 vs non-bridge r=0.194)"
+          provenance: "C1014"
+
+    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014"
 
 # ============================================================
 positional:
@@ -638,6 +654,8 @@ provenance:
     - "C826"  # Token filtering model reconciliation
     - "C885"  # A-B vocabulary correspondence (81% coverage)
     - "C899"  # A-B within-line positional correspondence
+    - "C1013"  # Bridge MIDDLE topological selection (freq AUC=0.978)
+    - "C1014"  # Manifold viability alignment (r=0.914, bridge-mediated)
 
   positional:
     - "C260"  # Section isolation

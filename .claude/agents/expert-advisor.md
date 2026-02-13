@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 875 validated constraints and 56 explanatory fits loaded
+embedded below. You have ALL 879 validated constraints and 56 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -61,8 +61,8 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # EMBEDDED EXPERT CONTEXT
 
-**Generated:** 2026-02-12 17:54
-**Version:** FROZEN STATE (875 constraints, 56 fits)
+**Generated:** 2026-02-12 22:19
+**Version:** FROZEN STATE (879 constraints, 56 fits)
 
 ---
 
@@ -84,7 +84,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.54 | **Status:** FROZEN | **Constraints:** 875 | **Date:** 2026-02-12
+**Version:** 3.58 | **Status:** FROZEN | **Constraints:** 879 | **Date:** 2026-02-12
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -283,8 +283,8 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 875 |
-| Completed phases | 328 |
+| Validated constraints | 877 |
+| Completed phases | 330 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -1672,7 +1672,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 875 constraints | 2026-02-12
+CONSTRAINT_REFERENCE v2.6 | 879 constraints | 2026-02-12
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2553,6 +2553,10 @@ C1007	**AXM Exit-Boundary Gatekeeper Subset** (specific classes 3-10x enriched a
 C1008	**AXM Directional Gating Mechanism** (entry/exit asymmetry chi2=152.60 p<0.0001; 5 AUXILIARY classes {15,20,21,22,25} enriched 2-10x at exit only; lower transition entropy 4.12 vs 4.56 bits p=0.016; survives mid-line control p=0.002; not structural bridges betweenness p=0.514; REGIME-contextual class identity)
 C1009	**AXM Exit Hazard-Target Compositional Curvature** (HAZARD_TARGET density increases from ~10% at t-3 to ~16% at exit rho=-0.055 p=0.0001; no radial depth gradient p=0.098; exit sub-role composition different chi2=13.89 p=0.003; compositional not spectral mechanism)
 C1010	**6-State Macro-Automaton is Minimal Invariant-Preserving Partition** (k<6 breaks role integrity and depletion separation: k=5 has 2 violations, k=4 has 5, k=3 has 9; AIC minimum at k=6 with ~110 point advantage over k=5; k>6 preserves constraints but adds no structural benefit; depletion gap persists at all k z=7-9 — 49-class phenomenon; independent spectral clustering ARI=0.059 — partition is structurally forced not spectrally natural)
+C1011	**Discrimination Manifold and Macro-Automaton are Geometrically Independent** (only 85/972 MIDDLEs (8.7%) bridge A manifold → B grammar; macro-state silhouette = -0.126 z=-0.96 p=0.843 — no geometric footprint; forbidden transitions not at geometric boundaries ratio=0.991 p=1.0; HUB MIDDLEs peripheral not central norm 2.31 vs 0.76 p≈0; HUB sub-roles not geometrically distinct p=0.577; 3/6 pre-registered predictions passed; manifold = A-level compatibility, automaton = B-level transition topology — complementary not redundant)
+C1012	**PREFIX is Macro-State Selector via Positive Channeling, Not Negative Prohibition** (76.7% entropy reduction z=1139 p≈0; many PREFIXes 100% single-state; but 102 prohibitions NOT cross-state targeted 23.2% vs 27.8% null z=-1.58; forbidden transitions not preferentially backed 38.9% vs 46.2% null; positional mediation 39.9%; EN PREFIXes 100% AXM+AXm; FL_HAZ+CC prohibition enrichment 2.14x; enforcement is inclusion-based not exclusion-based)
+C1013	A->B Vocabulary Bridge is a Topological Generality Filter
+C1014	Discrimination Manifold Encodes Viability Structure via Bridge Backbone
 
 ---
 
@@ -8207,8 +8211,8 @@ From this point forward:
 meta:
   name: "Currier A Structural Contract"
   acronym: "CASC"
-  version: "1.6"
-  date: "2026-02-06"
+  version: "1.7"
+  date: "2026-02-12"
   status: "LOCKED"
   derived_from: "Tier-2 constraints only"
   governance: |
@@ -8632,6 +8636,8 @@ participation:
       - "multi-axis constraint composition"
       - "AZC legality routing"
       - "survivor-set collapse (C481)"
+      - "bridge MIDDLE topological selection (C1013)"
+      - "geometric viability alignment via bridge backbone (C1014)"
       - "multi-dimensional PP convergence at RECORD level"
     section_distribution:
       H_in_B: "91.6% (76/83 folios)"
@@ -8671,7 +8677,21 @@ participation:
 
       provenance: "C824, C825, C826"
 
-    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826"
+      viability_landscape:  # C1013, C1014
+        bridge_mechanism:
+          bridge_count: 85  # out of 972 MIDDLEs
+          selection_principle: "Topological generality (frequency AUC=0.978)"
+          hub_universal_coverage: "100% (23/23)"
+          provenance: "C1013"
+        geometric_alignment:
+          manifold_viability_r: 0.914  # Mantel p=0.001
+          hub_removed_stronger: true  # ratio=1.031
+          size_independent: true  # retention=100.1%
+          class_propagation_r: 0.622
+          bridge_signal_share: "91% (r=0.905 vs non-bridge r=0.194)"
+          provenance: "C1014"
+
+    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014"
 
 # ============================================================
 positional:
@@ -8842,6 +8862,8 @@ provenance:
     - "C826"  # Token filtering model reconciliation
     - "C885"  # A-B vocabulary correspondence (81% coverage)
     - "C899"  # A-B within-line positional correspondence
+    - "C1013"  # Bridge MIDDLE topological selection (freq AUC=0.978)
+    - "C1014"  # Manifold viability alignment (r=0.914, bridge-mediated)
 
   positional:
     - "C260"  # Section isolation
@@ -8878,7 +8900,7 @@ provenance:
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.5"
+  version: "3.6"
   date: "2026-02-12"
   status: "LOCKED"
   layer_type: "grammar contract"
@@ -8969,8 +8991,8 @@ guarantees:
     provenance: "C171"
 
   - id: "MACRO_AUTOMATON_COMPRESSION"
-    statement: "49 instruction classes compress to 6 macro-states (8.17x) with spectral gap 0.894; EN/AX merge, FL splits HAZ/SAFE; non-geometric dwell is aggregation artifact"
-    provenance: "C976, C977, C978, C1006"
+    statement: "49 instruction classes compress to 6 macro-states (8.17x) with spectral gap 0.894; EN/AX merge, FL splits HAZ/SAFE; non-geometric dwell is aggregation artifact; partition is MINIMAL (no coarser grouping preserves invariants); geometrically independent of discrimination manifold"
+    provenance: "C976, C977, C978, C1006, C1010, C1011"
 
   - id: "AFFORDANCE_BIN_SYSTEM"
     statement: "972 MIDDLEs classify into 9 functional bins by affordance signature; chromatic number 3 for PREFIX-lane interaction; HUB_UNIVERSAL (23 MIDDLEs) monopolizes all 17/17 forbidden transitions"
@@ -9013,8 +9035,8 @@ guarantees:
     provenance: "C1003"
 
   - id: "PREFIX_MIDDLE_SELECTIVITY"
-    statement: "PREFIX selects MIDDLE family (102 forbidden combinations) and transforms MIDDLE behavior (within-MIDDLE between-PREFIX JSD = 97.5% of between-MIDDLE JSD)"
-    provenance: "C911, C661"
+    statement: "PREFIX selects MIDDLE family (102 forbidden combinations) and transforms MIDDLE behavior (within-MIDDLE between-PREFIX JSD = 97.5% of between-MIDDLE JSD); PREFIX also channels macro-state selection (76.7% entropy reduction via positive inclusion, not the 102 prohibitions)"
+    provenance: "C911, C661, C1012"
 
   - id: "PARAGRAPH_EXECUTION_GRADIENT"
     statement: "Paragraph body lines follow a specification→execution gradient: early lines have rare/unique vocabulary (specification), late lines have universal vocabulary (generic execution loop)"
@@ -10664,6 +10686,9 @@ provenance:
     - "C980"   # Macro-automaton integrated verdict
     - "C1004"  # 49-class optimality confirmed (token-level 38% worse)
     - "C1006"  # Non-geometric dwell is topology artifact
+    - "C1010"  # 6-state partition is minimal (no coarser grouping preserves invariants)
+    - "C1011"  # Macro-automaton geometrically independent of discrimination manifold
+    - "C1012"  # PREFIX channels macro-state selection (76.7% entropy reduction)
 
   affordance_system:
     - "C995"   # 9-bin affordance system
@@ -10682,6 +10707,7 @@ provenance:
 
   prefix_information_decomposition:
     - "C1001"  # PREFIX dual encoding (content + positional grammar)
+    - "C1012"  # PREFIX positive macro-state channeling (inclusion > prohibition)
 
   fingerprint:
     - "C971"   # Cross-line MI = 0.521 bits
