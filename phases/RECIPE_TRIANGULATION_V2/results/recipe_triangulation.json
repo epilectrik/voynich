@@ -1,0 +1,311 @@
+{
+  "phase": "RECIPE_TRIANGULATION_V2",
+  "phase_number": 333,
+  "tests": {
+    "T2": {
+      "test": "T2_GATE_REGIME_SPECIFICITY",
+      "n_middles": 388,
+      "median_specificity": 0.5,
+      "high_spec_count": 322,
+      "r4_heavy_count": 27,
+      "precision_r4_rate": 0.0053475935828877,
+      "careful_r4_rate": 0.016456180635285114,
+      "fisher_p": 0.9533806848706172,
+      "fisher_or": 0.3213303325831458,
+      "predictions": {
+        "median_spec_gt_0.05": true,
+        "high_spec_gte_10": true,
+        "r4_enrichment_p_lt_0.05": false
+      },
+      "verdict": "PARTIAL"
+    },
+    "T1": {
+      "test": "T1_HANDLING_TYPE_DISCRIMINATION",
+      "mean_profiles": {
+        "careful": {
+          "REGIME_1": 0.5275375466591644,
+          "REGIME_2": 0.10802235340879289,
+          "REGIME_3": 0.27768068757250375,
+          "REGIME_4": 0.08675941235953902
+        },
+        "standard": {
+          "REGIME_1": 0.5117146660041771,
+          "REGIME_2": 0.11187397637595366,
+          "REGIME_3": 0.2830560942127075,
+          "REGIME_4": 0.09335526340716166
+        },
+        "precision": {
+          "REGIME_1": 0.5624964001298859,
+          "REGIME_2": 0.09799231283949389,
+          "REGIME_3": 0.2589051924176641,
+          "REGIME_4": 0.08060609461295606
+        },
+        "gentle": {
+          "REGIME_1": 0.5258047935960461,
+          "REGIME_2": 0.11158419207615636,
+          "REGIME_3": 0.2837697274745413,
+          "REGIME_4": 0.07884128685325609
+        }
+      },
+      "r4_stats": {
+        "careful": {
+          "n": 107,
+          "mean": 0.08675941235953902,
+          "std": 0.009298591238912267
+        },
+        "standard": {
+          "n": 18,
+          "mean": 0.09335526340716166,
+          "std": 0.02440557092181574
+        },
+        "precision": {
+          "n": 9,
+          "mean": 0.08060609461295606,
+          "std": 0.005155416868898384
+        },
+        "gentle": {
+          "n": 2,
+          "mean": 0.07884128685325609,
+          "std": 0.01830641153702913
+        }
+      },
+      "precision_vs_careful": {
+        "mann_whitney_p": 0.9874371624281814,
+        "cohens_d": -0.8184726822860129,
+        "direction_correct": false
+      },
+      "kruskal_wallis": {
+        "H": 4.834335862730427,
+        "p": 0.18433765302228466
+      },
+      "predictions": {
+        "precision_gt_careful": false,
+        "mann_whitney_p_lt_0.05": false,
+        "cohens_d_gt_0.5": false
+      },
+      "verdict": "FAIL"
+    },
+    "T3": {
+      "test": "T3_SIZE_CONTROLLED_R4_ENRICHMENT",
+      "method": "label_permutation",
+      "n_total": 136,
+      "n_precision": 9,
+      "observed_precision_mean_r4": 0.08060609461295606,
+      "overall_mean_r4": 0.08710874477222574,
+      "difference": -0.0065026501592696795,
+      "percentile": 2.9000000000000004,
+      "perm_p_two_sided": 0.086,
+      "perm_p_greater": 0.971,
+      "n_permutations": 1000,
+      "para_percentiles": [
+        {
+          "para_id": "A_085",
+          "r4": 0.08611796366898408,
+          "percentile": 50.73529411764706
+        },
+        {
+          "para_id": "A_155",
+          "r4": 0.0765520134228188,
+          "percentile": 13.23529411764706
+        },
+        {
+          "para_id": "A_160",
+          "r4": 0.08453957499230058,
+          "percentile": 42.64705882352941
+        },
+        {
+          "para_id": "A_194",
+          "r4": 0.08225286976628954,
+          "percentile": 33.088235294117645
+        },
+        {
+          "para_id": "A_196",
+          "r4": 0.07254554247944543,
+          "percentile": 5.147058823529411
+        },
+        {
+          "para_id": "A_280",
+          "r4": 0.08291250733998826,
+          "percentile": 37.5
+        },
+        {
+          "para_id": "A_283",
+          "r4": 0.07189361407397146,
+          "percentile": 4.411764705882353
+        },
+        {
+          "para_id": "A_324",
+          "r4": 0.08477495107632094,
+          "percentile": 44.85294117647059
+        },
+        {
+          "para_id": "A_332",
+          "r4": 0.08386581469648563,
+          "percentile": 40.44117647058824
+        }
+      ],
+      "above_60th_count": 0,
+      "predictions": {
+        "percentile_gt_70": false,
+        "direction_correct": false
+      },
+      "verdict": "FAIL"
+    },
+    "T4": {
+      "test": "T4_FIRE_DEGREE_CONCORDANCE",
+      "expected_mapping": {
+        "gentle": "REGIME_2",
+        "careful": "REGIME_1",
+        "standard": "REGIME_3",
+        "precision": "REGIME_4"
+      },
+      "results": {
+        "gentle": {
+          "expected": "REGIME_2",
+          "observed": "REGIME_1",
+          "concordant": false,
+          "profile": {
+            "REGIME_1": 0.5258047935960461,
+            "REGIME_2": 0.11158419207615636,
+            "REGIME_3": 0.2837697274745413,
+            "REGIME_4": 0.07884128685325609
+          }
+        },
+        "careful": {
+          "expected": "REGIME_1",
+          "observed": "REGIME_1",
+          "concordant": true,
+          "profile": {
+            "REGIME_1": 0.5275375466591644,
+            "REGIME_2": 0.10802235340879289,
+            "REGIME_3": 0.27768068757250375,
+            "REGIME_4": 0.08675941235953902
+          }
+        },
+        "standard": {
+          "expected": "REGIME_3",
+          "observed": "REGIME_1",
+          "concordant": false,
+          "profile": {
+            "REGIME_1": 0.5117146660041771,
+            "REGIME_2": 0.11187397637595366,
+            "REGIME_3": 0.2830560942127075,
+            "REGIME_4": 0.09335526340716166
+          }
+        },
+        "precision": {
+          "expected": "REGIME_4",
+          "observed": "REGIME_1",
+          "concordant": false,
+          "profile": {
+            "REGIME_1": 0.5624964001298859,
+            "REGIME_2": 0.09799231283949389,
+            "REGIME_3": 0.2589051924176641,
+            "REGIME_4": 0.08060609461295606
+          }
+        }
+      },
+      "concordant_count": 1,
+      "total": 4,
+      "binom_p": 0.68359375,
+      "predictions": {
+        "concordant_gte_3": false,
+        "precision_concordant": false
+      },
+      "verdict": "FAIL"
+    },
+    "T5": {
+      "test": "T5_REGIME_GRADIENT",
+      "means": {
+        "careful": 0.08675941235953902,
+        "standard": 0.09335526340716166,
+        "precision": 0.08060609461295606
+      },
+      "correct_order": false,
+      "spearman_rho": -0.10562546406921867,
+      "spearman_p": 0.22449994092102954,
+      "predictions": {
+        "order_correct": false,
+        "spearman_p_lt_0.05": false
+      },
+      "verdict": "FAIL"
+    },
+    "T6": {
+      "test": "T6_PROCEDURAL_COMPLEXITY",
+      "brunschwig_steps": {
+        "careful": {
+          "mean": 2.3642857142857143,
+          "n": 140
+        },
+        "standard": {
+          "mean": 2.727272727272727,
+          "n": 11
+        },
+        "gentle": {
+          "mean": 1.9375,
+          "n": 32
+        },
+        "precision": {
+          "mean": 3.4,
+          "n": 5
+        }
+      },
+      "voynich_pp_size": {
+        "careful": {
+          "mean": 24.42056074766355,
+          "n": 107
+        },
+        "standard": {
+          "mean": 18.166666666666668,
+          "n": 18
+        },
+        "precision": {
+          "mean": 20.77777777777778,
+          "n": 9
+        },
+        "gentle": {
+          "mean": 15.5,
+          "n": 2
+        }
+      },
+      "correlation": {
+        "rho": 0.39999999999999997,
+        "p": 0.6,
+        "n_pairs": 4
+      },
+      "direction_correct": false,
+      "predictions": {
+        "rho_gt_0.5": false,
+        "precision_pp_gt_careful": false
+      },
+      "verdict": "FAIL"
+    }
+  },
+  "synthesis": {
+    "verdict": "NO_SIGNAL",
+    "reason": "No significant triangulation detected",
+    "test_verdicts": {
+      "T2_GATE": "PARTIAL",
+      "T1": "FAIL",
+      "T3": "FAIL",
+      "T4": "FAIL",
+      "T5": "FAIL",
+      "T6": "FAIL"
+    },
+    "pass_count": 0
+  },
+  "metadata": {
+    "n_paragraphs": 342,
+    "n_pp_middles_total": 404,
+    "n_pp_middles_in_b": 388,
+    "n_b_folios": 82,
+    "n_recipes": 245,
+    "handling_counts": {
+      "careful": 107,
+      "standard": 18,
+      "unknown": 25,
+      "precision": 9,
+      "gentle": 2
+    }
+  }
+}
