@@ -2039,6 +2039,44 @@ These files contain detailed constraint documentation. Constraint ranges are app
 
 ---
 
+### PREFIX Composition State Routing (C1015) — Phase: PREFIX_COMPOSITION_STATE_ROUTING
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1015** | **PREFIX-Conditioned Macro-State Mutability with FL-Specific Routing Asymmetry** (da unique FL router OR=126.67 p≈0 routes both FL_HAZ+FL_SAFE 5:5; ar pure FL_SAFE selector 5/5 p≈0; 41.0% entropy reduction z=17.6 p≈0 operationalizes C661/C1012; mean purity 0.862 z=3.8 p=0.0001; 6×6 transition matrix: AXM attractor self=0.697 pull=0.642; FL_SAFE NOT absorbing self=0.023 return=117.7 steps; CC pure initiator self=0.041; spectral gap=0.896 mixing=1.1 steps; stationary≈empirical dev=0.012; MDL-optimal single component at corpus scale rank 1/4 33.9% compression) | 2 | B | -> [C1015_prefix_composition_state_routing.md](C1015_prefix_composition_state_routing.md) |
+
+**Phase findings (T1-T8):**
+- T1: State-change rate 77.8% vs 73.0% null (p=0.34) — FAIL (AXM dominance inflates null; informative)
+- T2: PREFIX entropy reduction 41.0% (z=17.6, p≈0); operationalizes C661/C1012 at macro-state level
+- T3: da unique FL router (OR=126.67, p≈0); 5:5 HAZ:SAFE; only PREFIX in both FL states
+- T4: ar 100% FL_SAFE (5/5, binomial p≈0 vs 2.5% base rate)
+- T5: Mean purity 0.862 vs 0.780 null (z=3.8, p=0.0001)
+- T6: Full 6×6 transition matrix — AXM attractor (0.697), FL_SAFE fleeting (0.023), CC initiator (0.041), ergodic (gap=0.896)
+- T7: MDL compression — PREFIX rank 1/4 at corpus scale (N=16,054); 33.9% compression; BIC-optimal single component
+- T8: Generative sufficiency — FAIL (r=0.963 but R²=-4.04; PREFIX selects states but can't alone regenerate dynamics; C1003 pairwise interaction required)
+- Verdict: COMPOSITION_ROUTING_CONFIRMED — 6/8 passed (T1/T8 informative nulls)
+
+---
+
+### Folio-Level Macro-Automaton Decomposition (C1016) — Phase: FOLIO_MACRO_AUTOMATON_DECOMPOSITION
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1016** | **Folio-Level Macro-Automaton Decomposition with Dynamical Archetypes** (6 dynamical archetypes cross-cut 4 REGIMEs ARI=0.065; forgiveness = AXM attractor strength rho=0.678 6 Bonferroni-significant features; REGIME+section explain only 33.7% of transition variance 66.3% program-specific; 72/82 folios with N≥50 transitions) | 2 | B | -> [C1016_folio_macro_automaton_decomposition.md](C1016_folio_macro_automaton_decomposition.md) |
+
+**Phase findings (T1-T8):**
+- T1: 72/82 folios with N≥50 transitions; 13,645 total matches C1015/T6; AXM occupancy CV=0.160, FL_SAFE CV=1.040
+- T2: 6 archetypes (silhouette=0.185); ARI(REGIME)=0.065 (near-zero); ARI(section)=0.185 (weak); "strong attractor" (AXM self=0.82) to "active interchange" (AXM self=0.47)
+- T3: C458 realization — FAIL (hazard CV=1.814, recovery CV=0.289; C458 clamping is aggregate-level not transition-level; informative)
+- T4: Forgiveness decomposition — 6 Bonferroni-significant features: AXM occ (0.678), AXM self (0.651), FQ occ (-0.563), FQ→AXM (0.559), AXM→FQ (-0.522), FQ self (-0.453)
+- T5: Restart signature — f57r FQ depressed z=-2.06 (constrained excursion space); f82v AXM elevated z=+1.93
+- T6: Variance decomposition — REGIME eta²=0.149, section eta²=0.243, combined=0.337, residual=0.663
+- T7: Geometry/topology independence — ARI(manifold clusters, archetypes)=0.163; LOO accuracy=0.444 vs 0.167 chance; vocabulary geometry weakly predicts but cannot determine archetypes
+- T8: Bridge conduit test — bridge-only ARI=0.141 vs non-bridge ARI=0.037 (3.8x); bridge backbone carries most geometry→dynamics information; bridge density anti-correlated with AXM self (rho=-0.308)
+- Verdict: FOLIO_DECOMPOSITION_CONFIRMED — 7/8 passed (T3 informative null)
+
+---
+
 ## Navigation
 
 ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)

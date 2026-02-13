@@ -20,8 +20,8 @@
 meta:
   name: "Brunschwig Structural Contract"
   acronym: "BRSC"
-  version: "2.1"
-  date: "2026-02-08"
+  version: "2.2"
+  date: "2026-02-13"
   status: "DRAFT"
   layer_type: "external reference contract"
   derived_from: "Hieronymus Brunschwig, Liber de arte distillandi (1500)"
@@ -969,8 +969,15 @@ voynich_mapping:
 
     - brunschwig: "Quality rejection (5 tests)"
       voynich: "17 forbidden transitions (5 hazard classes)"
-      confidence: "MEDIUM"
-      evidence: "C109"
+      confidence: "HIGH"
+      evidence: "C109, F-BRU-023"
+      validation: "15/15 glossed forbidden transitions map to recognizable distillation failures; 8/8 asymmetric pairs have coherent physical explanations; all 5 failure classes thermodynamically grounded (Phase 334)"
+
+    - brunschwig: "Safety intervention between critical steps"
+      voynich: "22 safety buffer tokens (physically coherent lane switches and work insertions)"
+      confidence: "HIGH"
+      evidence: "C997, F-BRU-023"
+      validation: "22/22 buffers validated as physically coherent interventions; REGIME_1 enriched 1.86x (chi²=11.79, p=0.008)"
 
     - brunschwig: "Fourth degree FORBIDDEN"
       voynich: "HIGH_IMPACT forbidden in REGIME_4"
@@ -1018,6 +1025,15 @@ provenance:
         is in Book 1 (chapters V-XXIII), which describes general protocols
         for temperature control, sealing, monitoring, filtering, fermenting,
         rectifying, and storage. These apply to ALL recipes by reference.
+    - version: "2.2"
+      date: "2026-02-13"
+      scope: "Thermodynamic coherence validation (F-BRU-023)"
+      key_finding: |
+        Quality rejection mapping upgraded MEDIUM→HIGH confidence after Phase 334
+        validated all 17 forbidden transitions as physically coherent distillation
+        failure modes (15/15 glossed, 8/8 asymmetric). Added safety buffer mapping
+        (22/22 physically coherent interventions). Evidence: F-BRU-023, C997.
+
     - version: "2.1"
       date: "2026-02-08"
       scope: "Seal operation differentiation from OCR source"

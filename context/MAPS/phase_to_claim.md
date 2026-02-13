@@ -153,6 +153,7 @@ Look up phase to find constraints it produced.
 | SURVIVOR_SET_GEOMETRY_ALIGNMENT | C1014 |
 | GLOSS_STRUCTURAL_VALIDATION | (F-BRU-025, no new constraints) |
 | GLOSS_ADVERSARIAL_VALIDATION | (F-BRU-026, no new constraints) |
+| PREFIX_COMPOSITION_STATE_ROUTING | C1015 |
 
 ---
 

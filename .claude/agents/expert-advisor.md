@@ -61,7 +61,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # EMBEDDED EXPERT CONTEXT
 
-**Generated:** 2026-02-13 09:14
+**Generated:** 2026-02-13 13:46
 **Version:** FROZEN STATE (879 constraints, 61 fits)
 
 ---
@@ -84,7 +84,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.63 | **Status:** FROZEN | **Constraints:** 879 | **Date:** 2026-02-13
+**Version:** 3.66 | **Status:** FROZEN | **Constraints:** 881 | **Date:** 2026-02-13
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -8216,8 +8216,8 @@ From this point forward:
 meta:
   name: "Currier A Structural Contract"
   acronym: "CASC"
-  version: "1.7"
-  date: "2026-02-12"
+  version: "1.8"
+  date: "2026-02-13"
   status: "LOCKED"
   derived_from: "Tier-2 constraints only"
   governance: |
@@ -8643,6 +8643,7 @@ participation:
       - "survivor-set collapse (C481)"
       - "bridge MIDDLE topological selection (C1013)"
       - "geometric viability alignment via bridge backbone (C1014)"
+      - "bridge conduit mediation — bridge MIDDLEs carry 3.8x more archetype-predictive information than non-bridges in B folio dynamical behavior (C1016)"
       - "multi-dimensional PP convergence at RECORD level"
     section_distribution:
       H_in_B: "91.6% (76/83 folios)"
@@ -8695,8 +8696,16 @@ participation:
           class_propagation_r: 0.622
           bridge_signal_share: "91% (r=0.905 vs non-bridge r=0.194)"
           provenance: "C1014"
+        bridge_density_dynamics:
+          mean_folio_bridge_density: 0.727  # 72.7% of manifold MIDDLEs per folio are bridges
+          bridge_archetype_ari: 0.141  # bridge-only manifold features predict B dynamical archetypes
+          nonbridge_archetype_ari: 0.037  # non-bridge features carry essentially no archetype information
+          bridge_advantage: "3.8x"  # bridge/non-bridge ARI ratio
+          bridge_density_vs_axm_self: { rho: -0.308, p: 0.009 }  # more bridges = weaker attractor = more dynamical options
+          interpretation: "Bridge backbone is the geometry→dynamics conduit — the A-derived vocabulary that directly shapes B's macro-state behavior at folio level"
+          provenance: "C1016"
 
-    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014"
+    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016"
 
 # ============================================================
 positional:
@@ -8869,6 +8878,7 @@ provenance:
     - "C899"  # A-B within-line positional correspondence
     - "C1013"  # Bridge MIDDLE topological selection (freq AUC=0.978)
     - "C1014"  # Manifold viability alignment (r=0.914, bridge-mediated)
+    - "C1016"  # Bridge conduit: bridge MIDDLEs carry 3.8x more B dynamical archetype info than non-bridges
 
   positional:
     - "C260"  # Section isolation
@@ -8905,8 +8915,8 @@ provenance:
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.6"
-  date: "2026-02-12"
+  version: "3.8"
+  date: "2026-02-13"
   status: "LOCKED"
   layer_type: "grammar contract"
   derived_from: "Tier 0-2 constraints (structural); Tier 3 operational layer clearly marked"
@@ -8996,8 +9006,28 @@ guarantees:
     provenance: "C171"
 
   - id: "MACRO_AUTOMATON_COMPRESSION"
-    statement: "49 instruction classes compress to 6 macro-states (8.17x) with spectral gap 0.894; EN/AX merge, FL splits HAZ/SAFE; non-geometric dwell is aggregation artifact; partition is MINIMAL (no coarser grouping preserves invariants); geometrically independent of discrimination manifold"
-    provenance: "C976, C977, C978, C1006, C1010, C1011"
+    statement: "49 instruction classes compress to 6 macro-states (8.17x) with spectral gap 0.896; EN/AX merge, FL splits HAZ/SAFE; non-geometric dwell is aggregation artifact; partition is MINIMAL (no coarser grouping preserves invariants); geometrically independent of discrimination manifold at both corpus and folio level (ARI=0.163, with bridge backbone mediating weak geometry→dynamics coupling); dynamically characterized (full transition matrix, stationary distribution matches empirical within 1.2%)"
+    provenance: "C976, C977, C978, C1006, C1010, C1011, C1015, C1016"
+
+  - id: "MACRO_STATE_DYNAMICS"
+    statement: "6-state macro-automaton has full 6×6 transition matrix: AXM is a massive attractor (self=0.697, gravitational pull=0.642), FL_SAFE is a fleeting terminal (self=0.023, return time=117.7 steps, NOT absorbing), CC is a pure initiator (self=0.041); system is ergodic (spectral gap=0.896, mixing time=1.1 steps, stationary matches empirical within 1.2%). Folio-level decomposition reveals 6 dynamical archetypes (silhouette=0.185) that are orthogonal to the 4 REGIMEs (ARI=0.065); REGIME+section explain only 33.7% of transition variance, with 66.3% program-specific"
+    provenance: "C1015, C1016"
+
+  - id: "FL_ROUTING_ASYMMETRY"
+    statement: "FL_HAZ/FL_SAFE split is morphologically routed by PREFIX: da is the unique bi-directional FL router (5 HAZ, 5 SAFE, Fisher OR=126.67, p≈0); ar is a pure FL_SAFE selector (5/5=100%, binomial p≈0 vs 2.5% base rate); no other PREFIX has ≥2 tokens in each FL state"
+    provenance: "C1015, C586"
+
+  - id: "PREFIX_MDL_OPTIMALITY"
+    statement: "PREFIX is the MDL-optimal single morphological component for macro-state routing at corpus scale (N=16,054): rank 1/4, 33.9% compression vs baseline; BIC penalty accounts for model complexity"
+    provenance: "C1015"
+
+  - id: "BRIDGE_CONDUIT_MECHANISM"
+    statement: "Bridge MIDDLE backbone (85 MIDDLEs spanning A→B) mediates geometry→dynamics coupling at folio level: bridge-only manifold features predict dynamical archetypes with ARI=0.141 vs non-bridge ARI=0.037 (3.8x); non-bridge MIDDLEs carry essentially zero archetype-predictive information. Bridge density anti-correlates with AXM self-transition (rho=-0.308), indicating more bridge vocabulary = more available pathways = weaker single-state dominance"
+    provenance: "C1016, C1013, C1014"
+
+  - id: "FOLIO_DYNAMICAL_ARCHETYPES"
+    statement: "72 folios with sufficient transitions (N≥50) cluster into 6 dynamical archetypes organized along an AXM attractor strength axis: 'strong attractor' (AXM self=0.82, n=10) to 'active interchange' (AXM self=0.47, n=7). Archetypes are nearly orthogonal to REGIMEs (ARI=0.065) and weakly aligned with sections (ARI=0.185). Forgiveness = AXM attractor strength (rho=0.678, 6 Bonferroni-significant features)"
+    provenance: "C1016"
 
   - id: "AFFORDANCE_BIN_SYSTEM"
     statement: "972 MIDDLEs classify into 9 functional bins by affordance signature; chromatic number 3 for PREFIX-lane interaction; HUB_UNIVERSAL (23 MIDDLEs) monopolizes all 17/17 forbidden transitions"
@@ -9040,8 +9070,8 @@ guarantees:
     provenance: "C1003"
 
   - id: "PREFIX_MIDDLE_SELECTIVITY"
-    statement: "PREFIX selects MIDDLE family (102 forbidden combinations) and transforms MIDDLE behavior (within-MIDDLE between-PREFIX JSD = 97.5% of between-MIDDLE JSD); PREFIX also channels macro-state selection (76.7% entropy reduction via positive inclusion, not the 102 prohibitions)"
-    provenance: "C911, C661, C1012"
+    statement: "PREFIX selects MIDDLE family (102 forbidden combinations) and transforms MIDDLE behavior (within-MIDDLE between-PREFIX JSD = 97.5% of between-MIDDLE JSD); PREFIX channels macro-state selection (76.7% binary FL entropy reduction via positive inclusion; 41.0% entropy reduction across full 6-state partition); 40.2% of MIDDLEs span multiple macro states depending on PREFIX"
+    provenance: "C911, C661, C1012, C1015"
 
   - id: "PARAGRAPH_EXECUTION_GRADIENT"
     statement: "Paragraph body lines follow a specification→execution gradient: early lines have rare/unique vocabulary (specification), late lines have universal vocabulary (generic execution loop)"
@@ -9219,6 +9249,8 @@ morphology:
         enrichment: "5.9-12.8x"
         forbidden: "k-family, e-family"
         token_count: "da=1083, sa=579"
+        fl_routing: "da is the UNIQUE bi-directional FL router — routes both FL_HAZ and FL_SAFE (Fisher OR=126.67, p≈0); da+{r,l,in,ir,m}→FL_HAZ; da+{ly,ry,iir,n}→FL_SAFE"
+        fl_provenance: "C1015"
       ot_ol:
         selects: "h-family (ch, sh)"
         enrichment: "3.3-6.8x"
@@ -9231,7 +9263,13 @@ morphology:
         positional_behavior: "Late in line (mean 0.538 vs 0.484 non-ok)"
         sister_pair: "ot (C408) — ok=proactive vessel management, ot=corrective adjustment"
         note: "ok is NOT a verb. Same-MIDDLE pairing with other prefixes (378 pairs) confirms PREFIX selects target domain, MIDDLE provides action. Semantic label 'VESSEL' is Tier 3."
-    provenance: "C911, C661, C662, C936"
+      ar:
+        selects: "FL_SAFE MIDDLEs exclusively"
+        purity: "5/5 = 100% FL_SAFE (binomial p≈0 vs 2.5% base rate)"
+        positional_behavior: "Late in line (LINE_FINAL zone, 61% Q5)"
+        note: "ar as PREFIX is a pure FL_SAFE selector — the only PREFIX with 100% purity for a non-AXM state (n≥3). Distinct from ar as MIDDLE (MEDIAL state index)."
+        provenance: "C1015"
+    provenance: "C911, C661, C662, C936, C1015"
 
   prefix_positional_zones:
     # Tier 2 structural fact: PREFIX encodes line position (dual encoding with content)
@@ -9311,11 +9349,15 @@ morphology:
       line_final_rate: "72.7%"
       operation_state_mapping: "Different ENERGY operations produce different FL terminal states"
       provenance: "C897"
+    macro_state_routing:
+      statement: "FL_HAZ vs FL_SAFE macro-state membership is determined by PREFIX, not MIDDLE alone"
+      mechanism: "da routes both FL_HAZ and FL_SAFE; ar routes exclusively FL_SAFE; 40.2% of MIDDLEs span multiple macro states depending on PREFIX context"
+      provenance: "C1015"
     character_encoding:
       early: "'i' character marks initial state"
       late: "Consonants (r, l, n, m) mark intermediate states"
       terminal: "'y' character marks terminal state"
-    provenance: "C777, C897"
+    provenance: "C777, C897, C1015"
 
 # ============================================================
 
@@ -9485,6 +9527,12 @@ hazards:
     provenance: "C109, C789"
 
   failure_classes:
+    thermodynamic_grounding: |
+      All 5 failure classes validated as physically coherent distillation failure modes:
+      15/15 glossed forbidden transitions map to recognizable failures;
+      8/8 asymmetric pairs have coherent physical explanations (reverse = safe).
+      Provenance: F-BRU-023 (THERMODYNAMIC_COHERENCE, Phase 334)
+
     PHASE_ORDERING:
       count: 7
       percentage: "41%"
@@ -9814,6 +9862,8 @@ recovery:
 safety_buffer_architecture:
 
   statement: "22 safety buffer tokens prevent forbidden transitions by intervening between hazard pairs"
+  physical_coherence: "22/22 buffers validated as physically coherent interventions (lane switches, work insertions); buffer REGIME distribution non-uniform: REGIME_1 enriched 1.86x (chi²=11.79, p=0.008)"
+  physical_coherence_provenance: "F-BRU-023"
   buffer_rate: "0.12% of interior tokens"
   bin_distribution:
     HUB_UNIVERSAL: "68% (15/22)"
@@ -9834,7 +9884,7 @@ safety_buffer_architecture:
     PURE_CONNECTOR: ["d", "e", "eey", "ek", "eo", "iin", "s", "y"]
   behavioral_homogeneity: "0/14 KW dimensions significant — functional diversity beneath behavioral uniformity"
   exit_boundary_connection: "HAZARD_TARGET MIDDLEs accumulate at AXM exit boundaries (C1009) — linking safety/hazard vocabulary to gatekeeper mechanism"
-  provenance: "C997, C1000, C1009"
+  provenance: "C997, C1000, C1009, F-BRU-023"
 
 # ============================================================
 axm_internal_architecture:
@@ -9844,7 +9894,7 @@ axm_internal_architecture:
     mechanism: "32 AXM classes almost never repeat (mean run 1.054 at 49-class); long 6-state runs are diverse class sequences"
     null_model: "First-order Markov null reproduces empirical dwell (KS D=0.020, p=0.074)"
     weibull_shape: "k=1.55 globally; REGIME-invariant (range 0.096)"
-    regime_modulation: "REGIME modulates dwell SCALE (lambda: 2.3-3.1) but NOT shape — consistent with C979"
+    regime_modulation: "REGIME modulates dwell SCALE (lambda: 2.3-3.1) but NOT shape — consistent with C979. At folio level, REGIME explains only 14.9% of transition variance (eta²); section explains 24.3%; combined 33.7%. Archetype structure (6 clusters) is orthogonal to REGIME (ARI=0.065) — consistent with C1016"
     non_geometricity_gradient: "Correlates with class compression: AXM (32 classes) > FQ (4 classes) > FL_HAZ (2 classes, geometric)"
     provenance: "C1006"
 
@@ -9881,6 +9931,47 @@ axm_internal_architecture:
     provenance: "C1007"
 
 # ============================================================
+macro_state_transition_matrix:
+
+  statement: "Full 6×6 transition probability matrix computed from 13,645 consecutive token-pair transitions across all B lines (16,054 mapped tokens)"
+  state_order: ["AXM", "AXm", "FL_HAZ", "FQ", "CC", "FL_SAFE"]
+
+  # Row = FROM state, Column = TO state
+  transition_probabilities:
+    AXM:     { AXM: 0.697, AXm: 0.029, FL_HAZ: 0.052, FQ: 0.173, CC: 0.042, FL_SAFE: 0.008 }
+    AXm:     { AXM: 0.682, AXm: 0.025, FL_HAZ: 0.062, FQ: 0.189, CC: 0.032, FL_SAFE: 0.010 }
+    FL_HAZ:  { AXM: 0.565, AXm: 0.026, FL_HAZ: 0.106, FQ: 0.239, CC: 0.049, FL_SAFE: 0.016 }
+    FQ:      { AXM: 0.591, AXm: 0.033, FL_HAZ: 0.073, FQ: 0.250, CC: 0.043, FL_SAFE: 0.009 }
+    CC:      { AXM: 0.672, AXm: 0.033, FL_HAZ: 0.070, FQ: 0.176, CC: 0.041, FL_SAFE: 0.008 }
+    FL_SAFE: { AXM: 0.698, AXm: 0.023, FL_HAZ: 0.070, FQ: 0.093, CC: 0.093, FL_SAFE: 0.023 }
+
+  stationary_distribution:
+    AXM: 0.667
+    AXm: 0.029
+    FL_HAZ: 0.060
+    FQ: 0.192
+    CC: 0.043
+    FL_SAFE: 0.008
+    max_deviation_from_empirical: "1.2%"
+
+  expected_return_times:
+    AXM: "1.5 steps (ever-present)"
+    FQ: "5.2 steps (frequent excursion)"
+    FL_HAZ: "16.5 steps (infrequent)"
+    CC: "23.5 steps (rare)"
+    AXm: "34.1 steps (rare variant)"
+    FL_SAFE: "117.7 steps (extremely rare fleeting terminal)"
+
+  dynamical_properties:
+    axm_attractor: "Self-transition 0.697; gravitational pull from all non-AXM states = 0.642"
+    fl_safe_fleeting: "Self-transition 0.023; NOT absorbing; immediate return to AXM (0.698)"
+    cc_initiator: "Self-transition 0.041; exits to AXM 0.672 — pure start-then-leave"
+    fl_haz_persistent: "Moderate self-transition 0.106; elevated FQ exit 0.239"
+    ergodic: "Spectral gap = 0.896; mixing time = 1.1 steps"
+
+  provenance: "C1015"
+
+# ============================================================
 design_freedom:
 
   clamped:
@@ -9896,7 +9987,8 @@ design_freedom:
       freedom: "YES"
 
   principle: "Risk is globally constrained; recovery strategy is locally variable"
-  provenance: "C458"
+  mechanism: "Recovery variation is mediated by AXM attractor strength — forgiving programs have higher AXM self-transition (rho=0.651), less FQ interchange; brittle programs have weaker attractors. C458's aggregate clamping (hazard CV=0.04-0.11) is the result of stable recovery channels (AXM self≈0.66, CV=0.174), not individual hazard transition stability (hazard CV=1.814)"
+  provenance: "C458, C1016"
 
 # ============================================================
 control_loop:
@@ -9988,7 +10080,8 @@ vocabulary_architecture:
     total_unique_middles: 858
     unique_share_of_total: "64%"
     only_non_unique_folio: "f95r1"
-    provenance: "C531"
+    dynamical_uniqueness: "66.3% of folio-level transition variance is program-specific (REGIME+section explain only 33.7%); vocabulary uniqueness parallels dynamical uniqueness"
+    provenance: "C531, C1016"
 
   folio_exclusivity:
     b_exclusive_rate: "88%"  # Not in A
@@ -10694,6 +10787,8 @@ provenance:
     - "C1010"  # 6-state partition is minimal (no coarser grouping preserves invariants)
     - "C1011"  # Macro-automaton geometrically independent of discrimination manifold
     - "C1012"  # PREFIX channels macro-state selection (76.7% entropy reduction)
+    - "C1015"  # PREFIX-conditioned macro-state routing, 6×6 transition matrix, FL routing asymmetry, MDL optimality
+    - "C1016"  # Folio-level decomposition: 6 archetypes orthogonal to REGIME; forgiveness = AXM attractor; bridge conduit; 66.3% program-specific variance
 
   affordance_system:
     - "C995"   # 9-bin affordance system
@@ -10713,6 +10808,7 @@ provenance:
   prefix_information_decomposition:
     - "C1001"  # PREFIX dual encoding (content + positional grammar)
     - "C1012"  # PREFIX positive macro-state channeling (inclusion > prohibition)
+    - "C1015"  # PREFIX is MDL-optimal single-component state router (33.9% compression at corpus scale)
 
   fingerprint:
     - "C971"   # Cross-line MI = 0.521 bits
@@ -10769,6 +10865,10 @@ disallowed:
   - interpretation: "ok encodes a verb (seal/lock/close/cover) with MIDDLE as modifier"
     reason: "ok is a domain selector (VESSEL), not a verb. MIDDLE provides the action. Verb-based glosses produce word salad at line level. 15 hypotheses tested; only domain-selector produces coherent procedures. 378 same-MIDDLE pairs confirm PREFIX differentiates target domain."
     provenance: "C936 (revised)"
+
+  - interpretation: "FL_SAFE is an absorbing or long-duration collection state"
+    reason: "FL_SAFE has self-transition of only 0.023, exits to AXM at 0.698, and has expected return time of 117.7 steps — a rare fleeting terminal excursion, not an absorbing state"
+    provenance: "C1015"
 
 # ============================================================
 

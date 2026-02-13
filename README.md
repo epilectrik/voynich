@@ -6,12 +6,12 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 
 ## Project Status
 
-**Analysis: CLOSED** | **Structural inspection: FROZEN** | **Version: 3.63**
+**Analysis: CLOSED** | **Structural inspection: FROZEN** | **Version: 3.66**
 
 | Metric | Value |
 |--------|-------|
-| Validated constraints | 879 |
-| Research phases completed | 337 |
+| Validated constraints | 881 |
+| Research phases completed | 339 |
 | Model fits tested | 61 |
 | Constraint tiers | 0 (frozen fact) through 4 (exploratory) |
 
@@ -30,6 +30,7 @@ This is not a natural language. This is not a cipher. This is a **control system
 | 100% grammar coverage | Every token participates in the grammar |
 | 17 forbidden transitions | In 5 hazard classes (PHASE, COMPOSITION, CONTAINMENT, RATE, ENERGY) |
 | 0 translation-eligible zones | PURE_OPERATIONAL verdict — no natural language content |
+| 6-state macro-automaton | 8.17x class compression; AXM attractor (self=0.697); 6 folio-level archetypes orthogonal to REGIMEs |
 | Brunschwig alignment | 28 tests across 4 test suites (see below) |
 
 ## Four-Layer Architecture
@@ -128,21 +129,23 @@ Renders any Currier B folio with morphological parse, structural roles, interpre
 
 ```
 voynich/
-  context/            # Constraint system (879 validated constraints)
+  context/            # Constraint system (881 validated constraints)
     CLAUDE_INDEX.md   # Start here for full documentation
     CLAIMS/           # Individual constraint files
     ARCHITECTURE/     # System architecture docs (A, B, AZC, cross-system)
     STRUCTURAL_CONTRACTS/  # API-layer contracts (CASC, BCSC, ACT, BRSC)
-    MODEL_FITS/       # 60 tested model fits
+    MODEL_FITS/       # 61 tested model fits
     SPECULATIVE/      # Tier 3-4 interpretations
   data/               # Transcript, dictionaries, Brunschwig recipes
   scripts/            # voynich.py core library + analysis tools
-  phases/             # 337 completed research phases
+  phases/             # 339 completed research phases
   results/            # Analysis outputs (JSON)
   folio_analysis/     # Per-folio hazard maps
   annotation_data/    # Folio annotation work
   archive/            # Archived scripts and old documentation
 ```
+
+> **Note on repo size:** This repository is large and rough in spots. Every research phase, intermediate result, and dead end has been preserved intentionally — the accuracy of the constraint system depends on being able to trace any finding back to the script and data that produced it. We chose reproducibility over tidiness.
 
 ## Constraint Tier System
 

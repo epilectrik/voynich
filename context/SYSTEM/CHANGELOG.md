@@ -4,6 +4,86 @@
 
 ---
 
+## Version 3.66 (2026-02-13) - Folio-Level Macro-Automaton Decomposition (C1016)
+
+### Summary
+
+Decomposes the corpus-wide 6-state macro-automaton (C1010/C1015) to the folio (program) level. Five structural findings: (1) 6 dynamical archetypes emerge that are orthogonal to the 4 REGIMEs (ARI=0.065), organized along an AXM attractor strength axis from "strong attractor" (self=0.82) to "active interchange" (self=0.47); (2) the forgiveness gradient decomposes into macro-state transition features — forgiveness = AXM attractor strength (rho=0.678, 6 Bonferroni-significant features), mechanistically grounding C458's "recovery is free" design principle; (3) REGIME+section explain only 33.7% of folio-level transition variance, with 66.3% residual confirming C980's free variation envelope is substantively meaningful; (4) vocabulary geometry (100D discrimination manifold) weakly predicts but cannot determine dynamical archetypes (ARI=0.163, LOO=0.444 vs 0.167 chance), confirming C1011 geometry/topology independence at folio level; (5) the bridge backbone (85 MIDDLEs) is the primary geometry→dynamics conduit, carrying 3.8x more archetype-predictive information than non-bridge MIDDLEs (ARI 0.141 vs 0.037). T3 (C458 transition-level realization) FAILS informatively — clamping operates at aggregate program level, not individual transitions. Verdict: FOLIO_DECOMPOSITION_CONFIRMED (7/8 PASS). 1 new constraint (C1016). Phase 339.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1016 | Folio-Level Macro-Automaton Decomposition with Dynamical Archetypes | 2 |
+
+### Key Findings
+
+**FOLIO_MACRO_AUTOMATON_DECOMPOSITION (8 tests + synthesis):**
+- T1: 72/82 folios with N≥50 transitions — **PASS** (13,645 transitions match C1015/T6)
+- T2: 6 dynamical archetypes, ARI(REGIME)=0.065 — **PASS** (archetypes orthogonal to REGIMEs)
+- T3: C458 transition-level realization — FAIL (hazard CV=1.814, recovery CV=0.289; C458 clamping is aggregate, not per-transition; informative)
+- T4: Forgiveness decomposition — **PASS** (6 Bonferroni-significant features; AXM occ rho=0.678, AXM self rho=0.651)
+- T5: Restart folio signature — **PASS** (f57r FQ depressed z=-2.06; constrained excursion space)
+- T6: Variance decomposition — **PASS** (REGIME+section eta²=0.337; 66.3% residual is program-specific)
+- T7: Geometry/topology independence — **PASS** (ARI(manifold, archetypes)=0.163; LOO=0.444 vs 0.167 chance; archetypes not reducible to vocabulary geometry)
+- T8: Bridge conduit test — **PASS** (bridge ARI=0.141 vs non-bridge ARI=0.037, 3.8x; bridge backbone is geometry→dynamics conduit; density anti-correlates with AXM self rho=-0.308)
+
+### Contract Updates
+
+| Contract | Version | Key Changes |
+|----------|---------|-------------|
+| BCSC | 3.7→3.8 | +2 guarantees (BRIDGE_CONDUIT_MECHANISM, FOLIO_DYNAMICAL_ARCHETYPES from C1016); MACRO_AUTOMATON_COMPRESSION updated with folio-level independence; MACRO_STATE_DYNAMICS updated with archetype decomposition; design_freedom mechanism added (forgiveness = AXM attractor strength); dwell regime_modulation updated (REGIME eta²=0.149); folio_uniqueness connected to dynamical uniqueness |
+| CASC | 1.7→1.8 | bridge_density_dynamics subsection added to viability_landscape; b_relationship updated with bridge conduit mediation |
+| BRSC | 2.2 (unchanged) | No relevant findings |
+| AZC-ACT | 1.2 (unchanged) | No relevant findings |
+| AZC-B-ACT | 1.2 (unchanged) | No relevant findings |
+
+---
+
+## Version 3.65 (2026-02-13) - Structural Contract Audit (Phases 333-338)
+
+### Summary
+
+Audited 6 recent phases (333-338) against all 5 structural contracts. BCSC updated to v3.7 with: 3 new guarantees (MACRO_STATE_DYNAMICS, FL_ROUTING_ASYMMETRY, PREFIX_MDL_OPTIMALITY from C1015), full 6×6 macro-state transition matrix section, FL routing details in prefix_channel_architecture (da bi-directional router, ar FL_SAFE selector), thermodynamic grounding for hazard failure classes and safety buffers (F-BRU-023), new disallowed interpretation (FL_SAFE is NOT absorbing). BRSC updated to v2.2: quality rejection mapping confidence upgraded MEDIUM→HIGH with F-BRU-023 validation, new safety buffer mapping hypothesis. CASC/AZC-ACT/AZC-B-ACT confirmed no updates needed.
+
+### Contract Updates
+
+| Contract | Version | Key Changes |
+|----------|---------|-------------|
+| BCSC | 3.6→3.7 | +3 guarantees (C1015), +transition matrix section, +FL routing in PREFIX channels, +thermodynamic grounding (F-BRU-023), +disallowed FL_SAFE absorbing |
+| BRSC | 2.1→2.2 | Quality rejection confidence MEDIUM→HIGH, +safety buffer mapping |
+| CASC | 1.7 (unchanged) | No relevant findings |
+| AZC-ACT | 1.2 (unchanged) | No relevant findings |
+| AZC-B-ACT | 1.2 (unchanged) | No relevant findings |
+
+---
+
+## Version 3.64 (2026-02-13) - PREFIX Composition State Routing + Transition Matrix (C1015)
+
+### Summary
+
+Three genuinely new structural findings beyond existing C661/C1012: (1) `da` is the unique bi-directional FL router (OR=126.67, p≈0; only PREFIX routing both FL_HAZ and FL_SAFE), `ar` is a pure FL_SAFE selector (5/5, p≈0); (2) Full 6×6 macro-state transition matrix reveals dynamical characterization — AXM is a massive attractor (self=0.697, pull=0.642), FL_SAFE is NOT absorbing (self=0.023, return time 117.7 steps), CC is a pure initiator (self=0.041), system is ergodic with near-instant mixing (spectral gap 0.896); (3) PREFIX is MDL-optimal single component for state routing at corpus scale (33.9% compression, rank 1/4). T2/T5 operationalize C661/C1012 at the macro-state level (41.0% entropy reduction, 0.862 mean purity). T8 (generative sufficiency) shows PREFIX is necessary but not sufficient for transition dynamics (r=0.963, R²=-4.04 vs marginal — pairwise PREFIX×MIDDLE interaction required per C1003). Verdict: COMPOSITION_ROUTING_CONFIRMED (6/8 PASS, T1/T8 informative nulls). 1 new constraint (C1015). Phase 338.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1015 | PREFIX-Conditioned Macro-State Mutability with FL-Specific Routing Asymmetry | 2 |
+
+### Key Findings
+
+**PREFIX_COMPOSITION_STATE_ROUTING (8 tests + synthesis):**
+- T1: State-change rate 77.8% vs 73.0% null — FAIL (informative: AXM dominance inflates null baseline)
+- T2: PREFIX entropy reduction 41.0% — **PASS** (z=17.6, p≈0; operationalizes C661/C1012)
+- T3: da unique FL router — **PASS** (OR=126.67, p≈0; 5:5 HAZ:SAFE; only PREFIX in both FL states)
+- T4: ar 100% FL_SAFE — **PASS** (5/5, binomial p≈0 vs 2.5% base rate)
+- T5: Mean purity 0.862 vs 0.780 null — **PASS** (z=3.8, p=0.0001)
+- T6: 6×6 transition matrix — **PASS** (AXM attractor 0.697; FL_SAFE fleeting 0.023; CC initiator 0.041; ergodic gap=0.896; stationary≈empirical)
+- T7: MDL compression — **PASS** (PREFIX rank 1/4 at corpus scale N=16,054; 33.9% compression vs baseline; BIC-optimal single component)
+- T8: PREFIX generative sufficiency — FAIL (informative: r=0.963 but R²=-4.04 vs marginal; AXM dominance makes marginal baseline very strong; PREFIX determines WHICH state but transition dynamics require PREFIX×MIDDLE interaction per C1003)
+
+---
+
 ## Version 3.63 (2026-02-13) - Gloss Adversarial Validation (PREFIX-Domain + Mantel)
 
 ### Summary
