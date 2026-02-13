@@ -1578,3 +1578,83 @@ All 14 structural signature properties consistent with thermal state tracking
 - `phases/CONTROLLED_VARIABLE_ANALYSIS/results/t2_candidate_scoring.json`
 - `phases/CONTROLLED_VARIABLE_ANALYSIS/scripts/t1_structural_signature.py`
 - `phases/CONTROLLED_VARIABLE_ANALYSIS/scripts/t2_candidate_scoring.py`
+
+---
+
+## F-BRU-022: Recipe Triangulation via PP-REGIME Pathway (NEGATIVE)
+
+**Tier:** F3 → **NEGATIVE** | **Scope:** B, A, AZC | **Phase:** 333 (RECIPE_TRIANGULATION_V2)
+
+### Hypothesis
+
+A paragraph handling types (CAREFUL, STANDARD, PRECISION, GENTLE — from C882/C883) predict B-side REGIME compatibility through the PP filtering cascade (C502), creating a three-way triangulation:
+
+```
+A paragraph PREFIX profile → handling type
+        ↓ PP vocabulary filtering (C502)
+B REGIME compatibility (token-weighted REGIME profile)
+        ↔ Brunschwig fire degree (material_class → degree)
+```
+
+If PRECISION paragraphs preferentially allow REGIME_4 B tokens, and this matches Brunschwig's animal→degree-4 prediction, that would constitute convergence of three independently derived systems.
+
+### Supports
+
+- C882 (PRECISION Kernel Signature)
+- C883 (Handling Distribution Alignment)
+- C502 (PP Filtering Cascade)
+- C753 (Near-Zero Content-Specific Routing)
+- F-BRU-017 (REGIME_4 Sustained Equilibration)
+
+### Design
+
+6-test battery with pre-registered predictions:
+
+| Test | What it tests | Prediction |
+|------|---------------|------------|
+| T2 (GATE) | PP MIDDLE REGIME specificity | Median specificity > 0.05; R4-heavy enriched in PRECISION |
+| T1 | Handling-type REGIME profile discrimination | PRECISION mean R4 > CAREFUL (d > 0.5) |
+| T3 | Size-controlled R4 enrichment (label permutation) | PRECISION mean R4 > 70th percentile |
+| T4 | Brunschwig fire-degree concordance | 3+/4 handling types match predicted peak REGIME |
+| T5 | Cross-handling-type REGIME gradient | CAREFUL_R4 < STANDARD_R4 < PRECISION_R4 |
+| T6 | Brunschwig procedural complexity alignment | rho > 0.5 between recipe steps and PP pool size |
+
+### Results
+
+**Verdict: NO_SIGNAL** — 0/5 non-gate tests PASS.
+
+| Test | Result | Key Numbers |
+|------|--------|-------------|
+| T2 (GATE) | **PARTIAL** | MIDDLEs have specificity (median=0.50, 322/388 > 0.2) but R4-heavy NOT enriched in PRECISION (OR=0.32, p=0.95) |
+| T1 | **FAIL** | PRECISION R4=0.081 LOWER than CAREFUL R4=0.087 (d=-0.82, wrong direction) |
+| T3 | **FAIL** | PRECISION at 2.9th percentile (DEPLETED, not enriched); p(greater)=0.97 |
+| T4 | **FAIL** | All 4 handling types peak at REGIME_1 (base rate); only CAREFUL concordant (1/4) |
+| T5 | **FAIL** | Wrong ordering; Spearman rho=-0.11, p=0.22 |
+| T6 | **FAIL** | rho=0.4, p=0.6 (n=4 pairs, underpowered) |
+
+### Interpretation
+
+The PP pathway does NOT transmit handling-type signal to B-side REGIME profiles. Key findings:
+
+1. **MIDDLEs have REGIME specificity** (T2 partial pass) — the mechanism exists in principle. Individual PP MIDDLEs are non-uniform across REGIMEs (median specificity 0.50).
+
+2. **Handling types don't exploit it** — PRECISION paragraphs are R4-DEPLETED (2.9th percentile), not enriched. The direction is consistently wrong: PRECISION has the lowest R4 weight (0.081) while STANDARD has the highest (0.093).
+
+3. **REGIME_1 dominates all profiles** — Every handling type peaks at REGIME_1 (~51-56%), with REGIME_3 second (~26-28%), leaving little room for differential R4 loading. The PP vocabulary, being shared across all A records, inherits the B corpus's REGIME_1 baseline.
+
+4. **Confirms C753 at category level** — C753 showed near-zero content-specific routing at the individual record level (partial r=-0.038). This phase confirms the same null extends to the 4-type handling typology: even categorical grouping does not create detectable REGIME routing.
+
+### Why This Matters
+
+This is a clean negative that strengthens the model boundary. The A→B connection through PP vocabulary is **structural** (which tokens are legal) but not **parametric** (which REGIME parameters apply). Handling types characterize A paragraph internal structure (PREFIX profiles) without propagating to B execution parameters. The firewall between A categorical structure and B execution parameter assignment (C384) is confirmed to extend through the PP filtering pathway.
+
+### Status
+
+- 6-test battery: **COMPLETE**
+- Verdict: **NO_SIGNAL** (negative result, informative)
+- Confidence: **HIGH** — clear null with wrong-direction effects and label permutation control
+
+### Files
+
+- `phases/RECIPE_TRIANGULATION_V2/scripts/recipe_triangulation.py`
+- `phases/RECIPE_TRIANGULATION_V2/results/recipe_triangulation.json`

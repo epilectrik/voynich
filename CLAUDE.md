@@ -160,9 +160,9 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 3.58 FROZEN STATE |
+| Version | 3.59 FROZEN STATE |
 | Constraints | 879 validated |
-| Phases | 332 completed |
+| Phases | 333 completed |
 | Folios | 83 (Currier B) |
 | Analysis | CLOSED (PCA-v1 CERTIFIED) |
 

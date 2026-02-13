@@ -4,6 +4,30 @@
 
 ---
 
+## Version 3.59 (2026-02-12) - Recipe Triangulation V2 (Negative)
+
+### Summary
+
+6-test phase testing whether A paragraph handling types (CAREFUL, STANDARD, PRECISION, GENTLE) predict B-side REGIME compatibility through the PP filtering cascade (C502). PP MIDDLEs have REGIME specificity (median=0.50) but handling types do NOT exploit it. PRECISION paragraphs are R4-DEPLETED (2.9th percentile, wrong direction). All handling types peak at REGIME_1 (base rate). Confirms C753 extends to categorical level: A→B PP pathway is structural (which tokens legal) but not parametric (which REGIME applies). Verdict: NO_SIGNAL. No new constraints. 1 new fit (F-BRU-022, NEGATIVE). Phase 333.
+
+### New Fits
+
+| ID | Name | Tier | Result |
+|----|------|------|--------|
+| F-BRU-022 | Recipe Triangulation via PP-REGIME Pathway | F3 | NEGATIVE |
+
+### Key Findings
+
+**RECIPE_TRIANGULATION_V2 (6 tests):**
+- T2 (GATE): PARTIAL — MIDDLEs have specificity (median=0.50) but R4-heavy NOT enriched in PRECISION (OR=0.32)
+- T1: FAIL — PRECISION R4=0.081 < CAREFUL R4=0.087 (d=-0.82, wrong direction)
+- T3: FAIL — Label permutation: PRECISION at 2.9th percentile (depleted)
+- T4: FAIL — All handling types peak at REGIME_1; only 1/4 concordant with Brunschwig
+- T5: FAIL — Wrong ordering (rho=-0.11)
+- T6: FAIL — rho=0.4, p=0.6 (underpowered)
+
+---
+
 ## Version 3.58 (2026-02-12) - Survivor-Set Geometry Alignment
 
 ### Summary
