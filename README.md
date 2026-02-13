@@ -139,7 +139,7 @@ voynich/
   data/               # Transcript, dictionaries, Brunschwig recipes
   scripts/            # voynich.py core library + analysis tools
   phases/             # 339 completed research phases
-  results/            # Analysis outputs (JSON)
+  results/            # Legacy analysis outputs (early phases; new results go in phases/)
   folio_analysis/     # Per-folio hazard maps
   annotation_data/    # Folio annotation work
   archive/            # Archived scripts and old documentation

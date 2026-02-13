@@ -43,6 +43,15 @@ git push origin master && git push github master:main
 
 **Never put throwaway, test, or phase-specific scripts in `scripts/`.** If a script answers a specific research question or runs once to produce a result, it belongs in its phase directory.
 
+### Results Placement Rule
+
+| Directory | What goes here |
+|-----------|----------------|
+| `phases/PHASE_NAME/results/` | **All new phase results** — JSON outputs, analysis artifacts, anything produced by a phase script |
+| `results/` | **LEGACY ONLY** — ~315 files from early phases. Do NOT add new files here. |
+
+**Every phase script should write its output to `phases/PHASE_NAME/results/`.** The top-level `results/` directory is a legacy artifact from before this convention existed. It is preserved for traceability (early constraints reference these files) but should not receive new content.
+
 ### 0. USE THE CANONICAL LIBRARY (PREFERRED)
 
 **Before writing custom data loading code, use `scripts/voynich.py`:**
