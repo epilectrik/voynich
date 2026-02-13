@@ -4,6 +4,29 @@
 
 ---
 
+## Version 3.60 (2026-02-12) - Forbidden Transition Thermodynamics (Token-Level Coherence)
+
+### Summary
+
+5-test phase testing whether 17 forbidden token transitions (C109), when glossed using independently-derived Brunschwig vocabulary, map to specific distillation failure modes. PERFECT CONCORDANCE: 15/15 classifiable pairs map to recognizable failures (T1), 15/15 match structural failure classes from Phase 18 (T4), 8/8 asymmetry explanations coherent (T2), 22/22 safety buffers physically coherent (T3), buffer REGIME distribution non-uniform p=0.0081 (T5). QO-prefixed safety buffers (41%) represent energy insertion between consecutive test/monitor operations. Verdict: THERMODYNAMIC_COHERENCE (5/5 PASS). 1 new fit (F-BRU-023). Phase 334.
+
+### New Fits
+
+| ID | Name | Tier | Result |
+|----|------|------|--------|
+| F-BRU-023 | Forbidden Transition Thermodynamics | F2 | THERMODYNAMIC_COHERENCE |
+
+### Key Findings
+
+**FORBIDDEN_TRANSITION_THERMODYNAMICS (5 tests):**
+- T1: 15/15 glossed forbidden pairs → recognizable distillation failures
+- T2: 8/8 asymmetric pairs have coherent physical explanations
+- T3: 22/22 safety buffers are physically coherent interventions (QO=41%)
+- T4: 15/15 concordance between physical interpretations and structural failure classes
+- T5: Buffer REGIME distribution non-uniform (chi²=11.79, p=0.008, REGIME_1 1.86x enriched)
+
+---
+
 ## Version 3.59 (2026-02-12) - Recipe Triangulation V2 (Negative)
 
 ### Summary

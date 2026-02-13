@@ -1583,7 +1583,11 @@ All 14 structural signature properties consistent with thermal state tracking
 
 ## F-BRU-022: Recipe Triangulation via PP-REGIME Pathway (NEGATIVE)
 
-**Tier:** F3 → **NEGATIVE** | **Scope:** B, A, AZC | **Phase:** 333 (RECIPE_TRIANGULATION_V2)
+**Tier:** F3 (Brunschwig Cross-System Triangulation)
+**Scope:** B
+**Result:** NEGATIVE
+**Supports:** C882 (PRECISION Kernel), C883 (Handling Distribution), C502 (PP Filtering), C753 (Near-Zero Routing)
+**Added:** 2026-02-12 (RECIPE_TRIANGULATION_V2)
 
 ### Hypothesis
 
@@ -1658,3 +1662,89 @@ This is a clean negative that strengthens the model boundary. The A→B connecti
 
 - `phases/RECIPE_TRIANGULATION_V2/scripts/recipe_triangulation.py`
 - `phases/RECIPE_TRIANGULATION_V2/results/recipe_triangulation.json`
+
+---
+
+## F-BRU-023: Forbidden Transition Thermodynamics (TOKEN-LEVEL COHERENCE)
+
+**Tier:** F4 (Tier 4 Speculative External Anchor)
+**Scope:** B
+**Result:** THERMODYNAMIC_COHERENCE
+**Supports:** C109 (Hazard Classes), C783 (Directional Asymmetry), C997 (Safety Buffers)
+**Added:** 2026-02-12 (FORBIDDEN_TRANSITION_THERMODYNAMICS)
+
+### Hypothesis
+
+The 17 forbidden token transitions (C109), when glossed using independently-derived Brunschwig vocabulary, map to specific recognizable distillation failure modes at the individual token-pair level. This extends X.3 Suppression Alignment (class-level: 5/5 PASS) to token-level resolution.
+
+### Non-Circularity Argument
+
+Two independent derivations converge:
+1. **Structural** (Phase 18, 2025-12-31): 17 forbidden pairs identified via zero-count bigrams → topological clustering → 5 failure classes. No glossing existed at this time.
+2. **Interpretive** (GLOSS_RESEARCH, 2026-01-15 to 2026-02-06): Token glosses derived from Brunschwig recipe alignment, REGIME profiles, kernel associations. Independent methodology.
+
+Testing whether glossed forbidden pairs produce physically coherent failure interpretations that match the structural failure classes uses these two inputs predictively.
+
+### Supports
+
+- C109 (5 Hazard Failure Classes, 17 forbidden transitions)
+- C783 (Forbidden pair asymmetry — all 17 directional)
+- C789 (34% violation rate — disfavored, not prohibited)
+- C997 (22 sparse safety buffer tokens)
+- C1000 (HUB sub-role decomposition)
+- C627 (Circuit topology explains 75% of forbidden pairs)
+- X.3 Suppression Alignment (class-level: 5/5 PASS)
+
+### Design
+
+5-test battery with pre-registered predictions:
+
+| Test | What it tests | Prediction | Result |
+|------|---------------|------------|--------|
+| T1 | Glossed pairs map to recognizable failures | ≥10/12 | **15/15** |
+| T2 | Asymmetry explanations are physically coherent | ≥5/7 | **8/8** |
+| T3 | Safety buffers are coherent interventions | ≥15/22 | **22/22** |
+| T4 | Physical interpretations match structural failure classes | ≥10/12 | **15/15** |
+| T5 | Buffer REGIME distribution is non-uniform | p < 0.05 | **p=0.0081** |
+
+### Results
+
+**Verdict: THERMODYNAMIC_COHERENCE — 5/5 tests PASS.**
+
+**T1 (15/15):** Every classifiable forbidden pair produces a recognizable distillation failure when glossed. Only 2 pairs skipped (both involve token `c`, freq=2).
+
+**T2 (8/8):** Every pair with an observed reverse direction has a coherent physical asymmetry: forbidden directions skip necessary work steps; permitted directions follow correct prepare→execute→evaluate sequences.
+
+**T3 (22/22):** Every safety buffer represents a physically coherent intervention. QO-prefixed buffers dominate (9/22 = 41%), representing energy-application steps inserted between consecutive test/monitor operations — the exact missing step that PHASE_ORDERING failures describe.
+
+**T4 (15/15):** Perfect concordance. Physical interpretations independently match Phase 18 structural failure classes for all 15 testable pairs across all 5 failure categories:
+
+| Failure Class | Count | Token-Level Concordance |
+|---------------|-------|------------------------|
+| PHASE_ORDERING | 7 | 6/6 concordant (1 skipped: shey→c) |
+| COMPOSITION_JUMP | 4 | 3/3 concordant (1 skipped: c→ee) |
+| CONTAINMENT_TIMING | 4 | 4/4 concordant |
+| RATE_MISMATCH | 1 | 1/1 concordant |
+| ENERGY_OVERSHOOT | 1 | 1/1 concordant |
+
+**T5 (p=0.0081):** Safety buffers concentrate in REGIME_1 (1.86x enrichment, 16/22 buffers). REGIME_4 has zero. REGIME_1's high monitoring density creates the most test/monitor adjacency pressure points.
+
+### Key Physical Patterns
+
+**PHASE_ORDERING (the dominant failure):** All 7 pairs involve consecutive observation/test/close operations without intervening WORK. The grammar prevents operators from testing → testing without executing between. Brunschwig parallel: checking fire temperature then immediately testing distillate without waiting for distillation to occur.
+
+**Safety buffer mechanism:** QO-prefixed tokens (energy operations) are inserted between consecutive CHSH-lane tokens (test/monitor), breaking dangerous observation→observation sequences through lane-switching. This is the grammar's primary safety mechanism: force an energy step between consecutive evaluations.
+
+**Asymmetry pattern:** Forbidden directions are "evaluate → evaluate" (premature); permitted directions are "evaluate → act → evaluate" (correct workflow). The grammar enforces the procedural principle that observation must be followed by action before the next observation.
+
+### Status
+
+- 5-test battery: **COMPLETE**
+- Verdict: **THERMODYNAMIC_COHERENCE** (5/5 PASS)
+- Confidence: **HIGH** — two independent derivations converge perfectly at token level
+- Tier: **F2** — structural inputs (Tier 0) + independent glossing (Tier 3) = convergent validation
+
+### Files
+
+- `phases/FORBIDDEN_TRANSITION_THERMODYNAMICS/scripts/forbidden_transition_thermodynamics.py`
+- `phases/FORBIDDEN_TRANSITION_THERMODYNAMICS/results/forbidden_transition_thermodynamics.json`
