@@ -1,0 +1,371 @@
+{
+  "phase": 336,
+  "title": "GLOSS_STRUCTURAL_VALIDATION",
+  "tests": {
+    "t1_full_adversarial": {
+      "pass": false,
+      "real_distinct": 10,
+      "perm_mean": 10.3132,
+      "perm_std": 1.1607350085183095,
+      "p_value": 0.5249,
+      "n_permutations": 10000,
+      "testable_pairs": 13,
+      "real_cat_pairs": [
+        [
+          "CONTAINMENT",
+          "OPERATION"
+        ],
+        [
+          "CONTAINMENT",
+          "THERMAL"
+        ],
+        [
+          "FLOW",
+          "STAGING"
+        ],
+        [
+          "OPERATION",
+          "FLOW"
+        ],
+        [
+          "OPERATION",
+          "STAGING"
+        ],
+        [
+          "OPERATION",
+          "THERMAL"
+        ],
+        [
+          "STAGING",
+          "OTHER"
+        ],
+        [
+          "STAGING",
+          "STAGING"
+        ],
+        [
+          "STAGING",
+          "STRUCTURAL"
+        ],
+        [
+          "STAGING",
+          "THERMAL"
+        ]
+      ],
+      "threshold": "p < 0.01"
+    },
+    "t2_prefix_constrained": {
+      "pass": false,
+      "real_distinct": 10,
+      "perm_mean": 10.364,
+      "perm_std": 1.1309748007802825,
+      "p_value": 0.5127,
+      "n_permutations": 10000,
+      "n_prefix_groups": 9,
+      "n_multi_member_groups": 6,
+      "shuffleable_middles": 87,
+      "threshold": "p < 0.05"
+    },
+    "t3_distributional_alignment": {
+      "pass": true,
+      "real_ari": 0.03159803685191539,
+      "perm_mean_ari": 0.0001525853255376169,
+      "perm_std_ari": 0.01529101667819843,
+      "p_value": 0.0372,
+      "n_permutations": 10000,
+      "eligible_middles": 83,
+      "k_clusters": 9,
+      "category_sizes": {
+        "THERMAL": 10,
+        "TRANSITION": 8,
+        "STAGING": 12,
+        "FLOW": 14,
+        "OPERATION": 10,
+        "CONTAINMENT": 9,
+        "OTHER": 2,
+        "MONITORING": 10,
+        "STRUCTURAL": 8
+      },
+      "threshold": "ARI > 0, p < 0.05"
+    },
+    "t4_within_category_cohesion": {
+      "pass": "False",
+      "mean_cohesion": 0.551125,
+      "per_category": {
+        "CONTAINMENT": {
+          "n_members": 9,
+          "real_mean_cosine_sim": 0.6429869356821662,
+          "cohesion_score": 0.789
+        },
+        "FLOW": {
+          "n_members": 14,
+          "real_mean_cosine_sim": 0.6125231577205035,
+          "cohesion_score": 0.659
+        },
+        "MONITORING": {
+          "n_members": 10,
+          "real_mean_cosine_sim": 0.6465376155783009,
+          "cohesion_score": 0.803
+        },
+        "OPERATION": {
+          "n_members": 10,
+          "real_mean_cosine_sim": 0.5721973733938168,
+          "cohesion_score": 0.379
+        },
+        "STAGING": {
+          "n_members": 12,
+          "real_mean_cosine_sim": 0.5369428640164694,
+          "cohesion_score": 0.148
+        },
+        "STRUCTURAL": {
+          "n_members": 8,
+          "real_mean_cosine_sim": 0.5405438684259994,
+          "cohesion_score": 0.233
+        },
+        "THERMAL": {
+          "n_members": 10,
+          "real_mean_cosine_sim": 0.6953831083329834,
+          "cohesion_score": 0.964
+        },
+        "TRANSITION": {
+          "n_members": 8,
+          "real_mean_cosine_sim": 0.5820658523450559,
+          "cohesion_score": 0.434
+        }
+      },
+      "n_testable_categories": 8,
+      "threshold": "> 0.60"
+    }
+  },
+  "synthesis": {
+    "verdict": "GLOSS_NOT_CONSTRAINED",
+    "tests_passed": "1",
+    "tests_total": 4,
+    "t1_pass": false,
+    "t2_pass": false,
+    "t3_pass": true,
+    "t4_pass": "False"
+  },
+  "metadata": {
+    "n_glossed_middles": 90,
+    "n_forbidden_pairs_total": 17,
+    "n_forbidden_pairs_excl_c": 15,
+    "n_testable_pairs": 13,
+    "n_categories": 8,
+    "category_distribution": {
+      "THERMAL": 10,
+      "TRANSITION": 10,
+      "STAGING": 12,
+      "FLOW": 14,
+      "OPERATION": 11,
+      "CONTAINMENT": 9,
+      "OTHER": 2,
+      "MONITORING": 12,
+      "STRUCTURAL": 10
+    },
+    "n_context_vectors": 83,
+    "top49_middles": [
+      "k",
+      "edy",
+      "ey",
+      "e",
+      "l",
+      "aiin",
+      "ol",
+      "r",
+      "ar",
+      "dy",
+      "eey",
+      "t",
+      "iin",
+      "al",
+      "y",
+      "or",
+      "ke",
+      "ain",
+      "ed",
+      "o",
+      "eo",
+      "d",
+      "eol",
+      "in",
+      "ck",
+      "od",
+      "am",
+      "ai",
+      "ek",
+      "ee",
+      "kch",
+      "s",
+      "i",
+      "eeo",
+      "ckh",
+      "opch",
+      "ct",
+      "eck",
+      "eed",
+      "te",
+      "eod",
+      "pch",
+      "m",
+      "lch",
+      "ok",
+      "tch",
+      "a",
+      "et",
+      "lk"
+    ],
+    "entity_resolution": [
+      {
+        "entity": "shey",
+        "middle": "ey",
+        "gloss": "set"
+      },
+      {
+        "entity": "shey",
+        "middle": "ey",
+        "gloss": "set"
+      },
+      {
+        "entity": "chol",
+        "middle": "ol",
+        "gloss": "continue"
+      },
+      {
+        "entity": "chedy",
+        "middle": "edy",
+        "gloss": "batch"
+      },
+      {
+        "entity": "dy",
+        "middle": "dy",
+        "gloss": "seal"
+      },
+      {
+        "entity": "dy",
+        "middle": "dy",
+        "gloss": "seal"
+      },
+      {
+        "entity": "l",
+        "middle": "l",
+        "gloss": "late"
+      },
+      {
+        "entity": "or",
+        "middle": "or",
+        "gloss": "portion"
+      },
+      {
+        "entity": "chey",
+        "middle": "ey",
+        "gloss": "set"
+      },
+      {
+        "entity": "chey",
+        "middle": "ey",
+        "gloss": "set"
+      },
+      {
+        "entity": "ar",
+        "middle": "ar",
+        "gloss": "release"
+      },
+      {
+        "entity": "he",
+        "middle": "he",
+        "gloss": null
+      },
+      {
+        "entity": "he",
+        "middle": "he",
+        "gloss": null
+      },
+      {
+        "entity": "shedy",
+        "middle": "edy",
+        "gloss": "batch"
+      },
+      {
+        "entity": "shedy",
+        "middle": "edy",
+        "gloss": "batch"
+      },
+      {
+        "entity": "aiin",
+        "middle": "aiin",
+        "gloss": "settle"
+      },
+      {
+        "entity": "al",
+        "middle": "al",
+        "gloss": "gather"
+      },
+      {
+        "entity": "r",
+        "middle": "r",
+        "gloss": "mid"
+      },
+      {
+        "entity": "ee",
+        "middle": "ee",
+        "gloss": "long"
+      },
+      {
+        "entity": "aiin",
+        "middle": "aiin",
+        "gloss": "settle"
+      },
+      {
+        "entity": "chey",
+        "middle": "ey",
+        "gloss": "set"
+      },
+      {
+        "entity": "chol",
+        "middle": "ol",
+        "gloss": "continue"
+      },
+      {
+        "entity": "dal",
+        "middle": "l",
+        "gloss": "late"
+      },
+      {
+        "entity": "chedy",
+        "middle": "edy",
+        "gloss": "batch"
+      },
+      {
+        "entity": "shedy",
+        "middle": "edy",
+        "gloss": "batch"
+      },
+      {
+        "entity": "dal",
+        "middle": "l",
+        "gloss": "late"
+      },
+      {
+        "entity": "t",
+        "middle": "t",
+        "gloss": "transfer"
+      },
+      {
+        "entity": "or",
+        "middle": "or",
+        "gloss": "portion"
+      },
+      {
+        "entity": "aiin",
+        "middle": "aiin",
+        "gloss": "settle"
+      },
+      {
+        "entity": "o",
+        "middle": "o",
+        "gloss": "near"
+      }
+    ]
+  }
+}

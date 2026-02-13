@@ -1800,3 +1800,57 @@ Five independent derivation paths: PP/RI classification from A/B presence, behav
 
 - `phases/PP_MIDDLE_EXTENSION/scripts/pp_middle_extension.py`
 - `phases/PP_MIDDLE_EXTENSION/results/pp_middle_extension.json`
+
+---
+
+## F-BRU-025: Gloss Structural Validation (Adversarial + Distributional)
+
+**Tier:** F4 (Exploratory Validation)
+**Scope:** B
+**Result:** GLOSS_NOT_CONSTRAINED
+**Supports:** (negative — forbidden transitions too few for category-level adversarial test; distributional context weakly aligns)
+**Added:** 2026-02-12 (GLOSS_STRUCTURAL_VALIDATION)
+
+### Hypothesis
+
+The 90 core MIDDLE glosses are structurally constrained: (A) randomly permuting gloss assignments should produce less coherent forbidden transition interpretations, and (B) MIDDLEs sharing a gloss category should cluster together in bigram context space.
+
+### Non-Circularity Argument
+
+Four independent derivation paths: forbidden pairs from Phase 18 (zero-count bigrams, 2025-12-31), glosses from Brunschwig alignment + kernel profiles (Phase 330), context vectors from B-corpus bigram statistics, gloss categories from keyword semantics.
+
+### Method
+
+Forbidden pair entities resolved to extracted MIDDLEs via Morphology (e.g. "shey" → PREFIX=sh, MIDDLE=ey). 15 pairs (excl. 2 involving 'c'), 13 testable (both MIDDLEs glossed), 2 untestable ('he' unglossed). Pre-registered 8 gloss categories (THERMAL, CONTAINMENT, FLOW, MONITORING, OPERATION, TRANSITION, STAGING, STRUCTURAL) via keyword matching.
+
+### Results: GLOSS_NOT_CONSTRAINED (1/4 PASS)
+
+| Test | Prediction | Result | Verdict |
+|------|-----------|--------|---------|
+| T1: Full adversarial permutation | p < 0.01 | 10 distinct pairs vs mean 10.3, p=0.52 | FAIL (at chance) |
+| T2: PREFIX-constrained permutation | p < 0.05 | 10 vs mean 10.4, p=0.51 | FAIL (at chance) |
+| T3: Distributional context alignment | ARI > 0, p < 0.05 | ARI=0.032, p=0.037 | **PASS** (weak but significant) |
+| T4: Within-category context cohesion | mean > 0.60 | mean=0.551 | FAIL (mixed: 3 strong, 5 weak) |
+
+### Key Findings
+
+**Adversarial test underpowered by design:** 13 testable forbidden pairs with 11 unique MIDDLEs across 9 categories. Expected distinct pairs under random (~10.3) ≈ real (10). The category-concentration metric lacks resolution at this sample size — would need ~50+ forbidden pairs to distinguish concentration from noise.
+
+**Distributional context weakly validates:** ARI=0.032 (p=0.037) — MIDDLEs with similar glosses occupy slightly similar bigram neighborhoods. Effect is real but tiny (2 standard deviations above permutation mean).
+
+**Three categories distributionally grounded:** THERMAL (cohesion=0.964), MONITORING (0.803), CONTAINMENT (0.789) show strong within-category cosine similarity vs random groups. These gloss families genuinely cluster in context space. STAGING (0.148) and STRUCTURAL (0.233) show anti-cohesion — members are more scattered than random.
+
+**Implication:** The forbidden pair structure (17 pairs) is too sparse for category-level adversarial testing. A finer-grained metric (e.g., behavioral distance rather than categorical) or a larger constraint set might succeed where categorical concentration fails. The distributional result suggests real structure exists but current categories capture it poorly for some semantic domains.
+
+### Status
+
+- 4-test battery: **COMPLETE**
+- Verdict: **GLOSS_NOT_CONSTRAINED** (1/4 PASS)
+- Confidence: **HIGH** — clean negative for adversarial, weak positive for distributional
+- T3 PASS does not meet verdict threshold (requires T1 + T3)
+- The negative result does NOT invalidate existing glosses (Phase 334 stands)
+
+### Files
+
+- `phases/GLOSS_STRUCTURAL_VALIDATION/scripts/gloss_structural_validation.py`
+- `phases/GLOSS_STRUCTURAL_VALIDATION/results/gloss_structural_validation.json`

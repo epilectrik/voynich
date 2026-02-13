@@ -4,6 +4,28 @@
 
 ---
 
+## Version 3.62 (2026-02-12) - Gloss Structural Validation (Negative)
+
+### Summary
+
+4-test phase testing whether the 90 core MIDDLE glosses are structurally constrained via adversarial permutation (forbidden transition category concentration) and distributional context clustering (bigram context vectors). Adversarial tests fail — only 13 testable forbidden pairs across 9 categories provides insufficient resolution (real=10 distinct pairs vs random mean=10.3, p=0.52). Distributional context weakly validates (ARI=0.032, p=0.037). Three gloss categories (THERMAL, MONITORING, CONTAINMENT) show strong distributional grounding; two (STAGING, STRUCTURAL) do not. Verdict: GLOSS_NOT_CONSTRAINED (1/4 PASS). Clean negative — adversarial metric underpowered, distributional structure real but weak. 1 new fit (F-BRU-025, GLOSS_NOT_CONSTRAINED). Phase 336.
+
+### New Fits
+
+| ID | Name | Tier | Result |
+|----|------|------|--------|
+| F-BRU-025 | Gloss Structural Validation | F4 | GLOSS_NOT_CONSTRAINED |
+
+### Key Findings
+
+**GLOSS_STRUCTURAL_VALIDATION (4 tests):**
+- T1: Full adversarial permutation — FAIL (p=0.52, at chance)
+- T2: PREFIX-constrained permutation — FAIL (p=0.51, at chance)
+- T3: Distributional context alignment — PASS (ARI=0.032, p=0.037)
+- T4: Within-category cohesion — FAIL (mean=0.551 < 0.60; THERMAL 0.96, MONITORING 0.80, CONTAINMENT 0.79 strong; STAGING 0.15, STRUCTURAL 0.23 weak)
+
+---
+
 ## Version 3.61 (2026-02-12) - PP MIDDLE Extension Validation (Negative)
 
 ### Summary
