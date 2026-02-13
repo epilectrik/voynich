@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 879 validated constraints and 56 explanatory fits loaded
+embedded below. You have ALL 879 validated constraints and 58 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -61,8 +61,8 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # EMBEDDED EXPERT CONTEXT
 
-**Generated:** 2026-02-12 22:19
-**Version:** FROZEN STATE (879 constraints, 56 fits)
+**Generated:** 2026-02-12 23:55
+**Version:** FROZEN STATE (879 constraints, 58 fits)
 
 ---
 
@@ -84,7 +84,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.58 | **Status:** FROZEN | **Constraints:** 879 | **Date:** 2026-02-12
+**Version:** 3.60 | **Status:** FROZEN | **Constraints:** 879 | **Date:** 2026-02-12
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -283,8 +283,8 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 877 |
-| Completed phases | 330 |
+| Validated constraints | 879 |
+| Completed phases | 334 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -2565,7 +2565,7 @@ C1014	Discrimination Manifold Encodes Viability Structure via Bridge Backbone
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
 # Generated: 2026-02-12
-# Total: 56 fits
+# Total: 58 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
 ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
@@ -2625,6 +2625,8 @@ F-BRU-018	Root Illustration Processing Correlation (Tier 4 External Anchor)	F4	A
 F-BRU-019	Delicate Plant Material as Unmarked Default	F3	A	SUPPORTED	F-BRU-018 (Root Illustration Correlation), C884 (Animal Correspondence)	in: fits_brunschwig
 F-BRU-020	Output Category Vocabulary Signatures	F4	B	CONFIRMED	F-BRU-017 (REGIME_4 Sustained Equilibration), C494 (REGIME_4 Precision Axis)	in: fits_brunschwig
 F-BRU-021	Controlled Variable Identification (Temperature / Thermal State)	F3	B	SUCCESS	C976 (6-State Topology), C978 (Hub-and-Spoke), C979 (REGIME Modulates Weights), C980 (Free Variation Envelope)	in: fits_brunschwig
+F-BRU-022	Recipe Triangulation via PP-REGIME Pathway (NEGATIVE)	F3	B	NEGATIVE	C882 (PRECISION Kernel), C883 (Handling Distribution), C502 (PP Filtering), C753 (Near-Zero Routing)	in: fits_brunschwig
+F-BRU-023	Forbidden Transition Thermodynamics (TOKEN-LEVEL COHERENCE)	F4	B	THERMODYNAMIC_COHERENCE	C109 (Hazard Classes), C783 (Directional Asymmetry), C997 (Safety Buffers)	in: fits_brunschwig
 
 ---
 

@@ -1,0 +1,1356 @@
+{
+  "phase": "FORBIDDEN_TRANSITION_THERMODYNAMICS",
+  "phase_number": 334,
+  "tests": {
+    "T1": {
+      "test": "T1_GLOSSED_PAIR_PHYSICAL_MAPPING",
+      "classifiable": 15,
+      "recognizable": 15,
+      "prediction_met": true,
+      "verdict": "PASS",
+      "pairs": [
+        {
+          "id": 1,
+          "source": "shey",
+          "target": "aiin",
+          "source_gloss": {
+            "token": "shey",
+            "prefix": "sh",
+            "middle": "ey",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "monitor",
+            "middle_gloss": "set",
+            "composed_gloss": "monitor set"
+          },
+          "target_gloss": {
+            "token": "aiin",
+            "prefix": null,
+            "middle": "aiin",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": "settle",
+            "composed_gloss": "settle"
+          },
+          "failure_class": "PHASE_ORDERING",
+          "glossed_sequence": "monitor-set -> check",
+          "interpretation": "Checking before equilibrium stabilizes: sampling while state is still settling disrupts phase transition",
+          "brunschwig_parallel": "Opening vessel to test before distillation phase completes",
+          "recognizable_failure": true
+        },
+        {
+          "id": 2,
+          "source": "shey",
+          "target": "al",
+          "source_gloss": {
+            "token": "shey",
+            "prefix": "sh",
+            "middle": "ey",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "monitor",
+            "middle_gloss": "set",
+            "composed_gloss": "monitor set"
+          },
+          "target_gloss": {
+            "token": "al",
+            "prefix": null,
+            "middle": "al",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": "gather",
+            "composed_gloss": "gather"
+          },
+          "failure_class": "PHASE_ORDERING",
+          "glossed_sequence": "monitor-set -> flow-complete",
+          "interpretation": "Skipping from observation to completion: finishing a stage without intervening corrective work",
+          "brunschwig_parallel": "Declaring distillation complete while still monitoring without having acted",
+          "recognizable_failure": true
+        },
+        {
+          "id": 3,
+          "source": "shey",
+          "target": "c",
+          "source_gloss": {
+            "token": "shey",
+            "prefix": "sh",
+            "middle": "ey",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "monitor",
+            "middle_gloss": "set",
+            "composed_gloss": "monitor set"
+          },
+          "target_gloss": {
+            "token": "c",
+            "prefix": null,
+            "middle": "c",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": "adjust",
+            "composed_gloss": "adjust"
+          },
+          "failure_class": "PHASE_ORDERING",
+          "glossed_sequence": "monitor-set -> [rare token, freq=2]",
+          "interpretation": "Uninterpretable: c too rare for reliable glossing",
+          "brunschwig_parallel": null,
+          "recognizable_failure": null
+        },
+        {
+          "id": 4,
+          "source": "chol",
+          "target": "r",
+          "source_gloss": {
+            "token": "chol",
+            "prefix": "ch",
+            "middle": "ol",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "test",
+            "middle_gloss": "continue",
+            "composed_gloss": "test continue"
+          },
+          "target_gloss": {
+            "token": "r",
+            "prefix": null,
+            "middle": "r",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": "mid",
+            "composed_gloss": "mid"
+          },
+          "failure_class": "CONTAINMENT_TIMING",
+          "glossed_sequence": "test-continue -> input",
+          "interpretation": "Adding material to a running system after confirming it should continue: overflow/pressure risk from overloading active process",
+          "brunschwig_parallel": "Adding fresh herbs to operating alembic risks boiling over",
+          "recognizable_failure": true
+        },
+        {
+          "id": 5,
+          "source": "chedy",
+          "target": "ee",
+          "source_gloss": {
+            "token": "chedy",
+            "prefix": "ch",
+            "middle": "edy",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "test",
+            "middle_gloss": "batch",
+            "composed_gloss": "test batch"
+          },
+          "target_gloss": {
+            "token": "ee",
+            "prefix": null,
+            "middle": "ee",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": "long",
+            "composed_gloss": "long"
+          },
+          "failure_class": "COMPOSITION_JUMP",
+          "glossed_sequence": "test-batch -> extended-cool",
+          "interpretation": "Cooling batch without purification: stabilizes temperature before separating impurities, locking them in",
+          "brunschwig_parallel": "Cooling distillate before separating fractions traps contaminants",
+          "recognizable_failure": true
+        },
+        {
+          "id": 6,
+          "source": "dy",
+          "target": "aiin",
+          "source_gloss": {
+            "token": "dy",
+            "prefix": null,
+            "middle": "dy",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": "seal",
+            "composed_gloss": "seal"
+          },
+          "target_gloss": {
+            "token": "aiin",
+            "prefix": null,
+            "middle": "aiin",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": "settle",
+            "composed_gloss": "settle"
+          },
+          "failure_class": "PHASE_ORDERING",
+          "glossed_sequence": "close -> check",
+          "interpretation": "Breaking seal to verify immediately after sealing: wastes luting work, introduces air contamination",
+          "brunschwig_parallel": "Opening sealed alembic joints to check disrupts the luting that Brunschwig insists must be airtight",
+          "recognizable_failure": true
+        },
+        {
+          "id": 7,
+          "source": "dy",
+          "target": "chey",
+          "source_gloss": {
+            "token": "dy",
+            "prefix": null,
+            "middle": "dy",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": "seal",
+            "composed_gloss": "seal"
+          },
+          "target_gloss": {
+            "token": "chey",
+            "prefix": "ch",
+            "middle": "ey",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "test",
+            "middle_gloss": "set",
+            "composed_gloss": "test set"
+          },
+          "failure_class": "PHASE_ORDERING",
+          "glossed_sequence": "close -> test-set",
+          "interpretation": "Testing conditions right after sealing: seal needs dwell time before system reaches new equilibrium",
+          "brunschwig_parallel": "After luting joints, must wait for system to pressurize/stabilize before testing",
+          "recognizable_failure": true
+        },
+        {
+          "id": 8,
+          "source": "l",
+          "target": "chol",
+          "source_gloss": {
+            "token": "l",
+            "prefix": null,
+            "middle": "l",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": "late",
+            "composed_gloss": "late"
+          },
+          "target_gloss": {
+            "token": "chol",
+            "prefix": "ch",
+            "middle": "ol",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "test",
+            "middle_gloss": "continue",
+            "composed_gloss": "test continue"
+          },
+          "failure_class": "CONTAINMENT_TIMING",
+          "glossed_sequence": "frame -> test-continue",
+          "interpretation": "Testing whether process should continue when it has not yet started: checking vessel progress on empty/idle system",
+          "brunschwig_parallel": "Checking distillation progress before firing has begun",
+          "recognizable_failure": true
+        },
+        {
+          "id": 9,
+          "source": "or",
+          "target": "dal",
+          "source_gloss": {
+            "token": "or",
+            "prefix": null,
+            "middle": "or",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": "portion",
+            "composed_gloss": "portion"
+          },
+          "target_gloss": {
+            "token": "dal",
+            "prefix": "da",
+            "middle": "l",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "setup",
+            "middle_gloss": "late",
+            "composed_gloss": "setup late"
+          },
+          "failure_class": "CONTAINMENT_TIMING",
+          "glossed_sequence": "portion -> setup-frame",
+          "interpretation": "Collecting product then immediately reconfiguring apparatus: spillage risk, vessel state incompatible with modification",
+          "brunschwig_parallel": "Rearranging apparatus while collection vessel contains product risks losing the fraction",
+          "recognizable_failure": true
+        },
+        {
+          "id": 10,
+          "source": "chey",
+          "target": "chedy",
+          "source_gloss": {
+            "token": "chey",
+            "prefix": "ch",
+            "middle": "ey",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "test",
+            "middle_gloss": "set",
+            "composed_gloss": "test set"
+          },
+          "target_gloss": {
+            "token": "chedy",
+            "prefix": "ch",
+            "middle": "edy",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "test",
+            "middle_gloss": "batch",
+            "composed_gloss": "test batch"
+          },
+          "failure_class": "PHASE_ORDERING",
+          "glossed_sequence": "test-set -> test-batch",
+          "interpretation": "Testing batch immediately after confirming conditions: skips the actual work cycle between parameter check and output evaluation",
+          "brunschwig_parallel": "Confirming fire temperature then immediately testing distillate without waiting for distillation to occur",
+          "recognizable_failure": true
+        },
+        {
+          "id": 11,
+          "source": "chey",
+          "target": "shedy",
+          "source_gloss": {
+            "token": "chey",
+            "prefix": "ch",
+            "middle": "ey",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "test",
+            "middle_gloss": "set",
+            "composed_gloss": "test set"
+          },
+          "target_gloss": {
+            "token": "shedy",
+            "prefix": "sh",
+            "middle": "edy",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "monitor",
+            "middle_gloss": "batch",
+            "composed_gloss": "monitor batch"
+          },
+          "failure_class": "PHASE_ORDERING",
+          "glossed_sequence": "test-set -> monitor-batch",
+          "interpretation": "Passive batch monitoring right after testing conditions: same pattern as above but passive, skips work cycle",
+          "brunschwig_parallel": "Checking fire then passively watching output without performing any operation between",
+          "recognizable_failure": true
+        },
+        {
+          "id": 12,
+          "source": "ar",
+          "target": "dal",
+          "source_gloss": {
+            "token": "ar",
+            "prefix": null,
+            "middle": "ar",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": "release",
+            "composed_gloss": "release"
+          },
+          "target_gloss": {
+            "token": "dal",
+            "prefix": "da",
+            "middle": "l",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "setup",
+            "middle_gloss": "late",
+            "composed_gloss": "setup late"
+          },
+          "failure_class": "RATE_MISMATCH",
+          "glossed_sequence": "flow-close -> setup-frame",
+          "interpretation": "Ending flow then immediately resetting infrastructure: destroys rate equilibrium with no transition buffer",
+          "brunschwig_parallel": "Stopping distillate flow then immediately disassembling apparatus disrupts residual condensation",
+          "recognizable_failure": true
+        },
+        {
+          "id": 13,
+          "source": "c",
+          "target": "ee",
+          "source_gloss": {
+            "token": "c",
+            "prefix": null,
+            "middle": "c",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": "adjust",
+            "composed_gloss": "adjust"
+          },
+          "target_gloss": {
+            "token": "ee",
+            "prefix": null,
+            "middle": "ee",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": "long",
+            "composed_gloss": "long"
+          },
+          "failure_class": "COMPOSITION_JUMP",
+          "glossed_sequence": "[rare token, freq=2] -> extended-cool",
+          "interpretation": "Uninterpretable: c too rare for reliable glossing",
+          "brunschwig_parallel": null,
+          "recognizable_failure": null
+        },
+        {
+          "id": 14,
+          "source": "he",
+          "target": "t",
+          "source_gloss": {
+            "token": "he",
+            "prefix": null,
+            "middle": "he",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": null,
+            "composed_gloss": "[he]"
+          },
+          "target_gloss": {
+            "token": "t",
+            "prefix": null,
+            "middle": "t",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": "transfer",
+            "composed_gloss": "transfer"
+          },
+          "failure_class": "ENERGY_OVERSHOOT",
+          "glossed_sequence": "monitor-cool -> transfer",
+          "interpretation": "Transferring material before cooling completes: thermal shock to receiving vessel, volatile components still gaseous",
+          "brunschwig_parallel": "Pouring hot distillate before it has cooled: Brunschwig warns must stand overnight to cool",
+          "recognizable_failure": true
+        },
+        {
+          "id": 15,
+          "source": "he",
+          "target": "or",
+          "source_gloss": {
+            "token": "he",
+            "prefix": null,
+            "middle": "he",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": null,
+            "composed_gloss": "[he]"
+          },
+          "target_gloss": {
+            "token": "or",
+            "prefix": null,
+            "middle": "or",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": "portion",
+            "composed_gloss": "portion"
+          },
+          "failure_class": "CONTAINMENT_TIMING",
+          "glossed_sequence": "monitor-cool -> portion",
+          "interpretation": "Collecting/portioning while still cooling: product not fully condensed, vessel pressure not equalized",
+          "brunschwig_parallel": "Collecting fractions before cooling is complete yields impure, volatile-contaminated product",
+          "recognizable_failure": true
+        },
+        {
+          "id": 16,
+          "source": "shedy",
+          "target": "aiin",
+          "source_gloss": {
+            "token": "shedy",
+            "prefix": "sh",
+            "middle": "edy",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "monitor",
+            "middle_gloss": "batch",
+            "composed_gloss": "monitor batch"
+          },
+          "target_gloss": {
+            "token": "aiin",
+            "prefix": null,
+            "middle": "aiin",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": "settle",
+            "composed_gloss": "settle"
+          },
+          "failure_class": "COMPOSITION_JUMP",
+          "glossed_sequence": "monitor-batch -> check",
+          "interpretation": "Monitoring batch then immediately checking without corrective work: observed problem leads to quality control without fixing",
+          "brunschwig_parallel": "Watching distillate quality deteriorate then testing it without intervening to fix the problem",
+          "recognizable_failure": true
+        },
+        {
+          "id": 17,
+          "source": "shedy",
+          "target": "o",
+          "source_gloss": {
+            "token": "shedy",
+            "prefix": "sh",
+            "middle": "edy",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "monitor",
+            "middle_gloss": "batch",
+            "composed_gloss": "monitor batch"
+          },
+          "target_gloss": {
+            "token": "o",
+            "prefix": null,
+            "middle": "o",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": "near",
+            "composed_gloss": "near"
+          },
+          "failure_class": "COMPOSITION_JUMP",
+          "glossed_sequence": "monitor-batch -> work",
+          "interpretation": "Passive batch observation then generic work without targeted separation: mixing impure fractions back in",
+          "brunschwig_parallel": "Observing contamination then performing generic processing instead of targeted purification",
+          "recognizable_failure": true
+        }
+      ]
+    },
+    "T2": {
+      "test": "T2_ASYMMETRY_COHERENCE",
+      "observed_reverse_pairs": 8,
+      "coherent": 8,
+      "prediction_met": true,
+      "verdict": "PASS",
+      "pairs": [
+        {
+          "id": 1,
+          "source": "shey",
+          "target": "aiin",
+          "reverse_status": "ALLOWED(1)",
+          "reverse_count": 1,
+          "asymmetry_coherent": true,
+          "asymmetry_reason": "Reverse (check -> monitor-set) = verify THEN observe, correct diagnostic sequence"
+        },
+        {
+          "id": 2,
+          "source": "shey",
+          "target": "al",
+          "reverse_status": "ALLOWED(2)",
+          "reverse_count": 2,
+          "asymmetry_coherent": true,
+          "asymmetry_reason": "Reverse (flow-complete -> monitor-set) = complete stage THEN monitor next, correct sequence"
+        },
+        {
+          "id": 3,
+          "source": "shey",
+          "target": "c",
+          "reverse_status": "UNOBSERVED",
+          "reverse_count": 0,
+          "asymmetry_coherent": null,
+          "asymmetry_reason": "Token c unclassifiable"
+        },
+        {
+          "id": 4,
+          "source": "chol",
+          "target": "r",
+          "reverse_status": "UNOBSERVED",
+          "reverse_count": 0,
+          "asymmetry_coherent": true,
+          "asymmetry_reason": "Reverse (input -> test-continue) = add material THEN check if process should continue, correct loading sequence"
+        },
+        {
+          "id": 5,
+          "source": "chedy",
+          "target": "ee",
+          "reverse_status": "UNOBSERVED",
+          "reverse_count": 0,
+          "asymmetry_coherent": true,
+          "asymmetry_reason": "Reverse (extended-cool -> test-batch) = cool first THEN test, safe quality-check after stabilization"
+        },
+        {
+          "id": 6,
+          "source": "dy",
+          "target": "aiin",
+          "reverse_status": "ALLOWED(1)",
+          "reverse_count": 1,
+          "asymmetry_coherent": true,
+          "asymmetry_reason": "Reverse (check -> close) = verify THEN seal, correct procedure: test before closing up"
+        },
+        {
+          "id": 7,
+          "source": "dy",
+          "target": "chey",
+          "reverse_status": "UNOBSERVED",
+          "reverse_count": 0,
+          "asymmetry_coherent": true,
+          "asymmetry_reason": "Reverse unobserved, but test-set -> close = verify conditions THEN seal, correct sequence"
+        },
+        {
+          "id": 8,
+          "source": "l",
+          "target": "chol",
+          "reverse_status": "UNOBSERVED",
+          "reverse_count": 0,
+          "asymmetry_coherent": true,
+          "asymmetry_reason": "Reverse unobserved, but test-continue -> frame = check progress THEN reset framework, correct evaluation sequence"
+        },
+        {
+          "id": 9,
+          "source": "or",
+          "target": "dal",
+          "reverse_status": "ALLOWED(5)",
+          "reverse_count": 5,
+          "asymmetry_coherent": true,
+          "asymmetry_reason": "Reverse (setup-frame -> portion) = configure apparatus THEN collect, correct setup-before-use sequence"
+        },
+        {
+          "id": 10,
+          "source": "chey",
+          "target": "chedy",
+          "reverse_status": "ALLOWED(1)",
+          "reverse_count": 1,
+          "asymmetry_coherent": true,
+          "asymmetry_reason": "Reverse (test-batch -> test-set) = evaluate output THEN check parameters, correct diagnostic sequence"
+        },
+        {
+          "id": 11,
+          "source": "chey",
+          "target": "shedy",
+          "reverse_status": "ALLOWED(4)",
+          "reverse_count": 4,
+          "asymmetry_coherent": true,
+          "asymmetry_reason": "Reverse (monitor-batch -> test-set) = observe output THEN verify conditions, correct feedback sequence"
+        },
+        {
+          "id": 12,
+          "source": "ar",
+          "target": "dal",
+          "reverse_status": "ALLOWED(2)",
+          "reverse_count": 2,
+          "asymmetry_coherent": true,
+          "asymmetry_reason": "Reverse (setup-frame -> flow-close) = establish infrastructure THEN manage flow, correct setup-first sequence"
+        },
+        {
+          "id": 13,
+          "source": "c",
+          "target": "ee",
+          "reverse_status": "UNOBSERVED",
+          "reverse_count": 0,
+          "asymmetry_coherent": null,
+          "asymmetry_reason": "Token c unclassifiable"
+        },
+        {
+          "id": 14,
+          "source": "he",
+          "target": "t",
+          "reverse_status": "UNOBSERVED",
+          "reverse_count": 0,
+          "asymmetry_coherent": true,
+          "asymmetry_reason": "Reverse (transfer -> monitor-cool) = move material THEN cool/monitor, different operation context"
+        },
+        {
+          "id": 15,
+          "source": "he",
+          "target": "or",
+          "reverse_status": "UNOBSERVED",
+          "reverse_count": 0,
+          "asymmetry_coherent": true,
+          "asymmetry_reason": "Reverse unobserved, but portion -> monitor-cool = collect THEN observe cooling, different context"
+        },
+        {
+          "id": 16,
+          "source": "shedy",
+          "target": "aiin",
+          "reverse_status": "ALLOWED(3)",
+          "reverse_count": 3,
+          "asymmetry_coherent": true,
+          "asymmetry_reason": "Reverse (check -> monitor-batch) = verify THEN observe, correct: test result guides observation"
+        },
+        {
+          "id": 17,
+          "source": "shedy",
+          "target": "o",
+          "reverse_status": "UNOBSERVED",
+          "reverse_count": 0,
+          "asymmetry_coherent": true,
+          "asymmetry_reason": "Reverse unobserved, but work -> monitor-batch = act THEN observe result, correct corrective sequence"
+        }
+      ]
+    },
+    "T3": {
+      "test": "T3_SAFETY_BUFFER_COHERENCE",
+      "total": 22,
+      "coherent": 22,
+      "prediction_met": true,
+      "verdict": "PASS",
+      "prefix_distribution": {
+        "da": 4,
+        "BARE": 1,
+        "ch": 2,
+        "lch": 1,
+        "qo": 9,
+        "ok": 2,
+        "lk": 1,
+        "to": 1,
+        "ke": 1
+      },
+      "buffers": [
+        {
+          "buffer_token": "dar",
+          "buffer_gloss": {
+            "token": "dar",
+            "prefix": "da",
+            "middle": "r",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "setup",
+            "middle_gloss": "mid",
+            "composed_gloss": "setup mid"
+          },
+          "left": "dy",
+          "left_gloss": "seal",
+          "right": "aiin",
+          "right_gloss": "settle",
+          "forbidden_pair": "dy -> aiin",
+          "folio": "f33v",
+          "coherent": true,
+          "reason": "Lane switch: setup inserted between [bare] and [bare]"
+        },
+        {
+          "buffer_token": "xor",
+          "buffer_gloss": {
+            "token": "xor",
+            "prefix": null,
+            "middle": "x",
+            "suffix": "or",
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": "diagram",
+            "composed_gloss": "diagram"
+          },
+          "left": "shedy",
+          "left_gloss": "monitor batch",
+          "right": "aiin",
+          "right_gloss": "settle",
+          "forbidden_pair": "shedy -> aiin",
+          "folio": "f46r",
+          "coherent": true,
+          "reason": "Operation insertion: diagram breaks forbidden adjacency"
+        },
+        {
+          "buffer_token": "dal",
+          "buffer_gloss": {
+            "token": "dal",
+            "prefix": "da",
+            "middle": "l",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "setup",
+            "middle_gloss": "late",
+            "composed_gloss": "setup late"
+          },
+          "left": "chey",
+          "left_gloss": "test set",
+          "right": "shedy",
+          "right_gloss": "monitor batch",
+          "forbidden_pair": "chey -> shedy",
+          "folio": "f76r",
+          "coherent": true,
+          "reason": "Lane switch: setup inserted between test and monitor"
+        },
+        {
+          "buffer_token": "cheol",
+          "buffer_gloss": {
+            "token": "cheol",
+            "prefix": "ch",
+            "middle": "eol",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "test",
+            "middle_gloss": "sustain",
+            "composed_gloss": "test sustain"
+          },
+          "left": "l",
+          "left_gloss": "late",
+          "right": "chol",
+          "right_gloss": "test continue",
+          "forbidden_pair": "l -> chol",
+          "folio": "f79r",
+          "coherent": true,
+          "reason": "Work insertion: test sustain provides missing operational step"
+        },
+        {
+          "buffer_token": "dain",
+          "buffer_gloss": {
+            "token": "dain",
+            "prefix": "da",
+            "middle": "in",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "setup",
+            "middle_gloss": "link",
+            "composed_gloss": "setup link"
+          },
+          "left": "chey",
+          "left_gloss": "test set",
+          "right": "chedy",
+          "right_gloss": "test batch",
+          "forbidden_pair": "chey -> chedy",
+          "folio": "f79r",
+          "coherent": true,
+          "reason": "Lane switch: setup inserted between test and test"
+        },
+        {
+          "buffer_token": "lchedy",
+          "buffer_gloss": {
+            "token": "lchedy",
+            "prefix": "lch",
+            "middle": "edy",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "L-test",
+            "middle_gloss": "batch",
+            "composed_gloss": "L-test batch"
+          },
+          "left": "chey",
+          "left_gloss": "test set",
+          "right": "shedy",
+          "right_gloss": "monitor batch",
+          "forbidden_pair": "chey -> shedy",
+          "folio": "f80v",
+          "coherent": true,
+          "reason": "Lane switch: L-test inserted between test and monitor"
+        },
+        {
+          "buffer_token": "qol",
+          "buffer_gloss": {
+            "token": "qol",
+            "prefix": "qo",
+            "middle": "l",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "energy",
+            "middle_gloss": "late",
+            "composed_gloss": "energy late"
+          },
+          "left": "chey",
+          "left_gloss": "test set",
+          "right": "chedy",
+          "right_gloss": "test batch",
+          "forbidden_pair": "chey -> chedy",
+          "folio": "f81v",
+          "coherent": true,
+          "reason": "Lane switch: energy inserted between test and test"
+        },
+        {
+          "buffer_token": "qol",
+          "buffer_gloss": {
+            "token": "qol",
+            "prefix": "qo",
+            "middle": "l",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "energy",
+            "middle_gloss": "late",
+            "composed_gloss": "energy late"
+          },
+          "left": "chey",
+          "left_gloss": "test set",
+          "right": "chedy",
+          "right_gloss": "test batch",
+          "forbidden_pair": "chey -> chedy",
+          "folio": "f82r",
+          "coherent": true,
+          "reason": "Lane switch: energy inserted between test and test"
+        },
+        {
+          "buffer_token": "qoky",
+          "buffer_gloss": {
+            "token": "qoky",
+            "prefix": "qo",
+            "middle": "k",
+            "suffix": "y",
+            "articulator": null,
+            "prefix_gloss": "energy",
+            "middle_gloss": "heat",
+            "composed_gloss": "energy heat"
+          },
+          "left": "chey",
+          "left_gloss": "test set",
+          "right": "shedy",
+          "right_gloss": "monitor batch",
+          "forbidden_pair": "chey -> shedy",
+          "folio": "f82v",
+          "coherent": true,
+          "reason": "Lane switch: energy inserted between test and monitor"
+        },
+        {
+          "buffer_token": "qokain",
+          "buffer_gloss": {
+            "token": "qokain",
+            "prefix": "qo",
+            "middle": "k",
+            "suffix": "ain",
+            "articulator": null,
+            "prefix_gloss": "energy",
+            "middle_gloss": "heat",
+            "composed_gloss": "energy heat"
+          },
+          "left": "chey",
+          "left_gloss": "test set",
+          "right": "shedy",
+          "right_gloss": "monitor batch",
+          "forbidden_pair": "chey -> shedy",
+          "folio": "f82v",
+          "coherent": true,
+          "reason": "Lane switch: energy inserted between test and monitor"
+        },
+        {
+          "buffer_token": "okol",
+          "buffer_gloss": {
+            "token": "okol",
+            "prefix": "ok",
+            "middle": "ol",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "vessel",
+            "middle_gloss": "continue",
+            "composed_gloss": "vessel continue"
+          },
+          "left": "ar",
+          "left_gloss": "release",
+          "right": "dal",
+          "right_gloss": "setup late",
+          "forbidden_pair": "ar -> dal",
+          "folio": "f83v",
+          "coherent": true,
+          "reason": "Lane switch: vessel inserted between [bare] and setup"
+        },
+        {
+          "buffer_token": "okal",
+          "buffer_gloss": {
+            "token": "okal",
+            "prefix": "ok",
+            "middle": "al",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "vessel",
+            "middle_gloss": "gather",
+            "composed_gloss": "vessel gather"
+          },
+          "left": "chey",
+          "left_gloss": "test set",
+          "right": "chedy",
+          "right_gloss": "test batch",
+          "forbidden_pair": "chey -> chedy",
+          "folio": "f84r",
+          "coherent": true,
+          "reason": "Lane switch: vessel inserted between test and test"
+        },
+        {
+          "buffer_token": "dain",
+          "buffer_gloss": {
+            "token": "dain",
+            "prefix": "da",
+            "middle": "in",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "setup",
+            "middle_gloss": "link",
+            "composed_gloss": "setup link"
+          },
+          "left": "shey",
+          "left_gloss": "monitor set",
+          "right": "aiin",
+          "right_gloss": "settle",
+          "forbidden_pair": "shey -> aiin",
+          "folio": "f84r",
+          "coherent": true,
+          "reason": "Lane switch: setup inserted between monitor and [bare]"
+        },
+        {
+          "buffer_token": "chodaiin",
+          "buffer_gloss": {
+            "token": "chodaiin",
+            "prefix": "ch",
+            "middle": "od",
+            "suffix": "aiin",
+            "articulator": null,
+            "prefix_gloss": "test",
+            "middle_gloss": "precise",
+            "composed_gloss": "test precise"
+          },
+          "left": "chey",
+          "left_gloss": "test set",
+          "right": "shedy",
+          "right_gloss": "monitor batch",
+          "forbidden_pair": "chey -> shedy",
+          "folio": "f86v5",
+          "coherent": true,
+          "reason": "Work insertion: test precise provides missing operational step"
+        },
+        {
+          "buffer_token": "qol",
+          "buffer_gloss": {
+            "token": "qol",
+            "prefix": "qo",
+            "middle": "l",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "energy",
+            "middle_gloss": "late",
+            "composed_gloss": "energy late"
+          },
+          "left": "chey",
+          "left_gloss": "test set",
+          "right": "chedy",
+          "right_gloss": "test batch",
+          "forbidden_pair": "chey -> chedy",
+          "folio": "f104v",
+          "coherent": true,
+          "reason": "Lane switch: energy inserted between test and test"
+        },
+        {
+          "buffer_token": "lkaiin",
+          "buffer_gloss": {
+            "token": "lkaiin",
+            "prefix": "lk",
+            "middle": "aiin",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "L-energy",
+            "middle_gloss": "settle",
+            "composed_gloss": "L-energy settle"
+          },
+          "left": "chey",
+          "left_gloss": "test set",
+          "right": "chedy",
+          "right_gloss": "test batch",
+          "forbidden_pair": "chey -> chedy",
+          "folio": "f107v",
+          "coherent": true,
+          "reason": "Lane switch: L-energy inserted between test and test"
+        },
+        {
+          "buffer_token": "qokeey",
+          "buffer_gloss": {
+            "token": "qokeey",
+            "prefix": "qo",
+            "middle": "k",
+            "suffix": "eey",
+            "articulator": null,
+            "prefix_gloss": "energy",
+            "middle_gloss": "heat",
+            "composed_gloss": "energy heat"
+          },
+          "left": "chey",
+          "left_gloss": "test set",
+          "right": "chedy",
+          "right_gloss": "test batch",
+          "forbidden_pair": "chey -> chedy",
+          "folio": "f108r",
+          "coherent": true,
+          "reason": "Lane switch: energy inserted between test and test"
+        },
+        {
+          "buffer_token": "qol",
+          "buffer_gloss": {
+            "token": "qol",
+            "prefix": "qo",
+            "middle": "l",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": "energy",
+            "middle_gloss": "late",
+            "composed_gloss": "energy late"
+          },
+          "left": "chey",
+          "left_gloss": "test set",
+          "right": "chedy",
+          "right_gloss": "test batch",
+          "forbidden_pair": "chey -> chedy",
+          "folio": "f111v",
+          "coherent": true,
+          "reason": "Lane switch: energy inserted between test and test"
+        },
+        {
+          "buffer_token": "tor",
+          "buffer_gloss": {
+            "token": "tor",
+            "prefix": "to",
+            "middle": "r",
+            "suffix": null,
+            "articulator": null,
+            "prefix_gloss": null,
+            "middle_gloss": "mid",
+            "composed_gloss": "mid"
+          },
+          "left": "dy",
+          "left_gloss": "seal",
+          "right": "chey",
+          "right_gloss": "test set",
+          "forbidden_pair": "dy -> chey",
+          "folio": "f111v",
+          "coherent": true,
+          "reason": "Work insertion: mid provides missing operational step"
+        },
+        {
+          "buffer_token": "keedal",
+          "buffer_gloss": {
+            "token": "keedal",
+            "prefix": "ke",
+            "middle": "ed",
+            "suffix": "al",
+            "articulator": null,
+            "prefix_gloss": "sustain",
+            "middle_gloss": "discharge",
+            "composed_gloss": "sustain discharge"
+          },
+          "left": "shey",
+          "left_gloss": "monitor set",
+          "right": "aiin",
+          "right_gloss": "settle",
+          "forbidden_pair": "shey -> aiin",
+          "folio": "f112v",
+          "coherent": true,
+          "reason": "Lane switch: sustain inserted between monitor and [bare]"
+        },
+        {
+          "buffer_token": "qoeees",
+          "buffer_gloss": {
+            "token": "qoeees",
+            "prefix": "qo",
+            "middle": "eee",
+            "suffix": "s",
+            "articulator": null,
+            "prefix_gloss": "energy",
+            "middle_gloss": null,
+            "composed_gloss": "energy [eee]"
+          },
+          "left": "dy",
+          "left_gloss": "seal",
+          "right": "aiin",
+          "right_gloss": "settle",
+          "forbidden_pair": "dy -> aiin",
+          "folio": "f113v",
+          "coherent": true,
+          "reason": "Lane switch: energy inserted between [bare] and [bare]"
+        },
+        {
+          "buffer_token": "qokeedy",
+          "buffer_gloss": {
+            "token": "qokeedy",
+            "prefix": "qo",
+            "middle": "ke",
+            "suffix": "edy",
+            "articulator": null,
+            "prefix_gloss": "energy",
+            "middle_gloss": "steady",
+            "composed_gloss": "energy steady"
+          },
+          "left": "chey",
+          "left_gloss": "test set",
+          "right": "chedy",
+          "right_gloss": "test batch",
+          "forbidden_pair": "chey -> chedy",
+          "folio": "f114r",
+          "coherent": true,
+          "reason": "Lane switch: energy inserted between test and test"
+        }
+      ]
+    },
+    "T4": {
+      "test": "T4_FAILURE_CLASS_CONCORDANCE",
+      "classifiable": 15,
+      "concordant": 15,
+      "discordant_count": 0,
+      "discordant_pairs": [],
+      "prediction_met": true,
+      "verdict": "PASS",
+      "pairs": [
+        {
+          "id": 1,
+          "pair": "shey -> aiin",
+          "structural_class": "PHASE_ORDERING",
+          "interpreted_class": "PHASE_ORDERING",
+          "concordant": true
+        },
+        {
+          "id": 2,
+          "pair": "shey -> al",
+          "structural_class": "PHASE_ORDERING",
+          "interpreted_class": "PHASE_ORDERING",
+          "concordant": true
+        },
+        {
+          "id": 3,
+          "pair": "shey -> c",
+          "structural_class": "PHASE_ORDERING",
+          "interpreted_class": null,
+          "concordant": null
+        },
+        {
+          "id": 4,
+          "pair": "chol -> r",
+          "structural_class": "CONTAINMENT_TIMING",
+          "interpreted_class": "CONTAINMENT_TIMING",
+          "concordant": true
+        },
+        {
+          "id": 5,
+          "pair": "chedy -> ee",
+          "structural_class": "COMPOSITION_JUMP",
+          "interpreted_class": "COMPOSITION_JUMP",
+          "concordant": true
+        },
+        {
+          "id": 6,
+          "pair": "dy -> aiin",
+          "structural_class": "PHASE_ORDERING",
+          "interpreted_class": "PHASE_ORDERING",
+          "concordant": true
+        },
+        {
+          "id": 7,
+          "pair": "dy -> chey",
+          "structural_class": "PHASE_ORDERING",
+          "interpreted_class": "PHASE_ORDERING",
+          "concordant": true
+        },
+        {
+          "id": 8,
+          "pair": "l -> chol",
+          "structural_class": "CONTAINMENT_TIMING",
+          "interpreted_class": "CONTAINMENT_TIMING",
+          "concordant": true
+        },
+        {
+          "id": 9,
+          "pair": "or -> dal",
+          "structural_class": "CONTAINMENT_TIMING",
+          "interpreted_class": "CONTAINMENT_TIMING",
+          "concordant": true
+        },
+        {
+          "id": 10,
+          "pair": "chey -> chedy",
+          "structural_class": "PHASE_ORDERING",
+          "interpreted_class": "PHASE_ORDERING",
+          "concordant": true
+        },
+        {
+          "id": 11,
+          "pair": "chey -> shedy",
+          "structural_class": "PHASE_ORDERING",
+          "interpreted_class": "PHASE_ORDERING",
+          "concordant": true
+        },
+        {
+          "id": 12,
+          "pair": "ar -> dal",
+          "structural_class": "RATE_MISMATCH",
+          "interpreted_class": "RATE_MISMATCH",
+          "concordant": true
+        },
+        {
+          "id": 13,
+          "pair": "c -> ee",
+          "structural_class": "COMPOSITION_JUMP",
+          "interpreted_class": null,
+          "concordant": null
+        },
+        {
+          "id": 14,
+          "pair": "he -> t",
+          "structural_class": "ENERGY_OVERSHOOT",
+          "interpreted_class": "ENERGY_OVERSHOOT",
+          "concordant": true
+        },
+        {
+          "id": 15,
+          "pair": "he -> or",
+          "structural_class": "CONTAINMENT_TIMING",
+          "interpreted_class": "CONTAINMENT_TIMING",
+          "concordant": true
+        },
+        {
+          "id": 16,
+          "pair": "shedy -> aiin",
+          "structural_class": "COMPOSITION_JUMP",
+          "interpreted_class": "COMPOSITION_JUMP",
+          "concordant": true
+        },
+        {
+          "id": 17,
+          "pair": "shedy -> o",
+          "structural_class": "COMPOSITION_JUMP",
+          "interpreted_class": "COMPOSITION_JUMP",
+          "concordant": true
+        }
+      ]
+    },
+    "T5": {
+      "test": "T5_BUFFER_REGIME_DISTRIBUTION",
+      "regime_folio_counts": {
+        "REGIME_1": 32,
+        "REGIME_3": 20,
+        "REGIME_4": 15,
+        "REGIME_2": 15
+      },
+      "buffer_regime_counts": {
+        "REGIME_2": 2,
+        "REGIME_3": 4,
+        "REGIME_1": 16
+      },
+      "enrichments": {
+        "REGIME_1": 1.86,
+        "REGIME_2": 0.5,
+        "REGIME_3": 0.75,
+        "REGIME_4": 0.0
+      },
+      "chi_squared": 11.794,
+      "p_value": 0.0081,
+      "non_uniform": "True",
+      "prediction_met": "True",
+      "verdict": "PASS"
+    }
+  },
+  "synthesis": {
+    "verdict": "THERMODYNAMIC_COHERENCE",
+    "reason": "Token-level forbidden transitions map to specific distillation failures with full concordance and supporting evidence",
+    "test_verdicts": {
+      "T1": "PASS",
+      "T2": "PASS",
+      "T3": "PASS",
+      "T4": "PASS",
+      "T5": "PASS"
+    },
+    "pass_count": 5,
+    "key_numbers": {
+      "recognizable_failures": "15/15",
+      "concordant_classes": "15/15",
+      "coherent_asymmetry": "8/8",
+      "coherent_buffers": "22/22",
+      "regime_p_value": 0.0081
+    }
+  },
+  "metadata": {
+    "n_forbidden_pairs": 17,
+    "n_classifiable": 15,
+    "n_safety_buffers": 22,
+    "n_failure_classes": 5,
+    "failure_class_counts": {
+      "ENERGY_OVERSHOOT": 1,
+      "PHASE_ORDERING": 7,
+      "RATE_MISMATCH": 1,
+      "COMPOSITION_JUMP": 4,
+      "CONTAINMENT_TIMING": 4
+    }
+  }
+}

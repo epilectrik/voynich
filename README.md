@@ -6,13 +6,13 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 
 ## Project Status
 
-**Analysis: CLOSED** | **Structural inspection: FROZEN** | **Version: 3.59**
+**Analysis: CLOSED** | **Structural inspection: FROZEN** | **Version: 3.60**
 
 | Metric | Value |
 |--------|-------|
 | Validated constraints | 879 |
-| Research phases completed | 333 |
-| Model fits tested | 57 |
+| Research phases completed | 334 |
+| Model fits tested | 58 |
 | Constraint tiers | 0 (frozen fact) through 4 (exploratory) |
 
 ## Core Finding
