@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 879 validated constraints and 58 explanatory fits loaded
+embedded below. You have ALL 879 validated constraints and 59 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -61,8 +61,8 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # EMBEDDED EXPERT CONTEXT
 
-**Generated:** 2026-02-12 23:55
-**Version:** FROZEN STATE (879 constraints, 58 fits)
+**Generated:** 2026-02-13 08:02
+**Version:** FROZEN STATE (879 constraints, 59 fits)
 
 ---
 
@@ -84,7 +84,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.60 | **Status:** FROZEN | **Constraints:** 879 | **Date:** 2026-02-12
+**Version:** 3.61 | **Status:** FROZEN | **Constraints:** 879 | **Date:** 2026-02-12
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -284,7 +284,7 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 | Category | Count |
 |----------|-------|
 | Validated constraints | 879 |
-| Completed phases | 334 |
+| Completed phases | 335 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -1672,7 +1672,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 879 constraints | 2026-02-12
+CONSTRAINT_REFERENCE v2.6 | 879 constraints | 2026-02-13
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2564,8 +2564,8 @@ C1014	Discrimination Manifold Encodes Viability Structure via Bridge Backbone
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-02-12
-# Total: 58 fits
+# Generated: 2026-02-13
+# Total: 59 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
 ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
@@ -2627,6 +2627,7 @@ F-BRU-020	Output Category Vocabulary Signatures	F4	B	CONFIRMED	F-BRU-017 (REGIME
 F-BRU-021	Controlled Variable Identification (Temperature / Thermal State)	F3	B	SUCCESS	C976 (6-State Topology), C978 (Hub-and-Spoke), C979 (REGIME Modulates Weights), C980 (Free Variation Envelope)	in: fits_brunschwig
 F-BRU-022	Recipe Triangulation via PP-REGIME Pathway (NEGATIVE)	F3	B	NEGATIVE	C882 (PRECISION Kernel), C883 (Handling Distribution), C502 (PP Filtering), C753 (Near-Zero Routing)	in: fits_brunschwig
 F-BRU-023	Forbidden Transition Thermodynamics (TOKEN-LEVEL COHERENCE)	F4	B	THERMODYNAMIC_COHERENCE	C109 (Hazard Classes), C783 (Directional Asymmetry), C997 (Safety Buffers)	in: fits_brunschwig
+F-BRU-024	PP MIDDLE Extension Validation (NEGATIVE)	F4	B	EXTENSION_UNSUPPORTED	C498 (RI/PP Bifurcation), C267 (Compositional Morphology), C995-C1000 (Affordance Bins)	in: fits_brunschwig
 
 ---
 

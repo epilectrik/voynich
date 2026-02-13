@@ -1,0 +1,4421 @@
+{
+  "phase": "PP_MIDDLE_EXTENSION",
+  "phase_number": 335,
+  "tests": {
+    "T1": {
+      "test": "T1_PP_INVENTORY_AUDIT",
+      "total_pp": 404,
+      "counts": {
+        "GLOSSED": 87,
+        "FEATURES_ONLY": 100,
+        "AUTO_COMPOSABLE": 207,
+        "DARK": 10
+      },
+      "reachable": 294,
+      "reachable_pct": 72.8,
+      "prediction_met": true,
+      "verdict": "PASS",
+      "details": [
+        {
+          "middle": "a",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "yield"
+        },
+        {
+          "middle": "ad",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ai",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "open"
+        },
+        {
+          "middle": "aii",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "open"
+        },
+        {
+          "middle": "aiin",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "settle"
+        },
+        {
+          "middle": "aiino",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "aiin",
+          "gloss": null
+        },
+        {
+          "middle": "aik",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ai",
+          "gloss": null
+        },
+        {
+          "middle": "ain",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "intake"
+        },
+        {
+          "middle": "aip",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ai",
+          "gloss": null
+        },
+        {
+          "middle": "air",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ai",
+          "gloss": null
+        },
+        {
+          "middle": "ait",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ai",
+          "gloss": null
+        },
+        {
+          "middle": "ak",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "al",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "gather"
+        },
+        {
+          "middle": "ala",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "al",
+          "gloss": null
+        },
+        {
+          "middle": "alc",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "al",
+          "gloss": null
+        },
+        {
+          "middle": "alch",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "lch",
+          "gloss": null
+        },
+        {
+          "middle": "ald",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "al",
+          "gloss": null
+        },
+        {
+          "middle": "alo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "al",
+          "gloss": null
+        },
+        {
+          "middle": "alod",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "al",
+          "gloss": null
+        },
+        {
+          "middle": "am",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "finalize"
+        },
+        {
+          "middle": "an",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "bind"
+        },
+        {
+          "middle": "ar",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "release"
+        },
+        {
+          "middle": "ara",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ar",
+          "gloss": null
+        },
+        {
+          "middle": "arc",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ar",
+          "gloss": null
+        },
+        {
+          "middle": "aro",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ar",
+          "gloss": null
+        },
+        {
+          "middle": "at",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "c",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "adjust"
+        },
+        {
+          "middle": "cf",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "cfh",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "cfheo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eo",
+          "gloss": null
+        },
+        {
+          "middle": "ch",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "check"
+        },
+        {
+          "middle": "cha",
+          "category": "DARK",
+          "has_gloss": false,
+          "has_features": false,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "chd",
+          "category": "DARK",
+          "has_gloss": false,
+          "has_features": false,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "che",
+          "category": "DARK",
+          "has_gloss": false,
+          "has_features": false,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "chee",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": false,
+          "can_auto_compose": true,
+          "atom_source": "ee",
+          "gloss": null
+        },
+        {
+          "middle": "cheo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": false,
+          "can_auto_compose": true,
+          "atom_source": "eo",
+          "gloss": null
+        },
+        {
+          "middle": "cheod",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": false,
+          "can_auto_compose": true,
+          "atom_source": "eod",
+          "gloss": null
+        },
+        {
+          "middle": "ches",
+          "category": "DARK",
+          "has_gloss": false,
+          "has_features": false,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "chk",
+          "category": "DARK",
+          "has_gloss": false,
+          "has_features": false,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "cho",
+          "category": "DARK",
+          "has_gloss": false,
+          "has_features": false,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "chod",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": false,
+          "can_auto_compose": true,
+          "atom_source": "od",
+          "gloss": null
+        },
+        {
+          "middle": "chot",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": false,
+          "can_auto_compose": true,
+          "atom_source": "ot",
+          "gloss": null
+        },
+        {
+          "middle": "chs",
+          "category": "DARK",
+          "has_gloss": false,
+          "has_features": false,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ck",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "hard"
+        },
+        {
+          "middle": "ckh",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "firm"
+        },
+        {
+          "middle": "ckhe",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ckh",
+          "gloss": null
+        },
+        {
+          "middle": "ckheo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ckh",
+          "gloss": null
+        },
+        {
+          "middle": "ckho",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ckh",
+          "gloss": null
+        },
+        {
+          "middle": "ckhyd",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ckh",
+          "gloss": null
+        },
+        {
+          "middle": "cks",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ck",
+          "gloss": null
+        },
+        {
+          "middle": "cp",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "cph",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "measure"
+        },
+        {
+          "middle": "cphe",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "cph",
+          "gloss": null
+        },
+        {
+          "middle": "cpheo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "cph",
+          "gloss": null
+        },
+        {
+          "middle": "cpho",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "cph",
+          "gloss": null
+        },
+        {
+          "middle": "cs",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ct",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "control"
+        },
+        {
+          "middle": "cth",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "hazard"
+        },
+        {
+          "middle": "ctheo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "cth",
+          "gloss": null
+        },
+        {
+          "middle": "ctho",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "cth",
+          "gloss": null
+        },
+        {
+          "middle": "d",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "mark"
+        },
+        {
+          "middle": "da",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "start"
+        },
+        {
+          "middle": "dai",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ai",
+          "gloss": null
+        },
+        {
+          "middle": "dair",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ai",
+          "gloss": null
+        },
+        {
+          "middle": "dc",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "dch",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "dck",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ck",
+          "gloss": null
+        },
+        {
+          "middle": "dii",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "dk",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "dksh",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "dl",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "do",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "dsh",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "dy",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "seal"
+        },
+        {
+          "middle": "dyd",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "dy",
+          "gloss": null
+        },
+        {
+          "middle": "dydy",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "dy",
+          "gloss": null
+        },
+        {
+          "middle": "dyt",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "dy",
+          "gloss": null
+        },
+        {
+          "middle": "dytch",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "tch",
+          "gloss": null
+        },
+        {
+          "middle": "dyto",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "dy",
+          "gloss": null
+        },
+        {
+          "middle": "e",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "cool"
+        },
+        {
+          "middle": "ea",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "eal",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "al",
+          "gloss": null
+        },
+        {
+          "middle": "eam",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "am",
+          "gloss": null
+        },
+        {
+          "middle": "ec",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "eck",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "rigid"
+        },
+        {
+          "middle": "eckh",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "danger"
+        },
+        {
+          "middle": "ect",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "regulate"
+        },
+        {
+          "middle": "ecth",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "cth",
+          "gloss": null
+        },
+        {
+          "middle": "ed",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "discharge"
+        },
+        {
+          "middle": "edo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ed",
+          "gloss": null
+        },
+        {
+          "middle": "edy",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "batch"
+        },
+        {
+          "middle": "ee",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "long"
+        },
+        {
+          "middle": "eea",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ee",
+          "gloss": null
+        },
+        {
+          "middle": "eeck",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eck",
+          "gloss": null
+        },
+        {
+          "middle": "eecth",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "cth",
+          "gloss": null
+        },
+        {
+          "middle": "eed",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "extended"
+        },
+        {
+          "middle": "eee",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ee",
+          "gloss": null
+        },
+        {
+          "middle": "eeeo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eeo",
+          "gloss": null
+        },
+        {
+          "middle": "eek",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "lock"
+        },
+        {
+          "middle": "eekeo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eek",
+          "gloss": null
+        },
+        {
+          "middle": "eeo",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "wide"
+        },
+        {
+          "middle": "eeod",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eod",
+          "gloss": null
+        },
+        {
+          "middle": "eeok",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eeo",
+          "gloss": null
+        },
+        {
+          "middle": "eeol",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "overnight"
+        },
+        {
+          "middle": "eeot",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eeo",
+          "gloss": null
+        },
+        {
+          "middle": "ees",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ee",
+          "gloss": null
+        },
+        {
+          "middle": "eet",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "et",
+          "gloss": null
+        },
+        {
+          "middle": "eey",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "deep"
+        },
+        {
+          "middle": "eeyt",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eey",
+          "gloss": null
+        },
+        {
+          "middle": "efo",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ek",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "exact"
+        },
+        {
+          "middle": "eka",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ka",
+          "gloss": null
+        },
+        {
+          "middle": "ekc",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "kc",
+          "gloss": null
+        },
+        {
+          "middle": "ekch",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "kch",
+          "gloss": null
+        },
+        {
+          "middle": "eke",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ek",
+          "gloss": null
+        },
+        {
+          "middle": "ekeod",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eod",
+          "gloss": null
+        },
+        {
+          "middle": "el",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "eo",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "open"
+        },
+        {
+          "middle": "eoa",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eo",
+          "gloss": null
+        },
+        {
+          "middle": "eoc",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eo",
+          "gloss": null
+        },
+        {
+          "middle": "eock",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ck",
+          "gloss": null
+        },
+        {
+          "middle": "eockh",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ckh",
+          "gloss": null
+        },
+        {
+          "middle": "eocp",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eo",
+          "gloss": null
+        },
+        {
+          "middle": "eoct",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ct",
+          "gloss": null
+        },
+        {
+          "middle": "eocth",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "cth",
+          "gloss": null
+        },
+        {
+          "middle": "eod",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "stand"
+        },
+        {
+          "middle": "eodc",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eod",
+          "gloss": null
+        },
+        {
+          "middle": "eoek",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eo",
+          "gloss": null
+        },
+        {
+          "middle": "eok",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "cool"
+        },
+        {
+          "middle": "eoke",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eok",
+          "gloss": null
+        },
+        {
+          "middle": "eol",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "sustain"
+        },
+        {
+          "middle": "eold",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eol",
+          "gloss": null
+        },
+        {
+          "middle": "eolke",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "olk",
+          "gloss": null
+        },
+        {
+          "middle": "eolt",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eol",
+          "gloss": null
+        },
+        {
+          "middle": "eop",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "op",
+          "gloss": null
+        },
+        {
+          "middle": "eor",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eo",
+          "gloss": null
+        },
+        {
+          "middle": "eos",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eo",
+          "gloss": null
+        },
+        {
+          "middle": "eot",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ot",
+          "gloss": null
+        },
+        {
+          "middle": "eotch",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "tch",
+          "gloss": null
+        },
+        {
+          "middle": "eoteo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "te",
+          "gloss": null
+        },
+        {
+          "middle": "ep",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "epc",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "epch",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "pch",
+          "gloss": null
+        },
+        {
+          "middle": "er",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "es",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ese",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "et",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "path"
+        },
+        {
+          "middle": "etc",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "et",
+          "gloss": null
+        },
+        {
+          "middle": "etch",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "tch",
+          "gloss": null
+        },
+        {
+          "middle": "ete",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "et",
+          "gloss": null
+        },
+        {
+          "middle": "ey",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "set"
+        },
+        {
+          "middle": "eyk",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ey",
+          "gloss": null
+        },
+        {
+          "middle": "eyt",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ey",
+          "gloss": null
+        },
+        {
+          "middle": "f",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "flag"
+        },
+        {
+          "middle": "fch",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "note"
+        },
+        {
+          "middle": "fo",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "fod",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "od",
+          "gloss": null
+        },
+        {
+          "middle": "fsh",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "g",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "complete"
+        },
+        {
+          "middle": "h",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "watch"
+        },
+        {
+          "middle": "he",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "hy",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "i",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "early"
+        },
+        {
+          "middle": "ii",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "repeat"
+        },
+        {
+          "middle": "iin",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "iterate"
+        },
+        {
+          "middle": "iir",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ik",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "im",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "in",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "link"
+        },
+        {
+          "middle": "ind",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "in",
+          "gloss": null
+        },
+        {
+          "middle": "ip",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ir",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "irai",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ai",
+          "gloss": null
+        },
+        {
+          "middle": "iro",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "is",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "it",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "k",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "heat"
+        },
+        {
+          "middle": "ka",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "fire"
+        },
+        {
+          "middle": "kai",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "step"
+        },
+        {
+          "middle": "kair",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ka",
+          "gloss": null
+        },
+        {
+          "middle": "kal",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "al",
+          "gloss": null
+        },
+        {
+          "middle": "kalch",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "lch",
+          "gloss": null
+        },
+        {
+          "middle": "kc",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "bond"
+        },
+        {
+          "middle": "kch",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "pulse"
+        },
+        {
+          "middle": "kchd",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "kch",
+          "gloss": null
+        },
+        {
+          "middle": "kche",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "kch",
+          "gloss": null
+        },
+        {
+          "middle": "kcheo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "kch",
+          "gloss": null
+        },
+        {
+          "middle": "kcho",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "kch",
+          "gloss": null
+        },
+        {
+          "middle": "kchod",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "kch",
+          "gloss": null
+        },
+        {
+          "middle": "ke",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "steady"
+        },
+        {
+          "middle": "kec",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ke",
+          "gloss": null
+        },
+        {
+          "middle": "kee",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "deep"
+        },
+        {
+          "middle": "keech",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "kee",
+          "gloss": null
+        },
+        {
+          "middle": "keed",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "vent"
+        },
+        {
+          "middle": "keee",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "kee",
+          "gloss": null
+        },
+        {
+          "middle": "keeo",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "cycle"
+        },
+        {
+          "middle": "keeok",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "keeo",
+          "gloss": null
+        },
+        {
+          "middle": "keo",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "open"
+        },
+        {
+          "middle": "keod",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eod",
+          "gloss": null
+        },
+        {
+          "middle": "kesh",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ke",
+          "gloss": null
+        },
+        {
+          "middle": "kii",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ko",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "kod",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "od",
+          "gloss": null
+        },
+        {
+          "middle": "kol",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ol",
+          "gloss": null
+        },
+        {
+          "middle": "kor",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "or",
+          "gloss": null
+        },
+        {
+          "middle": "ks",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ksh",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "scan"
+        },
+        {
+          "middle": "l",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "late"
+        },
+        {
+          "middle": "la",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "lai",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ai",
+          "gloss": null
+        },
+        {
+          "middle": "lc",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "lch",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "strip"
+        },
+        {
+          "middle": "lchd",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "lch",
+          "gloss": null
+        },
+        {
+          "middle": "lche",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "lch",
+          "gloss": null
+        },
+        {
+          "middle": "ld",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ldak",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "le",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "lk",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "frame"
+        },
+        {
+          "middle": "lo",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "open"
+        },
+        {
+          "middle": "loch",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "lo",
+          "gloss": null
+        },
+        {
+          "middle": "loeee",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ee",
+          "gloss": null
+        },
+        {
+          "middle": "ls",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "lsh",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "verify"
+        },
+        {
+          "middle": "ly",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "end"
+        },
+        {
+          "middle": "m",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "final"
+        },
+        {
+          "middle": "n",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "halt"
+        },
+        {
+          "middle": "o",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "near"
+        },
+        {
+          "middle": "oai",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ai",
+          "gloss": null
+        },
+        {
+          "middle": "oaii",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "aii",
+          "gloss": null
+        },
+        {
+          "middle": "oc",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ocf",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ocfh",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "och",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ocho",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ock",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ck",
+          "gloss": null
+        },
+        {
+          "middle": "ockh",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ckh",
+          "gloss": null
+        },
+        {
+          "middle": "ockho",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ckh",
+          "gloss": null
+        },
+        {
+          "middle": "ocp",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ocph",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "cph",
+          "gloss": null
+        },
+        {
+          "middle": "ocpheo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "cph",
+          "gloss": null
+        },
+        {
+          "middle": "oct",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ct",
+          "gloss": null
+        },
+        {
+          "middle": "octh",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "cth",
+          "gloss": null
+        },
+        {
+          "middle": "octheo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "cth",
+          "gloss": null
+        },
+        {
+          "middle": "octho",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "cth",
+          "gloss": null
+        },
+        {
+          "middle": "od",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "precise"
+        },
+        {
+          "middle": "oda",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "od",
+          "gloss": null
+        },
+        {
+          "middle": "odai",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "od",
+          "gloss": null
+        },
+        {
+          "middle": "odaii",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "aii",
+          "gloss": null
+        },
+        {
+          "middle": "odal",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "al",
+          "gloss": null
+        },
+        {
+          "middle": "odc",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "od",
+          "gloss": null
+        },
+        {
+          "middle": "odch",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "od",
+          "gloss": null
+        },
+        {
+          "middle": "ode",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "od",
+          "gloss": null
+        },
+        {
+          "middle": "odee",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "od",
+          "gloss": null
+        },
+        {
+          "middle": "odo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "od",
+          "gloss": null
+        },
+        {
+          "middle": "ody",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "dy",
+          "gloss": null
+        },
+        {
+          "middle": "oe",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "oee",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ee",
+          "gloss": null
+        },
+        {
+          "middle": "oeee",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ee",
+          "gloss": null
+        },
+        {
+          "middle": "oeeeo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eeo",
+          "gloss": null
+        },
+        {
+          "middle": "oeeo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eeo",
+          "gloss": null
+        },
+        {
+          "middle": "oek",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ek",
+          "gloss": null
+        },
+        {
+          "middle": "oekeo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eo",
+          "gloss": null
+        },
+        {
+          "middle": "oeo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eo",
+          "gloss": null
+        },
+        {
+          "middle": "oep",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "oet",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "et",
+          "gloss": null
+        },
+        {
+          "middle": "of",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ofar",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ar",
+          "gloss": null
+        },
+        {
+          "middle": "ofc",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ofch",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ofched",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ed",
+          "gloss": null
+        },
+        {
+          "middle": "ofcho",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "oi",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "oii",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "oiin",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "loop"
+        },
+        {
+          "middle": "oik",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "oin",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "in",
+          "gloss": null
+        },
+        {
+          "middle": "ok",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "seal"
+        },
+        {
+          "middle": "okc",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "kc",
+          "gloss": null
+        },
+        {
+          "middle": "okch",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "kch",
+          "gloss": null
+        },
+        {
+          "middle": "okcho",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "kch",
+          "gloss": null
+        },
+        {
+          "middle": "oke",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ok",
+          "gloss": null
+        },
+        {
+          "middle": "okee",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "kee",
+          "gloss": null
+        },
+        {
+          "middle": "okeo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ok",
+          "gloss": null
+        },
+        {
+          "middle": "okes",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ok",
+          "gloss": null
+        },
+        {
+          "middle": "oko",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ok",
+          "gloss": null
+        },
+        {
+          "middle": "oksh",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ok",
+          "gloss": null
+        },
+        {
+          "middle": "ol",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "continue"
+        },
+        {
+          "middle": "ola",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ol",
+          "gloss": null
+        },
+        {
+          "middle": "olc",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ol",
+          "gloss": null
+        },
+        {
+          "middle": "olch",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "lch",
+          "gloss": null
+        },
+        {
+          "middle": "old",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ol",
+          "gloss": null
+        },
+        {
+          "middle": "olf",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ol",
+          "gloss": null
+        },
+        {
+          "middle": "olk",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "hold"
+        },
+        {
+          "middle": "olkch",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "olk",
+          "gloss": null
+        },
+        {
+          "middle": "olke",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "olk",
+          "gloss": null
+        },
+        {
+          "middle": "olo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ol",
+          "gloss": null
+        },
+        {
+          "middle": "ols",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ol",
+          "gloss": null
+        },
+        {
+          "middle": "olsh",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ol",
+          "gloss": null
+        },
+        {
+          "middle": "olt",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ol",
+          "gloss": null
+        },
+        {
+          "middle": "olyd",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ly",
+          "gloss": null
+        },
+        {
+          "middle": "om",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "work"
+        },
+        {
+          "middle": "ool",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ol",
+          "gloss": null
+        },
+        {
+          "middle": "op",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "start"
+        },
+        {
+          "middle": "opc",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "op",
+          "gloss": null
+        },
+        {
+          "middle": "opch",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "operate"
+        },
+        {
+          "middle": "opche",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "opch",
+          "gloss": null
+        },
+        {
+          "middle": "opchee",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "opch",
+          "gloss": null
+        },
+        {
+          "middle": "opcho",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "opch",
+          "gloss": null
+        },
+        {
+          "middle": "opd",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "op",
+          "gloss": null
+        },
+        {
+          "middle": "opor",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "op",
+          "gloss": null
+        },
+        {
+          "middle": "oqo",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "oqok",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "dense"
+        },
+        {
+          "middle": "oqot",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ot",
+          "gloss": null
+        },
+        {
+          "middle": "or",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "portion"
+        },
+        {
+          "middle": "orch",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "or",
+          "gloss": null
+        },
+        {
+          "middle": "ord",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "or",
+          "gloss": null
+        },
+        {
+          "middle": "os",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "osh",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "oshe",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "oso",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ot",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "route"
+        },
+        {
+          "middle": "otai",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ot",
+          "gloss": null
+        },
+        {
+          "middle": "otc",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ot",
+          "gloss": null
+        },
+        {
+          "middle": "otch",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "tch",
+          "gloss": null
+        },
+        {
+          "middle": "ote",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "te",
+          "gloss": null
+        },
+        {
+          "middle": "oto",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ot",
+          "gloss": null
+        },
+        {
+          "middle": "oy",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "p",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "pause"
+        },
+        {
+          "middle": "pa",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "pai",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ai",
+          "gloss": null
+        },
+        {
+          "middle": "pc",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "pch",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "pause"
+        },
+        {
+          "middle": "pcheo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "pch",
+          "gloss": null
+        },
+        {
+          "middle": "pcho",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "pch",
+          "gloss": null
+        },
+        {
+          "middle": "pd",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "pyd",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "q",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "qckh",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ckh",
+          "gloss": null
+        },
+        {
+          "middle": "qe",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "qek",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ek",
+          "gloss": null
+        },
+        {
+          "middle": "qeke",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ek",
+          "gloss": null
+        },
+        {
+          "middle": "qk",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "qo",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "r",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "mid"
+        },
+        {
+          "middle": "ra",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "rai",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ai",
+          "gloss": null
+        },
+        {
+          "middle": "rain",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ain",
+          "gloss": null
+        },
+        {
+          "middle": "rais",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ai",
+          "gloss": null
+        },
+        {
+          "middle": "rc",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "rch",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "re",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "rk",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ro",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "rod",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "od",
+          "gloss": null
+        },
+        {
+          "middle": "rol",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ol",
+          "gloss": null
+        },
+        {
+          "middle": "rs",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "rsh",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ry",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "finish"
+        },
+        {
+          "middle": "s",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "break"
+        },
+        {
+          "middle": "sa",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "see",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ee",
+          "gloss": null
+        },
+        {
+          "middle": "sh",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "verify"
+        },
+        {
+          "middle": "shch",
+          "category": "DARK",
+          "has_gloss": false,
+          "has_features": false,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "she",
+          "category": "DARK",
+          "has_gloss": false,
+          "has_features": false,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "sheo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": false,
+          "can_auto_compose": true,
+          "atom_source": "eo",
+          "gloss": null
+        },
+        {
+          "middle": "sho",
+          "category": "DARK",
+          "has_gloss": false,
+          "has_features": false,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "sk",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "so",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "t",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "transfer"
+        },
+        {
+          "middle": "ta",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "tai",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ai",
+          "gloss": null
+        },
+        {
+          "middle": "tal",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "al",
+          "gloss": null
+        },
+        {
+          "middle": "tc",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "tch",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "pound"
+        },
+        {
+          "middle": "tchd",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "tch",
+          "gloss": null
+        },
+        {
+          "middle": "tche",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "tch",
+          "gloss": null
+        },
+        {
+          "middle": "tcheo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "tch",
+          "gloss": null
+        },
+        {
+          "middle": "tcho",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "tch",
+          "gloss": null
+        },
+        {
+          "middle": "te",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "gather"
+        },
+        {
+          "middle": "tee",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "te",
+          "gloss": null
+        },
+        {
+          "middle": "teeo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "eeo",
+          "gloss": null
+        },
+        {
+          "middle": "teo",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "te",
+          "gloss": null
+        },
+        {
+          "middle": "to",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "tol",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ol",
+          "gloss": null
+        },
+        {
+          "middle": "ts",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "tsh",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ty",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "tysh",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "y",
+          "category": "GLOSSED",
+          "has_gloss": true,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": "end"
+        },
+        {
+          "middle": "yai",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ai",
+          "gloss": null
+        },
+        {
+          "middle": "yaii",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "aii",
+          "gloss": null
+        },
+        {
+          "middle": "yckh",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ckh",
+          "gloss": null
+        },
+        {
+          "middle": "yd",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "yf",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "yfol",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ol",
+          "gloss": null
+        },
+        {
+          "middle": "yk",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "yke",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "ke",
+          "gloss": null
+        },
+        {
+          "middle": "yl",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "yod",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "od",
+          "gloss": null
+        },
+        {
+          "middle": "yp",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ypch",
+          "category": "AUTO_COMPOSABLE",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": true,
+          "atom_source": "pch",
+          "gloss": null
+        },
+        {
+          "middle": "yt",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "ytd",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        },
+        {
+          "middle": "yts",
+          "category": "FEATURES_ONLY",
+          "has_gloss": false,
+          "has_features": true,
+          "can_auto_compose": false,
+          "atom_source": null,
+          "gloss": null
+        }
+      ]
+    },
+    "T2": {
+      "test": "T2_BEHAVIORAL_SIMILARITY",
+      "n_tested": 201,
+      "mean_atom_similarity": 0.2231,
+      "mean_random_similarity": -0.0074,
+      "delta": 0.2305,
+      "t_statistic": 15.0389,
+      "p_value": 0.0,
+      "sim_pass": false,
+      "stat_pass": "True",
+      "verdict": "FAIL",
+      "prediction_met": false,
+      "pairs": [
+        {
+          "compound": "eeeo",
+          "atom": "eeo",
+          "atom_similarity": 0.8464,
+          "random_similarity": -0.016,
+          "delta": 0.8624
+        },
+        {
+          "compound": "eeod",
+          "atom": "eod",
+          "atom_similarity": 0.8729,
+          "random_similarity": 0.0728,
+          "delta": 0.8001
+        },
+        {
+          "compound": "oaii",
+          "atom": "aii",
+          "atom_similarity": 0.6905,
+          "random_similarity": -0.0542,
+          "delta": 0.7447
+        },
+        {
+          "compound": "octh",
+          "atom": "cth",
+          "atom_similarity": 0.7663,
+          "random_similarity": 0.0642,
+          "delta": 0.7021
+        },
+        {
+          "compound": "eee",
+          "atom": "ee",
+          "atom_similarity": 0.7491,
+          "random_similarity": 0.0533,
+          "delta": 0.6958
+        },
+        {
+          "compound": "oeeo",
+          "atom": "eeo",
+          "atom_similarity": 0.5883,
+          "random_similarity": -0.078,
+          "delta": 0.6663
+        },
+        {
+          "compound": "tchd",
+          "atom": "tch",
+          "atom_similarity": 0.6374,
+          "random_similarity": -0.0272,
+          "delta": 0.6646
+        },
+        {
+          "compound": "teeo",
+          "atom": "eeo",
+          "atom_similarity": 0.6227,
+          "random_similarity": -0.0347,
+          "delta": 0.6574
+        },
+        {
+          "compound": "otch",
+          "atom": "tch",
+          "atom_similarity": 0.5784,
+          "random_similarity": -0.0598,
+          "delta": 0.6383
+        },
+        {
+          "compound": "kchd",
+          "atom": "kch",
+          "atom_similarity": 0.584,
+          "random_similarity": -0.0235,
+          "delta": 0.6074
+        },
+        {
+          "compound": "keech",
+          "atom": "kee",
+          "atom_similarity": 0.5053,
+          "random_similarity": -0.0813,
+          "delta": 0.5866
+        },
+        {
+          "compound": "keee",
+          "atom": "kee",
+          "atom_similarity": 0.5433,
+          "random_similarity": -0.0317,
+          "delta": 0.575
+        },
+        {
+          "compound": "tcho",
+          "atom": "tch",
+          "atom_similarity": 0.4881,
+          "random_similarity": -0.0779,
+          "delta": 0.566
+        },
+        {
+          "compound": "ees",
+          "atom": "ee",
+          "atom_similarity": 0.5963,
+          "random_similarity": 0.0416,
+          "delta": 0.5547
+        },
+        {
+          "compound": "tche",
+          "atom": "tch",
+          "atom_similarity": 0.47,
+          "random_similarity": -0.0843,
+          "delta": 0.5542
+        },
+        {
+          "compound": "oee",
+          "atom": "ee",
+          "atom_similarity": 0.6269,
+          "random_similarity": 0.0729,
+          "delta": 0.5541
+        },
+        {
+          "compound": "eeck",
+          "atom": "eck",
+          "atom_similarity": 0.5473,
+          "random_similarity": 0.0037,
+          "delta": 0.5436
+        },
+        {
+          "compound": "olyd",
+          "atom": "ly",
+          "atom_similarity": 0.5641,
+          "random_similarity": 0.0213,
+          "delta": 0.5429
+        },
+        {
+          "compound": "ckho",
+          "atom": "ckh",
+          "atom_similarity": 0.4532,
+          "random_similarity": -0.0865,
+          "delta": 0.5398
+        },
+        {
+          "compound": "eeok",
+          "atom": "eeo",
+          "atom_similarity": 0.5269,
+          "random_similarity": 0.0106,
+          "delta": 0.5163
+        }
+      ]
+    },
+    "T3": {
+      "test": "T3_COMPOUND_COHERENCE",
+      "n_tested": 229,
+      "agreements": 22,
+      "agreement_rate": 0.0961,
+      "chance_rate": 0.1,
+      "n_bins": 10,
+      "binomial_p": 0.610766,
+      "rate_pass": false,
+      "stat_pass": "False",
+      "verdict": "FAIL",
+      "prediction_met": false,
+      "sample_matches": [
+        {
+          "compound": "aiin",
+          "compound_bin": 6,
+          "compound_label": "HUB_UNIVERSAL",
+          "atoms": [
+            "aii",
+            "iin"
+          ],
+          "atom_bins": [
+            8,
+            6
+          ],
+          "match": true
+        },
+        {
+          "compound": "ckho",
+          "compound_bin": 9,
+          "compound_label": "PHASE_SENSITIVE",
+          "atoms": [
+            "ckh"
+          ],
+          "atom_bins": [
+            9
+          ],
+          "match": true
+        },
+        {
+          "compound": "edy",
+          "compound_bin": 8,
+          "compound_label": "STABILITY_CRITICAL",
+          "atoms": [
+            "ed",
+            "dy"
+          ],
+          "atom_bins": [
+            8,
+            6
+          ],
+          "match": true
+        },
+        {
+          "compound": "eeck",
+          "compound_bin": 8,
+          "compound_label": "STABILITY_CRITICAL",
+          "atoms": [
+            "eck",
+            "ee"
+          ],
+          "atom_bins": [
+            8,
+            6
+          ],
+          "match": true
+        },
+        {
+          "compound": "eed",
+          "compound_bin": 8,
+          "compound_label": "STABILITY_CRITICAL",
+          "atoms": [
+            "ed",
+            "ee"
+          ],
+          "atom_bins": [
+            8,
+            6
+          ],
+          "match": true
+        },
+        {
+          "compound": "eeeo",
+          "compound_bin": 8,
+          "compound_label": "STABILITY_CRITICAL",
+          "atoms": [
+            "eeo"
+          ],
+          "atom_bins": [
+            8
+          ],
+          "match": true
+        },
+        {
+          "compound": "eeod",
+          "compound_bin": 8,
+          "compound_label": "STABILITY_CRITICAL",
+          "atoms": [
+            "eod",
+            "eeo"
+          ],
+          "atom_bins": [
+            8,
+            8
+          ],
+          "match": true
+        },
+        {
+          "compound": "eeol",
+          "compound_bin": 8,
+          "compound_label": "STABILITY_CRITICAL",
+          "atoms": [
+            "eol",
+            "eeo"
+          ],
+          "atom_bins": [
+            6,
+            8
+          ],
+          "match": true
+        },
+        {
+          "compound": "eet",
+          "compound_bin": 8,
+          "compound_label": "STABILITY_CRITICAL",
+          "atoms": [
+            "et",
+            "ee"
+          ],
+          "atom_bins": [
+            8,
+            6
+          ],
+          "match": true
+        },
+        {
+          "compound": "eey",
+          "compound_bin": 6,
+          "compound_label": "HUB_UNIVERSAL",
+          "atoms": [
+            "ee",
+            "ey"
+          ],
+          "atom_bins": [
+            6,
+            6
+          ],
+          "match": true
+        }
+      ],
+      "sample_mismatches": [
+        {
+          "compound": "aii",
+          "compound_bin": 8,
+          "compound_label": "STABILITY_CRITICAL",
+          "atoms": [
+            "ai"
+          ],
+          "atom_bins": [
+            0
+          ],
+          "match": false
+        },
+        {
+          "compound": "aiino",
+          "compound_bin": 5,
+          "compound_label": "SETTLING_SPECIALIZED",
+          "atoms": [
+            "aiin"
+          ],
+          "atom_bins": [
+            6
+          ],
+          "match": false
+        },
+        {
+          "compound": "aik",
+          "compound_bin": 1,
+          "compound_label": "ROUTINE_SPECIALIZED",
+          "atoms": [
+            "ai"
+          ],
+          "atom_bins": [
+            0
+          ],
+          "match": false
+        },
+        {
+          "compound": "ain",
+          "compound_bin": 9,
+          "compound_label": "PHASE_SENSITIVE",
+          "atoms": [
+            "in",
+            "ai"
+          ],
+          "atom_bins": [
+            0,
+            0
+          ],
+          "match": false
+        },
+        {
+          "compound": "aip",
+          "compound_bin": 3,
+          "compound_label": "COMPOUND_TERMINAL",
+          "atoms": [
+            "ai"
+          ],
+          "atom_bins": [
+            0
+          ],
+          "match": false
+        },
+        {
+          "compound": "air",
+          "compound_bin": 3,
+          "compound_label": "COMPOUND_TERMINAL",
+          "atoms": [
+            "ai"
+          ],
+          "atom_bins": [
+            0
+          ],
+          "match": false
+        },
+        {
+          "compound": "ait",
+          "compound_bin": 3,
+          "compound_label": "COMPOUND_TERMINAL",
+          "atoms": [
+            "ai"
+          ],
+          "atom_bins": [
+            0
+          ],
+          "match": false
+        },
+        {
+          "compound": "ala",
+          "compound_bin": 7,
+          "compound_label": "ENERGY_SPECIALIZED",
+          "atoms": [
+            "al"
+          ],
+          "atom_bins": [
+            6
+          ],
+          "match": false
+        },
+        {
+          "compound": "alc",
+          "compound_bin": 7,
+          "compound_label": "ENERGY_SPECIALIZED",
+          "atoms": [
+            "al"
+          ],
+          "atom_bins": [
+            6
+          ],
+          "match": false
+        },
+        {
+          "compound": "alch",
+          "compound_bin": 3,
+          "compound_label": "COMPOUND_TERMINAL",
+          "atoms": [
+            "lch",
+            "al"
+          ],
+          "atom_bins": [
+            9,
+            6
+          ],
+          "match": false
+        }
+      ]
+    },
+    "T4": {
+      "test": "T4_FOLIO_COHERENCE",
+      "n_folios": 59,
+      "n_permutations": 1000,
+      "mean_coherence_ratio": 1.0559,
+      "mean_coherence_ratio_nohub": 1.0104,
+      "t_statistic": 7.274,
+      "p_value_one_sided": 0.0,
+      "t_statistic_nohub": 0.6169,
+      "p_value_nohub": 0.269873,
+      "ratio_pass": false,
+      "stat_pass": "True",
+      "verdict": "FAIL",
+      "prediction_met": false,
+      "folio_details": [
+        {
+          "folio": "f84v",
+          "n_tokens": 321,
+          "real_entropy": 4.2276,
+          "shuffled_entropy": 5.0508,
+          "coherence_ratio": 1.1947,
+          "coherence_ratio_nohub": 1.4415
+        },
+        {
+          "folio": "f75r",
+          "n_tokens": 399,
+          "real_entropy": 4.326,
+          "shuffled_entropy": 5.087,
+          "coherence_ratio": 1.1759,
+          "coherence_ratio_nohub": 1.2441
+        },
+        {
+          "folio": "f77v",
+          "n_tokens": 312,
+          "real_entropy": 4.2998,
+          "shuffled_entropy": 5.0532,
+          "coherence_ratio": 1.1752,
+          "coherence_ratio_nohub": 1.3999
+        },
+        {
+          "folio": "f80v",
+          "n_tokens": 360,
+          "real_entropy": 4.3834,
+          "shuffled_entropy": 5.0654,
+          "coherence_ratio": 1.1556,
+          "coherence_ratio_nohub": 1.1001
+        },
+        {
+          "folio": "f82v",
+          "n_tokens": 277,
+          "real_entropy": 4.4012,
+          "shuffled_entropy": 5.0279,
+          "coherence_ratio": 1.1424,
+          "coherence_ratio_nohub": 1.0391
+        },
+        {
+          "folio": "f78v",
+          "n_tokens": 284,
+          "real_entropy": 4.425,
+          "shuffled_entropy": 5.0352,
+          "coherence_ratio": 1.1379,
+          "coherence_ratio_nohub": 1.2269
+        },
+        {
+          "folio": "f82r",
+          "n_tokens": 261,
+          "real_entropy": 4.4264,
+          "shuffled_entropy": 5.0256,
+          "coherence_ratio": 1.1354,
+          "coherence_ratio_nohub": 1.1297
+        },
+        {
+          "folio": "f75v",
+          "n_tokens": 322,
+          "real_entropy": 4.4921,
+          "shuffled_entropy": 5.0537,
+          "coherence_ratio": 1.125,
+          "coherence_ratio_nohub": 1.0217
+        },
+        {
+          "folio": "f84r",
+          "n_tokens": 343,
+          "real_entropy": 4.5223,
+          "shuffled_entropy": 5.0655,
+          "coherence_ratio": 1.1201,
+          "coherence_ratio_nohub": 1.2355
+        },
+        {
+          "folio": "f81r",
+          "n_tokens": 197,
+          "real_entropy": 4.4357,
+          "shuffled_entropy": 4.9567,
+          "coherence_ratio": 1.1175,
+          "coherence_ratio_nohub": 1.1353
+        },
+        {
+          "folio": "f83v",
+          "n_tokens": 244,
+          "real_entropy": 4.5187,
+          "shuffled_entropy": 5.0114,
+          "coherence_ratio": 1.1091,
+          "coherence_ratio_nohub": 1.0402
+        },
+        {
+          "folio": "f79v",
+          "n_tokens": 331,
+          "real_entropy": 4.5823,
+          "shuffled_entropy": 5.0618,
+          "coherence_ratio": 1.1046,
+          "coherence_ratio_nohub": 1.0079
+        },
+        {
+          "folio": "f80r",
+          "n_tokens": 419,
+          "real_entropy": 4.6244,
+          "shuffled_entropy": 5.0944,
+          "coherence_ratio": 1.1016,
+          "coherence_ratio_nohub": 0.9693
+        },
+        {
+          "folio": "f79r",
+          "n_tokens": 369,
+          "real_entropy": 4.6057,
+          "shuffled_entropy": 5.0724,
+          "coherence_ratio": 1.1013,
+          "coherence_ratio_nohub": 0.9918
+        },
+        {
+          "folio": "f78r",
+          "n_tokens": 278,
+          "real_entropy": 4.5692,
+          "shuffled_entropy": 5.0304,
+          "coherence_ratio": 1.1009,
+          "coherence_ratio_nohub": 1.0858
+        }
+      ]
+    },
+    "T5": {
+      "test": "T5_HUB_SUBROLE_ALIGNMENT",
+      "total_hubs": 23,
+      "concordant": 12,
+      "concordance_rate": 0.5217,
+      "verdict": "FAIL",
+      "prediction_met": false,
+      "details": [
+        {
+          "middle": "aiin",
+          "primary_role": "HAZARD_TARGET",
+          "gloss": "settle",
+          "expected_category": "Receiving ops vulnerable to disruption",
+          "concordant": true
+        },
+        {
+          "middle": "al",
+          "primary_role": "HAZARD_TARGET",
+          "gloss": "gather",
+          "expected_category": "Receiving ops vulnerable to disruption",
+          "concordant": false
+        },
+        {
+          "middle": "ar",
+          "primary_role": "HAZARD_SOURCE",
+          "gloss": "release",
+          "expected_category": "State-change ops that CREATE transitions",
+          "concordant": false
+        },
+        {
+          "middle": "d",
+          "primary_role": "PURE_CONNECTOR",
+          "gloss": "mark",
+          "expected_category": "Neutral grammar connectors",
+          "concordant": false
+        },
+        {
+          "middle": "dy",
+          "primary_role": "HAZARD_SOURCE",
+          "gloss": "seal",
+          "expected_category": "State-change ops that CREATE transitions",
+          "concordant": true
+        },
+        {
+          "middle": "e",
+          "primary_role": "PURE_CONNECTOR",
+          "gloss": "cool",
+          "expected_category": "Neutral grammar connectors",
+          "concordant": true
+        },
+        {
+          "middle": "ee",
+          "primary_role": "HAZARD_TARGET",
+          "gloss": "long",
+          "expected_category": "Receiving ops vulnerable to disruption",
+          "concordant": false
+        },
+        {
+          "middle": "eey",
+          "primary_role": "PURE_CONNECTOR",
+          "gloss": "deep",
+          "expected_category": "Neutral grammar connectors",
+          "concordant": false
+        },
+        {
+          "middle": "ek",
+          "primary_role": "PURE_CONNECTOR",
+          "gloss": "exact",
+          "expected_category": "Neutral grammar connectors",
+          "concordant": false
+        },
+        {
+          "middle": "eo",
+          "primary_role": "PURE_CONNECTOR",
+          "gloss": "open",
+          "expected_category": "Neutral grammar connectors",
+          "concordant": true
+        },
+        {
+          "middle": "eol",
+          "primary_role": "SAFETY_BUFFER",
+          "gloss": "sustain",
+          "expected_category": "Stabilization/energy intervention ops",
+          "concordant": false
+        },
+        {
+          "middle": "ey",
+          "primary_role": "HAZARD_SOURCE",
+          "gloss": "set",
+          "expected_category": "State-change ops that CREATE transitions",
+          "concordant": true
+        },
+        {
+          "middle": "iin",
+          "primary_role": "PURE_CONNECTOR",
+          "gloss": "iterate",
+          "expected_category": "Neutral grammar connectors",
+          "concordant": true
+        },
+        {
+          "middle": "k",
+          "primary_role": "SAFETY_BUFFER",
+          "gloss": "heat",
+          "expected_category": "Stabilization/energy intervention ops",
+          "concordant": true
+        },
+        {
+          "middle": "l",
+          "primary_role": "HAZARD_SOURCE",
+          "gloss": "late",
+          "expected_category": "State-change ops that CREATE transitions",
+          "concordant": false
+        },
+        {
+          "middle": "o",
+          "primary_role": "HAZARD_TARGET",
+          "gloss": "near",
+          "expected_category": "Receiving ops vulnerable to disruption",
+          "concordant": false
+        },
+        {
+          "middle": "od",
+          "primary_role": "SAFETY_BUFFER",
+          "gloss": "precise",
+          "expected_category": "Stabilization/energy intervention ops",
+          "concordant": false
+        },
+        {
+          "middle": "ol",
+          "primary_role": "HAZARD_SOURCE",
+          "gloss": "continue",
+          "expected_category": "State-change ops that CREATE transitions",
+          "concordant": true
+        },
+        {
+          "middle": "or",
+          "primary_role": "HAZARD_SOURCE",
+          "gloss": "portion",
+          "expected_category": "State-change ops that CREATE transitions",
+          "concordant": true
+        },
+        {
+          "middle": "r",
+          "primary_role": "HAZARD_TARGET",
+          "gloss": "mid",
+          "expected_category": "Receiving ops vulnerable to disruption",
+          "concordant": false
+        },
+        {
+          "middle": "s",
+          "primary_role": "PURE_CONNECTOR",
+          "gloss": "break",
+          "expected_category": "Neutral grammar connectors",
+          "concordant": true
+        },
+        {
+          "middle": "t",
+          "primary_role": "HAZARD_TARGET",
+          "gloss": "transfer",
+          "expected_category": "Receiving ops vulnerable to disruption",
+          "concordant": true
+        },
+        {
+          "middle": "y",
+          "primary_role": "PURE_CONNECTOR",
+          "gloss": "end",
+          "expected_category": "Neutral grammar connectors",
+          "concordant": true
+        }
+      ]
+    }
+  },
+  "synthesis": {
+    "verdict": "EXTENSION_UNSUPPORTED",
+    "gate_results": {
+      "T1": "PASS",
+      "T2": "FAIL",
+      "T3": "FAIL",
+      "T4": "FAIL",
+      "T5": "FAIL"
+    },
+    "key_numbers": {
+      "pp_reachable_pct": 72.8,
+      "mean_atom_similarity": 0.2231,
+      "compound_agreement_rate": 0.0961,
+      "mean_coherence_ratio": 1.0559,
+      "hub_concordance": "12/23"
+    }
+  },
+  "metadata": {
+    "pp_middles": 404,
+    "glossed_in_dict": 87,
+    "affordance_entries": 972,
+    "hub_middles": 23
+  }
+}

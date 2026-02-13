@@ -4,6 +4,29 @@
 
 ---
 
+## Version 3.61 (2026-02-12) - PP MIDDLE Extension Validation (Negative)
+
+### Summary
+
+5-test phase testing whether PP MIDDLE glossing frontier (404 shared A+B MIDDLEs) can be extended via auto-composition, behavioral similarity, compound bin coherence, folio thematic concentration, and hub sub-role alignment. Coverage audit passes (72.8% reachable), but extension mechanism is too weak: auto-composition shows modest behavioral grounding (cosine=0.23, t=15.6 vs random), affordance bins are orthogonal to compound structure (9.6% = chance), folio coherence is hub-driven only (no-hub ratio 1.01, n.s.), hub gloss alignment at 52% (below 65% threshold). Verdict: EXTENSION_UNSUPPORTED (1/5 PASS). Clean negative — existing 90 core glosses validated by Phase 334 are NOT invalidated. 1 new fit (F-BRU-024, NEGATIVE). Phase 335.
+
+### New Fits
+
+| ID | Name | Tier | Result |
+|----|------|------|--------|
+| F-BRU-024 | PP MIDDLE Extension Validation | F4 | EXTENSION_UNSUPPORTED |
+
+### Key Findings
+
+**PP_MIDDLE_EXTENSION (5 tests):**
+- T1: 72.8% PP MIDDLEs reachable (87 glossed + 207 auto-composable) — PASS
+- T2: Auto-composition behaviorally real (t=15.6, p<10^-6) but modest (cosine=0.23 < 0.5) — FAIL
+- T3: Affordance bins orthogonal to compound structure (9.6% = chance) — FAIL
+- T4: Folio coherence hub-driven (all: 1.055; no-hub: 1.01 n.s.) — FAIL
+- T5: Hub gloss-to-role alignment 12/23 (52% < 65%) — FAIL
+
+---
+
 ## Version 3.60 (2026-02-12) - Forbidden Transition Thermodynamics (Token-Level Coherence)
 
 ### Summary

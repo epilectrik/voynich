@@ -1748,3 +1748,55 @@ Testing whether glossed forbidden pairs produce physically coherent failure inte
 
 - `phases/FORBIDDEN_TRANSITION_THERMODYNAMICS/scripts/forbidden_transition_thermodynamics.py`
 - `phases/FORBIDDEN_TRANSITION_THERMODYNAMICS/results/forbidden_transition_thermodynamics.json`
+
+---
+
+## F-BRU-024: PP MIDDLE Extension Validation (NEGATIVE)
+
+**Tier:** F4 (Tier 4 Speculative Extension Test)
+**Scope:** B
+**Result:** EXTENSION_UNSUPPORTED
+**Supports:** C498 (RI/PP Bifurcation), C267 (Compositional Morphology), C995-C1000 (Affordance Bins)
+**Added:** 2026-02-12 (PP_MIDDLE_EXTENSION)
+
+### Hypothesis
+
+The PP MIDDLE glossing frontier (404 shared A+B MIDDLEs) can be extended via auto-composition from glossed atoms, validated through behavioral similarity, compound bin coherence, folio thematic concentration, and hub sub-role alignment.
+
+### Non-Circularity Argument
+
+Five independent derivation paths: PP/RI classification from A/B presence, behavioral signatures from distributional statistics, glosses from Brunschwig alignment + kernel profiles, folio boundaries from codicology, hub sub-roles from forbidden pair participation.
+
+### Results: EXTENSION_UNSUPPORTED (1/5 PASS)
+
+| Test | Prediction | Result | Verdict |
+|------|-----------|--------|---------|
+| T1: PP Inventory Audit | >= 70% reachable | 72.8% (294/404) | **PASS** |
+| T2: Behavioral Similarity | cosine >= 0.5, p < 0.05 | cosine = 0.23, t=15.6, p<10^-6 | FAIL (threshold too aggressive; signal real) |
+| T3: Compound Bin Coherence | agreement >= 20%, p < 0.05 | 9.6% = chance (p=0.61) | FAIL (genuinely negative) |
+| T4: Folio Thematic Coherence | ratio >= 1.10, p < 0.01 | 1.055 (p<10^-6), but no-hub = 1.01 (n.s.) | FAIL (hub-driven only) |
+| T5: Hub Sub-Role Alignment | >= 15/23 concordant | 12/23 (52%) | FAIL (keyword matching too literal) |
+
+### Key Findings
+
+**PP MIDDLE coverage:** 87 persistently glossed + 207 auto-composable + 100 features-only + 10 dark = 404 total. The 90 core glosses (validated by Phase 334) cover 95.6% of tokens by frequency.
+
+**Auto-composition is statistically grounded but modest:** Compounds resemble their atoms significantly more than random (delta=0.24, t=15.6, p<10^-6), but absolute similarity (0.23 cosine on z-scored vectors) is below the pre-registered 0.5 threshold. Compounds specialize beyond their atoms.
+
+**Affordance bins are orthogonal to compound structure:** Bin agreement rate (9.6%) equals chance (10.0%). Affordance clustering captures something different from morphological composition.
+
+**Folio coherence is entirely hub-driven:** With all MIDDLEs: coherence ratio 1.055 (significant). Without hub MIDDLEs: ratio 1.01 (not significant). The 23 hub MIDDLEs carry folio identity; non-hub vocabulary distributes uniformly.
+
+**Implication:** The 90 core glosses are strong (Phase 334 validated). Auto-composition reaches 207 more with weak behavioral grounding. The remaining 110 PP MIDDLEs need a different approach — sequential bigram context (distributional semantics) is the most promising unexplored angle.
+
+### Status
+
+- 5-test battery: **COMPLETE**
+- Verdict: **EXTENSION_UNSUPPORTED** (1/5 PASS)
+- Confidence: **HIGH** — clean negative with informative signal
+- The negative result does NOT invalidate existing glosses (Phase 334 stands)
+
+### Files
+
+- `phases/PP_MIDDLE_EXTENSION/scripts/pp_middle_extension.py`
+- `phases/PP_MIDDLE_EXTENSION/results/pp_middle_extension.json`
