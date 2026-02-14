@@ -4,6 +4,30 @@
 
 ---
 
+## Version 3.77 (2026-02-14) - Hazard Violation Archaeology (C1027)
+
+### Summary
+
+Archaeology of the ~26.5% class-level forbidden pair violation rate. 10-test battery across folio, line position, paragraph, REGIME, PREFIX, section, pair-specific, neighborhood, sequential context, and permutation dimensions. Key finding: violations are SPATIALLY UNIFORM (no folio/line/paragraph/REGIME/permutation clustering, all p>0.05) but STRUCTURALLY CONDITIONED (violation-hosting lines are longer +1.20 p<0.0001, less kernel-dense -0.064 p<0.0001, less EN-dense -0.081 p<0.0001). PREFIX effect borderline (p=0.051). Per-pair variation high (Gini=0.49). Violations are a uniform grammar property, not exception handling or scribal noise. 1 new constraint (C1027). Phase 350.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1027 | Hazard Violation Archaeology — Spatially Uniform, Structurally Conditioned | 2 |
+
+### Key Findings
+
+**HAZARD_VIOLATION_ARCHAEOLOGY (10 tests):**
+- Spatial uniformity: folio p=0.69, line p=0.22, paragraph p=0.32, REGIME p=0.22
+- Structural conditioning: line length +1.20, kernel -0.064, EN -0.081 (all p<0.0001)
+- PREFIX borderline: qo 1.89x enriched, lsh 0.21x depleted (p=0.051)
+- Section borderline: BIO 0.217 vs RECIPE_B 0.292 (p=0.028)
+- Pair variation: Gini=0.49, AX→FQ most common category (171/717)
+- MIDDLE-level violations near zero (13/1829 = 0.71%), class-level 26.5%
+
+---
+
 ## Version 3.76.1 (2026-02-13) - BCSC Contract Update (v3.10 → v3.11)
 
 ### Summary

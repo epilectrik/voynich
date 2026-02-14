@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 891 validated constraints | **Version:** 3.76 | **Date:** 2026-02-13
+**Total:** 892 validated constraints | **Version:** 3.77 | **Date:** 2026-02-14
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2187,6 +2187,27 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - (c) Class shuffle in state: LOAD_BEARING (5/10 breaks, spectral gap z=8.85)
 - (d) Class shuffle in role: LOAD_BEARING (5/10 breaks, equivalent to c)
 - (e) Token shuffle in class: PARTIAL (2/10 breaks, MIDDLE-level forbidden leak)
+
+---
+
+### Hazard Violation Archaeology (C1027) — Phase: HAZARD_VIOLATION_ARCHAEOLOGY
+
+| ID | Description | Tier | Scope | Details |
+|----|-------------|------|-------|---------|
+| **1027** | **Hazard Violation Archaeology — Forbidden Pair Violations Are Spatially Uniform but Structurally Conditioned** (84 class-level forbidden pairs violated at 26.5%; 717/2707 eligible; no folio/line/paragraph/REGIME clustering all p>0.05; violation lines longer +1.20 p<0.0001, kernel -0.064 p<0.0001, EN -0.064 p<0.0001; PREFIX borderline p=0.051; pair Gini=0.49; section borderline p=0.028) | 2 | B | -> [C1027_hazard_violation_archaeology.md](C1027_hazard_violation_archaeology.md) |
+
+**Phase findings (10 tests):**
+- (1) Folio clustering: UNIFORM (chi2 p=0.688, DI=0.038)
+- (2) Line position: UNIFORM (KS p=0.221)
+- (3) Paragraph position: UNIFORM (chi2 p=0.320)
+- (4) REGIME specificity: UNIFORM (chi2 p=0.224)
+- (5) PREFIX context: BORDERLINE (chi2 p=0.051; qo 1.89x, lsh 0.21x)
+- (6) Pair variation: HIGH (Gini=0.49, CV=0.93; AX→FQ most common)
+- (7) Violation neighborhood: **SYSTEMATIC** (longer lines, less kernel/EN dense)
+- (8) Sequential context: Post-violation targets differ (JSD=1.0 by construction)
+- (9) Section specificity: BORDERLINE (p=0.028; BIO 0.82x, RECIPE_B 1.10x)
+- (10) Permutation: UNIFORM (folio p=0.28, regime p=0.27)
+- Verdict: SPATIALLY_UNIFORM_STRUCTURALLY_CONDITIONED
 
 ---
 
