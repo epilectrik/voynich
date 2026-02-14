@@ -4,6 +4,30 @@
 
 ---
 
+## Version 3.72 (2026-02-13) - Paragraph Macro-Dynamics (C1022) NEGATIVE
+
+### Summary
+
+Tests whether the 6-state macro-automaton (C1010) differentiates paragraph-level structure. Six pre-registered tests: header vs body distribution, spec vs exec zone shift, AXM self-transition by ordinal, gallows-initial CC enrichment, macro-state entropy by ordinal, qo/chsh gradient correspondence. Result: 1/6 PASS. The macro-automaton does NOT resolve paragraph structure — paragraph dynamics operate within AXM's 32-class internal diversity, below the 6-state partition's resolution floor. Key informative findings: gallows tokens are 100% AXM/AXm scaffold (not CC boundary markers); qo and ch/sh prefixes are both >98% AXM (C863 gradient is within-AXM); late paragraphs converge to lower entropy (rho=-0.215, p=0.007). Verdict: PARAGRAPH_MACRO_DYNAMICS_NEGATIVE. 1 new constraint (C1022). Phase 345.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1022 | Paragraph Macro-Dynamics — 6-State Automaton Does Not Differentiate Paragraph Structure | 2 |
+
+### Key Findings
+
+**PARAGRAPH_MACRO_DYNAMICS (6 tests):**
+- T1: Header vs body — FAIL (AXM +2.8pp, chi2=16.04, p=0.007; headers are scaffold-heavy)
+- T2: Spec vs exec — FAIL (AXM +1.4pp, chi2=11.81, p=0.037; sub-threshold)
+- T3: AXM self by ordinal — FAIL (Spearman rho=0.207, p=0.011; binary p=0.121 underpowered)
+- T4: Gallows CC — FAIL (gallows 87.7% AXM, 12.3% AXm, 0% CC; informative)
+- T5: Entropy by ordinal — **PASS** (rho=-0.215, p=0.007; late paragraphs more concentrated)
+- T6: qo/chsh macro-state — FAIL (both >98% AXM; C863 gradient is within-AXM)
+
+---
+
 ## Version 3.71 (2026-02-13) - CP Factor Characterization (C1021) + Contract Audit
 
 ### Structural Contract Audit (post-C1021)

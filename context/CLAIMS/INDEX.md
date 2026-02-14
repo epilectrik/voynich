@@ -2130,6 +2130,21 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - C3: Reconstruction — **PASS** (variance=0.970)
 - Verdict: FREQUENCY_ARTIFACT+FACTOR3_IDENTIFIED; RANK_CONTINUOUS; ORTHOGONAL_CONFIRMED — 4/11 passed
 
+### Paragraph Macro-Dynamics (C1022) — Phase: PARAGRAPH_MACRO_DYNAMICS
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1022** | **Paragraph Macro-Dynamics — 6-State Automaton Does Not Differentiate Paragraph Structure** (Header AXM +2.8pp not CC/AXm, p=0.007; spec→exec delta +1.4pp sub-threshold p=0.037; gallows 100% AXM/AXm, zero CC; qo/chsh both >98% AXM; entropy decreases with ordinal rho=-0.215 p=0.007; AXM self-transition Spearman rho=0.207 p=0.011 but binary p=0.121) | 2 | B | -> [C1022_paragraph_macro_dynamics.md](C1022_paragraph_macro_dynamics.md) |
+
+**Phase findings (6 tests):**
+- T1: Header vs body — FAIL (AXM elevated +2.8pp, not CC/AXm; informative)
+- T2: Spec vs exec — FAIL (direction correct but +1.4pp sub-threshold)
+- T3: AXM self-transition by ordinal — FAIL (Spearman p=0.011 but binary p=0.121; underpowered)
+- T4: Gallows CC enrichment — FAIL (gallows are 100% AXM/AXm scaffold; informative)
+- T5: Entropy by ordinal — **PASS** (rho=-0.215, p=0.007; late paragraphs more concentrated)
+- T6: qo/chsh macro-state — FAIL (both >98% AXM; C863 gradient is within-AXM; informative)
+- Verdict: PARAGRAPH_MACRO_DYNAMICS_NEGATIVE — 1/6 passed. Paragraph dynamics operate within AXM, below the macro-automaton's resolution floor.
+
 ---
 
 ### Tensor Archetype Geometry (C1020) — Phase: TENSOR_ARCHETYPE_GEOMETRY
