@@ -4,6 +4,25 @@
 
 ---
 
+## Version 3.76.1 (2026-02-13) - BCSC Contract Update (v3.10 → v3.11)
+
+### Summary
+
+BCSC structural contract audit and update to integrate findings from Phases 345-349 (C1022-C1026). Added GENERATIVE_SUFFICIENCY_AND_NECESSITY guarantee (the 49-class Markov + forbidden is both sufficient and necessary). Updated CONDITIONAL_ENTROPY_SYMMETRIC with C1024 morphological asymmetry resolution. Clarified macro-automaton as a lossy projection. Corrected gatekeeper role from exit directors to exit markers (C1023). Added generative_specification_bracketed invariant. Other three contracts (CASC, AZC-ACT, AZC-B-ACT) confirmed unaffected — all five phases are B-internal.
+
+### Changes
+
+- **BCSC v3.10 → v3.11**: 8 edits integrating C1022-C1026
+- New guarantee: GENERATIVE_SUFFICIENCY_AND_NECESSITY
+- New invariant: generative_specification_bracketed
+- Updated: CONDITIONAL_ENTROPY_SYMMETRIC (C1024 resolution)
+- Updated: MACRO_AUTOMATON_COMPRESSION (lossy projection, C1022/C1025)
+- Updated: constraint_symmetry invariant (morphological decomposition)
+- Updated: gatekeeper_mechanism (exit markers not exit directors, C1023)
+- Added C1022-C1026 to provenance registry
+
+---
+
 ## Version 3.76 (2026-02-13) - Grammar Component Necessity (C1026)
 
 ### Summary

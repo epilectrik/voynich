@@ -61,7 +61,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # EMBEDDED EXPERT CONTEXT
 
-**Generated:** 2026-02-13 23:09
+**Generated:** 2026-02-13 23:25
 **Version:** FROZEN STATE (891 constraints, 61 fits)
 
 ---
@@ -8930,7 +8930,7 @@ provenance:
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.10"
+  version: "3.11"
   date: "2026-02-13"
   status: "LOCKED"
   layer_type: "grammar contract"
@@ -9013,16 +9013,20 @@ guarantees:
     provenance: "C458"
 
   - id: "CONDITIONAL_ENTROPY_SYMMETRIC"
-    statement: "Grammar constraints are bidirectional (H(X|past)=H(X|future)), but execution is directional (transition probabilities uncorrelated)"
-    provenance: "C391, C886"
+    statement: "Grammar constraints are bidirectional (H(X|past)=H(X|future)), but execution is directional (transition probabilities uncorrelated). Resolution: PREFIX is the symmetric router (MI asymmetry 0.018 bits), MIDDLE is the directional executor (MI asymmetry 0.070 bits, 4x PREFIX). FL tokens show highest role-specific directionality (JSD 0.311)."
+    provenance: "C391, C886, C1024"
 
   - id: "CLOSED_LOOP_ONLY"
     statement: "Execution is closed-loop control, not batch, decision tree, or state machine"
     provenance: "C171"
 
   - id: "MACRO_AUTOMATON_COMPRESSION"
-    statement: "49 instruction classes compress to 6 macro-states (8.17x) with spectral gap 0.896; EN/AX merge, FL splits HAZ/SAFE; non-geometric dwell is aggregation artifact; partition is MINIMAL (no coarser grouping preserves invariants); geometrically independent of discrimination manifold at both corpus and folio level (ARI=0.163, with bridge backbone mediating weak geometry→dynamics coupling); dynamically characterized (full transition matrix, stationary distribution matches empirical within 1.2%)"
-    provenance: "C976, C977, C978, C1006, C1010, C1011, C1015, C1016"
+    statement: "49 instruction classes compress to 6 macro-states (8.17x) with spectral gap 0.896; EN/AX merge, FL splits HAZ/SAFE; non-geometric dwell is aggregation artifact; partition is MINIMAL (no coarser grouping preserves invariants); geometrically independent of discrimination manifold at both corpus and folio level (ARI=0.163, with bridge backbone mediating weak geometry→dynamics coupling); dynamically characterized (full transition matrix, stationary distribution matches empirical within 1.2%); macro-automaton is a LOSSY PROJECTION of the 49-class chain — adds zero generative power (M3 ties M2; C1025); paragraph-level structure operates below its resolution floor (C1022)"
+    provenance: "C976, C977, C978, C1006, C1010, C1011, C1015, C1016, C1022, C1025"
+
+  - id: "GENERATIVE_SUFFICIENCY_AND_NECESSITY"
+    statement: "The 49-class first-order Markov transition matrix + 17 forbidden MIDDLE pair suppression is both SUFFICIENT (reproduces 80% of measurable structure; M2 frontier, C1025) and NECESSARY (class shuffle within macro-states breaks 5/10 topology-sensitive metrics, spectral gap z=8.85; forbidden injection breaks 4/10; C1026). The 6-state macro-automaton adds zero generative power (M3 ties M2). Compositional generation (PREFIX×MIDDLE×SUFFIX product) OVER-generates (4.2% hallucination; real vocabulary is a curated subset). Token identity within class is PARTIAL — MIDDLE-level forbidden constraints leak through class boundaries (z=3.51)."
+    provenance: "C1025, C1026"
 
   - id: "MACRO_STATE_DYNAMICS"
     statement: "6-state macro-automaton has full 6×6 transition matrix: AXM is a massive attractor (self=0.697, gravitational pull=0.642), FL_SAFE is a fleeting terminal (self=0.023, return time=117.7 steps, NOT absorbing), CC is a pure initiator (self=0.041); system is ergodic (spectral gap=0.896, mixing time=1.1 steps, stationary matches empirical within 1.2%). Folio-level decomposition reveals 6 dynamical archetypes (silhouette=0.185) that are orthogonal to the 4 REGIMEs (ARI=0.065); REGIME+section explain only 33.7% of transition variance, with 66.3% program-specific. Folio-level AXM self-transition decomposes as: REGIME+section (42.0%) + PREFIX entropy (5.1%) + hazard density (6.1%) + bridge geometry (6.3%) + non-linear residual (40.1%)"
@@ -9115,8 +9119,8 @@ invariants:
     provenance: "C360"
 
   constraint_symmetry:
-    statement: "Grammar constraints are bidirectional; execution is directional"
-    provenance: "C391, C886"
+    statement: "Grammar constraints are bidirectional; execution is directional. PREFIX routes symmetrically; MIDDLE executes directionally (4x asymmetry ratio). FL tokens are most directionally asymmetric role."
+    provenance: "C391, C886, C1024"
 
   kernel_boundary_adjacency:
     statement: "Classes containing kernel characters tend to be hazard-involved"
@@ -9177,6 +9181,10 @@ invariants:
   dwell_shape_regime_invariance:
     statement: "Weibull dwell shape (k=1.55) is invariant across REGIMEs; REGIME modulates scale only"
     provenance: "C1006"
+
+  generative_specification_bracketed:
+    statement: "The grammar's minimal executable specification is bracketed: 49-class Markov + 17 forbidden pairs is both sufficient (C1025) and necessary (C1026); everything else (macro-automaton, PREFIX routing, tensor curvature, archetype dynamics) is secondary structure"
+    provenance: "C1025, C1026"
 
 # ============================================================
 grammar:
@@ -9932,10 +9940,11 @@ axm_internal_architecture:
       genuine: "Survives mid-line positional control (chi2=58.42, p=0.002)"
       low_entropy: "4.123 vs 4.555 bits (p=0.016) — constrained exit points"
       destination_agnostic: "No target-state routing specificity (p=0.286)"
+      structural_role: "Gatekeepers MARK exit boundaries but do NOT CHANNEL exit destinations (JSD=0.0014, below null mean 0.0024; C1023). They are exit markers, not exit directors."
       peripheral: "Low betweenness centrality (p=0.514) — endpoints, not bridges"
       single_token: "No multi-step exit motif (pre-GK p=0.940, exit entropy matches baseline)"
       regime_contextual: "Specific gatekeeper class identity shifts across REGIMEs (mean cross-rho=-0.245) but mechanism is universal"
-    provenance: "C1007, C1008"
+    provenance: "C1007, C1008, C1023"
 
   exit_curvature:
     statement: "HAZARD_TARGET MIDDLE density increases from ~10% at t-3 to ~16% at exit token (rho=-0.055, p=0.0001)"
@@ -10838,6 +10847,11 @@ provenance:
     - "C1019"  # Tensor orthogonality: rank-8 pairwise-sufficient, ARI=0.053 vs macro-states, ΔR²=0.465
     - "C1020"  # Tensor-archetype geometry: graded curvature (Factor 2 rho=-0.738), 100% bridge degeneracy, HUB rank-3
     - "C1021"  # CP factor characterization: frequency-dominated, rank continuous, constrained orthogonality complete
+    - "C1022"  # Paragraph macro-dynamics: operates below macro-automaton resolution
+    - "C1023"  # Structural necessity ablation: PREFIX routing sole load-bearing macro component (78-81%)
+    - "C1024"  # Structural directionality: MIDDLE directional executor, PREFIX symmetric router
+    - "C1025"  # Generative sufficiency: M2 (49-class Markov + forbidden) at 80%
+    - "C1026"  # Grammar component necessity: class ordering + forbidden avoidance load-bearing
 
   affordance_system:
     - "C995"   # 9-bin affordance system
