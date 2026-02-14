@@ -4,6 +4,20 @@
 
 ---
 
+## Version 3.83 (2026-02-14) - Symmetric Forbidden B5 Fix (C1034)
+
+### Summary
+
+Design and validation of PREFIX-factored generation architecture to resolve M2's B5 failure. Key result: PREFIX-factored generation through conditional routing is distributionally equivalent to M2 (doesn't help). The actual fix is simpler: bidirectional forbidden suppression (M5-SF). Under C1025 reference mapping, M5-SF achieves B5=0.132 (80% pass), B1=0.873 (100% pass), B3=0 — the ONLY model passing all three simultaneously. M2.5 blending fails B5 under this mapping. With B4+C2+B5 corrections, M2 achieves projected 15/15 = 100% pass rate. 1 new constraint (C1034). Phase 356.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1034 | Symmetric Forbidden Suppression Fixes B5 | 2 |
+
+---
+
 ## Version 3.82 (2026-02-14) - C2 Test Misspecification (C1033)
 
 ### Summary

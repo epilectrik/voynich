@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 898 validated constraints and 61 explanatory fits loaded
+embedded below. You have ALL 899 validated constraints and 61 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -61,8 +61,8 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # EMBEDDED EXPERT CONTEXT
 
-**Generated:** 2026-02-14 12:09
-**Version:** FROZEN STATE (898 constraints, 61 fits)
+**Generated:** 2026-02-14 12:40
+**Version:** FROZEN STATE (899 constraints, 61 fits)
 
 ---
 
@@ -84,7 +84,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.82 | **Status:** FROZEN | **Constraints:** 898 | **Date:** 2026-02-14
+**Version:** 3.83 | **Status:** FROZEN | **Constraints:** 899 | **Date:** 2026-02-14
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -1672,7 +1672,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 898 constraints | 2026-02-14
+CONSTRAINT_REFERENCE v2.6 | 899 constraints | 2026-02-14
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2576,6 +2576,7 @@ C1030	**M2 Gap Decomposition — B4 Misspecified, Two Independent Mechanisms** (
 C1031	**FL Cross-Line Independence** (endpoint rho=0.003 narrow/0.032 broad, both ns; SAME rate collapses 68.2%→27.9% cross-line; backward jumps 4.5%→44.3%; mean gap equals null; marginal mean-stage rho=0.063 is folio-mediated C681; confirms C670 for FL dimension)
 C1032	**B5 Asymmetry Mechanism — Forbidden Suppression + PREFIX Routing** (M2 B5=0.178 vs real 0.090; 16/17 forbidden pairs one-directional; alpha=0.15 blending fixes B5=0.111 but regresses B1 spectral gap 0.894->0.770 and B3 5 violations; C1024 PREFIX fraction 20.5% consistent with 15% blending; M2 stays 13/15=86.7%; true fix needs PREFIX-factored generation)
 C1033	**C2 Test Misspecification — CC Definition Mismatch** (test uses CC={10,11,12,17} but C588 used {10,11,12}; class 17 has 59% suffixed; real C2=0.834 fails 99% threshold; M2=0.824 matches real; corrected 14/15=93.3%; C590 class 17 suffix=NONE wrong; only B5 remains)
+C1034	**Symmetric Forbidden Suppression Fixes B5** (M5-SF: bidirectional forbidden, B5=0.132 80% pass, B1=0.873 100% pass, B3=0; M2.5 blending fails under C1025 mapping; PREFIX-factored distributionally equivalent to M2; projected 15/15=100% with B4+C2 corrections)
 
 ---
 
@@ -10864,6 +10865,7 @@ provenance:
     - "C1031"  # FL cross-line independence: within-line SAME 68.2% collapses to 27.9% cross-line
     - "C1032"  # B5 asymmetry mechanism: forbidden suppression asymmetry + PREFIX routing needed
     - "C1033"  # C2 misspecified: CC={10,11,12,17} vs C588's {10,11,12}; corrected M2 14/15=93.3%
+    - "C1034"  # Symmetric forbidden fixes B5: bidirectional suppression, M5-SF 80% B5+B1+B3, projected 15/15
 
   affordance_system:
     - "C995"   # 9-bin affordance system
