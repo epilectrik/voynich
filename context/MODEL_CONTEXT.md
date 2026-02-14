@@ -1,6 +1,6 @@
 # MODEL_CONTEXT.md
 
-**Version:** 3.15 | **Date:** 2026-02-12 | **Status:** FROZEN
+**Version:** 3.16 | **Date:** 2026-02-14 | **Status:** FROZEN
 
 This document explains how to read and interpret the constraint system. It does not duplicate constraints. It provides the architectural lens, epistemic governance, and integration logic required to understand them as a coherent model.
 
@@ -626,6 +626,41 @@ Lines carry **mutual information about neighbors** despite formal independence:
 - Folio fingerprint AUC = 0.994 (a single line identifies its folio)
 
 Forbidden transition compliance is **~65%** (soft depletion, not absolute prohibition — C789).
+
+### Generative Sufficiency (C1025, C1030, C1033, C1034)
+
+A minimal generative model (M2: 49-class first-order Markov chain + forbidden transition suppression) reproduces **87% of measurable structure** across 15 statistical tests:
+
+| Component | What it does | Coverage |
+|-----------|-------------|----------|
+| 49-class transition matrix | Class-to-class probabilities | 12/15 tests (80%) |
+| Symmetric forbidden suppression | Bidirectional zeroing of 17 forbidden pairs | Fixes B5 asymmetry |
+| B4 + C2 test corrections | Respecify misspecified tests | Fixes 2 false failures |
+
+**Projected pass rate: 15/15 = 100%** with three corrections:
+- B4 was misspecified (C1030: test threshold too strict for non-stationary data)
+- C2 was misspecified (C1033: wrong CC class definition, class 17 has 59% suffixed tokens)
+- B5 required symmetric forbidden suppression (C1034: bidirectional, not one-directional)
+
+**Key negative result:** PREFIX-factored generation (sampling PREFIX first, then class conditioned on PREFIX) is distributionally equivalent to M2 — marginalizing recovers the unconditional class transition matrix exactly (C1034). PREFIX routing cannot be accessed through generation factoring; it must be enforced at the constraint level.
+
+### Macro-Dynamics and Design Freedom (C1017, C1019, C1035)
+
+Folio-level AXM self-transition variance (how strongly each program orbits its dominant state) decomposes as:
+
+| Source | Variance explained |
+|--------|--------------------|
+| REGIME + section | 42.0% |
+| PREFIX entropy | 5.1% |
+| Hazard density | 6.1% |
+| Bridge geometry PC1 | 6.3% |
+| **Residual** | **40.1%** |
+
+The 40% residual is **irreducible** (C1035): six additional folio-level predictors (paragraph count, HT density, gatekeeper fraction, QO fraction, vocabulary size, line count) all produce zero incremental variance. Random forest finds no non-linear signal. The residual is genuine program-specific free variation.
+
+The C1017 baseline is moderately overfit (LOO CV R-squared = 0.433 vs training 0.564, gap 0.132). The true explained fraction is approximately 43%, making the genuine residual ~57% — consistent with C980's 66.3% free variation envelope.
+
+**This is the design freedom space** (C458): each folio's dynamics are independently parameterized within the grammar's constraints. Hazard exposure is clamped (CV = 0.04-0.11); recovery strategy is locally free. The variation is real, structured, and by design.
 
 ---
 

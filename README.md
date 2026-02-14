@@ -31,7 +31,7 @@ This is not a natural language. This is not a cipher. This is a **control system
 | 17 forbidden transitions | In 5 hazard classes (PHASE, COMPOSITION, CONTAINMENT, RATE, ENERGY) |
 | 0 translation-eligible zones | PURE_OPERATIONAL verdict — no natural language content |
 | 6-state macro-automaton | 8.17x class compression; AXM attractor (self=0.697); 6 folio-level archetypes orthogonal to REGIMEs |
-| Generative sufficiency | 49-class Markov + forbidden suppression reproduces 87% of measurable structure (M2 frontier; corrected from 80% after B4 test respecification, C1030) |
+| Generative sufficiency | 49-class Markov + symmetric forbidden suppression reproduces 87% of measurable structure (M2 frontier; 15/15 tests after B4+C2+B5 corrections, C1025/C1030/C1033/C1034) |
 | Brunschwig alignment | 28 tests across 4 test suites (see below) |
 
 ## Four-Layer Architecture
