@@ -1,6 +1,6 @@
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.77 | **Status:** FROZEN | **Constraints:** 892 | **Date:** 2026-02-14
+**Version:** 3.78 | **Status:** FROZEN | **Constraints:** 893 | **Date:** 2026-02-14
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -255,8 +255,8 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 892 |
-| Completed phases | 350 |
+| Validated constraints | 893 |
+| Completed phases | 351 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -351,4 +351,4 @@ See [README.md](README.md) and [SYSTEM/HOW_TO_READ.md](SYSTEM/HOW_TO_READ.md) fo
 
 ---
 
-*Context System v3.77 | Project v3.77 FROZEN STATE | ANALYSIS CLOSED | PCA-v1 CERTIFIED | 2026-02-14*
+*Context System v3.78 | Project v3.78 FROZEN STATE | ANALYSIS CLOSED | PCA-v1 CERTIFIED | 2026-02-14*

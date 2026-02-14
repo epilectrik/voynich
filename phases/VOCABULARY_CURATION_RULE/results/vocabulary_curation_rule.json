@@ -1,0 +1,162 @@
+{
+  "metadata": {
+    "phase": 351,
+    "name": "VOCABULARY_CURATION_RULE",
+    "product_space_size": 48640,
+    "n_existing": 419,
+    "n_missing": 48221,
+    "occupancy_rate": 0.0086,
+    "n_productive_prefixes": 32,
+    "n_productive_middles": 76,
+    "n_productive_suffixes": 20
+  },
+  "classifiers": {
+    "dt3": {
+      "cv_accuracy": 0.9938,
+      "cv_std": 0.0008,
+      "train_accuracy": 0.9939,
+      "confusion_matrix": [
+        [
+          47922,
+          299
+        ],
+        [
+          0,
+          419
+        ]
+      ],
+      "tree_text": "|--- ms_cooc_exists <= 0.50\n|   |--- middle_role_CC <= 0.50\n|   |   |--- class: 0\n|   |--- middle_role_CC >  0.50\n|   |   |--- class: 0\n|--- ms_cooc_exists >  0.50\n|   |--- pm_cooc_exists <= 0.50\n|   |   |--- middle_state_FL_SAFE <= 0.50\n|   |   |   |--- class: 0\n|   |   |--- middle_state_FL_SAFE >  0.50\n|   |   |   |--- class: 0\n|   |--- pm_cooc_exists >  0.50\n|   |   |--- ms_cooc_count <= 4.21\n|   |   |   |--- class: 1\n|   |   |--- ms_cooc_count >  4.21\n|   |   |   |--- class: 1\n",
+      "feature_importances": {
+        "ms_cooc_exists": 0.824757,
+        "pm_cooc_exists": 0.175158,
+        "ms_cooc_count": 8.6e-05,
+        "middle_role_CC": 0.0,
+        "middle_state_FL_SAFE": 0.0
+      }
+    },
+    "dt5": {
+      "cv_accuracy": 0.9951,
+      "cv_std": 0.0006,
+      "train_accuracy": 0.9956,
+      "confusion_matrix": [
+        [
+          48008,
+          213
+        ],
+        [
+          0,
+          419
+        ]
+      ],
+      "feature_importances": {
+        "ms_cooc_exists": 0.821849,
+        "pm_cooc_exists": 0.17454,
+        "log_pm_pointwise_mi": 0.002266,
+        "log_prefix_freq": 0.000696,
+        "suffix_len": 0.000563,
+        "ms_cooc_count": 8.6e-05,
+        "middle_role_CC": 0.0,
+        "middle_state_FL_SAFE": 0.0
+      }
+    },
+    "dt_full": {
+      "cv_accuracy": 0.9981,
+      "cv_std": 0.0004,
+      "train_accuracy": 1.0,
+      "tree_depth": 19,
+      "tree_leaves": "95",
+      "confusion_matrix": [
+        [
+          48221,
+          0
+        ],
+        [
+          0,
+          419
+        ]
+      ]
+    },
+    "logistic": {
+      "cv_accuracy": 0.9958,
+      "cv_std": 0.001,
+      "train_accuracy": 0.996,
+      "confusion_matrix": [
+        [
+          48027,
+          194
+        ],
+        [
+          0,
+          419
+        ]
+      ],
+      "top_coefficients": {
+        "pm_cooc_exists": 8.420076,
+        "ms_cooc_exists": 7.064259,
+        "middle_role_FL": -2.190706,
+        "log_middle_freq": -2.057832,
+        "middle_role_AX": -1.732681,
+        "middle_state_FL_HAZ": -1.708589,
+        "ms_cooc_count": 1.63888,
+        "pm_cooc_count": 1.585912,
+        "middle_role_CC": 1.2846,
+        "middle_state_CC": 1.2846
+      }
+    },
+    "baseline_cooc": {
+      "accuracy": 0.9939,
+      "precision": 0.5836,
+      "recall": 1.0,
+      "confusion_matrix": [
+        [
+          47922,
+          299
+        ],
+        [
+          0,
+          419
+        ]
+      ]
+    }
+  },
+  "boundary_analysis": {
+    "cooc_both_pm+ms_seen": {
+      "n": 718,
+      "exists_rate": 0.5836
+    },
+    "cooc_only_pm_seen": {
+      "n": 5182,
+      "exists_rate": 0.0
+    },
+    "cooc_only_ms_seen": {
+      "n": 4626,
+      "exists_rate": 0.0
+    },
+    "cooc_neither_seen": {
+      "n": 38114,
+      "exists_rate": 0.0
+    },
+    "pmi": {
+      "pm_real_mean": 1.4255,
+      "pm_missing_mean": -4.2797,
+      "ms_real_mean": 1.8726,
+      "ms_missing_mean": -4.2425
+    },
+    "pm_only_rule": {
+      "accuracy": 0.8873,
+      "precision": 0.071,
+      "recall": 1.0
+    },
+    "dt3_errors": {
+      "false_positives": 299,
+      "false_negatives": 0
+    }
+  },
+  "summary": {
+    "verdict": "LEARNABLE_SIMPLE",
+    "description": "A simple dt_full achieves >100% CV accuracy \u2014 token existence follows a learnable rule",
+    "best_classifier": "dt_full",
+    "best_cv_accuracy": 0.9981,
+    "baseline_accuracy": 0.9939
+  }
+}

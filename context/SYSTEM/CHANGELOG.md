@@ -4,6 +4,20 @@
 
 ---
 
+## Version 3.78 (2026-02-14) - Vocabulary Curation Rule (C1028)
+
+### Summary
+
+"Compiler test" — what determines which PREFIX×MIDDLE×SUFFIX combinations exist? Productive product space has 48,640 combinations; only 419 (0.9%) exist. Token existence is governed by pairwise co-occurrence: both PREFIX×MIDDLE AND MIDDLE×SUFFIX must have been independently observed. This gate has 100% recall and 58.4% precision (419/718 pairwise-compatible combinations exist). A depth-3 decision tree learns only this pairwise rule (99.4% CV), matching the co-occurrence baseline. No higher-order "compiler rule" is detectable. The 42% gap within pairwise-compatible space is consistent with finite-sample sparsity. Confirms C1003 (no three-way synergy) from a vocabulary-existence angle. 1 new constraint (C1028). Phase 351.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1028 | Vocabulary Curation Rule — Pairwise Co-occurrence Necessary and Dominant | 2 |
+
+---
+
 ## Version 3.77 (2026-02-14) - Hazard Violation Archaeology (C1027)
 
 ### Summary
