@@ -169,11 +169,12 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 3.71 FROZEN STATE |
+| Version | 3.71 |
 | Constraints | 886 validated |
 | Phases | 344 completed |
 | Folios | 83 (Currier B) |
-| Analysis | CLOSED (PCA-v1 CERTIFIED) |
+| Core model | CLOSED (PCA-v1 CERTIFIED) |
+| Characterization | ACTIVE |
 
 ---
 
