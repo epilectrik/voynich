@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 890 validated constraints | **Version:** 3.75 | **Date:** 2026-02-13
+**Total:** 891 validated constraints | **Version:** 3.76 | **Date:** 2026-02-13
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2172,6 +2172,21 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - M3 (6-state macro): 12.0/15 (80%) — ties M2, macro-automaton is lossy projection
 - M4 (compositional): 9.4/15 (63%) — WORST; prefix×middle×suffix product > real vocabulary
 - Verdict: GENERATIVE_SUFFICIENCY_AT_M2
+
+---
+
+### Grammar Component Necessity (C1026) — Phase: GRAMMAR_COMPONENT_NECESSITY
+
+| ID | Description | Tier | Scope | Details |
+|----|-------------|------|-------|---------|
+| **1026** | **Grammar Component Necessity — Class Ordering and Forbidden Avoidance Are Load-Bearing; Token Identity Is Partial** (5 ablations x 100 shuffles x 10 metrics; class shuffle within state breaks 5/10 spectral gap z=8.85; forbidden injection 4/10; token shuffle 2/10 PARTIAL via MIDDLE forbidden leak z=3.51; c/d equivalent confirming state=role; 4/10 DISTRIBUTIONAL; 2 SEQUENTIAL 1 TOPOLOGICAL 3 COMPOUND) | 2 | B | -> [C1026_grammar_component_necessity.md](C1026_grammar_component_necessity.md) |
+
+**Phase findings (5 ablation verdicts):**
+- (a) Forbidden injection: LOAD_BEARING (4/10 breaks)
+- (b) Subset forbidden: LOAD_BEARING (3/10 breaks)
+- (c) Class shuffle in state: LOAD_BEARING (5/10 breaks, spectral gap z=8.85)
+- (d) Class shuffle in role: LOAD_BEARING (5/10 breaks, equivalent to c)
+- (e) Token shuffle in class: PARTIAL (2/10 breaks, MIDDLE-level forbidden leak)
 
 ---
 
