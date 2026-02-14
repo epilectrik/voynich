@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 886 validated constraints | **Version:** 3.71 | **Date:** 2026-02-13
+**Total:** 888 validated constraints | **Version:** 3.73 | **Date:** 2026-02-13
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2135,6 +2135,12 @@ These files contain detailed constraint documentation. Constraint ranges are app
 | # | Constraint | Tier | Scope | Location |
 |---|-----------|------|-------|----------|
 | **1022** | **Paragraph Macro-Dynamics — 6-State Automaton Does Not Differentiate Paragraph Structure** (Header AXM +2.8pp not CC/AXm, p=0.007; spec→exec delta +1.4pp sub-threshold p=0.037; gallows 100% AXM/AXm, zero CC; qo/chsh both >98% AXM; entropy decreases with ordinal rho=-0.215 p=0.007; AXM self-transition Spearman rho=0.207 p=0.011 but binary p=0.121) | 2 | B | -> [C1022_paragraph_macro_dynamics.md](C1022_paragraph_macro_dynamics.md) |
+
+### Structural Necessity Ablation (C1023) — Phase: STRUCTURAL_NECESSITY_ABLATION
+
+| ID | Description | Tier | Scope | Details |
+|----|-------------|------|-------|---------|
+| **1023** | **Structural Necessity Ablation — PREFIX Routing Is Sole Load-Bearing Macro Component** (PREFIX→state content routing: 78-81% of non-random structure destroyed by shuffle+reassignment; FL merge: -0.34% spectral gap; gatekeeper JSD=0.0014, z=-0.70 vs null; within-state routing: 0% structure loss; REGIME pooling: 1.1% gap difference; hierarchy: PREFIX routing >> FL ≈ gatekeepers ≈ REGIME; 3/6 pre-registered predictions correct on verdict, overall hierarchy confirmed) | 2 | B | -> [C1023_structural_necessity_ablation.md](C1023_structural_necessity_ablation.md) |
 
 **Phase findings (6 tests):**
 - T1: Header vs body — FAIL (AXM elevated +2.8pp, not CC/AXm; informative)
