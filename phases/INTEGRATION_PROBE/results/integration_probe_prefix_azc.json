@@ -1,0 +1,401 @@
+{
+  "probe": "PREFIX_AZC_AFFINITY",
+  "n_azc_folios": 36,
+  "n_token_types": 3047,
+  "prefix_results": {
+    "ch": {
+      "total_tokens": 10543,
+      "unique_types": 415,
+      "folios_covered": 34,
+      "coverage_pct": 94.4,
+      "entropy": 4.895,
+      "normalized_entropy": 0.947,
+      "gini_coefficient": 0.317,
+      "top_5_folios": [
+        [
+          "f70r2",
+          623,
+          5.9
+        ],
+        [
+          "f86v6",
+          612,
+          5.8
+        ],
+        [
+          "f68v3",
+          505,
+          4.8
+        ],
+        [
+          "f69v",
+          495,
+          4.7
+        ],
+        [
+          "f86v3",
+          469,
+          4.4
+        ]
+      ],
+      "top_5_share_pct": 25.6
+    },
+    "sh": {
+      "total_tokens": 4426,
+      "unique_types": 170,
+      "folios_covered": 34,
+      "coverage_pct": 94.4,
+      "entropy": 4.748,
+      "normalized_entropy": 0.918,
+      "gini_coefficient": 0.408,
+      "top_5_folios": [
+        [
+          "f70r2",
+          354,
+          8.0
+        ],
+        [
+          "f86v5",
+          349,
+          7.9
+        ],
+        [
+          "f86v6",
+          285,
+          6.4
+        ],
+        [
+          "f72r3",
+          279,
+          6.3
+        ],
+        [
+          "f86v4",
+          252,
+          5.7
+        ]
+      ],
+      "top_5_share_pct": 34.3
+    },
+    "ok": {
+      "total_tokens": 8497,
+      "unique_types": 257,
+      "folios_covered": 34,
+      "coverage_pct": 94.4,
+      "entropy": 4.966,
+      "normalized_entropy": 0.961,
+      "gini_coefficient": 0.252,
+      "top_5_folios": [
+        [
+          "f69r",
+          442,
+          5.2
+        ],
+        [
+          "f69v",
+          387,
+          4.6
+        ],
+        [
+          "f72r3",
+          380,
+          4.5
+        ],
+        [
+          "f71v",
+          348,
+          4.1
+        ],
+        [
+          "f72r2",
+          345,
+          4.1
+        ]
+      ],
+      "top_5_share_pct": 22.4
+    },
+    "ot": {
+      "total_tokens": 12386,
+      "unique_types": 338,
+      "folios_covered": 35,
+      "coverage_pct": 97.2,
+      "entropy": 4.878,
+      "normalized_entropy": 0.943,
+      "gini_coefficient": 0.306,
+      "top_5_folios": [
+        [
+          "f70v2",
+          785,
+          6.3
+        ],
+        [
+          "f72v1",
+          599,
+          4.8
+        ],
+        [
+          "f70r2",
+          545,
+          4.4
+        ],
+        [
+          "f72r2",
+          545,
+          4.4
+        ],
+        [
+          "f71v",
+          521,
+          4.2
+        ]
+      ],
+      "top_5_share_pct": 24.2
+    },
+    "da": {
+      "total_tokens": 13190,
+      "unique_types": 89,
+      "folios_covered": 35,
+      "coverage_pct": 97.2,
+      "entropy": 4.956,
+      "normalized_entropy": 0.959,
+      "gini_coefficient": 0.268,
+      "top_5_folios": [
+        [
+          "f67r1",
+          607,
+          4.6
+        ],
+        [
+          "f70r2",
+          587,
+          4.5
+        ],
+        [
+          "f86v6",
+          565,
+          4.3
+        ],
+        [
+          "f70v2",
+          558,
+          4.2
+        ],
+        [
+          "f68v3",
+          555,
+          4.2
+        ]
+      ],
+      "top_5_share_pct": 21.8
+    },
+    "qo": {
+      "total_tokens": 1927,
+      "unique_types": 157,
+      "folios_covered": 28,
+      "coverage_pct": 77.8,
+      "entropy": 3.705,
+      "normalized_entropy": 0.717,
+      "gini_coefficient": 0.726,
+      "top_5_folios": [
+        [
+          "f86v6",
+          370,
+          19.2
+        ],
+        [
+          "f86v3",
+          310,
+          16.1
+        ],
+        [
+          "f86v5",
+          309,
+          16.0
+        ],
+        [
+          "f85r2",
+          171,
+          8.9
+        ],
+        [
+          "f68v3",
+          122,
+          6.3
+        ]
+      ],
+      "top_5_share_pct": 66.5
+    },
+    "ol": {
+      "total_tokens": 2638,
+      "unique_types": 95,
+      "folios_covered": 32,
+      "coverage_pct": 88.9,
+      "entropy": 4.37,
+      "normalized_entropy": 0.845,
+      "gini_coefficient": 0.531,
+      "top_5_folios": [
+        [
+          "f86v6",
+          244,
+          9.2
+        ],
+        [
+          "f85r2",
+          186,
+          7.1
+        ],
+        [
+          "f86v5",
+          176,
+          6.7
+        ],
+        [
+          "f86v4",
+          161,
+          6.1
+        ],
+        [
+          "f85v2",
+          159,
+          6.0
+        ]
+      ],
+      "top_5_share_pct": 35.1
+    },
+    "ct": {
+      "total_tokens": 169,
+      "unique_types": 17,
+      "folios_covered": 16,
+      "coverage_pct": 44.4,
+      "entropy": 3.73,
+      "normalized_entropy": 0.722,
+      "gini_coefficient": 0.705,
+      "top_5_folios": [
+        [
+          "f69r",
+          26,
+          15.4
+        ],
+        [
+          "f70r2",
+          21,
+          12.4
+        ],
+        [
+          "f68r3",
+          16,
+          9.5
+        ],
+        [
+          "f68v2",
+          14,
+          8.3
+        ],
+        [
+          "f86v5",
+          14,
+          8.3
+        ]
+      ],
+      "top_5_share_pct": 53.8
+    }
+  },
+  "comparisons": {
+    "mean_normalized_entropy": 0.876,
+    "std_normalized_entropy": 0.097,
+    "mean_gini": 0.439,
+    "std_gini": 0.18,
+    "entropy_interpretation": "HIGH - near-uniform distribution",
+    "variation_interpretation": "LOW - PREFIX families behave similarly"
+  },
+  "ct_test": {
+    "ct_total_tokens": 56,
+    "ct_folios_covered": 16,
+    "top_folio": "f69r",
+    "top_folio_share_pct": 46.4,
+    "top_3_share_pct": 112.5,
+    "all_folios": [
+      [
+        "f69r",
+        26,
+        46.4
+      ],
+      [
+        "f70r2",
+        21,
+        37.5
+      ],
+      [
+        "f68r3",
+        16,
+        28.6
+      ],
+      [
+        "f68v2",
+        14,
+        25.0
+      ],
+      [
+        "f86v5",
+        14,
+        25.0
+      ],
+      [
+        "f72v3",
+        14,
+        25.0
+      ],
+      [
+        "f72v2",
+        10,
+        17.9
+      ],
+      [
+        "f67r1",
+        9,
+        16.1
+      ],
+      [
+        "f72r1",
+        9,
+        16.1
+      ],
+      [
+        "f70v2",
+        9,
+        16.1
+      ],
+      [
+        "f68v1",
+        8,
+        14.3
+      ],
+      [
+        "f85r2",
+        7,
+        12.5
+      ],
+      [
+        "f86v6",
+        4,
+        7.1
+      ],
+      [
+        "f68v3",
+        3,
+        5.4
+      ],
+      [
+        "f85v2",
+        3,
+        5.4
+      ],
+      [
+        "f73r",
+        2,
+        3.6
+      ]
+    ]
+  },
+  "verdict": "NOT_SUPPORTED"
+}

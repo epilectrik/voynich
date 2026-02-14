@@ -1,0 +1,172 @@
+{
+  "columns": {
+    "word": {
+      "index": 0,
+      "unique_values": 12362
+    },
+    "complex_word": {
+      "index": 1,
+      "unique_values": 12414
+    },
+    "folio": {
+      "index": 2,
+      "unique_values": 227
+    },
+    "section": {
+      "index": 3,
+      "unique_values": 8
+    },
+    "quire": {
+      "index": 4,
+      "unique_values": 18
+    },
+    "panel": {
+      "index": 5,
+      "unique_values": 24
+    },
+    "language": {
+      "index": 6,
+      "unique_values": 3
+    },
+    "hand": {
+      "index": 7,
+      "unique_values": 8
+    },
+    "misc": {
+      "index": 8,
+      "unique_values": 2
+    },
+    "d.hand": {
+      "index": 9,
+      "unique_values": 6
+    },
+    "placement": {
+      "index": 10,
+      "unique_values": 59
+    },
+    "line_number": {
+      "index": 11,
+      "unique_values": 103
+    },
+    "transcriber": {
+      "index": 12,
+      "unique_values": 18
+    },
+    "line_initial": {
+      "index": 13,
+      "unique_values": 69
+    },
+    "line_final": {
+      "index": 14,
+      "unique_values": 69
+    },
+    "par_initial": {
+      "index": 15,
+      "unique_values": 360
+    },
+    "par_final": {
+      "index": 16,
+      "unique_values": 360
+    }
+  },
+  "placement_categories": {
+    "TEXT": [
+      "P",
+      "P1",
+      "P2",
+      "P3",
+      "P4"
+    ],
+    "LABEL": [
+      "L",
+      "L1",
+      "L2",
+      "L3",
+      "L4"
+    ],
+    "RING": [
+      "R",
+      "R1",
+      "R2",
+      "R3",
+      "R4"
+    ],
+    "CIRCLE": [
+      "C",
+      "C1",
+      "C2"
+    ],
+    "STAR": [
+      "S",
+      "S0",
+      "S1",
+      "S2",
+      "S3"
+    ],
+    "OTHER": [
+      "B",
+      "F",
+      "I",
+      "K",
+      "M",
+      "N",
+      "O",
+      "Q",
+      "T",
+      "T1",
+      "T2",
+      "T3",
+      "T4",
+      "U",
+      "W",
+      "X",
+      "Y",
+      "Z",
+      "b",
+      "m",
+      "t"
+    ]
+  },
+  "token_breakdown": {
+    "A": {
+      "TEXT": 11081,
+      "OTHER": 128,
+      "LABEL": 183,
+      "RING": 19,
+      "CIRCLE": 4
+    },
+    "B": {
+      "TEXT": 21649,
+      "OTHER": 460,
+      "LABEL": 99,
+      "RING": 844,
+      "CIRCLE": 191
+    }
+  },
+  "vocab_counts": {
+    "A": {
+      "TEXT": 3270,
+      "OTHER": 121,
+      "LABEL": 161,
+      "RING": 18,
+      "CIRCLE": 4
+    },
+    "B": {
+      "TEXT": 4662,
+      "OTHER": 302,
+      "LABEL": 91,
+      "RING": 422,
+      "CIRCLE": 145
+    }
+  },
+  "label_text_overlap": {
+    "label_vocab_size": 161,
+    "text_vocab_size": 3270,
+    "overlap_size": 61
+  },
+  "line_patterns": {
+    "numeric": 37553,
+    "mixed": 395,
+    "zero_suffix": 9
+  }
+}

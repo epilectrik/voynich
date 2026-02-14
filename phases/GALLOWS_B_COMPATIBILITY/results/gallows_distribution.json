@@ -1,0 +1,138 @@
+{
+  "test": "GALLOWS_DISTRIBUTION",
+  "date": "2026-01-14",
+  "gallows_chars": [
+    "k",
+    "t",
+    "f",
+    "p"
+  ],
+  "by_language": {
+    "A": {
+      "total_chars": 180889,
+      "gallows_counts": {
+        "k": 7462,
+        "t": 5454,
+        "f": 364,
+        "p": 1025,
+        "cth": 1970,
+        "ckh": 1112,
+        "cph": 418,
+        "cfh": 135
+      },
+      "gallows_per_1000": {
+        "k": 41.252,
+        "t": 30.151,
+        "f": 2.012,
+        "p": 5.666
+      }
+    },
+    "B": {
+      "total_chars": 387179,
+      "gallows_counts": {
+        "k": 22317,
+        "t": 11242,
+        "f": 754,
+        "p": 3118,
+        "cph": 280,
+        "cth": 1118,
+        "ckh": 1895,
+        "cfh": 109
+      },
+      "gallows_per_1000": {
+        "k": 57.64,
+        "t": 29.036,
+        "f": 1.947,
+        "p": 8.053
+      }
+    }
+  },
+  "by_regime": {
+    "REGIME_1": {
+      "total_chars": 235764,
+      "gallows_counts": {
+        "k": 14417,
+        "t": 6201,
+        "f": 304,
+        "p": 1682,
+        "cth": 684,
+        "ckh": 1182,
+        "cfh": 48,
+        "cph": 137
+      },
+      "profile": {
+        "k": 63.8,
+        "t": 27.4,
+        "f": 1.3,
+        "p": 7.4
+      },
+      "dominant": "k"
+    },
+    "REGIME_2": {
+      "total_chars": 45310,
+      "gallows_counts": {
+        "k": 2263,
+        "t": 1891,
+        "f": 123,
+        "p": 589,
+        "cth": 95,
+        "ckh": 135,
+        "cph": 30,
+        "cfh": 17
+      },
+      "profile": {
+        "k": 46.5,
+        "t": 38.9,
+        "f": 2.5,
+        "p": 12.1
+      },
+      "dominant": "k"
+    },
+    "REGIME_3": {
+      "total_chars": 57016,
+      "gallows_counts": {
+        "k": 2716,
+        "t": 1600,
+        "f": 128,
+        "p": 399,
+        "ckh": 300,
+        "cth": 159,
+        "cph": 60,
+        "cfh": 15
+      },
+      "profile": {
+        "k": 56.1,
+        "t": 33.0,
+        "f": 2.6,
+        "p": 8.2
+      },
+      "dominant": "k"
+    },
+    "REGIME_4": {
+      "total_chars": 49089,
+      "gallows_counts": {
+        "k": 2921,
+        "t": 1550,
+        "f": 199,
+        "p": 448,
+        "cph": 53,
+        "cth": 180,
+        "ckh": 278,
+        "cfh": 29
+      },
+      "profile": {
+        "k": 57.1,
+        "t": 30.3,
+        "f": 3.9,
+        "p": 8.8
+      },
+      "dominant": "k"
+    }
+  },
+  "findings": [
+    "REGIME_1 shows k-dominant gallows profile (63.8%)",
+    "REGIME_2 shows k-dominant gallows profile (46.5%)",
+    "REGIME_3 shows k-dominant gallows profile (56.1%)",
+    "REGIME_4 shows k-dominant gallows profile (57.1%)"
+  ]
+}

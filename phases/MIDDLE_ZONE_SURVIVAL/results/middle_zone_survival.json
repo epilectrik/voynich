@@ -1,0 +1,116 @@
+{
+  "phase": "MIDDLE_ZONE_SURVIVAL",
+  "tier": 3,
+  "question": "Do MIDDLEs exhibit stable survival profiles across AZC legality zones?",
+  "data": {
+    "azc_tokens": 2920,
+    "unique_middles": 681,
+    "qualified_middles": 74,
+    "zone_distribution": {
+      "R": 1382,
+      "P": 398,
+      "S": 505,
+      "C": 635
+    }
+  },
+  "clustering": {
+    "optimal_k": 3,
+    "silhouette": 0.5783772788503355,
+    "clusters": {
+      "1": {
+        "size": 20,
+        "mean_profile": {
+          "C": 0.21432831057831062,
+          "P": 0.07853535353535354,
+          "R": 0.22784854034854035,
+          "S": 0.47928779553779544
+        },
+        "std_profile": {
+          "C": 0.17018151299340076,
+          "P": 0.08653871290787643,
+          "R": 0.11634055012370748,
+          "S": 0.20972283472964826
+        },
+        "dominant_zone": "S",
+        "example_middles": [
+          "so",
+          "od",
+          "yteo",
+          "os",
+          "keo",
+          "ockh",
+          "yto",
+          "ek",
+          "al",
+          "ykeeo"
+        ]
+      },
+      "2": {
+        "size": 12,
+        "mean_profile": {
+          "C": 0.15859418359418362,
+          "P": 0.5128142690642691,
+          "R": 0.22889332889332892,
+          "S": 0.09969821844821843
+        },
+        "std_profile": {
+          "C": 0.15561172751202634,
+          "P": 0.12892688733394447,
+          "R": 0.13299158272251468,
+          "S": 0.07561592750250776
+        },
+        "dominant_zone": "P",
+        "example_middles": [
+          "k",
+          "ke",
+          "cph",
+          "p",
+          "yt",
+          "ckh",
+          "ep",
+          "m",
+          "ekee",
+          "yk"
+        ]
+      },
+      "3": {
+        "size": 42,
+        "mean_profile": {
+          "C": 0.20179400107247544,
+          "P": 0.14729010966704806,
+          "R": 0.5447642269261254,
+          "S": 0.10615166233435126
+        },
+        "std_profile": {
+          "C": 0.13677953917107472,
+          "P": 0.07626729026170033,
+          "R": 0.14595711500007671,
+          "S": 0.09113893367141335
+        },
+        "dominant_zone": "R",
+        "example_middles": [
+          "ee",
+          "e",
+          "r",
+          "y",
+          "ii",
+          "eo",
+          "d",
+          "l",
+          "ch",
+          "a"
+        ]
+      }
+    }
+  },
+  "significance": {
+    "observed_silhouette": 0.5783772788503355,
+    "null_mean_silhouette": -0.08818342677014765,
+    "p_value": 0.0
+  },
+  "frequency_control": {
+    "mean_silhouette": 0.5783772788503353,
+    "std_silhouette": 2.1528023174860817e-16
+  },
+  "verdict": "CONFIRMED"
+}
