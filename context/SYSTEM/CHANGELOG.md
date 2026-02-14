@@ -4,6 +4,20 @@
 
 ---
 
+## Version 3.82 (2026-02-14) - C2 Test Misspecification (C1033)
+
+### Summary
+
+The C2 test (CC suffix-free >= 99%) is misspecified. The test uses CC={10,11,12,17} (5-role taxonomy) but C588 established CC as 100% suffix-free using CC={10,11,12} (macro-state partition). Class 17 has 59% suffixed tokens (170/288: olkeedy, olkeey, olkain, olkaiin, olkedy), dragging the measured rate to 83.4%. Real data itself fails the test. M2 reproduces the real CC suffix-free rate exactly (0.824 +/- 0.010 vs real 0.834). Correcting C2 pushes M2 from 13/15 to 14/15 = 93.3%. Two of three M2 failures (B4, C2) were test misspecifications; only B5 (forward-backward asymmetry, C1032) is genuine. C590's claim that class 17 suffix = NONE is incorrect. 1 new constraint (C1033). Phase 355.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1033 | C2 Test Misspecification — CC Definition Mismatch | 2 |
+
+---
+
 ## Version 3.81 (2026-02-14) - B5 Asymmetry Mechanism (C1032)
 
 ### Summary

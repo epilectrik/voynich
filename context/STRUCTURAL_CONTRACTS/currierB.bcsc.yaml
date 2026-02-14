@@ -1929,6 +1929,7 @@ provenance:
     - "C1030"  # M2 gap decomposition: B4 misspecified, corrected 13/15; B5+C2 independent mechanisms
     - "C1031"  # FL cross-line independence: within-line SAME 68.2% collapses to 27.9% cross-line
     - "C1032"  # B5 asymmetry mechanism: forbidden suppression asymmetry + PREFIX routing needed
+    - "C1033"  # C2 misspecified: CC={10,11,12,17} vs C588's {10,11,12}; corrected M2 14/15=93.3%
 
   affordance_system:
     - "C995"   # 9-bin affordance system
