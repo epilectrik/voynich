@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 893 validated constraints | **Version:** 3.78 | **Date:** 2026-02-14
+**Total:** 895 validated constraints | **Version:** 3.79 | **Date:** 2026-02-14
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2258,6 +2258,25 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - T3: CP vs Tucker — **PASS** (Tucker 21% worse; pairwise sufficiency confirmed)
 - T4: Controls — MIXED (marginalized ARI=0.050; shuffle ARI=0.080 PASS; cross-val congruence 0.882 stable; ΔR²=0.465)
 - Verdict: TENSOR_NOVEL — 5/8 passed (macro-automaton is interpretive abstraction, not tensor projection)
+
+---
+
+### Section Grammar Variation + M2 Gap Decomposition (C1029-C1030) — Phase: SECTION_GRAMMAR_VARIATION
+
+> **Summary:** Section modulates 49-class transition weights at the same scale as REGIME (mean pairwise JSD 0.325 vs 0.320, ratio 1.016x). Topology is shared across sections (zero section-only transitions; coverage varies 32-79% by sample size). 42.6% of classes show significant section-dependent transitions (p<0.05). Role self-loop ordering is section-dependent: BIO has EN > FQ > FL (thermal dominance); COSMO and STARS_RECIPE have FQ > FL > EN. Extends C979 to section dimension. **M2 gap decomposition:** Phase 348's B4 test is misspecified (M2 trivially reproduces real self-loop rates; real ordering is FQ > EN > FL not FQ > FL > EN). Corrected M2 pass rate: 13/15 = 86.7%. Remaining gap: B5 (forward-backward asymmetry, 3.85x overestimate, needs PREFIX routing) and C2 (CC 100% suffix-free, needs role-specific morphology) — independent mechanisms.
+
+| ID | Description | Tier | Scope | Details |
+|----|-------------|------|-------|---------|
+| **1029** | **Section-Parameterized Grammar Weights** (mean pairwise JSD section=0.325 vs REGIME=0.320; zero section-only transitions; 42.6% classes section-dependent p<0.05; role ordering section-dependent: BIO EN>FQ>FL, COSMO FQ>FL>EN; extends C979 to section) | 2 | B | -> [C1029_section_grammar_parameterization.md](C1029_section_grammar_parameterization.md) |
+| **1030** | **M2 Gap Decomposition — B4 Misspecified, Two Independent Mechanisms** (B4 trivially passes: M2 self-rates identical to real; corrected 13/15=86.7%; B5 asymmetry 3.85x overestimate needs PREFIX routing C1024; C2 CC 100% suffix-free needs role morphology; independent: C2 constant across sections, B5 varies) | 2 | B | -> [C1030_m2_gap_decomposition.md](C1030_m2_gap_decomposition.md) |
+
+**Phase findings:**
+- Section and REGIME modulate at same scale (JSD ratio 1.016x) — grammar has TWO orthogonal parameterization axes
+- BIO section's EN self-loop dominance confirms C552 thermal-intensive profile at transition level
+- B4 test misspecified in Phase 348: checks ordering property not match-to-real; M2 self-rates are matrix diagonal (identical by construction)
+- B5 gap (0.178 vs 0.046): M2's single directional Markov chain overestimates asymmetry; real text has PREFIX symmetric routing (C1024)
+- C2 gap: CC suffix-free rate is 100% (fully morphological constraint); EN suffix rate is 61% (highest); role-specific morphology is outside M2's scope
+- Verdict: SECTION_COMPARABLE_TO_REGIME + GAP_TWO_INDEPENDENT_MECHANISMS
 
 ---
 
