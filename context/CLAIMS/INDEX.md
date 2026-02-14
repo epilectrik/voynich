@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 897 validated constraints | **Version:** 3.81 | **Date:** 2026-02-14
+**Total:** 898 validated constraints | **Version:** 3.82 | **Date:** 2026-02-14
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2312,6 +2312,23 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - Real data achieves low asymmetry AND high spectral gap simultaneously — generic blending cannot
 - True M2.5 fix requires PREFIX-factored generation (PREFIX symmetric, MIDDLE directional)
 - M2 pass rate remains 13/15 = 86.7%; projected 14/15 = 93.3% with PREFIX-aware generation
+
+---
+
+### C2 Test Misspecification (C1033) — Phase: C2_CC_SUFFIX_FREE
+
+> **Summary:** The C2 test (CC suffix-free >= 99%) is misspecified. The test uses CC={10,11,12,17} (5-role taxonomy) but C588 established CC as 100% suffix-free using CC={10,11,12} (macro-state partition). Class 17 has 59% suffixed tokens (170/288 — olkeedy, olkeey, olkain, etc.), dragging the rate to 83.4%. Real data itself fails the test. M2 reproduces the real rate exactly (0.824 vs 0.834). Correcting C2 pushes M2 from 13/15 to 14/15 = 93.3%. Only B5 remains. C590's class 17 suffix=NONE claim is incorrect.
+
+| ID | Description | Tier | Scope | Details |
+|----|-------------|------|-------|---------|
+| **1033** | **C2 Test Misspecification — CC Definition Mismatch** (test uses CC={10,11,12,17} but C588 used {10,11,12}; class 17 has 59% suffixed; real C2=0.834 fails 99% threshold; M2=0.824 matches real; corrected 14/15=93.3%; C590 class 17 suffix=NONE wrong; only B5 remains) | 2 | B | -> [C1033_c2_misspecification.md](C1033_c2_misspecification.md) |
+
+**Phase findings:**
+- C2 is misspecified like B4 (C1030): the test checks against a threshold the real data doesn't meet
+- Class 17 has 4 suffix types: edy (68), eey (38), ain (33), aiin (31) — all on ol-prefixed compound tokens
+- Two of three M2 failures (B4, C2) were test misspecifications, not model limitations
+- M2 corrected pass rate: 14/15 = 93.3%. Only B5 (forward-backward asymmetry) is genuine
+- C590 needs correction: class 17 suffix is NOT NONE
 
 ---
 

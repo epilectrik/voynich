@@ -212,6 +212,7 @@ Look up constraint number to find source phase.
 | C1030 | SECTION_GRAMMAR_VARIATION |
 | C1031 | FL_CROSS_LINE_CONTINUITY |
 | C1032 | PREFIX_ASYMMETRY_CORRECTION |
+| C1033 | C2_CC_SUFFIX_FREE |
 
 ---
 

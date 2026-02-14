@@ -1,0 +1,19 @@
+{
+  "real_c2_role": 0.833822091886608,
+  "real_c2_macro": 1.0,
+  "m2_c2_role_mean": 0.8242347503442486,
+  "m2_c2_role_std": 0.009467862813254294,
+  "m2_c2_macro_mean": 1.0,
+  "m2_c2_macro_std": 0.0,
+  "pass_rate_original": 0.0,
+  "pass_rate_fix_a": 1.0,
+  "pass_rate_fix_b_role": 0.95,
+  "pass_rate_fix_b_macro": 1.0,
+  "c590_class17_suffix_none_claim": "WRONG",
+  "class17_actual_suffix_rate": 0.59,
+  "misspecification": "C2 test uses CC={10,11,12,17} but C588 suffix-free finding used CC={10,11,12}",
+  "corrected_m2_pass_rate": "0/15 = 0.0%",
+  "remaining_failure": "B5 (forward-backward asymmetry)",
+  "verdict": "C2_MISSPECIFIED",
+  "explanation": "C2 is misspecified like B4. The test expects CC >= 99% suffix-free, but uses CC={10,11,12,17} which includes class 17 (59% suffixed). C588/C590 defined CC suffix-free using CC={10,11,12} (100% suffix-free). M2 reproduces the real C2 rate exactly (both are ~0.834). Correcting C2 pushes M2 from 13/15 to 14/15 = 93.3%. Only B5 remains."
+}
