@@ -3,7 +3,7 @@
 meta:
   name: "Currier A Structural Contract"
   acronym: "CASC"
-  version: "1.8"
+  version: "1.9"
   date: "2026-02-13"
   status: "LOCKED"
   derived_from: "Tier-2 constraints only"
@@ -490,7 +490,8 @@ participation:
           bridge_advantage: "3.8x"  # bridge/non-bridge ARI ratio
           bridge_density_vs_axm_self: { rho: -0.308, p: 0.009 }  # more bridges = weaker attractor = more dynamical options
           interpretation: "Bridge backbone is the geometry→dynamics conduit — the A-derived vocabulary that directly shapes B's macro-state behavior at folio level"
-          provenance: "C1016"
+          b_internal_degeneracy: "At the B corpus level, all 85 unique MIDDLEs are bridges (100% coverage; C1020). Bridge density 0.727 is the per-folio A-manifold metric. The bridge concept distinguishes A→B crossover vocabulary, not a B-internal partition."
+          provenance: "C1016, C1018, C1020"
 
     provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016"
 
@@ -666,6 +667,8 @@ provenance:
     - "C1013"  # Bridge MIDDLE topological selection (freq AUC=0.978)
     - "C1014"  # Manifold viability alignment (r=0.914, bridge-mediated)
     - "C1016"  # Bridge conduit: bridge MIDDLEs carry 3.8x more B dynamical archetype info than non-bridges
+    - "C1018"  # Bridge PC1 partial redundancy with hub frequency; archetype discriminator anatomy
+    - "C1020"  # 100% bridge degeneracy at B corpus level (all B MIDDLEs are bridges)
 
   positional:
     - "C260"  # Section isolation

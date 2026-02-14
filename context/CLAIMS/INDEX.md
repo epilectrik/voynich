@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 879 validated constraints | **Version:** 3.58 | **Date:** 2026-02-12
+**Total:** 886 validated constraints | **Version:** 3.71 | **Date:** 2026-02-13
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2074,6 +2074,95 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - T7: Geometry/topology independence — ARI(manifold clusters, archetypes)=0.163; LOO accuracy=0.444 vs 0.167 chance; vocabulary geometry weakly predicts but cannot determine archetypes
 - T8: Bridge conduit test — bridge-only ARI=0.141 vs non-bridge ARI=0.037 (3.8x); bridge backbone carries most geometry→dynamics information; bridge density anti-correlated with AXM self (rho=-0.308)
 - Verdict: FOLIO_DECOMPOSITION_CONFIRMED — 7/8 passed (T3 informative null)
+
+---
+
+### Macro-Dynamics Variance Decomposition (C1017) — Phase: MACRO_DYNAMICS_VARIANCE_DECOMPOSITION
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1017** | **Macro-State Dynamics Decompose into PREFIX Routing, Hazard Density, and Bridge Geometry** (78.7% within-MIDDLE entropy reduction z=65.59; 19.9% positional, 80.1% genuine routing; REGIME-invariant ratio=1.06; PREFIX+hazard ΔR²=0.115 beyond REGIME+section; bridge PC1 ΔR²=0.063 p=0.003; interaction ΔR²=0.030 weak per C1003; SUFFIX uncorrelated p=0.280 per C1004; 40.1% non-linear residual with archetype-specific slope profiles) | 2 | B | -> [C1017_macro_dynamics_variance_decomposition.md](C1017_macro_dynamics_variance_decomposition.md) |
+
+**Phase findings (T1-T6, T5b, T5c):**
+- T1: MIDDLE-conditioned PREFIX routing — 78.7% entropy reduction within same MIDDLE (z=65.59, p≈0); non-AXM spanning 85.9%
+- T2: Positional null — 19.9% positional contribution; 80.1% genuine morphological routing (z=41.78, p≈0)
+- T3: REGIME stratification — FAIL (ratio=1.06; PREFIX routing is REGIME-invariant; informative)
+- T4: Bridge density constant at 1.0 (85/87 B MIDDLEs are bridges); hazard density differentiates archetypes (eta²=0.228, p=0.004); gatekeeper overlap 24.7%
+- T5: Variance decomposition — REGIME+section R²=0.420; +PREFIX ΔR²=0.051; +hazard ΔR²=0.061; combined R²=0.534; interaction ΔR²=0.030 (weak)
+- T5b: Archetype-stratified models — slopes differ across archetypes (β_PREFIX flips in arch.5, β_hazard flips in arch.6); mean within-archetype R²=0.230
+- T5c: Geometric bridge feature — bridge PC1 rho=-0.459 (p=0.00005); ΔR²=0.063 (F=9.58, p=0.003); bridge geometry is load-bearing dynamics predictor
+- T6: Residual — SUFFIX uncorrelated (p=0.280); archetype captures non-linear residual (F=6.71, p<0.0001)
+- Verdict: DYNAMICS_DECOMPOSED — 8/9 passed (T3 informative null)
+
+---
+
+### Archetype Geometric Anatomy (C1018) — Phase: ARCHETYPE_GEOMETRIC_ANATOMY
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1018** | **Archetype Geometric Anatomy — Slope Anomalies, Bridge PC1 Decomposition, and HUB Sub-Role Differentiation** (archetype 5 PREFIX slope CI spans zero at n=7; archetype 6 SAFETY_BUFFER enriched 1.7x p=0.003; bridge PC1 partially redundant with hub frequency rho=0.568; PC1 = HUB_UNIVERSAL↔STABILITY_CRITICAL gradient; 8 discriminator features across 5 families; k_frac strongest F=15.81; archetypes 5/6 geometrically distinct p=0.006) | 2 | B | -> [C1018_archetype_geometric_anatomy.md](C1018_archetype_geometric_anatomy.md) |
+
+**Phase findings (T1-T5):**
+- T1: Archetype structural profiling — **PASS** (archetypes 5/6 NOT section-dominated; section×arch chi2=60.28 p=0.000006 V=0.457)
+- T2: Bootstrap validation — FAIL (arch 5 PREFIX CI [-0.054,+0.203] spans zero; arch 6 hazard perm p=0.014 but CI spans zero; informative)
+- T3: Bridge PC1 decomposition — MIXED (hub frequency rho=0.568 exceeds 0.5 threshold; PC1=HUB↔STABILITY gradient; ANOVA F=3.56 p=0.006)
+- T4: Discriminator features — **PASS** (8 significant: k_frac F=15.81, SAFETY_BUFFER F=11.37, HAZARD_TARGET F=5.73, fl_ratio F=5.51, QO F=5.47)
+- T5: Unified hypothesis — **SUPPORTED** (arch 5 vs 6 PC1: U=174 p=0.006; mediation weak)
+- Verdict: ARCHETYPE_ANATOMY_UNIFIED — 5/7 passed (P2 sample size, P3 partial re-derivation)
+
+### CP Factor Characterization (C1021) — Phase: CP_FACTOR_CHARACTERIZATION
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1021** | **CP Factor Characterization — Tensor Factors Are Frequency-Dominated, Rank Is Continuous, Tensor-Automaton Orthogonality Is Complete** (Factor 2 rho=-0.750 with AXM is frequency gradient rho=0.854; gatekeeper cosine=0.059; Factor 3 AXM-orthogonal captures frequency cosine=0.648; CV saturates at rank 4; constrained ARI=0.007 WORSE than unconstrained 0.050; z=-0.22 vs null) | 2 | B | -> [C1021_cp_factor_characterization.md](C1021_cp_factor_characterization.md) |
+
+**Phase findings (Sub-1 + Sub-2 + Sub-3):**
+- S1: Gatekeeper cosine — FAIL (0.059; Factor 2 does NOT encode C1007 gating)
+- S2: Frequency null — FAIL (rho=0.854; Factor 2 IS a frequency gradient)
+- S3: Factor 3 structural dimension — **PASS** (frequency cosine=0.648; captures AXM-orthogonal frequency)
+- S4: PREFIX selectivity — **PASS** (mean Gini=0.803; strong factor-PREFIX correspondence)
+- R1: Rank-8 boundary — FAIL (ΔR² ratio 8/6 = 1.023)
+- R2: CV gap — FAIL (rank-8 minus rank-6 = 0.004)
+- R3: Diminishing returns — **PASS** (ΔR² gap 10-8 = 0.023 < 0.03)
+- R4: Compliance-rank — FAIL (Spearman=0.516)
+- C1: Constrained ARI — FAIL (0.007 < unconstrained 0.050; constraint filtering makes it WORSE)
+- C2: z-score — FAIL (-0.22; below null)
+- C3: Reconstruction — **PASS** (variance=0.970)
+- Verdict: FREQUENCY_ARTIFACT+FACTOR3_IDENTIFIED; RANK_CONTINUOUS; ORTHOGONAL_CONFIRMED — 4/11 passed
+
+---
+
+### Tensor Archetype Geometry (C1020) — Phase: TENSOR_ARCHETYPE_GEOMETRY
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1020** | **Tensor Archetype Geometry — Tensor Factors Encode Dynamics Through Graded Curvature, Not Macro-State Clustering** (7/8 CP factors correlate with AXM at |rho|>0.40, best rho=-0.738; archetypes don't cluster in CP space sil=-0.040; 100% bridge degeneracy; HUB rank 3 vs full rank 8; HUB PREFIX-diverse entropy 1.024>0.851) | 2 | B | -> [C1020_tensor_archetype_geometry.md](C1020_tensor_archetype_geometry.md) |
+
+**Phase findings (Sub-A + Sub-B + synthesis):**
+- A1: Silhouette — FAIL (sil=-0.040 but z=3.81 vs null; non-random but not compact clusters)
+- A2: MANOVA — FAIL (archetype 1.47x REGIME, below 2x threshold)
+- A3: AXM correlation — **PASS** (Factor 2 rho=-0.738 p<0.0001; 7/8 factors |rho|>0.40)
+- A4: k-means — FAIL (ARI=0.124, near but below 0.15)
+- B1: HUB ARI — FAIL (0.072; bridge degeneracy: 100% B MIDDLEs are bridges → HUB/non-HUB partition)
+- B2: Non-HUB ARI — **PASS** (0.025 < 0.10)
+- B3: HUB rank — **PASS** (rank 3 for 90% variance vs full rank 8)
+- B4: HUB entropy — FAIL (1.024 > 0.851; HUB MIDDLEs are PREFIX-diverse)
+- Verdict: TENSOR_GEOMETRY_ORTHOGONAL — 3/8 passed (tensor encodes dynamics as continuous gradient, not discrete categories)
+
+---
+
+### Morphological Tensor Decomposition (C1019) — Phase: MORPHOLOGICAL_TENSOR_DECOMPOSITION
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1019** | **Morphological Tensor Decomposition — Transition Tensor Has Rank-8 Pairwise Structure Orthogonal to 6-State Macro-Automaton** (rank 8 at 97.0% variance; CP ≥ Tucker confirming C1003; class factors ARI=0.053 vs C1010 — macro-automaton NOT a tensor projection; ΔR²=0.465 dynamical prediction 4x C1017; SUFFIX 2 SVD dims confirming C1004; HUB vs STABILITY cosine=0.574) | 2 | B | -> [C1019_morphological_tensor_decomposition.md](C1019_morphological_tensor_decomposition.md) |
+
+**Phase findings (T1-T4 + synthesis):**
+- T1: Tensor construction + rank selection — **PASS** (rank 8, 97.0% variance, 13,315 bigrams, 20×10×5×49)
+- T2: Factor interpretation — MIXED (class ARI=0.053 FAIL; PREFIX rho=0.182 FAIL; bins HUB≠STAB PASS; SUFFIX 2 SVD dims PASS)
+- T3: CP vs Tucker — **PASS** (Tucker 21% worse; pairwise sufficiency confirmed)
+- T4: Controls — MIXED (marginalized ARI=0.050; shuffle ARI=0.080 PASS; cross-val congruence 0.882 stable; ΔR²=0.465)
+- Verdict: TENSOR_NOVEL — 5/8 passed (macro-automaton is interpretive abstraction, not tensor projection)
 
 ---
 

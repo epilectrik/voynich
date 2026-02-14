@@ -6,12 +6,12 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 
 ## Project Status
 
-**Analysis: CLOSED** | **Structural inspection: FROZEN** | **Version: 3.66**
+**Analysis: CLOSED** | **Structural inspection: FROZEN** | **Version: 3.71**
 
 | Metric | Value |
 |--------|-------|
-| Validated constraints | 881 |
-| Research phases completed | 339 |
+| Validated constraints | 886 |
+| Research phases completed | 344 |
 | Model fits tested | 61 |
 | Constraint tiers | 0 (frozen fact) through 4 (exploratory) |
 
@@ -129,7 +129,7 @@ Renders any Currier B folio with morphological parse, structural roles, interpre
 
 ```
 voynich/
-  context/            # Constraint system (881 validated constraints)
+  context/            # Constraint system (886 validated constraints)
     CLAUDE_INDEX.md   # Start here for full documentation
     CLAIMS/           # Individual constraint files
     ARCHITECTURE/     # System architecture docs (A, B, AZC, cross-system)
@@ -138,7 +138,7 @@ voynich/
     SPECULATIVE/      # Tier 3-4 interpretations
   data/               # Transcript, dictionaries, Brunschwig recipes
   scripts/            # voynich.py core library + analysis tools
-  phases/             # 339 completed research phases
+  phases/             # 344 completed research phases
   results/            # Legacy analysis outputs (early phases; new results go in phases/)
   folio_analysis/     # Per-folio hazard maps
   annotation_data/    # Folio annotation work
