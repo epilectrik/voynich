@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 892 validated constraints | **Version:** 3.77 | **Date:** 2026-02-14
+**Total:** 893 validated constraints | **Version:** 3.78 | **Date:** 2026-02-14
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2208,6 +2208,22 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - (9) Section specificity: BORDERLINE (p=0.028; BIO 0.82x, RECIPE_B 1.10x)
 - (10) Permutation: UNIFORM (folio p=0.28, regime p=0.27)
 - Verdict: SPATIALLY_UNIFORM_STRUCTURALLY_CONDITIONED
+
+---
+
+### Vocabulary Curation Rule (C1028) — Phase: VOCABULARY_CURATION_RULE
+
+| ID | Description | Tier | Scope | Details |
+|----|-------------|------|-------|---------|
+| **1028** | **Vocabulary Curation Rule — Pairwise Co-occurrence Is Necessary and Dominant** (productive product space 48,640; 419 existing = 0.9% occupancy; pairwise co-occurrence gate: 100% recall, 58.4% precision; depth-3 tree 99.4% CV using only pm_cooc + ms_cooc; no three-way compilation rule detectable; 718 pairwise-compatible → 419 exist; consistent with C1003 no three-way synergy) | 2 | B | -> [C1028_vocabulary_curation_rule.md](C1028_vocabulary_curation_rule.md) |
+
+**Phase findings:**
+- Pairwise co-occurrence is NECESSARY: 0 tokens exist without both PM and MS pair support
+- Pairwise co-occurrence is DOMINANT: depth-3 tree learns only PM+MS rule (99.4% CV)
+- 42% gap within pairwise-compatible space is consistent with finite-sample sparsity
+- No higher-order "compiler rule" beyond pairwise compatibility
+- Confirms C1003 (no three-way synergy) from vocabulary-existence angle
+- Verdict: NO_HIDDEN_COMPILER_RULE
 
 ---
 

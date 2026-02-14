@@ -169,9 +169,9 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 3.77 |
-| Constraints | 892 validated |
-| Phases | 350 completed |
+| Version | 3.78 |
+| Constraints | 893 validated |
+| Phases | 351 completed |
 | Folios | 83 (Currier B) |
 | Core model | CLOSED (PCA-v1 CERTIFIED) |
 | Characterization | ACTIVE |
