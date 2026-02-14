@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.63
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.64
 
 ---
 
@@ -1304,6 +1304,61 @@ The text encodes procedures and constraints. The decision of WHEN to use them is
 | C121 | 49-class grammar universality |
 
 **Source:** CLASS_COMPATIBILITY_ANALYSIS (2026-01-25)
+
+---
+
+## 0.E.1. GENERATIVE SUFFICIENCY AND DESIGN FREEDOM (Saturation Frontier)
+
+### Tier 2: Core Finding
+
+> **A minimal generative model (49-class Markov chain + symmetric forbidden suppression) reproduces 87% of measurable structure across 15 statistical tests, achieving 100% pass rate after three test corrections. The remaining ~57% of folio-level dynamical variance is genuine program-specific free variation that cannot be predicted from any aggregate structural property.**
+
+### Generative Sufficiency (C1025, C1030, C1033, C1034)
+
+The M2 model: sample instruction class from first-order transition probabilities, suppress forbidden transitions bidirectionally.
+
+| Test Category | Tests | Pass Rate | Notes |
+|---------------|-------|-----------|-------|
+| Class distribution | 4 | 4/4 | Frequency, entropy, hapax |
+| Transition structure | 4 | 4/4 | Spectral gap, forbidden compliance |
+| Morphological | 4 | 4/4 | PREFIX, SUFFIX rates |
+| Macro-state | 3 | 3/3 | After B4+C2+B5 corrections |
+| **Total** | **15** | **15/15** | **100%** |
+
+Three test corrections:
+- **B4** (C1030): Test was misspecified for non-stationary data
+- **C2** (C1033): Wrong CC class definition; class 17 has 59% suffixed tokens
+- **B5** (C1034): Required symmetric (bidirectional) forbidden suppression, not asymmetric
+
+PREFIX-factored generation (sampling PREFIX first, then class conditioned on PREFIX) is distributionally equivalent to M2 (C1034). PREFIX routing operates through selective inclusion (C1012), not through the generative process.
+
+### Macro-Dynamics Variance Decomposition (C1017, C1035)
+
+Folio-level AXM self-transition rate (how strongly each program orbits its dominant operational mode) decomposes as:
+
+| Source | Variance | Cumulative |
+|--------|----------|------------|
+| REGIME + section | 42.0% | 42.0% |
+| PREFIX entropy | 5.1% | 47.1% |
+| Hazard density | 6.1% | 53.2% |
+| Bridge geometry PC1 | 6.3% | 59.5% |
+| **Residual (irreducible)** | **~57%** | **LOO-corrected** |
+
+The C1017 model is moderately overfit (LOO CV R-squared = 0.433 vs training 0.564). The true explained fraction is ~43%.
+
+Six additional folio-level predictors tested (paragraph count, HT density, gatekeeper fraction, QO fraction, vocabulary size, line count) all produce zero incremental variance beyond the baseline (C1035). Random forest finds no non-linear signal.
+
+### Design Freedom Interpretation (C458, C980)
+
+The ~57% residual is the **grammar's free design space**:
+- Hazard exposure is clamped (CV = 0.04-0.11) — globally constrained
+- Recovery strategy is locally free (CV = 0.72-0.82) — per-folio variation
+- Each program is independently parameterized within its archetype
+- The parameterization is not predictable from any aggregate structural property
+
+This is consistent with C980's 66.3% free variation envelope. The manuscript provides the grammar, the forbidden constraints, and the macro-state topology. Within those constraints, each folio's author chose a specific operational style — and those choices are the irreducible residual.
+
+**Source:** GENERATIVE_SUFFICIENCY (Phase 348), MACRO_DYNAMICS_VARIANCE_DECOMPOSITION (Phase 340), PREFIX_FACTORED_DESIGN (Phase 356), AXM_RESIDUAL_DECOMPOSITION (Phase 357)
 
 ---
 
