@@ -213,6 +213,7 @@ Look up constraint number to find source phase.
 | C1031 | FL_CROSS_LINE_CONTINUITY |
 | C1032 | PREFIX_ASYMMETRY_CORRECTION |
 | C1033 | C2_CC_SUFFIX_FREE |
+| C1034 | PREFIX_FACTORED_DESIGN |
 
 ---
 

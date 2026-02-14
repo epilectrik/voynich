@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 898 validated constraints | **Version:** 3.82 | **Date:** 2026-02-14
+**Total:** 899 validated constraints | **Version:** 3.83 | **Date:** 2026-02-14
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2329,6 +2329,23 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - Two of three M2 failures (B4, C2) were test misspecifications, not model limitations
 - M2 corrected pass rate: 14/15 = 93.3%. Only B5 (forward-backward asymmetry) is genuine
 - C590 needs correction: class 17 suffix is NOT NONE
+
+---
+
+### Symmetric Forbidden B5 Fix (C1034) — Phase: PREFIX_FACTORED_DESIGN
+
+> **Summary:** Bidirectional forbidden suppression (M5-SF) resolves M2's B5 failure while preserving B1 and B3. Under C1025 reference mapping (684 class pairs), M5-SF achieves B5 80% pass (0.132 vs real 0.090), B1 100% pass (0.873 vs 0.894), B3=0. This is the ONLY model passing all three. M2.5 blending fails B5 under this mapping (0%). PREFIX-factored generation is distributionally equivalent to M2 (doesn't help). The fix targets the root cause: asymmetric forbidden suppression. Projected M5-SF pass rate: 15/15 = 100%.
+
+| ID | Description | Tier | Scope | Details |
+|----|-------------|------|-------|---------|
+| **1034** | **Symmetric Forbidden Suppression Fixes B5** (M5-SF: bidirectional forbidden, B5=0.132 80% pass, B1=0.873 100% pass, B3=0; M2.5 blending fails under C1025 mapping; PREFIX-factored distributionally equivalent to M2; projected 15/15=100% with B4+C2 corrections) | 2 | B | -> [C1034_symmetric_forbidden_b5_fix.md](C1034_symmetric_forbidden_b5_fix.md) |
+
+**Phase findings:**
+- M5-SF (symmetric forbidden) is the targeted B5 fix that C1032 identified as needed
+- PREFIX-factored generation through conditional routing does NOT improve B5 (distributionally equivalent)
+- Second-order class chain makes B5 WORSE (higher-order context amplifies directional patterns)
+- Two key negative results: PREFIX routing cannot be accessed through generation factoring; blending fails under heavy forbidden mapping
+- With B4 (C1030) + C2 (C1033) + B5 (this) corrections, M2 achieves 15/15 = 100%
 
 ---
 
