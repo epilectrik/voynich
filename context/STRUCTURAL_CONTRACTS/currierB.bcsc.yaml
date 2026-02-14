@@ -1931,6 +1931,7 @@ provenance:
     - "C1032"  # B5 asymmetry mechanism: forbidden suppression asymmetry + PREFIX routing needed
     - "C1033"  # C2 misspecified: CC={10,11,12,17} vs C588's {10,11,12}; corrected M2 14/15=93.3%
     - "C1034"  # Symmetric forbidden fixes B5: bidirectional suppression, M5-SF 80% B5+B1+B3, projected 15/15
+    - "C1035"  # AXM residual irreducible: 40% variance is free design space, no folio-level predictor helps
 
   affordance_system:
     - "C995"   # 9-bin affordance system

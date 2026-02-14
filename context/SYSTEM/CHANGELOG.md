@@ -4,6 +4,20 @@
 
 ---
 
+## Version 3.84 (2026-02-14) - AXM Residual Irreducibility (C1035)
+
+### Summary
+
+Direct attack on C1017's 40% unexplained AXM self-transition variance with six pre-registered folio-level predictors (paragraph count, HT density, gatekeeper fraction, QO fraction, vocabulary size, line count). Clean negative result: 0/7 predictions passed. No predictor adds any incremental R-squared beyond C1017 baseline. Random forest finds no non-linear signal (CV R-squared = -0.149). C1017 baseline is moderately overfit (LOO gap 0.132; true explained variance ~43%). The residual is genuinely program-specific free variation, consistent with C458 (recovery freedom) and C980 (66.3% free variation envelope). 1 new constraint (C1035). Phase 357.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1035 | AXM Residual Irreducible | 2 |
+
+---
+
 ## Version 3.83 (2026-02-14) - Symmetric Forbidden B5 Fix (C1034)
 
 ### Summary
