@@ -4,6 +4,29 @@
 
 ---
 
+## Version 3.74 (2026-02-13) - Structural Directionality (C1024)
+
+### Summary
+
+Decomposes forward-backward asymmetry by morphological component and functional role. Resolves the C391/C886 tension: constraint symmetry lives in PREFIX (symmetric router), execution directionality lives in MIDDLE (directional executor). MIDDLE asymmetry is 4x PREFIX asymmetry. FL tokens show highest role-specific directionality (consistent with SOURCE-biased flow control). Null control reveals 64% of raw JSD is sparsity noise; sequential component is 36% above null but statistically significant. Verdict: WEAK_ASYMMETRY (1/5 PASS). 1 new constraint (C1024). Phase 347.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1024 | Structural Directionality — MIDDLE Carries Execution Asymmetry, PREFIX Is Symmetric Router | 2 |
+
+### Key Findings
+
+**STRUCTURAL_DIRECTIONALITY (5 tests):**
+- T1: Bigram JSD — **PASS** (JSD = 0.089 bits, confirming C886)
+- T2: PREFIX dominance — FAIL (PREFIX/MIDDLE ratio = 0.25x; MIDDLE is 4x more asymmetric)
+- T3: CC highest — FAIL (FL = #1, CC = #4; flow control is most directional)
+- T4: FL_HAZ > FL_SAFE — FAIL (reversed; small-sample artifact on rare classes)
+- T5: Null control — FAIL (64% retention; sparsity dominates raw JSD)
+
+---
+
 ## Version 3.73 (2026-02-13) - Structural Necessity Ablation (C1023)
 
 ### Summary
