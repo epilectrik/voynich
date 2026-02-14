@@ -1,0 +1,316 @@
+{
+  "broad": {
+    "n_pairs": 1446,
+    "cross_line_gap": {
+      "mean": -0.42946058091286304,
+      "std": 1.77314861256741,
+      "null_mean": -0.42946058091286304
+    },
+    "endpoint_correlation": {
+      "rho": 0.032237138921238105,
+      "p_parametric": 0.22053090669253753,
+      "p_permutation": 0.2164
+    },
+    "mean_stage_correlation": {
+      "rho": 0.063114067998888,
+      "p_parametric": 0.016381073366428592,
+      "p_permutation": 0.0167
+    },
+    "transition_proportions": {
+      "forward": 403,
+      "same": 403,
+      "backward": 640,
+      "forward_pct": 27.869986168741356,
+      "same_pct": 27.869986168741356,
+      "backward_pct": 44.26002766251729
+    },
+    "within_line_comparison_c786": {
+      "within_forward_pct": 27.3,
+      "within_same_pct": 68.2,
+      "within_backward_pct": 4.5
+    },
+    "chi2_independence": {
+      "chi2": 55.83847669704982,
+      "df": 25,
+      "p": 0.0003816246219910946
+    },
+    "marginal_distributions": {
+      "last_stage": {
+        "INITIAL": 34,
+        "EARLY": 46,
+        "MEDIAL": 304,
+        "LATE": 488,
+        "FINAL": 189,
+        "TERMINAL": 385
+      },
+      "first_stage": {
+        "INITIAL": 61,
+        "EARLY": 101,
+        "MEDIAL": 365,
+        "LATE": 555,
+        "FINAL": 138,
+        "TERMINAL": 226
+      }
+    },
+    "transition_matrix_top": [
+      {
+        "from": "LATE",
+        "to": "LATE",
+        "count": 208
+      },
+      {
+        "from": "TERMINAL",
+        "to": "LATE",
+        "count": 146
+      },
+      {
+        "from": "LATE",
+        "to": "MEDIAL",
+        "count": 116
+      },
+      {
+        "from": "MEDIAL",
+        "to": "LATE",
+        "count": 114
+      },
+      {
+        "from": "MEDIAL",
+        "to": "MEDIAL",
+        "count": 86
+      },
+      {
+        "from": "TERMINAL",
+        "to": "MEDIAL",
+        "count": 84
+      },
+      {
+        "from": "TERMINAL",
+        "to": "TERMINAL",
+        "count": 72
+      },
+      {
+        "from": "LATE",
+        "to": "TERMINAL",
+        "count": 71
+      },
+      {
+        "from": "FINAL",
+        "to": "MEDIAL",
+        "count": 58
+      },
+      {
+        "from": "FINAL",
+        "to": "LATE",
+        "count": 54
+      },
+      {
+        "from": "LATE",
+        "to": "FINAL",
+        "count": 50
+      },
+      {
+        "from": "MEDIAL",
+        "to": "TERMINAL",
+        "count": 47
+      },
+      {
+        "from": "TERMINAL",
+        "to": "FINAL",
+        "count": 33
+      },
+      {
+        "from": "LATE",
+        "to": "EARLY",
+        "count": 31
+      },
+      {
+        "from": "TERMINAL",
+        "to": "EARLY",
+        "count": 29
+      },
+      {
+        "from": "FINAL",
+        "to": "TERMINAL",
+        "count": 28
+      },
+      {
+        "from": "MEDIAL",
+        "to": "FINAL",
+        "count": 25
+      },
+      {
+        "from": "FINAL",
+        "to": "FINAL",
+        "count": 25
+      },
+      {
+        "from": "MEDIAL",
+        "to": "EARLY",
+        "count": 23
+      },
+      {
+        "from": "EARLY",
+        "to": "LATE",
+        "count": 22
+      }
+    ]
+  },
+  "narrow": {
+    "n_pairs": 230,
+    "cross_line_gap": {
+      "mean": -0.1391304347826087,
+      "std": 1.7188821267310517,
+      "null_mean": -0.1391304347826087
+    },
+    "endpoint_correlation": {
+      "rho": 0.003055068394136687,
+      "p_parametric": 0.9632464270939298,
+      "p_permutation": 0.9634
+    },
+    "mean_stage_correlation": {
+      "rho": 0.06660383331385208,
+      "p_parametric": 0.3145546552115931,
+      "p_permutation": 0.311
+    },
+    "transition_proportions": {
+      "forward": 75,
+      "same": 74,
+      "backward": 81,
+      "forward_pct": 32.608695652173914,
+      "same_pct": 32.17391304347826,
+      "backward_pct": 35.21739130434783
+    },
+    "within_line_comparison_c786": {
+      "within_forward_pct": 27.3,
+      "within_same_pct": 68.2,
+      "within_backward_pct": 4.5
+    },
+    "chi2_independence": {
+      "chi2": 32.814614091513675,
+      "df": 25,
+      "p": 0.13576827724022578
+    },
+    "marginal_distributions": {
+      "last_stage": {
+        "INITIAL": 15,
+        "EARLY": 25,
+        "MEDIAL": 86,
+        "LATE": 69,
+        "FINAL": 9,
+        "TERMINAL": 26
+      },
+      "first_stage": {
+        "INITIAL": 16,
+        "EARLY": 22,
+        "MEDIAL": 102,
+        "LATE": 67,
+        "FINAL": 4,
+        "TERMINAL": 19
+      }
+    },
+    "transition_matrix_top": [
+      {
+        "from": "MEDIAL",
+        "to": "MEDIAL",
+        "count": 40
+      },
+      {
+        "from": "LATE",
+        "to": "MEDIAL",
+        "count": 32
+      },
+      {
+        "from": "MEDIAL",
+        "to": "LATE",
+        "count": 27
+      },
+      {
+        "from": "LATE",
+        "to": "LATE",
+        "count": 24
+      },
+      {
+        "from": "EARLY",
+        "to": "MEDIAL",
+        "count": 14
+      },
+      {
+        "from": "TERMINAL",
+        "to": "MEDIAL",
+        "count": 9
+      },
+      {
+        "from": "MEDIAL",
+        "to": "EARLY",
+        "count": 7
+      },
+      {
+        "from": "MEDIAL",
+        "to": "TERMINAL",
+        "count": 6
+      },
+      {
+        "from": "LATE",
+        "to": "INITIAL",
+        "count": 5
+      },
+      {
+        "from": "TERMINAL",
+        "to": "LATE",
+        "count": 5
+      },
+      {
+        "from": "EARLY",
+        "to": "LATE",
+        "count": 5
+      },
+      {
+        "from": "FINAL",
+        "to": "MEDIAL",
+        "count": 4
+      },
+      {
+        "from": "MEDIAL",
+        "to": "INITIAL",
+        "count": 4
+      },
+      {
+        "from": "INITIAL",
+        "to": "LATE",
+        "count": 4
+      },
+      {
+        "from": "TERMINAL",
+        "to": "EARLY",
+        "count": 4
+      },
+      {
+        "from": "TERMINAL",
+        "to": "INITIAL",
+        "count": 4
+      },
+      {
+        "from": "LATE",
+        "to": "TERMINAL",
+        "count": 4
+      },
+      {
+        "from": "TERMINAL",
+        "to": "TERMINAL",
+        "count": 4
+      },
+      {
+        "from": "LATE",
+        "to": "EARLY",
+        "count": 4
+      },
+      {
+        "from": "INITIAL",
+        "to": "MEDIAL",
+        "count": 3
+      }
+    ]
+  },
+  "verdict": "FL_CROSS_LINE_WEAK",
+  "explanation": "Weak cross-line FL correlation, likely folio-mediated (C681). No evidence of paragraph-level state tracking beyond shared folio context."
+}

@@ -1,0 +1,27 @@
+{
+  "real_b5": 0.09006101453424803,
+  "models": {
+    "M1": {
+      "mean_b5": 0.12919681849024708,
+      "pass_rate": 0.85
+    },
+    "M2_C1025": {
+      "mean_b5": 0.17584926623825275,
+      "pass_rate": 0.0,
+      "zero_cells": 876,
+      "delta_from_m1": 75
+    },
+    "M2_corrected": {
+      "mean_b5": 0.3198110457554958,
+      "pass_rate": 0.0,
+      "zero_cells": 1342,
+      "delta_from_m1": 541
+    }
+  },
+  "mapping_analysis": {
+    "extra_c1025_suppressions": 0,
+    "extra_corrected_suppressions": 466
+  },
+  "verdict": "B5_FAILURE_REAL",
+  "explanation": "M2 fails B5 even with corrected MIDDLE mapping. The forward-backward asymmetry is a genuine model limitation."
+}

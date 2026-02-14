@@ -1,0 +1,35 @@
+{
+  "T1_baseline": {
+    "real_b5": 0.09006101453424803,
+    "m1_mean_b5": 0.12919681849024708,
+    "m1_pass_rate": 0.85,
+    "m2_mean_b5": 0.12164816338227176,
+    "m2_pass_rate": 1.0,
+    "m2_m1_ratio": 0.9415724381127453,
+    "forbidden_pairs": 17,
+    "asymmetric_pairs": 1
+  },
+  "T2_sym_forbidden": {
+    "mean_b5": 0.11632567560657894,
+    "pass_rate": 1.0,
+    "gap_closed_pct": 16.850168406465148
+  },
+  "T3_prefix_correction": {
+    "mean_b5": 0.12888688329080744,
+    "pass_rate": 0.9,
+    "gap_closed_pct": -22.91666127691223
+  },
+  "T4_combined": {
+    "mean_b5": 0.12911455798506982,
+    "pass_rate": 1.0,
+    "gap_closed_pct": -23.63744394507199
+  },
+  "T5_alpha_sweep": {
+    "best_alpha": 0.9,
+    "best_b5": 0.0889783628616321,
+    "c1024_prefix_fraction": 0.2045454545454545
+  },
+  "verdict": "B5_CORRECTABLE",
+  "explanation": "Symmetric forbidden suppression corrects M2 B5 failure. M2-SymForbid achieves 100% B5 pass rate (B5=0.1163 vs real 0.0901). M2.5 would pass 14/15 = 93.3%.",
+  "updated_pass_rate": "14/15 = 93.3%"
+}
