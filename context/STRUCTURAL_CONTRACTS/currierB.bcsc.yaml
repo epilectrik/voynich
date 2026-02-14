@@ -1925,6 +1925,10 @@ provenance:
     - "C1024"  # Structural directionality: MIDDLE directional executor, PREFIX symmetric router
     - "C1025"  # Generative sufficiency: M2 (49-class Markov + forbidden) at 80%
     - "C1026"  # Grammar component necessity: class ordering + forbidden avoidance load-bearing
+    - "C1029"  # Section-parameterized grammar weights (section modulates transition weights at REGIME scale)
+    - "C1030"  # M2 gap decomposition: B4 misspecified, corrected 13/15; B5+C2 independent mechanisms
+    - "C1031"  # FL cross-line independence: within-line SAME 68.2% collapses to 27.9% cross-line
+    - "C1032"  # B5 asymmetry mechanism: forbidden suppression asymmetry + PREFIX routing needed
 
   affordance_system:
     - "C995"   # 9-bin affordance system

@@ -36,7 +36,7 @@ This document clarifies the distinction.
 - Within-line positional gradient (C777)
 - Tracks "where material IS" in state space
 - Present in ~25% of tokens across all 49 classes
-- Does not progress across lines (each line samples independently)
+- Does not progress across lines (each line samples independently; C1031)
 
 **Provenance:** C777, C770-C776, C785-C787
 

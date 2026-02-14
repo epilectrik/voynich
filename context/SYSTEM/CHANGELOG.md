@@ -4,6 +4,34 @@
 
 ---
 
+## Version 3.81 (2026-02-14) - B5 Asymmetry Mechanism (C1032)
+
+### Summary
+
+Diagnosis and attempted correction of M2's B5 forward-backward asymmetry failure. The B5 failure (JSD 0.178 vs real 0.090) is caused by asymmetric forbidden transition suppression: 16 of 17 forbidden pairs are one-directional (C111), making the M2 matrix more directional than real data. 15% detailed-balance blending corrects B5 to 0.111 (100% pass) but regresses B1 spectral gap (0.894 to 0.770, FAIL) and B3 (5 forbidden violations). Generic blending is too blunt — real data achieves low asymmetry AND high spectral gap simultaneously through PREFIX-specific routing (C1024). M2 pass rate remains 13/15 = 86.7%. True B5 fix requires PREFIX-factored generation architecture (projected 14/15 = 93.3%). 1 new constraint (C1032). Phase 354.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1032 | B5 Asymmetry Mechanism — Forbidden Suppression + PREFIX Routing | 2 |
+
+---
+
+## Version 3.80 (2026-02-14) - FL Cross-Line Independence (C1031)
+
+### Summary
+
+Direct test of FL stage continuity across line boundaries within paragraphs. FL state (C777) does NOT propagate across lines. Within-line SAME rate (68.2%, C786) collapses to 27.9% cross-line. Backward transitions jump from 4.5% to 44.3%. Endpoint correlation is zero (rho=0.003 narrow, p=0.963). Marginal mean-stage correlation (rho=0.063) has negligible effect and is folio-mediated (C681). Each line independently samples its FL stages — paragraphs are NOT multi-line FL trajectories. Confirms C670/C681 for the FL dimension specifically. 1 new constraint (C1031). Phase 353.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1031 | FL Cross-Line Independence | 2 |
+
+---
+
 ## Version 3.79 (2026-02-14) - Section Grammar Variation + M2 Gap Decomposition (C1029-C1030)
 
 ### Summary

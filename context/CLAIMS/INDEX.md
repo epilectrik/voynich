@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 895 validated constraints | **Version:** 3.79 | **Date:** 2026-02-14
+**Total:** 897 validated constraints | **Version:** 3.81 | **Date:** 2026-02-14
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2277,6 +2277,41 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - B5 gap (0.178 vs 0.046): M2's single directional Markov chain overestimates asymmetry; real text has PREFIX symmetric routing (C1024)
 - C2 gap: CC suffix-free rate is 100% (fully morphological constraint); EN suffix rate is 61% (highest); role-specific morphology is outside M2's scope
 - Verdict: SECTION_COMPARABLE_TO_REGIME + GAP_TWO_INDEPENDENT_MECHANISMS
+
+---
+
+### FL Cross-Line Independence (C1031) — Phase: FL_CROSS_LINE_CONTINUITY
+
+> **Summary:** FL stage (C777) does not propagate across line boundaries. Within-line FL coherence (68.2% SAME rate, C786) collapses to 27.9% at cross-line transitions. Backward transitions jump from 4.5% to 44.3%. Endpoint stage correlation is zero (rho=0.003, p=0.963 narrow; rho=0.032, p=0.216 broad). Marginal mean-stage correlation (rho=0.063, p=0.017) has negligible effect size and is consistent with folio-mediated coupling (C681). Each line independently samples its FL stages. Confirms C670/C681 for the FL dimension specifically.
+
+| ID | Description | Tier | Scope | Details |
+|----|-------------|------|-------|---------|
+| **1031** | **FL Cross-Line Independence** (endpoint rho=0.003 narrow/0.032 broad, both ns; SAME rate collapses 68.2%→27.9% cross-line; backward jumps 4.5%→44.3%; mean gap equals null; marginal mean-stage rho=0.063 is folio-mediated C681; confirms C670 for FL dimension) | 2 | B | -> [C1031_fl_cross_line_independence.md](C1031_fl_cross_line_independence.md) |
+
+**Phase findings:**
+- FL state tracking is strictly within-line; each line is a complete, independent FL assessment cycle
+- The within-line forward bias (5:1, C786) disappears entirely at line boundaries
+- Cross-line transitions are approximately uniform with backward bias from within-line positional gradient
+- No evidence of paragraph-level FL state tracking beyond shared folio context
+- Verdict: FL_CROSS_LINE_INDEPENDENT
+
+---
+
+### B5 Asymmetry Mechanism (C1032) — Phase: PREFIX_ASYMMETRY_CORRECTION
+
+> **Summary:** The M2 B5 failure (forward-backward JSD: 0.178 vs real 0.090) is caused by asymmetric forbidden transition suppression — 16 of 17 forbidden pairs are one-directional (C111). 15% detailed-balance blending corrects B5 to 0.111 (100% pass rate) but regresses B1 (spectral gap 0.770 vs 0.894, fails) and B3 (5 forbidden violations). Generic blending gains B5 but loses B1+B3 — net pass rate unchanged at 13/15. The real mechanism (PREFIX symmetric routing, C1024) achieves symmetry without reducing spectral structure. True B5 fix requires PREFIX-aware generation architecture.
+
+| ID | Description | Tier | Scope | Details |
+|----|-------------|------|-------|---------|
+| **1032** | **B5 Asymmetry Mechanism — Forbidden Suppression + PREFIX Routing** (M2 B5=0.178 vs real 0.090; 16/17 forbidden pairs one-directional; alpha=0.15 blending fixes B5=0.111 but regresses B1 spectral gap 0.894->0.770 and B3 5 violations; C1024 PREFIX fraction 20.5% consistent with 15% blending; M2 stays 13/15=86.7%; true fix needs PREFIX-factored generation) | 2 | B | -> [C1032_b5_asymmetry_mechanism.md](C1032_b5_asymmetry_mechanism.md) |
+
+**Phase findings:**
+- B5 failure is real, caused by asymmetric forbidden suppression (not a mapping artifact)
+- Generic detailed-balance blending at alpha=0.15 fixes B5 but regresses B1 and B3
+- The 15% blending needed is consistent with C1024's 20.5% PREFIX MI fraction (ratio 0.73)
+- Real data achieves low asymmetry AND high spectral gap simultaneously — generic blending cannot
+- True M2.5 fix requires PREFIX-factored generation (PREFIX symmetric, MIDDLE directional)
+- M2 pass rate remains 13/15 = 86.7%; projected 14/15 = 93.3% with PREFIX-aware generation
 
 ---
 

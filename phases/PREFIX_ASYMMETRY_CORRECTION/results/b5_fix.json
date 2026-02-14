@@ -1,0 +1,83 @@
+{
+  "real_b5": 0.09006101453424803,
+  "m2_mean_b5": 0.177608287061757,
+  "m25_mean_b5": 0.1114499412653707,
+  "m25_std_b5": 0.003594814040066584,
+  "m25_pass_rate": 1.0,
+  "optimal_alpha": 0.15000000000000002,
+  "sweep_results": [
+    {
+      "alpha": 0.0,
+      "mean_b5": 0.1775357673954608,
+      "std_b5": 0.0043104457689523475,
+      "pass_rate": 0.0
+    },
+    {
+      "alpha": 0.05,
+      "mean_b5": 0.14972584017708016,
+      "std_b5": 0.004756976229849613,
+      "pass_rate": 0.0
+    },
+    {
+      "alpha": 0.1,
+      "mean_b5": 0.12963591621471954,
+      "std_b5": 0.00463765866742369,
+      "pass_rate": 0.8
+    },
+    {
+      "alpha": 0.15000000000000002,
+      "mean_b5": 0.11005052508389437,
+      "std_b5": 0.004238004424797054,
+      "pass_rate": 1.0
+    },
+    {
+      "alpha": 0.2,
+      "mean_b5": 0.09603269128088054,
+      "std_b5": 0.003413640211976975,
+      "pass_rate": 1.0
+    },
+    {
+      "alpha": 0.25,
+      "mean_b5": 0.08212957315027128,
+      "std_b5": 0.003451809099512862,
+      "pass_rate": 1.0
+    },
+    {
+      "alpha": 0.30000000000000004,
+      "mean_b5": 0.07438624960273525,
+      "std_b5": 0.0030106739796050253,
+      "pass_rate": 1.0
+    },
+    {
+      "alpha": 0.35000000000000003,
+      "mean_b5": 0.06548123294232895,
+      "std_b5": 0.0020654325630735104,
+      "pass_rate": 1.0
+    },
+    {
+      "alpha": 0.4,
+      "mean_b5": 0.0586205524544499,
+      "std_b5": 0.002139824759363145,
+      "pass_rate": 1.0
+    },
+    {
+      "alpha": 0.45,
+      "mean_b5": 0.05626211135686001,
+      "std_b5": 0.002068831236254749,
+      "pass_rate": 1.0
+    },
+    {
+      "alpha": 0.5,
+      "mean_b5": 0.05468035820429582,
+      "std_b5": 0.0021279326387291363,
+      "pass_rate": 1.0
+    }
+  ],
+  "b1_spectral_gap": 0.7698049979942361,
+  "b3_violations": 5,
+  "b3_forbidden_cells_reintroduced": 77,
+  "c1024_prefix_fraction": 0.2045454545454545,
+  "verdict": "M2_5_CORRECTS_B5",
+  "explanation": "Partial detailed-balance symmetrization (alpha=0.15) corrects M2 B5 failure. M2.5 generates B5=0.1114 (real=0.0901, error=24%). M2.5 pass rate: 100%. Note: blending reintroduces 77 forbidden cells, causing 5 violations. B3 may need post-hoc filtering.",
+  "m25_projected_pass_rate": "14/15 = 93.3%"
+}
