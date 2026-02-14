@@ -4,6 +4,31 @@
 
 ---
 
+## Version 3.75 (2026-02-13) - Generative Sufficiency (C1025)
+
+### Summary
+
+Capstone generative simulation testing whether proven mechanisms can regenerate realistic B text. 5 models (M0 i.i.d. through M4 compositional), 15-test battery, 20 instantiations each. Key surprise: M0 (token frequency only) passes 73% of tests, revealing most structural tests measure marginal properties. Sufficiency frontier at M2 (49-class Markov + forbidden suppression, 80%). M4 (PREFIX-routed compositional generation) performs WORST (63%) because prefix×middle×suffix product space exceeds real vocabulary (4.2% hallucination). Macro-automaton M3 ties M2 but adds nothing (lossy projection). 2/5 predictions correct. 1 new constraint (C1025). Phase 348.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1025 | Generative Sufficiency — Class Markov + Forbidden Suppression Is Sufficient at M2 (80%) | 2 |
+
+### Key Findings
+
+**GENERATIVE_SUFFICIENCY (5 models × 15 tests):**
+- M0 i.i.d.: 11/15 (73%) — most tests are marginal (distributional)
+- M1 class Markov: 11.9/15 (79%) — adds spectral gap
+- M2 M1 + forbidden: 12/15 (80%) — **sufficiency frontier**
+- M3 6-state macro: 12/15 (80%) — ties M2, adds nothing
+- M4 compositional: 9.4/15 (63%) — WORST; hallucination from product space
+- B4, C2 universally failed = test specification issues
+- Verdict: GENERATIVE_SUFFICIENCY_AT_M2
+
+---
+
 ## Version 3.74 (2026-02-13) - Structural Directionality (C1024)
 
 ### Summary

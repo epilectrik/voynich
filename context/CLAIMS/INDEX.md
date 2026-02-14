@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 889 validated constraints | **Version:** 3.74 | **Date:** 2026-02-13
+**Total:** 890 validated constraints | **Version:** 3.75 | **Date:** 2026-02-13
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2156,6 +2156,22 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - T5: Entropy by ordinal — **PASS** (rho=-0.215, p=0.007; late paragraphs more concentrated)
 - T6: qo/chsh macro-state — FAIL (both >98% AXM; C863 gradient is within-AXM; informative)
 - Verdict: PARAGRAPH_MACRO_DYNAMICS_NEGATIVE — 1/6 passed. Paragraph dynamics operate within AXM, below the macro-automaton's resolution floor.
+
+---
+
+### Generative Sufficiency (C1025) — Phase: GENERATIVE_SUFFICIENCY
+
+| ID | Description | Tier | Scope | Details |
+|----|-------------|------|-------|---------|
+| **1025** | **Generative Sufficiency — Class Markov + Forbidden Suppression Is Sufficient at M2 (80%)** (M0 i.i.d. passes 11/15=73% revealing most tests are marginal; M2 49-class Markov + forbidden suppression = sufficiency frontier at 12/15=80%; M4 compositional generation WORST at 9.4/15=63% from 4.2% hallucination rate; macro-automaton M3 ties M2, adds nothing; B4/C2 universally failed = test specification issues; 2/5 predictions correct) | 2 | B | -> [C1025_generative_sufficiency.md](C1025_generative_sufficiency.md) |
+
+**Phase findings (5 models × 15 tests × 20 instantiations):**
+- M0 (i.i.d.): 11.0/15 (73%) — token frequency alone satisfies most tests
+- M1 (class Markov): 11.9/15 (79%) — adds B1 spectral gap
+- M2 (M1 + forbidden): 12.0/15 (80%) — **sufficiency frontier**, adds B3
+- M3 (6-state macro): 12.0/15 (80%) — ties M2, macro-automaton is lossy projection
+- M4 (compositional): 9.4/15 (63%) — WORST; prefix×middle×suffix product > real vocabulary
+- Verdict: GENERATIVE_SUFFICIENCY_AT_M2
 
 ---
 
