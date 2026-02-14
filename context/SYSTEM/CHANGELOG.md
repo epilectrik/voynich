@@ -4,6 +4,30 @@
 
 ---
 
+## Version 3.73 (2026-02-13) - Structural Necessity Ablation (C1023)
+
+### Summary
+
+Counterfactual surgery on 4 structural components (6 sub-tests) to determine which are load-bearing vs decorative for the 6-state macro-automaton (C1010). PREFIX→state content routing is the sole load-bearing component, creating 78-81% of non-random transition structure. FL split (-0.34%), gatekeepers (JSD 0.0014), within-state routing (0%), and REGIME conditioning (1.1%) are all decorative at the macro level. Methodological discovery: initial PREFIX shuffle was tautologically invariant (state determined by class, not PREFIX); fixed by resampling state from P(state|new_prefix). Structure loss manifests as spectral gap INCREASE (chain becomes random), not decrease. 1 new constraint (C1023). Phase 346.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1023 | Structural Necessity Ablation — PREFIX Routing Is Sole Load-Bearing Macro Component | 2 |
+
+### Key Findings
+
+**STRUCTURAL_NECESSITY_ABLATION (6 tests):**
+- T1: FL merge — DECORATIVE (spectral gap -0.34%, z=-2.39 vs null; statistically real but topologically negligible)
+- T2: Gatekeeper — DECORATIVE (exit JSD=0.0014, below null mean=0.0024; markers not mechanisms)
+- T3a: PREFIX within-state — DECORATIVE (0% structure loss)
+- T3b: PREFIX within-position — **LOAD-BEARING** (77.8% structure loss)
+- T3c: PREFIX global — **LOAD-BEARING** (80.7% structure loss)
+- T4: REGIME merge — DECORATIVE (1.1% gap difference; C979 confirmed)
+
+---
+
 ## Version 3.72 (2026-02-13) - Paragraph Macro-Dynamics (C1022) NEGATIVE
 
 ### Summary
