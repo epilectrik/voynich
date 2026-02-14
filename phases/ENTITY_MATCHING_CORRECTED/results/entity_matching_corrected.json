@@ -1,0 +1,340 @@
+{
+  "phase": "ENTITY_MATCHING_CORRECTED",
+  "tier": 3,
+  "status": "SPECULATIVE",
+  "date": "2026-01-14",
+  "corrections_applied": [
+    "Degree-to-regime mapping based on curriculum position",
+    "Using proposed folio order from gradient optimization"
+  ],
+  "mapping_comparison": {
+    "original": {
+      "1": "REGIME_1",
+      "2": "REGIME_2",
+      "3": "REGIME_3",
+      "4": "REGIME_4"
+    },
+    "corrected": {
+      "1": "REGIME_2",
+      "2": "REGIME_1",
+      "3": "REGIME_3",
+      "4": "REGIME_4"
+    }
+  },
+  "data_counts": {
+    "puff_chapters": 85,
+    "voynich_folios": 83,
+    "puff_by_degree": {
+      "1": 36,
+      "2": 31,
+      "3": 13,
+      "4": 5
+    },
+    "voynich_by_regime": {
+      "REGIME_2": 11,
+      "REGIME_1": 31,
+      "REGIME_4": 25,
+      "REGIME_3": 16
+    }
+  },
+  "corrected_results": {
+    "mean_score": 85.62441506160981,
+    "median_score": 97.7901,
+    "strong_matches": 61,
+    "moderate_matches": 82,
+    "permutation_test": {
+      "actual_total": 7106.826450113616,
+      "random_mean": 7106.826450113616,
+      "random_std": 0.0,
+      "p_value": 1.0,
+      "z_score": 0
+    },
+    "regime_match_rates": {
+      "REGIME_2": {
+        "total": 34,
+        "exact_matches": 11,
+        "match_rate": 0.3235294117647059
+      },
+      "REGIME_1": {
+        "total": 31,
+        "exact_matches": 31,
+        "match_rate": 1.0
+      },
+      "REGIME_3": {
+        "total": 13,
+        "exact_matches": 13,
+        "match_rate": 1.0
+      },
+      "REGIME_4": {
+        "total": 5,
+        "exact_matches": 5,
+        "match_rate": 1.0
+      }
+    },
+    "degree_positions": {
+      "1": {
+        "count": 34,
+        "mean_score": 67.54934166825055,
+        "mean_position": 35.088235294117645
+      },
+      "2": {
+        "count": 31,
+        "mean_score": 97.66138154635554,
+        "mean_position": 38.83870967741935
+      },
+      "3": {
+        "count": 13,
+        "mean_score": 98.66507734277495,
+        "mean_position": 72.61538461538461
+      },
+      "4": {
+        "count": 5,
+        "mean_score": 100,
+        "mean_position": 29
+      }
+    }
+  },
+  "original_results": {
+    "mean_score": 84.78000686423444,
+    "strong_matches": 61,
+    "moderate_matches": 83,
+    "permutation_test": {
+      "actual_total": 7036.740569731456,
+      "random_mean": 7036.200569731456,
+      "random_std": 3.2432882879754796,
+      "p_value": 0.973026973026973,
+      "z_score": 0.16649768754816477
+    }
+  },
+  "comparison": {
+    "mean_score_improvement": 0.8444081973753725,
+    "strong_match_improvement": 0,
+    "z_score_improvement": -0.16649768754816477,
+    "corrected_better": false,
+    "corrected_significant": false
+  },
+  "verdict": "NEITHER SIGNIFICANT",
+  "top_assignments": [
+    {
+      "puff_chapter": 1,
+      "puff_german": "Rosen",
+      "puff_category": "FLOWER",
+      "puff_degree": 1,
+      "expected_regime": "REGIME_2",
+      "voynich_folio": "f48r",
+      "actual_regime": "REGIME_2",
+      "curriculum_position": 1,
+      "score": 100
+    },
+    {
+      "puff_chapter": 2,
+      "puff_german": "Rosen die auff den hagendorn stehen",
+      "puff_category": "FLOWER",
+      "puff_degree": 1,
+      "expected_regime": "REGIME_2",
+      "voynich_folio": "f105r",
+      "actual_regime": "REGIME_2",
+      "curriculum_position": 3,
+      "score": 100
+    },
+    {
+      "puff_chapter": 3,
+      "puff_german": "Schnelbl\u00c5\u00afmen, Clapper rot rosen",
+      "puff_category": "FLOWER",
+      "puff_degree": 1,
+      "expected_regime": "REGIME_2",
+      "voynich_folio": "f115v",
+      "actual_regime": "REGIME_2",
+      "curriculum_position": 4,
+      "score": 100
+    },
+    {
+      "puff_chapter": 4,
+      "puff_german": "Lilien, wei\u00c3\u0178",
+      "puff_category": "FLOWER",
+      "puff_degree": 1,
+      "expected_regime": "REGIME_2",
+      "voynich_folio": "f86v5",
+      "actual_regime": "REGIME_2",
+      "curriculum_position": 5,
+      "score": 100
+    },
+    {
+      "puff_chapter": 5,
+      "puff_german": "Lilien, plaw",
+      "puff_category": "FLOWER",
+      "puff_degree": 1,
+      "expected_regime": "REGIME_2",
+      "voynich_folio": "f86v3",
+      "actual_regime": "REGIME_2",
+      "curriculum_position": 7,
+      "score": 100
+    },
+    {
+      "puff_chapter": 6,
+      "puff_german": "Sp\u00c3\u00b6cklilien oder veld gilgen",
+      "puff_category": "FLOWER",
+      "puff_degree": 1,
+      "expected_regime": "REGIME_2",
+      "voynich_folio": "f107r",
+      "actual_regime": "REGIME_2",
+      "curriculum_position": 9,
+      "score": 100
+    },
+    {
+      "puff_chapter": 7,
+      "puff_german": "Mayenpl\u00c5\u00afmen, Lilium convalium",
+      "puff_category": "FLOWER",
+      "puff_degree": 1,
+      "expected_regime": "REGIME_2",
+      "voynich_folio": "f113v",
+      "actual_regime": "REGIME_2",
+      "curriculum_position": 12,
+      "score": 100
+    },
+    {
+      "puff_chapter": 12,
+      "puff_german": "Ochsenzunge",
+      "puff_category": "HERB",
+      "puff_degree": 2,
+      "expected_regime": "REGIME_1",
+      "voynich_folio": "f106r",
+      "actual_regime": "REGIME_1",
+      "curriculum_position": 32,
+      "score": 100
+    },
+    {
+      "puff_chapter": 13,
+      "puff_german": "Porragen",
+      "puff_category": "HERB",
+      "puff_degree": 2,
+      "expected_regime": "REGIME_1",
+      "voynich_folio": "f114r",
+      "actual_regime": "REGIME_1",
+      "curriculum_position": 33,
+      "score": 100
+    },
+    {
+      "puff_chapter": 15,
+      "puff_german": "Wegerich, brait Wegerich",
+      "puff_category": "HERB",
+      "puff_degree": 2,
+      "expected_regime": "REGIME_1",
+      "voynich_folio": "f84v",
+      "actual_regime": "REGIME_1",
+      "curriculum_position": 34,
+      "score": 100
+    },
+    {
+      "puff_chapter": 16,
+      "puff_german": "Saurampffer",
+      "puff_category": "HERB",
+      "puff_degree": 2,
+      "expected_regime": "REGIME_1",
+      "voynich_folio": "f78v",
+      "actual_regime": "REGIME_1",
+      "curriculum_position": 35,
+      "score": 100
+    },
+    {
+      "puff_chapter": 17,
+      "puff_german": "Nachtschatten",
+      "puff_category": "HERB",
+      "puff_degree": 3,
+      "expected_regime": "REGIME_3",
+      "voynich_folio": "f95r1",
+      "actual_regime": "REGIME_3",
+      "curriculum_position": 70,
+      "score": 100
+    },
+    {
+      "puff_chapter": 18,
+      "puff_german": "Hir\u00c3\u0178en zungen",
+      "puff_category": "FERN",
+      "puff_degree": 2,
+      "expected_regime": "REGIME_1",
+      "voynich_folio": "f111r",
+      "actual_regime": "REGIME_1",
+      "curriculum_position": 37,
+      "score": 100
+    },
+    {
+      "puff_chapter": 19,
+      "puff_german": "Hau\u00c3\u0178wurtz",
+      "puff_category": "SUCCULENT",
+      "puff_degree": 2,
+      "expected_regime": "REGIME_1",
+      "voynich_folio": "f113r",
+      "actual_regime": "REGIME_1",
+      "curriculum_position": 38,
+      "score": 100
+    },
+    {
+      "puff_chapter": 20,
+      "puff_german": "Wegra\u00c3\u0178",
+      "puff_category": "HERB",
+      "puff_degree": 2,
+      "expected_regime": "REGIME_1",
+      "voynich_folio": "f112v",
+      "actual_regime": "REGIME_1",
+      "curriculum_position": 43,
+      "score": 100
+    },
+    {
+      "puff_chapter": 21,
+      "puff_german": "Brunellen",
+      "puff_category": "HERB",
+      "puff_degree": 2,
+      "expected_regime": "REGIME_1",
+      "voynich_folio": "f76v",
+      "actual_regime": "REGIME_1",
+      "curriculum_position": 46,
+      "score": 100
+    },
+    {
+      "puff_chapter": 22,
+      "puff_german": "Erdtrauch oder Centaur",
+      "puff_category": "HERB",
+      "puff_degree": 2,
+      "expected_regime": "REGIME_1",
+      "voynich_folio": "f106v",
+      "actual_regime": "REGIME_1",
+      "curriculum_position": 48,
+      "score": 100
+    },
+    {
+      "puff_chapter": 23,
+      "puff_german": "Steinbrech",
+      "puff_category": "HERB",
+      "puff_degree": 2,
+      "expected_regime": "REGIME_1",
+      "voynich_folio": "f84r",
+      "actual_regime": "REGIME_1",
+      "curriculum_position": 50,
+      "score": 100
+    },
+    {
+      "puff_chapter": 24,
+      "puff_german": "Abschlag",
+      "puff_category": "BULB",
+      "puff_degree": 3,
+      "expected_regime": "REGIME_3",
+      "voynich_folio": "f116r",
+      "actual_regime": "REGIME_3",
+      "curriculum_position": 74,
+      "score": 100
+    },
+    {
+      "puff_chapter": 25,
+      "puff_german": "Pappel",
+      "puff_category": "HERB",
+      "puff_degree": 2,
+      "expected_regime": "REGIME_1",
+      "voynich_folio": "f111v",
+      "actual_regime": "REGIME_1",
+      "curriculum_position": 57,
+      "score": 100
+    }
+  ],
+  "interpretation": "Curriculum-corrected mapping does not show significant improvement. Z-score improved from 0.17 to 0.00. This does not support the curriculum hypothesis."
+}

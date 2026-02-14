@@ -1,0 +1,36 @@
+{
+  "test": "TEST 1: P-Text Reclassification",
+  "status": "COMPLETE",
+  "tokens": {
+    "currier_a": 11415,
+    "currier_b": 23243,
+    "azc_total": 3299,
+    "azc_p_text": 398,
+    "azc_diagram": 2901
+  },
+  "vocabulary": {
+    "currier_a": 3446,
+    "currier_b": 4946,
+    "p_text": 300,
+    "azc_diagram": 1540
+  },
+  "similarities": {
+    "jaccard_p_vs_a": 0.050476724621424565,
+    "jaccard_p_vs_diagram": 0.07791446983011131,
+    "middle_cosine_p_vs_a": 0.8387447551756564,
+    "middle_cosine_p_vs_diagram": 0.9244227484681179,
+    "prefix_cosine_p_vs_a": 0.9463031871588079,
+    "prefix_cosine_p_vs_diagram": 0.776852373067938
+  },
+  "exclusive_vocabulary": {
+    "shared_with_a_only": 57,
+    "shared_with_diagram_only": 10,
+    "ratio_a_to_diagram": 5.7
+  },
+  "scores": {
+    "a_like": 4,
+    "azc_like": 2
+  },
+  "classification": "A-ON-AZC-FOLIO",
+  "action": "Reclassify P-text as Currier A; update C300/C301 counts"
+}
