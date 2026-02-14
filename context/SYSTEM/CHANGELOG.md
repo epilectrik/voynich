@@ -4,6 +4,30 @@
 
 ---
 
+## Version 3.76 (2026-02-13) - Grammar Component Necessity (C1026)
+
+### Summary
+
+Ablation necessity analysis at the 49-class level — the reverse of Phase 348's sufficiency test. 5 ablation conditions on real B corpus (100 shuffles each, 100 bootstrap resamples, >2sigma break threshold) with 10 topology-sensitive metrics. Class ordering within macro-states is LOAD-BEARING (5/10 breaks, spectral gap z=8.85), proving the 49-class ordering carries sequential structure the macro-automaton doesn't capture. Forbidden pair avoidance is LOAD-BEARING (4/10 breaks) and shapes directional asymmetry. Token identity within class is PARTIAL (2/10 breaks) — MIDDLE-level forbidden constraints leak through class boundaries. 4/10 topology-sensitive metrics are actually DISTRIBUTIONAL (survive all ablations). State partition and role partition are structurally equivalent. Combined with C1025: the 49-class transition matrix + forbidden suppression is both sufficient AND necessary. 1 new constraint (C1026). Phase 349.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1026 | Grammar Component Necessity — Class Ordering and Forbidden Avoidance Are Load-Bearing; Token Identity Is Partial | 2 |
+
+### Key Findings
+
+**GRAMMAR_COMPONENT_NECESSITY (5 ablations x 10 metrics):**
+- (a) Forbidden injection: LOAD_BEARING (4/10 breaks; bigram diversity + fwd-rev JSD)
+- (b) Subset forbidden: LOAD_BEARING (3/10 breaks)
+- (c) Class shuffle in state: LOAD_BEARING (5/10 breaks; spectral gap z=8.85)
+- (d) Class shuffle in role: LOAD_BEARING (5/10 breaks; equivalent to c)
+- (e) Token shuffle in class: PARTIAL (2/10; MIDDLE forbidden leak z=3.51)
+- Metric classification: 4 DISTRIBUTIONAL, 2 SEQUENTIAL, 1 TOPOLOGICAL, 3 COMPOUND
+
+---
+
 ## Version 3.75 (2026-02-13) - Generative Sufficiency (C1025)
 
 ### Summary
