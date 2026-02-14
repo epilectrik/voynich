@@ -6,7 +6,7 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 
 ## Project Status
 
-**Analysis: CLOSED** | **Structural inspection: FROZEN** | **Version: 3.71**
+**Core model: CLOSED** | **Characterization: ACTIVE** | **Version: 3.71**
 
 | Metric | Value |
 |--------|-------|
