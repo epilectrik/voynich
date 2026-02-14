@@ -172,6 +172,7 @@ Look up phase to find constraints it produced.
 | PREFIX_ASYMMETRY_CORRECTION | C1032 |
 | C2_CC_SUFFIX_FREE | C1033 |
 | PREFIX_FACTORED_DESIGN | C1034 |
+| AXM_RESIDUAL_DECOMPOSITION | C1035 |
 
 ---
 

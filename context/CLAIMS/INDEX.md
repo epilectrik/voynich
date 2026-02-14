@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 899 validated constraints | **Version:** 3.83 | **Date:** 2026-02-14
+**Total:** 900 validated constraints | **Version:** 3.84 | **Date:** 2026-02-14
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2346,6 +2346,23 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - Second-order class chain makes B5 WORSE (higher-order context amplifies directional patterns)
 - Two key negative results: PREFIX routing cannot be accessed through generation factoring; blending fails under heavy forbidden mapping
 - With B4 (C1030) + C2 (C1033) + B5 (this) corrections, M2 achieves 15/15 = 100%
+
+---
+
+### AXM Residual Irreducibility (C1035) — Phase: AXM_RESIDUAL_DECOMPOSITION
+
+> Direct attack on C1017's 40% unexplained AXM self-transition variance. Six pre-registered folio-level predictors tested: paragraph count (C855), HT density (C800), gatekeeper fraction (C1007), QO fraction (C605), vocabulary size, line count. Clean negative result: 0/7 predictions passed. No predictor adds incremental R-squared beyond C1017 baseline. Random forest finds no non-linear signal. C1017 baseline moderately overfit (LOO gap 0.132). The residual is genuine program-specific free variation consistent with C458 recovery freedom.
+
+| ID | Description | Tier | Scope | Details |
+|----|-------------|------|-------|---------|
+| **1035** | **AXM Residual Irreducible** (0/7 PASS; all 6 predictors dR2 < 0.013; RF CV R2 = -0.149; LOO gap 0.132; residual = free design space per C458/C980) | 2 | B | -> [C1035_axm_residual_irreducible.md](C1035_axm_residual_irreducible.md) |
+
+**Phase findings:**
+- All 6 predictors have strong raw AXM correlations (rho up to 0.446) but ZERO residual signal (all |rho| < 0.17)
+- Predictors are entirely absorbed by existing model (REGIME, section, PREFIX entropy, hazard density, bridge PC1)
+- C1017 baseline LOO CV R2 = 0.433 (training 0.564, gap 0.132) — true explained variance is ~43%
+- Random forest negative (CV R2 = -0.149, permutation p = 0.42)
+- The ~57% residual is the grammar's free design space
 
 ---
 
