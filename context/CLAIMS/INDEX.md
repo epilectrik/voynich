@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 888 validated constraints | **Version:** 3.73 | **Date:** 2026-02-13
+**Total:** 889 validated constraints | **Version:** 3.74 | **Date:** 2026-02-13
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2141,6 +2141,12 @@ These files contain detailed constraint documentation. Constraint ranges are app
 | ID | Description | Tier | Scope | Details |
 |----|-------------|------|-------|---------|
 | **1023** | **Structural Necessity Ablation — PREFIX Routing Is Sole Load-Bearing Macro Component** (PREFIX→state content routing: 78-81% of non-random structure destroyed by shuffle+reassignment; FL merge: -0.34% spectral gap; gatekeeper JSD=0.0014, z=-0.70 vs null; within-state routing: 0% structure loss; REGIME pooling: 1.1% gap difference; hierarchy: PREFIX routing >> FL ≈ gatekeepers ≈ REGIME; 3/6 pre-registered predictions correct on verdict, overall hierarchy confirmed) | 2 | B | -> [C1023_structural_necessity_ablation.md](C1023_structural_necessity_ablation.md) |
+
+### Structural Directionality (C1024) — Phase: STRUCTURAL_DIRECTIONALITY
+
+| ID | Description | Tier | Scope | Details |
+|----|-------------|------|-------|---------|
+| **1024** | **Structural Directionality — MIDDLE Carries Execution Asymmetry, PREFIX Is Symmetric Router** (MIDDLE asymmetry 0.070 bits, PREFIX 0.018 bits, ratio 0.25x; FL role highest per-class JSD 0.311; class-level bigram JSD=0.089 confirming C886; null control retains 64% of JSD from sparsity; resolves C391/C886 tension: PREFIX symmetric routing + MIDDLE directional execution = symmetric constraints with directional probabilities; 1/5 predictions correct) | 2 | B | -> [C1024_structural_directionality.md](C1024_structural_directionality.md) |
 
 **Phase findings (6 tests):**
 - T1: Header vs body — FAIL (AXM elevated +2.8pp, not CC/AXm; informative)
