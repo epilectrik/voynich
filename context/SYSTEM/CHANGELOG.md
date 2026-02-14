@@ -4,6 +4,21 @@
 
 ---
 
+## Version 3.79 (2026-02-14) - Section Grammar Variation + M2 Gap Decomposition (C1029-C1030)
+
+### Summary
+
+Two-part investigation. Part A: Section modulates 49-class transition weights at the same scale as REGIME (mean pairwise JSD: section 0.325 vs REGIME 0.320, ratio 1.016x). Topology is shared across sections (zero section-only transitions). 42.6% of classes are section-dependent. Role self-loop ordering varies by section (BIO: EN > FQ > FL; COSMO: FQ > FL > EN). Extends C979 to the section dimension. Part B: Phase 348's B4 test is misspecified — M2 trivially reproduces real self-loop rates (identical by construction). Corrected M2 pass rate: 13/15 = 86.7% (not 80%). The remaining 2 failures (B5 forward-backward asymmetry, C2 CC suffix-free rate) are independent mechanisms: B5 needs PREFIX symmetric routing (C1024), C2 needs role-specific morphological constraints. 2 new constraints (C1029-C1030). Phase 352.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1029 | Section-Parameterized Grammar Weights | 2 |
+| C1030 | M2 Gap Decomposition — Two Independent Mechanisms | 2 |
+
+---
+
 ## Version 3.78 (2026-02-14) - Vocabulary Curation Rule (C1028)
 
 ### Summary

@@ -1,0 +1,892 @@
+{
+  "phase": "SECTION_GRAMMAR_VARIATION",
+  "phase_number": 352,
+  "part_a_section_grammar": {
+    "pairwise_section_jsd": {
+      "BIO_vs_COSMO": 0.377772,
+      "BIO_vs_HERBAL": 0.307158,
+      "BIO_vs_STARS_RECIPE": 0.237826,
+      "COSMO_vs_HERBAL": 0.399219,
+      "COSMO_vs_STARS_RECIPE": 0.351961,
+      "HERBAL_vs_STARS_RECIPE": 0.273172
+    },
+    "pairwise_regime_jsd": {
+      "REGIME_1_vs_REGIME_2": 0.328983,
+      "REGIME_1_vs_REGIME_3": 0.216121,
+      "REGIME_1_vs_REGIME_4": 0.323037,
+      "REGIME_2_vs_REGIME_3": 0.339367,
+      "REGIME_2_vs_REGIME_4": 0.390069,
+      "REGIME_3_vs_REGIME_4": 0.319693
+    },
+    "section_vs_global_jsd": {
+      "BIO": 0.139081,
+      "COSMO": 0.300565,
+      "HERBAL": 0.187778,
+      "STARS_RECIPE": 0.060236
+    },
+    "mean_section_jsd": 0.324518,
+    "mean_regime_jsd": 0.319545,
+    "section_jsd_to_regime_jsd_ratio": 1.016,
+    "topology": {
+      "BIO": {
+        "nonzero_transitions": 1053,
+        "shared_with_global": 1053,
+        "section_only": 0,
+        "missing_from_section": 673,
+        "topology_overlap": 0.6101
+      },
+      "COSMO": {
+        "nonzero_transitions": 557,
+        "shared_with_global": 557,
+        "section_only": 0,
+        "missing_from_section": 1169,
+        "topology_overlap": 0.3227
+      },
+      "HERBAL": {
+        "nonzero_transitions": 893,
+        "shared_with_global": 893,
+        "section_only": 0,
+        "missing_from_section": 833,
+        "topology_overlap": 0.5174
+      },
+      "STARS_RECIPE": {
+        "nonzero_transitions": 1369,
+        "shared_with_global": 1369,
+        "section_only": 0,
+        "missing_from_section": 357,
+        "topology_overlap": 0.7932
+      },
+      "global": {
+        "nonzero_transitions": 1726
+      }
+    },
+    "chi2_per_class": {
+      "class_2_AUXILIARY": {
+        "chi2": 78.86,
+        "p": 0.085706,
+        "dof": 63,
+        "significant": "False",
+        "total_transitions": 45
+      },
+      "class_3_AUXILIARY": {
+        "chi2": 74.64,
+        "p": 0.392356,
+        "dof": 72,
+        "significant": "False",
+        "total_transitions": 60
+      },
+      "class_4_AUXILIARY": {
+        "chi2": 114.94,
+        "p": 0.305771,
+        "dof": 108,
+        "significant": "False",
+        "total_transitions": 134
+      },
+      "class_5_AUXILIARY": {
+        "chi2": 117.15,
+        "p": 0.196558,
+        "dof": 105,
+        "significant": "False",
+        "total_transitions": 111
+      },
+      "class_6_AUXILIARY": {
+        "chi2": 103.13,
+        "p": 0.757822,
+        "dof": 114,
+        "significant": "False",
+        "total_transitions": 193
+      },
+      "class_7_FLOW_OPERATOR": {
+        "chi2": 141.29,
+        "p": 0.166377,
+        "dof": 126,
+        "significant": "False",
+        "total_transitions": 426
+      },
+      "class_8_ENERGY_OPERATOR": {
+        "chi2": 228.24,
+        "p": 2e-06,
+        "dof": 138,
+        "significant": "True",
+        "total_transitions": 984
+      },
+      "class_9_FREQUENT_OPERATOR": {
+        "chi2": 199.17,
+        "p": 0.00051,
+        "dof": 138,
+        "significant": "True",
+        "total_transitions": 610
+      },
+      "class_10_CORE_CONTROL": {
+        "chi2": 166.14,
+        "p": 0.023649,
+        "dof": 132,
+        "significant": "True",
+        "total_transitions": 302
+      },
+      "class_11_CORE_CONTROL": {
+        "chi2": 154.25,
+        "p": 0.029614,
+        "dof": 123,
+        "significant": "True",
+        "total_transitions": 406
+      },
+      "class_13_FREQUENT_OPERATOR": {
+        "chi2": 284.73,
+        "p": 0.0,
+        "dof": 138,
+        "significant": "True",
+        "total_transitions": 1161
+      },
+      "class_14_FREQUENT_OPERATOR": {
+        "chi2": 189.88,
+        "p": 0.000392,
+        "dof": 129,
+        "significant": "True",
+        "total_transitions": 685
+      },
+      "class_15_AUXILIARY": {
+        "chi2": 97.33,
+        "p": 0.068408,
+        "dof": 78,
+        "significant": "False",
+        "total_transitions": 66
+      },
+      "class_16_AUXILIARY": {
+        "chi2": 100.55,
+        "p": 0.278307,
+        "dof": 93,
+        "significant": "False",
+        "total_transitions": 90
+      },
+      "class_17_AUXILIARY": {
+        "chi2": 148.0,
+        "p": 0.027828,
+        "dof": 117,
+        "significant": "True",
+        "total_transitions": 280
+      },
+      "class_18_AUXILIARY": {
+        "chi2": 118.44,
+        "p": 0.12698,
+        "dof": 102,
+        "significant": "False",
+        "total_transitions": 145
+      },
+      "class_19_AUXILIARY": {
+        "chi2": 62.06,
+        "p": 0.9652,
+        "dof": 84,
+        "significant": "False",
+        "total_transitions": 68
+      },
+      "class_20_AUXILIARY": {
+        "chi2": 98.82,
+        "p": 0.651357,
+        "dof": 105,
+        "significant": "False",
+        "total_transitions": 192
+      },
+      "class_21_AUXILIARY": {
+        "chi2": 85.29,
+        "p": 0.267788,
+        "dof": 78,
+        "significant": "False",
+        "total_transitions": 110
+      },
+      "class_22_AUXILIARY": {
+        "chi2": 60.12,
+        "p": 0.3634,
+        "dof": 57,
+        "significant": "False",
+        "total_transitions": 45
+      },
+      "class_23_FREQUENT_OPERATOR": {
+        "chi2": 137.35,
+        "p": 0.096285,
+        "dof": 117,
+        "significant": "False",
+        "total_transitions": 338
+      },
+      "class_24_AUXILIARY": {
+        "chi2": 184.61,
+        "p": 0.001714,
+        "dof": 132,
+        "significant": "True",
+        "total_transitions": 565
+      },
+      "class_25_AUXILIARY": {
+        "chi2": 81.28,
+        "p": 0.732959,
+        "dof": 90,
+        "significant": "False",
+        "total_transitions": 100
+      },
+      "class_26_AUXILIARY": {
+        "chi2": 97.82,
+        "p": 0.677631,
+        "dof": 105,
+        "significant": "False",
+        "total_transitions": 160
+      },
+      "class_27_AUXILIARY": {
+        "chi2": 126.02,
+        "p": 0.268054,
+        "dof": 117,
+        "significant": "False",
+        "total_transitions": 207
+      },
+      "class_28_AUXILIARY": {
+        "chi2": 209.46,
+        "p": 0.000162,
+        "dof": 141,
+        "significant": "True",
+        "total_transitions": 616
+      },
+      "class_29_AUXILIARY": {
+        "chi2": 239.4,
+        "p": 0.0,
+        "dof": 138,
+        "significant": "True",
+        "total_transitions": 790
+      },
+      "class_30_FLOW_OPERATOR": {
+        "chi2": 155.06,
+        "p": 0.15215,
+        "dof": 138,
+        "significant": "False",
+        "total_transitions": 493
+      },
+      "class_31_ENERGY_OPERATOR": {
+        "chi2": 213.98,
+        "p": 3.6e-05,
+        "dof": 138,
+        "significant": "True",
+        "total_transitions": 841
+      },
+      "class_32_ENERGY_OPERATOR": {
+        "chi2": 192.46,
+        "p": 0.000127,
+        "dof": 126,
+        "significant": "True",
+        "total_transitions": 742
+      },
+      "class_33_ENERGY_OPERATOR": {
+        "chi2": 315.0,
+        "p": 0.0,
+        "dof": 141,
+        "significant": "True",
+        "total_transitions": 1740
+      },
+      "class_34_ENERGY_OPERATOR": {
+        "chi2": 322.75,
+        "p": 0.0,
+        "dof": 141,
+        "significant": "True",
+        "total_transitions": 1056
+      },
+      "class_35_ENERGY_OPERATOR": {
+        "chi2": 122.79,
+        "p": 0.209259,
+        "dof": 111,
+        "significant": "False",
+        "total_transitions": 248
+      },
+      "class_36_ENERGY_OPERATOR": {
+        "chi2": 135.74,
+        "p": 0.03665,
+        "dof": 108,
+        "significant": "True",
+        "total_transitions": 235
+      },
+      "class_37_ENERGY_OPERATOR": {
+        "chi2": 51.72,
+        "p": 0.844099,
+        "dof": 63,
+        "significant": "False",
+        "total_transitions": 49
+      },
+      "class_38_FLOW_OPERATOR": {
+        "chi2": 73.25,
+        "p": 0.340609,
+        "dof": 69,
+        "significant": "False",
+        "total_transitions": 48
+      },
+      "class_39_ENERGY_OPERATOR": {
+        "chi2": 141.77,
+        "p": 0.039949,
+        "dof": 114,
+        "significant": "True",
+        "total_transitions": 202
+      },
+      "class_40_FLOW_OPERATOR": {
+        "chi2": 70.69,
+        "p": 0.5215,
+        "dof": 72,
+        "significant": "False",
+        "total_transitions": 60
+      },
+      "class_41_ENERGY_OPERATOR": {
+        "chi2": 65.28,
+        "p": 0.847485,
+        "dof": 78,
+        "significant": "False",
+        "total_transitions": 69
+      },
+      "class_42_ENERGY_OPERATOR": {
+        "chi2": 56.19,
+        "p": 0.615845,
+        "dof": 60,
+        "significant": "False",
+        "total_transitions": 41
+      },
+      "class_43_ENERGY_OPERATOR": {
+        "chi2": 96.12,
+        "p": 0.563305,
+        "dof": 99,
+        "significant": "False",
+        "total_transitions": 106
+      },
+      "class_44_ENERGY_OPERATOR": {
+        "chi2": 95.76,
+        "p": 0.009763,
+        "dof": 66,
+        "significant": "True",
+        "total_transitions": 40
+      },
+      "class_45_ENERGY_OPERATOR": {
+        "chi2": 55.49,
+        "p": 0.640982,
+        "dof": 60,
+        "significant": "False",
+        "total_transitions": 32
+      },
+      "class_46_ENERGY_OPERATOR": {
+        "chi2": 135.89,
+        "p": 0.022884,
+        "dof": 105,
+        "significant": "True",
+        "total_transitions": 193
+      },
+      "class_47_ENERGY_OPERATOR": {
+        "chi2": 210.79,
+        "p": 0.0,
+        "dof": 114,
+        "significant": "True",
+        "total_transitions": 231
+      },
+      "class_48_ENERGY_OPERATOR": {
+        "chi2": 108.04,
+        "p": 0.251205,
+        "dof": 99,
+        "significant": "False",
+        "total_transitions": 94
+      },
+      "class_49_ENERGY_OPERATOR": {
+        "chi2": 124.56,
+        "p": 0.009314,
+        "dof": 90,
+        "significant": "True",
+        "total_transitions": 123
+      }
+    },
+    "chi2_summary": {
+      "tested_classes": 47,
+      "significant_classes": 20,
+      "fraction_significant": 0.426
+    },
+    "self_loop_rates": {
+      "BIO": 0.0633,
+      "COSMO": 0.0546,
+      "HERBAL": 0.0431,
+      "STARS_RECIPE": 0.066,
+      "GLOBAL": 0.0607
+    },
+    "class_distribution_jsd": {
+      "BIO": 0.018022,
+      "COSMO": 0.026493,
+      "HERBAL": 0.019691,
+      "STARS_RECIPE": 0.006386
+    },
+    "spectral_gaps": {
+      "BIO": 0.8396,
+      "COSMO": 0.7083,
+      "HERBAL": 0.8493,
+      "STARS_RECIPE": 0.8282,
+      "GLOBAL": 0.8117
+    }
+  },
+  "part_b_gap_decomposition": {
+    "B4_role_rank_order": {
+      "real_self_rates": {
+        "FREQUENT_OPERATOR": {
+          "self_transitions": 273,
+          "total_transitions": 2868,
+          "self_rate": 0.0952
+        },
+        "FLOW_OPERATOR": {
+          "self_transitions": 53,
+          "total_transitions": 1069,
+          "self_rate": 0.0496
+        },
+        "ENERGY_OPERATOR": {
+          "self_transitions": 500,
+          "total_transitions": 7186,
+          "self_rate": 0.0696
+        },
+        "CORE_CONTROL": {
+          "self_transitions": 14,
+          "total_transitions": 734,
+          "self_rate": 0.0191
+        },
+        "AUXILIARY": {
+          "self_transitions": 129,
+          "total_transitions": 4115,
+          "self_rate": 0.0313
+        }
+      },
+      "real_ordering": "FQ(0.0952) > FL(0.0496) > EN(0.0696)",
+      "real_ordering_holds": false,
+      "m2_weighted_self_rates": {
+        "FREQUENT_OPERATOR": 0.0952,
+        "FLOW_OPERATOR": 0.0493,
+        "ENERGY_OPERATOR": 0.0695
+      },
+      "m2_ordering_holds": "False",
+      "per_class_detail": {
+        "AUXILIARY": [
+          {
+            "class": 29,
+            "self_rate": 0.0507,
+            "count": 808
+          },
+          {
+            "class": 24,
+            "self_rate": 0.0484,
+            "count": 578
+          },
+          {
+            "class": 2,
+            "self_rate": 0.0435,
+            "count": 46
+          },
+          {
+            "class": 28,
+            "self_rate": 0.0417,
+            "count": 624
+          },
+          {
+            "class": 17,
+            "self_rate": 0.0385,
+            "count": 286
+          },
+          {
+            "class": 27,
+            "self_rate": 0.0332,
+            "count": 211
+          },
+          {
+            "class": 6,
+            "self_rate": 0.0203,
+            "count": 197
+          },
+          {
+            "class": 20,
+            "self_rate": 0.0203,
+            "count": 197
+          },
+          {
+            "class": 19,
+            "self_rate": 0.0137,
+            "count": 73
+          },
+          {
+            "class": 18,
+            "self_rate": 0.0124,
+            "count": 161
+          },
+          {
+            "class": 16,
+            "self_rate": 0.0108,
+            "count": 93
+          },
+          {
+            "class": 4,
+            "self_rate": 0.0071,
+            "count": 140
+          },
+          {
+            "class": 26,
+            "self_rate": 0.0061,
+            "count": 165
+          },
+          {
+            "class": 1,
+            "self_rate": 0.0,
+            "count": 38
+          },
+          {
+            "class": 3,
+            "self_rate": 0.0,
+            "count": 61
+          },
+          {
+            "class": 5,
+            "self_rate": 0.0,
+            "count": 112
+          },
+          {
+            "class": 15,
+            "self_rate": 0.0,
+            "count": 67
+          },
+          {
+            "class": 21,
+            "self_rate": 0.0,
+            "count": 110
+          },
+          {
+            "class": 22,
+            "self_rate": 0.0,
+            "count": 45
+          },
+          {
+            "class": 25,
+            "self_rate": 0.0,
+            "count": 103
+          }
+        ],
+        "FLOW_OPERATOR": [
+          {
+            "class": 7,
+            "self_rate": 0.0901,
+            "count": 433
+          },
+          {
+            "class": 30,
+            "self_rate": 0.027,
+            "count": 519
+          },
+          {
+            "class": 38,
+            "self_rate": 0.0,
+            "count": 49
+          },
+          {
+            "class": 40,
+            "self_rate": 0.0,
+            "count": 68
+          }
+        ],
+        "ENERGY_OPERATOR": [
+          {
+            "class": 33,
+            "self_rate": 0.1634,
+            "count": 1756
+          },
+          {
+            "class": 46,
+            "self_rate": 0.0631,
+            "count": 206
+          },
+          {
+            "class": 8,
+            "self_rate": 0.0568,
+            "count": 1003
+          },
+          {
+            "class": 34,
+            "self_rate": 0.0533,
+            "count": 1089
+          },
+          {
+            "class": 32,
+            "self_rate": 0.0515,
+            "count": 757
+          },
+          {
+            "class": 31,
+            "self_rate": 0.0416,
+            "count": 866
+          },
+          {
+            "class": 35,
+            "self_rate": 0.0236,
+            "count": 254
+          },
+          {
+            "class": 49,
+            "self_rate": 0.0081,
+            "count": 124
+          },
+          {
+            "class": 39,
+            "self_rate": 0.0048,
+            "count": 207
+          },
+          {
+            "class": 47,
+            "self_rate": 0.0042,
+            "count": 236
+          },
+          {
+            "class": 36,
+            "self_rate": 0.0041,
+            "count": 243
+          },
+          {
+            "class": 37,
+            "self_rate": 0.0,
+            "count": 50
+          },
+          {
+            "class": 41,
+            "self_rate": 0.0,
+            "count": 71
+          },
+          {
+            "class": 42,
+            "self_rate": 0.0,
+            "count": 43
+          },
+          {
+            "class": 43,
+            "self_rate": 0.0,
+            "count": 108
+          },
+          {
+            "class": 44,
+            "self_rate": 0.0,
+            "count": 43
+          },
+          {
+            "class": 45,
+            "self_rate": 0.0,
+            "count": 33
+          },
+          {
+            "class": 48,
+            "self_rate": 0.0,
+            "count": 97
+          }
+        ],
+        "FREQUENT_OPERATOR": [
+          {
+            "class": 13,
+            "self_rate": 0.121,
+            "count": 1182
+          },
+          {
+            "class": 9,
+            "self_rate": 0.107,
+            "count": 626
+          },
+          {
+            "class": 14,
+            "self_rate": 0.0699,
+            "count": 701
+          },
+          {
+            "class": 23,
+            "self_rate": 0.039,
+            "count": 359
+          }
+        ],
+        "CORE_CONTROL": [
+          {
+            "class": 11,
+            "self_rate": 0.0214,
+            "count": 420
+          },
+          {
+            "class": 10,
+            "self_rate": 0.0159,
+            "count": 314
+          }
+        ]
+      },
+      "diagnosis": "B4 fails because the ROLE-level self-loop ordering is an emergent constraint from class composition. M2 treats classes independently \u2014 the within-role self-loop rates must aggregate correctly, but the stochastic class sampling doesn't preserve the role-level rank ordering."
+    },
+    "B5_forward_backward_jsd": {
+      "real_jsd": 0.046215,
+      "m2_jsd": 0.1778,
+      "ratio": 3.847,
+      "per_role_asymmetry": {
+        "FREQUENT_OPERATOR": {
+          "jsd": 0.029585,
+          "forward_count": 2868,
+          "backward_count": 2874
+        },
+        "FLOW_OPERATOR": {
+          "jsd": 0.06238,
+          "forward_count": 1069,
+          "backward_count": 1075
+        },
+        "ENERGY_OPERATOR": {
+          "jsd": 0.039967,
+          "forward_count": 7186,
+          "backward_count": 7184
+        },
+        "CORE_CONTROL": {
+          "jsd": 0.061563,
+          "forward_count": 734,
+          "backward_count": 734
+        },
+        "AUXILIARY": {
+          "jsd": 0.061794,
+          "forward_count": 4115,
+          "backward_count": 4105
+        }
+      },
+      "per_section_asymmetry": {
+        "H": 0.167937,
+        "B": 0.086145,
+        "C": 0.245282,
+        "S": 0.085862
+      },
+      "diagnosis": "B5 fails because M2 overestimates forward-backward asymmetry (0.178 vs 0.090). The real text has a symmetrizing mechanism \u2014 likely PREFIX's symmetric routing (C1024: MI asymmetry 0.018 bits for PREFIX vs 0.070 for MIDDLE). M2 generates sequences from a single directional Markov chain, producing more asymmetry than the real text's bidirectional constraint structure."
+    },
+    "C2_cc_suffix_free": {
+      "real_cc_suffix_free_rate": 1.0,
+      "target": 0.99,
+      "all_role_suffix_rates": {
+        "FREQUENT_OPERATOR": {
+          "suffix_free": 2699,
+          "with_suffix": 191,
+          "total": 2890,
+          "suffix_free_rate": 0.9339
+        },
+        "FLOW_OPERATOR": {
+          "suffix_free": 1011,
+          "with_suffix": 67,
+          "total": 1078,
+          "suffix_free_rate": 0.9378
+        },
+        "ENERGY_OPERATOR": {
+          "suffix_free": 2811,
+          "with_suffix": 4400,
+          "total": 7211,
+          "suffix_free_rate": 0.3898
+        },
+        "CORE_CONTROL": {
+          "suffix_free": 735,
+          "with_suffix": 0,
+          "total": 735,
+          "suffix_free_rate": 1.0
+        },
+        "AUXILIARY": {
+          "suffix_free": 2868,
+          "with_suffix": 1272,
+          "total": 4140,
+          "suffix_free_rate": 0.6928
+        }
+      },
+      "suffix_vs_no_suffix_self_rates": {
+        "with_suffix": 0.153,
+        "without_suffix": 0.0783
+      },
+      "diagnosis": "C2 fails because suffix attachment is role-specific: CC tokens are 100.0% suffix-free, but M2 generates tokens from classes without role-specific morphological constraints. The suffix rate is determined by token selection within each class, which M2 randomizes."
+    },
+    "independence_analysis": {
+      "B4_per_section": {
+        "H": {
+          "FQ": 0.0864,
+          "FL": 0.0214,
+          "EN": 0.0413,
+          "ordering_holds": false
+        },
+        "B": {
+          "FQ": 0.069,
+          "FL": 0.0304,
+          "EN": 0.085,
+          "ordering_holds": false
+        },
+        "C": {
+          "FQ": 0.1244,
+          "FL": 0.044,
+          "EN": 0.0241,
+          "ordering_holds": true
+        },
+        "S": {
+          "FQ": 0.1086,
+          "FL": 0.0741,
+          "EN": 0.0691,
+          "ordering_holds": true
+        }
+      },
+      "B5_per_section": {
+        "H": 0.167937,
+        "B": 0.086145,
+        "C": 0.245282,
+        "S": 0.085862
+      },
+      "C2_per_section": {
+        "H": {
+          "cc_suffix_free_rate": 1.0,
+          "cc_total": 112
+        },
+        "B": {
+          "cc_suffix_free_rate": 1.0,
+          "cc_total": 316
+        },
+        "C": {
+          "cc_suffix_free_rate": 1.0,
+          "cc_total": 48
+        },
+        "S": {
+          "cc_suffix_free_rate": 1.0,
+          "cc_total": 233
+        }
+      }
+    },
+    "shared_mechanism_test": {
+      "sections_used": [
+        "B",
+        "C",
+        "H",
+        "S"
+      ],
+      "B4_metric": [
+        -0.016,
+        0.1003,
+        0.0451,
+        0.03950000000000001
+      ],
+      "B5_metric": [
+        0.086145,
+        0.245282,
+        0.167937,
+        0.085862
+      ],
+      "C2_metric": [
+        1.0,
+        1.0,
+        1.0,
+        1.0
+      ],
+      "correlations": {
+        "B4_B5": {
+          "rho": 0.8,
+          "p": 0.2
+        }
+      },
+      "verdict": "CORRELATED"
+    }
+  },
+  "verdicts": {
+    "part_a": {
+      "verdict": "SECTION_COMPARABLE_TO_REGIME",
+      "detail": "Section variation (0.3245) comparable to REGIME variation (0.3195), ratio 1.0x",
+      "topology_invariant": false,
+      "chi2_fraction_significant": 0.426
+    },
+    "part_b": {
+      "verdict": "CORRELATED",
+      "detail": "The 3 failing tests show correlation \u2014 possible shared latent mechanism.",
+      "B4_real_holds": false,
+      "B5_real_jsd": 0.046215,
+      "C2_real_rate": 1.0
+    }
+  }
+}

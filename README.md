@@ -6,12 +6,12 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 
 ## Project Status
 
-**Core model: CLOSED** | **Characterization: ACTIVE** | **Version: 3.78**
+**Core model: CLOSED** | **Characterization: ACTIVE** | **Version: 3.79**
 
 | Metric | Value |
 |--------|-------|
-| Validated constraints | 893 |
-| Research phases completed | 351 |
+| Validated constraints | 895 |
+| Research phases completed | 352 |
 | Model fits tested | 61 |
 | Constraint tiers | 0 (frozen fact) through 4 (exploratory) |
 
@@ -31,7 +31,7 @@ This is not a natural language. This is not a cipher. This is a **control system
 | 17 forbidden transitions | In 5 hazard classes (PHASE, COMPOSITION, CONTAINMENT, RATE, ENERGY) |
 | 0 translation-eligible zones | PURE_OPERATIONAL verdict — no natural language content |
 | 6-state macro-automaton | 8.17x class compression; AXM attractor (self=0.697); 6 folio-level archetypes orthogonal to REGIMEs |
-| Generative sufficiency | 49-class Markov + forbidden suppression reproduces 80% of measurable structure (M2 frontier) |
+| Generative sufficiency | 49-class Markov + forbidden suppression reproduces 87% of measurable structure (M2 frontier; corrected from 80% after B4 test respecification, C1030) |
 | Brunschwig alignment | 28 tests across 4 test suites (see below) |
 
 ## Four-Layer Architecture
