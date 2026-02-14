@@ -1,0 +1,146 @@
+{
+  "metadata": {
+    "phase": 345,
+    "name": "PARAGRAPH_MACRO_DYNAMICS",
+    "total_paragraphs": 208,
+    "total_tokens": 16054,
+    "gallows_initial_count": 65
+  },
+  "t1_header_vs_body": {
+    "header_tokens": 925,
+    "body_tokens": 15031,
+    "header_dist": {
+      "AXM": 0.7048648648648649,
+      "AXm": 0.04540540540540541,
+      "FQ": 0.15135135135135136,
+      "CC": 0.034594594594594595,
+      "FL_HAZ": 0.05837837837837838,
+      "FL_SAFE": 0.005405405405405406
+    },
+    "body_dist": {
+      "AXM": 0.6772004523983767,
+      "AXm": 0.02907324861951966,
+      "FQ": 0.18022752977180492,
+      "CC": 0.04630430443749584,
+      "FL_HAZ": 0.0594770806998869,
+      "FL_SAFE": 0.0077173840729159735
+    },
+    "chi2": 16.044841347409967,
+    "p": 0.00671720915902012,
+    "dof": 5,
+    "cc_delta": -0.011709709842901248,
+    "axm_minor_delta": 0.016332156785885746,
+    "max_elevated_state": "AXM",
+    "max_elevation": 0.02766441246648821,
+    "verdict": "FAIL"
+  },
+  "t2_spec_vs_exec": {
+    "spec_tokens": 5747,
+    "exec_tokens": 9200,
+    "spec_dist": {
+      "AXM": 0.6680006960153123,
+      "AXm": 0.033582738820254046,
+      "FQ": 0.18670610753436576,
+      "CC": 0.047503045066991476,
+      "FL_HAZ": 0.056377240299286584,
+      "FL_SAFE": 0.007830172263789804
+    },
+    "exec_dist": {
+      "AXM": 0.6825,
+      "AXm": 0.026304347826086958,
+      "FQ": 0.17619565217391303,
+      "CC": 0.04543478260869565,
+      "FL_HAZ": 0.06184782608695652,
+      "FL_SAFE": 0.007717391304347826
+    },
+    "chi2": 11.810565647732844,
+    "p": 0.03747771535601849,
+    "dof": 5,
+    "delta_AXM": 0.014499303984687684,
+    "delta_FQ_spec_minus_exec": 0.010510455360452725,
+    "verdict": "FAIL"
+  },
+  "t3_axm_self_by_ordinal": {
+    "n_paragraphs": 150,
+    "n_early": 112,
+    "n_late": 10,
+    "early_mean": 0.6613737871338977,
+    "late_mean": 0.7243228972023867,
+    "U": 393.5,
+    "p": 0.12129162157316939,
+    "delta": 0.06294911006848902,
+    "spearman_rho": 0.2066143040477889,
+    "spearman_p": 0.011188267995993546,
+    "verdict": "FAIL"
+  },
+  "t4_gallows_cc": {
+    "n_gallows": 65,
+    "n_non_gallows": 143,
+    "gallows_cc_rate": 0.0,
+    "non_gallows_cc_rate": 0.02097902097902098,
+    "OR": 0.0,
+    "p": 0.5535651470381313,
+    "gallows_first_dist": {
+      "AXM": 0.8769230769230769,
+      "AXm": 0.12307692307692308,
+      "FQ": 0.0,
+      "CC": 0.0,
+      "FL_HAZ": 0.0,
+      "FL_SAFE": 0.0
+    },
+    "non_gallows_first_dist": {
+      "AXM": 0.5244755244755245,
+      "AXm": 0.08391608391608392,
+      "FQ": 0.32167832167832167,
+      "CC": 0.02097902097902098,
+      "FL_HAZ": 0.04895104895104895,
+      "FL_SAFE": 0.0
+    },
+    "verdict": "FAIL"
+  },
+  "t5_entropy_by_ordinal": {
+    "n_paragraphs": 156,
+    "rho": -0.21509082179251082,
+    "p": 0.007006945813776434,
+    "early_mean": 1.4093385911191842,
+    "late_mean": 1.2576097587908055,
+    "n_early": 114,
+    "n_late": 12,
+    "overall_mean_entropy": 1.3743937510248525,
+    "verdict": "PASS"
+  },
+  "t6_qo_chsh_macro_state": {
+    "n_qo": 3206,
+    "n_chsh": 4105,
+    "qo_dist": {
+      "AXM": 0.9897067997504678,
+      "AXm": 0.010293200249532126,
+      "FQ": 0.0,
+      "CC": 0.0,
+      "FL_HAZ": 0.0,
+      "FL_SAFE": 0.0
+    },
+    "chsh_dist": {
+      "AXM": 0.9831912302070646,
+      "AXm": 0.016808769792935444,
+      "FQ": 0.0,
+      "CC": 0.0,
+      "FL_HAZ": 0.0,
+      "FL_SAFE": 0.0
+    },
+    "chi2": 5.091461345722323,
+    "p": 0.024043922545123792,
+    "dof": 1,
+    "qo_fl_share": 0.0,
+    "chsh_fl_share": 0.0,
+    "fl_delta": 0.0,
+    "axm_delta_chsh_minus_qo": -0.006515569543403266,
+    "direction": "UNEXPECTED",
+    "verdict": "FAIL"
+  },
+  "synthesis": {
+    "pass_count": 1,
+    "total": 6,
+    "verdict": "PARAGRAPH_MACRO_DYNAMICS_NEGATIVE"
+  }
+}
