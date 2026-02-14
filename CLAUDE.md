@@ -169,9 +169,9 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 3.66 FROZEN STATE |
-| Constraints | 881 validated |
-| Phases | 339 completed |
+| Version | 3.71 FROZEN STATE |
+| Constraints | 886 validated |
+| Phases | 344 completed |
 | Folios | 83 (Currier B) |
 | Analysis | CLOSED (PCA-v1 CERTIFIED) |
 
@@ -197,7 +197,7 @@ The user can ask for precision when needed. Default to clarity over pedantry in 
 
 > **"I don't know" is NEVER an acceptable answer about this project.**
 
-The context system contains 879 validated constraints. Before answering ANY question about Voynich structure, relationships, or behavior:
+The context system contains 883 validated constraints. Before answering ANY question about Voynich structure, relationships, or behavior:
 
 1. **STOP** - Do not answer from memory or intuition
 2. **SEARCH** - Grep/read `context/` for relevant constraints
@@ -281,16 +281,18 @@ When asked to **"sync reference files for our expert"**, update these 5 files:
 | `context/CONSTRAINT_TABLE.txt` | All constraints (Tier 0-2) | `python context/generate_constraint_table.py` |
 | `context/MODEL_FITS/FIT_TABLE.txt` | All fits (F0-F4) | `python context/MODEL_FITS/generate_fit_table.py` |
 | `context/EXPERT_CONTEXT.md` | Combined expert context | `python context/generate_expert_context.py` |
+| `.claude/agents/expert-advisor.md` | Expert-advisor agent (embedded constraints) | `python context/generate_expert_context.py` (same script) |
 | `context/MODEL_CONTEXT.md` | Architectural guide | Manual edit |
 | `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` | Tier 3-4 interpretations | Manual edit |
 
 **Workflow:**
-1. Run all three generator scripts
-2. Update MODEL_CONTEXT.md if structural understanding changed
-3. Update INTERPRETATION_SUMMARY.md if speculative interpretations changed
-4. Verify counts match (constraints, fits)
+1. Run all three generator scripts (`generate_constraint_table.py`, `generate_fit_table.py`, `generate_expert_context.py`)
+2. `generate_expert_context.py` produces BOTH `EXPERT_CONTEXT.md` AND the expert-advisor agent
+3. Update MODEL_CONTEXT.md if structural understanding changed
+4. Update INTERPRETATION_SUMMARY.md if speculative interpretations changed
+5. Verify counts match (constraints, fits)
 
-**Internal Expert:** The expert-advisor agent (`.claude/agents/expert-advisor/`) has the full constraint system embedded. It is invoked via automatic delegation - mention "ask the expert-advisor" or "have the expert validate" in your request.
+**Internal Expert:** The expert-advisor agent (`.claude/agents/expert-advisor.md`) has the full constraint system embedded. It is invoked via automatic delegation - mention "ask the expert-advisor" or "have the expert validate" in your request.
 
 ---
 
@@ -311,7 +313,7 @@ When planning changes that affect the constraint system, structural contracts, o
 
 Claude will automatically delegate to the expert-advisor agent based on the request.
 
-**Why this matters:** The expert-advisor has all 879 constraints embedded in its system prompt. Delegation runs in isolated context, avoiding context bloat.
+**Why this matters:** The expert-advisor has all constraints embedded in its system prompt. Delegation runs in isolated context, avoiding context bloat.
 ---
 
 ## App Development

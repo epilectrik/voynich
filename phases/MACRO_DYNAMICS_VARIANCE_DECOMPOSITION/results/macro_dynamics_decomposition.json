@@ -1,0 +1,1392 @@
+{
+  "phase_number": 340,
+  "phase_name": "MACRO_DYNAMICS_VARIANCE_DECOMPOSITION",
+  "question": "How much of macro-state dynamics is explained by PREFIX routing vs bridge density vs their interaction?",
+  "n_tokens": 16054,
+  "t1_middle_conditioned_routing": {
+    "n_eligible_middles": 34,
+    "n_total_middles": 85,
+    "mean_reduction": 0.7868,
+    "mean_reduction_axm_only": 0.5848,
+    "mean_reduction_non_axm": 0.8595,
+    "n_axm_only": 9,
+    "n_non_axm": 25,
+    "null_mean": 0.0383,
+    "null_std": 0.0114,
+    "z_score": 65.59,
+    "p_value": 0.0,
+    "per_middle": [
+      {
+        "middle": "a",
+        "n_tokens": 28,
+        "n_prefixes": 2,
+        "states": {
+          "AXm": 6,
+          "AXM": 22
+        },
+        "h_marginal": 0.7496,
+        "h_conditional": 0.6105,
+        "reduction": 0.1855,
+        "has_non_axm_spanning": false
+      },
+      {
+        "middle": "aiin",
+        "n_tokens": 798,
+        "n_prefixes": 10,
+        "states": {
+          "FQ": 627,
+          "AXM": 171
+        },
+        "h_marginal": 0.7496,
+        "h_conditional": 0.0,
+        "reduction": 1.0,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "ain",
+        "n_tokens": 386,
+        "n_prefixes": 7,
+        "states": {
+          "AXM": 147,
+          "FQ": 227,
+          "AXm": 12
+        },
+        "h_marginal": 1.1365,
+        "h_conditional": 0.0,
+        "reduction": 1.0,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "al",
+        "n_tokens": 447,
+        "n_prefixes": 7,
+        "states": {
+          "FQ": 198,
+          "FL_HAZ": 186,
+          "AXM": 52,
+          "FL_SAFE": 11
+        },
+        "h_marginal": 1.5393,
+        "h_conditional": 0.0,
+        "reduction": 1.0,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "am",
+        "n_tokens": 125,
+        "n_prefixes": 5,
+        "states": {
+          "AXm": 19,
+          "FQ": 92,
+          "AXM": 6,
+          "FL_SAFE": 8
+        },
+        "h_marginal": 1.2027,
+        "h_conditional": 0.0,
+        "reduction": 1.0,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "ar",
+        "n_tokens": 594,
+        "n_prefixes": 9,
+        "states": {
+          "FL_HAZ": 248,
+          "FQ": 217,
+          "AXM": 114,
+          "AXm": 15
+        },
+        "h_marginal": 1.6479,
+        "h_conditional": 0.0,
+        "reduction": 1.0,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "ckh",
+        "n_tokens": 60,
+        "n_prefixes": 4,
+        "states": {
+          "AXm": 22,
+          "AXM": 38
+        },
+        "h_marginal": 0.9481,
+        "h_conditional": 0.5969,
+        "reduction": 0.3704,
+        "has_non_axm_spanning": false
+      },
+      {
+        "middle": "d",
+        "n_tokens": 105,
+        "n_prefixes": 3,
+        "states": {
+          "AXM": 95,
+          "FQ": 6,
+          "AXm": 4
+        },
+        "h_marginal": 0.5462,
+        "h_conditional": 0.3364,
+        "reduction": 0.3841,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "dy",
+        "n_tokens": 537,
+        "n_prefixes": 14,
+        "states": {
+          "AXM": 386,
+          "FQ": 109,
+          "FL_SAFE": 6,
+          "AXm": 36
+        },
+        "h_marginal": 1.1432,
+        "h_conditional": 0.0,
+        "reduction": 1.0,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "e",
+        "n_tokens": 624,
+        "n_prefixes": 7,
+        "states": {
+          "AXM": 402,
+          "FQ": 191,
+          "AXm": 31
+        },
+        "h_marginal": 1.1466,
+        "h_conditional": 0.2403,
+        "reduction": 0.7904,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "edy",
+        "n_tokens": 1812,
+        "n_prefixes": 17,
+        "states": {
+          "AXM": 1480,
+          "FQ": 264,
+          "AXm": 68
+        },
+        "h_marginal": 0.8211,
+        "h_conditional": 0.17,
+        "reduction": 0.7929,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "eeo",
+        "n_tokens": 55,
+        "n_prefixes": 4,
+        "states": {
+          "AXM": 39,
+          "AXm": 16
+        },
+        "h_marginal": 0.8699,
+        "h_conditional": 0.4007,
+        "reduction": 0.5394,
+        "has_non_axm_spanning": false
+      },
+      {
+        "middle": "eey",
+        "n_tokens": 575,
+        "n_prefixes": 11,
+        "states": {
+          "AXM": 353,
+          "FQ": 215,
+          "AXm": 7
+        },
+        "h_marginal": 1.0402,
+        "h_conditional": 0.0,
+        "reduction": 1.0,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "eo",
+        "n_tokens": 212,
+        "n_prefixes": 5,
+        "states": {
+          "AXM": 181,
+          "AXm": 31
+        },
+        "h_marginal": 0.6003,
+        "h_conditional": 0.1336,
+        "reduction": 0.7774,
+        "has_non_axm_spanning": false
+      },
+      {
+        "middle": "eod",
+        "n_tokens": 14,
+        "n_prefixes": 2,
+        "states": {
+          "AXM": 9,
+          "AXm": 5
+        },
+        "h_marginal": 0.9403,
+        "h_conditional": 0.0,
+        "reduction": 1.0,
+        "has_non_axm_spanning": false
+      },
+      {
+        "middle": "eol",
+        "n_tokens": 222,
+        "n_prefixes": 7,
+        "states": {
+          "AXm": 28,
+          "AXM": 176,
+          "FQ": 18
+        },
+        "h_marginal": 0.9362,
+        "h_conditional": 0.0,
+        "reduction": 1.0,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "ey",
+        "n_tokens": 769,
+        "n_prefixes": 13,
+        "states": {
+          "AXM": 633,
+          "FQ": 70,
+          "AXm": 66
+        },
+        "h_marginal": 0.8499,
+        "h_conditional": 0.2518,
+        "reduction": 0.7038,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "i",
+        "n_tokens": 99,
+        "n_prefixes": 4,
+        "states": {
+          "AXM": 50,
+          "FL_HAZ": 49
+        },
+        "h_marginal": 0.9999,
+        "h_conditional": 0.3075,
+        "reduction": 0.6925,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "iin",
+        "n_tokens": 536,
+        "n_prefixes": 6,
+        "states": {
+          "AXM": 222,
+          "CC": 314
+        },
+        "h_marginal": 0.9786,
+        "h_conditional": 0.0802,
+        "reduction": 0.918,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "in",
+        "n_tokens": 246,
+        "n_prefixes": 4,
+        "states": {
+          "FL_HAZ": 113,
+          "AXM": 122,
+          "AXm": 11
+        },
+        "h_marginal": 1.2178,
+        "h_conditional": 0.1039,
+        "reduction": 0.9147,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "k",
+        "n_tokens": 1924,
+        "n_prefixes": 5,
+        "states": {
+          "AXM": 1914,
+          "AXm": 10
+        },
+        "h_marginal": 0.0469,
+        "h_conditional": 0.0289,
+        "reduction": 0.3846,
+        "has_non_axm_spanning": false
+      },
+      {
+        "middle": "l",
+        "n_tokens": 684,
+        "n_prefixes": 12,
+        "states": {
+          "AXM": 507,
+          "FL_HAZ": 130,
+          "AXm": 13,
+          "FQ": 34
+        },
+        "h_marginal": 1.0994,
+        "h_conditional": 0.3257,
+        "reduction": 0.7037,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "ly",
+        "n_tokens": 29,
+        "n_prefixes": 2,
+        "states": {
+          "FL_SAFE": 17,
+          "AXM": 12
+        },
+        "h_marginal": 0.9784,
+        "h_conditional": 0.0,
+        "reduction": 1.0,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "m",
+        "n_tokens": 55,
+        "n_prefixes": 3,
+        "states": {
+          "FL_HAZ": 42,
+          "AXM": 13
+        },
+        "h_marginal": 0.7889,
+        "h_conditional": 0.0,
+        "reduction": 1.0,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "o",
+        "n_tokens": 251,
+        "n_prefixes": 8,
+        "states": {
+          "AXM": 207,
+          "FQ": 29,
+          "FL_SAFE": 11,
+          "AXm": 4
+        },
+        "h_marginal": 0.882,
+        "h_conditional": 0.3575,
+        "reduction": 0.5947,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "ock",
+        "n_tokens": 12,
+        "n_prefixes": 2,
+        "states": {
+          "AXm": 5,
+          "AXM": 7
+        },
+        "h_marginal": 0.9799,
+        "h_conditional": 0.0,
+        "reduction": 1.0,
+        "has_non_axm_spanning": false
+      },
+      {
+        "middle": "oct",
+        "n_tokens": 7,
+        "n_prefixes": 2,
+        "states": {
+          "AXM": 6,
+          "AXm": 1
+        },
+        "h_marginal": 0.5917,
+        "h_conditional": 0.0,
+        "reduction": 1.0,
+        "has_non_axm_spanning": false
+      },
+      {
+        "middle": "ol",
+        "n_tokens": 698,
+        "n_prefixes": 14,
+        "states": {
+          "CC": 421,
+          "AXM": 208,
+          "FQ": 53,
+          "FL_SAFE": 10,
+          "AXm": 6
+        },
+        "h_marginal": 1.3896,
+        "h_conditional": 0.0531,
+        "reduction": 0.9618,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "or",
+        "n_tokens": 387,
+        "n_prefixes": 10,
+        "states": {
+          "FQ": 273,
+          "AXm": 17,
+          "AXM": 97
+        },
+        "h_marginal": 1.0536,
+        "h_conditional": 0.0755,
+        "reduction": 0.9284,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "r",
+        "n_tokens": 637,
+        "n_prefixes": 10,
+        "states": {
+          "FL_HAZ": 188,
+          "AXM": 410,
+          "FQ": 39
+        },
+        "h_marginal": 1.1755,
+        "h_conditional": 0.2269,
+        "reduction": 0.807,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "ry",
+        "n_tokens": 22,
+        "n_prefixes": 2,
+        "states": {
+          "AXM": 9,
+          "FL_SAFE": 13
+        },
+        "h_marginal": 0.976,
+        "h_conditional": 0.0,
+        "reduction": 1.0,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "s",
+        "n_tokens": 78,
+        "n_prefixes": 3,
+        "states": {
+          "FQ": 53,
+          "AXM": 25
+        },
+        "h_marginal": 0.9049,
+        "h_conditional": 0.5099,
+        "reduction": 0.4366,
+        "has_non_axm_spanning": true
+      },
+      {
+        "middle": "t",
+        "n_tokens": 506,
+        "n_prefixes": 3,
+        "states": {
+          "AXM": 491,
+          "AXm": 15
+        },
+        "h_marginal": 0.1926,
+        "h_conditional": 0.1914,
+        "reduction": 0.0063,
+        "has_non_axm_spanning": false
+      },
+      {
+        "middle": "y",
+        "n_tokens": 412,
+        "n_prefixes": 16,
+        "states": {
+          "FQ": 175,
+          "AXM": 179,
+          "FL_SAFE": 33,
+          "AXm": 25
+        },
+        "h_marginal": 1.5843,
+        "h_conditional": 0.2251,
+        "reduction": 0.8579,
+        "has_non_axm_spanning": true
+      }
+    ],
+    "pass": "True"
+  },
+  "t2_positional_null": {
+    "observed_reduction": 0.7868,
+    "positional_null_mean": 0.1874,
+    "positional_null_std": 0.0143,
+    "z_score": 41.78,
+    "p_value": 0.0,
+    "positional_contribution": 0.1993,
+    "t1_random_null": 0.0383,
+    "pass": "True"
+  },
+  "t3_regime_stratified": {
+    "per_regime": {
+      "REGIME_1": {
+        "n_eligible": 34,
+        "n_tokens": 9083,
+        "mean_reduction": 0.7919
+      },
+      "REGIME_2": {
+        "n_eligible": 29,
+        "n_tokens": 1944,
+        "mean_reduction": 0.8322
+      },
+      "REGIME_3": {
+        "n_eligible": 29,
+        "n_tokens": 2831,
+        "mean_reduction": 0.8229
+      },
+      "REGIME_4": {
+        "n_eligible": 31,
+        "n_tokens": 2196,
+        "mean_reduction": 0.7849
+      }
+    },
+    "range_ratio": 1.0603,
+    "pass": false
+  },
+  "t4_bridge_archetype": {
+    "n_folios": 72,
+    "bridge_gatekeeper_overlap": 21,
+    "bridge_non_gatekeeper": 64,
+    "overlap_fraction": 0.247,
+    "bridge_density_constant": "True",
+    "bridge_density_mean": 1.0,
+    "bridge_density_note": "85/87 B MIDDLEs are bridges; density is constant; bridge effect is geometric (C1016.T8)",
+    "rho_hazard_axm": -0.1835,
+    "p_hazard_axm": 0.122907,
+    "rho_gatekeeper_axm": 0.0274,
+    "p_gatekeeper_axm": 0.819187,
+    "eta2_hazard_archetype": 0.2275,
+    "anova_p_hazard": 0.003778,
+    "pass": "True"
+  },
+  "t4_folio_features": {
+    "f103r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.122,
+      "gatekeeper_density": 0.0159,
+      "n_tokens": 377,
+      "archetype": 6,
+      "regime": "REGIME_3",
+      "axm_self": 0.75
+    },
+    "f103v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1327,
+      "gatekeeper_density": 0.0295,
+      "n_tokens": 339,
+      "archetype": 2,
+      "regime": "REGIME_1",
+      "axm_self": 0.7286
+    },
+    "f104r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1293,
+      "gatekeeper_density": 0.0266,
+      "n_tokens": 263,
+      "archetype": 6,
+      "regime": "REGIME_1",
+      "axm_self": 0.6776
+    },
+    "f104v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1388,
+      "gatekeeper_density": 0.0214,
+      "n_tokens": 281,
+      "archetype": 6,
+      "regime": "REGIME_3",
+      "axm_self": 0.7624
+    },
+    "f105r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1422,
+      "gatekeeper_density": 0.0183,
+      "n_tokens": 218,
+      "archetype": 6,
+      "regime": "REGIME_2",
+      "axm_self": 0.6967
+    },
+    "f105v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1532,
+      "gatekeeper_density": 0.036,
+      "n_tokens": 222,
+      "archetype": 5,
+      "regime": "REGIME_2",
+      "axm_self": 0.5652
+    },
+    "f106r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1132,
+      "gatekeeper_density": 0.0264,
+      "n_tokens": 265,
+      "archetype": 6,
+      "regime": "REGIME_1",
+      "axm_self": 0.7342
+    },
+    "f106v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1399,
+      "gatekeeper_density": 0.0171,
+      "n_tokens": 293,
+      "archetype": 6,
+      "regime": "REGIME_1",
+      "axm_self": 0.6667
+    },
+    "f107r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1536,
+      "gatekeeper_density": 0.0313,
+      "n_tokens": 319,
+      "archetype": 6,
+      "regime": "REGIME_2",
+      "axm_self": 0.6685
+    },
+    "f107v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1386,
+      "gatekeeper_density": 0.0206,
+      "n_tokens": 339,
+      "archetype": 6,
+      "regime": "REGIME_1",
+      "axm_self": 0.736
+    },
+    "f108r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1322,
+      "gatekeeper_density": 0.0144,
+      "n_tokens": 348,
+      "archetype": 6,
+      "regime": "REGIME_1",
+      "axm_self": 0.6073
+    },
+    "f108v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1262,
+      "gatekeeper_density": 0.0223,
+      "n_tokens": 404,
+      "archetype": 2,
+      "regime": "REGIME_1",
+      "axm_self": 0.712
+    },
+    "f111r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1646,
+      "gatekeeper_density": 0.0175,
+      "n_tokens": 401,
+      "archetype": 6,
+      "regime": "REGIME_1",
+      "axm_self": 0.686
+    },
+    "f111v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1464,
+      "gatekeeper_density": 0.0248,
+      "n_tokens": 403,
+      "archetype": 6,
+      "regime": "REGIME_1",
+      "axm_self": 0.7375
+    },
+    "f112r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1338,
+      "gatekeeper_density": 0.0446,
+      "n_tokens": 269,
+      "archetype": 6,
+      "regime": "REGIME_1",
+      "axm_self": 0.4919
+    },
+    "f112v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1312,
+      "gatekeeper_density": 0.0142,
+      "n_tokens": 282,
+      "archetype": 6,
+      "regime": "REGIME_1",
+      "axm_self": 0.6174
+    },
+    "f113r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.125,
+      "gatekeeper_density": 0.0099,
+      "n_tokens": 304,
+      "archetype": 6,
+      "regime": "REGIME_1",
+      "axm_self": 0.6412
+    },
+    "f113v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1079,
+      "gatekeeper_density": 0.0444,
+      "n_tokens": 315,
+      "archetype": 6,
+      "regime": "REGIME_2",
+      "axm_self": 0.6028
+    },
+    "f114r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1194,
+      "gatekeeper_density": 0.0299,
+      "n_tokens": 268,
+      "archetype": 2,
+      "regime": "REGIME_1",
+      "axm_self": 0.6434
+    },
+    "f114v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.0776,
+      "gatekeeper_density": 0.0183,
+      "n_tokens": 219,
+      "archetype": 3,
+      "regime": "REGIME_3",
+      "axm_self": 0.7073
+    },
+    "f115r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1387,
+      "gatekeeper_density": 0.0146,
+      "n_tokens": 274,
+      "archetype": 6,
+      "regime": "REGIME_3",
+      "axm_self": 0.8066
+    },
+    "f115v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.0698,
+      "gatekeeper_density": 0.0465,
+      "n_tokens": 215,
+      "archetype": 1,
+      "regime": "REGIME_2",
+      "axm_self": 0.8321
+    },
+    "f116r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1467,
+      "gatekeeper_density": 0.0269,
+      "n_tokens": 409,
+      "archetype": 6,
+      "regime": "REGIME_3",
+      "axm_self": 0.716
+    },
+    "f31r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1884,
+      "gatekeeper_density": 0.0145,
+      "n_tokens": 69,
+      "archetype": 4,
+      "regime": "REGIME_3",
+      "axm_self": 0.625
+    },
+    "f31v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1515,
+      "gatekeeper_density": 0.0152,
+      "n_tokens": 66,
+      "archetype": 5,
+      "regime": "REGIME_4",
+      "axm_self": 0.28
+    },
+    "f33v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.2442,
+      "gatekeeper_density": 0.0465,
+      "n_tokens": 86,
+      "archetype": 5,
+      "regime": "REGIME_3",
+      "axm_self": 0.4167
+    },
+    "f34r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.087,
+      "gatekeeper_density": 0.0326,
+      "n_tokens": 92,
+      "archetype": 6,
+      "regime": "REGIME_4",
+      "axm_self": 0.6087
+    },
+    "f34v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1538,
+      "gatekeeper_density": 0.0256,
+      "n_tokens": 78,
+      "archetype": 6,
+      "regime": "REGIME_4",
+      "axm_self": 0.7347
+    },
+    "f39r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.19,
+      "gatekeeper_density": 0.02,
+      "n_tokens": 100,
+      "archetype": 6,
+      "regime": "REGIME_3",
+      "axm_self": 0.6296
+    },
+    "f39v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.213,
+      "gatekeeper_density": 0.0556,
+      "n_tokens": 108,
+      "archetype": 6,
+      "regime": "REGIME_4",
+      "axm_self": 0.549
+    },
+    "f40r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1143,
+      "gatekeeper_density": 0.0429,
+      "n_tokens": 70,
+      "archetype": 5,
+      "regime": "REGIME_4",
+      "axm_self": 0.5
+    },
+    "f40v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.0833,
+      "gatekeeper_density": 0.0357,
+      "n_tokens": 84,
+      "archetype": 3,
+      "regime": "REGIME_4",
+      "axm_self": 0.5122
+    },
+    "f43r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.12,
+      "gatekeeper_density": 0.06,
+      "n_tokens": 100,
+      "archetype": 6,
+      "regime": "REGIME_4",
+      "axm_self": 0.5763
+    },
+    "f43v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1881,
+      "gatekeeper_density": 0.0198,
+      "n_tokens": 101,
+      "archetype": 3,
+      "regime": "REGIME_4",
+      "axm_self": 0.5714
+    },
+    "f46r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.13,
+      "gatekeeper_density": 0.05,
+      "n_tokens": 100,
+      "archetype": 2,
+      "regime": "REGIME_3",
+      "axm_self": 0.7049
+    },
+    "f46v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1392,
+      "gatekeeper_density": 0.0506,
+      "n_tokens": 79,
+      "archetype": 4,
+      "regime": "REGIME_4",
+      "axm_self": 0.5854
+    },
+    "f48v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1505,
+      "gatekeeper_density": 0.0753,
+      "n_tokens": 93,
+      "archetype": 3,
+      "regime": "REGIME_2",
+      "axm_self": 0.52
+    },
+    "f50v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.0435,
+      "gatekeeper_density": 0.029,
+      "n_tokens": 69,
+      "archetype": 6,
+      "regime": "REGIME_4",
+      "axm_self": 0.6757
+    },
+    "f55r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.2235,
+      "gatekeeper_density": 0.0118,
+      "n_tokens": 85,
+      "archetype": 5,
+      "regime": "REGIME_4",
+      "axm_self": 0.4444
+    },
+    "f55v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.2051,
+      "gatekeeper_density": 0.0513,
+      "n_tokens": 78,
+      "archetype": 4,
+      "regime": "REGIME_4",
+      "axm_self": 0.3667
+    },
+    "f66r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1089,
+      "gatekeeper_density": 0.0248,
+      "n_tokens": 202,
+      "archetype": 3,
+      "regime": "REGIME_1",
+      "axm_self": 0.6635
+    },
+    "f66v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1343,
+      "gatekeeper_density": 0.0597,
+      "n_tokens": 67,
+      "archetype": 6,
+      "regime": "REGIME_4",
+      "axm_self": 0.6667
+    },
+    "f75r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1523,
+      "gatekeeper_density": 0.0546,
+      "n_tokens": 348,
+      "archetype": 6,
+      "regime": "REGIME_1",
+      "axm_self": 0.7778
+    },
+    "f75v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1314,
+      "gatekeeper_density": 0.0657,
+      "n_tokens": 274,
+      "archetype": 2,
+      "regime": "REGIME_1",
+      "axm_self": 0.7232
+    },
+    "f76r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1678,
+      "gatekeeper_density": 0.0233,
+      "n_tokens": 429,
+      "archetype": 6,
+      "regime": "REGIME_1",
+      "axm_self": 0.769
+    },
+    "f76v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1655,
+      "gatekeeper_density": 0.0345,
+      "n_tokens": 290,
+      "archetype": 6,
+      "regime": "REGIME_1",
+      "axm_self": 0.7701
+    },
+    "f77r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.108,
+      "gatekeeper_density": 0.012,
+      "n_tokens": 250,
+      "archetype": 1,
+      "regime": "REGIME_3",
+      "axm_self": 0.8689
+    },
+    "f77v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1357,
+      "gatekeeper_density": 0.0271,
+      "n_tokens": 258,
+      "archetype": 1,
+      "regime": "REGIME_1",
+      "axm_self": 0.8065
+    },
+    "f78r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1304,
+      "gatekeeper_density": 0.0174,
+      "n_tokens": 230,
+      "archetype": 2,
+      "regime": "REGIME_1",
+      "axm_self": 0.5906
+    },
+    "f78v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1369,
+      "gatekeeper_density": 0.0332,
+      "n_tokens": 241,
+      "archetype": 2,
+      "regime": "REGIME_1",
+      "axm_self": 0.6058
+    },
+    "f79r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1333,
+      "gatekeeper_density": 0.0667,
+      "n_tokens": 300,
+      "archetype": 2,
+      "regime": "REGIME_1",
+      "axm_self": 0.7228
+    },
+    "f79v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.0886,
+      "gatekeeper_density": 0.0406,
+      "n_tokens": 271,
+      "archetype": 2,
+      "regime": "REGIME_1",
+      "axm_self": 0.7278
+    },
+    "f80r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.0776,
+      "gatekeeper_density": 0.0627,
+      "n_tokens": 335,
+      "archetype": 1,
+      "regime": "REGIME_1",
+      "axm_self": 0.8075
+    },
+    "f80v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1486,
+      "gatekeeper_density": 0.0811,
+      "n_tokens": 296,
+      "archetype": 1,
+      "regime": "REGIME_1",
+      "axm_self": 0.7423
+    },
+    "f81r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1235,
+      "gatekeeper_density": 0.0412,
+      "n_tokens": 170,
+      "archetype": 2,
+      "regime": "REGIME_3",
+      "axm_self": 0.67
+    },
+    "f81v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.101,
+      "gatekeeper_density": 0.0606,
+      "n_tokens": 198,
+      "archetype": 2,
+      "regime": "REGIME_1",
+      "axm_self": 0.6435
+    },
+    "f82r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.0957,
+      "gatekeeper_density": 0.0383,
+      "n_tokens": 209,
+      "archetype": 1,
+      "regime": "REGIME_1",
+      "axm_self": 0.8553
+    },
+    "f82v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1511,
+      "gatekeeper_density": 0.0489,
+      "n_tokens": 225,
+      "archetype": 1,
+      "regime": "REGIME_1",
+      "axm_self": 0.8447
+    },
+    "f83r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1311,
+      "gatekeeper_density": 0.0533,
+      "n_tokens": 244,
+      "archetype": 1,
+      "regime": "REGIME_1",
+      "axm_self": 0.8303
+    },
+    "f83v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1244,
+      "gatekeeper_density": 0.0299,
+      "n_tokens": 201,
+      "archetype": 1,
+      "regime": "REGIME_3",
+      "axm_self": 0.8333
+    },
+    "f84r": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1131,
+      "gatekeeper_density": 0.0424,
+      "n_tokens": 283,
+      "archetype": 2,
+      "regime": "REGIME_1",
+      "axm_self": 0.6706
+    },
+    "f84v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1029,
+      "gatekeeper_density": 0.0404,
+      "n_tokens": 272,
+      "archetype": 2,
+      "regime": "REGIME_1",
+      "axm_self": 0.6027
+    },
+    "f85r1": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1485,
+      "gatekeeper_density": 0.0198,
+      "n_tokens": 202,
+      "archetype": 5,
+      "regime": "REGIME_4",
+      "axm_self": 0.4947
+    },
+    "f85r2": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1856,
+      "gatekeeper_density": 0.0103,
+      "n_tokens": 97,
+      "archetype": 4,
+      "regime": "REGIME_4",
+      "axm_self": 0.6579
+    },
+    "f86v3": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.125,
+      "gatekeeper_density": 0.0104,
+      "n_tokens": 192,
+      "archetype": 3,
+      "regime": "REGIME_2",
+      "axm_self": 0.6471
+    },
+    "f86v4": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1739,
+      "gatekeeper_density": 0.0348,
+      "n_tokens": 115,
+      "archetype": 5,
+      "regime": "REGIME_3",
+      "axm_self": 0.5965
+    },
+    "f86v5": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1685,
+      "gatekeeper_density": 0.0403,
+      "n_tokens": 273,
+      "archetype": 6,
+      "regime": "REGIME_2",
+      "axm_self": 0.617
+    },
+    "f86v6": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1451,
+      "gatekeeper_density": 0.0442,
+      "n_tokens": 317,
+      "archetype": 6,
+      "regime": "REGIME_4",
+      "axm_self": 0.663
+    },
+    "f94v": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.0857,
+      "gatekeeper_density": 0.0143,
+      "n_tokens": 70,
+      "archetype": 4,
+      "regime": "REGIME_4",
+      "axm_self": 0.6071
+    },
+    "f95r1": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1507,
+      "gatekeeper_density": 0.0274,
+      "n_tokens": 73,
+      "archetype": 1,
+      "regime": "REGIME_3",
+      "axm_self": 0.7959
+    },
+    "f95r2": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1,
+      "gatekeeper_density": 0.0333,
+      "n_tokens": 60,
+      "archetype": 3,
+      "regime": "REGIME_3",
+      "axm_self": 0.6452
+    },
+    "f95v1": {
+      "bridge_density": 1.0,
+      "hazard_density": 0.1061,
+      "gatekeeper_density": 0.0152,
+      "n_tokens": 66,
+      "archetype": 6,
+      "regime": "REGIME_4",
+      "axm_self": 0.5625
+    }
+  },
+  "t5_variance_decomposition": {
+    "n_folios": 72,
+    "bridge_density_constant": "True",
+    "r2_base": 0.4196,
+    "r2_prefix": 0.4704,
+    "r2_hazard_alone": 0.4806,
+    "r2_additive": 0.5342,
+    "r2_interaction": 0.5638,
+    "r2_full": 0.536,
+    "delta_r2_prefix": 0.0508,
+    "delta_r2_hazard_alone": 0.0609,
+    "delta_r2_additive": 0.1146,
+    "delta_r2_interaction": 0.0296,
+    "delta_r2_gatekeeper": 0.0018,
+    "residual_frac": 0.464,
+    "f_prefix": 6.04,
+    "p_prefix": 0.016706,
+    "f_hazard_alone": 7.39,
+    "p_hazard_alone": 0.008454,
+    "f_additive": 7.63,
+    "p_additive": 0.001094,
+    "f_interaction": 4.14,
+    "p_interaction": 0.0463,
+    "f_gatekeeper": 0.24,
+    "p_gatekeeper": 0.62682,
+    "r2_within_section": 0.6062,
+    "pass_p5_weak_interaction": "True",
+    "pass_p6_explained_variance": "True"
+  },
+  "t5b_archetype_stratified": {
+    "per_archetype": {
+      "1": {
+        "n": 10,
+        "r2": 0.5112,
+        "mean_axm_self": 0.8217,
+        "range_axm_self": [
+          0.7423,
+          0.8689
+        ],
+        "beta_prefix": -0.0205,
+        "beta_hazard": -0.0131
+      },
+      "2": {
+        "n": 13,
+        "r2": 0.1829,
+        "mean_axm_self": 0.6728,
+        "range_axm_self": [
+          0.5906,
+          0.7286
+        ],
+        "beta_prefix": -0.0216,
+        "beta_hazard": -0.0023
+      },
+      "3": {
+        "n": 7,
+        "r2": 0.4145,
+        "mean_axm_self": 0.6095,
+        "range_axm_self": [
+          0.5122,
+          0.7073
+        ],
+        "beta_prefix": -0.0371,
+        "beta_hazard": -0.0165
+      },
+      "4": {
+        "n": 5,
+        "r2": 0.1415,
+        "mean_axm_self": 0.5684,
+        "range_axm_self": [
+          0.3667,
+          0.6579
+        ],
+        "beta_prefix": -0.0039,
+        "beta_hazard": -0.0406
+      },
+      "5": {
+        "n": 7,
+        "r2": 0.0795,
+        "mean_axm_self": 0.4711,
+        "range_axm_self": [
+          0.28,
+          0.5965
+        ],
+        "beta_prefix": 0.0243,
+        "beta_hazard": -0.0056
+      },
+      "6": {
+        "n": 30,
+        "r2": 0.0514,
+        "mean_axm_self": 0.6733,
+        "range_axm_self": [
+          0.4919,
+          0.8066
+        ],
+        "beta_prefix": -0.0162,
+        "beta_hazard": 0.0091
+      }
+    },
+    "slopes_differ": "True",
+    "mean_within_archetype_r2": 0.2302,
+    "prefix_slope_range": 0.0614,
+    "hazard_slope_range": 0.0497
+  },
+  "t5c_geometric_bridge": {
+    "n_folios": 72,
+    "pca_variance_explained": [
+      0.2156,
+      0.0941,
+      0.0646,
+      0.0514,
+      0.0485
+    ],
+    "rho_pc1_axm": -0.459,
+    "p_pc1_axm": 5e-05,
+    "rho_pc2_axm": 0.3226,
+    "p_pc2_axm": 0.005712,
+    "rho_norm_axm": -0.3779,
+    "p_norm_axm": 0.001067,
+    "r2_control": 0.5342,
+    "r2_plus_pc1": 0.5974,
+    "delta_r2_pc1": 0.0632,
+    "f_pc1": 9.58,
+    "p_f_pc1": 0.002964,
+    "r2_plus_pc12": 0.598,
+    "delta_r2_pc12": 0.0638,
+    "f_pc12": 4.76,
+    "p_f_pc12": 0.012007,
+    "r2_plus_norm": 0.568,
+    "delta_r2_norm": 0.0338,
+    "f_norm": 4.77,
+    "p_f_norm": 0.032781,
+    "geo_significant": true,
+    "best_delta_r2": 0.0638
+  },
+  "t6_residual_characterization": {
+    "n_folios": 72,
+    "residual_std": 0.0781,
+    "residual_correlations": {
+      "suffix_entropy": {
+        "rho": 0.1291,
+        "p_value": 0.279632
+      },
+      "gatekeeper_frac": {
+        "rho": 0.0166,
+        "p_value": 0.890181
+      },
+      "middle_diversity": {
+        "rho": -0.0671,
+        "p_value": 0.575574
+      }
+    },
+    "residual_vs_archetype_f": 6.71,
+    "residual_vs_archetype_p": 4.2e-05,
+    "pass_p7_suffix_uncorrelated": true
+  },
+  "t7_synthesis": {
+    "predictions": {
+      "P1_middle_conditioned_routing": {
+        "description": "MIDDLE-conditioned PREFIX routing significant (p<0.05)",
+        "result": "True",
+        "value": "z=65.59, p=0.0"
+      },
+      "P2_survives_positional": {
+        "description": "PREFIX routing survives positional shuffling (p<0.05)",
+        "result": "True",
+        "value": "z=41.78, p=0.0"
+      },
+      "P3_regime_variation": {
+        "description": "PREFIX routing varies by REGIME (range ratio > 1.5)",
+        "result": false,
+        "value": "ratio=1.0603"
+      },
+      "P4_hazard_differentiates": {
+        "description": "Hazard density differentiates archetypes (ANOVA p<0.05)",
+        "result": "True",
+        "value": "eta2=0.2275, p=0.003778"
+      },
+      "P5_weak_interaction": {
+        "description": "PREFIX \u00d7 bridge interaction weak (\u0394R\u00b2 < 0.05)",
+        "result": "True",
+        "value": "\u0394R\u00b2=0.0296"
+      },
+      "P6_explained_variance": {
+        "description": "Full model explains >40% of AXM self variance",
+        "result": "True",
+        "value": "R\u00b2=0.536"
+      },
+      "P7_suffix_uncorrelated": {
+        "description": "SUFFIX entropy uncorrelated with residual (p>0.05)",
+        "result": true,
+        "value": "p=0.279632"
+      }
+    },
+    "n_pass": 6,
+    "n_total": 7,
+    "verdict": "DYNAMICS_DECOMPOSED",
+    "verdict_text": "Macro-state dynamics are jointly explained by PREFIX routing and hazard density, with weak interaction and no SUFFIX contribution. Bridge operates geometrically (C1016.T8), not densimetrically."
+  },
+  "duration_seconds": 70.8
+}

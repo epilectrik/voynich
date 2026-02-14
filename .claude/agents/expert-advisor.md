@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 879 validated constraints and 61 explanatory fits loaded
+embedded below. You have ALL 886 validated constraints and 61 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -61,8 +61,8 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # EMBEDDED EXPERT CONTEXT
 
-**Generated:** 2026-02-13 13:46
-**Version:** FROZEN STATE (879 constraints, 61 fits)
+**Generated:** 2026-02-13 19:40
+**Version:** FROZEN STATE (886 constraints, 61 fits)
 
 ---
 
@@ -84,7 +84,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.66 | **Status:** FROZEN | **Constraints:** 881 | **Date:** 2026-02-13
+**Version:** 3.71 | **Status:** FROZEN | **Constraints:** 886 | **Date:** 2026-02-13
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -1672,7 +1672,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 879 constraints | 2026-02-13
+CONSTRAINT_REFERENCE v2.6 | 886 constraints | 2026-02-13
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2557,6 +2557,13 @@ C1011	**Discrimination Manifold and Macro-Automaton are Geometrically Independen
 C1012	**PREFIX is Macro-State Selector via Positive Channeling, Not Negative Prohibition** (76.7% entropy reduction z=1139 p≈0; many PREFIXes 100% single-state; but 102 prohibitions NOT cross-state targeted 23.2% vs 27.8% null z=-1.58; forbidden transitions not preferentially backed 38.9% vs 46.2% null; positional mediation 39.9%; EN PREFIXes 100% AXM+AXm; FL_HAZ+CC prohibition enrichment 2.14x; enforcement is inclusion-based not exclusion-based)
 C1013	A->B Vocabulary Bridge is a Topological Generality Filter
 C1014	Discrimination Manifold Encodes Viability Structure via Bridge Backbone
+C1015	**PREFIX-Conditioned Macro-State Mutability with FL-Specific Routing Asymmetry** (da unique FL router OR=126.67 p≈0 routes both FL_HAZ+FL_SAFE 5:5; ar pure FL_SAFE selector 5/5 p≈0; 41.0% entropy reduction z=17.6 p≈0 operationalizes C661/C1012; mean purity 0.862 z=3.8 p=0.0001; 6×6 transition matrix: AXM attractor self=0.697 pull=0.642; FL_SAFE NOT absorbing self=0.023 return=117.7 steps; CC pure initiator self=0.041; spectral gap=0.896 mixing=1.1 steps; stationary≈empirical dev=0.012; MDL-optimal single component at corpus scale rank 1/4 33.9% compression)
+C1016	**Folio-Level Macro-Automaton Decomposition with Dynamical Archetypes** (6 dynamical archetypes cross-cut 4 REGIMEs ARI=0.065; forgiveness = AXM attractor strength rho=0.678 6 Bonferroni-significant features; REGIME+section explain only 33.7% of transition variance 66.3% program-specific; 72/82 folios with N≥50 transitions)
+C1017	**Macro-State Dynamics Decompose into PREFIX Routing, Hazard Density, and Bridge Geometry** (78.7% within-MIDDLE entropy reduction z=65.59; 19.9% positional, 80.1% genuine routing; REGIME-invariant ratio=1.06; PREFIX+hazard ΔR²=0.115 beyond REGIME+section; bridge PC1 ΔR²=0.063 p=0.003; interaction ΔR²=0.030 weak per C1003; SUFFIX uncorrelated p=0.280 per C1004; 40.1% non-linear residual with archetype-specific slope profiles)
+C1018	**Archetype Geometric Anatomy — Slope Anomalies, Bridge PC1 Decomposition, and HUB Sub-Role Differentiation** (archetype 5 PREFIX slope CI spans zero at n=7; archetype 6 SAFETY_BUFFER enriched 1.7x p=0.003; bridge PC1 partially redundant with hub frequency rho=0.568; PC1 = HUB_UNIVERSAL↔STABILITY_CRITICAL gradient; 8 discriminator features across 5 families; k_frac strongest F=15.81; archetypes 5/6 geometrically distinct p=0.006)
+C1019	**Morphological Tensor Decomposition — Transition Tensor Has Rank-8 Pairwise Structure Orthogonal to 6-State Macro-Automaton** (rank 8 at 97.0% variance; CP ≥ Tucker confirming C1003; class factors ARI=0.053 vs C1010 — macro-automaton NOT a tensor projection; ΔR²=0.465 dynamical prediction 4x C1017; SUFFIX 2 SVD dims confirming C1004; HUB vs STABILITY cosine=0.574)
+C1020	**Tensor Archetype Geometry — Tensor Factors Encode Dynamics Through Graded Curvature, Not Macro-State Clustering** (7/8 CP factors correlate with AXM at |rho|>0.40, best rho=-0.738; archetypes don't cluster in CP space sil=-0.040; 100% bridge degeneracy; HUB rank 3 vs full rank 8; HUB PREFIX-diverse entropy 1.024>0.851)
+C1021	**CP Factor Characterization — Tensor Factors Are Frequency-Dominated, Rank Is Continuous, Tensor-Automaton Orthogonality Is Complete** (Factor 2 rho=-0.750 with AXM is frequency gradient rho=0.854; gatekeeper cosine=0.059; Factor 3 AXM-orthogonal captures frequency cosine=0.648; CV saturates at rank 4; constrained ARI=0.007 WORSE than unconstrained 0.050; z=-0.22 vs null)
 
 ---
 
@@ -8216,7 +8223,7 @@ From this point forward:
 meta:
   name: "Currier A Structural Contract"
   acronym: "CASC"
-  version: "1.8"
+  version: "1.9"
   date: "2026-02-13"
   status: "LOCKED"
   derived_from: "Tier-2 constraints only"
@@ -8703,7 +8710,8 @@ participation:
           bridge_advantage: "3.8x"  # bridge/non-bridge ARI ratio
           bridge_density_vs_axm_self: { rho: -0.308, p: 0.009 }  # more bridges = weaker attractor = more dynamical options
           interpretation: "Bridge backbone is the geometry→dynamics conduit — the A-derived vocabulary that directly shapes B's macro-state behavior at folio level"
-          provenance: "C1016"
+          b_internal_degeneracy: "At the B corpus level, all 85 unique MIDDLEs are bridges (100% coverage; C1020). Bridge density 0.727 is the per-folio A-manifold metric. The bridge concept distinguishes A→B crossover vocabulary, not a B-internal partition."
+          provenance: "C1016, C1018, C1020"
 
     provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016"
 
@@ -8879,6 +8887,8 @@ provenance:
     - "C1013"  # Bridge MIDDLE topological selection (freq AUC=0.978)
     - "C1014"  # Manifold viability alignment (r=0.914, bridge-mediated)
     - "C1016"  # Bridge conduit: bridge MIDDLEs carry 3.8x more B dynamical archetype info than non-bridges
+    - "C1018"  # Bridge PC1 partial redundancy with hub frequency; archetype discriminator anatomy
+    - "C1020"  # 100% bridge degeneracy at B corpus level (all B MIDDLEs are bridges)
 
   positional:
     - "C260"  # Section isolation
@@ -8915,7 +8925,7 @@ provenance:
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.8"
+  version: "3.10"
   date: "2026-02-13"
   status: "LOCKED"
   layer_type: "grammar contract"
@@ -9010,8 +9020,8 @@ guarantees:
     provenance: "C976, C977, C978, C1006, C1010, C1011, C1015, C1016"
 
   - id: "MACRO_STATE_DYNAMICS"
-    statement: "6-state macro-automaton has full 6×6 transition matrix: AXM is a massive attractor (self=0.697, gravitational pull=0.642), FL_SAFE is a fleeting terminal (self=0.023, return time=117.7 steps, NOT absorbing), CC is a pure initiator (self=0.041); system is ergodic (spectral gap=0.896, mixing time=1.1 steps, stationary matches empirical within 1.2%). Folio-level decomposition reveals 6 dynamical archetypes (silhouette=0.185) that are orthogonal to the 4 REGIMEs (ARI=0.065); REGIME+section explain only 33.7% of transition variance, with 66.3% program-specific"
-    provenance: "C1015, C1016"
+    statement: "6-state macro-automaton has full 6×6 transition matrix: AXM is a massive attractor (self=0.697, gravitational pull=0.642), FL_SAFE is a fleeting terminal (self=0.023, return time=117.7 steps, NOT absorbing), CC is a pure initiator (self=0.041); system is ergodic (spectral gap=0.896, mixing time=1.1 steps, stationary matches empirical within 1.2%). Folio-level decomposition reveals 6 dynamical archetypes (silhouette=0.185) that are orthogonal to the 4 REGIMEs (ARI=0.065); REGIME+section explain only 33.7% of transition variance, with 66.3% program-specific. Folio-level AXM self-transition decomposes as: REGIME+section (42.0%) + PREFIX entropy (5.1%) + hazard density (6.1%) + bridge geometry (6.3%) + non-linear residual (40.1%)"
+    provenance: "C1015, C1016, C1017"
 
   - id: "FL_ROUTING_ASYMMETRY"
     statement: "FL_HAZ/FL_SAFE split is morphologically routed by PREFIX: da is the unique bi-directional FL router (5 HAZ, 5 SAFE, Fisher OR=126.67, p≈0); ar is a pure FL_SAFE selector (5/5=100%, binomial p≈0 vs 2.5% base rate); no other PREFIX has ≥2 tokens in each FL state"
@@ -9022,12 +9032,12 @@ guarantees:
     provenance: "C1015"
 
   - id: "BRIDGE_CONDUIT_MECHANISM"
-    statement: "Bridge MIDDLE backbone (85 MIDDLEs spanning A→B) mediates geometry→dynamics coupling at folio level: bridge-only manifold features predict dynamical archetypes with ARI=0.141 vs non-bridge ARI=0.037 (3.8x); non-bridge MIDDLEs carry essentially zero archetype-predictive information. Bridge density anti-correlates with AXM self-transition (rho=-0.308), indicating more bridge vocabulary = more available pathways = weaker single-state dominance"
-    provenance: "C1016, C1013, C1014"
+    statement: "Bridge MIDDLE backbone (85 MIDDLEs spanning A→B) mediates geometry→dynamics coupling at folio level: bridge-only manifold features predict dynamical archetypes with ARI=0.141 vs non-bridge ARI=0.037 (3.8x); non-bridge MIDDLEs carry essentially zero archetype-predictive information. All 85 unique B corpus MIDDLEs are bridges (100% degeneracy; C1020) — bridge/non-bridge distinguishes A→B crossover vocabulary, not a B-internal partition. The bridge effect is geometric, not densimetric. Bridge centroid PC1 in the 100D discrimination manifold adds ΔR²=0.063 (F=9.58, p=0.003) beyond all morphological features (PREFIX, hazard density), confirming that bridge geometry is a load-bearing dynamics predictor. PC1 is partially redundant with hub frequency gradient (rho=0.568; C1018), but the non-redundant component still significantly differentiates archetypes (F=3.56, p=0.006); PC1 represents a HUB_UNIVERSAL↔STABILITY_CRITICAL gradient"
+    provenance: "C1016, C1017, C1018, C1020, C1013, C1014"
 
   - id: "FOLIO_DYNAMICAL_ARCHETYPES"
-    statement: "72 folios with sufficient transitions (N≥50) cluster into 6 dynamical archetypes organized along an AXM attractor strength axis: 'strong attractor' (AXM self=0.82, n=10) to 'active interchange' (AXM self=0.47, n=7). Archetypes are nearly orthogonal to REGIMEs (ARI=0.065) and weakly aligned with sections (ARI=0.185). Forgiveness = AXM attractor strength (rho=0.678, 6 Bonferroni-significant features)"
-    provenance: "C1016"
+    statement: "72 folios with sufficient transitions (N≥50) cluster into 6 dynamical archetypes organized along an AXM attractor strength axis: 'strong attractor' (AXM self=0.82, n=10) to 'active interchange' (AXM self=0.47, n=7). Archetypes are nearly orthogonal to REGIMEs (ARI=0.065) and weakly aligned with sections (ARI=0.185). Forgiveness = AXM attractor strength (rho=0.678, 6 Bonferroni-significant features). Archetype-specific dynamics show suggestive non-linearity: PREFIX slope is positive in archetype 5 (β=+0.024, but n=7, bootstrap CI spans zero — not established; C1018) and hazard slope is positive in archetype 6 (β=+0.009, permutation p=0.014 but bootstrap CI spans zero — directionally supported, not robust; C1018); mean within-archetype R²=0.230 vs global R²=0.534. Archetypes are discriminated by 8 features across 5 families; strongest: k_frac (F=15.81), SAFETY_BUFFER fraction (F=11.37), HAZARD_TARGET fraction (F=5.73). Archetype 6's hazard tolerance is explained by 1.7x SAFETY_BUFFER enrichment (p=0.003; C1018)"
+    provenance: "C1016, C1017, C1018"
 
   - id: "AFFORDANCE_BIN_SYSTEM"
     statement: "972 MIDDLEs classify into 9 functional bins by affordance signature; chromatic number 3 for PREFIX-lane interaction; HUB_UNIVERSAL (23 MIDDLEs) monopolizes all 17/17 forbidden transitions"
@@ -9070,8 +9080,8 @@ guarantees:
     provenance: "C1003"
 
   - id: "PREFIX_MIDDLE_SELECTIVITY"
-    statement: "PREFIX selects MIDDLE family (102 forbidden combinations) and transforms MIDDLE behavior (within-MIDDLE between-PREFIX JSD = 97.5% of between-MIDDLE JSD); PREFIX channels macro-state selection (76.7% binary FL entropy reduction via positive inclusion; 41.0% entropy reduction across full 6-state partition); 40.2% of MIDDLEs span multiple macro states depending on PREFIX"
-    provenance: "C911, C661, C1012, C1015"
+    statement: "PREFIX selects MIDDLE family (102 forbidden combinations) and transforms MIDDLE behavior (within-MIDDLE between-PREFIX JSD = 97.5% of between-MIDDLE JSD); PREFIX channels macro-state selection (76.7% binary FL entropy reduction via positive inclusion; 41.0% entropy reduction across full 6-state partition); 40.2% of MIDDLEs span multiple macro states depending on PREFIX. Within-MIDDLE routing is genuine (78.7% entropy reduction, z=65.59, p≈0), 80.1% non-positional (survives position-preserving shuffling, z=41.78), and REGIME-invariant (range 0.785–0.832, ratio=1.06 across all 4 REGIMEs)"
+    provenance: "C911, C661, C1012, C1015, C1017"
 
   - id: "PARAGRAPH_EXECUTION_GRADIENT"
     statement: "Paragraph body lines follow a specification→execution gradient: early lines have rare/unique vocabulary (specification), late lines have universal vocabulary (generic execution loop)"
@@ -9155,6 +9165,10 @@ invariants:
     statement: "Pairwise morphological component interactions capture all exploitable TOKEN structure; no three-way synergy"
     provenance: "C1003"
 
+  prefix_routing_regime_invariance:
+    statement: "PREFIX macro-state routing magnitude is invariant across REGIMEs (range 0.785–0.832, ratio=1.06); REGIME modulates transition matrix weights (C979) but NOT the PREFIX routing mechanism itself"
+    provenance: "C1017"
+
   dwell_shape_regime_invariance:
     statement: "Weibull dwell shape (k=1.55) is invariant across REGIMEs; REGIME modulates scale only"
     provenance: "C1006"
@@ -9204,7 +9218,8 @@ morphology:
         function: "Determines operational channel and MIDDLE family selection"
         selectivity: "102 forbidden PREFIX×MIDDLE combinations"
         behavioral_transformation: "Within-MIDDLE between-PREFIX JSD = 97.5% of between-MIDDLE JSD"
-        provenance: "C267, C911, C661, C662"
+        macro_state_routing: "78.7% within-MIDDLE entropy reduction (genuine, not C662 tautology); 80.1% non-positional; REGIME-invariant (ratio=1.06)"
+        provenance: "C267, C911, C661, C662, C1017"
       MIDDLE:
         required: true  # Core semantic carrier
         core_count: 75  # Core MIDDLEs appearing across many folios
@@ -9351,8 +9366,8 @@ morphology:
       provenance: "C897"
     macro_state_routing:
       statement: "FL_HAZ vs FL_SAFE macro-state membership is determined by PREFIX, not MIDDLE alone"
-      mechanism: "da routes both FL_HAZ and FL_SAFE; ar routes exclusively FL_SAFE; 40.2% of MIDDLEs span multiple macro states depending on PREFIX context"
-      provenance: "C1015"
+      mechanism: "da routes both FL_HAZ and FL_SAFE; ar routes exclusively FL_SAFE; 40.2% of MIDDLEs span multiple macro states depending on PREFIX context. Within-MIDDLE routing is genuine (78.7% entropy reduction, z=65.59), 80.1% non-positional, and REGIME-invariant (ratio=1.06)"
+      provenance: "C1015, C1017"
     character_encoding:
       early: "'i' character marks initial state"
       late: "Consonants (r, l, n, m) mark intermediate states"
@@ -9884,7 +9899,8 @@ safety_buffer_architecture:
     PURE_CONNECTOR: ["d", "e", "eey", "ek", "eo", "iin", "s", "y"]
   behavioral_homogeneity: "0/14 KW dimensions significant — functional diversity beneath behavioral uniformity"
   exit_boundary_connection: "HAZARD_TARGET MIDDLEs accumulate at AXM exit boundaries (C1009) — linking safety/hazard vocabulary to gatekeeper mechanism"
-  provenance: "C997, C1000, C1009, F-BRU-023"
+  archetype_differentiation: "SAFETY_BUFFER enrichment differentiates archetypes: archetype 6 has 1.7x more SAFETY_BUFFER MIDDLEs than archetype 5 (0.124 vs 0.072, p=0.003), explaining archetype 6's anomalous hazard tolerance (C1018)"
+  provenance: "C997, C1000, C1009, C1018, F-BRU-023"
 
 # ============================================================
 axm_internal_architecture:
@@ -9894,7 +9910,7 @@ axm_internal_architecture:
     mechanism: "32 AXM classes almost never repeat (mean run 1.054 at 49-class); long 6-state runs are diverse class sequences"
     null_model: "First-order Markov null reproduces empirical dwell (KS D=0.020, p=0.074)"
     weibull_shape: "k=1.55 globally; REGIME-invariant (range 0.096)"
-    regime_modulation: "REGIME modulates dwell SCALE (lambda: 2.3-3.1) but NOT shape — consistent with C979. At folio level, REGIME explains only 14.9% of transition variance (eta²); section explains 24.3%; combined 33.7%. Archetype structure (6 clusters) is orthogonal to REGIME (ARI=0.065) — consistent with C1016"
+    regime_modulation: "REGIME modulates dwell SCALE (lambda: 2.3-3.1) but NOT shape — consistent with C979. At folio level, REGIME explains only 14.9% of transition variance (eta²); section explains 24.3%; combined 33.7%. Archetype structure (6 clusters) is orthogonal to REGIME (ARI=0.065) — consistent with C1016. PREFIX routing mechanism itself is REGIME-invariant (ratio=1.06; C1017)"
     non_geometricity_gradient: "Correlates with class compression: AXM (32 classes) > FQ (4 classes) > FL_HAZ (2 classes, geometric)"
     provenance: "C1006"
 
@@ -9972,6 +9988,29 @@ macro_state_transition_matrix:
   provenance: "C1015"
 
 # ============================================================
+three_compression_architecture:
+
+  statement: "Three orthogonal compressions of B grammar — tensor (variance), macro-automaton (topology), archetypes (dynamics) — are irreducibly independent"
+
+  tensor_characterization:
+    structure: "Morphological transition tensor T[PREFIX, MIDDLE_BIN, SUFFIX_GROUP, CLASS] has rank-8 pairwise-sufficient structure (97.0% variance, CP ≥ Tucker -21%)"
+    automaton_orthogonality: "Tensor class factors do NOT recover 6-state partition (ARI=0.053); macro-automaton is an interpretive abstraction imposed by coarse-graining, not a natural tensor factorization"
+    frequency_dominance: "Tensor's strongest AXM predictor (Factor 2, rho=-0.750) is a class-level frequency gradient (C986, rho=0.854 with class frequency), not structural gating (gatekeeper cosine=0.059)"
+    rank_continuity: "Rank is continuous — CV cosine saturates at rank 4 (0.713); rank 6-12 within 0.006 of each other; no structural knee at rank 8"
+    constraint_irreducibility: "Constraint filtering (35 forbidden/depleted pairs) cannot reconcile tensor and automaton — constrained ARI=0.007, WORSE than unconstrained 0.050 (permutation z=-0.22)"
+    hub_simplicity: "HUB MIDDLEs carry simpler transition structure (effective rank 3 vs 8, PREFIX-diverse); consistent with universal connector role (C1000)"
+    pairwise_confirmation: "Tucker decomposition at matched parameters performs 21% worse — no irreducible multi-axis interactions; confirms C1003 at tensor level"
+    suffix_degeneracy: "SUFFIX is near-degenerate (2 SVD dims for 90% variance); confirms C1004"
+
+  compression_summary:
+    tensor: "Continuous variance landscape (rank 8, graded frequency structure)"
+    automaton: "Discrete topological constraint skeleton (6 states, transition rules)"
+    archetypes: "Categorical folio dynamical personalities (6 types, non-linear profiles)"
+    independence: "ARI=0.053 (tensor vs automaton); silhouette=-0.040 (tensor vs archetypes); ARI=0.065 (archetypes vs REGIMEs)"
+
+  provenance: "C1019, C1020, C1021, C1003, C1004, C1010, C1013"
+
+# ============================================================
 design_freedom:
 
   clamped:
@@ -9987,8 +10026,8 @@ design_freedom:
       freedom: "YES"
 
   principle: "Risk is globally constrained; recovery strategy is locally variable"
-  mechanism: "Recovery variation is mediated by AXM attractor strength — forgiving programs have higher AXM self-transition (rho=0.651), less FQ interchange; brittle programs have weaker attractors. C458's aggregate clamping (hazard CV=0.04-0.11) is the result of stable recovery channels (AXM self≈0.66, CV=0.174), not individual hazard transition stability (hazard CV=1.814)"
-  provenance: "C458, C1016"
+  mechanism: "Recovery variation is mediated by AXM attractor strength — forgiving programs have higher AXM self-transition (rho=0.651), less FQ interchange; brittle programs have weaker attractors. C458's aggregate clamping (hazard CV=0.04-0.11) is the result of stable recovery channels (AXM self≈0.66, CV=0.174), not individual hazard transition stability (hazard CV=1.814). AXM basin depth decomposes into: REGIME+section (42.0%) + PREFIX entropy (5.1%) + hazard density (6.1%) + bridge geometry (6.3%) + non-linear archetype residual (40.1%). Archetype-specific slopes differ suggestively (sign changes observed but not statistically robust at current sample sizes; C1018), consistent with non-linear program-specific tuning"
+  provenance: "C458, C1016, C1017, C1018"
 
 # ============================================================
 control_loop:
@@ -10789,6 +10828,11 @@ provenance:
     - "C1012"  # PREFIX channels macro-state selection (76.7% entropy reduction)
     - "C1015"  # PREFIX-conditioned macro-state routing, 6×6 transition matrix, FL routing asymmetry, MDL optimality
     - "C1016"  # Folio-level decomposition: 6 archetypes orthogonal to REGIME; forgiveness = AXM attractor; bridge conduit; 66.3% program-specific variance
+    - "C1017"  # Dynamics variance decomposition: PREFIX routing genuine/non-positional/REGIME-invariant; hazard density + bridge geometry independent predictors; archetype-specific non-linear slopes
+    - "C1018"  # Archetype geometric anatomy: slope qualifications, k_frac discriminator, SAFETY_BUFFER enrichment, bridge PC1 partial redundancy
+    - "C1019"  # Tensor orthogonality: rank-8 pairwise-sufficient, ARI=0.053 vs macro-states, ΔR²=0.465
+    - "C1020"  # Tensor-archetype geometry: graded curvature (Factor 2 rho=-0.738), 100% bridge degeneracy, HUB rank-3
+    - "C1021"  # CP factor characterization: frequency-dominated, rank continuous, constrained orthogonality complete
 
   affordance_system:
     - "C995"   # 9-bin affordance system
@@ -10798,6 +10842,7 @@ provenance:
     - "C1007"  # AXM gatekeeper subset (exit-boundary enrichment)
     - "C1008"  # AXM directional gating mechanism
     - "C1009"  # AXM exit hazard-target compositional curvature
+    - "C1018"  # HUB sub-role archetype differentiation (k_frac F=15.81, SAFETY_BUFFER 1.7x)
 
   axm_internal_architecture:
     - "C1006"  # Dwell non-geometricity is topology artifact
@@ -10805,10 +10850,16 @@ provenance:
     - "C1008"  # Directional gating (entry/exit asymmetry)
     - "C1009"  # Hazard-target compositional curvature at exit
 
+  tensor_characterization:
+    - "C1019"  # Rank-8 pairwise-sufficient tensor, orthogonal to macro-automaton (ARI=0.053)
+    - "C1020"  # Graded curvature (7/8 factors |rho|>0.40 with AXM), 100% bridge degeneracy, HUB rank-3
+    - "C1021"  # Factor 2 = frequency gradient (rho=0.854), rank continuous, constrained ARI=0.007
+
   prefix_information_decomposition:
     - "C1001"  # PREFIX dual encoding (content + positional grammar)
     - "C1012"  # PREFIX positive macro-state channeling (inclusion > prohibition)
     - "C1015"  # PREFIX is MDL-optimal single-component state router (33.9% compression at corpus scale)
+    - "C1017"  # PREFIX routing genuine (78.7% within-MIDDLE, 80.1% non-positional, REGIME-invariant ratio=1.06)
 
   fingerprint:
     - "C971"   # Cross-line MI = 0.521 bits

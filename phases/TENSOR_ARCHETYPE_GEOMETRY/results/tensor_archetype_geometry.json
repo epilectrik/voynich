@@ -1,0 +1,249 @@
+{
+  "phase": "TENSOR_ARCHETYPE_GEOMETRY",
+  "phase_number": 343,
+  "prefix_labels": [
+    "__BARE__",
+    "ch",
+    "da",
+    "do",
+    "ka",
+    "ke",
+    "lch",
+    "lk",
+    "ok",
+    "ol",
+    "ot",
+    "pch",
+    "qo",
+    "sa",
+    "sh",
+    "so",
+    "ta",
+    "tch",
+    "te",
+    "yk"
+  ],
+  "sub_a": {
+    "n_folios": 72,
+    "a1_silhouette": {
+      "silhouette": -0.04009341193755071,
+      "null_mean": -0.1696404774384253,
+      "null_std": 0.03396188784715235,
+      "z_score": 3.81448363777389,
+      "p_value": 0.0,
+      "pass": false
+    },
+    "a2_manova": {
+      "mean_arch_eta2": 0.3280705854394043,
+      "mean_regime_eta2": 0.2238103364654334,
+      "ratio": 1.465841974148828,
+      "per_dim_arch_eta2": [
+        0.16845557569497885,
+        0.40772366435560214,
+        0.4812296543393584,
+        0.055141566243824124,
+        0.3642083806821629,
+        0.4254611938613457,
+        0.3546603903636316,
+        0.3676842579743309
+      ],
+      "per_dim_regime_eta2": [
+        0.23535521147657018,
+        0.24506027824156626,
+        0.20676110808096618,
+        0.17435480409329276,
+        0.35139292141048317,
+        0.16932889426568695,
+        0.2614553547661705,
+        0.14677411938873136
+      ],
+      "pass": false
+    },
+    "a3_axm_correlation": {
+      "factor_rhos": [
+        [
+          0,
+          0.4978334445578947,
+          8.608403191577659e-06
+        ],
+        [
+          1,
+          -0.5646389208404918,
+          2.389074934394063e-07
+        ],
+        [
+          2,
+          -0.738204532506108,
+          1.3707735761409996e-13
+        ],
+        [
+          3,
+          -0.011351303551266791,
+          0.9246037136137448
+        ],
+        [
+          4,
+          0.5453127638027826,
+          7.302149343470963e-07
+        ],
+        [
+          5,
+          0.6109445217295122,
+          1.2035149662287914e-08
+        ],
+        [
+          6,
+          -0.6488411541237554,
+          7.106306997503279e-10
+        ],
+        [
+          7,
+          0.5442194371151251,
+          7.762462357482489e-07
+        ]
+      ],
+      "best_factor": 2,
+      "best_rho": -0.738204532506108,
+      "max_abs_rho": 0.738204532506108,
+      "pass": true
+    },
+    "a4_kmeans": {
+      "ari": 0.12390298756305383,
+      "pass": false
+    }
+  },
+  "sub_b": {
+    "bridge_degenerate": true,
+    "bridge_coverage": 1.0,
+    "partition_type": "HUB_vs_nonHUB",
+    "n_hub_middles": 23,
+    "n_nonhub_middles": 62,
+    "n_bigrams_full": 13315,
+    "n_bigrams_hub": 9408,
+    "n_bigrams_nonhub": 3907,
+    "full_result": {
+      "ari_at_6": 0.05011983645848019,
+      "best_ari": 0.06448875689435724,
+      "best_k": 8,
+      "rel_error": 0.25959367544999645,
+      "var_explained": 0.9326111236663619,
+      "mean_prefix_entropy": 0.8510324276968557,
+      "effective_rank": 4
+    },
+    "hub_result": {
+      "ari_at_6": 0.062482349618751765,
+      "best_ari": 0.07145745073566896,
+      "best_k": 5,
+      "rel_error": 0.21810703632377465,
+      "var_explained": 0.9524293207060597,
+      "mean_prefix_entropy": 1.0243322228073186,
+      "effective_rank": 4
+    },
+    "nonhub_result": {
+      "ari_at_6": 0.013357433348395844,
+      "best_ari": 0.024450499545867393,
+      "best_k": 10,
+      "rel_error": 0.26911516474104286,
+      "var_explained": 0.9275770281064013,
+      "mean_prefix_entropy": 0.7039902802636335,
+      "effective_rank": 4
+    },
+    "b1_hub_ari": {
+      "value": 0.07145745073566896,
+      "pass": false
+    },
+    "b2_nonhub_ari": {
+      "value": 0.024450499545867393,
+      "pass": true
+    },
+    "b3_hub_rank": {
+      "elbow_rank": 3,
+      "full_rank": 8,
+      "rank_sweep": {
+        "3": {
+          "error": 0.29207754830681576,
+          "variance": 0.9146907057750797
+        },
+        "4": {
+          "error": 0.21942764353930067,
+          "variance": 0.9518515092507897
+        },
+        "5": {
+          "error": 0.17748487563122178,
+          "variance": 0.9684991189221698
+        },
+        "6": {
+          "error": 0.15744353243320156,
+          "variance": 0.9752115340949554
+        },
+        "7": {
+          "error": 0.13432869758709076,
+          "variance": 0.9819558010045559
+        },
+        "8": {
+          "error": 0.11129633407235967,
+          "variance": 0.9876131260220538
+        },
+        "9": {
+          "error": 0.1321275886508172,
+          "variance": 0.9825423003173205
+        }
+      },
+      "pass": true
+    },
+    "b4_prefix_entropy": {
+      "full_entropy": 0.8510324276968557,
+      "hub_entropy": 1.0243322228073186,
+      "pass": false
+    }
+  },
+  "synthesis": {
+    "predictions": {
+      "A1": {
+        "description": "Archetypes cluster in CP space (silhouette > 0.15)",
+        "result": false,
+        "value": -0.04009341193755071
+      },
+      "A2": {
+        "description": "Archetypes > 2x REGIME in CP variance",
+        "result": false,
+        "value": 1.465841974148828
+      },
+      "A3": {
+        "description": "AXM attractor loads on specific CP factors (|rho| > 0.40)",
+        "result": true,
+        "value": 0.738204532506108
+      },
+      "A4": {
+        "description": "CP space independently recovers archetypes (ARI > 0.15)",
+        "result": false,
+        "value": 0.12390298756305383
+      },
+      "B1": {
+        "description": "HUB-restricted class ARI > 0.15 vs C1010",
+        "result": false,
+        "value": 0.07145745073566896
+      },
+      "B2": {
+        "description": "Non-HUB ARI < 0.10",
+        "result": true,
+        "value": 0.024450499545867393
+      },
+      "B3": {
+        "description": "HUB tensor has lower effective rank",
+        "result": true,
+        "value": 3
+      },
+      "B4": {
+        "description": "HUB PREFIX factors more channeled (lower entropy)",
+        "result": false,
+        "value": 1.0243322228073186
+      }
+    },
+    "n_pass": 3,
+    "n_total": 8,
+    "sub_a_verdict": "ARCHETYPE_GEOMETRY_ABSENT",
+    "sub_b_verdict": "HUB_TOPOLOGY_ABSENT",
+    "verdict": "TENSOR_GEOMETRY_ORTHOGONAL (ARCHETYPE_GEOMETRY_ABSENT; HUB_TOPOLOGY_ABSENT)"
+  }
+}

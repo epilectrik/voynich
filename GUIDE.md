@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 881 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 886 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -274,7 +274,7 @@ The four layers are independent systems that share vocabulary but serve differen
 
 **AZC and B share vocabulary but not organization.** AZC classifies tokens by operational character in positional diagrams. B deploys the same tokens in sequential control programs. The 69.7% vocabulary overlap reflects shared domain, not causal connection — AZC position has zero independent effect on B behavior after controlling for MIDDLE.
 
-**The bridge backbone connects A's vocabulary geometry to B's execution dynamics.** Of the 972 MIDDLEs in Currier A's discrimination space, 85 are "bridge" MIDDLEs that also appear in Currier B. These bridges carry nearly all of the information that connects vocabulary structure (which MIDDLEs a folio uses) to dynamical behavior (how that folio's macro-automaton operates). Non-bridge MIDDLEs contribute almost nothing to predicting a folio's dynamical profile. The bridge backbone is where vocabulary geometry and execution topology overlap — it's the concrete mechanism through which A's discrimination index constrains B's behavioral space.
+**The bridge backbone connects A's vocabulary geometry to B's execution dynamics.** Of the 972 MIDDLEs in Currier A's discrimination space, 85 are "bridge" MIDDLEs that also appear in Currier B. These bridges carry nearly all of the information that connects vocabulary structure (which MIDDLEs a folio uses) to dynamical behavior (how that folio's macro-automaton operates). Non-bridge MIDDLEs contribute almost nothing to predicting a folio's dynamical profile. The bridge backbone is where vocabulary geometry and execution topology overlap — it's the concrete mechanism through which A's discrimination index constrains B's behavioral space. Notably, from B's perspective all 85 unique MIDDLEs are bridges (100% coverage; C1020) — "bridge vs non-bridge" partitions A's vocabulary space, not B's internal grammar.
 
 **The only structural element that transfers perfectly across all systems** is the morphological type dichotomy: kernel-heavy prefixes (ch, sh, ok) make ~100% kernel character contact and avoid LINK positions; kernel-light prefixes (da, sa) make less than 5% kernel contact and cluster near LINK positions. This division reflects control-flow participation and is universal across all four systems.
 
