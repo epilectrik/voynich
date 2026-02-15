@@ -281,14 +281,15 @@ When asked to **"sync reference files for our expert"**, update these 5 files:
 |------|---------|-----------|
 | `context/CONSTRAINT_TABLE.txt` | All constraints (Tier 0-2) | `python context/generate_constraint_table.py` |
 | `context/MODEL_FITS/FIT_TABLE.txt` | All fits (F0-F4) | `python context/MODEL_FITS/generate_fit_table.py` |
-| `context/EXPERT_CONTEXT.md` | Combined expert context | `python context/generate_expert_context.py` |
-| `.claude/agents/expert-advisor.md` | Expert-advisor agent (embedded constraints) | `python context/generate_expert_context.py` (same script) |
+| `context/EXPERT_CONTEXT.md` | Combined expert context | `python context/generate_expert_context.py --compact` |
+| `.claude/agents/expert-advisor.md` | Expert-advisor agent (embedded constraints) | `python context/generate_expert_context.py --compact` (same script) |
 | `context/MODEL_CONTEXT.md` | Architectural guide | Manual edit |
 | `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` | Tier 3-4 interpretations | Manual edit |
 
 **Workflow:**
-1. Run all three generator scripts (`generate_constraint_table.py`, `generate_fit_table.py`, `generate_expert_context.py`)
+1. Run all three generator scripts (`generate_constraint_table.py`, `generate_fit_table.py`, `generate_expert_context.py --compact`)
 2. `generate_expert_context.py` produces BOTH `EXPERT_CONTEXT.md` AND the expert-advisor agent
+3. **ALWAYS use `--compact` flag** — without it the agent is ~600KB (exceeds context budget). Compact mode produces ~350KB with full constraint coverage.
 3. Update MODEL_CONTEXT.md if structural understanding changed
 4. Update INTERPRETATION_SUMMARY.md if speculative interpretations changed
 5. Verify counts match (constraints, fits)
