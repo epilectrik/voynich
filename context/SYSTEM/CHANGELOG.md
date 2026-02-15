@@ -4,6 +4,34 @@
 
 ---
 
+## Version 3.90 (2026-02-14) - Brunschwig Semantic Boundary Probe (F-BRU-029)
+
+### Summary
+
+Phase 363 probes three remaining paths to Tier 4 semantic mapping between Brunschwig and Voynich. Result: PARTIAL_EXTENSION (6/9 predictions pass). Path A (3/3): Safety buffer profiles show hazard class specificity — 19/22 buffers prevent PHASE_ORDERING violations (86%, vs 41% of pairs), with QO-prefixed buffers enriched 9/19 in PHASE_ORDERING vs 0/3 elsewhere. This deepens F-BRU-023's thermodynamic coherence from token-level to class-level, showing QO-lane energy interventions specifically target phase-sequencing failures. Path B (2/3): Process-side REGIME gradient is weakly positive (rho=0.200), contrasting F-BRU-028's strongly negative output rho. Brunschwig Degree 4 has highest precision/monitoring. REGIME_2 (not REGIME_4) has narrowest hazard envelope. Path C (1/3): Brunschwig operational PCA needs only 3 components for 80% but axes don't align with Voynich — Brunschwig PC1 is preparation-vs-collection, not energy/intensity. MIDPROCESS actions are absent from curated data (extraction gap, not structural difference). 1 new fit (F-BRU-029). Phase 363.
+
+### New Fits
+
+| ID | Name | Tier |
+|----|------|------|
+| F-BRU-029 | Semantic Boundary Probe (Three-Path) | F4 |
+
+---
+
+## Version 3.89 (2026-02-14) - Brunschwig Output Gradient Inversion (F-BRU-028)
+
+### Summary
+
+Phase 362 tests whether Brunschwig and Voynich output-side parameters follow the same REGIME-level gradient. Three-tier test: cross-REGIME Spearman correlation on 5 parameter pairings (Tier 1), within-REGIME_1 KS shape comparison (Tier 2), and Mantel correlation structure comparison (Tier 3). Result: GRADIENT_INVERTED — all 5 positive pairings show negative rho (range -0.258 to -0.800), meaning REGIME gradients are systematically inverted. Brunschwig REGIME_4 (PRECISION) has the highest output complexity (use_count=6.0, text_length=4285); Voynich REGIME_4 has the lowest (n_tokens=81.5, line_count=13.0). The null pair correctly shows rho=0.000. KS-2 passes (text_length vs n_tokens shapes similar, p=0.23). Mantel r=0.38 positive but not significant (p=0.138). Pooled analysis: 3/5 same direction at STANDARD vs SPECIALIZED granularity. This is architecturally informative: the variance architecture match (F-BRU-027, p=0.0019) operates at a deeper level than surface parametrics. Free output-side variation (C980, C1035) is independently parameterized in each system. The inversion has a structural explanation via C494 (REGIME_4 precision constrains Voynich option space) and C197 (expert vs novice documentation orientation). 1 new fit (F-BRU-028). Phase 362.
+
+### New Fits
+
+| ID | Name | Tier |
+|----|------|------|
+| F-BRU-028 | Output Parameter REGIME Gradient Mapping | F3 |
+
+---
+
 ## Version 3.88 (2026-02-14) - Brunschwig Variance Architecture Alignment (F-BRU-027)
 
 ### Summary

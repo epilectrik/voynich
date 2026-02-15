@@ -1,0 +1,236 @@
+{
+  "phase": 363,
+  "fit_id": "F-BRU-029",
+  "title": "Brunschwig-Voynich Semantic Boundary Probe",
+  "path_a": {
+    "class_buffer_counts": {
+      "PHASE_ORDERING": 19,
+      "COMPOSITION_JUMP": 1,
+      "CONTAINMENT_TIMING": 1,
+      "RATE_MISMATCH": 1,
+      "ENERGY_OVERSHOOT": 0
+    },
+    "prefix_profiles": {
+      "PHASE_ORDERING": {
+        "da": 4,
+        "lch": 1,
+        "qo": 9,
+        "ok": 1,
+        "ch": 1,
+        "lk": 1,
+        "to": 1,
+        "ke": 1
+      },
+      "COMPOSITION_JUMP": {
+        "none": 1
+      },
+      "CONTAINMENT_TIMING": {
+        "ch": 1
+      },
+      "RATE_MISMATCH": {
+        "ok": 1
+      },
+      "ENERGY_OVERSHOOT": {}
+    },
+    "a1": {
+      "test": "chi2",
+      "p": 0.010367906274483325,
+      "pass": true
+    },
+    "a2": {
+      "most_pairs_class": "PHASE_ORDERING",
+      "most_buffers_class": "PHASE_ORDERING",
+      "pass": true
+    },
+    "a3": {
+      "po_qo": 9,
+      "po_total": 19,
+      "other_qo": 0,
+      "other_total": 3,
+      "pass": true
+    },
+    "predictions_passing": 3
+  },
+  "path_b": {
+    "voynich_envelopes": {
+      "REGIME_1": {
+        "n": 31,
+        "mean": 0.20199165238733255,
+        "std": 0.04013573395374099,
+        "cv": 0.19869996348551092,
+        "min": 0.12967581047381546,
+        "max": 0.2821576763485477,
+        "range": 0.15248186587473225,
+        "iqr": 0.06362469936764911
+      },
+      "REGIME_2": {
+        "n": 8,
+        "mean": 0.2780694765747552,
+        "std": 0.04440268731080202,
+        "cv": 0.1596819897593649,
+        "min": 0.20930232558139536,
+        "max": 0.3333333333333333,
+        "range": 0.12403100775193796,
+        "iqr": 0.05982707991813099
+      },
+      "REGIME_3": {
+        "n": 15,
+        "mean": 0.23353930615421628,
+        "std": 0.0841746831988492,
+        "cv": 0.36043047564449365,
+        "min": 0.1273209549071618,
+        "max": 0.4418604651162791,
+        "range": 0.3145395102091173,
+        "iqr": 0.10615101986133907
+      },
+      "REGIME_4": {
+        "n": 18,
+        "mean": 0.2786030100537382,
+        "std": 0.05919823219236997,
+        "cv": 0.21248238553112384,
+        "min": 0.16455696202531644,
+        "max": 0.42592592592592593,
+        "range": 0.2613689639006095,
+        "iqr": 0.07431550779327817
+      }
+    },
+    "brunschwig_intensity": {
+      "1": {
+        "n": 48,
+        "mean_precision": 0.041666666666666664,
+        "mean_monitoring": 0.017354166666666667,
+        "compliance_rate": 0.7857142857142857,
+        "composite": 0.08615863095238097
+      },
+      "2": {
+        "n": 417,
+        "mean_precision": 0.10311750599520383,
+        "mean_monitoring": 0.029522781774580335,
+        "compliance_rate": 0.8757396449704142,
+        "composite": 0.08738194343933137
+      },
+      "3": {
+        "n": 35,
+        "mean_precision": 0.0,
+        "mean_monitoring": 0.0,
+        "compliance_rate": 0.8571428571428571,
+        "composite": 0.04285714285714287
+      },
+      "4": {
+        "n": 9,
+        "mean_precision": 0.1111111111111111,
+        "mean_monitoring": 0.05555555555555555,
+        "compliance_rate": 0.8571428571428571,
+        "composite": 0.10396825396825399
+      }
+    },
+    "b1": {
+      "narrowest_regime": "REGIME_2",
+      "pass": false
+    },
+    "b2": {
+      "highest_precision_degree": 4,
+      "highest_monitoring_degree": 4,
+      "pass": true
+    },
+    "b3": {
+      "rho_composite": 0.19999999999999998,
+      "rho_precision_range": 0.19999999999999998,
+      "pass": true
+    },
+    "predictions_passing": 2
+  },
+  "path_c": {
+    "n_recipes": 228,
+    "brunschwig_var_explained": [
+      0.38733542128260323,
+      0.2685685730919981,
+      0.19735888818295633,
+      0.1467371174424424,
+      3.0263980471650483e-17,
+      0.0,
+      0.0
+    ],
+    "brunschwig_n_for_80": 3,
+    "brunschwig_loadings": {
+      "PC1": {
+        "COLLECTION": -0.6413489048822497,
+        "PREPARATION": 0.6752320050384113,
+        "PRETREATMENT": 0.024245621413366416,
+        "DISTILLATION": -0.3466112340715808,
+        "MIDPROCESS": -0.0,
+        "POSTPROCESS": 0.10957245929430176,
+        "STORAGE": -0.0
+      },
+      "PC2": {
+        "COLLECTION": 0.15055750673688909,
+        "PREPARATION": -0.2368076103595571,
+        "PRETREATMENT": 0.6095940001972004,
+        "DISTILLATION": -0.5350214995110898,
+        "MIDPROCESS": -0.0,
+        "POSTPROCESS": 0.5132267947267066,
+        "STORAGE": -0.0
+      },
+      "PC3": {
+        "COLLECTION": -0.233142110346046,
+        "PREPARATION": -0.1958140013405848,
+        "PRETREATMENT": -0.4508566353379197,
+        "DISTILLATION": 0.2695769473888408,
+        "MIDPROCESS": 0.0,
+        "POSTPROCESS": 0.7945805164177301,
+        "STORAGE": 0.0
+      },
+      "PC4": {
+        "COLLECTION": -0.4032638860202897,
+        "PREPARATION": -0.07247988083583548,
+        "PRETREATMENT": 0.6386671530829235,
+        "DISTILLATION": 0.6513077386564178,
+        "MIDPROCESS": 0.0,
+        "POSTPROCESS": 0.005234715374811259,
+        "STORAGE": 0.0
+      },
+      "PC5": {
+        "COLLECTION": 0.5907850827388225,
+        "PREPARATION": 0.6666239110627644,
+        "PRETREATMENT": 0.12899560733055979,
+        "DISTILLATION": 0.311029173035358,
+        "MIDPROCESS": -0.0,
+        "POSTPROCESS": 0.3052974517139445,
+        "STORAGE": 0.0
+      }
+    },
+    "voynich_n_for_80": 5,
+    "c1": {
+      "bru_n_for_80": 3,
+      "voy_n_for_80": 5,
+      "pass": true
+    },
+    "c2": {
+      "bru_pc1_top": [
+        [
+          "PREPARATION",
+          0.6752320050384113
+        ],
+        [
+          "COLLECTION",
+          -0.6413489048822497
+        ],
+        [
+          "DISTILLATION",
+          -0.3466112340715808
+        ]
+      ],
+      "energy_fraction": 0.19288217134627755,
+      "pass": false
+    },
+    "c3": {
+      "midprocess_max_pc": 1,
+      "midprocess_max_val": 0.0,
+      "pass": false
+    },
+    "predictions_passing": 1
+  },
+  "total_passing": 6,
+  "total_tests": 9,
+  "verdict": "PARTIAL_EXTENSION"
+}
