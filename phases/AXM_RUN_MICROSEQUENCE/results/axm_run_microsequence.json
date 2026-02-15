@@ -1,0 +1,167 @@
+{
+  "phase_name": "AXM_RUN_MICROSEQUENCE",
+  "phase_number": 360,
+  "n_folios": 55,
+  "s1_run_statistics": {
+    "total_runs": 2383,
+    "total_bigrams": 6054,
+    "run_length_mean": 3.54,
+    "run_length_median": 3.0,
+    "run_length_max": 13
+  },
+  "s2_entropy_gradient": {
+    "corpus_slope": -0.2481,
+    "corpus_curvature": -0.0361,
+    "corpus_positions": {
+      "1": 3.8445,
+      "2": 3.6553,
+      "3": 3.5024,
+      "4": 3.2824,
+      "5": 3.0427,
+      "6": 2.5191
+    },
+    "folio_slope_mean": -0.2683,
+    "folio_slope_std": 0.1409,
+    "folio_curvature_mean": -0.0033,
+    "folio_curvature_std": 0.2128
+  },
+  "s3_middle_asymmetry": {
+    "corpus_jsd_mean": 0.0657,
+    "folio_jsd_mean_mean": 0.449195,
+    "folio_jsd_mean_std": 0.126899,
+    "folio_jsd_mean_cv": 0.2825,
+    "folio_jsd_var_mean": 0.030941,
+    "folio_jsd_skew_mean": 0.4169,
+    "classes_computed_mean": 7.1
+  },
+  "s4_cmi": {
+    "folio_cmi_mean": 1.696339,
+    "folio_cmi_std": 0.29993,
+    "folio_cmi_min": 0.969545,
+    "folio_cmi_max": 2.3559,
+    "cmi_variance_observed": 0.08995808,
+    "cmi_variance_perm_mean": 0.08956255,
+    "cmi_variance_perm_p": 0.455,
+    "n_permutations": 200
+  },
+  "s5_entropy_prediction": {
+    "r2_on_residual_train": 0.0342,
+    "r2_on_residual_loo": -0.086,
+    "r2_combined_train": 0.5757,
+    "r2_combined_loo": 0.2108,
+    "incremental_loo": -0.0963,
+    "slope_vs_residual_rho": 0.0843,
+    "slope_vs_residual_p": 0.5407,
+    "curvature_vs_residual_rho": -0.1777,
+    "curvature_vs_residual_p": 0.1942
+  },
+  "s6_jsd_prediction": {
+    "r2_on_residual_train": 0.0695,
+    "r2_on_residual_loo": -0.087,
+    "r2_combined_train": 0.6598,
+    "r2_combined_loo": 0.3442,
+    "incremental_loo": 0.037,
+    "jsd_mean_vs_residual_rho": -0.2945,
+    "jsd_mean_vs_residual_p": 0.0291
+  },
+  "s7_cmi_prediction": {
+    "r2_on_residual_train": 0.0192,
+    "r2_on_residual_loo": -0.086,
+    "r2_combined_train": 0.6858,
+    "r2_combined_loo": 0.4711,
+    "incremental_loo": 0.164,
+    "cmi_vs_residual_rho": 0.2373,
+    "cmi_vs_residual_p": 0.0811
+  },
+  "s8_combined_prediction": {
+    "r2_on_residual_train": 0.1312,
+    "r2_on_residual_loo": -0.1481,
+    "r2_combined_train": 0.7488,
+    "r2_combined_loo": 0.4599,
+    "incremental_loo": 0.1527
+  },
+  "s10_size_control": {
+    "cmi_vs_log_n_rho": 0.4989,
+    "cmi_vs_log_n_p": 0.000106,
+    "jsd_vs_log_n_rho": -0.675,
+    "jsd_vs_log_n_p": 0.0,
+    "log_n_vs_residual_rho": 0.3941,
+    "log_n_vs_residual_p": 0.002912,
+    "jsd_resid_vs_residual_rho": -0.1486,
+    "jsd_resid_vs_residual_p": 0.2788,
+    "incr_loo_jsd_residualized": -0.0416,
+    "cmi_resid_vs_residual_rho": 0.0819,
+    "cmi_resid_vs_residual_p": 0.5523,
+    "incr_loo_cmi_residualized": 0.0085,
+    "incr_loo_no_cmi": -0.0517,
+    "cmi_raw_mean": 1.6963,
+    "cmi_corrected_mean": 1.8538,
+    "cmi_bias_correction_mean": -0.1575,
+    "cmi_corrected_vs_residual_rho": 0.2975,
+    "cmi_corrected_vs_residual_p": 0.0274,
+    "incr_loo_cmi_corrected": 0.2023
+  },
+  "s9_archetype_stratification": {
+    "slope_anova_F": 1.946,
+    "slope_anova_p": 0.1173,
+    "slope_eta2": 0.1347,
+    "curvature_anova_F": 1.61,
+    "curvature_anova_p": 0.1864,
+    "curvature_eta2": 0.1141,
+    "jsd_anova_F": 1.293,
+    "jsd_anova_p": 0.2854,
+    "jsd_eta2": 0.0938,
+    "cmi_anova_F": 2.118,
+    "cmi_anova_p": 0.0924,
+    "cmi_eta2": 0.1449
+  },
+  "c1017_baseline": {
+    "r2_train": 0.5753,
+    "r2_loo": 0.3072
+  },
+  "predictions": {
+    "P1": {
+      "description": "Entropy gradient predicts residual (LOO incr R2 > 0.02)",
+      "result": "Incremental LOO R2=-0.0963",
+      "incr_loo_r2": -0.0963,
+      "pass": false
+    },
+    "P2": {
+      "description": "MIDDLE asymmetry predicts residual (LOO incr R2 > 0.02)",
+      "result": "Incremental LOO R2=+0.0370",
+      "incr_loo_r2": 0.037,
+      "pass": true
+    },
+    "P3": {
+      "description": "Per-folio CMI variance exceeds permutation null (p < 0.01)",
+      "result": "p=0.4550, observed var=0.08995808",
+      "p_value": 0.455,
+      "observed_var": 0.08995808,
+      "pass": false
+    },
+    "P4": {
+      "description": "Combined micro-sequential features predict residual (LOO incr R2 > 0.02)",
+      "result": "Incremental LOO R2=+0.1527",
+      "incr_loo_r2": 0.1527,
+      "pass": true
+    },
+    "P5": {
+      "description": "Entropy gradient curvature differs by archetype (ANOVA p < 0.01)",
+      "result": "F=1.610, p=0.1864",
+      "f_stat": 1.61,
+      "p_value": 0.1864,
+      "pass": false
+    },
+    "P6": {
+      "description": "MIDDLE asymmetry CV > class-composition CV",
+      "result": "JSD CV=0.2825 vs composition CV=1.0480",
+      "jsd_cv": 0.2825,
+      "composition_cv": 1.048,
+      "pass": false
+    }
+  },
+  "n_pass": 2,
+  "n_total": 6,
+  "global_decision_rule_met": false,
+  "verdict": "MICROSEQUENCE_WEAK_SIGNAL"
+}

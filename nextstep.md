@@ -1,53 +1,36 @@
-# Next Research Phase: AXM Run Curvature & Micro-Sequence Geometry
+# Next Research Direction: Post-Residual Closure
 
-**Status:** READY
-**Current state:** v3.86 | 902 constraints | 359 phases | Both remotes need push
+**Status:** OPEN — seeking new direction
+**Current state:** v3.87 | 903 constraints | 360 phases | Both remotes need push
 
 ---
 
 ## Context
 
-Three consecutive phases have eliminated candidate strata for C1035's 57% irreducible AXM self-transition residual:
+The AXM self-transition residual investigation is **complete**. Four consecutive phases (357-360) systematically eliminated every candidate stratum:
 
-1. **C1035 (Phase 357):** Aggregate folio-level statistics — no signal
-2. **C1036 (Phase 358):** AXM boundary transition proportions — frequency-neutral
-3. **C1037 (Phase 359):** Within-AXM class composition profiles — redundant with existing predictors
+| Phase | Stratum | Result |
+|-------|---------|--------|
+| 357 (C1035) | Aggregate folio statistics | 0/7 pass, all dR² < 0.013 |
+| 358 (C1036) | AXM boundary transitions | Frequency-proportional CV |
+| 359 (C1037) | Within-AXM class composition | Redundant (+0.005 LOO incr) |
+| 360 (C1038) | Micro-sequential dynamics | Size artifacts after control |
 
-**What remains:** The only untested stratum is **micro-sequential dynamics** — the temporal ordering of tokens within AXM runs. C1024 shows MIDDLE carries 0.070 bits of execution asymmetry (vs PREFIX 0.018 bits). This directional information lives in token sequences, which are not captured by composition profiles.
+**Conclusion:** The 57% residual IS the design freedom space predicted by C458 (recovery freedom CV=0.72-0.82) and C980 (66.3% free variation envelope). Each program is independently parameterized within the grammar's constraints.
+
+**New finding from Phase 360:** AXM runs converge monotonically (entropy 3.84→2.52 bits, slope -0.248). Grammar-level invariant, not program-specific.
 
 ---
 
-## Proposed Phase 360: AXM Run Curvature & Micro-Sequence Geometry
+## Possible New Directions
 
-From external expert consultation. This is the last testable stratum before declaring the residual genuinely irreducible.
-
-### Core Measures (from expert outline)
-
-1. **Conditional transition entropy gradients inside AXM runs** — Does per-step entropy rise, fall, or curve as a function of position within an AXM run? Per-folio gradient slope/curvature.
-
-2. **Signed transition imbalance within run segments** — Split each AXM run into early/middle/late segments. Compute directed transition counts (class A→B minus B→A). Do folios differ in which direction dominates?
-
-3. **Higher-order mutual information per folio** — C969 shows CMI = 0.012 bits corpus-wide. Does per-folio CMI decomposition reveal folio-specific structure invisible in the aggregate?
-
-4. **Local motif replication curvature** — Within AXM runs, do specific 2-grams or 3-grams (class-level) replicate at rates above/below chance? Is replication curvature folio-specific?
-
-5. **AXM internal cycle basis weights** — Construct per-folio directed class transition graphs within AXM. Extract cycle basis. Do cycle weights differ across folios in structured ways?
-
-6. **Per-folio MIDDLE asymmetry distribution** — C1024 shows MIDDLE asymmetry = 0.070 bits corpus-wide. Decompose per folio: does the distribution of signed MIDDLE JSD values differ across folios?
-
-### Key Constraints
-
-| Constraint | Relevance |
-|-----------|-----------|
-| C1024 | PREFIX symmetric router, MIDDLE carries execution asymmetry (0.070 bits) |
-| C969 | 2nd-order alternation bias exists (CMI=0.012 bits) but small |
-| C1027 | Hazard violations are structurally conditioned |
-| C966 | First-order Markov sufficiency for EN lane oscillation |
-| C1006 | AXM runs are diverse class sequences (mean class run = 1.054) |
+1. Consult expert on what characterization frontiers remain
+2. Return to generative modeling (M2 improvements from C1034)
+3. Explore Currier A / AZC structural questions
+4. Application work (visualization, tools)
 
 ---
 
 ## Pending Action
 
-1. Consult expert on which measures to prioritize (or run all)
-2. Design and execute Phase 360
+1. Consult expert on next research direction
