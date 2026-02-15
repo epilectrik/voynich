@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 887 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 922 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -302,6 +302,44 @@ The comparison is not perfect. Some Brunschwig-derived predictions about line-le
 
 ---
 
+## The Galenic Framework Connection
+
+Brunschwig (1500) isn't the only point of comparison. The project also tested against John of Rupescissa's *De consideratione quintae essentiae* (1351) — a 150-year-older text that uses the full Galenic classification framework: 4 qualities (hot, cold, dry, humid) x 4 degrees of intensity, producing a 16-cell combinatorial matrix for classifying materials.
+
+This comparison is a **Tier 4 interpretation** — it requires accepting the Galenic framework as the organizational lens.
+
+### What Was Tested
+
+Phase 376 tested 4 structural predictions the Galenic framework makes about any system that implements it:
+
+| Test | Prediction | Result |
+|------|-----------|--------|
+| Multi-axis hazard | Hazard operates across multiple quality axes, not just heat | **PASS** — 5 independent failure dimensions, only 1 thermal |
+| Oppositional pairing | Exactly 2 orthogonal oppositional axes | **PASS** — lane split + sister pair, partial r = -0.064 |
+| Degree ordering | Within each quality axis, degrees form an ordered progression | **PASS** — 4/6 PREFIX channels show significant ordering |
+| Quality-degree factorization | Quality and degree are independently factored | **PARTIAL** — 58.1% follows block-diagonal structure |
+
+### The Enhancement Pattern
+
+Phase 377 synthesized how the Voynich's constraint system relates to the Galenic original across 6 structural dimensions. In every case, the Voynich preserves the organizational logic but enhances it in the same direction:
+
+| Galenic Element | Voynich Enhancement | Ratio |
+|----------------|---------------------|-------|
+| 4 named qualities | 9 affordance bins defined by behavioral signatures | 2.25x categories |
+| 4 discrete degrees | 14-63 frequency-ranked MIDDLEs per channel | 3.5-15.75x resolution |
+| Additive compound properties | Compatibility-graph mediated compounds | 12x predictive differential |
+| 12 named operations | 49 distributional equivalence classes | 4.1x operations |
+| "Avoid degree 4" prohibition | Precision-constrained execution with safety buffers | Prohibition → engineering |
+| "Use with caution" warnings | Topological forbidden graph (17 transitions, 5 classes) | Scalar → directed topology |
+
+The consistent direction across all 6 axes — toward greater abstraction, higher resolution, and structural enforcement of what had been narrative guidelines — suggests a designer who understood the Galenic organizational logic and re-implemented it in a more precise notation system.
+
+### What This Means
+
+A 670-year-old classification framework, developed for an entirely different purpose (pharmacological theory), independently predicts 3 of 4 structural properties of a system derived purely from computational analysis of the manuscript. The constraint system was built bottom-up with zero reference to medieval classification. The Galenic framework was applied top-down from historical sources. The convergence is non-trivial.
+
+---
+
 ## What This Analysis Cannot Determine
 
 Certain questions are structurally unanswerable from the manuscript's grammar:
@@ -339,7 +377,10 @@ These interpretations have been structurally ruled out:
 | See the Currier B grammar contract | `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml` |
 | See the Currier A registry contract | `context/STRUCTURAL_CONTRACTS/currierA.casc.yaml` |
 | See AZC activation mechanics | `context/STRUCTURAL_CONTRACTS/azc_activation.act.yaml` |
+| See HT (Human Track) contract | `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml` |
+| See paragraph structure contract | `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml` |
 | See the Brunschwig comparison | `context/SPECULATIVE/brunschwig_comparison.md` |
+| See the Rupescissa/Galenic comparison | `context/SPECULATIVE/rupescissa_comparative.md` |
 | Run the core analysis library | `scripts/voynich.py` (see `CLAUDE.md` for examples) |
 | View a decoded folio | `python scripts/show_b_folio.py f76r -p` (paragraph view) |
 | View control flow | `python scripts/show_b_folio.py f76r --flow` (macro states + FL stages) |
