@@ -4,6 +4,20 @@
 
 ---
 
+## Version 3.86 (2026-02-14) - AXM Class Composition Redundancy (C1037)
+
+### Summary
+
+Per-folio AXM class composition profiling (32 classes across 72 folios, CLR-transformed PCA) fails to decompose C1035's 57% irreducible residual. Class PCs produce LOO R² = -0.071 on residuals (worse than predicting the mean). Combined with C1017 baseline, class PCs add only +0.005 incremental LOO R² (0.433 → 0.437). The class composition signal is entirely absorbed by existing predictors. PREFIX and class composition are strongly coupled (rho = -0.55, p < 0.000001), confirming PREFIX routing (C1023) governs class activation. C458's asymmetry does not manifest as differential class-level stability (hazard vs non-hazard CV diff = -0.026). Third consecutive elimination stratum: aggregate statistics (C1035), boundary transitions (C1036), class composition (C1037). Remaining untested candidate: micro-sequential dynamics within AXM runs. 1 new constraint (C1037). Phase 359.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1037 | AXM Class Composition Redundant | 2 |
+
+---
+
 ## Version 3.85 (2026-02-14) - Exit Pathway Neutrality (C1036)
 
 ### Summary
