@@ -1,40 +1,53 @@
-# Next Research Phase: Within-AXM Dynamics
+# Next Research Phase: AXM Run Curvature & Micro-Sequence Geometry
 
 **Status:** READY
-**Current state:** v3.85 | 901 constraints | 358 phases | Both remotes need push
+**Current state:** v3.86 | 902 constraints | 359 phases | Both remotes need push
 
 ---
 
 ## Context
 
-Phase 358 (C1036) proved that C458's hazard/recovery asymmetry does NOT manifest at the AXM macro-state boundary. Exit allocation, ingress allocation, and dwell duration all show frequency-proportional CV (FQ < FL < CC < AXm). Exit pathways are independently routed (FL/CC rho=-0.003), consistent with PREFIX routing (C1023).
+Three consecutive phases have eliminated candidate strata for C1035's 57% irreducible AXM self-transition residual:
 
-Combined with C1035 (aggregate folio statistics fail), this eliminates two entire categories from the 57% irreducible design freedom space:
-1. Folio-level aggregate statistics (C1035)
-2. AXM boundary transition proportions (C1036)
+1. **C1035 (Phase 357):** Aggregate folio-level statistics — no signal
+2. **C1036 (Phase 358):** AXM boundary transition proportions — frequency-neutral
+3. **C1037 (Phase 359):** Within-AXM class composition profiles — redundant with existing predictors
 
-**What remains:** The design freedom must live in:
-- Within-AXM micro-dynamics (which of 32 AXM classes are active, in what pattern)
-- PREFIX routing distributions (how PREFIX channels traffic within AXM)
-- Hazard adjacency depth (pre-exit structure, not exit destination)
-- Dwell path composition (the sequence within AXM, not just its length)
+**What remains:** The only untested stratum is **micro-sequential dynamics** — the temporal ordering of tokens within AXM runs. C1024 shows MIDDLE carries 0.070 bits of execution asymmetry (vs PREFIX 0.018 bits). This directional information lives in token sequences, which are not captured by composition profiles.
 
 ---
 
-## Proposed Directions (from expert consultation)
+## Proposed Phase 360: AXM Run Curvature & Micro-Sequence Geometry
 
-### Direction A: Within-AXM Class Composition
-AXM contains 32 of 49 classes. For each folio, which are active and in what proportions? Two folios with the same AXM self-transition could have completely different internal profiles.
+From external expert consultation. This is the last testable stratum before declaring the residual genuinely irreducible.
 
-### Direction B: Pre-Exit Hazard Adjacency
-Measure hazard-proximity slope immediately before exit. C1009 showed curvature. Does hazard adjacency variance differ across folios? This is where C458 might actually live.
+### Core Measures (from expert outline)
 
-### Direction C: Conditional Exit Sub-Role Composition
-Instead of macro pathway (FQ/FL/CC/AXm), look at sub-role composition within each pathway. C601 shows hazard originates from 3 subgroups. Asymmetry may live at that granularity.
+1. **Conditional transition entropy gradients inside AXM runs** — Does per-step entropy rise, fall, or curve as a function of position within an AXM run? Per-folio gradient slope/curvature.
+
+2. **Signed transition imbalance within run segments** — Split each AXM run into early/middle/late segments. Compute directed transition counts (class A→B minus B→A). Do folios differ in which direction dominates?
+
+3. **Higher-order mutual information per folio** — C969 shows CMI = 0.012 bits corpus-wide. Does per-folio CMI decomposition reveal folio-specific structure invisible in the aggregate?
+
+4. **Local motif replication curvature** — Within AXM runs, do specific 2-grams or 3-grams (class-level) replicate at rates above/below chance? Is replication curvature folio-specific?
+
+5. **AXM internal cycle basis weights** — Construct per-folio directed class transition graphs within AXM. Extract cycle basis. Do cycle weights differ across folios in structured ways?
+
+6. **Per-folio MIDDLE asymmetry distribution** — C1024 shows MIDDLE asymmetry = 0.070 bits corpus-wide. Decompose per folio: does the distribution of signed MIDDLE JSD values differ across folios?
+
+### Key Constraints
+
+| Constraint | Relevance |
+|-----------|-----------|
+| C1024 | PREFIX symmetric router, MIDDLE carries execution asymmetry (0.070 bits) |
+| C969 | 2nd-order alternation bias exists (CMI=0.012 bits) but small |
+| C1027 | Hazard violations are structurally conditioned |
+| C966 | First-order Markov sufficiency for EN lane oscillation |
+| C1006 | AXM runs are diverse class sequences (mean class run = 1.054) |
 
 ---
 
 ## Pending Action
 
-1. Consult expert on which direction to prioritize
-2. Design and execute Phase 359
+1. Consult expert on which measures to prioritize (or run all)
+2. Design and execute Phase 360

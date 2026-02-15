@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 901 validated constraints | **Version:** 3.85 | **Date:** 2026-02-14
+**Total:** 902 validated constraints | **Version:** 3.86 | **Date:** 2026-02-14
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2381,6 +2381,24 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - FL/CC uncorrelated (rho=-0.003) — independent routing, not competitive allocation
 - FL eta2(REGIME+section) = 0.198 — program-specific, not macro-organizational
 - Eliminates exit proportions from C1035's 57% irreducible design freedom
+
+---
+
+### AXM Class Composition Redundancy (C1037) — Phase: AXM_CLASS_COMPOSITION
+
+> Per-folio AXM class composition profiles (which of 32 AXM classes are active, in what proportions) do not decompose C1035's 57% irreducible residual. Class PCs produce LOO R² = -0.071 on residuals and add only +0.005 incremental LOO R² beyond C1017 baseline. Class composition is redundant with existing predictors (REGIME, section, PREFIX entropy, hazard density, bridge geometry). PREFIX and class composition are strongly coupled (rho = -0.55), confirming PREFIX routing (C1023) governs class activation. Third consecutive elimination: aggregate statistics (C1035), boundary transitions (C1036), class composition (C1037). Remaining candidate: micro-sequential dynamics within AXM runs.
+
+| ID | Description | Tier | Scope | Details |
+|----|-------------|------|-------|---------|
+| **1037** | **AXM Class Composition Redundant** (2/6 PASS; class PCs LOO R²=-0.071 on residual; incremental LOO +0.005; PREFIX-class rho=-0.55; C458 not in class proportions; third elimination stratum) | 2 | B | -> [C1037_axm_class_composition_redundant.md](C1037_axm_class_composition_redundant.md) |
+
+**Phase findings:**
+- Class PCs predict AXM self-transition directly (LOO R²=0.463) but add only +0.005 beyond C1017
+- Only 7/32 classes exceed multinomial overdispersion threshold (22%, not 50%)
+- Hazard-adjacent vs non-hazard CV difference = -0.026 (below 0.05 threshold)
+- PREFIX PC1 vs Class PC1 rho = -0.550 — strong coupling confirms C1023 routing
+- Class entropy uncorrelated with AXM self-transition (rho = 0.070, p = 0.562)
+- REGIME eta² < 0.30 on all PCs — class composition is program-specific
 
 ---
 
