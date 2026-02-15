@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 903 constraints | 2026-02-14
+CONSTRAINT_REFERENCE v2.6 | 922 constraints | 2026-02-15
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -907,3 +907,22 @@ C1035	**AXM Residual Irreducible** (0/7 PASS; all 6 predictors dR2 < 0.013; RF C
 C1036	**AXM Exit Pathway Allocation Frequency-Neutral** (2/7 PASS; CV ranking FQ<FL<CC<AXm = frequency order; FL/CC uncorrelated rho=-0.003; ingress mirror identical; dwell CV same pattern; C458 localized to within-AXM dynamics)	2	B	-> C1036_exit_pathway_neutrality.md
 C1037	**AXM Class Composition Redundant** (2/6 PASS; class PCs LOO R²=-0.071 on residual; incremental LOO +0.005; PREFIX-class rho=-0.55; C458 not in class proportions; third elimination stratum)	2	B	-> C1037_axm_class_composition_redundant.md
 C1038	**AXM Run Entropy Convergence + Micro-Sequential Stratum Empty** (0/6 PASS after size control; entropy slope=-0.248 bits/pos; JSD/CMI size-confounded; four-phase elimination complete; residual = design freedom)	2	B	-> C1038_axm_run_entropy_convergence.md
+C1039	**A Paragraph Cluster Selectivity** (entropy 1.50 vs null 1.78, z=-2.83, p=0.002; paragraphs draw from fewer C475 clusters than random)	2	A	-> C1039_paragraph_cluster_selectivity.md
+C1040	**A Folio-Level Paragraph Compatibility Coherence** (within-folio 0.880 vs between-folio 0.811, p~0; survives section matching 0.810, p~0)	2	A	-> C1040_folio_paragraph_compatibility.md
+C1041	**A Paragraph Complementary Diversification** (cross-line compatibility 0.700 vs null 0.707, z=-3.567; paragraphs diversify, not select for compatibility; extends C476 coverage optimality)	2	A	-> C1041_paragraph_complementary_diversification.md
+C1042	**Section-Conditional Positional Exclusivity Reduction** (C956 zone-exclusive tokens retain only 30-55% exclusivity within sections; global exclusivity partially a section composition effect; qualifies C956)	2	B	-> C1042_section_exclusivity_reduction.md
+C1043	**Role Self-Loop Section Dependence** (chi2=268.73, p<0.0001; FLOW_OPERATOR 5.17x, ENERGY_OPERATOR 3.57x, CORE_CONTROL 3.15x enrichment across sections)	2	B	-> C1043_role_selfloop_section_dependence.md
+C1044	**Section-Dependent Phase Interleaving Rate** (KW=55.68, p<0.0001; B=0.796, C=0.808, H=0.742, S=0.770; alternation rate section-parameterized, sequential compliance universal)	2	B	-> C1044_section_dependent_interleaving.md
+C1045	**Section-Dependent Boundary Role Composition** (openers: chi2=74.67, V=0.103; closers: chi2=56.15, V=0.090; boundary role distributions section-dependent)	2	B	-> C1045_section_dependent_boundary_roles.md
+C1046	**Mandatory Bigram Section Modulation** (5/10 mandatory bigrams show section-dependent rates at Bonferroni alpha=0.005; extends C957 and C1029 to bigram level)	2	B	-> C1046_mandatory_bigram_section_modulation.md
+C1047	**Section-Dynamics Interaction Absent** (0/3 interaction terms significant; section modulates dynamics additively only; per-section LOO 0.037 vs global 0.412; strengthens C1035)	2	B	-> C1047_section_dynamics_interaction_absent.md
+C1048	**BIO Section Dynamical Coherence** (BIO LOO R²=0.754 vs HERBAL -0.242 and RECIPE -0.319; C1017 predictors explain 75% of BIO AXM variance; design freedom concentrated in non-BIO sections)	2	B	-> C1048_bio_dynamical_coherence.md
+C1049	**Shared Vocabulary Section-Universal Substrate** (329 shared MIDDLEs: Herfindahl 0.70 vs 862 B-only: 0.93; MW p<10^-6; shared vocabulary IS the section-universal layer; explains C946 reach uniformity)	2	A<>B	-> C1049_shared_vocabulary_section_universal.md
+C1050	**PP Composition Section-Differential Coverage** (core_fraction partial r=0.33-0.46 with section coverage after pool-size control; ranking stability rho=0.81-0.86 across sections; composition quality matters beyond pool size)	2	A<>B	-> C1050_pp_composition_section_differential.md
+C1051	**Section-Conditioned Class Convergence Asymmetry** (BIO class Jaccard=0.794, HERBAL=0.813, RECIPE=0.824 vs global=0.847; KW p=1.2×10^-102; funnel topology section-dependent; BIO aperture narrowest)	2	A<>B	-> C1051_section_conditioned_class_convergence.md
+C1052	**B Paragraph Cluster Selectivity** (replicates C1039 on B; z=-2.61, p=0.007; execution zone more concentrated than specification zone; 73 paragraphs)	2	B	-> C1052_b_paragraph_cluster_selectivity.md
+C1053	**Compound Atom C475 Mediation** (compatible atoms hit body at 46.2% vs incompatible 3.9%; Wilcoxon p=0.002; C935 operates through compatibility graph)	2	B	-> C1053_compound_atom_c475_mediation.md
+C1054	**Affordance Bin Gradient Invariance** (HUB fraction ~64% at every quintile; 0/9 bins show gradient dependence; bin scaffold is static across spec→exec gradient; 73 paragraphs)	2	B	-> C1054_affordance_bin_gradient_invariance.md
+C1055	**M2 Near-Section-Decomposable** (per-section M2: BIO 78%, STARS_RECIPE 79%, HERBAL 70%; pooling advantage only +0.5 tests; topology preserved, distributional tests degrade cross-section)	2	B	-> C1055_section_m2_near_decomposable.md
+C1056	**MIDPROCESS Structural Absence / OJLM-1 Boundary** (0/245 v3 recipes have MIDPROCESS actions; 0/509 master materials have process monitoring; MIDPROCESS is tacit operator knowledge; Path C mechanically passable but circular; Voynich M2 residual parallels 2/3 dynamic/pairwise)	2	B	-> C1056_midprocess_structural_absence.md
+C1057	**Lane-Sister Orthogonal Axes** (partial r=-0.064 controlling QO density; raw rho=0.210 vanishes; PCA Kaiser=2 PCs from 3 measures; ok/ot NOT independent third axis; 82 folios)	2	B	-> C1057_lane_sister_orthogonal_axes.md

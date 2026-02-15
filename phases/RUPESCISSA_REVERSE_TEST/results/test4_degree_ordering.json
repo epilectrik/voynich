@@ -1,0 +1,355 @@
+{
+  "test": "Degree Ordering Within Quality",
+  "tier": 4,
+  "rupescissa_prediction": "Within each quality axis, degrees form an ordered intensity progression",
+  "target_prefixes": [
+    "qo",
+    "ch",
+    "sh",
+    "da",
+    "ok",
+    "ot"
+  ],
+  "channel_results": {
+    "qo": {
+      "n_tokens": 4069,
+      "n_middles": 63,
+      "rank_vs_length": {
+        "rho": 0.248,
+        "p": 0.05
+      },
+      "rank_vs_suffix_length": {
+        "rho": -0.287,
+        "p": 0.0224
+      },
+      "rank_vs_position": {
+        "rho": -0.09,
+        "p": 0.4818
+      },
+      "significant_ordering": true,
+      "significant_directions": [
+        [
+          "suffix",
+          "negative"
+        ]
+      ],
+      "top_middles": [
+        {
+          "middle": "k",
+          "rank": 1,
+          "count": 1706,
+          "avg_length": 1.0
+        },
+        {
+          "middle": "t",
+          "rank": 2,
+          "count": 501,
+          "avg_length": 1.0
+        },
+        {
+          "middle": "ke",
+          "rank": 3,
+          "count": 356,
+          "avg_length": 2.0
+        },
+        {
+          "middle": "l",
+          "rank": 4,
+          "count": 157,
+          "avg_length": 1.0
+        },
+        {
+          "middle": "kch",
+          "rank": 5,
+          "count": 123,
+          "avg_length": 3.0
+        }
+      ],
+      "status": "PASS"
+    },
+    "ch": {
+      "n_tokens": 3492,
+      "n_middles": 60,
+      "rank_vs_length": {
+        "rho": 0.365,
+        "p": 0.0042
+      },
+      "rank_vs_suffix_length": {
+        "rho": 0.247,
+        "p": 0.0574
+      },
+      "rank_vs_position": {
+        "rho": 0.238,
+        "p": 0.0672
+      },
+      "significant_ordering": true,
+      "significant_directions": [
+        [
+          "length",
+          "positive"
+        ]
+      ],
+      "top_middles": [
+        {
+          "middle": "edy",
+          "rank": 1,
+          "count": 508,
+          "avg_length": 3.0
+        },
+        {
+          "middle": "ey",
+          "rank": 2,
+          "count": 259,
+          "avg_length": 2.0
+        },
+        {
+          "middle": "e",
+          "rank": 3,
+          "count": 196,
+          "avg_length": 1.0
+        },
+        {
+          "middle": "eey",
+          "rank": 4,
+          "count": 147,
+          "avg_length": 3.0
+        },
+        {
+          "middle": "ed",
+          "rank": 5,
+          "count": 145,
+          "avg_length": 2.0
+        }
+      ],
+      "status": "PASS"
+    },
+    "sh": {
+      "n_tokens": 2329,
+      "n_middles": 40,
+      "rank_vs_length": {
+        "rho": 0.309,
+        "p": 0.0527
+      },
+      "rank_vs_suffix_length": {
+        "rho": 0.138,
+        "p": 0.3943
+      },
+      "rank_vs_position": {
+        "rho": 0.167,
+        "p": 0.3036
+      },
+      "significant_ordering": false,
+      "significant_directions": [],
+      "top_middles": [
+        {
+          "middle": "edy",
+          "rank": 1,
+          "count": 493,
+          "avg_length": 3.0
+        },
+        {
+          "middle": "ey",
+          "rank": 2,
+          "count": 243,
+          "avg_length": 2.0
+        },
+        {
+          "middle": "e",
+          "rank": 3,
+          "count": 180,
+          "avg_length": 1.0
+        },
+        {
+          "middle": "eey",
+          "rank": 4,
+          "count": 121,
+          "avg_length": 3.0
+        },
+        {
+          "middle": "eol",
+          "rank": 5,
+          "count": 86,
+          "avg_length": 3.0
+        }
+      ],
+      "status": "FAIL"
+    },
+    "da": {
+      "n_tokens": 1083,
+      "n_middles": 14,
+      "rank_vs_length": {
+        "rho": 0.294,
+        "p": 0.3068
+      },
+      "rank_vs_suffix_length": {
+        "rho": 0.589,
+        "p": 0.0265
+      },
+      "rank_vs_position": {
+        "rho": 0.174,
+        "p": 0.5528
+      },
+      "significant_ordering": true,
+      "significant_directions": [
+        [
+          "suffix",
+          "positive"
+        ]
+      ],
+      "top_middles": [
+        {
+          "middle": "iin",
+          "rank": 1,
+          "count": 328,
+          "avg_length": 3.0
+        },
+        {
+          "middle": "r",
+          "rank": 2,
+          "count": 208,
+          "avg_length": 1.0
+        },
+        {
+          "middle": "l",
+          "rank": 3,
+          "count": 165,
+          "avg_length": 1.0
+        },
+        {
+          "middle": "in",
+          "rank": 4,
+          "count": 117,
+          "avg_length": 2.0
+        },
+        {
+          "middle": "i",
+          "rank": 5,
+          "count": 63,
+          "avg_length": 1.0
+        }
+      ],
+      "status": "PASS"
+    },
+    "ok": {
+      "n_tokens": 1476,
+      "n_middles": 26,
+      "rank_vs_length": {
+        "rho": -0.025,
+        "p": 0.9027
+      },
+      "rank_vs_suffix_length": {
+        "rho": 0.199,
+        "p": 0.3309
+      },
+      "rank_vs_position": {
+        "rho": -0.148,
+        "p": 0.4705
+      },
+      "significant_ordering": false,
+      "significant_directions": [],
+      "top_middles": [
+        {
+          "middle": "aiin",
+          "rank": 1,
+          "count": 170,
+          "avg_length": 4.0
+        },
+        {
+          "middle": "e",
+          "rank": 2,
+          "count": 139,
+          "avg_length": 1.0
+        },
+        {
+          "middle": "edy",
+          "rank": 3,
+          "count": 138,
+          "avg_length": 3.0
+        },
+        {
+          "middle": "ain",
+          "rank": 4,
+          "count": 137,
+          "avg_length": 3.0
+        },
+        {
+          "middle": "eey",
+          "rank": 5,
+          "count": 130,
+          "avg_length": 3.0
+        }
+      ],
+      "status": "FAIL"
+    },
+    "ot": {
+      "n_tokens": 1448,
+      "n_middles": 25,
+      "rank_vs_length": {
+        "rho": 0.072,
+        "p": 0.7338
+      },
+      "rank_vs_suffix_length": {
+        "rho": 0.528,
+        "p": 0.0067
+      },
+      "rank_vs_position": {
+        "rho": -0.411,
+        "p": 0.0414
+      },
+      "significant_ordering": true,
+      "significant_directions": [
+        [
+          "suffix",
+          "positive"
+        ],
+        [
+          "position",
+          "negative"
+        ]
+      ],
+      "top_middles": [
+        {
+          "middle": "edy",
+          "rank": 1,
+          "count": 197,
+          "avg_length": 3.0
+        },
+        {
+          "middle": "ar",
+          "rank": 2,
+          "count": 130,
+          "avg_length": 2.0
+        },
+        {
+          "middle": "e",
+          "rank": 3,
+          "count": 126,
+          "avg_length": 1.0
+        },
+        {
+          "middle": "al",
+          "rank": 4,
+          "count": 116,
+          "avg_length": 2.0
+        },
+        {
+          "middle": "aiin",
+          "rank": 5,
+          "count": 109,
+          "avg_length": 4.0
+        }
+      ],
+      "status": "PASS"
+    }
+  },
+  "testable_channels": 6,
+  "channels_with_ordering": 4,
+  "falsification_criterion": ">=4/6 channels with significant ordering = PASS, <majority = FAIL",
+  "falsification_result": "PASS -- 4/6 channels show significant within-PREFIX ordering (>= 4 required).",
+  "constraints_referenced": [
+    "C1001",
+    "C911",
+    "C293",
+    "C267"
+  ]
+}

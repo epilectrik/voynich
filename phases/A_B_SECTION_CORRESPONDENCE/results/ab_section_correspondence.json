@@ -1,0 +1,169 @@
+{
+  "phase": "A_B_SECTION_CORRESPONDENCE",
+  "phase_number": 367,
+  "timestamp": "2026-02-15T00:30:48.629050",
+  "analysis_set": {
+    "a_folios": 111,
+    "a_sections": {
+      "P": 16,
+      "H": 95
+    },
+    "b_folios": 75,
+    "b_sections": {
+      "S": 23,
+      "H": 32,
+      "B": 20
+    },
+    "shared_middles": 329,
+    "b_only_middles": 862
+  },
+  "H1_shared_concentration": {
+    "shared_n": 329,
+    "b_only_n": 862,
+    "shared_mean_herfindahl": 0.7007010349952915,
+    "shared_median_herfindahl": 0.59375,
+    "b_only_mean_herfindahl": 0.9327067810791132,
+    "b_only_median_herfindahl": 1.0,
+    "mann_whitney_U": 74059.5,
+    "p_value": 1.8327424687662308e-60,
+    "shared_pct_uniform": 0.11246200607902736,
+    "shared_pct_concentrated": 0.4012158054711246,
+    "b_only_pct_uniform": 0.013921113689095127,
+    "b_only_pct_concentrated": 0.8619489559164734,
+    "pass": true,
+    "interpretation": "shared_less_concentrated"
+  },
+  "H2_reach_uniformity": {
+    "raw_cosine_mean": 0.9959951214819114,
+    "raw_cosine_min": 0.9689873578749638,
+    "pool_size_r_by_section": {
+      "B": 0.8395955380384403,
+      "H": 0.8448401330951061,
+      "S": 0.8983003618154494
+    },
+    "proportion_cosine_mean": 0.9959951214819114,
+    "proportion_cosine_min": 0.9689873578749638,
+    "c946_comparison": 0.9959951214819114,
+    "section_proportion_by_a_section": {
+      "B": {
+        "a_h_mean": 0.316836481507863,
+        "a_p_mean": 0.3247826859039108,
+        "diff": 0.007946204396047818,
+        "mw_p": 0.07578197639177095
+      },
+      "H": {
+        "a_h_mean": 0.39273764554040114,
+        "a_p_mean": 0.3684563022491921,
+        "diff": -0.024281343291209012,
+        "mw_p": 0.00013570329055725158
+      },
+      "S": {
+        "a_h_mean": 0.2904258729517359,
+        "a_p_mean": 0.3067610118468971,
+        "diff": 0.016335138895161194,
+        "mw_p": 0.0010128293468584296
+      }
+    },
+    "pass": true
+  },
+  "H3_class_convergence": {
+    "global_class_jaccard_mean": 0.8472232965465055,
+    "global_class_jaccard_std": 0.06924030178088125,
+    "c708_reference": 0.83,
+    "section_class_jaccards": {
+      "B": {
+        "mean": 0.7935816731208103,
+        "std": 0.07806352260957254,
+        "mean_enabled_classes": 37.270270270270274
+      },
+      "H": {
+        "mean": 0.8129099556230105,
+        "std": 0.07742858020712481,
+        "mean_enabled_classes": 38.08108108108108
+      },
+      "S": {
+        "mean": 0.8238570522648678,
+        "std": 0.07673136098601566,
+        "mean_enabled_classes": 39.34234234234234
+      }
+    },
+    "kruskal_wallis_H": 469.3435353844165,
+    "kruskal_wallis_p": 1.211563644080598e-102,
+    "max_section_global_diff": 0.05364162342569523,
+    "pass": true
+  },
+  "H4_pp_composition": {
+    "features": {
+      "core_fraction": {
+        "mean": 0.8105714240006092,
+        "std": 0.07597533061797551
+      },
+      "section_bias": {
+        "mean": 0.5076009154462512,
+        "std": 0.03956246035950791
+      }
+    },
+    "partial_correlations": {
+      "core_fraction_vs_B": {
+        "partial_r": 0.45697762977343737,
+        "p_value": 4.6167273737179707e-07,
+        "pass": true
+      },
+      "core_fraction_vs_H": {
+        "partial_r": 0.452282804388343,
+        "p_value": 6.249516197669171e-07,
+        "pass": true
+      },
+      "core_fraction_vs_S": {
+        "partial_r": 0.331976806973481,
+        "p_value": 0.000371558591377296,
+        "pass": true
+      },
+      "section_bias_vs_B": {
+        "partial_r": -0.3506669006669006,
+        "p_value": 0.00016114809345813629,
+        "pass": true
+      },
+      "section_bias_vs_H": {
+        "partial_r": -0.32218322218322215,
+        "p_value": 0.0005638859770235621,
+        "pass": true
+      },
+      "section_bias_vs_S": {
+        "partial_r": -0.16428571428571428,
+        "p_value": 0.08489006246646635,
+        "pass": true
+      }
+    },
+    "pass": true
+  },
+  "H5_ranking_stability": {
+    "pairwise_rho": {
+      "B_vs_H": {
+        "spearman_rho": 0.8492804492804492,
+        "p_value": 5.170999230255571e-32,
+        "below_090": true
+      },
+      "B_vs_S": {
+        "spearman_rho": 0.857072657072657,
+        "p_value": 3.570838457071936e-33,
+        "below_090": true
+      },
+      "H_vs_S": {
+        "spearman_rho": 0.8107142857142856,
+        "p_value": 4.2372961952218964e-27,
+        "below_090": true
+      }
+    },
+    "pass": true
+  },
+  "verdict": "PP_SECTION_SIGNAL",
+  "verdict_score": "5/5",
+  "prior_constraints": {
+    "C752": "no_section_routing (p=0.573)",
+    "C753": "no_content_routing (partial_r=-0.038)",
+    "C946": "no_material_routing (cosine=0.997)",
+    "C506": "pp_composition_uniform (cosine=0.995)",
+    "C708": "funnel_topology (middle_jaccard=0.274, class_jaccard=0.830)"
+  }
+}

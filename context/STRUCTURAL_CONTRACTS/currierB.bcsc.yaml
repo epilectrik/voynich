@@ -748,6 +748,9 @@ program_structure:
     provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897"
 
   paragraph:
+    # For comprehensive paragraph-as-unit model, see PSC (paragraph.psc.yaml)
+    # PSC owns: definition, independence model, folio organization, A-B correspondence, stability
+    # BCSC retains: B-specific execution patterns below (HT enrichment, spec->exec gradient, gallows dynamics)
     function: "Self-contained mini-program with header/specification/execution architecture"
     mean_per_folio: 7.1
     mean_lines_per_paragraph: 4.4
@@ -830,6 +833,8 @@ program_structure:
     provenance: "C840-C845, C932-C935"
 
   folio_paragraph_architecture:
+    # Paragraph-as-unit properties (C855-C862) are now owned by PSC (paragraph.psc.yaml)
+    # BCSC retains this section for B-context reference; PSC is authoritative
     role_template:
       statement: "Paragraphs are NOT variations on a folio template"
       verdict: "PARALLEL_PROGRAMS model (independent mini-programs)"
@@ -1576,7 +1581,8 @@ annotations:
     two_lane_escape_rho: "-0.506"  # Lane balance -> escape density
     two_lane_vs_ch_preference: "68% stronger"  # |0.506| vs |0.301|
     lane_balance_independent: true  # Partial rho=-0.452 after controlling ch_pref
-    provenance: "C603, C604, C605"
+    lane_sister_orthogonality: "partial r=-0.064 controlling QO density; two independent axes"  # C1057
+    provenance: "C603, C604, C605, C1057"
 
   ax_architecture_statistics:
     ax_classes: 19

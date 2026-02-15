@@ -1,0 +1,131 @@
+{
+  "phase": "PARAGRAPH_GRADIENT_COMBINATORICS",
+  "phase_number": 368,
+  "timestamp": "2026-02-15T00:52:58.770754",
+  "analysis_set": {
+    "total_b_paragraphs": 494,
+    "long_paragraphs": 73,
+    "min_lines": 8,
+    "section_counts": {
+      "S": 17,
+      "H": 17,
+      "B": 39
+    },
+    "matrix_middles": 972,
+    "b_middles_used": 542,
+    "b_middles_in_matrix": 250,
+    "coverage_rate": 0.4612546125461255,
+    "hub_middles": 99,
+    "gmm_cluster_sizes": {
+      "0": 23,
+      "1": 106,
+      "2": 130,
+      "3": 351,
+      "4": 362
+    }
+  },
+  "H1_cluster_trajectory": {
+    "quintile_means": {
+      "Q0": 1.2276050020639981,
+      "Q1": 1.2408152775200196,
+      "Q2": 1.1054568496064665,
+      "Q3": 1.1949075248959395,
+      "Q4": 1.0163129253343703
+    },
+    "quintile_ns": {
+      "Q0": 73,
+      "Q1": 73,
+      "Q2": 73,
+      "Q3": 73,
+      "Q4": 73
+    },
+    "kw_stat": 14.21423688547738,
+    "kw_p": 0.006641775564781614,
+    "direction_rho": -0.7999999999999999,
+    "direction_increasing": false,
+    "pass": false
+  },
+  "H2_spec_constrains_exec": {
+    "observed_mean": 0.9978272624682611,
+    "observed_mean_nohub": 0.42910766679423396,
+    "null_mean": 0.9967839796123432,
+    "null_std": 0.0012191985933252762,
+    "null_mean_nohub": 0.4025182489475455,
+    "null_std_nohub": 0.018083644675826287,
+    "p_full": 0.203,
+    "p_nohub": 0.075,
+    "n_paragraphs": 73,
+    "n_paragraphs_nohub": 67,
+    "pass": false
+  },
+  "H3_compound_atom_c475": {
+    "n_compounds_both_types": 13,
+    "n_total_compounds": 180,
+    "overall_hit_rate": 0.6079232804232804,
+    "compat_hit_rate": 0.46153846153846156,
+    "incompat_hit_rate": 0.038461538461538464,
+    "p_value": 0.001953125,
+    "pass": true
+  },
+  "H4_section_gradient": {
+    "section_gradients": {
+      "B": {
+        "Q0": 0.9503775620280475,
+        "Q1": 0.9533417402269861,
+        "Q2": 0.9577464788732394,
+        "Q3": 0.9548387096774194,
+        "Q4": 0.9591836734693877
+      },
+      "H": {
+        "Q0": 0.926605504587156,
+        "Q1": 0.9175257731958762,
+        "Q2": 0.9370629370629371,
+        "Q3": 0.9059561128526645,
+        "Q4": 0.9230769230769231
+      },
+      "S": {
+        "Q0": 0.9094567404426559,
+        "Q1": 0.9333333333333333,
+        "Q2": 0.9204819277108434,
+        "Q3": 0.9104477611940298,
+        "Q4": 0.9083333333333333
+      }
+    },
+    "steepness_by_section": {
+      "B": 0.008806111441340247,
+      "H": -0.003528581510232831,
+      "S": -0.0011234071093225717
+    },
+    "aperture_by_section": {
+      "B": 0.794,
+      "H": 0.813,
+      "S": 0.824
+    },
+    "rho": -0.5,
+    "direction_negative": true,
+    "n_sections": 3,
+    "pass": true,
+    "note": "p-value unreliable with n=3; direction-only test"
+  },
+  "H5_b_cluster_selectivity": {
+    "b_paragraph_cluster_selectivity": {
+      "n_paragraphs": 73,
+      "observed_mean_entropy": 1.5124431357063146,
+      "null_mean_entropy": 1.824405939442748,
+      "z_score": -2.6139780885672144,
+      "p_selectivity": 0.007,
+      "selective": true
+    },
+    "gradient_decomposition": {
+      "spec_zone_entropy": 1.3792132337200607,
+      "exec_zone_entropy": 1.2913267726617508,
+      "spec_n": 73,
+      "exec_n": 73,
+      "mw_p": 0.8976285787452323,
+      "spec_less_than_exec": false
+    },
+    "pass": false
+  },
+  "verdict": "COMPOUND_MEDIATED",
+  "verdict_score": "2/5"
+}

@@ -1,0 +1,179 @@
+{
+  "s1": {
+    "n_total": 72,
+    "n_viable": 65,
+    "sections": {
+      "B": "20",
+      "H": "22",
+      "S": "23"
+    },
+    "baseline_r2": 0.5582202503212483,
+    "baseline_adj_r2": 0.4859290185556344,
+    "baseline_loo_r2": 0.4121412182375339,
+    "baseline_k": 9
+  },
+  "s2_interactions": {
+    "prefix_entropy": {
+      "delta_r2": 0.011271966527501842,
+      "f_stat": 0.7069398235144694,
+      "p_value": 0.49765740732636,
+      "r2_extended": 0.5694922168487502,
+      "loo_r2_extended": 0.37029045113418757,
+      "per_section_slopes": {
+        "B": -0.03939561336888861,
+        "H": -0.013211888801157326,
+        "S": -0.010683029690838838
+      },
+      "interaction_deltas": {
+        "H": 0.026183724567731284,
+        "S": 0.028712583678049772
+      },
+      "max_cooks_d": 0.2425367272223575,
+      "influential_folios": 7
+    },
+    "hazard_density": {
+      "delta_r2": 0.0069988309435611296,
+      "f_stat": 0.4346290909588928,
+      "p_value": 0.6497497493807541,
+      "r2_extended": 0.5652190812648095,
+      "loo_r2_extended": 0.3664057538083345,
+      "per_section_slopes": {
+        "B": -0.056522531855495384,
+        "H": -0.0202040679686092,
+        "S": -0.032818323353636346
+      },
+      "interaction_deltas": {
+        "H": 0.036318463886886185,
+        "S": 0.023704208501859038
+      },
+      "max_cooks_d": 0.16988264200317796,
+      "influential_folios": 7
+    },
+    "bridge_pc1": {
+      "delta_r2": 0.010076695070842967,
+      "f_stat": 0.6302266430796168,
+      "p_value": 0.5363416879202427,
+      "r2_extended": 0.5682969453920913,
+      "loo_r2_extended": 0.40079312278343404,
+      "per_section_slopes": {
+        "B": 0.08773688549179623,
+        "H": 0.026299306122397295,
+        "S": 0.03713265581355167
+      },
+      "interaction_deltas": {
+        "H": -0.061437579369398934,
+        "S": -0.05060422967824456
+      },
+      "max_cooks_d": 0.11493472060779673,
+      "influential_folios": 6
+    }
+  },
+  "h1_pass": false,
+  "h1": {
+    "max_delta_slope": 0.028712583678049772,
+    "p_value": 0.49765740732636,
+    "per_section_slopes": {
+      "B": -0.03939561336888861,
+      "H": -0.013211888801157326,
+      "S": -0.010683029690838838
+    }
+  },
+  "h3_pass": false,
+  "h3": {
+    "bio_slope": -0.056522531855495384,
+    "recipe_slope": -0.032818323353636346,
+    "p_value": 0.6497497493807541,
+    "per_section_slopes": {
+      "B": -0.056522531855495384,
+      "H": -0.0202040679686092,
+      "S": -0.032818323353636346
+    }
+  },
+  "s3_per_section": {
+    "B": {
+      "n": 20,
+      "k": 5,
+      "r2_train": 0.8597696634975807,
+      "r2_adj": 0.8096874004610024,
+      "r2_loo": 0.7541446208877436,
+      "gap": 0.10562504260983707,
+      "regime_info": "1 REGIME dummies from ['REGIME_1', 'REGIME_3']",
+      "mean_axm": 0.7431795075392638,
+      "std_axm": 0.08623886857069964
+    },
+    "H": {
+      "n": 22,
+      "k": 6,
+      "r2_train": 0.22557181319056752,
+      "r2_adj": -0.08419946153320557,
+      "r2_loo": -0.24209976249086607,
+      "gap": 0.4676715756814336,
+      "regime_info": "2 REGIME dummies from ['REGIME_3', 'REGIME_4']",
+      "mean_axm": 0.5725621069542545,
+      "std_axm": 0.11881462042487162
+    },
+    "S": {
+      "n": 23,
+      "k": 6,
+      "r2_train": 0.30077933272196555,
+      "r2_adj": 0.03857158249270265,
+      "r2_loo": -0.31903569920698494,
+      "gap": 0.6198150319289505,
+      "regime_info": "2 REGIME dummies from ['REGIME_3', 'REGIME_1', 'REGIME_2']",
+      "mean_axm": 0.6894320089136243,
+      "std_axm": 0.07532057671071944
+    }
+  },
+  "h2_pass": false,
+  "h2": {
+    "weighted_mean_loo": 0.03721348555684867,
+    "global_loo": 0.4121412182375339,
+    "delta": -0.37492773268068524
+  },
+  "h4_pass": true,
+  "h4": {
+    "cosine_to_global": {
+      "B": 0.06916154656536816,
+      "H": 0.5251754564706359,
+      "S": 0.15447086949715022
+    },
+    "pairwise_cosine": {
+      "B_H": 0.027951084624477044,
+      "B_S": 0.26597316076196287,
+      "H_S": 0.17993201065437972
+    },
+    "min_cosine": 0.06916154656536816,
+    "bridge_coverage": {
+      "B": 74,
+      "H": 80,
+      "S": 84
+    },
+    "total_bridges": 85,
+    "substituted_r2": 0.5538757182657816,
+    "substituted_loo_r2": 0.37762121588516995,
+    "baseline_r2": 0.5582202503212483,
+    "baseline_loo_r2": 0.4121412182375339
+  },
+  "h5_pass": true,
+  "h5": {
+    "significant_interactions": [],
+    "r2_combined": 0.5582202503212483,
+    "adj_r2_combined": 0.4859290185556344,
+    "loo_combined": 0.4121412182375339,
+    "delta_loo_vs_baseline": 0.0,
+    "k_combined": 9,
+    "residual_fraction": 0.5878587817624661
+  },
+  "verdict": {
+    "verdict": "SECTION_INTERACTIONS_CONFIRM_IRREDUCIBILITY",
+    "hypotheses": {
+      "H1": false,
+      "H2": false,
+      "H3": false,
+      "H4": true,
+      "H5": true
+    },
+    "n_pass": 2,
+    "delta_loo": 0.0
+  }
+}

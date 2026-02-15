@@ -31,6 +31,15 @@ Puff explicitly references Rupescissa's theories while cataloging materials.
 - Latin: https://archive.org/details/mss_0095_014
 - German: https://digi.ub.uni-heidelberg.de/diglit/cpg233
 
+## Curated Data
+
+| File | Description |
+|------|-------------|
+| `data/rupescissa_curated_v1.json` | Structured chapter data (61 entries, 7 chapter types, 12 actions) |
+| `data/rupescissa_materials_v1.json` | Materials inventory (131 substances with degree classifications) |
+
+Curated by Phase 374 script: `phases/RUPESCISSA_CURATION/scripts/rupescissa_curate.py`
+
 ## License
 
 Both manuscripts are in the public domain.

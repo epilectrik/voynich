@@ -169,9 +169,9 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 3.90 |
-| Constraints | 903 validated |
-| Phases | 363 completed |
+| Version | 4.04 |
+| Constraints | 922 validated |
+| Phases | 377 completed |
 | Folios | 83 (Currier B) |
 | Core model | CLOSED (PCA-v1 CERTIFIED) |
 | Characterization | ACTIVE |
@@ -235,7 +235,7 @@ context/
 ├── SYSTEM/              ← Methodology, tiers, stop conditions
 ├── CORE/                ← Frozen facts, falsifications
 ├── ARCHITECTURE/        ← Currier A/B/AZC, cross-system
-├── STRUCTURAL_CONTRACTS/ ← API layer (CASC, AZC-ACT, AZC-B-ACT, BCSC)
+├── STRUCTURAL_CONTRACTS/ ← API layer (CASC, AZC-ACT, AZC-B-ACT, BCSC, HTSC)
 ├── CLAIMS/              ← 879 constraints (INDEX + files)
 ├── OPERATIONS/          ← OPS doctrine, program taxonomy
 ├── TERMINOLOGY/         ← Definitions
@@ -361,6 +361,8 @@ For quick structural validation without reading dozens of constraints, use **Str
 | A->AZC | `context/STRUCTURAL_CONTRACTS/azc_activation.act.yaml` | How AZC affects A entries |
 | AZC->B | `context/STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml` | How AZC legality propagates to B |
 | Currier B | `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml` | B internal grammar, kernel, hazards |
+| Human Track | `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml` | HT layer: cross-system, 17 guarantees, 10 invariants |
+| Paragraph | `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml` | Paragraph unit: cross-system, 15 guarantees, 10 invariants |
 
 ### CASC Priority Rule
 
@@ -424,6 +426,50 @@ Read azc_b_activation.act.yaml
 Answer found? → Done
   ↓
 Need B internal grammar? → Use BCSC
+```
+
+### HTSC Priority Rule
+
+For questions about HT (Human Track) properties:
+- What HT is and isn't (population, morphology, operational status)
+- Cross-system manifestation (A, B, AZC anchoring pressures)
+- Line-1 and paragraph header enrichment
+- Compound specification (C935 revision)
+- Disallowed interpretations
+
+**Check `humanTrack.htsc.yaml` FIRST.** This is HT from HT's own perspective.
+
+```
+Question about HT properties?
+  ↓
+Read humanTrack.htsc.yaml
+  ↓
+Answer found? → Done
+  ↓
+Need B grammar context? → Use BCSC (ht_un_integration section)
+```
+
+### PSC Priority Rule
+
+For questions about paragraph structure:
+- What paragraphs are (operational unit, gallows-delimited)
+- Independence model (parallel programs, self-containment)
+- Header-body architecture (enrichment, compound specification)
+- A-B correspondence (pool relationship, structural parallel)
+- Folio-paragraph organization (distribution, convergence, section effects)
+- Stability properties (LINK/hazard neutrality, body homogeneity)
+
+**Check `paragraph.psc.yaml` FIRST.** This is the paragraph from the paragraph's own perspective.
+
+```
+Question about paragraph structure?
+  ↓
+Read paragraph.psc.yaml
+  ↓
+Answer found? → Done
+  ↓
+Need B execution details? → Use BCSC (paragraph section)
+Need A profiling details? → Use CASC (paragraph_structure section)
 ```
 
 ### BCSC Priority Rule

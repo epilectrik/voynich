@@ -1,0 +1,248 @@
+{
+  "analysis": "Degree System Evolution",
+  "tier": 3,
+  "rupescissa_matrix": {
+    "hot": {
+      "degree_1": {
+        "count": 8,
+        "materials": [
+          "chamomile",
+          "anise",
+          "sweet flag",
+          "rose",
+          "violet",
+          "borage",
+          "bugloss",
+          "endive"
+        ]
+      },
+      "degree_2": {
+        "count": 15,
+        "materials": [
+          "fennel",
+          "parsley",
+          "celery",
+          "dill",
+          "caraway",
+          "cumin",
+          "coriander",
+          "hyssop",
+          "mint",
+          "oregano",
+          "thyme",
+          "sage",
+          "rosemary",
+          "lavender",
+          "basil"
+        ]
+      },
+      "degree_3": {
+        "count": 14,
+        "materials": [
+          "ginger",
+          "galangal",
+          "cinnamon",
+          "cloves",
+          "nutmeg",
+          "mace",
+          "pepper",
+          "cardamom",
+          "mustard",
+          "garlic",
+          "onion",
+          "leek",
+          "radish",
+          "rocket"
+        ]
+      },
+      "degree_4": {
+        "count": 6,
+        "materials": [
+          "euphorbium",
+          "pyrethrum",
+          "long pepper",
+          "spurge",
+          "hellebore",
+          "scammony"
+        ]
+      }
+    },
+    "cold": {
+      "degree_1": {
+        "count": 8,
+        "materials": [
+          "barley",
+          "lettuce",
+          "purslane",
+          "cucumber",
+          "melon",
+          "violet leaves",
+          "rose water",
+          "chicory"
+        ]
+      },
+      "degree_2": {
+        "count": 4,
+        "materials": [
+          "plantain",
+          "nightshade",
+          "portulaca",
+          "vinegar"
+        ]
+      },
+      "degree_3": {
+        "count": 4,
+        "materials": [
+          "poppy",
+          "henbane",
+          "mandrake",
+          "water lily"
+        ]
+      },
+      "degree_4": {
+        "count": 2,
+        "materials": [
+          "opium",
+          "hemlock"
+        ]
+      }
+    },
+    "dry": {
+      "degree_1": {
+        "count": 2,
+        "materials": [
+          "beans",
+          "lentils"
+        ]
+      },
+      "degree_2": {
+        "count": 1,
+        "materials": [
+          "pepper"
+        ]
+      },
+      "degree_3": {
+        "count": 3,
+        "materials": [
+          "alum",
+          "vitriol",
+          "iron rust"
+        ]
+      },
+      "degree_4": {
+        "count": 0,
+        "materials": []
+      }
+    },
+    "humid": {
+      "degree_1": {
+        "count": 0,
+        "materials": []
+      },
+      "degree_2": {
+        "count": 3,
+        "materials": [
+          "cucumber",
+          "oils",
+          "fats"
+        ]
+      },
+      "degree_3": {
+        "count": 1,
+        "materials": [
+          "honey"
+        ]
+      },
+      "degree_4": {
+        "count": 1,
+        "materials": [
+          "egg white"
+        ]
+      }
+    }
+  },
+  "rupescissa_hot_distribution": {
+    "degree_1": {
+      "count": 8,
+      "pct": 18.6
+    },
+    "degree_2": {
+      "count": 15,
+      "pct": 34.9
+    },
+    "degree_3": {
+      "count": 14,
+      "pct": 32.6
+    },
+    "degree_4": {
+      "count": 6,
+      "pct": 14.0
+    }
+  },
+  "brunschwig_fire_distribution": {
+    "degree_1": {
+      "count": 62,
+      "pct": 25.3
+    },
+    "degree_2": {
+      "count": 147,
+      "pct": 60.0
+    },
+    "degree_3": {
+      "count": 36,
+      "pct": 14.7
+    },
+    "degree_4": {
+      "count": 0,
+      "pct": 0.0
+    }
+  },
+  "degree_alignment_test": {
+    "rupescissa_hot_peak_degree": 2,
+    "brunschwig_fire_peak_degree": 2,
+    "peaks_match": true,
+    "rupescissa_d4_fraction": 14.0,
+    "d4_under_15pct": true
+  },
+  "dimensional_collapse": {
+    "rupescissa_dimensions": 4,
+    "rupescissa_qualities": [
+      "hot",
+      "cold",
+      "dry",
+      "humid"
+    ],
+    "rupescissa_cells": 16,
+    "brunschwig_dimensions": 1,
+    "brunschwig_axis": "fire (heat intensity only)",
+    "brunschwig_cells": 4,
+    "collapse_reason": "Practical distillation requires only thermal control. Cold/dry/humid are material properties, not process parameters. Brunschwig operates on heat — the only quality the distiller directly controls.",
+    "voynich_dimensions": "4 regimes (C179), but encode PROCEDURAL COMPLETENESS (Section X.14), not material quality"
+  },
+  "prohibition_transformation": {
+    "rupescissa": {
+      "stance": "AVOID",
+      "evidence": "Ch. XXI: 'USE WITH EXTREME CAUTION. These can burn the stomach.' Ch. XXIV: 'NARCOTIC AND DANGEROUS. Use only in extreme necessity.'",
+      "degree_4_treatment": "Dangerous but documented — materials listed with warnings"
+    },
+    "brunschwig": {
+      "stance": "RESTRICT",
+      "evidence": "BRSC: 'CATEGORICAL_PROHIBITION. The fourth degree should be avoided at all times... nature rejects all coercion.'",
+      "degree_4_treatment": "Almost never used — 9/509 recipes (1.8%), special handling"
+    },
+    "voynich": {
+      "stance": "ENGINEER",
+      "evidence": "C494: REGIME_4 = precision-constrained execution, not forbidden. C490: 20.5% forbid AGGRESSIVE strategy.",
+      "degree_4_treatment": "Encoded as precision engineering with hazard awareness (C109)",
+      "note": "NOT a continuation of prohibition. Transformation from avoidance to controlled access."
+    }
+  },
+  "falsification_result": "PASS — Distribution shapes align (both peak at D2, D4 fraction small)",
+  "constraints_referenced": [
+    "C179",
+    "C494",
+    "C490",
+    "C109",
+    "F-BRU-002"
+  ]
+}

@@ -1,0 +1,26 @@
+{
+  "phase": 375,
+  "title": "Rupescissa Comparative Analysis",
+  "framing": "Shared tradition convergence (not evolutionary lineage)",
+  "analyses": [
+    {
+      "name": "Degree System Evolution",
+      "tier": 3,
+      "result": "PASS — Distribution shapes align (both peak at D2, D4 fraction small)",
+      "key_finding": "Prohibition transformation: AVOID (Rupescissa) -> RESTRICT (Brunschwig) -> ENGINEER (Voynich, C494). Hot-degree peak at D2, fire-degree peak at D2."
+    },
+    {
+      "name": "Action Vocabulary Evolution",
+      "tier": 3,
+      "result": "PASS — Rupescissa maps to core distillation (64.3% core vs 14.3% non-core)",
+      "key_finding": "Rupescissa covers 33.3% of Brunschwig's 36 actions. Maps to core distillation phases. Brunschwig adds: Preparation (material-specific), Mid-Process (OJLM-1 tacit), Storage (institutional). Qualitative shift: 12 named -> 36 named -> 49 abstract (C121)."
+    },
+    {
+      "name": "Concealment Doctrine",
+      "tier": 4,
+      "result": "PASS — 5/5 consistent, with C476 tension documented",
+      "key_finding": "7 concealment strategies documented in Rupescissa. 5/5 consistent with Voynich design (but all have independent structural explanations). C476 tension: system optimizes for internal discrimination, consistent with guild-knowledge artifact."
+    }
+  ],
+  "overall_assessment": "Rupescissa establishes the intellectual and cultural context in which a document like the Voynich would be designed: operational focus, practitioner restriction, concealment awareness, degree-based classification. The Voynich's structural properties are consistent with this tradition but have independent structural explanations. The lineage is cultural-intellectual, not direct textual."
+}

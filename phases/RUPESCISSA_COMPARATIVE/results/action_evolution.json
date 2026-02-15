@@ -1,0 +1,349 @@
+{
+  "analysis": "Action Vocabulary Evolution",
+  "tier": 3,
+  "rupescissa_actions": [
+    "DISTILL",
+    "CIRCULATE",
+    "RECTIFY",
+    "SUBLIME",
+    "PUTREFY",
+    "CALCINE",
+    "DISSOLVE",
+    "GRIND",
+    "SEAL",
+    "HEAT_DUNG",
+    "SEPARATE",
+    "COLLECT"
+  ],
+  "rupescissa_action_count": 12,
+  "brunschwig_action_count": 42,
+  "voynich_class_count": 49,
+  "rupescissa_to_brunschwig_mapping": {
+    "DISTILL": {
+      "brunschwig_equivalents": [
+        "DISTILL",
+        "REDISTILL"
+      ],
+      "brunschwig_phase": "Distillation",
+      "mapping_type": "DIRECT",
+      "notes": "Core operation in both texts"
+    },
+    "CIRCULATE": {
+      "brunschwig_equivalents": [],
+      "brunschwig_phase": null,
+      "mapping_type": "ABSENT",
+      "notes": "Rupescissa's signature operation (continuous sealed circulation). REDISTILL is partial equivalent. Brunschwig uses iterative redistillation instead."
+    },
+    "RECTIFY": {
+      "brunschwig_equivalents": [
+        "RECTIFY"
+      ],
+      "brunschwig_phase": "Post-Distillation",
+      "mapping_type": "DIRECT",
+      "notes": "Purification by repeated distillation or sun exposure"
+    },
+    "SUBLIME": {
+      "brunschwig_equivalents": [],
+      "brunschwig_phase": null,
+      "mapping_type": "ABSENT",
+      "notes": "Sublimation of metals/minerals. Absent from Brunschwig's plant-based recipes."
+    },
+    "PUTREFY": {
+      "brunschwig_equivalents": [
+        "FERMENT",
+        "DIGEST"
+      ],
+      "brunschwig_phase": "Pre-Treatment",
+      "mapping_type": "SPLIT",
+      "notes": "Rupescissa's generic 'putrefy in dung' splits into Brunschwig's differentiated FERMENT (weeks) and DIGEST (gentle sealed heating)"
+    },
+    "CALCINE": {
+      "brunschwig_equivalents": [],
+      "brunschwig_phase": null,
+      "mapping_type": "ABSENT",
+      "notes": "Metallic operation (calcination of silver, mercury). Not in plant distillation."
+    },
+    "DISSOLVE": {
+      "brunschwig_equivalents": [],
+      "brunschwig_phase": null,
+      "mapping_type": "ABSENT",
+      "notes": "Dissolving metals in acids/vinegar. Metallic, not in plant distillation."
+    },
+    "GRIND": {
+      "brunschwig_equivalents": [
+        "GRIND",
+        "POUND",
+        "POWDER"
+      ],
+      "brunschwig_phase": "Preparation",
+      "mapping_type": "EXPANDED",
+      "notes": "Rupescissa's generic 'grind' expands to 3 specialized Brunschwig operations"
+    },
+    "SEAL": {
+      "brunschwig_equivalents": [
+        "SEAL",
+        "SEAL_VESSEL"
+      ],
+      "brunschwig_phase": "Mid-Process / Storage",
+      "mapping_type": "EXPANDED",
+      "notes": "Rupescissa's 'lute of wisdom' expands to Brunschwig's 4 distinct seal operations (LUTE_THERMAL, LUTE_JOINTS, PLUG, COVER per BRSC v2.1)"
+    },
+    "HEAT_DUNG": {
+      "brunschwig_equivalents": [],
+      "brunschwig_phase": null,
+      "mapping_type": "REPLACED",
+      "notes": "Rupescissa's horse dung heating replaced by Brunschwig's water bath (balneum mariae). Technological evolution."
+    },
+    "SEPARATE": {
+      "brunschwig_equivalents": [
+        "STRAIN",
+        "FILTER",
+        "SETTLE"
+      ],
+      "brunschwig_phase": "Post-Distillation",
+      "mapping_type": "EXPANDED",
+      "notes": "Rupescissa's generic 'separate' expands to 3 specialized Brunschwig operations"
+    },
+    "COLLECT": {
+      "brunschwig_equivalents": [
+        "COLLECT"
+      ],
+      "brunschwig_phase": "Post-Distillation",
+      "mapping_type": "DIRECT",
+      "notes": "Gathering distillate into receiving vessel"
+    }
+  },
+  "mapping_type_summary": {
+    "DIRECT": [
+      "DISTILL",
+      "RECTIFY",
+      "COLLECT"
+    ],
+    "ABSENT": [
+      "CIRCULATE",
+      "SUBLIME",
+      "CALCINE",
+      "DISSOLVE"
+    ],
+    "SPLIT": [
+      "PUTREFY"
+    ],
+    "EXPANDED": [
+      "GRIND",
+      "SEAL",
+      "SEPARATE"
+    ],
+    "REPLACED": [
+      "HEAT_DUNG"
+    ]
+  },
+  "phase_coverage": {
+    "Collection": {
+      "total_actions": 3,
+      "covered_by_rupescissa": 0,
+      "coverage_pct": 0.0,
+      "covered_actions": [],
+      "uncovered_actions": [
+        "GATHER",
+        "HARVEST_TIMING",
+        "SELECT"
+      ]
+    },
+    "Preparation": {
+      "total_actions": 12,
+      "covered_by_rupescissa": 3,
+      "coverage_pct": 25.0,
+      "covered_actions": [
+        "GRIND",
+        "POUND",
+        "POWDER"
+      ],
+      "uncovered_actions": [
+        "BORE",
+        "BREAK",
+        "CHOP",
+        "CLEAN",
+        "CRUSH",
+        "KILL",
+        "PLUCK",
+        "STRIP",
+        "WASH"
+      ]
+    },
+    "Pre-Treatment": {
+      "total_actions": 5,
+      "covered_by_rupescissa": 2,
+      "coverage_pct": 40.0,
+      "covered_actions": [
+        "DIGEST",
+        "FERMENT"
+      ],
+      "uncovered_actions": [
+        "DRY",
+        "MACERATE",
+        "MIX"
+      ]
+    },
+    "Distillation": {
+      "total_actions": 2,
+      "covered_by_rupescissa": 2,
+      "coverage_pct": 100.0,
+      "covered_actions": [
+        "DISTILL",
+        "REDISTILL"
+      ],
+      "uncovered_actions": []
+    },
+    "Mid-Process": {
+      "total_actions": 9,
+      "covered_by_rupescissa": 0,
+      "coverage_pct": 0.0,
+      "covered_actions": [],
+      "uncovered_actions": [
+        "COOL",
+        "COVER",
+        "LUTE_JOINTS",
+        "LUTE_THERMAL",
+        "MONITOR_DRIPS",
+        "MONITOR_TEMP",
+        "PLUG",
+        "REGULATE_FIRE",
+        "REPLENISH"
+      ]
+    },
+    "Post-Distillation": {
+      "total_actions": 7,
+      "covered_by_rupescissa": 5,
+      "coverage_pct": 71.4,
+      "covered_actions": [
+        "COLLECT",
+        "FILTER",
+        "RECTIFY",
+        "SETTLE",
+        "STRAIN"
+      ],
+      "uncovered_actions": [
+        "MELT",
+        "POUR"
+      ]
+    },
+    "Storage": {
+      "total_actions": 4,
+      "covered_by_rupescissa": 1,
+      "coverage_pct": 25.0,
+      "covered_actions": [
+        "SEAL_VESSEL"
+      ],
+      "uncovered_actions": [
+        "LABEL",
+        "RENEW",
+        "STORE"
+      ]
+    }
+  },
+  "overall_coverage_pct": 33.3,
+  "brunschwig_additions": {
+    "material_preparation": {
+      "description": "Material-specific preparation operations absent from Rupescissa (theory-level text)",
+      "actions": [
+        "BORE",
+        "BREAK",
+        "CHOP",
+        "CLEAN",
+        "CRUSH",
+        "KILL",
+        "PLUCK",
+        "STRIP",
+        "WASH"
+      ],
+      "count": 9
+    },
+    "collection_selection": {
+      "description": "Field collection operations (Rupescissa starts at laboratory level)",
+      "actions": [
+        "GATHER",
+        "HARVEST_TIMING",
+        "SELECT"
+      ],
+      "count": 3
+    },
+    "midprocess_monitoring": {
+      "description": "Mid-process monitoring operations — absent from BOTH Rupescissa AND Brunschwig recipes (OJLM-1 boundary)",
+      "actions": [
+        "COOL",
+        "COVER",
+        "LUTE_JOINTS",
+        "LUTE_THERMAL",
+        "MONITOR_DRIPS",
+        "MONITOR_TEMP",
+        "PLUG",
+        "REGULATE_FIRE",
+        "REPLENISH"
+      ],
+      "count": 9,
+      "note": "These are general protocols in Brunschwig Part 1, not per-recipe. MIDPROCESS is tacit operator knowledge."
+    },
+    "storage_protocol": {
+      "description": "Storage and preservation — commercial/institutional concern absent from Rupescissa",
+      "actions": [
+        "LABEL",
+        "RENEW",
+        "STORE"
+      ],
+      "count": 3
+    },
+    "additional_post_distillation": {
+      "description": "Additional post-distillation operations beyond Rupescissa's basic separation",
+      "actions": [
+        "MELT",
+        "POUR"
+      ],
+      "count": 2
+    },
+    "additional_pre_treatment": {
+      "description": "Pre-treatment refinements beyond Rupescissa's generic putrefaction",
+      "actions": [
+        "DRY",
+        "MACERATE",
+        "MIX"
+      ],
+      "count": 3
+    }
+  },
+  "qualitative_shift": {
+    "rupescissa": {
+      "count": 12,
+      "type": "Named physical operations",
+      "abstraction_level": "Theory-level (what to do in principle)",
+      "domain": "Universal (metals, plants, animals, minerals)"
+    },
+    "brunschwig": {
+      "count": 36,
+      "type": "Named practical operations",
+      "abstraction_level": "Recipe-level (specific German craft terms)",
+      "domain": "Plant distillation (specialized from Rupescissa's universal scope)"
+    },
+    "voynich": {
+      "count": 49,
+      "type": "Abstract distributional equivalence classes (C121)",
+      "abstraction_level": "Grammar-level (9.8x compression, not human-named)",
+      "domain": "Closed-loop control programs (C171)",
+      "key_difference": "NOT named operations — distributional classes derived from token co-occurrence patterns. This is the qualitative jump: from craft vocabulary to abstract grammar."
+    }
+  },
+  "falsification_test": {
+    "core_coverage_pct": 64.3,
+    "noncore_coverage_pct": 14.3,
+    "core_exceeds_noncore": true
+  },
+  "falsification_result": "PASS — Rupescissa maps to core distillation (64.3% core vs 14.3% non-core)",
+  "constraints_referenced": [
+    "C121",
+    "C591",
+    "C171",
+    "C935",
+    "F-BRU-011",
+    "F-BRU-012"
+  ],
+  "note": "Brunschwig->Voynich mapping already established in F-BRU-011/F-BRU-012. Novel contribution here is Rupescissa->Brunschwig."
+}

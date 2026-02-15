@@ -1,0 +1,540 @@
+# ============================================================
+
+meta:
+  name: "Paragraph Structural Contract"
+  acronym: "PSC"
+  version: "1.0"
+  date: "2026-02-15"
+  status: "LOCKED"
+  layer_type: "cross-system structural unit contract"
+  derived_from: "Tier 0-2 constraints (structural)"
+  governance: |
+    PSC is NOT authoritative. Constraints are authoritative.
+    PSC describes the paragraph as a structural primitive from the
+    paragraph's own perspective, across Currier A and Currier B.
+    Do not edit without updating source constraints first.
+
+# ============================================================
+scope:
+  systems: "Currier A and Currier B"
+  excluded: "AZC (uses rings/stars/circles, not paragraphs)"
+  definition: "Gallows-delimited text block within a folio"
+  b_paragraphs: 585
+  a_paragraphs: 342
+  b_mean_per_folio: 7.1
+  b_mean_lines: 4.4
+  a_mean_lines: 4.8
+
+# Explicit ownership declaration
+ownership:
+  psc_describes:
+    - paragraph_definition     # operational unit, granularity validation
+    - header_body_architecture # universal header-body pattern
+    - independence_model       # parallel programs, self-containment
+    - folio_paragraph_organization  # distribution, ordinariness, convergence
+    - section_parameterization # section-dependent paragraph counts/roles
+    - stability_properties     # neutrality, homogeneity, macro-dynamics
+    - combinatorial_properties # cluster selectivity, gradient invariance
+    - a_b_correspondence       # pool relationship, structural parallel
+    - cross_system_manifestation  # A vs B paragraph properties
+  psc_does_not_describe:
+    - b_execution_gradient: "-> BCSC (spec->exec vocabulary C932-C934, prep verb concentration)"
+    - b_ht_paragraph_structure: "-> BCSC (HT enrichment C840-C844, step function, prefix markers)"
+    - a_internal_profiling: "-> CASC (size distribution C847, RI variance C848, section profile C849)"
+    - a_combinatorial_grammar: "-> CASC (C1039-C1041 cluster selectivity, diversification)"
+    - gallows_dynamics_detail: "-> BCSC (P-T transition C867, EN subfamily gradient C863)"
+    - kernel_operation_mapping: "-> BCSC (kernel signature prediction C893, stereotypy C944)"
+  ownership_boundaries: |
+    PSC owns paragraph-as-unit properties (identity, organization, stability).
+    BCSC retains B-grammar-expressed-at-paragraph-scale (execution gradient, HT patterns).
+    CASC retains A-specific paragraph profiling (size, RI, cluster taxonomy).
+    Ownership principle: if understanding a constraint requires knowing instruction
+    classes, kernel operators, or roles -> stays in BCSC/CASC.
+    If it describes a property of paragraphs independent of grammar -> PSC owns it.
+    Each constraint in provenance is tagged OWNED or REFERENCED.
+
+# ============================================================
+guarantees:
+
+  - id: "OPERATIONAL_UNIT"
+    statement: |
+      Paragraphs are the operational aggregation level (not lines, not folios).
+      Single line: 11.2% token survival. Paragraph: 31.8% survival (2.8x vs line).
+      Full A-folio: 50.0% survival. RI structure visible ONLY at paragraph level.
+    provenance: "C827, C834"
+
+  - id: "GALLOWS_DELIMITED"
+    statement: |
+      Gallows-initial tokens mark paragraph boundaries at 81.5%.
+      Distribution: p=55.3%, t=28.7%, k=11.9%, f=4.0%.
+      Paragraph-initial rate: 8.6% vs 2.7% body (3.2x enrichment).
+    provenance: "C864, C841"
+
+  - id: "HEADER_BODY"
+    statement: |
+      Universal header-body architecture across both systems.
+      Currier A: RI concentration 3.84x in paragraph first line (C848).
+      Currier B: HT enrichment +15.8pp (44.9% line 1 vs 29.1% body, d=0.721) (C840).
+      Both systems show step function: sharp drop at line 2, flat body thereafter.
+    provenance: "C840, C848, C854"
+
+  - id: "COMPOUND_SPECIFICATION"
+    statement: |
+      Headers contain compressed specifications that body lines unpack.
+      Line-1 compound atoms predict body simple MIDDLEs at 71.6% hit rate
+      (vs 59.2% random, 1.21x lift). HT compound rate: 45.8% vs grammar 31.5%.
+      A shows parallel pattern: RI concentrated 3.84x in first line.
+    provenance: "C935, C848"
+
+  - id: "PARALLEL_PROGRAMS"
+    statement: |
+      Paragraphs within a folio are independent mini-programs, not sequential steps.
+      Role similarity (normalized): 0.831 cohesion.
+      Prefix overlap: 0.300. Vocabulary Jaccard: 0.061.
+      Verdict: PARALLEL_PROGRAMS model (independent mini-programs).
+    provenance: "C855, C862"
+
+  - id: "SELF_CONTAINMENT"
+    statement: |
+      No inter-paragraph linking. B both-position tokens: 7.1% (187 types:
+      24 convergent, 39 divergent, 124 symmetric). A RI both-position: 0.6%.
+      Paragraphs are self-contained operational units.
+    provenance: "C845"
+
+  - id: "VOCABULARY_DISTRIBUTION"
+    statement: |
+      Folio unique vocabulary is DISTRIBUTED across paragraphs, not concentrated.
+      Gini coefficient: 0.279. Paragraph 1 unique vocab share: 27.4% mean, 21.2% median.
+      Distribution is roughly uniform across ordinals.
+    provenance: "C856"
+
+  - id: "FIRST_ORDINARINESS"
+    statement: |
+      First paragraph is NOT structurally special.
+      Vocabulary predictivity: 11.8%. HT rate Par 1: 34.6% vs Later: 36.8% (0.94x).
+      No elevated unique vocabulary rate. Not a template or summary.
+    provenance: "C857"
+
+  - id: "BODY_HOMOGENEITY"
+    statement: |
+      Body lines are compositionally homogeneous after controlling for line length.
+      EN fraction rho: -0.023 (p=0.350). FL fraction rho: -0.050 (p=0.068).
+      CC fraction rho: -0.049 (p=0.076). All collapse to ~0 after length control.
+      Only length progression (rho=-0.229, p=0.001) is systematic.
+    provenance: "C963"
+
+  - id: "POOL_RELATIONSHIP"
+    statement: |
+      A-B vocabulary relationship is pool-based, not address-based.
+      Spearman rho: 0.694 (p < 0.001). Raw lift: 2.49x, pool-size-controlled: 1.20x.
+      Top 10 A paragraphs capture 85.9% of best matches. No 1:1 A->B pairing.
+    provenance: "C846"
+
+  - id: "STRUCTURAL_PARALLEL"
+    statement: |
+      A and B show matching paragraph architecture.
+      A mean lines: 4.8. B mean lines: 4.37 (Mann-Whitney p=0.067, d=0.110).
+      Both exhibit 5-cluster taxonomy (A silhouette=0.337, B silhouette=0.237).
+      Both show header-body enrichment in first line.
+    provenance: "C854, C850, C853"
+
+  - id: "SECTION_PARAMETERIZED"
+    statement: |
+      Section modulates paragraph count, size, and role composition.
+      HERBAL: 2.2 pars/folio, 49.8 tok/par.
+      BIO: 7.5 pars/folio, 46.0 tok/par.
+      RECIPE: 10.2 pars/folio, 38.3 tok/par.
+      PHARMA: 14.0 pars/folio, 12.6 tok/par.
+      Section effects are ADDITIVE only (C1047: no section-dynamics interaction).
+    provenance: "C860, C852"
+
+  - id: "LINK_HAZARD_NEUTRAL"
+    statement: |
+      LINK and hazard density are NEUTRAL across paragraph ordinals.
+      LINK rate CV: 0.16. Hazard rate CV: 0.21.
+      LINK body allocation: 79.4%. Hazard body allocation: 80.9%.
+    provenance: "C861"
+
+  - id: "MACRO_DYNAMICS_NEUTRAL"
+    statement: |
+      6-state automaton does NOT differentiate paragraph position.
+      Header AXM: 0.705, body AXM: 0.677 (delta +0.028, p=0.007).
+      Effect is tiny and driven by gallows tokens (87.7% AXM).
+      Macro-dynamics operate at folio/section scale, not paragraph scale.
+    provenance: "C1022"
+
+  - id: "CLUSTER_SELECTIVE"
+    statement: |
+      Paragraphs draw from fewer C475 compatibility clusters than random.
+      Currier A: entropy 1.502 vs null 1.780 (z=-2.830, p=0.002) (C1039).
+      Currier B: entropy 1.512 vs null 1.824 (z=-2.614, p=0.007) (C1052).
+      Paragraphs specialize within the compatibility graph in both systems.
+    provenance: "C1039, C1052"
+
+# ============================================================
+invariants:
+
+  - id: "SIZE_SIMILARITY"
+    statement: "A=4.8 vs B=4.4 lines per paragraph (Mann-Whitney p=0.067, d=0.110)"
+    provenance: "C854"
+
+  - id: "COUNT_SECTION_DEPENDENT"
+    statement: "HERBAL 2.2, BIO 7.5, RECIPE 10.2, PHARMA 14.0 paragraphs per folio"
+    provenance: "C860"
+
+  - id: "VOCABULARY_CONVERGENCE_WEAK"
+    statement: "Later paragraphs weakly converge: cumulative overlap rises from 14% (par 2) to 39% (par 8). Vocabulary similarity by pair distance: FLAT (0.055->0.045)"
+    provenance: "C859"
+
+  - id: "HAZARD_NO_PARAGRAPH_CLUSTERING"
+    statement: "No paragraph-level hazard concentration (folio p=0.688, paragraph p=0.320)"
+    provenance: "C1027"
+
+  - id: "GRADIENT_INVARIANCE"
+    statement: "Affordance bin composition static across quintiles: HUB Q0=64.9%, Q1=61.6%, Q2=67.4%, Q3=62.8%, Q4=64.9% (rho=-0.10, p=0.873)"
+    provenance: "C1054"
+
+  - id: "VOCABULARY_CORRESPONDENCE"
+    statement: "A folios provide 81.2% MIDDLE coverage for B paragraphs (lift 1.71x). Single A paragraph covers 58.3%; aggregating 3+ reaches 80%"
+    provenance: "C885"
+
+  - id: "PARAGRAPH_COUNT_COMPLEXITY"
+    statement: "Paragraph count is weak proxy for complexity: rho=0.836 with vocabulary size, 0.802 with total tokens, 0.826 with role diversity"
+    provenance: "C858"
+
+  - id: "GALLOWS_BOUNDARY_ENRICHMENT"
+    statement: "3.2x gallows enrichment at paragraph boundaries: 8.6% paragraph-initial vs 2.7% body"
+    provenance: "C841, C864"
+
+  - id: "CLUSTER_COUNT_CONVERGENCE"
+    statement: "Both A and B exhibit 5-cluster paragraph taxonomy (A silhouette=0.337, B silhouette=0.237)"
+    provenance: "C850, C853"
+
+  - id: "BODY_LENGTH_SHRINKAGE"
+    statement: "Lines shrink toward paragraph end: rho=-0.229, p=0.001 — sole systematic body progression"
+    provenance: "C963"
+
+# ============================================================
+cross_system_manifestation:
+
+  currier_a:
+    function: "Material specification pool"
+    paragraph_count: 342
+    mean_lines: 4.8
+    header_enrichment: "RI 3.84x in first line (C848)"
+    size_distribution:
+      by_position: "first=5.35, middle=2.75, last=5.36, only=11.79 lines"
+      provenance: "C847 (CASC)"
+    section_profile:
+      statement: "P: 17.2% RI, 67.5% PP vs H: 8.4% RI, 42% PP (p=0.0006)"
+      provenance: "C849 (CASC)"
+    cluster_taxonomy:
+      clusters: 5
+      silhouette: 0.337
+      types: "short-RI (34%), long-linker (8%), standard (58%)"
+      provenance: "C850 (CASC)"
+    combinatorial_grammar:
+      cluster_selectivity: "Entropy 1.502 vs null 1.780 (z=-2.830, p=0.002) (C1039, CASC)"
+      folio_compatibility: "Within-folio 0.880 vs between-folio 0.811 (C1040, CASC)"
+      diversification: "Cross-line compatibility LOWER than random (z=-3.567) — complementary, not redundant (C1041, CASC)"
+    special_types:
+      pure_ri: "83% of pure-RI first-line paragraphs in section P (C915, CASC)"
+      animal_candidates: "6 paragraphs pass kernel validation (C884, CASC, Tier 3)"
+    provenance: "C847-C850, C881, C884, C915, C1039-C1041 (all CASC-owned)"
+
+  currier_b:
+    function: "Self-contained execution program"
+    paragraph_count: 585
+    mean_per_folio: 7.1
+    mean_lines: 4.4
+    header_enrichment: "HT +15.8pp (44.9% vs 29.1%, d=0.721) (C840, BCSC)"
+    ht_step_function: "Pos 1=45.2%, pos 2=26.5%, pos 3+=26-27% (C842, BCSC)"
+    ht_prefix_markers: "pch- 16.9% + po- 16.6% = 33.5% of initiators (C843, BCSC)"
+    gallows_initial: "71.5% p/t/k/f initial (C841, BCSC)"
+    execution_gradient:
+      statement: "Spec->exec vocabulary gradient (BCSC-owned)"
+      rare_middle_trend: "r=-0.97 (Q0->Q4)"
+      universal_middle_trend: "r=+0.92 (Q0->Q4)"
+      provenance: "C932 (BCSC)"
+    prep_verb_concentration: "te 2.7x, pch 2.8x enrichment in Q0 vs Q4 (C933, BCSC)"
+    kernel_signature:
+      statement: "HIGH_K=2x FQ (p<0.0001); HIGH_H EN (p=0.036)"
+      provenance: "C893 (BCSC)"
+    section_role_interaction:
+      statement: "RECIPE 44.5% EN; PHARMA 43.2% FQ (Kruskal-Wallis p<0.0001)"
+      provenance: "C852 (BCSC)"
+    cluster_taxonomy:
+      clusters: 5
+      silhouette: 0.237
+      types: "single-line (9%), long-EN (10%), standard (81%)"
+      provenance: "C853 (BCSC)"
+    novel_combinations: "B paragraphs show 11.19% novel MIDDLE pairs (C812, BCSC)"
+    cluster_selectivity: "Entropy 1.512 vs null 1.824 (z=-2.614, p=0.007) (C1052)"
+    gradient_invariance: "Affordance bin composition static across quintiles (C1054)"
+    provenance: "C840-C844, C851-C853, C863-C869, C893, C932-C935, C944, C1052, C1054"
+
+# ============================================================
+a_b_correspondence:
+
+  pool_model:
+    statement: |
+      A paragraphs and B paragraphs share vocabulary via pool overlap,
+      not direct 1:1 address mapping. 39 A paragraphs serve 568 B paragraphs.
+    best_match_coverage: "66.2%"
+    random_baseline: "26.6%"
+    raw_lift: "2.49x"
+    controlled_lift: "1.20x"
+    pool_size_correlation: "rho=0.694"
+    hub_concentration: "Top 10 A paragraphs capture 85.9% of best matches"
+    provenance: "C846"
+
+  vocabulary_correspondence:
+    statement: "A folios provide 81.2% MIDDLE coverage for B paragraphs"
+    a_folio_coverage: "81.2% (lift 1.71x)"
+    a_paragraph_coverage: "58.3% (lift 2.04x, paragraphs with >= 10 PP tokens)"
+    aggregation_curve: "2 A paragraphs=76.5%, 3=80.4%, 5=84.7%"
+    provenance: "C885"
+
+  structural_parallel:
+    size: "A=4.8 vs B=4.4 lines (p=0.067, d=0.110, not significant)"
+    clustering: "Both k=5 (A sil=0.337, B sil=0.237)"
+    header_body: "Both show first-line enrichment (A: RI 3.84x, B: HT +15.8pp)"
+    provenance: "C854"
+
+# ============================================================
+folio_paragraph_organization:
+
+  role_template:
+    statement: "Paragraphs are NOT variations on a folio template"
+    role_similarity: 0.831
+    prefix_overlap: 0.300
+    vocabulary_jaccard: 0.061
+    ht_overlap: 0.024
+    verdict: "PARALLEL_PROGRAMS"
+    provenance: "C855, C862"
+
+  vocabulary_distribution:
+    statement: "Folio unique vocabulary is DISTRIBUTED, not concentrated"
+    gini: 0.279
+    par1_share_mean: "27.4%"
+    par1_share_median: "21.2%"
+    provenance: "C856"
+
+  first_paragraph:
+    statement: "Paragraph 1 is NOT structurally special"
+    vocabulary_predictivity: "11.8%"
+    ht_ratio: "0.94x (34.6% vs 36.8%)"
+    provenance: "C857"
+
+  paragraph_count:
+    statement: "Paragraph count correlates with folio complexity but is weak proxy"
+    rho_vocabulary: 0.836
+    rho_tokens: 0.802
+    rho_roles: 0.826
+    provenance: "C858"
+
+  vocabulary_convergence:
+    statement: "Later paragraphs show WEAK vocabulary convergence"
+    cumulative_overlap: "par2=14.2%, par4=25.4%, par8=38.6%"
+    similarity_by_distance: "FLAT (0.055->0.045)"
+    role_distance_by_distance: "INCREASING (0.259->0.329)"
+    provenance: "C859"
+
+  section_organization:
+    herbal: {pars_per_folio: 2.2, tokens_per_par: 49.8, cohesion: 0.070}
+    bio: {pars_per_folio: 7.5, tokens_per_par: 46.0, cohesion: 0.071}
+    recipe: {pars_per_folio: 10.2, tokens_per_par: 38.3, cohesion: 0.053}
+    pharma: {pars_per_folio: 14.0, tokens_per_par: 12.6, cohesion: 0.056}
+    provenance: "C860"
+
+  link_hazard_neutrality:
+    link_cv: 0.16
+    hazard_cv: 0.21
+    link_body_allocation: "79.4%"
+    hazard_body_allocation: "80.9%"
+    provenance: "C861"
+
+# ============================================================
+stability_properties:
+
+  body_homogeneity:
+    statement: "Body lines compositionally homogeneous after length control"
+    length_rho: -0.229
+    length_p: 0.001
+    en_rho: -0.023
+    fl_rho: -0.050
+    cc_rho: -0.049
+    interpretation: "Paragraphs shrink toward end but each body line is structurally equivalent"
+    provenance: "C963"
+
+  macro_dynamics_neutral:
+    statement: "6-state automaton does NOT differentiate paragraph position"
+    header_axm: 0.705
+    body_axm: 0.677
+    delta: "+0.028"
+    chi2: 16.04
+    p: 0.007
+    interpretation: "Tiny effect driven by gallows tokens (87.7% AXM); dynamics operate at folio/section scale"
+    provenance: "C1022"
+
+  hazard_no_paragraph_clustering:
+    statement: "Hazard violations do not cluster by paragraph"
+    folio_p: 0.688
+    paragraph_p: 0.320
+    violation_rate: "26.5% (717/2707 transitions)"
+    provenance: "C1027"
+
+  gradient_invariance:
+    statement: "Affordance bin composition static across paragraph quintiles"
+    hub_q0: 0.649
+    hub_q1: 0.616
+    hub_q2: 0.674
+    hub_q3: 0.628
+    hub_q4: 0.649
+    spearman_rho: -0.10
+    p: 0.873
+    interpretation: "HUB vocabulary provides static scaffold; gradient is surface, not deep structure"
+    provenance: "C1054"
+
+# ============================================================
+disallowed_interpretations:
+
+  - id: "NOT_SEQUENTIAL_STEPS"
+    claim: "Paragraphs are sequential steps in a single process"
+    refutation: "C855, C862: Role similarity 0.831 but vocabulary Jaccard 0.061; PARALLEL_PROGRAMS verdict"
+
+  - id: "NOT_ORDINAL_EXECUTION"
+    claim: "Paragraph ordinal position encodes execution order"
+    refutation: "C855, C862: Independent mini-programs; ordinal 3 does not execute 'after' ordinal 2. C863 shows statistical gradient by ordinal but this is distributional, not ordering."
+
+  - id: "NOT_FIRST_TEMPLATE"
+    claim: "First paragraph is template or summary for the folio"
+    refutation: "C857: Vocabulary predictivity only 11.8%; HT rate 0.94x (not elevated)"
+
+  - id: "NOT_ROLE_DIFFERENTIATED_BODY"
+    claim: "Body lines have different structural roles (e.g., setup vs execution)"
+    refutation: "C963: EN/FL/CC fractions collapse to rho~0 after length control; only length shrinks"
+
+  - id: "NOT_ONE_TO_ONE_MAPPING"
+    claim: "A paragraphs map 1:1 to B paragraphs"
+    refutation: "C846: Pool-based with rho=0.694; 39 A paragraphs serve 568 B; lift drops from 2.49x to 1.20x after pool-size control"
+
+  - id: "NOT_RECIPES"
+    claim: "Paragraphs encode individual recipes or formulations"
+    refutation: "C120 (PURE_OPERATIONAL), C846 (pool-based), C171 (closed-loop control, not batch recipes)"
+
+  - id: "NOT_LENGTH_COMPLEXITY"
+    claim: "Paragraph length determines operational complexity"
+    refutation: "C858: rho=0.42 only (weak proxy); complexity is multi-dimensional"
+
+  - id: "NOT_POSITIONAL_GRAMMAR"
+    claim: "Paragraph position within folio affects grammar"
+    refutation: "C861: LINK CV=0.16, hazard CV=0.21 — both neutral across ordinals"
+
+  - id: "NOT_HAZARD_CLUSTERS"
+    claim: "Paragraphs cluster hazard violations"
+    refutation: "C1027: paragraph clustering p=0.320; folio p=0.688; no spatial concentration"
+
+# ============================================================
+provenance:
+
+  # PSC-OWNED constraints (primary home is PSC)
+  owned:
+    definition:
+      - {id: "C827", topic: "Paragraph operational unit (31.8% survival, 2.8x)"}
+      - {id: "C834", topic: "Paragraph granularity validation (paragraph-only RI structure)"}
+    boundaries:
+      - {id: "C864", topic: "Gallows paragraph marker (81.5% gallows-initial)"}
+      - {id: "C845", topic: "Paragraph self-containment (no inter-paragraph linking)"}
+    folio_organization:
+      - {id: "C855", topic: "Folio role template (cohesion 0.831, PARALLEL_PROGRAMS)"}
+      - {id: "C856", topic: "Vocabulary distribution (Gini 0.279, par1=27.4%)"}
+      - {id: "C857", topic: "First paragraph ordinariness (predictivity 11.8%)"}
+      - {id: "C858", topic: "Paragraph count complexity (rho=0.836)"}
+      - {id: "C859", topic: "Vocabulary convergence (14%->39%, FLAT similarity)"}
+      - {id: "C860", topic: "Section paragraph organization (HERBAL 2.2, PHARMA 14.0)"}
+      - {id: "C861", topic: "LINK/hazard paragraph neutrality (CV 0.16/0.21)"}
+      - {id: "C862", topic: "Role template verdict (PARALLEL_PROGRAMS)"}
+    a_b_correspondence:
+      - {id: "C846", topic: "Pool-based A-B relationship (rho=0.694, lift 2.49x->1.20x)"}
+      - {id: "C854", topic: "Structural parallel (p=0.067, d=0.110, both k=5)"}
+      - {id: "C885", topic: "Vocabulary correspondence (81.2% A-folio coverage)"}
+    stability:
+      - {id: "C963", topic: "Body homogeneity (length only rho=-0.229)"}
+      - {id: "C1022", topic: "Macro-dynamics neutral (AXM delta +0.028, gallows-driven)"}
+      - {id: "C1027", topic: "Hazard archaeology (no paragraph clustering p=0.320)"}
+    combinatorial:
+      - {id: "C1052", topic: "B paragraph cluster selectivity (z=-2.614, p=0.007)"}
+      - {id: "C1054", topic: "Affordance bin gradient invariance (HUB ~64% all quintiles)"}
+
+  # PSC-REFERENCED constraints (primary home is BCSC or CASC)
+  referenced:
+    from_bcsc:
+      b_paragraph_ht:
+        - {id: "C840", topic: "B paragraph HT enrichment (44.9% vs 29.1%, d=0.721)"}
+        - {id: "C841", topic: "B paragraph gallows-initial markers (3.2x enrichment)"}
+        - {id: "C842", topic: "B paragraph HT step function (pos 1=45.2%, pos 2=26.5%)"}
+        - {id: "C843", topic: "B paragraph prefix markers (pch- 16.9%, po- 16.6%)"}
+        - {id: "C844", topic: "Folio line-1 double header (50.2% HT)"}
+        - {id: "C851", topic: "B paragraph HT variance validation (delta +0.134, 76.8%)"}
+      b_paragraph_profiling:
+        - {id: "C852", topic: "B paragraph section-role interaction (RECIPE EN, PHARMA FQ)"}
+        - {id: "C853", topic: "B paragraph cluster taxonomy (5 clusters, sil=0.237)"}
+      gallows_dynamics:
+        - {id: "C863", topic: "Paragraph-ordinal EN subfamily gradient (qo-early, ch-late)"}
+        - {id: "C867", topic: "P-T transition paragraph dynamics"}
+        - {id: "C869", topic: "Gallows function as paragraph/section delimiters"}
+      execution_gradient:
+        - {id: "C932", topic: "Body vocabulary gradient (rare r=-0.97, universal r=+0.92)"}
+        - {id: "C933", topic: "Prep verb early concentration (te 2.7x, pch 2.8x)"}
+        - {id: "C934", topic: "Parallel startup (65% heat-first)"}
+        - {id: "C935", topic: "Compound specification dual purpose (71.6% hit, 1.21x lift)"}
+      kernel_and_other:
+        - {id: "C893", topic: "Paragraph kernel signature prediction (HIGH_K=2x FQ)"}
+        - {id: "C894", topic: "REGIME_4 recovery specialization concentration"}
+        - {id: "C944", topic: "Paragraph kernel sequence stereotypy"}
+        - {id: "C945", topic: "No folio-persistent rare MIDDLEs (FALSIFIED)"}
+        - {id: "C948", topic: "Gloss gap paragraph-start enrichment (4.03x)"}
+        - {id: "C1002", topic: "SUFFIX positional and sequential grammar"}
+      operational_context:
+        - {id: "C120", topic: "PURE_OPERATIONAL verdict (semantic ceiling)"}
+        - {id: "C171", topic: "Closed-loop control only"}
+        - {id: "C812", topic: "Novel MIDDLE combinations (11.19%)"}
+    from_casc:
+      a_paragraph_profiling:
+        - {id: "C833", topic: "RI first-line concentration (1.85x paragraph, 1.03x folio)"}
+        - {id: "C847", topic: "A paragraph size distribution (mean 4.8 lines)"}
+        - {id: "C848", topic: "A paragraph RI position variance (3.84x line 1)"}
+        - {id: "C849", topic: "A paragraph section profile (P vs H)"}
+        - {id: "C850", topic: "A paragraph cluster taxonomy (5 clusters, sil=0.337)"}
+        - {id: "C881", topic: "A record paragraph structure (RI 3.84x in first line)"}
+      a_special_types:
+        - {id: "C884", topic: "PRECISION-animal correspondence (6 candidates, Tier 3)"}
+        - {id: "C915", topic: "Section P pure-RI entries (83% in P)"}
+      a_combinatorial:
+        - {id: "C1039", topic: "A paragraph cluster selectivity (z=-2.830, p=0.002)"}
+        - {id: "C1040", topic: "Folio-level paragraph compatibility coherence (0.880 vs 0.811)"}
+        - {id: "C1041", topic: "Paragraph complementary diversification (z=-3.567)"}
+      ht_related:
+        - {id: "C927", topic: "HT elevation in label contexts (2.42x vs paragraphs)"}
+
+  total_owned: 20
+  total_referenced: 36
+  total_coverage: 56
+
+# ============================================================
+# Summary statement
+summary: |
+  A paragraph is a gallows-delimited, self-contained operational unit that
+  constitutes the primary aggregation level for both Currier A and Currier B.
+
+  In Currier A: paragraphs are material specification pools — groups of
+  complementary entries that diversify within selected compatibility clusters.
+  In Currier B: paragraphs are independent mini-programs with header-body
+  architecture, specification-to-execution vocabulary gradients, and
+  kernel-predicted operation types.
+
+  Both systems show matching 5-cluster taxonomy, header-body enrichment,
+  and pool-based vocabulary correspondence. Paragraphs operate independently
+  within folios (PARALLEL_PROGRAMS model). Grammar, hazard density, and
+  macro-dynamics are all paragraph-position-neutral.

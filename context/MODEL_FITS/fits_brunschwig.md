@@ -2155,3 +2155,41 @@ Path C reveals that the operational manifold comparison hits a curation wall: Br
 ### Verdict
 
 PARTIAL_EXTENSION — Path A extends structural homology into buffer-hazard class specificity. Paths B and C are at or near the comparison ceiling. The Brunschwig-Voynich alignment is confirmed as architectural (variance architecture, hazard class structure) with the semantic boundary firmly at the structural homology level.
+
+---
+
+## F-BRU-030: MIDPROCESS Absence Characterization
+
+**Tier:** F3 (Domain Model Test)
+**Scope:** B
+**Result:** MIDPROCESS_STRUCTURALLY_ABSENT
+**Supports:** C1056 (MIDPROCESS structural absence), F-BRU-029 (Path C closure)
+**Phase:** BRUNSCHWIG_MIDPROCESS_ABSENCE (Phase 371)
+
+### Hypothesis
+
+Following F-BRU-029 Path C failure (MIDPROCESS loading = 0.000), investigate whether per-recipe MIDPROCESS variation can be extracted from any data source. If not, formally characterize the structural absence and assess implications for the Brunschwig-Voynich dimensional comparison.
+
+### Results
+
+**H1 PASS: MIDPROCESS absence is universal**
+- V3 curation: 0/245 recipes have MIDPROCESS actions (0/573 steps)
+- Master data: monitoring_intensity has 37 non-zero values but ALL derive from medical usage monitoring
+- MONITORING step_types: 58 instances, 0 distillation process monitoring, 47 medical usage
+
+**H2 PASS: 5D equals 7D**
+- Removing MIDPROCESS + STORAGE does not change PCA: n_for_80=3 in both, max loading difference = 0.0000
+
+**H3: Dimensional gap = 2**
+- Brunschwig: 3 PCs / 5 active dimensions (1.908 bits entropy)
+- Voynich: 5 PCs / 10 dimensions (2.660 bits entropy)
+
+**H4: Path C theoretically possible but circular**
+- Uniform fabrication achieves loading 0.571 but is circular (denominator-driven, rejected by expert)
+
+**H5 PARTIAL: OJLM-1 parallel**
+- M2 failures (B4, B5, C2) span 3 categories; 2/3 capture dynamic/pairwise structure; B4 breaks strict parallel
+
+### Verdict
+
+MIDPROCESS_STRUCTURALLY_ABSENT — Path C formally closed. MIDPROCESS is tacit operator knowledge (OJLM-1 boundary), not a curation gap. The dimensional gap (2 PCs, 0.752 bits) quantifies the difference between Brunschwig's recipe-level specification and the Voynich's richer operational vocabulary.

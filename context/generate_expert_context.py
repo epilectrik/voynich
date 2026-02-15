@@ -668,6 +668,8 @@ CONTRACTS = [
     ("STRUCTURAL_CONTRACTS/currierB.bcsc.yaml", "Currier B Grammar Contract"),
     ("STRUCTURAL_CONTRACTS/azc_activation.act.yaml", "A->AZC Activation Contract"),
     ("STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml", "AZC->B Propagation Contract"),
+    ("STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml", "Human Track Layer Contract"),
+    ("STRUCTURAL_CONTRACTS/paragraph.psc.yaml", "Paragraph Unit Contract"),
 ]
 
 # Required YAML frontmatter for agent registration

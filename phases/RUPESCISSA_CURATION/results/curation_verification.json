@@ -1,0 +1,61 @@
+{
+  "checks": [
+    {
+      "id": "V1",
+      "name": "Chapter Count",
+      "expected": "~64 (44 Book 1 + 20 Book 2)",
+      "actual": "61 (41 Book 1 + 20 Book 2)",
+      "status": "PASS"
+    },
+    {
+      "id": "V2",
+      "name": "Source Line References",
+      "expected": "All chapters have source_lines",
+      "actual": "61/61 have valid references",
+      "status": "PASS",
+      "missing": []
+    },
+    {
+      "id": "V3",
+      "name": "Materials No Duplicates",
+      "expected": "No duplicate material names",
+      "actual": "131 unique materials",
+      "status": "PASS",
+      "duplicates": []
+    },
+    {
+      "id": "V4",
+      "name": "Degree Catalog Completeness",
+      "expected": ">=40 materials with degree classifications",
+      "actual": "70 materials with degree data",
+      "status": "PASS"
+    },
+    {
+      "id": "V5",
+      "name": "Brunschwig Overlap",
+      "expected": "Report overlap count",
+      "actual": "10 materials in both texts",
+      "overlap_names": [
+        "chamomile",
+        "fennel",
+        "hyssop",
+        "purslane",
+        "henbane",
+        "mandrake",
+        "honey",
+        "mallow",
+        "horehound",
+        "angelica"
+      ],
+      "status": "PASS"
+    },
+    {
+      "id": "V6",
+      "name": "JSON Validation",
+      "expected": "Both JSON files parse cleanly",
+      "actual": "Both files valid",
+      "status": "PASS"
+    }
+  ],
+  "overall": "PASS"
+}

@@ -26,4 +26,4 @@ Two PREFIX channels serve as different entry points into identical distributiona
 Phase: EN_ANATOMY (Script 3: en_subfamily_test.py)
 
 ## Related
-C276 (MIDDLE is PREFIX-BOUND), C423 (PREFIX-bound vocabulary domains), C506.b (intra-class heterogeneity), C572 (AX collapse), C573, C576, C577, C580
+C276 (MIDDLE is PREFIX-BOUND), C423 (PREFIX-bound vocabulary domains), C506.b (intra-class heterogeneity), C572 (AX collapse), C573, C576, C577, C580, C1057 (lane balance orthogonal to sister preference)

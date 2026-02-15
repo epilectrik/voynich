@@ -1,0 +1,252 @@
+{
+  "phase": 371,
+  "name": "BRUNSCHWIG_MIDPROCESS_ABSENCE",
+  "fit_id": "F-BRU-030",
+  "title": "MIDPROCESS Structural Absence Characterization",
+  "s1_absence_audit": {
+    "v3_curation": {
+      "total_recipes": 245,
+      "recipes_with_steps": 228,
+      "total_steps": 573,
+      "midprocess_steps": 0,
+      "recipes_with_midprocess": 0,
+      "verdict": "ZERO"
+    },
+    "master_monitoring_intensity": {
+      "total_materials": 509,
+      "with_monitoring_field": 509,
+      "nonzero_count": 37,
+      "values_unique": [
+        0.0,
+        0.2,
+        0.25,
+        0.333,
+        0.5,
+        0.667
+      ],
+      "verdict": "USAGE_DERIVED",
+      "note": "Non-zero values derive from medical usage MONITORING steps, not distillation process monitoring"
+    },
+    "master_monitoring_steps": {
+      "total_monitoring_steps": 58,
+      "process_monitoring_matches": 0,
+      "usage_monitoring_matches": 47,
+      "verdict": "ALL_USAGE"
+    },
+    "master_operational_fields": {
+      "precision_distribution": {
+        "LOW": 472,
+        "MODERATE": 28,
+        "HIGH": 9
+      },
+      "duration_distribution": {
+        "MEDIUM": 119,
+        "SHORT": 373,
+        "LONG": 17
+      },
+      "cei_stats": {
+        "mean": 0.4988015717092338,
+        "std": 0.04714857506993201,
+        "unique_count": 17,
+        "min": 0.367,
+        "max": 0.7
+      },
+      "verdict": "LOW_VARIANCE"
+    },
+    "master_instruction_link": {
+      "total_classified_steps": 594,
+      "link_count": 44,
+      "link_fraction": 0.07407407407407407,
+      "verdict": "USAGE_CONTEXT"
+    },
+    "h1_verdict": "PASS",
+    "h1_detail": "Zero MIDPROCESS actions in v3 curation; zero distillation process monitoring in master data. monitoring_intensity has 37 non-zero values but these derive from medical usage monitoring steps, not distillation process monitoring."
+  },
+  "s2_effective_dimensionality": {
+    "n_recipes": 228,
+    "zero_phases": [
+      "MIDPROCESS",
+      "STORAGE"
+    ],
+    "var_7d": [
+      0.38733542128260323,
+      0.2685685730919981,
+      0.19735888818295633,
+      0.1467371174424424,
+      3.0263980471650483e-17,
+      0.0,
+      0.0
+    ],
+    "n80_7d": 3,
+    "var_5d": [
+      0.38733542128260323,
+      0.2685685730919981,
+      0.19735888818295633,
+      0.1467371174424424,
+      3.0263980471650483e-17
+    ],
+    "n80_5d": 3,
+    "active_phases": [
+      "COLLECTION",
+      "PREPARATION",
+      "PRETREATMENT",
+      "DISTILLATION",
+      "POSTPROCESS"
+    ],
+    "loadings_5d": {
+      "PC1": {
+        "COLLECTION": -0.6413489048822497,
+        "PREPARATION": 0.6752320050384113,
+        "PRETREATMENT": 0.024245621413366416,
+        "DISTILLATION": -0.3466112340715808,
+        "POSTPROCESS": 0.10957245929430176
+      },
+      "PC2": {
+        "COLLECTION": 0.15055750673688909,
+        "PREPARATION": -0.2368076103595571,
+        "PRETREATMENT": 0.6095940001972004,
+        "DISTILLATION": -0.5350214995110898,
+        "POSTPROCESS": 0.5132267947267066
+      },
+      "PC3": {
+        "COLLECTION": -0.233142110346046,
+        "PREPARATION": -0.1958140013405848,
+        "PRETREATMENT": -0.45085663533791964,
+        "DISTILLATION": 0.2695769473888408,
+        "POSTPROCESS": 0.7945805164177301
+      },
+      "PC4": {
+        "COLLECTION": -0.4032638860202897,
+        "PREPARATION": -0.07247988083583551,
+        "PRETREATMENT": 0.6386671530829235,
+        "DISTILLATION": 0.6513077386564178,
+        "POSTPROCESS": 0.005234715374811256
+      },
+      "PC5": {
+        "COLLECTION": 0.5907850827388225,
+        "PREPARATION": 0.6666239110627642,
+        "PRETREATMENT": 0.12899560733055979,
+        "DISTILLATION": 0.31102917303535804,
+        "POSTPROCESS": 0.30529745171394446
+      }
+    },
+    "max_loading_diff": 5.551115123125783e-17,
+    "h2_verdict": "PASS",
+    "h2_detail": "n80 match=True, max_loading_diff=0.0000"
+  },
+  "s3_dimensional_gap": {
+    "brunschwig_n80": 3,
+    "brunschwig_n_features": 5,
+    "voynich_n80": 5,
+    "voynich_n_features": 10,
+    "dimensional_gap": 2,
+    "brunschwig_pc1_share": 0.38733542128260323,
+    "voynich_pc1_share": 0.3809387361080826,
+    "brunschwig_variance_entropy": 1.907694015695617,
+    "voynich_variance_entropy": 2.659970433996814,
+    "entropy_gap": 0.752276418301197,
+    "interpretation": "Brunschwig needs 3 of 5 active dimensions for 80%, Voynich needs 5 of 10. Gap of 2 dimensions reflects Voynich's richer operational vocabulary."
+  },
+  "s4_path_c_closure": {
+    "n_recipes": 228,
+    "current_midprocess_std": 0.0,
+    "uniform_midprocess_mean": 0.622676008202324,
+    "uniform_midprocess_std": 0.06294222984986922,
+    "uniform_max_loading": 0.571026445477389,
+    "uniform_passes_c3": true,
+    "binary_midprocess_std": 0.06294222984986922,
+    "noise_threshold_for_loading_03": 0.01,
+    "h4_verdict": "PATH_C_THEORETICALLY_POSSIBLE",
+    "h4_detail": "Uniform fabrication reaches MIDPROCESS loading of 0.571. C-3 threshold is 0.3. Passes. Even if fabrication \"works\", the result is circular (designed = confirmed)."
+  },
+  "s5_m2_failure_analysis": {
+    "failing_tests": [
+      [
+        "B4",
+        "STRUCTURAL"
+      ],
+      [
+        "B5",
+        "SEQUENTIAL"
+      ],
+      [
+        "C2",
+        "MORPHOLOGICAL"
+      ]
+    ],
+    "passing_tests": [
+      [
+        "A1",
+        "DISTRIBUTIONAL"
+      ],
+      [
+        "A2",
+        "DISTRIBUTIONAL"
+      ],
+      [
+        "A3",
+        "DISTRIBUTIONAL"
+      ],
+      [
+        "A4",
+        "DISTRIBUTIONAL"
+      ],
+      [
+        "B1",
+        "SEQUENTIAL"
+      ],
+      [
+        "B2",
+        "SEQUENTIAL"
+      ],
+      [
+        "B3",
+        "SEQUENTIAL"
+      ],
+      [
+        "C1",
+        "MORPHOLOGICAL"
+      ],
+      [
+        "C3",
+        "MORPHOLOGICAL"
+      ],
+      [
+        "D1",
+        "DISTRIBUTIONAL"
+      ],
+      [
+        "D2",
+        "SEQUENTIAL"
+      ],
+      [
+        "D3",
+        "SEQUENTIAL"
+      ]
+    ],
+    "failure_categories": {
+      "STRUCTURAL": 1,
+      "SEQUENTIAL": 1,
+      "MORPHOLOGICAL": 1
+    },
+    "n_fail_categories": 3,
+    "monitoring_relevant_count": 2,
+    "total_failing": 3,
+    "h5_strict_verdict": "FAIL",
+    "h5_soft_verdict": "PASS",
+    "h5_detail": "Failures span 3 categories: {'STRUCTURAL': 1, 'SEQUENTIAL': 1, 'MORPHOLOGICAL': 1}. 2/3 are monitoring-relevant. B4 (role rank) is static/structural, breaking the strict sequential cluster. OJLM-1 parallel is PARTIAL \u2014 2/3 failures capture dynamic/pairwise structure."
+  },
+  "s6_verdict": {
+    "verdicts": {
+      "H1": "PASS",
+      "H2": "PASS",
+      "H3": "gap=2",
+      "H4": "PATH_C_THEORETICALLY_POSSIBLE",
+      "H5_strict": "FAIL",
+      "H5_soft": "PASS"
+    },
+    "overall": "MIDPROCESS_STRUCTURALLY_ABSENT",
+    "fit_recommendation": "F-BRU-030: MIDPROCESS Absence Characterization (NEGATIVE)",
+    "constraint_recommendation": "C1056: MIDPROCESS Structural Absence / OJLM-1 Boundary"
+  }
+}

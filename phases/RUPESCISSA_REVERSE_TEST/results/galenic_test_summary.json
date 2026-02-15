@@ -1,0 +1,29 @@
+{
+  "phase": 376,
+  "title": "Reverse Rupescissa Test (Galenic Framework Alignment)",
+  "tier": 4,
+  "framing": "Shared tradition structural convergence, not causal/dependency testing",
+  "tests": [
+    {
+      "name": "Multi-Axis Hazard Boundary",
+      "result": "PASS -- 5 independent failure dimensions (>= 3 required). Rupescissa's multi-axis hazard prediction survives.",
+      "tier": 4
+    },
+    {
+      "name": "Quality-Degree Factorization",
+      "result": "PARTIAL -- 58.1% of forbidden combinations explained (50-80% range).",
+      "tier": 4
+    },
+    {
+      "name": "Oppositional Pairing",
+      "result": "PASS -- Partial correlation shows near-orthogonality (|r|=0.064) despite Kaiser finding 1 PC. Two independent oppositional axes confirmed by direct correlation test.",
+      "tier": 4
+    },
+    {
+      "name": "Degree Ordering Within Quality",
+      "result": "PASS -- 4/6 channels show significant within-PREFIX ordering (>= 4 required).",
+      "tier": 4
+    }
+  ],
+  "overall": "3/4 tests pass -- Partial consistency with Galenic framework"
+}

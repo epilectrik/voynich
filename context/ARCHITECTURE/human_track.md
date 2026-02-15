@@ -1,6 +1,8 @@
 # Human Track Layer
 
-> **For most questions, see:** [../CLAIMS/HT_CONTEXT_SUMMARY.md](../CLAIMS/HT_CONTEXT_SUMMARY.md) (PRIMARY, context-sufficient)
+> **Structural Contract:** [../STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml](../STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml) (AUTHORITATIVE — 17 guarantees, 10 invariants, 68 owned constraints)
+>
+> **Context Summary:** [../CLAIMS/HT_CONTEXT_SUMMARY.md](../CLAIMS/HT_CONTEXT_SUMMARY.md) (context-sufficient)
 >
 > **Explainer:** [HT_EXPLAINER.md](HT_EXPLAINER.md) - What HT is (and is not)
 

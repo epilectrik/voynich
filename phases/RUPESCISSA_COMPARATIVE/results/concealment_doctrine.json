@@ -1,0 +1,315 @@
+{
+  "analysis": "Concealment Doctrine",
+  "tier": 4,
+  "framing": "Consistency assessment, NOT causal mapping. Rupescissa documents the concealment CULTURE. Voynich structural properties have independent explanations.",
+  "strategy_frequency": {
+    "vocabulary_obfuscation": 31,
+    "audience_restriction": 24,
+    "active_denial": 17,
+    "knowledge_as_danger": 4,
+    "silence_on_highest": 4,
+    "coded_transmission": 5,
+    "multiple_names": 60
+  },
+  "strategy_examples": {
+    "vocabulary_obfuscation": [
+      {
+        "keyword": "conceal",
+        "position": 1365,
+        "context": "obtaining solar influence without expense   - chapter xvi: concealing gold and silver   - chapter xvii: fixing all terrestrial"
+      },
+      {
+        "keyword": "conceal",
+        "position": 13950,
+        "context": "wine)   3. aqua vitae (water of life)  and when you wish to conceal it, you shall call it quinta essentia, because this its nat"
+      },
+      {
+        "keyword": "conceal",
+        "position": 37158,
+        "context": "---------------------------------------------- chapter xvi: concealing gold and silver ----------------------------------------"
+      },
+      {
+        "keyword": "conceal",
+        "position": 37297,
+        "context": "----------------------------  there is a secret mastery for concealing gold and silver so they appear as base metal, which some"
+      },
+      {
+        "keyword": "conceal",
+        "position": 60741,
+        "context": "has proceeded too far, for the whole time of the man's life conceals the plague of leprosy.  and the cause of this is that it c"
+      }
+    ],
+    "audience_restriction": [
+      {
+        "keyword": "evangelical men",
+        "position": 3398,
+        "context": "he fifth essence of all things  handed down to the poor and evangelical men, servants of our lord jesus christ, composed by master john"
+      },
+      {
+        "keyword": "evangelical men",
+        "position": 4726,
+        "context": "ed to the service of god and of the gospel of christ and of evangelical men, and to the devoted service of the whole mystical body of c"
+      },
+      {
+        "keyword": "evangelical men",
+        "position": 5939,
+        "context": "beyond measure, i might reveal to the poor of christ and to evangelical men, so that those who have despised riches for the sake of the"
+      },
+      {
+        "keyword": "evangelical men",
+        "position": 8614,
+        "context": "of the evangelical life are too greatly impeded in ancient evangelical men, and restore lost youth, and recover former strength, and r"
+      },
+      {
+        "keyword": "evangelical men",
+        "position": 16253,
+        "context": "tals.  and i, on account of the charity of god, speaking to evangelical men, will reveal it to you by its proper and intelligible name:"
+      }
+    ],
+    "active_denial": [
+      {
+        "keyword": "unworthy",
+        "position": 7017,
+        "context": "h all my strength that most clement god who revealed to me, unworthy and most vile sinner and fallen one, many secrets of worldl"
+      },
+      {
+        "keyword": "unworthy",
+        "position": 7158,
+        "context": "that he not permit this book to come into the hands of the unworthy, the vain, and the greedy, and of those who wish to have mo"
+      },
+      {
+        "keyword": "unworthy",
+        "position": 91994,
+        "context": ". [secret name] quinta essentia -- used to conceal from the unworthy  the sun and stars: - the sun = gold (specifically the \"gol"
+      },
+      {
+        "keyword": "greedy",
+        "position": 7186,
+        "context": "k to come into the hands of the unworthy, the vain, and the greedy, and of those who wish to have money and not give remedies:"
+      },
+      {
+        "keyword": "greedy",
+        "position": 7570,
+        "context": "do the contrary so that the effect does not follow, as the greedy man hopes. oh how great an evil it would be if this book ca"
+      }
+    ],
+    "knowledge_as_danger": [
+      {
+        "keyword": "perverse use",
+        "position": 7906,
+        "context": "and more vehemently, so also the reprobate would be able by perverse use to persevere longer in evil.  but i, as far as it is in me,"
+      },
+      {
+        "keyword": "persevere longer in evil",
+        "position": 7922,
+        "context": "tly, so also the reprobate would be able by perverse use to persevere longer in evil.  but i, as far as it is in me, constitute this book for th"
+      },
+      {
+        "keyword": "damnable",
+        "position": 53960,
+        "context": "princes, vagabonds, deceivers, and without religion, and of damnable life.  of whom is truly verified the proverb of paul in 2 c"
+      },
+      {
+        "keyword": "perdition",
+        "position": 53284,
+        "context": "n over to a reprobate mind.  and know that it is the way of perdition and evil, because no philosopher wrote the truth in books e"
+      }
+    ],
+    "silence_on_highest": [
+      {
+        "keyword": "shall by no means reveal",
+        "position": 52791,
+        "context": "ed to me in the tribulations of prisons, by god's will -- i shall by no means reveal.  because concerning alchemical operations it is not permit"
+      },
+      {
+        "keyword": "not revealed",
+        "position": 2154,
+        "context": "osophical furnace)   - chapter xliv: why higher secrets are not revealed  book two: on general remedies   - remedy 1: against the im"
+      },
+      {
+        "keyword": "not revealed",
+        "position": 52115,
+        "context": "---------------------- chapter xliv: why higher secrets are not revealed -----------------------------------------------------------"
+      },
+      {
+        "keyword": "this you should reveal to no one",
+        "position": 47630,
+        "context": "nd many evils and infirmities beyond what can be believed.  this you should reveal to no one.  -------------------------------------------------------"
+      }
+    ],
+    "coded_transmission": [
+      {
+        "keyword": "fictively",
+        "position": 53359,
+        "context": "vil, because no philosopher wrote the truth in books except fictively and under parables, which cannot be understood nor comprehe"
+      },
+      {
+        "keyword": "parables",
+        "position": 53379,
+        "context": "osopher wrote the truth in books except fictively and under parables, which cannot be understood nor comprehended by human ingen"
+      },
+      {
+        "keyword": "buried with them",
+        "position": 14113,
+        "context": "ilosophers wished to reveal to no one, but let the truth be buried with them.  ---------------------------------------------------------"
+      },
+      {
+        "keyword": "buried with them",
+        "position": 93050,
+        "context": "ophers \"wished to reveal to no one\" and \"let the truth be   buried with them\" - the book is for \"the poor and evangelical men\" only - go"
+      },
+      {
+        "keyword": "under parables",
+        "position": 53373,
+        "context": "o philosopher wrote the truth in books except fictively and under parables, which cannot be understood nor comprehended by human ingen"
+      }
+    ],
+    "multiple_names": [
+      {
+        "keyword": "aqua ardens",
+        "position": 793,
+        "context": "ter iv: the search for the stars   - chapter v: how to make aqua ardens   - chapter vi: practice - signs of successful quintessence"
+      },
+      {
+        "keyword": "aqua ardens",
+        "position": 928,
+        "context": "chapter vii: fire without fire   - chapter viii: obtaining aqua ardens from spoiled wine   - chapter ix: seven methods of obtainin"
+      },
+      {
+        "keyword": "aqua ardens",
+        "position": 13814,
+        "context": "name it by its three names given by the philosophers:    1. aqua ardens (burning water)   2. anima vini seu spiritus (soul or spiri"
+      },
+      {
+        "keyword": "aqua ardens",
+        "position": 19323,
+        "context": "------------------------------------ chapter v: how to make aqua ardens -----------------------------------------------------------"
+      },
+      {
+        "keyword": "aqua ardens",
+        "position": 19490,
+        "context": "me to have uttered a lie because i named the fifth essence \"aqua ardens\" [burning water] and said that none of the modern philosoph"
+      }
+    ]
+  },
+  "concealment_by_chapter_type": {
+    "THEORY": {
+      "audience_restriction": 10,
+      "active_denial": 12,
+      "knowledge_as_danger": 4,
+      "vocabulary_obfuscation": 5,
+      "coded_transmission": 4,
+      "multiple_names": 5,
+      "silence_on_highest": 2
+    },
+    "PROCESS": {
+      "vocabulary_obfuscation": 6,
+      "audience_restriction": 4,
+      "active_denial": 1,
+      "multiple_names": 13
+    },
+    "EXTRACTION": {
+      "multiple_names": 6,
+      "audience_restriction": 1,
+      "vocabulary_obfuscation": 4,
+      "silence_on_highest": 1
+    },
+    "REMEDY": {
+      "multiple_names": 34,
+      "vocabulary_obfuscation": 14,
+      "audience_restriction": 7,
+      "active_denial": 4,
+      "coded_transmission": 1
+    },
+    "DEGREE_CATALOG": {},
+    "PHARMACOLOGICAL": {},
+    "APPARATUS": {}
+  },
+  "consistency_assessment": [
+    {
+      "rupescissa_principle": "Knowledge for practitioners only",
+      "voynich_property": "Expert-reference archetype",
+      "voynich_constraints": [
+        "C196",
+        "C197"
+      ],
+      "consistent": true,
+      "caveat": "C196 has independent structural explanation (100% match EXPERT_REFERENCE archetype). Expert design is a grammar property, not necessarily concealment."
+    },
+    {
+      "rupescissa_principle": "Operational, not theoretical",
+      "voynich_property": "PURE_OPERATIONAL",
+      "voynich_constraints": [
+        "C120"
+      ],
+      "consistent": true,
+      "caveat": "C120 is Tier 0 structural fact. The Voynich is operational because it encodes control programs, not because of concealment strategy."
+    },
+    {
+      "rupescissa_principle": "Multiple names / vocabulary obfuscation",
+      "voynich_property": "Non-semantic notation",
+      "voynich_constraints": [
+        "C119"
+      ],
+      "consistent": true,
+      "caveat": "Consistent but NOT caused by. C119 = zero translation-eligible zones. Non-semanticity is structural, not concealment."
+    },
+    {
+      "rupescissa_principle": "'Fictively and under parables'",
+      "voynich_property": "Non-readable by outsiders",
+      "voynich_constraints": [
+        "C130",
+        "C132",
+        "C207"
+      ],
+      "consistent": true,
+      "caveat": "Non-readability follows from operational design. C130/C132 close language/DSL encoding. C207: 0/18 cipher tests pass."
+    },
+    {
+      "rupescissa_principle": "Degree-4 prohibition / danger awareness",
+      "voynich_property": "Hazard topology (17 forbidden transitions)",
+      "voynich_constraints": [
+        "C109"
+      ],
+      "consistent": true,
+      "caveat": "C109 encodes physical failure modes (F-BRU-023: THERMODYNAMIC_COHERENCE), not forbidden knowledge."
+    }
+  ],
+  "falsification_c476_tension": {
+    "test": "C476 COVERAGE_OPTIMALITY",
+    "description": "The Voynich system optimizes for complete discrimination coverage — maximizing the ability to distinguish between different instruction classes. This is the OPPOSITE of concealment (which would minimize discriminability).",
+    "result": "TENSION_DOCUMENTED",
+    "interpretation": "The Voynich is designed for INTERNAL clarity (operators can distinguish all 49 classes) while being EXTERNALLY opaque (outsiders cannot read it). This is consistent with a guild-knowledge artifact: clear to insiders, opaque to outsiders. Rupescissa explicitly describes this model: 'FOR THE SAINTS ALONE' — knowledge should be ACCESSIBLE to the worthy, not obscured from everyone.",
+    "conclusion": "C476 does not falsify concealment-culture consistency. The system is optimized for INTERNAL discrimination, not EXTERNAL communication. This is precisely what a practitioner's reference manual would do."
+  },
+  "brunschwig_antipattern": {
+    "description": "Brunschwig (1500) is explicitly public, didactic, novice-friendly — the OPPOSITE of Rupescissa's concealment doctrine.",
+    "key_differences": {
+      "audience": "Brunschwig: anyone who can read German. Rupescissa: 'Evangelical men' only.",
+      "pedagogy": "Brunschwig: teaches from furnace construction (novice). Rupescissa: assumes existing knowledge.",
+      "transparency": "Brunschwig: names everything in German, Latin, Greek, Arabic. Rupescissa: 'conceal it, call it quinta essentia.'",
+      "distribution": "Brunschwig: printed book (mass distribution). Rupescissa: manuscript (controlled copy)."
+    },
+    "historical_significance": "Brunschwig represents the 'unsealing' — making public what was previously restricted. The Voynich sits chronologically between Rupescissa's concealment doctrine and Brunschwig's public disclosure."
+  },
+  "falsification_result": "PASS — 5/5 consistent, with C476 tension documented",
+  "constraints_referenced": [
+    "C120",
+    "C119",
+    "C121",
+    "C130",
+    "C132",
+    "C207",
+    "C109",
+    "C196",
+    "C197",
+    "C476",
+    "F-BRU-023"
+  ],
+  "contraindications": [
+    "C120 (PURE_OPERATIONAL) is a grammar property, not concealment",
+    "C119 (no translation zones) follows from non-semantic design",
+    "C121 (49 classes) is distributional compression, not obfuscation",
+    "C109 (hazard topology) encodes physical failures, not forbidden knowledge"
+  ]
+}

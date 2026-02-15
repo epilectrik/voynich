@@ -1,0 +1,126 @@
+{
+  "V1_paragraph_census": {
+    "b_paragraph_count": 583,
+    "a_paragraph_count": 342,
+    "b_mean_pars_per_folio": 7.1,
+    "b_mean_lines_per_par": 4.4,
+    "a_mean_lines_per_par": 4.8,
+    "gallows_initial_count": 425,
+    "gallows_initial_rate": 0.729,
+    "expected_b_mean_pars_per_folio": 7.1,
+    "expected_b_mean_lines": 4.4,
+    "expected_a_mean_lines": 4.8,
+    "expected_gallows_rate": 0.815,
+    "b_pars_close": true,
+    "b_lines_close": true,
+    "a_lines_close": true,
+    "gallows_close": true,
+    "pass": true
+  },
+  "V2_header_body": {
+    "b_line1_ht_rate": 0.438,
+    "b_body_ht_rate": 0.268,
+    "b_ht_delta": 0.17,
+    "expected_b_line1_ht": 0.449,
+    "expected_b_body_ht": 0.291,
+    "a_line1_ri_mean": 0.101,
+    "a_body_ri_mean": 0.055,
+    "a_ri_ratio": 1.82,
+    "expected_a_ri_ratio": 3.84,
+    "b_ht_enriched": true,
+    "b_delta_close": true,
+    "a_ri_enriched": true,
+    "pass": true
+  },
+  "V3_independence_model": {
+    "par1_vocab_share_mean": 0.308,
+    "par1_vocab_share_median": 0.27,
+    "expected_par1_share_mean": 0.274,
+    "vocabulary_predictivity": 0.187,
+    "expected_predictivity": 0.118,
+    "par1_ht_rate": 0.345,
+    "later_ht_rate": 0.368,
+    "ht_ratio": 0.94,
+    "expected_ht_ratio": 0.94,
+    "vocab_distributed": true,
+    "predictivity_low": true,
+    "ht_ratio_close": true,
+    "pass": true
+  },
+  "V4_ab_correspondence": {
+    "a_mean_lines": 4.8,
+    "b_mean_lines": 4.4,
+    "cohens_d": 0.108,
+    "expected_d": 0.11,
+    "mean_best_match_coverage": 0.72,
+    "size_similar": true,
+    "pool_based": true,
+    "pass": true
+  },
+  "V5_section_parameterization": {
+    "section_means": {
+      "B": 7.4,
+      "C": 5.2,
+      "H": 2.3,
+      "S": 12.6,
+      "T": 23.5
+    },
+    "expected": {
+      "H": 2.2,
+      "B": 7.5,
+      "S": 10.2,
+      "T": 14.0
+    },
+    "section_differentiated": true,
+    "ordering_correct": true,
+    "pass": true
+  },
+  "V6_stability": {
+    "energy_role_cv": 0.062,
+    "expected_link_cv": 0.16,
+    "note": "Uses ENERGY_OPERATOR role CV as proxy for LINK/hazard neutrality",
+    "length_rho": -0.296,
+    "expected_length_rho": -0.229,
+    "link_neutral": true,
+    "length_shrinks": true,
+    "pass": true
+  },
+  "V7_combinatorial": {
+    "quintile_classified_rates": {
+      "0": 0.717,
+      "1": 0.755,
+      "2": 0.743,
+      "3": 0.741,
+      "4": 0.706
+    },
+    "classified_rate_cv": 0.0246,
+    "gradient_flat": true,
+    "note": "Simplified check: classified token rate across body quintiles should be flat (C1054 invariance)",
+    "pass": true
+  },
+  "V8_constraint_coverage": {
+    "total_paragraph_constraints": 56,
+    "psc_owned": 20,
+    "psc_referenced": 36,
+    "psc_total_coverage": 56,
+    "covered": 56,
+    "uncovered": [],
+    "coverage_rate": 1.0,
+    "pass": true
+  },
+  "V9_cross_contract": {
+    "guarantees": 15,
+    "invariants": 10,
+    "disallowed": 9,
+    "owned_declared": 20,
+    "owned_actual": 20,
+    "referenced_declared": 36,
+    "referenced_actual": 36,
+    "total_declared": 56,
+    "totals_consistent": true,
+    "inconsistencies": [],
+    "bcsc_cross_checked": true,
+    "casc_cross_checked": true,
+    "pass": true
+  }
+}

@@ -3,8 +3,8 @@
 meta:
   name: "Currier A Structural Contract"
   acronym: "CASC"
-  version: "1.9"
-  date: "2026-02-13"
+  version: "2.0"
+  date: "2026-02-14"
   status: "LOCKED"
   derived_from: "Tier-2 constraints only"
   governance: |
@@ -333,6 +333,9 @@ line_structure:
 
 # ============================================================
 paragraph_structure:
+  # For comprehensive paragraph-as-unit model, see PSC (paragraph.psc.yaml)
+  # PSC owns: definition (C827), independence model, A-B correspondence, stability
+  # CASC retains: A-specific profiling below (size, RI variance, section profile, combinatorics)
 
   operational_unit:  # C827
     statement: "Paragraphs are the operational aggregation level (not lines, not folios)"
@@ -370,6 +373,41 @@ paragraph_structure:
       silhouette: 0.337
       types: ["short", "standard", "long", "only", "metadata"]
       provenance: "C850"
+
+    # Paragraph combinatorial grammar (C1039-C1041)
+    combinatorial_grammar:
+
+      cluster_selectivity:  # C1039
+        statement: "Paragraphs draw from fewer C475 compatibility clusters than random"
+        observed_entropy: 1.502
+        null_entropy: 1.780
+        z_score: -2.830
+        p_value: 0.002
+        interpretation: "Paragraphs specialize within the compatibility graph"
+        provenance: "C1039"
+
+      folio_compatibility_coherence:  # C1040
+        statement: "Within-folio paragraph pairs have higher MIDDLE compatibility than between-folio"
+        within_folio_median: 0.880
+        between_folio_median: 0.811
+        section_matched_median: 0.810
+        effect_survives_section_matching: true
+        interpretation: "Folio is a designed unit of compatibility, not just a container"
+        provenance: "C1040"
+
+      complementary_diversification:  # C1041
+        statement: "Paragraphs have LOWER cross-line compatibility than random (diversify, not cluster)"
+        observed_density: 0.6996
+        null_density: 0.7071
+        z_score: -3.567
+        direction: "NEGATIVE (diversification)"
+        interpretation: "Paragraphs maximize coverage by grouping complementary entries"
+        extends: "C476 coverage optimality"
+        provenance: "C1041"
+
+      ordering_not_compositional: true  # H4 FAIL (p=0.223)
+      linkers_not_compositional: true  # H7 FAIL (p=0.151)
+      provenance: "C1039, C1040, C1041"
 
   ab_relationship:  # C846
     model: "Pool-based, not address-based"
@@ -651,6 +689,9 @@ provenance:
     - "C882"  # PRECISION kernel signature
     - "C883"  # Handling-type distribution alignment
     - "C884"  # PRECISION-animal correspondence
+    - "C1039"  # Paragraph cluster selectivity
+    - "C1040"  # Folio-level paragraph compatibility coherence
+    - "C1041"  # Paragraph complementary diversification
 
   participation:
     - "C299"  # Section distribution in B

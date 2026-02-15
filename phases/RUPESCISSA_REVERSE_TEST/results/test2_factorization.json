@@ -1,0 +1,181 @@
+{
+  "test": "Quality-Degree Factorization",
+  "tier": 4,
+  "rupescissa_prediction": "PREFIX (quality) x MIDDLE (degree) follow block-diagonal factorization",
+  "total_tokens_analyzed": 19232,
+  "unique_prefixes": 35,
+  "unique_middles": 922,
+  "total_forbidden_combos": 201,
+  "classifiable_forbidden": 43,
+  "block_explained": 25,
+  "block_unexplained": 18,
+  "unclassifiable": 158,
+  "block_explained_pct": 58.1,
+  "prefix_families": {
+    "QO": [
+      "qo"
+    ],
+    "CHSH": [
+      "ch",
+      "sh"
+    ],
+    "DA_SA": [
+      "da",
+      "sa"
+    ],
+    "OT_OL_OK": [
+      "ot",
+      "ol",
+      "ok"
+    ]
+  },
+  "middle_families": {
+    "K_ENERGY": [
+      "k",
+      "ka",
+      "kch",
+      "ke",
+      "ko",
+      "kt",
+      "ky"
+    ],
+    "E_STABILITY": [
+      "e",
+      "ed",
+      "edy",
+      "ee",
+      "eed",
+      "eey",
+      "ey"
+    ],
+    "H_PHASE": [
+      "cfh",
+      "ckh",
+      "cph",
+      "od",
+      "op",
+      "oph"
+    ],
+    "INFRA": [
+      "aiin",
+      "ain",
+      "al",
+      "ar",
+      "iin",
+      "in",
+      "l",
+      "ol",
+      "or",
+      "r"
+    ]
+  },
+  "block_model": {
+    "QO": [
+      "E_STABILITY",
+      "INFRA"
+    ],
+    "CHSH": [
+      "INFRA",
+      "K_ENERGY"
+    ],
+    "DA_SA": [
+      "E_STABILITY",
+      "H_PHASE",
+      "K_ENERGY"
+    ],
+    "OT_OL_OK": [
+      "K_ENERGY"
+    ]
+  },
+  "unexplained_examples": [
+    {
+      "prefix": "ol",
+      "middle": "iin",
+      "prefix_family": "OT_OL_OK",
+      "middle_family": "INFRA",
+      "expected": 25.5,
+      "block_predicted": false
+    },
+    {
+      "prefix": "ol",
+      "middle": "in",
+      "prefix_family": "OT_OL_OK",
+      "middle_family": "INFRA",
+      "expected": 12.0,
+      "block_predicted": false
+    },
+    {
+      "prefix": "sa",
+      "middle": "al",
+      "prefix_family": "DA_SA",
+      "middle_family": "INFRA",
+      "expected": 5.7,
+      "block_predicted": false
+    },
+    {
+      "prefix": "sa",
+      "middle": "aiin",
+      "prefix_family": "DA_SA",
+      "middle_family": "INFRA",
+      "expected": 8.2,
+      "block_predicted": false
+    },
+    {
+      "prefix": "sa",
+      "middle": "ar",
+      "prefix_family": "DA_SA",
+      "middle_family": "INFRA",
+      "expected": 7.3,
+      "block_predicted": false
+    },
+    {
+      "prefix": "sa",
+      "middle": "ol",
+      "prefix_family": "DA_SA",
+      "middle_family": "INFRA",
+      "expected": 5.8,
+      "block_predicted": false
+    },
+    {
+      "prefix": "sa",
+      "middle": "ain",
+      "prefix_family": "DA_SA",
+      "middle_family": "INFRA",
+      "expected": 5.8,
+      "block_predicted": false
+    },
+    {
+      "prefix": "da",
+      "middle": "al",
+      "prefix_family": "DA_SA",
+      "middle_family": "INFRA",
+      "expected": 18.9,
+      "block_predicted": false
+    },
+    {
+      "prefix": "da",
+      "middle": "aiin",
+      "prefix_family": "DA_SA",
+      "middle_family": "INFRA",
+      "expected": 27.0,
+      "block_predicted": false
+    },
+    {
+      "prefix": "da",
+      "middle": "ol",
+      "prefix_family": "DA_SA",
+      "middle_family": "INFRA",
+      "expected": 19.2,
+      "block_predicted": false
+    }
+  ],
+  "falsification_criterion": ">80% = PASS, 50-80% = PARTIAL, <50% = FAIL",
+  "falsification_result": "PARTIAL -- 58.1% of forbidden combinations explained (50-80% range).",
+  "constraints_referenced": [
+    "C911",
+    "C647",
+    "C574",
+    "C235",
+    "C293"
+  ]
+}

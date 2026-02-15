@@ -1,0 +1,79 @@
+{
+  "test": "Multi-Axis Hazard Boundary",
+  "tier": 4,
+  "rupescissa_prediction": "Hazard boundary operates across ALL quality axes (>=3 independent), not just thermal",
+  "hazard_classes": {
+    "PHASE_ORDERING": {
+      "count": 7,
+      "pct": 41,
+      "physical_dimension": "TEMPORAL_SEQUENCE",
+      "description": "Material in wrong phase/location. Consecutive evaluation without intervening work step.",
+      "brunschwig_gloss": "Checking fire then testing distillate without waiting for distillation. Premature sequence advancement.",
+      "galenic_axis": "NONE_DIRECT",
+      "independence_argument": "Sequencing errors are about WHEN, not about any material quality. A cold material in wrong sequence is equally hazardous as a hot one. Independent of thermal, compositional, spatial, and flow dimensions.",
+      "example_transitions": "evaluate->evaluate (forbidden), evaluate->act->evaluate (permitted)"
+    },
+    "COMPOSITION_JUMP": {
+      "count": 4,
+      "pct": 24,
+      "physical_dimension": "MATERIAL_PURITY",
+      "description": "Impure fractions passing. Purity crossover (expected purity barrier violated).",
+      "brunschwig_gloss": "Rose/lavender waters discarded when taste/scent diminished. Thumbnail viscosity test failure.",
+      "galenic_axis": "QUALITY_MIXTURE",
+      "independence_argument": "Purity errors are about WHAT is present (wrong mixture of qualities), not temperature, timing, or containment. Maps to Galenic compound quality assessment -- wrong balance of hot/cold/dry/humid in the product.",
+      "example_transitions": "Contamination, fraction mixing, impurity threshold"
+    },
+    "CONTAINMENT_TIMING": {
+      "count": 4,
+      "pct": 24,
+      "physical_dimension": "SPATIAL_CAPACITY",
+      "description": "Overflow/pressure events. Apparatus capacity/timing mismatch.",
+      "brunschwig_gloss": "Glass vessels crack without slow cooling. Must stand overnight. Freezing instantly ruins waters.",
+      "galenic_axis": "HUMID_AXIS",
+      "independence_argument": "Containment failures are about WHERE material is relative to vessel boundaries -- pressure, volume, phase transitions. Not reducible to thermal (a vessel can overflow at any temperature). Closest Galenic parallel: humid (fluid dynamics).",
+      "example_transitions": "Thermal shock, overflow, pressure buildup"
+    },
+    "RATE_MISMATCH": {
+      "count": 1,
+      "pct": 6,
+      "physical_dimension": "FLOW_DYNAMICS",
+      "description": "Flow balance destroyed. Throughput control failure.",
+      "brunschwig_gloss": "Air holes and coal dispensing for regulation. Input/output flow imbalance.",
+      "galenic_axis": "DRY_AXIS",
+      "independence_argument": "Flow rate errors are about HOW FAST material moves through the system. Not thermal (flow can mismatch at correct temperature), not compositional (pure material can flow wrong), not spatial (vessel intact but flow wrong). Closest Galenic parallel: dry (concentration/viscosity affecting flow).",
+      "example_transitions": "Input exceeds output capacity, drip rate failure"
+    },
+    "ENERGY_OVERSHOOT": {
+      "count": 1,
+      "pct": 6,
+      "physical_dimension": "THERMAL_INTENSITY",
+      "description": "Thermal damage/scorching. Excessive heat application.",
+      "brunschwig_gloss": "Fourth degree forbidden: 'nature rejects all coercion.' Scorch damage to distillate.",
+      "galenic_axis": "HOT_AXIS",
+      "independence_argument": "Pure thermal failure. Too much heat. This is the ONLY class that directly maps to Brunschwig's single fire-degree axis. All other classes are non-thermal.",
+      "example_transitions": "Degree-4 fire application, scorching"
+    }
+  },
+  "independent_dimensions": [
+    "FLOW_DYNAMICS",
+    "MATERIAL_PURITY",
+    "SPATIAL_CAPACITY",
+    "TEMPORAL_SEQUENCE",
+    "THERMAL_INTENSITY"
+  ],
+  "n_dimensions": 5,
+  "thermal_fraction": 0.2,
+  "non_thermal_count": 4,
+  "falsification_criterion": ">=3 independent failure dimensions = PASS, <3 = FAIL",
+  "falsification_result": "PASS -- 5 independent failure dimensions (>= 3 required). Rupescissa's multi-axis hazard prediction survives.",
+  "tier_caveat": "Tier layering: The 5 hazard classes and their topology are Tier 2 (C109, FROZEN). The physical dimension assignments via F-BRU-023 are Tier 4 (interpretive glosses). This test evaluates a Tier 4 prediction against Tier 4 glosses anchored to Tier 2 structure.",
+  "constraints_referenced": [
+    "C109",
+    "C541",
+    "C622",
+    "C623",
+    "C624",
+    "C625",
+    "F-BRU-023"
+  ]
+}

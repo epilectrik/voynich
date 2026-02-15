@@ -1,0 +1,500 @@
+# ============================================================
+
+meta:
+  name: "Human Track Structural Contract"
+  acronym: "HTSC"
+  version: "1.0"
+  date: "2026-02-15"
+  status: "LOCKED"
+  layer_type: "cross-system layer contract"
+  derived_from: "Tier 0-2 constraints (structural); Tier 3 two-axis model clearly marked"
+  governance: |
+    HTSC is NOT authoritative. Constraints are authoritative.
+    HTSC describes the HT layer from HT's own perspective, across all systems.
+    Do not edit without updating source constraints first.
+    Sections marked [TIER 3] contain interpretive models that are
+    plausible but do not carry Tier 0-2 authority.
+
+# ============================================================
+scope:
+  system: "Manuscript-wide (A, B, AZC)"
+  coverage:
+    b_types: 4421
+    b_occurrences: 7042
+    b_fraction: "30.5%"
+    azc_tokens: "~3,299"
+    a_present: true
+  function: "What HT is, how it manifests across systems, what it cannot do"
+  b_grammar_independent: true  # HT is defined by EXCLUSION from 479-type B grammar
+  operationally_redundant: true  # C935 revision: not empty, but redundant
+  owns_nothing: true  # HT does not own any structural object
+
+# Explicit ownership declaration
+ownership:
+  htsc_describes:
+    - population_definition
+    - cross_system_manifestation
+    - morphological_architecture
+    - positional_properties
+    - threading_architecture
+    - interaction_architecture
+    - operational_status
+    - line1_header_structure
+    - paragraph_header_structure
+  htsc_does_not_describe:
+    - b_grammar: "-> BCSC"
+    - a_registry: "-> CASC"
+    - azc_classification: "-> AZC-ACT"
+    - interpretation_beyond_tier2: "-> SPECULATIVE/"
+  ownership_boundaries: |
+    BCSC ht_un_integration remains in BCSC as B-perspective summary.
+    For comprehensive HT properties, see HTSC.
+    Line-1/paragraph header: HTSC owns HT rates and morphology;
+    BCSC owns program-structural implications.
+    C935: Referenced by HTSC as evidence, not owned. Primary home is BCSC.
+    AZC HT constraints (C439, C457): Referenced, not owned. Primary home is AZC-ACT.
+    Each constraint in provenance is tagged OWNED or REFERENCED.
+
+# ============================================================
+guarantees:
+
+  - id: "POPULATION_IDENTITY"
+    statement: "HT = UN (identical by definition); 4,421 types, 7,042 occurrences in B (30.5%)"
+    provenance: "C740"
+
+  - id: "UNIFIED_VOCABULARY"
+    statement: "Same HT prefix inventory across A, B, and AZC systems (Jaccard >= 0.947)"
+    provenance: "C452"
+
+  - id: "SINGLE_LAYER"
+    statement: "HT forms one coherent layer, not multiple overlapping systems"
+    provenance: "C168"
+
+  - id: "OPERATIONAL_REDUNDANCY"
+    statement: |
+      HT tokens are OPERATIONALLY REDUNDANT, not non-operational.
+      They contain operational content (compound MIDDLEs decompose to core atoms)
+      but this content is redundant with body simple MIDDLEs (71.6% hit rate
+      vs 59.2% random, 1.21x lift). Removing HT doesn't change outcomes
+      because the body already encodes the same operations in simple form.
+    revision_note: |
+      C404 evidence is UNCHANGED. What changed is the EXPLANATION:
+      Old: "HT has no operational content" -> New: "HT has redundant operational content"
+      The compound specification model (C935) is a simpler explanation than
+      attention pacing (C209) or calligraphy practice, both of which are WEAKENED.
+    provenance: "C404, C405, C935"
+
+  - id: "CAUSAL_DECOUPLING"
+    statement: "HT presence does not alter subsequent grammar probabilities (V=0.10, negligible)"
+    provenance: "C405"
+
+  - id: "NON_PREDICTIVE"
+    statement: "HT does not improve prediction of subsequent content; MAE worsens by 0.003-0.005"
+    provenance: "C415"
+
+  - id: "DIRECTIONAL_DOWNSTREAM"
+    statement: "Coupling is unidirectional: System->HT (V=0.324), HT->System (V=0.202), ratio 1.6x"
+    provenance: "C416"
+
+  - id: "HAZARD_AVOIDANCE"
+    statement: "0/35 HT tokens at forbidden transition seams; average distance 4.84 (vs 2.5 expected)"
+    provenance: "C166, C169"
+
+  - id: "LINE1_ENRICHMENT"
+    tier: 0
+    statement: "Line-1 has 50.2% HT vs 29.8% on lines 2+ (+20.3 pp)"
+    provenance: "C747"
+
+  - id: "LINE1_STEP_FUNCTION"
+    tier: 0
+    statement: "Enrichment is confined to position 1 only: pos1=50.2%, pos2=31.7%, pos3+=27-33%"
+    provenance: "C748"
+
+  - id: "OPENING_ONLY"
+    tier: 0
+    statement: "No closing enrichment: last line 30.8% = interior 29.8%"
+    provenance: "C750"
+
+  - id: "LINE1_COMPOSITE_HEADER"
+    statement: |
+      Line-1 HT is a two-part composite header:
+      - PP component (68.3%): A-context declaration, 13.9% prediction accuracy vs 0.88% baseline (15.8x lift)
+      - B-exclusive component (31.7%): Folio identification, 94.1% folio-unique
+      PP fraction does NOT correlate with body PP size (rho=0.002).
+    provenance: "C794, C795, C799"
+
+  - id: "COMPOSITIONAL_GENERATIVITY"
+    statement: "HT follows Zipf distribution (exponent 0.892, R-sq=0.92) with 67.5% hapax rate"
+    provenance: "C406"
+
+  - id: "COMPOUND_SPECIFICATION"
+    statement: |
+      100% of HT compound MIDDLEs decompose to core atoms.
+      Compound atoms predict body MIDDLEs at 71.6% hit rate (1.21x lift vs 59.2% random).
+      HT compound rate: 45.8% (vs 31.5% grammar).
+      Mean HT MIDDLE length: 2.64 (vs 2.04 grammar).
+    provenance: "C935"
+
+  - id: "QUIRE_ORGANIZED"
+    statement: "HT shows codicological clustering at the quire level"
+    provenance: "C450"
+
+  - id: "ANTICIPATORY_COMPENSATION"
+    statement: "HT anticipates B stress at quire level (r=0.343, p=0.0015)"
+    provenance: "C459"
+
+  - id: "TAIL_CORRELATION"
+    statement: "HT density tracks MIDDLE rarity (r=0.504, p=0.0045); tail_pressure explains 68% of R-sq=0.279"
+    provenance: "C477, C461"
+
+# ============================================================
+invariants:
+
+  - id: "SYSTEM_STRATIFICATION"
+    statement: "HT density (prefix-based, C451 methodology): A (0.170) > AZC (0.162) > B (0.149)"
+    note: |
+      C451 used 19-family prefix detection (pre-C740). Under full C740 UN definition,
+      ordering becomes AZC > A > B because AZC labels are heavily HT.
+      The prefix-based ordering is stable and reproduced exactly by HTSC verification.
+    provenance: "C451"
+
+  - id: "SECTION_EXCLUSIVITY"
+    statement: "80.7% of HT types appear in only one section"
+    provenance: "C167"
+
+  - id: "PREFIX_DISJOINTNESS"
+    statement: "Zero overlap between HT prefixes (yk-, op-, yt-, sa-, etc.) and A/B prefixes (ch-, qo-, sh-, etc.)"
+    provenance: "C347"
+
+  - id: "MORPHOLOGICAL_MODULARITY"
+    statement: "HT_PREFIX + MIDDLE + SUFFIX; components are independent and additive (no synergy, p=1.0)"
+    provenance: "C417"
+
+  - id: "ADJACENCY_CLUSTERING"
+    statement: "1.69x enrichment of HT tokens in adjacent positions"
+    provenance: "C453"
+
+  - id: "LANE_SEGREGATION_INDIFFERENCE"
+    statement: |
+      HT is lane-SEGREGATED (composition: chi2=278.71, p=4e-60; OTHER +9.5pp, QO -7.7pp)
+      but lane-INDIFFERENT in transitions (same-lane rate 37.7% = expected 37.9%, lift=0.994x)
+    provenance: "C743, C744"
+
+  - id: "C475_COMPLIANCE"
+    statement: "HT obeys MIDDLE incompatibility when adjacent to classified tokens (violation rate 0.69%)"
+    provenance: "C742"
+
+  - id: "FOLIO_COMPENSATORY"
+    statement: "HT density anti-correlated with folio grammar coverage (r=-0.376)"
+    provenance: "C746"
+
+  - id: "BODY_BOUNDARY_ENRICHMENT"
+    statement: "HT enriched at control block boundaries: first position=45.8%, last=42.9%, middle=25.7%"
+    provenance: "C803"
+
+  - id: "LINK_POSITIVE_ASSOCIATION"
+    statement: "HT shows positive LINK association: OR=1.50 (p<0.001), 38.3% of LINK tokens are HT"
+    provenance: "C806"
+
+# ============================================================
+cross_system_manifestation:
+
+  currier_a:
+    anchoring: "Registry entry boundaries"
+    density: 0.170
+    positional_bias: "2.61x line-initial enrichment (p < 10^-126); 0 at category transition seams"
+    category_correlation: "V=0.130 (weak, non-predictive)"
+    ht_a_inverse: "rho=-0.367 — high-HT programs use less registry vocabulary (C344)"
+    pp_ht_substitution: "rho=-0.294 — PP and HT partially substitute in responsibility budget (C507)"
+    ri_ht_derivation: "97.9% HT MIDDLEs contain PP atoms (C924)"
+    ri_ht_anti_correlation: "RI 0.48x in lines with HT (chi2=105.83) (C926)"
+    label_elevation: "45.0% in labels vs 18.6% in paragraphs (2.42x enrichment) (C927)"
+    morphology_a: "-or/-ol simplex forms favored (C419)"
+    provenance: "C344, C419, C507, C924, C926, C927"
+
+  currier_b:
+    anchoring: "Temporal/attentional context"
+    density: 0.149
+    program_stratification: "EXTREME 15.9% > HIGH 10.4% > MODERATE 8.5% > LOW 5.7% (C341)"
+    link_decoupling: "rho=0.010 (C342), but OR=1.50 positive association (C806)"
+    link_proximity: "Body HT 2.53 vs 3.08 distance to LINK (C802)"
+    escape_correlation: "rho=0.377, body-driven not line-1-driven (C796, C800)"
+    azc_inverse: "rho=-0.352 (C797)"
+    dual_control: "AZC(-) and FL(+) are orthogonal predictors (C798)"
+    phase_synchrony: "EARLY (op-, pc-, do-), LATE (ta-); V=0.136 (p<0.0001) (C348)"
+    grammar_trigger: "Preceding ch- -> 1.94x LATE enrichment (C413)"
+    novel_combinations: "11.19% novel MIDDLE pairs; 90.7% HT-exclusive MIDDLEs (C812)"
+    strategy_prediction: "r=+0.46 CAUTIOUS, r=-0.48 OPPORTUNISTIC (C488)"
+    morphology_b: "-edy complex forms favored (C347, C348)"
+    provenance: "C341, C342, C348, C413, C488, C796, C797, C798, C800, C802, C806, C812"
+
+  azc:
+    anchoring: "Diagram geometry"
+    density: 0.162
+    boundary_preference: "S=39.7% > R=29.5% (C457)"
+    entry_orientation: "Elevated before AZC, reduced after (C460)"
+    anticipatory_compensation: "Quire r=0.343 (C459)"
+    label_driven: "L-placement HT: 88.8% initial, 95% final; short lines drive both-boundary enrichment"
+    provenance: "C457, C459, C460"
+
+# ============================================================
+line1_header:
+
+  enrichment: "50.2% vs 29.8% (Tier 0, C747)"
+  step_function: "pos1=50.2%, pos2=31.7%, pos3+=27-33% (Tier 0, C748)"
+  opening_only: "Last line 30.8% = interior 29.8% (Tier 0, C750)"
+
+  composite_header:
+    pp_component:
+      share: "68.3%"
+      function: "A-context declaration"
+      prediction_accuracy: "13.9% vs 0.88% baseline (15.8x lift)"
+    b_exclusive_component:
+      share: "31.7%"
+      function: "Folio identification"
+      folio_unique_rate: "94.1%"
+    independence: "PP fraction does NOT correlate with body PP size (rho=0.002)"
+    provenance: "C794, C795, C799"
+
+  morphological_distinction: "95.9% unique types; pch prefix 7.0% vs 1.9% in body (C749)"
+  folio_specificity: "85.9% folio-singletons; 1,229 folio-unique AND line1-only tokens (67%) (C870)"
+  double_header: "Folio line 1 = 50.2% HT (folio + paragraph header overlap) (C844)"
+  provenance: "C747, C748, C749, C750, C794, C795, C799, C844, C870"
+
+# ============================================================
+paragraph_header:
+
+  header_enrichment: "44.9% HT vs 29.1% body (C840)"
+  step_function: "pos1=45.2%, pos2=26.5%, pos3+=26-27% (C842)"
+  prefix_markers: "pch- 16.9% + po- 16.6% = 33.5% of paragraph initiators (C843)"
+
+  body_ht:
+    vocabulary: "80.1% PP morphology (C085 primitives) (C801)"
+    boundary_enrichment: "first=45.8%, last=42.9%, middle=25.7% (C803)"
+    link_proximity: "2.53 vs 3.08 distance to LINK (C802)"
+    jaccard_with_line1: "0.122 (very low overlap — different HT populations) (C801)"
+
+  provenance: "C801, C802, C803, C840, C842, C843, C851"
+
+# ============================================================
+morphology:
+
+  decomposition: "HT_PREFIX + MIDDLE + SUFFIX"
+  decomposition_rate: "71.3% (C347)"
+  prefix_families: "yk-, op-, yt-, sa-, pc-, po-, pch-, do-, ta-"
+  prefix_disjointness: "Zero overlap with A/B prefixes (ch-, qo-, sh-, etc.) (C347)"
+  modularity: "Independent additive (no interaction, synergy p=1.0, interaction model 3.9% worse) (C417)"
+  positional_signal: "CORE carries signal (d=69.6% line-initial, am=52.8% line-final) (C418)"
+
+  compound_rate:
+    ht: "45.8%"
+    grammar: "31.5%"
+  mean_middle_length:
+    ht: "2.64"
+    grammar: "2.04"
+  decomposition_to_atoms: "100% of compounds decompose to core atoms (C935)"
+  derived_vocabulary: "81.1% compound, 64.5% folio-unique (C766)"
+
+  provenance: "C347, C417, C418, C766, C935"
+
+# ============================================================
+operational_status:
+
+  tier0_facts:
+    terminal_independence: "p=0.92 (C404)"
+    causal_decoupling: "V=0.10 (C405)"
+    non_predictive: "MAE worsens by 0.003-0.005 (C415)"
+
+  revision_c935:
+    old: "HT has no operational content (non-operational)"
+    new: "HT has redundant operational content (operationally redundant)"
+    evidence: "Compound atoms predict body MIDDLEs at 71.6% hit (1.21x lift vs 59.2% random)"
+    implication: "Removing HT doesn't change outcomes due to REDUNDANCY, not emptiness"
+    weakens:
+      - "C209 (attention pacing) — not falsified, just simpler explanation available"
+      - "C221 (calligraphy practice) — not falsified, just simpler explanation available"
+
+  b_exclusive_identity: "100% of B-exclusive vocabulary is HT (C792)"
+  b_exclusive_count: "3,694 types (C792)"
+
+  provenance: "C404, C405, C415, C792, C935"
+
+# ============================================================
+# [TIER 3] Two-Axis Model
+two_axis_model:
+  tier: 3
+  status: "WORKING — plausible but not promotable without external evidence"
+
+  density_axis:
+    description: "Tracks upcoming discrimination complexity"
+    evidence: "r=0.504 with tail MIDDLEs (C477)"
+    driver: "tail_pressure explains 68% of R-sq=0.279 (C461)"
+
+  morphology_axis:
+    description: "Tracks spare cognitive capacity"
+    evidence: "r=-0.301 with folio complexity"
+    pattern: "Hard task -> frequent but simple HT; easy task -> rare but complex HT"
+
+  strategy_connection: "r=+0.46 CAUTIOUS, r=-0.48 OPPORTUNISTIC (C488)"
+
+  provenance: "C461, C477, C488, C489"
+
+# ============================================================
+disallowed_interpretations:
+
+  - claim: "HT tokens are non-operational (contain no content)"
+    refutation: "C935 shows HT contains redundant operational content (compound atoms)"
+
+  - claim: "HT annotates or labels adjacent content"
+    refutation: "C415 (MAE worsens with HT conditioning), C416 (directional asymmetry)"
+
+  - claim: "HT is scribal error or random mark-making"
+    refutation: "C221 (deliberate practice structure), C406 (Zipf distribution, R-sq=0.92)"
+
+  - claim: "HT encodes a separate message"
+    refutation: "C415 (non-predictive), C418 (positional specialization without informativeness)"
+
+  - claim: "HT is separate from grammar"
+    refutation: "C414 (chi2=934, p<10^-145 grammar association)"
+
+  - claim: "HT marks specific hazard zones"
+    refutation: "C166 (0/35 at forbidden seams), C217 (0 true HT near hazards)"
+
+  - claim: "HT is production-driven / codicologically organized"
+    refutation: "C459 (content-driven anticipatory compensation, not quire-boundary aligned)"
+
+  - claim: "HT has different vocabulary across systems"
+    refutation: "C452 (Jaccard >= 0.947 unified prefix vocabulary across A/B/AZC)"
+
+  - claim: "HT tokens are unknown / unclassified"
+    refutation: "C611 (99.2% role prediction by PREFIX), C740 (HT = UN population, structurally classified)"
+
+# ============================================================
+provenance:
+
+  # HT-OWNED constraints (HTSC is authoritative source)
+  owned:
+    structural_properties:
+      - {id: "C166", topic: "Zero forbidden seam presence"}
+      - {id: "C167", topic: "80.7% section-exclusive"}
+      - {id: "C168", topic: "Single unified layer"}
+      - {id: "C169", topic: "Hazard avoidance (4.84 distance)"}
+      - {id: "C170", topic: "Morphologically distinct"}
+    program_stratification:
+      - {id: "C341", topic: "HT-program stratification (EXTREME/HIGH/MODERATE/LOW)"}
+      - {id: "C342", topic: "HT-LINK decoupling (rho=0.010)"}
+      - {id: "C344", topic: "HT-A inverse coupling (rho=-0.367)"}
+    morphology_and_synchrony:
+      - {id: "C347", topic: "Disjoint prefix vocabulary, 71.3% decomposition"}
+      - {id: "C348", topic: "Phase synchrony (EARLY/LATE prefixes)"}
+    closure_tests:
+      - {id: "C404", topic: "Terminal independence (p=0.92)"}
+      - {id: "C405", topic: "Causal decoupling (V=0.10)"}
+      - {id: "C406", topic: "Generative structure (Zipf 0.892)"}
+    correlation_vs_prediction:
+      - {id: "C413", topic: "Grammar trigger (ch- -> 1.94x LATE)"}
+      - {id: "C414", topic: "Strong grammar association (chi2=934)"}
+      - {id: "C415", topic: "Non-predictivity (MAE worsens)"}
+      - {id: "C416", topic: "Directional asymmetry (V=0.324 vs 0.202)"}
+      - {id: "C417", topic: "Modular additive structure"}
+      - {id: "C418", topic: "Positional specialization without informativeness"}
+      - {id: "C419", topic: "Currier A positional specialization"}
+    quire_and_cross_system:
+      - {id: "C450", topic: "Quire clustering"}
+      - {id: "C451", topic: "System stratification (A > AZC > B)"}
+      - {id: "C452", topic: "Unified vocabulary (Jaccard >= 0.947)"}
+      - {id: "C453", topic: "Adjacency clustering (1.69x)"}
+      - {id: "C461", topic: "Tail pressure driver (68% of R-sq)"}
+      - {id: "C477", topic: "Tail correlation (r=0.504)"}
+    strategy:
+      - {id: "C488", topic: "Strategy prediction (CAUTIOUS/OPPORTUNISTIC)"}
+      - {id: "C489", topic: "Two-axis model coherence"}
+    pp_ht_interaction:
+      - {id: "C507", topic: "PP-HT partial responsibility substitution"}
+    un_population:
+      - {id: "C740", topic: "HT = UN population identity"}
+      - {id: "C741", topic: "C475 minimal participation"}
+      - {id: "C742", topic: "C475 compliance (0.69% violation)"}
+      - {id: "C743", topic: "Lane segregation (chi2=278.71)"}
+      - {id: "C744", topic: "Lane indifference (lift=0.994x)"}
+      - {id: "C745", topic: "Coverage metric sensitivity"}
+      - {id: "C746", topic: "Folio compensatory distribution (r=-0.376)"}
+    line1_properties:
+      - {id: "C747", topic: "Line-1 enrichment 50.2% (Tier 0)"}
+      - {id: "C748", topic: "Line-1 step function (Tier 0)"}
+      - {id: "C749", topic: "Line-1 morphological distinction"}
+      - {id: "C750", topic: "Opening-only asymmetry (Tier 0)"}
+    derived_vocabulary:
+      - {id: "C766", topic: "Derived vocabulary (81.1% compound, 64.5% folio-unique)"}
+    b_exclusive_and_header:
+      - {id: "C792", topic: "B-exclusive = HT (100%)"}
+      - {id: "C794", topic: "Line-1 composite header structure"}
+      - {id: "C795", topic: "Line-1 A-context prediction (15.8x lift)"}
+      - {id: "C796", topic: "HT-escape correlation (rho=0.377)"}
+      - {id: "C797", topic: "AZC-HT inverse (rho=-0.352)"}
+      - {id: "C798", topic: "Dual control: AZC(-) and FL(+) orthogonal"}
+      - {id: "C799", topic: "Line-1 PP independence from body PP"}
+      - {id: "C800", topic: "Body HT drives escape correlation"}
+      - {id: "C801", topic: "Body HT primitive vocabulary (80.1% PP)"}
+      - {id: "C802", topic: "Body HT LINK proximity (2.53 vs 3.08)"}
+      - {id: "C803", topic: "Body boundary enrichment (first/last/middle)"}
+      - {id: "C806", topic: "LINK-HT positive association (OR=1.50)"}
+      - {id: "C812", topic: "Novel MIDDLE combinations (11.19%)"}
+    paragraph_header:
+      - {id: "C840", topic: "Paragraph header HT enrichment (44.9%)"}
+      - {id: "C842", topic: "Paragraph step function"}
+      - {id: "C843", topic: "Paragraph prefix markers (pch-, po-)"}
+      - {id: "C844", topic: "Folio line-1 double header"}
+      - {id: "C851", topic: "Paragraph HT variance validation"}
+    folio_specificity:
+      - {id: "C870", topic: "Line-1 folio specificity (85.9% singletons)"}
+      - {id: "C871", topic: "HT role cooccurrence pattern"}
+      - {id: "C872", topic: "HT discrimination vocabulary"}
+    ri_ht:
+      - {id: "C924", topic: "HT-RI shared derivation (97.9% PP atoms)"}
+      - {id: "C926", topic: "HT-RI anti-correlation (0.48x)"}
+      - {id: "C927", topic: "HT label elevation (2.42x)"}
+    compound_specification:
+      - {id: "C935", topic: "Compound specification dual-purpose model"}
+
+  # HT-REFERENCED constraints (primary home is another contract)
+  referenced:
+    from_bcsc:
+      - {id: "C120", topic: "PURE_OPERATIONAL verdict excludes HT"}
+      - {id: "C217", topic: "0 true HT near hazards (hazard topology)"}
+      - {id: "C611", topic: "99.2% role prediction by PREFIX"}
+    from_azc_act:
+      - {id: "C439", topic: "Folio-specific HT profiles in AZC"}
+      - {id: "C457", topic: "HT boundary preference in Zodiac AZC"}
+      - {id: "C459", topic: "Anticipatory compensation (HTSC OWNS the HT aspect; AZC-ACT owns the AZC mechanism)"}
+      - {id: "C460", topic: "Entry orientation (elevated before AZC)"}
+    from_ht_adjacent:
+      - {id: "C209", topic: "Attentional pacing (WEAKENED by C935)"}
+      - {id: "C221", topic: "Skill practice (WEAKENED by C935)"}
+      - {id: "C301", topic: "AZC 69.7% B-compatible, 65.4% A-compatible"}
+      - {id: "C306", topic: "AZC placement-synchronous zones"}
+      - {id: "C317", topic: "AZC positional grammar"}
+      - {id: "C350", topic: "HT+B hybrids"}
+      - {id: "C351", topic: "HT classification"}
+      - {id: "C354", topic: "HT orientation intact"}
+      - {id: "C172", topic: "SUPERSEDED by C342"}
+      - {id: "C171", topic: "Closed-loop only verdict (B grammar)"}
+      - {id: "C841", topic: "Paragraph gallows-initial markers (paragraph structure)"}
+
+  total_owned: 68
+  total_referenced: 14
+  total_coverage: 82
+
+# ============================================================
+# Summary statement
+summary: |
+  HT is a structured, modular, operationally redundant compound specification
+  layer that serves dual purpose: encoding operations (same atoms as body) and
+  identifying programs (rare combinations). It exhibits system-conditioned
+  positional alignment without predictive or causal influence on system behavior.
+
+  In Currier A: aligned with registry layout (entry boundaries)
+  In Currier B: aligned with temporal/attentional context (execution phase)
+  In AZC: aligned with diagram geometry (label positions)
+
+  Same layer, different anchoring pressures.

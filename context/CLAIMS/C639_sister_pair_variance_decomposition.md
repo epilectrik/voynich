@@ -65,7 +65,7 @@ The clean residuals (no autocorrelation, no size effects) suggest the unexplaine
 
 ## Related
 
-C408, C410, C412, C604, C605, C637, C638
+C408, C410, C412, C604, C605, C637, C638, C1057 (lane balance and sister preference confirmed orthogonal: partial r=-0.064)
 
 ## Provenance
 

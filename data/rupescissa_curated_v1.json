@@ -1,0 +1,2131 @@
+{
+  "title": "Rupescissa - De consideratione quintae essentiae",
+  "version": "1.0",
+  "curation_date": "2026-02-15",
+  "source": "sources/rupescissa/rupescissa_complete_translation.txt",
+  "original_composition": "c. 1351-1352",
+  "author": "John of Rupescissa (Johannes de Rupescissa)",
+  "chapter_type_taxonomy": {
+    "THEORY": "Philosophical framework and quintessence definition",
+    "PROCESS": "General distillation methods",
+    "EXTRACTION": "Material-specific extraction procedures",
+    "DEGREE_CATALOG": "Materials classified by quality and degree (hot/cold/dry/humid x 1-4)",
+    "PHARMACOLOGICAL": "Materials classified by therapeutic function",
+    "APPARATUS": "Equipment descriptions",
+    "REMEDY": "Disease-specific treatment protocols (Book 2)"
+  },
+  "action_taxonomy": {
+    "DISTILL": "Standard distillation through alembic/still (distill, distillation)",
+    "CIRCULATE": "Continuous circular distillation in sealed vessel (circulate, circulation, ascent and descent)",
+    "RECTIFY": "Purify by repeated distillation or prolonged circulation (rectify, rectified, glorify)",
+    "SUBLIME": "Sublimation - heat solid to vapor then condense (sublime, sublimated, sublimation)",
+    "PUTREFY": "Controlled decomposition in warm dung or vessel (putrefy, putrefied, putrefaction)",
+    "CALCINE": "Reduce to powder/calx by heating (calcine, calcined, calx)",
+    "DISSOLVE": "Dissolve substance in liquid medium (dissolve, dissolved, solution)",
+    "GRIND": "Mechanical grinding/filing to powder or small pieces (grind, file, powder, filings)",
+    "SEAL": "Seal vessel with lute of wisdom or wax (seal, sealed, lute)",
+    "HEAT_DUNG": "Gentle heat from horse dung decomposition (dung, belly of a horse)",
+    "SEPARATE": "Separate elements/layers by density or distillation (separate, separation)",
+    "COLLECT": "Gather distillate or extract (collect, extract, take)"
+  },
+  "statistics": {
+    "total_chapters": 61,
+    "book_1_chapters": 41,
+    "book_2_remedies": 20,
+    "by_type": {
+      "THEORY": 7,
+      "PROCESS": 5,
+      "EXTRACTION": 11,
+      "DEGREE_CATALOG": 9,
+      "PHARMACOLOGICAL": 8,
+      "APPARATUS": 1,
+      "REMEDY": 20
+    },
+    "chapters_with_procedures": 16,
+    "distinct_actions_used": 12
+  },
+  "chapters": [
+    {
+      "id": 1,
+      "book": 1,
+      "number": "Prooemium",
+      "title": "Preface",
+      "chapter_type": "THEORY",
+      "source_lines": {
+        "start": 86,
+        "end": 107
+      },
+      "key_concepts": [
+        "restriction to worthy"
+      ],
+      "materials_mentioned": [],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 2,
+      "book": 1,
+      "number": "Author's Intention",
+      "title": "Author's Intention",
+      "chapter_type": "THEORY",
+      "source_lines": {
+        "start": 108,
+        "end": 161
+      },
+      "key_concepts": [
+        "restriction to worthy"
+      ],
+      "materials_mentioned": [],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 3,
+      "book": 1,
+      "number": "Canon 1",
+      "title": "The First Secret",
+      "chapter_type": "THEORY",
+      "source_lines": {
+        "start": 162,
+        "end": 175
+      },
+      "key_concepts": [
+        "restriction to worthy",
+        "degree system"
+      ],
+      "materials_mentioned": [],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 4,
+      "book": 1,
+      "number": "Canon 2",
+      "title": "What All Have Sought",
+      "chapter_type": "THEORY",
+      "source_lines": {
+        "start": 176,
+        "end": 315
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens",
+        "aqua vitae",
+        "incorruptibility",
+        "concealment",
+        "putrefaction",
+        "preservation from corruption",
+        "four elements"
+      ],
+      "materials_mentioned": [
+        "wine",
+        "aqua ardens",
+        "aqua vitae"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 5,
+      "book": 1,
+      "number": "III",
+      "title": "The Search for the Sun (Gold)",
+      "chapter_type": "THEORY",
+      "source_lines": {
+        "start": 316,
+        "end": 348
+      },
+      "key_concepts": [
+        "quintessence",
+        "incorruptibility",
+        "philosophical gold",
+        "restriction to worthy",
+        "preservation from corruption"
+      ],
+      "materials_mentioned": [
+        "gold"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 6,
+      "book": 1,
+      "number": "IV",
+      "title": "The Search for the Stars",
+      "chapter_type": "THEORY",
+      "source_lines": {
+        "start": 349,
+        "end": 388
+      },
+      "key_concepts": [
+        "quintessence"
+      ],
+      "materials_mentioned": [],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 7,
+      "book": 1,
+      "number": "V",
+      "title": "How to Make Aqua Ardens",
+      "chapter_type": "PROCESS",
+      "source_lines": {
+        "start": 389,
+        "end": 446
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens",
+        "incorruptibility",
+        "restriction to worthy",
+        "preservation from corruption",
+        "four elements"
+      ],
+      "materials_mentioned": [
+        "wine",
+        "aqua ardens"
+      ],
+      "procedural_steps": [
+        {
+          "step": 1,
+          "action": "DISTILL",
+          "description": "ound. And distill it in stills so many times until you have made the best aqua ardens that you know how to mak"
+        },
+        {
+          "step": 2,
+          "action": "CIRCULATE",
+          "description": "ONTINUOUS ASCENTS AND DESCENTS the Fifth Essence which we seek is separated from the corruptible composition o"
+        },
+        {
+          "step": 3,
+          "action": "SEPARATE",
+          "description": "e seek is separated from the corruptible composition of the four elements.  And this happens because that whic"
+        },
+        {
+          "step": 4,
+          "action": "SUBLIME",
+          "description": "which is sublimated a second time and often is more subtle and glorified, and more separated from the corrupt"
+        },
+        {
+          "step": 5,
+          "action": "RECTIFY",
+          "description": "ubtle and glorified, and more separated from the corruption of the four elements, than when it only ascends on"
+        }
+      ],
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 8,
+      "book": 1,
+      "number": "VI",
+      "title": "Practice - Signs of Successful Quintessence",
+      "chapter_type": "PROCESS",
+      "source_lines": {
+        "start": 447,
+        "end": 472
+      },
+      "key_concepts": [
+        "quintessence",
+        "circular distillation"
+      ],
+      "materials_mentioned": [
+        "egg white"
+      ],
+      "procedural_steps": [
+        {
+          "step": 1,
+          "action": "DISTILL",
+          "description": "circular distillation has been done for many days in the circulation vessel described above, you will open th"
+        },
+        {
+          "step": 2,
+          "action": "CIRCULATE",
+          "description": "ys in the circulation vessel described above, you will open the opening of the vessel which is at the top (whi"
+        },
+        {
+          "step": 3,
+          "action": "SEAL",
+          "description": "which was sealed with a seal composed of lute of wisdom, made from the finest flour and egg white and from dam"
+        },
+        {
+          "step": 4,
+          "action": "SUBLIME",
+          "description": "rough the sublimations and circulation of that wondrous vessel you may arrive at what is desired."
+        }
+      ],
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 9,
+      "book": 1,
+      "number": "VII",
+      "title": "Fire Without Fire",
+      "chapter_type": "PROCESS",
+      "source_lines": {
+        "start": 473,
+        "end": 510
+      },
+      "key_concepts": [
+        "quintessence",
+        "circular distillation",
+        "heat without fire",
+        "restriction to worthy"
+      ],
+      "materials_mentioned": [
+        "wine"
+      ],
+      "procedural_steps": [
+        {
+          "step": 1,
+          "action": "HEAT_DUNG",
+          "method_label": "FIRST METHOD",
+          "description": "You will receive THE BELLY OF A HORSE very well digested -- I mean to say, O"
+        },
+        {
+          "step": 2,
+          "action": "COLLECT",
+          "method_label": "SECOND METHOD",
+          "description": "Take the grape harvest expressed from the wine-press, and do through all"
+        },
+        {
+          "step": 3,
+          "action": "CIRCULATE",
+          "method_label": "THIRD METHOD",
+          "description": "Place the sealed circulation vessel under the strong reverberation of the sun"
+        }
+      ],
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 10,
+      "book": 1,
+      "number": "VIII",
+      "title": "Obtaining Aqua Ardens from Spoiled Wine",
+      "chapter_type": "PROCESS",
+      "source_lines": {
+        "start": 511,
+        "end": 551
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens",
+        "incorruptibility",
+        "putrefaction",
+        "restriction to worthy",
+        "preservation from corruption",
+        "four elements"
+      ],
+      "materials_mentioned": [
+        "vinegar",
+        "wine",
+        "aqua ardens"
+      ],
+      "procedural_steps": [
+        {
+          "step": 1,
+          "action": "DISTILL",
+          "description": "ns in the distillation vessel is not wine.  And therefore note that WHEN WINE IS TRANSMUTED INTO VINEGAR, this"
+        },
+        {
+          "step": 2,
+          "action": "PUTREFY",
+          "description": "urbid and putrefied from the putrefaction of a certain watery humor thus corrupts wine with a feverish conditi"
+        },
+        {
+          "step": 3,
+          "action": "SUBLIME",
+          "description": "t wine by sublimation, and leave the putrefaction of the four elements of wine as dregs at the bottom of the v"
+        }
+      ],
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 11,
+      "book": 1,
+      "number": "IX",
+      "title": "Seven Methods of Obtaining Quintessence",
+      "chapter_type": "PROCESS",
+      "source_lines": {
+        "start": 552,
+        "end": 604
+      },
+      "key_concepts": [
+        "aqua ardens",
+        "heat without fire"
+      ],
+      "materials_mentioned": [
+        "aqua ardens"
+      ],
+      "procedural_steps": [
+        {
+          "step": 1,
+          "action": "COLLECT",
+          "method_label": "FIRST METHOD",
+          "description": "That which was already revealed above, to"
+        },
+        {
+          "step": 2,
+          "action": "COLLECT",
+          "method_label": "SECOND METHOD",
+          "description": "Take the most noble aqua ardens, the strongest you can obtain,"
+        },
+        {
+          "step": 3,
+          "action": "SEAL",
+          "method_label": "THIRD METHOD",
+          "description": "Take a large glass amphora and place it well-sealed in the"
+        },
+        {
+          "step": 4,
+          "action": "COLLECT",
+          "method_label": "FOURTH METHOD",
+          "description": "Take any vessel of glass or of strongly vitrified earth, and"
+        },
+        {
+          "step": 5,
+          "action": "DISTILL",
+          "method_label": "FIFTH METHOD",
+          "description": "Let the water be distilled at least three times up to seven"
+        },
+        {
+          "step": 6,
+          "action": "DISTILL",
+          "method_label": "SIXTH METHOD",
+          "description": "Have at least the best simple water distilled once or twice"
+        },
+        {
+          "step": 7,
+          "action": "COLLECT",
+          "method_label": "SEVENTH METHOD",
+          "description": "Take whatever water you find at hand, provided it burns:"
+        }
+      ],
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 12,
+      "book": 1,
+      "number": "X",
+      "title": "Extracting Quintessence from Blood, Flesh, and Eggs",
+      "chapter_type": "EXTRACTION",
+      "source_lines": {
+        "start": 605,
+        "end": 635
+      },
+      "key_concepts": [
+        "quintessence",
+        "putrefaction",
+        "heat without fire",
+        "preservation from corruption",
+        "degree system"
+      ],
+      "materials_mentioned": [
+        "human blood",
+        "eggs"
+      ],
+      "procedural_steps": [
+        {
+          "step": 1,
+          "action": "DISTILL",
+          "description": "t it in a distillation vessel with its alembic, and seal it well, and bury in horse dung until it is putrefied"
+        },
+        {
+          "step": 2,
+          "action": "SEAL",
+          "description": "mbic, and seal it well, and bury in horse dung until it is putrefied. Then distill it and you will have the Fi"
+        },
+        {
+          "step": 3,
+          "action": "HEAT_DUNG",
+          "description": "d bury in horse dung until it is putrefied. Then distill it and you will have the Fifth Essence of blood, whic"
+        },
+        {
+          "step": 4,
+          "action": "PUTREFY",
+          "description": "til it is putrefied. Then distill it and you will have the Fifth Essence of blood, which has WONDROUS VIRTUE i"
+        },
+        {
+          "step": 5,
+          "action": "GRIND",
+          "description": "t it into small pieces. Put in a distillation vessel and let it putrefy in horse dung for forty days. Then dis"
+        },
+        {
+          "step": 6,
+          "action": "SEPARATE",
+          "description": "elements separated, the Fifth Essence is in the oil.  FOR EGGS: Take eggs and break them and put them whole i"
+        }
+      ],
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 13,
+      "book": 1,
+      "number": "XI",
+      "title": "Extracting from Fruits and Herbs",
+      "chapter_type": "EXTRACTION",
+      "source_lines": {
+        "start": 636,
+        "end": 656
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens",
+        "putrefaction",
+        "heat without fire"
+      ],
+      "materials_mentioned": [
+        "aqua ardens"
+      ],
+      "procedural_steps": [
+        {
+          "step": 1,
+          "action": "PUTREFY",
+          "description": "ssel, let putrefy in horse dung. Distill, and collect that which comes as oil -- this is the Fifth Essence of"
+        },
+        {
+          "step": 2,
+          "action": "HEAT_DUNG",
+          "description": "utrefy in horse dung. Distill, and collect that which comes as oil -- this is the Fifth Essence of fruits.  FO"
+        },
+        {
+          "step": 3,
+          "action": "DISTILL",
+          "description": "rse dung. Distill, and collect that which comes as oil -- this is the Fifth Essence of fruits.  FOR HERBS: Tak"
+        },
+        {
+          "step": 4,
+          "action": "GRIND",
+          "description": "not sun). Grind to powder and place in distillation vessel with aqua ardens. Seal well and digest in horse dun"
+        },
+        {
+          "step": 5,
+          "action": "SEAL",
+          "description": "a ardens. Seal well and digest in horse dung. Then distill and the virtue of the herb will pass into the aqua"
+        }
+      ],
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 14,
+      "book": 1,
+      "number": "XII",
+      "title": "Separating the Four Elements",
+      "chapter_type": "EXTRACTION",
+      "source_lines": {
+        "start": 657,
+        "end": 682
+      },
+      "key_concepts": [
+        "quintessence",
+        "circular distillation",
+        "four elements"
+      ],
+      "materials_mentioned": [],
+      "procedural_steps": [
+        {
+          "step": 1,
+          "action": "DISTILL",
+          "description": "WATER: What first distills at low heat is the element of water."
+        },
+        {
+          "step": 2,
+          "action": "COLLECT",
+          "description": "AIR: What comes as oil after the water, this is the element of air. It\n   floats on water."
+        },
+        {
+          "step": 3,
+          "action": "DISTILL",
+          "description": "FIRE: Increase the fire strongly, and a red substance will distill -- this\n   is the element of fire."
+        },
+        {
+          "step": 4,
+          "action": "COLLECT",
+          "description": "EARTH: What remains in the bottom of the vessel, reduced to ash, is the\n   element of earth.\n\nThe Fifth Essence is found principally in the element of fire ("
+        }
+      ],
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 15,
+      "book": 1,
+      "number": "XIII",
+      "title": "Fixing the Sun (Gold) in the Fifth Essence",
+      "chapter_type": "EXTRACTION",
+      "source_lines": {
+        "start": 683,
+        "end": 718
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens",
+        "incorruptibility",
+        "philosophical gold",
+        "preservation from corruption"
+      ],
+      "materials_mentioned": [
+        "gold",
+        "silver",
+        "mercury",
+        "aqua ardens"
+      ],
+      "procedural_steps": [
+        {
+          "step": 1,
+          "action": "GRIND",
+          "description": "osophers, file it into thin filings and put it in the Fifth Essence. It will dissolve and give the Fifth Essen"
+        },
+        {
+          "step": 2,
+          "action": "DISSOLVE",
+          "description": ". It will dissolve and give the Fifth Essence a golden color and WONDROUS VIRTUE for:   - Restoring youth   -"
+        }
+      ],
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 16,
+      "book": 1,
+      "number": "XIV",
+      "title": "Practical Method for Fixing the Sun",
+      "chapter_type": "EXTRACTION",
+      "source_lines": {
+        "start": 719,
+        "end": 737
+      },
+      "key_concepts": [
+        "quintessence",
+        "philosophical gold",
+        "circular distillation",
+        "sublimation"
+      ],
+      "materials_mentioned": [
+        "vinegar",
+        "gold",
+        "sal ammoniac"
+      ],
+      "procedural_steps": [
+        {
+          "step": 1,
+          "action": "GRIND",
+          "description": "gold and file it into the finest filings. Mix with sal ammoniac and sublime. Repeat this sublimation seven ti"
+        },
+        {
+          "step": 2,
+          "action": "SUBLIME",
+          "description": "oniac and sublime. Repeat this sublimation seven times. The gold will become so subtle that it will pass with"
+        },
+        {
+          "step": 3,
+          "action": "DISTILL",
+          "description": "t vinegar distilled, and let it dissolve over many days. What dissolves, distill. The Fifth Essence of gold wi"
+        },
+        {
+          "step": 4,
+          "action": "DISSOLVE",
+          "description": "nd let it dissolve over many days. What dissolves, distill. The Fifth Essence of gold will come over with the"
+        },
+        {
+          "step": 5,
+          "action": "CIRCULATE",
+          "description": "ut in the circulation vessel with Fifth Essence. Circulate for many days. The gold will slowly dissolve and co"
+        }
+      ],
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 17,
+      "book": 1,
+      "number": "XV",
+      "title": "Obtaining Solar Influence Without Expense",
+      "chapter_type": "EXTRACTION",
+      "source_lines": {
+        "start": 738,
+        "end": 758
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens",
+        "restriction to worthy"
+      ],
+      "materials_mentioned": [
+        "chamomile",
+        "rosemary",
+        "vinegar",
+        "gold",
+        "aqua ardens",
+        "pearls",
+        "saffron",
+        "celandine",
+        "marigold"
+      ],
+      "procedural_steps": [
+        {
+          "step": 1,
+          "action": "DISSOLVE",
+          "description": "l virtue. Dissolve pearls in strong distilled vinegar, and this solution added to Fifth Essence gives it stell"
+        },
+        {
+          "step": 2,
+          "action": "DISTILL",
+          "description": "in strong distilled vinegar, and this solution added to Fifth Essence gives it stellar virtue."
+        }
+      ],
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 18,
+      "book": 1,
+      "number": "XVI",
+      "title": "Concealing Gold and Silver",
+      "chapter_type": "EXTRACTION",
+      "source_lines": {
+        "start": 759,
+        "end": 773
+      },
+      "key_concepts": [
+        "concealment"
+      ],
+      "materials_mentioned": [
+        "gold",
+        "silver"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 19,
+      "book": 1,
+      "number": "XVII",
+      "title": "Fixing All Terrestrial Things",
+      "chapter_type": "EXTRACTION",
+      "source_lines": {
+        "start": 774,
+        "end": 792
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens",
+        "circular distillation",
+        "putrefaction",
+        "heat without fire"
+      ],
+      "materials_mentioned": [
+        "aqua ardens"
+      ],
+      "procedural_steps": [
+        {
+          "step": 1,
+          "action": "GRIND",
+          "description": "Reduce to powder or small pieces 3. Put in glass vessel with aqua ardens or Fifth Essence 4. Seal well with lu"
+        },
+        {
+          "step": 2,
+          "action": "SEAL",
+          "description": "ssence 4. Seal well with lute of wisdom 5. Digest in horse dung or other gentle heat 6. Allow putrefaction and"
+        },
+        {
+          "step": 3,
+          "action": "HEAT_DUNG",
+          "description": "Digest in horse dung or other gentle heat 6. Allow putrefaction and then distillation to separate elements 7."
+        },
+        {
+          "step": 4,
+          "action": "PUTREFY",
+          "description": "6. Allow putrefaction and then distillation to separate elements 7. The Fifth Essence will be in the oil or s"
+        },
+        {
+          "step": 5,
+          "action": "DISTILL",
+          "description": "and then distillation to separate elements 7. The Fifth Essence will be in the oil or subtle distillate 8. Ci"
+        },
+        {
+          "step": 6,
+          "action": "SEPARATE",
+          "description": "lation to separate elements 7. The Fifth Essence will be in the oil or subtle distillate 8. Circulate this in"
+        },
+        {
+          "step": 7,
+          "action": "CIRCULATE",
+          "description": "illate 8. Circulate this in circulation vessel to glorify further  By this method the Fifth Essence of ALL THI"
+        },
+        {
+          "step": 8,
+          "action": "RECTIFY",
+          "description": "vessel to glorify further  By this method the Fifth Essence of ALL THINGS can be extracted and fixed, carrying"
+        }
+      ],
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 20,
+      "book": 1,
+      "number": "XVIII",
+      "title": "Things Hot in the First Degree",
+      "chapter_type": "DEGREE_CATALOG",
+      "source_lines": {
+        "start": 793,
+        "end": 812
+      },
+      "key_concepts": [
+        "degree system"
+      ],
+      "materials_mentioned": [
+        "chamomile",
+        "anise",
+        "sweet flag",
+        "rose",
+        "violet",
+        "borage",
+        "bugloss",
+        "endive"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": [
+        "chamomile",
+        "anise",
+        "sweet flag",
+        "rose",
+        "violet",
+        "borage",
+        "bugloss",
+        "endive"
+      ],
+      "catalog_count": 8
+    },
+    {
+      "id": 21,
+      "book": 1,
+      "number": "XIX",
+      "title": "Things Hot in the Second Degree",
+      "chapter_type": "DEGREE_CATALOG",
+      "source_lines": {
+        "start": 813,
+        "end": 835
+      },
+      "key_concepts": [
+        "degree system"
+      ],
+      "materials_mentioned": [
+        "fennel",
+        "parsley",
+        "celery",
+        "dill",
+        "caraway",
+        "cumin",
+        "coriander",
+        "hyssop",
+        "mint",
+        "oregano",
+        "thyme",
+        "sage",
+        "rosemary",
+        "lavender",
+        "basil"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": [
+        "fennel",
+        "parsley",
+        "celery",
+        "dill",
+        "caraway",
+        "cumin",
+        "coriander",
+        "hyssop",
+        "mint",
+        "oregano",
+        "thyme",
+        "sage",
+        "rosemary",
+        "lavender",
+        "basil"
+      ],
+      "catalog_count": 15
+    },
+    {
+      "id": 22,
+      "book": 1,
+      "number": "XX",
+      "title": "Things Hot in the Third Degree",
+      "chapter_type": "DEGREE_CATALOG",
+      "source_lines": {
+        "start": 836,
+        "end": 858
+      },
+      "key_concepts": [
+        "degree system"
+      ],
+      "materials_mentioned": [
+        "ginger",
+        "galangal",
+        "cinnamon",
+        "cloves",
+        "nutmeg",
+        "mace",
+        "pepper",
+        "cardamom",
+        "mustard",
+        "garlic",
+        "onion",
+        "leek",
+        "radish",
+        "rocket"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": [
+        "ginger",
+        "galangal",
+        "cinnamon",
+        "cloves",
+        "nutmeg",
+        "mace",
+        "pepper",
+        "cardamom",
+        "mustard",
+        "garlic",
+        "onion",
+        "leek",
+        "radish",
+        "rocket"
+      ],
+      "catalog_count": 14
+    },
+    {
+      "id": 23,
+      "book": 1,
+      "number": "XXI",
+      "title": "Things Hot in the Fourth Degree",
+      "chapter_type": "DEGREE_CATALOG",
+      "source_lines": {
+        "start": 859,
+        "end": 874
+      },
+      "key_concepts": [
+        "quintessence",
+        "degree system"
+      ],
+      "materials_mentioned": [
+        "pepper",
+        "euphorbium",
+        "pyrethrum",
+        "long pepper",
+        "spurge",
+        "hellebore",
+        "scammony"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": [
+        "euphorbium",
+        "pyrethrum",
+        "long pepper",
+        "spurge",
+        "hellebore",
+        "scammony"
+      ],
+      "catalog_count": 6
+    },
+    {
+      "id": 24,
+      "book": 1,
+      "number": "XXII",
+      "title": "Things Cold in the First Degree",
+      "chapter_type": "DEGREE_CATALOG",
+      "source_lines": {
+        "start": 875,
+        "end": 891
+      },
+      "key_concepts": [
+        "degree system"
+      ],
+      "materials_mentioned": [
+        "rose",
+        "violet",
+        "endive",
+        "barley",
+        "lettuce",
+        "purslane",
+        "cucumber",
+        "melon",
+        "violet leaves",
+        "rose water",
+        "chicory"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": [
+        "barley",
+        "lettuce",
+        "purslane",
+        "cucumber",
+        "melon",
+        "violet leaves",
+        "rose water",
+        "chicory"
+      ],
+      "catalog_count": 8
+    },
+    {
+      "id": 25,
+      "book": 1,
+      "number": "XXIII",
+      "title": "Things Cold in the Second Degree",
+      "chapter_type": "DEGREE_CATALOG",
+      "source_lines": {
+        "start": 892,
+        "end": 906
+      },
+      "key_concepts": [
+        "degree system"
+      ],
+      "materials_mentioned": [
+        "coriander",
+        "purslane",
+        "plantain",
+        "nightshade",
+        "portulaca",
+        "vinegar"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": [
+        "coriander",
+        "purslane",
+        "plantain",
+        "nightshade",
+        "portulaca",
+        "vinegar"
+      ],
+      "catalog_count": 6
+    },
+    {
+      "id": 26,
+      "book": 1,
+      "number": "XXIV",
+      "title": "Things Cold in the Third and Fourth Degrees",
+      "chapter_type": "DEGREE_CATALOG",
+      "source_lines": {
+        "start": 907,
+        "end": 923
+      },
+      "key_concepts": [
+        "degree system"
+      ],
+      "materials_mentioned": [
+        "poppy",
+        "henbane",
+        "mandrake",
+        "water lily",
+        "opium",
+        "hemlock"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": [
+        "poppy",
+        "henbane",
+        "mandrake",
+        "water lily",
+        "opium",
+        "hemlock"
+      ],
+      "catalog_count": 6
+    },
+    {
+      "id": 27,
+      "book": 1,
+      "number": "XXV-XXVIII",
+      "title": "Things Dry in Degrees 1-4",
+      "chapter_type": "DEGREE_CATALOG",
+      "source_lines": {
+        "start": 924,
+        "end": 932
+      },
+      "key_concepts": [
+        "degree system"
+      ],
+      "materials_mentioned": [
+        "barley",
+        "beans",
+        "lentils",
+        "alum",
+        "vitriol",
+        "iron rust"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": [
+        "barley",
+        "beans",
+        "lentils",
+        "alum",
+        "vitriol",
+        "iron rust"
+      ],
+      "catalog_count": 6
+    },
+    {
+      "id": 28,
+      "book": 1,
+      "number": "XXIX",
+      "title": "Things Humid in Degrees 1-4",
+      "chapter_type": "DEGREE_CATALOG",
+      "source_lines": {
+        "start": 933,
+        "end": 941
+      },
+      "key_concepts": [
+        "degree system"
+      ],
+      "materials_mentioned": [
+        "oils",
+        "fats",
+        "honey",
+        "egg white"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": [
+        "oils",
+        "fats",
+        "honey",
+        "egg white"
+      ],
+      "catalog_count": 4
+    },
+    {
+      "id": 29,
+      "book": 1,
+      "number": "XXX",
+      "title": "Identifying Compound Properties",
+      "chapter_type": "PHARMACOLOGICAL",
+      "source_lines": {
+        "start": 942,
+        "end": 955
+      },
+      "key_concepts": [
+        "quintessence",
+        "degree system"
+      ],
+      "materials_mentioned": [
+        "pepper",
+        "cucumber"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 30,
+      "book": 1,
+      "number": "XXXI",
+      "title": "Temperate Things",
+      "chapter_type": "PHARMACOLOGICAL",
+      "source_lines": {
+        "start": 956,
+        "end": 968
+      },
+      "key_concepts": [
+        "quintessence"
+      ],
+      "materials_mentioned": [
+        "wine"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 31,
+      "book": 1,
+      "number": "XXXII",
+      "title": "Purgatives",
+      "chapter_type": "PHARMACOLOGICAL",
+      "source_lines": {
+        "start": 969,
+        "end": 1002
+      },
+      "key_concepts": [
+        "quintessence",
+        "purgation"
+      ],
+      "materials_mentioned": [
+        "spurge",
+        "hellebore",
+        "rhubarb",
+        "aloe",
+        "cassia fistula",
+        "manna",
+        "tamarind",
+        "agaric",
+        "turbith",
+        "colocynth",
+        "elaterium",
+        "senna",
+        "fumitory",
+        "polypody",
+        "black hellebore",
+        "lapis lazuli"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 32,
+      "book": 1,
+      "number": "XXXIII",
+      "title": "Restrictives and Astringents",
+      "chapter_type": "PHARMACOLOGICAL",
+      "source_lines": {
+        "start": 1003,
+        "end": 1017
+      },
+      "key_concepts": [],
+      "materials_mentioned": [
+        "plantain",
+        "alum",
+        "oak bark",
+        "pomegranate rind",
+        "sumac",
+        "acacia",
+        "tormentil"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 33,
+      "book": 1,
+      "number": "XXXIV",
+      "title": "Softening and Mollifying Things",
+      "chapter_type": "PHARMACOLOGICAL",
+      "source_lines": {
+        "start": 1018,
+        "end": 1032
+      },
+      "key_concepts": [],
+      "materials_mentioned": [
+        "oils",
+        "fats",
+        "mallow",
+        "marshmallow",
+        "fenugreek",
+        "linseed",
+        "butter"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 34,
+      "book": 1,
+      "number": "XXXV",
+      "title": "Maturatives",
+      "chapter_type": "PHARMACOLOGICAL",
+      "source_lines": {
+        "start": 1033,
+        "end": 1045
+      },
+      "key_concepts": [],
+      "materials_mentioned": [
+        "onion",
+        "lily root",
+        "fig",
+        "leaven",
+        "wheat flour"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 35,
+      "book": 1,
+      "number": "XXXVI",
+      "title": "Mundificatives (Cleansing)",
+      "chapter_type": "PHARMACOLOGICAL",
+      "source_lines": {
+        "start": 1046,
+        "end": 1059
+      },
+      "key_concepts": [],
+      "materials_mentioned": [
+        "honey",
+        "aloe",
+        "turpentine",
+        "myrrh",
+        "aristolochia",
+        "iris"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 36,
+      "book": 1,
+      "number": "XXXVII-XXXIX",
+      "title": "Corrosives, Caustics, Attenuants",
+      "chapter_type": "PHARMACOLOGICAL",
+      "source_lines": {
+        "start": 1060,
+        "end": 1069
+      },
+      "key_concepts": [],
+      "materials_mentioned": [
+        "hyssop",
+        "vinegar",
+        "vitriol",
+        "arsenic",
+        "verdigris",
+        "quicklime",
+        "caustic potash",
+        "oxymel",
+        "horehound"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 37,
+      "book": 1,
+      "number": "XL",
+      "title": "Extraction of Gold by Another Method",
+      "chapter_type": "EXTRACTION",
+      "source_lines": {
+        "start": 1070,
+        "end": 1086
+      },
+      "key_concepts": [
+        "aqua ardens",
+        "sublimation"
+      ],
+      "materials_mentioned": [
+        "gold",
+        "mercury",
+        "aqua ardens"
+      ],
+      "procedural_steps": [
+        {
+          "step": 1,
+          "action": "GRIND",
+          "description": "leaf and grind with mercury until amalgamated. Put in closed vessel and heat gently. The mercury will sublime"
+        },
+        {
+          "step": 2,
+          "action": "SUBLIME",
+          "description": "cury will sublime, carrying with it the subtle spirit of gold. Collect this sublimate and dissolve in aqua ard"
+        },
+        {
+          "step": 3,
+          "action": "DISSOLVE",
+          "description": "imate and dissolve in aqua ardens. You will have the ESSENCE OF GOLD though not the true philosophical gold."
+        }
+      ],
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 38,
+      "book": 1,
+      "number": "XLI",
+      "title": "Extracting Quintessence from Silver",
+      "chapter_type": "EXTRACTION",
+      "source_lines": {
+        "start": 1087,
+        "end": 1108
+      },
+      "key_concepts": [
+        "quintessence",
+        "putrefaction"
+      ],
+      "materials_mentioned": [
+        "vinegar",
+        "gold",
+        "silver",
+        "sal ammoniac"
+      ],
+      "procedural_steps": [
+        {
+          "step": 1,
+          "action": "DISTILL",
+          "description": "osophers [distilled vinegar] and into it put noble calcined tartar and sal ammoniac in a glass amphora. Seal i"
+        },
+        {
+          "step": 2,
+          "action": "CALCINE",
+          "description": "put noble calcined tartar and sal ammoniac in a glass amphora. Seal immediately because the virtue would evapo"
+        },
+        {
+          "step": 3,
+          "action": "SEAL",
+          "description": "amphora. Seal immediately because the virtue would evaporate.  Put the calx of silver (which I taught you to"
+        },
+        {
+          "step": 4,
+          "action": "PUTREFY",
+          "description": "n days to putrefy.  Then put in distillation vessel, and first the vinegar will ascend. Then, WHAT IS MARVELOU"
+        }
+      ],
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 39,
+      "book": 1,
+      "number": "XLII",
+      "title": "Extracting from Mercury and Roman Vitriol",
+      "chapter_type": "EXTRACTION",
+      "source_lines": {
+        "start": 1109,
+        "end": 1137
+      },
+      "key_concepts": [
+        "quintessence"
+      ],
+      "materials_mentioned": [
+        "vitriol",
+        "mercury",
+        "saltpeter"
+      ],
+      "procedural_steps": [
+        {
+          "step": 1,
+          "action": "SUBLIME",
+          "description": "silver is sublimated with them and with saltpeter (or common salt), then the quicksilver ascends most white, a"
+        }
+      ],
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 40,
+      "book": 1,
+      "number": "XLIII",
+      "title": "The Athanor (Philosophical Furnace)",
+      "chapter_type": "APPARATUS",
+      "source_lines": {
+        "start": 1138,
+        "end": 1182
+      },
+      "key_concepts": [
+        "quintessence",
+        "athanor",
+        "degree system"
+      ],
+      "materials_mentioned": [],
+      "procedural_steps": [
+        {
+          "step": 1,
+          "action": "SUBLIME",
+          "description": "To reduce sublimated quicksilver or its Fifth Essence into the water which the philosophers call LAC VIRGINIS"
+        }
+      ],
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 41,
+      "book": 1,
+      "number": "XLIV",
+      "title": "Why Higher Secrets Are Not Revealed",
+      "chapter_type": "THEORY",
+      "source_lines": {
+        "start": 1183,
+        "end": 1263
+      },
+      "key_concepts": [
+        "quintessence",
+        "sublimation",
+        "restriction to worthy"
+      ],
+      "materials_mentioned": [
+        "gold",
+        "silver"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": null,
+      "catalog_items": null
+    },
+    {
+      "id": 42,
+      "book": 2,
+      "number": "Remedy 1",
+      "title": "Against the Impediments of Old Age",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1264,
+        "end": 1289
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens",
+        "circular distillation"
+      ],
+      "materials_mentioned": [
+        "gold",
+        "wine",
+        "aqua ardens",
+        "pearls"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "impediments of old age",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "oral",
+          "aromatic"
+        ]
+      },
+      "catalog_items": null
+    },
+    {
+      "id": 43,
+      "book": 2,
+      "number": "Remedy 2",
+      "title": "Against Death and Reviving the Dead",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1290,
+        "end": 1327
+      },
+      "key_concepts": [
+        "quintessence",
+        "four elements"
+      ],
+      "materials_mentioned": [
+        "celandine"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "near-death/revival",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "oral"
+        ]
+      },
+      "catalog_items": null
+    },
+    {
+      "id": 44,
+      "book": 2,
+      "number": "Remedy 3",
+      "title": "Against Leprosy",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1328,
+        "end": 1374
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens",
+        "concealment",
+        "putrefaction"
+      ],
+      "materials_mentioned": [
+        "gold",
+        "aqua ardens",
+        "pearls"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "leprosy",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "oral"
+        ],
+        "humoral_target": "corrupted blood"
+      },
+      "catalog_items": null
+    },
+    {
+      "id": 45,
+      "book": 2,
+      "number": "Remedy 4",
+      "title": "Against All Kinds of Scabies and Skin Lesions",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1375,
+        "end": 1398
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens",
+        "restriction to worthy",
+        "purgation"
+      ],
+      "materials_mentioned": [
+        "aqua ardens"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "skin diseases",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "oral"
+        ]
+      },
+      "catalog_items": null
+    },
+    {
+      "id": 46,
+      "book": 2,
+      "number": "Remedy 5",
+      "title": "Against Paralysis",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1399,
+        "end": 1438
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens"
+      ],
+      "materials_mentioned": [
+        "sage",
+        "euphorbium",
+        "turbith",
+        "aqua ardens",
+        "saffron",
+        "elder"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "paralysis",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "bath"
+        ],
+        "humoral_target": "phlegm"
+      },
+      "catalog_items": null
+    },
+    {
+      "id": 47,
+      "book": 2,
+      "number": "Remedy 6",
+      "title": "Against Those Consumed in the Whole Body",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1439,
+        "end": 1460
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens",
+        "four elements"
+      ],
+      "materials_mentioned": [
+        "aqua ardens",
+        "celandine"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "consumption/wasting",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "oral"
+        ]
+      },
+      "catalog_items": null
+    },
+    {
+      "id": 48,
+      "book": 2,
+      "number": "Remedy 7",
+      "title": "Against Phantastical Passions and Demonic Temptations",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1461,
+        "end": 1503
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens"
+      ],
+      "materials_mentioned": [
+        "senna",
+        "fumitory",
+        "lapis lazuli",
+        "aqua ardens",
+        "elder"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "phantastical passions/demonic temptation",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "oral"
+        ],
+        "humoral_target": "yellow bile (choler)"
+      },
+      "catalog_items": null
+    },
+    {
+      "id": 49,
+      "book": 2,
+      "number": "Remedy 8",
+      "title": "Against Fear and Inconstancy",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1504,
+        "end": 1530
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens"
+      ],
+      "materials_mentioned": [
+        "gold",
+        "aqua ardens",
+        "pearls",
+        "saffron",
+        "angelica",
+        "peony"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "fear and inconstancy",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "oral"
+        ]
+      },
+      "catalog_items": null
+    },
+    {
+      "id": 50,
+      "book": 2,
+      "number": "Remedy 9",
+      "title": "For Putting Demons and Bewitchments to Flight",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1531,
+        "end": 1582
+      },
+      "key_concepts": [
+        "quintessence"
+      ],
+      "materials_mentioned": [
+        "gold",
+        "pearls"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "phantastical passions/demonic temptation",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "aromatic"
+        ],
+        "humoral_target": "yellow bile (choler)"
+      },
+      "catalog_items": null
+    },
+    {
+      "id": 51,
+      "book": 2,
+      "number": "Remedy 10",
+      "title": "Against Lice and Itching",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1583,
+        "end": 1613
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens",
+        "putrefaction",
+        "preservation from corruption"
+      ],
+      "materials_mentioned": [
+        "aqua ardens",
+        "staphisagria"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "lice and itching",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "anointing",
+          "aromatic"
+        ]
+      },
+      "catalog_items": null
+    },
+    {
+      "id": 52,
+      "book": 2,
+      "number": "Remedy 11",
+      "title": "For Expelling Poison",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1614,
+        "end": 1640
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens",
+        "aqua vitae"
+      ],
+      "materials_mentioned": [
+        "fennel",
+        "garlic",
+        "radish",
+        "gold",
+        "aqua ardens",
+        "aqua vitae",
+        "pearls",
+        "saffron",
+        "angelica",
+        "rue",
+        "peony",
+        "theriac"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "poison",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "oral"
+        ]
+      },
+      "catalog_items": null
+    },
+    {
+      "id": 53,
+      "book": 2,
+      "number": "Remedy 12",
+      "title": "Against Quartan Fever",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1641,
+        "end": 1667
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens"
+      ],
+      "materials_mentioned": [
+        "hellebore",
+        "black hellebore",
+        "aqua ardens",
+        "elder",
+        "red pimpernel"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "quartan fever (melancholy)",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "oral",
+          "nasal"
+        ],
+        "humoral_target": "melancholy"
+      },
+      "catalog_items": null
+    },
+    {
+      "id": 54,
+      "book": 2,
+      "number": "Remedy 13",
+      "title": "Against the Impediments and Dangers of Medicine",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1668,
+        "end": 1717
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens",
+        "circular distillation"
+      ],
+      "materials_mentioned": [
+        "gold",
+        "aqua ardens",
+        "pearls"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "dangers of purgative medicine",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "oral"
+        ]
+      },
+      "catalog_items": null
+    },
+    {
+      "id": 55,
+      "book": 2,
+      "number": "Remedy 14",
+      "title": "Against Continuous Fever",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1718,
+        "end": 1746
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens",
+        "putrefaction",
+        "four elements"
+      ],
+      "materials_mentioned": [
+        "gold",
+        "aqua ardens",
+        "human blood",
+        "pearls"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "continuous fever",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "oral",
+          "anointing"
+        ],
+        "humoral_target": "corrupted blood"
+      },
+      "catalog_items": null
+    },
+    {
+      "id": 56,
+      "book": 2,
+      "number": "Remedy 15",
+      "title": "Against Tertian Fever",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1747,
+        "end": 1759
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens",
+        "putrefaction"
+      ],
+      "materials_mentioned": [
+        "endive",
+        "rhubarb",
+        "aloe",
+        "aqua ardens"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "tertian fever (choler)",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "oral"
+        ],
+        "humoral_target": "yellow bile (choler)"
+      },
+      "catalog_items": null
+    },
+    {
+      "id": 57,
+      "book": 2,
+      "number": "Remedy 16",
+      "title": "Against Quotidian Fever",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1760,
+        "end": 1774
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens",
+        "putrefaction"
+      ],
+      "materials_mentioned": [
+        "euphorbium",
+        "aqua ardens",
+        "elder"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "quotidian fever (phlegm)",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "oral"
+        ],
+        "humoral_target": "phlegm"
+      },
+      "catalog_items": null
+    },
+    {
+      "id": 58,
+      "book": 2,
+      "number": "Remedy 17",
+      "title": "Against Acute Fever and Frenzy",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1775,
+        "end": 1826
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens",
+        "degree system"
+      ],
+      "materials_mentioned": [
+        "rose",
+        "violet",
+        "borage",
+        "rose water",
+        "vinegar",
+        "gold",
+        "aqua ardens",
+        "human blood",
+        "pearls",
+        "rue"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "acute fever/frenzy",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "nasal"
+        ],
+        "humoral_target": "yellow bile (choler)"
+      },
+      "catalog_items": null
+    },
+    {
+      "id": 59,
+      "book": 2,
+      "number": "Remedy 18",
+      "title": "On the Cure of Hemitertian Fevers",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1827,
+        "end": 1858
+      },
+      "key_concepts": [
+        "quintessence",
+        "putrefaction"
+      ],
+      "materials_mentioned": [
+        "gold",
+        "pearls"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "hemitertian fevers",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "oral"
+        ],
+        "humoral_target": "yellow bile (choler)"
+      },
+      "catalog_items": null
+    },
+    {
+      "id": 60,
+      "book": 2,
+      "number": "Remedy 19",
+      "title": "Against Pestilential Fevers",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1859,
+        "end": 1940
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens"
+      ],
+      "materials_mentioned": [
+        "bugloss",
+        "hyssop",
+        "euphorbium",
+        "rhubarb",
+        "aloe",
+        "myrrh",
+        "gold",
+        "mercury",
+        "aqua ardens",
+        "human blood",
+        "pearls",
+        "rue"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "pestilential fevers",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "oral"
+        ]
+      },
+      "catalog_items": null
+    },
+    {
+      "id": 61,
+      "book": 2,
+      "number": "Remedy 20",
+      "title": "How Fever May Be Generated in Spasm",
+      "chapter_type": "REMEDY",
+      "source_lines": {
+        "start": 1941,
+        "end": 2073
+      },
+      "key_concepts": [
+        "quintessence",
+        "aqua ardens",
+        "aqua vitae",
+        "incorruptibility",
+        "concealment",
+        "philosophical gold",
+        "heat without fire",
+        "restriction to worthy",
+        "preservation from corruption",
+        "four elements",
+        "degree system"
+      ],
+      "materials_mentioned": [
+        "hellebore",
+        "gold",
+        "wine",
+        "aqua ardens",
+        "aqua vitae",
+        "eggs",
+        "buttercup"
+      ],
+      "procedural_steps": null,
+      "treatment_protocol": {
+        "target_disease": "spasm (generate fever as cure)",
+        "primary_agent": "Fifth Essence",
+        "administration": [
+          "oral"
+        ],
+        "humoral_target": "melancholy"
+      },
+      "catalog_items": null
+    }
+  ]
+}

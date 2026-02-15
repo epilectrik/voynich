@@ -21,6 +21,7 @@ FIT_FILES = [
     ('fits_ht.md', 'HT'),
     ('fits_global.md', 'GLOBAL'),
     ('fits_brunschwig.md', 'A'),  # Brunschwig backprop fits
+    ('fits_rupescissa.md', 'B'),  # Rupescissa Galenic framework fits
 ]
 
 
@@ -62,7 +63,7 @@ def parse_fit_file(filepath, default_scope):
     # **Scope:** X
     # **Result:** WORD (notes)
     # **Supports:** C###
-    bru_pattern = r'## (F-BRU-\d+): (.+?)\n+\*\*Tier:\*\* (F\d)[^\n]*\n\*\*Scope:\*\* ([A-Z]+)\n\*\*Result:\*\* (\w+)[^\n]*\n\*\*Supports:\*\* ([^\n]+)'
+    bru_pattern = r'## (F-[A-Z]+-\d+): (.+?)\n+\*\*Tier:\*\* (F\d)[^\n]*\n\*\*Scope:\*\* ([A-Z]+)\n\*\*Result:\*\* (\w+)[^\n]*\n\*\*Supports:\*\* ([^\n]+)'
 
     for match in re.finditer(bru_pattern, content):
         fit_id = match.group(1).strip()

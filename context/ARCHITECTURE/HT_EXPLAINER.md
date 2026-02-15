@@ -2,11 +2,15 @@
 
 **Purpose:** Prevent semantic projection onto HT. This document defines the structural boundaries of what HT evidence supports.
 
+> **Structural Contract:** [../STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml](../STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml) (AUTHORITATIVE — 17 guarantees, 10 invariants, 68 owned constraints)
+
 ---
 
 ## The One-Sentence Summary
 
-> **HT is a single, manuscript-wide orientation layer applied continuously across production sessions, modulated by system context and codicological units, carrying no semantic content.**
+> **HT is a structured, modular, operationally redundant compound specification layer that serves dual purpose: encoding operations (same atoms as body) and identifying programs (rare combinations).**
+>
+> *Revised 2026-02-06 per C935. Previously: "orientation layer carrying no semantic content."*
 
 ---
 

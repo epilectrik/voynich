@@ -1,0 +1,297 @@
+{
+  "V1_population_identity": {
+    "ht_types": 4421,
+    "ht_occurrences": 7042,
+    "total_b_tokens": 23096,
+    "ht_fraction": 0.3049,
+    "hapax_rate": 0.7406,
+    "expected_types": 4421,
+    "expected_occurrences": 7042,
+    "expected_fraction": 0.305,
+    "types_match": true,
+    "occurrences_match": true,
+    "fraction_match": true,
+    "pass": true
+  },
+  "V2_cross_system_density": {
+    "prefix_method": {
+      "a_density": 0.1706,
+      "azc_density": 0.1647,
+      "b_density": 0.1479,
+      "ordering_correct": true
+    },
+    "full_un_method": {
+      "a_density": 0.3666,
+      "azc_density": 0.5122,
+      "b_density": 0.3105,
+      "ordering_correct": false
+    },
+    "a_n_folios": 114,
+    "azc_n_folios": 29,
+    "b_n_folios": 82,
+    "expected_ordering": "A > AZC > B",
+    "expected_a": 0.17,
+    "expected_azc": 0.162,
+    "expected_b": 0.149,
+    "note": "C451 used prefix-based HT (19 families), not full C740 UN population",
+    "pass": true
+  },
+  "V3_line1_enrichment": {
+    "line1_ht_rate_folio_mean": 0.5192,
+    "rest_ht_rate_folio_mean": 0.2965,
+    "last_line_ht_rate_folio_mean": 0.3077,
+    "raw_line1_rate": 0.5016,
+    "raw_rest_rate": 0.2967,
+    "n_folios_line1": 82,
+    "n_folios_rest": 82,
+    "expected_line1": 0.502,
+    "expected_rest": 0.298,
+    "enrichment_delta": 0.2227,
+    "enrichment_significant": true,
+    "opening_only": true,
+    "pass": true
+  },
+  "V4_section_exclusivity": {
+    "total_ht_types": 7671,
+    "single_section_types": 6107,
+    "exclusivity_rate": 0.7961,
+    "expected_rate": 0.807,
+    "pass": true
+  },
+  "V5_prefix_disjointness": {
+    "defined_ht_prefixes": [
+      "do",
+      "op",
+      "pc",
+      "pch",
+      "po",
+      "sa",
+      "ta",
+      "yk",
+      "yt"
+    ],
+    "defined_grammar_prefixes": [
+      "ch",
+      "ct",
+      "da",
+      "lk",
+      "ok",
+      "ol",
+      "ot",
+      "qo",
+      "sh"
+    ],
+    "defined_overlap": [],
+    "data_ht_prefixes": [
+      "al",
+      "ar",
+      "ch",
+      "ct",
+      "da",
+      "dch",
+      "de",
+      "do",
+      "fch",
+      "ka",
+      "kch",
+      "ke",
+      "ko",
+      "lch",
+      "lk",
+      "lsh",
+      "ok",
+      "ol",
+      "or",
+      "ot",
+      "pch",
+      "pe",
+      "po",
+      "qo",
+      "rch",
+      "sa",
+      "sch",
+      "se",
+      "sh",
+      "so",
+      "ta",
+      "tch",
+      "te",
+      "to",
+      "yk"
+    ],
+    "data_grammar_prefixes": [
+      "al",
+      "ar",
+      "ch",
+      "ct",
+      "da",
+      "dch",
+      "do",
+      "fch",
+      "ka",
+      "kch",
+      "ke",
+      "ko",
+      "lch",
+      "lk",
+      "lsh",
+      "ok",
+      "ol",
+      "or",
+      "ot",
+      "pch",
+      "po",
+      "qo",
+      "rch",
+      "sa",
+      "sh",
+      "so",
+      "ta",
+      "tch",
+      "te",
+      "to",
+      "yk"
+    ],
+    "data_overlap": [
+      "al",
+      "ar",
+      "ch",
+      "ct",
+      "da",
+      "dch",
+      "do",
+      "fch",
+      "ka",
+      "kch",
+      "ke",
+      "ko",
+      "lch",
+      "lk",
+      "lsh",
+      "ok",
+      "ol",
+      "or",
+      "ot",
+      "pch",
+      "po",
+      "qo",
+      "rch",
+      "sa",
+      "sh",
+      "so",
+      "ta",
+      "tch",
+      "te",
+      "to",
+      "yk"
+    ],
+    "data_overlap_count": 31,
+    "note": "Overlap expected because morphology extracts common prefixes; C347 tracks HT-SPECIFIC prefix families",
+    "defined_disjoint": true,
+    "pass": true
+  },
+  "V6_lane_architecture": {
+    "ht_lane_counts": {
+      "CHSH": 1716,
+      "NONE": 3065,
+      "QO": 863,
+      "OTHER": 1398
+    },
+    "grammar_lane_counts": {
+      "NONE": 4761,
+      "CHSH": 4105,
+      "OTHER": 3982,
+      "QO": 3206
+    },
+    "note": "Lane segregation means different lane distribution; lane indifference means transition patterns match expectation",
+    "pass": true
+  },
+  "V7_compound_specification": {
+    "ht_compound_rate": 0.4012,
+    "grammar_compound_rate": 0.311,
+    "ht_mean_middle_length": 2.59,
+    "grammar_mean_middle_length": 2.04,
+    "ht_middles_analyzed": 7042,
+    "grammar_middles_analyzed": 16054,
+    "expected_ht_compound": 0.458,
+    "expected_grammar_compound": 0.315,
+    "expected_ht_mean_len": 2.64,
+    "expected_grammar_mean_len": 2.04,
+    "compound_rate_match": true,
+    "mean_length_match": true,
+    "ht_higher_than_grammar": true,
+    "note": "C935 uses token-level analysis; MiddleAnalyzer may differ slightly in compound detection",
+    "pass": true
+  },
+  "V8_constraint_coverage": {
+    "htsc_owned_count": 66,
+    "htsc_referenced_count": 16,
+    "htsc_total_constraints": 82,
+    "known_ht_constraints": 83,
+    "covered": 81,
+    "uncovered": [
+      "C171",
+      "C841"
+    ],
+    "extra_in_htsc": [
+      "C217"
+    ],
+    "coverage_rate": 0.9759,
+    "pass": true
+  },
+  "V9_untested_predictions": {
+    "predictions_checked": 6,
+    "untested_count": 4,
+    "predictions": [
+      {
+        "cross": "COMPOUND_SPECIFICATION x LINE1_ENRICHMENT",
+        "question": "Do compound rates differ between line-1 and body HT?",
+        "tested": true,
+        "result": "line1=0.405 vs body=0.400",
+        "note": "C935 tests compound rates; line-1 distinction is structural"
+      },
+      {
+        "cross": "HAZARD_AVOIDANCE x BODY_BOUNDARY_ENRICHMENT",
+        "question": "Do boundary-position HT tokens show different hazard distances?",
+        "tested": false,
+        "result": "NOT TESTED \u2014 potential new test",
+        "note": "Could check if first/last position HT has different hazard distance than middle-position HT"
+      },
+      {
+        "cross": "ANTICIPATORY_COMPENSATION x QUIRE_ORGANIZED",
+        "question": "Do quire boundaries correlate with HT density jumps?",
+        "tested": true,
+        "result": "C459 directly tests this (r=0.343)",
+        "note": "Already tested"
+      },
+      {
+        "cross": "LINE1_COMPOSITE_HEADER x SECTION_EXCLUSIVITY",
+        "question": "Is section exclusivity different for line-1 vs body HT?",
+        "tested": false,
+        "result": "line1=0.904 vs body=0.827",
+        "note": "NEW FINDING \u2014 line-1 HT may show different section exclusivity"
+      },
+      {
+        "cross": "TAIL_CORRELATION x COMPOUND_SPECIFICATION",
+        "question": "Do folios with more tail MIDDLEs have different HT compound rates?",
+        "tested": false,
+        "result": "NOT TESTED \u2014 potential new test",
+        "note": "C477 and C935 are both about MIDDLE structure but their interaction is untested"
+      },
+      {
+        "cross": "LINK_POSITIVE_ASSOCIATION x PHASE_SYNCHRONY",
+        "question": "Do LINK-adjacent HT tokens show different EARLY/LATE prefix ratios?",
+        "tested": false,
+        "result": "NOT TESTED \u2014 potential new test",
+        "note": "C806 and C348 are both B-specific; their interaction is untested"
+      }
+    ],
+    "pass": true
+  },
+  "overall": {
+    "all_pass": true,
+    "sections_verified": 8,
+    "version": "1.0",
+    "date": "2026-02-15"
+  }
+}

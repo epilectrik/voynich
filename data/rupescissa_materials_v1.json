@@ -1,0 +1,1910 @@
+{
+  "title": "Rupescissa Materials Inventory",
+  "version": "1.0",
+  "curation_date": "2026-02-15",
+  "source": "sources/rupescissa/rupescissa_complete_translation.txt",
+  "statistics": {
+    "total_materials": 131,
+    "with_degree_classification": 70,
+    "brunschwig_overlap": 10,
+    "by_category": {
+      "animal": 6,
+      "bark": 1,
+      "extract": 1,
+      "flower": 3,
+      "fruit": 4,
+      "grain": 4,
+      "herb": 54,
+      "metal": 3,
+      "mineral": 10,
+      "preparation": 11,
+      "purgative": 13,
+      "resin": 4,
+      "seed": 1,
+      "spice": 15,
+      "tree": 1
+    }
+  },
+  "materials": [
+    {
+      "name": "chamomile",
+      "name_latin": "anthemis",
+      "category": "herb",
+      "source_chapters": [
+        "XVIII"
+      ],
+      "also_in_brunschwig": true,
+      "degree_hot": 1,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "anise",
+      "name_latin": "anisum",
+      "category": "spice",
+      "source_chapters": [
+        "XVIII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 1,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "sweet flag",
+      "name_latin": "calamus",
+      "category": "herb",
+      "source_chapters": [
+        "XVIII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 1,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "rose",
+      "name_latin": "rosa",
+      "category": "flower",
+      "source_chapters": [
+        "XVIII",
+        "XXXII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 1,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "purgative"
+    },
+    {
+      "name": "violet",
+      "name_latin": "viola",
+      "category": "flower",
+      "source_chapters": [
+        "XVIII",
+        "Remedy 17"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 1,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "borage",
+      "name_latin": "borago",
+      "category": "herb",
+      "source_chapters": [
+        "XVIII",
+        "Remedy 17"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 1,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "bugloss",
+      "name_latin": "buglossum",
+      "category": "herb",
+      "source_chapters": [
+        "XVIII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 1,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "endive",
+      "name_latin": "endivia",
+      "category": "herb",
+      "source_chapters": [
+        "XVIII",
+        "Remedy 15"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 1,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "fennel",
+      "name_latin": "foeniculum",
+      "category": "herb",
+      "source_chapters": [
+        "XIX",
+        "Remedy 11"
+      ],
+      "also_in_brunschwig": true,
+      "degree_hot": 2,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "parsley",
+      "name_latin": "petroselinum",
+      "category": "herb",
+      "source_chapters": [
+        "XIX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 2,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "celery",
+      "name_latin": "apium",
+      "category": "herb",
+      "source_chapters": [
+        "XIX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 2,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "dill",
+      "name_latin": "anethum",
+      "category": "herb",
+      "source_chapters": [
+        "XIX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 2,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "caraway",
+      "name_latin": "careum",
+      "category": "spice",
+      "source_chapters": [
+        "XIX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 2,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "cumin",
+      "name_latin": "cuminum",
+      "category": "spice",
+      "source_chapters": [
+        "XIX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 2,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "coriander",
+      "name_latin": "coriandrum",
+      "category": "spice",
+      "source_chapters": [
+        "XIX",
+        "XXIII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 2,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "hyssop",
+      "name_latin": "hyssopus",
+      "category": "herb",
+      "source_chapters": [
+        "XIX",
+        "XXXVII-XXXIX"
+      ],
+      "also_in_brunschwig": true,
+      "degree_hot": 2,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "corrosive/caustic/attenuant"
+    },
+    {
+      "name": "mint",
+      "name_latin": "mentha",
+      "category": "herb",
+      "source_chapters": [
+        "XIX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 2,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "oregano",
+      "name_latin": "origanum",
+      "category": "herb",
+      "source_chapters": [
+        "XIX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 2,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "thyme",
+      "name_latin": "thymus",
+      "category": "herb",
+      "source_chapters": [
+        "XIX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 2,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "sage",
+      "name_latin": "salvia",
+      "category": "herb",
+      "source_chapters": [
+        "XIX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 2,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "rosemary",
+      "name_latin": "rosmarinus",
+      "category": "herb",
+      "source_chapters": [
+        "XIX",
+        "XV"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 2,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "lavender",
+      "name_latin": "lavandula",
+      "category": "herb",
+      "source_chapters": [
+        "XIX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 2,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "basil",
+      "name_latin": "basilicum",
+      "category": "herb",
+      "source_chapters": [
+        "XIX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 2,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "ginger",
+      "name_latin": "zingiber",
+      "category": "spice",
+      "source_chapters": [
+        "XX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 3,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "galangal",
+      "name_latin": "galanga",
+      "category": "spice",
+      "source_chapters": [
+        "XX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 3,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "cinnamon",
+      "name_latin": "cinnamomum",
+      "category": "spice",
+      "source_chapters": [
+        "XX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 3,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "cloves",
+      "name_latin": "caryophyllum",
+      "category": "spice",
+      "source_chapters": [
+        "XX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 3,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "nutmeg",
+      "name_latin": "nux moschata",
+      "category": "spice",
+      "source_chapters": [
+        "XX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 3,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "mace",
+      "name_latin": "macis",
+      "category": "spice",
+      "source_chapters": [
+        "XX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 3,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "pepper",
+      "name_latin": "piper",
+      "category": "spice",
+      "source_chapters": [
+        "XX",
+        "XXX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 3,
+      "degree_cold": null,
+      "degree_dry": 2,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "cardamom",
+      "name_latin": "cardamomum",
+      "category": "spice",
+      "source_chapters": [
+        "XX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 3,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "mustard",
+      "name_latin": "sinapis",
+      "category": "spice",
+      "source_chapters": [
+        "XX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 3,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "garlic",
+      "name_latin": "allium",
+      "category": "herb",
+      "source_chapters": [
+        "XX",
+        "Remedy 11"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 3,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "onion",
+      "name_latin": "cepa",
+      "category": "herb",
+      "source_chapters": [
+        "XX",
+        "XXXV"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 3,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "maturative"
+    },
+    {
+      "name": "leek",
+      "name_latin": "porrum",
+      "category": "herb",
+      "source_chapters": [
+        "XX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 3,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "radish",
+      "name_latin": "raphanus",
+      "category": "herb",
+      "source_chapters": [
+        "XX",
+        "Remedy 11"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 3,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "rocket",
+      "name_latin": "eruca",
+      "category": "herb",
+      "source_chapters": [
+        "XX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 3,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "euphorbium",
+      "name_latin": "euphorbium",
+      "category": "resin",
+      "source_chapters": [
+        "XXI",
+        "Remedy 16"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 4,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "pyrethrum",
+      "name_latin": "pyrethrum",
+      "category": "herb",
+      "source_chapters": [
+        "XXI"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 4,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "long pepper",
+      "name_latin": "piper longum",
+      "category": "spice",
+      "source_chapters": [
+        "XXI"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 4,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "spurge",
+      "name_latin": "euphorbia",
+      "category": "herb",
+      "source_chapters": [
+        "XXI",
+        "Remedy 5"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 4,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "hellebore",
+      "name_latin": "helleborus",
+      "category": "herb",
+      "source_chapters": [
+        "XXI",
+        "XXXII",
+        "Remedy 12"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 4,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "purgative"
+    },
+    {
+      "name": "scammony",
+      "name_latin": "scammonium",
+      "category": "resin",
+      "source_chapters": [
+        "XXI"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": 4,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "barley",
+      "name_latin": "hordeum",
+      "category": "grain",
+      "source_chapters": [
+        "XXII",
+        "XXV-XXVIII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": 1,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "lettuce",
+      "name_latin": "lactuca",
+      "category": "herb",
+      "source_chapters": [
+        "XXII",
+        "Remedy 17"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": 1,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "purslane",
+      "name_latin": "portulaca",
+      "category": "herb",
+      "source_chapters": [
+        "XXII",
+        "XXIII"
+      ],
+      "also_in_brunschwig": true,
+      "degree_hot": null,
+      "degree_cold": 1,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "cucumber",
+      "name_latin": "cucumis",
+      "category": "fruit",
+      "source_chapters": [
+        "XXII",
+        "XXX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": 1,
+      "degree_dry": null,
+      "degree_humid": 2,
+      "therapeutic_function": null
+    },
+    {
+      "name": "melon",
+      "name_latin": "melo",
+      "category": "fruit",
+      "source_chapters": [
+        "XXII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": 1,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "violet leaves",
+      "name_latin": "viola folia",
+      "category": "herb",
+      "source_chapters": [
+        "XXII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": 1,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "rose water",
+      "name_latin": "aqua rosae",
+      "category": "preparation",
+      "source_chapters": [
+        "XXII",
+        "Remedy 17"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": 1,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "chicory",
+      "name_latin": "cichorium",
+      "category": "herb",
+      "source_chapters": [
+        "XXII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": 1,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "plantain",
+      "name_latin": "plantago",
+      "category": "herb",
+      "source_chapters": [
+        "XXIII",
+        "XXXIII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": 2,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "astringent"
+    },
+    {
+      "name": "nightshade",
+      "name_latin": "solanum",
+      "category": "herb",
+      "source_chapters": [
+        "XXIII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": 2,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "portulaca",
+      "name_latin": "portulaca",
+      "category": "herb",
+      "source_chapters": [
+        "XXIII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": 2,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "vinegar",
+      "name_latin": "acetum",
+      "category": "preparation",
+      "source_chapters": [
+        "XXIII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": 2,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "poppy",
+      "name_latin": "papaver",
+      "category": "herb",
+      "source_chapters": [
+        "XXIV"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": 3,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "henbane",
+      "name_latin": "hyoscyamus",
+      "category": "herb",
+      "source_chapters": [
+        "XXIV"
+      ],
+      "also_in_brunschwig": true,
+      "degree_hot": null,
+      "degree_cold": 3,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "mandrake",
+      "name_latin": "mandragora",
+      "category": "herb",
+      "source_chapters": [
+        "XXIV"
+      ],
+      "also_in_brunschwig": true,
+      "degree_hot": null,
+      "degree_cold": 3,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "water lily",
+      "name_latin": "nymphaea",
+      "category": "herb",
+      "source_chapters": [
+        "XXIV"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": 3,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "opium",
+      "name_latin": "opium",
+      "category": "extract",
+      "source_chapters": [
+        "XXIV"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": 4,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "hemlock",
+      "name_latin": "cicuta",
+      "category": "herb",
+      "source_chapters": [
+        "XXIV"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": 4,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "beans",
+      "name_latin": "faba",
+      "category": "grain",
+      "source_chapters": [
+        "XXV-XXVIII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": 1,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "lentils",
+      "name_latin": "lens",
+      "category": "grain",
+      "source_chapters": [
+        "XXV-XXVIII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": 1,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "alum",
+      "name_latin": "alumen",
+      "category": "mineral",
+      "source_chapters": [
+        "XXV-XXVIII",
+        "XXXIII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": 3,
+      "degree_humid": null,
+      "therapeutic_function": "astringent"
+    },
+    {
+      "name": "vitriol",
+      "name_latin": "vitriolum",
+      "category": "mineral",
+      "source_chapters": [
+        "XXV-XXVIII",
+        "XLII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": 3,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "iron rust",
+      "name_latin": "ferrugo",
+      "category": "mineral",
+      "source_chapters": [
+        "XXV-XXVIII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": 3,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "oils",
+      "name_latin": "oleum",
+      "category": "preparation",
+      "source_chapters": [
+        "XXIX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": 2,
+      "therapeutic_function": null
+    },
+    {
+      "name": "fats",
+      "name_latin": "adeps",
+      "category": "animal",
+      "source_chapters": [
+        "XXIX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": 2,
+      "therapeutic_function": null
+    },
+    {
+      "name": "honey",
+      "name_latin": "mel",
+      "category": "preparation",
+      "source_chapters": [
+        "XXIX",
+        "XXXVI"
+      ],
+      "also_in_brunschwig": true,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": 3,
+      "therapeutic_function": "mundificative"
+    },
+    {
+      "name": "egg white",
+      "name_latin": "albumen ovi",
+      "category": "animal",
+      "source_chapters": [
+        "XXIX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": 4,
+      "therapeutic_function": null
+    },
+    {
+      "name": "rhubarb",
+      "name_latin": "rheum",
+      "category": "purgative",
+      "source_chapters": [
+        "XXXII",
+        "Remedy 15"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "purgative"
+    },
+    {
+      "name": "aloe",
+      "name_latin": "aloe",
+      "category": "purgative",
+      "source_chapters": [
+        "XXXII",
+        "XXXVI",
+        "Remedy 13"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "purgative"
+    },
+    {
+      "name": "cassia fistula",
+      "name_latin": "cassia fistula",
+      "category": "purgative",
+      "source_chapters": [
+        "XXXII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "purgative"
+    },
+    {
+      "name": "manna",
+      "name_latin": "manna",
+      "category": "purgative",
+      "source_chapters": [
+        "XXXII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "purgative"
+    },
+    {
+      "name": "tamarind",
+      "name_latin": "tamarindus",
+      "category": "purgative",
+      "source_chapters": [
+        "XXXII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "purgative"
+    },
+    {
+      "name": "agaric",
+      "name_latin": "agaricus",
+      "category": "purgative",
+      "source_chapters": [
+        "XXXII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "purgative"
+    },
+    {
+      "name": "turbith",
+      "name_latin": "turbith",
+      "category": "purgative",
+      "source_chapters": [
+        "XXXII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "purgative"
+    },
+    {
+      "name": "colocynth",
+      "name_latin": "colocynthis",
+      "category": "purgative",
+      "source_chapters": [
+        "XXXII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "purgative"
+    },
+    {
+      "name": "elaterium",
+      "name_latin": "elaterium",
+      "category": "purgative",
+      "source_chapters": [
+        "XXXII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "purgative"
+    },
+    {
+      "name": "senna",
+      "name_latin": "senna",
+      "category": "purgative",
+      "source_chapters": [
+        "XXXII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "purgative"
+    },
+    {
+      "name": "fumitory",
+      "name_latin": "fumaria",
+      "category": "purgative",
+      "source_chapters": [
+        "XXXII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "purgative"
+    },
+    {
+      "name": "polypody",
+      "name_latin": "polypodium",
+      "category": "purgative",
+      "source_chapters": [
+        "XXXII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "purgative"
+    },
+    {
+      "name": "black hellebore",
+      "name_latin": "helleborus niger",
+      "category": "purgative",
+      "source_chapters": [
+        "XXXII",
+        "Remedy 12"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "purgative"
+    },
+    {
+      "name": "lapis lazuli",
+      "name_latin": "lapis lazuli",
+      "category": "mineral",
+      "source_chapters": [
+        "XXXII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "purgative"
+    },
+    {
+      "name": "oak bark",
+      "name_latin": "quercus cortex",
+      "category": "bark",
+      "source_chapters": [
+        "XXXIII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "astringent"
+    },
+    {
+      "name": "pomegranate rind",
+      "name_latin": "malum granatum",
+      "category": "fruit",
+      "source_chapters": [
+        "XXXIII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "astringent"
+    },
+    {
+      "name": "sumac",
+      "name_latin": "rhus",
+      "category": "herb",
+      "source_chapters": [
+        "XXXIII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "astringent"
+    },
+    {
+      "name": "acacia",
+      "name_latin": "acacia",
+      "category": "tree",
+      "source_chapters": [
+        "XXXIII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "astringent"
+    },
+    {
+      "name": "tormentil",
+      "name_latin": "tormentilla",
+      "category": "herb",
+      "source_chapters": [
+        "XXXIII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "astringent"
+    },
+    {
+      "name": "mallow",
+      "name_latin": "malva",
+      "category": "herb",
+      "source_chapters": [
+        "XXXIV"
+      ],
+      "also_in_brunschwig": true,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "mollifier"
+    },
+    {
+      "name": "marshmallow",
+      "name_latin": "althaea",
+      "category": "herb",
+      "source_chapters": [
+        "XXXIV"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "mollifier"
+    },
+    {
+      "name": "fenugreek",
+      "name_latin": "foenum graecum",
+      "category": "herb",
+      "source_chapters": [
+        "XXXIV"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "mollifier"
+    },
+    {
+      "name": "linseed",
+      "name_latin": "linum",
+      "category": "seed",
+      "source_chapters": [
+        "XXXIV"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "mollifier"
+    },
+    {
+      "name": "butter",
+      "name_latin": "butyrum",
+      "category": "animal",
+      "source_chapters": [
+        "XXXIV"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "mollifier"
+    },
+    {
+      "name": "lily root",
+      "name_latin": "lilium radix",
+      "category": "herb",
+      "source_chapters": [
+        "XXXV"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "maturative"
+    },
+    {
+      "name": "fig",
+      "name_latin": "ficus",
+      "category": "fruit",
+      "source_chapters": [
+        "XXXV"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "maturative"
+    },
+    {
+      "name": "leaven",
+      "name_latin": "fermentum",
+      "category": "preparation",
+      "source_chapters": [
+        "XXXV"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "maturative"
+    },
+    {
+      "name": "wheat flour",
+      "name_latin": "farina tritici",
+      "category": "grain",
+      "source_chapters": [
+        "XXXV"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "maturative"
+    },
+    {
+      "name": "turpentine",
+      "name_latin": "terebinthina",
+      "category": "resin",
+      "source_chapters": [
+        "XXXVI"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "mundificative"
+    },
+    {
+      "name": "myrrh",
+      "name_latin": "myrrha",
+      "category": "resin",
+      "source_chapters": [
+        "XXXVI"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "mundificative"
+    },
+    {
+      "name": "aristolochia",
+      "name_latin": "aristolochia",
+      "category": "herb",
+      "source_chapters": [
+        "XXXVI"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "mundificative"
+    },
+    {
+      "name": "iris",
+      "name_latin": "iris",
+      "category": "herb",
+      "source_chapters": [
+        "XXXVI"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "mundificative"
+    },
+    {
+      "name": "arsenic",
+      "name_latin": "arsenicum",
+      "category": "mineral",
+      "source_chapters": [
+        "XXXVII-XXXIX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "corrosive/caustic/attenuant"
+    },
+    {
+      "name": "verdigris",
+      "name_latin": "aerugo",
+      "category": "mineral",
+      "source_chapters": [
+        "XXXVII-XXXIX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "corrosive/caustic/attenuant"
+    },
+    {
+      "name": "quicklime",
+      "name_latin": "calx viva",
+      "category": "mineral",
+      "source_chapters": [
+        "XXXVII-XXXIX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "corrosive/caustic/attenuant"
+    },
+    {
+      "name": "caustic potash",
+      "name_latin": "lixivium",
+      "category": "preparation",
+      "source_chapters": [
+        "XXXVII-XXXIX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "corrosive/caustic/attenuant"
+    },
+    {
+      "name": "oxymel",
+      "name_latin": "oxymel",
+      "category": "preparation",
+      "source_chapters": [
+        "XXXVII-XXXIX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "corrosive/caustic/attenuant"
+    },
+    {
+      "name": "horehound",
+      "name_latin": "marrubium",
+      "category": "herb",
+      "source_chapters": [
+        "XXXVII-XXXIX"
+      ],
+      "also_in_brunschwig": true,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": "corrosive/caustic/attenuant"
+    },
+    {
+      "name": "gold",
+      "name_latin": "aurum",
+      "category": "metal",
+      "source_chapters": [
+        "XIII",
+        "XIV",
+        "XV",
+        "XL"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "silver",
+      "name_latin": "argentum",
+      "category": "metal",
+      "source_chapters": [
+        "XLI"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "mercury",
+      "name_latin": "mercurius",
+      "category": "metal",
+      "source_chapters": [
+        "XLII",
+        "Remedy 10"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "sal ammoniac",
+      "name_latin": "sal ammoniacum",
+      "category": "mineral",
+      "source_chapters": [
+        "XIV",
+        "XLI"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "saltpeter",
+      "name_latin": "sal petrae",
+      "category": "mineral",
+      "source_chapters": [
+        "XLII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "wine",
+      "name_latin": "vinum",
+      "category": "preparation",
+      "source_chapters": [
+        "V",
+        "VIII"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "aqua ardens",
+      "name_latin": "aqua ardens",
+      "category": "preparation",
+      "source_chapters": [
+        "V",
+        "VI",
+        "VIII",
+        "IX"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "aqua vitae",
+      "name_latin": "aqua vitae",
+      "category": "preparation",
+      "source_chapters": [
+        "V",
+        "Remedy 11"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "human blood",
+      "name_latin": "sanguis humanus",
+      "category": "animal",
+      "source_chapters": [
+        "X",
+        "Remedy 14",
+        "Remedy 17"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "eggs",
+      "name_latin": "ova",
+      "category": "animal",
+      "source_chapters": [
+        "X"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "pearls",
+      "name_latin": "margaritae",
+      "category": "mineral",
+      "source_chapters": [
+        "XV",
+        "Remedy 1",
+        "Remedy 13",
+        "Remedy 17"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "saffron",
+      "name_latin": "crocus",
+      "category": "spice",
+      "source_chapters": [
+        "XV",
+        "Remedy 11"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "celandine",
+      "name_latin": "chelidonia",
+      "category": "herb",
+      "source_chapters": [
+        "XV"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "marigold",
+      "name_latin": "calendula",
+      "category": "flower",
+      "source_chapters": [
+        "XV"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "angelica",
+      "name_latin": "angelica",
+      "category": "herb",
+      "source_chapters": [
+        "Remedy 11"
+      ],
+      "also_in_brunschwig": true,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "rue",
+      "name_latin": "ruta",
+      "category": "herb",
+      "source_chapters": [
+        "Remedy 11"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "peony",
+      "name_latin": "paeonia",
+      "category": "herb",
+      "source_chapters": [
+        "Remedy 11"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "castoreum",
+      "name_latin": "castoreum",
+      "category": "animal",
+      "source_chapters": [
+        "Remedy 5"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "theriac",
+      "name_latin": "theriaca",
+      "category": "preparation",
+      "source_chapters": [
+        "Remedy 11"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "elder",
+      "name_latin": "sambucus",
+      "category": "herb",
+      "source_chapters": [
+        "Remedy 12",
+        "Remedy 16"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "staphisagria",
+      "name_latin": "staphisagria",
+      "category": "herb",
+      "source_chapters": [
+        "Remedy 10"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "red pimpernel",
+      "name_latin": "anagallis",
+      "category": "herb",
+      "source_chapters": [
+        "Remedy 12"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    },
+    {
+      "name": "buttercup",
+      "name_latin": "ranunculus",
+      "category": "herb",
+      "source_chapters": [
+        "Remedy 20"
+      ],
+      "also_in_brunschwig": false,
+      "degree_hot": null,
+      "degree_cold": null,
+      "degree_dry": null,
+      "degree_humid": null,
+      "therapeutic_function": null
+    }
+  ]
+}

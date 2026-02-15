@@ -54,6 +54,7 @@ This is lane balance, not "escape" behavior.
 - C397 - qo-prefix post-source frequency (REVISED)
 - C643 - QO-CHSH rapid alternation
 - C645 - CHSH post-hazard dominance
+- C1057 - Lane-sister orthogonal axes (raw rho=0.210 confounded; partial r=-0.064 after controlling QO density)
 
 ---
 

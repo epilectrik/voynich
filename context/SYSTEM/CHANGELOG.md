@@ -4,6 +4,280 @@
 
 ---
 
+## Version 4.04 (2026-02-15) - Galenic Enhancement Analysis (Synthesis)
+
+### Summary
+
+Phase 377 synthesizes how the Voynich enhanced the original Galenic classification framework across 6 axes (all Tier 4). No new computation — structured comparison of existing constraints and Phase 375-376 results. Enhancement axes: (1) Classification Resolution: 4 qualities → 9 affordance bins (2.25x, C995). (2) Degree Granularity: 4 degrees → 14-63 MIDDLEs/channel (3.5-15.75x, C911/C982). (3) Compound Mechanism: additive → compatibility-graph mediated (12x differential, C475/C1053). (4) Operation Encoding: 12 named → 49 distributional classes (4.1x, C121). (5) Hazard Management: prohibition → precision engineering (C494/C997). (6) Hazard Architecture: narrative warnings → topological forbidden graph with 5 dimensions (C109). Consistent pattern: abstraction increase (named → distributional), resolution increase (coarse → fine), constraint formalization (narrative → structural). No new constraints. New fit: F-RUP-001 (Galenic Framework Directional Enhancement, F4). Total fits: 66.
+
+### New Files
+
+| File | Purpose |
+|------|---------|
+| `context/MODEL_FITS/fits_rupescissa.md` | Rupescissa Galenic framework fit registry |
+
+### Updated Files
+
+| File | Change |
+|------|--------|
+| `context/SPECULATIVE/rupescissa_comparative.md` | Added Phase 377 Galenic Enhancement Analysis section |
+| `context/MODEL_FITS/generate_fit_table.py` | Added fits_rupescissa.md to registry; generalized multi-line regex |
+| `context/MODEL_FITS/FIT_TABLE.txt` | Regenerated (66 fits) |
+
+---
+
+## Version 4.03 (2026-02-15) - Reverse Rupescissa Test (Galenic Framework Alignment)
+
+### Summary
+
+Phase 376 tests whether Rupescissa's Galenic 4-quality x 4-degree organizational framework makes structural predictions about the Voynich that survive falsification. Expert-advisor dropped 2 circular tests and added 2 novel ones with higher discriminative power. 4-test battery (all Tier 4): (1) Multi-Axis Hazard Boundary: PASS -- 5 independent failure dimensions, only 1 thermal, Rupescissa's multi-axis prediction survives. (2) Quality-Degree Factorization: PARTIAL -- 58.1% of classifiable forbidden PREFIX x MIDDLE combos follow block-diagonal structure. (3) Oppositional Pairing: PASS -- exactly 2 orthogonal axes (lane split + sister pair), partial r=-0.064 after controlling for QO density. (4) Degree Ordering Within Quality: PASS -- 4/6 PREFIX channels show significant rank-intensity correlation. Overall: 3/4 PASS, 1 PARTIAL. New constraint: C1057 (Lane-Sister Orthogonal Axes, Tier 2). Phase 376.
+
+### New Files
+
+| File | Purpose |
+|------|---------|
+| `phases/RUPESCISSA_REVERSE_TEST/scripts/rupescissa_reverse_test.py` | 4-test Galenic alignment battery |
+| `phases/RUPESCISSA_REVERSE_TEST/results/test1_hazard_dimensionality.json` | Multi-axis hazard test |
+| `phases/RUPESCISSA_REVERSE_TEST/results/test2_factorization.json` | Quality-degree factorization |
+| `phases/RUPESCISSA_REVERSE_TEST/results/test3_oppositional_pairing.json` | Oppositional pairing |
+| `phases/RUPESCISSA_REVERSE_TEST/results/test4_degree_ordering.json` | Degree ordering |
+| `phases/RUPESCISSA_REVERSE_TEST/results/galenic_test_summary.json` | Combined results |
+
+### Updated Files
+
+| File | Change |
+|------|--------|
+| `context/SPECULATIVE/rupescissa_comparative.md` | Added Phase 376 results section |
+| `context/CLAIMS/C1057_lane_sister_orthogonal_axes.md` | New constraint: lane-sister orthogonality |
+| `context/CLAIMS/INDEX.md` | Added C1057 entry |
+
+### Updated Files
+
+| File | Change |
+|------|--------|
+| `context/CLAIMS/C574_en_behavioral_collapse.md` | Added C1057 cross-reference |
+| `context/CLAIMS/C412_sister_escape_anticorrelation.md` | Added C1057 cross-reference |
+| `context/CLAIMS/C639_sister_pair_variance_decomposition.md` | Added C1057 cross-reference |
+| `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml` | Added lane_sister_orthogonality to folio_level_composition |
+
+---
+
+## Version 4.02 (2026-02-15) - Rupescissa Comparative Analysis
+
+### Summary
+
+Phase 375 performs three-way comparative analysis across the medieval distillation tradition: Rupescissa (~1351) -> Brunschwig (1500) -> Voynich (15th c.). Framed as shared tradition convergence, not evolutionary lineage. Three analyses: (1) Degree System Evolution (Tier 3) -- Rupescissa 16-cell 4-quality x 4-degree matrix collapses to Brunschwig's 1-axis fire degree; both peak at D2; prohibition transformation documented: AVOID (Rup) -> RESTRICT (Bru) -> ENGINEER (Voy, C494). (2) Action Vocabulary Evolution (Tier 3) -- maps all 12 Rupescissa actions to Brunschwig equivalents; 64.3% core distillation coverage vs 14.3% non-core; identifies 6 categories of Brunschwig additions; documents qualitative shift from 12 named -> 36 named -> 49 abstract (C121). (3) Concealment Doctrine (Tier 4) -- extracts 7 concealment strategies (145 keyword hits) from Rupescissa text; 5/5 consistent with Voynich design but all have independent structural explanations; C476 tension documented. Builds on F-BRU-011/F-BRU-012; novel contribution is Rupescissa->Brunschwig mapping. All three falsification criteria PASS. Expert-advisor validated. No new constraints. Phase 375.
+
+### New Files
+
+| File | Purpose |
+|------|---------|
+| `phases/RUPESCISSA_COMPARATIVE/scripts/rupescissa_compare.py` | Three-way comparative analysis script |
+| `phases/RUPESCISSA_COMPARATIVE/results/degree_evolution.json` | Degree system comparison |
+| `phases/RUPESCISSA_COMPARATIVE/results/action_evolution.json` | Action vocabulary evolution |
+| `phases/RUPESCISSA_COMPARATIVE/results/concealment_doctrine.json` | Concealment analysis |
+| `phases/RUPESCISSA_COMPARATIVE/results/comparative_summary.json` | Combined findings |
+| `context/SPECULATIVE/rupescissa_comparative.md` | Findings document (Tier 3/4) |
+
+---
+
+## Version 4.01 (2026-02-15) - Rupescissa Curation (v1.0)
+
+### Summary
+
+Phase 374 curates John of Rupescissa's "De consideratione quintae essentiae" (~1351) — the foundational text of the medieval distillation tradition — into structured JSON following the Brunschwig curation pattern. 61 chapter entries (41 Book 1 + 20 Book 2 remedies) classified into 7 types: THEORY (7), PROCESS (5), EXTRACTION (11), DEGREE_CATALOG (9), PHARMACOLOGICAL (8), APPARATUS (1), REMEDY (20). 131 materials extracted with 4-quality x 4-degree classifications (70 with degree data). 12 distinct procedural actions identified across 16 chapters, comparable to Brunschwig's 36-action taxonomy. 10 materials overlap with Brunschwig. Verification (V1-V6) all pass. This enables systematic cross-text comparison across the Rupescissa→Puff→Brunschwig→Voynich lineage. No new constraints. Phase 374.
+
+### New Files
+
+| File | Purpose |
+|------|---------|
+| `data/rupescissa_curated_v1.json` | Curated chapter data (61 entries, 7 types, 12 actions) |
+| `data/rupescissa_materials_v1.json` | Materials inventory (131 substances, 70 with degree data) |
+| `phases/RUPESCISSA_CURATION/scripts/rupescissa_curate.py` | Curation script |
+| `phases/RUPESCISSA_CURATION/results/curation_verification.json` | Verification results |
+
+### Updated Files
+
+| File | Change |
+|------|--------|
+| `sources/rupescissa/README.md` | Added curated data references |
+
+---
+
+## Version 4.00 (2026-02-15) - Paragraph Structural Contract (PSC)
+
+### Summary
+
+Phase 373 creates the Paragraph Structural Contract (PSC v1.0), a cross-system structural unit contract describing paragraphs from the paragraph's own perspective. Consolidates 20 owned + 36 referenced constraints (56 total) across Currier A and B. Expert-advisor validation added 1 guarantee (COMPOUND_SPECIFICATION), 3 invariants (gallows_boundary_enrichment, cluster_count_convergence, body_length_shrinkage), and 3 disallowed interpretations. Follows layered ownership model: PSC owns paragraph-as-unit properties; BCSC retains B execution patterns; CASC retains A profiling details. Both contracts updated with cross-references to PSC. Verification script (V1-V9) confirms all quantitative guarantees. V8 constraint coverage: 100% (56/56). Five previously unclaimed constraints now formally housed (C885, C1022, C1027, C1052, C1054). No new constraints. Phase 373.
+
+### New Files
+
+| File | Purpose |
+|------|---------|
+| `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml` | Paragraph Structural Contract (PSC v1.0) |
+| `phases/PARAGRAPH_STRUCTURAL_CONTRACT/scripts/psc_verification.py` | Verification script |
+| `phases/PARAGRAPH_STRUCTURAL_CONTRACT/results/psc_verification.json` | Verification results |
+
+### Updated Files
+
+| File | Change |
+|------|--------|
+| `context/STRUCTURAL_CONTRACTS/currierB.bcsc.yaml` | Added PSC cross-references to paragraph and folio_paragraph_architecture sections |
+| `context/STRUCTURAL_CONTRACTS/currierA.casc.yaml` | Added PSC cross-reference to paragraph_structure section |
+
+---
+
+## Version 3.99 (2026-02-15) - HT Structural Contract (HTSC)
+
+### Summary
+
+Phase 372 creates the Human Track Structural Contract (HTSC), the first unified structural contract for HT from HT's own perspective, consolidating 68 owned constraints and 14 referenced constraints into a single authoritative YAML document. Expert-advisor validation added 4 guarantees (ANTICIPATORY_COMPENSATION, TAIL_CORRELATION, LINE1_COMPOSITE_HEADER, CAUSAL_DECOUPLING), 2 invariants (BODY_BOUNDARY_ENRICHMENT, LINK_POSITIVE_ASSOCIATION), and 4 disallowed interpretations. Verification script (V1-V9) confirms all quantitative guarantees against data. V2 revealed that C451 used prefix-based HT detection (19 families), reproducing A=0.171, AZC=0.165, B=0.148 exactly; full C740 UN definition gives AZC > A > B (documented). V8 constraint coverage audit: 97.6% (81/83 known HT constraints covered). V9 identified 4 untested cross-guarantee predictions. No new constraints. Phase 372.
+
+### New Files
+
+| File | Purpose |
+|------|---------|
+| `context/STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml` | HT Structural Contract (HTSC v1.0) |
+| `phases/HT_STRUCTURAL_CONTRACT/scripts/htsc_verification.py` | Verification script |
+| `phases/HT_STRUCTURAL_CONTRACT/results/htsc_verification.json` | Verification results |
+
+### Updated Files
+
+| File | Change |
+|------|--------|
+| `context/ARCHITECTURE/human_track.md` | Added HTSC pointer |
+| `context/ARCHITECTURE/HT_EXPLAINER.md` | Added HTSC pointer, updated one-sentence summary per C935 |
+
+---
+
+## Version 3.98 (2026-02-15) - Brunschwig MIDPROCESS Absence (C1056)
+
+### Summary
+
+Phase 371 formally characterizes the structural absence of MIDPROCESS from Brunschwig's recipe-level encoding. Exhaustive investigation across 5 independent data sources confirms zero per-recipe distillation process monitoring variation. V3 curation: 0/245 recipes have MIDPROCESS actions. Master data: monitoring_intensity has 37 non-zero values but all derive from medical usage monitoring. MONITORING step_types: 0 process monitoring, 47 medical usage. Source text: 77% of MIDPROCESS keywords in Book 1 general chapters. PCA analysis: removing zero-variance MIDPROCESS and STORAGE columns doesn't change structure (5D=7D exactly). Brunschwig-Voynich dimensional gap: 2 PCs (3/5 vs 5/10), 0.752 bits entropy gap. Fabricated uniform MIDPROCESS achieves loading 0.571 (Path C mechanically passable) but is circular. M2 failure analysis: 3 universally-failing tests (B4, B5, C2) span 3 categories; 2/3 capture dynamic/pairwise structure consistent with monitoring gap (OJLM-1 partial parallel). MIDPROCESS represents tacit operator knowledge — the OJLM-1 boundary. 1 new constraint (C1056). 1 new fit (F-BRU-030). Phase 371.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1056 | MIDPROCESS Structural Absence / OJLM-1 Boundary | 2 |
+
+### New Fits
+
+| ID | Name | Result |
+|----|------|--------|
+| F-BRU-030 | MIDPROCESS Absence Characterization | MIDPROCESS_STRUCTURALLY_ABSENT |
+
+---
+
+## Version 3.97 (2026-02-15) - Section-Specific M2 Capstone (C1055)
+
+### Summary
+
+Phase 370 tests whether M2 generative sufficiency (C1025) holds per section independently. 5 pre-registered hypotheses, 3 pass. Verdict: near-section-decomposable. Per-section M2 reaches 78-79% for BIO and STARS_RECIPE (just below 80% global threshold), 70% for HERBAL. The same 3 universally-failing tests (B4, B5, C2) apply per-section as globally. Pooling advantage is only +0.5 tests (global=12.0, weighted-local=11.5), confirming C1047's no-interaction finding. Global M2 tested per-section shows dramatic distributional degradation (D1 fails 4/4 sections) but topology tests preserved (B1, B3). Cross-section transfer does NOT correlate with C1029 JSD (rho=-0.24). Test battery partitions into 11 section-invariant and 4 section-sensitive tests. Sections parameterize a single grammar rather than implementing distinct grammars. 1 new constraint (C1055). Phase 370.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1055 | M2 Near-Section-Decomposable | 2 |
+
+---
+
+## Version 3.96 (2026-02-15) - Affordance Bin Paragraph Dynamics (C1054)
+
+### Summary
+
+Phase 369 tests whether the 9 affordance bins (C995-C1000) have distinct paragraph-gradient trajectories. 5 pre-registered hypotheses, 0 pass. Verdict: NO_GRADIENT_BIN_INTERACTION (0/5). Key finding: affordance bin composition is INVARIANT across the B paragraph specification→execution gradient (C932). HUB_UNIVERSAL fraction remains ~64% at every quintile position (Spearman rho=-0.10, p=0.873). No non-HUB bin shows gradient dependence (0/8 Bonferroni-significant). HUB sub-roles are quintile-independent (0/4 significant). Bin-to-bin transition grammar barely differs between zones (JSD=0.066). The gradient selects which MIDDLEs within each bin, not which bins — the affordance scaffold is a static functional architecture preserved across the gradient. 1 new constraint (C1054). Phase 369.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1054 | Affordance Bin Gradient Invariance | 2 |
+
+---
+
+## Version 3.95 (2026-02-15) - Paragraph Gradient Combinatorics (C1052-C1053)
+
+### Summary
+
+Phase 368 tests whether B paragraph specification→execution gradient (C932) operates through C475 MIDDLE incompatibility graph. 5 pre-registered hypotheses, 2 pass. Verdict: COMPOUND_MEDIATED. Key findings: (1) B paragraphs ARE cluster-selective (z=-2.61, p=0.007), replicating C1039 on Currier B. (2) Compound atom prediction (C935) is C475-mediated: atoms that are mutually compatible predict body MIDDLEs at 46.2% vs 3.9% for incompatible atoms (12x, Wilcoxon p=0.002). (3) The gradient does NOT operate through compatibility at the line level (full compatibility rate near-ceiling at 99.8%). (4) Cluster entropy DECREASES Q0→Q4 (rho=-0.80): execution converges on specific compatibility neighborhoods, opposite of initial prediction. (5) Section funnel aperture weakly correlates with gradient steepness (rho=-0.5, n=3). Matrix coverage: 46.1% of B MIDDLEs in A-derived compatibility matrix. 2 new constraints (C1052-C1053). Phase 368.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1052 | B Paragraph Cluster Selectivity | 2 |
+| C1053 | Compound Atom C475 Mediation | 2 |
+
+---
+
+## Version 3.94 (2026-02-15) - A-B Section Correspondence (C1049-C1051)
+
+### Summary
+
+Phase 367 tests whether A-side PP MIDDLE composition carries any trace of B's section parameterization. 5 pre-registered hypotheses, 5 pass. Verdict: PP_SECTION_SIGNAL (5/5). Key findings: (1) Shared (A∩B) MIDDLEs have Herfindahl 0.70 vs B-only 0.93 — shared vocabulary IS the section-universal substrate, explaining C946's reach uniformity (cosine 0.997). (2) C946 replicated (raw cosine=0.996); A section (H vs P) creates slight proportion differences. (3) C708 funnel topology is section-dependent — BIO class Jaccard=0.794 vs global 0.847; BIO has narrowest funnel aperture. (4) PP composition quality (core_fraction) has partial r=0.33-0.46 with section coverage after pool-size control. (5) A folio rankings shift across sections (rho=0.81-0.86 residualized). Does not contradict C752/C753/C946 — extends constraint propagation interpretation with mechanistic detail. 3 new constraints (C1049-C1051). Phase 367.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1049 | Shared Vocabulary Section-Universal Substrate | 2 |
+| C1050 | PP Composition Section-Differential Coverage | 2 |
+| C1051 | Section-Conditioned Class Convergence Asymmetry | 2 |
+
+---
+
+## Version 3.93 (2026-02-14) - Section Residual Decomposition (C1047-C1048)
+
+### Summary
+
+Phase 366 tests whether section x predictor interaction effects explain any of C1035's irreducible AXM self-transition residual. 5 pre-registered hypotheses, 2 pass. Verdict: SECTION_INTERACTIONS_CONFIRM_IRREDUCIBILITY. Key findings: (1) 0/3 interaction terms reach significance — section modulates dynamics additively (intercepts) not interactively (slopes). (2) Per-section models dramatically overfit (weighted LOO 0.037 vs global 0.412) except BIO (LOO 0.754). (3) Bridge geometry is section-orthogonal (BIO PC1 cosine=0.069 to global) but this doesn't improve prediction. (4) Conservation confirmed: LOO R²=0.412, residual 58.8%. The AXM residual elimination sequence is now complete: C1035-C1038 tested four strata, C1047-C1048 tested section stratification. The residual is genuine design freedom (C458/C980). 2 new constraints (C1047-C1048). Phase 366.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1047 | Section-Dynamics Interaction Absent | 2 |
+| C1048 | BIO Section Dynamical Coherence | 2 |
+
+---
+
+## Version 3.92 (2026-02-14) - Section-Parameterized Line Grammar (C1042-C1046)
+
+### Summary
+
+Phase 365 tests whether section identity modulates the B line grammar at interior and boundary levels. 10 pre-registered hypotheses, 6 pass. Verdict: DEEP_PARAMETERIZATION (3/5 interior + 3/5 boundary). Key findings: (1) Interior transitions, self-loop rates, and phase interleaving are all section-dependent — sections parameterize the grammar at every tested interior level. (2) Opener and closer role distributions and mandatory bigram rates are section-dependent — boundaries are also parameterized. (3) C956 positional exclusivity breaks per section (30-55% retention) — global exclusivity is partially a section composition effect. (4) Line length is section-insensitive (eta2=0.004) — the program structure controls length, not section. (5) EN ordering remains free in all sections — C961 free interior confirmed as section-invariant. 5 new constraints (C1042-C1046). Phase 365.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1042 | Section-Conditional Positional Exclusivity Reduction | 2 |
+| C1043 | Role Self-Loop Section Dependence | 2 |
+| C1044 | Section-Dependent Phase Interleaving Rate | 2 |
+| C1045 | Section-Dependent Boundary Role Composition | 2 |
+| C1046 | Mandatory Bigram Section Modulation | 2 |
+
+---
+
+## Version 3.91 (2026-02-14) - A Paragraph Combinatorial Grammar (C1039-C1041)
+
+### Summary
+
+Phase 364 tests whether A paragraph membership imposes MIDDLE compatibility constraints beyond line-level incompatibility (C475/C729). 8 pre-registered hypotheses, 3 pass. Key findings: (1) Paragraphs draw from fewer C475 clusters than random (entropy 1.50 vs 1.78, z=-2.83, p=0.002) -- cluster selectivity. (2) Within-folio paragraph pairs have higher compatibility than between-folio (0.880 vs 0.811, p~0), surviving section matching -- folio is the compatibility unit. (3) Paragraphs have LOWER cross-line compatibility than random (z=-3.567) -- complementary diversification, extending C476 coverage optimality to paragraph level. Negative results: RI linkers don't predict folio composition similarity (p=0.151); adjacent paragraphs no more similar than non-adjacent (p=0.223); paragraph composition adds marginal B prediction (delta-R2=0.048, below threshold). 3 new constraints (C1039-C1041). Phase 364.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1039 | A Paragraph Cluster Selectivity | 2 |
+| C1040 | A Folio-Level Paragraph Compatibility Coherence | 2 |
+| C1041 | A Paragraph Complementary Diversification | 2 |
+
+---
+
 ## Version 3.90 (2026-02-14) - Brunschwig Semantic Boundary Probe (F-BRU-029)
 
 ### Summary

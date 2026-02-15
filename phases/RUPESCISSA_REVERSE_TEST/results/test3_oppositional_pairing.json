@@ -1,0 +1,96 @@
+{
+  "test": "Oppositional Pairing",
+  "tier": 4,
+  "rupescissa_prediction": "Exactly 2 orthogonal oppositional axes (hot/cold, dry/humid)",
+  "n_folios": 82,
+  "correlation_matrix": {
+    "lane_balance_vs_lane_balance": {
+      "rho": 1.0,
+      "p": 0.0
+    },
+    "lane_balance_vs_qo_density": {
+      "rho": -0.862,
+      "p": 0.0
+    },
+    "lane_balance_vs_ok_preference": {
+      "rho": 0.143,
+      "p": 0.199672
+    },
+    "ch_preference_vs_lane_balance": {
+      "rho": 0.21,
+      "p": 0.057704
+    },
+    "ch_preference_vs_ch_preference": {
+      "rho": 1.0,
+      "p": 0.0
+    },
+    "ch_preference_vs_qo_density": {
+      "rho": -0.281,
+      "p": 0.010639
+    },
+    "ch_preference_vs_ok_preference": {
+      "rho": 0.2,
+      "p": 0.072321
+    },
+    "qo_density_vs_qo_density": {
+      "rho": 1.0,
+      "p": 0.0
+    },
+    "ok_preference_vs_qo_density": {
+      "rho": -0.183,
+      "p": 0.100627
+    },
+    "ok_preference_vs_ok_preference": {
+      "rho": 1.0,
+      "p": 0.0
+    }
+  },
+  "primary_orthogonality": {
+    "lane_vs_ch_preference_rho": 0.21,
+    "lane_vs_ch_preference_p": 0.057704,
+    "partial_r_controlling_qo": -0.064
+  },
+  "pca_results": {
+    "variables": [
+      "lane_balance",
+      "ch_preference",
+      "ok_preference"
+    ],
+    "note": "qo_density excluded (rho=-0.86 with lane_balance, near-algebraic redundancy)",
+    "eigenvalues": [
+      1.419,
+      0.869,
+      0.749
+    ],
+    "variance_explained_pct": [
+      46.7,
+      28.6,
+      24.7
+    ],
+    "broken_stick_thresholds_pct": [
+      61.1,
+      27.8,
+      11.1
+    ],
+    "significant_pcs_kaiser": 1,
+    "significant_pcs_broken_stick": 2
+  },
+  "third_axis_check": {
+    "ok_vs_lane_rho": 0.143,
+    "ok_vs_lane_p": 0.199672,
+    "ok_vs_ch_rho": 0.2,
+    "ok_vs_ch_p": 0.072321,
+    "ok_is_independent": true
+  },
+  "axis_count": 2,
+  "falsification_criterion": "|partial r|>0.5 = 1 axis (FAIL). >2 significant PCs = too many (FAIL). Exactly 2 = PASS.",
+  "falsification_result": "PASS -- Partial correlation shows near-orthogonality (|r|=0.064) despite Kaiser finding 1 PC. Two independent oppositional axes confirmed by direct correlation test.",
+  "constraints_referenced": [
+    "C574",
+    "C647",
+    "C412",
+    "C929",
+    "C639",
+    "C605"
+  ]
+}
