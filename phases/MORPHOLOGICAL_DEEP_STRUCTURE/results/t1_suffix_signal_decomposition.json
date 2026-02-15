@@ -1,0 +1,189 @@
+{
+  "test": "T1_suffix_signal_decomposition",
+  "verdict": "PASS",
+  "stage0_raw": {
+    "V": 0.0662,
+    "p": 2.3243194030312207e-157,
+    "n": 20676
+  },
+  "stage1_role_conditioned": {
+    "V_residual": 0.0635
+  },
+  "stage2_no_token_repeat": {
+    "V": 0.0644,
+    "p": 3.8512098534294323e-134,
+    "n_removed": 198,
+    "pct_removed": 0.96
+  },
+  "stage3_combined": {
+    "V_residual": 0.0621
+  },
+  "decomposition": {
+    "raw_V": 0.0662,
+    "role_contribution": 0.0027,
+    "repeat_contribution": 0.0018,
+    "residual": 0.0621
+  },
+  "top_residual_pairs": [
+    {
+      "suf1": "dy",
+      "suf2": "dy",
+      "observed": 104,
+      "expected": 41.3,
+      "z": 9.76
+    },
+    {
+      "suf1": "edy",
+      "suf2": "edy",
+      "observed": 297,
+      "expected": 175.9,
+      "z": 9.13
+    },
+    {
+      "suf1": "ain",
+      "suf2": "hy",
+      "observed": 69,
+      "expected": 28.8,
+      "z": 7.48
+    },
+    {
+      "suf1": "s",
+      "suf2": "s",
+      "observed": 19,
+      "expected": 5.5,
+      "z": 5.74
+    },
+    {
+      "suf1": "edy",
+      "suf2": "NONE",
+      "observed": 707,
+      "expected": 852.3,
+      "z": -4.98
+    },
+    {
+      "suf1": "aiin",
+      "suf2": "hy",
+      "observed": 65,
+      "expected": 36.5,
+      "z": 4.72
+    },
+    {
+      "suf1": "ol",
+      "suf2": "ol",
+      "observed": 12,
+      "expected": 3.6,
+      "z": 4.47
+    },
+    {
+      "suf1": "s",
+      "suf2": "iin",
+      "observed": 7,
+      "expected": 1.7,
+      "z": 4.13
+    },
+    {
+      "suf1": "dy",
+      "suf2": "ar",
+      "observed": 56,
+      "expected": 33.2,
+      "z": 3.97
+    },
+    {
+      "suf1": "dy",
+      "suf2": "NONE",
+      "observed": 326,
+      "expected": 402.7,
+      "z": -3.82
+    },
+    {
+      "suf1": "aiin",
+      "suf2": "edy",
+      "observed": 48,
+      "expected": 82.4,
+      "z": -3.79
+    },
+    {
+      "suf1": "al",
+      "suf2": "NONE",
+      "observed": 363,
+      "expected": 297.7,
+      "z": 3.78
+    },
+    {
+      "suf1": "eey",
+      "suf2": "aiin",
+      "observed": 42,
+      "expected": 24.2,
+      "z": 3.61
+    },
+    {
+      "suf1": "edy",
+      "suf2": "eey",
+      "observed": 79,
+      "expected": 53.6,
+      "z": 3.46
+    },
+    {
+      "suf1": "ain",
+      "suf2": "aiin",
+      "observed": 11,
+      "expected": 29.6,
+      "z": -3.42
+    },
+    {
+      "suf1": "ey",
+      "suf2": "eey",
+      "observed": 25,
+      "expected": 12.9,
+      "z": 3.37
+    },
+    {
+      "suf1": "ar",
+      "suf2": "am",
+      "observed": 17,
+      "expected": 7.8,
+      "z": 3.27
+    },
+    {
+      "suf1": "dy",
+      "suf2": "ol",
+      "observed": 23,
+      "expected": 12.3,
+      "z": 3.04
+    }
+  ],
+  "section_sub_analysis": {
+    "S": {
+      "n": 9508,
+      "v": 0.079,
+      "p": 7.661558235356414e-52
+    },
+    "H": {
+      "n": 3033,
+      "v": 0.092,
+      "p": 0.3097372364251276
+    },
+    "T": {
+      "n": 590,
+      "v": 0.1953,
+      "p": 0.6248648768856027
+    },
+    "B": {
+      "n": 6002,
+      "v": 0.0858,
+      "p": 7.488148272793521e-16
+    },
+    "C": {
+      "n": 1345,
+      "v": 0.1289,
+      "p": 0.9994900005260325
+    }
+  },
+  "constraints_referenced": [
+    "C1002",
+    "C1004",
+    "C611",
+    "C957",
+    "C1029"
+  ]
+}

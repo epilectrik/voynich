@@ -1,0 +1,219 @@
+{
+  "test": "T1_degree_hazard_correlation",
+  "hypothesis": "Rare (high-degree) MIDDLEs participate more in forbidden transitions",
+  "galenic_prediction": "Degree 4 (rare, extreme) materials are dangerous",
+  "verdict": "FAIL",
+  "n_hub_middles_analyzed": 23,
+  "hazard_mean_quartile": 1.0,
+  "non_hazard_mean_quartile": 1.0,
+  "mann_whitney": {
+    "U": 66.0,
+    "p": 1.0,
+    "alternative": "hazard > non-hazard (one-sided)"
+  },
+  "fisher_q4_enrichment": {
+    "OR": NaN,
+    "p": 1.0,
+    "table": [
+      [
+        0,
+        0
+      ],
+      [
+        12,
+        11
+      ]
+    ]
+  },
+  "fisher_q1_enrichment": {
+    "OR": NaN,
+    "p": 1.0,
+    "table": [
+      [
+        12,
+        11
+      ],
+      [
+        0,
+        0
+      ]
+    ]
+  },
+  "q4_hazard_rate": 0.0,
+  "not_q4_hazard_rate": 0.5217,
+  "quartile_thresholds": {
+    "q25": 0.38170347003154576,
+    "q50": 0.5789473684210527,
+    "q75": 0.7854889589905363
+  },
+  "hub_middle_details": [
+    {
+      "middle": "aiin",
+      "quartile": 1,
+      "mean_rank": 0.0196,
+      "hazard": true,
+      "sub_role": "HAZARD_TARGET"
+    },
+    {
+      "middle": "al",
+      "quartile": 1,
+      "mean_rank": 0.0552,
+      "hazard": true,
+      "sub_role": "HAZARD_TARGET"
+    },
+    {
+      "middle": "ar",
+      "quartile": 1,
+      "mean_rank": 0.0481,
+      "hazard": true,
+      "sub_role": "HAZARD_SOURCE"
+    },
+    {
+      "middle": "d",
+      "quartile": 1,
+      "mean_rank": 0.088,
+      "hazard": false,
+      "sub_role": "PURE_CONNECTOR"
+    },
+    {
+      "middle": "dy",
+      "quartile": 1,
+      "mean_rank": 0.046,
+      "hazard": true,
+      "sub_role": "HAZARD_SOURCE"
+    },
+    {
+      "middle": "e",
+      "quartile": 1,
+      "mean_rank": 0.0295,
+      "hazard": false,
+      "sub_role": "PURE_CONNECTOR"
+    },
+    {
+      "middle": "ee",
+      "quartile": 1,
+      "mean_rank": 0.1735,
+      "hazard": true,
+      "sub_role": "HAZARD_TARGET"
+    },
+    {
+      "middle": "eey",
+      "quartile": 1,
+      "mean_rank": 0.0488,
+      "hazard": false,
+      "sub_role": "PURE_CONNECTOR"
+    },
+    {
+      "middle": "ek",
+      "quartile": 1,
+      "mean_rank": 0.0607,
+      "hazard": false,
+      "sub_role": "PURE_CONNECTOR"
+    },
+    {
+      "middle": "eo",
+      "quartile": 1,
+      "mean_rank": 0.0843,
+      "hazard": false,
+      "sub_role": "PURE_CONNECTOR"
+    },
+    {
+      "middle": "eol",
+      "quartile": 1,
+      "mean_rank": 0.0897,
+      "hazard": false,
+      "sub_role": "SAFETY_BUFFER"
+    },
+    {
+      "middle": "ey",
+      "quartile": 1,
+      "mean_rank": 0.0382,
+      "hazard": true,
+      "sub_role": "HAZARD_SOURCE"
+    },
+    {
+      "middle": "iin",
+      "quartile": 1,
+      "mean_rank": 0.0197,
+      "hazard": false,
+      "sub_role": "PURE_CONNECTOR"
+    },
+    {
+      "middle": "k",
+      "quartile": 1,
+      "mean_rank": 0.0048,
+      "hazard": false,
+      "sub_role": "SAFETY_BUFFER"
+    },
+    {
+      "middle": "l",
+      "quartile": 1,
+      "mean_rank": 0.0366,
+      "hazard": true,
+      "sub_role": "HAZARD_SOURCE"
+    },
+    {
+      "middle": "o",
+      "quartile": 1,
+      "mean_rank": 0.0807,
+      "hazard": true,
+      "sub_role": "HAZARD_TARGET"
+    },
+    {
+      "middle": "od",
+      "quartile": 1,
+      "mean_rank": 0.1112,
+      "hazard": false,
+      "sub_role": "SAFETY_BUFFER"
+    },
+    {
+      "middle": "ol",
+      "quartile": 1,
+      "mean_rank": 0.0376,
+      "hazard": true,
+      "sub_role": "HAZARD_SOURCE"
+    },
+    {
+      "middle": "or",
+      "quartile": 1,
+      "mean_rank": 0.0658,
+      "hazard": true,
+      "sub_role": "HAZARD_SOURCE"
+    },
+    {
+      "middle": "r",
+      "quartile": 1,
+      "mean_rank": 0.0216,
+      "hazard": true,
+      "sub_role": "HAZARD_TARGET"
+    },
+    {
+      "middle": "s",
+      "quartile": 1,
+      "mean_rank": 0.1486,
+      "hazard": false,
+      "sub_role": "PURE_CONNECTOR"
+    },
+    {
+      "middle": "t",
+      "quartile": 1,
+      "mean_rank": 0.0166,
+      "hazard": true,
+      "sub_role": "HAZARD_TARGET"
+    },
+    {
+      "middle": "y",
+      "quartile": 1,
+      "mean_rank": 0.0687,
+      "hazard": false,
+      "sub_role": "PURE_CONNECTOR"
+    }
+  ],
+  "interpretation": "Hazard is topological (hub-mediated), not scalar (degree-based). HUB MIDDLEs are the MOST frequent vocabulary, not the rarest. This confirms the Galenic degree analogy breaks at the hazard level.",
+  "constraints_referenced": [
+    "C109",
+    "C1000",
+    "C541",
+    "C623"
+  ]
+}

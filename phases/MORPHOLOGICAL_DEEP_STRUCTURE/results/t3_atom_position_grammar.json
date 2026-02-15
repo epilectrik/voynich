@@ -1,0 +1,509 @@
+{
+  "test": "T3_atom_position_grammar",
+  "verdict": "PASS",
+  "n_compounds": 449,
+  "n_compounds_3plus": 86,
+  "n_testable_atoms": 37,
+  "chi2": 201.1,
+  "p": 3.8358220476103676e-14,
+  "V": 0.3331,
+  "n_significant_atoms": 5,
+  "bonferroni_threshold": 0.001351,
+  "kernel_prediction": {
+    "k_mean_pos": 0.2918,
+    "e_mean_pos": 0.3316,
+    "n_k": 256,
+    "n_e": 347,
+    "MW_U": 41115.0,
+    "MW_p": 0.053763,
+    "prediction": "k-atoms earlier than e-atoms (extending C521)"
+  },
+  "atom_details": [
+    {
+      "atom": "opch",
+      "n": 15,
+      "counts": {
+        "INITIAL": 14,
+        "MEDIAL": 1,
+        "FINAL": 0
+      },
+      "mean_pos": 0.0095,
+      "has_k": false,
+      "has_e": false,
+      "has_h": true
+    },
+    {
+      "atom": "eol",
+      "n": 14,
+      "counts": {
+        "INITIAL": 12,
+        "MEDIAL": 1,
+        "FINAL": 1
+      },
+      "mean_pos": 0.0595,
+      "has_k": false,
+      "has_e": true,
+      "has_h": false
+    },
+    {
+      "atom": "op",
+      "n": 24,
+      "counts": {
+        "INITIAL": 20,
+        "MEDIAL": 2,
+        "FINAL": 2
+      },
+      "mean_pos": 0.0754,
+      "has_k": false,
+      "has_e": false,
+      "has_h": false
+    },
+    {
+      "atom": "pch",
+      "n": 13,
+      "counts": {
+        "INITIAL": 7,
+        "MEDIAL": 3,
+        "FINAL": 3
+      },
+      "mean_pos": 0.1597,
+      "has_k": false,
+      "has_e": false,
+      "has_h": true
+    },
+    {
+      "atom": "eok",
+      "n": 15,
+      "counts": {
+        "INITIAL": 8,
+        "MEDIAL": 3,
+        "FINAL": 4
+      },
+      "mean_pos": 0.1656,
+      "has_k": true,
+      "has_e": true,
+      "has_h": false
+    },
+    {
+      "atom": "ek",
+      "n": 28,
+      "counts": {
+        "INITIAL": 15,
+        "MEDIAL": 9,
+        "FINAL": 4
+      },
+      "mean_pos": 0.206,
+      "has_k": true,
+      "has_e": true,
+      "has_h": false
+    },
+    {
+      "atom": "ckh",
+      "n": 13,
+      "counts": {
+        "INITIAL": 4,
+        "MEDIAL": 6,
+        "FINAL": 3
+      },
+      "mean_pos": 0.2103,
+      "has_k": true,
+      "has_e": false,
+      "has_h": true
+    },
+    {
+      "atom": "kee",
+      "n": 17,
+      "counts": {
+        "INITIAL": 6,
+        "MEDIAL": 6,
+        "FINAL": 5
+      },
+      "mean_pos": 0.2238,
+      "has_k": true,
+      "has_e": true,
+      "has_h": false
+    },
+    {
+      "atom": "olk",
+      "n": 23,
+      "counts": {
+        "INITIAL": 9,
+        "MEDIAL": 7,
+        "FINAL": 7
+      },
+      "mean_pos": 0.2403,
+      "has_k": true,
+      "has_e": false,
+      "has_h": false
+    },
+    {
+      "atom": "cth",
+      "n": 12,
+      "counts": {
+        "INITIAL": 2,
+        "MEDIAL": 6,
+        "FINAL": 4
+      },
+      "mean_pos": 0.2444,
+      "has_k": false,
+      "has_e": false,
+      "has_h": true
+    },
+    {
+      "atom": "ol",
+      "n": 25,
+      "counts": {
+        "INITIAL": 12,
+        "MEDIAL": 8,
+        "FINAL": 5
+      },
+      "mean_pos": 0.2453,
+      "has_k": false,
+      "has_e": false,
+      "has_h": false
+    },
+    {
+      "atom": "ka",
+      "n": 36,
+      "counts": {
+        "INITIAL": 16,
+        "MEDIAL": 13,
+        "FINAL": 7
+      },
+      "mean_pos": 0.2579,
+      "has_k": true,
+      "has_e": false,
+      "has_h": false
+    },
+    {
+      "atom": "te",
+      "n": 36,
+      "counts": {
+        "INITIAL": 17,
+        "MEDIAL": 14,
+        "FINAL": 5
+      },
+      "mean_pos": 0.2579,
+      "has_k": false,
+      "has_e": true,
+      "has_h": false
+    },
+    {
+      "atom": "eeo",
+      "n": 23,
+      "counts": {
+        "INITIAL": 8,
+        "MEDIAL": 8,
+        "FINAL": 7
+      },
+      "mean_pos": 0.258,
+      "has_k": false,
+      "has_e": true,
+      "has_h": false
+    },
+    {
+      "atom": "ok",
+      "n": 23,
+      "counts": {
+        "INITIAL": 13,
+        "MEDIAL": 4,
+        "FINAL": 6
+      },
+      "mean_pos": 0.259,
+      "has_k": true,
+      "has_e": false,
+      "has_h": false
+    },
+    {
+      "atom": "aii",
+      "n": 16,
+      "counts": {
+        "INITIAL": 6,
+        "MEDIAL": 4,
+        "FINAL": 6
+      },
+      "mean_pos": 0.2708,
+      "has_k": false,
+      "has_e": false,
+      "has_h": false
+    },
+    {
+      "atom": "tch",
+      "n": 13,
+      "counts": {
+        "INITIAL": 4,
+        "MEDIAL": 2,
+        "FINAL": 7
+      },
+      "mean_pos": 0.2734,
+      "has_k": false,
+      "has_e": false,
+      "has_h": true
+    },
+    {
+      "atom": "kch",
+      "n": 21,
+      "counts": {
+        "INITIAL": 7,
+        "MEDIAL": 5,
+        "FINAL": 9
+      },
+      "mean_pos": 0.2738,
+      "has_k": true,
+      "has_e": false,
+      "has_h": true
+    },
+    {
+      "atom": "dy",
+      "n": 12,
+      "counts": {
+        "INITIAL": 5,
+        "MEDIAL": 2,
+        "FINAL": 5
+      },
+      "mean_pos": 0.2986,
+      "has_k": false,
+      "has_e": false,
+      "has_h": false
+    },
+    {
+      "atom": "lk",
+      "n": 22,
+      "counts": {
+        "INITIAL": 9,
+        "MEDIAL": 5,
+        "FINAL": 8
+      },
+      "mean_pos": 0.3258,
+      "has_k": true,
+      "has_e": false,
+      "has_h": false
+    },
+    {
+      "atom": "ee",
+      "n": 35,
+      "counts": {
+        "INITIAL": 15,
+        "MEDIAL": 10,
+        "FINAL": 10
+      },
+      "mean_pos": 0.3326,
+      "has_k": false,
+      "has_e": false,
+      "has_h": false
+    },
+    {
+      "atom": "ech",
+      "n": 11,
+      "counts": {
+        "INITIAL": 1,
+        "MEDIAL": 4,
+        "FINAL": 6
+      },
+      "mean_pos": 0.3333,
+      "has_k": false,
+      "has_e": true,
+      "has_h": true
+    },
+    {
+      "atom": "od",
+      "n": 30,
+      "counts": {
+        "INITIAL": 15,
+        "MEDIAL": 2,
+        "FINAL": 13
+      },
+      "mean_pos": 0.3339,
+      "has_k": false,
+      "has_e": false,
+      "has_h": false
+    },
+    {
+      "atom": "ot",
+      "n": 15,
+      "counts": {
+        "INITIAL": 4,
+        "MEDIAL": 7,
+        "FINAL": 4
+      },
+      "mean_pos": 0.3416,
+      "has_k": false,
+      "has_e": false,
+      "has_h": false
+    },
+    {
+      "atom": "al",
+      "n": 50,
+      "counts": {
+        "INITIAL": 12,
+        "MEDIAL": 27,
+        "FINAL": 11
+      },
+      "mean_pos": 0.3437,
+      "has_k": false,
+      "has_e": false,
+      "has_h": false
+    },
+    {
+      "atom": "lo",
+      "n": 30,
+      "counts": {
+        "INITIAL": 9,
+        "MEDIAL": 11,
+        "FINAL": 10
+      },
+      "mean_pos": 0.3683,
+      "has_k": false,
+      "has_e": false,
+      "has_h": false
+    },
+    {
+      "atom": "lch",
+      "n": 28,
+      "counts": {
+        "INITIAL": 4,
+        "MEDIAL": 9,
+        "FINAL": 15
+      },
+      "mean_pos": 0.388,
+      "has_k": false,
+      "has_e": false,
+      "has_h": true
+    },
+    {
+      "atom": "eo",
+      "n": 57,
+      "counts": {
+        "INITIAL": 24,
+        "MEDIAL": 7,
+        "FINAL": 26
+      },
+      "mean_pos": 0.3882,
+      "has_k": false,
+      "has_e": true,
+      "has_h": false
+    },
+    {
+      "atom": "et",
+      "n": 17,
+      "counts": {
+        "INITIAL": 6,
+        "MEDIAL": 3,
+        "FINAL": 8
+      },
+      "mean_pos": 0.3961,
+      "has_k": false,
+      "has_e": true,
+      "has_h": false
+    },
+    {
+      "atom": "ke",
+      "n": 44,
+      "counts": {
+        "INITIAL": 13,
+        "MEDIAL": 13,
+        "FINAL": 18
+      },
+      "mean_pos": 0.4053,
+      "has_k": true,
+      "has_e": true,
+      "has_h": false
+    },
+    {
+      "atom": "eed",
+      "n": 17,
+      "counts": {
+        "INITIAL": 3,
+        "MEDIAL": 3,
+        "FINAL": 11
+      },
+      "mean_pos": 0.4077,
+      "has_k": false,
+      "has_e": true,
+      "has_h": false
+    },
+    {
+      "atom": "eod",
+      "n": 26,
+      "counts": {
+        "INITIAL": 3,
+        "MEDIAL": 6,
+        "FINAL": 17
+      },
+      "mean_pos": 0.4166,
+      "has_k": false,
+      "has_e": true,
+      "has_h": false
+    },
+    {
+      "atom": "or",
+      "n": 16,
+      "counts": {
+        "INITIAL": 3,
+        "MEDIAL": 8,
+        "FINAL": 5
+      },
+      "mean_pos": 0.4302,
+      "has_k": false,
+      "has_e": false,
+      "has_h": false
+    },
+    {
+      "atom": "ar",
+      "n": 22,
+      "counts": {
+        "INITIAL": 5,
+        "MEDIAL": 8,
+        "FINAL": 9
+      },
+      "mean_pos": 0.4457,
+      "has_k": false,
+      "has_e": false,
+      "has_h": false
+    },
+    {
+      "atom": "ed",
+      "n": 42,
+      "counts": {
+        "INITIAL": 13,
+        "MEDIAL": 9,
+        "FINAL": 20
+      },
+      "mean_pos": 0.4482,
+      "has_k": false,
+      "has_e": true,
+      "has_h": false
+    },
+    {
+      "atom": "ai",
+      "n": 51,
+      "counts": {
+        "INITIAL": 7,
+        "MEDIAL": 15,
+        "FINAL": 29
+      },
+      "mean_pos": 0.5256,
+      "has_k": false,
+      "has_e": false,
+      "has_h": false
+    },
+    {
+      "atom": "kc",
+      "n": 14,
+      "counts": {
+        "INITIAL": 0,
+        "MEDIAL": 2,
+        "FINAL": 12
+      },
+      "mean_pos": 0.5988,
+      "has_k": true,
+      "has_e": false,
+      "has_h": false
+    }
+  ],
+  "constraints_referenced": [
+    "C521",
+    "C522",
+    "C935"
+  ]
+}

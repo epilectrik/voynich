@@ -1,0 +1,140 @@
+{
+  "test": "T2_prefix_mediation",
+  "verdict": "INDEPENDENT",
+  "v_raw": 0.2869,
+  "chi2_raw": 5286.9,
+  "p_raw": 0.0,
+  "v_conditioned": 0.375,
+  "mediation_fraction": -0.3069,
+  "per_prefix": {
+    "_BARE_": {
+      "n": 2715,
+      "V": 0.436
+    },
+    "ar": {
+      "n": 56,
+      "V": 0.0,
+      "skip": true
+    },
+    "ch": {
+      "n": 2510,
+      "V": 0.1287
+    },
+    "da": {
+      "n": 900,
+      "V": 0.6113
+    },
+    "dch": {
+      "n": 45,
+      "V": 0.0,
+      "skip": true
+    },
+    "do": {
+      "n": 77,
+      "V": 0.0,
+      "skip": true
+    },
+    "ka": {
+      "n": 170,
+      "V": 0.0,
+      "skip": true
+    },
+    "kch": {
+      "n": 57,
+      "V": 0.0,
+      "skip": true
+    },
+    "ke": {
+      "n": 161,
+      "V": 0.0,
+      "skip": true
+    },
+    "lch": {
+      "n": 192,
+      "V": 0.0,
+      "skip": true
+    },
+    "lk": {
+      "n": 257,
+      "V": 0.0,
+      "skip": true
+    },
+    "lsh": {
+      "n": 60,
+      "V": 0.0,
+      "skip": true
+    },
+    "ok": {
+      "n": 1185,
+      "V": 0.6546
+    },
+    "ol": {
+      "n": 475,
+      "V": 0.6626
+    },
+    "or": {
+      "n": 74,
+      "V": 0.0,
+      "skip": true
+    },
+    "ot": {
+      "n": 1137,
+      "V": 0.5322
+    },
+    "pch": {
+      "n": 90,
+      "V": 0.0,
+      "skip": true
+    },
+    "qo": {
+      "n": 3206,
+      "V": 0.0,
+      "skip": true
+    },
+    "sa": {
+      "n": 259,
+      "V": 0.0,
+      "skip": true
+    },
+    "sh": {
+      "n": 1595,
+      "V": 0.12
+    },
+    "so": {
+      "n": 89,
+      "V": 0.0,
+      "skip": true
+    },
+    "ta": {
+      "n": 180,
+      "V": 0.0,
+      "skip": true
+    },
+    "tch": {
+      "n": 77,
+      "V": 0.0,
+      "skip": true
+    },
+    "te": {
+      "n": 167,
+      "V": 0.0,
+      "skip": true
+    },
+    "to": {
+      "n": 38,
+      "V": 0.0,
+      "skip": true
+    },
+    "yk": {
+      "n": 170,
+      "V": 0.0,
+      "skip": true
+    }
+  },
+  "n_classified": 16054,
+  "constraints_referenced": [
+    "C588",
+    "C556",
+    "C378"
+  ]
+}

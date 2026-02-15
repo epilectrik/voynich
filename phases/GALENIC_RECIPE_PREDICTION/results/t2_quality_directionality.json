@@ -1,0 +1,575 @@
+{
+  "test": "T2_quality_opposition_directionality",
+  "hypothesis": "Cross-quality transitions are disproportionately forbidden",
+  "galenic_prediction": "Opposing qualities (hot/cold, dry/humid) produce dangerous transitions",
+  "verdict": "FAIL",
+  "n_valid_pairs": 8,
+  "n_total_pairs": 17,
+  "cross_quality_count": 7,
+  "same_quality_count": 1,
+  "cross_quality_fraction": 0.875,
+  "opposition_count": 1,
+  "permutation_test": {
+    "n_permutations": 10000,
+    "observed": 7,
+    "null_mean": 5.08,
+    "null_95th": 7.0,
+    "p_value": 0.1774
+  },
+  "direction_counts": {
+    "STABILITY->PHASE": 3,
+    "STABILITY->INFRASTRUCTURE": 2,
+    "INFRASTRUCTURE->STABILITY": 1,
+    "PHASE->INFRASTRUCTURE": 1
+  },
+  "quality_assignments": {
+    "aiin": {
+      "middle": "aiin",
+      "total_tokens": 834,
+      "profile": {
+        "QO": 0.0168,
+        "CHSH": 0.0192,
+        "DA_SA": 0.0,
+        "OT_OL_OK": 0.3777,
+        "BARE": 0.4245,
+        "OTHER": 0.1619
+      },
+      "dominant_family": "OT_OL_OK",
+      "quality": "PHASE",
+      "prefixed_total": 345
+    },
+    "al": {
+      "middle": "al",
+      "total_tokens": 521,
+      "profile": {
+        "QO": 0.0058,
+        "CHSH": 0.0883,
+        "DA_SA": 0.0,
+        "OT_OL_OK": 0.4453,
+        "BARE": 0.357,
+        "OTHER": 0.1036
+      },
+      "dominant_family": "OT_OL_OK",
+      "quality": "PHASE",
+      "prefixed_total": 281
+    },
+    "ar": {
+      "middle": "ar",
+      "total_tokens": 677,
+      "profile": {
+        "QO": 0.0089,
+        "CHSH": 0.1078,
+        "DA_SA": 0.0015,
+        "OT_OL_OK": 0.3781,
+        "BARE": 0.3663,
+        "OTHER": 0.1374
+      },
+      "dominant_family": "OT_OL_OK",
+      "quality": "PHASE",
+      "prefixed_total": 336
+    },
+    "d": {
+      "middle": "d",
+      "total_tokens": 337,
+      "profile": {
+        "QO": 0.1573,
+        "CHSH": 0.3858,
+        "DA_SA": 0.003,
+        "OT_OL_OK": 0.089,
+        "BARE": 0.0712,
+        "OTHER": 0.2938
+      },
+      "dominant_family": "CHSH",
+      "quality": "STABILITY",
+      "prefixed_total": 214
+    },
+    "dy": {
+      "middle": "dy",
+      "total_tokens": 675,
+      "profile": {
+        "QO": 0.0178,
+        "CHSH": 0.2844,
+        "DA_SA": 0.003,
+        "OT_OL_OK": 0.1244,
+        "BARE": 0.1674,
+        "OTHER": 0.403
+      },
+      "dominant_family": "CHSH",
+      "quality": "STABILITY",
+      "prefixed_total": 290
+    },
+    "e": {
+      "middle": "e",
+      "total_tokens": 867,
+      "profile": {
+        "QO": 0.03,
+        "CHSH": 0.4337,
+        "DA_SA": 0.0,
+        "OT_OL_OK": 0.323,
+        "BARE": 0.0081,
+        "OTHER": 0.2053
+      },
+      "dominant_family": "CHSH",
+      "quality": "STABILITY",
+      "prefixed_total": 682
+    },
+    "ee": {
+      "middle": "ee",
+      "total_tokens": 151,
+      "profile": {
+        "QO": 0.0464,
+        "CHSH": 0.3642,
+        "DA_SA": 0.0,
+        "OT_OL_OK": 0.298,
+        "BARE": 0.053,
+        "OTHER": 0.2384
+      },
+      "dominant_family": "CHSH",
+      "quality": "STABILITY",
+      "prefixed_total": 107
+    },
+    "eey": {
+      "middle": "eey",
+      "total_tokens": 644,
+      "profile": {
+        "QO": 0.0155,
+        "CHSH": 0.4161,
+        "DA_SA": 0.0,
+        "OT_OL_OK": 0.3758,
+        "BARE": 0.0016,
+        "OTHER": 0.191
+      },
+      "dominant_family": "CHSH",
+      "quality": "STABILITY",
+      "prefixed_total": 520
+    },
+    "ek": {
+      "middle": "ek",
+      "total_tokens": 169,
+      "profile": {
+        "QO": 0.0355,
+        "CHSH": 0.9053,
+        "DA_SA": 0.0,
+        "OT_OL_OK": 0.0059,
+        "BARE": 0.0237,
+        "OTHER": 0.0296
+      },
+      "dominant_family": "CHSH",
+      "quality": "STABILITY",
+      "prefixed_total": 160
+    },
+    "eo": {
+      "middle": "eo",
+      "total_tokens": 359,
+      "profile": {
+        "QO": 0.0056,
+        "CHSH": 0.585,
+        "DA_SA": 0.0,
+        "OT_OL_OK": 0.1421,
+        "BARE": 0.0,
+        "OTHER": 0.2674
+      },
+      "dominant_family": "CHSH",
+      "quality": "STABILITY",
+      "prefixed_total": 263
+    },
+    "eol": {
+      "middle": "eol",
+      "total_tokens": 294,
+      "profile": {
+        "QO": 0.0068,
+        "CHSH": 0.6395,
+        "DA_SA": 0.0,
+        "OT_OL_OK": 0.1633,
+        "BARE": 0.0,
+        "OTHER": 0.1905
+      },
+      "dominant_family": "CHSH",
+      "quality": "STABILITY",
+      "prefixed_total": 238
+    },
+    "ey": {
+      "middle": "ey",
+      "total_tokens": 889,
+      "profile": {
+        "QO": 0.0067,
+        "CHSH": 0.5647,
+        "DA_SA": 0.0,
+        "OT_OL_OK": 0.1789,
+        "BARE": 0.0,
+        "OTHER": 0.2497
+      },
+      "dominant_family": "CHSH",
+      "quality": "STABILITY",
+      "prefixed_total": 667
+    },
+    "iin": {
+      "middle": "iin",
+      "total_tokens": 560,
+      "profile": {
+        "QO": 0.0054,
+        "CHSH": 0.0,
+        "DA_SA": 0.7679,
+        "OT_OL_OK": 0.0036,
+        "BARE": 0.0,
+        "OTHER": 0.2232
+      },
+      "dominant_family": "DA_SA",
+      "quality": "INFRASTRUCTURE",
+      "prefixed_total": 435
+    },
+    "k": {
+      "middle": "k",
+      "total_tokens": 2083,
+      "profile": {
+        "QO": 0.819,
+        "CHSH": 0.0446,
+        "DA_SA": 0.001,
+        "OT_OL_OK": 0.1047,
+        "BARE": 0.0062,
+        "OTHER": 0.0245
+      },
+      "dominant_family": "QO",
+      "quality": "ENERGY",
+      "prefixed_total": 2019
+    },
+    "l": {
+      "middle": "l",
+      "total_tokens": 855,
+      "profile": {
+        "QO": 0.1836,
+        "CHSH": 0.0398,
+        "DA_SA": 0.2316,
+        "OT_OL_OK": 0.0117,
+        "BARE": 0.2327,
+        "OTHER": 0.3006
+      },
+      "dominant_family": "DA_SA",
+      "quality": "INFRASTRUCTURE",
+      "prefixed_total": 399
+    },
+    "o": {
+      "middle": "o",
+      "total_tokens": 388,
+      "profile": {
+        "QO": 0.0026,
+        "CHSH": 0.3582,
+        "DA_SA": 0.0,
+        "OT_OL_OK": 0.1186,
+        "BARE": 0.2784,
+        "OTHER": 0.2423
+      },
+      "dominant_family": "CHSH",
+      "quality": "STABILITY",
+      "prefixed_total": 186
+    },
+    "od": {
+      "middle": "od",
+      "total_tokens": 177,
+      "profile": {
+        "QO": 0.0056,
+        "CHSH": 0.3107,
+        "DA_SA": 0.0,
+        "OT_OL_OK": 0.0621,
+        "BARE": 0.4633,
+        "OTHER": 0.1582
+      },
+      "dominant_family": "CHSH",
+      "quality": "STABILITY",
+      "prefixed_total": 67
+    },
+    "ol": {
+      "middle": "ol",
+      "total_tokens": 762,
+      "profile": {
+        "QO": 0.0039,
+        "CHSH": 0.2362,
+        "DA_SA": 0.0,
+        "OT_OL_OK": 0.0932,
+        "BARE": 0.5525,
+        "OTHER": 0.1142
+      },
+      "dominant_family": "CHSH",
+      "quality": "STABILITY",
+      "prefixed_total": 254
+    },
+    "or": {
+      "middle": "or",
+      "total_tokens": 446,
+      "profile": {
+        "QO": 0.0045,
+        "CHSH": 0.1614,
+        "DA_SA": 0.0,
+        "OT_OL_OK": 0.148,
+        "BARE": 0.5605,
+        "OTHER": 0.1256
+      },
+      "dominant_family": "CHSH",
+      "quality": "STABILITY",
+      "prefixed_total": 140
+    },
+    "r": {
+      "middle": "r",
+      "total_tokens": 749,
+      "profile": {
+        "QO": 0.0267,
+        "CHSH": 0.008,
+        "DA_SA": 0.3618,
+        "OT_OL_OK": 0.0107,
+        "BARE": 0.2884,
+        "OTHER": 0.3044
+      },
+      "dominant_family": "DA_SA",
+      "quality": "INFRASTRUCTURE",
+      "prefixed_total": 305
+    },
+    "s": {
+      "middle": "s",
+      "total_tokens": 144,
+      "profile": {
+        "QO": 0.0347,
+        "CHSH": 0.1111,
+        "DA_SA": 0.0556,
+        "OT_OL_OK": 0.125,
+        "BARE": 0.4444,
+        "OTHER": 0.2292
+      },
+      "dominant_family": "OT_OL_OK",
+      "quality": "PHASE",
+      "prefixed_total": 47
+    },
+    "t": {
+      "middle": "t",
+      "total_tokens": 576,
+      "profile": {
+        "QO": 0.8698,
+        "CHSH": 0.0677,
+        "DA_SA": 0.0,
+        "OT_OL_OK": 0.0312,
+        "BARE": 0.0208,
+        "OTHER": 0.0104
+      },
+      "dominant_family": "QO",
+      "quality": "ENERGY",
+      "prefixed_total": 558
+    },
+    "y": {
+      "middle": "y",
+      "total_tokens": 513,
+      "profile": {
+        "QO": 0.0097,
+        "CHSH": 0.152,
+        "DA_SA": 0.0019,
+        "OT_OL_OK": 0.4074,
+        "BARE": 0.1637,
+        "OTHER": 0.2651
+      },
+      "dominant_family": "OT_OL_OK",
+      "quality": "PHASE",
+      "prefixed_total": 293
+    }
+  },
+  "pair_classifications": [
+    {
+      "source_word": "shey",
+      "target_word": "aiin",
+      "source_middle": "ey",
+      "target_middle": "aiin",
+      "source_quality": "STABILITY",
+      "target_quality": "PHASE",
+      "is_cross_quality": true,
+      "is_opposition": false,
+      "opposition_axis": null
+    },
+    {
+      "source_word": "shey",
+      "target_word": "al",
+      "source_middle": "ey",
+      "target_middle": "al",
+      "source_quality": "STABILITY",
+      "target_quality": "PHASE",
+      "is_cross_quality": true,
+      "is_opposition": false,
+      "opposition_axis": null
+    },
+    {
+      "source_word": "shey",
+      "target_word": "c",
+      "source_middle": "ey",
+      "target_middle": "c",
+      "source_quality": "STABILITY",
+      "target_quality": "UNKNOWN",
+      "is_cross_quality": false,
+      "is_opposition": false,
+      "opposition_axis": null
+    },
+    {
+      "source_word": "chol",
+      "target_word": "r",
+      "source_middle": "ol",
+      "target_middle": "r",
+      "source_quality": "STABILITY",
+      "target_quality": "INFRASTRUCTURE",
+      "is_cross_quality": true,
+      "is_opposition": false,
+      "opposition_axis": null
+    },
+    {
+      "source_word": "chedy",
+      "target_word": "ee",
+      "source_middle": "edy",
+      "target_middle": "ee",
+      "source_quality": "UNKNOWN",
+      "target_quality": "STABILITY",
+      "is_cross_quality": false,
+      "is_opposition": false,
+      "opposition_axis": null
+    },
+    {
+      "source_word": "dy",
+      "target_word": "aiin",
+      "source_middle": "dy",
+      "target_middle": "aiin",
+      "source_quality": "STABILITY",
+      "target_quality": "PHASE",
+      "is_cross_quality": true,
+      "is_opposition": false,
+      "opposition_axis": null
+    },
+    {
+      "source_word": "dy",
+      "target_word": "chey",
+      "source_middle": "dy",
+      "target_middle": "ey",
+      "source_quality": "STABILITY",
+      "target_quality": "STABILITY",
+      "is_cross_quality": false,
+      "is_opposition": false,
+      "opposition_axis": null
+    },
+    {
+      "source_word": "l",
+      "target_word": "chol",
+      "source_middle": "l",
+      "target_middle": "ol",
+      "source_quality": "INFRASTRUCTURE",
+      "target_quality": "STABILITY",
+      "is_cross_quality": true,
+      "is_opposition": false,
+      "opposition_axis": null
+    },
+    {
+      "source_word": "or",
+      "target_word": "dal",
+      "source_middle": "or",
+      "target_middle": "l",
+      "source_quality": "STABILITY",
+      "target_quality": "INFRASTRUCTURE",
+      "is_cross_quality": true,
+      "is_opposition": false,
+      "opposition_axis": null
+    },
+    {
+      "source_word": "chey",
+      "target_word": "chedy",
+      "source_middle": "ey",
+      "target_middle": "edy",
+      "source_quality": "STABILITY",
+      "target_quality": "UNKNOWN",
+      "is_cross_quality": false,
+      "is_opposition": false,
+      "opposition_axis": null
+    },
+    {
+      "source_word": "chey",
+      "target_word": "shedy",
+      "source_middle": "ey",
+      "target_middle": "edy",
+      "source_quality": "STABILITY",
+      "target_quality": "UNKNOWN",
+      "is_cross_quality": false,
+      "is_opposition": false,
+      "opposition_axis": null
+    },
+    {
+      "source_word": "ar",
+      "target_word": "dal",
+      "source_middle": "ar",
+      "target_middle": "l",
+      "source_quality": "PHASE",
+      "target_quality": "INFRASTRUCTURE",
+      "is_cross_quality": true,
+      "is_opposition": true,
+      "opposition_axis": "INFRASTRUCTURE<>PHASE"
+    },
+    {
+      "source_word": "c",
+      "target_word": "ee",
+      "source_middle": "c",
+      "target_middle": "ee",
+      "source_quality": "UNKNOWN",
+      "target_quality": "STABILITY",
+      "is_cross_quality": false,
+      "is_opposition": false,
+      "opposition_axis": null
+    },
+    {
+      "source_word": "he",
+      "target_word": "t",
+      "source_middle": "he",
+      "target_middle": "t",
+      "source_quality": "UNKNOWN",
+      "target_quality": "ENERGY",
+      "is_cross_quality": false,
+      "is_opposition": false,
+      "opposition_axis": null
+    },
+    {
+      "source_word": "he",
+      "target_word": "or",
+      "source_middle": "he",
+      "target_middle": "or",
+      "source_quality": "UNKNOWN",
+      "target_quality": "STABILITY",
+      "is_cross_quality": false,
+      "is_opposition": false,
+      "opposition_axis": null
+    },
+    {
+      "source_word": "shedy",
+      "target_word": "aiin",
+      "source_middle": "edy",
+      "target_middle": "aiin",
+      "source_quality": "UNKNOWN",
+      "target_quality": "PHASE",
+      "is_cross_quality": false,
+      "is_opposition": false,
+      "opposition_axis": null
+    },
+    {
+      "source_word": "shedy",
+      "target_word": "o",
+      "source_middle": "edy",
+      "target_middle": "o",
+      "source_quality": "UNKNOWN",
+      "target_quality": "STABILITY",
+      "is_cross_quality": false,
+      "is_opposition": false,
+      "opposition_axis": null
+    }
+  ],
+  "quality_group_sizes": {
+    "PHASE": 5,
+    "STABILITY": 13,
+    "INFRASTRUCTURE": 3,
+    "ENERGY": 2
+  },
+  "interpretation": "Quality assignment based on PREFIX affiliation does not predict which transitions are forbidden. The Galenic quality-opposition analogy does not map onto the forbidden transition topology.",
+  "constraints_referenced": [
+    "C109",
+    "C625",
+    "C911",
+    "C1000",
+    "C1057"
+  ]
+}

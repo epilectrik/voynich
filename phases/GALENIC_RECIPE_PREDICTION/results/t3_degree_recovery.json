@@ -1,0 +1,631 @@
+{
+  "test": "T3_galenic_degree_recovery_residual",
+  "hypothesis": "Galenic intensity score explains AXM residual after controlling for REGIME",
+  "galenic_prediction": "Different degrees require different recovery strategies",
+  "verdict": "FAIL",
+  "n_folios": 72,
+  "galenic_score_stats": {
+    "mean": 0.0932,
+    "std": 0.0319,
+    "min": 0.0383,
+    "max": 0.1725
+  },
+  "raw_spearman": {
+    "rho": -0.0065,
+    "p": 0.957027
+  },
+  "partial_spearman_controlling_regime": {
+    "rho": 0.0221,
+    "p": 0.854072
+  },
+  "galenic_regime_correlation": {
+    "rho": 0.1527,
+    "p": 0.200325
+  },
+  "per_regime_stats": {
+    "REGIME_1": {
+      "n": 31,
+      "mean_galenic": 0.0854,
+      "std_galenic": 0.033
+    },
+    "REGIME_2": {
+      "n": 8,
+      "mean_galenic": 0.1266,
+      "std_galenic": 0.0316
+    },
+    "REGIME_3": {
+      "n": 15,
+      "mean_galenic": 0.0918,
+      "std_galenic": 0.0309
+    },
+    "REGIME_4": {
+      "n": 18,
+      "mean_galenic": 0.0929,
+      "std_galenic": 0.0191
+    }
+  },
+  "folio_details": [
+    {
+      "folio": "f103r",
+      "galenic_score": 0.0870333386330276,
+      "axm_residual": 0.0009085055199264946,
+      "axm_self": 0.75,
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    {
+      "folio": "f103v",
+      "galenic_score": 0.08072442839979624,
+      "axm_residual": 0.0770311021605784,
+      "axm_self": 0.735,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f104r",
+      "galenic_score": 0.13484713091750314,
+      "axm_residual": -0.003414692667732533,
+      "axm_self": 0.6862745098039216,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f104v",
+      "galenic_score": 0.12751073878154995,
+      "axm_residual": -0.006984566008186532,
+      "axm_self": 0.7624309392265194,
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    {
+      "folio": "f105r",
+      "galenic_score": 0.15071824571550957,
+      "axm_residual": 0.02043096833537761,
+      "axm_self": 0.6967213114754098,
+      "regime": "REGIME_2",
+      "section": "S"
+    },
+    {
+      "folio": "f105v",
+      "galenic_score": 0.16989367518280185,
+      "axm_residual": -0.06129267115736203,
+      "axm_self": 0.5652173913043478,
+      "regime": "REGIME_2",
+      "section": "S"
+    },
+    {
+      "folio": "f106r",
+      "galenic_score": 0.13392632372049437,
+      "axm_residual": 0.053331216757742994,
+      "axm_self": 0.7358490566037735,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f106v",
+      "galenic_score": 0.11946512459611516,
+      "axm_residual": 0.023872240770057562,
+      "axm_self": 0.6763005780346821,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f107r",
+      "galenic_score": 0.11585600988718572,
+      "axm_residual": 0.02876289528740794,
+      "axm_self": 0.6685082872928176,
+      "regime": "REGIME_2",
+      "section": "S"
+    },
+    {
+      "folio": "f107v",
+      "galenic_score": 0.09863293412010488,
+      "axm_residual": 0.11231523777270169,
+      "axm_self": 0.7360406091370558,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f108r",
+      "galenic_score": 0.09972070733607853,
+      "axm_residual": -0.11838417392889522,
+      "axm_self": 0.6073298429319371,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f108v",
+      "galenic_score": 0.08733004745098309,
+      "axm_residual": 0.019137408408345324,
+      "axm_self": 0.7131474103585658,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f111r",
+      "galenic_score": 0.1125976464610121,
+      "axm_residual": 0.0016244691174881476,
+      "axm_self": 0.6859504132231405,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f111v",
+      "galenic_score": 0.08475713975296059,
+      "axm_residual": 0.027322531873015476,
+      "axm_self": 0.7423076923076923,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f112r",
+      "galenic_score": 0.11120152069635841,
+      "axm_residual": -0.17508035964539703,
+      "axm_self": 0.49193548387096775,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f112v",
+      "galenic_score": 0.1118627955044989,
+      "axm_residual": -0.04572641263585697,
+      "axm_self": 0.6333333333333333,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f113r",
+      "galenic_score": 0.1573423078096861,
+      "axm_residual": -0.03149770185365375,
+      "axm_self": 0.6432748538011696,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f113v",
+      "galenic_score": 0.12877566267374313,
+      "axm_residual": -0.04757335740747726,
+      "axm_self": 0.6126760563380281,
+      "regime": "REGIME_2",
+      "section": "S"
+    },
+    {
+      "folio": "f114r",
+      "galenic_score": 0.17254247096026415,
+      "axm_residual": -0.045094770754387725,
+      "axm_self": 0.6458333333333334,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f114v",
+      "galenic_score": 0.13717933009791464,
+      "axm_residual": -0.022489436102092863,
+      "axm_self": 0.7073170731707317,
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    {
+      "folio": "f115r",
+      "galenic_score": 0.1520613571305846,
+      "axm_residual": 0.038247720235394356,
+      "axm_self": 0.8121546961325967,
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    {
+      "folio": "f115v",
+      "galenic_score": 0.16817484535985555,
+      "axm_residual": 0.12195353726900982,
+      "axm_self": 0.8333333333333334,
+      "regime": "REGIME_2",
+      "section": "S"
+    },
+    {
+      "folio": "f116r",
+      "galenic_score": 0.09016973191086623,
+      "axm_residual": 0.032600308654023635,
+      "axm_self": 0.716,
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    {
+      "folio": "f31r",
+      "galenic_score": 0.08039370790800382,
+      "axm_residual": -0.051370300293517523,
+      "axm_self": 0.625,
+      "regime": "REGIME_3",
+      "section": "H"
+    },
+    {
+      "folio": "f31v",
+      "galenic_score": 0.09274452500830274,
+      "axm_residual": -0.3013128736462827,
+      "axm_self": 0.28,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f33v",
+      "galenic_score": 0.054975449174083396,
+      "axm_residual": -0.0943329754500633,
+      "axm_self": 0.4166666666666667,
+      "regime": "REGIME_3",
+      "section": "H"
+    },
+    {
+      "folio": "f34r",
+      "galenic_score": 0.0872074365794229,
+      "axm_residual": -0.021452211070182914,
+      "axm_self": 0.6086956521739131,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f34v",
+      "galenic_score": 0.08070407721509393,
+      "axm_residual": 0.13040598978775242,
+      "axm_self": 0.7346938775510204,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f39r",
+      "galenic_score": 0.08693045041338604,
+      "axm_residual": 0.02317301055166321,
+      "axm_self": 0.6296296296296297,
+      "regime": "REGIME_3",
+      "section": "H"
+    },
+    {
+      "folio": "f39v",
+      "galenic_score": 0.07046917945543159,
+      "axm_residual": 0.10001672430656516,
+      "axm_self": 0.5490196078431373,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f40r",
+      "galenic_score": 0.07005746803290679,
+      "axm_residual": 0.04603241946012199,
+      "axm_self": 0.5,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f40v",
+      "galenic_score": 0.058457810884328526,
+      "axm_residual": -0.003975637398376697,
+      "axm_self": 0.5121951219512195,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f43r",
+      "galenic_score": 0.10429024565705201,
+      "axm_residual": 0.021935317623890116,
+      "axm_self": 0.576271186440678,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f43v",
+      "galenic_score": 0.08382337672622225,
+      "axm_residual": -0.0425524354576694,
+      "axm_self": 0.5714285714285714,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f46r",
+      "galenic_score": 0.10442975470166709,
+      "axm_residual": 0.013708022685859467,
+      "axm_self": 0.7096774193548387,
+      "regime": "REGIME_3",
+      "section": "H"
+    },
+    {
+      "folio": "f46v",
+      "galenic_score": 0.09451450889271591,
+      "axm_residual": -0.039876564172406814,
+      "axm_self": 0.5853658536585366,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f48v",
+      "galenic_score": 0.07949149320314908,
+      "axm_residual": -0.05184915636861598,
+      "axm_self": 0.52,
+      "regime": "REGIME_2",
+      "section": "H"
+    },
+    {
+      "folio": "f50v",
+      "galenic_score": 0.1006311981425331,
+      "axm_residual": 0.11710842732603521,
+      "axm_self": 0.6756756756756757,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f55r",
+      "galenic_score": 0.08988182239249262,
+      "axm_residual": -0.1212138822127996,
+      "axm_self": 0.4444444444444444,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f55v",
+      "galenic_score": 0.09841846140997478,
+      "axm_residual": -0.17561702214135294,
+      "axm_self": 0.36666666666666664,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f66r",
+      "galenic_score": 0.10531266730449211,
+      "axm_residual": -0.0037948307297043238,
+      "axm_self": 0.6634615384615384,
+      "regime": "REGIME_1",
+      "section": "T"
+    },
+    {
+      "folio": "f66v",
+      "galenic_score": 0.1389347629100902,
+      "axm_residual": 0.14016937116461514,
+      "axm_self": 0.6666666666666666,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f75r",
+      "galenic_score": 0.03834265342002287,
+      "axm_residual": 0.04107820462364575,
+      "axm_self": 0.7777777777777778,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f75v",
+      "galenic_score": 0.05288411555166745,
+      "axm_residual": -0.0073559221844748945,
+      "axm_self": 0.7231638418079096,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f76r",
+      "galenic_score": 0.058822034793402554,
+      "axm_residual": -0.003617842981962438,
+      "axm_self": 0.7689655172413793,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f76v",
+      "galenic_score": 0.07226936847974247,
+      "axm_residual": 0.04430280827890942,
+      "axm_self": 0.7700534759358288,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f77r",
+      "galenic_score": 0.05786406181459455,
+      "axm_residual": 0.01930303845814818,
+      "axm_self": 0.8688524590163934,
+      "regime": "REGIME_3",
+      "section": "B"
+    },
+    {
+      "folio": "f77v",
+      "galenic_score": 0.053720620664944145,
+      "axm_residual": 0.03263663080335555,
+      "axm_self": 0.8074866310160428,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f78r",
+      "galenic_score": 0.059564659523757835,
+      "axm_residual": -0.08518589766564477,
+      "axm_self": 0.5905511811023622,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f78v",
+      "galenic_score": 0.05181508714580401,
+      "axm_residual": -0.061242237451063386,
+      "axm_self": 0.6058394160583942,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f79r",
+      "galenic_score": 0.057495819829628564,
+      "axm_residual": -0.03193398081794163,
+      "axm_self": 0.7228260869565217,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f79v",
+      "galenic_score": 0.05546984402469803,
+      "axm_residual": 0.009682604417197815,
+      "axm_self": 0.7278481012658228,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f80r",
+      "galenic_score": 0.0741040122490183,
+      "axm_residual": 0.036533226590336754,
+      "axm_self": 0.8075313807531381,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f80v",
+      "galenic_score": 0.06385637756974952,
+      "axm_residual": 0.04905253988381175,
+      "axm_self": 0.7422680412371134,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f81r",
+      "galenic_score": 0.0569491311338977,
+      "axm_residual": -0.10618899447157049,
+      "axm_self": 0.67,
+      "regime": "REGIME_3",
+      "section": "B"
+    },
+    {
+      "folio": "f81v",
+      "galenic_score": 0.06308009556558114,
+      "axm_residual": -0.01661297705555964,
+      "axm_self": 0.6434782608695652,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f82r",
+      "galenic_score": 0.06058937950639402,
+      "axm_residual": 0.04486847766437885,
+      "axm_self": 0.8552631578947368,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f82v",
+      "galenic_score": 0.08014292022370044,
+      "axm_residual": 0.06859244672435882,
+      "axm_self": 0.84472049689441,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f83r",
+      "galenic_score": 0.07969465421024702,
+      "axm_residual": 0.06457915690842098,
+      "axm_self": 0.8303030303030303,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f83v",
+      "galenic_score": 0.07199697780298533,
+      "axm_residual": -0.02147277934228764,
+      "axm_self": 0.8333333333333334,
+      "regime": "REGIME_3",
+      "section": "B"
+    },
+    {
+      "folio": "f84r",
+      "galenic_score": 0.06360082954503829,
+      "axm_residual": -0.017973624269672528,
+      "axm_self": 0.6705882352941176,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f84v",
+      "galenic_score": 0.050323631625518644,
+      "axm_residual": -0.05904487811237047,
+      "axm_self": 0.6027397260273972,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f85r1",
+      "galenic_score": 0.11571007754016718,
+      "axm_residual": 0.003794830729705989,
+      "axm_self": 0.5052631578947369,
+      "regime": "REGIME_4",
+      "section": "T"
+    },
+    {
+      "folio": "f85r2",
+      "galenic_score": 0.10649971898111552,
+      "axm_residual": 0.014289770557716741,
+      "axm_self": 0.6666666666666666,
+      "regime": "REGIME_4",
+      "section": "C"
+    },
+    {
+      "folio": "f86v3",
+      "galenic_score": 0.10412573227399194,
+      "axm_residual": -0.02087847158099787,
+      "axm_self": 0.6583333333333333,
+      "regime": "REGIME_2",
+      "section": "C"
+    },
+    {
+      "folio": "f86v4",
+      "galenic_score": 0.13308411983793858,
+      "axm_residual": -0.0610943802885362,
+      "axm_self": 0.5862068965517241,
+      "regime": "REGIME_3",
+      "section": "C"
+    },
+    {
+      "folio": "f86v5",
+      "galenic_score": 0.0955229490851677,
+      "axm_residual": 0.0104462556226661,
+      "axm_self": 0.6223776223776224,
+      "regime": "REGIME_2",
+      "section": "C"
+    },
+    {
+      "folio": "f86v6",
+      "galenic_score": 0.10713612699364755,
+      "axm_residual": 0.057236825689156334,
+      "axm_self": 0.6827956989247311,
+      "regime": "REGIME_4",
+      "section": "C"
+    },
+    {
+      "folio": "f94v",
+      "galenic_score": 0.06713468758829647,
+      "axm_residual": 0.06047946552928496,
+      "axm_self": 0.6206896551724138,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f95r1",
+      "galenic_score": 0.06306057515899278,
+      "axm_residual": 0.18641180545487968,
+      "axm_self": 0.7959183673469388,
+      "regime": "REGIME_3",
+      "section": "H"
+    },
+    {
+      "folio": "f95r2",
+      "galenic_score": 0.07272811733969917,
+      "axm_residual": 0.04958102039637724,
+      "axm_self": 0.6451612903225806,
+      "regime": "REGIME_3",
+      "section": "H"
+    },
+    {
+      "folio": "f95v1",
+      "galenic_score": 0.10630499968893568,
+      "axm_residual": 0.014531483924244859,
+      "axm_self": 0.5625,
+      "regime": "REGIME_4",
+      "section": "H"
+    }
+  ],
+  "interpretation": "Galenic degree is mechanically correlated with REGIME. Since REGIME does not predict recovery (C634: all KW p > 0.40), neither does Galenic degree. The Galenic degree analogy is absorbed by the existing REGIME classification.",
+  "constraints_referenced": [
+    "C634",
+    "C1017",
+    "C1035"
+  ]
+}

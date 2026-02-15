@@ -1,0 +1,52 @@
+{
+  "phase": 379,
+  "name": "MORPHOLOGICAL_DEEP_STRUCTURE",
+  "description": "5-test battery: suffix microstructure + compound composition rules",
+  "tier": 2,
+  "tests": [
+    {
+      "id": "T1",
+      "name": "Suffix Signal Decomposition",
+      "verdict": "PASS"
+    },
+    {
+      "id": "T2",
+      "name": "Suffix-Role PREFIX Mediation",
+      "verdict": "INDEPENDENT"
+    },
+    {
+      "id": "T3",
+      "name": "Atom Position Grammar",
+      "verdict": "PASS"
+    },
+    {
+      "id": "T4",
+      "name": "Atom Co-Occurrence Rules",
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "T5",
+      "name": "Compound Depth-Specificity",
+      "verdict": "PARTIAL"
+    }
+  ],
+  "constraints_referenced": [
+    "C1002",
+    "C1004",
+    "C1029",
+    "C1053",
+    "C378",
+    "C475",
+    "C521",
+    "C522",
+    "C556",
+    "C588",
+    "C611",
+    "C766",
+    "C767",
+    "C768",
+    "C769",
+    "C935",
+    "C957"
+  ]
+}

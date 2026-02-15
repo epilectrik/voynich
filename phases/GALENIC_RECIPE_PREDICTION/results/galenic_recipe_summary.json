@@ -1,0 +1,36 @@
+{
+  "phase": 378,
+  "name": "GALENIC_RECIPE_PREDICTION",
+  "description": "3-test battery testing Galenic framework predictions against Voynich structure",
+  "tier": 4,
+  "tests": [
+    {
+      "id": "T1",
+      "name": "Degree-Hazard Correlation",
+      "verdict": "FAIL"
+    },
+    {
+      "id": "T2",
+      "name": "Quality Opposition Directionality",
+      "verdict": "FAIL"
+    },
+    {
+      "id": "T3",
+      "name": "Galenic Degree Recovery Residual",
+      "verdict": "FAIL"
+    }
+  ],
+  "overall": "0/3 PASS, 0/3 PARTIAL, 3/3 FAIL",
+  "constraints_referenced": [
+    "C1000",
+    "C1017",
+    "C1035",
+    "C1057",
+    "C109",
+    "C541",
+    "C623",
+    "C625",
+    "C634",
+    "C911"
+  ]
+}

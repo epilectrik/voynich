@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 922 constraints | 2026-02-15
+CONSTRAINT_REFERENCE v2.6 | 927 constraints | 2026-02-15
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -926,3 +926,8 @@ C1054	**Affordance Bin Gradient Invariance** (HUB fraction ~64% at every quintil
 C1055	**M2 Near-Section-Decomposable** (per-section M2: BIO 78%, STARS_RECIPE 79%, HERBAL 70%; pooling advantage only +0.5 tests; topology preserved, distributional tests degrade cross-section)	2	B	-> C1055_section_m2_near_decomposable.md
 C1056	**MIDPROCESS Structural Absence / OJLM-1 Boundary** (0/245 v3 recipes have MIDPROCESS actions; 0/509 master materials have process monitoring; MIDPROCESS is tacit operator knowledge; Path C mechanically passable but circular; Voynich M2 residual parallels 2/3 dynamic/pairwise)	2	B	-> C1056_midprocess_structural_absence.md
 C1057	**Lane-Sister Orthogonal Axes** (partial r=-0.064 controlling QO density; raw rho=0.210 vanishes; PCA Kaiser=2 PCs from 3 measures; ok/ot NOT independent third axis; 82 folios)	2	B	-> C1057_lane_sister_orthogonal_axes.md
+C1058	**Suffix Sequential Grammar Genuine** (raw V=0.0662 → residual V=0.0621 after role+repeat decomposition; 6.2% artifact; 18 residual pairs |z|>3; section-universal V=0.079-0.195; top drivers dy→dy z=9.76, edy→edy z=9.13, ain→hy z=7.48)	2	B	-> C1058_suffix_sequential_grammar_genuine.md
+C1059	**Suffix-Role PREFIX Independent** (V_raw=0.2869, V_conditioned=0.3750, mediation=-30.7%; per-PREFIX V: ol=0.663, ok=0.655, da=0.611, ot=0.532, BARE=0.436, ch=0.129, sh=0.120; 16054 classified tokens)	2	B	-> C1059_suffix_role_prefix_independent.md
+C1060	**Atom Position Grammar** (V=0.3331, chi²=201.1, p=3.8e-14; 5/37 atoms Bonferroni-significant; INITIAL: opch 14/15, eol 12/14, op 20/24; FINAL: ai 29/51, kc 12/14; kernel prediction k=0.292 vs e=0.332 MW p=0.054; 449 compounds)	2	B	-> C1060_atom_position_grammar.md
+C1061	**Atom Co-occurrence Structure** (chi²=1829.9, p=3.6e-7; 10 enriched pairs z>3: eeo+eod z=7.51, al+lk z=6.10, al+lo z=4.74; 0 depleted; C475 compliance 100% but random=100% enrichment=1.0x; 449 compounds, 56 atoms)	2	B	-> C1061_atom_cooccurrence_structure.md
+C1062	**Compound Depth-Folio Specificity** (Spearman rho=-0.2698, p=5.3e-23; depth 0 mean=10.5 folios, depth 3+=1.0-1.2; max depth=5; UN mean=1.22 vs classified=0.52 MW p=5.5e-13; within-role KW p=0.50 NS; 1293 MIDDLE types)	2	B	-> C1062_compound_depth_folio_specificity.md

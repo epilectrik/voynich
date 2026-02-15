@@ -2586,6 +2586,88 @@ Lane balance and sister preference are independent folio-level control decisions
 
 ---
 
+### Suffix Sequential Grammar Genuine (C1058) — Phase: MORPHOLOGICAL_DEEP_STRUCTURE
+
+Suffix bigram signal (C1002 V=0.063) survives 3-stage decomposition: role conditioning removes 4.1%, token repetition removes 2.7%, combined residual V=0.062 (6.2% total reduction). Genuine suffix-to-suffix grammar.
+
+| # | Statement Summary | Tier | Scope | File |
+|---|-----------|------|-------|----------|
+| **1058** | **Suffix Sequential Grammar Genuine** (raw V=0.0662 → residual V=0.0621 after role+repeat decomposition; 6.2% artifact; 18 residual pairs |z|>3; section-universal V=0.079-0.195; top drivers dy→dy z=9.76, edy→edy z=9.13, ain→hy z=7.48) | 2 | B | -> [C1058_suffix_sequential_grammar_genuine.md](C1058_suffix_sequential_grammar_genuine.md) |
+
+**Phase findings:**
+- Suffix sequential grammar is 93.8% genuine, not role or repetition artifact
+- Top pairs: dy→dy, edy→edy (self-repetition) and ain→hy (cross-suffix transition)
+- Signal present in all 5 sections but section-modulated (stronger in T, C)
+- Extends C1002; reconciles with C1004 (zero cross-token information at suffix level, not full-token level)
+
+---
+
+### Suffix-Role PREFIX Independent (C1059) — Phase: MORPHOLOGICAL_DEEP_STRUCTURE
+
+Suffix carries independent role information beyond PREFIX. V *increases* 30.7% after PREFIX conditioning (anti-mediation).
+
+| # | Statement Summary | Tier | Scope | File |
+|---|-----------|------|-------|----------|
+| **1059** | **Suffix-Role PREFIX Independent** (V_raw=0.2869, V_conditioned=0.3750, mediation=-30.7%; per-PREFIX V: ol=0.663, ok=0.655, da=0.611, ot=0.532, BARE=0.436, ch=0.129, sh=0.120; 16054 classified tokens) | 2 | B | -> [C1059_suffix_role_prefix_independent.md](C1059_suffix_role_prefix_independent.md) |
+
+**Phase findings:**
+- PREFIX does not mediate suffix-role association — it masks it (anti-mediation)
+- Within individual PREFIX groups, suffix still strongly predicts role (V up to 0.66)
+- Three-layer role encoding: PREFIX (primary), suffix (independent secondary), joint combination
+- Extends C588, C556, C378
+
+---
+
+### Atom Position Grammar (C1060) — Phase: MORPHOLOGICAL_DEEP_STRUCTURE
+
+Compound atoms have non-random positional preferences (V=0.333, p=3.8e-14).
+
+| # | Statement Summary | Tier | Scope | File |
+|---|-----------|------|-------|----------|
+| **1060** | **Atom Position Grammar** (V=0.3331, chi²=201.1, p=3.8e-14; 5/37 atoms Bonferroni-significant; INITIAL: opch 14/15, eol 12/14, op 20/24; FINAL: ai 29/51, kc 12/14; kernel prediction k=0.292 vs e=0.332 MW p=0.054; 449 compounds) | 2 | B | -> [C1060_atom_position_grammar.md](C1060_atom_position_grammar.md) |
+
+**Phase findings:**
+- Atoms opch, eol, op are "gateway atoms" (almost exclusively compound-initial)
+- Atoms ai, kc are "terminal atoms" (predominantly compound-final)
+- Kernel prediction (k-early, e-late) marginally significant, directionally consistent with C521
+- kc is FINAL despite k-content — k in its boundary/closure role
+- Extends C521, C522, C935
+
+---
+
+### Atom Co-occurrence Structure (C1061) — Phase: MORPHOLOGICAL_DEEP_STRUCTURE
+
+Compound atom pairs show structured co-occurrence (chi²=1830, p=3.6e-7). 10 enriched, 0 depleted.
+
+| # | Statement Summary | Tier | Scope | File |
+|---|-----------|------|-------|----------|
+| **1061** | **Atom Co-occurrence Structure** (chi²=1829.9, p=3.6e-7; 10 enriched pairs z>3: eeo+eod z=7.51, al+lk z=6.10, al+lo z=4.74; 0 depleted; C475 compliance 100% but random=100% enrichment=1.0x; 449 compounds, 56 atoms) | 2 | B | -> [C1061_atom_cooccurrence_structure.md](C1061_atom_cooccurrence_structure.md) |
+
+**Phase findings:**
+- Enrichment driven by overlap-sharing (al+lk, eeo+eod) and kernel coherence (ech+ke)
+- No forbidden atom pairs — construction grammar is generative not restrictive
+- C475 incompatibility operates at token level, not atom-within-compound level
+- Extends C475, C1053
+
+---
+
+### Compound Depth-Folio Specificity (C1062) — Phase: MORPHOLOGICAL_DEEP_STRUCTURE
+
+Compound depth negatively correlates with folio spread (rho=-0.27, p=5.3e-23).
+
+| # | Statement Summary | Tier | Scope | File |
+|---|-----------|------|-------|----------|
+| **1062** | **Compound Depth-Folio Specificity** (Spearman rho=-0.2698, p=5.3e-23; depth 0 mean=10.5 folios, depth 3+=1.0-1.2; max depth=5; UN mean=1.22 vs classified=0.52 MW p=5.5e-13; within-role KW p=0.50 NS; 1293 MIDDLE types) | 2 | B | -> [C1062_compound_depth_folio_specificity.md](C1062_compound_depth_folio_specificity.md) |
+
+**Phase findings:**
+- Depth functions as specialization gradient: deeper = more folio-specific
+- Max depth = 5 with exponential decay (76 at depth 3, 8 at depth 4, 2 at depth 5)
+- UN MIDDLEs are deeper than classified — they are the compositional vocabulary
+- Depth is between-role (classified vs UN) not within-role
+- Extends C769, C766, C767
+
+---
+
 ## Navigation
 
 ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)

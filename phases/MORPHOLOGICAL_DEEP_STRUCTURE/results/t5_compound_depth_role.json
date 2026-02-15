@@ -1,0 +1,51 @@
+{
+  "test": "T5_compound_depth_specificity",
+  "verdict": "PARTIAL",
+  "n_middles": 1293,
+  "depth_distribution": {
+    "0": 319,
+    "1": 525,
+    "2": 363,
+    "3": 76,
+    "5": 2,
+    "4": 8
+  },
+  "primary_test": {
+    "rho": -0.2698,
+    "p": 5.345643468978606e-23
+  },
+  "classified_vs_un": {
+    "classified_mean_depth": 0.5233,
+    "un_mean_depth": 1.2229,
+    "MW_U": 74441.0,
+    "MW_p": 5.460744951243198e-13
+  },
+  "kruskal_wallis": {
+    "H": 0.4,
+    "p": 0.5035
+  },
+  "role_depth": {
+    "AX": {
+      "n": 7,
+      "mean": 1.43
+    },
+    "FQ": {
+      "n": 2,
+      "mean": 2.0
+    },
+    "EN": {
+      "n": 19,
+      "mean": 1.58
+    },
+    "CC": {
+      "n": 1,
+      "mean": 1.0
+    }
+  },
+  "constraints_referenced": [
+    "C766",
+    "C767",
+    "C768",
+    "C769"
+  ]
+}

@@ -4,6 +4,62 @@
 
 ---
 
+## Version 4.06 (2026-02-15) - Morphological Deep Structure (5-Test Battery)
+
+### Summary
+
+Phase 379 combines the two highest-yield morphological directions: suffix sequential microstructure and compound MIDDLE composition rules. 5-test battery, expert-advisor reviewed. Results: 2 PASS, 1 INDEPENDENT, 2 PARTIAL. 5 new constraints (C1058-C1062).
+
+Key findings:
+- **Suffix sequential grammar is genuine** (T1 PASS): V drops only 6.2% after role and repetition decomposition (0.066→0.062). Signal is section-universal.
+- **Suffix-role independence from PREFIX** (T2 INDEPENDENT): V *increases* 30.7% after PREFIX conditioning. Suffix carries independent role information — anti-mediation.
+- **Atom position grammar** (T3 PASS): V=0.333, p=3.8e-14. opch/eol→INITIAL, ai/kc→FINAL. 5 atoms significant after Bonferroni. Kernel prediction (k-early, e-late) marginally significant (p=0.054).
+- **Atom co-occurrence structure** (T4 PARTIAL): 10 enriched pairs (z>3), 0 depleted. chi²=1830, p=3.6e-7. C475 compliance 100% but matches random baseline — C475 operates at token level, not atom level.
+- **Compound depth-folio specificity** (T5 PARTIAL): rho=-0.27, p=5.3e-23. Deeper compounds are more folio-specific. Max depth=5. UN deeper than classified (p=5.5e-13). No within-role variation.
+
+### New Files
+
+| File | Purpose |
+|------|---------|
+| `phases/MORPHOLOGICAL_DEEP_STRUCTURE/scripts/morphological_deep_structure.py` | 5-test battery |
+| `phases/MORPHOLOGICAL_DEEP_STRUCTURE/results/t1_suffix_signal_decomposition.json` | T1 results |
+| `phases/MORPHOLOGICAL_DEEP_STRUCTURE/results/t2_role_suffix_signatures.json` | T2 results |
+| `phases/MORPHOLOGICAL_DEEP_STRUCTURE/results/t3_atom_position_grammar.json` | T3 results |
+| `phases/MORPHOLOGICAL_DEEP_STRUCTURE/results/t4_atom_cooccurrence_rules.json` | T4 results |
+| `phases/MORPHOLOGICAL_DEEP_STRUCTURE/results/t5_compound_depth_role.json` | T5 results |
+| `phases/MORPHOLOGICAL_DEEP_STRUCTURE/results/morphological_deep_summary.json` | Combined summary |
+| `context/CLAIMS/C1058_suffix_sequential_grammar_genuine.md` | Suffix signal decomposition |
+| `context/CLAIMS/C1059_suffix_role_prefix_independent.md` | Suffix-role PREFIX independence |
+| `context/CLAIMS/C1060_atom_position_grammar.md` | Atom positional preferences |
+| `context/CLAIMS/C1061_atom_cooccurrence_structure.md` | Atom co-occurrence patterns |
+| `context/CLAIMS/C1062_compound_depth_folio_specificity.md` | Depth-specificity gradient |
+
+---
+
+## Version 4.05 (2026-02-15) - Galenic Recipe Physics Prediction (3-Test Battery)
+
+### Summary
+
+Phase 378 tests whether the Galenic framework makes recipe-level physics predictions about the Voynich (all Tier 4). 3-test battery, expert-advisor designed: T1 (degree-hazard correlation), T2 (quality opposition directionality), T3 (Galenic degree recovery residual). All 3 FAIL. The FAILs map the boundary of the Galenic analogy: framework-level alignment holds (F-RUP-001), but recipe-level physics (which MIDDLEs are dangerous, which transitions forbidden, how folios recover) do NOT follow Galenic rules. Break point: Galenic system is scalar (4×4 cells), Voynich is topological (23 hub nodes, 17 forbidden transitions, compatibility graphs). No new constraints. No new fits.
+
+### New Files
+
+| File | Purpose |
+|------|---------|
+| `phases/GALENIC_RECIPE_PREDICTION/scripts/galenic_recipe_prediction.py` | 3-test battery |
+| `phases/GALENIC_RECIPE_PREDICTION/results/t1_degree_hazard.json` | T1 results |
+| `phases/GALENIC_RECIPE_PREDICTION/results/t2_quality_directionality.json` | T2 results |
+| `phases/GALENIC_RECIPE_PREDICTION/results/t3_degree_recovery.json` | T3 results |
+| `phases/GALENIC_RECIPE_PREDICTION/results/galenic_recipe_summary.json` | Combined summary |
+
+### Updated Files
+
+| File | Change |
+|------|--------|
+| `context/SPECULATIVE/rupescissa_comparative.md` | Added Phase 378 Galenic Recipe Physics section |
+
+---
+
 ## Version 4.04 (2026-02-15) - Galenic Enhancement Analysis (Synthesis)
 
 ### Summary

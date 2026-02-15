@@ -435,3 +435,49 @@ This pattern is consistent with a designer who understood the Galenic organizati
 4. **No claim of unique fit.** Other organizational frameworks might also show structural parallels. The Galenic framework is tested because Rupescissa sits in the same tradition as Brunschwig, which already shows alignment (Phases 355-371). The fit is tested, not asserted.
 
 5. **Tier 4 throughout.** Every enhancement mapping requires accepting the Galenic interpretive frame. The Voynich-side constraints (C109, C121, C475, C995, C997, C982, C1053) are Tier 0-2. The MAPPING to Galenic categories is Tier 4.
+
+---
+
+## Phase 378: Galenic Recipe Physics Prediction (3-Test Battery)
+
+**Phase:** 378 | **Tier:** 4 | **Date:** 2026-02-15
+
+### Purpose
+
+Tests whether the Galenic framework makes specific, falsifiable *physics* predictions about the Voynich — not just structural correspondence (F-RUP-001) but recipe-level mapping. Three tests, each with pre-registered falsification criteria. Expert-advisor designed (dropped 3 originally proposed tests as pre-answered by existing constraints).
+
+### Results
+
+| Test | Prediction | Verdict | Key Metric |
+|------|-----------|---------|------------|
+| T1: Degree-Hazard Correlation | Rare (high-degree) MIDDLEs are dangerous | **FAIL** | All 23 HUB MIDDLEs in Q1 (most frequent) |
+| T2: Quality Opposition Directionality | Cross-quality transitions are disproportionately forbidden | **FAIL** | 7/8 cross-quality but p=0.177 (permutation) |
+| T3: Galenic Degree Recovery Residual | Galenic intensity explains AXM residual beyond REGIME | **FAIL** | Partial rho=0.022, p=0.854 |
+
+**Overall: 0/3 PASS, 0/3 PARTIAL, 3/3 FAIL**
+
+### What the FAILs Reveal
+
+**T1: Hazard is topological, not scalar.** In Galenic medicine, danger scales with intensity — degree 4 is rare and extreme. In the Voynich, danger is *hub-mediated* (C1000): ALL 23 HUB MIDDLEs are in the most-frequent quartile. Hazard isn't about rarity; it's about connectivity. The forbidden transitions go through the network's most-trafficked nodes, not its rarest. This is the clearest break from Galenic degree logic.
+
+**T2: Quality assignment is dominated by STABILITY.** 13/23 HUB MIDDLEs are CHSH-dominant (assigned STABILITY quality). With such skew, 9/17 forbidden pairs have at least one unclassifiable MIDDLE (c, he, edy are non-HUB), and of the 8 valid pairs, the cross-quality rate (87.5%) doesn't exceed the permutation null (p=0.177). The Voynich doesn't distribute MIDDLEs evenly across 4 quality axes — the CHSH lane dominates HUB. This is consistent with C1000's finding that PREFIX creates lane separation (Cramér's V=0.689), but the lane separation doesn't map to 4 equal Galenic qualities.
+
+**T3: Galenic degree adds nothing to recovery.** The Galenic intensity score has near-zero correlation with AXM residual (raw rho=-0.007, partial rho=0.022). Galenic degree is not even strongly confounded with REGIME (rho=0.153, p=0.200). The 57% irreducible residual (C1035) remains genuinely irreducible — it's not Galenic degree hiding behind REGIME.
+
+### Structural Implications
+
+The 3 FAILs together map the **boundary of the Galenic analogy**:
+
+1. **Framework-level alignment holds** (F-RUP-001: 6/6 directional enhancement axes). The Voynich's *organizational architecture* aligns with Galenic logic.
+
+2. **Recipe-level prediction fails** (Phase 378: 0/3 tests). The Voynich's *specific physics* (which MIDDLEs are dangerous, which transitions are forbidden, how folios recover) do NOT follow Galenic rules.
+
+3. **The break point is topology vs. scalar.** The Galenic system is fundamentally scalar (4 qualities × 4 degrees = 16 cells). The Voynich system is fundamentally topological (23 hub nodes, 17 forbidden transitions, 5 failure classes, compatibility graphs). The organizational *frame* transferred; the operational *mechanism* did not.
+
+### Files
+
+- Script: `phases/GALENIC_RECIPE_PREDICTION/scripts/galenic_recipe_prediction.py`
+- T1: `phases/GALENIC_RECIPE_PREDICTION/results/t1_degree_hazard.json`
+- T2: `phases/GALENIC_RECIPE_PREDICTION/results/t2_quality_directionality.json`
+- T3: `phases/GALENIC_RECIPE_PREDICTION/results/t3_degree_recovery.json`
+- Summary: `phases/GALENIC_RECIPE_PREDICTION/results/galenic_recipe_summary.json`
