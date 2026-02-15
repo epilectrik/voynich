@@ -4,6 +4,20 @@
 
 ---
 
+## Version 3.87 (2026-02-14) - AXM Run Entropy Convergence + Residual Closure (C1038)
+
+### Summary
+
+Phase 360 tested the last candidate stratum for C1035's 57% irreducible AXM self-transition residual: micro-sequential dynamics within AXM runs. Positive finding: AXM runs converge monotonically — conditional entropy decreases from H=3.84 bits (position 1) to H=2.52 bits (position 6), slope=-0.248 bits/position. This is a grammar-level invariant (ANOVA by archetype p=0.117), consistent with C978 mixing time and C1007 gatekeeper enrichment. Negative finding: all three micro-sequential predictors (entropy gradient, per-folio JSD, per-folio CMI) fail to predict the residual after sample-size control. JSD and CMI were heavily confounded with transition count (JSD vs log(N): rho=-0.675; CMI vs log(N): rho=+0.499); after residualizing, both collapse (JSD rho: -0.295→-0.149; CMI rho: +0.237→+0.082). Corpus JSD=0.066 bits validates C1024 (0.070). Completes four-phase elimination (C1035/C1036/C1037/C1038): the 57% residual is confirmed as the design freedom space predicted by C458 (recovery freedom) and C980 (66.3% free variation envelope). 1 new constraint (C1038). Phase 360.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1038 | AXM Run Entropy Convergence + Micro-Sequential Stratum Empty | 2 |
+
+---
+
 ## Version 3.86 (2026-02-14) - AXM Class Composition Redundancy (C1037)
 
 ### Summary

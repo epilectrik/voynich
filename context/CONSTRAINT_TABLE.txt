@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 902 constraints | 2026-02-14
+CONSTRAINT_REFERENCE v2.6 | 903 constraints | 2026-02-14
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -906,3 +906,4 @@ C1034	**Symmetric Forbidden Suppression Fixes B5** (M5-SF: bidirectional forbidd
 C1035	**AXM Residual Irreducible** (0/7 PASS; all 6 predictors dR2 < 0.013; RF CV R2 = -0.149; LOO gap 0.132; residual = free design space per C458/C980)	2	B	-> C1035_axm_residual_irreducible.md
 C1036	**AXM Exit Pathway Allocation Frequency-Neutral** (2/7 PASS; CV ranking FQ<FL<CC<AXm = frequency order; FL/CC uncorrelated rho=-0.003; ingress mirror identical; dwell CV same pattern; C458 localized to within-AXM dynamics)	2	B	-> C1036_exit_pathway_neutrality.md
 C1037	**AXM Class Composition Redundant** (2/6 PASS; class PCs LOO R²=-0.071 on residual; incremental LOO +0.005; PREFIX-class rho=-0.55; C458 not in class proportions; third elimination stratum)	2	B	-> C1037_axm_class_composition_redundant.md
+C1038	**AXM Run Entropy Convergence + Micro-Sequential Stratum Empty** (0/6 PASS after size control; entropy slope=-0.248 bits/pos; JSD/CMI size-confounded; four-phase elimination complete; residual = design freedom)	2	B	-> C1038_axm_run_entropy_convergence.md

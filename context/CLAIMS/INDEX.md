@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 902 validated constraints | **Version:** 3.86 | **Date:** 2026-02-14
+**Total:** 903 validated constraints | **Version:** 3.87 | **Date:** 2026-02-14
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2399,6 +2399,25 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - PREFIX PC1 vs Class PC1 rho = -0.550 — strong coupling confirms C1023 routing
 - Class entropy uncorrelated with AXM self-transition (rho = 0.070, p = 0.562)
 - REGIME eta² < 0.30 on all PCs — class composition is program-specific
+
+---
+
+### AXM Run Entropy Convergence (C1038) — Phase: AXM_RUN_MICROSEQUENCE
+
+> Conditional transition entropy within AXM runs decreases monotonically from H=3.84 bits (position 1) to H=2.52 bits (position 6), slope=-0.248 bits/position. Class repertoire narrows as runs extend — grammar-level invariant, not program-specific. Three micro-sequential measures (entropy gradient, per-folio JSD, per-folio CMI) tested for residual prediction: all collapse after sample-size control (JSD rho: -0.295→-0.149; CMI rho: +0.237→+0.082). Completes four-phase elimination (C1035/C1036/C1037/C1038): 57% residual confirmed as design freedom space (C458, C980).
+
+| ID | Description | Tier | Scope | Details |
+|----|-------------|------|-------|---------|
+| **1038** | **AXM Run Entropy Convergence + Micro-Sequential Stratum Empty** (0/6 PASS after size control; entropy slope=-0.248 bits/pos; JSD/CMI size-confounded; four-phase elimination complete; residual = design freedom) | 2 | B | -> [C1038_axm_run_entropy_convergence.md](C1038_axm_run_entropy_convergence.md) |
+
+**Phase findings:**
+- AXM runs converge: H drops 3.84→2.52 bits over 6 positions (2,383 runs, 6,054 bigrams)
+- Convergence rate uniform across archetypes (ANOVA p=0.117)
+- Corpus JSD = 0.066 bits validates C1024 (0.070 bits) within-AXM-run scope
+- CMI permutation test p=0.455 — between-folio CMI variance = random
+- JSD confounded with sample size (rho=-0.675); CMI confounded (rho=+0.499)
+- After size control: JSD incr LOO R²=-0.042; CMI incr=+0.009 (both noise)
+- Four-phase elimination complete: residual IS the design freedom (C458 + C980)
 
 ---
 
