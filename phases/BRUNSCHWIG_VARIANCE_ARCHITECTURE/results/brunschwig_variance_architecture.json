@@ -1,0 +1,652 @@
+{
+  "phase_name": "BRUNSCHWIG_VARIANCE_ARCHITECTURE",
+  "phase_number": 361,
+  "n_master": 509,
+  "n_v3": 245,
+  "s0_spot_check": {
+    "n_checked": 20,
+    "use_count_plausible_rate": 0.65,
+    "has_source_text_rate": 1.0,
+    "checks": [
+      {
+        "id": 15,
+        "name": "Antrechen Blut",
+        "material_class": "ANIMAL",
+        "source_lines": "4499-4536",
+        "curated_use_count": 2,
+        "source_use_markers": 2,
+        "use_count_plausible": true,
+        "curated_fire_degree": 1,
+        "curated_step_count": 2,
+        "has_source_text": true
+      },
+      {
+        "id": 14,
+        "name": "Atzeln",
+        "material_class": "ANIMAL",
+        "source_lines": "4471-4493",
+        "curated_use_count": 2,
+        "source_use_markers": 1,
+        "use_count_plausible": true,
+        "curated_fire_degree": 2,
+        "curated_step_count": 4,
+        "has_source_text": true
+      },
+      {
+        "id": 122,
+        "name": "Kalbs blut wasser",
+        "material_class": "animal product",
+        "source_lines": "12083-12109",
+        "curated_use_count": 2,
+        "source_use_markers": 1,
+        "use_count_plausible": true,
+        "curated_fire_degree": 1,
+        "curated_step_count": 2,
+        "has_source_text": true
+      },
+      {
+        "id": 96,
+        "name": "H\u00fcner magen vel",
+        "material_class": "animal product",
+        "source_lines": "10469-10486",
+        "curated_use_count": 1,
+        "source_use_markers": 0,
+        "use_count_plausible": true,
+        "curated_fire_degree": 1,
+        "curated_step_count": 2,
+        "has_source_text": true
+      },
+      {
+        "id": 189,
+        "name": "Seblumen wasser",
+        "material_class": "aquatic_flower",
+        "source_lines": "17710-17810",
+        "curated_use_count": 17,
+        "source_use_markers": 2,
+        "use_count_plausible": false,
+        "curated_fire_degree": 1,
+        "curated_step_count": 2,
+        "has_source_text": true
+      },
+      {
+        "id": 86,
+        "name": "Holder rind",
+        "material_class": "bark",
+        "source_lines": "9860-9878",
+        "curated_use_count": 2,
+        "source_use_markers": 0,
+        "use_count_plausible": true,
+        "curated_fire_degree": 1,
+        "curated_step_count": 3,
+        "has_source_text": true
+      },
+      {
+        "id": 236,
+        "name": "Weckolter beer wasser",
+        "material_class": "berry",
+        "source_lines": "21389-21454",
+        "curated_use_count": 5,
+        "source_use_markers": 3,
+        "use_count_plausible": true,
+        "curated_fire_degree": 3,
+        "curated_step_count": 2,
+        "has_source_text": true
+      },
+      {
+        "id": 105,
+        "name": "Hundsber",
+        "material_class": "berry",
+        "source_lines": "10938-10964",
+        "curated_use_count": 2,
+        "source_use_markers": 2,
+        "use_count_plausible": true,
+        "curated_fire_degree": 2,
+        "curated_step_count": 2,
+        "has_source_text": true
+      },
+      {
+        "id": 115,
+        "name": "Knoblouch wasser",
+        "material_class": "bulb",
+        "source_lines": "11626-11693",
+        "curated_use_count": 7,
+        "source_use_markers": 2,
+        "use_count_plausible": false,
+        "curated_fire_degree": 3,
+        "curated_step_count": 2,
+        "has_source_text": true
+      },
+      {
+        "id": 131,
+        "name": "Louch wasser",
+        "material_class": "bulb",
+        "source_lines": "12779-12835",
+        "curated_use_count": 6,
+        "source_use_markers": 2,
+        "use_count_plausible": false,
+        "curated_fire_degree": 1,
+        "curated_step_count": 2,
+        "has_source_text": true
+      },
+      {
+        "id": 203,
+        "name": "Spicanardi wasser",
+        "material_class": "exotic_import",
+        "source_lines": "18803-18943",
+        "curated_use_count": 5,
+        "source_use_markers": 2,
+        "use_count_plausible": true,
+        "curated_fire_degree": 2,
+        "curated_step_count": 2,
+        "has_source_text": true
+      },
+      {
+        "id": 90,
+        "name": "Hyrtz zung",
+        "material_class": "fern",
+        "source_lines": "10044-10166",
+        "curated_use_count": 15,
+        "source_use_markers": 2,
+        "use_count_plausible": false,
+        "curated_fire_degree": 2,
+        "curated_step_count": 2,
+        "has_source_text": true
+      },
+      {
+        "id": 235,
+        "name": "Wider tod krut wasser",
+        "material_class": "fern",
+        "source_lines": "21266-21383",
+        "curated_use_count": 8,
+        "source_use_markers": 0,
+        "use_count_plausible": false,
+        "curated_fire_degree": 2,
+        "curated_step_count": 2,
+        "has_source_text": true
+      },
+      {
+        "id": 118,
+        "name": "K\u00fctten bl\u00fcet wasser",
+        "material_class": "flower",
+        "source_lines": "11783-11818",
+        "curated_use_count": 3,
+        "source_use_markers": 0,
+        "use_count_plausible": true,
+        "curated_fire_degree": 2,
+        "curated_step_count": 2,
+        "has_source_text": true
+      },
+      {
+        "id": 125,
+        "name": "Klapper rosen wasser",
+        "material_class": "flower",
+        "source_lines": "12171-12337",
+        "curated_use_count": 18,
+        "source_use_markers": 3,
+        "use_count_plausible": false,
+        "curated_fire_degree": 1,
+        "curated_step_count": 2,
+        "has_source_text": true
+      },
+      {
+        "id": 21,
+        "name": "Blow gilgen blumlin",
+        "material_class": "flower_part",
+        "source_lines": "5044-5059",
+        "curated_use_count": 1,
+        "source_use_markers": 1,
+        "use_count_plausible": true,
+        "curated_fire_degree": 1,
+        "curated_step_count": 2,
+        "has_source_text": true
+      },
+      {
+        "id": 181,
+        "name": "Beonien rosen wasser",
+        "material_class": "flower_root_compound",
+        "source_lines": "17345-17392",
+        "curated_use_count": 4,
+        "source_use_markers": 2,
+        "use_count_plausible": true,
+        "curated_fire_degree": 2,
+        "curated_step_count": 4,
+        "has_source_text": true
+      },
+      {
+        "id": 202,
+        "name": "Surouch wasser",
+        "material_class": "fruit",
+        "source_lines": "18779-18801",
+        "curated_use_count": 1,
+        "source_use_markers": 0,
+        "use_count_plausible": true,
+        "curated_fire_degree": 2,
+        "curated_step_count": 2,
+        "has_source_text": true
+      },
+      {
+        "id": 66,
+        "name": "Ertber",
+        "material_class": "fruit",
+        "source_lines": "8486-8606",
+        "curated_use_count": 22,
+        "source_use_markers": 5,
+        "use_count_plausible": false,
+        "curated_fire_degree": 1,
+        "curated_step_count": 2,
+        "has_source_text": true
+      },
+      {
+        "id": 184,
+        "name": "Stern gesch\u00fctz wasser",
+        "material_class": "fungal_substance",
+        "source_lines": "17528-17550",
+        "curated_use_count": 2,
+        "source_use_markers": 0,
+        "use_count_plausible": true,
+        "curated_fire_degree": 1,
+        "curated_step_count": 2,
+        "has_source_text": true
+      }
+    ]
+  },
+  "s3_entropy": {
+    "material_category": {
+      "group": "process",
+      "H": 1.7529584134553804,
+      "H_max": 3.4594316186372973,
+      "H_norm": 0.5067186193279598,
+      "K": 11,
+      "N": 509
+    },
+    "fire_degree": {
+      "group": "process",
+      "H": 0.9253917463368057,
+      "H_max": 2.0,
+      "H_norm": 0.4626958731684028,
+      "K": 4,
+      "N": 509
+    },
+    "product_type": {
+      "group": "process",
+      "H": 0.9253917463368057,
+      "H_max": 2.0,
+      "H_norm": 0.4626958731684028,
+      "K": 4,
+      "N": 509
+    },
+    "shelf_life": {
+      "group": "process",
+      "H": 0.9706252110175158,
+      "H_max": 2.0,
+      "H_norm": 0.4853126055087579,
+      "K": 4,
+      "N": 509
+    },
+    "regime": {
+      "group": "process",
+      "H": 0.9253917463368057,
+      "H_max": 2.0,
+      "H_norm": 0.4626958731684028,
+      "K": 4,
+      "N": 509
+    },
+    "duration_class": {
+      "group": "process",
+      "H": 0.9826396238947429,
+      "H_max": 1.584962500721156,
+      "H_norm": 0.6199765757534598,
+      "K": 3,
+      "N": 509
+    },
+    "precision": {
+      "group": "process",
+      "H": 0.43407040770755617,
+      "H_max": 1.584962500721156,
+      "H_norm": 0.2738679353675905,
+      "K": 3,
+      "N": 509
+    },
+    "hazard_profile": {
+      "group": "process",
+      "H": 0.40863746436807424,
+      "H_max": 2.807354922057604,
+      "H_norm": 0.14555960172950635,
+      "K": 7,
+      "N": 509
+    },
+    "use_count_binned": {
+      "group": "output",
+      "H": 2.108018748318936,
+      "H_max": 2.321928094887362,
+      "H_norm": 0.9078742588801817,
+      "K": 5,
+      "N": 509
+    },
+    "step_count_binned": {
+      "group": "output",
+      "H": 1.4536227262107473,
+      "H_max": 2.0,
+      "H_norm": 0.7268113631053736,
+      "K": 4,
+      "N": 509
+    },
+    "text_length_quintile": {
+      "group": "output",
+      "H": 2.3219169358943565,
+      "H_max": 2.321928094887362,
+      "H_norm": 0.9999951940833007,
+      "K": 5,
+      "N": 509
+    },
+    "instruction_diversity": {
+      "group": "output",
+      "H": 1.5649044131398895,
+      "H_max": 2.321928094887362,
+      "H_norm": 0.6739676463649508,
+      "K": 5,
+      "N": 509
+    },
+    "v3_action_diversity": {
+      "group": "output_v3",
+      "H": 1.6181655925578473,
+      "H_max": 2.584962500721156,
+      "H_norm": 0.6259919020513487,
+      "K": 6,
+      "N": 245
+    },
+    "v3_app_diversity": {
+      "group": "output_v3",
+      "H": 2.2169189628509,
+      "H_max": 2.321928094887362,
+      "H_norm": 0.954775028448262,
+      "K": 5,
+      "N": 245
+    }
+  },
+  "s3_entropy_distributions": {
+    "material_category": {
+      "hot_dry_herb": 33,
+      "herb": 360,
+      "moderate_herb": 20,
+      "moist_root": 9,
+      "dangerous_herb": 7,
+      "hot_flower": 23,
+      "hot_dry_root": 2,
+      "cold_moist_flower": 25,
+      "leaf": 5,
+      "animal": 9,
+      "fruit": 16
+    },
+    "fire_degree": {
+      "3": 35,
+      "2": 417,
+      "1": 48,
+      "4": 9
+    },
+    "product_type": {
+      "OIL_RESIN": 35,
+      "WATER_STANDARD": 417,
+      "WATER_GENTLE": 48,
+      "PRECISION": 9
+    },
+    "shelf_life": {
+      "3 years": 61,
+      "2 years": 407,
+      "1 year": 34,
+      "1-3 years": 7
+    },
+    "regime": {
+      "REGIME_3": 35,
+      "REGIME_1": 417,
+      "REGIME_2": 48,
+      "REGIME_4": 9
+    },
+    "duration_class": {
+      "MEDIUM": 119,
+      "SHORT": 373,
+      "LONG": 17
+    },
+    "precision": {
+      "LOW": 472,
+      "MODERATE": 28,
+      "HIGH": 9
+    },
+    "hazard_profile": {
+      "PHASE_ORDERING": 3,
+      "NONE": 483,
+      "COMPOSITION_JUMP": 11,
+      "RATE_MISMATCH": 4,
+      "COMPOSITION_JUMP_PHASE_ORDERING": 2,
+      "CONTAINMENT_TIMING": 3,
+      "PHASE_ORDERING_RATE_MISMATCH": 3
+    },
+    "use_count_binned": {
+      "9-12": 76,
+      "6-8": 103,
+      "3-5": 144,
+      "1-2": 165,
+      "13+": 21
+    },
+    "step_count_binned": {
+      "3-4": 119,
+      "0": 312,
+      "5+": 17,
+      "1-2": 61
+    },
+    "text_length_quintile": {
+      "Q3": 102,
+      "Q2": 102,
+      "Q1": 102,
+      "Q4": 101,
+      "Q5": 102
+    },
+    "instruction_diversity": {
+      "3": 66,
+      "0": 312,
+      "1": 23,
+      "2": 101,
+      "4": 7
+    },
+    "v3_action_diversity": {
+      "3": 70,
+      "0": 17,
+      "2": 137,
+      "4": 18,
+      "5": 2,
+      "1": 1
+    },
+    "v3_app_diversity": {
+      "1": 63,
+      "2": 67,
+      "0": 20,
+      "3": 38,
+      "4": 57
+    }
+  },
+  "s3_cv": {
+    "use_count": {
+      "cv": 0.6637623080456168,
+      "mean": 5.430084745762712,
+      "std": 3.604285583730754,
+      "n": 472
+    },
+    "text_length": {
+      "cv": 0.7229652681453754,
+      "mean": 2402.1257367387034,
+      "std": 1736.6534773802043,
+      "n": 509
+    },
+    "step_count": {
+      "cv": 0.34964186009435194,
+      "mean": 3.015228426395939,
+      "std": 1.054250075614442,
+      "n": 197
+    }
+  },
+  "s4_group_comparison": {
+    "process_hnorms": [
+      0.5067186193279598,
+      0.4626958731684028,
+      0.4626958731684028,
+      0.4853126055087579,
+      0.4626958731684028,
+      0.6199765757534598,
+      0.2738679353675905,
+      0.14555960172950635
+    ],
+    "output_hnorms": [
+      0.9078742588801817,
+      0.7268113631053736,
+      0.9999951940833007,
+      0.6739676463649508
+    ],
+    "process_mean": 0.4274403696490604,
+    "output_mean": 0.8271621156084517,
+    "gap": 0.39972174595939125,
+    "process_params": [
+      "material_category",
+      "fire_degree",
+      "product_type",
+      "shelf_life",
+      "regime",
+      "duration_class",
+      "precision",
+      "hazard_profile"
+    ],
+    "output_params": [
+      "use_count_binned",
+      "step_count_binned",
+      "text_length_quintile",
+      "instruction_diversity"
+    ],
+    "P1_pass": true,
+    "P2_pass": true
+  },
+  "s5_permutation": {
+    "observed_gap": 0.39972174595939125,
+    "perm_mean": -0.0021201919017394626,
+    "perm_std": 0.14984593158119042,
+    "p_value": 0.0019,
+    "p95": 0.23796005209415566,
+    "p99": 0.3289761056383189,
+    "n_perms": 10000,
+    "n_process": 8,
+    "n_output": 4,
+    "P3_pass": true
+  },
+  "s6_variance_ratio": {
+    "process_H_sum": 7.325106359453686,
+    "output_H_sum": 7.44846282356393,
+    "total_H": 14.773569183017617,
+    "process_pct": 49.582509606913256,
+    "output_pct": 50.41749039308674,
+    "voynich_process_pct": 43.0,
+    "voynich_output_pct": 57.0,
+    "deviation_pp": 6.582509606913256,
+    "P4_pass": true
+  },
+  "s7_within_category": {
+    "n_categories_tested": 10,
+    "use_count_within_var": 9.48367765704006,
+    "use_count_between_var": 1.0314689084167041,
+    "use_count_ratio": 9.194341758296353,
+    "text_length_within_var": 2503024.4240668155,
+    "text_length_between_var": 438688.0740843515,
+    "text_length_ratio": 5.7057042849665685,
+    "per_category": {
+      "animal": {
+        "mean": 6.0,
+        "var": 11.777777777777779,
+        "n": 9
+      },
+      "cold_moist_flower": {
+        "mean": 6.208333333333333,
+        "var": 14.414930555555557,
+        "n": 24
+      },
+      "dangerous_herb": {
+        "mean": 2.857142857142857,
+        "var": 6.979591836734693,
+        "n": 7
+      },
+      "fruit": {
+        "mean": 6.461538461538462,
+        "var": 10.863905325443787,
+        "n": 13
+      },
+      "herb": {
+        "mean": 5.492625368731564,
+        "var": 13.689473638412473,
+        "n": 339
+      },
+      "hot_dry_herb": {
+        "mean": 4.153846153846154,
+        "var": 8.437869822485208,
+        "n": 26
+      },
+      "hot_flower": {
+        "mean": 5.333333333333333,
+        "var": 13.079365079365076,
+        "n": 21
+      },
+      "leaf": {
+        "mean": 5.0,
+        "var": 4.4,
+        "n": 5
+      },
+      "moderate_herb": {
+        "mean": 5.684210526315789,
+        "var": 9.58448753462604,
+        "n": 19
+      },
+      "moist_root": {
+        "mean": 4.875,
+        "var": 1.609375,
+        "n": 8
+      }
+    },
+    "P5_pass": true
+  },
+  "s8_voynich_comparison": {
+    "voynich_reference": {
+      "hazard_exposure_CV": 0.11,
+      "intervention_diversity_CV": 0.04,
+      "recovery_operations_CV": 0.82,
+      "near_miss_handling_CV": 0.72
+    },
+    "note": "H_norm and CV measure different things (categorical vs continuous dispersion). Directional comparison only."
+  },
+  "predictions": {
+    "P1": {
+      "description": "Process-side mean H_norm < 0.5",
+      "value": 0.4274403696490604,
+      "pass": true
+    },
+    "P2": {
+      "description": "Output-side mean H_norm > 0.7",
+      "value": 0.8271621156084517,
+      "pass": true
+    },
+    "P3": {
+      "description": "Process/output separation exceeds permutation null (p < 0.01)",
+      "p_value": 0.0019,
+      "pass": true
+    },
+    "P4": {
+      "description": "Constrained/free ratio within \u00b115pp of Voynich 43/57",
+      "brunschwig_process_pct": 49.582509606913256,
+      "deviation": 6.582509606913256,
+      "pass": true
+    },
+    "P5": {
+      "description": "Within-category output variation > 1.5x between-category",
+      "ratio": 9.194341758296353,
+      "pass": true
+    }
+  },
+  "n_pass": 5,
+  "n_total": 5,
+  "core_pass": true,
+  "verdict": "VARIANCE_ARCHITECTURE_ALIGNED"
+}

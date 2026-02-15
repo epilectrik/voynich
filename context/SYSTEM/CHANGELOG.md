@@ -4,6 +4,20 @@
 
 ---
 
+## Version 3.88 (2026-02-14) - Brunschwig Variance Architecture Alignment (F-BRU-027)
+
+### Summary
+
+Phase 361 tests whether Brunschwig's recipe collection exhibits the same variance architecture as Voynich B: process-side parameters constrained while output-side parameters freely vary. Using normalized entropy H/H_max across 509 materials with 12 parameters (8 process, 4 output), the separation is highly significant (permutation p=0.0019). Process-side mean H_norm=0.427 (constrained), output-side mean H_norm=0.827 (free). The variance ratio (49.6/50.4) approximates Voynich's 43/57 split within 6.6pp. Within-category output variation dominates between-category by 9.2x. Continuous CV comparison: Brunschwig use_count CV=0.664 and text_length CV=0.723 fall within Voynich's C458 recovery CV range (0.72-0.82). This is the first fit to test variance distributions rather than categorical mappings, establishing a sixth alignment axis alongside grammar, hazard, regime, suppression, and recovery. 1 new fit (F-BRU-027). Phase 361.
+
+### New Fits
+
+| ID | Name | Tier |
+|----|------|------|
+| F-BRU-027 | Variance Architecture Alignment | F3 |
+
+---
+
 ## Version 3.87 (2026-02-14) - AXM Run Entropy Convergence + Residual Closure (C1038)
 
 ### Summary

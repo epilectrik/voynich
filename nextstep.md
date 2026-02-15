@@ -1,33 +1,35 @@
-# Next Research Direction: Post-Residual Closure
+# Next Research Direction: Post-Variance Architecture
 
 **Status:** OPEN — seeking new direction
-**Current state:** v3.87 | 903 constraints | 360 phases | Both remotes need push
+**Current state:** v3.88 | 903 constraints | 62 fits | 361 phases
 
 ---
 
 ## Context
 
-The AXM self-transition residual investigation is **complete**. Four consecutive phases (357-360) systematically eliminated every candidate stratum:
+Phase 361 established **Brunschwig variance architecture alignment** (F-BRU-027). The comparison shows:
 
-| Phase | Stratum | Result |
-|-------|---------|--------|
-| 357 (C1035) | Aggregate folio statistics | 0/7 pass, all dR² < 0.013 |
-| 358 (C1036) | AXM boundary transitions | Frequency-proportional CV |
-| 359 (C1037) | Within-AXM class composition | Redundant (+0.005 LOO incr) |
-| 360 (C1038) | Micro-sequential dynamics | Size artifacts after control |
+| Metric | Brunschwig | Voynich | Match? |
+|--------|-----------|---------|--------|
+| Process-side mean H_norm | 0.427 | Hazard CV=0.04-0.11 | Both constrained |
+| Output-side mean H_norm | 0.827 | Recovery CV=0.72-0.82 | Both free |
+| Variance ratio | 49.6/50.4 | 43/57 | Within 6.6pp |
+| Permutation p | 0.0019 | — | Significant |
+| Within/between ratio | 9.19 | C980: 66.3% free | Both dominated by within-category |
 
-**Conclusion:** The 57% residual IS the design freedom space predicted by C458 (recovery freedom CV=0.72-0.82) and C980 (66.3% free variation envelope). Each program is independently parameterized within the grammar's constraints.
+This is the first fit to test variance distributions (not just categorical mappings), establishing a sixth alignment axis alongside grammar, hazard, regime, suppression, and recovery.
 
-**New finding from Phase 360:** AXM runs converge monotonically (entropy 3.84→2.52 bits, slope -0.248). Grammar-level invariant, not program-specific.
+Combined with Phases 357-360 (four-phase residual elimination confirming 57% design freedom), the characterization of B's variance architecture is now complete at both the internal (Voynich) and external (Brunschwig) levels.
 
 ---
 
 ## Possible New Directions
 
-1. Consult expert on what characterization frontiers remain
+1. Consult expert on remaining characterization frontiers
 2. Return to generative modeling (M2 improvements from C1034)
 3. Explore Currier A / AZC structural questions
 4. Application work (visualization, tools)
+5. Deeper Brunschwig comparison (per-recipe parameter extraction from OCR)
 
 ---
 
