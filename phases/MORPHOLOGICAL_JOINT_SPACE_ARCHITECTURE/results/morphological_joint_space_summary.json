@@ -1,0 +1,50 @@
+{
+  "phase": 380,
+  "name": "MORPHOLOGICAL_JOINT_SPACE_ARCHITECTURE",
+  "description": "5-test battery: PREFIX x SUFFIX compatibility + atom ordering grammar",
+  "tier": 2,
+  "tests": [
+    {
+      "id": "T1",
+      "name": "PREFIX x SUFFIX Forbidden Pairs",
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "T2",
+      "name": "PREFIX x SUFFIX Role Classification Gain",
+      "verdict": "PASS"
+    },
+    {
+      "id": "T3",
+      "name": "Atom Bigram Grammar",
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "T4",
+      "name": "String-Position vs Line-Position",
+      "verdict": "FAIL"
+    },
+    {
+      "id": "T5",
+      "name": "Terminal-Character Positional Bias",
+      "verdict": "PASS"
+    }
+  ],
+  "constraints_referenced": [
+    "C1001",
+    "C1003",
+    "C1059",
+    "C1060",
+    "C275",
+    "C278",
+    "C517",
+    "C521",
+    "C522",
+    "C539",
+    "C588",
+    "C662",
+    "C873",
+    "C911",
+    "C985"
+  ]
+}

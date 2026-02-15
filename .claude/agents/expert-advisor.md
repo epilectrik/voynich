@@ -88,7 +88,7 @@ and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-15 16:23
+**Generated:** 2026-02-15 17:21
 **Version:** FROZEN STATE (921 constraints, 66 fits) [COMPACT]
 
 ---
@@ -1101,7 +1101,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 927 constraints | 2026-02-15
+CONSTRAINT_REFERENCE v2.6 | 932 constraints | 2026-02-15
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2033,6 +2033,11 @@ C1059	**Suffix-Role PREFIX Independent** (V_raw=0.2869, V_conditioned=0.3750, me
 C1060	**Atom Position Grammar**
 C1061	**Atom Co-occurrence Structure**
 C1062	**Compound Depth-Folio Specificity**
+C1063	**PREFIX-SUFFIX Compatibility** (chi²=8703.4, V=0.138; 17 forbidden pairs vs C911's 102; 16/17 novel, 1 role-explained; 50 enriched, 57 depleted; LATE prediction failed; ch/sh 0 forbidden; 30 PREFIXes x 21 SUFFIXes)
+C1064	**PREFIX-SUFFIX Joint Role Encoding** (joint 88.5% vs PREFIX 82.6% vs SUFFIX 45.9%; +5.9pp gain; QO-family within-PREFIX V=0.615, sister V=0.124; three-layer encoding: PREFIX + suffix + joint; 16054 classified tokens)
+C1065	**Atom Bigram Ordering Grammar**
+C1066	**Construction-Execution Independence Confirmed**
+C1067	**Terminal Character Positional Bias**
 
 ---
 

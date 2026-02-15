@@ -1,7 +1,7 @@
 # Next Direction: Characterization Complete — Pivot to Application
 
 **Status:** CHARACTERIZATION SATURATED
-**Current state:** v4.06 | 927 constraints | 66 fits | 379 phases
+**Current state:** v4.07 | 932 constraints | 66 fits | 380 phases
 
 ---
 
@@ -118,6 +118,22 @@ New constraints: C1058-C1062.
 
 ---
 
+## Phase 380: Morphological Joint Space Architecture (5-Test Battery)
+
+Combined PREFIX x SUFFIX compatibility + within-compound atom ordering grammar. All Tier 2.
+
+| Test | Verdict | Key Finding |
+|------|---------|-------------|
+| T1: PREFIX x SUFFIX Forbidden Pairs | **PARTIAL** | 17 forbidden (< C911's 102). 16/17 genuinely novel. LATE prediction failed. ch/sh: 0 forbidden. |
+| T2: PREFIX x SUFFIX Role Classification | **PASS** | Joint 88.5% vs PREFIX 82.6% = +5.9pp. QO-family V=0.615 vs sister V=0.124. |
+| T3: Atom Bigram Grammar | **PARTIAL** | V=0.376, p=1.8e-73. 21 asymmetric pairs. k-before-e 58.7% (sig, below 60% threshold). Permutation p=0.0000. |
+| T4: String vs Line Position | **FAIL** | rho=-0.004, p=0.65. Zero correlation. Confirms C522 construction-execution independence absolutely. |
+| T5: Terminal Character Bias | **PASS** | Terminal char predicts position (V=0.231). 'c'→FINAL (86%), 'p'→INITIAL (83%). kc paradox resolved: 'c'-terminal, not k-content. |
+
+New constraints: C1063-C1067.
+
+---
+
 ## What's Been Established
 
 1. **Core model CLOSED** (PCA-v1 certified)
@@ -133,7 +149,8 @@ New constraints: C1058-C1062.
 11. **Galenic framework alignment tested** (3/4 PASS: multi-axis hazard, oppositional pairing, degree ordering; 1 PARTIAL: factorization)
 12. **Galenic enhancement analysis synthesized** (6 axes: classification 2.25x, degrees 3.5-15.75x, compounds graph-mediated, operations 4.1x, hazard PROHIBIT→ENGINEER, architecture 1→5 dimensions)
 13. **Galenic recipe prediction tested** (0/3 PASS: degree-hazard, quality-opposition, degree-recovery all FAIL. Maps analogy boundary: framework alignment holds, recipe physics does not. Break point: scalar vs topological.)
-14. **Morphological deep structure characterized** (2 PASS, 1 INDEPENDENT, 2 PARTIAL: suffix grammar genuine V=0.062, suffix-role independent of PREFIX, atom position grammar V=0.333, atom co-occurrence structured, depth predicts folio-specificity rho=-0.27)
+14. **Morphological joint space characterized** (2 PASS, 2 PARTIAL, 1 FAIL: 17 PREFIX x SUFFIX forbidden pairs, +5.9pp joint role gain, atom bigram grammar V=0.376, C522 independence confirmed rho=-0.004, terminal character positional code V=0.231)
+15. **Morphological deep structure characterized** (2 PASS, 1 INDEPENDENT, 2 PARTIAL: suffix grammar genuine V=0.062, suffix-role independent of PREFIX, atom position grammar V=0.333, atom co-occurrence structured, depth predicts folio-specificity rho=-0.27)
 
 ---
 

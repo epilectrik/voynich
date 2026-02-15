@@ -1,0 +1,195 @@
+{
+  "test": "T3_atom_bigram_grammar",
+  "verdict": "PARTIAL",
+  "n_compounds": 449,
+  "n_bigrams": 659,
+  "n_unique_atoms": 56,
+  "chi2": 1898.8,
+  "p": 1.750502204315703e-73,
+  "V": 0.3755,
+  "kernel_asymmetry": {
+    "k_before_e": 91,
+    "e_before_k": 64,
+    "ke_rate": 0.5871,
+    "ke_p": 0.0364,
+    "e_before_h": 43,
+    "h_before_e": 57,
+    "eh_rate": 0.43,
+    "eh_p": 0.1933
+  },
+  "n_asymmetric": 21,
+  "asymmetric_pairs": [
+    {
+      "dominant": "al",
+      "subordinate": "lo",
+      "fwd": 12,
+      "rev": 0,
+      "total": 12,
+      "rate": 1.0
+    },
+    {
+      "dominant": "ed",
+      "subordinate": "ai",
+      "fwd": 0,
+      "rev": 5,
+      "total": 5,
+      "rate": 1.0
+    },
+    {
+      "dominant": "ek",
+      "subordinate": "ke",
+      "fwd": 7,
+      "rev": 0,
+      "total": 7,
+      "rate": 1.0
+    },
+    {
+      "dominant": "ka",
+      "subordinate": "ai",
+      "fwd": 0,
+      "rev": 12,
+      "total": 12,
+      "rate": 1.0
+    },
+    {
+      "dominant": "op",
+      "subordinate": "al",
+      "fwd": 0,
+      "rev": 5,
+      "total": 5,
+      "rate": 1.0
+    },
+    {
+      "dominant": "al",
+      "subordinate": "lch",
+      "fwd": 9,
+      "rev": 0,
+      "total": 9,
+      "rate": 1.0
+    },
+    {
+      "dominant": "te",
+      "subordinate": "ed",
+      "fwd": 0,
+      "rev": 6,
+      "total": 6,
+      "rate": 1.0
+    },
+    {
+      "dominant": "te",
+      "subordinate": "eeo",
+      "fwd": 0,
+      "rev": 5,
+      "total": 5,
+      "rate": 1.0
+    },
+    {
+      "dominant": "ee",
+      "subordinate": "et",
+      "fwd": 6,
+      "rev": 0,
+      "total": 6,
+      "rate": 1.0
+    },
+    {
+      "dominant": "eol",
+      "subordinate": "olk",
+      "fwd": 6,
+      "rev": 0,
+      "total": 6,
+      "rate": 1.0
+    },
+    {
+      "dominant": "ke",
+      "subordinate": "ech",
+      "fwd": 0,
+      "rev": 6,
+      "total": 6,
+      "rate": 1.0
+    },
+    {
+      "dominant": "ok",
+      "subordinate": "ke",
+      "fwd": 0,
+      "rev": 6,
+      "total": 6,
+      "rate": 1.0
+    },
+    {
+      "dominant": "eeo",
+      "subordinate": "eod",
+      "fwd": 10,
+      "rev": 0,
+      "total": 10,
+      "rate": 1.0
+    },
+    {
+      "dominant": "ke",
+      "subordinate": "eo",
+      "fwd": 0,
+      "rev": 8,
+      "total": 8,
+      "rate": 1.0
+    },
+    {
+      "dominant": "op",
+      "subordinate": "ai",
+      "fwd": 0,
+      "rev": 6,
+      "total": 6,
+      "rate": 1.0
+    },
+    {
+      "dominant": "ol",
+      "subordinate": "lch",
+      "fwd": 0,
+      "rev": 7,
+      "total": 7,
+      "rate": 1.0
+    },
+    {
+      "dominant": "eck",
+      "subordinate": "ckh",
+      "fwd": 0,
+      "rev": 5,
+      "total": 5,
+      "rate": 1.0
+    },
+    {
+      "dominant": "eo",
+      "subordinate": "ot",
+      "fwd": 6,
+      "rev": 0,
+      "total": 6,
+      "rate": 1.0
+    },
+    {
+      "dominant": "al",
+      "subordinate": "lk",
+      "fwd": 11,
+      "rev": 1,
+      "total": 12,
+      "rate": 0.917
+    },
+    {
+      "dominant": "ka",
+      "subordinate": "al",
+      "fwd": 1,
+      "rev": 7,
+      "total": 8,
+      "rate": 0.875
+    }
+  ],
+  "permutation_null": {
+    "n_shuffles": 1000,
+    "observed_chi2": 1898.8,
+    "null_mean_chi2": 1481.1,
+    "perm_p": 0.0
+  },
+  "constraints_referenced": [
+    "C1060",
+    "C521",
+    "C517",
+    "C873"
+  ]
+}

@@ -4,6 +4,38 @@
 
 ---
 
+## Version 4.07 (2026-02-15) - Morphological Joint Space Architecture (5-Test Battery)
+
+### Summary
+
+Phase 380 combines PREFIX x SUFFIX compatibility analysis with within-compound atom ordering grammar. 5-test battery, expert-advisor reviewed (2x). Results: 2 PASS, 2 PARTIAL, 1 informative FAIL. 5 new constraints (C1063-C1067).
+
+Key findings:
+- **17 PREFIX x SUFFIX forbidden pairs** (T1 PARTIAL): Fewer than C911's 102 PREFIX x MIDDLE, confirming C278 hierarchy. 16/17 genuinely novel (not role-explained). LATE prefix prediction failed.
+- **+5.9pp joint role classification gain** (T2 PASS): PREFIX 82.6%, joint 88.5%. QO-family V=0.615 vs sister V=0.124. Three-layer encoding confirmed.
+- **Atom bigram ordering grammar** (T3 PARTIAL): V=0.376, p=1.8e-73. 21 asymmetric pairs, 15 at 100% dominance. k-before-e 58.7% (sig but below 60%). Permutation null p=0.0000.
+- **Construction-execution independence confirmed** (T4 FAIL): rho=-0.004, p=0.65. Zero correlation at 11,525 token-level observations. C522 is absolute, not underpowered.
+- **Terminal character positional code** (T5 PASS): V=0.231, p=3.5e-12. 'c'-terminal→FINAL (86%), 'p'-terminal→INITIAL (83%). Resolves kc paradox: driven by 'c' character, not k-kernel.
+
+### New Files
+
+| File | Purpose |
+|------|---------|
+| `phases/MORPHOLOGICAL_JOINT_SPACE_ARCHITECTURE/scripts/morphological_joint_space.py` | 5-test battery |
+| `phases/MORPHOLOGICAL_JOINT_SPACE_ARCHITECTURE/results/t1_prefix_suffix_forbidden.json` | T1 results |
+| `phases/MORPHOLOGICAL_JOINT_SPACE_ARCHITECTURE/results/t2_prefix_suffix_role_gain.json` | T2 results |
+| `phases/MORPHOLOGICAL_JOINT_SPACE_ARCHITECTURE/results/t3_atom_bigram_grammar.json` | T3 results |
+| `phases/MORPHOLOGICAL_JOINT_SPACE_ARCHITECTURE/results/t4_string_vs_line_position.json` | T4 results |
+| `phases/MORPHOLOGICAL_JOINT_SPACE_ARCHITECTURE/results/t5_terminal_character_bias.json` | T5 results |
+| `phases/MORPHOLOGICAL_JOINT_SPACE_ARCHITECTURE/results/morphological_joint_space_summary.json` | Combined summary |
+| `context/CLAIMS/C1063_prefix_suffix_compatibility.md` | PREFIX-SUFFIX forbidden pairs |
+| `context/CLAIMS/C1064_prefix_suffix_joint_role_encoding.md` | Joint role classification gain |
+| `context/CLAIMS/C1065_atom_bigram_ordering_grammar.md` | Directed atom ordering grammar |
+| `context/CLAIMS/C1066_construction_execution_independence_confirmed.md` | C522 token-level confirmation |
+| `context/CLAIMS/C1067_terminal_character_positional_bias.md` | Terminal character positional code |
+
+---
+
 ## Version 4.06 (2026-02-15) - Morphological Deep Structure (5-Test Battery)
 
 ### Summary

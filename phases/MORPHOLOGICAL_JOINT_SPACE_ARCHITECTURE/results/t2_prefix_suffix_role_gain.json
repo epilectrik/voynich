@@ -1,0 +1,121 @@
+{
+  "test": "T2_prefix_suffix_role_gain",
+  "verdict": "PASS",
+  "n_classified": 16054,
+  "cv_prefix_acc": 82.62,
+  "cv_suffix_acc": 45.88,
+  "cv_joint_acc": 88.53,
+  "gain_pp": 5.91,
+  "per_prefix": {
+    "_BARE_": {
+      "n": 2715,
+      "V": 0.436,
+      "suffix_useful": true
+    },
+    "ar": {
+      "n": 56,
+      "suffix_useful": false
+    },
+    "ch": {
+      "n": 2510,
+      "V": 0.1287,
+      "suffix_useful": true
+    },
+    "da": {
+      "n": 900,
+      "V": 0.6113,
+      "suffix_useful": true
+    },
+    "do": {
+      "n": 77,
+      "suffix_useful": false
+    },
+    "ka": {
+      "n": 170,
+      "suffix_useful": false
+    },
+    "kch": {
+      "n": 57,
+      "suffix_useful": false
+    },
+    "ke": {
+      "n": 161,
+      "suffix_useful": false
+    },
+    "lch": {
+      "n": 192,
+      "suffix_useful": false
+    },
+    "lk": {
+      "n": 257,
+      "suffix_useful": false
+    },
+    "lsh": {
+      "n": 60,
+      "suffix_useful": false
+    },
+    "ok": {
+      "n": 1185,
+      "V": 0.6546,
+      "suffix_useful": true
+    },
+    "ol": {
+      "n": 475,
+      "V": 0.6626,
+      "suffix_useful": true
+    },
+    "or": {
+      "n": 74,
+      "suffix_useful": false
+    },
+    "ot": {
+      "n": 1137,
+      "V": 0.5322,
+      "suffix_useful": true
+    },
+    "pch": {
+      "n": 90,
+      "suffix_useful": false
+    },
+    "qo": {
+      "n": 3206,
+      "suffix_useful": false
+    },
+    "sa": {
+      "n": 259,
+      "suffix_useful": false
+    },
+    "sh": {
+      "n": 1595,
+      "V": 0.12,
+      "suffix_useful": true
+    },
+    "so": {
+      "n": 89,
+      "suffix_useful": false
+    },
+    "ta": {
+      "n": 180,
+      "suffix_useful": false
+    },
+    "tch": {
+      "n": 77,
+      "suffix_useful": false
+    },
+    "te": {
+      "n": 167,
+      "suffix_useful": false
+    },
+    "yk": {
+      "n": 170,
+      "suffix_useful": false
+    }
+  },
+  "interpretable_pattern": "True",
+  "constraints_referenced": [
+    "C1059",
+    "C588",
+    "C662",
+    "C1003"
+  ]
+}

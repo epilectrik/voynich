@@ -1,0 +1,422 @@
+{
+  "test": "T1_prefix_suffix_forbidden",
+  "verdict": "PARTIAL",
+  "n_common_prefixes": 30,
+  "n_common_suffixes": 21,
+  "n_tokens": 22792,
+  "chi2": 8703.4,
+  "p": 0.0,
+  "V": 0.1382,
+  "n_forbidden": 17,
+  "n_enriched": 50,
+  "n_depleted": 57,
+  "forbidden_pairs": [
+    {
+      "prefix": "ar",
+      "suffix": "edy",
+      "expected": 11.7,
+      "decomposition": "novel"
+    },
+    {
+      "prefix": "da",
+      "suffix": "ly",
+      "expected": 5.1,
+      "decomposition": "role_explained"
+    },
+    {
+      "prefix": "ka",
+      "suffix": "ain",
+      "expected": 7.7,
+      "decomposition": "novel"
+    },
+    {
+      "prefix": "ka",
+      "suffix": "eey",
+      "expected": 6.1,
+      "decomposition": "novel"
+    },
+    {
+      "prefix": "ka",
+      "suffix": "ey",
+      "expected": 5.1,
+      "decomposition": "novel"
+    },
+    {
+      "prefix": "lch",
+      "suffix": "y",
+      "expected": 9.2,
+      "decomposition": "novel"
+    },
+    {
+      "prefix": "or",
+      "suffix": "y",
+      "expected": 5.0,
+      "decomposition": "novel"
+    },
+    {
+      "prefix": "sa",
+      "suffix": "eey",
+      "expected": 8.5,
+      "decomposition": "novel"
+    },
+    {
+      "prefix": "sa",
+      "suffix": "ey",
+      "expected": 7.1,
+      "decomposition": "novel"
+    },
+    {
+      "prefix": "sa",
+      "suffix": "s",
+      "expected": 6.0,
+      "decomposition": "novel"
+    },
+    {
+      "prefix": "sa",
+      "suffix": "y",
+      "expected": 9.6,
+      "decomposition": "novel"
+    },
+    {
+      "prefix": "ta",
+      "suffix": "edy",
+      "expected": 20.4,
+      "decomposition": "novel"
+    },
+    {
+      "prefix": "ta",
+      "suffix": "eey",
+      "expected": 6.1,
+      "decomposition": "novel"
+    },
+    {
+      "prefix": "ta",
+      "suffix": "ey",
+      "expected": 5.1,
+      "decomposition": "novel"
+    },
+    {
+      "prefix": "te",
+      "suffix": "ey",
+      "expected": 6.2,
+      "decomposition": "novel"
+    },
+    {
+      "prefix": "te",
+      "suffix": "y",
+      "expected": 8.5,
+      "decomposition": "novel"
+    },
+    {
+      "prefix": "yk",
+      "suffix": "al",
+      "expected": 8.9,
+      "decomposition": "novel"
+    }
+  ],
+  "enriched_pairs": [
+    {
+      "prefix": "qo",
+      "suffix": "edy",
+      "observed": 955,
+      "expected": 348.6,
+      "z": 32.48
+    },
+    {
+      "prefix": "qo",
+      "suffix": "eey",
+      "observed": 354,
+      "expected": 104.9,
+      "z": 24.33
+    },
+    {
+      "prefix": "qo",
+      "suffix": "ain",
+      "observed": 387,
+      "expected": 131.1,
+      "z": 22.35
+    },
+    {
+      "prefix": "ch",
+      "suffix": "hy",
+      "observed": 336,
+      "expected": 129.3,
+      "z": 18.18
+    },
+    {
+      "prefix": "qo",
+      "suffix": "aiin",
+      "observed": 375,
+      "expected": 167.9,
+      "z": 15.98
+    },
+    {
+      "prefix": "da",
+      "suffix": "_BARE_",
+      "observed": 867,
+      "expected": 559.8,
+      "z": 12.98
+    },
+    {
+      "prefix": "qo",
+      "suffix": "al",
+      "observed": 249,
+      "expected": 116.4,
+      "z": 12.29
+    },
+    {
+      "prefix": "sh",
+      "suffix": "hy",
+      "observed": 196,
+      "expected": 86.8,
+      "z": 11.73
+    },
+    {
+      "prefix": "qo",
+      "suffix": "ey",
+      "observed": 195,
+      "expected": 87.9,
+      "z": 11.43
+    },
+    {
+      "prefix": "ot",
+      "suffix": "_BARE_",
+      "observed": 1055,
+      "expected": 749.7,
+      "z": 11.15
+    },
+    {
+      "prefix": "ok",
+      "suffix": "_BARE_",
+      "observed": 1055,
+      "expected": 763.8,
+      "z": 10.54
+    },
+    {
+      "prefix": "da",
+      "suffix": "r",
+      "observed": 62,
+      "expected": 19.1,
+      "z": 9.81
+    },
+    {
+      "prefix": "qo",
+      "suffix": "ar",
+      "observed": 255,
+      "expected": 145.9,
+      "z": 9.03
+    },
+    {
+      "prefix": "_BARE_",
+      "suffix": "iin",
+      "observed": 56,
+      "expected": 19.2,
+      "z": 8.39
+    },
+    {
+      "prefix": "sa",
+      "suffix": "r",
+      "observed": 26,
+      "expected": 5.8,
+      "z": 8.38
+    },
+    {
+      "prefix": "lch",
+      "suffix": "_BARE_",
+      "observed": 256,
+      "expected": 162.3,
+      "z": 7.35
+    },
+    {
+      "prefix": "qo",
+      "suffix": "y",
+      "observed": 196,
+      "expected": 119.0,
+      "z": 7.06
+    },
+    {
+      "prefix": "qo",
+      "suffix": "ol",
+      "observed": 102,
+      "expected": 51.5,
+      "z": 7.03
+    },
+    {
+      "prefix": "sa",
+      "suffix": "_BARE_",
+      "observed": 261,
+      "expected": 170.1,
+      "z": 6.97
+    },
+    {
+      "prefix": "ch",
+      "suffix": "y",
+      "observed": 172,
+      "expected": 102.3,
+      "z": 6.89
+    }
+  ],
+  "depleted_pairs": [
+    {
+      "prefix": "qo",
+      "suffix": "_BARE_",
+      "observed": 391,
+      "expected": 2100.3,
+      "z": -37.3
+    },
+    {
+      "prefix": "ch",
+      "suffix": "edy",
+      "observed": 145,
+      "expected": 299.6,
+      "z": -8.93
+    },
+    {
+      "prefix": "da",
+      "suffix": "edy",
+      "observed": 11,
+      "expected": 92.9,
+      "z": -8.5
+    },
+    {
+      "prefix": "_BARE_",
+      "suffix": "edy",
+      "observed": 177,
+      "expected": 329.0,
+      "z": -8.38
+    },
+    {
+      "prefix": "ok",
+      "suffix": "aiin",
+      "observed": 11,
+      "expected": 61.1,
+      "z": -6.41
+    },
+    {
+      "prefix": "da",
+      "suffix": "aiin",
+      "observed": 5,
+      "expected": 44.8,
+      "z": -5.94
+    },
+    {
+      "prefix": "ot",
+      "suffix": "hy",
+      "observed": 11,
+      "expected": 53.7,
+      "z": -5.83
+    },
+    {
+      "prefix": "ch",
+      "suffix": "r",
+      "observed": 16,
+      "expected": 61.7,
+      "z": -5.81
+    },
+    {
+      "prefix": "_BARE_",
+      "suffix": "eey",
+      "observed": 43,
+      "expected": 99.0,
+      "z": -5.63
+    },
+    {
+      "prefix": "ok",
+      "suffix": "ain",
+      "observed": 10,
+      "expected": 47.7,
+      "z": -5.46
+    },
+    {
+      "prefix": "sh",
+      "suffix": "eey",
+      "observed": 18,
+      "expected": 60.5,
+      "z": -5.46
+    },
+    {
+      "prefix": "ot",
+      "suffix": "aiin",
+      "observed": 18,
+      "expected": 59.9,
+      "z": -5.42
+    },
+    {
+      "prefix": "ot",
+      "suffix": "y",
+      "observed": 8,
+      "expected": 42.5,
+      "z": -5.29
+    },
+    {
+      "prefix": "da",
+      "suffix": "ain",
+      "observed": 4,
+      "expected": 34.9,
+      "z": -5.23
+    },
+    {
+      "prefix": "ok",
+      "suffix": "y",
+      "observed": 9,
+      "expected": 43.3,
+      "z": -5.21
+    },
+    {
+      "prefix": "da",
+      "suffix": "eey",
+      "observed": 1,
+      "expected": 27.9,
+      "z": -5.1
+    },
+    {
+      "prefix": "ot",
+      "suffix": "ain",
+      "observed": 12,
+      "expected": 46.8,
+      "z": -5.09
+    },
+    {
+      "prefix": "sh",
+      "suffix": "edy",
+      "observed": 130,
+      "expected": 201.1,
+      "z": -5.01
+    },
+    {
+      "prefix": "ch",
+      "suffix": "eey",
+      "observed": 45,
+      "expected": 90.1,
+      "z": -4.75
+    },
+    {
+      "prefix": "ot",
+      "suffix": "ey",
+      "observed": 5,
+      "expected": 31.4,
+      "z": -4.71
+    }
+  ],
+  "late_forbidden": {
+    "al": 0,
+    "ar": 1,
+    "or": 1
+  },
+  "sister_forbidden": {
+    "ch": 0,
+    "sh": 0
+  },
+  "decomposition": {
+    "role_explained": 1,
+    "novel": 16
+  },
+  "constraints_referenced": [
+    "C911",
+    "C278",
+    "C539",
+    "C1059",
+    "C588",
+    "C275"
+  ]
+}

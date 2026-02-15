@@ -2668,6 +2668,56 @@ Compound depth negatively correlates with folio spread (rho=-0.27, p=5.3e-23).
 
 ---
 
+### PREFIX-SUFFIX Compatibility (C1063) — Phase: MORPHOLOGICAL_JOINT_SPACE_ARCHITECTURE
+
+17 forbidden PREFIX x SUFFIX pairs (fewer than C911's 102 PREFIX x MIDDLE). 16/17 genuinely novel.
+
+| # | Statement Summary | Tier | Scope | File |
+|---|-----------|------|-------|----------|
+| **1063** | **PREFIX-SUFFIX Compatibility** (chi²=8703.4, V=0.138; 17 forbidden pairs vs C911's 102; 16/17 novel, 1 role-explained; 50 enriched, 57 depleted; LATE prediction failed; ch/sh 0 forbidden; 30 PREFIXes x 21 SUFFIXes) | 2 | B | -> [C1063_prefix_suffix_compatibility.md](C1063_prefix_suffix_compatibility.md) |
+
+---
+
+### PREFIX-SUFFIX Joint Role Encoding (C1064) — Phase: MORPHOLOGICAL_JOINT_SPACE_ARCHITECTURE
+
+Joint PREFIX+SUFFIX predicts role +5.9pp better than PREFIX alone (88.5% vs 82.6%).
+
+| # | Statement Summary | Tier | Scope | File |
+|---|-----------|------|-------|----------|
+| **1064** | **PREFIX-SUFFIX Joint Role Encoding** (joint 88.5% vs PREFIX 82.6% vs SUFFIX 45.9%; +5.9pp gain; QO-family within-PREFIX V=0.615, sister V=0.124; three-layer encoding: PREFIX + suffix + joint; 16054 classified tokens) | 2 | B | -> [C1064_prefix_suffix_joint_role_encoding.md](C1064_prefix_suffix_joint_role_encoding.md) |
+
+---
+
+### Atom Bigram Ordering Grammar (C1065) — Phase: MORPHOLOGICAL_JOINT_SPACE_ARCHITECTURE
+
+Compound atoms follow a directed construction grammar (V=0.376). 21 asymmetric pairs, 15 at 100%.
+
+| # | Statement Summary | Tier | Scope | File |
+|---|-----------|------|-------|----------|
+| **1065** | **Atom Bigram Ordering Grammar** (chi²=1898.8, p=1.8e-73, V=0.376; 21 asymmetric pairs >80%, 15 at 100%; k-before-e 58.7% p=0.036; e-before-h 43% NS; permutation null p=0.0000; 449 compounds, 659 pairs) | 2 | B | -> [C1065_atom_bigram_ordering_grammar.md](C1065_atom_bigram_ordering_grammar.md) |
+
+---
+
+### Construction-Execution Independence Confirmed (C1066) — Phase: MORPHOLOGICAL_JOINT_SPACE_ARCHITECTURE
+
+Atom string position has zero correlation with token line position (rho=-0.004, n=11,525).
+
+| # | Statement Summary | Tier | Scope | File |
+|---|-----------|------|-------|----------|
+| **1066** | **Construction-Execution Independence Confirmed** (Spearman rho=-0.004, p=0.647, n=11525; partial rho=0.007 p=0.455; all 19 per-PREFIX groups NS; confirms C522 at full power; construction and execution are completely separate systems) | 2 | B | -> [C1066_construction_execution_independence_confirmed.md](C1066_construction_execution_independence_confirmed.md) |
+
+---
+
+### Terminal Character Positional Bias (C1067) — Phase: MORPHOLOGICAL_JOINT_SPACE_ARCHITECTURE
+
+Terminal character of atoms predicts compound position (V=0.231). Resolves kc paradox.
+
+| # | Statement Summary | Tier | Scope | File |
+|---|-----------|------|-------|----------|
+| **1067** | **Terminal Character Positional Bias** (chi²=105.5, p=3.5e-12, V=0.231; 'c'-terminal FINAL 86%, 'p'-terminal INITIAL 83%; initial char V=0.164; kc FINAL 92.3% token-level; resolves kc paradox: 'c'-driven not k-driven; H3 line-position rejected MW p=1.0) | 2 | B | -> [C1067_terminal_character_positional_bias.md](C1067_terminal_character_positional_bias.md) |
+
+---
+
 ## Navigation
 
 ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)
