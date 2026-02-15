@@ -4,6 +4,20 @@
 
 ---
 
+## Version 3.85 (2026-02-14) - Exit Pathway Neutrality (C1036)
+
+### Summary
+
+Exit-conditional analysis of AXM boundary transitions: when AXM is exited, where does the system go? CV of exit allocation is inversely proportional to pathway frequency (FQ < FL < CC < AXm) — the sampling theory prediction, not C458. Ingress mirror and dwell duration analysis show identical frequency-driven pattern. Key structural finding: exit pathways are independently routed (FL/CC uncorrelated, rho=-0.003 vs compositional null -0.333), consistent with PREFIX-conditioned routing (C1023). C458's hazard/recovery asymmetry is localized to within-AXM dynamics, not boundary crossing. Eliminates exit proportions from C1035's 57% irreducible design freedom. 1 new constraint (C1036). Phase 358.
+
+### New Constraints
+
+| ID | Name | Tier |
+|----|------|------|
+| C1036 | AXM Exit Pathway Allocation Frequency-Neutral | 2 |
+
+---
+
 ## Version 3.84 (2026-02-14) - AXM Residual Irreducibility (C1035)
 
 ### Summary

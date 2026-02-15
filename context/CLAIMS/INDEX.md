@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 900 validated constraints | **Version:** 3.84 | **Date:** 2026-02-14
+**Total:** 901 validated constraints | **Version:** 3.85 | **Date:** 2026-02-14
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2363,6 +2363,24 @@ These files contain detailed constraint documentation. Constraint ranges are app
 - C1017 baseline LOO CV R2 = 0.433 (training 0.564, gap 0.132) — true explained variance is ~43%
 - Random forest negative (CV R2 = -0.149, permutation p = 0.42)
 - The ~57% residual is the grammar's free design space
+
+---
+
+### Exit Pathway Neutrality (C1036) — Phase: EXIT_PATHWAY_PROFILING
+
+> C458's hazard/recovery asymmetry does not manifest at the AXM macro-state boundary. Exit-conditional framing ("given AXM IS exited, where does it go?") shows CV inversely proportional to frequency (FQ < FL < CC < AXm) — the sampling theory prediction, not C458. Ingress and dwell duration show identical pattern. Structurally: exit pathways are independently routed (FL/CC uncorrelated, rho=-0.003 vs null -0.333), consistent with PREFIX-conditioned routing (C1023). C458 must live upstream: within-AXM dynamics, not boundary crossing.
+
+| ID | Description | Tier | Scope | Details |
+|----|-------------|------|-------|---------|
+| **1036** | **AXM Exit Pathway Allocation Frequency-Neutral** (2/7 PASS; CV ranking FQ<FL<CC<AXm = frequency order; FL/CC uncorrelated rho=-0.003; ingress mirror identical; dwell CV same pattern; C458 localized to within-AXM dynamics) | 2 | B | -> [C1036_exit_pathway_neutrality.md](C1036_exit_pathway_neutrality.md) |
+
+**Phase findings:**
+- Exit allocation CV perfectly correlated with frequency (FQ 0.259, FL 0.557, CC 0.650, AXm 0.671)
+- Ingress CV ranking identical (FQ 0.217, FL 0.531, CC 0.620, AXm 0.742)
+- Dwell-before-exit CV ranking identical (FQ 0.227, FL 0.338, CC 0.411, AXm 0.443)
+- FL/CC uncorrelated (rho=-0.003) — independent routing, not competitive allocation
+- FL eta2(REGIME+section) = 0.198 — program-specific, not macro-organizational
+- Eliminates exit proportions from C1035's 57% irreducible design freedom
 
 ---
 

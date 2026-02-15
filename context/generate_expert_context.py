@@ -19,6 +19,7 @@ space in the expert-advisor agent which cannot access files.
 
 Usage:
     python generate_expert_context.py              # Generate agent with all documents
+    python generate_expert_context.py --compact    # Cognitively compressed (~310KB)
     python generate_expert_context.py --no-contracts  # Exclude structural contracts
     python generate_expert_context.py --legacy     # Also generate EXPERT_CONTEXT.md
     python generate_expert_context.py --no-filter  # Skip agent-specific filtering
@@ -153,14 +154,21 @@ def _strip_yaml_provenance_maps(content):
     for line in lines:
         stripped = line.strip()
 
-        # Detect start of provenance_map or provenance_summary section
-        if stripped in ('provenance_map:', 'provenance_summary:'):
+        # Detect start of provenance, provenance_map, or provenance_summary section
+        if stripped in ('provenance:', 'provenance_map:', 'provenance_summary:'):
             skip_provenance = True
             continue
 
         # Stop skipping when we hit a new top-level key or section divider
+        # Check ORIGINAL line for indentation — indented lines are still part of
+        # the provenance section; only unindented keys signal a new section
         if skip_provenance:
-            if stripped.startswith('# ====') or (stripped and not stripped.startswith(' ') and not stripped.startswith('#') and not stripped.startswith('-') and ':' in stripped):
+            is_section_divider = stripped.startswith('# ====')
+            is_top_level_key = (stripped and line[0:1] not in (' ', '\t', '')
+                                and not stripped.startswith('#')
+                                and not stripped.startswith('-')
+                                and ':' in stripped)
+            if is_section_divider or is_top_level_key:
                 skip_provenance = False
             else:
                 continue
@@ -226,6 +234,420 @@ def filter_contract_for_agent(content, filename):
         saved = original_size - new_size
         print(f"  Filtered {filename}: {original_size:,} -> {new_size:,} bytes (saved {saved:,})")
     return content
+
+
+# ============================================================
+# COMPACT FILTERS
+# ============================================================
+# Cognitive compression: keep every concept, shrink explanation.
+# Preserves interpretive backbone and cross-layer coherence.
+# Activated by --compact flag.
+
+# Subsection headers to keep in full when condensing INTERPRETATION_SUMMARY
+_INTERP_KEEP_SUBSECTIONS = [
+    'Tier ',              # "Tier 2: Core Finding", "Tier 3: ..."
+    'Core Finding',
+    'What This Does NOT Claim',
+    'What This DOES Claim',
+    'Cross-References',
+    'Constraints Produced',
+    'Fits Produced',
+    'Evidence Strength Summary',
+    'The Three-Text Relationship',
+    'Key Structural Findings',
+    'Overview',
+    'Census',
+    'Token Decomposition',
+]
+
+# INTERPRETATION_SUMMARY sections to keep in full (already compact)
+_INTERP_KEEP_FULL = [
+    'Purpose',
+    'Frozen Conclusion',
+    'Universal Boundaries',
+    'II. Process Domain',
+    'III. Material Domain',
+    'IV. Craft Interpretation',
+    'V. Institutional Context',
+    'VI. HT Speculative Vocabulary',
+    'VII. Program Characteristics',
+    'VIII. Limits of Interpretation',
+    'IX. Open Questions',
+    '0.E.1.',
+    '0.H.',
+    '0.J.',
+    '0.K.',
+]
+
+
+def _compact_interpretation_summary(content):
+    """Cognitively compress INTERPRETATION_SUMMARY.
+
+    Strategy: Keep every section header + core findings + constraint refs +
+    blockquotes + bold definitions + short tables. Remove narrative prose,
+    evidence detail, phase attributions, example walkthroughs.
+
+    Section X (Brunschwig, 2096 lines) gets special heavy condensation.
+    No section is removed entirely — each keeps its conceptual distillation.
+    """
+    lines = content.split('\n')
+    result = []
+    # State: 'full' = keep everything, 'condense' = selective, 'section_x' = heavy condense
+    state = 'full'
+    in_whitelisted_subsection = False
+    table_rows_kept = 0
+    consecutive_blank = 0
+    x_past_core_finding = False  # For section X: tracks if we've passed the initial blockquotes
+
+    for line in lines:
+        stripped = line.strip()
+
+        # Detect ## section headers
+        if line.startswith('## '):
+            header = line[3:].strip()
+            in_whitelisted_subsection = False
+            table_rows_kept = 0
+
+            # Always keep the header line
+            result.append('')
+            result.append(line)
+
+            # Classify section
+            if any(header.startswith(k) for k in _INTERP_KEEP_FULL):
+                state = 'full'
+            elif header.startswith('X. External Alignment') or header.startswith('Navigation'):
+                state = 'section_x'
+                x_past_core_finding = False
+            else:
+                state = 'condense'
+            continue
+
+        # FULL: keep everything
+        if state == 'full':
+            result.append(line)
+            continue
+
+        # SECTION X: heavy condensation — keep core finding + summary tables only
+        if state == 'section_x':
+            # Detect ### subsection headers
+            if line.startswith('### '):
+                x_past_core_finding = True
+                sub_header = line[4:].strip()
+                in_whitelisted_subsection = any(
+                    sub_header.startswith(k) for k in _INTERP_KEEP_SUBSECTIONS
+                )
+                if in_whitelisted_subsection:
+                    table_rows_kept = 0
+                    result.append(line)
+                continue
+
+            # Keep whitelisted subsection content (tables + blockquotes)
+            if in_whitelisted_subsection:
+                if stripped.startswith('|') or stripped == '' or stripped.startswith('>'):
+                    result.append(line)
+                    continue
+                elif stripped and not stripped.startswith('|'):
+                    in_whitelisted_subsection = False
+
+            # Before first ### : keep blockquotes (core finding area)
+            if not x_past_core_finding and stripped.startswith('>'):
+                result.append(line)
+                continue
+
+            # Skip everything else in section X
+            continue
+
+        # CONDENSE: selective keep
+        if state == 'condense':
+            # Detect ### subsection headers
+            if line.startswith('### '):
+                sub_header = line[4:].strip()
+                in_whitelisted_subsection = any(
+                    sub_header.startswith(k) for k in _INTERP_KEEP_SUBSECTIONS
+                )
+                table_rows_kept = 0
+                if in_whitelisted_subsection:
+                    result.append(line)
+                continue
+
+            # Within whitelisted subsection: keep everything
+            if in_whitelisted_subsection:
+                result.append(line)
+                continue
+
+            # Outside whitelisted subsections: keep structural lines only
+            # Blockquotes (core findings)
+            if stripped.startswith('>'):
+                result.append(line)
+                continue
+            # Bold definitions (only standalone ones, not mid-paragraph)
+            if stripped.startswith('**') and stripped.endswith('**') and len(stripped) < 120:
+                result.append(line)
+                continue
+            # Constraint reference lists (bullet points citing constraints)
+            if stripped.startswith('- ') and re.search(r'C\d{3,4}', stripped):
+                result.append(line)
+                continue
+            # Table rows (first 4 per table: header + separator + 2 data rows)
+            if stripped.startswith('|'):
+                table_rows_kept += 1
+                if table_rows_kept <= 4:
+                    result.append(line)
+                continue
+            else:
+                table_rows_kept = 0
+            # Separators
+            if stripped == '---':
+                result.append(line)
+                consecutive_blank = 0
+                continue
+            # Blank lines (limit to 1 consecutive)
+            if stripped == '':
+                consecutive_blank += 1
+                if consecutive_blank <= 1:
+                    result.append('')
+                continue
+            consecutive_blank = 0
+
+            # Everything else: skip (prose paragraphs, evidence detail, etc.)
+            continue
+
+    return '\n'.join(result)
+
+
+# MODEL_CONTEXT sections to remove entirely (fully redundant)
+_MC_REMOVE_SECTIONS = [
+    'X.B. APPARATUS-CENTRIC',
+    'XII. HISTORICAL',
+]
+
+# MODEL_CONTEXT sections to compress (keep first N lines)
+_MC_COMPRESS_SECTIONS = {
+    'V. GLOBAL MORPHOLOGICAL': 65,
+    'VI. CURRIER B': 55,
+    'VII. CURRIER A': 35,
+    'VIII. AZC': 30,
+}
+
+
+def _compact_model_context(content):
+    """Cognitively compress MODEL_CONTEXT.
+
+    Compress V (morphology), VI (B), VII (A), VIII (AZC) to core concepts.
+    Remove X.B and XII (redundant with INTERPRETATION_SUMMARY).
+    Keep governance sections I-IV, IX, XI, XIII-XVI in full.
+    """
+    lines = content.split('\n')
+    result = []
+    state = 'keep'  # 'keep', 'remove', 'compress'
+    compress_limit = 0
+    lines_in_section = 0
+
+    for line in lines:
+        # Detect ## section headers
+        if line.startswith('## '):
+            header = line[3:].strip()
+
+            # Check if this section should be removed
+            if any(header.startswith(r) for r in _MC_REMOVE_SECTIONS):
+                state = 'remove'
+                result.append(line)
+                result.append('')
+                result.append('*[Section condensed — content available in INTERPRETATION_SUMMARY or structural contracts.]*')
+                result.append('')
+                continue
+
+            # Check if this section should be compressed
+            matched = False
+            for prefix, limit in _MC_COMPRESS_SECTIONS.items():
+                if header.startswith(prefix):
+                    state = 'compress'
+                    compress_limit = limit
+                    lines_in_section = 0
+                    matched = True
+                    break
+
+            if not matched:
+                state = 'keep'
+
+            result.append(line)
+            continue
+
+        if state == 'keep':
+            result.append(line)
+        elif state == 'remove':
+            continue
+        elif state == 'compress':
+            lines_in_section += 1
+            if lines_in_section <= compress_limit:
+                result.append(line)
+            elif lines_in_section == compress_limit + 1:
+                result.append('')
+                result.append('*[Remaining detail available in structural contracts.]*')
+                result.append('')
+
+    return '\n'.join(result)
+
+
+def _compact_constraint_table(content):
+    """Compress constraint table by stripping statistical evidence.
+
+    Removes parenthetical evidence (p-values, rho, chi2, etc.) but
+    preserves constraint cross-references like (C384).
+    Does NOT truncate descriptions — many encode conceptual nuance.
+    """
+    # Pattern for statistical evidence parentheticals
+    stats_pattern = re.compile(
+        r'\s*\([^)]*(?:p[<=]|rho=|chi2|F=\d|eta=|Jaccard|AUC|'
+        r'Cohen|KW|z=\d|r=0\.|n=\d|N=\d|OR=|RR=)[^)]*\)'
+    )
+    lines = content.split('\n')
+    result = []
+    for line in lines:
+        # Skip blank lines and section dividers
+        if not line.strip() or line.strip().startswith('# ---'):
+            continue
+        # Keep header comments
+        if line.startswith('#'):
+            result.append(line)
+            continue
+        # Strip statistical parentheticals from descriptions
+        result.append(stats_pattern.sub('', line))
+    return '\n'.join(result)
+
+
+def _compact_yaml_contract(content):
+    """Compress YAML structural contracts.
+
+    Strips commentary, annotations, deferred, examples, separator blocks.
+    Keeps guarantees, invariants, grammar, hazard topology, design freedom.
+    """
+    lines = content.split('\n')
+    result = []
+    skip_section = False
+    skip_key = None
+    example_count = 0
+    indent = 0
+
+    # Top-level sections to remove entirely
+    remove_sections = ('annotations:', 'deferred:')
+
+    for line in lines:
+        stripped = line.strip()
+
+        # Strip YAML comment separator blocks
+        if stripped.startswith('# ===='):
+            continue
+
+        # Detect top-level keys to skip
+        if stripped in remove_sections and line[0:1] not in (' ', '\t'):
+            skip_section = True
+            skip_key = stripped
+            continue
+
+        # Stop skipping at next top-level key
+        if skip_section and skip_key != 'indented_block':
+            if stripped and line[0:1] not in (' ', '\t', '') and not stripped.startswith('#') and not stripped.startswith('-') and ':' in stripped:
+                skip_section = False
+            else:
+                continue
+
+        # Strip multi-line commentary/notes fields (indented blocks)
+        if stripped.startswith('commentary:') or stripped.startswith('notes:'):
+            # Keep the key with a shortened value if it's a one-liner
+            if '|' in stripped or stripped.endswith(':'):
+                # Multi-line block — skip, add condensed note
+                result.append(line.split(':')[0] + ': "[condensed]"')
+                indent = len(line) - len(line.lstrip())
+                skip_section = True
+                skip_key = 'indented_block'
+                continue
+            else:
+                result.append(line)
+                continue
+
+        # Handle indented block skipping (for commentary/notes)
+        if skip_section and skip_key == 'indented_block':
+            line_indent = len(line) - len(line.lstrip()) if stripped else 999
+            if stripped == '' or line_indent > indent:
+                continue
+            else:
+                skip_section = False
+                skip_key = None
+
+        # Limit example/token_reading_pattern blocks (keep first 2)
+        if stripped.startswith('token_reading_pattern:') or stripped.startswith('example:'):
+            example_count += 1
+        if example_count > 2 and (stripped.startswith('- word:') or stripped.startswith('- token:')):
+            # Skip additional examples
+            continue
+
+        result.append(line)
+
+    return '\n'.join(result)
+
+
+def compact_filter(content, filename):
+    """Apply compact-mode filters to reduce agent size while preserving cognitive richness."""
+    original_size = len(content)
+
+    if 'INTERPRETATION_SUMMARY' in filename:
+        content = _compact_interpretation_summary(content)
+    elif 'MODEL_CONTEXT' in filename:
+        content = _compact_model_context(content)
+    elif 'CONSTRAINT_TABLE' in filename:
+        content = _compact_constraint_table(content)
+
+    new_size = len(content)
+    if original_size != new_size:
+        saved = original_size - new_size
+        pct = (saved / original_size) * 100
+        print(f"  Compact {filename}: {original_size:,} -> {new_size:,} bytes (saved {saved:,}, {pct:.0f}%)")
+
+    return content
+
+
+def compact_contract_filter(content, filename):
+    """Apply compact-mode filters to structural contracts."""
+    original_size = len(content)
+    content = _compact_yaml_contract(content)
+    new_size = len(content)
+    if original_size != new_size:
+        saved = original_size - new_size
+        pct = (saved / original_size) * 100
+        print(f"  Compact {filename}: {original_size:,} -> {new_size:,} bytes (saved {saved:,}, {pct:.0f}%)")
+    return content
+
+
+# Cognitive operating stance for compact agent header
+COMPACT_STANCE = """
+## Cognitive Operating Stance
+
+This is a structurally closed system with:
+- Tier 0-2 binding constraints ({constraint_count} validated)
+- Tier 3-4 explanatory frameworks (non-binding, discardable)
+- No substance-level semantic recovery possible (C171, C120)
+- High-dimensional discrimination manifold (C973, C982)
+- Grammar-level safety enforcement via forbidden transitions (C109)
+- Operator judgment gating (13 types structurally required but non-encodable)
+
+When reasoning:
+- Honor Tier discipline (Tier 0 frozen, Tier 1 falsified, Tier 2 binding)
+- Use contracts for structural questions
+- Use interpretive layer for cross-layer integration
+- Never infer token meanings beyond structural role
+- Dangerous contexts restrict grammar instead of raising alerts (C458)
+- Design asymmetry: hazard clamped (CV 0.04-0.11), recovery free (CV 0.72-0.82) (C458)
+- Free variation envelope: ~57% of folio-level dynamics are genuine design freedom (C980, C1035)
+- Pairwise compositionality: no three-way morphological synergy (C1003)
+
+**Note:** This is a compact agent build. Sections marked *[condensed]* have
+full content in their source documents. All {constraint_count} constraints, {fit_count} fits,
+and 4 structural contracts are complete.
+
+---
+
+"""
 
 
 AGENT_FILE = CONTEXT_DIR.parent / ".claude" / "agents" / "expert-advisor.md"
@@ -318,17 +740,25 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 """
 
 
-def generate_content(header, include_contracts=True, apply_filters=True):
+def generate_content(header, include_contracts=True, apply_filters=True, compact=False):
     """Generate expert context content with given header."""
     constraint_count, fit_count = get_counts()
     sections = []
+    component_sizes = {}
 
     # Header with instructions (fill in dynamic counts)
     sections.append(header.format(constraint_count=constraint_count, fit_count=fit_count))
 
+    # Add cognitive stance for compact mode
+    if compact:
+        sections.append(COMPACT_STANCE.format(
+            constraint_count=constraint_count, fit_count=fit_count
+        ))
+
     # Metadata (counts parsed dynamically from INDEX.md and FIT_TABLE.txt)
+    mode_label = "COMPACT" if compact else "FULL"
     sections.append(f"""**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M')}
-**Version:** FROZEN STATE ({constraint_count} constraints, {fit_count} fits)
+**Version:** FROZEN STATE ({constraint_count} constraints, {fit_count} fits) [{mode_label}]
 
 ---
 
@@ -355,6 +785,9 @@ def generate_content(header, include_contracts=True, apply_filters=True):
             content = filepath.read_text(encoding='utf-8')
             if apply_filters:
                 content = filter_for_agent(content, filename)
+            if compact:
+                content = compact_filter(content, filename)
+            component_sizes[title] = len(content)
             sections.append(f"\n# {title}\n\n{content}\n\n---\n")
         else:
             print(f"WARNING: {filename} not found")
@@ -367,25 +800,31 @@ def generate_content(header, include_contracts=True, apply_filters=True):
                 content = filepath.read_text(encoding='utf-8')
                 if apply_filters:
                     content = filter_contract_for_agent(content, filename)
+                if compact:
+                    content = compact_contract_filter(content, filename)
+                component_sizes[title] = len(content)
                 sections.append(f"\n# {title}\n\n```yaml\n{content}\n```\n\n---\n")
             else:
                 print(f"WARNING: {filename} not found")
 
-    return "".join(sections)
+    return "".join(sections), component_sizes
 
 
-def generate(include_contracts=True, include_legacy=False, apply_filters=True):
+def generate(include_contracts=True, include_legacy=False, apply_filters=True, compact=False):
     """Generate expert-advisor agent with embedded context."""
 
     doc_count = len(CORE_DOCS) + (len(CONTRACTS) if include_contracts else 0)
 
+    if compact:
+        print("Generating COMPACT agent (cognitive compression)...")
     if apply_filters:
         print("Applying agent filters...")
 
     # Generate agent file (with required YAML frontmatter)
-    agent_content = AGENT_FRONTMATTER + generate_content(
-        AGENT_HEADER, include_contracts, apply_filters=apply_filters
+    agent_content, component_sizes = generate_content(
+        AGENT_HEADER, include_contracts, apply_filters=apply_filters, compact=compact
     )
+    agent_content = AGENT_FRONTMATTER + agent_content
     AGENT_FILE.parent.mkdir(parents=True, exist_ok=True)
     AGENT_FILE.write_text(agent_content, encoding='utf-8')
     agent_size_kb = AGENT_FILE.stat().st_size / 1024
@@ -393,9 +832,18 @@ def generate(include_contracts=True, include_legacy=False, apply_filters=True):
     print(f"Agent size: {agent_size_kb:.1f} KB")
     print(f"Documents included: {doc_count}")
 
+    # Print component size report
+    if component_sizes:
+        print(f"\n--- {'Compact' if compact else 'Standard'} Mode Size Report ---")
+        for name, size in component_sizes.items():
+            print(f"  {name}: {size:,} bytes ({size/1024:.1f} KB)")
+        total = sum(component_sizes.values())
+        print(f"  ---")
+        print(f"  Content total: {total:,} bytes ({total/1024:.1f} KB)")
+
     # Legacy output (UNFILTERED - for external expert uploads)
     if include_legacy:
-        legacy_content = generate_content(AGENT_HEADER, include_contracts, apply_filters=False)
+        legacy_content, _ = generate_content(AGENT_HEADER, include_contracts, apply_filters=False)
         LEGACY_FILE.write_text(legacy_content, encoding='utf-8')
         legacy_kb = LEGACY_FILE.stat().st_size / 1024
         print(f"Legacy file: {LEGACY_FILE} ({legacy_kb:.1f} KB, unfiltered)")
@@ -408,9 +856,10 @@ if __name__ == "__main__":
     include_contracts = "--no-contracts" not in sys.argv
     include_legacy = "--legacy" in sys.argv
     apply_filters = "--no-filter" not in sys.argv
+    compact = "--compact" in sys.argv
 
     if "--help" in sys.argv or "-h" in sys.argv:
         print(__doc__)
         sys.exit(0)
 
-    generate(include_contracts, include_legacy, apply_filters)
+    generate(include_contracts, include_legacy, apply_filters, compact)
