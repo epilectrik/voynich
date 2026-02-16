@@ -3,7 +3,7 @@
 meta:
   name: "Human Track Structural Contract"
   acronym: "HTSC"
-  version: "1.0"
+  version: "1.1"
   date: "2026-02-15"
   status: "LOCKED"
   layer_type: "cross-system layer contract"
@@ -97,8 +97,12 @@ guarantees:
     provenance: "C416"
 
   - id: "HAZARD_AVOIDANCE"
-    statement: "0/35 HT tokens at forbidden transition seams; average distance 4.84 (vs 2.5 expected)"
-    provenance: "C166, C169"
+    statement: |
+      0/35 HT tokens at forbidden transition seams; average distance 4.84 (vs 2.5 expected).
+      Mechanism: vocabulary-level exclusion (C1078). Only 5/7042 HT tokens participate in
+      forbidden vocabulary at all. Avoidance is lexical, not positional — HT words simply
+      do not appear in C109 forbidden pairs. Boundary position does not modulate distance.
+    provenance: "C166, C169, C1078"
 
   - id: "LINE1_ENRICHMENT"
     tier: 0
@@ -334,10 +338,16 @@ two_axis_model:
     description: "Tracks spare cognitive capacity"
     evidence: "r=-0.301 with folio complexity"
     pattern: "Hard task -> frequent but simple HT; easy task -> rare but complex HT"
+    caveat: |
+      C1080 REJECTS the compound rate prediction of this axis.
+      Tail pressure POSITIVELY correlates with HT compound rate (rho=0.367, p=0.0007).
+      High-tail folios have MORE compound HT, not less. The specification model (C935)
+      wins: compound rate tracks specification density, not cognitive simplicity.
+      The morphology axis may still apply to other complexity measures but NOT compound rate.
 
   strategy_connection: "r=+0.46 CAUTIOUS, r=-0.48 OPPORTUNISTIC (C488)"
 
-  provenance: "C461, C477, C488, C489"
+  provenance: "C461, C477, C488, C489, C1080"
 
 # ============================================================
 disallowed_interpretations:
@@ -456,6 +466,13 @@ provenance:
       - {id: "C927", topic: "HT label elevation (2.42x)"}
     compound_specification:
       - {id: "C935", topic: "Compound specification dual-purpose model"}
+    interaction_architecture:
+      - {id: "C1078", topic: "Hazard avoidance vocabulary-level, not positional"}
+      - {id: "C1079", topic: "Line-1 exclusivity = folio-specificity tautology"}
+      - {id: "C1080", topic: "Tail-compound specification correlation (rho=0.367)"}
+      - {id: "C1081", topic: "LINK-HT prefix phase independent"}
+      - {id: "C1082", topic: "HT oscillation is section-driven"}
+      - {id: "C1083", topic: "HT paragraph-ordinal neutral"}
 
   # HT-REFERENCED constraints (primary home is another contract)
   referenced:
@@ -481,9 +498,9 @@ provenance:
       - {id: "C171", topic: "Closed-loop only verdict (B grammar)"}
       - {id: "C841", topic: "Paragraph gallows-initial markers (paragraph structure)"}
 
-  total_owned: 68
+  total_owned: 74
   total_referenced: 14
-  total_coverage: 82
+  total_coverage: 88
 
 # ============================================================
 # Summary statement

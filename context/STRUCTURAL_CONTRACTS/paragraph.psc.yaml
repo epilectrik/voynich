@@ -3,7 +3,7 @@
 meta:
   name: "Paragraph Structural Contract"
   acronym: "PSC"
-  version: "1.0"
+  version: "1.1"
   date: "2026-02-15"
   status: "LOCKED"
   layer_type: "cross-system structural unit contract"
@@ -148,12 +148,13 @@ guarantees:
       Section effects are ADDITIVE only (C1047: no section-dynamics interaction).
     provenance: "C860, C852"
 
-  - id: "LINK_HAZARD_NEUTRAL"
+  - id: "LINK_HAZARD_HT_NEUTRAL"
     statement: |
-      LINK and hazard density are NEUTRAL across paragraph ordinals.
+      LINK, hazard density, and HT density are all NEUTRAL across paragraph ordinals.
       LINK rate CV: 0.16. Hazard rate CV: 0.21.
       LINK body allocation: 79.4%. Hazard body allocation: 80.9%.
-    provenance: "C861"
+      HT ordinal correlation: rho=0.018, p=0.69. First vs last: MW p=0.086 NS (C1083).
+    provenance: "C861, C1083"
 
   - id: "MACRO_DYNAMICS_NEUTRAL"
     statement: |
