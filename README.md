@@ -6,13 +6,13 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 
 ## Project Status
 
-**Core model: CLOSED** | **Characterization: ACTIVE** | **Version: 3.84**
+**Core model: CLOSED** | **Characterization: ACTIVE** | **Version: 4.10**
 
 | Metric | Value |
 |--------|-------|
-| Validated constraints | 900 |
-| Research phases completed | 357 |
-| Model fits tested | 61 |
+| Validated constraints | 948 |
+| Research phases completed | 383 |
+| Model fits tested | 66 |
 | Constraint tiers | 0 (frozen fact) through 4 (exploratory) |
 
 ## Core Finding
@@ -130,16 +130,16 @@ Renders any Currier B folio with morphological parse, structural roles, interpre
 
 ```
 voynich/
-  context/            # Constraint system (889 validated constraints)
+  context/            # Constraint system (948 validated constraints)
     CLAUDE_INDEX.md   # Start here for full documentation
     CLAIMS/           # Individual constraint files
     ARCHITECTURE/     # System architecture docs (A, B, AZC, cross-system)
-    STRUCTURAL_CONTRACTS/  # API-layer contracts (CASC, BCSC, ACT, BRSC)
-    MODEL_FITS/       # 61 tested model fits
+    STRUCTURAL_CONTRACTS/  # API-layer contracts (CASC, BCSC, ACT, HTSC, PSC)
+    MODEL_FITS/       # 66 tested model fits
     SPECULATIVE/      # Tier 3-4 interpretations
   data/               # Transcript, dictionaries, Brunschwig recipes
   scripts/            # voynich.py core library + analysis tools
-  phases/             # 347 completed research phases
+  phases/             # 383 completed research phases
   results/            # Legacy analysis outputs (early phases; new results go in phases/)
   folio_analysis/     # Per-folio hazard maps
   annotation_data/    # Folio annotation work
@@ -161,6 +161,28 @@ voynich/
 ## Methodology
 
 This project was built using AI-assisted computational analysis. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), which wrote the analysis scripts, maintained the constraint system, and performed statistical validation. GPT-5 (OpenAI) provided independent cross-validation and alternative analytical perspectives at key decision points. All claims are grounded in statistical evidence from the transcript data — no result depends on AI intuition or pattern-matching alone.
+
+### Progressive Context Architecture
+
+The central methodological innovation is a **progressive context system** — a growing body of validated constraints that accumulates across research phases and is always available to the AI agents performing analysis.
+
+The system works as follows:
+
+1. **Every finding becomes a constraint.** When a research phase produces a statistically validated result, it is encoded as a numbered constraint (e.g., C267: "Every Currier B token decomposes as PREFIX + MIDDLE + SUFFIX") with an explicit tier level and provenance chain back to the script and data that produced it.
+
+2. **Constraints are tiered by confidence.** Tier 0 constraints are frozen facts that cannot be reopened. Tier 1 constraints are falsified hypotheses that cannot be retried. Tier 2 constraints are high-confidence structural findings. Tiers 3-4 are speculative or exploratory. This prevents the system from drifting backward or re-deriving known results.
+
+3. **Context is always loaded.** Every new analysis session begins with the full constraint system available. The AI doesn't start from scratch — it starts from everything that has already been proven, disproven, or established. This means phase 383 benefits from all 948 constraints accumulated across the previous 382 phases.
+
+4. **Structural contracts provide fast lookup.** As the constraint count grew, key subsystems were summarized into API-like contracts (YAML files) that encode the essential properties of each manuscript layer in a single file. These contracts are the "shallow API" — check the contract first, drill into individual constraints only when needed.
+
+5. **Falsification is permanent.** When a hypothesis fails, it is recorded as a Tier 1 falsification and can never be retried. This prevents circular investigation and forces the analysis forward. Over 30 hypotheses have been permanently closed this way, including natural language encoding, cipher systems, calendar theories, and character-level semantics.
+
+6. **Expert validation prevents drift.** An embedded expert-advisor agent carries a consolidated version of the entire constraint system — all 948 constraints, structural contracts, fit results, and architectural documentation — pre-loaded into its system prompt. When a research phase proposes new constraints, interpretive extensions, or structural changes, the expert-advisor validates them against the full body of existing knowledge in a single pass. This catches contradictions, tier violations, and semantic drift that would be invisible to any individual research phase working with partial context. The expert's consolidated context is regenerated from source whenever the constraint system changes, ensuring it always reflects the current state of knowledge.
+
+The result is a system where knowledge compounds: early phases discover basic morphology, middle phases build grammar and classification, late phases test external comparisons and characterize edge cases — and none of this work is ever lost or forgotten. Every constraint is traceable to specific statistical evidence.
+
+This architecture is what allowed the project to reach conclusions that would be impossible in a single analytical pass. No individual analysis session could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, and the Brunschwig alignment — but 383 phases, each building on validated prior work, could.
 
 ## Data Source
 

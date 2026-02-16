@@ -296,6 +296,8 @@ When asked to **"sync reference files for our expert"**, update these 5 files:
 
 **Internal Expert:** The expert-advisor agent (`.claude/agents/expert-advisor.md`) has the full constraint system embedded. It is invoked via automatic delegation - mention "ask the expert-advisor" or "have the expert validate" in your request.
 
+**IMPORTANT — Cache refresh:** After regenerating the expert-advisor agent file, you must **restart Claude Code** for the changes to take effect. Claude Code caches agent definitions at startup; edits to `.claude/agents/expert-advisor.md` during a session will not be picked up until the next session.
+
 ---
 
 ## Agent Workflow: Expert Validation
