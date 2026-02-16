@@ -88,7 +88,7 @@ and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-15 17:21
+**Generated:** 2026-02-15 18:50
 **Version:** FROZEN STATE (921 constraints, 66 fits) [COMPACT]
 
 ---
@@ -1101,7 +1101,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 932 constraints | 2026-02-15
+CONSTRAINT_REFERENCE v2.6 | 937 constraints | 2026-02-15
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2038,6 +2038,11 @@ C1064	**PREFIX-SUFFIX Joint Role Encoding** (joint 88.5% vs PREFIX 82.6% vs SUFF
 C1065	**Atom Bigram Ordering Grammar**
 C1066	**Construction-Execution Independence Confirmed**
 C1067	**Terminal Character Positional Bias**
+C1068	**Cross-Layer Partial Coupling**
+C1069	**Weak Residual Community Structure** (3 communities after hub removal + frequency regression; Q_residual=0.125, Q_random=0.042, signal=0.082; weak but above-random; one community concentrates kernel-classified MIDDLEs)
+C1070	**Atom Ordering Grammar Independent of Kernel Directional Bias** (only 2/21 cross-class pairs; both mismatch C521; compound construction grammar has own rules not reducible to kernel physics)
+C1071	**Forbidden Transitions Operate Above Component-Level Rules** (only 4/17 C109 transitions blocked by C475/C911/C1063; 0 by C911 or C1063; 13/13 residual are C475-COMPATIBLE; confirms C627 token-specific directional mechanism)
+C1072	**Terminal Character Predicts Within-Group Compatibility**
 
 ---
 

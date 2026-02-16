@@ -1,0 +1,84 @@
+{
+  "test": "T2_community_structure",
+  "verdict": "PARTIAL",
+  "n_nodes": 972,
+  "raw_edges": 10241,
+  "raw_n_communities": 18,
+  "raw_modularity": 0.1694,
+  "residual_edges": 139709,
+  "residual_n_communities": 3,
+  "residual_modularity": 0.1245,
+  "random_null_modularity": 0.0422,
+  "signal_Q": 0.0823,
+  "community_profiles": [
+    {
+      "community": 0,
+      "size": 339,
+      "k_enriched": 15,
+      "h_enriched": 3,
+      "e_enriched": 6,
+      "classified_total": 24,
+      "sample_members": [
+        "a",
+        "acp",
+        "ai",
+        "aiin",
+        "ain",
+        "ainaral",
+        "air",
+        "ak",
+        "al",
+        "ala"
+      ]
+    },
+    {
+      "community": 1,
+      "size": 334,
+      "k_enriched": 1,
+      "h_enriched": 0,
+      "e_enriched": 1,
+      "classified_total": 2,
+      "sample_members": [
+        "af",
+        "afd",
+        "aiid",
+        "aiikh",
+        "aiind",
+        "aiino",
+        "aikhek",
+        "aip",
+        "aira",
+        "airs"
+      ]
+    },
+    {
+      "community": 2,
+      "size": 299,
+      "k_enriched": 0,
+      "h_enriched": 2,
+      "e_enriched": 0,
+      "classified_total": 2,
+      "sample_members": [
+        "ach",
+        "ad",
+        "aiee",
+        "aii",
+        "aiio",
+        "aik",
+        "aiph",
+        "airal",
+        "ait",
+        "alch"
+      ]
+    }
+  ],
+  "constraints_referenced": [
+    "C475",
+    "C983",
+    "C986",
+    "C987",
+    "C988",
+    "C908",
+    "C984"
+  ]
+}

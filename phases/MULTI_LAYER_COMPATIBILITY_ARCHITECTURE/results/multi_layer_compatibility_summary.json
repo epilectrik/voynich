@@ -1,0 +1,55 @@
+{
+  "phase": 381,
+  "name": "MULTI_LAYER_COMPATIBILITY_ARCHITECTURE",
+  "description": "5-test battery: cross-layer independence, community structure, atom-kernel correlation, hazard residual, terminal-compatibility",
+  "tier": 2,
+  "tests": [
+    {
+      "id": "T1",
+      "name": "Cross-Layer Independence",
+      "verdict": "FAIL"
+    },
+    {
+      "id": "T2",
+      "name": "C475 Community Structure",
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "T3",
+      "name": "Atom Ordering x Kernel Profile",
+      "verdict": "FAIL"
+    },
+    {
+      "id": "T4",
+      "name": "Hazard Residual Characterization",
+      "verdict": "PASS"
+    },
+    {
+      "id": "T5",
+      "name": "Terminal Character x Compatibility",
+      "verdict": "PASS"
+    }
+  ],
+  "constraints_referenced": [
+    "C1000",
+    "C1003",
+    "C1063",
+    "C1065",
+    "C1067",
+    "C109",
+    "C475",
+    "C521",
+    "C627",
+    "C660",
+    "C873",
+    "C908",
+    "C911",
+    "C983",
+    "C984",
+    "C985",
+    "C986",
+    "C987",
+    "C988",
+    "C996"
+  ]
+}

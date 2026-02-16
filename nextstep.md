@@ -1,7 +1,7 @@
 # Next Direction: Characterization Complete — Pivot to Application
 
-**Status:** CHARACTERIZATION SATURATED
-**Current state:** v4.07 | 932 constraints | 66 fits | 380 phases
+**Status:** CHARACTERIZATION ACTIVE
+**Current state:** v4.08 | 937 constraints | 66 fits | 381 phases
 
 ---
 
@@ -134,6 +134,22 @@ New constraints: C1063-C1067.
 
 ---
 
+## Phase 381: Multi-Layer Compatibility Architecture (5-Test Battery)
+
+Integrated three forbidden/incompatibility layers (C475, C911, C1063). Expert-validated. All Tier 2.
+
+| Test | Verdict | Key Finding |
+|------|---------|-------------|
+| T1: Cross-Layer Independence | **FAIL** | C475 x C911 coupled (NMI=0.185), frequency-mediated (perm_p=0.13). C1063 layer independent (NMI<0.006). |
+| T2: Community Structure | **PARTIAL** | 3 communities after hub removal. Q_signal=0.082 above random. One concentrates kernel MIDDLEs. |
+| T3: Atom x Kernel Profile | **FAIL** | Only 2/21 cross-class pairs; both mismatch C521. Compound grammar independent of kernel bias. |
+| T4: Hazard Residual | **PASS** | Only 4/17 C109 blocked. 13/13 residual C475-compatible. Confirms C627 token-specific mechanism. |
+| T5: Terminal x Compatibility | **PASS** | 5 groups >2x baseline. 'n' x15.2, 'm' x8.2, 'y' x7.2. INITIAL-biased 3.2x more compatible than FINAL. |
+
+New constraints: C1068-C1072.
+
+---
+
 ## What's Been Established
 
 1. **Core model CLOSED** (PCA-v1 certified)
@@ -151,6 +167,7 @@ New constraints: C1063-C1067.
 13. **Galenic recipe prediction tested** (0/3 PASS: degree-hazard, quality-opposition, degree-recovery all FAIL. Maps analogy boundary: framework alignment holds, recipe physics does not. Break point: scalar vs topological.)
 14. **Morphological joint space characterized** (2 PASS, 2 PARTIAL, 1 FAIL: 17 PREFIX x SUFFIX forbidden pairs, +5.9pp joint role gain, atom bigram grammar V=0.376, C522 independence confirmed rho=-0.004, terminal character positional code V=0.231)
 15. **Morphological deep structure characterized** (2 PASS, 1 INDEPENDENT, 2 PARTIAL: suffix grammar genuine V=0.062, suffix-role independent of PREFIX, atom position grammar V=0.333, atom co-occurrence structured, depth predicts folio-specificity rho=-0.27)
+16. **Multi-layer compatibility architecture characterized** (2 PASS, 1 PARTIAL, 2 FAIL: C475 x C911 partially coupled NMI=0.185, weak 3-community structure Q_signal=0.082, atom ordering independent of kernel bias, forbidden transitions operate above component rules 13/17 residual, terminal character predicts compatibility 5 groups elevated)
 
 ---
 

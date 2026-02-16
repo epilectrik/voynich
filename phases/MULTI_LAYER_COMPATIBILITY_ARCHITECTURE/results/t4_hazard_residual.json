@@ -1,0 +1,442 @@
+{
+  "test": "T4_hazard_residual",
+  "verdict": "PASS",
+  "interpretation": "Component layers cover only 4/17 forbidden transitions. 13/13 residual pairs are COMPATIBLE in C475, confirming C627: forbidden transitions are a token-specific directional mechanism operating above component-level rules.",
+  "n_transitions": 17,
+  "n_covered": 4,
+  "coverage_rate": 0.2353,
+  "per_layer": {
+    "c475": 4,
+    "c911": 0,
+    "c1063": 0
+  },
+  "n_residual": 13,
+  "residual_compatible_in_c475": 13,
+  "residual_source_types": {
+    "spoke": 8,
+    "bridge": 5
+  },
+  "residual_target_types": {
+    "bridge": 9,
+    "spoke": 4
+  },
+  "coverage_detail": [
+    {
+      "id": 1,
+      "source": "shey",
+      "target": "aiin",
+      "source_decomp": {
+        "prefix": "sh",
+        "middle": "ey",
+        "suffix": null
+      },
+      "target_decomp": {
+        "prefix": null,
+        "middle": "aiin",
+        "suffix": null
+      },
+      "c475_blocked": "False",
+      "c475_note": "compat=1",
+      "c911_blocked": false,
+      "c911_blocks_src": false,
+      "c911_blocks_tgt": false,
+      "c1063_blocked": false,
+      "any_layer_blocks": false,
+      "source_type": "spoke",
+      "target_type": "bridge"
+    },
+    {
+      "id": 2,
+      "source": "shey",
+      "target": "al",
+      "source_decomp": {
+        "prefix": "sh",
+        "middle": "ey",
+        "suffix": null
+      },
+      "target_decomp": {
+        "prefix": null,
+        "middle": "al",
+        "suffix": null
+      },
+      "c475_blocked": "False",
+      "c475_note": "compat=1",
+      "c911_blocked": false,
+      "c911_blocks_src": false,
+      "c911_blocks_tgt": false,
+      "c1063_blocked": false,
+      "any_layer_blocks": false,
+      "source_type": "spoke",
+      "target_type": "bridge"
+    },
+    {
+      "id": 3,
+      "source": "shey",
+      "target": "c",
+      "source_decomp": {
+        "prefix": "sh",
+        "middle": "ey",
+        "suffix": null
+      },
+      "target_decomp": {
+        "prefix": null,
+        "middle": "c",
+        "suffix": null
+      },
+      "c475_blocked": "True",
+      "c475_note": "compat=0",
+      "c911_blocked": false,
+      "c911_blocks_src": false,
+      "c911_blocks_tgt": false,
+      "c1063_blocked": false,
+      "any_layer_blocks": "True",
+      "source_type": "spoke",
+      "target_type": "spoke"
+    },
+    {
+      "id": 4,
+      "source": "chol",
+      "target": "r",
+      "source_decomp": {
+        "prefix": "ch",
+        "middle": "ol",
+        "suffix": null
+      },
+      "target_decomp": {
+        "prefix": null,
+        "middle": "r",
+        "suffix": null
+      },
+      "c475_blocked": "False",
+      "c475_note": "compat=1",
+      "c911_blocked": false,
+      "c911_blocks_src": false,
+      "c911_blocks_tgt": false,
+      "c1063_blocked": false,
+      "any_layer_blocks": false,
+      "source_type": "bridge",
+      "target_type": "spoke"
+    },
+    {
+      "id": 5,
+      "source": "chedy",
+      "target": "ee",
+      "source_decomp": {
+        "prefix": "ch",
+        "middle": "edy",
+        "suffix": null
+      },
+      "target_decomp": {
+        "prefix": null,
+        "middle": "ee",
+        "suffix": null
+      },
+      "c475_blocked": "True",
+      "c475_note": "compat=0",
+      "c911_blocked": false,
+      "c911_blocks_src": false,
+      "c911_blocks_tgt": false,
+      "c1063_blocked": false,
+      "any_layer_blocks": "True",
+      "source_type": "bridge",
+      "target_type": "spoke"
+    },
+    {
+      "id": 6,
+      "source": "dy",
+      "target": "aiin",
+      "source_decomp": {
+        "prefix": null,
+        "middle": "dy",
+        "suffix": null
+      },
+      "target_decomp": {
+        "prefix": null,
+        "middle": "aiin",
+        "suffix": null
+      },
+      "c475_blocked": "False",
+      "c475_note": "compat=1",
+      "c911_blocked": false,
+      "c911_blocks_src": false,
+      "c911_blocks_tgt": false,
+      "c1063_blocked": false,
+      "any_layer_blocks": false,
+      "source_type": "spoke",
+      "target_type": "bridge"
+    },
+    {
+      "id": 7,
+      "source": "dy",
+      "target": "chey",
+      "source_decomp": {
+        "prefix": null,
+        "middle": "dy",
+        "suffix": null
+      },
+      "target_decomp": {
+        "prefix": "ch",
+        "middle": "ey",
+        "suffix": null
+      },
+      "c475_blocked": "False",
+      "c475_note": "compat=1",
+      "c911_blocked": false,
+      "c911_blocks_src": false,
+      "c911_blocks_tgt": false,
+      "c1063_blocked": false,
+      "any_layer_blocks": false,
+      "source_type": "spoke",
+      "target_type": "spoke"
+    },
+    {
+      "id": 8,
+      "source": "l",
+      "target": "chol",
+      "source_decomp": {
+        "prefix": null,
+        "middle": "l",
+        "suffix": null
+      },
+      "target_decomp": {
+        "prefix": "ch",
+        "middle": "ol",
+        "suffix": null
+      },
+      "c475_blocked": "False",
+      "c475_note": "compat=1",
+      "c911_blocked": false,
+      "c911_blocks_src": false,
+      "c911_blocks_tgt": false,
+      "c1063_blocked": false,
+      "any_layer_blocks": false,
+      "source_type": "spoke",
+      "target_type": "bridge"
+    },
+    {
+      "id": 9,
+      "source": "or",
+      "target": "dal",
+      "source_decomp": {
+        "prefix": null,
+        "middle": "or",
+        "suffix": null
+      },
+      "target_decomp": {
+        "prefix": "da",
+        "middle": "l",
+        "suffix": null
+      },
+      "c475_blocked": "False",
+      "c475_note": "compat=1",
+      "c911_blocked": false,
+      "c911_blocks_src": false,
+      "c911_blocks_tgt": false,
+      "c1063_blocked": false,
+      "any_layer_blocks": false,
+      "source_type": "bridge",
+      "target_type": "spoke"
+    },
+    {
+      "id": 10,
+      "source": "chey",
+      "target": "chedy",
+      "source_decomp": {
+        "prefix": "ch",
+        "middle": "ey",
+        "suffix": null
+      },
+      "target_decomp": {
+        "prefix": "ch",
+        "middle": "edy",
+        "suffix": null
+      },
+      "c475_blocked": "False",
+      "c475_note": "compat=1",
+      "c911_blocked": false,
+      "c911_blocks_src": false,
+      "c911_blocks_tgt": false,
+      "c1063_blocked": false,
+      "any_layer_blocks": false,
+      "source_type": "spoke",
+      "target_type": "bridge"
+    },
+    {
+      "id": 11,
+      "source": "chey",
+      "target": "shedy",
+      "source_decomp": {
+        "prefix": "ch",
+        "middle": "ey",
+        "suffix": null
+      },
+      "target_decomp": {
+        "prefix": "sh",
+        "middle": "edy",
+        "suffix": null
+      },
+      "c475_blocked": "False",
+      "c475_note": "compat=1",
+      "c911_blocked": false,
+      "c911_blocks_src": false,
+      "c911_blocks_tgt": false,
+      "c1063_blocked": false,
+      "any_layer_blocks": false,
+      "source_type": "spoke",
+      "target_type": "bridge"
+    },
+    {
+      "id": 12,
+      "source": "ar",
+      "target": "dal",
+      "source_decomp": {
+        "prefix": null,
+        "middle": "ar",
+        "suffix": null
+      },
+      "target_decomp": {
+        "prefix": "da",
+        "middle": "l",
+        "suffix": null
+      },
+      "c475_blocked": "False",
+      "c475_note": "compat=1",
+      "c911_blocked": false,
+      "c911_blocks_src": false,
+      "c911_blocks_tgt": false,
+      "c1063_blocked": false,
+      "any_layer_blocks": false,
+      "source_type": "bridge",
+      "target_type": "spoke"
+    },
+    {
+      "id": 13,
+      "source": "c",
+      "target": "ee",
+      "source_decomp": {
+        "prefix": null,
+        "middle": "c",
+        "suffix": null
+      },
+      "target_decomp": {
+        "prefix": null,
+        "middle": "ee",
+        "suffix": null
+      },
+      "c475_blocked": "True",
+      "c475_note": "compat=0",
+      "c911_blocked": false,
+      "c911_blocks_src": false,
+      "c911_blocks_tgt": false,
+      "c1063_blocked": false,
+      "any_layer_blocks": "True",
+      "source_type": "spoke",
+      "target_type": "spoke"
+    },
+    {
+      "id": 14,
+      "source": "he",
+      "target": "t",
+      "source_decomp": {
+        "prefix": null,
+        "middle": "he",
+        "suffix": null
+      },
+      "target_decomp": {
+        "prefix": null,
+        "middle": "t",
+        "suffix": null
+      },
+      "c475_blocked": "True",
+      "c475_note": "compat=0",
+      "c911_blocked": false,
+      "c911_blocks_src": false,
+      "c911_blocks_tgt": false,
+      "c1063_blocked": false,
+      "any_layer_blocks": "True",
+      "source_type": "spoke",
+      "target_type": "hub"
+    },
+    {
+      "id": 15,
+      "source": "he",
+      "target": "or",
+      "source_decomp": {
+        "prefix": null,
+        "middle": "he",
+        "suffix": null
+      },
+      "target_decomp": {
+        "prefix": null,
+        "middle": "or",
+        "suffix": null
+      },
+      "c475_blocked": "False",
+      "c475_note": "compat=1",
+      "c911_blocked": false,
+      "c911_blocks_src": false,
+      "c911_blocks_tgt": false,
+      "c1063_blocked": false,
+      "any_layer_blocks": false,
+      "source_type": "spoke",
+      "target_type": "bridge"
+    },
+    {
+      "id": 16,
+      "source": "shedy",
+      "target": "aiin",
+      "source_decomp": {
+        "prefix": "sh",
+        "middle": "edy",
+        "suffix": null
+      },
+      "target_decomp": {
+        "prefix": null,
+        "middle": "aiin",
+        "suffix": null
+      },
+      "c475_blocked": "False",
+      "c475_note": "compat=1",
+      "c911_blocked": false,
+      "c911_blocks_src": false,
+      "c911_blocks_tgt": false,
+      "c1063_blocked": false,
+      "any_layer_blocks": false,
+      "source_type": "bridge",
+      "target_type": "bridge"
+    },
+    {
+      "id": 17,
+      "source": "shedy",
+      "target": "o",
+      "source_decomp": {
+        "prefix": "sh",
+        "middle": "edy",
+        "suffix": null
+      },
+      "target_decomp": {
+        "prefix": null,
+        "middle": "o",
+        "suffix": null
+      },
+      "c475_blocked": "False",
+      "c475_note": "compat=1",
+      "c911_blocked": false,
+      "c911_blocks_src": false,
+      "c911_blocks_tgt": false,
+      "c1063_blocked": false,
+      "any_layer_blocks": false,
+      "source_type": "bridge",
+      "target_type": "bridge"
+    }
+  ],
+  "constraints_referenced": [
+    "C109",
+    "C475",
+    "C911",
+    "C1063",
+    "C627",
+    "C996",
+    "C1000"
+  ]
+}

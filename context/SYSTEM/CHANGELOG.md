@@ -4,6 +4,37 @@
 
 ---
 
+## Version 4.08 (2026-02-15) - Multi-Layer Compatibility Architecture (5-Test Battery)
+
+### Summary
+
+Phase 381 integrates three independently-discovered forbidden/incompatibility layers (C475, C911, C1063) to test whether they form a unified safety architecture. 5-test battery, expert-advisor validated. Results: 2 PASS, 1 PARTIAL, 2 informative FAIL. 5 new constraints (C1068-C1072).
+
+Key findings:
+- **Cross-layer partial coupling** (T1 FAIL): C475 x C911 coupled (NMI=0.185) but frequency-mediated (perm_p=0.13). C1063 layer fully independent (NMI<0.006). Two MIDDLE-centric layers share frequency gradient; PREFIX-SUFFIX layer orthogonal.
+- **Weak residual community structure** (T2 PARTIAL): After hub removal, 3 communities emerge (Q_signal=0.082 above random). One concentrates kernel-classified MIDDLEs. Too weak for categorical interpretation but non-trivial.
+- **Atom ordering independent of kernel bias** (T3 FAIL): Only 2/21 asymmetric pairs cross kernel classes; both mismatch C521. Compound construction grammar has own rules not reducible to kernel directional physics.
+- **Hazard residual above components** (T4 PASS): Only 4/17 C109 forbidden transitions blocked by any layer. 13/13 residual are C475-compatible. Confirms C627: forbidden transitions are token-specific directional, not component-decomposable.
+- **Terminal character predicts compatibility** (T5 PASS): 5 terminal groups elevated >2x baseline (n x15.2, m x8.2, y x7.2, r x2.3, l x2.3). INITIAL-biased terminals 3.2x more compatible than FINAL-biased.
+
+### New Files
+
+| File | Purpose |
+|------|---------|
+| `phases/MULTI_LAYER_COMPATIBILITY_ARCHITECTURE/scripts/multi_layer_compatibility.py` | 5-test battery |
+| `phases/MULTI_LAYER_COMPATIBILITY_ARCHITECTURE/results/t1_cross_layer_independence.json` | T1 results |
+| `phases/MULTI_LAYER_COMPATIBILITY_ARCHITECTURE/results/t2_community_structure.json` | T2 results |
+| `phases/MULTI_LAYER_COMPATIBILITY_ARCHITECTURE/results/t3_atom_kernel_correlation.json` | T3 results |
+| `phases/MULTI_LAYER_COMPATIBILITY_ARCHITECTURE/results/t4_hazard_residual.json` | T4 results |
+| `phases/MULTI_LAYER_COMPATIBILITY_ARCHITECTURE/results/t5_terminal_compatibility.json` | T5 results |
+| `context/CLAIMS/C1068_cross_layer_partial_coupling.md` | C475 x C911 coupling |
+| `context/CLAIMS/C1069_residual_community_structure.md` | Weak 3-community structure |
+| `context/CLAIMS/C1070_atom_ordering_kernel_independence.md` | Atom ordering != kernel bias |
+| `context/CLAIMS/C1071_hazard_residual_above_components.md` | Forbidden transitions above components |
+| `context/CLAIMS/C1072_terminal_character_compatibility_signal.md` | Terminal char compatibility |
+
+---
+
 ## Version 4.07 (2026-02-15) - Morphological Joint Space Architecture (5-Test Battery)
 
 ### Summary

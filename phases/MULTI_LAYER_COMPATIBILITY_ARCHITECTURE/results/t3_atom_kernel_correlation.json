@@ -1,0 +1,243 @@
+{
+  "test": "T3_atom_kernel_correlation",
+  "verdict": "FAIL",
+  "n_asymmetric_pairs": 20,
+  "n_kernel_involved": 2,
+  "n_match_c521": 0,
+  "n_mismatch_c521": 2,
+  "match_rate": 0.0,
+  "binomial_p": 1.0,
+  "fisher_p": 1.0,
+  "classification_methods": {
+    "c908_involved": 16,
+    "char_involved": 8
+  },
+  "pair_analyses": [
+    {
+      "first": "al",
+      "second": "lo",
+      "first_class": "k",
+      "first_method": "c908",
+      "second_class": null,
+      "second_method": "none",
+      "rate": 1.0,
+      "n": 12,
+      "c521_predicts_this_order": null
+    },
+    {
+      "first": "ai",
+      "second": "ed",
+      "first_class": null,
+      "first_method": "none",
+      "second_class": "e",
+      "second_method": "c908",
+      "rate": 1.0,
+      "n": 5,
+      "c521_predicts_this_order": null
+    },
+    {
+      "first": "ek",
+      "second": "ke",
+      "first_class": "k",
+      "first_method": "c908",
+      "second_class": "k",
+      "second_method": "c908",
+      "rate": 1.0,
+      "n": 7,
+      "c521_predicts_this_order": null
+    },
+    {
+      "first": "ai",
+      "second": "ka",
+      "first_class": null,
+      "first_method": "none",
+      "second_class": "k",
+      "second_method": "char",
+      "rate": 1.0,
+      "n": 12,
+      "c521_predicts_this_order": null
+    },
+    {
+      "first": "al",
+      "second": "op",
+      "first_class": "k",
+      "first_method": "c908",
+      "second_class": null,
+      "second_method": "none",
+      "rate": 1.0,
+      "n": 5,
+      "c521_predicts_this_order": null
+    },
+    {
+      "first": "al",
+      "second": "lch",
+      "first_class": "k",
+      "first_method": "c908",
+      "second_class": "k",
+      "second_method": "c908",
+      "rate": 1.0,
+      "n": 9,
+      "c521_predicts_this_order": null
+    },
+    {
+      "first": "ed",
+      "second": "te",
+      "first_class": "e",
+      "first_method": "c908",
+      "second_class": "e",
+      "second_method": "char",
+      "rate": 1.0,
+      "n": 6,
+      "c521_predicts_this_order": null
+    },
+    {
+      "first": "eeo",
+      "second": "te",
+      "first_class": "e",
+      "first_method": "c908",
+      "second_class": "e",
+      "second_method": "char",
+      "rate": 1.0,
+      "n": 5,
+      "c521_predicts_this_order": null
+    },
+    {
+      "first": "ee",
+      "second": "et",
+      "first_class": "e",
+      "first_method": "char",
+      "second_class": "e",
+      "second_method": "char",
+      "rate": 1.0,
+      "n": 6,
+      "c521_predicts_this_order": null
+    },
+    {
+      "first": "eol",
+      "second": "olk",
+      "first_class": "e",
+      "first_method": "char",
+      "second_class": "k",
+      "second_method": "char",
+      "rate": 1.0,
+      "n": 6,
+      "c521_predicts_this_order": false
+    },
+    {
+      "first": "ech",
+      "second": "ke",
+      "first_class": "he",
+      "first_method": "char",
+      "second_class": "k",
+      "second_method": "c908",
+      "rate": 1.0,
+      "n": 6,
+      "c521_predicts_this_order": null
+    },
+    {
+      "first": "ke",
+      "second": "ok",
+      "first_class": "k",
+      "first_method": "c908",
+      "second_class": "k",
+      "second_method": "char",
+      "rate": 1.0,
+      "n": 6,
+      "c521_predicts_this_order": null
+    },
+    {
+      "first": "eeo",
+      "second": "eod",
+      "first_class": "e",
+      "first_method": "c908",
+      "second_class": "e",
+      "second_method": "c908",
+      "rate": 1.0,
+      "n": 10,
+      "c521_predicts_this_order": null
+    },
+    {
+      "first": "eo",
+      "second": "ke",
+      "first_class": "e",
+      "first_method": "c908",
+      "second_class": "k",
+      "second_method": "c908",
+      "rate": 1.0,
+      "n": 8,
+      "c521_predicts_this_order": false
+    },
+    {
+      "first": "ai",
+      "second": "op",
+      "first_class": null,
+      "first_method": "none",
+      "second_class": null,
+      "second_method": "none",
+      "rate": 1.0,
+      "n": 6,
+      "c521_predicts_this_order": null
+    },
+    {
+      "first": "lch",
+      "second": "ol",
+      "first_class": "k",
+      "first_method": "c908",
+      "second_class": "k",
+      "second_method": "c908",
+      "rate": 1.0,
+      "n": 7,
+      "c521_predicts_this_order": null
+    },
+    {
+      "first": "ckh",
+      "second": "eck",
+      "first_class": "k",
+      "first_method": "c908",
+      "second_class": "k",
+      "second_method": "c908",
+      "rate": 1.0,
+      "n": 5,
+      "c521_predicts_this_order": null
+    },
+    {
+      "first": "eo",
+      "second": "ot",
+      "first_class": "e",
+      "first_method": "c908",
+      "second_class": null,
+      "second_method": "none",
+      "rate": 1.0,
+      "n": 6,
+      "c521_predicts_this_order": null
+    },
+    {
+      "first": "al",
+      "second": "lk",
+      "first_class": "k",
+      "first_method": "c908",
+      "second_class": "k",
+      "second_method": "c908",
+      "rate": 0.917,
+      "n": 12,
+      "c521_predicts_this_order": null
+    },
+    {
+      "first": "al",
+      "second": "ka",
+      "first_class": "k",
+      "first_method": "c908",
+      "second_class": "k",
+      "second_method": "char",
+      "rate": 0.875,
+      "n": 8,
+      "c521_predicts_this_order": null
+    }
+  ],
+  "constraints_referenced": [
+    "C1065",
+    "C521",
+    "C908",
+    "C873"
+  ]
+}

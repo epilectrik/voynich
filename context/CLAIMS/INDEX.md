@@ -2718,6 +2718,20 @@ Terminal character of atoms predicts compound position (V=0.231). Resolves kc pa
 
 ---
 
+### Multi-Layer Compatibility Architecture (C1068-C1072) — Phase: MULTI_LAYER_COMPATIBILITY_ARCHITECTURE
+
+Integration of three forbidden/incompatibility layers (C475, C911, C1063). Tests independence, community structure, kernel correlation, hazard coverage, and terminal-character compatibility.
+
+| # | Statement Summary | Tier | Scope | File |
+|---|-----------|------|-------|----------|
+| **1068** | **Cross-Layer Partial Coupling** (C475 x C911 NMI=0.185, frequency-mediated perm_p=0.13; C475 x C1063 NMI=0.005; C911 x C1063 NMI=0.002; MIDDLE-centric layers coupled, PREFIX-SUFFIX layer independent) | 2 | B | -> [C1068_cross_layer_partial_coupling.md](C1068_cross_layer_partial_coupling.md) |
+| **1069** | **Weak Residual Community Structure** (3 communities after hub removal + frequency regression; Q_residual=0.125, Q_random=0.042, signal=0.082; weak but above-random; one community concentrates kernel-classified MIDDLEs) | 2 | B | -> [C1069_residual_community_structure.md](C1069_residual_community_structure.md) |
+| **1070** | **Atom Ordering Grammar Independent of Kernel Directional Bias** (only 2/21 cross-class pairs; both mismatch C521; compound construction grammar has own rules not reducible to kernel physics) | 2 | B | -> [C1070_atom_ordering_kernel_independence.md](C1070_atom_ordering_kernel_independence.md) |
+| **1071** | **Forbidden Transitions Operate Above Component-Level Rules** (only 4/17 C109 transitions blocked by C475/C911/C1063; 0 by C911 or C1063; 13/13 residual are C475-COMPATIBLE; confirms C627 token-specific directional mechanism) | 2 | B | -> [C1071_hazard_residual_above_components.md](C1071_hazard_residual_above_components.md) |
+| **1072** | **Terminal Character Predicts Within-Group Compatibility** (5/17 groups >2x baseline p<0.01: 'n' x15.2, 'm' x8.2, 'y' x7.2, 'r' x2.3, 'l' x2.3; INITIAL-biased terminals 3.2x more compatible than FINAL-biased) | 2 | B | -> [C1072_terminal_character_compatibility_signal.md](C1072_terminal_character_compatibility_signal.md) |
+
+---
+
 ## Navigation
 
 ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)

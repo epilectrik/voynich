@@ -1,0 +1,58 @@
+{
+  "test": "T1_cross_layer_independence",
+  "verdict": "FAIL",
+  "n_tokens_tested": 21711,
+  "c475_degree_quartiles": [
+    7.0,
+    9.0,
+    15.25
+  ],
+  "c911_forbidden_count": 102,
+  "c1063_forbidden_count": 17,
+  "pairs": [
+    {
+      "pair": "C475_degree x C911_restriction",
+      "chi2": 1367.0,
+      "p": 3.4379521585172803e-292,
+      "V": 0.1774,
+      "NMI": 0.1847,
+      "table_shape": [
+        4,
+        3
+      ],
+      "perm_null_mean_NMI": 0.0704,
+      "perm_null_p": 0.1321
+    },
+    {
+      "pair": "C475_degree x C1063_restriction",
+      "chi2": 36.4,
+      "p": 2.261157095544801e-06,
+      "V": 0.029,
+      "NMI": 0.0054,
+      "table_shape": [
+        4,
+        3
+      ]
+    },
+    {
+      "pair": "C911_restriction x C1063_restriction",
+      "chi2": 45.5,
+      "p": 3.117921629088559e-09,
+      "V": 0.0324,
+      "NMI": 0.0022,
+      "table_shape": [
+        3,
+        3
+      ],
+      "perm_null_mean_NMI": 0.0213,
+      "perm_null_p": 0.9149
+    }
+  ],
+  "constraints_referenced": [
+    "C475",
+    "C911",
+    "C1063",
+    "C1003",
+    "C660"
+  ]
+}
