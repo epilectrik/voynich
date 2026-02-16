@@ -1,0 +1,80 @@
+{
+  "test": "T3_asymmetry_mechanism",
+  "verdict": "PARTIAL",
+  "n_pairs_total": 471906,
+  "n_pairs_after_exclusion": 271245,
+  "n_excluded_singleton": 200661,
+  "coverage_pct": 57.5,
+  "positive_rate": 0.0371,
+  "pseudo_r2": -0.9995,
+  "coefficients": {
+    "INITIAL_match": {
+      "std_coef": 0.0892,
+      "ci_low": 0.0514,
+      "ci_high": 0.1254,
+      "significant": true
+    },
+    "FINAL_match": {
+      "std_coef": 0.0256,
+      "ci_low": -0.0114,
+      "ci_high": 0.064,
+      "significant": false
+    },
+    "INITIAL_x_FINAL": {
+      "std_coef": 0.0159,
+      "ci_low": -0.0232,
+      "ci_high": 0.0473,
+      "significant": false
+    },
+    "length_sum": {
+      "std_coef": -0.133,
+      "ci_low": -0.173,
+      "ci_high": -0.0936,
+      "significant": true
+    },
+    "freq_sum": {
+      "std_coef": 1.654,
+      "ci_low": 1.6262,
+      "ci_high": 1.6836,
+      "significant": true
+    },
+    "same_bin": {
+      "std_coef": 0.0776,
+      "ci_low": 0.0324,
+      "ci_high": 0.123,
+      "significant": true
+    },
+    "same_prefix": {
+      "std_coef": 0.0006,
+      "ci_low": -0.0306,
+      "ci_high": 0.0259,
+      "significant": false
+    },
+    "shared_hinge": {
+      "std_coef": 0.0957,
+      "ci_low": 0.053,
+      "ci_high": 0.1284,
+      "significant": true
+    }
+  },
+  "sensitivity_with_singletons": {
+    "INITIAL_match": 0.1135,
+    "FINAL_match": 0.0333,
+    "INITIAL_x_FINAL": 0.0024,
+    "length_sum": -0.119,
+    "freq_sum": 1.576,
+    "same_bin": 0.0437,
+    "same_prefix": -0.0134,
+    "shared_hinge": 0.0989
+  },
+  "c1003_interaction_note": "INITIAL_x_FINAL interaction: +0.0159, not significant (consistent with C1003)",
+  "constraints_referenced": [
+    "C1072",
+    "C985",
+    "C986",
+    "C475",
+    "C517",
+    "C1003",
+    "C513"
+  ]
+}

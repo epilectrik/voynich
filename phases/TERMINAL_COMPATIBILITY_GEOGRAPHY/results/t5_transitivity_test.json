@@ -1,0 +1,72 @@
+{
+  "test": "T5_transitivity_test",
+  "verdict": "PASS",
+  "n_groups_tested": 5,
+  "n_elevated": 3,
+  "global_compatibility_rate": 0.0217,
+  "c983_note": "Global clustering=0.873. Absolute clique fractions reported alongside ratio-to-null.",
+  "groups": [
+    {
+      "terminal_char": "n",
+      "n_middles": 14,
+      "possible_pairs": 91,
+      "actual_compatible": 30,
+      "clique_fraction": 0.3297,
+      "null_mean_fraction": 0.0811,
+      "ratio_vs_null": 4.07,
+      "p": 0.0,
+      "elevated": true
+    },
+    {
+      "terminal_char": "m",
+      "n_middles": 8,
+      "possible_pairs": 28,
+      "actual_compatible": 5,
+      "clique_fraction": 0.1786,
+      "null_mean_fraction": 0.0551,
+      "ratio_vs_null": 3.24,
+      "p": 0.085,
+      "elevated": false
+    },
+    {
+      "terminal_char": "y",
+      "n_middles": 22,
+      "possible_pairs": 231,
+      "actual_compatible": 36,
+      "clique_fraction": 0.1558,
+      "null_mean_fraction": 0.0459,
+      "ratio_vs_null": 3.4,
+      "p": 0.001,
+      "elevated": true
+    },
+    {
+      "terminal_char": "r",
+      "n_middles": 32,
+      "possible_pairs": 496,
+      "actual_compatible": 25,
+      "clique_fraction": 0.0504,
+      "null_mean_fraction": 0.0196,
+      "ratio_vs_null": 2.58,
+      "p": 0.052,
+      "elevated": false
+    },
+    {
+      "terminal_char": "l",
+      "n_middles": 51,
+      "possible_pairs": 1275,
+      "actual_compatible": 63,
+      "clique_fraction": 0.0494,
+      "null_mean_fraction": 0.0196,
+      "ratio_vs_null": 2.52,
+      "p": 0.014,
+      "elevated": true
+    }
+  ],
+  "constraints_referenced": [
+    "C1072",
+    "C475",
+    "C983",
+    "C986",
+    "C995"
+  ]
+}

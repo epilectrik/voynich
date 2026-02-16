@@ -1,0 +1,52 @@
+{
+  "phase": 382,
+  "name": "TERMINAL_COMPATIBILITY_GEOGRAPHY",
+  "description": "5-test battery: role composition, macro-state correspondence, asymmetry mechanism, affordance bin alignment, transitivity test",
+  "tier": 2,
+  "tests": [
+    {
+      "id": "T1",
+      "name": "Role Composition",
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "T2",
+      "name": "Macro-State Correspondence",
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "T3",
+      "name": "Asymmetry Mechanism",
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "T4",
+      "name": "Affordance Bin Alignment",
+      "verdict": "PASS"
+    },
+    {
+      "id": "T5",
+      "name": "Transitivity Test",
+      "verdict": "PASS"
+    }
+  ],
+  "constraints_referenced": [
+    "C1000",
+    "C1003",
+    "C1015",
+    "C1072",
+    "C475",
+    "C513",
+    "C517",
+    "C591",
+    "C770",
+    "C777",
+    "C908",
+    "C976",
+    "C977",
+    "C983",
+    "C985",
+    "C986",
+    "C995"
+  ]
+}

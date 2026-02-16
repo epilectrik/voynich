@@ -1,0 +1,363 @@
+{
+  "test": "T2_macro_state_correspondence",
+  "verdict": "PARTIAL",
+  "n_tokens_analyzed": 16054,
+  "full": {
+    "chi2": 8210.0,
+    "p": 0.0,
+    "cramers_v": 0.3198
+  },
+  "non_axm": {
+    "chi2": 3602.4,
+    "p": 0.0,
+    "cramers_v": 0.4165,
+    "n_tokens": 5191,
+    "states": [
+      "FL_HAZ",
+      "FQ",
+      "CC",
+      "AX/EN minor",
+      "FL_SAFE"
+    ]
+  },
+  "fl_collapsed": {
+    "chi2": 7773.0,
+    "cramers_v": 0.3479
+  },
+  "min_expected_cell": 0.02,
+  "null_v_mean": 0.5287,
+  "perm_p": 0.992,
+  "per_group_profiles": {
+    "a": {
+      "counts": {
+        "FL_HAZ": 0,
+        "FQ": 0,
+        "CC": 0,
+        "AX/EN minor": 6,
+        "AX/EN major": 34,
+        "FL_SAFE": 0
+      },
+      "pct": {
+        "FL_HAZ": 0.0,
+        "FQ": 0.0,
+        "CC": 0.0,
+        "AX/EN minor": 0.15,
+        "AX/EN major": 0.85,
+        "FL_SAFE": 0.0
+      },
+      "total": 40
+    },
+    "c": {
+      "counts": {
+        "FL_HAZ": 0,
+        "FQ": 0,
+        "CC": 0,
+        "AX/EN minor": 6,
+        "AX/EN major": 60,
+        "FL_SAFE": 0
+      },
+      "pct": {
+        "FL_HAZ": 0.0,
+        "FQ": 0.0,
+        "CC": 0.0,
+        "AX/EN minor": 0.0909,
+        "AX/EN major": 0.9091,
+        "FL_SAFE": 0.0
+      },
+      "total": 66
+    },
+    "d": {
+      "counts": {
+        "FL_HAZ": 0,
+        "FQ": 6,
+        "CC": 0,
+        "AX/EN minor": 9,
+        "AX/EN major": 389,
+        "FL_SAFE": 0
+      },
+      "pct": {
+        "FL_HAZ": 0.0,
+        "FQ": 0.0149,
+        "CC": 0.0,
+        "AX/EN minor": 0.0223,
+        "AX/EN major": 0.9629,
+        "FL_SAFE": 0.0
+      },
+      "total": 404
+    },
+    "e": {
+      "counts": {
+        "FL_HAZ": 0,
+        "FQ": 191,
+        "CC": 0,
+        "AX/EN minor": 31,
+        "AX/EN major": 904,
+        "FL_SAFE": 0
+      },
+      "pct": {
+        "FL_HAZ": 0.0,
+        "FQ": 0.1696,
+        "CC": 0.0,
+        "AX/EN minor": 0.0275,
+        "AX/EN major": 0.8028,
+        "FL_SAFE": 0.0
+      },
+      "total": 1126
+    },
+    "g": {
+      "counts": {
+        "FL_HAZ": 0,
+        "FQ": 0,
+        "CC": 0,
+        "AX/EN minor": 0,
+        "AX/EN major": 3,
+        "FL_SAFE": 0
+      },
+      "pct": {
+        "FL_HAZ": 0.0,
+        "FQ": 0.0,
+        "CC": 0.0,
+        "AX/EN minor": 0.0,
+        "AX/EN major": 1.0,
+        "FL_SAFE": 0.0
+      },
+      "total": 3
+    },
+    "h": {
+      "counts": {
+        "FL_HAZ": 0,
+        "FQ": 0,
+        "CC": 0,
+        "AX/EN minor": 22,
+        "AX/EN major": 381,
+        "FL_SAFE": 0
+      },
+      "pct": {
+        "FL_HAZ": 0.0,
+        "FQ": 0.0,
+        "CC": 0.0,
+        "AX/EN minor": 0.0546,
+        "AX/EN major": 0.9454,
+        "FL_SAFE": 0.0
+      },
+      "total": 403
+    },
+    "i": {
+      "counts": {
+        "FL_HAZ": 49,
+        "FQ": 0,
+        "CC": 0,
+        "AX/EN minor": 0,
+        "AX/EN major": 197,
+        "FL_SAFE": 7
+      },
+      "pct": {
+        "FL_HAZ": 0.1937,
+        "FQ": 0.0,
+        "CC": 0.0,
+        "AX/EN minor": 0.0,
+        "AX/EN major": 0.7787,
+        "FL_SAFE": 0.0277
+      },
+      "total": 253
+    },
+    "k": {
+      "counts": {
+        "FL_HAZ": 0,
+        "FQ": 0,
+        "CC": 0,
+        "AX/EN minor": 22,
+        "AX/EN major": 2326,
+        "FL_SAFE": 0
+      },
+      "pct": {
+        "FL_HAZ": 0.0,
+        "FQ": 0.0,
+        "CC": 0.0,
+        "AX/EN minor": 0.0094,
+        "AX/EN major": 0.9906,
+        "FL_SAFE": 0.0
+      },
+      "total": 2348
+    },
+    "l": {
+      "counts": {
+        "FL_HAZ": 316,
+        "FQ": 303,
+        "CC": 421,
+        "AX/EN minor": 47,
+        "AX/EN major": 963,
+        "FL_SAFE": 21
+      },
+      "pct": {
+        "FL_HAZ": 0.1526,
+        "FQ": 0.1463,
+        "CC": 0.2033,
+        "AX/EN minor": 0.0227,
+        "AX/EN major": 0.465,
+        "FL_SAFE": 0.0101
+      },
+      "total": 2071
+    },
+    "m": {
+      "counts": {
+        "FL_HAZ": 42,
+        "FQ": 92,
+        "CC": 0,
+        "AX/EN minor": 19,
+        "AX/EN major": 30,
+        "FL_SAFE": 12
+      },
+      "pct": {
+        "FL_HAZ": 0.2154,
+        "FQ": 0.4718,
+        "CC": 0.0,
+        "AX/EN minor": 0.0974,
+        "AX/EN major": 0.1538,
+        "FL_SAFE": 0.0615
+      },
+      "total": 195
+    },
+    "n": {
+      "counts": {
+        "FL_HAZ": 113,
+        "FQ": 854,
+        "CC": 314,
+        "AX/EN minor": 23,
+        "AX/EN major": 681,
+        "FL_SAFE": 2
+      },
+      "pct": {
+        "FL_HAZ": 0.0569,
+        "FQ": 0.4298,
+        "CC": 0.158,
+        "AX/EN minor": 0.0116,
+        "AX/EN major": 0.3427,
+        "FL_SAFE": 0.001
+      },
+      "total": 1987
+    },
+    "o": {
+      "counts": {
+        "FL_HAZ": 0,
+        "FQ": 29,
+        "CC": 0,
+        "AX/EN minor": 53,
+        "AX/EN major": 509,
+        "FL_SAFE": 11
+      },
+      "pct": {
+        "FL_HAZ": 0.0,
+        "FQ": 0.0482,
+        "CC": 0.0,
+        "AX/EN minor": 0.088,
+        "AX/EN major": 0.8455,
+        "FL_SAFE": 0.0183
+      },
+      "total": 602
+    },
+    "p": {
+      "counts": {
+        "FL_HAZ": 0,
+        "FQ": 0,
+        "CC": 0,
+        "AX/EN minor": 0,
+        "AX/EN major": 15,
+        "FL_SAFE": 0
+      },
+      "pct": {
+        "FL_HAZ": 0.0,
+        "FQ": 0.0,
+        "CC": 0.0,
+        "AX/EN minor": 0.0,
+        "AX/EN major": 1.0,
+        "FL_SAFE": 0.0
+      },
+      "total": 15
+    },
+    "r": {
+      "counts": {
+        "FL_HAZ": 436,
+        "FQ": 529,
+        "CC": 0,
+        "AX/EN minor": 32,
+        "AX/EN major": 621,
+        "FL_SAFE": 0
+      },
+      "pct": {
+        "FL_HAZ": 0.2695,
+        "FQ": 0.3269,
+        "CC": 0.0,
+        "AX/EN minor": 0.0198,
+        "AX/EN major": 0.3838,
+        "FL_SAFE": 0.0
+      },
+      "total": 1618
+    },
+    "s": {
+      "counts": {
+        "FL_HAZ": 0,
+        "FQ": 53,
+        "CC": 0,
+        "AX/EN minor": 0,
+        "AX/EN major": 25,
+        "FL_SAFE": 0
+      },
+      "pct": {
+        "FL_HAZ": 0.0,
+        "FQ": 0.6795,
+        "CC": 0.0,
+        "AX/EN minor": 0.0,
+        "AX/EN major": 0.3205,
+        "FL_SAFE": 0.0
+      },
+      "total": 78
+    },
+    "t": {
+      "counts": {
+        "FL_HAZ": 0,
+        "FQ": 0,
+        "CC": 0,
+        "AX/EN minor": 16,
+        "AX/EN major": 667,
+        "FL_SAFE": 0
+      },
+      "pct": {
+        "FL_HAZ": 0.0,
+        "FQ": 0.0,
+        "CC": 0.0,
+        "AX/EN minor": 0.0234,
+        "AX/EN major": 0.9766,
+        "FL_SAFE": 0.0
+      },
+      "total": 683
+    },
+    "y": {
+      "counts": {
+        "FL_HAZ": 0,
+        "FQ": 833,
+        "CC": 0,
+        "AX/EN minor": 202,
+        "AX/EN major": 3058,
+        "FL_SAFE": 69
+      },
+      "pct": {
+        "FL_HAZ": 0.0,
+        "FQ": 0.2001,
+        "CC": 0.0,
+        "AX/EN minor": 0.0485,
+        "AX/EN major": 0.7347,
+        "FL_SAFE": 0.0166
+      },
+      "total": 4162
+    }
+  },
+  "orthogonality_note": "T1 discriminates EN vs AX (merged here); T2 discriminates FL_HAZ vs FL_SAFE (merged in T1)",
+  "constraints_referenced": [
+    "C976",
+    "C977",
+    "C1015",
+    "C1072",
+    "C986"
+  ]
+}

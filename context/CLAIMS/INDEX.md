@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 921 validated constraints | **Version:** 3.98 | **Date:** 2026-02-15
+**Total:** 942 validated constraints | **Version:** 4.09 | **Date:** 2026-02-15
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2729,6 +2729,18 @@ Integration of three forbidden/incompatibility layers (C475, C911, C1063). Tests
 | **1070** | **Atom Ordering Grammar Independent of Kernel Directional Bias** (only 2/21 cross-class pairs; both mismatch C521; compound construction grammar has own rules not reducible to kernel physics) | 2 | B | -> [C1070_atom_ordering_kernel_independence.md](C1070_atom_ordering_kernel_independence.md) |
 | **1071** | **Forbidden Transitions Operate Above Component-Level Rules** (only 4/17 C109 transitions blocked by C475/C911/C1063; 0 by C911 or C1063; 13/13 residual are C475-COMPATIBLE; confirms C627 token-specific directional mechanism) | 2 | B | -> [C1071_hazard_residual_above_components.md](C1071_hazard_residual_above_components.md) |
 | **1072** | **Terminal Character Predicts Within-Group Compatibility** (5/17 groups >2x baseline p<0.01: 'n' x15.2, 'm' x8.2, 'y' x7.2, 'r' x2.3, 'l' x2.3; INITIAL-biased terminals 3.2x more compatible than FINAL-biased) | 2 | B | -> [C1072_terminal_character_compatibility_signal.md](C1072_terminal_character_compatibility_signal.md) |
+
+### Terminal Compatibility Geography (C1073-C1077) — Phase: TERMINAL_COMPATIBILITY_GEOGRAPHY
+
+Maps WHY terminal characters predict C475 compatibility. Cross-references terminal neighborhoods with C591 roles, C976 macro-states, C995 affordance bins, and clique structure. Key finding: terminal-role/state associations are frequency-mediated; affordance bin alignment and clique structure are genuine.
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1073** | **Terminal-Role Association Is Frequency-Mediated** (V=0.4069, perm_p=0.582; null mean V=0.414; terminal-role profiles fully explained by frequency neighborhoods; C777 FL bias quantified; C770 k/h/e tautology flagged) | 2 | B | -> [C1073_terminal_role_frequency_mediated.md](C1073_terminal_role_frequency_mediated.md) |
+| **1074** | **Terminal-State Association Is Frequency-Mediated** (non-AXM V=0.4165, perm_p=0.992; null mean V=0.5287; terminal-state profiles fully explained by frequency; FL_SAFE min expected cell=0.02; orthogonal to T1) | 2 | B | -> [C1074_terminal_state_frequency_mediated.md](C1074_terminal_state_frequency_mediated.md) |
+| **1075** | **Compatibility Asymmetry Is Frequency-Dominated** (freq_sum +1.654 std coef dominates; INITIAL_match +0.089 below 0.10 threshold; INITIAL_x_FINAL +0.016 NS confirms C1003; shared_hinge +0.096; 271K pairs after singleton exclusion) | 2 | B | -> [C1075_compatibility_asymmetry_frequency_dominated.md](C1075_compatibility_asymmetry_frequency_dominated.md) |
+| **1076** | **Terminal Character Predicts Affordance Bin Beyond Frequency** (non-BULK V=0.3247, perm_p=0.000; null mean V=0.2102; 10 bins confirmed; 'm' 50% FLOW_TERMINAL, 'e' 22% STABILITY_CRITICAL; first genuine terminal signal surviving frequency null) | 2 | B | -> [C1076_terminal_affordance_bin_genuine.md](C1076_terminal_affordance_bin_genuine.md) |
+| **1077** | **Terminal Compatibility Groups Form Genuine Cliques** (3/5 elevated: 'n' 4.07x p=0.000, 'y' 3.40x p=0.001, 'l' 2.52x p=0.014; frequency-band-matched null; C983 global clustering 0.873 baseline exceeded) | 2 | B | -> [C1077_terminal_groups_genuine_cliques.md](C1077_terminal_groups_genuine_cliques.md) |
 
 ---
 

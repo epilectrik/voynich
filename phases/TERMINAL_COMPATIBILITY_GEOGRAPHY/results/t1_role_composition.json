@@ -1,0 +1,335 @@
+{
+  "test": "T1_role_composition",
+  "verdict": "PARTIAL",
+  "n_tokens_analyzed": 16054,
+  "n_terminal_groups": 17,
+  "n_roles": 5,
+  "roles": [
+    "AX",
+    "CC",
+    "EN",
+    "FL",
+    "FQ"
+  ],
+  "chi2": 10634.7,
+  "p": 0.0,
+  "cramers_v": 0.4069,
+  "null_v_mean": 0.414,
+  "perm_p": 0.582,
+  "per_group_profiles": {
+    "a": {
+      "counts": {
+        "AX": 28,
+        "CC": 0,
+        "EN": 12,
+        "FL": 0,
+        "FQ": 0
+      },
+      "pct": {
+        "AX": 0.7,
+        "CC": 0.0,
+        "EN": 0.3,
+        "FL": 0.0,
+        "FQ": 0.0
+      },
+      "total": 40
+    },
+    "c": {
+      "counts": {
+        "AX": 7,
+        "CC": 0,
+        "EN": 59,
+        "FL": 0,
+        "FQ": 0
+      },
+      "pct": {
+        "AX": 0.1061,
+        "CC": 0.0,
+        "EN": 0.8939,
+        "FL": 0.0,
+        "FQ": 0.0
+      },
+      "total": 66
+    },
+    "d": {
+      "counts": {
+        "AX": 94,
+        "CC": 0,
+        "EN": 304,
+        "FL": 0,
+        "FQ": 6
+      },
+      "pct": {
+        "AX": 0.2327,
+        "CC": 0.0,
+        "EN": 0.7525,
+        "FL": 0.0,
+        "FQ": 0.0149
+      },
+      "total": 404
+    },
+    "e": {
+      "counts": {
+        "AX": 160,
+        "CC": 0,
+        "EN": 775,
+        "FL": 0,
+        "FQ": 191
+      },
+      "pct": {
+        "AX": 0.1421,
+        "CC": 0.0,
+        "EN": 0.6883,
+        "FL": 0.0,
+        "FQ": 0.1696
+      },
+      "total": 1126
+    },
+    "g": {
+      "counts": {
+        "AX": 3,
+        "CC": 0,
+        "EN": 0,
+        "FL": 0,
+        "FQ": 0
+      },
+      "pct": {
+        "AX": 1.0,
+        "CC": 0.0,
+        "EN": 0.0,
+        "FL": 0.0,
+        "FQ": 0.0
+      },
+      "total": 3
+    },
+    "h": {
+      "counts": {
+        "AX": 118,
+        "CC": 0,
+        "EN": 285,
+        "FL": 0,
+        "FQ": 0
+      },
+      "pct": {
+        "AX": 0.2928,
+        "CC": 0.0,
+        "EN": 0.7072,
+        "FL": 0.0,
+        "FQ": 0.0
+      },
+      "total": 403
+    },
+    "i": {
+      "counts": {
+        "AX": 185,
+        "CC": 0,
+        "EN": 12,
+        "FL": 56,
+        "FQ": 0
+      },
+      "pct": {
+        "AX": 0.7312,
+        "CC": 0.0,
+        "EN": 0.0474,
+        "FL": 0.2213,
+        "FQ": 0.0
+      },
+      "total": 253
+    },
+    "k": {
+      "counts": {
+        "AX": 203,
+        "CC": 0,
+        "EN": 2145,
+        "FL": 0,
+        "FQ": 0
+      },
+      "pct": {
+        "AX": 0.0865,
+        "CC": 0.0,
+        "EN": 0.9135,
+        "FL": 0.0,
+        "FQ": 0.0
+      },
+      "total": 2348
+    },
+    "l": {
+      "counts": {
+        "AX": 478,
+        "CC": 421,
+        "EN": 532,
+        "FL": 337,
+        "FQ": 303
+      },
+      "pct": {
+        "AX": 0.2308,
+        "CC": 0.2033,
+        "EN": 0.2569,
+        "FL": 0.1627,
+        "FQ": 0.1463
+      },
+      "total": 2071
+    },
+    "m": {
+      "counts": {
+        "AX": 43,
+        "CC": 0,
+        "EN": 6,
+        "FL": 54,
+        "FQ": 92
+      },
+      "pct": {
+        "AX": 0.2205,
+        "CC": 0.0,
+        "EN": 0.0308,
+        "FL": 0.2769,
+        "FQ": 0.4718
+      },
+      "total": 195
+    },
+    "n": {
+      "counts": {
+        "AX": 665,
+        "CC": 314,
+        "EN": 39,
+        "FL": 115,
+        "FQ": 854
+      },
+      "pct": {
+        "AX": 0.3347,
+        "CC": 0.158,
+        "EN": 0.0196,
+        "FL": 0.0579,
+        "FQ": 0.4298
+      },
+      "total": 1987
+    },
+    "o": {
+      "counts": {
+        "AX": 190,
+        "CC": 0,
+        "EN": 372,
+        "FL": 11,
+        "FQ": 29
+      },
+      "pct": {
+        "AX": 0.3156,
+        "CC": 0.0,
+        "EN": 0.6179,
+        "FL": 0.0183,
+        "FQ": 0.0482
+      },
+      "total": 602
+    },
+    "p": {
+      "counts": {
+        "AX": 9,
+        "CC": 0,
+        "EN": 6,
+        "FL": 0,
+        "FQ": 0
+      },
+      "pct": {
+        "AX": 0.6,
+        "CC": 0.0,
+        "EN": 0.4,
+        "FL": 0.0,
+        "FQ": 0.0
+      },
+      "total": 15
+    },
+    "r": {
+      "counts": {
+        "AX": 517,
+        "CC": 0,
+        "EN": 136,
+        "FL": 436,
+        "FQ": 529
+      },
+      "pct": {
+        "AX": 0.3195,
+        "CC": 0.0,
+        "EN": 0.0841,
+        "FL": 0.2695,
+        "FQ": 0.3269
+      },
+      "total": 1618
+    },
+    "s": {
+      "counts": {
+        "AX": 19,
+        "CC": 0,
+        "EN": 6,
+        "FL": 0,
+        "FQ": 53
+      },
+      "pct": {
+        "AX": 0.2436,
+        "CC": 0.0,
+        "EN": 0.0769,
+        "FL": 0.0,
+        "FQ": 0.6795
+      },
+      "total": 78
+    },
+    "t": {
+      "counts": {
+        "AX": 17,
+        "CC": 0,
+        "EN": 666,
+        "FL": 0,
+        "FQ": 0
+      },
+      "pct": {
+        "AX": 0.0249,
+        "CC": 0.0,
+        "EN": 0.9751,
+        "FL": 0.0,
+        "FQ": 0.0
+      },
+      "total": 683
+    },
+    "y": {
+      "counts": {
+        "AX": 1404,
+        "CC": 0,
+        "EN": 1856,
+        "FL": 69,
+        "FQ": 833
+      },
+      "pct": {
+        "AX": 0.3373,
+        "CC": 0.0,
+        "EN": 0.4459,
+        "FL": 0.0166,
+        "FQ": 0.2001
+      },
+      "total": 4162
+    }
+  },
+  "significant_terminals_focus": [
+    "n",
+    "m",
+    "y",
+    "r",
+    "l"
+  ],
+  "notes": [
+    "C777 quantification: 'y' terminal FL=1.7% (known FL terminal bias)",
+    "C770 tautology: 'k' terminal FL=0.0% (FL excludes kernel chars by construction)",
+    "C770 tautology: 'h' terminal FL=0.0% (FL excludes kernel chars by construction)",
+    "C770 tautology: 'e' terminal FL=0.0% (FL excludes kernel chars by construction)",
+    "C908 consistency: 'k' terminal role profile is kernel-correlation check, not novelty",
+    "C908 consistency: 'h' terminal role profile is kernel-correlation check, not novelty",
+    "C908 consistency: 'e' terminal role profile is kernel-correlation check, not novelty"
+  ],
+  "constraints_referenced": [
+    "C591",
+    "C777",
+    "C770",
+    "C908",
+    "C1072",
+    "C475",
+    "C986"
+  ]
+}

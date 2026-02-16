@@ -4,6 +4,37 @@
 
 ---
 
+## Version 4.09 (2026-02-15) - Terminal Compatibility Geography (5-Test Battery)
+
+### Summary
+
+Phase 382 maps WHY terminal characters predict C475 compatibility (C1072) by cross-referencing terminal neighborhoods with C591 roles, C976 macro-states, C995 affordance bins, and clique structure. 5-test battery, expert-advisor validated. Results: 2 PASS, 3 PARTIAL. 5 new constraints (C1073-C1077).
+
+Key findings:
+- **Terminal-role frequency mediation** (T1 PARTIAL): V=0.4069 but perm_p=0.582. Terminal-role profiles entirely explained by frequency neighborhoods. C777 FL bias quantified ('y' FL=1.7%). C770 k/h/e tautology flagged.
+- **Terminal-state frequency mediation** (T2 PARTIAL): Non-AXM V=0.4165 but perm_p=0.992. Even stronger frequency mediation than T1. FL_SAFE sparsity confirmed (min expected cell=0.02).
+- **Compatibility asymmetry frequency-dominated** (T3 PARTIAL): freq_sum +1.654 standardized coefficient dominates all other features. INITIAL_match +0.089 (below 0.10 threshold). INITIAL_x_FINAL +0.016 NS confirms C1003 pairwise compositionality.
+- **Terminal predicts affordance bin genuinely** (T4 PASS): Non-BULK V=0.3247, perm_p=0.000. First terminal signal surviving frequency null. 10 bins confirmed. 'm' terminal 50% FLOW_TERMINAL, 'e' terminal 22% STABILITY_CRITICAL.
+- **Terminal groups form genuine cliques** (T5 PASS): 3/5 groups elevated above frequency-band-matched null: 'n' 4.07x, 'y' 3.40x, 'l' 2.52x. C983 global clustering baseline (0.873) exceeded.
+
+### New Files
+
+| File | Purpose |
+|------|---------|
+| `phases/TERMINAL_COMPATIBILITY_GEOGRAPHY/scripts/terminal_compatibility_geography.py` | 5-test battery |
+| `phases/TERMINAL_COMPATIBILITY_GEOGRAPHY/results/t1_role_composition.json` | T1 results |
+| `phases/TERMINAL_COMPATIBILITY_GEOGRAPHY/results/t2_macro_state_correspondence.json` | T2 results |
+| `phases/TERMINAL_COMPATIBILITY_GEOGRAPHY/results/t3_asymmetry_mechanism.json` | T3 results |
+| `phases/TERMINAL_COMPATIBILITY_GEOGRAPHY/results/t4_affordance_bin_alignment.json` | T4 results |
+| `phases/TERMINAL_COMPATIBILITY_GEOGRAPHY/results/t5_transitivity_test.json` | T5 results |
+| `context/CLAIMS/C1073_terminal_role_frequency_mediated.md` | Terminal-role = frequency |
+| `context/CLAIMS/C1074_terminal_state_frequency_mediated.md` | Terminal-state = frequency |
+| `context/CLAIMS/C1075_compatibility_asymmetry_frequency_dominated.md` | Asymmetry = frequency |
+| `context/CLAIMS/C1076_terminal_affordance_bin_genuine.md` | Terminal-affordance genuine |
+| `context/CLAIMS/C1077_terminal_groups_genuine_cliques.md` | Terminal cliques genuine |
+
+---
+
 ## Version 4.08 (2026-02-15) - Multi-Layer Compatibility Architecture (5-Test Battery)
 
 ### Summary

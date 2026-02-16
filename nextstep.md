@@ -1,7 +1,23 @@
 # Next Direction: Characterization Complete — Pivot to Application
 
 **Status:** CHARACTERIZATION ACTIVE
-**Current state:** v4.08 | 937 constraints | 66 fits | 381 phases
+**Current state:** v4.09 | 942 constraints | 66 fits | 382 phases
+
+---
+
+## Phase 382: Terminal Compatibility Geography (5-Test Battery)
+
+Maps WHY terminal characters predict C475 compatibility (C1072). Cross-references with C591 roles, C976 macro-states, C995 affordance bins, clique structure. Expert-validated. All Tier 2.
+
+| Test | Verdict | Key Finding |
+|------|---------|-------------|
+| T1: Role Composition | **PARTIAL** | V=0.4069, perm_p=0.582. Terminal-role profiles entirely frequency-mediated. |
+| T2: Macro-State Correspondence | **PARTIAL** | Non-AXM V=0.4165, perm_p=0.992. Terminal-state profiles frequency-mediated. |
+| T3: Asymmetry Mechanism | **PARTIAL** | freq_sum +1.654 dominates. INITIAL_match +0.089 (below 0.10). C1003 interaction confirmed ~0. |
+| T4: Affordance Bin Alignment | **PASS** | Non-BULK V=0.3247, perm_p=0.000. First terminal signal surviving frequency null. 10 bins confirmed. |
+| T5: Transitivity Test | **PASS** | 3/5 genuine cliques: 'n' 4.07x, 'y' 3.40x, 'l' 2.52x above frequency-matched null. |
+
+New constraints: C1073-C1077.
 
 ---
 
@@ -168,6 +184,7 @@ New constraints: C1068-C1072.
 14. **Morphological joint space characterized** (2 PASS, 2 PARTIAL, 1 FAIL: 17 PREFIX x SUFFIX forbidden pairs, +5.9pp joint role gain, atom bigram grammar V=0.376, C522 independence confirmed rho=-0.004, terminal character positional code V=0.231)
 15. **Morphological deep structure characterized** (2 PASS, 1 INDEPENDENT, 2 PARTIAL: suffix grammar genuine V=0.062, suffix-role independent of PREFIX, atom position grammar V=0.333, atom co-occurrence structured, depth predicts folio-specificity rho=-0.27)
 16. **Multi-layer compatibility architecture characterized** (2 PASS, 1 PARTIAL, 2 FAIL: C475 x C911 partially coupled NMI=0.185, weak 3-community structure Q_signal=0.082, atom ordering independent of kernel bias, forbidden transitions operate above component rules 13/17 residual, terminal character predicts compatibility 5 groups elevated)
+17. **Terminal compatibility geography mapped** (2 PASS, 3 PARTIAL: terminal-role and terminal-state associations frequency-mediated, compatibility asymmetry frequency-dominated, terminal-affordance alignment genuine V=0.325 perm_p=0.000, 3/5 terminal groups form genuine cliques 'n' 4.07x 'y' 3.40x 'l' 2.52x)
 
 ---
 

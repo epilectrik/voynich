@@ -1,0 +1,665 @@
+{
+  "test": "T4_affordance_bin_alignment",
+  "verdict": "PASS",
+  "n_bins": 10,
+  "bin_labels": {
+    "0": "FLOW_TERMINAL",
+    "4": "BULK_OPERATIONAL",
+    "8": "STABILITY_CRITICAL",
+    "6": "HUB_UNIVERSAL",
+    "5": "SETTLING_SPECIALIZED",
+    "1": "ROUTINE_SPECIALIZED",
+    "9": "PHASE_SENSITIVE",
+    "3": "COMPOUND_TERMINAL",
+    "7": "ENERGY_SPECIALIZED",
+    "2": "PRECISION_SPECIALIZED"
+  },
+  "full": {
+    "chi2": 443.9,
+    "p": 4.461388934246732e-28,
+    "cramers_v": 0.2253
+  },
+  "non_bulk": {
+    "n_middles": 406,
+    "chi2": 342.3,
+    "p": 3.4359276339158432e-18,
+    "cramers_v": 0.3247
+  },
+  "null_v_mean": 0.2102,
+  "perm_p": 0.0,
+  "hub_sub_role_by_terminal": {
+    "d": {
+      "n_hub_middles": 2,
+      "middles": [
+        "d",
+        "od"
+      ],
+      "sub_role_counts": {
+        "PURE_CONNECTOR": 1,
+        "SAFETY_BUFFER": 1
+      }
+    },
+    "e": {
+      "n_hub_middles": 2,
+      "middles": [
+        "e",
+        "ee"
+      ],
+      "sub_role_counts": {
+        "PURE_CONNECTOR": 1,
+        "HAZARD_TARGET": 1
+      }
+    },
+    "k": {
+      "n_hub_middles": 2,
+      "middles": [
+        "ek",
+        "k"
+      ],
+      "sub_role_counts": {
+        "PURE_CONNECTOR": 1,
+        "SAFETY_BUFFER": 1
+      }
+    },
+    "l": {
+      "n_hub_middles": 4,
+      "middles": [
+        "al",
+        "eol",
+        "l",
+        "ol"
+      ],
+      "sub_role_counts": {
+        "HAZARD_TARGET": 1,
+        "SAFETY_BUFFER": 1,
+        "HAZARD_SOURCE": 2
+      }
+    },
+    "n": {
+      "n_hub_middles": 2,
+      "middles": [
+        "aiin",
+        "iin"
+      ],
+      "sub_role_counts": {
+        "HAZARD_TARGET": 1,
+        "PURE_CONNECTOR": 1
+      }
+    },
+    "o": {
+      "n_hub_middles": 2,
+      "middles": [
+        "eo",
+        "o"
+      ],
+      "sub_role_counts": {
+        "PURE_CONNECTOR": 1,
+        "HAZARD_TARGET": 1
+      }
+    },
+    "r": {
+      "n_hub_middles": 3,
+      "middles": [
+        "ar",
+        "or",
+        "r"
+      ],
+      "sub_role_counts": {
+        "HAZARD_SOURCE": 2,
+        "HAZARD_TARGET": 1
+      }
+    },
+    "s": {
+      "n_hub_middles": 1,
+      "middles": [
+        "s"
+      ],
+      "sub_role_counts": {
+        "PURE_CONNECTOR": 1
+      }
+    },
+    "t": {
+      "n_hub_middles": 1,
+      "middles": [
+        "t"
+      ],
+      "sub_role_counts": {
+        "HAZARD_TARGET": 1
+      }
+    },
+    "y": {
+      "n_hub_middles": 4,
+      "middles": [
+        "dy",
+        "eey",
+        "ey",
+        "y"
+      ],
+      "sub_role_counts": {
+        "HAZARD_SOURCE": 2,
+        "PURE_CONNECTOR": 2
+      }
+    }
+  },
+  "per_group_profiles": {
+    "a": {
+      "counts": {
+        "FLOW_TERMINAL": 6,
+        "ROUTINE_SPECIALIZED": 0,
+        "PRECISION_SPECIALIZED": 1,
+        "COMPOUND_TERMINAL": 2,
+        "BULK_OPERATIONAL": 51,
+        "SETTLING_SPECIALIZED": 1,
+        "HUB_UNIVERSAL": 0,
+        "ENERGY_SPECIALIZED": 5,
+        "STABILITY_CRITICAL": 1,
+        "PHASE_SENSITIVE": 1
+      },
+      "pct": {
+        "FLOW_TERMINAL": 0.0882,
+        "ROUTINE_SPECIALIZED": 0.0,
+        "PRECISION_SPECIALIZED": 0.0147,
+        "COMPOUND_TERMINAL": 0.0294,
+        "BULK_OPERATIONAL": 0.75,
+        "SETTLING_SPECIALIZED": 0.0147,
+        "HUB_UNIVERSAL": 0.0,
+        "ENERGY_SPECIALIZED": 0.0735,
+        "STABILITY_CRITICAL": 0.0147,
+        "PHASE_SENSITIVE": 0.0147
+      },
+      "total": 68
+    },
+    "c": {
+      "counts": {
+        "FLOW_TERMINAL": 7,
+        "ROUTINE_SPECIALIZED": 2,
+        "PRECISION_SPECIALIZED": 4,
+        "COMPOUND_TERMINAL": 2,
+        "BULK_OPERATIONAL": 36,
+        "SETTLING_SPECIALIZED": 3,
+        "HUB_UNIVERSAL": 0,
+        "ENERGY_SPECIALIZED": 2,
+        "STABILITY_CRITICAL": 3,
+        "PHASE_SENSITIVE": 0
+      },
+      "pct": {
+        "FLOW_TERMINAL": 0.1186,
+        "ROUTINE_SPECIALIZED": 0.0339,
+        "PRECISION_SPECIALIZED": 0.0678,
+        "COMPOUND_TERMINAL": 0.0339,
+        "BULK_OPERATIONAL": 0.6102,
+        "SETTLING_SPECIALIZED": 0.0508,
+        "HUB_UNIVERSAL": 0.0,
+        "ENERGY_SPECIALIZED": 0.0339,
+        "STABILITY_CRITICAL": 0.0508,
+        "PHASE_SENSITIVE": 0.0
+      },
+      "total": 59
+    },
+    "d": {
+      "counts": {
+        "FLOW_TERMINAL": 4,
+        "ROUTINE_SPECIALIZED": 10,
+        "PRECISION_SPECIALIZED": 3,
+        "COMPOUND_TERMINAL": 2,
+        "BULK_OPERATIONAL": 82,
+        "SETTLING_SPECIALIZED": 5,
+        "HUB_UNIVERSAL": 2,
+        "ENERGY_SPECIALIZED": 4,
+        "STABILITY_CRITICAL": 5,
+        "PHASE_SENSITIVE": 1
+      },
+      "pct": {
+        "FLOW_TERMINAL": 0.0339,
+        "ROUTINE_SPECIALIZED": 0.0847,
+        "PRECISION_SPECIALIZED": 0.0254,
+        "COMPOUND_TERMINAL": 0.0169,
+        "BULK_OPERATIONAL": 0.6949,
+        "SETTLING_SPECIALIZED": 0.0424,
+        "HUB_UNIVERSAL": 0.0169,
+        "ENERGY_SPECIALIZED": 0.0339,
+        "STABILITY_CRITICAL": 0.0424,
+        "PHASE_SENSITIVE": 0.0085
+      },
+      "total": 118
+    },
+    "e": {
+      "counts": {
+        "FLOW_TERMINAL": 0,
+        "ROUTINE_SPECIALIZED": 10,
+        "PRECISION_SPECIALIZED": 2,
+        "COMPOUND_TERMINAL": 4,
+        "BULK_OPERATIONAL": 37,
+        "SETTLING_SPECIALIZED": 4,
+        "HUB_UNIVERSAL": 2,
+        "ENERGY_SPECIALIZED": 5,
+        "STABILITY_CRITICAL": 18,
+        "PHASE_SENSITIVE": 0
+      },
+      "pct": {
+        "FLOW_TERMINAL": 0.0,
+        "ROUTINE_SPECIALIZED": 0.122,
+        "PRECISION_SPECIALIZED": 0.0244,
+        "COMPOUND_TERMINAL": 0.0488,
+        "BULK_OPERATIONAL": 0.4512,
+        "SETTLING_SPECIALIZED": 0.0488,
+        "HUB_UNIVERSAL": 0.0244,
+        "ENERGY_SPECIALIZED": 0.061,
+        "STABILITY_CRITICAL": 0.2195,
+        "PHASE_SENSITIVE": 0.0
+      },
+      "total": 82
+    },
+    "f": {
+      "counts": {
+        "FLOW_TERMINAL": 4,
+        "ROUTINE_SPECIALIZED": 0,
+        "PRECISION_SPECIALIZED": 1,
+        "COMPOUND_TERMINAL": 0,
+        "BULK_OPERATIONAL": 9,
+        "SETTLING_SPECIALIZED": 2,
+        "HUB_UNIVERSAL": 0,
+        "ENERGY_SPECIALIZED": 0,
+        "STABILITY_CRITICAL": 0,
+        "PHASE_SENSITIVE": 0
+      },
+      "pct": {
+        "FLOW_TERMINAL": 0.25,
+        "ROUTINE_SPECIALIZED": 0.0,
+        "PRECISION_SPECIALIZED": 0.0625,
+        "COMPOUND_TERMINAL": 0.0,
+        "BULK_OPERATIONAL": 0.5625,
+        "SETTLING_SPECIALIZED": 0.125,
+        "HUB_UNIVERSAL": 0.0,
+        "ENERGY_SPECIALIZED": 0.0,
+        "STABILITY_CRITICAL": 0.0,
+        "PHASE_SENSITIVE": 0.0
+      },
+      "total": 16
+    },
+    "g": {
+      "counts": {
+        "FLOW_TERMINAL": 1,
+        "ROUTINE_SPECIALIZED": 0,
+        "PRECISION_SPECIALIZED": 0,
+        "COMPOUND_TERMINAL": 0,
+        "BULK_OPERATIONAL": 0,
+        "SETTLING_SPECIALIZED": 0,
+        "HUB_UNIVERSAL": 0,
+        "ENERGY_SPECIALIZED": 0,
+        "STABILITY_CRITICAL": 0,
+        "PHASE_SENSITIVE": 0
+      },
+      "pct": {
+        "FLOW_TERMINAL": 1.0,
+        "ROUTINE_SPECIALIZED": 0.0,
+        "PRECISION_SPECIALIZED": 0.0,
+        "COMPOUND_TERMINAL": 0.0,
+        "BULK_OPERATIONAL": 0.0,
+        "SETTLING_SPECIALIZED": 0.0,
+        "HUB_UNIVERSAL": 0.0,
+        "ENERGY_SPECIALIZED": 0.0,
+        "STABILITY_CRITICAL": 0.0,
+        "PHASE_SENSITIVE": 0.0
+      },
+      "total": 1
+    },
+    "h": {
+      "counts": {
+        "FLOW_TERMINAL": 0,
+        "ROUTINE_SPECIALIZED": 9,
+        "PRECISION_SPECIALIZED": 4,
+        "COMPOUND_TERMINAL": 10,
+        "BULK_OPERATIONAL": 67,
+        "SETTLING_SPECIALIZED": 2,
+        "HUB_UNIVERSAL": 0,
+        "ENERGY_SPECIALIZED": 9,
+        "STABILITY_CRITICAL": 0,
+        "PHASE_SENSITIVE": 20
+      },
+      "pct": {
+        "FLOW_TERMINAL": 0.0,
+        "ROUTINE_SPECIALIZED": 0.0744,
+        "PRECISION_SPECIALIZED": 0.0331,
+        "COMPOUND_TERMINAL": 0.0826,
+        "BULK_OPERATIONAL": 0.5537,
+        "SETTLING_SPECIALIZED": 0.0165,
+        "HUB_UNIVERSAL": 0.0,
+        "ENERGY_SPECIALIZED": 0.0744,
+        "STABILITY_CRITICAL": 0.0,
+        "PHASE_SENSITIVE": 0.1653
+      },
+      "total": 121
+    },
+    "i": {
+      "counts": {
+        "FLOW_TERMINAL": 5,
+        "ROUTINE_SPECIALIZED": 2,
+        "PRECISION_SPECIALIZED": 2,
+        "COMPOUND_TERMINAL": 5,
+        "BULK_OPERATIONAL": 19,
+        "SETTLING_SPECIALIZED": 6,
+        "HUB_UNIVERSAL": 0,
+        "ENERGY_SPECIALIZED": 1,
+        "STABILITY_CRITICAL": 1,
+        "PHASE_SENSITIVE": 0
+      },
+      "pct": {
+        "FLOW_TERMINAL": 0.122,
+        "ROUTINE_SPECIALIZED": 0.0488,
+        "PRECISION_SPECIALIZED": 0.0488,
+        "COMPOUND_TERMINAL": 0.122,
+        "BULK_OPERATIONAL": 0.4634,
+        "SETTLING_SPECIALIZED": 0.1463,
+        "HUB_UNIVERSAL": 0.0,
+        "ENERGY_SPECIALIZED": 0.0244,
+        "STABILITY_CRITICAL": 0.0244,
+        "PHASE_SENSITIVE": 0.0
+      },
+      "total": 41
+    },
+    "k": {
+      "counts": {
+        "FLOW_TERMINAL": 5,
+        "ROUTINE_SPECIALIZED": 4,
+        "PRECISION_SPECIALIZED": 0,
+        "COMPOUND_TERMINAL": 2,
+        "BULK_OPERATIONAL": 34,
+        "SETTLING_SPECIALIZED": 2,
+        "HUB_UNIVERSAL": 2,
+        "ENERGY_SPECIALIZED": 7,
+        "STABILITY_CRITICAL": 7,
+        "PHASE_SENSITIVE": 0
+      },
+      "pct": {
+        "FLOW_TERMINAL": 0.0794,
+        "ROUTINE_SPECIALIZED": 0.0635,
+        "PRECISION_SPECIALIZED": 0.0,
+        "COMPOUND_TERMINAL": 0.0317,
+        "BULK_OPERATIONAL": 0.5397,
+        "SETTLING_SPECIALIZED": 0.0317,
+        "HUB_UNIVERSAL": 0.0317,
+        "ENERGY_SPECIALIZED": 0.1111,
+        "STABILITY_CRITICAL": 0.1111,
+        "PHASE_SENSITIVE": 0.0
+      },
+      "total": 63
+    },
+    "l": {
+      "counts": {
+        "FLOW_TERMINAL": 1,
+        "ROUTINE_SPECIALIZED": 3,
+        "PRECISION_SPECIALIZED": 0,
+        "COMPOUND_TERMINAL": 4,
+        "BULK_OPERATIONAL": 34,
+        "SETTLING_SPECIALIZED": 1,
+        "HUB_UNIVERSAL": 4,
+        "ENERGY_SPECIALIZED": 3,
+        "STABILITY_CRITICAL": 1,
+        "PHASE_SENSITIVE": 0
+      },
+      "pct": {
+        "FLOW_TERMINAL": 0.0196,
+        "ROUTINE_SPECIALIZED": 0.0588,
+        "PRECISION_SPECIALIZED": 0.0,
+        "COMPOUND_TERMINAL": 0.0784,
+        "BULK_OPERATIONAL": 0.6667,
+        "SETTLING_SPECIALIZED": 0.0196,
+        "HUB_UNIVERSAL": 0.0784,
+        "ENERGY_SPECIALIZED": 0.0588,
+        "STABILITY_CRITICAL": 0.0196,
+        "PHASE_SENSITIVE": 0.0
+      },
+      "total": 51
+    },
+    "m": {
+      "counts": {
+        "FLOW_TERMINAL": 4,
+        "ROUTINE_SPECIALIZED": 0,
+        "PRECISION_SPECIALIZED": 0,
+        "COMPOUND_TERMINAL": 0,
+        "BULK_OPERATIONAL": 2,
+        "SETTLING_SPECIALIZED": 0,
+        "HUB_UNIVERSAL": 0,
+        "ENERGY_SPECIALIZED": 1,
+        "STABILITY_CRITICAL": 1,
+        "PHASE_SENSITIVE": 0
+      },
+      "pct": {
+        "FLOW_TERMINAL": 0.5,
+        "ROUTINE_SPECIALIZED": 0.0,
+        "PRECISION_SPECIALIZED": 0.0,
+        "COMPOUND_TERMINAL": 0.0,
+        "BULK_OPERATIONAL": 0.25,
+        "SETTLING_SPECIALIZED": 0.0,
+        "HUB_UNIVERSAL": 0.0,
+        "ENERGY_SPECIALIZED": 0.125,
+        "STABILITY_CRITICAL": 0.125,
+        "PHASE_SENSITIVE": 0.0
+      },
+      "total": 8
+    },
+    "n": {
+      "counts": {
+        "FLOW_TERMINAL": 3,
+        "ROUTINE_SPECIALIZED": 1,
+        "PRECISION_SPECIALIZED": 0,
+        "COMPOUND_TERMINAL": 0,
+        "BULK_OPERATIONAL": 5,
+        "SETTLING_SPECIALIZED": 0,
+        "HUB_UNIVERSAL": 2,
+        "ENERGY_SPECIALIZED": 1,
+        "STABILITY_CRITICAL": 0,
+        "PHASE_SENSITIVE": 2
+      },
+      "pct": {
+        "FLOW_TERMINAL": 0.2143,
+        "ROUTINE_SPECIALIZED": 0.0714,
+        "PRECISION_SPECIALIZED": 0.0,
+        "COMPOUND_TERMINAL": 0.0,
+        "BULK_OPERATIONAL": 0.3571,
+        "SETTLING_SPECIALIZED": 0.0,
+        "HUB_UNIVERSAL": 0.1429,
+        "ENERGY_SPECIALIZED": 0.0714,
+        "STABILITY_CRITICAL": 0.0,
+        "PHASE_SENSITIVE": 0.1429
+      },
+      "total": 14
+    },
+    "o": {
+      "counts": {
+        "FLOW_TERMINAL": 8,
+        "ROUTINE_SPECIALIZED": 8,
+        "PRECISION_SPECIALIZED": 8,
+        "COMPOUND_TERMINAL": 4,
+        "BULK_OPERATIONAL": 93,
+        "SETTLING_SPECIALIZED": 18,
+        "HUB_UNIVERSAL": 2,
+        "ENERGY_SPECIALIZED": 3,
+        "STABILITY_CRITICAL": 7,
+        "PHASE_SENSITIVE": 2
+      },
+      "pct": {
+        "FLOW_TERMINAL": 0.0523,
+        "ROUTINE_SPECIALIZED": 0.0523,
+        "PRECISION_SPECIALIZED": 0.0523,
+        "COMPOUND_TERMINAL": 0.0261,
+        "BULK_OPERATIONAL": 0.6078,
+        "SETTLING_SPECIALIZED": 0.1176,
+        "HUB_UNIVERSAL": 0.0131,
+        "ENERGY_SPECIALIZED": 0.0196,
+        "STABILITY_CRITICAL": 0.0458,
+        "PHASE_SENSITIVE": 0.0131
+      },
+      "total": 153
+    },
+    "p": {
+      "counts": {
+        "FLOW_TERMINAL": 6,
+        "ROUTINE_SPECIALIZED": 0,
+        "PRECISION_SPECIALIZED": 1,
+        "COMPOUND_TERMINAL": 2,
+        "BULK_OPERATIONAL": 6,
+        "SETTLING_SPECIALIZED": 2,
+        "HUB_UNIVERSAL": 0,
+        "ENERGY_SPECIALIZED": 0,
+        "STABILITY_CRITICAL": 1,
+        "PHASE_SENSITIVE": 0
+      },
+      "pct": {
+        "FLOW_TERMINAL": 0.3333,
+        "ROUTINE_SPECIALIZED": 0.0,
+        "PRECISION_SPECIALIZED": 0.0556,
+        "COMPOUND_TERMINAL": 0.1111,
+        "BULK_OPERATIONAL": 0.3333,
+        "SETTLING_SPECIALIZED": 0.1111,
+        "HUB_UNIVERSAL": 0.0,
+        "ENERGY_SPECIALIZED": 0.0,
+        "STABILITY_CRITICAL": 0.0556,
+        "PHASE_SENSITIVE": 0.0
+      },
+      "total": 18
+    },
+    "q": {
+      "counts": {
+        "FLOW_TERMINAL": 0,
+        "ROUTINE_SPECIALIZED": 0,
+        "PRECISION_SPECIALIZED": 0,
+        "COMPOUND_TERMINAL": 0,
+        "BULK_OPERATIONAL": 0,
+        "SETTLING_SPECIALIZED": 0,
+        "HUB_UNIVERSAL": 0,
+        "ENERGY_SPECIALIZED": 1,
+        "STABILITY_CRITICAL": 0,
+        "PHASE_SENSITIVE": 0
+      },
+      "pct": {
+        "FLOW_TERMINAL": 0.0,
+        "ROUTINE_SPECIALIZED": 0.0,
+        "PRECISION_SPECIALIZED": 0.0,
+        "COMPOUND_TERMINAL": 0.0,
+        "BULK_OPERATIONAL": 0.0,
+        "SETTLING_SPECIALIZED": 0.0,
+        "HUB_UNIVERSAL": 0.0,
+        "ENERGY_SPECIALIZED": 1.0,
+        "STABILITY_CRITICAL": 0.0,
+        "PHASE_SENSITIVE": 0.0
+      },
+      "total": 1
+    },
+    "r": {
+      "counts": {
+        "FLOW_TERMINAL": 1,
+        "ROUTINE_SPECIALIZED": 3,
+        "PRECISION_SPECIALIZED": 1,
+        "COMPOUND_TERMINAL": 1,
+        "BULK_OPERATIONAL": 18,
+        "SETTLING_SPECIALIZED": 3,
+        "HUB_UNIVERSAL": 3,
+        "ENERGY_SPECIALIZED": 0,
+        "STABILITY_CRITICAL": 2,
+        "PHASE_SENSITIVE": 0
+      },
+      "pct": {
+        "FLOW_TERMINAL": 0.0312,
+        "ROUTINE_SPECIALIZED": 0.0938,
+        "PRECISION_SPECIALIZED": 0.0312,
+        "COMPOUND_TERMINAL": 0.0312,
+        "BULK_OPERATIONAL": 0.5625,
+        "SETTLING_SPECIALIZED": 0.0938,
+        "HUB_UNIVERSAL": 0.0938,
+        "ENERGY_SPECIALIZED": 0.0,
+        "STABILITY_CRITICAL": 0.0625,
+        "PHASE_SENSITIVE": 0.0
+      },
+      "total": 32
+    },
+    "s": {
+      "counts": {
+        "FLOW_TERMINAL": 4,
+        "ROUTINE_SPECIALIZED": 1,
+        "PRECISION_SPECIALIZED": 2,
+        "COMPOUND_TERMINAL": 0,
+        "BULK_OPERATIONAL": 35,
+        "SETTLING_SPECIALIZED": 3,
+        "HUB_UNIVERSAL": 1,
+        "ENERGY_SPECIALIZED": 4,
+        "STABILITY_CRITICAL": 3,
+        "PHASE_SENSITIVE": 0
+      },
+      "pct": {
+        "FLOW_TERMINAL": 0.0755,
+        "ROUTINE_SPECIALIZED": 0.0189,
+        "PRECISION_SPECIALIZED": 0.0377,
+        "COMPOUND_TERMINAL": 0.0,
+        "BULK_OPERATIONAL": 0.6604,
+        "SETTLING_SPECIALIZED": 0.0566,
+        "HUB_UNIVERSAL": 0.0189,
+        "ENERGY_SPECIALIZED": 0.0755,
+        "STABILITY_CRITICAL": 0.0566,
+        "PHASE_SENSITIVE": 0.0
+      },
+      "total": 53
+    },
+    "t": {
+      "counts": {
+        "FLOW_TERMINAL": 5,
+        "ROUTINE_SPECIALIZED": 0,
+        "PRECISION_SPECIALIZED": 0,
+        "COMPOUND_TERMINAL": 5,
+        "BULK_OPERATIONAL": 28,
+        "SETTLING_SPECIALIZED": 1,
+        "HUB_UNIVERSAL": 1,
+        "ENERGY_SPECIALIZED": 5,
+        "STABILITY_CRITICAL": 5,
+        "PHASE_SENSITIVE": 1
+      },
+      "pct": {
+        "FLOW_TERMINAL": 0.098,
+        "ROUTINE_SPECIALIZED": 0.0,
+        "PRECISION_SPECIALIZED": 0.0,
+        "COMPOUND_TERMINAL": 0.098,
+        "BULK_OPERATIONAL": 0.549,
+        "SETTLING_SPECIALIZED": 0.0196,
+        "HUB_UNIVERSAL": 0.0196,
+        "ENERGY_SPECIALIZED": 0.098,
+        "STABILITY_CRITICAL": 0.098,
+        "PHASE_SENSITIVE": 0.0196
+      },
+      "total": 51
+    },
+    "y": {
+      "counts": {
+        "FLOW_TERMINAL": 3,
+        "ROUTINE_SPECIALIZED": 0,
+        "PRECISION_SPECIALIZED": 1,
+        "COMPOUND_TERMINAL": 0,
+        "BULK_OPERATIONAL": 10,
+        "SETTLING_SPECIALIZED": 1,
+        "HUB_UNIVERSAL": 4,
+        "ENERGY_SPECIALIZED": 1,
+        "STABILITY_CRITICAL": 1,
+        "PHASE_SENSITIVE": 1
+      },
+      "pct": {
+        "FLOW_TERMINAL": 0.1364,
+        "ROUTINE_SPECIALIZED": 0.0,
+        "PRECISION_SPECIALIZED": 0.0455,
+        "COMPOUND_TERMINAL": 0.0,
+        "BULK_OPERATIONAL": 0.4545,
+        "SETTLING_SPECIALIZED": 0.0455,
+        "HUB_UNIVERSAL": 0.1818,
+        "ENERGY_SPECIALIZED": 0.0455,
+        "STABILITY_CRITICAL": 0.0455,
+        "PHASE_SENSITIVE": 0.0455
+      },
+      "total": 22
+    }
+  },
+  "constraints_referenced": [
+    "C995",
+    "C1000",
+    "C1072",
+    "C986"
+  ]
+}
