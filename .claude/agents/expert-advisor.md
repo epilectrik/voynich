@@ -88,7 +88,7 @@ and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-15 21:25
+**Generated:** 2026-02-15 23:13
 **Version:** FROZEN STATE (948 constraints, 66 fits) [COMPACT]
 
 ---
@@ -6810,7 +6810,7 @@ disallowed:
 meta:
   name: "Human Track Structural Contract"
   acronym: "HTSC"
-  version: "1.0"
+  version: "1.1"
   date: "2026-02-15"
   status: "LOCKED"
   layer_type: "cross-system layer contract"
@@ -6902,8 +6902,12 @@ guarantees:
     provenance: "C416"
 
   - id: "HAZARD_AVOIDANCE"
-    statement: "0/35 HT tokens at forbidden transition seams; average distance 4.84 (vs 2.5 expected)"
-    provenance: "C166, C169"
+    statement: |
+      0/35 HT tokens at forbidden transition seams; average distance 4.84 (vs 2.5 expected).
+      Mechanism: vocabulary-level exclusion (C1078). Only 5/7042 HT tokens participate in
+      forbidden vocabulary at all. Avoidance is lexical, not positional — HT words simply
+      do not appear in C109 forbidden pairs. Boundary position does not modulate distance.
+    provenance: "C166, C169, C1078"
 
   - id: "LINE1_ENRICHMENT"
     tier: 0
@@ -7132,10 +7136,16 @@ two_axis_model:
     description: "Tracks spare cognitive capacity"
     evidence: "r=-0.301 with folio complexity"
     pattern: "Hard task -> frequent but simple HT; easy task -> rare but complex HT"
+    caveat: |
+      C1080 REJECTS the compound rate prediction of this axis.
+      Tail pressure POSITIVELY correlates with HT compound rate (rho=0.367, p=0.0007).
+      High-tail folios have MORE compound HT, not less. The specification model (C935)
+      wins: compound rate tracks specification density, not cognitive simplicity.
+      The morphology axis may still apply to other complexity measures but NOT compound rate.
 
   strategy_connection: "r=+0.46 CAUTIOUS, r=-0.48 OPPORTUNISTIC (C488)"
 
-  provenance: "C461, C477, C488, C489"
+  provenance: "C461, C477, C488, C489, C1080"
 
 disallowed_interpretations:
 
@@ -7190,7 +7200,7 @@ summary: |
 meta:
   name: "Paragraph Structural Contract"
   acronym: "PSC"
-  version: "1.0"
+  version: "1.1"
   date: "2026-02-15"
   status: "LOCKED"
   layer_type: "cross-system structural unit contract"
@@ -7333,12 +7343,13 @@ guarantees:
       Section effects are ADDITIVE only (C1047: no section-dynamics interaction).
     provenance: "C860, C852"
 
-  - id: "LINK_HAZARD_NEUTRAL"
+  - id: "LINK_HAZARD_HT_NEUTRAL"
     statement: |
-      LINK and hazard density are NEUTRAL across paragraph ordinals.
+      LINK, hazard density, and HT density are all NEUTRAL across paragraph ordinals.
       LINK rate CV: 0.16. Hazard rate CV: 0.21.
       LINK body allocation: 79.4%. Hazard body allocation: 80.9%.
-    provenance: "C861"
+      HT ordinal correlation: rho=0.018, p=0.69. First vs last: MW p=0.086 NS (C1083).
+    provenance: "C861, C1083"
 
   - id: "MACRO_DYNAMICS_NEUTRAL"
     statement: |

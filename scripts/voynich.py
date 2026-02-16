@@ -22,7 +22,7 @@ import csv
 import json
 from datetime import datetime
 from pathlib import Path
-from dataclasses import dataclass
+from dataclasses import dataclass, field
 from typing import Optional, Iterator, List, Set, Tuple, Dict
 from collections import Counter, defaultdict
 
@@ -1243,6 +1243,17 @@ class BTokenAnalysis:
     middle_affordance_family: Optional[str] = None # THERMAL, PHASE, FLOW, RECOVERY
     prefix_zone: Optional[str] = None              # INITIAL_BIASED, CENTRAL, FINAL_BIASED, UNIFORM
 
+    # Terminal character analysis (C1067, C1072, C1076-C1077)
+    terminal_char: Optional[str] = None            # Last character of MIDDLE (raw)
+    terminal_group: Optional[str] = None           # CLIQUE_N, CLIQUE_Y, CLIQUE_L, ELEVATED_M, ELEVATED_R
+
+    # Compound depth (C1062, C766)
+    compound_depth: int = 0                        # 0=simple, 2-5=compound atom count
+    compound_atoms: List[str] = field(default_factory=list)  # Maximal atom decomposition (C935, C766)
+
+    # Suffix sequential grammar (C1058)
+    suffix_continuation: bool = False              # True when suffix matches previous token's suffix in line
+
     # Descriptive label maps (human-readable register)
     MACRO_LABELS = {
         'FL_HAZ': 'hazard flow', 'FL_SAFE': 'safe flow',
@@ -1291,6 +1302,10 @@ class BTokenAnalysis:
             parts.append(f"AFF:{self.middle_affordance_bin}")
         if self.prefix_zone:
             parts.append(f"Z:{self.prefix_zone}")
+        # Terminal character group (C1067, C1072, C1076-C1077)
+        # Informational only — frequency-mediated per C1073-C1075
+        if self.terminal_group:
+            parts.append(f"TC:{self.terminal_char}")
         return ' + '.join(parts) if parts else '(unclassified)'
 
     def structural_gloss(self) -> str:
@@ -1356,7 +1371,7 @@ class BTokenAnalysis:
 
         Rules (expert round 3.5):
         - No comma-separated verbs (suffix structural commas OK)
-        - No hyphenated compound verbs (HT hold-light/hold-heavy OK)
+        - No hyphenated compound verbs (HT hold-light/hold-heavy/hold-deep OK)
         - Max 2 core words before suffix brackets
         """
         import re
@@ -1842,13 +1857,20 @@ class BTokenAnalysis:
         HT tokens are NOT executable (C404/C405). Instead of pretending
         they carry semantic content, render as operator posture:
           - density (line-level HT proportion) -> vigilance: attend/hold
-          - form (atom count) -> cognitive load: heavy/light
+          - form (atom count) -> specification density: light/heavy/deep
+            C1080 supports the specification model (C935) over the two-axis
+            model: compound rate correlates POSITIVELY with tail pressure
+            (rho=0.367), meaning harder contexts need MORE specification.
+            "heavy" = more operational content compressed into header.
+            C1062: depth 4-5 tokens are identification vocabulary (C870).
 
-        HT Rendering Rule (FROZEN):
+        HT Rendering Rule (FROZEN) — governs primary display:
           1. Never rendered as actions
-          2. Posture grammar: [mode-load] (attend/hold, heavy/light)
+          2. Posture grammar: [mode-load] (attend/hold, light/heavy/deep)
           3. No verbs, no arrows, no sequencing
           4. Suffix shown as raw morphology (form marker), never operational gloss
+        Detail-4 metadata shows internal structure per C935 (compound specification).
+        Metadata tier is distinct from rendering tier — does not violate the freeze.
 
         Returns formatted posture string, or None if not an HT token.
         """
@@ -1858,25 +1880,28 @@ class BTokenAnalysis:
         middle = self.morph.middle if self.morph else None
         suffix = self.morph.suffix if self.morph else None
 
-        # Determine form from atom decomposition
-        atoms = []
-        if middle and hasattr(self, '_mid_analyzer') and self._mid_analyzer:
-            atoms = self._mid_analyzer.get_maximal_atoms(middle)
-        form = 'compound' if len(atoms) > 1 else 'simple'
-
-        # Posture grammar (expert design):
+        # Posture grammar:
         # density -> vigilance mode: high=attend, low=hold
-        # form -> cognitive load: compound=heavy, simple=light
+        # compound_depth -> specification density (C1080, C1062):
+        #   depth 0-1: light (simple/operational)
+        #   depth 2-3: heavy (operational specification, C935)
+        #   depth 4-5: deep (identification vocabulary, C870/C862)
         density = getattr(self, '_ht_line_density', 'low')
         mode = 'attend' if density == 'high' else 'hold'
-        load = 'heavy' if form == 'compound' else 'light'
+        depth = self.compound_depth
+        if depth >= 4:
+            load = 'deep'
+        elif depth >= 2:
+            load = 'heavy'
+        else:
+            load = 'light'
 
         # Compact mode (default): hide atom details
         # Debug mode: show atoms for discrimination
         debug_ht = getattr(self, '_debug_ht', False)
         if debug_ht:
-            if atoms:
-                atom_str = ' + '.join(atoms)
+            if self.compound_atoms:
+                atom_str = ' + '.join(self.compound_atoms)
                 spec = f"[{mode}-{load} {{{atom_str}}}]"
             elif middle:
                 spec = f"[{mode}-{load} {{{middle}}}]"
@@ -2040,7 +2065,8 @@ class BLineAnalysis:
         """Render line as operations with control-flow labels and inline FL markers.
 
         Uses ' -> ' for boundary tokens (SETUP/CLOSE) to show sequential structure,
-        and ' | ' for WORK zone tokens to reflect unordered interior (C961, C964).
+        ' | ' for WORK zone tokens to reflect unordered interior (C961, C964),
+        and ' = ' for suffix continuation (C1058: batch repetition).
         """
         if not self.tokens:
             return ''
@@ -2053,7 +2079,7 @@ class BLineAnalysis:
                 s += f" (FL:{fg['fl_stage']})"
             if fg['flow']:
                 s += f" [{fg['flow']}]"
-            parts.append((s, tok.prefix_phase))
+            parts.append((s, tok.prefix_phase, tok.suffix_continuation))
 
         # Join with zone-aware separators
         if len(parts) <= 1:
@@ -2063,9 +2089,13 @@ class BLineAnalysis:
         for i in range(1, len(parts)):
             prev_phase = parts[i-1][1]
             curr_phase = parts[i][1]
+            is_continuation = parts[i][2]
+            # Suffix continuation: batch repetition signal (C1058)
+            if is_continuation and prev_phase == 'WORK' and curr_phase == 'WORK':
+                result += ' = ' + parts[i][0]
             # Boundary-to-boundary or boundary-to-work: sequential arrow
             # Work-to-work: unordered pipe (C961)
-            if prev_phase == 'WORK' and curr_phase == 'WORK':
+            elif prev_phase == 'WORK' and curr_phase == 'WORK':
                 result += ' | ' + parts[i][0]
             else:
                 result += ' -> ' + parts[i][0]
@@ -2197,6 +2227,17 @@ class BFolioDecoder:
     # Maps are loaded from data/decoder_maps.json at init.
     # See that file for constraint citations per entry.
     DECODER_MAPS_PATH = PROJECT_ROOT / 'data' / 'decoder_maps.json'
+
+    # Terminal character clique membership (C1072, C1077)
+    # 3 genuine cliques + 2 elevated non-cliques from Phase 382
+    # Informational only — terminal-role/state are frequency-mediated (C1073-C1075)
+    TERMINAL_CLIQUES = {
+        'n': 'CLIQUE_N',    # 4.07x vs null, p=0.000 — HAZARD_TARGET/CONNECTOR hubs
+        'y': 'CLIQUE_Y',    # 3.40x vs null, p=0.001 — HAZARD_SOURCE/CONNECTOR hubs
+        'l': 'CLIQUE_L',    # 2.52x vs null, p=0.014 — mixed hub roles
+        'm': 'ELEVATED_M',  # 3.24x vs null, p=0.085 — 50% FLOW_TERMINAL (not a clique)
+        'r': 'ELEVATED_R',  # 2.58x vs null, p=0.052 — (not a clique)
+    }
 
     @classmethod
     def _load_maps(cls) -> dict:
@@ -2598,6 +2639,19 @@ class BFolioDecoder:
         pz_key = m.prefix if m.prefix else 'BARE'
         analysis.prefix_zone = self.PREFIX_ZONE.get(pz_key)
 
+        # Terminal character analysis (C1067, C1072, C1076-C1077)
+        if m.middle:
+            tc = m.middle[-1]
+            analysis.terminal_char = tc
+            analysis.terminal_group = self.TERMINAL_CLIQUES.get(tc)
+
+        # Compound depth and atom decomposition (C1062, C766, C935)
+        if m.middle:
+            atoms = self.mid_analyzer.get_maximal_atoms(m.middle)
+            if len(atoms) > 1:
+                analysis.compound_depth = len(atoms)
+                analysis.compound_atoms = atoms
+
         return analysis
 
     def _interpret_kernel_balance(self, kernel_dist: Dict[str, int]) -> str:
@@ -2744,6 +2798,14 @@ class BFolioDecoder:
             for t in line_tokens:
                 if t.is_ht:
                     t._ht_line_density = ht_density
+
+        # Suffix continuation tracking (C1058: suffix sequential grammar)
+        # Mark tokens whose suffix matches the previous token's suffix
+        for i in range(1, len(line_tokens)):
+            prev_suf = line_tokens[i-1].morph.suffix if line_tokens[i-1].morph else None
+            curr_suf = line_tokens[i].morph.suffix if line_tokens[i].morph else None
+            if prev_suf and curr_suf and prev_suf == curr_suf:
+                line_tokens[i].suffix_continuation = True
 
         return BLineAnalysis(
             line_id=line_id,

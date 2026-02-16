@@ -27,10 +27,7 @@ try:
 except ImportError:
     HAS_COLOR = False
 
-# Rotating colors for token-gloss matching
-COLORS = [Fore.CYAN, Fore.YELLOW, Fore.GREEN, Fore.MAGENTA] if HAS_COLOR else []
-
-# FL stage colors for --flow mode
+# FL stage colors for --flow mode (stage-specific, kept separate from role colors)
 FL_COLORS = {
     'INITIAL': Fore.CYAN,
     'EARLY': Fore.BLUE,
@@ -38,6 +35,49 @@ FL_COLORS = {
     'LATE': Fore.MAGENTA,
     'TERMINAL': Fore.RED,
 } if HAS_COLOR else {}
+
+
+def token_color(tok) -> str:
+    """Semantic color by functional role. Priority: HT > FL > prefix_role.
+
+    Bands: HOT (QO=red, CC=yellow), COOL (CHSH=cyan, FL=light blue),
+    EARTH (AX=green, PREP=light green), NEUTRAL (HT=dim, BARE=white).
+    """
+    if not HAS_COLOR:
+        return ''
+    if tok.is_ht:
+        return Style.DIM + Fore.WHITE
+    if tok.is_fl_role:
+        return Fore.LIGHTBLUE_EX
+    role = tok.prefix_role
+    if role == 'EN_QO':
+        return Fore.RED
+    if role == 'EN_KERNEL':
+        return Fore.CYAN
+    if role in ('AX_SCAFFOLD', 'AX_LATE'):
+        return Fore.GREEN
+    if role == 'PREP_TIER':
+        return Fore.LIGHTGREEN_EX
+    if role == 'CC_INIT':
+        return Fore.YELLOW
+    return Fore.LIGHTWHITE_EX
+
+
+def print_legend():
+    """Print compact color legend at top of output."""
+    if not HAS_COLOR:
+        return
+    parts = [
+        f"{Fore.RED}QO:energy{Style.RESET_ALL}",
+        f"{Fore.CYAN}CH/SH:monitor{Style.RESET_ALL}",
+        f"{Fore.YELLOW}CC:control{Style.RESET_ALL}",
+        f"{Fore.LIGHTBLUE_EX}FL:state{Style.RESET_ALL}",
+        f"{Fore.GREEN}AX:scaffold{Style.RESET_ALL}",
+        f"{Fore.LIGHTGREEN_EX}PREP:prep{Style.RESET_ALL}",
+        f"{Style.DIM}{Fore.WHITE}HT:human{Style.RESET_ALL}",
+        f"{Fore.LIGHTWHITE_EX}BARE:bare{Style.RESET_ALL}",
+    ]
+    print(f"Legend: {' | '.join(parts)}")
 
 
 def display_flow(folio_id: str, line_num: int = None, para_num: int = None, use_color: bool = True):
@@ -83,6 +123,7 @@ def display_flow(folio_id: str, line_num: int = None, para_num: int = None, use_
 
     # Legend
     if color_enabled:
+        print_legend()
         print(f"FL markers shown inline as (FL:STAGE) — only on FL-role tokens")
     print()
 
@@ -105,17 +146,19 @@ def display_flow(folio_id: str, line_num: int = None, para_num: int = None, use_
             tok_parts = []
             for tok in la.tokens:
                 fg = tok.flow_gloss()
-                s = fg['operation']
-                # Inline FL marker (colored) — only for FL-role tokens
+                tc = token_color(tok)
+                reset = Style.RESET_ALL
+                s = f"{tc}{fg['operation']}{reset}"
+                # Inline FL marker (stage-colored) — only for FL-role tokens
                 if fg['fl_stage']:
                     fl_color = FL_COLORS.get(fg['fl_stage'], '')
-                    s += f" {fl_color}{{FL:{fg['fl_stage']}}}{Style.RESET_ALL}"
+                    s += f" {fl_color}{{FL:{fg['fl_stage']}}}{reset}"
                 # Control-flow label (bright)
                 if fg['flow']:
-                    s += f" {Style.BRIGHT}[{fg['flow']}]{Style.RESET_ALL}"
-                tok_parts.append((s, tok.prefix_phase))
+                    s += f" {Style.BRIGHT}[{fg['flow']}]{reset}"
+                tok_parts.append((s, tok.prefix_phase, tok.suffix_continuation))
 
-            # Join with zone-aware separators (C961, C964)
+            # Join with zone-aware separators (C961, C964, C1058)
             if len(tok_parts) <= 1:
                 flow_line = tok_parts[0][0] if tok_parts else ''
             else:
@@ -123,13 +166,23 @@ def display_flow(folio_id: str, line_num: int = None, para_num: int = None, use_
                 for j in range(1, len(tok_parts)):
                     prev_phase = tok_parts[j-1][1]
                     curr_phase = tok_parts[j][1]
-                    sep = ' | ' if prev_phase == 'WORK' and curr_phase == 'WORK' else ' -> '
+                    is_cont = tok_parts[j][2]
+                    # Suffix continuation: batch repetition (C1058)
+                    if is_cont and prev_phase == 'WORK' and curr_phase == 'WORK':
+                        sep = ' = '
+                    elif prev_phase == 'WORK' and curr_phase == 'WORK':
+                        sep = ' | '
+                    else:
+                        sep = ' -> '
                     flow_line += sep + tok_parts[j][0]
         else:
             flow_line = la.flow_render()
 
-        # Token row
-        token_row = ' '.join(tok.word for tok in la.tokens)
+        # Token row (colored by role)
+        if color_enabled:
+            token_row = ' '.join(f"{token_color(tok)}{tok.word}{Style.RESET_ALL}" for tok in la.tokens)
+        else:
+            token_row = ' '.join(tok.word for tok in la.tokens)
 
         zone_tag = f" [{la.paragraph_zone}]" if la.paragraph_zone else ""
         print(f"L{la.line_id}{zone_tag}: {flow_line}")
@@ -178,7 +231,7 @@ def display_paragraph(folio_id: str, line_num: int = None, para_num: int = None,
 
     glossed_count = 0
     total_count = 0
-    color_enabled = use_color and HAS_COLOR and COLORS
+    color_enabled = use_color and HAS_COLOR
 
     # Show paragraph structure summary
     all_paras = d.analyze_folio_paragraphs(folio_id)
@@ -190,6 +243,8 @@ def display_paragraph(folio_id: str, line_num: int = None, para_num: int = None,
     if para_num:
         print(f"SHOWING: Paragraph {para_num}")
     print(f"STRUCTURE: {para_summary}")
+    if color_enabled:
+        print_legend()
     print(f"{'='*80}\n")
 
     for la in lines:
@@ -218,9 +273,9 @@ def display_paragraph(folio_id: str, line_num: int = None, para_num: int = None,
             # Build separate lists for manual, structural, and tokens
             manual_display = expanded_manual if expanded_manual else "___"
 
-            # Apply rotating color
+            # Apply semantic role color
             if color_enabled:
-                color = COLORS[i % len(COLORS)]
+                color = token_color(tok)
                 reset = Style.RESET_ALL
                 glosses.append(f"{color}{manual_display}{reset}")
                 structural_glosses.append(f"{color}{structural}{reset}")
@@ -250,7 +305,8 @@ def display_folio(folio_id: str,
                   line_num: int = None,
                   debug_ht: bool = False,
                   structural_mode: bool = False,
-                  detail_level: int = 2):
+                  detail_level: int = 2,
+                  use_color: bool = True):
     """Display a B folio with configurable columns."""
 
     d = BFolioDecoder()
@@ -274,8 +330,11 @@ def display_folio(folio_id: str,
     total_count = 0
 
     # Header
+    color_enabled = use_color and HAS_COLOR
     print(f"\n{'='*80}")
     print(f"FOLIO: {folio_id}")
+    if color_enabled:
+        print_legend()
     print(f"{'='*80}")
 
     # Epistemological warning (expert recommendation)
@@ -322,7 +381,11 @@ def display_folio(folio_id: str,
             # Build row
             cols = []
             if show_token:
-                cols.append(f"{tok.word:<14}")
+                if color_enabled:
+                    tc = token_color(tok)
+                    cols.append(f"{tc}{tok.word:<14}{Style.RESET_ALL}")
+                else:
+                    cols.append(f"{tok.word:<14}")
             if show_calc:
                 cols.append(f"{calc_gloss:<35}")
             if show_manual:
@@ -345,8 +408,32 @@ def display_folio(folio_id: str,
                     meta_parts.append(f"family:{tok.middle_affordance_family}")
                 if tok.prefix_zone:
                     meta_parts.append(f"zone:{tok.prefix_zone}")
+                if tok.terminal_group:
+                    meta_parts.append(f"tc:{tok.terminal_char}({tok.terminal_group})")
+                if tok.compound_depth > 0:
+                    meta_parts.append(f"depth:{tok.compound_depth}")
+                if tok.compound_atoms:
+                    meta_parts.append(f"atoms:{'+'.join(tok.compound_atoms)}")
+                if tok.suffix_continuation:
+                    meta_parts.append(f"cont:True")
                 if meta_parts:
                     print(f"{'':>14}   {'  '.join(meta_parts)}")
+
+                # HT structural internals (C935: compound specification)
+                # Shows raw morpheme identity only — never operational glosses
+                if tok.is_ht:
+                    ht_parts = []
+                    if tok.morph:
+                        if tok.morph.prefix:
+                            ht_parts.append(f"prefix:{tok.morph.prefix}")
+                        if tok.morph.middle:
+                            ht_parts.append(f"middle:{tok.morph.middle}")
+                        if tok.morph.suffix:
+                            ht_parts.append(f"suffix:{tok.morph.suffix}")
+                    if tok.middle_kernel:
+                        ht_parts.append(f"kernel:{tok.middle_kernel}")
+                    if ht_parts:
+                        print(f"{'':>14}   HT structure: {'  '.join(ht_parts)}")
 
     # Summary
     print()
@@ -404,6 +491,7 @@ def main():
         debug_ht=args.debug_ht,
         structural_mode=args.structural_mode,
         detail_level=args.detail,
+        use_color=not args.no_color,
     )
 
 
