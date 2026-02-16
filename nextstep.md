@@ -1,7 +1,24 @@
 # Next Direction: Characterization Complete — Pivot to Application
 
 **Status:** CHARACTERIZATION ACTIVE
-**Current state:** v4.09 | 942 constraints | 66 fits | 382 phases
+**Current state:** v4.10 | 948 constraints | 66 fits | 383 phases
+
+---
+
+## Phase 383: HT Interaction Architecture (6-Test Battery)
+
+Tests 4 HTSC V9 cross-guarantee predictions + oscillation wavelength + paragraph ordinal neutrality. Expert-validated. All Tier 2.
+
+| Test | Verdict | Key Finding |
+|------|---------|-------------|
+| T1: Boundary Hazard Distance | **FAIL** | Only 5/7042 HT tokens in forbidden vocabulary. Hazard avoidance is vocabulary-level (C622), not positional. |
+| T2: Line-1 Section Exclusivity | **PARTIAL** | Line-1 100% vs body 78.3% exclusive. Singleton control kills it: both 100%. Folio-specificity tautology. |
+| T3: Tail × Compound Rate | **PASS** | rho=0.367, p=0.0007. POSITIVE direction: specification model (C935) wins over two-axis model. |
+| T4: LINK Prefix Phase | **FAIL** | chi2=0.89, p=0.35. LINK adjacency doesn't modulate HT EARLY/LATE ratio. Confirms C804. |
+| T5: HT Oscillation Wavelength | **PARTIAL** | Section-residualized: only lag 7 survives. No lag 8-12 signal. Oscillation is section-driven. |
+| T6: Paragraph Ordinal Neutrality | **PASS** | rho=0.018, p=0.69. Negative control confirms C855 parallel programs. |
+
+New constraints: C1078-C1083.
 
 ---
 
@@ -185,6 +202,7 @@ New constraints: C1068-C1072.
 15. **Morphological deep structure characterized** (2 PASS, 1 INDEPENDENT, 2 PARTIAL: suffix grammar genuine V=0.062, suffix-role independent of PREFIX, atom position grammar V=0.333, atom co-occurrence structured, depth predicts folio-specificity rho=-0.27)
 16. **Multi-layer compatibility architecture characterized** (2 PASS, 1 PARTIAL, 2 FAIL: C475 x C911 partially coupled NMI=0.185, weak 3-community structure Q_signal=0.082, atom ordering independent of kernel bias, forbidden transitions operate above component rules 13/17 residual, terminal character predicts compatibility 5 groups elevated)
 17. **Terminal compatibility geography mapped** (2 PASS, 3 PARTIAL: terminal-role and terminal-state associations frequency-mediated, compatibility asymmetry frequency-dominated, terminal-affordance alignment genuine V=0.325 perm_p=0.000, 3/5 terminal groups form genuine cliques 'n' 4.07x 'y' 3.40x 'l' 2.52x)
+18. **HT interaction architecture tested** (1 PASS, 2 PARTIAL, 2 FAIL, 1 neg ctrl PASS: hazard avoidance vocabulary-level not positional, line-1 exclusivity is folio-specificity tautology, tail-compound specification model wins rho=0.367, LINK-HT prefix phase independent, oscillation section-driven not intrinsic, paragraph ordinal neutral)
 
 ---
 

@@ -1,0 +1,28 @@
+{
+  "test": "T1_boundary_hazard_distance",
+  "verdict": "FAIL",
+  "n_boundary_ht": 3,
+  "n_interior_ht": 2,
+  "boundary_median": 10.0,
+  "interior_median": 9.5,
+  "boundary_mean": 10.0,
+  "interior_mean": 9.5,
+  "mann_whitney_U": 3.0,
+  "mann_whitney_p": 1.0,
+  "cohens_d": 0.16823164622761327,
+  "boundary_adjacent_rate": 0.0,
+  "interior_adjacent_rate": 0.0,
+  "notes": [
+    "Distance = min token positions to nearest forbidden partner in same line",
+    "Only HT tokens that participate in forbidden vocabulary are included",
+    "Expert prediction: likely null \u2014 hazard avoidance is vocabulary-level (C622), not positional"
+  ],
+  "constraints_referenced": [
+    "C217",
+    "C803",
+    "C166",
+    "C169",
+    "C622",
+    "C740"
+  ]
+}

@@ -1,0 +1,38 @@
+{
+  "test": "T6_paragraph_ordinal_neutrality",
+  "verdict": "PASS",
+  "is_negative_control": true,
+  "n_paragraphs": 502,
+  "spearman_rho": 0.017876070101126632,
+  "spearman_p": 0.6894856347967633,
+  "first_vs_last": {
+    "n_folios": 74,
+    "first_mean": 0.31940390535022817,
+    "last_mean": 0.2905455499558753,
+    "mann_whitney_p": 0.08576897610837082,
+    "cohens_d": 0.27159794234367923
+  },
+  "stratified": {
+    "2_par_folios": {
+      "n": 34,
+      "rho": -0.12030980945042861,
+      "p": 0.4979307943742187
+    },
+    "3_par_folios": {
+      "n": 27,
+      "rho": -0.08293616733181183,
+      "p": 0.6808768870319871
+    },
+    "4plus_par_folios": {
+      "n": 433,
+      "rho": -0.019294815951219648,
+      "p": 0.6888797592190806
+    }
+  },
+  "expected": "NULL \u2014 HT should be paragraph-ordinal neutral (PSC PARALLEL_PROGRAMS)",
+  "constraints_referenced": [
+    "C861",
+    "C1022",
+    "C855"
+  ]
+}

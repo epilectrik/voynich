@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 942 validated constraints | **Version:** 4.09 | **Date:** 2026-02-15
+**Total:** 948 validated constraints | **Version:** 4.10 | **Date:** 2026-02-15
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2741,6 +2741,19 @@ Maps WHY terminal characters predict C475 compatibility. Cross-references termin
 | **1075** | **Compatibility Asymmetry Is Frequency-Dominated** (freq_sum +1.654 std coef dominates; INITIAL_match +0.089 below 0.10 threshold; INITIAL_x_FINAL +0.016 NS confirms C1003; shared_hinge +0.096; 271K pairs after singleton exclusion) | 2 | B | -> [C1075_compatibility_asymmetry_frequency_dominated.md](C1075_compatibility_asymmetry_frequency_dominated.md) |
 | **1076** | **Terminal Character Predicts Affordance Bin Beyond Frequency** (non-BULK V=0.3247, perm_p=0.000; null mean V=0.2102; 10 bins confirmed; 'm' 50% FLOW_TERMINAL, 'e' 22% STABILITY_CRITICAL; first genuine terminal signal surviving frequency null) | 2 | B | -> [C1076_terminal_affordance_bin_genuine.md](C1076_terminal_affordance_bin_genuine.md) |
 | **1077** | **Terminal Compatibility Groups Form Genuine Cliques** (3/5 elevated: 'n' 4.07x p=0.000, 'y' 3.40x p=0.001, 'l' 2.52x p=0.014; frequency-band-matched null; C983 global clustering 0.873 baseline exceeded) | 2 | B | -> [C1077_terminal_groups_genuine_cliques.md](C1077_terminal_groups_genuine_cliques.md) |
+
+### HT Interaction Architecture (C1078-C1083) — Phase: HT_INTERACTION_ARCHITECTURE
+
+Tests 4 HTSC V9 cross-guarantee predictions + HT oscillation wavelength + paragraph ordinal neutrality (negative control). Key finding: HT hazard avoidance is vocabulary-level not positional; line-1 exclusivity is a folio-specificity tautology; tail pressure predicts HT compound rate (specification model wins); LINK-HT prefix phase independent; oscillation is section-driven; paragraph ordinal neutral.
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1078** | **HT Hazard Avoidance Is Vocabulary-Level** (only 5/7042 HT tokens in forbidden vocabulary; boundary vs interior MW p=1.00; C622 role-mediated avoidance confirmed) | 2 | B | -> [C1078_ht_hazard_avoidance_vocabulary_level.md](C1078_ht_hazard_avoidance_vocabulary_level.md) |
+| **1079** | **Line-1 Exclusivity Is Folio-Specificity Tautology** (line-1 100% vs body 78.3% exclusive, p~0; singleton control: both 100%; C870 folio-specificity fully explains difference) | 2 | B | -> [C1079_line1_exclusivity_folio_specificity_tautology.md](C1079_line1_exclusivity_folio_specificity_tautology.md) |
+| **1080** | **Tail Pressure Predicts HT Compound Rate** (rho=0.367, p=0.0007; POSITIVE direction supports C935 specification model; partial rho=0.425 controlling HT count; two-axis model prediction rejected) | 2 | B | -> [C1080_tail_compound_specification_correlation.md](C1080_tail_compound_specification_correlation.md) |
+| **1081** | **LINK Adjacency Does Not Modulate HT Prefix Phase** (chi2=0.89, p=0.35, V=0.022; LINK-adjacent and non-adjacent HT have same EARLY/LATE ratio; confirms C804 weak transition bias) | 2 | B | -> [C1081_link_ht_prefix_phase_independent.md](C1081_link_ht_prefix_phase_independent.md) |
+| **1082** | **HT Oscillation Is Section-Driven** (raw ACF significant at lags 1,2,4,6,20; section-residualized: only lag 7 survives; no lag 8-12 signal; resolves open question) | 2 | B | -> [C1082_ht_oscillation_section_driven.md](C1082_ht_oscillation_section_driven.md) |
+| **1083** | **HT Density Is Paragraph-Ordinal Neutral** (rho=0.018, p=0.69; first vs last MW p=0.086 NS; confirms C855 parallel programs; negative control PASS) | 2 | B | -> [C1083_ht_paragraph_ordinal_neutral.md](C1083_ht_paragraph_ordinal_neutral.md) |
 
 ---
 

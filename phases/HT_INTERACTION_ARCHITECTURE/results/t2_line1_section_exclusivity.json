@@ -1,0 +1,34 @@
+{
+  "test": "T2_line1_section_exclusivity",
+  "verdict": "PARTIAL",
+  "n_line1_only": 100,
+  "n_body_only": 1035,
+  "n_both": 158,
+  "line1_exclusivity_rate": 1.0,
+  "body_exclusivity_rate": 0.782608695652174,
+  "fisher_p": 1.6992369476946816e-10,
+  "odds_ratio": Infinity,
+  "singleton_control": {
+    "n_line1_singletons": 99,
+    "n_body_singletons": 737,
+    "line1_singleton_excl_rate": 1.0,
+    "body_singleton_excl_rate": 1.0,
+    "controlled_fisher_p": 1.0,
+    "controlled_odds_ratio": NaN
+  },
+  "pp_stratification": {
+    "n_line1_pp": 10,
+    "n_line1_b_exclusive": 90,
+    "pp_exclusivity_rate": 1.0,
+    "b_exclusive_rate": 1.0
+  },
+  "tautology_note": "If controlled rate matches, effect is entirely explained by folio-specificity (C870)",
+  "constraints_referenced": [
+    "C167",
+    "C747",
+    "C748",
+    "C870",
+    "C794",
+    "C795"
+  ]
+}

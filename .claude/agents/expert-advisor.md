@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 942 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 948 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (942 validated)
+- Tier 0-2 binding constraints (948 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 942 constraints, 66 fits,
+full content in their source documents. All 948 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-15 20:32
-**Version:** FROZEN STATE (942 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-15 21:25
+**Version:** FROZEN STATE (948 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -1101,7 +1101,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 942 constraints | 2026-02-15
+CONSTRAINT_REFERENCE v2.6 | 948 constraints | 2026-02-15
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2048,6 +2048,12 @@ C1074	**Terminal-State Association Is Frequency-Mediated**
 C1075	**Compatibility Asymmetry Is Frequency-Dominated** (freq_sum +1.654 std coef dominates; INITIAL_match +0.089 below 0.10 threshold; INITIAL_x_FINAL +0.016 NS confirms C1003; shared_hinge +0.096; 271K pairs after singleton exclusion)
 C1076	**Terminal Character Predicts Affordance Bin Beyond Frequency**
 C1077	**Terminal Compatibility Groups Form Genuine Cliques**
+C1078	**HT Hazard Avoidance Is Vocabulary-Level**
+C1079	**Line-1 Exclusivity Is Folio-Specificity Tautology** (line-1 100% vs body 78.3% exclusive, p~0; singleton control: both 100%; C870 folio-specificity fully explains difference)
+C1080	**Tail Pressure Predicts HT Compound Rate**
+C1081	**LINK Adjacency Does Not Modulate HT Prefix Phase**
+C1082	**HT Oscillation Is Section-Driven** (raw ACF significant at lags 1,2,4,6,20; section-residualized: only lag 7 survives; no lag 8-12 signal; resolves open question)
+C1083	**HT Density Is Paragraph-Ordinal Neutral**
 
 ---
 

@@ -1,0 +1,25 @@
+{
+  "test": "T3_tail_compound_correlation",
+  "verdict": "PASS",
+  "n_folios": 82,
+  "n_tail_middles": 646,
+  "mean_tail_pressure": 0.0332500934539143,
+  "mean_compound_rate": 0.38515556546440277,
+  "spearman_rho": 0.3665164692355791,
+  "spearman_p": 0.0007074827597304367,
+  "partial_rho": 0.4246288029494221,
+  "partial_p": 7.007463362042394e-05,
+  "direction": "POSITIVE (specification model supported)",
+  "pre_registered": {
+    "inverse": "two-axis model (high tail \u2192 simple HT)",
+    "positive": "specification model (compound = specification density)",
+    "null": "independent systems"
+  },
+  "constraints_referenced": [
+    "C477",
+    "C935",
+    "C766",
+    "C610",
+    "C461"
+  ]
+}

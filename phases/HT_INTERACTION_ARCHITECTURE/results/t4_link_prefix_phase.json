@@ -1,0 +1,36 @@
+{
+  "test": "T4_link_prefix_phase",
+  "verdict": "FAIL",
+  "n_link_adjacent_ht": 398,
+  "n_non_adjacent_ht": 1525,
+  "uncontrolled": {
+    "adj_early": 306,
+    "adj_late": 92,
+    "non_early": 1208,
+    "non_late": 317,
+    "chi2": 0.8877968500660793,
+    "p": 0.3460750397101625,
+    "cramers_v": 0.021486573224865784,
+    "odds_ratio": 0.8728224877627412,
+    "fisher_p": 0.33552837325117535
+  },
+  "position_controlled": {
+    "chi2": 0.8877968500660793,
+    "p": 0.3460750397101625,
+    "cramers_v": 0.021486573224865784,
+    "odds_ratio": 0.8728224877627412,
+    "fisher_p": 0.33552837325117535
+  },
+  "notes": [
+    "C804: LINK predecessor bias NS (p=0.41), successor bias weak (~1.1x)",
+    "Position control matches by decile of normalized line position"
+  ],
+  "constraints_referenced": [
+    "C806",
+    "C348",
+    "C804",
+    "C805",
+    "C609",
+    "C876"
+  ]
+}

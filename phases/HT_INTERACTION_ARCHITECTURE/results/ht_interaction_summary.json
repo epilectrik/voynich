@@ -1,0 +1,73 @@
+{
+  "phase": 383,
+  "name": "HT_INTERACTION_ARCHITECTURE",
+  "description": "6-test battery: HTSC V9 cross-guarantee predictions, HT oscillation, paragraph ordinal neutrality",
+  "tier": 2,
+  "tests": [
+    {
+      "id": "T1",
+      "name": "Boundary Hazard Distance",
+      "verdict": "FAIL"
+    },
+    {
+      "id": "T2",
+      "name": "Line-1 Section Exclusivity",
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "T3",
+      "name": "Tail x Compound Correlation",
+      "verdict": "PASS"
+    },
+    {
+      "id": "T4",
+      "name": "LINK Prefix Phase",
+      "verdict": "FAIL"
+    },
+    {
+      "id": "T5",
+      "name": "HT Oscillation Wavelength",
+      "verdict": "PARTIAL"
+    },
+    {
+      "id": "T6",
+      "name": "Paragraph Ordinal Neutrality",
+      "verdict": "PASS",
+      "note": "negative control"
+    }
+  ],
+  "constraints_referenced": [
+    "C1022",
+    "C156",
+    "C166",
+    "C167",
+    "C169",
+    "C217",
+    "C348",
+    "C367",
+    "C450",
+    "C451",
+    "C459",
+    "C461",
+    "C477",
+    "C609",
+    "C610",
+    "C622",
+    "C740",
+    "C746",
+    "C747",
+    "C748",
+    "C766",
+    "C794",
+    "C795",
+    "C803",
+    "C804",
+    "C805",
+    "C806",
+    "C855",
+    "C861",
+    "C870",
+    "C876",
+    "C935"
+  ]
+}

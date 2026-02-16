@@ -4,6 +4,40 @@
 
 ---
 
+## Version 4.10 (2026-02-15) - HT Interaction Architecture (6-Test Battery)
+
+### Summary
+
+Phase 383 tests 4 untested HTSC V9 cross-guarantee predictions, the open HT oscillation question, and a paragraph ordinal neutrality negative control. Expert-advisor validated (opus). Results: 1 PASS, 2 PARTIAL, 2 FAIL, 1 negative control PASS. 6 new constraints (C1078-C1083).
+
+Key findings:
+- **HT hazard avoidance is vocabulary-level** (T1 FAIL): Only 5/7042 HT tokens participate in forbidden vocabulary. Hazard avoidance is role-mediated (C622), not positional. Cross-guarantee prediction trivially satisfied.
+- **Line-1 exclusivity is tautological** (T2 PARTIAL): Line-1 100% vs body 78.3% exclusive, but singleton control kills it — both 100%. Folio-specificity (C870) fully explains the difference.
+- **Tail pressure predicts HT compound rate** (T3 PASS): rho=0.367, p=0.0007. POSITIVE direction supports C935 specification model; two-axis model prediction rejected. Partial rho=0.425 after controlling HT count.
+- **LINK-HT prefix phase independent** (T4 FAIL): chi2=0.89, p=0.35. LINK adjacency does not modulate HT EARLY/LATE prefix ratio. Confirms C804 weak transition bias.
+- **HT oscillation is section-driven** (T5 PARTIAL): Raw ACF significant at lags 1,2,4,6,20. After section-residualization, only lag 7 survives. No lag 8-12 signal. Resolves open question.
+- **HT paragraph-ordinal neutral** (T6 negative control PASS): rho=0.018, p=0.69. Confirms C855 parallel programs. HT joins LINK and hazard as paragraph-ordinal neutral.
+
+### New Files
+
+| File | Purpose |
+|------|---------|
+| `phases/HT_INTERACTION_ARCHITECTURE/scripts/ht_interaction_architecture.py` | 6-test battery |
+| `phases/HT_INTERACTION_ARCHITECTURE/results/t1_boundary_hazard_distance.json` | T1 results |
+| `phases/HT_INTERACTION_ARCHITECTURE/results/t2_line1_section_exclusivity.json` | T2 results |
+| `phases/HT_INTERACTION_ARCHITECTURE/results/t3_tail_compound_correlation.json` | T3 results |
+| `phases/HT_INTERACTION_ARCHITECTURE/results/t4_link_prefix_phase.json` | T4 results |
+| `phases/HT_INTERACTION_ARCHITECTURE/results/t5_ht_oscillation_wavelength.json` | T5 results |
+| `phases/HT_INTERACTION_ARCHITECTURE/results/t6_paragraph_ordinal_neutrality.json` | T6 results |
+| `context/CLAIMS/C1078_ht_hazard_avoidance_vocabulary_level.md` | Hazard avoidance = vocabulary |
+| `context/CLAIMS/C1079_line1_exclusivity_folio_specificity_tautology.md` | Line-1 exclusivity = tautology |
+| `context/CLAIMS/C1080_tail_compound_specification_correlation.md` | Tail × compound = specification |
+| `context/CLAIMS/C1081_link_ht_prefix_phase_independent.md` | LINK-HT prefix independent |
+| `context/CLAIMS/C1082_ht_oscillation_section_driven.md` | Oscillation = section-driven |
+| `context/CLAIMS/C1083_ht_paragraph_ordinal_neutral.md` | HT paragraph-ordinal neutral |
+
+---
+
 ## Version 4.09 (2026-02-15) - Terminal Compatibility Geography (5-Test Battery)
 
 ### Summary
