@@ -1,0 +1,610 @@
+{
+  "phase": 389,
+  "name": "ROSETTES_STRUCTURAL_VALIDATION",
+  "test_count": 4,
+  "verdicts": {
+    "V1_incompatibility": "ELEVATED_COMPATIBILITY",
+    "V2_bridge_enrichment": "ENRICHED",
+    "V3_affordance_bins": "BRIDGE_CONCENTRATED",
+    "V4_prefix_distribution": "INDEX_PROFILE"
+  },
+  "V1_data": {
+    "c475_graph_middles": 658,
+    "legal_pairs_total": 15541,
+    "legal_rate_baseline": 0.0719,
+    "per_region": {
+      "B1": {
+        "coverage": 0.6667,
+        "testable_middles": 14,
+        "total_middles": 21,
+        "n_pairs": 91,
+        "legal_count": 67,
+        "legal_rate": 0.7363,
+        "underpowered": false,
+        "type": "LABEL"
+      },
+      "B2": {
+        "coverage": 0.8333,
+        "testable_middles": 5,
+        "total_middles": 6,
+        "n_pairs": 10,
+        "legal_count": 10,
+        "legal_rate": 1.0,
+        "underpowered": false,
+        "type": "LABEL"
+      },
+      "B3": {
+        "coverage": 0.5,
+        "testable_middles": 1,
+        "total_middles": 2,
+        "n_pairs": 0,
+        "legal_count": 0,
+        "legal_rate": 0,
+        "underpowered": true,
+        "type": "LABEL"
+      },
+      "C2": {
+        "coverage": 1.0,
+        "testable_middles": 18,
+        "total_middles": 18,
+        "n_pairs": 153,
+        "legal_count": 152,
+        "legal_rate": 0.9935,
+        "underpowered": false,
+        "type": "DESC"
+      },
+      "D1": {
+        "coverage": 1.0,
+        "testable_middles": 5,
+        "total_middles": 5,
+        "n_pairs": 10,
+        "legal_count": 10,
+        "legal_rate": 1.0,
+        "underpowered": false,
+        "type": "DESC"
+      },
+      "M1": {
+        "coverage": 0.75,
+        "testable_middles": 6,
+        "total_middles": 8,
+        "n_pairs": 15,
+        "legal_count": 14,
+        "legal_rate": 0.9333,
+        "underpowered": false,
+        "type": "LABEL"
+      },
+      "M2": {
+        "coverage": 0.8889,
+        "testable_middles": 16,
+        "total_middles": 18,
+        "n_pairs": 120,
+        "legal_count": 96,
+        "legal_rate": 0.8,
+        "underpowered": false,
+        "type": "LABEL"
+      },
+      "M3": {
+        "coverage": 1.0,
+        "testable_middles": 2,
+        "total_middles": 2,
+        "n_pairs": 1,
+        "legal_count": 1,
+        "legal_rate": 1.0,
+        "underpowered": true,
+        "type": "DESC"
+      },
+      "N1": {
+        "coverage": 0.9474,
+        "testable_middles": 18,
+        "total_middles": 19,
+        "n_pairs": 153,
+        "legal_count": 123,
+        "legal_rate": 0.8039,
+        "underpowered": false,
+        "type": "DESC"
+      },
+      "N2": {
+        "coverage": 0.8571,
+        "testable_middles": 18,
+        "total_middles": 21,
+        "n_pairs": 153,
+        "legal_count": 134,
+        "legal_rate": 0.8758,
+        "underpowered": false,
+        "type": "DESC"
+      },
+      "U1": {
+        "coverage": 0.8571,
+        "testable_middles": 6,
+        "total_middles": 7,
+        "n_pairs": 15,
+        "legal_count": 4,
+        "legal_rate": 0.2667,
+        "underpowered": false,
+        "type": "LABEL"
+      },
+      "U2": {
+        "coverage": 0.8333,
+        "testable_middles": 5,
+        "total_middles": 6,
+        "n_pairs": 10,
+        "legal_count": 9,
+        "legal_rate": 0.9,
+        "underpowered": false,
+        "type": "LABEL"
+      },
+      "U3": {
+        "coverage": 0.5,
+        "testable_middles": 1,
+        "total_middles": 2,
+        "n_pairs": 0,
+        "legal_count": 0,
+        "legal_rate": 0,
+        "underpowered": true,
+        "type": "DESC"
+      },
+      "V1": {
+        "coverage": 0.875,
+        "testable_middles": 14,
+        "total_middles": 16,
+        "n_pairs": 91,
+        "legal_count": 86,
+        "legal_rate": 0.9451,
+        "underpowered": false,
+        "type": "DESC"
+      },
+      "V2": {
+        "coverage": 0.85,
+        "testable_middles": 17,
+        "total_middles": 20,
+        "n_pairs": 136,
+        "legal_count": 115,
+        "legal_rate": 0.8456,
+        "underpowered": false,
+        "type": "DESC"
+      },
+      "W1": {
+        "coverage": 0.6667,
+        "testable_middles": 2,
+        "total_middles": 3,
+        "n_pairs": 1,
+        "legal_count": 1,
+        "legal_rate": 1.0,
+        "underpowered": true,
+        "type": "LABEL"
+      }
+    },
+    "within_label_rate": 0.7435,
+    "within_label_pairs": 230,
+    "within_desc_rate": 0.835,
+    "within_desc_pairs": 412,
+    "cross_rate": 0.6386,
+    "cross_pairs": 1035,
+    "b_within_rate": 0.5439,
+    "azc_within_rate": 1.0,
+    "label_b_exclusive_frac": 0.3265,
+    "desc_b_exclusive_frac": 0.2174,
+    "verdict": "ELEVATED_COMPATIBILITY"
+  },
+  "V2_data": {
+    "bridge_middle_count": 85,
+    "b_bridge_rate": 0.0704,
+    "b_bridge_count": 85,
+    "b_total_middles": 1208,
+    "ros_bridge_rate": 0.2435,
+    "ros_bridge_count": 75,
+    "ros_total_middles": 308,
+    "enrichment": 3.4607,
+    "fisher_p": 0.0,
+    "fisher_odds": 4.2527,
+    "label_bridge_rate": 0.449,
+    "label_bridge_count": 22,
+    "label_total": 49,
+    "label_enrichment": 6.3808,
+    "desc_bridge_rate": 0.6522,
+    "desc_bridge_count": 30,
+    "desc_total": 46,
+    "desc_enrichment": 9.2685,
+    "per_folio": {
+      "f85r1": {
+        "bridge_count": 45,
+        "total": 103,
+        "rate": 0.4369,
+        "enrichment": 6.209
+      },
+      "f85r2": {
+        "bridge_count": 41,
+        "total": 65,
+        "rate": 0.6308,
+        "enrichment": 8.9643
+      },
+      "f85v2": {
+        "bridge_count": 36,
+        "total": 78,
+        "rate": 0.4615,
+        "enrichment": 6.5593
+      },
+      "f86v3": {
+        "bridge_count": 45,
+        "total": 79,
+        "rate": 0.5696,
+        "enrichment": 8.0953
+      },
+      "f86v4": {
+        "bridge_count": 46,
+        "total": 79,
+        "rate": 0.5823,
+        "enrichment": 8.2752
+      },
+      "f86v5": {
+        "bridge_count": 51,
+        "total": 88,
+        "rate": 0.5795,
+        "enrichment": 8.2364
+      },
+      "f86v6": {
+        "bridge_count": 57,
+        "total": 120,
+        "rate": 0.475,
+        "enrichment": 6.7506
+      }
+    },
+    "verdict": "ENRICHED"
+  },
+  "V3_data": {
+    "ros_bin_counts": {
+      "3": 14,
+      "9": 20,
+      "8": 31,
+      "0": 45,
+      "1": 15,
+      "5": 10,
+      "6": 23,
+      "2": 6,
+      "4": 5,
+      "7": 3
+    },
+    "b_bin_counts": {
+      "3": 43,
+      "5": 49,
+      "9": 25,
+      "8": 44,
+      "1": 46,
+      "0": 62,
+      "7": 52,
+      "2": 28,
+      "6": 23,
+      "4": 6
+    },
+    "ros_evenness": 0.8911,
+    "b_evenness": 0.954,
+    "bridge_bin_fraction": 0.6919,
+    "ros_mapped": 172,
+    "ros_unmapped": 136,
+    "label_bin_counts": {
+      "6": 13,
+      "1": 3,
+      "2": 1,
+      "0": 9,
+      "9": 1,
+      "8": 4,
+      "3": 2,
+      "4": 1
+    },
+    "label_evenness": 0.7223,
+    "label_bridge_bin_frac": 0.7941,
+    "desc_bin_counts": {
+      "6": 17,
+      "8": 6,
+      "5": 1,
+      "9": 2,
+      "0": 7,
+      "3": 2,
+      "4": 2
+    },
+    "desc_evenness": 0.668,
+    "desc_bridge_bin_frac": 0.8649,
+    "per_folio": {
+      "f85r1": {
+        "bin_counts": {
+          "6": 22,
+          "3": 6,
+          "9": 13,
+          "8": 12,
+          "0": 15,
+          "5": 5,
+          "7": 1,
+          "1": 1
+        },
+        "evenness": 0.7715,
+        "bridge_bin_frac": 0.8267
+      },
+      "f85r2": {
+        "bin_counts": {
+          "6": 21,
+          "7": 1,
+          "5": 3,
+          "0": 17,
+          "9": 7,
+          "8": 5,
+          "2": 1,
+          "1": 1
+        },
+        "evenness": 0.6852,
+        "bridge_bin_frac": 0.8929
+      },
+      "f85v2": {
+        "bin_counts": {
+          "6": 19,
+          "9": 3,
+          "8": 8,
+          "0": 12,
+          "3": 4,
+          "4": 3,
+          "5": 1,
+          "1": 3,
+          "2": 1
+        },
+        "evenness": 0.7847,
+        "bridge_bin_frac": 0.7778
+      },
+      "f86v3": {
+        "bin_counts": {
+          "6": 20,
+          "0": 15,
+          "9": 9,
+          "8": 13,
+          "3": 2,
+          "1": 1,
+          "5": 2
+        },
+        "evenness": 0.6967,
+        "bridge_bin_frac": 0.9194
+      },
+      "f86v4": {
+        "bin_counts": {
+          "6": 22,
+          "9": 9,
+          "8": 9,
+          "0": 12,
+          "2": 4,
+          "3": 2,
+          "5": 2,
+          "7": 1
+        },
+        "evenness": 0.7481,
+        "bridge_bin_frac": 0.8525
+      },
+      "f86v5": {
+        "bin_counts": {
+          "6": 22,
+          "0": 22,
+          "3": 3,
+          "9": 9,
+          "8": 14,
+          "1": 2,
+          "4": 1
+        },
+        "evenness": 0.6889,
+        "bridge_bin_frac": 0.9178
+      },
+      "f86v6": {
+        "bin_counts": {
+          "6": 23,
+          "0": 28,
+          "9": 13,
+          "8": 10,
+          "3": 3,
+          "1": 10,
+          "4": 1
+        },
+        "evenness": 0.72,
+        "bridge_bin_frac": 0.8409
+      }
+    },
+    "bridge_bins_enriched": 4,
+    "spec_bins_depleted": 4,
+    "verdict": "BRIDGE_CONCENTRATED"
+  },
+  "V4_data": {
+    "prefix_ratios": {
+      "ros": 0.6494,
+      "b": 0.3809,
+      "a": 0.3229,
+      "azc": 1.5508
+    },
+    "prefix_evenness": {
+      "ros": 0.7907,
+      "b": 0.7377,
+      "a": 0.7445,
+      "azc": 0.7099
+    },
+    "jsd": {
+      "ros_b": 0.0253,
+      "ros_a": 0.0677,
+      "ros_azc": 0.0732
+    },
+    "ros_prefix_counts": {
+      "qo": 253,
+      "ch": 209,
+      "ot": 200,
+      "sh": 174,
+      "da": 121,
+      "ok": 100,
+      "ol": 93,
+      "ta": 61,
+      "yk": 49,
+      "te": 38,
+      "or": 35,
+      "sa": 28,
+      "pch": 27,
+      "tch": 25,
+      "lk": 20,
+      "ar": 18,
+      "ka": 16,
+      "al": 15,
+      "ke": 13,
+      "to": 12,
+      "dch": 10,
+      "po": 10,
+      "so": 9,
+      "do": 8,
+      "kch": 8,
+      "lch": 7,
+      "ct": 5,
+      "sch": 4,
+      "fch": 4,
+      "de": 3,
+      "lsh": 3,
+      "rch": 1
+    },
+    "b_prefix_counts": {
+      "qo": 3819,
+      "ch": 3293,
+      "sh": 2159,
+      "ok": 1422,
+      "ot": 1287,
+      "da": 974,
+      "ol": 791,
+      "lk": 418,
+      "lch": 308,
+      "sa": 303,
+      "yk": 266,
+      "te": 252,
+      "ke": 248,
+      "ka": 223,
+      "pch": 218
+    },
+    "label_prefix_ratio": 8.25,
+    "label_prefix_counts": {
+      "ot": 21,
+      "ok": 12,
+      "da": 8,
+      "ch": 4,
+      "or": 3,
+      "sa": 2,
+      "al": 1,
+      "sh": 1,
+      "ol": 1,
+      "rch": 1
+    },
+    "desc_prefix_ratio": 5.7778,
+    "desc_prefix_counts": {
+      "ok": 34,
+      "ot": 18,
+      "ol": 8,
+      "ch": 6,
+      "or": 5,
+      "da": 4,
+      "qo": 3,
+      "sh": 3,
+      "ke": 2,
+      "ct": 2
+    },
+    "per_folio": {
+      "f85r1": {
+        "prefix_ratio": 0.593,
+        "prefix_counts": {
+          "ch": 43,
+          "qo": 43,
+          "sh": 39,
+          "ot": 33,
+          "da": 29,
+          "ok": 18,
+          "ol": 12,
+          "or": 8
+        }
+      },
+      "f85r2": {
+        "prefix_ratio": 0.5946,
+        "prefix_counts": {
+          "qo": 22,
+          "ot": 20,
+          "ch": 15,
+          "sh": 12,
+          "ol": 11,
+          "da": 6,
+          "so": 4,
+          "ok": 2
+        }
+      },
+      "f85v2": {
+        "prefix_ratio": 6.5385,
+        "prefix_counts": {
+          "ok": 46,
+          "ot": 39,
+          "da": 12,
+          "ch": 10,
+          "ol": 9,
+          "or": 8,
+          "sh": 4,
+          "qo": 3
+        }
+      },
+      "f86v3": {
+        "prefix_ratio": 0.3544,
+        "prefix_counts": {
+          "qo": 45,
+          "ch": 34,
+          "sh": 27,
+          "ot": 23,
+          "da": 16,
+          "tch": 15,
+          "ta": 13,
+          "te": 12
+        }
+      },
+      "f86v4": {
+        "prefix_ratio": 0.6389,
+        "prefix_counts": {
+          "sh": 22,
+          "ch": 21,
+          "ot": 20,
+          "qo": 15,
+          "da": 13,
+          "ol": 7,
+          "pch": 6,
+          "or": 4
+        }
+      },
+      "f86v5": {
+        "prefix_ratio": 0.7101,
+        "prefix_counts": {
+          "ot": 39,
+          "sh": 38,
+          "qo": 37,
+          "ch": 32,
+          "ta": 26,
+          "yk": 21,
+          "ol": 14,
+          "te": 13
+        }
+      },
+      "f86v6": {
+        "prefix_ratio": 0.2958,
+        "prefix_counts": {
+          "qo": 88,
+          "ch": 54,
+          "ol": 33,
+          "da": 33,
+          "sh": 32,
+          "ot": 26,
+          "ta": 17,
+          "ok": 16
+        }
+      }
+    },
+    "gradient_strength": 0.3333,
+    "verdict": "INDEX_PROFILE"
+  },
+  "scores": {
+    "V1": 0.8,
+    "V2": 1.0,
+    "V3": 1.0,
+    "V4": 0.9
+  },
+  "mean_score": 0.925,
+  "label_region_score": 1.0,
+  "desc_region_score": 1.0,
+  "overall": "STRUCTURAL_INDEX"
+}

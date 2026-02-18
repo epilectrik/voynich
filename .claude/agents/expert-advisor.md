@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 948 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 963 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (948 validated)
+- Tier 0-2 binding constraints (963 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 948 constraints, 66 fits,
+full content in their source documents. All 963 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-18 00:14
-**Version:** FROZEN STATE (948 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-18 08:01
+**Version:** FROZEN STATE (963 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -1101,7 +1101,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 960 constraints | 2026-02-18
+CONSTRAINT_REFERENCE v2.6 | 963 constraints | 2026-02-18
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2066,6 +2066,9 @@ C1092	**Rosettes CENTER Convergence Node** (C2: SOURCE:TARGET=0.36, core-only vo
 C1093	**Rosettes Label-Description Bifurcation** (f85v2: 8 label regions 87 tokens A-like + 8 description regions B-like; 49 unique label MIDDLEs, 9 not in B body text, 29 exclusive to Rosettes)
 C1094	**Rosettes Exclusive Vocabulary Is Morphological Tail** (79 exclusive MIDDLEs: mean length 4.91, 98.7% hapax, 78.5% compound; matches C618/C766 UN profile)
 C1095	**Rosettes Metalayer Status** (GLOBAL: foldout functions as structural metalayer above A/B/AZC; near-complete coverage, spatial gradient, multi-target cross-ref, higher entropy, mixed roles)
+C1096	**Rosettes Bridge MIDDLE Enrichment**
+C1097	**Rosettes Bridge-Concentrated Affordance Profile** (bridge bins 0,6,8,9 = 69.2% of MIDDLEs; HUB_UNIVERSAL 2.20x enriched 23/23 present; ENERGY_SPECIALIZED 0.13x near-absent; LABEL 79.4%, DESC 86.5% bridge bins)
+C1098	**Rosettes Structural Index Confirmed** (GLOBAL: 4-test structural validation mean score 0.92; elevated compatibility, bridge enrichment, bridge-concentrated bins, PREFIX evenness > all baselines; index function is vocabulary-mediated per C384.a)
 
 ---
 
@@ -4282,12 +4285,12 @@ Only Tier 0-2 structural findings are binding.
 
 ## Navigation
 
-## XI. Rosettes Foldout as Metalayer Index (Phase 387-388H)
+## XI. Rosettes Foldout as Structural Index (Phases 387-389)
 ### Tier 2: Structural Finding (METALAYER_CONFIRMED)
 
 > **The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) is a structural metalayer above the A/B/AZC hierarchy, containing near-complete vocabulary coverage, a spatial AZC-to-B gradient, and targeted cross-references to pharmaceutical procedure folios.**
 
-This is NOT a Tier 3 interpretation. The metalayer status is a structural fact (Tier 2) supported by 15 quantitative tests across Phases 387-388H. See C1088-C1095 for full evidence.
+This is NOT a Tier 3 interpretation. The metalayer status is a structural fact (Tier 2) supported by 19 quantitative tests across Phases 387-389. See C1088-C1098 for full evidence.
 
 
 
@@ -4316,7 +4319,47 @@ This is NOT a Tier 3 interpretation. The metalayer status is a structural fact (
 - **C757.a:** Rosettes excluded from "AZC Zero Kernel/Link" — presence of 38.8% kernel and 0.97% LINK is what distinguishes metalayer from standard AZC
 - **C440.a:** Rosettes exception to uniform B-to-AZC sourcing — multi-target cross-referencing
 - **C430:** AZC bifurcation (Zodiac vs A/C) may extend to trifurcation including Rosettes metalayer
+### Tier 2: Structural Index Confirmation (Phase 389, C1096-C1098)
 
+Phase 389 confirmed the metalayer operates as a **structural index** through 4 independent tests (mean score 0.92/1.0):
+
+| Test | Verdict | Key Finding |
+|------|---------|-------------|
+| V1: C475 Compatibility | ELEVATED_COMPATIBILITY | Rosettes 74-83% vs B corpus 54% mutual compatibility |
+| V2: Bridge Enrichment | ENRICHED | 3.46x enrichment (p=6.9e-16), all folios 6-9x |
+| V3: Affordance Bins | BRIDGE_CONCENTRATED | Bridge bins 69.2%, HUB_UNIVERSAL 2.20x, ENERGY 0.13x |
+| V4: PREFIX Distribution | INDEX_PROFILE | Evenness 0.791 > B (0.738), A (0.745), AZC (0.710) |
+
+**Bridge enrichment (C1096)** is the headline: 75/308 unique MIDDLEs are bridges (24.4% vs 7.0% B baseline). LABEL regions: 6.38x enrichment. DESCRIPTION regions: 9.27x enrichment. The Rosettes preferentially uses the vocabulary that carries 91% of viability signal (C1014).
+
+**Affordance profile (C1097)** reveals the functional signature: connective bins (HUB, FLOW, STABILITY, PHASE) dominate at 69.2%, while specialized bins are depleted. ENERGY_SPECIALIZED is almost absent (0.13x). This is not a program performing operations — it is a vocabulary reference organized by functional category.
+
+**Compatibility (V1)** is explained by bridge density: bridge MIDDLEs are by definition the most general, widely compatible vocabulary (C1013: compatibility degree 12x non-bridges). High bridge concentration produces high mutual compatibility.
+
+**C384 note:** Any index function operates through vocabulary-mediated correlation (C384.a: "CONDITIONAL RECORD-LEVEL CORRESPONDENCE PERMITTED"), not direct A-to-B addressing.
+
+
+### Tier 4: Rosettes Labels vs Jar Labels (Hierarchical Naming)
+
+Rosettes labels and pharma jar labels (C523-C524) are **different systems** operating at different abstraction levels. Zero exact word overlap, different lengths (jars 7.2 chars vs Rosettes 5.3), different text presence (jars 0% in B vs Rosettes 49%). But both share material-facing prefix patterns: ok- and da- dominant, ch-/sh- (energy operations) largely avoided. One rare MIDDLE (`opar`) appears in both systems.
+
+Interpretation (Tier 4): Rosettes labels are **category-level identifiers** (types of ingredients/processes), while jar labels are **instance-level identifiers** (specific physical containers). The CENTER rosette's vessel-like visual imagery may depict the generic apparatus type that individual jar labels elsewhere name specific instances of. The Rosettes foldout sits one level above the jar labeling system in a naming hierarchy:
+
+```
+ROSETTES LABEL = "this type of process/ingredient" (category)
+  |
+  +-- JAR LABEL = "this specific container" (instance, C523-C524)
+        |
+        +-- CONTENT LABEL = "this specimen inside" (material, C523)
+```
+
+This is consistent with but not proven by the evidence. The shared prefix pattern is suggestive; the zero word overlap confirms they are not interchangeable.
+
+**Visual note (Tier 4, non-binding per C138/C140):** The pharma "jars" have spouts at the top that may represent distillation tubes (alembic necks/beaks), not pouring spouts. A standard alembic has three parts: cucurbit (gourd-shaped base, heated), alembic head (dome where vapors condense), and spout/beak (condensation tube to receiver). The Voynich vessels match this topology — rounded body with projecting tube — drawn in the manuscript's botanical illustration style. Visual parallels exist in apparatus illustrations across centuries (e.g., Lavoisier's apparatus engravings in "Essays on the Effects Produced by Various Processes on Atmospheric Air," 1784, show the same fundamental forms because retort/alembic design was stable from the 15th through 18th centuries). The CENTER rosette's vessel-like imagery with radiating tubes/spikes is drawn in a similar style. This would unify three independent structural findings: (1) C524 already interprets jar labels as apparatus configuration signatures, (2) the pelican alembic matches the manuscript's controller on 8/8 dimensions, and (3) C1092 identifies the CENTER as a convergence node. If "jars" are alembics, the naming hierarchy becomes: Rosettes labels = apparatus categories, "jar" labels = specific apparatus configurations, content labels = materials being processed. The visual consistency across sections (botanical illustration style applied to apparatus) would be expected in an apparatus-centric system (C120).
+
+**Constraints:** C1088-C1098, C440.a, C757.a
+**Scripts:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/scripts/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/scripts/`
+**Results:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/results/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/results/`
 
 
 ---

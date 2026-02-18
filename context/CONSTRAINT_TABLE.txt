@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 960 constraints | 2026-02-18
+CONSTRAINT_REFERENCE v2.6 | 963 constraints | 2026-02-18
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -964,3 +964,6 @@ C1092	**Rosettes CENTER Convergence Node** (C2: SOURCE:TARGET=0.36, core-only vo
 C1093	**Rosettes Label-Description Bifurcation** (f85v2: 8 label regions 87 tokens A-like + 8 description regions B-like; 49 unique label MIDDLEs, 9 not in B body text, 29 exclusive to Rosettes)	2	AZC	-> C1093_rosettes_label_description_bifurcation.md
 C1094	**Rosettes Exclusive Vocabulary Is Morphological Tail** (79 exclusive MIDDLEs: mean length 4.91, 98.7% hapax, 78.5% compound; matches C618/C766 UN profile)	2	AZC	-> C1094_rosettes_exclusive_vocabulary_tail.md
 C1095	**Rosettes Metalayer Status** (GLOBAL: foldout functions as structural metalayer above A/B/AZC; near-complete coverage, spatial gradient, multi-target cross-ref, higher entropy, mixed roles)	2	GLOBAL	-> C1095_rosettes_metalayer_status.md
+C1096	**Rosettes Bridge MIDDLE Enrichment** (24.4% bridge rate vs 7.0% B baseline = 3.46x enrichment, p=6.9e-16; LABEL 6.38x, DESC 9.27x; all 7 folios 6-9x; preferentially uses cross-system connective vocabulary)	2	ROSETTES	-> C1096_rosettes_bridge_enrichment.md
+C1097	**Rosettes Bridge-Concentrated Affordance Profile** (bridge bins 0,6,8,9 = 69.2% of MIDDLEs; HUB_UNIVERSAL 2.20x enriched 23/23 present; ENERGY_SPECIALIZED 0.13x near-absent; LABEL 79.4%, DESC 86.5% bridge bins)	2	ROSETTES	-> C1097_rosettes_bridge_concentrated_bins.md
+C1098	**Rosettes Structural Index Confirmed** (GLOBAL: 4-test structural validation mean score 0.92; elevated compatibility, bridge enrichment, bridge-concentrated bins, PREFIX evenness > all baselines; index function is vocabulary-mediated per C384.a)	2	GLOBAL	-> C1098_rosettes_structural_index.md

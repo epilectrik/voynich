@@ -382,7 +382,7 @@ The profile: continuously-engaged, energy-dominant, checkpoint-free, dynamically
 
 A 670-year-old classification framework, developed for an entirely different purpose (pharmacological theory), independently predicts 3 of 4 structural properties of a system derived purely from computational analysis of the manuscript. The constraint system was built bottom-up with zero reference to medieval classification. The Galenic framework was applied top-down from historical sources. The convergence is non-trivial.
 
-### Rosettes Foldout: A Metalayer Above the Grammar (Phases 387-388H)
+### Rosettes Foldout: A Structural Index (Phases 387-389)
 
 The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) had been invisible to analysis for 386 phases. When finally examined, it turned out to be the most structurally unusual section of the manuscript.
 
@@ -399,7 +399,15 @@ The central page (f85v2) has a **dual structure**: 8 label regions contain 87 A-
 
 All label groups cross-reference the same pharmaceutical folios (f76r, f108r, f111r) — the Rosettes indexes the recipe/pharma sections specifically. At Tier 3, this is consistent with a **master reference chart for pharmaceutical procedures**: labels name ingredients, descriptions demonstrate processes, and the CENTER represents the product or vessel where processes converge. The physical appearance of the CENTER (spherical, with tubes/spikes pointing outward) is consistent with this interpretation but non-binding per C138/C140.
 
-New constraints: C1088-C1095. Constraint qualifications: C440.a (Rosettes exception to uniform sourcing), C757.a (Rosettes excluded from zero kernel/LINK).
+A 4-test structural validation (Phase 389) confirmed this is not just a vocabulary anomaly — the Rosettes is a **structural index**:
+- **Bridge MIDDLEs enriched 3.46x** (p=6.9e-16) — preferentially uses the 85 vocabulary items that cross from A's discrimination manifold into B's execution grammar
+- **Bridge-concentrated affordance profile** — the 4 connective functional bins dominate (69.2%), while specialized bins are depleted (ENERGY_SPECIALIZED at 0.13x)
+- **Elevated mutual compatibility** (74-83% within-region vs 54% B corpus) — a consequence of bridge density
+- **PREFIX evenness exceeds all baselines** (0.791 vs B 0.738, A 0.745, AZC 0.710) — the index samples across operational lanes more evenly than any production text
+
+Overall structural index score: 0.92/1.0. Any index function operates through vocabulary-mediated correlation (C384.a), not direct A-to-B addressing.
+
+New constraints: C1088-C1098. Constraint qualifications: C440.a (Rosettes exception to uniform sourcing), C757.a (Rosettes excluded from zero kernel/LINK).
 
 ---
 

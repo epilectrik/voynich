@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 948 validated constraints | **Version:** 4.10 | **Date:** 2026-02-15
+**Total:** 963 validated constraints | **Version:** 4.10 | **Date:** 2026-02-18
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2783,9 +2783,9 @@ Tests 4 HTSC V9 cross-guarantee predictions + HT oscillation wavelength + paragr
 
 ---
 
-### Rosettes System Classification (C1088-C1095) — Phase: ROSETTES_SYSTEM_CLASSIFICATION
+### Rosettes System Classification (C1088-C1098) — Phases: ROSETTES_SYSTEM_CLASSIFICATION, ROSETTES_STRUCTURAL_VALIDATION
 
-The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a 10-test battery (Phase 387) and 5-test metalayer characterization (Phase 388H). Finding: the Rosettes is a structural metalayer above A/B/AZC, functioning as a near-complete vocabulary index with spatial AZC-to-B gradient and targeted cross-references to pharmaceutical procedures.
+The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a 10-test battery (Phase 387), 5-test metalayer characterization (Phase 388H), and 4-test structural validation (Phase 389). Finding: the Rosettes is a structural metalayer above A/B/AZC, functioning as a **structural index** with 3.46x bridge enrichment, bridge-concentrated affordance profile, elevated mutual compatibility, and cross-system PREFIX evenness.
 
 | # | Statement | Tier | Scope | Location |
 |---|-----------|------|-------|----------|
@@ -2797,8 +2797,11 @@ The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a
 | **1093** | **Rosettes Label-Description Bifurcation** (f85v2: 8 label regions 87 tokens A-like + 8 description regions B-like; 49 unique label MIDDLEs, 9 not in B body text, 29 exclusive to Rosettes) | 2 | AZC | -> [C1093_rosettes_label_description_bifurcation.md](C1093_rosettes_label_description_bifurcation.md) |
 | **1094** | **Rosettes Exclusive Vocabulary Is Morphological Tail** (79 exclusive MIDDLEs: mean length 4.91, 98.7% hapax, 78.5% compound; matches C618/C766 UN profile) | 2 | AZC | -> [C1094_rosettes_exclusive_vocabulary_tail.md](C1094_rosettes_exclusive_vocabulary_tail.md) |
 | **1095** | **Rosettes Metalayer Status** (GLOBAL: foldout functions as structural metalayer above A/B/AZC; near-complete coverage, spatial gradient, multi-target cross-ref, higher entropy, mixed roles) | 2 | GLOBAL | -> [C1095_rosettes_metalayer_status.md](C1095_rosettes_metalayer_status.md) |
+| **1096** | **Rosettes Bridge MIDDLE Enrichment** (24.4% bridge rate vs 7.0% B baseline = 3.46x enrichment, p=6.9e-16; LABEL 6.38x, DESC 9.27x; all 7 folios 6-9x; preferentially uses cross-system connective vocabulary) | 2 | ROSETTES | -> [C1096_rosettes_bridge_enrichment.md](C1096_rosettes_bridge_enrichment.md) |
+| **1097** | **Rosettes Bridge-Concentrated Affordance Profile** (bridge bins 0,6,8,9 = 69.2% of MIDDLEs; HUB_UNIVERSAL 2.20x enriched 23/23 present; ENERGY_SPECIALIZED 0.13x near-absent; LABEL 79.4%, DESC 86.5% bridge bins) | 2 | ROSETTES | -> [C1097_rosettes_bridge_concentrated_bins.md](C1097_rosettes_bridge_concentrated_bins.md) |
+| **1098** | **Rosettes Structural Index Confirmed** (GLOBAL: 4-test structural validation mean score 0.92; elevated compatibility, bridge enrichment, bridge-concentrated bins, PREFIX evenness > all baselines; index function is vocabulary-mediated per C384.a) | 2 | GLOBAL | -> [C1098_rosettes_structural_index.md](C1098_rosettes_structural_index.md) |
 
-**Phase findings:**
+**Phase 387-388H findings:**
 - Rosettes is NOT classifiable as pure A, B, or AZC — it is a metalayer
 - Spatial gradient from AZC-like (f85v2, the 9-rosette central page) to B-like (f86v6)
 - f85v2 has dual A-like labels + B-like descriptions on one page
@@ -2806,6 +2809,13 @@ The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a
 - All cross-references point to pharmaceutical/recipe folios (f76r, f108r, f111r)
 - CENTER rosette is a convergence node (TARGET-dominant, core-only vocabulary)
 - C757 (AZC zero kernel) and C440 (uniform sourcing) qualified with Rosettes exceptions
+
+**Phase 389 findings:**
+- Bridge MIDDLEs enriched 3.46x (p=6.9e-16) — preferentially uses cross-system vocabulary
+- Bridge-concentrated affordance profile — connective bins dominate, specialized bins depleted
+- Elevated mutual compatibility (74-83% vs B corpus 54%) — consequence of bridge density
+- PREFIX evenness exceeds all baselines (0.791 vs B 0.738, A 0.745, AZC 0.710)
+- Overall classification: STRUCTURAL_INDEX (score 0.92/1.0)
 
 **Constraint modifications:**
 - C440.a: Rosettes exception to uniform B-to-AZC sourcing
