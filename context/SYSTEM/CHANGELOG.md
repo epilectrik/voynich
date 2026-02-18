@@ -4,6 +4,43 @@
 
 ---
 
+## Version 4.10.7 (2026-02-18) - Rosettes Cross-Reference Validation (Phase 393)
+
+### Summary
+
+Phase 393 tests whether the Rosettes foldout demonstrates the operational character of its cross-referenced target folios (Stars/Pharma), or operates purely through vocabulary overlap. 6-test battery: 1 PASS, 1 PARTIAL, 4 FAIL. 2 new constraints (C1109-C1110).
+
+Key findings:
+- **Description regions operationally homogeneous** (P1 GATE FAIL): f85v2 NORTH/VERT/CENTER show pairwise distances within permuted range (p=0.459). No process-type differentiation at profile level.
+- **B-like folios do NOT preferentially match Stars** (P2 PARTIAL): 1/2 B-like folios (f86v3) barely exceeds Stars cosine over Herbal (margin 0.03%).
+- **Non-bridge vocabulary matches Herbal, not Stars** (P3 FAIL): All 7 Rosettes folios match H best in non-bridge MIDDLE Jaccard. Stars last or near-last for most.
+- **No gradient predicts Stars similarity** (P4 FAIL): rho=-0.086, p=0.872.
+- **Target folios not more similar than random** (P5 FAIL): lift=0.996x, p=0.698.
+- **CENTER convergence node directionally confirmed** (P6 PASS): tgt_fraction 0.458 > NORTH/VERT, k_pct 54.5% < NORTH/VERT. Strengthens C1092.
+
+Overall verdict: ROSETTES_VOCABULARY_ONLY — index function is bridge-mediated (C1100), not process-demonstrating.
+
+### New Files
+
+| File | Purpose |
+|------|---------|
+| `phases/ROSETTES_CROSS_REFERENCE_VALIDATION/scripts/rosettes_crossref_validation.py` | 6-test battery |
+| `phases/ROSETTES_CROSS_REFERENCE_VALIDATION/results/rosettes_crossref_validation.json` | Full results |
+
+### New Constraints
+
+| # | Statement | Tier |
+|---|-----------|------|
+| C1109 | Rosettes cross-reference is vocabulary-mediated, not process-demonstrating | 2 |
+| C1110 | CENTER convergence node directionally confirmed | 2 |
+
+### Changes
+
+- `context/CLAIMS/INDEX.md`: Added C1109-C1110, Phase 393 summary
+- `CLAUDE.md`: 975 constraints, 393 phases
+
+---
+
 ## Version 4.10 (2026-02-15) - HT Interaction Architecture (6-Test Battery)
 
 ### Summary

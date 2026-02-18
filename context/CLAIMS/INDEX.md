@@ -2783,7 +2783,7 @@ Tests 4 HTSC V9 cross-guarantee predictions + HT oscillation wavelength + paragr
 
 ---
 
-### Rosettes, Bridge Dynamics & Stars Characterization (C1088-C1108) — Phases: ROSETTES_SYSTEM_CLASSIFICATION, ROSETTES_STRUCTURAL_VALIDATION, BRIDGE_BACKBONE_MANUSCRIPT_SURVEY, SECTION_BRIDGE_DYNAMICS, STARS_RECIPE_CHARACTERIZATION
+### Rosettes, Bridge Dynamics & Stars Characterization (C1088-C1110) — Phases: ROSETTES_SYSTEM_CLASSIFICATION, ROSETTES_STRUCTURAL_VALIDATION, BRIDGE_BACKBONE_MANUSCRIPT_SURVEY, SECTION_BRIDGE_DYNAMICS, STARS_RECIPE_CHARACTERIZATION, ROSETTES_CROSS_REFERENCE_VALIDATION
 
 The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a 10-test battery (Phase 387), 5-test metalayer characterization (Phase 388H), 4-test structural validation (Phase 389), and 6-test bridge backbone survey (Phase 390). Finding: the Rosettes is a structural metalayer above A/B/AZC, functioning as a **universal bridge vocabulary index** — the C1090 Section T correlation is fully mediated by bridge density, and the Rosettes indexes the entire grammar's bridge backbone with no section bias.
 
@@ -2810,6 +2810,8 @@ The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a
 | **1106** | **Stars e-Stability Kernel Enrichment** (e=66.2% vs 57.4% NS, k=23.9% vs 32.5%; chi2=145, p=3.3e-32; survives REGIME_1 control chi2=89, p=4.7e-20; 5/8 dimensions diverge in R1) | 2 | B | -> [C1106_stars_e_stability_enrichment.md](C1106_stars_e_stability_enrichment.md) |
 | **1107** | **Stars LINK Monitoring Concentration** (7.4x LINK density: 0.032 vs 0.004, p<0.0001, r=-0.913; opposite of Bio 4.7x LOWER; CC triggers CLOSE_FLOW/FQ_FREQUENT dominant, QO_ENERGY depleted) | 2 | B | -> [C1107_stars_link_monitoring_concentration.md](C1107_stars_link_monitoring_concentration.md) |
 | **1108** | **Stars Vocabulary Clamping Falsified** (S7-S10: 0 PASS, 3 FAIL; no consistent intra-REGIME clamping, no e-mediation, no bridge mediation, vocabulary LESS homogeneous across REGIMEs; Stars Paradox remains open) | 2 | B | -> [C1108_stars_clamping_falsified.md](C1108_stars_clamping_falsified.md) |
+| **1109** | **Rosettes Cross-Reference is Vocabulary-Mediated, Not Process-Demonstrating** (P1-P5: 0 PASS, 1 PARTIAL, 4 FAIL; description regions homogeneous p=0.459; non-bridge vocab matches H not S; no gradient rho=-0.086; target folios not specific lift=0.996x; overall VOCABULARY_ONLY) | 2 | B | -> [C1109_rosettes_vocabulary_only_index.md](C1109_rosettes_vocabulary_only_index.md) |
+| **1110** | **CENTER Convergence Node Directionally Confirmed** (P6 PASS: tgt_fraction 0.458 > NORTH 0.333 > VERT 0.375; k_pct 54.5% < NORTH 69.2% < VERT 71.9%; directional but within noise at full profile level p=0.459) | 2 | AZC | -> [C1110_center_convergence_directional.md](C1110_center_convergence_directional.md) |
 
 **Phase 387-388H findings:**
 - Rosettes is NOT classifiable as pure A, B, or AZC — it is a metalayer
@@ -2853,6 +2855,14 @@ The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a
 - Vocabulary clamping hypothesis FALSIFIED: no consistent intra-REGIME clamping, no e-mediation, no bridge mediation
 - Stars Paradox (most REGIME diversity, lowest AXM variance) remains unexplained
 - Overall: STARS_DISTINCT_UNCLAMPED (3/4 mirror PASS, 0/4 clamping PASS)
+
+**Phase 393 findings (Rosettes Cross-Reference Validation):**
+- Description regions (NORTH, VERT, CENTER) operationally homogeneous at profile level (p=0.459)
+- B-like Rosettes folios do NOT preferentially match Stars character — non-bridge vocabulary matches Herbal best
+- No AZC-to-B gradient predicts Stars similarity (rho=-0.086)
+- Target folios (f111r, f108r, f76r, f108v, f116r) are no more similar to Rosettes than random B-corpus folios
+- CENTER convergence node directionally confirmed (higher tgt_fraction, lower k_pct) but within noise
+- Overall: ROSETTES_VOCABULARY_ONLY — index function is bridge-mediated, not process-demonstrating
 
 **Constraint modifications:**
 - C440.a: Rosettes exception to uniform B-to-AZC sourcing

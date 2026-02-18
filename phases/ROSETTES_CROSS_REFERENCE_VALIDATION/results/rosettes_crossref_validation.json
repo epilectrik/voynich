@@ -1,0 +1,493 @@
+{
+  "phase": 393,
+  "name": "ROSETTES_CROSS_REFERENCE_VALIDATION",
+  "test_count": 6,
+  "rosettes_folios": [
+    "f85r1",
+    "f85r2",
+    "f85v2",
+    "f86v3",
+    "f86v4",
+    "f86v5",
+    "f86v6"
+  ],
+  "target_folios": [
+    "f111r",
+    "f108r",
+    "f76r",
+    "f108v",
+    "f116r"
+  ],
+  "verdicts": {
+    "P1": "FAIL_HOMOGENEOUS",
+    "P2": "PARTIAL_STARS_MATCH",
+    "P3": "FAIL_NOT_STARS",
+    "P4": "FAIL_NO_GRADIENT",
+    "P5": "FAIL_NOT_SPECIFIC",
+    "P6": "PASS_CONVERGENCE_CONFIRMED"
+  },
+  "P1_data": {
+    "pairwise_distances": {
+      "NORTH-VERT": 0.0166,
+      "NORTH-CENTER": 0.0367,
+      "VERT-CENTER": 0.0424
+    },
+    "mean_distance": 0.0319,
+    "permuted_mean": 0.0364,
+    "percentile": 54.1,
+    "p": 0.459
+  },
+  "P2_data": {
+    "folio_results": {
+      "f85r1": {
+        "cos_stars": 0.9552,
+        "cos_herbal": 0.9659,
+        "cos_bio": 0.9306,
+        "best_match": "H",
+        "b_like": false
+      },
+      "f85r2": {
+        "cos_stars": 0.9044,
+        "cos_herbal": 0.9254,
+        "cos_bio": 0.883,
+        "best_match": "H",
+        "b_like": false
+      },
+      "f85v2": {
+        "cos_stars": 0.9011,
+        "cos_herbal": 0.9088,
+        "cos_bio": 0.8714,
+        "best_match": "H",
+        "b_like": false
+      },
+      "f86v3": {
+        "cos_stars": 0.967,
+        "cos_herbal": 0.9667,
+        "cos_bio": 0.9345,
+        "best_match": "S",
+        "b_like": true
+      },
+      "f86v4": {
+        "cos_stars": 0.9182,
+        "cos_herbal": 0.9196,
+        "cos_bio": 0.8699,
+        "best_match": "H",
+        "b_like": false
+      },
+      "f86v5": {
+        "cos_stars": 0.9483,
+        "cos_herbal": 0.9748,
+        "cos_bio": 0.9459,
+        "best_match": "H",
+        "b_like": false
+      },
+      "f86v6": {
+        "cos_stars": 0.8953,
+        "cos_herbal": 0.9405,
+        "cos_bio": 0.9269,
+        "best_match": "H",
+        "b_like": true
+      }
+    },
+    "blike_stars_wins": 1
+  },
+  "P3_data": {
+    "blike_s_top": 0
+  },
+  "P3_folio_results": {
+    "f85r1": {
+      "jaccard_B": 0.0644,
+      "jaccard_H": 0.0756,
+      "jaccard_S": 0.047,
+      "best": "H",
+      "n_nonbridge": 58,
+      "b_like": false
+    },
+    "f85r2": {
+      "jaccard_B": 0.0328,
+      "jaccard_H": 0.0324,
+      "jaccard_S": 0.0154,
+      "best": "B",
+      "n_nonbridge": 24,
+      "b_like": false
+    },
+    "f85v2": {
+      "jaccard_B": 0.0312,
+      "jaccard_H": 0.0514,
+      "jaccard_S": 0.028,
+      "best": "H",
+      "n_nonbridge": 42,
+      "b_like": false
+    },
+    "f86v3": {
+      "jaccard_B": 0.0409,
+      "jaccard_H": 0.0435,
+      "jaccard_S": 0.0322,
+      "best": "H",
+      "n_nonbridge": 34,
+      "b_like": true
+    },
+    "f86v4": {
+      "jaccard_B": 0.032,
+      "jaccard_H": 0.0346,
+      "jaccard_S": 0.0217,
+      "best": "H",
+      "n_nonbridge": 33,
+      "b_like": false
+    },
+    "f86v5": {
+      "jaccard_B": 0.0406,
+      "jaccard_H": 0.0491,
+      "jaccard_S": 0.0281,
+      "best": "H",
+      "n_nonbridge": 37,
+      "b_like": false
+    },
+    "f86v6": {
+      "jaccard_B": 0.049,
+      "jaccard_H": 0.0514,
+      "jaccard_S": 0.044,
+      "best": "H",
+      "n_nonbridge": 63,
+      "b_like": true
+    }
+  },
+  "P4_data": {
+    "rho": -0.0857,
+    "p": 0.8717,
+    "b_likeness": [
+      0.6277,
+      0.627,
+      0.7386,
+      0.6101,
+      0.5848,
+      0.7716
+    ],
+    "stars_sims": [
+      0.9552,
+      0.9044,
+      0.967,
+      0.9182,
+      0.9483,
+      0.8953
+    ]
+  },
+  "P5_data": {
+    "mean_target_cosine": 0.9374,
+    "mean_random_cosine": 0.9412,
+    "lift": 0.996,
+    "p": 0.6984
+  },
+  "P6_data": {
+    "hub_balance": {
+      "NORTH": {
+        "src": 17,
+        "tgt": 15,
+        "buf": 6,
+        "con": 7,
+        "total": 45,
+        "k_pct": 69.2,
+        "hazard_pct": 71.1,
+        "tgt_fraction": 0.3333
+      },
+      "VERT": {
+        "src": 17,
+        "tgt": 18,
+        "buf": 4,
+        "con": 9,
+        "total": 48,
+        "k_pct": 71.9,
+        "hazard_pct": 72.9,
+        "tgt_fraction": 0.375
+      },
+      "CENTER": {
+        "src": 4,
+        "tgt": 11,
+        "buf": 4,
+        "con": 5,
+        "total": 24,
+        "k_pct": 54.5,
+        "hazard_pct": 62.5,
+        "tgt_fraction": 0.4583
+      }
+    },
+    "tgt_condition": true,
+    "k_condition": true
+  },
+  "rosettes_profiles": {
+    "f85r1": {
+      "k_pct": 0.185,
+      "h_pct": 0.19,
+      "e_pct": 0.625,
+      "qo_pct": 0.2913,
+      "chsh_pct": 0.2462,
+      "link_pct": 0.006,
+      "haz_density": 0.0601,
+      "ttr": 0.3093,
+      "e_kernel_fraction": 0.3093,
+      "n_tokens": 333,
+      "n_unique_middles": 103,
+      "hub_roles": {
+        "AXM": 111,
+        "AXm": 21,
+        "FQ": 39,
+        "CC": 12,
+        "FL_HAZ": 18,
+        "FL_SAFE": 1
+      },
+      "cc_triggers": {
+        "CHSH_PRECISION": 6,
+        "QO_ENERGY": 7,
+        "FQ_FREQUENT": 8,
+        "CLOSE_FLOW": 6
+      }
+    },
+    "f85r2": {
+      "k_pct": 0.1839,
+      "h_pct": 0.2069,
+      "e_pct": 0.6092,
+      "qo_pct": 0.2839,
+      "chsh_pct": 0.1742,
+      "link_pct": 0.0,
+      "haz_density": 0.1419,
+      "ttr": 0.4194,
+      "e_kernel_fraction": 0.2774,
+      "n_tokens": 155,
+      "n_unique_middles": 65,
+      "hub_roles": {
+        "FQ": 21,
+        "FL_HAZ": 9,
+        "AXM": 50,
+        "AXm": 7,
+        "CC": 8,
+        "FL_SAFE": 2
+      },
+      "cc_triggers": {
+        "CLOSE_FLOW": 13,
+        "CHSH_PRECISION": 3,
+        "QO_ENERGY": 5,
+        "FQ_FREQUENT": 7
+      }
+    },
+    "f85v2": {
+      "k_pct": 0.1519,
+      "h_pct": 0.2025,
+      "e_pct": 0.6456,
+      "qo_pct": 0.3534,
+      "chsh_pct": 0.0562,
+      "link_pct": 0.0,
+      "haz_density": 0.0683,
+      "ttr": 0.3133,
+      "e_kernel_fraction": 0.1807,
+      "n_tokens": 249,
+      "n_unique_middles": 78,
+      "hub_roles": {
+        "AXM": 46,
+        "FQ": 57,
+        "FL_HAZ": 17,
+        "CC": 13,
+        "FL_SAFE": 1,
+        "AXm": 5
+      },
+      "cc_triggers": {
+        "FQ_FREQUENT": 6,
+        "QO_ENERGY": 10,
+        "CLOSE_FLOW": 22,
+        "CHSH_PRECISION": 2
+      }
+    },
+    "f86v3": {
+      "k_pct": 0.1657,
+      "h_pct": 0.1257,
+      "e_pct": 0.7086,
+      "qo_pct": 0.2671,
+      "chsh_pct": 0.2238,
+      "link_pct": 0.0072,
+      "haz_density": 0.0758,
+      "ttr": 0.2852,
+      "e_kernel_fraction": 0.3574,
+      "n_tokens": 277,
+      "n_unique_middles": 79,
+      "hub_roles": {
+        "AXM": 125,
+        "AXm": 13,
+        "FQ": 36,
+        "FL_HAZ": 9,
+        "FL_SAFE": 4,
+        "CC": 5
+      },
+      "cc_triggers": {
+        "CLOSE_FLOW": 11,
+        "FQ_FREQUENT": 8,
+        "CHSH_PRECISION": 4,
+        "QO_ENERGY": 1
+      }
+    },
+    "f86v4": {
+      "k_pct": 0.0965,
+      "h_pct": 0.114,
+      "e_pct": 0.7895,
+      "qo_pct": 0.2128,
+      "chsh_pct": 0.2287,
+      "link_pct": 0.0,
+      "haz_density": 0.0745,
+      "ttr": 0.4202,
+      "e_kernel_fraction": 0.3777,
+      "n_tokens": 188,
+      "n_unique_middles": 79,
+      "hub_roles": {
+        "AXM": 58,
+        "FQ": 31,
+        "FL_HAZ": 14,
+        "AXm": 1,
+        "CC": 10,
+        "FL_SAFE": 1
+      },
+      "cc_triggers": {
+        "CLOSE_FLOW": 11,
+        "FQ_FREQUENT": 7,
+        "CHSH_PRECISION": 5,
+        "QO_ENERGY": 7
+      }
+    },
+    "f86v5": {
+      "k_pct": 0.3007,
+      "h_pct": 0.0979,
+      "e_pct": 0.6014,
+      "qo_pct": 0.2467,
+      "chsh_pct": 0.1837,
+      "link_pct": 0.0105,
+      "haz_density": 0.0919,
+      "ttr": 0.231,
+      "e_kernel_fraction": 0.1759,
+      "n_tokens": 381,
+      "n_unique_middles": 88,
+      "hub_roles": {
+        "AXM": 160,
+        "FQ": 69,
+        "CC": 12,
+        "AXm": 11,
+        "FL_HAZ": 20,
+        "FL_SAFE": 1
+      },
+      "cc_triggers": {
+        "FQ_FREQUENT": 17,
+        "QO_ENERGY": 7,
+        "CHSH_PRECISION": 5,
+        "CLOSE_FLOW": 24
+      }
+    },
+    "f86v6": {
+      "k_pct": 0.4068,
+      "h_pct": 0.1653,
+      "e_pct": 0.428,
+      "qo_pct": 0.286,
+      "chsh_pct": 0.1837,
+      "link_pct": 0.0251,
+      "haz_density": 0.0939,
+      "ttr": 0.2505,
+      "e_kernel_fraction": 0.1754,
+      "n_tokens": 479,
+      "n_unique_middles": 120,
+      "hub_roles": {
+        "AXm": 11,
+        "AXM": 207,
+        "FQ": 55,
+        "FL_HAZ": 30,
+        "FL_SAFE": 1,
+        "CC": 13
+      },
+      "cc_triggers": {
+        "FQ_FREQUENT": 9,
+        "CLOSE_FLOW": 24,
+        "QO_ENERGY": 8,
+        "CHSH_PRECISION": 5
+      }
+    }
+  },
+  "desc_profiles": {
+    "NORTH": {
+      "k_pct": 0.2778,
+      "h_pct": 0.1111,
+      "e_pct": 0.6111,
+      "qo_pct": 0.35,
+      "chsh_pct": 0.0667,
+      "link_pct": 0.0,
+      "haz_density": 0.0833,
+      "ttr": 0.4833,
+      "e_kernel_fraction": 0.1667,
+      "n_tokens": 60,
+      "n_unique_middles": 29,
+      "hub_roles": {
+        "FQ": 17,
+        "CC": 6,
+        "AXM": 13,
+        "AXm": 1,
+        "FL_HAZ": 3
+      },
+      "cc_triggers": {
+        "CHSH_PRECISION": 2,
+        "CLOSE_FLOW": 7,
+        "FQ_FREQUENT": 2,
+        "QO_ENERGY": 3
+      }
+    },
+    "VERT": {
+      "k_pct": 0.1875,
+      "h_pct": 0.1875,
+      "e_pct": 0.625,
+      "qo_pct": 0.371,
+      "chsh_pct": 0.0645,
+      "link_pct": 0.0,
+      "haz_density": 0.0806,
+      "ttr": 0.4355,
+      "e_kernel_fraction": 0.129,
+      "n_tokens": 62,
+      "n_unique_middles": 27,
+      "hub_roles": {
+        "AXM": 11,
+        "FQ": 17,
+        "FL_HAZ": 7,
+        "CC": 6,
+        "FL_SAFE": 1,
+        "AXm": 1
+      },
+      "cc_triggers": {
+        "FQ_FREQUENT": 2,
+        "QO_ENERGY": 6,
+        "CLOSE_FLOW": 8
+      }
+    },
+    "CENTER": {
+      "k_pct": 0.1429,
+      "h_pct": 0.0,
+      "e_pct": 0.8571,
+      "qo_pct": 0.3333,
+      "chsh_pct": 0.0303,
+      "link_pct": 0.0,
+      "haz_density": 0.1212,
+      "ttr": 0.5455,
+      "e_kernel_fraction": 0.1818,
+      "n_tokens": 33,
+      "n_unique_middles": 18,
+      "hub_roles": {
+        "AXM": 10,
+        "FL_HAZ": 4,
+        "FQ": 8,
+        "CC": 1
+      },
+      "cc_triggers": {
+        "CLOSE_FLOW": 5,
+        "FQ_FREQUENT": 2,
+        "QO_ENERGY": 1
+      }
+    }
+  },
+  "synthesis": {
+    "gate_pass": false,
+    "content_pass": 1,
+    "content_partial": 1,
+    "overall": "ROSETTES_VOCABULARY_ONLY",
+    "summary": "The Rosettes index function operates purely through vocabulary overlap, not operational demonstration."
+  }
+}
