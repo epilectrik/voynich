@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 949 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 952 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -370,9 +370,36 @@ Score: **1/4 grammar-level Galenic predictions confirmed** — and the one that 
 
 **The conclusion sharpened:** The Galenic framework is the author's *training background*, not the system's *design principle*. The author organized their work using Galenic categories (organizational alignment confirmed, 6/6 axes) but the control grammar they built transcended the Galenic framework at every quantitative level. Common operations cluster near hazards (pragmatic engineering, not degree theory). Processing scales linearly (efficient design, not concoction kinetics). The construction-layer asymmetry (C521) exists but doesn't propagate to execution-layer elemental ordering.
 
+### Bio Section Distinctiveness (Phase 385)
+
+Phase 385 tested whether the Bio section (f74-f84, the botanical folios with detailed plant illustrations) encodes a structurally distinct operational mode. Two competing hypotheses were pre-registered: (1) Bio encodes medical treatments alongside distillation (multi-domain), or (2) Bio encodes a specialized gentle heating stage (balneum mariae).
+
+Results strongly favor the balneum mariae interpretation. Bio is k-enriched (34.1% kernel operations vs 24.9% elsewhere, surviving REGIME control), apparatus-hazard depleted (24.4% vs 32.2%), and LINK-depleted (0.63% vs 2.81% — almost no monitoring pauses). Within REGIME_1, Bio diverges on 6 of 8 tested dimensions. The QO-dominant CC trigger pattern (44.8% vs 13.0%) drives the kernel shift through known PREFIX-MIDDLE compatibility pathways.
+
+The profile: continuously-engaged, energy-dominant, checkpoint-free, dynamically stable. This describes a process running under gentle sustained heat where thermal inertia (a water bath) eliminates the need for frequent monitoring — exactly what balneum mariae provides. The multi-domain medical hypothesis was rejected: medical treatment would predict more hazard-handling and endpoint operations, not more kernel activity.
+
 ### What This Means
 
 A 670-year-old classification framework, developed for an entirely different purpose (pharmacological theory), independently predicts 3 of 4 structural properties of a system derived purely from computational analysis of the manuscript. The constraint system was built bottom-up with zero reference to medieval classification. The Galenic framework was applied top-down from historical sources. The convergence is non-trivial.
+
+### Rosettes Foldout: A Metalayer Above the Grammar (Phases 387-388H)
+
+The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) had been invisible to analysis for 386 phases. When finally examined, it turned out to be the most structurally unusual section of the manuscript.
+
+A 10-test classification battery (Phase 387) showed the Rosettes is **not classifiable as pure A, B, or AZC**. It has B-like forbidden transition compliance (0.054% violation) but AZC-like kernel density (38.8%) and LINK density (0.97%). Most remarkably, the foldout shows a spatial gradient: f85v2 (the central 9-rosette page) has prefix ratios of 6.538 (strongly AZC-like), while f86v6 has 0.296 (strongly B-like). The foldout physically encodes the transition from reference layer to execution layer.
+
+A 5-test metalayer characterization (Phase 388H) confirmed the Rosettes functions as a **structural metalayer** — an organizational level above A/B/AZC:
+- **48/49 instruction classes** represented (98%), **23/23 hub MIDDLEs** (100%), **93.1% core vocabulary** covered
+- Higher entropy than B corpus — the Rosettes samples the full grammar more evenly than any individual section
+- All regions correlate most with Section T (Stars/monitoring)
+- Different f85v2 regions cross-reference different manuscript sections
+- 79 exclusive MIDDLEs found nowhere else in the manuscript
+
+The central page (f85v2) has a **dual structure**: 8 label regions contain 87 A-like single-token entries (naming vocabulary), while 8 description regions contain B-like continuous text (demonstrating operational processes). The CENTER rosette (C2) is unique — TARGET-dominant (receives 3x more hazard than it emits), uses only core vocabulary, and has proximity-scaled vocabulary overlap with surrounding groups (55% adjacent to 5% distant). It functions as a convergence node.
+
+All label groups cross-reference the same pharmaceutical folios (f76r, f108r, f111r) — the Rosettes indexes the recipe/pharma sections specifically. At Tier 3, this is consistent with a **master reference chart for pharmaceutical procedures**: labels name ingredients, descriptions demonstrate processes, and the CENTER represents the product or vessel where processes converge. The physical appearance of the CENTER (spherical, with tubes/spikes pointing outward) is consistent with this interpretation but non-binding per C138/C140.
+
+New constraints: C1088-C1095. Constraint qualifications: C440.a (Rosettes exception to uniform sourcing), C757.a (Rosettes excluded from zero kernel/LINK).
 
 ---
 
@@ -410,7 +437,7 @@ This project was built using AI-assisted computational analysis over 383 researc
 
 The central methodological innovation is a **progressive context system**: a growing body of numbered, tiered, validated constraints that accumulates across research phases and is always available to the AI agents performing analysis. Every finding that survives statistical testing becomes a permanent constraint. Every falsified hypothesis is permanently closed. Each new phase starts with full knowledge of everything that came before.
 
-This matters because no single analytical session — human or AI — could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, and the Brunschwig alignment in one pass. But 383 phases, each building on validated prior work and never losing what was already proven, could. The constraint system is the project's memory, and its growth is what made the depth of analysis possible.
+This matters because no single analytical session — human or AI — could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, and the Brunschwig alignment in one pass. But 385 phases, each building on validated prior work and never losing what was already proven, could. The constraint system is the project's memory, and its growth is what made the depth of analysis possible.
 
 For technical details on the progressive context architecture, see the Methodology section in `README.md`.
 

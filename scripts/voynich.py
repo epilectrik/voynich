@@ -3872,6 +3872,333 @@ class FolioNotes:
 
 
 # ============================================================
+# ROSETTES ANALYZER
+# ============================================================
+
+@dataclass
+class RosettesRegionProfile:
+    """Profile of a single placement region within the Rosettes foldout."""
+    folio: str
+    region: str                     # Placement code (e.g., 'P1', 'C2', 'N2')
+    transcriber: str                # Track used ('H', 'U', or 'V')
+    token_count: int
+    line_count: int
+    tokens: List[Token] = field(default_factory=list)
+    # Kernel balance
+    kernel_k: int = 0
+    kernel_h: int = 0
+    kernel_e: int = 0
+    kernel_total: int = 0
+    # Vocabulary
+    unique_middles: int = 0
+    middles: List[str] = field(default_factory=list)
+    # Morphology counts
+    prefixed_count: int = 0
+    suffixed_count: int = 0
+
+    @property
+    def k_pct(self) -> float:
+        return 100 * self.kernel_k / self.kernel_total if self.kernel_total else 0.0
+
+    @property
+    def h_pct(self) -> float:
+        return 100 * self.kernel_h / self.kernel_total if self.kernel_total else 0.0
+
+    @property
+    def e_pct(self) -> float:
+        return 100 * self.kernel_e / self.kernel_total if self.kernel_total else 0.0
+
+
+@dataclass
+class RosettesFolioProfile:
+    """Profile of a single Rosettes folio across all its regions."""
+    folio: str
+    transcriber: str                # Primary track used
+    has_h_track: bool
+    regions: List[RosettesRegionProfile] = field(default_factory=list)
+    total_tokens: int = 0
+    total_lines: int = 0
+    region_codes: List[str] = field(default_factory=list)
+    # Aggregate kernel balance
+    kernel_k: int = 0
+    kernel_h: int = 0
+    kernel_e: int = 0
+    kernel_total: int = 0
+    # Aggregate vocabulary
+    unique_middles: int = 0
+    all_middles: Set[str] = field(default_factory=set)
+
+
+class RosettesAnalyzer:
+    """
+    Analyzer for the Rosettes foldout (f85-f86).
+
+    The Rosettes foldout is a 6-page spread with 9 rosette diagrams.
+    Text is distributed across multiple physical regions with different
+    placement codes. f85v2 (the central page) has NO H-track data,
+    requiring fallback to U/V transcriber tracks.
+
+    Usage:
+        ra = RosettesAnalyzer()
+        summary = ra.summary()
+        profile = ra.profile_folio('f85v2')
+        for region in profile.regions:
+            print(f"{region.region}: {region.token_count} tokens, k={region.k_pct:.1f}%")
+    """
+
+    # All folios that are part of the Rosettes foldout
+    ROSETTES_FOLIOS = ['f85r1', 'f85r2', 'f85v2', 'f86v3', 'f86v4', 'f86v5', 'f86v6']
+
+    # f85v2 region-to-rosette mapping (based on physical layout analysis)
+    # The 9 rosettes are arranged in a 3x3-like pattern on the foldout.
+    # Region codes from transcription: B=bottom, C=center, D=?, M=middle,
+    # N=north/top, U=upper, V=?, W=west
+    # Numbered sub-regions (e.g., B1, B2, B3) are separate text blocks
+    # within the same physical rosette area.
+    F85V2_REGIONS = [
+        'B1', 'B2', 'B3', 'C2', 'D1', 'M1', 'M2', 'M3',
+        'N1', 'N2', 'U1', 'U2', 'U3', 'V1', 'V2', 'W1'
+    ]
+
+    # Track priority: prefer H, fall back to U, then V
+    TRACK_PRIORITY = ['H', 'U', 'V', 'F', 'C']
+
+    def __init__(self):
+        self.tx = Transcript()
+        self.morph = Morphology()
+        self._cache = None
+
+    def _build_cache(self):
+        """Build per-folio, per-region, per-track token cache."""
+        if self._cache is not None:
+            return
+        # Structure: {folio: {region: {track: [tokens]}}}
+        cache = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
+        for tok in self.tx.all(h_only=False):
+            if tok.folio in self.ROSETTES_FOLIOS:
+                if tok.word.strip() and '*' not in tok.word:
+                    cache[tok.folio][tok.placement][tok.transcriber].append(tok)
+        self._cache = cache
+
+    def _best_track(self, folio: str, region: str) -> Optional[str]:
+        """Select best available transcriber track for a folio+region."""
+        self._build_cache()
+        region_data = self._cache.get(folio, {}).get(region, {})
+        for track in self.TRACK_PRIORITY:
+            if track in region_data and region_data[track]:
+                return track
+        return None
+
+    def get_folios(self) -> List[str]:
+        """Return all Rosettes folio identifiers."""
+        return list(self.ROSETTES_FOLIOS)
+
+    def get_regions(self, folio: str) -> List[str]:
+        """Return placement regions for a given Rosettes folio."""
+        self._build_cache()
+        regions = sorted(self._cache.get(folio, {}).keys())
+        return regions
+
+    def get_tokens(self, folio: str, region: str = None,
+                   track: str = None) -> List[Token]:
+        """
+        Get tokens for a folio, optionally filtered by region and track.
+
+        If track is None, uses best available track per region.
+        If region is None, returns tokens from all regions.
+        """
+        self._build_cache()
+        folio_data = self._cache.get(folio, {})
+        tokens = []
+
+        regions = [region] if region else sorted(folio_data.keys())
+        for r in regions:
+            region_data = folio_data.get(r, {})
+            t = track or self._best_track(folio, r)
+            if t and t in region_data:
+                tokens.extend(region_data[t])
+        return tokens
+
+    def has_h_track(self, folio: str) -> bool:
+        """Check if a folio has H-track transcription."""
+        self._build_cache()
+        folio_data = self._cache.get(folio, {})
+        for region_data in folio_data.values():
+            if 'H' in region_data and region_data['H']:
+                return True
+        return False
+
+    def available_tracks(self, folio: str) -> Dict[str, int]:
+        """Return {track: token_count} for a folio across all regions."""
+        self._build_cache()
+        counts = Counter()
+        for region_data in self._cache.get(folio, {}).values():
+            for track, toks in region_data.items():
+                counts[track] += len(toks)
+        return dict(counts)
+
+    def profile_region(self, folio: str, region: str) -> Optional[RosettesRegionProfile]:
+        """Profile a single placement region."""
+        track = self._best_track(folio, region)
+        if not track:
+            return None
+
+        tokens = self.get_tokens(folio, region, track)
+        if not tokens:
+            return None
+
+        # Kernel balance
+        k_count = h_count = e_count = 0
+        middles_list = []
+        prefixed = suffixed = 0
+
+        for tok in tokens:
+            m = self.morph.extract(tok.word)
+            if m.middle:
+                middles_list.append(m.middle)
+                for c in m.middle:
+                    if c == 'k':
+                        k_count += 1
+                    elif c == 'h':
+                        h_count += 1
+                    elif c == 'e':
+                        e_count += 1
+            if m.prefix:
+                prefixed += 1
+            if m.suffix:
+                suffixed += 1
+
+        kernel_total = k_count + h_count + e_count
+        lines = set(tok.line for tok in tokens)
+
+        return RosettesRegionProfile(
+            folio=folio,
+            region=region,
+            transcriber=track,
+            token_count=len(tokens),
+            line_count=len(lines),
+            tokens=tokens,
+            kernel_k=k_count,
+            kernel_h=h_count,
+            kernel_e=e_count,
+            kernel_total=kernel_total,
+            unique_middles=len(set(middles_list)),
+            middles=middles_list,
+            prefixed_count=prefixed,
+            suffixed_count=suffixed,
+        )
+
+    def profile_folio(self, folio: str) -> Optional[RosettesFolioProfile]:
+        """Profile a Rosettes folio across all its regions."""
+        regions = self.get_regions(folio)
+        if not regions:
+            return None
+
+        has_h = self.has_h_track(folio)
+        region_profiles = []
+        all_middles = set()
+        total_tokens = 0
+        total_lines = set()
+        agg_k = agg_h = agg_e = 0
+
+        for r in regions:
+            rp = self.profile_region(folio, r)
+            if rp:
+                region_profiles.append(rp)
+                all_middles.update(rp.middles)
+                total_tokens += rp.token_count
+                total_lines.update(tok.line for tok in rp.tokens)
+                agg_k += rp.kernel_k
+                agg_h += rp.kernel_h
+                agg_e += rp.kernel_e
+
+        primary_track = 'H' if has_h else (self._best_track(folio, regions[0]) or '?')
+
+        return RosettesFolioProfile(
+            folio=folio,
+            transcriber=primary_track,
+            has_h_track=has_h,
+            regions=region_profiles,
+            total_tokens=total_tokens,
+            total_lines=len(total_lines),
+            region_codes=regions,
+            kernel_k=agg_k,
+            kernel_h=agg_h,
+            kernel_e=agg_e,
+            kernel_total=agg_k + agg_h + agg_e,
+            unique_middles=len(all_middles),
+            all_middles=all_middles,
+        )
+
+    def corpus_middles(self) -> Set[str]:
+        """Return all MIDDLEs found outside the Rosettes foldout (for overlap analysis)."""
+        non_rosette = set()
+        for tok in self.tx.currier_b():
+            if tok.folio not in self.ROSETTES_FOLIOS:
+                m = self.morph.extract(tok.word)
+                if m.middle:
+                    non_rosette.add(m.middle)
+        return non_rosette
+
+    def vocabulary_overlap(self) -> Dict:
+        """Compute vocabulary overlap between Rosettes and rest of corpus."""
+        rosette_middles = set()
+        for folio in self.ROSETTES_FOLIOS:
+            for tok in self.get_tokens(folio):
+                m = self.morph.extract(tok.word)
+                if m.middle:
+                    rosette_middles.add(m.middle)
+
+        corpus_middles = self.corpus_middles()
+        shared = rosette_middles & corpus_middles
+        unique = rosette_middles - corpus_middles
+
+        return {
+            'rosette_middles': len(rosette_middles),
+            'corpus_middles': len(corpus_middles),
+            'shared': len(shared),
+            'rosette_unique': len(unique),
+            'unique_list': sorted(unique),
+            'overlap_pct': 100 * len(shared) / len(rosette_middles) if rosette_middles else 0,
+        }
+
+    def summary(self) -> Dict:
+        """Overview of all Rosettes data."""
+        profiles = {}
+        total_tokens = 0
+        total_regions = 0
+
+        for folio in self.ROSETTES_FOLIOS:
+            fp = self.profile_folio(folio)
+            if fp:
+                profiles[folio] = {
+                    'tokens': fp.total_tokens,
+                    'lines': fp.total_lines,
+                    'regions': fp.region_codes,
+                    'n_regions': len(fp.region_codes),
+                    'track': fp.transcriber,
+                    'has_h': fp.has_h_track,
+                    'unique_middles': fp.unique_middles,
+                    'k_pct': 100 * fp.kernel_k / fp.kernel_total if fp.kernel_total else 0,
+                    'h_pct': 100 * fp.kernel_h / fp.kernel_total if fp.kernel_total else 0,
+                    'e_pct': 100 * fp.kernel_e / fp.kernel_total if fp.kernel_total else 0,
+                }
+                total_tokens += fp.total_tokens
+                total_regions += len(fp.region_codes)
+
+        overlap = self.vocabulary_overlap()
+
+        return {
+            'folios': len(profiles),
+            'total_tokens': total_tokens,
+            'total_regions': total_regions,
+            'h_gap_folios': [f for f, p in profiles.items() if not p['has_h']],
+            'vocabulary': overlap,
+            'per_folio': profiles,
+        }
+
+
+# ============================================================
 # QUICK VERIFICATION
 # ============================================================
 if __name__ == '__main__':

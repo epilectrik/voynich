@@ -35,8 +35,12 @@ AZC is structurally distinct from Currier B:
 
 This confirms AZC's role as "context-locking scaffold" rather than "execution layer."
 
+## Scope Qualifier
+
+**C757.a** (Phase 387-388H): The Rosettes foldout (f85-f86) is excluded from C757's scope. Rosettes shows 38.8% kernel density and 0.97% LINK density, directly contradicting the zero-kernel/zero-LINK finding. This is precisely what distinguishes the Rosettes as a metalayer (C1095) rather than standard AZC. C757 remains valid for the Zodiac and A/C AZC families (C430).
+
 ## Provenance
 
 - Phase: AZC_FOLIO_DIFFERENTIATION
 - Script: t1_azc_role_coverage.py
-- Related: C121 (49 classes), C332 (KERNEL structure)
+- Related: C121 (49 classes), C332 (KERNEL structure), C1088 (Rosettes hybrid), C1095 (Rosettes metalayer)

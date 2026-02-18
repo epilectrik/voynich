@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.64
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.70
 
 ---
 
@@ -3487,6 +3487,48 @@ Multi-product workshop likely. Programs represent **substrate x intensity combin
 - Guild-restricted (assumes trained operators)
 - Court-sponsored (scale suggests patronage)
 
+### Proprietary Pharmaceutical Manufacturing (Tier 4, Phase 385-386)
+
+**Hypothesis:** The manuscript is a proprietary manufacturing manual for a guild apothecary operation — the medieval equivalent of a pharmaceutical company's trade-secret process documentation. The script's unbreakability is not incidental; it protects the competitive advantage.
+
+**Historical fit (1404-1438 radiocarbon window):**
+
+The Voynich was written during the peak era of guild pharmaceutical secrecy:
+- **1351:** Rupescissa's *De consideratione quintae essentiae* establishes theoretical framework for medicinal distillation (quinta essentia = repeatedly distilled alcohol as universal medicine)
+- **1353:** Paris Guild of Spice Merchants-Apothecaries receives royal statutes regulating practice
+- **1400-1500:** Apothecary guilds across Europe guard distillation techniques as trade secrets. Proprietary recipes circulate only through master-apprentice chains. Coded language and Latin names used to keep formulations confidential.
+- **1424:** Bruges spice dealer/apothecary sells distilling glasses to John of Bavaria — distillation equipment is commodity trade goods
+- **1500:** Brunschwig publishes *Liber de arte distillandi*, the first printed distillation manual, breaking guild secrecy
+
+**The economic logic:** Plant properties and common remedies were widely known, even by laypeople. The competitive advantage was in the *manufacturing process* — how to distill, extract, compound, and formulate products of consistently superior quality. The control grammar (49 classes, 17 forbidden transitions, 6 macro states) represents an extraordinary engineering investment that is only justified if protecting high-value proprietary processes.
+
+**Structural evidence from Phases 385-386:**
+
+| Section | Profile | Possible Role |
+|---------|---------|---------------|
+| Bio | k-enriched, 100% REGIME_1, LINK-depleted, QO-dominant | Sustained gentle heating (balneum mariae distillation) |
+| Stars | e-dominant, mixed REGIMEs, highest LINK density | Product collection/quality control |
+| Herbal | All 4 REGIMEs, FQ-heavy, operationally diverse | Material preparation/compounding |
+| Cosmo | h-enriched, zero REGIME_1, monitoring-intensive | Observation-heavy process (quality verification or treatment) |
+| Recipe | Precision REGIMEs, balanced triggers | Complex reference procedures |
+
+Phase 386 found that 4/6 dimensional differences between sections are explained by REGIME composition alone. Only h% (monitoring intensity) and LINK density (checkpoint frequency) show independent section effects beyond REGIME. This means sections encode different *REGIME mixtures* (different techniques), with modest independent effects on monitoring and checkpointing strategy.
+
+**What this resolves:**
+- Why an unbreakable script (trade secrets worth protecting)
+- Why C138 holds — illustrations show raw materials (commodity knowledge), text encodes process (proprietary knowledge)
+- Why the grammar is domain-general — one control system handles many products
+- Why such engineering effort — 949 constraints worth of structure is justified for a pharmaceutical empire's operating manual
+- Why Brunschwig aligns — he published (in 1500) what practitioners like the Voynich author had been keeping secret for decades
+
+**What this does NOT claim:**
+- Specific products or materials (C171 semantic ceiling)
+- Identity of the guild or workshop
+- That sections map 1:1 to craft domains (Phase 386: most variation is REGIME-mediated)
+- That the "treatment" interpretation for Cosmo is confirmed (N=5, simpler alternatives exist)
+
+**Falsification:** If the manuscript's dating were revised outside the 1350-1500 pharmaceutical secrecy window, or if the structural architecture proved incompatible with process control (already falsified by 383 phases of evidence), the interpretation would fail.
+
 ---
 
 ## VI. HT Speculative Vocabulary
@@ -5680,3 +5722,68 @@ From this point forward:
 - Statistical tests: Tier 2 (null finding is still a finding)
 - Theoretical coherence: Tier 3 (Brunschwig alignment)
 - Material category consolidation: Tier 4 (interpretive)
+
+---
+
+## XI. Rosettes Foldout as Metalayer Index (Phase 387-388H)
+
+### Tier 2: Structural Finding (METALAYER_CONFIRMED)
+
+> **The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) is a structural metalayer above the A/B/AZC hierarchy, containing near-complete vocabulary coverage, a spatial AZC-to-B gradient, and targeted cross-references to pharmaceutical procedure folios.**
+
+This is NOT a Tier 3 interpretation. The metalayer status is a structural fact (Tier 2) supported by 15 quantitative tests across Phases 387-388H. See C1088-C1095 for full evidence.
+
+### Key Structural Facts
+
+**Classification (C1088):** 10-test battery yields HYBRID. Rosettes is not classifiable as pure A, B, or AZC. Per-folio gradient from f85v2=6.538 (AZC-like) to f86v6=0.296 (B-like).
+
+**Vocabulary (C1089):** 48/49 instruction classes (98%), 23/23 hub MIDDLEs (100%), 93.1% core B vocabulary. This exceeds normal AZC (83% per C438). Higher entropy than B corpus — more even grammatical sampling.
+
+**Organization (C1093):** f85v2 has BOTH A-like single-token labels (87 tokens, 8 regions) and B-like continuous descriptions (8 regions) on one page. The 9 rosette diagrams are organized as:
+
+| Group | Type | Content |
+|-------|------|---------|
+| BOTTOM (B1-B3) | Labels | 38 entries, largest vocabulary index |
+| MIDDLE (M1-M3) | Labels + small desc | 33 entries, hub-critical vocabulary |
+| UPPER (U1-U3) | Labels + small desc | 17 entries, scaffold vocabulary |
+| NORTH (N1-N2) | Descriptions | 60 tokens, balanced hazard K=18 |
+| VERT (V1-V2) | Descriptions | 62 tokens, highest hazard K=23 |
+| CENTER (C2) | Description | 33 tokens, TARGET-dominant convergence |
+| D_W (D1, W1) | Mixed | Small transitional region |
+
+**Cross-references (C1091):** All label groups converge on the same pharmaceutical folios (f76r, f108r, f111r). Section S (Stars/Pharma) dominant, then B (Bio), then H (Herbal). The Rosettes indexes the pharmaceutical recipes specifically, not the herbal majority.
+
+**Convergence (C1092):** CENTER rosette is TARGET-dominant (SOURCE:TARGET=0.36), uses only core vocabulary, and has proximity-scaled vocabulary overlap with surrounding groups (55% adjacent to 5% distant).
+
+### Tier 3: Pharmaceutical Process Reference Interpretation
+
+> **The Rosettes foldout is a master reference chart for the manuscript's pharmaceutical procedures, showing process types (descriptions), ingredient vocabulary (labels), and product convergence (center) in a spatially organized diagram.**
+
+**Caveats:**
+- This interpretation is consistent with but not proven by the structural evidence
+- C138/C140 (illustrations are epiphenomenal) applies — visual features (tubes, spherical center) are suggestive context, not binding evidence
+- The CENTER's TARGET-dominant profile is consistent with a convergence/collection point (distillation product, preparation vessel) but the specific physical referent cannot be determined from text alone
+- Section T correlation could indicate monitoring/quality-control function rather than production reference
+
+**Strongest candidate models:**
+1. **Distillation apparatus diagram** — CENTER as collection vessel, surrounding rosettes as processing stages, tubes as condensation pathways. Consistent with physical appearance and structural data.
+2. **Process taxonomy** — 9 rosettes map to 9 categories of pharmaceutical procedure, with labels naming ingredients and descriptions showing operational character per category.
+3. **Galen's Nine Temperaments** (1+4+4 structure) — CENTER as balanced/neutral, 4 primary surrounding rosettes, 4 secondary. Consistent with medieval pharmaceutical taxonomy.
+
+### Constraint Implications
+
+- **C757.a:** Rosettes excluded from "AZC Zero Kernel/Link" — presence of 38.8% kernel and 0.97% LINK is what distinguishes metalayer from standard AZC
+- **C440.a:** Rosettes exception to uniform B-to-AZC sourcing — multi-target cross-referencing
+- **C430:** AZC bifurcation (Zodiac vs A/C) may extend to trifurcation including Rosettes metalayer
+
+### Open Questions (for follow-up phases)
+
+1. Do labels from different regions respect C475 MIDDLE atomic incompatibility?
+2. Is the Rosettes vocabulary enriched in bridge MIDDLEs (C1013-C1014)?
+3. What is the affordance bin distribution (C995-C997) within Rosettes?
+4. Can the cross-reference map be used to determine which body-text folios describe which process types?
+5. Does the per-region hub profile predict the section-level profiles of the folios each region cross-references?
+
+**Constraints:** C1088-C1095, C440.a, C757.a
+**Scripts:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/scripts/`
+**Results:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/results/`

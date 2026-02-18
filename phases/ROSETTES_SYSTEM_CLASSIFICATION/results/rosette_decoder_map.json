@@ -1,0 +1,744 @@
+{
+  "metadata": {
+    "phase": "388H_DECODER_MAP",
+    "description": "Rosette cross-reference decoder map",
+    "total_labels": 91,
+    "exclusive_labels": 28,
+    "widespread_labels": 33
+  },
+  "rosette_groups": {
+    "BOTTOM": {
+      "labels": [
+        "opdaram",
+        "otedam",
+        "lokedshs",
+        "otodar",
+        "otedaiin",
+        "okedy",
+        "opedam",
+        "opchdar",
+        "ody",
+        "okar",
+        "amal",
+        "otchdy",
+        "chdain",
+        "otady",
+        "otedy",
+        "oparam",
+        "cphedain",
+        "otdar",
+        "shed",
+        "y",
+        "dl",
+        "otch",
+        "d",
+        "dy",
+        "ory",
+        "oteey",
+        "lcpheeky",
+        "opashcfhedy",
+        "oteeoly",
+        "otedy",
+        "otchdam",
+        "otosaiin",
+        "otchdy",
+        "okchdy",
+        "okalar",
+        "ofaraiin",
+        "lashalg",
+        "okar"
+      ],
+      "cross_refs": {
+        "n_labels": 38,
+        "n_middles": 25,
+        "middles": [
+          "a",
+          "al",
+          "am",
+          "ar",
+          "ch",
+          "cphed",
+          "d",
+          "dy",
+          "ed",
+          "edsh",
+          "edy",
+          "eeo",
+          "eey",
+          "lashal",
+          "lcpheek",
+          "o",
+          "od",
+          "ofar",
+          "opar",
+          "opashcfh",
+          "opchd",
+          "opdar",
+          "oped",
+          "os",
+          "y"
+        ],
+        "system_dist": {
+          "A": 2408,
+          "B": 6131,
+          "AZC": 951
+        },
+        "top_sections": [
+          [
+            "S",
+            3092
+          ],
+          [
+            "B",
+            1760
+          ],
+          [
+            "H",
+            1200
+          ],
+          [
+            "T",
+            79
+          ]
+        ],
+        "top_folios": [
+          [
+            "f111r",
+            193
+          ],
+          [
+            "f108r",
+            188
+          ],
+          [
+            "f76r",
+            176
+          ],
+          [
+            "f108v",
+            172
+          ],
+          [
+            "f106v",
+            154
+          ],
+          [
+            "f116r",
+            153
+          ],
+          [
+            "f111v",
+            145
+          ],
+          [
+            "f103r",
+            144
+          ],
+          [
+            "f113r",
+            144
+          ],
+          [
+            "f114r",
+            137
+          ]
+        ]
+      },
+      "description_profile": {}
+    },
+    "MIDDLE": {
+      "labels": [
+        "otedal",
+        "opaiiino",
+        "okchy",
+        "chkeedy",
+        "chpair",
+        "ar",
+        "odady",
+        "okady",
+        "daral",
+        "opar",
+        "opchar",
+        "chdy",
+        "odal",
+        "opy",
+        "oteedy",
+        "ols",
+        "ypal",
+        "opydsh",
+        "rchy",
+        "dal",
+        "dtedy",
+        "opdam",
+        "ddaro",
+        "otedy",
+        "dairdy",
+        "sady",
+        "soshxar",
+        "arar",
+        "otedaiin",
+        "otedy",
+        "otedar",
+        "okchdy",
+        "kary"
+      ],
+      "cross_refs": {
+        "n_labels": 33,
+        "n_middles": 24,
+        "middles": [
+          "a",
+          "ar",
+          "dy",
+          "e",
+          "ed",
+          "edy",
+          "ir",
+          "ke",
+          "l",
+          "od",
+          "oda",
+          "op",
+          "opaiiino",
+          "opch",
+          "opd",
+          "opydsh",
+          "pai",
+          "r",
+          "ro",
+          "ry",
+          "s",
+          "x",
+          "y",
+          "yp"
+        ],
+        "system_dist": {
+          "A": 2571,
+          "B": 7184,
+          "AZC": 856
+        },
+        "top_sections": [
+          [
+            "S",
+            3218
+          ],
+          [
+            "B",
+            2661
+          ],
+          [
+            "H",
+            1202
+          ],
+          [
+            "T",
+            103
+          ]
+        ],
+        "top_folios": [
+          [
+            "f76r",
+            225
+          ],
+          [
+            "f111r",
+            215
+          ],
+          [
+            "f108v",
+            202
+          ],
+          [
+            "f116r",
+            196
+          ],
+          [
+            "f75r",
+            187
+          ],
+          [
+            "f108r",
+            179
+          ],
+          [
+            "f76v",
+            175
+          ],
+          [
+            "f111v",
+            161
+          ],
+          [
+            "f103r",
+            160
+          ],
+          [
+            "f84v",
+            159
+          ]
+        ]
+      },
+      "description_profile": {
+        "n_tokens": 2,
+        "regions": [
+          "M3"
+        ],
+        "hub_balance": {
+          "src": 1,
+          "tgt": 0,
+          "buf": 0,
+          "con": 0
+        },
+        "hazard_pct": 100.0,
+        "kernel_balance": {
+          "K": 1,
+          "E": 0,
+          "H": 0
+        },
+        "k_pct": 100.0,
+        "character": "HAZARD-INTENSIVE + K-HEATING"
+      }
+    },
+    "UPPER": {
+      "labels": [
+        "okchdarar",
+        "daldar",
+        "saiindy",
+        "opardy",
+        "otedar",
+        "orarol",
+        "daraldy",
+        "daldal",
+        "okory",
+        "alar",
+        "odairy",
+        "opar",
+        "okedy",
+        "daiino",
+        "oko",
+        "opokchor",
+        "ody"
+      ],
+      "cross_refs": {
+        "n_labels": 17,
+        "n_middles": 13,
+        "middles": [
+          "ar",
+          "dar",
+          "ed",
+          "edy",
+          "iin",
+          "iino",
+          "ld",
+          "o",
+          "odai",
+          "op",
+          "opar",
+          "opokch",
+          "ral"
+        ],
+        "system_dist": {
+          "A": 1475,
+          "B": 3694,
+          "AZC": 410
+        },
+        "top_sections": [
+          [
+            "S",
+            1779
+          ],
+          [
+            "B",
+            1223
+          ],
+          [
+            "H",
+            637
+          ],
+          [
+            "T",
+            55
+          ]
+        ],
+        "top_folios": [
+          [
+            "f111r",
+            123
+          ],
+          [
+            "f76r",
+            118
+          ],
+          [
+            "f108r",
+            116
+          ],
+          [
+            "f108v",
+            102
+          ],
+          [
+            "f114r",
+            99
+          ],
+          [
+            "f76v",
+            98
+          ],
+          [
+            "f84v",
+            83
+          ],
+          [
+            "f113r",
+            83
+          ],
+          [
+            "f111v",
+            82
+          ],
+          [
+            "f116r",
+            80
+          ]
+        ]
+      },
+      "description_profile": {
+        "n_tokens": 2,
+        "regions": [
+          "U3"
+        ],
+        "hub_balance": {
+          "src": 0,
+          "tgt": 1,
+          "buf": 0,
+          "con": 0
+        },
+        "hazard_pct": 100.0,
+        "kernel_balance": {
+          "K": 1,
+          "E": 0,
+          "H": 0
+        },
+        "k_pct": 100.0,
+        "character": "HAZARD-INTENSIVE + K-HEATING"
+      }
+    },
+    "NORTH": {
+      "labels": [],
+      "cross_refs": {},
+      "description_profile": {
+        "n_tokens": 60,
+        "regions": [
+          "N1",
+          "N2"
+        ],
+        "hub_balance": {
+          "src": 17,
+          "tgt": 15,
+          "buf": 6,
+          "con": 7
+        },
+        "hazard_pct": 71.1,
+        "kernel_balance": {
+          "K": 18,
+          "E": 4,
+          "H": 4
+        },
+        "k_pct": 69.2,
+        "character": "HAZARD-INTENSIVE + K-HEATING"
+      }
+    },
+    "VERT": {
+      "labels": [],
+      "cross_refs": {},
+      "description_profile": {
+        "n_tokens": 62,
+        "regions": [
+          "V1",
+          "V2"
+        ],
+        "hub_balance": {
+          "src": 17,
+          "tgt": 18,
+          "buf": 4,
+          "con": 9
+        },
+        "hazard_pct": 72.9,
+        "kernel_balance": {
+          "K": 23,
+          "E": 6,
+          "H": 3
+        },
+        "k_pct": 71.9,
+        "character": "HAZARD-INTENSIVE + K-HEATING"
+      }
+    },
+    "CENTER": {
+      "labels": [],
+      "cross_refs": {},
+      "description_profile": {
+        "n_tokens": 33,
+        "regions": [
+          "C2"
+        ],
+        "hub_balance": {
+          "src": 4,
+          "tgt": 11,
+          "buf": 4,
+          "con": 5
+        },
+        "hazard_pct": 62.5,
+        "kernel_balance": {
+          "K": 6,
+          "E": 4,
+          "H": 1
+        },
+        "k_pct": 54.5,
+        "character": "HAZARD-INTENSIVE"
+      }
+    },
+    "D_W": {
+      "labels": [
+        "ry",
+        "orary",
+        "ogam"
+      ],
+      "cross_refs": {
+        "n_labels": 3,
+        "n_middles": 3,
+        "middles": [
+          "a",
+          "og",
+          "ry"
+        ],
+        "system_dist": {
+          "B": 93,
+          "A": 66,
+          "AZC": 45
+        },
+        "top_sections": [
+          [
+            "S",
+            39
+          ],
+          [
+            "B",
+            28
+          ],
+          [
+            "H",
+            25
+          ],
+          [
+            "T",
+            1
+          ]
+        ],
+        "top_folios": [
+          [
+            "f58r",
+            15
+          ],
+          [
+            "f58v",
+            13
+          ],
+          [
+            "f69v",
+            5
+          ],
+          [
+            "f72r2",
+            5
+          ],
+          [
+            "f112r",
+            4
+          ],
+          [
+            "f42r",
+            4
+          ],
+          [
+            "f104r",
+            4
+          ],
+          [
+            "f80r",
+            4
+          ],
+          [
+            "f72v3",
+            4
+          ],
+          [
+            "f8v",
+            3
+          ]
+        ]
+      },
+      "description_profile": {
+        "n_tokens": 5,
+        "regions": [
+          "D1"
+        ],
+        "hub_balance": {
+          "src": 1,
+          "tgt": 2,
+          "buf": 1,
+          "con": 0
+        },
+        "hazard_pct": 75.0,
+        "kernel_balance": {
+          "K": 1,
+          "E": 0,
+          "H": 0
+        },
+        "k_pct": 100.0,
+        "character": "HAZARD-INTENSIVE + K-HEATING"
+      }
+    }
+  },
+  "exclusive_vocabulary": [
+    {
+      "group": "BOTTOM",
+      "word": "opdaram",
+      "middle": "opdar"
+    },
+    {
+      "group": "BOTTOM",
+      "word": "lokedshs",
+      "middle": "edsh"
+    },
+    {
+      "group": "BOTTOM",
+      "word": "opedam",
+      "middle": "oped"
+    },
+    {
+      "group": "BOTTOM",
+      "word": "amal",
+      "middle": "am"
+    },
+    {
+      "group": "BOTTOM",
+      "word": "otady",
+      "middle": "a"
+    },
+    {
+      "group": "BOTTOM",
+      "word": "cphedain",
+      "middle": "cphed"
+    },
+    {
+      "group": "BOTTOM",
+      "word": "otdar",
+      "middle": "d"
+    },
+    {
+      "group": "BOTTOM",
+      "word": "lcpheeky",
+      "middle": "lcpheek"
+    },
+    {
+      "group": "BOTTOM",
+      "word": "opashcfhedy",
+      "middle": "opashcfh"
+    },
+    {
+      "group": "BOTTOM",
+      "word": "otchdam",
+      "middle": "d"
+    },
+    {
+      "group": "BOTTOM",
+      "word": "ofaraiin",
+      "middle": "ofar"
+    },
+    {
+      "group": "BOTTOM",
+      "word": "lashalg",
+      "middle": "lashal"
+    },
+    {
+      "group": "MIDDLE",
+      "word": "opaiiino",
+      "middle": "opaiiino"
+    },
+    {
+      "group": "MIDDLE",
+      "word": "chpair",
+      "middle": "pai"
+    },
+    {
+      "group": "MIDDLE",
+      "word": "odady",
+      "middle": "oda"
+    },
+    {
+      "group": "MIDDLE",
+      "word": "opydsh",
+      "middle": "opydsh"
+    },
+    {
+      "group": "MIDDLE",
+      "word": "dtedy",
+      "middle": "dy"
+    },
+    {
+      "group": "MIDDLE",
+      "word": "opdam",
+      "middle": "opd"
+    },
+    {
+      "group": "MIDDLE",
+      "word": "ddaro",
+      "middle": "ro"
+    },
+    {
+      "group": "MIDDLE",
+      "word": "dairdy",
+      "middle": "ir"
+    },
+    {
+      "group": "MIDDLE",
+      "word": "sady",
+      "middle": "dy"
+    },
+    {
+      "group": "MIDDLE",
+      "word": "soshxar",
+      "middle": "x"
+    },
+    {
+      "group": "UPPER",
+      "word": "okchdarar",
+      "middle": "dar"
+    },
+    {
+      "group": "UPPER",
+      "word": "opardy",
+      "middle": "opar"
+    },
+    {
+      "group": "UPPER",
+      "word": "daraldy",
+      "middle": "ral"
+    },
+    {
+      "group": "UPPER",
+      "word": "odairy",
+      "middle": "odai"
+    },
+    {
+      "group": "UPPER",
+      "word": "opokchor",
+      "middle": "opokch"
+    },
+    {
+      "group": "D_W",
+      "word": "ogam",
+      "middle": "og"
+    }
+  ]
+}

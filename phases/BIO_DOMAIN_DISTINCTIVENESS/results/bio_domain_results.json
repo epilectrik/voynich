@@ -1,0 +1,141 @@
+{
+  "phase": 385,
+  "name": "BIO_DOMAIN_DISTINCTIVENESS",
+  "test_count": 4,
+  "verdicts": {
+    "T1_kernel_balance": "SIGNIFICANT_BALNEUM_MARIAE",
+    "T2_hazard_profile": "PASS_REDUCED_APPARATUS",
+    "T3_regime1_homogeneity": "PASS_DIVERGENT",
+    "T4_cc_triggers": "PASS_DIFFERENT_TRIGGERS"
+  },
+  "overall": "BIO_DISTINCT_DOMAIN",
+  "bio_folios": [
+    "f75r",
+    "f75v",
+    "f76r",
+    "f76v",
+    "f77r",
+    "f77v",
+    "f78r",
+    "f78v",
+    "f79r",
+    "f79v",
+    "f80r",
+    "f80v",
+    "f81r",
+    "f81v",
+    "f82r",
+    "f82v",
+    "f83r",
+    "f83v",
+    "f84r",
+    "f84v"
+  ],
+  "bio_token_count": 6850,
+  "non_bio_token_count": 16246,
+  "T1_data": {
+    "k": {
+      "bio": 1659,
+      "non_bio": 2779,
+      "bio_pct": 34.1077302631579,
+      "non_bio_pct": 24.861334764716407,
+      "ratio": 1.3719187077422776
+    },
+    "h": {
+      "bio": 431,
+      "non_bio": 1221,
+      "bio_pct": 8.861019736842104,
+      "non_bio_pct": 10.923242082662373,
+      "ratio": 0.8112078510927194
+    },
+    "e": {
+      "bio": 2774,
+      "non_bio": 7178,
+      "bio_pct": 57.03125,
+      "non_bio_pct": 64.21542315262123,
+      "ratio": 0.8881238680690999
+    }
+  },
+  "T2_data": {
+    "PHASE_ORDERING": {
+      "bio": 550,
+      "non_bio": 770,
+      "bio_pct": 39.313795568263046,
+      "non_bio_pct": 40.80551139374669
+    },
+    "COMPOSITION_JUMP": {
+      "bio": 508,
+      "non_bio": 510,
+      "bio_pct": 36.311651179413865,
+      "non_bio_pct": 27.027027027027028
+    },
+    "CONTAINMENT_TIMING": {
+      "bio": 276,
+      "non_bio": 422,
+      "bio_pct": 19.728377412437457,
+      "non_bio_pct": 22.363540010598832
+    },
+    "RATE_MISMATCH": {
+      "bio": 65,
+      "non_bio": 185,
+      "bio_pct": 4.6461758398856325,
+      "non_bio_pct": 9.803921568627452
+    },
+    "ENERGY_OVERSHOOT": {
+      "bio": 0,
+      "non_bio": 0,
+      "bio_pct": 0.0,
+      "non_bio_pct": 0.0
+    }
+  },
+  "T3_data": {
+    "k_pct": {
+      "bio_r1_mean": 0.3425419927754661,
+      "nb_r1_mean": 0.2881921261122233,
+      "u_stat": 174.0,
+      "p": 0.03729822120026938
+    },
+    "h_pct": {
+      "bio_r1_mean": 0.08906219080351016,
+      "nb_r1_mean": 0.06791204649877862,
+      "u_stat": 191.0,
+      "p": 0.00606569472076016
+    },
+    "e_pct": {
+      "bio_r1_mean": 0.5683958164210239,
+      "nb_r1_mean": 0.643895827388998,
+      "u_stat": 49.0,
+      "p": 0.00606569472076016
+    },
+    "qo_pct": {
+      "bio_r1_mean": 0.34337752583210673,
+      "nb_r1_mean": 0.33888381330061934,
+      "u_stat": 124.0,
+      "p": 0.8916336768752474
+    },
+    "chsh_pct": {
+      "bio_r1_mean": 0.256746431663871,
+      "nb_r1_mean": 0.27275803413467004,
+      "u_stat": 95.0,
+      "p": 0.3402551628689249
+    },
+    "link_pct": {
+      "bio_r1_mean": 0.006338536657171645,
+      "nb_r1_mean": 0.028080304663296796,
+      "u_stat": 43.0,
+      "p": 0.002814020524321119
+    },
+    "haz_density": {
+      "bio_r1_mean": 0.11692773357341439,
+      "nb_r1_mean": 0.094212481397354,
+      "u_stat": 178.0,
+      "p": 0.02520902833146064
+    },
+    "axm_self": {
+      "bio_r1_mean": 0.7537495883780934,
+      "nb_r1_mean": 0.67725811137093,
+      "u_stat": 187.0,
+      "p": 0.009639243104884725
+    }
+  }
+}

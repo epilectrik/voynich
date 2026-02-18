@@ -2763,6 +2763,56 @@ Tests 4 HTSC V9 cross-guarantee predictions + HT oscillation wavelength + paragr
 
 ---
 
+### Bio Domain Distinctiveness (C1085-C1087) — Phase: BIO_DOMAIN_DISTINCTIVENESS
+
+> **Summary:** Bio section (f74-f84, 20 folios) is a structurally distinct operational mode within REGIME_1, not a generic subset. k-enriched kernel balance (34.1% vs 24.9%, surviving REGIME control), apparatus-hazard depletion (OR=0.680), and multidimensional divergence on 6/8 dimensions within REGIME_1. LINK depletion (0.63% vs 2.81%) indicates near-zero monitoring pauses. QO-dominant CC trigger routing (44.8%) drives the kernel shift through PREFIX-MIDDLE compatibility pathways. Multi-domain (medical) hypothesis rejected; balneum mariae (sustained heating stage) preferred at Tier 3.
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1085** | **Bio Section Kernel-Balance Distinctiveness** (k=34.1% vs 24.9%, chi2=146.9, p=1.24e-32; REGIME-controlled: Bio-R1 k=34.1% vs non-Bio-R1 k=27.1%, chi2=86.6, p=1.57e-19; QO→k causal chain via C600/C911) | 2 | B | -> [C1085_bio_kernel_balance_distinctiveness.md](C1085_bio_kernel_balance_distinctiveness.md) |
+| **1086** | **Bio Section Apparatus-Hazard Depletion** (apparatus hazards 24.4% vs 32.2%, OR=0.680, p<0.0001; COMPOSITION_JUMP elevated 36.3% vs 27.0%; shifted from apparatus failures to material-state failures) | 2 | B | -> [C1086_bio_apparatus_hazard_depletion.md](C1086_bio_apparatus_hazard_depletion.md) |
+| **1087** | **Bio-REGIME_1 Multidimensional Divergence** (6/8 dimensions significant within R1; LINK 0.63% vs 2.81% p=0.003; AXM self 0.754 vs 0.677 p=0.010; lane balance NS; explains C1048 LOO R2=0.754) | 2 | B | -> [C1087_bio_regime1_multidimensional_divergence.md](C1087_bio_regime1_multidimensional_divergence.md) |
+
+**Phase findings:**
+- Bio is 100% REGIME_1 (20/20 folios) but structurally distinct from other REGIME_1 folios
+- k-enrichment persists after REGIME control (chi2=86.6, not a REGIME artifact)
+- LINK depletion (~20x below corpus average) indicates near-zero monitoring pauses
+- QO CC triggers 44.8% (vs 13.0%) drive k-enrichment through QO→k PREFIX-MIDDLE pathway
+- Multi-domain (medical treatment) hypothesis REJECTED — balneum mariae (Tier 3) preferred
+- T4 CC trigger decomposition (chi2=272.4, V=0.373) folded into C1085 evidence, not separate constraint
+
+---
+
+### Rosettes System Classification (C1088-C1095) — Phase: ROSETTES_SYSTEM_CLASSIFICATION
+
+The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a 10-test battery (Phase 387) and 5-test metalayer characterization (Phase 388H). Finding: the Rosettes is a structural metalayer above A/B/AZC, functioning as a near-complete vocabulary index with spatial AZC-to-B gradient and targeted cross-references to pharmaceutical procedures.
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1088** | **Rosettes Hybrid Classification** (10-test battery: 64.7% grammar coverage, 0.054% forbidden violation, 0.97% LINK, 38.8% kernel, per-folio gradient f85v2=6.538 AZC-like to f86v6=0.296 B-like; overall HYBRID) | 2 | AZC | -> [C1088_rosettes_hybrid_classification.md](C1088_rosettes_hybrid_classification.md) |
+| **1089** | **Rosettes Near-Complete Vocabulary Coverage** (48/49 classes 98%, 23/23 hub MIDDLEs 100%, 93.1% core B vocabulary; exceeds C438 83% AZC coverage; entropy 1.767 vs B 1.458) | 2 | AZC | -> [C1089_rosettes_near_complete_coverage.md](C1089_rosettes_near_complete_coverage.md) |
+| **1090** | **Rosettes Section T Correlation** (all 7 folios and all 16 f85v2 regions correlate most with Section T; uniform across AZC-to-B gradient) | 2 | AZC | -> [C1090_rosettes_section_t_correlation.md](C1090_rosettes_section_t_correlation.md) |
+| **1091** | **Rosettes Multi-Target Cross-Reference** (label groups converge on pharma folios f76r/f108r/f111r; different regions point to different sections; breaks C440 uniformity) | 2 | AZC | -> [C1091_rosettes_multi_target_crossref.md](C1091_rosettes_multi_target_crossref.md) |
+| **1092** | **Rosettes CENTER Convergence Node** (C2: SOURCE:TARGET=0.36, core-only vocabulary, aiin suffix concentration, proximity-scaled overlap BOTTOM 55% to D_W 5%; spatial convergence) | 2 | AZC | -> [C1092_rosettes_center_convergence.md](C1092_rosettes_center_convergence.md) |
+| **1093** | **Rosettes Label-Description Bifurcation** (f85v2: 8 label regions 87 tokens A-like + 8 description regions B-like; 49 unique label MIDDLEs, 9 not in B body text, 29 exclusive to Rosettes) | 2 | AZC | -> [C1093_rosettes_label_description_bifurcation.md](C1093_rosettes_label_description_bifurcation.md) |
+| **1094** | **Rosettes Exclusive Vocabulary Is Morphological Tail** (79 exclusive MIDDLEs: mean length 4.91, 98.7% hapax, 78.5% compound; matches C618/C766 UN profile) | 2 | AZC | -> [C1094_rosettes_exclusive_vocabulary_tail.md](C1094_rosettes_exclusive_vocabulary_tail.md) |
+| **1095** | **Rosettes Metalayer Status** (GLOBAL: foldout functions as structural metalayer above A/B/AZC; near-complete coverage, spatial gradient, multi-target cross-ref, higher entropy, mixed roles) | 2 | GLOBAL | -> [C1095_rosettes_metalayer_status.md](C1095_rosettes_metalayer_status.md) |
+
+**Phase findings:**
+- Rosettes is NOT classifiable as pure A, B, or AZC — it is a metalayer
+- Spatial gradient from AZC-like (f85v2, the 9-rosette central page) to B-like (f86v6)
+- f85v2 has dual A-like labels + B-like descriptions on one page
+- Near-complete vocabulary coverage (98% classes, 100% hubs, 93% core)
+- All cross-references point to pharmaceutical/recipe folios (f76r, f108r, f111r)
+- CENTER rosette is a convergence node (TARGET-dominant, core-only vocabulary)
+- C757 (AZC zero kernel) and C440 (uniform sourcing) qualified with Rosettes exceptions
+
+**Constraint modifications:**
+- C440.a: Rosettes exception to uniform B-to-AZC sourcing
+- C757.a: Rosettes excluded from zero kernel/LINK scope
+
+---
+
 ## Navigation
 
 ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)

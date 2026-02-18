@@ -1,0 +1,170 @@
+{
+  "phase": 386,
+  "name": "SECTION_DOMAIN_SIGNATURES",
+  "verdicts": {
+    "T1_temporal": "PASS_TEMPORAL_DISTINCT",
+    "T2_link": "PASS_LINK_DISTINCT",
+    "T3_recovery": "PASS_RECOVERY_DISTINCT",
+    "T4_regime_sufficiency": "PARTIAL_RESIDUAL"
+  },
+  "overall": "DISTINCT_BUT_REGIME_MEDIATED",
+  "conclusion": "Sections have distinct operational profiles, but some differences are mediated by REGIME composition. Domain interpretation is possible but not strongly supported over REGIME-only model.",
+  "T1_data": {
+    "section_medians": {
+      "B": {
+        "mean_run": 2.5025522605736508,
+        "cycling_rate": 0.396668219944082
+      },
+      "C": {
+        "mean_run": 1.8538011695906433,
+        "cycling_rate": 0.5362776025236593
+      },
+      "H": {
+        "mean_run": 1.7165242165242165,
+        "cycling_rate": 0.564474532559639
+      },
+      "S": {
+        "mean_run": 2.11875,
+        "cycling_rate": 0.4690265486725664
+      },
+      "T": {
+        "mean_run": 1.7270562770562772,
+        "cycling_rate": 0.5816831683168318
+      }
+    },
+    "kruskal_wallis_mean_run": {
+      "H": 31.474556820220283,
+      "p": 6.753057204259673e-07
+    },
+    "kruskal_wallis_cycling": {
+      "H": 27.504268820450932,
+      "p": 4.614994110708371e-06
+    }
+  },
+  "T2_data": {
+    "section_medians": {
+      "B": 0.005395552844465745,
+      "C": 0.007220216606498195,
+      "H": 0.0,
+      "S": 0.028205128205128206,
+      "T": 0.0060425166808145536
+    },
+    "kruskal_wallis": {
+      "H": 46.39170325717127,
+      "p": 4.681724493667832e-10
+    }
+  },
+  "T3_data": {
+    "B": {
+      "n_events": 868,
+      "post_k": 35.38672142368241,
+      "post_h": 5.270362765229295,
+      "post_e": 59.3429158110883,
+      "post_ke": 0.5963091118800461,
+      "post_states": {
+        "AXM": 1496,
+        "FQ": 269,
+        "AXm": 34,
+        "CC": 121,
+        "FL_SAFE": 10,
+        "FL_HAZ": 88
+      }
+    },
+    "C": {
+      "n_events": 210,
+      "post_k": 31.73913043478261,
+      "post_h": 10.869565217391305,
+      "post_e": 57.391304347826086,
+      "post_ke": 0.553030303030303,
+      "post_states": {
+        "AXM": 240,
+        "AXm": 17,
+        "FQ": 109,
+        "FL_HAZ": 37,
+        "CC": 21,
+        "FL_SAFE": 4
+      }
+    },
+    "H": {
+      "n_events": 555,
+      "post_k": 35.91772151898734,
+      "post_h": 10.443037974683545,
+      "post_e": 53.639240506329116,
+      "post_ke": 0.6696165191740413,
+      "post_states": {
+        "FQ": 283,
+        "AXM": 651,
+        "CC": 53,
+        "FL_HAZ": 87,
+        "AXm": 35,
+        "FL_SAFE": 18
+      }
+    },
+    "S": {
+      "n_events": 950,
+      "post_k": 25.817923186344238,
+      "post_h": 8.036984352773827,
+      "post_e": 66.14509246088194,
+      "post_ke": 0.3903225806451613,
+      "post_states": {
+        "FQ": 401,
+        "FL_HAZ": 160,
+        "AXM": 1152,
+        "AXm": 66,
+        "CC": 57,
+        "FL_SAFE": 21
+      }
+    },
+    "T": {
+      "n_events": 77,
+      "post_k": 25.225225225225227,
+      "post_h": 10.81081081081081,
+      "post_e": 63.96396396396396,
+      "post_ke": 0.39436619718309857,
+      "post_states": {
+        "FQ": 20,
+        "AXM": 86,
+        "FL_HAZ": 15,
+        "FL_SAFE": 4,
+        "CC": 4,
+        "AXm": 9
+      }
+    }
+  },
+  "T4_data": {
+    "dimensions_tested": 6,
+    "surviving_regime": 2,
+    "results": {
+      "k_pct": {
+        "H": 4.673490263140333,
+        "p": 0.19732762985671326,
+        "survives": "False"
+      },
+      "h_pct": {
+        "H": 8.907447665056367,
+        "p": 0.03054706828071026,
+        "survives": "True"
+      },
+      "e_pct": {
+        "H": 6.782814502554864,
+        "p": 0.07915200924853592,
+        "survives": "False"
+      },
+      "link_density": {
+        "H": 25.428660920445363,
+        "p": 1.256052052356592e-05,
+        "survives": "True"
+      },
+      "mean_run": {
+        "H": 2.2814571009159006,
+        "p": 0.5160825388684633,
+        "survives": "False"
+      },
+      "cycling_rate": {
+        "H": 2.5871754227053145,
+        "p": 0.45974229812708844,
+        "survives": "False"
+      }
+    }
+  }
+}

@@ -360,6 +360,7 @@ Folio identity correlates with constraint profile.
 **Tier:** 2 | **Status:** CLOSED
 Every B procedure draws vocabulary from 34-36 AZC folios (essentially ALL). Range is only 2 folios. B procedures do NOT concentrate on specific AZC sources; they span the full constraint space.
 **Source:** F-AZC-011
+**C440.a** (Phase 387-388H): The Rosettes foldout (f85-f86) is an exception — it shows multi-target cross-referencing to specific pharmaceutical folios rather than uniform sourcing (C1091). This is consistent with Rosettes' metalayer status (C1095) rather than standard AZC function.
 
 ### C441 - Vocabulary-Activated Constraints
 **Tier:** 2 | **Status:** CLOSED

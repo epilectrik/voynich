@@ -1,0 +1,722 @@
+{
+  "phase": "388H",
+  "name": "ROSETTES_METALAYER_MAPPING",
+  "test_count": 5,
+  "verdicts": {
+    "T1_section_correlation": "SINGLE_SECTION_T",
+    "T2_gradient": "GRADIENT_CONFIRMED",
+    "T3_exclusive_vocab": "MORPHOLOGICAL_TAIL",
+    "T4_crossref_density": "MULTI_TARGET_CROSSREF",
+    "T5_structural_roles": "MIXED_ROLES_CONFIRMED"
+  },
+  "T1_data": {
+    "per_folio": {
+      "f85r1": {
+        "B": 0.152,
+        "H": 0.159,
+        "S": 0.094,
+        "T": 0.28,
+        "A": 0.075,
+        "AZC": 0.095,
+        "best_section": "T",
+        "best_jaccard": 0.28
+      },
+      "f85r2": {
+        "B": 0.124,
+        "H": 0.124,
+        "S": 0.061,
+        "T": 0.273,
+        "A": 0.057,
+        "AZC": 0.076,
+        "best_section": "T",
+        "best_jaccard": 0.273
+      },
+      "f85v2": {
+        "B": 0.107,
+        "H": 0.126,
+        "S": 0.067,
+        "T": 0.234,
+        "A": 0.054,
+        "AZC": 0.076,
+        "best_section": "T",
+        "best_jaccard": 0.234
+      },
+      "f86v3": {
+        "B": 0.128,
+        "H": 0.136,
+        "S": 0.081,
+        "T": 0.232,
+        "A": 0.063,
+        "AZC": 0.085,
+        "best_section": "T",
+        "best_jaccard": 0.232
+      },
+      "f86v4": {
+        "B": 0.128,
+        "H": 0.133,
+        "S": 0.073,
+        "T": 0.282,
+        "A": 0.062,
+        "AZC": 0.084,
+        "best_section": "T",
+        "best_jaccard": 0.282
+      },
+      "f86v5": {
+        "B": 0.144,
+        "H": 0.157,
+        "S": 0.084,
+        "T": 0.258,
+        "A": 0.074,
+        "AZC": 0.102,
+        "best_section": "T",
+        "best_jaccard": 0.258
+      },
+      "f86v6": {
+        "B": 0.162,
+        "H": 0.164,
+        "S": 0.105,
+        "T": 0.268,
+        "A": 0.088,
+        "AZC": 0.111,
+        "best_section": "T",
+        "best_jaccard": 0.268
+      }
+    },
+    "f85v2_regions": {
+      "B1": {
+        "B": 0.032,
+        "H": 0.034,
+        "S": 0.018,
+        "T": 0.081,
+        "A": 0.013,
+        "AZC": 0.021,
+        "best": "T"
+      },
+      "B2": {
+        "B": 0.013,
+        "H": 0.012,
+        "S": 0.007,
+        "T": 0.044,
+        "A": 0.006,
+        "AZC": 0.008,
+        "best": "T"
+      },
+      "C2": {
+        "B": 0.045,
+        "H": 0.044,
+        "S": 0.021,
+        "T": 0.121,
+        "A": 0.019,
+        "AZC": 0.027,
+        "best": "T"
+      },
+      "D1": {
+        "B": 0.013,
+        "H": 0.012,
+        "S": 0.006,
+        "T": 0.035,
+        "A": 0.005,
+        "AZC": 0.008,
+        "best": "T"
+      },
+      "M1": {
+        "B": 0.013,
+        "H": 0.017,
+        "S": 0.008,
+        "T": 0.043,
+        "A": 0.007,
+        "AZC": 0.009,
+        "best": "T"
+      },
+      "M2": {
+        "B": 0.035,
+        "H": 0.039,
+        "S": 0.02,
+        "T": 0.111,
+        "A": 0.016,
+        "AZC": 0.024,
+        "best": "T"
+      },
+      "N1": {
+        "B": 0.043,
+        "H": 0.044,
+        "S": 0.02,
+        "T": 0.11,
+        "A": 0.016,
+        "AZC": 0.027,
+        "best": "T"
+      },
+      "N2": {
+        "B": 0.045,
+        "H": 0.047,
+        "S": 0.021,
+        "T": 0.108,
+        "A": 0.02,
+        "AZC": 0.027,
+        "best": "T"
+      },
+      "U1": {
+        "B": 0.013,
+        "H": 0.01,
+        "S": 0.006,
+        "T": 0.035,
+        "A": 0.004,
+        "AZC": 0.009,
+        "best": "T"
+      },
+      "U2": {
+        "B": 0.01,
+        "H": 0.012,
+        "S": 0.006,
+        "T": 0.035,
+        "A": 0.006,
+        "AZC": 0.008,
+        "best": "T"
+      },
+      "V1": {
+        "B": 0.035,
+        "H": 0.034,
+        "S": 0.018,
+        "T": 0.094,
+        "A": 0.015,
+        "AZC": 0.021,
+        "best": "T"
+      },
+      "V2": {
+        "B": 0.043,
+        "H": 0.044,
+        "S": 0.021,
+        "T": 0.119,
+        "A": 0.018,
+        "AZC": 0.026,
+        "best": "T"
+      }
+    }
+  },
+  "T2_data": {
+    "per_folio": {
+      "f85r1": {
+        "n_tokens": 333,
+        "link_density": 0.006,
+        "kernel_middle_rate": 0.447,
+        "prefix_ratio": 0.593,
+        "character": "Transitional"
+      },
+      "f85r2": {
+        "n_tokens": 155,
+        "link_density": 0.0,
+        "kernel_middle_rate": 0.445,
+        "prefix_ratio": 0.595,
+        "character": "Transitional"
+      },
+      "f85v2": {
+        "n_tokens": 251,
+        "link_density": 0.0,
+        "kernel_middle_rate": 0.239,
+        "prefix_ratio": 6.538,
+        "character": "AZC-like"
+      },
+      "f86v3": {
+        "n_tokens": 277,
+        "link_density": 0.0072,
+        "kernel_middle_rate": 0.484,
+        "prefix_ratio": 0.354,
+        "character": "B-leaning"
+      },
+      "f86v4": {
+        "n_tokens": 188,
+        "link_density": 0.0,
+        "kernel_middle_rate": 0.463,
+        "prefix_ratio": 0.639,
+        "character": "Transitional"
+      },
+      "f86v5": {
+        "n_tokens": 381,
+        "link_density": 0.0105,
+        "kernel_middle_rate": 0.294,
+        "prefix_ratio": 0.71,
+        "character": "Transitional"
+      },
+      "f86v6": {
+        "n_tokens": 479,
+        "link_density": 0.0251,
+        "kernel_middle_rate": 0.395,
+        "prefix_ratio": 0.296,
+        "character": "B-like"
+      }
+    },
+    "f85v2_regions": {
+      "B1": {
+        "prefix_ratio": 13.0,
+        "character": "AZC-like"
+      },
+      "B2": {
+        "prefix_ratio": Infinity,
+        "character": "AZC-like"
+      },
+      "C2": {
+        "prefix_ratio": 11.0,
+        "character": "AZC-like"
+      },
+      "D1": {
+        "prefix_ratio": Infinity,
+        "character": "AZC-like"
+      },
+      "M1": {
+        "prefix_ratio": 1.5,
+        "character": "Mixed"
+      },
+      "M2": {
+        "prefix_ratio": 5.0,
+        "character": "AZC-like"
+      },
+      "N1": {
+        "prefix_ratio": 2.333,
+        "character": "AZC-like"
+      },
+      "N2": {
+        "prefix_ratio": 5.5,
+        "character": "AZC-like"
+      },
+      "U1": {
+        "prefix_ratio": Infinity,
+        "character": "AZC-like"
+      },
+      "U2": {
+        "prefix_ratio": Infinity,
+        "character": "AZC-like"
+      },
+      "V1": {
+        "prefix_ratio": 12.0,
+        "character": "AZC-like"
+      },
+      "V2": {
+        "prefix_ratio": 5.0,
+        "character": "AZC-like"
+      }
+    }
+  },
+  "T3_data": {
+    "count": 79,
+    "mean_length": 4.91,
+    "shared_mean_length": 2.86,
+    "kernel_rate_exclusive": 0.734,
+    "kernel_rate_shared": 0.589,
+    "compound_rate": 0.785,
+    "hapax_rate": 0.987
+  },
+  "T4_data": {
+    "per_folio": {
+      "f85r1": {
+        "rare_links": 15,
+        "target_folios": {
+          "f112v": {
+            "count": 2,
+            "section": "S"
+          },
+          "f114r": {
+            "count": 2,
+            "section": "S"
+          },
+          "f66r": {
+            "count": 2,
+            "section": "T"
+          },
+          "f108r": {
+            "count": 2,
+            "section": "S"
+          },
+          "f115v": {
+            "count": 2,
+            "section": "S"
+          }
+        }
+      },
+      "f85r2": {
+        "rare_links": 4,
+        "target_folios": {
+          "f79v": {
+            "count": 1,
+            "section": "B"
+          },
+          "f75v": {
+            "count": 1,
+            "section": "B"
+          },
+          "f57r": {
+            "count": 1,
+            "section": "H"
+          },
+          "f115r": {
+            "count": 1,
+            "section": "S"
+          },
+          "f115v": {
+            "count": 1,
+            "section": "S"
+          }
+        }
+      },
+      "f85v2": {
+        "rare_links": 14,
+        "target_folios": {
+          "f108r": {
+            "count": 3,
+            "section": "S"
+          },
+          "f107r": {
+            "count": 2,
+            "section": "S"
+          },
+          "f66r": {
+            "count": 2,
+            "section": "T"
+          },
+          "f114r": {
+            "count": 2,
+            "section": "S"
+          },
+          "f113v": {
+            "count": 2,
+            "section": "S"
+          }
+        }
+      },
+      "f86v3": {
+        "rare_links": 12,
+        "target_folios": {
+          "f113r": {
+            "count": 3,
+            "section": "S"
+          },
+          "f105r": {
+            "count": 2,
+            "section": "S"
+          },
+          "f104v": {
+            "count": 2,
+            "section": "S"
+          },
+          "f114r": {
+            "count": 2,
+            "section": "S"
+          },
+          "f105v": {
+            "count": 2,
+            "section": "S"
+          }
+        }
+      },
+      "f86v4": {
+        "rare_links": 11,
+        "target_folios": {
+          "f66r": {
+            "count": 3,
+            "section": "T"
+          },
+          "f114r": {
+            "count": 2,
+            "section": "S"
+          },
+          "f105r": {
+            "count": 2,
+            "section": "S"
+          },
+          "f103v": {
+            "count": 2,
+            "section": "S"
+          },
+          "f108v": {
+            "count": 2,
+            "section": "S"
+          }
+        }
+      },
+      "f86v5": {
+        "rare_links": 11,
+        "target_folios": {
+          "f57r": {
+            "count": 2,
+            "section": "H"
+          },
+          "f46v": {
+            "count": 2,
+            "section": "H"
+          },
+          "f108r": {
+            "count": 2,
+            "section": "S"
+          },
+          "f107r": {
+            "count": 2,
+            "section": "S"
+          },
+          "f66r": {
+            "count": 1,
+            "section": "T"
+          }
+        }
+      },
+      "f86v6": {
+        "rare_links": 21,
+        "target_folios": {
+          "f114r": {
+            "count": 4,
+            "section": "S"
+          },
+          "f66r": {
+            "count": 4,
+            "section": "T"
+          },
+          "f105v": {
+            "count": 4,
+            "section": "S"
+          },
+          "f78v": {
+            "count": 2,
+            "section": "B"
+          },
+          "f111r": {
+            "count": 2,
+            "section": "S"
+          }
+        }
+      }
+    },
+    "f85v2_regions": {
+      "B1": {
+        "links": 4,
+        "section_targets": {
+          "S": 7,
+          "H": 2,
+          "B": 1
+        }
+      },
+      "B2": {
+        "links": 1,
+        "section_targets": {
+          "T": 1,
+          "S": 1
+        }
+      },
+      "C2": {
+        "links": 0
+      },
+      "D1": {
+        "links": 0
+      },
+      "M1": {
+        "links": 2,
+        "section_targets": {
+          "S": 4,
+          "H": 2,
+          "T": 1
+        }
+      },
+      "M2": {
+        "links": 2,
+        "section_targets": {
+          "S": 2,
+          "H": 2
+        }
+      },
+      "N1": {
+        "links": 1,
+        "section_targets": {
+          "H": 1
+        }
+      },
+      "N2": {
+        "links": 1,
+        "section_targets": {
+          "H": 1
+        }
+      },
+      "U1": {
+        "links": 1,
+        "section_targets": {
+          "B": 1,
+          "S": 1
+        }
+      },
+      "U2": {
+        "links": 0
+      },
+      "V1": {
+        "links": 1,
+        "section_targets": {
+          "S": 1
+        }
+      },
+      "V2": {
+        "links": 0
+      }
+    },
+    "section_totals": {
+      "S": 119,
+      "H": 37,
+      "B": 25,
+      "T": 12
+    }
+  },
+  "T5_data": {
+    "per_folio": {
+      "f85r1": {
+        "role": "DESCRIPTION",
+        "index_score": 1,
+        "link_density": 0.006,
+        "prefix_ratio": 0.593,
+        "reuse_rate": 0.098,
+        "vocab_ratio": 0.309
+      },
+      "f85r2": {
+        "role": "BRIDGE",
+        "index_score": 3,
+        "link_density": 0.0,
+        "prefix_ratio": 0.595,
+        "reuse_rate": 0.007,
+        "vocab_ratio": 0.419
+      },
+      "f85v2": {
+        "role": "INDEX",
+        "index_score": 4,
+        "link_density": 0.0,
+        "prefix_ratio": 6.538,
+        "reuse_rate": 0.115,
+        "vocab_ratio": 0.311
+      },
+      "f86v3": {
+        "role": "DESCRIPTION",
+        "index_score": 1,
+        "link_density": 0.0072,
+        "prefix_ratio": 0.354,
+        "reuse_rate": 0.107,
+        "vocab_ratio": 0.285
+      },
+      "f86v4": {
+        "role": "BRIDGE",
+        "index_score": 3,
+        "link_density": 0.0,
+        "prefix_ratio": 0.639,
+        "reuse_rate": 0.051,
+        "vocab_ratio": 0.42
+      },
+      "f86v5": {
+        "role": "BRIDGE",
+        "index_score": 2,
+        "link_density": 0.0105,
+        "prefix_ratio": 0.71,
+        "reuse_rate": 0.154,
+        "vocab_ratio": 0.231
+      },
+      "f86v6": {
+        "role": "DESCRIPTION",
+        "index_score": 0,
+        "link_density": 0.0251,
+        "prefix_ratio": 0.296,
+        "reuse_rate": 0.139,
+        "vocab_ratio": 0.251
+      }
+    },
+    "f85v2_regions": {
+      "B1": {
+        "role": "INDEX",
+        "index_score": 6,
+        "link_density": 0.0,
+        "prefix_ratio": 13.0,
+        "reuse_rate": 0.0,
+        "vocab_ratio": 0.724
+      },
+      "B2": {
+        "role": "INDEX",
+        "index_score": 6,
+        "link_density": 0.0,
+        "prefix_ratio": Infinity,
+        "reuse_rate": 0.0,
+        "vocab_ratio": 0.857
+      },
+      "C2": {
+        "role": "INDEX",
+        "index_score": 4,
+        "link_density": 0.0,
+        "prefix_ratio": 11.0,
+        "reuse_rate": 0.032,
+        "vocab_ratio": 0.545
+      },
+      "D1": {
+        "role": "INDEX",
+        "index_score": 6,
+        "link_density": 0.0,
+        "prefix_ratio": Infinity,
+        "reuse_rate": 0.0,
+        "vocab_ratio": 1.0
+      },
+      "M1": {
+        "role": "INDEX",
+        "index_score": 6,
+        "link_density": 0.0,
+        "prefix_ratio": 1.5,
+        "reuse_rate": 0.0,
+        "vocab_ratio": 1.0
+      },
+      "M2": {
+        "role": "INDEX",
+        "index_score": 6,
+        "link_density": 0.0,
+        "prefix_ratio": 5.0,
+        "reuse_rate": 0.0,
+        "vocab_ratio": 0.783
+      },
+      "N1": {
+        "role": "INDEX",
+        "index_score": 6,
+        "link_density": 0.0,
+        "prefix_ratio": 2.333,
+        "reuse_rate": 0.0,
+        "vocab_ratio": 0.826
+      },
+      "N2": {
+        "role": "INDEX",
+        "index_score": 5,
+        "link_density": 0.0,
+        "prefix_ratio": 5.5,
+        "reuse_rate": 0.029,
+        "vocab_ratio": 0.568
+      },
+      "U1": {
+        "role": "INDEX",
+        "index_score": 6,
+        "link_density": 0.0,
+        "prefix_ratio": Infinity,
+        "reuse_rate": 0.0,
+        "vocab_ratio": 0.875
+      },
+      "U2": {
+        "role": "INDEX",
+        "index_score": 6,
+        "link_density": 0.0,
+        "prefix_ratio": Infinity,
+        "reuse_rate": 0.0,
+        "vocab_ratio": 0.857
+      },
+      "V1": {
+        "role": "INDEX",
+        "index_score": 5,
+        "link_density": 0.0,
+        "prefix_ratio": 12.0,
+        "reuse_rate": 0.0,
+        "vocab_ratio": 0.533
+      },
+      "V2": {
+        "role": "INDEX",
+        "index_score": 5,
+        "link_density": 0.0,
+        "prefix_ratio": 5.0,
+        "reuse_rate": 0.033,
+        "vocab_ratio": 0.625
+      }
+    }
+  },
+  "overall": "METALAYER_CONFIRMED",
+  "summary": "The Rosettes foldout is a META-LAYER structure with an AZC-to-B gradient. Some pages/regions function as INDEX (positional encoding), others as DESCRIPTION (B-like text). It draws vocabulary from all three systems (A, B, AZC) and maintains exclusive organizational vocabulary."
+}

@@ -1,0 +1,283 @@
+{
+  "phase": 387,
+  "name": "ROSETTES_SYSTEM_CLASSIFICATION",
+  "test_count": 10,
+  "verdicts": {
+    "T0_uv_validation": "FAIL_UNRELIABLE",
+    "R1_1_grammar_coverage": "INTERMEDIATE",
+    "R1_2_forbidden_transitions": "B_LIKE_COMPLIANT",
+    "R1_3_link_density": "AZC_LIKE",
+    "R1_4_kernel_density": "AZC_LIKE",
+    "R1_5_position_vocabulary": "LOW_OVERLAP",
+    "R1_6_bigram_reuse": "LOW_REUSE",
+    "R1_7_sequential_coherence": "INTERMEDIATE",
+    "R1_8_line_atomicity": "B_LIKE_SEQUENCED",
+    "R1_9_prefix_ratio": "INTERMEDIATE",
+    "R1_10_ri_vocabulary": "RI_INCONCLUSIVE"
+  },
+  "T0_data": {
+    "per_folio": {
+      "f85r2": {
+        "shared_positions": 24,
+        "tokens_compared": 133,
+        "exact_match": 60,
+        "identity_rate": 0.451,
+        "morph_match": 60,
+        "morph_rate": 0.451,
+        "vocab_jaccard": 0.45
+      },
+      "f86v3": {
+        "shared_positions": 36,
+        "tokens_compared": 275,
+        "exact_match": 215,
+        "identity_rate": 0.782,
+        "morph_match": 215,
+        "morph_rate": 0.782,
+        "vocab_jaccard": 0.722
+      },
+      "f86v4": {
+        "shared_positions": 9,
+        "tokens_compared": 184,
+        "exact_match": 59,
+        "identity_rate": 0.321,
+        "morph_match": 59,
+        "morph_rate": 0.321,
+        "vocab_jaccard": 0.489
+      },
+      "f86v5": {
+        "shared_positions": 4,
+        "tokens_compared": 41,
+        "exact_match": 26,
+        "identity_rate": 0.634,
+        "morph_match": 26,
+        "morph_rate": 0.634,
+        "vocab_jaccard": 0.128
+      },
+      "f86v6": {
+        "shared_positions": 1,
+        "tokens_compared": 11,
+        "exact_match": 2,
+        "identity_rate": 0.182,
+        "morph_match": 2,
+        "morph_rate": 0.182,
+        "vocab_jaccard": 0.028
+      }
+    },
+    "aggregate_identity": 0.562,
+    "aggregate_morph": 0.562
+  },
+  "R1_1_data": {
+    "b_coverage": 0.698,
+    "azc_coverage": 0.499,
+    "a_coverage": 0.633,
+    "ros_coverage": 0.647,
+    "ros_h_coverage": 0.66,
+    "f85v2_coverage": 0.558,
+    "per_folio": {
+      "f85r1": {
+        "mapped": 202,
+        "total": 333,
+        "coverage": 0.607
+      },
+      "f85r2": {
+        "mapped": 97,
+        "total": 155,
+        "coverage": 0.626
+      },
+      "f85v2": {
+        "mapped": 140,
+        "total": 251,
+        "coverage": 0.558
+      },
+      "f86v3": {
+        "mapped": 192,
+        "total": 277,
+        "coverage": 0.693
+      },
+      "f86v4": {
+        "mapped": 115,
+        "total": 188,
+        "coverage": 0.612
+      },
+      "f86v5": {
+        "mapped": 273,
+        "total": 381,
+        "coverage": 0.717
+      },
+      "f86v6": {
+        "mapped": 317,
+        "total": 479,
+        "coverage": 0.662
+      }
+    }
+  },
+  "R1_2_data": {
+    "b_violation_rate": 0.0005,
+    "random_violation_rate": 0.001,
+    "ros_violation_rate": 0.0005,
+    "ros_h_violation_rate": 0.0006,
+    "f85v2_violation_rate": 0.0,
+    "azc_violation_rate": 0.0,
+    "ros_violations": 1,
+    "ros_bigrams": 1867
+  },
+  "R1_3_data": {
+    "b_density": 0.0196,
+    "azc_density": 0.0006,
+    "a_density": 0.0004,
+    "ros_density": 0.0097,
+    "per_folio": {
+      "f85r1": {
+        "links": 2,
+        "total": 333,
+        "density": 0.006
+      },
+      "f85r2": {
+        "links": 0,
+        "total": 155,
+        "density": 0.0
+      },
+      "f85v2": {
+        "links": 0,
+        "total": 251,
+        "density": 0.0
+      },
+      "f86v3": {
+        "links": 2,
+        "total": 277,
+        "density": 0.0072
+      },
+      "f86v4": {
+        "links": 0,
+        "total": 188,
+        "density": 0.0
+      },
+      "f86v5": {
+        "links": 4,
+        "total": 381,
+        "density": 0.0105
+      },
+      "f86v6": {
+        "links": 12,
+        "total": 479,
+        "density": 0.0251
+      }
+    }
+  },
+  "R1_4_data": {
+    "b_rate": 0.538,
+    "azc_rate": 0.441,
+    "a_rate": 0.365,
+    "ros_rate": 0.388
+  },
+  "R1_5_data": {
+    "f85v2": {
+      "regions": [
+        "B1",
+        "B2",
+        "B3",
+        "C2",
+        "D1",
+        "M1",
+        "M2",
+        "M3",
+        "N1",
+        "N2",
+        "U1",
+        "U2",
+        "U3",
+        "V1",
+        "V2",
+        "W1"
+      ],
+      "n_regions": 16,
+      "n_pairs": 120,
+      "mean_jaccard": 0.1074,
+      "min_jaccard": 0.0,
+      "max_jaccard": 0.4444
+    },
+    "f86v3": {
+      "regions": [
+        "P1",
+        "P2",
+        "P3",
+        "P4",
+        "Q"
+      ],
+      "n_regions": 5,
+      "n_pairs": 10,
+      "mean_jaccard": 0.2988,
+      "min_jaccard": 0.2321,
+      "max_jaccard": 0.4
+    },
+    "f86v4": {
+      "regions": [
+        "C",
+        "P",
+        "T"
+      ],
+      "n_regions": 3,
+      "n_pairs": 3,
+      "mean_jaccard": 0.127,
+      "min_jaccard": 0.058,
+      "max_jaccard": 0.215
+    },
+    "azc_interfolio_jaccard": 0.192,
+    "b_interline_jaccard": 0.116
+  },
+  "R1_6_data": {
+    "b_reuse_rate": 0.09,
+    "azc_reuse_rate": 0.024,
+    "a_reuse_rate": 0.055,
+    "ros_reuse_rate": 0.02
+  },
+  "R1_7_data": {
+    "b_self_transition": 0.0435,
+    "azc_self_transition": 0.028,
+    "a_self_transition": 0.05,
+    "ros_self_transition": 0.0375
+  },
+  "R1_8_data": {
+    "b_interline_jaccard": 0.123,
+    "a_interline_jaccard": 0.096,
+    "ros_interline_jaccard": 0.115
+  },
+  "R1_9_data": {
+    "b_ratio": 0.381,
+    "azc_ratio": 1.551,
+    "a_ratio": 0.323,
+    "ros_ratio": 0.649
+  },
+  "R1_10_data": {
+    "a_not_b_middles": [
+      "aiino",
+      "dair",
+      "dyto",
+      "efo",
+      "etc",
+      "iino",
+      "ik",
+      "kalo",
+      "kor",
+      "odshe",
+      "oeee",
+      "oep",
+      "okee",
+      "pa",
+      "pyd",
+      "see",
+      "ytd",
+      "yts"
+    ],
+    "count": 18,
+    "mean_length": 3.44,
+    "suffix_less_rate": 0.105,
+    "ct_prefix_rate": 0.0
+  },
+  "overall": "HYBRID",
+  "signal_summary": {
+    "b_signals": 2,
+    "azc_signals": 2,
+    "intermediate_signals": 3
+  }
+}

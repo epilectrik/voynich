@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 948 constraints | 2026-02-15
+CONSTRAINT_REFERENCE v2.6 | 960 constraints | 2026-02-18
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -952,3 +952,15 @@ C1080	**Tail Pressure Predicts HT Compound Rate** (rho=0.367, p=0.0007; POSITIVE
 C1081	**LINK Adjacency Does Not Modulate HT Prefix Phase** (chi2=0.89, p=0.35, V=0.022; LINK-adjacent and non-adjacent HT have same EARLY/LATE ratio; confirms C804 weak transition bias)	2	B	-> C1081_link_ht_prefix_phase_independent.md
 C1082	**HT Oscillation Is Section-Driven** (raw ACF significant at lags 1,2,4,6,20; section-residualized: only lag 7 survives; no lag 8-12 signal; resolves open question)	2	B	-> C1082_ht_oscillation_section_driven.md
 C1083	**HT Density Is Paragraph-Ordinal Neutral** (rho=0.018, p=0.69; first vs last MW p=0.086 NS; confirms C855 parallel programs; negative control PASS)	2	B	-> C1083_ht_paragraph_ordinal_neutral.md
+C1084	**Section-Specific AXM Attractor Ordering** (KW H=29.9, p<0.0001, eta-sq=0.355; B(0.754) > S(0.687) > C(0.635) > H(0.587); decomposes C1017 baseline; survives REGIME control)	2	B	-> C1084_section_specific_axm_attractor_ordering.md
+C1085	**Bio Section Kernel-Balance Distinctiveness** (k=34.1% vs 24.9%, chi2=146.9, p=1.24e-32; REGIME-controlled: Bio-R1 k=34.1% vs non-Bio-R1 k=27.1%, chi2=86.6, p=1.57e-19; QO→k causal chain via C600/C911)	2	B	-> C1085_bio_kernel_balance_distinctiveness.md
+C1086	**Bio Section Apparatus-Hazard Depletion** (apparatus hazards 24.4% vs 32.2%, OR=0.680, p<0.0001; COMPOSITION_JUMP elevated 36.3% vs 27.0%; shifted from apparatus failures to material-state failures)	2	B	-> C1086_bio_apparatus_hazard_depletion.md
+C1087	**Bio-REGIME_1 Multidimensional Divergence** (6/8 dimensions significant within R1; LINK 0.63% vs 2.81% p=0.003; AXM self 0.754 vs 0.677 p=0.010; lane balance NS; explains C1048 LOO R2=0.754)	2	B	-> C1087_bio_regime1_multidimensional_divergence.md
+C1088	**Rosettes Hybrid Classification** (10-test battery: 64.7% grammar coverage, 0.054% forbidden violation, 0.97% LINK, 38.8% kernel, per-folio gradient f85v2=6.538 AZC-like to f86v6=0.296 B-like; overall HYBRID)	2	AZC	-> C1088_rosettes_hybrid_classification.md
+C1089	**Rosettes Near-Complete Vocabulary Coverage** (48/49 classes 98%, 23/23 hub MIDDLEs 100%, 93.1% core B vocabulary; exceeds C438 83% AZC coverage; entropy 1.767 vs B 1.458)	2	AZC	-> C1089_rosettes_near_complete_coverage.md
+C1090	**Rosettes Section T Correlation** (all 7 folios and all 16 f85v2 regions correlate most with Section T; uniform across AZC-to-B gradient)	2	AZC	-> C1090_rosettes_section_t_correlation.md
+C1091	**Rosettes Multi-Target Cross-Reference** (label groups converge on pharma folios f76r/f108r/f111r; different regions point to different sections; breaks C440 uniformity)	2	AZC	-> C1091_rosettes_multi_target_crossref.md
+C1092	**Rosettes CENTER Convergence Node** (C2: SOURCE:TARGET=0.36, core-only vocabulary, aiin suffix concentration, proximity-scaled overlap BOTTOM 55% to D_W 5%; spatial convergence)	2	AZC	-> C1092_rosettes_center_convergence.md
+C1093	**Rosettes Label-Description Bifurcation** (f85v2: 8 label regions 87 tokens A-like + 8 description regions B-like; 49 unique label MIDDLEs, 9 not in B body text, 29 exclusive to Rosettes)	2	AZC	-> C1093_rosettes_label_description_bifurcation.md
+C1094	**Rosettes Exclusive Vocabulary Is Morphological Tail** (79 exclusive MIDDLEs: mean length 4.91, 98.7% hapax, 78.5% compound; matches C618/C766 UN profile)	2	AZC	-> C1094_rosettes_exclusive_vocabulary_tail.md
+C1095	**Rosettes Metalayer Status** (GLOBAL: foldout functions as structural metalayer above A/B/AZC; near-complete coverage, spatial gradient, multi-target cross-ref, higher entropy, mixed roles)	2	GLOBAL	-> C1095_rosettes_metalayer_status.md
