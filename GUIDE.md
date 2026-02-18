@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 967 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 973 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -382,7 +382,7 @@ The profile: continuously-engaged, energy-dominant, checkpoint-free, dynamically
 
 A 670-year-old classification framework, developed for an entirely different purpose (pharmacological theory), independently predicts 3 of 4 structural properties of a system derived purely from computational analysis of the manuscript. The constraint system was built bottom-up with zero reference to medieval classification. The Galenic framework was applied top-down from historical sources. The convergence is non-trivial.
 
-### Rosettes Foldout: A Structural Index (Phases 387-391)
+### Rosettes Foldout & Section Characterization (Phases 387-392)
 
 The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) had been invisible to analysis for 386 phases. When finally examined, it turned out to be the most structurally unusual section of the manuscript.
 
@@ -411,7 +411,9 @@ A 6-test bridge backbone survey (Phase 390) then mapped bridge density across th
 
 A 6-test section-bridge-dynamics investigation (Phase 391) then tested whether bridge density mediates the relationship between section identity and dynamical predictability. The key surprise: higher bridge density correlates with MORE unexplained AXM variation (rho=+0.277, p=0.025), not less. Bridge vocabulary provides behavioral options that programs exercise — it enables design freedom rather than constraining it. This explains the C1048 paradox: BIO is predictable because its moderate bridge density and narrow REGIME range (85% REGIME_1) limit options, while Herbal is unpredictable because its high bridge density and REGIME diversity maximize them. The Phase 390 finding that bridge density varies by REGIME (C1102) was completely resolved as a section confound — after section control, the partial correlation drops to zero (r=0.0007), confirming C979.
 
-New constraints: C1088-C1105. Constraint qualifications: C440.a (Rosettes exception to uniform sourcing), C757.a (Rosettes excluded from zero kernel/LINK), C1090 qualified by C1100 (bridge-mediated), C1102 resolved by C1103 (section confound).
+A 10-test Stars/Recipe characterization (Phase 392) then established Stars as a structurally distinct section: e-stability enriched (66.2% vs 57.4%, chi2=145, p~10^-32), 7.4x higher LINK density than non-Stars (the opposite of Bio which has 4.7x fewer LINKs), and a radically different CC trigger profile dominated by CLOSE_FLOW and FQ_FREQUENT while depleted in QO_ENERGY. Stars diverges from non-Stars within REGIME_1 on 5/8 operational dimensions. However, the vocabulary clamping hypothesis — that Stars' low AXM variance is caused by low bridge density restricting behavioral options — was falsified. No consistent intra-REGIME clamping, no e-stability mediation, no bridge mediation, and vocabulary is actually LESS homogeneous across REGIMEs than non-Stars. The Stars Paradox (most REGIME diversity but lowest AXM variance) remains an open question.
+
+New constraints: C1088-C1108. Constraint qualifications: C440.a (Rosettes exception to uniform sourcing), C757.a (Rosettes excluded from zero kernel/LINK), C1090 qualified by C1100 (bridge-mediated), C1102 resolved by C1103 (section confound).
 
 ---
 

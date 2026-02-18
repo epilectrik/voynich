@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 970 validated constraints | **Version:** 4.10 | **Date:** 2026-02-18
+**Total:** 973 validated constraints | **Version:** 4.10 | **Date:** 2026-02-18
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2783,7 +2783,7 @@ Tests 4 HTSC V9 cross-guarantee predictions + HT oscillation wavelength + paragr
 
 ---
 
-### Rosettes System Classification & Bridge Dynamics (C1088-C1105) — Phases: ROSETTES_SYSTEM_CLASSIFICATION, ROSETTES_STRUCTURAL_VALIDATION, BRIDGE_BACKBONE_MANUSCRIPT_SURVEY, SECTION_BRIDGE_DYNAMICS
+### Rosettes, Bridge Dynamics & Stars Characterization (C1088-C1108) — Phases: ROSETTES_SYSTEM_CLASSIFICATION, ROSETTES_STRUCTURAL_VALIDATION, BRIDGE_BACKBONE_MANUSCRIPT_SURVEY, SECTION_BRIDGE_DYNAMICS, STARS_RECIPE_CHARACTERIZATION
 
 The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a 10-test battery (Phase 387), 5-test metalayer characterization (Phase 388H), 4-test structural validation (Phase 389), and 6-test bridge backbone survey (Phase 390). Finding: the Rosettes is a structural metalayer above A/B/AZC, functioning as a **universal bridge vocabulary index** — the C1090 Section T correlation is fully mediated by bridge density, and the Rosettes indexes the entire grammar's bridge backbone with no section bias.
 
@@ -2807,6 +2807,9 @@ The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a
 | **1103** | **REGIME-Bridge Density Is Section Confound** (partial r=0.0007, p=0.995 after section control; C1102 effect vanishes completely; C979 confirmed — REGIME modulates weights not topology) | 2 | GLOBAL | -> [C1103_regime_bridge_density_section_confound.md](C1103_regime_bridge_density_section_confound.md) |
 | **1104** | **Bridge Density Enables Dynamical Freedom** (rho=+0.277, p=0.025: higher bridge density → MORE |c1017_residual|; H variance 0.0148 > B 0.0078 > S 0.0059; monotonic; mechanism for C458/C1048) | 2 | B | -> [C1104_bridge_density_enables_freedom.md](C1104_bridge_density_enables_freedom.md) |
 | **1105** | **Bridge Geometry-Density Collinearity** (r=-0.805; delta-R²=0.007 NS beyond C1017; BIO LOO exception +0.071; same structural property, different measures) | 2 | B | -> [C1105_bridge_geometry_density_collinearity.md](C1105_bridge_geometry_density_collinearity.md) |
+| **1106** | **Stars e-Stability Kernel Enrichment** (e=66.2% vs 57.4% NS, k=23.9% vs 32.5%; chi2=145, p=3.3e-32; survives REGIME_1 control chi2=89, p=4.7e-20; 5/8 dimensions diverge in R1) | 2 | B | -> [C1106_stars_e_stability_enrichment.md](C1106_stars_e_stability_enrichment.md) |
+| **1107** | **Stars LINK Monitoring Concentration** (7.4x LINK density: 0.032 vs 0.004, p<0.0001, r=-0.913; opposite of Bio 4.7x LOWER; CC triggers CLOSE_FLOW/FQ_FREQUENT dominant, QO_ENERGY depleted) | 2 | B | -> [C1107_stars_link_monitoring_concentration.md](C1107_stars_link_monitoring_concentration.md) |
+| **1108** | **Stars Vocabulary Clamping Falsified** (S7-S10: 0 PASS, 3 FAIL; no consistent intra-REGIME clamping, no e-mediation, no bridge mediation, vocabulary LESS homogeneous across REGIMEs; Stars Paradox remains open) | 2 | B | -> [C1108_stars_clamping_falsified.md](C1108_stars_clamping_falsified.md) |
 
 **Phase 387-388H findings:**
 - Rosettes is NOT classifiable as pure A, B, or AZC — it is a metalayer
@@ -2841,6 +2844,15 @@ The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a
 - BIO LOO exception: bridge density improves within-BIO prediction by +0.071
 - Bridge vocabulary enables design freedom, not constrains it
 - Overall: SECTION_MEDIATES (4 PASS, 2 FAIL)
+
+**Phase 392 findings (Stars/Recipe Characterization):**
+- Stars is e-stability enriched (66.2% e vs 57.4%, chi2=145, p~10^-32) — survives REGIME control
+- Stars has 7.4x higher LINK density (0.032 vs 0.004) — opposite of Bio (4.7x lower)
+- Stars uses CLOSE_FLOW/FQ_FREQUENT CC triggers; avoids QO_ENERGY — radically different control profile
+- Stars diverges from non-Stars within REGIME_1 on 5/8 dimensions — NOT just a REGIME effect
+- Vocabulary clamping hypothesis FALSIFIED: no consistent intra-REGIME clamping, no e-mediation, no bridge mediation
+- Stars Paradox (most REGIME diversity, lowest AXM variance) remains unexplained
+- Overall: STARS_DISTINCT_UNCLAMPED (3/4 mirror PASS, 0/4 clamping PASS)
 
 **Constraint modifications:**
 - C440.a: Rosettes exception to uniform B-to-AZC sourcing

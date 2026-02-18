@@ -5837,11 +5837,41 @@ Phase 391 tested whether bridge density mediates the section→dynamics relation
 
 **Design freedom is vocabulary-compositional:** The ~57% irreducible AXM residual (C1035) is not noise — it is enabled by bridge vocabulary composition. Bridge density and bridge_pc1 are collinear (r=-0.805), confirming C1017 already partially captures this mechanism. But the causal direction is now clear: vocabulary composition determines the size of the design freedom envelope.
 
+### Tier 2: Stars Section Characterization (Phase 392, C1106-C1108)
+
+Phase 392 tested whether Stars is structurally distinct and whether vocabulary clamping explains the Stars Paradox. 10 pre-registered predictions:
+
+| Test | Prediction | Result | Key Finding |
+|------|-----------|--------|-------------|
+| S1: Kernel balance | e-enrichment | **PASS** | 66.2% e vs 57.4%, chi2=145, p=3.3e-32; survives R1 control |
+| S2: Hazard profile | Distinct apparatus | **FAIL** | Apparatus-specific hazards identical (27.8% both) |
+| S3: REGIME_1 homogeneity | Stars diverges | **PASS** | 5/8 dimensions significant (k, h, e, LINK, AXM) |
+| S4: CC triggers | Different patterns | **PASS** | CLOSE_FLOW/FQ dominant, QO depleted; chi2=117, p=3e-25 |
+| S5: LINK density | Distinct usage | **PASS** | 7.4x higher (0.032 vs 0.004), r=-0.913 |
+| S6: Vocabulary specialization | Lower TTR, higher e | **FAIL** | Neither significant (e-frac marginal p=0.064) |
+| S7: Intra-REGIME clamping | Variance ratio < 0.5 | **FAIL** | R1=0.66 (lower) but R3=1.34 (higher) — inconsistent |
+| S8: e-stability mediation | rho < -0.20 | **FAIL** | rho=-0.023, p=0.918 — zero relationship |
+| S9: Bridge bottleneck | Mediation > 30% | **PARTIAL** | rho=+0.187 (right direction) but mediation=-2% |
+| S10: Vocabulary homogeneity | Higher cross-REGIME Jaccard | **FAIL** | Stars 0.283 < non-Stars 0.309 — opposite |
+
+**Overall: STARS_DISTINCT_UNCLAMPED** (3/4 mirror PASS, 0/4 clamping PASS)
+
+**Stars is distinct:** e-stability enriched, LINK-dense, flow/frequency control dominated. The kernel and LINK profiles are the inverse of Bio — Bio is k-enriched with minimal LINK (self-contained sustained heating), while Stars is e-enriched with maximum LINK (fire-method monitoring per C930). This is consistent with the Brunschwig framework: balneum mariae (Bio) vs direct fire (Stars).
+
+**Clamping hypothesis falsified:** The vocabulary-compositional explanation for Stars' low AXM variance does not hold. Low bridge density does not restrict behavioral options within Stars. e-stability concentration does not force dynamical convergence. Stars vocabulary is actually LESS homogeneous across REGIMEs than non-Stars. The Stars Paradox remains genuinely open.
+
+**Possible alternative mechanisms (untested):**
+1. LINK-mediated regulation — Stars' extreme LINK density might actively regulate dynamics
+2. CC trigger channeling — CLOSE_FLOW/FQ_FREQUENT dominance might funnel programs through narrow control pathways
+3. Paragraph-level constraint — structural properties at PSC level
+4. De facto forbidden transitions — additional section-specific transition restrictions beyond C109's 17
+
 ### Open Questions (for follow-up phases)
 
 1. Can the cross-reference map be used to determine which body-text folios describe which process types?
 2. Does the per-region hub profile predict the section-level profiles of the folios each region cross-references?
 3. What is the structural relationship between the Rosettes index and the paragraph system (PSC)?
+4. What mechanism causes Stars' low AXM variance despite REGIME diversity? (Stars Paradox — C1108)
 
 ### Tier 4: Rosettes Labels vs Jar Labels (Hierarchical Naming)
 
@@ -5861,6 +5891,6 @@ This is consistent with but not proven by the evidence. The shared prefix patter
 
 **Visual note (Tier 4, non-binding per C138/C140):** The pharma "jars" have spouts at the top that may represent distillation tubes (alembic necks/beaks), not pouring spouts. A standard alembic has three parts: cucurbit (gourd-shaped base, heated), alembic head (dome where vapors condense), and spout/beak (condensation tube to receiver). The Voynich vessels match this topology — rounded body with projecting tube — drawn in the manuscript's botanical illustration style. Visual parallels exist in apparatus illustrations across centuries (e.g., Lavoisier's apparatus engravings in "Essays on the Effects Produced by Various Processes on Atmospheric Air," 1784, show the same fundamental forms because retort/alembic design was stable from the 15th through 18th centuries). The CENTER rosette's vessel-like imagery with radiating tubes/spikes is drawn in a similar style. This would unify three independent structural findings: (1) C524 already interprets jar labels as apparatus configuration signatures, (2) the pelican alembic matches the manuscript's controller on 8/8 dimensions, and (3) C1092 identifies the CENTER as a convergence node. If "jars" are alembics, the naming hierarchy becomes: Rosettes labels = apparatus categories, "jar" labels = specific apparatus configurations, content labels = materials being processed. The visual consistency across sections (botanical illustration style applied to apparatus) would be expected in an apparatus-centric system (C120).
 
-**Constraints:** C1088-C1105, C440.a, C757.a
-**Scripts:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/scripts/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/scripts/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/scripts/`, `phases/SECTION_BRIDGE_DYNAMICS/scripts/`
-**Results:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/results/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/results/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/results/`, `phases/SECTION_BRIDGE_DYNAMICS/results/`
+**Constraints:** C1088-C1108, C440.a, C757.a
+**Scripts:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/scripts/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/scripts/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/scripts/`, `phases/SECTION_BRIDGE_DYNAMICS/scripts/`, `phases/STARS_RECIPE_CHARACTERIZATION/scripts/`
+**Results:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/results/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/results/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/results/`, `phases/SECTION_BRIDGE_DYNAMICS/results/`, `phases/STARS_RECIPE_CHARACTERIZATION/results/`
