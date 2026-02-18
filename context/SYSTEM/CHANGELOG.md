@@ -4,6 +4,44 @@
 
 ---
 
+## Version 4.10.8 (2026-02-18) - Stars Paradox Resolution (Phase 394)
+
+### Summary
+
+Phase 394 tests whether the Stars Paradox (most REGIME diversity, lowest AXM variance) is a genuine structural anomaly requiring a mechanism, or a REGIME-composition artifact. 3-gate, 15-test battery: Gate 1 FAIL (paradox not confirmed under controls), 0/11 mechanism tests PASS. 1 new constraint (C1111).
+
+Key findings:
+- **Stars Paradox is a REGIME composition artifact** (G1.2 FAIL): Within-REGIME Stars is NOT anomalous. R1 ratio=1.45 (p=0.075, NS). R3 ratio=0.60 (non-Stars MORE convergent). Stars (0.00525) and Bio (0.00590) have near-identical variance — Herbal is the true outlier (0.01303).
+- **LINK regulation falsified** (M1, 0/3): Zero within-Stars correlation (rho=-0.018). LINK removal barely affects variance (+5%).
+- **CC channeling falsified** (M2, 0/3): Stars CC entropy HIGHER (1.79 vs 1.55 — wrong direction). CC routing WIDER.
+- **Paragraph constraint falsified** (M3, 0/2): Stars JSD HIGHER than Bio (0.114 vs 0.076 — wrong direction).
+- **De facto forbidden transitions falsified** (M4, 0/3): Stars has FEWER zero-transitions (-25.5% — opposite prediction).
+
+Overall verdict: PARADOX_NOT_CONFIRMED — the REGIME system (C979) is sufficient.
+
+### New Files
+
+| File | Purpose |
+|------|---------|
+| `phases/STARS_PARADOX_RESOLUTION/scripts/stars_paradox_resolution.py` | 15-test battery |
+| `phases/STARS_PARADOX_RESOLUTION/results/stars_paradox_resolution.json` | Full results |
+
+### New Constraints
+
+| # | Statement | Tier |
+|---|-----------|------|
+| C1111 | Stars Paradox is REGIME composition artifact | 2 |
+
+### Changes
+
+- `context/CLAIMS/INDEX.md`: Added C1111, Phase 394 summary
+- `CLAUDE.md`: 976 constraints, 394 phases
+- C979: Strengthened (no section-specific topology modifier needed)
+- C1084: Qualified (section AXM ordering is REGIME-composition effect)
+- C1108: Resolved (Stars Paradox and all untested mechanisms now addressed)
+
+---
+
 ## Version 4.10.7 (2026-02-18) - Rosettes Cross-Reference Validation (Phase 393)
 
 ### Summary

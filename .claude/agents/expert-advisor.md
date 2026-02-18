@@ -88,7 +88,7 @@ and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-18 16:37
+**Generated:** 2026-02-18 17:09
 **Version:** FROZEN STATE (973 constraints, 66 fits) [COMPACT]
 
 ---
@@ -1101,7 +1101,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 975 constraints | 2026-02-18
+CONSTRAINT_REFERENCE v2.6 | 976 constraints | 2026-02-18
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2081,6 +2081,7 @@ C1107	**Stars LINK Monitoring Concentration**
 C1108	**Stars Vocabulary Clamping Falsified** (S7-S10: 0 PASS, 3 FAIL; no consistent intra-REGIME clamping, no e-mediation, no bridge mediation, vocabulary LESS homogeneous across REGIMEs; Stars Paradox remains open)
 C1109	**Rosettes Cross-Reference is Vocabulary-Mediated, Not Process-Demonstrating**
 C1110	**CENTER Convergence Node Directionally Confirmed**
+C1111	**Stars Paradox is REGIME Composition Artifact**
 
 ---
 
@@ -4413,13 +4414,9 @@ Phase 392 tested whether Stars is structurally distinct and whether vocabulary c
 
 **Stars is distinct:** e-stability enriched, LINK-dense, flow/frequency control dominated. The kernel and LINK profiles are the inverse of Bio — Bio is k-enriched with minimal LINK (self-contained sustained heating), while Stars is e-enriched with maximum LINK (fire-method monitoring per C930). This is consistent with the Brunschwig framework: balneum mariae (Bio) vs direct fire (Stars).
 
-**Clamping hypothesis falsified:** The vocabulary-compositional explanation for Stars' low AXM variance does not hold. Low bridge density does not restrict behavioral options within Stars. e-stability concentration does not force dynamical convergence. Stars vocabulary is actually LESS homogeneous across REGIMEs than non-Stars. The Stars Paradox remains genuinely open.
+**Clamping hypothesis falsified:** The vocabulary-compositional explanation for Stars' low AXM variance does not hold. Low bridge density does not restrict behavioral options within Stars. e-stability concentration does not force dynamical convergence. Stars vocabulary is actually LESS homogeneous across REGIMEs than non-Stars.
 
-**Possible alternative mechanisms (untested):**
-1. LINK-mediated regulation — Stars' extreme LINK density might actively regulate dynamics
-2. CC trigger channeling — CLOSE_FLOW/FQ_FREQUENT dominance might funnel programs through narrow control pathways
-3. Paragraph-level constraint — structural properties at PSC level
-4. De facto forbidden transitions — additional section-specific transition restrictions beyond C109's 17
+**Stars Paradox RESOLVED (Phase 394, C1111):** The paradox is a REGIME-composition artifact. Within-REGIME, Stars is NOT anomalous (R1: ratio 1.45, p=0.075; R3: ratio 0.60, non-Stars more convergent). Stars (0.00525) and Bio (0.00590) have near-identical AXM variance — Herbal (0.01303) is the true outlier due to its high within-R1 diversity. All 4 alternative mechanisms comprehensively falsified (0/11 sub-tests PASS): LINK regulation (zero correlation), CC channeling (wrong direction — Stars MORE diverse), paragraph constraint (wrong direction), de facto forbidden transitions (Stars has FEWER zeros). The REGIME system (C979) is sufficient.
 
 - CENTER convergence node directionally confirmed (C1110): higher tgt_fraction, lower k_pct
 

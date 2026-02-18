@@ -1,0 +1,1019 @@
+{
+  "phase": 394,
+  "name": "STARS_PARADOX_RESOLUTION",
+  "test_count": 15,
+  "n_stars": 23,
+  "n_non_stars": 52,
+  "stars_axm_var": 0.0052,
+  "herbal_axm_var": 0.013,
+  "bio_axm_var": 0.0059,
+  "gate1": {
+    "g1_1": {
+      "stars_axm_var": 0.0052,
+      "herbal_axm_var": 0.013,
+      "bootstrap_5th_pct": 0.0067,
+      "stars_percentile": 1.63,
+      "n_stars": 23,
+      "n_herbal": 32,
+      "n_boot": 10000,
+      "passed": true
+    },
+    "g1_2": {
+      "regime_results": {
+        "REGIME_1": {
+          "stars_var": 0.0044,
+          "non_stars_var": 0.0064,
+          "ratio": 1.4483,
+          "u_stat": 146.0,
+          "p": 0.0745,
+          "n_stars": 10,
+          "n_non_stars": 22,
+          "passed": false
+        },
+        "REGIME_3": {
+          "stars_var": 0.0066,
+          "non_stars_var": 0.004,
+          "ratio": 0.598,
+          "u_stat": 31.0,
+          "p": 0.4796,
+          "n_stars": 12,
+          "n_non_stars": 5,
+          "passed": false
+        }
+      },
+      "passed": false
+    },
+    "passed": false
+  },
+  "gate2": {
+    "M1": {
+      "m1_1": {
+        "rho": -0.0178,
+        "p": 0.9358,
+        "n": 23,
+        "passed": false
+      },
+      "m1_2": {
+        "orig_mean_run_length": 1.8514,
+        "stripped_mean_run_length": 1.8328,
+        "run_length_change_pct": -1.0028,
+        "orig_axm_var": 0.0052,
+        "stripped_axm_var": 0.0055,
+        "variance_change_pct": 5.0642,
+        "n_link_words": 88,
+        "passed": false
+      },
+      "m1_3": {
+        "partial_rho": -0.0072,
+        "p": 0.9513,
+        "stars_is_outlier": false,
+        "n": 75,
+        "passed": false
+      }
+    },
+    "M2": {
+      "m2_1": {
+        "stars_mean": 1.7885,
+        "ns_mean": 1.5549,
+        "mw_u": 846.0,
+        "mw_p": 0.9988,
+        "n_stars": 23,
+        "n_ns": 51,
+        "passed": false
+      },
+      "m2_2": {
+        "stars_effective": 3.5098,
+        "ns_effective": 3.1695,
+        "stars_n": 214,
+        "ns_n": 371,
+        "stars_dist": {
+          "AXM": 0.486,
+          "null": 0.3037,
+          "FQ": 0.1215,
+          "FL_HAZ": 0.0561,
+          "AXm": 0.028,
+          "FL_SAFE": 0.0047
+        },
+        "ns_dist": {
+          "AXM": 0.5903,
+          "FL_HAZ": 0.0431,
+          "FQ": 0.1482,
+          "null": 0.1941,
+          "FL_SAFE": 0.0081,
+          "AXm": 0.0162
+        },
+        "passed": false
+      },
+      "m2_3": {
+        "stars_mean": 0.9714,
+        "ns_5th_pct": 0.9183,
+        "ns_mean": 1.4668,
+        "n_stars": 10,
+        "n_ns": 15,
+        "passed": false
+      }
+    },
+    "M3": {
+      "m3_1": {
+        "stars_mean_jsd": 0.1138,
+        "section_jsds": {
+          "B": 0.0758,
+          "H": 0.1315
+        },
+        "mw_p": 0.7776,
+        "n_stars": 23,
+        "n_ns": 52,
+        "passed": false
+      },
+      "m3_2": {
+        "interaction_coeff": 0.0091,
+        "t_stat": 2.0328,
+        "p": 0.0458,
+        "n": 75,
+        "passed": false
+      }
+    },
+    "M4": {
+      "m4_1": {
+        "n_classes": 48,
+        "n_possible": 2304,
+        "stars_zeros": 1207,
+        "boot_mean_zeros": 1619.942,
+        "excess_pct": -25.4912,
+        "p": 1.0,
+        "passed": false
+      },
+      "m4_2": {
+        "n_absent": 333,
+        "n_bonferroni": 333,
+        "n_significant": 0,
+        "significant_pairs": [],
+        "passed": false
+      },
+      "m4_3": {
+        "note": "no forbidden pairs from M4.2",
+        "passed": false
+      }
+    }
+  },
+  "gate3": {
+    "g3_1": null,
+    "g3_2": null
+  },
+  "synthesis": {
+    "gate1_passed": false,
+    "mechanism_verdicts": {
+      "M1": {
+        "sub_pass": 0,
+        "total": 3,
+        "passed": false
+      },
+      "M2": {
+        "sub_pass": 0,
+        "total": 3,
+        "passed": false
+      },
+      "M3": {
+        "sub_pass": 0,
+        "total": 2,
+        "passed": false
+      },
+      "M4": {
+        "sub_pass": 0,
+        "total": 3,
+        "passed": false
+      }
+    },
+    "passing_mechanisms": [],
+    "gate3_passed": false,
+    "overall": "PARADOX_NOT_CONFIRMED",
+    "summary": "The Stars Paradox did not survive controls. Stars AXM variance is not significantly below expected after sample-size and REGIME matching."
+  },
+  "folio_data": {
+    "f114r": {
+      "section": "S",
+      "regime": "REGIME_3",
+      "axm_self": 0.6514,
+      "link_density": 0.0089,
+      "cc_entropy": 1.8935,
+      "gk_entropy": 1.5,
+      "n_class_pairs": 151,
+      "n_paragraphs": 11,
+      "n_tokens": 447
+    },
+    "f79r": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.743,
+      "link_density": 0.0051,
+      "cc_entropy": 1.6187,
+      "gk_entropy": 1.371,
+      "n_class_pairs": 155,
+      "n_paragraphs": 10,
+      "n_tokens": 389
+    },
+    "f75r": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.7734,
+      "link_density": 0.0024,
+      "cc_entropy": 1.6709,
+      "gk_entropy": 1.9219,
+      "n_class_pairs": 160,
+      "n_paragraphs": 9,
+      "n_tokens": 412
+    },
+    "f115r": {
+      "section": "S",
+      "regime": "REGIME_3",
+      "axm_self": 0.8028,
+      "link_density": 0.0248,
+      "cc_entropy": 1.5785,
+      "gk_entropy": null,
+      "n_class_pairs": 130,
+      "n_paragraphs": 11,
+      "n_tokens": 444
+    },
+    "f104v": {
+      "section": "S",
+      "regime": "REGIME_3",
+      "axm_self": 0.774,
+      "link_density": 0.0175,
+      "cc_entropy": 1.8967,
+      "gk_entropy": null,
+      "n_class_pairs": 134,
+      "n_paragraphs": 12,
+      "n_tokens": 458
+    },
+    "f76r": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.7802,
+      "link_density": 0.022,
+      "cc_entropy": 1.9078,
+      "gk_entropy": null,
+      "n_class_pairs": 207,
+      "n_paragraphs": 4,
+      "n_tokens": 546
+    },
+    "f113r": {
+      "section": "S",
+      "regime": "REGIME_3",
+      "axm_self": 0.6548,
+      "link_density": 0.0618,
+      "cc_entropy": 1.787,
+      "gk_entropy": null,
+      "n_class_pairs": 143,
+      "n_paragraphs": 20,
+      "n_tokens": 518
+    },
+    "f50v": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "axm_self": 0.6667,
+      "link_density": 0.0,
+      "cc_entropy": 1.8424,
+      "gk_entropy": null,
+      "n_class_pairs": 44,
+      "n_paragraphs": 4,
+      "n_tokens": 98
+    },
+    "f111r": {
+      "section": "S",
+      "regime": "REGIME_1",
+      "axm_self": 0.684,
+      "link_density": 0.0684,
+      "cc_entropy": 1.8045,
+      "gk_entropy": 1.5,
+      "n_class_pairs": 178,
+      "n_paragraphs": 7,
+      "n_tokens": 614
+    },
+    "f48r": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "axm_self": 0.5806,
+      "link_density": 0.0112,
+      "cc_entropy": 1.4591,
+      "gk_entropy": null,
+      "n_class_pairs": 26,
+      "n_paragraphs": 3,
+      "n_tokens": 89
+    },
+    "f78v": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.6194,
+      "link_density": 0.0,
+      "cc_entropy": 1.3899,
+      "gk_entropy": 1.585,
+      "n_class_pairs": 131,
+      "n_paragraphs": 2,
+      "n_tokens": 292
+    },
+    "f95v1": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "axm_self": 0.5946,
+      "link_density": 0.0,
+      "cc_entropy": 1.9749,
+      "gk_entropy": null,
+      "n_class_pairs": 36,
+      "n_paragraphs": 6,
+      "n_tokens": 117
+    },
+    "f80v": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.7668,
+      "link_density": 0.0026,
+      "cc_entropy": 1.7563,
+      "gk_entropy": 1.65,
+      "n_class_pairs": 157,
+      "n_paragraphs": 17,
+      "n_tokens": 378
+    },
+    "f113v": {
+      "section": "S",
+      "regime": "REGIME_3",
+      "axm_self": 0.5799,
+      "link_density": 0.0438,
+      "cc_entropy": 1.4266,
+      "gk_entropy": 1.9183,
+      "n_class_pairs": 150,
+      "n_paragraphs": 16,
+      "n_tokens": 479
+    },
+    "f31r": {
+      "section": "H",
+      "regime": "REGIME_1",
+      "axm_self": 0.6,
+      "link_density": 0.0,
+      "cc_entropy": 1.5305,
+      "gk_entropy": null,
+      "n_class_pairs": 37,
+      "n_paragraphs": 3,
+      "n_tokens": 100
+    },
+    "f112r": {
+      "section": "S",
+      "regime": "REGIME_1",
+      "axm_self": 0.5374,
+      "link_density": 0.0102,
+      "cc_entropy": 1.4591,
+      "gk_entropy": 0.9183,
+      "n_class_pairs": 140,
+      "n_paragraphs": 14,
+      "n_tokens": 394
+    },
+    "f103v": {
+      "section": "S",
+      "regime": "REGIME_1",
+      "axm_self": 0.6953,
+      "link_density": 0.02,
+      "cc_entropy": 1.9409,
+      "gk_entropy": 0.9183,
+      "n_class_pairs": 166,
+      "n_paragraphs": 11,
+      "n_tokens": 449
+    },
+    "f40v": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "axm_self": 0.5306,
+      "link_density": 0.0,
+      "cc_entropy": 1.9591,
+      "gk_entropy": null,
+      "n_class_pairs": 55,
+      "n_paragraphs": 8,
+      "n_tokens": 106
+    },
+    "f116r": {
+      "section": "S",
+      "regime": "REGIME_1",
+      "axm_self": 0.7179,
+      "link_density": 0.0242,
+      "cc_entropy": 1.9526,
+      "gk_entropy": null,
+      "n_class_pairs": 211,
+      "n_paragraphs": 8,
+      "n_tokens": 537
+    },
+    "f76v": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.7804,
+      "link_density": 0.01,
+      "cc_entropy": 1.9218,
+      "gk_entropy": 0.9183,
+      "n_class_pairs": 142,
+      "n_paragraphs": 6,
+      "n_tokens": 400
+    },
+    "f83r": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.8374,
+      "link_density": 0.0088,
+      "cc_entropy": 1.8496,
+      "gk_entropy": null,
+      "n_class_pairs": 115,
+      "n_paragraphs": 7,
+      "n_tokens": 340
+    },
+    "f40r": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "axm_self": 0.4848,
+      "link_density": 0.0,
+      "cc_entropy": 1.6106,
+      "gk_entropy": null,
+      "n_class_pairs": 40,
+      "n_paragraphs": 5,
+      "n_tokens": 97
+    },
+    "f81v": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.6716,
+      "link_density": 0.0078,
+      "cc_entropy": 1.4384,
+      "gk_entropy": 1.5,
+      "n_class_pairs": 112,
+      "n_paragraphs": 2,
+      "n_tokens": 258
+    },
+    "f80r": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.797,
+      "link_density": 0.0136,
+      "cc_entropy": 1.0848,
+      "gk_entropy": 1.5305,
+      "n_class_pairs": 172,
+      "n_paragraphs": 7,
+      "n_tokens": 441
+    },
+    "f41v": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "axm_self": 0.3478,
+      "link_density": 0.0441,
+      "cc_entropy": 1.971,
+      "gk_entropy": null,
+      "n_class_pairs": 30,
+      "n_paragraphs": 3,
+      "n_tokens": 68
+    },
+    "f43r": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "axm_self": 0.5873,
+      "link_density": 0.0,
+      "cc_entropy": 1.571,
+      "gk_entropy": null,
+      "n_class_pairs": 63,
+      "n_paragraphs": 5,
+      "n_tokens": 150
+    },
+    "f31v": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "axm_self": 0.3103,
+      "link_density": 0.0093,
+      "cc_entropy": 1.4605,
+      "gk_entropy": null,
+      "n_class_pairs": 33,
+      "n_paragraphs": 2,
+      "n_tokens": 108
+    },
+    "f83v": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.8253,
+      "link_density": 0.0,
+      "cc_entropy": 1.5219,
+      "gk_entropy": null,
+      "n_class_pairs": 103,
+      "n_paragraphs": 3,
+      "n_tokens": 263
+    },
+    "f84r": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.6842,
+      "link_density": 0.0028,
+      "cc_entropy": 1.7086,
+      "gk_entropy": null,
+      "n_class_pairs": 149,
+      "n_paragraphs": 3,
+      "n_tokens": 361
+    },
+    "f55r": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "axm_self": 0.4524,
+      "link_density": 0.0081,
+      "cc_entropy": 1.8163,
+      "gk_entropy": null,
+      "n_class_pairs": 54,
+      "n_paragraphs": 3,
+      "n_tokens": 124
+    },
+    "f94v": {
+      "section": "H",
+      "regime": "REGIME_3",
+      "axm_self": 0.5806,
+      "link_density": 0.0099,
+      "cc_entropy": 1.9591,
+      "gk_entropy": null,
+      "n_class_pairs": 42,
+      "n_paragraphs": 5,
+      "n_tokens": 101
+    },
+    "f26v": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "axm_self": 0.7143,
+      "link_density": 0.0,
+      "cc_entropy": 0.0,
+      "gk_entropy": null,
+      "n_class_pairs": 24,
+      "n_paragraphs": 5,
+      "n_tokens": 89
+    },
+    "f78r": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.6351,
+      "link_density": 0.0068,
+      "cc_entropy": 1.9671,
+      "gk_entropy": null,
+      "n_class_pairs": 120,
+      "n_paragraphs": 2,
+      "n_tokens": 294
+    },
+    "f94r": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "axm_self": 0.6757,
+      "link_density": 0.0,
+      "cc_entropy": 1.5567,
+      "gk_entropy": null,
+      "n_class_pairs": 35,
+      "n_paragraphs": 3,
+      "n_tokens": 82
+    },
+    "f103r": {
+      "section": "S",
+      "regime": "REGIME_1",
+      "axm_self": 0.7363,
+      "link_density": 0.0192,
+      "cc_entropy": 1.9678,
+      "gk_entropy": null,
+      "n_class_pairs": 165,
+      "n_paragraphs": 12,
+      "n_tokens": 522
+    },
+    "f95r2": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "axm_self": 0.6286,
+      "link_density": 0.0,
+      "cc_entropy": 1.5567,
+      "gk_entropy": null,
+      "n_class_pairs": 39,
+      "n_paragraphs": 5,
+      "n_tokens": 79
+    },
+    "f77v": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.8095,
+      "link_density": 0.006,
+      "cc_entropy": 1.3821,
+      "gk_entropy": 0.9183,
+      "n_class_pairs": 112,
+      "n_paragraphs": 7,
+      "n_tokens": 331
+    },
+    "f111v": {
+      "section": "S",
+      "regime": "REGIME_1",
+      "axm_self": 0.7397,
+      "link_density": 0.0463,
+      "cc_entropy": 1.8671,
+      "gk_entropy": null,
+      "n_class_pairs": 182,
+      "n_paragraphs": 11,
+      "n_tokens": 561
+    },
+    "f79v": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.7337,
+      "link_density": 0.0056,
+      "cc_entropy": 1.7731,
+      "gk_entropy": null,
+      "n_class_pairs": 140,
+      "n_paragraphs": 8,
+      "n_tokens": 354
+    },
+    "f50r": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "axm_self": 0.6471,
+      "link_density": 0.0,
+      "cc_entropy": 0.65,
+      "gk_entropy": null,
+      "n_class_pairs": 41,
+      "n_paragraphs": 4,
+      "n_tokens": 89
+    },
+    "f66v": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "axm_self": 0.6429,
+      "link_density": 0.0,
+      "cc_entropy": 1.4591,
+      "gk_entropy": null,
+      "n_class_pairs": 37,
+      "n_paragraphs": 4,
+      "n_tokens": 113
+    },
+    "f39v": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "axm_self": 0.5517,
+      "link_density": 0.007,
+      "cc_entropy": 1.4956,
+      "gk_entropy": 0.9183,
+      "n_class_pairs": 65,
+      "n_paragraphs": 5,
+      "n_tokens": 142
+    },
+    "f105v": {
+      "section": "S",
+      "regime": "REGIME_3",
+      "axm_self": 0.5625,
+      "link_density": 0.0282,
+      "cc_entropy": 1.8496,
+      "gk_entropy": 0.0,
+      "n_class_pairs": 119,
+      "n_paragraphs": 10,
+      "n_tokens": 390
+    },
+    "f41r": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "axm_self": 0.7907,
+      "link_density": 0.0,
+      "cc_entropy": null,
+      "gk_entropy": null,
+      "n_class_pairs": 30,
+      "n_paragraphs": 2,
+      "n_tokens": 97
+    },
+    "f33r": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "axm_self": 0.5,
+      "link_density": 0.0,
+      "cc_entropy": 1.7842,
+      "gk_entropy": null,
+      "n_class_pairs": 28,
+      "n_paragraphs": 3,
+      "n_tokens": 72
+    },
+    "f55v": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "axm_self": 0.3939,
+      "link_density": 0.0,
+      "cc_entropy": 1.906,
+      "gk_entropy": 0.9183,
+      "n_class_pairs": 49,
+      "n_paragraphs": 2,
+      "n_tokens": 104
+    },
+    "f46r": {
+      "section": "H",
+      "regime": "REGIME_3",
+      "axm_self": 0.7083,
+      "link_density": 0.0,
+      "cc_entropy": 1.3222,
+      "gk_entropy": 1.585,
+      "n_class_pairs": 58,
+      "n_paragraphs": 7,
+      "n_tokens": 157
+    },
+    "f43v": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "axm_self": 0.5714,
+      "link_density": 0.0065,
+      "cc_entropy": 1.6258,
+      "gk_entropy": null,
+      "n_class_pairs": 62,
+      "n_paragraphs": 4,
+      "n_tokens": 153
+    },
+    "f108v": {
+      "section": "S",
+      "regime": "REGIME_1",
+      "axm_self": 0.7014,
+      "link_density": 0.0421,
+      "cc_entropy": 1.9709,
+      "gk_entropy": null,
+      "n_class_pairs": 173,
+      "n_paragraphs": 9,
+      "n_tokens": 570
+    },
+    "f95r1": {
+      "section": "H",
+      "regime": "REGIME_1",
+      "axm_self": 0.7719,
+      "link_density": 0.0,
+      "cc_entropy": 1.5613,
+      "gk_entropy": null,
+      "n_class_pairs": 48,
+      "n_paragraphs": 4,
+      "n_tokens": 103
+    },
+    "f108r": {
+      "section": "S",
+      "regime": "REGIME_1",
+      "axm_self": 0.6085,
+      "link_density": 0.0305,
+      "cc_entropy": 1.7869,
+      "gk_entropy": null,
+      "n_class_pairs": 147,
+      "n_paragraphs": 15,
+      "n_tokens": 491
+    },
+    "f34r": {
+      "section": "H",
+      "regime": "REGIME_3",
+      "axm_self": 0.6545,
+      "link_density": 0.0,
+      "cc_entropy": 1.6697,
+      "gk_entropy": null,
+      "n_class_pairs": 52,
+      "n_paragraphs": 2,
+      "n_tokens": 144
+    },
+    "f82v": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.8387,
+      "link_density": 0.0034,
+      "cc_entropy": 0.9183,
+      "gk_entropy": null,
+      "n_class_pairs": 116,
+      "n_paragraphs": 8,
+      "n_tokens": 298
+    },
+    "f82r": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.8539,
+      "link_density": 0.0182,
+      "cc_entropy": 1.2407,
+      "gk_entropy": null,
+      "n_class_pairs": 106,
+      "n_paragraphs": 9,
+      "n_tokens": 275
+    },
+    "f46v": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "axm_self": 0.6,
+      "link_density": 0.0,
+      "cc_entropy": 1.361,
+      "gk_entropy": null,
+      "n_class_pairs": 52,
+      "n_paragraphs": 3,
+      "n_tokens": 111
+    },
+    "f75v": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.7323,
+      "link_density": 0.0029,
+      "cc_entropy": 1.5715,
+      "gk_entropy": 1.8424,
+      "n_class_pairs": 143,
+      "n_paragraphs": 6,
+      "n_tokens": 339
+    },
+    "f104r": {
+      "section": "S",
+      "regime": "REGIME_3",
+      "axm_self": 0.6914,
+      "link_density": 0.032,
+      "cc_entropy": 1.8571,
+      "gk_entropy": 1.5,
+      "n_class_pairs": 136,
+      "n_paragraphs": 11,
+      "n_tokens": 438
+    },
+    "f39r": {
+      "section": "H",
+      "regime": "REGIME_3",
+      "axm_self": 0.6333,
+      "link_density": 0.0,
+      "cc_entropy": 1.904,
+      "gk_entropy": null,
+      "n_class_pairs": 59,
+      "n_paragraphs": 6,
+      "n_tokens": 154
+    },
+    "f57r": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "axm_self": 0.6667,
+      "link_density": 0.0,
+      "cc_entropy": 0.9183,
+      "gk_entropy": null,
+      "n_class_pairs": 26,
+      "n_paragraphs": 3,
+      "n_tokens": 87
+    },
+    "f26r": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "axm_self": 0.625,
+      "link_density": 0.0,
+      "cc_entropy": 1.4488,
+      "gk_entropy": null,
+      "n_class_pairs": 28,
+      "n_paragraphs": 3,
+      "n_tokens": 85
+    },
+    "f33v": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "axm_self": 0.439,
+      "link_density": 0.0,
+      "cc_entropy": 1.5222,
+      "gk_entropy": 1.5,
+      "n_class_pairs": 59,
+      "n_paragraphs": 6,
+      "n_tokens": 109
+    },
+    "f48v": {
+      "section": "H",
+      "regime": "REGIME_4",
+      "axm_self": 0.5385,
+      "link_density": 0.0079,
+      "cc_entropy": 1.6855,
+      "gk_entropy": 1.9219,
+      "n_class_pairs": 59,
+      "n_paragraphs": 4,
+      "n_tokens": 126
+    },
+    "f115v": {
+      "section": "S",
+      "regime": "REGIME_3",
+      "axm_self": 0.8324,
+      "link_density": 0.0777,
+      "cc_entropy": 1.7575,
+      "gk_entropy": 1.4591,
+      "n_class_pairs": 101,
+      "n_paragraphs": 12,
+      "n_tokens": 399
+    },
+    "f107v": {
+      "section": "S",
+      "regime": "REGIME_1",
+      "axm_self": 0.7193,
+      "link_density": 0.0615,
+      "cc_entropy": 1.8955,
+      "gk_entropy": 0.0,
+      "n_class_pairs": 169,
+      "n_paragraphs": 20,
+      "n_tokens": 455
+    },
+    "f81r": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.7009,
+      "link_density": 0.0,
+      "cc_entropy": 1.1761,
+      "gk_entropy": null,
+      "n_class_pairs": 97,
+      "n_paragraphs": 5,
+      "n_tokens": 207
+    },
+    "f106r": {
+      "section": "S",
+      "regime": "REGIME_3",
+      "axm_self": 0.7351,
+      "link_density": 0.0356,
+      "cc_entropy": 1.6823,
+      "gk_entropy": null,
+      "n_class_pairs": 133,
+      "n_paragraphs": 16,
+      "n_tokens": 421
+    },
+    "f107r": {
+      "section": "S",
+      "regime": "REGIME_3",
+      "axm_self": 0.686,
+      "link_density": 0.0389,
+      "cc_entropy": 1.8009,
+      "gk_entropy": null,
+      "n_class_pairs": 167,
+      "n_paragraphs": 18,
+      "n_tokens": 488
+    },
+    "f114v": {
+      "section": "S",
+      "regime": "REGIME_3",
+      "axm_self": 0.7055,
+      "link_density": 0.0083,
+      "cc_entropy": 1.8049,
+      "gk_entropy": null,
+      "n_class_pairs": 118,
+      "n_paragraphs": 12,
+      "n_tokens": 362
+    },
+    "f112v": {
+      "section": "S",
+      "regime": "REGIME_1",
+      "axm_self": 0.6145,
+      "link_density": 0.0145,
+      "cc_entropy": 1.8579,
+      "gk_entropy": 0.0,
+      "n_class_pairs": 143,
+      "n_paragraphs": 15,
+      "n_tokens": 415
+    },
+    "f106v": {
+      "section": "S",
+      "regime": "REGIME_3",
+      "axm_self": 0.6935,
+      "link_density": 0.0089,
+      "cc_entropy": 1.7058,
+      "gk_entropy": null,
+      "n_class_pairs": 156,
+      "n_paragraphs": 15,
+      "n_tokens": 449
+    },
+    "f95v2": {
+      "section": "H",
+      "regime": "REGIME_2",
+      "axm_self": 0.5833,
+      "link_density": 0.0,
+      "cc_entropy": 1.5613,
+      "gk_entropy": null,
+      "n_class_pairs": 27,
+      "n_paragraphs": 2,
+      "n_tokens": 64
+    },
+    "f77r": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.8538,
+      "link_density": 0.0,
+      "cc_entropy": 1.8911,
+      "gk_entropy": null,
+      "n_class_pairs": 96,
+      "n_paragraphs": 3,
+      "n_tokens": 325
+    },
+    "f84v": {
+      "section": "B",
+      "regime": "REGIME_1",
+      "axm_self": 0.6185,
+      "link_density": 0.0086,
+      "cc_entropy": 1.6075,
+      "gk_entropy": 1.9219,
+      "n_class_pairs": 139,
+      "n_paragraphs": 4,
+      "n_tokens": 347
+    },
+    "f34v": {
+      "section": "H",
+      "regime": "REGIME_3",
+      "axm_self": 0.7407,
+      "link_density": 0.0,
+      "cc_entropy": 1.761,
+      "gk_entropy": null,
+      "n_class_pairs": 49,
+      "n_paragraphs": 4,
+      "n_tokens": 115
+    },
+    "f105r": {
+      "section": "S",
+      "regime": "REGIME_4",
+      "axm_self": 0.695,
+      "link_density": 0.0216,
+      "cc_entropy": 1.5928,
+      "gk_entropy": null,
+      "n_class_pairs": 122,
+      "n_paragraphs": 8,
+      "n_tokens": 370
+    }
+  }
+}

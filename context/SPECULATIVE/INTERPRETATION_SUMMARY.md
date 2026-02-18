@@ -5858,13 +5858,9 @@ Phase 392 tested whether Stars is structurally distinct and whether vocabulary c
 
 **Stars is distinct:** e-stability enriched, LINK-dense, flow/frequency control dominated. The kernel and LINK profiles are the inverse of Bio — Bio is k-enriched with minimal LINK (self-contained sustained heating), while Stars is e-enriched with maximum LINK (fire-method monitoring per C930). This is consistent with the Brunschwig framework: balneum mariae (Bio) vs direct fire (Stars).
 
-**Clamping hypothesis falsified:** The vocabulary-compositional explanation for Stars' low AXM variance does not hold. Low bridge density does not restrict behavioral options within Stars. e-stability concentration does not force dynamical convergence. Stars vocabulary is actually LESS homogeneous across REGIMEs than non-Stars. The Stars Paradox remains genuinely open.
+**Clamping hypothesis falsified:** The vocabulary-compositional explanation for Stars' low AXM variance does not hold. Low bridge density does not restrict behavioral options within Stars. e-stability concentration does not force dynamical convergence. Stars vocabulary is actually LESS homogeneous across REGIMEs than non-Stars.
 
-**Possible alternative mechanisms (untested):**
-1. LINK-mediated regulation — Stars' extreme LINK density might actively regulate dynamics
-2. CC trigger channeling — CLOSE_FLOW/FQ_FREQUENT dominance might funnel programs through narrow control pathways
-3. Paragraph-level constraint — structural properties at PSC level
-4. De facto forbidden transitions — additional section-specific transition restrictions beyond C109's 17
+**Stars Paradox RESOLVED (Phase 394, C1111):** The paradox is a REGIME-composition artifact. Within-REGIME, Stars is NOT anomalous (R1: ratio 1.45, p=0.075; R3: ratio 0.60, non-Stars more convergent). Stars (0.00525) and Bio (0.00590) have near-identical AXM variance — Herbal (0.01303) is the true outlier due to its high within-R1 diversity. All 4 alternative mechanisms comprehensively falsified (0/11 sub-tests PASS): LINK regulation (zero correlation), CC channeling (wrong direction — Stars MORE diverse), paragraph constraint (wrong direction), de facto forbidden transitions (Stars has FEWER zeros). The REGIME system (C979) is sufficient.
 
 ### Cross-Reference Validation (Phase 393, C1109-C1110)
 
@@ -5882,7 +5878,7 @@ The Rosettes connects to its targets through shared bridge vocabulary (C1100), n
 1. ~~Can the cross-reference map be used to determine which body-text folios describe which process types?~~ **ANSWERED (C1109):** No — the cross-reference is vocabulary-mediated, not process-demonstrating.
 2. ~~Does the per-region hub profile predict the section-level profiles of the folios each region cross-references?~~ **ANSWERED (C1109):** No — description regions are operationally homogeneous.
 3. What is the structural relationship between the Rosettes index and the paragraph system (PSC)?
-4. What mechanism causes Stars' low AXM variance despite REGIME diversity? (Stars Paradox — C1108)
+4. ~~What mechanism causes Stars' low AXM variance despite REGIME diversity? (Stars Paradox — C1108)~~ **RESOLVED (C1111):** No mechanism needed — it's a REGIME-composition artifact. Within-REGIME, Stars is not anomalous.
 
 ### Tier 4: Rosettes Labels vs Jar Labels (Hierarchical Naming)
 

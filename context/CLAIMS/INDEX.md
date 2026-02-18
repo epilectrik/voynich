@@ -2783,7 +2783,7 @@ Tests 4 HTSC V9 cross-guarantee predictions + HT oscillation wavelength + paragr
 
 ---
 
-### Rosettes, Bridge Dynamics & Stars Characterization (C1088-C1110) — Phases: ROSETTES_SYSTEM_CLASSIFICATION, ROSETTES_STRUCTURAL_VALIDATION, BRIDGE_BACKBONE_MANUSCRIPT_SURVEY, SECTION_BRIDGE_DYNAMICS, STARS_RECIPE_CHARACTERIZATION, ROSETTES_CROSS_REFERENCE_VALIDATION
+### Rosettes, Bridge Dynamics & Stars Characterization (C1088-C1111) — Phases: ROSETTES_SYSTEM_CLASSIFICATION, ROSETTES_STRUCTURAL_VALIDATION, BRIDGE_BACKBONE_MANUSCRIPT_SURVEY, SECTION_BRIDGE_DYNAMICS, STARS_RECIPE_CHARACTERIZATION, ROSETTES_CROSS_REFERENCE_VALIDATION, STARS_PARADOX_RESOLUTION
 
 The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a 10-test battery (Phase 387), 5-test metalayer characterization (Phase 388H), 4-test structural validation (Phase 389), and 6-test bridge backbone survey (Phase 390). Finding: the Rosettes is a structural metalayer above A/B/AZC, functioning as a **universal bridge vocabulary index** — the C1090 Section T correlation is fully mediated by bridge density, and the Rosettes indexes the entire grammar's bridge backbone with no section bias.
 
@@ -2812,6 +2812,7 @@ The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a
 | **1108** | **Stars Vocabulary Clamping Falsified** (S7-S10: 0 PASS, 3 FAIL; no consistent intra-REGIME clamping, no e-mediation, no bridge mediation, vocabulary LESS homogeneous across REGIMEs; Stars Paradox remains open) | 2 | B | -> [C1108_stars_clamping_falsified.md](C1108_stars_clamping_falsified.md) |
 | **1109** | **Rosettes Cross-Reference is Vocabulary-Mediated, Not Process-Demonstrating** (P1-P5: 0 PASS, 1 PARTIAL, 4 FAIL; description regions homogeneous p=0.459; non-bridge vocab matches H not S; no gradient rho=-0.086; target folios not specific lift=0.996x; overall VOCABULARY_ONLY) | 2 | B | -> [C1109_rosettes_vocabulary_only_index.md](C1109_rosettes_vocabulary_only_index.md) |
 | **1110** | **CENTER Convergence Node Directionally Confirmed** (P6 PASS: tgt_fraction 0.458 > NORTH 0.333 > VERT 0.375; k_pct 54.5% < NORTH 69.2% < VERT 71.9%; directional but within noise at full profile level p=0.459) | 2 | AZC | -> [C1110_center_convergence_directional.md](C1110_center_convergence_directional.md) |
+| **1111** | **Stars Paradox is REGIME Composition Artifact** (Gate 1.2 FAIL: within-REGIME Stars not anomalous; R1 ratio=1.45 p=0.075, R3 ratio=0.60 wrong direction; 0/11 mechanism tests PASS; LINK/CC/paragraph/forbidden all comprehensively falsified; C979 strengthened) | 2 | B | -> [C1111_stars_paradox_regime_artifact.md](C1111_stars_paradox_regime_artifact.md) |
 
 **Phase 387-388H findings:**
 - Rosettes is NOT classifiable as pure A, B, or AZC — it is a metalayer
@@ -2869,6 +2870,24 @@ The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a
 - C757.a: Rosettes excluded from zero kernel/LINK scope
 - C1090: Qualified by C1100 — Jaccard size artifact, bridge-mediated
 - C1102: Resolved by C1103 — pure section confound
+
+**Phase 394 findings (Stars Paradox Resolution):**
+- Stars Paradox is a REGIME-composition artifact: within-REGIME Stars is NOT anomalous
+- REGIME_1: Stars var=0.00444 vs NS var=0.00643 (ratio 1.45, p=0.075, NS)
+- REGIME_3: Stars var=0.00662 vs NS var=0.00396 (ratio 0.60 — non-Stars MORE convergent!)
+- Stars (0.00525) and Bio (0.00590) have near-identical AXM variance — Herbal is the outlier (0.01303)
+- All 4 alternative mechanisms comprehensively falsified (0/11 sub-tests PASS)
+- LINK regulation: zero within-Stars correlation, +5% variance on removal
+- CC channeling: Stars entropy HIGHER (wrong direction), routing WIDER (wrong direction)
+- Paragraph constraint: Stars JSD HIGHER than Bio (wrong direction)
+- De facto forbidden: Stars has FEWER zero-transitions (-25.5%, opposite prediction)
+- Overall: PARADOX_NOT_CONFIRMED — REGIME system (C979) is sufficient
+- C1084 qualified: section AXM ordering is REGIME-composition effect, not section-intrinsic
+
+**Constraint modifications:**
+- C979: Strengthened — no section-specific topology modifier needed
+- C1084: Qualified — section AXM ordering is REGIME-composition effect
+- C1108: Resolved — Stars Paradox and all untested mechanisms now addressed
 
 ---
 
