@@ -334,6 +334,27 @@ Phase 377 synthesized how the Voynich's constraint system relates to the Galenic
 
 The consistent direction across all 6 axes — toward greater abstraction, higher resolution, and structural enforcement of what had been narrative guidelines — suggests a designer who understood the Galenic organizational logic and re-implemented it in a more precise notation system.
 
+### From Material Matrix to Process Matrix (Tier 4)
+
+The Galenic 4x4 matrix classifies **things** — what a material IS (hot, cold, dry, humid at degrees 1-4). The Voynich system classifies **actions** — what an operator DOES (energy input, monitoring, scaffolding, flow control at varying intensities). The organizational principle is the same (multi-axis classification with graduated intensity and hazard at the extremes), but the subject changed from materials to procedures.
+
+The token morphology itself is this process matrix in action: PREFIX selects the operational axis (analogous to Galenic quality) and MIDDLE selects the specific operation within that axis (analogous to Galenic degree). C1019 confirmed mathematically that the morphological system has genuine multi-dimensional matrix structure (rank-8 tensor, 97% variance, pairwise-sufficient).
+
+The transition wasn't a clean break — traces of the Galenic starting point survive. The following table is **illustrative, not tested** — the specific quality-to-channel mappings are plausible interpretive parallels, not statistically validated correspondences. What IS validated is the structural fact that only 6% of hazards are thermal (Tier 0) and that the organizational architecture aligns with Galenic logic (Phase 376, 3/4 PASS):
+
+| Galenic axis | Possible Voynich parallel | Structural evidence |
+|---|---|---|
+| Hot | qo energy channel | ENERGY_OVERSHOOT hazard (6%) — the one dimension with direct Galenic overlap |
+| Cold | ch/sh monitoring pair | Sensory assessment role (C929) — parallel to Galenic sensory quality testing |
+| Dry | Phase/composition tracking | PHASE_ORDERING (41%), COMPOSITION_JUMP (24%) — no direct Galenic parallel |
+| Humid | Flow/containment tracking | CONTAINMENT_TIMING (24%), RATE_MISMATCH (6%) — no direct Galenic parallel |
+
+ENERGY_OVERSHOOT accounts for only 6% of all forbidden transitions — the one hazard dimension that maps to the Galenic temperature axis. The other 94% represents process-specific hazards (phase ordering, purity, containment, flow balance) that have no parallel in Galenic material classification. These hazards arise from the physics of phase transitions in sealed apparatus — failure modes that simply don't exist in open-bench pharmacy. Whether this 6% figure reflects direct Galenic inheritance or simply the rarity of thermal damage in distillation is an open question.
+
+Brunschwig (1500) provides evidence of this transition in progress. He explicitly started from the Galenic framework but collapsed 4 quality axes to just 1 (fire degree) because heat is the only quality a distiller directly controls. But one axis proved too simple — it can't encode phase ordering or containment timing. The Voynich author went further: kept the multi-axis architecture, but rebuilt the axes around what a process operator actually needs to track.
+
+Phase 378 confirmed the boundary: the Galenic framework predicts the organizational **shape** of the Voynich system (3/4 structural tests pass) but fails at the recipe **level** (0/3 physics tests pass). The architecture transferred; the specific content was rebuilt for a harder problem.
+
 ### What This Means
 
 A 670-year-old classification framework, developed for an entirely different purpose (pharmacological theory), independently predicts 3 of 4 structural properties of a system derived purely from computational analysis of the manuscript. The constraint system was built bottom-up with zero reference to medieval classification. The Galenic framework was applied top-down from historical sources. The convergence is non-trivial.
