@@ -1,8 +1,8 @@
 # Rupescissa Galenic Framework Fits
 
-**Phase:** RUPESCISSA_REVERSE_TEST + GALENIC_ENHANCEMENT_SYNTHESIS
-**Date:** 2026-02-15
-**Status:** COMPLETE
+**Phase:** RUPESCISSA_REVERSE_TEST + GALENIC_ENHANCEMENT_SYNTHESIS + GALENIC_PARALLEL_TESTS
+**Date:** 2026-02-17
+**Status:** COMPLETE (updated Phase 384)
 
 ---
 
@@ -86,8 +86,32 @@ If fewer than 4/6 axes showed the same directional pattern (abstraction + resolu
 3. No decipherment implications
 4. No claim of unique fit (other frameworks might also align)
 
+### Phase 384 Update: Quantitative Grammar-Level Tests
+
+Phase 384 tested whether the Galenic framework leaves measurable fingerprints in the quantitative grammar itself (not just organizational alignment). Five tests, designed with expert validation:
+
+| # | Test | Galenic Prediction | Result |
+|---|------|-------------------|--------|
+| T1 | Class-specific recovery | Oppositional correction per hazard class | PASS (confounded*) |
+| T2 | Degree-4 universality | Rare MIDDLEs = universally hazard-adjacent | **FAIL** (OPPOSITE: COMMON=DANGER) |
+| T3 | Section predicts AXM | External metadata explains dynamics | **PASS** (eta-sq=0.355) |
+| T4 | Elemental kernel grammar | k/h/e potency gradient between tokens | **FAIL** (near-flat ratios) |
+| T5 | Concoction duration | Non-linear paragraph scaling | **FAIL** (R2=0.997 linear) |
+
+*T1 confounded: RATE_MISMATCH class (single forbidden pair or->dal) drives the chi-square; may be token-specific artifact, not class-level effect.
+
+**Key findings:**
+- **T2 (COMMON=DANGER):** All 6 PREFIX channels show positive rho (0.15-0.25): more frequent MIDDLEs are closer to hazards. This is the OPPOSITE of Galenic Degree-4 theory (rare = universally dangerous). Already derivable from C1000 (HUB_UNIVERSAL monopolizes hazards) + C986 (hub = frequency gradient). Galenic Degree-4 rarity prediction: **FALSIFIED**.
+- **T3 (Section-AXM ordering):** New constraint C1084. Section explains 35.5% of AXM variance: B(0.754) > S(0.687) > C(0.635) > H(0.587). Decomposes C1017 baseline. Not uniquely Galenic — any domain-spanning system would show section effects.
+- **T4:** C521's one-way valve operates within compound MIDDLEs (construction layer, C522), not between consecutive tokens (execution layer). Galenic elemental grammar: **FALSIFIED** at execution level.
+- **T5:** Paragraph length scales perfectly linearly with PP count. Galenic concoction kinetics (diminishing returns): **FALSIFIED**. Consistent with C963 (body homogeneity).
+
+**Revised assessment:** The Galenic framework is the author's TRAINING BACKGROUND, not the system's DESIGN PRINCIPLE. Organizational-level alignment (6/6 directional coherence, Phase 376-377) is confirmed. Grammar-level Galenic predictions: **0/4** where they make specific structural claims. The author transcended their intellectual framework when designing the control grammar.
+
 ### Files
 
 - Phase 376: `phases/RUPESCISSA_REVERSE_TEST/scripts/rupescissa_reverse_test.py`
 - Phase 376 results: `phases/RUPESCISSA_REVERSE_TEST/results/galenic_test_summary.json`
 - Phase 377 synthesis: `context/SPECULATIVE/rupescissa_comparative.md` (Phase 377 section)
+- Phase 384: `phases/GALENIC_PARALLEL_TESTS/scripts/galenic_tests.py`
+- Phase 384 results: `phases/GALENIC_PARALLEL_TESTS/results/galenic_test_results.json`

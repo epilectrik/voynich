@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 948 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 949 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -354,6 +354,21 @@ ENERGY_OVERSHOOT accounts for only 6% of all forbidden transitions — the one h
 Brunschwig (1500) provides evidence of this transition in progress. He explicitly started from the Galenic framework but collapsed 4 quality axes to just 1 (fire degree) because heat is the only quality a distiller directly controls. But one axis proved too simple — it can't encode phase ordering or containment timing. The Voynich author went further: kept the multi-axis architecture, but rebuilt the axes around what a process operator actually needs to track.
 
 Phase 378 confirmed the boundary: the Galenic framework predicts the organizational **shape** of the Voynich system (3/4 structural tests pass) but fails at the recipe **level** (0/3 physics tests pass). The architecture transferred; the specific content was rebuilt for a harder problem.
+
+### Grammar-Level Tests (Phase 384)
+
+Phase 384 pushed deeper, testing whether the Galenic framework left quantitative fingerprints in the grammar itself — not just organizational alignment, but specific predictions the Galenic system makes about how numbers should behave.
+
+| Test | Galenic Prediction | Result |
+|------|-------------------|--------|
+| Degree-4 universality | Rare operations are universally dangerous | **FAIL** — opposite is true: COMMON operations are closest to hazards (rho=0.15-0.25 across all channels) |
+| Elemental kernel grammar | k/h/e transitions follow potency gradient between tokens | **FAIL** — between-token transitions are flat; the one-way valve (C521) is a within-MIDDLE construction property |
+| Concoction duration | Processing time scales non-linearly with material complexity | **FAIL** — paragraph length is perfectly linear with PP count (R2=0.997) |
+| Section predicts dynamics | Subject matter shapes program style | **PASS** — section explains 35.5% of AXM variance: Bio programs most stable (0.754), Herbal most diverse (0.587) |
+
+Score: **1/4 grammar-level Galenic predictions confirmed** — and the one that passed (section-dependent dynamics) isn't uniquely Galenic; any domain-spanning system would show it.
+
+**The conclusion sharpened:** The Galenic framework is the author's *training background*, not the system's *design principle*. The author organized their work using Galenic categories (organizational alignment confirmed, 6/6 axes) but the control grammar they built transcended the Galenic framework at every quantitative level. Common operations cluster near hazards (pragmatic engineering, not degree theory). Processing scales linearly (efficient design, not concoction kinetics). The construction-layer asymmetry (C521) exists but doesn't propagate to execution-layer elemental ordering.
 
 ### What This Means
 

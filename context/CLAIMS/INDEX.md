@@ -2755,6 +2755,12 @@ Tests 4 HTSC V9 cross-guarantee predictions + HT oscillation wavelength + paragr
 | **1082** | **HT Oscillation Is Section-Driven** (raw ACF significant at lags 1,2,4,6,20; section-residualized: only lag 7 survives; no lag 8-12 signal; resolves open question) | 2 | B | -> [C1082_ht_oscillation_section_driven.md](C1082_ht_oscillation_section_driven.md) |
 | **1083** | **HT Density Is Paragraph-Ordinal Neutral** (rho=0.018, p=0.69; first vs last MW p=0.086 NS; confirms C855 parallel programs; negative control PASS) | 2 | B | -> [C1083_ht_paragraph_ordinal_neutral.md](C1083_ht_paragraph_ordinal_neutral.md) |
 
+### Galenic Parallel Tests (C1084) — Phase: GALENIC_PARALLEL_TESTS
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1084** | **Section-Specific AXM Attractor Ordering** (KW H=29.9, p<0.0001, eta-sq=0.355; B(0.754) > S(0.687) > C(0.635) > H(0.587); decomposes C1017 baseline; survives REGIME control) | 2 | B | -> [C1084_section_specific_axm_attractor_ordering.md](C1084_section_specific_axm_attractor_ordering.md) |
+
 ---
 
 ## Navigation

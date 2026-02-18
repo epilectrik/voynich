@@ -6,6 +6,7 @@
 **Extends:** C1017 (40% residual identified), C1018 (archetype slope anomalies)
 **Strengthens:** C458 (hazard clamped, recovery free), C980 (free variation envelope 66.3%)
 **Relates to:** C1016 (folio archetypes), C605 (QO lane balance), C1007 (gatekeeper classes), C800 (HT density), C855 (paragraphs as parallel programs)
+**Scope note:** Irreducible to internal STRUCTURAL predictors. Section (external subject-matter classification) explains 35.5% of AXM variance but is already part of C1017 baseline — see C1084.
 
 ---
 
