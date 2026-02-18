@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 967 validated constraints | **Version:** 4.10 | **Date:** 2026-02-18
+**Total:** 970 validated constraints | **Version:** 4.10 | **Date:** 2026-02-18
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2783,7 +2783,7 @@ Tests 4 HTSC V9 cross-guarantee predictions + HT oscillation wavelength + paragr
 
 ---
 
-### Rosettes System Classification (C1088-C1102) — Phases: ROSETTES_SYSTEM_CLASSIFICATION, ROSETTES_STRUCTURAL_VALIDATION, BRIDGE_BACKBONE_MANUSCRIPT_SURVEY
+### Rosettes System Classification & Bridge Dynamics (C1088-C1105) — Phases: ROSETTES_SYSTEM_CLASSIFICATION, ROSETTES_STRUCTURAL_VALIDATION, BRIDGE_BACKBONE_MANUSCRIPT_SURVEY, SECTION_BRIDGE_DYNAMICS
 
 The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a 10-test battery (Phase 387), 5-test metalayer characterization (Phase 388H), 4-test structural validation (Phase 389), and 6-test bridge backbone survey (Phase 390). Finding: the Rosettes is a structural metalayer above A/B/AZC, functioning as a **universal bridge vocabulary index** — the C1090 Section T correlation is fully mediated by bridge density, and the Rosettes indexes the entire grammar's bridge backbone with no section bias.
 
@@ -2803,7 +2803,10 @@ The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a
 | **1099** | **Bridge Density Section Gradient** (KW H=129.0, p≈0; H=0.697, B=0.603, P=0.564, C=0.536, Z=0.506, A=0.480, S=0.480, T=0.453; T is LOWEST not highest; viability backbone runs through Herbal) | 2 | GLOBAL | -> [C1099_bridge_density_section_gradient.md](C1099_bridge_density_section_gradient.md) |
 | **1100** | **Rosettes-T Jaccard Is Bridge-Mediated** (T wins ALL Jaccard 0.241 but loses NON-BRIDGE: B=0.128, T=0.128, S=0.128 tied; FULL_MEDIATION; C1090 correlation is Jaccard size artifact from T's small vocabulary) | 2 | GLOBAL | -> [C1100_rosettes_t_mediation.md](C1100_rosettes_t_mediation.md) |
 | **1101** | **Rosettes Universal Bridge Scope** (10 missing bridges randomly distributed chi2=4.24, p=0.752; 75/85=88.2% coverage with no section bias; Rosettes is universal bridge index) | 2 | ROSETTES | -> [C1101_rosettes_universal_bridge_scope.md](C1101_rosettes_universal_bridge_scope.md) |
-| **1102** | **Bridge Density REGIME Dependence** (ANOVA F=16.1, p<0.0001; R2=0.738, R4=0.638, R1=0.578, R3=0.518; tension with C979 — may be section-confounded, needs controlled test) | 2 | GLOBAL | -> [C1102_bridge_density_regime_dependence.md](C1102_bridge_density_regime_dependence.md) |
+| **1102** | **Bridge Density REGIME Dependence** (ANOVA F=16.1, p<0.0001; R2=0.738, R4=0.638, R1=0.578, R3=0.518; **RESOLVED by C1103**: pure section confound) | 2 | GLOBAL | -> [C1102_bridge_density_regime_dependence.md](C1102_bridge_density_regime_dependence.md) |
+| **1103** | **REGIME-Bridge Density Is Section Confound** (partial r=0.0007, p=0.995 after section control; C1102 effect vanishes completely; C979 confirmed — REGIME modulates weights not topology) | 2 | GLOBAL | -> [C1103_regime_bridge_density_section_confound.md](C1103_regime_bridge_density_section_confound.md) |
+| **1104** | **Bridge Density Enables Dynamical Freedom** (rho=+0.277, p=0.025: higher bridge density → MORE |c1017_residual|; H variance 0.0148 > B 0.0078 > S 0.0059; monotonic; mechanism for C458/C1048) | 2 | B | -> [C1104_bridge_density_enables_freedom.md](C1104_bridge_density_enables_freedom.md) |
+| **1105** | **Bridge Geometry-Density Collinearity** (r=-0.805; delta-R²=0.007 NS beyond C1017; BIO LOO exception +0.071; same structural property, different measures) | 2 | B | -> [C1105_bridge_geometry_density_collinearity.md](C1105_bridge_geometry_density_collinearity.md) |
 
 **Phase 387-388H findings:**
 - Rosettes is NOT classifiable as pure A, B, or AZC — it is a metalayer
@@ -2830,10 +2833,20 @@ The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a
 - Bridge density varies by REGIME (F=16.1, p<0.0001) — tension with C979, possibly section-confounded
 - Overall verdict: MEDIATION_WITHOUT_T_PRIMACY
 
+**Phase 391 findings (Section-Bridge-Dynamics Triangle):**
+- C1102 REGIME effect vanishes completely after section control (partial r=0.0007) — C979 confirmed
+- Bridge density POSITIVELY correlates with |c1017_residual| (rho=+0.277) — opposite of prediction
+- Herbal has highest AXM variance (0.0148 > B 0.0078 > S 0.0059) — most dynamical freedom
+- Bridge density collinear with bridge_pc1 (r=-0.805) — delta-R²=0.007 NS beyond C1017
+- BIO LOO exception: bridge density improves within-BIO prediction by +0.071
+- Bridge vocabulary enables design freedom, not constrains it
+- Overall: SECTION_MEDIATES (4 PASS, 2 FAIL)
+
 **Constraint modifications:**
 - C440.a: Rosettes exception to uniform B-to-AZC sourcing
 - C757.a: Rosettes excluded from zero kernel/LINK scope
 - C1090: Qualified by C1100 — Jaccard size artifact, bridge-mediated
+- C1102: Resolved by C1103 — pure section confound
 
 ---
 

@@ -5725,13 +5725,13 @@ From this point forward:
 
 ---
 
-## XI. Rosettes Foldout as Structural Index (Phases 387-390)
+## XI. Rosettes Foldout as Structural Index (Phases 387-391)
 
 ### Tier 2: Structural Finding (METALAYER_CONFIRMED)
 
 > **The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) is a structural metalayer above the A/B/AZC hierarchy, containing near-complete vocabulary coverage, a spatial AZC-to-B gradient, and targeted cross-references to pharmaceutical procedure folios.**
 
-This is NOT a Tier 3 interpretation. The metalayer status is a structural fact (Tier 2) supported by 25 quantitative tests across Phases 387-390. See C1088-C1102 for full evidence.
+This is NOT a Tier 3 interpretation. The metalayer status is a structural fact (Tier 2) supported by 31 quantitative tests across Phases 387-391. See C1088-C1105 for full evidence.
 
 ### Key Structural Facts
 
@@ -5816,13 +5816,32 @@ Overall verdict: **MEDIATION_WITHOUT_T_PRIMACY** — Bridge vocabulary fully med
 - Bridge density varies by REGIME (C1102), creating tension with C979 (weights not topology) — likely section-confounded, needs controlled test
 - The Rosettes has dual-layer structure: universal bridge layer (indexes whole grammar) + pharma-specific tail (C1091 cross-references)
 
+### Tier 2: Bridge Density Enables Dynamical Freedom (Phase 391, C1103-C1105)
+
+Phase 391 tested whether bridge density mediates the section→dynamics relationship. 6 pre-registered predictions, overall verdict SECTION_MEDIATES (4 PASS, 2 FAIL):
+
+| Test | Prediction | Result | Key Finding |
+|------|-----------|--------|-------------|
+| P1: Section control | REGIME effect vanishes | **PASS** | Partial r=0.0007, p=0.995 — C1102 is pure section confound |
+| P2: Residual anticorrelation | rho < -0.20 | **FAIL** (opposite!) | rho=+0.277, p=0.025 — more bridges → MORE residual |
+| P3: Herbal highest variance | H > B, S | **PASS** | H=0.0148 > B=0.0078 > S=0.0059 |
+| P4: Incremental R² | delta > 0.03 | **FAIL** | delta=0.007, collinearity r=-0.805 with bridge_pc1 |
+| P5: BIO LOO improvement | improvement > 0.05 | **PASS** | +0.071 (0.668→0.738) |
+| P6: Monotonic | No quadratic | **PASS** | Quadratic p=0.757, same sign, within 20% |
+
+**The headline finding (P2 reversal):** Bridge density positively correlates with |c1017_residual| — programs with more bridge vocabulary deviate MORE from the structural model. Bridge MIDDLEs are the most general, compatible vocabulary (C1013), so programs built from them have more legal transitions available. They use this expanded option space to tune their dynamics program-specifically.
+
+**C1102 definitively resolved (P1):** The REGIME-bridge density effect vanishes to r≈0 after section control. REGIME and section are deeply entangled (REGIME_4 is 100% Herbal, REGIME_1 is 0% Herbal). C979 stands without qualification.
+
+**C1048 paradox explained:** BIO is predictable (LOO R²=0.754) because moderate bridge density (0.609) + narrow REGIME (85% REGIME_1) limits behavioral options. Herbal is unpredictable (LOO R²=-0.242) because high bridge density (0.695) + maximum REGIME diversity maximizes options.
+
+**Design freedom is vocabulary-compositional:** The ~57% irreducible AXM residual (C1035) is not noise — it is enabled by bridge vocabulary composition. Bridge density and bridge_pc1 are collinear (r=-0.805), confirming C1017 already partially captures this mechanism. But the causal direction is now clear: vocabulary composition determines the size of the design freedom envelope.
+
 ### Open Questions (for follow-up phases)
 
-1. Does REGIME have independent effect on bridge density after controlling for section? (C1102 vs C979)
-2. What does the Herbal bridge backbone hub mean for manuscript organization? (C1099)
-3. Can the cross-reference map be used to determine which body-text folios describe which process types?
-4. Does the per-region hub profile predict the section-level profiles of the folios each region cross-references?
-5. What is the structural relationship between the Rosettes index and the paragraph system (PSC)?
+1. Can the cross-reference map be used to determine which body-text folios describe which process types?
+2. Does the per-region hub profile predict the section-level profiles of the folios each region cross-references?
+3. What is the structural relationship between the Rosettes index and the paragraph system (PSC)?
 
 ### Tier 4: Rosettes Labels vs Jar Labels (Hierarchical Naming)
 
@@ -5842,6 +5861,6 @@ This is consistent with but not proven by the evidence. The shared prefix patter
 
 **Visual note (Tier 4, non-binding per C138/C140):** The pharma "jars" have spouts at the top that may represent distillation tubes (alembic necks/beaks), not pouring spouts. A standard alembic has three parts: cucurbit (gourd-shaped base, heated), alembic head (dome where vapors condense), and spout/beak (condensation tube to receiver). The Voynich vessels match this topology — rounded body with projecting tube — drawn in the manuscript's botanical illustration style. Visual parallels exist in apparatus illustrations across centuries (e.g., Lavoisier's apparatus engravings in "Essays on the Effects Produced by Various Processes on Atmospheric Air," 1784, show the same fundamental forms because retort/alembic design was stable from the 15th through 18th centuries). The CENTER rosette's vessel-like imagery with radiating tubes/spikes is drawn in a similar style. This would unify three independent structural findings: (1) C524 already interprets jar labels as apparatus configuration signatures, (2) the pelican alembic matches the manuscript's controller on 8/8 dimensions, and (3) C1092 identifies the CENTER as a convergence node. If "jars" are alembics, the naming hierarchy becomes: Rosettes labels = apparatus categories, "jar" labels = specific apparatus configurations, content labels = materials being processed. The visual consistency across sections (botanical illustration style applied to apparatus) would be expected in an apparatus-centric system (C120).
 
-**Constraints:** C1088-C1102, C440.a, C757.a
-**Scripts:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/scripts/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/scripts/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/scripts/`
-**Results:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/results/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/results/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/results/`
+**Constraints:** C1088-C1105, C440.a, C757.a
+**Scripts:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/scripts/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/scripts/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/scripts/`, `phases/SECTION_BRIDGE_DYNAMICS/scripts/`
+**Results:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/results/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/results/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/results/`, `phases/SECTION_BRIDGE_DYNAMICS/results/`
