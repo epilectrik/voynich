@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 973 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 975 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (973 validated)
+- Tier 0-2 binding constraints (975 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 973 constraints, 66 fits,
+full content in their source documents. All 975 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-18 17:09
-**Version:** FROZEN STATE (973 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-18 17:53
+**Version:** FROZEN STATE (975 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -1101,7 +1101,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 976 constraints | 2026-02-18
+CONSTRAINT_REFERENCE v2.6 | 978 constraints | 2026-02-18
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2082,6 +2082,8 @@ C1108	**Stars Vocabulary Clamping Falsified** (S7-S10: 0 PASS, 3 FAIL; no consis
 C1109	**Rosettes Cross-Reference is Vocabulary-Mediated, Not Process-Demonstrating**
 C1110	**CENTER Convergence Node Directionally Confirmed**
 C1111	**Stars Paradox is REGIME Composition Artifact**
+C1112	**P-Text Bridge Enrichment at Extreme Levels** (45.5% bridge MIDDLEs, 100th percentile of A; exceeds Rosettes 24.4%; affordance cosine 0.925 with Rosettes; non-bridge B-transmission 60.6% — bridges do not fully explain C486)
+C1113	**P-Text and Rosettes Share Unified Bridge-Vocabulary Indexing System**
 
 ---
 
@@ -4422,6 +4424,11 @@ Phase 392 tested whether Stars is structurally distinct and whether vocabulary c
 
 
 
+
+- **P-text** is bridge-enriched at 45.5% (C1112) — the highest bridge concentration in the manuscript, exceeding even Rosettes (24.4%). Located on 9 AZC folios alongside zodiac diagrams.
+
+
+
 ### Tier 4: Rosettes Labels vs Jar Labels (Hierarchical Naming)
 
 Rosettes labels and pharma jar labels (C523-C524) are **different systems** operating at different abstraction levels. Zero exact word overlap, different lengths (jars 7.2 chars vs Rosettes 5.3), different text presence (jars 0% in B vs Rosettes 49%). But both share material-facing prefix patterns: ok- and da- dominant, ch-/sh- (energy operations) largely avoided. One rare MIDDLE (`opar`) appears in both systems.
@@ -4440,9 +4447,9 @@ This is consistent with but not proven by the evidence. The shared prefix patter
 
 **Visual note (Tier 4, non-binding per C138/C140):** The pharma "jars" have spouts at the top that may represent distillation tubes (alembic necks/beaks), not pouring spouts. A standard alembic has three parts: cucurbit (gourd-shaped base, heated), alembic head (dome where vapors condense), and spout/beak (condensation tube to receiver). The Voynich vessels match this topology — rounded body with projecting tube — drawn in the manuscript's botanical illustration style. Visual parallels exist in apparatus illustrations across centuries (e.g., Lavoisier's apparatus engravings in "Essays on the Effects Produced by Various Processes on Atmospheric Air," 1784, show the same fundamental forms because retort/alembic design was stable from the 15th through 18th centuries). The CENTER rosette's vessel-like imagery with radiating tubes/spikes is drawn in a similar style. This would unify three independent structural findings: (1) C524 already interprets jar labels as apparatus configuration signatures, (2) the pelican alembic matches the manuscript's controller on 8/8 dimensions, and (3) C1092 identifies the CENTER as a convergence node. If "jars" are alembics, the naming hierarchy becomes: Rosettes labels = apparatus categories, "jar" labels = specific apparatus configurations, content labels = materials being processed. The visual consistency across sections (botanical illustration style applied to apparatus) would be expected in an apparatus-centric system (C120).
 
-**Constraints:** C1088-C1108, C440.a, C757.a
-**Scripts:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/scripts/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/scripts/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/scripts/`, `phases/SECTION_BRIDGE_DYNAMICS/scripts/`, `phases/STARS_RECIPE_CHARACTERIZATION/scripts/`
-**Results:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/results/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/results/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/results/`, `phases/SECTION_BRIDGE_DYNAMICS/results/`, `phases/STARS_RECIPE_CHARACTERIZATION/results/`
+**Constraints:** C1088-C1113, C440.a, C757.a
+**Scripts:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/scripts/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/scripts/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/scripts/`, `phases/SECTION_BRIDGE_DYNAMICS/scripts/`, `phases/STARS_RECIPE_CHARACTERIZATION/scripts/`, `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/scripts/`
+**Results:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/results/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/results/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/results/`, `phases/SECTION_BRIDGE_DYNAMICS/results/`, `phases/STARS_RECIPE_CHARACTERIZATION/results/`, `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/results/`
 
 
 ---

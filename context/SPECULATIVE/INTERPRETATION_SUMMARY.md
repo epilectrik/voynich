@@ -5877,8 +5877,21 @@ The Rosettes connects to its targets through shared bridge vocabulary (C1100), n
 
 1. ~~Can the cross-reference map be used to determine which body-text folios describe which process types?~~ **ANSWERED (C1109):** No — the cross-reference is vocabulary-mediated, not process-demonstrating.
 2. ~~Does the per-region hub profile predict the section-level profiles of the folios each region cross-references?~~ **ANSWERED (C1109):** No — description regions are operationally homogeneous.
-3. What is the structural relationship between the Rosettes index and the paragraph system (PSC)?
+3. ~~What is the structural relationship between the Rosettes index and the paragraph system (PSC)?~~ **ANSWERED (C1113):** Unified bridge-vocabulary indexing system — P-text and Rosettes labels converge on the same B paragraphs (rho=0.642, p~10^-70), with affordance signature matching paragraph headers (cosine=0.949). Indexing is vocabulary-mediated and paragraph-level, not folio-level.
 4. ~~What mechanism causes Stars' low AXM variance despite REGIME diversity? (Stars Paradox — C1108)~~ **RESOLVED (C1111):** No mechanism needed — it's a REGIME-composition artifact. Within-REGIME, Stars is not anomalous.
+
+### Unified Indexing Architecture (Phase 395)
+
+Phase 395 discovered that P-text (Currier A-like tokens on AZC folios) and Rosettes labels are components of a unified bridge-vocabulary indexing system:
+
+- **P-text** is bridge-enriched at 45.5% (C1112) — the highest bridge concentration in the manuscript, exceeding even Rosettes (24.4%). Located on 9 AZC folios alongside zodiac diagrams.
+- **Rosettes labels** share 72 MIDDLEs with P-text (Jaccard=0.210, p=0.0000) — far above random A vocabulary baseline.
+- **Both converge on the same B paragraphs** (Spearman rho=0.642, p~10^-70), with the unified index vocabulary matching B paragraph header affordance profiles (cosine=0.949).
+- **The indexing is vocabulary-mediated, not positional**: bridge MIDDLEs are ubiquitous throughout paragraphs (I5 FAIL), and the system targets paragraphs, not specific folios (I2 FAIL).
+
+This completes the picture: the manuscript has a three-layer indexing architecture where P-text and Rosettes labels act as vocabulary-mediated cross-references to B paragraph procedures. The indexing operates through shared MIDDLE vocabulary (bridge MIDDLEs), not through position, process type, or folio targeting.
+
+**Constraints:** C1112 (P-text bridge enrichment), C1113 (unified indexing architecture)
 
 ### Tier 4: Rosettes Labels vs Jar Labels (Hierarchical Naming)
 
@@ -5898,6 +5911,6 @@ This is consistent with but not proven by the evidence. The shared prefix patter
 
 **Visual note (Tier 4, non-binding per C138/C140):** The pharma "jars" have spouts at the top that may represent distillation tubes (alembic necks/beaks), not pouring spouts. A standard alembic has three parts: cucurbit (gourd-shaped base, heated), alembic head (dome where vapors condense), and spout/beak (condensation tube to receiver). The Voynich vessels match this topology — rounded body with projecting tube — drawn in the manuscript's botanical illustration style. Visual parallels exist in apparatus illustrations across centuries (e.g., Lavoisier's apparatus engravings in "Essays on the Effects Produced by Various Processes on Atmospheric Air," 1784, show the same fundamental forms because retort/alembic design was stable from the 15th through 18th centuries). The CENTER rosette's vessel-like imagery with radiating tubes/spikes is drawn in a similar style. This would unify three independent structural findings: (1) C524 already interprets jar labels as apparatus configuration signatures, (2) the pelican alembic matches the manuscript's controller on 8/8 dimensions, and (3) C1092 identifies the CENTER as a convergence node. If "jars" are alembics, the naming hierarchy becomes: Rosettes labels = apparatus categories, "jar" labels = specific apparatus configurations, content labels = materials being processed. The visual consistency across sections (botanical illustration style applied to apparatus) would be expected in an apparatus-centric system (C120).
 
-**Constraints:** C1088-C1108, C440.a, C757.a
-**Scripts:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/scripts/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/scripts/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/scripts/`, `phases/SECTION_BRIDGE_DYNAMICS/scripts/`, `phases/STARS_RECIPE_CHARACTERIZATION/scripts/`
-**Results:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/results/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/results/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/results/`, `phases/SECTION_BRIDGE_DYNAMICS/results/`, `phases/STARS_RECIPE_CHARACTERIZATION/results/`
+**Constraints:** C1088-C1113, C440.a, C757.a
+**Scripts:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/scripts/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/scripts/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/scripts/`, `phases/SECTION_BRIDGE_DYNAMICS/scripts/`, `phases/STARS_RECIPE_CHARACTERIZATION/scripts/`, `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/scripts/`
+**Results:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/results/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/results/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/results/`, `phases/SECTION_BRIDGE_DYNAMICS/results/`, `phases/STARS_RECIPE_CHARACTERIZATION/results/`, `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/results/`

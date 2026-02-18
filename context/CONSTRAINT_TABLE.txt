@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 976 constraints | 2026-02-18
+CONSTRAINT_REFERENCE v2.6 | 978 constraints | 2026-02-18
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -980,3 +980,5 @@ C1108	**Stars Vocabulary Clamping Falsified** (S7-S10: 0 PASS, 3 FAIL; no consis
 C1109	**Rosettes Cross-Reference is Vocabulary-Mediated, Not Process-Demonstrating** (P1-P5: 0 PASS, 1 PARTIAL, 4 FAIL; description regions homogeneous p=0.459; non-bridge vocab matches H not S; no gradient rho=-0.086; target folios not specific lift=0.996x; overall VOCABULARY_ONLY)	2	B	-> C1109_rosettes_vocabulary_only_index.md
 C1110	**CENTER Convergence Node Directionally Confirmed** (P6 PASS: tgt_fraction 0.458 > NORTH 0.333 > VERT 0.375; k_pct 54.5% < NORTH 69.2% < VERT 71.9%; directional but within noise at full profile level p=0.459)	2	AZC	-> C1110_center_convergence_directional.md
 C1111	**Stars Paradox is REGIME Composition Artifact** (Gate 1.2 FAIL: within-REGIME Stars not anomalous; R1 ratio=1.45 p=0.075, R3 ratio=0.60 wrong direction; 0/11 mechanism tests PASS; LINK/CC/paragraph/forbidden all comprehensively falsified; C979 strengthened)	2	B	-> C1111_stars_paradox_regime_artifact.md
+C1112	**P-Text Bridge Enrichment at Extreme Levels** (45.5% bridge MIDDLEs, 100th percentile of A; exceeds Rosettes 24.4%; affordance cosine 0.925 with Rosettes; non-bridge B-transmission 60.6% — bridges do not fully explain C486)	2	AZC	-> C1112_ptext_bridge_enrichment.md
+C1113	**P-Text and Rosettes Share Unified Bridge-Vocabulary Indexing System** (I1 Jaccard=0.210 p=0.0000, 72 shared MIDDLEs; I3 paragraph convergence rho=0.642 p~10^-70; I4 affordance match cosine=0.949; synthesis: UNIFIED_INDEXING; not folio-level I2 FAIL, not positional I5 FAIL — vocabulary-mediated)	2	GLOBAL	-> C1113_unified_indexing_architecture.md

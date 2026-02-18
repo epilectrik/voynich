@@ -4,6 +4,48 @@
 
 ---
 
+## Version 4.10.9 (2026-02-18) - P-Text / Rosettes Indexing Architecture (Phase 395)
+
+### Summary
+
+Phase 395 tests whether P-text (Currier A-like tokens on AZC folios) and Rosettes labels share a unified bridge-vocabulary indexing system. 10-test battery in 2 stages: Stage 1 characterizes P-text (P1 GATE PASS, P2 PASS, P3 FAIL, P4 MODERATE, P5 FAIL-artifact), Stage 2 tests integration (I1 PASS, I2 FAIL, I3 PASS, I4 PASS, I5 FAIL). Synthesis: UNIFIED_INDEXING. 2 new constraints (C1112-C1113).
+
+Key findings:
+- **P-text is extremely bridge-enriched** (P1 PASS): 45.5% bridge MIDDLEs (55/121), at 100th percentile of A (bootstrap p95=13.2%). Exceeds Rosettes (24.4%).
+- **P-text and Rosettes share affordance profiles** (P2 PASS): Cosine 0.925, both dominated by FLOW_TERMINAL + HUB_UNIVERSAL + STABILITY_CRITICAL.
+- **Vocabulary overlap is significant** (I1 PASS): 72 shared MIDDLEs, Jaccard=0.210, p=0.0000 vs bootstrap.
+- **Paragraph-level convergence** (I3 PASS): Spearman rho=0.642, p~10^-70. Both vocabularies target the same B paragraphs.
+- **Affordance signature match** (I4 PASS): Unified index matches paragraph headers at cosine=0.949.
+- **Not folio-level** (I2 FAIL): Cross-reference targets are paragraphs, not specific folios.
+- **Not positional** (I5 FAIL): Bridge MIDDLEs are ubiquitous in paragraphs, not header-concentrated.
+
+Overall verdict: UNIFIED_INDEXING — the manuscript has a vocabulary-mediated paragraph-level indexing system spanning A, AZC, and B.
+
+### New Files
+
+| File | Purpose |
+|------|---------|
+| `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/scripts/ptext_rosettes_indexing.py` | 10-test battery |
+| `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/results/ptext_rosettes_indexing.json` | Full results |
+
+### New Constraints
+
+| # | Statement | Tier |
+|---|-----------|------|
+| C1112 | P-Text bridge enrichment at extreme levels (45.5%, 100th percentile) | 2 |
+| C1113 | P-Text and Rosettes share unified bridge-vocabulary indexing system | 2 |
+
+### Changes
+
+- `context/CLAIMS/INDEX.md`: Added C1112-C1113, Phase 395 summary
+- `CLAUDE.md`: 978 constraints, 395 phases
+- C486: Strengthened (B-transmission explained via bridge enrichment)
+- C1014: Extended (bridge MIDDLEs concentrated in P-text at 2x Rosettes)
+- C1096: Contextualized (part of unified indexing system)
+- C1109: Extended (vocabulary mediation is unified, not Rosettes-specific)
+
+---
+
 ## Version 4.10.8 (2026-02-18) - Stars Paradox Resolution (Phase 394)
 
 ### Summary

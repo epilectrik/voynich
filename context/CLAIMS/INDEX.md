@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 973 validated constraints | **Version:** 4.10 | **Date:** 2026-02-18
+**Total:** 975 validated constraints | **Version:** 4.10 | **Date:** 2026-02-18
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2783,7 +2783,7 @@ Tests 4 HTSC V9 cross-guarantee predictions + HT oscillation wavelength + paragr
 
 ---
 
-### Rosettes, Bridge Dynamics & Stars Characterization (C1088-C1111) — Phases: ROSETTES_SYSTEM_CLASSIFICATION, ROSETTES_STRUCTURAL_VALIDATION, BRIDGE_BACKBONE_MANUSCRIPT_SURVEY, SECTION_BRIDGE_DYNAMICS, STARS_RECIPE_CHARACTERIZATION, ROSETTES_CROSS_REFERENCE_VALIDATION, STARS_PARADOX_RESOLUTION
+### Rosettes, Bridge Dynamics & Stars Characterization (C1088-C1113) — Phases: ROSETTES_SYSTEM_CLASSIFICATION, ROSETTES_STRUCTURAL_VALIDATION, BRIDGE_BACKBONE_MANUSCRIPT_SURVEY, SECTION_BRIDGE_DYNAMICS, STARS_RECIPE_CHARACTERIZATION, ROSETTES_CROSS_REFERENCE_VALIDATION, STARS_PARADOX_RESOLUTION, PTEXT_ROSETTES_INDEXING_ARCHITECTURE
 
 The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a 10-test battery (Phase 387), 5-test metalayer characterization (Phase 388H), 4-test structural validation (Phase 389), and 6-test bridge backbone survey (Phase 390). Finding: the Rosettes is a structural metalayer above A/B/AZC, functioning as a **universal bridge vocabulary index** — the C1090 Section T correlation is fully mediated by bridge density, and the Rosettes indexes the entire grammar's bridge backbone with no section bias.
 
@@ -2813,6 +2813,8 @@ The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a
 | **1109** | **Rosettes Cross-Reference is Vocabulary-Mediated, Not Process-Demonstrating** (P1-P5: 0 PASS, 1 PARTIAL, 4 FAIL; description regions homogeneous p=0.459; non-bridge vocab matches H not S; no gradient rho=-0.086; target folios not specific lift=0.996x; overall VOCABULARY_ONLY) | 2 | B | -> [C1109_rosettes_vocabulary_only_index.md](C1109_rosettes_vocabulary_only_index.md) |
 | **1110** | **CENTER Convergence Node Directionally Confirmed** (P6 PASS: tgt_fraction 0.458 > NORTH 0.333 > VERT 0.375; k_pct 54.5% < NORTH 69.2% < VERT 71.9%; directional but within noise at full profile level p=0.459) | 2 | AZC | -> [C1110_center_convergence_directional.md](C1110_center_convergence_directional.md) |
 | **1111** | **Stars Paradox is REGIME Composition Artifact** (Gate 1.2 FAIL: within-REGIME Stars not anomalous; R1 ratio=1.45 p=0.075, R3 ratio=0.60 wrong direction; 0/11 mechanism tests PASS; LINK/CC/paragraph/forbidden all comprehensively falsified; C979 strengthened) | 2 | B | -> [C1111_stars_paradox_regime_artifact.md](C1111_stars_paradox_regime_artifact.md) |
+| **1112** | **P-Text Bridge Enrichment at Extreme Levels** (45.5% bridge MIDDLEs, 100th percentile of A; exceeds Rosettes 24.4%; affordance cosine 0.925 with Rosettes; non-bridge B-transmission 60.6% — bridges do not fully explain C486) | 2 | AZC | -> [C1112_ptext_bridge_enrichment.md](C1112_ptext_bridge_enrichment.md) |
+| **1113** | **P-Text and Rosettes Share Unified Bridge-Vocabulary Indexing System** (I1 Jaccard=0.210 p=0.0000, 72 shared MIDDLEs; I3 paragraph convergence rho=0.642 p~10^-70; I4 affordance match cosine=0.949; synthesis: UNIFIED_INDEXING; not folio-level I2 FAIL, not positional I5 FAIL — vocabulary-mediated) | 2 | GLOBAL | -> [C1113_unified_indexing_architecture.md](C1113_unified_indexing_architecture.md) |
 
 **Phase 387-388H findings:**
 - Rosettes is NOT classifiable as pure A, B, or AZC — it is a metalayer
@@ -2888,6 +2890,24 @@ The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a
 - C979: Strengthened — no section-specific topology modifier needed
 - C1084: Qualified — section AXM ordering is REGIME-composition effect
 - C1108: Resolved — Stars Paradox and all untested mechanisms now addressed
+
+**Phase 395 findings (P-Text / Rosettes Indexing Architecture):**
+- P-text is bridge-enriched at extreme levels: 45.5% bridge MIDDLEs (100th percentile of A, exceeds Rosettes 24.4%)
+- P-text and Rosettes share affordance bin profile (cosine 0.925): FLOW_TERMINAL, HUB_UNIVERSAL, STABILITY_CRITICAL dominant
+- P-text and Rosettes labels share 72 MIDDLEs (Jaccard=0.210, p=0.0000, far above bootstrap p95=0.070)
+- Both vocabularies converge on the SAME B paragraphs (Spearman rho=0.642, p~10^-70)
+- Unified index vocabulary matches paragraph header affordance profile (cosine 0.949)
+- NOT folio-level (I2 FAIL: target folios not preferentially selected, p=0.993)
+- NOT positional within paragraphs (I5 FAIL: bridge MIDDLEs more in body than headers)
+- Overall: UNIFIED_INDEXING — vocabulary-mediated paragraph-level cross-reference system
+- P5 kernel test is a design artifact (kernel chars k/h/e are normal in all MIDDLEs: A=36.5%, B=52.8%)
+- P3: non-bridge MIDDLEs also transmit to B at 60.6%, so bridges are necessary but not sufficient for B-transmission
+
+**Constraint modifications:**
+- C486: Strengthened — B-transmission confirmed (observed 78.5%) and explained via bridge enrichment
+- C1014: Extended — bridge MIDDLEs specifically concentrated in P-text at 2x Rosettes level
+- C1096: Contextualized — Rosettes bridge enrichment is part of unified P-text + Rosettes indexing system
+- C1109: Extended — vocabulary-mediated cross-reference is not Rosettes-specific but part of unified system
 
 ---
 
