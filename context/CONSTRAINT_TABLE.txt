@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 973 constraints | 2026-02-18
+CONSTRAINT_REFERENCE v2.6 | 975 constraints | 2026-02-18
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -977,3 +977,5 @@ C1105	**Bridge Geometry-Density Collinearity** (r=-0.805; delta-R²=0.007 NS bey
 C1106	**Stars e-Stability Kernel Enrichment** (e=66.2% vs 57.4% NS, k=23.9% vs 32.5%; chi2=145, p=3.3e-32; survives REGIME_1 control chi2=89, p=4.7e-20; 5/8 dimensions diverge in R1)	2	B	-> C1106_stars_e_stability_enrichment.md
 C1107	**Stars LINK Monitoring Concentration** (7.4x LINK density: 0.032 vs 0.004, p<0.0001, r=-0.913; opposite of Bio 4.7x LOWER; CC triggers CLOSE_FLOW/FQ_FREQUENT dominant, QO_ENERGY depleted)	2	B	-> C1107_stars_link_monitoring_concentration.md
 C1108	**Stars Vocabulary Clamping Falsified** (S7-S10: 0 PASS, 3 FAIL; no consistent intra-REGIME clamping, no e-mediation, no bridge mediation, vocabulary LESS homogeneous across REGIMEs; Stars Paradox remains open)	2	B	-> C1108_stars_clamping_falsified.md
+C1109	**Rosettes Cross-Reference is Vocabulary-Mediated, Not Process-Demonstrating** (P1-P5: 0 PASS, 1 PARTIAL, 4 FAIL; description regions homogeneous p=0.459; non-bridge vocab matches H not S; no gradient rho=-0.086; target folios not specific lift=0.996x; overall VOCABULARY_ONLY)	2	B	-> C1109_rosettes_vocabulary_only_index.md
+C1110	**CENTER Convergence Node Directionally Confirmed** (P6 PASS: tgt_fraction 0.458 > NORTH 0.333 > VERT 0.375; k_pct 54.5% < NORTH 69.2% < VERT 71.9%; directional but within noise at full profile level p=0.459)	2	AZC	-> C1110_center_convergence_directional.md

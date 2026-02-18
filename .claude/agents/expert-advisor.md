@@ -88,7 +88,7 @@ and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-18 15:36
+**Generated:** 2026-02-18 16:37
 **Version:** FROZEN STATE (973 constraints, 66 fits) [COMPACT]
 
 ---
@@ -1101,7 +1101,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 973 constraints | 2026-02-18
+CONSTRAINT_REFERENCE v2.6 | 975 constraints | 2026-02-18
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2079,6 +2079,8 @@ C1105	**Bridge Geometry-Density Collinearity** (r=-0.805; delta-R²=0.007 NS bey
 C1106	**Stars e-Stability Kernel Enrichment**
 C1107	**Stars LINK Monitoring Concentration**
 C1108	**Stars Vocabulary Clamping Falsified** (S7-S10: 0 PASS, 3 FAIL; no consistent intra-REGIME clamping, no e-mediation, no bridge mediation, vocabulary LESS homogeneous across REGIMEs; Stars Paradox remains open)
+C1109	**Rosettes Cross-Reference is Vocabulary-Mediated, Not Process-Demonstrating**
+C1110	**CENTER Convergence Node Directionally Confirmed**
 
 ---
 
@@ -4418,6 +4420,9 @@ Phase 392 tested whether Stars is structurally distinct and whether vocabulary c
 2. CC trigger channeling — CLOSE_FLOW/FQ_FREQUENT dominance might funnel programs through narrow control pathways
 3. Paragraph-level constraint — structural properties at PSC level
 4. De facto forbidden transitions — additional section-specific transition restrictions beyond C109's 17
+
+- CENTER convergence node directionally confirmed (C1110): higher tgt_fraction, lower k_pct
+
 
 
 ### Tier 4: Rosettes Labels vs Jar Labels (Hierarchical Naming)

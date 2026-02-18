@@ -5866,10 +5866,21 @@ Phase 392 tested whether Stars is structurally distinct and whether vocabulary c
 3. Paragraph-level constraint — structural properties at PSC level
 4. De facto forbidden transitions — additional section-specific transition restrictions beyond C109's 17
 
+### Cross-Reference Validation (Phase 393, C1109-C1110)
+
+**Rosettes index is vocabulary-only (C1109):** Phase 393 tested whether B-like Rosettes folios demonstrate the operational character of their cross-referenced Stars/Pharma targets. The answer is no. Six tests produced 1 PASS, 1 PARTIAL, 4 FAIL:
+- Description regions operationally homogeneous (p=0.459) — no process-type differentiation
+- B-like folios do NOT preferentially match Stars profile — non-bridge vocabulary matches Herbal best
+- No AZC-to-B gradient predicts Stars similarity (rho=-0.086)
+- Target folios no more similar than random B-corpus folios (lift=0.996x)
+- CENTER convergence node directionally confirmed (C1110): higher tgt_fraction, lower k_pct
+
+The Rosettes connects to its targets through shared bridge vocabulary (C1100), not by encoding their operational recipes. It is a universal bridge vocabulary index, not a process-type reference guide.
+
 ### Open Questions (for follow-up phases)
 
-1. Can the cross-reference map be used to determine which body-text folios describe which process types?
-2. Does the per-region hub profile predict the section-level profiles of the folios each region cross-references?
+1. ~~Can the cross-reference map be used to determine which body-text folios describe which process types?~~ **ANSWERED (C1109):** No — the cross-reference is vocabulary-mediated, not process-demonstrating.
+2. ~~Does the per-region hub profile predict the section-level profiles of the folios each region cross-references?~~ **ANSWERED (C1109):** No — description regions are operationally homogeneous.
 3. What is the structural relationship between the Rosettes index and the paragraph system (PSC)?
 4. What mechanism causes Stars' low AXM variance despite REGIME diversity? (Stars Paradox — C1108)
 
