@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 963 validated constraints | **Version:** 4.10 | **Date:** 2026-02-18
+**Total:** 967 validated constraints | **Version:** 4.10 | **Date:** 2026-02-18
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2783,9 +2783,9 @@ Tests 4 HTSC V9 cross-guarantee predictions + HT oscillation wavelength + paragr
 
 ---
 
-### Rosettes System Classification (C1088-C1098) — Phases: ROSETTES_SYSTEM_CLASSIFICATION, ROSETTES_STRUCTURAL_VALIDATION
+### Rosettes System Classification (C1088-C1102) — Phases: ROSETTES_SYSTEM_CLASSIFICATION, ROSETTES_STRUCTURAL_VALIDATION, BRIDGE_BACKBONE_MANUSCRIPT_SURVEY
 
-The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a 10-test battery (Phase 387), 5-test metalayer characterization (Phase 388H), and 4-test structural validation (Phase 389). Finding: the Rosettes is a structural metalayer above A/B/AZC, functioning as a **structural index** with 3.46x bridge enrichment, bridge-concentrated affordance profile, elevated mutual compatibility, and cross-system PREFIX evenness.
+The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a 10-test battery (Phase 387), 5-test metalayer characterization (Phase 388H), 4-test structural validation (Phase 389), and 6-test bridge backbone survey (Phase 390). Finding: the Rosettes is a structural metalayer above A/B/AZC, functioning as a **universal bridge vocabulary index** — the C1090 Section T correlation is fully mediated by bridge density, and the Rosettes indexes the entire grammar's bridge backbone with no section bias.
 
 | # | Statement | Tier | Scope | Location |
 |---|-----------|------|-------|----------|
@@ -2800,6 +2800,10 @@ The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a
 | **1096** | **Rosettes Bridge MIDDLE Enrichment** (24.4% bridge rate vs 7.0% B baseline = 3.46x enrichment, p=6.9e-16; LABEL 6.38x, DESC 9.27x; all 7 folios 6-9x; preferentially uses cross-system connective vocabulary) | 2 | ROSETTES | -> [C1096_rosettes_bridge_enrichment.md](C1096_rosettes_bridge_enrichment.md) |
 | **1097** | **Rosettes Bridge-Concentrated Affordance Profile** (bridge bins 0,6,8,9 = 69.2% of MIDDLEs; HUB_UNIVERSAL 2.20x enriched 23/23 present; ENERGY_SPECIALIZED 0.13x near-absent; LABEL 79.4%, DESC 86.5% bridge bins) | 2 | ROSETTES | -> [C1097_rosettes_bridge_concentrated_bins.md](C1097_rosettes_bridge_concentrated_bins.md) |
 | **1098** | **Rosettes Structural Index Confirmed** (GLOBAL: 4-test structural validation mean score 0.92; elevated compatibility, bridge enrichment, bridge-concentrated bins, PREFIX evenness > all baselines; index function is vocabulary-mediated per C384.a) | 2 | GLOBAL | -> [C1098_rosettes_structural_index.md](C1098_rosettes_structural_index.md) |
+| **1099** | **Bridge Density Section Gradient** (KW H=129.0, p≈0; H=0.697, B=0.603, P=0.564, C=0.536, Z=0.506, A=0.480, S=0.480, T=0.453; T is LOWEST not highest; viability backbone runs through Herbal) | 2 | GLOBAL | -> [C1099_bridge_density_section_gradient.md](C1099_bridge_density_section_gradient.md) |
+| **1100** | **Rosettes-T Jaccard Is Bridge-Mediated** (T wins ALL Jaccard 0.241 but loses NON-BRIDGE: B=0.128, T=0.128, S=0.128 tied; FULL_MEDIATION; C1090 correlation is Jaccard size artifact from T's small vocabulary) | 2 | GLOBAL | -> [C1100_rosettes_t_mediation.md](C1100_rosettes_t_mediation.md) |
+| **1101** | **Rosettes Universal Bridge Scope** (10 missing bridges randomly distributed chi2=4.24, p=0.752; 75/85=88.2% coverage with no section bias; Rosettes is universal bridge index) | 2 | ROSETTES | -> [C1101_rosettes_universal_bridge_scope.md](C1101_rosettes_universal_bridge_scope.md) |
+| **1102** | **Bridge Density REGIME Dependence** (ANOVA F=16.1, p<0.0001; R2=0.738, R4=0.638, R1=0.578, R3=0.518; tension with C979 — may be section-confounded, needs controlled test) | 2 | GLOBAL | -> [C1102_bridge_density_regime_dependence.md](C1102_bridge_density_regime_dependence.md) |
 
 **Phase 387-388H findings:**
 - Rosettes is NOT classifiable as pure A, B, or AZC — it is a metalayer
@@ -2817,9 +2821,19 @@ The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a
 - PREFIX evenness exceeds all baselines (0.791 vs B 0.738, A 0.745, AZC 0.710)
 - Overall classification: STRUCTURAL_INDEX (score 0.92/1.0)
 
+**Phase 390 findings (Bridge Backbone Manuscript Survey):**
+- Bridge density varies massively by section (KW H=129.0, p≈0) — Section H highest (0.697), Section T lowest (0.453)
+- Section T has LOWEST bridge density (rank 8/8) — opposite of C299-based prediction
+- C1090 Rosettes-T correlation is FULLY MEDIATED by bridge vocabulary — T wins ALL Jaccard but loses NON-BRIDGE
+- Non-bridge Jaccard: B, T, S essentially tied at 0.128 — Rosettes has no preferential section overlap
+- Missing bridges (10/85) randomly distributed across sections — Rosettes scope is universal
+- Bridge density varies by REGIME (F=16.1, p<0.0001) — tension with C979, possibly section-confounded
+- Overall verdict: MEDIATION_WITHOUT_T_PRIMACY
+
 **Constraint modifications:**
 - C440.a: Rosettes exception to uniform B-to-AZC sourcing
 - C757.a: Rosettes excluded from zero kernel/LINK scope
+- C1090: Qualified by C1100 — Jaccard size artifact, bridge-mediated
 
 ---
 

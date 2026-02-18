@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 952 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 967 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -382,7 +382,7 @@ The profile: continuously-engaged, energy-dominant, checkpoint-free, dynamically
 
 A 670-year-old classification framework, developed for an entirely different purpose (pharmacological theory), independently predicts 3 of 4 structural properties of a system derived purely from computational analysis of the manuscript. The constraint system was built bottom-up with zero reference to medieval classification. The Galenic framework was applied top-down from historical sources. The convergence is non-trivial.
 
-### Rosettes Foldout: A Structural Index (Phases 387-389)
+### Rosettes Foldout: A Structural Index (Phases 387-390)
 
 The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) had been invisible to analysis for 386 phases. When finally examined, it turned out to be the most structurally unusual section of the manuscript.
 
@@ -407,7 +407,9 @@ A 4-test structural validation (Phase 389) confirmed this is not just a vocabula
 
 Overall structural index score: 0.92/1.0. Any index function operates through vocabulary-mediated correlation (C384.a), not direct A-to-B addressing.
 
-New constraints: C1088-C1098. Constraint qualifications: C440.a (Rosettes exception to uniform sourcing), C757.a (Rosettes excluded from zero kernel/LINK).
+A 6-test bridge backbone survey (Phase 390) then mapped bridge density across the entire manuscript to understand the Rosettes' relationship to the rest of the grammar. Key findings: bridge density varies massively by section (p≈0), with Herbal highest (0.697) and Text lowest (0.453). The Phase 388H finding that Rosettes correlates most with Section T (C1090) turned out to be fully mediated by bridge vocabulary — when bridge MIDDLEs are removed, T drops to a three-way tie with B and S sections. The mechanism is Jaccard size sensitivity: T has the smallest vocabulary, inflating overlap ratios. The 10 bridge MIDDLEs absent from Rosettes are randomly distributed across sections, confirming the Rosettes indexes the entire grammar universally, not any specific section.
+
+New constraints: C1088-C1102. Constraint qualifications: C440.a (Rosettes exception to uniform sourcing), C757.a (Rosettes excluded from zero kernel/LINK), C1090 qualified by C1100 (bridge-mediated).
 
 ---
 
@@ -441,11 +443,11 @@ These interpretations have been structurally ruled out:
 
 ## How This Analysis Was Built
 
-This project was built using AI-assisted computational analysis over 383 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
+This project was built using AI-assisted computational analysis over 390 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
 
 The central methodological innovation is a **progressive context system**: a growing body of numbered, tiered, validated constraints that accumulates across research phases and is always available to the AI agents performing analysis. Every finding that survives statistical testing becomes a permanent constraint. Every falsified hypothesis is permanently closed. Each new phase starts with full knowledge of everything that came before.
 
-This matters because no single analytical session — human or AI — could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, and the Brunschwig alignment in one pass. But 385 phases, each building on validated prior work and never losing what was already proven, could. The constraint system is the project's memory, and its growth is what made the depth of analysis possible.
+This matters because no single analytical session — human or AI — could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, and the Brunschwig alignment in one pass. But 390 phases, each building on validated prior work and never losing what was already proven, could. The constraint system is the project's memory, and its growth is what made the depth of analysis possible.
 
 For technical details on the progressive context architecture, see the Methodology section in `README.md`.
 

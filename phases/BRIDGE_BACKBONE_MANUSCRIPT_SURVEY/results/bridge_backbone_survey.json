@@ -1,0 +1,299 @@
+{
+  "phase": 390,
+  "name": "BRIDGE_BACKBONE_MANUSCRIPT_SURVEY",
+  "test_count": 6,
+  "verdicts": {
+    "P1_section_variation": "SIGNIFICANT",
+    "P2_section_t_highest": "T_RANK_8",
+    "P3_axm_correlation": "NOT_REPLICATED",
+    "P4_missing_bridges": "RANDOM",
+    "P5_mediation": "FULL_MEDIATION",
+    "P6_regime_independence": "REGIME_DEPENDENT"
+  },
+  "P1_data": {
+    "per_section": {
+      "A": {
+        "n_folios": 8,
+        "mean": 0.4804,
+        "median": 0.494,
+        "min": 0.3684,
+        "max": 0.6
+      },
+      "B": {
+        "n_folios": 20,
+        "mean": 0.6033,
+        "median": 0.6119,
+        "min": 0.4944,
+        "max": 0.7308
+      },
+      "C": {
+        "n_folios": 7,
+        "mean": 0.5362,
+        "median": 0.5357,
+        "min": 0.4255,
+        "max": 0.625
+      },
+      "H": {
+        "n_folios": 129,
+        "mean": 0.6967,
+        "median": 0.6957,
+        "min": 0.5152,
+        "max": 1.0
+      },
+      "P": {
+        "n_folios": 16,
+        "mean": 0.5636,
+        "median": 0.5753,
+        "min": 0.4302,
+        "max": 0.66
+      },
+      "S": {
+        "n_folios": 23,
+        "mean": 0.48,
+        "median": 0.4783,
+        "min": 0.3768,
+        "max": 0.5426
+      },
+      "T": {
+        "n_folios": 4,
+        "mean": 0.4527,
+        "median": 0.4767,
+        "min": 0.3566,
+        "max": 0.5347
+      },
+      "Z": {
+        "n_folios": 12,
+        "mean": 0.506,
+        "median": 0.5306,
+        "min": 0.3919,
+        "max": 0.5962
+      }
+    },
+    "kruskal_wallis_H": 129.0048,
+    "kruskal_wallis_p": 0.0,
+    "verdict": "SIGNIFICANT"
+  },
+  "P2_data": {
+    "section_ranking": [
+      [
+        "H",
+        0.6966891568899185
+      ],
+      [
+        "B",
+        0.6032986037985519
+      ],
+      [
+        "P",
+        0.5635892760193617
+      ],
+      [
+        "C",
+        0.5362029221321449
+      ],
+      [
+        "Z",
+        0.5060276868682946
+      ],
+      [
+        "A",
+        0.48039178820438255
+      ],
+      [
+        "S",
+        0.4799905551516006
+      ],
+      [
+        "T",
+        0.4526524373748851
+      ]
+    ],
+    "t_rank": 8,
+    "t_mean_bridge_density": 0.4527,
+    "t_unique_middles": 290,
+    "t_bridge_middles": 73,
+    "t_bridge_fraction": 0.2517,
+    "mann_whitney_U": 79.5,
+    "mann_whitney_p": 0.9974,
+    "verdict": "T_RANK_8"
+  },
+  "P3_data": {
+    "n_folios": 76,
+    "spearman_rho": 0.4149,
+    "spearman_p": 0.0002,
+    "expected_rho": -0.308,
+    "verdict": "NOT_REPLICATED"
+  },
+  "P4_data": {
+    "n_missing": 10,
+    "n_present": 75,
+    "missing_list": [
+      "ect",
+      "eeol",
+      "ka",
+      "keed",
+      "ock",
+      "okc",
+      "opc",
+      "qo",
+      "sh",
+      "tcho"
+    ],
+    "missing_section_distribution": {
+      "T": 8,
+      "H": 10,
+      "B": 7,
+      "S": 9,
+      "C": 3,
+      "A": 4,
+      "Z": 4,
+      "P": 6
+    },
+    "present_section_distribution": {
+      "T": 65,
+      "H": 75,
+      "C": 58,
+      "A": 62,
+      "Z": 61,
+      "B": 67,
+      "P": 71,
+      "S": 75
+    },
+    "chi2": 4.2364,
+    "chi2_p": 0.7522,
+    "verdict": "RANDOM"
+  },
+  "P5_data": {
+    "all_jaccards": {
+      "A": 0.2184,
+      "B": 0.2255,
+      "C": 0.2152,
+      "H": 0.1728,
+      "P": 0.2052,
+      "S": 0.1936,
+      "T": 0.2407,
+      "Z": 0.194
+    },
+    "bridge_jaccards": {
+      "A": 0.7848,
+      "B": 0.8171,
+      "C": 0.7436,
+      "H": 0.8824,
+      "P": 0.8765,
+      "S": 0.8929,
+      "T": 0.7831,
+      "Z": 0.7722
+    },
+    "nonbridge_jaccards": {
+      "A": 0.1095,
+      "B": 0.1283,
+      "C": 0.1033,
+      "H": 0.1112,
+      "P": 0.1041,
+      "S": 0.1278,
+      "T": 0.1278,
+      "Z": 0.1004
+    },
+    "all_winner": "T",
+    "bridge_winner": "S",
+    "nonbridge_winner": "B",
+    "all_ranking": [
+      [
+        "T",
+        0.24066390041493776
+      ],
+      [
+        "B",
+        0.22547332185886404
+      ],
+      [
+        "A",
+        0.21836734693877552
+      ],
+      [
+        "C",
+        0.21524663677130046
+      ],
+      [
+        "P",
+        0.20516962843295639
+      ],
+      [
+        "Z",
+        0.19400352733686066
+      ],
+      [
+        "S",
+        0.19364754098360656
+      ],
+      [
+        "H",
+        0.1727699530516432
+      ]
+    ],
+    "nonbridge_ranking": [
+      [
+        "B",
+        0.1282565130260521
+      ],
+      [
+        "T",
+        0.12781954887218044
+      ],
+      [
+        "S",
+        0.12780269058295965
+      ],
+      [
+        "H",
+        0.11122448979591837
+      ],
+      [
+        "A",
+        0.10948905109489052
+      ],
+      [
+        "P",
+        0.10408921933085502
+      ],
+      [
+        "C",
+        0.10326086956521739
+      ],
+      [
+        "Z",
+        0.10040983606557377
+      ]
+    ],
+    "t_all_rank": 1,
+    "t_nonbridge_rank": 2,
+    "verdict": "FULL_MEDIATION"
+  },
+  "P6_data": {
+    "REGIME_1": {
+      "n": 32,
+      "mean": 0.5778,
+      "std": 0.0683
+    },
+    "REGIME_2": {
+      "n": 13,
+      "mean": 0.738,
+      "std": 0.0703
+    },
+    "REGIME_3": {
+      "n": 17,
+      "mean": 0.5179,
+      "std": 0.1122
+    },
+    "REGIME_4": {
+      "n": 14,
+      "mean": 0.6379,
+      "std": 0.1081
+    },
+    "anova_F": 16.1343,
+    "anova_p": 0.0,
+    "verdict": "REGIME_DEPENDENT"
+  },
+  "overall": "MEDIATION_WITHOUT_T_PRIMACY",
+  "explanation": "Bridge vocabulary mediates the T-correlation, but T doesn't have the highest bridge density. The mechanism is more complex than simple bridge concentration."
+}

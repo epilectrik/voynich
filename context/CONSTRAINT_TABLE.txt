@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 963 constraints | 2026-02-18
+CONSTRAINT_REFERENCE v2.6 | 967 constraints | 2026-02-18
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -967,3 +967,7 @@ C1095	**Rosettes Metalayer Status** (GLOBAL: foldout functions as structural met
 C1096	**Rosettes Bridge MIDDLE Enrichment** (24.4% bridge rate vs 7.0% B baseline = 3.46x enrichment, p=6.9e-16; LABEL 6.38x, DESC 9.27x; all 7 folios 6-9x; preferentially uses cross-system connective vocabulary)	2	ROSETTES	-> C1096_rosettes_bridge_enrichment.md
 C1097	**Rosettes Bridge-Concentrated Affordance Profile** (bridge bins 0,6,8,9 = 69.2% of MIDDLEs; HUB_UNIVERSAL 2.20x enriched 23/23 present; ENERGY_SPECIALIZED 0.13x near-absent; LABEL 79.4%, DESC 86.5% bridge bins)	2	ROSETTES	-> C1097_rosettes_bridge_concentrated_bins.md
 C1098	**Rosettes Structural Index Confirmed** (GLOBAL: 4-test structural validation mean score 0.92; elevated compatibility, bridge enrichment, bridge-concentrated bins, PREFIX evenness > all baselines; index function is vocabulary-mediated per C384.a)	2	GLOBAL	-> C1098_rosettes_structural_index.md
+C1099	**Bridge Density Section Gradient** (KW H=129.0, p≈0; H=0.697, B=0.603, P=0.564, C=0.536, Z=0.506, A=0.480, S=0.480, T=0.453; T is LOWEST not highest; viability backbone runs through Herbal)	2	GLOBAL	-> C1099_bridge_density_section_gradient.md
+C1100	**Rosettes-T Jaccard Is Bridge-Mediated** (T wins ALL Jaccard 0.241 but loses NON-BRIDGE: B=0.128, T=0.128, S=0.128 tied; FULL_MEDIATION; C1090 correlation is Jaccard size artifact from T's small vocabulary)	2	GLOBAL	-> C1100_rosettes_t_mediation.md
+C1101	**Rosettes Universal Bridge Scope** (10 missing bridges randomly distributed chi2=4.24, p=0.752; 75/85=88.2% coverage with no section bias; Rosettes is universal bridge index)	2	ROSETTES	-> C1101_rosettes_universal_bridge_scope.md
+C1102	**Bridge Density REGIME Dependence** (ANOVA F=16.1, p<0.0001; R2=0.738, R4=0.638, R1=0.578, R3=0.518; tension with C979 — may be section-confounded, needs controlled test)	2	GLOBAL	-> C1102_bridge_density_regime_dependence.md

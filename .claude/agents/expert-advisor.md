@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 963 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 967 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (963 validated)
+- Tier 0-2 binding constraints (967 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 963 constraints, 66 fits,
+full content in their source documents. All 967 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-18 08:01
-**Version:** FROZEN STATE (963 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-18 08:29
+**Version:** FROZEN STATE (967 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -1101,7 +1101,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 963 constraints | 2026-02-18
+CONSTRAINT_REFERENCE v2.6 | 967 constraints | 2026-02-18
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2069,6 +2069,10 @@ C1095	**Rosettes Metalayer Status** (GLOBAL: foldout functions as structural met
 C1096	**Rosettes Bridge MIDDLE Enrichment**
 C1097	**Rosettes Bridge-Concentrated Affordance Profile** (bridge bins 0,6,8,9 = 69.2% of MIDDLEs; HUB_UNIVERSAL 2.20x enriched 23/23 present; ENERGY_SPECIALIZED 0.13x near-absent; LABEL 79.4%, DESC 86.5% bridge bins)
 C1098	**Rosettes Structural Index Confirmed** (GLOBAL: 4-test structural validation mean score 0.92; elevated compatibility, bridge enrichment, bridge-concentrated bins, PREFIX evenness > all baselines; index function is vocabulary-mediated per C384.a)
+C1099	**Bridge Density Section Gradient**
+C1100	**Rosettes-T Jaccard Is Bridge-Mediated**
+C1101	**Rosettes Universal Bridge Scope**
+C1102	**Bridge Density REGIME Dependence**
 
 ---
 
@@ -4285,12 +4289,12 @@ Only Tier 0-2 structural findings are binding.
 
 ## Navigation
 
-## XI. Rosettes Foldout as Structural Index (Phases 387-389)
+## XI. Rosettes Foldout as Structural Index (Phases 387-390)
 ### Tier 2: Structural Finding (METALAYER_CONFIRMED)
 
 > **The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) is a structural metalayer above the A/B/AZC hierarchy, containing near-complete vocabulary coverage, a spatial AZC-to-B gradient, and targeted cross-references to pharmaceutical procedure folios.**
 
-This is NOT a Tier 3 interpretation. The metalayer status is a structural fact (Tier 2) supported by 19 quantitative tests across Phases 387-389. See C1088-C1098 for full evidence.
+This is NOT a Tier 3 interpretation. The metalayer status is a structural fact (Tier 2) supported by 25 quantitative tests across Phases 387-390. See C1088-C1102 for full evidence.
 
 
 
@@ -4338,6 +4342,27 @@ Phase 389 confirmed the metalayer operates as a **structural index** through 4 i
 
 **C384 note:** Any index function operates through vocabulary-mediated correlation (C384.a: "CONDITIONAL RECORD-LEVEL CORRESPONDENCE PERMITTED"), not direct A-to-B addressing.
 
+### Tier 2: Bridge Backbone Survey (Phase 390, C1099-C1102)
+
+Phase 390 mapped bridge density across the entire manuscript to test whether the Rosettes-T correlation (C1090) was mediated by shared bridge concentration. Six pre-registered predictions, 4 surprises:
+
+| Test | Prediction | Result | Key Finding |
+|------|-----------|--------|-------------|
+| P1: Section variation | Bridge density varies by section | **SIGNIFICANT** (p≈0) | H=0.697, T=0.453 — massive gradient |
+| P2: T highest | Section T has highest bridge density | **T LOWEST** (rank 8/8) | Opposite of prediction |
+| P3: AXM correlation | rho≈-0.308 replication | **NOT REPLICATED** | Proxy method unreliable |
+| P4: Missing bridges | Non-random section clustering | **RANDOM** (p=0.752) | Rosettes scope is universal |
+| P5: Mediation | Bridge density mediates T correlation | **FULL MEDIATION** | T wins ALL but loses NON-BRIDGE |
+| P6: REGIME independence | Bridge density REGIME-independent | **REGIME DEPENDENT** (p<0.0001) | Tension with C979 |
+
+Overall verdict: **MEDIATION_WITHOUT_T_PRIMACY** — Bridge vocabulary fully mediates the Rosettes-T Jaccard correlation (C1090), but the mechanism is Jaccard size sensitivity (T has smallest vocabulary = smallest union = inflated ratio), not shared bridge concentration. When bridge MIDDLEs are removed, non-bridge Jaccard shows B, T, and S essentially tied at 0.128 — the Rosettes has no preferential section overlap.
+
+**Key structural findings:**
+- The viability backbone runs through Herbal (H=0.697), not Text (T=0.453) — bridge density ranking is H > B > P > C > Z > A > S > T
+- The Rosettes is a universal bridge vocabulary index: 88.2% bridge coverage with no section bias (C1101)
+- Bridge density varies by REGIME (C1102), creating tension with C979 (weights not topology) — likely section-confounded, needs controlled test
+- The Rosettes has dual-layer structure: universal bridge layer (indexes whole grammar) + pharma-specific tail (C1091 cross-references)
+
 
 ### Tier 4: Rosettes Labels vs Jar Labels (Hierarchical Naming)
 
@@ -4357,9 +4382,9 @@ This is consistent with but not proven by the evidence. The shared prefix patter
 
 **Visual note (Tier 4, non-binding per C138/C140):** The pharma "jars" have spouts at the top that may represent distillation tubes (alembic necks/beaks), not pouring spouts. A standard alembic has three parts: cucurbit (gourd-shaped base, heated), alembic head (dome where vapors condense), and spout/beak (condensation tube to receiver). The Voynich vessels match this topology — rounded body with projecting tube — drawn in the manuscript's botanical illustration style. Visual parallels exist in apparatus illustrations across centuries (e.g., Lavoisier's apparatus engravings in "Essays on the Effects Produced by Various Processes on Atmospheric Air," 1784, show the same fundamental forms because retort/alembic design was stable from the 15th through 18th centuries). The CENTER rosette's vessel-like imagery with radiating tubes/spikes is drawn in a similar style. This would unify three independent structural findings: (1) C524 already interprets jar labels as apparatus configuration signatures, (2) the pelican alembic matches the manuscript's controller on 8/8 dimensions, and (3) C1092 identifies the CENTER as a convergence node. If "jars" are alembics, the naming hierarchy becomes: Rosettes labels = apparatus categories, "jar" labels = specific apparatus configurations, content labels = materials being processed. The visual consistency across sections (botanical illustration style applied to apparatus) would be expected in an apparatus-centric system (C120).
 
-**Constraints:** C1088-C1098, C440.a, C757.a
-**Scripts:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/scripts/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/scripts/`
-**Results:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/results/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/results/`
+**Constraints:** C1088-C1102, C440.a, C757.a
+**Scripts:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/scripts/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/scripts/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/scripts/`
+**Results:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/results/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/results/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/results/`
 
 
 ---
