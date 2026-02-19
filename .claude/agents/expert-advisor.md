@@ -88,7 +88,7 @@ and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-19 07:39
+**Generated:** 2026-02-19 08:04
 **Version:** FROZEN STATE (975 constraints, 66 fits) [COMPACT]
 
 ---
@@ -1101,7 +1101,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 980 constraints | 2026-02-19
+CONSTRAINT_REFERENCE v2.6 | 981 constraints | 2026-02-19
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2086,6 +2086,7 @@ C1112	**P-Text Bridge Enrichment at Extreme Levels** (45.5% bridge MIDDLEs, 100t
 C1113	**P-Text and Rosettes Share Unified Bridge-Vocabulary Indexing System**
 C1114	**Rosettes Ring Text Construction Compliance** (5 ring texts, 155 tokens: 0/155 PREFIX-MIDDLE selectivity violations, 0/25 forbidden MIDDLE transition violations, 68.4% B-class coverage matching B corpus 69.5%; ring texts are constructed by B grammar rules)
 C1115	**Rosettes Ring Text Operational Divergence** (AXM 32.1% vs B 66.7%, FQ 39.6% vs B 19.2%, EN 7.5% vs B 31.2%; ok-dominant 37.1% vs B 7.9%; HUB_UNIVERSAL 79.6% with 3 specialist bins at 0%; B-grammatical but different functional register — frequency/monitoring-dominant, universal connector vocabulary only)
+C1116	**Within-REGIME Section Parameterization**
 
 ---
 
@@ -4467,6 +4468,7 @@ This is consistent with but not proven by the evidence. The shared prefix patter
 
 **Weaknesses:**
 - Visual evidence is non-binding per C138/C140
+- **Phase 398 section incompatibility test (C1116): TESTED, NOT SUPPORTED FOR UPGRADE.** Within REGIME_1, Bio and Stars show consistent quantitative divergence across all 6 tested dimensions but zero qualitative incompatibility (0 robust operator substitution pairs, no topology changes). All section differences are weight modulation, consistent with technique variation within a single process family (C1029). Expert validation confirmed: section divergence confirms C1029 at within-REGIME granularity, does not establish multi-domain.
 
 
 

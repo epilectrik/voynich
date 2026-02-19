@@ -1,0 +1,409 @@
+{
+  "phase": 398,
+  "name": "SECTION_INCOMPATIBILITY_TEST",
+  "regime_focus": "REGIME_1",
+  "sections_tested": [
+    "B",
+    "H",
+    "S"
+  ],
+  "regime_section_cross_tab": {
+    "REGIME_1": {
+      "S": 10,
+      "H": 2,
+      "B": 20
+    },
+    "REGIME_3": {
+      "S": 12,
+      "H": 5,
+      "T": 1,
+      "C": 2
+    },
+    "REGIME_4": {
+      "S": 1,
+      "H": 12,
+      "T": 1,
+      "C": 1
+    },
+    "REGIME_2": {
+      "H": 13,
+      "C": 2
+    }
+  },
+  "test_A": {
+    "n_classes_tested": 48,
+    "n_substitution_pairs_all": 4,
+    "n_substitution_pairs_robust": 0,
+    "substitution_pairs_all": [
+      {
+        "class": 44,
+        "enriched_section": "S",
+        "enriched_ratio": 2.301,
+        "depleted_section": "H",
+        "depleted_ratio": 0.0,
+        "divergence": 2300.6
+      },
+      {
+        "class": 45,
+        "enriched_section": "S",
+        "enriched_ratio": 1.898,
+        "depleted_section": "H",
+        "depleted_ratio": 0.0,
+        "divergence": 1898.0
+      },
+      {
+        "class": 2,
+        "enriched_section": "S",
+        "enriched_ratio": 1.732,
+        "depleted_section": "H",
+        "depleted_ratio": 0.0,
+        "divergence": 1731.5
+      },
+      {
+        "class": 18,
+        "enriched_section": "S",
+        "enriched_ratio": 1.518,
+        "depleted_section": "H",
+        "depleted_ratio": 0.0,
+        "divergence": 1518.4
+      }
+    ],
+    "substitution_pairs_robust": [],
+    "large_sections": [
+      "B",
+      "S"
+    ],
+    "small_sections": [
+      "H"
+    ],
+    "chi2": 557.92,
+    "p": 0.0,
+    "dof": 94,
+    "cramers_v": 0.1757,
+    "pairwise_chi2": {
+      "B-S": {
+        "chi2": 506.4,
+        "p": 0.0,
+        "dof": 47,
+        "cramers_v": 0.2386
+      }
+    },
+    "per_section_totals": {
+      "B": 5324,
+      "H": 142,
+      "S": 3571
+    },
+    "verdict": "WEAKLY_INCOMPATIBLE"
+  },
+  "test_B": {
+    "between_section_jsd": {
+      "B-H": 0.14648,
+      "B-S": 0.077841,
+      "H-S": 0.170404
+    },
+    "within_section_null_mean": 0.054521,
+    "within_section_null_sd": 0.01174,
+    "n_permutations": 666,
+    "pair_sigmas": {
+      "B-H": 7.83,
+      "B-S": 1.99,
+      "H-S": 9.87
+    },
+    "n_above_2sd": 2,
+    "n_above_1sd": 3,
+    "n_robust_above_2sd": 0,
+    "n_robust_above_1sd": 1,
+    "n_small_above_2sd": 2,
+    "verdict": "WEAKLY_INCOMPATIBLE"
+  },
+  "test_C": {
+    "section_centroids": {
+      "B": {
+        "k": 0.3425,
+        "h": 0.0891,
+        "e": 0.5684
+      },
+      "H": {
+        "k": 0.354,
+        "h": 0.0786,
+        "e": 0.5674
+      },
+      "S": {
+        "k": 0.275,
+        "h": 0.0658,
+        "e": 0.6592
+      }
+    },
+    "section_folio_counts": {
+      "B": 20,
+      "H": 2,
+      "S": 10
+    },
+    "kruskal_wallis": {
+      "k": {
+        "H": 5.4,
+        "p": 0.067206
+      },
+      "h": {
+        "H": 8.3,
+        "p": 0.015787
+      },
+      "e": {
+        "H": 9.14,
+        "p": 0.010368
+      }
+    },
+    "permanova_F": 4.1553,
+    "permanova_p": 0.0192,
+    "n_permutations": 5000,
+    "n_significant_kw_dims": 0,
+    "verdict": "WEAKLY_INCOMPATIBLE"
+  },
+  "test_D": {
+    "section_distributions": {
+      "B": {
+        "AXM": 3962,
+        "AXm": 83,
+        "FL_HAZ": 235,
+        "FQ": 699,
+        "CC": 316,
+        "FL_SAFE": 29
+      },
+      "H": {
+        "AXM": 97,
+        "AXm": 3,
+        "FL_HAZ": 7,
+        "FQ": 24,
+        "CC": 9,
+        "FL_SAFE": 2
+      },
+      "S": {
+        "AXM": 2398,
+        "AXm": 97,
+        "FL_HAZ": 205,
+        "FQ": 735,
+        "CC": 117,
+        "FL_SAFE": 19
+      }
+    },
+    "section_proportions": {
+      "B": {
+        "AXM": 74.42,
+        "AXm": 1.56,
+        "FL_HAZ": 4.41,
+        "FQ": 13.13,
+        "CC": 5.94,
+        "FL_SAFE": 0.54
+      },
+      "H": {
+        "AXM": 68.31,
+        "AXm": 2.11,
+        "FL_HAZ": 4.93,
+        "FQ": 16.9,
+        "CC": 6.34,
+        "FL_SAFE": 1.41
+      },
+      "S": {
+        "AXM": 67.15,
+        "AXm": 2.72,
+        "FL_HAZ": 5.74,
+        "FQ": 20.58,
+        "CC": 3.28,
+        "FL_SAFE": 0.53
+      }
+    },
+    "chi2": 144.81,
+    "p": 0.0,
+    "dof": 10,
+    "cramers_v": 0.0895,
+    "pairwise_jsd": {
+      "B-H": 0.003144,
+      "B-S": 0.008261,
+      "H-S": 0.00478
+    },
+    "verdict": "WEAKLY_INCOMPATIBLE"
+  },
+  "test_E": {
+    "section_distributions": {
+      "B": {
+        "qo": 1625,
+        "BARE": 931,
+        "ch": 839,
+        "sh": 877,
+        "ok": 345,
+        "ot": 300,
+        "ol": 396,
+        "da": 348,
+        "lk": 48,
+        "lch": 126,
+        "sa": 130,
+        "ke": 62
+      },
+      "H": {
+        "qo": 32,
+        "BARE": 30,
+        "ch": 52,
+        "sh": 17,
+        "ok": 14,
+        "ot": 2,
+        "ol": 7,
+        "da": 16,
+        "lk": 0,
+        "lch": 1,
+        "sa": 3,
+        "ke": 3
+      },
+      "S": {
+        "qo": 890,
+        "BARE": 784,
+        "ch": 787,
+        "sh": 500,
+        "ok": 447,
+        "ot": 377,
+        "ol": 129,
+        "da": 152,
+        "lk": 177,
+        "lch": 95,
+        "sa": 78,
+        "ke": 84
+      }
+    },
+    "section_proportions": {
+      "B": {
+        "qo": 23.72,
+        "BARE": 13.59,
+        "ch": 12.25,
+        "sh": 12.8,
+        "ok": 5.04,
+        "ot": 4.38,
+        "ol": 5.78,
+        "da": 5.08
+      },
+      "H": {
+        "qo": 15.76,
+        "BARE": 14.78,
+        "ch": 25.62,
+        "sh": 8.37,
+        "ok": 6.9,
+        "ot": 0.99,
+        "ol": 3.45,
+        "da": 7.88
+      },
+      "S": {
+        "qo": 17.77,
+        "BARE": 15.65,
+        "ch": 15.71,
+        "sh": 9.98,
+        "ok": 8.93,
+        "ot": 7.53,
+        "ol": 2.58,
+        "da": 3.04
+      }
+    },
+    "chi2": 498.11,
+    "p": 0.0,
+    "dof": 22,
+    "cramers_v": 0.1525,
+    "verdict": "INCOMPATIBLE"
+  },
+  "test_F": {
+    "section_distributions": {
+      "B": {
+        "BULK_OPERATIONAL": 12,
+        "COMPOUND_TERMINAL": 55,
+        "ENERGY_SPECIALIZED": 72,
+        "FLOW_TERMINAL": 478,
+        "HUB_UNIVERSAL": 4164,
+        "PHASE_SENSITIVE": 395,
+        "PRECISION_SPECIALIZED": 1,
+        "ROUTINE_SPECIALIZED": 23,
+        "STABILITY_CRITICAL": 1367
+      },
+      "H": {
+        "BULK_OPERATIONAL": 0,
+        "COMPOUND_TERMINAL": 5,
+        "ENERGY_SPECIALIZED": 2,
+        "FLOW_TERMINAL": 14,
+        "HUB_UNIVERSAL": 134,
+        "PHASE_SENSITIVE": 5,
+        "PRECISION_SPECIALIZED": 0,
+        "ROUTINE_SPECIALIZED": 1,
+        "STABILITY_CRITICAL": 34
+      },
+      "S": {
+        "BULK_OPERATIONAL": 10,
+        "COMPOUND_TERMINAL": 43,
+        "ENERGY_SPECIALIZED": 61,
+        "FLOW_TERMINAL": 421,
+        "HUB_UNIVERSAL": 2922,
+        "PHASE_SENSITIVE": 314,
+        "PRECISION_SPECIALIZED": 1,
+        "ROUTINE_SPECIALIZED": 31,
+        "STABILITY_CRITICAL": 947
+      }
+    },
+    "section_proportions": {
+      "B": {
+        "BULK_OPERATIONAL": 0.18,
+        "COMPOUND_TERMINAL": 0.84,
+        "ENERGY_SPECIALIZED": 1.1,
+        "FLOW_TERMINAL": 7.28,
+        "HUB_UNIVERSAL": 63.41,
+        "PHASE_SENSITIVE": 6.01,
+        "PRECISION_SPECIALIZED": 0.02,
+        "ROUTINE_SPECIALIZED": 0.35,
+        "STABILITY_CRITICAL": 20.82
+      },
+      "H": {
+        "BULK_OPERATIONAL": 0.0,
+        "COMPOUND_TERMINAL": 2.56,
+        "ENERGY_SPECIALIZED": 1.03,
+        "FLOW_TERMINAL": 7.18,
+        "HUB_UNIVERSAL": 68.72,
+        "PHASE_SENSITIVE": 2.56,
+        "PRECISION_SPECIALIZED": 0.0,
+        "ROUTINE_SPECIALIZED": 0.51,
+        "STABILITY_CRITICAL": 17.44
+      },
+      "S": {
+        "BULK_OPERATIONAL": 0.21,
+        "COMPOUND_TERMINAL": 0.91,
+        "ENERGY_SPECIALIZED": 1.28,
+        "FLOW_TERMINAL": 8.86,
+        "HUB_UNIVERSAL": 61.52,
+        "PHASE_SENSITIVE": 6.61,
+        "PRECISION_SPECIALIZED": 0.02,
+        "ROUTINE_SPECIALIZED": 0.65,
+        "STABILITY_CRITICAL": 19.94
+      }
+    },
+    "chi2": 32.33,
+    "p": 0.00905758191698025,
+    "dof": 16,
+    "cramers_v": 0.0375,
+    "notable_enrichments": {
+      "H_BULK_OPERATIONAL": 0.0,
+      "H_COMPOUND_TERMINAL": 2.866,
+      "H_PHASE_SENSITIVE": 0.413,
+      "H_PRECISION_SPECIALIZED": 0.0
+    },
+    "verdict": "WEAKLY_INCOMPATIBLE"
+  },
+  "combined": {
+    "primary_score": 4,
+    "primary_max": 8,
+    "support_score": 3,
+    "support_max": 4,
+    "n_primary_incompatible": 0,
+    "per_test_verdicts": {
+      "test_A": "WEAKLY_INCOMPATIBLE",
+      "test_B": "WEAKLY_INCOMPATIBLE",
+      "test_C": "WEAKLY_INCOMPATIBLE",
+      "test_D": "WEAKLY_INCOMPATIBLE",
+      "test_E": "INCOMPATIBLE",
+      "test_F": "WEAKLY_INCOMPATIBLE"
+    },
+    "overall_verdict": "SECTION_DIFFERENTIATED",
+    "implication": "Sections show consistent quantitative divergence within REGIME (confirms C1029 section parameterization at within-REGIME granularity). Multi-domain stays Tier 3. New constraint: within-REGIME section parameterization."
+  }
+}
