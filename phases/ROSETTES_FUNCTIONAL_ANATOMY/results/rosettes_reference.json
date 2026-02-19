@@ -1,0 +1,5209 @@
+{
+  "_metadata": {
+    "folio": "f85v2",
+    "description": "Rosettes foldout central page (9 rosettes in 3x3 grid)",
+    "transcriber": "U (no H-track available for f85v2)",
+    "total_regions": 16,
+    "layout": {
+      "_source": "voynich.nu fRos_tr.txt transcription. Letter=ROW (V=top, N=mid, C=bottom). Number=COL (1=left, 2=center, 3=right). Label rows: U=top, M=mid, B=bottom.",
+      "ring_text_mapping": {
+        "V1": "NW corner",
+        "V2": "NORTH cardinal",
+        "V3": "NE corner (f86r6)",
+        "N1": "WEST cardinal",
+        "N2": "CENTER",
+        "N3": "EAST cardinal (other panel)",
+        "C1": "SW corner (f85v1)",
+        "C2": "SOUTH cardinal",
+        "C3": "SE corner (f86r5)"
+      },
+      "label_mapping": {
+        "U1": "NW corner",
+        "U2": "NORTH cardinal",
+        "U3": "NE corner",
+        "M1": "WEST cardinal",
+        "M2": "CENTER",
+        "M3": "SE corner",
+        "B1": "SW corner",
+        "B2": "SOUTH cardinal",
+        "B3": "SE corner"
+      },
+      "special_codes": {
+        "D1": "Semi-circular text ring around small circle/doodle at SW corner (constellation)",
+        "W1": "Marginal text paragraphs at west edge of NW rosette panel"
+      },
+      "label_coverage_detail": {
+        "_note": "Label codes include BOTH rosette interior labels AND path/connection tokens. No separate path codes exist.",
+        "U1": "NW rosette interior + connecting roads to N, S, SE",
+        "U2": "NORTH rosette interior + S connections",
+        "U3": "NE rosette interior + connections to N, E, toward center",
+        "M1": "WEST rosette interior + E connections",
+        "M2": "CENTER rosette interior + mushroom areas (transcriber visual note)",
+        "M3": "SE rosette interior + W connections",
+        "B1": "SW rosette interior + passages, fountains, connecting roads (most path-heavy label code)",
+        "B2": "SOUTH rosette windmill interior (transcriber visual note) + N connections",
+        "B3": "SE rosette + connections to S, center"
+      },
+      "transcriber_visual_notes": {
+        "B2_SOUTH": "Transcriber describes SOUTH interior as 'windmill'",
+        "M2_CENTER": "Transcriber describes CENTER as having 'mushroom areas'"
+      },
+      "on_f85v2": [
+        "V1",
+        "V2",
+        "N1",
+        "N2",
+        "C2",
+        "U1",
+        "U2",
+        "U3",
+        "M1",
+        "M2",
+        "M3",
+        "B1",
+        "B2",
+        "B3",
+        "D1",
+        "W1"
+      ],
+      "not_on_f85v2": [
+        "V3 (NE ring, f86r6)",
+        "N3 (EAST ring)",
+        "C1 (SW ring, f85v1)",
+        "C3 (SE ring, f86r5)"
+      ],
+      "topology": "4 cardinals connect directly to CENTER via conical funnels. 4 corners connect only to adjacent cardinals. Outer ring path connects all 8 outer rosettes in a loop."
+    },
+    "rosette_grid": {
+      "_note": "3x3 grid. Mapping from voynich.nu transcription (fRos_tr.txt). Letter=ROW (V=top, N=middle, C=bottom), Number=COLUMN (1=left, 2=center, 3=right). Labels: U=top row, M=middle row, B=bottom row. D1=SW corner doodle, W1=NW margin.",
+      "NW": {
+        "position": "top-left corner",
+        "connects_to": [
+          "NORTH",
+          "WEST"
+        ],
+        "region_codes": {
+          "ring_text": "V1",
+          "labels": "U1",
+          "margin": "W1"
+        },
+        "visual": "Most botanical-looking rosette. CORNER DOODLE: Faded sun/star with radiating rays at outermost (top-left) corner. MARGIN TEXT: Vertical column of 8-10 lines of Voynichese tokens in left margin area -- substantial text outside diagram boundary. CENTRAL EYE/LENS: Eye/lens-shaped opening at center (similar to SW) -- pointed top and bottom, mostly empty interior with a few faint tokens. Thin golden/tan outline. CONCENTRIC BEAD RINGS (dominant feature): Three distinct rings of densely packed individual circles/spheres surrounding the eye. Inner ring: smaller circles tight against eye. Middle ring: larger circles with prominent BLUE-TEAL coloring (most vivid layer, blue interspersed with plain). Outer ring: dense uncolored/tan circles. CILIA BORDER: Tiny radiating hash marks projecting outward from outer ring edge (same biological motif as SW). BOTANICAL CHARACTER: Overall form resembles flower head cross-section or seed pod anatomy. Bead rings suggest stamens/ovules/seeds. Hooked curved tooth-like projections around outer ring (venus fly trap teeth or calyx segments of exploded flower diagram). Cilia reads as fine hairs/trichomes. TUBE PROJECTION TOWARD CENTER: Distinctly cylindrical/tubular (not conical like cardinals, not pointed like SW). Stem/duct/channel appearance with internal segmented walls and some blue coloring. Most plumbing-like of any corner projection. PATHS: Wavy teal path to NORTH (top), sinuous blue path to WEST (bottom-right). Near path junction: 3-4 small circular objects resembling vessels viewed from above (circles with inner dots). RING TEXT: Continuous arc of tokens around circumference."
+      },
+      "NORTH": {
+        "position": "top-center cardinal",
+        "connects_to": [
+          "CENTER",
+          "NW",
+          "NE"
+        ],
+        "region_codes": {
+          "ring_text": "V2",
+          "labels": "U2"
+        },
+        "visual": "Blue spoke/petal pattern filling center. Star/dot pattern between spokes (vapor/steam?). Cylindrical appearance. Dense ball/oval filler around inside rim. Conical connection to CENTER."
+      },
+      "NE": {
+        "position": "top-right corner",
+        "connects_to": [
+          "NORTH",
+          "EAST"
+        ],
+        "region_codes": {
+          "ring_text": "V3 (on f86r6, not f85v2)",
+          "labels": "U3"
+        },
+        "visual": "Most architecturally complex rosette. CASTLE/SETTLEMENT THEME. STAR FIELD: Entire interior filled with very dense star/asterisk pattern (highest star density of any rosette). SPIRAL TEXT (UNIQUE): At center, Voynichese tokens arranged in spiral pattern curving inward -- completely unique among all 9 rosettes. Small pendant/hanging feature at bottom edge of central circle. ARCHITECTURAL CIRCUMFERENCE: Instead of bead rings or scalloped borders, the outer ring has distinct structural elements: tower-like structures with peaked triangular tops and horizontal banding (stone walls/layered roofs), prominent fan/shell-shaped structure on right side, dome/rounded cap structure upper-left with striping and blue-teal coloring. Blue-teal coloring on many structures (water flowing through?). Wave/scallop patterns integrated into architectural forms. Overall effect: skyline or settlement ringing the central space. PROJECTION TOWARD CENTER (bottom): More organic/flowing than other corners -- wavy undulating walls with scalloped texture and blue-teal coloring. Natural watercourse or organic duct appearance. Wider and more elaborate than other projections. TENDRILS/SUB-PATHS: Significantly more branching paths than any other rosette. Prominent bottom-left tendril with dense blue-teal fish-scale/bead pattern. Multiple tendrils with varied textures (wavy, flowing, scalloped). Some paths fork/branch. CORNER DOODLE: Pie chart -- circular feature divided into sections/segments at outermost corner (bottom-left). LEFT LANDSCAPE: Terrain/landscape features, hills/structures, blue-teal water patterns. TEXT DISTRIBUTION: Spiral center tokens, ring text, scattered tokens OUTSIDE diagram boundary, tokens along paths/tendrils, floating in open spaces. Text not neatly contained within diagram."
+      },
+      "WEST": {
+        "position": "middle-left cardinal",
+        "connects_to": [
+          "CENTER",
+          "NW",
+          "SW"
+        ],
+        "region_codes": {
+          "ring_text": "N1",
+          "labels": "M1"
+        },
+        "visual": "Conical funnel connection to CENTER (same style as other cardinals). Central pattern: 8-10 soft, rounded, bulbous lobes radiating from center point in fan arrangement. Lobes have scalloped/cloud-like outer edges (same morphology as botanical flower/leaf forms and alembic vessel spouts in CENTER). Blue-green dashes/marks fill interior of each lobe. Golden/tan coloring at lobe bases near center. Star/asterisk patterns fill triangular wedge spaces between lobes (same motif as NORTH, SW). Small dark center point. Text in two zones: spoke-text words in wedge spaces between lobes (label-type), and ring-text arc around inner circumference. Scalloped filler at rim. Teal wavy connection paths to NW and SW corners visible at edges. KEY CONTRAST WITH NORTH: Where NORTH has sharp blade-like spokes, WEST has soft curvilinear lobes -- angular vs rounded geometry. Same blue-teal palette and star patterns, but fundamentally different form language (energetic/sharp vs condensed/soft)."
+      },
+      "CENTER": {
+        "position": "center",
+        "connects_to": [
+          "NORTH",
+          "SOUTH",
+          "EAST",
+          "WEST"
+        ],
+        "region_codes": {
+          "ring_text": "N2",
+          "labels": "M2"
+        },
+        "visual": "Concentric rings. Innermost: ring of alembic/retort vessels (bulbous bodies, narrow necks). Blue radiating pattern (heat/vapor?). Scalloped filler rings. Outward-pointing projections at circumference connecting to cardinals."
+      },
+      "EAST": {
+        "position": "middle-right cardinal",
+        "connects_to": [
+          "CENTER",
+          "NE",
+          "SE"
+        ],
+        "region_codes": {
+          "ring_text": "N3 (on other panel, not f85v2)",
+          "labels": "none on f85v2"
+        },
+        "visual": "Most visually distinct of all 4 cardinals. Conical funnel connection to CENTER (water-like surface extends into connection). CENTER FEATURE: Delicate fountain/spray form at center -- thin curved lines emanating up and down from central point, like water spray or unfurling plant. A few tokens written near this feature. WATER FIELD: Vast majority of interior covered with dense blue-teal dashes as continuous ripple-like surface (NOT organized into spokes or lobes). Reads as liquid body/water surface. CLOUD/STEAM FORMATIONS: 5-7 puffy scalloped cloud-like masses with brown ink outlines scattered across water field. Irregular organic shapes (cumulus/steam). Same scalloped outline as WEST lobes and botanical forms, but freeform not radial. BUBBLE RING: Thick dense band of individually-drawn small circles (many blue-teal filled) packed tightly around outer portion. Unique to this rosette -- like beads, pearls, or bubbles. TALLY MARKS: Groups of vertical hash marks (||| ||| |||) visible on left side -- counting/measurement notation not prominent in other rosettes. TEXT: Ring text around outer circumference outside bubble ring; a few center tokens near fountain among clouds. NO STARS -- unlike NORTH, WEST, SW which all have star/asterisk patterns. Stars replaced by water field. KEY CONTRAST: If stars=vapor(dry), EAST=liquid(wet). Most aqueous rosette alongside SW corner."
+      },
+      "SW": {
+        "position": "bottom-left corner",
+        "connects_to": [
+          "WEST",
+          "SOUTH"
+        ],
+        "region_codes": {
+          "ring_text": "C1 (on f85v1, not f85v2)",
+          "labels": "B1",
+          "corner_doodle": "D1"
+        },
+        "visual": "SHAPE: Eye/lens-shaped central area (NOT circular) -- pointed at both horizontal ends, wider vertically. INNERMOST: Small 5-6 petal flower/rosette motif at very center. STAR FIELD: Stars/asterisks fill interior of eye shape on plain parchment (same motif as NORTH, WEST). BEAD RING: Dense ring of individually-drawn packed circles borders the eye -- multi-colored (blue-teal, golden/tan, darker). Very similar to EAST bubble ring. Defines eye boundary. SCALLOPED BORDER WITH CILIA: Puffy cloud-like outline outside circle ring with tiny radiating hash marks/bristles projecting outward -- biological/cell-like appearance. RADIATING WATER STREAMS: 5-6 sinuous blue-teal water streams radiate outward from central eye in multiple directions. Snake-like, river-delta branching pattern. CLOUD/STEAM: Puffy scalloped cloud masses scattered between water streams, some with blue-teal dashes inside (wet steam). Similar to EAST clouds. TEXT: Tokens in outer ring area, along water streams, dense upper arc (ring-text), tokens on projection toward CENTER. CORNER FEATURES (shared property of all 4 corners): (1) Bottom-left 'constellation' doodle -- small circular diagram/wheel with internal marks (dots/lines in pattern, like miniature chart). (2) Projection toward CENTER with tokens written on it -- visual extension toward center but no direct path connection. (3) Path tokens: Voynichese tokens written along the wavy connection paths to adjacent rosettes (SOUTH, WEST). TALLY MARKS visible on left side (||| groups, similar to EAST). No direct connection to CENTER. Most fluid/aqueous rosette with SW and EAST."
+      },
+      "SOUTH": {
+        "position": "bottom-center cardinal",
+        "connects_to": [
+          "CENTER",
+          "SW",
+          "SE"
+        ],
+        "region_codes": {
+          "ring_text": "C2",
+          "labels": "B2"
+        },
+        "visual": "Visually very similar to NORTH (matching blue spoke pattern). Conical connection to CENTER."
+      },
+      "SE": {
+        "position": "bottom-right corner",
+        "connects_to": [
+          "SOUTH",
+          "EAST"
+        ],
+        "region_codes": {
+          "ring_text": "C3 (on f86r5, not f85v2)",
+          "labels": [
+            "B3",
+            "M3"
+          ]
+        },
+        "visual": "Most compositionally complex rosette. Reads as OVERHEAD MAP/PLAN VIEW of a facility or garden. CENTRAL WATER BASIN: Rectangular/cross-shaped feature at center with deep dark blue-teal coloring (most intensely blue feature on entire foldout). Central hub/platform with radiating compass-rose form. 4 channels/paths extend outward in X-pattern from center. Concentric oval ripple lines surround feature (contour/water ripples). Reads as pool or basin viewed from above with central structure and access paths. RECTANGULAR GRID (upper-left): Distinct rectangular area with parallel horizontal rows separated by gaps and vertical divisions. Blue-teal and greenish coloring between rows. Very geometric/regular. Reads as garden bed, raised planting rows, agricultural plot, or possibly drying rack/storage grid viewed from above. CONVERGING PIPES (right side): Multiple tube-like structures radiating outward from center with scalloped fish-scale texture and blue-teal coloring. Fan out like root system, drainage network, or aqueduct. Some thick and prominent. Tally marks (||| groups) along some channels. STAR FIELD: Dense stars covering left and lower portions (high density like NE). AMBIGUOUS: In overhead-map context next to garden grid and water basin, evenly spaced stars could represent planted field from above rather than vapor. PILLARS/COLUMNS: Several elongated segmented structures around interior (towers, supports, or tall plants/trees in plan view). CORNER DOODLE: Sun at outer corner -- matches NW sun on diagonally opposite corner. NW-SE diagonal both have suns; SW has constellation, NE has pie chart. BOUNDARY: Mixed textures -- packed circle/bead ring at bottom/bottom-left, scalloped pipe textures elsewhere. Less uniform than other rosettes. PLANT FEATURES: Branching organic structures mixed with architectural elements. Pipes could double as root systems or irrigation. TEXT: Scatter-shot distribution -- tokens between features, along channels, in open spaces, near structures. No clean ring text. Annotations tied to specific features rather than fixed layout."
+      }
+    },
+    "topology_notes": {
+      "cardinal_connections": "All 4 cardinals have similar conical funnel connections narrowing toward CENTER.",
+      "corner_connections": "Corners visually point toward CENTER but have no direct path connection.",
+      "outer_paths": "Walking-path style connections between adjacent outer rosettes forming a loop."
+    }
+  },
+  "regions": {
+    "B1": {
+      "metadata": {
+        "group": "BOTTOM",
+        "type": "LABEL",
+        "physical_position": "SW_CORNER",
+        "notes": "[LABEL] on SW rosette (SW_CORNER). Largest label region (29 tokens). Heavy ot- prefix.",
+        "rosette": "SW",
+        "text_type": "LABEL"
+      },
+      "summary": {
+        "n_tokens": 29,
+        "n_lines": 22,
+        "n_unique_middles": 21,
+        "bridge_count": 20,
+        "bridge_frac": 0.6897,
+        "hub_count": 12,
+        "hub_frac": 0.4138,
+        "is_single_line": false,
+        "dominant_bin": "HUB_UNIVERSAL",
+        "dominant_lane": "QO",
+        "dominant_macro": "FQ"
+      },
+      "distributions": {
+        "affordance_bins": {
+          "HUB_UNIVERSAL": 12,
+          "STABILITY_CRITICAL": 6,
+          "FLOW_TERMINAL": 2,
+          "ROUTINE_SPECIALIZED": 1
+        },
+        "prefix_lanes": {
+          "QO": 13,
+          "CHSH": 2,
+          "CLOSE": 1
+        },
+        "prefixes": {
+          "ot": 10,
+          "ok": 3,
+          "ch": 1,
+          "sh": 1,
+          "or": 1
+        },
+        "macro_states": {
+          "FQ": 7,
+          "AXM": 4,
+          "AXm": 1
+        }
+      },
+      "lines": {
+        "1": [
+          "opdaram"
+        ],
+        "11": [
+          "ody"
+        ],
+        "12": [
+          "okar",
+          "amal"
+        ],
+        "13": [
+          "otchdy",
+          "chdain"
+        ],
+        "14": [
+          "otady"
+        ],
+        "15": [
+          "otedy",
+          "oparam"
+        ],
+        "2": [
+          "otedam"
+        ],
+        "3": [
+          "lokedshs"
+        ],
+        "31": [
+          "cphedain"
+        ],
+        "32": [
+          "otdar",
+          "shed"
+        ],
+        "4": [
+          "otodar"
+        ],
+        "41": [
+          "y",
+          "dl"
+        ],
+        "42": [
+          "otch"
+        ],
+        "43": [
+          "d",
+          "dy"
+        ],
+        "44": [
+          "ory"
+        ],
+        "45": [
+          "oteey"
+        ],
+        "46": [
+          "lcpheeky"
+        ],
+        "47": [
+          "opashcfhedy",
+          "oteeoly"
+        ],
+        "5": [
+          "otedaiin"
+        ],
+        "6": [
+          "okedy"
+        ],
+        "8": [
+          "opedam"
+        ],
+        "9": [
+          "opchdar"
+        ]
+      },
+      "token_sequence": [
+        "opdaram",
+        "otedam",
+        "lokedshs",
+        "otodar",
+        "otedaiin",
+        "okedy",
+        "opedam",
+        "opchdar",
+        "ody",
+        "okar",
+        "amal",
+        "otchdy",
+        "chdain",
+        "otady",
+        "otedy",
+        "oparam",
+        "cphedain",
+        "otdar",
+        "shed",
+        "y",
+        "dl",
+        "otch",
+        "d",
+        "dy",
+        "ory",
+        "oteey",
+        "lcpheeky",
+        "opashcfhedy",
+        "oteeoly"
+      ],
+      "tokens": [
+        {
+          "word": "opdaram",
+          "prefix": null,
+          "articulator": null,
+          "middle": "opdar",
+          "suffix": "am",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "otedam",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "ed",
+          "suffix": "am",
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "lokedshs",
+          "prefix": "ok",
+          "articulator": "l",
+          "middle": "edsh",
+          "suffix": "s",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "otodar",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "od",
+          "suffix": "ar",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "otedaiin",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "ed",
+          "suffix": "aiin",
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "okedy",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "edy",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 13
+        },
+        {
+          "word": "opedam",
+          "prefix": null,
+          "articulator": null,
+          "middle": "oped",
+          "suffix": "am",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "opchdar",
+          "prefix": null,
+          "articulator": null,
+          "middle": "opchd",
+          "suffix": "ar",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "ody",
+          "prefix": null,
+          "articulator": null,
+          "middle": "o",
+          "suffix": "dy",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 24
+        },
+        {
+          "word": "okar",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "ar",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 14
+        },
+        {
+          "word": "amal",
+          "prefix": null,
+          "articulator": null,
+          "middle": "am",
+          "suffix": "al",
+          "is_bridge": true,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "otchdy",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "dy",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "AXm",
+          "b_class": 18
+        },
+        {
+          "word": "chdain",
+          "prefix": "ch",
+          "articulator": null,
+          "middle": "d",
+          "suffix": "ain",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CHSH",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "otady",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "a",
+          "suffix": "dy",
+          "is_bridge": true,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "otedy",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "edy",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 13
+        },
+        {
+          "word": "oparam",
+          "prefix": null,
+          "articulator": null,
+          "middle": "opar",
+          "suffix": "am",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "cphedain",
+          "prefix": null,
+          "articulator": null,
+          "middle": "cphed",
+          "suffix": "ain",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "otdar",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "d",
+          "suffix": "ar",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "shed",
+          "prefix": "sh",
+          "articulator": null,
+          "middle": "ed",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "CHSH",
+          "macro_state": "AXM",
+          "b_class": 39
+        },
+        {
+          "word": "y",
+          "prefix": null,
+          "articulator": null,
+          "middle": "y",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 23
+        },
+        {
+          "word": "dl",
+          "prefix": null,
+          "articulator": null,
+          "middle": "d",
+          "suffix": "l",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 20
+        },
+        {
+          "word": "otch",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "ch",
+          "suffix": null,
+          "is_bridge": false,
+          "affordance_bin": "ROUTINE_SPECIALIZED",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "d",
+          "prefix": null,
+          "articulator": null,
+          "middle": "d",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 23
+        },
+        {
+          "word": "dy",
+          "prefix": null,
+          "articulator": null,
+          "middle": "dy",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 23
+        },
+        {
+          "word": "ory",
+          "prefix": "or",
+          "articulator": null,
+          "middle": "y",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": "AXM",
+          "b_class": 21
+        },
+        {
+          "word": "oteey",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "eey",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 13
+        },
+        {
+          "word": "lcpheeky",
+          "prefix": null,
+          "articulator": null,
+          "middle": "lcpheek",
+          "suffix": "y",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "opashcfhedy",
+          "prefix": null,
+          "articulator": null,
+          "middle": "opashcfh",
+          "suffix": "edy",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "oteeoly",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "eeo",
+          "suffix": "ly",
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        }
+      ],
+      "unique_middles": [
+        "a",
+        "am",
+        "ar",
+        "ch",
+        "cphed",
+        "d",
+        "dy",
+        "ed",
+        "edsh",
+        "edy",
+        "eeo",
+        "eey",
+        "lcpheek",
+        "o",
+        "od",
+        "opar",
+        "opashcfh",
+        "opchd",
+        "opdar",
+        "oped",
+        "y"
+      ],
+      "bridge_middles": [
+        "a",
+        "am",
+        "ar",
+        "d",
+        "dy",
+        "ed",
+        "edy",
+        "eeo",
+        "eey",
+        "o",
+        "od",
+        "y"
+      ],
+      "nonbridge_middles": [
+        "ch",
+        "cphed",
+        "edsh",
+        "lcpheek",
+        "opar",
+        "opashcfh",
+        "opchd",
+        "opdar",
+        "oped"
+      ]
+    },
+    "B2": {
+      "metadata": {
+        "group": "BOTTOM",
+        "type": "LABEL",
+        "physical_position": "SOUTH_CARDINAL",
+        "notes": "[LABEL] on SOUTH rosette (SOUTH_CARDINAL). Small label set (7 tokens). All ot/ok prefixed.",
+        "rosette": "SOUTH",
+        "text_type": "LABEL"
+      },
+      "summary": {
+        "n_tokens": 7,
+        "n_lines": 7,
+        "n_unique_middles": 6,
+        "bridge_count": 5,
+        "bridge_frac": 0.7143,
+        "hub_count": 4,
+        "hub_frac": 0.5714,
+        "is_single_line": false,
+        "dominant_bin": "HUB_UNIVERSAL",
+        "dominant_lane": "QO",
+        "dominant_macro": "FQ"
+      },
+      "distributions": {
+        "affordance_bins": {
+          "HUB_UNIVERSAL": 4,
+          "STABILITY_CRITICAL": 1,
+          "FLOW_TERMINAL": 1,
+          "PRECISION_SPECIALIZED": 1
+        },
+        "prefix_lanes": {
+          "QO": 6
+        },
+        "prefixes": {
+          "ot": 4,
+          "ok": 2
+        },
+        "macro_states": {
+          "FQ": 1,
+          "AXm": 1,
+          "AXM": 1
+        }
+      },
+      "lines": {
+        "1": [
+          "otedy"
+        ],
+        "2": [
+          "otchdam"
+        ],
+        "3": [
+          "otosaiin"
+        ],
+        "4": [
+          "otchdy"
+        ],
+        "6": [
+          "okchdy"
+        ],
+        "7": [
+          "okalar"
+        ],
+        "8": [
+          "ofaraiin"
+        ]
+      },
+      "token_sequence": [
+        "otedy",
+        "otchdam",
+        "otosaiin",
+        "otchdy",
+        "okchdy",
+        "okalar",
+        "ofaraiin"
+      ],
+      "tokens": [
+        {
+          "word": "otedy",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "edy",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 13
+        },
+        {
+          "word": "otchdam",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "d",
+          "suffix": "am",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "otosaiin",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "os",
+          "suffix": "aiin",
+          "is_bridge": false,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "otchdy",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "dy",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "AXm",
+          "b_class": 18
+        },
+        {
+          "word": "okchdy",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "dy",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "AXM",
+          "b_class": 16
+        },
+        {
+          "word": "okalar",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "al",
+          "suffix": "ar",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "ofaraiin",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ofar",
+          "suffix": "aiin",
+          "is_bridge": false,
+          "affordance_bin": "PRECISION_SPECIALIZED",
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        }
+      ],
+      "unique_middles": [
+        "al",
+        "d",
+        "dy",
+        "edy",
+        "ofar",
+        "os"
+      ],
+      "bridge_middles": [
+        "al",
+        "d",
+        "dy",
+        "edy"
+      ],
+      "nonbridge_middles": [
+        "ofar",
+        "os"
+      ]
+    },
+    "B3": {
+      "metadata": {
+        "group": "BOTTOM",
+        "type": "LABEL",
+        "physical_position": "SE_CORNER",
+        "notes": "[LABEL] on SE rosette (SE_CORNER). Minimal (2 tokens).",
+        "rosette": "SE",
+        "text_type": "LABEL"
+      },
+      "summary": {
+        "n_tokens": 2,
+        "n_lines": 2,
+        "n_unique_middles": 2,
+        "bridge_count": 1,
+        "bridge_frac": 0.5,
+        "hub_count": 1,
+        "hub_frac": 0.5,
+        "is_single_line": false,
+        "dominant_bin": "HUB_UNIVERSAL",
+        "dominant_lane": "QO",
+        "dominant_macro": "FQ"
+      },
+      "distributions": {
+        "affordance_bins": {
+          "HUB_UNIVERSAL": 1
+        },
+        "prefix_lanes": {
+          "QO": 1
+        },
+        "prefixes": {
+          "ok": 1
+        },
+        "macro_states": {
+          "FQ": 1
+        }
+      },
+      "lines": {
+        "41": [
+          "lashalg"
+        ],
+        "42": [
+          "okar"
+        ]
+      },
+      "token_sequence": [
+        "lashalg",
+        "okar"
+      ],
+      "tokens": [
+        {
+          "word": "lashalg",
+          "prefix": null,
+          "articulator": null,
+          "middle": "lashal",
+          "suffix": "g",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "okar",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "ar",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 14
+        }
+      ],
+      "unique_middles": [
+        "ar",
+        "lashal"
+      ],
+      "bridge_middles": [
+        "ar"
+      ],
+      "nonbridge_middles": [
+        "lashal"
+      ]
+    },
+    "C2": {
+      "metadata": {
+        "group": "CENTER",
+        "type": "DESCRIPTION",
+        "physical_position": "SOUTH_CARDINAL",
+        "notes": "[RING_TEXT] on SOUTH rosette (SOUTH_CARDINAL). Central rosette. 97% bridge, 73% HUB. Ring of alembic vessels visible in illustration. Pure apparatus vocabulary.",
+        "rosette": "SOUTH",
+        "text_type": "RING_TEXT"
+      },
+      "summary": {
+        "n_tokens": 33,
+        "n_lines": 1,
+        "n_unique_middles": 18,
+        "bridge_count": 32,
+        "bridge_frac": 0.9697,
+        "hub_count": 24,
+        "hub_frac": 0.7273,
+        "is_single_line": true,
+        "dominant_bin": "HUB_UNIVERSAL",
+        "dominant_lane": "QO",
+        "dominant_macro": "AXM"
+      },
+      "distributions": {
+        "affordance_bins": {
+          "HUB_UNIVERSAL": 24,
+          "STABILITY_CRITICAL": 5,
+          "FLOW_TERMINAL": 4
+        },
+        "prefix_lanes": {
+          "QO": 11,
+          "KE": 2,
+          "CLOSE": 2,
+          "CHSH": 1,
+          "INIT": 1
+        },
+        "prefixes": {
+          "ok": 8,
+          "ot": 3,
+          "ke": 2,
+          "ch": 1,
+          "ol": 1,
+          "al": 1,
+          "yk": 1
+        },
+        "macro_states": {
+          "AXM": 10,
+          "FQ": 8,
+          "FL_HAZ": 4,
+          "CC": 1
+        }
+      },
+      "lines": {
+        "1": [
+          "okedar",
+          "okody",
+          "okair",
+          "chedy",
+          "opar",
+          "al",
+          "keody",
+          "s",
+          "ar",
+          "al",
+          "keoedy",
+          "otedaiin",
+          "olky",
+          "or",
+          "aiin",
+          "ody",
+          "osain",
+          "s",
+          "odaiin",
+          "okedal",
+          "ol",
+          "ar",
+          "odaiin",
+          "alo",
+          "okeedy",
+          "otchdaiin",
+          "otedy",
+          "okas",
+          "aiin",
+          "yky",
+          "odaiin",
+          "okal",
+          "okalar"
+        ]
+      },
+      "token_sequence": [
+        "okedar",
+        "okody",
+        "okair",
+        "chedy",
+        "opar",
+        "al",
+        "keody",
+        "s",
+        "ar",
+        "al",
+        "keoedy",
+        "otedaiin",
+        "olky",
+        "or",
+        "aiin",
+        "ody",
+        "osain",
+        "s",
+        "odaiin",
+        "okedal",
+        "ol",
+        "ar",
+        "odaiin",
+        "alo",
+        "okeedy",
+        "otchdaiin",
+        "otedy",
+        "okas",
+        "aiin",
+        "yky",
+        "odaiin",
+        "okal",
+        "okalar"
+      ],
+      "tokens": [
+        {
+          "word": "okedar",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "ed",
+          "suffix": "ar",
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "okody",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "o",
+          "suffix": "dy",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "AXM",
+          "b_class": 2
+        },
+        {
+          "word": "okair",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "ai",
+          "suffix": "r",
+          "is_bridge": true,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": "QO",
+          "macro_state": "AXM",
+          "b_class": 16
+        },
+        {
+          "word": "chedy",
+          "prefix": "ch",
+          "articulator": null,
+          "middle": "edy",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "CHSH",
+          "macro_state": "AXM",
+          "b_class": 8
+        },
+        {
+          "word": "opar",
+          "prefix": null,
+          "articulator": null,
+          "middle": "op",
+          "suffix": "ar",
+          "is_bridge": true,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "al",
+          "prefix": null,
+          "articulator": null,
+          "middle": "al",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FL_HAZ",
+          "b_class": 7
+        },
+        {
+          "word": "keody",
+          "prefix": "ke",
+          "articulator": null,
+          "middle": "o",
+          "suffix": "dy",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "KE",
+          "macro_state": "AXM",
+          "b_class": 27
+        },
+        {
+          "word": "s",
+          "prefix": null,
+          "articulator": null,
+          "middle": "s",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 23
+        },
+        {
+          "word": "ar",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ar",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FL_HAZ",
+          "b_class": 7
+        },
+        {
+          "word": "al",
+          "prefix": null,
+          "articulator": null,
+          "middle": "al",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FL_HAZ",
+          "b_class": 7
+        },
+        {
+          "word": "keoedy",
+          "prefix": "ke",
+          "articulator": null,
+          "middle": "o",
+          "suffix": "edy",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "KE",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "otedaiin",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "ed",
+          "suffix": "aiin",
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "olky",
+          "prefix": "ol",
+          "articulator": null,
+          "middle": "k",
+          "suffix": "y",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": "AXM",
+          "b_class": 25
+        },
+        {
+          "word": "or",
+          "prefix": null,
+          "articulator": null,
+          "middle": "or",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 9
+        },
+        {
+          "word": "aiin",
+          "prefix": null,
+          "articulator": null,
+          "middle": "aiin",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 9
+        },
+        {
+          "word": "ody",
+          "prefix": null,
+          "articulator": null,
+          "middle": "o",
+          "suffix": "dy",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 24
+        },
+        {
+          "word": "osain",
+          "prefix": null,
+          "articulator": null,
+          "middle": "os",
+          "suffix": "ain",
+          "is_bridge": false,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "s",
+          "prefix": null,
+          "articulator": null,
+          "middle": "s",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 23
+        },
+        {
+          "word": "odaiin",
+          "prefix": null,
+          "articulator": null,
+          "middle": "od",
+          "suffix": "aiin",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 29
+        },
+        {
+          "word": "okedal",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "ed",
+          "suffix": "al",
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "ol",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ol",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "CC",
+          "b_class": 11
+        },
+        {
+          "word": "ar",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ar",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FL_HAZ",
+          "b_class": 7
+        },
+        {
+          "word": "odaiin",
+          "prefix": null,
+          "articulator": null,
+          "middle": "od",
+          "suffix": "aiin",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 29
+        },
+        {
+          "word": "alo",
+          "prefix": "al",
+          "articulator": null,
+          "middle": "o",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "okeedy",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "e",
+          "suffix": "edy",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 13
+        },
+        {
+          "word": "otchdaiin",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "d",
+          "suffix": "aiin",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "otedy",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "edy",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 13
+        },
+        {
+          "word": "okas",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "a",
+          "suffix": "s",
+          "is_bridge": true,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "aiin",
+          "prefix": null,
+          "articulator": null,
+          "middle": "aiin",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 9
+        },
+        {
+          "word": "yky",
+          "prefix": "yk",
+          "articulator": null,
+          "middle": "y",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "INIT",
+          "macro_state": "AXM",
+          "b_class": 20
+        },
+        {
+          "word": "odaiin",
+          "prefix": null,
+          "articulator": null,
+          "middle": "od",
+          "suffix": "aiin",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 29
+        },
+        {
+          "word": "okal",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "al",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 14
+        },
+        {
+          "word": "okalar",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "al",
+          "suffix": "ar",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        }
+      ],
+      "unique_middles": [
+        "a",
+        "ai",
+        "aiin",
+        "al",
+        "ar",
+        "d",
+        "e",
+        "ed",
+        "edy",
+        "k",
+        "o",
+        "od",
+        "ol",
+        "op",
+        "or",
+        "os",
+        "s",
+        "y"
+      ],
+      "bridge_middles": [
+        "a",
+        "ai",
+        "aiin",
+        "al",
+        "ar",
+        "d",
+        "e",
+        "ed",
+        "edy",
+        "k",
+        "o",
+        "od",
+        "ol",
+        "op",
+        "or",
+        "s",
+        "y"
+      ],
+      "nonbridge_middles": [
+        "os"
+      ]
+    },
+    "D1": {
+      "metadata": {
+        "group": "D_W",
+        "type": "OTHER",
+        "physical_position": "SW_CORNER_DOODLE",
+        "notes": "[CORNER_DOODLE] on SW rosette (SW_CORNER_DOODLE). 100% bridge. Small transitional region (5 tokens). Furthest from CENTER by vocabulary.",
+        "rosette": "SW",
+        "text_type": "CORNER_DOODLE"
+      },
+      "summary": {
+        "n_tokens": 5,
+        "n_lines": 2,
+        "n_unique_middles": 5,
+        "bridge_count": 5,
+        "bridge_frac": 1.0,
+        "hub_count": 4,
+        "hub_frac": 0.8,
+        "is_single_line": false,
+        "dominant_bin": "HUB_UNIVERSAL",
+        "dominant_lane": "SETUP",
+        "dominant_macro": "AXM"
+      },
+      "distributions": {
+        "affordance_bins": {
+          "HUB_UNIVERSAL": 4,
+          "FLOW_TERMINAL": 1
+        },
+        "prefix_lanes": {
+          "SETUP": 1
+        },
+        "prefixes": {
+          "da": 1
+        },
+        "macro_states": {
+          "AXM": 2,
+          "FQ": 2,
+          "FL_HAZ": 1
+        }
+      },
+      "lines": {
+        "1": [
+          "odaiin",
+          "or"
+        ],
+        "2": [
+          "o",
+          "dar",
+          "air"
+        ]
+      },
+      "token_sequence": [
+        "odaiin",
+        "or",
+        "o",
+        "dar",
+        "air"
+      ],
+      "tokens": [
+        {
+          "word": "odaiin",
+          "prefix": null,
+          "articulator": null,
+          "middle": "od",
+          "suffix": "aiin",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 29
+        },
+        {
+          "word": "or",
+          "prefix": null,
+          "articulator": null,
+          "middle": "or",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 9
+        },
+        {
+          "word": "o",
+          "prefix": null,
+          "articulator": null,
+          "middle": "o",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 9
+        },
+        {
+          "word": "dar",
+          "prefix": "da",
+          "articulator": null,
+          "middle": "r",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "SETUP",
+          "macro_state": "FL_HAZ",
+          "b_class": 30
+        },
+        {
+          "word": "air",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ai",
+          "suffix": "r",
+          "is_bridge": true,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 24
+        }
+      ],
+      "unique_middles": [
+        "ai",
+        "o",
+        "od",
+        "or",
+        "r"
+      ],
+      "bridge_middles": [
+        "ai",
+        "o",
+        "od",
+        "or",
+        "r"
+      ],
+      "nonbridge_middles": []
+    },
+    "M1": {
+      "metadata": {
+        "group": "MIDDLE",
+        "type": "LABEL",
+        "physical_position": "WEST_CARDINAL",
+        "notes": "[LABEL] on WEST rosette (WEST_CARDINAL). STABILITY_CRITICAL dominant bin. 8 tokens.",
+        "rosette": "WEST",
+        "text_type": "LABEL"
+      },
+      "summary": {
+        "n_tokens": 8,
+        "n_lines": 7,
+        "n_unique_middles": 8,
+        "bridge_count": 5,
+        "bridge_frac": 0.625,
+        "hub_count": 2,
+        "hub_frac": 0.25,
+        "is_single_line": false,
+        "dominant_bin": "STABILITY_CRITICAL",
+        "dominant_lane": "QO",
+        "dominant_macro": "AXm"
+      },
+      "distributions": {
+        "affordance_bins": {
+          "STABILITY_CRITICAL": 2,
+          "HUB_UNIVERSAL": 2,
+          "ROUTINE_SPECIALIZED": 1,
+          "COMPOUND_TERMINAL": 1,
+          "FLOW_TERMINAL": 1
+        },
+        "prefix_lanes": {
+          "QO": 3,
+          "CHSH": 2
+        },
+        "prefixes": {
+          "ok": 2,
+          "ch": 2,
+          "ot": 1
+        },
+        "macro_states": {
+          "AXm": 1,
+          "FL_HAZ": 1
+        }
+      },
+      "lines": {
+        "1": [
+          "otedal"
+        ],
+        "2": [
+          "opaiiino"
+        ],
+        "4": [
+          "okchy"
+        ],
+        "5": [
+          "chkeedy"
+        ],
+        "6": [
+          "chpair",
+          "ar"
+        ],
+        "7": [
+          "odady"
+        ],
+        "8": [
+          "okady"
+        ]
+      },
+      "token_sequence": [
+        "otedal",
+        "opaiiino",
+        "okchy",
+        "chkeedy",
+        "chpair",
+        "ar",
+        "odady",
+        "okady"
+      ],
+      "tokens": [
+        {
+          "word": "otedal",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "ed",
+          "suffix": "al",
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "opaiiino",
+          "prefix": null,
+          "articulator": null,
+          "middle": "opaiiino",
+          "suffix": null,
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "okchy",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "y",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "AXm",
+          "b_class": 19
+        },
+        {
+          "word": "chkeedy",
+          "prefix": "ch",
+          "articulator": null,
+          "middle": "ke",
+          "suffix": "edy",
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "CHSH",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "chpair",
+          "prefix": "ch",
+          "articulator": null,
+          "middle": "pai",
+          "suffix": "r",
+          "is_bridge": false,
+          "affordance_bin": "ROUTINE_SPECIALIZED",
+          "prefix_lane": "CHSH",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "ar",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ar",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FL_HAZ",
+          "b_class": 7
+        },
+        {
+          "word": "odady",
+          "prefix": null,
+          "articulator": null,
+          "middle": "oda",
+          "suffix": "dy",
+          "is_bridge": false,
+          "affordance_bin": "COMPOUND_TERMINAL",
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "okady",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "a",
+          "suffix": "dy",
+          "is_bridge": true,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        }
+      ],
+      "unique_middles": [
+        "a",
+        "ar",
+        "ed",
+        "ke",
+        "oda",
+        "opaiiino",
+        "pai",
+        "y"
+      ],
+      "bridge_middles": [
+        "a",
+        "ar",
+        "ed",
+        "ke",
+        "y"
+      ],
+      "nonbridge_middles": [
+        "oda",
+        "opaiiino",
+        "pai"
+      ]
+    },
+    "M2": {
+      "metadata": {
+        "group": "MIDDLE",
+        "type": "LABEL",
+        "physical_position": "CENTER",
+        "notes": "[LABEL] on CENTER rosette (CENTER). Second largest label region (23 tokens). SETUP lane dominant.",
+        "rosette": "CENTER",
+        "text_type": "LABEL"
+      },
+      "summary": {
+        "n_tokens": 23,
+        "n_lines": 21,
+        "n_unique_middles": 18,
+        "bridge_count": 17,
+        "bridge_frac": 0.7391,
+        "hub_count": 10,
+        "hub_frac": 0.4348,
+        "is_single_line": false,
+        "dominant_bin": "HUB_UNIVERSAL",
+        "dominant_lane": "SETUP",
+        "dominant_macro": "AXM"
+      },
+      "distributions": {
+        "affordance_bins": {
+          "HUB_UNIVERSAL": 10,
+          "FLOW_TERMINAL": 5,
+          "STABILITY_CRITICAL": 4,
+          "PHASE_SENSITIVE": 1,
+          "ROUTINE_SPECIALIZED": 1
+        },
+        "prefix_lanes": {
+          "SETUP": 6,
+          "QO": 5,
+          "CLOSE": 2,
+          "CHSH": 1,
+          "PREP": 1,
+          "TE": 1
+        },
+        "prefixes": {
+          "ot": 5,
+          "da": 4,
+          "ch": 1,
+          "ol": 1,
+          "rch": 1,
+          "te": 1,
+          "sa": 1,
+          "so": 1,
+          "ar": 1
+        },
+        "macro_states": {
+          "AXM": 3,
+          "FQ": 3,
+          "FL_HAZ": 1
+        }
+      },
+      "lines": {
+        "1": [
+          "daral"
+        ],
+        "11": [
+          "ols"
+        ],
+        "12": [
+          "ypal"
+        ],
+        "13": [
+          "opydsh"
+        ],
+        "14": [
+          "rchy"
+        ],
+        "15": [
+          "dal"
+        ],
+        "16": [
+          "dtedy"
+        ],
+        "18": [
+          "opdam"
+        ],
+        "19": [
+          "ddaro"
+        ],
+        "2": [
+          "opar"
+        ],
+        "20": [
+          "otedy"
+        ],
+        "21": [
+          "dairdy"
+        ],
+        "22": [
+          "sady"
+        ],
+        "3": [
+          "opchar"
+        ],
+        "4": [
+          "chdy"
+        ],
+        "5": [
+          "odal"
+        ],
+        "52": [
+          "soshxar",
+          "arar"
+        ],
+        "53": [
+          "otedaiin",
+          "otedy"
+        ],
+        "54": [
+          "otedar"
+        ],
+        "6": [
+          "opy"
+        ],
+        "7": [
+          "oteedy"
+        ]
+      },
+      "token_sequence": [
+        "daral",
+        "opar",
+        "opchar",
+        "chdy",
+        "odal",
+        "opy",
+        "oteedy",
+        "ols",
+        "ypal",
+        "opydsh",
+        "rchy",
+        "dal",
+        "dtedy",
+        "opdam",
+        "ddaro",
+        "otedy",
+        "dairdy",
+        "sady",
+        "soshxar",
+        "arar",
+        "otedaiin",
+        "otedy",
+        "otedar"
+      ],
+      "tokens": [
+        {
+          "word": "daral",
+          "prefix": "da",
+          "articulator": null,
+          "middle": "r",
+          "suffix": "al",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "SETUP",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "opar",
+          "prefix": null,
+          "articulator": null,
+          "middle": "op",
+          "suffix": "ar",
+          "is_bridge": true,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "opchar",
+          "prefix": null,
+          "articulator": null,
+          "middle": "opch",
+          "suffix": "ar",
+          "is_bridge": true,
+          "affordance_bin": "PHASE_SENSITIVE",
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "chdy",
+          "prefix": "ch",
+          "articulator": null,
+          "middle": "dy",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CHSH",
+          "macro_state": "AXM",
+          "b_class": 31
+        },
+        {
+          "word": "odal",
+          "prefix": null,
+          "articulator": null,
+          "middle": "od",
+          "suffix": "al",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 6
+        },
+        {
+          "word": "opy",
+          "prefix": null,
+          "articulator": null,
+          "middle": "op",
+          "suffix": "y",
+          "is_bridge": true,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "oteedy",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "e",
+          "suffix": "edy",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 13
+        },
+        {
+          "word": "ols",
+          "prefix": "ol",
+          "articulator": null,
+          "middle": "s",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": "AXM",
+          "b_class": 25
+        },
+        {
+          "word": "ypal",
+          "prefix": null,
+          "articulator": null,
+          "middle": "yp",
+          "suffix": "al",
+          "is_bridge": false,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "opydsh",
+          "prefix": null,
+          "articulator": null,
+          "middle": "opydsh",
+          "suffix": null,
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "rchy",
+          "prefix": "rch",
+          "articulator": null,
+          "middle": "y",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "PREP",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "dal",
+          "prefix": "da",
+          "articulator": null,
+          "middle": "l",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "SETUP",
+          "macro_state": "FL_HAZ",
+          "b_class": 30
+        },
+        {
+          "word": "dtedy",
+          "prefix": "te",
+          "articulator": "d",
+          "middle": "dy",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "TE",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "opdam",
+          "prefix": null,
+          "articulator": null,
+          "middle": "opd",
+          "suffix": "am",
+          "is_bridge": false,
+          "affordance_bin": "ROUTINE_SPECIALIZED",
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "ddaro",
+          "prefix": "da",
+          "articulator": "d",
+          "middle": "ro",
+          "suffix": null,
+          "is_bridge": false,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": "SETUP",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "otedy",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "edy",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 13
+        },
+        {
+          "word": "dairdy",
+          "prefix": "da",
+          "articulator": null,
+          "middle": "ir",
+          "suffix": "dy",
+          "is_bridge": false,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": "SETUP",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "sady",
+          "prefix": "sa",
+          "articulator": null,
+          "middle": "dy",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "SETUP",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "soshxar",
+          "prefix": "so",
+          "articulator": null,
+          "middle": "x",
+          "suffix": "ar",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": "SETUP",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "arar",
+          "prefix": "ar",
+          "articulator": null,
+          "middle": "ar",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "otedaiin",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "ed",
+          "suffix": "aiin",
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "otedy",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "edy",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 13
+        },
+        {
+          "word": "otedar",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "ed",
+          "suffix": "ar",
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        }
+      ],
+      "unique_middles": [
+        "ar",
+        "dy",
+        "e",
+        "ed",
+        "edy",
+        "ir",
+        "l",
+        "od",
+        "op",
+        "opch",
+        "opd",
+        "opydsh",
+        "r",
+        "ro",
+        "s",
+        "x",
+        "y",
+        "yp"
+      ],
+      "bridge_middles": [
+        "ar",
+        "dy",
+        "e",
+        "ed",
+        "edy",
+        "l",
+        "od",
+        "op",
+        "opch",
+        "r",
+        "s",
+        "y"
+      ],
+      "nonbridge_middles": [
+        "ir",
+        "opd",
+        "opydsh",
+        "ro",
+        "x",
+        "yp"
+      ]
+    },
+    "M3": {
+      "metadata": {
+        "group": "MIDDLE",
+        "type": "OTHER",
+        "physical_position": "SE_CORNER",
+        "notes": "[LABEL] on SE rosette (SE_CORNER). Minimal (2 tokens). 100% bridge.",
+        "rosette": "SE",
+        "text_type": "LABEL"
+      },
+      "summary": {
+        "n_tokens": 2,
+        "n_lines": 1,
+        "n_unique_middles": 2,
+        "bridge_count": 2,
+        "bridge_frac": 1.0,
+        "hub_count": 1,
+        "hub_frac": 0.5,
+        "is_single_line": true,
+        "dominant_bin": "HUB_UNIVERSAL",
+        "dominant_lane": "QO",
+        "dominant_macro": "AXM"
+      },
+      "distributions": {
+        "affordance_bins": {
+          "HUB_UNIVERSAL": 1,
+          "FLOW_TERMINAL": 1
+        },
+        "prefix_lanes": {
+          "QO": 1,
+          "MAINT": 1
+        },
+        "prefixes": {
+          "ok": 1,
+          "ka": 1
+        },
+        "macro_states": {
+          "AXM": 1
+        }
+      },
+      "lines": {
+        "1": [
+          "okchdy",
+          "kary"
+        ]
+      },
+      "token_sequence": [
+        "okchdy",
+        "kary"
+      ],
+      "tokens": [
+        {
+          "word": "okchdy",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "dy",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "AXM",
+          "b_class": 16
+        },
+        {
+          "word": "kary",
+          "prefix": "ka",
+          "articulator": null,
+          "middle": "ry",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": "MAINT",
+          "macro_state": null,
+          "b_class": null
+        }
+      ],
+      "unique_middles": [
+        "dy",
+        "ry"
+      ],
+      "bridge_middles": [
+        "dy",
+        "ry"
+      ],
+      "nonbridge_middles": []
+    },
+    "N1": {
+      "metadata": {
+        "group": "NORTH",
+        "type": "DESCRIPTION",
+        "physical_position": "WEST_CARDINAL",
+        "notes": "[RING_TEXT] on WEST rosette (WEST_CARDINAL). North rosette description text. Blue spoke pattern with star/vapor. QO-dominant, HUB-heavy.",
+        "rosette": "WEST",
+        "text_type": "RING_TEXT"
+      },
+      "summary": {
+        "n_tokens": 23,
+        "n_lines": 1,
+        "n_unique_middles": 19,
+        "bridge_count": 19,
+        "bridge_frac": 0.8261,
+        "hub_count": 16,
+        "hub_frac": 0.6957,
+        "is_single_line": true,
+        "dominant_bin": "HUB_UNIVERSAL",
+        "dominant_lane": "QO",
+        "dominant_macro": "AXM"
+      },
+      "distributions": {
+        "affordance_bins": {
+          "HUB_UNIVERSAL": 16,
+          "STABILITY_CRITICAL": 3,
+          "FLOW_TERMINAL": 1
+        },
+        "prefix_lanes": {
+          "QO": 9,
+          "CLOSE": 3,
+          "CHSH": 2,
+          "DE": 1,
+          "SETUP": 1,
+          "XFER": 1
+        },
+        "prefixes": {
+          "ot": 6,
+          "or": 2,
+          "qo": 2,
+          "de": 1,
+          "da": 1,
+          "ok": 1,
+          "ol": 1,
+          "ch": 1,
+          "ta": 1,
+          "sh": 1
+        },
+        "macro_states": {
+          "AXM": 5,
+          "FQ": 4,
+          "CC": 1,
+          "AXm": 1,
+          "FL_HAZ": 1
+        }
+      },
+      "lines": {
+        "1": [
+          "oran",
+          "otar",
+          "oto",
+          "deedyoty",
+          "daiin",
+          "qotedy",
+          "otchy",
+          "otoraiin",
+          "or",
+          "aiin",
+          "okedal",
+          "olor",
+          "opaiir",
+          "al",
+          "cheolky",
+          "ytar",
+          "qokeol",
+          "tshed",
+          "ores",
+          "oteedaiin",
+          "odal",
+          "otchdar",
+          "or"
+        ]
+      },
+      "token_sequence": [
+        "oran",
+        "otar",
+        "oto",
+        "deedyoty",
+        "daiin",
+        "qotedy",
+        "otchy",
+        "otoraiin",
+        "or",
+        "aiin",
+        "okedal",
+        "olor",
+        "opaiir",
+        "al",
+        "cheolky",
+        "ytar",
+        "qokeol",
+        "tshed",
+        "ores",
+        "oteedaiin",
+        "odal",
+        "otchdar",
+        "or"
+      ],
+      "tokens": [
+        {
+          "word": "oran",
+          "prefix": "or",
+          "articulator": null,
+          "middle": "an",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "otar",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "ar",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 14
+        },
+        {
+          "word": "oto",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "o",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "deedyoty",
+          "prefix": "de",
+          "articulator": null,
+          "middle": "edyot",
+          "suffix": "y",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": "DE",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "daiin",
+          "prefix": "da",
+          "articulator": null,
+          "middle": "iin",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "SETUP",
+          "macro_state": "CC",
+          "b_class": 10
+        },
+        {
+          "word": "qotedy",
+          "prefix": "qo",
+          "articulator": null,
+          "middle": "t",
+          "suffix": "edy",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "AXM",
+          "b_class": 33
+        },
+        {
+          "word": "otchy",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "y",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "AXm",
+          "b_class": 19
+        },
+        {
+          "word": "otoraiin",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "or",
+          "suffix": "aiin",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "or",
+          "prefix": null,
+          "articulator": null,
+          "middle": "or",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 9
+        },
+        {
+          "word": "aiin",
+          "prefix": null,
+          "articulator": null,
+          "middle": "aiin",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 9
+        },
+        {
+          "word": "okedal",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "ed",
+          "suffix": "al",
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "olor",
+          "prefix": "ol",
+          "articulator": null,
+          "middle": "or",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": "AXM",
+          "b_class": 25
+        },
+        {
+          "word": "opaiir",
+          "prefix": null,
+          "articulator": null,
+          "middle": "opaii",
+          "suffix": "r",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "al",
+          "prefix": null,
+          "articulator": null,
+          "middle": "al",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FL_HAZ",
+          "b_class": 7
+        },
+        {
+          "word": "cheolky",
+          "prefix": "ch",
+          "articulator": null,
+          "middle": "eolk",
+          "suffix": "y",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": "CHSH",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "ytar",
+          "prefix": "ta",
+          "articulator": "y",
+          "middle": "r",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "XFER",
+          "macro_state": "AXM",
+          "b_class": 27
+        },
+        {
+          "word": "qokeol",
+          "prefix": "qo",
+          "articulator": null,
+          "middle": "k",
+          "suffix": "eol",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "AXM",
+          "b_class": 33
+        },
+        {
+          "word": "tshed",
+          "prefix": "sh",
+          "articulator": "t",
+          "middle": "ed",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "CHSH",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "ores",
+          "prefix": "or",
+          "articulator": null,
+          "middle": "e",
+          "suffix": "s",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "oteedaiin",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "eed",
+          "suffix": "aiin",
+          "is_bridge": false,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "odal",
+          "prefix": null,
+          "articulator": null,
+          "middle": "od",
+          "suffix": "al",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 6
+        },
+        {
+          "word": "otchdar",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "d",
+          "suffix": "ar",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "or",
+          "prefix": null,
+          "articulator": null,
+          "middle": "or",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 9
+        }
+      ],
+      "unique_middles": [
+        "aiin",
+        "al",
+        "an",
+        "ar",
+        "d",
+        "e",
+        "ed",
+        "edyot",
+        "eed",
+        "eolk",
+        "iin",
+        "k",
+        "o",
+        "od",
+        "opaii",
+        "or",
+        "r",
+        "t",
+        "y"
+      ],
+      "bridge_middles": [
+        "aiin",
+        "al",
+        "an",
+        "ar",
+        "d",
+        "e",
+        "ed",
+        "iin",
+        "k",
+        "o",
+        "od",
+        "or",
+        "r",
+        "t",
+        "y"
+      ],
+      "nonbridge_middles": [
+        "edyot",
+        "eed",
+        "eolk",
+        "opaii"
+      ]
+    },
+    "N2": {
+      "metadata": {
+        "group": "NORTH",
+        "type": "DESCRIPTION",
+        "physical_position": "CENTER",
+        "notes": "[RING_TEXT] on CENTER rosette (CENTER). North rosette ring text. 37 tokens, 87% bridge.",
+        "rosette": "CENTER",
+        "text_type": "RING_TEXT"
+      },
+      "summary": {
+        "n_tokens": 37,
+        "n_lines": 1,
+        "n_unique_middles": 21,
+        "bridge_count": 32,
+        "bridge_frac": 0.8649,
+        "hub_count": 29,
+        "hub_frac": 0.7838,
+        "is_single_line": true,
+        "dominant_bin": "HUB_UNIVERSAL",
+        "dominant_lane": "QO",
+        "dominant_macro": "FQ"
+      },
+      "distributions": {
+        "affordance_bins": {
+          "HUB_UNIVERSAL": 29,
+          "STABILITY_CRITICAL": 2,
+          "BULK_OPERATIONAL": 2,
+          "COMPOUND_TERMINAL": 1,
+          "FLOW_TERMINAL": 1
+        },
+        "prefix_lanes": {
+          "QO": 12,
+          "CLOSE": 5,
+          "CHSH": 2,
+          "SETUP": 1
+        },
+        "prefixes": {
+          "ok": 10,
+          "ol": 4,
+          "or": 1,
+          "sh": 1,
+          "da": 1,
+          "ot": 1,
+          "qo": 1,
+          "ch": 1
+        },
+        "macro_states": {
+          "FQ": 13,
+          "AXM": 8,
+          "CC": 5,
+          "FL_HAZ": 2
+        }
+      },
+      "lines": {
+        "1": [
+          "okar",
+          "or",
+          "oraiin",
+          "okeady",
+          "odsheedy",
+          "odaiin",
+          "okchdy",
+          "okar",
+          "shar",
+          "okaiin",
+          "daiin",
+          "ofair",
+          "oly",
+          "olkais",
+          "od",
+          "al",
+          "olkalo",
+          "olor",
+          "k",
+          "r",
+          "ol",
+          "ar",
+          "otar",
+          "qor",
+          "aiin",
+          "ol",
+          "ol",
+          "o",
+          "r",
+          "or",
+          "okal",
+          "okodain",
+          "okech",
+          "okady",
+          "okedy",
+          "chdar",
+          "o"
+        ]
+      },
+      "token_sequence": [
+        "okar",
+        "or",
+        "oraiin",
+        "okeady",
+        "odsheedy",
+        "odaiin",
+        "okchdy",
+        "okar",
+        "shar",
+        "okaiin",
+        "daiin",
+        "ofair",
+        "oly",
+        "olkais",
+        "od",
+        "al",
+        "olkalo",
+        "olor",
+        "k",
+        "r",
+        "ol",
+        "ar",
+        "otar",
+        "qor",
+        "aiin",
+        "ol",
+        "ol",
+        "o",
+        "r",
+        "or",
+        "okal",
+        "okodain",
+        "okech",
+        "okady",
+        "okedy",
+        "chdar",
+        "o"
+      ],
+      "tokens": [
+        {
+          "word": "okar",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "ar",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 14
+        },
+        {
+          "word": "or",
+          "prefix": null,
+          "articulator": null,
+          "middle": "or",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 9
+        },
+        {
+          "word": "oraiin",
+          "prefix": "or",
+          "articulator": null,
+          "middle": "aiin",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": "AXM",
+          "b_class": 29
+        },
+        {
+          "word": "okeady",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "ea",
+          "suffix": "dy",
+          "is_bridge": false,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "odsheedy",
+          "prefix": null,
+          "articulator": null,
+          "middle": "odshe",
+          "suffix": "edy",
+          "is_bridge": false,
+          "affordance_bin": "BULK_OPERATIONAL",
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "odaiin",
+          "prefix": null,
+          "articulator": null,
+          "middle": "od",
+          "suffix": "aiin",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 29
+        },
+        {
+          "word": "okchdy",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "dy",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "AXM",
+          "b_class": 16
+        },
+        {
+          "word": "okar",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "ar",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 14
+        },
+        {
+          "word": "shar",
+          "prefix": "sh",
+          "articulator": null,
+          "middle": "ar",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CHSH",
+          "macro_state": "AXM",
+          "b_class": 35
+        },
+        {
+          "word": "okaiin",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "aiin",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 13
+        },
+        {
+          "word": "daiin",
+          "prefix": "da",
+          "articulator": null,
+          "middle": "iin",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "SETUP",
+          "macro_state": "CC",
+          "b_class": 10
+        },
+        {
+          "word": "ofair",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ofai",
+          "suffix": "r",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "oly",
+          "prefix": "ol",
+          "articulator": null,
+          "middle": "y",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": "AXM",
+          "b_class": 15
+        },
+        {
+          "word": "olkais",
+          "prefix": "ol",
+          "articulator": null,
+          "middle": "kai",
+          "suffix": "s",
+          "is_bridge": true,
+          "affordance_bin": "COMPOUND_TERMINAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "od",
+          "prefix": null,
+          "articulator": null,
+          "middle": "od",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "al",
+          "prefix": null,
+          "articulator": null,
+          "middle": "al",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FL_HAZ",
+          "b_class": 7
+        },
+        {
+          "word": "olkalo",
+          "prefix": "ol",
+          "articulator": null,
+          "middle": "kalo",
+          "suffix": null,
+          "is_bridge": false,
+          "affordance_bin": "BULK_OPERATIONAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "olor",
+          "prefix": "ol",
+          "articulator": null,
+          "middle": "or",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": "AXM",
+          "b_class": 25
+        },
+        {
+          "word": "k",
+          "prefix": null,
+          "articulator": null,
+          "middle": "k",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "CC",
+          "b_class": 12
+        },
+        {
+          "word": "r",
+          "prefix": null,
+          "articulator": null,
+          "middle": "r",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 23
+        },
+        {
+          "word": "ol",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ol",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "CC",
+          "b_class": 11
+        },
+        {
+          "word": "ar",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ar",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FL_HAZ",
+          "b_class": 7
+        },
+        {
+          "word": "otar",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "ar",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 14
+        },
+        {
+          "word": "qor",
+          "prefix": "qo",
+          "articulator": null,
+          "middle": "r",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "AXM",
+          "b_class": 41
+        },
+        {
+          "word": "aiin",
+          "prefix": null,
+          "articulator": null,
+          "middle": "aiin",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 9
+        },
+        {
+          "word": "ol",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ol",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "CC",
+          "b_class": 11
+        },
+        {
+          "word": "ol",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ol",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "CC",
+          "b_class": 11
+        },
+        {
+          "word": "o",
+          "prefix": null,
+          "articulator": null,
+          "middle": "o",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 9
+        },
+        {
+          "word": "r",
+          "prefix": null,
+          "articulator": null,
+          "middle": "r",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 23
+        },
+        {
+          "word": "or",
+          "prefix": null,
+          "articulator": null,
+          "middle": "or",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 9
+        },
+        {
+          "word": "okal",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "al",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 14
+        },
+        {
+          "word": "okodain",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "od",
+          "suffix": "ain",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "okech",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "ech",
+          "suffix": null,
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "okady",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "a",
+          "suffix": "dy",
+          "is_bridge": true,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "okedy",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "edy",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 13
+        },
+        {
+          "word": "chdar",
+          "prefix": "ch",
+          "articulator": null,
+          "middle": "d",
+          "suffix": "ar",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CHSH",
+          "macro_state": "AXM",
+          "b_class": 39
+        },
+        {
+          "word": "o",
+          "prefix": null,
+          "articulator": null,
+          "middle": "o",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 9
+        }
+      ],
+      "unique_middles": [
+        "a",
+        "aiin",
+        "al",
+        "ar",
+        "d",
+        "dy",
+        "ea",
+        "ech",
+        "edy",
+        "iin",
+        "k",
+        "kai",
+        "kalo",
+        "o",
+        "od",
+        "odshe",
+        "ofai",
+        "ol",
+        "or",
+        "r",
+        "y"
+      ],
+      "bridge_middles": [
+        "a",
+        "aiin",
+        "al",
+        "ar",
+        "d",
+        "dy",
+        "edy",
+        "iin",
+        "k",
+        "kai",
+        "o",
+        "od",
+        "ol",
+        "or",
+        "r",
+        "y"
+      ],
+      "nonbridge_middles": [
+        "ea",
+        "ech",
+        "kalo",
+        "odshe",
+        "ofai"
+      ]
+    },
+    "U1": {
+      "metadata": {
+        "group": "UPPER",
+        "type": "LABEL",
+        "physical_position": "NW_CORNER",
+        "notes": "[LABEL] on NW rosette (NW_CORNER). FLOW_TERMINAL dominant. SETUP lane. 8 tokens.",
+        "rosette": "NW",
+        "text_type": "LABEL"
+      },
+      "summary": {
+        "n_tokens": 8,
+        "n_lines": 8,
+        "n_unique_middles": 7,
+        "bridge_count": 3,
+        "bridge_frac": 0.375,
+        "hub_count": 2,
+        "hub_frac": 0.25,
+        "is_single_line": false,
+        "dominant_bin": "FLOW_TERMINAL",
+        "dominant_lane": "SETUP",
+        "dominant_macro": null
+      },
+      "distributions": {
+        "affordance_bins": {
+          "FLOW_TERMINAL": 2,
+          "HUB_UNIVERSAL": 2,
+          "STABILITY_CRITICAL": 1
+        },
+        "prefix_lanes": {
+          "SETUP": 4,
+          "QO": 2,
+          "CLOSE": 1
+        },
+        "prefixes": {
+          "da": 3,
+          "ok": 1,
+          "sa": 1,
+          "ot": 1,
+          "or": 1
+        },
+        "macro_states": {}
+      },
+      "lines": {
+        "1": [
+          "okchdarar"
+        ],
+        "21": [
+          "daldar"
+        ],
+        "22": [
+          "saiindy"
+        ],
+        "24": [
+          "opardy"
+        ],
+        "25": [
+          "otedar"
+        ],
+        "31": [
+          "orarol"
+        ],
+        "41": [
+          "daraldy"
+        ],
+        "42": [
+          "daldal"
+        ]
+      },
+      "token_sequence": [
+        "okchdarar",
+        "daldar",
+        "saiindy",
+        "opardy",
+        "otedar",
+        "orarol",
+        "daraldy",
+        "daldal"
+      ],
+      "tokens": [
+        {
+          "word": "okchdarar",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "dar",
+          "suffix": "ar",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "daldar",
+          "prefix": "da",
+          "articulator": null,
+          "middle": "ld",
+          "suffix": "ar",
+          "is_bridge": false,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": "SETUP",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "saiindy",
+          "prefix": "sa",
+          "articulator": null,
+          "middle": "iin",
+          "suffix": "dy",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "SETUP",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "opardy",
+          "prefix": null,
+          "articulator": null,
+          "middle": "opar",
+          "suffix": "dy",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "otedar",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "ed",
+          "suffix": "ar",
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "orarol",
+          "prefix": "or",
+          "articulator": null,
+          "middle": "ar",
+          "suffix": "ol",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "daraldy",
+          "prefix": "da",
+          "articulator": null,
+          "middle": "ral",
+          "suffix": "dy",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": "SETUP",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "daldal",
+          "prefix": "da",
+          "articulator": null,
+          "middle": "ld",
+          "suffix": "al",
+          "is_bridge": false,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": "SETUP",
+          "macro_state": null,
+          "b_class": null
+        }
+      ],
+      "unique_middles": [
+        "ar",
+        "dar",
+        "ed",
+        "iin",
+        "ld",
+        "opar",
+        "ral"
+      ],
+      "bridge_middles": [
+        "ar",
+        "ed",
+        "iin"
+      ],
+      "nonbridge_middles": [
+        "dar",
+        "ld",
+        "opar",
+        "ral"
+      ]
+    },
+    "U2": {
+      "metadata": {
+        "group": "UPPER",
+        "type": "LABEL",
+        "physical_position": "NORTH_CARDINAL",
+        "notes": "[LABEL] on NORTH rosette (NORTH_CARDINAL). 7 tokens. QO dominant lane.",
+        "rosette": "NORTH",
+        "text_type": "LABEL"
+      },
+      "summary": {
+        "n_tokens": 7,
+        "n_lines": 7,
+        "n_unique_middles": 6,
+        "bridge_count": 5,
+        "bridge_frac": 0.7143,
+        "hub_count": 3,
+        "hub_frac": 0.4286,
+        "is_single_line": false,
+        "dominant_bin": "HUB_UNIVERSAL",
+        "dominant_lane": "QO",
+        "dominant_macro": "FQ"
+      },
+      "distributions": {
+        "affordance_bins": {
+          "HUB_UNIVERSAL": 3,
+          "COMPOUND_TERMINAL": 1,
+          "FLOW_TERMINAL": 1,
+          "STABILITY_CRITICAL": 1,
+          "BULK_OPERATIONAL": 1
+        },
+        "prefix_lanes": {
+          "QO": 3,
+          "CLOSE": 1,
+          "SETUP": 1
+        },
+        "prefixes": {
+          "ok": 3,
+          "al": 1,
+          "da": 1
+        },
+        "macro_states": {
+          "FQ": 1
+        }
+      },
+      "lines": {
+        "1": [
+          "okory"
+        ],
+        "10": [
+          "oko"
+        ],
+        "2": [
+          "alar"
+        ],
+        "3": [
+          "odairy"
+        ],
+        "4": [
+          "opar"
+        ],
+        "7": [
+          "okedy"
+        ],
+        "9": [
+          "daiino"
+        ]
+      },
+      "token_sequence": [
+        "okory",
+        "alar",
+        "odairy",
+        "opar",
+        "okedy",
+        "daiino",
+        "oko"
+      ],
+      "tokens": [
+        {
+          "word": "okory",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "o",
+          "suffix": "ry",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "alar",
+          "prefix": "al",
+          "articulator": null,
+          "middle": "ar",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "odairy",
+          "prefix": null,
+          "articulator": null,
+          "middle": "odai",
+          "suffix": "ry",
+          "is_bridge": false,
+          "affordance_bin": "COMPOUND_TERMINAL",
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "opar",
+          "prefix": null,
+          "articulator": null,
+          "middle": "op",
+          "suffix": "ar",
+          "is_bridge": true,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "okedy",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "edy",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 13
+        },
+        {
+          "word": "daiino",
+          "prefix": "da",
+          "articulator": null,
+          "middle": "iino",
+          "suffix": null,
+          "is_bridge": false,
+          "affordance_bin": "BULK_OPERATIONAL",
+          "prefix_lane": "SETUP",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "oko",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "o",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        }
+      ],
+      "unique_middles": [
+        "ar",
+        "edy",
+        "iino",
+        "o",
+        "odai",
+        "op"
+      ],
+      "bridge_middles": [
+        "ar",
+        "edy",
+        "o",
+        "op"
+      ],
+      "nonbridge_middles": [
+        "iino",
+        "odai"
+      ]
+    },
+    "U3": {
+      "metadata": {
+        "group": "UPPER",
+        "type": "OTHER",
+        "physical_position": "NE_CORNER",
+        "notes": "[LABEL] on NE rosette (NE_CORNER). Minimal (2 tokens).",
+        "rosette": "NE",
+        "text_type": "LABEL"
+      },
+      "summary": {
+        "n_tokens": 2,
+        "n_lines": 1,
+        "n_unique_middles": 2,
+        "bridge_count": 1,
+        "bridge_frac": 0.5,
+        "hub_count": 1,
+        "hub_frac": 0.5,
+        "is_single_line": true,
+        "dominant_bin": "HUB_UNIVERSAL",
+        "dominant_lane": null,
+        "dominant_macro": "AXM"
+      },
+      "distributions": {
+        "affordance_bins": {
+          "HUB_UNIVERSAL": 1
+        },
+        "prefix_lanes": {},
+        "prefixes": {},
+        "macro_states": {
+          "AXM": 1
+        }
+      },
+      "lines": {
+        "41": [
+          "opokchor",
+          "ody"
+        ]
+      },
+      "token_sequence": [
+        "opokchor",
+        "ody"
+      ],
+      "tokens": [
+        {
+          "word": "opokchor",
+          "prefix": null,
+          "articulator": null,
+          "middle": "opokch",
+          "suffix": "or",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "ody",
+          "prefix": null,
+          "articulator": null,
+          "middle": "o",
+          "suffix": "dy",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 24
+        }
+      ],
+      "unique_middles": [
+        "o",
+        "opokch"
+      ],
+      "bridge_middles": [
+        "o"
+      ],
+      "nonbridge_middles": [
+        "opokch"
+      ]
+    },
+    "V1": {
+      "metadata": {
+        "group": "VERT",
+        "type": "DESCRIPTION",
+        "physical_position": "NW_CORNER",
+        "notes": "[RING_TEXT] on NW rosette (NW_CORNER). Highest HUB% of any region (83%). 93% bridge. QO dominant.",
+        "rosette": "NW",
+        "text_type": "RING_TEXT"
+      },
+      "summary": {
+        "n_tokens": 30,
+        "n_lines": 1,
+        "n_unique_middles": 16,
+        "bridge_count": 28,
+        "bridge_frac": 0.9333,
+        "hub_count": 25,
+        "hub_frac": 0.8333,
+        "is_single_line": true,
+        "dominant_bin": "HUB_UNIVERSAL",
+        "dominant_lane": "QO",
+        "dominant_macro": "FQ"
+      },
+      "distributions": {
+        "affordance_bins": {
+          "HUB_UNIVERSAL": 25,
+          "PHASE_SENSITIVE": 2,
+          "FLOW_TERMINAL": 1,
+          "SETTLING_SPECIALIZED": 1
+        },
+        "prefix_lanes": {
+          "QO": 13,
+          "CHSH": 2,
+          "CLOSE": 2,
+          "SETUP": 1,
+          "CTRL": 1
+        },
+        "prefixes": {
+          "ot": 6,
+          "ok": 6,
+          "to": 1,
+          "da": 1,
+          "ch": 1,
+          "ol": 1,
+          "sh": 1,
+          "or": 1,
+          "ct": 1
+        },
+        "macro_states": {
+          "FQ": 8,
+          "AXM": 6,
+          "CC": 3,
+          "FL_HAZ": 2
+        }
+      },
+      "lines": {
+        "1": [
+          "oto",
+          "tos",
+          "ain",
+          "odar",
+          "otar",
+          "otar",
+          "okaiin",
+          "dar",
+          "ol",
+          "chdar",
+          "otdar",
+          "okos",
+          "ol",
+          "om",
+          "olkeeodaar",
+          "shol",
+          "okal",
+          "orshear",
+          "okalol",
+          "otodr",
+          "oar",
+          "ar",
+          "ol",
+          "oqotam",
+          "oteal",
+          "cthedy",
+          "or",
+          "aiin",
+          "okar",
+          "okeedy"
+        ]
+      },
+      "token_sequence": [
+        "oto",
+        "tos",
+        "ain",
+        "odar",
+        "otar",
+        "otar",
+        "okaiin",
+        "dar",
+        "ol",
+        "chdar",
+        "otdar",
+        "okos",
+        "ol",
+        "om",
+        "olkeeodaar",
+        "shol",
+        "okal",
+        "orshear",
+        "okalol",
+        "otodr",
+        "oar",
+        "ar",
+        "ol",
+        "oqotam",
+        "oteal",
+        "cthedy",
+        "or",
+        "aiin",
+        "okar",
+        "okeedy"
+      ],
+      "tokens": [
+        {
+          "word": "oto",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "o",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "tos",
+          "prefix": "to",
+          "articulator": null,
+          "middle": "s",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "ain",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ain",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "PHASE_SENSITIVE",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 24
+        },
+        {
+          "word": "odar",
+          "prefix": null,
+          "articulator": null,
+          "middle": "od",
+          "suffix": "ar",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 27
+        },
+        {
+          "word": "otar",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "ar",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 14
+        },
+        {
+          "word": "otar",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "ar",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 14
+        },
+        {
+          "word": "okaiin",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "aiin",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 13
+        },
+        {
+          "word": "dar",
+          "prefix": "da",
+          "articulator": null,
+          "middle": "r",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "SETUP",
+          "macro_state": "FL_HAZ",
+          "b_class": 30
+        },
+        {
+          "word": "ol",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ol",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "CC",
+          "b_class": 11
+        },
+        {
+          "word": "chdar",
+          "prefix": "ch",
+          "articulator": null,
+          "middle": "d",
+          "suffix": "ar",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CHSH",
+          "macro_state": "AXM",
+          "b_class": 39
+        },
+        {
+          "word": "otdar",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "d",
+          "suffix": "ar",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "okos",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "o",
+          "suffix": "s",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "ol",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ol",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "CC",
+          "b_class": 11
+        },
+        {
+          "word": "om",
+          "prefix": null,
+          "articulator": null,
+          "middle": "om",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 20
+        },
+        {
+          "word": "olkeeodaar",
+          "prefix": "ol",
+          "articulator": null,
+          "middle": "keeoda",
+          "suffix": "ar",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": "CLOSE",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "shol",
+          "prefix": "sh",
+          "articulator": null,
+          "middle": "ol",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CHSH",
+          "macro_state": "AXM",
+          "b_class": 31
+        },
+        {
+          "word": "okal",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "al",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 14
+        },
+        {
+          "word": "orshear",
+          "prefix": "or",
+          "articulator": null,
+          "middle": "e",
+          "suffix": "ar",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "okalol",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "al",
+          "suffix": "ol",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "otodr",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "od",
+          "suffix": "r",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "oar",
+          "prefix": null,
+          "articulator": null,
+          "middle": "o",
+          "suffix": "ar",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 21
+        },
+        {
+          "word": "ar",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ar",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FL_HAZ",
+          "b_class": 7
+        },
+        {
+          "word": "ol",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ol",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "CC",
+          "b_class": 11
+        },
+        {
+          "word": "oqotam",
+          "prefix": null,
+          "articulator": null,
+          "middle": "oqot",
+          "suffix": "am",
+          "is_bridge": false,
+          "affordance_bin": "SETTLING_SPECIALIZED",
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "oteal",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "e",
+          "suffix": "al",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "cthedy",
+          "prefix": "ct",
+          "articulator": null,
+          "middle": "h",
+          "suffix": "edy",
+          "is_bridge": true,
+          "affordance_bin": "PHASE_SENSITIVE",
+          "prefix_lane": "CTRL",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "or",
+          "prefix": null,
+          "articulator": null,
+          "middle": "or",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 9
+        },
+        {
+          "word": "aiin",
+          "prefix": null,
+          "articulator": null,
+          "middle": "aiin",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 9
+        },
+        {
+          "word": "okar",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "ar",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 14
+        },
+        {
+          "word": "okeedy",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "e",
+          "suffix": "edy",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 13
+        }
+      ],
+      "unique_middles": [
+        "aiin",
+        "ain",
+        "al",
+        "ar",
+        "d",
+        "e",
+        "h",
+        "keeoda",
+        "o",
+        "od",
+        "ol",
+        "om",
+        "oqot",
+        "or",
+        "r",
+        "s"
+      ],
+      "bridge_middles": [
+        "aiin",
+        "ain",
+        "al",
+        "ar",
+        "d",
+        "e",
+        "h",
+        "o",
+        "od",
+        "ol",
+        "om",
+        "or",
+        "r",
+        "s"
+      ],
+      "nonbridge_middles": [
+        "keeoda",
+        "oqot"
+      ]
+    },
+    "V2": {
+      "metadata": {
+        "group": "VERT",
+        "type": "DESCRIPTION",
+        "physical_position": "NORTH_CARDINAL",
+        "notes": "[RING_TEXT] on NORTH rosette (NORTH_CARDINAL). 91% bridge, 72% HUB. QO dominant.",
+        "rosette": "NORTH",
+        "text_type": "RING_TEXT"
+      },
+      "summary": {
+        "n_tokens": 32,
+        "n_lines": 1,
+        "n_unique_middles": 20,
+        "bridge_count": 29,
+        "bridge_frac": 0.9062,
+        "hub_count": 23,
+        "hub_frac": 0.7188,
+        "is_single_line": true,
+        "dominant_bin": "HUB_UNIVERSAL",
+        "dominant_lane": "QO",
+        "dominant_macro": "FQ"
+      },
+      "distributions": {
+        "affordance_bins": {
+          "HUB_UNIVERSAL": 23,
+          "STABILITY_CRITICAL": 3,
+          "FLOW_TERMINAL": 2,
+          "PHASE_SENSITIVE": 1,
+          "COMPOUND_TERMINAL": 1
+        },
+        "prefix_lanes": {
+          "QO": 10,
+          "CLOSE": 3,
+          "CHSH": 2,
+          "CTRL": 1
+        },
+        "prefixes": {
+          "ok": 8,
+          "ot": 2,
+          "ch": 2,
+          "ct": 1,
+          "ar": 1,
+          "or": 1,
+          "ol": 1
+        },
+        "macro_states": {
+          "FQ": 9,
+          "AXM": 5,
+          "FL_HAZ": 5,
+          "CC": 3,
+          "FL_SAFE": 1,
+          "AXm": 1
+        }
+      },
+      "lines": {
+        "1": [
+          "cthshr",
+          "otedy",
+          "chedaiir",
+          "cheekedy",
+          "oko",
+          "otol",
+          "ary",
+          "aiir",
+          "oral",
+          "r",
+          "okain",
+          "olkaiin",
+          "ody",
+          "rair",
+          "ol",
+          "r",
+          "ar",
+          "or",
+          "okal",
+          "s",
+          "al",
+          "al",
+          "okal",
+          "air",
+          "ol",
+          "ar",
+          "ol",
+          "al",
+          "okan",
+          "okod",
+          "okor",
+          "okeo"
+        ]
+      },
+      "token_sequence": [
+        "cthshr",
+        "otedy",
+        "chedaiir",
+        "cheekedy",
+        "oko",
+        "otol",
+        "ary",
+        "aiir",
+        "oral",
+        "r",
+        "okain",
+        "olkaiin",
+        "ody",
+        "rair",
+        "ol",
+        "r",
+        "ar",
+        "or",
+        "okal",
+        "s",
+        "al",
+        "al",
+        "okal",
+        "air",
+        "ol",
+        "ar",
+        "ol",
+        "al",
+        "okan",
+        "okod",
+        "okor",
+        "okeo"
+      ],
+      "tokens": [
+        {
+          "word": "cthshr",
+          "prefix": "ct",
+          "articulator": null,
+          "middle": "hsh",
+          "suffix": "r",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": "CTRL",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "otedy",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "edy",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 13
+        },
+        {
+          "word": "chedaiir",
+          "prefix": "ch",
+          "articulator": null,
+          "middle": "edaii",
+          "suffix": "r",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": "CHSH",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "cheekedy",
+          "prefix": "ch",
+          "articulator": null,
+          "middle": "eek",
+          "suffix": "edy",
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": "CHSH",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "oko",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "o",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "otol",
+          "prefix": "ot",
+          "articulator": null,
+          "middle": "ol",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 14
+        },
+        {
+          "word": "ary",
+          "prefix": "ar",
+          "articulator": null,
+          "middle": "y",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": "FL_SAFE",
+          "b_class": 40
+        },
+        {
+          "word": "aiir",
+          "prefix": null,
+          "articulator": null,
+          "middle": "aii",
+          "suffix": "r",
+          "is_bridge": true,
+          "affordance_bin": "STABILITY_CRITICAL",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 27
+        },
+        {
+          "word": "oral",
+          "prefix": "or",
+          "articulator": null,
+          "middle": "al",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "r",
+          "prefix": null,
+          "articulator": null,
+          "middle": "r",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 23
+        },
+        {
+          "word": "okain",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "ain",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "PHASE_SENSITIVE",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 13
+        },
+        {
+          "word": "olkaiin",
+          "prefix": "ol",
+          "articulator": null,
+          "middle": "k",
+          "suffix": "aiin",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": "AXM",
+          "b_class": 17
+        },
+        {
+          "word": "ody",
+          "prefix": null,
+          "articulator": null,
+          "middle": "o",
+          "suffix": "dy",
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 24
+        },
+        {
+          "word": "rair",
+          "prefix": null,
+          "articulator": null,
+          "middle": "rai",
+          "suffix": "r",
+          "is_bridge": false,
+          "affordance_bin": "COMPOUND_TERMINAL",
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "ol",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ol",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "CC",
+          "b_class": 11
+        },
+        {
+          "word": "r",
+          "prefix": null,
+          "articulator": null,
+          "middle": "r",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 23
+        },
+        {
+          "word": "ar",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ar",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FL_HAZ",
+          "b_class": 7
+        },
+        {
+          "word": "or",
+          "prefix": null,
+          "articulator": null,
+          "middle": "or",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 9
+        },
+        {
+          "word": "okal",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "al",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 14
+        },
+        {
+          "word": "s",
+          "prefix": null,
+          "articulator": null,
+          "middle": "s",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FQ",
+          "b_class": 23
+        },
+        {
+          "word": "al",
+          "prefix": null,
+          "articulator": null,
+          "middle": "al",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FL_HAZ",
+          "b_class": 7
+        },
+        {
+          "word": "al",
+          "prefix": null,
+          "articulator": null,
+          "middle": "al",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FL_HAZ",
+          "b_class": 7
+        },
+        {
+          "word": "okal",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "al",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "FQ",
+          "b_class": 14
+        },
+        {
+          "word": "air",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ai",
+          "suffix": "r",
+          "is_bridge": true,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 24
+        },
+        {
+          "word": "ol",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ol",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "CC",
+          "b_class": 11
+        },
+        {
+          "word": "ar",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ar",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FL_HAZ",
+          "b_class": 7
+        },
+        {
+          "word": "ol",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ol",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "CC",
+          "b_class": 11
+        },
+        {
+          "word": "al",
+          "prefix": null,
+          "articulator": null,
+          "middle": "al",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": null,
+          "macro_state": "FL_HAZ",
+          "b_class": 7
+        },
+        {
+          "word": "okan",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "an",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "okod",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "od",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "okor",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "or",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "AXm",
+          "b_class": 19
+        },
+        {
+          "word": "okeo",
+          "prefix": "ok",
+          "articulator": null,
+          "middle": "eo",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "HUB_UNIVERSAL",
+          "prefix_lane": "QO",
+          "macro_state": "AXM",
+          "b_class": 2
+        }
+      ],
+      "unique_middles": [
+        "ai",
+        "aii",
+        "ain",
+        "al",
+        "an",
+        "ar",
+        "edaii",
+        "edy",
+        "eek",
+        "eo",
+        "hsh",
+        "k",
+        "o",
+        "od",
+        "ol",
+        "or",
+        "r",
+        "rai",
+        "s",
+        "y"
+      ],
+      "bridge_middles": [
+        "ai",
+        "aii",
+        "ain",
+        "al",
+        "an",
+        "ar",
+        "edy",
+        "eek",
+        "eo",
+        "k",
+        "o",
+        "od",
+        "ol",
+        "or",
+        "r",
+        "s",
+        "y"
+      ],
+      "nonbridge_middles": [
+        "edaii",
+        "hsh",
+        "rai"
+      ]
+    },
+    "W1": {
+      "metadata": {
+        "group": "D_W",
+        "type": "LABEL",
+        "physical_position": "NW_MARGIN",
+        "notes": "[MARGIN] on NW rosette (NW_MARGIN). Minimal (3 tokens). CLOSE lane dominant. FLOW_TERMINAL bin.",
+        "rosette": "NW",
+        "text_type": "MARGIN"
+      },
+      "summary": {
+        "n_tokens": 3,
+        "n_lines": 3,
+        "n_unique_middles": 3,
+        "bridge_count": 2,
+        "bridge_frac": 0.6667,
+        "hub_count": 0,
+        "hub_frac": 0.0,
+        "is_single_line": false,
+        "dominant_bin": "FLOW_TERMINAL",
+        "dominant_lane": "CLOSE",
+        "dominant_macro": "AXM"
+      },
+      "distributions": {
+        "affordance_bins": {
+          "FLOW_TERMINAL": 2
+        },
+        "prefix_lanes": {
+          "CLOSE": 1
+        },
+        "prefixes": {
+          "or": 1
+        },
+        "macro_states": {
+          "AXM": 1
+        }
+      },
+      "lines": {
+        "5": [
+          "ry"
+        ],
+        "7": [
+          "orary"
+        ],
+        "8": [
+          "ogam"
+        ]
+      },
+      "token_sequence": [
+        "ry",
+        "orary",
+        "ogam"
+      ],
+      "tokens": [
+        {
+          "word": "ry",
+          "prefix": null,
+          "articulator": null,
+          "middle": "ry",
+          "suffix": null,
+          "is_bridge": true,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": null,
+          "macro_state": "AXM",
+          "b_class": 22
+        },
+        {
+          "word": "orary",
+          "prefix": "or",
+          "articulator": null,
+          "middle": "a",
+          "suffix": "ry",
+          "is_bridge": true,
+          "affordance_bin": "FLOW_TERMINAL",
+          "prefix_lane": "CLOSE",
+          "macro_state": null,
+          "b_class": null
+        },
+        {
+          "word": "ogam",
+          "prefix": null,
+          "articulator": null,
+          "middle": "og",
+          "suffix": "am",
+          "is_bridge": false,
+          "affordance_bin": null,
+          "prefix_lane": null,
+          "macro_state": null,
+          "b_class": null
+        }
+      ],
+      "unique_middles": [
+        "a",
+        "og",
+        "ry"
+      ],
+      "bridge_middles": [
+        "a",
+        "ry"
+      ],
+      "nonbridge_middles": [
+        "og"
+      ]
+    }
+  },
+  "other_folios": {
+    "f85r1": {
+      "n_tokens": 333,
+      "bridge_frac": 0.7988,
+      "hub_frac": 0.5495,
+      "n_unique_middles": 103
+    },
+    "f85r2": {
+      "n_tokens": 155,
+      "bridge_frac": 0.8194,
+      "hub_frac": 0.5677,
+      "n_unique_middles": 65
+    },
+    "f86v3": {
+      "n_tokens": 277,
+      "bridge_frac": 0.8773,
+      "hub_frac": 0.6209,
+      "n_unique_middles": 79
+    },
+    "f86v4": {
+      "n_tokens": 188,
+      "bridge_frac": 0.8085,
+      "hub_frac": 0.5266,
+      "n_unique_middles": 79
+    },
+    "f86v5": {
+      "n_tokens": 381,
+      "bridge_frac": 0.895,
+      "hub_frac": 0.7113,
+      "n_unique_middles": 88
+    },
+    "f86v6": {
+      "n_tokens": 479,
+      "bridge_frac": 0.8434,
+      "hub_frac": 0.6347,
+      "n_unique_middles": 120
+    }
+  }
+}

@@ -1,0 +1,506 @@
+{
+  "analysis_1_description_comparison": {
+    "CENTER": {
+      "n_tokens": 33,
+      "n_unique_middles": 18,
+      "bridge_pct": 0.9697,
+      "hub_pct": 0.7273,
+      "bin_distribution": {
+        "STABILITY_CRIT": 5,
+        "HUB_UNIVERSAL": 24,
+        "FLOW_TERMINAL": 4
+      },
+      "lane_distribution": {
+        "QO": 11,
+        "CHSH": 1,
+        "KE": 2,
+        "CLOSE": 2,
+        "INIT": 1
+      }
+    },
+    "NORTH": {
+      "n_tokens": 60,
+      "n_unique_middles": 29,
+      "bridge_pct": 0.85,
+      "hub_pct": 0.75,
+      "bin_distribution": {
+        "FLOW_TERMINAL": 2,
+        "HUB_UNIVERSAL": 45,
+        "STABILITY_CRIT": 5,
+        "COMPOUND_TERM": 1
+      },
+      "lane_distribution": {
+        "CLOSE": 8,
+        "QO": 21,
+        "DE": 1,
+        "SETUP": 2,
+        "CHSH": 4,
+        "XFER": 1
+      }
+    },
+    "SOUTH": {
+      "n_tokens": 62,
+      "n_unique_middles": 27,
+      "bridge_pct": 0.9194,
+      "hub_pct": 0.7742,
+      "bin_distribution": {
+        "HUB_UNIVERSAL": 48,
+        "PHASE_SENS": 3,
+        "FLOW_TERMINAL": 3,
+        "SETTLING_SPEC": 1,
+        "STABILITY_CRIT": 3,
+        "COMPOUND_TERM": 1
+      },
+      "lane_distribution": {
+        "QO": 23,
+        "SETUP": 1,
+        "CHSH": 4,
+        "CLOSE": 5,
+        "CTRL": 2
+      }
+    },
+    "pairwise_jaccard": {
+      "NORTH_SOUTH": 0.3333,
+      "NORTH_CENTER": 0.4242,
+      "SOUTH_CENTER": 0.4516
+    },
+    "shared_middles": {
+      "NORTH_SOUTH": 14,
+      "NORTH_CENTER": 14,
+      "SOUTH_CENTER": 14,
+      "all_three": 12,
+      "NS_exclusive": 2,
+      "NC_exclusive": 2,
+      "SC_exclusive": 2
+    },
+    "verdict": "NO: NORTH-SOUTH do NOT share the most vocabulary"
+  },
+  "analysis_2_label_clustering": {
+    "label_regions": [
+      "B1",
+      "B2",
+      "B3",
+      "M1",
+      "M2",
+      "U1",
+      "U2",
+      "W1"
+    ],
+    "jaccard_matrix": [
+      [
+        1.0,
+        0.125,
+        0.0455,
+        0.16,
+        0.1818,
+        0.12,
+        0.125,
+        0.0435
+      ],
+      [
+        0.125,
+        1.0,
+        0.0,
+        0.0,
+        0.0909,
+        0.0,
+        0.0909,
+        0.0
+      ],
+      [
+        0.0455,
+        0.0,
+        1.0,
+        0.1111,
+        0.0526,
+        0.125,
+        0.1429,
+        0.0
+      ],
+      [
+        0.16,
+        0.0,
+        0.1111,
+        1.0,
+        0.1304,
+        0.1538,
+        0.0769,
+        0.1
+      ],
+      [
+        0.1818,
+        0.0909,
+        0.0526,
+        0.1304,
+        1.0,
+        0.087,
+        0.1429,
+        0.0
+      ],
+      [
+        0.12,
+        0.0,
+        0.125,
+        0.1538,
+        0.087,
+        1.0,
+        0.0833,
+        0.0
+      ],
+      [
+        0.125,
+        0.0909,
+        0.1429,
+        0.0769,
+        0.1429,
+        0.0833,
+        1.0,
+        0.0
+      ],
+      [
+        0.0435,
+        0.0,
+        0.0,
+        0.1,
+        0.0,
+        0.0,
+        0.0,
+        1.0
+      ]
+    ],
+    "label_desc_proximity": {
+      "B1": {
+        "jaccards": {
+          "CENTER": 0.2581,
+          "NORTH": 0.2195,
+          "SOUTH": 0.1429
+        },
+        "closest": "CENTER"
+      },
+      "B2": {
+        "jaccards": {
+          "CENTER": 0.2,
+          "NORTH": 0.129,
+          "SOUTH": 0.1
+        },
+        "closest": "CENTER"
+      },
+      "B3": {
+        "jaccards": {
+          "CENTER": 0.0526,
+          "NORTH": 0.0333,
+          "SOUTH": 0.0357
+        },
+        "closest": "CENTER"
+      },
+      "M1": {
+        "jaccards": {
+          "CENTER": 0.1818,
+          "NORTH": 0.1212,
+          "SOUTH": 0.0606
+        },
+        "closest": "CENTER"
+      },
+      "M2": {
+        "jaccards": {
+          "CENTER": 0.2857,
+          "NORTH": 0.2051,
+          "SOUTH": 0.1842
+        },
+        "closest": "CENTER"
+      },
+      "U1": {
+        "jaccards": {
+          "CENTER": 0.087,
+          "NORTH": 0.0909,
+          "SOUTH": 0.0303
+        },
+        "closest": "NORTH"
+      },
+      "U2": {
+        "jaccards": {
+          "CENTER": 0.2,
+          "NORTH": 0.0938,
+          "SOUTH": 0.1
+        },
+        "closest": "CENTER"
+      },
+      "W1": {
+        "jaccards": {
+          "CENTER": 0.05,
+          "NORTH": 0.0323,
+          "SOUTH": 0.0
+        },
+        "closest": "CENTER"
+      }
+    },
+    "clustering_available": true
+  },
+  "analysis_3_visual_signatures": {
+    "testable_tags": {
+      "STARS": [
+        "NORTH",
+        "SOUTH"
+      ],
+      "APPARATUS": [
+        "CENTER"
+      ]
+    },
+    "tag_middle_counts": {
+      "STARS": 42,
+      "APPARATUS": 18
+    },
+    "ns_jac": 0.3333,
+    "nc_jac": 0.4242,
+    "sc_jac": 0.4516,
+    "ns_shared_bins": {
+      "HUB_UNIVERSAL": 12,
+      "STABILITY_CRIT": 1,
+      "FLOW_TERMINAL": 1
+    },
+    "nc_shared_bins": {
+      "STABILITY_CRIT": 2,
+      "HUB_UNIVERSAL": 11,
+      "FLOW_TERMINAL": 1
+    },
+    "sc_shared_bins": {
+      "HUB_UNIVERSAL": 12,
+      "STABILITY_CRIT": 1,
+      "FLOW_TERMINAL": 1
+    }
+  },
+  "analysis_4_unique_vocabulary": {
+    "CENTER": {
+      "n_unique": 0,
+      "middles": [],
+      "bin_summary": {}
+    },
+    "NORTH": {
+      "n_unique": 11,
+      "middles": [
+        {
+          "middle": "ea",
+          "bin": "STABILITY_CRIT",
+          "is_bridge": false
+        },
+        {
+          "middle": "ech",
+          "bin": null,
+          "is_bridge": false
+        },
+        {
+          "middle": "edyot",
+          "bin": null,
+          "is_bridge": false
+        },
+        {
+          "middle": "eed",
+          "bin": "STABILITY_CRIT",
+          "is_bridge": false
+        },
+        {
+          "middle": "eolk",
+          "bin": null,
+          "is_bridge": false
+        },
+        {
+          "middle": "kai",
+          "bin": "COMPOUND_TERM",
+          "is_bridge": true
+        },
+        {
+          "middle": "kalo",
+          "bin": "BULK_OP",
+          "is_bridge": false
+        },
+        {
+          "middle": "odshe",
+          "bin": "BULK_OP",
+          "is_bridge": false
+        },
+        {
+          "middle": "ofai",
+          "bin": null,
+          "is_bridge": false
+        },
+        {
+          "middle": "opaii",
+          "bin": null,
+          "is_bridge": false
+        },
+        {
+          "middle": "t",
+          "bin": "HUB_UNIVERSAL",
+          "is_bridge": true
+        }
+      ],
+      "bin_summary": {
+        "STABILITY_CRIT": 2,
+        "COMPOUND_TERM": 1,
+        "HUB_UNIVERSAL": 1
+      }
+    },
+    "SOUTH": {
+      "n_unique": 11,
+      "middles": [
+        {
+          "middle": "aii",
+          "bin": "STABILITY_CRIT",
+          "is_bridge": true
+        },
+        {
+          "middle": "ain",
+          "bin": "PHASE_SENS",
+          "is_bridge": true
+        },
+        {
+          "middle": "edaii",
+          "bin": null,
+          "is_bridge": false
+        },
+        {
+          "middle": "eek",
+          "bin": "STABILITY_CRIT",
+          "is_bridge": true
+        },
+        {
+          "middle": "eo",
+          "bin": "HUB_UNIVERSAL",
+          "is_bridge": true
+        },
+        {
+          "middle": "h",
+          "bin": "PHASE_SENS",
+          "is_bridge": true
+        },
+        {
+          "middle": "hsh",
+          "bin": null,
+          "is_bridge": false
+        },
+        {
+          "middle": "keeoda",
+          "bin": null,
+          "is_bridge": false
+        },
+        {
+          "middle": "om",
+          "bin": "FLOW_TERMINAL",
+          "is_bridge": true
+        },
+        {
+          "middle": "oqot",
+          "bin": "SETTLING_SPEC",
+          "is_bridge": false
+        },
+        {
+          "middle": "rai",
+          "bin": "COMPOUND_TERM",
+          "is_bridge": false
+        }
+      ],
+      "bin_summary": {
+        "STABILITY_CRIT": 2,
+        "PHASE_SENS": 2,
+        "HUB_UNIVERSAL": 1,
+        "FLOW_TERMINAL": 1,
+        "SETTLING_SPEC": 1,
+        "COMPOUND_TERM": 1
+      }
+    }
+  },
+  "analysis_5_b_section_correlation": {
+    "CENTER": {
+      "B": {
+        "shared": 18,
+        "jaccard": 0.0455,
+        "coverage": 1.0
+      },
+      "C": {
+        "shared": 17,
+        "jaccard": 0.073,
+        "coverage": 0.9444
+      },
+      "H": {
+        "shared": 18,
+        "jaccard": 0.0443,
+        "coverage": 1.0
+      },
+      "S": {
+        "shared": 18,
+        "jaccard": 0.0212,
+        "coverage": 1.0
+      },
+      "T": {
+        "shared": 17,
+        "jaccard": 0.1006,
+        "coverage": 0.9444
+      }
+    },
+    "NORTH": {
+      "B": {
+        "shared": 24,
+        "jaccard": 0.0599,
+        "coverage": 0.8276
+      },
+      "C": {
+        "shared": 20,
+        "jaccard": 0.083,
+        "coverage": 0.6897
+      },
+      "H": {
+        "shared": 26,
+        "jaccard": 0.0636,
+        "coverage": 0.8966
+      },
+      "S": {
+        "shared": 24,
+        "jaccard": 0.028,
+        "coverage": 0.8276
+      },
+      "T": {
+        "shared": 20,
+        "jaccard": 0.113,
+        "coverage": 0.6897
+      }
+    },
+    "SOUTH": {
+      "B": {
+        "shared": 22,
+        "jaccard": 0.0549,
+        "coverage": 0.8148
+      },
+      "C": {
+        "shared": 21,
+        "jaccard": 0.0882,
+        "coverage": 0.7778
+      },
+      "H": {
+        "shared": 23,
+        "jaccard": 0.0561,
+        "coverage": 0.8519
+      },
+      "S": {
+        "shared": 24,
+        "jaccard": 0.0281,
+        "coverage": 0.8889
+      },
+      "T": {
+        "shared": 21,
+        "jaccard": 0.1207,
+        "coverage": 0.7778
+      }
+    }
+  },
+  "summary": {
+    "ns_jaccard": 0.3333,
+    "nc_jaccard": 0.4242,
+    "sc_jaccard": 0.4516,
+    "visual_vocab_verdict": "NOT_SUPPORTED",
+    "analysis1_verdict": "NO: NORTH-SOUTH do NOT share the most vocabulary",
+    "label_closest_counts": {
+      "CENTER": 7,
+      "NORTH": 1
+    }
+  }
+}

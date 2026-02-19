@@ -4197,6 +4197,78 @@ class RosettesAnalyzer:
             'per_folio': profiles,
         }
 
+    # ── Unified JSON access ──────────────────────────────────────
+
+    # Corrected region-to-rosette mapping (voynich.nu fRos_tr.txt)
+    # Grid: Letter=ROW (V=top, N=mid, C=bottom), Number=COL (1=left, 2=center, 3=right)
+    REGION_TO_ROSETTE = {
+        'V1': 'NW', 'V2': 'NORTH', 'N1': 'WEST', 'N2': 'CENTER', 'C2': 'SOUTH',
+        'U1': 'NW', 'U2': 'NORTH', 'U3': 'NE', 'M1': 'WEST', 'M2': 'CENTER',
+        'M3': 'SE', 'B1': 'SW', 'B2': 'SOUTH', 'B3': 'SE',
+        'D1': 'SW', 'W1': 'NW',
+    }
+
+    ROSETTE_REGIONS = {
+        'NW': ['V1', 'U1', 'W1'], 'NORTH': ['V2', 'U2'], 'NE': ['U3'],
+        'WEST': ['N1', 'M1'], 'CENTER': ['N2', 'M2'], 'EAST': [],
+        'SW': ['B1', 'D1'], 'SOUTH': ['C2', 'B2'], 'SE': ['B3', 'M3'],
+    }
+
+    def load_unified(self) -> Dict:
+        """Load the unified rosettes reference JSON."""
+        if not hasattr(self, '_unified') or self._unified is None:
+            path = PROJECT_ROOT / 'data' / 'rosettes_unified.json'
+            with open(path, 'r', encoding='utf-8') as f:
+                self._unified = json.load(f)
+        return self._unified
+
+    def get_rosette_tokens(self, position: str) -> List[Dict]:
+        """Get all tokens for a physical rosette position (NW, NORTH, etc.).
+        Combines ring text + labels + special from all region codes.
+        Returns list of token detail dicts from the unified JSON."""
+        u = self.load_unified()
+        grid = u.get('rosette_grid', {}).get(position, {})
+        tokens = []
+        for key in ('ring_text', 'labels', 'labels_secondary', 'margin', 'corner_doodle_text'):
+            section = grid.get(key, {})
+            if 'tokens' in section:
+                tokens.extend(section['tokens'])
+        return tokens
+
+    def get_rosette_profile(self, position: str) -> Dict:
+        """Get the combined functional profile for a rosette position."""
+        u = self.load_unified()
+        grid = u.get('rosette_grid', {}).get(position, {})
+        return grid.get('combined_profile', {})
+
+    def get_visual(self, position: str) -> str:
+        """Get the visual description for a rosette position."""
+        u = self.load_unified()
+        grid = u.get('rosette_grid', {}).get(position, {})
+        return grid.get('visual', '')
+
+    def region_to_rosette(self, region_code: str) -> Optional[str]:
+        """Map a region code (V1, B1, etc.) to its physical rosette position."""
+        return self.REGION_TO_ROSETTE.get(region_code)
+
+    def get_folio_regions(self, folio: str) -> Dict:
+        """Get all regions/placements for a folio with tokens from unified JSON."""
+        u = self.load_unified()
+        if folio == 'f85v2':
+            return u.get('regions', {})
+        outside = u.get('outside_face', {}).get(folio, {})
+        return outside.get('regions', {})
+
+    def get_outside_face(self, folio: str) -> Dict:
+        """Get outside-face folio data (f85r1, f85r2, f86v3-v6)."""
+        u = self.load_unified()
+        return u.get('outside_face', {}).get(folio, {})
+
+    def get_grid(self) -> Dict:
+        """Get the full rosette grid with all 9 positions."""
+        u = self.load_unified()
+        return u.get('rosette_grid', {})
+
 
 # ============================================================
 # QUICK VERIFICATION

@@ -1,0 +1,1470 @@
+{
+  "_metadata": {
+    "phase": "396",
+    "analysis": "rosettes_functional_profiling",
+    "description": "Per-rosette functional profiling against B programs",
+    "folio": "f85v2",
+    "n_rosettes": 8,
+    "sparse_rosettes": [
+      "NE",
+      "SE"
+    ],
+    "n_b_paragraphs": 591,
+    "n_b_folios": 82,
+    "elapsed_seconds": 7.4
+  },
+  "rosette_regions": {
+    "NW": [
+      "V1",
+      "U1",
+      "W1"
+    ],
+    "NORTH": [
+      "V2",
+      "U2"
+    ],
+    "NE": [
+      "U3"
+    ],
+    "WEST": [
+      "N1",
+      "M1"
+    ],
+    "CENTER": [
+      "N2",
+      "M2"
+    ],
+    "SW": [
+      "B1",
+      "D1"
+    ],
+    "SOUTH": [
+      "C2",
+      "B2"
+    ],
+    "SE": [
+      "B3",
+      "M3"
+    ]
+  },
+  "rosette_token_counts": {
+    "NW": 41,
+    "NORTH": 39,
+    "NE": 2,
+    "WEST": 31,
+    "CENTER": 60,
+    "SW": 34,
+    "SOUTH": 40,
+    "SE": 4
+  },
+  "rosette_middle_counts": {
+    "NW": 25,
+    "NORTH": 23,
+    "NE": 2,
+    "WEST": 24,
+    "CENTER": 33,
+    "SW": 24,
+    "SOUTH": 20,
+    "SE": 4
+  },
+  "rosette_middles": {
+    "NW": [
+      "a",
+      "aiin",
+      "ain",
+      "al",
+      "ar",
+      "d",
+      "dar",
+      "e",
+      "ed",
+      "h",
+      "iin",
+      "keeoda",
+      "ld",
+      "o",
+      "od",
+      "og",
+      "ol",
+      "om",
+      "opar",
+      "oqot",
+      "or",
+      "r",
+      "ral",
+      "ry",
+      "s"
+    ],
+    "NORTH": [
+      "ai",
+      "aii",
+      "ain",
+      "al",
+      "an",
+      "ar",
+      "edaii",
+      "edy",
+      "eek",
+      "eo",
+      "hsh",
+      "iino",
+      "k",
+      "o",
+      "od",
+      "odai",
+      "ol",
+      "op",
+      "or",
+      "r",
+      "rai",
+      "s",
+      "y"
+    ],
+    "NE": [
+      "o",
+      "opokch"
+    ],
+    "WEST": [
+      "a",
+      "aiin",
+      "al",
+      "an",
+      "ar",
+      "d",
+      "e",
+      "ed",
+      "edyot",
+      "eed",
+      "eolk",
+      "iin",
+      "k",
+      "ke",
+      "o",
+      "od",
+      "oda",
+      "opaii",
+      "opaiiino",
+      "or",
+      "pai",
+      "r",
+      "t",
+      "y"
+    ],
+    "CENTER": [
+      "a",
+      "aiin",
+      "al",
+      "ar",
+      "d",
+      "dy",
+      "e",
+      "ea",
+      "ech",
+      "ed",
+      "edy",
+      "iin",
+      "ir",
+      "k",
+      "kai",
+      "kalo",
+      "l",
+      "o",
+      "od",
+      "odshe",
+      "ofai",
+      "ol",
+      "op",
+      "opch",
+      "opd",
+      "opydsh",
+      "or",
+      "r",
+      "ro",
+      "s",
+      "x",
+      "y",
+      "yp"
+    ],
+    "SW": [
+      "a",
+      "ai",
+      "am",
+      "ar",
+      "ch",
+      "cphed",
+      "d",
+      "dy",
+      "ed",
+      "edsh",
+      "edy",
+      "eeo",
+      "eey",
+      "lcpheek",
+      "o",
+      "od",
+      "opar",
+      "opashcfh",
+      "opchd",
+      "opdar",
+      "oped",
+      "or",
+      "r",
+      "y"
+    ],
+    "SOUTH": [
+      "a",
+      "ai",
+      "aiin",
+      "al",
+      "ar",
+      "d",
+      "dy",
+      "e",
+      "ed",
+      "edy",
+      "k",
+      "o",
+      "od",
+      "ofar",
+      "ol",
+      "op",
+      "or",
+      "os",
+      "s",
+      "y"
+    ],
+    "SE": [
+      "ar",
+      "dy",
+      "lashal",
+      "ry"
+    ]
+  },
+  "analysis_1_kernel_profiles": {
+    "NW": {
+      "k_count": 1,
+      "h_count": 1,
+      "e_count": 4,
+      "total_chars": 57,
+      "khe_total": 6,
+      "k_frac": 0.1667,
+      "h_frac": 0.1667,
+      "e_frac": 0.6667,
+      "k_to_e": 0.25
+    },
+    "NORTH": {
+      "k_count": 2,
+      "h_count": 2,
+      "e_count": 5,
+      "total_chars": 54,
+      "khe_total": 9,
+      "k_frac": 0.2222,
+      "h_frac": 0.2222,
+      "e_frac": 0.5556,
+      "k_to_e": 0.4
+    },
+    "NE": {
+      "k_count": 1,
+      "h_count": 1,
+      "e_count": 0,
+      "total_chars": 7,
+      "khe_total": 2,
+      "k_frac": 0.5,
+      "h_frac": 0.5,
+      "e_frac": 0.0,
+      "k_to_e": null
+    },
+    "WEST": {
+      "k_count": 3,
+      "h_count": 0,
+      "e_count": 7,
+      "total_chars": 60,
+      "khe_total": 10,
+      "k_frac": 0.3,
+      "h_frac": 0.0,
+      "e_frac": 0.7,
+      "k_to_e": 0.4286
+    },
+    "CENTER": {
+      "k_count": 3,
+      "h_count": 4,
+      "e_count": 6,
+      "total_chars": 76,
+      "khe_total": 13,
+      "k_frac": 0.2308,
+      "h_frac": 0.3077,
+      "e_frac": 0.4615,
+      "k_to_e": 0.5
+    },
+    "SW": {
+      "k_count": 1,
+      "h_count": 7,
+      "e_count": 11,
+      "total_chars": 72,
+      "khe_total": 19,
+      "k_frac": 0.0526,
+      "h_frac": 0.3684,
+      "e_frac": 0.5789,
+      "k_to_e": 0.0909
+    },
+    "SOUTH": {
+      "k_count": 1,
+      "h_count": 0,
+      "e_count": 3,
+      "total_chars": 38,
+      "khe_total": 4,
+      "k_frac": 0.25,
+      "h_frac": 0.0,
+      "e_frac": 0.75,
+      "k_to_e": 0.3333
+    },
+    "SE": {
+      "k_count": 0,
+      "h_count": 1,
+      "e_count": 0,
+      "total_chars": 12,
+      "khe_total": 1,
+      "k_frac": 0.0,
+      "h_frac": 1.0,
+      "e_frac": 0.0,
+      "k_to_e": null
+    }
+  },
+  "analysis_2_macro_state_profiles": {
+    "NW": {
+      "counts": {
+        "AXM": 7,
+        "FQ": 8,
+        "FL_HAZ": 2,
+        "CC": 3
+      },
+      "total_mapped": 20,
+      "unmapped": 21,
+      "distribution": {
+        "AXM": 0.35,
+        "AXm": 0.0,
+        "FL_HAZ": 0.1,
+        "FQ": 0.4,
+        "CC": 0.15,
+        "FL_SAFE": 0.0
+      }
+    },
+    "NORTH": {
+      "counts": {
+        "FQ": 10,
+        "FL_SAFE": 1,
+        "AXM": 5,
+        "CC": 3,
+        "FL_HAZ": 5,
+        "AXm": 1
+      },
+      "total_mapped": 25,
+      "unmapped": 14,
+      "distribution": {
+        "AXM": 0.2,
+        "AXm": 0.04,
+        "FL_HAZ": 0.2,
+        "FQ": 0.4,
+        "CC": 0.12,
+        "FL_SAFE": 0.04
+      }
+    },
+    "NE": {
+      "counts": {
+        "AXM": 1
+      },
+      "total_mapped": 1,
+      "unmapped": 1,
+      "distribution": {
+        "AXM": 1.0,
+        "AXm": 0.0,
+        "FL_HAZ": 0.0,
+        "FQ": 0.0,
+        "CC": 0.0,
+        "FL_SAFE": 0.0
+      }
+    },
+    "WEST": {
+      "counts": {
+        "FQ": 4,
+        "CC": 1,
+        "AXM": 5,
+        "AXm": 2,
+        "FL_HAZ": 2
+      },
+      "total_mapped": 14,
+      "unmapped": 17,
+      "distribution": {
+        "AXM": 0.3571,
+        "AXm": 0.1429,
+        "FL_HAZ": 0.1429,
+        "FQ": 0.2857,
+        "CC": 0.0714,
+        "FL_SAFE": 0.0
+      }
+    },
+    "CENTER": {
+      "counts": {
+        "FQ": 16,
+        "AXM": 11,
+        "CC": 5,
+        "FL_HAZ": 3
+      },
+      "total_mapped": 35,
+      "unmapped": 25,
+      "distribution": {
+        "AXM": 0.3143,
+        "AXm": 0.0,
+        "FL_HAZ": 0.0857,
+        "FQ": 0.4571,
+        "CC": 0.1429,
+        "FL_SAFE": 0.0
+      }
+    },
+    "SW": {
+      "counts": {
+        "FQ": 9,
+        "AXM": 6,
+        "AXm": 1,
+        "FL_HAZ": 1
+      },
+      "total_mapped": 17,
+      "unmapped": 17,
+      "distribution": {
+        "AXM": 0.3529,
+        "AXm": 0.0588,
+        "FL_HAZ": 0.0588,
+        "FQ": 0.5294,
+        "CC": 0.0,
+        "FL_SAFE": 0.0
+      }
+    },
+    "SOUTH": {
+      "counts": {
+        "AXM": 11,
+        "FL_HAZ": 4,
+        "FQ": 9,
+        "CC": 1,
+        "AXm": 1
+      },
+      "total_mapped": 26,
+      "unmapped": 14,
+      "distribution": {
+        "AXM": 0.4231,
+        "AXm": 0.0385,
+        "FL_HAZ": 0.1538,
+        "FQ": 0.3462,
+        "CC": 0.0385,
+        "FL_SAFE": 0.0
+      }
+    },
+    "SE": {
+      "counts": {
+        "FQ": 1,
+        "AXM": 1
+      },
+      "total_mapped": 2,
+      "unmapped": 2,
+      "distribution": {
+        "AXM": 0.5,
+        "AXm": 0.0,
+        "FL_HAZ": 0.0,
+        "FQ": 0.5,
+        "CC": 0.0,
+        "FL_SAFE": 0.0
+      }
+    }
+  },
+  "analysis_3_affordance_profiles": {
+    "NW": {
+      "counts": {
+        "HUB_UNIVERSAL": 12,
+        "STABILITY_CRITICAL": 1,
+        "FLOW_TERMINAL": 4,
+        "PHASE_SENSITIVE": 2,
+        "SETTLING_SPECIALIZED": 1
+      },
+      "total_mapped": 20,
+      "unmapped": 5,
+      "distribution": {
+        "FLOW_TERMINAL": 0.2,
+        "ROUTINE_SPECIALIZED": 0.0,
+        "PRECISION_SPECIALIZED": 0.0,
+        "COMPOUND_TERMINAL": 0.0,
+        "BULK_OPERATIONAL": 0.0,
+        "SETTLING_SPECIALIZED": 0.05,
+        "HUB_UNIVERSAL": 0.6,
+        "ENERGY_SPECIALIZED": 0.0,
+        "STABILITY_CRITICAL": 0.05,
+        "PHASE_SENSITIVE": 0.1
+      },
+      "enriched": [
+        [
+          "SETTLING_SPECIALIZED",
+          2.7
+        ],
+        [
+          "HUB_UNIVERSAL",
+          1.7053
+        ],
+        [
+          "PHASE_SENSITIVE",
+          1.8
+        ]
+      ],
+      "depleted": [
+        [
+          "ROUTINE_SPECIALIZED",
+          0.0
+        ],
+        [
+          "COMPOUND_TERMINAL",
+          0.0
+        ],
+        [
+          "BULK_OPERATIONAL",
+          0.0
+        ],
+        [
+          "STABILITY_CRITICAL",
+          0.3375
+        ]
+      ]
+    },
+    "NORTH": {
+      "counts": {
+        "STABILITY_CRITICAL": 3,
+        "FLOW_TERMINAL": 3,
+        "BULK_OPERATIONAL": 1,
+        "HUB_UNIVERSAL": 11,
+        "COMPOUND_TERMINAL": 2,
+        "PHASE_SENSITIVE": 1
+      },
+      "total_mapped": 21,
+      "unmapped": 2,
+      "distribution": {
+        "FLOW_TERMINAL": 0.1429,
+        "ROUTINE_SPECIALIZED": 0.0,
+        "PRECISION_SPECIALIZED": 0.0,
+        "COMPOUND_TERMINAL": 0.0952,
+        "BULK_OPERATIONAL": 0.0476,
+        "SETTLING_SPECIALIZED": 0.0,
+        "HUB_UNIVERSAL": 0.5238,
+        "ENERGY_SPECIALIZED": 0.0,
+        "STABILITY_CRITICAL": 0.1429,
+        "PHASE_SENSITIVE": 0.0476
+      },
+      "enriched": [],
+      "depleted": [
+        [
+          "ROUTINE_SPECIALIZED",
+          0.0
+        ]
+      ]
+    },
+    "NE": {
+      "counts": {
+        "HUB_UNIVERSAL": 1
+      },
+      "total_mapped": 1,
+      "unmapped": 1,
+      "distribution": {
+        "FLOW_TERMINAL": 0.0,
+        "ROUTINE_SPECIALIZED": 0.0,
+        "PRECISION_SPECIALIZED": 0.0,
+        "COMPOUND_TERMINAL": 0.0,
+        "BULK_OPERATIONAL": 0.0,
+        "SETTLING_SPECIALIZED": 0.0,
+        "HUB_UNIVERSAL": 1.0,
+        "ENERGY_SPECIALIZED": 0.0,
+        "STABILITY_CRITICAL": 0.0,
+        "PHASE_SENSITIVE": 0.0
+      },
+      "enriched": [
+        [
+          "HUB_UNIVERSAL",
+          2.8421
+        ]
+      ],
+      "depleted": [
+        [
+          "FLOW_TERMINAL",
+          0.0
+        ],
+        [
+          "ROUTINE_SPECIALIZED",
+          0.0
+        ],
+        [
+          "COMPOUND_TERMINAL",
+          0.0
+        ],
+        [
+          "BULK_OPERATIONAL",
+          0.0
+        ],
+        [
+          "STABILITY_CRITICAL",
+          0.0
+        ],
+        [
+          "PHASE_SENSITIVE",
+          0.0
+        ]
+      ]
+    },
+    "WEST": {
+      "counts": {
+        "FLOW_TERMINAL": 2,
+        "ROUTINE_SPECIALIZED": 1,
+        "STABILITY_CRITICAL": 3,
+        "HUB_UNIVERSAL": 13,
+        "COMPOUND_TERMINAL": 1
+      },
+      "total_mapped": 20,
+      "unmapped": 4,
+      "distribution": {
+        "FLOW_TERMINAL": 0.1,
+        "ROUTINE_SPECIALIZED": 0.05,
+        "PRECISION_SPECIALIZED": 0.0,
+        "COMPOUND_TERMINAL": 0.05,
+        "BULK_OPERATIONAL": 0.0,
+        "SETTLING_SPECIALIZED": 0.0,
+        "HUB_UNIVERSAL": 0.65,
+        "ENERGY_SPECIALIZED": 0.0,
+        "STABILITY_CRITICAL": 0.15,
+        "PHASE_SENSITIVE": 0.0
+      },
+      "enriched": [
+        [
+          "HUB_UNIVERSAL",
+          1.8474
+        ]
+      ],
+      "depleted": [
+        [
+          "FLOW_TERMINAL",
+          0.45
+        ],
+        [
+          "BULK_OPERATIONAL",
+          0.0
+        ],
+        [
+          "PHASE_SENSITIVE",
+          0.0
+        ]
+      ]
+    },
+    "CENTER": {
+      "counts": {
+        "FLOW_TERMINAL": 5,
+        "BULK_OPERATIONAL": 2,
+        "HUB_UNIVERSAL": 16,
+        "STABILITY_CRITICAL": 3,
+        "COMPOUND_TERMINAL": 1,
+        "ROUTINE_SPECIALIZED": 1,
+        "PHASE_SENSITIVE": 1
+      },
+      "total_mapped": 29,
+      "unmapped": 4,
+      "distribution": {
+        "FLOW_TERMINAL": 0.1724,
+        "ROUTINE_SPECIALIZED": 0.0345,
+        "PRECISION_SPECIALIZED": 0.0,
+        "COMPOUND_TERMINAL": 0.0345,
+        "BULK_OPERATIONAL": 0.069,
+        "SETTLING_SPECIALIZED": 0.0,
+        "HUB_UNIVERSAL": 0.5517,
+        "ENERGY_SPECIALIZED": 0.0,
+        "STABILITY_CRITICAL": 0.1034,
+        "PHASE_SENSITIVE": 0.0345
+      },
+      "enriched": [
+        [
+          "HUB_UNIVERSAL",
+          1.5681
+        ]
+      ],
+      "depleted": [
+        [
+          "COMPOUND_TERMINAL",
+          0.4655
+        ]
+      ]
+    },
+    "SW": {
+      "counts": {
+        "STABILITY_CRITICAL": 3,
+        "HUB_UNIVERSAL": 9,
+        "FLOW_TERMINAL": 3,
+        "ROUTINE_SPECIALIZED": 1
+      },
+      "total_mapped": 16,
+      "unmapped": 8,
+      "distribution": {
+        "FLOW_TERMINAL": 0.1875,
+        "ROUTINE_SPECIALIZED": 0.0625,
+        "PRECISION_SPECIALIZED": 0.0,
+        "COMPOUND_TERMINAL": 0.0,
+        "BULK_OPERATIONAL": 0.0,
+        "SETTLING_SPECIALIZED": 0.0,
+        "HUB_UNIVERSAL": 0.5625,
+        "ENERGY_SPECIALIZED": 0.0,
+        "STABILITY_CRITICAL": 0.1875,
+        "PHASE_SENSITIVE": 0.0
+      },
+      "enriched": [
+        [
+          "HUB_UNIVERSAL",
+          1.5987
+        ]
+      ],
+      "depleted": [
+        [
+          "COMPOUND_TERMINAL",
+          0.0
+        ],
+        [
+          "BULK_OPERATIONAL",
+          0.0
+        ],
+        [
+          "PHASE_SENSITIVE",
+          0.0
+        ]
+      ]
+    },
+    "SOUTH": {
+      "counts": {
+        "STABILITY_CRITICAL": 2,
+        "HUB_UNIVERSAL": 13,
+        "FLOW_TERMINAL": 4,
+        "PRECISION_SPECIALIZED": 1
+      },
+      "total_mapped": 20,
+      "unmapped": 0,
+      "distribution": {
+        "FLOW_TERMINAL": 0.2,
+        "ROUTINE_SPECIALIZED": 0.0,
+        "PRECISION_SPECIALIZED": 0.05,
+        "COMPOUND_TERMINAL": 0.0,
+        "BULK_OPERATIONAL": 0.0,
+        "SETTLING_SPECIALIZED": 0.0,
+        "HUB_UNIVERSAL": 0.65,
+        "ENERGY_SPECIALIZED": 0.0,
+        "STABILITY_CRITICAL": 0.1,
+        "PHASE_SENSITIVE": 0.0
+      },
+      "enriched": [
+        [
+          "PRECISION_SPECIALIZED",
+          2.7
+        ],
+        [
+          "HUB_UNIVERSAL",
+          1.8474
+        ]
+      ],
+      "depleted": [
+        [
+          "ROUTINE_SPECIALIZED",
+          0.0
+        ],
+        [
+          "COMPOUND_TERMINAL",
+          0.0
+        ],
+        [
+          "BULK_OPERATIONAL",
+          0.0
+        ],
+        [
+          "PHASE_SENSITIVE",
+          0.0
+        ]
+      ]
+    },
+    "SE": {
+      "counts": {
+        "HUB_UNIVERSAL": 2,
+        "FLOW_TERMINAL": 1
+      },
+      "total_mapped": 3,
+      "unmapped": 1,
+      "distribution": {
+        "FLOW_TERMINAL": 0.3333,
+        "ROUTINE_SPECIALIZED": 0.0,
+        "PRECISION_SPECIALIZED": 0.0,
+        "COMPOUND_TERMINAL": 0.0,
+        "BULK_OPERATIONAL": 0.0,
+        "SETTLING_SPECIALIZED": 0.0,
+        "HUB_UNIVERSAL": 0.6667,
+        "ENERGY_SPECIALIZED": 0.0,
+        "STABILITY_CRITICAL": 0.0,
+        "PHASE_SENSITIVE": 0.0
+      },
+      "enriched": [
+        [
+          "HUB_UNIVERSAL",
+          1.8947
+        ]
+      ],
+      "depleted": [
+        [
+          "ROUTINE_SPECIALIZED",
+          0.0
+        ],
+        [
+          "COMPOUND_TERMINAL",
+          0.0
+        ],
+        [
+          "BULK_OPERATIONAL",
+          0.0
+        ],
+        [
+          "STABILITY_CRITICAL",
+          0.0
+        ],
+        [
+          "PHASE_SENSITIVE",
+          0.0
+        ]
+      ]
+    }
+  },
+  "analysis_3_all_rosettes_average": {
+    "FLOW_TERMINAL": 0.2222,
+    "ROUTINE_SPECIALIZED": 0.0556,
+    "PRECISION_SPECIALIZED": 0.0185,
+    "COMPOUND_TERMINAL": 0.0741,
+    "BULK_OPERATIONAL": 0.0556,
+    "SETTLING_SPECIALIZED": 0.0185,
+    "HUB_UNIVERSAL": 0.3519,
+    "ENERGY_SPECIALIZED": 0.0,
+    "STABILITY_CRITICAL": 0.1481,
+    "PHASE_SENSITIVE": 0.0556
+  },
+  "analysis_4_section_profiles": {
+    "NW": {
+      "distribution": {
+        "B": 0.8,
+        "C": 0.76,
+        "H": 0.76,
+        "S": 0.88,
+        "T": 0.72
+      },
+      "n_middles": 25
+    },
+    "NORTH": {
+      "distribution": {
+        "B": 0.7826,
+        "C": 0.7826,
+        "H": 0.8696,
+        "S": 0.8696,
+        "T": 0.7826
+      },
+      "n_middles": 23
+    },
+    "NE": {
+      "distribution": {
+        "B": 0.5,
+        "C": 0.5,
+        "H": 0.5,
+        "S": 0.5,
+        "T": 0.5
+      },
+      "n_middles": 2
+    },
+    "WEST": {
+      "distribution": {
+        "B": 0.7917,
+        "C": 0.75,
+        "H": 0.9167,
+        "S": 0.875,
+        "T": 0.75
+      },
+      "n_middles": 24
+    },
+    "CENTER": {
+      "distribution": {
+        "B": 0.7879,
+        "C": 0.7273,
+        "H": 0.8788,
+        "S": 0.8788,
+        "T": 0.7576
+      },
+      "n_middles": 33
+    },
+    "SW": {
+      "distribution": {
+        "B": 0.6667,
+        "C": 0.625,
+        "H": 0.7083,
+        "S": 0.75,
+        "T": 0.625
+      },
+      "n_middles": 24
+    },
+    "SOUTH": {
+      "distribution": {
+        "B": 0.95,
+        "C": 0.9,
+        "H": 0.95,
+        "S": 1.0,
+        "T": 0.95
+      },
+      "n_middles": 20
+    },
+    "SE": {
+      "distribution": {
+        "B": 0.75,
+        "C": 0.75,
+        "H": 0.75,
+        "S": 0.75,
+        "T": 0.75
+      },
+      "n_middles": 4
+    }
+  },
+  "analysis_5_destination_profiles": {
+    "NW": {
+      "top5": [
+        {
+          "folio": "f114r",
+          "paragraph": "P9",
+          "jaccard": 0.35,
+          "shared_count": 14
+        },
+        {
+          "folio": "f33r",
+          "paragraph": "P3",
+          "jaccard": 0.3438,
+          "shared_count": 11
+        },
+        {
+          "folio": "f95v2",
+          "paragraph": "P2",
+          "jaccard": 0.3235,
+          "shared_count": 11
+        },
+        {
+          "folio": "f111r",
+          "paragraph": "P2",
+          "jaccard": 0.3,
+          "shared_count": 9
+        },
+        {
+          "folio": "f55v",
+          "paragraph": "P2",
+          "jaccard": 0.3,
+          "shared_count": 12
+        }
+      ],
+      "n_destinations": 577,
+      "n_with_overlap": 577
+    },
+    "NORTH": {
+      "top5": [
+        {
+          "folio": "f114r",
+          "paragraph": "P9",
+          "jaccard": 0.3684,
+          "shared_count": 14
+        },
+        {
+          "folio": "f40v",
+          "paragraph": "P3",
+          "jaccard": 0.3448,
+          "shared_count": 10
+        },
+        {
+          "folio": "f86v5",
+          "paragraph": "P7",
+          "jaccard": 0.3429,
+          "shared_count": 12
+        },
+        {
+          "folio": "f104v",
+          "paragraph": "P9",
+          "jaccard": 0.3333,
+          "shared_count": 13
+        },
+        {
+          "folio": "f113r",
+          "paragraph": "P1",
+          "jaccard": 0.3333,
+          "shared_count": 12
+        }
+      ],
+      "n_destinations": 580,
+      "n_with_overlap": 580
+    },
+    "NE": {
+      "top5": [
+        {
+          "folio": "f40v",
+          "paragraph": "P8",
+          "jaccard": 0.2,
+          "shared_count": 1
+        },
+        {
+          "folio": "f55r",
+          "paragraph": "P2",
+          "jaccard": 0.2,
+          "shared_count": 1
+        },
+        {
+          "folio": "f107v",
+          "paragraph": "P19",
+          "jaccard": 0.1667,
+          "shared_count": 1
+        },
+        {
+          "folio": "f40v",
+          "paragraph": "P4",
+          "jaccard": 0.1667,
+          "shared_count": 1
+        },
+        {
+          "folio": "f33v",
+          "paragraph": "P3",
+          "jaccard": 0.125,
+          "shared_count": 1
+        }
+      ],
+      "n_destinations": 222,
+      "n_with_overlap": 222
+    },
+    "WEST": {
+      "top5": [
+        {
+          "folio": "f94r",
+          "paragraph": "P1",
+          "jaccard": 0.4138,
+          "shared_count": 12
+        },
+        {
+          "folio": "f114r",
+          "paragraph": "P9",
+          "jaccard": 0.3947,
+          "shared_count": 15
+        },
+        {
+          "folio": "f107v",
+          "paragraph": "P20",
+          "jaccard": 0.3714,
+          "shared_count": 13
+        },
+        {
+          "folio": "f76r",
+          "paragraph": "P4",
+          "jaccard": 0.35,
+          "shared_count": 14
+        },
+        {
+          "folio": "f40v",
+          "paragraph": "P3",
+          "jaccard": 0.3333,
+          "shared_count": 10
+        }
+      ],
+      "n_destinations": 585,
+      "n_with_overlap": 585
+    },
+    "CENTER": {
+      "top5": [
+        {
+          "folio": "f66r",
+          "paragraph": "P4",
+          "jaccard": 0.3778,
+          "shared_count": 17
+        },
+        {
+          "folio": "f76r",
+          "paragraph": "P4",
+          "jaccard": 0.3696,
+          "shared_count": 17
+        },
+        {
+          "folio": "f86v5",
+          "paragraph": "P1",
+          "jaccard": 0.3673,
+          "shared_count": 18
+        },
+        {
+          "folio": "f40v",
+          "paragraph": "P3",
+          "jaccard": 0.3611,
+          "shared_count": 13
+        },
+        {
+          "folio": "f95v2",
+          "paragraph": "P2",
+          "jaccard": 0.359,
+          "shared_count": 14
+        }
+      ],
+      "n_destinations": 588,
+      "n_with_overlap": 588
+    },
+    "SW": {
+      "top5": [
+        {
+          "folio": "f106v",
+          "paragraph": "P4",
+          "jaccard": 0.2973,
+          "shared_count": 11
+        },
+        {
+          "folio": "f107v",
+          "paragraph": "P13",
+          "jaccard": 0.2903,
+          "shared_count": 9
+        },
+        {
+          "folio": "f113r",
+          "paragraph": "P1",
+          "jaccard": 0.2895,
+          "shared_count": 11
+        },
+        {
+          "folio": "f40r",
+          "paragraph": "P4",
+          "jaccard": 0.2759,
+          "shared_count": 8
+        },
+        {
+          "folio": "f104v",
+          "paragraph": "P11",
+          "jaccard": 0.275,
+          "shared_count": 11
+        }
+      ],
+      "n_destinations": 580,
+      "n_with_overlap": 580
+    },
+    "SOUTH": {
+      "top5": [
+        {
+          "folio": "f94r",
+          "paragraph": "P3",
+          "jaccard": 0.48,
+          "shared_count": 12
+        },
+        {
+          "folio": "f113r",
+          "paragraph": "P1",
+          "jaccard": 0.4516,
+          "shared_count": 14
+        },
+        {
+          "folio": "f114r",
+          "paragraph": "P9",
+          "jaccard": 0.4412,
+          "shared_count": 15
+        },
+        {
+          "folio": "f106v",
+          "paragraph": "P8",
+          "jaccard": 0.4062,
+          "shared_count": 13
+        },
+        {
+          "folio": "f40r",
+          "paragraph": "P1",
+          "jaccard": 0.4062,
+          "shared_count": 13
+        }
+      ],
+      "n_destinations": 588,
+      "n_with_overlap": 588
+    },
+    "SE": {
+      "top5": [
+        {
+          "folio": "f75r",
+          "paragraph": "P7",
+          "jaccard": 0.2222,
+          "shared_count": 2
+        },
+        {
+          "folio": "f95r2",
+          "paragraph": "P4",
+          "jaccard": 0.2,
+          "shared_count": 2
+        },
+        {
+          "folio": "f48v",
+          "paragraph": "P4",
+          "jaccard": 0.1765,
+          "shared_count": 3
+        },
+        {
+          "folio": "f33v",
+          "paragraph": "P2",
+          "jaccard": 0.1667,
+          "shared_count": 2
+        },
+        {
+          "folio": "f40v",
+          "paragraph": "P1",
+          "jaccard": 0.1667,
+          "shared_count": 1
+        }
+      ],
+      "n_destinations": 443,
+      "n_with_overlap": 443
+    }
+  },
+  "analysis_5_pairwise_destination_jaccard": {
+    "NW-WEST": 0.9863,
+    "NW-SW": 0.9778,
+    "NW-SOUTH": 0.9813,
+    "NORTH-NW": 0.9744,
+    "NORTH-WEST": 0.9881,
+    "NORTH-SW": 0.9728,
+    "NORTH-SOUTH": 0.9864,
+    "CENTER-NW": 0.9813,
+    "CENTER-NORTH": 0.9864,
+    "CENTER-WEST": 0.9949,
+    "CENTER-SW": 0.983,
+    "CENTER-SOUTH": 1.0,
+    "SW-WEST": 0.9779,
+    "SOUTH-WEST": 0.9949,
+    "SOUTH-SW": 0.983
+  },
+  "analysis_5_mean_destination_jaccard": 0.9846,
+  "analysis_6_lane_profiles": {
+    "NW": {
+      "counts": {
+        "QO": 15,
+        "BARE": 14,
+        "SETUP": 5,
+        "CHSH": 2,
+        "CLOSE": 4,
+        "CTRL": 1
+      },
+      "total": 41,
+      "distribution": {
+        "SETUP": 0.122,
+        "QO": 0.3659,
+        "CHSH": 0.0488,
+        "PREP": 0.0,
+        "CLOSE": 0.0976,
+        "LINK": 0.0,
+        "INIT": 0.0,
+        "MAINT": 0.0,
+        "XFER": 0.0,
+        "CTRL": 0.0244,
+        "KE": 0.0,
+        "TE": 0.0,
+        "BARE": 0.3415
+      }
+    },
+    "NORTH": {
+      "counts": {
+        "CTRL": 1,
+        "QO": 13,
+        "CHSH": 2,
+        "CLOSE": 4,
+        "BARE": 18,
+        "SETUP": 1
+      },
+      "total": 39,
+      "distribution": {
+        "SETUP": 0.0256,
+        "QO": 0.3333,
+        "CHSH": 0.0513,
+        "PREP": 0.0,
+        "CLOSE": 0.1026,
+        "LINK": 0.0,
+        "INIT": 0.0,
+        "MAINT": 0.0,
+        "XFER": 0.0,
+        "CTRL": 0.0256,
+        "KE": 0.0,
+        "TE": 0.0,
+        "BARE": 0.4615
+      }
+    },
+    "NE": {
+      "counts": {
+        "BARE": 2
+      },
+      "total": 2,
+      "distribution": {
+        "SETUP": 0.0,
+        "QO": 0.0,
+        "CHSH": 0.0,
+        "PREP": 0.0,
+        "CLOSE": 0.0,
+        "LINK": 0.0,
+        "INIT": 0.0,
+        "MAINT": 0.0,
+        "XFER": 0.0,
+        "CTRL": 0.0,
+        "KE": 0.0,
+        "TE": 0.0,
+        "BARE": 1.0
+      }
+    },
+    "WEST": {
+      "counts": {
+        "CLOSE": 3,
+        "QO": 12,
+        "DE": 1,
+        "SETUP": 1,
+        "BARE": 9,
+        "CHSH": 4,
+        "XFER": 1
+      },
+      "total": 31,
+      "distribution": {
+        "SETUP": 0.0323,
+        "QO": 0.3871,
+        "CHSH": 0.129,
+        "PREP": 0.0,
+        "CLOSE": 0.0968,
+        "LINK": 0.0,
+        "INIT": 0.0,
+        "MAINT": 0.0,
+        "XFER": 0.0323,
+        "CTRL": 0.0,
+        "KE": 0.0,
+        "TE": 0.0,
+        "BARE": 0.2903,
+        "DE": 0.0323
+      }
+    },
+    "CENTER": {
+      "counts": {
+        "QO": 17,
+        "BARE": 24,
+        "CLOSE": 7,
+        "CHSH": 3,
+        "SETUP": 7,
+        "PREP": 1,
+        "TE": 1
+      },
+      "total": 60,
+      "distribution": {
+        "SETUP": 0.1167,
+        "QO": 0.2833,
+        "CHSH": 0.05,
+        "PREP": 0.0167,
+        "CLOSE": 0.1167,
+        "LINK": 0.0,
+        "INIT": 0.0,
+        "MAINT": 0.0,
+        "XFER": 0.0,
+        "CTRL": 0.0,
+        "KE": 0.0,
+        "TE": 0.0167,
+        "BARE": 0.4
+      }
+    },
+    "SW": {
+      "counts": {
+        "BARE": 17,
+        "QO": 13,
+        "CHSH": 2,
+        "CLOSE": 1,
+        "SETUP": 1
+      },
+      "total": 34,
+      "distribution": {
+        "SETUP": 0.0294,
+        "QO": 0.3824,
+        "CHSH": 0.0588,
+        "PREP": 0.0,
+        "CLOSE": 0.0294,
+        "LINK": 0.0,
+        "INIT": 0.0,
+        "MAINT": 0.0,
+        "XFER": 0.0,
+        "CTRL": 0.0,
+        "KE": 0.0,
+        "TE": 0.0,
+        "BARE": 0.5
+      }
+    },
+    "SOUTH": {
+      "counts": {
+        "QO": 17,
+        "CHSH": 1,
+        "BARE": 17,
+        "KE": 2,
+        "CLOSE": 2,
+        "INIT": 1
+      },
+      "total": 40,
+      "distribution": {
+        "SETUP": 0.0,
+        "QO": 0.425,
+        "CHSH": 0.025,
+        "PREP": 0.0,
+        "CLOSE": 0.05,
+        "LINK": 0.0,
+        "INIT": 0.025,
+        "MAINT": 0.0,
+        "XFER": 0.0,
+        "CTRL": 0.0,
+        "KE": 0.05,
+        "TE": 0.0,
+        "BARE": 0.425
+      }
+    },
+    "SE": {
+      "counts": {
+        "BARE": 1,
+        "QO": 2,
+        "MAINT": 1
+      },
+      "total": 4,
+      "distribution": {
+        "SETUP": 0.0,
+        "QO": 0.5,
+        "CHSH": 0.0,
+        "PREP": 0.0,
+        "CLOSE": 0.0,
+        "LINK": 0.0,
+        "INIT": 0.0,
+        "MAINT": 0.25,
+        "XFER": 0.0,
+        "CTRL": 0.0,
+        "KE": 0.0,
+        "TE": 0.0,
+        "BARE": 0.25
+      }
+    }
+  },
+  "visual_alignment": {
+    "predictions": {
+      "N/S heat -> k-enriched": {
+        "supported": false
+      },
+      "WEST condensation -> e-enriched": {
+        "supported": true
+      },
+      "CENTER apparatus -> connector-enriched": {
+        "supported": true
+      },
+      "NW botanical -> Herbal concentration": {
+        "supported": false
+      },
+      "SW aqueous differs from NW botanical": {
+        "supported": true
+      },
+      "NORTH-SOUTH functional similarity": {
+        "supported": true
+      },
+      "Rosettes are functionally specialized": {
+        "supported": false
+      }
+    },
+    "n_supported": 4,
+    "n_total": 7
+  }
+}
