@@ -5950,7 +5950,7 @@ Phase 397's finding that ring texts use universal-only vocabulary (zero speciali
 - Could alternatively be abbreviated label vocabulary rather than a different functional register
 - **Phase 398 section incompatibility test (C1116): TESTED, NOT SUPPORTED FOR UPGRADE.** Within REGIME_1, Bio and Stars show consistent quantitative divergence across all 6 tested dimensions but zero qualitative incompatibility (0 robust operator substitution pairs, no topology changes). All section differences are weight modulation, consistent with technique variation within a single process family (C1029). Expert validation confirmed: section divergence confirms C1029 at within-REGIME granularity, does not establish multi-domain.
 
-**Constraints:** C1088-C1119, C440.a, C757.a
+**Constraints:** C1088-C1121, C440.a, C757.a
 **Scripts:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/scripts/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/scripts/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/scripts/`, `phases/SECTION_BRIDGE_DYNAMICS/scripts/`, `phases/STARS_RECIPE_CHARACTERIZATION/scripts/`, `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/scripts/`, `phases/ROSETTES_RING_TEXT_GRAMMAR/scripts/`, `phases/SECTION_INCOMPATIBILITY_TEST/scripts/`, `phases/READING_DIRECTION_TEST/scripts/`
 **Results:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/results/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/results/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/results/`, `phases/SECTION_BRIDGE_DYNAMICS/results/`, `phases/STARS_RECIPE_CHARACTERIZATION/results/`, `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/results/`, `phases/ROSETTES_RING_TEXT_GRAMMAR/results/`, `phases/SECTION_INCOMPATIBILITY_TEST/results/`, `phases/READING_DIRECTION_TEST/results/`
 
@@ -5972,3 +5972,20 @@ Phase 397's finding that ring texts use universal-only vocabulary (zero speciali
 **External motivation:** voynich-toolkit found character-level RTL (z=22.97). Our test at token level confirms LTR. Character writing direction and token reading direction are separate questions.
 
 **Tier 3 interpretation:** LTR token reading is consistent with the Brunschwig procedural framework: preparation operations first (line-initial PREFIXes po, pch, tch, so), execution in the middle (energy selectors qo, ch, da), closure at end (ar, or, ol, ot). The workflow reads naturally as PREP → EXECUTE → CLOSE under LTR.
+
+### 5.9. Lifecycle Domain Progression (Phase 400, C1120-C1121)
+
+**Question:** Do individual B programs (paragraphs) span multiple lifecycle domains (grow → harvest → prepare → distill)?
+
+**Result:** LIFECYCLE FALSIFIED. 5-test battery unanimously rejects lifecycle progression.
+
+**Key findings:**
+- Within-paragraph Bio-score trend: Spearman rho = -0.068 (p=0.052, not significant). Slight negative trend is OPPOSITE of lifecycle prediction (C1120)
+- C932 rarity control: residualized rho = -0.067 (p=0.065). Negative trend explained by spec-to-exec gradient — specification vocabulary is incidentally Bio-enriched
+- Domain stability: first-half vs second-half Bio-fraction indistinguishable from random (permutation p=0.19)
+- Folio determines domain: ICC=0.393, ANOVA F(45,95)=2.98. Paragraphs inherit domain character from folio/section context (C1121)
+- REGIME_1 section parameterization: Bio-section Bio-score=0.131 vs Stars=-0.027 (diff=0.158). Bio-section paragraphs show significant NEGATIVE within-paragraph rho (z=-2.63, p=0.006) — C932 gradient wearing a domain mask
+
+**Bio-score definition:** Per-token composite from PREFIX (qo=Bio +1, ok=Stars -1), kernel characters (k=Bio +1, e=Stars -1), macro-state (CC=Bio +1, FQ=Stars -1, AXM=Bio-enriched +0.5). 12,391 tokens scored.
+
+**Tier 3 interpretation:** The Voynich B text does not encode lifecycle progressions. Each folio/program operates within a single parametric domain inherited from its section context. The only within-paragraph progression is C932's vocabulary rarity gradient, which incidentally correlates with domain markers because specification vocabulary (rare, early) tends to be Bio-enriched while execution vocabulary (universal, late) is domain-neutral. This is consistent with each program being a self-contained control loop (C171), not a lifecycle narrative.

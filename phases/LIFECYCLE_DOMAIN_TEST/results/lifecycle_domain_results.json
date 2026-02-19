@@ -1,0 +1,124 @@
+{
+  "diagnostics": {
+    "n_tokens": 12391,
+    "mean": 0.0417,
+    "median": 0.0,
+    "n_positive": 5321,
+    "n_negative": 4864,
+    "n_zero": 2206,
+    "component_distribution": {
+      "0": 2141,
+      "1": 4949,
+      "2": 3874,
+      "3": 1427
+    },
+    "range": [
+      -1.0,
+      1.0
+    ]
+  },
+  "t1": {
+    "verdict": "LIFECYCLE_FALSIFIED_PRIMARY",
+    "n_paragraphs": 174,
+    "mean_rho": -0.0681,
+    "median_rho": -0.0837,
+    "n_positive": 73,
+    "n_negative": 96,
+    "n_zero": 5,
+    "wilcoxon_W": 6020.0,
+    "wilcoxon_z": -1.825,
+    "wilcoxon_p": 0.052113,
+    "n_nonzero": 169,
+    "rho_distribution": {
+      "q25": -0.4,
+      "q75": 0.3,
+      "min": -1.0,
+      "max": 0.9429
+    }
+  },
+  "t2": {
+    "verdict": "LIFECYCLE_FALSIFIED_CONTROLLED",
+    "n_paragraphs": 174,
+    "regression_slope": 0.014,
+    "regression_intercept": -0.041,
+    "regression_r_squared": 0.0013,
+    "mean_residual_rho": -0.0673,
+    "median_residual_rho": -0.0476,
+    "wilcoxon_W": 5859.5,
+    "wilcoxon_z": -1.727,
+    "wilcoxon_p": 0.064846,
+    "n_nonzero": 166
+  },
+  "t3": {
+    "verdict": "STABLE_DOMAIN_WITHIN_PARAGRAPH",
+    "n_paragraphs": 174,
+    "real_mean_delta": 0.1095,
+    "perm_mean_delta": 0.1042,
+    "perm_95th": 0.1143,
+    "p_value": 0.19,
+    "n_permutations": 1000
+  },
+  "t4": {
+    "verdict": "FOLIO_DETERMINES_DOMAIN",
+    "n_folios_multi": 46,
+    "n_paragraphs": 141,
+    "grand_mean_bio": 0.0545,
+    "f_ratio": 2.98,
+    "df_between": 45,
+    "df_within": 95,
+    "icc": 0.393,
+    "folio_bio_score_range": {
+      "min": -0.2667,
+      "max": 0.3152,
+      "mean": 0.0093
+    }
+  },
+  "t5": {
+    "verdict": "SECTION_PARAMETERIZATION_CONFIRMED_LIFECYCLE_FALSIFIED_CROSS_SECTION",
+    "section_verdict": "SECTION_PARAMETERIZATION_CONFIRMED",
+    "lifecycle_verdict": "LIFECYCLE_FALSIFIED_CROSS_SECTION",
+    "regime_1_section_counts": {
+      "S": 29,
+      "H": 3,
+      "B": 67
+    },
+    "section_bio_means": {
+      "S": -0.0271,
+      "H": 0.1086,
+      "B": 0.1308
+    },
+    "bio_stars_diff": 0.1579,
+    "section_within_paragraph_rhos": {
+      "S": {
+        "n_paragraphs": 29,
+        "mean_rho": -0.0187,
+        "wilcoxon_z": -0.182,
+        "wilcoxon_p": 0.810023
+      },
+      "H": {
+        "n_paragraphs": 3,
+        "mean_rho": 0.1677,
+        "wilcoxon_z": 0.0,
+        "wilcoxon_p": 1.0
+      },
+      "B": {
+        "n_paragraphs": 67,
+        "mean_rho": -0.1422,
+        "wilcoxon_z": -2.629,
+        "wilcoxon_p": 0.006371
+      }
+    }
+  },
+  "combined": {
+    "overall": "LIFECYCLE_FALSIFIED",
+    "reasoning": "T1 (primary test) shows no significant within-paragraph Bio-score trend. Lifecycle hypothesis falsified.",
+    "per_test_verdicts": {
+      "t1": "LIFECYCLE_FALSIFIED_PRIMARY",
+      "t2": "LIFECYCLE_FALSIFIED_CONTROLLED",
+      "t3": "STABLE_DOMAIN_WITHIN_PARAGRAPH",
+      "t4": "FOLIO_DETERMINES_DOMAIN",
+      "t5_section": "SECTION_PARAMETERIZATION_CONFIRMED",
+      "t5_lifecycle": "LIFECYCLE_FALSIFIED_CROSS_SECTION"
+    }
+  }
+}

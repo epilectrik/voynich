@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 975 validated constraints | **Version:** 4.10 | **Date:** 2026-02-18
+**Total:** 986 validated constraints | **Version:** 4.10 | **Date:** 2026-02-19
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2821,6 +2821,8 @@ The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) was classified through a
 | **1117** | **LTR Reading Direction Confirmed** (7-test battery: LTR 5, RTL 0, NEUTRAL 2; MIDDLE MI forward bias +0.070 bits z=17.0; PREFIX positional coherence 7-0 LTR vs RTL; 75.2% forbidden pairs are bidirectional adjacency constraints; spectral gap direction-invariant 0.896 vs 0.899; entropy bathtub profile falsifies boundary-inward; CC boundary-left; vocabulary gradient spec-to-exec under LTR) | 2 | B | -> [C1117_ltr_reading_direction_confirmed.md](C1117_ltr_reading_direction_confirmed.md) |
 | **1118** | **Bidirectional Forbidden Co-occurrence Dominance** (75.2% of MIDDLE-level forbidden pairs 1244/1655 are bidirectional adjacency prohibitions; 24.8% direction-specific; explains C1034 symmetric forbidden model improvement; broader MIDDLE co-occurrence landscape is predominantly symmetric while 17 class-level transitions C783 are directional) | 2 | B | -> [C1118_bidirectional_forbidden_dominance.md](C1118_bidirectional_forbidden_dominance.md) |
 | **1119** | **MIDDLE Forward Bias as Reading Direction Evidence** (MI_fwd=0.312 vs MI_bwd=0.242, asymmetry +0.070 bits z=17.0; PREFIX weak backward -0.018 z=-4.4; SUFFIX weak forward +0.018 z=5.5; confirms C1024 at raw MIDDLE resolution; MIDDLE predicts physical-right neighbor better — information flows left-to-right) | 2 | B | -> [C1119_middle_forward_bias.md](C1119_middle_forward_bias.md) |
+| **1120** | **Lifecycle Domain Progression Falsified** (within-paragraph Bio-score rho=-0.068, Wilcoxon p=0.052; residualized rho=-0.067 p=0.065; 0/5 battery tests support lifecycle; slight negative trend explained by C932 spec-to-exec gradient; domain character determined at folio level ICC=0.393) | 2 | B | -> [C1120_lifecycle_domain_falsified.md](C1120_lifecycle_domain_falsified.md) |
+| **1121** | **Folio-Level Domain Determination** (paragraph domain character Bio/Stars determined at folio level ICC=0.393, F(45,95)=2.98; within REGIME_1 section predicts Bio-score Bio=0.131 vs Stars=-0.027 diff=0.158; within-paragraph domain stable perm p=0.19; consistent with C1087 Bio divergence) | 2 | B | -> [C1121_folio_level_domain_determination.md](C1121_folio_level_domain_determination.md) |
 
 **Phase 387-388H findings:**
 - Rosettes is NOT classifiable as pure A, B, or AZC — it is a metalayer

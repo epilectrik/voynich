@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 975 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 986 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (975 validated)
+- Tier 0-2 binding constraints (986 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 975 constraints, 66 fits,
+full content in their source documents. All 986 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-19 08:59
-**Version:** FROZEN STATE (975 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-19 10:13
+**Version:** FROZEN STATE (986 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -1101,7 +1101,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 984 constraints | 2026-02-19
+CONSTRAINT_REFERENCE v2.6 | 986 constraints | 2026-02-19
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2090,6 +2090,8 @@ C1116	**Within-REGIME Section Parameterization**
 C1117	**LTR Reading Direction Confirmed**
 C1118	**Bidirectional Forbidden Co-occurrence Dominance** (75.2% of MIDDLE-level forbidden pairs 1244/1655 are bidirectional adjacency prohibitions; 24.8% direction-specific; explains C1034 symmetric forbidden model improvement; broader MIDDLE co-occurrence landscape is predominantly symmetric while 17 class-level transitions C783 are directional)
 C1119	**MIDDLE Forward Bias as Reading Direction Evidence**
+C1120	**Lifecycle Domain Progression Falsified**
+C1121	**Folio-Level Domain Determination** (paragraph domain character Bio/Stars determined at folio level ICC=0.393, F(45,95)=2.98; within REGIME_1 section predicts Bio-score Bio=0.131 vs Stars=-0.027 diff=0.158; within-paragraph domain stable perm p=0.19; consistent with C1087 Bio divergence)
 
 ---
 
@@ -4480,6 +4482,16 @@ This is consistent with but not proven by the evidence. The shared prefix patter
 - MIDDLE MI forward bias +0.070 bits (z=17.0) — MIDDLE predicts physical-right neighbor better than physical-left (C1119)
 - 75.2% of forbidden MIDDLE co-occurrences are bidirectional adjacency constraints (C1118), explaining C1034's symmetric model improvement
 - Vocabulary gradient: specification→execution matches C932 under LTR
+
+
+
+
+
+**Key findings:**
+- Within-paragraph Bio-score trend: Spearman rho = -0.068 (p=0.052, not significant). Slight negative trend is OPPOSITE of lifecycle prediction (C1120)
+- C932 rarity control: residualized rho = -0.067 (p=0.065). Negative trend explained by spec-to-exec gradient — specification vocabulary is incidentally Bio-enriched
+- Folio determines domain: ICC=0.393, ANOVA F(45,95)=2.98. Paragraphs inherit domain character from folio/section context (C1121)
+- REGIME_1 section parameterization: Bio-section Bio-score=0.131 vs Stars=-0.027 (diff=0.158). Bio-section paragraphs show significant NEGATIVE within-paragraph rho (z=-2.63, p=0.006) — C932 gradient wearing a domain mask
 
 
 

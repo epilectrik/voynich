@@ -63,6 +63,7 @@ These hypotheses have been **explicitly tested and rejected**. Each has document
 | Human-track "7 coordinate functions" | Overfitting | SEL-E |
 | HT 99.6% LINK-proximal | ρ=0.010, p=0.93 (decoupled) | HTD |
 | Repetition encodes ratios/proportions | No cross-entry comparison, no reference frame | EXT-9B |
+| Lifecycle domain progression (paragraphs span grow→harvest→prepare→distill) | rho=-0.068 p=0.052, 0/5 tests, ICC=0.393 folio-determined | LIFECYCLE_DOMAIN_TEST |
 
 ---
 
