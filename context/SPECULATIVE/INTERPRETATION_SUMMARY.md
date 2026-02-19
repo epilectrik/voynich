@@ -5913,6 +5913,43 @@ This is consistent with but not proven by the evidence. The shared prefix patter
 
 **Visual note (Tier 4, non-binding per C138/C140):** The pharma "jars" have spouts at the top that may represent distillation tubes (alembic necks/beaks), not pouring spouts. A standard alembic has three parts: cucurbit (gourd-shaped base, heated), alembic head (dome where vapors condense), and spout/beak (condensation tube to receiver). The Voynich vessels match this topology — rounded body with projecting tube — drawn in the manuscript's botanical illustration style. Visual parallels exist in apparatus illustrations across centuries (e.g., Lavoisier's apparatus engravings in "Essays on the Effects Produced by Various Processes on Atmospheric Air," 1784, show the same fundamental forms because retort/alembic design was stable from the 15th through 18th centuries). The CENTER rosette's vessel-like imagery with radiating tubes/spikes is drawn in a similar style. This would unify three independent structural findings: (1) C524 already interprets jar labels as apparatus configuration signatures, (2) the pelican alembic matches the manuscript's controller on 8/8 dimensions, and (3) C1092 identifies the CENTER as a convergence node. If "jars" are alembics, the naming hierarchy becomes: Rosettes labels = apparatus categories, "jar" labels = specific apparatus configurations, content labels = materials being processed. The visual consistency across sections (botanical illustration style applied to apparatus) would be expected in an apparatus-centric system (C120).
 
-**Constraints:** C1088-C1113, C440.a, C757.a
-**Scripts:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/scripts/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/scripts/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/scripts/`, `phases/SECTION_BRIDGE_DYNAMICS/scripts/`, `phases/STARS_RECIPE_CHARACTERIZATION/scripts/`, `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/scripts/`
-**Results:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/results/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/results/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/results/`, `phases/SECTION_BRIDGE_DYNAMICS/results/`, `phases/STARS_RECIPE_CHARACTERIZATION/results/`, `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/results/`
+### Ring Text Grammar (Phase 397, C1114-C1115)
+
+Phase 397 tested whether the 5 transcribed rosette ring texts (155 tokens total) follow B program grammar or merely use B vocabulary loosely. A 9-test battery across 3 tiers (Construction, Transition, Distribution) produced a clear split result:
+
+**Construction compliance (C1114):** Ring texts pass ALL B construction rules — 0/155 PREFIX-MIDDLE selectivity violations, 0/25 forbidden MIDDLE transition violations (B baseline: 0.5%), 68.4% B-class coverage (B corpus: 69.5%). Ring texts are built by B grammar.
+
+**Operational divergence (C1115):** Despite grammatical compliance, ring texts operate in a radically different functional register:
+
+| Dimension | Ring Text | B Baseline | Interpretation |
+|-----------|-----------|------------|----------------|
+| AXM (energy state) | 32.1% | 66.7% | Energy operations depressed |
+| FQ (frequency) | 39.6% | 19.2% | Monitoring/checking elevated |
+| EN (energy role) | 7.5% | 31.2% | Energy vocabulary collapsed |
+| ok PREFIX | 37.1% | 7.9% | Apparatus management dominant |
+| qo PREFIX | 3.4% | 22.3% | Energy selectors near-absent |
+| HUB_UNIVERSAL | 79.6% | 63.1% | Only universal vocabulary |
+| Specialist bins | 0.0% | 1.6% | Zero specialist vocabulary |
+
+**Interpretation (Tier 3):** Ring texts are **generic procedure skeletons** — B-grammatical templates that describe the structure of operations using only universal connector vocabulary, without domain-specific content. They are monitoring/checking-dominant rather than energy-dominant, consistent with procedure maps or reference summaries rather than executable programs. The same divergence pattern appears across all 5 ring texts despite different physical positions.
+
+### Multi-Domain Interpretation (Tier 3)
+
+Phase 397's finding that ring texts use universal-only vocabulary (zero specialist bins) combined with the visual diversity of rosette imagery (garden/cultivation in SE, aqueous processing in EAST, botanical in NW, architectural in NE, distillation-like in CENTER) raises the possibility that B grammar is structurally domain-independent — applicable across multiple operational domains, not just thermal processing.
+
+**Supporting evidence:**
+- C551: ENERGY and FLOW anticorrelated across sections (r=-0.89) — Herbal has highest FLOW/lowest ENERGY, Pharma has highest ENERGY/lowest FLOW. This is more naturally explained by different domains (water-based cultivation vs thermal processing) than by different distillation techniques.
+- C878: Section-level program variation — different sections have distinct operational profiles, consistent with different process domains sharing the same grammar.
+- Ring text universal vocabulary: If ring texts are generic templates applicable to multiple domains, their lack of specialist vocabulary is expected.
+
+**Expert validation:** Zero Tier 0/1 conflicts. Brunschwig fits (Tier 3) don't require distillation-only interpretation. No constraints limit B to thermal processing. The frozen conclusion (Tier 0) describes "control programs" without specifying domain.
+
+**Weaknesses:**
+- Visual evidence is non-binding per C138/C140
+- Ring text sample is small (155 tokens across 5 rings)
+- Could alternatively be abbreviated label vocabulary rather than a different functional register
+- Would need section-level incompatibility testing to upgrade from Tier 3
+
+**Constraints:** C1088-C1115, C440.a, C757.a
+**Scripts:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/scripts/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/scripts/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/scripts/`, `phases/SECTION_BRIDGE_DYNAMICS/scripts/`, `phases/STARS_RECIPE_CHARACTERIZATION/scripts/`, `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/scripts/`, `phases/ROSETTES_RING_TEXT_GRAMMAR/scripts/`
+**Results:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/results/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/results/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/results/`, `phases/SECTION_BRIDGE_DYNAMICS/results/`, `phases/STARS_RECIPE_CHARACTERIZATION/results/`, `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/results/`, `phases/ROSETTES_RING_TEXT_GRAMMAR/results/`

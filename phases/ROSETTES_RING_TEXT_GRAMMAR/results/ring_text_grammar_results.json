@@ -1,0 +1,620 @@
+{
+  "metadata": {
+    "phase": 397,
+    "name": "ROSETTES_RING_TEXT_GRAMMAR",
+    "n_ring_texts": 5,
+    "total_ring_tokens": 155,
+    "rings": {
+      "NW": 30,
+      "NORTH": 32,
+      "WEST": 23,
+      "CENTER": 37,
+      "SOUTH": 33
+    },
+    "n_b_baseline_paragraphs": 200,
+    "n_azc_control_tokens": 3299
+  },
+  "tier1_construction": {
+    "test1_prefix_middle_selectivity": {
+      "test": "PREFIX_MIDDLE_SELECTIVITY",
+      "constraint": "C911",
+      "n_forbidden_rules": 102,
+      "n_tested": 155,
+      "n_violations": 0,
+      "violations": [],
+      "per_ring": {
+        "NW": {
+          "tested": 30,
+          "violations": 0
+        },
+        "NORTH": {
+          "tested": 32,
+          "violations": 0
+        },
+        "WEST": {
+          "tested": 23,
+          "violations": 0
+        },
+        "CENTER": {
+          "tested": 37,
+          "violations": 0
+        },
+        "SOUTH": {
+          "tested": 33,
+          "violations": 0
+        }
+      },
+      "b_baseline": 0,
+      "verdict": "PASS"
+    },
+    "test2_kernel_construction": {
+      "test": "KERNEL_CONSTRUCTION_GRAMMAR",
+      "constraint": "C521",
+      "n_total_tokens": 155,
+      "n_with_kernel": 32,
+      "n_with_multi_kernel": 7,
+      "pair_counts": {
+        "k->e": 2,
+        "e->e": 3,
+        "h->h": 1,
+        "e->k": 3,
+        "h->e": 1,
+        "e->h": 1
+      },
+      "pair_expectations": {
+        "k->e": "elevated",
+        "h->e": "elevated",
+        "e->h": "blocked",
+        "h->k": "suppressed",
+        "e->k": "neutral",
+        "k->h": "neutral"
+      },
+      "compliance_notes": [
+        "k->e / e->k = 0.7x (B: 4.02x)",
+        "h->e / e->h = 1.0x (B: 6.09x)"
+      ],
+      "per_ring": {
+        "NW": {
+          "multi_kernel_tokens": 3,
+          "pairs": {
+            "k->e": 2,
+            "e->e": 1
+          }
+        },
+        "NORTH": {
+          "multi_kernel_tokens": 4,
+          "pairs": {
+            "h->h": 1,
+            "e->e": 1,
+            "e->k": 2
+          }
+        },
+        "WEST": {
+          "multi_kernel_tokens": 2,
+          "pairs": {
+            "e->k": 1,
+            "e->e": 1
+          }
+        },
+        "CENTER": {
+          "multi_kernel_tokens": 2,
+          "pairs": {
+            "h->e": 1,
+            "e->h": 1
+          }
+        },
+        "SOUTH": {
+          "multi_kernel_tokens": 0,
+          "pairs": {}
+        }
+      }
+    },
+    "test3_suffix_distribution": {
+      "test": "SUFFIX_DISTRIBUTION",
+      "constraint": "C588",
+      "ring": {
+        "n_tokens": 155,
+        "n_bare": 97,
+        "bare_pct": 62.6,
+        "suffix_counts": {
+          "ar": 11,
+          "r": 9,
+          "aiin": 9,
+          "edy": 7,
+          "dy": 6,
+          "s": 4,
+          "al": 4,
+          "y": 3,
+          "ain": 2,
+          "ol": 1,
+          "am": 1,
+          "eol": 1
+        }
+      },
+      "b_baseline": {
+        "n_tokens": 5502,
+        "n_bare": 2835,
+        "bare_pct": 51.5,
+        "top_suffixes": {
+          "edy": 474,
+          "aiin": 253,
+          "dy": 226,
+          "ar": 213,
+          "hy": 196,
+          "ain": 185,
+          "y": 160,
+          "al": 152,
+          "eey": 148,
+          "ey": 108,
+          "r": 103,
+          "or": 99,
+          "s": 90,
+          "ol": 58,
+          "am": 51
+        }
+      },
+      "azc_control": {
+        "n_tokens": 3299,
+        "n_bare": 1577,
+        "bare_pct": 47.8
+      }
+    }
+  },
+  "tier2_transition": {
+    "test4_forbidden_transitions": {
+      "test": "FORBIDDEN_MIDDLE_TRANSITIONS",
+      "constraint": "C109, C789",
+      "n_forbidden_pairs": 17,
+      "ring": {
+        "n_bigrams": 150,
+        "n_eligible": 25,
+        "n_violations": 0,
+        "violation_rate": 0.0
+      },
+      "b_baseline": {
+        "n_eligible": 2328,
+        "n_violations": 11,
+        "violation_rate": 0.0047
+      },
+      "violation_details": [],
+      "per_ring": {
+        "NW": {
+          "n_bigrams": 29,
+          "n_eligible": 5,
+          "n_violations": 0,
+          "violation_rate": 0.0
+        },
+        "NORTH": {
+          "n_bigrams": 31,
+          "n_eligible": 4,
+          "n_violations": 0,
+          "violation_rate": 0.0
+        },
+        "WEST": {
+          "n_bigrams": 22,
+          "n_eligible": 4,
+          "n_violations": 0,
+          "violation_rate": 0.0
+        },
+        "CENTER": {
+          "n_bigrams": 36,
+          "n_eligible": 9,
+          "n_violations": 0,
+          "violation_rate": 0.0
+        },
+        "SOUTH": {
+          "n_bigrams": 32,
+          "n_eligible": 3,
+          "n_violations": 0,
+          "violation_rate": 0.0
+        }
+      },
+      "fisher_exact": {
+        "odds_ratio": 0.0,
+        "p_value": 1.0
+      }
+    },
+    "test5_macro_state_transitions": {
+      "test": "MACRO_STATE_TRANSITIONS",
+      "constraint": "C976, C978",
+      "ring_mapped_tokens": 106,
+      "ring_mapped_pct": 68.4,
+      "ring_distribution": {
+        "AXM": 0.3208,
+        "AXm": 0.0189,
+        "FL_HAZ": 0.1321,
+        "FQ": 0.3962,
+        "CC": 0.1226,
+        "FL_SAFE": 0.0094
+      },
+      "b_stationary": {
+        "AXM": 0.667,
+        "AXm": 0.029,
+        "FL_HAZ": 0.06,
+        "FQ": 0.192,
+        "CC": 0.043,
+        "FL_SAFE": 0.008
+      },
+      "jsd_ring_vs_b": 0.09605,
+      "ring_transition_matrix": {
+        "AXM": {
+          "AXM": 10,
+          "AXm": 1,
+          "FL_HAZ": 4,
+          "FQ": 14,
+          "CC": 5,
+          "FL_SAFE": 0
+        },
+        "AXm": {
+          "AXM": 1,
+          "AXm": 0,
+          "FL_HAZ": 0,
+          "FQ": 1,
+          "CC": 0,
+          "FL_SAFE": 0
+        },
+        "FL_HAZ": {
+          "AXM": 5,
+          "AXm": 1,
+          "FL_HAZ": 2,
+          "FQ": 3,
+          "CC": 3,
+          "FL_SAFE": 0
+        },
+        "FQ": {
+          "AXM": 12,
+          "AXm": 0,
+          "FL_HAZ": 4,
+          "FQ": 20,
+          "CC": 4,
+          "FL_SAFE": 1
+        },
+        "CC": {
+          "AXM": 4,
+          "AXm": 0,
+          "FL_HAZ": 4,
+          "FQ": 4,
+          "CC": 1,
+          "FL_SAFE": 0
+        },
+        "FL_SAFE": {
+          "AXM": 1,
+          "AXm": 0,
+          "FL_HAZ": 0,
+          "FQ": 0,
+          "CC": 0,
+          "FL_SAFE": 0
+        }
+      },
+      "bootstrap": {
+        "n_samples": 200,
+        "mean_jsd": 0.07388,
+        "p95": 0.17114,
+        "p99": 0.20462,
+        "ring_percentile": 77.5
+      },
+      "per_ring_counts": {
+        "NW": {
+          "AXM": 6,
+          "FQ": 8,
+          "FL_HAZ": 2,
+          "CC": 3
+        },
+        "NORTH": {
+          "FQ": 9,
+          "FL_SAFE": 1,
+          "AXM": 5,
+          "CC": 3,
+          "FL_HAZ": 5,
+          "AXm": 1
+        },
+        "WEST": {
+          "FQ": 4,
+          "CC": 1,
+          "AXM": 5,
+          "AXm": 1,
+          "FL_HAZ": 1
+        },
+        "CENTER": {
+          "FQ": 13,
+          "AXM": 8,
+          "CC": 5,
+          "FL_HAZ": 2
+        },
+        "SOUTH": {
+          "AXM": 10,
+          "FL_HAZ": 4,
+          "FQ": 8,
+          "CC": 1
+        }
+      }
+    }
+  },
+  "tier3_distribution": {
+    "test6_role_distribution": {
+      "test": "ROLE_DISTRIBUTION",
+      "constraint": "C591",
+      "ring": {
+        "n_classified": 106,
+        "n_total": 155,
+        "pct_classified": 68.4,
+        "distribution": {
+          "CC": 0.1321,
+          "EN": 0.0755,
+          "AX": 0.2547,
+          "FQ": 0.3962,
+          "FO": 0.1415
+        }
+      },
+      "b_baseline": {
+        "n_classified": 3862,
+        "distribution": {
+          "CC": 0.066,
+          "EN": 0.4531,
+          "AX": 0.2338,
+          "FQ": 0.1769,
+          "FO": 0.0702
+        }
+      },
+      "b_reference": {
+        "CC": 0.044,
+        "EN": 0.312,
+        "AX": 0.166,
+        "FQ": 0.125,
+        "FO": 0.047
+      },
+      "azc_control": {
+        "n_classified": 1647,
+        "distribution": {
+          "CC": 0.0407,
+          "EN": 0.2222,
+          "AX": 0.2963,
+          "FQ": 0.2829,
+          "FO": 0.1579
+        }
+      }
+    },
+    "test7_affordance_bins": {
+      "test": "AFFORDANCE_BIN_DISTRIBUTION",
+      "constraint": "C995, C1097",
+      "ring": {
+        "n_tokens": 147,
+        "distribution": {
+          "BULK_OPERATIONAL": 0.0136,
+          "COMPOUND_TERMINAL": 0.0136,
+          "ENERGY_SPECIALIZED": 0.0,
+          "FLOW_TERMINAL": 0.0612,
+          "HUB_UNIVERSAL": 0.7959,
+          "PHASE_SENSITIVE": 0.0204,
+          "PRECISION_SPECIALIZED": 0.0,
+          "ROUTINE_SPECIALIZED": 0.0,
+          "SETTLING_SPECIALIZED": 0.0068,
+          "STABILITY_CRITICAL": 0.0884
+        }
+      },
+      "b_baseline": {
+        "n_tokens": 5170,
+        "distribution": {
+          "BULK_OPERATIONAL": 0.0012,
+          "COMPOUND_TERMINAL": 0.0118,
+          "ENERGY_SPECIALIZED": 0.0068,
+          "FLOW_TERMINAL": 0.0915,
+          "HUB_UNIVERSAL": 0.6313,
+          "PHASE_SENSITIVE": 0.0683,
+          "PRECISION_SPECIALIZED": 0.0019,
+          "ROUTINE_SPECIALIZED": 0.007,
+          "SETTLING_SPECIALIZED": 0.0039,
+          "STABILITY_CRITICAL": 0.1764
+        }
+      },
+      "azc_control": {
+        "n_tokens": 2823,
+        "distribution": {
+          "BULK_OPERATIONAL": 0.0205,
+          "COMPOUND_TERMINAL": 0.0191,
+          "ENERGY_SPECIALIZED": 0.0128,
+          "FLOW_TERMINAL": 0.1296,
+          "HUB_UNIVERSAL": 0.6553,
+          "PHASE_SENSITIVE": 0.0322,
+          "PRECISION_SPECIALIZED": 0.0057,
+          "ROUTINE_SPECIALIZED": 0.0135,
+          "SETTLING_SPECIALIZED": 0.0113,
+          "STABILITY_CRITICAL": 0.0999
+        }
+      },
+      "enrichment_vs_b": {
+        "BULK_OPERATIONAL": 11.72,
+        "COMPOUND_TERMINAL": 1.15,
+        "ENERGY_SPECIALIZED": 0.0,
+        "FLOW_TERMINAL": 0.67,
+        "HUB_UNIVERSAL": 1.26,
+        "PHASE_SENSITIVE": 0.3,
+        "PRECISION_SPECIALIZED": 0.0,
+        "ROUTINE_SPECIALIZED": 0.0,
+        "SETTLING_SPECIALIZED": 1.76,
+        "STABILITY_CRITICAL": 0.5
+      }
+    },
+    "test8_prefix_lanes": {
+      "test": "PREFIX_LANE_BALANCE",
+      "constraint": "C643, C647, C1098",
+      "ring": {
+        "prefixes": {
+          "ok": 33,
+          "ot": 18,
+          "ol": 8,
+          "ch": 6,
+          "or": 5,
+          "da": 3,
+          "sh": 3,
+          "qo": 3,
+          "ct": 2,
+          "ke": 2,
+          "to": 1,
+          "ar": 1,
+          "de": 1,
+          "ta": 1,
+          "al": 1,
+          "yk": 1
+        },
+        "total": 89,
+        "n_prefix_types": 16,
+        "evenness": 0.746,
+        "entropy": 2.982
+      },
+      "b_baseline": {
+        "prefixes": {
+          "qo": 1007,
+          "ch": 806,
+          "sh": 559,
+          "ok": 359,
+          "ot": 310,
+          "da": 275,
+          "ol": 181,
+          "lk": 113,
+          "sa": 78,
+          "yk": 78,
+          "lch": 74,
+          "te": 70,
+          "ta": 57,
+          "ka": 55,
+          "pch": 53,
+          "ke": 50,
+          "so": 49,
+          "ar": 40,
+          "or": 38,
+          "al": 36,
+          "do": 34,
+          "tch": 33,
+          "po": 30,
+          "lsh": 25,
+          "to": 20,
+          "dch": 18,
+          "kch": 17,
+          "fch": 12,
+          "rch": 12,
+          "ct": 11,
+          "ko": 8,
+          "de": 6,
+          "sch": 4,
+          "se": 3,
+          "pe": 1
+        },
+        "total": 4522,
+        "n_prefix_types": 35,
+        "evenness": 0.734,
+        "entropy": 3.764
+      },
+      "azc_control": {
+        "prefixes": {
+          "ch": 483,
+          "ot": 479,
+          "ok": 391,
+          "da": 211,
+          "sh": 211,
+          "yk": 97,
+          "qo": 78,
+          "sa": 57,
+          "al": 54,
+          "te": 44,
+          "ol": 43,
+          "so": 36,
+          "dch": 34,
+          "to": 30,
+          "ar": 27,
+          "or": 24,
+          "do": 23,
+          "ke": 21,
+          "tch": 18,
+          "ta": 18,
+          "ct": 16,
+          "ko": 9,
+          "ka": 8,
+          "se": 7,
+          "kch": 6,
+          "de": 5,
+          "fch": 5,
+          "pch": 4,
+          "sch": 3,
+          "lk": 2,
+          "po": 2,
+          "rch": 1,
+          "lch": 1,
+          "lsh": 1
+        },
+        "total": 2449,
+        "n_prefix_types": 34,
+        "evenness": 0.71,
+        "entropy": 3.611
+      },
+      "c1098_reference": {
+        "rosettes_evenness": 0.791,
+        "b_evenness": 0.738
+      }
+    },
+    "test9_b_class_coverage": {
+      "test": "B_CLASS_COVERAGE",
+      "constraint": "C740, C1088",
+      "n_total": 155,
+      "n_classified": 106,
+      "coverage_pct": 68.4,
+      "reference": {
+        "c1088_full_rosettes": 64.7,
+        "b_corpus_classified": 69.5
+      },
+      "per_ring": {
+        "NW": {
+          "n_tokens": 30,
+          "n_classified": 19,
+          "coverage_pct": 63.3
+        },
+        "NORTH": {
+          "n_tokens": 32,
+          "n_classified": 24,
+          "coverage_pct": 75.0
+        },
+        "WEST": {
+          "n_tokens": 23,
+          "n_classified": 12,
+          "coverage_pct": 52.2
+        },
+        "CENTER": {
+          "n_tokens": 37,
+          "n_classified": 28,
+          "coverage_pct": 75.7
+        },
+        "SOUTH": {
+          "n_tokens": 33,
+          "n_classified": 23,
+          "coverage_pct": 69.7
+        }
+      }
+    }
+  },
+  "summary": {
+    "tier1_construction": {
+      "prefix_middle_violations": 0,
+      "prefix_middle_verdict": "PASS",
+      "kernel_tokens_tested": 7,
+      "suffix_bare_rate": 62.6
+    },
+    "tier2_transition": {
+      "forbidden_eligible": 25,
+      "forbidden_violations": 0,
+      "forbidden_violation_rate": 0.0,
+      "b_baseline_violation_rate": 0.0047,
+      "macro_jsd": 0.09605,
+      "macro_bootstrap_percentile": 77.5
+    },
+    "tier3_distribution": {
+      "b_class_coverage": 68.4,
+      "prefix_evenness": 0.746,
+      "b_prefix_evenness": 0.734
+    },
+    "verdicts": [
+      "PREFIX-MIDDLE construction: B-COMPLIANT",
+      "Forbidden transitions: B-LIKE rate",
+      "Macro-state distribution: WITHIN B range"
+    ]
+  }
+}

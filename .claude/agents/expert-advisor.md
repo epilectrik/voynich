@@ -88,7 +88,7 @@ and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-18 22:46
+**Generated:** 2026-02-19 07:39
 **Version:** FROZEN STATE (975 constraints, 66 fits) [COMPACT]
 
 ---
@@ -1101,7 +1101,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 978 constraints | 2026-02-18
+CONSTRAINT_REFERENCE v2.6 | 980 constraints | 2026-02-19
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2084,6 +2084,8 @@ C1110	**SOUTH (C2) Directional Profile Confirmed**
 C1111	**Stars Paradox is REGIME Composition Artifact**
 C1112	**P-Text Bridge Enrichment at Extreme Levels** (45.5% bridge MIDDLEs, 100th percentile of A; exceeds Rosettes 24.4%; affordance cosine 0.925 with Rosettes; non-bridge B-transmission 60.6% — bridges do not fully explain C486)
 C1113	**P-Text and Rosettes Share Unified Bridge-Vocabulary Indexing System**
+C1114	**Rosettes Ring Text Construction Compliance** (5 ring texts, 155 tokens: 0/155 PREFIX-MIDDLE selectivity violations, 0/25 forbidden MIDDLE transition violations, 68.4% B-class coverage matching B corpus 69.5%; ring texts are constructed by B grammar rules)
+C1115	**Rosettes Ring Text Operational Divergence** (AXM 32.1% vs B 66.7%, FQ 39.6% vs B 19.2%, EN 7.5% vs B 31.2%; ok-dominant 37.1% vs B 7.9%; HUB_UNIVERSAL 79.6% with 3 specialist bins at 0%; B-grammatical but different functional register — frequency/monitoring-dominant, universal connector vocabulary only)
 
 ---
 
@@ -2091,7 +2093,7 @@ C1113	**P-Text and Rosettes Share Unified Bridge-Vocabulary Indexing System**
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-02-18
+# Generated: 2026-02-19
 # Total: 66 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
@@ -4449,9 +4451,23 @@ This is consistent with but not proven by the evidence. The shared prefix patter
 
 **Visual note (Tier 4, non-binding per C138/C140):** The pharma "jars" have spouts at the top that may represent distillation tubes (alembic necks/beaks), not pouring spouts. A standard alembic has three parts: cucurbit (gourd-shaped base, heated), alembic head (dome where vapors condense), and spout/beak (condensation tube to receiver). The Voynich vessels match this topology — rounded body with projecting tube — drawn in the manuscript's botanical illustration style. Visual parallels exist in apparatus illustrations across centuries (e.g., Lavoisier's apparatus engravings in "Essays on the Effects Produced by Various Processes on Atmospheric Air," 1784, show the same fundamental forms because retort/alembic design was stable from the 15th through 18th centuries). The CENTER rosette's vessel-like imagery with radiating tubes/spikes is drawn in a similar style. This would unify three independent structural findings: (1) C524 already interprets jar labels as apparatus configuration signatures, (2) the pelican alembic matches the manuscript's controller on 8/8 dimensions, and (3) C1092 identifies the CENTER as a convergence node. If "jars" are alembics, the naming hierarchy becomes: Rosettes labels = apparatus categories, "jar" labels = specific apparatus configurations, content labels = materials being processed. The visual consistency across sections (botanical illustration style applied to apparatus) would be expected in an apparatus-centric system (C120).
 
-**Constraints:** C1088-C1113, C440.a, C757.a
-**Scripts:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/scripts/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/scripts/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/scripts/`, `phases/SECTION_BRIDGE_DYNAMICS/scripts/`, `phases/STARS_RECIPE_CHARACTERIZATION/scripts/`, `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/scripts/`
-**Results:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/results/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/results/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/results/`, `phases/SECTION_BRIDGE_DYNAMICS/results/`, `phases/STARS_RECIPE_CHARACTERIZATION/results/`, `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/results/`
+
+
+
+| Dimension | Ring Text | B Baseline | Interpretation |
+|-----------|-----------|------------|----------------|
+| AXM (energy state) | 32.1% | 66.7% | Energy operations depressed |
+| FQ (frequency) | 39.6% | 19.2% | Monitoring/checking elevated |
+
+
+**Supporting evidence:**
+- C551: ENERGY and FLOW anticorrelated across sections (r=-0.89) — Herbal has highest FLOW/lowest ENERGY, Pharma has highest ENERGY/lowest FLOW. This is more naturally explained by different domains (water-based cultivation vs thermal processing) than by different distillation techniques.
+- C878: Section-level program variation — different sections have distinct operational profiles, consistent with different process domains sharing the same grammar.
+
+
+**Weaknesses:**
+- Visual evidence is non-binding per C138/C140
+
 
 
 ---
