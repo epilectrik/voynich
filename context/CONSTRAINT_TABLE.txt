@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 986 constraints | 2026-02-19
+CONSTRAINT_REFERENCE v2.6 | 988 constraints | 2026-02-19
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -990,3 +990,5 @@ C1118	**Bidirectional Forbidden Co-occurrence Dominance** (75.2% of MIDDLE-level
 C1119	**MIDDLE Forward Bias as Reading Direction Evidence** (MI_fwd=0.312 vs MI_bwd=0.242, asymmetry +0.070 bits z=17.0; PREFIX weak backward -0.018 z=-4.4; SUFFIX weak forward +0.018 z=5.5; confirms C1024 at raw MIDDLE resolution; MIDDLE predicts physical-right neighbor better — information flows left-to-right)	2	B	-> C1119_middle_forward_bias.md
 C1120	**Lifecycle Domain Progression Falsified** (within-paragraph Bio-score rho=-0.068, Wilcoxon p=0.052; residualized rho=-0.067 p=0.065; 0/5 battery tests support lifecycle; slight negative trend explained by C932 spec-to-exec gradient; domain character determined at folio level ICC=0.393)	2	B	-> C1120_lifecycle_domain_falsified.md
 C1121	**Folio-Level Domain Determination** (paragraph domain character Bio/Stars determined at folio level ICC=0.393, F(45,95)=2.98; within REGIME_1 section predicts Bio-score Bio=0.131 vs Stars=-0.027 diff=0.158; within-paragraph domain stable perm p=0.19; consistent with C1087 Bio divergence)	2	B	-> C1121_folio_level_domain_determination.md
+C1122	**Rosettes-B Bridge-Dominant Vocabulary Architecture** (77% bridge-mediated; 26/111 informative MIDDLEs; all pairwise rosette informative Jaccard=0.000; C1091 lift=1.55x p=0.114 NS at informative level; no within-paragraph positional concentration p=0.779; PREFIX+MIDDLE adds 0 new signal)	2	GLOBAL	-> C1122_rosettes_bridge_dominant_vocabulary.md
+C1123	**Rosettes Section-Categorical Index Structure** (T-group CENTER+NORTH+NW 15 MIDDLEs → Section T 4.14x F=19.37 p<0.0001; S-group WEST+SW 9 MIDDLEs → Section S 2.04x F=10.23 p<0.0001; 0 inter-group overlap; label CV=1.14 > ring CV=0.95; indexes B at section-category level not individual folios)	2	GLOBAL	-> C1123_rosettes_section_categorical_index.md

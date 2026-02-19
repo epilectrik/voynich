@@ -5950,7 +5950,7 @@ Phase 397's finding that ring texts use universal-only vocabulary (zero speciali
 - Could alternatively be abbreviated label vocabulary rather than a different functional register
 - **Phase 398 section incompatibility test (C1116): TESTED, NOT SUPPORTED FOR UPGRADE.** Within REGIME_1, Bio and Stars show consistent quantitative divergence across all 6 tested dimensions but zero qualitative incompatibility (0 robust operator substitution pairs, no topology changes). All section differences are weight modulation, consistent with technique variation within a single process family (C1029). Expert validation confirmed: section divergence confirms C1029 at within-REGIME granularity, does not establish multi-domain.
 
-**Constraints:** C1088-C1121, C440.a, C757.a
+**Constraints:** C1088-C1123, C440.a, C757.a
 **Scripts:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/scripts/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/scripts/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/scripts/`, `phases/SECTION_BRIDGE_DYNAMICS/scripts/`, `phases/STARS_RECIPE_CHARACTERIZATION/scripts/`, `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/scripts/`, `phases/ROSETTES_RING_TEXT_GRAMMAR/scripts/`, `phases/SECTION_INCOMPATIBILITY_TEST/scripts/`, `phases/READING_DIRECTION_TEST/scripts/`
 **Results:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/results/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/results/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/results/`, `phases/SECTION_BRIDGE_DYNAMICS/results/`, `phases/STARS_RECIPE_CHARACTERIZATION/results/`, `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/results/`, `phases/ROSETTES_RING_TEXT_GRAMMAR/results/`, `phases/SECTION_INCOMPATIBILITY_TEST/results/`, `phases/READING_DIRECTION_TEST/results/`
 
@@ -5989,3 +5989,19 @@ Phase 397's finding that ring texts use universal-only vocabulary (zero speciali
 **Bio-score definition:** Per-token composite from PREFIX (qo=Bio +1, ok=Stars -1), kernel characters (k=Bio +1, e=Stars -1), macro-state (CC=Bio +1, FQ=Stars -1, AXM=Bio-enriched +0.5). 12,391 tokens scored.
 
 **Tier 3 interpretation:** The Voynich B text does not encode lifecycle progressions. Each folio/program operates within a single parametric domain inherited from its section context. The only within-paragraph progression is C932's vocabulary rarity gradient, which incidentally correlates with domain markers because specification vocabulary (rare, early) tends to be Bio-enriched while execution vocabulary (universal, late) is domain-neutral. This is consistent with each program being a self-contained control loop (C171), not a lifecycle narrative.
+
+### 5.10. Rosettes-B Vocabulary Tracing (Phase 401, C1122-C1123)
+
+**Question:** Can B programs be classified by their overlap with specific Rosettes vocabulary? Which rosettes connect to which B folios?
+
+**Result:** Rosettes is a SECTION-CATEGORICAL INDEX. Connection is 77% bridge-mediated; 26 informative MIDDLEs with zero inter-rosette overlap decompose into two section-targeting groups.
+
+**Key findings:**
+- Only 26 non-bridge informative MIDDLEs across 9 rosettes (C1122). Each rosette's informative vocabulary is completely unique (all pairwise Jaccard = 0.000).
+- Two section-targeting groups emerge: T-group (CENTER+NORTH+NW, 15 MIDDLEs) → Section T at 4.14x enrichment; S-group (WEST+SW, 9 MIDDLEs) → Section S at 2.04x enrichment (C1123). Both p<0.0001.
+- C1091 pharma folio targeting does not survive bridge-stripping (lift=1.55x, p=0.114 NS). Individual B-folio targeting requires bridge vocabulary.
+- No within-paragraph positional concentration (mean pos 0.480 vs 0.479, p=0.779). Rosette vocabulary is uniformly distributed in programs.
+- Label vocabulary discriminates more than ring-text vocabulary (CV=1.14 vs 0.95).
+- PREFIX+MIDDLE resolution adds 0 new MIDDLEs. Investigation exhausted at all resolution levels.
+
+**Tier 3 interpretation:** The Rosettes foldout is a universal structural index built almost entirely from bridge vocabulary — the most general, universally compatible MIDDLEs (C1013). Different rosettes contribute non-overlapping informative vocabulary that collectively points toward pharmaceutical sections (T and S). The NW-NORTH-CENTER corridor indexes Section T; the WEST-SW corridor indexes Section S. The indexing is categorical (rosette → section type), not specific (rosette → particular B program). This is consistent with Rosettes being a reference chart for pharmaceutical operations, where each rosette represents a different category of procedure that maps to a different section of the manuscript.

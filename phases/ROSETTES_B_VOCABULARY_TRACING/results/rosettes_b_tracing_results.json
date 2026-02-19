@@ -1,0 +1,350 @@
+{
+  "t1": {
+    "verdict": "GROUP_AND_RETRY",
+    "census": {
+      "CENTER": {
+        "total": 33,
+        "bridge": 22,
+        "exclusive": 3,
+        "in_b_corpus": 30,
+        "informative": 8
+      },
+      "NE": {
+        "total": 2,
+        "bridge": 1,
+        "exclusive": 1,
+        "in_b_corpus": 1,
+        "informative": 0
+      },
+      "NORTH": {
+        "total": 23,
+        "bridge": 18,
+        "exclusive": 3,
+        "in_b_corpus": 21,
+        "informative": 3
+      },
+      "NW": {
+        "total": 25,
+        "bridge": 18,
+        "exclusive": 3,
+        "in_b_corpus": 22,
+        "informative": 4
+      },
+      "SE": {
+        "total": 4,
+        "bridge": 3,
+        "exclusive": 1,
+        "in_b_corpus": 3,
+        "informative": 0
+      },
+      "SOUTH": {
+        "total": 20,
+        "bridge": 18,
+        "exclusive": 0,
+        "in_b_corpus": 20,
+        "informative": 2
+      },
+      "SW": {
+        "total": 24,
+        "bridge": 15,
+        "exclusive": 5,
+        "in_b_corpus": 19,
+        "informative": 4
+      },
+      "WEST": {
+        "total": 24,
+        "bridge": 17,
+        "exclusive": 2,
+        "in_b_corpus": 22,
+        "informative": 5
+      }
+    },
+    "informative_lists": {
+      "CENTER": [
+        "ea",
+        "ech",
+        "ir",
+        "ofai",
+        "opd",
+        "ro",
+        "x",
+        "yp"
+      ],
+      "NE": [],
+      "NORTH": [
+        "edaii",
+        "odai",
+        "rai"
+      ],
+      "NW": [
+        "dar",
+        "ld",
+        "og",
+        "oqot"
+      ],
+      "SE": [],
+      "SOUTH": [
+        "ofar",
+        "os"
+      ],
+      "SW": [
+        "ch",
+        "cphed",
+        "edsh",
+        "opchd"
+      ],
+      "WEST": [
+        "eed",
+        "eolk",
+        "oda",
+        "opaii",
+        "pai"
+      ]
+    },
+    "total_informative": 26,
+    "feasible_rosettes": 2
+  },
+  "t2": {
+    "verdict": "C1091_NOT_CONFIRMED",
+    "n_informative_pool": 26,
+    "n_targets_found": 5,
+    "target_mean_shared": 3.4,
+    "nontarget_mean_shared": 2.19,
+    "lift": 1.549,
+    "perm_p": 0.114,
+    "top_10": [
+      [
+        "f66r",
+        8
+      ],
+      [
+        "f85r1",
+        7
+      ],
+      [
+        "f106r",
+        7
+      ],
+      [
+        "f112r",
+        7
+      ],
+      [
+        "f113r",
+        6
+      ],
+      [
+        "f105v",
+        5
+      ],
+      [
+        "f107r",
+        5
+      ],
+      [
+        "f108r",
+        5
+      ],
+      [
+        "f113v",
+        5
+      ],
+      [
+        "f115r",
+        5
+      ]
+    ]
+  },
+  "t3": {
+    "verdict": "SECTION_SPECIFIC_INDEXING",
+    "n_significant": 3,
+    "n_tested": 5,
+    "per_rosette": {
+      "CENTER": {
+        "f_ratio": 21.153,
+        "perm_p": 0.0,
+        "top_section": "T",
+        "section_means": {
+          "B": 0.5,
+          "C": 0.6,
+          "H": 0.344,
+          "S": 1.87,
+          "T": 3.0
+        },
+        "significant": true
+      },
+      "NORTH": {
+        "f_ratio": 11.56,
+        "perm_p": 0.0,
+        "top_section": "T",
+        "section_means": {
+          "B": 0.1,
+          "C": 0.4,
+          "H": 0.094,
+          "S": 0.391,
+          "T": 2.0
+        },
+        "significant": true
+      },
+      "NW": {
+        "f_ratio": 0.98,
+        "perm_p": 0.368,
+        "top_section": "T",
+        "section_means": {
+          "B": 0.25,
+          "C": 0.4,
+          "H": 0.125,
+          "S": 0.174,
+          "T": 0.5
+        },
+        "significant": false
+      },
+      "SW": {
+        "f_ratio": 2.156,
+        "perm_p": 0.102,
+        "top_section": "S",
+        "section_means": {
+          "B": 0.05,
+          "C": 0.0,
+          "H": 0.062,
+          "S": 0.304,
+          "T": 0.0
+        },
+        "significant": false
+      },
+      "WEST": {
+        "f_ratio": 11.425,
+        "perm_p": 0.0,
+        "top_section": "S",
+        "section_means": {
+          "B": 0.45,
+          "C": 0.4,
+          "H": 0.344,
+          "S": 1.261,
+          "T": 1.0
+        },
+        "significant": true
+      }
+    }
+  },
+  "t4": {
+    "verdict": "NO_POSITIONAL_CONCENTRATION",
+    "n_paragraphs": 174,
+    "n_rosette_tokens": 115,
+    "n_all_tokens": 12391,
+    "mean_pos_rosette": 0.4795,
+    "mean_pos_all": 0.4785,
+    "mean_pos_freq_matched": 0.4847,
+    "wilcoxon_z": -0.215,
+    "wilcoxon_p": 0.778985,
+    "spec_frac_rosette": 0.417,
+    "spec_frac_all": 0.431,
+    "rosette_vs_matched_diff": -0.0053,
+    "inf_median_freq": 4,
+    "n_freq_matched": 179
+  },
+  "t5": {
+    "verdict": "LABEL_DISCRIMINATES_MORE",
+    "n_label_informative": 16,
+    "n_ring_informative": 10,
+    "label_inf_list": [
+      "ch",
+      "cphed",
+      "dar",
+      "edsh",
+      "ir",
+      "ld",
+      "oda",
+      "odai",
+      "ofar",
+      "opchd",
+      "opd",
+      "os",
+      "pai",
+      "ro",
+      "x",
+      "yp"
+    ],
+    "ring_inf_list": [
+      "ea",
+      "ech",
+      "edaii",
+      "eed",
+      "eolk",
+      "ofai",
+      "opaii",
+      "oqot",
+      "os",
+      "rai"
+    ],
+    "label_mean": 1.183,
+    "label_var": 1.808,
+    "label_cv": 1.1367,
+    "ring_mean": 1.22,
+    "ring_var": 1.342,
+    "ring_cv": 0.9499
+  },
+  "t6": {
+    "verdict": "SPECIFIC_INDEXING_ARCHITECTURE",
+    "n_viable_rosettes": 2,
+    "rosette_top5": {
+      "CENTER": [
+        "f112r",
+        "f66r",
+        "f85r1",
+        "f105v",
+        "f106r"
+      ],
+      "WEST": [
+        "f108r",
+        "f104r",
+        "f105r",
+        "f107r",
+        "f111v"
+      ]
+    },
+    "mean_top5_jaccard": 0.0,
+    "folio_affinity_counts": {
+      "CENTER": 62,
+      "WEST": 20
+    },
+    "rosette_folio_matrix": {
+      "CENTER": {
+        "f112r": 4,
+        "f66r": 3,
+        "f85r1": 3,
+        "f105v": 3,
+        "f106r": 3,
+        "f115r": 3,
+        "f115v": 3,
+        "f77v": 2,
+        "f81v": 2,
+        "f86v6": 2
+      },
+      "WEST": {
+        "f108r": 3,
+        "f104r": 2,
+        "f105r": 2,
+        "f107r": 2,
+        "f111v": 2,
+        "f114r": 2,
+        "f31r": 1,
+        "f33r": 1,
+        "f34r": 1,
+        "f39r": 1
+      }
+    }
+  },
+  "combined": {
+    "overall": "ROSETTES_BRIDGE_MEDIATED_ONLY",
+    "reasoning": "C1091 not confirmed at informative level. Rosettes-B connection is bridge-mediated only (extends C1109).",
+    "per_test_verdicts": {
+      "t1": "GROUP_AND_RETRY",
+      "t2": "C1091_NOT_CONFIRMED",
+      "t3": "SECTION_SPECIFIC_INDEXING",
+      "t4": "NO_POSITIONAL_CONCENTRATION",
+      "t5": "LABEL_DISCRIMINATES_MORE",
+      "t6": "SPECIFIC_INDEXING_ARCHITECTURE"
+    }
+  }
+}

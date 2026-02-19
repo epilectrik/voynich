@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 986 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 988 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (986 validated)
+- Tier 0-2 binding constraints (988 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 986 constraints, 66 fits,
+full content in their source documents. All 988 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-19 10:13
-**Version:** FROZEN STATE (986 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-19 11:42
+**Version:** FROZEN STATE (988 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -1101,7 +1101,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 986 constraints | 2026-02-19
+CONSTRAINT_REFERENCE v2.6 | 988 constraints | 2026-02-19
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2092,6 +2092,8 @@ C1118	**Bidirectional Forbidden Co-occurrence Dominance** (75.2% of MIDDLE-level
 C1119	**MIDDLE Forward Bias as Reading Direction Evidence**
 C1120	**Lifecycle Domain Progression Falsified**
 C1121	**Folio-Level Domain Determination** (paragraph domain character Bio/Stars determined at folio level ICC=0.393, F(45,95)=2.98; within REGIME_1 section predicts Bio-score Bio=0.131 vs Stars=-0.027 diff=0.158; within-paragraph domain stable perm p=0.19; consistent with C1087 Bio divergence)
+C1122	**Rosettes-B Bridge-Dominant Vocabulary Architecture**
+C1123	**Rosettes Section-Categorical Index Structure**
 
 ---
 
@@ -4493,6 +4495,14 @@ This is consistent with but not proven by the evidence. The shared prefix patter
 - Folio determines domain: ICC=0.393, ANOVA F(45,95)=2.98. Paragraphs inherit domain character from folio/section context (C1121)
 - REGIME_1 section parameterization: Bio-section Bio-score=0.131 vs Stars=-0.027 (diff=0.158). Bio-section paragraphs show significant NEGATIVE within-paragraph rho (z=-2.63, p=0.006) — C932 gradient wearing a domain mask
 
+
+
+
+
+**Key findings:**
+- Only 26 non-bridge informative MIDDLEs across 9 rosettes (C1122). Each rosette's informative vocabulary is completely unique (all pairwise Jaccard = 0.000).
+- Two section-targeting groups emerge: T-group (CENTER+NORTH+NW, 15 MIDDLEs) → Section T at 4.14x enrichment; S-group (WEST+SW, 9 MIDDLEs) → Section S at 2.04x enrichment (C1123). Both p<0.0001.
+- C1091 pharma folio targeting does not survive bridge-stripping (lift=1.55x, p=0.114 NS). Individual B-folio targeting requires bridge vocabulary.
 
 
 

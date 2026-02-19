@@ -1,0 +1,264 @@
+{
+  "part_a_pairing": {
+    "vocab_jaccard_matrix": {
+      "CENTER": {
+        "CENTER": 1.0,
+        "NE": 0.0,
+        "NORTH": 0.0,
+        "NW": 0.0,
+        "SE": 0.0,
+        "SOUTH": 0.0,
+        "SW": 0.0,
+        "WEST": 0.0
+      },
+      "NE": {
+        "CENTER": 0.0,
+        "NE": 0.0,
+        "NORTH": 0.0,
+        "NW": 0.0,
+        "SE": 0.0,
+        "SOUTH": 0.0,
+        "SW": 0.0,
+        "WEST": 0.0
+      },
+      "NORTH": {
+        "CENTER": 0.0,
+        "NE": 0.0,
+        "NORTH": 1.0,
+        "NW": 0.0,
+        "SE": 0.0,
+        "SOUTH": 0.0,
+        "SW": 0.0,
+        "WEST": 0.0
+      },
+      "NW": {
+        "CENTER": 0.0,
+        "NE": 0.0,
+        "NORTH": 0.0,
+        "NW": 1.0,
+        "SE": 0.0,
+        "SOUTH": 0.0,
+        "SW": 0.0,
+        "WEST": 0.0
+      },
+      "SE": {
+        "CENTER": 0.0,
+        "NE": 0.0,
+        "NORTH": 0.0,
+        "NW": 0.0,
+        "SE": 0.0,
+        "SOUTH": 0.0,
+        "SW": 0.0,
+        "WEST": 0.0
+      },
+      "SOUTH": {
+        "CENTER": 0.0,
+        "NE": 0.0,
+        "NORTH": 0.0,
+        "NW": 0.0,
+        "SE": 0.0,
+        "SOUTH": 1.0,
+        "SW": 0.0,
+        "WEST": 0.0
+      },
+      "SW": {
+        "CENTER": 0.0,
+        "NE": 0.0,
+        "NORTH": 0.0,
+        "NW": 0.0,
+        "SE": 0.0,
+        "SOUTH": 0.0,
+        "SW": 1.0,
+        "WEST": 0.0
+      },
+      "WEST": {
+        "CENTER": 0.0,
+        "NE": 0.0,
+        "NORTH": 0.0,
+        "NW": 0.0,
+        "SE": 0.0,
+        "SOUTH": 0.0,
+        "SW": 0.0,
+        "WEST": 1.0
+      }
+    },
+    "cotarget_matrix": {
+      "CENTER": {
+        "CENTER": 44,
+        "NE": 0,
+        "NORTH": 11,
+        "NW": 13,
+        "SE": 0,
+        "SOUTH": 10,
+        "SW": 5,
+        "WEST": 29
+      },
+      "NE": {
+        "CENTER": 0,
+        "NE": 0,
+        "NORTH": 0,
+        "NW": 0,
+        "SE": 0,
+        "SOUTH": 0,
+        "SW": 0,
+        "WEST": 0
+      },
+      "NORTH": {
+        "CENTER": 11,
+        "NE": 0,
+        "NORTH": 17,
+        "NW": 3,
+        "SE": 0,
+        "SOUTH": 4,
+        "SW": 4,
+        "WEST": 14
+      },
+      "NW": {
+        "CENTER": 13,
+        "NE": 0,
+        "NORTH": 3,
+        "NW": 16,
+        "SE": 0,
+        "SOUTH": 2,
+        "SW": 0,
+        "WEST": 10
+      },
+      "SE": {
+        "CENTER": 0,
+        "NE": 0,
+        "NORTH": 0,
+        "NW": 0,
+        "SE": 0,
+        "SOUTH": 0,
+        "SW": 0,
+        "WEST": 0
+      },
+      "SOUTH": {
+        "CENTER": 10,
+        "NE": 0,
+        "NORTH": 4,
+        "NW": 2,
+        "SE": 0,
+        "SOUTH": 13,
+        "SW": 3,
+        "WEST": 10
+      },
+      "SW": {
+        "CENTER": 5,
+        "NE": 0,
+        "NORTH": 4,
+        "NW": 0,
+        "SE": 0,
+        "SOUTH": 3,
+        "SW": 9,
+        "WEST": 8
+      },
+      "WEST": {
+        "CENTER": 29,
+        "NE": 0,
+        "NORTH": 14,
+        "NW": 10,
+        "SE": 0,
+        "SOUTH": 10,
+        "SW": 8,
+        "WEST": 46
+      }
+    },
+    "cluster_coherence": {
+      "t_group_within": 0.0,
+      "s_group_within": 0.0,
+      "between_groups": 0.0
+    },
+    "top_pairs": []
+  },
+  "part_b_grouped": {
+    "verdict": "DUAL_SECTION_TARGETING_CONFIRMED",
+    "group_results": {
+      "T_GROUP": {
+        "n_pool": 15,
+        "pool_middles": [
+          "dar",
+          "ea",
+          "ech",
+          "edaii",
+          "ir",
+          "ld",
+          "odai",
+          "ofai",
+          "og",
+          "opd",
+          "oqot",
+          "rai",
+          "ro",
+          "x",
+          "yp"
+        ],
+        "f_ratio": 19.375,
+        "perm_p": 0.0,
+        "top_section": "T",
+        "section_means": {
+          "B": 0.85,
+          "C": 1.4,
+          "H": 0.562,
+          "S": 2.435,
+          "T": 5.5
+        },
+        "enrichment": {
+          "B": 0.64,
+          "C": 1.05,
+          "H": 0.42,
+          "S": 1.83,
+          "T": 4.14
+        },
+        "significant": true
+      },
+      "S_GROUP": {
+        "n_pool": 9,
+        "pool_middles": [
+          "ch",
+          "cphed",
+          "edsh",
+          "eed",
+          "eolk",
+          "oda",
+          "opaii",
+          "opchd",
+          "pai"
+        ],
+        "f_ratio": 10.229,
+        "perm_p": 0.0,
+        "top_section": "S",
+        "section_means": {
+          "B": 0.5,
+          "C": 0.4,
+          "H": 0.406,
+          "S": 1.565,
+          "T": 1.0
+        },
+        "enrichment": {
+          "B": 0.65,
+          "C": 0.52,
+          "H": 0.53,
+          "S": 2.04,
+          "T": 1.3
+        },
+        "significant": true
+      }
+    }
+  },
+  "part_c_exhaustion": {
+    "verdict": "PM_NO_ADDITIONAL_SIGNAL",
+    "n_ros_pm_total": 134,
+    "n_exclusive_pm": 25,
+    "n_informative_pm": 19,
+    "n_new_middles_via_pm": 0,
+    "new_middles": [],
+    "f_ratio_pm": 14.152,
+    "f_ratio_mid_only": 42.565,
+    "improvement_ratio": 0.332
+  },
+  "final_verdict": {
+    "overall": "PARTIAL_CATEGORICAL_INDEX",
+    "reasoning": "Some evidence for section-categorical indexing but not fully coherent. PREFIX+MIDDLE resolution adds no signal \u2014 investigation exhausted."
+  }
+}
