@@ -10,7 +10,9 @@
 
 ## Statement
 
-Different f85v2 regions cross-reference different manuscript sections via rare MIDDLEs: N1/N2 point to Herbal folios, B1/M1/V1 point to Stars folios, U1 points to Bio folios. All label groups (BOTTOM, MIDDLE, UPPER) converge on the same top pharmaceutical folios (f76r, f108r, f111r, f108v, f116r) by MIDDLE overlap. This multi-target pattern breaks C440 (uniform B-to-AZC sourcing) for the Rosettes folios.
+Different f85v2 regions cross-reference different manuscript sections via rare MIDDLEs: N1/N2 (WEST+CENTER ring text) point to Herbal folios, B1/M1/V1 (SW labels, WEST labels, NW ring text) point to Stars folios, U1 (NW labels) points to Bio folios. All label groups (BOTTOM-ROW, MIDDLE-ROW, UPPER-ROW) converge on the same top pharmaceutical folios (f76r, f108r, f111r, f108v, f116r) by MIDDLE overlap. This multi-target pattern breaks C440 (uniform B-to-AZC sourcing) for the Rosettes folios.
+
+**Note (Phase 396):** Group names BOTTOM/MIDDLE/UPPER refer to transcript row codes (B=bottom, M=middle, U=upper), which happen to match the physical grid rows. Region codes map to physical rosettes per voynich.nu: V=top row, N=middle row, C=bottom row; 1=left, 2=center, 3=right.
 
 ---
 

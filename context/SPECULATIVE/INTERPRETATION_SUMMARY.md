@@ -5746,29 +5746,31 @@ This is NOT a Tier 3 interpretation. The metalayer status is a structural fact (
 | BOTTOM (B1-B3) | Labels | 38 entries, largest vocabulary index |
 | MIDDLE (M1-M3) | Labels + small desc | 33 entries, hub-critical vocabulary |
 | UPPER (U1-U3) | Labels + small desc | 17 entries, scaffold vocabulary |
-| NORTH (N1-N2) | Descriptions | 60 tokens, balanced hazard K=18 |
-| VERT (V1-V2) | Descriptions | 62 tokens, highest hazard K=23 |
-| CENTER (C2) | Description | 33 tokens, TARGET-dominant convergence |
+| N1+N2 (WEST + CENTER rosettes) | Descriptions | 60 tokens, balanced hazard K=18 |
+| V1+V2 (NW + NORTH rosettes) | Descriptions | 62 tokens, highest hazard K=23 |
+| C2 (SOUTH rosette) | Description | 33 tokens, TARGET-dominant |
 | D_W (D1, W1) | Mixed | Small transitional region |
 
 **Cross-references (C1091):** All label groups converge on the same pharmaceutical folios (f76r, f108r, f111r). Section S (Stars/Pharma) dominant, then B (Bio), then H (Herbal). The Rosettes indexes the pharmaceutical recipes specifically, not the herbal majority.
 
-**Convergence (C1092):** CENTER rosette is TARGET-dominant (SOURCE:TARGET=0.36), uses only core vocabulary, and has proximity-scaled vocabulary overlap with surrounding groups (55% adjacent to 5% distant).
+**C2 TARGET Profile (C1092, revised):** The SOUTH rosette (C2) is TARGET-dominant (SOURCE:TARGET=0.36), uses only core vocabulary. Originally interpreted as CENTER convergence node, but Phase 396 mapping correction revealed C2 is SOUTH, not CENTER. The proximity-scaled overlap (55% to 5%) reflects row-based label grouping, not radial distance from center. The actual CENTER rosette (N2) has a more balanced profile.
 
 ### Tier 3: Pharmaceutical Process Reference Interpretation
 
-> **The Rosettes foldout is a master reference chart for the manuscript's pharmaceutical procedures, showing process types (descriptions), ingredient vocabulary (labels), and product convergence (center) in a spatially organized diagram.**
+> **The Rosettes foldout is a master reference chart for the manuscript's pharmaceutical procedures, showing process types (descriptions), ingredient vocabulary (labels), and functional vocabulary profiles in a spatially organized 3x3 grid diagram.**
 
 **Caveats:**
 - This interpretation is consistent with but not proven by the structural evidence
 - C138/C140 (illustrations are epiphenomenal) applies — visual features (tubes, spherical center) are suggestive context, not binding evidence
-- The CENTER's TARGET-dominant profile is consistent with a convergence/collection point (distillation product, preparation vessel) but the specific physical referent cannot be determined from text alone
+- The SOUTH rosette's (C2) TARGET-dominant profile was originally interpreted as center convergence; with corrected mapping (C2=SOUTH), the spatial convergence interpretation is weakened
 - Section T correlation could indicate monitoring/quality-control function rather than production reference
 
 **Strongest candidate models:**
-1. **Distillation apparatus diagram** — CENTER as collection vessel, surrounding rosettes as processing stages, tubes as condensation pathways. Consistent with physical appearance and structural data.
-2. **Process taxonomy** — 9 rosettes map to 9 categories of pharmaceutical procedure, with labels naming ingredients and descriptions showing operational character per category.
-3. **Galen's Nine Temperaments** (1+4+4 structure) — CENTER as balanced/neutral, 4 primary surrounding rosettes, 4 secondary. Consistent with medieval pharmaceutical taxonomy.
+1. **Process taxonomy** — 9 rosettes map to 9 categories of pharmaceutical procedure, with labels naming ingredients and descriptions showing operational character per category. Phase 396 functional profiling supports this: each rosette has a distinct kernel emphasis (k/h/e balance) while sharing universal bridge vocabulary.
+2. **Functional decomposition** — All rosettes share the same bridge vocabulary pointing to the same B paragraphs (Jaccard ~0.98), but differ in kernel emphasis. This suggests the diagram shows the same operations from different functional perspectives (energy, stability, monitoring).
+3. **Galen's Nine Temperaments** (1+4+4 structure) — CENTER (N2) as balanced/most balanced k/e ratio (0.50), 4 cardinals as process phases, 4 corners as operational contexts. Phase 396 data partially supports: CENTER has highest h_frac (monitoring).
+
+**Note:** The original "distillation apparatus with CENTER as collection vessel" model was based on misidentifying C2 as CENTER. With corrected mapping (C2=SOUTH, N2=CENTER), CENTER (N2) has the most balanced kernel profile, not a convergence profile. The distillation model is weakened but not ruled out.
 
 ### Constraint Implications
 
@@ -5897,7 +5899,7 @@ This completes the picture: the manuscript has a three-layer indexing architectu
 
 Rosettes labels and pharma jar labels (C523-C524) are **different systems** operating at different abstraction levels. Zero exact word overlap, different lengths (jars 7.2 chars vs Rosettes 5.3), different text presence (jars 0% in B vs Rosettes 49%). But both share material-facing prefix patterns: ok- and da- dominant, ch-/sh- (energy operations) largely avoided. One rare MIDDLE (`opar`) appears in both systems.
 
-Interpretation (Tier 4): Rosettes labels are **category-level identifiers** (types of ingredients/processes), while jar labels are **instance-level identifiers** (specific physical containers). The CENTER rosette's vessel-like visual imagery may depict the generic apparatus type that individual jar labels elsewhere name specific instances of. The Rosettes foldout sits one level above the jar labeling system in a naming hierarchy:
+Interpretation (Tier 4): Rosettes labels are **category-level identifiers** (types of ingredients/processes), while jar labels are **instance-level identifiers** (specific physical containers). The CENTER rosette (N2) contains vessel-like visual imagery (ring of alembic/retort vessels) that may depict the generic apparatus type that individual jar labels elsewhere name specific instances of. The Rosettes foldout sits one level above the jar labeling system in a naming hierarchy:
 
 ```
 ROSETTES LABEL = "this type of process/ingredient" (category)

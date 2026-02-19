@@ -44,9 +44,11 @@ f85v2 contains both A-like single-token label regions (87 tokens across 8 region
 ### Description Properties (B-like)
 
 - Continuous text with hub role distributions
-- NORTH (N1+N2): 71% hazard, K=18
-- VERT (V1+V2): 73% hazard, K=23
-- CENTER (C2): 62% hazard, TARGET-dominant
+- N1+N2 (WEST + CENTER rosettes): 71% hazard, K=18
+- V1+V2 (NW + NORTH rosettes): 73% hazard, K=23
+- C2 (SOUTH rosette): 62% hazard, TARGET-dominant
+
+**Note (Phase 396):** Original group labels "NORTH," "VERT," "CENTER" were based on region code letters. Corrected mapping per voynich.nu: N1=WEST, N2=CENTER, V1=NW, V2=NORTH, C2=SOUTH.
 
 ---
 

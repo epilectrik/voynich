@@ -88,7 +88,7 @@ and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-18 17:53
+**Generated:** 2026-02-18 22:46
 **Version:** FROZEN STATE (975 constraints, 66 fits) [COMPACT]
 
 ---
@@ -2062,7 +2062,7 @@ C1088	**Rosettes Hybrid Classification** (10-test battery: 64.7% grammar coverag
 C1089	**Rosettes Near-Complete Vocabulary Coverage** (48/49 classes 98%, 23/23 hub MIDDLEs 100%, 93.1% core B vocabulary; exceeds C438 83% AZC coverage; entropy 1.767 vs B 1.458)
 C1090	**Rosettes Section T Correlation** (all 7 folios and all 16 f85v2 regions correlate most with Section T; uniform across AZC-to-B gradient)
 C1091	**Rosettes Multi-Target Cross-Reference** (label groups converge on pharma folios f76r/f108r/f111r; different regions point to different sections; breaks C440 uniformity)
-C1092	**Rosettes CENTER Convergence Node** (C2: SOURCE:TARGET=0.36, core-only vocabulary, aiin suffix concentration, proximity-scaled overlap BOTTOM 55% to D_W 5%; spatial convergence)
+C1092	**Rosettes SOUTH (C2) TARGET-Dominant Profile** (C2=SOUTH: SOURCE:TARGET=0.36, core-only vocabulary, aiin suffix concentration; originally interpreted as CENTER convergence node, **positional interpretation revised Phase 396** — C2 is SOUTH cardinal, not CENTER)
 C1093	**Rosettes Label-Description Bifurcation** (f85v2: 8 label regions 87 tokens A-like + 8 description regions B-like; 49 unique label MIDDLEs, 9 not in B body text, 29 exclusive to Rosettes)
 C1094	**Rosettes Exclusive Vocabulary Is Morphological Tail** (79 exclusive MIDDLEs: mean length 4.91, 98.7% hapax, 78.5% compound; matches C618/C766 UN profile)
 C1095	**Rosettes Metalayer Status** (GLOBAL: foldout functions as structural metalayer above A/B/AZC; near-complete coverage, spatial gradient, multi-target cross-ref, higher entropy, mixed roles)
@@ -2080,7 +2080,7 @@ C1106	**Stars e-Stability Kernel Enrichment**
 C1107	**Stars LINK Monitoring Concentration**
 C1108	**Stars Vocabulary Clamping Falsified** (S7-S10: 0 PASS, 3 FAIL; no consistent intra-REGIME clamping, no e-mediation, no bridge mediation, vocabulary LESS homogeneous across REGIMEs; Stars Paradox remains open)
 C1109	**Rosettes Cross-Reference is Vocabulary-Mediated, Not Process-Demonstrating**
-C1110	**CENTER Convergence Node Directionally Confirmed**
+C1110	**SOUTH (C2) Directional Profile Confirmed**
 C1111	**Stars Paradox is REGIME Composition Artifact**
 C1112	**P-Text Bridge Enrichment at Extreme Levels** (45.5% bridge MIDDLEs, 100th percentile of A; exceeds Rosettes 24.4%; affordance cosine 0.925 with Rosettes; non-bridge B-transmission 60.6% — bridges do not fully explain C486)
 C1113	**P-Text and Rosettes Share Unified Bridge-Vocabulary Indexing System**
@@ -4318,18 +4318,20 @@ This is NOT a Tier 3 interpretation. The metalayer status is a structural fact (
 
 ### Tier 3: Pharmaceutical Process Reference Interpretation
 
-> **The Rosettes foldout is a master reference chart for the manuscript's pharmaceutical procedures, showing process types (descriptions), ingredient vocabulary (labels), and product convergence (center) in a spatially organized diagram.**
+> **The Rosettes foldout is a master reference chart for the manuscript's pharmaceutical procedures, showing process types (descriptions), ingredient vocabulary (labels), and functional vocabulary profiles in a spatially organized 3x3 grid diagram.**
 
 **Caveats:**
 - This interpretation is consistent with but not proven by the structural evidence
 - C138/C140 (illustrations are epiphenomenal) applies — visual features (tubes, spherical center) are suggestive context, not binding evidence
-- The CENTER's TARGET-dominant profile is consistent with a convergence/collection point (distillation product, preparation vessel) but the specific physical referent cannot be determined from text alone
+- The SOUTH rosette's (C2) TARGET-dominant profile was originally interpreted as center convergence; with corrected mapping (C2=SOUTH), the spatial convergence interpretation is weakened
 - Section T correlation could indicate monitoring/quality-control function rather than production reference
 
 **Strongest candidate models:**
-1. **Distillation apparatus diagram** — CENTER as collection vessel, surrounding rosettes as processing stages, tubes as condensation pathways. Consistent with physical appearance and structural data.
-2. **Process taxonomy** — 9 rosettes map to 9 categories of pharmaceutical procedure, with labels naming ingredients and descriptions showing operational character per category.
-3. **Galen's Nine Temperaments** (1+4+4 structure) — CENTER as balanced/neutral, 4 primary surrounding rosettes, 4 secondary. Consistent with medieval pharmaceutical taxonomy.
+1. **Process taxonomy** — 9 rosettes map to 9 categories of pharmaceutical procedure, with labels naming ingredients and descriptions showing operational character per category. Phase 396 functional profiling supports this: each rosette has a distinct kernel emphasis (k/h/e balance) while sharing universal bridge vocabulary.
+2. **Functional decomposition** — All rosettes share the same bridge vocabulary pointing to the same B paragraphs (Jaccard ~0.98), but differ in kernel emphasis. This suggests the diagram shows the same operations from different functional perspectives (energy, stability, monitoring).
+3. **Galen's Nine Temperaments** (1+4+4 structure) — CENTER (N2) as balanced/most balanced k/e ratio (0.50), 4 cardinals as process phases, 4 corners as operational contexts. Phase 396 data partially supports: CENTER has highest h_frac (monitoring).
+
+**Note:** The original "distillation apparatus with CENTER as collection vessel" model was based on misidentifying C2 as CENTER. With corrected mapping (C2=SOUTH, N2=CENTER), CENTER (N2) has the most balanced kernel profile, not a convergence profile. The distillation model is weakened but not ruled out.
 
 - **C757.a:** Rosettes excluded from "AZC Zero Kernel/Link" — presence of 38.8% kernel and 0.97% LINK is what distinguishes metalayer from standard AZC
 - **C440.a:** Rosettes exception to uniform B-to-AZC sourcing — multi-target cross-referencing
@@ -4433,7 +4435,7 @@ Phase 392 tested whether Stars is structurally distinct and whether vocabulary c
 
 Rosettes labels and pharma jar labels (C523-C524) are **different systems** operating at different abstraction levels. Zero exact word overlap, different lengths (jars 7.2 chars vs Rosettes 5.3), different text presence (jars 0% in B vs Rosettes 49%). But both share material-facing prefix patterns: ok- and da- dominant, ch-/sh- (energy operations) largely avoided. One rare MIDDLE (`opar`) appears in both systems.
 
-Interpretation (Tier 4): Rosettes labels are **category-level identifiers** (types of ingredients/processes), while jar labels are **instance-level identifiers** (specific physical containers). The CENTER rosette's vessel-like visual imagery may depict the generic apparatus type that individual jar labels elsewhere name specific instances of. The Rosettes foldout sits one level above the jar labeling system in a naming hierarchy:
+Interpretation (Tier 4): Rosettes labels are **category-level identifiers** (types of ingredients/processes), while jar labels are **instance-level identifiers** (specific physical containers). The CENTER rosette (N2) contains vessel-like visual imagery (ring of alembic/retort vessels) that may depict the generic apparatus type that individual jar labels elsewhere name specific instances of. The Rosettes foldout sits one level above the jar labeling system in a naming hierarchy:
 
 ```
 ROSETTES LABEL = "this type of process/ingredient" (category)
