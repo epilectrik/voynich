@@ -5950,6 +5950,25 @@ Phase 397's finding that ring texts use universal-only vocabulary (zero speciali
 - Could alternatively be abbreviated label vocabulary rather than a different functional register
 - **Phase 398 section incompatibility test (C1116): TESTED, NOT SUPPORTED FOR UPGRADE.** Within REGIME_1, Bio and Stars show consistent quantitative divergence across all 6 tested dimensions but zero qualitative incompatibility (0 robust operator substitution pairs, no topology changes). All section differences are weight modulation, consistent with technique variation within a single process family (C1029). Expert validation confirmed: section divergence confirms C1029 at within-REGIME granularity, does not establish multi-domain.
 
-**Constraints:** C1088-C1116, C440.a, C757.a
-**Scripts:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/scripts/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/scripts/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/scripts/`, `phases/SECTION_BRIDGE_DYNAMICS/scripts/`, `phases/STARS_RECIPE_CHARACTERIZATION/scripts/`, `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/scripts/`, `phases/ROSETTES_RING_TEXT_GRAMMAR/scripts/`, `phases/SECTION_INCOMPATIBILITY_TEST/scripts/`
-**Results:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/results/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/results/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/results/`, `phases/SECTION_BRIDGE_DYNAMICS/results/`, `phases/STARS_RECIPE_CHARACTERIZATION/results/`, `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/results/`, `phases/ROSETTES_RING_TEXT_GRAMMAR/results/`, `phases/SECTION_INCOMPATIBILITY_TEST/results/`
+**Constraints:** C1088-C1119, C440.a, C757.a
+**Scripts:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/scripts/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/scripts/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/scripts/`, `phases/SECTION_BRIDGE_DYNAMICS/scripts/`, `phases/STARS_RECIPE_CHARACTERIZATION/scripts/`, `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/scripts/`, `phases/ROSETTES_RING_TEXT_GRAMMAR/scripts/`, `phases/SECTION_INCOMPATIBILITY_TEST/scripts/`, `phases/READING_DIRECTION_TEST/scripts/`
+**Results:** `phases/ROSETTES_SYSTEM_CLASSIFICATION/results/`, `phases/ROSETTES_STRUCTURAL_VALIDATION/results/`, `phases/BRIDGE_BACKBONE_MANUSCRIPT_SURVEY/results/`, `phases/SECTION_BRIDGE_DYNAMICS/results/`, `phases/STARS_RECIPE_CHARACTERIZATION/results/`, `phases/PTEXT_ROSETTES_INDEXING_ARCHITECTURE/results/`, `phases/ROSETTES_RING_TEXT_GRAMMAR/results/`, `phases/SECTION_INCOMPATIBILITY_TEST/results/`, `phases/READING_DIRECTION_TEST/results/`
+
+### 5.8. Reading Direction (Phase 399, C1117-C1119)
+
+**Question:** Is the assumed left-to-right (LTR) reading direction correct at the token level?
+
+**Result:** LTR CONFIRMED. 7-test battery scored LTR 5, RTL 0, NEUTRAL 2, boundary-inward 0.
+
+**Key findings:**
+- MIDDLE MI forward bias +0.070 bits (z=17.0) — MIDDLE predicts physical-right neighbor better than physical-left (C1119)
+- 75.2% of forbidden MIDDLE co-occurrences are bidirectional adjacency constraints (C1118), explaining C1034's symmetric model improvement
+- PREFIX positional coherence: preparation PREFIXes line-initial, closure PREFIXes line-final — coherent only under LTR (7-0 score)
+- Transition topology direction-invariant (spectral gap 0.896 vs 0.899)
+- Entropy "bathtub" profile (high at boundaries, low in middle) falsifies boundary-inward hypothesis
+- CC appears 21.5% line-initial vs 14.1% line-final (physical-left anchor)
+- Vocabulary gradient: specification→execution matches C932 under LTR
+
+**External motivation:** voynich-toolkit found character-level RTL (z=22.97). Our test at token level confirms LTR. Character writing direction and token reading direction are separate questions.
+
+**Tier 3 interpretation:** LTR token reading is consistent with the Brunschwig procedural framework: preparation operations first (line-initial PREFIXes po, pch, tch, so), execution in the middle (energy selectors qo, ch, da), closure at end (ar, or, ol, ot). The workflow reads naturally as PREP → EXECUTE → CLOSE under LTR.

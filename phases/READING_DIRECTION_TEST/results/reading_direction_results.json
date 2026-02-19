@@ -1,0 +1,440 @@
+{
+  "phase": 399,
+  "name": "READING_DIRECTION_TEST",
+  "n_tokens": 16054,
+  "n_lines": 2409,
+  "t1": {
+    "n_ltr_forbidden": 1655,
+    "n_rtl_forbidden": 1655,
+    "n_ltr_active": 58,
+    "n_rtl_active": 58,
+    "n_direct_overlap": 1244,
+    "n_reverse_overlap": 1655,
+    "n_ltr_symmetric": 1244,
+    "n_rtl_symmetric": 1244,
+    "symmetry_fraction": 0.7517,
+    "jaccard": 0.6021,
+    "known_17_middle_recovered_ltr": 0,
+    "class_level": {
+      "c783_zero_ltr": 6,
+      "c783_zero_rtl": 6,
+      "c783_reversed_zero_rtl": 6,
+      "c783_violations_ltr": 123,
+      "c783_violations_rtl": 102,
+      "c783_reversed_violations_rtl": 123
+    },
+    "ltr_only_count": 411,
+    "rtl_only_count": 411,
+    "mathematical_note": "Forbidden landscapes under LTR/RTL are exact mirror images by construction. This test cannot distinguish directions. Key finding: symmetry_fraction shows what proportion are adjacency constraints (forbidden in both directions).",
+    "verdict": "NEUTRAL_HIGH_OVERLAP"
+  },
+  "t2": {
+    "prefix": {
+      "mi_forward": 0.153411,
+      "mi_backward": 0.171076,
+      "asymmetry": -0.017665,
+      "n_pairs": 13645,
+      "rtl_asymmetry": 0.017665,
+      "null_mean": -0.000434,
+      "null_sd": 0.003951,
+      "z_score": -4.36,
+      "genuine_pct": 97.5
+    },
+    "middle": {
+      "mi_forward": 0.311894,
+      "mi_backward": 0.241732,
+      "asymmetry": 0.070162,
+      "n_pairs": 13645,
+      "rtl_asymmetry": -0.070162,
+      "null_mean": -0.000198,
+      "null_sd": 0.004141,
+      "z_score": 16.99,
+      "genuine_pct": 99.7
+    },
+    "suffix": {
+      "mi_forward": 0.103118,
+      "mi_backward": 0.084877,
+      "asymmetry": 0.018242,
+      "n_pairs": 13645,
+      "rtl_asymmetry": -0.018242,
+      "null_mean": -4.8e-05,
+      "null_sd": 0.003342,
+      "z_score": 5.47,
+      "genuine_pct": 99.7
+    },
+    "verdict": "LTR_FORWARD_BIASED",
+    "direction_vote": "LTR"
+  },
+  "t3": {
+    "n_valid_prefixes": 24,
+    "r_squared": 0.0371,
+    "ltr_family_coherence": 0.7833,
+    "rtl_family_coherence": 0.7833,
+    "ltr_zone_variance": {
+      "INITIAL": 0.112834,
+      "FINAL": 0.110645,
+      "CENTRAL": 0.1114
+    },
+    "rtl_zone_variance": {
+      "FINAL": 0.112834,
+      "INITIAL": 0.110645,
+      "CENTRAL": 0.1114
+    },
+    "ltr_zones": {
+      "sh": "INITIAL",
+      "ot": "FINAL",
+      "qo": "CENTRAL",
+      "da": "CENTRAL",
+      "ok": "CENTRAL",
+      "BARE": "FINAL",
+      "ch": "CENTRAL",
+      "ke": "CENTRAL",
+      "pch": "INITIAL",
+      "tch": "INITIAL",
+      "sa": "INITIAL",
+      "lsh": "INITIAL",
+      "lk": "CENTRAL",
+      "ol": "FINAL",
+      "lch": "CENTRAL",
+      "ka": "CENTRAL",
+      "or": "FINAL",
+      "so": "INITIAL",
+      "te": "CENTRAL",
+      "yk": "INITIAL",
+      "ta": "CENTRAL",
+      "kch": "CENTRAL",
+      "do": "INITIAL",
+      "ar": "FINAL"
+    },
+    "rtl_zones": {
+      "sh": "FINAL",
+      "ot": "INITIAL",
+      "qo": "CENTRAL",
+      "da": "CENTRAL",
+      "ok": "CENTRAL",
+      "BARE": "INITIAL",
+      "ch": "CENTRAL",
+      "ke": "CENTRAL",
+      "pch": "FINAL",
+      "tch": "FINAL",
+      "sa": "FINAL",
+      "lsh": "FINAL",
+      "lk": "CENTRAL",
+      "ol": "INITIAL",
+      "lch": "CENTRAL",
+      "ka": "CENTRAL",
+      "or": "INITIAL",
+      "so": "FINAL",
+      "te": "CENTRAL",
+      "yk": "FINAL",
+      "ta": "CENTRAL",
+      "kch": "CENTRAL",
+      "do": "FINAL",
+      "ar": "INITIAL"
+    },
+    "ltr_positions": {
+      "sh": 0.4151,
+      "ot": 0.5805,
+      "qo": 0.4787,
+      "da": 0.4973,
+      "ok": 0.5251,
+      "BARE": 0.5587,
+      "ch": 0.5004,
+      "ke": 0.4899,
+      "pch": 0.3756,
+      "tch": 0.2756,
+      "sa": 0.3314,
+      "lsh": 0.4241,
+      "lk": 0.5363,
+      "ol": 0.5776,
+      "lch": 0.5229,
+      "ka": 0.5213,
+      "or": 0.6531,
+      "so": 0.1577,
+      "te": 0.4516,
+      "yk": 0.4426,
+      "ta": 0.4609,
+      "kch": 0.4671,
+      "do": 0.4234,
+      "ar": 0.8216
+    },
+    "rtl_positions": {
+      "sh": 0.5849,
+      "ot": 0.4195,
+      "qo": 0.5213,
+      "da": 0.5027,
+      "ok": 0.4749,
+      "BARE": 0.4413,
+      "ch": 0.4996,
+      "ke": 0.5101,
+      "pch": 0.6244,
+      "tch": 0.7244,
+      "sa": 0.6686,
+      "lsh": 0.5759,
+      "lk": 0.4637,
+      "ol": 0.4224,
+      "lch": 0.4771,
+      "ka": 0.4787,
+      "or": 0.3469,
+      "so": 0.8423,
+      "te": 0.5484,
+      "yk": 0.5574,
+      "ta": 0.5391,
+      "kch": 0.5329,
+      "do": 0.5766,
+      "ar": 0.1784
+    },
+    "ltr_interpretive_score": 7,
+    "rtl_interpretive_score": 0,
+    "verdict": "LTR_MORE_COHERENT"
+  },
+  "t4": {
+    "ltr": {
+      "spectral_gap_49": 0.7937,
+      "spectral_gap_6": 0.8956,
+      "top_5_eigenvalues": [
+        1.0,
+        0.2063,
+        0.1341,
+        0.0882,
+        0.0811
+      ],
+      "stationary_6": {
+        "AXM": 0.6893,
+        "AXm": 0.0295,
+        "FL_HAZ": 0.0559,
+        "FQ": 0.176,
+        "CC": 0.0462,
+        "FL_SAFE": 0.0032
+      },
+      "transition_matrix_6": {
+        "AXM": {
+          "AXM": 0.6973,
+          "AXm": 0.0285,
+          "FL_HAZ": 0.0519,
+          "FQ": 0.173,
+          "CC": 0.0418,
+          "FL_SAFE": 0.0075
+        },
+        "AXm": {
+          "AXM": 0.6816,
+          "AXm": 0.0249,
+          "FL_HAZ": 0.0622,
+          "FQ": 0.1891,
+          "CC": 0.0323,
+          "FL_SAFE": 0.01
+        },
+        "FL_HAZ": {
+          "AXM": 0.5649,
+          "AXm": 0.0262,
+          "FL_HAZ": 0.1062,
+          "FQ": 0.2385,
+          "CC": 0.0485,
+          "FL_SAFE": 0.0157
+        },
+        "FQ": {
+          "AXM": 0.5914,
+          "AXm": 0.0333,
+          "FL_HAZ": 0.0733,
+          "FQ": 0.2499,
+          "CC": 0.0433,
+          "FL_SAFE": 0.0087
+        },
+        "CC": {
+          "AXM": 0.6719,
+          "AXm": 0.0333,
+          "FL_HAZ": 0.0697,
+          "FQ": 0.1759,
+          "CC": 0.0412,
+          "FL_SAFE": 0.0079
+        },
+        "FL_SAFE": {
+          "AXM": 0.6977,
+          "AXm": 0.0233,
+          "FL_HAZ": 0.0698,
+          "FQ": 0.093,
+          "CC": 0.093,
+          "FL_SAFE": 0.0233
+        }
+      }
+    },
+    "rtl": {
+      "spectral_gap_49": 0.7997,
+      "spectral_gap_6": 0.8989,
+      "top_5_eigenvalues": [
+        1.0,
+        0.2003,
+        0.1334,
+        0.0772,
+        0.0772
+      ],
+      "stationary_6": {
+        "AXM": 0.6696,
+        "AXm": 0.0293,
+        "FL_HAZ": 0.0599,
+        "FQ": 0.1905,
+        "CC": 0.0423,
+        "FL_SAFE": 0.0084
+      },
+      "transition_matrix_6": {
+        "AXM": {
+          "AXM": 0.7177,
+          "AXm": 0.03,
+          "FL_HAZ": 0.0472,
+          "FQ": 0.1554,
+          "CC": 0.0464,
+          "FL_SAFE": 0.0033
+        },
+        "AXm": {
+          "AXM": 0.67,
+          "AXm": 0.025,
+          "FL_HAZ": 0.05,
+          "FQ": 0.2,
+          "CC": 0.0525,
+          "FL_SAFE": 0.0025
+        },
+        "FL_HAZ": {
+          "AXM": 0.5973,
+          "AXm": 0.0306,
+          "FL_HAZ": 0.0991,
+          "FQ": 0.2154,
+          "CC": 0.0539,
+          "FL_SAFE": 0.0037
+        },
+        "FQ": {
+          "AXM": 0.6258,
+          "AXm": 0.0292,
+          "FL_HAZ": 0.07,
+          "FQ": 0.2308,
+          "CC": 0.0427,
+          "FL_SAFE": 0.0015
+        },
+        "CC": {
+          "AXM": 0.6811,
+          "AXm": 0.0225,
+          "FL_HAZ": 0.0641,
+          "FQ": 0.1802,
+          "CC": 0.0451,
+          "FL_SAFE": 0.0069
+        },
+        "FL_SAFE": {
+          "AXM": 0.6228,
+          "AXm": 0.0351,
+          "FL_HAZ": 0.1053,
+          "FQ": 0.1842,
+          "CC": 0.0439,
+          "FL_SAFE": 0.0088
+        }
+      }
+    },
+    "spectral_gap_diff_6": 0.0033,
+    "stationary_l1_diff": 0.0475,
+    "verdict": "WEAKLY_SENSITIVE"
+  },
+  "t5": {
+    "quintile_entropy": {
+      "0": 4.843,
+      "1": 4.6859,
+      "2": 4.7372,
+      "3": 4.7854,
+      "4": 4.9829
+    },
+    "cond_fwd_entropy": {
+      "0": 3.906,
+      "1": 4.1532,
+      "2": 4.1933,
+      "3": 4.2246,
+      "4": 4.5387
+    },
+    "cond_bwd_entropy": {
+      "0": 4.3772,
+      "1": 4.1578,
+      "2": 4.1734,
+      "3": 4.2116,
+      "4": 4.0663
+    },
+    "spearman_rho": 0.4,
+    "spearman_p": 0.5046,
+    "monotonic_decrease": false,
+    "monotonic_increase": false,
+    "u_shaped": false,
+    "inverted_u": false,
+    "verdict": "NO_CLEAR_PATTERN"
+  },
+  "t6": {
+    "cc_mean_positions": {
+      "10": 0.4,
+      "11": 0.5087
+    },
+    "cc_to_next_ltr": {
+      "AXM": 424,
+      "FQ": 111,
+      "FL_HAZ": 44,
+      "CC": 26,
+      "AXm": 21,
+      "FL_SAFE": 5
+    },
+    "prev_to_cc_ltr": {
+      "AXM": 393,
+      "FQ": 104,
+      "FL_HAZ": 37,
+      "CC": 26,
+      "AXm": 13,
+      "FL_SAFE": 4
+    },
+    "cc_to_axm_ltr": 0.6719,
+    "cc_to_axm_rtl": 0.6811,
+    "cc_initial": 158,
+    "cc_final": 104,
+    "cc_total": 735,
+    "verdict": "CC_BOUNDARY_LEFT"
+  },
+  "t7": {
+    "universal_pct": {
+      "0": 80.72,
+      "1": 82.73,
+      "2": 81.91,
+      "3": 82.61,
+      "4": 84.64
+    },
+    "rare_pct": {
+      "0": 6.12,
+      "1": 5.01,
+      "2": 5.14,
+      "3": 5.09,
+      "4": 3.91
+    },
+    "quintile_totals": {
+      "0": 3678,
+      "1": 3213,
+      "2": 2935,
+      "3": 3082,
+      "4": 2688
+    },
+    "rho_universal": 0.7,
+    "p_universal": 0.1881,
+    "rho_rare": -0.7,
+    "p_rare": 0.1881,
+    "n_universal_middles": 20,
+    "n_rare_middles": 48,
+    "verdict": "LTR_SPEC_TO_EXEC"
+  },
+  "combined": {
+    "votes": {
+      "LTR": 5,
+      "RTL": 0,
+      "NEUTRAL": 2,
+      "BOUNDARY_INWARD": 0
+    },
+    "overall_verdict": "DIRECTION_CONFIRMED_LTR",
+    "per_test_verdicts": {
+      "T1_forbidden": "NEUTRAL_HIGH_OVERLAP",
+      "T2_mi_asymmetry": "LTR_FORWARD_BIASED",
+      "T3_prefix_coherence": "LTR_MORE_COHERENT",
+      "T4_spectral": "WEAKLY_SENSITIVE",
+      "T5_entropy_profile": "NO_CLEAR_PATTERN",
+      "T6_cc_role": "CC_BOUNDARY_LEFT",
+      "T7_vocabulary_gradient": "LTR_SPEC_TO_EXEC"
+    }
+  }
+}
