@@ -27,7 +27,7 @@ Spatial tests showed no significant structure:
 
 ## Implication
 
-The Rosettes foldout vocabularies all sample from the same shared pool, concentrated in Section T folios. Individual rosettes do not discriminate specific B folios or topics. The foldout functions more as a shared vocabulary hub for pharmaceutical content than as a specific lookup table mapping rosettes to target folios.
+The Rosettes foldout vocabularies all sample from the same shared pool, concentrated in vocabulary-rich folios (primarily Section S; see C1133 for per-folio decomposition). Individual rosettes do not discriminate specific B folios or topics. The foldout functions as a shared general-purpose vocabulary hub, not as a specific lookup table mapping rosettes to target folios.
 
 ## Provenance
 

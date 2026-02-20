@@ -34,7 +34,7 @@ The correlation is unanimous: 9/9 rosettes select Section T.
 
 ## Implication
 
-The Rosettes foldout functions as an index into the pharmaceutical section, not a general-purpose index into the full manuscript. CENTER rosette has strongest T correlation (0.183), consistent with its central organizational role.
+The section-level T correlation is a vocabulary-size artifact (C1133). The Rosettes foldout functions as a general-purpose vocabulary reference hub that indexes diverse, vocabulary-rich folios (primarily Section S), not Section T specifically. CENTER rosette has strongest T correlation (0.183) at the section level, but this is driven by T's small union denominator.
 
 ## Provenance
 

@@ -2858,7 +2858,7 @@ Rosettes foldout revalidated from scratch using corrected ZL transcription data 
 | # | Statement | Tier | Scope | Location |
 |---|-----------|------|-------|----------|
 | **1124** | **Rosettes Bridge Enrichment (Revalidated)** (3.05x enrichment: 21.5% bridge MIDDLEs vs 7.0% B baseline; universal across entity types — ring 4.56x, inner_label 4.74x, outer_label 5.17x, spiral 3.55x, clock 7.11x; no type below 25%) | 2 | Rosettes | -> [C1124_rosettes_bridge_enrichment_v2.md](C1124_rosettes_bridge_enrichment_v2.md) |
-| **1125** | **Rosettes Universal Section T Correlation** (all 9 rosettes correlate most strongly with Section T; Jaccard 0.083-0.183, consistently 2-3x higher than next-best section; foldout functions as pharmaceutical section index) | 2 | Rosettes | -> [C1125_rosettes_section_t_universal.md](C1125_rosettes_section_t_universal.md) |
+| **1125** | **Rosettes Universal Section T Correlation** (all 9 rosettes correlate most strongly with Section T; Jaccard 0.083-0.183, consistently 2-3x higher than next-best section; section-level correlation is vocabulary-size artifact per C1133; foldout is general-purpose vocabulary hub) | 2 | Rosettes | -> [C1125_rosettes_section_t_universal.md](C1125_rosettes_section_t_universal.md) |
 | **1126** | **Rosettes Metalayer Status (Revalidated)** (confirmed metalayer: AZC-like entity types, 3.05x bridge enrichment, universal Section T indexing, 2.2x MIDDLE compatibility; verdict ROSETTES_CONFIRMED_METALAYER) | 2 | Rosettes | -> [C1126_rosettes_metalayer_confirmed.md](C1126_rosettes_metalayer_confirmed.md) |
 | **1127** | **Rosettes AZC-Like Grammar Profile** (grammar coverage 42.0%, kernel density 29-41%, LINK density <2.1% except ring 4.2%; morphological cosine 0.49-0.82 with AZC vs 0.25-0.67 with B; PP ~50%, RI ~2%; consistently AZC-like not hybrid) | 2 | Rosettes | -> [C1127_rosettes_azc_like_grammar.md](C1127_rosettes_azc_like_grammar.md) |
 | **1128** | **Rosettes Generic (Not Specific) Indexing** (mean inter-rosette Jaccard of top-5 B folio sets = 0.322; f40v in top-5 for 8/9 rosettes; path tokens do not bridge endpoints; no spatial gradient; foldout is shared vocabulary hub not specific lookup table) | 2 | Rosettes | -> [C1128_rosettes_generic_indexing.md](C1128_rosettes_generic_indexing.md) |
@@ -2868,7 +2868,7 @@ Rosettes foldout revalidated from scratch using corrected ZL transcription data 
 - Tier 1 (System Classification): All entity types classify as AZC-like — grammar coverage ~42%, kernel density 29-41%, zero B-forbidden violations, morphological profiles closest to AZC
 - Tier 2 (Cross-Reference): Bridge enrichment 3.05x, all 9 rosettes → Section T, generic indexing (all rosettes target same B folios)
 - Tier 3 (Spatial): Path bridging and adjacency gradient tests inconclusive (sparse tokens per entity)
-- Overall verdict: ROSETTES_CONFIRMED_METALAYER — organizational layer above A/B/AZC systems indexing pharmaceutical content
+- Overall verdict: ROSETTES_CONFIRMED_METALAYER — organizational layer above A/B/AZC systems; general-purpose vocabulary hub (C1133: Section T correlation is vocabulary-size artifact)
 
 ---
 

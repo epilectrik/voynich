@@ -13,7 +13,7 @@ The Rosettes foldout is confirmed as a **metalayer** structure — an organizati
 Evidence from 13-test battery:
 - **Multi-system entity types** (Tier 1): Entity types classify as AZC-like across all metrics (morphological profiles, kernel density, grammar coverage), with no entity type reaching B classification
 - **Bridge enrichment** (X1): 3.05x, confirming vocabulary-mediated connection to B corpus
-- **Section T indexing** (X2): All 9 rosettes correlate with pharmaceutical section
+- **Section T indexing** (X2): All 9 rosettes correlate with Section T at section level (but see C1133: vocabulary-size artifact)
 - **MIDDLE compatibility** (X4): 9.6% pairwise compatibility (2.2x B corpus baseline of 4.3%)
 
 Overall verdict from combined framework: ROSETTES_CONFIRMED_METALAYER
@@ -26,7 +26,7 @@ Overall verdict from combined framework: ROSETTES_CONFIRMED_METALAYER
 
 ## Implication
 
-The Rosettes foldout is not a standard B program page, not a standard AZC positional page, but a meta-structural element that organizes and indexes the manuscript's pharmaceutical content through bridge vocabulary.
+The Rosettes foldout is not a standard B program page, not a standard AZC positional page, but a meta-structural element that organizes and indexes the manuscript's control vocabulary through bridge MIDDLEs. The foldout is a general-purpose vocabulary reference hub (C1133), not a pharmaceutical-specific index.
 
 ## Provenance
 
