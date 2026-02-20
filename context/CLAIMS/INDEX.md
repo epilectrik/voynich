@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 987 validated constraints | **Version:** 4.10 | **Date:** 2026-02-20
+**Total:** 993 validated constraints | **Version:** 4.10 | **Date:** 2026-02-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2991,6 +2991,29 @@ Verifies the 404 PP MIDDLE partition and decomposes dark-pipeline compound MIDDL
 - Test 3: OVERLAPPING_POOLS -- Jaccard(grammar,dark)=0.481; 25 shared, 25 dark-exclusive atoms
 - Test 4: ATOM_SECTION_INDEPENDENT -- permutation p=0.303; section concentration not atom-driven
 - Test 5: MODIFIED_GRAMMAR -- 50% agreement with C1065 pairs; gateway/terminal positioning preserved
+
+---
+
+### Dark Pipeline Internal Architecture (C1143-C1148) -- Phase: DARK_PIPELINE_INTERNAL_ARCHITECTURE (Phase 409)
+
+Probes the internal structure of the 300 dark-pipeline MIDDLEs. 6-test battery: atom characterization, ordering divergence source, slot grammar, folio density regression, line position, frequency modulation decomposition.
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1143** | **Dark-Exclusive and Shared Atoms Have Equivalent Section Profiles** (25 dark-exc vs 25 shared: MW U z=1.61, p=0.107; dark-exc rarer (15.2 vs 41.5 freq) and less spread (11.4 vs 22.1 folios) but same section Herfindahl) | 2 | B morphology | -> [C1143_dark_exclusive_atom_equivalence.md](C1143_dark_exclusive_atom_equivalence.md) |
+| **1144** | **Dark Pipeline Ordering Divergence Is Genuine Grammar Modification** (Fisher exact on dark-exc presence x match/mismatch: OR=3.33, p=0.592; C1065 mismatches NOT explained by atom pool) | 2 | B morphology | -> [C1144_ordering_divergence_is_grammar_modification.md](C1144_ordering_divergence_is_grammar_modification.md) |
+| **1145** | **Dark-Exclusive and Shared Atoms Occupy Equivalent Positional Slots** (chi-sq=1.74, df=2, p=0.421; INITIAL/MEDIAL/FINAL distribution indistinguishable between atom types in 77 multi-atom compounds) | 2 | B morphology | -> [C1145_atom_slot_uniformity.md](C1145_atom_slot_uniformity.md) |
+| **1146** | **Dark Pipeline Token Density Anti-Correlates with Bridge Tokens** (r=-0.865 overall; within-section r=-0.82 to -0.88 in all 4 sections; section R²=0.193; 80.7% of variance within-section; complementary distribution) | 2 | B, A->B | -> [C1146_dark_pipeline_bridge_anticorrelation.md](C1146_dark_pipeline_bridge_anticorrelation.md) |
+| **1147** | **Dark Pipeline Tokens Are Interior-Enriched Within Lines** (73.2% MIDDLE vs general HT 67.7%; chi-sq=23.2, p<0.0001; boundary rate 26.8% vs HT 32.3%; consistent across par line-1 and body) | 2 | B, line structure | -> [C1147_dark_pipeline_interior_positioned.md](C1147_dark_pipeline_interior_positioned.md) |
+| **1148** | **Dark Pipeline Frequency Profiles Are Hyper-Modulated Across Sections** (mean JS=0.483, 3.9x C1134 baseline of 0.124; dark pipeline is primary vehicle for section-level vocabulary modulation) | 2 | B, section differentiation | -> [C1148_dark_pipeline_hyper_modulated.md](C1148_dark_pipeline_hyper_modulated.md) |
+
+**Phase 409 findings (Dark Pipeline Internal Architecture):**
+- Test 1: EQUIVALENT -- dark-exc and shared atoms same section concentration (MW p=0.107)
+- Test 2: GRAMMAR_MODIFICATION -- C1065 mismatches not atom-pool driven (Fisher p=0.592)
+- Test 3: SLOT_UNIFORM -- both atom types occupy same INITIAL/MEDIAL/FINAL slots (chi-sq p=0.421)
+- Test 4: HT_COVARIATE -- dark-bridge anti-correlation r=-0.865; section R²=0.193
+- Test 5: INTERIOR_ENRICHED -- 73.2% MIDDLE vs HT 67.7% (chi-sq p<0.0001)
+- Test 6: HYPER_MODULATED -- mean JS=0.483, 3.9x C1134 baseline
 
 ---
 

@@ -234,7 +234,10 @@ cross_system_manifestation:
     strategy_prediction: "r=+0.46 CAUTIOUS, r=-0.48 OPPORTUNISTIC (C488)"
     morphology_b: "-edy complex forms favored (C347, C348)"
     dark_pipeline_substrate: "300 dark-pipeline PP MIDDLEs produce exclusively HT/UN tokens (1,696 tokens, 0 grammar) — identification vocabulary channel distinct from grammar channel (C1137, C1138)"
-    provenance: "C341, C342, C348, C413, C488, C796, C797, C798, C800, C802, C806, C812, C1137, C1138"
+    dark_pipeline_line_position: "Dark-pipeline HT tokens are interior-enriched (73.2% MIDDLE vs general HT 67.7%, chi-sq p<0.0001) — fills line interior rather than anchoring boundaries (C1147)"
+    dark_pipeline_modulation: "Dark-pipeline MIDDLEs are 3.9x more section-differentiated than PP baseline (JS=0.483 vs 0.124); primary vehicle for section-level HT vocabulary modulation (C1148)"
+    dark_bridge_tradeoff: "Dark-pipeline and bridge token rates anti-correlate (r=-0.865, within-section r=-0.82 to -0.88); folios allocate between identification and grammar channels (C1146)"
+    provenance: "C341, C342, C348, C413, C488, C796, C797, C798, C800, C802, C806, C812, C1137, C1138, C1146, C1147, C1148"
 
   azc:
     anchoring: "Diagram geometry"
@@ -498,6 +501,12 @@ provenance:
       - {id: "C1138", topic: "Dark pipeline distinct construction grammar"}
       - {id: "C1141", topic: "Bridge atom substrate (86% types, 96.5% coverage)"}
       - {id: "C1142", topic: "Modified atom ordering (50% C1065 agreement)"}
+      - {id: "C1143", topic: "Dark-exclusive atom profile equivalence (MW p=0.107)"}
+      - {id: "C1144", topic: "Ordering divergence is genuine grammar modification"}
+      - {id: "C1145", topic: "Atom slot uniformity (chi-sq p=0.421)"}
+      - {id: "C1146", topic: "Bridge-dark anti-correlation (r=-0.865)"}
+      - {id: "C1147", topic: "Dark pipeline interior-enriched (73.2% MIDDLE)"}
+      - {id: "C1148", topic: "Dark pipeline hyper-modulated (3.9x JS baseline)"}
     interaction_architecture:
       - {id: "C1078", topic: "Hazard avoidance vocabulary-level, not positional"}
       - {id: "C1079", topic: "Line-1 exclusivity = folio-specificity tautology"}
@@ -530,9 +539,9 @@ provenance:
       - {id: "C171", topic: "Closed-loop only verdict (B grammar)"}
       - {id: "C841", topic: "Paragraph gallows-initial markers (paragraph structure)"}
 
-  total_owned: 78
+  total_owned: 84
   total_referenced: 14
-  total_coverage: 92
+  total_coverage: 98
 
 # ============================================================
 # Summary statement

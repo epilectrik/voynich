@@ -1,0 +1,820 @@
+{
+  "test1": {
+    "dark_exclusive_summary": {
+      "n_atoms": 25,
+      "n_observed": 25,
+      "mean_char_length": 2.8,
+      "mean_b_token_freq": 15.24,
+      "mean_folio_spread": 11.36,
+      "mean_section_herf": 0.6277
+    },
+    "shared_summary": {
+      "n_atoms": 25,
+      "n_observed": 25,
+      "mean_char_length": 2.24,
+      "mean_b_token_freq": 41.48,
+      "mean_folio_spread": 22.12,
+      "mean_section_herf": 0.4609
+    },
+    "dark_exclusive_profiles": [
+      {
+        "atom": "aiin",
+        "char_length": 4,
+        "b_token_freq": 1,
+        "folio_spread": 1,
+        "section_herf": 1.0,
+        "dominant_section": "C"
+      },
+      {
+        "atom": "ain",
+        "char_length": 3,
+        "b_token_freq": 1,
+        "folio_spread": 1,
+        "section_herf": 1.0,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "al",
+        "char_length": 2,
+        "b_token_freq": 34,
+        "folio_spread": 25,
+        "section_herf": 0.3287,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "am",
+        "char_length": 2,
+        "b_token_freq": 1,
+        "folio_spread": 1,
+        "section_herf": 1.0,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "ar",
+        "char_length": 2,
+        "b_token_freq": 9,
+        "folio_spread": 9,
+        "section_herf": 0.3827,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "ckh",
+        "char_length": 3,
+        "b_token_freq": 62,
+        "folio_spread": 40,
+        "section_herf": 0.3564,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "cph",
+        "char_length": 3,
+        "b_token_freq": 12,
+        "folio_spread": 12,
+        "section_herf": 0.4167,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "cth",
+        "char_length": 3,
+        "b_token_freq": 40,
+        "folio_spread": 26,
+        "section_herf": 0.2863,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "ech",
+        "char_length": 3,
+        "b_token_freq": 3,
+        "folio_spread": 3,
+        "section_herf": 1.0,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "eck",
+        "char_length": 3,
+        "b_token_freq": 32,
+        "folio_spread": 19,
+        "section_herf": 0.4062,
+        "dominant_section": "B"
+      },
+      {
+        "atom": "ect",
+        "char_length": 3,
+        "b_token_freq": 13,
+        "folio_spread": 9,
+        "section_herf": 0.3846,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "eek",
+        "char_length": 3,
+        "b_token_freq": 1,
+        "folio_spread": 1,
+        "section_herf": 1.0,
+        "dominant_section": "H"
+      },
+      {
+        "atom": "eey",
+        "char_length": 3,
+        "b_token_freq": 1,
+        "folio_spread": 1,
+        "section_herf": 1.0,
+        "dominant_section": "B"
+      },
+      {
+        "atom": "eod",
+        "char_length": 3,
+        "b_token_freq": 22,
+        "folio_spread": 19,
+        "section_herf": 0.4669,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "eok",
+        "char_length": 3,
+        "b_token_freq": 5,
+        "folio_spread": 4,
+        "section_herf": 0.68,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "et",
+        "char_length": 2,
+        "b_token_freq": 28,
+        "folio_spread": 20,
+        "section_herf": 0.3163,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "kch",
+        "char_length": 3,
+        "b_token_freq": 23,
+        "folio_spread": 15,
+        "section_herf": 0.5766,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "keeo",
+        "char_length": 4,
+        "b_token_freq": 1,
+        "folio_spread": 1,
+        "section_herf": 1.0,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "lch",
+        "char_length": 3,
+        "b_token_freq": 24,
+        "folio_spread": 19,
+        "section_herf": 0.4201,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "lk",
+        "char_length": 2,
+        "b_token_freq": 27,
+        "folio_spread": 22,
+        "section_herf": 0.3855,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "lo",
+        "char_length": 2,
+        "b_token_freq": 9,
+        "folio_spread": 9,
+        "section_herf": 0.4074,
+        "dominant_section": "B"
+      },
+      {
+        "atom": "ly",
+        "char_length": 2,
+        "b_token_freq": 1,
+        "folio_spread": 1,
+        "section_herf": 1.0,
+        "dominant_section": "B"
+      },
+      {
+        "atom": "olk",
+        "char_length": 3,
+        "b_token_freq": 12,
+        "folio_spread": 9,
+        "section_herf": 0.7083,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "opch",
+        "char_length": 4,
+        "b_token_freq": 9,
+        "folio_spread": 8,
+        "section_herf": 0.6296,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "or",
+        "char_length": 2,
+        "b_token_freq": 10,
+        "folio_spread": 9,
+        "section_herf": 0.54,
+        "dominant_section": "S"
+      }
+    ],
+    "shared_profiles": [
+      {
+        "atom": "ai",
+        "char_length": 2,
+        "b_token_freq": 84,
+        "folio_spread": 45,
+        "section_herf": 0.4101,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "aii",
+        "char_length": 3,
+        "b_token_freq": 5,
+        "folio_spread": 5,
+        "section_herf": 0.68,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "ck",
+        "char_length": 2,
+        "b_token_freq": 9,
+        "folio_spread": 8,
+        "section_herf": 0.4321,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "ct",
+        "char_length": 2,
+        "b_token_freq": 54,
+        "folio_spread": 37,
+        "section_herf": 0.2647,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "dy",
+        "char_length": 2,
+        "b_token_freq": 12,
+        "folio_spread": 11,
+        "section_herf": 0.2917,
+        "dominant_section": "H"
+      },
+      {
+        "atom": "ed",
+        "char_length": 2,
+        "b_token_freq": 95,
+        "folio_spread": 38,
+        "section_herf": 0.5929,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "ee",
+        "char_length": 2,
+        "b_token_freq": 195,
+        "folio_spread": 55,
+        "section_herf": 0.5117,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "eeo",
+        "char_length": 3,
+        "b_token_freq": 40,
+        "folio_spread": 22,
+        "section_herf": 0.5237,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "ek",
+        "char_length": 2,
+        "b_token_freq": 39,
+        "folio_spread": 27,
+        "section_herf": 0.3189,
+        "dominant_section": "H"
+      },
+      {
+        "atom": "eo",
+        "char_length": 2,
+        "b_token_freq": 113,
+        "folio_spread": 41,
+        "section_herf": 0.5253,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "eol",
+        "char_length": 3,
+        "b_token_freq": 6,
+        "folio_spread": 6,
+        "section_herf": 0.3889,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "ey",
+        "char_length": 2,
+        "b_token_freq": 11,
+        "folio_spread": 10,
+        "section_herf": 0.3884,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "in",
+        "char_length": 2,
+        "b_token_freq": 7,
+        "folio_spread": 7,
+        "section_herf": 0.5102,
+        "dominant_section": "B"
+      },
+      {
+        "atom": "ka",
+        "char_length": 2,
+        "b_token_freq": 17,
+        "folio_spread": 15,
+        "section_herf": 0.2734,
+        "dominant_section": "H"
+      },
+      {
+        "atom": "kc",
+        "char_length": 2,
+        "b_token_freq": 5,
+        "folio_spread": 5,
+        "section_herf": 0.36,
+        "dominant_section": "H"
+      },
+      {
+        "atom": "ke",
+        "char_length": 2,
+        "b_token_freq": 76,
+        "folio_spread": 40,
+        "section_herf": 0.49,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "kee",
+        "char_length": 3,
+        "b_token_freq": 6,
+        "folio_spread": 6,
+        "section_herf": 0.7222,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "od",
+        "char_length": 2,
+        "b_token_freq": 43,
+        "folio_spread": 28,
+        "section_herf": 0.3607,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "ok",
+        "char_length": 2,
+        "b_token_freq": 61,
+        "folio_spread": 37,
+        "section_herf": 0.463,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "ol",
+        "char_length": 2,
+        "b_token_freq": 62,
+        "folio_spread": 41,
+        "section_herf": 0.3382,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "op",
+        "char_length": 2,
+        "b_token_freq": 8,
+        "folio_spread": 6,
+        "section_herf": 0.5938,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "ot",
+        "char_length": 2,
+        "b_token_freq": 28,
+        "folio_spread": 20,
+        "section_herf": 0.6403,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "pch",
+        "char_length": 3,
+        "b_token_freq": 15,
+        "folio_spread": 11,
+        "section_herf": 0.44,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "tch",
+        "char_length": 3,
+        "b_token_freq": 27,
+        "folio_spread": 16,
+        "section_herf": 0.5007,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "te",
+        "char_length": 2,
+        "b_token_freq": 19,
+        "folio_spread": 16,
+        "section_herf": 0.5014,
+        "dominant_section": "S"
+      }
+    ],
+    "mann_whitney": {
+      "U": 395.5,
+      "z": 1.6104,
+      "p": 0.1073,
+      "nx": 25,
+      "ny": 25
+    },
+    "verdict": "EQUIVALENT"
+  },
+  "test2": {
+    "contingency_table": {
+      "match_with_dark_exc": 5,
+      "match_without_dark_exc": 2,
+      "mismatch_with_dark_exc": 3,
+      "mismatch_without_dark_exc": 4
+    },
+    "total_tested": 14,
+    "fisher_exact": {
+      "odds_ratio": 3.3333,
+      "p": 0.5921
+    },
+    "pair_analysis": [
+      {
+        "first": "al",
+        "second": "lo",
+        "status": "MATCH",
+        "has_dark_exclusive": true,
+        "first_is_dark_exc": true,
+        "second_is_dark_exc": true
+      },
+      {
+        "first": "ek",
+        "second": "ke",
+        "status": "MATCH",
+        "has_dark_exclusive": false,
+        "first_is_dark_exc": false,
+        "second_is_dark_exc": false
+      },
+      {
+        "first": "ai",
+        "second": "ka",
+        "status": "MISMATCH",
+        "has_dark_exclusive": false,
+        "first_is_dark_exc": false,
+        "second_is_dark_exc": false
+      },
+      {
+        "first": "al",
+        "second": "lch",
+        "status": "MATCH",
+        "has_dark_exclusive": true,
+        "first_is_dark_exc": true,
+        "second_is_dark_exc": true
+      },
+      {
+        "first": "eeo",
+        "second": "te",
+        "status": "MISMATCH",
+        "has_dark_exclusive": false,
+        "first_is_dark_exc": false,
+        "second_is_dark_exc": false
+      },
+      {
+        "first": "ee",
+        "second": "et",
+        "status": "MATCH",
+        "has_dark_exclusive": true,
+        "first_is_dark_exc": false,
+        "second_is_dark_exc": true
+      },
+      {
+        "first": "eol",
+        "second": "olk",
+        "status": "MATCH",
+        "has_dark_exclusive": true,
+        "first_is_dark_exc": false,
+        "second_is_dark_exc": true
+      },
+      {
+        "first": "ke",
+        "second": "ok",
+        "status": "MISMATCH",
+        "has_dark_exclusive": false,
+        "first_is_dark_exc": false,
+        "second_is_dark_exc": false
+      },
+      {
+        "first": "eeo",
+        "second": "eod",
+        "status": "MATCH",
+        "has_dark_exclusive": true,
+        "first_is_dark_exc": false,
+        "second_is_dark_exc": true
+      },
+      {
+        "first": "eo",
+        "second": "ke",
+        "status": "MISMATCH",
+        "has_dark_exclusive": false,
+        "first_is_dark_exc": false,
+        "second_is_dark_exc": false
+      },
+      {
+        "first": "lch",
+        "second": "ol",
+        "status": "MISMATCH",
+        "has_dark_exclusive": true,
+        "first_is_dark_exc": true,
+        "second_is_dark_exc": false
+      },
+      {
+        "first": "ckh",
+        "second": "eck",
+        "status": "MISMATCH",
+        "has_dark_exclusive": true,
+        "first_is_dark_exc": true,
+        "second_is_dark_exc": true
+      },
+      {
+        "first": "eo",
+        "second": "ot",
+        "status": "MATCH",
+        "has_dark_exclusive": false,
+        "first_is_dark_exc": false,
+        "second_is_dark_exc": false
+      },
+      {
+        "first": "al",
+        "second": "ka",
+        "status": "MISMATCH",
+        "has_dark_exclusive": true,
+        "first_is_dark_exc": true,
+        "second_is_dark_exc": false
+      }
+    ],
+    "verdict": "GRAMMAR_MODIFICATION"
+  },
+  "test3": {
+    "n_multi_atom_compounds": 77,
+    "dark_exclusive_positions": {
+      "INITIAL": 21,
+      "FINAL": 28,
+      "MEDIAL": 4
+    },
+    "shared_positions": {
+      "INITIAL": 56,
+      "FINAL": 49,
+      "MEDIAL": 6
+    },
+    "dark_exclusive_rates": {
+      "INITIAL": 0.3962,
+      "MEDIAL": 0.0755,
+      "FINAL": 0.5283
+    },
+    "shared_rates": {
+      "INITIAL": 0.5045,
+      "MEDIAL": 0.0541,
+      "FINAL": 0.4414
+    },
+    "observed_table": [
+      [
+        21,
+        4,
+        28
+      ],
+      [
+        56,
+        6,
+        49
+      ]
+    ],
+    "chi_square": {
+      "chi2": 1.7421,
+      "df": 2,
+      "p": 0.4214
+    },
+    "verdict": "SLOT_UNIFORM"
+  },
+  "test4": {
+    "n_folios": 82,
+    "grand_mean_dark_rate": 0.074,
+    "section_r2": 0.1929,
+    "section_means": {
+      "S": 0.0821,
+      "H": 0.0751,
+      "T": 0.1118,
+      "B": 0.0567,
+      "C": 0.0847
+    },
+    "section_counts": {
+      "S": 23,
+      "H": 32,
+      "T": 2,
+      "B": 20,
+      "C": 5
+    },
+    "ss_total": 0.057,
+    "ss_between": 0.011,
+    "ss_within": 0.046,
+    "within_fraction": 0.8071,
+    "overall_corr_dark_ht": 0.7152,
+    "overall_corr_dark_bridge": -0.8651,
+    "within_section_correlations": {
+      "B": {
+        "n": 20,
+        "dark_ht_r": 0.5859,
+        "dark_bridge_r": -0.8803
+      },
+      "C": {
+        "n": 5,
+        "dark_ht_r": 0.8188,
+        "dark_bridge_r": -0.835
+      },
+      "H": {
+        "n": 32,
+        "dark_ht_r": 0.6232,
+        "dark_bridge_r": -0.8187
+      },
+      "S": {
+        "n": 23,
+        "dark_ht_r": 0.7817,
+        "dark_bridge_r": -0.8676
+      }
+    },
+    "verdict": "HT_COVARIATE"
+  },
+  "test5": {
+    "dark_position_counts": {
+      "FIRST": 260,
+      "MIDDLE": 1241,
+      "LAST": 195
+    },
+    "general_ht_position_counts": {
+      "MIDDLE": 3618,
+      "LAST": 848,
+      "FIRST": 880
+    },
+    "grammar_position_counts": {
+      "MIDDLE": 13403,
+      "FIRST": 1280,
+      "LAST": 1371
+    },
+    "dark_rates": {
+      "FIRST": 0.1533,
+      "MIDDLE": 0.7317,
+      "LAST": 0.115
+    },
+    "general_ht_rates": {
+      "FIRST": 0.1646,
+      "MIDDLE": 0.6768,
+      "LAST": 0.1586
+    },
+    "grammar_rates": {
+      "FIRST": 0.0797,
+      "MIDDLE": 0.8349,
+      "LAST": 0.0854
+    },
+    "dark_total": 1696,
+    "general_ht_total": 5346,
+    "grammar_total": 16054,
+    "dark_boundary_rate": 0.2683,
+    "ht_boundary_rate": 0.3232,
+    "c803_reference": {
+      "FIRST": 0.458,
+      "LAST": 0.429,
+      "MIDDLE": 0.257
+    },
+    "chi_square_dark_vs_ht": {
+      "chi2": 23.2126,
+      "df": 2,
+      "p": 0.0
+    },
+    "chi_square_dark_vs_grammar": {
+      "chi2": 130.6898,
+      "df": 2,
+      "p": 0.0
+    },
+    "stratification": {
+      "dark_par1": {
+        "rates": {
+          "FIRST": 0.1462,
+          "MIDDLE": 0.7658,
+          "LAST": 0.088
+        },
+        "n": 602
+      },
+      "dark_body": {
+        "rates": {
+          "FIRST": 0.1572,
+          "MIDDLE": 0.713,
+          "LAST": 0.1298
+        },
+        "n": 1094
+      },
+      "ht_par1": {
+        "rates": {
+          "FIRST": 0.1824,
+          "MIDDLE": 0.6861,
+          "LAST": 0.1314
+        },
+        "n": 1765
+      },
+      "ht_body": {
+        "rates": {
+          "FIRST": 0.1558,
+          "MIDDLE": 0.6722,
+          "LAST": 0.172
+        },
+        "n": 3581
+      }
+    },
+    "verdict": "INTERIOR_ENRICHED"
+  },
+  "test6": {
+    "sections": [
+      "B",
+      "C",
+      "H",
+      "S",
+      "T"
+    ],
+    "section_stats": {
+      "B": {
+        "n_middles": 110,
+        "n_tokens": 386
+      },
+      "C": {
+        "n_middles": 71,
+        "n_tokens": 120
+      },
+      "H": {
+        "n_middles": 129,
+        "n_tokens": 256
+      },
+      "S": {
+        "n_middles": 237,
+        "n_tokens": 860
+      },
+      "T": {
+        "n_middles": 49,
+        "n_tokens": 74
+      }
+    },
+    "pairwise_js": {
+      "B_vs_C": 0.6191,
+      "B_vs_H": 0.4307,
+      "B_vs_S": 0.3851,
+      "B_vs_T": 0.6187,
+      "C_vs_H": 0.4621,
+      "C_vs_S": 0.4754,
+      "C_vs_T": 0.5554,
+      "H_vs_S": 0.3188,
+      "H_vs_T": 0.4565,
+      "S_vs_T": 0.5095
+    },
+    "mean_js": 0.4831,
+    "c1134_baseline": 0.124,
+    "ratio_to_baseline": 3.8961,
+    "section_herfindahls": {
+      "B": 0.0348,
+      "C": 0.021,
+      "H": 0.0126,
+      "S": 0.0147,
+      "T": 0.0299
+    },
+    "verdict": "HYPER_MODULATED"
+  },
+  "verdicts": {
+    "test1": "EQUIVALENT",
+    "test2": "GRAMMAR_MODIFICATION",
+    "test3": "SLOT_UNIFORM",
+    "test4": "HT_COVARIATE",
+    "test5": "INTERIOR_ENRICHED",
+    "test6": "HYPER_MODULATED",
+    "overall": "HYPER_MODULATED_VARIANT",
+    "summary": "Dark pipeline is a genuine grammar variant with hyper-modulated frequency profiles. Density driver: HT_COVARIATE.",
+    "findings": [
+      "Dark-exclusive and shared atoms have equivalent section concentration.",
+      "C1065 ordering divergence is NOT explained by atom pool — genuine grammar modification.",
+      "Dark-exclusive and shared atoms occupy equivalent positional slots.",
+      "Density driver: HT_COVARIATE.",
+      "Line position: INTERIOR_ENRICHED.",
+      "Frequency modulation: HYPER_MODULATED."
+    ]
+  },
+  "metadata": {
+    "phase": "DARK_PIPELINE_INTERNAL_ARCHITECTURE",
+    "phase_number": 409,
+    "script": "dark_pipeline_internal.py",
+    "n_dark_pipeline": 300,
+    "n_dark_exclusive_atoms": 25,
+    "n_shared_atoms": 25,
+    "n_bridge": 85,
+    "n_folios": 82,
+    "n_b_tokens_scanned": 23096,
+    "n_dark_tokens": 1696
+  }
+}

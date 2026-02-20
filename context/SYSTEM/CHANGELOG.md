@@ -4,6 +4,28 @@
 
 ---
 
+## Version 4.10.19 (2026-02-20) - Phase 409: Dark Pipeline Internal Architecture
+
+### Summary
+
+Phase 409: 6-test battery probing the internal structure of the 300 dark-pipeline MIDDLEs. 6 new constraints (C1143-C1148). Key findings: (1) bridge-dark anti-correlation r=-0.865 — complementary distribution at folio level; (2) 3.9x hyper-modulated frequency profiles vs PP baseline; (3) dark pipeline is genuine grammar variant (ordering divergence not explained by atom pool); (4) dark-pipeline tokens interior-enriched (73.2% MIDDLE vs HT 67.7%).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/DARK_PIPELINE_INTERNAL_ARCHITECTURE/` -- script + results (6-test battery) |
+| **ADDED** | C1143-C1148 constraint files (6 new constraints, 987→993) |
+| **UPDATED** | `currierB.bcsc.yaml` -- bridge_dark_anticorrelation (C1146), modified_ordering expanded (C1143-C1145), line_position (C1147), hyper_modulation (C1148), provenance |
+| **UPDATED** | `humanTrack.htsc.yaml` -- dark_pipeline_line_position/modulation/tradeoff in currier_b, compound_specification +6 constraints, totals 78→84 owned |
+| **UPDATED** | `currierA.casc.yaml` -- bridge_anticorrelation in dark_pipeline, provenance +C1146 |
+| **UPDATED** | `azc_b_activation.act.yaml` -- identification_channel_modulation (C1148), anti-correlation note (C1146) |
+| **UPDATED** | `CLAUDE.md` -- 987→993 constraints, 408→409 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 987→993 constraints |
+| **UPDATED** | `INDEX.md` -- 987→993 total, Phase 409 section added |
+
+---
+
 ## Version 4.10.18 (2026-02-20) - Structural Contract Updates: Phase 406-408 Integration
 
 ### Summary

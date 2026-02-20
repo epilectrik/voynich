@@ -139,7 +139,10 @@ correlation:
       - Identification channel: 300 dark-pipeline PP MIDDLEs produce exclusively
         HT/UN tokens (1,696 tokens, 0 grammar tokens), built from bridge atoms
       Per C1140 four-way partition: 85 bridge + 4 matched + 300 dark pipeline + 15 phantom = 404 PP total.
-    provenance: "C481, C502, C1137, C1140"
+      Channels are anti-correlated at folio level (r=-0.865, C1146): folios
+      invest more in grammar execution OR identification, not both equally.
+    identification_channel_modulation: "Dark-pipeline MIDDLEs are 3.9x more section-differentiated than PP baseline (JS=0.483 vs 0.124); primary vehicle for section-level vocabulary modulation (C1148)"
+    provenance: "C481, C502, C1137, C1140, C1146, C1148"
 
 # ============================================================
 b_reception_architecture:

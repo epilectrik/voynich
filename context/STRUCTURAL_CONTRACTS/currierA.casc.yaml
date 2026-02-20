@@ -555,10 +555,11 @@ participation:
             concentration: "12 A folios cover 100% of B classified grammar; f58v alone at 60.7%"
           bridge_disjoint: "0 shared MIDDLEs with bridge set (C1139)"
           atom_substrate: "Built from bridge atoms (86% of atom types, C1141)"
-          note: "B-side behavioral characterization (C1134 frequency modulation, C1137 HT substrate, C1138 distinct grammar) lives in BCSC"
-          provenance: "C1135, C1136, C1139, C1140, C1141"
+          bridge_anticorrelation: "Folio-level dark-pipeline and bridge token rates anti-correlate (r=-0.865, within-section r=-0.82 to -0.88); complementary distribution across the A->B pipeline (C1146)"
+          note: "B-side behavioral characterization (C1134 frequency modulation, C1137 HT substrate, C1138 distinct grammar, C1147 interior enrichment, C1148 hyper-modulation) lives in BCSC"
+          provenance: "C1135, C1136, C1139, C1140, C1141, C1146"
 
-    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016, C1135, C1136, C1139, C1140, C1141"
+    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016, C1135, C1136, C1139, C1140, C1141, C1146"
 
 # ============================================================
 positional:

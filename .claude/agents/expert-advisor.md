@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 987 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 993 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (987 validated)
+- Tier 0-2 binding constraints (993 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 987 constraints, 66 fits,
+full content in their source documents. All 993 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-20 16:39
-**Version:** FROZEN STATE (987 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-20 17:17
+**Version:** FROZEN STATE (993 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -113,7 +113,7 @@ and 4 structural contracts are complete.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.84 | **Status:** FROZEN | **Constraints:** 987 | **Date:** 2026-02-20
+**Version:** 3.84 | **Status:** FROZEN | **Constraints:** 993 | **Date:** 2026-02-20
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -312,7 +312,7 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 987 |
+| Validated constraints | 993 |
 | Completed phases | 408 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 987 constraints | 2026-02-20
+CONSTRAINT_REFERENCE v2.6 | 993 constraints | 2026-02-20
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2095,6 +2095,12 @@ C1139	**Dark Pipeline and Bridge Backbone Completely Disjoint** (0/300 dark-pipe
 C1140	**PP Pipeline Is a Complete Four-Way Partition** (85 bridge + 4 non-bridge matched + 300 dark pipeline + 15 phantom = 404; exhaustive and mutually exclusive; non-bridge matched are c/ch/cho/otc, AUXILIARY-dominant edge cases; phantoms all ch/sh-prefixed with 0 A tokens)
 C1141	**Dark Pipeline Compounds Built from Bridge Atoms** (86% of atom types are bridge MIDDLEs, 91.6% of occurrences; 96.5% of compounds contain >= 1 bridge atom; 50 unique atoms: 43 BRIDGE, 6 DARK_PIPELINE, 1 OTHER; mean 1.44 atoms/compound)
 C1142	**Dark Pipeline Uses Modified Construction Grammar**
+C1143	**Dark-Exclusive and Shared Atoms Have Equivalent Section Profiles** and less spread (11.4 vs 22.1 folios) but same section Herfindahl)
+C1144	**Dark Pipeline Ordering Divergence Is Genuine Grammar Modification**
+C1145	**Dark-Exclusive and Shared Atoms Occupy Equivalent Positional Slots**
+C1146	**Dark Pipeline Token Density Anti-Correlates with Bridge Tokens** (r=-0.865 overall; within-section r=-0.82 to -0.88 in all 4 sections; section R²=0.193; 80.7% of variance within-section; complementary distribution)
+C1147	**Dark Pipeline Tokens Are Interior-Enriched Within Lines**
+C1148	**Dark Pipeline Frequency Profiles Are Hyper-Modulated Across Sections** (mean JS=0.483, 3.9x C1134 baseline of 0.124; dark pipeline is primary vehicle for section-level vocabulary modulation)
 
 ---
 
@@ -4959,10 +4965,11 @@ participation:
             concentration: "12 A folios cover 100% of B classified grammar; f58v alone at 60.7%"
           bridge_disjoint: "0 shared MIDDLEs with bridge set (C1139)"
           atom_substrate: "Built from bridge atoms (86% of atom types, C1141)"
-          note: "B-side behavioral characterization (C1134 frequency modulation, C1137 HT substrate, C1138 distinct grammar) lives in BCSC"
-          provenance: "C1135, C1136, C1139, C1140, C1141"
+          bridge_anticorrelation: "Folio-level dark-pipeline and bridge token rates anti-correlate (r=-0.865, within-section r=-0.82 to -0.88); complementary distribution across the A->B pipeline (C1146)"
+          note: "B-side behavioral characterization (C1134 frequency modulation, C1137 HT substrate, C1138 distinct grammar, C1147 interior enrichment, C1148 hyper-modulation) lives in BCSC"
+          provenance: "C1135, C1136, C1139, C1140, C1141, C1146"
 
-    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016, C1135, C1136, C1139, C1140, C1141"
+    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016, C1135, C1136, C1139, C1140, C1141, C1146"
 
 positional:
   within_line:
@@ -6274,6 +6281,13 @@ vocabulary_architecture:
     phantom: 15            # A-present, B-absent artifacts (all ch-/sh- prefixed)
     total: 404
     bridge_dark_disjointness: "0 shared MIDDLEs between bridge (85) and dark pipeline (300) — C1139"
+    bridge_dark_anticorrelation:
+      statement: "Dark-pipeline and bridge token rates are strongly anti-correlated at the folio level"
+      overall_r: -0.865
+      within_section_r: "-0.82 to -0.88 (all 4 testable sections)"
+      section_r2: 0.193  # Section identity explains only 19.3% of dark density variance
+      implication: "Complementary distribution: folios invest more in grammar execution (bridge) OR identification (dark pipeline), not both equally"
+      provenance: "C1146"
     dark_pipeline_profile:
       compound_rate: "66.7%"
       section_concentration: "Herf 0.716 (strongly section-specific)"
@@ -6421,12 +6435,29 @@ ht_un_integration:
     modified_ordering:
       statement: "Dark pipeline follows modified version of B's atom ordering grammar (C1065)"
       c1065_agreement: "50% (7 matches, 7 mismatches of 14 testable pairs)"
+      divergence_source: "Genuine grammar modification, NOT atom-pool artifact (Fisher p=0.592, C1144)"
       gateway_terminal_preserved: true
       gateway_mean_position: 0.083  # < 0.15 = INITIAL
       terminal_mean_position: 0.352  # > 0.40 expectation, close
       dark_exclusive_atoms: 25  # Atoms not in grammar compounds
-      provenance: "C1142"
-    provenance: "C1137, C1138, C1141, C1142"
+      atom_equivalence: "Dark-exclusive and shared atoms have equivalent section profiles (MW p=0.107, C1143) and equivalent positional slots (chi-sq p=0.421, C1145)"
+      provenance: "C1142, C1143, C1144, C1145"
+    line_position:
+      statement: "Dark-pipeline tokens preferentially occupy line-interior positions"
+      dark_middle_rate: "73.2%"
+      general_ht_middle_rate: "67.7%"
+      grammar_middle_rate: "83.5%"
+      chi_sq_dark_vs_ht: "23.2 (p < 0.0001)"
+      implication: "Interior-enriched relative to HT but less interior than grammar; identification vocabulary fills line interior"
+      provenance: "C1147"
+    hyper_modulation:
+      statement: "Dark-pipeline MIDDLEs are 3.9x more section-differentiated than PP baseline"
+      dark_mean_js: 0.483
+      pp_baseline_js: 0.124
+      ratio: "3.9x"
+      implication: "Dark pipeline is the primary vehicle for section-level vocabulary modulation"
+      provenance: "C1148"
+    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148"
 
 robustness:
 
@@ -6993,7 +7024,10 @@ correlation:
       - Identification channel: 300 dark-pipeline PP MIDDLEs produce exclusively
         HT/UN tokens (1,696 tokens, 0 grammar tokens), built from bridge atoms
       Per C1140 four-way partition: 85 bridge + 4 matched + 300 dark pipeline + 15 phantom = 404 PP total.
-    provenance: "C481, C502, C1137, C1140"
+      Channels are anti-correlated at folio level (r=-0.865, C1146): folios
+      invest more in grammar execution OR identification, not both equally.
+    identification_channel_modulation: "Dark-pipeline MIDDLEs are 3.9x more section-differentiated than PP baseline (JS=0.483 vs 0.124); primary vehicle for section-level vocabulary modulation (C1148)"
+    provenance: "C481, C502, C1137, C1140, C1146, C1148"
 
 b_reception_architecture:
 
@@ -7316,7 +7350,10 @@ cross_system_manifestation:
     strategy_prediction: "r=+0.46 CAUTIOUS, r=-0.48 OPPORTUNISTIC (C488)"
     morphology_b: "-edy complex forms favored (C347, C348)"
     dark_pipeline_substrate: "300 dark-pipeline PP MIDDLEs produce exclusively HT/UN tokens (1,696 tokens, 0 grammar) — identification vocabulary channel distinct from grammar channel (C1137, C1138)"
-    provenance: "C341, C342, C348, C413, C488, C796, C797, C798, C800, C802, C806, C812, C1137, C1138"
+    dark_pipeline_line_position: "Dark-pipeline HT tokens are interior-enriched (73.2% MIDDLE vs general HT 67.7%, chi-sq p<0.0001) — fills line interior rather than anchoring boundaries (C1147)"
+    dark_pipeline_modulation: "Dark-pipeline MIDDLEs are 3.9x more section-differentiated than PP baseline (JS=0.483 vs 0.124); primary vehicle for section-level HT vocabulary modulation (C1148)"
+    dark_bridge_tradeoff: "Dark-pipeline and bridge token rates anti-correlate (r=-0.865, within-section r=-0.82 to -0.88); folios allocate between identification and grammar channels (C1146)"
+    provenance: "C341, C342, C348, C413, C488, C796, C797, C798, C800, C802, C806, C812, C1137, C1138, C1146, C1147, C1148"
 
   azc:
     anchoring: "Diagram geometry"

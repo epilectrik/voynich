@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 987 constraints | 2026-02-20
+CONSTRAINT_REFERENCE v2.6 | 993 constraints | 2026-02-20
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -991,3 +991,9 @@ C1139	**Dark Pipeline and Bridge Backbone Completely Disjoint** (0/300 dark-pipe
 C1140	**PP Pipeline Is a Complete Four-Way Partition** (85 bridge + 4 non-bridge matched + 300 dark pipeline + 15 phantom = 404; exhaustive and mutually exclusive; non-bridge matched are c/ch/cho/otc, AUXILIARY-dominant edge cases; phantoms all ch/sh-prefixed with 0 A tokens)	2	A->B	-> C1140_pp_pipeline_complete_partition.md
 C1141	**Dark Pipeline Compounds Built from Bridge Atoms** (86% of atom types are bridge MIDDLEs, 91.6% of occurrences; 96.5% of compounds contain >= 1 bridge atom; 50 unique atoms: 43 BRIDGE, 6 DARK_PIPELINE, 1 OTHER; mean 1.44 atoms/compound)	2	B morphology	-> C1141_dark_pipeline_bridge_atom_substrate.md
 C1142	**Dark Pipeline Uses Modified Construction Grammar** (50% agreement with C1065 ordering; gateway/terminal positioning preserved; 25 dark-exclusive atoms extend grammar pool; section concentration NOT atom-driven, p=0.303)	2	B morphology	-> C1142_dark_pipeline_modified_construction_grammar.md
+C1143	**Dark-Exclusive and Shared Atoms Have Equivalent Section Profiles** (25 dark-exc vs 25 shared: MW U z=1.61, p=0.107; dark-exc rarer (15.2 vs 41.5 freq) and less spread (11.4 vs 22.1 folios) but same section Herfindahl)	2	B morphology	-> C1143_dark_exclusive_atom_equivalence.md
+C1144	**Dark Pipeline Ordering Divergence Is Genuine Grammar Modification** (Fisher exact on dark-exc presence x match/mismatch: OR=3.33, p=0.592; C1065 mismatches NOT explained by atom pool)	2	B morphology	-> C1144_ordering_divergence_is_grammar_modification.md
+C1145	**Dark-Exclusive and Shared Atoms Occupy Equivalent Positional Slots** (chi-sq=1.74, df=2, p=0.421; INITIAL/MEDIAL/FINAL distribution indistinguishable between atom types in 77 multi-atom compounds)	2	B morphology	-> C1145_atom_slot_uniformity.md
+C1146	**Dark Pipeline Token Density Anti-Correlates with Bridge Tokens** (r=-0.865 overall; within-section r=-0.82 to -0.88 in all 4 sections; section R²=0.193; 80.7% of variance within-section; complementary distribution)	2	B, A->B	-> C1146_dark_pipeline_bridge_anticorrelation.md
+C1147	**Dark Pipeline Tokens Are Interior-Enriched Within Lines** (73.2% MIDDLE vs general HT 67.7%; chi-sq=23.2, p<0.0001; boundary rate 26.8% vs HT 32.3%; consistent across par line-1 and body)	2	B, line structure	-> C1147_dark_pipeline_interior_positioned.md
+C1148	**Dark Pipeline Frequency Profiles Are Hyper-Modulated Across Sections** (mean JS=0.483, 3.9x C1134 baseline of 0.124; dark pipeline is primary vehicle for section-level vocabulary modulation)	2	B, section differentiation	-> C1148_dark_pipeline_hyper_modulated.md

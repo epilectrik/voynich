@@ -1247,6 +1247,13 @@ vocabulary_architecture:
     phantom: 15            # A-present, B-absent artifacts (all ch-/sh- prefixed)
     total: 404
     bridge_dark_disjointness: "0 shared MIDDLEs between bridge (85) and dark pipeline (300) — C1139"
+    bridge_dark_anticorrelation:
+      statement: "Dark-pipeline and bridge token rates are strongly anti-correlated at the folio level"
+      overall_r: -0.865
+      within_section_r: "-0.82 to -0.88 (all 4 testable sections)"
+      section_r2: 0.193  # Section identity explains only 19.3% of dark density variance
+      implication: "Complementary distribution: folios invest more in grammar execution (bridge) OR identification (dark pipeline), not both equally"
+      provenance: "C1146"
     dark_pipeline_profile:
       compound_rate: "66.7%"
       section_concentration: "Herf 0.716 (strongly section-specific)"
@@ -1395,12 +1402,29 @@ ht_un_integration:
     modified_ordering:
       statement: "Dark pipeline follows modified version of B's atom ordering grammar (C1065)"
       c1065_agreement: "50% (7 matches, 7 mismatches of 14 testable pairs)"
+      divergence_source: "Genuine grammar modification, NOT atom-pool artifact (Fisher p=0.592, C1144)"
       gateway_terminal_preserved: true
       gateway_mean_position: 0.083  # < 0.15 = INITIAL
       terminal_mean_position: 0.352  # > 0.40 expectation, close
       dark_exclusive_atoms: 25  # Atoms not in grammar compounds
-      provenance: "C1142"
-    provenance: "C1137, C1138, C1141, C1142"
+      atom_equivalence: "Dark-exclusive and shared atoms have equivalent section profiles (MW p=0.107, C1143) and equivalent positional slots (chi-sq p=0.421, C1145)"
+      provenance: "C1142, C1143, C1144, C1145"
+    line_position:
+      statement: "Dark-pipeline tokens preferentially occupy line-interior positions"
+      dark_middle_rate: "73.2%"
+      general_ht_middle_rate: "67.7%"
+      grammar_middle_rate: "83.5%"
+      chi_sq_dark_vs_ht: "23.2 (p < 0.0001)"
+      implication: "Interior-enriched relative to HT but less interior than grammar; identification vocabulary fills line interior"
+      provenance: "C1147"
+    hyper_modulation:
+      statement: "Dark-pipeline MIDDLEs are 3.9x more section-differentiated than PP baseline"
+      dark_mean_js: 0.483
+      pp_baseline_js: 0.124
+      ratio: "3.9x"
+      implication: "Dark pipeline is the primary vehicle for section-level vocabulary modulation"
+      provenance: "C1148"
+    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148"
 
 # ============================================================
 robustness:
@@ -1777,6 +1801,9 @@ provenance:
     - "C1136"  # Uniform A→B vocabulary flow (cosine 0.9997, 12-folio concentration)
     - "C1139"  # Bridge-dark pipeline MIDDLE-level disjointness
     - "C1140"  # PP pipeline four-way partition (85+4+300+15=404)
+    - "C1143"  # Dark-exclusive atom equivalence (MW p=0.107)
+    - "C1146"  # Bridge-dark anti-correlation (r=-0.865)
+    - "C1148"  # Dark pipeline hyper-modulation (3.9x JS baseline)
 
   execution_syntax:
     - "C547"   # ICC-based role validation
@@ -1877,6 +1904,9 @@ provenance:
     - "C1138"  # Dark pipeline distinct construction grammar (GS/EXT 3.39 vs HT 1.81)
     - "C1141"  # Bridge atom substrate (86% types, 91.6% occurrences, 96.5% coverage)
     - "C1142"  # Modified atom ordering (50% C1065 agreement, gateway/terminal preserved)
+    - "C1144"  # Ordering divergence is genuine grammar modification (Fisher p=0.592)
+    - "C1145"  # Atom slot uniformity (chi-sq p=0.421)
+    - "C1147"  # Dark pipeline interior-enriched (73.2% MIDDLE vs HT 67.7%)
 
   fl_primitive_architecture:
     - "C770"   # FL kernel exclusion (0 kernel chars)
