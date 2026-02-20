@@ -88,7 +88,7 @@ and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-20 17:17
+**Generated:** 2026-02-20 17:55
 **Version:** FROZEN STATE (993 constraints, 66 fits) [COMPACT]
 
 ---
@@ -4408,6 +4408,12 @@ This would explain the full structural signature:
 - **Phantoms (15 B-absent):** Morphologically valid name-slots that no actual material instantiates. The system can generate more names than it needs.
 
 The analogy is chemical nomenclature: methyl-ethyl-ketone names a substance by concatenating its structural components. A distiller trained in this system would not read a substance name in natural language -- they would read a compound MIDDLE and recognize the material by its operational profile. The semantic ceiling (C171) holds: we cannot recover WHICH material a compound names, but we can see that the naming system is built from the same atoms that drive the operational grammar.
+
+
+
+
+
+
 
 
 ---
