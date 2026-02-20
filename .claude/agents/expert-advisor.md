@@ -88,7 +88,7 @@ and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-20 11:28
+**Generated:** 2026-02-20 12:53
 **Version:** FROZEN STATE (981 constraints, 66 fits) [COMPACT]
 
 ---
@@ -113,7 +113,7 @@ and 4 structural contracts are complete.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.84 | **Status:** FROZEN | **Constraints:** 981 | **Date:** 2026-02-20
+**Version:** 3.84 | **Status:** FROZEN | **Constraints:** 984 | **Date:** 2026-02-20
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -312,8 +312,8 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 896 |
-| Completed phases | 353 |
+| Validated constraints | 984 |
+| Completed phases | 407 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -1101,7 +1101,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 981 constraints | 2026-02-20
+CONSTRAINT_REFERENCE v2.6 | 984 constraints | 2026-02-20
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2087,6 +2087,9 @@ C1133	**Rosettes Targeting Decomposition**
 C1134	**Section Specificity Is Frequency-Modulated** (PP drives 74% of section divergence through token frequency variation; B-exclusive JS=0.847 but only 5.8% of tokens; resolves C1049/C909 paradox)
 C1135	**Unmatched PP Dark Pipeline** (300/315 unmatched PP MIDDLEs present in B at low frequency: mean 5.7 tokens vs 224.8 matched; section-concentrated Herf=0.716; 66.7% compound; large HT/UN substrate)
 C1136	**A->B Flow: Uniform Pool, Concentration-Structured** (A-H/A-P cosine=0.9997; 12 A folios cover 100% classified grammar; f58v alone=60.7%; max A->B coverage ceiling 30.4%)
+C1137	**Dark Pipeline = 100% HT/UN Substrate** (1,696 tokens from 300 MIDDLEs: 0.0% grammar-classified, 100.0% HT/UN; all 300 MIDDLEs pure-HT; mean 5.7 tokens/MIDDLE; positionally and sectionally indistinguishable from general HT)
+C1138	**Dark Pipeline Has Distinct Construction Grammar** (grammar-standard/extended PREFIX ratio 3.39 vs general HT 1.81; suffix rate 89.9% vs HT 77.3%; articulator rate 2.5% vs HT 10.1%; same MIDDLEs but different morphological wrapping than general HT)
+C1139	**Dark Pipeline and Bridge Backbone Completely Disjoint** (0/300 dark-pipeline MIDDLEs overlap with 85 bridge MIDDLEs; separate A->B channels: bridges carry dynamical structure, dark pipeline carries identification vocabulary)
 
 ---
 
@@ -2208,8 +2211,16 @@ All interpretations in this document respect these constraints. Individual secti
 ---
 
 
-## 0. APPARATUS-CENTRIC SEMANTICS (CCM Phase)
+## Epistemological Frame: Structure-Fitting, Not Translation
 
+
+
+
+
+---
+
+
+## 0. APPARATUS-CENTRIC SEMANTICS (CCM Phase)
 ### Tier 3: Core Finding
 
 > **The manuscript encodes the operational worldview of a controlled apparatus, not the descriptive worldview of a human observer.**
@@ -4340,6 +4351,21 @@ Path tokens do not bridge endpoint rosette vocabularies, and vocabulary similari
 **Unmatched PP dark pipeline (C1135):** Of 404 PP MIDDLEs, only 89 match B grammar classes. The other 315 are overwhelmingly present in B (95.2%, 300/315) but at dramatically lower frequency (mean 5.7 tokens vs 224.8 for matched; mean 4.6 folios vs 39.0). They are section-concentrated (Herf 0.716), mostly compound (66.7%), and constitute the HT/UN derivational substrate — the morphological bridge between A's registry and B's unclassified layer.
 
 **A->B flow is uniform and concentrated (C1136):** A-Herbal and A-Pharmaceutical produce indistinguishable B coverage profiles (cosine 0.9997). The pipeline is section-blind — all A sections cover B-Herbal best and B-Stars worst, with identical relative profiles. Pipeline grammar is highly concentrated: 12 A folios cover 100% of B's 89 classified MIDDLEs, with f58v (Section T, text-only) alone covering 60.7%. The full B inventory ceiling is 30.4% from all 114 A folios — 70% of B vocabulary is completely B-internal.
+
+
+---
+
+
+## XIII. Dark Pipeline Functional Test (Phase 407)
+
+### Tier 2: Structural Findings
+
+**100% HT/UN substrate (C1137):** All 1,696 B tokens built from dark-pipeline MIDDLEs are HT/UN classified. Zero are grammar-classified. This is not a tendency but a complete partition: matched PP MIDDLEs (89) produce 80.2% grammar-classified tokens, while dark-pipeline MIDDLEs (300) produce exclusively identification vocabulary. The mean 5.7 tokens per dark-pipeline MIDDLE (vs 224.8 for matched) validates C1135's frequency characterization.
+
+**Distinct construction grammar (C1138):** Dark-pipeline tokens use a morphological recipe distinct from both general HT and grammar tokens. Grammar-standard/extended PREFIX ratio is 3.39 (vs general HT 1.81, 87% higher) — dark tokens strongly prefer grammar-standard prefixes (ch, sh, qo, etc.) over extended/HT-specific ones. Suffix rate is 89.9% (vs HT 77.3%, grammar 38.7%). Articulator rate is 2.5% (vs HT 10.1%). The pattern is: simpler at the front (fewer articulators, more grammar-standard prefixes), more elaborated at the back (higher suffix rate). This constitutes a third morphological register within B's token inventory.
+
+**Bridge-disjoint (C1139):** The 300 dark-pipeline MIDDLEs and 85 bridge MIDDLEs (C1013) have zero overlap. The A-B vocabulary pipeline has three cleanly separated channels: (1) bridge MIDDLEs carrying dynamical/behavioral information, (2) ~4 non-bridge matched PPs, and (3) dark-pipeline MIDDLEs carrying identification/specification information. Neither population borrows from the other.
+
 
 
 

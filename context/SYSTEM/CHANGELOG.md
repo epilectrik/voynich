@@ -4,6 +4,43 @@
 
 ---
 
+## Version 4.10.16 (2026-02-20) - Phase 407: Dark Pipeline Functional Test
+
+### Summary
+
+Phase 407 functionally characterizes the 300 dark-pipeline PP MIDDLEs identified in C1135. 5-test battery confirms they are 100% HT/UN substrate (zero grammar-classified tokens), use a distinct construction grammar (grammar-standard/extended PREFIX ratio 3.39 vs general HT 1.81), and are completely disjoint from the 85 bridge MIDDLEs (zero overlap). Positionally and sectionally, they follow general HT patterns.
+
+Key findings:
+- **100% HT/UN substrate** (Test 1): All 1,696 dark-pipeline B tokens are HT/UN. Zero are grammar-classified. Mean 5.7 tokens/MIDDLE (validates C1135). Complete functional partition: matched PPs produce grammar (80.2%), dark pipeline produces identification vocabulary (100%).
+- **Distinct construction grammar** (Test 2): Grammar-standard/extended PREFIX ratio 3.39 (vs HT 1.81, 87% higher). Suffix rate 89.9% (vs HT 77.3%), articulator rate 2.5% (vs HT 10.1%). A third morphological register within B.
+- **Bridge-disjoint** (Test 3): Zero overlap between 300 dark-pipeline and 85 bridge MIDDLEs. Three clean A-B channels: bridges (dynamical), non-bridge matched (~4), dark pipeline (identification).
+- **Header-neutral** (Test 4): Folio line-1 rate 6.9% (HT baseline 6.5%). Follows general HT positional pattern.
+- **HT-aligned sections** (Test 5): JS(dark,HT) = 0.0005, JS(dark,grammar) = 0.0109. 22x closer to HT than grammar.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **CREATED** | `phases/DARK_PIPELINE_FUNCTIONAL_TEST/scripts/dark_pipeline_test.py` -- 5-test battery |
+| **CREATED** | `phases/DARK_PIPELINE_FUNCTIONAL_TEST/results/dark_pipeline_test.json` -- full results |
+| **CREATED** | `context/CLAIMS/C1137_dark_pipeline_ht_substrate.md` |
+| **CREATED** | `context/CLAIMS/C1138_dark_pipeline_construction_grammar.md` |
+| **CREATED** | `context/CLAIMS/C1139_dark_pipeline_bridge_disjoint.md` |
+| **UPDATED** | `context/CLAIMS/INDEX.md` -- added Phase 407 section, count 981->984 |
+| **REGENERATED** | `CONSTRAINT_TABLE.txt`, expert-advisor agent |
+
+### New Constraints
+
+| # | Statement | Tier |
+|---|-----------|------|
+| C1137 | Dark pipeline MIDDLEs are 100% HT/UN substrate: 1,696 tokens, 0 grammar-classified | 2 |
+| C1138 | Dark pipeline has distinct construction grammar: GS/EXT ratio 3.39 vs HT 1.81, suffix 89.9% | 2 |
+| C1139 | Dark pipeline and bridge backbone completely disjoint: zero overlap of 300 vs 85 | 2 |
+
+Constraint count: 981 -> 984 (+3 new).
+
+---
+
 ## Version 4.10.15 (2026-02-20) - Phase 406: Cross-System Vocabulary Flow
 
 ### Summary

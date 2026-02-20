@@ -1,0 +1,246 @@
+{
+  "test1": {
+    "n_dark_tokens": 1696,
+    "n_grammar": 0,
+    "n_ht_un": 1696,
+    "grammar_fraction": 0.0,
+    "ht_fraction": 1.0,
+    "n_dark_word_types": 1099,
+    "n_grammar_types": 0,
+    "n_ht_types": 1099,
+    "n_dark_middles_with_tokens": 300,
+    "pure_ht_middles": 300,
+    "pure_grammar_middles": 0,
+    "mixed_middles": 0,
+    "mean_tokens_per_middle": 5.6533,
+    "c1135_baseline_mean": 5.7,
+    "matched_pp_comparison": {
+      "n_tokens": 20009,
+      "n_grammar": 16054,
+      "n_ht": 3955,
+      "grammar_fraction": 0.8023
+    },
+    "verdict": "CONFIRMED_HT_SUBSTRATE"
+  },
+  "test2": {
+    "dark_pipeline": {
+      "grammar_standard": {
+        "count": 1003,
+        "fraction": 0.5914
+      },
+      "extended": {
+        "count": 296,
+        "fraction": 0.1745
+      },
+      "no_prefix": {
+        "count": 397,
+        "fraction": 0.2341
+      },
+      "suffix_rate": 0.8986,
+      "articulator_rate": 0.0248,
+      "top_prefixes": {
+        "qo": 330,
+        "ch": 302,
+        "sh": 156,
+        "ol": 57,
+        "ok": 55,
+        "da": 51,
+        "ot": 49,
+        "so": 42,
+        "po": 32,
+        "pch": 26,
+        "yk": 23,
+        "to": 16,
+        "ka": 15,
+        "do": 14,
+        "lk": 14
+      },
+      "total": 1696
+    },
+    "ht_baseline": {
+      "grammar_standard": {
+        "count": 3796,
+        "fraction": 0.5391
+      },
+      "extended": {
+        "count": 2097,
+        "fraction": 0.2978
+      },
+      "no_prefix": {
+        "count": 1149,
+        "fraction": 0.1632
+      },
+      "suffix_rate": 0.7414,
+      "articulator_rate": 0.1005,
+      "top_prefixes": {
+        "ch": 982,
+        "qo": 863,
+        "sh": 734,
+        "ol": 400,
+        "ot": 311,
+        "ok": 291,
+        "da": 183,
+        "lk": 181,
+        "pch": 155,
+        "al": 150,
+        "yk": 144,
+        "lch": 123,
+        "te": 122,
+        "po": 114,
+        "so": 100
+      },
+      "total": 7042
+    },
+    "grammar_baseline": {
+      "grammar_standard": {
+        "count": 11036,
+        "fraction": 0.6874
+      },
+      "extended": {
+        "count": 2303,
+        "fraction": 0.1435
+      },
+      "no_prefix": {
+        "count": 2715,
+        "fraction": 0.1691
+      },
+      "suffix_rate": 0.3694,
+      "articulator_rate": 0.0194,
+      "top_prefixes": {
+        "qo": 3206,
+        "ch": 2510,
+        "sh": 1595,
+        "ok": 1185,
+        "ot": 1137,
+        "da": 900,
+        "ol": 475,
+        "sa": 259,
+        "lk": 257,
+        "lch": 192,
+        "ta": 180,
+        "yk": 170,
+        "ka": 170,
+        "te": 167,
+        "ke": 161
+      },
+      "total": 16054
+    },
+    "bifurcation_analysis": {
+      "dark_gs_ext_ratio": 3.3885,
+      "ht_gs_ext_ratio": 1.8102,
+      "ratio_difference": 0.8719,
+      "threshold": 0.5
+    },
+    "c610_baselines": {
+      "ht_suffix_rate": 0.773,
+      "ht_articulator_rate": 0.101,
+      "grammar_suffix_rate": 0.387,
+      "grammar_articulator_rate": 0.019
+    },
+    "verdict": "DUAL_CONSTRUCTION"
+  },
+  "test3": {
+    "n_overlap": 0,
+    "overlap_middles": [],
+    "overlap_fraction_of_dark": 0.0,
+    "overlap_fraction_of_bridges": 0.0,
+    "n_dark_only": 300,
+    "n_bridge_only": 85,
+    "overlap_stats": {
+      "count": 0,
+      "mean_b_freq": 0,
+      "median_b_freq": 0,
+      "mean_herfindahl": 0
+    },
+    "dark_only_stats": {
+      "count": 300,
+      "mean_b_freq": 5.6533,
+      "median_b_freq": 3,
+      "mean_herfindahl": 0.7159
+    },
+    "verdict": "BRIDGE_DISJOINT"
+  },
+  "test4": {
+    "dark": {
+      "folio_line1_rate": 0.069,
+      "par_line1_rate": 0.3709,
+      "n": 1696,
+      "folio_line1_count": 117,
+      "par_line1_count": 629
+    },
+    "ht": {
+      "folio_line1_rate": 0.0655,
+      "par_line1_rate": 0.3472,
+      "n": 7042,
+      "folio_line1_count": 461,
+      "par_line1_count": 2445
+    },
+    "grammar": {
+      "folio_line1_rate": 0.0285,
+      "par_line1_rate": 0.2065,
+      "n": 16054,
+      "folio_line1_count": 458,
+      "par_line1_count": 3315
+    },
+    "matched_pp": {
+      "folio_line1_rate": 0.033,
+      "par_line1_rate": 0.2251,
+      "n": 20009,
+      "folio_line1_count": 661,
+      "par_line1_count": 4504
+    },
+    "delta_folio_line1": 0.0035,
+    "delta_par_line1": 0.0237,
+    "c747_baseline": 0.502,
+    "c842_baseline": 0.452,
+    "verdict": "HEADER_NEUTRAL"
+  },
+  "test5": {
+    "dark_section_profile": {
+      "H": 0.1509,
+      "T": 0.0436,
+      "B": 0.2276,
+      "C": 0.0708,
+      "S": 0.5071
+    },
+    "ht_section_profile": {
+      "H": 0.1602,
+      "T": 0.0366,
+      "B": 0.2167,
+      "C": 0.069,
+      "S": 0.5175
+    },
+    "grammar_section_profile": {
+      "H": 0.1436,
+      "T": 0.0252,
+      "B": 0.3316,
+      "C": 0.0619,
+      "S": 0.4377
+    },
+    "js_dark_vs_ht": 0.0005,
+    "js_dark_vs_grammar": 0.0109,
+    "js_ht_vs_grammar": 0.0124,
+    "token_level_herfindahl": 0.3386,
+    "c1135_middle_level_herfindahl": 0.716,
+    "verdict": "HT_ALIGNED"
+  },
+  "verdicts": {
+    "test1": "CONFIRMED_HT_SUBSTRATE",
+    "test2": "DUAL_CONSTRUCTION",
+    "test3": "BRIDGE_DISJOINT",
+    "test4": "HEADER_NEUTRAL",
+    "test5": "HT_ALIGNED",
+    "overall": "HT_WITH_DISTINCT_CONSTRUCTION",
+    "summary": "Dark pipeline MIDDLEs produce HT/UN tokens but with a different PREFIX distribution than general HT -- distinct construction grammar for this population. Bridge overlap is minimal -- dark pipeline and manifold backbone are separate populations."
+  },
+  "metadata": {
+    "phase": "DARK_PIPELINE_FUNCTIONAL_TEST",
+    "phase_number": 407,
+    "script": "dark_pipeline_test.py",
+    "n_dark_pipeline_middles": 300,
+    "n_matched_pp_middles": 89,
+    "n_bridge_middles": 85,
+    "n_classified_tokens": 480,
+    "n_b_tokens_scanned": 23096
+  }
+}

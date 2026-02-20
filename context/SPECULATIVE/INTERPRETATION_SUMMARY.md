@@ -5784,3 +5784,23 @@ Phase 406 resolves the C1049/C909 paradox: shared pipeline vocabulary is type-un
 ### Interpretation (Tier 3-4)
 
 The A->B vocabulary pipeline operates as a **frequency-tuned universal substrate**: A provides a shared vocabulary pool (404 PP MIDDLEs) that all B sections access, but each section tunes the token frequencies to its operational needs. Section-specificity is not vocabulary-specificity — it is usage-specificity applied to universal vocabulary. The "dark pipeline" of 300 unmatched PP MIDDLEs provides the derivational raw material from which B's HT/UN layer constructs its 900+ exclusive identification vocabulary (via compounding, consistent with C924's 97.9% atom containment). The pipeline is structurally simple: section-blind, concentrated in ~12 hub folios, with f58v as the single most vocabulary-rich entry point.
+
+---
+
+## XIII. Dark Pipeline Functional Test (Phase 407)
+
+Phase 407 functionally characterizes the 300 dark-pipeline PP MIDDLEs from C1135. A 5-test battery establishes their classification fate, construction grammar, relationship to bridges, positional behavior, and section profile.
+
+### Tier 2: Structural Findings
+
+**100% HT/UN substrate (C1137):** All 1,696 B tokens built from dark-pipeline MIDDLEs are HT/UN classified. Zero are grammar-classified. This is not a tendency but a complete partition: matched PP MIDDLEs (89) produce 80.2% grammar-classified tokens, while dark-pipeline MIDDLEs (300) produce exclusively identification vocabulary. The mean 5.7 tokens per dark-pipeline MIDDLE (vs 224.8 for matched) validates C1135's frequency characterization.
+
+**Distinct construction grammar (C1138):** Dark-pipeline tokens use a morphological recipe distinct from both general HT and grammar tokens. Grammar-standard/extended PREFIX ratio is 3.39 (vs general HT 1.81, 87% higher) — dark tokens strongly prefer grammar-standard prefixes (ch, sh, qo, etc.) over extended/HT-specific ones. Suffix rate is 89.9% (vs HT 77.3%, grammar 38.7%). Articulator rate is 2.5% (vs HT 10.1%). The pattern is: simpler at the front (fewer articulators, more grammar-standard prefixes), more elaborated at the back (higher suffix rate). This constitutes a third morphological register within B's token inventory.
+
+**Bridge-disjoint (C1139):** The 300 dark-pipeline MIDDLEs and 85 bridge MIDDLEs (C1013) have zero overlap. The A-B vocabulary pipeline has three cleanly separated channels: (1) bridge MIDDLEs carrying dynamical/behavioral information, (2) ~4 non-bridge matched PPs, and (3) dark-pipeline MIDDLEs carrying identification/specification information. Neither population borrows from the other.
+
+### Interpretation (Tier 3-4)
+
+The dark pipeline is not "dark" — it is the **identification construction channel**. While bridge MIDDLEs structure B's operational behavior (which instruction classes to use, what archetype patterns emerge), dark-pipeline MIDDLEs structure B's identification vocabulary (which specific entities are being referenced). The distinct construction grammar — grammar-standard prefixes selecting operational domains, dark-pipeline MIDDLEs providing compound identification content, high suffix rates encoding additional context — suggests a systematic construction process for generating the specification layer (C935) from shared A/B vocabulary atoms.
+
+The complete disjointness from bridges means the A-B pipeline bifurcates cleanly: operational information flows through 85 bridge MIDDLEs into the 49-class grammar, while identification information flows through 300 dark-pipeline MIDDLEs into HT/UN compound vocabulary. These are parallel but independent pathways through the shared vocabulary pool.

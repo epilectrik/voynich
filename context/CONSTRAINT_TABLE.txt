@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 981 constraints | 2026-02-20
+CONSTRAINT_REFERENCE v2.6 | 984 constraints | 2026-02-20
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -985,3 +985,6 @@ C1133	**Rosettes Targeting Decomposition** (C1125 Section T correlation is vocab
 C1134	**Section Specificity Is Frequency-Modulated** (PP drives 74% of section divergence through token frequency variation; B-exclusive JS=0.847 but only 5.8% of tokens; resolves C1049/C909 paradox)	2	B, A->B	-> C1134_section_specificity_frequency_modulated.md
 C1135	**Unmatched PP Dark Pipeline** (300/315 unmatched PP MIDDLEs present in B at low frequency: mean 5.7 tokens vs 224.8 matched; section-concentrated Herf=0.716; 66.7% compound; large HT/UN substrate)	2	A->B	-> C1135_unmatched_pp_dark_pipeline.md
 C1136	**A->B Flow: Uniform Pool, Concentration-Structured** (A-H/A-P cosine=0.9997; 12 A folios cover 100% classified grammar; f58v alone=60.7%; max A->B coverage ceiling 30.4%)	2	A->B	-> C1136_ab_flow_uniform_concentrated.md
+C1137	**Dark Pipeline = 100% HT/UN Substrate** (1,696 tokens from 300 MIDDLEs: 0.0% grammar-classified, 100.0% HT/UN; all 300 MIDDLEs pure-HT; mean 5.7 tokens/MIDDLE; positionally and sectionally indistinguishable from general HT)	2	B, A->B	-> C1137_dark_pipeline_ht_substrate.md
+C1138	**Dark Pipeline Has Distinct Construction Grammar** (grammar-standard/extended PREFIX ratio 3.39 vs general HT 1.81; suffix rate 89.9% vs HT 77.3%; articulator rate 2.5% vs HT 10.1%; same MIDDLEs but different morphological wrapping than general HT)	2	B morphology	-> C1138_dark_pipeline_construction_grammar.md
+C1139	**Dark Pipeline and Bridge Backbone Completely Disjoint** (0/300 dark-pipeline MIDDLEs overlap with 85 bridge MIDDLEs; separate A->B channels: bridges carry dynamical structure, dark pipeline carries identification vocabulary)	2	A->B	-> C1139_dark_pipeline_bridge_disjoint.md

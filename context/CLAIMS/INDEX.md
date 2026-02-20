@@ -2958,6 +2958,25 @@ Resolves the C1049/C909 paradox: how does section-universal pipeline vocabulary 
 
 ---
 
+### Dark Pipeline Functional Test (C1137-C1139) — Phase: DARK_PIPELINE_FUNCTIONAL_TEST (Phase 407)
+
+Tests the structural fate of 300 dark-pipeline PP MIDDLEs identified in Phase 406 (C1135). 5-test battery: classification trace, construction grammar, bridge overlap, paragraph position, section profile.
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1137** | **Dark Pipeline = 100% HT/UN Substrate** (1,696 tokens from 300 MIDDLEs: 0.0% grammar-classified, 100.0% HT/UN; all 300 MIDDLEs pure-HT; mean 5.7 tokens/MIDDLE; positionally and sectionally indistinguishable from general HT) | 2 | B, A->B | -> [C1137_dark_pipeline_ht_substrate.md](C1137_dark_pipeline_ht_substrate.md) |
+| **1138** | **Dark Pipeline Has Distinct Construction Grammar** (grammar-standard/extended PREFIX ratio 3.39 vs general HT 1.81; suffix rate 89.9% vs HT 77.3%; articulator rate 2.5% vs HT 10.1%; same MIDDLEs but different morphological wrapping than general HT) | 2 | B morphology | -> [C1138_dark_pipeline_construction_grammar.md](C1138_dark_pipeline_construction_grammar.md) |
+| **1139** | **Dark Pipeline and Bridge Backbone Completely Disjoint** (0/300 dark-pipeline MIDDLEs overlap with 85 bridge MIDDLEs; separate A->B channels: bridges carry dynamical structure, dark pipeline carries identification vocabulary) | 2 | A->B | -> [C1139_dark_pipeline_bridge_disjoint.md](C1139_dark_pipeline_bridge_disjoint.md) |
+
+**Phase 407 findings (Dark Pipeline Functional Test):**
+- Test 1: 100% of dark-pipeline tokens are HT/UN (vs matched PP: 80.2% grammar); complete functional partition
+- Test 2: DUAL_CONSTRUCTION — dark pipeline uses grammar-standard prefixes at 87% higher ratio than general HT; suffix-heavy, articulator-depleted
+- Test 3: BRIDGE_DISJOINT — zero overlap between 300 dark-pipeline and 85 bridge MIDDLEs
+- Test 4: HEADER_NEUTRAL — dark-pipeline line-1 concentration matches general HT (delta +0.4pp)
+- Test 5: HT_ALIGNED — JS(dark,HT)=0.0005 vs JS(dark,grammar)=0.0109; 22x closer to HT
+
+---
+
 ## Navigation
 
 ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)
