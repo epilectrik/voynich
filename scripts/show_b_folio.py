@@ -45,6 +45,8 @@ def token_color(tok) -> str:
     """
     if not HAS_COLOR:
         return ''
+    if tok.is_dark_pipeline:
+        return Fore.MAGENTA
     if tok.is_ht:
         return Style.DIM + Fore.WHITE
     if tok.is_fl_role:
@@ -74,6 +76,7 @@ def print_legend():
         f"{Fore.LIGHTBLUE_EX}FL:state{Style.RESET_ALL}",
         f"{Fore.GREEN}AX:scaffold{Style.RESET_ALL}",
         f"{Fore.LIGHTGREEN_EX}PREP:prep{Style.RESET_ALL}",
+        f"{Fore.MAGENTA}DP:dark-pipeline{Style.RESET_ALL}",
         f"{Style.DIM}{Fore.WHITE}HT:human{Style.RESET_ALL}",
         f"{Fore.LIGHTWHITE_EX}BARE:bare{Style.RESET_ALL}",
     ]
@@ -414,6 +417,8 @@ def display_folio(folio_id: str,
                     meta_parts.append(f"depth:{tok.compound_depth}")
                 if tok.compound_atoms:
                     meta_parts.append(f"atoms:{'+'.join(tok.compound_atoms)}")
+                if tok.is_dark_pipeline:
+                    meta_parts.append(f"DP:True")
                 if tok.suffix_continuation:
                     meta_parts.append(f"cont:True")
                 if meta_parts:

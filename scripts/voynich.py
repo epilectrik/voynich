@@ -1251,6 +1251,9 @@ class BTokenAnalysis:
     compound_depth: int = 0                        # 0=simple, 2-5=compound atom count
     compound_atoms: List[str] = field(default_factory=list)  # Maximal atom decomposition (C935, C766)
 
+    # Dark pipeline classification (C1137, C1140)
+    is_dark_pipeline: bool = False                 # True if MIDDLE is in 300 dark-pipeline set
+
     # Suffix sequential grammar (C1058)
     suffix_continuation: bool = False              # True when suffix matches previous token's suffix in line
 
@@ -1306,6 +1309,9 @@ class BTokenAnalysis:
         # Informational only — frequency-mediated per C1073-C1075
         if self.terminal_group:
             parts.append(f"TC:{self.terminal_char}")
+        # Dark pipeline marker (C1137, C1140)
+        if self.is_dark_pipeline:
+            parts.append('DP')
         return ' + '.join(parts) if parts else '(unclassified)'
 
     def structural_gloss(self) -> str:
@@ -1896,19 +1902,22 @@ class BTokenAnalysis:
         else:
             load = 'light'
 
+        # Dark pipeline annotation (C1137, C1140)
+        dp_tag = ':DP' if self.is_dark_pipeline else ''
+
         # Compact mode (default): hide atom details
         # Debug mode: show atoms for discrimination
         debug_ht = getattr(self, '_debug_ht', False)
         if debug_ht:
             if self.compound_atoms:
                 atom_str = ' + '.join(self.compound_atoms)
-                spec = f"[{mode}-{load} {{{atom_str}}}]"
+                spec = f"[{mode}-{load}{dp_tag} {{{atom_str}}}]"
             elif middle:
-                spec = f"[{mode}-{load} {{{middle}}}]"
+                spec = f"[{mode}-{load}{dp_tag} {{{middle}}}]"
             else:
-                spec = f"[{mode}-{load}]"
+                spec = f"[{mode}-{load}{dp_tag}]"
         else:
-            spec = f"[{mode}-{load}]"
+            spec = f"[{mode}-{load}{dp_tag}]"
 
         # Suffix as raw form marker (never operational gloss — C404/C405)
         if suffix:
@@ -1962,6 +1971,11 @@ class BFolioAnalysis:
     prefix_classified_pct: float
     suffix_classified_pct: float
     middle_classified_pct: float
+
+    # Bridge/dark-pipeline balance (C1146)
+    bridge_rate: float = 0.0         # Bridge MIDDLE tokens / total tokens
+    dark_pipeline_rate: float = 0.0  # Dark-pipeline MIDDLE tokens / total tokens
+    folio_balance: str = ''          # BRIDGE_DOMINANT / DARK_DOMINANT / BALANCED
 
 
 @dataclass
@@ -2315,6 +2329,18 @@ class BFolioDecoder:
             if 'primary_family' in entry:
                 self._middle_to_affordance_family[mid] = entry['primary_family']
 
+        # Dark pipeline MIDDLE set (C1137, C1140)
+        _dp_path = PROJECT_ROOT / 'data' / 'dark_pipeline_middles.json'
+        with open(_dp_path, 'r', encoding='utf-8') as f:
+            _dp_data = json.load(f)
+        self._dark_pipeline_set = set(_dp_data['middles'])
+
+        # Bridge MIDDLE set (C1013, 85 MIDDLEs)
+        _bridge_path = PROJECT_ROOT / 'phases' / 'BRIDGE_MIDDLE_SELECTION_MECHANISM' / 'results' / 'bridge_selection.json'
+        with open(_bridge_path, 'r', encoding='utf-8') as f:
+            _bridge_data = json.load(f)
+        self._bridge_set = set(_bridge_data['t5_structural_profile']['bridge_middles'])
+
         # Pre-sort substring-matching maps (longest first) for _get_*() methods
         self._middle_tiers_sorted = sorted(
             self.MIDDLE_TIERS.items(), key=lambda x: len(x[0]), reverse=True)
@@ -2651,6 +2677,10 @@ class BFolioDecoder:
             if len(atoms) > 1:
                 analysis.compound_depth = len(atoms)
                 analysis.compound_atoms = atoms
+
+        # Dark pipeline classification (C1137, C1140)
+        if m.middle and m.middle in self._dark_pipeline_set:
+            analysis.is_dark_pipeline = True
 
         return analysis
 
@@ -3153,6 +3183,23 @@ class BFolioDecoder:
 
         total = len(analyses)
 
+        # Bridge/dark-pipeline balance (C1146: r=-0.865 anti-correlation)
+        # Bridge MIDDLEs are core grammar vocabulary (always 72-96% of tokens).
+        # Dark-pipeline MIDDLEs are identification vocabulary (0-16%).
+        # Balance thresholds use dark/bridge ratio (empirical quartiles):
+        #   P25=0.063, P75=0.110; r(bridge,dark)=-0.865
+        bridge_count = sum(1 for a in analyses if a.morph.middle and a.morph.middle in self._bridge_set)
+        dark_count = sum(1 for a in analyses if a.is_dark_pipeline)
+        bridge_rate = bridge_count / total if total else 0
+        dark_rate = dark_count / total if total else 0
+        ratio = dark_rate / bridge_rate if bridge_rate > 0 else 0
+        if ratio < 0.063:
+            folio_balance = 'BRIDGE_DOMINANT'
+        elif ratio > 0.110:
+            folio_balance = 'DARK_DOMINANT'
+        else:
+            folio_balance = 'BALANCED'
+
         return BFolioAnalysis(
             folio=folio,
             token_count=total,
@@ -3167,6 +3214,9 @@ class BFolioDecoder:
             prefix_classified_pct=100 * sum(prefix_dist.values()) / total if total else 0,
             suffix_classified_pct=100 * sum(suffix_dist.values()) / total if total else 0,
             middle_classified_pct=100 * sum(middle_dist.values()) / total if total else 0,
+            bridge_rate=bridge_rate,
+            dark_pipeline_rate=dark_rate,
+            folio_balance=folio_balance,
         )
 
     def decode_summary(self, folio: str, mode: str = 'structural') -> str:
@@ -3218,6 +3268,11 @@ class BFolioDecoder:
                     count = analysis.kernel_dist.get(k, 0)
                     pct = 100 * count / kernel_total
                     lines.append(f"  {k}: {count:4} ({pct:5.1f}%)")
+
+            lines.append(f"\nVOCABULARY BALANCE (C1146):")
+            lines.append(f"  Bridge rate:  {analysis.bridge_rate:.1%}")
+            lines.append(f"  Dark rate:    {analysis.dark_pipeline_rate:.1%}")
+            lines.append(f"  Balance:      {analysis.folio_balance}")
 
             lines.append(f"\nINTERPRETATION:")
             lines.append(f"  Kernel balance: {analysis.kernel_balance}")
