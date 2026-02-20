@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 973 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 981 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -11,6 +11,22 @@ For the full constraint system and technical details, see `context/CLAUDE_INDEX.
 The Voynich Manuscript is not a language. It is not a cipher. It is a **control system reference manual** — a collection of written programs that tell an operator how to maintain a physical process (most likely reflux distillation) within safe operating limits.
 
 The manuscript is organized into four structurally distinct layers, each serving a different function. Together they form a system that works **in silence**: the operator never needs to read explanations because the structure itself encodes what to do, when to intervene, and what to avoid.
+
+---
+
+## The Sheet Music Analogy
+
+Imagine a researcher discovers a cache of documents written in an unknown notation. They can't read it. No dictionary helps. Translation fails completely.
+
+But structural analysis reveals patterns: the notation uses a small set of symbols arranged in strict positional rules. Certain combinations are forbidden. The symbols cluster into families that correlate with mathematical ratios — ratios that turn out to match the harmonic series. The forbidden combinations correspond to dissonant intervals. The document structure matches the form of musical compositions.
+
+The researcher hasn't "translated" anything. They can't tell you what the music *sounds like*. But they can prove, from internal structure alone, that the notation encodes music — because the structural constraints fit the physics of sound and no other domain.
+
+**This is exactly what we are doing with the Voynich Manuscript.**
+
+We are not trying to translate the text. We are proving that its internal structure — 49 instruction classes, 17 forbidden transitions organized into 5 hazard classes, kernel-centric convergence behavior, bounded recovery architecture — fits the domain of thermodynamic process control (specifically reflux distillation) and no other domain we've tested.
+
+The forbidden transitions correspond to physical failure modes (phase contamination, thermal overshoot, containment breach). The convergence behavior matches the physics of distillation (energy in, stability out). The recovery architecture matches historical practice (Brunschwig's "no more than twice" reinfusion rule). The structure fits the domain the way sheet music fits harmonics — not because we decoded the meaning of individual tokens, but because the constraints map onto physical law.
 
 ---
 
@@ -382,38 +398,37 @@ The profile: continuously-engaged, energy-dominant, checkpoint-free, dynamically
 
 A 670-year-old classification framework, developed for an entirely different purpose (pharmacological theory), independently predicts 3 of 4 structural properties of a system derived purely from computational analysis of the manuscript. The constraint system was built bottom-up with zero reference to medieval classification. The Galenic framework was applied top-down from historical sources. The convergence is non-trivial.
 
-### Rosettes Foldout & Section Characterization (Phases 387-392)
+### Rosettes Foldout (Phases 387-405, Revalidated Phase 402)
 
-The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) had been invisible to analysis for 386 phases. When finally examined, it turned out to be the most structurally unusual section of the manuscript.
+The Rosettes foldout (f85-f86, 7 folios) is the manuscript's most structurally unusual section. Initial analysis (Phases 387-392) used the EVA H transcriber track, but Phase 402 revealed that the H track only captures ~33% of the foldout's text. Revalidation using Zandbergen (ZL) transcription with manual spatial annotation (`data/rosettes_annotated.json`) replaced all 21 original constraints with 10 new ones (C1124-C1133).
 
-A 10-test classification battery (Phase 387) showed the Rosettes is **not classifiable as pure A, B, or AZC**. It has B-like forbidden transition compliance (0.054% violation) but AZC-like kernel density (38.8%) and LINK density (0.97%). Most remarkably, the foldout shows a spatial gradient: f85v2 (the central 9-rosette page) has prefix ratios of 6.538 (strongly AZC-like), while f86v6 has 0.296 (strongly B-like). The foldout physically encodes the transition from reference layer to execution layer.
+**Metalayer confirmed (C1126):** The Rosettes functions as an organizational metalayer sitting above the standard A/B/AZC systems. It is not a standard B program page, not a standard AZC positional page, but a meta-structural reference index.
 
-A 5-test metalayer characterization (Phase 388H) confirmed the Rosettes functions as a **structural metalayer** — an organizational level above A/B/AZC:
-- **48/49 instruction classes** represented (98%), **23/23 hub MIDDLEs** (100%), **93.1% core vocabulary** covered
-- Higher entropy than B corpus — the Rosettes samples the full grammar more evenly than any individual section
-- All regions correlate most with Section T (Stars/monitoring)
-- Different f85v2 regions cross-reference different manuscript sections
-- 79 exclusive MIDDLEs found nowhere else in the manuscript
+**AZC-like grammar (C1127):** All entity types (ring text, labels, paths, spiral, clock) show consistent AZC-type morphology: grammar coverage ~42% (B: ~100%, AZC: ~50%), kernel density 29-41%, PP ~50%/RI ~2%. Not a hybrid — the old hybrid classification was a data artifact.
 
-The central page (f85v2) has a **dual structure**: 8 label regions contain 87 A-like single-token entries (naming vocabulary), while 8 description regions contain B-like continuous text (demonstrating operational processes). The SOUTH rosette (C2) is notable — TARGET-dominant (receives 3x more hazard than it emits) and uses only core vocabulary. Phase 396 corrected the region-to-position mapping: C2 is the SOUTH cardinal rosette, not CENTER (the grid system is Letter=ROW, Number=COL per voynich.nu). The actual CENTER rosette (N2, 37 tokens) has the most balanced kernel profile (k/e=0.50, highest h_frac=0.308).
+**Bridge enrichment (C1124):** 3.05x enrichment over B corpus (21.5% vs 7.0%). Universal across all sub-region types — ring 4.56x, labels 4.74-5.17x, clock 7.11x. The foldout preferentially samples the 85 cross-system vocabulary items that bridge A's discrimination manifold to B's execution grammar.
 
-All label groups cross-reference the same pharmaceutical folios (f76r, f108r, f111r) — the Rosettes indexes the recipe/pharma sections specifically. At Tier 3, this is consistent with a **master reference chart for pharmaceutical procedures**: labels name ingredients, descriptions demonstrate processes, and the CENTER represents the product or vessel where processes converge. The physical appearance of the CENTER (spherical, with tubes/spikes pointing outward) is consistent with this interpretation but non-binding per C138/C140.
+**Generic indexing (C1128):** All 9 rosettes point to approximately the same B folios (mean inter-rosette Jaccard of top-5 sets = 0.322; f40v in top-5 for 8/9 rosettes). The foldout is a shared vocabulary hub, not a specific lookup table. Any index function operates through vocabulary-mediated correlation (C384.a), not direct A-to-B addressing.
 
-A 4-test structural validation (Phase 389) confirmed this is not just a vocabulary anomaly — the Rosettes is a **structural index**:
-- **Bridge MIDDLEs enriched 3.46x** (p=6.9e-16) — preferentially uses the 85 vocabulary items that cross from A's discrimination manifold into B's execution grammar
-- **Bridge-concentrated affordance profile** — the 4 connective functional bins dominate (69.2%), while specialized bins are depleted (ENERGY_SPECIALIZED at 0.13x)
-- **Elevated mutual compatibility** (74-83% within-region vs 54% B corpus) — a consequence of bridge density
-- **PREFIX evenness exceeds all baselines** (0.791 vs B 0.738, A 0.745, AZC 0.710) — the index samples across operational lanes more evenly than any production text
+**Ring text structure (C1130-C1132):** Ring text has 0/277 forbidden transition violations but transition entropy 7.92 bits (vs B's ~0.41) — it respects hard constraints but ignores soft ones. It interleaves two populations: B-grammar bridge tokens (short, simple, 100% bridge) that serve as index entries, and unclassified identification tokens (long, complex, mostly non-bridge) that label foldout-specific concepts.
 
-Overall structural index score: 0.92/1.0. Any index function operates through vocabulary-mediated correlation (C384.a), not direct A-to-B addressing.
+**Section targeting — qualified (C1125, C1133):** All 9 rosettes correlate most strongly with Section T at the section level, but this is a vocabulary-size artifact (C1133). Section T has only 1 non-Rosettes folio (f66r, 112 MIDDLEs); per-folio, f66r ranks only #11/76. The top 10 overlapping folios are 9 Section S + 1 Section H. Bridge density anticorrelates with overlap (rho = -0.60). The foldout indexes diverse, vocabulary-rich folios — not Section T specifically.
 
-A 6-test bridge backbone survey (Phase 390) then mapped bridge density across the entire manuscript to understand the Rosettes' relationship to the rest of the grammar. Key findings: bridge density varies massively by section (p≈0), with Herbal highest (0.697) and Text lowest (0.453). The Phase 388H finding that Rosettes correlates most with Section T (C1090) turned out to be fully mediated by bridge vocabulary — when bridge MIDDLEs are removed, T drops to a three-way tie with B and S sections. The mechanism is Jaccard size sensitivity: T has the smallest vocabulary, inflating overlap ratios. The 10 bridge MIDDLEs absent from Rosettes are randomly distributed across sections, confirming the Rosettes indexes the entire grammar universally, not any specific section.
+At Tier 3, the Rosettes functions as a **general-purpose vocabulary reference hub** — an organizational index that connects the manuscript's control vocabulary through bridge MIDDLEs. Its AZC-like grammar is consistent with a positional encoding system rather than executable programs or registry entries.
 
-A 6-test section-bridge-dynamics investigation (Phase 391) then tested whether bridge density mediates the relationship between section identity and dynamical predictability. The key surprise: higher bridge density correlates with MORE unexplained AXM variation (rho=+0.277, p=0.025), not less. Bridge vocabulary provides behavioral options that programs exercise — it enables design freedom rather than constraining it. This explains the C1048 paradox: BIO is predictable because its moderate bridge density and narrow REGIME range (85% REGIME_1) limit options, while Herbal is unpredictable because its high bridge density and REGIME diversity maximize them. The Phase 390 finding that bridge density varies by REGIME (C1102) was completely resolved as a section confound — after section control, the partial correlation drops to zero (r=0.0007), confirming C979.
+New constraints: C1124-C1133.
 
-A 10-test Stars/Recipe characterization (Phase 392) then established Stars as a structurally distinct section: e-stability enriched (66.2% vs 57.4%, chi2=145, p~10^-32), 7.4x higher LINK density than non-Stars (the opposite of Bio which has 4.7x fewer LINKs), and a radically different CC trigger profile dominated by CLOSE_FLOW and FQ_FREQUENT while depleted in QO_ENERGY. Stars diverges from non-Stars within REGIME_1 on 5/8 operational dimensions. However, the vocabulary clamping hypothesis — that Stars' low AXM variance is caused by low bridge density restricting behavioral options — was falsified. No consistent intra-REGIME clamping, no e-stability mediation, no bridge mediation, and vocabulary is actually LESS homogeneous across REGIMEs than non-Stars. The Stars Paradox (most REGIME diversity but lowest AXM variance) remains an open question.
+### Cross-System Vocabulary Flow (Phase 406)
 
-New constraints: C1088-C1108. Constraint qualifications: C440.a (Rosettes exception to uniform sourcing), C757.a (Rosettes excluded from zero kernel/LINK), C1090 qualified by C1100 (bridge-mediated), C1102 resolved by C1103 (section confound).
+Phase 406 resolved a key architectural paradox: shared pipeline vocabulary is type-universal across sections (Herfindahl 0.701, C1049) yet B output is 96% section-specific (C909). How does universal input produce specific output?
+
+**Frequency modulation (C1134):** The same shared/PP MIDDLEs appear in all B sections but at section-specific token frequencies. PP vocabulary drives 74% of between-section JS divergence. B-exclusive vocabulary is maximally section-specific per-type but carries only 5.8% of tokens — negligible for section discrimination. The paradox resolves: vocabulary is type-universal but frequency-specific.
+
+**Dark pipeline (C1135):** Of 404 PP MIDDLEs shared between A and B, only 89 match B grammar classes. The other 315 are overwhelmingly present in B (95.2%) but at dramatically lower frequency (mean 5.7 tokens vs 224.8 for matched). They are section-concentrated, mostly compound (66.7%), and constitute the HT/UN derivational substrate — the morphological bridge between A's registry and B's unclassified layer.
+
+**Uniform flow (C1136):** A-Herbal and A-Pharmaceutical produce indistinguishable B coverage profiles (cosine 0.9997). The pipeline is section-blind. Pipeline grammar is highly concentrated: 12 A folios cover 100% of B's 89 classified MIDDLEs, with f58v alone covering 60.7%. But the full B inventory ceiling is only 30.4% from all 114 A folios — 70% of B vocabulary is completely B-internal.
+
+New constraints: C1134-C1136.
 
 ---
 
@@ -447,11 +462,11 @@ These interpretations have been structurally ruled out:
 
 ## How This Analysis Was Built
 
-This project was built using AI-assisted computational analysis over 390 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
+This project was built using AI-assisted computational analysis over 406 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
 
 The central methodological innovation is a **progressive context system**: a growing body of numbered, tiered, validated constraints that accumulates across research phases and is always available to the AI agents performing analysis. Every finding that survives statistical testing becomes a permanent constraint. Every falsified hypothesis is permanently closed. Each new phase starts with full knowledge of everything that came before.
 
-This matters because no single analytical session — human or AI — could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, and the Brunschwig alignment in one pass. But 390 phases, each building on validated prior work and never losing what was already proven, could. The constraint system is the project's memory, and its growth is what made the depth of analysis possible.
+This matters because no single analytical session — human or AI — could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, and the Brunschwig alignment in one pass. But 406 phases, each building on validated prior work and never losing what was already proven, could. The constraint system is the project's memory, and its growth is what made the depth of analysis possible.
 
 For technical details on the progressive context architecture, see the Methodology section in `README.md`.
 

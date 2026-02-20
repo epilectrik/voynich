@@ -1,6 +1,6 @@
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.84 | **Status:** FROZEN | **Constraints:** 900 | **Date:** 2026-02-14
+**Version:** 3.84 | **Status:** FROZEN | **Constraints:** 981 | **Date:** 2026-02-20
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -188,6 +188,7 @@ requires explicit authorization from the user.
 |--------------|----------------|
 | **Load transcript data** | [DATA/TRANSCRIPT_ARCHITECTURE.md](DATA/TRANSCRIPT_ARCHITECTURE.md) |
 | **Token annotation data** | [DATA/TRANSCRIPT_ARCHITECTURE.md](DATA/TRANSCRIPT_ARCHITECTURE.md) → Annotation Data Files |
+| **Rosettes foldout data** | [DATA/ROSETTES_DATA_ARCHITECTURE.md](DATA/ROSETTES_DATA_ARCHITECTURE.md) |
 | Understand the core finding | [CORE/frozen_conclusion.md](CORE/frozen_conclusion.md) |
 | Know what's been ruled out | [CORE/falsifications.md](CORE/falsifications.md) |
 | **Validate A structure (API)** | [STRUCTURAL_CONTRACTS/currierA.casc.yaml](STRUCTURAL_CONTRACTS/currierA.casc.yaml) |

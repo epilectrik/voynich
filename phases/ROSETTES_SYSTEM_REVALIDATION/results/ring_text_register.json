@@ -1,0 +1,582 @@
+{
+  "phase": 404,
+  "name": "RING_TEXT_REGISTER_CHARACTERIZATION",
+  "test_count": 12,
+  "ring_token_count": 286,
+  "ring_middle_count": 109,
+  "A1": {
+    "ring_mapped": 150,
+    "ring_unmapped": 136,
+    "ring_total": 286,
+    "n_classes_used": 33,
+    "js_ring_vs_b": 0.2709,
+    "js_ring_vs_uniform": 0.2906,
+    "js_b_vs_uniform": 0.1836,
+    "ring_class_entropy": 4.5101,
+    "b_class_entropy": 4.8613,
+    "top5_classes": [
+      [
+        9,
+        18,
+        0.12
+      ],
+      [
+        14,
+        15,
+        0.1
+      ],
+      [
+        13,
+        13,
+        0.08666666666666667
+      ],
+      [
+        2,
+        12,
+        0.08
+      ],
+      [
+        11,
+        11,
+        0.07333333333333333
+      ]
+    ],
+    "top5_fraction": 0.46,
+    "enriched_classes": [
+      [
+        2,
+        26.414222222222225
+      ],
+      [
+        3,
+        7.475723270440252
+      ],
+      [
+        16,
+        5.502962962962963
+      ],
+      [
+        25,
+        5.383333333333333
+      ],
+      [
+        9,
+        3.3514285714285714
+      ],
+      [
+        20,
+        3.247650273224044
+      ],
+      [
+        11,
+        2.822763385146805
+      ],
+      [
+        14,
+        2.3398425196850394
+      ],
+      [
+        27,
+        2.1533333333333333
+      ]
+    ],
+    "depleted_classes": [],
+    "ring_class_counts": {
+      "14": 15,
+      "19": 2,
+      "11": 11,
+      "20": 6,
+      "31": 2,
+      "39": 3,
+      "13": 13,
+      "9": 18,
+      "6": 3,
+      "7": 6,
+      "2": 12,
+      "17": 5,
+      "16": 5,
+      "27": 4,
+      "15": 2,
+      "24": 4,
+      "35": 1,
+      "43": 1,
+      "34": 5,
+      "3": 4,
+      "26": 1,
+      "21": 1,
+      "25": 5,
+      "28": 4,
+      "18": 2,
+      "29": 4,
+      "10": 1,
+      "23": 4,
+      "12": 1,
+      "32": 1,
+      "46": 1,
+      "47": 2,
+      "8": 1
+    }
+  },
+  "A2": {
+    "ring_role_counts": {
+      "FREQUENT_OPERATOR": 50,
+      "AUXILIARY": 64,
+      "CORE_CONTROL": 13,
+      "ENERGY_OPERATOR": 17,
+      "FLOW_OPERATOR": 6
+    },
+    "b_role_counts": {
+      "AUXILIARY": 3767,
+      "ENERGY_OPERATOR": 6809,
+      "FREQUENT_OPERATOR": 2639,
+      "CORE_CONTROL": 675,
+      "FLOW_OPERATOR": 968
+    },
+    "ring_mapped": 150,
+    "ring_unmapped": 136,
+    "js_ring_vs_b_roles": 0.1208
+  },
+  "A3": {
+    "ring_bridge_fraction": 0.3211,
+    "ring_bridge_count": 35,
+    "ring_total_middles": 109,
+    "non_ring_bridge_fraction": 0.2553,
+    "rosettes_overall": 0.2147,
+    "b_bootstrap_p95": 0.1101,
+    "b_bootstrap_p99": 0.1284,
+    "percentile": 100.0,
+    "pass": true,
+    "ring_elevated_vs_non_ring": true
+  },
+  "A4": {
+    "classified": {
+      "count": 150,
+      "mean_length": 4.0067,
+      "kernel_fraction": 0.2733,
+      "compound_fraction": 0.2258,
+      "bridge_fraction": 1.0,
+      "top_prefixes": [
+        [
+          "ok",
+          30
+        ],
+        [
+          "ot",
+          20
+        ],
+        [
+          "ol",
+          15
+        ],
+        [
+          "ch",
+          10
+        ],
+        [
+          "sh",
+          4
+        ]
+      ]
+    },
+    "unclassified": {
+      "count": 136,
+      "mean_length": 6.3971,
+      "kernel_fraction": 0.4779,
+      "compound_fraction": 0.4947,
+      "bridge_fraction": 0.2211,
+      "top_prefixes": [
+        [
+          "ot",
+          31
+        ],
+        [
+          "ok",
+          23
+        ],
+        [
+          "ch",
+          10
+        ],
+        [
+          "ol",
+          5
+        ],
+        [
+          "or",
+          5
+        ]
+      ]
+    },
+    "length_difference": 2.3904,
+    "distinct_populations": true
+  },
+  "B1": {
+    "total_bigrams": 277,
+    "unique_bigrams": 252,
+    "n_mids_in_bigrams": 109,
+    "sparsity": 0.9788,
+    "overall_entropy": 7.9223,
+    "mean_row_entropy": 2.1592,
+    "normalized_row_entropy": 0.3203,
+    "self_transition_rate": 0.0289,
+    "enriched_transitions": [
+      [
+        "k",
+        "r",
+        2,
+        17.3125
+      ],
+      [
+        "od",
+        "ek",
+        3,
+        17.3125
+      ],
+      [
+        "r",
+        "ar",
+        2,
+        9.233333333333334
+      ],
+      [
+        "od",
+        "ed",
+        3,
+        6.925
+      ],
+      [
+        "ol",
+        "ar",
+        3,
+        4.616666666666666
+      ],
+      [
+        "or",
+        "aiin",
+        2,
+        4.396825396825396
+      ],
+      [
+        "al",
+        "al",
+        3,
+        3.9571428571428573
+      ],
+      [
+        "edy",
+        "edy",
+        2,
+        3.8472222222222228
+      ],
+      [
+        "e",
+        "o",
+        2,
+        3.6209150326797386
+      ],
+      [
+        "or",
+        "e",
+        2,
+        3.419753086419753
+      ],
+      [
+        "al",
+        "od",
+        2,
+        3.297619047619048
+      ],
+      [
+        "al",
+        "ol",
+        2,
+        3.297619047619048
+      ],
+      [
+        "ol",
+        "al",
+        2,
+        3.0777777777777775
+      ],
+      [
+        "od",
+        "al",
+        2,
+        3.0777777777777775
+      ]
+    ],
+    "n_enriched": 14,
+    "permutation_baseline_mean": 2.1873,
+    "permutation_percentile": 19.7,
+    "b_body_bigram_entropy": 11.0956,
+    "b_body_mean_row_entropy": 2.293
+  },
+  "B2": {
+    "ring_compound_fraction": 0.4771,
+    "ring_compound_count": 52,
+    "ring_total_middles": 109,
+    "classified_compound_fraction": 0.2258,
+    "unclassified_compound_fraction": 0.4947,
+    "b_compound_fraction": 0.7525,
+    "non_ring_compound_fraction": 0.5957
+  },
+  "B3": {
+    "cosine_vs_b": 0.5604,
+    "cosine_vs_a": 0.5019,
+    "cosine_vs_azc": 0.8665,
+    "cosine_vs_inner_label": 0.9154,
+    "cosine_vs_outer_label": 0.7976,
+    "top5_prefixes": [
+      [
+        "ok",
+        53
+      ],
+      [
+        "ot",
+        51
+      ],
+      [
+        "ch",
+        20
+      ],
+      [
+        "ol",
+        20
+      ],
+      [
+        "sh",
+        8
+      ]
+    ],
+    "o_family_fraction": 0.6526,
+    "qo_fraction": 0.0316,
+    "ring_prefix_counts": {
+      "ot": 51,
+      "to": 3,
+      "da": 2,
+      "ch": 20,
+      "ok": 53,
+      "ol": 20,
+      "sh": 8,
+      "or": 5,
+      "qo": 6,
+      "ar": 2,
+      "sa": 3,
+      "al": 3,
+      "yk": 7,
+      "tch": 2,
+      "se": 1,
+      "ta": 1,
+      "do": 1,
+      "ka": 1,
+      "ke": 1
+    }
+  },
+  "B4": {
+    "suffix_rate": 0.5524,
+    "cosine_vs_b": 0.7719,
+    "cosine_vs_azc": 0.7709,
+    "cosine_vs_a": 0.6847,
+    "top5_suffixes": [
+      [
+        "ar",
+        27
+      ],
+      [
+        "aiin",
+        27
+      ],
+      [
+        "s",
+        16
+      ],
+      [
+        "edy",
+        16
+      ],
+      [
+        "dy",
+        15
+      ]
+    ],
+    "kernel_heavy_fraction": 0.2278,
+    "link_attr_fraction": 0.443,
+    "ring_suffix_counts": {
+      "s": 16,
+      "ar": 27,
+      "aiin": 27,
+      "ol": 6,
+      "r": 11,
+      "am": 2,
+      "edy": 16,
+      "or": 7,
+      "dy": 15,
+      "al": 12,
+      "y": 7,
+      "iin": 3,
+      "l": 1,
+      "hy": 2,
+      "m": 1,
+      "ain": 1,
+      "an": 1,
+      "ry": 1,
+      "ey": 2
+    }
+  },
+  "C1": {
+    "per_rosette": {
+      "CENTER": {
+        "n_tokens": 44,
+        "n_middles": 30,
+        "kernel_fraction": 0.25,
+        "grammar_coverage": 0.6591,
+        "bridge_fraction": 0.6667,
+        "pp_fraction": 0.8
+      },
+      "EAST": {
+        "n_tokens": 30,
+        "n_middles": 21,
+        "kernel_fraction": 0.5,
+        "grammar_coverage": 0.5667,
+        "bridge_fraction": 0.6667,
+        "pp_fraction": 0.7619
+      },
+      "NE": {
+        "n_tokens": 33,
+        "n_middles": 22,
+        "kernel_fraction": 0.3636,
+        "grammar_coverage": 0.5152,
+        "bridge_fraction": 0.6364,
+        "pp_fraction": 0.7727
+      },
+      "NORTH": {
+        "n_tokens": 36,
+        "n_middles": 27,
+        "kernel_fraction": 0.2778,
+        "grammar_coverage": 0.6389,
+        "bridge_fraction": 0.7407,
+        "pp_fraction": 0.7778
+      },
+      "NW": {
+        "n_tokens": 28,
+        "n_middles": 23,
+        "kernel_fraction": 0.4643,
+        "grammar_coverage": 0.3929,
+        "bridge_fraction": 0.5217,
+        "pp_fraction": 0.6957
+      },
+      "SE": {
+        "n_tokens": 26,
+        "n_middles": 23,
+        "kernel_fraction": 0.4231,
+        "grammar_coverage": 0.4615,
+        "bridge_fraction": 0.6957,
+        "pp_fraction": 0.8261
+      },
+      "SOUTH": {
+        "n_tokens": 31,
+        "n_middles": 21,
+        "kernel_fraction": 0.3226,
+        "grammar_coverage": 0.5806,
+        "bridge_fraction": 0.7143,
+        "pp_fraction": 0.8571
+      },
+      "SW": {
+        "n_tokens": 31,
+        "n_middles": 26,
+        "kernel_fraction": 0.3871,
+        "grammar_coverage": 0.3548,
+        "bridge_fraction": 0.5,
+        "pp_fraction": 0.5769
+      },
+      "WEST": {
+        "n_tokens": 27,
+        "n_middles": 24,
+        "kernel_fraction": 0.4444,
+        "grammar_coverage": 0.4444,
+        "bridge_fraction": 0.5417,
+        "pp_fraction": 0.7083
+      }
+    },
+    "coefficient_of_variation": {
+      "kernel_fraction": 0.2113,
+      "grammar_coverage": 0.1966,
+      "bridge_fraction": 0.1323,
+      "pp_fraction": 0.1045
+    },
+    "mean_pairwise_jaccard": 0.2365,
+    "c1128_reference": 0.322,
+    "ring_more_similar_than_overall": false
+  },
+  "C2": {
+    "ring_mean_length": 5.1434,
+    "ring_median_length": 5,
+    "b_mean_length": 5.1595,
+    "label_mean_length": 5.9704,
+    "ring_types": 205,
+    "hapax_count": 167,
+    "hapax_rate": 0.8146,
+    "foldout_unique_count": 75,
+    "foldout_unique_rate": 0.3659,
+    "foldout_unique_words": []
+  },
+  "C3": {
+    "first_half_tokens": 141,
+    "second_half_tokens": 145,
+    "first_half_kernel": 0.3404,
+    "second_half_kernel": 0.4,
+    "kernel_gradient": 0.0596,
+    "prefix_cosine_halves": 0.9696,
+    "has_gradient": false,
+    "has_prefix_shift": false
+  },
+  "C4": {
+    "inner_label": {
+      "n_tokens": 96,
+      "n_middles": 57,
+      "grammar_coverage": 0.2604,
+      "kernel_fraction": 0.2917,
+      "bridge_fraction": 0.3333,
+      "compound_fraction": 0.4737,
+      "js_class_vs_b": 0.6757,
+      "role_counts": {
+        "FREQUENT_OPERATOR": 8,
+        "AUXILIARY": 15,
+        "ENERGY_OPERATOR": 1,
+        "FLOW_OPERATOR": 1
+      }
+    },
+    "outer_label": {
+      "n_tokens": 39,
+      "n_middles": 33,
+      "grammar_coverage": 0.2051,
+      "kernel_fraction": 0.4103,
+      "bridge_fraction": 0.3636,
+      "compound_fraction": 0.5758,
+      "js_class_vs_b": 0.6781,
+      "role_counts": {
+        "AUXILIARY": 3,
+        "FREQUENT_OPERATOR": 3,
+        "ENERGY_OPERATOR": 2
+      }
+    }
+  },
+  "verdict": {
+    "verdict": "BRIDGE_VOCABULARY_INDEX",
+    "reason": "Structured class distribution (JS uniform=0.2906) with elevated bridge enrichment vs non-ring (32.1% vs 25.5%). Ring text specifically samples bridge vocabulary as cross-system index.",
+    "key_metrics": {
+      "js_ring_vs_uniform": 0.2906,
+      "js_ring_vs_b": 0.2709,
+      "top5_class_fraction": 0.46,
+      "bridge_fraction": 0.3211,
+      "bridge_elevated": true,
+      "n_enriched_transitions": 14,
+      "perm_percentile": 19.7,
+      "compound_fraction": 0.4771,
+      "mean_pairwise_jaccard": 0.2365,
+      "hapax_rate": 0.8146,
+      "foldout_unique_rate": 0.3659,
+      "has_positional_gradient": false
+    }
+  }
+}

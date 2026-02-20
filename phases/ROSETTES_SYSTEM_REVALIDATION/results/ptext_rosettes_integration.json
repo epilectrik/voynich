@@ -1,0 +1,456 @@
+{
+  "phase": 403,
+  "name": "PTEXT_ROSETTES_INTEGRATION_REVALIDATION",
+  "supersedes": "Phase 395 (PTEXT_ROSETTES_INDEXING_ARCHITECTURE) partial — 5 Rosettes-dependent tests",
+  "data_sources": {
+    "ptext": "Transcript.azc() filtered by P placement (main transcript)",
+    "rosettes": "data/rosettes_annotated.json (corrected ZL transcription)",
+    "bridge": "bridge_selection.json (85 MIDDLEs)",
+    "affordance": "middle_affordance_table.json",
+    "b_paragraphs": "BFolioDecoder.analyze_folio_paragraphs()"
+  },
+  "test_count": 7,
+  "counts": {
+    "ptext_tokens": 397,
+    "ptext_unique_mids": 121,
+    "ptext_folios": 9,
+    "rosettes_unique_mids": 177,
+    "a_unique_mids": 972,
+    "b_unique_mids": 1208,
+    "b_folios": 76,
+    "b_paragraphs": 552,
+    "bridge_middles": 85
+  },
+  "R1": {
+    "test": "R1",
+    "name": "Bridge Density Comparison (entity-decomposed)",
+    "verdict": "PASS",
+    "ptext_bridge_fraction": 0.4545,
+    "ptext_bridge_count": 55,
+    "ptext_total_mids": 121,
+    "rosettes_bridge_fraction": 0.2147,
+    "rosettes_bridge_count": 38,
+    "rosettes_total_mids": 177,
+    "per_entity_type": {
+      "clock_text": {
+        "bridge_count": 3,
+        "total_mids": 6,
+        "fraction": 0.5
+      },
+      "inner_label": {
+        "bridge_count": 19,
+        "total_mids": 57,
+        "fraction": 0.3333
+      },
+      "outer_label": {
+        "bridge_count": 12,
+        "total_mids": 33,
+        "fraction": 0.3636
+      },
+      "paragraph": {
+        "bridge_count": 1,
+        "total_mids": 2,
+        "fraction": 0.5
+      },
+      "ring": {
+        "bridge_count": 35,
+        "total_mids": 109,
+        "fraction": 0.3211
+      },
+      "spiral": {
+        "bridge_count": 3,
+        "total_mids": 12,
+        "fraction": 0.25
+      }
+    },
+    "bootstrap_n": 5000,
+    "bootstrap_p95": 0.124,
+    "bootstrap_mean": 0.0873,
+    "ptext_percentile": 100.0,
+    "above_a_p95": true,
+    "within_50pct_ros": true
+  },
+  "R2": {
+    "test": "R2",
+    "name": "Grammar Profile Divergence (diagnostic)",
+    "verdict": "DIAGNOSTIC",
+    "cosine_matrix": {
+      "ptext_vs_currier_a": 0.9641,
+      "ptext_vs_rosettes": 0.4934,
+      "ptext_vs_azc_diagram": 0.7595,
+      "currier_a_vs_rosettes": 0.4963,
+      "currier_a_vs_azc_diagram": 0.7619,
+      "rosettes_vs_azc_diagram": 0.9078
+    },
+    "key_findings": {
+      "ptext_to_A": 0.9641,
+      "ptext_to_rosettes": 0.4934,
+      "rosettes_to_AZC": 0.9078,
+      "ptext_is_A_like": true,
+      "rosettes_is_AZC_like": true,
+      "grammar_divergence": true
+    },
+    "profile_sizes": {
+      "ptext": 328,
+      "currier_a": 9257,
+      "rosettes": 286,
+      "azc_diagram": 2120
+    }
+  },
+  "R3": {
+    "test": "R3",
+    "name": "Vocabulary Overlap (entity-decomposed)",
+    "verdict": "PASS",
+    "jaccard_overall": 0.1374,
+    "intersection_size": 36,
+    "intersection_middles": [
+      "ai",
+      "aii",
+      "aiin",
+      "al",
+      "ar",
+      "ck",
+      "d",
+      "dy",
+      "e",
+      "edy",
+      "ee",
+      "eek",
+      "eey",
+      "ek",
+      "em",
+      "eo",
+      "ep",
+      "et",
+      "f",
+      "iin",
+      "k",
+      "keeo",
+      "ko",
+      "l",
+      "o",
+      "octh",
+      "od",
+      "oee",
+      "ol",
+      "op",
+      "opch",
+      "or",
+      "os",
+      "r",
+      "s",
+      "y"
+    ],
+    "ptext_mids_count": 121,
+    "rosettes_mids_count": 177,
+    "per_entity_type": {
+      "clock_text": {
+        "jaccard": 0.0242,
+        "intersection_size": 3,
+        "rosettes_type_mids": 6
+      },
+      "inner_label": {
+        "jaccard": 0.0988,
+        "intersection_size": 16,
+        "rosettes_type_mids": 57
+      },
+      "outer_label": {
+        "jaccard": 0.0694,
+        "intersection_size": 10,
+        "rosettes_type_mids": 33
+      },
+      "paragraph": {
+        "jaccard": 0.0082,
+        "intersection_size": 1,
+        "rosettes_type_mids": 2
+      },
+      "ring": {
+        "jaccard": 0.1675,
+        "intersection_size": 33,
+        "rosettes_type_mids": 109
+      },
+      "spiral": {
+        "jaccard": 0.0231,
+        "intersection_size": 3,
+        "rosettes_type_mids": 12
+      }
+    },
+    "bootstrap_n": 5000,
+    "bootstrap_p95": 0.0493,
+    "bootstrap_mean": 0.0319,
+    "ptext_percentile": 100.0
+  },
+  "R4": {
+    "test": "R4",
+    "name": "Paragraph Co-Tracking",
+    "verdict": "PASS",
+    "n_paragraphs": 552,
+    "spearman_rho": 0.5759,
+    "p_value_approx": 0.0,
+    "ptext_overlap_mean": 0.7068,
+    "rosettes_overlap_mean": 0.6227
+  },
+  "R5": {
+    "test": "R5",
+    "name": "Union Bridge Paragraph Prediction",
+    "verdict": "PASS",
+    "unified_mids_count": 262,
+    "header_mids_count": 690,
+    "cosine_unified_vs_headers": 0.8762,
+    "cosine_ptext_only_vs_headers": 0.81,
+    "cosine_rosettes_only_vs_headers": 0.8128,
+    "unified_better_than_individual": true,
+    "bin_vectors": {
+      "unified": [
+        0.3,
+        0.0417,
+        0.0083,
+        0.0333,
+        0.0417,
+        0.1917,
+        0.0417,
+        0.225,
+        0.1167
+      ],
+      "headers": [
+        0.2214,
+        0.1144,
+        0.048,
+        0.1218,
+        0.1144,
+        0.0849,
+        0.0664,
+        0.1365,
+        0.0923
+      ],
+      "ptext": [
+        0.2674,
+        0.0349,
+        0.0,
+        0.0116,
+        0.0349,
+        0.2674,
+        0.0465,
+        0.2442,
+        0.093
+      ],
+      "rosettes": [
+        0.2714,
+        0.0286,
+        0.0143,
+        0.0429,
+        0.0286,
+        0.2857,
+        0.0143,
+        0.2,
+        0.1143
+      ]
+    }
+  },
+  "R6": {
+    "test": "R6",
+    "name": "Section T Mediation (diagnostic)",
+    "verdict": "DIAGNOSTIC",
+    "shared_vocabulary_size": 36,
+    "per_section_coverage": {
+      "B": {
+        "shared_in_section": 34,
+        "fraction_of_shared": 0.9444,
+        "section_total_mids": 396
+      },
+      "H": {
+        "shared_in_section": 34,
+        "fraction_of_shared": 0.9444,
+        "section_total_mids": 406
+      },
+      "S": {
+        "shared_in_section": 35,
+        "fraction_of_shared": 0.9722,
+        "section_total_mids": 851
+      },
+      "T": {
+        "shared_in_section": 27,
+        "fraction_of_shared": 0.75,
+        "section_total_mids": 112
+      }
+    },
+    "per_section_jaccards": {
+      "B": {
+        "jaccard": 0.3469,
+        "ptext_in_section": 68,
+        "rosettes_in_section": 64
+      },
+      "H": {
+        "jaccard": 0.3063,
+        "ptext_in_section": 77,
+        "rosettes_in_section": 68
+      },
+      "S": {
+        "jaccard": 0.2574,
+        "ptext_in_section": 86,
+        "rosettes_in_section": 85
+      },
+      "T": {
+        "jaccard": 0.45,
+        "ptext_in_section": 47,
+        "rosettes_in_section": 40
+      }
+    },
+    "section_t_fraction": 0.75,
+    "best_section": "S",
+    "is_t_dominated": true
+  },
+  "R7": {
+    "test": "R7",
+    "name": "Indexing Specificity Comparison (diagnostic)",
+    "verdict": "DIAGNOSTIC",
+    "ptext_sources": 9,
+    "rosettes_sources": 9,
+    "ptext_intra_overlap": 0.2534,
+    "rosettes_intra_overlap": 0.3222,
+    "cross_group_overlap": 0.1013,
+    "specificity_comparison": "PTEXT_MORE_SPECIFIC",
+    "ptext_targets": {
+      "f65v": [
+        "f55v",
+        "f33v",
+        "f40v",
+        "f48v",
+        "f33r"
+      ],
+      "f67r1": [
+        "f40r",
+        "f48v",
+        "f33v",
+        "f94r",
+        "f41r"
+      ],
+      "f67r2": [
+        "f55r",
+        "f33v",
+        "f41v",
+        "f40r",
+        "f95r1"
+      ],
+      "f68r1": [
+        "f26v",
+        "f94v",
+        "f48r",
+        "f95r1",
+        "f50v"
+      ],
+      "f68r2": [
+        "f33v",
+        "f48v",
+        "f78v",
+        "f41v",
+        "f48r"
+      ],
+      "f68v2": [
+        "f33v",
+        "f40r",
+        "f48r",
+        "f41v",
+        "f26r"
+      ],
+      "f68v3": [
+        "f40r",
+        "f94r",
+        "f33v",
+        "f41v",
+        "f26r"
+      ],
+      "f69r": [
+        "f33v",
+        "f31v",
+        "f40r",
+        "f48r",
+        "f41v"
+      ],
+      "f70r2": [
+        "f33v",
+        "f48r",
+        "f94v",
+        "f48v",
+        "f34r"
+      ]
+    },
+    "rosettes_targets": {
+      "CENTER": [
+        "f40v",
+        "f95r2",
+        "f40r",
+        "f33r",
+        "f55r"
+      ],
+      "EAST": [
+        "f95v2",
+        "f95r2",
+        "f94r",
+        "f40v",
+        "f33r"
+      ],
+      "NE": [
+        "f40v",
+        "f26v",
+        "f95v2",
+        "f55r",
+        "f94r"
+      ],
+      "NORTH": [
+        "f40v",
+        "f40r",
+        "f55v",
+        "f95v2",
+        "f94r"
+      ],
+      "NW": [
+        "f40v",
+        "f33v",
+        "f40r",
+        "f50r",
+        "f95r2"
+      ],
+      "SE": [
+        "f40v",
+        "f95v2",
+        "f48v",
+        "f95r2",
+        "f40r"
+      ],
+      "SOUTH": [
+        "f40v",
+        "f94r",
+        "f33r",
+        "f95r2",
+        "f55r"
+      ],
+      "SW": [
+        "f95r2",
+        "f40v",
+        "f95v2",
+        "f48r",
+        "f50v"
+      ],
+      "WEST": [
+        "f40v",
+        "f94r",
+        "f26v",
+        "f95r1",
+        "f50v"
+      ]
+    }
+  },
+  "synthesis": {
+    "formula": "R1 + R3 + (I2_original | R4) + R5",
+    "i2_original_note": "FAIL in Phase 395 (not re-tested, R4 carries this slot)",
+    "components": {
+      "R1": "PASS",
+      "R3": "PASS",
+      "R4": "PASS",
+      "R5": "PASS"
+    },
+    "pass_count": "4/4",
+    "verdict": "UNIFIED_CONFIRMED"
+  }
+}

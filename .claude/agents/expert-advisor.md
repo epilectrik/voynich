@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 988 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 981 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (988 validated)
+- Tier 0-2 binding constraints (981 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 988 constraints, 66 fits,
+full content in their source documents. All 981 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-19 11:42
-**Version:** FROZEN STATE (988 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-20 11:28
+**Version:** FROZEN STATE (981 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -113,7 +113,7 @@ and 4 structural contracts are complete.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.84 | **Status:** FROZEN | **Constraints:** 900 | **Date:** 2026-02-14
+**Version:** 3.84 | **Status:** FROZEN | **Constraints:** 981 | **Date:** 2026-02-20
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -1101,7 +1101,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 988 constraints | 2026-02-19
+CONSTRAINT_REFERENCE v2.6 | 981 constraints | 2026-02-20
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2058,20 +2058,7 @@ C1084	**Section-Specific AXM Attractor Ordering** > S(0.687) > C(0.635) > H(0.58
 C1085	**Bio Section Kernel-Balance Distinctiveness**
 C1086	**Bio Section Apparatus-Hazard Depletion**
 C1087	**Bio-REGIME_1 Multidimensional Divergence**
-C1088	**Rosettes Hybrid Classification** (10-test battery: 64.7% grammar coverage, 0.054% forbidden violation, 0.97% LINK, 38.8% kernel, per-folio gradient f85v2=6.538 AZC-like to f86v6=0.296 B-like; overall HYBRID)
-C1089	**Rosettes Near-Complete Vocabulary Coverage** (48/49 classes 98%, 23/23 hub MIDDLEs 100%, 93.1% core B vocabulary; exceeds C438 83% AZC coverage; entropy 1.767 vs B 1.458)
-C1090	**Rosettes Section T Correlation** (all 7 folios and all 16 f85v2 regions correlate most with Section T; uniform across AZC-to-B gradient)
-C1091	**Rosettes Multi-Target Cross-Reference** (label groups converge on pharma folios f76r/f108r/f111r; different regions point to different sections; breaks C440 uniformity)
-C1092	**Rosettes SOUTH (C2) TARGET-Dominant Profile** (C2=SOUTH: SOURCE:TARGET=0.36, core-only vocabulary, aiin suffix concentration; originally interpreted as CENTER convergence node, **positional interpretation revised Phase 396** — C2 is SOUTH cardinal, not CENTER)
-C1093	**Rosettes Label-Description Bifurcation** (f85v2: 8 label regions 87 tokens A-like + 8 description regions B-like; 49 unique label MIDDLEs, 9 not in B body text, 29 exclusive to Rosettes)
-C1094	**Rosettes Exclusive Vocabulary Is Morphological Tail** (79 exclusive MIDDLEs: mean length 4.91, 98.7% hapax, 78.5% compound; matches C618/C766 UN profile)
-C1095	**Rosettes Metalayer Status** (GLOBAL: foldout functions as structural metalayer above A/B/AZC; near-complete coverage, spatial gradient, multi-target cross-ref, higher entropy, mixed roles)
-C1096	**Rosettes Bridge MIDDLE Enrichment**
-C1097	**Rosettes Bridge-Concentrated Affordance Profile** (bridge bins 0,6,8,9 = 69.2% of MIDDLEs; HUB_UNIVERSAL 2.20x enriched 23/23 present; ENERGY_SPECIALIZED 0.13x near-absent; LABEL 79.4%, DESC 86.5% bridge bins)
-C1098	**Rosettes Structural Index Confirmed** (GLOBAL: 4-test structural validation mean score 0.92; elevated compatibility, bridge enrichment, bridge-concentrated bins, PREFIX evenness > all baselines; index function is vocabulary-mediated per C384.a)
 C1099	**Bridge Density Section Gradient**
-C1100	**Rosettes-T Jaccard Is Bridge-Mediated**
-C1101	**Rosettes Universal Bridge Scope**
 C1102	**Bridge Density REGIME Dependence**
 C1103	**REGIME-Bridge Density Is Section Confound**
 C1104	**Bridge Density Enables Dynamical Freedom**
@@ -2079,21 +2066,27 @@ C1105	**Bridge Geometry-Density Collinearity** (r=-0.805; delta-R²=0.007 NS bey
 C1106	**Stars e-Stability Kernel Enrichment**
 C1107	**Stars LINK Monitoring Concentration**
 C1108	**Stars Vocabulary Clamping Falsified** (S7-S10: 0 PASS, 3 FAIL; no consistent intra-REGIME clamping, no e-mediation, no bridge mediation, vocabulary LESS homogeneous across REGIMEs; Stars Paradox remains open)
-C1109	**Rosettes Cross-Reference is Vocabulary-Mediated, Not Process-Demonstrating**
-C1110	**SOUTH (C2) Directional Profile Confirmed**
 C1111	**Stars Paradox is REGIME Composition Artifact**
-C1112	**P-Text Bridge Enrichment at Extreme Levels** (45.5% bridge MIDDLEs, 100th percentile of A; exceeds Rosettes 24.4%; affordance cosine 0.925 with Rosettes; non-bridge B-transmission 60.6% — bridges do not fully explain C486)
-C1113	**P-Text and Rosettes Share Unified Bridge-Vocabulary Indexing System**
-C1114	**Rosettes Ring Text Construction Compliance** (5 ring texts, 155 tokens: 0/155 PREFIX-MIDDLE selectivity violations, 0/25 forbidden MIDDLE transition violations, 68.4% B-class coverage matching B corpus 69.5%; ring texts are constructed by B grammar rules)
-C1115	**Rosettes Ring Text Operational Divergence** (AXM 32.1% vs B 66.7%, FQ 39.6% vs B 19.2%, EN 7.5% vs B 31.2%; ok-dominant 37.1% vs B 7.9%; HUB_UNIVERSAL 79.6% with 3 specialist bins at 0%; B-grammatical but different functional register — frequency/monitoring-dominant, universal connector vocabulary only)
+C1112	**P-Text Bridge Enrichment** (45.5% bridge MIDDLEs, 55/121 unique, 100th percentile of A bootstrap; exceeds Rosettes 21.5% by 2.1x; evidence independent of Rosettes transcript)
 C1116	**Within-REGIME Section Parameterization**
 C1117	**LTR Reading Direction Confirmed**
 C1118	**Bidirectional Forbidden Co-occurrence Dominance** (75.2% of MIDDLE-level forbidden pairs 1244/1655 are bidirectional adjacency prohibitions; 24.8% direction-specific; explains C1034 symmetric forbidden model improvement; broader MIDDLE co-occurrence landscape is predominantly symmetric while 17 class-level transitions C783 are directional)
 C1119	**MIDDLE Forward Bias as Reading Direction Evidence**
 C1120	**Lifecycle Domain Progression Falsified**
 C1121	**Folio-Level Domain Determination** (paragraph domain character Bio/Stars determined at folio level ICC=0.393, F(45,95)=2.98; within REGIME_1 section predicts Bio-score Bio=0.131 vs Stars=-0.027 diff=0.158; within-paragraph domain stable perm p=0.19; consistent with C1087 Bio divergence)
-C1122	**Rosettes-B Bridge-Dominant Vocabulary Architecture**
-C1123	**Rosettes Section-Categorical Index Structure**
+C1124	**Rosettes Bridge Enrichment (Revalidated)** (3.05x enrichment: 21.5% bridge MIDDLEs vs 7.0% B baseline; universal across entity types — ring 4.56x, inner_label 4.74x, outer_label 5.17x, spiral 3.55x, clock 7.11x; no type below 25%)
+C1125	**Rosettes Universal Section T Correlation**
+C1126	**Rosettes Metalayer Status (Revalidated)** (confirmed metalayer: AZC-like entity types, 3.05x bridge enrichment, universal Section T indexing, 2.2x MIDDLE compatibility; verdict ROSETTES_CONFIRMED_METALAYER)
+C1127	**Rosettes AZC-Like Grammar Profile** (grammar coverage 42.0%, kernel density 29-41%, LINK density <2.1% except ring 4.2%; morphological cosine 0.49-0.82 with AZC vs 0.25-0.67 with B; PP ~50%, RI ~2%; consistently AZC-like not hybrid)
+C1128	**Rosettes Generic (Not Specific) Indexing**
+C1129	**P-Text/Rosettes Unified Indexing (Revalidated)**
+C1130	**Ring Text Forbidden Compliance Without Transition Grammar** (0 forbidden violations in 277 MIDDLE bigrams; bigram entropy 7.92 bits vs B ~0.41; 252/277 unique bigrams; respects C783 hard constraints but has random transition structure; supersedes C1114/C1115)
+C1131	**Ring Text Register Classification — BRIDGE_VOCABULARY_INDEX** (52.4% map to B grammar using 33/49 classes; AUXILIARY 42.7%, ENERGY 11.3%; bridge enrichment 32.1% > non-ring 25.5% > B p95 11.0%; 100% of classified MIDDLEs are bridge; no positional structure; structured class distribution JS=0.291 from uniform)
+C1132	**Ring Text Dual Population Structure** (classified: 150 tokens, 4.0 chars, 27.3% kernel, 22.6% compound, 100% bridge; unclassified: 136 tokens, 6.4 chars, 47.8% kernel, 49.5% compound, 22.1% bridge — two interleaved functional vocabularies)
+C1133	**Rosettes Targeting Decomposition**
+C1134	**Section Specificity Is Frequency-Modulated** (PP drives 74% of section divergence through token frequency variation; B-exclusive JS=0.847 but only 5.8% of tokens; resolves C1049/C909 paradox)
+C1135	**Unmatched PP Dark Pipeline** (300/315 unmatched PP MIDDLEs present in B at low frequency: mean 5.7 tokens vs 224.8 matched; section-concentrated Herf=0.716; 66.7% compound; large HT/UN substrate)
+C1136	**A->B Flow: Uniform Pool, Concentration-Structured** (A-H/A-P cosine=0.9997; 12 A folios cover 100% classified grammar; f58v alone=60.7%; max A->B coverage ceiling 30.4%)
 
 ---
 
@@ -4310,199 +4303,43 @@ Only Tier 0-2 structural findings are binding.
 
 ## Navigation
 
-## XI. Rosettes Foldout as Structural Index (Phases 387-391)
-### Tier 2: Structural Finding (METALAYER_CONFIRMED)
+## XI. Rosettes Foldout (STATUS: REVALIDATED — Phase 402)
 
-> **The Rosettes foldout (f85-f86, 7 folios, ~2,064 tokens) is a structural metalayer above the A/B/AZC hierarchy, containing near-complete vocabulary coverage, a spatial AZC-to-B gradient, and targeted cross-references to pharmaceutical procedure folios.**
+### Tier 2: Structural Findings
 
-This is NOT a Tier 3 interpretation. The metalayer status is a structural fact (Tier 2) supported by 31 quantitative tests across Phases 387-391. See C1088-C1105 for full evidence.
+**Metalayer confirmed (C1126):** The Rosettes foldout is an organizational metalayer sitting above the standard A/B/AZC systems and cross-referencing the body text. This is the core finding — it is not a standard B program page, not a standard AZC positional page, but a meta-structural index.
 
+**AZC-like grammar (C1127):** All entity types (ring text, labels, paths, spiral, clock) show consistent AZC-type morphology: grammar coverage ~42% (B: ~100%, AZC: ~50%), kernel density 29-41%, PP ~50%/RI ~2%. Not a hybrid — the old hybrid classification (C1088) was a data artifact.
 
+**Bridge enrichment (C1124):** 3.05x enrichment over B corpus (21.5% vs 7.0%). Universal across all sub-region types — ring 4.56x, labels 4.74-5.17x, clock 7.11x. The foldout preferentially samples cross-system vocabulary.
 
+**Section T indexing — QUALIFIED (C1125, C1133):** All 9 rosettes correlate most strongly with Section T at the section level, but this is a vocabulary-size artifact (C1133). Section T has only 1 non-Rosettes folio (f66r, 112 MIDDLEs); per-folio, f66r ranks #11/76. Top 10 overlapping folios are 9 Section S + 1 Section H. Bridge density anticorrelates with overlap (rho = -0.60). The foldout indexes diverse, vocabulary-rich folios, not Section T specifically.
 
-| Group | Type | Content |
-|-------|------|---------|
-| BOTTOM (B1-B3) | Labels | 38 entries, largest vocabulary index |
-| MIDDLE (M1-M3) | Labels + small desc | 33 entries, hub-critical vocabulary |
+**Generic indexing (C1128):** All rosettes point to approximately the same B folios (mean inter-rosette Jaccard of top-5 sets = 0.322; f40v in top-5 for 8/9 rosettes). The foldout is a shared vocabulary hub, not a specific lookup table.
 
+**Ring text forbidden compliance (C1130):** Ring text has 0/277 forbidden transition violations but transition entropy 7.92 bits (vs B's ~0.41). Respects hard constraints, ignores soft ones.
 
-### Tier 3: Pharmaceutical Process Reference Interpretation
+**Ring text register classification (C1131):** Ring text is a BRIDGE_VOCABULARY_INDEX — a distinct register that samples B-grammar bridge vocabulary under hard constraints. 52.4% of tokens map to B grammar, AUXILIARY role dominates (42.7%), 100% of classified MIDDLEs are bridge. Structured class distribution, not random enumeration.
 
-> **The Rosettes foldout is a master reference chart for the manuscript's pharmaceutical procedures, showing process types (descriptions), ingredient vocabulary (labels), and functional vocabulary profiles in a spatially organized 3x3 grid diagram.**
+**Ring text dual population (C1132):** Ring text interleaves two populations: (1) B-grammar bridge tokens (short, simple, 100% bridge) that serve as index entries, and (2) unclassified identification tokens (long, complex, mostly non-bridge) that label foldout-specific concepts.
 
-**Caveats:**
-- This interpretation is consistent with but not proven by the structural evidence
-- C138/C140 (illustrations are epiphenomenal) applies — visual features (tubes, spherical center) are suggestive context, not binding evidence
-- The SOUTH rosette's (C2) TARGET-dominant profile was originally interpreted as center convergence; with corrected mapping (C2=SOUTH), the spatial convergence interpretation is weakened
-- Section T correlation could indicate monitoring/quality-control function rather than production reference
+### Tier 3: Spatial Structure (Inconclusive)
 
-**Strongest candidate models:**
-1. **Process taxonomy** — 9 rosettes map to 9 categories of pharmaceutical procedure, with labels naming ingredients and descriptions showing operational character per category. Phase 396 functional profiling supports this: each rosette has a distinct kernel emphasis (k/h/e balance) while sharing universal bridge vocabulary.
-2. **Functional decomposition** — All rosettes share the same bridge vocabulary pointing to the same B paragraphs (Jaccard ~0.98), but differ in kernel emphasis. This suggests the diagram shows the same operations from different functional perspectives (energy, stability, monitoring).
-3. **Galen's Nine Temperaments** (1+4+4 structure) — CENTER (N2) as balanced/most balanced k/e ratio (0.50), 4 cardinals as process phases, 4 corners as operational contexts. Phase 396 data partially supports: CENTER has highest h_frac (monitoring).
+Path tokens do not bridge endpoint rosette vocabularies, and vocabulary similarity does not decay with spatial distance. These tests were underpowered — most individual entities have <10 tokens, limiting statistical sensitivity for spatial patterns.
 
-**Note:** The original "distillation apparatus with CENTER as collection vessel" model was based on misidentifying C2 as CENTER. With corrected mapping (C2=SOUTH, N2=CENTER), CENTER (N2) has the most balanced kernel profile, not a convergence profile. The distillation model is weakened but not ruled out.
 
-- **C757.a:** Rosettes excluded from "AZC Zero Kernel/Link" — presence of 38.8% kernel and 0.97% LINK is what distinguishes metalayer from standard AZC
-- **C440.a:** Rosettes exception to uniform B-to-AZC sourcing — multi-target cross-referencing
-- **C430:** AZC bifurcation (Zodiac vs A/C) may extend to trifurcation including Rosettes metalayer
-### Tier 2: Structural Index Confirmation (Phase 389, C1096-C1098)
+---
 
-Phase 389 confirmed the metalayer operates as a **structural index** through 4 independent tests (mean score 0.92/1.0):
 
-| Test | Verdict | Key Finding |
-|------|---------|-------------|
-| V1: C475 Compatibility | ELEVATED_COMPATIBILITY | Rosettes 74-83% vs B corpus 54% mutual compatibility |
-| V2: Bridge Enrichment | ENRICHED | 3.46x enrichment (p=6.9e-16), all folios 6-9x |
-| V3: Affordance Bins | BRIDGE_CONCENTRATED | Bridge bins 69.2%, HUB_UNIVERSAL 2.20x, ENERGY 0.13x |
-| V4: PREFIX Distribution | INDEX_PROFILE | Evenness 0.791 > B (0.738), A (0.745), AZC (0.710) |
+## XII. Cross-System Vocabulary Flow (Phase 406)
 
-**Bridge enrichment (C1096)** is the headline: 75/308 unique MIDDLEs are bridges (24.4% vs 7.0% B baseline). LABEL regions: 6.38x enrichment. DESCRIPTION regions: 9.27x enrichment. The Rosettes preferentially uses the vocabulary that carries 91% of viability signal (C1014).
+### Tier 2: Structural Findings
 
-**Affordance profile (C1097)** reveals the functional signature: connective bins (HUB, FLOW, STABILITY, PHASE) dominate at 69.2%, while specialized bins are depleted. ENERGY_SPECIALIZED is almost absent (0.13x). This is not a program performing operations — it is a vocabulary reference organized by functional category.
+**Section specificity is frequency-modulated (C1134):** The same shared/PP MIDDLEs appear in all B sections (type-universal) but at section-specific token frequencies. PP vocabulary drives 74% of between-section JS divergence (JS_PP=0.124 vs JS_ALL=0.167). B-exclusive vocabulary is maximally section-specific per-type (JS=0.847) but carries only 5.8% of tokens, making it token-negligible for section discrimination. The paradox resolves: vocabulary is type-universal but frequency-specific.
 
-**Compatibility (V1)** is explained by bridge density: bridge MIDDLEs are by definition the most general, widely compatible vocabulary (C1013: compatibility degree 12x non-bridges). High bridge concentration produces high mutual compatibility.
+**Unmatched PP dark pipeline (C1135):** Of 404 PP MIDDLEs, only 89 match B grammar classes. The other 315 are overwhelmingly present in B (95.2%, 300/315) but at dramatically lower frequency (mean 5.7 tokens vs 224.8 for matched; mean 4.6 folios vs 39.0). They are section-concentrated (Herf 0.716), mostly compound (66.7%), and constitute the HT/UN derivational substrate — the morphological bridge between A's registry and B's unclassified layer.
 
-**C384 note:** Any index function operates through vocabulary-mediated correlation (C384.a: "CONDITIONAL RECORD-LEVEL CORRESPONDENCE PERMITTED"), not direct A-to-B addressing.
-
-### Tier 2: Bridge Backbone Survey (Phase 390, C1099-C1102)
-
-Phase 390 mapped bridge density across the entire manuscript to test whether the Rosettes-T correlation (C1090) was mediated by shared bridge concentration. Six pre-registered predictions, 4 surprises:
-
-| Test | Prediction | Result | Key Finding |
-|------|-----------|--------|-------------|
-| P1: Section variation | Bridge density varies by section | **SIGNIFICANT** (p≈0) | H=0.697, T=0.453 — massive gradient |
-| P2: T highest | Section T has highest bridge density | **T LOWEST** (rank 8/8) | Opposite of prediction |
-| P3: AXM correlation | rho≈-0.308 replication | **NOT REPLICATED** | Proxy method unreliable |
-| P4: Missing bridges | Non-random section clustering | **RANDOM** (p=0.752) | Rosettes scope is universal |
-| P5: Mediation | Bridge density mediates T correlation | **FULL MEDIATION** | T wins ALL but loses NON-BRIDGE |
-| P6: REGIME independence | Bridge density REGIME-independent | **REGIME DEPENDENT** (p<0.0001) | Tension with C979 |
-
-Overall verdict: **MEDIATION_WITHOUT_T_PRIMACY** — Bridge vocabulary fully mediates the Rosettes-T Jaccard correlation (C1090), but the mechanism is Jaccard size sensitivity (T has smallest vocabulary = smallest union = inflated ratio), not shared bridge concentration. When bridge MIDDLEs are removed, non-bridge Jaccard shows B, T, and S essentially tied at 0.128 — the Rosettes has no preferential section overlap.
-
-**Key structural findings:**
-- The viability backbone runs through Herbal (H=0.697), not Text (T=0.453) — bridge density ranking is H > B > P > C > Z > A > S > T
-- The Rosettes is a universal bridge vocabulary index: 88.2% bridge coverage with no section bias (C1101)
-- Bridge density varies by REGIME (C1102), creating tension with C979 (weights not topology) — likely section-confounded, needs controlled test
-- The Rosettes has dual-layer structure: universal bridge layer (indexes whole grammar) + pharma-specific tail (C1091 cross-references)
-
-### Tier 2: Bridge Density Enables Dynamical Freedom (Phase 391, C1103-C1105)
-
-Phase 391 tested whether bridge density mediates the section→dynamics relationship. 6 pre-registered predictions, overall verdict SECTION_MEDIATES (4 PASS, 2 FAIL):
-
-| Test | Prediction | Result | Key Finding |
-|------|-----------|--------|-------------|
-| P1: Section control | REGIME effect vanishes | **PASS** | Partial r=0.0007, p=0.995 — C1102 is pure section confound |
-| P2: Residual anticorrelation | rho < -0.20 | **FAIL** (opposite!) | rho=+0.277, p=0.025 — more bridges → MORE residual |
-| P3: Herbal highest variance | H > B, S | **PASS** | H=0.0148 > B=0.0078 > S=0.0059 |
-| P4: Incremental R² | delta > 0.03 | **FAIL** | delta=0.007, collinearity r=-0.805 with bridge_pc1 |
-| P5: BIO LOO improvement | improvement > 0.05 | **PASS** | +0.071 (0.668→0.738) |
-| P6: Monotonic | No quadratic | **PASS** | Quadratic p=0.757, same sign, within 20% |
-
-**The headline finding (P2 reversal):** Bridge density positively correlates with |c1017_residual| — programs with more bridge vocabulary deviate MORE from the structural model. Bridge MIDDLEs are the most general, compatible vocabulary (C1013), so programs built from them have more legal transitions available. They use this expanded option space to tune their dynamics program-specifically.
-
-**C1102 definitively resolved (P1):** The REGIME-bridge density effect vanishes to r≈0 after section control. REGIME and section are deeply entangled (REGIME_4 is 100% Herbal, REGIME_1 is 0% Herbal). C979 stands without qualification.
-
-**C1048 paradox explained:** BIO is predictable (LOO R²=0.754) because moderate bridge density (0.609) + narrow REGIME (85% REGIME_1) limits behavioral options. Herbal is unpredictable (LOO R²=-0.242) because high bridge density (0.695) + maximum REGIME diversity maximizes options.
-
-**Design freedom is vocabulary-compositional:** The ~57% irreducible AXM residual (C1035) is not noise — it is enabled by bridge vocabulary composition. Bridge density and bridge_pc1 are collinear (r=-0.805), confirming C1017 already partially captures this mechanism. But the causal direction is now clear: vocabulary composition determines the size of the design freedom envelope.
-
-### Tier 2: Stars Section Characterization (Phase 392, C1106-C1108)
-
-Phase 392 tested whether Stars is structurally distinct and whether vocabulary clamping explains the Stars Paradox. 10 pre-registered predictions:
-
-| Test | Prediction | Result | Key Finding |
-|------|-----------|--------|-------------|
-| S1: Kernel balance | e-enrichment | **PASS** | 66.2% e vs 57.4%, chi2=145, p=3.3e-32; survives R1 control |
-| S2: Hazard profile | Distinct apparatus | **FAIL** | Apparatus-specific hazards identical (27.8% both) |
-| S3: REGIME_1 homogeneity | Stars diverges | **PASS** | 5/8 dimensions significant (k, h, e, LINK, AXM) |
-| S4: CC triggers | Different patterns | **PASS** | CLOSE_FLOW/FQ dominant, QO depleted; chi2=117, p=3e-25 |
-| S5: LINK density | Distinct usage | **PASS** | 7.4x higher (0.032 vs 0.004), r=-0.913 |
-| S6: Vocabulary specialization | Lower TTR, higher e | **FAIL** | Neither significant (e-frac marginal p=0.064) |
-| S7: Intra-REGIME clamping | Variance ratio < 0.5 | **FAIL** | R1=0.66 (lower) but R3=1.34 (higher) — inconsistent |
-| S8: e-stability mediation | rho < -0.20 | **FAIL** | rho=-0.023, p=0.918 — zero relationship |
-| S9: Bridge bottleneck | Mediation > 30% | **PARTIAL** | rho=+0.187 (right direction) but mediation=-2% |
-| S10: Vocabulary homogeneity | Higher cross-REGIME Jaccard | **FAIL** | Stars 0.283 < non-Stars 0.309 — opposite |
-
-**Overall: STARS_DISTINCT_UNCLAMPED** (3/4 mirror PASS, 0/4 clamping PASS)
-
-**Stars is distinct:** e-stability enriched, LINK-dense, flow/frequency control dominated. The kernel and LINK profiles are the inverse of Bio — Bio is k-enriched with minimal LINK (self-contained sustained heating), while Stars is e-enriched with maximum LINK (fire-method monitoring per C930). This is consistent with the Brunschwig framework: balneum mariae (Bio) vs direct fire (Stars).
-
-**Clamping hypothesis falsified:** The vocabulary-compositional explanation for Stars' low AXM variance does not hold. Low bridge density does not restrict behavioral options within Stars. e-stability concentration does not force dynamical convergence. Stars vocabulary is actually LESS homogeneous across REGIMEs than non-Stars.
-
-**Stars Paradox RESOLVED (Phase 394, C1111):** The paradox is a REGIME-composition artifact. Within-REGIME, Stars is NOT anomalous (R1: ratio 1.45, p=0.075; R3: ratio 0.60, non-Stars more convergent). Stars (0.00525) and Bio (0.00590) have near-identical AXM variance — Herbal (0.01303) is the true outlier due to its high within-R1 diversity. All 4 alternative mechanisms comprehensively falsified (0/11 sub-tests PASS): LINK regulation (zero correlation), CC channeling (wrong direction — Stars MORE diverse), paragraph constraint (wrong direction), de facto forbidden transitions (Stars has FEWER zeros). The REGIME system (C979) is sufficient.
-
-- CENTER convergence node directionally confirmed (C1110): higher tgt_fraction, lower k_pct
-
-
-
-
-- **P-text** is bridge-enriched at 45.5% (C1112) — the highest bridge concentration in the manuscript, exceeding even Rosettes (24.4%). Located on 9 AZC folios alongside zodiac diagrams.
-
-
-
-### Tier 4: Rosettes Labels vs Jar Labels (Hierarchical Naming)
-
-Rosettes labels and pharma jar labels (C523-C524) are **different systems** operating at different abstraction levels. Zero exact word overlap, different lengths (jars 7.2 chars vs Rosettes 5.3), different text presence (jars 0% in B vs Rosettes 49%). But both share material-facing prefix patterns: ok- and da- dominant, ch-/sh- (energy operations) largely avoided. One rare MIDDLE (`opar`) appears in both systems.
-
-Interpretation (Tier 4): Rosettes labels are **category-level identifiers** (types of ingredients/processes), while jar labels are **instance-level identifiers** (specific physical containers). The CENTER rosette (N2) contains vessel-like visual imagery (ring of alembic/retort vessels) that may depict the generic apparatus type that individual jar labels elsewhere name specific instances of. The Rosettes foldout sits one level above the jar labeling system in a naming hierarchy:
-
-```
-ROSETTES LABEL = "this type of process/ingredient" (category)
-  |
-  +-- JAR LABEL = "this specific container" (instance, C523-C524)
-        |
-        +-- CONTENT LABEL = "this specimen inside" (material, C523)
-```
-
-This is consistent with but not proven by the evidence. The shared prefix pattern is suggestive; the zero word overlap confirms they are not interchangeable.
-
-**Visual note (Tier 4, non-binding per C138/C140):** The pharma "jars" have spouts at the top that may represent distillation tubes (alembic necks/beaks), not pouring spouts. A standard alembic has three parts: cucurbit (gourd-shaped base, heated), alembic head (dome where vapors condense), and spout/beak (condensation tube to receiver). The Voynich vessels match this topology — rounded body with projecting tube — drawn in the manuscript's botanical illustration style. Visual parallels exist in apparatus illustrations across centuries (e.g., Lavoisier's apparatus engravings in "Essays on the Effects Produced by Various Processes on Atmospheric Air," 1784, show the same fundamental forms because retort/alembic design was stable from the 15th through 18th centuries). The CENTER rosette's vessel-like imagery with radiating tubes/spikes is drawn in a similar style. This would unify three independent structural findings: (1) C524 already interprets jar labels as apparatus configuration signatures, (2) the pelican alembic matches the manuscript's controller on 8/8 dimensions, and (3) C1092 identifies the CENTER as a convergence node. If "jars" are alembics, the naming hierarchy becomes: Rosettes labels = apparatus categories, "jar" labels = specific apparatus configurations, content labels = materials being processed. The visual consistency across sections (botanical illustration style applied to apparatus) would be expected in an apparatus-centric system (C120).
-
-
-
-
-| Dimension | Ring Text | B Baseline | Interpretation |
-|-----------|-----------|------------|----------------|
-| AXM (energy state) | 32.1% | 66.7% | Energy operations depressed |
-| FQ (frequency) | 39.6% | 19.2% | Monitoring/checking elevated |
-
-
-**Supporting evidence:**
-- C551: ENERGY and FLOW anticorrelated across sections (r=-0.89) — Herbal has highest FLOW/lowest ENERGY, Pharma has highest ENERGY/lowest FLOW. This is more naturally explained by different domains (water-based cultivation vs thermal processing) than by different distillation techniques.
-- C878: Section-level program variation — different sections have distinct operational profiles, consistent with different process domains sharing the same grammar.
-
-
-**Weaknesses:**
-- Visual evidence is non-binding per C138/C140
-- **Phase 398 section incompatibility test (C1116): TESTED, NOT SUPPORTED FOR UPGRADE.** Within REGIME_1, Bio and Stars show consistent quantitative divergence across all 6 tested dimensions but zero qualitative incompatibility (0 robust operator substitution pairs, no topology changes). All section differences are weight modulation, consistent with technique variation within a single process family (C1029). Expert validation confirmed: section divergence confirms C1029 at within-REGIME granularity, does not establish multi-domain.
-
-
-
-
-**Key findings:**
-- MIDDLE MI forward bias +0.070 bits (z=17.0) — MIDDLE predicts physical-right neighbor better than physical-left (C1119)
-- 75.2% of forbidden MIDDLE co-occurrences are bidirectional adjacency constraints (C1118), explaining C1034's symmetric model improvement
-- Vocabulary gradient: specification→execution matches C932 under LTR
-
-
-
-
-
-**Key findings:**
-- Within-paragraph Bio-score trend: Spearman rho = -0.068 (p=0.052, not significant). Slight negative trend is OPPOSITE of lifecycle prediction (C1120)
-- C932 rarity control: residualized rho = -0.067 (p=0.065). Negative trend explained by spec-to-exec gradient — specification vocabulary is incidentally Bio-enriched
-- Folio determines domain: ICC=0.393, ANOVA F(45,95)=2.98. Paragraphs inherit domain character from folio/section context (C1121)
-- REGIME_1 section parameterization: Bio-section Bio-score=0.131 vs Stars=-0.027 (diff=0.158). Bio-section paragraphs show significant NEGATIVE within-paragraph rho (z=-2.63, p=0.006) — C932 gradient wearing a domain mask
-
-
-
-
-
-**Key findings:**
-- Only 26 non-bridge informative MIDDLEs across 9 rosettes (C1122). Each rosette's informative vocabulary is completely unique (all pairwise Jaccard = 0.000).
-- Two section-targeting groups emerge: T-group (CENTER+NORTH+NW, 15 MIDDLEs) → Section T at 4.14x enrichment; S-group (WEST+SW, 9 MIDDLEs) → Section S at 2.04x enrichment (C1123). Both p<0.0001.
-- C1091 pharma folio targeting does not survive bridge-stripping (lift=1.55x, p=0.114 NS). Individual B-folio targeting requires bridge vocabulary.
+**A->B flow is uniform and concentrated (C1136):** A-Herbal and A-Pharmaceutical produce indistinguishable B coverage profiles (cosine 0.9997). The pipeline is section-blind — all A sections cover B-Herbal best and B-Stars worst, with identical relative profiles. Pipeline grammar is highly concentrated: 12 A folios cover 100% of B's 89 classified MIDDLEs, with f58v (Section T, text-only) alone covering 60.7%. The full B inventory ceiling is 30.4% from all 114 A folios — 70% of B vocabulary is completely B-internal.
 
 
 

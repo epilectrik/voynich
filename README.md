@@ -10,8 +10,8 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 
 | Metric | Value |
 |--------|-------|
-| Validated constraints | 952 |
-| Research phases completed | 385 |
+| Validated constraints | 981 |
+| Research phases completed | 406 |
 | Model fits tested | 66 |
 | Constraint tiers | 0 (frozen fact) through 4 (exploratory) |
 
@@ -20,6 +20,14 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 > The Voynich Manuscript's Currier B text encodes a family of **closed-loop, kernel-centric control programs** designed to maintain a system within a narrow viability regime, governed by a single shared grammar.
 
 This is not a natural language. This is not a cipher. This is a **control system reference manual** for a physical process. Structural comparison with Hieronymus Brunschwig's *Liber de arte distillandi* (1500) suggests reflux distillation as the most likely domain (Tier 3 interpretation — see Brunschwig Connection below).
+
+### The Approach: Structure, Not Translation
+
+Think of sheet music. If a researcher discovered musical scores without knowing the notation, they could never translate notes into words — because notes aren't words. But structural analysis would reveal patterns that fit the harmonic series: forbidden combinations matching dissonant intervals, positional rules matching musical form. They could prove the documents encode music without ever hearing a note played.
+
+We take the same approach with the Voynich Manuscript. We don't translate tokens into meanings. We prove that the manuscript's internal structure — 49 instruction classes, 17 forbidden transitions in 5 hazard classes, kernel-centric convergence, bounded recovery — fits the domain of thermodynamic process control. The forbidden transitions map onto physical failure modes. The convergence behavior matches distillation physics. The recovery architecture matches historical practice. The structure fits the domain the way sheet music fits harmonics.
+
+**[GUIDE.md](GUIDE.md)** provides a full walkthrough of all four manuscript systems and how they work together.
 
 ## Key Results
 
@@ -130,7 +138,7 @@ Renders any Currier B folio with morphological parse, structural roles, interpre
 
 ```
 voynich/
-  context/            # Constraint system (949 validated constraints)
+  context/            # Constraint system (981 validated constraints)
     CLAUDE_INDEX.md   # Start here for full documentation
     CLAIMS/           # Individual constraint files
     ARCHITECTURE/     # System architecture docs (A, B, AZC, cross-system)
@@ -139,7 +147,7 @@ voynich/
     SPECULATIVE/      # Tier 3-4 interpretations
   data/               # Transcript, dictionaries, Brunschwig recipes
   scripts/            # voynich.py core library + analysis tools
-  phases/             # 383 completed research phases
+  phases/             # 406 completed research phases
   results/            # Legacy analysis outputs (early phases; new results go in phases/)
   folio_analysis/     # Per-folio hazard maps
   annotation_data/    # Folio annotation work
@@ -152,11 +160,11 @@ voynich/
 
 | Tier | Meaning | Count |
 |------|---------|-------|
-| 0 | FROZEN FACT — proven, do not reopen | ~50 |
-| 1 | FALSIFICATION — rejected, do not retry | ~30 |
-| 2 | STRUCTURAL — high-confidence, bounded | ~500 |
-| 3 | SPECULATIVE — interpretive layer | ~150 |
-| 4 | EXPLORATORY — idea generation only | ~60 |
+| 0 | FROZEN FACT — proven, do not reopen | 25 |
+| 1 | FALSIFICATION — rejected, do not retry | 15 |
+| 2 | STRUCTURAL — high-confidence, bounded | 903 |
+| 3 | SPECULATIVE — interpretive layer | 35 |
+| 4 | EXPLORATORY — idea generation only | 3 |
 
 ## Methodology
 
@@ -172,17 +180,17 @@ The system works as follows:
 
 2. **Constraints are tiered by confidence.** Tier 0 constraints are frozen facts that cannot be reopened. Tier 1 constraints are falsified hypotheses that cannot be retried. Tier 2 constraints are high-confidence structural findings. Tiers 3-4 are speculative or exploratory. This prevents the system from drifting backward or re-deriving known results.
 
-3. **Context is always loaded.** Every new analysis session begins with the full constraint system available. The AI doesn't start from scratch — it starts from everything that has already been proven, disproven, or established. This means phase 385 benefits from all 952 constraints accumulated across the previous 384 phases.
+3. **Context is always loaded.** Every new analysis session begins with the full constraint system available. The AI doesn't start from scratch — it starts from everything that has already been proven, disproven, or established. This means phase 406 benefits from all 981 constraints accumulated across the previous 405 phases.
 
 4. **Structural contracts provide fast lookup.** As the constraint count grew, key subsystems were summarized into API-like contracts (YAML files) that encode the essential properties of each manuscript layer in a single file. These contracts are the "shallow API" — check the contract first, drill into individual constraints only when needed.
 
 5. **Falsification is permanent.** When a hypothesis fails, it is recorded as a Tier 1 falsification and can never be retried. This prevents circular investigation and forces the analysis forward. Over 30 hypotheses have been permanently closed this way, including natural language encoding, cipher systems, calendar theories, and character-level semantics.
 
-6. **Expert validation prevents drift.** An embedded expert-advisor agent carries a consolidated version of the entire constraint system — all 949 constraints, structural contracts, fit results, and architectural documentation — pre-loaded into its system prompt. When a research phase proposes new constraints, interpretive extensions, or structural changes, the expert-advisor validates them against the full body of existing knowledge in a single pass. This catches contradictions, tier violations, and semantic drift that would be invisible to any individual research phase working with partial context. The expert's consolidated context is regenerated from source whenever the constraint system changes, ensuring it always reflects the current state of knowledge.
+6. **Expert validation prevents drift.** An embedded expert-advisor agent carries a consolidated version of the entire constraint system — all 981 constraints, structural contracts, fit results, and architectural documentation — pre-loaded into its system prompt. When a research phase proposes new constraints, interpretive extensions, or structural changes, the expert-advisor validates them against the full body of existing knowledge in a single pass. This catches contradictions, tier violations, and semantic drift that would be invisible to any individual research phase working with partial context. The expert's consolidated context is regenerated from source whenever the constraint system changes, ensuring it always reflects the current state of knowledge.
 
 The result is a system where knowledge compounds: early phases discover basic morphology, middle phases build grammar and classification, late phases test external comparisons and characterize edge cases — and none of this work is ever lost or forgotten. Every constraint is traceable to specific statistical evidence.
 
-This architecture is what allowed the project to reach conclusions that would be impossible in a single analytical pass. No individual analysis session could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, and the Brunschwig alignment — but 385 phases, each building on validated prior work, could.
+This architecture is what allowed the project to reach conclusions that would be impossible in a single analytical pass. No individual analysis session could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, and the Brunschwig alignment — but 406 phases, each building on validated prior work, could.
 
 ## Data Source
 

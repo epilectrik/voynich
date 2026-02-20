@@ -3874,400 +3874,227 @@ class FolioNotes:
 # ============================================================
 # ROSETTES ANALYZER
 # ============================================================
-
-@dataclass
-class RosettesRegionProfile:
-    """Profile of a single placement region within the Rosettes foldout."""
-    folio: str
-    region: str                     # Placement code (e.g., 'P1', 'C2', 'N2')
-    transcriber: str                # Track used ('H', 'U', or 'V')
-    token_count: int
-    line_count: int
-    tokens: List[Token] = field(default_factory=list)
-    # Kernel balance
-    kernel_k: int = 0
-    kernel_h: int = 0
-    kernel_e: int = 0
-    kernel_total: int = 0
-    # Vocabulary
-    unique_middles: int = 0
-    middles: List[str] = field(default_factory=list)
-    # Morphology counts
-    prefixed_count: int = 0
-    suffixed_count: int = 0
-
-    @property
-    def k_pct(self) -> float:
-        return 100 * self.kernel_k / self.kernel_total if self.kernel_total else 0.0
-
-    @property
-    def h_pct(self) -> float:
-        return 100 * self.kernel_h / self.kernel_total if self.kernel_total else 0.0
-
-    @property
-    def e_pct(self) -> float:
-        return 100 * self.kernel_e / self.kernel_total if self.kernel_total else 0.0
-
-
-@dataclass
-class RosettesFolioProfile:
-    """Profile of a single Rosettes folio across all its regions."""
-    folio: str
-    transcriber: str                # Primary track used
-    has_h_track: bool
-    regions: List[RosettesRegionProfile] = field(default_factory=list)
-    total_tokens: int = 0
-    total_lines: int = 0
-    region_codes: List[str] = field(default_factory=list)
-    # Aggregate kernel balance
-    kernel_k: int = 0
-    kernel_h: int = 0
-    kernel_e: int = 0
-    kernel_total: int = 0
-    # Aggregate vocabulary
-    unique_middles: int = 0
-    all_middles: Set[str] = field(default_factory=set)
+# Data source: data/rosettes_annotated.json (ZL transcription + manual spatial annotations)
+# The EVA interlinear transcript is NOT used for Rosettes due to quality/coverage issues.
+# See context/DATA/ROSETTES_DATA_ARCHITECTURE.md for details.
 
 
 class RosettesAnalyzer:
     """
-    Analyzer for the Rosettes foldout (f85-f86).
+    Analyzer for the Rosettes foldout (f85v2 inside face — 9 rosette diagrams).
 
-    The Rosettes foldout is a 6-page spread with 9 rosette diagrams.
-    Text is distributed across multiple physical regions with different
-    placement codes. f85v2 (the central page) has NO H-track data,
-    requiring fallback to U/V transcriber tracks.
+    Data source: data/rosettes_annotated.json
+    Built from ZL (Zandbergen) transcription + manual spatial annotation.
+    The EVA interlinear transcript is NOT used for Rosettes due to quality issues.
+
+    The foldout contains 19 first-class entities:
+      - 9 rosettes: NW, NORTH, NE, WEST, CENTER, EAST, SW, SOUTH, SE
+      - 8 connecting paths: PATH_WEST_NW, PATH_NW_NORTH, etc.
+      - 1 clock element: CLOCK
+      - 1 catch-all: UNCLASSIFIED
+
+    Each entity has sub-regions (second-class types):
+      ring, inner_label, outer_label, spiral, paragraph, clock_text
+
+    Each token has pre-computed morphological analysis:
+      word, articulator, prefix, middle, suffix, is_bridge
 
     Usage:
         ra = RosettesAnalyzer()
         summary = ra.summary()
-        profile = ra.profile_folio('f85v2')
-        for region in profile.regions:
-            print(f"{region.region}: {region.token_count} tokens, k={region.k_pct:.1f}%")
+
+        # Get all MIDDLEs for a rosette
+        middles = ra.get_entity_middles('NW')
+
+        # Get tokens for a specific sub-region
+        tokens = ra.get_entity_tokens('NE', sub_region='ring')
+
+        # Vocabulary overlap with B corpus
+        overlap = ra.vocabulary_overlap()
     """
 
-    # All folios that are part of the Rosettes foldout
-    ROSETTES_FOLIOS = ['f85r1', 'f85r2', 'f85v2', 'f86v3', 'f86v4', 'f86v5', 'f86v6']
-
-    # f85v2 region-to-rosette mapping (based on physical layout analysis)
-    # The 9 rosettes are arranged in a 3x3-like pattern on the foldout.
-    # Region codes from transcription: B=bottom, C=center, D=?, M=middle,
-    # N=north/top, U=upper, V=?, W=west
-    # Numbered sub-regions (e.g., B1, B2, B3) are separate text blocks
-    # within the same physical rosette area.
-    F85V2_REGIONS = [
-        'B1', 'B2', 'B3', 'C2', 'D1', 'M1', 'M2', 'M3',
-        'N1', 'N2', 'U1', 'U2', 'U3', 'V1', 'V2', 'W1'
-    ]
-
-    # Track priority: prefer H, fall back to U, then V
-    TRACK_PRIORITY = ['H', 'U', 'V', 'F', 'C']
+    # The 9 physical rosette positions
+    ROSETTE_POSITIONS = ['NW', 'NORTH', 'NE', 'WEST', 'CENTER', 'EAST', 'SW', 'SOUTH', 'SE']
 
     def __init__(self):
-        self.tx = Transcript()
         self.morph = Morphology()
-        self._cache = None
+        self._data = None
+        self._b_corpus_middles = None
 
-    def _build_cache(self):
-        """Build per-folio, per-region, per-track token cache."""
-        if self._cache is not None:
-            return
-        # Structure: {folio: {region: {track: [tokens]}}}
-        cache = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
-        for tok in self.tx.all(h_only=False):
-            if tok.folio in self.ROSETTES_FOLIOS:
-                if tok.word.strip() and '*' not in tok.word:
-                    cache[tok.folio][tok.placement][tok.transcriber].append(tok)
-        self._cache = cache
 
-    def _best_track(self, folio: str, region: str) -> Optional[str]:
-        """Select best available transcriber track for a folio+region."""
-        self._build_cache()
-        region_data = self._cache.get(folio, {}).get(region, {})
-        for track in self.TRACK_PRIORITY:
-            if track in region_data and region_data[track]:
-                return track
-        return None
+    def _load(self) -> Dict:
+        """Load the annotated Rosettes JSON (cached)."""
+        if self._data is None:
+            path = PROJECT_ROOT / 'data' / 'rosettes_annotated.json'
+            with open(path, 'r', encoding='utf-8') as f:
+                self._data = json.load(f)
+        return self._data
 
-    def get_folios(self) -> List[str]:
-        """Return all Rosettes folio identifiers."""
-        return list(self.ROSETTES_FOLIOS)
+    def get_entities(self) -> List[str]:
+        """Return all entity names (rosettes, paths, clock, etc.)."""
+        return list(self._load()['entities'].keys())
 
-    def get_regions(self, folio: str) -> List[str]:
-        """Return placement regions for a given Rosettes folio."""
-        self._build_cache()
-        regions = sorted(self._cache.get(folio, {}).keys())
-        return regions
+    def get_rosettes(self) -> List[str]:
+        """Return just the 9 rosette position names."""
+        entities = self._load()['entities']
+        return [r for r in self.ROSETTE_POSITIONS if r in entities]
 
-    def get_tokens(self, folio: str, region: str = None,
-                   track: str = None) -> List[Token]:
+    def get_paths(self) -> List[str]:
+        """Return all path entity names."""
+        return [k for k in self._load()['entities'] if k.startswith('PATH_')]
+
+    def get_entity(self, name: str) -> Optional[Dict]:
+        """Get the full entity data dict for a named entity."""
+        return self._load()['entities'].get(name)
+
+    def get_entity_tokens(self, name: str, sub_region: str = None) -> List[Dict]:
+        """Get all token dicts for an entity, optionally filtered by sub-region.
+
+        Each token dict has: word, articulator, prefix, middle, suffix, is_bridge.
         """
-        Get tokens for a folio, optionally filtered by region and track.
-
-        If track is None, uses best available track per region.
-        If region is None, returns tokens from all regions.
-        """
-        self._build_cache()
-        folio_data = self._cache.get(folio, {})
+        entity = self.get_entity(name)
+        if not entity:
+            return []
         tokens = []
-
-        regions = [region] if region else sorted(folio_data.keys())
-        for r in regions:
-            region_data = folio_data.get(r, {})
-            t = track or self._best_track(folio, r)
-            if t and t in region_data:
-                tokens.extend(region_data[t])
+        for sr_name, sr_data in entity['sub_regions'].items():
+            if sub_region and sr_name != sub_region:
+                continue
+            for locus in sr_data['loci']:
+                tokens.extend(locus.get('words', []))
         return tokens
 
-    def has_h_track(self, folio: str) -> bool:
-        """Check if a folio has H-track transcription."""
-        self._build_cache()
-        folio_data = self._cache.get(folio, {})
-        for region_data in folio_data.values():
-            if 'H' in region_data and region_data['H']:
-                return True
-        return False
+    def get_entity_loci(self, name: str, sub_region: str = None) -> List[Dict]:
+        """Get all locus entries for an entity, optionally filtered by sub-region.
 
-    def available_tracks(self, folio: str) -> Dict[str, int]:
-        """Return {track: token_count} for a folio across all regions."""
-        self._build_cache()
-        counts = Counter()
-        for region_data in self._cache.get(folio, {}).values():
-            for track, toks in region_data.items():
-                counts[track] += len(toks)
-        return dict(counts)
+        Each locus has: locus_id, position, placement, first_class, second_class,
+        text_raw, text_clean, words, word_count, reviewed, notes, is_custom.
+        """
+        entity = self.get_entity(name)
+        if not entity:
+            return []
+        loci = []
+        for sr_name, sr_data in entity['sub_regions'].items():
+            if sub_region and sr_name != sub_region:
+                continue
+            loci.extend(sr_data['loci'])
+        return loci
 
-    def profile_region(self, folio: str, region: str) -> Optional[RosettesRegionProfile]:
-        """Profile a single placement region."""
-        track = self._best_track(folio, region)
-        if not track:
-            return None
+    def get_entity_middles(self, name: str, sub_region: str = None) -> Set[str]:
+        """Get the set of unique MIDDLEs for an entity."""
+        if sub_region is None:
+            entity = self.get_entity(name)
+            if entity:
+                return set(entity.get('unique_middles', []))
+            return set()
+        return {t['middle'] for t in self.get_entity_tokens(name, sub_region)
+                if t.get('middle')}
 
-        tokens = self.get_tokens(folio, region, track)
-        if not tokens:
-            return None
+    def get_entity_bridge_middles(self, name: str) -> Set[str]:
+        """Get bridge MIDDLEs for an entity (shared with B corpus)."""
+        entity = self.get_entity(name)
+        if entity:
+            return set(entity.get('bridge_middles', []))
+        return set()
 
-        # Kernel balance
-        k_count = h_count = e_count = 0
-        middles_list = []
-        prefixed = suffixed = 0
+    def get_entity_non_bridge_middles(self, name: str) -> Set[str]:
+        """Get non-bridge MIDDLEs for an entity."""
+        entity = self.get_entity(name)
+        if entity:
+            return set(entity.get('non_bridge_middles', []))
+        return set()
 
-        for tok in tokens:
-            m = self.morph.extract(tok.word)
-            if m.middle:
-                middles_list.append(m.middle)
-                for c in m.middle:
-                    if c == 'k':
-                        k_count += 1
-                    elif c == 'h':
-                        h_count += 1
-                    elif c == 'e':
-                        e_count += 1
-            if m.prefix:
-                prefixed += 1
-            if m.suffix:
-                suffixed += 1
+    def get_sub_regions(self, name: str) -> List[str]:
+        """Return the sub-region types present in an entity."""
+        entity = self.get_entity(name)
+        if entity:
+            return list(entity['sub_regions'].keys())
+        return []
 
-        kernel_total = k_count + h_count + e_count
-        lines = set(tok.line for tok in tokens)
+    def all_tokens(self) -> List[Dict]:
+        """Return all tokens across all entities."""
+        tokens = []
+        for name in self.get_entities():
+            tokens.extend(self.get_entity_tokens(name))
+        return tokens
 
-        return RosettesRegionProfile(
-            folio=folio,
-            region=region,
-            transcriber=track,
-            token_count=len(tokens),
-            line_count=len(lines),
-            tokens=tokens,
-            kernel_k=k_count,
-            kernel_h=h_count,
-            kernel_e=e_count,
-            kernel_total=kernel_total,
-            unique_middles=len(set(middles_list)),
-            middles=middles_list,
-            prefixed_count=prefixed,
-            suffixed_count=suffixed,
-        )
+    def all_middles(self) -> Set[str]:
+        """Return all unique MIDDLEs across the entire Rosettes foldout."""
+        middles = set()
+        for name in self.get_entities():
+            middles.update(self.get_entity_middles(name))
+        return middles
 
-    def profile_folio(self, folio: str) -> Optional[RosettesFolioProfile]:
-        """Profile a Rosettes folio across all its regions."""
-        regions = self.get_regions(folio)
-        if not regions:
-            return None
-
-        has_h = self.has_h_track(folio)
-        region_profiles = []
-        all_middles = set()
-        total_tokens = 0
-        total_lines = set()
-        agg_k = agg_h = agg_e = 0
-
-        for r in regions:
-            rp = self.profile_region(folio, r)
-            if rp:
-                region_profiles.append(rp)
-                all_middles.update(rp.middles)
-                total_tokens += rp.token_count
-                total_lines.update(tok.line for tok in rp.tokens)
-                agg_k += rp.kernel_k
-                agg_h += rp.kernel_h
-                agg_e += rp.kernel_e
-
-        primary_track = 'H' if has_h else (self._best_track(folio, regions[0]) or '?')
-
-        return RosettesFolioProfile(
-            folio=folio,
-            transcriber=primary_track,
-            has_h_track=has_h,
-            regions=region_profiles,
-            total_tokens=total_tokens,
-            total_lines=len(total_lines),
-            region_codes=regions,
-            kernel_k=agg_k,
-            kernel_h=agg_h,
-            kernel_e=agg_e,
-            kernel_total=agg_k + agg_h + agg_e,
-            unique_middles=len(all_middles),
-            all_middles=all_middles,
-        )
+    def all_bridge_middles(self) -> Set[str]:
+        """Return all bridge MIDDLEs across the entire Rosettes foldout."""
+        middles = set()
+        for name in self.get_entities():
+            middles.update(self.get_entity_bridge_middles(name))
+        return middles
 
     def corpus_middles(self) -> Set[str]:
-        """Return all MIDDLEs found outside the Rosettes foldout (for overlap analysis)."""
+        """Return all MIDDLEs from Currier B folios (excluding Rosettes)."""
+        if self._b_corpus_middles is not None:
+            return self._b_corpus_middles
+        tx = Transcript()
+        rosettes_folios = {'f85r1', 'f85r2', 'f85v2', 'f86v3', 'f86v4', 'f86v5', 'f86v6'}
         non_rosette = set()
-        for tok in self.tx.currier_b():
-            if tok.folio not in self.ROSETTES_FOLIOS:
+        for tok in tx.currier_b():
+            if tok.folio not in rosettes_folios:
                 m = self.morph.extract(tok.word)
                 if m.middle:
                     non_rosette.add(m.middle)
+        self._b_corpus_middles = non_rosette
         return non_rosette
 
     def vocabulary_overlap(self) -> Dict:
-        """Compute vocabulary overlap between Rosettes and rest of corpus."""
-        rosette_middles = set()
-        for folio in self.ROSETTES_FOLIOS:
-            for tok in self.get_tokens(folio):
-                m = self.morph.extract(tok.word)
-                if m.middle:
-                    rosette_middles.add(m.middle)
-
-        corpus_middles = self.corpus_middles()
-        shared = rosette_middles & corpus_middles
-        unique = rosette_middles - corpus_middles
+        """Compute vocabulary overlap between Rosettes and rest of B corpus."""
+        rosette_middles = self.all_middles()
+        corpus = self.corpus_middles()
+        shared = rosette_middles & corpus
+        unique = rosette_middles - corpus
 
         return {
             'rosette_middles': len(rosette_middles),
-            'corpus_middles': len(corpus_middles),
+            'corpus_middles': len(corpus),
             'shared': len(shared),
             'rosette_unique': len(unique),
             'unique_list': sorted(unique),
             'overlap_pct': 100 * len(shared) / len(rosette_middles) if rosette_middles else 0,
         }
 
+    def per_rosette_middles(self) -> Dict[str, Set[str]]:
+        """Return {rosette_position: set_of_middles} for all 9 rosettes."""
+        return {r: self.get_entity_middles(r) for r in self.get_rosettes()}
+
+    def metadata(self) -> Dict:
+        """Return the _metadata section from the annotated JSON."""
+        return self._load().get('_metadata', {})
+
     def summary(self) -> Dict:
         """Overview of all Rosettes data."""
-        profiles = {}
-        total_tokens = 0
-        total_regions = 0
-
-        for folio in self.ROSETTES_FOLIOS:
-            fp = self.profile_folio(folio)
-            if fp:
-                profiles[folio] = {
-                    'tokens': fp.total_tokens,
-                    'lines': fp.total_lines,
-                    'regions': fp.region_codes,
-                    'n_regions': len(fp.region_codes),
-                    'track': fp.transcriber,
-                    'has_h': fp.has_h_track,
-                    'unique_middles': fp.unique_middles,
-                    'k_pct': 100 * fp.kernel_k / fp.kernel_total if fp.kernel_total else 0,
-                    'h_pct': 100 * fp.kernel_h / fp.kernel_total if fp.kernel_total else 0,
-                    'e_pct': 100 * fp.kernel_e / fp.kernel_total if fp.kernel_total else 0,
-                }
-                total_tokens += fp.total_tokens
-                total_regions += len(fp.region_codes)
-
+        data = self._load()
+        meta = data.get('_metadata', {})
+        summ = data.get('summary', {})
         overlap = self.vocabulary_overlap()
 
         return {
-            'folios': len(profiles),
-            'total_tokens': total_tokens,
-            'total_regions': total_regions,
-            'h_gap_folios': [f for f, p in profiles.items() if not p['has_h']],
+            'source': 'rosettes_annotated.json (ZL + manual annotation)',
+            'total_entities': meta.get('entity_count', len(data['entities'])),
+            'total_loci': meta.get('total_loci', summ.get('total_loci', 0)),
+            'total_words': meta.get('total_words', summ.get('total_words', 0)),
+            'reviewed_loci': meta.get('reviewed_loci', summ.get('reviewed', 0)),
+            'rosettes': self.get_rosettes(),
+            'paths': self.get_paths(),
             'vocabulary': overlap,
-            'per_folio': profiles,
+            'per_entity': {
+                name: {
+                    'loci': entity_summ['loci_count'],
+                    'words': entity_summ['word_count'],
+                    'sub_regions': entity_summ['sub_regions'],
+                }
+                for name, entity_summ in summ.get('entities', {}).items()
+            },
         }
-
-    # ── Unified JSON access ──────────────────────────────────────
-
-    # Corrected region-to-rosette mapping (voynich.nu fRos_tr.txt)
-    # Grid: Letter=ROW (V=top, N=mid, C=bottom), Number=COL (1=left, 2=center, 3=right)
-    REGION_TO_ROSETTE = {
-        'V1': 'NW', 'V2': 'NORTH', 'N1': 'WEST', 'N2': 'CENTER', 'C2': 'SOUTH',
-        'U1': 'NW', 'U2': 'NORTH', 'U3': 'NE', 'M1': 'WEST', 'M2': 'CENTER',
-        'M3': 'SE', 'B1': 'SW', 'B2': 'SOUTH', 'B3': 'SE',
-        'D1': 'SW', 'W1': 'NW',
-    }
-
-    ROSETTE_REGIONS = {
-        'NW': ['V1', 'U1', 'W1'], 'NORTH': ['V2', 'U2'], 'NE': ['U3'],
-        'WEST': ['N1', 'M1'], 'CENTER': ['N2', 'M2'], 'EAST': [],
-        'SW': ['B1', 'D1'], 'SOUTH': ['C2', 'B2'], 'SE': ['B3', 'M3'],
-    }
-
-    def load_unified(self) -> Dict:
-        """Load the unified rosettes reference JSON."""
-        if not hasattr(self, '_unified') or self._unified is None:
-            path = PROJECT_ROOT / 'data' / 'rosettes_unified.json'
-            with open(path, 'r', encoding='utf-8') as f:
-                self._unified = json.load(f)
-        return self._unified
-
-    def get_rosette_tokens(self, position: str) -> List[Dict]:
-        """Get all tokens for a physical rosette position (NW, NORTH, etc.).
-        Combines ring text + labels + special from all region codes.
-        Returns list of token detail dicts from the unified JSON."""
-        u = self.load_unified()
-        grid = u.get('rosette_grid', {}).get(position, {})
-        tokens = []
-        for key in ('ring_text', 'labels', 'labels_secondary', 'margin', 'corner_doodle_text'):
-            section = grid.get(key, {})
-            if 'tokens' in section:
-                tokens.extend(section['tokens'])
-        return tokens
-
-    def get_rosette_profile(self, position: str) -> Dict:
-        """Get the combined functional profile for a rosette position."""
-        u = self.load_unified()
-        grid = u.get('rosette_grid', {}).get(position, {})
-        return grid.get('combined_profile', {})
-
-    def get_visual(self, position: str) -> str:
-        """Get the visual description for a rosette position."""
-        u = self.load_unified()
-        grid = u.get('rosette_grid', {}).get(position, {})
-        return grid.get('visual', '')
-
-    def region_to_rosette(self, region_code: str) -> Optional[str]:
-        """Map a region code (V1, B1, etc.) to its physical rosette position."""
-        return self.REGION_TO_ROSETTE.get(region_code)
-
-    def get_folio_regions(self, folio: str) -> Dict:
-        """Get all regions/placements for a folio with tokens from unified JSON."""
-        u = self.load_unified()
-        if folio == 'f85v2':
-            return u.get('regions', {})
-        outside = u.get('outside_face', {}).get(folio, {})
-        return outside.get('regions', {})
-
-    def get_outside_face(self, folio: str) -> Dict:
-        """Get outside-face folio data (f85r1, f85r2, f86v3-v6)."""
-        u = self.load_unified()
-        return u.get('outside_face', {}).get(folio, {})
-
-    def get_grid(self) -> Dict:
-        """Get the full rosette grid with all 9 positions."""
-        u = self.load_unified()
-        return u.get('rosette_grid', {})
 
 
 # ============================================================

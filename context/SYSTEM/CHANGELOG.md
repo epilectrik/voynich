@@ -4,6 +4,220 @@
 
 ---
 
+## Version 4.10.15 (2026-02-20) - Phase 406: Cross-System Vocabulary Flow
+
+### Summary
+
+Phase 406 resolves the C1049/C909 paradox: shared/PP MIDDLEs are section-universal (Herfindahl 0.701), yet B output is 96% section-specific. Answer: **FREQUENCY_MODULATED** — same vocabulary, different token rates per section. 6-test battery across 3 tiers.
+
+Key findings:
+- **Frequency modulation** (A1-A2): PP drives 74% of section divergence through differential token frequencies (JS=0.124). B-exclusive JS=0.847 but only 5.8% of tokens — maximally specific per-type but token-negligible.
+- **Dark pipeline** (B1): 300/315 unmatched PP MIDDLEs appear in B at low frequency (mean 5.7 tokens vs 224.8 matched). Section-concentrated (Herf 0.716), mostly compound (66.7%). Previously uncharacterized HT/UN substrate.
+- **Uniform pool** (C1): A-H and A-P produce indistinguishable B-coverage profiles (cosine 0.9997). Pipeline is section-blind.
+- **Concentrated grammar** (C2): 12 A folios cover 100% of classified B grammar. f58v (Section T) alone covers 60.7%. Full B inventory ceiling: 30.4%.
+- **A-section routing** (B2): Bridge MIDDLEs uniformly sourced (H=70.8%, P=21.2%). P-enriched bridges weakly favor ENERGY_OPERATOR.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **CREATED** | `phases/CROSS_SYSTEM_VOCABULARY_FLOW/scripts/ab_vocabulary_flow.py` — 6-test battery |
+| **CREATED** | `phases/CROSS_SYSTEM_VOCABULARY_FLOW/results/ab_vocabulary_flow.json` — full results |
+| **CREATED** | `context/CLAIMS/C1134_section_specificity_frequency_modulated.md` |
+| **CREATED** | `context/CLAIMS/C1135_unmatched_pp_dark_pipeline.md` |
+| **CREATED** | `context/CLAIMS/C1136_ab_flow_uniform_concentrated.md` |
+| **UPDATED** | `context/CLAIMS/INDEX.md` — added Phase 406 section, count 978->981 |
+| **REGENERATED** | `CONSTRAINT_TABLE.txt`, expert-advisor agent |
+
+### New Constraints
+
+| # | Statement | Tier |
+|---|-----------|------|
+| C1134 | Section specificity is frequency-modulated: PP drives 74% of divergence; resolves C1049/C909 paradox | 2 |
+| C1135 | Unmatched PP dark pipeline: 300/315 B-present at low frequency; HT/UN compound substrate | 2 |
+| C1136 | A->B flow: uniform pool (cosine 0.9997), 12 folios cover 100% classified grammar | 2 |
+
+Constraint count: 978 -> 981 (+3 new).
+
+---
+
+## Version 4.10.14 (2026-02-20) - Phase 405: Section Program Architecture / Rosettes Targeting
+
+### Summary
+
+Phase 405 decomposes the C1125 "all 9 rosettes target Section T" finding. Critical discovery: Section T has only 1 non-Rosettes folio (f66r, 112 MIDDLEs). 8-test battery reveals the section-level correlation is a **vocabulary-size artifact** — T's small vocabulary inflates Jaccard. Per-folio, f66r ranks #11/76; the top 10 are 9 Section S + 1 Section H. Bridge density triangle **falsified** (rho = -0.60 anticorrelation).
+
+Key findings:
+- **Per-folio overlap** (T1): f66r ranks #11/76; f105r (Section S) ranks #1 at Jaccard 0.181
+- **Bridge density anticorrelation** (T2): rho = -0.60; H folios most bridge-dense but not most Rosettes-overlapping
+- **Overlap composition** (T3): 40 shared MIDDLEs, 75% bridge-mediated
+- **Size-controlled bootstrap** (T4): f66r at 100th percentile from ALL sections — SIZE_ARTIFACT confirmed
+- **Section architecture** (T5-T8): Sections differentiated (mean JS = 0.091, confirms C552/C1029) but T is unremarkable
+- **Naming correction**: C1125 said "Section T (pharmaceutical)" — corrected to "Section T (text-only)". P = Pharmaceutical.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **CREATED** | `phases/ROSETTES_SYSTEM_REVALIDATION/scripts/section_program_architecture.py` — 8-test battery |
+| **CREATED** | `phases/ROSETTES_SYSTEM_REVALIDATION/results/section_program_architecture.json` — full results |
+| **CREATED** | `context/CLAIMS/C1133_rosettes_targeting_decomposition.md` |
+| **AMENDED** | `context/CLAIMS/C1125_rosettes_section_t_universal.md` — corrected parenthetical, added qualification |
+| **UPDATED** | `context/CLAIMS/INDEX.md` — added Phase 405 section, count 977→978 |
+| **REGENERATED** | `CONSTRAINT_TABLE.txt`, expert-advisor agent |
+
+### New Constraints
+
+| # | Statement | Tier |
+|---|-----------|------|
+| C1133 | Rosettes targeting decomposition: C1125 Section T correlation is vocabulary-size artifact; f66r #11/76 per-folio; bridge density rho=-0.60 | 2 |
+
+Constraint count: 977 → 978 (+1 new).
+
+---
+
+## Version 4.10.13 (2026-02-20) - Phase 404: Ring Text Register Characterization
+
+### Summary
+
+Phase 404 characterizes ring text (circumferential text on the 9 rosettes) as a distinct register type. 12-test battery across 3 tiers. Verdict: **BRIDGE_VOCABULARY_INDEX** — ring text specifically samples B-grammar bridge vocabulary under B's hard constraints, functioning as a cross-system vocabulary reference.
+
+Key findings:
+- **Structured class distribution** (A1): JS(uniform)=0.291, not random enumeration; 33/49 classes used, Class 2 enriched 26.4x
+- **Role skew** (A2): AUXILIARY 42.7% (vs B 25.4%), ENERGY_OPERATOR 11.3% (vs B 45.8%) — structural vocabulary, not execution
+- **Bridge enrichment** (A3): 32.1% > non-ring 25.5% > B p95 11.0%; 100% of classified MIDDLEs are bridge
+- **Dual population** (A4): Classified tokens short/simple/bridge; unclassified tokens long/complex/unique — two interleaved vocabularies
+- **No positional gradient** (C3): Ring text uniform throughout, no line-1 effect
+- **High hapax** (C2): 81.5% hapax rate, 36.6% foldout-unique types
+- **Per-rosette diversity** (C1): Ring text Jaccard 0.237 < C1128's 0.322 — ring text MORE diverse across rosettes
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **CREATED** | `phases/ROSETTES_SYSTEM_REVALIDATION/scripts/ring_text_register.py` — 12-test battery |
+| **CREATED** | `phases/ROSETTES_SYSTEM_REVALIDATION/results/ring_text_register.json` — full results |
+| **CREATED** | `context/CLAIMS/C1131_ring_text_register_classification.md` |
+| **CREATED** | `context/CLAIMS/C1132_ring_text_dual_population.md` |
+| **UPDATED** | `context/CLAIMS/INDEX.md` — added Phase 404 section, count 975→977 |
+| **REGENERATED** | `CONSTRAINT_TABLE.txt`, expert-advisor agent |
+
+### New Constraints
+
+| # | Statement | Tier |
+|---|-----------|------|
+| C1131 | Ring text register: BRIDGE_VOCABULARY_INDEX (structured classes, elevated bridge, 100% classified bridge) | 2 |
+| C1132 | Ring text dual population (classified: 4.0 chars, 100% bridge; unclassified: 6.4 chars, 22.1% bridge) | 2 |
+
+Constraint count: 975 → 977 (+2 new).
+
+---
+
+## Version 4.10.12 (2026-02-20) - Phase 403: P-Text/Rosettes Integration Revalidation
+
+### Summary
+
+Phase 403 revalidates the unified indexing hypothesis (Phase 395, C1112/C1113) using corrected Rosettes data. 7-test battery: 4 synthesis (R1, R3, R4, R5) + 3 diagnostics (R2, R6, R7). Verdict: **UNIFIED_CONFIRMED** (4/4 PASS).
+
+Key findings:
+- **P-text bridge enrichment reproduced exactly** (R1): 45.5%, 100th percentile of A (identical to Phase 395)
+- **Vocabulary overlap confirmed** (R3): Jaccard=0.137, 36 shared MIDDLEs, 100th percentile
+- **Paragraph co-tracking confirmed** (R4): Spearman rho=0.576, p<<0.001
+- **Union prediction confirmed** (R5): Cosine=0.876 (better than either alone)
+- **Grammar divergence** (R2): P-text is A-like (cosine 0.964), Rosettes are AZC-like (cosine 0.908 to AZC)
+- **Section-general vocabulary** (R6): Shared vocabulary appears in all sections, not T-dominated
+- **P-text more specific** (R7): P-text targets different B folios than Rosettes (cross-overlap 0.101)
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **CREATED** | `phases/ROSETTES_SYSTEM_REVALIDATION/scripts/ptext_rosettes_integration.py` — 7-test battery |
+| **CREATED** | `phases/ROSETTES_SYSTEM_REVALIDATION/results/ptext_rosettes_integration.json` — full results |
+| **CREATED** | `context/CLAIMS/C1112_ptext_bridge_enrichment.md` — re-registered |
+| **CREATED** | `context/CLAIMS/C1129_ptext_rosettes_unified_indexing.md` — new |
+| **UPDATED** | `context/CLAIMS/INDEX.md` — added Phase 403 section, count 972→974 |
+| **REGENERATED** | `CONSTRAINT_TABLE.txt`, expert-advisor agent |
+
+### New/Re-registered Constraints
+
+| # | Statement | Tier |
+|---|-----------|------|
+| C1112 | P-text bridge enrichment (45.5%, 100th percentile of A) — re-registered | 2 |
+| C1129 | P-text/Rosettes unified indexing (UNIFIED_CONFIRMED 4/4) | 2 |
+
+Constraint count: 972 → 975 (+1 re-registered, +2 new).
+
+### Additional Constraint (same session)
+
+| # | Statement | Tier |
+|---|-----------|------|
+| C1130 | Ring text forbidden compliance without transition grammar (0/277 violations, entropy 7.92 vs B 0.41) — from Phase 402 S5 | 2 |
+
+Re-registration audit: expert reviewed all 21 deleted constraints against Phase 402/403 evidence. 14 are subsumed by C1124-C1129, 5 lack revalidated evidence, C1114/C1115 are superseded by C1130. No further re-registrations needed.
+
+---
+
+## Version 4.10.11 (2026-02-19) - Phase 402: Rosettes System Revalidation
+
+### Summary
+
+Phase 402 revalidates the Rosettes foldout classification and metalayer hypothesis using corrected ZL transcription data (`data/rosettes_annotated.json`). 13-test battery across 3 tiers: System Classification (S1-S6), Cross-Reference Validation (X1-X4), Spatial Structure (P1-P3). 443 tokens, 19 entities, 177 unique MIDDLEs.
+
+**Overall verdict: ROSETTES_CONFIRMED_METALAYER** — the metalayer hypothesis replicates with corrected data. Spatial structure tests inconclusive due to sparse token counts per entity.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **CREATED** | `phases/ROSETTES_SYSTEM_REVALIDATION/scripts/rosettes_revalidation.py` — 13-test battery |
+| **CREATED** | `phases/ROSETTES_SYSTEM_REVALIDATION/results/rosettes_revalidation_results.json` — full results |
+| **CREATED** | 5 new constraint files: C1124-C1128 |
+| **UPDATED** | `context/CLAIMS/INDEX.md` — added Rosettes System Revalidation section, count 967→972 |
+| **UPDATED** | `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` — new Rosettes findings |
+| **REGENERATED** | `CONSTRAINT_TABLE.txt`, expert-advisor agent |
+
+### New Constraints
+
+| # | Statement | Tier |
+|---|-----------|------|
+| C1124 | Rosettes Bridge Enrichment (Revalidated) — 3.05x enrichment | 2 |
+| C1125 | Rosettes Universal Section T Correlation — all 9 rosettes → Section T | 2 |
+| C1126 | Rosettes Metalayer Status (Revalidated) — confirmed metalayer | 2 |
+| C1127 | Rosettes AZC-Like Grammar Profile — consistently AZC-like not hybrid | 2 |
+| C1128 | Rosettes Generic (Not Specific) Indexing — shared vocabulary hub | 2 |
+
+Constraint count: 967 → 972 (+5 new).
+
+---
+
+## Version 4.10.10 (2026-02-19) - Rosettes Data Architecture Reset
+
+### Summary
+
+All 21 Rosettes-derived constraints (C1088-C1098, C1100-C1101, C1109-C1110, C1112-C1115, C1122-C1123) **deleted** due to data quality issues. The underlying EVA interlinear transcript was missing 3/9 rosettes' ring text and lacked spatial context. Qualified constraints C440.a and C757.a also removed.
+
+New data source: `data/rosettes_annotated.json` — built from ZL (Zandbergen) transcription + manual spatial annotation. 137 loci, 443 words, 19 first-class entities (9 rosettes, 8 paths, 1 clock, 1 unclassified).
+
+`RosettesAnalyzer` in `scripts/voynich.py` rewritten to load from new JSON instead of EVA transcript.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **DELETED** | 21 constraint files from `context/CLAIMS/` |
+| **DELETED** | C440.a qualifier from `context/CLAIMS/azc_system.md` |
+| **DELETED** | C757.a qualifier from `context/CLAIMS/C757_azc_zero_kernel.md` |
+| **UPDATED** | `context/CLAIMS/INDEX.md` — removed all Rosettes entries, count 988→967 |
+| **UPDATED** | `context/SPECULATIVE/INTERPRETATION_SUMMARY.md` — Rosettes section marked INVALIDATED |
+| **UPDATED** | `scripts/voynich.py` — RosettesAnalyzer rewritten for new data source |
+| **CREATED** | `context/DATA/ROSETTES_DATA_ARCHITECTURE.md` — documents new data architecture |
+| **REGENERATED** | `CONSTRAINT_TABLE.txt`, expert-advisor agent, `FIT_TABLE.txt` |
+
+Constraint count: 988 → 967 (21 deleted).
+
+---
+
 ## Version 4.10.9 (2026-02-18) - P-Text / Rosettes Indexing Architecture (Phase 395)
 
 ### Summary
