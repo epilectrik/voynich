@@ -5,7 +5,7 @@ meta:
   acronym: "CASC"
   version: "2.0"
   date: "2026-02-14"
-  status: "LOCKED"
+  status: "ACTIVE"
   derived_from: "Tier-2 constraints only"
   governance: |
     CASC is NOT authoritative. Constraints are authoritative.
@@ -116,7 +116,19 @@ morphology:
             percent: "18.4% of A vocabulary"
             role: "Vocabulary shared between A and B but absent from AZC contexts"
             characteristics: "Zero AZC presence, avg 3.5 B folios"
-        provenance: "C498.a"
+        functional_partition:  # C1140 — orthogonal to C498.a's AZC-presence partition
+          description: |
+            The 404 PP MIDDLEs also partition by B grammar role into four mutually
+            exclusive, collectively exhaustive populations. This grammar-role partition
+            (C1140) is orthogonal to C498.a's AZC-presence partition (214 AZC-mediated
+            + 198 B-native). Both classify the same 404 PP MIDDLEs by different criteria.
+          bridge: { count: 85, function: "Cross-system dynamical backbone (C1013)" }
+          non_bridge_matched: { count: 4, function: "Edge-case grammar participants (c, ch, cho, otc)" }
+          dark_pipeline: { count: 300, function: "HT/UN identification substrate (C1137)" }
+          phantom: { count: 15, function: "A-present, B-absent artifacts (all ch-/sh- prefixed, 0 A tokens)" }
+          total: 404
+          provenance: "C1140"
+        provenance: "C498.a, C1140"
       registry_internal:
         count: 609
         characteristics: "ct-prefix enriched, suffix-less, folio-localized"
@@ -469,6 +481,7 @@ participation:
       - "bridge MIDDLE topological selection (C1013)"
       - "geometric viability alignment via bridge backbone (C1014)"
       - "bridge conduit mediation — bridge MIDDLEs carry 3.8x more archetype-predictive information than non-bridges in B folio dynamical behavior (C1016)"
+      - "dark pipeline identification channel — 300 PP MIDDLEs produce exclusively HT/UN tokens in B, built from bridge atoms (C1137, C1141)"
       - "multi-dimensional PP convergence at RECORD level"
     section_distribution:
       H_in_B: "91.6% (76/83 folios)"
@@ -513,7 +526,9 @@ participation:
           bridge_count: 85  # out of 972 MIDDLEs
           selection_principle: "Topological generality (frequency AUC=0.978)"
           hub_universal_coverage: "100% (23/23)"
-          provenance: "C1013"
+          dark_pipeline_disjoint: "0 shared MIDDLEs between bridge (85) and dark pipeline (300) at MIDDLE level (C1139)"
+          atom_substrate_role: "Bridge atoms are building blocks for dark-pipeline compounds (86% of atom types, 96.5% compound coverage) — MIDDLE-level disjointness coexists with atom-level derivation (C1141)"
+          provenance: "C1013, C1139, C1141"
         geometric_alignment:
           manifold_viability_r: 0.914  # Mantel p=0.001
           hub_removed_stronger: true  # ratio=1.031
@@ -531,7 +546,19 @@ participation:
           b_internal_degeneracy: "At the B corpus level, all 85 unique MIDDLEs are bridges (100% coverage; C1020). Bridge density 0.727 is the per-folio A-manifold metric. The bridge concept distinguishes A→B crossover vocabulary, not a B-internal partition."
           provenance: "C1016, C1018, C1020"
 
-    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016"
+        dark_pipeline:  # A-side properties of the identification channel
+          population: 300  # PP MIDDLEs that bypass B grammar
+          compound_rate: "66.7%"
+          section_concentration: "Herf 0.716 (strongly section-specific)"
+          a_to_b_flow:
+            uniformity: "cosine 0.9997 (A folio distribution ≈ B grammar distribution)"
+            concentration: "12 A folios cover 100% of B classified grammar; f58v alone at 60.7%"
+          bridge_disjoint: "0 shared MIDDLEs with bridge set (C1139)"
+          atom_substrate: "Built from bridge atoms (86% of atom types, C1141)"
+          note: "B-side behavioral characterization (C1134 frequency modulation, C1137 HT substrate, C1138 distinct grammar) lives in BCSC"
+          provenance: "C1135, C1136, C1139, C1140, C1141"
+
+    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016, C1135, C1136, C1139, C1140, C1141"
 
 # ============================================================
 positional:
@@ -710,6 +737,11 @@ provenance:
     - "C1016"  # Bridge conduit: bridge MIDDLEs carry 3.8x more B dynamical archetype info than non-bridges
     - "C1018"  # Bridge PC1 partial redundancy with hub frequency; archetype discriminator anatomy
     - "C1020"  # 100% bridge degeneracy at B corpus level (all B MIDDLEs are bridges)
+    - "C1135"  # Dark pipeline characterization (300 MIDDLEs, Herf 0.716, 66.7% compound)
+    - "C1136"  # Uniform A→B vocabulary flow (cosine 0.9997, 12-folio concentration)
+    - "C1139"  # Bridge-dark pipeline MIDDLE-level disjointness
+    - "C1140"  # PP pipeline four-way partition (85+4+300+15=404)
+    - "C1141"  # Bridge atom substrate for dark-pipeline compounds (86% types, 96.5% coverage)
 
   positional:
     - "C260"  # Section isolation

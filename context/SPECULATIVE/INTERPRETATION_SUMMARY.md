@@ -3620,7 +3620,6 @@ Only Tier 0-2 structural findings are binding.
 ### Still Open (structural)
 
 - What determines sister pair choice beyond section?
-- Why does HT cluster in ~10-folio oscillations?
 - What morphology-level choices affect HT density?
 - Why do HT hotspots cluster in tails rather than forming modes?
 

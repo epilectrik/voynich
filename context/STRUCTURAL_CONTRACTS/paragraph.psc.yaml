@@ -5,7 +5,7 @@ meta:
   acronym: "PSC"
   version: "1.1"
   date: "2026-02-15"
-  status: "LOCKED"
+  status: "ACTIVE"
   layer_type: "cross-system structural unit contract"
   derived_from: "Tier 0-2 constraints (structural)"
   governance: |

@@ -5,7 +5,7 @@ meta:
   acronym: "HTSC"
   version: "1.1"
   date: "2026-02-15"
-  status: "LOCKED"
+  status: "ACTIVE"
   layer_type: "cross-system layer contract"
   derived_from: "Tier 0-2 constraints (structural); Tier 3 two-axis model clearly marked"
   governance: |
@@ -137,7 +137,10 @@ guarantees:
       Compound atoms predict body MIDDLEs at 71.6% hit rate (1.21x lift vs 59.2% random).
       HT compound rate: 45.8% (vs 31.5% grammar).
       Mean HT MIDDLE length: 2.64 (vs 2.04 grammar).
-    provenance: "C935"
+      Dark-pipeline HT compounds are built from bridge atoms (86% of atom types,
+      96.5% compound coverage). The bridge backbone is both the dynamical backbone
+      of B's grammar AND the morphological substrate of identification vocabulary.
+    provenance: "C935, C1137, C1141"
 
   - id: "QUIRE_ORGANIZED"
     statement: "HT shows codicological clustering at the quire level"
@@ -230,7 +233,8 @@ cross_system_manifestation:
     novel_combinations: "11.19% novel MIDDLE pairs; 90.7% HT-exclusive MIDDLEs (C812)"
     strategy_prediction: "r=+0.46 CAUTIOUS, r=-0.48 OPPORTUNISTIC (C488)"
     morphology_b: "-edy complex forms favored (C347, C348)"
-    provenance: "C341, C342, C348, C413, C488, C796, C797, C798, C800, C802, C806, C812"
+    dark_pipeline_substrate: "300 dark-pipeline PP MIDDLEs produce exclusively HT/UN tokens (1,696 tokens, 0 grammar) — identification vocabulary channel distinct from grammar channel (C1137, C1138)"
+    provenance: "C341, C342, C348, C413, C488, C796, C797, C798, C800, C802, C806, C812, C1137, C1138"
 
   azc:
     anchoring: "Diagram geometry"
@@ -299,7 +303,26 @@ morphology:
   decomposition_to_atoms: "100% of compounds decompose to core atoms (C935)"
   derived_vocabulary: "81.1% compound, 64.5% folio-unique (C766)"
 
-  provenance: "C347, C417, C418, C766, C935"
+  dark_pipeline_morphology:
+    statement: "Dark-pipeline HT tokens use distinct construction from grammar-classified HT"
+    gs_ext_middle_length: 3.39   # Grammar/Section tokens
+    ht_middle_length: 1.81       # HT tokens
+    prefix_rate_gs_ext: "83.9%"
+    prefix_rate_ht: "58.1%"
+    provenance: "C1138"
+  atom_substrate:
+    statement: "Dark-pipeline compounds are built from bridge atoms (86% of atom types, 91.6% of occurrences, 96.5% compound coverage)"
+    bridge_atom_types: "43/50 (86%)"
+    construction_hierarchy: "bridge atoms → compositional assembly (1-3 atoms) → dark-pipeline compounds → HT/UN identification tokens"
+    provenance: "C1141"
+  construction_grammar:
+    statement: "Dark pipeline follows modified version of B's atom ordering grammar"
+    c1065_agreement: "50% (7 matches, 7 mismatches of 14 testable pairs)"
+    gateway_terminal_preserved: true
+    dark_exclusive_atoms: 25
+    provenance: "C1142"
+
+  provenance: "C347, C417, C418, C766, C935, C1138, C1141, C1142"
 
 # ============================================================
 operational_status:
@@ -318,10 +341,15 @@ operational_status:
       - "C209 (attention pacing) — not falsified, just simpler explanation available"
       - "C221 (calligraphy practice) — not falsified, just simpler explanation available"
 
+  construction_channel:
+    statement: "Dark-pipeline PP MIDDLEs are the mechanistic source of HT identification vocabulary"
+    pathway: "300 dark-pipeline MIDDLEs (C1137) → built from bridge atoms (C1141) → produce 1,696 HT/UN tokens, 0 grammar tokens"
+    provenance: "C1137, C1141"
+
   b_exclusive_identity: "100% of B-exclusive vocabulary is HT (C792)"
   b_exclusive_count: "3,694 types (C792)"
 
-  provenance: "C404, C405, C415, C792, C935"
+  provenance: "C404, C405, C415, C792, C935, C1137, C1141"
 
 # ============================================================
 # [TIER 3] Two-Axis Model
@@ -466,6 +494,10 @@ provenance:
       - {id: "C927", topic: "HT label elevation (2.42x)"}
     compound_specification:
       - {id: "C935", topic: "Compound specification dual-purpose model"}
+      - {id: "C1137", topic: "Dark pipeline 100% HT substrate (1,696 tokens, 0 grammar)"}
+      - {id: "C1138", topic: "Dark pipeline distinct construction grammar"}
+      - {id: "C1141", topic: "Bridge atom substrate (86% types, 96.5% coverage)"}
+      - {id: "C1142", topic: "Modified atom ordering (50% C1065 agreement)"}
     interaction_architecture:
       - {id: "C1078", topic: "Hazard avoidance vocabulary-level, not positional"}
       - {id: "C1079", topic: "Line-1 exclusivity = folio-specificity tautology"}
@@ -498,9 +530,9 @@ provenance:
       - {id: "C171", topic: "Closed-loop only verdict (B grammar)"}
       - {id: "C841", topic: "Paragraph gallows-initial markers (paragraph structure)"}
 
-  total_owned: 74
+  total_owned: 78
   total_referenced: 14
-  total_coverage: 88
+  total_coverage: 92
 
 # ============================================================
 # Summary statement

@@ -4,6 +4,27 @@
 
 ---
 
+## Version 4.10.18 (2026-02-20) - Structural Contract Updates: Phase 406-408 Integration
+
+### Summary
+
+Integrated 9 new constraints (C1134-C1142) from Phases 406-408 into 4 structural contracts (BCSC, HTSC, CASC, AZC-B-ACT). Expert-validated placement with ownership corrections: B-side findings (C1134 frequency modulation, C1137 HT substrate, C1138 distinct grammar) restricted to BCSC/HTSC; A-side vocabulary properties to CASC. Changed all 6 contract status from LOCKED to ACTIVE per user directive.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **UPDATED** | `currierB.bcsc.yaml` -- section_differentiation_mechanism (C1134), pp_pipeline_partition (C1135-C1136, C1139-C1140), dark_pipeline_integration (C1137-C1138, C1141-C1142), bridge_dual_role, differentiation_principle frequency-level, provenance |
+| **UPDATED** | `humanTrack.htsc.yaml` -- COMPOUND_SPECIFICATION extended (C1141), dark_pipeline_morphology/atom_substrate/construction_grammar (C1138, C1141, C1142), construction_channel (C1137, C1141), dark_pipeline_substrate in currier_b, provenance 74→78 owned |
+| **UPDATED** | `currierA.casc.yaml` -- functional_partition in shared_with_b with C498.a reconciliation (C1140), dark pipeline conditional correspondence, bridge_mechanism disjoint+substrate (C1139, C1141), dark_pipeline viability block (A-side only), provenance |
+| **UPDATED** | `azc_b_activation.act.yaml` -- dual_channel in vocabulary_scope (C1137, C1140), frequency_dimension in categorical_resolution (C1134) |
+| **UPDATED** | All 6 contracts: status LOCKED → ACTIVE |
+| **UPDATED** | `CLAUDE_INDEX.md` -- structural contracts count: "4 (LOCKED)" → "6" |
+| **UPDATED** | `INTERPRETATION_SUMMARY.md` -- removed HT oscillation from Still Open (resolved by C1082) |
+| **REGENERATED** | Expert-advisor agent (389.8 KB), EXPERT_CONTEXT.md (741.8 KB) |
+
+---
+
 ## Version 4.10.17 (2026-02-20) - Phase 408: PP Pipeline Atom Decomposition
 
 ### Summary

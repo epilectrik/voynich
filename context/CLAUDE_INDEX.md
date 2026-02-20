@@ -263,7 +263,7 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 | Token types in grammar | 479 |
 | Instruction classes | 49 |
 | Scripts in archive | 98 |
-| Structural contracts | 4 (LOCKED) |
+| Structural contracts | 6 |
 
 ---
 

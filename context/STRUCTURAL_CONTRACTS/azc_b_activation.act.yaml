@@ -5,7 +5,7 @@ meta:
   acronym: "AZC-B-ACT"
   version: "1.2"
   date: "2026-02-06"
-  status: "LOCKED"
+  status: "ACTIVE"
   layer_type: "correlation contract"
   derived_from: "Tier-2 constraints only"
   audit_note: "v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31) finding that AZC is static lookup table with no independent positional effect."
@@ -120,7 +120,8 @@ correlation:
 
   categorical_resolution:
     effect: "Fine distinctions encoded in which tokens are legal"
-    provenance: "C469"
+    frequency_dimension: "Section differentiation also manifests as frequency variation of shared PP vocabulary (74% of section JS divergence from PP frequency modulation, C1134)"
+    provenance: "C469, C1134"
 
   vanishing_semantics:
     statement: "Illegality manifests as absence, not marking"
@@ -131,7 +132,14 @@ correlation:
     expansion: false  # AZC does NOT expand vocabulary beyond A specification
     filtering_magnitude: "~80% of B vocabulary filtered per A context"
     effect: "Different A records make different B folios viable"
-    provenance: "C481, C502"
+    dual_channel: |
+      A-derived MIDDLEs feed B through two distinct channels:
+      - Grammar channel: 89 PP MIDDLEs (85 bridge + 4 non-bridge matched) enter
+        B's 49-class grammar as classified vocabulary
+      - Identification channel: 300 dark-pipeline PP MIDDLEs produce exclusively
+        HT/UN tokens (1,696 tokens, 0 grammar tokens), built from bridge atoms
+      Per C1140 four-way partition: 85 bridge + 4 matched + 300 dark pipeline + 15 phantom = 404 PP total.
+    provenance: "C481, C502, C1137, C1140"
 
 # ============================================================
 b_reception_architecture:

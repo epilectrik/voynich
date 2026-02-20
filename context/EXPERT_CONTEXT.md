@@ -54,7 +54,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # EMBEDDED EXPERT CONTEXT
 
-**Generated:** 2026-02-20 16:09
+**Generated:** 2026-02-20 16:38
 **Version:** FROZEN STATE (987 constraints, 66 fits) [FULL]
 
 ---
@@ -342,7 +342,7 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 | Token types in grammar | 479 |
 | Instruction classes | 49 |
 | Scripts in archive | 98 |
-| Structural contracts | 4 (LOCKED) |
+| Structural contracts | 6 |
 
 ---
 
@@ -1728,7 +1728,7 @@ External evidence (historical documents, archaeological finds) might constrain t
 
 ### Structural Contracts (LOCKED as of 2026-01-13)
 
-The cross-system vocabulary architecture is formally characterized via four structural contracts:
+The cross-system vocabulary architecture is formally characterized via six structural contracts:
 
 | Contract | File | Status | Function |
 |----------|------|--------|----------|
@@ -1736,10 +1736,12 @@ The cross-system vocabulary architecture is formally characterized via four stru
 | AZC-ACT | `azc_activation.act.yaml` | LOCKED v1.2 | A/AZC positional classification |
 | AZC-B-ACT | `azc_b_activation.act.yaml` | LOCKED v1.2 | AZC/B vocabulary correlation |
 | BCSC | `currierB.bcsc.yaml` | LOCKED v3.4 | Currier B internal grammar |
+| HTSC | `humanTrack.htsc.yaml` | LOCKED v1.0 | Human Track layer (cross-system) |
+| PSC | `paragraph.psc.yaml` | LOCKED v1.0 | Paragraph unit (cross-system) |
 
 Each contract is derived from Tier 0-2 constraints and introduces no new claims. Constraints remain authoritative.
 
-**Architecture characterized:** As of 2026-01-13, the cross-system vocabulary architecture is fully characterized at Tier 0-2. AZC_POSITION_VOCABULARY (2026-01-31) established that AZC is a static lookup table with no independent positional effect. All remaining work concerns interpretation, tooling, or external corroboration.
+**Architecture characterized:** As of 2026-01-13, the cross-system vocabulary architecture is fully characterized at Tier 0-2. AZC_POSITION_VOCABULARY (2026-01-31) established that AZC is a static lookup table with no independent positional effect. Phases 406-408 (2026-02-20) decomposed the A-B vocabulary pipeline into four populations: 85 bridge MIDDLEs (dynamical backbone), 4 non-bridge matched, 300 dark-pipeline MIDDLEs (identification substrate, built from bridge atoms at 96.5% coverage), and 15 phantoms. All remaining work concerns interpretation, tooling, or external corroboration.
 
 **PCA-v1 CERTIFIED:** Cross-system audit passed all 6 tests (legality consistency, no back-propagation, parametric silence, semantic vacuum, A/B isolation, HT non-interference). The contracts compose cleanly without hidden coupling.
 
@@ -6524,7 +6526,6 @@ Only Tier 0-2 structural findings are binding.
 ### Still Open (structural)
 
 - What determines sister pair choice beyond section?
-- Why does HT cluster in ~10-folio oscillations?
 - What morphology-level choices affect HT density?
 - Why do HT hotspots cluster in tails rather than forming modes?
 
@@ -8759,7 +8760,7 @@ meta:
   acronym: "CASC"
   version: "2.0"
   date: "2026-02-14"
-  status: "LOCKED"
+  status: "ACTIVE"
   derived_from: "Tier-2 constraints only"
   governance: |
     CASC is NOT authoritative. Constraints are authoritative.
@@ -8870,7 +8871,19 @@ morphology:
             percent: "18.4% of A vocabulary"
             role: "Vocabulary shared between A and B but absent from AZC contexts"
             characteristics: "Zero AZC presence, avg 3.5 B folios"
-        provenance: "C498.a"
+        functional_partition:  # C1140 — orthogonal to C498.a's AZC-presence partition
+          description: |
+            The 404 PP MIDDLEs also partition by B grammar role into four mutually
+            exclusive, collectively exhaustive populations. This grammar-role partition
+            (C1140) is orthogonal to C498.a's AZC-presence partition (214 AZC-mediated
+            + 198 B-native). Both classify the same 404 PP MIDDLEs by different criteria.
+          bridge: { count: 85, function: "Cross-system dynamical backbone (C1013)" }
+          non_bridge_matched: { count: 4, function: "Edge-case grammar participants (c, ch, cho, otc)" }
+          dark_pipeline: { count: 300, function: "HT/UN identification substrate (C1137)" }
+          phantom: { count: 15, function: "A-present, B-absent artifacts (all ch-/sh- prefixed, 0 A tokens)" }
+          total: 404
+          provenance: "C1140"
+        provenance: "C498.a, C1140"
       registry_internal:
         count: 609
         characteristics: "ct-prefix enriched, suffix-less, folio-localized"
@@ -9223,6 +9236,7 @@ participation:
       - "bridge MIDDLE topological selection (C1013)"
       - "geometric viability alignment via bridge backbone (C1014)"
       - "bridge conduit mediation — bridge MIDDLEs carry 3.8x more archetype-predictive information than non-bridges in B folio dynamical behavior (C1016)"
+      - "dark pipeline identification channel — 300 PP MIDDLEs produce exclusively HT/UN tokens in B, built from bridge atoms (C1137, C1141)"
       - "multi-dimensional PP convergence at RECORD level"
     section_distribution:
       H_in_B: "91.6% (76/83 folios)"
@@ -9267,7 +9281,9 @@ participation:
           bridge_count: 85  # out of 972 MIDDLEs
           selection_principle: "Topological generality (frequency AUC=0.978)"
           hub_universal_coverage: "100% (23/23)"
-          provenance: "C1013"
+          dark_pipeline_disjoint: "0 shared MIDDLEs between bridge (85) and dark pipeline (300) at MIDDLE level (C1139)"
+          atom_substrate_role: "Bridge atoms are building blocks for dark-pipeline compounds (86% of atom types, 96.5% compound coverage) — MIDDLE-level disjointness coexists with atom-level derivation (C1141)"
+          provenance: "C1013, C1139, C1141"
         geometric_alignment:
           manifold_viability_r: 0.914  # Mantel p=0.001
           hub_removed_stronger: true  # ratio=1.031
@@ -9285,7 +9301,19 @@ participation:
           b_internal_degeneracy: "At the B corpus level, all 85 unique MIDDLEs are bridges (100% coverage; C1020). Bridge density 0.727 is the per-folio A-manifold metric. The bridge concept distinguishes A→B crossover vocabulary, not a B-internal partition."
           provenance: "C1016, C1018, C1020"
 
-    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016"
+        dark_pipeline:  # A-side properties of the identification channel
+          population: 300  # PP MIDDLEs that bypass B grammar
+          compound_rate: "66.7%"
+          section_concentration: "Herf 0.716 (strongly section-specific)"
+          a_to_b_flow:
+            uniformity: "cosine 0.9997 (A folio distribution ≈ B grammar distribution)"
+            concentration: "12 A folios cover 100% of B classified grammar; f58v alone at 60.7%"
+          bridge_disjoint: "0 shared MIDDLEs with bridge set (C1139)"
+          atom_substrate: "Built from bridge atoms (86% of atom types, C1141)"
+          note: "B-side behavioral characterization (C1134 frequency modulation, C1137 HT substrate, C1138 distinct grammar) lives in BCSC"
+          provenance: "C1135, C1136, C1139, C1140, C1141"
+
+    provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016, C1135, C1136, C1139, C1140, C1141"
 
 # ============================================================
 positional:
@@ -9464,6 +9492,11 @@ provenance:
     - "C1016"  # Bridge conduit: bridge MIDDLEs carry 3.8x more B dynamical archetype info than non-bridges
     - "C1018"  # Bridge PC1 partial redundancy with hub frequency; archetype discriminator anatomy
     - "C1020"  # 100% bridge degeneracy at B corpus level (all B MIDDLEs are bridges)
+    - "C1135"  # Dark pipeline characterization (300 MIDDLEs, Herf 0.716, 66.7% compound)
+    - "C1136"  # Uniform A→B vocabulary flow (cosine 0.9997, 12-folio concentration)
+    - "C1139"  # Bridge-dark pipeline MIDDLE-level disjointness
+    - "C1140"  # PP pipeline four-way partition (85+4+300+15=404)
+    - "C1141"  # Bridge atom substrate for dark-pipeline compounds (86% types, 96.5% coverage)
 
   positional:
     - "C260"  # Section isolation
@@ -9502,7 +9535,7 @@ meta:
   acronym: "BCSC"
   version: "3.11"
   date: "2026-02-13"
-  status: "LOCKED"
+  status: "ACTIVE"
   layer_type: "grammar contract"
   derived_from: "Tier 0-2 constraints (structural); Tier 3 operational layer clearly marked"
   governance: |
@@ -9812,8 +9845,12 @@ morphology:
           MIDDLEs can be simple (single atom: k, e, ch, edy) or compound
           (multiple atoms: opcheodai = op+ch+e+od+ai). 100% of compounds
           decompose into core atoms. Compound rate: 31.5% (grammar types),
-          45.8% (HT/UN types). C935.
-        provenance: "C267, C506.b, C935"
+          45.8% (HT/UN types). Dark-pipeline compounds are built from
+          bridge atoms (86% of atom types, 91.6% of occurrences, 96.5%
+          compound coverage) using a modified construction grammar (50%
+          agreement with C1065 atom ordering, gateway/terminal positioning
+          preserved). C935, C1141, C1142.
+        provenance: "C267, C506.b, C935, C1141, C1142"
       SUFFIX:
         required: false
         unique_count: 35
@@ -10597,7 +10634,15 @@ three_compression_architecture:
     archetypes: "Categorical folio dynamical personalities (6 types, non-linear profiles)"
     independence: "ARI=0.053 (tensor vs automaton); silhouette=-0.040 (tensor vs archetypes); ARI=0.065 (archetypes vs REGIMEs)"
 
-  provenance: "C1019, C1020, C1021, C1003, C1004, C1010, C1013"
+  bridge_dual_role: |
+    Bridge MIDDLEs serve dual function: grammar backbone (all 85 classified
+    MIDDLEs are bridges, C1020) AND morphological substrate for dark-pipeline
+    compounds (86% of atom types are bridges, C1141). MIDDLE-level disjointness
+    between bridge and dark pipeline (C1139) coexists with atom-level derivation
+    (C1141) — dark-pipeline compounds are built FROM bridge atoms but share no
+    complete MIDDLEs with bridges.
+
+  provenance: "C1019, C1020, C1021, C1003, C1004, C1010, C1013, C1139, C1141"
 
 # ============================================================
 design_freedom:
@@ -10689,6 +10734,13 @@ section_profiles:
       signature: "Distinctive FQ elevation"
       provenance: "C555"
 
+  section_differentiation_mechanism:
+    statement: "74% of section JS divergence is explained by PP frequency modulation"
+    mechanism: "Sections use the SAME PP vocabulary at DIFFERENT frequencies — frequency modulation of shared vocabulary, not vocabulary switching"
+    js_explained: "74%"
+    resolves: "C1049/C909 paradox (vocabulary is type-universal but frequency-specific)"
+    provenance: "C1134"
+
 # ============================================================
 vocabulary_architecture:
 
@@ -10717,6 +10769,23 @@ vocabulary_architecture:
     azc_modulates: "shared PP vocabulary only, not folio identity"
     provenance: "C532"
 
+  pp_pipeline_partition:
+    statement: "404 PP MIDDLEs partition into four mutually exclusive, collectively exhaustive populations"
+    bridge: 85       # Cross-system dynamical backbone (C1013)
+    non_bridge_matched: 4  # Edge-case grammar participants (c, ch, cho, otc)
+    dark_pipeline: 300     # HT/UN identification substrate (C1137)
+    phantom: 15            # A-present, B-absent artifacts (all ch-/sh- prefixed)
+    total: 404
+    bridge_dark_disjointness: "0 shared MIDDLEs between bridge (85) and dark pipeline (300) — C1139"
+    dark_pipeline_profile:
+      compound_rate: "66.7%"
+      section_concentration: "Herf 0.716 (strongly section-specific)"
+      ht_substrate: "100% HT/UN tokens, 0% grammar tokens (C1137)"
+    a_to_b_flow:
+      uniformity: "cosine 0.9997 (A folio distribution ≈ B grammar distribution)"
+      concentration: "12 A folios cover 100% of B classified grammar; f58v alone at 60.7%"
+    provenance: "C1135, C1136, C1139, C1140"
+
   grammatical_consistency:
     slot_match_rate: "75%"
     adjacent_folio_class_ratio: "1.30x"  # vs non-adjacent
@@ -10732,8 +10801,11 @@ vocabulary_architecture:
   differentiation_principle: |
     Grammar is universal at CLASS level (same 49 classes everywhere).
     Differentiation occurs at TOKEN level within classes.
-    This enables material-appropriate execution via variant selection,
-    not via different procedures. (C506.b, C537)
+    Section differentiation occurs at FREQUENCY level within shared
+    vocabulary — same PP types, different usage rates (C1134, 74% of
+    section JS divergence). This enables material-appropriate execution
+    via variant selection and frequency modulation, not via different
+    procedures. (C506.b, C537, C1134)
 
 # ============================================================
 ht_un_integration:
@@ -10830,6 +10902,35 @@ ht_un_integration:
     vocabulary_size: "4,421 types"
     line1_concentration: "50.2% of Line-1 are HT"
     provenance: "C872, C935"
+
+  dark_pipeline_integration:
+    statement: "300 dark-pipeline PP MIDDLEs produce exclusively HT/UN tokens in B"
+    ht_tokens: 1696
+    grammar_tokens: 0
+    ht_substrate_rate: "100%"
+    construction_grammar:
+      statement: "Dark-pipeline HT tokens use a distinct construction grammar from grammar-classified HT"
+      gs_ext_middle_length: 3.39   # Grammar/Section tokens
+      ht_middle_length: 1.81       # HT tokens
+      prefix_rate_gs_ext: "83.9%"
+      prefix_rate_ht: "58.1%"
+      provenance: "C1138"
+    atom_substrate:
+      statement: "Dark-pipeline compounds are built from bridge atoms"
+      bridge_atom_types: "86% (43/50 unique atoms)"
+      bridge_atom_occurrences: "91.6%"
+      compound_coverage: "96.5% (193/200 compounds contain ≥1 bridge atom)"
+      construction_hierarchy: "bridge atoms → compositional assembly (1-3 atoms) → dark-pipeline compounds → HT/UN identification tokens"
+      provenance: "C1141"
+    modified_ordering:
+      statement: "Dark pipeline follows modified version of B's atom ordering grammar (C1065)"
+      c1065_agreement: "50% (7 matches, 7 mismatches of 14 testable pairs)"
+      gateway_terminal_preserved: true
+      gateway_mean_position: 0.083  # < 0.15 = INITIAL
+      terminal_mean_position: 0.352  # > 0.40 expectation, close
+      dark_exclusive_atoms: 25  # Atoms not in grammar compounds
+      provenance: "C1142"
+    provenance: "C1137, C1138, C1141, C1142"
 
 # ============================================================
 robustness:
@@ -11201,6 +11302,11 @@ provenance:
     - "C533"   # Unique MIDDLE grammatical slot consistency
     - "C535"   # B folio vocabulary minimality
     - "C537"   # Token-level material differentiation
+    - "C1134"  # Section differentiation via PP frequency modulation (74% JS)
+    - "C1135"  # Dark pipeline characterization (300 MIDDLEs, Herf 0.716)
+    - "C1136"  # Uniform A→B vocabulary flow (cosine 0.9997, 12-folio concentration)
+    - "C1139"  # Bridge-dark pipeline MIDDLE-level disjointness
+    - "C1140"  # PP pipeline four-way partition (85+4+300+15=404)
 
   execution_syntax:
     - "C547"   # ICC-based role validation
@@ -11297,6 +11403,10 @@ provenance:
     - "C795"   # Line-1 A-context prediction (15.8x random)
     - "C812"   # HT novel MIDDLE combinations (11.19% novel pairs, distinct combinatorial space)
     - "C935"   # Compound specification dual purpose (71.6% atom-body prediction)
+    - "C1137"  # Dark pipeline 100% HT substrate (1,696 tokens, 0 grammar)
+    - "C1138"  # Dark pipeline distinct construction grammar (GS/EXT 3.39 vs HT 1.81)
+    - "C1141"  # Bridge atom substrate (86% types, 91.6% occurrences, 96.5% coverage)
+    - "C1142"  # Modified atom ordering (50% C1065 agreement, gateway/terminal preserved)
 
   fl_primitive_architecture:
     - "C770"   # FL kernel exclusion (0 kernel chars)
@@ -11539,7 +11649,7 @@ meta:
   acronym: "AZC-ACT"
   version: "1.2"
   date: "2026-02-06"
-  status: "LOCKED"
+  status: "ACTIVE"
   layer_type: "mapping contract"
   derived_from: "Tier-2 constraints only"
   audit_note: "v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31) finding that AZC is static lookup table with no independent positional effect."
@@ -11896,7 +12006,7 @@ meta:
   acronym: "AZC-B-ACT"
   version: "1.2"
   date: "2026-02-06"
-  status: "LOCKED"
+  status: "ACTIVE"
   layer_type: "correlation contract"
   derived_from: "Tier-2 constraints only"
   audit_note: "v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31) finding that AZC is static lookup table with no independent positional effect."
@@ -12011,7 +12121,8 @@ correlation:
 
   categorical_resolution:
     effect: "Fine distinctions encoded in which tokens are legal"
-    provenance: "C469"
+    frequency_dimension: "Section differentiation also manifests as frequency variation of shared PP vocabulary (74% of section JS divergence from PP frequency modulation, C1134)"
+    provenance: "C469, C1134"
 
   vanishing_semantics:
     statement: "Illegality manifests as absence, not marking"
@@ -12022,7 +12133,14 @@ correlation:
     expansion: false  # AZC does NOT expand vocabulary beyond A specification
     filtering_magnitude: "~80% of B vocabulary filtered per A context"
     effect: "Different A records make different B folios viable"
-    provenance: "C481, C502"
+    dual_channel: |
+      A-derived MIDDLEs feed B through two distinct channels:
+      - Grammar channel: 89 PP MIDDLEs (85 bridge + 4 non-bridge matched) enter
+        B's 49-class grammar as classified vocabulary
+      - Identification channel: 300 dark-pipeline PP MIDDLEs produce exclusively
+        HT/UN tokens (1,696 tokens, 0 grammar tokens), built from bridge atoms
+      Per C1140 four-way partition: 85 bridge + 4 matched + 300 dark pipeline + 15 phantom = 404 PP total.
+    provenance: "C481, C502, C1137, C1140"
 
 # ============================================================
 b_reception_architecture:
@@ -12210,7 +12328,7 @@ meta:
   acronym: "HTSC"
   version: "1.1"
   date: "2026-02-15"
-  status: "LOCKED"
+  status: "ACTIVE"
   layer_type: "cross-system layer contract"
   derived_from: "Tier 0-2 constraints (structural); Tier 3 two-axis model clearly marked"
   governance: |
@@ -12342,7 +12460,10 @@ guarantees:
       Compound atoms predict body MIDDLEs at 71.6% hit rate (1.21x lift vs 59.2% random).
       HT compound rate: 45.8% (vs 31.5% grammar).
       Mean HT MIDDLE length: 2.64 (vs 2.04 grammar).
-    provenance: "C935"
+      Dark-pipeline HT compounds are built from bridge atoms (86% of atom types,
+      96.5% compound coverage). The bridge backbone is both the dynamical backbone
+      of B's grammar AND the morphological substrate of identification vocabulary.
+    provenance: "C935, C1137, C1141"
 
   - id: "QUIRE_ORGANIZED"
     statement: "HT shows codicological clustering at the quire level"
@@ -12435,7 +12556,8 @@ cross_system_manifestation:
     novel_combinations: "11.19% novel MIDDLE pairs; 90.7% HT-exclusive MIDDLEs (C812)"
     strategy_prediction: "r=+0.46 CAUTIOUS, r=-0.48 OPPORTUNISTIC (C488)"
     morphology_b: "-edy complex forms favored (C347, C348)"
-    provenance: "C341, C342, C348, C413, C488, C796, C797, C798, C800, C802, C806, C812"
+    dark_pipeline_substrate: "300 dark-pipeline PP MIDDLEs produce exclusively HT/UN tokens (1,696 tokens, 0 grammar) — identification vocabulary channel distinct from grammar channel (C1137, C1138)"
+    provenance: "C341, C342, C348, C413, C488, C796, C797, C798, C800, C802, C806, C812, C1137, C1138"
 
   azc:
     anchoring: "Diagram geometry"
@@ -12504,7 +12626,26 @@ morphology:
   decomposition_to_atoms: "100% of compounds decompose to core atoms (C935)"
   derived_vocabulary: "81.1% compound, 64.5% folio-unique (C766)"
 
-  provenance: "C347, C417, C418, C766, C935"
+  dark_pipeline_morphology:
+    statement: "Dark-pipeline HT tokens use distinct construction from grammar-classified HT"
+    gs_ext_middle_length: 3.39   # Grammar/Section tokens
+    ht_middle_length: 1.81       # HT tokens
+    prefix_rate_gs_ext: "83.9%"
+    prefix_rate_ht: "58.1%"
+    provenance: "C1138"
+  atom_substrate:
+    statement: "Dark-pipeline compounds are built from bridge atoms (86% of atom types, 91.6% of occurrences, 96.5% compound coverage)"
+    bridge_atom_types: "43/50 (86%)"
+    construction_hierarchy: "bridge atoms → compositional assembly (1-3 atoms) → dark-pipeline compounds → HT/UN identification tokens"
+    provenance: "C1141"
+  construction_grammar:
+    statement: "Dark pipeline follows modified version of B's atom ordering grammar"
+    c1065_agreement: "50% (7 matches, 7 mismatches of 14 testable pairs)"
+    gateway_terminal_preserved: true
+    dark_exclusive_atoms: 25
+    provenance: "C1142"
+
+  provenance: "C347, C417, C418, C766, C935, C1138, C1141, C1142"
 
 # ============================================================
 operational_status:
@@ -12523,10 +12664,15 @@ operational_status:
       - "C209 (attention pacing) — not falsified, just simpler explanation available"
       - "C221 (calligraphy practice) — not falsified, just simpler explanation available"
 
+  construction_channel:
+    statement: "Dark-pipeline PP MIDDLEs are the mechanistic source of HT identification vocabulary"
+    pathway: "300 dark-pipeline MIDDLEs (C1137) → built from bridge atoms (C1141) → produce 1,696 HT/UN tokens, 0 grammar tokens"
+    provenance: "C1137, C1141"
+
   b_exclusive_identity: "100% of B-exclusive vocabulary is HT (C792)"
   b_exclusive_count: "3,694 types (C792)"
 
-  provenance: "C404, C405, C415, C792, C935"
+  provenance: "C404, C405, C415, C792, C935, C1137, C1141"
 
 # ============================================================
 # [TIER 3] Two-Axis Model
@@ -12671,6 +12817,10 @@ provenance:
       - {id: "C927", topic: "HT label elevation (2.42x)"}
     compound_specification:
       - {id: "C935", topic: "Compound specification dual-purpose model"}
+      - {id: "C1137", topic: "Dark pipeline 100% HT substrate (1,696 tokens, 0 grammar)"}
+      - {id: "C1138", topic: "Dark pipeline distinct construction grammar"}
+      - {id: "C1141", topic: "Bridge atom substrate (86% types, 96.5% coverage)"}
+      - {id: "C1142", topic: "Modified atom ordering (50% C1065 agreement)"}
     interaction_architecture:
       - {id: "C1078", topic: "Hazard avoidance vocabulary-level, not positional"}
       - {id: "C1079", topic: "Line-1 exclusivity = folio-specificity tautology"}
@@ -12703,9 +12853,9 @@ provenance:
       - {id: "C171", topic: "Closed-loop only verdict (B grammar)"}
       - {id: "C841", topic: "Paragraph gallows-initial markers (paragraph structure)"}
 
-  total_owned: 74
+  total_owned: 78
   total_referenced: 14
-  total_coverage: 88
+  total_coverage: 92
 
 # ============================================================
 # Summary statement
@@ -12735,7 +12885,7 @@ meta:
   acronym: "PSC"
   version: "1.1"
   date: "2026-02-15"
-  status: "LOCKED"
+  status: "ACTIVE"
   layer_type: "cross-system structural unit contract"
   derived_from: "Tier 0-2 constraints (structural)"
   governance: |
