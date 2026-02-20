@@ -5804,3 +5804,25 @@ Phase 407 functionally characterizes the 300 dark-pipeline PP MIDDLEs from C1135
 The dark pipeline is not "dark" — it is the **identification construction channel**. While bridge MIDDLEs structure B's operational behavior (which instruction classes to use, what archetype patterns emerge), dark-pipeline MIDDLEs structure B's identification vocabulary (which specific entities are being referenced). The distinct construction grammar — grammar-standard prefixes selecting operational domains, dark-pipeline MIDDLEs providing compound identification content, high suffix rates encoding additional context — suggests a systematic construction process for generating the specification layer (C935) from shared A/B vocabulary atoms.
 
 The complete disjointness from bridges means the A-B pipeline bifurcates cleanly: operational information flows through 85 bridge MIDDLEs into the 49-class grammar, while identification information flows through 300 dark-pipeline MIDDLEs into HT/UN compound vocabulary. These are parallel but independent pathways through the shared vocabulary pool.
+
+---
+
+## XIV. PP Pipeline Atom Decomposition (Phase 408)
+
+Phase 408 closes the PP pipeline architecture and discovers the construction hierarchy connecting the three A-B channels.
+
+### Tier 2: Structural Findings
+
+**PP pipeline complete partition (C1140):** The 404 PP MIDDLEs partition into exactly four mutually exclusive populations: 85 bridge, 4 non-bridge matched (c, ch, cho, otc -- AUXILIARY-dominant edge cases), 300 dark pipeline, and 15 B-absent phantoms (all ch/sh-prefixed with zero A tokens). The partition is exhaustive and all six pairwise intersections are empty.
+
+**Dark pipeline compounds built from bridge atoms (C1141):** Despite zero MIDDLE-level overlap (C1139), 96.5% of dark-pipeline compounds contain at least one bridge atom as a building block. Of 50 unique atoms found in the 200 compound dark-pipeline MIDDLEs, 43 (86%) are bridge MIDDLEs. Bridge atoms account for 91.6% of all atom occurrences. The construction hierarchy is: bridge atoms (short, universal) -> compositional assembly (1-3 atoms per compound) -> dark-pipeline compounds (section-concentrated) -> HT/UN identification tokens.
+
+**Modified construction grammar (C1142):** Dark-pipeline compounds follow a variant dialect of B's general atom ordering grammar (C1065). Agreement on asymmetric pair direction is 50% (7/14 matches), but gateway/terminal atom positioning is preserved (gateway mean position 0.083, terminal 0.352). The dark pipeline uses a larger atom vocabulary (50 vs 27 for grammar compounds), with 25 dark-exclusive atoms extending the construction alphabet. Section concentration (C1135 Herfindahl 0.716) is NOT atom-driven (permutation p = 0.303) -- the same atoms appear across sections, with specificity arising from combination rather than selection.
+
+### Interpretation (Tier 3-4)
+
+The three A-B pipeline channels (C1139) are not independent -- they are connected through a **construction hierarchy**. Bridge MIDDLEs serve a dual role: they ARE the dynamical backbone of B's 49-class grammar (C1013, C1014), and they are also the **morphological substrate** from which identification vocabulary is assembled. The dark pipeline does not have its own atomic vocabulary -- it reuses bridge atoms in novel combinations, using a modified grammar with additional atoms. This is the B-side analog of C913's finding that 90.9% of RI MIDDLEs contain PP substrings on the A side.
+
+The overlapping but non-identical atom pools (Jaccard 0.481) and modified ordering rules (50% agreement) suggest the dark pipeline represents a **specialized construction channel**: it shares the fundamental morphological building blocks with grammar compounds but applies different assembly rules to produce identification vocabulary rather than operational instructions. The 25 dark-exclusive atoms provide additional specificity not needed in the grammar channel.
+
+This resolves the apparent paradox of C1139: bridge and dark-pipeline MIDDLEs are disjoint as whole strings, but the dark pipeline is built FROM bridge atoms. Disjointness at the compound level coexists with dependency at the atom level.

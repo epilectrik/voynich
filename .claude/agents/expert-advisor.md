@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 981 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 987 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (981 validated)
+- Tier 0-2 binding constraints (987 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 981 constraints, 66 fits,
+full content in their source documents. All 987 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-20 12:53
-**Version:** FROZEN STATE (981 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-20 15:57
+**Version:** FROZEN STATE (987 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -113,7 +113,7 @@ and 4 structural contracts are complete.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.84 | **Status:** FROZEN | **Constraints:** 984 | **Date:** 2026-02-20
+**Version:** 3.84 | **Status:** FROZEN | **Constraints:** 987 | **Date:** 2026-02-20
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -312,8 +312,8 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 984 |
-| Completed phases | 407 |
+| Validated constraints | 987 |
+| Completed phases | 408 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -1101,7 +1101,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 984 constraints | 2026-02-20
+CONSTRAINT_REFERENCE v2.6 | 987 constraints | 2026-02-20
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2090,6 +2090,9 @@ C1136	**A->B Flow: Uniform Pool, Concentration-Structured** (A-H/A-P cosine=0.99
 C1137	**Dark Pipeline = 100% HT/UN Substrate** (1,696 tokens from 300 MIDDLEs: 0.0% grammar-classified, 100.0% HT/UN; all 300 MIDDLEs pure-HT; mean 5.7 tokens/MIDDLE; positionally and sectionally indistinguishable from general HT)
 C1138	**Dark Pipeline Has Distinct Construction Grammar** (grammar-standard/extended PREFIX ratio 3.39 vs general HT 1.81; suffix rate 89.9% vs HT 77.3%; articulator rate 2.5% vs HT 10.1%; same MIDDLEs but different morphological wrapping than general HT)
 C1139	**Dark Pipeline and Bridge Backbone Completely Disjoint** (0/300 dark-pipeline MIDDLEs overlap with 85 bridge MIDDLEs; separate A->B channels: bridges carry dynamical structure, dark pipeline carries identification vocabulary)
+C1140	**PP Pipeline Is a Complete Four-Way Partition** (85 bridge + 4 non-bridge matched + 300 dark pipeline + 15 phantom = 404; exhaustive and mutually exclusive; non-bridge matched are c/ch/cho/otc, AUXILIARY-dominant edge cases; phantoms all ch/sh-prefixed with 0 A tokens)
+C1141	**Dark Pipeline Compounds Built from Bridge Atoms** (86% of atom types are bridge MIDDLEs, 91.6% of occurrences; 96.5% of compounds contain >= 1 bridge atom; 50 unique atoms: 43 BRIDGE, 6 DARK_PIPELINE, 1 OTHER; mean 1.44 atoms/compound)
+C1142	**Dark Pipeline Uses Modified Construction Grammar**
 
 ---
 
@@ -4365,6 +4368,22 @@ Path tokens do not bridge endpoint rosette vocabularies, and vocabulary similari
 **Distinct construction grammar (C1138):** Dark-pipeline tokens use a morphological recipe distinct from both general HT and grammar tokens. Grammar-standard/extended PREFIX ratio is 3.39 (vs general HT 1.81, 87% higher) — dark tokens strongly prefer grammar-standard prefixes (ch, sh, qo, etc.) over extended/HT-specific ones. Suffix rate is 89.9% (vs HT 77.3%, grammar 38.7%). Articulator rate is 2.5% (vs HT 10.1%). The pattern is: simpler at the front (fewer articulators, more grammar-standard prefixes), more elaborated at the back (higher suffix rate). This constitutes a third morphological register within B's token inventory.
 
 **Bridge-disjoint (C1139):** The 300 dark-pipeline MIDDLEs and 85 bridge MIDDLEs (C1013) have zero overlap. The A-B vocabulary pipeline has three cleanly separated channels: (1) bridge MIDDLEs carrying dynamical/behavioral information, (2) ~4 non-bridge matched PPs, and (3) dark-pipeline MIDDLEs carrying identification/specification information. Neither population borrows from the other.
+
+
+
+---
+
+
+## XIV. PP Pipeline Atom Decomposition (Phase 408)
+
+### Tier 2: Structural Findings
+
+**PP pipeline complete partition (C1140):** The 404 PP MIDDLEs partition into exactly four mutually exclusive populations: 85 bridge, 4 non-bridge matched (c, ch, cho, otc -- AUXILIARY-dominant edge cases), 300 dark pipeline, and 15 B-absent phantoms (all ch/sh-prefixed with zero A tokens). The partition is exhaustive and all six pairwise intersections are empty.
+
+**Dark pipeline compounds built from bridge atoms (C1141):** Despite zero MIDDLE-level overlap (C1139), 96.5% of dark-pipeline compounds contain at least one bridge atom as a building block. Of 50 unique atoms found in the 200 compound dark-pipeline MIDDLEs, 43 (86%) are bridge MIDDLEs. Bridge atoms account for 91.6% of all atom occurrences. The construction hierarchy is: bridge atoms (short, universal) -> compositional assembly (1-3 atoms per compound) -> dark-pipeline compounds (section-concentrated) -> HT/UN identification tokens.
+
+**Modified construction grammar (C1142):** Dark-pipeline compounds follow a variant dialect of B's general atom ordering grammar (C1065). Agreement on asymmetric pair direction is 50% (7/14 matches), but gateway/terminal atom positioning is preserved (gateway mean position 0.083, terminal 0.352). The dark pipeline uses a larger atom vocabulary (50 vs 27 for grammar compounds), with 25 dark-exclusive atoms extending the construction alphabet. Section concentration (C1135 Herfindahl 0.716) is NOT atom-driven (permutation p = 0.303) -- the same atoms appear across sections, with specificity arising from combination rather than selection.
+
 
 
 

@@ -1,0 +1,845 @@
+{
+  "test1": {
+    "partition_counts": {
+      "all_pp": 404,
+      "bridge": 85,
+      "nonbridge_matched": 4,
+      "dark_pipeline": 300,
+      "b_absent": 15,
+      "sum": 404
+    },
+    "partition_complete": true,
+    "all_disjoint": true,
+    "pairwise_overlaps": {
+      "bridge_vs_nonbridge_matched": 0,
+      "bridge_vs_dark_pipeline": 0,
+      "bridge_vs_b_absent": 0,
+      "nonbridge_matched_vs_dark_pipeline": 0,
+      "nonbridge_matched_vs_b_absent": 0,
+      "dark_pipeline_vs_b_absent": 0
+    },
+    "nonbridge_matched_profiles": {
+      "c": {
+        "b_classes": [
+          "19",
+          "27"
+        ],
+        "n_classes": 2,
+        "dominant_role": "AUXILIARY",
+        "b_token_count": 5,
+        "b_folio_count": 5,
+        "is_compound": false,
+        "char_length": 1
+      },
+      "ch": {
+        "b_classes": [
+          "1",
+          "16",
+          "17",
+          "18",
+          "4"
+        ],
+        "n_classes": 5,
+        "dominant_role": "AUXILIARY",
+        "b_token_count": 4,
+        "b_folio_count": 4,
+        "is_compound": false,
+        "char_length": 2
+      },
+      "cho": {
+        "b_classes": [
+          "3"
+        ],
+        "n_classes": 1,
+        "dominant_role": "AUXILIARY",
+        "b_token_count": 0,
+        "b_folio_count": 0,
+        "is_compound": false,
+        "char_length": 3
+      },
+      "otc": {
+        "b_classes": [
+          "42"
+        ],
+        "n_classes": 1,
+        "dominant_role": "ENERGY_OPERATOR",
+        "b_token_count": 2,
+        "b_folio_count": 2,
+        "is_compound": true,
+        "char_length": 3
+      }
+    },
+    "phantom_profiles": {
+      "cha": {
+        "a_token_count": 0,
+        "is_compound": false,
+        "char_length": 3,
+        "atoms": []
+      },
+      "chd": {
+        "a_token_count": 0,
+        "is_compound": false,
+        "char_length": 3,
+        "atoms": []
+      },
+      "che": {
+        "a_token_count": 0,
+        "is_compound": false,
+        "char_length": 3,
+        "atoms": []
+      },
+      "chee": {
+        "a_token_count": 0,
+        "is_compound": true,
+        "char_length": 4,
+        "atoms": [
+          "ee"
+        ]
+      },
+      "cheo": {
+        "a_token_count": 0,
+        "is_compound": true,
+        "char_length": 4,
+        "atoms": [
+          "eo"
+        ]
+      },
+      "cheod": {
+        "a_token_count": 0,
+        "is_compound": true,
+        "char_length": 5,
+        "atoms": [
+          "eod"
+        ]
+      },
+      "ches": {
+        "a_token_count": 0,
+        "is_compound": false,
+        "char_length": 4,
+        "atoms": []
+      },
+      "chk": {
+        "a_token_count": 0,
+        "is_compound": false,
+        "char_length": 3,
+        "atoms": []
+      },
+      "chod": {
+        "a_token_count": 0,
+        "is_compound": true,
+        "char_length": 4,
+        "atoms": [
+          "od"
+        ]
+      },
+      "chot": {
+        "a_token_count": 0,
+        "is_compound": true,
+        "char_length": 4,
+        "atoms": [
+          "ot"
+        ]
+      },
+      "chs": {
+        "a_token_count": 0,
+        "is_compound": false,
+        "char_length": 3,
+        "atoms": []
+      },
+      "shch": {
+        "a_token_count": 0,
+        "is_compound": false,
+        "char_length": 4,
+        "atoms": []
+      },
+      "she": {
+        "a_token_count": 0,
+        "is_compound": false,
+        "char_length": 3,
+        "atoms": []
+      },
+      "sheo": {
+        "a_token_count": 0,
+        "is_compound": true,
+        "char_length": 4,
+        "atoms": [
+          "eo"
+        ]
+      },
+      "sho": {
+        "a_token_count": 0,
+        "is_compound": false,
+        "char_length": 3,
+        "atoms": []
+      }
+    },
+    "phantom_summary": {
+      "compound_rate": 0.4,
+      "mean_a_token_count": 0.0,
+      "mean_char_length": 3.6,
+      "prefix_pattern": {
+        "ch": 11,
+        "sh": 4
+      }
+    },
+    "verdict": "PARTITION_COMPLETE"
+  },
+  "test2": {
+    "n_compound_dark": 200,
+    "n_atomic_dark": 100,
+    "compound_rate": 0.6667,
+    "n_unique_atoms": 50,
+    "atom_classification_types": {
+      "DARK_PIPELINE": 6,
+      "BRIDGE": 43,
+      "OTHER": 1
+    },
+    "atom_classification_type_fractions": {
+      "DARK_PIPELINE": 0.12,
+      "BRIDGE": 0.86,
+      "OTHER": 0.02
+    },
+    "atom_classification_occurrences": {
+      "BRIDGE": 263,
+      "DARK_PIPELINE": 23,
+      "OTHER": 1
+    },
+    "atom_classification_occurrence_fractions": {
+      "BRIDGE": 0.9164,
+      "DARK_PIPELINE": 0.0801,
+      "OTHER": 0.0035
+    },
+    "bridge_atom_type_fraction": 0.86,
+    "bridge_atom_occurrence_fraction": 0.9164,
+    "bridge_compound_coverage": 0.965,
+    "n_compounds_with_bridge_atom": 193,
+    "mean_atoms_per_compound": 1.435,
+    "atom_count_distribution": {
+      "1": 123,
+      "2": 67,
+      "3": 10
+    },
+    "top_20_atoms": [
+      {
+        "atom": "eo",
+        "frequency": 28,
+        "classification": "BRIDGE",
+        "char_length": 2
+      },
+      {
+        "atom": "ai",
+        "frequency": 17,
+        "classification": "BRIDGE",
+        "char_length": 2
+      },
+      {
+        "atom": "od",
+        "frequency": 16,
+        "classification": "BRIDGE",
+        "char_length": 2
+      },
+      {
+        "atom": "ol",
+        "frequency": 16,
+        "classification": "BRIDGE",
+        "char_length": 2
+      },
+      {
+        "atom": "ee",
+        "frequency": 15,
+        "classification": "BRIDGE",
+        "char_length": 2
+      },
+      {
+        "atom": "ke",
+        "frequency": 15,
+        "classification": "BRIDGE",
+        "char_length": 2
+      },
+      {
+        "atom": "al",
+        "frequency": 11,
+        "classification": "BRIDGE",
+        "char_length": 2
+      },
+      {
+        "atom": "ckh",
+        "frequency": 10,
+        "classification": "BRIDGE",
+        "char_length": 3
+      },
+      {
+        "atom": "ek",
+        "frequency": 10,
+        "classification": "BRIDGE",
+        "char_length": 2
+      },
+      {
+        "atom": "ok",
+        "frequency": 10,
+        "classification": "BRIDGE",
+        "char_length": 2
+      },
+      {
+        "atom": "ot",
+        "frequency": 9,
+        "classification": "BRIDGE",
+        "char_length": 2
+      },
+      {
+        "atom": "kch",
+        "frequency": 9,
+        "classification": "BRIDGE",
+        "char_length": 3
+      },
+      {
+        "atom": "cth",
+        "frequency": 8,
+        "classification": "DARK_PIPELINE",
+        "char_length": 3
+      },
+      {
+        "atom": "tch",
+        "frequency": 7,
+        "classification": "BRIDGE",
+        "char_length": 3
+      },
+      {
+        "atom": "eeo",
+        "frequency": 7,
+        "classification": "BRIDGE",
+        "char_length": 3
+      },
+      {
+        "atom": "dy",
+        "frequency": 6,
+        "classification": "BRIDGE",
+        "char_length": 2
+      },
+      {
+        "atom": "lch",
+        "frequency": 5,
+        "classification": "DARK_PIPELINE",
+        "char_length": 3
+      },
+      {
+        "atom": "lo",
+        "frequency": 5,
+        "classification": "BRIDGE",
+        "char_length": 2
+      },
+      {
+        "atom": "cph",
+        "frequency": 5,
+        "classification": "BRIDGE",
+        "char_length": 3
+      },
+      {
+        "atom": "et",
+        "frequency": 5,
+        "classification": "BRIDGE",
+        "char_length": 2
+      }
+    ],
+    "bridge_atoms_list": [
+      "ai",
+      "aii",
+      "aiin",
+      "ain",
+      "al",
+      "am",
+      "ar",
+      "ck",
+      "ckh",
+      "cph",
+      "ct",
+      "dy",
+      "eck",
+      "ect",
+      "ed",
+      "ee",
+      "eek",
+      "eeo",
+      "eey",
+      "ek",
+      "eo",
+      "eod",
+      "eol",
+      "et",
+      "ey",
+      "in",
+      "ka",
+      "kc",
+      "kch",
+      "ke",
+      "keeo",
+      "lo",
+      "ly",
+      "od",
+      "ok",
+      "ol",
+      "op",
+      "opch",
+      "or",
+      "ot",
+      "pch",
+      "tch",
+      "te"
+    ],
+    "verdict": "BRIDGE_ATOMS_PREVALENT"
+  },
+  "test3": {
+    "n_grammar_compounds": 29,
+    "n_dark_compounds": 200,
+    "n_all_b_compounds": 974,
+    "n_grammar_atoms": 27,
+    "n_dark_atoms": 50,
+    "n_all_b_atoms": 57,
+    "jaccard_grammar_dark": 0.4808,
+    "jaccard_grammar_allb": 0.4737,
+    "jaccard_dark_allb": 0.8772,
+    "n_shared": 25,
+    "n_dark_exclusive": 25,
+    "n_grammar_exclusive": 2,
+    "shared_atoms": [
+      "ai",
+      "aii",
+      "ck",
+      "ct",
+      "dy",
+      "ed",
+      "ee",
+      "eeo",
+      "ek",
+      "eo",
+      "eol",
+      "ey",
+      "in",
+      "ka",
+      "kc",
+      "ke",
+      "kee",
+      "od",
+      "ok",
+      "ol",
+      "op",
+      "ot",
+      "pch",
+      "tch",
+      "te"
+    ],
+    "dark_exclusive_atoms": [
+      "aiin",
+      "ain",
+      "al",
+      "am",
+      "ar",
+      "ckh",
+      "cph",
+      "cth",
+      "ech",
+      "eck",
+      "ect",
+      "eek",
+      "eey",
+      "eod",
+      "eok",
+      "et",
+      "kch",
+      "keeo",
+      "lch",
+      "lk",
+      "lo",
+      "ly",
+      "olk",
+      "opch",
+      "or"
+    ],
+    "grammar_exclusive_atoms": [
+      "eed",
+      "iin"
+    ],
+    "verdict": "OVERLAPPING_POOLS"
+  },
+  "test4": {
+    "n_testable_atoms": 22,
+    "observed_mean_herf": 0.4329,
+    "null_mean_herf": 0.4255,
+    "perm_p": 0.303,
+    "n_shuffles": 1000,
+    "atom_details": [
+      {
+        "atom": "ai",
+        "n_compounds": 17,
+        "pooled_herf": 0.4101,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "al",
+        "n_compounds": 11,
+        "pooled_herf": 0.3287,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "ckh",
+        "n_compounds": 10,
+        "pooled_herf": 0.3564,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "cph",
+        "n_compounds": 5,
+        "pooled_herf": 0.4167,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "cth",
+        "n_compounds": 8,
+        "pooled_herf": 0.2863,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "dy",
+        "n_compounds": 6,
+        "pooled_herf": 0.2917,
+        "dominant_section": "H"
+      },
+      {
+        "atom": "ee",
+        "n_compounds": 15,
+        "pooled_herf": 0.5117,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "eeo",
+        "n_compounds": 7,
+        "pooled_herf": 0.5237,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "ek",
+        "n_compounds": 10,
+        "pooled_herf": 0.3189,
+        "dominant_section": "H"
+      },
+      {
+        "atom": "eo",
+        "n_compounds": 28,
+        "pooled_herf": 0.5253,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "et",
+        "n_compounds": 5,
+        "pooled_herf": 0.3163,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "kch",
+        "n_compounds": 9,
+        "pooled_herf": 0.5766,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "ke",
+        "n_compounds": 15,
+        "pooled_herf": 0.49,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "lch",
+        "n_compounds": 5,
+        "pooled_herf": 0.4201,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "lo",
+        "n_compounds": 5,
+        "pooled_herf": 0.4074,
+        "dominant_section": "B"
+      },
+      {
+        "atom": "od",
+        "n_compounds": 16,
+        "pooled_herf": 0.3607,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "ok",
+        "n_compounds": 10,
+        "pooled_herf": 0.463,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "ol",
+        "n_compounds": 16,
+        "pooled_herf": 0.3382,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "or",
+        "n_compounds": 5,
+        "pooled_herf": 0.54,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "ot",
+        "n_compounds": 9,
+        "pooled_herf": 0.6403,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "tch",
+        "n_compounds": 7,
+        "pooled_herf": 0.5007,
+        "dominant_section": "S"
+      },
+      {
+        "atom": "te",
+        "n_compounds": 5,
+        "pooled_herf": 0.5014,
+        "dominant_section": "S"
+      }
+    ],
+    "verdict": "ATOM_SECTION_INDEPENDENT"
+  },
+  "test5": {
+    "n_compounds_with_bigrams": 77,
+    "n_dark_bigram_types": 67,
+    "n_dark_bigram_tokens": 87,
+    "n_dark_asymmetric_pairs": 4,
+    "dark_asymmetric_pairs": [
+      {
+        "first": "ek",
+        "second": "ke",
+        "dominant_count": 4,
+        "subordinate_count": 0,
+        "total": 4,
+        "rate": 1.0
+      },
+      {
+        "first": "eo",
+        "second": "ot",
+        "dominant_count": 3,
+        "subordinate_count": 0,
+        "total": 3,
+        "rate": 1.0
+      },
+      {
+        "first": "ke",
+        "second": "eo",
+        "dominant_count": 3,
+        "subordinate_count": 0,
+        "total": 3,
+        "rate": 1.0
+      },
+      {
+        "first": "ok",
+        "second": "ke",
+        "dominant_count": 3,
+        "subordinate_count": 0,
+        "total": 3,
+        "rate": 1.0
+      }
+    ],
+    "c1065_comparison": {
+      "n_c1065_pairs": 20,
+      "n_tested": 14,
+      "matches": 7,
+      "mismatches": 7,
+      "not_found": 6,
+      "agreement_rate": 0.5
+    },
+    "comparison_details": [
+      {
+        "c1065_first": "al",
+        "c1065_second": "lo",
+        "c1065_total": 12,
+        "dark_status": "MATCH",
+        "dark_same": 2,
+        "dark_opposite": 0
+      },
+      {
+        "c1065_first": "ai",
+        "c1065_second": "ed",
+        "c1065_total": 5,
+        "dark_status": "NOT_FOUND"
+      },
+      {
+        "c1065_first": "ek",
+        "c1065_second": "ke",
+        "c1065_total": 7,
+        "dark_status": "MATCH",
+        "dark_same": 4,
+        "dark_opposite": 0
+      },
+      {
+        "c1065_first": "ai",
+        "c1065_second": "ka",
+        "c1065_total": 12,
+        "dark_status": "MISMATCH",
+        "dark_same": 0,
+        "dark_opposite": 1
+      },
+      {
+        "c1065_first": "al",
+        "c1065_second": "op",
+        "c1065_total": 5,
+        "dark_status": "NOT_FOUND"
+      },
+      {
+        "c1065_first": "al",
+        "c1065_second": "lch",
+        "c1065_total": 9,
+        "dark_status": "MATCH",
+        "dark_same": 2,
+        "dark_opposite": 0
+      },
+      {
+        "c1065_first": "ed",
+        "c1065_second": "te",
+        "c1065_total": 6,
+        "dark_status": "NOT_FOUND"
+      },
+      {
+        "c1065_first": "eeo",
+        "c1065_second": "te",
+        "c1065_total": 5,
+        "dark_status": "MISMATCH",
+        "dark_same": 0,
+        "dark_opposite": 1
+      },
+      {
+        "c1065_first": "ee",
+        "c1065_second": "et",
+        "c1065_total": 6,
+        "dark_status": "MATCH",
+        "dark_same": 1,
+        "dark_opposite": 0
+      },
+      {
+        "c1065_first": "eol",
+        "c1065_second": "olk",
+        "c1065_total": 6,
+        "dark_status": "MATCH",
+        "dark_same": 1,
+        "dark_opposite": 0
+      },
+      {
+        "c1065_first": "ech",
+        "c1065_second": "ke",
+        "c1065_total": 6,
+        "dark_status": "NOT_FOUND"
+      },
+      {
+        "c1065_first": "ke",
+        "c1065_second": "ok",
+        "c1065_total": 6,
+        "dark_status": "MISMATCH",
+        "dark_same": 0,
+        "dark_opposite": 3
+      },
+      {
+        "c1065_first": "eeo",
+        "c1065_second": "eod",
+        "c1065_total": 10,
+        "dark_status": "MATCH",
+        "dark_same": 1,
+        "dark_opposite": 0
+      },
+      {
+        "c1065_first": "eo",
+        "c1065_second": "ke",
+        "c1065_total": 8,
+        "dark_status": "MISMATCH",
+        "dark_same": 0,
+        "dark_opposite": 3
+      },
+      {
+        "c1065_first": "ai",
+        "c1065_second": "op",
+        "c1065_total": 6,
+        "dark_status": "NOT_FOUND"
+      },
+      {
+        "c1065_first": "lch",
+        "c1065_second": "ol",
+        "c1065_total": 7,
+        "dark_status": "MISMATCH",
+        "dark_same": 0,
+        "dark_opposite": 1
+      },
+      {
+        "c1065_first": "ckh",
+        "c1065_second": "eck",
+        "c1065_total": 5,
+        "dark_status": "MISMATCH",
+        "dark_same": 0,
+        "dark_opposite": 1
+      },
+      {
+        "c1065_first": "eo",
+        "c1065_second": "ot",
+        "c1065_total": 6,
+        "dark_status": "MATCH",
+        "dark_same": 3,
+        "dark_opposite": 0
+      },
+      {
+        "c1065_first": "al",
+        "c1065_second": "lk",
+        "c1065_total": 12,
+        "dark_status": "NOT_FOUND"
+      },
+      {
+        "c1065_first": "al",
+        "c1065_second": "ka",
+        "c1065_total": 8,
+        "dark_status": "MISMATCH",
+        "dark_same": 0,
+        "dark_opposite": 2
+      }
+    ],
+    "gateway_terminal_check": {
+      "gateway_atoms": [
+        "eol",
+        "op",
+        "opch"
+      ],
+      "terminal_atoms": [
+        "ai",
+        "ed",
+        "eod",
+        "kc"
+      ],
+      "gateway_mean_pos": 0.0833,
+      "terminal_mean_pos": 0.3521,
+      "gateway_n": 4,
+      "terminal_n": 8,
+      "positional_preserved": true
+    },
+    "verdict": "MODIFIED_GRAMMAR"
+  },
+  "verdicts": {
+    "test1": "PARTITION_COMPLETE",
+    "test2": "BRIDGE_ATOMS_PREVALENT",
+    "test3": "OVERLAPPING_POOLS",
+    "test4": "ATOM_SECTION_INDEPENDENT",
+    "test5": "MODIFIED_GRAMMAR",
+    "overall": "BRIDGE_SUBSTRATE_OVERLAPPING_POOLS",
+    "summary": "PP pipeline fully partitioned. Dark-pipeline compounds contain bridge atoms with overlapping but not identical atom pools. Section concentration is not atom-driven."
+  },
+  "metadata": {
+    "phase": "PP_PIPELINE_ATOM_DECOMPOSITION",
+    "phase_number": 408,
+    "script": "pp_pipeline_atoms.py",
+    "n_all_pp": 404,
+    "n_bridge": 85,
+    "n_matched_pp": 89,
+    "n_nonbridge_matched": 4,
+    "n_dark_pipeline": 300,
+    "n_b_absent": 15,
+    "n_core_middles": 72,
+    "n_b_tokens_scanned": 23096
+  }
+}

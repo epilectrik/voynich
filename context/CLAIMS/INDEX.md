@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 981 validated constraints | **Version:** 4.10 | **Date:** 2026-02-20
+**Total:** 987 validated constraints | **Version:** 4.10 | **Date:** 2026-02-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -2974,6 +2974,23 @@ Tests the structural fate of 300 dark-pipeline PP MIDDLEs identified in Phase 40
 - Test 3: BRIDGE_DISJOINT — zero overlap between 300 dark-pipeline and 85 bridge MIDDLEs
 - Test 4: HEADER_NEUTRAL — dark-pipeline line-1 concentration matches general HT (delta +0.4pp)
 - Test 5: HT_ALIGNED — JS(dark,HT)=0.0005 vs JS(dark,grammar)=0.0109; 22x closer to HT
+
+### PP Pipeline Atom Decomposition (C1140-C1142) -- Phase: PP_PIPELINE_ATOM_DECOMPOSITION (Phase 408)
+
+Verifies the 404 PP MIDDLE partition and decomposes dark-pipeline compound MIDDLEs into atoms. Discovers that 96.5% of dark-pipeline compounds contain bridge atoms as building blocks.
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1140** | **PP Pipeline Is a Complete Four-Way Partition** (85 bridge + 4 non-bridge matched + 300 dark pipeline + 15 phantom = 404; exhaustive and mutually exclusive; non-bridge matched are c/ch/cho/otc, AUXILIARY-dominant edge cases; phantoms all ch/sh-prefixed with 0 A tokens) | 2 | A->B | -> [C1140_pp_pipeline_complete_partition.md](C1140_pp_pipeline_complete_partition.md) |
+| **1141** | **Dark Pipeline Compounds Built from Bridge Atoms** (86% of atom types are bridge MIDDLEs, 91.6% of occurrences; 96.5% of compounds contain >= 1 bridge atom; 50 unique atoms: 43 BRIDGE, 6 DARK_PIPELINE, 1 OTHER; mean 1.44 atoms/compound) | 2 | B morphology | -> [C1141_dark_pipeline_bridge_atom_substrate.md](C1141_dark_pipeline_bridge_atom_substrate.md) |
+| **1142** | **Dark Pipeline Uses Modified Construction Grammar** (50% agreement with C1065 ordering; gateway/terminal positioning preserved; 25 dark-exclusive atoms extend grammar pool; section concentration NOT atom-driven, p=0.303) | 2 | B morphology | -> [C1142_dark_pipeline_modified_construction_grammar.md](C1142_dark_pipeline_modified_construction_grammar.md) |
+
+**Phase 408 findings (PP Pipeline Atom Decomposition):**
+- Test 1: PARTITION_COMPLETE -- 85 + 4 + 300 + 15 = 404, exhaustive, mutually exclusive
+- Test 2: BRIDGE_ATOMS_PREVALENT -- 86% of atom types are bridges, 91.6% of occurrences, 96.5% compound coverage
+- Test 3: OVERLAPPING_POOLS -- Jaccard(grammar,dark)=0.481; 25 shared, 25 dark-exclusive atoms
+- Test 4: ATOM_SECTION_INDEPENDENT -- permutation p=0.303; section concentration not atom-driven
+- Test 5: MODIFIED_GRAMMAR -- 50% agreement with C1065 pairs; gateway/terminal positioning preserved
 
 ---
 

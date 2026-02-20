@@ -4,6 +4,43 @@
 
 ---
 
+## Version 4.10.17 (2026-02-20) - Phase 408: PP Pipeline Atom Decomposition
+
+### Summary
+
+Phase 408 closes the PP pipeline architecture and decomposes dark-pipeline compound MIDDLEs into atoms. Headline finding: **96.5% of dark-pipeline compounds contain bridge atoms as building blocks** -- identification vocabulary is morphologically derived FROM dynamical vocabulary. The PP pipeline is a complete four-way partition (85 + 4 + 300 + 15 = 404). Dark-pipeline construction grammar is a modified dialect of general B ordering rules (50% pair agreement, but gateway/terminal positioning preserved).
+
+Key findings:
+- **Partition closure** (Test 1): 85 bridge + 4 non-bridge matched (c, ch, cho, otc) + 300 dark pipeline + 15 phantom = 404 PP MIDDLEs. Exhaustive and mutually exclusive.
+- **Bridge atom prevalence** (Test 2): 86% of atom types are bridges, 91.6% of occurrences. 43 of 50 unique atoms are bridge MIDDLEs. Mean 1.44 atoms per compound.
+- **Overlapping atom pools** (Test 3): Jaccard(grammar,dark) = 0.481. 25 shared atoms, 25 dark-exclusive. Jaccard(dark,all_B) = 0.877.
+- **Section independence** (Test 4): Section concentration is NOT atom-driven (permutation p = 0.303). Same atoms across sections; specificity from combination, not selection.
+- **Modified grammar** (Test 5): 50% agreement with C1065 ordering (7/14 matches). Gateway/terminal positioning preserved (0.083 vs 0.352).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **CREATED** | `phases/PP_PIPELINE_ATOM_DECOMPOSITION/scripts/pp_pipeline_atoms.py` -- 5-test battery |
+| **CREATED** | `phases/PP_PIPELINE_ATOM_DECOMPOSITION/results/pp_pipeline_atoms.json` -- full results |
+| **CREATED** | `context/CLAIMS/C1140_pp_pipeline_complete_partition.md` |
+| **CREATED** | `context/CLAIMS/C1141_dark_pipeline_bridge_atom_substrate.md` |
+| **CREATED** | `context/CLAIMS/C1142_dark_pipeline_modified_construction_grammar.md` |
+| **UPDATED** | `context/CLAIMS/INDEX.md` -- added Phase 408 section, count 984->987 |
+| **REGENERATED** | `CONSTRAINT_TABLE.txt`, expert-advisor agent |
+
+### New Constraints
+
+| # | Statement | Tier |
+|---|-----------|------|
+| C1140 | PP pipeline complete four-way partition: 85 + 4 + 300 + 15 = 404 | 2 |
+| C1141 | Dark pipeline compounds built from bridge atoms: 86% types, 91.6% occurrences, 96.5% coverage | 2 |
+| C1142 | Dark pipeline uses modified construction grammar: 50% C1065 agreement, gateway/terminal preserved | 2 |
+
+Constraint count: 984 -> 987 (+3 new).
+
+---
+
 ## Version 4.10.16 (2026-02-20) - Phase 407: Dark Pipeline Functional Test
 
 ### Summary
