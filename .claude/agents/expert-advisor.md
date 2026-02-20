@@ -88,7 +88,7 @@ and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-20 15:57
+**Generated:** 2026-02-20 16:09
 **Version:** FROZEN STATE (987 constraints, 66 fits) [COMPACT]
 
 ---
@@ -2100,7 +2100,7 @@ C1142	**Dark Pipeline Uses Modified Construction Grammar**
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-02-19
+# Generated: 2026-02-20
 # Total: 66 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
@@ -4386,6 +4386,21 @@ Path tokens do not bridge endpoint rosette vocabularies, and vocabulary similari
 
 
 
+
+### Tier 4: Operational-Profile Nomenclature
+
+The dark pipeline may be a **naming system that defines things by their processing behavior**. Bridge atoms encode operational primitives (heat, cool, monitor, stabilize); the 49-class grammar uses these to specify what to DO. The dark pipeline recombines the same atoms into compound labels that specify what you are WORKING WITH. The names are not arbitrary -- they are compressed operational profiles. A dark-pipeline compound built from [cooling-atom + monitoring-atom] does not mean "lavender" or "rosemary"; it means "the material you cool while monitoring."
+
+This would explain the full structural signature:
+- **Built from bridge atoms (96.5%):** Things are named using operational vocabulary because the names ARE operational descriptions.
+- **Never grammar-classified (100% HT/UN):** Names do not execute. They sit alongside the grammar as labels.
+- **Section-concentrated but not atom-driven (Herf 0.716, perm p=0.303):** Every section uses the same operational primitives; different sections combine them differently because different material classes have different processing profiles.
+- **Low frequency (5.7 tokens/MIDDLE):** Each specific material or preparation appears rarely across the manuscript.
+- **Modified ordering grammar (50% C1065 agreement):** Atoms are sequenced differently when naming something than when specifying operations on it -- perhaps the dominant processing property leads.
+- **Grammar-standard prefixes (C1138, GS/EXT ratio 3.39):** Even identification tokens need a domain selector. Materials are identified within operational contexts.
+- **Phantoms (15 B-absent):** Morphologically valid name-slots that no actual material instantiates. The system can generate more names than it needs.
+
+The analogy is chemical nomenclature: methyl-ethyl-ketone names a substance by concatenating its structural components. A distiller trained in this system would not read a substance name in natural language -- they would read a compound MIDDLE and recognize the material by its operational profile. The semantic ceiling (C171) holds: we cannot recover WHICH material a compound names, but we can see that the naming system is built from the same atoms that drive the operational grammar.
 
 
 ---

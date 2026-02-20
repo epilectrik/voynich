@@ -1288,7 +1288,7 @@ External evidence (historical documents, archaeological finds) might constrain t
 
 ### Structural Contracts (LOCKED as of 2026-01-13)
 
-The cross-system vocabulary architecture is formally characterized via four structural contracts:
+The cross-system vocabulary architecture is formally characterized via six structural contracts:
 
 | Contract | File | Status | Function |
 |----------|------|--------|----------|
@@ -1296,10 +1296,12 @@ The cross-system vocabulary architecture is formally characterized via four stru
 | AZC-ACT | `azc_activation.act.yaml` | LOCKED v1.2 | A/AZC positional classification |
 | AZC-B-ACT | `azc_b_activation.act.yaml` | LOCKED v1.2 | AZC/B vocabulary correlation |
 | BCSC | `currierB.bcsc.yaml` | LOCKED v3.4 | Currier B internal grammar |
+| HTSC | `humanTrack.htsc.yaml` | LOCKED v1.0 | Human Track layer (cross-system) |
+| PSC | `paragraph.psc.yaml` | LOCKED v1.0 | Paragraph unit (cross-system) |
 
 Each contract is derived from Tier 0-2 constraints and introduces no new claims. Constraints remain authoritative.
 
-**Architecture characterized:** As of 2026-01-13, the cross-system vocabulary architecture is fully characterized at Tier 0-2. AZC_POSITION_VOCABULARY (2026-01-31) established that AZC is a static lookup table with no independent positional effect. All remaining work concerns interpretation, tooling, or external corroboration.
+**Architecture characterized:** As of 2026-01-13, the cross-system vocabulary architecture is fully characterized at Tier 0-2. AZC_POSITION_VOCABULARY (2026-01-31) established that AZC is a static lookup table with no independent positional effect. Phases 406-408 (2026-02-20) decomposed the A-B vocabulary pipeline into four populations: 85 bridge MIDDLEs (dynamical backbone), 4 non-bridge matched, 300 dark-pipeline MIDDLEs (identification substrate, built from bridge atoms at 96.5% coverage), and 15 phantoms. All remaining work concerns interpretation, tooling, or external corroboration.
 
 **PCA-v1 CERTIFIED:** Cross-system audit passed all 6 tests (legality consistency, no back-propagation, parametric silence, semantic vacuum, A/B isolation, HT non-interference). The contracts compose cleanly without hidden coupling.
 
