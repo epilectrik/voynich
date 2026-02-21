@@ -1254,6 +1254,37 @@ vocabulary_architecture:
       section_r2: 0.193  # Section identity explains only 19.3% of dark density variance
       implication: "Complementary distribution: folios invest more in grammar execution (bridge) OR identification (dark pipeline), not both equally"
       provenance: "C1146"
+    folio_balance_characterization:
+      classification: "BRIDGE_DOMINANT (21) / BALANCED (41) / DARK_DOMINANT (20) by dark/bridge ratio quartiles"
+      section_structured: "chi-sq=29.95, p<0.0001 — BIO=bridge-dom, PHARMA=dark-dom, RECIPE_B=balanced, HERBAL_B=mixed"
+      dynamics_orthogonal: "ARI=-0.002 vs archetypes, rho=0.001 vs AXM — vocabulary balance is independent of control-plane dynamics"
+      kernel_coupling: "Dark-dominant folios shift kernel profile: k_frac 0.314→0.226, h_frac 0.100→0.135; survives within RECIPE_B (p=0.002)"
+      c1035_residual: "Balance does NOT explain the 57% irreducible AXM residual"
+      provenance: "C1149, C1150, C1151"
+    vocabulary_dynamics_layer_separation:
+      statement: "Section-conditioned M2 captures vocabulary composition but not sequential dynamics or kernel engagement"
+      class_dist_ratio: 1.48  # real/synth inter-folio JSD — near-captured
+      axm_spread_ratio: 1.76  # real/synth AXM SD — uncaptured
+      kernel_profile_ratio: 1.79  # real/synth k/h/e SD — uncaptured
+      folio_fidelity: "87% of folios improved by section-conditioning (71/82)"
+      layer_1: "Vocabulary composition — section-determined"
+      layer_2: "Sequential dynamics + kernel engagement — program-specific"
+      provenance: "C1152"
+    generative_design_freedom:
+      aggregate: 0.399  # fraction of folio variation not section-captured
+      class_dist_uncaptured: 0.324
+      axm_uncaptured: 0.432
+      kernel_uncaptured: 0.440
+      c1035_consistent: true  # AXM 43.2% vs C1035 57%
+      c1016_note: "Lower than C1016 66.3% because class distribution IS section-captured (different metric layer)"
+      provenance: "C1153"
+    kernel_execution_universality:
+      k_ratio_range: "1.82-2.32x across all sections (always program-specific)"
+      e_ratio_range: "1.76-2.21x across all sections (tracks k-kernel)"
+      h_ratio_captured: "BIO 1.29x, HERBAL 1.04x, COSMO 0.74x (section-determined)"
+      h_ratio_uncaptured: "STARS_RECIPE 2.18x (program-specific)"
+      implication: "Execution kernel (k/e) is always program-level; monitoring kernel (h) is domain-dependent"
+      provenance: "C1154"
     dark_pipeline_profile:
       compound_rate: "66.7%"
       section_concentration: "Herf 0.716 (strongly section-specific)"
@@ -1424,7 +1455,7 @@ ht_un_integration:
       ratio: "3.9x"
       implication: "Dark pipeline is the primary vehicle for section-level vocabulary modulation"
       provenance: "C1148"
-    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148"
+    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1149, C1150, C1151, C1152, C1153, C1154"
 
 # ============================================================
 robustness:
@@ -1804,6 +1835,12 @@ provenance:
     - "C1143"  # Dark-exclusive atom equivalence (MW p=0.107)
     - "C1146"  # Bridge-dark anti-correlation (r=-0.865)
     - "C1148"  # Dark pipeline hyper-modulation (3.9x JS baseline)
+    - "C1149"  # Balance orthogonal to dynamical archetypes (ARI=-0.002)
+    - "C1150"  # Dark-dominant kernel shift (k 0.314→0.226, RECIPE_B p=0.002)
+    - "C1151"  # Balance section-structured (chi-sq p<0.0001)
+    - "C1152"  # Vocabulary-dynamics layer separation (class dist 1.48x, AXM 1.76x, kernel 1.79x)
+    - "C1153"  # Generative design freedom ~40% (consistent with C1035)
+    - "C1154"  # k/e-kernel universally program-specific (~2x all sections)
 
   execution_syntax:
     - "C547"   # ICC-based role validation

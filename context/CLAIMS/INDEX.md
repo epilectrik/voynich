@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 993 validated constraints | **Version:** 4.10 | **Date:** 2026-02-20
+**Total:** 999 validated constraints | **Version:** 4.10 | **Date:** 2026-02-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3014,6 +3014,46 @@ Probes the internal structure of the 300 dark-pipeline MIDDLEs. 6-test battery: 
 - Test 4: HT_COVARIATE -- dark-bridge anti-correlation r=-0.865; section R²=0.193
 - Test 5: INTERIOR_ENRICHED -- 73.2% MIDDLE vs HT 67.7% (chi-sq p<0.0001)
 - Test 6: HYPER_MODULATED -- mean JS=0.483, 3.9x C1134 baseline
+
+---
+
+### Folio Balance Characterization (C1149-C1151) -- Phase: FOLIO_BALANCE_CHARACTERIZATION (Phase 410)
+
+Tests whether the bridge/dark folio balance axis (derived from C1146) is structurally informative. 5-test battery: section association, dynamical archetype independence, AXM uniformity, kernel profile coupling, paragraph count.
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1149** | **Vocabulary Balance Is Orthogonal to Dynamical Archetypes** (ARI=-0.002, chi-sq p=0.807; Spearman rho=0.001 vs AXM; balance, dynamics, and section are three independent structural axes) | 2 | B, cross-system, dynamics | -> [C1149_balance_dynamics_independence.md](C1149_balance_dynamics_independence.md) |
+| **1150** | **Dark-Dominant Folios Shift Kernel Profile Within Section** (k_frac drops 0.314→0.226 in dark-dominant; h_frac rises 0.100→0.135; survives within-section in RECIPE_B p=0.002) | 2 | B, kernel, section | -> [C1150_balance_kernel_coupling.md](C1150_balance_kernel_coupling.md) |
+| **1151** | **Balance Distribution Is Section-Structured** (chi-sq=29.95, df=6, p<0.0001; BIO=bridge-dominant, PHARMA=dark-dominant, RECIPE_B=balanced-dominant, HERBAL_B=mixed) | 2 | B, section differentiation | -> [C1151_balance_section_profiles.md](C1151_balance_section_profiles.md) |
+
+**Phase 410 findings (Folio Balance Characterization):**
+- Test 1: SECTION_STRUCTURED -- balance distribution strongly associated with section (chi-sq p<0.0001)
+- Test 2: ARCHETYPE_ORTHOGONAL -- balance orthogonal to dynamical archetypes (ARI=-0.002)
+- Test 3: AXM_UNIFORM -- AXM self-transition identical across balance groups (KW p=0.967)
+- Test 4: KERNEL_DIFFERENTIATED -- dark-dominant folios shift kernel profile (k p=0.002, survives RECIPE_B within-section)
+- Test 5: PARAGRAPH_UNIFORM -- paragraph count not differentiated by balance (KW p=0.152)
+- Overall: BALANCE_PARTIALLY_INFORMATIVE (2 of 5 tests differentiated)
+
+---
+
+### Section-Conditioned Generative Fidelity (C1152-C1154) -- Phase: SECTION_CONDITIONED_GENERATIVE_FIDELITY (Phase 411)
+
+Tests whether section-conditioned M2 captures folio-level variation. 5-test battery comparing real inter-folio heterogeneity against section-M2 synthetic heterogeneity across class distributions, AXM dynamics, and kernel profiles.
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1152** | **Section-M2 Captures Vocabulary Composition but Not Sequential Dynamics** (class dist ratio 1.48x near-captured; AXM spread 1.76x uncaptured; kernel profile 1.79x uncaptured; 87% folios improved by section-conditioning; vocabulary is section-determined, dynamics are program-specific) | 2 | B, section, generative | -> [C1152_vocabulary_dynamics_layer_separation.md](C1152_vocabulary_dynamics_layer_separation.md) |
+| **1153** | **Generative Design Freedom Is ~40%** (32.4% class-dist + 43.2% AXM + 44.0% kernel uncaptured; aggregate 39.9%; AXM consistent with C1035's 57%; lower than C1016's 66.3% because class distribution IS section-captured) | 2 | B, generative, dynamics | -> [C1153_generative_design_freedom.md](C1153_generative_design_freedom.md) |
+| **1154** | **k-Kernel and e-Kernel Variance Are Universally Program-Specific** (k ratio 1.82-2.32x, e ratio 1.76-2.21x across all sections; h-kernel section-determined in BIO/HERBAL/COSMO (0.74-1.29x) but program-specific in STARS_RECIPE (2.18x)) | 2 | B, kernel, section | -> [C1154_k_kernel_universally_program_specific.md](C1154_k_kernel_universally_program_specific.md) |
+
+**Phase 411 findings (Section-Conditioned Generative Fidelity):**
+- Test 1: SECTION_CAPTURES -- class distribution variance ratio 1.48x (near-captured)
+- Test 2: AXM_UNCAPTURED -- AXM self-transition spread ratio 1.76x (BIO 2.56x, STARS_RECIPE 2.24x)
+- Test 3: KERNEL_UNCAPTURED -- kernel profile variance ratio 1.79x (k/e ~2x, h variable)
+- Test 4: SECTION_HELPS -- 87% of folios improved by section-conditioning
+- Test 5: PARTIALLY_PROGRAM_SPECIFIC -- design freedom 39.9%
+- Overall: SECTION_PARTIALLY_CAPTURES (2.5/5.0)
 
 ---
 

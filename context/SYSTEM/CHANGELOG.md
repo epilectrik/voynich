@@ -4,6 +4,46 @@
 
 ---
 
+## Version 4.10.21 (2026-02-20) - Phase 411: Section-Conditioned Generative Fidelity
+
+### Summary
+
+Phase 411: 5-test battery testing whether section-conditioned M2 captures folio-level structural variation. 3 new constraints (C1152-C1154). Key finding: clean two-layer architecture — section-M2 captures vocabulary composition (class distribution ratio 1.48x, 87% folios improved) but NOT sequential dynamics (AXM 1.76x) or kernel engagement (1.79x). Generative design freedom ~40%, consistent with C1035. k/e-kernel execution variance is universally program-specific (~2x); h-kernel monitoring is section-determined in specialized sections but program-specific in STARS_RECIPE.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/SECTION_CONDITIONED_GENERATIVE_FIDELITY/` -- script + results (5-test battery) |
+| **ADDED** | C1152-C1154 constraint files (3 new constraints, 996→999) |
+| **UPDATED** | `currierB.bcsc.yaml` -- vocabulary_dynamics_layer_separation, generative_design_freedom |
+| **UPDATED** | `CLAUDE.md` -- 996→999 constraints, 410→411 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 996→999 constraints |
+| **UPDATED** | `INDEX.md` -- 996→999 total, Phase 411 section added |
+
+---
+
+## Version 4.10.20 (2026-02-20) - Phase 410: Folio Balance Characterization
+
+### Summary
+
+Phase 410: 5-test battery characterizing the bridge/dark folio balance axis (C1146). 3 new constraints (C1149-C1151). Key findings: (1) vocabulary balance is completely orthogonal to dynamical archetypes (ARI=-0.002) and AXM (rho=0.001) — confirms C1035 irreducible residual is NOT explained by balance; (2) dark-dominant folios shift kernel profile within RECIPE_B (k_frac drops 31.4%→22.6%, p=0.002) — material plane couples to operational kernel; (3) balance is section-structured (chi-sq p<0.0001) but not reducible to section. Also implemented [ident:MIDDLE] rendering for dark-pipeline tokens in BFolioDecoder (expert-validated Tier 2 label).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/FOLIO_BALANCE_CHARACTERIZATION/` -- script + results (5-test battery) |
+| **ADDED** | C1149-C1151 constraint files (3 new constraints, 993→996) |
+| **UPDATED** | `scripts/voynich.py` -- BFolioDecoder: dark pipeline integration (is_dark_pipeline, folio_balance, [ident:MIDDLE] rendering) |
+| **UPDATED** | `scripts/show_b_folio.py` -- dark-pipeline magenta coloring, DP legend entry |
+| **ADDED** | `data/dark_pipeline_middles.json` -- canonical 300 dark-pipeline MIDDLEs |
+| **UPDATED** | `CLAUDE.md` -- 993→996 constraints, 409→410 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 993→996 constraints |
+| **UPDATED** | `INDEX.md` -- 993→996 total, Phase 410 section added |
+
+---
+
 ## Version 4.10.19 (2026-02-20) - Phase 409: Dark Pipeline Internal Architecture
 
 ### Summary

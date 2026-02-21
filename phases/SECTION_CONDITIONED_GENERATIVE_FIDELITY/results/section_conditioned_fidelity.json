@@ -1,0 +1,244 @@
+{
+  "phase": "SECTION_CONDITIONED_GENERATIVE_FIDELITY",
+  "phase_number": 411,
+  "depends_on": [
+    "C1016",
+    "C1029",
+    "C1035",
+    "C1047",
+    "C1055",
+    "C1150"
+  ],
+  "test1_inter_folio_variance_ratio": {
+    "per_section": {
+      "B": {
+        "section_name": "BIO",
+        "n_folios": 20,
+        "real_mpjsd": 0.118263,
+        "synth_mpjsd_mean": 0.070094,
+        "synth_mpjsd_std": 0.003728,
+        "ratio": 1.687
+      },
+      "C": {
+        "section_name": "COSMO",
+        "n_folios": 5,
+        "real_mpjsd": 0.159982,
+        "synth_mpjsd_mean": 0.1182,
+        "synth_mpjsd_std": 0.012667,
+        "ratio": 1.353
+      },
+      "H": {
+        "section_name": "HERBAL_B",
+        "n_folios": 32,
+        "real_mpjsd": 0.284153,
+        "synth_mpjsd_mean": 0.237739,
+        "synth_mpjsd_std": 0.00972,
+        "ratio": 1.195
+      },
+      "S": {
+        "section_name": "STARS_RECIPE",
+        "n_folios": 23,
+        "real_mpjsd": 0.107306,
+        "synth_mpjsd_mean": 0.063654,
+        "synth_mpjsd_std": 0.002296,
+        "ratio": 1.686
+      }
+    },
+    "mean_ratio": 1.48,
+    "verdict": "SECTION_CAPTURES"
+  },
+  "test2_axm_residual_reduction": {
+    "per_section": {
+      "B": {
+        "section_name": "BIO",
+        "n_folios": 20,
+        "real_axm_mean": 0.7537,
+        "real_axm_sd": 0.0758,
+        "synth_axm_sd_mean": 0.0295,
+        "ratio": 2.564
+      },
+      "C": {
+        "section_name": "COSMO",
+        "n_folios": 5,
+        "real_axm_mean": 0.635,
+        "real_axm_sd": 0.0313,
+        "synth_axm_sd_mean": 0.0444,
+        "ratio": 0.705
+      },
+      "H": {
+        "section_name": "HERBAL_B",
+        "n_folios": 32,
+        "real_axm_mean": 0.5866,
+        "real_axm_sd": 0.1167,
+        "synth_axm_sd_mean": 0.0759,
+        "ratio": 1.538
+      },
+      "S": {
+        "section_name": "STARS_RECIPE",
+        "n_folios": 23,
+        "real_axm_mean": 0.6869,
+        "real_axm_sd": 0.0698,
+        "synth_axm_sd_mean": 0.0312,
+        "ratio": 2.241
+      }
+    },
+    "mean_ratio": 1.762,
+    "verdict": "AXM_UNCAPTURED"
+  },
+  "test3_kernel_profile_capture": {
+    "per_section": {
+      "B": {
+        "section_name": "BIO",
+        "n_folios": 20,
+        "real_sd": {
+          "k": 0.0712,
+          "h": 0.0149,
+          "e": 0.0697
+        },
+        "synth_sd_mean": {
+          "k": 0.0307,
+          "h": 0.0116,
+          "e": 0.0315
+        },
+        "ratio": {
+          "k": 2.322,
+          "h": 1.286,
+          "e": 2.21
+        }
+      },
+      "C": {
+        "section_name": "COSMO",
+        "n_folios": 5,
+        "real_sd": {
+          "k": 0.1345,
+          "h": 0.0183,
+          "e": 0.1388
+        },
+        "synth_sd_mean": {
+          "k": 0.0638,
+          "h": 0.0246,
+          "e": 0.066
+        },
+        "ratio": {
+          "k": 2.108,
+          "h": 0.742,
+          "e": 2.102
+        }
+      },
+      "H": {
+        "section_name": "HERBAL_B",
+        "n_folios": 32,
+        "real_sd": {
+          "k": 0.1448,
+          "h": 0.0462,
+          "e": 0.1681
+        },
+        "synth_sd_mean": {
+          "k": 0.0794,
+          "h": 0.0446,
+          "e": 0.0895
+        },
+        "ratio": {
+          "k": 1.824,
+          "h": 1.036,
+          "e": 1.878
+        }
+      },
+      "S": {
+        "section_name": "STARS_RECIPE",
+        "n_folios": 23,
+        "real_sd": {
+          "k": 0.0593,
+          "h": 0.0344,
+          "e": 0.0576
+        },
+        "synth_sd_mean": {
+          "k": 0.0298,
+          "h": 0.0157,
+          "e": 0.0327
+        },
+        "ratio": {
+          "k": 1.994,
+          "h": 2.185,
+          "e": 1.762
+        }
+      }
+    },
+    "mean_ratio": 1.787,
+    "verdict": "KERNEL_UNCAPTURED"
+  },
+  "test4_folio_fidelity_improvement": {
+    "per_section": {
+      "B": {
+        "section_name": "BIO",
+        "n_folios": 20,
+        "n_improved": 18,
+        "frac_improved": 0.9,
+        "mean_improvement": 0.097318
+      },
+      "C": {
+        "section_name": "COSMO",
+        "n_folios": 5,
+        "n_improved": 5,
+        "frac_improved": 1.0,
+        "mean_improvement": 0.149327
+      },
+      "H": {
+        "section_name": "HERBAL_B",
+        "n_folios": 32,
+        "n_improved": 26,
+        "frac_improved": 0.812,
+        "mean_improvement": 0.091617
+      },
+      "S": {
+        "section_name": "STARS_RECIPE",
+        "n_folios": 23,
+        "n_improved": 20,
+        "frac_improved": 0.87,
+        "mean_improvement": 0.047059
+      },
+      "T": {
+        "section_name": "T",
+        "n_folios": 2,
+        "n_improved": 2,
+        "frac_improved": 1.0,
+        "mean_improvement": 0.137112
+      }
+    },
+    "total_folios": 82,
+    "n_improved": 71,
+    "frac_improved": 0.866,
+    "mean_improvement": 0.085138,
+    "verdict": "SECTION_HELPS"
+  },
+  "test5_design_freedom_quantification": {
+    "t1_uncaptured": 0.3243,
+    "t2_uncaptured": 0.4325,
+    "t3_uncaptured": 0.4404,
+    "design_freedom": 0.3991,
+    "c1016_residual": 0.663,
+    "c1035_residual": 0.57,
+    "c1016_consistent": false,
+    "c1035_consistent": true,
+    "verdict": "PARTIALLY_PROGRAM_SPECIFIC"
+  },
+  "synthesis": {
+    "scores": {
+      "t1_inter_folio_variance": 1.0,
+      "t2_axm_residual": 0.0,
+      "t3_kernel_profile": 0.0,
+      "t4_folio_fidelity": 1.0,
+      "t5_design_freedom": 0.5,
+      "total": 2.5,
+      "max": 5.0
+    },
+    "overall": "SECTION_PARTIALLY_CAPTURES",
+    "test_verdicts": {
+      "t1": "SECTION_CAPTURES",
+      "t2": "AXM_UNCAPTURED",
+      "t3": "KERNEL_UNCAPTURED",
+      "t4": "SECTION_HELPS",
+      "t5": "PARTIALLY_PROGRAM_SPECIFIC"
+    }
+  }
+}

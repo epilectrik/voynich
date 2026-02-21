@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 993 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 999 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (993 validated)
+- Tier 0-2 binding constraints (999 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 993 constraints, 66 fits,
+full content in their source documents. All 999 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-20 17:55
-**Version:** FROZEN STATE (993 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-20 19:01
+**Version:** FROZEN STATE (999 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -113,7 +113,7 @@ and 4 structural contracts are complete.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.84 | **Status:** FROZEN | **Constraints:** 993 | **Date:** 2026-02-20
+**Version:** 3.84 | **Status:** FROZEN | **Constraints:** 999 | **Date:** 2026-02-20
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 993 constraints | 2026-02-20
+CONSTRAINT_REFERENCE v2.6 | 999 constraints | 2026-02-20
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2101,6 +2101,12 @@ C1145	**Dark-Exclusive and Shared Atoms Occupy Equivalent Positional Slots**
 C1146	**Dark Pipeline Token Density Anti-Correlates with Bridge Tokens** (r=-0.865 overall; within-section r=-0.82 to -0.88 in all 4 sections; section R²=0.193; 80.7% of variance within-section; complementary distribution)
 C1147	**Dark Pipeline Tokens Are Interior-Enriched Within Lines**
 C1148	**Dark Pipeline Frequency Profiles Are Hyper-Modulated Across Sections** (mean JS=0.483, 3.9x C1134 baseline of 0.124; dark pipeline is primary vehicle for section-level vocabulary modulation)
+C1149	**Vocabulary Balance Is Orthogonal to Dynamical Archetypes**
+C1150	**Dark-Dominant Folios Shift Kernel Profile Within Section**
+C1151	**Balance Distribution Is Section-Structured**
+C1152	**Section-M2 Captures Vocabulary Composition but Not Sequential Dynamics** (class dist ratio 1.48x near-captured; AXM spread 1.76x uncaptured; kernel profile 1.79x uncaptured; 87% folios improved by section-conditioning; vocabulary is section-determined, dynamics are program-specific)
+C1153	**Generative Design Freedom Is ~40%** (32.4% class-dist + 43.2% AXM + 44.0% kernel uncaptured; aggregate 39.9%; AXM consistent with C1035's 57%; lower than C1016's 66.3% because class distribution IS section-captured)
+C1154	**k-Kernel and e-Kernel Variance Are Universally Program-Specific** (k ratio 1.82-2.32x, e ratio 1.76-2.21x across all sections; h-kernel section-determined in BIO/HERBAL/COSMO (0.74-1.29x) but program-specific in STARS_RECIPE (2.18x))
 
 ---
 
@@ -6294,6 +6300,37 @@ vocabulary_architecture:
       section_r2: 0.193  # Section identity explains only 19.3% of dark density variance
       implication: "Complementary distribution: folios invest more in grammar execution (bridge) OR identification (dark pipeline), not both equally"
       provenance: "C1146"
+    folio_balance_characterization:
+      classification: "BRIDGE_DOMINANT (21) / BALANCED (41) / DARK_DOMINANT (20) by dark/bridge ratio quartiles"
+      section_structured: "chi-sq=29.95, p<0.0001 — BIO=bridge-dom, PHARMA=dark-dom, RECIPE_B=balanced, HERBAL_B=mixed"
+      dynamics_orthogonal: "ARI=-0.002 vs archetypes, rho=0.001 vs AXM — vocabulary balance is independent of control-plane dynamics"
+      kernel_coupling: "Dark-dominant folios shift kernel profile: k_frac 0.314→0.226, h_frac 0.100→0.135; survives within RECIPE_B (p=0.002)"
+      c1035_residual: "Balance does NOT explain the 57% irreducible AXM residual"
+      provenance: "C1149, C1150, C1151"
+    vocabulary_dynamics_layer_separation:
+      statement: "Section-conditioned M2 captures vocabulary composition but not sequential dynamics or kernel engagement"
+      class_dist_ratio: 1.48  # real/synth inter-folio JSD — near-captured
+      axm_spread_ratio: 1.76  # real/synth AXM SD — uncaptured
+      kernel_profile_ratio: 1.79  # real/synth k/h/e SD — uncaptured
+      folio_fidelity: "87% of folios improved by section-conditioning (71/82)"
+      layer_1: "Vocabulary composition — section-determined"
+      layer_2: "Sequential dynamics + kernel engagement — program-specific"
+      provenance: "C1152"
+    generative_design_freedom:
+      aggregate: 0.399  # fraction of folio variation not section-captured
+      class_dist_uncaptured: 0.324
+      axm_uncaptured: 0.432
+      kernel_uncaptured: 0.440
+      c1035_consistent: true  # AXM 43.2% vs C1035 57%
+      c1016_note: "Lower than C1016 66.3% because class distribution IS section-captured (different metric layer)"
+      provenance: "C1153"
+    kernel_execution_universality:
+      k_ratio_range: "1.82-2.32x across all sections (always program-specific)"
+      e_ratio_range: "1.76-2.21x across all sections (tracks k-kernel)"
+      h_ratio_captured: "BIO 1.29x, HERBAL 1.04x, COSMO 0.74x (section-determined)"
+      h_ratio_uncaptured: "STARS_RECIPE 2.18x (program-specific)"
+      implication: "Execution kernel (k/e) is always program-level; monitoring kernel (h) is domain-dependent"
+      provenance: "C1154"
     dark_pipeline_profile:
       compound_rate: "66.7%"
       section_concentration: "Herf 0.716 (strongly section-specific)"
@@ -6463,7 +6500,7 @@ ht_un_integration:
       ratio: "3.9x"
       implication: "Dark pipeline is the primary vehicle for section-level vocabulary modulation"
       provenance: "C1148"
-    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148"
+    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1149, C1150, C1151, C1152, C1153, C1154"
 
 robustness:
 
