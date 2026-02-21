@@ -1,0 +1,183 @@
+{
+  "phase": "SISTER_ENTRY_DIVERGENCE_EXTENSION",
+  "phase_number": 421,
+  "depends_on": [
+    "C1035",
+    "C1156",
+    "C1158",
+    "C1163",
+    "C1164",
+    "C1168",
+    "C1180",
+    "C1181",
+    "C1186",
+    "C639"
+  ],
+  "pre_registration": {
+    "target": "jsd_entry (per-folio entry divergence, 6-state JSD)",
+    "new_lever": "opener_ch_frac = ch/(ch+sh) among line-initial tokens",
+    "threshold": "DLOO-R2(S vs B3) >= 0.02",
+    "coefficient_sign": "positive expected",
+    "cv_scheme": "LOFO with nested preprocessing"
+  },
+  "n_folios": 65,
+  "test1_model_cascade": {
+    "B0": {
+      "r2": 0.62949,
+      "loo_r2": 0.429244,
+      "ss_res": 0.183189,
+      "k": 8,
+      "dr2_vs_prev": 0.0,
+      "f_stat": 0.0,
+      "f_p": 1.0
+    },
+    "B1": {
+      "r2": 0.666158,
+      "loo_r2": 0.501261,
+      "ss_res": 0.165059,
+      "k": 11,
+      "dr2_vs_prev": 0.036668,
+      "f_stat": 1.977082,
+      "f_p": 0.128327
+    },
+    "B2": {
+      "r2": 0.724565,
+      "loo_r2": 0.483736,
+      "ss_res": 0.136182,
+      "k": 12,
+      "dr2_vs_prev": 0.058407,
+      "f_stat": 11.238782,
+      "f_p": 0.001484
+    },
+    "B3": {
+      "r2": 0.73875,
+      "loo_r2": 0.425268,
+      "ss_res": 0.129168,
+      "k": 15,
+      "dr2_vs_prev": 0.014185,
+      "f_stat": 0.90496,
+      "f_p": 0.445377
+    },
+    "S": {
+      "r2": 0.739393,
+      "loo_r2": 0.405776,
+      "ss_res": 0.12885,
+      "k": 16,
+      "dr2_vs_prev": 0.000643,
+      "f_stat": 0.120928,
+      "f_p": 0.72952
+    },
+    "dr2_S_vs_B3": 0.000643
+  },
+  "test2_nested_lofo": {
+    "nested_loo_r2": {
+      "B0": 0.429244,
+      "B1": 0.501261,
+      "B2": 0.483736,
+      "B3": 0.425268,
+      "S": 0.405776
+    },
+    "dloo_S_vs_B3": -0.019492,
+    "threshold": 0.02,
+    "verdict": "SISTER_ABSORBED"
+  },
+  "test3_within_section_lofo": {
+    "per_section": {
+      "B": {
+        "n": 20,
+        "loo_b3": -1.394398,
+        "loo_s": -1.789897,
+        "dloo": -0.395499
+      },
+      "C": {
+        "n": 3,
+        "skipped": true
+      },
+      "H": {
+        "n": 17,
+        "loo_b3": -0.818599,
+        "loo_s": -1.406791,
+        "dloo": -0.588192
+      },
+      "S": {
+        "n": 23,
+        "loo_b3": -0.348439,
+        "loo_s": -0.584356,
+        "dloo": -0.235917
+      },
+      "T": {
+        "n": 2,
+        "skipped": true
+      }
+    },
+    "sections_with_gain": 0,
+    "verdict": "SECTION_ABSENT"
+  },
+  "test4_coefficient_analysis": {
+    "beta_opener_ch_frac": -0.002893,
+    "sign_positive": false,
+    "ablation": {
+      "role_entropy": {
+        "beta_opener_ch": -0.002762,
+        "sign_positive": false
+      },
+      "prefix_entropy_opener": {
+        "beta_opener_ch": 0.000416,
+        "sign_positive": true
+      },
+      "init_spec_frac": {
+        "beta_opener_ch": -0.002723,
+        "sign_positive": false
+      },
+      "axm_return_rate": {
+        "beta_opener_ch": -0.002234,
+        "sign_positive": false
+      },
+      "hazard_density": {
+        "beta_opener_ch": -0.002737,
+        "sign_positive": false
+      },
+      "bridge_pc1": {
+        "beta_opener_ch": -0.006064,
+        "sign_positive": false
+      },
+      "prefix_entropy": {
+        "beta_opener_ch": -0.002918,
+        "sign_positive": false
+      }
+    },
+    "ablation_all_same_sign": false,
+    "ablation_within_50pct": false,
+    "stable": false,
+    "spearman_bivariate": {
+      "rho": 0.009342,
+      "p": 0.014646
+    },
+    "spearman_partial": {
+      "rho": 0.012745,
+      "p": 0.019914
+    },
+    "collinearity_r2": 0.415322,
+    "collinear_flag": false,
+    "verdict": "SIGN_WRONG"
+  },
+  "test5_secondary_axm_mediation": {
+    "c1168_r2": 0.852292,
+    "c1168_loo": 0.732109,
+    "extended_r2": 0.853254,
+    "extended_loo": 0.717733,
+    "dloo": -0.014375,
+    "f_stat": 0.321034,
+    "f_p": 0.573573,
+    "beta_opener_ch_frac": -0.004522,
+    "verdict": "AXM_ABSORBED"
+  },
+  "synthesis": {
+    "verdict": "SISTER_ENTRY_LEVER_ABSENT",
+    "primary_dloo": -0.019492,
+    "sign_positive": false,
+    "section_robust": false,
+    "axm_mediation": "AXM_ABSORBED",
+    "interpretation": "opener_ch_frac does not independently predict entry divergence beyond the existing battery. Sister is correlated with entry divergence (C1186) but does not add independent information once opener routing and AXM return rate are included. Sister is a proxy for these features, not an additional control channel."
+  }
+}

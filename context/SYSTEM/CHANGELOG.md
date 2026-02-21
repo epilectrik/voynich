@@ -4,6 +4,24 @@
 
 ---
 
+## Version 4.21.31 (2026-02-20) - Phase 421: Sister Entry Divergence Extension
+
+### Summary
+
+Phase 421: Pre-registered minimal model comparison testing whether opener sister-pair composition (opener_ch_frac) independently predicts per-folio entry divergence beyond the existing boundary architecture. 2 new constraints (C1188-C1189). **Result: SISTER_ENTRY_LEVER_ABSENT.** opener_ch_frac adds ΔLOO-R²=-0.020 against B3 baseline (below 0.02 pre-registered threshold; actually hurts cross-validation). Coefficient sign is NEGATIVE (opposite expectation). All sections absent. AXM mediation absorbed. **Key conclusion:** C1186's correlation (entry JSD partial rho=0.312) is REAL but fully mediated by opener-routing features (C1163-C1165). Sister is a proxy for these features, not an independent control channel. The boundary architecture (C1168) is structurally complete — no additional predictor from the sister-pair discovery extends it. C1169's ~27% AXM residual is confirmed irreducible by sister metrics.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/SISTER_ENTRY_DIVERGENCE_EXTENSION/` -- script + results (5-test battery) |
+| **ADDED** | C1188-C1189 constraint files (2 new constraints, 1032->1034) |
+| **UPDATED** | `CLAUDE.md` -- 1032->1034 constraints, 420->421 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 1032->1034 constraints, v3.90->v3.91 |
+| **UPDATED** | `INDEX.md` -- 1032->1034 total, Phase 421 section added |
+
+---
+
 ## Version 4.20.30 (2026-02-20) - Phase 420: Sister-Pair Mechanism
 
 ### Summary

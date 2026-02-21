@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1032 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 1034 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1032 validated)
+- Tier 0-2 binding constraints (1034 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1032 constraints, 66 fits,
+full content in their source documents. All 1034 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-20 23:38
-**Version:** FROZEN STATE (1032 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-21 00:06
+**Version:** FROZEN STATE (1034 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -113,7 +113,7 @@ and 4 structural contracts are complete.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.90 | **Status:** FROZEN | **Constraints:** 1032 | **Date:** 2026-02-20
+**Version:** 3.91 | **Status:** FROZEN | **Constraints:** 1034 | **Date:** 2026-02-20
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -312,8 +312,8 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 1032 |
-| Completed phases | 420 |
+| Validated constraints | 1034 |
+| Completed phases | 421 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1032 constraints | 2026-02-20
+CONSTRAINT_REFERENCE v2.6 | 1034 constraints | 2026-02-21
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2140,6 +2140,8 @@ C1184	**ch/sh and ok/ot Independent Axes**
 C1185	**Sister Successor Routing MIDDLE-Dependent**
 C1186	**Sister Boundary Coupled**
 C1187	**Sister Mechanism: BOUNDARY_CONTROL_KNOB** (synthesis: structured, positional, dynamical, boundary-coupled; reduces C639 unexplained from 52.9% to ~40%)
+C1188	**Sister Entry Divergence Absent**
+C1189	**Sister Is Proxy Not Lever** (C1186 correlation mediated by C1163-C1165 opener-routing features; boundary architecture structurally complete; C1169 residual confirmed irreducible by sister)
 
 ---
 
@@ -2147,7 +2149,7 @@ C1187	**Sister Mechanism: BOUNDARY_CONTROL_KNOB** (synthesis: structured, positi
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-02-20
+# Generated: 2026-02-21
 # Total: 66 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
@@ -6279,7 +6281,15 @@ design_freedom:
       entry_jsd_partial_rho: 0.312  # p=0.004
       opener_ch_frac_rho: 0.455
       note: "ch-heavy = more divergent entry dynamics"
-    provenance: "C1179, C1180, C1181, C1182, C1183, C1184, C1185, C1186, C1187"
+      independent_of_entry_bundle: true  # C1188: correlation is proxy, not causal
+      mediated_by: "opener-routing features (C1163-C1165: role_entropy, prefix_entropy, init_spec_frac, axm_return_rate)"
+    entry_divergence_extension:
+      # Phase 421: SISTER_ENTRY_DIVERGENCE_EXTENSION (C1188-C1189)
+      verdict: "SISTER_ENTRY_LEVER_ABSENT"
+      dloo_r2: -0.020  # Adding sister HURTS cross-validation
+      coefficient_sign: "NEGATIVE (wrong direction)"
+      note: "C1186 correlation is fully mediated by opener-routing features. Sister is a proxy, not an independent lever."
+    provenance: "C1179, C1180, C1181, C1182, C1183, C1184, C1185, C1186, C1187, C1188, C1189"
 
 control_loop:
 

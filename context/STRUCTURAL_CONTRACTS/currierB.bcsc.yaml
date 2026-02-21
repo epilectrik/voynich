@@ -1197,7 +1197,15 @@ design_freedom:
       entry_jsd_partial_rho: 0.312  # p=0.004
       opener_ch_frac_rho: 0.455
       note: "ch-heavy = more divergent entry dynamics"
-    provenance: "C1179, C1180, C1181, C1182, C1183, C1184, C1185, C1186, C1187"
+      independent_of_entry_bundle: true  # C1188: correlation is proxy, not causal
+      mediated_by: "opener-routing features (C1163-C1165: role_entropy, prefix_entropy, init_spec_frac, axm_return_rate)"
+    entry_divergence_extension:
+      # Phase 421: SISTER_ENTRY_DIVERGENCE_EXTENSION (C1188-C1189)
+      verdict: "SISTER_ENTRY_LEVER_ABSENT"
+      dloo_r2: -0.020  # Adding sister HURTS cross-validation
+      coefficient_sign: "NEGATIVE (wrong direction)"
+      note: "C1186 correlation is fully mediated by opener-routing features. Sister is a proxy, not an independent lever."
+    provenance: "C1179, C1180, C1181, C1182, C1183, C1184, C1185, C1186, C1187, C1188, C1189"
 
 # ============================================================
 control_loop:
@@ -2141,6 +2149,10 @@ provenance:
     - "C1185"  # Sister successor routing MIDDLE-dependent (5/102 strata, C121 preserved)
     - "C1186"  # Sister boundary coupled (entry JSD rho=0.312, opener ch rho=0.455)
     - "C1187"  # Sister mechanism: BOUNDARY_CONTROL_KNOB (synthesis)
+
+  sister_entry_divergence_extension:
+    - "C1188"  # Sister entry divergence absent (DLOO=-0.020, coefficient sign wrong)
+    - "C1189"  # Sister is proxy not lever (C1186 mediated by C1163-C1165 features)
 
   ht_un_reconciliation:
     - "C740"   # HT/UN population identity (identical by definition)

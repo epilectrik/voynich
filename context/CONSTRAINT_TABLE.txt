@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1032 constraints | 2026-02-20
+CONSTRAINT_REFERENCE v2.6 | 1034 constraints | 2026-02-21
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1036,3 +1036,5 @@ C1184	**ch/sh and ok/ot Independent Axes** (partial rho=0.204 p=0.066; OPPOSITE 
 C1185	**Sister Successor Routing MIDDLE-Dependent** (global p=0.034; 5/102 strata significant; not universal; C121 preserved)	2	B, sister pairs, transitions	-> C1185_sister_successor_middle_dependent.md
 C1186	**Sister Boundary Coupled** (entry JSD partial rho=0.312 p=0.004; opener ch frac rho=0.455; ch-heavy = divergent entries)	2	B, sister pairs, boundary	-> C1186_sister_boundary_coupled.md
 C1187	**Sister Mechanism: BOUNDARY_CONTROL_KNOB** (synthesis: structured, positional, dynamical, boundary-coupled; reduces C639 unexplained from 52.9% to ~40%)	2	B, sister pairs, synthesis	-> C1187_sister_mechanism_boundary_control_knob.md
+C1188	**Sister Entry Divergence Absent** (ΔLOO-R²=-0.020; dR²=0.0006 F=0.12 p=0.73; coefficient sign wrong; all sections negative)	2	B, sister pairs, boundary architecture	-> C1188_sister_entry_divergence_absent.md
+C1189	**Sister Is Proxy Not Lever** (C1186 correlation mediated by C1163-C1165 opener-routing features; boundary architecture structurally complete; C1169 residual confirmed irreducible by sister)	2	B, sister pairs, boundary architecture, synthesis	-> C1189_sister_proxy_not_lever.md

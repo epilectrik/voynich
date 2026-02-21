@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1032 validated constraints | **Version:** 4.20 | **Date:** 2026-02-20
+**Total:** 1034 validated constraints | **Version:** 4.21 | **Date:** 2026-02-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3225,6 +3225,25 @@ Sister-pair choice (ch vs sh, C639 52.9% unexplained) is a boundary control knob
 - SP-6: MIDDLE_DEPENDENT -- 5/102 strata, global p=0.034
 - SP-7: BOUNDARY_COUPLED -- entry JSD rho=0.312
 - Overall: BOUNDARY_CONTROL_KNOB
+
+---
+
+### Sister Entry Divergence Extension (C1188-C1189) -- Phase: SISTER_ENTRY_DIVERGENCE_EXTENSION (Phase 421)
+
+Pre-registered minimal model comparison testing whether opener sister-pair composition independently predicts entry divergence beyond the existing boundary architecture. **Result: SISTER_ENTRY_LEVER_ABSENT.** opener_ch_frac adds ΔLOO-R²=-0.020 (below 0.02 threshold, actually hurts prediction). Coefficient sign NEGATIVE (wrong direction). All sections absent. AXM mediation absorbed. C1186's correlation is fully mediated by opener-routing features (C1163-C1165).
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1188** | **Sister Entry Divergence Absent** (ΔLOO-R²=-0.020; dR²=0.0006 F=0.12 p=0.73; coefficient sign wrong; all sections negative) | 2 | B, sister pairs, boundary architecture | -> [C1188_sister_entry_divergence_absent.md](C1188_sister_entry_divergence_absent.md) |
+| **1189** | **Sister Is Proxy Not Lever** (C1186 correlation mediated by C1163-C1165 opener-routing features; boundary architecture structurally complete; C1169 residual confirmed irreducible by sister) | 2 | B, sister pairs, boundary architecture, synthesis | -> [C1189_sister_proxy_not_lever.md](C1189_sister_proxy_not_lever.md) |
+
+**Phase 421 findings (Sister Entry Divergence Extension):**
+- T1: dR²(S vs B3) = 0.0006, F=0.12, p=0.73 — sister adds nothing to full-sample R²
+- T2: ΔLOO-R² = -0.020 — sister HURTS cross-validation (SISTER_ABSORBED)
+- T3: All sections negative (B: -0.40, H: -0.59, S: -0.24) (SECTION_ABSENT)
+- T4: beta = -0.003, sign wrong, unstable under ablation (SIGN_WRONG)
+- T5: AXM mediation ΔLOO = -0.014, F=0.32, p=0.57 (AXM_ABSORBED)
+- Overall: SISTER_ENTRY_LEVER_ABSENT
 
 ---
 
