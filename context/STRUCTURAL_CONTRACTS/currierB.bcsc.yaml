@@ -1285,6 +1285,13 @@ vocabulary_architecture:
       h_ratio_uncaptured: "STARS_RECIPE 2.18x (program-specific)"
       implication: "Execution kernel (k/e) is always program-level; monitoring kernel (h) is domain-dependent"
       provenance: "C1154"
+    paragraph_kernel_dynamics_residual_closure:
+      statement: "Within-folio paragraph kernel diversity does not mediate the C1035 AXM residual"
+      best_delta_r2: 0.0014  # trajectory slope variance — effectively zero
+      loo_contributions: "all negative (overfitting)"
+      within_section: "all |rho| < 0.16"
+      implication: "C1035 residual confirmed closed at paragraph level; design freedom is genuinely program-specific"
+      provenance: "C1155"
     dark_pipeline_profile:
       compound_rate: "66.7%"
       section_concentration: "Herf 0.716 (strongly section-specific)"
@@ -1455,7 +1462,7 @@ ht_un_integration:
       ratio: "3.9x"
       implication: "Dark pipeline is the primary vehicle for section-level vocabulary modulation"
       provenance: "C1148"
-    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1149, C1150, C1151, C1152, C1153, C1154"
+    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1149, C1150, C1151, C1152, C1153, C1154, C1155"
 
 # ============================================================
 robustness:
@@ -1841,6 +1848,7 @@ provenance:
     - "C1152"  # Vocabulary-dynamics layer separation (class dist 1.48x, AXM 1.76x, kernel 1.79x)
     - "C1153"  # Generative design freedom ~40% (consistent with C1035)
     - "C1154"  # k/e-kernel universally program-specific (~2x all sections)
+    - "C1155"  # Paragraph kernel dynamics do not mediate AXM residual (C1035 closed)
 
   execution_syntax:
     - "C547"   # ICC-based role validation

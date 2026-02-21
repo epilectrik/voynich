@@ -1,0 +1,145 @@
+{
+  "phase": "PARAGRAPH_KERNEL_DYNAMICS",
+  "phase_number": 412,
+  "depends_on": [
+    "C965",
+    "C893",
+    "C944",
+    "C1022",
+    "C1035",
+    "C1152"
+  ],
+  "test1_paragraph_kernel_heterogeneity": {
+    "n_folios": 53,
+    "filter": ">=3 pars with >=15 tokens",
+    "spearman_composite": {
+      "rho": -0.18655,
+      "p": 0.918611
+    },
+    "spearman_section_controlled": {
+      "rho": -0.085631,
+      "p": 0.90351
+    },
+    "per_kernel": {
+      "sd_k": {
+        "rho": 0.006572,
+        "p": 0.990376
+      },
+      "sd_h": {
+        "rho": -0.418538,
+        "p": 0.998261
+      },
+      "sd_e": {
+        "rho": -0.119219,
+        "p": 0.894603
+      }
+    },
+    "mean_composite": 0.141006,
+    "verdict": "UNCORRELATED"
+  },
+  "test2_trajectory_slope_diversity": {
+    "n_folios": 62,
+    "n_qualifying_pars": 243,
+    "spearman": {
+      "rho": 0.121984,
+      "p": 0.898556
+    },
+    "mean_slope_variance": 0.142861,
+    "verdict": "TRAJECTORY_NEUTRAL"
+  },
+  "test3_paragraph_type_entropy": {
+    "n_folios": 53,
+    "spearman_raw": {
+      "rho": 0.137818,
+      "p": 0.896829
+    },
+    "spearman_section_controlled": {
+      "rho": 0.078644,
+      "p": 0.907684
+    },
+    "entropy_vs_par_count": {
+      "rho": 0.09315,
+      "p": 0.899931
+    },
+    "mean_entropy": 0.517009,
+    "max_entropy": 1.584963,
+    "verdict": "TYPE_ENTROPY_NEUTRAL"
+  },
+  "test4_incremental_explanatory_power": {
+    "n_folios": 72,
+    "c1035_baseline_r2": 0.564192,
+    "c1035_loo_r2": 0.432461,
+    "pass_criterion": "dR2 > 0.03 AND p < 0.05",
+    "predictors": {
+      "paragraph_kernel_heterogeneity": {
+        "r2_extended": 0.565356,
+        "delta_r2": 0.001164,
+        "f_stat": 0.160619,
+        "f_p": 0.690011,
+        "loo_r2": 0.411932,
+        "loo_delta_r2": -0.020529,
+        "passes": false
+      },
+      "trajectory_slope_variance": {
+        "r2_extended": 0.565565,
+        "delta_r2": 0.001373,
+        "f_stat": 0.18957,
+        "f_p": 0.664837,
+        "loo_r2": 0.416742,
+        "loo_delta_r2": -0.015719,
+        "passes": false
+      },
+      "paragraph_type_entropy": {
+        "r2_extended": 0.564404,
+        "delta_r2": 0.000212,
+        "f_stat": 0.029151,
+        "f_p": 0.865006,
+        "loo_r2": 0.414537,
+        "loo_delta_r2": -0.017924,
+        "passes": false
+      }
+    },
+    "any_pass": false,
+    "verdict": "RESIDUAL_IRREDUCIBLE_CONFIRMED"
+  },
+  "test5_within_section_validation": {
+    "sections": {
+      "B": {
+        "n": 16,
+        "rho": -0.152941,
+        "p": 0.862495,
+        "significant": false,
+        "mean_heterogeneity": 0.109837,
+        "mean_axm": 0.776311
+      },
+      "H": {
+        "n": 8,
+        "rho": -0.119048,
+        "p": 0.868609,
+        "significant": false,
+        "mean_heterogeneity": 0.108364,
+        "mean_axm": 0.620233
+      },
+      "S": {
+        "n": 23,
+        "rho": -0.04249,
+        "p": 0.951006,
+        "significant": false,
+        "mean_heterogeneity": 0.166044,
+        "mean_axm": 0.689432
+      }
+    },
+    "any_significant": false,
+    "verdict": "SECTION_CONFOUND_ONLY"
+  },
+  "synthesis": {
+    "verdicts": {
+      "t1": "UNCORRELATED",
+      "t2": "TRAJECTORY_NEUTRAL",
+      "t3": "TYPE_ENTROPY_NEUTRAL",
+      "t4": "RESIDUAL_IRREDUCIBLE_CONFIRMED",
+      "t5": "SECTION_CONFOUND_ONLY"
+    },
+    "overall": "PARAGRAPH_KERNEL_DYNAMICS_SIGNAL_MARGINAL"
+  }
+}

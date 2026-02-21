@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 999 constraints | 2026-02-20
+CONSTRAINT_REFERENCE v2.6 | 1000 constraints | 2026-02-20
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1003,3 +1003,4 @@ C1151	**Balance Distribution Is Section-Structured** (chi-sq=29.95, df=6, p<0.00
 C1152	**Section-M2 Captures Vocabulary Composition but Not Sequential Dynamics** (class dist ratio 1.48x near-captured; AXM spread 1.76x uncaptured; kernel profile 1.79x uncaptured; 87% folios improved by section-conditioning; vocabulary is section-determined, dynamics are program-specific)	2	B, section, generative	-> C1152_vocabulary_dynamics_layer_separation.md
 C1153	**Generative Design Freedom Is ~40%** (32.4% class-dist + 43.2% AXM + 44.0% kernel uncaptured; aggregate 39.9%; AXM consistent with C1035's 57%; lower than C1016's 66.3% because class distribution IS section-captured)	2	B, generative, dynamics	-> C1153_generative_design_freedom.md
 C1154	**k-Kernel and e-Kernel Variance Are Universally Program-Specific** (k ratio 1.82-2.32x, e ratio 1.76-2.21x across all sections; h-kernel section-determined in BIO/HERBAL/COSMO (0.74-1.29x) but program-specific in STARS_RECIPE (2.18x))	2	B, kernel, section	-> C1154_k_kernel_universally_program_specific.md
+C1155	**Paragraph Kernel Dynamics Do Not Mediate the AXM Residual** (kernel heterogeneity dR²=0.0012, trajectory slope variance dR²=0.0014, type entropy dR²=0.0002; all with negative LOO; within-section rho all <0.16; C1035 residual confirmed closed at paragraph level)	2	B, paragraph, kernel, AXM	-> C1155_paragraph_kernel_dynamics_do_not_mediate_residual.md

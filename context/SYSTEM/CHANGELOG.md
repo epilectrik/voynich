@@ -4,6 +4,25 @@
 
 ---
 
+## Version 4.12.22 (2026-02-20) - Phase 412: Paragraph Kernel Dynamics
+
+### Summary
+
+Phase 412: 5-test battery testing whether within-folio paragraph kernel diversity mediates the C1035 AXM residual. 1 new constraint (C1155). All tests negative — paragraph kernel heterogeneity, trajectory slope diversity, and type entropy add zero explanatory power to C1035 baseline (best dR²=0.0014, all LOO negative). Within-section correlations null. The ~57% irreducible residual is confirmed closed against paragraph-level dynamics. Design freedom (C1153, ~40%) is genuinely program-specific.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/PARAGRAPH_KERNEL_DYNAMICS/` -- script + results (5-test battery) |
+| **ADDED** | C1155 constraint file (1 new constraint, 999→1000) |
+| **UPDATED** | `currierB.bcsc.yaml` -- paragraph_kernel_dynamics_residual_closure |
+| **UPDATED** | `CLAUDE.md` -- 999→1000 constraints, 411→412 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 999→1000 constraints |
+| **UPDATED** | `INDEX.md` -- 999→1000 total, Phase 412 section added |
+
+---
+
 ## Version 4.10.21 (2026-02-20) - Phase 411: Section-Conditioned Generative Fidelity
 
 ### Summary

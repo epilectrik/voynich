@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 999 validated constraints | **Version:** 4.10 | **Date:** 2026-02-20
+**Total:** 1000 validated constraints | **Version:** 4.12 | **Date:** 2026-02-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3054,6 +3054,22 @@ Tests whether section-conditioned M2 captures folio-level variation. 5-test batt
 - Test 4: SECTION_HELPS -- 87% of folios improved by section-conditioning
 - Test 5: PARTIALLY_PROGRAM_SPECIFIC -- design freedom 39.9%
 - Overall: SECTION_PARTIALLY_CAPTURES (2.5/5.0)
+
+### Paragraph Kernel Dynamics (C1155) -- Phase: PARAGRAPH_KERNEL_DYNAMICS (Phase 412)
+
+Tests whether within-folio paragraph kernel diversity mediates the C1035 AXM residual (57% irreducible). 5-test battery: kernel heterogeneity, trajectory slope diversity, type entropy, incremental R², within-section validation. All tests negative — paragraph dynamics are orthogonal to AXM residual.
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1155** | **Paragraph Kernel Dynamics Do Not Mediate the AXM Residual** (kernel heterogeneity dR²=0.0012, trajectory slope variance dR²=0.0014, type entropy dR²=0.0002; all with negative LOO; within-section rho all <0.16; C1035 residual confirmed closed at paragraph level) | 2 | B, paragraph, kernel, AXM | -> [C1155_paragraph_kernel_dynamics_do_not_mediate_residual.md](C1155_paragraph_kernel_dynamics_do_not_mediate_residual.md) |
+
+**Phase 412 findings (Paragraph Kernel Dynamics):**
+- Test 1: UNCORRELATED -- composite heterogeneity vs AXM rho=-0.187, p=0.92
+- Test 2: TRAJECTORY_NEUTRAL -- slope variance vs AXM rho=0.122, p=0.90
+- Test 3: TYPE_ENTROPY_NEUTRAL -- type entropy vs AXM rho=0.138, p=0.90
+- Test 4: RESIDUAL_IRREDUCIBLE_CONFIRMED -- best dR²=0.0014, all LOO negative
+- Test 5: SECTION_CONFOUND_ONLY -- all within-section |rho| < 0.16
+- Overall: PARAGRAPH_KERNEL_DYNAMICS_SIGNAL_MARGINAL
 
 ---
 
