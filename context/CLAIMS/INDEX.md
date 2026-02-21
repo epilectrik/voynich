@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1000 validated constraints | **Version:** 4.12 | **Date:** 2026-02-20
+**Total:** 1006 validated constraints | **Version:** 4.14 | **Date:** 2026-02-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3070,6 +3070,42 @@ Tests whether within-folio paragraph kernel diversity mediates the C1035 AXM res
 - Test 4: RESIDUAL_IRREDUCIBLE_CONFIRMED -- best dR²=0.0014, all LOO negative
 - Test 5: SECTION_CONFOUND_ONLY -- all within-section |rho| < 0.16
 - Overall: PARAGRAPH_KERNEL_DYNAMICS_SIGNAL_MARGINAL
+
+### Line Transition Dynamics (C1156-C1157) -- Phase: LINE_TRANSITION_DYNAMICS (Phase 413)
+
+Tests whether within-line position structure constrains token transition dynamics and whether it mediates the C1035 AXM residual. 5-test battery: zone transition divergence, boundary spectral properties, position-conditioned generation, AXM residual regression, section invariance. **First predictor to break through the C1035 barrier.**
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1156** | **Line Position Structures Class Transitions** (49×49 matrix differs by ENTRY/INTERIOR/EXIT zone; JSD 0.22-0.33, all p<0.001; AXM self-transition gradient 0.730→0.704→0.633; spectral gap shifts 0.939→0.883→0.900; section-dependent KW p<0.0001) | 2 | B, line, transitions | -> [C1156_line_position_structures_transitions.md](C1156_line_position_structures_transitions.md) |
+| **1157** | **Boundary Divergence Mediates the AXM Residual** (per-folio boundary divergence adds dR²=0.0845, F=14.15, p=0.0004 to C1035 baseline; LOO improves 0.433→0.512; rho=-0.732 vs AXM self; first predictor to break C1035 barrier; position-conditioned M2 does NOT improve generation — descriptive not generative) | 2 | B, line, AXM residual | -> [C1157_boundary_divergence_mediates_axm_residual.md](C1157_boundary_divergence_mediates_axm_residual.md) |
+
+**Phase 413 findings (Line Transition Dynamics):**
+- Test 1: POSITION_STRUCTURED -- JSD(entry,interior)=0.224, all p<0.001 (1000 perms)
+- Test 2: BOUNDARY_REGIME_SHIFT -- AXM self 0.730→0.633, spectral gap delta=0.055
+- Test 3: POSITION_CONDITIONING_NEUTRAL -- M2p 0/3 metrics improved
+- Test 4: POSITION_MEDIATES_RESIDUAL -- dR²=0.0845, F=14.15, p=0.0004, LOO 0.433→0.512
+- Test 5: POSITION_SECTION_DEPENDENT -- KW H=54.54, p<0.0001
+- Overall: LINE_POSITION_MEDIATES_RESIDUAL
+
+### Boundary Divergence Decomposition (C1158-C1161) -- Phase: BOUNDARY_DIVERGENCE_DECOMPOSITION (Phase 414)
+
+Decomposes the C1157 boundary divergence finding. 5-test battery: entry/exit decomposition, transition cell analysis, section independence, vocabulary mediation, gatekeeper mediation. **Key finding:** entry dominates (3.5× exit), effect is routing shifts not AXM persistence, section-confounded but independently predictive, gatekeeper-partial.
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1158** | **Entry Divergence Dominates Boundary Divergence Effect** (entry dR²=0.098 vs exit dR²=0.028, 3.5×; entry is the "reset to base" intensity; contradicts gatekeeper hypothesis) | 2 | B, line, AXM | -> [C1158_entry_dominates_boundary_divergence.md](C1158_entry_dominates_boundary_divergence.md) |
+| **1159** | **Boundary Divergence Is a Routing Shift, Not AXM Persistence Decay** (AXM→AXM only 3.2% of total delta; dominant: AXm→AXM +0.124, FQ→AXM +0.103 at entry; CC→AXM -0.296 at exit; inter-state routing, not self-transition) | 2 | B, line, transitions | -> [C1159_boundary_divergence_is_routing_shift.md](C1159_boundary_divergence_is_routing_shift.md) |
+| **1160** | **Boundary Divergence Is Section-Confounded but Carries Independent Signal** (section R²=0.70 on BD; partial rho=-0.459 vs AXM controlling section; BD adds dR²=0.135 beyond section-only AXM model) | 2 | B, line, section | -> [C1160_boundary_divergence_section_confounded_but_independent.md](C1160_boundary_divergence_section_confounded_but_independent.md) |
+| **1161** | **Gatekeeper Classes Partially Mediate Boundary Divergence** (excluding gatekeepers reduces dR² by 30.5%; effect survives: GK-free rho=-0.673, dR²=0.059, p=0.006; GK density uncorrelated with BD) | 2 | B, line, gatekeeper | -> [C1161_gatekeeper_partial_mediation.md](C1161_gatekeeper_partial_mediation.md) |
+
+**Phase 414 findings (Boundary Divergence Decomposition):**
+- Test 1: ENTRY_DOMINANT -- entry dR²=0.098 vs exit dR²=0.028 (3.5×)
+- Test 2: ROUTING_SHIFT -- AXM→AXM only 3.2% of total; inter-state routing dominates
+- Test 3: SECTION_CONFOUNDED -- R²=0.70 but partial rho=-0.459 still significant
+- Test 4: VOCABULARY_INDEPENDENT -- zero coefficient shrinkage
+- Test 5: GATEKEEPER_PARTIAL -- dR² drops 30.5% without gatekeepers
+- Overall: BOUNDARY_DIVERGENCE_PARTIALLY_EXPLAINED
 
 ---
 

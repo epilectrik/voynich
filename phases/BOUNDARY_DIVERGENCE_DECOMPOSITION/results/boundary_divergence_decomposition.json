@@ -1,0 +1,299 @@
+{
+  "phase": "BOUNDARY_DIVERGENCE_DECOMPOSITION",
+  "phase_number": 414,
+  "depends_on": [
+    "C1035",
+    "C1156",
+    "C1157",
+    "C1007",
+    "C976",
+    "C1140"
+  ],
+  "n_folios": 70,
+  "test1_entry_vs_exit_decomposition": {
+    "jsd_entry_stats": {
+      "mean": 0.173746,
+      "std": 0.092614
+    },
+    "jsd_exit_stats": {
+      "mean": 0.176222,
+      "std": 0.094331
+    },
+    "bivariate_spearman": {
+      "entry_vs_axm": {
+        "rho": -0.664328,
+        "p": 0.0
+      },
+      "exit_vs_axm": {
+        "rho": -0.69297,
+        "p": 0.0
+      }
+    },
+    "partial_spearman": {
+      "entry_ctrl_exit": {
+        "rho": -0.260117,
+        "p": 0.020362
+      },
+      "exit_ctrl_entry": {
+        "rho": -0.192232,
+        "p": 0.057124
+      }
+    },
+    "incremental_regression": {
+      "baseline_r2": 0.569371,
+      "baseline_loo": 0.433023,
+      "entry_only": {
+        "dr2": 0.097895,
+        "f_stat": 17.064517,
+        "f_p": 0.000117,
+        "loo": 0.50107
+      },
+      "exit_only": {
+        "dr2": 0.028341,
+        "f_stat": 4.086035,
+        "f_p": 0.047862,
+        "loo": 0.446501
+      },
+      "both": {
+        "dr2": 0.100384,
+        "f_stat": 8.663089,
+        "f_p": 0.000519,
+        "loo": 0.471448
+      }
+    },
+    "verdict": "ENTRY_DOMINANT"
+  },
+  "test2_transition_cell_decomposition": {
+    "top_entry_deltas": [
+      {
+        "src": "AXm",
+        "tgt": "AXM",
+        "delta": 0.124241,
+        "abs_delta": 0.124241
+      },
+      {
+        "src": "FL_SAFE",
+        "tgt": "CC",
+        "delta": -0.115385,
+        "abs_delta": 0.115385
+      },
+      {
+        "src": "FQ",
+        "tgt": "AXM",
+        "delta": 0.103376,
+        "abs_delta": 0.103376
+      },
+      {
+        "src": "AXm",
+        "tgt": "FQ",
+        "delta": -0.092421,
+        "abs_delta": 0.092421
+      },
+      {
+        "src": "FL_SAFE",
+        "tgt": "FL_HAZ",
+        "delta": 0.089744,
+        "abs_delta": 0.089744
+      },
+      {
+        "src": "FQ",
+        "tgt": "FQ",
+        "delta": -0.085424,
+        "abs_delta": 0.085424
+      },
+      {
+        "src": "FL_HAZ",
+        "tgt": "AXM",
+        "delta": 0.067176,
+        "abs_delta": 0.067176
+      },
+      {
+        "src": "FL_SAFE",
+        "tgt": "FQ",
+        "delta": 0.051282,
+        "abs_delta": 0.051282
+      },
+      {
+        "src": "FL_HAZ",
+        "tgt": "FQ",
+        "delta": -0.045046,
+        "abs_delta": 0.045046
+      },
+      {
+        "src": "FL_SAFE",
+        "tgt": "AXm",
+        "delta": -0.038462,
+        "abs_delta": 0.038462
+      }
+    ],
+    "top_exit_deltas": [
+      {
+        "src": "CC",
+        "tgt": "AXM",
+        "delta": -0.295892,
+        "abs_delta": 0.295892
+      },
+      {
+        "src": "FL_SAFE",
+        "tgt": "AXM",
+        "delta": 0.146154,
+        "abs_delta": 0.146154
+      },
+      {
+        "src": "FL_HAZ",
+        "tgt": "AXM",
+        "delta": -0.128763,
+        "abs_delta": 0.128763
+      },
+      {
+        "src": "CC",
+        "tgt": "FQ",
+        "delta": 0.125225,
+        "abs_delta": 0.125225
+      },
+      {
+        "src": "FL_SAFE",
+        "tgt": "FQ",
+        "delta": -0.115385,
+        "abs_delta": 0.115385
+      },
+      {
+        "src": "AXm",
+        "tgt": "AXM",
+        "delta": -0.101496,
+        "abs_delta": 0.101496
+      },
+      {
+        "src": "CC",
+        "tgt": "FL_HAZ",
+        "delta": 0.100642,
+        "abs_delta": 0.100642
+      },
+      {
+        "src": "FL_SAFE",
+        "tgt": "FL_SAFE",
+        "delta": 0.1,
+        "abs_delta": 0.1
+      },
+      {
+        "src": "FL_SAFE",
+        "tgt": "FL_HAZ",
+        "delta": -0.076923,
+        "abs_delta": 0.076923
+      },
+      {
+        "src": "AXM",
+        "tgt": "AXM",
+        "delta": -0.068533,
+        "abs_delta": 0.068533
+      }
+    ],
+    "axm_axm_fraction": {
+      "entry": 0.024298,
+      "exit": 0.035522,
+      "combined": 0.031518
+    },
+    "verdict": "ROUTING_SHIFT"
+  },
+  "test3_section_independence": {
+    "section_r2_on_bd": 0.701671,
+    "section_anova": {
+      "F": 38.220036,
+      "p": 0.0
+    },
+    "partial_corr_bd_axm_ctrl_section": {
+      "rho": -0.45863,
+      "p": 6.9e-05
+    },
+    "incremental_on_section_baseline": {
+      "section_only_r2": 0.363689,
+      "section_only_loo": 0.258976,
+      "with_bd_r2": 0.49896,
+      "with_bd_loo": 0.330425,
+      "dr2": 0.135271,
+      "f_stat": 17.278687,
+      "f_p": 9.8e-05
+    },
+    "verdict": "SECTION_CONFOUNDED"
+  },
+  "test4_vocabulary_mediation": {
+    "dark_frac_stats": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "correlations": {
+      "dark_vs_bd": {
+        "rho": 0.0,
+        "p": 1.0
+      },
+      "bridge_pc1_vs_bd": {
+        "rho": -0.666661,
+        "p": 0.0
+      },
+      "dark_vs_axm": {
+        "rho": 0.0,
+        "p": 1.0
+      },
+      "bridge_pc1_vs_axm": {
+        "rho": 0.467946,
+        "p": 4.7e-05
+      }
+    },
+    "coefficient_shrinkage": {
+      "beta_bd_alone": -0.067241,
+      "beta_bd_with_vocab": -0.067241,
+      "shrinkage_ratio": -0.0
+    },
+    "verdict": "VOCABULARY_INDEPENDENT"
+  },
+  "test5_gatekeeper_mediation": {
+    "gatekeeper_density_stats": {
+      "mean": 0.02394,
+      "std": 0.013507,
+      "mean_axm_frac": 0.05202
+    },
+    "gatekeeper_vs_bd": {
+      "rho": 0.016289,
+      "p": 0.026001
+    },
+    "gatekeeper_vs_axm": {
+      "rho": 0.051423,
+      "p": 0.073182
+    },
+    "partial_bd_axm_ctrl_gk": {
+      "rho": -0.744729,
+      "p": 0.0
+    },
+    "gatekeeper_free": {
+      "n_folios": 66,
+      "bd_stats": {
+        "mean": 0.352689,
+        "std": 0.164004
+      },
+      "spearman_vs_axm": {
+        "rho": -0.672929,
+        "p": 0.0
+      },
+      "baseline_r2": 0.554913,
+      "baseline_loo": 0.386286,
+      "extended_r2": 0.613639,
+      "extended_loo": 0.435053,
+      "dr2": 0.058725,
+      "f_stat": 8.207798,
+      "f_p": 0.005931
+    },
+    "dr2_ratio_vs_original": 0.694976,
+    "dr2_drop": 0.305024,
+    "verdict": "GATEKEEPER_PARTIAL"
+  },
+  "synthesis": {
+    "verdicts": {
+      "t1": "ENTRY_DOMINANT",
+      "t2": "ROUTING_SHIFT",
+      "t3": "SECTION_CONFOUNDED",
+      "t4": "VOCABULARY_INDEPENDENT",
+      "t5": "GATEKEEPER_PARTIAL"
+    },
+    "overall": "BOUNDARY_DIVERGENCE_PARTIALLY_EXPLAINED"
+  }
+}

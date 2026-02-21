@@ -170,8 +170,8 @@ Use these to verify your filtering is correct:
 | Metric | Value |
 |--------|-------|
 | Version | 4.10 |
-| Constraints | 1000 validated |
-| Phases | 412 completed |
+| Constraints | 1006 validated |
+| Phases | 414 completed |
 | Folios | 83 (Currier B) |
 | Core model | CLOSED (PCA-v1 CERTIFIED) |
 | Characterization | ACTIVE |

@@ -1,0 +1,243 @@
+{
+  "phase": "LINE_TRANSITION_DYNAMICS",
+  "phase_number": 413,
+  "depends_on": [
+    "C964",
+    "C681",
+    "C958",
+    "C961",
+    "C972",
+    "C1025",
+    "C1035",
+    "C1045"
+  ],
+  "test1_zone_transition_divergence": {
+    "n_transitions": {
+      "entry": 2362,
+      "interior": 9006,
+      "exit": 2277
+    },
+    "jsd_pairs": {
+      "entry_vs_interior": {
+        "jsd": 0.224322,
+        "null_mean": 0.167661,
+        "null_p": 0.0
+      },
+      "interior_vs_exit": {
+        "jsd": 0.21745,
+        "null_mean": 0.169451,
+        "null_p": 0.0
+      },
+      "entry_vs_exit": {
+        "jsd": 0.333226,
+        "null_mean": 0.23125,
+        "null_p": 0.0
+      }
+    },
+    "top_position_sensitive_classes": [
+      {
+        "class": 5,
+        "kl_entry_vs_interior": 10.382619,
+        "kl_exit_vs_interior": null
+      },
+      {
+        "class": 20,
+        "kl_entry_vs_interior": 4.649783,
+        "kl_exit_vs_interior": 8.30982
+      },
+      {
+        "class": 6,
+        "kl_entry_vs_interior": 1.474051,
+        "kl_exit_vs_interior": 8.232551
+      },
+      {
+        "class": 36,
+        "kl_entry_vs_interior": 2.59341,
+        "kl_exit_vs_interior": 7.644768
+      },
+      {
+        "class": 49,
+        "kl_entry_vs_interior": 6.343143,
+        "kl_exit_vs_interior": null
+      },
+      {
+        "class": 46,
+        "kl_entry_vs_interior": 4.839838,
+        "kl_exit_vs_interior": 5.754954
+      },
+      {
+        "class": 4,
+        "kl_entry_vs_interior": 5.722174,
+        "kl_exit_vs_interior": null
+      },
+      {
+        "class": 39,
+        "kl_entry_vs_interior": 4.288686,
+        "kl_exit_vs_interior": 5.658396
+      },
+      {
+        "class": 23,
+        "kl_entry_vs_interior": 3.686538,
+        "kl_exit_vs_interior": 5.082856
+      },
+      {
+        "class": 18,
+        "kl_entry_vs_interior": 3.983293,
+        "kl_exit_vs_interior": 4.999451
+      }
+    ],
+    "verdict": "POSITION_STRUCTURED"
+  },
+  "test2_boundary_spectral_properties": {
+    "per_zone": {
+      "entry": {
+        "stationary": {
+          "AXM": 0.721309,
+          "AXm": 0.026696,
+          "FQ": 0.155724,
+          "CC": 0.043878,
+          "FL_HAZ": 0.049922,
+          "FL_SAFE": 0.002472
+        },
+        "spectral_gap": 0.938703,
+        "axm_self": 0.730337
+      },
+      "interior": {
+        "stationary": {
+          "AXM": 0.671763,
+          "AXm": 0.028347,
+          "FQ": 0.197392,
+          "CC": 0.0417,
+          "FL_HAZ": 0.057099,
+          "FL_SAFE": 0.003699
+        },
+        "spectral_gap": 0.883359,
+        "axm_self": 0.703919
+      },
+      "exit": {
+        "stationary": {
+          "AXM": 0.597207,
+          "AXm": 0.035241,
+          "FQ": 0.203932,
+          "CC": 0.04666,
+          "FL_HAZ": 0.081417,
+          "FL_SAFE": 0.035543
+        },
+        "spectral_gap": 0.899664,
+        "axm_self": 0.633179
+      }
+    },
+    "axm_self_delta_max": 0.097158,
+    "spectral_gap_delta_max": 0.055345,
+    "stationary_max_deviation": 0.049545,
+    "verdict": "BOUNDARY_REGIME_SHIFT"
+  },
+  "test3_position_conditioned_generation": {
+    "n_instantiations": 50,
+    "metrics": {
+      "class_jsd": {
+        "m2_mean": 0.003173,
+        "m2p_mean": 0.003161,
+        "wilcoxon_p": 0.557057,
+        "improved": false
+      },
+      "bigram_acc": {
+        "m2_mean": 1.0,
+        "m2p_mean": 1.0,
+        "wilcoxon_p": 1.0,
+        "improved": false
+      },
+      "boundary_acc": {
+        "m2_mean": 1.0,
+        "m2p_mean": 1.0,
+        "wilcoxon_p": 1.0,
+        "improved": false
+      }
+    },
+    "n_metrics_improved": 0,
+    "verdict": "POSITION_CONDITIONING_NEUTRAL"
+  },
+  "test4_line_position_axm_residual": {
+    "n_folios_with_all_zones": 70,
+    "boundary_divergence_stats": {
+      "mean": 0.349968,
+      "std": 0.175447,
+      "min": 0.148495,
+      "max": 0.782329
+    },
+    "spearman_vs_axm_self": {
+      "rho": -0.731917,
+      "p": 0.0
+    },
+    "spearman_vs_c1017_residual": {
+      "rho": -0.264036,
+      "p": 0.018921
+    },
+    "incremental_regression": {
+      "c1035_baseline_r2": 0.569371,
+      "extended_r2": 0.653847,
+      "delta_r2": 0.084476,
+      "f_stat": 14.15447,
+      "f_p": 0.000394,
+      "loo_cv_r2_baseline": 0.433023,
+      "loo_cv_r2_extended": 0.511723
+    },
+    "verdict": "POSITION_MEDIATES_RESIDUAL"
+  },
+  "test5_section_position_invariance": {
+    "per_section": {
+      "?": {
+        "n_lines": 84,
+        "jsd_entry_int": 0.812986,
+        "jsd_exit_int": 0.819294,
+        "position_sensitivity": 1.63228
+      },
+      "B": {
+        "n_lines": 756,
+        "jsd_entry_int": 0.350284,
+        "jsd_exit_int": 0.349799,
+        "position_sensitivity": 0.700084
+      },
+      "C": {
+        "n_lines": 119,
+        "jsd_entry_int": 0.714193,
+        "jsd_exit_int": 0.777475,
+        "position_sensitivity": 1.491668
+      },
+      "H": {
+        "n_lines": 282,
+        "jsd_entry_int": 0.564878,
+        "jsd_exit_int": 0.656034,
+        "position_sensitivity": 1.220912
+      },
+      "S": {
+        "n_lines": 1054,
+        "jsd_entry_int": 0.34332,
+        "jsd_exit_int": 0.326363,
+        "position_sensitivity": 0.669683
+      },
+      "T": {
+        "n_lines": 67,
+        "jsd_entry_int": 0.873265,
+        "jsd_exit_int": 0.875255,
+        "position_sensitivity": 1.74852
+      }
+    },
+    "kruskal_wallis": {
+      "H": 54.541185,
+      "p": 0.0
+    },
+    "cv_of_section_jsds": 0.343112,
+    "verdict": "POSITION_SECTION_DEPENDENT"
+  },
+  "synthesis": {
+    "verdicts": {
+      "t1": "POSITION_STRUCTURED",
+      "t2": "BOUNDARY_REGIME_SHIFT",
+      "t3": "POSITION_CONDITIONING_NEUTRAL",
+      "t4": "POSITION_MEDIATES_RESIDUAL",
+      "t5": "POSITION_SECTION_DEPENDENT"
+    },
+    "overall": "LINE_POSITION_MEDIATES_RESIDUAL"
+  }
+}

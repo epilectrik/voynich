@@ -1292,6 +1292,52 @@ vocabulary_architecture:
       within_section: "all |rho| < 0.16"
       implication: "C1035 residual confirmed closed at paragraph level; design freedom is genuinely program-specific"
       provenance: "C1155"
+    line_position_transition_dynamics:
+      statement: "49-class transition matrix differs strongly by line position zone"
+      zone_jsd_range: "0.217-0.333 (all p<0.001 vs 1000 permutations)"
+      axm_self_gradient: "0.730 (entry) → 0.704 (interior) → 0.633 (exit)"
+      spectral_gap_range: "0.883-0.939"
+      section_dependent: true  # KW p<0.0001
+      generative_impact: "none — M2p 0/3 metrics improved"
+      provenance: "C1156"
+    boundary_divergence_residual:
+      statement: "Per-folio boundary divergence mediates C1035 AXM residual — first successful predictor"
+      delta_r2: 0.0845  # F=14.15, p=0.0004
+      loo_improvement: "0.433 → 0.512"
+      spearman_vs_axm: -0.732  # p<0.0001
+      note: "Descriptive not generative — position conditioning does not improve M2"
+      c1035_status: "partially reopened — ~49% irreducible remains"
+      provenance: "C1157"
+    entry_dominance:
+      statement: "Entry zone drives 3.5x more AXM residual variance than exit zone"
+      entry_delta_r2: 0.098  # F=16.63, p=0.0001
+      exit_delta_r2: 0.028  # F=4.51, p=0.038
+      entry_spearman: -0.692  # p<0.0001
+      exit_spearman: -0.472  # p<0.0001
+      note: "Contradicts gatekeeper exit hypothesis — predictive signal comes from line beginnings, not endings"
+      provenance: "C1158"
+    routing_shift:
+      statement: "Boundary divergence is driven by inter-state routing changes, not AXM self-transition decay"
+      axm_self_fraction: "3.2% of total transition delta"
+      top_entry_shifts: "AXm→AXM (+0.124), FQ→AXM (+0.103)"
+      top_exit_shifts: "CC→AXM (-0.296), FL_HAZ→AXM (-0.129)"
+      implication: "Line is a reset→explore→handoff arc at routing level"
+      provenance: "C1159"
+    section_confound_independence:
+      statement: "Section explains 70.2% of BD variance, but BD carries independent signal"
+      section_r2_on_bd: 0.702
+      partial_rho_bd_axm_given_section: -0.459  # p=0.0001
+      bd_increment_over_section: 0.135  # F=17.28, p=0.0001
+      loo_section_only: 0.259
+      loo_section_plus_bd: 0.330
+      provenance: "C1160"
+    gatekeeper_partial_mediation:
+      statement: "Gatekeeper classes explain ~30% of BD signal; 70% comes from non-gatekeeper routing"
+      original_delta_r2: 0.085
+      gk_free_delta_r2: 0.059  # 30.5% drop
+      gk_density_vs_bd: "rho=0.016 (uncorrelated)"
+      gk_free_bd_vs_axm: "rho=-0.673 (p<0.0001)"
+      provenance: "C1161"
     dark_pipeline_profile:
       compound_rate: "66.7%"
       section_concentration: "Herf 0.716 (strongly section-specific)"
@@ -1462,7 +1508,7 @@ ht_un_integration:
       ratio: "3.9x"
       implication: "Dark pipeline is the primary vehicle for section-level vocabulary modulation"
       provenance: "C1148"
-    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1149, C1150, C1151, C1152, C1153, C1154, C1155"
+    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1149, C1150, C1151, C1152, C1153, C1154, C1155, C1156, C1157, C1158, C1159, C1160, C1161"
 
 # ============================================================
 robustness:
@@ -1849,6 +1895,12 @@ provenance:
     - "C1153"  # Generative design freedom ~40% (consistent with C1035)
     - "C1154"  # k/e-kernel universally program-specific (~2x all sections)
     - "C1155"  # Paragraph kernel dynamics do not mediate AXM residual (C1035 closed)
+    - "C1156"  # Line position structures transitions (JSD 0.22-0.33, AXM gradient 0.730→0.633)
+    - "C1157"  # Boundary divergence mediates AXM residual (dR²=0.085, LOO 0.433→0.512)
+    - "C1158"  # Entry dominates boundary divergence (3.5× exit, dR²=0.098)
+    - "C1159"  # Boundary divergence is routing shift (AXM→AXM only 3.2% of delta)
+    - "C1160"  # BD section-confounded but independent (partial rho=-0.459, dR²=0.135)
+    - "C1161"  # Gatekeeper partial mediation (~30% of BD signal)
 
   execution_syntax:
     - "C547"   # ICC-based role validation

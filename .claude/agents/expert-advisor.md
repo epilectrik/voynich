@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1000 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 1006 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1000 validated)
+- Tier 0-2 binding constraints (1006 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1000 constraints, 66 fits,
+full content in their source documents. All 1006 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-20 19:30
-**Version:** FROZEN STATE (1000 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-20 20:48
+**Version:** FROZEN STATE (1006 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -113,7 +113,7 @@ and 4 structural contracts are complete.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.84 | **Status:** FROZEN | **Constraints:** 1000 | **Date:** 2026-02-20
+**Version:** 3.84 | **Status:** FROZEN | **Constraints:** 1006 | **Date:** 2026-02-20
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -312,8 +312,8 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 1000 |
-| Completed phases | 412 |
+| Validated constraints | 1006 |
+| Completed phases | 414 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1000 constraints | 2026-02-20
+CONSTRAINT_REFERENCE v2.6 | 1006 constraints | 2026-02-20
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2108,6 +2108,12 @@ C1152	**Section-M2 Captures Vocabulary Composition but Not Sequential Dynamics**
 C1153	**Generative Design Freedom Is ~40%** (32.4% class-dist + 43.2% AXM + 44.0% kernel uncaptured; aggregate 39.9%; AXM consistent with C1035's 57%; lower than C1016's 66.3% because class distribution IS section-captured)
 C1154	**k-Kernel and e-Kernel Variance Are Universally Program-Specific** (k ratio 1.82-2.32x, e ratio 1.76-2.21x across all sections; h-kernel section-determined in BIO/HERBAL/COSMO (0.74-1.29x) but program-specific in STARS_RECIPE (2.18x))
 C1155	**Paragraph Kernel Dynamics Do Not Mediate the AXM Residual** (kernel heterogeneity dR²=0.0012, trajectory slope variance dR²=0.0014, type entropy dR²=0.0002; all with negative LOO; within-section rho all <0.16; C1035 residual confirmed closed at paragraph level)
+C1156	**Line Position Structures Class Transitions**
+C1157	**Boundary Divergence Mediates the AXM Residual**
+C1158	**Entry Divergence Dominates Boundary Divergence Effect** (entry dR²=0.098 vs exit dR²=0.028, 3.5×; entry is the "reset to base" intensity; contradicts gatekeeper hypothesis)
+C1159	**Boundary Divergence Is a Routing Shift, Not AXM Persistence Decay** (AXM→AXM only 3.2% of total delta; dominant: AXm→AXM +0.124, FQ→AXM +0.103 at entry; CC→AXM -0.296 at exit; inter-state routing, not self-transition)
+C1160	**Boundary Divergence Is Section-Confounded but Carries Independent Signal**
+C1161	**Gatekeeper Classes Partially Mediate Boundary Divergence**
 
 ---
 
@@ -6339,6 +6345,52 @@ vocabulary_architecture:
       within_section: "all |rho| < 0.16"
       implication: "C1035 residual confirmed closed at paragraph level; design freedom is genuinely program-specific"
       provenance: "C1155"
+    line_position_transition_dynamics:
+      statement: "49-class transition matrix differs strongly by line position zone"
+      zone_jsd_range: "0.217-0.333 (all p<0.001 vs 1000 permutations)"
+      axm_self_gradient: "0.730 (entry) → 0.704 (interior) → 0.633 (exit)"
+      spectral_gap_range: "0.883-0.939"
+      section_dependent: true  # KW p<0.0001
+      generative_impact: "none — M2p 0/3 metrics improved"
+      provenance: "C1156"
+    boundary_divergence_residual:
+      statement: "Per-folio boundary divergence mediates C1035 AXM residual — first successful predictor"
+      delta_r2: 0.0845  # F=14.15, p=0.0004
+      loo_improvement: "0.433 → 0.512"
+      spearman_vs_axm: -0.732  # p<0.0001
+      note: "Descriptive not generative — position conditioning does not improve M2"
+      c1035_status: "partially reopened — ~49% irreducible remains"
+      provenance: "C1157"
+    entry_dominance:
+      statement: "Entry zone drives 3.5x more AXM residual variance than exit zone"
+      entry_delta_r2: 0.098  # F=16.63, p=0.0001
+      exit_delta_r2: 0.028  # F=4.51, p=0.038
+      entry_spearman: -0.692  # p<0.0001
+      exit_spearman: -0.472  # p<0.0001
+      note: "Contradicts gatekeeper exit hypothesis — predictive signal comes from line beginnings, not endings"
+      provenance: "C1158"
+    routing_shift:
+      statement: "Boundary divergence is driven by inter-state routing changes, not AXM self-transition decay"
+      axm_self_fraction: "3.2% of total transition delta"
+      top_entry_shifts: "AXm→AXM (+0.124), FQ→AXM (+0.103)"
+      top_exit_shifts: "CC→AXM (-0.296), FL_HAZ→AXM (-0.129)"
+      implication: "Line is a reset→explore→handoff arc at routing level"
+      provenance: "C1159"
+    section_confound_independence:
+      statement: "Section explains 70.2% of BD variance, but BD carries independent signal"
+      section_r2_on_bd: 0.702
+      partial_rho_bd_axm_given_section: -0.459  # p=0.0001
+      bd_increment_over_section: 0.135  # F=17.28, p=0.0001
+      loo_section_only: 0.259
+      loo_section_plus_bd: 0.330
+      provenance: "C1160"
+    gatekeeper_partial_mediation:
+      statement: "Gatekeeper classes explain ~30% of BD signal; 70% comes from non-gatekeeper routing"
+      original_delta_r2: 0.085
+      gk_free_delta_r2: 0.059  # 30.5% drop
+      gk_density_vs_bd: "rho=0.016 (uncorrelated)"
+      gk_free_bd_vs_axm: "rho=-0.673 (p<0.0001)"
+      provenance: "C1161"
     dark_pipeline_profile:
       compound_rate: "66.7%"
       section_concentration: "Herf 0.716 (strongly section-specific)"
@@ -6508,7 +6560,7 @@ ht_un_integration:
       ratio: "3.9x"
       implication: "Dark pipeline is the primary vehicle for section-level vocabulary modulation"
       provenance: "C1148"
-    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1149, C1150, C1151, C1152, C1153, C1154, C1155"
+    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1149, C1150, C1151, C1152, C1153, C1154, C1155, C1156, C1157, C1158, C1159, C1160, C1161"
 
 robustness:
 

@@ -4,6 +4,44 @@
 
 ---
 
+## Version 4.14.24 (2026-02-20) - Phase 414: Boundary Divergence Decomposition
+
+### Summary
+
+Phase 414: 5-test battery decomposing the C1157 boundary divergence signal. 4 new constraints (C1158-C1161). Key findings: entry dominates exit 3.5× (dR²=0.098 vs 0.028) — contradicts gatekeeper exit hypothesis. Boundary divergence is a ROUTING shift, not AXM persistence decay — AXM→AXM accounts for only 3.2% of total transition delta; inter-state routing (AXm→AXM, FQ→AXM) dominates. Section explains 70.2% of BD variance but BD carries independent signal (partial rho=-0.459, dR²=0.135 over section-only baseline). Gatekeeper classes partially mediate (~30.5% dR² drop) but 70% of signal comes from non-gatekeeper routing. Overall: BOUNDARY_DIVERGENCE_PARTIALLY_EXPLAINED.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/BOUNDARY_DIVERGENCE_DECOMPOSITION/` -- script + results (5-test battery) |
+| **ADDED** | C1158-C1161 constraint files (4 new constraints, 1002→1006) |
+| **UPDATED** | `currierB.bcsc.yaml` -- entry_dominance, routing_shift, section_confound_independence, gatekeeper_partial_mediation |
+| **UPDATED** | `CLAUDE.md` -- 1002→1006 constraints, 413→414 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 1002→1006 constraints |
+| **UPDATED** | `INDEX.md` -- 1002→1006 total, Phase 414 section added |
+
+---
+
+## Version 4.13.23 (2026-02-20) - Phase 413: Line Transition Dynamics
+
+### Summary
+
+Phase 413: 5-test battery testing whether within-line position constrains token transition dynamics and mediates the C1035 AXM residual. 2 new constraints (C1156-C1157). **Major finding:** boundary divergence is the first predictor to break the C1035 barrier — dR²=0.0845, F=14.15, p=0.0004, LOO improves 0.433→0.512. Transition matrices differ strongly by zone (JSD 0.22-0.33, p<0.001). AXM self-transition drops 0.730→0.633 from entry to exit. Effect is section-dependent. Position conditioning does NOT improve M2 generation — structure is descriptive, not generative.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/LINE_TRANSITION_DYNAMICS/` -- script + results (5-test battery) |
+| **ADDED** | C1156-C1157 constraint files (2 new constraints, 1000→1002) |
+| **UPDATED** | `currierB.bcsc.yaml` -- line_position_transition_dynamics, boundary_divergence_residual |
+| **UPDATED** | `CLAUDE.md` -- 1000→1002 constraints, 412→413 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 1000→1002 constraints |
+| **UPDATED** | `INDEX.md` -- 1000→1002 total, Phase 413 section added |
+
+---
+
 ## Version 4.12.22 (2026-02-20) - Phase 412: Paragraph Kernel Dynamics
 
 ### Summary
