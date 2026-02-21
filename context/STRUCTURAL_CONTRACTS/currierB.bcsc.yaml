@@ -891,8 +891,8 @@ convergence:
 # ============================================================
 link_operator:
 
-  function: "Deliberate waiting/monitoring phases"
-  provenance: "C366"
+  function: "Morphological artifact — `ol` substring recruited differently by each role, not a unified functional layer"
+  provenance: "C1174 (revises C366)"
 
   definition:
     marker: "'ol' substring in token"
@@ -946,6 +946,47 @@ link_operator:
   complementarity:
     with_escalation: true
     provenance: "C340"
+
+  functional_architecture:
+    # Phase 418: LINK_FUNCTIONAL_ARCHITECTURE (C1170-C1174)
+    overall_verdict: "LINK_MORPHOLOGICAL_ARTIFACT"
+    vocabulary_stratification:
+      cramers_v: 0.404
+      cc_types: 1  # standalone `ol` only
+      ax_prefix_fraction: "59.4%"
+      un_types: 735
+      hapax_fraction: "69.0%"
+      provenance: "C1170"
+    cross_role_behavior:
+      consistent_roles: "0/4"
+      link_jsd: 0.0138
+      nonlink_jsd: 0.0128
+      verdict: "ROLE_DOMINANT"
+      provenance: "C1171"
+    bio_excess:
+      bio_density: "20.2%"
+      en_span_enrichment: "4.65×"
+      ax_span_enrichment: "2.15×"
+      middle_depleted: true
+      verdict: "BIO_TARGETED_ENRICHMENT"
+      provenance: "C1172"
+    boundary_behavior:
+      entry_rate: "17.2%"
+      interior_rate: "12.4%"
+      exit_rate: "15.3%"
+      entry_divergence_rho: -0.059
+      exit_divergence_rho: -0.151
+      dynamics_boundary_enrichment: "1.09×"
+      verdict: "BOUNDARY_ENRICHED_PASSIVE"
+      provenance: "C1173"
+    interpretation: |
+      The `ol` substring is a morphological component, not a functional marker.
+      CC uses `ol` as standalone operator (continue instruction).
+      AX uses `ol` as prefix (modifying auxiliary morphology).
+      EN uses `ol` within/across MIDDLE boundaries.
+      BIO excess is SPAN-targeted (morphological complexity, not functional LINK deployment).
+      Boundary enrichment reflects positional preferences of ol-containing roles, not LINK-specific function.
+    provenance: "C1174"
 
 # ============================================================
 recovery:
@@ -2114,6 +2155,13 @@ provenance:
     - "C807"   # LINK-FL inverse relationship (distance 3.91 vs 3.38)
     - "C808"   # 'ol' is PP MIDDLE (92.4% LINK tokens are PP)
     - "C809"   # LINK-kernel separation (farther from kernel chars)
+
+  link_functional_architecture:
+    - "C1170"  # LINK vocabulary stratified by role (V=0.404, CC=standalone ol, AX=59% PREFIX)
+    - "C1171"  # LINK behavior role-dominant (0/4 consistent, no cross-role substrate)
+    - "C1172"  # BIO LINK excess SPAN-targeted (EN_SPAN 4.65×, MIDDLE depleted)
+    - "C1173"  # LINK boundary enrichment passive (no divergence correlation)
+    - "C1174"  # LINK is morphological artifact (synthesis: not functional layer)
 
   control_loop_synthesis:
     - "C810"   # LINK-FL non-adjacency (0.70x direct transitions)

@@ -1,0 +1,587 @@
+{
+  "phase": "LINK_FUNCTIONAL_ARCHITECTURE",
+  "phase_number": 418,
+  "depends_on": [
+    "C609",
+    "C805",
+    "C808",
+    "C804",
+    "C806",
+    "C1168",
+    "C334"
+  ],
+  "population": {
+    "n_tokens": 3047,
+    "n_types": 801,
+    "density": 0.131928
+  },
+  "test1_vocabulary_stratification": {
+    "n_types": 801,
+    "n_tokens": 3047,
+    "hapax_count": 553,
+    "hapax_fraction": 0.690387,
+    "top_20": [
+      {
+        "word": "ol",
+        "count": 421,
+        "role": "CORE_CONTROL",
+        "ol_position": "MIDDLE"
+      },
+      {
+        "word": "qol",
+        "count": 145,
+        "role": "ENERGY_OPERATOR",
+        "ol_position": "SPAN"
+      },
+      {
+        "word": "chol",
+        "count": 99,
+        "role": "ENERGY_OPERATOR",
+        "ol_position": "MIDDLE"
+      },
+      {
+        "word": "cheol",
+        "count": 90,
+        "role": "ENERGY_OPERATOR",
+        "ol_position": "MIDDLE"
+      },
+      {
+        "word": "sheol",
+        "count": 69,
+        "role": "ENERGY_OPERATOR",
+        "ol_position": "MIDDLE"
+      },
+      {
+        "word": "shol",
+        "count": 59,
+        "role": "ENERGY_OPERATOR",
+        "ol_position": "MIDDLE"
+      },
+      {
+        "word": "qokol",
+        "count": 57,
+        "role": "ENERGY_OPERATOR",
+        "ol_position": "SUFFIX"
+      },
+      {
+        "word": "dol",
+        "count": 51,
+        "role": "AUXILIARY",
+        "ol_position": "SPAN"
+      },
+      {
+        "word": "sol",
+        "count": 48,
+        "role": "AUXILIARY",
+        "ol_position": "SPAN"
+      },
+      {
+        "word": "oly",
+        "count": 46,
+        "role": "AUXILIARY",
+        "ol_position": "PREFIX"
+      },
+      {
+        "word": "olkeedy",
+        "count": 41,
+        "role": "AUXILIARY",
+        "ol_position": "PREFIX"
+      },
+      {
+        "word": "lol",
+        "count": 38,
+        "role": "AUXILIARY",
+        "ol_position": "SUFFIX"
+      },
+      {
+        "word": "olkeey",
+        "count": 38,
+        "role": "AUXILIARY",
+        "ol_position": "PREFIX"
+      },
+      {
+        "word": "olchedy",
+        "count": 37,
+        "role": "AUXILIARY",
+        "ol_position": "PREFIX"
+      },
+      {
+        "word": "olaiin",
+        "count": 34,
+        "role": "AUXILIARY",
+        "ol_position": "PREFIX"
+      },
+      {
+        "word": "olkain",
+        "count": 33,
+        "role": "AUXILIARY",
+        "ol_position": "PREFIX"
+      },
+      {
+        "word": "otol",
+        "count": 32,
+        "role": "FREQUENT_OPERATOR",
+        "ol_position": "MIDDLE"
+      },
+      {
+        "word": "olkaiin",
+        "count": 31,
+        "role": "AUXILIARY",
+        "ol_position": "PREFIX"
+      },
+      {
+        "word": "olkedy",
+        "count": 27,
+        "role": "AUXILIARY",
+        "ol_position": "PREFIX"
+      },
+      {
+        "word": "olor",
+        "count": 26,
+        "role": "AUXILIARY",
+        "ol_position": "PREFIX"
+      }
+    ],
+    "cross_tabulation": {
+      "AUXILIARY": {
+        "PREFIX": 475,
+        "MIDDLE": 102,
+        "SPAN": 157,
+        "SUFFIX": 65
+      },
+      "CORE_CONTROL": {
+        "MIDDLE": 421
+      },
+      "ENERGY_OPERATOR": {
+        "MIDDLE": 326,
+        "SUFFIX": 106,
+        "SPAN": 146
+      },
+      "FLOW_OPERATOR": {
+        "MIDDLE": 10
+      },
+      "FREQUENT_OPERATOR": {
+        "MIDDLE": 71
+      },
+      "UN": {
+        "PREFIX": 400,
+        "MIDDLE": 308,
+        "SUFFIX": 173,
+        "SPAN": 287
+      }
+    },
+    "chi2": 1493.364574,
+    "chi2_p": 0.0,
+    "cramers_v": 0.40419,
+    "per_role_diversity": {
+      "AUXILIARY": {
+        "n_types": 49,
+        "n_tokens": 799,
+        "entropy": 5.082241,
+        "type_token_ratio": 0.061327
+      },
+      "CORE_CONTROL": {
+        "n_types": 1,
+        "n_tokens": 421,
+        "entropy": -0.0,
+        "type_token_ratio": 0.002375
+      },
+      "ENERGY_OPERATOR": {
+        "n_types": 12,
+        "n_tokens": 578,
+        "entropy": 2.936981,
+        "type_token_ratio": 0.020761
+      },
+      "FLOW_OPERATOR": {
+        "n_types": 1,
+        "n_tokens": 10,
+        "entropy": -0.0,
+        "type_token_ratio": 0.1
+      },
+      "FREQUENT_OPERATOR": {
+        "n_types": 3,
+        "n_tokens": 71,
+        "entropy": 1.539926,
+        "type_token_ratio": 0.042254
+      },
+      "UN": {
+        "n_types": 735,
+        "n_tokens": 1168,
+        "entropy": 9.160438,
+        "type_token_ratio": 0.629281
+      }
+    },
+    "verdict": "STRATIFIED"
+  },
+  "test2_cross_role_consistency": {
+    "per_role_comparison": {
+      "AUXILIARY": {
+        "n_link": 799,
+        "n_nonlink": 3341,
+        "link_mean_pos": 0.513554,
+        "nonlink_mean_pos": 0.485411,
+        "mw_u": 1398001.0,
+        "mw_p": 0.036579,
+        "link_first_rate": 0.148936,
+        "nonlink_first_rate": 0.155343,
+        "link_last_rate": 0.157697,
+        "nonlink_last_rate": 0.105058
+      },
+      "ENERGY_OPERATOR": {
+        "n_link": 578,
+        "n_nonlink": 6633,
+        "link_mean_pos": 0.422185,
+        "nonlink_mean_pos": 0.488554,
+        "mw_u": 1658631.0,
+        "mw_p": 0.0,
+        "link_first_rate": 0.074394,
+        "nonlink_first_rate": 0.043721,
+        "link_last_rate": 0.032872,
+        "nonlink_last_rate": 0.052766
+      },
+      "CORE_CONTROL": {
+        "n_link": 421,
+        "n_nonlink": 314,
+        "link_mean_pos": 0.511262,
+        "nonlink_mean_pos": 0.412841,
+        "mw_u": 78001.5,
+        "mw_p": 2.8e-05,
+        "link_first_rate": 0.049881,
+        "nonlink_first_rate": 0.270701,
+        "link_last_rate": 0.095012,
+        "nonlink_last_rate": 0.076433
+      },
+      "UN": {
+        "n_link": 1168,
+        "n_nonlink": 5870,
+        "link_mean_pos": 0.46113,
+        "nonlink_mean_pos": 0.49649,
+        "mw_u": 3227204.5,
+        "mw_p": 0.001473,
+        "link_first_rate": 0.19863,
+        "nonlink_first_rate": 0.154003,
+        "link_last_rate": 0.152397,
+        "nonlink_last_rate": 0.147359
+      }
+    },
+    "link_pairwise_jsd": {
+      "AUXILIARY_vs_ENERGY_OPERATOR": 0.025997,
+      "AUXILIARY_vs_CORE_CONTROL": 0.004662,
+      "AUXILIARY_vs_UN": 0.004892,
+      "ENERGY_OPERATOR_vs_CORE_CONTROL": 0.01809,
+      "ENERGY_OPERATOR_vs_UN": 0.018797,
+      "CORE_CONTROL_vs_UN": 0.010587
+    },
+    "nonlink_pairwise_jsd": {
+      "AUXILIARY_vs_ENERGY_OPERATOR": 0.014017,
+      "AUXILIARY_vs_CORE_CONTROL": 0.00774,
+      "AUXILIARY_vs_UN": 0.000306,
+      "ENERGY_OPERATOR_vs_CORE_CONTROL": 0.030562,
+      "ENERGY_OPERATOR_vs_UN": 0.015243,
+      "CORE_CONTROL_vs_UN": 0.009004
+    },
+    "mean_link_jsd": 0.013837,
+    "mean_nonlink_jsd": 0.012812,
+    "predecessor_jsd_by_role": {
+      "AUXILIARY": 0.001199,
+      "ENERGY_OPERATOR": 0.003503,
+      "CORE_CONTROL": 0.014039,
+      "UN": 0.002776
+    },
+    "verdict": "ROLE_DOMINANT"
+  },
+  "test3_section_decomposition": {
+    "section_densities": {
+      "B": {
+        "n_total": 6850,
+        "n_link": 1385,
+        "density": 0.20219
+      },
+      "C": {
+        "n_total": 1480,
+        "n_link": 172,
+        "density": 0.116216
+      },
+      "H": {
+        "n_total": 2611,
+        "n_link": 251,
+        "density": 0.096132
+      },
+      "S": {
+        "n_total": 10671,
+        "n_link": 1099,
+        "density": 0.102989
+      },
+      "T": {
+        "n_total": 662,
+        "n_link": 73,
+        "density": 0.110272
+      }
+    },
+    "section_role_distributions": {
+      "B": {
+        "AUXILIARY": 0.303971,
+        "ENERGY_OPERATOR": 0.180505,
+        "CORE_CONTROL": 0.168231,
+        "FREQUENT_OPERATOR": 0.015162,
+        "FLOW_OPERATOR": 0.004332,
+        "UN": 0.327798
+      },
+      "C": {
+        "AUXILIARY": 0.27907,
+        "ENERGY_OPERATOR": 0.139535,
+        "CORE_CONTROL": 0.162791,
+        "FREQUENT_OPERATOR": 0.034884,
+        "FLOW_OPERATOR": 0.0,
+        "UN": 0.383721
+      },
+      "H": {
+        "AUXILIARY": 0.243028,
+        "ENERGY_OPERATOR": 0.167331,
+        "CORE_CONTROL": 0.123506,
+        "FREQUENT_OPERATOR": 0.031873,
+        "FLOW_OPERATOR": 0.003984,
+        "UN": 0.430279
+      },
+      "S": {
+        "AUXILIARY": 0.212011,
+        "ENERGY_OPERATOR": 0.216561,
+        "CORE_CONTROL": 0.101001,
+        "FREQUENT_OPERATOR": 0.031847,
+        "FLOW_OPERATOR": 0.00273,
+        "UN": 0.435851
+      },
+      "T": {
+        "AUXILIARY": 0.219178,
+        "ENERGY_OPERATOR": 0.205479,
+        "CORE_CONTROL": 0.191781,
+        "FREQUENT_OPERATOR": 0.013699,
+        "FLOW_OPERATOR": 0.0,
+        "UN": 0.369863
+      }
+    },
+    "section_role_chi2": 82.205966,
+    "section_role_p": 0.0,
+    "section_role_jsd": {
+      "B_vs_C": 0.008946,
+      "B_vs_H": 0.012323,
+      "B_vs_S": 0.021093,
+      "B_vs_T": 0.009226,
+      "C_vs_H": 0.00676,
+      "C_vs_S": 0.017251,
+      "C_vs_T": 0.011571,
+      "H_vs_S": 0.003959,
+      "H_vs_T": 0.013557,
+      "S_vs_T": 0.016467
+    },
+    "bio_enrichment": {
+      "AUXILIARY_MIDDLE": {
+        "bio_count": 29,
+        "non_bio_count": 69,
+        "bio_rate": 0.020939,
+        "non_bio_rate": 0.04326,
+        "enrichment": 0.484016
+      },
+      "AUXILIARY_PREFIX": {
+        "bio_count": 253,
+        "non_bio_count": 208,
+        "bio_rate": 0.182671,
+        "non_bio_rate": 0.130408,
+        "enrichment": 1.400774
+      },
+      "AUXILIARY_SUFFIX": {
+        "bio_count": 38,
+        "non_bio_count": 27,
+        "bio_rate": 0.027437,
+        "non_bio_rate": 0.016928,
+        "enrichment": 1.620805
+      },
+      "AUXILIARY_SPAN": {
+        "bio_count": 101,
+        "non_bio_count": 54,
+        "bio_rate": 0.072924,
+        "non_bio_rate": 0.033856,
+        "enrichment": 2.153964
+      },
+      "ENERGY_OPERATOR_MIDDLE": {
+        "bio_count": 94,
+        "non_bio_count": 228,
+        "bio_rate": 0.06787,
+        "non_bio_rate": 0.142947,
+        "enrichment": 0.474793
+      },
+      "ENERGY_OPERATOR_SUFFIX": {
+        "bio_count": 39,
+        "non_bio_count": 62,
+        "bio_rate": 0.028159,
+        "non_bio_rate": 0.038871,
+        "enrichment": 0.724409
+      },
+      "ENERGY_OPERATOR_SPAN": {
+        "bio_count": 117,
+        "non_bio_count": 29,
+        "bio_rate": 0.084477,
+        "non_bio_rate": 0.018182,
+        "enrichment": 4.646209
+      },
+      "CORE_CONTROL_MIDDLE": {
+        "bio_count": 233,
+        "non_bio_count": 184,
+        "bio_rate": 0.168231,
+        "non_bio_rate": 0.115361,
+        "enrichment": 1.458307
+      },
+      "FREQUENT_OPERATOR_MIDDLE": {
+        "bio_count": 21,
+        "non_bio_count": 50,
+        "bio_rate": 0.015162,
+        "non_bio_rate": 0.031348,
+        "enrichment": 0.483682
+      },
+      "FLOW_OPERATOR_MIDDLE": {
+        "bio_count": 6,
+        "non_bio_count": 4,
+        "bio_rate": 0.004332,
+        "non_bio_rate": 0.002508,
+        "enrichment": 1.727437
+      },
+      "UN_MIDDLE": {
+        "bio_count": 84,
+        "non_bio_count": 211,
+        "bio_rate": 0.06065,
+        "non_bio_rate": 0.132288,
+        "enrichment": 0.458467
+      },
+      "UN_PREFIX": {
+        "bio_count": 143,
+        "non_bio_count": 242,
+        "bio_rate": 0.103249,
+        "non_bio_rate": 0.151724,
+        "enrichment": 0.680505
+      },
+      "UN_SUFFIX": {
+        "bio_count": 52,
+        "non_bio_count": 120,
+        "bio_rate": 0.037545,
+        "non_bio_rate": 0.075235,
+        "enrichment": 0.499037
+      },
+      "UN_SPAN": {
+        "bio_count": 175,
+        "non_bio_count": 107,
+        "bio_rate": 0.126354,
+        "non_bio_rate": 0.067085,
+        "enrichment": 1.883498
+      }
+    },
+    "enrichment_cv": 0.816582,
+    "verdict": "BIO_TARGETED_ENRICHMENT"
+  },
+  "test4_macro_automaton_dynamics": {
+    "n_classified_link": 1879,
+    "link_state_distribution": {
+      "AXM": 0.693454,
+      "AXm": 0.039383,
+      "FQ": 0.037786,
+      "CC": 0.224055,
+      "FL_HAZ": 0.0,
+      "FL_SAFE": 0.005322
+    },
+    "baseline_state_distribution": {
+      "AXM": 0.674522,
+      "AXm": 0.02921,
+      "FQ": 0.198758,
+      "CC": 0.022155,
+      "FL_HAZ": 0.067452,
+      "FL_SAFE": 0.007902
+    },
+    "occupancy_jsd": 0.147254,
+    "incoming_transition_jsd": 0.168473,
+    "outgoing_transition_jsd": 0.121367,
+    "state_boundary_enrichment": {
+      "link_rate": 0.498397,
+      "baseline_rate": 0.457265,
+      "enrichment_ratio": 1.089952
+    },
+    "un_link_neighborhood": {
+      "n_pred": 613,
+      "n_succ": 684,
+      "jsd_vs_classified": 0.001411
+    },
+    "class11_vs_class29": {
+      "class11_n": 421,
+      "class29_n": 0,
+      "class11_mean_pos": 0.511262,
+      "class29_mean_pos": null,
+      "position_mw_p": 1.0,
+      "predecessor_jsd": 0.0
+    },
+    "verdict": "LINK_PASSIVE_PARTICIPANT"
+  },
+  "test5_boundary_architecture": {
+    "zone_rates": {
+      "ENTRY": 0.172328,
+      "INTERIOR": 0.123809,
+      "EXIT": 0.153273
+    },
+    "zone_chi2": 54.506588,
+    "zone_p": 0.0,
+    "per_folio_enrichment_stats": {
+      "n_folios": 72,
+      "entry_mean": 1.363327,
+      "entry_std": 0.900333,
+      "exit_mean": 1.131599,
+      "exit_std": 0.772908
+    },
+    "divergence_correlation": {
+      "n_common": 43,
+      "entry_enrichment_vs_jsd_entry": {
+        "rho": -0.059348,
+        "p": 0.073565
+      },
+      "exit_enrichment_vs_jsd_exit": {
+        "rho": -0.151465,
+        "p": 0.108197
+      }
+    },
+    "per_section_boundary": {
+      "B": {
+        "ENTRY": 0.25426,
+        "INTERIOR": 0.184295,
+        "EXIT": 0.275229
+      },
+      "C": {
+        "ENTRY": 0.087302,
+        "INTERIOR": 0.118989,
+        "EXIT": 0.119048
+      },
+      "H": {
+        "ENTRY": 0.101399,
+        "INTERIOR": 0.096616,
+        "EXIT": 0.087413
+      },
+      "S": {
+        "ENTRY": 0.160813,
+        "INTERIOR": 0.09652,
+        "EXIT": 0.096118
+      },
+      "T": {
+        "ENTRY": 0.029851,
+        "INTERIOR": 0.117871,
+        "EXIT": 0.134328
+      }
+    },
+    "boundary_subpopulation_jsd": 0.061074,
+    "verdict": "BOUNDARY_ENRICHED_PASSIVE"
+  },
+  "synthesis": {
+    "verdicts": {
+      "t1": "STRATIFIED",
+      "t2": "ROLE_DOMINANT",
+      "t3": "BIO_TARGETED_ENRICHMENT",
+      "t4": "LINK_PASSIVE_PARTICIPANT",
+      "t5": "BOUNDARY_ENRICHED_PASSIVE"
+    },
+    "overall": "LINK_MORPHOLOGICAL_ARTIFACT"
+  }
+}

@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1014 constraints | 2026-02-20
+CONSTRAINT_REFERENCE v2.6 | 1019 constraints | 2026-02-20
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1018,3 +1018,8 @@ C1166	**Exit Divergence Redundant After Entry Control** (bivariate rho=-0.710 bu
 C1167	**AXM Departure Rate at Exit Extends Residual** (dR²=0.035, F=11.80, p=0.0012, LOO 0.696→0.745; closer features R²=0.338; AXM departure rho=0.509 with exit div)	2	B, folio, AXM residual, exit	-> C1167_axm_departure_rate_extends_residual.md
 C1168	**Dual Boundary Architecture** (entry+exit independent channels; dual R²=0.852 LOO=0.732; exit dR²=0.039 LOO+0.036; all 3 sections benefit; irreducible ~57%→~27%)	2	B, folio, AXM residual, boundary	-> C1168_dual_boundary_architecture.md
 C1169	**AXM Residual Closed — ~27% Is Genuine Design Freedom** (23 candidates: 0 Holm-sig; RF CV R²=-0.14 perm p=0.375; lag-1 AC=0.102 p=0.378; KW regime p=0.998; C458 symmetric; T5 gated closed)	2	B, folio, AXM residual, closure	-> C1169_axm_residual_closed_genuine_design_freedom.md
+C1170	**LINK Vocabulary Stratified by Role** (chi2=1493, V=0.404; CC=1 type all MIDDLE; AX=49 types 59% PREFIX; EN=12 types MIDDLE/SPAN/SUFFIX; UN=735 types TTR=0.629)	2	B, LINK, vocabulary, role	-> C1170_link_vocabulary_stratified_by_role.md
+C1171	**LINK Behavior Is Role-Dominant** (4/4 roles sig different MW p<0.05; cross-role JSD LINK=0.014 ≈ non-LINK=0.013; no unified substrate)	2	B, LINK, cross-role, position	-> C1171_link_behavior_role_dominant.md
+C1172	**BIO LINK Excess Is SPAN-Targeted** (BIO 20.2%; EN_SPAN 4.65×, AX_SPAN 2.15×, UN_SPAN 1.88×; MIDDLE depleted 0.47×; section×role chi2=82.2 p<1e-9)	2	B, BIO, LINK, section	-> C1172_bio_link_excess_span_targeted.md
+C1173	**LINK Boundary Enrichment Is Passive** (entry 17.2% interior 12.4% exit 15.3% chi2=54.5; entry rho=-0.059 p=0.074; exit rho=-0.151 p=0.108; dynamics 1.09× boundary)	2	B, LINK, boundary, dynamics	-> C1173_link_boundary_enrichment_passive.md
+C1174	**LINK Is Morphological Artifact** (synthesis: STRATIFIED + ROLE_DOMINANT + PASSIVE → `ol` is morphological component not functional layer; revises C366/C609 interpretation)	2	B, LINK, synthesis	-> C1174_link_is_morphological_artifact.md

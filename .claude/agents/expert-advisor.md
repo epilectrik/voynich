@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1014 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 1019 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1014 validated)
+- Tier 0-2 binding constraints (1019 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1014 constraints, 66 fits,
+full content in their source documents. All 1019 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-20 22:03
-**Version:** FROZEN STATE (1014 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-20 22:31
+**Version:** FROZEN STATE (1019 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -113,7 +113,7 @@ and 4 structural contracts are complete.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.87 | **Status:** FROZEN | **Constraints:** 1014 | **Date:** 2026-02-20
+**Version:** 3.88 | **Status:** FROZEN | **Constraints:** 1019 | **Date:** 2026-02-20
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1014 constraints | 2026-02-20
+CONSTRAINT_REFERENCE v2.6 | 1019 constraints | 2026-02-20
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2122,6 +2122,11 @@ C1166	**Exit Divergence Redundant After Entry Control**
 C1167	**AXM Departure Rate at Exit Extends Residual**
 C1168	**Dual Boundary Architecture** (entry+exit independent channels; dual R²=0.852 LOO=0.732; exit dR²=0.039 LOO+0.036; all 3 sections benefit; irreducible ~57%→~27%)
 C1169	**AXM Residual Closed — ~27% Is Genuine Design Freedom**
+C1170	**LINK Vocabulary Stratified by Role**
+C1171	**LINK Behavior Is Role-Dominant**
+C1172	**BIO LINK Excess Is SPAN-Targeted**
+C1173	**LINK Boundary Enrichment Is Passive**
+C1174	**LINK Is Morphological Artifact** (synthesis: STRATIFIED + ROLE_DOMINANT + PASSIVE → `ol` is morphological component not functional layer; revises C366/C609 interpretation)
 
 ---
 
@@ -5961,8 +5966,8 @@ convergence:
 
 link_operator:
 
-  function: "Deliberate waiting/monitoring phases"
-  provenance: "C366"
+  function: "Morphological artifact — `ol` substring recruited differently by each role, not a unified functional layer"
+  provenance: "C1174 (revises C366)"
 
   definition:
     marker: "'ol' substring in token"
@@ -6016,6 +6021,47 @@ link_operator:
   complementarity:
     with_escalation: true
     provenance: "C340"
+
+  functional_architecture:
+    # Phase 418: LINK_FUNCTIONAL_ARCHITECTURE (C1170-C1174)
+    overall_verdict: "LINK_MORPHOLOGICAL_ARTIFACT"
+    vocabulary_stratification:
+      cramers_v: 0.404
+      cc_types: 1  # standalone `ol` only
+      ax_prefix_fraction: "59.4%"
+      un_types: 735
+      hapax_fraction: "69.0%"
+      provenance: "C1170"
+    cross_role_behavior:
+      consistent_roles: "0/4"
+      link_jsd: 0.0138
+      nonlink_jsd: 0.0128
+      verdict: "ROLE_DOMINANT"
+      provenance: "C1171"
+    bio_excess:
+      bio_density: "20.2%"
+      en_span_enrichment: "4.65×"
+      ax_span_enrichment: "2.15×"
+      middle_depleted: true
+      verdict: "BIO_TARGETED_ENRICHMENT"
+      provenance: "C1172"
+    boundary_behavior:
+      entry_rate: "17.2%"
+      interior_rate: "12.4%"
+      exit_rate: "15.3%"
+      entry_divergence_rho: -0.059
+      exit_divergence_rho: -0.151
+      dynamics_boundary_enrichment: "1.09×"
+      verdict: "BOUNDARY_ENRICHED_PASSIVE"
+      provenance: "C1173"
+    interpretation: |
+      The `ol` substring is a morphological component, not a functional marker.
+      CC uses `ol` as standalone operator (continue instruction).
+      AX uses `ol` as prefix (modifying auxiliary morphology).
+      EN uses `ol` within/across MIDDLE boundaries.
+      BIO excess is SPAN-targeted (morphological complexity, not functional LINK deployment).
+      Boundary enrichment reflects positional preferences of ol-containing roles, not LINK-specific function.
+    provenance: "C1174"
 
 recovery:
 

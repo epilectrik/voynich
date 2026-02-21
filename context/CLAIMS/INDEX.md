@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1014 validated constraints | **Version:** 4.17 | **Date:** 2026-02-20
+**Total:** 1019 validated constraints | **Version:** 4.18 | **Date:** 2026-02-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3159,6 +3159,26 @@ Tests whether the ~27% AXM residual from the dual boundary model (C1168, R²=0.8
 - Test 4: SYMMETRIC_FREEDOM -- no C458 asymmetry, KW regime p=0.998
 - Test 5: RESIDUAL_CLOSED -- gated (T1+T2 both closed)
 - Overall: RESIDUAL_GENUINELY_FREE
+
+### LINK Functional Architecture (C1170-C1174) -- Phase: LINK_FUNCTIONAL_ARCHITECTURE (Phase 418)
+
+5-test battery characterizing LINK (`ol` substring, 13.2% of B, 3,047 tokens, 801 types) as the last major uncharacterized token population. Tests: vocabulary stratification (role × ol_position), cross-role consistency, section decomposition, macro-automaton dynamics, boundary architecture. **Key finding: LINK_MORPHOLOGICAL_ARTIFACT.** The `ol` substring is a morphological component recruited differently by each role, not a unified functional layer. CC uses it as standalone operator, AX as prefix, EN within MIDDLE. BIO's 2× excess is SPAN-targeted (EN_SPAN 4.65×). Boundary enrichment is passive (no divergence correlation).
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1170** | **LINK Vocabulary Stratified by Role** (chi2=1493, V=0.404; CC=1 type all MIDDLE; AX=49 types 59% PREFIX; EN=12 types MIDDLE/SPAN/SUFFIX; UN=735 types TTR=0.629) | 2 | B, LINK, vocabulary, role | -> [C1170_link_vocabulary_stratified_by_role.md](C1170_link_vocabulary_stratified_by_role.md) |
+| **1171** | **LINK Behavior Is Role-Dominant** (4/4 roles sig different MW p<0.05; cross-role JSD LINK=0.014 ≈ non-LINK=0.013; no unified substrate) | 2 | B, LINK, cross-role, position | -> [C1171_link_behavior_role_dominant.md](C1171_link_behavior_role_dominant.md) |
+| **1172** | **BIO LINK Excess Is SPAN-Targeted** (BIO 20.2%; EN_SPAN 4.65×, AX_SPAN 2.15×, UN_SPAN 1.88×; MIDDLE depleted 0.47×; section×role chi2=82.2 p<1e-9) | 2 | B, BIO, LINK, section | -> [C1172_bio_link_excess_span_targeted.md](C1172_bio_link_excess_span_targeted.md) |
+| **1173** | **LINK Boundary Enrichment Is Passive** (entry 17.2% interior 12.4% exit 15.3% chi2=54.5; entry rho=-0.059 p=0.074; exit rho=-0.151 p=0.108; dynamics 1.09× boundary) | 2 | B, LINK, boundary, dynamics | -> [C1173_link_boundary_enrichment_passive.md](C1173_link_boundary_enrichment_passive.md) |
+| **1174** | **LINK Is Morphological Artifact** (synthesis: STRATIFIED + ROLE_DOMINANT + PASSIVE → `ol` is morphological component not functional layer; revises C366/C609 interpretation) | 2 | B, LINK, synthesis | -> [C1174_link_is_morphological_artifact.md](C1174_link_is_morphological_artifact.md) |
+
+**Phase 418 findings (LINK Functional Architecture):**
+- Test 1: STRATIFIED -- V=0.404, CC=standalone `ol`, AX=59% PREFIX, 69% hapax
+- Test 2: ROLE_DOMINANT -- 0/4 consistent, cross-role JSD≈baseline
+- Test 3: BIO_TARGETED_ENRICHMENT -- EN_SPAN 4.65×, MIDDLE depleted in BIO
+- Test 4: LINK_PASSIVE_PARTICIPANT -- 1.09× boundary, CC-dominated occupancy
+- Test 5: BOUNDARY_ENRICHED_PASSIVE -- no divergence correlation
+- Overall: LINK_MORPHOLOGICAL_ARTIFACT
 
 ---
 

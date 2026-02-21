@@ -4,6 +4,25 @@
 
 ---
 
+## Version 4.18.28 (2026-02-20) - Phase 418: LINK Functional Architecture
+
+### Summary
+
+Phase 418: 5-test battery characterizing LINK (`ol` substring, 13.2% of B, 3,047 tokens, 801 types) — the last major uncharacterized token population. 5 new constraints (C1170-C1174). **Result: LINK_MORPHOLOGICAL_ARTIFACT.** Vocabulary strongly stratified by role (chi2=1493, V=0.404, C1170). Behavior is role-dominant: 4/4 roles show significant LINK/non-LINK divergence, cross-role JSD comparable to baseline (C1171). BIO's 2× density excess is SPAN-targeted: EN_SPAN 4.65×, AX_SPAN 2.15×, MIDDLE depleted (C1172). Macro-automaton dynamics show passive participation (1.09× boundary enrichment, CC-dominated). Boundary enrichment does not correlate with divergence measures (entry rho=-0.059, exit rho=-0.151, both NS, C1173). **The `ol` substring is a morphological component recruited differently by each grammatical role, not a unified functional layer (C1174).**
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/LINK_FUNCTIONAL_ARCHITECTURE/` -- script + results (5-test battery) |
+| **ADDED** | C1170-C1174 constraint files (5 new constraints, 1014→1019) |
+| **UPDATED** | `currierB.bcsc.yaml` -- link_functional_architecture block, revised link_operator interpretation |
+| **UPDATED** | `CLAUDE.md` -- 1014→1019 constraints, 417→418 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 1014→1019 constraints, v3.87→v3.88 |
+| **UPDATED** | `INDEX.md` -- 1014→1019 total, Phase 418 section added |
+
+---
+
 ## Version 4.17.27 (2026-02-20) - Phase 417: Residual Freedom Characterization
 
 ### Summary
