@@ -1174,6 +1174,31 @@ design_freedom:
   mechanism: "Recovery variation is mediated by AXM attractor strength — forgiving programs have higher AXM self-transition (rho=0.651), less FQ interchange; brittle programs have weaker attractors. C458's aggregate clamping (hazard CV=0.04-0.11) is the result of stable recovery channels (AXM self≈0.66, CV=0.174), not individual hazard transition stability (hazard CV=1.814). AXM basin depth decomposes into: REGIME+section (42.0%) + PREFIX entropy (5.1%) + hazard density (6.1%) + bridge geometry (6.3%) + non-linear archetype residual (40.1%). Archetype-specific slopes differ suggestively (sign changes observed but not statistically robust at current sample sizes; C1018), consistent with non-linear program-specific tuning"
   provenance: "C458, C1016, C1017, C1018"
 
+  sister_pair_mechanism:
+    # Phase 420: SISTER_PAIR_MECHANISM (C1179-C1187)
+    statement: "Sister-pair choice (ch/sh) is a BOUNDARY_CONTROL_KNOB, not free variation"
+    c639_unexplained: "52.9% -> ~40% after position mediation"
+    position_mediation:
+      delta_r2: 0.128  # LOO confirmed at 0.097
+      ch_mean_pos: 0.487
+      sh_mean_pos: 0.395
+      gap: 0.092
+      note: "Extends C929 (active test vs passive monitor) to variance predictor"
+    dynamical_consequence:
+      axm_self_partial_rho: -0.250  # p=0.032, controlling section
+      hazard_density_partial_rho: 0.255  # p=0.028
+      note: "ch-heavy = higher hazard, lower stability. Parallel axis from C1169, not extension."
+    concentration:
+      icc: 0.317  # Moderate: 32% folio-determined, 68% paragraph-variable
+    bridge_dark_coupling: "INDEPENDENT (all partial rho <0.16)"
+    ok_ot_relationship: "INDEPENDENT AXES (partial rho=0.204, opposite positional polarity)"
+    successor_routing: "MIDDLE_DEPENDENT (5/102 strata, global p=0.034) -- C121 preserved"
+    boundary_coupling:
+      entry_jsd_partial_rho: 0.312  # p=0.004
+      opener_ch_frac_rho: 0.455
+      note: "ch-heavy = more divergent entry dynamics"
+    provenance: "C1179, C1180, C1181, C1182, C1183, C1184, C1185, C1186, C1187"
+
 # ============================================================
 control_loop:
 
@@ -2105,6 +2130,17 @@ provenance:
     - "C603"   # CC folio-level subfamily prediction (OL_D->QO rho=0.355, DAIIN->CHSH rho=0.345)
     - "C604"   # C412 REGIME decomposition (27.6% mediation; vanishes within REGIME_1/2)
     - "C605"   # Two-lane folio-level validation (lane balance rho=-0.506, independent of ch_preference)
+
+  sister_pair_mechanism:
+    - "C1179"  # Sister choice structured in slot (14/174 Bonferroni-significant, chi2=709.8)
+    - "C1180"  # Sister choice positionally mediated (delta-R2=0.128, ch=0.487, sh=0.395)
+    - "C1181"  # Sister choice dynamically consequential (AXM -0.250, hazard +0.255)
+    - "C1182"  # Sister concentration moderate consistency (ICC=0.317)
+    - "C1183"  # Sister bridge/dark independent (all partial <0.16)
+    - "C1184"  # ch/sh and ok/ot independent axes (partial=0.204, opposite position polarity)
+    - "C1185"  # Sister successor routing MIDDLE-dependent (5/102 strata, C121 preserved)
+    - "C1186"  # Sister boundary coupled (entry JSD rho=0.312, opener ch rho=0.455)
+    - "C1187"  # Sister mechanism: BOUNDARY_CONTROL_KNOB (synthesis)
 
   ht_un_reconciliation:
     - "C740"   # HT/UN population identity (identical by definition)

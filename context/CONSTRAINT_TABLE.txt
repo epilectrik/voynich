@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1023 constraints | 2026-02-20
+CONSTRAINT_REFERENCE v2.6 | 1032 constraints | 2026-02-20
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1027,3 +1027,12 @@ C1175	**Dark Compound Pair Space C475-Gated** (recall=1.000 precision=0.134; 71/
 C1176	**Section Hyper-Modulation Atom-Selection-Dominated** (multiplicative model R²=0.781 pseudo-R²=0.677; atoms carry section signal, compounds inherit)	2	B, dark pipeline, section, atoms	-> C1176_section_hyper_modulation_atom_selection_dominated.md
 C1177	**Dark Ordering Consistent with C1065** (4/4 match 0 mismatch; revises C1142 50% from low-count noise; same grammar, sparse coverage)	2	B, dark pipeline, ordering grammar	-> C1177_dark_ordering_consistent_with_c1065.md
 C1178	**Phantom MIDDLEs Morphologically Isolated** (0/15 valid-unfilled; 11 partial 4 invalid; ch/sh-initial MIDDLE is dead naming pattern)	2	B, dark pipeline, phantoms	-> C1178_phantom_middles_morphologically_isolated.md
+C1179	**Sister Choice Structured in Slot** (14/174 Bonferroni-significant MIDDLE+SUFFIX slots; aggregate chi2=709.8 p<0.0001)	2	B, sister pairs, within-class	-> C1179_sister_choice_structured_in_slot.md
+C1180	**Sister Choice Positionally Mediated** (delta-R2=0.128 LOO=0.097; ch=0.487 sh=0.395 gap=0.092; extends C929)	2	B, sister pairs, position	-> C1180_sister_choice_positionally_mediated.md
+C1181	**Sister Choice Dynamically Consequential** (AXM partial rho=-0.250 p=0.032; hazard +0.255 p=0.028; ch-heavy = higher hazard)	2	B, sister pairs, dynamics	-> C1181_sister_choice_dynamically_consequential.md
+C1182	**Sister Concentration Moderate Consistency** (ICC=0.317; 32% folio-determined, 68% paragraph-variable; unimodal)	2	B, sister pairs, program structure	-> C1182_sister_concentration_moderate_consistency.md
+C1183	**Sister Bridge/Dark Independent** (all partial rho <0.16 after section control; vocabulary pipeline orthogonal)	2	B, sister pairs, vocabulary	-> C1183_sister_bridge_dark_independent.md
+C1184	**ch/sh and ok/ot Independent Axes** (partial rho=0.204 p=0.066; OPPOSITE positional asymmetries; two within-class dimensions)	2	B, sister pairs, within-class	-> C1184_ch_sh_ok_ot_independent_axes.md
+C1185	**Sister Successor Routing MIDDLE-Dependent** (global p=0.034; 5/102 strata significant; not universal; C121 preserved)	2	B, sister pairs, transitions	-> C1185_sister_successor_middle_dependent.md
+C1186	**Sister Boundary Coupled** (entry JSD partial rho=0.312 p=0.004; opener ch frac rho=0.455; ch-heavy = divergent entries)	2	B, sister pairs, boundary	-> C1186_sister_boundary_coupled.md
+C1187	**Sister Mechanism: BOUNDARY_CONTROL_KNOB** (synthesis: structured, positional, dynamical, boundary-coupled; reduces C639 unexplained from 52.9% to ~40%)	2	B, sister pairs, synthesis	-> C1187_sister_mechanism_boundary_control_knob.md

@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1023 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 1032 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1023 validated)
+- Tier 0-2 binding constraints (1032 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1023 constraints, 66 fits,
+full content in their source documents. All 1032 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-20 23:11
-**Version:** FROZEN STATE (1023 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-20 23:38
+**Version:** FROZEN STATE (1032 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -113,7 +113,7 @@ and 4 structural contracts are complete.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.89 | **Status:** FROZEN | **Constraints:** 1023 | **Date:** 2026-02-20
+**Version:** 3.90 | **Status:** FROZEN | **Constraints:** 1032 | **Date:** 2026-02-20
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -312,8 +312,8 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 1010 |
-| Completed phases | 415 |
+| Validated constraints | 1032 |
+| Completed phases | 420 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1023 constraints | 2026-02-20
+CONSTRAINT_REFERENCE v2.6 | 1032 constraints | 2026-02-20
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2131,6 +2131,15 @@ C1175	**Dark Compound Pair Space C475-Gated**
 C1176	**Section Hyper-Modulation Atom-Selection-Dominated** (multiplicative model R²=0.781 pseudo-R²=0.677; atoms carry section signal, compounds inherit)
 C1177	**Dark Ordering Consistent with C1065** (4/4 match 0 mismatch; revises C1142 50% from low-count noise; same grammar, sparse coverage)
 C1178	**Phantom MIDDLEs Morphologically Isolated** (0/15 valid-unfilled; 11 partial 4 invalid; ch/sh-initial MIDDLE is dead naming pattern)
+C1179	**Sister Choice Structured in Slot**
+C1180	**Sister Choice Positionally Mediated**
+C1181	**Sister Choice Dynamically Consequential**
+C1182	**Sister Concentration Moderate Consistency** (ICC=0.317; 32% folio-determined, 68% paragraph-variable; unimodal)
+C1183	**Sister Bridge/Dark Independent** (all partial rho <0.16 after section control; vocabulary pipeline orthogonal)
+C1184	**ch/sh and ok/ot Independent Axes**
+C1185	**Sister Successor Routing MIDDLE-Dependent**
+C1186	**Sister Boundary Coupled**
+C1187	**Sister Mechanism: BOUNDARY_CONTROL_KNOB** (synthesis: structured, positional, dynamical, boundary-coupled; reduces C639 unexplained from 52.9% to ~40%)
 
 ---
 
@@ -6246,6 +6255,31 @@ design_freedom:
   principle: "Risk is globally constrained; recovery strategy is locally variable"
   mechanism: "Recovery variation is mediated by AXM attractor strength — forgiving programs have higher AXM self-transition (rho=0.651), less FQ interchange; brittle programs have weaker attractors. C458's aggregate clamping (hazard CV=0.04-0.11) is the result of stable recovery channels (AXM self≈0.66, CV=0.174), not individual hazard transition stability (hazard CV=1.814). AXM basin depth decomposes into: REGIME+section (42.0%) + PREFIX entropy (5.1%) + hazard density (6.1%) + bridge geometry (6.3%) + non-linear archetype residual (40.1%). Archetype-specific slopes differ suggestively (sign changes observed but not statistically robust at current sample sizes; C1018), consistent with non-linear program-specific tuning"
   provenance: "C458, C1016, C1017, C1018"
+
+  sister_pair_mechanism:
+    # Phase 420: SISTER_PAIR_MECHANISM (C1179-C1187)
+    statement: "Sister-pair choice (ch/sh) is a BOUNDARY_CONTROL_KNOB, not free variation"
+    c639_unexplained: "52.9% -> ~40% after position mediation"
+    position_mediation:
+      delta_r2: 0.128  # LOO confirmed at 0.097
+      ch_mean_pos: 0.487
+      sh_mean_pos: 0.395
+      gap: 0.092
+      note: "Extends C929 (active test vs passive monitor) to variance predictor"
+    dynamical_consequence:
+      axm_self_partial_rho: -0.250  # p=0.032, controlling section
+      hazard_density_partial_rho: 0.255  # p=0.028
+      note: "ch-heavy = higher hazard, lower stability. Parallel axis from C1169, not extension."
+    concentration:
+      icc: 0.317  # Moderate: 32% folio-determined, 68% paragraph-variable
+    bridge_dark_coupling: "INDEPENDENT (all partial rho <0.16)"
+    ok_ot_relationship: "INDEPENDENT AXES (partial rho=0.204, opposite positional polarity)"
+    successor_routing: "MIDDLE_DEPENDENT (5/102 strata, global p=0.034) -- C121 preserved"
+    boundary_coupling:
+      entry_jsd_partial_rho: 0.312  # p=0.004
+      opener_ch_frac_rho: 0.455
+      note: "ch-heavy = more divergent entry dynamics"
+    provenance: "C1179, C1180, C1181, C1182, C1183, C1184, C1185, C1186, C1187"
 
 control_loop:
 

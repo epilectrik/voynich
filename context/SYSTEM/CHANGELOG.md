@@ -4,6 +4,24 @@
 
 ---
 
+## Version 4.20.30 (2026-02-20) - Phase 420: Sister-Pair Mechanism
+
+### Summary
+
+Phase 420: 8-test battery investigating whether the 52.9% unexplained variance in sister-pair choice (C639) is genuine free variation or structured by unmeasured predictors. 9 new constraints (C1179-C1187). **Result: BOUNDARY_CONTROL_KNOB.** Sister choice is NOT free variation — it is structured even within identical MIDDLE+SUFFIX slots (14/174 Bonferroni-significant, C1179). Position mediates +12.8% variance (ch=0.487, sh=0.395, LOO confirmed, C1180). ch-heavy folios have lower AXM self-transition (partial rho=-0.250) and higher hazard density (+0.255), making sister choice dynamically consequential (C1181). Folio-level consistency is moderate (ICC=0.317, C1182). Sister choice is independent of vocabulary pipeline (C1183). ch/sh and ok/ot are largely independent axes with OPPOSITE positional asymmetries (C1184). Successor routing is MIDDLE-dependent, not universal — 5/102 strata significant, preserving C121 (C1185). Entry divergence is the key coupling: partial rho=0.312, p=0.004, and opener ch fraction strongly predicts folio ch_pref at rho=0.455 (C1186). **Overall: sister preference is a within-class control parameter that modulates entry boundary dynamics and hazard exposure, reducing C639's unexplained variance from 52.9% to ~40% (C1187).**
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/SISTER_PAIR_MECHANISM/` -- script + results (8-test battery) |
+| **ADDED** | C1179-C1187 constraint files (9 new constraints, 1023->1032) |
+| **UPDATED** | `CLAUDE.md` -- 1023->1032 constraints, 419->420 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 1023->1032 constraints, v3.89->v3.90 |
+| **UPDATED** | `INDEX.md` -- 1023->1032 total, Phase 420 section added |
+
+---
+
 ## Version 4.19.29 (2026-02-20) - Phase 419: Dark Pipeline Combinatorics
 
 ### Summary

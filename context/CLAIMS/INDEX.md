@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1023 validated constraints | **Version:** 4.19 | **Date:** 2026-02-20
+**Total:** 1032 validated constraints | **Version:** 4.20 | **Date:** 2026-02-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3198,6 +3198,33 @@ Tests whether the ~27% AXM residual from the dual boundary model (C1168, R²=0.8
 - Test 4: CONSISTENT_GRAMMAR -- 4/4 C1065 match, 100% agreement
 - Test 5: MIXED_VALIDITY -- 0 valid, 11 partial, 4 invalid
 - Overall: MULTI_MECHANISM_COMBINATORICS
+
+### Sister-Pair Mechanism (C1179-C1187) -- Phase: SISTER_PAIR_MECHANISM (Phase 420)
+
+Sister-pair choice (ch vs sh, C639 52.9% unexplained) is a boundary control knob, not free variation. Position mediates +12.8% variance, dynamics correlate (AXM -0.250, hazard +0.255), entry divergence coupled (rho=0.312). 8-test battery.
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1179** | **Sister Choice Structured in Slot** (14/174 Bonferroni-significant MIDDLE+SUFFIX slots; aggregate chi2=709.8 p<0.0001) | 2 | B, sister pairs, within-class | -> [C1179_sister_choice_structured_in_slot.md](C1179_sister_choice_structured_in_slot.md) |
+| **1180** | **Sister Choice Positionally Mediated** (delta-R2=0.128 LOO=0.097; ch=0.487 sh=0.395 gap=0.092; extends C929) | 2 | B, sister pairs, position | -> [C1180_sister_choice_positionally_mediated.md](C1180_sister_choice_positionally_mediated.md) |
+| **1181** | **Sister Choice Dynamically Consequential** (AXM partial rho=-0.250 p=0.032; hazard +0.255 p=0.028; ch-heavy = higher hazard) | 2 | B, sister pairs, dynamics | -> [C1181_sister_choice_dynamically_consequential.md](C1181_sister_choice_dynamically_consequential.md) |
+| **1182** | **Sister Concentration Moderate Consistency** (ICC=0.317; 32% folio-determined, 68% paragraph-variable; unimodal) | 2 | B, sister pairs, program structure | -> [C1182_sister_concentration_moderate_consistency.md](C1182_sister_concentration_moderate_consistency.md) |
+| **1183** | **Sister Bridge/Dark Independent** (all partial rho <0.16 after section control; vocabulary pipeline orthogonal) | 2 | B, sister pairs, vocabulary | -> [C1183_sister_bridge_dark_independent.md](C1183_sister_bridge_dark_independent.md) |
+| **1184** | **ch/sh and ok/ot Independent Axes** (partial rho=0.204 p=0.066; OPPOSITE positional asymmetries; two within-class dimensions) | 2 | B, sister pairs, within-class | -> [C1184_ch_sh_ok_ot_independent_axes.md](C1184_ch_sh_ok_ot_independent_axes.md) |
+| **1185** | **Sister Successor Routing MIDDLE-Dependent** (global p=0.034; 5/102 strata significant; not universal; C121 preserved) | 2 | B, sister pairs, transitions | -> [C1185_sister_successor_middle_dependent.md](C1185_sister_successor_middle_dependent.md) |
+| **1186** | **Sister Boundary Coupled** (entry JSD partial rho=0.312 p=0.004; opener ch frac rho=0.455; ch-heavy = divergent entries) | 2 | B, sister pairs, boundary | -> [C1186_sister_boundary_coupled.md](C1186_sister_boundary_coupled.md) |
+| **1187** | **Sister Mechanism: BOUNDARY_CONTROL_KNOB** (synthesis: structured, positional, dynamical, boundary-coupled; reduces C639 unexplained from 52.9% to ~40%) | 2 | B, sister pairs, synthesis | -> [C1187_sister_mechanism_boundary_control_knob.md](C1187_sister_mechanism_boundary_control_knob.md) |
+
+**Phase 420 findings (Sister-Pair Mechanism):**
+- SP-0: STRUCTURED_IN_SLOT -- 14/174 slots significant, chi2=709.8
+- SP-1: POSITIONAL_MEDIATION -- delta-R2=0.128, LOO confirmed
+- SP-2: DYNAMICALLY_CONSEQUENTIAL -- AXM -0.250, hazard +0.255
+- SP-3: MODERATE_CONSISTENCY -- ICC=0.317
+- SP-4: BRIDGE_WEAK -- independent of pipeline
+- SP-5: WEAK_COUPLING -- ch/sh and ok/ot independent
+- SP-6: MIDDLE_DEPENDENT -- 5/102 strata, global p=0.034
+- SP-7: BOUNDARY_COUPLED -- entry JSD rho=0.312
+- Overall: BOUNDARY_CONTROL_KNOB
 
 ---
 
