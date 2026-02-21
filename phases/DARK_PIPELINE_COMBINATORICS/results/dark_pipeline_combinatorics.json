@@ -1,0 +1,725 @@
+{
+  "phase": "DARK_PIPELINE_COMBINATORICS",
+  "phase_number": 419,
+  "depends_on": [
+    "C1137",
+    "C1140",
+    "C1141",
+    "C1142",
+    "C1144",
+    "C1146",
+    "C1148",
+    "C1065",
+    "C475",
+    "C1028"
+  ],
+  "population": {
+    "n_dark_middles": 300,
+    "n_compound": 200,
+    "n_bridge_atoms": 43
+  },
+  "test1_atom_cooccurrence_acceptance": {
+    "n_atoms": 43,
+    "n_total_pairs": 903,
+    "n_observed_pairs": 71,
+    "occupancy_rate": 0.0786,
+    "c475_gate": {
+      "tested": 56,
+      "compatible": 56,
+      "recall": 1.0,
+      "total_compatible_space": 528,
+      "precision": 0.1345
+    },
+    "c1061_gate": {
+      "n_enriched": 10,
+      "overlap": 8,
+      "recall": 0.8,
+      "precision": 0.1127
+    },
+    "c1065_gate": {
+      "n_asymmetric": 20,
+      "overlap": 14,
+      "recall": 0.7,
+      "precision": 0.1972
+    },
+    "bridge_pair_fraction": 0.7887,
+    "top_pairs": [
+      {
+        "pair": [
+          "ek",
+          "ke"
+        ],
+        "count": 4
+      },
+      {
+        "pair": [
+          "cth",
+          "eo"
+        ],
+        "count": 3
+      },
+      {
+        "pair": [
+          "eo",
+          "ot"
+        ],
+        "count": 3
+      },
+      {
+        "pair": [
+          "ke",
+          "ok"
+        ],
+        "count": 3
+      },
+      {
+        "pair": [
+          "eo",
+          "ke"
+        ],
+        "count": 3
+      },
+      {
+        "pair": [
+          "ckh",
+          "eo"
+        ],
+        "count": 2
+      },
+      {
+        "pair": [
+          "eo",
+          "tch"
+        ],
+        "count": 2
+      },
+      {
+        "pair": [
+          "ot",
+          "te"
+        ],
+        "count": 2
+      },
+      {
+        "pair": [
+          "ke",
+          "olk"
+        ],
+        "count": 2
+      },
+      {
+        "pair": [
+          "kch",
+          "ok"
+        ],
+        "count": 2
+      },
+      {
+        "pair": [
+          "ot",
+          "tch"
+        ],
+        "count": 2
+      },
+      {
+        "pair": [
+          "al",
+          "lo"
+        ],
+        "count": 2
+      },
+      {
+        "pair": [
+          "al",
+          "ka"
+        ],
+        "count": 2
+      },
+      {
+        "pair": [
+          "cph",
+          "eo"
+        ],
+        "count": 2
+      },
+      {
+        "pair": [
+          "cth",
+          "ect"
+        ],
+        "count": 2
+      }
+    ],
+    "verdict": "WEAKLY_GATED"
+  },
+  "test2_section_hyper_modulation": {
+    "n_qualifying_compounds": 20,
+    "n_atoms_profiled": 31,
+    "min_atom_tokens": 10,
+    "r_squared": 0.7808,
+    "mean_js_obs_pred": 0.0986,
+    "mean_js_obs_uniform": 0.3049,
+    "pseudo_r2": 0.6767,
+    "sections": [
+      "B",
+      "C",
+      "H",
+      "S",
+      "T"
+    ],
+    "atom_profiles_sample": [
+      {
+        "atom": "ee",
+        "tokens": 195,
+        "profile": {
+          "B": 0.1487,
+          "C": 0.0564,
+          "H": 0.0821,
+          "S": 0.6923,
+          "T": 0.0205
+        },
+        "herfindahl": 0.5117
+      },
+      {
+        "atom": "eo",
+        "tokens": 113,
+        "profile": {
+          "B": 0.0354,
+          "C": 0.0442,
+          "H": 0.177,
+          "S": 0.6991,
+          "T": 0.0442
+        },
+        "herfindahl": 0.5253
+      },
+      {
+        "atom": "ed",
+        "tokens": 95,
+        "profile": {
+          "B": 0.0947,
+          "C": 0.0632,
+          "H": 0.0737,
+          "S": 0.7579,
+          "T": 0.0105
+        },
+        "herfindahl": 0.5929
+      },
+      {
+        "atom": "ai",
+        "tokens": 84,
+        "profile": {
+          "B": 0.0833,
+          "C": 0.0714,
+          "H": 0.1429,
+          "S": 0.6071,
+          "T": 0.0952
+        },
+        "herfindahl": 0.4101
+      },
+      {
+        "atom": "ke",
+        "tokens": 76,
+        "profile": {
+          "B": 0.1316,
+          "C": 0.0263,
+          "H": 0.1447,
+          "S": 0.6711,
+          "T": 0.0263
+        },
+        "herfindahl": 0.49
+      },
+      {
+        "atom": "ckh",
+        "tokens": 62,
+        "profile": {
+          "B": 0.3065,
+          "C": 0.0484,
+          "H": 0.1613,
+          "S": 0.4839,
+          "T": 0.0
+        },
+        "herfindahl": 0.3564
+      },
+      {
+        "atom": "ol",
+        "tokens": 62,
+        "profile": {
+          "B": 0.2097,
+          "C": 0.0806,
+          "H": 0.1935,
+          "S": 0.5,
+          "T": 0.0161
+        },
+        "herfindahl": 0.3382
+      },
+      {
+        "atom": "ok",
+        "tokens": 61,
+        "profile": {
+          "B": 0.1148,
+          "C": 0.0656,
+          "H": 0.1148,
+          "S": 0.6557,
+          "T": 0.0492
+        },
+        "herfindahl": 0.463
+      },
+      {
+        "atom": "ct",
+        "tokens": 54,
+        "profile": {
+          "B": 0.2407,
+          "C": 0.0741,
+          "H": 0.2037,
+          "S": 0.3889,
+          "T": 0.0926
+        },
+        "herfindahl": 0.2647
+      },
+      {
+        "atom": "od",
+        "tokens": 43,
+        "profile": {
+          "B": 0.0465,
+          "C": 0.1163,
+          "H": 0.2326,
+          "S": 0.5349,
+          "T": 0.0698
+        },
+        "herfindahl": 0.3607
+      }
+    ],
+    "verdict": "ATOM_SELECTION_DOMINATED"
+  },
+  "test3_dark_bridge_tradeoff": {
+    "n_folios": 82,
+    "r_total": -0.1321,
+    "p_total": 0.2334,
+    "r_diversity": -0.0351,
+    "p_diversity": 0.7534,
+    "r_intensity": -0.2148,
+    "p_intensity": 0.0492,
+    "decomposition_ratio": 0.1635,
+    "c1146_reference": -0.865,
+    "within_section": {
+      "B": {
+        "n": 20,
+        "r_total": -0.2767,
+        "r_diversity": -0.0666,
+        "r_intensity": 0.0791
+      },
+      "C": {
+        "n": 5,
+        "r_total": -0.5,
+        "r_diversity": 0.0,
+        "r_intensity": -0.9
+      },
+      "H": {
+        "n": 32,
+        "r_total": -0.5469,
+        "r_diversity": -0.5734,
+        "r_intensity": -0.0743
+      },
+      "S": {
+        "n": 23,
+        "r_total": -0.3998,
+        "r_diversity": -0.153,
+        "r_intensity": -0.3659
+      }
+    },
+    "verdict": "AMBIGUOUS"
+  },
+  "test4_modified_ordering_grammar": {
+    "n_compounds_analyzed": 77,
+    "n_bigram_types": 71,
+    "n_bigram_tokens": 97,
+    "n_dark_asymmetric": 4,
+    "dark_asymmetric_pairs": [
+      {
+        "dominant": "ek",
+        "subordinate": "ke",
+        "fwd": 4,
+        "rev": 0,
+        "total": 4,
+        "rate": 1.0
+      },
+      {
+        "dominant": "ke",
+        "subordinate": "eo",
+        "fwd": 3,
+        "rev": 0,
+        "total": 3,
+        "rate": 1.0
+      },
+      {
+        "dominant": "eo",
+        "subordinate": "ot",
+        "fwd": 3,
+        "rev": 0,
+        "total": 3,
+        "rate": 1.0
+      },
+      {
+        "dominant": "ok",
+        "subordinate": "ke",
+        "fwd": 3,
+        "rev": 0,
+        "total": 3,
+        "rate": 1.0
+      }
+    ],
+    "internal_consistency": {
+      "transitive_triples": 0,
+      "violations": 0,
+      "total_tested": 0,
+      "consistency_rate": 1.0
+    },
+    "c1065_comparison": {
+      "matches": 4,
+      "mismatches": 0,
+      "not_found": 16,
+      "testable": 4,
+      "agreement_rate": 1.0,
+      "details": [
+        {
+          "c1065_dominant": "al",
+          "c1065_subordinate": "lo",
+          "dark_total": 2,
+          "status": "BELOW_THRESHOLD"
+        },
+        {
+          "c1065_dominant": "ed",
+          "c1065_subordinate": "ai",
+          "status": "NOT_FOUND"
+        },
+        {
+          "c1065_dominant": "ek",
+          "c1065_subordinate": "ke",
+          "dark_dominant": "ek",
+          "dark_subordinate": "ke",
+          "status": "MATCH"
+        },
+        {
+          "c1065_dominant": "ka",
+          "c1065_subordinate": "ai",
+          "dark_total": 1,
+          "status": "BELOW_THRESHOLD"
+        },
+        {
+          "c1065_dominant": "op",
+          "c1065_subordinate": "al",
+          "status": "NOT_FOUND"
+        },
+        {
+          "c1065_dominant": "al",
+          "c1065_subordinate": "lch",
+          "dark_total": 2,
+          "status": "BELOW_THRESHOLD"
+        },
+        {
+          "c1065_dominant": "te",
+          "c1065_subordinate": "ed",
+          "status": "NOT_FOUND"
+        },
+        {
+          "c1065_dominant": "te",
+          "c1065_subordinate": "eeo",
+          "dark_total": 1,
+          "status": "BELOW_THRESHOLD"
+        },
+        {
+          "c1065_dominant": "ee",
+          "c1065_subordinate": "et",
+          "dark_total": 1,
+          "status": "BELOW_THRESHOLD"
+        },
+        {
+          "c1065_dominant": "eol",
+          "c1065_subordinate": "olk",
+          "dark_total": 1,
+          "status": "BELOW_THRESHOLD"
+        },
+        {
+          "c1065_dominant": "ke",
+          "c1065_subordinate": "ech",
+          "status": "NOT_FOUND"
+        },
+        {
+          "c1065_dominant": "ok",
+          "c1065_subordinate": "ke",
+          "dark_dominant": "ok",
+          "dark_subordinate": "ke",
+          "status": "MATCH"
+        },
+        {
+          "c1065_dominant": "eeo",
+          "c1065_subordinate": "eod",
+          "dark_total": 1,
+          "status": "BELOW_THRESHOLD"
+        },
+        {
+          "c1065_dominant": "ke",
+          "c1065_subordinate": "eo",
+          "dark_dominant": "ke",
+          "dark_subordinate": "eo",
+          "status": "MATCH"
+        },
+        {
+          "c1065_dominant": "op",
+          "c1065_subordinate": "ai",
+          "status": "NOT_FOUND"
+        },
+        {
+          "c1065_dominant": "ol",
+          "c1065_subordinate": "lch",
+          "dark_total": 1,
+          "status": "BELOW_THRESHOLD"
+        },
+        {
+          "c1065_dominant": "eck",
+          "c1065_subordinate": "ckh",
+          "dark_total": 1,
+          "status": "BELOW_THRESHOLD"
+        },
+        {
+          "c1065_dominant": "eo",
+          "c1065_subordinate": "ot",
+          "dark_dominant": "eo",
+          "dark_subordinate": "ot",
+          "status": "MATCH"
+        },
+        {
+          "c1065_dominant": "al",
+          "c1065_subordinate": "lk",
+          "status": "NOT_FOUND"
+        },
+        {
+          "c1065_dominant": "ka",
+          "c1065_subordinate": "al",
+          "dark_total": 2,
+          "status": "BELOW_THRESHOLD"
+        }
+      ]
+    },
+    "dark_exclusive_rules": [],
+    "verdict": "CONSISTENT_GRAMMAR"
+  },
+  "test5_phantom_middle_analysis": {
+    "n_phantoms": 15,
+    "phantom_classifications": {
+      "cha": {
+        "is_compound": false,
+        "atoms": [],
+        "char_length": 3,
+        "prefix": "ch",
+        "tests_passed": 0,
+        "tests_failed": 1,
+        "tests_untestable": 2,
+        "analogous_count": 0,
+        "c475_component": null,
+        "classification": "STRUCTURALLY_INVALID"
+      },
+      "chd": {
+        "is_compound": false,
+        "atoms": [],
+        "char_length": 3,
+        "prefix": "ch",
+        "tests_passed": 1,
+        "tests_failed": 1,
+        "tests_untestable": 1,
+        "analogous_count": 0,
+        "c475_component": 0,
+        "classification": "PARTIALLY_VALID"
+      },
+      "che": {
+        "is_compound": false,
+        "atoms": [],
+        "char_length": 3,
+        "prefix": "ch",
+        "tests_passed": 1,
+        "tests_failed": 1,
+        "tests_untestable": 1,
+        "analogous_count": 0,
+        "c475_component": 0,
+        "classification": "PARTIALLY_VALID"
+      },
+      "chee": {
+        "is_compound": true,
+        "atoms": [
+          "ee"
+        ],
+        "char_length": 4,
+        "prefix": "ch",
+        "tests_passed": 2,
+        "tests_failed": 1,
+        "tests_untestable": 0,
+        "analogous_count": 0,
+        "c475_component": 0,
+        "classification": "PARTIALLY_VALID"
+      },
+      "cheo": {
+        "is_compound": true,
+        "atoms": [
+          "eo"
+        ],
+        "char_length": 4,
+        "prefix": "ch",
+        "tests_passed": 2,
+        "tests_failed": 1,
+        "tests_untestable": 0,
+        "analogous_count": 0,
+        "c475_component": 0,
+        "classification": "PARTIALLY_VALID"
+      },
+      "cheod": {
+        "is_compound": true,
+        "atoms": [
+          "eod"
+        ],
+        "char_length": 5,
+        "prefix": "ch",
+        "tests_passed": 1,
+        "tests_failed": 1,
+        "tests_untestable": 1,
+        "analogous_count": 0,
+        "c475_component": null,
+        "classification": "PARTIALLY_VALID"
+      },
+      "ches": {
+        "is_compound": false,
+        "atoms": [],
+        "char_length": 4,
+        "prefix": "ch",
+        "tests_passed": 1,
+        "tests_failed": 1,
+        "tests_untestable": 1,
+        "analogous_count": 0,
+        "c475_component": 0,
+        "classification": "PARTIALLY_VALID"
+      },
+      "chk": {
+        "is_compound": false,
+        "atoms": [],
+        "char_length": 3,
+        "prefix": "ch",
+        "tests_passed": 0,
+        "tests_failed": 1,
+        "tests_untestable": 2,
+        "analogous_count": 0,
+        "c475_component": null,
+        "classification": "STRUCTURALLY_INVALID"
+      },
+      "chod": {
+        "is_compound": true,
+        "atoms": [
+          "od"
+        ],
+        "char_length": 4,
+        "prefix": "ch",
+        "tests_passed": 2,
+        "tests_failed": 1,
+        "tests_untestable": 0,
+        "analogous_count": 0,
+        "c475_component": 0,
+        "classification": "PARTIALLY_VALID"
+      },
+      "chot": {
+        "is_compound": true,
+        "atoms": [
+          "ot"
+        ],
+        "char_length": 4,
+        "prefix": "ch",
+        "tests_passed": 1,
+        "tests_failed": 1,
+        "tests_untestable": 1,
+        "analogous_count": 0,
+        "c475_component": null,
+        "classification": "PARTIALLY_VALID"
+      },
+      "chs": {
+        "is_compound": false,
+        "atoms": [],
+        "char_length": 3,
+        "prefix": "ch",
+        "tests_passed": 1,
+        "tests_failed": 1,
+        "tests_untestable": 1,
+        "analogous_count": 0,
+        "c475_component": 0,
+        "classification": "PARTIALLY_VALID"
+      },
+      "shch": {
+        "is_compound": false,
+        "atoms": [],
+        "char_length": 4,
+        "prefix": "sh",
+        "tests_passed": 0,
+        "tests_failed": 1,
+        "tests_untestable": 2,
+        "analogous_count": 0,
+        "c475_component": null,
+        "classification": "STRUCTURALLY_INVALID"
+      },
+      "she": {
+        "is_compound": false,
+        "atoms": [],
+        "char_length": 3,
+        "prefix": "sh",
+        "tests_passed": 0,
+        "tests_failed": 1,
+        "tests_untestable": 2,
+        "analogous_count": 0,
+        "c475_component": null,
+        "classification": "STRUCTURALLY_INVALID"
+      },
+      "sheo": {
+        "is_compound": true,
+        "atoms": [
+          "eo"
+        ],
+        "char_length": 4,
+        "prefix": "sh",
+        "tests_passed": 2,
+        "tests_failed": 1,
+        "tests_untestable": 0,
+        "analogous_count": 0,
+        "c475_component": 0,
+        "classification": "PARTIALLY_VALID"
+      },
+      "sho": {
+        "is_compound": false,
+        "atoms": [],
+        "char_length": 3,
+        "prefix": "sh",
+        "tests_passed": 1,
+        "tests_failed": 1,
+        "tests_untestable": 1,
+        "analogous_count": 0,
+        "c475_component": 0,
+        "classification": "PARTIALLY_VALID"
+      }
+    },
+    "classification_summary": {
+      "VALID_UNFILLED": 0,
+      "STRUCTURALLY_INVALID": 4,
+      "PARTIALLY_VALID": 11,
+      "UNTESTABLE": 0
+    },
+    "valid_fraction": 0.0,
+    "ch_prefix_count": 11,
+    "sh_prefix_count": 4,
+    "compound_count": 6,
+    "verdict": "MIXED_VALIDITY"
+  },
+  "synthesis": {
+    "verdicts": {
+      "t1": "WEAKLY_GATED",
+      "t2": "ATOM_SELECTION_DOMINATED",
+      "t3": "AMBIGUOUS",
+      "t4": "CONSISTENT_GRAMMAR",
+      "t5": "MIXED_VALIDITY"
+    },
+    "overall": "MULTI_MECHANISM_COMBINATORICS"
+  }
+}

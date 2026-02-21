@@ -4,6 +4,25 @@
 
 ---
 
+## Version 4.19.29 (2026-02-20) - Phase 419: Dark Pipeline Combinatorics
+
+### Summary
+
+Phase 419: 5-test battery investigating combinatorial rules governing dark-pipeline compound MIDDLEs (300 MIDDLEs, 200 compound, 50 atoms). 4 new constraints (C1175-C1178). **Key findings:** C475 compatibility is a necessary gate for atom co-occurrence (100% recall) but only 7.9% of 903 possible pairs are occupied -- paralleling C1028's sparse vocabulary curation (C1175). **Section hyper-modulation (3.9x) is atom-selection-dominated:** multiplicative atom model achieves R-squared=0.781, pseudo-R-squared=0.677 -- atoms carry section signal, compounds inherit multiplicatively (C1176). Dark pipeline ordering grammar is consistent with C1065 (4/4 testable pairs match, 0 mismatches, revising C1142's 50% which arose from low-count noise, C1177). Phantom MIDDLEs (15 B-absent ch/sh-initial forms) are morphologically isolated with no productive analogs in dark pipeline (C1178).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/DARK_PIPELINE_COMBINATORICS/` -- script + results (5-test battery) |
+| **ADDED** | C1175-C1178 constraint files (4 new constraints, 1019->1023) |
+| **UPDATED** | `currierB.bcsc.yaml` -- dark_pipeline_combinatorics block |
+| **UPDATED** | `CLAUDE.md` -- 1019->1023 constraints, 418->419 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 1019->1023 constraints, v3.88->v3.89 |
+| **UPDATED** | `INDEX.md` -- 1019->1023 total, Phase 419 section added |
+
+---
+
 ## Version 4.18.28 (2026-02-20) - Phase 418: LINK Functional Architecture
 
 ### Summary

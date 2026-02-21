@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1019 validated constraints | **Version:** 4.18 | **Date:** 2026-02-20
+**Total:** 1023 validated constraints | **Version:** 4.19 | **Date:** 2026-02-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3179,6 +3179,25 @@ Tests whether the ~27% AXM residual from the dual boundary model (C1168, R²=0.8
 - Test 4: LINK_PASSIVE_PARTICIPANT -- 1.09× boundary, CC-dominated occupancy
 - Test 5: BOUNDARY_ENRICHED_PASSIVE -- no divergence correlation
 - Overall: LINK_MORPHOLOGICAL_ARTIFACT
+
+### Dark Pipeline Combinatorics (C1175-C1178) -- Phase: DARK_PIPELINE_COMBINATORICS (Phase 419)
+
+5-test battery investigating combinatorial rules governing dark-pipeline compound MIDDLEs (300 MIDDLEs, 200 compound, 50 atoms). **Key findings:** C475 is a necessary gate (100% recall) but only 7.9% of pair space occupied (C1175). Section hyper-modulation (3.9x) is atom-selection-dominated: multiplicative atom model R²=0.781 (C1176). Dark ordering grammar is consistent with C1065 (4/4 match, revises C1142's 50% from low-count noise, C1177). Phantom MIDDLEs are morphologically isolated ch/sh naming slots with no productive analogs in dark pipeline (C1178).
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1175** | **Dark Compound Pair Space C475-Gated** (recall=1.000 precision=0.134; 71/903 pairs occupied 7.9%; parallels C1028 curation) | 2 | B, dark pipeline, combinatorics | -> [C1175_dark_compound_pair_space_c475_gated.md](C1175_dark_compound_pair_space_c475_gated.md) |
+| **1176** | **Section Hyper-Modulation Atom-Selection-Dominated** (multiplicative model R²=0.781 pseudo-R²=0.677; atoms carry section signal, compounds inherit) | 2 | B, dark pipeline, section, atoms | -> [C1176_section_hyper_modulation_atom_selection_dominated.md](C1176_section_hyper_modulation_atom_selection_dominated.md) |
+| **1177** | **Dark Ordering Consistent with C1065** (4/4 match 0 mismatch; revises C1142 50% from low-count noise; same grammar, sparse coverage) | 2 | B, dark pipeline, ordering grammar | -> [C1177_dark_ordering_consistent_with_c1065.md](C1177_dark_ordering_consistent_with_c1065.md) |
+| **1178** | **Phantom MIDDLEs Morphologically Isolated** (0/15 valid-unfilled; 11 partial 4 invalid; ch/sh-initial MIDDLE is dead naming pattern) | 2 | B, dark pipeline, phantoms | -> [C1178_phantom_middles_morphologically_isolated.md](C1178_phantom_middles_morphologically_isolated.md) |
+
+**Phase 419 findings (Dark Pipeline Combinatorics):**
+- Test 1: WEAKLY_GATED -- C475 recall=1.0, precision=0.134, 7.9% occupancy
+- Test 2: ATOM_SELECTION_DOMINATED -- R²=0.781, pseudo-R²=0.677
+- Test 3: AMBIGUOUS -- intensity r=-0.215 > diversity r=-0.035
+- Test 4: CONSISTENT_GRAMMAR -- 4/4 C1065 match, 100% agreement
+- Test 5: MIXED_VALIDITY -- 0 valid, 11 partial, 4 invalid
+- Overall: MULTI_MECHANISM_COMBINATORICS
 
 ---
 

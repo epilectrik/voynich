@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1019 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 1023 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1019 validated)
+- Tier 0-2 binding constraints (1023 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1019 constraints, 66 fits,
+full content in their source documents. All 1023 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-20 22:31
-**Version:** FROZEN STATE (1019 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-20 23:11
+**Version:** FROZEN STATE (1023 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -113,7 +113,7 @@ and 4 structural contracts are complete.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.88 | **Status:** FROZEN | **Constraints:** 1019 | **Date:** 2026-02-20
+**Version:** 3.89 | **Status:** FROZEN | **Constraints:** 1023 | **Date:** 2026-02-20
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1019 constraints | 2026-02-20
+CONSTRAINT_REFERENCE v2.6 | 1023 constraints | 2026-02-20
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2127,6 +2127,10 @@ C1171	**LINK Behavior Is Role-Dominant**
 C1172	**BIO LINK Excess Is SPAN-Targeted**
 C1173	**LINK Boundary Enrichment Is Passive**
 C1174	**LINK Is Morphological Artifact** (synthesis: STRATIFIED + ROLE_DOMINANT + PASSIVE → `ol` is morphological component not functional layer; revises C366/C609 interpretation)
+C1175	**Dark Compound Pair Space C475-Gated**
+C1176	**Section Hyper-Modulation Atom-Selection-Dominated** (multiplicative model R²=0.781 pseudo-R²=0.677; atoms carry section signal, compounds inherit)
+C1177	**Dark Ordering Consistent with C1065** (4/4 match 0 mismatch; revises C1142 50% from low-count noise; same grammar, sparse coverage)
+C1178	**Phantom MIDDLEs Morphologically Isolated** (0/15 valid-unfilled; 11 partial 4 invalid; ch/sh-initial MIDDLE is dead naming pattern)
 
 ---
 
@@ -6660,15 +6664,13 @@ ht_un_integration:
       construction_hierarchy: "bridge atoms → compositional assembly (1-3 atoms) → dark-pipeline compounds → HT/UN identification tokens"
       provenance: "C1141"
     modified_ordering:
-      statement: "Dark pipeline follows modified version of B's atom ordering grammar (C1065)"
-      c1065_agreement: "50% (7 matches, 7 mismatches of 14 testable pairs)"
-      divergence_source: "Genuine grammar modification, NOT atom-pool artifact (Fisher p=0.592, C1144)"
-      gateway_terminal_preserved: true
-      gateway_mean_position: 0.083  # < 0.15 = INITIAL
-      terminal_mean_position: 0.352  # > 0.40 expectation, close
+      statement: "Dark pipeline follows SAME ordering grammar as C1065 (revised from 'modified')"
+      c1065_agreement: "100% (4/4 testable asymmetric pairs at strict threshold; C1142's 50% was low-count noise)"
+      dark_asymmetric_pairs: 4  # ek->ke, ke->eo, eo->ot, ok->ke (all match C1065)
+      internal_consistency: "100% transitive (0 violations)"
       dark_exclusive_atoms: 25  # Atoms not in grammar compounds
       atom_equivalence: "Dark-exclusive and shared atoms have equivalent section profiles (MW p=0.107, C1143) and equivalent positional slots (chi-sq p=0.421, C1145)"
-      provenance: "C1142, C1143, C1144, C1145"
+      provenance: "C1177 (revises C1142, C1144)"
     line_position:
       statement: "Dark-pipeline tokens preferentially occupy line-interior positions"
       dark_middle_rate: "73.2%"
@@ -6682,9 +6684,17 @@ ht_un_integration:
       dark_mean_js: 0.483
       pp_baseline_js: 0.124
       ratio: "3.9x"
-      implication: "Dark pipeline is the primary vehicle for section-level vocabulary modulation"
-      provenance: "C1148"
-    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1149, C1150, C1151, C1152, C1153, C1154, C1155, C1156, C1157, C1158, C1159, C1160, C1161, C1162, C1163, C1164, C1165, C1166, C1167, C1168, C1169"
+      mechanism: "ATOM_SELECTION_DOMINATED — multiplicative atom model R²=0.781 (C1176)"
+      implication: "Atoms carry section signal; compounds inherit multiplicatively. No combination-emergent section effects."
+      provenance: "C1148, C1176"
+    combinatorics:
+      # Phase 419: DARK_PIPELINE_COMBINATORICS (C1175-C1178)
+      pair_space_occupancy: "7.9% (71/903 possible atom pairs)"
+      c475_gate: "100% recall, 13.4% precision — necessary but loose"
+      curation_parallel: "Parallels C1028 (0.9% PREFIX×MIDDLE×SUFFIX occupancy)"
+      phantom_middles: "15 B-absent ch/sh-initial MIDDLEs — morphologically isolated, dead naming pattern (C1178)"
+      provenance: "C1175, C1176, C1177, C1178"
+    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1175, C1176, C1177, C1178"
 
 robustness:
 
