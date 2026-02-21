@@ -1397,6 +1397,17 @@ vocabulary_architecture:
       partial_rho_entry_exit: 0.259  # p=0.025 — correlated but not redundant
       c1035_trajectory: "~57% → ~49% → ~32% → ~27% irreducible"
       provenance: "C1168"
+    residual_freedom_closure:
+      statement: "AXM residual CLOSED at ~27% — genuine per-program design freedom"
+      exhaustive_battery: "5 tests, 23 candidate predictors"
+      univariate_holm_sig: 0  # out of 23
+      rf_cv_r2: -0.141  # permutation p=0.375
+      spatial_lag1_ac: 0.102  # permutation p=0.378
+      regime_kw_p: 0.998  # perfect homogeneity
+      c458_asymmetry: "SYMMETRIC — freedom not preferentially in recovery space"
+      c1035_final_trajectory: "~57% → ~49% → ~32% → ~27% CLOSED"
+      interpretation: "73% structurally determined (dual boundary model), 27% genuine per-program design freedom"
+      provenance: "C1169"
     dark_pipeline_profile:
       compound_rate: "66.7%"
       section_concentration: "Herf 0.716 (strongly section-specific)"
@@ -1567,7 +1578,7 @@ ht_un_integration:
       ratio: "3.9x"
       implication: "Dark pipeline is the primary vehicle for section-level vocabulary modulation"
       provenance: "C1148"
-    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1149, C1150, C1151, C1152, C1153, C1154, C1155, C1156, C1157, C1158, C1159, C1160, C1161, C1162, C1163, C1164, C1165, C1166, C1167, C1168"
+    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1149, C1150, C1151, C1152, C1153, C1154, C1155, C1156, C1157, C1158, C1159, C1160, C1161, C1162, C1163, C1164, C1165, C1166, C1167, C1168, C1169"
 
 # ============================================================
 robustness:
@@ -1967,6 +1978,7 @@ provenance:
     - "C1166"  # Exit JSD redundant after entry control (partial rho=-0.097)
     - "C1167"  # AXM departure rate at exit extends residual (dR²=0.035, LOO +0.049)
     - "C1168"  # Dual boundary architecture (R²=0.852, LOO=0.732, ~27% irreducible)
+    - "C1169"  # AXM residual CLOSED — ~27% genuine design freedom (exhaustive 5-test battery)
 
   execution_syntax:
     - "C547"   # ICC-based role validation

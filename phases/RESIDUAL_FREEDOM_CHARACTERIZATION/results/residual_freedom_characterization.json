@@ -1,0 +1,227 @@
+{
+  "phase": "RESIDUAL_FREEDOM_CHARACTERIZATION",
+  "phase_number": 417,
+  "depends_on": [
+    "C1035",
+    "C1168",
+    "C458",
+    "C980",
+    "C976"
+  ],
+  "n_folios": 65,
+  "current_best_model": {
+    "r2": 0.852292,
+    "loo": 0.732109,
+    "description": "C1035 baseline + entry_div + AXM_return + jsd_exit + AXM_departure"
+  },
+  "n_candidate_predictors": 23,
+  "candidate_predictor_names": [
+    "articulator_rate",
+    "compound_rate",
+    "e_frac",
+    "exit_routing_entropy",
+    "folio_unique_middle_count",
+    "gatekeeper_exit_frac",
+    "gatekeeper_fraction",
+    "h_frac",
+    "hazard_exit_frac",
+    "ht_density_approx",
+    "ht_line1_density",
+    "k_frac",
+    "line_count",
+    "link_density",
+    "mean_word_length",
+    "n_distinct_middles",
+    "n_tokens",
+    "opener_axm_frac",
+    "paragraph_count",
+    "qo_fraction",
+    "role_entropy",
+    "vocab_residual",
+    "vocab_size"
+  ],
+  "test1_univariate_residual_scan": {
+    "n_predictors": 23,
+    "n_folios": 65,
+    "top_10": [
+      {
+        "name": "e_frac",
+        "rho": -0.238636,
+        "p": 0.034528
+      },
+      {
+        "name": "mean_word_length",
+        "rho": 0.235184,
+        "p": 0.036348
+      },
+      {
+        "name": "gatekeeper_exit_frac",
+        "rho": 0.133237,
+        "p": 0.09671
+      },
+      {
+        "name": "h_frac",
+        "rho": -0.1129,
+        "p": 0.101505
+      },
+      {
+        "name": "qo_fraction",
+        "rho": 0.107588,
+        "p": 0.101738
+      },
+      {
+        "name": "articulator_rate",
+        "rho": -0.101548,
+        "p": 0.10142
+      },
+      {
+        "name": "ht_density_approx",
+        "rho": -0.101548,
+        "p": 0.10142
+      },
+      {
+        "name": "link_density",
+        "rho": 0.09493,
+        "p": 0.100319
+      },
+      {
+        "name": "hazard_exit_frac",
+        "rho": 0.094329,
+        "p": 0.100178
+      },
+      {
+        "name": "compound_rate",
+        "rho": 0.081166,
+        "p": 0.095354
+      }
+    ],
+    "n_uncorrected_sig": 10,
+    "n_holm_sig": 0,
+    "holm_significant": [],
+    "verdict": "UNIVARIATE_CLOSED"
+  },
+  "test2_nonlinear_rf": {
+    "n_features": 23,
+    "cv_r2": -0.141479,
+    "cv_std": 0.184333,
+    "cv_per_fold": [
+      0.046978,
+      -0.377182,
+      0.024121,
+      -0.05167,
+      -0.349644
+    ],
+    "permutation_n": 200,
+    "permutation_null_mean": -0.211707,
+    "permutation_null_std": 0.163261,
+    "permutation_p": 0.375,
+    "top_5_importances": [
+      {
+        "name": "gatekeeper_exit_frac",
+        "importance": 0.070164
+      },
+      {
+        "name": "mean_word_length",
+        "importance": 0.067952
+      },
+      {
+        "name": "e_frac",
+        "importance": 0.066426
+      },
+      {
+        "name": "link_density",
+        "importance": 0.063615
+      },
+      {
+        "name": "ht_line1_density",
+        "importance": 0.06091
+      }
+    ],
+    "verdict": "NONLINEAR_CLOSED"
+  },
+  "test3_spatial_autocorrelation": {
+    "n_folios": 65,
+    "lag1_autocorrelation": 0.102267,
+    "lag2_autocorrelation": -0.092399,
+    "permutation_n": 1000,
+    "permutation_p": 0.378,
+    "permutation_null_mean": -0.017858,
+    "permutation_null_std": 0.120583,
+    "runs_test": {
+      "runs": 33,
+      "expected": 33.492308,
+      "z": -0.123122,
+      "p": 0.902011
+    },
+    "verdict": "SPATIALLY_RANDOM"
+  },
+  "test4_design_freedom_profile": {
+    "diagnostics": {
+      "shapiro_wilk": {
+        "W": 0.96257,
+        "p": 0.046729
+      },
+      "abs_resid_vs_fitted": {
+        "rho": -0.189379,
+        "p": 0.064555
+      },
+      "residual_mean": -0.0,
+      "residual_std": 0.04498,
+      "section_variances": {
+        "B": 0.001157,
+        "C": 0.000196,
+        "H": 0.005262,
+        "S": 0.000747,
+        "T": 0.000567
+      }
+    },
+    "c458_asymmetry": {
+      "free_dimensions": {
+        "link_density": {
+          "rho": 0.09493,
+          "p": 0.100319
+        },
+        "gatekeeper_exit_frac": {
+          "rho": 0.133237,
+          "p": 0.09671
+        },
+        "hazard_exit_frac": {
+          "rho": 0.094329,
+          "p": 0.100178
+        }
+      },
+      "clamped_dimensions": {
+        "gatekeeper_fraction": {
+          "rho": -0.036211,
+          "p": 0.053739
+        },
+        "k_frac": {
+          "rho": -0.03088,
+          "p": 0.046567
+        }
+      },
+      "any_free_significant": false,
+      "any_clamped_significant": true
+    },
+    "regime_homogeneity": {
+      "kruskal_wallis_H": 0.039697,
+      "kruskal_wallis_p": 0.997921
+    },
+    "verdict": "SYMMETRIC_FREEDOM"
+  },
+  "test5_exhaustive_extension": {
+    "gated": true,
+    "gate_reason": "T1 UNIVARIATE_CLOSED and T2 NONLINEAR_CLOSED",
+    "verdict": "RESIDUAL_CLOSED"
+  },
+  "synthesis": {
+    "verdicts": {
+      "t1": "UNIVARIATE_CLOSED",
+      "t2": "NONLINEAR_CLOSED",
+      "t3": "SPATIALLY_RANDOM",
+      "t4": "SYMMETRIC_FREEDOM",
+      "t5": "RESIDUAL_CLOSED"
+    },
+    "overall": "RESIDUAL_GENUINELY_FREE"
+  }
+}

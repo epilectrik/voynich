@@ -4,6 +4,25 @@
 
 ---
 
+## Version 4.17.27 (2026-02-20) - Phase 417: Residual Freedom Characterization
+
+### Summary
+
+Phase 417: 5-test exhaustive battery determining whether the ~27% AXM residual from the dual boundary model (C1168) is genuinely irreducible or contains unmeasured structure. 1 new constraint (C1169). **Result: RESIDUAL_GENUINELY_FREE.** 23 candidate predictors tested — zero survive Holm-Bonferroni correction. Random forest CV R²=-0.14 (permutation p=0.375). Residuals are spatially random in manuscript order (lag-1=0.102, p=0.378). No C458 asymmetry, no regime residual structure (KW p=0.998). T5 gated closed. **The AXM residual decomposition program (Phases 412-417) is CLOSED.** ~73% of AXM self-transition variance is structurally determined (dual boundary model); ~27% is genuine per-program design freedom.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/RESIDUAL_FREEDOM_CHARACTERIZATION/` -- script + results (5-test battery) |
+| **ADDED** | C1169 constraint file (1 new constraint, 1013→1014) |
+| **UPDATED** | `currierB.bcsc.yaml` -- residual_freedom_closure block |
+| **UPDATED** | `CLAUDE.md` -- 1013→1014 constraints, 416→417 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 1013→1014 constraints, v3.86→v3.87 |
+| **UPDATED** | `INDEX.md` -- 1013→1014 total, Phase 417 section added |
+
+---
+
 ## Version 4.16.26 (2026-02-20) - Phase 416: Exit Divergence Symmetry
 
 ### Summary

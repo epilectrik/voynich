@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1013 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 1014 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1013 validated)
+- Tier 0-2 binding constraints (1014 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1013 constraints, 66 fits,
+full content in their source documents. All 1014 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-20 21:38
-**Version:** FROZEN STATE (1013 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-20 22:03
+**Version:** FROZEN STATE (1014 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -113,7 +113,7 @@ and 4 structural contracts are complete.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.86 | **Status:** FROZEN | **Constraints:** 1013 | **Date:** 2026-02-20
+**Version:** 3.87 | **Status:** FROZEN | **Constraints:** 1014 | **Date:** 2026-02-20
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1013 constraints | 2026-02-20
+CONSTRAINT_REFERENCE v2.6 | 1014 constraints | 2026-02-20
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2121,6 +2121,7 @@ C1165	**AXM Return Rate Extends Residual Beyond Entry Divergence**
 C1166	**Exit Divergence Redundant After Entry Control**
 C1167	**AXM Departure Rate at Exit Extends Residual**
 C1168	**Dual Boundary Architecture** (entry+exit independent channels; dual R²=0.852 LOO=0.732; exit dR²=0.039 LOO+0.036; all 3 sections benefit; irreducible ~57%→~27%)
+C1169	**AXM Residual Closed — ~27% Is Genuine Design Freedom**
 
 ---
 
@@ -6457,6 +6458,17 @@ vocabulary_architecture:
       partial_rho_entry_exit: 0.259  # p=0.025 — correlated but not redundant
       c1035_trajectory: "~57% → ~49% → ~32% → ~27% irreducible"
       provenance: "C1168"
+    residual_freedom_closure:
+      statement: "AXM residual CLOSED at ~27% — genuine per-program design freedom"
+      exhaustive_battery: "5 tests, 23 candidate predictors"
+      univariate_holm_sig: 0  # out of 23
+      rf_cv_r2: -0.141  # permutation p=0.375
+      spatial_lag1_ac: 0.102  # permutation p=0.378
+      regime_kw_p: 0.998  # perfect homogeneity
+      c458_asymmetry: "SYMMETRIC — freedom not preferentially in recovery space"
+      c1035_final_trajectory: "~57% → ~49% → ~32% → ~27% CLOSED"
+      interpretation: "73% structurally determined (dual boundary model), 27% genuine per-program design freedom"
+      provenance: "C1169"
     dark_pipeline_profile:
       compound_rate: "66.7%"
       section_concentration: "Herf 0.716 (strongly section-specific)"
@@ -6626,7 +6638,7 @@ ht_un_integration:
       ratio: "3.9x"
       implication: "Dark pipeline is the primary vehicle for section-level vocabulary modulation"
       provenance: "C1148"
-    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1149, C1150, C1151, C1152, C1153, C1154, C1155, C1156, C1157, C1158, C1159, C1160, C1161, C1162, C1163, C1164, C1165, C1166, C1167, C1168"
+    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1149, C1150, C1151, C1152, C1153, C1154, C1155, C1156, C1157, C1158, C1159, C1160, C1161, C1162, C1163, C1164, C1165, C1166, C1167, C1168, C1169"
 
 robustness:
 

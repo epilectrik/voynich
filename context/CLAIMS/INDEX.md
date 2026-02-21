@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1013 validated constraints | **Version:** 4.16 | **Date:** 2026-02-20
+**Total:** 1014 validated constraints | **Version:** 4.17 | **Date:** 2026-02-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3143,6 +3143,22 @@ Tests whether exit boundary carries independent signal beyond the entry bundle (
 - Test 4: EXIT_EXTENDS -- AXM departure dR²=0.035, F=11.80, p=0.0012, LOO +0.049
 - Test 5: DUAL_CHANNEL -- dual R²=0.852, LOO=0.732, all sections benefit
 - Overall: EXIT_INDEPENDENT_CHANNEL
+
+### Residual Freedom Characterization (C1169) -- Phase: RESIDUAL_FREEDOM_CHARACTERIZATION (Phase 417)
+
+Tests whether the ~27% AXM residual from the dual boundary model (C1168, R²=0.852, LOO=0.732) is genuinely irreducible or contains unmeasured structure. 5-test exhaustive battery: 23-predictor univariate scan (Holm-Bonferroni), random forest nonlinearity detection (500 trees, 200-permutation test), spatial autocorrelation (manuscript order), design freedom profile (C458 asymmetry, regime homogeneity), gated OLS extension. **Result: RESIDUAL_GENUINELY_FREE.** Zero signal across all tests. AXM residual decomposition program (Phases 412-417) is CLOSED.
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1169** | **AXM Residual Closed — ~27% Is Genuine Design Freedom** (23 candidates: 0 Holm-sig; RF CV R²=-0.14 perm p=0.375; lag-1 AC=0.102 p=0.378; KW regime p=0.998; C458 symmetric; T5 gated closed) | 2 | B, folio, AXM residual, closure | -> [C1169_axm_residual_closed_genuine_design_freedom.md](C1169_axm_residual_closed_genuine_design_freedom.md) |
+
+**Phase 417 findings (Residual Freedom Characterization):**
+- Test 1: UNIVARIATE_CLOSED -- 0/23 survive Holm-Bonferroni; strongest e_frac rho=-0.239
+- Test 2: NONLINEAR_CLOSED -- RF CV R²=-0.141, permutation p=0.375
+- Test 3: SPATIALLY_RANDOM -- lag-1=0.102, perm p=0.378, runs p=0.902
+- Test 4: SYMMETRIC_FREEDOM -- no C458 asymmetry, KW regime p=0.998
+- Test 5: RESIDUAL_CLOSED -- gated (T1+T2 both closed)
+- Overall: RESIDUAL_GENUINELY_FREE
 
 ---
 
