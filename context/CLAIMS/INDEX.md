@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1006 validated constraints | **Version:** 4.14 | **Date:** 2026-02-20
+**Total:** 1013 validated constraints | **Version:** 4.16 | **Date:** 2026-02-20
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3106,6 +3106,43 @@ Decomposes the C1157 boundary divergence finding. 5-test battery: entry/exit dec
 - Test 4: VOCABULARY_INDEPENDENT -- zero coefficient shrinkage
 - Test 5: GATEKEEPER_PARTIAL -- dR² drops 30.5% without gatekeepers
 - Overall: BOUNDARY_DIVERGENCE_PARTIALLY_EXPLAINED
+
+### Entry Reset Mechanism (C1162-C1165) -- Phase: ENTRY_RESET_MECHANISM (Phase 415)
+
+Decomposes C1158's entry dominance finding: what opener properties drive entry divergence variation? 5-test battery: opener role distribution, PREFIX family distribution, opener-follower routing, entry divergence mediation, AXM residual extension. **Key finding:** AXM return rate at entry (rho=0.841 with AXM self-transition) is the single most powerful predictor; extends residual by dR²=0.111 beyond entry divergence, LOO 0.543→0.696.
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1162** | **Opener Role Does Not Predict Entry Divergence** (R²=0.128; no role |rho|≥0.30; role entropy uncorrelated; entry mechanism operates below role-level identity) | 2 | B, line, opener | -> [C1162_opener_role_does_not_predict_entry_divergence.md](C1162_opener_role_does_not_predict_entry_divergence.md) |
+| **1163** | **AXM Return Rate Dominates Entry Mechanism** (rho=0.841 with AXM self; rho=-0.510 with entry div; R²=0.318 on entry div; routing not identity drives entry reset) | 2 | B, line, opener, routing | -> [C1163_axm_return_rate_dominates_entry_mechanism.md](C1163_axm_return_rate_dominates_entry_mechanism.md) |
+| **1164** | **Opener Routing Partially Mediates Entry Divergence** (shrinkage=0.406; entry div retains signal partial rho=-0.293 p=0.013; opener features dR²=0.159 vs entry div dR²=0.068; combined R²=0.815 LOO=0.669) | 2 | B, line, opener, AXM | -> [C1164_opener_routing_partially_mediates_entry_divergence.md](C1164_opener_routing_partially_mediates_entry_divergence.md) |
+| **1165** | **AXM Return Rate Extends Residual Beyond Entry Divergence** (dR²=0.111, F=30.95, p<0.000001, LOO 0.543→0.696; total bundle dR²=0.180 vs C1035; irreducible ~57%→~32%) | 2 | B, folio, AXM residual | -> [C1165_axm_return_rate_extends_residual.md](C1165_axm_return_rate_extends_residual.md) |
+
+**Phase 415 findings (Entry Reset Mechanism):**
+- Test 1: ROLE_WEAK -- opener role R²=0.128 on entry divergence; no significant roles
+- Test 2: PREFIX_WEAK -- prefix entropy rho=-0.493 (significant) but R²=0.292 under threshold
+- Test 3: ROUTING_EXPLAINS -- AXM return rate rho=-0.510, R²=0.318
+- Test 4: OPENER_PARTIAL_MEDIATION -- shrinkage=0.41; entry div retains independent signal
+- Test 5: OPENER_EXTENDS_RESIDUAL -- AXM return rate dR²=0.111, LOO +0.153
+- Overall: MULTI_FACETED_ENTRY_MECHANISM
+
+### Exit Divergence Symmetry (C1166-C1168) -- Phase: EXIT_DIVERGENCE_SYMMETRY (Phase 416)
+
+Tests whether exit boundary carries independent signal beyond the entry bundle (C1035 + entry_div + AXM_return). 5-test battery: exit divergence baseline, closer routing profile, gatekeeper exit mechanism, exit incremental signal, dual boundary architecture. **Key finding:** Exit JSD is redundant after entry control, but AXM departure rate (directional exit routing) carries independent signal (dR²=0.035, LOO +0.049). Dual model: R²=0.852, LOO=0.732, all sections benefit. Irreducible ~57%→~27%.
+
+| # | Statement | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1166** | **Exit Divergence Redundant After Entry Control** (bivariate rho=-0.710 but partial rho=-0.097 p=0.101 after entry bundle; exit JSD collinear with entry JSD rho=0.697) | 2 | B, line, boundary, exit | -> [C1166_exit_divergence_redundant_after_entry_control.md](C1166_exit_divergence_redundant_after_entry_control.md) |
+| **1167** | **AXM Departure Rate at Exit Extends Residual** (dR²=0.035, F=11.80, p=0.0012, LOO 0.696→0.745; closer features R²=0.338; AXM departure rho=0.509 with exit div) | 2 | B, folio, AXM residual, exit | -> [C1167_axm_departure_rate_extends_residual.md](C1167_axm_departure_rate_extends_residual.md) |
+| **1168** | **Dual Boundary Architecture** (entry+exit independent channels; dual R²=0.852 LOO=0.732; exit dR²=0.039 LOO+0.036; all 3 sections benefit; irreducible ~57%→~27%) | 2 | B, folio, AXM residual, boundary | -> [C1168_dual_boundary_architecture.md](C1168_dual_boundary_architecture.md) |
+
+**Phase 416 findings (Exit Divergence Symmetry):**
+- Test 1: EXIT_REDUNDANT -- exit JSD partial rho=-0.097 after entry bundle control
+- Test 2: CLOSER_STRUCTURED -- closer features R²=0.338, AXM departure rho=0.509
+- Test 3: GATEKEEPER_PARTIAL -- GK exit + hazard exit R²=0.108
+- Test 4: EXIT_EXTENDS -- AXM departure dR²=0.035, F=11.80, p=0.0012, LOO +0.049
+- Test 5: DUAL_CHANNEL -- dual R²=0.852, LOO=0.732, all sections benefit
+- Overall: EXIT_INDEPENDENT_CHANNEL
 
 ---
 

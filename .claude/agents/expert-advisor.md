@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1006 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 1013 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1006 validated)
+- Tier 0-2 binding constraints (1013 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1006 constraints, 66 fits,
+full content in their source documents. All 1013 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-20 20:48
-**Version:** FROZEN STATE (1006 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-20 21:38
+**Version:** FROZEN STATE (1013 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -113,7 +113,7 @@ and 4 structural contracts are complete.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.84 | **Status:** FROZEN | **Constraints:** 1006 | **Date:** 2026-02-20
+**Version:** 3.86 | **Status:** FROZEN | **Constraints:** 1013 | **Date:** 2026-02-20
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -312,8 +312,8 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 1006 |
-| Completed phases | 414 |
+| Validated constraints | 1010 |
+| Completed phases | 415 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1006 constraints | 2026-02-20
+CONSTRAINT_REFERENCE v2.6 | 1013 constraints | 2026-02-20
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2114,6 +2114,13 @@ C1158	**Entry Divergence Dominates Boundary Divergence Effect** (entry dR²=0.09
 C1159	**Boundary Divergence Is a Routing Shift, Not AXM Persistence Decay** (AXM→AXM only 3.2% of total delta; dominant: AXm→AXM +0.124, FQ→AXM +0.103 at entry; CC→AXM -0.296 at exit; inter-state routing, not self-transition)
 C1160	**Boundary Divergence Is Section-Confounded but Carries Independent Signal**
 C1161	**Gatekeeper Classes Partially Mediate Boundary Divergence**
+C1162	**Opener Role Does Not Predict Entry Divergence** (R²=0.128; no role |rho|≥0.30; role entropy uncorrelated; entry mechanism operates below role-level identity)
+C1163	**AXM Return Rate Dominates Entry Mechanism**
+C1164	**Opener Routing Partially Mediates Entry Divergence**
+C1165	**AXM Return Rate Extends Residual Beyond Entry Divergence**
+C1166	**Exit Divergence Redundant After Entry Control**
+C1167	**AXM Departure Rate at Exit Extends Residual**
+C1168	**Dual Boundary Architecture** (entry+exit independent channels; dual R²=0.852 LOO=0.732; exit dR²=0.039 LOO+0.036; all 3 sections benefit; irreducible ~57%→~27%)
 
 ---
 
@@ -6391,6 +6398,65 @@ vocabulary_architecture:
       gk_density_vs_bd: "rho=0.016 (uncorrelated)"
       gk_free_bd_vs_axm: "rho=-0.673 (p<0.0001)"
       provenance: "C1161"
+    opener_role_neutrality:
+      statement: "Opener role distribution does not predict entry divergence"
+      r2_roles_on_entry_div: 0.128
+      best_role_rho: -0.195  # ENERGY, p=0.061
+      role_entropy_rho: -0.116  # p=0.101
+      note: "Entry mechanism operates below role-level identity; consistent with C959"
+      provenance: "C1162"
+    axm_return_rate_dominance:
+      statement: "AXM return rate at entry is the dominant entry mechanism"
+      rho_vs_axm_self: 0.841  # p<0.0001 — near-perfect
+      rho_vs_entry_div: -0.510  # p<0.0001
+      r2_on_entry_div: 0.318
+      mean_return_rate: 0.707
+      note: "Per-line opening routing pattern IS the folio's dynamical identity"
+      provenance: "C1163"
+    opener_routing_mediation:
+      statement: "Opener routing partially mediates entry divergence (40% shrinkage)"
+      coefficient_shrinkage: 0.406
+      partial_rho_entry_div_surviving: -0.293  # p=0.013
+      opener_features_dr2: 0.159  # F=13.01, p<0.000002
+      entry_div_dr2: 0.068
+      combined_r2: 0.815
+      combined_loo: 0.669
+      provenance: "C1164"
+    axm_return_rate_residual_extension:
+      statement: "AXM return rate extends AXM residual beyond entry divergence"
+      incremental_dr2: 0.111  # F=30.95, p<0.000001
+      loo_improvement: "0.543 → 0.696"
+      total_bundle_dr2: 0.180  # entry_div + AXM_return vs C1035
+      c1035_status: "substantially reopened — irreducible reduced ~57% → ~32%"
+      provenance: "C1165"
+    exit_divergence_redundancy:
+      statement: "Exit JSD redundant after entry bundle control (partial rho=-0.097)"
+      bivariate_rho_exit_axm: -0.710  # strong alone
+      partial_rho_after_entry_bundle: -0.097  # p=0.101 — non-significant
+      entry_exit_collinearity: 0.697  # rho(jsd_entry, jsd_exit)
+      note: "Aggregate divergence metric collinear; directional routing metrics carry independent signal"
+      provenance: "C1166"
+    axm_departure_rate_extension:
+      statement: "AXM departure rate at exit extends residual beyond entry bundle"
+      incremental_dr2: 0.035  # F=11.80, p=0.0012
+      loo_improvement: "0.696 → 0.745"
+      closer_routing_r2: 0.338
+      axm_departure_rho_exit_div: 0.509  # p<0.0001
+      axm_departure_rho_axm_self: -0.687  # p<0.0001
+      best_exit_feature: "axm_departure"
+      note: "Exit signal is directional routing (AXM→non-AXM at exit), not aggregate divergence"
+      provenance: "C1167"
+    dual_boundary_architecture:
+      statement: "Entry + exit = independent predictive channels for AXM self-transition"
+      dual_model_r2: 0.852
+      dual_model_loo: 0.732
+      exit_increment_dr2: 0.039
+      exit_increment_loo_gain: 0.036
+      per_section_exit_dr2: {B: 0.189, H: 0.107, S: 0.100}
+      sections_benefiting: 3  # out of 3 testable
+      partial_rho_entry_exit: 0.259  # p=0.025 — correlated but not redundant
+      c1035_trajectory: "~57% → ~49% → ~32% → ~27% irreducible"
+      provenance: "C1168"
     dark_pipeline_profile:
       compound_rate: "66.7%"
       section_concentration: "Herf 0.716 (strongly section-specific)"
@@ -6560,7 +6626,7 @@ ht_un_integration:
       ratio: "3.9x"
       implication: "Dark pipeline is the primary vehicle for section-level vocabulary modulation"
       provenance: "C1148"
-    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1149, C1150, C1151, C1152, C1153, C1154, C1155, C1156, C1157, C1158, C1159, C1160, C1161"
+    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1149, C1150, C1151, C1152, C1153, C1154, C1155, C1156, C1157, C1158, C1159, C1160, C1161, C1162, C1163, C1164, C1165, C1166, C1167, C1168"
 
 robustness:
 

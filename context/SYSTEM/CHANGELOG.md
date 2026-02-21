@@ -4,6 +4,44 @@
 
 ---
 
+## Version 4.16.26 (2026-02-20) - Phase 416: Exit Divergence Symmetry
+
+### Summary
+
+Phase 416: 5-test battery testing whether exit boundary carries independent signal beyond the entry bundle (C1035 + entry_div + AXM_return). 3 new constraints (C1166-C1168). **Key finding:** Exit JSD is redundant after controlling for entry (partial rho=-0.097, p=0.101, C1166), but AXM departure rate at exit (directional routing out of AXM at line endings) carries independent signal: dR²=0.035, F=11.80, p=0.0012, LOO 0.696→0.745 (C1167). Closer routing features explain R²=0.338 of exit divergence; gatekeeper exit mechanism is partial (R²=0.108). Dual boundary model (entry + exit): R²=0.852, LOO=0.732, all 3 sections benefit (C1168). C1035 irreducible residual: ~57%→~27%.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/EXIT_DIVERGENCE_SYMMETRY/` -- script + results (5-test battery) |
+| **ADDED** | C1166-C1168 constraint files (3 new constraints, 1010→1013) |
+| **UPDATED** | `currierB.bcsc.yaml` -- exit_divergence_redundancy, axm_departure_rate_extension, dual_boundary_architecture |
+| **UPDATED** | `CLAUDE.md` -- 1010→1013 constraints, 415→416 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 1010→1013 constraints, v3.85→v3.86 |
+| **UPDATED** | `INDEX.md` -- 1010→1013 total, Phase 416 section added |
+
+---
+
+## Version 4.15.25 (2026-02-20) - Phase 415: Entry Reset Mechanism
+
+### Summary
+
+Phase 415: 5-test battery decomposing C1158's entry dominance — what opener properties drive per-folio entry divergence variation? 4 new constraints (C1162-C1165). **Major finding:** AXM return rate at entry (fraction of entry transitions routing back to AXM) correlates with AXM self-transition at rho=0.841 and adds dR²=0.111 beyond entry divergence (F=30.95, p<0.000001, LOO 0.543→0.696). Opener role does NOT predict entry divergence (R²=0.128). Opener routing partially mediates entry divergence (shrinkage=0.41) but entry div retains independent signal. Total entry_div + AXM_return bundle: dR²=0.180 vs C1035, LOO 0.511→0.676. C1035 irreducible residual reduced from ~57% to ~32%.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/ENTRY_RESET_MECHANISM/` -- script + results (5-test battery) |
+| **ADDED** | C1162-C1165 constraint files (4 new constraints, 1006→1010) |
+| **UPDATED** | `currierB.bcsc.yaml` -- opener_role_neutrality, axm_return_rate_dominance, opener_routing_mediation, axm_return_rate_residual_extension |
+| **UPDATED** | `CLAUDE.md` -- 1006→1010 constraints, 414→415 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 1006→1010 constraints |
+| **UPDATED** | `INDEX.md` -- 1006→1010 total, Phase 415 section added |
+
+---
+
 ## Version 4.14.24 (2026-02-20) - Phase 414: Boundary Divergence Decomposition
 
 ### Summary

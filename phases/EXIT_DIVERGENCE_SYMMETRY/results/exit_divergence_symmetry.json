@@ -1,0 +1,192 @@
+{
+  "phase": "EXIT_DIVERGENCE_SYMMETRY",
+  "phase_number": 416,
+  "depends_on": [
+    "C1035",
+    "C1156",
+    "C1157",
+    "C1158",
+    "C1159",
+    "C1163",
+    "C1165",
+    "C1007",
+    "C1008",
+    "C1009",
+    "C976"
+  ],
+  "n_folios": 65,
+  "test1_exit_divergence_baseline": {
+    "n_folios": 65,
+    "jsd_entry_stats": {
+      "mean": 0.164422,
+      "std": 0.087215
+    },
+    "jsd_exit_stats": {
+      "mean": 0.1679,
+      "std": 0.091285
+    },
+    "bivariate": {
+      "entry_vs_exit": {
+        "rho": 0.696941,
+        "p": 0.0
+      },
+      "exit_vs_axm": {
+        "rho": -0.710454,
+        "p": 0.0
+      },
+      "entry_vs_axm": {
+        "rho": -0.675554,
+        "p": 0.0
+      }
+    },
+    "partial_exit_vs_axm_ctrl_entry": {
+      "rho": -0.193881,
+      "p": 0.06157
+    },
+    "partial_exit_vs_axm_ctrl_entry_bundle": {
+      "rho": -0.096635,
+      "p": 0.10068
+    },
+    "verdict": "EXIT_REDUNDANT"
+  },
+  "test2_closer_routing_profile": {
+    "axm_departure_stats": {
+      "mean": 0.410076,
+      "std": 0.17709
+    },
+    "exit_routing_entropy_stats": {
+      "mean": 1.580279,
+      "std": 0.3018
+    },
+    "axm_departure_vs_exit_div": {
+      "rho": 0.509095,
+      "p": 1.7e-05
+    },
+    "axm_departure_vs_axm_self": {
+      "rho": -0.68701,
+      "p": 0.0
+    },
+    "exit_routing_entropy_vs_exit_div": {
+      "rho": 0.374414,
+      "p": 0.001925
+    },
+    "r2_exit_div_from_closer": 0.338154,
+    "verdict": "CLOSER_STRUCTURED"
+  },
+  "test3_gatekeeper_exit_mechanism": {
+    "gatekeeper_exit_stats": {
+      "mean": 0.110041,
+      "std": 0.073115
+    },
+    "hazard_exit_stats": {
+      "mean": 0.084746,
+      "std": 0.06737
+    },
+    "gk_exit_vs_exit_div": {
+      "rho": -0.18395,
+      "p": 0.068161
+    },
+    "gk_exit_vs_axm": {
+      "rho": 0.295149,
+      "p": 0.01276
+    },
+    "hazard_exit_vs_exit_div": {
+      "rho": 0.129255,
+      "p": 0.098086
+    },
+    "hazard_exit_vs_axm": {
+      "rho": -0.167142,
+      "p": 0.079079
+    },
+    "r2_exit_div_from_gk_haz": 0.108186,
+    "verdict": "GATEKEEPER_PARTIAL"
+  },
+  "test4_exit_incremental_signal": {
+    "entry_bundle": {
+      "r2": 0.813645,
+      "loo": 0.695753
+    },
+    "per_feature": {
+      "jsd_exit": {
+        "dr2": 8e-06,
+        "f_stat": 0.002141,
+        "f_p": 0.963274,
+        "loo": 0.671634
+      },
+      "axm_departure": {
+        "dr2": 0.035012,
+        "f_stat": 11.798381,
+        "f_p": 0.001186,
+        "loo": 0.745231
+      },
+      "gk_exit_frac": {
+        "dr2": 0.007366,
+        "f_stat": 2.098841,
+        "f_p": 0.153532,
+        "loo": 0.683582
+      }
+    },
+    "all_exit_features": {
+      "dr2": 0.041698,
+      "f_stat": 4.708148,
+      "f_p": 0.005761,
+      "loo": 0.711774
+    },
+    "best_feature": "axm_departure",
+    "verdict": "EXIT_EXTENDS"
+  },
+  "test5_dual_boundary_architecture": {
+    "entry_only": {
+      "r2": 0.813645,
+      "loo": 0.695753
+    },
+    "exit_only": {
+      "r2": 0.689814,
+      "loo": 0.545189
+    },
+    "dual_model": {
+      "r2": 0.852292,
+      "loo": 0.732109
+    },
+    "exit_increment_in_dual": {
+      "dr2": 0.038648,
+      "loo_gain": 0.036355
+    },
+    "partial_entry_vs_exit_ctrl_baseline": {
+      "rho": 0.259178,
+      "p": 0.024866
+    },
+    "per_section": {
+      "B": {
+        "n": 20,
+        "r2_entry_only": 0.722846,
+        "r2_dual": 0.912146,
+        "dr2_exit": 0.189299
+      },
+      "H": {
+        "n": 17,
+        "r2_entry_only": 0.540436,
+        "r2_dual": 0.647077,
+        "dr2_exit": 0.106641
+      },
+      "S": {
+        "n": 23,
+        "r2_entry_only": 0.796293,
+        "r2_dual": 0.896713,
+        "dr2_exit": 0.10042
+      }
+    },
+    "sections_exit_helps": 3,
+    "verdict": "DUAL_CHANNEL"
+  },
+  "synthesis": {
+    "verdicts": {
+      "t1": "EXIT_REDUNDANT",
+      "t2": "CLOSER_STRUCTURED",
+      "t3": "GATEKEEPER_PARTIAL",
+      "t4": "EXIT_EXTENDS",
+      "t5": "DUAL_CHANNEL"
+    },
+    "overall": "EXIT_INDEPENDENT_CHANNEL"
+  }
+}

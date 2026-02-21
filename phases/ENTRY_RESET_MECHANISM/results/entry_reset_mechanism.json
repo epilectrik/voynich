@@ -1,0 +1,287 @@
+{
+  "phase": "ENTRY_RESET_MECHANISM",
+  "phase_number": 415,
+  "depends_on": [
+    "C1035",
+    "C1156",
+    "C1157",
+    "C1158",
+    "C1159",
+    "C958",
+    "C959",
+    "C1001",
+    "C931",
+    "C556",
+    "C557"
+  ],
+  "n_folios": 65,
+  "test1_opener_role_distribution": {
+    "n_folios": 65,
+    "role_entropy_stats": {
+      "mean": 1.71961,
+      "std": 0.270857
+    },
+    "role_fraction_means": {
+      "AUXILIARY": 0.37812,
+      "ENERGY_OPERATOR": 0.382044,
+      "FLOW_OPERATOR": 0.054062,
+      "FREQUENT_OPERATOR": 0.114903,
+      "CORE_CONTROL": 0.070871
+    },
+    "role_vs_entry_div": {
+      "AUXILIARY": {
+        "rho": 0.074542,
+        "p": 0.091632
+      },
+      "ENERGY_OPERATOR": {
+        "rho": -0.195246,
+        "p": 0.060667
+      },
+      "FLOW_OPERATOR": {
+        "rho": -0.131125,
+        "p": 0.097464
+      },
+      "FREQUENT_OPERATOR": {
+        "rho": -0.013439,
+        "p": 0.020982
+      },
+      "CORE_CONTROL": {
+        "rho": 0.131011,
+        "p": 0.097503
+      }
+    },
+    "role_vs_axm": {
+      "AUXILIARY": {
+        "rho": -0.118678,
+        "p": 0.100739
+      },
+      "ENERGY_OPERATOR": {
+        "rho": 0.31356,
+        "p": 0.008666
+      },
+      "FLOW_OPERATOR": {
+        "rho": 0.02317,
+        "p": 0.0356
+      },
+      "FREQUENT_OPERATOR": {
+        "rho": -0.136758,
+        "p": 0.095341
+      },
+      "CORE_CONTROL": {
+        "rho": -0.140809,
+        "p": 0.093602
+      }
+    },
+    "entropy_vs_entry_div": {
+      "rho": -0.115606,
+      "p": 0.101211
+    },
+    "entropy_vs_axm": {
+      "rho": -0.107062,
+      "p": 0.101736
+    },
+    "r2_entry_div_from_roles": 0.128037,
+    "sig_role_count": 0,
+    "verdict": "ROLE_WEAK"
+  },
+  "test2_prefix_family_distribution": {
+    "prefix_entropy_stats": {
+      "mean": 2.99155,
+      "std": 0.41622
+    },
+    "init_specialist_stats": {
+      "mean": 0.129449,
+      "std": 0.10017
+    },
+    "top_opener_prefixes": {
+      "qo": 402,
+      "BARE": 228,
+      "sh": 208,
+      "ch": 196,
+      "da": 158,
+      "sa": 77,
+      "ok": 60,
+      "ot": 32,
+      "so": 26,
+      "ol": 17
+    },
+    "prefix_entropy_vs_entry_div": {
+      "rho": -0.49269,
+      "p": 3.4e-05
+    },
+    "init_specialist_vs_entry_div": {
+      "rho": -0.186508,
+      "p": 0.066463
+    },
+    "partial_prefix_ent_vs_entry_div_ctrl_role_ent": {
+      "rho": -0.486801,
+      "p": 4.3e-05
+    },
+    "r2_entry_div_from_prefix": 0.292304,
+    "r2_increment_over_roles": 0.164266,
+    "verdict": "PREFIX_WEAK"
+  },
+  "test3_opener_follower_routing": {
+    "top_entry_deltas": [
+      {
+        "src": "AXm",
+        "tgt": "AXM",
+        "delta": 0.124241,
+        "abs_delta": 0.124241
+      },
+      {
+        "src": "FL_SAFE",
+        "tgt": "CC",
+        "delta": -0.115385,
+        "abs_delta": 0.115385
+      },
+      {
+        "src": "FQ",
+        "tgt": "AXM",
+        "delta": 0.103376,
+        "abs_delta": 0.103376
+      },
+      {
+        "src": "AXm",
+        "tgt": "FQ",
+        "delta": -0.092421,
+        "abs_delta": 0.092421
+      },
+      {
+        "src": "FL_SAFE",
+        "tgt": "FL_HAZ",
+        "delta": 0.089744,
+        "abs_delta": 0.089744
+      }
+    ],
+    "axm_return_rate_stats": {
+      "mean": 0.706536,
+      "std": 0.134295
+    },
+    "routing_concentration_stats": {
+      "mean": 0.53987,
+      "std": 0.134295
+    },
+    "axm_return_rate_vs_entry_div": {
+      "rho": -0.51012,
+      "p": 1.6e-05
+    },
+    "axm_return_rate_vs_axm_self": {
+      "rho": 0.841233,
+      "p": 0.0
+    },
+    "routing_conc_vs_entry_div": {
+      "rho": -0.51012,
+      "p": 1.6e-05
+    },
+    "r2_entry_div_from_routing": 0.318261,
+    "r2_increment_over_roles": 0.190224,
+    "verdict": "ROUTING_EXPLAINS"
+  },
+  "test4_entry_divergence_mediation": {
+    "n_folios": 65,
+    "baseline": {
+      "r2": 0.634306,
+      "loo": 0.510563
+    },
+    "entry_only": {
+      "dr2": 0.068422,
+      "f_stat": 12.198799,
+      "f_p": 0.000973,
+      "loo": 0.542944,
+      "beta_entry_div": -0.054778
+    },
+    "opener_only": {
+      "dr2": 0.158514,
+      "f_stat": 13.006662,
+      "f_p": 2e-06,
+      "loo": 0.655663
+    },
+    "combined": {
+      "r2": 0.814564,
+      "loo": 0.668987,
+      "dr2": 0.180258,
+      "beta_entry_div": -0.032548
+    },
+    "coefficient_shrinkage": 0.405811,
+    "partial_entry_div_vs_axm_ctrl_opener": {
+      "rho": -0.292832,
+      "p": 0.013367
+    },
+    "opener_features_used": [
+      "role_entropy",
+      "init_spec_frac",
+      "axm_return_rate"
+    ],
+    "verdict": "OPENER_PARTIAL_MEDIATION"
+  },
+  "test5_axm_residual_extension": {
+    "entry_model": {
+      "r2": 0.702728,
+      "loo": 0.542944
+    },
+    "per_feature": {
+      "role_entropy": {
+        "dr2": 0.00384,
+        "f_stat": 0.680505,
+        "f_p": 0.413181,
+        "loo": 0.506602,
+        "loo_change": -0.036342
+      },
+      "init_spec_frac": {
+        "dr2": 0.000528,
+        "f_stat": 0.092437,
+        "f_p": 0.762315,
+        "loo": 0.526175,
+        "loo_change": -0.016769
+      },
+      "axm_return_rate": {
+        "dr2": 0.110917,
+        "f_stat": 30.949987,
+        "f_p": 1e-06,
+        "loo": 0.695753,
+        "loo_change": 0.152809
+      },
+      "opener_axm_frac": {
+        "dr2": 0.00027,
+        "f_stat": 0.047286,
+        "f_p": 0.828707,
+        "loo": 0.510168,
+        "loo_change": -0.032776
+      },
+      "routing_concentration": {
+        "dr2": 0.110917,
+        "f_stat": 30.949987,
+        "f_p": 1e-06,
+        "loo": 0.695753,
+        "loo_change": 0.152809
+      }
+    },
+    "best_feature": "axm_return_rate",
+    "best_dr2": 0.110917,
+    "joint_top3": {
+      "features": [
+        "axm_return_rate",
+        "routing_concentration",
+        "role_entropy"
+      ],
+      "dr2": 0.111081,
+      "f_stat": 9.943223,
+      "f_p": 3e-05,
+      "loo": 0.675629
+    },
+    "total_dr2_vs_c1035": 0.179503,
+    "c1035_baseline_r2": 0.634306,
+    "verdict": "OPENER_EXTENDS_RESIDUAL"
+  },
+  "synthesis": {
+    "verdicts": {
+      "t1": "ROLE_WEAK",
+      "t2": "PREFIX_WEAK",
+      "t3": "ROUTING_EXPLAINS",
+      "t4": "OPENER_PARTIAL_MEDIATION",
+      "t5": "OPENER_EXTENDS_RESIDUAL"
+    },
+    "overall": "MULTI_FACETED_ENTRY_MECHANISM"
+  }
+}
