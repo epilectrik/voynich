@@ -1,0 +1,352 @@
+{
+  "test1": {
+    "contingency": {
+      "BRIDGE_DOMINANT": {
+        "HERBAL_B": 8,
+        "BIO": 11,
+        "PHARMA": 0,
+        "RECIPE_B": 2
+      },
+      "BALANCED": {
+        "HERBAL_B": 9,
+        "BIO": 9,
+        "PHARMA": 0,
+        "RECIPE_B": 23
+      },
+      "DARK_DOMINANT": {
+        "HERBAL_B": 7,
+        "BIO": 0,
+        "PHARMA": 3,
+        "RECIPE_B": 10
+      }
+    },
+    "chi2": 29.9465,
+    "p": 0.0,
+    "df": 6,
+    "section_profiles": {
+      "HERBAL_B": {
+        "BRIDGE_DOMINANT": {
+          "count": 8,
+          "pct": 0.3333
+        },
+        "BALANCED": {
+          "count": 9,
+          "pct": 0.375
+        },
+        "DARK_DOMINANT": {
+          "count": 7,
+          "pct": 0.2917
+        },
+        "n": 24
+      },
+      "BIO": {
+        "BRIDGE_DOMINANT": {
+          "count": 11,
+          "pct": 0.55
+        },
+        "BALANCED": {
+          "count": 9,
+          "pct": 0.45
+        },
+        "DARK_DOMINANT": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "n": 20
+      },
+      "PHARMA": {
+        "BRIDGE_DOMINANT": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "BALANCED": {
+          "count": 0,
+          "pct": 0.0
+        },
+        "DARK_DOMINANT": {
+          "count": 3,
+          "pct": 1.0
+        },
+        "n": 3
+      },
+      "RECIPE_B": {
+        "BRIDGE_DOMINANT": {
+          "count": 2,
+          "pct": 0.0571
+        },
+        "BALANCED": {
+          "count": 23,
+          "pct": 0.6571
+        },
+        "DARK_DOMINANT": {
+          "count": 10,
+          "pct": 0.2857
+        },
+        "n": 35
+      }
+    },
+    "verdict": "SECTION_STRUCTURED"
+  },
+  "test2": {
+    "n": 72,
+    "ari": -0.0024,
+    "chi2": 6.1001,
+    "p": 0.8068,
+    "df": 10,
+    "arch_profiles": {
+      "1": {
+        "BRIDGE_DOMINANT": 3,
+        "BALANCED": 6,
+        "DARK_DOMINANT": 1,
+        "n": 10
+      },
+      "2": {
+        "BRIDGE_DOMINANT": 5,
+        "BALANCED": 7,
+        "DARK_DOMINANT": 1,
+        "n": 13
+      },
+      "3": {
+        "BRIDGE_DOMINANT": 2,
+        "BALANCED": 2,
+        "DARK_DOMINANT": 3,
+        "n": 7
+      },
+      "4": {
+        "BRIDGE_DOMINANT": 1,
+        "BALANCED": 2,
+        "DARK_DOMINANT": 2,
+        "n": 5
+      },
+      "5": {
+        "BRIDGE_DOMINANT": 2,
+        "BALANCED": 3,
+        "DARK_DOMINANT": 2,
+        "n": 7
+      },
+      "6": {
+        "BRIDGE_DOMINANT": 7,
+        "BALANCED": 16,
+        "DARK_DOMINANT": 7,
+        "n": 30
+      }
+    },
+    "verdict": "ARCHETYPE_ORTHOGONAL"
+  },
+  "test3": {
+    "H": 0.0682,
+    "p": 0.9665,
+    "df": 2,
+    "eta2": 0.0016,
+    "group_stats": {
+      "BRIDGE_DOMINANT": {
+        "n": 20,
+        "mean": 0.6569,
+        "median": 0.6706
+      },
+      "BALANCED": {
+        "n": 36,
+        "mean": 0.6623,
+        "median": 0.6763
+      },
+      "DARK_DOMINANT": {
+        "n": 16,
+        "mean": 0.67,
+        "median": 0.6667
+      }
+    },
+    "within_section": {
+      "HERBAL_B": {
+        "H": 1.5514,
+        "p": 0.4604,
+        "group_ns": {
+          "BRIDGE_DOMINANT": 7,
+          "BALANCED": 6,
+          "DARK_DOMINANT": 4
+        }
+      },
+      "BIO": {
+        "H": 2.1948,
+        "p": 0.1385,
+        "group_ns": {
+          "BRIDGE_DOMINANT": 11,
+          "BALANCED": 9,
+          "DARK_DOMINANT": 0
+        }
+      },
+      "RECIPE_B": {
+        "H": 3.6488,
+        "p": 0.1613,
+        "group_ns": {
+          "BRIDGE_DOMINANT": 2,
+          "BALANCED": 21,
+          "DARK_DOMINANT": 10
+        }
+      }
+    },
+    "spearman_rho": 0.0013,
+    "spearman_p": 0.9911,
+    "verdict": "AXM_UNIFORM"
+  },
+  "test4": {
+    "per_kernel": {
+      "k_frac": {
+        "H": 12.5674,
+        "p": 0.0019,
+        "eta2": 0.1436,
+        "group_means": {
+          "BRIDGE_DOMINANT": {
+            "n": 21,
+            "mean": 0.3142
+          },
+          "BALANCED": {
+            "n": 41,
+            "mean": 0.3086
+          },
+          "DARK_DOMINANT": {
+            "n": 20,
+            "mean": 0.2256
+          }
+        }
+      },
+      "h_frac": {
+        "H": 7.5884,
+        "p": 0.0225,
+        "eta2": 0.0878,
+        "group_means": {
+          "BRIDGE_DOMINANT": {
+            "n": 21,
+            "mean": 0.0999
+          },
+          "BALANCED": {
+            "n": 41,
+            "mean": 0.1127
+          },
+          "DARK_DOMINANT": {
+            "n": 20,
+            "mean": 0.1353
+          }
+        }
+      },
+      "e_frac": {
+        "H": 4.7438,
+        "p": 0.0933,
+        "eta2": 0.064,
+        "group_means": {
+          "BRIDGE_DOMINANT": {
+            "n": 21,
+            "mean": 0.5859
+          },
+          "BALANCED": {
+            "n": 41,
+            "mean": 0.5787
+          },
+          "DARK_DOMINANT": {
+            "n": 20,
+            "mean": 0.6391
+          }
+        }
+      }
+    },
+    "within_section_strongest": {
+      "kernel": "k_frac",
+      "sections": {
+        "HERBAL_B": {
+          "H": 0.0171,
+          "p": 0.9915
+        },
+        "BIO": {
+          "H": 0.3247,
+          "p": 0.5688
+        },
+        "RECIPE_B": {
+          "H": 12.1335,
+          "p": 0.0023
+        }
+      }
+    },
+    "verdict": "KERNEL_DIFFERENTIATED"
+  },
+  "test5": {
+    "H": 3.7643,
+    "p": 0.1523,
+    "df": 2,
+    "eta2": 0.0571,
+    "group_stats": {
+      "BRIDGE_DOMINANT": {
+        "n": 21,
+        "mean": 4.7619,
+        "median": 3
+      },
+      "BALANCED": {
+        "n": 41,
+        "mean": 7.6829,
+        "median": 7
+      },
+      "DARK_DOMINANT": {
+        "n": 20,
+        "mean": 8.5,
+        "median": 6
+      }
+    },
+    "within_section": {
+      "HERBAL_B": {
+        "H": 0.7209,
+        "p": 0.6974,
+        "group_ns": {
+          "BRIDGE_DOMINANT": 8,
+          "BALANCED": 9,
+          "DARK_DOMINANT": 7
+        }
+      },
+      "BIO": {
+        "H": 2.6681,
+        "p": 0.1024,
+        "group_ns": {
+          "BRIDGE_DOMINANT": 11,
+          "BALANCED": 9,
+          "DARK_DOMINANT": 0
+        }
+      },
+      "RECIPE_B": {
+        "H": 0.9045,
+        "p": 0.6362,
+        "group_ns": {
+          "BRIDGE_DOMINANT": 2,
+          "BALANCED": 23,
+          "DARK_DOMINANT": 10
+        }
+      }
+    },
+    "spearman_rho": 0.1594,
+    "spearman_p": 0.1487,
+    "verdict": "PARAGRAPH_UNIFORM"
+  },
+  "verdicts": {
+    "test1": "SECTION_STRUCTURED",
+    "test2": "ARCHETYPE_ORTHOGONAL",
+    "test3": "AXM_UNIFORM",
+    "test4": "KERNEL_DIFFERENTIATED",
+    "test5": "PARAGRAPH_UNIFORM",
+    "overall": "BALANCE_PARTIALLY_INFORMATIVE",
+    "summary": "2/5 tests show balance-dependent variation. Overall: BALANCE_PARTIALLY_INFORMATIVE. Section confound: present.",
+    "findings": [
+      "Balance distribution varies by section",
+      "Balance groups have different kernel profiles"
+    ],
+    "differentiated_count": 2
+  },
+  "metadata": {
+    "phase": "FOLIO_BALANCE_CHARACTERIZATION",
+    "phase_number": 410,
+    "script": "folio_balance_characterization.py",
+    "n_folios": 82,
+    "n_dark_middles": 300,
+    "n_bridge_middles": 85,
+    "balance_split": {
+      "BALANCED": 41,
+      "DARK_DOMINANT": 20,
+      "BRIDGE_DOMINANT": 21
+    }
+  }
+}

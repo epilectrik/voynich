@@ -1327,6 +1327,15 @@ class BTokenAnalysis:
         if ht_bundle:
             return ht_bundle
 
+        # Dark pipeline: identification vocabulary (C1137), not grammar
+        if self.is_dark_pipeline:
+            middle = self.morph.middle if self.morph else self.word
+            suffix = self.morph.suffix if self.morph else None
+            spec = f"[ident:{middle}]"
+            if suffix:
+                spec += f" [-{suffix}]"
+            return spec
+
         middle = self.morph.middle if self.morph else None
         prefix = self.morph.prefix if self.morph else None
         prefix2 = self.morph.prefix2 if self.morph else None
@@ -1409,6 +1418,15 @@ class BTokenAnalysis:
         ht_bundle = self._ht_spec_bundle()
         if ht_bundle:
             return ht_bundle
+
+        # 0b. DARK PIPELINE IDENTIFICATION (C1137: 0% grammar, identification vocabulary)
+        if self.is_dark_pipeline:
+            middle = self.morph.middle if self.morph else self.word
+            suffix = self.morph.suffix if self.morph else None
+            spec = f"[ident:{middle}]"
+            if suffix:
+                spec += f" [-{suffix}]"
+            return spec
 
         # MIDDLE signature for gloss discrimination (C506.b, C908)
         # Kernel is mandatory (primary discriminator), regime conditional.
