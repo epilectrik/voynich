@@ -1,0 +1,990 @@
+{
+  "T1_initial_terminal": {
+    "all": {
+      "n": 16153,
+      "chi2": 27464.6,
+      "cramers_v": 0.3073,
+      "mutual_info_bits": 1.0714,
+      "df": 342,
+      "enriched_pairs": [
+        {
+          "pair": "k->e",
+          "obs": 464,
+          "exp": 58.4,
+          "ratio": 7.94
+        },
+        {
+          "pair": "p->h",
+          "obs": 87,
+          "exp": 12.0,
+          "ratio": 7.24
+        },
+        {
+          "pair": "i->n",
+          "obs": 825,
+          "exp": 121.6,
+          "ratio": 6.78
+        },
+        {
+          "pair": "c->t",
+          "obs": 96,
+          "exp": 14.6,
+          "ratio": 6.58
+        },
+        {
+          "pair": "c->k",
+          "obs": 200,
+          "exp": 34.4,
+          "ratio": 5.81
+        },
+        {
+          "pair": "t->e",
+          "obs": 101,
+          "exp": 19.8,
+          "ratio": 5.1
+        },
+        {
+          "pair": "c->h",
+          "obs": 233,
+          "exp": 46.8,
+          "ratio": 4.98
+        },
+        {
+          "pair": "a->m",
+          "obs": 174,
+          "exp": 39.8,
+          "ratio": 4.38
+        },
+        {
+          "pair": "k->c",
+          "obs": 56,
+          "exp": 13.7,
+          "ratio": 4.1
+        },
+        {
+          "pair": "q->o",
+          "obs": 21,
+          "exp": 5.8,
+          "ratio": 3.62
+        },
+        {
+          "pair": "l->h",
+          "obs": 118,
+          "exp": 32.7,
+          "ratio": 3.6
+        },
+        {
+          "pair": "k->a",
+          "obs": 27,
+          "exp": 8.0,
+          "ratio": 3.38
+        },
+        {
+          "pair": "q->k",
+          "obs": 19,
+          "exp": 5.9,
+          "ratio": 3.25
+        },
+        {
+          "pair": "a->n",
+          "obs": 1272,
+          "exp": 399.4,
+          "ratio": 3.18
+        },
+        {
+          "pair": "d->y",
+          "obs": 677,
+          "exp": 212.6,
+          "ratio": 3.18
+        },
+        {
+          "pair": "o->l",
+          "obs": 777,
+          "exp": 247.0,
+          "ratio": 3.15
+        },
+        {
+          "pair": "a->r",
+          "obs": 687,
+          "exp": 226.4,
+          "ratio": 3.03
+        },
+        {
+          "pair": "t->h",
+          "obs": 77,
+          "exp": 26.4,
+          "ratio": 2.92
+        },
+        {
+          "pair": "q->h",
+          "obs": 22,
+          "exp": 8.0,
+          "ratio": 2.76
+        },
+        {
+          "pair": "o->f",
+          "obs": 25,
+          "exp": 9.2,
+          "ratio": 2.71
+        }
+      ],
+      "depleted_pairs": [
+        {
+          "pair": "a->y",
+          "obs": 1,
+          "exp": 796.4,
+          "ratio": 0.0
+        },
+        {
+          "pair": "c->l",
+          "obs": 0,
+          "exp": 64.9,
+          "ratio": 0.0
+        },
+        {
+          "pair": "c->n",
+          "obs": 0,
+          "exp": 81.1,
+          "ratio": 0.0
+        },
+        {
+          "pair": "d->m",
+          "obs": 0,
+          "exp": 10.6,
+          "ratio": 0.0
+        },
+        {
+          "pair": "d->n",
+          "obs": 0,
+          "exp": 106.6,
+          "ratio": 0.0
+        },
+        {
+          "pair": "e->n",
+          "obs": 1,
+          "exp": 812.8,
+          "ratio": 0.0
+        },
+        {
+          "pair": "f->y",
+          "obs": 0,
+          "exp": 11.6,
+          "ratio": 0.0
+        },
+        {
+          "pair": "i->e",
+          "obs": 0,
+          "exp": 52.7,
+          "ratio": 0.0
+        },
+        {
+          "pair": "i->y",
+          "obs": 1,
+          "exp": 242.5,
+          "ratio": 0.0
+        },
+        {
+          "pair": "k->n",
+          "obs": 0,
+          "exp": 134.7,
+          "ratio": 0.0
+        },
+        {
+          "pair": "k->t",
+          "obs": 0,
+          "exp": 24.2,
+          "ratio": 0.0
+        },
+        {
+          "pair": "p->n",
+          "obs": 0,
+          "exp": 20.8,
+          "ratio": 0.0
+        },
+        {
+          "pair": "q->n",
+          "obs": 0,
+          "exp": 13.8,
+          "ratio": 0.0
+        },
+        {
+          "pair": "t->n",
+          "obs": 0,
+          "exp": 45.7,
+          "ratio": 0.0
+        },
+        {
+          "pair": "y->y",
+          "obs": 0,
+          "exp": 18.8,
+          "ratio": 0.0
+        },
+        {
+          "pair": "c->y",
+          "obs": 2,
+          "exp": 161.7,
+          "ratio": 0.01
+        },
+        {
+          "pair": "e->m",
+          "obs": 1,
+          "exp": 80.9,
+          "ratio": 0.01
+        },
+        {
+          "pair": "o->y",
+          "obs": 4,
+          "exp": 615.2,
+          "ratio": 0.01
+        },
+        {
+          "pair": "a->e",
+          "obs": 4,
+          "exp": 173.2,
+          "ratio": 0.02
+        },
+        {
+          "pair": "c->r",
+          "obs": 1,
+          "exp": 46.0,
+          "ratio": 0.02
+        }
+      ]
+    },
+    "len2": {
+      "n": 7687,
+      "chi2": 23963.7,
+      "cramers_v": 0.4282,
+      "mutual_info_bits": 1.4717,
+      "df": 323,
+      "enriched_pairs": [
+        {
+          "pair": "i->n",
+          "obs": 264,
+          "exp": 12.0,
+          "ratio": 22.07
+        },
+        {
+          "pair": "c->t",
+          "obs": 95,
+          "exp": 9.4,
+          "ratio": 10.07
+        },
+        {
+          "pair": "k->e",
+          "obs": 421,
+          "exp": 45.5,
+          "ratio": 9.26
+        },
+        {
+          "pair": "c->k",
+          "obs": 197,
+          "exp": 22.0,
+          "ratio": 8.95
+        },
+        {
+          "pair": "t->e",
+          "obs": 87,
+          "exp": 11.6,
+          "ratio": 7.48
+        },
+        {
+          "pair": "k->c",
+          "obs": 33,
+          "exp": 5.9,
+          "ratio": 5.55
+        },
+        {
+          "pair": "d->y",
+          "obs": 675,
+          "exp": 154.0,
+          "ratio": 4.38
+        },
+        {
+          "pair": "l->k",
+          "obs": 58,
+          "exp": 13.4,
+          "ratio": 4.34
+        },
+        {
+          "pair": "a->m",
+          "obs": 174,
+          "exp": 43.1,
+          "ratio": 4.04
+        },
+        {
+          "pair": "a->i",
+          "obs": 174,
+          "exp": 43.7,
+          "ratio": 3.98
+        },
+        {
+          "pair": "a->r",
+          "obs": 677,
+          "exp": 238.6,
+          "ratio": 2.84
+        },
+        {
+          "pair": "e->o",
+          "obs": 359,
+          "exp": 127.6,
+          "ratio": 2.81
+        },
+        {
+          "pair": "l->o",
+          "obs": 33,
+          "exp": 11.9,
+          "ratio": 2.78
+        },
+        {
+          "pair": "o->l",
+          "obs": 762,
+          "exp": 275.7,
+          "ratio": 2.76
+        },
+        {
+          "pair": "i->i",
+          "obs": 23,
+          "exp": 8.9,
+          "ratio": 2.57
+        },
+        {
+          "pair": "r->y",
+          "obs": 33,
+          "exp": 13.4,
+          "ratio": 2.46
+        },
+        {
+          "pair": "o->f",
+          "obs": 15,
+          "exp": 6.1,
+          "ratio": 2.44
+        },
+        {
+          "pair": "e->d",
+          "obs": 401,
+          "exp": 166.1,
+          "ratio": 2.41
+        },
+        {
+          "pair": "o->p",
+          "obs": 36,
+          "exp": 16.3,
+          "ratio": 2.21
+        },
+        {
+          "pair": "d->a",
+          "obs": 13,
+          "exp": 6.0,
+          "ratio": 2.16
+        }
+      ],
+      "depleted_pairs": [
+        {
+          "pair": "a->a",
+          "obs": 0,
+          "exp": 13.5,
+          "ratio": 0.0
+        },
+        {
+          "pair": "a->c",
+          "obs": 0,
+          "exp": 18.6,
+          "ratio": 0.0
+        },
+        {
+          "pair": "a->e",
+          "obs": 0,
+          "exp": 142.5,
+          "ratio": 0.0
+        },
+        {
+          "pair": "a->y",
+          "obs": 0,
+          "exp": 344.4,
+          "ratio": 0.0
+        },
+        {
+          "pair": "c->d",
+          "obs": 0,
+          "exp": 25.4,
+          "ratio": 0.0
+        },
+        {
+          "pair": "c->e",
+          "obs": 0,
+          "exp": 28.7,
+          "ratio": 0.0
+        },
+        {
+          "pair": "c->l",
+          "obs": 0,
+          "exp": 54.3,
+          "ratio": 0.0
+        },
+        {
+          "pair": "c->n",
+          "obs": 0,
+          "exp": 11.8,
+          "ratio": 0.0
+        },
+        {
+          "pair": "c->o",
+          "obs": 0,
+          "exp": 19.5,
+          "ratio": 0.0
+        },
+        {
+          "pair": "c->r",
+          "obs": 0,
+          "exp": 48.1,
+          "ratio": 0.0
+        },
+        {
+          "pair": "c->y",
+          "obs": 0,
+          "exp": 69.4,
+          "ratio": 0.0
+        },
+        {
+          "pair": "d->d",
+          "obs": 0,
+          "exp": 56.4,
+          "ratio": 0.0
+        },
+        {
+          "pair": "d->i",
+          "obs": 0,
+          "exp": 19.5,
+          "ratio": 0.0
+        },
+        {
+          "pair": "d->m",
+          "obs": 0,
+          "exp": 19.3,
+          "ratio": 0.0
+        },
+        {
+          "pair": "d->n",
+          "obs": 0,
+          "exp": 26.1,
+          "ratio": 0.0
+        },
+        {
+          "pair": "d->t",
+          "obs": 0,
+          "exp": 20.9,
+          "ratio": 0.0
+        },
+        {
+          "pair": "e->i",
+          "obs": 0,
+          "exp": 57.5,
+          "ratio": 0.0
+        },
+        {
+          "pair": "e->m",
+          "obs": 0,
+          "exp": 56.7,
+          "ratio": 0.0
+        },
+        {
+          "pair": "e->n",
+          "obs": 0,
+          "exp": 76.9,
+          "ratio": 0.0
+        },
+        {
+          "pair": "i->d",
+          "obs": 0,
+          "exp": 25.8,
+          "ratio": 0.0
+        }
+      ]
+    },
+    "len3": {
+      "n": 6058,
+      "chi2": 12495.6,
+      "cramers_v": 0.3708,
+      "mutual_info_bits": 1.1805,
+      "df": 255,
+      "enriched_pairs": [
+        {
+          "pair": "c->h",
+          "obs": 221,
+          "exp": 28.9,
+          "ratio": 7.65
+        },
+        {
+          "pair": "p->h",
+          "obs": 84,
+          "exp": 11.8,
+          "ratio": 7.1
+        },
+        {
+          "pair": "i->n",
+          "obs": 560,
+          "exp": 94.0,
+          "ratio": 5.96
+        },
+        {
+          "pair": "o->k",
+          "obs": 54,
+          "exp": 10.5,
+          "ratio": 5.16
+        },
+        {
+          "pair": "a->n",
+          "obs": 420,
+          "exp": 82.9,
+          "ratio": 5.06
+        },
+        {
+          "pair": "l->h",
+          "obs": 101,
+          "exp": 21.0,
+          "ratio": 4.81
+        },
+        {
+          "pair": "k->e",
+          "obs": 34,
+          "exp": 7.1,
+          "ratio": 4.76
+        },
+        {
+          "pair": "t->h",
+          "obs": 74,
+          "exp": 17.4,
+          "ratio": 4.24
+        },
+        {
+          "pair": "k->h",
+          "obs": 175,
+          "exp": 42.0,
+          "ratio": 4.17
+        },
+        {
+          "pair": "k->i",
+          "obs": 26,
+          "exp": 6.8,
+          "ratio": 3.82
+        },
+        {
+          "pair": "t->o",
+          "obs": 18,
+          "exp": 5.1,
+          "ratio": 3.55
+        },
+        {
+          "pair": "a->i",
+          "obs": 32,
+          "exp": 10.5,
+          "ratio": 3.05
+        },
+        {
+          "pair": "t->d",
+          "obs": 18,
+          "exp": 6.2,
+          "ratio": 2.93
+        },
+        {
+          "pair": "k->d",
+          "obs": 36,
+          "exp": 14.8,
+          "ratio": 2.43
+        },
+        {
+          "pair": "k->o",
+          "obs": 27,
+          "exp": 12.2,
+          "ratio": 2.21
+        },
+        {
+          "pair": "o->o",
+          "obs": 17,
+          "exp": 8.1,
+          "ratio": 2.09
+        }
+      ],
+      "depleted_pairs": [
+        {
+          "pair": "a->e",
+          "obs": 0,
+          "exp": 11.0,
+          "ratio": 0.0
+        },
+        {
+          "pair": "a->h",
+          "obs": 0,
+          "exp": 64.8,
+          "ratio": 0.0
+        },
+        {
+          "pair": "a->y",
+          "obs": 1,
+          "exp": 217.6,
+          "ratio": 0.0
+        },
+        {
+          "pair": "c->d",
+          "obs": 0,
+          "exp": 10.2,
+          "ratio": 0.0
+        },
+        {
+          "pair": "c->k",
+          "obs": 0,
+          "exp": 10.8,
+          "ratio": 0.0
+        },
+        {
+          "pair": "c->l",
+          "obs": 0,
+          "exp": 12.6,
+          "ratio": 0.0
+        },
+        {
+          "pair": "c->n",
+          "obs": 0,
+          "exp": 37.0,
+          "ratio": 0.0
+        },
+        {
+          "pair": "c->y",
+          "obs": 0,
+          "exp": 97.1,
+          "ratio": 0.0
+        },
+        {
+          "pair": "d->y",
+          "obs": 0,
+          "exp": 24.8,
+          "ratio": 0.0
+        },
+        {
+          "pair": "e->n",
+          "obs": 0,
+          "exp": 589.5,
+          "ratio": 0.0
+        },
+        {
+          "pair": "f->y",
+          "obs": 0,
+          "exp": 12.4,
+          "ratio": 0.0
+        },
+        {
+          "pair": "i->e",
+          "obs": 0,
+          "exp": 12.5,
+          "ratio": 0.0
+        },
+        {
+          "pair": "i->k",
+          "obs": 0,
+          "exp": 27.4,
+          "ratio": 0.0
+        },
+        {
+          "pair": "i->l",
+          "obs": 0,
+          "exp": 31.9,
+          "ratio": 0.0
+        },
+        {
+          "pair": "i->t",
+          "obs": 0,
+          "exp": 11.8,
+          "ratio": 0.0
+        },
+        {
+          "pair": "i->y",
+          "obs": 1,
+          "exp": 246.7,
+          "ratio": 0.0
+        },
+        {
+          "pair": "k->k",
+          "obs": 0,
+          "exp": 15.7,
+          "ratio": 0.0
+        },
+        {
+          "pair": "k->n",
+          "obs": 0,
+          "exp": 53.8,
+          "ratio": 0.0
+        },
+        {
+          "pair": "k->y",
+          "obs": 0,
+          "exp": 141.1,
+          "ratio": 0.0
+        },
+        {
+          "pair": "p->n",
+          "obs": 0,
+          "exp": 15.2,
+          "ratio": 0.0
+        }
+      ]
+    },
+    "len4+": {
+      "n": 2408,
+      "chi2": 3119.6,
+      "cramers_v": 0.2846,
+      "mutual_info_bits": 0.883,
+      "df": 272,
+      "enriched_pairs": [
+        {
+          "pair": "e->l",
+          "obs": 55,
+          "exp": 13.5,
+          "ratio": 4.09
+        },
+        {
+          "pair": "t->d",
+          "obs": 28,
+          "exp": 8.5,
+          "ratio": 3.3
+        },
+        {
+          "pair": "k->o",
+          "obs": 49,
+          "exp": 15.5,
+          "ratio": 3.15
+        },
+        {
+          "pair": "c->o",
+          "obs": 17,
+          "exp": 5.6,
+          "ratio": 3.06
+        },
+        {
+          "pair": "k->d",
+          "obs": 57,
+          "exp": 19.5,
+          "ratio": 2.93
+        },
+        {
+          "pair": "t->o",
+          "obs": 19,
+          "exp": 6.8,
+          "ratio": 2.81
+        },
+        {
+          "pair": "e->t",
+          "obs": 16,
+          "exp": 6.1,
+          "ratio": 2.61
+        },
+        {
+          "pair": "q->h",
+          "obs": 19,
+          "exp": 7.3,
+          "ratio": 2.59
+        },
+        {
+          "pair": "a->n",
+          "obs": 834,
+          "exp": 330.6,
+          "ratio": 2.52
+        },
+        {
+          "pair": "c->d",
+          "obs": 17,
+          "exp": 7.0,
+          "ratio": 2.44
+        },
+        {
+          "pair": "e->k",
+          "obs": 40,
+          "exp": 16.4,
+          "ratio": 2.43
+        },
+        {
+          "pair": "o->h",
+          "obs": 218,
+          "exp": 90.3,
+          "ratio": 2.41
+        },
+        {
+          "pair": "l->d",
+          "obs": 17,
+          "exp": 7.4,
+          "ratio": 2.3
+        },
+        {
+          "pair": "p->d",
+          "obs": 11,
+          "exp": 5.2,
+          "ratio": 2.11
+        }
+      ],
+      "depleted_pairs": [
+        {
+          "pair": "c->n",
+          "obs": 0,
+          "exp": 23.1,
+          "ratio": 0.0
+        },
+        {
+          "pair": "d->n",
+          "obs": 0,
+          "exp": 12.7,
+          "ratio": 0.0
+        },
+        {
+          "pair": "k->n",
+          "obs": 0,
+          "exp": 64.7,
+          "ratio": 0.0
+        },
+        {
+          "pair": "l->n",
+          "obs": 0,
+          "exp": 24.6,
+          "ratio": 0.0
+        },
+        {
+          "pair": "p->n",
+          "obs": 0,
+          "exp": 17.4,
+          "ratio": 0.0
+        },
+        {
+          "pair": "q->n",
+          "obs": 0,
+          "exp": 14.1,
+          "ratio": 0.0
+        },
+        {
+          "pair": "t->n",
+          "obs": 0,
+          "exp": 28.2,
+          "ratio": 0.0
+        },
+        {
+          "pair": "e->n",
+          "obs": 1,
+          "exp": 152.3,
+          "ratio": 0.01
+        },
+        {
+          "pair": "a->s",
+          "obs": 1,
+          "exp": 18.2,
+          "ratio": 0.05
+        },
+        {
+          "pair": "a->t",
+          "obs": 1,
+          "exp": 13.3,
+          "ratio": 0.08
+        },
+        {
+          "pair": "a->i",
+          "obs": 3,
+          "exp": 34.9,
+          "ratio": 0.09
+        },
+        {
+          "pair": "a->d",
+          "obs": 10,
+          "exp": 99.4,
+          "ratio": 0.1
+        },
+        {
+          "pair": "a->e",
+          "obs": 4,
+          "exp": 41.4,
+          "ratio": 0.1
+        },
+        {
+          "pair": "a->l",
+          "obs": 3,
+          "exp": 29.2,
+          "ratio": 0.1
+        },
+        {
+          "pair": "a->h",
+          "obs": 21,
+          "exp": 171.9,
+          "ratio": 0.12
+        },
+        {
+          "pair": "a->c",
+          "obs": 4,
+          "exp": 20.9,
+          "ratio": 0.19
+        },
+        {
+          "pair": "o->n",
+          "obs": 33,
+          "exp": 173.6,
+          "ratio": 0.19
+        },
+        {
+          "pair": "a->k",
+          "obs": 7,
+          "exp": 35.7,
+          "ratio": 0.2
+        },
+        {
+          "pair": "t->h",
+          "obs": 3,
+          "exp": 14.7,
+          "ratio": 0.2
+        },
+        {
+          "pair": "a->o",
+          "obs": 17,
+          "exp": 79.3,
+          "ratio": 0.21
+        }
+      ]
+    }
+  },
+  "T2_medial_interactions": {
+    "initial_x_medial": {
+      "n": 8466,
+      "chi2": 21053.6,
+      "cramers_v": 0.3942,
+      "mutual_info_bits": 1.3115
+    },
+    "medial_x_terminal": {
+      "n": 8466,
+      "chi2": 21587.6,
+      "cramers_v": 0.3873,
+      "mutual_info_bits": 1.4777
+    }
+  },
+  "T3_three_way_synergy": {
+    "n": 8466,
+    "h_terminal": 3.0112,
+    "h_terminal_given_initial": 1.9302,
+    "h_terminal_given_medial": 1.5335,
+    "h_terminal_given_both": 1.2793,
+    "mi_initial": 1.081,
+    "mi_medial": 1.4777,
+    "mi_both": 1.7319,
+    "synergy": -0.8268,
+    "verdict": "REDUNDANCY"
+  },
+  "T4_sensitivity": {
+    "strict_filter": {
+      "n": 6702,
+      "chi2": 6316.8,
+      "cramers_v": 0.6865,
+      "mi": 0.8214
+    },
+    "high_confidence": {
+      "n": 2707,
+      "chi2": 1259.9,
+      "cramers_v": 0.6822,
+      "mi": 0.0512
+    },
+    "free_initial_count": 1362,
+    "free_terminal_count": 1294
+  }
+}
