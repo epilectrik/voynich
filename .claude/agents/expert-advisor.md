@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1046 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 1047 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1046 validated)
+- Tier 0-2 binding constraints (1047 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1046 constraints, 66 fits,
+full content in their source documents. All 1047 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-22 14:23
-**Version:** FROZEN STATE (1046 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-22 15:12
+**Version:** FROZEN STATE (1047 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1047 constraints | 2026-02-22
+CONSTRAINT_REFERENCE v2.6 | 1048 constraints | 2026-02-22
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2155,6 +2155,7 @@ C1199	**Extension Distributional Gradient**
 C1200	**Order Encodes Procedural State**
 C1201	**PREFIX-Mediated Energy State Routing**
 C1202	**H-Kernel MIDDLE No Transition Mediation**
+C1203	**ch/sh MIDDLE Atom-Level Differentiation** (ch-prefix MIDDLEs have higher k-atom fraction (7.1% vs 5.9%) and prefer e-free MIDDLEs: dy 3.1x, k 3.1x, d 2.8x ch-biased; sh-prefix MIDDLEs are more e-enriched (35.1% vs 30.2%); both share core vocabulary but frequency distributions diverge along k/e axis)
 
 ---
 
