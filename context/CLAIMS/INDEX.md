@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1043 validated constraints | **Version:** 4.25 | **Date:** 2026-02-22
+**Total:** 1044 validated constraints | **Version:** 4.26 | **Date:** 2026-02-22
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3289,6 +3289,7 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 | **1197** | **Atom Extensibility Partition** (only e and i repeat consecutively at structural levels (1555/1554 tokens); 18 other atoms are binary (present once or absent); extends C901 from A to B; 129 ratio families exist) | 2 | B, atoms, extensibility | -> [C1197_atom_extensibility_partition.md](C1197_atom_extensibility_partition.md) |
 | **1198** | **MIDDLE Order Irrelevance** (reordered MIDDLEs with identical composition show near-identical behavioral profiles: ke/ek r=0.999, kch/ckh r=0.995, eek/kee r=0.997; mean within-group r=0.967 vs between r=0.957; order does not alter distributional behavior) | 2 | B, composition, order | -> [C1198_middle_order_irrelevance.md](C1198_middle_order_irrelevance.md) |
 | **1199** | **Extension Distributional Gradient** (ee-rate varies by section: S=24.5%, B=10.8%, p<0.001; headers depleted vs bodies 5.8% vs 13.7%, p<0.001; within-section folio variance substantial, HERBAL CV=0.54; extension parameterized at section, folio, and paragraph level) | 2 | B, extension, distribution | -> [C1199_extension_distributional_gradient.md](C1199_extension_distributional_gradient.md) |
+| **1200** | **Order Encodes Procedural State** (atom ordering within MIDDLEs carries state: after k-terminal, 70.6% start with e vs 58.2% after e-terminal, p<0.001; ke chosen after cool predecessors, ek after hot; K-DOM alternates 1.94x, E-DOM persists 0.60x; carryover within-line +0.247 but resets at line boundaries +0.021) | 2 | B, order, state | -> [C1200_order_encodes_procedural_state.md](C1200_order_encodes_procedural_state.md) |
 
 ---
 

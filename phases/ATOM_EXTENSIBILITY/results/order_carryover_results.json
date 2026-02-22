@@ -1,0 +1,89 @@
+{
+  "T6a_terminal_initial_bias": {
+    "n_transitions": 20676,
+    "ke_transitions": {
+      "e->e": 510,
+      "e->k": 366,
+      "k->e": 944,
+      "k->k": 394
+    },
+    "p_e_after_k": 0.7055,
+    "p_e_after_e": 0.5822,
+    "p_k_after_e": 0.4178,
+    "p_k_after_k": 0.2945,
+    "carryover_e": 0.1233,
+    "carryover_k": 0.1233,
+    "chi2": 2432.5,
+    "p_value": 0.0
+  },
+  "T6b_ke_ordering_context": {
+    "ke": {
+      "n": 377,
+      "ends_k": 45,
+      "ends_e": 80,
+      "ends_other": 252,
+      "pct_ends_k": 0.1194,
+      "pct_ends_e": 0.2122
+    },
+    "ek": {
+      "n": 169,
+      "ends_k": 32,
+      "ends_e": 9,
+      "ends_other": 128,
+      "pct_ends_k": 0.1893,
+      "pct_ends_e": 0.0533
+    },
+    "kee": {
+      "n": 27,
+      "ends_k": 4,
+      "ends_e": 3,
+      "ends_other": 20,
+      "pct_ends_k": 0.1481,
+      "pct_ends_e": 0.1111
+    },
+    "eek": {
+      "n": 51,
+      "ends_k": 9,
+      "ends_e": 3,
+      "ends_other": 39,
+      "pct_ends_k": 0.1765,
+      "pct_ends_e": 0.0588
+    }
+  },
+  "T6c_transition_matrix": {
+    "matrix": {
+      "E-DOM->NEITHER": 3103,
+      "NEITHER->E-DOM": 3122,
+      "E-DOM->E-DOM": 2059,
+      "NEITHER->NEITHER": 5611,
+      "NEITHER->K-DOM": 999,
+      "K-DOM->NEITHER": 1379,
+      "E-DOM->K-DOM": 1227,
+      "K-DOM->E-DOM": 883,
+      "K-DOM->BALANCED": 162,
+      "BALANCED->K-DOM": 214,
+      "NEITHER->BALANCED": 313,
+      "BALANCED->E-DOM": 307,
+      "K-DOM->K-DOM": 456,
+      "BALANCED->NEITHER": 379,
+      "E-DOM->BALANCED": 386,
+      "BALANCED->BALANCED": 76
+    },
+    "n": 20676
+  },
+  "T6d_line_boundary_reset": {
+    "within": {
+      "n": 20676,
+      "carryover": 0.2467,
+      "p_e_after_k": 0.7055,
+      "p_e_after_e": 0.5822
+    },
+    "across": {
+      "n": 2338,
+      "carryover": 0.0213,
+      "p_e_after_k": 0.7356,
+      "p_e_after_e": 0.725
+    },
+    "difference": 0.2254
+  }
+}
