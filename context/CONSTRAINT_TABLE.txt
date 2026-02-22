@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1054 constraints | 2026-02-22
+CONSTRAINT_REFERENCE v2.6 | 1056 constraints | 2026-02-22
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1058,3 +1058,5 @@ C1206	**Paragraph Kernel Gradient** (h declines r=-0.920 through folio line quin
 C1207	**Atom Correlation Clusters** (~20 atoms organize into 5-6 correlated clusters at folio level; {a,i,n,r} iteration axis r=+0.81-0.83, {c,h} monitoring r=+0.75, {k,l} energy r=+0.54, {d,y} closure r=+0.48, {o,p} structural r=+0.41; 64/153 pairs FDR-significant; all survive daiin removal)	2	B, atoms, dimensionality, clusters	-> C1207_atom_correlation_clusters.md
 C1208	**Atom Carryover Classification** (18 atoms classify into 3 carryover classes: POSITIVE state persistence {a,c,h,k,m,p,r,s,t} z=+2.5 to +9.6; NEGATIVE anti-clustering {e,i,n,y} z=-4.3 to -6.1; NEUTRAL {d,f,l,o,q}; e anti-clusters despite C1200 directional carryover; all survive daiin removal)	2	B, atoms, carryover, classification	-> C1208_atom_carryover_classification.md
 C1209	**MIDDLE Positional Grammar** (atoms occupy ordered slots within MIDDLEs: INITIAL {a,q,e,o} 86-57% initial; MEDIAL {c,i,p,d,f,s}; TERMINAL {n,y,m,r,h,l} 71-99% terminal; FREE {k,t} no preference; n 99.4% terminal, a 86.3% initial; all 18 atoms FDR-significant; k/t position-freedom consistent with kernel operator role)	2	B, atoms, position, grammar	-> C1209_middle_positional_grammar.md
+C1210	**MIDDLE Slot Syntax** (INITIAL and TERMINAL slots NOT independent: chi2=27,465, V=0.307, MI=1.071 bits; persists at length 4+ V=0.285; near-categorical forbidden combinations: a->y 0/796, e->n 1/813, k->n 0/135; n-terminal forbidden with all non-iteration INITIAL atoms; strong affinities follow C1207 clusters: k->e 7.94x, i->n 6.78x, d->y 3.18x)	2	B, atoms, syntax, slots	-> C1210_middle_slot_syntax.md
+C1211	**Sub-MIDDLE Pairwise Sufficiency** (INITIAL+MEDIAL+TERMINAL show REDUNDANCY not synergy: synergy=-0.827 bits; extends C1003 to sub-MIDDLE level; INITIAL explains 35.9% of TERMINAL entropy, MEDIAL 49.1%, both together 57.5%; pairwise interactions sufficient at both morphological levels)	2	B, atoms, synergy, pairwise	-> C1211_sub_middle_pairwise_sufficiency.md
