@@ -1,0 +1,333 @@
+{
+  "T1_extension_gradient": {
+    "run_counts": {
+      "2": 1544,
+      "1": 1321,
+      "3": 10
+    },
+    "e_run_counts": {
+      "1": 6678,
+      "2": 1490,
+      "3": 64,
+      "4": 1
+    },
+    "total_with_i": 2875,
+    "total_with_e": 8233,
+    "top_families": [
+      [
+        "aIn",
+        {
+          "1": 420,
+          "2": 834
+        }
+      ],
+      [
+        "In",
+        {
+          "2": 560,
+          "1": 264,
+          "3": 1
+        }
+      ],
+      [
+        "aI",
+        {
+          "1": 174,
+          "2": 32
+        }
+      ],
+      [
+        "I",
+        {
+          "1": 137,
+          "2": 23,
+          "3": 1
+        }
+      ],
+      [
+        "oIn",
+        {
+          "1": 6,
+          "2": 32,
+          "3": 1
+        }
+      ],
+      [
+        "kaI",
+        {
+          "1": 24,
+          "2": 4,
+          "3": 1
+        }
+      ],
+      [
+        "daI",
+        {
+          "1": 23
+        }
+      ],
+      [
+        "Ir",
+        {
+          "1": 19,
+          "2": 3
+        }
+      ],
+      [
+        "oI",
+        {
+          "1": 13,
+          "2": 4
+        }
+      ],
+      [
+        "raI",
+        {
+          "2": 2,
+          "1": 12
+        }
+      ],
+      [
+        "edaI",
+        {
+          "1": 11,
+          "2": 1
+        }
+      ],
+      [
+        "taI",
+        {
+          "1": 8,
+          "2": 3
+        }
+      ],
+      [
+        "odaI",
+        {
+          "2": 1,
+          "1": 8
+        }
+      ],
+      [
+        "Im",
+        {
+          "1": 8
+        }
+      ],
+      [
+        "aIro",
+        {
+          "1": 7,
+          "2": 1
+        }
+      ]
+    ]
+  },
+  "T2_carryover": {
+    "within_p_i_given_i": 0.1119,
+    "within_p_i_given_no_i": 0.1196,
+    "within_delta": -0.0076,
+    "cross_p_i_given_i": 0.1975,
+    "cross_p_i_given_no_i": 0.1761,
+    "cross_delta": 0.0214,
+    "shuffle_p": 1.0,
+    "z_score": -6.14,
+    "verdict": "NO CARRYOVER"
+  },
+  "T3_ke_independence": {
+    "i_token_fracs": {
+      "k": 0.0089,
+      "e": 0.0049,
+      "h": 0.0041
+    },
+    "non_i_token_fracs": {
+      "k": 0.104,
+      "e": 0.2364,
+      "h": 0.0385
+    },
+    "n_i_tokens": 2875,
+    "n_non_i_tokens": 20221,
+    "line_high_i_ke": {
+      "k": 0.0723,
+      "e": 0.1725
+    },
+    "line_low_i_ke": {
+      "k": 0.1034,
+      "e": 0.2201
+    },
+    "folio_r_ik": -0.437,
+    "folio_r_ie": -0.412,
+    "folio_r_ke": 0.079,
+    "chi2": 2272.4
+  },
+  "T4_distribution": {
+    "section_data": {
+      "HERBAL": {
+        "total": 3433,
+        "i_count": 414,
+        "i_frac": 0.1206
+      },
+      "TEXT": {
+        "total": 662,
+        "i_count": 73,
+        "i_frac": 0.1103
+      },
+      "BIO": {
+        "total": 6850,
+        "i_count": 567,
+        "i_frac": 0.0828
+      },
+      "COSMO": {
+        "total": 1480,
+        "i_count": 238,
+        "i_frac": 0.1608
+      },
+      "STARS_RECIPE": {
+        "total": 10671,
+        "i_count": 1583,
+        "i_frac": 0.1483
+      }
+    },
+    "n_folios": 82,
+    "global_mean": 0.1225,
+    "global_var": 0.002777,
+    "within_var": 0.001796,
+    "between_var": 0.000982,
+    "determination": "PROGRAM_SPECIFIC"
+  },
+  "T5a_carryover_no_aiin": {
+    "within_p_i_given_i": 0.0762,
+    "within_p_i_given_no_i": 0.0837,
+    "within_delta": -0.0075,
+    "cross_p_i_given_i": 0.1888,
+    "cross_p_i_given_no_i": 0.1625,
+    "cross_delta": 0.0263,
+    "shuffle_p": 1.0,
+    "z_score": -3.97,
+    "verdict": "NO CARRYOVER"
+  },
+  "T5b_independence_no_aiin": {
+    "i_token_fracs": {
+      "k": 0.0142,
+      "e": 0.0077,
+      "h": 0.0065
+    },
+    "non_i_token_fracs": {
+      "k": 0.104,
+      "e": 0.2364,
+      "h": 0.0385
+    },
+    "n_i_tokens": 2037,
+    "n_non_i_tokens": 20221,
+    "line_high_i_ke": {
+      "k": 0.0833,
+      "e": 0.1882
+    },
+    "line_low_i_ke": {
+      "k": 0.1038,
+      "e": 0.2313
+    },
+    "folio_r_ik": -0.275,
+    "folio_r_ie": -0.272,
+    "folio_r_ke": -0.033,
+    "chi2": 1566.3
+  },
+  "T6a_carryover_interrupt": {
+    "k_terminal_with_i": {
+      "e_init": 71,
+      "k_init": 19,
+      "other": 132
+    },
+    "k_terminal_without_i": {
+      "e_init": 614,
+      "k_init": 426,
+      "other": 1208
+    },
+    "k_term_wi_e_rate": 0.3198,
+    "k_term_wo_e_rate": 0.2731,
+    "e_terminal_with_i": {
+      "e_init": 61,
+      "k_init": 10,
+      "other": 105
+    },
+    "e_terminal_without_i": {
+      "e_init": 427,
+      "k_init": 203,
+      "other": 707
+    },
+    "baseline_e": 0.3032
+  },
+  "T6b_paragraph_drift": {
+    "quintiles": {
+      "Q0": {
+        "k": 0.0772,
+        "e": 0.1889,
+        "h": 0.0392,
+        "i": 0.0797,
+        "n_lines": 519,
+        "tok_per_line": 9.9
+      },
+      "Q1": {
+        "k": 0.0903,
+        "e": 0.1877,
+        "h": 0.0325,
+        "i": 0.0903,
+        "n_lines": 480,
+        "tok_per_line": 9.7
+      },
+      "Q2": {
+        "k": 0.0894,
+        "e": 0.1932,
+        "h": 0.0327,
+        "i": 0.0877,
+        "n_lines": 488,
+        "tok_per_line": 9.4
+      },
+      "Q3": {
+        "k": 0.0854,
+        "e": 0.2059,
+        "h": 0.028,
+        "i": 0.0923,
+        "n_lines": 480,
+        "tok_per_line": 9.2
+      },
+      "Q4": {
+        "k": 0.095,
+        "e": 0.2026,
+        "h": 0.0282,
+        "i": 0.0868,
+        "n_lines": 453,
+        "tok_per_line": 9.4
+      }
+    },
+    "gradients": {
+      "k": 0.0178,
+      "e": 0.0137,
+      "h": -0.011,
+      "i": 0.0071
+    }
+  },
+  "T6c_i_count_energy": {
+    "no_i": {
+      "n_lines": 825,
+      "n_tokens": 7242,
+      "k": 0.1147,
+      "e": 0.2305,
+      "h": 0.0385
+    },
+    "single_i": {
+      "n_lines": 514,
+      "n_tokens": 4995,
+      "k": 0.0916,
+      "e": 0.1969,
+      "h": 0.0367
+    },
+    "double_i": {
+      "n_lines": 1067,
+      "n_tokens": 10837,
+      "k": 0.0689,
+      "e": 0.1736,
+      "h": 0.027
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1047 validated constraints | **Version:** 4.28 | **Date:** 2026-02-22
+**Total:** 1050 validated constraints | **Version:** 4.29 | **Date:** 2026-02-22
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3293,6 +3293,9 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 | **1201** | **PREFIX-Mediated Energy State Routing** (ch/sh prefixes route k/e energy state transitions; predecessor ch:sh=1.76:1 at k->e switches vs 0.98:1 at continuations, Fisher p=0.008; target PREFIX chi2=104.2; sh 2.06x and lsh 3.17x enriched at switches; qo 0.69x and ol 0.57x enriched at continuations) | 2 | B, prefix, energy, routing | -> [C1201_prefix_energy_state_routing.md](C1201_prefix_energy_state_routing.md) |
 | **1202** | **H-Kernel MIDDLE No Transition Mediation** (h-kernel in MIDDLE does NOT mediate k/e transitions; mediator h-rate 5.5% at k->e vs 7.2% at k->k, delta=-0.016, perm p=0.852; function resides in PREFIX layer not MIDDLE; STARS_RECIPE only section with positive delta, confirming C1154) | 2 | B, h-kernel, negative | -> [C1202_h_kernel_middle_no_transition_mediation.md](C1202_h_kernel_middle_no_transition_mediation.md) |
 | **1203** | **ch/sh MIDDLE Atom-Level Differentiation** (ch-prefix MIDDLEs have higher k-atom fraction (7.1% vs 5.9%) and prefer e-free MIDDLEs: dy 3.1x, k 3.1x, d 2.8x ch-biased; sh-prefix MIDDLEs are more e-enriched (35.1% vs 30.2%); both share core vocabulary but frequency distributions diverge along k/e axis) | 2 | B, prefix, atoms, ch, sh | -> [C1203_ch_sh_middle_atom_differentiation.md](C1203_ch_sh_middle_atom_differentiation.md) |
+| **1204** | **i-Extension Inverted Gradient** (i-gradient inverted vs e: ii 53.7% > single-i 45.9%, unlike e where single-e 81.1% dominates; driven by aIn family where ii-form is 2x more common; HERBAL highest ii+ rate 67.6%, BIO lowest 46.7%) | 2 | B, i-atom, extension | -> [C1204_i_extension_inverted_gradient.md](C1204_i_extension_inverted_gradient.md) |
+| **1205** | **i-Atom Orthogonal to k/e Energy System** (i operates on independent axis: no carryover z=-6.14 (anti-clusters), disjoint atom space chi2=2272, folio r(i,k)=-0.437 r(i,e)=-0.412, program-specific within/between=1.83, partial carryover interruption; all signals survive daiin removal) | 2 | B, i-atom, orthogonality, k/e | -> [C1205_i_ke_orthogonality.md](C1205_i_ke_orthogonality.md) |
+| **1206** | **Paragraph Kernel Gradient** (h declines r=-0.920 through folio line quintiles while k rises r=+0.727 and e rises r=+0.881; early lines monitoring-heavy, later lines operation-heavy; extends C965 kernel composition shift) | 2 | B, paragraph, gradient, kernel | -> [C1206_paragraph_kernel_gradient.md](C1206_paragraph_kernel_gradient.md) |
 
 ---
 
