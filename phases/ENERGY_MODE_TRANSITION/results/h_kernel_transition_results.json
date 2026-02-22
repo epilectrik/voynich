@@ -1,0 +1,158 @@
+{
+  "T1_h_at_transitions": {
+    "mediator_h": {
+      "k_to_e": {
+        "h": 38,
+        "total": 685
+      },
+      "k_to_k": {
+        "h": 32,
+        "total": 445
+      },
+      "e_to_k": {
+        "h": 20,
+        "total": 213
+      },
+      "e_to_e": {
+        "h": 20,
+        "total": 488
+      }
+    },
+    "target_h": {
+      "k_to_e": {
+        "h": 18,
+        "total": 685
+      },
+      "k_to_k": {
+        "h": 32,
+        "total": 445
+      },
+      "e_to_k": {
+        "h": 5,
+        "total": 213
+      },
+      "e_to_e": {
+        "h": 14,
+        "total": 488
+      }
+    },
+    "delta_mediator_k": -0.0164,
+    "delta_target_k": -0.0456,
+    "delta_mediator_e": 0.0529,
+    "p_value_mediator": 0.852
+  },
+  "T2_ch_sh_modality": {
+    "prefix_at_predecessor": {
+      "k_to_e": {
+        "sh": 74,
+        "other": 740,
+        "ch": 130
+      },
+      "k_to_k": {
+        "ch": 62,
+        "other": 269,
+        "sh": 63
+      },
+      "e_to_k": {
+        "other": 281,
+        "sh": 56,
+        "ch": 29
+      },
+      "e_to_e": {
+        "other": 379,
+        "sh": 54,
+        "ch": 77
+      }
+    },
+    "target_prefix": {
+      "k_to_e": {
+        "other": 320,
+        "ch": 358,
+        "sh": 266
+      },
+      "k_to_k": {
+        "other": 376,
+        "sh": 7,
+        "ch": 11
+      }
+    },
+    "fisher_p": 0.0081
+  },
+  "T3_prefix_routing": {
+    "total_switch": 1310,
+    "total_continue": 904,
+    "enrichments": {
+      "ch": 1.54,
+      "ke": 0.69,
+      "lch": 0.569,
+      "lk": 0.857,
+      "lsh": 3.174,
+      "ok": 1.026,
+      "ol": 0.572,
+      "ot": 0.752,
+      "qo": 0.69,
+      "rch": 1.035,
+      "sh": 2.062,
+      "te": 1.15,
+      "yk": 0.748
+    },
+    "chi2": 104.2
+  },
+  "T4_h_enriched_middles": {
+    "before_transition_rate": 0.0,
+    "before_continuation_rate": 0.0,
+    "before_enrichment": Infinity,
+    "before_fisher_p": 1.0,
+    "at_transition_rate": 0.0,
+    "at_continuation_rate": 0.0,
+    "at_enrichment": Infinity,
+    "at_fisher_p": 1.0
+  },
+  "T5_section_stratification": {
+    "BIO": {
+      "n_lines": 764,
+      "ke_total": 309,
+      "kk_total": 227,
+      "ke_h_rate": 0.0259,
+      "kk_h_rate": 0.0793,
+      "delta": -0.0534,
+      "sufficient": true
+    },
+    "COSMO": {
+      "n_lines": 127,
+      "ke_total": 19,
+      "kk_total": 11,
+      "ke_h_rate": 0.0526,
+      "kk_h_rate": 0.0,
+      "delta": 0.0526,
+      "sufficient": false
+    },
+    "HERBAL": {
+      "n_lines": 377,
+      "ke_total": 71,
+      "kk_total": 35,
+      "ke_h_rate": 0.0282,
+      "kk_h_rate": 0.0571,
+      "delta": -0.029,
+      "sufficient": true
+    },
+    "STARS_RECIPE": {
+      "n_lines": 1083,
+      "ke_total": 277,
+      "kk_total": 164,
+      "ke_h_rate": 0.0939,
+      "kk_h_rate": 0.0732,
+      "delta": 0.0207,
+      "sufficient": true
+    },
+    "TEXT": {
+      "n_lines": 69,
+      "ke_total": 9,
+      "kk_total": 8,
+      "ke_h_rate": 0.1111,
+      "kk_h_rate": 0.0,
+      "delta": 0.1111,
+      "sufficient": false
+    }
+  }
+}
