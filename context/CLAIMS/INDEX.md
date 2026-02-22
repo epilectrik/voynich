@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1035 validated constraints | **Version:** 4.22 | **Date:** 2026-02-22
+**Total:** 1038 validated constraints | **Version:** 4.23 | **Date:** 2026-02-22
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3260,6 +3260,16 @@ Atoms carry consistent behavioral IDENTITY across positions (15/18 CONSISTENT, C
 | # | Statement | Tier | Scope | Link |
 |---|-----------|------|-------|------|
 | **1191** | **Position-Dependent Behavioral Composition** (atoms carry consistent identity across PREFIX/MIDDLE/SUFFIX but composition rules differ: MIDDLE=additive, PREFIX=emergent, SUFFIX=systematic shift r=0.892; 15/18 atoms cross-positionally consistent; c,h,s,p PREFIX-emergent; k-t near-identical r=0.993) | 2 | B, morphology, positional composition | -> [C1191_position_dependent_composition.md](C1191_position_dependent_composition.md) |
+
+### Positional Atomicity (C1192-C1194) -- Phase: POSITIONAL_ATOMICITY (Phase 423)
+
+Position-specific atom profiles reveal universal additive composition in SUFFIX (r=0.953, p=0.029), compositional duality in PREFIX (core prefixes emergent, extended prefixes additive), and discrimination of previously identical atom pairs (k-t, d-o, p-t, l-r all separate). Discrete role clustering found: PREFIX shifts cluster into 2 groups {a,d,o,q} vs rest; not a continuum.
+
+| # | Statement | Tier | Scope | Link |
+|---|-----------|------|-------|------|
+| **1192** | **SUFFIX Additive Composition** (SUFFIX compounds compose additively from position-specific atom profiles; r=0.953, z=2.59, p=0.029; extends C1190 to SUFFIX; cross-position baseline r=0.676, improvement +0.277) | 2 | B, SUFFIX, composition | -> [C1192_suffix_additive_composition.md](C1192_suffix_additive_composition.md) |
+| **1193** | **PREFIX Compositional Duality** (PREFIX compounds split into compositional class (ke/te/ka/po/pch, predictable from atom profiles) and emergent class (ch/sh/da/ot/ok/ol, opaque); maps to EXTENDED/CORE prefix classification; discrete role clustering k=2: {a,d,o,q} vs {c,e,f,h,k,l,p,r,s,t,y}) | 2 | B, PREFIX, composition | -> [C1193_prefix_compositional_duality.md](C1193_prefix_compositional_duality.md) |
+| **1194** | **Position-Specific Pair Discrimination** (near-identical atom pairs separate under position-specific profiles: k-t 0.993->0.568, d-o 0.945->0.296, p-t 0.935->0.467, l-r 0.919->0.806; global identity was masking PREFIX distinctions; no true atom redundancy) | 2 | B, atoms, discrimination | -> [C1194_position_specific_pair_discrimination.md](C1194_position_specific_pair_discrimination.md) |
 
 ---
 

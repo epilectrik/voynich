@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1035 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 1038 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1035 validated)
+- Tier 0-2 binding constraints (1038 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1035 constraints, 66 fits,
+full content in their source documents. All 1038 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-22 09:36
-**Version:** FROZEN STATE (1035 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-22 10:06
+**Version:** FROZEN STATE (1038 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1036 constraints | 2026-02-22
+CONSTRAINT_REFERENCE v2.6 | 1039 constraints | 2026-02-22
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2144,6 +2144,9 @@ C1188	**Sister Entry Divergence Absent**
 C1189	**Sister Is Proxy Not Lever** (C1186 correlation mediated by C1163-C1165 opener-routing features; boundary architecture structurally complete; C1169 residual confirmed irreducible by sister)
 C1190	**MIDDLE Behavioral Atomicity**
 C1191	**Position-Dependent Behavioral Composition**
+C1192	**SUFFIX Additive Composition**
+C1193	**PREFIX Compositional Duality** (PREFIX compounds split into compositional class (ke/te/ka/po/pch, predictable from atom profiles) and emergent class (ch/sh/da/ot/ok/ol, opaque); maps to EXTENDED/CORE prefix classification; discrete role clustering k=2: {a,d,o,q} vs {c,e,f,h,k,l,p,r,s,t,y})
+C1194	**Position-Specific Pair Discrimination** (near-identical atom pairs separate under position-specific profiles: k-t 0.993->0.568, d-o 0.945->0.296, p-t 0.935->0.467, l-r 0.919->0.806; global identity was masking PREFIX distinctions; no true atom redundancy)
 
 ---
 
