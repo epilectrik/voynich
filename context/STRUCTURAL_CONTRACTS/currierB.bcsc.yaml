@@ -321,6 +321,24 @@ morphology:
           agreement with C1065 atom ordering, gateway/terminal positioning
           preserved). C935, C1141, C1142.
         provenance: "C267, C506.b, C935, C1141, C1142"
+      behavioral_atomicity:
+        statement: |
+          Single characters are genuine behavioral atoms of MIDDLE composition.
+          Multi-character MIDDLEs inherit behavioral profiles by additive
+          composition of component atoms: r=0.754 (no-kernel), z=3.32, p<0.001.
+          Atoms carry consistent behavioral IDENTITY across positions (15/18
+          CONSISTENT) but compositional rules are position-specific: MIDDLE is
+          additive, PREFIX is emergent (c,h,s,p compounds specialize), SUFFIX
+          imposes a systematic shift (r=0.892). C1190, C1191.
+        top_predictive_features:
+          pfx_da: 0.624
+          pfx_sa: 0.474
+          lf_rate: 0.466
+          art_rate: 0.454
+          sfx_rate: 0.451
+        kernel_variant: "r=0.500 (weaker — consistent with C522 layer independence)"
+        prefix_emergence: "c, h, s, p degrade compound predictions (+0.026 to +0.035 delta). PREFIX compounds (ch, sh, kch) are specialized functional units, not additive atom combinations. Consistent with C929."
+        provenance: "C1190, C1191"
       SUFFIX:
         required: false
         unique_count: 35
@@ -424,7 +442,7 @@ morphology:
         suffixes: ["-edy", "-ey"]
         link_proximity: "Distant"
         kernel_contact: "100%"
-    line_template: "ENTRY → MONITORING → LINK → INTERVENTION → EXIT"
+    line_template: "ENTRY → EARLY-CYCLE → ol-BOUNDARY → LATE-CYCLE → EXIT"
     provenance: "C382"
 
   fl_state_index:
@@ -1153,7 +1171,18 @@ three_compression_architecture:
     (C1141) — dark-pipeline compounds are built FROM bridge atoms but share no
     complete MIDDLEs with bridges.
 
-  provenance: "C1019, C1020, C1021, C1003, C1004, C1010, C1013, C1139, C1141"
+  atom_behavioral_basis: |
+    Bridge atoms serve as building blocks (C1141) BECAUSE they carry genuine
+    behavioral profiles that compose additively in MIDDLE position (C1190).
+    Composition is position-dependent (C1191): additive in MIDDLE (r=0.754),
+    emergent in PREFIX (ch/sh acquire specialized profiles), systematic shift
+    in SUFFIX (r=0.892). Atoms maintain consistent identity across positions
+    (15/18 CONSISTENT) but follow position-specific compositional rules.
+    Dark-pipeline compounds inherit operational character from their bridge
+    atom substrates through behavioral composition, not arbitrary string
+    concatenation.
+
+  provenance: "C1019, C1020, C1021, C1003, C1004, C1010, C1013, C1139, C1141, C1190, C1191"
 
 # ============================================================
 design_freedom:
@@ -1730,7 +1759,7 @@ operational_layer:
       edy: {gloss: "batch", freq: 2147, pct: "9.3%"}
       dy: {gloss: "close", freq: 1081, pct: "4.7%"}
       aiin: {gloss: "check", freq: 952, pct: "4.1%"}
-      hy: {gloss: "hazard flag", freq: 910, pct: "3.9%"}
+      hy: {gloss: "confirm", freq: 910, pct: "3.9%"}
       ar: {gloss: "close", freq: 834, pct: "3.6%"}
       ain: {gloss: "intake", freq: 742, pct: "3.2%"}
       y: {gloss: "end", freq: 678, pct: "2.9%"}
@@ -1754,7 +1783,7 @@ operational_layer:
         reading: "on stability channel: cool, then close"
       - token: "sheckhy"
         parse: "sh:eck.hy"
-        reading: "on verify channel: hard precision, hazard flag"
+        reading: "on verify channel: hard precision, confirm"
       - token: "daiin"
         parse: "da:iin"
         reading: "infrastructure: iterate (control loop marker)"

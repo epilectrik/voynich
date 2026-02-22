@@ -41,8 +41,13 @@ Logistic regression on 245 character-level features (character presence, bigrams
 3. PREFIX creates soft compatibility blocks (3.92× enrichment) but these blocks DON'T align with the graph's spectral communities
 4. Consistent with C120/C171 semantic ceiling: individual morphological features don't determine function
 
+## Reconciliation with C1190 (MIDDLE Behavioral Atomicity)
+
+C985 establishes that characters cannot predict **compatibility** (execution layer). C1190 later established that characters DO predict **behavioral profiles** (construction layer) at r=0.754, p<0.001. These findings are complementary — they measure different layers of the three-layer architecture (C522). Characters carry construction information (position, suffix rate, prefix co-occurrence) but not execution information (compatibility, legal transitions). See C1190 for the full reconciliation table.
+
 ## Provenance
 
 - T3 (structural decomposition), T4 (morphological derivation)
 - Reinforces C120 (semantic ceiling) and C171 (morphology ≠ semantics)
 - Consistent with C984 (independent features insufficient) — the features that DO determine compatibility are structured and correlated
+- Complemented by C1190 (characters predict construction-layer behavior, not execution-layer compatibility)

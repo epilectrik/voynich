@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1034 validated constraints | **Version:** 4.21 | **Date:** 2026-02-20
+**Total:** 1035 validated constraints | **Version:** 4.22 | **Date:** 2026-02-22
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3244,6 +3244,22 @@ Pre-registered minimal model comparison testing whether opener sister-pair compo
 - T4: beta = -0.003, sign wrong, unstable under ablation (SIGN_WRONG)
 - T5: AXM mediation ΔLOO = -0.014, F=0.32, p=0.57 (AXM_ABSORBED)
 - Overall: SISTER_ENTRY_LEVER_ABSENT
+
+### MIDDLE Behavioral Atomicity (C1190) -- Phase: COMPOUND_DECOMPOSITION
+
+Single characters are genuine behavioral atoms of MIDDLE composition. Multi-character MIDDLEs inherit behavioral profiles by additive composition of component atoms. Validated by permutation test: r=0.754 (no-kernel), z=3.32, p<0.001, 0/1000 permutations. Scope corrected by Phase 422: additive composition is MIDDLE-specific; PREFIX and SUFFIX follow different compositional rules (see C1191).
+
+| # | Statement | Tier | Scope | Link |
+|---|-----------|------|-------|------|
+| **1190** | **MIDDLE Behavioral Atomicity** (multi-character MIDDLEs inherit behavioral profiles from component single-char atoms by additive composition; r=0.754 no-kernel, z=3.32, p<0.001; 0/1000 permutations; scope: MIDDLE only, PREFIX/SUFFIX per C1191) | 2 | B, morphology, atomic composition | -> [C1190_middle_behavioral_atomicity.md](C1190_middle_behavioral_atomicity.md) |
+
+### Position-Dependent Behavioral Composition (C1191) -- Phase: CROSSWORD_GLOSS_VALIDATION (Phase 422)
+
+Atoms carry consistent behavioral IDENTITY across positions (15/18 CONSISTENT, CPC >= 0.7) but follow position-specific COMPOSITIONAL RULES. MIDDLE: additive (C1190). PREFIX: emergent (c, h, s, p degrade predictions; consistent with C929 PREFIX specialization). SUFFIX: systematic shift (r=0.892, all atoms shift behavior consistently). Near-identical behavioral pairs found: k-t (r=0.993), d-o (r=0.945).
+
+| # | Statement | Tier | Scope | Link |
+|---|-----------|------|-------|------|
+| **1191** | **Position-Dependent Behavioral Composition** (atoms carry consistent identity across PREFIX/MIDDLE/SUFFIX but composition rules differ: MIDDLE=additive, PREFIX=emergent, SUFFIX=systematic shift r=0.892; 15/18 atoms cross-positionally consistent; c,h,s,p PREFIX-emergent; k-t near-identical r=0.993) | 2 | B, morphology, positional composition | -> [C1191_position_dependent_composition.md](C1191_position_dependent_composition.md) |
 
 ---
 

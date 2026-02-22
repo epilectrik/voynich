@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1034 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 1035 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1034 validated)
+- Tier 0-2 binding constraints (1035 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1034 constraints, 66 fits,
+full content in their source documents. All 1035 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-21 00:06
-**Version:** FROZEN STATE (1034 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-22 09:36
+**Version:** FROZEN STATE (1035 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -296,7 +296,7 @@ See [CORE/falsifications.md](CORE/falsifications.md) for complete list with evid
 - Kernel control (3 operators: k, h, e)
 - Hazard topology (17 forbidden transitions, 5 failure classes)
 - Convergence to stable states (57.8% terminal STATE-C)
-- LINK operator (13.2% of tokens = deliberate waiting; C609 corrected from legacy 38%)
+- LINK population (13.2% of tokens = ol-morphology, role-stratified; C609 density, C1174 morphological artifact)
 - Folio = complete program, Line = formal control block
 
 **Not encoded (operator provides externally):**
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1034 constraints | 2026-02-21
+CONSTRAINT_REFERENCE v2.6 | 1036 constraints | 2026-02-22
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2142,6 +2142,8 @@ C1186	**Sister Boundary Coupled**
 C1187	**Sister Mechanism: BOUNDARY_CONTROL_KNOB** (synthesis: structured, positional, dynamical, boundary-coupled; reduces C639 unexplained from 52.9% to ~40%)
 C1188	**Sister Entry Divergence Absent**
 C1189	**Sister Is Proxy Not Lever** (C1186 correlation mediated by C1163-C1165 opener-routing features; boundary architecture structurally complete; C1169 residual confirmed irreducible by sister)
+C1190	**MIDDLE Behavioral Atomicity**
+C1191	**Position-Dependent Behavioral Composition**
 
 ---
 
@@ -2149,7 +2151,7 @@ C1189	**Sister Is Proxy Not Lever** (C1186 correlation mediated by C1163-C1165 o
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-02-21
+# Generated: 2026-02-22
 # Total: 66 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
@@ -2412,6 +2414,49 @@ TOKEN = PREFIX   → operation domain selector (selects allowed MIDDLE family)
 | Entity identity (lavender) | IRRECOVERABLE | - |
 | Material CLASS priors | **PARTIALLY RECOVERABLE** | Bayesian inference via procedural context |
 **Conditional recovery (IF Brunschwig applies):**
+
+
+
+
+| Suffix | Kernel | Gloss | Tokens | Compositional Reading |
+|--------|--------|-------|--------|-----------------------|
+| `-y`   | null   | "end" | 458 | bare close |
+| `-ey`  | E      | "set" | 769 | e-kernel stabilizing close |
+
+
+
+
+
+
+
+
+| Kernel | Function | Abbreviation | Meaning | Confidence |
+|--------|----------|-------------|---------|------------|
+| **K** | ENERGY_DRIVER | **K**ochen (Ger.) | to boil/cook | Strong |
+| **E** | STABILITY_ANCHOR | **E**rkalten (Ger.) | to cool down | Strong |
+
+
+| Element | Position | Abbreviation | Meaning | Confidence |
+|---------|----------|-------------|---------|------------|
+| **qo** | PREFIX (energy channel) | **Co**quo (Lat.) | I boil/cook | Strong |
+| **op** | PREFIX | **Op**erare (Lat.) | to operate/work | Moderate |
+
+
+| Consonant | Our Gloss | German Candidate | Meaning | Confidence |
+|-----------|-----------|-----------------|---------|------------|
+| **d** | "seal" (END-class, C919) | **D**ichten | to seal/make tight | Moderate |
+| **t** | "transfer" | **T**reiben | to drive; also *abtreiben* = to drive off volatiles | Moderate |
+
+
+| Element | Position | Candidate | Meaning | Confidence |
+|---------|----------|-----------|---------|------------|
+| **l** | SUFFIX/MIDDLE | **L**etzt (last) or **L**assen (to let) | last; to allow/release | Weak |
+| **p** | SUFFIX | **P**ause | pause/rest | Weak |
+
+
+
+
+
 
 
 
@@ -2698,6 +2743,105 @@ This resolves both the C505 paradox (material-class PP differentiation with null
 | C517 | Superstring compression (hinge letters) |
 | C521 | Directional asymmetry (construction layer) |
 | C522 | Layer independence (falsified isomorphism) |
+
+
+---
+
+
+## 0.C.1. MIDDLE ATOM BEHAVIORAL COMPOSITION (COMPOUND_DECOMPOSITION + CROSSWORD_GLOSS_VALIDATION Phases)
+### Tier 2: Statistical Foundation (C1190, C1191)
+
+> **Single-character MIDDLEs are genuine behavioral atoms. Compound MIDDLEs inherit behavioral profiles by additive composition of their component atoms. Permutation test: r=0.754, z=3.32, p<0.001, 0/1000 permutations beating real assignment.**
+
+> **Additive composition is MIDDLE-specific (C1190 scope correction, Phase 422). PREFIX compounds show emergent behavior — atoms c, h, s, p acquire specialized profiles in PREFIX position that exceed simple addition (C1191). SUFFIX position imposes a systematic behavioral shift on all atoms (pairwise shift correlation r=0.892). Atoms maintain consistent IDENTITY across positions (15/18 CONSISTENT) but follow position-specific COMPOSITIONAL RULES (C1191).**
+
+This finding provides behavioral validation of Section 0.C's three-layer architecture. The construction layer isn't just string manipulation — the atoms being constructed with carry genuine functional signatures that compose additively in MIDDLE position, while PREFIX and SUFFIX positions apply distinct compositional rules.
+
+| Variant | Real r | Perm r | Z | p |
+|---------|--------|--------|---|---|
+| All features (incl kernel) | 0.711 | 0.478 | 5.04 | <0.001 |
+| **No kernel (circularity-free)** | **0.754** | **0.605** | **3.32** | **<0.001** |
+
+### Tier 3: Compositional Gloss Families
+
+The following atom composition patterns are consistent across all compound appearances. Glosses derived from independent behavioral analysis (MIDDLE_SEMANTIC_MAPPING phase), NOT from decomposition.
+
+**The y-terminal family (6/6 compounds fit):**
+
+y = "end" (458 tokens standalone). Every -y compound is a type of ending:
+
+| Compound | Decomposition | Gloss | Fit |
+|----------|--------------|-------|-----|
+| ey | cool + end | "set" (cooling done) | Strong |
+| dy | mark + end | "seal" | Strong |
+| hy | watch + end | "confirm" | Strong |
+| ly | late + end | "end" | Strong |
+| ry | mid + end | "finish" | Strong |
+| eey | cool + cool + end | "deep" | Strong |
+
+**The i+n intake/iterate family (6/6 compounds fit):**
+
+If i = "cycle/iterate" and n = "bind/connect":
+
+| Compound | Decomposition | Gloss | Fit |
+|----------|--------------|-------|-----|
+| ii | cycle + cycle | "repeat" | Strong |
+| in | cycle + bind | "link" | Strong |
+| iin | cycle + cycle + bind | "iterate" | Strong |
+| ain | into + cycle + bind | "intake" | Strong |
+| aiin | into + cycle + cycle + bind | "settle" | Strong |
+| oiin | vessel + cycle + cycle + bind | "loop" | Strong |
+
+**Order-sensitive kernel compounds (Tier 2 atoms only):**
+
+| Compound | Decomposition | Gloss | Note |
+|----------|--------------|-------|------|
+| ke | heat + cool | "steady" | Heat-first: balanced by cooling |
+| ek | cool + heat | "exact" | Cool-first: precise temperature |
+| ee | cool + cool | "long" | Extended cooling |
+| kee | heat + cool + cool | "deep" | Deep processing |
+| eek | cool + cool + heat | "lock" | Locked/fixed state |
+
+Same letters in different orders produce different but related glosses. Order sensitivity is structurally grounded in C521 (kernel directional asymmetry) and C1065 (atom bigram ordering grammar).
+
+### Tier 4: The "o = vessel" Hypothesis
+
+Current dictionary gloss "near" fails across 21 compound appearances. The hypothesis o = "vessel" (German *Ofen* = furnace) improves most fits:
+
+| Compound | Decomposition | Gloss | Fit |
+|----------|--------------|-------|-----|
+| ok | vessel + heat | "seal" (seal before heating) | Strong |
+| ot | vessel + transfer | "route" (through vessel) | Strong |
+| ol | vessel + late | "continue" (let proceed) | Moderate |
+| eo | cool + vessel | "open" (open cooled vessel) | Strong |
+| opch | vessel + pause + adjust + watch | "operate" | Moderate |
+| oiin | vessel + cycle + cycle + bind | "loop" | Strong |
+
+The ok/ot sister pair (C408) decomposes as: ok = proactive vessel+heat management, ot = corrective vessel+transfer adjustment — matching the structural analysis exactly.
+
+### Tier 4: Confidence Gradient Methodology
+
+C1190 licenses using compound decomposition as a **gloss correction tool** with confidence grading:
+
+- **High confidence:** Compounds whose atoms have Tier 2 behavioral profiles AND whose predicted profile closely matches observed (ke, ek, ee, hy, dy, ey)
+- **Medium confidence:** Compounds with moderate-confidence atoms and reasonable fit (al, ar, ol, or)
+- **Low confidence:** Compounds with weak atoms or poor prediction residuals
+
+This methodology respects the semantic ceiling (C171, C120) — glosses describe operational function, not material identification.
+
+### Cross-References
+
+| Constraint | Role |
+|------------|------|
+| C1190 | MIDDLE behavioral atomicity (additive composition, MIDDLE-specific) |
+| C1191 | Position-dependent composition (PREFIX emergent, SUFFIX systematic shift) |
+| C267.a | 218 sub-components reconstruct 97.8% (structural basis) |
+| C1003 | Pairwise compositionality at TOKEN level |
+| C1065 | Atom bigram ordering grammar |
+| C521 | Kernel directional asymmetry (order sensitivity) |
+| C1070 | Ordering grammar independent of kernel physics |
+| C929 | ch/sh sensory modality (explains PREFIX compound emergence) |
+| C906 | Vowel primitive suffix saturation |
 
 
 ---
@@ -4211,7 +4355,7 @@ The Voynich was written during the peak era of guild pharmaceutical secrecy:
 | Cosmo | h-enriched, zero REGIME_1, monitoring-intensive | Observation-heavy process (quality verification or treatment) |
 | Recipe | Precision REGIMEs, balanced triggers | Complex reference procedures |
 
-Phase 386 found that 4/6 dimensional differences between sections are explained by REGIME composition alone. Only h% (monitoring intensity) and LINK density (checkpoint frequency) show independent section effects beyond REGIME. This means sections encode different *REGIME mixtures* (different techniques), with modest independent effects on monitoring and checkpointing strategy.
+Phase 386 found that 4/6 dimensional differences between sections are explained by REGIME composition alone. Only h% and ol-density show independent section effects beyond REGIME. This means sections encode different *REGIME mixtures* (different techniques), with modest independent effects on h-kernel allocation and ol-morphology density. (Note: C1174 revises the prior "monitoring/checkpointing" interpretation of these effects.)
 
 **What this resolves:**
 - Why an unbreakable script (trade secrets worth protecting)
@@ -5417,6 +5561,24 @@ morphology:
           agreement with C1065 atom ordering, gateway/terminal positioning
           preserved). C935, C1141, C1142.
         provenance: "C267, C506.b, C935, C1141, C1142"
+      behavioral_atomicity:
+        statement: |
+          Single characters are genuine behavioral atoms of MIDDLE composition.
+          Multi-character MIDDLEs inherit behavioral profiles by additive
+          composition of component atoms: r=0.754 (no-kernel), z=3.32, p<0.001.
+          Atoms carry consistent behavioral IDENTITY across positions (15/18
+          CONSISTENT) but compositional rules are position-specific: MIDDLE is
+          additive, PREFIX is emergent (c,h,s,p compounds specialize), SUFFIX
+          imposes a systematic shift (r=0.892). C1190, C1191.
+        top_predictive_features:
+          pfx_da: 0.624
+          pfx_sa: 0.474
+          lf_rate: 0.466
+          art_rate: 0.454
+          sfx_rate: 0.451
+        kernel_variant: "r=0.500 (weaker — consistent with C522 layer independence)"
+        prefix_emergence: "c, h, s, p degrade compound predictions (+0.026 to +0.035 delta). PREFIX compounds (ch, sh, kch) are specialized functional units, not additive atom combinations. Consistent with C929."
+        provenance: "C1190, C1191"
       SUFFIX:
         required: false
         unique_count: 35
@@ -5520,7 +5682,7 @@ morphology:
         suffixes: ["-edy", "-ey"]
         link_proximity: "Distant"
         kernel_contact: "100%"
-    line_template: "ENTRY → MONITORING → LINK → INTERVENTION → EXIT"
+    line_template: "ENTRY → EARLY-CYCLE → ol-BOUNDARY → LATE-CYCLE → EXIT"
     provenance: "C382"
 
   fl_state_index:
@@ -6238,7 +6400,18 @@ three_compression_architecture:
     (C1141) — dark-pipeline compounds are built FROM bridge atoms but share no
     complete MIDDLEs with bridges.
 
-  provenance: "C1019, C1020, C1021, C1003, C1004, C1010, C1013, C1139, C1141"
+  atom_behavioral_basis: |
+    Bridge atoms serve as building blocks (C1141) BECAUSE they carry genuine
+    behavioral profiles that compose additively in MIDDLE position (C1190).
+    Composition is position-dependent (C1191): additive in MIDDLE (r=0.754),
+    emergent in PREFIX (ch/sh acquire specialized profiles), systematic shift
+    in SUFFIX (r=0.892). Atoms maintain consistent identity across positions
+    (15/18 CONSISTENT) but follow position-specific compositional rules.
+    Dark-pipeline compounds inherit operational character from their bridge
+    atom substrates through behavioral composition, not arbitrary string
+    concatenation.
+
+  provenance: "C1019, C1020, C1021, C1003, C1004, C1010, C1013, C1139, C1141, C1190, C1191"
 
 design_freedom:
 
@@ -6807,7 +6980,7 @@ operational_layer:
       edy: {gloss: "batch", freq: 2147, pct: "9.3%"}
       dy: {gloss: "close", freq: 1081, pct: "4.7%"}
       aiin: {gloss: "check", freq: 952, pct: "4.1%"}
-      hy: {gloss: "hazard flag", freq: 910, pct: "3.9%"}
+      hy: {gloss: "confirm", freq: 910, pct: "3.9%"}
       ar: {gloss: "close", freq: 834, pct: "3.6%"}
       ain: {gloss: "intake", freq: 742, pct: "3.2%"}
       y: {gloss: "end", freq: 678, pct: "2.9%"}
@@ -6831,7 +7004,7 @@ operational_layer:
         reading: "on stability channel: cool, then close"
       - token: "sheckhy"
         parse: "sh:eck.hy"
-        reading: "on verify channel: hard precision, hazard flag"
+        reading: "on verify channel: hard precision, confirm"
       - token: "daiin"
         parse: "da:iin"
         reading: "infrastructure: iterate (control loop marker)"

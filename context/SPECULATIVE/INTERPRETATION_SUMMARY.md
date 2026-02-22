@@ -330,6 +330,95 @@ The apparatus-centric perspective explains:
 - Why illustrations look botanical but grammar does not (images are human context; text is control logic)
 - Why ~1,184 MIDDLEs exist (expert recognition vocabulary, not linguistic labels)
 
+### The -Xy Suffix Compositional Family (Tier 3)
+
+The four primary `-y`-based suffixes form a systematic family where a kernel consonant modifies the base `-y` ("end") suffix:
+
+| Suffix | Kernel | Gloss | Tokens | Compositional Reading |
+|--------|--------|-------|--------|-----------------------|
+| `-y`   | null   | "end" | 458 | bare close |
+| `-ey`  | E      | "set" | 769 | e-kernel stabilizing close |
+| `-dy`  | K      | "seal" | 594 | k-kernel decisive close |
+| `-hy`  | H      | "confirm" | 910 | h-kernel phase-verifying close |
+
+**Structure:** consonant + y = kernel-typed variant of "end."
+
+**The d/k kernel cross-over:** `d` shifts kernel from H (as MIDDLE, "mark") to K (as suffix `-dy`, "seal"). C919 (Tier 2) establishes that the d-extension is END-class — inherently a closer. `k` is an energy *operator*, not a closer; `d` is the closing form that operates in k's domain. The suffix system uses closing-form consonants, not raw kernel consonants.
+
+**Distillation reading (Tier 4):** The three kernel-typed closers correspond to how a distiller ends different operations:
+- `-ey` "set" = stabilize at this point (temperature reached, hold it)
+- `-dy` "seal" = lock and close (fraction collected, seal the vessel)
+- `-hy` "confirm" = verify phase state before proceeding (check the condensate is the right fraction)
+
+The `-hy` gloss "confirm" replaces the earlier "hazard flag" (BCSC revision). C907 falsified the connector hypothesis (0.99x boundary enrichment), which is consistent: `-hy` modifies the current operation (phase verification), it does not link to the next one. The 86% mid-line positioning (C907) places `-hy` tokens in the monitoring zone where active phase checking occurs.
+
+**Example:** `chckhy` = ch:hard.confirm = "actively test hardness, confirm phase state." The operator tests the material's consistency, then verifies they're collecting the correct fraction.
+
+**Provenance:** C907 (morphological characterization, Tier 2), C919 (d-extension END-class, Tier 2), C1003 (pairwise compositionality, Tier 2). The compositional reading and distillation alignment are Tier 3.
+
+### Kernel-German Abbreviation Hypothesis (Tier 4)
+
+The Voynich consonant inventory may encode first-letter abbreviations of German and Latin distillation vocabulary. The strongest evidence is the three kernel consonants mapping to the three fundamental distillation operations.
+
+#### Core Mapping (Strong — Tier 4a)
+
+| Kernel | Function | Abbreviation | Meaning | Confidence |
+|--------|----------|-------------|---------|------------|
+| **K** | ENERGY_DRIVER | **K**ochen (Ger.) | to boil/cook | Strong |
+| **E** | STABILITY_ANCHOR | **E**rkalten (Ger.) | to cool down | Strong |
+| **H** | PHASE_MANAGER | **H**alten / **H**üten (Ger.) | to hold/maintain; to watch over | Strong |
+
+These are the three fundamental operations of distillation. Any German-speaking distiller would know kochen, erkalten, halten as the basic triad: heat it, cool it, hold it steady. Hüten (to watch, guard) is an alternative for H that aligns with the PHASE_MANAGER monitoring role.
+
+#### Latin Elements (Strong — Tier 4a)
+
+| Element | Position | Abbreviation | Meaning | Confidence |
+|---------|----------|-------------|---------|------------|
+| **qo** | PREFIX (energy channel) | **Co**quo (Lat.) | I boil/cook | Strong |
+| **op** | PREFIX | **Op**erare (Lat.) | to operate/work | Moderate |
+
+The `qo` = coquo connection is particularly compelling: qo is the energy channel prefix that exclusively selects k-family MIDDLEs (C911). Latin *coquo* and German *kochen* are cognates — both descend from Proto-Indo-European \*pekʷ- ("to cook"). The same root word appears as the PREFIX (qo = coquo) and as the KERNEL (k = kochen), one in Latin, one in German, encoding the same concept at two structural levels.
+
+#### Extended Consonant Mappings (Moderate — Tier 4b)
+
+| Consonant | Our Gloss | German Candidate | Meaning | Confidence |
+|-----------|-----------|-----------------|---------|------------|
+| **d** | "seal" (END-class, C919) | **D**ichten | to seal/make tight | Moderate |
+| **t** | "transfer" | **T**reiben | to drive; also *abtreiben* = to drive off volatiles | Moderate |
+| **s** | "break" | **S**cheiden | to separate/part | Moderate |
+| **g** | "complete" | **G**ar | done/fully cooked | Moderate |
+| **m** | "measure" | **M**essen | to measure | Moderate |
+| **r** | "stir" | **R**ühren | to stir | Moderate |
+
+Note: *abtreiben* (to drive off volatiles) is a standard German distillation term and strengthens the t=Treiben mapping.
+
+#### Weak/Speculative Mappings (Tier 4c)
+
+| Element | Position | Candidate | Meaning | Confidence |
+|---------|----------|-----------|---------|------------|
+| **l** | SUFFIX/MIDDLE | **L**etzt (last) or **L**assen (to let) | last; to allow/release | Weak |
+| **p** | SUFFIX | **P**ause | pause/rest | Weak |
+| **ain** | MIDDLE | **Ein** (Ger.) | in/into (intake) | Weak |
+| **da** | FL prefix | **Da** (Ger.) | there/then | Weak |
+
+The `da` mapping is suggestive because FL tokens decompose as da+stage, and German "da" functions as a deictic ("there/then") that could introduce a state reference.
+
+#### Linguistic Evidence
+
+**Dialect evidence:** The manuscript's Brunschwig alignment points to Strasbourg, in the Alemannic German dialect region. In Alemannic, the initial k-sound is pronounced and written as **ch** (e.g., "choche" for "kochen"). This may explain the ch/k relationship in the notation system — ch as the Alemannic pronunciation of the k-family channel.
+
+**Latin-German hybrid pattern:** The vocabulary splits along a functional axis:
+- **German** = operational workshop vocabulary (kochen, erkalten, halten, dichten, treiben, scheiden, messen, rühren) — the verbs a practitioner uses while working
+- **Latin** = theoretical/academic vocabulary (coquo, operare) — the terms from books and formal instruction
+
+This bilingual split is consistent with a guild-trained German practitioner educated in Latin alchemical texts, precisely matching Brunschwig's biography (Strasbourg guild surgeon, Latin-educated, wrote *Liber de arte distillandi*).
+
+#### Status and Constraints
+
+Fully Tier 4. The K-E-H + qo core is structurally suggestive (perfect functional alignment, etymological qo/k link) but cannot be validated from internal analysis alone. Extended mappings have varying confidence. The hypothesis strengthens C911 (qo selects k-family), C521 (kernel opposition), and C929 (suffix semantics) without contradicting any existing constraint.
+
+**Expert validation (Round 8):** No constraint conflicts identified. Internal tiering (4a/4b/4c) recommended to distinguish strong core from weaker extensions.
+
 ---
 
 ## 0.A. CURRIER A COGNITIVE INTERFACE (PCC Phase)
@@ -885,6 +974,111 @@ This explains why RI is:
 | C522 | Layer independence (falsified isomorphism) |
 
 **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+
+---
+
+## 0.C.1. MIDDLE ATOM BEHAVIORAL COMPOSITION (COMPOUND_DECOMPOSITION + CROSSWORD_GLOSS_VALIDATION Phases)
+
+### Tier 2: Statistical Foundation (C1190, C1191)
+
+> **Single-character MIDDLEs are genuine behavioral atoms. Compound MIDDLEs inherit behavioral profiles by additive composition of their component atoms. Permutation test: r=0.754, z=3.32, p<0.001, 0/1000 permutations beating real assignment.**
+
+> **Additive composition is MIDDLE-specific (C1190 scope correction, Phase 422). PREFIX compounds show emergent behavior — atoms c, h, s, p acquire specialized profiles in PREFIX position that exceed simple addition (C1191). SUFFIX position imposes a systematic behavioral shift on all atoms (pairwise shift correlation r=0.892). Atoms maintain consistent IDENTITY across positions (15/18 CONSISTENT) but follow position-specific COMPOSITIONAL RULES (C1191).**
+
+This finding provides behavioral validation of Section 0.C's three-layer architecture. The construction layer isn't just string manipulation — the atoms being constructed with carry genuine functional signatures that compose additively in MIDDLE position, while PREFIX and SUFFIX positions apply distinct compositional rules.
+
+### Key Results
+
+| Variant | Real r | Perm r | Z | p |
+|---------|--------|--------|---|---|
+| All features (incl kernel) | 0.711 | 0.478 | 5.04 | <0.001 |
+| **No kernel (circularity-free)** | **0.754** | **0.605** | **3.32** | **<0.001** |
+| Kernel only | 0.500 | 0.008 | 4.12 | 0.002 |
+
+The no-kernel variant controls for the possibility that kernel assignments derive from character content (tautology). Result holds without kernel features — compositionality is carried by purely behavioral signals: prefix co-occurrence (R=0.62), line-final rate (R=0.47), suffix rate (R=0.45), section distribution (R=0.43).
+
+### Tier 3: Compositional Gloss Families
+
+The following atom composition patterns are consistent across all compound appearances. Glosses derived from independent behavioral analysis (MIDDLE_SEMANTIC_MAPPING phase), NOT from decomposition.
+
+**The y-terminal family (6/6 compounds fit):**
+
+y = "end" (458 tokens standalone). Every -y compound is a type of ending:
+
+| Compound | Decomposition | Gloss | Fit |
+|----------|--------------|-------|-----|
+| ey | cool + end | "set" (cooling done) | Strong |
+| dy | mark + end | "seal" | Strong |
+| hy | watch + end | "confirm" | Strong |
+| ly | late + end | "end" | Strong |
+| ry | mid + end | "finish" | Strong |
+| eey | cool + cool + end | "deep" | Strong |
+
+**The i+n intake/iterate family (6/6 compounds fit):**
+
+If i = "cycle/iterate" and n = "bind/connect":
+
+| Compound | Decomposition | Gloss | Fit |
+|----------|--------------|-------|-----|
+| ii | cycle + cycle | "repeat" | Strong |
+| in | cycle + bind | "link" | Strong |
+| iin | cycle + cycle + bind | "iterate" | Strong |
+| ain | into + cycle + bind | "intake" | Strong |
+| aiin | into + cycle + cycle + bind | "settle" | Strong |
+| oiin | vessel + cycle + cycle + bind | "loop" | Strong |
+
+**Order-sensitive kernel compounds (Tier 2 atoms only):**
+
+| Compound | Decomposition | Gloss | Note |
+|----------|--------------|-------|------|
+| ke | heat + cool | "steady" | Heat-first: balanced by cooling |
+| ek | cool + heat | "exact" | Cool-first: precise temperature |
+| ee | cool + cool | "long" | Extended cooling |
+| kee | heat + cool + cool | "deep" | Deep processing |
+| eek | cool + cool + heat | "lock" | Locked/fixed state |
+
+Same letters in different orders produce different but related glosses. Order sensitivity is structurally grounded in C521 (kernel directional asymmetry) and C1065 (atom bigram ordering grammar).
+
+### Tier 4: The "o = vessel" Hypothesis
+
+Current dictionary gloss "near" fails across 21 compound appearances. The hypothesis o = "vessel" (German *Ofen* = furnace) improves most fits:
+
+| Compound | Decomposition | Gloss | Fit |
+|----------|--------------|-------|-----|
+| ok | vessel + heat | "seal" (seal before heating) | Strong |
+| ot | vessel + transfer | "route" (through vessel) | Strong |
+| ol | vessel + late | "continue" (let proceed) | Moderate |
+| eo | cool + vessel | "open" (open cooled vessel) | Strong |
+| opch | vessel + pause + adjust + watch | "operate" | Moderate |
+| oiin | vessel + cycle + cycle + bind | "loop" | Strong |
+
+The ok/ot sister pair (C408) decomposes as: ok = proactive vessel+heat management, ot = corrective vessel+transfer adjustment — matching the structural analysis exactly.
+
+### Tier 4: Confidence Gradient Methodology
+
+C1190 licenses using compound decomposition as a **gloss correction tool** with confidence grading:
+
+- **High confidence:** Compounds whose atoms have Tier 2 behavioral profiles AND whose predicted profile closely matches observed (ke, ek, ee, hy, dy, ey)
+- **Medium confidence:** Compounds with moderate-confidence atoms and reasonable fit (al, ar, ol, or)
+- **Low confidence:** Compounds with weak atoms or poor prediction residuals
+
+This methodology respects the semantic ceiling (C171, C120) — glosses describe operational function, not material identification.
+
+### Cross-References
+
+| Constraint | Role |
+|------------|------|
+| C1190 | MIDDLE behavioral atomicity (additive composition, MIDDLE-specific) |
+| C1191 | Position-dependent composition (PREFIX emergent, SUFFIX systematic shift) |
+| C267.a | 218 sub-components reconstruct 97.8% (structural basis) |
+| C1003 | Pairwise compositionality at TOKEN level |
+| C1065 | Atom bigram ordering grammar |
+| C521 | Kernel directional asymmetry (order sensitivity) |
+| C1070 | Ordering grammar independent of kernel physics |
+| C929 | ch/sh sensory modality (explains PREFIX compound emergence) |
+| C906 | Vowel primitive suffix saturation |
+
+**Source:** COMPOUND_DECOMPOSITION phase (2026-02-21)
 
 ---
 
@@ -2027,7 +2221,7 @@ While token-level switching is memoryless-with-inertia, the system encodes **mac
 |-----------|-----------|----------|
 | **Lower bound** | Aggression categorically forbidden in 20.5% of folios | C490: zero AGGRESSIVE compatibility, not low probability |
 | **Upper bound** | Stabilization is absorbing (e->h = 0.00) | C521: kernel one-way valve; once stable, can't destabilize |
-| **Observation band** | LINK enforces monitoring posture (r = -0.7057 with CEI) | C366, C190: non-operational boundary operator |
+| **Observation band** | ol-density anticorrelates with CEI (r = -0.7057) | C609, C1174: ol-morphology density, not unified function |
 | **Intervention clamp** | Hazard exposure CV = 0.04-0.11 (tightly constrained) | C458: risky dimensions locked, recovery free |
 
 **Key distinction:** Thresholds are not "push until temperature X." They are "at this phase, intervention Y is structurally impossible." Legality transitions, not parametric bounds (C469, C287-290).
@@ -2058,7 +2252,7 @@ While token-level switching is memoryless-with-inertia, the system encodes **mac
 
 ### Functional Profiling (v4.50, LANE_FUNCTIONAL_PROFILING)
 
-**LINK-lane independence (C648):** LINK monitoring operates above lane identity -- both lanes receive equal observation. This is consistent with LINK as a phase-marking function (C366) rather than a lane-specific intervention. If LINK encodes observation posture, the operator observes regardless of which energy mode is active.
+**LINK-lane independence (C648):** ol-density is lane-independent (QO 15.4% vs CHSH 14.7%, NS). Both lanes carry equal ol-morphology load. Per C1174, this reflects morphological uniformity rather than a unified observational function -- the `ol` substring is recruited by each role regardless of lane context.
 
 **Deterministic MIDDLE partition (C649):** The 22 testable EN-exclusive MIDDLEs are 100% lane-specific (k/t/p-initial = QO only; e/o-initial = CHSH only). This means the token construction layer (C522) hard-codes lane assignment through morphological composition -- the initial character of a MIDDLE determines its lane. Sensory implication: if k presupposes thermal affordance and e presupposes multi-modal affordance, the exclusive vocabulary is partitioned by perceptual domain at the morphological level.
 
@@ -3524,7 +3718,7 @@ The Voynich was written during the peak era of guild pharmaceutical secrecy:
 | Cosmo | h-enriched, zero REGIME_1, monitoring-intensive | Observation-heavy process (quality verification or treatment) |
 | Recipe | Precision REGIMEs, balanced triggers | Complex reference procedures |
 
-Phase 386 found that 4/6 dimensional differences between sections are explained by REGIME composition alone. Only h% (monitoring intensity) and LINK density (checkpoint frequency) show independent section effects beyond REGIME. This means sections encode different *REGIME mixtures* (different techniques), with modest independent effects on monitoring and checkpointing strategy.
+Phase 386 found that 4/6 dimensional differences between sections are explained by REGIME composition alone. Only h% and ol-density show independent section effects beyond REGIME. This means sections encode different *REGIME mixtures* (different techniques), with modest independent effects on h-kernel allocation and ol-morphology density. (Note: C1174 revises the prior "monitoring/checkpointing" interpretation of these effects.)
 
 **What this resolves:**
 - Why an unbreakable script (trade secrets worth protecting)
@@ -3961,7 +4155,7 @@ It now has something much better:
 
 - REGIME_3 doesn't require HIGH_IMPACT operations
 - REGIME_3 requires min_e_steps=2 (recovery completeness)
-- REGIME_4 requires min_link_ratio=25% (monitoring completeness)
+- REGIME_4 requires min_link_ratio=25% (ol-density threshold)
 
 **Curriculum Model (Revised):**
 

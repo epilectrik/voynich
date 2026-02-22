@@ -13,7 +13,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 993 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 1034 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -54,8 +54,8 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # EMBEDDED EXPERT CONTEXT
 
-**Generated:** 2026-02-20 17:17
-**Version:** FROZEN STATE (993 constraints, 66 fits) [FULL]
+**Generated:** 2026-02-22 08:34
+**Version:** FROZEN STATE (1034 constraints, 66 fits) [FULL]
 
 ---
 
@@ -79,7 +79,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.84 | **Status:** FROZEN | **Constraints:** 993 | **Date:** 2026-02-20
+**Version:** 3.91 | **Status:** FROZEN | **Constraints:** 1034 | **Date:** 2026-02-20
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -319,7 +319,7 @@ See [CORE/falsifications.md](CORE/falsifications.md) for complete list with evid
 - Kernel control (3 operators: k, h, e)
 - Hazard topology (17 forbidden transitions, 5 failure classes)
 - Convergence to stable states (57.8% terminal STATE-C)
-- LINK operator (13.2% of tokens = deliberate waiting; C609 corrected from legacy 38%)
+- LINK population (13.2% of tokens = ol-morphology, role-stratified; C609 density, C1174 morphological artifact)
 - Folio = complete program, Line = formal control block
 
 **Not encoded (operator provides externally):**
@@ -335,8 +335,8 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 993 |
-| Completed phases | 408 |
+| Validated constraints | 1034 |
+| Completed phases | 421 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -1828,7 +1828,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 993 constraints | 2026-02-20
+CONSTRAINT_REFERENCE v2.6 | 1035 constraints | 2026-02-22
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2827,6 +2827,48 @@ C1145	**Dark-Exclusive and Shared Atoms Occupy Equivalent Positional Slots** (ch
 C1146	**Dark Pipeline Token Density Anti-Correlates with Bridge Tokens** (r=-0.865 overall; within-section r=-0.82 to -0.88 in all 4 sections; section R²=0.193; 80.7% of variance within-section; complementary distribution)	2	B, A->B	-> C1146_dark_pipeline_bridge_anticorrelation.md
 C1147	**Dark Pipeline Tokens Are Interior-Enriched Within Lines** (73.2% MIDDLE vs general HT 67.7%; chi-sq=23.2, p<0.0001; boundary rate 26.8% vs HT 32.3%; consistent across par line-1 and body)	2	B, line structure	-> C1147_dark_pipeline_interior_positioned.md
 C1148	**Dark Pipeline Frequency Profiles Are Hyper-Modulated Across Sections** (mean JS=0.483, 3.9x C1134 baseline of 0.124; dark pipeline is primary vehicle for section-level vocabulary modulation)	2	B, section differentiation	-> C1148_dark_pipeline_hyper_modulated.md
+C1149	**Vocabulary Balance Is Orthogonal to Dynamical Archetypes** (ARI=-0.002, chi-sq p=0.807; Spearman rho=0.001 vs AXM; balance, dynamics, and section are three independent structural axes)	2	B, cross-system, dynamics	-> C1149_balance_dynamics_independence.md
+C1150	**Dark-Dominant Folios Shift Kernel Profile Within Section** (k_frac drops 0.314→0.226 in dark-dominant; h_frac rises 0.100→0.135; survives within-section in RECIPE_B p=0.002)	2	B, kernel, section	-> C1150_balance_kernel_coupling.md
+C1151	**Balance Distribution Is Section-Structured** (chi-sq=29.95, df=6, p<0.0001; BIO=bridge-dominant, PHARMA=dark-dominant, RECIPE_B=balanced-dominant, HERBAL_B=mixed)	2	B, section differentiation	-> C1151_balance_section_profiles.md
+C1152	**Section-M2 Captures Vocabulary Composition but Not Sequential Dynamics** (class dist ratio 1.48x near-captured; AXM spread 1.76x uncaptured; kernel profile 1.79x uncaptured; 87% folios improved by section-conditioning; vocabulary is section-determined, dynamics are program-specific)	2	B, section, generative	-> C1152_vocabulary_dynamics_layer_separation.md
+C1153	**Generative Design Freedom Is ~40%** (32.4% class-dist + 43.2% AXM + 44.0% kernel uncaptured; aggregate 39.9%; AXM consistent with C1035's 57%; lower than C1016's 66.3% because class distribution IS section-captured)	2	B, generative, dynamics	-> C1153_generative_design_freedom.md
+C1154	**k-Kernel and e-Kernel Variance Are Universally Program-Specific** (k ratio 1.82-2.32x, e ratio 1.76-2.21x across all sections; h-kernel section-determined in BIO/HERBAL/COSMO (0.74-1.29x) but program-specific in STARS_RECIPE (2.18x))	2	B, kernel, section	-> C1154_k_kernel_universally_program_specific.md
+C1155	**Paragraph Kernel Dynamics Do Not Mediate the AXM Residual** (kernel heterogeneity dR²=0.0012, trajectory slope variance dR²=0.0014, type entropy dR²=0.0002; all with negative LOO; within-section rho all <0.16; C1035 residual confirmed closed at paragraph level)	2	B, paragraph, kernel, AXM	-> C1155_paragraph_kernel_dynamics_do_not_mediate_residual.md
+C1156	**Line Position Structures Class Transitions** (49×49 matrix differs by ENTRY/INTERIOR/EXIT zone; JSD 0.22-0.33, all p<0.001; AXM self-transition gradient 0.730→0.704→0.633; spectral gap shifts 0.939→0.883→0.900; section-dependent KW p<0.0001)	2	B, line, transitions	-> C1156_line_position_structures_transitions.md
+C1157	**Boundary Divergence Mediates the AXM Residual** (per-folio boundary divergence adds dR²=0.0845, F=14.15, p=0.0004 to C1035 baseline; LOO improves 0.433→0.512; rho=-0.732 vs AXM self; first predictor to break C1035 barrier; position-conditioned M2 does NOT improve generation — descriptive not generative)	2	B, line, AXM residual	-> C1157_boundary_divergence_mediates_axm_residual.md
+C1158	**Entry Divergence Dominates Boundary Divergence Effect** (entry dR²=0.098 vs exit dR²=0.028, 3.5×; entry is the "reset to base" intensity; contradicts gatekeeper hypothesis)	2	B, line, AXM	-> C1158_entry_dominates_boundary_divergence.md
+C1159	**Boundary Divergence Is a Routing Shift, Not AXM Persistence Decay** (AXM→AXM only 3.2% of total delta; dominant: AXm→AXM +0.124, FQ→AXM +0.103 at entry; CC→AXM -0.296 at exit; inter-state routing, not self-transition)	2	B, line, transitions	-> C1159_boundary_divergence_is_routing_shift.md
+C1160	**Boundary Divergence Is Section-Confounded but Carries Independent Signal** (section R²=0.70 on BD; partial rho=-0.459 vs AXM controlling section; BD adds dR²=0.135 beyond section-only AXM model)	2	B, line, section	-> C1160_boundary_divergence_section_confounded_but_independent.md
+C1161	**Gatekeeper Classes Partially Mediate Boundary Divergence** (excluding gatekeepers reduces dR² by 30.5%; effect survives: GK-free rho=-0.673, dR²=0.059, p=0.006; GK density uncorrelated with BD)	2	B, line, gatekeeper	-> C1161_gatekeeper_partial_mediation.md
+C1162	**Opener Role Does Not Predict Entry Divergence** (R²=0.128; no role |rho|≥0.30; role entropy uncorrelated; entry mechanism operates below role-level identity)	2	B, line, opener	-> C1162_opener_role_does_not_predict_entry_divergence.md
+C1163	**AXM Return Rate Dominates Entry Mechanism** (rho=0.841 with AXM self; rho=-0.510 with entry div; R²=0.318 on entry div; routing not identity drives entry reset)	2	B, line, opener, routing	-> C1163_axm_return_rate_dominates_entry_mechanism.md
+C1164	**Opener Routing Partially Mediates Entry Divergence** (shrinkage=0.406; entry div retains signal partial rho=-0.293 p=0.013; opener features dR²=0.159 vs entry div dR²=0.068; combined R²=0.815 LOO=0.669)	2	B, line, opener, AXM	-> C1164_opener_routing_partially_mediates_entry_divergence.md
+C1165	**AXM Return Rate Extends Residual Beyond Entry Divergence** (dR²=0.111, F=30.95, p<0.000001, LOO 0.543→0.696; total bundle dR²=0.180 vs C1035; irreducible ~57%→~32%)	2	B, folio, AXM residual	-> C1165_axm_return_rate_extends_residual.md
+C1166	**Exit Divergence Redundant After Entry Control** (bivariate rho=-0.710 but partial rho=-0.097 p=0.101 after entry bundle; exit JSD collinear with entry JSD rho=0.697)	2	B, line, boundary, exit	-> C1166_exit_divergence_redundant_after_entry_control.md
+C1167	**AXM Departure Rate at Exit Extends Residual** (dR²=0.035, F=11.80, p=0.0012, LOO 0.696→0.745; closer features R²=0.338; AXM departure rho=0.509 with exit div)	2	B, folio, AXM residual, exit	-> C1167_axm_departure_rate_extends_residual.md
+C1168	**Dual Boundary Architecture** (entry+exit independent channels; dual R²=0.852 LOO=0.732; exit dR²=0.039 LOO+0.036; all 3 sections benefit; irreducible ~57%→~27%)	2	B, folio, AXM residual, boundary	-> C1168_dual_boundary_architecture.md
+C1169	**AXM Residual Closed — ~27% Is Genuine Design Freedom** (23 candidates: 0 Holm-sig; RF CV R²=-0.14 perm p=0.375; lag-1 AC=0.102 p=0.378; KW regime p=0.998; C458 symmetric; T5 gated closed)	2	B, folio, AXM residual, closure	-> C1169_axm_residual_closed_genuine_design_freedom.md
+C1170	**LINK Vocabulary Stratified by Role** (chi2=1493, V=0.404; CC=1 type all MIDDLE; AX=49 types 59% PREFIX; EN=12 types MIDDLE/SPAN/SUFFIX; UN=735 types TTR=0.629)	2	B, LINK, vocabulary, role	-> C1170_link_vocabulary_stratified_by_role.md
+C1171	**LINK Behavior Is Role-Dominant** (4/4 roles sig different MW p<0.05; cross-role JSD LINK=0.014 ≈ non-LINK=0.013; no unified substrate)	2	B, LINK, cross-role, position	-> C1171_link_behavior_role_dominant.md
+C1172	**BIO LINK Excess Is SPAN-Targeted** (BIO 20.2%; EN_SPAN 4.65×, AX_SPAN 2.15×, UN_SPAN 1.88×; MIDDLE depleted 0.47×; section×role chi2=82.2 p<1e-9)	2	B, BIO, LINK, section	-> C1172_bio_link_excess_span_targeted.md
+C1173	**LINK Boundary Enrichment Is Passive** (entry 17.2% interior 12.4% exit 15.3% chi2=54.5; entry rho=-0.059 p=0.074; exit rho=-0.151 p=0.108; dynamics 1.09× boundary)	2	B, LINK, boundary, dynamics	-> C1173_link_boundary_enrichment_passive.md
+C1174	**LINK Is Morphological Artifact** (synthesis: STRATIFIED + ROLE_DOMINANT + PASSIVE → `ol` is morphological component not functional layer; revises C366/C609 interpretation)	2	B, LINK, synthesis	-> C1174_link_is_morphological_artifact.md
+C1175	**Dark Compound Pair Space C475-Gated** (recall=1.000 precision=0.134; 71/903 pairs occupied 7.9%; parallels C1028 curation)	2	B, dark pipeline, combinatorics	-> C1175_dark_compound_pair_space_c475_gated.md
+C1176	**Section Hyper-Modulation Atom-Selection-Dominated** (multiplicative model R²=0.781 pseudo-R²=0.677; atoms carry section signal, compounds inherit)	2	B, dark pipeline, section, atoms	-> C1176_section_hyper_modulation_atom_selection_dominated.md
+C1177	**Dark Ordering Consistent with C1065** (4/4 match 0 mismatch; revises C1142 50% from low-count noise; same grammar, sparse coverage)	2	B, dark pipeline, ordering grammar	-> C1177_dark_ordering_consistent_with_c1065.md
+C1178	**Phantom MIDDLEs Morphologically Isolated** (0/15 valid-unfilled; 11 partial 4 invalid; ch/sh-initial MIDDLE is dead naming pattern)	2	B, dark pipeline, phantoms	-> C1178_phantom_middles_morphologically_isolated.md
+C1179	**Sister Choice Structured in Slot** (14/174 Bonferroni-significant MIDDLE+SUFFIX slots; aggregate chi2=709.8 p<0.0001)	2	B, sister pairs, within-class	-> C1179_sister_choice_structured_in_slot.md
+C1180	**Sister Choice Positionally Mediated** (delta-R2=0.128 LOO=0.097; ch=0.487 sh=0.395 gap=0.092; extends C929)	2	B, sister pairs, position	-> C1180_sister_choice_positionally_mediated.md
+C1181	**Sister Choice Dynamically Consequential** (AXM partial rho=-0.250 p=0.032; hazard +0.255 p=0.028; ch-heavy = higher hazard)	2	B, sister pairs, dynamics	-> C1181_sister_choice_dynamically_consequential.md
+C1182	**Sister Concentration Moderate Consistency** (ICC=0.317; 32% folio-determined, 68% paragraph-variable; unimodal)	2	B, sister pairs, program structure	-> C1182_sister_concentration_moderate_consistency.md
+C1183	**Sister Bridge/Dark Independent** (all partial rho <0.16 after section control; vocabulary pipeline orthogonal)	2	B, sister pairs, vocabulary	-> C1183_sister_bridge_dark_independent.md
+C1184	**ch/sh and ok/ot Independent Axes** (partial rho=0.204 p=0.066; OPPOSITE positional asymmetries; two within-class dimensions)	2	B, sister pairs, within-class	-> C1184_ch_sh_ok_ot_independent_axes.md
+C1185	**Sister Successor Routing MIDDLE-Dependent** (global p=0.034; 5/102 strata significant; not universal; C121 preserved)	2	B, sister pairs, transitions	-> C1185_sister_successor_middle_dependent.md
+C1186	**Sister Boundary Coupled** (entry JSD partial rho=0.312 p=0.004; opener ch frac rho=0.455; ch-heavy = divergent entries)	2	B, sister pairs, boundary	-> C1186_sister_boundary_coupled.md
+C1187	**Sister Mechanism: BOUNDARY_CONTROL_KNOB** (synthesis: structured, positional, dynamical, boundary-coupled; reduces C639 unexplained from 52.9% to ~40%)	2	B, sister pairs, synthesis	-> C1187_sister_mechanism_boundary_control_knob.md
+C1188	**Sister Entry Divergence Absent** (ΔLOO-R²=-0.020; dR²=0.0006 F=0.12 p=0.73; coefficient sign wrong; all sections negative)	2	B, sister pairs, boundary architecture	-> C1188_sister_entry_divergence_absent.md
+C1189	**Sister Is Proxy Not Lever** (C1186 correlation mediated by C1163-C1165 opener-routing features; boundary architecture structurally complete; C1169 residual confirmed irreducible by sister)	2	B, sister pairs, boundary architecture, synthesis	-> C1189_sister_proxy_not_lever.md
+C1190	**Single-Character Behavioral Atomicity** (multi-character sequences in PREFIX/MIDDLE/SUFFIX inherit behavioral profiles from component single-char atoms; r=0.754 no-kernel, z=3.32, p<0.001; 0/1000 permutations; same atomic alphabet across all morphological slots; strengthens C267, C267.a, C1003, C1065)	2	B, morphology, atomic composition	-> C1190_middle_behavioral_atomicity.md
 
 ---
 
@@ -2834,7 +2876,7 @@ C1148	**Dark Pipeline Frequency Profiles Are Hyper-Modulated Across Sections** (
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-02-20
+# Generated: 2026-02-22
 # Total: 66 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
@@ -3241,6 +3283,95 @@ The apparatus-centric perspective explains:
 - Why no quantities appear (apparatus tracks state, not magnitude)
 - Why illustrations look botanical but grammar does not (images are human context; text is control logic)
 - Why ~1,184 MIDDLEs exist (expert recognition vocabulary, not linguistic labels)
+
+### The -Xy Suffix Compositional Family (Tier 3)
+
+The four primary `-y`-based suffixes form a systematic family where a kernel consonant modifies the base `-y` ("end") suffix:
+
+| Suffix | Kernel | Gloss | Tokens | Compositional Reading |
+|--------|--------|-------|--------|-----------------------|
+| `-y`   | null   | "end" | 458 | bare close |
+| `-ey`  | E      | "set" | 769 | e-kernel stabilizing close |
+| `-dy`  | K      | "seal" | 594 | k-kernel decisive close |
+| `-hy`  | H      | "confirm" | 910 | h-kernel phase-verifying close |
+
+**Structure:** consonant + y = kernel-typed variant of "end."
+
+**The d/k kernel cross-over:** `d` shifts kernel from H (as MIDDLE, "mark") to K (as suffix `-dy`, "seal"). C919 (Tier 2) establishes that the d-extension is END-class — inherently a closer. `k` is an energy *operator*, not a closer; `d` is the closing form that operates in k's domain. The suffix system uses closing-form consonants, not raw kernel consonants.
+
+**Distillation reading (Tier 4):** The three kernel-typed closers correspond to how a distiller ends different operations:
+- `-ey` "set" = stabilize at this point (temperature reached, hold it)
+- `-dy` "seal" = lock and close (fraction collected, seal the vessel)
+- `-hy` "confirm" = verify phase state before proceeding (check the condensate is the right fraction)
+
+The `-hy` gloss "confirm" replaces the earlier "hazard flag" (BCSC revision). C907 falsified the connector hypothesis (0.99x boundary enrichment), which is consistent: `-hy` modifies the current operation (phase verification), it does not link to the next one. The 86% mid-line positioning (C907) places `-hy` tokens in the monitoring zone where active phase checking occurs.
+
+**Example:** `chckhy` = ch:hard.confirm = "actively test hardness, confirm phase state." The operator tests the material's consistency, then verifies they're collecting the correct fraction.
+
+**Provenance:** C907 (morphological characterization, Tier 2), C919 (d-extension END-class, Tier 2), C1003 (pairwise compositionality, Tier 2). The compositional reading and distillation alignment are Tier 3.
+
+### Kernel-German Abbreviation Hypothesis (Tier 4)
+
+The Voynich consonant inventory may encode first-letter abbreviations of German and Latin distillation vocabulary. The strongest evidence is the three kernel consonants mapping to the three fundamental distillation operations.
+
+#### Core Mapping (Strong — Tier 4a)
+
+| Kernel | Function | Abbreviation | Meaning | Confidence |
+|--------|----------|-------------|---------|------------|
+| **K** | ENERGY_DRIVER | **K**ochen (Ger.) | to boil/cook | Strong |
+| **E** | STABILITY_ANCHOR | **E**rkalten (Ger.) | to cool down | Strong |
+| **H** | PHASE_MANAGER | **H**alten / **H**üten (Ger.) | to hold/maintain; to watch over | Strong |
+
+These are the three fundamental operations of distillation. Any German-speaking distiller would know kochen, erkalten, halten as the basic triad: heat it, cool it, hold it steady. Hüten (to watch, guard) is an alternative for H that aligns with the PHASE_MANAGER monitoring role.
+
+#### Latin Elements (Strong — Tier 4a)
+
+| Element | Position | Abbreviation | Meaning | Confidence |
+|---------|----------|-------------|---------|------------|
+| **qo** | PREFIX (energy channel) | **Co**quo (Lat.) | I boil/cook | Strong |
+| **op** | PREFIX | **Op**erare (Lat.) | to operate/work | Moderate |
+
+The `qo` = coquo connection is particularly compelling: qo is the energy channel prefix that exclusively selects k-family MIDDLEs (C911). Latin *coquo* and German *kochen* are cognates — both descend from Proto-Indo-European \*pekʷ- ("to cook"). The same root word appears as the PREFIX (qo = coquo) and as the KERNEL (k = kochen), one in Latin, one in German, encoding the same concept at two structural levels.
+
+#### Extended Consonant Mappings (Moderate — Tier 4b)
+
+| Consonant | Our Gloss | German Candidate | Meaning | Confidence |
+|-----------|-----------|-----------------|---------|------------|
+| **d** | "seal" (END-class, C919) | **D**ichten | to seal/make tight | Moderate |
+| **t** | "transfer" | **T**reiben | to drive; also *abtreiben* = to drive off volatiles | Moderate |
+| **s** | "break" | **S**cheiden | to separate/part | Moderate |
+| **g** | "complete" | **G**ar | done/fully cooked | Moderate |
+| **m** | "measure" | **M**essen | to measure | Moderate |
+| **r** | "stir" | **R**ühren | to stir | Moderate |
+
+Note: *abtreiben* (to drive off volatiles) is a standard German distillation term and strengthens the t=Treiben mapping.
+
+#### Weak/Speculative Mappings (Tier 4c)
+
+| Element | Position | Candidate | Meaning | Confidence |
+|---------|----------|-----------|---------|------------|
+| **l** | SUFFIX/MIDDLE | **L**etzt (last) or **L**assen (to let) | last; to allow/release | Weak |
+| **p** | SUFFIX | **P**ause | pause/rest | Weak |
+| **ain** | MIDDLE | **Ein** (Ger.) | in/into (intake) | Weak |
+| **da** | FL prefix | **Da** (Ger.) | there/then | Weak |
+
+The `da` mapping is suggestive because FL tokens decompose as da+stage, and German "da" functions as a deictic ("there/then") that could introduce a state reference.
+
+#### Linguistic Evidence
+
+**Dialect evidence:** The manuscript's Brunschwig alignment points to Strasbourg, in the Alemannic German dialect region. In Alemannic, the initial k-sound is pronounced and written as **ch** (e.g., "choche" for "kochen"). This may explain the ch/k relationship in the notation system — ch as the Alemannic pronunciation of the k-family channel.
+
+**Latin-German hybrid pattern:** The vocabulary splits along a functional axis:
+- **German** = operational workshop vocabulary (kochen, erkalten, halten, dichten, treiben, scheiden, messen, rühren) — the verbs a practitioner uses while working
+- **Latin** = theoretical/academic vocabulary (coquo, operare) — the terms from books and formal instruction
+
+This bilingual split is consistent with a guild-trained German practitioner educated in Latin alchemical texts, precisely matching Brunschwig's biography (Strasbourg guild surgeon, Latin-educated, wrote *Liber de arte distillandi*).
+
+#### Status and Constraints
+
+Fully Tier 4. The K-E-H + qo core is structurally suggestive (perfect functional alignment, etymological qo/k link) but cannot be validated from internal analysis alone. Extended mappings have varying confidence. The hypothesis strengthens C911 (qo selects k-family), C521 (kernel opposition), and C929 (suffix semantics) without contradicting any existing constraint.
+
+**Expert validation (Round 8):** No constraint conflicts identified. Internal tiering (4a/4b/4c) recommended to distinguish strong core from weaker extensions.
 
 ---
 
@@ -3797,6 +3928,107 @@ This explains why RI is:
 | C522 | Layer independence (falsified isomorphism) |
 
 **Source:** MIDDLE_SUBCOMPONENT_GRAMMAR (2026-01-23)
+
+---
+
+## 0.C.1. MIDDLE ATOM BEHAVIORAL COMPOSITION (COMPOUND_DECOMPOSITION Phase)
+
+### Tier 2: Statistical Foundation (C1190)
+
+> **Single-character MIDDLEs are genuine behavioral atoms. Compound MIDDLEs inherit behavioral profiles by additive composition of their component atoms. Permutation test: r=0.754, z=3.32, p<0.001, 0/1000 permutations beating real assignment.**
+
+This finding provides behavioral validation of Section 0.C's three-layer architecture. The construction layer isn't just string manipulation — the atoms being constructed with carry genuine functional signatures that compose additively.
+
+### Key Results
+
+| Variant | Real r | Perm r | Z | p |
+|---------|--------|--------|---|---|
+| All features (incl kernel) | 0.711 | 0.478 | 5.04 | <0.001 |
+| **No kernel (circularity-free)** | **0.754** | **0.605** | **3.32** | **<0.001** |
+| Kernel only | 0.500 | 0.008 | 4.12 | 0.002 |
+
+The no-kernel variant controls for the possibility that kernel assignments derive from character content (tautology). Result holds without kernel features — compositionality is carried by purely behavioral signals: prefix co-occurrence (R=0.62), line-final rate (R=0.47), suffix rate (R=0.45), section distribution (R=0.43).
+
+### Tier 3: Compositional Gloss Families
+
+The following atom composition patterns are consistent across all compound appearances. Glosses derived from independent behavioral analysis (MIDDLE_SEMANTIC_MAPPING phase), NOT from decomposition.
+
+**The y-terminal family (6/6 compounds fit):**
+
+y = "end" (458 tokens standalone). Every -y compound is a type of ending:
+
+| Compound | Decomposition | Gloss | Fit |
+|----------|--------------|-------|-----|
+| ey | cool + end | "set" (cooling done) | Strong |
+| dy | mark + end | "seal" | Strong |
+| hy | watch + end | "confirm" | Strong |
+| ly | late + end | "end" | Strong |
+| ry | mid + end | "finish" | Strong |
+| eey | cool + cool + end | "deep" | Strong |
+
+**The i+n intake/iterate family (6/6 compounds fit):**
+
+If i = "cycle/iterate" and n = "bind/connect":
+
+| Compound | Decomposition | Gloss | Fit |
+|----------|--------------|-------|-----|
+| ii | cycle + cycle | "repeat" | Strong |
+| in | cycle + bind | "link" | Strong |
+| iin | cycle + cycle + bind | "iterate" | Strong |
+| ain | into + cycle + bind | "intake" | Strong |
+| aiin | into + cycle + cycle + bind | "settle" | Strong |
+| oiin | vessel + cycle + cycle + bind | "loop" | Strong |
+
+**Order-sensitive kernel compounds (Tier 2 atoms only):**
+
+| Compound | Decomposition | Gloss | Note |
+|----------|--------------|-------|------|
+| ke | heat + cool | "steady" | Heat-first: balanced by cooling |
+| ek | cool + heat | "exact" | Cool-first: precise temperature |
+| ee | cool + cool | "long" | Extended cooling |
+| kee | heat + cool + cool | "deep" | Deep processing |
+| eek | cool + cool + heat | "lock" | Locked/fixed state |
+
+Same letters in different orders produce different but related glosses. Order sensitivity is structurally grounded in C521 (kernel directional asymmetry) and C1065 (atom bigram ordering grammar).
+
+### Tier 4: The "o = vessel" Hypothesis
+
+Current dictionary gloss "near" fails across 21 compound appearances. The hypothesis o = "vessel" (German *Ofen* = furnace) improves most fits:
+
+| Compound | Decomposition | Gloss | Fit |
+|----------|--------------|-------|-----|
+| ok | vessel + heat | "seal" (seal before heating) | Strong |
+| ot | vessel + transfer | "route" (through vessel) | Strong |
+| ol | vessel + late | "continue" (let proceed) | Moderate |
+| eo | cool + vessel | "open" (open cooled vessel) | Strong |
+| opch | vessel + pause + adjust + watch | "operate" | Moderate |
+| oiin | vessel + cycle + cycle + bind | "loop" | Strong |
+
+The ok/ot sister pair (C408) decomposes as: ok = proactive vessel+heat management, ot = corrective vessel+transfer adjustment — matching the structural analysis exactly.
+
+### Tier 4: Confidence Gradient Methodology
+
+C1190 licenses using compound decomposition as a **gloss correction tool** with confidence grading:
+
+- **High confidence:** Compounds whose atoms have Tier 2 behavioral profiles AND whose predicted profile closely matches observed (ke, ek, ee, hy, dy, ey)
+- **Medium confidence:** Compounds with moderate-confidence atoms and reasonable fit (al, ar, ol, or)
+- **Low confidence:** Compounds with weak atoms or poor prediction residuals
+
+This methodology respects the semantic ceiling (C171, C120) — glosses describe operational function, not material identification.
+
+### Cross-References
+
+| Constraint | Role |
+|------------|------|
+| C1190 | Behavioral atomicity (this section's statistical foundation) |
+| C267.a | 218 sub-components reconstruct 97.8% (structural basis) |
+| C1003 | Pairwise compositionality at TOKEN level |
+| C1065 | Atom bigram ordering grammar |
+| C521 | Kernel directional asymmetry (order sensitivity) |
+| C1070 | Ordering grammar independent of kernel physics |
+| C906 | Vowel primitive suffix saturation |
+
+**Source:** COMPOUND_DECOMPOSITION phase (2026-02-21)
 
 ---
 
@@ -4939,7 +5171,7 @@ While token-level switching is memoryless-with-inertia, the system encodes **mac
 |-----------|-----------|----------|
 | **Lower bound** | Aggression categorically forbidden in 20.5% of folios | C490: zero AGGRESSIVE compatibility, not low probability |
 | **Upper bound** | Stabilization is absorbing (e->h = 0.00) | C521: kernel one-way valve; once stable, can't destabilize |
-| **Observation band** | LINK enforces monitoring posture (r = -0.7057 with CEI) | C366, C190: non-operational boundary operator |
+| **Observation band** | ol-density anticorrelates with CEI (r = -0.7057) | C609, C1174: ol-morphology density, not unified function |
 | **Intervention clamp** | Hazard exposure CV = 0.04-0.11 (tightly constrained) | C458: risky dimensions locked, recovery free |
 
 **Key distinction:** Thresholds are not "push until temperature X." They are "at this phase, intervention Y is structurally impossible." Legality transitions, not parametric bounds (C469, C287-290).
@@ -4970,7 +5202,7 @@ While token-level switching is memoryless-with-inertia, the system encodes **mac
 
 ### Functional Profiling (v4.50, LANE_FUNCTIONAL_PROFILING)
 
-**LINK-lane independence (C648):** LINK monitoring operates above lane identity -- both lanes receive equal observation. This is consistent with LINK as a phase-marking function (C366) rather than a lane-specific intervention. If LINK encodes observation posture, the operator observes regardless of which energy mode is active.
+**LINK-lane independence (C648):** ol-density is lane-independent (QO 15.4% vs CHSH 14.7%, NS). Both lanes carry equal ol-morphology load. Per C1174, this reflects morphological uniformity rather than a unified observational function -- the `ol` substring is recruited by each role regardless of lane context.
 
 **Deterministic MIDDLE partition (C649):** The 22 testable EN-exclusive MIDDLEs are 100% lane-specific (k/t/p-initial = QO only; e/o-initial = CHSH only). This means the token construction layer (C522) hard-codes lane assignment through morphological composition -- the initial character of a MIDDLE determines its lane. Sensory implication: if k presupposes thermal affordance and e presupposes multi-modal affordance, the exclusive vocabulary is partitioned by perceptual domain at the morphological level.
 
@@ -6436,7 +6668,7 @@ The Voynich was written during the peak era of guild pharmaceutical secrecy:
 | Cosmo | h-enriched, zero REGIME_1, monitoring-intensive | Observation-heavy process (quality verification or treatment) |
 | Recipe | Precision REGIMEs, balanced triggers | Complex reference procedures |
 
-Phase 386 found that 4/6 dimensional differences between sections are explained by REGIME composition alone. Only h% (monitoring intensity) and LINK density (checkpoint frequency) show independent section effects beyond REGIME. This means sections encode different *REGIME mixtures* (different techniques), with modest independent effects on monitoring and checkpointing strategy.
+Phase 386 found that 4/6 dimensional differences between sections are explained by REGIME composition alone. Only h% and ol-density show independent section effects beyond REGIME. This means sections encode different *REGIME mixtures* (different techniques), with modest independent effects on h-kernel allocation and ol-morphology density. (Note: C1174 revises the prior "monitoring/checkpointing" interpretation of these effects.)
 
 **What this resolves:**
 - Why an unbreakable script (trade secrets worth protecting)
@@ -6873,7 +7105,7 @@ It now has something much better:
 
 - REGIME_3 doesn't require HIGH_IMPACT operations
 - REGIME_3 requires min_e_steps=2 (recovery completeness)
-- REGIME_4 requires min_link_ratio=25% (monitoring completeness)
+- REGIME_4 requires min_link_ratio=25% (ol-density threshold)
 
 **Curriculum Model (Revised):**
 
@@ -8753,6 +8985,20 @@ This would explain the full structural signature:
 
 The analogy is chemical nomenclature: methyl-ethyl-ketone names a substance by concatenating its structural components. A distiller trained in this system would not read a substance name in natural language -- they would read a compound MIDDLE and recognize the material by its operational profile. The semantic ceiling (C171) holds: we cannot recover WHICH material a compound names, but we can see that the naming system is built from the same atoms that drive the operational grammar.
 
+### Phase 409 Extension: Dual-Channel Budget and Section-Specific Catalogs
+
+Phase 409 adds three structural signatures that sharpen the operational-profile nomenclature interpretation:
+
+**1. Complementary budget (C1146, r = -0.865):** Dark-pipeline and bridge token rates are strongly anti-correlated at the folio level, and this holds within every section (r = -0.82 to -0.88). A folio that spends more tokens on operational instructions (bridge/grammar) spends fewer on material identification (dark pipeline), and vice versa. This is what you would expect from a recipe system: some procedures are complex to execute but involve few materials; others are operationally simple but require extensive material specification. The manuscript's "token budget" trades off between WHAT TO DO and WHAT TO USE.
+
+**2. Section-specific catalogs (C1148, 3.9x hyper-modulation):** Dark-pipeline MIDDLEs are nearly 4x more section-differentiated than grammar MIDDLEs. This means each section of the manuscript draws from a largely distinct material vocabulary. If sections correspond to material domains (herbs, minerals, waters, animal products), this is exactly what you'd expect: the operational grammar (heat, cool, distill, filter) is roughly universal across domains, but the things you name are domain-specific. Herbal sections name herbs; mineral sections name minerals. The grammar is shared; the catalog is local.
+
+**3. Interior filling (C1147, 73.2% MIDDLE position):** Dark-pipeline tokens preferentially fill line interiors rather than anchoring boundaries. Grammar tokens are even more interior (83.5%), while general HT is less so (67.7%). This positions material-identification tokens as embedded content within the structural flow of each line — they are the nouns in the sentence, surrounded by the operational verbs. A line reads as: [grammar-opener] [material] [material] [operation] [material] [grammar-closer].
+
+**What Phase 409 rules out:** The dark-exclusive atom pool (25 atoms) is NOT a structurally special subclass — same section behavior (C1143), same slot positions (C1145), and doesn't explain ordering mismatches (C1144). The operational-profile naming system uses ALL atoms interchangeably. The 25 "dark-exclusive" atoms are simply rarer variants of the same building blocks — possibly encoding less common processing properties that only matter for material naming, not for operational instructions.
+
+**Updated analogy:** The manuscript is a recipe collection organized by material domain. Each section is like a chapter in a pharmacopoeia. The bridge MIDDLEs are the shared procedural verbs (heat, filter, decant, macerate) used across all chapters. The dark-pipeline MIDDLEs are the domain-specific ingredient lists — and each chapter has its own list, assembled from the same root concepts but combined differently to name different substances. When a procedure is complex, the recipe is mostly verbs; when many materials are involved, the recipe is mostly names. The names aren't arbitrary labels — they are compressed descriptions of how each material behaves under processing.
+
 
 ---
 
@@ -9858,6 +10104,22 @@ morphology:
           agreement with C1065 atom ordering, gateway/terminal positioning
           preserved). C935, C1141, C1142.
         provenance: "C267, C506.b, C935, C1141, C1142"
+      behavioral_atomicity:
+        statement: |
+          Single characters are genuine behavioral atoms. Multi-character sequences
+          in ALL morphological positions (PREFIX, MIDDLE, SUFFIX) inherit behavioral
+          profiles (position, suffix rate, prefix co-occurrence, section distribution)
+          by additive composition of component atoms. Statistically validated on
+          MIDDLEs: r=0.754 (no-kernel variant), z=3.32, p<0.001 vs 1000 permutations.
+          Same atomic alphabet composes across all three morphological slots.
+        top_predictive_features:
+          pfx_da: 0.624
+          pfx_sa: 0.474
+          lf_rate: 0.466
+          art_rate: 0.454
+          sfx_rate: 0.451
+        kernel_variant: "r=0.500 (weaker — consistent with C522 layer independence)"
+        provenance: "C1190"
       SUFFIX:
         required: false
         unique_count: 35
@@ -9961,7 +10223,7 @@ morphology:
         suffixes: ["-edy", "-ey"]
         link_proximity: "Distant"
         kernel_contact: "100%"
-    line_template: "ENTRY → MONITORING → LINK → INTERVENTION → EXIT"
+    line_template: "ENTRY → EARLY-CYCLE → ol-BOUNDARY → LATE-CYCLE → EXIT"
     provenance: "C382"
 
   fl_state_index:
@@ -10428,8 +10690,8 @@ convergence:
 # ============================================================
 link_operator:
 
-  function: "Deliberate waiting/monitoring phases"
-  provenance: "C366"
+  function: "Morphological artifact — `ol` substring recruited differently by each role, not a unified functional layer"
+  provenance: "C1174 (revises C366)"
 
   definition:
     marker: "'ol' substring in token"
@@ -10483,6 +10745,47 @@ link_operator:
   complementarity:
     with_escalation: true
     provenance: "C340"
+
+  functional_architecture:
+    # Phase 418: LINK_FUNCTIONAL_ARCHITECTURE (C1170-C1174)
+    overall_verdict: "LINK_MORPHOLOGICAL_ARTIFACT"
+    vocabulary_stratification:
+      cramers_v: 0.404
+      cc_types: 1  # standalone `ol` only
+      ax_prefix_fraction: "59.4%"
+      un_types: 735
+      hapax_fraction: "69.0%"
+      provenance: "C1170"
+    cross_role_behavior:
+      consistent_roles: "0/4"
+      link_jsd: 0.0138
+      nonlink_jsd: 0.0128
+      verdict: "ROLE_DOMINANT"
+      provenance: "C1171"
+    bio_excess:
+      bio_density: "20.2%"
+      en_span_enrichment: "4.65×"
+      ax_span_enrichment: "2.15×"
+      middle_depleted: true
+      verdict: "BIO_TARGETED_ENRICHMENT"
+      provenance: "C1172"
+    boundary_behavior:
+      entry_rate: "17.2%"
+      interior_rate: "12.4%"
+      exit_rate: "15.3%"
+      entry_divergence_rho: -0.059
+      exit_divergence_rho: -0.151
+      dynamics_boundary_enrichment: "1.09×"
+      verdict: "BOUNDARY_ENRICHED_PASSIVE"
+      provenance: "C1173"
+    interpretation: |
+      The `ol` substring is a morphological component, not a functional marker.
+      CC uses `ol` as standalone operator (continue instruction).
+      AX uses `ol` as prefix (modifying auxiliary morphology).
+      EN uses `ol` within/across MIDDLE boundaries.
+      BIO excess is SPAN-targeted (morphological complexity, not functional LINK deployment).
+      Boundary enrichment reflects positional preferences of ol-containing roles, not LINK-specific function.
+    provenance: "C1174"
 
 # ============================================================
 recovery:
@@ -10649,7 +10952,13 @@ three_compression_architecture:
     (C1141) — dark-pipeline compounds are built FROM bridge atoms but share no
     complete MIDDLEs with bridges.
 
-  provenance: "C1019, C1020, C1021, C1003, C1004, C1010, C1013, C1139, C1141"
+  atom_behavioral_basis: |
+    Bridge atoms serve as building blocks (C1141) BECAUSE they carry genuine
+    behavioral profiles that compose additively (C1190). Dark-pipeline compounds
+    inherit operational character from their bridge atom substrates through
+    behavioral composition, not arbitrary string concatenation.
+
+  provenance: "C1019, C1020, C1021, C1003, C1004, C1010, C1013, C1139, C1141, C1190"
 
 # ============================================================
 design_freedom:
@@ -10669,6 +10978,39 @@ design_freedom:
   principle: "Risk is globally constrained; recovery strategy is locally variable"
   mechanism: "Recovery variation is mediated by AXM attractor strength — forgiving programs have higher AXM self-transition (rho=0.651), less FQ interchange; brittle programs have weaker attractors. C458's aggregate clamping (hazard CV=0.04-0.11) is the result of stable recovery channels (AXM self≈0.66, CV=0.174), not individual hazard transition stability (hazard CV=1.814). AXM basin depth decomposes into: REGIME+section (42.0%) + PREFIX entropy (5.1%) + hazard density (6.1%) + bridge geometry (6.3%) + non-linear archetype residual (40.1%). Archetype-specific slopes differ suggestively (sign changes observed but not statistically robust at current sample sizes; C1018), consistent with non-linear program-specific tuning"
   provenance: "C458, C1016, C1017, C1018"
+
+  sister_pair_mechanism:
+    # Phase 420: SISTER_PAIR_MECHANISM (C1179-C1187)
+    statement: "Sister-pair choice (ch/sh) is a BOUNDARY_CONTROL_KNOB, not free variation"
+    c639_unexplained: "52.9% -> ~40% after position mediation"
+    position_mediation:
+      delta_r2: 0.128  # LOO confirmed at 0.097
+      ch_mean_pos: 0.487
+      sh_mean_pos: 0.395
+      gap: 0.092
+      note: "Extends C929 (active test vs passive monitor) to variance predictor"
+    dynamical_consequence:
+      axm_self_partial_rho: -0.250  # p=0.032, controlling section
+      hazard_density_partial_rho: 0.255  # p=0.028
+      note: "ch-heavy = higher hazard, lower stability. Parallel axis from C1169, not extension."
+    concentration:
+      icc: 0.317  # Moderate: 32% folio-determined, 68% paragraph-variable
+    bridge_dark_coupling: "INDEPENDENT (all partial rho <0.16)"
+    ok_ot_relationship: "INDEPENDENT AXES (partial rho=0.204, opposite positional polarity)"
+    successor_routing: "MIDDLE_DEPENDENT (5/102 strata, global p=0.034) -- C121 preserved"
+    boundary_coupling:
+      entry_jsd_partial_rho: 0.312  # p=0.004
+      opener_ch_frac_rho: 0.455
+      note: "ch-heavy = more divergent entry dynamics"
+      independent_of_entry_bundle: true  # C1188: correlation is proxy, not causal
+      mediated_by: "opener-routing features (C1163-C1165: role_entropy, prefix_entropy, init_spec_frac, axm_return_rate)"
+    entry_divergence_extension:
+      # Phase 421: SISTER_ENTRY_DIVERGENCE_EXTENSION (C1188-C1189)
+      verdict: "SISTER_ENTRY_LEVER_ABSENT"
+      dloo_r2: -0.020  # Adding sister HURTS cross-validation
+      coefficient_sign: "NEGATIVE (wrong direction)"
+      note: "C1186 correlation is fully mediated by opener-routing features. Sister is a proxy, not an independent lever."
+    provenance: "C1179, C1180, C1181, C1182, C1183, C1184, C1185, C1186, C1187, C1188, C1189"
 
 # ============================================================
 control_loop:
@@ -10791,6 +11133,160 @@ vocabulary_architecture:
       section_r2: 0.193  # Section identity explains only 19.3% of dark density variance
       implication: "Complementary distribution: folios invest more in grammar execution (bridge) OR identification (dark pipeline), not both equally"
       provenance: "C1146"
+    folio_balance_characterization:
+      classification: "BRIDGE_DOMINANT (21) / BALANCED (41) / DARK_DOMINANT (20) by dark/bridge ratio quartiles"
+      section_structured: "chi-sq=29.95, p<0.0001 — BIO=bridge-dom, PHARMA=dark-dom, RECIPE_B=balanced, HERBAL_B=mixed"
+      dynamics_orthogonal: "ARI=-0.002 vs archetypes, rho=0.001 vs AXM — vocabulary balance is independent of control-plane dynamics"
+      kernel_coupling: "Dark-dominant folios shift kernel profile: k_frac 0.314→0.226, h_frac 0.100→0.135; survives within RECIPE_B (p=0.002)"
+      c1035_residual: "Balance does NOT explain the 57% irreducible AXM residual"
+      provenance: "C1149, C1150, C1151"
+    vocabulary_dynamics_layer_separation:
+      statement: "Section-conditioned M2 captures vocabulary composition but not sequential dynamics or kernel engagement"
+      class_dist_ratio: 1.48  # real/synth inter-folio JSD — near-captured
+      axm_spread_ratio: 1.76  # real/synth AXM SD — uncaptured
+      kernel_profile_ratio: 1.79  # real/synth k/h/e SD — uncaptured
+      folio_fidelity: "87% of folios improved by section-conditioning (71/82)"
+      layer_1: "Vocabulary composition — section-determined"
+      layer_2: "Sequential dynamics + kernel engagement — program-specific"
+      provenance: "C1152"
+    generative_design_freedom:
+      aggregate: 0.399  # fraction of folio variation not section-captured
+      class_dist_uncaptured: 0.324
+      axm_uncaptured: 0.432
+      kernel_uncaptured: 0.440
+      c1035_consistent: true  # AXM 43.2% vs C1035 57%
+      c1016_note: "Lower than C1016 66.3% because class distribution IS section-captured (different metric layer)"
+      provenance: "C1153"
+    kernel_execution_universality:
+      k_ratio_range: "1.82-2.32x across all sections (always program-specific)"
+      e_ratio_range: "1.76-2.21x across all sections (tracks k-kernel)"
+      h_ratio_captured: "BIO 1.29x, HERBAL 1.04x, COSMO 0.74x (section-determined)"
+      h_ratio_uncaptured: "STARS_RECIPE 2.18x (program-specific)"
+      implication: "Execution kernel (k/e) is always program-level; monitoring kernel (h) is domain-dependent"
+      provenance: "C1154"
+    paragraph_kernel_dynamics_residual_closure:
+      statement: "Within-folio paragraph kernel diversity does not mediate the C1035 AXM residual"
+      best_delta_r2: 0.0014  # trajectory slope variance — effectively zero
+      loo_contributions: "all negative (overfitting)"
+      within_section: "all |rho| < 0.16"
+      implication: "C1035 residual confirmed closed at paragraph level; design freedom is genuinely program-specific"
+      provenance: "C1155"
+    line_position_transition_dynamics:
+      statement: "49-class transition matrix differs strongly by line position zone"
+      zone_jsd_range: "0.217-0.333 (all p<0.001 vs 1000 permutations)"
+      axm_self_gradient: "0.730 (entry) → 0.704 (interior) → 0.633 (exit)"
+      spectral_gap_range: "0.883-0.939"
+      section_dependent: true  # KW p<0.0001
+      generative_impact: "none — M2p 0/3 metrics improved"
+      provenance: "C1156"
+    boundary_divergence_residual:
+      statement: "Per-folio boundary divergence mediates C1035 AXM residual — first successful predictor"
+      delta_r2: 0.0845  # F=14.15, p=0.0004
+      loo_improvement: "0.433 → 0.512"
+      spearman_vs_axm: -0.732  # p<0.0001
+      note: "Descriptive not generative — position conditioning does not improve M2"
+      c1035_status: "partially reopened — ~49% irreducible remains"
+      provenance: "C1157"
+    entry_dominance:
+      statement: "Entry zone drives 3.5x more AXM residual variance than exit zone"
+      entry_delta_r2: 0.098  # F=16.63, p=0.0001
+      exit_delta_r2: 0.028  # F=4.51, p=0.038
+      entry_spearman: -0.692  # p<0.0001
+      exit_spearman: -0.472  # p<0.0001
+      note: "Contradicts gatekeeper exit hypothesis — predictive signal comes from line beginnings, not endings"
+      provenance: "C1158"
+    routing_shift:
+      statement: "Boundary divergence is driven by inter-state routing changes, not AXM self-transition decay"
+      axm_self_fraction: "3.2% of total transition delta"
+      top_entry_shifts: "AXm→AXM (+0.124), FQ→AXM (+0.103)"
+      top_exit_shifts: "CC→AXM (-0.296), FL_HAZ→AXM (-0.129)"
+      implication: "Line is a reset→explore→handoff arc at routing level"
+      provenance: "C1159"
+    section_confound_independence:
+      statement: "Section explains 70.2% of BD variance, but BD carries independent signal"
+      section_r2_on_bd: 0.702
+      partial_rho_bd_axm_given_section: -0.459  # p=0.0001
+      bd_increment_over_section: 0.135  # F=17.28, p=0.0001
+      loo_section_only: 0.259
+      loo_section_plus_bd: 0.330
+      provenance: "C1160"
+    gatekeeper_partial_mediation:
+      statement: "Gatekeeper classes explain ~30% of BD signal; 70% comes from non-gatekeeper routing"
+      original_delta_r2: 0.085
+      gk_free_delta_r2: 0.059  # 30.5% drop
+      gk_density_vs_bd: "rho=0.016 (uncorrelated)"
+      gk_free_bd_vs_axm: "rho=-0.673 (p<0.0001)"
+      provenance: "C1161"
+    opener_role_neutrality:
+      statement: "Opener role distribution does not predict entry divergence"
+      r2_roles_on_entry_div: 0.128
+      best_role_rho: -0.195  # ENERGY, p=0.061
+      role_entropy_rho: -0.116  # p=0.101
+      note: "Entry mechanism operates below role-level identity; consistent with C959"
+      provenance: "C1162"
+    axm_return_rate_dominance:
+      statement: "AXM return rate at entry is the dominant entry mechanism"
+      rho_vs_axm_self: 0.841  # p<0.0001 — near-perfect
+      rho_vs_entry_div: -0.510  # p<0.0001
+      r2_on_entry_div: 0.318
+      mean_return_rate: 0.707
+      note: "Per-line opening routing pattern IS the folio's dynamical identity"
+      provenance: "C1163"
+    opener_routing_mediation:
+      statement: "Opener routing partially mediates entry divergence (40% shrinkage)"
+      coefficient_shrinkage: 0.406
+      partial_rho_entry_div_surviving: -0.293  # p=0.013
+      opener_features_dr2: 0.159  # F=13.01, p<0.000002
+      entry_div_dr2: 0.068
+      combined_r2: 0.815
+      combined_loo: 0.669
+      provenance: "C1164"
+    axm_return_rate_residual_extension:
+      statement: "AXM return rate extends AXM residual beyond entry divergence"
+      incremental_dr2: 0.111  # F=30.95, p<0.000001
+      loo_improvement: "0.543 → 0.696"
+      total_bundle_dr2: 0.180  # entry_div + AXM_return vs C1035
+      c1035_status: "substantially reopened — irreducible reduced ~57% → ~32%"
+      provenance: "C1165"
+    exit_divergence_redundancy:
+      statement: "Exit JSD redundant after entry bundle control (partial rho=-0.097)"
+      bivariate_rho_exit_axm: -0.710  # strong alone
+      partial_rho_after_entry_bundle: -0.097  # p=0.101 — non-significant
+      entry_exit_collinearity: 0.697  # rho(jsd_entry, jsd_exit)
+      note: "Aggregate divergence metric collinear; directional routing metrics carry independent signal"
+      provenance: "C1166"
+    axm_departure_rate_extension:
+      statement: "AXM departure rate at exit extends residual beyond entry bundle"
+      incremental_dr2: 0.035  # F=11.80, p=0.0012
+      loo_improvement: "0.696 → 0.745"
+      closer_routing_r2: 0.338
+      axm_departure_rho_exit_div: 0.509  # p<0.0001
+      axm_departure_rho_axm_self: -0.687  # p<0.0001
+      best_exit_feature: "axm_departure"
+      note: "Exit signal is directional routing (AXM→non-AXM at exit), not aggregate divergence"
+      provenance: "C1167"
+    dual_boundary_architecture:
+      statement: "Entry + exit = independent predictive channels for AXM self-transition"
+      dual_model_r2: 0.852
+      dual_model_loo: 0.732
+      exit_increment_dr2: 0.039
+      exit_increment_loo_gain: 0.036
+      per_section_exit_dr2: {B: 0.189, H: 0.107, S: 0.100}
+      sections_benefiting: 3  # out of 3 testable
+      partial_rho_entry_exit: 0.259  # p=0.025 — correlated but not redundant
+      c1035_trajectory: "~57% → ~49% → ~32% → ~27% irreducible"
+      provenance: "C1168"
+    residual_freedom_closure:
+      statement: "AXM residual CLOSED at ~27% — genuine per-program design freedom"
+      exhaustive_battery: "5 tests, 23 candidate predictors"
+      univariate_holm_sig: 0  # out of 23
+      rf_cv_r2: -0.141  # permutation p=0.375
+      spatial_lag1_ac: 0.102  # permutation p=0.378
+      regime_kw_p: 0.998  # perfect homogeneity
+      c458_asymmetry: "SYMMETRIC — freedom not preferentially in recovery space"
+      c1035_final_trajectory: "~57% → ~49% → ~32% → ~27% CLOSED"
+      interpretation: "73% structurally determined (dual boundary model), 27% genuine per-program design freedom"
+      provenance: "C1169"
     dark_pipeline_profile:
       compound_rate: "66.7%"
       section_concentration: "Herf 0.716 (strongly section-specific)"
@@ -10937,15 +11433,13 @@ ht_un_integration:
       construction_hierarchy: "bridge atoms → compositional assembly (1-3 atoms) → dark-pipeline compounds → HT/UN identification tokens"
       provenance: "C1141"
     modified_ordering:
-      statement: "Dark pipeline follows modified version of B's atom ordering grammar (C1065)"
-      c1065_agreement: "50% (7 matches, 7 mismatches of 14 testable pairs)"
-      divergence_source: "Genuine grammar modification, NOT atom-pool artifact (Fisher p=0.592, C1144)"
-      gateway_terminal_preserved: true
-      gateway_mean_position: 0.083  # < 0.15 = INITIAL
-      terminal_mean_position: 0.352  # > 0.40 expectation, close
+      statement: "Dark pipeline follows SAME ordering grammar as C1065 (revised from 'modified')"
+      c1065_agreement: "100% (4/4 testable asymmetric pairs at strict threshold; C1142's 50% was low-count noise)"
+      dark_asymmetric_pairs: 4  # ek->ke, ke->eo, eo->ot, ok->ke (all match C1065)
+      internal_consistency: "100% transitive (0 violations)"
       dark_exclusive_atoms: 25  # Atoms not in grammar compounds
       atom_equivalence: "Dark-exclusive and shared atoms have equivalent section profiles (MW p=0.107, C1143) and equivalent positional slots (chi-sq p=0.421, C1145)"
-      provenance: "C1142, C1143, C1144, C1145"
+      provenance: "C1177 (revises C1142, C1144)"
     line_position:
       statement: "Dark-pipeline tokens preferentially occupy line-interior positions"
       dark_middle_rate: "73.2%"
@@ -10959,9 +11453,17 @@ ht_un_integration:
       dark_mean_js: 0.483
       pp_baseline_js: 0.124
       ratio: "3.9x"
-      implication: "Dark pipeline is the primary vehicle for section-level vocabulary modulation"
-      provenance: "C1148"
-    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148"
+      mechanism: "ATOM_SELECTION_DOMINATED — multiplicative atom model R²=0.781 (C1176)"
+      implication: "Atoms carry section signal; compounds inherit multiplicatively. No combination-emergent section effects."
+      provenance: "C1148, C1176"
+    combinatorics:
+      # Phase 419: DARK_PIPELINE_COMBINATORICS (C1175-C1178)
+      pair_space_occupancy: "7.9% (71/903 possible atom pairs)"
+      c475_gate: "100% recall, 13.4% precision — necessary but loose"
+      curation_parallel: "Parallels C1028 (0.9% PREFIX×MIDDLE×SUFFIX occupancy)"
+      phantom_middles: "15 B-absent ch/sh-initial MIDDLEs — morphologically isolated, dead naming pattern (C1178)"
+      provenance: "C1175, C1176, C1177, C1178"
+    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1175, C1176, C1177, C1178"
 
 # ============================================================
 robustness:
@@ -11033,7 +11535,7 @@ operational_layer:
       edy: {gloss: "batch", freq: 2147, pct: "9.3%"}
       dy: {gloss: "close", freq: 1081, pct: "4.7%"}
       aiin: {gloss: "check", freq: 952, pct: "4.1%"}
-      hy: {gloss: "hazard flag", freq: 910, pct: "3.9%"}
+      hy: {gloss: "confirm", freq: 910, pct: "3.9%"}
       ar: {gloss: "close", freq: 834, pct: "3.6%"}
       ain: {gloss: "intake", freq: 742, pct: "3.2%"}
       y: {gloss: "end", freq: 678, pct: "2.9%"}
@@ -11057,7 +11559,7 @@ operational_layer:
         reading: "on stability channel: cool, then close"
       - token: "sheckhy"
         parse: "sh:eck.hy"
-        reading: "on verify channel: hard precision, hazard flag"
+        reading: "on verify channel: hard precision, confirm"
       - token: "daiin"
         parse: "da:iin"
         reading: "infrastructure: iterate (control loop marker)"
@@ -11341,6 +11843,27 @@ provenance:
     - "C1143"  # Dark-exclusive atom equivalence (MW p=0.107)
     - "C1146"  # Bridge-dark anti-correlation (r=-0.865)
     - "C1148"  # Dark pipeline hyper-modulation (3.9x JS baseline)
+    - "C1149"  # Balance orthogonal to dynamical archetypes (ARI=-0.002)
+    - "C1150"  # Dark-dominant kernel shift (k 0.314→0.226, RECIPE_B p=0.002)
+    - "C1151"  # Balance section-structured (chi-sq p<0.0001)
+    - "C1152"  # Vocabulary-dynamics layer separation (class dist 1.48x, AXM 1.76x, kernel 1.79x)
+    - "C1153"  # Generative design freedom ~40% (consistent with C1035)
+    - "C1154"  # k/e-kernel universally program-specific (~2x all sections)
+    - "C1155"  # Paragraph kernel dynamics do not mediate AXM residual (C1035 closed)
+    - "C1156"  # Line position structures transitions (JSD 0.22-0.33, AXM gradient 0.730→0.633)
+    - "C1157"  # Boundary divergence mediates AXM residual (dR²=0.085, LOO 0.433→0.512)
+    - "C1158"  # Entry dominates boundary divergence (3.5× exit, dR²=0.098)
+    - "C1159"  # Boundary divergence is routing shift (AXM→AXM only 3.2% of delta)
+    - "C1160"  # BD section-confounded but independent (partial rho=-0.459, dR²=0.135)
+    - "C1161"  # Gatekeeper partial mediation (~30% of BD signal)
+    - "C1162"  # Opener role does not predict entry divergence (R²=0.128)
+    - "C1163"  # AXM return rate dominates entry mechanism (rho=0.841 with AXM self)
+    - "C1164"  # Opener routing partially mediates entry divergence (shrinkage=0.41)
+    - "C1165"  # AXM return rate extends residual (dR²=0.111, LOO 0.543→0.696)
+    - "C1166"  # Exit JSD redundant after entry control (partial rho=-0.097)
+    - "C1167"  # AXM departure rate at exit extends residual (dR²=0.035, LOO +0.049)
+    - "C1168"  # Dual boundary architecture (R²=0.852, LOO=0.732, ~27% irreducible)
+    - "C1169"  # AXM residual CLOSED — ~27% genuine design freedom (exhaustive 5-test battery)
 
   execution_syntax:
     - "C547"   # ICC-based role validation
@@ -11421,6 +11944,21 @@ provenance:
     - "C604"   # C412 REGIME decomposition (27.6% mediation; vanishes within REGIME_1/2)
     - "C605"   # Two-lane folio-level validation (lane balance rho=-0.506, independent of ch_preference)
 
+  sister_pair_mechanism:
+    - "C1179"  # Sister choice structured in slot (14/174 Bonferroni-significant, chi2=709.8)
+    - "C1180"  # Sister choice positionally mediated (delta-R2=0.128, ch=0.487, sh=0.395)
+    - "C1181"  # Sister choice dynamically consequential (AXM -0.250, hazard +0.255)
+    - "C1182"  # Sister concentration moderate consistency (ICC=0.317)
+    - "C1183"  # Sister bridge/dark independent (all partial <0.16)
+    - "C1184"  # ch/sh and ok/ot independent axes (partial=0.204, opposite position polarity)
+    - "C1185"  # Sister successor routing MIDDLE-dependent (5/102 strata, C121 preserved)
+    - "C1186"  # Sister boundary coupled (entry JSD rho=0.312, opener ch rho=0.455)
+    - "C1187"  # Sister mechanism: BOUNDARY_CONTROL_KNOB (synthesis)
+
+  sister_entry_divergence_extension:
+    - "C1188"  # Sister entry divergence absent (DLOO=-0.020, coefficient sign wrong)
+    - "C1189"  # Sister is proxy not lever (C1186 mediated by C1163-C1165 features)
+
   ht_un_reconciliation:
     - "C740"   # HT/UN population identity (identical by definition)
     - "C741"   # HT C475 minimal participation
@@ -11476,6 +12014,13 @@ provenance:
     - "C807"   # LINK-FL inverse relationship (distance 3.91 vs 3.38)
     - "C808"   # 'ol' is PP MIDDLE (92.4% LINK tokens are PP)
     - "C809"   # LINK-kernel separation (farther from kernel chars)
+
+  link_functional_architecture:
+    - "C1170"  # LINK vocabulary stratified by role (V=0.404, CC=standalone ol, AX=59% PREFIX)
+    - "C1171"  # LINK behavior role-dominant (0/4 consistent, no cross-role substrate)
+    - "C1172"  # BIO LINK excess SPAN-targeted (EN_SPAN 4.65×, MIDDLE depleted)
+    - "C1173"  # LINK boundary enrichment passive (no divergence correlation)
+    - "C1174"  # LINK is morphological artifact (synthesis: not functional layer)
 
   control_loop_synthesis:
     - "C810"   # LINK-FL non-adjacency (0.70x direct transitions)

@@ -1,0 +1,854 @@
+{
+  "t1_behavioral_consistency": {
+    "k": {
+      "bcs": 0.2525,
+      "n_compounds": 48,
+      "status": "WEAK",
+      "null_percentile": 34.2
+    },
+    "e": {
+      "bcs": 0.1404,
+      "n_compounds": 79,
+      "status": "WEAK",
+      "null_percentile": 14.2
+    },
+    "l": {
+      "bcs": 0.046,
+      "n_compounds": 26,
+      "status": "WEAK",
+      "null_percentile": 20.2
+    },
+    "r": {
+      "bcs": 0.102,
+      "n_compounds": 12,
+      "status": "WEAK",
+      "null_percentile": 37.0
+    },
+    "t": {
+      "bcs": 0.2797,
+      "n_compounds": 31,
+      "status": "WEAK",
+      "null_percentile": 46.8
+    },
+    "y": {
+      "bcs": 0.3571,
+      "n_compounds": 12,
+      "status": "MODERATE",
+      "null_percentile": 100.0
+    },
+    "o": {
+      "bcs": 0.214,
+      "n_compounds": 67,
+      "status": "WEAK",
+      "null_percentile": 80.2
+    },
+    "d": {
+      "bcs": 0.1416,
+      "n_compounds": 34,
+      "status": "WEAK",
+      "null_percentile": 58.8
+    },
+    "s": {
+      "bcs": 0.1232,
+      "n_compounds": 15,
+      "status": "WEAK",
+      "null_percentile": 29.8
+    },
+    "i": {
+      "bcs": 0.2418,
+      "n_compounds": 22,
+      "status": "WEAK",
+      "null_percentile": 95.6
+    },
+    "m": {
+      "bcs": 0.7818,
+      "n_compounds": 3,
+      "status": "STRONG",
+      "null_percentile": 99.6
+    },
+    "a": {
+      "bcs": 0.1922,
+      "n_compounds": 30,
+      "status": "WEAK",
+      "null_percentile": 99.2
+    },
+    "h": {
+      "bcs": 0.2073,
+      "n_compounds": 44,
+      "status": "WEAK",
+      "null_percentile": 51.2
+    },
+    "p": {
+      "bcs": 0.3052,
+      "n_compounds": 18,
+      "status": "MODERATE",
+      "null_percentile": 42.2
+    },
+    "f": {
+      "bcs": 0.1735,
+      "n_compounds": 7,
+      "status": "WEAK",
+      "null_percentile": 20.0
+    },
+    "x": {
+      "bcs": null,
+      "n_compounds": 0,
+      "status": "INSUFFICIENT_DATA",
+      "null_percentile": null
+    },
+    "q": {
+      "bcs": 0.7666,
+      "n_compounds": 6,
+      "status": "STRONG",
+      "null_percentile": 91.0
+    },
+    "g": {
+      "bcs": null,
+      "n_compounds": 0,
+      "status": "INSUFFICIENT_DATA",
+      "null_percentile": null
+    },
+    "n": {
+      "bcs": 0.7987,
+      "n_compounds": 7,
+      "status": "STRONG",
+      "null_percentile": 99.0
+    },
+    "c": {
+      "bcs": 0.1615,
+      "n_compounds": 55,
+      "status": "WEAK",
+      "null_percentile": 14.4
+    }
+  },
+  "t2_cross_position": {
+    "a": {
+      "cpc": 0.8493,
+      "positions": [
+        "M",
+        "P",
+        "S"
+      ],
+      "pair_correlations": {
+        "M-P": 0.8325,
+        "M-S": 0.7655,
+        "P-S": 0.9498
+      },
+      "n_positions": 3,
+      "status": "CONSISTENT"
+    },
+    "c": {
+      "cpc": -0.1082,
+      "positions": [
+        "M",
+        "P"
+      ],
+      "pair_correlations": {
+        "M-P": -0.1082
+      },
+      "n_positions": 2,
+      "status": "DIVERGENT"
+    },
+    "d": {
+      "cpc": 0.8418,
+      "positions": [
+        "M",
+        "P",
+        "S"
+      ],
+      "pair_correlations": {
+        "M-P": 0.7793,
+        "M-S": 0.8134,
+        "P-S": 0.9328
+      },
+      "n_positions": 3,
+      "status": "CONSISTENT"
+    },
+    "e": {
+      "cpc": 0.9667,
+      "positions": [
+        "M",
+        "P",
+        "S"
+      ],
+      "pair_correlations": {
+        "M-P": 0.9642,
+        "M-S": 0.9845,
+        "P-S": 0.9515
+      },
+      "n_positions": 3,
+      "status": "CONSISTENT"
+    },
+    "f": {
+      "cpc": 0.5422,
+      "positions": [
+        "M",
+        "P"
+      ],
+      "pair_correlations": {
+        "M-P": 0.5422
+      },
+      "n_positions": 2,
+      "status": "MODERATE"
+    },
+    "g": {
+      "cpc": 0.9884,
+      "positions": [
+        "M",
+        "S"
+      ],
+      "pair_correlations": {
+        "M-S": 0.9884
+      },
+      "n_positions": 2,
+      "status": "CONSISTENT"
+    },
+    "h": {
+      "cpc": 0.926,
+      "positions": [
+        "M",
+        "P",
+        "S"
+      ],
+      "pair_correlations": {
+        "M-P": 0.8788,
+        "M-S": 0.9113,
+        "P-S": 0.988
+      },
+      "n_positions": 3,
+      "status": "CONSISTENT"
+    },
+    "i": {
+      "cpc": 0.9183,
+      "positions": [
+        "M",
+        "S"
+      ],
+      "pair_correlations": {
+        "M-S": 0.9183
+      },
+      "n_positions": 2,
+      "status": "CONSISTENT"
+    },
+    "k": {
+      "cpc": 0.8604,
+      "positions": [
+        "M",
+        "P"
+      ],
+      "pair_correlations": {
+        "M-P": 0.8604
+      },
+      "n_positions": 2,
+      "status": "CONSISTENT"
+    },
+    "l": {
+      "cpc": 0.9378,
+      "positions": [
+        "M",
+        "P",
+        "S"
+      ],
+      "pair_correlations": {
+        "M-P": 0.8975,
+        "M-S": 0.9249,
+        "P-S": 0.991
+      },
+      "n_positions": 3,
+      "status": "CONSISTENT"
+    },
+    "m": {
+      "cpc": 0.8998,
+      "positions": [
+        "M",
+        "S"
+      ],
+      "pair_correlations": {
+        "M-S": 0.8998
+      },
+      "n_positions": 2,
+      "status": "CONSISTENT"
+    },
+    "n": {
+      "cpc": 0.739,
+      "positions": [
+        "M",
+        "S"
+      ],
+      "pair_correlations": {
+        "M-S": 0.739
+      },
+      "n_positions": 2,
+      "status": "CONSISTENT"
+    },
+    "o": {
+      "cpc": 0.8862,
+      "positions": [
+        "M",
+        "P",
+        "S"
+      ],
+      "pair_correlations": {
+        "M-P": 0.8219,
+        "M-S": 0.8424,
+        "P-S": 0.9942
+      },
+      "n_positions": 3,
+      "status": "CONSISTENT"
+    },
+    "p": {
+      "cpc": 0.4235,
+      "positions": [
+        "M",
+        "P"
+      ],
+      "pair_correlations": {
+        "M-P": 0.4235
+      },
+      "n_positions": 2,
+      "status": "MODERATE"
+    },
+    "q": {
+      "cpc": 0.9784,
+      "positions": [
+        "M",
+        "P"
+      ],
+      "pair_correlations": {
+        "M-P": 0.9784
+      },
+      "n_positions": 2,
+      "status": "CONSISTENT"
+    },
+    "r": {
+      "cpc": 0.8651,
+      "positions": [
+        "M",
+        "P",
+        "S"
+      ],
+      "pair_correlations": {
+        "M-P": 0.856,
+        "M-S": 0.9036,
+        "P-S": 0.8357
+      },
+      "n_positions": 3,
+      "status": "CONSISTENT"
+    },
+    "s": {
+      "cpc": 0.7794,
+      "positions": [
+        "M",
+        "P",
+        "S"
+      ],
+      "pair_correlations": {
+        "M-P": 0.6855,
+        "M-S": 0.8242,
+        "P-S": 0.8286
+      },
+      "n_positions": 3,
+      "status": "CONSISTENT"
+    },
+    "t": {
+      "cpc": 0.9394,
+      "positions": [
+        "M",
+        "P"
+      ],
+      "pair_correlations": {
+        "M-P": 0.9394
+      },
+      "n_positions": 2,
+      "status": "CONSISTENT"
+    },
+    "x": {
+      "cpc": null,
+      "positions": [
+        "M"
+      ],
+      "status": "SINGLE_POSITION"
+    },
+    "y": {
+      "cpc": 0.8012,
+      "positions": [
+        "M",
+        "P",
+        "S"
+      ],
+      "pair_correlations": {
+        "M-P": 0.7483,
+        "M-S": 0.9015,
+        "P-S": 0.7538
+      },
+      "n_positions": 3,
+      "status": "CONSISTENT"
+    }
+  },
+  "t3_gloss_audit": {
+    "n_full": 71,
+    "n_partial": 1,
+    "atom_ccs": {
+      "e": {
+        "n_compounds": 35,
+        "n_overlap": 1,
+        "overlap_rate": 0.029,
+        "status": "POOR"
+      },
+      "k": {
+        "n_compounds": 21,
+        "n_overlap": 1,
+        "overlap_rate": 0.048,
+        "status": "POOR"
+      },
+      "o": {
+        "n_compounds": 19,
+        "n_overlap": 1,
+        "overlap_rate": 0.053,
+        "status": "POOR"
+      },
+      "c": {
+        "n_compounds": 17,
+        "n_overlap": 1,
+        "overlap_rate": 0.059,
+        "status": "POOR"
+      },
+      "h": {
+        "n_compounds": 16,
+        "n_overlap": 1,
+        "overlap_rate": 0.062,
+        "status": "POOR"
+      },
+      "i": {
+        "n_compounds": 14,
+        "n_overlap": 0,
+        "overlap_rate": 0.0,
+        "status": "POOR"
+      },
+      "a": {
+        "n_compounds": 11,
+        "n_overlap": 0,
+        "overlap_rate": 0.0,
+        "status": "POOR"
+      },
+      "l": {
+        "n_compounds": 10,
+        "n_overlap": 1,
+        "overlap_rate": 0.1,
+        "status": "WEAK"
+      },
+      "d": {
+        "n_compounds": 9,
+        "n_overlap": 0,
+        "overlap_rate": 0.0,
+        "status": "POOR"
+      },
+      "y": {
+        "n_compounds": 7,
+        "n_overlap": 1,
+        "overlap_rate": 0.143,
+        "status": "WEAK"
+      },
+      "t": {
+        "n_compounds": 7,
+        "n_overlap": 0,
+        "overlap_rate": 0.0,
+        "status": "POOR"
+      },
+      "n": {
+        "n_compounds": 6,
+        "n_overlap": 0,
+        "overlap_rate": 0.0,
+        "status": "POOR"
+      },
+      "p": {
+        "n_compounds": 4,
+        "n_overlap": 1,
+        "overlap_rate": 0.25,
+        "status": "WEAK"
+      },
+      "r": {
+        "n_compounds": 3,
+        "n_overlap": 0,
+        "overlap_rate": 0.0,
+        "status": "POOR"
+      },
+      "s": {
+        "n_compounds": 3,
+        "n_overlap": 0,
+        "overlap_rate": 0.0,
+        "status": "POOR"
+      },
+      "m": {
+        "n_compounds": 2,
+        "n_overlap": 0,
+        "overlap_rate": 0.0,
+        "status": "POOR"
+      },
+      "f": {
+        "n_compounds": 1,
+        "n_overlap": 0,
+        "overlap_rate": 0.0,
+        "status": "POOR"
+      }
+    }
+  },
+  "t4_discriminative_power": {
+    "a": {
+      "dps": -0.0054,
+      "real_accuracy": 0.7781,
+      "best_substitute": "s",
+      "best_sub_accuracy": 0.7835,
+      "n_compounds": 30,
+      "status": "WORSE_THAN_SUB"
+    },
+    "c": {
+      "dps": -0.0704,
+      "real_accuracy": 0.722,
+      "best_substitute": "e",
+      "best_sub_accuracy": 0.7924,
+      "n_compounds": 55,
+      "status": "WORSE_THAN_SUB"
+    },
+    "d": {
+      "dps": -0.003,
+      "real_accuracy": 0.7565,
+      "best_substitute": "o",
+      "best_sub_accuracy": 0.7596,
+      "n_compounds": 34,
+      "status": "WORSE_THAN_SUB"
+    },
+    "e": {
+      "dps": 0.0152,
+      "real_accuracy": 0.777,
+      "best_substitute": "d",
+      "best_sub_accuracy": 0.7618,
+      "n_compounds": 79,
+      "status": "REPLACEABLE"
+    },
+    "f": {
+      "dps": -0.0078,
+      "real_accuracy": 0.7293,
+      "best_substitute": "d",
+      "best_sub_accuracy": 0.7371,
+      "n_compounds": 7,
+      "status": "WORSE_THAN_SUB"
+    },
+    "g": {
+      "dps": null,
+      "status": "INSUFFICIENT_DATA",
+      "n_compounds": 0
+    },
+    "h": {
+      "dps": -0.0433,
+      "real_accuracy": 0.7102,
+      "best_substitute": "e",
+      "best_sub_accuracy": 0.7535,
+      "n_compounds": 44,
+      "status": "WORSE_THAN_SUB"
+    },
+    "i": {
+      "dps": -0.0313,
+      "real_accuracy": 0.7414,
+      "best_substitute": "r",
+      "best_sub_accuracy": 0.7728,
+      "n_compounds": 22,
+      "status": "WORSE_THAN_SUB"
+    },
+    "k": {
+      "dps": -0.0037,
+      "real_accuracy": 0.7728,
+      "best_substitute": "t",
+      "best_sub_accuracy": 0.7766,
+      "n_compounds": 48,
+      "status": "WORSE_THAN_SUB"
+    },
+    "l": {
+      "dps": 0.0092,
+      "real_accuracy": 0.7202,
+      "best_substitute": "r",
+      "best_sub_accuracy": 0.7109,
+      "n_compounds": 26,
+      "status": "REPLACEABLE"
+    },
+    "m": {
+      "dps": 0.0094,
+      "real_accuracy": 0.7727,
+      "best_substitute": "g",
+      "best_sub_accuracy": 0.7633,
+      "n_compounds": 3,
+      "status": "REPLACEABLE"
+    },
+    "n": {
+      "dps": 0.0023,
+      "real_accuracy": 0.5296,
+      "best_substitute": "y",
+      "best_sub_accuracy": 0.5273,
+      "n_compounds": 7,
+      "status": "REPLACEABLE"
+    },
+    "o": {
+      "dps": 0.0048,
+      "real_accuracy": 0.7706,
+      "best_substitute": "q",
+      "best_sub_accuracy": 0.7659,
+      "n_compounds": 67,
+      "status": "REPLACEABLE"
+    },
+    "p": {
+      "dps": -0.0007,
+      "real_accuracy": 0.753,
+      "best_substitute": "q",
+      "best_sub_accuracy": 0.7538,
+      "n_compounds": 18,
+      "status": "WORSE_THAN_SUB"
+    },
+    "q": {
+      "dps": 0.0088,
+      "real_accuracy": 0.8112,
+      "best_substitute": "c",
+      "best_sub_accuracy": 0.8024,
+      "n_compounds": 6,
+      "status": "REPLACEABLE"
+    },
+    "r": {
+      "dps": 0.0027,
+      "real_accuracy": 0.7572,
+      "best_substitute": "g",
+      "best_sub_accuracy": 0.7544,
+      "n_compounds": 12,
+      "status": "REPLACEABLE"
+    },
+    "s": {
+      "dps": -0.0529,
+      "real_accuracy": 0.69,
+      "best_substitute": "p",
+      "best_sub_accuracy": 0.743,
+      "n_compounds": 15,
+      "status": "WORSE_THAN_SUB"
+    },
+    "t": {
+      "dps": 0.005,
+      "real_accuracy": 0.7641,
+      "best_substitute": "k",
+      "best_sub_accuracy": 0.7592,
+      "n_compounds": 31,
+      "status": "REPLACEABLE"
+    },
+    "x": {
+      "dps": null,
+      "status": "INSUFFICIENT_DATA",
+      "n_compounds": 0
+    },
+    "y": {
+      "dps": 0.011,
+      "real_accuracy": 0.6815,
+      "best_substitute": "s",
+      "best_sub_accuracy": 0.6705,
+      "n_compounds": 12,
+      "status": "REPLACEABLE"
+    }
+  },
+  "scorecard": {
+    "k": {
+      "gloss": "heat",
+      "tokens": 2081,
+      "t1_bcs": 0.2525,
+      "t1_null_percentile": 34.2,
+      "t2_cpc": 0.8604,
+      "t3_overlap_rate": 0.048,
+      "t4_dps": -0.0037,
+      "verdict": "REVIEW: LOW_CONSISTENCY, NEAR_NULL"
+    },
+    "l": {
+      "gloss": "late",
+      "tokens": 853,
+      "t1_bcs": 0.046,
+      "t1_null_percentile": 20.2,
+      "t2_cpc": 0.9378,
+      "t3_overlap_rate": 0.1,
+      "t4_dps": 0.0092,
+      "verdict": "REVIEW: LOW_CONSISTENCY, NEAR_NULL"
+    },
+    "e": {
+      "gloss": "cool",
+      "tokens": 845,
+      "t1_bcs": 0.1404,
+      "t1_null_percentile": 14.2,
+      "t2_cpc": 0.9667,
+      "t3_overlap_rate": 0.029,
+      "t4_dps": 0.0152,
+      "verdict": "REVIEW: LOW_CONSISTENCY, NEAR_NULL"
+    },
+    "r": {
+      "gloss": "mid",
+      "tokens": 749,
+      "t1_bcs": 0.102,
+      "t1_null_percentile": 37.0,
+      "t2_cpc": 0.8651,
+      "t3_overlap_rate": 0.0,
+      "t4_dps": 0.0027,
+      "verdict": "REVIEW: LOW_CONSISTENCY, NEAR_NULL"
+    },
+    "t": {
+      "gloss": "transfer",
+      "tokens": 574,
+      "t1_bcs": 0.2797,
+      "t1_null_percentile": 46.8,
+      "t2_cpc": 0.9394,
+      "t3_overlap_rate": 0.0,
+      "t4_dps": 0.005,
+      "verdict": "REVIEW: LOW_CONSISTENCY, NEAR_NULL"
+    },
+    "y": {
+      "gloss": "end",
+      "tokens": 458,
+      "t1_bcs": 0.3571,
+      "t1_null_percentile": 100.0,
+      "t2_cpc": 0.8012,
+      "t3_overlap_rate": 0.143,
+      "t4_dps": 0.011,
+      "verdict": "REVIEW: REPLACEABLE"
+    },
+    "o": {
+      "gloss": "near",
+      "tokens": 376,
+      "t1_bcs": 0.214,
+      "t1_null_percentile": 80.2,
+      "t2_cpc": 0.8862,
+      "t3_overlap_rate": 0.053,
+      "t4_dps": 0.0048,
+      "verdict": "REVIEW: LOW_CONSISTENCY, REPLACEABLE"
+    },
+    "d": {
+      "gloss": "mark",
+      "tokens": 312,
+      "t1_bcs": 0.1416,
+      "t1_null_percentile": 58.8,
+      "t2_cpc": 0.8418,
+      "t3_overlap_rate": 0.0,
+      "t4_dps": -0.003,
+      "verdict": "REVIEW: LOW_CONSISTENCY, NEAR_NULL"
+    },
+    "s": {
+      "gloss": "break",
+      "tokens": 142,
+      "t1_bcs": 0.1232,
+      "t1_null_percentile": 29.8,
+      "t2_cpc": 0.7794,
+      "t3_overlap_rate": 0.0,
+      "t4_dps": -0.0529,
+      "verdict": "REVIEW: LOW_CONSISTENCY, NEAR_NULL"
+    },
+    "i": {
+      "gloss": "early",
+      "tokens": 137,
+      "t1_bcs": 0.2418,
+      "t1_null_percentile": 95.6,
+      "t2_cpc": 0.9183,
+      "t3_overlap_rate": 0.0,
+      "t4_dps": -0.0313,
+      "verdict": "REVIEW: LOW_CONSISTENCY, WORSE_THAN_SUB"
+    },
+    "m": {
+      "gloss": "final",
+      "tokens": 76,
+      "t1_bcs": 0.7818,
+      "t1_null_percentile": 99.6,
+      "t2_cpc": 0.8998,
+      "t3_overlap_rate": 0.0,
+      "t4_dps": 0.0094,
+      "verdict": "REVIEW: REPLACEABLE"
+    },
+    "a": {
+      "gloss": "yield",
+      "tokens": 63,
+      "t1_bcs": 0.1922,
+      "t1_null_percentile": 99.2,
+      "t2_cpc": 0.8493,
+      "t3_overlap_rate": 0.0,
+      "t4_dps": -0.0054,
+      "verdict": "REVIEW: LOW_CONSISTENCY, WORSE_THAN_SUB"
+    },
+    "c": {
+      "gloss": "adjust",
+      "tokens": 52,
+      "t1_bcs": 0.1615,
+      "t1_null_percentile": 14.4,
+      "t2_cpc": -0.1082,
+      "t3_overlap_rate": 0.059,
+      "t4_dps": -0.0704,
+      "verdict": "REVIEW: LOW_CONSISTENCY, NEAR_NULL"
+    },
+    "h": {
+      "gloss": "watch",
+      "tokens": 48,
+      "t1_bcs": 0.2073,
+      "t1_null_percentile": 51.2,
+      "t2_cpc": 0.926,
+      "t3_overlap_rate": 0.062,
+      "t4_dps": -0.0433,
+      "verdict": "REVIEW: LOW_CONSISTENCY, NEAR_NULL"
+    },
+    "p": {
+      "gloss": "pause",
+      "tokens": 47,
+      "t1_bcs": 0.3052,
+      "t1_null_percentile": 42.2,
+      "t2_cpc": 0.4235,
+      "t3_overlap_rate": 0.25,
+      "t4_dps": -0.0007,
+      "verdict": "REVIEW: NEAR_NULL, WORSE_THAN_SUB"
+    },
+    "f": {
+      "gloss": "flag",
+      "tokens": 17,
+      "t1_bcs": 0.1735,
+      "t1_null_percentile": 20.0,
+      "t2_cpc": 0.5422,
+      "t3_overlap_rate": 0.0,
+      "t4_dps": -0.0078,
+      "verdict": "REVIEW: LOW_CONSISTENCY, NEAR_NULL"
+    },
+    "x": {
+      "gloss": "diagram",
+      "tokens": 12,
+      "t1_bcs": null,
+      "t1_null_percentile": null,
+      "t2_cpc": null,
+      "t3_overlap_rate": null,
+      "t4_dps": null,
+      "verdict": "INSUFFICIENT_DATA"
+    },
+    "q": {
+      "gloss": "?",
+      "tokens": 10,
+      "t1_bcs": 0.7666,
+      "t1_null_percentile": 91.0,
+      "t2_cpc": 0.9784,
+      "t3_overlap_rate": null,
+      "t4_dps": 0.0088,
+      "verdict": "REVIEW: REPLACEABLE"
+    },
+    "g": {
+      "gloss": "complete",
+      "tokens": 8,
+      "t1_bcs": null,
+      "t1_null_percentile": null,
+      "t2_cpc": 0.9884,
+      "t3_overlap_rate": null,
+      "t4_dps": null,
+      "verdict": "INSUFFICIENT_DATA"
+    },
+    "n": {
+      "gloss": "halt",
+      "tokens": 7,
+      "t1_bcs": 0.7987,
+      "t1_null_percentile": 99.0,
+      "t2_cpc": 0.739,
+      "t3_overlap_rate": 0.0,
+      "t4_dps": 0.0023,
+      "verdict": "REVIEW: REPLACEABLE"
+    }
+  }
+}
