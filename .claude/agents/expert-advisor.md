@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1055 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 1057 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1055 validated)
+- Tier 0-2 binding constraints (1057 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1055 constraints, 66 fits,
+full content in their source documents. All 1057 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-22 16:51
-**Version:** FROZEN STATE (1055 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-22 17:11
+**Version:** FROZEN STATE (1057 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1056 constraints | 2026-02-22
+CONSTRAINT_REFERENCE v2.6 | 1058 constraints | 2026-02-22
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2164,6 +2164,8 @@ C1208	**Atom Carryover Classification** (18 atoms classify into 3 carryover clas
 C1209	**MIDDLE Positional Grammar** (atoms occupy ordered slots within MIDDLEs: INITIAL {a,q,e,o} 86-57% initial; MEDIAL {c,i,p,d,f,s}; TERMINAL {n,y,m,r,h,l} 71-99% terminal; FREE {k,t} no preference; n 99.4% terminal, a 86.3% initial; all 18 atoms FDR-significant; k/t position-freedom consistent with kernel operator role)
 C1210	**MIDDLE Slot Syntax**
 C1211	**Sub-MIDDLE Pairwise Sufficiency** (INITIAL+MEDIAL+TERMINAL show REDUNDANCY not synergy: synergy=-0.827 bits; extends C1003 to sub-MIDDLE level; INITIAL explains 35.9% of TERMINAL entropy, MEDIAL 49.1%, both together 57.5%; pairwise interactions sufficient at both morphological levels)
+C1212	**Cross-Token Sequential Chaining** (TERMINAL(N)->INITIAL(N+1) transitions show genuine sequential structure: chi2=1242.9, V=0.0709, MI=0.0637, shuffle z=19.74; enriched: h->p 2.61x, r->a 1.99x, y->q 1.91x; depleted: r->t 0.25x, r->l 0.30x; cross-token signal 23% of within-MIDDLE V, 6% of MI; cross-line NOT weaker: MI ratio=1.262; survives daiin exclusion z=16.13)
+C1213	**Axis-Switching Dominance** (programs switch C1207 axes between tokens 84.8% of the time; same-axis continuation 15.2% vs expected 13.2%, enrichment only 1.15x; ITERATION->ITERATION highest same-axis at 33.2%; STABILITY dominant target from all axes; programs interleave across operational channels)
 
 ---
 
