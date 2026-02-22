@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1046 validated constraints | **Version:** 4.27 | **Date:** 2026-02-22
+**Total:** 1047 validated constraints | **Version:** 4.28 | **Date:** 2026-02-22
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3292,6 +3292,7 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 | **1200** | **Order Encodes Procedural State** (atom ordering within MIDDLEs carries state: after k-terminal, 70.6% start with e vs 58.2% after e-terminal, p<0.001; ke chosen after cool predecessors, ek after hot; K-DOM alternates 1.94x, E-DOM persists 0.60x; carryover within-line +0.247 but resets at line boundaries +0.021) | 2 | B, order, state | -> [C1200_order_encodes_procedural_state.md](C1200_order_encodes_procedural_state.md) |
 | **1201** | **PREFIX-Mediated Energy State Routing** (ch/sh prefixes route k/e energy state transitions; predecessor ch:sh=1.76:1 at k->e switches vs 0.98:1 at continuations, Fisher p=0.008; target PREFIX chi2=104.2; sh 2.06x and lsh 3.17x enriched at switches; qo 0.69x and ol 0.57x enriched at continuations) | 2 | B, prefix, energy, routing | -> [C1201_prefix_energy_state_routing.md](C1201_prefix_energy_state_routing.md) |
 | **1202** | **H-Kernel MIDDLE No Transition Mediation** (h-kernel in MIDDLE does NOT mediate k/e transitions; mediator h-rate 5.5% at k->e vs 7.2% at k->k, delta=-0.016, perm p=0.852; function resides in PREFIX layer not MIDDLE; STARS_RECIPE only section with positive delta, confirming C1154) | 2 | B, h-kernel, negative | -> [C1202_h_kernel_middle_no_transition_mediation.md](C1202_h_kernel_middle_no_transition_mediation.md) |
+| **1203** | **ch/sh MIDDLE Atom-Level Differentiation** (ch-prefix MIDDLEs have higher k-atom fraction (7.1% vs 5.9%) and prefer e-free MIDDLEs: dy 3.1x, k 3.1x, d 2.8x ch-biased; sh-prefix MIDDLEs are more e-enriched (35.1% vs 30.2%); both share core vocabulary but frequency distributions diverge along k/e axis) | 2 | B, prefix, atoms, ch, sh | -> [C1203_ch_sh_middle_atom_differentiation.md](C1203_ch_sh_middle_atom_differentiation.md) |
 
 ---
 
