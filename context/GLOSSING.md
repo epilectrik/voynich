@@ -94,7 +94,7 @@ All glosses below have been validated by the expert-advisor agent against the co
 | ch | test | Active state testing (discrete checkpoint) | C929: pos 0.515, checkpoint suffix 1.87x, followed by close/input/iterate. Brunschwig: finger test, taste test, thumbnail viscosity |
 | sh | monitor | Passive process monitoring (continuous observation) | C929: pos 0.396, front-loaded 33% in first 20% of line, followed by heat 18.3%. Brunschwig: drip watching, fire monitoring, color watching |
 | qo | energy | Energy domain | C644: energy operations |
-| ol | continue / LINK | Continuation, monitoring boundary | C609: LINK operator |
+| ol | continue / LINK | Morphological component, role-stratified (not unified function) | C609: density, C1174: morphological artifact |
 | da | setup | Infrastructure, anchoring | C911: infrastructure selector |
 | ok | vessel | **DOMAIN SELECTOR.** ok selects the vessel/apparatus as action target; MIDDLE provides the action. ok+aiin = "check vessel," ok+ar = "close vessel," ok+e = "cool vessel," ok+ai = "open vessel." 378 same-MIDDLE pairs confirm domain differentiation. Late in line (0.538). Sister pair with ot (proactive vs corrective). | C936 (revised), C911: e-family + infra. C570/C571: PREFIX = role selector |
 | ot | (scaffold) | Often silent/structural | C911: h-family selector |

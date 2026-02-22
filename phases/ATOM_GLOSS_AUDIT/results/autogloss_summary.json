@@ -1,0 +1,117 @@
+{
+  "phase": "ATOM_GLOSS_AUDIT",
+  "phase_number": 424,
+  "atom_fixes": {
+    "i": {
+      "old": "early",
+      "new": "iterate"
+    },
+    "l": {
+      "old": "late",
+      "new": "frame"
+    },
+    "o": {
+      "old": "near",
+      "new": "work"
+    },
+    "r": {
+      "old": "mid",
+      "new": "input"
+    },
+    "s": {
+      "old": "break",
+      "new": "sequence"
+    }
+  },
+  "atom_confidence": {
+    "k": {
+      "gloss": "heat",
+      "confidence": "LOCKED"
+    },
+    "e": {
+      "gloss": "cool",
+      "confidence": "LOCKED"
+    },
+    "h": {
+      "gloss": "watch",
+      "confidence": "LOCKED"
+    },
+    "y": {
+      "gloss": "end",
+      "confidence": "LOCKED"
+    },
+    "i": {
+      "gloss": "iterate",
+      "confidence": "LOCKED"
+    },
+    "n": {
+      "gloss": "halt",
+      "confidence": "LOCKED"
+    },
+    "a": {
+      "gloss": "yield",
+      "confidence": "LOCKED"
+    },
+    "m": {
+      "gloss": "final",
+      "confidence": "LOCKED"
+    },
+    "d": {
+      "gloss": "mark",
+      "confidence": "SOLID"
+    },
+    "t": {
+      "gloss": "transfer",
+      "confidence": "SOLID"
+    },
+    "c": {
+      "gloss": "adjust",
+      "confidence": "PLAUSIBLE"
+    },
+    "p": {
+      "gloss": "pause",
+      "confidence": "PLAUSIBLE"
+    },
+    "f": {
+      "gloss": "flag",
+      "confidence": "PLAUSIBLE"
+    },
+    "s": {
+      "gloss": "sequence",
+      "confidence": "PLAUSIBLE"
+    },
+    "o": {
+      "gloss": "work",
+      "confidence": "WEAK"
+    },
+    "l": {
+      "gloss": "frame",
+      "confidence": "WEAK"
+    },
+    "r": {
+      "gloss": "input",
+      "confidence": "WEAK"
+    },
+    "g": {
+      "gloss": "complete",
+      "confidence": "PLAUSIBLE"
+    },
+    "x": {
+      "gloss": "diagram",
+      "confidence": "PLAUSIBLE"
+    },
+    "q": {
+      "gloss": null,
+      "confidence": "SPECIAL"
+    }
+  },
+  "autogloss_count": 1144,
+  "already_glossed": 71,
+  "incomplete": 58,
+  "confidence_distribution": {
+    "SOLID": 86,
+    "LOCKED": 72,
+    "WEAK": 768,
+    "PLAUSIBLE": 289
+  }
+}

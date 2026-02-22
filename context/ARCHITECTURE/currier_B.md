@@ -132,21 +132,32 @@ Lines are **formal control blocks**, not scribal wrapping (C357-360).
 
 ---
 
-## LINK Operator (Tier 2)
+## LINK Population (Tier 2)
 
-LINK tokens represent **deliberate waiting/monitoring** phases.
+LINK tokens (containing `ol` substring) are a **morphological artifact**, not a unified functional layer (C1174). The `ol` substring is recruited differently by each grammatical role.
 
 | Metric | Value |
 |--------|-------|
-| Density | 38% of text |
+| Density | 13.2% of B tokens (3,047 tokens, C609) |
 | Section conditioning | B=19.6%, H=9.1%, C=10.1% (C334) |
-| Spatial distribution | Uniform within folios (C365) |
-| Function | Boundary between monitoring and intervention (C366) |
+| Spatial distribution | Boundary-enriched (C805; refutes C365 uniform) |
+| Vocabulary | Strongly role-stratified (V=0.404, C1170) |
+| Behavior | Role-dominant, no cross-role substrate (C1171) |
 
-### LINK Properties
+### Role-Specific `ol` Usage (C1174)
 
-- Preceded by AUXILIARY (1.50x), FLOW_OPERATOR (1.30x)
-- Followed by HIGH_IMPACT (2.70x), ENERGY_OPERATOR (1.15x)
+| Role | How `ol` participates | Position |
+|------|-----------------------|----------|
+| CC | Standalone operator `ol` | MIDDLE |
+| AX | Prefix component (ol+keedy, ol+chedy) | PREFIX (59%) |
+| EN | Within energy operator morphology | MIDDLE/SPAN/SUFFIX |
+
+### Positional Properties
+
+- Boundary-enriched: first-token 17.2%, last-token 15.3%, middle 12.4% (C805)
+- Mean position: 0.476 (earlier than baseline 0.504)
+- Predecessor bias: NOT SIGNIFICANT (p=0.41, C804)
+- Successor bias: WEAK (p<0.001, enrichments ~1.1x, C804)
 - LINK-escalation complementarity: 0.605x baseline near escalation (C340)
 
 ---

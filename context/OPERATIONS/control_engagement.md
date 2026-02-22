@@ -31,7 +31,7 @@ CEI measures active intervention density in a program. Higher CEI = more frequen
 | Direction | Strong negative |
 | Meaning | More LINK → Less CEI |
 
-LINK tokens represent deliberate waiting. Programs with more LINK have less active engagement.
+LINK tokens (ol-morphology, C1174: morphological artifact) anticorrelate with CEI. Programs with higher ol-density have lower active engagement.
 
 ---
 
@@ -51,10 +51,10 @@ Grammar separates two phases:
 
 | Phase | Tokens | LINK Proximity |
 |-------|--------|----------------|
-| MONITORING | da, -in/-l/-r | Adjacent (attracted) |
-| INTERVENTION | ch/sh, -edy/-ey | Distant (avoiding) |
+| EARLY-CYCLE | da, -in/-l/-r | Adjacent to ol-tokens (attracted) |
+| LATE-CYCLE | ch/sh, -edy/-ey | Distant from ol-tokens (avoiding) |
 
-Line structure: ENTRY → MONITORING → LINK → INTERVENTION → EXIT
+Line structure: ENTRY → EARLY-CYCLE → ol-BOUNDARY → LATE-CYCLE → EXIT
 
 ---
 
@@ -67,7 +67,7 @@ Line structure: ENTRY → MONITORING → LINK → INTERVENTION → EXIT
 | Line-position | Uniform (p=0.80) |
 | Function | Grammar state transition marker |
 
-LINK marks boundary between monitoring and intervention phases.
+ol-tokens mark a positional boundary within lines (C805, C813). The functional interpretation as "monitoring/intervention" boundary is superseded by C1174 (morphological artifact).
 
 ---
 

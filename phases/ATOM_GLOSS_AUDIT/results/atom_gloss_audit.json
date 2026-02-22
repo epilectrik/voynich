@@ -1,0 +1,1616 @@
+{
+  "phase": "ATOM_GLOSS_AUDIT",
+  "phase_number": 424,
+  "discrepancies": {
+    "i": {
+      "glossing_md": "iterate",
+      "dictionary": "early"
+    },
+    "l": {
+      "glossing_md": "frame",
+      "dictionary": "late"
+    },
+    "o": {
+      "glossing_md": "work",
+      "dictionary": "near"
+    },
+    "r": {
+      "glossing_md": "input",
+      "dictionary": "mid"
+    },
+    "s": {
+      "glossing_md": "sequence",
+      "dictionary": "break"
+    }
+  },
+  "atom_report": {
+    "a": {
+      "gloss": "yield",
+      "standalone_count": 64,
+      "n_compounds": 11,
+      "n_good": 1,
+      "n_ok": 0,
+      "n_bad": 1,
+      "n_unknown": 9,
+      "consistency_rate": 0.091,
+      "status": "REVIEW"
+    },
+    "c": {
+      "gloss": "adjust",
+      "standalone_count": 5,
+      "n_compounds": 17,
+      "n_good": 3,
+      "n_ok": 0,
+      "n_bad": 0,
+      "n_unknown": 14,
+      "consistency_rate": 0.176,
+      "status": "REVIEW"
+    },
+    "d": {
+      "gloss": "mark",
+      "standalone_count": 337,
+      "n_compounds": 9,
+      "n_good": 1,
+      "n_ok": 3,
+      "n_bad": 0,
+      "n_unknown": 5,
+      "consistency_rate": 0.444,
+      "status": "REVIEW"
+    },
+    "e": {
+      "gloss": "cool",
+      "standalone_count": 867,
+      "n_compounds": 36,
+      "n_good": 13,
+      "n_ok": 3,
+      "n_bad": 0,
+      "n_unknown": 20,
+      "consistency_rate": 0.444,
+      "status": "REVIEW"
+    },
+    "f": {
+      "gloss": "flag",
+      "standalone_count": 17,
+      "n_compounds": 1,
+      "n_good": 0,
+      "n_ok": 0,
+      "n_bad": 0,
+      "n_unknown": 1,
+      "consistency_rate": 0.0,
+      "status": "INSUFFICIENT"
+    },
+    "g": {
+      "gloss": "complete",
+      "standalone_count": 8,
+      "n_compounds": 0,
+      "n_good": 0,
+      "n_ok": 0,
+      "n_bad": 0,
+      "n_unknown": 0,
+      "consistency_rate": 0,
+      "status": "INSUFFICIENT"
+    },
+    "h": {
+      "gloss": "watch",
+      "standalone_count": 48,
+      "n_compounds": 16,
+      "n_good": 1,
+      "n_ok": 1,
+      "n_bad": 0,
+      "n_unknown": 14,
+      "consistency_rate": 0.125,
+      "status": "REVIEW"
+    },
+    "i": {
+      "gloss": "iterate",
+      "standalone_count": 137,
+      "n_compounds": 14,
+      "n_good": 2,
+      "n_ok": 0,
+      "n_bad": 2,
+      "n_unknown": 10,
+      "consistency_rate": 0.143,
+      "status": "REVIEW"
+    },
+    "k": {
+      "gloss": "heat",
+      "standalone_count": 2083,
+      "n_compounds": 22,
+      "n_good": 6,
+      "n_ok": 0,
+      "n_bad": 0,
+      "n_unknown": 16,
+      "consistency_rate": 0.273,
+      "status": "REVIEW"
+    },
+    "l": {
+      "gloss": "frame",
+      "standalone_count": 855,
+      "n_compounds": 10,
+      "n_good": 3,
+      "n_ok": 1,
+      "n_bad": 0,
+      "n_unknown": 6,
+      "consistency_rate": 0.4,
+      "status": "REVIEW"
+    },
+    "m": {
+      "gloss": "final",
+      "standalone_count": 76,
+      "n_compounds": 2,
+      "n_good": 2,
+      "n_ok": 0,
+      "n_bad": 0,
+      "n_unknown": 0,
+      "consistency_rate": 1.0,
+      "status": "TENTATIVE"
+    },
+    "n": {
+      "gloss": "halt",
+      "standalone_count": 7,
+      "n_compounds": 6,
+      "n_good": 1,
+      "n_ok": 0,
+      "n_bad": 0,
+      "n_unknown": 5,
+      "consistency_rate": 0.167,
+      "status": "REVIEW"
+    },
+    "o": {
+      "gloss": "work",
+      "standalone_count": 388,
+      "n_compounds": 21,
+      "n_good": 5,
+      "n_ok": 2,
+      "n_bad": 0,
+      "n_unknown": 14,
+      "consistency_rate": 0.333,
+      "status": "REVIEW"
+    },
+    "p": {
+      "gloss": "pause",
+      "standalone_count": 47,
+      "n_compounds": 5,
+      "n_good": 2,
+      "n_ok": 0,
+      "n_bad": 0,
+      "n_unknown": 3,
+      "consistency_rate": 0.4,
+      "status": "REVIEW"
+    },
+    "r": {
+      "gloss": "input",
+      "standalone_count": 749,
+      "n_compounds": 3,
+      "n_good": 0,
+      "n_ok": 1,
+      "n_bad": 0,
+      "n_unknown": 2,
+      "consistency_rate": 0.333,
+      "status": "REVIEW"
+    },
+    "s": {
+      "gloss": "sequence",
+      "standalone_count": 144,
+      "n_compounds": 3,
+      "n_good": 0,
+      "n_ok": 0,
+      "n_bad": 0,
+      "n_unknown": 3,
+      "consistency_rate": 0.0,
+      "status": "REVIEW"
+    },
+    "t": {
+      "gloss": "transfer",
+      "standalone_count": 576,
+      "n_compounds": 7,
+      "n_good": 0,
+      "n_ok": 1,
+      "n_bad": 0,
+      "n_unknown": 6,
+      "consistency_rate": 0.143,
+      "status": "REVIEW"
+    },
+    "y": {
+      "gloss": "end",
+      "standalone_count": 513,
+      "n_compounds": 7,
+      "n_good": 2,
+      "n_ok": 5,
+      "n_bad": 0,
+      "n_unknown": 0,
+      "consistency_rate": 1.0,
+      "status": "LOCKED"
+    }
+  },
+  "crosscheck": [
+    {
+      "middle": "edy",
+      "count": 1938,
+      "compound_gloss": "batch",
+      "decomposition": "e=cool + d=mark + y=end",
+      "atoms": [
+        "e",
+        "d",
+        "y"
+      ],
+      "fit": "PLAUSIBLE"
+    },
+    {
+      "middle": "ey",
+      "count": 889,
+      "compound_gloss": "set",
+      "decomposition": "e=cool + y=end",
+      "atoms": [
+        "e",
+        "y"
+      ],
+      "fit": "PLAUSIBLE"
+    },
+    {
+      "middle": "aiin",
+      "count": 834,
+      "compound_gloss": "settle",
+      "decomposition": "a=yield + i=iterate + i=iterate + n=halt",
+      "atoms": [
+        "a",
+        "i",
+        "i",
+        "n"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "ol",
+      "count": 762,
+      "compound_gloss": "continue",
+      "decomposition": "o=work + l=frame",
+      "atoms": [
+        "o",
+        "l"
+      ],
+      "fit": "PLAUSIBLE"
+    },
+    {
+      "middle": "ar",
+      "count": 677,
+      "compound_gloss": "release",
+      "decomposition": "a=yield + r=input",
+      "atoms": [
+        "a",
+        "r"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "dy",
+      "count": 675,
+      "compound_gloss": "close",
+      "decomposition": "d=mark + y=end",
+      "atoms": [
+        "d",
+        "y"
+      ],
+      "fit": "PLAUSIBLE"
+    },
+    {
+      "middle": "eey",
+      "count": 644,
+      "compound_gloss": "extended cool",
+      "decomposition": "e=cool + e=cool + y=end",
+      "atoms": [
+        "e",
+        "e",
+        "y"
+      ],
+      "fit": "STRONG"
+    },
+    {
+      "middle": "iin",
+      "count": 560,
+      "compound_gloss": "iterate",
+      "decomposition": "i=iterate + i=iterate + n=halt",
+      "atoms": [
+        "i",
+        "i",
+        "n"
+      ],
+      "fit": "STRONG"
+    },
+    {
+      "middle": "al",
+      "count": 521,
+      "compound_gloss": "gather",
+      "decomposition": "a=yield + l=frame",
+      "atoms": [
+        "a",
+        "l"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "or",
+      "count": 446,
+      "compound_gloss": "portion",
+      "decomposition": "o=work + r=input",
+      "atoms": [
+        "o",
+        "r"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "ke",
+      "count": 421,
+      "compound_gloss": "sustained heat",
+      "decomposition": "k=heat + e=cool",
+      "atoms": [
+        "k",
+        "e"
+      ],
+      "fit": "STRONG"
+    },
+    {
+      "middle": "ain",
+      "count": 420,
+      "compound_gloss": "intake",
+      "decomposition": "a=yield + i=iterate + n=halt",
+      "atoms": [
+        "a",
+        "i",
+        "n"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "ed",
+      "count": 401,
+      "compound_gloss": "discharge",
+      "decomposition": "e=cool + d=mark",
+      "atoms": [
+        "e",
+        "d"
+      ],
+      "fit": "GOOD"
+    },
+    {
+      "middle": "eo",
+      "count": 359,
+      "compound_gloss": "cool-open",
+      "decomposition": "e=cool + o=work",
+      "atoms": [
+        "e",
+        "o"
+      ],
+      "fit": "STRONG"
+    },
+    {
+      "middle": "eol",
+      "count": 294,
+      "compound_gloss": "sustain output",
+      "decomposition": "e=cool + o=work + l=frame",
+      "atoms": [
+        "e",
+        "o",
+        "l"
+      ],
+      "fit": "GOOD"
+    },
+    {
+      "middle": "in",
+      "count": 264,
+      "compound_gloss": "link",
+      "decomposition": "i=iterate + n=halt",
+      "atoms": [
+        "i",
+        "n"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "ck",
+      "count": 197,
+      "compound_gloss": "direct heat",
+      "decomposition": "c=adjust + k=heat",
+      "atoms": [
+        "c",
+        "k"
+      ],
+      "fit": "GOOD"
+    },
+    {
+      "middle": "od",
+      "count": 177,
+      "compound_gloss": "collect",
+      "decomposition": "o=work + d=mark",
+      "atoms": [
+        "o",
+        "d"
+      ],
+      "fit": "PLAUSIBLE"
+    },
+    {
+      "middle": "am",
+      "count": 174,
+      "compound_gloss": "finalize",
+      "decomposition": "a=yield + m=final",
+      "atoms": [
+        "a",
+        "m"
+      ],
+      "fit": "GOOD"
+    },
+    {
+      "middle": "ai",
+      "count": 174,
+      "compound_gloss": "open",
+      "decomposition": "a=yield + i=iterate",
+      "atoms": [
+        "a",
+        "i"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "ek",
+      "count": 169,
+      "compound_gloss": "precision",
+      "decomposition": "e=cool + k=heat",
+      "atoms": [
+        "e",
+        "k"
+      ],
+      "fit": "STRONG"
+    },
+    {
+      "middle": "ee",
+      "count": 151,
+      "compound_gloss": "extended cool",
+      "decomposition": "e=cool + e=cool",
+      "atoms": [
+        "e",
+        "e"
+      ],
+      "fit": "STRONG"
+    },
+    {
+      "middle": "kch",
+      "count": 148,
+      "compound_gloss": "pulse",
+      "decomposition": "k=heat + c=adjust + h=watch",
+      "atoms": [
+        "k",
+        "c",
+        "h"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "eeo",
+      "count": 133,
+      "compound_gloss": "extended cool, work",
+      "decomposition": "e=cool + e=cool + o=work",
+      "atoms": [
+        "e",
+        "e",
+        "o"
+      ],
+      "fit": "STRONG"
+    },
+    {
+      "middle": "ckh",
+      "count": 127,
+      "compound_gloss": "firm",
+      "decomposition": "c=adjust + k=heat + h=watch",
+      "atoms": [
+        "c",
+        "k",
+        "h"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "opch",
+      "count": 107,
+      "compound_gloss": "operate",
+      "decomposition": "o=work + p=pause + c=adjust + h=watch",
+      "atoms": [
+        "o",
+        "p",
+        "c",
+        "h"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "ct",
+      "count": 95,
+      "compound_gloss": "control",
+      "decomposition": "c=adjust + t=transfer",
+      "atoms": [
+        "c",
+        "t"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "eck",
+      "count": 90,
+      "compound_gloss": "rigid",
+      "decomposition": "e=cool + c=adjust + k=heat",
+      "atoms": [
+        "e",
+        "c",
+        "k"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "eed",
+      "count": 88,
+      "compound_gloss": "extended",
+      "decomposition": "e=cool + e=cool + d=mark",
+      "atoms": [
+        "e",
+        "e",
+        "d"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "te",
+      "count": 87,
+      "compound_gloss": "rapid gather",
+      "decomposition": "t=transfer + e=cool",
+      "atoms": [
+        "t",
+        "e"
+      ],
+      "fit": "PLAUSIBLE"
+    },
+    {
+      "middle": "eod",
+      "count": 82,
+      "compound_gloss": "stand",
+      "decomposition": "e=cool + o=work + d=mark",
+      "atoms": [
+        "e",
+        "o",
+        "d"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "pch",
+      "count": 79,
+      "compound_gloss": "pause",
+      "decomposition": "p=pause + c=adjust + h=watch",
+      "atoms": [
+        "p",
+        "c",
+        "h"
+      ],
+      "fit": "GOOD"
+    },
+    {
+      "middle": "lch",
+      "count": 74,
+      "compound_gloss": "strip",
+      "decomposition": "l=frame + c=adjust + h=watch",
+      "atoms": [
+        "l",
+        "c",
+        "h"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "ok",
+      "count": 70,
+      "compound_gloss": "seal",
+      "decomposition": "o=work + k=heat",
+      "atoms": [
+        "o",
+        "k"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "tch",
+      "count": 65,
+      "compound_gloss": "pound",
+      "decomposition": "t=transfer + c=adjust + h=watch",
+      "atoms": [
+        "t",
+        "c",
+        "h"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "et",
+      "count": 58,
+      "compound_gloss": "path",
+      "decomposition": "e=cool + t=transfer",
+      "atoms": [
+        "e",
+        "t"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "lk",
+      "count": 58,
+      "compound_gloss": "frame",
+      "decomposition": "l=frame + k=heat",
+      "atoms": [
+        "l",
+        "k"
+      ],
+      "fit": "GOOD"
+    },
+    {
+      "middle": "eek",
+      "count": 54,
+      "compound_gloss": "lock",
+      "decomposition": "e=cool + e=cool + k=heat",
+      "atoms": [
+        "e",
+        "e",
+        "k"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "cth",
+      "count": 49,
+      "compound_gloss": "hazard",
+      "decomposition": "c=adjust + t=transfer + h=watch",
+      "atoms": [
+        "c",
+        "t",
+        "h"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "ly",
+      "count": 49,
+      "compound_gloss": "end",
+      "decomposition": "l=frame + y=end",
+      "atoms": [
+        "l",
+        "y"
+      ],
+      "fit": "GOOD"
+    },
+    {
+      "middle": "eeol",
+      "count": 47,
+      "compound_gloss": "overnight standing",
+      "decomposition": "e=cool + e=cool + o=work + l=frame",
+      "atoms": [
+        "e",
+        "e",
+        "o",
+        "l"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "ect",
+      "count": 47,
+      "compound_gloss": "regulate",
+      "decomposition": "e=cool + c=adjust + t=transfer",
+      "atoms": [
+        "e",
+        "c",
+        "t"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "ot",
+      "count": 46,
+      "compound_gloss": "route",
+      "decomposition": "o=work + t=transfer",
+      "atoms": [
+        "o",
+        "t"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "eok",
+      "count": 39,
+      "compound_gloss": "cool",
+      "decomposition": "e=cool + o=work + k=heat",
+      "atoms": [
+        "e",
+        "o",
+        "k"
+      ],
+      "fit": "STRONG"
+    },
+    {
+      "middle": "keeo",
+      "count": 38,
+      "compound_gloss": "cycle",
+      "decomposition": "k=heat + e=cool + e=cool + o=work",
+      "atoms": [
+        "k",
+        "e",
+        "e",
+        "o"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "op",
+      "count": 36,
+      "compound_gloss": "start",
+      "decomposition": "o=work + p=pause",
+      "atoms": [
+        "o",
+        "p"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "cph",
+      "count": 36,
+      "compound_gloss": "measure",
+      "decomposition": "c=adjust + p=pause + h=watch",
+      "atoms": [
+        "c",
+        "p",
+        "h"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "kee",
+      "count": 34,
+      "compound_gloss": "deep",
+      "decomposition": "k=heat + e=cool + e=cool",
+      "atoms": [
+        "k",
+        "e",
+        "e"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "ech",
+      "count": 34,
+      "compound_gloss": "check",
+      "decomposition": "e=cool + c=adjust + h=watch",
+      "atoms": [
+        "e",
+        "c",
+        "h"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "kc",
+      "count": 33,
+      "compound_gloss": "intense heat-seal",
+      "decomposition": "k=heat + c=adjust",
+      "atoms": [
+        "k",
+        "c"
+      ],
+      "fit": "STRONG"
+    },
+    {
+      "middle": "ry",
+      "count": 33,
+      "compound_gloss": "finish",
+      "decomposition": "r=input + y=end",
+      "atoms": [
+        "r",
+        "y"
+      ],
+      "fit": "PLAUSIBLE"
+    },
+    {
+      "middle": "lo",
+      "count": 33,
+      "compound_gloss": "open",
+      "decomposition": "l=frame + o=work",
+      "atoms": [
+        "l",
+        "o"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "aii",
+      "count": 32,
+      "compound_gloss": "unseal",
+      "decomposition": "a=yield + i=iterate + i=iterate",
+      "atoms": [
+        "a",
+        "i",
+        "i"
+      ],
+      "fit": "WEAK"
+    },
+    {
+      "middle": "ked",
+      "count": 32,
+      "compound_gloss": "release",
+      "decomposition": "k=heat + e=cool + d=mark",
+      "atoms": [
+        "k",
+        "e",
+        "d"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "oiin",
+      "count": 32,
+      "compound_gloss": "loop",
+      "decomposition": "o=work + i=iterate + i=iterate + n=halt",
+      "atoms": [
+        "o",
+        "i",
+        "i",
+        "n"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "keed",
+      "count": 30,
+      "compound_gloss": "vent",
+      "decomposition": "k=heat + e=cool + e=cool + d=mark",
+      "atoms": [
+        "k",
+        "e",
+        "e",
+        "d"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "eckh",
+      "count": 29,
+      "compound_gloss": "danger",
+      "decomposition": "e=cool + c=adjust + k=heat + h=watch",
+      "atoms": [
+        "e",
+        "c",
+        "k",
+        "h"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "olk",
+      "count": 27,
+      "compound_gloss": "hold",
+      "decomposition": "o=work + l=frame + k=heat",
+      "atoms": [
+        "o",
+        "l",
+        "k"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "keo",
+      "count": 26,
+      "compound_gloss": "open",
+      "decomposition": "k=heat + e=cool + o=work",
+      "atoms": [
+        "k",
+        "e",
+        "o"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "ksh",
+      "count": 26,
+      "compound_gloss": "scan",
+      "decomposition": "k=heat + s=sequence + h=watch",
+      "atoms": [
+        "k",
+        "s",
+        "h"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "om",
+      "count": 25,
+      "compound_gloss": "work",
+      "decomposition": "o=work + m=final",
+      "atoms": [
+        "o",
+        "m"
+      ],
+      "fit": "GOOD"
+    },
+    {
+      "middle": "ka",
+      "count": 25,
+      "compound_gloss": "fire",
+      "decomposition": "k=heat + a=yield",
+      "atoms": [
+        "k",
+        "a"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "kai",
+      "count": 24,
+      "compound_gloss": "step",
+      "decomposition": "k=heat + a=yield + i=iterate",
+      "atoms": [
+        "k",
+        "a",
+        "i"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "lsh",
+      "count": 24,
+      "compound_gloss": "verify",
+      "decomposition": "l=frame + s=sequence + h=watch",
+      "atoms": [
+        "l",
+        "s",
+        "h"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "fch",
+      "count": 23,
+      "compound_gloss": "note",
+      "decomposition": "f=flag + c=adjust + h=watch",
+      "atoms": [
+        "f",
+        "c",
+        "h"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "ii",
+      "count": 23,
+      "compound_gloss": "repeat",
+      "decomposition": "i=iterate + i=iterate",
+      "atoms": [
+        "i",
+        "i"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "an",
+      "count": 18,
+      "compound_gloss": "bind",
+      "decomposition": "a=yield + n=halt",
+      "atoms": [
+        "a",
+        "n"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "ep",
+      "count": 16,
+      "compound_gloss": "precision cool",
+      "decomposition": "e=cool + p=pause",
+      "atoms": [
+        "e",
+        "p"
+      ],
+      "fit": "STRONG"
+    },
+    {
+      "middle": "da",
+      "count": 13,
+      "compound_gloss": "start",
+      "decomposition": "d=mark + a=yield",
+      "atoms": [
+        "d",
+        "a"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "hy",
+      "count": 8,
+      "compound_gloss": "confirm",
+      "decomposition": "h=watch + y=end",
+      "atoms": [
+        "h",
+        "y"
+      ],
+      "fit": "PLAUSIBLE"
+    },
+    {
+      "middle": "sh",
+      "count": 5,
+      "compound_gloss": "verify",
+      "decomposition": "s=sequence + h=watch",
+      "atoms": [
+        "s",
+        "h"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "oqok",
+      "count": 5,
+      "compound_gloss": "dense",
+      "decomposition": "o=work + q=? + o=work + k=heat",
+      "atoms": [
+        "o",
+        "q",
+        "o",
+        "k"
+      ],
+      "fit": "UNKNOWN"
+    },
+    {
+      "middle": "ch",
+      "count": 4,
+      "compound_gloss": "check",
+      "decomposition": "c=adjust + h=watch",
+      "atoms": [
+        "c",
+        "h"
+      ],
+      "fit": "UNKNOWN"
+    }
+  ],
+  "autogloss_top50": [
+    {
+      "middle": "dai",
+      "count": 23,
+      "autogloss": "mark-yield-iterate",
+      "confidence": "LOW",
+      "atoms": [
+        "d",
+        "a",
+        "i"
+      ]
+    },
+    {
+      "middle": "eet",
+      "count": 22,
+      "autogloss": "cool-cool-transfer",
+      "confidence": "LOW",
+      "atoms": [
+        "e",
+        "e",
+        "t"
+      ]
+    },
+    {
+      "middle": "och",
+      "count": 20,
+      "autogloss": "work-adjust-watch",
+      "confidence": "LOW",
+      "atoms": [
+        "o",
+        "c",
+        "h"
+      ]
+    },
+    {
+      "middle": "lke",
+      "count": 20,
+      "autogloss": "frame-heat-cool",
+      "confidence": "LOW",
+      "atoms": [
+        "l",
+        "k",
+        "e"
+      ]
+    },
+    {
+      "middle": "ir",
+      "count": 19,
+      "autogloss": "iterate-input",
+      "confidence": "LOW",
+      "atoms": [
+        "i",
+        "r"
+      ]
+    },
+    {
+      "middle": "teo",
+      "count": 18,
+      "autogloss": "transfer-cool-work",
+      "confidence": "LOW",
+      "atoms": [
+        "t",
+        "e",
+        "o"
+      ]
+    },
+    {
+      "middle": "qo",
+      "count": 18,
+      "autogloss": "?-work",
+      "confidence": "INCOMPLETE",
+      "atoms": [
+        "q",
+        "o"
+      ]
+    },
+    {
+      "middle": "ofch",
+      "count": 17,
+      "autogloss": "work-flag-adjust-watch",
+      "confidence": "LOW",
+      "atoms": [
+        "o",
+        "f",
+        "c",
+        "h"
+      ]
+    },
+    {
+      "middle": "ted",
+      "count": 17,
+      "autogloss": "transfer-cool-mark",
+      "confidence": "LOW",
+      "atoms": [
+        "t",
+        "e",
+        "d"
+      ]
+    },
+    {
+      "middle": "ko",
+      "count": 16,
+      "autogloss": "heat-work",
+      "confidence": "LOW",
+      "atoms": [
+        "k",
+        "o"
+      ]
+    },
+    {
+      "middle": "ockh",
+      "count": 16,
+      "autogloss": "work-adjust-heat-watch",
+      "confidence": "LOW",
+      "atoms": [
+        "o",
+        "c",
+        "k",
+        "h"
+      ]
+    },
+    {
+      "middle": "tc",
+      "count": 16,
+      "autogloss": "transfer-adjust",
+      "confidence": "LOW",
+      "atoms": [
+        "t",
+        "c"
+      ]
+    },
+    {
+      "middle": "os",
+      "count": 16,
+      "autogloss": "work-sequence",
+      "confidence": "LOW",
+      "atoms": [
+        "o",
+        "s"
+      ]
+    },
+    {
+      "middle": "eeod",
+      "count": 16,
+      "autogloss": "cool-cool-work-mark",
+      "confidence": "LOW",
+      "atoms": [
+        "e",
+        "e",
+        "o",
+        "d"
+      ]
+    },
+    {
+      "middle": "ec",
+      "count": 16,
+      "autogloss": "cool-adjust",
+      "confidence": "LOW",
+      "atoms": [
+        "e",
+        "c"
+      ]
+    },
+    {
+      "middle": "es",
+      "count": 15,
+      "autogloss": "cool-sequence",
+      "confidence": "LOW",
+      "atoms": [
+        "e",
+        "s"
+      ]
+    },
+    {
+      "middle": "octh",
+      "count": 15,
+      "autogloss": "work-adjust-transfer-watch",
+      "confidence": "LOW",
+      "atoms": [
+        "o",
+        "c",
+        "t",
+        "h"
+      ]
+    },
+    {
+      "middle": "of",
+      "count": 15,
+      "autogloss": "work-flag",
+      "confidence": "LOW",
+      "atoms": [
+        "o",
+        "f"
+      ]
+    },
+    {
+      "middle": "oct",
+      "count": 14,
+      "autogloss": "work-adjust-transfer",
+      "confidence": "LOW",
+      "atoms": [
+        "o",
+        "c",
+        "t"
+      ]
+    },
+    {
+      "middle": "eee",
+      "count": 14,
+      "autogloss": "cool-cool-cool",
+      "confidence": "LOW",
+      "atoms": [
+        "e",
+        "e",
+        "e"
+      ]
+    },
+    {
+      "middle": "ld",
+      "count": 13,
+      "autogloss": "frame-mark",
+      "confidence": "LOW",
+      "atoms": [
+        "l",
+        "d"
+      ]
+    },
+    {
+      "middle": "osh",
+      "count": 13,
+      "autogloss": "work-sequence-watch",
+      "confidence": "LOW",
+      "atoms": [
+        "o",
+        "s",
+        "h"
+      ]
+    },
+    {
+      "middle": "ock",
+      "count": 13,
+      "autogloss": "work-adjust-heat",
+      "confidence": "LOW",
+      "atoms": [
+        "o",
+        "c",
+        "k"
+      ]
+    },
+    {
+      "middle": "ro",
+      "count": 13,
+      "autogloss": "input-work",
+      "confidence": "LOW",
+      "atoms": [
+        "r",
+        "o"
+      ]
+    },
+    {
+      "middle": "oi",
+      "count": 13,
+      "autogloss": "work-iterate",
+      "confidence": "LOW",
+      "atoms": [
+        "o",
+        "i"
+      ]
+    },
+    {
+      "middle": "eot",
+      "count": 13,
+      "autogloss": "cool-work-transfer",
+      "confidence": "LOW",
+      "atoms": [
+        "e",
+        "o",
+        "t"
+      ]
+    },
+    {
+      "middle": "ecth",
+      "count": 12,
+      "autogloss": "cool-adjust-transfer-watch",
+      "confidence": "LOW",
+      "atoms": [
+        "e",
+        "c",
+        "t",
+        "h"
+      ]
+    },
+    {
+      "middle": "rai",
+      "count": 12,
+      "autogloss": "input-yield-iterate",
+      "confidence": "LOW",
+      "atoms": [
+        "r",
+        "a",
+        "i"
+      ]
+    },
+    {
+      "middle": "yt",
+      "count": 12,
+      "autogloss": "end-transfer",
+      "confidence": "LOW",
+      "atoms": [
+        "y",
+        "t"
+      ]
+    },
+    {
+      "middle": "ak",
+      "count": 12,
+      "autogloss": "yield-heat",
+      "confidence": "LOW",
+      "atoms": [
+        "a",
+        "k"
+      ]
+    },
+    {
+      "middle": "cs",
+      "count": 12,
+      "autogloss": "adjust-sequence",
+      "confidence": "LOW",
+      "atoms": [
+        "c",
+        "s"
+      ]
+    },
+    {
+      "middle": "kec",
+      "count": 12,
+      "autogloss": "heat-cool-adjust",
+      "confidence": "LOW",
+      "atoms": [
+        "k",
+        "e",
+        "c"
+      ]
+    },
+    {
+      "middle": "edai",
+      "count": 11,
+      "autogloss": "cool-mark-yield-iterate",
+      "confidence": "LOW",
+      "atoms": [
+        "e",
+        "d",
+        "a",
+        "i"
+      ]
+    },
+    {
+      "middle": "yk",
+      "count": 11,
+      "autogloss": "end-heat",
+      "confidence": "LOW",
+      "atoms": [
+        "y",
+        "k"
+      ]
+    },
+    {
+      "middle": "to",
+      "count": 11,
+      "autogloss": "transfer-work",
+      "confidence": "LOW",
+      "atoms": [
+        "t",
+        "o"
+      ]
+    },
+    {
+      "middle": "oe",
+      "count": 11,
+      "autogloss": "work-cool",
+      "confidence": "LOW",
+      "atoms": [
+        "o",
+        "e"
+      ]
+    },
+    {
+      "middle": "eeeo",
+      "count": 10,
+      "autogloss": "cool-cool-cool-work",
+      "confidence": "LOW",
+      "atoms": [
+        "e",
+        "e",
+        "e",
+        "o"
+      ]
+    },
+    {
+      "middle": "kal",
+      "count": 10,
+      "autogloss": "heat-yield-frame",
+      "confidence": "LOW",
+      "atoms": [
+        "k",
+        "a",
+        "l"
+      ]
+    },
+    {
+      "middle": "cp",
+      "count": 10,
+      "autogloss": "adjust-pause",
+      "confidence": "LOW",
+      "atoms": [
+        "c",
+        "p"
+      ]
+    },
+    {
+      "middle": "do",
+      "count": 10,
+      "autogloss": "mark-work",
+      "confidence": "LOW",
+      "atoms": [
+        "d",
+        "o"
+      ]
+    },
+    {
+      "middle": "qek",
+      "count": 10,
+      "autogloss": "?-cool-heat",
+      "confidence": "INCOMPLETE",
+      "atoms": [
+        "q",
+        "e",
+        "k"
+      ]
+    },
+    {
+      "middle": "oee",
+      "count": 10,
+      "autogloss": "work-cool-cool",
+      "confidence": "LOW",
+      "atoms": [
+        "o",
+        "e",
+        "e"
+      ]
+    },
+    {
+      "middle": "pc",
+      "count": 10,
+      "autogloss": "pause-adjust",
+      "confidence": "LOW",
+      "atoms": [
+        "p",
+        "c"
+      ]
+    },
+    {
+      "middle": "alk",
+      "count": 10,
+      "autogloss": "yield-frame-heat",
+      "confidence": "LOW",
+      "atoms": [
+        "a",
+        "l",
+        "k"
+      ]
+    },
+    {
+      "middle": "teed",
+      "count": 9,
+      "autogloss": "transfer-cool-cool-mark",
+      "confidence": "LOW",
+      "atoms": [
+        "t",
+        "e",
+        "e",
+        "d"
+      ]
+    },
+    {
+      "middle": "cfh",
+      "count": 9,
+      "autogloss": "adjust-flag-watch",
+      "confidence": "LOW",
+      "atoms": [
+        "c",
+        "f",
+        "h"
+      ]
+    },
+    {
+      "middle": "eolk",
+      "count": 9,
+      "autogloss": "cool-work-frame-heat",
+      "confidence": "LOW",
+      "atoms": [
+        "e",
+        "o",
+        "l",
+        "k"
+      ]
+    },
+    {
+      "middle": "opc",
+      "count": 9,
+      "autogloss": "work-pause-adjust",
+      "confidence": "LOW",
+      "atoms": [
+        "o",
+        "p",
+        "c"
+      ]
+    },
+    {
+      "middle": "ta",
+      "count": 9,
+      "autogloss": "transfer-yield",
+      "confidence": "LOW",
+      "atoms": [
+        "t",
+        "a"
+      ]
+    },
+    {
+      "middle": "ees",
+      "count": 9,
+      "autogloss": "cool-cool-sequence",
+      "confidence": "LOW",
+      "atoms": [
+        "e",
+        "e",
+        "s"
+      ]
+    }
+  ]
+}

@@ -1505,7 +1505,7 @@ class BTokenAnalysis:
             # Prefix: use prep action if available, otherwise lane tag
             # For qo: suppress prefix verb in compose path. qo is the default
             # execution pathway (EN_QO, 17.6% of B tokens). The MIDDLE meaning
-            # already carries the full operation — "heat-check" not "execute
+            # already carries the full operation - "heat-check" not "execute
             # heat-check". Other prefixes keep their verbs for contrast:
             # "test heat" (ch), "monitor heat" (sh), "store heat" (ol).
             prep_action = None
@@ -1963,6 +1963,65 @@ class BTokenAnalysis:
 
 
 @dataclass
+class BBaseline:
+    """B-wide population means and standard deviations for deviation reporting.
+
+    Loaded from data/b_baseline.json. Used by program_card() to show
+    per-folio deviations from B-wide averages.
+    """
+    metrics: Dict[str, Tuple[float, float]]  # metric_name -> (mean, std)
+
+    def z_score(self, metric: str, value: float) -> Optional[float]:
+        """Standard score (value - mean) / std, or None if unknown."""
+        if metric not in self.metrics:
+            return None
+        mean, std = self.metrics[metric]
+        if std == 0:
+            return 0.0
+        return (value - mean) / std
+
+    def deviation_pp(self, metric: str, value: float) -> Optional[float]:
+        """Deviation in percentage points: (value - mean) * 100."""
+        if metric not in self.metrics:
+            return None
+        mean, _ = self.metrics[metric]
+        return (value - mean) * 100
+
+    def format_deviation(self, metric: str, value: float) -> str:
+        """Format deviation with pp and z-score.
+
+        Thresholds (by z-score):
+          |z| <= 0.5  -> '~avg'
+          0.5 < |z| <= 1.5 -> '+Npp z=X.X' / '-Npp z=X.X'
+          |z| > 1.5 -> '+Npp* z=X.X' / '-Npp* z=X.X' (truly anomalous)
+
+        For metrics with baseline mean < 5%, uses multiplier format:
+          'N.Nx z=X.X' / 'N.Nx* z=X.X'
+        """
+        z = self.z_score(metric, value)
+        if z is None:
+            return '?'
+        if abs(z) <= 0.5:
+            return '~avg'
+        mean, _ = self.metrics[metric]
+        star = '*' if abs(z) > 1.5 else ''
+        # Sub-5% baseline: use multiplier format (e.g., "4.4x*")
+        if mean > 0 and mean < 0.05:
+            if value == 0:
+                return f'absent{star} z={abs(z):.1f}'
+            mult = value / mean
+            return f'{mult:.1f}x{star} z={abs(z):.1f}'
+        pp = self.deviation_pp(metric, value)
+        sign = '+' if pp >= 0 else ''
+        return f'{sign}{pp:.0f}pp{star} z={abs(z):.1f}'
+
+    def is_notable(self, metric: str, value: float, threshold: float = 1.0) -> bool:
+        """True if |z| > threshold (default 1.0 std)."""
+        z = self.z_score(metric, value)
+        return z is not None and abs(z) > threshold
+
+
+@dataclass
 class BFolioAnalysis:
     """
     Complete analysis of a Currier B folio.
@@ -1994,6 +2053,293 @@ class BFolioAnalysis:
     bridge_rate: float = 0.0         # Bridge MIDDLE tokens / total tokens
     dark_pipeline_rate: float = 0.0  # Dark-pipeline MIDDLE tokens / total tokens
     folio_balance: str = ''          # BRIDGE_DOMINANT / DARK_DOMINANT / BALANCED
+
+    # External data (pre-computed JSON files, None if unavailable)
+    regime: Optional[str] = None                # REGIME_1..4 (C494)
+    regime_probability: Optional[float] = None  # GMM posterior
+    section: Optional[str] = None               # S/H/B/P/C/T (external, illustration-based)
+    axm_self: Optional[float] = None            # AXM self-transition, forgiveness (C1016)
+    hazard_density: Optional[float] = None      # Hazard density (C622)
+    prefix_entropy: Optional[float] = None      # PREFIX routing entropy (C1017)
+    archetype: Optional[int] = None             # Dynamical archetype 1-6 (C1016)
+    vocab_size: Optional[int] = None            # AXM classified MIDDLE types per folio
+    vocab_residual: Optional[float] = None      # AXM vocab anomaly (observed - size-predicted)
+
+    # Computed from token analysis in analyze_folio()
+    unique_middles: int = 0          # Distinct MIDDLEs in this folio (C531)
+    compound_rate: float = 0.0       # Fraction of tokens with compound MIDDLE (C872)
+    ol_rate: float = 0.0             # ol-substring token fraction (morphological, C609/C1174)
+    qo_fraction: float = 0.0        # QO-lane prefix fraction (C605)
+    sister_ratio: float = 0.5       # ch/(ch+sh) among prefixes (C412)
+    dominant_role: Optional[str] = None   # Top 5-role category: CC/EN/FL/FQ/AX (C552)
+    paragraph_count: Optional[int] = None # Number of paragraphs (C858)
+
+    # Deviation reporting
+    baseline: Optional['BBaseline'] = None           # B-wide baseline (set by BFolioDecoder)
+    role_proportions: Optional[Dict[str, float]] = None  # {'EN': 0.80, 'AX': 0.19, ...}
+
+    # Section name lookup (external scholarly convention)
+    _SECTION_NAMES = {
+        'S': 'Stars/Recipes', 'H': 'Herbal', 'B': 'Bathing/Biology',
+        'P': 'Pharmaceutical', 'C': 'Cosmological', 'T': 'Text',
+        'Z': 'Zodiac', 'A': 'Astronomical',
+    }
+    # Internal structural label (constraint system)
+    _SECTION_LABELS = {
+        'S': 'STARS', 'H': 'HERBAL', 'B': 'BIO', 'P': 'PHARMA',
+        'C': 'COSMO', 'T': 'TEXT',
+    }
+    # Archetype labels (C1016, C1018)
+    _ARCHETYPE_LABELS = {
+        1: 'STRONG_ATTRACTOR', 2: 'MODERATE_ATTRACTOR',
+        3: 'BALANCED_EXCHANGE', 4: 'WEAK_ATTRACTOR',
+        5: 'ACTIVE_INTERCHANGE', 6: 'HAZARD_TOLERANT',
+    }
+
+    def program_card(self, interp: bool = False) -> str:
+        """Render folio program card with deviation-from-baseline reporting.
+
+        Tier 2 by default (structural metrics + deviations from B-wide means).
+        interp=True adds Tier 3-4 (DISTINCTIVE/CONSISTENT deviation character).
+        Falls back to categorical labels when baseline is unavailable.
+        """
+        W = 70
+        b = self.baseline  # May be None
+        lines = []
+        lines.append('=' * W)
+        tier_label = 'Tier 2' if not interp else 'Tier 2 + Tier 3-4'
+        lines.append(f'PROGRAM CARD: {self.folio:50s}[{tier_label}]')
+        lines.append('=' * W)
+
+        # Section: external + text-derived
+        sec_name = self._SECTION_NAMES.get(self.section, '?') if self.section else '?'
+        sec_label = self._SECTION_LABELS.get(self.section, '?') if self.section else '?'
+        lines.append(f'  Section: {self.section or "?"} - '
+                     f'"{sec_name}" | {sec_label}')
+
+        # Kernel: raw % + deviation from B-wide mean
+        k_total = sum(self.kernel_dist.values()) or 1
+        k_pct = self.kernel_dist.get('k', 0) / k_total
+        h_pct = self.kernel_dist.get('h', 0) / k_total
+        e_pct = self.kernel_dist.get('e', 0) / k_total
+        if b:
+            k_dev = b.format_deviation('k_ratio', k_pct)
+            h_dev = b.format_deviation('h_ratio', h_pct)
+            e_dev = b.format_deviation('e_ratio', e_pct)
+            lines.append(f'  Kernel: k={100*k_pct:.1f}% [{k_dev}]  '
+                         f'h={100*h_pct:.1f}% [{h_dev}]  '
+                         f'e={100*e_pct:.1f}% [{e_dev}]')
+        else:
+            lines.append(f'  Kernel: k={100*k_pct:.1f}%  h={100*h_pct:.1f}%  '
+                         f'e={100*e_pct:.1f}%  [{self.kernel_balance}]')
+
+        # Role profile: deviation signature for non-zero roles
+        if b and self.role_proportions:
+            role_parts = []
+            for role in ['EN', 'AX', 'CC']:
+                val = self.role_proportions.get(role, 0.0)
+                metric_key = f'role_{role}_pct'
+                dev = b.format_deviation(metric_key, val)
+                role_parts.append(f'{role} {dev}')
+            lines.append(f'  Roles: {" | ".join(role_parts)}')
+        else:
+            role_str = f'{self.dominant_role}-dominant' if self.dominant_role else '?'
+            lines.append(f'  Roles: {role_str} (C552)')
+
+        # REGIME (categorical is appropriate - discrete cluster assignment)
+        regime_str = self.regime or '?'
+        if self.regime_probability is not None:
+            regime_str += f' ({self.regime_probability:.0%})'
+        lines.append(f'  REGIME: {regime_str} (C494)')
+
+        # Archetype
+        arch_label = self._ARCHETYPE_LABELS.get(self.archetype, '?') if self.archetype else '?'
+        arch_str = f'{self.archetype} - {arch_label}' if self.archetype else '?'
+        lines.append(f'  Archetype: {arch_str} (C1016)')
+
+        # Structural profile with deviations
+        lines.append(f'\n  STRUCTURAL PROFILE')
+        lines.append(f'  {"-" * 40}')
+        if b:
+            qo_dev = b.format_deviation('qo_fraction', self.qo_fraction)
+            lines.append(f'  QO-lane:      {self.qo_fraction:.1%} [{qo_dev}]')
+            sis_dev = b.format_deviation('sister_ratio', self.sister_ratio)
+            lines.append(f'  Sister ch:    {self.sister_ratio:.1%} [{sis_dev}]')
+            ol_dev = b.format_deviation('ol_rate', self.ol_rate)
+            lines.append(f'  ol-morph:     {self.ol_rate:.1%} [{ol_dev}] (C1174)')
+            if self.axm_self is not None:
+                axm_dev = b.format_deviation('axm_self', self.axm_self)
+                lines.append(f'  Forgiveness:  {self.axm_self:.2f} [{axm_dev}] (C1016)')
+            else:
+                lines.append(f'  Forgiveness:  -- (C1016)')
+            if self.hazard_density is not None:
+                haz_dev = b.format_deviation('hazard_density', self.hazard_density)
+                lines.append(f'  Haz density:  {self.hazard_density:.1%} [{haz_dev}] (C622)')
+            else:
+                lines.append(f'  Haz density:  -- (C622)')
+        else:
+            chsh_frac = 1.0 - self.qo_fraction
+            lines.append(f'  Lanes:        QO={self.qo_fraction:.1%}  CHSH={chsh_frac:.1%}')
+            lines.append(f'  Sister:       ch={self.sister_ratio:.1%}')
+            lines.append(f'  ol-morph:     {self.ol_rate:.1%} (C1174)')
+            if self.axm_self is not None:
+                if self.axm_self >= 0.75:
+                    forg = 'HIGH'
+                elif self.axm_self >= 0.55:
+                    forg = 'MODERATE'
+                else:
+                    forg = 'LOW'
+                lines.append(f'  Forgiveness:  {self.axm_self:.2f} [{forg}] (C1016)')
+            else:
+                lines.append(f'  Forgiveness:  -- (C1016)')
+            if self.hazard_density is not None:
+                lines.append(f'  Haz density:  {self.hazard_density:.1%} (C622)')
+            else:
+                lines.append(f'  Haz density:  -- (C622)')
+
+        # Vocabulary with deviations
+        lines.append(f'\n  VOCABULARY')
+        lines.append(f'  {"-" * 40}')
+        if b:
+            br_dev = b.format_deviation('bridge_rate', self.bridge_rate)
+            dk_dev = b.format_deviation('dark_pipeline_rate', self.dark_pipeline_rate)
+            lines.append(f'  Bridge: {self.bridge_rate:.1%} [{br_dev}] | '
+                         f'Dark: {self.dark_pipeline_rate:.1%} [{dk_dev}]')
+        else:
+            lines.append(f'  Bridge: {self.bridge_rate:.1%} | Dark-pipe: '
+                         f'{self.dark_pipeline_rate:.1%} [{self.folio_balance}]')
+        cp_str = f'{self.compound_rate:.1%}'
+        if b:
+            cp_dev = b.format_deviation('compound_rate', self.compound_rate)
+            cp_str += f' [{cp_dev}]'
+        lines.append(f'  Unique MIDDLEs: {self.unique_middles} | '
+                     f'Compound: {cp_str}')
+        if self.vocab_size is not None:
+            res_str = ''
+            if self.vocab_residual is not None:
+                sign = '+' if self.vocab_residual >= 0 else ''
+                res_str = f' | AXM residual: {sign}{self.vocab_residual:.1f}'
+            lines.append(f'  AXM vocab: {self.vocab_size}{res_str}')
+        else:
+            lines.append(f'  AXM vocab: --')
+
+        # Tier 3-4 blocks (only with --interp)
+        if interp:
+            # Material/output: only show when anomalous
+            mat_anomalous = self.material_category not in ('ANIMAL', '')
+            out_anomalous = self.output_category not in ('WATER', '')
+            if mat_anomalous or out_anomalous:
+                lines.append(f'\n  MATERIAL & OUTPUT (anomalous) '
+                             f'[Tier 3-4, conditional on Brunschwig]')
+                lines.append(f'  {"-" * 40}')
+                if mat_anomalous:
+                    lines.append(f'  Material: {self.material_category} '
+                                 f'(non-default, C499)')
+                if out_anomalous:
+                    lines.append(f'  Output: {self.output_category} '
+                                 f'(non-default, F-BRU-020)')
+
+            # Deviation character report
+            lines.append(f'\n  DEVIATION CHARACTER [Tier 3 interpretation]')
+            lines.append(f'  {"-" * 40}')
+            for char_line in self._compose_character().split('\n'):
+                lines.append(f'  {char_line}')
+
+        lines.append('=' * W)
+        return '\n'.join(lines)
+
+    def _compose_character(self) -> str:
+        """Compose deviation-based Tier 3 operational character.
+
+        Groups metrics into DISTINCTIVE (|z| > 1.0) and CONSISTENT (|z| <= 1.0).
+        Each DISTINCTIVE item shows folio value vs B-wide average.
+        Returns multi-line string for embedding in program card.
+        """
+        b = self.baseline
+        if not b:
+            return self._compose_character_legacy()
+
+        # Metrics to check: (metric_key, folio_value, display_label)
+        k_total = sum(self.kernel_dist.values()) or 1
+        checks = [
+            ('k_ratio', self.kernel_dist.get('k', 0) / k_total, 'k'),
+            ('h_ratio', self.kernel_dist.get('h', 0) / k_total, 'h'),
+            ('e_ratio', self.kernel_dist.get('e', 0) / k_total, 'e'),
+            ('qo_fraction', self.qo_fraction, 'QO-lane'),
+            ('sister_ratio', self.sister_ratio, 'ch-sister'),
+            ('ol_rate', self.ol_rate, 'ol-morph'),
+            ('compound_rate', self.compound_rate, 'compound'),
+            ('bridge_rate', self.bridge_rate, 'bridge'),
+            ('dark_pipeline_rate', self.dark_pipeline_rate, 'dark-pipe'),
+        ]
+        if self.axm_self is not None:
+            checks.append(('axm_self', self.axm_self, 'forgiveness'))
+        if self.hazard_density is not None:
+            checks.append(('hazard_density', self.hazard_density, 'haz-density'))
+        # Role proportions (only roles with non-zero baseline std)
+        if self.role_proportions:
+            for role in ['EN', 'AX', 'CC']:
+                val = self.role_proportions.get(role, 0.0)
+                metric_key = f'role_{role}_pct'
+                if metric_key in b.metrics and b.metrics[metric_key][1] > 0:
+                    checks.append((metric_key, val, f'{role}-role'))
+
+        distinctive = []
+        consistent = []
+        all_z = []
+        for metric, value, label in checks:
+            z = b.z_score(metric, value)
+            if z is None:
+                continue
+            all_z.append(abs(z))
+            mean, _ = b.metrics[metric]
+            if abs(z) > 1.0:
+                direction = 'High' if z > 0 else 'Low'
+                distinctive.append((abs(z), f'{direction} {label} '
+                                    f'({100*value:.1f}% vs B-avg {100*mean:.1f}%)'))
+            else:
+                consistent.append(label)
+
+        # Sort distinctive by |z| descending (most anomalous first)
+        distinctive.sort(key=lambda x: x[0], reverse=True)
+
+        parts = []
+        if distinctive:
+            items = '; '.join(d[1] for d in distinctive)
+            parts.append(f'DISTINCTIVE: {items}')
+        else:
+            # Report centroid proximity as the distinctive property
+            mean_z = sum(all_z) / len(all_z) if all_z else 0
+            parts.append(f'DISTINCTIVE: None - near population centroid '
+                         f'(mean |z|={mean_z:.2f} across {len(all_z)} metrics)')
+        # Compact CONSISTENT: count of measured metrics within 1 std
+        n_measured = len(distinctive) + len(consistent)
+        if consistent:
+            parts.append(f'CONSISTENT: {len(consistent)}/{n_measured} measured metrics within 1 std of B-average')
+        return '\n'.join(parts)
+
+    def _compose_character_legacy(self) -> str:
+        """Legacy Tier 3 gloss (used when baseline unavailable)."""
+        regime_desc = {
+            'REGIME_1': 'thermal-control-intensive',
+            'REGIME_2': 'output-intensive',
+            'REGIME_3': 'transient-throughput',
+            'REGIME_4': 'precision-constrained',
+        }
+        section_desc = {
+            'B': 'balneological processing',
+            'H': 'mixed extraction/cycling',
+            'S': 'recipe execution',
+            'C': 'observation-intensive processing',
+        }
+        parts = []
+        if self.regime and self.regime in regime_desc:
+            parts.append(regime_desc[self.regime])
+        if self.section and self.section in section_desc:
+            parts.append(section_desc[self.section])
+        if not parts:
+            return 'Uncharacterized program.'
+        return ' '.join(parts).capitalize() + '.'
 
 
 @dataclass
@@ -2358,6 +2704,43 @@ class BFolioDecoder:
         with open(_bridge_path, 'r', encoding='utf-8') as f:
             _bridge_data = json.load(f)
         self._bridge_set = set(_bridge_data['t5_structural_profile']['bridge_middles'])
+
+        # External folio-level data for program cards (loaded once, keyed by folio)
+        # REGIME assignments (C494, C1016)
+        _regime_path = PROJECT_ROOT / 'data' / 'regime_folio_mapping.json'
+        self._regime_data = {}
+        if _regime_path.exists():
+            with open(_regime_path, 'r', encoding='utf-8') as f:
+                _rdata = json.load(f)
+            self._regime_data = _rdata.get('regime_assignments', {})
+
+        # AXM decomposition metrics (C1016, C1017, C552, C622)
+        _axm_path = PROJECT_ROOT / 'phases' / 'AXM_RESIDUAL_DECOMPOSITION' / 'results' / 'axm_residual_decomposition.json'
+        self._axm_data = {}
+        if _axm_path.exists():
+            with open(_axm_path, 'r', encoding='utf-8') as f:
+                _adata = json.load(f)
+            self._axm_data = _adata.get('folio_data', {})
+
+        # Operational profiles (C394-C396)
+        _ops_path = PROJECT_ROOT / 'results' / 'folio_operational_profiles.json'
+        self._ops_data = {}
+        if _ops_path.exists():
+            with open(_ops_path, 'r', encoding='utf-8') as f:
+                _odata = json.load(f)
+            for profile in _odata.get('profiles', []):
+                self._ops_data[profile['folio']] = profile
+
+        # B-wide baseline for deviation reporting
+        _bl_path = PROJECT_ROOT / 'data' / 'b_baseline.json'
+        self._baseline = None
+        if _bl_path.exists():
+            with open(_bl_path, 'r', encoding='utf-8') as f:
+                _bl_data = json.load(f)
+            self._baseline = BBaseline(
+                metrics={k: (v['mean'], v['std'])
+                         for k, v in _bl_data.get('metrics', {}).items()}
+            )
 
         # Pre-sort substring-matching maps (longest first) for _get_*() methods
         self._middle_tiers_sorted = sorted(
@@ -3218,7 +3601,58 @@ class BFolioDecoder:
         else:
             folio_balance = 'BALANCED'
 
-        return BFolioAnalysis(
+        # Token-derived folio metrics
+        # Unique MIDDLEs (C531)
+        middles = [a.morph.middle for a in analyses if a.morph and a.morph.middle]
+        unique_middle_set = set(middles)
+        # Compound rate (C872) — fraction of tokens with compound MIDDLE
+        compound_count = sum(1 for m in middles if self.mid_analyzer.is_compound(m))
+        compound_rate = compound_count / len(middles) if middles else 0
+        # ol-rate (C1174: morphological artifact, NOT functional "LINK")
+        ol_count = sum(1 for a in analyses if a.morph and a.morph.middle and 'ol' in a.word)
+        ol_rate = ol_count / total if total else 0
+        # QO-lane fraction (C605)
+        qo_count = sum(1 for a in analyses if a.prefix_role and 'QO' in a.prefix_role)
+        qo_fraction = qo_count / total if total else 0
+        # Sister ratio ch/(ch+sh) (C412)
+        ch_count = sum(1 for a in analyses if a.morph and a.morph.prefix == 'ch')
+        sh_count = sum(1 for a in analyses if a.morph and a.morph.prefix == 'sh')
+        sister_total = ch_count + sh_count
+        sister_ratio = ch_count / sister_total if sister_total > 0 else 0.5
+        # Dominant role — map prefix_role strings to 5-role taxonomy (C552)
+        # EN_KERNEL/EN_QO/PREP_TIER → EN, AX_SCAFFOLD/AX_LATE → AX,
+        # CC_* → CC, FL_* → FL; UN tokens mapped via C611 PREFIX prediction
+        role_5_map = {
+            'EN_KERNEL': 'EN', 'EN_QO': 'EN', 'PREP_TIER': 'EN',
+            'AX_SCAFFOLD': 'AX', 'AX_LATE': 'AX',
+            'CC_INIT': 'CC', 'FL_FINAL': 'FL',
+        }
+        role_5_dist = Counter()
+        for role, count in prefix_dist.items():
+            mapped = role_5_map.get(role)
+            if mapped:
+                role_5_dist[mapped] += count
+            elif role.startswith('EN'):
+                role_5_dist['EN'] += count
+            elif role.startswith('AX'):
+                role_5_dist['AX'] += count
+            elif role.startswith('CC'):
+                role_5_dist['CC'] += count
+            elif role.startswith('FL'):
+                role_5_dist['FL'] += count
+            elif role.startswith('FQ'):
+                role_5_dist['FQ'] += count
+        dominant_role = role_5_dist.most_common(1)[0][0] if role_5_dist else None
+        # 5-role proportions for deviation reporting
+        total_role_classified = sum(role_5_dist.values())
+        role_proportions = {
+            role: count / total_role_classified
+            for role, count in role_5_dist.items()
+        } if total_role_classified > 0 else {}
+        # Section from transcript metadata (external, illustration-based)
+        section = folio_tokens[0].section if folio_tokens else None
+
+        result = BFolioAnalysis(
             folio=folio,
             token_count=total,
             tokens=analyses,
@@ -3235,7 +3669,99 @@ class BFolioDecoder:
             bridge_rate=bridge_rate,
             dark_pipeline_rate=dark_rate,
             folio_balance=folio_balance,
+            unique_middles=len(unique_middle_set),
+            compound_rate=compound_rate,
+            ol_rate=ol_rate,
+            qo_fraction=qo_fraction,
+            sister_ratio=sister_ratio,
+            dominant_role=dominant_role,
+            section=section,
         )
+
+        # Attach deviation reporting data
+        result.role_proportions = role_proportions
+        result.baseline = self._baseline
+
+        # Merge external REGIME data (82 folios, C494)
+        regime_entry = self._regime_data.get(folio)
+        if regime_entry:
+            result.regime = regime_entry.get('regime')
+            result.regime_probability = regime_entry.get('probability')
+
+        # Merge AXM decomposition data (72 folios, C1016/C622/C1017)
+        axm_entry = self._axm_data.get(folio)
+        if axm_entry:
+            result.axm_self = axm_entry.get('axm_self')
+            result.hazard_density = axm_entry.get('hazard_density')
+            result.prefix_entropy = axm_entry.get('prefix_entropy')
+            result.archetype = axm_entry.get('archetype')
+            result.vocab_size = axm_entry.get('vocab_size')
+            result.vocab_residual = axm_entry.get('vocab_residual')
+
+        # Merge operational profile data (82 folios, C394-C396)
+        ops_entry = self._ops_data.get(folio)
+        if ops_entry:
+            result.paragraph_count = ops_entry.get('paragraph_count')
+
+        return result
+
+    # 5-role mapping for paragraph summary (C552)
+    _ROLE_5_MAP = {
+        'EN_KERNEL': 'EN', 'EN_QO': 'EN', 'PREP_TIER': 'EN',
+        'AX_SCAFFOLD': 'AX', 'AX_LATE': 'AX',
+        'CC_INIT': 'CC', 'FL_FINAL': 'FL',
+    }
+
+    def _map_role_5(self, role: Optional[str]) -> str:
+        """Map internal prefix_role string to 5-role taxonomy (C552)."""
+        if not role:
+            return '?'
+        mapped = self._ROLE_5_MAP.get(role)
+        if mapped:
+            return mapped
+        for prefix in ('EN', 'AX', 'CC', 'FL', 'FQ'):
+            if role.startswith(prefix):
+                return prefix
+        return '?'
+
+    def paragraph_summary_lines(self, folio: str) -> List[str]:
+        """Generate one-line-per-paragraph summary for program card.
+
+        Each line: paragraph_id | gallows | kernel k/h/e% | dominant_role(5) | size | FL term%
+        Uses 5-role taxonomy (CC/EN/FL/FQ/AX) per C552, not internal strings.
+        Kernel column shows ratio instead of category (expert rec: ESCAPE_DOMINANT
+        appeared ~80% of the time, low discriminative value).
+        Kernel ratios show '--' when token_count < 8 (too few for meaningful stats).
+        FL column shows terminal FL fraction (C777, non-executive per C949).
+        """
+        paragraphs = self.analyze_folio_paragraphs(folio)
+        if not paragraphs:
+            return ['  (no paragraphs detected)']
+        out = []
+        for p in paragraphs:
+            gallows = p.boundary_token[0].upper() if p.boundary_token else '-'
+            role = self._map_role_5(p.dominant_role)
+            # Kernel as ratio instead of category; '--' if <8 tokens
+            if p.token_count >= 8:
+                kt = sum(p.kernel_dist.values()) or 1
+                kp = 100 * p.kernel_dist.get('k', 0) / kt
+                hp = 100 * p.kernel_dist.get('h', 0) / kt
+                ep = 100 * p.kernel_dist.get('e', 0) / kt
+                kernel_str = f'k{kp:2.0f}/h{hp:2.0f}/e{ep:2.0f}'
+            else:
+                kernel_str = '--'
+            # Terminal FL fraction
+            fl_total = sum(p.fl_distribution.values()) if p.fl_distribution else 0
+            if fl_total > 0:
+                term_pct = 100 * p.fl_distribution.get('TERMINAL', 0) / fl_total
+                fl_str = f'{term_pct:2.0f}%'
+            else:
+                fl_str = '--'
+            out.append(
+                f'  {p.paragraph_id:4s} | {gallows} | {kernel_str:14s} | '
+                f'{role:4s} | {p.line_count}L/{p.token_count:3d}T | {fl_str:>3s}'
+            )
+        return out
 
     def decode_summary(self, folio: str, mode: str = 'structural') -> str:
         """

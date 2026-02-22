@@ -1,0 +1,723 @@
+==============================================================================
+ATOM GLOSS AUDIT: Spot-Check Report
+==============================================================================
+
+Instructions: For each atom, review its compound appearances.
+Mark each compound:  [OK] decomposition explains the gloss
+                     [??] unclear, needs discussion
+                     [NO] decomposition contradicts the gloss
+If most compounds are [OK], the atom gloss is validated.
+If several are [NO], the atom gloss may need revision.
+
+==============================================================================
+  ATOM: k = "heat"    (standalone: 2083 tokens)
+  Appears in 345 compounds (22 glossed)
+------------------------------------------------------------------------------
+
+  Middle        Count  Manual Gloss            Atom Decomposition            
+  ------        -----  ------------            ------------------            
+  ke              421  sustained heat          heat-cool                       [Ke]
+  ck              197  direct heat             adjust-heat                     [cK]
+  ek              169  precision               cool-heat                       [eK]
+  kch             148  pulse                   heat-adjust-watch               [Kch]
+  ckh             127  firm                    adjust-heat-watch               [cKh]
+  eck              90  rigid                   cool-adjust-heat                [ecK]
+  ok               70  seal                    work-heat                       [oK]
+  lk               58  frame                   frame-heat                      [lK]
+  eek              54  lock                    cool-cool-heat                  [eeK]
+  eok              39  cool                    cool-work-heat                  [eoK]
+  keeo             38  cycle                   heat-cool-cool-work             [Keeo]
+  kee              34  deep                    heat-cool-cool                  [Kee]
+  kc               33  intense heat-seal       heat-adjust                     [Kc]
+  ked              32  release                 heat-cool-mark                  [Ked]
+  keed             30  vent                    heat-cool-cool-mark             [Keed]
+  eckh             29  danger                  cool-adjust-heat-watch          [ecKh]
+  olk              27  hold                    work-frame-heat                 [olK]
+  keo              26  open                    heat-cool-work                  [Keo]
+  ksh              26  scan                    heat-sequence-watch             [Ksh]
+  ka               25  fire                    heat-yield                      [Ka]
+  kai              24  step                    heat-yield-iterate              [Kai]
+  lke              20  ---                     frame-heat-cool                 [lKe]
+  ko               16  ---                     heat-work                       [Ko]
+  ockh             16  ---                     work-adjust-heat-watch          [ocKh]
+  ock              13  ---                     work-adjust-heat                [ocK]
+  ... and 320 more compounds
+
+  VALIDATION SUMMARY for k="heat":
+    Glossed compounds: 22/345
+    Contains "heat": ke=sustained heat, ck=direct heat, kc=intense heat-seal
+    Does NOT contain "heat": ek=precision, kch=pulse, ckh=firm, eck=rigid, ok=seal, lk=frame, eek=lock, eok=cool
+    --> NEEDS REVIEW (only 3/22 compounds contain the atom gloss)
+
+==============================================================================
+  ATOM: e = "cool"    (standalone: 867 tokens)
+  Appears in 583 compounds (27 glossed)
+------------------------------------------------------------------------------
+
+  Middle        Count  Manual Gloss            Atom Decomposition            
+  ------        -----  ------------            ------------------            
+  edy            1938  batch                   cool-mark-end                   [Edy]
+  ey              889  set                     cool-end                        [Ey]
+  eey             644  extended cool           cool-cool-end                   [EEy]
+  ke              421  sustained heat          heat-cool                       [kE]
+  ed              401  discharge               cool-mark                       [Ed]
+  eo              359  cool-open               cool-work                       [Eo]
+  eol             294  sustain output          cool-work-frame                 [Eol]
+  ek              169  precision               cool-heat                       [Ek]
+  ee              151  extended cool           cool-cool                       [EE]
+  eeo             133  extended cool, work     cool-cool-work                  [EEo]
+  eck              90  rigid                   cool-adjust-heat                [Eck]
+  eed              88  extended                cool-cool-mark                  [EEd]
+  te               87  rapid gather            transfer-cool                   [tE]
+  eod              82  stand                   cool-work-mark                  [Eod]
+  et               58  path                    cool-transfer                   [Et]
+  eek              54  lock                    cool-cool-heat                  [EEk]
+  eeol             47  overnight standing      cool-cool-work-frame            [EEol]
+  ect              47  regulate                cool-adjust-transfer            [Ect]
+  eok              39  cool                    cool-work-heat                  [Eok]
+  keeo             38  cycle                   heat-cool-cool-work             [kEEo]
+  kee              34  deep                    heat-cool-cool                  [kEE]
+  ech              34  check                   cool-adjust-watch               [Ech]
+  ked              32  release                 heat-cool-mark                  [kEd]
+  keed             30  vent                    heat-cool-cool-mark             [kEEd]
+  eckh             29  danger                  cool-adjust-heat-watch          [Eckh]
+  ... and 558 more compounds
+
+  VALIDATION SUMMARY for e="cool":
+    Glossed compounds: 27/583
+    Contains "cool": eey=extended cool, eo=cool-open, ee=extended cool, eeo=extended cool, work, eok=cool, ep=precision cool
+    Does NOT contain "cool": edy=batch, ey=set, ke=sustained heat, ed=discharge, eol=sustain output, ek=precision, eck=rigid, eed=extended
+    --> NEEDS REVIEW (only 6/27 compounds contain the atom gloss)
+
+==============================================================================
+  ATOM: l = "frame"    (standalone: 855 tokens)
+  Appears in 282 compounds (10 glossed)
+------------------------------------------------------------------------------
+
+  Middle        Count  Manual Gloss            Atom Decomposition            
+  ------        -----  ------------            ------------------            
+  ol              762  continue                work-frame                      [oL]
+  al              521  gather                  yield-frame                     [aL]
+  eol             294  sustain output          cool-work-frame                 [eoL]
+  lch              74  strip                   frame-adjust-watch              [Lch]
+  lk               58  frame                   frame-heat                      [Lk]
+  ly               49  end                     frame-end                       [Ly]
+  eeol             47  overnight standing      cool-cool-work-frame            [eeoL]
+  lo               33  open                    frame-work                      [Lo]
+  olk              27  hold                    work-frame-heat                 [oLk]
+  lsh              24  verify                  frame-sequence-watch            [Lsh]
+  lke              20  ---                     frame-heat-cool                 [Lke]
+  ld               13  ---                     frame-mark                      [Ld]
+  kal              10  ---                     heat-yield-frame                [kaL]
+  alk              10  ---                     yield-frame-heat                [aLk]
+  eolk              9  ---                     cool-work-frame-heat            [eoLk]
+  olch              8  ---                     work-frame-adjust-watch         [oLch]
+  dal               8  ---                     mark-yield-frame                [daL]
+  olke              8  ---                     work-frame-heat-cool            [oLke]
+  lod               7  ---                     frame-work-mark                 [Lod]
+  ls                7  ---                     frame-sequence                  [Ls]
+  lt                7  ---                     frame-transfer                  [Lt]
+  lai               6  ---                     frame-yield-iterate             [Lai]
+  lc                6  ---                     frame-adjust                    [Lc]
+  lchd              5  ---                     frame-adjust-watch-mark         [Lchd]
+  alsh              5  ---                     yield-frame-sequence-watch      [aLsh]
+  ... and 257 more compounds
+
+  VALIDATION SUMMARY for l="frame":
+    Glossed compounds: 10/282
+    Contains "frame": lk=frame
+    Does NOT contain "frame": ol=continue, al=gather, eol=sustain output, lch=strip, ly=end, eeol=overnight standing, lo=open, olk=hold
+    --> NEEDS REVIEW (only 1/10 compounds contain the atom gloss)
+
+==============================================================================
+  ATOM: r = "input"    (standalone: 749 tokens)
+  Appears in 149 compounds (3 glossed)
+------------------------------------------------------------------------------
+
+  Middle        Count  Manual Gloss            Atom Decomposition            
+  ------        -----  ------------            ------------------            
+  ar              677  release                 yield-input                     [aR]
+  or              446  portion                 work-input                      [oR]
+  ry               33  finish                  input-end                       [Ry]
+  ir               19  ---                     iterate-input                   [iR]
+  ro               13  ---                     input-work                      [Ro]
+  rai              12  ---                     input-yield-iterate             [Rai]
+  rod               7  ---                     input-work-mark                 [Rod]
+  rch               7  ---                     input-adjust-watch              [Rch]
+  airo              7  ---                     yield-iterate-input-work        [aiRo]
+  air               6  ---                     yield-iterate-input             [aiR]
+  iro               5  ---                     iterate-input-work              [iRo]
+  rc                5  ---                     input-adjust                    [Rc]
+  eor               4  ---                     cool-work-input                 [eoR]
+  er                4  ---                     cool-input                      [eR]
+  lr                4  ---                     frame-input                     [lR]
+  pair              4  ---                     pause-yield-iterate-input       [paiR]
+  rd                3  ---                     input-mark                      [Rd]
+  ra                3  ---                     input-yield                     [Ra]
+  kar               3  ---                     heat-yield-input                [kaR]
+  iir               3  ---                     iterate-iterate-input           [iiR]
+  ara               3  ---                     yield-input-yield               [aRa]
+  aro               3  ---                     yield-input-work                [aRo]
+  raii              2  ---                     input-yield-iterate-iterate     [Raii]
+  ofar              2  ---                     work-flag-yield-input           [ofaR]
+  lar               2  ---                     frame-yield-input               [laR]
+  ... and 124 more compounds
+
+  VALIDATION SUMMARY for r="input":
+    Glossed compounds: 3/149
+    Does NOT contain "input": ar=release, or=portion, ry=finish
+    --> NEEDS REVIEW (only 0/3 compounds contain the atom gloss)
+
+==============================================================================
+  ATOM: t = "transfer"    (standalone: 576 tokens)
+  Appears in 193 compounds (7 glossed)
+------------------------------------------------------------------------------
+
+  Middle        Count  Manual Gloss            Atom Decomposition            
+  ------        -----  ------------            ------------------            
+  ct               95  control                 adjust-transfer                 [cT]
+  te               87  rapid gather            transfer-cool                   [Te]
+  tch              65  pound                   transfer-adjust-watch           [Tch]
+  et               58  path                    cool-transfer                   [eT]
+  cth              49  hazard                  adjust-transfer-watch           [cTh]
+  ect              47  regulate                cool-adjust-transfer            [ecT]
+  ot               46  route                   work-transfer                   [oT]
+  eet              22  ---                     cool-cool-transfer              [eeT]
+  teo              18  ---                     transfer-cool-work              [Teo]
+  ted              17  ---                     transfer-cool-mark              [Ted]
+  tc               16  ---                     transfer-adjust                 [Tc]
+  octh             15  ---                     work-adjust-transfer-watch      [ocTh]
+  oct              14  ---                     work-adjust-transfer            [ocT]
+  eot              13  ---                     cool-work-transfer              [eoT]
+  ecth             12  ---                     cool-adjust-transfer-watch      [ecTh]
+  yt               12  ---                     end-transfer                    [yT]
+  to               11  ---                     transfer-work                   [To]
+  teed              9  ---                     transfer-cool-cool-mark         [Teed]
+  ta                9  ---                     transfer-yield                  [Ta]
+  tsh               9  ---                     transfer-sequence-watch         [Tsh]
+  tai               8  ---                     transfer-yield-iterate          [Tai]
+  teeo              8  ---                     transfer-cool-cool-work         [Teeo]
+  dyt               7  ---                     mark-end-transfer               [dyT]
+  otch              7  ---                     work-transfer-adjust-watch      [oTch]
+  tee               7  ---                     transfer-cool-cool              [Tee]
+  ... and 168 more compounds
+
+  VALIDATION SUMMARY for t="transfer":
+    Glossed compounds: 7/193
+    Does NOT contain "transfer": ct=control, te=rapid gather, tch=pound, et=path, cth=hazard, ect=regulate, ot=route
+    --> NEEDS REVIEW (only 0/7 compounds contain the atom gloss)
+
+==============================================================================
+  ATOM: y = "end"    (standalone: 513 tokens)
+  Appears in 145 compounds (7 glossed)
+------------------------------------------------------------------------------
+
+  Middle        Count  Manual Gloss            Atom Decomposition            
+  ------        -----  ------------            ------------------            
+  edy            1938  batch                   cool-mark-end                   [edY]
+  ey              889  set                     cool-end                        [eY]
+  dy              675  close                   mark-end                        [dY]
+  eey             644  extended cool           cool-cool-end                   [eeY]
+  ly               49  end                     frame-end                       [lY]
+  ry               33  finish                  input-end                       [rY]
+  yt               12  ---                     end-transfer                    [Yt]
+  yk               11  ---                     end-heat                        [Yk]
+  hy                8  confirm                 watch-end                       [hY]
+  eyk               8  ---                     cool-end-heat                   [eYk]
+  dyt               7  ---                     mark-end-transfer               [dYt]
+  yp                5  ---                     end-pause                       [Yp]
+  ky                4  ---                     heat-end                        [kY]
+  ty                4  ---                     transfer-end                    [tY]
+  yl                4  ---                     end-frame                       [Yl]
+  eyt               3  ---                     cool-end-transfer               [eYt]
+  ypch              2  ---                     end-pause-adjust-watch          [Ypch]
+  dych              2  ---                     mark-end-adjust-watch           [dYch]
+  dyk               2  ---                     mark-end-heat                   [dYk]
+  edyo              2  ---                     cool-mark-end-work              [edYo]
+  ytsh              2  ---                     end-transfer-sequence-watch     [Ytsh]
+  ypai              2  ---                     end-pause-yield-iterate         [Ypai]
+  edyt              2  ---                     cool-mark-end-transfer          [edYt]
+  yd                2  ---                     end-mark                        [Yd]
+  edyk              2  ---                     cool-mark-end-heat              [edYk]
+  ... and 120 more compounds
+
+  VALIDATION SUMMARY for y="end":
+    Glossed compounds: 7/145
+    Contains "end": eey=extended cool, ly=end
+    Does NOT contain "end": edy=batch, ey=set, dy=close, ry=finish, hy=confirm
+    --> NEEDS REVIEW (only 2/7 compounds contain the atom gloss)
+
+==============================================================================
+  ATOM: o = "work"    (standalone: 388 tokens)
+  Appears in 589 compounds (20 glossed)
+------------------------------------------------------------------------------
+
+  Middle        Count  Manual Gloss            Atom Decomposition            
+  ------        -----  ------------            ------------------            
+  ol              762  continue                work-frame                      [Ol]
+  or              446  portion                 work-input                      [Or]
+  eo              359  cool-open               cool-work                       [eO]
+  eol             294  sustain output          cool-work-frame                 [eOl]
+  od              177  collect                 work-mark                       [Od]
+  eeo             133  extended cool, work     cool-cool-work                  [eeO]
+  opch            107  operate                 work-pause-adjust-watch         [Opch]
+  eod              82  stand                   cool-work-mark                  [eOd]
+  ok               70  seal                    work-heat                       [Ok]
+  eeol             47  overnight standing      cool-cool-work-frame            [eeOl]
+  ot               46  route                   work-transfer                   [Ot]
+  eok              39  cool                    cool-work-heat                  [eOk]
+  keeo             38  cycle                   heat-cool-cool-work             [keeO]
+  op               36  start                   work-pause                      [Op]
+  lo               33  open                    frame-work                      [lO]
+  oiin             32  loop                    work-iterate-iterate-halt       [Oiin]
+  olk              27  hold                    work-frame-heat                 [Olk]
+  keo              26  open                    heat-cool-work                  [keO]
+  om               25  work                    work-final                      [Om]
+  och              20  ---                     work-adjust-watch               [Och]
+  teo              18  ---                     transfer-cool-work              [teO]
+  qo               18  ---                     ?-work                          [qO]
+  ofch             17  ---                     work-flag-adjust-watch          [Ofch]
+  ko               16  ---                     heat-work                       [kO]
+  ockh             16  ---                     work-adjust-heat-watch          [Ockh]
+  ... and 564 more compounds
+
+  VALIDATION SUMMARY for o="work":
+    Glossed compounds: 20/589
+    Contains "work": eeo=extended cool, work, om=work
+    Does NOT contain "work": ol=continue, or=portion, eo=cool-open, eol=sustain output, od=collect, opch=operate, eod=stand, ok=seal
+    --> NEEDS REVIEW (only 2/20 compounds contain the atom gloss)
+
+==============================================================================
+  ATOM: d = "mark"    (standalone: 337 tokens)
+  Appears in 352 compounds (9 glossed)
+------------------------------------------------------------------------------
+
+  Middle        Count  Manual Gloss            Atom Decomposition            
+  ------        -----  ------------            ------------------            
+  edy            1938  batch                   cool-mark-end                   [eDy]
+  dy              675  close                   mark-end                        [Dy]
+  ed              401  discharge               cool-mark                       [eD]
+  od              177  collect                 work-mark                       [oD]
+  eed              88  extended                cool-cool-mark                  [eeD]
+  eod              82  stand                   cool-work-mark                  [eoD]
+  ked              32  release                 heat-cool-mark                  [keD]
+  keed             30  vent                    heat-cool-cool-mark             [keeD]
+  dai              23  ---                     mark-yield-iterate              [Dai]
+  ted              17  ---                     transfer-cool-mark              [teD]
+  eeod             16  ---                     cool-cool-work-mark             [eeoD]
+  da               13  start                   mark-yield                      [Da]
+  ld               13  ---                     frame-mark                      [lD]
+  edai             11  ---                     cool-mark-yield-iterate         [eDai]
+  do               10  ---                     mark-work                       [Do]
+  teed              9  ---                     transfer-cool-cool-mark         [teeD]
+  eda               9  ---                     cool-mark-yield                 [eDa]
+  odai              8  ---                     work-mark-yield-iterate         [oDai]
+  dal               8  ---                     mark-yield-frame                [Dal]
+  lod               7  ---                     frame-work-mark                 [loD]
+  ad                7  ---                     yield-mark                      [aD]
+  rod               7  ---                     input-work-mark                 [roD]
+  dyt               7  ---                     mark-end-transfer               [Dyt]
+  tchd              7  ---                     transfer-adjust-watch-mark      [tchD]
+  tched             7  ---                     transfer-adjust-watch-cool-mark  [tcheD]
+  ... and 327 more compounds
+
+  VALIDATION SUMMARY for d="mark":
+    Glossed compounds: 9/352
+    Does NOT contain "mark": edy=batch, dy=close, ed=discharge, od=collect, eed=extended, eod=stand, ked=release, keed=vent
+    --> NEEDS REVIEW (only 0/9 compounds contain the atom gloss)
+
+==============================================================================
+  ATOM: s = "sequence"    (standalone: 144 tokens)
+  Appears in 206 compounds (3 glossed)
+------------------------------------------------------------------------------
+
+  Middle        Count  Manual Gloss            Atom Decomposition            
+  ------        -----  ------------            ------------------            
+  ksh              26  scan                    heat-sequence-watch             [kSh]
+  lsh              24  verify                  frame-sequence-watch            [lSh]
+  os               16  ---                     work-sequence                   [oS]
+  es               15  ---                     cool-sequence                   [eS]
+  osh              13  ---                     work-sequence-watch             [oSh]
+  cs               12  ---                     adjust-sequence                 [cS]
+  ees               9  ---                     cool-cool-sequence              [eeS]
+  tsh               9  ---                     transfer-sequence-watch         [tSh]
+  ks                7  ---                     heat-sequence                   [kS]
+  ls                7  ---                     frame-sequence                  [lS]
+  sh                5  verify                  sequence-watch                  [Sh]
+  alsh              5  ---                     yield-frame-sequence-watch      [alSh]
+  opsh              5  ---                     work-pause-sequence-watch       [opSh]
+  psh               5  ---                     pause-sequence-watch            [pSh]
+  kesh              5  ---                     heat-cool-sequence-watch        [keSh]
+  so                3  ---                     sequence-work                   [So]
+  eksh              3  ---                     cool-heat-sequence-watch        [ekSh]
+  eees              3  ---                     cool-cool-cool-sequence         [eeeS]
+  is                3  ---                     iterate-sequence                [iS]
+  kshd              3  ---                     heat-sequence-watch-mark        [kShd]
+  sd                3  ---                     sequence-mark                   [Sd]
+  esh               3  ---                     cool-sequence-watch             [eSh]
+  lshe              3  ---                     frame-sequence-watch-cool       [lShe]
+  cse               3  ---                     adjust-sequence-cool            [cSe]
+  lksh              3  ---                     frame-heat-sequence-watch       [lkSh]
+  ... and 181 more compounds
+
+  VALIDATION SUMMARY for s="sequence":
+    Glossed compounds: 3/206
+    Does NOT contain "sequence": ksh=scan, lsh=verify, sh=verify
+    --> NEEDS REVIEW (only 0/3 compounds contain the atom gloss)
+
+==============================================================================
+  ATOM: i = "iterate"    (standalone: 137 tokens)
+  Appears in 203 compounds (9 glossed)
+------------------------------------------------------------------------------
+
+  Middle        Count  Manual Gloss            Atom Decomposition            
+  ------        -----  ------------            ------------------            
+  aiin            834  settle                  yield-iterate-iterate-halt      [aIIn]
+  iin             560  iterate                 iterate-iterate-halt            [IIn]
+  ain             420  intake                  yield-iterate-halt              [aIn]
+  in              264  link                    iterate-halt                    [In]
+  ai              174  open                    yield-iterate                   [aI]
+  aii              32  unseal                  yield-iterate-iterate           [aII]
+  oiin             32  loop                    work-iterate-iterate-halt       [oIIn]
+  kai              24  step                    heat-yield-iterate              [kaI]
+  ii               23  repeat                  iterate-iterate                 [II]
+  dai              23  ---                     mark-yield-iterate              [daI]
+  ir               19  ---                     iterate-input                   [Ir]
+  oi               13  ---                     work-iterate                    [oI]
+  rai              12  ---                     input-yield-iterate             [raI]
+  edai             11  ---                     cool-mark-yield-iterate         [edaI]
+  odai              8  ---                     work-mark-yield-iterate         [odaI]
+  im                8  ---                     iterate-final                   [Im]
+  tai               8  ---                     transfer-yield-iterate          [taI]
+  airo              7  ---                     yield-iterate-input-work        [aIro]
+  oin               6  ---                     work-iterate-halt               [oIn]
+  lai               6  ---                     frame-yield-iterate             [laI]
+  opai              6  ---                     work-pause-yield-iterate        [opaI]
+  air               6  ---                     yield-iterate-input             [aIr]
+  iro               5  ---                     iterate-input-work              [Iro]
+  ait               4  ---                     yield-iterate-transfer          [aIt]
+  kaii              4  ---                     heat-yield-iterate-iterate      [kaII]
+  ... and 178 more compounds
+
+  VALIDATION SUMMARY for i="iterate":
+    Glossed compounds: 9/203
+    Contains "iterate": iin=iterate
+    Does NOT contain "iterate": aiin=settle, ain=intake, in=link, ai=open, aii=unseal, oiin=loop, kai=step, ii=repeat
+    --> NEEDS REVIEW (only 1/9 compounds contain the atom gloss)
+
+==============================================================================
+  ATOM: m = "final"    (standalone: 76 tokens)
+  Appears in 19 compounds (2 glossed)
+------------------------------------------------------------------------------
+
+  Middle        Count  Manual Gloss            Atom Decomposition            
+  ------        -----  ------------            ------------------            
+  am              174  finalize                yield-final                     [aM]
+  om               25  work                    work-final                      [oM]
+  im                8  ---                     iterate-final                   [iM]
+  faim              1  ---                     flag-yield-iterate-final        [faiM]
+  lm                1  ---                     frame-final                     [lM]
+  amo               1  ---                     yield-final-work                [aMo]
+  lmy               1  ---                     frame-final-end                 [lMy]
+  rams              1  ---                     input-yield-final-sequence      [raMs]
+  amod              1  ---                     yield-final-work-mark           [aMod]
+  kam               1  ---                     heat-yield-final                [kaM]
+  amc               1  ---                     yield-final-adjust              [aMc]
+  ofaramot          1  ---                     work-flag-yield-input-yield-final-work-transfer
+  eam               1  ---                     cool-yield-final                [eaM]
+  amd               1  ---                     yield-final-mark                [aMd]
+  opom              1  ---                     work-pause-work-final           [opoM]
+  amchd             1  ---                     yield-final-adjust-watch-mark   [aMchd]
+  fam               1  ---                     flag-yield-final                [faM]
+  md                1  ---                     final-mark                      [Md]
+  samok             1  ---                     sequence-yield-final-work-heat  [saMok]
+
+  VALIDATION SUMMARY for m="final":
+    Glossed compounds: 2/19
+    Contains "final": am=finalize
+    Does NOT contain "final": om=work
+    --> LIKELY CORRECT (>=1/2 compounds contain the atom gloss)
+
+==============================================================================
+  ATOM: a = "yield"    (standalone: 64 tokens)
+  Appears in 326 compounds (11 glossed)
+------------------------------------------------------------------------------
+
+  Middle        Count  Manual Gloss            Atom Decomposition            
+  ------        -----  ------------            ------------------            
+  aiin            834  settle                  yield-iterate-iterate-halt      [Aiin]
+  ar              677  release                 yield-input                     [Ar]
+  al              521  gather                  yield-frame                     [Al]
+  ain             420  intake                  yield-iterate-halt              [Ain]
+  am              174  finalize                yield-final                     [Am]
+  ai              174  open                    yield-iterate                   [Ai]
+  aii              32  unseal                  yield-iterate-iterate           [Aii]
+  ka               25  fire                    heat-yield                      [kA]
+  kai              24  step                    heat-yield-iterate              [kAi]
+  dai              23  ---                     mark-yield-iterate              [dAi]
+  an               18  bind                    yield-halt                      [An]
+  da               13  start                   mark-yield                      [dA]
+  rai              12  ---                     input-yield-iterate             [rAi]
+  ak               12  ---                     yield-heat                      [Ak]
+  edai             11  ---                     cool-mark-yield-iterate         [edAi]
+  kal              10  ---                     heat-yield-frame                [kAl]
+  alk              10  ---                     yield-frame-heat                [Alk]
+  ta                9  ---                     transfer-yield                  [tA]
+  eda               9  ---                     cool-mark-yield                 [edA]
+  odai              8  ---                     work-mark-yield-iterate         [odAi]
+  dal               8  ---                     mark-yield-frame                [dAl]
+  ea                8  ---                     cool-yield                      [eA]
+  tai               8  ---                     transfer-yield-iterate          [tAi]
+  ad                7  ---                     yield-mark                      [Ad]
+  airo              7  ---                     yield-iterate-input-work        [Airo]
+  ... and 301 more compounds
+
+  VALIDATION SUMMARY for a="yield":
+    Glossed compounds: 11/326
+    Does NOT contain "yield": aiin=settle, ar=release, al=gather, ain=intake, am=finalize, ai=open, aii=unseal, ka=fire
+    --> NEEDS REVIEW (only 0/11 compounds contain the atom gloss)
+
+==============================================================================
+  ATOM: h = "watch"    (standalone: 48 tokens)
+  Appears in 418 compounds (16 glossed)
+------------------------------------------------------------------------------
+
+  Middle        Count  Manual Gloss            Atom Decomposition            
+  ------        -----  ------------            ------------------            
+  kch             148  pulse                   heat-adjust-watch               [kcH]
+  ckh             127  firm                    adjust-heat-watch               [ckH]
+  opch            107  operate                 work-pause-adjust-watch         [opcH]
+  pch              79  pause                   pause-adjust-watch              [pcH]
+  lch              74  strip                   frame-adjust-watch              [lcH]
+  tch              65  pound                   transfer-adjust-watch           [tcH]
+  cth              49  hazard                  adjust-transfer-watch           [ctH]
+  cph              36  measure                 adjust-pause-watch              [cpH]
+  ech              34  check                   cool-adjust-watch               [ecH]
+  eckh             29  danger                  cool-adjust-heat-watch          [eckH]
+  ksh              26  scan                    heat-sequence-watch             [ksH]
+  lsh              24  verify                  frame-sequence-watch            [lsH]
+  fch              23  note                    flag-adjust-watch               [fcH]
+  och              20  ---                     work-adjust-watch               [ocH]
+  ofch             17  ---                     work-flag-adjust-watch          [ofcH]
+  ockh             16  ---                     work-adjust-heat-watch          [ockH]
+  octh             15  ---                     work-adjust-transfer-watch      [octH]
+  osh              13  ---                     work-sequence-watch             [osH]
+  ecth             12  ---                     cool-adjust-transfer-watch      [ectH]
+  cfh               9  ---                     adjust-flag-watch               [cfH]
+  tsh               9  ---                     transfer-sequence-watch         [tsH]
+  epch              8  ---                     cool-pause-adjust-watch         [epcH]
+  hy                8  confirm                 watch-end                       [Hy]
+  olch              8  ---                     work-frame-adjust-watch         [olcH]
+  kech              8  ---                     heat-cool-adjust-watch          [kecH]
+  ... and 393 more compounds
+
+  VALIDATION SUMMARY for h="watch":
+    Glossed compounds: 16/418
+    Does NOT contain "watch": kch=pulse, ckh=firm, opch=operate, pch=pause, lch=strip, tch=pound, cth=hazard, cph=measure
+    --> NEEDS REVIEW (only 0/16 compounds contain the atom gloss)
+
+==============================================================================
+  ATOM: p = "pause"    (standalone: 47 tokens)
+  Appears in 187 compounds (5 glossed)
+------------------------------------------------------------------------------
+
+  Middle        Count  Manual Gloss            Atom Decomposition            
+  ------        -----  ------------            ------------------            
+  opch            107  operate                 work-pause-adjust-watch         [oPch]
+  pch              79  pause                   pause-adjust-watch              [Pch]
+  op               36  start                   work-pause                      [oP]
+  cph              36  measure                 adjust-pause-watch              [cPh]
+  ep               16  precision cool          cool-pause                      [eP]
+  cp               10  ---                     adjust-pause                    [cP]
+  pc               10  ---                     pause-adjust                    [Pc]
+  opc               9  ---                     work-pause-adjust               [oPc]
+  epch              8  ---                     cool-pause-adjust-watch         [ePch]
+  opched            7  ---                     work-pause-adjust-watch-cool-mark  [oPched]
+  opche             6  ---                     work-pause-adjust-watch-cool    [oPche]
+  opa               6  ---                     work-pause-yield                [oPa]
+  opai              6  ---                     work-pause-yield-iterate        [oPai]
+  yp                5  ---                     end-pause                       [yP]
+  ocph              5  ---                     work-adjust-pause-watch         [ocPh]
+  opsh              5  ---                     work-pause-sequence-watch       [oPsh]
+  psh               5  ---                     pause-sequence-watch            [Psh]
+  pche              5  ---                     pause-adjust-watch-cool         [Pche]
+  opal              4  ---                     work-pause-yield-frame          [oPal]
+  epc               4  ---                     cool-pause-adjust               [ePc]
+  lp                4  ---                     frame-pause                     [lP]
+  opalk             4  ---                     work-pause-yield-frame-heat     [oPalk]
+  pcheo             4  ---                     pause-adjust-watch-cool-work    [Pcheo]
+  pair              4  ---                     pause-yield-iterate-input       [Pair]
+  cpho              3  ---                     adjust-pause-watch-work         [cPho]
+  ... and 162 more compounds
+
+  VALIDATION SUMMARY for p="pause":
+    Glossed compounds: 5/187
+    Contains "pause": pch=pause
+    Does NOT contain "pause": opch=operate, op=start, cph=measure, ep=precision cool
+    --> NEEDS REVIEW (only 1/5 compounds contain the atom gloss)
+
+==============================================================================
+  ATOM: f = "flag"    (standalone: 17 tokens)
+  Appears in 101 compounds (1 glossed)
+------------------------------------------------------------------------------
+
+  Middle        Count  Manual Gloss            Atom Decomposition            
+  ------        -----  ------------            ------------------            
+  fch              23  note                    flag-adjust-watch               [Fch]
+  ofch             17  ---                     work-flag-adjust-watch          [oFch]
+  of               15  ---                     work-flag                       [oF]
+  cfh               9  ---                     adjust-flag-watch               [cFh]
+  efch              6  ---                     cool-flag-adjust-watch          [eFch]
+  eef               6  ---                     cool-cool-flag                  [eeF]
+  ef                6  ---                     cool-flag                       [eF]
+  efc               3  ---                     cool-flag-adjust                [eFc]
+  ocfh              3  ---                     work-adjust-flag-watch          [ocFh]
+  fchd              3  ---                     flag-adjust-watch-mark          [Fchd]
+  cf                3  ---                     adjust-flag                     [cF]
+  ofc               2  ---                     work-flag-adjust                [oFc]
+  ofar              2  ---                     work-flag-yield-input           [oFar]
+  lf                2  ---                     frame-flag                      [lF]
+  lfch              2  ---                     frame-flag-adjust-watch         [lFch]
+  ofsh              2  ---                     work-flag-sequence-watch        [oFsh]
+  ofo               2  ---                     work-flag-work                  [oFo]
+  olfc              2  ---                     work-frame-flag-adjust          [olFc]
+  fod               2  ---                     flag-work-mark                  [Fod]
+  ocf               2  ---                     work-adjust-flag                [ocF]
+  olf               2  ---                     work-frame-flag                 [olF]
+  aifh              2  ---                     yield-iterate-flag-watch        [aiFh]
+  oef               2  ---                     work-cool-flag                  [oeF]
+  aif               2  ---                     yield-iterate-flag              [aiF]
+  ofched            2  ---                     work-flag-adjust-watch-cool-mark  [oFched]
+  ... and 76 more compounds
+
+  VALIDATION SUMMARY for f="flag":
+    Glossed compounds: 1/101
+    Does NOT contain "flag": fch=note
+    --> NEEDS REVIEW (only 0/1 compounds contain the atom gloss)
+
+==============================================================================
+  ATOM: g = "complete"    (standalone: 8 tokens)
+  Appears in 3 compounds (0 glossed)
+------------------------------------------------------------------------------
+
+  Middle        Count  Manual Gloss            Atom Decomposition            
+  ------        -----  ------------            ------------------            
+  ge                1  ---                     complete-cool                   [Ge]
+  lg                1  ---                     frame-complete                  [lG]
+  og                1  ---                     work-complete                   [oG]
+
+  No glossed compounds to validate against.
+
+==============================================================================
+  ATOM: n = "halt"    (standalone: 7 tokens)
+  Appears in 25 compounds (6 glossed)
+------------------------------------------------------------------------------
+
+  Middle        Count  Manual Gloss            Atom Decomposition            
+  ------        -----  ------------            ------------------            
+  aiin            834  settle                  yield-iterate-iterate-halt      [aiiN]
+  iin             560  iterate                 iterate-iterate-halt            [iiN]
+  ain             420  intake                  yield-iterate-halt              [aiN]
+  in              264  link                    iterate-halt                    [iN]
+  oiin             32  loop                    work-iterate-iterate-halt       [oiiN]
+  an               18  bind                    yield-halt                      [aN]
+  oin               6  ---                     work-iterate-halt               [oiN]
+  iiin              1  ---                     iterate-iterate-iterate-halt    [iiiN]
+  ino               1  ---                     iterate-halt-work               [iNo]
+  olaiino           1  ---                     work-frame-yield-iterate-iterate-halt-work
+  oiiin             1  ---                     work-iterate-iterate-iterate-halt  [oiiiN]
+  oina              1  ---                     work-iterate-halt-yield         [oiNa]
+  aind              1  ---                     yield-iterate-halt-mark         [aiNd]
+  aiino             1  ---                     yield-iterate-iterate-halt-work  [aiiNo]
+  raiiin            1  ---                     input-yield-iterate-iterate-iterate-halt  [raiiiN]
+  iinl              1  ---                     iterate-iterate-halt-frame      [iiNl]
+  ofaiino           1  ---                     work-flag-yield-iterate-iterate-halt-work
+  ind               1  ---                     iterate-halt-mark               [iNd]
+  aiiinro           1  ---                     yield-iterate-iterate-iterate-halt-input-work
+  oinysarx          1  ---                     work-iterate-halt-end-sequence-yield-input-?
+  lan               1  ---                     frame-yield-halt                [laN]
+  eain              1  ---                     cool-yield-iterate-halt         [eaiN]
+  rain              1  ---                     input-yield-iterate-halt        [raiN]
+  paiino            1  ---                     pause-yield-iterate-iterate-halt-work  [paiiNo]
+  aino              1  ---                     yield-iterate-halt-work         [aiNo]
+
+  VALIDATION SUMMARY for n="halt":
+    Glossed compounds: 6/25
+    Does NOT contain "halt": aiin=settle, iin=iterate, ain=intake, in=link, oiin=loop, an=bind
+    --> NEEDS REVIEW (only 0/6 compounds contain the atom gloss)
+
+==============================================================================
+  ATOM: c = "adjust"    (standalone: 5 tokens)
+  Appears in 423 compounds (17 glossed)
+------------------------------------------------------------------------------
+
+  Middle        Count  Manual Gloss            Atom Decomposition            
+  ------        -----  ------------            ------------------            
+  ck              197  direct heat             adjust-heat                     [Ck]
+  kch             148  pulse                   heat-adjust-watch               [kCh]
+  ckh             127  firm                    adjust-heat-watch               [Ckh]
+  opch            107  operate                 work-pause-adjust-watch         [opCh]
+  ct               95  control                 adjust-transfer                 [Ct]
+  eck              90  rigid                   cool-adjust-heat                [eCk]
+  pch              79  pause                   pause-adjust-watch              [pCh]
+  lch              74  strip                   frame-adjust-watch              [lCh]
+  tch              65  pound                   transfer-adjust-watch           [tCh]
+  cth              49  hazard                  adjust-transfer-watch           [Cth]
+  ect              47  regulate                cool-adjust-transfer            [eCt]
+  cph              36  measure                 adjust-pause-watch              [Cph]
+  ech              34  check                   cool-adjust-watch               [eCh]
+  kc               33  intense heat-seal       heat-adjust                     [kC]
+  eckh             29  danger                  cool-adjust-heat-watch          [eCkh]
+  fch              23  note                    flag-adjust-watch               [fCh]
+  och              20  ---                     work-adjust-watch               [oCh]
+  ofch             17  ---                     work-flag-adjust-watch          [ofCh]
+  ockh             16  ---                     work-adjust-heat-watch          [oCkh]
+  tc               16  ---                     transfer-adjust                 [tC]
+  ec               16  ---                     cool-adjust                     [eC]
+  octh             15  ---                     work-adjust-transfer-watch      [oCth]
+  oct              14  ---                     work-adjust-transfer            [oCt]
+  ock              13  ---                     work-adjust-heat                [oCk]
+  ecth             12  ---                     cool-adjust-transfer-watch      [eCth]
+  ... and 398 more compounds
+
+  VALIDATION SUMMARY for c="adjust":
+    Glossed compounds: 17/423
+    Does NOT contain "adjust": ck=direct heat, kch=pulse, ckh=firm, opch=operate, ct=control, eck=rigid, pch=pause, lch=strip
+    --> NEEDS REVIEW (only 0/17 compounds contain the atom gloss)
+
+==============================================================================
+OVERALL ATOM CONFIDENCE
+==============================================================================
+
+  Atom    Gloss         Standalone   Compounds   Glossed  Contains  Signal
+  ----    -----         ----------   ---------   -------  --------  ------
+  k       heat                2083         345        22         3  WEAK
+  e       cool                 867         583        27         6  WEAK
+  l       frame                855         282        10         1  WEAK
+  r       input                749         149         3         0  WEAK
+  t       transfer             576         193         7         0  WEAK
+  y       end                  513         145         7         2  MODERATE
+  o       work                 388         589        20         2  WEAK
+  d       mark                 337         352         9         0  WEAK
+  s       sequence             144         206         3         0  WEAK
+  i       iterate              137         203         9         1  WEAK
+  m       final                 76          19         2         1  LIMITED
+  a       yield                 64         326        11         0  WEAK
+  h       watch                 48         418        16         0  WEAK
+  p       pause                 47         187         5         1  WEAK
+  f       flag                  17         101         1         0  LIMITED
+  g       complete               8           3         0         0  NONE
+  n       halt                   7          25         6         0  WEAK
+  c       adjust                 5         423        17         0  WEAK
+
+Signal key:
+  STRONG:   >=50% of glossed compounds contain the atom gloss word
+  MODERATE: 25-50% contain it
+  WEAK:     <25% contain it (atom gloss may be wrong or too abstract)
+  LIMITED:  <3 glossed compounds (insufficient evidence)
+  NONE:     no glossed compounds
+
+NOTE: 'Contains' is a crude keyword match. An atom gloss can be
+correct even if the compound gloss doesn't literally contain the word.
+E.g., e='cool' is correct even though ek='precision' doesn't contain
+'cool' -- precision IS a type of careful cooling. Use human judgment.

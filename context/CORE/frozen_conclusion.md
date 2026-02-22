@@ -22,7 +22,7 @@ This conclusion is proven by the internal structure of the text alone. It requir
 | Instructions cataloged | 75,248 | Total executable content |
 | Translation-eligible zones | 0 | Pure operational, no referents |
 | Forbidden transitions | 17 | In 5 hazard classes |
-| LINK density | 38% | Deliberate waiting/monitoring |
+| LINK density | 13.2% | ol-morphology tokens, role-stratified (C609, C1174) |
 
 ---
 

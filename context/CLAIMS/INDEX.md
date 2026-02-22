@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1038 validated constraints | **Version:** 4.23 | **Date:** 2026-02-22
+**Total:** 1040 validated constraints | **Version:** 4.24 | **Date:** 2026-02-22
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3270,6 +3270,15 @@ Position-specific atom profiles reveal universal additive composition in SUFFIX 
 | **1192** | **SUFFIX Additive Composition** (SUFFIX compounds compose additively from position-specific atom profiles; r=0.953, z=2.59, p=0.029; extends C1190 to SUFFIX; cross-position baseline r=0.676, improvement +0.277) | 2 | B, SUFFIX, composition | -> [C1192_suffix_additive_composition.md](C1192_suffix_additive_composition.md) |
 | **1193** | **PREFIX Compositional Duality** (PREFIX compounds split into compositional class (ke/te/ka/po/pch, predictable from atom profiles) and emergent class (ch/sh/da/ot/ok/ol, opaque); maps to EXTENDED/CORE prefix classification; discrete role clustering k=2: {a,d,o,q} vs {c,e,f,h,k,l,p,r,s,t,y}) | 2 | B, PREFIX, composition | -> [C1193_prefix_compositional_duality.md](C1193_prefix_compositional_duality.md) |
 | **1194** | **Position-Specific Pair Discrimination** (near-identical atom pairs separate under position-specific profiles: k-t 0.993->0.568, d-o 0.945->0.296, p-t 0.935->0.467, l-r 0.919->0.806; global identity was masking PREFIX distinctions; no true atom redundancy) | 2 | B, atoms, discrimination | -> [C1194_position_specific_pair_discrimination.md](C1194_position_specific_pair_discrimination.md) |
+
+### Atom Gloss Audit (C1195-C1196) -- Phase: ATOM_GLOSS_AUDIT (Phase 424)
+
+Validated atom glosses against compound evidence, assigned confidence tiers, generated autoglosses for 1144 compound MIDDLEs.
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1195** | **Atom Gloss Confidence Tiers** (18 atoms in 4 tiers: 8 LOCKED (k,e,h,y,i,n,a,m), 2 SOLID (d,t), 6 PLAUSIBLE (c,p,f,s,g,x), 3 WEAK (o,l,r); validated against 91 glossed compounds; 5 dictionary discrepancies fixed to match GLOSSING.md) | 2 | B, atoms, glossing | -> [C1195_atom_gloss_confidence_tiers.md](C1195_atom_gloss_confidence_tiers.md) |
+| **1196** | **Autogloss Composition Coverage** (1144/1273 compound MIDDLEs auto-glossed from atom decomposition; confidence: 72 LOCKED, 86 SOLID, 289 PLAUSIBLE, 768 WEAK; 58 incomplete (q); 67.1% WEAK driven by 3 generic atoms o/l/r) | 2 | B, compounds, glossing | -> [C1196_autogloss_composition_coverage.md](C1196_autogloss_composition_coverage.md) |
 
 ---
 

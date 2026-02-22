@@ -240,7 +240,7 @@ See [CORE/falsifications.md](CORE/falsifications.md) for complete list with evid
 - Kernel control (3 operators: k, h, e)
 - Hazard topology (17 forbidden transitions, 5 failure classes)
 - Convergence to stable states (57.8% terminal STATE-C)
-- LINK operator (13.2% of tokens = deliberate waiting; C609 corrected from legacy 38%)
+- LINK population (13.2% of tokens = ol-morphology, role-stratified; C609 density, C1174 morphological artifact)
 - Folio = complete program, Line = formal control block
 
 **Not encoded (operator provides externally):**
