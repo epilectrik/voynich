@@ -1,4 +1,4 @@
-# C1198: MIDDLE Order Irrelevance
+# C1198: MIDDLE Order — Distributional Equivalence
 
 **Tier:** 2
 **Scope:** B
@@ -7,7 +7,7 @@
 
 ## Constraint
 
-MIDDLEs with identical character composition but different ordering show near-identical behavioral profiles. Order does not significantly alter distributional behavior.
+MIDDLEs with identical character composition but different ordering show near-identical **distributional** profiles (section, position, prefix/suffix context). Order does not affect where in the text a MIDDLE appears or how it combines with other morphological slots.
 
 21 order-equivalent groups tested (same character counts, different sequence, >=10 tokens each):
 
@@ -29,13 +29,13 @@ Separation: +0.011, permutation p=0.116 (not significant)
 
 ## Interpretation
 
-Character composition determines MIDDLE behavior; the ordering of atoms within a MIDDLE is secondary. This supports a compositional reading where MIDDLEs encode **what atoms participate** rather than **in what sequence they execute**.
+Character composition determines MIDDLE distributional behavior — where it appears in the text, which sections, which positions, which morphological context.
 
-Note: order may still carry information below the resolution of behavioral profiles (e.g., procedural sequence visible only to the human operator, not detectable from distributional statistics). The constraint is that order does not affect *distributional behavior* in the text.
+**Important scope limitation:** This does NOT establish that ke and ek are functionally identical to the operator. Order may encode procedural sequence (e.g., "cool then heat" vs "heat then cool") that is invisible to distributional statistics because both variants occupy the same grammatical slot. The constraint is narrowly scoped: **order does not affect textual distribution**. Whether order encodes operational sequence remains open.
 
 ## Relationship to C483
 
-C483 established that TOKEN-level repetition (same token appearing multiple times on a line) is ordinal. This constraint addresses a different phenomenon: CHARACTER-level ordering within a single MIDDLE. Both converge on the same principle — the manuscript encodes composition, not sequence.
+C483 established that TOKEN-level repetition (same token appearing multiple times on a line) is ordinal. This constraint addresses a different phenomenon: CHARACTER-level ordering within a single MIDDLE. Both converge on the same principle — the manuscript's textual grammar is driven by composition, though operational sequence may still be encoded within the MIDDLE for the human reader.
 
 ## Falsification
 
