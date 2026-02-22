@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1050 validated constraints | **Version:** 4.29 | **Date:** 2026-02-22
+**Total:** 1053 validated constraints | **Version:** 4.30 | **Date:** 2026-02-22
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3296,6 +3296,9 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 | **1204** | **i-Extension Inverted Gradient** (i-gradient inverted vs e: ii 53.7% > single-i 45.9%, unlike e where single-e 81.1% dominates; driven by aIn family where ii-form is 2x more common; HERBAL highest ii+ rate 67.6%, BIO lowest 46.7%) | 2 | B, i-atom, extension | -> [C1204_i_extension_inverted_gradient.md](C1204_i_extension_inverted_gradient.md) |
 | **1205** | **i-Atom Orthogonal to k/e Energy System** (i operates on independent axis: no carryover z=-6.14 (anti-clusters), disjoint atom space chi2=2272, folio r(i,k)=-0.437 r(i,e)=-0.412, program-specific within/between=1.83, partial carryover interruption; all signals survive daiin removal) | 2 | B, i-atom, orthogonality, k/e | -> [C1205_i_ke_orthogonality.md](C1205_i_ke_orthogonality.md) |
 | **1206** | **Paragraph Kernel Gradient** (h declines r=-0.920 through folio line quintiles while k rises r=+0.727 and e rises r=+0.881; early lines monitoring-heavy, later lines operation-heavy; extends C965 kernel composition shift) | 2 | B, paragraph, gradient, kernel | -> [C1206_paragraph_kernel_gradient.md](C1206_paragraph_kernel_gradient.md) |
+| **1207** | **Atom Correlation Clusters** (~20 atoms organize into 5-6 correlated clusters at folio level; {a,i,n,r} iteration axis r=+0.81-0.83, {c,h} monitoring r=+0.75, {k,l} energy r=+0.54, {d,y} closure r=+0.48, {o,p} structural r=+0.41; 64/153 pairs FDR-significant; all survive daiin removal) | 2 | B, atoms, dimensionality, clusters | -> [C1207_atom_correlation_clusters.md](C1207_atom_correlation_clusters.md) |
+| **1208** | **Atom Carryover Classification** (18 atoms classify into 3 carryover classes: POSITIVE state persistence {a,c,h,k,m,p,r,s,t} z=+2.5 to +9.6; NEGATIVE anti-clustering {e,i,n,y} z=-4.3 to -6.1; NEUTRAL {d,f,l,o,q}; e anti-clusters despite C1200 directional carryover; all survive daiin removal) | 2 | B, atoms, carryover, classification | -> [C1208_atom_carryover_classification.md](C1208_atom_carryover_classification.md) |
+| **1209** | **MIDDLE Positional Grammar** (atoms occupy ordered slots within MIDDLEs: INITIAL {a,q,e,o} 86-57% initial; MEDIAL {c,i,p,d,f,s}; TERMINAL {n,y,m,r,h,l} 71-99% terminal; FREE {k,t} no preference; n 99.4% terminal, a 86.3% initial; all 18 atoms FDR-significant; k/t position-freedom consistent with kernel operator role) | 2 | B, atoms, position, grammar | -> [C1209_middle_positional_grammar.md](C1209_middle_positional_grammar.md) |
 
 ---
 
