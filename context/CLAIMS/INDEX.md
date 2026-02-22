@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1040 validated constraints | **Version:** 4.24 | **Date:** 2026-02-22
+**Total:** 1043 validated constraints | **Version:** 4.25 | **Date:** 2026-02-22
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3279,6 +3279,16 @@ Validated atom glosses against compound evidence, assigned confidence tiers, gen
 |---|-----------|------|-------|----------|
 | **1195** | **Atom Gloss Confidence Tiers** (18 atoms in 4 tiers: 8 LOCKED (k,e,h,y,i,n,a,m), 2 SOLID (d,t), 6 PLAUSIBLE (c,p,f,s,g,x), 3 WEAK (o,l,r); validated against 91 glossed compounds; 5 dictionary discrepancies fixed to match GLOSSING.md) | 2 | B, atoms, glossing | -> [C1195_atom_gloss_confidence_tiers.md](C1195_atom_gloss_confidence_tiers.md) |
 | **1196** | **Autogloss Composition Coverage** (1144/1273 compound MIDDLEs auto-glossed from atom decomposition; confidence: 72 LOCKED, 86 SOLID, 289 PLAUSIBLE, 768 WEAK; 58 incomplete (q); 67.1% WEAK driven by 3 generic atoms o/l/r) | 2 | B, compounds, glossing | -> [C1196_autogloss_composition_coverage.md](C1196_autogloss_composition_coverage.md) |
+
+### Atom Extensibility (C1197-C1199) -- Phase: ATOM_EXTENSIBILITY (Phase 425)
+
+Only e and i support consecutive repetition; all other atoms are binary. Order within MIDDLEs is behaviorally irrelevant. Extension rates vary by section, paragraph position, and folio.
+
+| # | Constraint | Tier | Scope | Location |
+|---|-----------|------|-------|----------|
+| **1197** | **Atom Extensibility Partition** (only e and i repeat consecutively at structural levels (1555/1554 tokens); 18 other atoms are binary (present once or absent); extends C901 from A to B; 129 ratio families exist) | 2 | B, atoms, extensibility | -> [C1197_atom_extensibility_partition.md](C1197_atom_extensibility_partition.md) |
+| **1198** | **MIDDLE Order Irrelevance** (reordered MIDDLEs with identical composition show near-identical behavioral profiles: ke/ek r=0.999, kch/ckh r=0.995, eek/kee r=0.997; mean within-group r=0.967 vs between r=0.957; order does not alter distributional behavior) | 2 | B, composition, order | -> [C1198_middle_order_irrelevance.md](C1198_middle_order_irrelevance.md) |
+| **1199** | **Extension Distributional Gradient** (ee-rate varies by section: S=24.5%, B=10.8%, p<0.001; headers depleted vs bodies 5.8% vs 13.7%, p<0.001; within-section folio variance substantial, HERBAL CV=0.54; extension parameterized at section, folio, and paragraph level) | 2 | B, extension, distribution | -> [C1199_extension_distributional_gradient.md](C1199_extension_distributional_gradient.md) |
 
 ---
 
