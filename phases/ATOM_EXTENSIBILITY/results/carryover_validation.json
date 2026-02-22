@@ -1,0 +1,88 @@
+{
+  "V1_independence": {
+    "p_term_k": 0.1345,
+    "p_term_e": 0.0825,
+    "p_init_e": 0.3013,
+    "excess_after_k": 0.4043,
+    "excess_after_e": 0.2809,
+    "observed": {
+      "carryover": 0.24667772385691178,
+      "p_e_after_k": 0.7055306427503737,
+      "p_e_after_e": 0.5821917808219178,
+      "p_k_after_e": 0.4178082191780822,
+      "p_k_after_k": 0.2944693572496263,
+      "n_ke_transitions": 2214
+    }
+  },
+  "V2_shuffle": {
+    "observed": 0.2467,
+    "perm_mean": -0.0657,
+    "perm_std": 0.0395,
+    "z_score": 7.9,
+    "p_value": 0.0
+  },
+  "V3_section_stratified": {
+    "B": {
+      "n_lines": 764,
+      "carryover": 0.4122,
+      "n_ke_transitions": 904
+    },
+    "C": {
+      "n_lines": 127,
+      "carryover": -0.366,
+      "n_ke_transitions": 63
+    },
+    "H": {
+      "n_lines": 377,
+      "carryover": 0.0821,
+      "n_ke_transitions": 180
+    },
+    "S": {
+      "n_lines": 1083,
+      "carryover": 0.2112,
+      "n_ke_transitions": 1031
+    },
+    "T": {
+      "n_lines": 69,
+      "carryover": 0.0833,
+      "n_ke_transitions": 36
+    }
+  },
+  "V4_distance_decay": {
+    "0": {
+      "carryover": 0.2467,
+      "n_transitions": 2214
+    },
+    "1": {
+      "carryover": -0.1799,
+      "n_transitions": 1831
+    },
+    "2": {
+      "carryover": -0.1391,
+      "n_transitions": 1590
+    },
+    "3": {
+      "carryover": -0.1767,
+      "n_transitions": 1276
+    },
+    "4": {
+      "carryover": -0.0191,
+      "n_transitions": 967
+    }
+  },
+  "V5_frequency_control": {},
+  "V6_interior_only": {
+    "full": {
+      "carryover": 0.2467,
+      "n": 2214
+    },
+    "interior": {
+      "carryover": 0.2563,
+      "n": 1831
+    },
+    "boundary": {
+      "carryover": 0.2285,
+      "n": 383
+    }
+  }
+}
