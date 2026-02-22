@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1055 validated constraints | **Version:** 4.31 | **Date:** 2026-02-22
+**Total:** 1057 validated constraints | **Version:** 4.32 | **Date:** 2026-02-22
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3301,6 +3301,13 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 | **1209** | **MIDDLE Positional Grammar** (atoms occupy ordered slots within MIDDLEs: INITIAL {a,q,e,o} 86-57% initial; MEDIAL {c,i,p,d,f,s}; TERMINAL {n,y,m,r,h,l} 71-99% terminal; FREE {k,t} no preference; n 99.4% terminal, a 86.3% initial; all 18 atoms FDR-significant; k/t position-freedom consistent with kernel operator role) | 2 | B, atoms, position, grammar | -> [C1209_middle_positional_grammar.md](C1209_middle_positional_grammar.md) |
 | **1210** | **MIDDLE Slot Syntax** (INITIAL and TERMINAL slots NOT independent: chi2=27,465, V=0.307, MI=1.071 bits; persists at length 4+ V=0.285; near-categorical forbidden combinations: a->y 0/796, e->n 1/813, k->n 0/135; n-terminal forbidden with all non-iteration INITIAL atoms; strong affinities follow C1207 clusters: k->e 7.94x, i->n 6.78x, d->y 3.18x) | 2 | B, atoms, syntax, slots | -> [C1210_middle_slot_syntax.md](C1210_middle_slot_syntax.md) |
 | **1211** | **Sub-MIDDLE Pairwise Sufficiency** (INITIAL+MEDIAL+TERMINAL show REDUNDANCY not synergy: synergy=-0.827 bits; extends C1003 to sub-MIDDLE level; INITIAL explains 35.9% of TERMINAL entropy, MEDIAL 49.1%, both together 57.5%; pairwise interactions sufficient at both morphological levels) | 2 | B, atoms, synergy, pairwise | -> [C1211_sub_middle_pairwise_sufficiency.md](C1211_sub_middle_pairwise_sufficiency.md) |
+
+### Cross-Token Chaining (C1212-C1213) -- Phase: CROSS_TOKEN_CHAINING (Phase 430)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1212** | **Cross-Token Sequential Chaining** (TERMINAL(N)->INITIAL(N+1) transitions show genuine sequential structure: chi2=1242.9, V=0.0709, MI=0.0637, shuffle z=19.74; enriched: h->p 2.61x, r->a 1.99x, y->q 1.91x; depleted: r->t 0.25x, r->l 0.30x; cross-token signal 23% of within-MIDDLE V, 6% of MI; cross-line NOT weaker: MI ratio=1.262; survives daiin exclusion z=16.13) | 2 | B, atoms, chaining, sequential | -> [C1212_cross_token_sequential_chaining.md](C1212_cross_token_sequential_chaining.md) |
+| **1213** | **Axis-Switching Dominance** (programs switch C1207 axes between tokens 84.8% of the time; same-axis continuation 15.2% vs expected 13.2%, enrichment only 1.15x; ITERATION->ITERATION highest same-axis at 33.2%; STABILITY dominant target from all axes; programs interleave across operational channels) | 2 | B, atoms, axes, switching, programs | -> [C1213_axis_switching_dominance.md](C1213_axis_switching_dominance.md) |
 
 ---
 
