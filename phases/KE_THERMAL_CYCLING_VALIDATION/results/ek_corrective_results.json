@@ -1,0 +1,27 @@
+{
+  "ke_total": 377,
+  "ek_total": 169,
+  "T1_predecessor": {
+    "ek_after_kch": 0.01775147928994083,
+    "ke_after_kch": 0.015915119363395226,
+    "ek_after_k_dom": 0.15384615384615385,
+    "ke_after_k_dom": 0.11405835543766578,
+    "ek_after_e_dom": 0.22485207100591717,
+    "ke_after_e_dom": 0.5490716180371353
+  },
+  "T2_successor": {
+    "ek_to_ke_rate": 0.006211180124223602,
+    "ke_to_ek_rate": 0.0024509803921568627,
+    "ke_baseline_rate": 0.018233700909266782,
+    "ek_baseline_rate": 0.008173727993809247
+  },
+  "T3_regime_section": {
+    "regime_p": 0.0,
+    "section_p": 0.0
+  },
+  "T4_within_line": {
+    "lines_with_both": 13,
+    "ke_before_ek": 9,
+    "ek_before_ke": 4
+  }
+}

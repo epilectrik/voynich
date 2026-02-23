@@ -2264,3 +2264,53 @@ Modern procedures redistribute action density from COLLECTION/DISTILLATION → M
 ### Verdict
 
 MODERN_CLOSER_TO_VOYNICH — Modern distillation is 2.3× closer to Voynich in entropy and halves the PC-count gap. The critical differentiator is MIDPROCESS: 34.5% of modern actions vs 0% Brunschwig, forming a dedicated monitoring/control PC (20.2% variance). This supports the interpretation that the Voynich system encodes process control knowledge similar to modern distillation practice, not recipe-level specification like Brunschwig.
+
+---
+
+## F-BRU-032: KE-Family Parametric Differentiation
+
+**Tier:** F2 (Structural Grammar Test)
+**Scope:** B
+**Result:** PARAMETRIC_DIFFERENTIATION
+**Supports:** C1225 (E-depth Suffix Parametricity), C1226 (ke/ek Ratio Process Conditioning)
+**Phase:** KE_THERMAL_CYCLING_VALIDATION (Phase 437)
+
+### Hypothesis
+
+If ke-family tokens (ke, ek, kee, eek, eke, keee+) encode graded operational parameters within the Brunschwig-aligned execution grammar, then: (a) e-depth should modulate output specification (suffix grammar), and (b) k-e ordering should be conditioned by process context (REGIME, section).
+
+### Findings
+
+**H1 PASS: E-depth restructures suffix grammar (p<0.0001)**
+- Single-e (n=590): 62.4% -edy, 13.6% -y, 0% -s
+- Multi-e (n=102): 11.8% -edy, 35.3% -y, 12.7% -s
+- Suffix -s is EXCLUSIVE to multi-e (new output category at deeper e-depth)
+- E-depth does NOT vary by REGIME (p=0.62) or section (p=0.067) — it is MIDDLE-internal
+
+**H2 PASS: ke/ek ratio is process-context-conditioned (p<0.0001 both)**
+- REGIME_1 (energy-intensive): 18.6% ek
+- REGIME_4 (precision): 64.0% ek
+- Section B (BIO): 19.7% ek
+- Section H (HERBAL): 79.1% ek
+- ke follows E-DOM predecessors 54.9% vs ek 22.5% (OR=4.20)
+
+**Informative null: ke-family does NOT route to CHSH lane**
+- PREFIX-controlled permutation test (10,000 shuffles): p=0.9996
+- ke routes to QO at 34.7% vs baseline 43.2% (opposite direction)
+- ke-family indistinguishable from general e-containing MIDDLEs at lane level (p=0.088)
+- Conclusion: ke-family differentiation operates at MIDDLE-internal level, not cross-token routing
+
+### Brunschwig alignment
+
+The ke/ek ratio mapping to process sensitivity is consistent with Brunschwig fire-degree differentiation:
+- Energy-intensive contexts (degree 1-2, robust materials) → ke-dominant (apply then equilibrate)
+- Precision contexts (degree 3-4, delicate materials) → ek-dominant (verify then apply)
+- F-BRU-013: ke 85% BIO/HERBAL matches gentle equilibration role
+- F-BRU-017: REGIME_4 elevated ke-family matches sustained equilibration
+
+### Files
+
+- `phases/KE_THERMAL_CYCLING_VALIDATION/scripts/ke_thermal_test.py`
+- `phases/KE_THERMAL_CYCLING_VALIDATION/scripts/ek_corrective_test.py`
+- `phases/KE_THERMAL_CYCLING_VALIDATION/results/ke_thermal_results.json`
+- `phases/KE_THERMAL_CYCLING_VALIDATION/results/ek_corrective_results.json`

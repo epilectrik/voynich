@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1068 validated constraints | **Version:** 4.40 | **Date:** 2026-02-22
+**Total:** 1070 validated constraints | **Version:** 4.41 | **Date:** 2026-02-22
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3353,6 +3353,13 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 | # | Description | Tier | Tags | Location |
 |---|-------------|------|------|----------|
 | **1224** | **Axis Distribution Transformation** (CORRECTED to paragraph-level: 479 paragraphs and 35 plants have same dimensionality 4 PCs, entropy 2.451 vs 2.369 bits, PC alignment NS p=0.30; Voynich inflates ITERATION 7.0x, CLOSURE 1.3x while deflating FREE 6.3x, MONITORING 2.3x; ITERATION inflation stable across units 25.1% par vs 25.2% folio confirming real transformation; encodes control program structure not direct distillation profiles; REGIME_1 captures 82% of ROOT-matching paragraphs; category adds 13.9% beyond section, up from 8.1% at folio level) | 2 | B, plants, PCA, axes, transformation, control program, paragraphs | -> [C1224_axis_distribution_transformation.md](C1224_axis_distribution_transformation.md) |
+
+### KE Thermal Cycling Validation (C1225-C1226) -- Phase: KE_THERMAL_CYCLING_VALIDATION (Phase 437)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1225** | **E-depth Suffix Parametricity** (ke-family e-count restructures suffix grammar: single-e 64% -edy/14% -y vs multi-e 12% -edy/37% -y, chi-squared p<0.0001; -s suffix exclusive to multi-e; e-depth is parametric axis modulating output specification not noise; e-depth does NOT vary by REGIME p=0.62 or section p=0.067) | 2 | B, ke-family, e-depth, suffix, parametric, MIDDLE | -> [C1225_edepth_suffix_parametricity.md](C1225_edepth_suffix_parametricity.md) |
+| **1226** | **ke/ek Ratio Process-Context Conditioning** (k-e ordering conditioned by REGIME chi²=77.71 p<0.0001 and section chi²=138.50 p<0.0001; REGIME_1 18.6% ek vs REGIME_4 64.0% ek; HERBAL 79.1% ek vs BIO 19.7% ek; ke follows E-DOM predecessors 54.9% vs ek 22.5% OR=4.20; process-sensitivity marker; ke-family routes to QO not CHSH permutation p=0.9996 informative null) | 2 | B, ke-family, ek, REGIME, section, process-sensitivity, MIDDLE | -> [C1226_ke_ek_ratio_process_conditioning.md](C1226_ke_ek_ratio_process_conditioning.md) |
 
 ---
 
