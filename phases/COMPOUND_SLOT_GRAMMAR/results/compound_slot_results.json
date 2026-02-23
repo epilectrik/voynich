@@ -1,0 +1,246 @@
+{
+  "T1_compliance": {
+    "n_atomic": 8335,
+    "n_compound": 7818,
+    "atomic_v": 0.4164,
+    "atomic_mi": 1.4404,
+    "compound_v": 0.3287,
+    "compound_mi": 1.0899,
+    "forbidden_pairs": {
+      "a->y": {
+        "atomic_obs": 0,
+        "atomic_total": 1593,
+        "atomic_rate": 0.0,
+        "compound_obs": 1,
+        "compound_total": 1422,
+        "compound_rate": 0.0007
+      },
+      "e->n": {
+        "atomic_obs": 0,
+        "atomic_total": 2163,
+        "atomic_rate": 0.0,
+        "compound_obs": 1,
+        "compound_total": 3972,
+        "compound_rate": 0.00025
+      },
+      "k->n": {
+        "atomic_obs": 0,
+        "atomic_total": 542,
+        "atomic_rate": 0.0,
+        "compound_obs": 0,
+        "compound_total": 475,
+        "compound_rate": 0.0
+      }
+    }
+  },
+  "T2_junction_grammar": {
+    "n_compound_tiled": 7818,
+    "n_multi_tile": 7818,
+    "n_junctions": 8763,
+    "n_within": 10000,
+    "junction_v": 0.4154,
+    "junction_mi": 1.6363,
+    "within_v": 0.6038,
+    "within_mi": 1.6591,
+    "enriched": [
+      {
+        "pair": "c->h",
+        "obs": 380,
+        "exp": 32.5,
+        "ratio": 11.71
+      },
+      {
+        "pair": "l->k",
+        "obs": 69,
+        "exp": 6.1,
+        "ratio": 11.33
+      },
+      {
+        "pair": "o->l",
+        "obs": 343,
+        "exp": 37.6,
+        "ratio": 9.12
+      },
+      {
+        "pair": "h->e",
+        "obs": 167,
+        "exp": 19.7,
+        "ratio": 8.47
+      },
+      {
+        "pair": "q->e",
+        "obs": 42,
+        "exp": 5.0,
+        "ratio": 8.41
+      },
+      {
+        "pair": "r->a",
+        "obs": 38,
+        "exp": 4.6,
+        "ratio": 8.28
+      },
+      {
+        "pair": "p->c",
+        "obs": 121,
+        "exp": 14.9,
+        "ratio": 8.14
+      },
+      {
+        "pair": "s->h",
+        "obs": 81,
+        "exp": 10.0,
+        "ratio": 8.12
+      },
+      {
+        "pair": "r->o",
+        "obs": 52,
+        "exp": 6.5,
+        "ratio": 7.99
+      },
+      {
+        "pair": "l->s",
+        "obs": 29,
+        "exp": 4.7,
+        "ratio": 6.11
+      },
+      {
+        "pair": "p->a",
+        "obs": 48,
+        "exp": 7.9,
+        "ratio": 6.07
+      },
+      {
+        "pair": "k->h",
+        "obs": 164,
+        "exp": 28.0,
+        "ratio": 5.86
+      },
+      {
+        "pair": "a->i",
+        "obs": 37,
+        "exp": 6.5,
+        "ratio": 5.67
+      },
+      {
+        "pair": "t->h",
+        "obs": 65,
+        "exp": 12.0,
+        "ratio": 5.41
+      },
+      {
+        "pair": "a->l",
+        "obs": 17,
+        "exp": 3.7,
+        "ratio": 4.65
+      }
+    ],
+    "depleted": [
+      {
+        "pair": "a->h",
+        "obs": 0,
+        "exp": 6.7,
+        "ratio": 0.0
+      },
+      {
+        "pair": "a->n",
+        "obs": 0,
+        "exp": 11.7,
+        "ratio": 0.0
+      },
+      {
+        "pair": "a->y",
+        "obs": 0,
+        "exp": 24.4,
+        "ratio": 0.0
+      },
+      {
+        "pair": "c->a",
+        "obs": 0,
+        "exp": 15.3,
+        "ratio": 0.0
+      },
+      {
+        "pair": "c->c",
+        "obs": 0,
+        "exp": 28.7,
+        "ratio": 0.0
+      },
+      {
+        "pair": "c->d",
+        "obs": 0,
+        "exp": 18.2,
+        "ratio": 0.0
+      },
+      {
+        "pair": "c->e",
+        "obs": 0,
+        "exp": 25.0,
+        "ratio": 0.0
+      },
+      {
+        "pair": "c->i",
+        "obs": 0,
+        "exp": 31.8,
+        "ratio": 0.0
+      },
+      {
+        "pair": "c->k",
+        "obs": 0,
+        "exp": 10.5,
+        "ratio": 0.0
+      },
+      {
+        "pair": "c->l",
+        "obs": 0,
+        "exp": 17.8,
+        "ratio": 0.0
+      },
+      {
+        "pair": "c->n",
+        "obs": 0,
+        "exp": 57.2,
+        "ratio": 0.0
+      },
+      {
+        "pair": "c->t",
+        "obs": 0,
+        "exp": 5.0,
+        "ratio": 0.0
+      },
+      {
+        "pair": "c->y",
+        "obs": 0,
+        "exp": 119.2,
+        "ratio": 0.0
+      },
+      {
+        "pair": "d->f",
+        "obs": 0,
+        "exp": 13.6,
+        "ratio": 0.0
+      },
+      {
+        "pair": "d->h",
+        "obs": 0,
+        "exp": 175.2,
+        "ratio": 0.0
+      }
+    ],
+    "tile_distribution": {
+      "2": 7118,
+      "4": 129,
+      "6": 12,
+      "3": 520,
+      "5": 38,
+      "7": 1
+    }
+  },
+  "T3_junction_vs_cross_token": {
+    "n_common_pairs": 116,
+    "correlation_r": 0.0894,
+    "junction_mean_ratio": 1.18,
+    "cross_token_mean_ratio": 0.994,
+    "both_enriched": 7,
+    "both_depleted": 14
+  }
+}

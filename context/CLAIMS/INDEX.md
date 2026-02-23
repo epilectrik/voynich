@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1058 validated constraints | **Version:** 4.33 | **Date:** 2026-02-22
+**Total:** 1060 validated constraints | **Version:** 4.34 | **Date:** 2026-02-22
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3314,6 +3314,13 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 | # | Description | Tier | Tags | Location |
 |---|-------------|------|------|----------|
 | **1214** | **Line Compositional Homogeneity** (lines mildly more homogeneous than within-folio shuffled: z=-7.0, 3.8% entropy reduction; all slots equal INITIAL z=-8.1, MEDIAL z=-7.0, TERMINAL z=-8.2; PC1 36.2% CLOSURE vs ITERATION; section explains only 12.6% of PC1; no position gradient; explains C1212 MEDIAL co-occurrence as whole-token tuning; survives daiin exclusion z=-6.78) | 2 | B, lines, homogeneity, composition | -> [C1214_line_compositional_homogeneity.md](C1214_line_compositional_homogeneity.md) |
+
+### Compound Slot Grammar (C1215-C1216) -- Phase: COMPOUND_SLOT_GRAMMAR (Phase 432)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1215** | **Compound MIDDLE Slot Compliance** (compound MIDDLEs obey C1210 forbidden combinations: a->y 1/1422, e->n 1/3972, k->n 0/475; compound slot syntax weaker V=0.329 vs atomic V=0.416 reflecting greater INITIAL->TERMINAL diversity; forbidden rules are scale-invariant) | 2 | B, compounds, slots, compliance | -> [C1215_compound_slot_compliance.md](C1215_compound_slot_compliance.md) |
+| **1216** | **Compound Junction Grammar** (junctions between embedded atoms within compounds show V=0.415, MI=1.636 bits -- 6x stronger than cross-token V=0.071; junction grammar recreates PREFIX bigrams c->h 11.7x, o->l 9.1x, s->h 8.1x as internal routing; DIFFERENT from cross-token grammar r=0.089; C1210 forbidden pairs strictly zero at junctions; 91% of compounds are 2-tile) | 2 | B, compounds, junctions, grammar, routing | -> [C1216_compound_junction_grammar.md](C1216_compound_junction_grammar.md) |
 
 ---
 
