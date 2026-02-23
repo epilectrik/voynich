@@ -1,0 +1,209 @@
+{
+  "brunschwig": {
+    "label": "Brunschwig",
+    "n_recipes": 228,
+    "n_features": 7,
+    "active_dimensions": 5,
+    "n_for_80": 3,
+    "n_for_90": 4,
+    "entropy": 1.908,
+    "explained_variance": [
+      0.3873,
+      0.2686,
+      0.1974,
+      0.1467,
+      0.0,
+      0.0,
+      0.0
+    ],
+    "cumulative_variance": [
+      0.3873,
+      0.6559,
+      0.8533,
+      1.0,
+      1.0,
+      1.0,
+      1.0
+    ],
+    "pc_loadings": {
+      "PC1": {
+        "COLLECTION": -0.641,
+        "PREPARATION": 0.675,
+        "PRETREATMENT": 0.024,
+        "DISTILLATION": -0.347,
+        "MIDPROCESS": -0.0,
+        "POSTPROCESS": 0.11,
+        "STORAGE": -0.0
+      },
+      "PC2": {
+        "COLLECTION": 0.151,
+        "PREPARATION": -0.237,
+        "PRETREATMENT": 0.61,
+        "DISTILLATION": -0.535,
+        "MIDPROCESS": -0.0,
+        "POSTPROCESS": 0.513,
+        "STORAGE": -0.0
+      },
+      "PC3": {
+        "COLLECTION": -0.233,
+        "PREPARATION": -0.196,
+        "PRETREATMENT": -0.451,
+        "DISTILLATION": 0.27,
+        "MIDPROCESS": 0.0,
+        "POSTPROCESS": 0.795,
+        "STORAGE": 0.0
+      },
+      "PC4": {
+        "COLLECTION": -0.403,
+        "PREPARATION": -0.072,
+        "PRETREATMENT": 0.639,
+        "DISTILLATION": 0.651,
+        "MIDPROCESS": 0.0,
+        "POSTPROCESS": 0.005,
+        "STORAGE": 0.0
+      },
+      "PC5": {
+        "COLLECTION": 0.591,
+        "PREPARATION": 0.667,
+        "PRETREATMENT": 0.129,
+        "DISTILLATION": 0.311,
+        "MIDPROCESS": -0.0,
+        "POSTPROCESS": 0.305,
+        "STORAGE": 0.0
+      }
+    },
+    "midprocess_stats": {
+      "phase_mean": 0.0,
+      "phase_std": 0.0,
+      "phase_max": 0.0,
+      "phase_min": 0.0,
+      "max_pc_loading": 0.0,
+      "max_pc_loading_on": "none"
+    },
+    "phase_means": {
+      "COLLECTION": 0.2947,
+      "PREPARATION": 0.2517,
+      "PRETREATMENT": 0.0066,
+      "DISTILLATION": 0.4254,
+      "MIDPROCESS": 0.0,
+      "POSTPROCESS": 0.0216,
+      "STORAGE": 0.0
+    }
+  },
+  "modern": {
+    "label": "Modern",
+    "n_recipes": 20,
+    "n_features": 7,
+    "active_dimensions": 7,
+    "n_for_80": 4,
+    "n_for_90": 5,
+    "entropy": 2.334,
+    "explained_variance": [
+      0.357,
+      0.2018,
+      0.1615,
+      0.1273,
+      0.1165,
+      0.036,
+      0.0
+    ],
+    "cumulative_variance": [
+      0.357,
+      0.5588,
+      0.7202,
+      0.8475,
+      0.964,
+      1.0,
+      1.0
+    ],
+    "pc_loadings": {
+      "PC1": {
+        "COLLECTION": -0.35,
+        "PREPARATION": 0.522,
+        "PRETREATMENT": -0.063,
+        "DISTILLATION": 0.174,
+        "MIDPROCESS": -0.347,
+        "POSTPROCESS": 0.435,
+        "STORAGE": -0.511
+      },
+      "PC2": {
+        "COLLECTION": -0.572,
+        "PREPARATION": -0.311,
+        "PRETREATMENT": -0.243,
+        "DISTILLATION": -0.095,
+        "MIDPROCESS": 0.653,
+        "POSTPROCESS": 0.214,
+        "STORAGE": -0.19
+      },
+      "PC3": {
+        "COLLECTION": -0.318,
+        "PREPARATION": -0.01,
+        "PRETREATMENT": 0.737,
+        "DISTILLATION": -0.575,
+        "MIDPROCESS": -0.103,
+        "POSTPROCESS": 0.094,
+        "STORAGE": 0.071
+      },
+      "PC4": {
+        "COLLECTION": -0.156,
+        "PREPARATION": -0.28,
+        "PRETREATMENT": 0.544,
+        "DISTILLATION": 0.773,
+        "MIDPROCESS": 0.042,
+        "POSTPROCESS": -0.027,
+        "STORAGE": -0.036
+      },
+      "PC5": {
+        "COLLECTION": -0.013,
+        "PREPARATION": -0.337,
+        "PRETREATMENT": -0.155,
+        "DISTILLATION": 0.049,
+        "MIDPROCESS": -0.306,
+        "POSTPROCESS": 0.71,
+        "STORAGE": 0.513
+      },
+      "PC6": {
+        "COLLECTION": 0.619,
+        "PREPARATION": -0.275,
+        "PRETREATMENT": 0.189,
+        "DISTILLATION": -0.128,
+        "MIDPROCESS": 0.172,
+        "POSTPROCESS": 0.401,
+        "STORAGE": -0.547
+      }
+    },
+    "midprocess_stats": {
+      "phase_mean": 0.3453,
+      "phase_std": 0.072,
+      "phase_max": 0.5,
+      "phase_min": 0.2667,
+      "max_pc_loading": 0.653,
+      "max_pc_loading_on": "PC2"
+    },
+    "phase_means": {
+      "COLLECTION": 0.0736,
+      "PREPARATION": 0.2264,
+      "PRETREATMENT": 0.0104,
+      "DISTILLATION": 0.1439,
+      "MIDPROCESS": 0.3453,
+      "POSTPROCESS": 0.1248,
+      "STORAGE": 0.0757
+    }
+  },
+  "voynich_reference": {
+    "n_for_80": 5,
+    "n_for_90": 6,
+    "entropy": 2.66,
+    "active_dimensions": 10
+  },
+  "comparison": {
+    "entropy_distance_brunschwig": 0.7520000000000002,
+    "entropy_distance_modern": 0.32600000000000007,
+    "modern_closer": true,
+    "n_for_80_brunschwig": 3,
+    "n_for_80_modern": 4,
+    "n_for_80_voynich": 5,
+    "midprocess_mean_brunschwig": 0.0,
+    "midprocess_mean_modern": 0.3453
+  }
+}

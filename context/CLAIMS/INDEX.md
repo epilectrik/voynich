@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1065 validated constraints | **Version:** 4.36 | **Date:** 2026-02-22
+**Total:** 1066 validated constraints | **Version:** 4.37 | **Date:** 2026-02-22
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3336,6 +3336,14 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 | **1219** | **Base Character Determines MIDDLE Content** (final character of PREFIX predicts MIDDLE atom profile: within-base cosine 0.950 vs between-base 0.515, ratio 1.84; a-base=80% ITERATION, o-base=42% ENERGY, h-base=32% STABILITY+31% CLOSURE, e-base=53% CLOSURE; base defines operational domain, modifier selects variant) | 2 | B, PREFIX, atoms, base, MIDDLE | -> [C1219_base_character_determines_middle_content.md](C1219_base_character_determines_middle_content.md) |
 | **1220** | **PREFIX Modifier Consistency Varies by Character** (cross-base modifier consistency ranges from high o=0.836, l=0.794, a=0.756 to low d=0.345, s=0.368, c=0.380; compositionality is partial and modifier-specific; consistent modifiers are genuine compositional elements, base-dependent modifiers function more as allomorphs) | 2 | B, PREFIX, atoms, modifier, compositionality | -> [C1220_modifier_consistency_varies.md](C1220_modifier_consistency_varies.md) |
 | **1221** | **Prep PREFIX Similarity is Base-Driven** (prep PREFIXes pch,tch,dch,te,lch have mean cosine 0.963 but shuffle test p=0.998 shows not special; similarity from shared h-base; challenges F-BRU-012 distinct operation glosses; prep PREFIXes are h-base mode variants not independent action verbs) | 2 | B, PREFIX, prep, Brunschwig, base | -> [C1221_prep_prefix_similarity_base_driven.md](C1221_prep_prefix_similarity_base_driven.md) |
+
+---
+
+### Modern Distillation Dimensional Comparison (C1222) -- Phase: MODERN_DISTILLATION_DIMENSIONAL_COMPARISON (Phase 435)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1222** | **Modern Distillation Dimensionality Closer to Voynich** (modern distillation 4 PCs for 80% vs Brunschwig 3, Voynich 5; entropy 2.334 bits 2.3× closer to Voynich; MIDPROCESS 34.5% of modern actions forming PC2 at 20.2% variance vs Brunschwig 0%; 7 active dimensions vs 5; process control vs recipe specification) | 2 | B, Brunschwig, modern, PCA, MIDPROCESS, dimensional | -> [C1222_modern_distillation_closer_to_voynich.md](C1222_modern_distillation_closer_to_voynich.md) |
 
 ---
 
