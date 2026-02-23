@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1066 validated constraints | **Version:** 4.37 | **Date:** 2026-02-22
+**Total:** 1067 validated constraints | **Version:** 4.38 | **Date:** 2026-02-22
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3344,6 +3344,7 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 | # | Description | Tier | Tags | Location |
 |---|-------------|------|------|----------|
 | **1222** | **Modern Distillation Dimensionality Closer to Voynich** (modern distillation 4 PCs for 80% vs Brunschwig 3, Voynich 5; entropy 2.334 bits 2.3× closer to Voynich; MIDPROCESS 34.5% of modern actions forming PC2 at 20.2% variance vs Brunschwig 0%; 7 active dimensions vs 5; process control vs recipe specification) | 2 | B, Brunschwig, modern, PCA, MIDPROCESS, dimensional | -> [C1222_modern_distillation_closer_to_voynich.md](C1222_modern_distillation_closer_to_voynich.md) |
+| **1223** | **MIDPROCESS Sub-Type Split Matches Voynich Dimensionality** (splitting MIDPROCESS into 5 Voynich-aligned sub-types MONITORING/ENERGY/STABILITY/CLOSURE/STRUCTURAL increases modern distillation from 4 to 5 PCs for 80%, exactly matching Voynich; entropy 2.921 bits; 11 active dimensions vs Voynich 10; remaining gap from C1222 fully explained by material-specific process control parameterization) | 2 | B, modern, PCA, MIDPROCESS, dimensional, axes | -> [C1223_midprocess_subtype_dimensionality_match.md](C1223_midprocess_subtype_dimensionality_match.md) |
 
 ---
 
