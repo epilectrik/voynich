@@ -1,0 +1,226 @@
+{
+  "title": "Plant Distillation Profiles for Folio Matching",
+  "version": "1.0",
+  "date": "2026-02-22",
+  "axis_definitions": {
+    "ENERGY": "Heat intensity required (0=cold/gentle, 5=sustained high heat)",
+    "STABILITY": "Temperature control sensitivity (0=robust, 5=heat-destroys-product)",
+    "MONITORING": "Visual/thermal monitoring frequency (0=set-and-forget, 5=constant attention)",
+    "ITERATION": "Distillation passes, cohobation, redistillation (0=single pass, 5=many cycles)",
+    "CLOSURE": "Endpoint detection complexity (0=obvious, 5=multiple fraction cuts)",
+    "STRUCTURAL": "Apparatus complexity, physical intervention (0=basic pot, 5=sealed retort/vacuum)",
+    "FREE": "Timing/pacing flexibility (0=rigid timing, 5=very flexible)"
+  },
+  "plants": [
+    {
+      "name": "lavender", "latin": "Lavandula angustifolia", "category": "FLOWER",
+      "method": "steam", "duration": "SHORT",
+      "scores": {"ENERGY": 2, "STABILITY": 2, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 1, "FREE": 3},
+      "rationale": "Standard steam distillation, moderate temp, single pass, obvious endpoint."
+    },
+    {
+      "name": "rose", "latin": "Rosa damascena", "category": "FLOWER",
+      "method": "hydrodistillation_cohobation", "duration": "MEDIUM",
+      "scores": {"ENERGY": 3, "STABILITY": 3, "MONITORING": 3, "ITERATION": 5, "CLOSURE": 4, "STRUCTURAL": 2, "FREE": 2},
+      "rationale": "Cohobation mandatory (75% oil in distillate water). Multiple redistillation passes, careful fraction collection."
+    },
+    {
+      "name": "chamomile", "latin": "Matricaria chamomilla", "category": "FLOWER",
+      "method": "steam", "duration": "MEDIUM",
+      "scores": {"ENERGY": 2, "STABILITY": 3, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 1, "FREE": 2},
+      "rationale": "Temperature-sensitive azulene compounds. Standard steam but needs thermal care."
+    },
+    {
+      "name": "ylang_ylang", "latin": "Cananga odorata", "category": "FLOWER",
+      "method": "hydrodistillation_fractional", "duration": "LONG",
+      "scores": {"ENERGY": 3, "STABILITY": 3, "MONITORING": 5, "ITERATION": 3, "CLOSURE": 5, "STRUCTURAL": 2, "FREE": 1},
+      "rationale": "20+ hours, 5 commercial grades (Extra/I/II/III/Complete). Florentine vessel changed every 15 min. Most complex endpoint management."
+    },
+    {
+      "name": "jasmine", "latin": "Jasminum grandiflorum", "category": "FLOWER",
+      "method": "solvent_extraction", "duration": "VERY_LONG",
+      "scores": {"ENERGY": 1, "STABILITY": 5, "MONITORING": 3, "ITERATION": 3, "CLOSURE": 3, "STRUCTURAL": 4, "FREE": 2},
+      "rationale": "Heat-destroyed; requires solvent extraction or enfleurage. Specialized apparatus, multiple washes."
+    },
+    {
+      "name": "neroli", "latin": "Citrus aurantium", "category": "FLOWER",
+      "method": "steam", "duration": "MEDIUM",
+      "scores": {"ENERGY": 2, "STABILITY": 3, "MONITORING": 3, "ITERATION": 2, "CLOSURE": 3, "STRUCTURAL": 2, "FREE": 2},
+      "rationale": "Delicate orange blossom. Good yield but temperature-sensitive linalool/linalyl acetate."
+    },
+    {
+      "name": "violet", "latin": "Viola odorata", "category": "FLOWER",
+      "method": "solvent_extraction", "duration": "VERY_LONG",
+      "scores": {"ENERGY": 1, "STABILITY": 5, "MONITORING": 3, "ITERATION": 3, "CLOSURE": 3, "STRUCTURAL": 4, "FREE": 2},
+      "rationale": "Like jasmine, heat-destroyed. Solvent extraction/enfleurage only. Very low yield."
+    },
+    {
+      "name": "helichrysum", "latin": "Helichrysum italicum", "category": "FLOWER",
+      "method": "steam", "duration": "SHORT",
+      "scores": {"ENERGY": 2, "STABILITY": 2, "MONITORING": 3, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 1, "FREE": 3},
+      "rationale": "Standard steam, robust plant material. Monitoring needed for optimal chemical profile."
+    },
+    {
+      "name": "peppermint", "latin": "Mentha piperita", "category": "LEAF",
+      "method": "steam", "duration": "SHORT",
+      "scores": {"ENERGY": 1, "STABILITY": 1, "MONITORING": 1, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 0, "FREE": 5},
+      "rationale": "Simplest common distillation. High yield, robust, fast, minimal apparatus. Very flexible timing."
+    },
+    {
+      "name": "rosemary", "latin": "Rosmarinus officinalis", "category": "LEAF",
+      "method": "steam", "duration": "MEDIUM",
+      "scores": {"ENERGY": 2, "STABILITY": 2, "MONITORING": 3, "ITERATION": 1, "CLOSURE": 3, "STRUCTURAL": 3, "FREE": 3},
+      "rationale": "Standard steam but often vacuum-fractional for chemotype separation. Multiple quality grades."
+    },
+    {
+      "name": "thyme", "latin": "Thymus vulgaris", "category": "LEAF",
+      "method": "steam", "duration": "SHORT",
+      "scores": {"ENERGY": 2, "STABILITY": 3, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 1, "FREE": 2},
+      "rationale": "Temperature-sensitive thymol/carvacrol ratio. Standard steam, single pass."
+    },
+    {
+      "name": "sage", "latin": "Salvia officinalis", "category": "LEAF",
+      "method": "steam", "duration": "SHORT",
+      "scores": {"ENERGY": 2, "STABILITY": 2, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 1, "FREE": 3},
+      "rationale": "Standard steam distillation. Robust, good yield, straightforward."
+    },
+    {
+      "name": "basil", "latin": "Ocimum basilicum", "category": "LEAF",
+      "method": "steam", "duration": "MEDIUM",
+      "scores": {"ENERGY": 2, "STABILITY": 2, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 1, "FREE": 3},
+      "rationale": "Standard steam or hydrodistillation. Moderate difficulty, good yield."
+    },
+    {
+      "name": "lemongrass", "latin": "Cymbopogon citratus", "category": "LEAF",
+      "method": "hydrodistillation", "duration": "MEDIUM",
+      "scores": {"ENERGY": 2, "STABILITY": 2, "MONITORING": 3, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 2, "FREE": 2},
+      "rationale": "Channeling risk in packed bed. PLC monitoring recommended. Moderate complexity."
+    },
+    {
+      "name": "melissa", "latin": "Melissa officinalis", "category": "LEAF",
+      "method": "hydrodistillation", "duration": "LONG",
+      "scores": {"ENERGY": 2, "STABILITY": 3, "MONITORING": 3, "ITERATION": 1, "CLOSURE": 3, "STRUCTURAL": 1, "FREE": 1},
+      "rationale": "Extremely low yield (0.01-0.02%). Long distillation, temperature-sensitive citral. Often requires redistillation."
+    },
+    {
+      "name": "bay_laurel", "latin": "Laurus nobilis", "category": "LEAF",
+      "method": "steam", "duration": "MEDIUM",
+      "scores": {"ENERGY": 2, "STABILITY": 2, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 1, "FREE": 3},
+      "rationale": "Standard steam distillation of dried leaves. Moderate difficulty."
+    },
+    {
+      "name": "vetiver", "latin": "Vetiveria zizanioides", "category": "ROOT",
+      "method": "steam", "duration": "VERY_LONG",
+      "scores": {"ENERGY": 4, "STABILITY": 3, "MONITORING": 3, "ITERATION": 1, "CLOSURE": 2, "STRUCTURAL": 2, "FREE": 1},
+      "rationale": "14-36h continuous steam at high pressure. Dense root mass needs sustained energy. Temperature-critical for sesquiterpene quality."
+    },
+    {
+      "name": "valerian", "latin": "Valeriana officinalis", "category": "ROOT",
+      "method": "steam", "duration": "LONG",
+      "scores": {"ENERGY": 3, "STABILITY": 2, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 1, "FREE": 2},
+      "rationale": "Root distillation requires more energy than leaf/flower. Standard steam, moderate difficulty."
+    },
+    {
+      "name": "angelica_root", "latin": "Angelica archangelica", "category": "ROOT",
+      "method": "steam", "duration": "LONG",
+      "scores": {"ENERGY": 3, "STABILITY": 2, "MONITORING": 3, "ITERATION": 0, "CLOSURE": 3, "STRUCTURAL": 1, "FREE": 2},
+      "rationale": "Dense root, long distillation. Multiple chemical fractions of interest. Careful monitoring."
+    },
+    {
+      "name": "orris", "latin": "Iris germanica", "category": "ROOT",
+      "method": "steam", "duration": "VERY_LONG",
+      "scores": {"ENERGY": 3, "STABILITY": 3, "MONITORING": 3, "ITERATION": 2, "CLOSURE": 3, "STRUCTURAL": 4, "FREE": 0},
+      "rationale": "3-6 years root aging required before extraction. Extremely rigid protocol. Low yield, specialized process."
+    },
+    {
+      "name": "cinnamon_bark", "latin": "Cinnamomum verum", "category": "BARK",
+      "method": "water_steam", "duration": "LONG",
+      "scores": {"ENERGY": 3, "STABILITY": 2, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 1, "FREE": 2},
+      "rationale": "Bark needs water-steam method. Moderate energy for woody material. Straightforward endpoint."
+    },
+    {
+      "name": "cassia", "latin": "Cinnamomum cassia", "category": "BARK",
+      "method": "steam", "duration": "SHORT",
+      "scores": {"ENERGY": 3, "STABILITY": 1, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 1, "FREE": 3},
+      "rationale": "Higher yield than true cinnamon, more robust. Standard steam, less temperature-sensitive."
+    },
+    {
+      "name": "birch_bark", "latin": "Betula pendula", "category": "BARK",
+      "method": "dry_distillation", "duration": "LONG",
+      "scores": {"ENERGY": 5, "STABILITY": 4, "MONITORING": 4, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 5, "FREE": 1},
+      "rationale": "Dry distillation (pyrolysis) at 340-420C in sealed oxygen-depleted retort. Extreme energy, specialized sealed apparatus."
+    },
+    {
+      "name": "frankincense", "latin": "Boswellia sacra", "category": "RESIN",
+      "method": "steam", "duration": "LONG",
+      "scores": {"ENERGY": 3, "STABILITY": 2, "MONITORING": 3, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 2, "FREE": 2},
+      "rationale": "Resin requires crushing and long steam exposure. Monitoring needed to avoid overheating terpenes."
+    },
+    {
+      "name": "myrrh", "latin": "Commiphora myrrha", "category": "RESIN",
+      "method": "steam", "duration": "LONG",
+      "scores": {"ENERGY": 3, "STABILITY": 2, "MONITORING": 3, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 2, "FREE": 2},
+      "rationale": "Similar to frankincense. Resin needs sustained steam. Careful thermal management."
+    },
+    {
+      "name": "mastic", "latin": "Pistacia lentiscus", "category": "RESIN",
+      "method": "steam", "duration": "MEDIUM",
+      "scores": {"ENERGY": 3, "STABILITY": 2, "MONITORING": 3, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 3, "FREE": 2},
+      "rationale": "May require superheated steam. Specialized apparatus for resin processing."
+    },
+    {
+      "name": "anise", "latin": "Pimpinella anisum", "category": "SEED",
+      "method": "steam", "duration": "MEDIUM",
+      "scores": {"ENERGY": 2, "STABILITY": 1, "MONITORING": 1, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 1, "FREE": 3},
+      "rationale": "Robust seed distillation. High anethole yield, straightforward process."
+    },
+    {
+      "name": "fennel", "latin": "Foeniculum vulgare", "category": "SEED",
+      "method": "steam", "duration": "LONG",
+      "scores": {"ENERGY": 2, "STABILITY": 1, "MONITORING": 1, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 1, "FREE": 3},
+      "rationale": "Very similar to anise. Seed distillation, straightforward. Longer duration for full extraction."
+    },
+    {
+      "name": "coriander", "latin": "Coriandrum sativum", "category": "SEED",
+      "method": "steam", "duration": "MEDIUM",
+      "scores": {"ENERGY": 2, "STABILITY": 2, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 1, "FREE": 3},
+      "rationale": "Seed crushing needed. Moderate temperature sensitivity for linalool preservation."
+    },
+    {
+      "name": "orange_peel", "latin": "Citrus sinensis", "category": "FRUIT",
+      "method": "cold_press_or_steam", "duration": "SHORT",
+      "scores": {"ENERGY": 1, "STABILITY": 2, "MONITORING": 3, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 1, "FREE": 4},
+      "rationale": "Cold pressing preferred (no heat). If steam distilled, careful monitoring of limonene degradation."
+    },
+    {
+      "name": "lemon_peel", "latin": "Citrus limon", "category": "FRUIT",
+      "method": "cold_press", "duration": "SHORT",
+      "scores": {"ENERGY": 0, "STABILITY": 1, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 0, "FREE": 5},
+      "rationale": "Almost always cold-pressed. Zero heat, simplest apparatus, very flexible timing."
+    },
+    {
+      "name": "juniper_berry", "latin": "Juniperus communis", "category": "FRUIT",
+      "method": "steam", "duration": "MEDIUM",
+      "scores": {"ENERGY": 2, "STABILITY": 1, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 1, "FREE": 3},
+      "rationale": "Berry crushing required. Standard steam, moderate complexity."
+    },
+    {
+      "name": "sandalwood", "latin": "Santalum album", "category": "WOOD",
+      "method": "steam", "duration": "VERY_LONG",
+      "scores": {"ENERGY": 5, "STABILITY": 2, "MONITORING": 3, "ITERATION": 2, "CLOSURE": 2, "STRUCTURAL": 2, "FREE": 0},
+      "rationale": "14-72h continuous high-pressure steam. Highest energy demand. Absolutely rigid timing. Heartwood must be soaked and finely ground."
+    },
+    {
+      "name": "cedarwood", "latin": "Cedrus atlantica", "category": "WOOD",
+      "method": "steam", "duration": "LONG",
+      "scores": {"ENERGY": 4, "STABILITY": 1, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 1, "FREE": 2},
+      "rationale": "Dense wood needs sustained high energy. Robust — tolerant of temperature variation. Simple endpoint."
+    },
+    {
+      "name": "rosewood", "latin": "Aniba rosaeodora", "category": "WOOD",
+      "method": "steam", "duration": "VERY_LONG",
+      "scores": {"ENERGY": 4, "STABILITY": 2, "MONITORING": 3, "ITERATION": 1, "CLOSURE": 2, "STRUCTURAL": 2, "FREE": 1},
+      "rationale": "Dense tropical hardwood. Long high-energy steam. Linalool-sensitive requires some thermal care."
+    }
+  ]
+}

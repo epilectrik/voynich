@@ -1,0 +1,417 @@
+{
+  "title": "Distillation Operational Profiles for 35 Aromatic Plants",
+  "version": "1.0",
+  "date": "2026-02-22",
+  "axes": {
+    "ENERGY":     {"range": [0,5], "description": "Heat intensity required. 0=gentle/low temp, 5=very high temp or sustained high energy"},
+    "STABILITY":  {"range": [0,5], "description": "Temperature control sensitivity. 0=robust/forgiving, 5=extremely temperature-sensitive"},
+    "MONITORING": {"range": [0,5], "description": "Visual/thermal monitoring demand. 0=set and forget, 5=constant attention required"},
+    "ITERATION":  {"range": [0,5], "description": "Number of passes, cohobation, redistillation. 0=single pass, 5=many redistillation cycles"},
+    "CLOSURE":    {"range": [0,5], "description": "Endpoint detection complexity. 0=obvious endpoint, 5=complex fractional collection, multiple cut points"},
+    "STRUCTURAL": {"range": [0,5], "description": "Apparatus complexity and physical intervention. 0=basic pot still, 5=vacuum/pressure/specialized apparatus"},
+    "FREE":       {"range": [0,5], "description": "Operational flexibility / timing variability. 0=rigid timing, 5=very flexible/variable pacing"}
+  },
+  "duration_categories": {
+    "SHORT": "< 2 hours",
+    "MEDIUM": "2-6 hours",
+    "LONG": "6-24 hours",
+    "VERY_LONG": "> 24 hours"
+  },
+  "calibration_plants": [
+    "lemongrass", "rose", "ylang_ylang", "rosemary", "vetiver",
+    "lavender", "chamomile", "orange_peel", "frankincense"
+  ],
+  "calibration_data": {
+    "_note": "Action-level percentage distributions from midprocess step analysis",
+    "lemongrass":    {"midprocess_actions": 6, "MON%": 50, "ENE%": 0,  "STA%": 17, "CLO%": 17, "STR%": 17},
+    "rose":          {"midprocess_actions": 7, "MON%": 29, "ENE%": 14, "STA%": 14, "CLO%": 43, "STR%": 0},
+    "ylang_ylang":   {"midprocess_actions": 9, "MON%": 22, "ENE%": 11, "STA%": 11, "CLO%": 56, "STR%": 0},
+    "rosemary":      {"midprocess_actions": 7, "MON%": 29, "ENE%": 14, "STA%": 0,  "CLO%": 43, "STR%": 14},
+    "vetiver":       {"midprocess_actions": 6, "MON%": 33, "ENE%": 17, "STA%": 33, "CLO%": 17, "STR%": 0},
+    "lavender":      {"midprocess_actions": 6, "MON%": 33, "ENE%": 17, "STA%": 17, "CLO%": 17, "STR%": 17},
+    "chamomile":     {"midprocess_actions": 4, "MON%": 25, "ENE%": 25, "STA%": 25, "CLO%": 25, "STR%": 0},
+    "orange_peel":   {"midprocess_actions": 4, "MON%": 50, "ENE%": 25, "STA%": 0,  "CLO%": 25, "STR%": 0},
+    "frankincense":  {"midprocess_actions": 4, "MON%": 50, "ENE%": 25, "STA%": 0,  "CLO%": 25, "STR%": 0}
+  },
+  "profiles": [
+    {
+      "id": 1,
+      "plant": "lavender",
+      "category": "FLOWER",
+      "botanical": "Lavandula angustifolia",
+      "scores": {"ENERGY": 2, "STABILITY": 2, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 1, "FREE": 3},
+      "method": "steam_distillation",
+      "duration": "SHORT",
+      "rationale": "Standard steam distillation benchmark. Forgiving temperature range, single pass, obvious endpoint when oil stops flowing. High yield (~1.5%) makes it easy to detect completion."
+    },
+    {
+      "id": 2,
+      "plant": "rose",
+      "category": "FLOWER",
+      "botanical": "Rosa damascena",
+      "scores": {"ENERGY": 3, "STABILITY": 3, "MONITORING": 3, "ITERATION": 5, "CLOSURE": 4, "STRUCTURAL": 2, "FREE": 2},
+      "method": "hydrodistillation_cohobation",
+      "duration": "MEDIUM",
+      "rationale": "Maximum iteration: requires cohobation (redistilling distillate water) because only 20-25% of oil comes from first pass; 75% recovered from water oil. Multiple cohobation cycles are essential -- without them most of the oil is lost. Multiple endpoint detections needed across passes. Extremely low yield (0.02-0.04%) demands precise collection."
+    },
+    {
+      "id": 3,
+      "plant": "chamomile",
+      "category": "FLOWER",
+      "botanical": "Matricaria chamomilla",
+      "scores": {"ENERGY": 2, "STABILITY": 3, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 1, "FREE": 2},
+      "method": "steam_distillation",
+      "duration": "MEDIUM",
+      "rationale": "Gentle steam distillation of flower heads. Temperature sensitivity matters because chamazulene (the blue compound) is formed during distillation from matricin -- excess heat degrades it. Single pass but endpoint requires attention to preserve the temperature-sensitive chamazulene formation."
+    },
+    {
+      "id": 4,
+      "plant": "ylang_ylang",
+      "category": "FLOWER",
+      "botanical": "Cananga odorata",
+      "scores": {"ENERGY": 3, "STABILITY": 3, "MONITORING": 5, "ITERATION": 3, "CLOSURE": 5, "STRUCTURAL": 2, "FREE": 1},
+      "method": "hydrodistillation_fractional",
+      "duration": "LONG",
+      "rationale": "Most complex closure of any plant: 5 commercial grades (Extra, I, II, III, Complete) collected at specific time windows over 20+ hours. Constant attention required -- operator must switch collection vessels at precise cutpoints and Florentine vessel changed every 15 minutes. Extra grade collected in first 1-2 hours, Grade III not until 10+ hours. Maximum monitoring over the longest sustained single distillation of any flower."
+    },
+    {
+      "id": 5,
+      "plant": "jasmine",
+      "category": "FLOWER",
+      "botanical": "Jasminum grandiflorum / J. sambac",
+      "scores": {"ENERGY": 1, "STABILITY": 5, "MONITORING": 3, "ITERATION": 3, "CLOSURE": 3, "STRUCTURAL": 4, "FREE": 2},
+      "method": "solvent_extraction_or_enfleurage",
+      "duration": "VERY_LONG",
+      "rationale": "Cannot be steam distilled at all -- heat-sensitive compounds completely denature. Maximum stability sensitivity: any thermal exposure destroys the oil. Requires solvent extraction (hexane at ~50C, producing concrete then absolute via alcohol wash) or traditional enfleurage (70+ days). Multiple processing stages with vacuum evaporation equipment needed."
+    },
+    {
+      "id": 6,
+      "plant": "neroli",
+      "category": "FLOWER",
+      "botanical": "Citrus aurantium var. amara (flowers)",
+      "scores": {"ENERGY": 2, "STABILITY": 3, "MONITORING": 3, "ITERATION": 2, "CLOSURE": 3, "STRUCTURAL": 2, "FREE": 2},
+      "method": "steam_distillation",
+      "duration": "MEDIUM",
+      "rationale": "Extremely low yield (0.07-0.12%, ~1g per kg flowers) requires careful temperature management to avoid degrading linalool and linalyl acetate. Some producers cohobate the distillate water to recover additional oil. Delicate flowers require gentle steam. Endpoint detection difficult due to tiny oil volumes."
+    },
+    {
+      "id": 7,
+      "plant": "violet",
+      "category": "FLOWER",
+      "botanical": "Viola odorata",
+      "scores": {"ENERGY": 1, "STABILITY": 5, "MONITORING": 3, "ITERATION": 3, "CLOSURE": 3, "STRUCTURAL": 4, "FREE": 2},
+      "method": "solvent_extraction_or_enfleurage",
+      "duration": "VERY_LONG",
+      "rationale": "Like jasmine, too delicate for any heat-based extraction -- maximum stability sensitivity. Traditionally extracted by enfleurage (flowers refreshed every 12-72 hours for weeks) or modern solvent extraction. Concrete-to-absolute processing involves multiple solvent stages. Violet leaf absolute is more common than flower absolute."
+    },
+    {
+      "id": 8,
+      "plant": "helichrysum",
+      "category": "FLOWER",
+      "botanical": "Helichrysum italicum",
+      "scores": {"ENERGY": 2, "STABILITY": 2, "MONITORING": 3, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 1, "FREE": 3},
+      "method": "steam_distillation",
+      "duration": "SHORT",
+      "rationale": "Standard steam distillation at 104C, 0.4 bar, 1.5-4.5 hours. Florentine vessel changed every 15 minutes for fraction monitoring but single-grade collection is standard. Shorter distillation favors monoterpenes (cosmetic use); longer distillation enriches sesquiterpene oxides. Flexible duration depending on desired profile."
+    },
+    {
+      "id": 9,
+      "plant": "peppermint",
+      "category": "LEAF_HERB",
+      "botanical": "Mentha x piperita",
+      "scores": {"ENERGY": 1, "STABILITY": 1, "MONITORING": 1, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 0, "FREE": 5},
+      "method": "steam_distillation",
+      "duration": "SHORT",
+      "rationale": "The simplest distillation benchmark. 80% of oil recovered in first hour; high yield (~1%) with obvious endpoint. Mobile field stills used commercially -- load, steam, collect, done. Very forgiving of temperature variation. No redistillation needed. Maximum timing flexibility: 20 min to 3 hours all produce usable oil."
+    },
+    {
+      "id": 10,
+      "plant": "rosemary",
+      "category": "LEAF_HERB",
+      "botanical": "Rosmarinus officinalis",
+      "scores": {"ENERGY": 2, "STABILITY": 2, "MONITORING": 3, "ITERATION": 1, "CLOSURE": 3, "STRUCTURAL": 3, "FREE": 3},
+      "method": "steam_distillation_or_vacuum_fractional",
+      "duration": "MEDIUM",
+      "rationale": "Basic steam distillation is straightforward, but rosemary is commonly vacuum-fractionated to isolate specific chemotypes (camphor, 1,8-cineole, verbenone). Vacuum fractional distillation at 10 kPa with Raschig rings and PLC control represents the high-complexity end. Multiple temperature cutpoints (70, 90, 115, 125C) for fraction collection."
+    },
+    {
+      "id": 11,
+      "plant": "thyme",
+      "category": "LEAF_HERB",
+      "botanical": "Thymus vulgaris",
+      "scores": {"ENERGY": 2, "STABILITY": 3, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 1, "FREE": 2},
+      "method": "steam_distillation",
+      "duration": "SHORT",
+      "rationale": "Standard herb steam distillation but temperature-sensitive: above 175C steam temperature degrades thymol; above 230C causes charring and pyrolysis. Must keep steam temperature controlled within a narrower band than most herbs. Single pass, clear endpoint."
+    },
+    {
+      "id": 12,
+      "plant": "sage",
+      "category": "LEAF_HERB",
+      "botanical": "Salvia officinalis",
+      "scores": {"ENERGY": 2, "STABILITY": 2, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 1, "FREE": 3},
+      "method": "steam_distillation",
+      "duration": "SHORT",
+      "rationale": "Straightforward steam distillation of leaves. Similar to lavender in process complexity. Good yield, robust temperature range, single pass with clear endpoint. Timing is flexible -- main oil recovered in 1-2 hours."
+    },
+    {
+      "id": 13,
+      "plant": "basil",
+      "category": "LEAF_HERB",
+      "botanical": "Ocimum basilicum",
+      "scores": {"ENERGY": 2, "STABILITY": 2, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 1, "FREE": 3},
+      "method": "hydrodistillation_or_steam",
+      "duration": "MEDIUM",
+      "rationale": "Standard herb distillation, 2.5-3 hours for optimal recovery. Linalool-rich oil is somewhat temperature-sensitive but the process is forgiving. Good yield, straightforward endpoint detection. Very similar to sage in operational demands."
+    },
+    {
+      "id": 14,
+      "plant": "lemongrass",
+      "category": "LEAF_HERB",
+      "botanical": "Cymbopogon citratus",
+      "scores": {"ENERGY": 2, "STABILITY": 2, "MONITORING": 3, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 2, "FREE": 2},
+      "method": "hydrodistillation_or_steam",
+      "duration": "MEDIUM",
+      "rationale": "Moderate monitoring demands from channeling risk -- steam must penetrate evenly through chopped grass. Pilot systems use 6 thermocouples and image processing for endpoint detection. Citral content must be monitored for quality. Higher monitoring than most herbs but single-pass."
+    },
+    {
+      "id": 15,
+      "plant": "melissa",
+      "category": "LEAF_HERB",
+      "botanical": "Melissa officinalis",
+      "scores": {"ENERGY": 2, "STABILITY": 3, "MONITORING": 3, "ITERATION": 1, "CLOSURE": 3, "STRUCTURAL": 1, "FREE": 1},
+      "method": "hydrodistillation",
+      "duration": "LONG",
+      "rationale": "Exceptionally low yield (~0.02-0.05%) makes this one of the most difficult herbs to distill economically. 6-8 hour distillation needed. Temperature range 60-220C must be carefully managed to preserve individual constituents. Endpoint detection is difficult because tiny oil quantities make visual separation challenging. Often adulterated due to difficulty."
+    },
+    {
+      "id": 16,
+      "plant": "bay_laurel",
+      "category": "LEAF_HERB",
+      "botanical": "Laurus nobilis",
+      "scores": {"ENERGY": 2, "STABILITY": 2, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 1, "FREE": 3},
+      "method": "steam_distillation",
+      "duration": "MEDIUM",
+      "rationale": "Standard leaf steam distillation. Moderate yield, robust process. Sub-fractions collected at 15-minute intervals in research settings but commercial production uses single-pass. Flexible timing with forgiving endpoint."
+    },
+    {
+      "id": 17,
+      "plant": "vetiver",
+      "category": "ROOT",
+      "botanical": "Chrysopogon zizanioides",
+      "scores": {"ENERGY": 4, "STABILITY": 3, "MONITORING": 3, "ITERATION": 1, "CLOSURE": 2, "STRUCTURAL": 2, "FREE": 1},
+      "method": "steam_distillation",
+      "duration": "VERY_LONG",
+      "rationale": "One of the longest distillations: 18-72 hours traditional, with high-MW sesquiterpenes requiring sustained high steam pressure to extract. Roots must be pre-soaked 12-24 hours. Temperature must not exceed 27C during pre-processing. Low yield (~0.2-0.3%). Oil requires months of post-distillation aging. Rigid long timing with little flexibility."
+    },
+    {
+      "id": 18,
+      "plant": "valerian",
+      "category": "ROOT",
+      "botanical": "Valeriana officinalis",
+      "scores": {"ENERGY": 3, "STABILITY": 2, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 1, "FREE": 2},
+      "method": "steam_distillation",
+      "duration": "LONG",
+      "rationale": "Root distillation requiring high-pressure steam through dried rhizomes. Extended distillation needed for sesquiterpene-rich oil (valerenic acid). Less complex than vetiver but still demanding in energy and duration. Drying quality of roots critically affects yield."
+    },
+    {
+      "id": 19,
+      "plant": "angelica_root",
+      "category": "ROOT",
+      "botanical": "Angelica archangelica",
+      "scores": {"ENERGY": 3, "STABILITY": 2, "MONITORING": 3, "ITERATION": 0, "CLOSURE": 3, "STRUCTURAL": 1, "FREE": 2},
+      "method": "steam_distillation",
+      "duration": "LONG",
+      "rationale": "Takes 10-24 hours to exhaust root material. Long distillation significantly changes composition: high-MW lactones and oxygenated sesquiterpenes increase at the expense of light volatiles. Endpoint detection is complex because the composition shifts continuously. Optimal fill ratio (40% plant, 1:4 plant:water) is important."
+    },
+    {
+      "id": 20,
+      "plant": "orris",
+      "category": "ROOT",
+      "botanical": "Iris pallida / I. germanica",
+      "scores": {"ENERGY": 3, "STABILITY": 3, "MONITORING": 3, "ITERATION": 2, "CLOSURE": 3, "STRUCTURAL": 4, "FREE": 0},
+      "method": "steam_distillation_or_solvent_extraction",
+      "duration": "VERY_LONG",
+      "rationale": "The most time-demanding plant material overall: roots require 3-6 YEARS of aging before distillation (oxidative conversion of lipids to irones). Then crushed and steam-distilled or solvent-extracted. Only 2% of dried roots yield orris butter. 500 kg roots for 1 kg essence. Zero timing flexibility -- the multi-year aging is non-negotiable."
+    },
+    {
+      "id": 21,
+      "plant": "cinnamon_bark",
+      "category": "BARK",
+      "botanical": "Cinnamomum verum",
+      "scores": {"ENERGY": 3, "STABILITY": 2, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 1, "FREE": 2},
+      "method": "water_steam_distillation",
+      "duration": "LONG",
+      "rationale": "Bark requires pre-soaking in brine/seawater (maceration) before distillation. Extended distillation up to 24 hours for maximum yield. Cinnamaldehyde is relatively heat-stable so temperature control is moderate. Process is straightforward but long."
+    },
+    {
+      "id": 22,
+      "plant": "cassia",
+      "category": "BARK",
+      "botanical": "Cinnamomum cassia",
+      "scores": {"ENERGY": 3, "STABILITY": 1, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 1, "FREE": 3},
+      "method": "steam_distillation",
+      "duration": "SHORT",
+      "rationale": "Simpler than true cinnamon. Optimal extraction in 2 hours at 40 mesh particle size. High cinnamaldehyde content (75-90%) is robust to temperature variation. Clear endpoint -- composition starts to diminish noticeably. Very forgiving process."
+    },
+    {
+      "id": 23,
+      "plant": "birch_bark",
+      "category": "BARK",
+      "botanical": "Betula lenta / B. pendula",
+      "scores": {"ENERGY": 5, "STABILITY": 4, "MONITORING": 4, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 5, "FREE": 1},
+      "method": "dry_distillation_or_steam",
+      "duration": "LONG",
+      "rationale": "Traditional birch bark oil (tar/pitch) requires DRY distillation at 340-420C in oxygen-depleted conditions -- the highest temperature of any plant on this list. Below 340C the pitch chars; above 420C it decomposes. Maximum apparatus complexity: requires sealed oxygen-depleted retort with precise temperature control across a narrow 80-degree window at extreme temperatures."
+    },
+    {
+      "id": 24,
+      "plant": "frankincense",
+      "category": "RESIN",
+      "botanical": "Boswellia sacra / B. carterii",
+      "scores": {"ENERGY": 3, "STABILITY": 2, "MONITORING": 3, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 2, "FREE": 2},
+      "method": "hydrodistillation_or_steam",
+      "duration": "LONG",
+      "rationale": "Resin must be crushed and mixed with inert material to prevent steam channeling (melted resin solidifies and blocks still). Low heat is critical for resin. 8-12 hour distillation. Fractions collected at 0-2h, 8-10h, 11-12h show compositional shifts. Monitoring needed to detect resin melting/blocking issues."
+    },
+    {
+      "id": 25,
+      "plant": "myrrh",
+      "category": "RESIN",
+      "botanical": "Commiphora myrrha",
+      "scores": {"ENERGY": 3, "STABILITY": 2, "MONITORING": 3, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 2, "FREE": 2},
+      "method": "hydrodistillation_or_steam",
+      "duration": "LONG",
+      "rationale": "Similar resin challenges to frankincense: melts when heated, blocks steam flow, must be crushed and mixed with inert carrier. Myrrh oil weighs approximately the same as water, making separation much harder than frankincense (which floats). Often co-distilled with frankincense where the frankincense acts as a carrier to lift myrrh away from water."
+    },
+    {
+      "id": 26,
+      "plant": "mastic",
+      "category": "RESIN",
+      "botanical": "Pistacia lentiscus",
+      "scores": {"ENERGY": 3, "STABILITY": 2, "MONITORING": 3, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 3, "FREE": 2},
+      "method": "steam_distillation_or_superheated_steam",
+      "duration": "MEDIUM",
+      "rationale": "Same resin melting/solidification problem as frankincense and myrrh. Optimal extraction at 174C superheated steam for 120 minutes with 0.75mm mesh. Higher yield than most resins (5.7% optimized) but requires superheated steam apparatus. Resin must be crushed to precise particle size."
+    },
+    {
+      "id": 27,
+      "plant": "anise",
+      "category": "SEED",
+      "botanical": "Pimpinella anisum",
+      "scores": {"ENERGY": 2, "STABILITY": 1, "MONITORING": 1, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 1, "FREE": 3},
+      "method": "steam_distillation",
+      "duration": "MEDIUM",
+      "rationale": "Straightforward seed distillation with high yield (2.25%). Trans-anethole (80-90%) is thermally robust. Simple endpoint detection -- oil flow stops. Standard pot still is sufficient. Very forgiving and flexible process."
+    },
+    {
+      "id": 28,
+      "plant": "fennel",
+      "category": "SEED",
+      "botanical": "Foeniculum vulgare",
+      "scores": {"ENERGY": 2, "STABILITY": 1, "MONITORING": 1, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 1, "FREE": 3},
+      "method": "steam_distillation",
+      "duration": "LONG",
+      "rationale": "Very similar to anise (also anethole-dominant, 50-60%). Highest yield of the three seeds tested (2.70%). Standard steam distillation at 1 atm for 7.5 hours -- longer than anise but equally simple and forgiving. No special apparatus needed."
+    },
+    {
+      "id": 29,
+      "plant": "coriander",
+      "category": "SEED",
+      "botanical": "Coriandrum sativum",
+      "scores": {"ENERGY": 2, "STABILITY": 2, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 1, "FREE": 3},
+      "method": "steam_distillation_or_hydrodistillation",
+      "duration": "MEDIUM",
+      "rationale": "Lower yield (0.95%) than anise/fennel, with linalool as the dominant compound. Hydrodistillation time alters composition more than for anise/fennel, meaning endpoint timing has a compositional effect. Slightly more attention needed than the anethole-dominant seeds."
+    },
+    {
+      "id": 30,
+      "plant": "orange_peel",
+      "category": "FRUIT_PEEL",
+      "botanical": "Citrus sinensis",
+      "scores": {"ENERGY": 1, "STABILITY": 2, "MONITORING": 3, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 1, "FREE": 4},
+      "method": "cold_pressing_or_steam_distillation",
+      "duration": "SHORT",
+      "rationale": "Cold pressing is the primary method (mechanical, no heat) with very fast processing. Steam distillation alternative gives higher yield (0.21% vs 0.05%) but limonene is heat-sensitive. Monitoring needed for drip rate (20 drops/min target) and cloudy-to-clear transition. Very quick with high timing flexibility."
+    },
+    {
+      "id": 31,
+      "plant": "lemon_peel",
+      "category": "FRUIT_PEEL",
+      "botanical": "Citrus limon",
+      "scores": {"ENERGY": 0, "STABILITY": 1, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 0, "FREE": 5},
+      "method": "cold_pressing_or_steam_distillation",
+      "duration": "SHORT",
+      "rationale": "Primarily cold-pressed (zero heat, purely mechanical). Simplest extraction of all -- press rinds, collect oil, filter. Can be done at any time with no temperature management. Maximum flexibility and minimal apparatus. Even simpler than orange peel when cold-pressed only."
+    },
+    {
+      "id": 32,
+      "plant": "juniper_berry",
+      "category": "FRUIT_PEEL",
+      "botanical": "Juniperus communis",
+      "scores": {"ENERGY": 2, "STABILITY": 1, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 2, "STRUCTURAL": 1, "FREE": 3},
+      "method": "steam_distillation",
+      "duration": "MEDIUM",
+      "rationale": "Standard steam distillation of berries. Alpha-pinene dominant (>50%) is thermally robust. Moderate duration. Berry structure requires adequate steam penetration but no special preparation beyond crushing. Flexible timing."
+    },
+    {
+      "id": 33,
+      "plant": "sandalwood",
+      "category": "WOOD",
+      "botanical": "Santalum album",
+      "scores": {"ENERGY": 5, "STABILITY": 2, "MONITORING": 3, "ITERATION": 2, "CLOSURE": 2, "STRUCTURAL": 2, "FREE": 0},
+      "method": "steam_distillation",
+      "duration": "VERY_LONG",
+      "rationale": "Highest sustained energy demand: 14-72 hours of continuous high-pressure steam to extract oil locked in heartwood cell structure. Some sources report up to a full week. Wood must be ground to powder/chips. Pre-soaking (maceration) required. High-MW santalol requires extreme steam pressure. Zero flexibility -- must run the full duration or lose yield."
+    },
+    {
+      "id": 34,
+      "plant": "cedarwood",
+      "category": "WOOD",
+      "botanical": "Cedrus atlantica / Juniperus virginiana",
+      "scores": {"ENERGY": 4, "STABILITY": 1, "MONITORING": 2, "ITERATION": 0, "CLOSURE": 1, "STRUCTURAL": 1, "FREE": 2},
+      "method": "steam_distillation",
+      "duration": "LONG",
+      "rationale": "10-12 hour distillation with good yield (2-3%). Wood must be chipped and ground but the process is thermally robust. Cedrol and cedrene are stable compounds. Much simpler than sandalwood -- shorter duration, higher yield, more forgiving. Energy demand is still high due to woody material."
+    },
+    {
+      "id": 35,
+      "plant": "rosewood",
+      "category": "WOOD",
+      "botanical": "Aniba rosaeodora",
+      "scores": {"ENERGY": 4, "STABILITY": 2, "MONITORING": 3, "ITERATION": 1, "CLOSURE": 2, "STRUCTURAL": 2, "FREE": 1},
+      "method": "steam_distillation",
+      "duration": "VERY_LONG",
+      "rationale": "Wood distillation requiring up to 36+ hours. Linalool-rich oil is somewhat temperature-sensitive compared to cedarwood's cedrol. Tree must grow ~10 years before harvest (CITES Appendix II). Double distillation sometimes performed for higher purity. Rigid timing due to long extraction requirements."
+    }
+  ],
+  "summary_statistics": {
+    "score_ranges": {
+      "ENERGY":     {"min": 0, "max": 5, "values_used": [0,1,2,3,4,5]},
+      "STABILITY":  {"min": 1, "max": 5, "values_used": [1,2,3,4,5]},
+      "MONITORING": {"min": 1, "max": 5, "values_used": [1,2,3,4,5]},
+      "ITERATION":  {"min": 0, "max": 5, "values_used": [0,1,2,3,4,5]},
+      "CLOSURE":    {"min": 1, "max": 5, "values_used": [1,2,3,4,5]},
+      "STRUCTURAL": {"min": 0, "max": 5, "values_used": [0,1,2,3,4,5]},
+      "FREE":       {"min": 0, "max": 5, "values_used": [0,1,2,3,4,5]}
+    },
+    "extreme_plants": {
+      "highest_total": ["ylang_ylang", "rose", "jasmine", "violet", "birch_bark"],
+      "lowest_total": ["lemon_peel", "peppermint", "anise", "fennel"],
+      "most_energy": ["sandalwood", "birch_bark"],
+      "most_iteration": ["rose"],
+      "most_closure": ["ylang_ylang"],
+      "most_stability": ["jasmine", "violet"],
+      "most_structural": ["birch_bark"],
+      "most_monitoring": ["ylang_ylang"],
+      "most_free": ["peppermint", "lemon_peel"],
+      "least_free": ["sandalwood", "orris"]
+    },
+    "duration_distribution": {
+      "SHORT": ["lavender", "peppermint", "thyme", "sage", "cassia", "orange_peel", "lemon_peel", "helichrysum"],
+      "MEDIUM": ["rose", "chamomile", "neroli", "rosemary", "basil", "lemongrass", "bay_laurel", "mastic", "anise", "coriander", "juniper_berry"],
+      "LONG": ["ylang_ylang", "angelica_root", "cinnamon_bark", "frankincense", "myrrh", "cedarwood", "melissa", "birch_bark", "valerian", "fennel"],
+      "VERY_LONG": ["vetiver", "sandalwood", "rosewood", "orris", "jasmine", "violet"]
+    }
+  }
+}
