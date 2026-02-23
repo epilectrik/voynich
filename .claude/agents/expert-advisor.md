@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1057 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 1058 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1057 validated)
+- Tier 0-2 binding constraints (1058 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1057 constraints, 66 fits,
+full content in their source documents. All 1058 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-22 18:42
-**Version:** FROZEN STATE (1057 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-22 19:10
+**Version:** FROZEN STATE (1058 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1058 constraints | 2026-02-22
+CONSTRAINT_REFERENCE v2.6 | 1059 constraints | 2026-02-22
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2166,6 +2166,7 @@ C1210	**MIDDLE Slot Syntax**
 C1211	**Sub-MIDDLE Pairwise Sufficiency** (INITIAL+MEDIAL+TERMINAL show REDUNDANCY not synergy: synergy=-0.827 bits; extends C1003 to sub-MIDDLE level; INITIAL explains 35.9% of TERMINAL entropy, MEDIAL 49.1%, both together 57.5%; pairwise interactions sufficient at both morphological levels)
 C1212	**Cross-Token Sequential Chaining** (TERMINAL(N)->INITIAL(N+1) is the strongest genuine sequential signal z=20.3; full 3x3 slot matrix shows MEDIAL->MEDIAL has highest raw MI=0.092 but lowest z=3.4 -- 80% co-occurrence not sequence; cross-token signal 6% of within-MIDDLE MI; enriched: h->p 2.61x, r->a 1.99x; depleted: r->t 0.25x; cross-line NOT weaker MI ratio=1.262; within-lane stratification confirms not purely PREFIX confound)
 C1213	**Axis-Switching Dominance** (programs switch C1207 axes between tokens 84.8% of the time; same-axis continuation 15.2% vs expected 13.2%, enrichment only 1.15x; ITERATION->ITERATION highest same-axis at 33.2%; STABILITY dominant target from all axes; programs interleave across operational channels)
+C1214	**Line Compositional Homogeneity** (lines mildly more homogeneous than within-folio shuffled: z=-7.0, 3.8% entropy reduction; all slots equal INITIAL z=-8.1, MEDIAL z=-7.0, TERMINAL z=-8.2; PC1 36.2% CLOSURE vs ITERATION; section explains only 12.6% of PC1; no position gradient; explains C1212 MEDIAL co-occurrence as whole-token tuning; survives daiin exclusion z=-6.78)
 
 ---
 
