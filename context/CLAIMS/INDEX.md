@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1060 validated constraints | **Version:** 4.34 | **Date:** 2026-02-22
+**Total:** 1061 validated constraints | **Version:** 4.35 | **Date:** 2026-02-22
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3321,6 +3321,12 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 |---|-------------|------|------|----------|
 | **1215** | **Compound MIDDLE Slot Compliance** (compound MIDDLEs obey C1210 forbidden combinations: a->y 1/1422, e->n 1/3972, k->n 0/475; compound slot syntax weaker V=0.329 vs atomic V=0.416 reflecting greater INITIAL->TERMINAL diversity; forbidden rules are scale-invariant) | 2 | B, compounds, slots, compliance | -> [C1215_compound_slot_compliance.md](C1215_compound_slot_compliance.md) |
 | **1216** | **Compound Junction Grammar** (junctions between embedded atoms within compounds show V=0.415, MI=1.636 bits -- 6x stronger than cross-token V=0.071; junction grammar recreates PREFIX bigrams c->h 11.7x, o->l 9.1x, s->h 8.1x as internal routing; DIFFERENT from cross-token grammar r=0.089; C1210 forbidden pairs strictly zero at junctions; 91% of compounds are 2-tile) | 2 | B, compounds, junctions, grammar, routing | -> [C1216_compound_junction_grammar.md](C1216_compound_junction_grammar.md) |
+
+### Lane Atom Content Separation (C1217) -- Phase: ATOM_PROFILE_SYNTHESIS (Phase 433)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1217** | **Lane vs Non-Lane Atom Content Separation** (QO/CHSH lane tokens carry ENERGY/STABILITY/MONITORING atoms; non-lane tokens carry ITERATION atoms 37.9% vs 4.3%; k 6.7x lane-enriched, t 7.7x lane-enriched, n 0.04x lane-depleted; two interleaved information streams: energy control loop vs parametric metadata; p<0.002 within-folio shuffle) | 2 | B, lanes, atoms, PREFIX, energy, iteration | -> [C1217_lane_atom_content_separation.md](C1217_lane_atom_content_separation.md) |
 
 ---
 
