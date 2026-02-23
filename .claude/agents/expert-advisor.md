@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1061 validated constraints and 66 explanatory fits loaded
+embedded below. You have ALL 1065 validated constraints and 66 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1061 validated)
+- Tier 0-2 binding constraints (1065 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1061 constraints, 66 fits,
+full content in their source documents. All 1065 constraints, 66 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-22 20:53
-**Version:** FROZEN STATE (1061 constraints, 66 fits) [COMPACT]
+**Generated:** 2026-02-22 21:31
+**Version:** FROZEN STATE (1065 constraints, 66 fits) [COMPACT]
 
 ---
 
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1062 constraints | 2026-02-22
+CONSTRAINT_REFERENCE v2.6 | 1066 constraints | 2026-02-22
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2170,6 +2170,10 @@ C1214	**Line Compositional Homogeneity** (lines mildly more homogeneous than wit
 C1215	**Compound MIDDLE Slot Compliance** (compound MIDDLEs obey C1210 forbidden combinations: a->y 1/1422, e->n 1/3972, k->n 0/475; compound slot syntax weaker V=0.329 vs atomic V=0.416 reflecting greater INITIAL->TERMINAL diversity; forbidden rules are scale-invariant)
 C1216	**Compound Junction Grammar**
 C1217	**Lane vs Non-Lane Atom Content Separation**
+C1218	**PREFIX Internal Positional Grammar** (PREFIX characters have strong positional preferences: dedicated modifiers q,d,f,p,y,s at POS-0, dedicated bases h,e at POS-1+, dual-role o,k,l,t,c,a,r; forms base-modifier grammar parallel to MIDDLE INITIAL/TERMINAL syntax; reinterprets C1193 low additivity as role-switching not non-compositionality)
+C1219	**Base Character Determines MIDDLE Content** (final character of PREFIX predicts MIDDLE atom profile: within-base cosine 0.950 vs between-base 0.515, ratio 1.84; a-base=80% ITERATION, o-base=42% ENERGY, h-base=32% STABILITY+31% CLOSURE, e-base=53% CLOSURE; base defines operational domain, modifier selects variant)
+C1220	**PREFIX Modifier Consistency Varies by Character** (cross-base modifier consistency ranges from high o=0.836, l=0.794, a=0.756 to low d=0.345, s=0.368, c=0.380; compositionality is partial and modifier-specific; consistent modifiers are genuine compositional elements, base-dependent modifiers function more as allomorphs)
+C1221	**Prep PREFIX Similarity is Base-Driven**
 
 ---
 
