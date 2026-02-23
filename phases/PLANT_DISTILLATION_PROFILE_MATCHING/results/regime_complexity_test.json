@@ -1,0 +1,148 @@
+{
+  "analysis_unit": "paragraph",
+  "regime_centroids_7axis": {
+    "REGIME_1": {
+      "ENERGY": 0.18820198239510852,
+      "STABILITY": 0.2209492321858492,
+      "MONITORING": 0.06787934947148834,
+      "ITERATION": 0.21766871188329298,
+      "CLOSURE": 0.19567763831545004,
+      "STRUCTURAL": 0.08057992745158951,
+      "FREE": 0.029043158297221584
+    },
+    "REGIME_2": {
+      "ENERGY": 0.13434499897684507,
+      "STABILITY": 0.10405473501084962,
+      "MONITORING": 0.06480712713488701,
+      "ITERATION": 0.3945319452568172,
+      "CLOSURE": 0.1710407981867922,
+      "STRUCTURAL": 0.11059732770758114,
+      "FREE": 0.020623067726227715
+    },
+    "REGIME_3": {
+      "ENERGY": 0.11524991132798251,
+      "STABILITY": 0.1868133661109301,
+      "MONITORING": 0.09361879926253333,
+      "ITERATION": 0.2749693709804948,
+      "CLOSURE": 0.15759666573275033,
+      "STRUCTURAL": 0.1387603040047377,
+      "FREE": 0.03299158258057113
+    },
+    "REGIME_4": {
+      "ENERGY": 0.12037808996118303,
+      "STABILITY": 0.22197720693369927,
+      "MONITORING": 0.07960407486496014,
+      "ITERATION": 0.19793867402215276,
+      "CLOSURE": 0.21454030814276395,
+      "STRUCTURAL": 0.13809545791770617,
+      "FREE": 0.027466188157534658
+    }
+  },
+  "class_centroids": {
+    "HARD": {
+      "ENERGY": 0.24101190476190473,
+      "STABILITY": 0.1531547619047619,
+      "MONITORING": 0.19416666666666665,
+      "ITERATION": 0.025416666666666664,
+      "CLOSURE": 0.1445238095238095,
+      "STRUCTURAL": 0.13452380952380952,
+      "FREE": 0.10720238095238095
+    },
+    "SIMPLE": {
+      "ENERGY": 0.17084893091085043,
+      "STABILITY": 0.1532714791228723,
+      "MONITORING": 0.17954456963744891,
+      "ITERATION": 0.006855373728438743,
+      "CLOSURE": 0.13284273346192849,
+      "STRUCTURAL": 0.0875882803127385,
+      "FREE": 0.26904863282572256
+    },
+    "COMPLEX": {
+      "ENERGY": 0.108713182242594,
+      "STABILITY": 0.18200916730328498,
+      "MONITORING": 0.16541465070876835,
+      "ITERATION": 0.14635146988088166,
+      "CLOSURE": 0.17299040828452594,
+      "STRUCTURAL": 0.15043997396938572,
+      "FREE": 0.07408114761055938
+    }
+  },
+  "class_members": {
+    "HARD": [
+      "vetiver",
+      "valerian",
+      "angelica_root",
+      "cinnamon_bark",
+      "birch_bark",
+      "frankincense",
+      "myrrh",
+      "mastic",
+      "sandalwood",
+      "rosewood"
+    ],
+    "SIMPLE": [
+      "lavender",
+      "chamomile",
+      "helichrysum",
+      "peppermint",
+      "rosemary",
+      "thyme",
+      "sage",
+      "basil",
+      "lemongrass",
+      "melissa",
+      "bay_laurel",
+      "cassia",
+      "anise",
+      "fennel",
+      "coriander",
+      "orange_peel",
+      "lemon_peel",
+      "juniper_berry",
+      "cedarwood"
+    ],
+    "COMPLEX": [
+      "rose",
+      "ylang_ylang",
+      "jasmine",
+      "neroli",
+      "violet",
+      "orris"
+    ]
+  },
+  "regime_best_match": {
+    "REGIME_1": "COMPLEX",
+    "REGIME_2": "COMPLEX",
+    "REGIME_3": "COMPLEX",
+    "REGIME_4": "COMPLEX"
+  },
+  "regime_paragraph_counts": {
+    "REGIME_4": 44,
+    "REGIME_1": 207,
+    "REGIME_2": 32,
+    "REGIME_3": 196
+  },
+  "hypotheses": {
+    "REGIME_1": {
+      "predicted": "HARD",
+      "actual": "COMPLEX",
+      "match": false
+    },
+    "REGIME_2": {
+      "predicted": "SIMPLE",
+      "actual": "COMPLEX",
+      "match": false
+    },
+    "REGIME_3": {
+      "predicted": "COMPLEX",
+      "actual": "COMPLEX",
+      "match": true
+    },
+    "REGIME_4": {
+      "predicted": "COMPLEX",
+      "actual": "COMPLEX",
+      "match": true
+    }
+  },
+  "n_correct": 2
+}

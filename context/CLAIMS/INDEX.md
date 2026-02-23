@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1068 validated constraints | **Version:** 4.39 | **Date:** 2026-02-22
+**Total:** 1068 validated constraints | **Version:** 4.40 | **Date:** 2026-02-22
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3352,7 +3352,7 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 
 | # | Description | Tier | Tags | Location |
 |---|-------------|------|------|----------|
-| **1224** | **Axis Distribution Transformation** (folio and plant profiles have same dimensionality 4 PCs, entropy 2.314 vs 2.369 bits, but PC alignment NS p=0.48; Voynich inflates ITERATION 7.0x, CLOSURE 1.4x while deflating FREE 6.5x, MONITORING 2.3x; encodes control program structure not direct distillation profiles; REGIME_1 captures 13/14 ROOT-matching folios; category adds 8.1% beyond section) | 2 | B, plants, PCA, axes, transformation, control program | -> [C1224_axis_distribution_transformation.md](C1224_axis_distribution_transformation.md) |
+| **1224** | **Axis Distribution Transformation** (CORRECTED to paragraph-level: 479 paragraphs and 35 plants have same dimensionality 4 PCs, entropy 2.451 vs 2.369 bits, PC alignment NS p=0.30; Voynich inflates ITERATION 7.0x, CLOSURE 1.3x while deflating FREE 6.3x, MONITORING 2.3x; ITERATION inflation stable across units 25.1% par vs 25.2% folio confirming real transformation; encodes control program structure not direct distillation profiles; REGIME_1 captures 82% of ROOT-matching paragraphs; category adds 13.9% beyond section, up from 8.1% at folio level) | 2 | B, plants, PCA, axes, transformation, control program, paragraphs | -> [C1224_axis_distribution_transformation.md](C1224_axis_distribution_transformation.md) |
 
 ---
 
