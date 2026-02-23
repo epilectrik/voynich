@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1057 validated constraints | **Version:** 4.32 | **Date:** 2026-02-22
+**Total:** 1058 validated constraints | **Version:** 4.33 | **Date:** 2026-02-22
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3308,6 +3308,12 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 |---|-------------|------|------|----------|
 | **1212** | **Cross-Token Sequential Chaining** (TERMINAL(N)->INITIAL(N+1) is the strongest genuine sequential signal z=20.3; full 3x3 slot matrix shows MEDIAL->MEDIAL has highest raw MI=0.092 but lowest z=3.4 -- 80% co-occurrence not sequence; cross-token signal 6% of within-MIDDLE MI; enriched: h->p 2.61x, r->a 1.99x; depleted: r->t 0.25x; cross-line NOT weaker MI ratio=1.262; within-lane stratification confirms not purely PREFIX confound) | 2 | B, atoms, chaining, sequential | -> [C1212_cross_token_sequential_chaining.md](C1212_cross_token_sequential_chaining.md) |
 | **1213** | **Axis-Switching Dominance** (programs switch C1207 axes between tokens 84.8% of the time; same-axis continuation 15.2% vs expected 13.2%, enrichment only 1.15x; ITERATION->ITERATION highest same-axis at 33.2%; STABILITY dominant target from all axes; programs interleave across operational channels) | 2 | B, atoms, axes, switching, programs | -> [C1213_axis_switching_dominance.md](C1213_axis_switching_dominance.md) |
+
+### Line Compositional Modes (C1214) -- Phase: LINE_COMPOSITIONAL_MODES (Phase 431)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1214** | **Line Compositional Homogeneity** (lines mildly more homogeneous than within-folio shuffled: z=-7.0, 3.8% entropy reduction; all slots equal INITIAL z=-8.1, MEDIAL z=-7.0, TERMINAL z=-8.2; PC1 36.2% CLOSURE vs ITERATION; section explains only 12.6% of PC1; no position gradient; explains C1212 MEDIAL co-occurrence as whole-token tuning; survives daiin exclusion z=-6.78) | 2 | B, lines, homogeneity, composition | -> [C1214_line_compositional_homogeneity.md](C1214_line_compositional_homogeneity.md) |
 
 ---
 

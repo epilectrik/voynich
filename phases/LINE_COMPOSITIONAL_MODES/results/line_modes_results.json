@@ -1,0 +1,78 @@
+{
+  "T1_axis_profiles": {
+    "n_lines": 1668,
+    "pc1_var_pct": 36.2,
+    "pc2_var_pct": 23.9,
+    "pc1_loadings": {
+      "ITERATION": -0.6706,
+      "MONITORING": 0.0497,
+      "ENERGY": -0.0074,
+      "CLOSURE": 0.7301,
+      "STRUCTURAL": -0.0087,
+      "STABILITY": -0.1197,
+      "FREE_T": 0.0073,
+      "OTHER": 0.0193
+    },
+    "pc2_loadings": {
+      "ITERATION": 0.5638,
+      "MONITORING": -0.0899,
+      "ENERGY": -0.0157,
+      "CLOSURE": 0.4082,
+      "STRUCTURAL": -0.1467,
+      "STABILITY": -0.6967,
+      "FREE_T": -0.0115,
+      "OTHER": -0.0114
+    },
+    "section_r2_pc1": 0.1257
+  },
+  "T2_homogeneity": {
+    "n_lines": 1668,
+    "obs_mean_norm_entropy": 0.7026,
+    "shuf_mean_norm_entropy": 0.7306,
+    "z_score": -7.0,
+    "entropy_reduction_pct": 3.8,
+    "daiin_excluded_z": -6.78
+  },
+  "T3_position": {
+    "quintile_n": {
+      "0": 452,
+      "1": 422,
+      "2": 418,
+      "3": 422,
+      "4": 387
+    },
+    "position_correlations": {
+      "ITERATION": 0.0108,
+      "MONITORING": -0.0359,
+      "ENERGY": -0.0364,
+      "CLOSURE": 0.0231,
+      "STRUCTURAL": -0.0387,
+      "STABILITY": 0.0525,
+      "FREE_T": -0.0037,
+      "OTHER": -0.0349
+    }
+  },
+  "T4_slot_homogeneity": {
+    "initial": {
+      "n_lines": 2342,
+      "obs_mean_norm_entropy": 0.626,
+      "shuf_mean_norm_entropy": 0.6461,
+      "z_score": -8.14,
+      "entropy_reduction_pct": 3.1
+    },
+    "medial": {
+      "n_lines": 1668,
+      "obs_mean_norm_entropy": 0.7026,
+      "shuf_mean_norm_entropy": 0.7305,
+      "z_score": -6.96,
+      "entropy_reduction_pct": 3.8
+    },
+    "terminal": {
+      "n_lines": 2342,
+      "obs_mean_norm_entropy": 0.7335,
+      "shuf_mean_norm_entropy": 0.753,
+      "z_score": -8.16,
+      "entropy_reduction_pct": 2.6
+    }
+  }
+}
