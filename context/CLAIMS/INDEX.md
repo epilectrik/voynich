@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1061 validated constraints | **Version:** 4.35 | **Date:** 2026-02-22
+**Total:** 1065 validated constraints | **Version:** 4.36 | **Date:** 2026-02-22
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3327,6 +3327,15 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 | # | Description | Tier | Tags | Location |
 |---|-------------|------|------|----------|
 | **1217** | **Lane vs Non-Lane Atom Content Separation** (QO/CHSH lane tokens carry ENERGY/STABILITY/MONITORING atoms; non-lane tokens carry ITERATION atoms 37.9% vs 4.3%; k 6.7x lane-enriched, t 7.7x lane-enriched, n 0.04x lane-depleted; two interleaved information streams: energy control loop vs parametric metadata; p<0.002 within-folio shuffle) | 2 | B, lanes, atoms, PREFIX, energy, iteration | -> [C1217_lane_atom_content_separation.md](C1217_lane_atom_content_separation.md) |
+
+### PREFIX Atom Roles (C1218-C1221) -- Phase: PREFIX_ATOM_ROLES (Phase 434)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1218** | **PREFIX Internal Positional Grammar** (PREFIX characters have strong positional preferences: dedicated modifiers q,d,f,p,y,s at POS-0, dedicated bases h,e at POS-1+, dual-role o,k,l,t,c,a,r; forms base-modifier grammar parallel to MIDDLE INITIAL/TERMINAL syntax; reinterprets C1193 low additivity as role-switching not non-compositionality) | 2 | B, PREFIX, atoms, grammar, positional | -> [C1218_prefix_positional_grammar.md](C1218_prefix_positional_grammar.md) |
+| **1219** | **Base Character Determines MIDDLE Content** (final character of PREFIX predicts MIDDLE atom profile: within-base cosine 0.950 vs between-base 0.515, ratio 1.84; a-base=80% ITERATION, o-base=42% ENERGY, h-base=32% STABILITY+31% CLOSURE, e-base=53% CLOSURE; base defines operational domain, modifier selects variant) | 2 | B, PREFIX, atoms, base, MIDDLE | -> [C1219_base_character_determines_middle_content.md](C1219_base_character_determines_middle_content.md) |
+| **1220** | **PREFIX Modifier Consistency Varies by Character** (cross-base modifier consistency ranges from high o=0.836, l=0.794, a=0.756 to low d=0.345, s=0.368, c=0.380; compositionality is partial and modifier-specific; consistent modifiers are genuine compositional elements, base-dependent modifiers function more as allomorphs) | 2 | B, PREFIX, atoms, modifier, compositionality | -> [C1220_modifier_consistency_varies.md](C1220_modifier_consistency_varies.md) |
+| **1221** | **Prep PREFIX Similarity is Base-Driven** (prep PREFIXes pch,tch,dch,te,lch have mean cosine 0.963 but shuffle test p=0.998 shows not special; similarity from shared h-base; challenges F-BRU-012 distinct operation glosses; prep PREFIXes are h-base mode variants not independent action verbs) | 2 | B, PREFIX, prep, Brunschwig, base | -> [C1221_prep_prefix_similarity_base_driven.md](C1221_prep_prefix_similarity_base_driven.md) |
 
 ---
 
