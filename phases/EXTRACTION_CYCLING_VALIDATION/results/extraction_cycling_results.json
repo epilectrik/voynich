@@ -1,0 +1,268 @@
+{
+  "phase": "EXTRACTION_CYCLING_VALIDATION",
+  "total_paragraphs": 469,
+  "n_mode_assigned": 55,
+  "t1_prefix_by_mode": {
+    "n_mode_a": 285,
+    "n_mode_b": 350,
+    "per_domain": {
+      "energy": {
+        "mode_a_mean": 0.2599,
+        "mode_b_mean": 0.1762,
+        "a_over_b_ratio": 1.4757,
+        "mann_whitney_p": 0.0
+      },
+      "vessel": {
+        "mode_a_mean": 0.161,
+        "mode_b_mean": 0.1475,
+        "a_over_b_ratio": 1.0913,
+        "mann_whitney_p": 0.229
+      },
+      "process": {
+        "mode_a_mean": 0.2351,
+        "mode_b_mean": 0.2605,
+        "a_over_b_ratio": 0.9024,
+        "mann_whitney_p": 0.0197
+      },
+      "other": {
+        "mode_a_mean": 0.2197,
+        "mode_b_mean": 0.2554,
+        "a_over_b_ratio": 0.8604,
+        "mann_whitney_p": 0.0077
+      },
+      "none": {
+        "mode_a_mean": 0.1243,
+        "mode_b_mean": 0.1605,
+        "a_over_b_ratio": 0.7746,
+        "mann_whitney_p": 0.0058
+      }
+    },
+    "energy_a_over_b": 1.4757,
+    "vessel_process_b_over_a": 1.0302,
+    "energy_pass": false,
+    "vp_pass": false,
+    "verdict": "PREFIX_MODE_INDEPENDENT"
+  },
+  "t2_lane_alignment": {
+    "n_lines": 635,
+    "global_r": 0.256,
+    "global_p": 0.0,
+    "mean_within_r": 0.3125,
+    "n_within_paragraphs": 55,
+    "interpretation": "PARTIALLY_LANE_EXPRESSED"
+  },
+  "t3_middle_by_mode": {
+    "n_mode_a": 285,
+    "n_mode_b": 350,
+    "per_family": {
+      "k_family": {
+        "mode_a_mean": 0.2123,
+        "mode_b_mean": 0.1315,
+        "a_over_b_ratio": 1.6145,
+        "mann_whitney_p": 0.0
+      },
+      "e_family": {
+        "mode_a_mean": 0.1984,
+        "mode_b_mean": 0.2408,
+        "a_over_b_ratio": 0.8238,
+        "mann_whitney_p": 0.0003
+      },
+      "prep_family": {
+        "mode_a_mean": 0.0224,
+        "mode_b_mean": 0.0078,
+        "a_over_b_ratio": 2.8547,
+        "mann_whitney_p": 0.0
+      },
+      "other": {
+        "mode_a_mean": 0.5696,
+        "mode_b_mean": 0.6213,
+        "a_over_b_ratio": 0.9168,
+        "mann_whitney_p": 0.0074
+      }
+    },
+    "k_enriched_in_a": true,
+    "e_enriched_in_b": true,
+    "verdict": "MIDDLE_MODE_DIFFERENTIATION_CONFIRMED"
+  },
+  "t4_prefix_migration": {
+    "n_qualifying": 124,
+    "per_domain": {
+      "energy": {
+        "n": 124,
+        "mean_rho": -0.1512,
+        "t_stat": -3.9263,
+        "t_p": 0.0001,
+        "frac_predicted_sign": 0.6452
+      },
+      "vessel": {
+        "n": 124,
+        "mean_rho": -0.0804,
+        "t_stat": -1.8201,
+        "t_p": 0.0712,
+        "frac_predicted_sign": 0.3468
+      },
+      "process": {
+        "n": 124,
+        "mean_rho": 0.0503,
+        "t_stat": 1.2199,
+        "t_p": 0.2249,
+        "frac_predicted_sign": 0.5565
+      }
+    },
+    "energy_declining": true,
+    "vessel_rising": false,
+    "process_rising": false,
+    "verdict": "PREFIX_MIGRATION_PARTIAL"
+  },
+  "t5_fl_mode_alignment": {
+    "total_pairs": 454,
+    "no_fl_pairs": 126,
+    "contingency": {
+      "regression_switch": 66,
+      "regression_same": 93,
+      "no_regression_switch": 131,
+      "no_regression_same": 164
+    },
+    "regression_switch_rate": 0.4151,
+    "no_regression_switch_rate": 0.4441,
+    "odds_ratio": 0.8885,
+    "fisher_p": 0.6198,
+    "verdict": "FL_MODE_INDEPENDENT"
+  },
+  "t6_mode_universality": {
+    "n_paragraphs": 55,
+    "within_mode_variance": 0.0083,
+    "between_mode_variance": 0.038,
+    "f_statistic": 4.5598,
+    "global_silhouette_paragraph_labels": 0.2925,
+    "global_silhouette_refit": 0.4281,
+    "global_a_centroid": [
+      0.4296,
+      0.0189,
+      0.0857,
+      0.4658
+    ],
+    "global_b_centroid": [
+      0.1548,
+      0.0315,
+      0.0724,
+      0.7414
+    ],
+    "n_total_lines": 635,
+    "verdict": "MODES_UNIVERSAL"
+  },
+  "t7_tail_signatures": {
+    "k2": {
+      "silhouette": 0.1971,
+      "cluster_sizes": [
+        145,
+        131
+      ]
+    },
+    "k3": {
+      "silhouette": 0.2124,
+      "cluster_sizes": [
+        75,
+        113,
+        88
+      ]
+    },
+    "k4": {
+      "silhouette": 0.2025,
+      "cluster_sizes": [
+        80,
+        60,
+        76,
+        60
+      ]
+    },
+    "best_k": 3,
+    "section_chi2": 31.7298,
+    "section_chi_p": 0.0001,
+    "centroids": {
+      "cluster_0": {
+        "energy": 0.2777,
+        "vessel": 0.1336,
+        "process": 0.2564,
+        "k_family": 0.1908,
+        "e_family": 0.2579,
+        "prep_family": 0.0134
+      },
+      "cluster_1": {
+        "energy": 0.0906,
+        "vessel": 0.2498,
+        "process": 0.187,
+        "k_family": 0.0973,
+        "e_family": 0.1607,
+        "prep_family": 0.0034
+      },
+      "cluster_2": {
+        "energy": 0.1039,
+        "vessel": 0.1107,
+        "process": 0.4052,
+        "k_family": 0.0887,
+        "e_family": 0.184,
+        "prep_family": 0.0081
+      }
+    },
+    "verdict": "TAIL_CLUSTERS_DETECTED"
+  },
+  "t8_section_generalization": {
+    "B": {
+      "n_paragraphs": 33,
+      "n_mode_a_lines": 171,
+      "n_mode_b_lines": 212,
+      "energy_a_mean": 0.3077,
+      "energy_b_mean": 0.2073,
+      "energy_ratio": 1.4842,
+      "energy_p": 0.0,
+      "vp_a_mean": 0.3705,
+      "vp_b_mean": 0.4087,
+      "vp_ratio": 1.1031,
+      "vp_p": 0.0526,
+      "same_direction": true
+    },
+    "H": {
+      "n_paragraphs": 7,
+      "n_mode_a_lines": 32,
+      "n_mode_b_lines": 31,
+      "energy_a_mean": 0.1101,
+      "energy_b_mean": 0.0716,
+      "energy_ratio": 1.5381,
+      "energy_p": 0.0959,
+      "vp_a_mean": 0.4532,
+      "vp_b_mean": 0.3754,
+      "vp_ratio": 0.8282,
+      "vp_p": 0.1312,
+      "same_direction": false
+    },
+    "S": {
+      "n_paragraphs": 10,
+      "n_mode_a_lines": 65,
+      "n_mode_b_lines": 70,
+      "energy_a_mean": 0.2277,
+      "energy_b_mean": 0.1456,
+      "energy_ratio": 1.5639,
+      "energy_p": 0.0003,
+      "vp_a_mean": 0.4402,
+      "vp_b_mean": 0.461,
+      "vp_ratio": 1.0473,
+      "vp_p": 0.3923,
+      "same_direction": true
+    },
+    "verdict": "SECTION_VARIABLE"
+  },
+  "synthesis": {
+    "test_verdicts": {
+      "t1": "PREFIX_MODE_INDEPENDENT",
+      "t2": "PARTIALLY_LANE_EXPRESSED",
+      "t3": "MIDDLE_MODE_DIFFERENTIATION_CONFIRMED",
+      "t4": "PREFIX_MIGRATION_PARTIAL",
+      "t5": "FL_MODE_INDEPENDENT",
+      "t6": "MODES_UNIVERSAL",
+      "t7": "TAIL_CLUSTERS_DETECTED",
+      "t8": "SECTION_VARIABLE"
+    },
+    "overall_verdict": "SUFFIX_MODES_NOT_FUNCTIONAL"
+  }
+}

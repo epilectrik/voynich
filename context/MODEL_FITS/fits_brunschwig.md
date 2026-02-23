@@ -2397,3 +2397,53 @@ The iterative cycling pattern matches historical distillation practice:
 - `phases/APPARATUS_TRANSITION_DETECTION/results/apparatus_transition_results.json`
 - `phases/APPARATUS_TRANSITION_DETECTION/scripts/fractional_line_test.py`
 - `phases/APPARATUS_TRANSITION_DETECTION/results/fractional_line_results.json`
+
+---
+
+## F-BRU-034: Extraction Cycling Mode Differentiation
+
+**Tier:** F3 (Domain Model Test)
+**Scope:** B
+**Result:** CYCLING_MODES_FUNCTIONALLY_GROUNDED
+**Supports:** C1230 (Mode MIDDLE differentiation), C1231 (Universal suffix modes), C1232 (Tail product signatures)
+**Phase:** EXTRACTION_CYCLING_VALIDATION (Phase 439)
+
+### Hypothesis
+
+The two alternating suffix modes (C1229) correspond to functionally distinct operational phases in an extraction process: Mode A = energy specification + mechanical processing (agitate/re-spec), Mode B = equilibration/continuation (run/stabilize).
+
+### Results
+
+**T3 PASS (DECISIVE): MIDDLE families differentiate modes**
+- k-family 1.62x enriched in Mode A (p<0.000001)
+- e-family enriched in Mode B (0.824x ratio, p=0.000256)
+- Prep MIDDLEs 2.86x enriched in Mode A (p=0.000034)
+
+**T6 PASS (FALSIFICATION): Modes are universal**
+- Global silhouette 0.293 (paragraph labels), 0.428 (refit)
+- F=4.56 between/within variance ratio
+- Centroids: A=[T=0.43, B=0.47], B=[T=0.16, B=0.74]
+
+**T7 PASS: Tail signatures cluster into 3 product types**
+- k=3 silhouette 0.212, section-correlated (chi2=31.73, p=0.0001)
+
+**T1 PARTIAL: PREFIX partially differentiates**
+- Energy (qo) 1.48x in Mode A (p<0.000001) — just under 1.5 pre-registered threshold
+- Vessel/Process NOT enriched in Mode B (ratio 1.03)
+
+**T5 FAIL: FL resets independent of mode switches**
+- OR=0.89, p=0.62
+
+### Brunschwig alignment
+
+The mode structure maps to batch extraction practice:
+- Mode A (agitate/re-spec): mechanical processing between extraction passes, energy parameter adjustment. Prep MIDDLEs (tch, dch, pch) serve as agitation at any paragraph position.
+- Mode B (run/stabilize): passive extraction continues during equilibration. e-family MIDDLEs encode the equilibration phase.
+- ke within lines = micro-cycle (heat burst then equilibrate)
+- Mode A/B between lines = macro-cycle (agitate/adjust then let it run)
+- Gradient from specification-heavy to continuation-heavy = diminishing returns as easy compounds exhausted
+
+### Files
+
+- `phases/EXTRACTION_CYCLING_VALIDATION/scripts/extraction_cycling_test.py`
+- `phases/EXTRACTION_CYCLING_VALIDATION/results/extraction_cycling_results.json`

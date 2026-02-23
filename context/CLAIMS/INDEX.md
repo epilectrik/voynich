@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1073 validated constraints | **Version:** 4.42 | **Date:** 2026-02-22
+**Total:** 1076 validated constraints | **Version:** 4.43 | **Date:** 2026-02-22
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3368,6 +3368,14 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 | **1227** | **FL Cross-Line Reset Clustering** (36.4% of cross-line FL pairs show regression, dominated by LATE->MEDIAL 190/257=73.9%; regressions cluster at non-uniform paragraph positions KS p<0.0001; partial reset marks cycle boundaries within continuous process; section-stable 34.8-38.0%; LATE->EARLY forbidden within lines C787 but occurs 33 times between lines) | 2 | B, FL, paragraph, cross-line, reset, cycling | -> [C1227_fl_cross_line_reset_clustering.md](C1227_fl_cross_line_reset_clustering.md) |
 | **1228** | **PREFIX Channel Switching Within Paragraphs** (73.2% of paragraphs have interior body line pairs with PREFIX JSD matching or exceeding header-body opening JSD; interior JSD mean 0.470 vs opening 0.504; operational mode routinely resets mid-paragraph; section-consistent 69.6-93.3%; combined with smooth kernel gradient 2.4% breakpoints indicates cycling not apparatus switching) | 2 | B, PREFIX, paragraph, channel, switching, cycling | -> [C1228_prefix_channel_switching.md](C1228_prefix_channel_switching.md) |
 | **1229** | **Alternating Suffix Modes Within Paragraphs** (100% of paragraphs with 8+ body lines show two distinct suffix clusters k=2 silhouette 0.459; 80% interleaved not sequential; suffix gradient continuous with no discrete breakpoints 2.5-3.3% piecewise rate; FL resets do not coincide with suffix changes p=0.87; paragraph length does not predict suffix diversity rho=0.058; two modes alternate between specification-heavy and continuation-heavy throughout body) | 2 | B, suffix, paragraph, clustering, alternating, gradient | -> [C1229_alternating_suffix_modes.md](C1229_alternating_suffix_modes.md) |
+
+### Extraction Cycling Validation (C1230-C1232) -- Phase: EXTRACTION_CYCLING_VALIDATION (Phase 439)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1230** | **Suffix Mode MIDDLE Differentiation** (Mode A terminal-heavy lines have 1.62x k-family MIDDLEs p<0.000001, 2.86x prep MIDDLEs p=0.000034, 1.48x qo-PREFIX p<0.000001; Mode B bare-heavy lines have elevated e-family MIDDLEs p=0.000256; Mode A = energy + mechanical specification/agitation; Mode B = equilibration/continuation; partially lane-expressed r=0.256) | 2 | B, MIDDLE, PREFIX, suffix-mode, cycling, energy, extraction | -> [C1230_mode_middle_differentiation.md](C1230_mode_middle_differentiation.md) |
+| **1231** | **Universal Suffix Mode Centroids** (55 paragraphs converge on two global centroids: Mode A terminal=0.430/bare=0.466, Mode B terminal=0.155/bare=0.741; global silhouette 0.293 paragraph-labels, 0.428 refit; F=4.56 between/within variance ratio; modes are universal grammar property not paragraph-specific noise) | 2 | B, suffix-mode, universal, paragraph, clustering | -> [C1231_universal_suffix_modes.md](C1231_universal_suffix_modes.md) |
+| **1232** | **Paragraph Tail Product Signatures** (last 2 body lines cluster into k=3 distinct PREFIX+MIDDLE profiles silhouette 0.212; section-correlated chi2=31.73 p=0.0001; different paragraphs end with different operational signatures suggesting output product differentiation) | 2 | B, paragraph, tail, product, clustering, section | -> [C1232_paragraph_tail_product_signatures.md](C1232_paragraph_tail_product_signatures.md) |
 
 ---
 
