@@ -3306,7 +3306,7 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 
 | # | Description | Tier | Tags | Location |
 |---|-------------|------|------|----------|
-| **1212** | **Cross-Token Sequential Chaining** (TERMINAL(N)->INITIAL(N+1) transitions show genuine sequential structure: chi2=1242.9, V=0.0709, MI=0.0637, shuffle z=19.74; enriched: h->p 2.61x, r->a 1.99x, y->q 1.91x; depleted: r->t 0.25x, r->l 0.30x; cross-token signal 23% of within-MIDDLE V, 6% of MI; cross-line NOT weaker: MI ratio=1.262; survives daiin exclusion z=16.13) | 2 | B, atoms, chaining, sequential | -> [C1212_cross_token_sequential_chaining.md](C1212_cross_token_sequential_chaining.md) |
+| **1212** | **Cross-Token Sequential Chaining** (TERMINAL(N)->INITIAL(N+1) is the strongest genuine sequential signal z=20.3; full 3x3 slot matrix shows MEDIAL->MEDIAL has highest raw MI=0.092 but lowest z=3.4 -- 80% co-occurrence not sequence; cross-token signal 6% of within-MIDDLE MI; enriched: h->p 2.61x, r->a 1.99x; depleted: r->t 0.25x; cross-line NOT weaker MI ratio=1.262; within-lane stratification confirms not purely PREFIX confound) | 2 | B, atoms, chaining, sequential | -> [C1212_cross_token_sequential_chaining.md](C1212_cross_token_sequential_chaining.md) |
 | **1213** | **Axis-Switching Dominance** (programs switch C1207 axes between tokens 84.8% of the time; same-axis continuation 15.2% vs expected 13.2%, enrichment only 1.15x; ITERATION->ITERATION highest same-axis at 33.2%; STABILITY dominant target from all axes; programs interleave across operational channels) | 2 | B, atoms, axes, switching, programs | -> [C1213_axis_switching_dominance.md](C1213_axis_switching_dominance.md) |
 
 ---

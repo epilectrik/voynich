@@ -17,6 +17,7 @@ Tests:
   T2:  Cross-token vs within-MIDDLE comparison
   T3:  Axis continuity vs axis switching
   T4:  Cross-line boundary comparison
+  T5:  Full 3x3 slot matrix (all slot pairings between consecutive tokens)
 """
 import json
 import math
@@ -58,6 +59,22 @@ def load_tokens_by_line():
     for t in tx.currier_b():
         m = morph.extract(t.word)
         if m.middle and m.middle != '_EMPTY_' and len(m.middle) >= 2:
+            # Classify PREFIX lane
+            pfx = m.prefix or ''
+            if pfx.startswith('qo'):
+                lane = 'qo'
+            elif pfx.startswith('sh'):
+                lane = 'sh'
+            elif pfx.startswith('ch'):
+                lane = 'ch'
+            elif pfx.startswith('d') or pfx.startswith('da'):
+                lane = 'da'
+            elif pfx.startswith('o') or pfx.startswith('ol'):
+                lane = 'ol'
+            elif pfx == '' or pfx is None:
+                lane = 'BARE'
+            else:
+                lane = 'OTHER'
             line_groups[(t.folio, t.line)].append({
                 'word': t.word,
                 'middle': m.middle,
@@ -66,6 +83,9 @@ def load_tokens_by_line():
                 'section': t.section,
                 'initial': m.middle[0],
                 'terminal': m.middle[-1],
+                'medial': m.middle[1] if len(m.middle) >= 3 else None,
+                'prefix': pfx,
+                'lane': lane,
             })
     return line_groups
 
@@ -481,6 +501,369 @@ def test_cross_line(line_groups):
 
 
 # ============================================================
+# T5: FULL 3x3 SLOT MATRIX
+# ============================================================
+
+def test_slot_matrix(line_groups):
+    """Build all 9 slot-pair contingency tables between consecutive tokens.
+
+    Slots: INITIAL (pos 0), MEDIAL (pos 1, requires len>=3), TERMINAL (last pos).
+    For each of the 9 combinations SlotA(N) x SlotB(N+1), compute V and MI.
+    """
+    print(f"\n{'='*70}")
+    print("T5: FULL 3x3 SLOT MATRIX (all cross-token slot pairings)")
+    print("=" * 70)
+
+    slot_names = ['initial', 'medial', 'terminal']
+    tables = {}  # (slotA, slotB) -> Counter
+
+    for sa in slot_names:
+        for sb in slot_names:
+            tables[(sa, sb)] = Counter()
+
+    n_all = 0  # pairs where both have all 3 slots
+    n_no_medial = 0  # pairs where at least one lacks medial
+
+    for key in sorted(line_groups.keys()):
+        tokens = line_groups[key]
+        for j in range(len(tokens) - 1):
+            tA = tokens[j]
+            tB = tokens[j + 1]
+
+            # INITIAL x INITIAL, INITIAL x TERMINAL, TERMINAL x INITIAL, TERMINAL x TERMINAL
+            # always available (all tokens have len >= 2)
+            for sa in ['initial', 'terminal']:
+                for sb in ['initial', 'terminal']:
+                    tables[(sa, sb)][(tA[sa], tB[sb])] += 1
+
+            # Pairs involving MEDIAL of A: need A to have medial
+            if tA['medial'] is not None:
+                for sb in ['initial', 'terminal']:
+                    tables[('medial', sb)][(tA['medial'], tB[sb])] += 1
+                if tB['medial'] is not None:
+                    tables[('medial', 'medial')][(tA['medial'], tB['medial'])] += 1
+
+            # Pairs involving MEDIAL of B: need B to have medial
+            if tB['medial'] is not None:
+                for sa in ['initial', 'terminal']:
+                    tables[(sa, 'medial')][(tA[sa], tB['medial'])] += 1
+
+            if tA['medial'] is not None and tB['medial'] is not None:
+                n_all += 1
+            else:
+                n_no_medial += 1
+
+    # Compute V and MI for each cell
+    print(f"\n  Pairs with both tokens having MEDIAL: {n_all}")
+    print(f"  Pairs missing at least one MEDIAL: {n_no_medial}")
+
+    results = {}
+    print(f"\n  {'':>20}  {'INITIAL(N+1)':>16}  {'MEDIAL(N+1)':>16}  {'TERMINAL(N+1)':>16}")
+    for sa in slot_names:
+        row_str = f"  {sa.upper()+'(N)':>18}  "
+        for sb in slot_names:
+            cont = tables[(sa, sb)]
+            n = sum(cont.values())
+            if n < 100:
+                row_str += f"{'n<100':>16}  "
+                results[f"{sa}_x_{sb}"] = {'n': n, 'cramers_v': None, 'mutual_info': None}
+                continue
+            chi2_val, v_val, _ = cramers_v(cont)
+            mi_val = mutual_info(cont)
+            row_str += f"V={v_val:.3f} MI={mi_val:.3f}  "
+            results[f"{sa}_x_{sb}"] = {
+                'n': n,
+                'cramers_v': round(v_val, 4),
+                'mutual_info': round(mi_val, 4),
+                'chi2': round(chi2_val, 1),
+            }
+        print(row_str)
+
+    # Summary: rank all 9 cells by MI
+    print(f"\n  Ranked by MI (strongest cross-token slot relationship):")
+    ranked = [(k, v) for k, v in results.items() if v.get('mutual_info') is not None]
+    ranked.sort(key=lambda x: -x[1]['mutual_info'])
+    for i, (pair, info) in enumerate(ranked, 1):
+        sa, sb = pair.split('_x_')
+        print(f"    {i}. {sa.upper()}(N) -> {sb.upper()}(N+1): "
+              f"V={info['cramers_v']:.4f}, MI={info['mutual_info']:.4f} bits (n={info['n']})")
+
+    # For the top cell, show enriched/depleted pairs
+    if ranked:
+        top_pair = ranked[0][0]
+        sa, sb = top_pair.split('_x_')
+        cont = tables[(sa, sb)]
+        ratios = enrichment_ratios(cont)
+        enriched = [(k, v) for k, v in ratios.items() if v['ratio'] >= 1.5 and v['obs'] >= 15]
+        depleted = [(k, v) for k, v in ratios.items() if v['ratio'] <= 0.5 and v['exp'] >= 15]
+        enriched.sort(key=lambda x: -x[1]['ratio'])
+        depleted.sort(key=lambda x: x[1]['ratio'])
+
+        print(f"\n  Top cell enriched pairs ({sa.upper()}(N) -> {sb.upper()}(N+1), >= 1.5x, obs >= 15):")
+        for (a, b), info in enriched[:15]:
+            print(f"    {a}->{b}: {info['obs']}/{info['exp']} = {info['ratio']}x")
+
+        if depleted:
+            print(f"\n  Top cell depleted pairs (<= 0.5x, exp >= 15):")
+            for (a, b), info in depleted[:15]:
+                print(f"    {a}->{b}: {info['obs']}/{info['exp']} = {info['ratio']}x")
+
+    return results
+
+
+# ============================================================
+# T5b: SHUFFLE CONTROL ON ALL 9 CELLS
+# ============================================================
+
+def test_slot_matrix_shuffle(line_groups):
+    """Shuffle control for all 9 slot-pair cells.
+
+    For each of 500 iterations, shuffle token order within each line
+    (preserving line composition, destroying sequence), recompute MI
+    for all 9 cells. Report z-scores.
+    """
+    print(f"\n{'='*70}")
+    print("T5b: SHUFFLE CONTROL ON ALL 9 SLOT CELLS (500 iterations)")
+    print("=" * 70)
+
+    slot_names = ['initial', 'medial', 'terminal']
+    n_shuf = 500
+    random.seed(99)
+
+    # First compute observed MI for all 9 cells
+    obs_mi = {}
+    for sa in slot_names:
+        for sb in slot_names:
+            obs_mi[(sa, sb)] = _compute_cell_mi(line_groups, sa, sb)
+
+    # Shuffle iterations
+    shuf_mis = {(sa, sb): [] for sa in slot_names for sb in slot_names}
+
+    for s in range(n_shuf):
+        if s % 100 == 0:
+            print(f"  Shuffle {s}/{n_shuf}...")
+        for key in line_groups:
+            tokens = line_groups[key]
+            if len(tokens) < 2:
+                continue
+            indices = list(range(len(tokens)))
+            random.shuffle(indices)
+            shuffled = [tokens[i] for i in indices]
+
+            for j in range(len(shuffled) - 1):
+                tA = shuffled[j]
+                tB = shuffled[j + 1]
+                for sa in slot_names:
+                    for sb in slot_names:
+                        pass  # accumulate below
+
+        # Full shuffle pass: rebuild all 9 tables
+        tables = {(sa, sb): Counter() for sa in slot_names for sb in slot_names}
+        for key in line_groups:
+            tokens = line_groups[key]
+            if len(tokens) < 2:
+                continue
+            indices = list(range(len(tokens)))
+            random.shuffle(indices)
+            shuffled = [tokens[i] for i in indices]
+            for j in range(len(shuffled) - 1):
+                tA = shuffled[j]
+                tB = shuffled[j + 1]
+                for sa in ['initial', 'terminal']:
+                    for sb in ['initial', 'terminal']:
+                        tables[(sa, sb)][(tA[sa], tB[sb])] += 1
+                if tA['medial'] is not None:
+                    for sb in ['initial', 'terminal']:
+                        tables[('medial', sb)][(tA['medial'], tB[sb])] += 1
+                    if tB['medial'] is not None:
+                        tables[('medial', 'medial')][(tA['medial'], tB['medial'])] += 1
+                if tB['medial'] is not None:
+                    for sa in ['initial', 'terminal']:
+                        tables[(sa, 'medial')][(tA[sa], tB['medial'])] += 1
+
+        for sa in slot_names:
+            for sb in slot_names:
+                cont = tables[(sa, sb)]
+                if sum(cont.values()) >= 100:
+                    shuf_mis[(sa, sb)].append(mutual_info(cont))
+
+    # Compute z-scores
+    results = {}
+    print(f"\n  {'':>20}  {'INITIAL(N+1)':>16}  {'MEDIAL(N+1)':>16}  {'TERMINAL(N+1)':>16}")
+    for sa in slot_names:
+        row_str = f"  {sa.upper()+'(N)':>18}  "
+        for sb in slot_names:
+            obs = obs_mi[(sa, sb)]
+            vals = shuf_mis[(sa, sb)]
+            if len(vals) < 10:
+                row_str += f"{'n/a':>16}  "
+                results[f"{sa}_x_{sb}"] = {'obs_mi': round(obs, 4), 'z': None}
+                continue
+            mean_s = sum(vals) / len(vals)
+            std_s = (sum((v - mean_s)**2 for v in vals) / len(vals)) ** 0.5
+            z = (obs - mean_s) / std_s if std_s > 0 else 0
+            row_str += f"z={z:>6.1f}          "
+            results[f"{sa}_x_{sb}"] = {
+                'obs_mi': round(obs, 4),
+                'shuffle_mean': round(mean_s, 4),
+                'shuffle_std': round(std_s, 4),
+                'z': round(z, 2),
+            }
+        print(row_str)
+
+    # Summary
+    print(f"\n  Ranked by z-score (genuine sequential structure):")
+    ranked = [(k, v) for k, v in results.items() if v.get('z') is not None]
+    ranked.sort(key=lambda x: -x[1]['z'])
+    for i, (pair, info) in enumerate(ranked, 1):
+        sa, sb = pair.split('_x_')
+        sig = "***" if info['z'] > 5 else "**" if info['z'] > 3 else "*" if info['z'] > 2 else ""
+        print(f"    {i}. {sa.upper()}(N) -> {sb.upper()}(N+1): "
+              f"z={info['z']:.1f} (obs={info['obs_mi']:.4f}, shuf={info['shuffle_mean']:.4f}) {sig}")
+
+    return results
+
+
+def _compute_cell_mi(line_groups, slot_a, slot_b):
+    """Compute MI for a single slot pair across all consecutive token pairs."""
+    cont = Counter()
+    for key in sorted(line_groups.keys()):
+        tokens = line_groups[key]
+        for j in range(len(tokens) - 1):
+            tA = tokens[j]
+            tB = tokens[j + 1]
+            val_a = tA.get(slot_a)
+            val_b = tB.get(slot_b)
+            if val_a is not None and val_b is not None:
+                cont[(val_a, val_b)] += 1
+    return mutual_info(cont) if sum(cont.values()) >= 100 else 0.0
+
+
+# ============================================================
+# T5c: PREFIX LANE STRATIFIED MATRIX
+# ============================================================
+
+def test_lane_stratified(line_groups):
+    """Compute 3x3 slot matrix separately for same-lane consecutive pairs.
+
+    For each PREFIX lane (qo, ch, sh, da, ol, BARE), restrict to pairs
+    where BOTH tokens share that lane, then compute V and MI for all 9 cells.
+    """
+    print(f"\n{'='*70}")
+    print("T5c: PREFIX LANE STRATIFIED 3x3 MATRIX")
+    print("=" * 70)
+
+    slot_names = ['initial', 'medial', 'terminal']
+
+    # Count lane distribution
+    lane_counts = Counter()
+    for key in line_groups:
+        for t in line_groups[key]:
+            lane_counts[t['lane']] += 1
+
+    print(f"\n  Token lane distribution:")
+    for lane, ct in lane_counts.most_common():
+        print(f"    {lane}: {ct}")
+
+    # Count same-lane consecutive pairs per lane
+    lane_pair_counts = Counter()
+    for key in sorted(line_groups.keys()):
+        tokens = line_groups[key]
+        for j in range(len(tokens) - 1):
+            lA = tokens[j]['lane']
+            lB = tokens[j + 1]['lane']
+            if lA == lB:
+                lane_pair_counts[lA] += 1
+
+    print(f"\n  Same-lane consecutive pairs:")
+    for lane, ct in lane_pair_counts.most_common():
+        print(f"    {lane}->{lane}: {ct}")
+
+    # For each lane with enough pairs, compute 3x3 matrix
+    results = {}
+    min_pairs = 200
+
+    for lane in sorted(lane_pair_counts.keys()):
+        n_pairs = lane_pair_counts[lane]
+        if n_pairs < min_pairs:
+            print(f"\n  {lane}: skipping (only {n_pairs} same-lane pairs, need {min_pairs})")
+            continue
+
+        print(f"\n  {'='*60}")
+        print(f"  LANE: {lane} ({n_pairs} same-lane consecutive pairs)")
+        print(f"  {'='*60}")
+
+        tables = {(sa, sb): Counter() for sa in slot_names for sb in slot_names}
+
+        for key in sorted(line_groups.keys()):
+            tokens = line_groups[key]
+            for j in range(len(tokens) - 1):
+                tA = tokens[j]
+                tB = tokens[j + 1]
+                if tA['lane'] != lane or tB['lane'] != lane:
+                    continue
+
+                for sa in ['initial', 'terminal']:
+                    for sb in ['initial', 'terminal']:
+                        tables[(sa, sb)][(tA[sa], tB[sb])] += 1
+                if tA['medial'] is not None:
+                    for sb in ['initial', 'terminal']:
+                        tables[('medial', sb)][(tA['medial'], tB[sb])] += 1
+                    if tB['medial'] is not None:
+                        tables[('medial', 'medial')][(tA['medial'], tB['medial'])] += 1
+                if tB['medial'] is not None:
+                    for sa in ['initial', 'terminal']:
+                        tables[(sa, 'medial')][(tA[sa], tB['medial'])] += 1
+
+        lane_results = {}
+        print(f"\n  {'':>20}  {'INITIAL(N+1)':>16}  {'MEDIAL(N+1)':>16}  {'TERMINAL(N+1)':>16}")
+        for sa in slot_names:
+            row_str = f"  {sa.upper()+'(N)':>18}  "
+            for sb in slot_names:
+                cont = tables[(sa, sb)]
+                n = sum(cont.values())
+                if n < 50:
+                    row_str += f"{'n=' + str(n):>16}  "
+                    lane_results[f"{sa}_x_{sb}"] = {'n': n, 'cramers_v': None, 'mutual_info': None}
+                    continue
+                chi2_val, v_val, _ = cramers_v(cont)
+                mi_val = mutual_info(cont)
+                row_str += f"V={v_val:.3f} MI={mi_val:.3f}  "
+                lane_results[f"{sa}_x_{sb}"] = {
+                    'n': n,
+                    'cramers_v': round(v_val, 4),
+                    'mutual_info': round(mi_val, 4),
+                }
+            print(row_str)
+
+        # Rank cells for this lane
+        ranked = [(k, v) for k, v in lane_results.items()
+                  if v.get('mutual_info') is not None]
+        ranked.sort(key=lambda x: -x[1]['mutual_info'])
+        if ranked:
+            print(f"\n  Top 3 for {lane}:")
+            for i, (pair, info) in enumerate(ranked[:3], 1):
+                sa, sb = pair.split('_x_')
+                print(f"    {i}. {sa.upper()}(N) -> {sb.upper()}(N+1): "
+                      f"V={info['cramers_v']:.4f}, MI={info['mutual_info']:.4f} (n={info['n']})")
+
+        results[lane] = lane_results
+
+    # Cross-lane comparison: for each cell, compare unstratified vs within-lane
+    print(f"\n  {'='*60}")
+    print(f"  COMPARISON: Unstratified vs Within-Lane (MEDIAL x MEDIAL)")
+    print(f"  {'='*60}")
+    for lane in sorted(results.keys()):
+        cell = results[lane].get('medial_x_medial', {})
+        if cell.get('mutual_info') is not None:
+            print(f"    {lane}: V={cell['cramers_v']:.4f}, MI={cell['mutual_info']:.4f} (n={cell['n']})")
+        else:
+            print(f"    {lane}: insufficient data (n={cell.get('n', 0)})")
+
+    return results
+
+
+# ============================================================
 # MAIN
 # ============================================================
 
@@ -510,6 +893,15 @@ def main():
 
     # T4: Cross-line boundary
     results['T4_cross_line'] = test_cross_line(line_groups)
+
+    # T5: Full 3x3 slot matrix
+    results['T5_slot_matrix'] = test_slot_matrix(line_groups)
+
+    # T5b: Shuffle control on all 9 cells
+    results['T5b_shuffle_control'] = test_slot_matrix_shuffle(line_groups)
+
+    # T5c: Lane-stratified matrix
+    results['T5c_lane_stratified'] = test_lane_stratified(line_groups)
 
     # Save
     output_path = RESULTS_DIR / "chaining_results.json"
