@@ -88,7 +88,7 @@ and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-22 17:11
+**Generated:** 2026-02-22 18:42
 **Version:** FROZEN STATE (1057 constraints, 66 fits) [COMPACT]
 
 ---
@@ -2164,7 +2164,7 @@ C1208	**Atom Carryover Classification** (18 atoms classify into 3 carryover clas
 C1209	**MIDDLE Positional Grammar** (atoms occupy ordered slots within MIDDLEs: INITIAL {a,q,e,o} 86-57% initial; MEDIAL {c,i,p,d,f,s}; TERMINAL {n,y,m,r,h,l} 71-99% terminal; FREE {k,t} no preference; n 99.4% terminal, a 86.3% initial; all 18 atoms FDR-significant; k/t position-freedom consistent with kernel operator role)
 C1210	**MIDDLE Slot Syntax**
 C1211	**Sub-MIDDLE Pairwise Sufficiency** (INITIAL+MEDIAL+TERMINAL show REDUNDANCY not synergy: synergy=-0.827 bits; extends C1003 to sub-MIDDLE level; INITIAL explains 35.9% of TERMINAL entropy, MEDIAL 49.1%, both together 57.5%; pairwise interactions sufficient at both morphological levels)
-C1212	**Cross-Token Sequential Chaining** (TERMINAL(N)->INITIAL(N+1) transitions show genuine sequential structure: chi2=1242.9, V=0.0709, MI=0.0637, shuffle z=19.74; enriched: h->p 2.61x, r->a 1.99x, y->q 1.91x; depleted: r->t 0.25x, r->l 0.30x; cross-token signal 23% of within-MIDDLE V, 6% of MI; cross-line NOT weaker: MI ratio=1.262; survives daiin exclusion z=16.13)
+C1212	**Cross-Token Sequential Chaining** (TERMINAL(N)->INITIAL(N+1) is the strongest genuine sequential signal z=20.3; full 3x3 slot matrix shows MEDIAL->MEDIAL has highest raw MI=0.092 but lowest z=3.4 -- 80% co-occurrence not sequence; cross-token signal 6% of within-MIDDLE MI; enriched: h->p 2.61x, r->a 1.99x; depleted: r->t 0.25x; cross-line NOT weaker MI ratio=1.262; within-lane stratification confirms not purely PREFIX confound)
 C1213	**Axis-Switching Dominance** (programs switch C1207 axes between tokens 84.8% of the time; same-axis continuation 15.2% vs expected 13.2%, enrichment only 1.15x; ITERATION->ITERATION highest same-axis at 33.2%; STABILITY dominant target from all axes; programs interleave across operational channels)
 
 ---
