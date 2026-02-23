@@ -88,7 +88,7 @@ and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-22 23:16
+**Generated:** 2026-02-23 07:33
 **Version:** FROZEN STATE (1068 constraints, 67 fits) [COMPACT]
 
 ---
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1069 constraints | 2026-02-22
+CONSTRAINT_REFERENCE v2.6 | 1069 constraints | 2026-02-23
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2184,7 +2184,7 @@ C1224	**Axis Distribution Transformation**
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-02-22
+# Generated: 2026-02-23
 # Total: 67 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
