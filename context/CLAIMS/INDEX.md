@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1070 validated constraints | **Version:** 4.41 | **Date:** 2026-02-22
+**Total:** 1073 validated constraints | **Version:** 4.42 | **Date:** 2026-02-22
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3360,6 +3360,14 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 |---|-------------|------|------|----------|
 | **1225** | **E-depth Suffix Parametricity** (ke-family e-count restructures suffix grammar: single-e 64% -edy/14% -y vs multi-e 12% -edy/37% -y, chi-squared p<0.0001; -s suffix exclusive to multi-e; e-depth is parametric axis modulating output specification not noise; e-depth does NOT vary by REGIME p=0.62 or section p=0.067) | 2 | B, ke-family, e-depth, suffix, parametric, MIDDLE | -> [C1225_edepth_suffix_parametricity.md](C1225_edepth_suffix_parametricity.md) |
 | **1226** | **ke/ek Ratio Process-Context Conditioning** (k-e ordering conditioned by REGIME chi²=77.71 p<0.0001 and section chi²=138.50 p<0.0001; REGIME_1 18.6% ek vs REGIME_4 64.0% ek; HERBAL 79.1% ek vs BIO 19.7% ek; ke follows E-DOM predecessors 54.9% vs ek 22.5% OR=4.20; process-sensitivity marker; ke-family routes to QO not CHSH permutation p=0.9996 informative null) | 2 | B, ke-family, ek, REGIME, section, process-sensitivity, MIDDLE | -> [C1226_ke_ek_ratio_process_conditioning.md](C1226_ke_ek_ratio_process_conditioning.md) |
+
+### Apparatus Transition Detection (C1227-C1229) -- Phase: APPARATUS_TRANSITION_DETECTION (Phase 438)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1227** | **FL Cross-Line Reset Clustering** (36.4% of cross-line FL pairs show regression, dominated by LATE->MEDIAL 190/257=73.9%; regressions cluster at non-uniform paragraph positions KS p<0.0001; partial reset marks cycle boundaries within continuous process; section-stable 34.8-38.0%; LATE->EARLY forbidden within lines C787 but occurs 33 times between lines) | 2 | B, FL, paragraph, cross-line, reset, cycling | -> [C1227_fl_cross_line_reset_clustering.md](C1227_fl_cross_line_reset_clustering.md) |
+| **1228** | **PREFIX Channel Switching Within Paragraphs** (73.2% of paragraphs have interior body line pairs with PREFIX JSD matching or exceeding header-body opening JSD; interior JSD mean 0.470 vs opening 0.504; operational mode routinely resets mid-paragraph; section-consistent 69.6-93.3%; combined with smooth kernel gradient 2.4% breakpoints indicates cycling not apparatus switching) | 2 | B, PREFIX, paragraph, channel, switching, cycling | -> [C1228_prefix_channel_switching.md](C1228_prefix_channel_switching.md) |
+| **1229** | **Alternating Suffix Modes Within Paragraphs** (100% of paragraphs with 8+ body lines show two distinct suffix clusters k=2 silhouette 0.459; 80% interleaved not sequential; suffix gradient continuous with no discrete breakpoints 2.5-3.3% piecewise rate; FL resets do not coincide with suffix changes p=0.87; paragraph length does not predict suffix diversity rho=0.058; two modes alternate between specification-heavy and continuation-heavy throughout body) | 2 | B, suffix, paragraph, clustering, alternating, gradient | -> [C1229_alternating_suffix_modes.md](C1229_alternating_suffix_modes.md) |
 
 ---
 

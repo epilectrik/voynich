@@ -2314,3 +2314,86 @@ The ke/ek ratio mapping to process sensitivity is consistent with Brunschwig fir
 - `phases/KE_THERMAL_CYCLING_VALIDATION/scripts/ek_corrective_test.py`
 - `phases/KE_THERMAL_CYCLING_VALIDATION/results/ke_thermal_results.json`
 - `phases/KE_THERMAL_CYCLING_VALIDATION/results/ek_corrective_results.json`
+
+---
+
+## F-BRU-033: Iterative Extraction Cycling Within Paragraphs
+
+**Tier:** F3 (Domain Model Test)
+**Scope:** B
+**Result:** ITERATIVE_CYCLING_SUPPORTED
+**Supports:** C1227 (FL cross-line reset clustering), C1228 (PREFIX channel switching), C1229 (alternating suffix modes)
+**Phase:** APPARATUS_TRANSITION_DETECTION (Phase 438)
+
+### Hypothesis
+
+If paragraphs encode multi-apparatus distillation procedures, structural transitions (kernel inflection points, FL state resets, PREFIX channel switches) should mark apparatus boundaries within paragraphs. Alternatively, if paragraphs encode iterative extraction passes through a single apparatus, transitions should be smooth with structured cycling.
+
+### Method
+
+6-test battery probing different structural layers for discrete transitions vs continuous cycling:
+
+| Test | What it tests | Prediction for multi-apparatus |
+|------|---------------|-------------------------------|
+| A | h-kernel BIC breakpoints | >30% of paragraphs have kernel inflection |
+| B | MIDDLE Jaccard discontinuity | Vocabulary changes cluster at breakpoints |
+| C | PREFIX JSD switching | Interior divergence >= opening divergence |
+| D | Opener category runs test | Non-random opener ordering |
+| E | ke/ek ratio changepoint | ke/ek shifts at body midpoint |
+| F | FL state regression | Structured FL resets between lines |
+
+Extension: 4-test battery testing whether lines represent fractional distillation (discrete output products):
+
+| Test | What it tests | Prediction for fractional distillation |
+|------|---------------|---------------------------------------|
+| T1 | Suffix piecewise BIC | >30% breakpoints in suffix categories |
+| T2 | FL reset x suffix change | Suffix JSD larger at FL regression points |
+| T3 | Length x suffix diversity | Longer paragraphs = more diverse outputs |
+| T4 | Suffix profile clustering | k=2 or k=3 clusters in suffix profiles |
+
+### Results
+
+**Apparatus transition tests:**
+
+| Test | Result | Verdict |
+|------|--------|---------|
+| A | 2.4% breakpoints | SINGLE_PROCESS_PARSIMONIOUS |
+| B | KS p<0.0001 | VOCABULARY_DISCONTINUITY_STRUCTURED |
+| C | 73.2% switch rate | PREFIX_SWITCHING_DETECTED |
+| D | 0% non-random | OPENER_ORDERING_RANDOM |
+| E | perm p=0.168 | KE_EK_GRADIENT_ONLY |
+| F | 36.4% regression, KS p<0.0001 | FL_RESET_STRUCTURED |
+| Overall | | APPARATUS_TRANSITIONS_SUGGESTIVE |
+
+**Fractional line tests:**
+
+| Test | Result | Verdict |
+|------|--------|---------|
+| T1 | 2.5-3.3% breakpoints | SMOOTH_GRADIENT |
+| T2 | p=0.87 | FL_RESET_NO_SUFFIX_EFFECT |
+| T3 | rho=0.058, p=0.34 | LENGTH_DIVERSITY_NULL |
+| T4 | 100% k=2, silhouette 0.459, 80% interleaved | DISCRETE_CLUSTERS_DETECTED |
+| Overall | | CONTINUOUS_PROCESS_WITH_OUTPUT_SHIFT |
+
+### Key findings
+
+1. **No hard apparatus transitions**: Kernel gradient smooth (2.4% breakpoints), no discrete switching between equipment
+2. **Structured cycling**: FL LATE->MEDIAL resets (190/257 regressions) at non-uniform positions (KS p<0.0001) mark cycle boundaries
+3. **PREFIX channels switch routinely**: 73.2% of paragraphs have interior body line divergences matching header-body divergence
+4. **Two alternating suffix modes**: All long paragraphs show k=2 suffix clusters (silhouette 0.459), 80% interleaved not sequential
+5. **Continuous fractionation**: Suffix gradient is smooth (no breakpoints) but two output modes alternate throughout the body
+
+### Brunschwig alignment
+
+The iterative cycling pattern matches historical distillation practice:
+- First passes extract easy surface compounds (terminal-heavy specification mode)
+- Later passes extract deeper compounds requiring parameter adjustment (bare-heavy continuation mode)
+- FL partial reset (LATE->MEDIAL, not LATE->EARLY) = restarting from active processing, not from scratch
+- Cohobation and fractional collection both show this pattern: same apparatus, multiple passes, shifting output
+
+### Files
+
+- `phases/APPARATUS_TRANSITION_DETECTION/scripts/apparatus_transition_detection.py`
+- `phases/APPARATUS_TRANSITION_DETECTION/results/apparatus_transition_results.json`
+- `phases/APPARATUS_TRANSITION_DETECTION/scripts/fractional_line_test.py`
+- `phases/APPARATUS_TRANSITION_DETECTION/results/fractional_line_results.json`

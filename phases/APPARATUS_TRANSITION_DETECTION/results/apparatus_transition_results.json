@@ -1,0 +1,211 @@
+{
+  "phase": "APPARATUS_TRANSITION_DETECTION",
+  "phase_number": 438,
+  "total_paragraphs": 469,
+  "parameters": {
+    "bic_threshold": 6,
+    "alpha_bonferroni": 0.0083,
+    "n_permutations": 1000
+  },
+  "test_a_kernel_inflection": {
+    "n_paragraphs": 124,
+    "breakpoint_count": 3,
+    "breakpoint_rate": 0.0242,
+    "mean_delta_bic": 1.2334,
+    "median_delta_bic": 0.0,
+    "bp_position_ks_stat": 0.0,
+    "bp_position_ks_p": 1.0,
+    "by_section": {
+      "H": 0.0,
+      "B": 0.0339,
+      "T": 0.0,
+      "C": 0.0,
+      "S": 0.0435
+    },
+    "verdict": "SINGLE_PROCESS_PARSIMONIOUS",
+    "n_bp_positions_recorded": 3
+  },
+  "test_b_middle_discontinuity": {
+    "n_paragraphs": 187,
+    "mean_jaccard": 0.171,
+    "mean_min_jaccard": 0.0721,
+    "min_position_ks_stat": 0.2834,
+    "min_position_ks_p": 0.0,
+    "by_section": {
+      "H": {
+        "n": 49,
+        "ks_stat": 0.3265,
+        "ks_p": 0.0
+      },
+      "B": {
+        "n": 72,
+        "ks_stat": 0.2778,
+        "ks_p": 0.0
+      },
+      "T": {
+        "n": 2,
+        "ks_stat": 0.0,
+        "ks_p": 1.0
+      },
+      "C": {
+        "n": 14,
+        "ks_stat": 0.6429,
+        "ks_p": 0.0
+      },
+      "S": {
+        "n": 50,
+        "ks_stat": 0.4,
+        "ks_p": 0.0
+      }
+    },
+    "verdict": "VOCABULARY_DISCONTINUITY_STRUCTURED"
+  },
+  "test_c_prefix_switching": {
+    "n_paragraphs": 276,
+    "n_switches": 202,
+    "switch_rate": 0.7319,
+    "opening_jsd_mean": 0.5035,
+    "interior_jsd_mean": 0.4704,
+    "by_section": {
+      "H": {
+        "n": 56,
+        "rate": 0.6964
+      },
+      "B": {
+        "n": 82,
+        "rate": 0.7561
+      },
+      "T": {
+        "n": 4,
+        "rate": 0.5
+      },
+      "C": {
+        "n": 15,
+        "rate": 0.9333
+      },
+      "S": {
+        "n": 119,
+        "rate": 0.7143
+      }
+    },
+    "verdict": "PREFIX_SWITCHING_DETECTED"
+  },
+  "test_d_opener_clustering": {
+    "n_paragraphs": 96,
+    "mean_z": 0.0969,
+    "median_z": 0.0,
+    "n_clustering": 0,
+    "clustering_rate": 0.0,
+    "by_section": {
+      "H": {
+        "n": 20,
+        "mean_z": -0.1094,
+        "median_z": 0.0
+      },
+      "B": {
+        "n": 55,
+        "mean_z": 0.2135,
+        "median_z": 0.3536
+      },
+      "C": {
+        "n": 6,
+        "mean_z": 0.0924,
+        "median_z": 0.0
+      },
+      "S": {
+        "n": 15,
+        "mean_z": -0.0536,
+        "median_z": 0.0
+      }
+    },
+    "verdict": "OPENER_ORDERING_RANDOM"
+  },
+  "test_e_ke_ek_changepoint": {
+    "n_paragraphs": 56,
+    "n_excluded_sparse": 68,
+    "n_changepoints": 4,
+    "changepoint_rate": 0.0714,
+    "permutation_p": 0.1678,
+    "null_mean": 2.385,
+    "null_std": 1.1995,
+    "verdict": "KE_EK_GRADIENT_ONLY"
+  },
+  "test_f_fl_reset": {
+    "n_pairs": 707,
+    "n_major_regression": 257,
+    "major_regression_rate": 0.3635,
+    "n_any_regression": 257,
+    "any_regression_rate": 0.3635,
+    "regression_counts": {
+      "-1": 113,
+      "0": 329,
+      "1": 224,
+      "-2": 8,
+      "2": 33
+    },
+    "major_ks_stat": 0.1673,
+    "major_ks_p": 0.0,
+    "any_regression_ks_stat": 0.1673,
+    "any_regression_ks_p": 0.0,
+    "transition_matrix": {
+      "MEDIAL_MEDIAL": 255,
+      "LATE_MEDIAL": 190,
+      "MEDIAL_LATE": 94,
+      "LATE_LATE": 70,
+      "MEDIAL_EARLY": 34,
+      "LATE_EARLY": 33,
+      "EARLY_MEDIAL": 19,
+      "EARLY_LATE": 8,
+      "EARLY_EARLY": 4
+    },
+    "by_section": {
+      "H": {
+        "n_pairs": 142,
+        "major_rate": 0.3803,
+        "regress_rate": 0.3803
+      },
+      "B": {
+        "n_pairs": 364,
+        "major_rate": 0.3544,
+        "regress_rate": 0.3544
+      },
+      "T": {
+        "n_pairs": 7,
+        "major_rate": 0.7143,
+        "regress_rate": 0.7143
+      },
+      "C": {
+        "n_pairs": 59,
+        "major_rate": 0.3729,
+        "regress_rate": 0.3729
+      },
+      "S": {
+        "n_pairs": 135,
+        "major_rate": 0.3481,
+        "regress_rate": 0.3481
+      }
+    },
+    "verdict": "FL_RESET_STRUCTURED"
+  },
+  "cross_test_correlation": {
+    "n_overlapping": 0,
+    "verdict": "SKIPPED_NO_BREAKPOINTS",
+    "note": "Test A verdict: SINGLE_PROCESS_PARSIMONIOUS"
+  },
+  "synthesis": {
+    "decisive_tests": {
+      "test_a": "SINGLE_PROCESS_PARSIMONIOUS",
+      "test_f": "FL_RESET_STRUCTURED"
+    },
+    "supporting_tests": {
+      "test_b": "VOCABULARY_DISCONTINUITY_STRUCTURED",
+      "test_c": "PREFIX_SWITCHING_DETECTED",
+      "test_d": "OPENER_ORDERING_RANDOM",
+      "test_e": "KE_EK_GRADIENT_ONLY"
+    },
+    "cross_test": "SKIPPED_NO_BREAKPOINTS",
+    "n_supporting_positive": 2,
+    "overall_verdict": "APPARATUS_TRANSITIONS_SUGGESTIVE",
+    "interpretation": "One decisive test positive with supporting evidence \u2014 warrants further investigation."
+  }
+}

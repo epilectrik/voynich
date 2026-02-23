@@ -1,7 +1,7 @@
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
 # Generated: 2026-02-23
-# Total: 68 fits
+# Total: 69 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
 ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
@@ -72,4 +72,5 @@ F-BRU-029	Semantic Boundary Probe (Three-Path)	F4	B	PARTIAL_EXTENSION	C997 (safe
 F-BRU-030	MIDPROCESS Absence Characterization	F3	B	MIDPROCESS_STRUCTURALLY_ABSENT	C1056 (MIDPROCESS structural absence), F-BRU-029 (Path C closure)	in: fits_brunschwig
 F-BRU-031	Modern Distillation Dimensional Comparison	F3	B	MODERN_CLOSER_TO_VOYNICH	F-BRU-030 (MIDPROCESS absence characterization), C1056 (MIDPROCESS structural absence)	in: fits_brunschwig
 F-BRU-032	KE-Family Parametric Differentiation	F2	B	PARAMETRIC_DIFFERENTIATION	C1225 (E-depth Suffix Parametricity), C1226 (ke/ek Ratio Process Conditioning)	in: fits_brunschwig
+F-BRU-033	Iterative Extraction Cycling Within Paragraphs	F3	B	ITERATIVE_CYCLING_SUPPORTED	C1227 (FL cross-line reset clustering), C1228 (PREFIX channel switching), C1229 (alternating suffix modes)	in: fits_brunschwig
 F-RUP-001	Galenic Framework Directional Enhancement	F4	B	DIRECTIONAL_COHERENCE	C109 (Hazard Classes), C121 (49 Instruction Classes), C475 (MIDDLE Incompatibility), C494 (REGIME_4 Precision Axis), C458 (Design Asymmetry), C911 (PREFIX-MIDDLE Compatibility), C995 (Affordance Bins), C997 (Safety Buffers), C1053 (Compound Atom C475 Mediation)	in: fits_rupescissa

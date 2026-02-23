@@ -1,0 +1,92 @@
+{
+  "phase": "FRACTIONAL_LINE_TEST",
+  "total_paragraphs": 469,
+  "suffix_distribution": {
+    "BARE": 0.6343,
+    "TERMINAL": 0.2472,
+    "CONNECTOR": 0.0368,
+    "ITERATE": 0.0817
+  },
+  "t1_suffix_piecewise": {
+    "n_qualifying": 124,
+    "by_category": {
+      "terminal": {
+        "n_tested": 122,
+        "bp_count": 4,
+        "bp_rate": 0.0328,
+        "mean_delta_bic": -1.6166,
+        "ks_stat": 0.0,
+        "ks_p": 1.0
+      },
+      "connector": {
+        "n_tested": 122,
+        "bp_count": 4,
+        "bp_rate": 0.0328,
+        "mean_delta_bic": 2.1739,
+        "ks_stat": 0.0,
+        "ks_p": 1.0
+      },
+      "iterate": {
+        "n_tested": 122,
+        "bp_count": 4,
+        "bp_rate": 0.0328,
+        "mean_delta_bic": 1.6232,
+        "ks_stat": 0.0,
+        "ks_p": 1.0
+      },
+      "bare": {
+        "n_tested": 122,
+        "bp_count": 3,
+        "bp_rate": 0.0246,
+        "mean_delta_bic": -1.64,
+        "ks_stat": 0.0,
+        "ks_p": 1.0
+      }
+    },
+    "max_breakpoint_rate": 0.0328,
+    "verdict": "SMOOTH_GRADIENT"
+  },
+  "t2_fl_reset_suffix": {
+    "n_regression": 350,
+    "n_non_regression": 652,
+    "n_no_fl": 250,
+    "regression_jsd_mean": 0.1111,
+    "non_regression_jsd_mean": 0.114,
+    "mann_whitney_stat": 109186.0,
+    "mann_whitney_p": 0.8698,
+    "effect_size_r": 0.0431,
+    "verdict": "FL_RESET_NO_SUFFIX_EFFECT"
+  },
+  "t3_length_diversity": {
+    "n_paragraphs": 276,
+    "spearman_rho": 0.0576,
+    "spearman_p": 0.3404,
+    "permutation_p": 1.0,
+    "mean_diversity_short": 0.1251,
+    "mean_diversity_long": 0.1246,
+    "verdict": "LENGTH_DIVERSITY_NULL"
+  },
+  "t4_suffix_clustering": {
+    "n_tested": 57,
+    "k1_wins": 0,
+    "k2_wins": 55,
+    "k3_wins": 2,
+    "cluster_rate": 1.0,
+    "contiguous_clusters": 11,
+    "contiguous_rate": 0.2,
+    "mean_silhouette_k2": 0.4586,
+    "mean_silhouette_k3": 0.3995,
+    "verdict": "DISCRETE_CLUSTERS_DETECTED"
+  },
+  "synthesis": {
+    "test_verdicts": {
+      "t1": "SMOOTH_GRADIENT",
+      "t2": "FL_RESET_NO_SUFFIX_EFFECT",
+      "t3": "LENGTH_DIVERSITY_NULL",
+      "t4": "DISCRETE_CLUSTERS_DETECTED"
+    },
+    "n_positive": 1,
+    "overall_verdict": "CONTINUOUS_PROCESS_WITH_OUTPUT_SHIFT",
+    "interpretation": "Suffix gradients are continuous, but some structure suggests output specifications shift through the paragraph body - more than pure spec->exec, less than discrete fractions."
+  }
+}
