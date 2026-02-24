@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1093 validated constraints | **Version:** 4.48 | **Date:** 2026-02-24
+**Total:** 1095 validated constraints | **Version:** 4.49 | **Date:** 2026-02-24
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3441,6 +3441,20 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 - DISTILLATION vs PRECISION profiles anti-correlate strongly (rho=-0.666)
 - Herbal section is apparatus-diverse; other sections are distillation-dominant
 - Initial top-down PCA approach (5-test battery) returned APPARATUS_VOCABULARY_NOT_SUPPORTED; bottom-up profile scoring found the real signal
+
+### Gloss Scale Validation (C1250-C1251) -- Phase: GLOSS_SCALE_VALIDATION (Phase 446)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1250** | **Gloss Category Structural Coherence** (8 operational categories on 90 MIDDLEs: 5/7 permutation tests PASS p<0.01; behavioral silhouette z=3.5, kernel alignment V=0.675, line position F=29.9 30x, apparatus rho=0.758, within-line MI 9x; affordance-family and REGIME-direction fail; v2 redesigned null models) | 2 | B, gloss, category, validation, corpus-scale | -> [C1250_gloss_category_structural_coherence.md](C1250_gloss_category_structural_coherence.md) |
+| **1251** | **Atom Gloss Compositional Validation** (atom->gloss validates through composition not position; composed atom glosses predict MIDDLE categories p=0.008; atoms differentiate REGIMEs 37x; 4/6 directional tests fail: line position rho=0.53, suffix mode rho=-0.06, kernel affinity 5/12, paragraph rho=0.17; confirms C1191 morphological grammar independent of semantic content) | 2 | B, atom, gloss, composition, C1191, positional-grammar | -> [C1251_atom_gloss_compositional_validation.md](C1251_atom_gloss_compositional_validation.md) |
+
+**Phase 446 findings (Gloss Scale Validation):**
+- MIDDLE-level: 8 operational categories structurally coherent at corpus scale (5/7 COHERENT)
+- Atom-level: glosses validate through compositional chain (atom -> MIDDLE -> category -> structure), not direct positional prediction
+- Morphological grammar (C1191) governs atom position/co-occurrence independently of semantic content
+- V1 null model failure diagnosed: shuffling among same 90 MIDDLEs too conservative; v2 uses dual null models
+- Three affinity groups emerge from kernel co-occurrence: E-affiliated (y,d,o,t,l), K-affiliated (i), H-affiliated (p,f,c,s,r)
 
 ---
 

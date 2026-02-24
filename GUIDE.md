@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 981 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,095 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -24,7 +24,7 @@ The researcher hasn't "translated" anything. They can't tell you what the music 
 
 **This is exactly what we are doing with the Voynich Manuscript.**
 
-We are not trying to translate the text. We are proving that its internal structure — 49 instruction classes, 17 forbidden transitions organized into 5 hazard classes, kernel-centric convergence behavior, bounded recovery architecture — fits the domain of thermodynamic process control (specifically reflux distillation) and no other domain we've tested.
+We are not trying to translate the text. We are proving that its internal structure — 49 instruction classes, 17 forbidden transitions organized into 5 hazard classes, kernel-centric convergence behavior, bounded recovery architecture, and a dimensionality that matches modern distillation manuals (5 principal components, 80% variance) — fits the domain of thermodynamic process control (specifically reflux distillation) and no other domain we've tested.
 
 The forbidden transitions correspond to physical failure modes (phase contamination, thermal overshoot, containment breach). The convergence behavior matches the physics of distillation (energy in, stability out). The recovery architecture matches historical practice (Brunschwig's "no more than twice" reinfusion rule). The structure fits the domain the way sheet music fits harmonics — not because we decoded the meaning of individual tokens, but because the constraints map onto physical law.
 
@@ -57,7 +57,7 @@ Every Currier B token is compositional. It decomposes into parts that each carry
 [ARTICULATOR] + [PREFIX] + MIDDLE + [SUFFIX]
 ```
 
-- **PREFIX** selects the operational channel AND encodes line position. It determines which family of core actions is grammatically legal (one prefix selects energy operations, another selects monitoring) while simultaneously encoding where in the line the token appears — prefixes cluster into initial, central, and final positional zones. There are 8 prefix families organized into functional groups (including sister pairs ch/sh and ok/ot that function as equivalent mode selectors).
+- **PREFIX** selects the operational channel AND encodes line position. Internally, each PREFIX has a base-modifier positional grammar: [MODIFIER (position 0)] + [BASE (position 1)]. The base character (h, e, k, o, a) determines which family of core actions is grammatically legal — within-base MIDDLE cosine similarity is 0.950, while between-base similarity drops to 0.515 (C1218-C1219). Modifiers (q, d, f, p, y) occupy position 0 and refine the operational meaning. PREFIXes also encode where in the line the token appears — they cluster into initial, central, and final positional zones. There are 8 prefix families organized into functional groups (including sister pairs ch/sh and ok/ot that function as equivalent mode selectors).
 - **MIDDLE** is the primary discriminative content — the specific action variant within the channel the prefix opened. Approximately 30 core MIDDLEs handle 67.6% of all tokens, with a long tail of ~1,150 rarer variants.
 - **SUFFIX** encodes context-dependent markers that relate to control flow — what happens next, how broad the operation's scope is.
 - **ARTICULATOR** is an optional refinement layer that doesn't change the core meaning.
@@ -111,6 +111,8 @@ At the center of the grammar sit three irreducible operators, designated **k**, 
 
 These three operators define the grammar's backbone. They are bound morphemes — they never appear as standalone tokens, only as components within larger compositional words. The transition e-to-h is completely blocked (ratio 0.00), while h-to-k is strongly suppressed — the system acts as a one-way valve where energy flows toward stability but not back. Within token construction, the trigram e-e-e accounts for 97.2% of all kernel character sequences. The system overwhelmingly favors stability.
 
+The ke and ek orderings are functionally distinct: ke = "heat burst then equilibrate" (energy-first, aggressive), ek = "check then heat" (stability-check-first, cautious). The ke/ek ratio is REGIME-conditioned (REGIME_1: 18.6% ek, REGIME_4: 64.0% ek) and section-conditioned (HERBAL 79.1% ek). The e-depth within a MIDDLE also restructures suffix grammar: single-e selects 64% -edy suffixes, while multi-e selects 37% -y suffixes (C1225-C1226). These are MIDDLE-internal parametric axes, independent of REGIME or section.
+
 ### Hazard Topology
 
 The grammar enforces 17 forbidden transitions organized into 5 hazard classes:
@@ -136,6 +138,14 @@ SETUP → WORK → CHECK → CLOSE
 ```
 
 Lines group into paragraphs, which function as mini-programs with their own internal structure: a header line followed by body lines that execute operations. Header lines use distinctive vocabulary — 50.2% of first-line tokens come from a specialized identification vocabulary, compared to 29.8% in body lines. The structure suggests that headers specify what the paragraph will do, with body lines carrying out the operations in simpler individual tokens.
+
+Within the body, two architectural layers operate simultaneously:
+
+1. **Execution gradient (the envelope):** Terminal suffix fraction declines monotonically from top to bottom (r = -0.89), while bare suffix fraction increases (r = +0.90). This gradient tracks the shift from specification to execution.
+
+2. **Suffix mode cycling (the oscillation):** Within that envelope, every qualifying paragraph alternates between two universal suffix modes (silhouette 0.459, 80% interleaved). Mode A concentrates k-family MIDDLEs (1.62x), preparation operations (2.86x), and energy PREFIXes (1.48x) — an active specification phase. Mode B elevates e-family MIDDLEs — a passive equilibration phase. These modes are universal across all qualifying paragraphs (global silhouette 0.428, F = 4.56; C1229-C1231).
+
+The final 2 body lines cluster into 3 distinct product signatures that correlate with section (chi2 = 31.73, p = 0.0001), suggesting paragraphs end with different output types (C1232).
 
 ### Recovery Architecture
 
@@ -312,6 +322,20 @@ Across four independent test suites (28 tests total):
 - **Sensory modalities**: Both use categorical sensory tests (look, smell, touch) without instruments
 - **Illustration anchoring**: Root-emphasized plant illustrations correlate with POUND/CHOP operations (r = 0.366, p = 0.0007)
 
+### Process Dimensionality
+
+Direct dimensional comparison sharpens the Brunschwig relationship: Voynich requires 5 principal components to explain 80% of its variance — matching modern distillation manuals, not Brunschwig's recipes (which need only 3 PCs). The Voynich author's process control is more differentiated than Brunschwig's prose descriptions, particularly in its treatment of mid-process operations (MIDPROCESS sub-types map to 5 distinct Voynich parametric axes). The ITERATION dimension is inflated 7.0x compared to modern distillation, while FREE variation is deflated 6.3x — consistent with a parameterized process control manual rather than a recipe collection (C1222-C1224).
+
+### Apparatus Vocabulary Classification
+
+Different apparatus types (alembic, balneum marie, retort, sealed vessel) require different control vocabularies. Bottom-up profiling using Brunschwig-grounded marker MIDDLEs reveals 5 apparatus profiles (DISTILLATION, SEALED_VESSEL, SUSTAINED_HEAT, PRECISION, DIRECT_FIRE) that classify folios by their dominant operational vocabulary.
+
+REGIME strongly predicts apparatus type: R1 and R3 are single-apparatus (97% and 95% distillation), while R2 and R4 mix apparatus types within the same fire degree — consistent with Brunschwig's description of applying the same temperature via different apparatus. The DISTILLATION and PRECISION profiles are strongly anti-correlated (rho = -0.666, p < 0.0001): folios specialize in one or the other.
+
+The strongest single-MIDDLE discriminator is `aii` ("unseal"): 41x enriched in REGIME_3 relative to REGIME_1, appearing in 70% of R3 folios versus 3.1% of R1 folios. Line context shows a batch transition pattern: close/check → unseal → open/continue. This confirms R3 operates as a batch process requiring physical unsealing between runs, while R1 operates as continuous-run distillation.
+
+Section H (Herbal) is the most apparatus-diverse section — the only section where no single apparatus profile dominates. In mixed-apparatus REGIMEs, non-distillation folios are overwhelmingly Herbal, reflecting the variety of botanical processing (gentle extraction, sustained maceration, precision control) versus the more uniform distillation of pharmaceutical preparations.
+
 ### What Doesn't Align
 
 The comparison is not perfect. Some Brunschwig-derived predictions about line-level organization were not supported, and the manuscript's grammar is significantly more abstract than Brunschwig's prose recipes. The manuscript is a control system reference; Brunschwig is an instructional manual. They share domain and structure but differ in format and audience.
@@ -462,11 +486,11 @@ These interpretations have been structurally ruled out:
 
 ## How This Analysis Was Built
 
-This project was built using AI-assisted computational analysis over 406 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
+This project was built using AI-assisted computational analysis over 446 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
 
 The central methodological innovation is a **progressive context system**: a growing body of numbered, tiered, validated constraints that accumulates across research phases and is always available to the AI agents performing analysis. Every finding that survives statistical testing becomes a permanent constraint. Every falsified hypothesis is permanently closed. Each new phase starts with full knowledge of everything that came before.
 
-This matters because no single analytical session — human or AI — could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, and the Brunschwig alignment in one pass. But 406 phases, each building on validated prior work and never losing what was already proven, could. The constraint system is the project's memory, and its growth is what made the depth of analysis possible.
+This matters because no single analytical session — human or AI — could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, and the Brunschwig alignment in one pass. But 446 phases, each building on validated prior work and never losing what was already proven, could. The constraint system is the project's memory, and its growth is what made the depth of analysis possible.
 
 For technical details on the progressive context architecture, see the Methodology section in `README.md`.
 

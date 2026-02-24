@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "1.6",
+    "version": "1.8",
     "description": "Externalized BFolioDecoder maps with constraint citations",
     "source": "Extracted from scripts/voynich.py BFolioDecoder class",
     "v1.1_changes": "Expert validation: fixed -ey (strong→selective), -dy (gentle→basic), -ar (recover→close), removed sch=grind (unsupported), demoted ksh/FL glosses to Tier 4, fixed CC_TOKENS to use C874 labels",
@@ -9,6 +9,8 @@
     "v1.4_changes": "Expert f26r glossing: -edy energy-check→thorough (C283), -dy basic→close (C597), -hy maintain→verify-maintain (C907)",
     "v1.5_changes": "Control grammar viewer: added macro_state (C976, 49→6-state), hub_sub_role (C1000, 23 hub MIDDLEs), prefix_zone (C1001, positional bias)",
     "v1.6_changes": "Verb consolidation: synced 10 prefix_actions entries to GLOSSING.md (pch=chop, tch=pound, te=gather, ke=sustain, kch=precision-heat, lch=modified energy, ot=scaffold, qo=energy, rch=input-test, dch=divide-test). Deprecated brunschwig_gloss map. Fixed self-description from 'Operational verbs' to 'PREFIX operational labels'.",
+    "v1.7_changes": "BCSC v3.12 alignment: ke/ek gloss update (C1226), PREFIX base-modifier map (C1218), suffix mode centroids (C1231), tail product centroids (C1232). ke sustain→heat-burst, added ek=check-heat.",
+    "v1.8_changes": "Expert validation fixes: (1) Prep PREFIX glosses chop/pound/gather/etc→process material (C1221: h-base variants not distinct operations). (2) FL stage map corrected per C777: al/l/ol MEDIAL→LATE, o/ly LATE→FINAL, am TERMINAL→FINAL.",
     "tier_note": "tier 0-2 = structural (constraint-backed), tier 3 = interpretive (Brunschwig-grounded), tier 4 = speculative"
   },
   "maps": {
@@ -814,13 +816,13 @@
           "tier": 3
         },
         "tch": {
-          "value": "pound the material",
-          "constraint": "F-BRU-011",
+          "value": "process material",
+          "constraint": "F-BRU-011, C1221",
           "tier": 3
         },
         "pch": {
-          "value": "chop the material",
-          "constraint": "F-BRU-011",
+          "value": "process material",
+          "constraint": "F-BRU-011, C1221",
           "tier": 3
         },
         "qo": {
@@ -1298,45 +1300,45 @@
       "tier": 3,
       "entries": {
         "te": {
-          "category": "PREP",
-          "gloss": "gather material",
-          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "category": "PROCESS",
+          "gloss": "process material",
+          "constraint": "F-BRU-011, F-BRU-012, C1221",
           "tier": 3
         },
         "pch": {
-          "category": "PREP",
-          "gloss": "chop (herbs)",
-          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "category": "PROCESS",
+          "gloss": "process material",
+          "constraint": "F-BRU-011, F-BRU-012, C1221",
           "tier": 3
         },
         "lch": {
-          "category": "PREP",
-          "gloss": "strip/separate",
-          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "category": "PROCESS",
+          "gloss": "process material",
+          "constraint": "F-BRU-011, F-BRU-012, C1221",
           "tier": 3
         },
         "tch": {
-          "category": "PREP",
-          "gloss": "pound (intensive)",
-          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "category": "PROCESS",
+          "gloss": "process material",
+          "constraint": "F-BRU-011, F-BRU-012, C1221",
           "tier": 3
         },
         "ksh": {
-          "category": "PREP",
-          "gloss": "special prep",
-          "constraint": "F-BRU-012 (low confidence)",
+          "category": "PROCESS",
+          "gloss": "process material",
+          "constraint": "F-BRU-012, C1221",
           "tier": 4
         },
         "sch": {
-          "category": "PREP",
-          "gloss": "prepare (unspecified)",
-          "constraint": "NONE",
+          "category": "PROCESS",
+          "gloss": "process material",
+          "constraint": "C1221",
           "tier": 4
         },
         "cth": {
-          "category": "PREP",
-          "gloss": "cut/divide",
-          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "category": "PROCESS",
+          "gloss": "process material",
+          "constraint": "F-BRU-011, F-BRU-012, C1221",
           "tier": 3
         },
         "k": {
@@ -1377,8 +1379,14 @@
         },
         "ke": {
           "category": "EXTENDED",
-          "gloss": "sustain gentle heat",
-          "constraint": "F-BRU-011, F-BRU-012, F-BRU-018",
+          "gloss": "heat burst then equilibrate",
+          "constraint": "F-BRU-011, C1226",
+          "tier": 3
+        },
+        "ek": {
+          "category": "EXTENDED",
+          "gloss": "check then heat",
+          "constraint": "F-BRU-011, C1226",
           "tier": 3
         },
         "kch": {
@@ -1445,19 +1453,19 @@
           "tier": 3
         },
         "al": {
-          "category": "MEDIAL",
+          "category": "LATE",
           "gloss": "adjusting",
           "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
           "tier": 3
         },
         "l": {
-          "category": "MEDIAL",
+          "category": "LATE",
           "gloss": "separating",
           "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
           "tier": 3
         },
         "ol": {
-          "category": "MEDIAL",
+          "category": "LATE",
           "gloss": "processing",
           "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
           "tier": 3
@@ -1469,19 +1477,19 @@
           "tier": 3
         },
         "o": {
-          "category": "LATE",
+          "category": "FINAL",
           "gloss": "almost ready",
           "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
           "tier": 3
         },
         "ly": {
-          "category": "LATE",
+          "category": "FINAL",
           "gloss": "settling out",
           "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
           "tier": 3
         },
         "am": {
-          "category": "TERMINAL",
+          "category": "FINAL",
           "gloss": "step done",
           "constraint": "C777, FL_SEMANTIC_INTERPRETATION",
           "tier": 3
@@ -1744,10 +1752,16 @@
           "tier": 3
         },
         "ke": {
-          "value": "sustain",
-          "constraint": "F-BRU-017, C556, C931",
+          "value": "heat-burst",
+          "constraint": "F-BRU-017, C556, C931, C1226",
           "tier": 3,
-          "note": "Sustain (sustained heat cycles, F-BRU-017). Late position (init/final 0.29x). H-enriched 1.37x. Selects dy (7.3x), o (5.0x), eo (2.6x). Avoids k/l/t/iin/r."
+          "note": "Heat burst then equilibrate (C1226: energy-first ordering). Late position (init/final 0.29x). H-enriched 1.37x. Selects dy (7.3x), o (5.0x), eo (2.6x). ke/ek ratio REGIME-conditioned."
+        },
+        "ek": {
+          "value": "check-heat",
+          "constraint": "F-BRU-017, C1226",
+          "tier": 3,
+          "note": "Check then heat (C1226: stability-check-first ordering). Cautious variant. REGIME_4 64.0% ek, HERBAL 79.1% ek."
         },
         "ka": {
           "value": "anchor",
@@ -1785,22 +1799,22 @@
           "tier": 3
         },
         "pch": {
-          "value": "chop",
-          "constraint": "F-BRU-012, C931",
+          "value": "process",
+          "constraint": "F-BRU-012, C931, C1221",
           "tier": 3,
-          "note": "Chop (F-BRU-012 prep operation). 48.2% line-initial, 25.5x par-initial (highest procedure opener). Even section distribution (universal operation)."
+          "note": "H-base variant (C1221: prep PREFIXes not distinct operations). 48.2% line-initial, 25.5x par-initial (highest procedure opener). Even section distribution."
         },
         "tch": {
-          "value": "pound",
-          "constraint": "F-BRU-012, C931",
+          "value": "process",
+          "constraint": "F-BRU-012, C931, C1221",
           "tier": 3,
-          "note": "Pound (F-BRU-012 prep operation). 52.9% line-initial, 10.7x par-initial. C-enriched 2.33x, H-enriched 1.82x."
+          "note": "H-base variant (C1221: prep PREFIXes not distinct operations). 52.9% line-initial, 10.7x par-initial. C-enriched 2.33x, H-enriched 1.82x."
         },
         "lch": {
-          "value": "modified energy",
-          "constraint": "C298, F-BRU-012, C931",
+          "value": "process",
+          "constraint": "C298, F-BRU-012, C931, C1221",
           "tier": 3,
-          "note": "L-compound: modified energy (C298). Final position (init/final 0.40x). B-enriched 1.30x, H-depleted 0.24x. Selects edy (4.1x), ey (3.6x). Co-occurs with lk (1.39x)."
+          "note": "H-base variant (C1221). L-compound modifier. Final position (init/final 0.40x). B-enriched 1.30x, H-depleted 0.24x. Selects edy (4.1x), ey (3.6x)."
         },
         "kch": {
           "value": "precision-heat",
@@ -1809,37 +1823,38 @@
           "note": "Precision-heat (F-BRU-013: ke vs kch differentiation). Intensive sections 54.7% OTHER."
         },
         "dch": {
-          "value": "divide-test",
-          "constraint": "F-BRU-012",
+          "value": "process",
+          "constraint": "F-BRU-012, C1221",
           "tier": 3,
-          "note": "Compound [C]+ch: divide-test (Test 18)"
+          "note": "H-base variant (C1221). d-modifier."
         },
         "fch": {
-          "value": "prepare",
-          "constraint": "F-BRU-012",
-          "tier": 3
+          "value": "process",
+          "constraint": "F-BRU-012, C1221",
+          "tier": 3,
+          "note": "H-base variant (C1221). f-modifier."
         },
         "rch": {
-          "value": "input-test",
-          "constraint": "F-BRU-012",
+          "value": "process",
+          "constraint": "F-BRU-012, C1221",
           "tier": 3,
-          "note": "Compound [C]+ch: input-test (Test 18)"
+          "note": "H-base variant (C1221). r-modifier."
         },
         "sch": {
-          "value": "prepare",
-          "constraint": "NONE",
+          "value": "process",
+          "constraint": "C1221",
           "tier": 4
         },
         "ksh": {
-          "value": "special",
-          "constraint": "F-BRU-012 (low confidence)",
+          "value": "process",
+          "constraint": "F-BRU-012, C1221",
           "tier": 4
         },
         "te": {
-          "value": "gather",
-          "constraint": "F-BRU-012, C931",
+          "value": "process",
+          "constraint": "F-BRU-012, C931, C1221",
           "tier": 3,
-          "note": "Gather (F-BRU-012 prep operation). 19.7% line-initial (3.35x init/final). C-enriched 1.91x, H-enriched 1.40x. Selects dy (10.4x), o, d, ey."
+          "note": "H-base variant (C1221). 19.7% line-initial (3.35x init/final). C-enriched 1.91x, H-enriched 1.40x. Selects dy (10.4x), o, d, ey."
         },
         "de": {
           "value": "divide",
@@ -2027,6 +2042,47 @@
         "fch": {"value": "UNIFORM", "constraint": "C1001", "tier": 2},
         "rch": {"value": "UNIFORM", "constraint": "C1001", "tier": 2}
       }
+    },
+    "prefix_base_modifier": {
+      "constraint_group": "C1218, C1219",
+      "tier": 2,
+      "base_characters": {
+        "h": {"domain": "STABILITY+CLOSURE", "pos1_rate": 1.00},
+        "e": {"domain": "CLOSURE", "pos1_rate": 1.00},
+        "k": {"domain": "ITERATION+STABILITY", "pos1_rate": 0.67},
+        "o": {"domain": "ENERGY", "pos1_rate": 0.59},
+        "a": {"domain": "ITERATION", "pos1_rate": 0.54}
+      },
+      "modifier_characters": {
+        "q": {"pos0_rate": 1.00},
+        "d": {"pos0_rate": 0.99},
+        "f": {"pos0_rate": 0.98},
+        "p": {"pos0_rate": 0.97},
+        "y": {"pos0_rate": 0.96}
+      },
+      "within_base_cosine": 0.950,
+      "between_base_cosine": 0.515
+    },
+    "suffix_mode_centroids": {
+      "constraint_group": "C1231",
+      "tier": 2,
+      "features": ["terminal_frac", "checkpoint_frac", "iterative_frac", "bare_frac"],
+      "mode_a": [0.430, 0.019, 0.086, 0.466],
+      "mode_b": [0.155, 0.031, 0.072, 0.741],
+      "silhouette": 0.428,
+      "f_statistic": 4.56
+    },
+    "tail_product_centroids": {
+      "constraint_group": "C1232",
+      "tier": 2,
+      "features": ["energy", "vessel", "process", "k_family", "e_family", "prep_family"],
+      "centroids": {
+        "MIXED_OUTPUT": [0.278, 0.134, 0.256, 0.191, 0.258, 0.013],
+        "VESSEL_HEAVY": [0.091, 0.250, 0.187, 0.097, 0.161, 0.003],
+        "PROCESS_HEAVY": [0.104, 0.111, 0.405, 0.089, 0.184, 0.008]
+      },
+      "section_chi2": 31.73,
+      "section_p": 0.0001
     }
   }
 }

@@ -2386,10 +2386,11 @@ Extension: 4-test battery testing whether lines represent fractional distillatio
 ### Brunschwig alignment
 
 The iterative cycling pattern matches historical distillation practice:
-- First passes extract easy surface compounds (terminal-heavy specification mode)
-- Later passes extract deeper compounds requiring parameter adjustment (bare-heavy continuation mode)
+- Mode A (terminal-heavy) = active intervention: apply energy, agitate, specify parameters (C1230: k-family 1.62x, prep 2.86x, qo 1.48x)
+- Mode B (bare-heavy) = equilibration: let the process run and stabilize (C1230: e-family elevated)
+- Modes alternate throughout the body (80% interleaved, C1229) — operational phases, not discrete fractions (C1229: FL reset x suffix change p=0.87)
 - FL partial reset (LATE->MEDIAL, not LATE->EARLY) = restarting from active processing, not from scratch
-- Cohobation and fractional collection both show this pattern: same apparatus, multiple passes, shifting output
+- Cohobation shows this pattern: same apparatus, multiple passes with alternating intervention and equilibration
 
 ### Files
 

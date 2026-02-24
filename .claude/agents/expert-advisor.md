@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1093 validated constraints and 71 explanatory fits loaded
+embedded below. You have ALL 1095 validated constraints and 71 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1093 validated)
+- Tier 0-2 binding constraints (1095 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1093 constraints, 71 fits,
+full content in their source documents. All 1095 constraints, 71 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-24 10:22
-**Version:** FROZEN STATE (1093 constraints, 71 fits) [COMPACT]
+**Generated:** 2026-02-24 12:38
+**Version:** FROZEN STATE (1095 constraints, 71 fits) [COMPACT]
 
 ---
 
@@ -113,7 +113,7 @@ and 4 structural contracts are complete.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 4.48 | **Status:** FROZEN | **Constraints:** 1093 | **Date:** 2026-02-24
+**Version:** 4.49 | **Status:** FROZEN | **Constraints:** 1095 | **Date:** 2026-02-24
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1094 constraints | 2026-02-24
+CONSTRAINT_REFERENCE v2.6 | 1096 constraints | 2026-02-24
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2202,6 +2202,8 @@ C1246	**Mode-Differentiated Cross-Lane Pairing**
 C1247	**aii REGIME_3 Specificity** (aii "unseal" is 41x enriched in R3 vs R1; 14/20 R3 folios contain aii vs 1/32 R1; line context shows close→unseal→open transition; R3 = open-cycle batch apparatus)
 C1248	**Apparatus-Marker Co-occurrence Architecture**
 C1249	**Section-Conditioned Apparatus Diversity** (Herbal is most apparatus-diverse section; R2-SEALED 100% Herbal; R4-SEALED/SUSTAINED 100% Herbal; Section B overwhelmingly distillation 0.293 vs H 0.134; weakest signatures all Herbal)
+C1250	**Gloss Category Structural Coherence**
+C1251	**Atom Gloss Compositional Validation**
 
 ---
 

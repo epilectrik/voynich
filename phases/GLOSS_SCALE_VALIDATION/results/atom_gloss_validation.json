@@ -1,0 +1,413 @@
+{
+  "_metadata": {
+    "phase": "GLOSS_SCALE_VALIDATION",
+    "phase_number": "446b",
+    "description": "Atom-level character->gloss validation",
+    "design": "Tests non-kernel atom gloss predictions against structure",
+    "null_model": "Shuffle gloss assignments among non-kernel atoms (kernel k=heat, e=cool, h=watch fixed)",
+    "n_tokens": 23096,
+    "n_non_kernel_atoms": 14,
+    "n_permutations": 1000,
+    "p_threshold": 0.01,
+    "elapsed_seconds": 37.7,
+    "atom_glosses": {
+      "k": "heat",
+      "e": "cool",
+      "h": "watch",
+      "y": "end",
+      "i": "iterate",
+      "n": "halt",
+      "a": "yield",
+      "m": "final",
+      "d": "mark",
+      "t": "transfer",
+      "c": "adjust",
+      "p": "pause",
+      "f": "flag",
+      "s": "sequence",
+      "g": "complete",
+      "o": "work",
+      "l": "frame",
+      "r": "input"
+    },
+    "confidence_tiers": {
+      "KERNEL": [
+        "k",
+        "e",
+        "h"
+      ],
+      "LOCKED": [
+        "y",
+        "i",
+        "n",
+        "a",
+        "m"
+      ],
+      "SOLID": [
+        "d",
+        "t"
+      ],
+      "PLAUSIBLE": [
+        "c",
+        "p",
+        "f",
+        "s",
+        "g"
+      ],
+      "WEAK": [
+        "o",
+        "l",
+        "r"
+      ]
+    }
+  },
+  "synthesis": {
+    "pass_count": 2,
+    "fail_count": 4,
+    "skip_count": 0,
+    "total_tests": 6,
+    "tests_run": 6,
+    "verdict": "PARTIALLY_COHERENT",
+    "summary": "2/6 tests pass (p<0.01), 0 skipped"
+  },
+  "tests": {
+    "T1_line_position": {
+      "status": "FAIL",
+      "rho": 0.5341,
+      "p_parametric": 0.0491599163719851,
+      "p_value_empirical": 0.033,
+      "n_atoms": 14,
+      "atom_mean_positions": {
+        "a": 0.5793,
+        "c": 0.4966,
+        "d": 0.5021,
+        "f": 0.5682,
+        "i": 0.4805,
+        "l": 0.5095,
+        "m": 0.9,
+        "n": 0.4801,
+        "o": 0.4689,
+        "p": 0.5657,
+        "r": 0.5299,
+        "s": 0.4613,
+        "t": 0.5436,
+        "y": 0.506
+      },
+      "predicted_ranks": {
+        "a": 12,
+        "c": 7,
+        "d": 11,
+        "f": 10,
+        "i": 4,
+        "l": 2,
+        "m": 15,
+        "n": 9,
+        "o": 5,
+        "p": 8,
+        "r": 3,
+        "s": 1,
+        "t": 6,
+        "y": 14
+      },
+      "shuffled_rho_mean": 0.0052
+    },
+    "T2_suffix_mode": {
+      "status": "FAIL",
+      "rho": -0.0562,
+      "p_value_empirical": 0.555,
+      "n_atoms": 12,
+      "atom_mode_a_frac": {
+        "a": 0.2659,
+        "c": 0.9209,
+        "d": 0.1222,
+        "f": 0.6644,
+        "i": 0.1622,
+        "l": 0.558,
+        "o": 0.5715,
+        "p": 0.6857,
+        "r": 0.1823,
+        "s": 0.7812,
+        "t": 0.6333,
+        "y": 0.5355
+      },
+      "predicted_scores": {
+        "a": 0.75,
+        "c": 0.45,
+        "d": 0.7,
+        "f": 0.5,
+        "i": 0.15,
+        "l": 0.2,
+        "o": 0.3,
+        "p": 0.45,
+        "r": 0.25,
+        "s": 0.2,
+        "t": 0.3,
+        "y": 0.9
+      },
+      "shuffled_rho_mean": -0.0099
+    },
+    "T3_kernel_affinity": {
+      "status": "FAIL",
+      "correct": 5,
+      "total": 12,
+      "p_value_empirical": 0.244,
+      "predictions": {
+        "a": {
+          "predicted": "E",
+          "actual": "K",
+          "hit": false,
+          "profile": {
+            "K": 0.493,
+            "E": 0.346,
+            "H": 0.161
+          }
+        },
+        "c": {
+          "predicted": "H",
+          "actual": "H",
+          "hit": true,
+          "profile": {
+            "K": 0.308,
+            "E": 0.209,
+            "H": 0.483
+          }
+        },
+        "d": {
+          "predicted": "H",
+          "actual": "E",
+          "hit": false,
+          "profile": {
+            "K": 0.05,
+            "E": 0.896,
+            "H": 0.054
+          }
+        },
+        "f": {
+          "predicted": "H",
+          "actual": "H",
+          "hit": true,
+          "profile": {
+            "K": 0.047,
+            "E": 0.351,
+            "H": 0.602
+          }
+        },
+        "i": {
+          "predicted": "K",
+          "actual": "K",
+          "hit": true,
+          "profile": {
+            "K": 0.513,
+            "E": 0.263,
+            "H": 0.224
+          }
+        },
+        "l": {
+          "predicted": "K",
+          "actual": "E",
+          "hit": false,
+          "profile": {
+            "K": 0.244,
+            "E": 0.526,
+            "H": 0.23
+          }
+        },
+        "o": {
+          "predicted": "K",
+          "actual": "E",
+          "hit": false,
+          "profile": {
+            "K": 0.195,
+            "E": 0.618,
+            "H": 0.188
+          }
+        },
+        "p": {
+          "predicted": "H",
+          "actual": "H",
+          "hit": true,
+          "profile": {
+            "K": 0.034,
+            "E": 0.256,
+            "H": 0.711
+          }
+        },
+        "r": {
+          "predicted": "K",
+          "actual": "H",
+          "hit": false,
+          "profile": {
+            "K": 0.207,
+            "E": 0.356,
+            "H": 0.437
+          }
+        },
+        "s": {
+          "predicted": "K",
+          "actual": "H",
+          "hit": false,
+          "profile": {
+            "K": 0.19,
+            "E": 0.317,
+            "H": 0.492
+          }
+        },
+        "t": {
+          "predicted": "K",
+          "actual": "E",
+          "hit": false,
+          "profile": {
+            "K": 0.013,
+            "E": 0.611,
+            "H": 0.376
+          }
+        },
+        "y": {
+          "predicted": "E",
+          "actual": "E",
+          "hit": true,
+          "profile": {
+            "K": 0.017,
+            "E": 0.967,
+            "H": 0.016
+          }
+        }
+      },
+      "shuffled_mean": 3.52
+    },
+    "T4_regime": {
+      "status": "PASS",
+      "chi2": 1473.4,
+      "cramers_v": 0.1189,
+      "p_value_empirical": 0.0,
+      "n_atoms": 14,
+      "n_observations": 34755,
+      "ratio": 37.4,
+      "shuffled_chi2_mean": 39.4
+    },
+    "T5_compositional": {
+      "status": "PASS",
+      "matches": 20,
+      "total": 67,
+      "match_rate": 0.299,
+      "p_value_empirical": 0.008,
+      "shuffled_mean": 13.85,
+      "shuffled_std": 2.37,
+      "examples": [
+        {
+          "middle": "eok",
+          "actual": "THERMAL",
+          "predicted": "THERMAL",
+          "match": true
+        },
+        {
+          "middle": "edy",
+          "actual": "OPERATION",
+          "predicted": "THERMAL",
+          "match": false
+        },
+        {
+          "middle": "ain",
+          "actual": "FLOW",
+          "predicted": "STAGING",
+          "match": false
+        },
+        {
+          "middle": "ey",
+          "actual": "TRANSITION",
+          "predicted": "THERMAL",
+          "match": false
+        },
+        {
+          "middle": "dy",
+          "actual": "CONTAINMENT",
+          "predicted": "MARKING",
+          "match": false
+        },
+        {
+          "middle": "ct",
+          "actual": "MONITORING",
+          "predicted": "MARKING",
+          "match": false
+        },
+        {
+          "middle": "ch",
+          "actual": "MONITORING",
+          "predicted": "MARKING",
+          "match": false
+        },
+        {
+          "middle": "eey",
+          "actual": "THERMAL",
+          "predicted": "THERMAL",
+          "match": true
+        },
+        {
+          "middle": "iin",
+          "actual": "STAGING",
+          "predicted": "STAGING",
+          "match": true
+        },
+        {
+          "middle": "eo",
+          "actual": "TRANSITION",
+          "predicted": "THERMAL",
+          "match": false
+        },
+        {
+          "middle": "od",
+          "actual": "OPERATION",
+          "predicted": "OPERATION",
+          "match": true
+        },
+        {
+          "middle": "aiin",
+          "actual": "TRANSITION",
+          "predicted": "STAGING",
+          "match": false
+        },
+        {
+          "middle": "lch",
+          "actual": "OPERATION",
+          "predicted": "STAGING",
+          "match": false
+        },
+        {
+          "middle": "ok",
+          "actual": "CONTAINMENT",
+          "predicted": "OPERATION",
+          "match": false
+        },
+        {
+          "middle": "ol",
+          "actual": "STAGING",
+          "predicted": "OPERATION",
+          "match": false
+        }
+      ]
+    },
+    "T6_paragraph_position": {
+      "status": "FAIL",
+      "rho": 0.165,
+      "p_value_empirical": 0.286,
+      "n_atoms": 14,
+      "atom_par_final_rates": {
+        "a": 0.034,
+        "c": 0.0208,
+        "d": 0.0305,
+        "f": 0.0324,
+        "i": 0.0252,
+        "l": 0.0243,
+        "m": 0.0669,
+        "n": 0.0236,
+        "o": 0.0345,
+        "p": 0.0125,
+        "r": 0.0277,
+        "s": 0.0352,
+        "t": 0.0194,
+        "y": 0.0287
+      },
+      "shuffled_rho_mean": 0.0037
+    }
+  }
+}

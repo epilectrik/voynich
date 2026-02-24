@@ -1,0 +1,233 @@
+{
+  "_metadata": {
+    "phase": "GLOSS_SCALE_VALIDATION",
+    "phase_number": 446,
+    "version": 2,
+    "description": "Corpus-wide gloss validation with redesigned null models",
+    "v1_diagnosis": "V1 shuffled category labels among 90 MIDDLEs \u2014 too conservative. Any partition of 90 well-differentiated MIDDLEs into 8 groups captures similar structural variance. Result: 0/7 pass.",
+    "v2_null_models": {
+      "null_A": "Random partition: shuffle category labels among MIDDLEs (same as v1 but for MIDDLE-level tests)",
+      "null_B": "Random token labeling: each token gets random category from marginal distribution (breaks MIDDLE consistency)"
+    },
+    "n_tokens": 23096,
+    "n_with_gloss_category": 20473,
+    "n_middles_categorized": 90,
+    "n_permutations": 1000,
+    "p_threshold": 0.01,
+    "elapsed_seconds": 62.0,
+    "category_counts": {
+      "THERMAL": 4841,
+      "TRANSITION": 3395,
+      "OPERATION": 3273,
+      "FLOW": 3985,
+      "CONTAINMENT": 1099,
+      "STAGING": 2691,
+      "MONITORING": 327,
+      "MARKING": 862
+    }
+  },
+  "synthesis": {
+    "pass_count": 5,
+    "fail_count": 2,
+    "skip_count": 0,
+    "total_tests": 7,
+    "tests_run": 7,
+    "verdict": "COHERENT",
+    "summary": "5/7 tests pass (p<0.01), 0 skipped"
+  },
+  "tests": {
+    "T1_behavioral_silhouette": {
+      "status": "PASS",
+      "silhouette_real": -0.06986478196217115,
+      "silhouette_shuffled_mean": -0.10172895026432195,
+      "silhouette_shuffled_std": 0.009215081175809723,
+      "z_score": 3.457828281078698,
+      "p_value_empirical": 0.0,
+      "n_middles": 87,
+      "n_categories": 8
+    },
+    "T2_kernel_alignment": {
+      "status": "PASS",
+      "chi2": 53.696528540903536,
+      "cramers_v": 0.6745778877326373,
+      "p_value_empirical": 0.0,
+      "n_middles": 59,
+      "kernel_profiles": {
+        "E": {
+          "CONTAINMENT": 0.0,
+          "FLOW": 0.188,
+          "MARKING": 0.0,
+          "MONITORING": 0.062,
+          "OPERATION": 0.062,
+          "STAGING": 0.125,
+          "THERMAL": 0.375,
+          "TRANSITION": 0.188
+        },
+        "H": {
+          "CONTAINMENT": 0.0,
+          "FLOW": 0.0,
+          "MARKING": 0.308,
+          "MONITORING": 0.615,
+          "OPERATION": 0.077,
+          "STAGING": 0.0,
+          "THERMAL": 0.0,
+          "TRANSITION": 0.0
+        },
+        "K": {
+          "CONTAINMENT": 0.267,
+          "FLOW": 0.133,
+          "MARKING": 0.067,
+          "MONITORING": 0.0,
+          "OPERATION": 0.1,
+          "STAGING": 0.2,
+          "THERMAL": 0.2,
+          "TRANSITION": 0.033
+        }
+      },
+      "shuffled_chi2_median": 13.808929588929589
+    },
+    "T3_affordance_alignment": {
+      "status": "FAIL",
+      "chi2": 26.08284557907846,
+      "cramers_v": 0.3161238273989209,
+      "p_value_empirical": 0.187,
+      "n_middles": 87,
+      "family_profiles": {
+        "FLOW": {
+          "CONTAINMENT": 0.5,
+          "FLOW": 0.0,
+          "MARKING": 0.0,
+          "MONITORING": 0.25,
+          "OPERATION": 0.0,
+          "STAGING": 0.25,
+          "THERMAL": 0.0,
+          "TRANSITION": 0.0
+        },
+        "PHASE": {
+          "CONTAINMENT": 0.125,
+          "FLOW": 0.25,
+          "MARKING": 0.25,
+          "MONITORING": 0.25,
+          "OPERATION": 0.0,
+          "STAGING": 0.125,
+          "THERMAL": 0.0,
+          "TRANSITION": 0.0
+        },
+        "RECOVERY": {
+          "CONTAINMENT": 0.0,
+          "FLOW": 0.5,
+          "MARKING": 0.0,
+          "MONITORING": 0.0,
+          "OPERATION": 0.0,
+          "STAGING": 0.0,
+          "THERMAL": 0.5,
+          "TRANSITION": 0.0
+        },
+        "THERMAL": {
+          "CONTAINMENT": 0.082,
+          "FLOW": 0.096,
+          "MARKING": 0.096,
+          "MONITORING": 0.082,
+          "OPERATION": 0.137,
+          "STAGING": 0.123,
+          "THERMAL": 0.151,
+          "TRANSITION": 0.233
+        }
+      },
+      "shuffled_chi2_median": 20.397270346494764
+    },
+    "T4_line_position": {
+      "status": "PASS",
+      "f_statistic": 29.887741864165207,
+      "p_value_empirical": 0.0,
+      "n_tokens": 20473,
+      "category_means": {
+        "CONTAINMENT": 0.5450000157625815,
+        "FLOW": 0.5265684306267795,
+        "MARKING": 0.4712662184819569,
+        "MONITORING": 0.5133172544073807,
+        "OPERATION": 0.482401338126429,
+        "STAGING": 0.47479737656258375,
+        "THERMAL": 0.46201444703442746,
+        "TRANSITION": 0.5404537472542575
+      },
+      "shuffled_f_mean": 0.9783965684089071,
+      "shuffled_f_95th": 1.9024436120722503,
+      "ratio_real_to_shuffled": 30.547676503781485
+    },
+    "T5_regime_direction": {
+      "status": "FAIL",
+      "correct_predictions": 2,
+      "total_predictions": 4,
+      "p_value_empirical": 0.262,
+      "prediction_details": {
+        "THERMAL": {
+          "expected": "REGIME_1",
+          "actual_max": "REGIME_1",
+          "hit": true,
+          "proportions": {
+            "REGIME_1": 0.2858,
+            "REGIME_2": 0.1486,
+            "REGIME_3": 0.1965,
+            "REGIME_4": 0.1532
+          }
+        },
+        "CONTAINMENT": {
+          "expected": "REGIME_2",
+          "actual_max": "REGIME_4",
+          "hit": false,
+          "proportions": {
+            "REGIME_1": 0.049,
+            "REGIME_2": 0.0748,
+            "REGIME_3": 0.0482,
+            "REGIME_4": 0.0774
+          }
+        },
+        "TRANSITION": {
+          "expected": "REGIME_3",
+          "actual_max": "REGIME_4",
+          "hit": false,
+          "proportions": {
+            "REGIME_1": 0.1351,
+            "REGIME_2": 0.1949,
+            "REGIME_3": 0.2029,
+            "REGIME_4": 0.2063
+          }
+        },
+        "OPERATION": {
+          "expected": "REGIME_4",
+          "actual_max": "REGIME_4",
+          "hit": true,
+          "proportions": {
+            "REGIME_1": 0.1596,
+            "REGIME_2": 0.137,
+            "REGIME_3": 0.154,
+            "REGIME_4": 0.2041
+          }
+        }
+      },
+      "shuffled_mean_correct": 0.998
+    },
+    "T6_apparatus_direction": {
+      "status": "PASS",
+      "distillation_thermal_rho": 0.7579914888059295,
+      "distillation_thermal_p": 1.6574127295670109e-16,
+      "sealed_containment_rho": -0.2551058723994318,
+      "sealed_containment_p": 0.02072098754843115,
+      "p_value_empirical": 0.003,
+      "n_folios": 82,
+      "shuffled_rho_mean": -0.028864089056574282,
+      "shuffled_rho_std": 0.3804387910159257
+    },
+    "T7_within_line_mi": {
+      "status": "PASS",
+      "mi_real": 0.01856473071391912,
+      "mi_shuffled_mean": 0.0021264925802463833,
+      "mi_shuffled_std": 0.0004339559373936863,
+      "z_score": 37.87997056198798,
+      "p_value_empirical": 0.0,
+      "n_pairs": 16579,
+      "ratio_real_to_shuffled": 8.73021184572774
+    }
+  }
+}

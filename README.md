@@ -6,13 +6,13 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 
 ## Project Status
 
-**Core model: CLOSED** | **Characterization: ACTIVE** | **Version: 4.10**
+**Core model: CLOSED** | **Characterization: ACTIVE**
 
 | Metric | Value |
 |--------|-------|
-| Validated constraints | 981 |
-| Research phases completed | 406 |
-| Model fits tested | 66 |
+| Validated constraints | 1,095 |
+| Research phases completed | 446 |
+| Model fits tested | 71 |
 | Constraint tiers | 0 (frozen fact) through 4 (exploratory) |
 
 ## Core Finding
@@ -40,6 +40,8 @@ We take the same approach with the Voynich Manuscript. We don't translate tokens
 | 0 translation-eligible zones | PURE_OPERATIONAL verdict — no natural language content |
 | 6-state macro-automaton | 8.17x class compression; AXM attractor (self=0.697); 6 folio-level archetypes orthogonal to REGIMEs |
 | Generative sufficiency | 49-class Markov + symmetric forbidden suppression reproduces 87% of measurable structure (M2 frontier; 15/15 tests after B4+C2+B5 corrections, C1025/C1030/C1033/C1034) |
+| Process control match | 5 PCs / 80% variance matches modern distillation, not Brunschwig recipes (3 PCs) |
+| Apparatus vocabulary | 5 apparatus profiles from marker MIDDLEs; REGIME encodes apparatus type; aii (unseal) 41x enriched in R3 (C1247-C1249) |
 | Brunschwig alignment | 28 tests across 4 test suites (see below) |
 
 ## Four-Layer Architecture
@@ -59,7 +61,7 @@ The manuscript comprises four structurally distinct systems that form a layered 
 
 Every Currier B token decomposes as: **[ARTICULATOR] + [PREFIX] + MIDDLE + [SUFFIX]**
 
-- **PREFIX** encodes the operational domain AND line position (e.g. energy operations, monitoring, scaffold support — Tier 3 glosses grounded in Tier 2 structural differentiation; C911, C661)
+- **PREFIX** encodes the operational domain AND line position via a base-modifier positional grammar: each PREFIX decomposes into [MODIFIER (position 0)] + [BASE (position 1)], where the base character determines which MIDDLE content domain is legal (within-base cosine 0.950 vs between-base 0.515; C1218-C1219). Tier 3 glosses grounded in Tier 2 structural differentiation (C911, C661)
 - **MIDDLE** encodes the core action (e.g. apply heat, check hazards, let settle — Tier 3 glosses grounded in Tier 2 behavioral profiles; C267, C506.b)
 - **SUFFIX** encodes role-dependent and positional markers (line-final clustering, role selectivity — but carries zero unique cross-token prediction beyond MIDDLE class; C1002, C1004)
 
@@ -138,16 +140,16 @@ Renders any Currier B folio with morphological parse, structural roles, interpre
 
 ```
 voynich/
-  context/            # Constraint system (981 validated constraints)
+  context/            # Constraint system (1,095 validated constraints)
     CLAUDE_INDEX.md   # Start here for full documentation
     CLAIMS/           # Individual constraint files
     ARCHITECTURE/     # System architecture docs (A, B, AZC, cross-system)
     STRUCTURAL_CONTRACTS/  # API-layer contracts (CASC, BCSC, ACT, HTSC, PSC)
-    MODEL_FITS/       # 66 tested model fits
+    MODEL_FITS/       # 71 tested model fits
     SPECULATIVE/      # Tier 3-4 interpretations
   data/               # Transcript, dictionaries, Brunschwig recipes
   scripts/            # voynich.py core library + analysis tools
-  phases/             # 406 completed research phases
+  phases/             # 446 completed research phases
   results/            # Legacy analysis outputs (early phases; new results go in phases/)
   folio_analysis/     # Per-folio hazard maps
   annotation_data/    # Folio annotation work
@@ -162,9 +164,9 @@ voynich/
 |------|---------|-------|
 | 0 | FROZEN FACT — proven, do not reopen | 25 |
 | 1 | FALSIFICATION — rejected, do not retry | 15 |
-| 2 | STRUCTURAL — high-confidence, bounded | 903 |
+| 2 | STRUCTURAL — high-confidence, bounded | 1,016 |
 | 3 | SPECULATIVE — interpretive layer | 35 |
-| 4 | EXPLORATORY — idea generation only | 3 |
+| 4 | EXPLORATORY — idea generation only | 2 |
 
 ## Methodology
 
@@ -180,17 +182,17 @@ The system works as follows:
 
 2. **Constraints are tiered by confidence.** Tier 0 constraints are frozen facts that cannot be reopened. Tier 1 constraints are falsified hypotheses that cannot be retried. Tier 2 constraints are high-confidence structural findings. Tiers 3-4 are speculative or exploratory. This prevents the system from drifting backward or re-deriving known results.
 
-3. **Context is always loaded.** Every new analysis session begins with the full constraint system available. The AI doesn't start from scratch — it starts from everything that has already been proven, disproven, or established. This means phase 406 benefits from all 981 constraints accumulated across the previous 405 phases.
+3. **Context is always loaded.** Every new analysis session begins with the full constraint system available. The AI doesn't start from scratch — it starts from everything that has already been proven, disproven, or established. This means phase 446 benefits from all 1,095 constraints accumulated across the previous 445 phases.
 
 4. **Structural contracts provide fast lookup.** As the constraint count grew, key subsystems were summarized into API-like contracts (YAML files) that encode the essential properties of each manuscript layer in a single file. These contracts are the "shallow API" — check the contract first, drill into individual constraints only when needed.
 
 5. **Falsification is permanent.** When a hypothesis fails, it is recorded as a Tier 1 falsification and can never be retried. This prevents circular investigation and forces the analysis forward. Over 30 hypotheses have been permanently closed this way, including natural language encoding, cipher systems, calendar theories, and character-level semantics.
 
-6. **Expert validation prevents drift.** An embedded expert-advisor agent carries a consolidated version of the entire constraint system — all 981 constraints, structural contracts, fit results, and architectural documentation — pre-loaded into its system prompt. When a research phase proposes new constraints, interpretive extensions, or structural changes, the expert-advisor validates them against the full body of existing knowledge in a single pass. This catches contradictions, tier violations, and semantic drift that would be invisible to any individual research phase working with partial context. The expert's consolidated context is regenerated from source whenever the constraint system changes, ensuring it always reflects the current state of knowledge.
+6. **Expert validation prevents drift.** An embedded expert-advisor agent carries a consolidated version of the entire constraint system — all 1,093 constraints, structural contracts, fit results, and architectural documentation — pre-loaded into its system prompt. When a research phase proposes new constraints, interpretive extensions, or structural changes, the expert-advisor validates them against the full body of existing knowledge in a single pass. This catches contradictions, tier violations, and semantic drift that would be invisible to any individual research phase working with partial context. The expert's consolidated context is regenerated from source whenever the constraint system changes, ensuring it always reflects the current state of knowledge.
 
 The result is a system where knowledge compounds: early phases discover basic morphology, middle phases build grammar and classification, late phases test external comparisons and characterize edge cases — and none of this work is ever lost or forgotten. Every constraint is traceable to specific statistical evidence.
 
-This architecture is what allowed the project to reach conclusions that would be impossible in a single analytical pass. No individual analysis session could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, and the Brunschwig alignment — but 406 phases, each building on validated prior work, could.
+This architecture is what allowed the project to reach conclusions that would be impossible in a single analytical pass. No individual analysis session could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, and the Brunschwig alignment — but 446 phases, each building on validated prior work, could.
 
 ## Data Source
 

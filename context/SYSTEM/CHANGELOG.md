@@ -4,6 +4,24 @@
 
 ---
 
+## Version 4.49.35 (2026-02-24) - Phase 446: Gloss Scale Validation
+
+### Summary
+
+Phase 446: Corpus-wide validation of the Tier 3 gloss system at both MIDDLE and atom levels. **MIDDLE-level (v2):** 8 operational categories on 90 MIDDLEs achieve 5/7 COHERENT against dual null models (random partition + random token labels). Key passes: behavioral silhouette z=3.5, kernel-category alignment V=0.675, line position F=29.9 (30x), apparatus-gloss rho=0.758, within-line MI 9x. V1 null model failure diagnosed (shuffling among same 90 MIDDLEs too conservative). **Atom-level (446b):** 14 non-kernel atoms tested with 6-test battery. 2/6 PASS: atoms differentiate REGIMEs 37x (structural reality), composed atom glosses predict human-assigned MIDDLE categories p=0.008 (compositional chain). 4 directional prediction tests fail because morphological grammar (C1191) governs atom position/co-occurrence independently of semantic content. Key insight: atom meanings manifest through composition into MIDDLEs, not through direct structural placement.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/GLOSS_SCALE_VALIDATION/` -- 2 scripts + 2 results JSONs |
+| **ADDED** | C1250-C1251 constraint files (2 new constraints, 1093->1095) |
+| **UPDATED** | `CLAUDE.md` -- 1093->1095 constraints, 445->446 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 1093->1095 constraints |
+| **UPDATED** | `INDEX.md` -- 1093->1095 total, Phase 446 section added |
+
+---
+
 ## Version 4.48.34 (2026-02-24) - Phase 445: Apparatus Vocabulary Classification
 
 ### Summary

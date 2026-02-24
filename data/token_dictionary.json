@@ -131,7 +131,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -1427,7 +1427,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -1480,7 +1480,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -2032,7 +2032,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -3882,7 +3882,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -7583,7 +7583,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -8546,7 +8546,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -9589,7 +9589,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -9753,7 +9753,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -9811,7 +9811,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -10785,7 +10785,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -11070,7 +11070,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -11425,7 +11425,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -12954,7 +12954,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -14862,7 +14862,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -15017,7 +15017,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -15266,7 +15266,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -15830,7 +15830,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -16190,7 +16190,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -17740,7 +17740,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -19646,7 +19646,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -19869,7 +19869,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -21293,7 +21293,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -22570,7 +22570,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": true
     },
@@ -22722,7 +22722,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -22765,7 +22765,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -23028,7 +23028,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -23767,7 +23767,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -24376,7 +24376,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -24854,7 +24854,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -25071,7 +25071,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -25630,7 +25630,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -25723,7 +25723,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -26338,7 +26338,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -26417,7 +26417,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -26577,7 +26577,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -27949,7 +27949,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -28668,7 +28668,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": true
     },
@@ -29210,7 +29210,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -29410,7 +29410,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -29506,7 +29506,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -30540,7 +30540,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -31047,7 +31047,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -31129,7 +31129,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -31246,7 +31246,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -32001,7 +32001,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -32765,7 +32765,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -34569,7 +34569,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": false
     },
@@ -34905,7 +34905,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -35617,7 +35617,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -36249,7 +36249,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -38814,7 +38814,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -39209,7 +39209,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -40410,7 +40410,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -40750,7 +40750,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -43319,7 +43319,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": false
     },
@@ -43835,7 +43835,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": false
     },
@@ -45739,7 +45739,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -45847,7 +45847,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -46153,7 +46153,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -46394,7 +46394,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -46444,7 +46444,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -46550,7 +46550,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -47932,7 +47932,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -48126,7 +48126,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -48169,7 +48169,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -48315,7 +48315,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -48402,7 +48402,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -50423,7 +50423,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -51662,7 +51662,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -53119,7 +53119,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "settling out",
       "is_fl_role": false
     },
@@ -53382,7 +53382,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -53662,7 +53662,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -53986,7 +53986,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -55339,7 +55339,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -55878,7 +55878,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -56013,7 +56013,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -56468,7 +56468,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -56628,7 +56628,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": false
     },
@@ -56677,7 +56677,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -57367,7 +57367,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -57576,7 +57576,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -57840,7 +57840,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -58780,7 +58780,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -60710,7 +60710,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -61107,7 +61107,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -61640,7 +61640,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -62016,7 +62016,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -62105,7 +62105,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -62153,7 +62153,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -62719,7 +62719,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -63301,7 +63301,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -63987,7 +63987,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -64840,7 +64840,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -65456,7 +65456,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -65519,7 +65519,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -65832,7 +65832,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -67085,7 +67085,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -68050,7 +68050,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -68179,7 +68179,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -68305,7 +68305,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -68552,7 +68552,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -69477,7 +69477,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -69779,7 +69779,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -70170,7 +70170,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "settling out",
       "is_fl_role": true
     },
@@ -71967,7 +71967,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -72682,7 +72682,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -72725,7 +72725,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -73921,7 +73921,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -74323,7 +74323,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -74920,7 +74920,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -75053,7 +75053,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -75353,7 +75353,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -75761,7 +75761,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -76373,7 +76373,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -76455,7 +76455,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -76806,7 +76806,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": true
     },
@@ -77204,7 +77204,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -79149,7 +79149,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "settling out",
       "is_fl_role": false
     },
@@ -79499,7 +79499,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -79701,7 +79701,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -80387,7 +80387,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -80942,7 +80942,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -81249,7 +81249,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "settling out",
       "is_fl_role": false
     },
@@ -81345,7 +81345,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -82147,7 +82147,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": true
     },
@@ -83493,7 +83493,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -84711,7 +84711,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -85450,7 +85450,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -86634,7 +86634,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -86818,7 +86818,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -86960,7 +86960,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -87337,7 +87337,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -87380,7 +87380,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -88202,7 +88202,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -88291,7 +88291,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -88382,7 +88382,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -88466,7 +88466,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -88934,7 +88934,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -89439,7 +89439,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -89773,7 +89773,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -89883,7 +89883,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": false
     },
@@ -91224,7 +91224,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -91743,7 +91743,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -93182,7 +93182,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -94056,7 +94056,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -95089,7 +95089,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -95477,7 +95477,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -95883,7 +95883,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -96225,7 +96225,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -96438,7 +96438,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -96617,7 +96617,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -96682,7 +96682,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -97563,7 +97563,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -98238,7 +98238,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -98883,7 +98883,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -99018,7 +99018,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": true
     },
@@ -99533,7 +99533,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -100384,7 +100384,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -100868,7 +100868,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -100950,7 +100950,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -102533,7 +102533,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": false
     },
@@ -103104,7 +103104,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -103551,7 +103551,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": false
     },
@@ -107359,7 +107359,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -107446,7 +107446,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -109814,7 +109814,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -112302,7 +112302,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -114443,7 +114443,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -114486,7 +114486,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -114551,7 +114551,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "settling out",
       "is_fl_role": true
     },
@@ -114596,7 +114596,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -114684,7 +114684,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -115061,7 +115061,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "settling out",
       "is_fl_role": false
     },
@@ -116184,7 +116184,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -116857,7 +116857,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -117852,7 +117852,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -118213,7 +118213,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -118389,7 +118389,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -120029,7 +120029,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -123763,7 +123763,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -125910,7 +125910,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -126409,7 +126409,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -126541,7 +126541,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -127128,7 +127128,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -127867,7 +127867,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -128719,7 +128719,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -129156,7 +129156,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -129773,7 +129773,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -129872,7 +129872,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -130075,7 +130075,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": true
     },
@@ -130379,7 +130379,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": true
     },
@@ -130970,7 +130970,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -131118,7 +131118,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": false
     },
@@ -134585,7 +134585,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -134799,7 +134799,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -135298,7 +135298,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -135456,7 +135456,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -136571,7 +136571,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": true
     },
@@ -136614,7 +136614,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -138095,7 +138095,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -138804,7 +138804,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -139492,7 +139492,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -139984,7 +139984,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -140733,7 +140733,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -142320,7 +142320,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -142624,7 +142624,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -145090,7 +145090,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -145945,7 +145945,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": true
     },
@@ -146044,7 +146044,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -146228,7 +146228,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -146902,7 +146902,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": true
     },
@@ -147069,7 +147069,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -148166,7 +148166,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -149363,7 +149363,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -150067,7 +150067,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -150824,7 +150824,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -151684,7 +151684,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -151833,7 +151833,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -154095,7 +154095,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -154268,7 +154268,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -155117,7 +155117,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -155429,7 +155429,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -156031,7 +156031,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -156579,7 +156579,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": true
     },
@@ -156724,7 +156724,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -156942,7 +156942,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -157066,7 +157066,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -158210,7 +158210,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -158382,7 +158382,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -158670,7 +158670,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -158732,7 +158732,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -159233,7 +159233,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -159586,7 +159586,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -160163,7 +160163,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -160206,7 +160206,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -161686,7 +161686,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": true
     },
@@ -162133,7 +162133,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -164295,7 +164295,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -165536,7 +165536,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -166989,7 +166989,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "settling out",
       "is_fl_role": false
     },
@@ -169656,7 +169656,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -170790,7 +170790,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": true
     },
@@ -171952,7 +171952,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -172890,7 +172890,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -174137,7 +174137,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -176129,7 +176129,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -176387,7 +176387,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -176430,7 +176430,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -176871,7 +176871,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -177250,7 +177250,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -177456,7 +177456,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": true
     },
@@ -177630,7 +177630,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": false
     },
@@ -179515,7 +179515,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -179775,7 +179775,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -181261,7 +181261,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -181507,7 +181507,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -181552,7 +181552,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -182377,7 +182377,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -182508,7 +182508,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -183406,7 +183406,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -184496,7 +184496,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -184741,7 +184741,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -184790,7 +184790,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -185510,7 +185510,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -186839,7 +186839,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -186882,7 +186882,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -187165,7 +187165,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -187749,7 +187749,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": true
     },
@@ -187792,7 +187792,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -188207,7 +188207,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -188632,7 +188632,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -189273,7 +189273,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -189641,7 +189641,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -189974,7 +189974,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -190432,7 +190432,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -191132,7 +191132,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -191222,7 +191222,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": true
     },
@@ -191526,7 +191526,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -191620,7 +191620,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -192254,7 +192254,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -192877,7 +192877,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -192953,7 +192953,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -193137,7 +193137,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -194471,7 +194471,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -194517,7 +194517,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -194560,7 +194560,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -194828,7 +194828,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -195157,7 +195157,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -195200,7 +195200,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -195333,7 +195333,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": true
     },
@@ -195380,7 +195380,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -195592,7 +195592,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": true
     },
@@ -195919,7 +195919,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -196110,7 +196110,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": true
     },
@@ -196902,7 +196902,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -197035,7 +197035,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -197135,7 +197135,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -197479,7 +197479,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -198420,7 +198420,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -199162,7 +199162,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -199244,7 +199244,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": true
     },
@@ -204680,7 +204680,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -207970,7 +207970,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -208322,7 +208322,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -208366,7 +208366,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": true
     },
@@ -208775,7 +208775,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -209160,7 +209160,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -210228,7 +210228,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -210579,7 +210579,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "settling out",
       "is_fl_role": true
     },
@@ -211292,7 +211292,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -211475,7 +211475,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -216479,7 +216479,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -217617,7 +217617,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -219317,7 +219317,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -219519,7 +219519,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -222623,7 +222623,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -226018,7 +226018,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -226069,7 +226069,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -226127,7 +226127,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -226306,7 +226306,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -226887,7 +226887,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -227328,7 +227328,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "settling out",
       "is_fl_role": true
     },
@@ -227489,7 +227489,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -227894,7 +227894,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": false
     },
@@ -228907,7 +228907,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -229465,7 +229465,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -230690,7 +230690,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -231356,7 +231356,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -232119,7 +232119,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -233123,7 +233123,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "settling out",
       "is_fl_role": false
     },
@@ -233918,7 +233918,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -235229,7 +235229,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -235535,7 +235535,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -237280,7 +237280,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -239887,7 +239887,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -240041,7 +240041,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -240368,7 +240368,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -240606,7 +240606,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -241068,7 +241068,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -241795,7 +241795,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -242732,7 +242732,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -243776,7 +243776,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -247742,7 +247742,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -247987,7 +247987,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -249129,7 +249129,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": true
     },
@@ -251388,7 +251388,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -252686,7 +252686,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -252948,7 +252948,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -253144,7 +253144,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -254155,7 +254155,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": true
     },
@@ -254971,7 +254971,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "settling out",
       "is_fl_role": false
     },
@@ -255952,7 +255952,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "settling out",
       "is_fl_role": false
     },
@@ -256154,7 +256154,7 @@
         }
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -257290,7 +257290,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "settling out",
       "is_fl_role": false
     },
@@ -257532,7 +257532,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -258927,7 +258927,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -259219,7 +259219,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -261826,7 +261826,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": true
     },
@@ -261903,7 +261903,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -261954,7 +261954,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -262424,7 +262424,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -263207,7 +263207,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": true
     },
@@ -263330,7 +263330,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": true
     },
@@ -265569,7 +265569,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -265950,7 +265950,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": false
     },
@@ -266036,7 +266036,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -266188,7 +266188,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": true
     },
@@ -267682,7 +267682,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -268144,7 +268144,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -269641,7 +269641,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -269910,7 +269910,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -270705,7 +270705,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -271189,7 +271189,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -271314,7 +271314,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "settling out",
       "is_fl_role": false
     },
@@ -271926,7 +271926,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -273640,7 +273640,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -274080,7 +274080,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -275698,7 +275698,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -276210,7 +276210,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -276837,7 +276837,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -276966,7 +276966,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -277309,7 +277309,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -277782,7 +277782,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -278482,7 +278482,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -278675,7 +278675,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -279024,7 +279024,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -279263,7 +279263,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -280692,7 +280692,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -281218,7 +281218,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -281378,7 +281378,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -282368,7 +282368,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -282961,7 +282961,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -283233,7 +283233,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": true
     },
@@ -284167,7 +284167,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -284422,7 +284422,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": false
     },
@@ -286337,7 +286337,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -286875,7 +286875,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -286990,7 +286990,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -287879,7 +287879,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -289230,7 +289230,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -290429,7 +290429,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -291359,7 +291359,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -293993,7 +293993,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -297016,7 +297016,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -297856,7 +297856,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "settling out",
       "is_fl_role": true
     },
@@ -300072,7 +300072,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -301508,7 +301508,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -301971,7 +301971,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -302699,7 +302699,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": false
     },
@@ -303614,7 +303614,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": true
     },
@@ -304208,7 +304208,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -304648,7 +304648,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -305847,7 +305847,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -306397,7 +306397,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": true
     },
@@ -310479,7 +310479,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -313395,7 +313395,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -314507,7 +314507,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -314722,7 +314722,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -314851,7 +314851,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -317918,7 +317918,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": false
     },
@@ -318740,7 +318740,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -318998,7 +318998,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -320481,7 +320481,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -321100,7 +321100,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -321745,7 +321745,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -323866,7 +323866,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -324943,7 +324943,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -325315,7 +325315,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -326814,7 +326814,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -326859,7 +326859,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -330342,7 +330342,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -330689,7 +330689,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -331952,7 +331952,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -333213,7 +333213,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": true
     },
@@ -334256,7 +334256,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -335033,7 +335033,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -337077,7 +337077,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -337563,7 +337563,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -337859,7 +337859,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -338206,7 +338206,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -339149,7 +339149,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -339235,7 +339235,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -339757,7 +339757,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -340058,7 +340058,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -341011,7 +341011,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -341534,7 +341534,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -341835,7 +341835,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -342670,7 +342670,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "settling out",
       "is_fl_role": false
     },
@@ -344238,7 +344238,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -347026,7 +347026,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -350188,7 +350188,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -354301,7 +354301,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -356120,7 +356120,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -356379,7 +356379,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -357714,7 +357714,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -359921,7 +359921,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -360533,7 +360533,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -360621,7 +360621,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -361613,7 +361613,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -362348,7 +362348,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": true
     },
@@ -362693,7 +362693,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -364035,7 +364035,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -367444,7 +367444,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -368569,7 +368569,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -368745,7 +368745,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -369222,7 +369222,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -369265,7 +369265,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -371989,7 +371989,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -373632,7 +373632,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": false
     },
@@ -374110,7 +374110,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -374888,7 +374888,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": true
     },
@@ -376272,7 +376272,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": true
     },
@@ -380256,7 +380256,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -381321,7 +381321,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": true
     },
@@ -381360,7 +381360,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -381398,7 +381398,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -381893,7 +381893,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -382121,7 +382121,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "settling out",
       "is_fl_role": true
     },
@@ -382578,7 +382578,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -383226,7 +383226,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -384903,7 +384903,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -385247,7 +385247,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -386428,7 +386428,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -386962,7 +386962,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -387920,7 +387920,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -390318,7 +390318,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -390508,7 +390508,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -391002,7 +391002,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": true
     },
@@ -392257,7 +392257,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": false
     },
@@ -393020,7 +393020,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -393937,7 +393937,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -400288,7 +400288,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -402876,7 +402876,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -403180,7 +403180,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -403560,7 +403560,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": false
     },
@@ -404244,7 +404244,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "LATE",
+      "fl_state": "FINAL",
       "fl_meaning": "nearly done",
       "is_fl_role": false
     },
@@ -404472,7 +404472,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "TERMINAL",
+      "fl_state": "FINAL",
       "fl_meaning": "complete",
       "is_fl_role": true
     },
@@ -404662,7 +404662,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -404738,7 +404738,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "processing",
       "is_fl_role": false
     },
@@ -404893,7 +404893,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -405121,7 +405121,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": false
     },
@@ -405199,7 +405199,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "adjusting",
       "is_fl_role": false
     },
@@ -405237,7 +405237,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },
@@ -405465,7 +405465,7 @@
         "by_folio": {}
       },
       "gloss": null,
-      "fl_state": "MEDIAL",
+      "fl_state": "LATE",
       "fl_meaning": "separating",
       "is_fl_role": true
     },

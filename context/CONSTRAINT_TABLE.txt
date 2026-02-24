@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1094 constraints | 2026-02-24
+CONSTRAINT_REFERENCE v2.6 | 1096 constraints | 2026-02-24
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1098,3 +1098,5 @@ C1246	**Mode-Differentiated Cross-Lane Pairing** (Mode A/B lines use different Q
 C1247	**aii REGIME_3 Specificity** (aii "unseal" is 41x enriched in R3 vs R1; 14/20 R3 folios contain aii vs 1/32 R1; line context shows close→unseal→open transition; R3 = open-cycle batch apparatus)	2	B, REGIME, aii, apparatus, batch	-> C1247_aii_regime3_specificity.md
 C1248	**Apparatus-Marker Co-occurrence Architecture** (t+eol co-occur OR=16.27 p=0.0001; ke+eeol co-occur OR=inf p=0.0003; DISTILLATION vs PRECISION rho=-0.666; R1/R3=single-apparatus R2/R4=mixed-apparatus REGIMEs)	2	B, apparatus, co-occurrence, REGIME, profile	-> C1248_apparatus_marker_cooccurrence.md
 C1249	**Section-Conditioned Apparatus Diversity** (Herbal is most apparatus-diverse section; R2-SEALED 100% Herbal; R4-SEALED/SUSTAINED 100% Herbal; Section B overwhelmingly distillation 0.293 vs H 0.134; weakest signatures all Herbal)	2	B, section, apparatus, diversity, Herbal	-> C1249_section_apparatus_diversity.md
+C1250	**Gloss Category Structural Coherence** (8 operational categories on 90 MIDDLEs: 5/7 permutation tests PASS p<0.01; behavioral silhouette z=3.5, kernel alignment V=0.675, line position F=29.9 30x, apparatus rho=0.758, within-line MI 9x; affordance-family and REGIME-direction fail; v2 redesigned null models)	2	B, gloss, category, validation, corpus-scale	-> C1250_gloss_category_structural_coherence.md
+C1251	**Atom Gloss Compositional Validation** (atom->gloss validates through composition not position; composed atom glosses predict MIDDLE categories p=0.008; atoms differentiate REGIMEs 37x; 4/6 directional tests fail: line position rho=0.53, suffix mode rho=-0.06, kernel affinity 5/12, paragraph rho=0.17; confirms C1191 morphological grammar independent of semantic content)	2	B, atom, gloss, composition, C1191, positional-grammar	-> C1251_atom_gloss_compositional_validation.md
