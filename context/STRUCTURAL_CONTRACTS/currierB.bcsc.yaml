@@ -870,7 +870,7 @@ program_structure:
     # For comprehensive paragraph-as-unit model, see PSC (paragraph.psc.yaml)
     # PSC owns: definition, independence model, folio organization, A-B correspondence, stability
     # BCSC retains: B-specific execution patterns below (HT enrichment, spec->exec gradient, gallows dynamics)
-    function: "Self-contained mini-program with header/specification/execution architecture"
+    function: "Self-contained mini-program with header/body architecture and parallel Mode A/B tracks"
     mean_per_folio: 7.1
     mean_lines_per_paragraph: 4.4
 
@@ -901,41 +901,46 @@ program_structure:
       provenance: "C963, C677, C1229, C1230, C1231"
 
     execution_gradient:
-      statement: "Body lines follow a specification->execution gradient"
-      spec_exec_vocabulary:
-        rare_middle_trend: "r=-0.97 (Q0→Q4)"
-        universal_middle_trend: "r=+0.92 (Q0→Q4)"
-        tokens_per_line: "10.3→8.7 (r=-0.97)"
-        terminal_suffix_trend: "r=-0.89 (declining — parameter setting is early)"
-        bare_suffix_trend: "r=+0.90 (increasing — continuation is late)"
-        iterate_suffix_trend: "r=+0.83 (increasing — looping is late)"
-        provenance: "C932"
-      prep_verb_concentration:
-        statement: "Prep verbs (pch, lch, tch, te) concentrate 2-3x in Q0 vs Q4"
-        te_ratio: "2.7x (Q0/Q4)"
-        pch_ratio: "2.8x"
-        tch_ratio: "1.9x"
-        lch_ratio: "1.3x"
-        all_avg_position: "<0.45 (early half)"
-        provenance: "C933"
-      parallel_startup:
-        statement: "Heat operations appear before prep operations in 65% of paragraphs"
-        first_heat_position: 0.079
-        first_prep_position: 0.212
-        heat_first_rate: "65%"
-        heat_prep_cooccurrence_trend: "r=-0.94 (Q0→Q4)"
-        provenance: "C934"
+      # REVISED Phase 451 (C1259): The spec->exec vocabulary gradient (C932) did NOT
+      # replicate. Prep verb concentration (C933) is an ARTIFACT of Mode A vocabulary.
+      # Kernel composition shift (C965) is directionally real but sub-Bonferroni.
+      # The body is NOT a specification->execution ramp. It is a steady-state cycling
+      # architecture with two coupled parallel tracks.
+      statement: "Body lines form a steady-state cycling architecture with parallel Mode A/B tracks"
+      retracted_claims:
+        c932_vocabulary_gradient: "NOT REPLICATED — original script included header in Q0; body-only shows RARE r=-0.054 (was -0.97), UNIVERSAL r=-0.893 (was +0.92). C1259 T2."
+        c933_prep_verb_concentration: "ARTIFACT — 77% of prep verbs are Mode A tokens; within Mode B no positional bias (p=0.639). C1259 T3."
+        c934_parallel_startup: "WEAKENED — both pillars (C933, C965) undermined. C1259."
+        c965_kernel_composition: "WEAKENED — PREFIX-based retest: h rho=+0.058 (p=0.037), same direction but sub-Bonferroni (was +0.10, p=0.0004). Fragile, not an artifact."
+      surviving_body_signals:
+        line_shortening: "rho=-0.243 (p=0.000) — lines get shorter through body (C677, C1260 S4)"
+        bare_suffix_increase: "Mode B bare rho=+0.072 (p=0.008) — genuine within-track trend (C1259 T7)"
+        fl_reset_genuine: "B->B regression 49.7% > cross-mode 40.5% — FL cycling is B-track internal (C1259 T5)"
+        prefix_switching_mixture: "Within-mode JSD 0.326 < cross-mode 0.352 (p=0.002) — partly mode alternation (C1259 T6)"
       prep_reinterpretation: |
         C1221 shows prep PREFIXes are NOT distinct operation verbs but h-base
-        variants (mean pairwise cosine 0.963, shuffle p=0.998). Their early
-        concentration (C933) reflects position-based phase differences within
-        the stability/closure domain, not different physical operations. Prep
-        MIDDLEs appear throughout paragraphs (2.86x enriched in Mode A lines,
-        C1230), serving position-dependent purposes: prepare material (early),
-        agitate between extraction passes (mid), process final product (late).
-      prep_reinterpretation_provenance: "C1221, C1230"
+        variants (mean pairwise cosine 0.963, shuffle p=0.998). Prep MIDDLEs
+        are overwhelmingly Mode A vocabulary (77%, C1259 T3). Their apparent
+        early concentration was a Mode A property, not a positional gradient.
+      prep_reinterpretation_provenance: "C1221, C1230, C1259"
+      parallel_tracks:
+        statement: "Mode A and B lines form coupled parallel sequential tracks within paragraphs (C1258, 5/5 PASS)"
+        mode_b_track: "Continuous track — vocabulary (p=0.000), kernel (p=0.000), FL (p=0.001) continuity across interleaved A-line interruptions"
+        mode_a_track: "Specification injections — weak/no within-track continuity (vocab p=0.692, FL p=0.991)"
+        cross_mode_coupling: "Bidirectional — A->B rho=0.189, B->A rho=0.208 (both p=0.000)"
+        within_vs_cross: "Within-mode coupling > cross-mode (Jaccard 0.188 vs 0.164, p=0.000)"
+        mode_proportion: "FLAT across body (rho=-0.027, p=0.449) — Mode A does NOT concentrate early (C1259 T1)"
+        provenance: "C1258, C1259"
+      thermal_state_tracking:
+        statement: "B-track carries sequential thermal state (C1260)"
+        energy_propagation: "e_frac rho=0.376, ke_ratio rho=0.228, qo_frac rho=0.186, k_frac rho=0.139 (all p=0.000)"
+        fl_independence: "FL does NOT propagate between B lines (rho=0.026, p=0.56)"
+        steady_state: "No ordinal drift in energy variables — thermal equilibrium maintained"
+        line_shortening: "n_toks rho=-0.243 (p=0.000) — only monotonic signal"
+        autocorrelation: "ke_ratio lag-1 survives permutation (p=0.002)"
+        provenance: "C1260"
       cycling_architecture:
-        statement: "Body lines are independently composed extraction passes within a monotonic gradient envelope. Cross-line sequencing is near-random; structure lives within each line, not between lines."
+        statement: "Body lines are independently composed extraction passes. Cross-line sequencing is near-random; structure lives within each line, not between lines."
         cross_line_independence: |
           FL regression (40.7%), mode alternation (45.7%), and channel switching
           (41.7%) are statistically independent AND near-random. Mode transition
@@ -944,10 +949,10 @@ program_structure:
           independently composed extraction pass. (C1233)
           Supported by: C670 (vocabulary null), C673 (CC independence),
           C972 (stronger than random Markov), C966 (no cross-line memory).
-        fl_cross_line_reset: "36.4% of cross-line FL pairs show regression, mainly LATE->MEDIAL (73.9%) — each line is one processing cycle, FL partially resets between cycles (C1227)"
-        prefix_channel_switching: "73.2% of paragraphs have interior PREFIX divergence >= opening divergence (JSD 0.470 vs 0.504) — lines routinely change operational mode, confirming cycling not apparatus switching (C1228)"
-        suffix_mode_alternation: "100% of long paragraphs show k=2 suffix clusters (silhouette 0.459), 80% interleaved — two modes alternate but sequence is near-random (entropy 97.8%), not structured (C1229, C1233)"
-        mode_functional_basis: "Mode A = specification (terminal suffixes 2.5-3.0x, ee tokens 1.56x); Mode B = execution (bare 62.0%). Not a cycling dimension — line-level property determined by process state (C1230, C1236)"
+        fl_cross_line_reset: "B->B regression rate 49.7%, cross-mode 40.5% — FL cycling is B-track internal, not mode-transition-driven (C1227, C1259 T5)"
+        prefix_channel_switching: "Within-mode JSD 0.326 < cross-mode 0.352 (p=0.002) — PREFIX switching is partly mode alternation, partly genuine within-track (C1228, C1259 T6)"
+        suffix_mode_alternation: "100% of long paragraphs show k=2 suffix clusters (silhouette 0.459), 80% interleaved — two coupled parallel tracks, not random alternation (C1229, C1258)"
+        mode_functional_basis: "Mode A = specification (terminal suffixes 2.5-3.0x, ee tokens 1.56x); Mode B = execution (bare 62.0%). Opener MIDDLE selects line mode (Cramer's V=0.30, 1.76x, C1256)"
         mode_universality: "Global centroids converge across all 55 qualifying paragraphs (F=4.56, silhouette 0.428) — modes are universal B grammar property (C1231)"
         tail_product_signatures: "Last 2 body lines cluster into k=3 product types, section-correlated (chi2=31.73, p=0.0001) — different paragraphs produce different output types (C1232)"
         steady_state: |
@@ -957,39 +962,28 @@ program_structure:
           (5.19x enriched at paragraph-final token). Last body lines are
           shortened (7.3 vs 10.0 tokens) and cooling-enriched (e-kernel
           60.8% vs 57.0%). (C1237)
-        gradient_cycling_reconciliation: |
-          The spec->exec gradient (C932) provides the ENVELOPE (terminal
-          fraction declines monotonically r=-0.89). Within that envelope,
-          each line is independently composed as Mode A (specification) or
-          Mode B (execution) — the sequence is near-random (C1233), but
-          the balance shifts from specification-heavy early to
-          continuation-heavy late.
-        provenance: "C1227, C1228, C1229, C1230, C1231, C1232, C1233, C1236, C1237"
+        provenance: "C1227, C1228, C1229, C1230, C1231, C1232, C1233, C1236, C1237, C1256, C1258, C1259, C1260"
 
     paragraph_zones:
-      # Descriptive model of paragraph architecture
-      statement: "Each paragraph has three functional zones"
+      # REVISED Phase 451: Two zones, not three. The body-internal
+      # SPECIFICATION/EXECUTION split (C932) did not replicate.
+      statement: "Each paragraph has two functional zones: HEADER and BODY"
       zones:
         - zone: "HEADER"
           lines: "Line 1"
           content: "Compound MIDDLEs (specification + identification)"
           unique_to_folio: "85.9% of line-1 HT tokens are folio-singletons"
           provenance: "C840, C870, C935"
-        - zone: "SPECIFICATION"
-          lines: "Early body (Q0-Q1)"
-          content: "Rare/unique vocabulary, prep operations, parameter setting"
-          provenance: "C932, C933"
-        - zone: "EXECUTION"
-          lines: "Late body (Q3-Q4)"
-          content: "Universal vocabulary, iterate suffixes, generic control loop"
-          provenance: "C932, C934"
-      cycling_layer_note: |
-        The three zones describe the monotonic ENVELOPE of vocabulary
-        gradient (C932). Beneath this, body lines cycle through Mode A
-        (specification/agitation) and Mode B (continuation/stabilization)
-        at every position — the zones label where each mode DOMINATES,
-        but neither is absent anywhere. See execution_gradient.cycling_architecture.
-      cycling_layer_provenance: "C1229, C1231"
+        - zone: "BODY"
+          lines: "Lines 2+"
+          content: "Steady-state cycling — two parallel tracks (Mode A specification, Mode B execution) interleaved throughout, no positional gradient"
+          mode_proportion_flat: "Mode A fraction ~42% at all positions (rho=-0.027, p=0.449)"
+          thermal_continuity: "B-track carries energy state (e_frac rho=0.376) but not FL state"
+          provenance: "C963, C1258, C1259, C1260"
+      retracted_zones:
+        specification_zone: "RETRACTED — C932's early-body specification zone was an artifact of header contamination in Q0"
+        execution_zone: "RETRACTED — C932's late-body execution zone is not distinguishable from early body after proper header exclusion"
+      provenance: "C840, C870, C935, C963, C1258, C1259, C1260"
 
     gallows_initial:
       paragraph_initial_rate: "8.6% vs 2.7% body"

@@ -38,7 +38,7 @@ ownership:
     - a_b_correspondence       # pool relationship, structural parallel
     - cross_system_manifestation  # A vs B paragraph properties
   psc_does_not_describe:
-    - b_execution_gradient: "-> BCSC (spec->exec vocabulary C932-C934, prep verb concentration)"
+    - b_execution_gradient: "-> BCSC (parallel tracks C1258-C1260, thermal state tracking; C932-C934 retracted/weakened)"
     - b_ht_paragraph_structure: "-> BCSC (HT enrichment C840-C844, step function, prefix markers)"
     - a_internal_profiling: "-> CASC (size distribution C847, RI variance C848, section profile C849)"
     - a_combinatorial_grammar: "-> CASC (C1039-C1041 cluster selectivity, diversification)"
@@ -253,11 +253,10 @@ cross_system_manifestation:
     ht_prefix_markers: "pch- 16.9% + po- 16.6% = 33.5% of initiators (C843, BCSC)"
     gallows_initial: "71.5% p/t/k/f initial (C841, BCSC)"
     execution_gradient:
-      statement: "Spec->exec vocabulary gradient (BCSC-owned)"
-      rare_middle_trend: "r=-0.97 (Q0->Q4)"
-      universal_middle_trend: "r=+0.92 (Q0->Q4)"
-      provenance: "C932 (BCSC)"
-    prep_verb_concentration: "te 2.7x, pch 2.8x enrichment in Q0 vs Q4 (C933, BCSC)"
+      statement: "REVISED: No spec->exec vocabulary gradient. Body is steady-state with parallel Mode A/B tracks (BCSC-owned)"
+      retracted: "C932 NOT REPLICATED (header contamination), C933 ARTIFACT (Mode A vocabulary), C934 WEAKENED"
+      surviving: "Line shortening (rho=-0.243), bare suffix increase in Mode B (rho=0.072), thermal state tracking (C1260)"
+      provenance: "C1258, C1259, C1260 (BCSC)"
     kernel_signature:
       statement: "HIGH_K=2x FQ (p<0.0001); HIGH_H EN (p=0.036)"
       provenance: "C893 (BCSC)"
@@ -486,10 +485,13 @@ provenance:
         - {id: "C867", topic: "P-T transition paragraph dynamics"}
         - {id: "C869", topic: "Gallows function as paragraph/section delimiters"}
       execution_gradient:
-        - {id: "C932", topic: "Body vocabulary gradient (rare r=-0.97, universal r=+0.92)"}
-        - {id: "C933", topic: "Prep verb early concentration (te 2.7x, pch 2.8x)"}
-        - {id: "C934", topic: "Parallel startup (65% heat-first)"}
-        - {id: "C935", topic: "Compound specification dual purpose (71.6% hit, 1.21x lift)"}
+        - {id: "C932", topic: "Body vocabulary gradient -- NOT REPLICATED (header contamination)"}
+        - {id: "C933", topic: "Prep verb early concentration -- ARTIFACT (Mode A vocabulary)"}
+        - {id: "C934", topic: "Parallel startup -- WEAKENED (pillars undermined)"}
+        - {id: "C935", topic: "Compound specification dual purpose (71.6% hit, 1.21x lift) -- SURVIVES"}
+        - {id: "C1258", topic: "Parallel mode tracks (5/5 PASS, counterpoint architecture)"}
+        - {id: "C1259", topic: "Gradient decomposition (Mode A flat, FL/suffix genuine)"}
+        - {id: "C1260", topic: "Mode B thermal state tracking (energy propagates, FL does not)"}
       kernel_and_other:
         - {id: "C893", topic: "Paragraph kernel signature prediction (HIGH_K=2x FQ)"}
         - {id: "C894", topic: "REGIME_4 recovery specialization concentration"}
@@ -532,7 +534,7 @@ summary: |
   In Currier A: paragraphs are material specification pools — groups of
   complementary entries that diversify within selected compatibility clusters.
   In Currier B: paragraphs are independent mini-programs with header-body
-  architecture, specification-to-execution vocabulary gradients, and
+  architecture, parallel Mode A/B tracks with thermal state continuity, and
   kernel-predicted operation types.
 
   Both systems show matching 5-cluster taxonomy, header-body enrichment,
