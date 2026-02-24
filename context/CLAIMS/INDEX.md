@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1099 validated constraints | **Version:** 4.52 | **Date:** 2026-02-24
+**Total:** 1102 validated constraints | **Version:** 4.53 | **Date:** 2026-02-24
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3502,6 +3502,24 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 - Dark compounds (WEAK tier) are section-specific (J=0.894 nearly disjoint); core grammar is universal (J=0.343)
 - MONITORING and MARKING most section-specific (55% and 48% enrichment rates)
 - Unifies C1134 (frequency modulation), C1148 (dark hyper-modulation), C1176 (atom-selection) into single picture
+
+### Sequential Content Prediction (C1256-C1258) -- Phase: SEQUENTIAL_CONTENT_PREDICTION (Phase 450)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1256** | **Opener Mode Selection** (opener MIDDLE selects line suffix mode A/B; Cramer's V=0.30 1.76x p=0.000; does NOT predict kernel profile p=0.096 or FL distribution p=0.85; Mode-B-opening paragraphs have 28.9% Mode A lines vs 54.0% for Mode-A-opening; opener is mode selector not content router; refines C959) | 2 | B, opener, suffix-mode, paragraph-type, mode-selection | -> [C1256_opener_mode_selection.md](C1256_opener_mode_selection.md) |
+| **1257** | **Consecutive Paragraph Vocabulary Coupling** (consecutive paragraphs share elevated MIDDLE vocabulary Jaccard 0.226 vs 0.199 p=0.000; but NO kernel autocorrelation p>0.4 and NO suffix mode autocorrelation p=0.714; vocabulary-only coupling; qualifies C845 self-containment; adjacent paragraphs share equipment vocabulary not operational state) | 2 | B, paragraph, vocabulary, sequential, self-containment | -> [C1257_consecutive_paragraph_vocabulary.md](C1257_consecutive_paragraph_vocabulary.md) |
+| **1258** | **Parallel Mode Tracks** (Mode A and B form coupled parallel sequential tracks within paragraphs; 5/5 tests PASS; Mode B = continuous track with vocabulary p=0.000 kernel p=0.000 FL p=0.001 continuity; Mode A = specification injections with weak/no within-track continuity; cross-mode coupling bidirectional A->B rho=0.189 B->A rho=0.208 both p=0.000; within-mode > cross-mode coupling Jaccard 0.188 vs 0.164 p=0.000; counterpoint architecture; resolves C670 adjacent-line null) | 2 | B, suffix-mode, parallel-tracks, counterpoint, line-structure, vocabulary, kernel, FL | -> [C1258_parallel_mode_tracks.md](C1258_parallel_mode_tracks.md) |
+
+**Phase 450 findings (Sequential Content Prediction):**
+- Opener is a mode selector: predicts suffix mode (1.76x) but not kernel or FL content
+- Paragraph opening mode declares paragraph type (specification-heavy vs continuation-heavy)
+- Consecutive paragraphs share vocabulary (Jaccard +0.027) but not operational profile
+- Termination is abrupt: penultimate lines differ (2.45x) but no monotonic trajectory (confirms C1237)
+- **Major finding:** Mode A and B lines form coupled parallel tracks (counterpoint architecture)
+- Mode B carries continuity (vocabulary, kernel, FL); Mode A injects specification
+- Cross-mode coupling is bidirectional: A influences B and B influences A
+- C670's adjacent-line null explained: it measured across voices, not within them
 
 ---
 

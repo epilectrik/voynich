@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1099 validated constraints and 71 explanatory fits loaded
+embedded below. You have ALL 1102 validated constraints and 71 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1099 validated)
+- Tier 0-2 binding constraints (1102 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1099 constraints, 71 fits,
+full content in their source documents. All 1102 constraints, 71 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-24 14:10
-**Version:** FROZEN STATE (1099 constraints, 71 fits) [COMPACT]
+**Generated:** 2026-02-24 15:23
+**Version:** FROZEN STATE (1102 constraints, 71 fits) [COMPACT]
 
 ---
 
@@ -113,7 +113,7 @@ and 4 structural contracts are complete.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 4.52 | **Status:** FROZEN | **Constraints:** 1099 | **Date:** 2026-02-24
+**Version:** 4.53 | **Status:** FROZEN | **Constraints:** 1102 | **Date:** 2026-02-24
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1100 constraints | 2026-02-24
+CONSTRAINT_REFERENCE v2.6 | 1103 constraints | 2026-02-24
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2208,6 +2208,9 @@ C1252	**Folio Operational Specialization**
 C1253	**Paragraph-Level Apparatus Correlation**
 C1254	**Dark Pipeline Category Generalization**
 C1255	**Category-Section Universal Vocabulary**
+C1256	**Opener Mode Selection**
+C1257	**Consecutive Paragraph Vocabulary Coupling**
+C1258	**Parallel Mode Tracks**
 
 ---
 
@@ -7294,7 +7297,40 @@ ht_un_integration:
       curation_parallel: "Parallels C1028 (0.9% PREFIX×MIDDLE×SUFFIX occupancy)"
       phantom_middles: "15 B-absent ch/sh-initial MIDDLEs — morphologically isolated, dead naming pattern (C1178)"
       provenance: "C1175, C1176, C1177, C1178"
-    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1175, C1176, C1177, C1178"
+    category_generalization:
+      # Phase 448: DARK_PIPELINE_CHARACTERIZATION (C1254)
+      statement: "8 operational categories partially generalize to dark pipeline via atom plurality vote"
+      verdict: "PARTIALLY_GENERALIZES (3/6 tests pass)"
+      auto_assignment_coverage: "95.2% of dark MIDDLEs (1,144/1,202)"
+      total_token_coverage: "99.5% (88.6% human-glossed + 10.8% auto-assigned, 127 tokens remain)"
+      line_position_differentiation: "10.8x over null (p=0.001)"
+      within_line_mi: "1.5x over null (p=0.001), human↔dark cross MI=0.071"
+      behavioral_silhouette: "FAIL overall (p=0.155), but LOCKED+SOLID tier PASS (p=0.001)"
+      section_divergence: "FAIL — categories don't concentrate by section (selection-level, not category-level)"
+      confidence_stratification: |
+        LOCKED+SOLID (133 MIDDLEs, ~12%): structurally valid behavioral clustering
+        PLAUSIBLE (269 MIDDLEs, ~24%): borderline
+        WEAK (742 MIDDLEs, ~65%): noise-level (driven by o=work, l=frame, r=input atoms)
+      key_finding: |
+        Atom-level operational encoding penetrates the HT layer. The 49-class grammar
+        boundary is a classification boundary, not a semantic boundary. The same atoms
+        encode the same operational categories whether in core MIDDLEs or dark compounds.
+      provenance: "C1254"
+    section_universality:
+      # Phase 449: CATEGORY_SECTION_VOCABULARY (C1255)
+      statement: "Core grammar vocabulary is section-universal; dark compounds carry section identity"
+      verdict: "WEAK_SIGNAL (2/5 tests pass)"
+      vocabulary_shared: "Jaccard 0.676 ≈ null 0.669 — same MIDDLEs used across all sections within each category"
+      frequency_specific: "34.3% of MIDDLEs section-enriched >2x (null 13.4%, p=0.001); LOO classification 76.8% (+37.8pp, p=0.001)"
+      category_orthogonal: "Conditioned JS 1.13x raw JS, p=0.603 — category partition orthogonal to section identity"
+      dark_vs_core: "WEAK dark compounds Jaccard=0.894 (nearly disjoint across sections) vs LOCKED/SOLID Jaccard=0.343 (universal)"
+      unification: |
+        Unifies C1134 (frequency modulation), C1148 (3.9x hyper-modulation), C1176 (atom-selection-dominated):
+        - Core grammar = equipment-independent operational toolkit (shared across all sections)
+        - Dark compounds = equipment-specific identification vocabulary (section-specific selection)
+        - Frequency modulation bridges the two layers
+      provenance: "C1255"
+    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1175, C1176, C1177, C1178, C1254, C1255"
 
 robustness:
 
@@ -7374,6 +7410,40 @@ operational_layer:
       s: {gloss: "break", freq: 429, pct: "1.9%"}
       or: {gloss: "portion", freq: 418, pct: "1.8%"}
     provenance: "C382, C588, MIDDLE_SEMANTIC_MAPPING"
+
+  gloss_categories:
+    # Phase 446: GLOSS_SCALE_VALIDATION (C1250, C1251)
+    description: |
+      75 core MIDDLEs organize into 8 operational categories validated at
+      corpus scale. These are NOT semantic labels — they are distributional
+      clusters confirmed by behavioral, positional, and compositional tests.
+    tier: 2  # Category STRUCTURE is Tier 2; individual glosses remain Tier 3
+    categories:
+      THERMAL: {count: 12, key_middles: "k, e, ke, ek, kee, eey", role: "Temperature management (heat/cool cycles)"}
+      CONTAINMENT: {count: 6, key_middles: "ar, am, or", role: "Vessel operations (seal/unseal/portion)"}
+      FLOW: {count: 8, key_middles: "t, ain, aiin", role: "Material transfer and intake"}
+      MONITORING: {count: 8, key_middles: "h, ch, sh", role: "Sensory checks and verification"}
+      OPERATION: {count: 10, key_middles: "ol, ok", role: "Active process operations"}
+      TRANSITION: {count: 15, key_middles: "edy, ey, y, dy", role: "State transitions and batch processing"}
+      STAGING: {count: 9, key_middles: "aiin, s", role: "Iteration and sequencing"}
+      MARKING: {count: 7, key_middles: "d, p, f, c", role: "Checkpoints and flags"}
+    validation_battery:
+      coherence: "5/7 categories COHERENT (intra > inter behavioral similarity, p<0.05)"
+      coverage: "88.6% of B tokens covered by 90 human-glossed MIDDLEs"
+      line_position: "30.5x differentiation over null (p=0.001)"
+      section_profile: "8.2x divergence over null (p=0.001)"
+      folio_specialization: "Within-folio JSD 0.263 < between-folio 0.294 (p=0.000, C1252)"
+      apparatus_correlation: "THERMAL fraction rho=0.409 at paragraph level (p=0.000, C1253)"
+    atom_compositionality:
+      # C1251: Atom compositional validation
+      statement: |
+        Compound MIDDLEs inherit category from constituent atoms via plurality vote.
+        Atom-level semantics compose predictably: heat-cool-check compounds behave
+        as THERMAL because their atoms are THERMAL. This confirms the atom glosses
+        are not arbitrary labels but structurally real operational primitives.
+      atom_count: 18
+      compound_prediction: "Plurality vote over atoms predicts behavioral category"
+    provenance: "C1250, C1251, C1252, C1253"
 
   token_reading_pattern:
     description: |

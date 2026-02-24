@@ -1,0 +1,79 @@
+{
+  "phase": "Phase 450 Follow-up: PARAGRAPH_CONTINUATION_HYPOTHESIS",
+  "n_pass": 1,
+  "n_tested": 5,
+  "overall_verdict": "PARTIAL -- some evidence for continuation, not systematic",
+  "opening_mode_distribution": {
+    "total": 521,
+    "mode_a": 214,
+    "mode_b": 305,
+    "mode_none": 2,
+    "first_para": {
+      "A": 33,
+      "B": 39,
+      "None": 1
+    },
+    "later_para": {
+      "A": 181,
+      "B": 266,
+      "None": 1
+    }
+  },
+  "Q1_vocabulary_inheritance": {
+    "test": "Q1_mode_b_vocabulary_inheritance",
+    "mode_a_mean_jaccard": 0.229,
+    "mode_b_mean_jaccard": 0.2271,
+    "diff": -0.0019,
+    "p_value": 0.601,
+    "n_mode_a": 181,
+    "n_mode_b": 266,
+    "pass": false,
+    "verdict": "FAIL"
+  },
+  "Q2_asymmetric_flow": {
+    "test": "Q2_asymmetric_vocabulary_flow",
+    "mean_forward_coverage": 0.389,
+    "mean_backward_coverage": 0.3906,
+    "asymmetry": -0.0016,
+    "direction": "BACKWARD (N+1 predicts N more -- later paragraphs are subsets)",
+    "p_value": 0.552,
+    "n_pairs": 448,
+    "pass": false,
+    "verdict": "FAIL"
+  },
+  "Q3_position_in_folio": {
+    "test": "Q3_mode_b_position",
+    "mode_a_mean_position": 0.5062,
+    "mode_b_mean_position": 0.4966,
+    "diff": -0.0096,
+    "p_value": 0.662,
+    "n_mode_a": 214,
+    "n_mode_b": 305,
+    "pass": false,
+    "verdict": "FAIL"
+  },
+  "Q4_paragraph_length": {
+    "test": "Q4_mode_b_length",
+    "mode_a_mean_tokens": 44.4,
+    "mode_b_mean_tokens": 41.5,
+    "ratio": 0.935,
+    "diff": -2.9,
+    "p_value": 0.416,
+    "n_mode_a": 214,
+    "n_mode_b": 305,
+    "pass": false,
+    "verdict": "FAIL"
+  },
+  "Q5_internal_composition": {
+    "test": "Q5_mode_b_internal_composition",
+    "mode_a_open_mean_frac": 0.54,
+    "mode_b_open_mean_frac": 0.2891,
+    "diff": -0.2509,
+    "p_value": 0.0,
+    "interpretation": "Mode-B-opening paragraphs have FEWER Mode-A lines (less internal specification)",
+    "n_mode_a_open": 99,
+    "n_mode_b_open": 148,
+    "pass": true,
+    "verdict": "PASS"
+  }
+}

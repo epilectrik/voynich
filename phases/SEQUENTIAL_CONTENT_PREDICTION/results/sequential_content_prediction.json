@@ -1,0 +1,258 @@
+{
+  "phase": "Phase 450: SEQUENTIAL_CONTENT_PREDICTION",
+  "n_tests": 9,
+  "n_pass": 4,
+  "n_skip": 0,
+  "overall_verdict": "PARTIAL \u2014 sequential structure at some scales",
+  "bonferroni_alpha": 0.0056,
+  "n_permutations": 1000,
+  "axis_1_opener_content": {
+    "T1": {
+      "test": "T1_opener_vocabulary",
+      "observed_jaccard": 0.1231,
+      "null_mean": 0.1196,
+      "ratio": 1.029,
+      "p_value": 0.005,
+      "n_groups": 44,
+      "n_lines": 1638,
+      "pass": 1,
+      "verdict": "PASS"
+    },
+    "T2": {
+      "test": "T2_opener_suffix_mode",
+      "observed_V": 0.2994,
+      "null_mean_V": 0.1701,
+      "ratio": 1.76,
+      "p_value": 0.0,
+      "n_groups": 44,
+      "n_lines": 1631,
+      "pass": 1,
+      "verdict": "PASS"
+    },
+    "T3": {
+      "test": "T3_opener_kernel_profile",
+      "observed_variance": 0.008016,
+      "null_mean_variance": 0.006457,
+      "ratio": 1.241,
+      "p_value": 0.096,
+      "n_groups": 44,
+      "n_lines": 1638,
+      "top_opener_profiles": {
+        "iin": {
+          "k": 0.234,
+          "h": 0.06,
+          "e": 0.392,
+          "n": 161
+        },
+        "edy": {
+          "k": 0.24,
+          "h": 0.068,
+          "e": 0.359,
+          "n": 143
+        },
+        "k": {
+          "k": 0.225,
+          "h": 0.051,
+          "e": 0.349,
+          "n": 139
+        },
+        "r": {
+          "k": 0.174,
+          "h": 0.046,
+          "e": 0.306,
+          "n": 121
+        },
+        "l": {
+          "k": 0.209,
+          "h": 0.036,
+          "e": 0.358,
+          "n": 91
+        }
+      },
+      "pass": 0,
+      "verdict": "FAIL"
+    },
+    "T4": {
+      "test": "T4_opener_fl_distribution",
+      "observed_variance": 0.024776,
+      "null_mean_variance": 0.029333,
+      "ratio": 0.845,
+      "p_value": 0.85,
+      "n_groups": 39,
+      "n_lines": 1366,
+      "pass": 0,
+      "verdict": "FAIL"
+    },
+    "n_pass": 2
+  },
+  "axis_2_pre_termination": {
+    "T5": {
+      "test": "T5_penultimate_divergence",
+      "observed_distance": 0.5939,
+      "null_mean_distance": 0.2422,
+      "ratio": 2.452,
+      "p_value": 0.0,
+      "n_paragraphs": 123,
+      "n_penultimate_lines": 246,
+      "n_random_lines": 246,
+      "feature_diffs": {
+        "k_frac": {
+          "penultimate_mean": 0.2017,
+          "random_mean": 0.2058,
+          "diff": -0.0041
+        },
+        "h_frac": {
+          "penultimate_mean": 0.0588,
+          "random_mean": 0.0472,
+          "diff": 0.0116
+        },
+        "e_frac": {
+          "penultimate_mean": 0.3784,
+          "random_mean": 0.3426,
+          "diff": 0.0358
+        },
+        "suffix_mode_val": {
+          "penultimate_mean": 0.3862,
+          "random_mean": 0.3659,
+          "diff": 0.0203
+        },
+        "terminal_frac": {
+          "penultimate_mean": 0.2533,
+          "random_mean": 0.2312,
+          "diff": 0.0221
+        },
+        "bare_frac": {
+          "penultimate_mean": 0.5328,
+          "random_mean": 0.5568,
+          "diff": -0.0241
+        },
+        "n_tokens": {
+          "penultimate_mean": 8.378,
+          "random_mean": 9.6829,
+          "diff": -1.3049
+        },
+        "middle_uniqueness": {
+          "penultimate_mean": 0.8567,
+          "random_mean": 0.8249,
+          "diff": 0.0318
+        }
+      },
+      "pass": 1,
+      "verdict": "PASS"
+    },
+    "T6": {
+      "test": "T6_pre_termination_trajectory",
+      "feature_correlations": {
+        "k_frac": {
+          "rho": 0.0018,
+          "perm_p": 0.937,
+          "significant": 0
+        },
+        "h_frac": {
+          "rho": -0.006,
+          "perm_p": 0.836,
+          "significant": 0
+        },
+        "e_frac": {
+          "rho": 0.0533,
+          "perm_p": 0.028,
+          "significant": 0
+        },
+        "suffix_mode_val": {
+          "rho": 0.0025,
+          "perm_p": 0.945,
+          "significant": 0
+        },
+        "terminal_frac": {
+          "rho": 0.0136,
+          "perm_p": 0.64,
+          "significant": 0
+        },
+        "bare_frac": {
+          "rho": -0.0325,
+          "perm_p": 0.272,
+          "significant": 0
+        },
+        "n_tokens": {
+          "rho": -0.1747,
+          "perm_p": 0.0,
+          "significant": 1
+        },
+        "middle_uniqueness": {
+          "rho": 0.0573,
+          "perm_p": 0.038,
+          "significant": 0
+        }
+      },
+      "n_significant_features": 1,
+      "n_features": 8,
+      "n_lines": 1120,
+      "n_paragraphs": 123,
+      "pass": false,
+      "verdict": "FAIL"
+    },
+    "n_pass": 1
+  },
+  "axis_3_cross_paragraph": {
+    "T7": {
+      "test": "T7_consecutive_vocabulary",
+      "consec_mean_jaccard": 0.2258,
+      "nonconsec_mean_jaccard": 0.199,
+      "observed_diff": 0.0267,
+      "null_mean_diff": 0.0151,
+      "p_value": 0.0,
+      "n_consec_pairs": 430,
+      "n_nonconsec_pairs": 2222,
+      "n_folios": 55,
+      "pass": 1,
+      "verdict": "PASS"
+    },
+    "T8": {
+      "test": "T8_paragraph_kernel_autocorrelation",
+      "kernel_correlations": {
+        "k": {
+          "rho": 0.2406,
+          "p_value": 0.0,
+          "perm_p": 0.41,
+          "significant": 0
+        },
+        "h": {
+          "rho": 0.1304,
+          "p_value": 0.0068,
+          "perm_p": 0.422,
+          "significant": 0
+        },
+        "e": {
+          "rho": 0.358,
+          "p_value": 0.0,
+          "perm_p": 0.012,
+          "significant": 0
+        }
+      },
+      "n_consecutive_pairs": 430,
+      "n_folios": 55,
+      "pass": false,
+      "verdict": "FAIL"
+    },
+    "T9": {
+      "test": "T9_paragraph_mode_autocorrelation",
+      "rho": 0.0528,
+      "parametric_p": 0.2742,
+      "perm_p": 0.714,
+      "n_pairs": 430,
+      "n_folios": 55,
+      "mean_mode_a": 0.4214,
+      "std_mode_a": 0.379,
+      "pass": 0,
+      "verdict": "FAIL"
+    },
+    "n_pass": 1
+  },
+  "data_summary": {
+    "n_tokens": 23096,
+    "n_folios": 82,
+    "n_opener_pairs": 1881,
+    "n_paragraphs_termination": 123,
+    "n_folios_cross_para": 55
+  }
+}

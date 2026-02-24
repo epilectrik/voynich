@@ -1,0 +1,80 @@
+{
+  "phase": "Phase 450 Follow-up: PARALLEL_MODE_TRACKS",
+  "n_pass": 5,
+  "overall_verdict": "SUPPORTED -- Mode A and B form parallel sequential tracks",
+  "data_summary": {
+    "n_paragraphs": 174,
+    "n_mode_a_lines": 467,
+    "n_mode_b_lines": 680,
+    "n_within_a_pairs": 315,
+    "n_within_b_pairs": 509,
+    "n_cross_ab_pairs": 213,
+    "n_cross_ba_pairs": 212
+  },
+  "T1": {
+    "test": "T1_within_mode_vocabulary",
+    "within_a_jaccard": 0.1741,
+    "within_a_null": 0.177,
+    "within_a_ratio": 0.984,
+    "within_a_p": 0.692,
+    "within_a_n": 315,
+    "within_b_jaccard": 0.197,
+    "within_b_null": 0.1794,
+    "within_b_ratio": 1.098,
+    "within_b_p": 0.0,
+    "within_b_n": 509,
+    "all_adjacent_jaccard": 0.1797,
+    "all_adjacent_n": 972,
+    "pass": true,
+    "verdict": "PASS"
+  },
+  "T2": {
+    "test": "T2_within_mode_kernel",
+    "within_a_cosine": 0.8687,
+    "within_a_null": 0.8555,
+    "within_a_p": 0.054,
+    "within_b_cosine": 0.8741,
+    "within_b_null": 0.8511,
+    "within_b_p": 0.0,
+    "all_adjacent_cosine": 0.8559,
+    "pass": true,
+    "verdict": "PASS"
+  },
+  "T3": {
+    "test": "T3_within_mode_fl",
+    "within_a_fl": 0.4661,
+    "within_a_null": 0.5082,
+    "within_a_p": 0.991,
+    "within_b_fl": 0.572,
+    "within_b_null": 0.5409,
+    "within_b_p": 0.001,
+    "all_adjacent_fl": 0.5291,
+    "pass": true,
+    "verdict": "PASS"
+  },
+  "T4": {
+    "test": "T4_cross_mode_coupling",
+    "ab_correlation": 0.1888,
+    "ab_p": 0.0,
+    "ab_n": 213,
+    "ba_correlation": 0.2077,
+    "ba_p": 0.0,
+    "ba_n": 212,
+    "pass": true,
+    "verdict": "PASS"
+  },
+  "T5": {
+    "test": "T5_within_vs_cross",
+    "within_mean_jaccard": 0.1883,
+    "within_a_jaccard": 0.1741,
+    "within_b_jaccard": 0.197,
+    "cross_jaccard": 0.164,
+    "adjacent_jaccard": 0.1797,
+    "diff": 0.0243,
+    "p_value": 0.0,
+    "n_within": 824,
+    "n_cross": 425,
+    "pass": true,
+    "verdict": "PASS"
+  }
+}
