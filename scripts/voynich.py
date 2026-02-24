@@ -943,9 +943,10 @@ class PPSemantics:
     FL_STAGE_MAP = {
         'ii': 'INITIAL', 'i': 'INITIAL',
         'in': 'EARLY',
-        'r': 'MEDIAL', 'ar': 'MEDIAL', 'al': 'MEDIAL', 'l': 'MEDIAL', 'ol': 'MEDIAL',
-        'o': 'LATE', 'ly': 'LATE',
-        'am': 'TERMINAL', 'n': 'TERMINAL', 'im': 'TERMINAL', 'm': 'TERMINAL',
+        'r': 'MEDIAL', 'ar': 'MEDIAL',
+        'al': 'LATE', 'l': 'LATE', 'ol': 'LATE',
+        'o': 'FINAL', 'ly': 'FINAL', 'am': 'FINAL',
+        'n': 'TERMINAL', 'im': 'TERMINAL', 'm': 'TERMINAL',
         'dy': 'TERMINAL', 'ry': 'TERMINAL', 'y': 'TERMINAL'
     }
 
@@ -1256,6 +1257,10 @@ class BTokenAnalysis:
 
     # Suffix sequential grammar (C1058)
     suffix_continuation: bool = False              # True when suffix matches previous token's suffix in line
+
+    # PREFIX base-modifier decomposition (C1218-C1219)
+    prefix_base: Optional[str] = None              # h, e, k, o, a (last char of prefix)
+    prefix_modifier: Optional[str] = None          # q, d, f, p, y (first char of 2+ char prefix)
 
     # Descriptive label maps (human-readable register)
     MACRO_LABELS = {
@@ -2377,6 +2382,13 @@ class BLineAnalysis:
     is_header: bool = False      # C747/C935: Line-1 HEADER (50% HT, operationally redundant)
     paragraph_zone: Optional[str] = None  # HEADER, SPECIFICATION, EXECUTION (C932, set by paragraph analysis)
 
+    # Suffix mode classification (C1229-C1231)
+    suffix_mode: Optional[str] = None    # 'A' (spec/energy), 'B' (continuation/bare), None if insufficient
+
+    # Control loop annotations (C1234, C1235, C1237)
+    loop_markers: Dict[str, str] = field(default_factory=dict)  # {'setup': 'daiin', 'check': 'okaiin'}
+    line_final_type: Optional[str] = None  # FINALIZE/LOOP_CHECK/TERMINAL/CLOSE/ROUTE/OPEN
+
     def structural(self) -> str:
         """Tier 0-2 technical line summary."""
         parts = []
@@ -2525,6 +2537,15 @@ class BParagraphAnalysis:
     exec_ht_rate: float = 0.0       # HT fraction in EXECUTION zone
     gradient_direction: str = 'FLAT' # SPEC_TO_EXEC or FLAT
 
+    # Cycling model (C1229-C1232)
+    suffix_mode_sequence: List[str] = field(default_factory=list)  # ['A','B','A','B',...] per body line
+    mode_interleave_rate: float = 0.0     # Fraction of consecutive mode transitions that alternate
+    tail_product_signature: Optional[str] = None  # MIXED_OUTPUT, VESSEL_HEAVY, PROCESS_HEAVY
+
+    # Paragraph termination (C1237, C1240)
+    termination_token: Optional[str] = None   # Word of final token if suffix is -am
+    termination_type: Optional[str] = None    # 'AM_SHUTDOWN' or None
+
     def structural(self) -> str:
         """Tier 0-2 technical paragraph summary."""
         parts = [f"{self.paragraph_id}"]
@@ -2543,6 +2564,13 @@ class BParagraphAnalysis:
         if self.zone_distribution:
             zone_str = '/'.join(f"{z[0]}:{c}" for z, c in sorted(self.zone_distribution.items()))
             parts.append(f"zones=[{zone_str}]")
+
+        # Cycling model (C1229-C1232)
+        if self.suffix_mode_sequence:
+            mode_str = ''.join(self.suffix_mode_sequence)
+            parts.append(f"mode=[{mode_str}] interleave={self.mode_interleave_rate:.0%}")
+        if self.tail_product_signature:
+            parts.append(f"tail={self.tail_product_signature}")
 
         return ' | '.join(parts)
 
@@ -2580,6 +2608,17 @@ class BParagraphAnalysis:
         if self.gradient_direction == 'SPEC_TO_EXEC':
             parts.append("(spec->exec gradient)")
 
+        # Cycling model (C1229-C1232)
+        if self.mode_interleave_rate > 0.5:
+            parts.append("(alternating spec/equil cycles)")
+        tail_gloss = {
+            'MIXED_OUTPUT': "(mixed output)",
+            'VESSEL_HEAVY': "(vessel-heavy output)",
+            'PROCESS_HEAVY': "(process-heavy output)",
+        }
+        if self.tail_product_signature in tail_gloss:
+            parts.append(tail_gloss[self.tail_product_signature])
+
         return ' - '.join(parts) if parts else f"Paragraph with {self.line_count} steps"
 
 
@@ -2588,6 +2627,7 @@ class BFolioDecoder:
     Decoder for Currier B folios using consolidated structural knowledge.
 
     Uses constraints: C371-378, C510-522, C766-769, C884, C906-907,
+                     C1218-C1221, C1225-C1226, C1229-C1232,
                      F-BRU-011, F-BRU-018-020
 
     Two output modes:
@@ -2674,6 +2714,20 @@ class BFolioDecoder:
         self.MACRO_STATE = self._extract_simple(maps['macro_state'])  # class_id str → state label
         self.HUB_SUB_ROLE = self._extract_simple(maps['hub_sub_role'])  # middle → sub-role
         self.PREFIX_ZONE = self._extract_simple(maps['prefix_zone'])  # prefix → zone
+
+        # PREFIX base-modifier decomposition (C1218-C1219)
+        _pbm = maps.get('prefix_base_modifier', {})
+        self._base_chars = set(_pbm.get('base_characters', {}).keys())
+        self._modifier_chars = set(_pbm.get('modifier_characters', {}).keys())
+
+        # Suffix mode centroids (C1231)
+        _smc = maps.get('suffix_mode_centroids', {})
+        self._mode_a_centroid = _smc.get('mode_a', [0.430, 0.019, 0.086, 0.466])
+        self._mode_b_centroid = _smc.get('mode_b', [0.155, 0.031, 0.072, 0.741])
+
+        # Tail product centroids (C1232)
+        _tpc = maps.get('tail_product_centroids', {})
+        self._tail_centroids = _tpc.get('centroids', {})
 
         # Token → 49-class mapping (for macro_state chain)
         _ctm_path = PROJECT_ROOT / 'phases/CLASS_COSURVIVAL_TEST/results/class_token_map.json'
@@ -3083,7 +3137,94 @@ class BFolioDecoder:
         if m.middle and m.middle in self._dark_pipeline_set:
             analysis.is_dark_pipeline = True
 
+        # PREFIX base-modifier decomposition (C1218-C1219)
+        # For 2+ char prefixes: base = last char (POS-1), modifier = first char (POS-0)
+        # Dual-role chars (o,k,l,t,c,s) can appear at either position
+        if m.prefix and len(m.prefix) >= 2:
+            analysis.prefix_base = m.prefix[-1]
+            analysis.prefix_modifier = m.prefix[0]
+        elif m.prefix and len(m.prefix) == 1:
+            analysis.prefix_base = m.prefix
+
         return analysis
+
+    def _classify_suffix_mode(self, line_tokens: List[BTokenAnalysis]) -> Optional[str]:
+        """Classify a line's suffix mode as A (spec/energy) or B (continuation/bare).
+
+        Uses the existing SUFFIX_TERMINAL map categories (TERMINAL, CHECKPOINT,
+        CONNECTOR) and cosine similarity to universal centroids from C1231.
+        Returns None if insufficient tokens (<3) for classification.
+        """
+        if len(line_tokens) < 3:
+            return None
+
+        terminal = checkpoint = iterative = bare = 0
+        for t in line_tokens:
+            st = t.suffix_terminal  # Already looked up from SUFFIX_TERMINAL map
+            if st == 'TERMINAL':
+                terminal += 1
+            elif st == 'CHECKPOINT':
+                checkpoint += 1
+            elif st == 'CONNECTOR':
+                iterative += 1
+            else:
+                bare += 1  # No suffix or unmapped
+
+        total = len(line_tokens)
+        vec = [terminal / total, checkpoint / total, iterative / total, bare / total]
+
+        # Euclidean distance to each centroid (matches k-means assignment)
+        def _dist_sq(a, b):
+            return sum((x - y) ** 2 for x, y in zip(a, b))
+
+        dist_a = _dist_sq(vec, self._mode_a_centroid)
+        dist_b = _dist_sq(vec, self._mode_b_centroid)
+        return 'A' if dist_a <= dist_b else 'B'
+
+    def _classify_tail_product(self, tail_tokens: List[BTokenAnalysis]) -> Optional[str]:
+        """Classify tail product signature from last 2 body lines' tokens.
+
+        Maps existing decoder fields to the 6-feature vector that matches
+        tail product centroids from C1232.
+        """
+        if not tail_tokens:
+            return None
+
+        total = len(tail_tokens)
+        energy = vessel = process = k_fam = e_fam = prep_fam = 0
+
+        for t in tail_tokens:
+            if t.prefix_role in ('EN_QO',):
+                energy += 1
+            elif t.prefix_role in ('AX_SCAFFOLD', 'AX_LATE'):
+                vessel += 1
+            elif t.prefix_role in ('PREP', 'PREP_TIER'):
+                prep_fam += 1
+            else:
+                process += 1
+
+            # Kernel family from MIDDLE kernel profile
+            mk = t.middle_kernel
+            if mk == 'K':
+                k_fam += 1
+            elif mk == 'E':
+                e_fam += 1
+
+        vec = [energy / total, vessel / total, process / total,
+               k_fam / total, e_fam / total, prep_fam / total]
+
+        # Find nearest centroid by Euclidean distance (matches k-means)
+        def _dist_sq(a, b):
+            return sum((x - y) ** 2 for x, y in zip(a, b))
+
+        best_label = None
+        best_dist = float('inf')
+        for label, centroid in self._tail_centroids.items():
+            d = _dist_sq(vec, centroid)
+            if d < best_dist:
+                best_dist = d
+                best_label = label
+        return best_label
 
     def _interpret_kernel_balance(self, kernel_dist: Dict[str, int]) -> str:
         """Interpret kernel distribution as process characterization."""
@@ -3238,6 +3379,44 @@ class BFolioDecoder:
             if prev_suf and curr_suf and prev_suf == curr_suf:
                 line_tokens[i].suffix_continuation = True
 
+        # Suffix mode classification (C1229-C1231)
+        suffix_mode = self._classify_suffix_mode(line_tokens)
+
+        # Control loop: iteration tracking (C1234)
+        loop_markers = {}
+        # Setup: first token MIDDLE is iin/in (NOT bare i — C1205 separate axis)
+        if line_tokens and line_tokens[0].morph:
+            _mid0 = line_tokens[0].morph.middle or ''
+            _sfx0 = line_tokens[0].morph.suffix or ''
+            if _mid0 in ('iin', 'in') or _sfx0 in ('iin', 'in'):
+                loop_markers['setup'] = line_tokens[0].word
+        # Check: last 3 tokens suffix OR MIDDLE is aiin/ain (okaiin = ok:aiin)
+        for _tok in line_tokens[-3:]:
+            if _tok.morph:
+                _midC = _tok.morph.middle or ''
+                _sfxC = _tok.morph.suffix or ''
+                if _sfxC in ('aiin', 'ain') or _midC in ('aiin', 'ain'):
+                    loop_markers['check'] = _tok.word
+                    break
+
+        # Control loop: line-final classification (C1235, C1237)
+        # Priority: FINALIZE > LOOP_CHECK > TERMINAL > CLOSE > ROUTE > OPEN
+        line_final_type = 'OPEN'
+        if line_tokens:
+            _ftok = line_tokens[-1]
+            _fsfx = _ftok.morph.suffix if _ftok.morph else ''
+            _fmid = _ftok.morph.middle if _ftok.morph else ''
+            if _fsfx == 'am':
+                line_final_type = 'FINALIZE'
+            elif _fsfx in ('aiin', 'ain') or _fmid in ('aiin', 'ain'):
+                line_final_type = 'LOOP_CHECK'
+            elif _fsfx in ('edy', 'eey', 'ey'):
+                line_final_type = 'TERMINAL'
+            elif _fsfx in ('dy', 'y', 'ry', 'ly', 'hy'):
+                line_final_type = 'CLOSE'
+            elif _fmid and _fmid.endswith('m'):
+                line_final_type = 'ROUTE'
+
         return BLineAnalysis(
             line_id=line_id,
             tokens=line_tokens,
@@ -3253,6 +3432,9 @@ class BFolioDecoder:
             line_type=line_type,
             opener_role=opener_role,
             is_header=is_header,
+            suffix_mode=suffix_mode,
+            loop_markers=loop_markers,
+            line_final_type=line_final_type,
         )
 
     def analyze_folio_lines(self, folio: str) -> List[BLineAnalysis]:
@@ -3375,6 +3557,35 @@ class BFolioDecoder:
         exec_ht = (sum(1 for t in exec_tokens if t.is_ht) / max(len(exec_tokens), 1))
         gradient = 'SPEC_TO_EXEC' if spec_ht > exec_ht else 'FLAT'
 
+        # Cycling model (C1229-C1232)
+        # Collect suffix modes from body lines (skip header)
+        body_lines = [la for la in lines if not la.is_header]
+        suffix_mode_seq = [la.suffix_mode for la in body_lines if la.suffix_mode]
+
+        # Interleave rate: fraction of consecutive transitions that alternate
+        interleave = 0.0
+        if len(suffix_mode_seq) >= 2:
+            changes = sum(1 for i in range(1, len(suffix_mode_seq))
+                         if suffix_mode_seq[i] != suffix_mode_seq[i-1])
+            interleave = changes / (len(suffix_mode_seq) - 1)
+
+        # Tail product signature from last 2 body lines (C1232)
+        tail_sig = None
+        if len(body_lines) >= 3:  # Need at least 3 body lines for meaningful tail
+            tail_lines = body_lines[-2:]
+            tail_tokens = [t for la in tail_lines for t in la.tokens]
+            tail_sig = self._classify_tail_product(tail_tokens)
+
+        # Paragraph termination detection (C1237: -am at paragraph-final)
+        term_token = None
+        term_type = None
+        if lines and lines[-1].tokens:
+            _last_tok = lines[-1].tokens[-1]
+            _last_sfx = _last_tok.morph.suffix if _last_tok.morph else ''
+            if _last_sfx == 'am':
+                term_token = _last_tok.word
+                term_type = 'AM_SHUTDOWN'
+
         return BParagraphAnalysis(
             paragraph_id=para_id,
             lines=lines,
@@ -3396,6 +3607,11 @@ class BFolioDecoder:
             spec_ht_rate=spec_ht,
             exec_ht_rate=exec_ht,
             gradient_direction=gradient,
+            suffix_mode_sequence=suffix_mode_seq,
+            mode_interleave_rate=interleave,
+            tail_product_signature=tail_sig,
+            termination_token=term_token,
+            termination_type=term_type,
         )
 
     def analyze_folio_paragraphs(self, folio: str) -> List[BParagraphAnalysis]:
@@ -3757,9 +3973,20 @@ class BFolioDecoder:
                 fl_str = f'{term_pct:2.0f}%'
             else:
                 fl_str = '--'
+            # Cycling mode sequence and tail product (C1229-C1232)
+            if p.suffix_mode_sequence:
+                mode_str = ''.join(p.suffix_mode_sequence)
+                if len(mode_str) > 8:
+                    mode_str = mode_str[:8] + '..'
+                mode_col = f'{mode_str}({p.mode_interleave_rate:.0%})'
+            else:
+                mode_col = '--'
+            tail_col = p.tail_product_signature[:7] if p.tail_product_signature else '--'
+
             out.append(
                 f'  {p.paragraph_id:4s} | {gallows} | {kernel_str:14s} | '
                 f'{role:4s} | {p.line_count}L/{p.token_count:3d}T | {fl_str:>3s}'
+                f' | {mode_col:>12s} | {tail_col}'
             )
         return out
 

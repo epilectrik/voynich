@@ -226,6 +226,7 @@ class IRBlock:
     paragraph_zone: Optional[str]
     fl_range: Optional[str]            # From genuine FL tokens only (C582)
     suffix_stage_range: Optional[str]  # From all tokens' suffix-derived fl_stage
+    suffix_mode: Optional[str]         # 'A' (spec/energy) or 'B' (continuation/bare) per C1229
     kernel_summary: str
     lane_counts: Dict[str, int]
 
@@ -240,6 +241,10 @@ class IRBlock:
 
     raw_sequence: List[str] = field(default_factory=list)
     t3_annotations: List[tuple] = field(default_factory=list)  # (pos, parse, gloss, word)
+
+    # Control loop annotations (C1234, C1235, C1237)
+    loop_markers: Dict[str, str] = field(default_factory=dict)  # {'setup': word, 'check': word}
+    line_final_type: Optional[str] = None  # FINALIZE/LOOP_CHECK/TERMINAL/CLOSE/ROUTE/OPEN
 
 
 def _ir_zone_and_basis(tok, token_class) -> tuple:
@@ -322,6 +327,11 @@ def _ir_lane(tok) -> str:
         lane = BTokenAnalysis._get_prefix_lane(tok.morph.prefix)
         if lane in ('QO', 'CHSH'):
             return lane
+    # Bare prefix-like tokens (e.g. word='qo' with no MIDDLE) — check word itself
+    if tok.morph and not tok.morph.prefix and tok.morph.middle:
+        lane = BTokenAnalysis._get_prefix_lane(tok.morph.middle)
+        if lane in ('QO', 'CHSH'):
+            return lane
     return 'OTHER'
 
 
@@ -357,42 +367,83 @@ def _format_ir_token(t: IRToken, color_enabled: bool) -> str:
     return base
 
 
+# PREFIX operational glosses from decoder_maps.json prefix_actions
+_PREFIX_GLOSS = {
+    'qo': 'energy', 'ch': 'test', 'sh': 'monitor', 'ok': 'vessel', 'ot': 'adjust',
+    'ol': 'close', 'ke': 'heat-burst', 'ek': 'check-heat', 'da': 'infrastructure',
+    'sa': 'begin', 'so': 'initiate', 'ct': 'control', 'kch': 'precision-heat',
+    'pch': 'process', 'tch': 'process', 'dch': 'process', 'lch': 'process',
+    'fch': 'process', 'rch': 'process', 'sch': 'process', 'ksh': 'process',
+    'te': 'process', 'lk': 'check', 'lsh': 'link', 'yk': 'init',
+    'ko': 'heat', 'ka': 'anchor', 'do': 'mark', 'po': 'setup',
+    'or': 'portion', 'ar': 'close', 'al': 'close', 'ta': 'transfer',
+    'to': 'transfer', 'de': 'divide', 'pe': 'start', 'se': 'scaffold',
+}
+
+# SUFFIX whole-unit glosses (BCSC operational layer — never character-expand)
+_SUFFIX_GLOSS = {
+    'edy': 'batch', 'dy': 'close', 'y': 'end', 'ey': 'set',
+    'ar': 'close', 'aiin': 'check', 'hy': 'confirm', 'al': 'collect',
+    'eey': 'deep-cool', 's': 'break', 'or': 'portion',
+    'ain': 'intake', 'am': 'done', 'an': 'link', 'om': 'complete',
+    'ol': 'store', 'in': 'load', 'oly': 'store-end', 'ry': 'release',
+    'o': 'hold', 'oiin': 'hold-check',
+}
+
+# Character-level MIDDLE atom glosses (C1195 confidence tiers)
+_CHAR_GLOSS = {
+    # LOCKED (strong compound evidence, internally consistent)
+    'k': 'heat', 'e': 'cool', 'h': 'watch', 'y': 'end',
+    'i': 'iterate', 'n': 'halt', 'a': 'accept', 'm': 'final',
+    # SOLID (good evidence, label might be refined)
+    'd': 'seal', 't': 'drive',
+    # PLAUSIBLE (thin evidence, nothing contradicts)
+    'c': 'adjust', 'p': 'pause', 'f': 'flag', 's': 'separate', 'g': 'complete',
+    # WEAK (correct direction but very generic)
+    'o': 'vessel', 'l': 'collect', 'r': 'flow',
+}
+
+
+def _char_expand(chars: str) -> str:
+    """Expand each character to its C1195 gloss, joined by hyphens."""
+    return '-'.join(_CHAR_GLOSS.get(c, c) for c in chars)
+
+
 def _ir_t3_gloss(t: IRToken) -> Optional[tuple]:
-    """Build Tier 3 annotation as (parse, gloss) tuple.
+    """Build Tier 3 annotation as character-level kernel expansion.
 
-    Format: parse → gloss (word)
-      parse = PREFIX:MIDDLE.SUFFIX (raw morphemes)
-      gloss = PREFIX:MIDDLE_GLOSS.SUFFIX_GLOSS (dictionary atoms)
-
-    Mechanically rendered from MiddleDictionary (BCSC token_reading_pattern).
-    Provenance: every gloss traces to data/middle_dictionary.json.
-    Returns None if MIDDLE has no dictionary entry (C120/C171 semantic ceiling).
+    Each character in the MIDDLE and SUFFIX is expanded to its C1195 gloss.
+    No dictionary lookup — purely structural, fully transparent.
+    Provenance: C1195 atom gloss confidence tiers, kernel operators C089.
     """
     if t.is_dark_pipeline or t.is_ht or t.role_5 == 'HT_UN':
         return None                        # C1137/C740: not operational
-    if t.role_5 == 'FQ':
-        return None                        # FQ tokens: structural, not operational
-    if not t.t3_gloss:
-        return None                        # No dictionary atom for this MIDDLE
+    if not t.middle:
+        return None                        # No MIDDLE to expand
+
+    # Role tag: EN:QO, EN:CHSH, AX, FQ, CC, FL
+    if t.role_5 == 'EN':
+        role_tag = f"EN:{t.lane}" if t.lane else 'EN'
+    elif t.role_5 == 'FQ':
+        role_tag = 'FQ'
+    else:
+        role_tag = t.role_5 or '?'
 
     pfx = t.prefix if t.prefix else ''
-    mid_gloss = t.t3_gloss                 # Dictionary-backed MIDDLE gloss
+    mid_exp = _char_expand(t.middle)
 
-    # Build parse string (raw morphemes)
-    parse = f"{pfx}:{t.middle}" if pfx else t.middle
+    # Suffix: whole-unit gloss (BCSC operational layer), never character-expand
+    sfx_exp = ''
     if t.suffix:
-        parse += f".{t.suffix}"
+        sfx_label = _SUFFIX_GLOSS.get(t.suffix, t.suffix)
+        sfx_exp = f' ({sfx_label})'
 
-    # Build gloss string (dictionary atoms)
-    sfx_gloss = ''
-    if t.suffix:
-        if t.suffix_gloss:
-            sfx_gloss = '.' + t.suffix_gloss
-        else:
-            sfx_gloss = '.' + t.suffix     # Raw symbol (no dictionary entry)
-    gloss = f"{pfx}:{mid_gloss}{sfx_gloss}" if pfx else f"{mid_gloss}{sfx_gloss}"
-
-    return (parse, gloss)
+    if pfx:
+        pfx_gloss = _PREFIX_GLOSS.get(pfx, pfx)
+        gloss = f"[{role_tag}] ({pfx_gloss}) {mid_exp}{sfx_exp}"
+    else:
+        gloss = f"[{role_tag}] {mid_exp}{sfx_exp}"
+    return (t.word, gloss)
 
 
 def _print_ir_wrapped(prefix: str, items: List[str], indent: int = 10, width: int = 80):
@@ -490,6 +541,9 @@ def compile_ir_block(la, d, middle_dict=None) -> IRBlock:
     setup = [t for t in ir_tokens if t.zone == 'SETUP']
     work_en_chsh = [t for t in ir_tokens if t.zone == 'WORK' and t.role_5 == 'EN' and t.lane == 'CHSH']
     work_en_qo = [t for t in ir_tokens if t.zone == 'WORK' and t.role_5 == 'EN' and t.lane == 'QO']
+    # EN tokens with OTHER lane (bare prefix-like words) — route to QO as fallback
+    work_en_other = [t for t in ir_tokens if t.zone == 'WORK' and t.role_5 == 'EN' and t.lane not in ('QO', 'CHSH')]
+    work_en_qo.extend(work_en_other)
     work_ax = [t for t in ir_tokens if t.zone == 'WORK' and t.role_5 == 'AX']
     check = [t for t in ir_tokens if t.zone == 'CHECK']
     close = [t for t in ir_tokens if t.zone == 'CLOSE']
@@ -567,6 +621,7 @@ def compile_ir_block(la, d, middle_dict=None) -> IRBlock:
         paragraph_zone=la.paragraph_zone,
         fl_range=fl_range,
         suffix_stage_range=suffix_stage_range,
+        suffix_mode=la.suffix_mode,
         kernel_summary=kernel_summary,
         lane_counts=dict(lane_counts),
         setup_tokens=setup,
@@ -579,13 +634,16 @@ def compile_ir_block(la, d, middle_dict=None) -> IRBlock:
         ht_tokens=ht,
         raw_sequence=[tok.word for tok in la.tokens],
         t3_annotations=t3_records,
+        loop_markers=la.loop_markers if hasattr(la, 'loop_markers') else {},
+        line_final_type=la.line_final_type if hasattr(la, 'line_final_type') else None,
     )
 
 
 def _render_ir_block(block: IRBlock, color_enabled: bool):
     """Render a single IRBlock as pseudocode."""
     # Header line
-    zone_tag = f" [{block.paragraph_zone}]" if block.paragraph_zone else ""
+    _zone_abbrev = {'HEADER': 'HEADER', 'SPECIFICATION': 'SPEC', 'EXECUTION': 'EXEC'}
+    zone_tag = f" [{_zone_abbrev.get(block.paragraph_zone, block.paragraph_zone)}]" if block.paragraph_zone else ""
     # FL tag: genuine FL tokens (C582) vs suffix-derived hints
     if block.fl_range:
         fl_tag = f" FL:({block.fl_range})"
@@ -594,13 +652,37 @@ def _render_ir_block(block: IRBlock, color_enabled: bool):
     else:
         fl_tag = ""
     kern_tag = f" kern({block.kernel_summary})" if block.kernel_summary != '-' else ""
+    mode_tag = f" mode:{block.suffix_mode}" if block.suffix_mode else ""
+
+    # Control loop: iteration markers (C1234)
+    lm = block.loop_markers
+    if lm:
+        parts = []
+        if 'setup' in lm:
+            parts.append(f"setup({lm['setup']})")
+        if 'check' in lm:
+            parts.append(f"check({lm['check']})")
+        loop_tag = f" loop:{'->'.join(parts)}"
+    else:
+        loop_tag = ""
+
+    # Control loop: line-final classification (C1235, C1237)
+    lft = block.line_final_type
+    if lft and lft != 'OPEN':
+        final_word = block.raw_sequence[-1] if block.raw_sequence else '?'
+        final_tag = f" final:{lft}({final_word})"
+    elif lft == 'OPEN':
+        final_tag = " final:OPEN"
+    else:
+        final_tag = ""
+
     role_parts = []
     for k in ('EN:CHSH', 'EN:QO', 'AX'):
         if block.lane_counts.get(k, 0) > 0:
             role_parts.append(f"{k}:{block.lane_counts[k]}")
     lane_tag = '  ' + ' '.join(role_parts) if role_parts else ''
 
-    print(f"L{block.line_id}{zone_tag}{fl_tag}{kern_tag}{lane_tag}")
+    print(f"L{block.line_id}{zone_tag}{loop_tag}{final_tag}{kern_tag}{mode_tag}{lane_tag}")
 
     # SETUP zone
     if block.setup_tokens:
@@ -645,11 +727,11 @@ def _render_ir_block(block: IRBlock, color_enabled: bool):
         tok_strs = [_format_ir_token(t, color_enabled) for t in block.close_tokens]
         print(f"  CLOSE {{ {' '.join(tok_strs)} }}")
 
-    # Tier 3 annotations: per-token, position-addressed, unordered (C961)
+    # Tier 3 annotations: character-level kernel expansion (C1195)
     if block.t3_annotations:
         print(f"  # T3 {{unordered}}")
-        for pos, parse, gloss, word in block.t3_annotations:
-            print(f"  #   {pos}: {parse} -> {gloss} ({word})")
+        for pos, word, gloss, _orig in block.t3_annotations:
+            print(f"  #   {pos}: {word} = {gloss}")
 
     # SRC line (raw tokens)
     print(f"  > {' '.join(block.raw_sequence)}")
@@ -680,12 +762,15 @@ def display_ir(folio_id: str, line_num=None, para_num=None, use_color=True):
     print(f"EN sub-label = lane :QO/:CHSH (C574, EN-internal). AX = :INIT/:MED/:FINAL (C563).")
     print(f"WORK grouped by role (EN/AX), then lane within EN. AX is lane-independent (C574).")
     print(f"WORK zones are unordered sets (C961). T3 annotations are unordered.")
-    print(f"T3: parse -> gloss from middle_dictionary.json, Brunschwig-conditional (C119/C120).")
+    print(f"T3: character-level kernel expansion (C1195). MIDDLE.[SUFFIX] per character. k=heat e=cool h=watch.")
     print(f"sfx_hint is NOT FL state (C1004). FL zone = census only (C582: classes 7,30,38,40).")
     print(f"HT/UN = excluded from 479-type grammar (C740). pred:X = C611 PREFIX morphology (99.2%).")
     print(f"pred is affinity, not classification — HT/UN tokens never appear in role groups.")
     print(f"DP = dark pipeline subset (C1137).")
     print(f"|zb: shown only for non-census zone routing (ph=prefix_phase, r=prefix_role).")
+    print(f"loop: C1234 iteration (setup=line-initial iin/in, check=penultimate aiin/ain).")
+    print(f"final: C1235/C1237 line ending (FINALIZE/LOOP_CHECK/TERMINAL/CLOSE/ROUTE/OPEN).")
+    print(f"term: C1237 paragraph termination by -am.")
     print(f"{'=' * W}")
     if color_enabled:
         print_legend()
@@ -719,9 +804,24 @@ def display_ir(folio_id: str, line_num=None, para_num=None, use_color=True):
         en_count = role_counts.get('EN', 0)  # Census-only (C740: no predictions)
         en_pct = int(100 * en_count / total_r)
 
+        # Cycling info (C1229-C1232)
+        cycling_str = ''
+        if para.suffix_mode_sequence:
+            mode_seq = ''.join(para.suffix_mode_sequence)
+            cycling_str = f' modes=[{mode_seq}]({para.mode_interleave_rate:.0%})'
+        if para.tail_product_signature:
+            cycling_str += f' tail={para.tail_product_signature}'
+
+        # Paragraph termination (C1237)
+        term_str = ''
+        if hasattr(para, 'termination_type') and para.termination_type:
+            term_str = f' term:AM({para.termination_token})'
+        else:
+            term_str = ' term:-'
+
         print(f"-- {para.paragraph_id} ({bt}-gallows, "
               f"{para.line_count}L/{para.token_count}T) "
-              f"k{kp}/h{hp}/e{ep} EN:{en_pct}% "
+              f"k{kp}/h{hp}/e{ep} EN:{en_pct}%{cycling_str}{term_str} "
               + '-' * 20)
 
         for la in lines:
@@ -1071,6 +1171,9 @@ def display_folio(folio_id: str,
                     meta_parts.append(f"DP:True")
                 if tok.suffix_continuation:
                     meta_parts.append(f"cont:True")
+                if tok.prefix_base:
+                    mod_str = tok.prefix_modifier or '-'
+                    meta_parts.append(f"pfx:{mod_str}+{tok.prefix_base}")
                 if meta_parts:
                     print(f"{'':>14}   {'  '.join(meta_parts)}")
 
@@ -1114,13 +1217,13 @@ def display_profile(folio_id: str, interp: bool = False):
 
     # Paragraph summary (Tier 2, always shown with profile)
     print(f'\n  PARAGRAPH SUMMARY (C855: independent parallel programs)')
-    print(f'  {"=" * 60}')
-    print(f'  {"PARA":4s} | G | {"KERNEL k/h/e%":14s} | ROLE | SIZE      | T%')
-    print(f'  {"-" * 60}')
+    print(f'  {"=" * 82}')
+    print(f'  {"PARA":4s} | G | {"KERNEL k/h/e%":14s} | ROLE | SIZE      | T%  | {"MODES":>12s} | TAIL')
+    print(f'  {"-" * 82}')
     para_lines = d.paragraph_summary_lines(folio_id)
     for line in para_lines:
         print(line)
-    print(f'  {"=" * 60}')
+    print(f'  {"=" * 82}')
 
     # Paragraph architecture summary
     paragraphs = d.analyze_folio_paragraphs(folio_id)
