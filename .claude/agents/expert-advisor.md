@@ -88,7 +88,7 @@ and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-23 20:09
+**Generated:** 2026-02-23 20:34
 **Version:** FROZEN STATE (1082 constraints, 70 fits) [COMPACT]
 
 ---
@@ -6222,21 +6222,36 @@ program_structure:
         agitate between extraction passes (mid), process final product (late).
       prep_reinterpretation_provenance: "C1221, C1230"
       cycling_architecture:
-        statement: "Body lines cycle through alternating operational modes within a monotonic gradient envelope"
+        statement: "Body lines are independently composed extraction passes within a monotonic gradient envelope. Cross-line sequencing is near-random; structure lives within each line, not between lines."
+        cross_line_independence: |
+          FL regression (40.7%), mode alternation (45.7%), and channel switching
+          (41.7%) are statistically independent AND near-random. Mode transition
+          entropy = 97.8% of maximum. Mutual information < 1% across all pairs.
+          No stereotyped word sequences across line boundaries. Each line is an
+          independently composed extraction pass. (C1233)
+          Supported by: C670 (vocabulary null), C673 (CC independence),
+          C972 (stronger than random Markov), C966 (no cross-line memory).
         fl_cross_line_reset: "36.4% of cross-line FL pairs show regression, mainly LATE->MEDIAL (73.9%) — each line is one processing cycle, FL partially resets between cycles (C1227)"
-        prefix_channel_switching: "73.2% of paragraphs have interior PREFIX divergence >= opening divergence (JSD 0.470 vs 0.504) — lines routinely change operational mode (C1228)"
-        suffix_mode_alternation: "100% of long paragraphs show k=2 suffix clusters (silhouette 0.459), 80% interleaved — two modes alternate, not sequential (C1229)"
-        mode_functional_basis: "Mode A = energy+mechanical specification (k-family 1.62x, prep 2.86x, qo 1.48x); Mode B = equilibration/continuation (e-family elevated, bare-heavy) (C1230)"
+        prefix_channel_switching: "73.2% of paragraphs have interior PREFIX divergence >= opening divergence (JSD 0.470 vs 0.504) — lines routinely change operational mode, confirming cycling not apparatus switching (C1228)"
+        suffix_mode_alternation: "100% of long paragraphs show k=2 suffix clusters (silhouette 0.459), 80% interleaved — two modes alternate but sequence is near-random (entropy 97.8%), not structured (C1229, C1233)"
+        mode_functional_basis: "Mode A = specification (terminal suffixes 2.5-3.0x, ee tokens 1.56x); Mode B = execution (bare 62.0%). Not a cycling dimension — line-level property determined by process state (C1230, C1236)"
         mode_universality: "Global centroids converge across all 55 qualifying paragraphs (F=4.56, silhouette 0.428) — modes are universal B grammar property (C1231)"
         tail_product_signatures: "Last 2 body lines cluster into k=3 product types, section-correlated (chi2=31.73, p=0.0001) — different paragraphs produce different output types (C1232)"
+        steady_state: |
+          The paragraph runs at STEADY STATE — STOP rate is flat across
+          paragraph position (slope -0.82, not significant). There is no
+          countdown toward termination. Paragraph ends when -am fires
+          (5.19x enriched at paragraph-final token). Last body lines are
+          shortened (7.3 vs 10.0 tokens) and cooling-enriched (e-kernel
+          60.8% vs 57.0%). (C1237)
         gradient_cycling_reconciliation: |
-          The spec->exec gradient (C932) and cycling model (C1229) are not
-          contradictory: the gradient is the ENVELOPE (terminal fraction declines
-          monotonically r=-0.89), while cycling is the OSCILLATION within that
-          envelope. Each extraction pass alternates between "agitate/re-spec"
-          (Mode A) and "run/stabilize" (Mode B), but the overall balance shifts
-          from specification-heavy early to continuation-heavy late.
-        provenance: "C1227, C1228, C1229, C1230, C1231, C1232"
+          The spec->exec gradient (C932) provides the ENVELOPE (terminal
+          fraction declines monotonically r=-0.89). Within that envelope,
+          each line is independently composed as Mode A (specification) or
+          Mode B (execution) — the sequence is near-random (C1233), but
+          the balance shifts from specification-heavy early to
+          continuation-heavy late.
+        provenance: "C1227, C1228, C1229, C1230, C1231, C1232, C1233, C1236, C1237"
 
     paragraph_zones:
       # Descriptive model of paragraph architecture
@@ -6675,6 +6690,78 @@ control_loop:
       daiin_position: 0.413  # Earliest - initiates control loop
       ol_position: 0.511  # Medial - bridges to FL
       ol_derived_position: 0.515  # Medial - kernel interface
+
+  kernel_initiation_order:
+    statement: "First-occurrence kernel ordering within lines is e -> k -> h (cool -> process -> monitor)"
+    e_before_k: "64.6% of lines with both (1205/1864, +14.6pp above chance)"
+    e_before_h: "71.6% of lines with both (753/1052)"
+    h_before_k: "28.3% — REVERSED, h typically appears AFTER k"
+    relationship_to_C873: |
+      C873 measures mean position of ALL occurrences (e 0.404 < h 0.410 < k 0.443).
+      This measures FIRST occurrence. Both are valid. h has early mean because when
+      it appears it clusters early-to-mid, but k's first occurrence is earlier because
+      k is more frequent (31% vs 10% of kernel mass).
+    interpretation: "Initiation sequence: establish stability reference (e), apply energy (k), monitor result (h)"
+    provenance: "C1238"
+
+  line_final_routing:
+    statement: "Line-final tokens are routing decisions, not processing steps"
+    m_atom_enrichment: 29.77  # Strongest signal
+    k_atom_enrichment: 0.63  # Depleted
+    e_atom_enrichment: 0.52  # Depleted
+    routing_prefixes: {ar: 9.57, al: 6.21, or: 5.38, da: 2.43}
+    energy_prefixes_depleted: {sh: 0.37, qo: 0.57}
+    classification: {batch_close: "34.9%", loop_check: "14.6%", neutral: "50.5%"}
+    note: "Batch-close at line-final is within-paragraph, not paragraph termination. See paragraph_termination."
+    provenance: "C1235"
+
+  paragraph_termination:
+    statement: "-am is the paragraph termination signal"
+    am_paragraph_final_enrichment: 5.19
+    am_line_final_enrichment: 29.25
+    edy_last_line_enrichment: 0.58  # Depleted — mid-paragraph batch-close
+    am_last_line_enrichment: 0.53  # Depleted on last lines generally
+    aiin_last_line_enrichment: 2.22  # Loop return enriched
+    last_line_length: {last: 7.3, nonlast: 10.0}
+    last_line_e_kernel: {last: "60.8%", nonlast: "57.0%"}
+    steady_state: "STOP rate flat across position (slope -0.82). No countdown."
+    provenance: "C1237"
+
+  iteration_specification:
+    statement: "Iteration atoms form a two-track system specifying loop parameters at line boundaries"
+    line_initial_track:
+      atoms: "iin/in"
+      line_initial_rate: "29.6%"
+      prefixes: "Infrastructure (da/sa/ta/ka)"
+      function: "Cycle setup — declare loop parameters at start of pass"
+    penultimate_track:
+      atoms: "aiin/ain"
+      penultimate_enrichment: 1.35
+      line_final_enrichment: 0.59  # Depleted at final
+      prefixes: "Scaffold/energy (ok/ot/lk/ol)"
+      function: "Bounded loop control — verify result before routing decision"
+    ii_vs_i:
+      ii_count: 2328
+      i_count: 1828
+      ii_is_default: true  # Inverted gradient per C1204
+      ii_n_accompanied: "92.6%"
+      i_n_accompanied: "52.9%"
+      interpretation: "ii = formal bounded cycling (with mandatory halt-check); i = open cycling (may not need check). Doubling is formalization, not literal count."
+    provenance: "C1234, C1204, C1205"
+
+  extension_parameters:
+    statement: "Extension characters (i, e) encode operational parameters, not grammatical categories"
+    e_extension:
+      meaning: "Heat:cool ratio / hysteresis window width"
+      ee_mode_a_ratio: 1.56
+      eee_mode_a_ratio: 1.63
+      connection: "C1225 (e-depth parametricity), C1226 (ke/ek process conditioning)"
+    i_extension:
+      meaning: "Cycle formalization (bounded vs open)"
+      ii_line_initial_enrichment: 1.46
+      ii_line_final_enrichment: 0.62  # Depleted
+      connection: "C1204 (inverted gradient), C1205 (orthogonal to k/e)"
+    provenance: "C1225, C1226, C1204, C1205, C1234"
 
   phase_flexibility:
     # Phases have significant but weak positional preferences
