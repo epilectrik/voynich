@@ -6051,7 +6051,7 @@ Phase 409 adds three structural signatures that sharpen the operational-profile 
 
 ## XV. Cross-Lane Content Prediction and Heat-Measure Cycle (Phase 443)
 
-**Phase:** EN_LANE_CROSS_PREDICTION | **Constraints:** C1242-C1245
+**Phase:** EN_LANE_CROSS_PREDICTION | **Constraints:** C1242-C1244 | **Fits:** F-B-007
 
 ### Core Finding
 
@@ -6095,7 +6095,7 @@ qokaiin → sh(monitor) → qokain
 
 The MIDDLE changes 84.5% of the time (not literal repetition), but the suffix decreases: aiin (sustained) → ain (finishing). The cycle progresses through different operations while the iteration specification decreases.
 
-### Two Independent Scaling Axes (C1245, Tier 3)
+### Two Independent Scaling Axes (F-B-007)
 
 The two extensible atoms encode independent control parameters:
 

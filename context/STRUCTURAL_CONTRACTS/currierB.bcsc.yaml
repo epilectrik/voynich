@@ -2431,14 +2431,15 @@ provenance:
 
   cross_lane_prediction:
     description: "Cross-lane content prediction, routing asymmetry, and heat-measure cycle"
-    constraints: [C1242, C1243, C1244, C1245]
+    constraints: [C1242, C1243, C1244]
+    fits: [F-B-007]
     findings:
       - "Adjacent QO/CHSH pairs show genuine MIDDLE co-occurrence MI=1.0632 z=13.42 but null sequential ordering z=0.05 (C1242)"
       - "Kernel routing at lane boundaries z=49.12; CHSH→QO 2.2x stronger than QO→CHSH (C1242)"
       - "Cycle strictly line-scoped: cross-line atom MI z=0.37 NULL (C1242)"
       - "sh=monitor-pivot routes to heat 32% formulaic; ch=checkpoint-gate routes to heat 24% varied (C1243)"
       - "aiin→ain directional wind-down 64.9%: sustained cycling to final pass (C1244)"
-      - "e-extension=intensity (k>ke>kee), i-extension=duration (i<ii): two independent scaling axes (C1245, Tier 3)"
+      - "e-extension=intensity (k>ke>kee), i-extension=duration (i<ii): two independent scaling axes (F-B-007, fit)"
 
   small_role_anatomy:
     - "C581"   # CC definitive census

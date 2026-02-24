@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1089 validated constraints | **Version:** 4.46 | **Date:** 2026-02-23
+**Total:** 1088 validated constraints | **Version:** 4.46 | **Date:** 2026-02-23
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3396,21 +3396,20 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 | **1240** | **Paragraph-Final -am Trigger Context** (qo prefix 0% at para-final vs 19.7% non-final; ch 2.81x, al 3.80x, e-MIDDLE 2.53x enriched; preceded by aiin/aiiin loop-check; cooling-verified shutdown not processing; n=31) | 2 | B, paragraph, termination, -am, trigger, cooling, shutdown | -> [C1240_am_trigger_context.md](C1240_am_trigger_context.md) |
 | **1241** | **Header-Body Length Independence** (header complexity does not predict body length r=-0.039 tokens, -0.072 unique MIDDLEs; length externally determined; short and long paragraphs structurally identical) | 2 | B, paragraph, header, body, length, independence | -> [C1241_header_body_independence.md](C1241_header_body_independence.md) |
 
-### EN Lane Cross-Prediction (C1242-C1245) -- Phase: EN_LANE_CROSS_PREDICTION (Phase 443)
+### EN Lane Cross-Prediction (C1242-C1244) -- Phase: EN_LANE_CROSS_PREDICTION (Phase 443)
 
 | # | Description | Tier | Tags | Location |
 |---|-------------|------|------|----------|
 | **1242** | **Cross-Lane Content Prediction** (adjacent QO/CHSH pairs MI=1.0632 bits z_perm=13.42 GENUINE; within-lane ordering null z_wl=0.05; kernel routing z=49.12 CHSH→QO 2.2x stronger; cross-line null z=0.37; line-scoped co-occurrence not sequential) | 2 | B, cross-lane, MI, prediction, kernel, routing, line-scoped | -> [C1242_cross_lane_content_prediction.md](C1242_cross_lane_content_prediction.md) |
 | **1243** | **sh/ch Cross-Lane Routing Split** (sh→QO(k) 32.0% vs ch→QO(k) 24.0% 1.34x; sh entropy 4.763 ch entropy 5.068; sh=monitor-pivot formulaic ch=checkpoint-gate varied; extends C929 with routing evidence) | 2 | B, sh, ch, routing, pivot, gate, C929-extension | -> [C1243_sh_ch_routing_split.md](C1243_sh_ch_routing_split.md) |
 | **1244** | **aiin-ain Sequential Wind-Down** (aiin before ain 64.9% on co-occurring lines 98/151; adjacent aiin→ain 19 vs ain→aiin 11; loop-back 15.5% 2.05x baseline; 84.5% advance to different MIDDLE; sustained cycling to final pass) | 2 | B, suffix, aiin, ain, wind-down, iteration, ordering | -> [C1244_aiin_ain_wind_down.md](C1244_aiin_ain_wind_down.md) |
-| **1245** | **Extensible Atom Scaling** (e-extension=intensity k>ke>kee; i-extension=duration i<ii; bare k 92.6% REGIME_2 ke 18.6% REGIME_1; aiin=sustained-cycling ain=final-pass per C1195 atoms not "check"; two independent control dimensions) | 3 | B, extensible, e, i, intensity, duration, regime, scaling | -> [C1245_extensible_atom_scaling.md](C1245_extensible_atom_scaling.md) |
 
 **Phase 443 findings (EN Lane Cross-Prediction):**
 - Cross-lane MIDDLE prediction genuine (z=13.42) but sequential ordering null (z=0.05)
 - Kernel routing massive (z=49.12), CHSH→QO asymmetric (2.2x)
 - sh = monitor-pivot (routes to heat 32%), ch = checkpoint-gate (routes to heat 24%, more varied)
 - aiin→ain directional wind-down (64.9%): sustained cycling → final pass
-- e = intensity dial (k/ke/kee), i = duration dial (i/ii): two independent scaling axes
+- Extensible atom scaling (e=intensity, i=duration) documented as fit F-B-007
 - Cycle strictly line-scoped (cross-line null)
 
 ---

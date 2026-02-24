@@ -192,9 +192,9 @@ token = [ARTICULATOR] + PREFIX + [MIDDLE] + SUFFIX
 
 This dichotomy encodes **MONITORING vs INTERVENTION** phases (C382).
 
-### Cross-Lane Content Prediction (C1242-C1245)
+### Cross-Lane Content Prediction (C1242-C1244)
 
-The QO and CHSH EN lanes carry paired information within each line. Adjacent cross-lane tokens show genuine MIDDLE co-occurrence (MI=1.0632, z=13.42) but null sequential ordering (z=0.05). Kernel routing at lane boundaries is massive (z=49.12), with CHSH→QO asymmetry (2.2x): monitoring constrains subsequent energy operations more than the reverse. sh functions as a monitor-pivot (routes to heat 32%), ch as a checkpoint-gate (24%, more varied outcomes). The -aiin/-ain suffix pair shows directional wind-down (64.9% aiin-first). The cycle is strictly line-scoped (cross-line null). The two extensible atoms encode independent control dimensions: e=intensity (k/ke/kee), i=duration (i/ii).
+The QO and CHSH EN lanes carry paired information within each line. Adjacent cross-lane tokens show genuine MIDDLE co-occurrence (MI=1.0632, z=13.42) but null sequential ordering (z=0.05). Kernel routing at lane boundaries is massive (z=49.12), with CHSH→QO asymmetry (2.2x): monitoring constrains subsequent energy operations more than the reverse. sh functions as a monitor-pivot (routes to heat 32%), ch as a checkpoint-gate (24%, more varied outcomes). The -aiin/-ain suffix pair shows directional wind-down (64.9% aiin-first). The cycle is strictly line-scoped (cross-line null). The two extensible atoms encode independent control dimensions: e=intensity (k/ke/kee), i=duration (i/ii) (F-B-007, interpretive fit).
 
 ---
 

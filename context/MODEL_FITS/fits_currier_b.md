@@ -3,7 +3,7 @@
 > **This document logs explanatory fits.**
 > **No entry in this file constrains the model.**
 
-**Version:** 1.2 | **Last Updated:** 2026-01-26 | **Fit Count:** 6
+**Version:** 1.3 | **Last Updated:** 2026-02-23 | **Fit Count:** 7
 
 ---
 
@@ -312,6 +312,58 @@ The interpretation is Tier 3: it is consistent with all Tier 0-2 constraints and
 - **Refines:** C601 (QO's zero hazard reinterpreted as controlled energy application that is inherently non-hazardous)
 - **Extends:** F-B-002 (QO = "safe energy pathway" confirmed as energy application, not energy absence)
 - **Introduces NEW constraints:** C647
+
+---
+
+### F-B-007 - Extensible Atom Scaling: Intensity and Duration Dimensions
+
+**Tier:** F3 | **Result:** CONSISTENT | **Supports:** C1197, C1204, C1205, C1242, C1244
+**Phase:** EN_LANE_CROSS_PREDICTION (Phase 443)
+
+#### Hypothesis
+
+The two extensible atoms (e, i) encode two independent control dimensions: e-extension modulates energy intensity (k=full heat, ke=modulated, kee=gentle), i-extension modulates iteration duration (i=single pass, ii=sustained cycling). The -aiin/-ain "check" gloss (C561 bigram context) should be reread as "settle/intake" (C1195 atom semantics): monitoring is CHSH's job (C929, C1243), not the i-suffix's.
+
+#### Evidence
+
+**E as intensity gradient:**
+
+| REGIME | k (pure) | ke (modulated) | kee (gentle) | k-ratio |
+|--------|----------|----------------|--------------|---------|
+| REGIME_2 | 112 | 7 | 2 | 92.6% |
+| REGIME_3 | 276 | 44 | 8 | 84.1% |
+| REGIME_1 | 1,261 | 291 | 12 | 80.6% |
+| REGIME_4 | 67 | 14 | 1 | 81.7% |
+
+REGIME_2 (highest k_ratio, most iteration-heavy) runs almost pure k — maximum intensity, no cooling modulation. REGIME_1 (highest thermo_ke) has the most ke mixing — modulated intensity. The physical mechanism (furnace vents, apparatus height, fuel amount) is underdetermined, but the intensity gradient is structurally supported.
+
+**I as duration gradient:**
+- ii is the default form (53.7% vs i 45.9%, C1204 inverted gradient)
+- aiin precedes ain 64.9% when both co-occur (C1244): sustained → final pass
+- i anti-clusters (z=-6.14, C1205): duration tokens spread across the line, not concentrated
+- i displaces energy content (C1205): more i = less k and e (duration parameter competes with intensity for token space)
+
+**Independence:**
+- i anti-correlates with e (r=-0.513, C1207) and y (r=-0.599) at folio level
+- k-e correlation is near-zero (+0.079): energy atoms are independent of each other
+- Two orthogonal axes confirmed
+
+#### Interpretation
+
+The control program has two dials. The e-count on a heat MIDDLE sets how intense the energy application is. The i-count on any suffix sets how long the operation runs before halting. These are independent — a token can specify high intensity with short duration (qok + ain) or moderate intensity with sustained cycling (qoke + aiin). The specific physical mapping to Brunschwig apparatus (furnace plugs, balneum height, fuel type) is underdetermined at this resolution and may not matter for the structural model.
+
+#### Limitations
+
+- "Intensity" and "duration" are interpretive labels for extensibility gradients. The structural facts (e/i extension counts vary by REGIME, i anti-clusters, e/i are independent axes) are Tier 2 regardless.
+- Cannot distinguish "simmer vs rolling boil" from "close to fire vs far from fire" for e-intensity — both are consistent.
+- iii is extremely rare (0.3% for both e and i), making the 3-state encoding effectively 2-state in practice.
+
+#### Relation to Constraints
+
+- **Supports:** C1197 (extensibility partition), C1204 (i-extension inverted), C1205 (i/k/e orthogonality), C1207 (atom correlation clusters)
+- **Extends:** C1242 (cross-lane prediction — the heat-measure cycle uses both dimensions)
+- **Refines:** C1244 (aiin→ain wind-down = duration decreasing toward line end)
+- **Gloss refinement:** -aiin/-ain suffix gloss updated from "check" to "settle/intake" in GLOSSING.md
 
 ---
 

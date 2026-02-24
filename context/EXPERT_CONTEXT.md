@@ -13,7 +13,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1089 validated constraints and 70 explanatory fits loaded
+embedded below. You have ALL 1088 validated constraints and 71 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -54,8 +54,8 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # EMBEDDED EXPERT CONTEXT
 
-**Generated:** 2026-02-23 23:59
-**Version:** FROZEN STATE (1089 constraints, 70 fits) [FULL]
+**Generated:** 2026-02-24 08:36
+**Version:** FROZEN STATE (1088 constraints, 71 fits) [FULL]
 
 ---
 
@@ -79,7 +79,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 4.46 | **Status:** FROZEN | **Constraints:** 1089 | **Date:** 2026-02-23
+**Version:** 4.46 | **Status:** FROZEN | **Constraints:** 1088 | **Date:** 2026-02-23
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -335,8 +335,8 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 1034 |
-| Completed phases | 421 |
+| Validated constraints | 1088 |
+| Completed phases | 443 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -1828,7 +1828,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1090 constraints | 2026-02-23
+CONSTRAINT_REFERENCE v2.6 | 1089 constraints | 2026-02-24
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2923,7 +2923,6 @@ C1241	**Header-Body Length Independence** (header complexity does not predict bo
 C1242	**Cross-Lane Content Prediction** (adjacent QO/CHSH pairs MI=1.0632 bits z_perm=13.42 GENUINE; within-lane ordering null z_wl=0.05; kernel routing z=49.12 CHSH→QO 2.2x stronger; cross-line null z=0.37; line-scoped co-occurrence not sequential)	2	B, cross-lane, MI, prediction, kernel, routing, line-scoped	-> C1242_cross_lane_content_prediction.md
 C1243	**sh/ch Cross-Lane Routing Split** (sh→QO(k) 32.0% vs ch→QO(k) 24.0% 1.34x; sh entropy 4.763 ch entropy 5.068; sh=monitor-pivot formulaic ch=checkpoint-gate varied; extends C929 with routing evidence)	2	B, sh, ch, routing, pivot, gate, C929-extension	-> C1243_sh_ch_routing_split.md
 C1244	**aiin-ain Sequential Wind-Down** (aiin before ain 64.9% on co-occurring lines 98/151; adjacent aiin→ain 19 vs ain→aiin 11; loop-back 15.5% 2.05x baseline; 84.5% advance to different MIDDLE; sustained cycling to final pass)	2	B, suffix, aiin, ain, wind-down, iteration, ordering	-> C1244_aiin_ain_wind_down.md
-C1245	**Extensible Atom Scaling** (e-extension=intensity k>ke>kee; i-extension=duration i<ii; bare k 92.6% REGIME_2 ke 18.6% REGIME_1; aiin=sustained-cycling ain=final-pass per C1195 atoms not "check"; two independent control dimensions)	3	B, extensible, e, i, intensity, duration, regime, scaling	-> C1245_extensible_atom_scaling.md
 
 ---
 
@@ -2931,8 +2930,8 @@ C1245	**Extensible Atom Scaling** (e-extension=intensity k>ke>kee; i-extension=d
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-02-23
-# Total: 70 fits
+# Generated: 2026-02-24
+# Total: 71 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
 ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
@@ -2950,6 +2949,7 @@ F-B-003	Pre-Operational Configuration via A→AZC→B Pipeline	F2	B	SUCCESS	C473
 F-B-004	Lane Hysteresis Control Model	F2	B	SUCCESS	C643, C549, C577, C608	in: fits_currier_b
 F-B-005	PP-Lane MIDDLE Discrimination	F2	B	SUCCESS	C646, C576, C642	in: fits_currier_b
 F-B-006	Energy/Stabilization Lane Assignment	F3	B	PARTIAL	C647, C645, C601, C521	in: fits_currier_b
+F-B-007	Extensible Atom Scaling: Intensity and Duration Dimensions	F3	B	CONSISTENT	C1197, C1204, C1205, C1242, C1244	in: fits_currier_b
 F-AZC-001	Placement Prediction Model	F4	AZC	NEGATIVE	C466-C467	in: fits_azc
 F-AZC-002	Zodiac Positional Grammar	F2	AZC	SUCCESS	C467	in: fits_azc
 F-AZC-005	A/C Positional Grammar Test (DECISIVE)	F2	AZC	SUCCESS	C430-C436, C467	in: fits_azc
@@ -9064,7 +9064,7 @@ Phase 409 adds three structural signatures that sharpen the operational-profile 
 
 ## XV. Cross-Lane Content Prediction and Heat-Measure Cycle (Phase 443)
 
-**Phase:** EN_LANE_CROSS_PREDICTION | **Constraints:** C1242-C1245
+**Phase:** EN_LANE_CROSS_PREDICTION | **Constraints:** C1242-C1244 | **Fits:** F-B-007
 
 ### Core Finding
 
@@ -9108,7 +9108,7 @@ qokaiin → sh(monitor) → qokain
 
 The MIDDLE changes 84.5% of the time (not literal repetition), but the suffix decreases: aiin (sustained) → ain (finishing). The cycle progresses through different operations while the iteration specification decreases.
 
-### Two Independent Scaling Axes (C1245, Tier 3)
+### Two Independent Scaling Axes (F-B-007)
 
 The two extensible atoms encode independent control parameters:
 
@@ -12338,14 +12338,15 @@ provenance:
 
   cross_lane_prediction:
     description: "Cross-lane content prediction, routing asymmetry, and heat-measure cycle"
-    constraints: [C1242, C1243, C1244, C1245]
+    constraints: [C1242, C1243, C1244]
+    fits: [F-B-007]
     findings:
       - "Adjacent QO/CHSH pairs show genuine MIDDLE co-occurrence MI=1.0632 z=13.42 but null sequential ordering z=0.05 (C1242)"
       - "Kernel routing at lane boundaries z=49.12; CHSH→QO 2.2x stronger than QO→CHSH (C1242)"
       - "Cycle strictly line-scoped: cross-line atom MI z=0.37 NULL (C1242)"
       - "sh=monitor-pivot routes to heat 32% formulaic; ch=checkpoint-gate routes to heat 24% varied (C1243)"
       - "aiin→ain directional wind-down 64.9%: sustained cycling to final pass (C1244)"
-      - "e-extension=intensity (k>ke>kee), i-extension=duration (i<ii): two independent scaling axes (C1245, Tier 3)"
+      - "e-extension=intensity (k>ke>kee), i-extension=duration (i<ii): two independent scaling axes (F-B-007, fit)"
 
   small_role_anatomy:
     - "C581"   # CC definitive census
