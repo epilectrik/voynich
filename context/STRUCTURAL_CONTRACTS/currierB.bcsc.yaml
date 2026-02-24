@@ -3,8 +3,8 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.11"
-  date: "2026-02-13"
+  version: "3.12"
+  date: "2026-02-23"
   status: "ACTIVE"
   layer_type: "grammar contract"
   derived_from: "Tier 0-2 constraints (structural); Tier 3 operational layer clearly marked"
@@ -41,7 +41,9 @@ ownership:
     - vocabulary_architecture
     - execution_syntax
     - morphological_architecture  # Added v3.0: TOKEN decomposition, PREFIX/MIDDLE/SUFFIX roles
+    - prefix_internal_grammar  # Added v3.12: Base-modifier decomposition within PREFIX (C1218-C1221)
     - paragraph_execution_model  # Added v3.0: spec→exec gradient, startup patterns
+    - paragraph_cycling_model  # Added v3.12: Two alternating suffix modes, FL cross-line resets, tail signatures (C1227-C1232)
     - operational_layer  # Added v3.0: Tier 3 behavioral glosses for context grounding
   bcsc_does_not_describe:
     - currier_a_entries
@@ -92,6 +94,10 @@ guarantees:
   - id: "CLOSED_LOOP_ONLY"
     statement: "Execution is closed-loop control, not batch, decision tree, or state machine"
     provenance: "C171"
+
+  - id: "PROCESS_CONTROL_DIMENSIONALITY"
+    statement: "Voynich B is a parameterized process control manual: PCA dimensionality (5 PCs/80%) matches modern distillation with differentiated MIDPROCESS sub-types, not Brunschwig recipes (3 PCs/80%). ITERATION axis inflated 7.0x vs plant profiles, FREE deflated 6.3x — grammar transforms distillation parameter space for control-program representation."
+    provenance: "C1222, C1223, C1224"
 
   - id: "MACRO_AUTOMATON_COMPRESSION"
     statement: "49 instruction classes compress to 6 macro-states (8.17x) with spectral gap 0.896; EN/AX merge, FL splits HAZ/SAFE; non-geometric dwell is aggregation artifact; partition is MINIMAL (no coarser grouping preserves invariants); geometrically independent of discrimination manifold at both corpus and folio level (ARI=0.163, with bridge backbone mediating weak geometry→dynamics coupling); dynamically characterized (full transition matrix, stationary distribution matches empirical within 1.2%); macro-automaton is a LOSSY PROJECTION of the 49-class chain — adds zero generative power (M3 ties M2; C1025); paragraph-level structure operates below its resolution floor (C1022)"
@@ -157,6 +163,10 @@ guarantees:
     statement: "Every token decomposes into [ARTICULATOR] + PREFIX + MIDDLE + [SUFFIX] with predictable combination rules"
     provenance: "C267, C382, C383"
 
+  - id: "PREFIX_INTERNAL_GRAMMAR"
+    statement: "PREFIX characters have an internal base-modifier positional grammar: dedicated modifiers (q,d,f,p,y — POS-0, 96-100%), dedicated bases (h,e — POS-1, 100%), dual-role (o,k,l,t,c). Base character determines MIDDLE content (within-base cosine 0.950 vs between-base 0.515, ratio 1.84). Modifier consistency varies: high (o=0.836, l=0.794), moderate (t,p), base-dependent (c=0.380, d=0.345). Prep PREFIXes are h-base variants, not distinct operations (shuffle p=0.998)."
+    provenance: "C1218, C1219, C1220, C1221"
+
   - id: "PAIRWISE_COMPOSITIONALITY"
     statement: "TOKEN information is fully captured by pairwise component interactions (PREFIX x MIDDLE, PREFIX x SUFFIX, MIDDLE x SUFFIX); no three-way synergy exists (Co-I < 0.02 bits on all 4 targets; R-squared increment = 0)"
     provenance: "C1003"
@@ -168,6 +178,10 @@ guarantees:
   - id: "PARAGRAPH_EXECUTION_GRADIENT"
     statement: "Paragraph body lines follow a specification→execution gradient: early lines have rare/unique vocabulary (specification), late lines have universal vocabulary (generic execution loop)"
     provenance: "C932, C933, C934"
+
+  - id: "PARAGRAPH_SUFFIX_CYCLING"
+    statement: "100% of paragraphs with 8+ body lines contain two alternating suffix modes (k=2, silhouette 0.459, 80% interleaved). Mode A (terminal-heavy): k-family 1.62x, prep 2.86x, qo 1.48x. Mode B (bare-heavy): e-family elevated. Universal centroids across all 55 qualifying paragraphs (global silhouette 0.428, F=4.56). Tail lines cluster into k=3 product signatures, section-correlated (chi2=31.73). FL partially resets between body lines (36.4%, LATE->MEDIAL dominant). PREFIX channels switch in 73.2% of paragraphs."
+    provenance: "C1227, C1228, C1229, C1230, C1231, C1232"
 
   - id: "HT_OPERATIONAL_REDUNDANCY"
     statement: "HT/compound tokens contain operational content that is redundant with body simple MIDDLEs (71.6% atom hit rate vs 59.2% random). Removal doesn't change outcomes because of redundancy, not emptiness."
@@ -243,6 +257,14 @@ invariants:
     statement: "PREFIX encodes line position independently of regime"
     provenance: "C1001"
 
+  prefix_base_modifier_grammar:
+    statement: "PREFIX characters partition into modifiers (POS-0) and bases (POS-1/final); base character determines MIDDLE content domain (within-base cosine 0.950 vs between-base 0.515)"
+    provenance: "C1218, C1219"
+
+  suffix_mode_universality:
+    statement: "Two alternating suffix modes (specification/continuation) are universal across all paragraphs with sufficient body lines; global silhouette 0.428, F=4.56, 80% interleaved"
+    provenance: "C1229, C1231"
+
   pairwise_interaction_sufficiency:
     statement: "Pairwise morphological component interactions capture all exploitable TOKEN structure; no three-way synergy"
     provenance: "C1003"
@@ -305,7 +327,21 @@ morphology:
         selectivity: "102 forbidden PREFIX×MIDDLE combinations"
         behavioral_transformation: "Within-MIDDLE between-PREFIX JSD = 97.5% of between-MIDDLE JSD"
         macro_state_routing: "78.7% within-MIDDLE entropy reduction (genuine, not C662 tautology); 80.1% non-positional; REGIME-invariant (ratio=1.06)"
-        provenance: "C267, C911, C661, C662, C1017"
+        internal_grammar:
+          statement: "PREFIX has an internal base-modifier positional grammar"
+          structure: "[MODIFIER (POS-0)] + [BASE (POS-1/final)]"
+          dedicated_modifiers: {chars: ["q", "d", "f", "p", "y"], concentration: "96-100% POS-0 only"}
+          dedicated_bases: {chars: ["h", "e"], concentration: "100% POS-1/final only"}
+          dual_role: {chars: ["o", "k", "l", "t", "c", "a", "r"], concentration: "54-88% primary position"}
+          pos2: "Only h occupies POS-2 (in 3-char PREFIXes: pch, tch, dch, lch, kch, fch, rch, lsh)"
+          base_middle_prediction: "Within-base cosine 0.950, between-base 0.515, ratio 1.84"
+          modifier_consistency_tiers:
+            high: {chars: ["o", "l", "a"], cosine_range: "0.756-0.836", note: "Similar effects regardless of base"}
+            moderate: {chars: ["t", "p"], cosine_range: "0.450-0.464"}
+            base_dependent: {chars: ["c", "d", "s", "k"], cosine_range: "0.345-0.413", note: "Very different behavior depending on base"}
+          resolves: "C1193 low additivity — reflects role-switching between modifier and base positions, not non-compositionality"
+          provenance: "C1218, C1219, C1220"
+        provenance: "C267, C911, C661, C662, C1017, C1218, C1219, C1220"
       MIDDLE:
         required: true  # Core semantic carrier
         core_count: 75  # Core MIDDLEs appearing across many folios
@@ -392,7 +428,23 @@ morphology:
         positional_behavior: "Late in line (LINE_FINAL zone, 61% Q5)"
         note: "ar as PREFIX is a pure FL_SAFE selector — the only PREFIX with 100% purity for a non-AXM state (n≥3). Distinct from ar as MIDDLE (MEDIAL state index)."
         provenance: "C1015"
-    provenance: "C911, C661, C662, C936, C1015"
+    base_group_profiles:
+      statement: "Base character (POS-1/final) determines operational domain of PREFIX channel"
+      profiles:
+        a_base: {dominant_axis: "ITERATION (80%)", prefixes: ["da", "ka", "sa", "ta"]}
+        o_base: {dominant_axis: "ENERGY (42%)", prefixes: ["qo", "so", "do", "ko", "po", "to"]}
+        h_base: {dominant_axis: "STABILITY+CLOSURE (63%)", prefixes: ["ch", "sh", "pch", "tch", "dch", "lch", "lsh", "kch", "fch", "rch"]}
+        e_base: {dominant_axis: "CLOSURE (53%)", prefixes: ["ke", "te"]}
+        k_base: {dominant_axis: "ITERATION+STABILITY (68%)", prefixes: ["ok", "lk", "yk"]}
+      provenance: "C1219"
+    prep_prefix_reinterpretation:
+      statement: "Prep PREFIXes (pch, tch, dch, te, lch) are NOT distinct operation types"
+      evidence: "Mean pairwise cosine 0.963, shuffle p=0.998 (random groups of 5 achieve equal or greater similarity)"
+      explanation: "Similarity fully explained by shared h-base (4 of 5 are h-based)"
+      reinterpretation: "Prep PREFIXes are h-base mode variants differentiated by modifier character and line position, not by operational content"
+      challenges: "F-BRU-012 distinct operation assignment (CHOP, POUND, STRIP, GATHER) — does not falsify fit, but specific glosses are challenged"
+      provenance: "C1221"
+    provenance: "C911, C661, C662, C936, C1015, C1219, C1221"
 
   prefix_positional_zones:
     # Tier 2 structural fact: PREFIX encodes line position (dual encoding with content)
@@ -480,7 +532,16 @@ morphology:
       early: "'i' character marks initial state"
       late: "Consonants (r, l, n, m) mark intermediate states"
       terminal: "'y' character marks terminal state"
-    provenance: "C777, C897, C1015"
+    cross_line_behavior:
+      statement: "FL state resets partially between body lines, permitting regressions forbidden within lines"
+      regression_rate: "36.4% of cross-line FL pairs (257/707)"
+      dominant_regression: "LATE->MEDIAL (73.9%, 190/257); LATE->EARLY rare (12.8%, 33/257)"
+      positioning: "Structured at non-uniform paragraph positions (KS p<0.0001)"
+      section_stable: "B: 35.4%, H: 38.0%, S: 34.8%, C: 37.3%"
+      c787_extension: "C787 prohibits FL LATE->EARLY within lines (0 occurrences); cross-line boundary permits it (33 cases)"
+      interpretation: "Each body line is one processing cycle. FL partially resets between cycles (typically to MEDIAL, not EARLY) because the next cycle picks up from current process state rather than starting fresh."
+      provenance: "C1227"
+    provenance: "C777, C897, C1015, C1227"
 
 # ============================================================
 
@@ -641,6 +702,35 @@ kernel:
     kernel_bigram_ordering:
       provenance: "C332"
 
+  ke_ek_internal_structure:
+    statement: "ke-family MIDDLEs have internal parametric axes that modulate operational behavior"
+
+    e_depth_parametricity:
+      statement: "E-count within ke-family restructures suffix grammar"
+      single_e: {tokens: 590, edy_rate: "64%", y_rate: "14%"}
+      multi_e: {tokens: 102, edy_rate: "12%", y_rate: "37%", s_rate: "13% (exclusive)"}
+      significance: "chi-squared p<0.0001"
+      scope: "MIDDLE-internal — does NOT vary by REGIME (p=0.620) or section (p=0.067)"
+      interpretation: "E-depth functions as graded parameter that changes output specification. Single-e and multi-e are different instruction types within the same family."
+      provenance: "C1225"
+
+    ke_ek_ordering:
+      statement: "ke/ek ratio is conditioned by REGIME and section"
+      regime_conditioning:
+        REGIME_1: {ke_pct: "81.4%", ek_pct: "18.6%"}
+        REGIME_2: {ke_pct: "36.4%", ek_pct: "63.6%"}
+        REGIME_3: {ke_pct: "62.8%", ek_pct: "37.2%"}
+        REGIME_4: {ke_pct: "36.0%", ek_pct: "64.0%"}
+        chi2: 77.71
+      section_conditioning:
+        BIO: {ek_pct: "19.7%"}
+        HERBAL: {ek_pct: "79.1%"}
+        STARS: {ek_pct: "19.7%"}
+        chi2: 138.50
+      predecessor_context: "ke follows E-DOM predecessors 54.9% vs ek 22.5% (Fisher OR=4.20, p<0.0001)"
+      interpretation: "ke = energy-first (aggressive, after stability-rich context); ek = stability-check-first (cautious, after energy-rich context)"
+      provenance: "C1226"
+
 # ============================================================
 hazards:
 
@@ -725,6 +815,13 @@ program_structure:
       pattern: "[i/ii] → [r/ar] → [al/l/ol] → [o/ly/am] → [y/ry/dy]"
       prefixed_fl_line_final: "72.7% (C897)"
       provenance: "C777, C897"
+    cross_line_fl_resets:
+      statement: "FL state partially resets between body lines (C1227)"
+      regression_rate: "36.4% of cross-line FL pairs (257/707)"
+      dominant_regression: "LATE->MEDIAL (73.9%); LATE->EARLY rare (12.8%)"
+      cross_reference: "See morphology.fl_state_index.cross_line_behavior for full details"
+      provenance: "C1227"
+
     cross_line_information:
       statement: "Lines carry mutual information about neighbors despite formal independence"
       cross_line_mi: "0.521 bits"
@@ -791,11 +888,17 @@ program_structure:
       provenance: "C840, C935"
 
     body_homogeneity:
-      statement: "Body lines are compositionally homogeneous — only length progression (rho=-0.23), no role-composition change after length control (C963)"
+      statement: "Body lines are compositionally homogeneous at ROLE level — only length progression (rho=-0.23), no role-composition change after length control (C963). However, at SUFFIX and MIDDLE-FAMILY level, two alternating modes cycle throughout the body (C1229-C1231)."
       length_progression: "rho = -0.229, p = 0.001"
       composition_after_control: "EN/FL/CC fractions collapse to rho ~ 0 after controlling for line length"
-      interpretation: "Paragraphs shrink toward their ends but each body line is a structurally equivalent control block"
-      provenance: "C963, C677"
+      suffix_mode_cycling: |
+        Two universal suffix modes alternate within bodies (C1229):
+        Mode A (terminal=0.430, bare=0.466): k-family 1.62x, prep 2.86x, qo 1.48x
+        Mode B (terminal=0.155, bare=0.741): e-family elevated (0.824x)
+        80% interleaved (not sequential), continuous gradient (3.3% breakpoints)
+        Universal centroids: silhouette 0.428, F=4.56 (C1231)
+      reconciliation: "C963 homogeneity is at role-fraction level (EN/FL/CC); cycling operates at suffix-category/MIDDLE-family level — a finer grain below role resolution. Both are true simultaneously."
+      provenance: "C963, C677, C1229, C1230, C1231"
 
     execution_gradient:
       statement: "Body lines follow a specification->execution gradient"
@@ -822,6 +925,46 @@ program_structure:
         heat_first_rate: "65%"
         heat_prep_cooccurrence_trend: "r=-0.94 (Q0→Q4)"
         provenance: "C934"
+      prep_reinterpretation: |
+        C1221 shows prep PREFIXes are NOT distinct operation verbs but h-base
+        variants (mean pairwise cosine 0.963, shuffle p=0.998). Their early
+        concentration (C933) reflects position-based phase differences within
+        the stability/closure domain, not different physical operations. Prep
+        MIDDLEs appear throughout paragraphs (2.86x enriched in Mode A lines,
+        C1230), serving position-dependent purposes: prepare material (early),
+        agitate between extraction passes (mid), process final product (late).
+      prep_reinterpretation_provenance: "C1221, C1230"
+      cycling_architecture:
+        statement: "Body lines are independently composed extraction passes within a monotonic gradient envelope. Cross-line sequencing is near-random; structure lives within each line, not between lines."
+        cross_line_independence: |
+          FL regression (40.7%), mode alternation (45.7%), and channel switching
+          (41.7%) are statistically independent AND near-random. Mode transition
+          entropy = 97.8% of maximum. Mutual information < 1% across all pairs.
+          No stereotyped word sequences across line boundaries. Each line is an
+          independently composed extraction pass. (C1233)
+          Supported by: C670 (vocabulary null), C673 (CC independence),
+          C972 (stronger than random Markov), C966 (no cross-line memory).
+        fl_cross_line_reset: "36.4% of cross-line FL pairs show regression, mainly LATE->MEDIAL (73.9%) — each line is one processing cycle, FL partially resets between cycles (C1227)"
+        prefix_channel_switching: "73.2% of paragraphs have interior PREFIX divergence >= opening divergence (JSD 0.470 vs 0.504) — lines routinely change operational mode, confirming cycling not apparatus switching (C1228)"
+        suffix_mode_alternation: "100% of long paragraphs show k=2 suffix clusters (silhouette 0.459), 80% interleaved — two modes alternate but sequence is near-random (entropy 97.8%), not structured (C1229, C1233)"
+        mode_functional_basis: "Mode A = specification (terminal suffixes 2.5-3.0x, ee tokens 1.56x); Mode B = execution (bare 62.0%). Not a cycling dimension — line-level property determined by process state (C1230, C1236)"
+        mode_universality: "Global centroids converge across all 55 qualifying paragraphs (F=4.56, silhouette 0.428) — modes are universal B grammar property (C1231)"
+        tail_product_signatures: "Last 2 body lines cluster into k=3 product types, section-correlated (chi2=31.73, p=0.0001) — different paragraphs produce different output types (C1232)"
+        steady_state: |
+          The paragraph runs at STEADY STATE — STOP rate is flat across
+          paragraph position (slope -0.82, not significant). There is no
+          countdown toward termination. Paragraph ends when -am fires
+          (5.19x enriched at paragraph-final token). Last body lines are
+          shortened (7.3 vs 10.0 tokens) and cooling-enriched (e-kernel
+          60.8% vs 57.0%). (C1237)
+        gradient_cycling_reconciliation: |
+          The spec->exec gradient (C932) provides the ENVELOPE (terminal
+          fraction declines monotonically r=-0.89). Within that envelope,
+          each line is independently composed as Mode A (specification) or
+          Mode B (execution) — the sequence is near-random (C1233), but
+          the balance shifts from specification-heavy early to
+          continuation-heavy late.
+        provenance: "C1227, C1228, C1229, C1230, C1231, C1232, C1233, C1236, C1237"
 
     paragraph_zones:
       # Descriptive model of paragraph architecture
@@ -840,6 +983,13 @@ program_structure:
           lines: "Late body (Q3-Q4)"
           content: "Universal vocabulary, iterate suffixes, generic control loop"
           provenance: "C932, C934"
+      cycling_layer_note: |
+        The three zones describe the monotonic ENVELOPE of vocabulary
+        gradient (C932). Beneath this, body lines cycle through Mode A
+        (specification/agitation) and Mode B (continuation/stabilization)
+        at every position — the zones label where each mode DOMINATES,
+        but neither is absent anywhere. See execution_gradient.cycling_architecture.
+      cycling_layer_provenance: "C1229, C1231"
 
     gallows_initial:
       paragraph_initial_rate: "8.6% vs 2.7% body"
@@ -1263,6 +1413,78 @@ control_loop:
       ol_position: 0.511  # Medial - bridges to FL
       ol_derived_position: 0.515  # Medial - kernel interface
 
+  kernel_initiation_order:
+    statement: "First-occurrence kernel ordering within lines is e -> k -> h (cool -> process -> monitor)"
+    e_before_k: "64.6% of lines with both (1205/1864, +14.6pp above chance)"
+    e_before_h: "71.6% of lines with both (753/1052)"
+    h_before_k: "28.3% — REVERSED, h typically appears AFTER k"
+    relationship_to_C873: |
+      C873 measures mean position of ALL occurrences (e 0.404 < h 0.410 < k 0.443).
+      This measures FIRST occurrence. Both are valid. h has early mean because when
+      it appears it clusters early-to-mid, but k's first occurrence is earlier because
+      k is more frequent (31% vs 10% of kernel mass).
+    interpretation: "Initiation sequence: establish stability reference (e), apply energy (k), monitor result (h)"
+    provenance: "C1238"
+
+  line_final_routing:
+    statement: "Line-final tokens are routing decisions, not processing steps"
+    m_atom_enrichment: 29.77  # Strongest signal
+    k_atom_enrichment: 0.63  # Depleted
+    e_atom_enrichment: 0.52  # Depleted
+    routing_prefixes: {ar: 9.57, al: 6.21, or: 5.38, da: 2.43}
+    energy_prefixes_depleted: {sh: 0.37, qo: 0.57}
+    classification: {batch_close: "34.9%", loop_check: "14.6%", neutral: "50.5%"}
+    note: "Batch-close at line-final is within-paragraph, not paragraph termination. See paragraph_termination."
+    provenance: "C1235"
+
+  paragraph_termination:
+    statement: "-am is the paragraph termination signal"
+    am_paragraph_final_enrichment: 5.19
+    am_line_final_enrichment: 29.25
+    edy_last_line_enrichment: 0.58  # Depleted — mid-paragraph batch-close
+    am_last_line_enrichment: 0.53  # Depleted on last lines generally
+    aiin_last_line_enrichment: 2.22  # Loop return enriched
+    last_line_length: {last: 7.3, nonlast: 10.0}
+    last_line_e_kernel: {last: "60.8%", nonlast: "57.0%"}
+    steady_state: "STOP rate flat across position (slope -0.82). No countdown."
+    provenance: "C1237"
+
+  iteration_specification:
+    statement: "Iteration atoms form a two-track system specifying loop parameters at line boundaries"
+    line_initial_track:
+      atoms: "iin/in"
+      line_initial_rate: "29.6%"
+      prefixes: "Infrastructure (da/sa/ta/ka)"
+      function: "Cycle setup — declare loop parameters at start of pass"
+    penultimate_track:
+      atoms: "aiin/ain"
+      penultimate_enrichment: 1.35
+      line_final_enrichment: 0.59  # Depleted at final
+      prefixes: "Scaffold/energy (ok/ot/lk/ol)"
+      function: "Bounded loop control — verify result before routing decision"
+    ii_vs_i:
+      ii_count: 2328
+      i_count: 1828
+      ii_is_default: true  # Inverted gradient per C1204
+      ii_n_accompanied: "92.6%"
+      i_n_accompanied: "52.9%"
+      interpretation: "ii = formal bounded cycling (with mandatory halt-check); i = open cycling (may not need check). Doubling is formalization, not literal count."
+    provenance: "C1234, C1204, C1205"
+
+  extension_parameters:
+    statement: "Extension characters (i, e) encode operational parameters, not grammatical categories"
+    e_extension:
+      meaning: "Heat:cool ratio / hysteresis window width"
+      ee_mode_a_ratio: 1.56
+      eee_mode_a_ratio: 1.63
+      connection: "C1225 (e-depth parametricity), C1226 (ke/ek process conditioning)"
+    i_extension:
+      meaning: "Cycle formalization (bounded vs open)"
+      ii_line_initial_enrichment: 1.46
+      ii_line_final_enrichment: 0.62  # Depleted
+      connection: "C1204 (inverted gradient), C1205 (orthogonal to k/e)"
+    provenance: "C1225, C1226, C1204, C1205, C1234"
+
   phase_flexibility:
     # Phases have significant but weak positional preferences
     anova_f: 70.28
@@ -1313,6 +1535,61 @@ section_profiles:
     js_explained: "74%"
     resolves: "C1049/C909 paradox (vocabulary is type-universal but frequency-specific)"
     provenance: "C1134"
+
+# ============================================================
+process_characterization:
+  # Tier 2: Structural characterization of what the B system encodes
+  # These are dimensional/statistical findings, not semantic interpretations
+
+  document_type:
+    statement: "Voynich B is a parameterized process control manual, not a recipe collection"
+    evidence: "PCA dimensionality (5 PCs/80%) matches modern distillation with differentiated MIDPROCESS sub-types, not Brunschwig recipes (3 PCs)"
+    distinction: "Brunschwig (3 PCs) = WHAT to do. Voynich (5 PCs) = HOW to control the process."
+    provenance: "C1222, C1223"
+
+  dimensional_comparison:
+    brunschwig: {pcs_for_80pct: 3, entropy: 1.908, midprocess_fraction: "0%"}
+    modern_7phase: {pcs_for_80pct: 4, entropy: 2.334, midprocess_fraction: "34.5%"}
+    modern_11feature: {pcs_for_80pct: 5, entropy: 2.921, midprocess: "differentiated into 5 sub-types"}
+    voynich: {pcs_for_80pct: 5, entropy: 2.660, active_dimensions: 10}
+    entropy_distance_from_voynich:
+      brunschwig: 0.752
+      modern: 0.326
+      ratio: "2.3x closer"
+    provenance: "C1222, C1223"
+
+  midprocess_subtype_mapping:
+    statement: "Splitting MIDPROCESS into 5 Voynich-aligned sub-types closes the dimensional gap exactly (4 PCs -> 5 PCs)"
+    subtypes:
+      MID_MONITORING: {fraction: "11.0%", maps_to: "MONITORING axis {c,h}"}
+      MID_ENERGY: {fraction: "6.7%", maps_to: "ENERGY axis {k,l}"}
+      MID_STABILITY: {fraction: "4.8%", maps_to: "STABILITY axis {e}"}
+      MID_CLOSURE: {fraction: "9.8%", maps_to: "CLOSURE axis {d,y}"}
+      MID_STRUCTURAL: {fraction: "2.1%", maps_to: "STRUCTURAL axis {o,p}"}
+    provenance: "C1223"
+
+  axis_transformation:
+    statement: "Voynich transforms plant distillation profiles for control-program representation"
+    same_dimensionality: "Both 4 PCs for 80% variance"
+    inflated:
+      ITERATION: "7.0x (25.1% vs 3.6%)"
+      CLOSURE: "1.3x (18.0% vs 14.3%)"
+    deflated:
+      FREE: "6.3x (3.0% vs 18.9%)"
+      MONITORING: "2.3x (7.9% vs 18.1%)"
+    preserved:
+      STRUCTURAL: "exact match (11.2%)"
+      ENERGY: "~balanced (14.9% vs 18.0%)"
+      STABILITY: "~balanced (19.9% vs 15.8%)"
+    pc_alignment: "Not significant (p=0.30)"
+    paragraph_plant_matching: "80% FLOWER, 14% ROOT, 6% WOOD"
+    regime_correlation: "REGIME_1 captures 82% (54/66) of ROOT-matching paragraphs"
+    interpretation: |
+      Voynich massively inflates ITERATION (loop/cycle counting infrastructure)
+      and deflates FREE (timing flexibility eliminated) and MONITORING (observation
+      compressed because monitoring is implicit in control loops). Physical parameters
+      (ENERGY, STABILITY, STRUCTURAL) map through approximately unchanged.
+    provenance: "C1224"
 
 # ============================================================
 vocabulary_architecture:
@@ -1743,8 +2020,9 @@ operational_layer:
       ar: {gloss: "close", freq: 670}
       eey: {gloss: "deep cool", freq: 615, kernel: "E"}
       dy: {gloss: "close", freq: 594}
-      t: {gloss: "transfer", freq: 574}
-      ke: {gloss: "sustained heat", freq: 421, kernel: "K"}
+      t: {gloss: "drive", freq: 574, note: "Phase 440: treiben/abtreiben (drive off volatile fraction). Complementary to k (heat): k manages fire, t manages vapor extraction. 87% qo-prefixed when sole MIDDLE, k-exclusion 0.6%, t→h 56:1 asymmetry."}
+      ke: {gloss: "heat burst then equilibrate", freq: 421, kernel: "K", note: "Revised from 'sustained heat' per C1226. ke = energy-first (aggressive); ek = stability-check-first (cautious). ke/ek ratio is REGIME-conditioned (18.6% ek in REGIME_1, 64.0% in REGIME_4) and section-conditioned (79.1% ek in HERBAL). E-depth (kee, keee) restructures suffix grammar (C1225)."}
+      ek: {gloss: "check then heat", freq: 180, kernel: "K+E", note: "Cautious variant of ke. Concentrates in precision contexts (REGIME_4, HERBAL). Follows energy-rich predecessors only 22.5% vs ke 54.9% (C1226)."}
       ch: {gloss: "check", freq: 351}
       d: {gloss: "checkpoint", freq: 312}
       h: {gloss: "monitor", freq: 48, kernel: "H"}
@@ -1958,7 +2236,11 @@ annotations:
     compound_rate_ht: "45.8%"
     forbidden_prefix_middle_pairs: 102
     prefix_behavioral_transformation: "JSD=0.425 (97.5% of between-MIDDLE)"
-    provenance: "C267, C382, C588, C661, C911, C935, C936"
+    prefix_within_base_cosine: 0.950
+    prefix_between_base_cosine: 0.515
+    prefix_base_ratio: 1.84
+    prep_prefix_shuffle_p: 0.998
+    provenance: "C267, C382, C588, C661, C911, C935, C936, C1218, C1219, C1220, C1221"
 
   paragraph_execution_statistics:
     rare_middle_gradient: "r=-0.97"
@@ -1967,7 +2249,15 @@ annotations:
     prep_verb_early_concentration: "avg pos <0.45, 1.3-2.8x Q0/Q4 ratio"
     heat_first_rate: "65%"
     compound_atom_body_hit_rate: "71.6% (vs 59.2% random)"
-    provenance: "C932, C933, C934, C935"
+    suffix_mode_a_centroid: "[T=0.430, C=0.019, I=0.086, B=0.466]"
+    suffix_mode_b_centroid: "[T=0.155, C=0.031, I=0.072, B=0.741]"
+    global_suffix_mode_silhouette: 0.428
+    suffix_mode_f_statistic: 4.56
+    cross_line_fl_regression_rate: "36.4%"
+    prefix_channel_switch_rate: "73.2%"
+    tail_product_clusters: 3
+    tail_product_section_chi2: 31.73
+    provenance: "C932, C933, C934, C935, C1227, C1228, C1229, C1230, C1231, C1232"
 
 # ============================================================
 provenance:
@@ -2014,6 +2304,10 @@ provenance:
     - "C1001"  # PREFIX dual encoding (content + position)
     - "C1003"  # Pairwise compositionality (no three-way synergy)
     - "C1004"  # SUFFIX is not a sequential state carrier
+    - "C1218"  # PREFIX internal positional grammar (base-modifier, 3 character roles)
+    - "C1219"  # Base character determines MIDDLE content (within-base cosine 0.950)
+    - "C1220"  # Modifier consistency varies by character (high o=0.836, low d=0.345)
+    - "C1221"  # Prep PREFIX similarity base-driven (shuffle p=0.998, challenges F-BRU-012)
 
   link:
     - "C334"   # LINK section conditioning
@@ -2299,7 +2593,7 @@ provenance:
     - "C872"   # HT discrimination vocabulary interpretation
 
   control_flow_semantics:
-    - "C873"   # Kernel positional ordering (e < h < k)
+    - "C873"   # Kernel positional ordering (e < h < k) — mean position
     - "C874"   # CC token functions (daiin=init, ol=continue)
     - "C875"   # Escape trigger grammar (80.4% from hazard FL stages)
     - "C876"   # LINK checkpoint function
@@ -2307,6 +2601,14 @@ provenance:
     - "C878"   # Section program variation
     - "C879"   # Process domain verdict (batch processing)
     - "C880"   # Integrated control model
+
+  control_loop_architecture:  # Phase 441
+    - "C1233"  # Cross-line independence (near-random, entropy 97.8%)
+    - "C1234"  # Iteration two-track (iin line-initial, aiin penultimate)
+    - "C1235"  # Line-final routing (m 29.77x, k/e depleted)
+    - "C1236"  # Suffix scope markers (terminal=Mode A, checkpoint=mode-independent)
+    - "C1237"  # Paragraph termination by -am (5.19x, steady-state)
+    - "C1238"  # Kernel initiation order (e->k->h, refines C873)
 
   closed_loop_orthogonality:
     - "C886"   # Transition probability directionality (symmetric constraints, directional execution)
@@ -2389,6 +2691,23 @@ provenance:
     - "C934"   # Parallel startup pattern (65% heat-first)
     - "C935"   # Compound specification dual purpose (71.6% atom-body hit rate)
 
+  kernel_internal_structure:
+    - "C1225"  # E-depth suffix parametricity (single-e 64% -edy vs multi-e 12% -edy)
+    - "C1226"  # ke/ek ratio process-context conditioning (REGIME: 18.6-64.0% ek; section: 19.7-79.1% ek)
+
+  paragraph_cycling:
+    - "C1227"  # FL cross-line reset clustering (36.4% regression, LATE->MEDIAL dominant 73.9%)
+    - "C1228"  # PREFIX channel switching within paragraphs (73.2% have interior >= opening JSD)
+    - "C1229"  # Alternating suffix modes (k=2, silhouette 0.459, 80% interleaved)
+    - "C1230"  # Suffix mode MIDDLE differentiation (Mode A: k-family 1.62x, prep 2.86x)
+    - "C1231"  # Universal suffix mode centroids (silhouette 0.428, F=4.56)
+    - "C1232"  # Paragraph tail product signatures (k=3, section chi2=31.73)
+
+  process_characterization:
+    - "C1222"  # Modern distillation dimensionality 2.3x closer to Voynich (4 PCs vs Brunschwig 3)
+    - "C1223"  # MIDPROCESS sub-type split matches Voynich at 5 PCs exactly
+    - "C1224"  # Voynich axis distribution transforms plant distillation profiles (ITER 7.0x, FREE 6.3x deflated)
+
 # ============================================================
 disallowed:
   - interpretation: "B grammar varies by Currier A source"
@@ -2438,5 +2757,9 @@ disallowed:
   - interpretation: "FL_SAFE is an absorbing or long-duration collection state"
     reason: "FL_SAFE has self-transition of only 0.023, exits to AXM at 0.698, and has expected return time of 117.7 steps — a rare fleeting terminal excursion, not an absorbing state"
     provenance: "C1015"
+
+  - interpretation: "Prep PREFIXes (pch, tch, dch, te, lch) encode distinct physical operations"
+    reason: "Prep PREFIX similarity (cosine 0.963) is fully explained by shared h-base; shuffle test p=0.998. They are h-base mode variants, not different verbs."
+    provenance: "C1221"
 
 # ============================================================
