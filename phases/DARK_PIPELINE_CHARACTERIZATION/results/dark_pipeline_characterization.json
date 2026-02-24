@@ -1,0 +1,247 @@
+{
+  "_metadata": {
+    "phase": "DARK_PIPELINE_CHARACTERIZATION",
+    "phase_number": 448,
+    "description": "Testing 8-category generalization to dark pipeline MIDDLEs",
+    "n_tokens": 23096,
+    "n_human_glossed_middles": 91,
+    "n_dark_auto_assigned": 1144,
+    "n_mixed": 0,
+    "n_q_unglossable": 58,
+    "n_permutations": 1000,
+    "p_threshold": 0.01,
+    "elapsed_seconds": 98.9
+  },
+  "synthesis": {
+    "pass_count": 3,
+    "fail_count": 3,
+    "skip_count": 0,
+    "total_tests": 6,
+    "tests_run": 6,
+    "verdict": "PARTIALLY_GENERALIZES",
+    "summary": "3/6 tests pass (p<0.01), 0 skipped"
+  },
+  "tests": {
+    "T1_coverage": {
+      "status": "PASS",
+      "n_dark_assigned": 1144,
+      "n_mixed": 0,
+      "n_q_unglossable": 58,
+      "n_other_unglossed": 0,
+      "coverage_rate_middles": 0.9517,
+      "total_token_coverage": 0.9945,
+      "n_human_tokens": 20480,
+      "n_auto_tokens": 2489,
+      "n_uncovered_tokens": 127,
+      "dark_category_dist_middles": {
+        "CONTAINMENT": 0,
+        "FLOW": 26,
+        "MARKING": 224,
+        "MONITORING": 85,
+        "OPERATION": 45,
+        "STAGING": 153,
+        "THERMAL": 467,
+        "TRANSITION": 144
+      },
+      "dark_category_dist_tokens": {
+        "CONTAINMENT": 0,
+        "FLOW": 89,
+        "MARKING": 472,
+        "MONITORING": 199,
+        "OPERATION": 62,
+        "STAGING": 282,
+        "THERMAL": 1080,
+        "TRANSITION": 305
+      },
+      "human_category_dist_tokens": {
+        "CONTAINMENT": 1099,
+        "FLOW": 3985,
+        "MARKING": 862,
+        "MONITORING": 327,
+        "OPERATION": 3273,
+        "STAGING": 2691,
+        "THERMAL": 4841,
+        "TRANSITION": 3402
+      },
+      "confidence_distribution": {
+        "WEAK": 742,
+        "PLAUSIBLE": 269,
+        "SOLID": 78,
+        "LOCKED": 45,
+        "KERNEL": 10
+      }
+    },
+    "T2_silhouette": {
+      "status": "FAIL",
+      "silhouette": -0.0498,
+      "p_value_empirical": 0.1548,
+      "null_mean": -0.065,
+      "n_middles": 296,
+      "n_categories": 7,
+      "stratified": {
+        "LOCKED_SOLID": {
+          "n": 40,
+          "silhouette": -0.0111,
+          "p_value": 0.001,
+          "null_mean": -0.1741,
+          "status": "PASS"
+        },
+        "PLAUSIBLE": {
+          "n": 57,
+          "silhouette": -0.1088,
+          "p_value": 0.1658,
+          "null_mean": -0.1397,
+          "status": "FAIL"
+        },
+        "WEAK": {
+          "n": 199,
+          "silhouette": -0.0523,
+          "p_value": 0.0569,
+          "null_mean": -0.0762,
+          "status": "FAIL"
+        }
+      }
+    },
+    "T3_line_position": {
+      "status": "PASS",
+      "F": 10.86,
+      "ratio_over_null": 10.8,
+      "p_value_empirical": 0.001,
+      "null_F_mean": 1.0,
+      "n_tokens": 2489,
+      "n_categories": 7,
+      "category_mean_positions": {
+        "FLOW": 0.5711,
+        "MARKING": 0.5457,
+        "MONITORING": 0.4671,
+        "OPERATION": 0.5105,
+        "STAGING": 0.5214,
+        "THERMAL": 0.4708,
+        "TRANSITION": 0.6315
+      }
+    },
+    "T4_section_divergence": {
+      "status": "FAIL",
+      "mean_pairwise_jsd": 0.0111,
+      "p_value_empirical": 0.2348,
+      "null_jsd_mean": 0.0089,
+      "n_categories": 7,
+      "category_profiles": {
+        "STAGING": {
+          "B": 0.2376,
+          "C": 0.0567,
+          "H": 0.0957,
+          "S": 0.5709,
+          "T": 0.039
+        },
+        "MARKING": {
+          "B": 0.178,
+          "C": 0.0996,
+          "H": 0.2076,
+          "S": 0.4682,
+          "T": 0.0466
+        },
+        "THERMAL": {
+          "B": 0.1602,
+          "C": 0.0713,
+          "H": 0.1722,
+          "S": 0.5565,
+          "T": 0.0398
+        },
+        "TRANSITION": {
+          "B": 0.1508,
+          "C": 0.082,
+          "H": 0.1738,
+          "S": 0.5377,
+          "T": 0.0557
+        },
+        "OPERATION": {
+          "B": 0.0968,
+          "C": 0.129,
+          "H": 0.1774,
+          "S": 0.5806,
+          "T": 0.0161
+        },
+        "MONITORING": {
+          "B": 0.2613,
+          "C": 0.0804,
+          "H": 0.1759,
+          "S": 0.4472,
+          "T": 0.0352
+        },
+        "FLOW": {
+          "B": 0.1798,
+          "C": 0.0899,
+          "H": 0.1124,
+          "S": 0.573,
+          "T": 0.0449
+        }
+      }
+    },
+    "T5_within_line_mi": {
+      "status": "PASS",
+      "mi_dark_involved": 0.0597,
+      "mi_all_pairs": 0.0167,
+      "p_value_empirical": 0.001,
+      "ratio": 1.5,
+      "null_mi_mean": 0.0407,
+      "n_dark_pairs": 3860,
+      "n_all_pairs": 20449,
+      "mi_human_dark_cross": 0.0707,
+      "n_cross_pairs": 3500
+    },
+    "T6_q_middles": {
+      "status": "FAIL",
+      "auto_stats": {
+        "label": "auto_assigned",
+        "n_tokens": 2489,
+        "n_middles": 1144,
+        "section_profile": {
+          "B": 0.1784,
+          "C": 0.0791,
+          "H": 0.1687,
+          "S": 0.5315,
+          "T": 0.0422
+        },
+        "mean_line_pos": 0.5147,
+        "std_line_pos": 0.3419,
+        "suffix_rate": 0.861,
+        "mean_tokens_per_middle": 2.18,
+        "n_folios": 82
+      },
+      "q_stats": {
+        "label": "q_unglossable",
+        "n_tokens": 127,
+        "n_middles": 58,
+        "section_profile": {
+          "B": 0.4252,
+          "C": 0.0315,
+          "H": 0.0787,
+          "S": 0.4567,
+          "T": 0.0079
+        },
+        "mean_line_pos": 0.4853,
+        "std_line_pos": 0.3259,
+        "suffix_rate": 0.8268,
+        "mean_tokens_per_middle": 2.19,
+        "n_folios": 50
+      },
+      "other_stats": {
+        "n_tokens": 0,
+        "n_middles": 0,
+        "label": "other_unglossed"
+      },
+      "divergence": {
+        "section_jsd": 0.0475,
+        "line_pos_U": 150185.5,
+        "line_pos_p": 0.3419,
+        "q_mean_pos": 0.4853,
+        "auto_mean_pos": 0.5147
+      },
+      "ninth_category": {
+        "n_middles_with_data": 9,
+        "verdict": "INSUFFICIENT_DATA"
+      }
+    }
+  }
+}

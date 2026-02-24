@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1097 validated constraints | **Version:** 4.50 | **Date:** 2026-02-24
+**Total:** 1098 validated constraints | **Version:** 4.51 | **Date:** 2026-02-24
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3472,6 +3472,22 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 - Gloss adds nothing to REGIME prediction beyond section (T3: -1.9pp increment)
 - Ordinal trends suggestive but sub-Bonferroni (MONITORING declines rho=-0.202, TRANSITION increases rho=0.165)
 - -am termination test underpowered (n=23)
+
+### Dark Pipeline Characterization (C1254) -- Phase: DARK_PIPELINE_CHARACTERIZATION (Phase 448)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1254** | **Dark Pipeline Category Generalization** (8 categories partially generalize to 1,144 dark MIDDLEs via atom plurality vote; 3/6 PASS; coverage 88.6%→99.5%; line position 10.8x, within-line MI 1.5x; behavioral silhouette FAIL overall but LOCKED+SOLID tier p=0.001; section divergence FAIL; confidence stratification is key: trust LOCKED/SOLID, WEAK atoms add noise) | 2 | B, dark-pipeline, gloss, generalization, HT, atom, coverage | -> [C1254_dark_pipeline_category_generalization.md](C1254_dark_pipeline_category_generalization.md) |
+
+**Phase 448 findings (Dark Pipeline Characterization):**
+- 8-category system PARTIALLY_GENERALIZES to dark pipeline (3/6 tests pass)
+- Auto-assignment via atom plurality vote covers 95.2% of dark MIDDLEs (zero ties)
+- Total B token coverage: 88.6% → 99.5% (only 127 q-tokens remain uncovered)
+- Line position differentiation (10.8x) and within-line MI (1.5x) confirm structural reality
+- Behavioral silhouette fails overall but LOCKED+SOLID tier passes (p=0.001) — confidence stratification critical
+- Section divergence fails: dark categories don't concentrate by section (selection-level, not category-level modulation)
+- Atom-level operational encoding penetrates HT layer — more fundamental than 49-class grammar boundary
+- Q-MIDDLEs (58 types, 127 tokens): insufficient data for 9th category test, no structural divergence from auto-assigned
 
 ---
 

@@ -4,6 +4,24 @@
 
 ---
 
+## Version 4.51.37 (2026-02-24) - Phase 448: Dark Pipeline Characterization
+
+### Summary
+
+Phase 448: Tests whether the 8 validated gloss categories (C1250) generalize to the ~11.4% of B tokens not covered by human-glossed MIDDLEs. Auto-assignment via atom-level plurality vote covers 95.2% of 1,144 dark MIDDLEs (zero ties), raising total B token coverage from 88.6% to 99.5%. **Result: 3/6 PARTIALLY_GENERALIZES.** Passes: line-position differentiation (10.8x, p=0.001), within-line MI (1.5x, p=0.001), and coverage (95.2%). Fails: behavioral silhouette (p=0.155), section divergence (p=0.235), Q-MIDDLE divergence (p=0.342). Critical stratified finding: LOCKED+SOLID confidence tier passes behavioral silhouette (p=0.001) while WEAK atoms (65% of assignments) add noise. Atom-level operational encoding penetrates the HT layer — more fundamental than the 49-class grammar boundary.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/DARK_PIPELINE_CHARACTERIZATION/` -- 1 script + 1 results JSON |
+| **ADDED** | C1254 constraint file (1 new constraint, 1097->1098) |
+| **UPDATED** | `CLAUDE.md` -- 1097->1098 constraints, 447->448 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 1097->1098 constraints, v4.50->v4.51 |
+| **UPDATED** | `INDEX.md` -- 1097->1098 total, Phase 448 section added |
+
+---
+
 ## Version 4.50.36 (2026-02-24) - Phase 447: Paragraph Operational Classification
 
 ### Summary
