@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1091 constraints | 2026-02-24
+CONSTRAINT_REFERENCE v2.6 | 1094 constraints | 2026-02-24
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1095,3 +1095,6 @@ C1243	**sh/ch Cross-Lane Routing Split** (sh→QO(k) 32.0% vs ch→QO(k) 24.0% 1
 C1244	**aiin-ain Sequential Wind-Down** (aiin before ain 64.9% on co-occurring lines 98/151; adjacent aiin→ain 19 vs ain→aiin 11; loop-back 15.5% 2.05x baseline; 84.5% advance to different MIDDLE; sustained cycling to final pass)	2	B, suffix, aiin, ain, wind-down, iteration, ordering	-> C1244_aiin_ain_wind_down.md
 C1245	**Cross-Lane Selectivity Gradient** (QO MIDDLEs span 1.773-bit entropy range in CHSH partner selection; rare=selective common=promiscuous rho=0.665; 4 enriched pairs survive Bonferroni; e-depth matched at category OR=2.625 complementary within e-subset rho=-0.262; pair frequencies domain-specific refines C821)	2	B, cross-lane, selectivity, entropy, e-depth, pairing	-> C1245_cross_lane_selectivity_gradient.md
 C1246	**Mode-Differentiated Cross-Lane Pairing** (Mode A/B lines use different QO-CHSH pairings JSD z=4.60; Mode A MI=1.425 Mode B MI=0.978; A enriches energy+specific-measurement B enriches sustained+passive-monitoring; extends C1229/C1230 to cross-lane level)	2	B, cross-lane, mode, pairing, specification, execution	-> C1246_mode_differentiated_pairing.md
+C1247	**aii REGIME_3 Specificity** (aii "unseal" is 41x enriched in R3 vs R1; 14/20 R3 folios contain aii vs 1/32 R1; line context shows close→unseal→open transition; R3 = open-cycle batch apparatus)	2	B, REGIME, aii, apparatus, batch	-> C1247_aii_regime3_specificity.md
+C1248	**Apparatus-Marker Co-occurrence Architecture** (t+eol co-occur OR=16.27 p=0.0001; ke+eeol co-occur OR=inf p=0.0003; DISTILLATION vs PRECISION rho=-0.666; R1/R3=single-apparatus R2/R4=mixed-apparatus REGIMEs)	2	B, apparatus, co-occurrence, REGIME, profile	-> C1248_apparatus_marker_cooccurrence.md
+C1249	**Section-Conditioned Apparatus Diversity** (Herbal is most apparatus-diverse section; R2-SEALED 100% Herbal; R4-SEALED/SUSTAINED 100% Herbal; Section B overwhelmingly distillation 0.293 vs H 0.134; weakest signatures all Herbal)	2	B, section, apparatus, diversity, Herbal	-> C1249_section_apparatus_diversity.md

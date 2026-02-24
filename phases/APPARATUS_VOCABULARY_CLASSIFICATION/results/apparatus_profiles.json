@@ -1,0 +1,2139 @@
+{
+  "_metadata": {
+    "phase": "APPARATUS_VOCABULARY_CLASSIFICATION",
+    "phase_number": "445b",
+    "approach": "bottom-up profile scoring",
+    "n_folios": 82,
+    "profiles_defined": [
+      "DISTILLATION",
+      "SEALED_VESSEL",
+      "DIRECT_FIRE",
+      "PRECISION",
+      "SUSTAINED_HEAT"
+    ]
+  },
+  "regime_profile_means": {
+    "DIRECT_FIRE": {
+      "REGIME_1": 0.017077724298777856,
+      "REGIME_2": 0.016532055601098005,
+      "REGIME_3": 0.010603970549085611,
+      "REGIME_4": 0.009538958149298251
+    },
+    "DISTILLATION": {
+      "REGIME_1": 0.2655726703273883,
+      "REGIME_2": 0.13206452678476704,
+      "REGIME_3": 0.199713859721596,
+      "REGIME_4": 0.13566807459581537
+    },
+    "PRECISION": {
+      "REGIME_1": 0.018412121246385423,
+      "REGIME_2": 0.04434473229198803,
+      "REGIME_3": 0.032133550734615816,
+      "REGIME_4": 0.06064412890853518
+    },
+    "SEALED_VESSEL": {
+      "REGIME_1": 0.1039895100423886,
+      "REGIME_2": 0.12554612687020836,
+      "REGIME_3": 0.09231788005579047,
+      "REGIME_4": 0.10166979430199372
+    },
+    "SUSTAINED_HEAT": {
+      "REGIME_1": 0.08321991376606201,
+      "REGIME_2": 0.07641946224739478,
+      "REGIME_3": 0.07268681966874453,
+      "REGIME_4": 0.10174302325041103
+    }
+  },
+  "section_profile_means": {
+    "B": {
+      "DIRECT_FIRE": 0.0181,
+      "DISTILLATION": 0.2926,
+      "PRECISION": 0.0178,
+      "SEALED_VESSEL": 0.0785,
+      "SUSTAINED_HEAT": 0.0858
+    },
+    "C": {
+      "DIRECT_FIRE": 0.0058,
+      "DISTILLATION": 0.1829,
+      "PRECISION": 0.0233,
+      "SEALED_VESSEL": 0.0578,
+      "SUSTAINED_HEAT": 0.0724
+    },
+    "H": {
+      "DIRECT_FIRE": 0.0157,
+      "DISTILLATION": 0.1337,
+      "PRECISION": 0.0586,
+      "SEALED_VESSEL": 0.1145,
+      "SUSTAINED_HEAT": 0.0883
+    },
+    "S": {
+      "DIRECT_FIRE": 0.0111,
+      "DISTILLATION": 0.2224,
+      "PRECISION": 0.0165,
+      "SEALED_VESSEL": 0.127,
+      "SUSTAINED_HEAT": 0.0723
+    },
+    "T": {
+      "DIRECT_FIRE": 0.0015,
+      "DISTILLATION": 0.1753,
+      "PRECISION": 0.0393,
+      "SEALED_VESSEL": 0.0695,
+      "SUSTAINED_HEAT": 0.1118
+    }
+  },
+  "co_occurrence": {
+    "seal_unseal": {
+      "pair": "ok+aii",
+      "interpretation": "Sealed vessel cycle: seal then unseal",
+      "n_both": 10,
+      "n_a_only": 30,
+      "n_b_only": 11,
+      "n_neither": 31,
+      "fisher_odds": 0.939,
+      "fisher_p": 0.646102,
+      "regime_both": {
+        "REGIME_3": 6,
+        "REGIME_4": 2,
+        "REGIME_1": 1,
+        "REGIME_2": 1
+      }
+    },
+    "drive_collect": {
+      "pair": "t+od",
+      "interpretation": "Distillation cycle: drive off then collect",
+      "n_both": 45,
+      "n_a_only": 26,
+      "n_b_only": 7,
+      "n_neither": 4,
+      "fisher_odds": 0.989,
+      "fisher_p": 0.629303,
+      "regime_both": {
+        "REGIME_1": 14,
+        "REGIME_3": 17,
+        "REGIME_4": 7,
+        "REGIME_2": 7
+      }
+    },
+    "drive_sustain": {
+      "pair": "t+eol",
+      "interpretation": "Active distillation: drive off with sustained output",
+      "n_both": 61,
+      "n_a_only": 10,
+      "n_b_only": 3,
+      "n_neither": 8,
+      "fisher_odds": 16.267,
+      "fisher_p": 0.000137,
+      "regime_both": {
+        "REGIME_1": 30,
+        "REGIME_3": 17,
+        "REGIME_4": 10,
+        "REGIME_2": 4
+      }
+    },
+    "heat_overnight": {
+      "pair": "ke+eeol",
+      "interpretation": "Sustained heat then overnight standing",
+      "n_both": 23,
+      "n_a_only": 38,
+      "n_b_only": 0,
+      "n_neither": 21,
+      "fisher_odds": "inf",
+      "fisher_p": 0.000283,
+      "regime_both": {
+        "REGIME_1": 12,
+        "REGIME_3": 7,
+        "REGIME_4": 4
+      }
+    },
+    "direct_collect": {
+      "pair": "ck+od",
+      "interpretation": "Direct fire collection",
+      "n_both": 41,
+      "n_a_only": 26,
+      "n_b_only": 11,
+      "n_neither": 4,
+      "fisher_odds": 0.573,
+      "fisher_p": 0.882448,
+      "regime_both": {
+        "REGIME_1": 13,
+        "REGIME_3": 13,
+        "REGIME_4": 8,
+        "REGIME_2": 7
+      }
+    },
+    "seal_cool": {
+      "pair": "ok+ee",
+      "interpretation": "Seal then extended cool (circulatory)",
+      "n_both": 31,
+      "n_a_only": 9,
+      "n_b_only": 25,
+      "n_neither": 17,
+      "fisher_odds": 2.342,
+      "fisher_p": 0.06487,
+      "regime_both": {
+        "REGIME_1": 15,
+        "REGIME_3": 10,
+        "REGIME_4": 4,
+        "REGIME_2": 2
+      }
+    },
+    "heat_measure": {
+      "pair": "k+edy",
+      "interpretation": "Generic heat-measure cycle (baseline)",
+      "n_both": 81,
+      "n_a_only": 0,
+      "n_b_only": 1,
+      "n_neither": 0,
+      "fisher_odds": NaN,
+      "fisher_p": 1.0,
+      "regime_both": {
+        "REGIME_1": 32,
+        "REGIME_3": 20,
+        "REGIME_4": 14,
+        "REGIME_2": 15
+      }
+    },
+    "precision_sequence": {
+      "pair": "ek+s",
+      "interpretation": "Precision sequential steps",
+      "n_both": 48,
+      "n_a_only": 16,
+      "n_b_only": 13,
+      "n_neither": 5,
+      "fisher_odds": 1.154,
+      "fisher_p": 0.515115,
+      "regime_both": {
+        "REGIME_1": 19,
+        "REGIME_3": 11,
+        "REGIME_4": 10,
+        "REGIME_2": 8
+      }
+    }
+  },
+  "profile_correlations": {
+    "DIRECT_FIRE vs DISTILLATION": {
+      "rho": 0.0056,
+      "p": 0.959889
+    },
+    "DIRECT_FIRE vs PRECISION": {
+      "rho": 0.0232,
+      "p": 0.836408
+    },
+    "DIRECT_FIRE vs SEALED_VESSEL": {
+      "rho": 0.0081,
+      "p": 0.942724
+    },
+    "DIRECT_FIRE vs SUSTAINED_HEAT": {
+      "rho": -0.0323,
+      "p": 0.773166
+    },
+    "DISTILLATION vs PRECISION": {
+      "rho": -0.6658,
+      "p": 0.0
+    },
+    "DISTILLATION vs SEALED_VESSEL": {
+      "rho": -0.2536,
+      "p": 0.021486
+    },
+    "DISTILLATION vs SUSTAINED_HEAT": {
+      "rho": -0.044,
+      "p": 0.694805
+    },
+    "PRECISION vs SEALED_VESSEL": {
+      "rho": -0.11,
+      "p": 0.325161
+    },
+    "PRECISION vs SUSTAINED_HEAT": {
+      "rho": 0.2102,
+      "p": 0.058034
+    },
+    "SEALED_VESSEL vs SUSTAINED_HEAT": {
+      "rho": -0.0709,
+      "p": 0.526969
+    }
+  },
+  "middle_folio_presence": {
+    "t": {
+      "total_count": 576,
+      "folios_present": 71,
+      "pct_folios": 86.6,
+      "by_regime": {
+        "REGIME_1": "32/32",
+        "REGIME_2": "10/15",
+        "REGIME_3": "18/20",
+        "REGIME_4": "11/15"
+      }
+    },
+    "od": {
+      "total_count": 177,
+      "folios_present": 52,
+      "pct_folios": 63.4,
+      "by_regime": {
+        "REGIME_1": "14/32",
+        "REGIME_2": "11/15",
+        "REGIME_3": "18/20",
+        "REGIME_4": "9/15"
+      }
+    },
+    "te": {
+      "total_count": 87,
+      "folios_present": 41,
+      "pct_folios": 50.0,
+      "by_regime": {
+        "REGIME_1": "26/32",
+        "REGIME_2": "2/15",
+        "REGIME_3": "11/20",
+        "REGIME_4": "2/15"
+      }
+    },
+    "eol": {
+      "total_count": 294,
+      "folios_present": 64,
+      "pct_folios": 78.0,
+      "by_regime": {
+        "REGIME_1": "30/32",
+        "REGIME_2": "4/15",
+        "REGIME_3": "19/20",
+        "REGIME_4": "11/15"
+      }
+    },
+    "ok": {
+      "total_count": 70,
+      "folios_present": 40,
+      "pct_folios": 48.8,
+      "by_regime": {
+        "REGIME_1": "18/32",
+        "REGIME_2": "5/15",
+        "REGIME_3": "10/20",
+        "REGIME_4": "7/15"
+      }
+    },
+    "aii": {
+      "total_count": 32,
+      "folios_present": 21,
+      "pct_folios": 25.6,
+      "by_regime": {
+        "REGIME_1": "1/32",
+        "REGIME_2": "3/15",
+        "REGIME_3": "14/20",
+        "REGIME_4": "3/15"
+      }
+    },
+    "ck": {
+      "total_count": 197,
+      "folios_present": 67,
+      "pct_folios": 81.7,
+      "by_regime": {
+        "REGIME_1": "30/32",
+        "REGIME_2": "10/15",
+        "REGIME_3": "15/20",
+        "REGIME_4": "12/15"
+      }
+    },
+    "kc": {
+      "total_count": 33,
+      "folios_present": 26,
+      "pct_folios": 31.7,
+      "by_regime": {
+        "REGIME_1": "13/32",
+        "REGIME_2": "5/15",
+        "REGIME_3": "8/20",
+        "REGIME_4": "0/15"
+      }
+    },
+    "ek": {
+      "total_count": 169,
+      "folios_present": 64,
+      "pct_folios": 78.0,
+      "by_regime": {
+        "REGIME_1": "26/32",
+        "REGIME_2": "11/15",
+        "REGIME_3": "14/20",
+        "REGIME_4": "13/15"
+      }
+    },
+    "s": {
+      "total_count": 144,
+      "folios_present": 61,
+      "pct_folios": 74.4,
+      "by_regime": {
+        "REGIME_1": "22/32",
+        "REGIME_2": "11/15",
+        "REGIME_3": "16/20",
+        "REGIME_4": "12/15"
+      }
+    },
+    "ke": {
+      "total_count": 421,
+      "folios_present": 61,
+      "pct_folios": 74.4,
+      "by_regime": {
+        "REGIME_1": "32/32",
+        "REGIME_2": "5/15",
+        "REGIME_3": "15/20",
+        "REGIME_4": "9/15"
+      }
+    },
+    "eeol": {
+      "total_count": 47,
+      "folios_present": 23,
+      "pct_folios": 28.0,
+      "by_regime": {
+        "REGIME_1": "12/32",
+        "REGIME_2": "0/15",
+        "REGIME_3": "7/20",
+        "REGIME_4": "4/15"
+      }
+    },
+    "ee": {
+      "total_count": 151,
+      "folios_present": 56,
+      "pct_folios": 68.3,
+      "by_regime": {
+        "REGIME_1": "25/32",
+        "REGIME_2": "6/15",
+        "REGIME_3": "17/20",
+        "REGIME_4": "8/15"
+      }
+    },
+    "eey": {
+      "total_count": 644,
+      "folios_present": 73,
+      "pct_folios": 89.0,
+      "by_regime": {
+        "REGIME_1": "32/32",
+        "REGIME_2": "9/15",
+        "REGIME_3": "18/20",
+        "REGIME_4": "14/15"
+      }
+    }
+  },
+  "folio_scores": {
+    "f103r": {
+      "DIRECT_FIRE": 0.024904,
+      "DISTILLATION": 0.272031,
+      "PRECISION": 0.021073,
+      "SEALED_VESSEL": 0.162835,
+      "SUSTAINED_HEAT": 0.06705
+    },
+    "f103v": {
+      "DIRECT_FIRE": 0.026726,
+      "DISTILLATION": 0.211581,
+      "PRECISION": 0.002227,
+      "SEALED_VESSEL": 0.138085,
+      "SUSTAINED_HEAT": 0.060134
+    },
+    "f104r": {
+      "DIRECT_FIRE": 0.002283,
+      "DISTILLATION": 0.267123,
+      "PRECISION": 0.013699,
+      "SEALED_VESSEL": 0.093607,
+      "SUSTAINED_HEAT": 0.073059
+    },
+    "f104v": {
+      "DIRECT_FIRE": 0.017467,
+      "DISTILLATION": 0.320961,
+      "PRECISION": 0.026201,
+      "SEALED_VESSEL": 0.09607,
+      "SUSTAINED_HEAT": 0.063319
+    },
+    "f105r": {
+      "DIRECT_FIRE": 0.008108,
+      "DISTILLATION": 0.167568,
+      "PRECISION": 0.018919,
+      "SEALED_VESSEL": 0.121622,
+      "SUSTAINED_HEAT": 0.105405
+    },
+    "f105v": {
+      "DIRECT_FIRE": 0.005128,
+      "DISTILLATION": 0.120513,
+      "PRECISION": 0.017949,
+      "SEALED_VESSEL": 0.125641,
+      "SUSTAINED_HEAT": 0.110256
+    },
+    "f106r": {
+      "DIRECT_FIRE": 0.011876,
+      "DISTILLATION": 0.223278,
+      "PRECISION": 0.007126,
+      "SEALED_VESSEL": 0.106888,
+      "SUSTAINED_HEAT": 0.054632
+    },
+    "f106v": {
+      "DIRECT_FIRE": 0.008909,
+      "DISTILLATION": 0.211581,
+      "PRECISION": 0.024499,
+      "SEALED_VESSEL": 0.097996,
+      "SUSTAINED_HEAT": 0.037862
+    },
+    "f107r": {
+      "DIRECT_FIRE": 0.010246,
+      "DISTILLATION": 0.186475,
+      "PRECISION": 0.020492,
+      "SEALED_VESSEL": 0.141393,
+      "SUSTAINED_HEAT": 0.055328
+    },
+    "f107v": {
+      "DIRECT_FIRE": 0.006593,
+      "DISTILLATION": 0.237363,
+      "PRECISION": 0.006593,
+      "SEALED_VESSEL": 0.140659,
+      "SUSTAINED_HEAT": 0.050549
+    },
+    "f108r": {
+      "DIRECT_FIRE": 0.00611,
+      "DISTILLATION": 0.242363,
+      "PRECISION": 0.00611,
+      "SEALED_VESSEL": 0.197556,
+      "SUSTAINED_HEAT": 0.09165
+    },
+    "f108v": {
+      "DIRECT_FIRE": 0.012281,
+      "DISTILLATION": 0.264912,
+      "PRECISION": 0.010526,
+      "SEALED_VESSEL": 0.177193,
+      "SUSTAINED_HEAT": 0.110526
+    },
+    "f111r": {
+      "DIRECT_FIRE": 0.016287,
+      "DISTILLATION": 0.184039,
+      "PRECISION": 0.013029,
+      "SEALED_VESSEL": 0.135179,
+      "SUSTAINED_HEAT": 0.102606
+    },
+    "f111v": {
+      "DIRECT_FIRE": 0.01426,
+      "DISTILLATION": 0.208556,
+      "PRECISION": 0.012478,
+      "SEALED_VESSEL": 0.135472,
+      "SUSTAINED_HEAT": 0.039216
+    },
+    "f112r": {
+      "DIRECT_FIRE": 0.015228,
+      "DISTILLATION": 0.167513,
+      "PRECISION": 0.01269,
+      "SEALED_VESSEL": 0.19797,
+      "SUSTAINED_HEAT": 0.060914
+    },
+    "f112v": {
+      "DIRECT_FIRE": 0.007229,
+      "DISTILLATION": 0.221687,
+      "PRECISION": 0.009639,
+      "SEALED_VESSEL": 0.156627,
+      "SUSTAINED_HEAT": 0.098795
+    },
+    "f113r": {
+      "DIRECT_FIRE": 0.007722,
+      "DISTILLATION": 0.169884,
+      "PRECISION": 0.044402,
+      "SEALED_VESSEL": 0.1139,
+      "SUSTAINED_HEAT": 0.065637
+    },
+    "f113v": {
+      "DIRECT_FIRE": 0.002088,
+      "DISTILLATION": 0.181628,
+      "PRECISION": 0.018789,
+      "SEALED_VESSEL": 0.156576,
+      "SUSTAINED_HEAT": 0.060543
+    },
+    "f114r": {
+      "DIRECT_FIRE": 0.0,
+      "DISTILLATION": 0.201342,
+      "PRECISION": 0.022371,
+      "SEALED_VESSEL": 0.085011,
+      "SUSTAINED_HEAT": 0.100671
+    },
+    "f114v": {
+      "DIRECT_FIRE": 0.008287,
+      "DISTILLATION": 0.320442,
+      "PRECISION": 0.01105,
+      "SEALED_VESSEL": 0.08011,
+      "SUSTAINED_HEAT": 0.066298
+    },
+    "f115r": {
+      "DIRECT_FIRE": 0.009009,
+      "DISTILLATION": 0.308559,
+      "PRECISION": 0.022523,
+      "SEALED_VESSEL": 0.060811,
+      "SUSTAINED_HEAT": 0.072072
+    },
+    "f115v": {
+      "DIRECT_FIRE": 0.007519,
+      "DISTILLATION": 0.243108,
+      "PRECISION": 0.017544,
+      "SEALED_VESSEL": 0.082707,
+      "SUSTAINED_HEAT": 0.067669
+    },
+    "f116r": {
+      "DIRECT_FIRE": 0.026071,
+      "DISTILLATION": 0.182495,
+      "PRECISION": 0.020484,
+      "SEALED_VESSEL": 0.117318,
+      "SUSTAINED_HEAT": 0.048417
+    },
+    "f26r": {
+      "DIRECT_FIRE": 0.011765,
+      "DISTILLATION": 0.141176,
+      "PRECISION": 0.117647,
+      "SEALED_VESSEL": 0.047059,
+      "SUSTAINED_HEAT": 0.082353
+    },
+    "f26v": {
+      "DIRECT_FIRE": 0.011236,
+      "DISTILLATION": 0.168539,
+      "PRECISION": 0.044944,
+      "SEALED_VESSEL": 0.134831,
+      "SUSTAINED_HEAT": 0.134831
+    },
+    "f31r": {
+      "DIRECT_FIRE": 0.01,
+      "DISTILLATION": 0.27,
+      "PRECISION": 0.06,
+      "SEALED_VESSEL": 0.14,
+      "SUSTAINED_HEAT": 0.15
+    },
+    "f31v": {
+      "DIRECT_FIRE": 0.0,
+      "DISTILLATION": 0.074074,
+      "PRECISION": 0.064815,
+      "SEALED_VESSEL": 0.240741,
+      "SUSTAINED_HEAT": 0.101852
+    },
+    "f33r": {
+      "DIRECT_FIRE": 0.013889,
+      "DISTILLATION": 0.097222,
+      "PRECISION": 0.083333,
+      "SEALED_VESSEL": 0.111111,
+      "SUSTAINED_HEAT": 0.055556
+    },
+    "f33v": {
+      "DIRECT_FIRE": 0.027523,
+      "DISTILLATION": 0.036697,
+      "PRECISION": 0.082569,
+      "SEALED_VESSEL": 0.137615,
+      "SUSTAINED_HEAT": 0.119266
+    },
+    "f34r": {
+      "DIRECT_FIRE": 0.027778,
+      "DISTILLATION": 0.152778,
+      "PRECISION": 0.104167,
+      "SEALED_VESSEL": 0.0625,
+      "SUSTAINED_HEAT": 0.076389
+    },
+    "f34v": {
+      "DIRECT_FIRE": 0.026087,
+      "DISTILLATION": 0.095652,
+      "PRECISION": 0.06087,
+      "SEALED_VESSEL": 0.086957,
+      "SUSTAINED_HEAT": 0.026087
+    },
+    "f39r": {
+      "DIRECT_FIRE": 0.019481,
+      "DISTILLATION": 0.123377,
+      "PRECISION": 0.032468,
+      "SEALED_VESSEL": 0.058442,
+      "SUSTAINED_HEAT": 0.103896
+    },
+    "f39v": {
+      "DIRECT_FIRE": 0.014085,
+      "DISTILLATION": 0.06338,
+      "PRECISION": 0.049296,
+      "SEALED_VESSEL": 0.112676,
+      "SUSTAINED_HEAT": 0.077465
+    },
+    "f40r": {
+      "DIRECT_FIRE": 0.0,
+      "DISTILLATION": 0.092784,
+      "PRECISION": 0.041237,
+      "SEALED_VESSEL": 0.268041,
+      "SUSTAINED_HEAT": 0.082474
+    },
+    "f40v": {
+      "DIRECT_FIRE": 0.037736,
+      "DISTILLATION": 0.160377,
+      "PRECISION": 0.028302,
+      "SEALED_VESSEL": 0.169811,
+      "SUSTAINED_HEAT": 0.075472
+    },
+    "f41r": {
+      "DIRECT_FIRE": 0.010309,
+      "DISTILLATION": 0.195876,
+      "PRECISION": 0.113402,
+      "SEALED_VESSEL": 0.061856,
+      "SUSTAINED_HEAT": 0.103093
+    },
+    "f41v": {
+      "DIRECT_FIRE": 0.0,
+      "DISTILLATION": 0.176471,
+      "PRECISION": 0.044118,
+      "SEALED_VESSEL": 0.205882,
+      "SUSTAINED_HEAT": 0.147059
+    },
+    "f43r": {
+      "DIRECT_FIRE": 0.006667,
+      "DISTILLATION": 0.173333,
+      "PRECISION": 0.046667,
+      "SEALED_VESSEL": 0.046667,
+      "SUSTAINED_HEAT": 0.093333
+    },
+    "f43v": {
+      "DIRECT_FIRE": 0.006536,
+      "DISTILLATION": 0.104575,
+      "PRECISION": 0.03268,
+      "SEALED_VESSEL": 0.091503,
+      "SUSTAINED_HEAT": 0.065359
+    },
+    "f46r": {
+      "DIRECT_FIRE": 0.031847,
+      "DISTILLATION": 0.127389,
+      "PRECISION": 0.095541,
+      "SEALED_VESSEL": 0.063694,
+      "SUSTAINED_HEAT": 0.10828
+    },
+    "f46v": {
+      "DIRECT_FIRE": 0.009009,
+      "DISTILLATION": 0.108108,
+      "PRECISION": 0.09009,
+      "SEALED_VESSEL": 0.081081,
+      "SUSTAINED_HEAT": 0.126126
+    },
+    "f48r": {
+      "DIRECT_FIRE": 0.022472,
+      "DISTILLATION": 0.179775,
+      "PRECISION": 0.044944,
+      "SEALED_VESSEL": 0.101124,
+      "SUSTAINED_HEAT": 0.067416
+    },
+    "f48v": {
+      "DIRECT_FIRE": 0.007937,
+      "DISTILLATION": 0.047619,
+      "PRECISION": 0.047619,
+      "SEALED_VESSEL": 0.103175,
+      "SUSTAINED_HEAT": 0.047619
+    },
+    "f50r": {
+      "DIRECT_FIRE": 0.022472,
+      "DISTILLATION": 0.179775,
+      "PRECISION": 0.022472,
+      "SEALED_VESSEL": 0.11236,
+      "SUSTAINED_HEAT": 0.078652
+    },
+    "f50v": {
+      "DIRECT_FIRE": 0.030612,
+      "DISTILLATION": 0.142857,
+      "PRECISION": 0.030612,
+      "SEALED_VESSEL": 0.183673,
+      "SUSTAINED_HEAT": 0.061224
+    },
+    "f55r": {
+      "DIRECT_FIRE": 0.024194,
+      "DISTILLATION": 0.120968,
+      "PRECISION": 0.040323,
+      "SEALED_VESSEL": 0.129032,
+      "SUSTAINED_HEAT": 0.08871
+    },
+    "f55v": {
+      "DIRECT_FIRE": 0.019231,
+      "DISTILLATION": 0.076923,
+      "PRECISION": 0.067308,
+      "SEALED_VESSEL": 0.105769,
+      "SUSTAINED_HEAT": 0.086538
+    },
+    "f57r": {
+      "DIRECT_FIRE": 0.022989,
+      "DISTILLATION": 0.103448,
+      "PRECISION": 0.068966,
+      "SEALED_VESSEL": 0.08046,
+      "SUSTAINED_HEAT": 0.126437
+    },
+    "f66r": {
+      "DIRECT_FIRE": 0.00304,
+      "DISTILLATION": 0.18541,
+      "PRECISION": 0.045593,
+      "SEALED_VESSEL": 0.06383,
+      "SUSTAINED_HEAT": 0.121581
+    },
+    "f66v": {
+      "DIRECT_FIRE": 0.017699,
+      "DISTILLATION": 0.097345,
+      "PRECISION": 0.097345,
+      "SEALED_VESSEL": 0.097345,
+      "SUSTAINED_HEAT": 0.123894
+    },
+    "f75r": {
+      "DIRECT_FIRE": 0.019417,
+      "DISTILLATION": 0.291262,
+      "PRECISION": 0.019417,
+      "SEALED_VESSEL": 0.046117,
+      "SUSTAINED_HEAT": 0.104369
+    },
+    "f75v": {
+      "DIRECT_FIRE": 0.020649,
+      "DISTILLATION": 0.300885,
+      "PRECISION": 0.017699,
+      "SEALED_VESSEL": 0.056047,
+      "SUSTAINED_HEAT": 0.076696
+    },
+    "f76r": {
+      "DIRECT_FIRE": 0.032967,
+      "DISTILLATION": 0.221612,
+      "PRECISION": 0.010989,
+      "SEALED_VESSEL": 0.09707,
+      "SUSTAINED_HEAT": 0.069597
+    },
+    "f76v": {
+      "DIRECT_FIRE": 0.0125,
+      "DISTILLATION": 0.225,
+      "PRECISION": 0.0175,
+      "SEALED_VESSEL": 0.0875,
+      "SUSTAINED_HEAT": 0.0875
+    },
+    "f77r": {
+      "DIRECT_FIRE": 0.030769,
+      "DISTILLATION": 0.449231,
+      "PRECISION": 0.003077,
+      "SEALED_VESSEL": 0.064615,
+      "SUSTAINED_HEAT": 0.144615
+    },
+    "f77v": {
+      "DIRECT_FIRE": 0.012085,
+      "DISTILLATION": 0.350453,
+      "PRECISION": 0.018127,
+      "SEALED_VESSEL": 0.042296,
+      "SUSTAINED_HEAT": 0.123867
+    },
+    "f78r": {
+      "DIRECT_FIRE": 0.013605,
+      "DISTILLATION": 0.22449,
+      "PRECISION": 0.037415,
+      "SEALED_VESSEL": 0.07483,
+      "SUSTAINED_HEAT": 0.095238
+    },
+    "f78v": {
+      "DIRECT_FIRE": 0.013699,
+      "DISTILLATION": 0.226027,
+      "PRECISION": 0.013699,
+      "SEALED_VESSEL": 0.092466,
+      "SUSTAINED_HEAT": 0.058219
+    },
+    "f79r": {
+      "DIRECT_FIRE": 0.023136,
+      "DISTILLATION": 0.269923,
+      "PRECISION": 0.017995,
+      "SEALED_VESSEL": 0.105398,
+      "SUSTAINED_HEAT": 0.043702
+    },
+    "f79v": {
+      "DIRECT_FIRE": 0.014124,
+      "DISTILLATION": 0.293785,
+      "PRECISION": 0.019774,
+      "SEALED_VESSEL": 0.124294,
+      "SUSTAINED_HEAT": 0.087571
+    },
+    "f80r": {
+      "DIRECT_FIRE": 0.013605,
+      "DISTILLATION": 0.326531,
+      "PRECISION": 0.027211,
+      "SEALED_VESSEL": 0.081633,
+      "SUSTAINED_HEAT": 0.054422
+    },
+    "f80v": {
+      "DIRECT_FIRE": 0.02381,
+      "DISTILLATION": 0.335979,
+      "PRECISION": 0.005291,
+      "SEALED_VESSEL": 0.055556,
+      "SUSTAINED_HEAT": 0.044974
+    },
+    "f81r": {
+      "DIRECT_FIRE": 0.004831,
+      "DISTILLATION": 0.251208,
+      "PRECISION": 0.0,
+      "SEALED_VESSEL": 0.082126,
+      "SUSTAINED_HEAT": 0.038647
+    },
+    "f81v": {
+      "DIRECT_FIRE": 0.01938,
+      "DISTILLATION": 0.189922,
+      "PRECISION": 0.031008,
+      "SEALED_VESSEL": 0.108527,
+      "SUSTAINED_HEAT": 0.093023
+    },
+    "f82r": {
+      "DIRECT_FIRE": 0.018182,
+      "DISTILLATION": 0.392727,
+      "PRECISION": 0.014545,
+      "SEALED_VESSEL": 0.094545,
+      "SUSTAINED_HEAT": 0.112727
+    },
+    "f82v": {
+      "DIRECT_FIRE": 0.010067,
+      "DISTILLATION": 0.40604,
+      "PRECISION": 0.013423,
+      "SEALED_VESSEL": 0.053691,
+      "SUSTAINED_HEAT": 0.07047
+    },
+    "f83r": {
+      "DIRECT_FIRE": 0.017647,
+      "DISTILLATION": 0.267647,
+      "PRECISION": 0.029412,
+      "SEALED_VESSEL": 0.029412,
+      "SUSTAINED_HEAT": 0.094118
+    },
+    "f83v": {
+      "DIRECT_FIRE": 0.007605,
+      "DISTILLATION": 0.391635,
+      "PRECISION": 0.011407,
+      "SEALED_VESSEL": 0.072243,
+      "SUSTAINED_HEAT": 0.117871
+    },
+    "f84r": {
+      "DIRECT_FIRE": 0.036011,
+      "DISTILLATION": 0.240997,
+      "PRECISION": 0.022161,
+      "SEALED_VESSEL": 0.060942,
+      "SUSTAINED_HEAT": 0.102493
+    },
+    "f84v": {
+      "DIRECT_FIRE": 0.017291,
+      "DISTILLATION": 0.195965,
+      "PRECISION": 0.025937,
+      "SEALED_VESSEL": 0.14121,
+      "SUSTAINED_HEAT": 0.095101
+    },
+    "f85r1": {
+      "DIRECT_FIRE": 0.0,
+      "DISTILLATION": 0.165165,
+      "PRECISION": 0.033033,
+      "SEALED_VESSEL": 0.075075,
+      "SUSTAINED_HEAT": 0.102102
+    },
+    "f85r2": {
+      "DIRECT_FIRE": 0.006452,
+      "DISTILLATION": 0.2,
+      "PRECISION": 0.025806,
+      "SEALED_VESSEL": 0.058065,
+      "SUSTAINED_HEAT": 0.064516
+    },
+    "f86v3": {
+      "DIRECT_FIRE": 0.0,
+      "DISTILLATION": 0.216606,
+      "PRECISION": 0.01444,
+      "SEALED_VESSEL": 0.072202,
+      "SUSTAINED_HEAT": 0.075812
+    },
+    "f86v4": {
+      "DIRECT_FIRE": 0.005319,
+      "DISTILLATION": 0.111702,
+      "PRECISION": 0.031915,
+      "SEALED_VESSEL": 0.047872,
+      "SUSTAINED_HEAT": 0.079787
+    },
+    "f86v5": {
+      "DIRECT_FIRE": 0.013123,
+      "DISTILLATION": 0.152231,
+      "PRECISION": 0.023622,
+      "SEALED_VESSEL": 0.052493,
+      "SUSTAINED_HEAT": 0.049869
+    },
+    "f86v6": {
+      "DIRECT_FIRE": 0.004175,
+      "DISTILLATION": 0.23382,
+      "PRECISION": 0.020877,
+      "SEALED_VESSEL": 0.058455,
+      "SUSTAINED_HEAT": 0.091858
+    },
+    "f94r": {
+      "DIRECT_FIRE": 0.0,
+      "DISTILLATION": 0.146341,
+      "PRECISION": 0.04878,
+      "SEALED_VESSEL": 0.085366,
+      "SUSTAINED_HEAT": 0.085366
+    },
+    "f94v": {
+      "DIRECT_FIRE": 0.009901,
+      "DISTILLATION": 0.158416,
+      "PRECISION": 0.029703,
+      "SEALED_VESSEL": 0.128713,
+      "SUSTAINED_HEAT": 0.069307
+    },
+    "f95r1": {
+      "DIRECT_FIRE": 0.019417,
+      "DISTILLATION": 0.184466,
+      "PRECISION": 0.058252,
+      "SEALED_VESSEL": 0.058252,
+      "SUSTAINED_HEAT": 0.067961
+    },
+    "f95r2": {
+      "DIRECT_FIRE": 0.025316,
+      "DISTILLATION": 0.164557,
+      "PRECISION": 0.012658,
+      "SEALED_VESSEL": 0.139241,
+      "SUSTAINED_HEAT": 0.088608
+    },
+    "f95v1": {
+      "DIRECT_FIRE": 0.0,
+      "DISTILLATION": 0.188034,
+      "PRECISION": 0.051282,
+      "SEALED_VESSEL": 0.076923,
+      "SUSTAINED_HEAT": 0.042735
+    },
+    "f95v2": {
+      "DIRECT_FIRE": 0.015625,
+      "DISTILLATION": 0.125,
+      "PRECISION": 0.0625,
+      "SEALED_VESSEL": 0.140625,
+      "SUSTAINED_HEAT": 0.0625
+    }
+  },
+  "folio_dominant": {
+    "f103r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.2720306513409962,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.16283524904214558
+    },
+    "f103v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.21158129175946547,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.13808463251670378
+    },
+    "f104r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.2671232876712329,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.09360730593607305
+    },
+    "f104v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.32096069868995636,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.09606986899563319
+    },
+    "f105r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.16756756756756758,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.12162162162162163
+    },
+    "f105v": {
+      "dominant": "SEALED_VESSEL",
+      "dominant_score": 0.12564102564102564,
+      "second": "DISTILLATION",
+      "second_score": 0.12051282051282051
+    },
+    "f106r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.22327790973871733,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.10688836104513064
+    },
+    "f106v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.21158129175946547,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.09799554565701558
+    },
+    "f107r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.1864754098360656,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.1413934426229508
+    },
+    "f107v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.23736263736263735,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.14065934065934066
+    },
+    "f108r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.24236252545824846,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.1975560081466395
+    },
+    "f108v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.2649122807017544,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.17719298245614035
+    },
+    "f111r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.18403908794788273,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.13517915309446255
+    },
+    "f111v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.20855614973262032,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.1354723707664884
+    },
+    "f112r": {
+      "dominant": "SEALED_VESSEL",
+      "dominant_score": 0.19796954314720813,
+      "second": "DISTILLATION",
+      "second_score": 0.16751269035532995
+    },
+    "f112v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.2216867469879518,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.1566265060240964
+    },
+    "f113r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.16988416988416988,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.1138996138996139
+    },
+    "f113v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.18162839248434237,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.15657620041753653
+    },
+    "f114r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.20134228187919462,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.10067114093959731
+    },
+    "f114v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.32044198895027626,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.08011049723756906
+    },
+    "f115r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.30855855855855857,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.07207207207207207
+    },
+    "f115v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.24310776942355888,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.08270676691729323
+    },
+    "f116r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.1824953445065177,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.11731843575418995
+    },
+    "f26r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.1411764705882353,
+      "second": "PRECISION",
+      "second_score": 0.11764705882352941
+    },
+    "f26v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.16853932584269662,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.1348314606741573
+    },
+    "f31r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.27,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.15
+    },
+    "f31v": {
+      "dominant": "SEALED_VESSEL",
+      "dominant_score": 0.24074074074074073,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.10185185185185185
+    },
+    "f33r": {
+      "dominant": "SEALED_VESSEL",
+      "dominant_score": 0.1111111111111111,
+      "second": "DISTILLATION",
+      "second_score": 0.09722222222222222
+    },
+    "f33v": {
+      "dominant": "SEALED_VESSEL",
+      "dominant_score": 0.13761467889908258,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.11926605504587157
+    },
+    "f34r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.1527777777777778,
+      "second": "PRECISION",
+      "second_score": 0.10416666666666667
+    },
+    "f34v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.09565217391304348,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.08695652173913043
+    },
+    "f39r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.12337662337662338,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.1038961038961039
+    },
+    "f39v": {
+      "dominant": "SEALED_VESSEL",
+      "dominant_score": 0.11267605633802817,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.07746478873239436
+    },
+    "f40r": {
+      "dominant": "SEALED_VESSEL",
+      "dominant_score": 0.26804123711340205,
+      "second": "DISTILLATION",
+      "second_score": 0.09278350515463918
+    },
+    "f40v": {
+      "dominant": "SEALED_VESSEL",
+      "dominant_score": 0.16981132075471697,
+      "second": "DISTILLATION",
+      "second_score": 0.16037735849056603
+    },
+    "f41r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.1958762886597938,
+      "second": "PRECISION",
+      "second_score": 0.1134020618556701
+    },
+    "f41v": {
+      "dominant": "SEALED_VESSEL",
+      "dominant_score": 0.20588235294117646,
+      "second": "DISTILLATION",
+      "second_score": 0.17647058823529413
+    },
+    "f43r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.17333333333333334,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.09333333333333334
+    },
+    "f43v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.10457516339869281,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.0915032679738562
+    },
+    "f46r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.12738853503184713,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.10828025477707007
+    },
+    "f46v": {
+      "dominant": "SUSTAINED_HEAT",
+      "dominant_score": 0.12612612612612611,
+      "second": "DISTILLATION",
+      "second_score": 0.10810810810810811
+    },
+    "f48r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.1797752808988764,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.10112359550561797
+    },
+    "f48v": {
+      "dominant": "SEALED_VESSEL",
+      "dominant_score": 0.10317460317460317,
+      "second": "DISTILLATION",
+      "second_score": 0.047619047619047616
+    },
+    "f50r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.1797752808988764,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.11235955056179775
+    },
+    "f50v": {
+      "dominant": "SEALED_VESSEL",
+      "dominant_score": 0.1836734693877551,
+      "second": "DISTILLATION",
+      "second_score": 0.14285714285714285
+    },
+    "f55r": {
+      "dominant": "SEALED_VESSEL",
+      "dominant_score": 0.12903225806451613,
+      "second": "DISTILLATION",
+      "second_score": 0.12096774193548387
+    },
+    "f55v": {
+      "dominant": "SEALED_VESSEL",
+      "dominant_score": 0.10576923076923077,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.08653846153846154
+    },
+    "f57r": {
+      "dominant": "SUSTAINED_HEAT",
+      "dominant_score": 0.12643678160919541,
+      "second": "DISTILLATION",
+      "second_score": 0.10344827586206896
+    },
+    "f66r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.18541033434650456,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.12158054711246201
+    },
+    "f66v": {
+      "dominant": "SUSTAINED_HEAT",
+      "dominant_score": 0.12389380530973451,
+      "second": "DISTILLATION",
+      "second_score": 0.09734513274336283
+    },
+    "f75r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.2912621359223301,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.10436893203883495
+    },
+    "f75v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.3008849557522124,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.07669616519174041
+    },
+    "f76r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.2216117216117216,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.09706959706959707
+    },
+    "f76v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.225,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.0875
+    },
+    "f77r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.4492307692307692,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.14461538461538462
+    },
+    "f77v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.3504531722054381,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.12386706948640483
+    },
+    "f78r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.22448979591836735,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.09523809523809523
+    },
+    "f78v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.22602739726027396,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.09246575342465753
+    },
+    "f79r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.2699228791773779,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.10539845758354756
+    },
+    "f79v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.2937853107344633,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.12429378531073447
+    },
+    "f80r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.32653061224489793,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.08163265306122448
+    },
+    "f80v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.335978835978836,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.05555555555555555
+    },
+    "f81r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.25120772946859904,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.0821256038647343
+    },
+    "f81v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.18992248062015504,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.10852713178294573
+    },
+    "f82r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.3927272727272727,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.11272727272727273
+    },
+    "f82v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.40604026845637586,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.07046979865771812
+    },
+    "f83r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.2676470588235294,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.09411764705882353
+    },
+    "f83v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.3916349809885932,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.11787072243346007
+    },
+    "f84r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.2409972299168975,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.10249307479224377
+    },
+    "f84v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.19596541786743515,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.14121037463976946
+    },
+    "f85r1": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.16516516516516516,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.1021021021021021
+    },
+    "f85r2": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.2,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.06451612903225806
+    },
+    "f86v3": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.21660649819494585,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.07581227436823104
+    },
+    "f86v4": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.11170212765957446,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.0797872340425532
+    },
+    "f86v5": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.15223097112860892,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.05249343832020997
+    },
+    "f86v6": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.23382045929018788,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.0918580375782881
+    },
+    "f94r": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.14634146341463414,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.08536585365853659
+    },
+    "f94v": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.15841584158415842,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.12871287128712872
+    },
+    "f95r1": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.18446601941747573,
+      "second": "SUSTAINED_HEAT",
+      "second_score": 0.06796116504854369
+    },
+    "f95r2": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.16455696202531644,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.13924050632911392
+    },
+    "f95v1": {
+      "dominant": "DISTILLATION",
+      "dominant_score": 0.18803418803418803,
+      "second": "SEALED_VESSEL",
+      "second_score": 0.07692307692307693
+    },
+    "f95v2": {
+      "dominant": "SEALED_VESSEL",
+      "dominant_score": 0.140625,
+      "second": "DISTILLATION",
+      "second_score": 0.125
+    }
+  },
+  "folio_clarity_ranking": [
+    {
+      "folio": "f82v",
+      "dominant": "DISTILLATION",
+      "score": 0.406,
+      "gap": 0.3356,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f77r",
+      "dominant": "DISTILLATION",
+      "score": 0.4492,
+      "gap": 0.3046,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f80v",
+      "dominant": "DISTILLATION",
+      "score": 0.336,
+      "gap": 0.2804,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f82r",
+      "dominant": "DISTILLATION",
+      "score": 0.3927,
+      "gap": 0.28,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f83v",
+      "dominant": "DISTILLATION",
+      "score": 0.3916,
+      "gap": 0.2738,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f80r",
+      "dominant": "DISTILLATION",
+      "score": 0.3265,
+      "gap": 0.2449,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f114v",
+      "dominant": "DISTILLATION",
+      "score": 0.3204,
+      "gap": 0.2403,
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    {
+      "folio": "f115r",
+      "dominant": "DISTILLATION",
+      "score": 0.3086,
+      "gap": 0.2365,
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    {
+      "folio": "f77v",
+      "dominant": "DISTILLATION",
+      "score": 0.3505,
+      "gap": 0.2266,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f104v",
+      "dominant": "DISTILLATION",
+      "score": 0.321,
+      "gap": 0.2249,
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    {
+      "folio": "f75v",
+      "dominant": "DISTILLATION",
+      "score": 0.3009,
+      "gap": 0.2242,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f75r",
+      "dominant": "DISTILLATION",
+      "score": 0.2913,
+      "gap": 0.1869,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f40r",
+      "dominant": "SEALED_VESSEL",
+      "score": 0.268,
+      "gap": 0.1753,
+      "regime": "REGIME_2",
+      "section": "H"
+    },
+    {
+      "folio": "f83r",
+      "dominant": "DISTILLATION",
+      "score": 0.2676,
+      "gap": 0.1735,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f104r",
+      "dominant": "DISTILLATION",
+      "score": 0.2671,
+      "gap": 0.1735,
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    {
+      "folio": "f79v",
+      "dominant": "DISTILLATION",
+      "score": 0.2938,
+      "gap": 0.1695,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f81r",
+      "dominant": "DISTILLATION",
+      "score": 0.2512,
+      "gap": 0.1691,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f79r",
+      "dominant": "DISTILLATION",
+      "score": 0.2699,
+      "gap": 0.1645,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f115v",
+      "dominant": "DISTILLATION",
+      "score": 0.2431,
+      "gap": 0.1604,
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    {
+      "folio": "f86v6",
+      "dominant": "DISTILLATION",
+      "score": 0.2338,
+      "gap": 0.142,
+      "regime": "REGIME_2",
+      "section": "C"
+    },
+    {
+      "folio": "f86v3",
+      "dominant": "DISTILLATION",
+      "score": 0.2166,
+      "gap": 0.1408,
+      "regime": "REGIME_3",
+      "section": "C"
+    },
+    {
+      "folio": "f31v",
+      "dominant": "SEALED_VESSEL",
+      "score": 0.2407,
+      "gap": 0.1389,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f84r",
+      "dominant": "DISTILLATION",
+      "score": 0.241,
+      "gap": 0.1385,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f76v",
+      "dominant": "DISTILLATION",
+      "score": 0.225,
+      "gap": 0.1375,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f85r2",
+      "dominant": "DISTILLATION",
+      "score": 0.2,
+      "gap": 0.1355,
+      "regime": "REGIME_3",
+      "section": "C"
+    },
+    {
+      "folio": "f78v",
+      "dominant": "DISTILLATION",
+      "score": 0.226,
+      "gap": 0.1336,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f78r",
+      "dominant": "DISTILLATION",
+      "score": 0.2245,
+      "gap": 0.1293,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f76r",
+      "dominant": "DISTILLATION",
+      "score": 0.2216,
+      "gap": 0.1245,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f31r",
+      "dominant": "DISTILLATION",
+      "score": 0.27,
+      "gap": 0.12,
+      "regime": "REGIME_1",
+      "section": "H"
+    },
+    {
+      "folio": "f95r1",
+      "dominant": "DISTILLATION",
+      "score": 0.1845,
+      "gap": 0.1165,
+      "regime": "REGIME_1",
+      "section": "H"
+    },
+    {
+      "folio": "f106r",
+      "dominant": "DISTILLATION",
+      "score": 0.2233,
+      "gap": 0.1164,
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    {
+      "folio": "f106v",
+      "dominant": "DISTILLATION",
+      "score": 0.2116,
+      "gap": 0.1136,
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    {
+      "folio": "f95v1",
+      "dominant": "DISTILLATION",
+      "score": 0.188,
+      "gap": 0.1111,
+      "regime": "REGIME_2",
+      "section": "H"
+    },
+    {
+      "folio": "f103r",
+      "dominant": "DISTILLATION",
+      "score": 0.272,
+      "gap": 0.1092,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f114r",
+      "dominant": "DISTILLATION",
+      "score": 0.2013,
+      "gap": 0.1007,
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    {
+      "folio": "f86v5",
+      "dominant": "DISTILLATION",
+      "score": 0.1522,
+      "gap": 0.0997,
+      "regime": "REGIME_2",
+      "section": "C"
+    },
+    {
+      "folio": "f107v",
+      "dominant": "DISTILLATION",
+      "score": 0.2374,
+      "gap": 0.0967,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f108v",
+      "dominant": "DISTILLATION",
+      "score": 0.2649,
+      "gap": 0.0877,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f41r",
+      "dominant": "DISTILLATION",
+      "score": 0.1959,
+      "gap": 0.0825,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f81v",
+      "dominant": "DISTILLATION",
+      "score": 0.1899,
+      "gap": 0.0814,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f43r",
+      "dominant": "DISTILLATION",
+      "score": 0.1733,
+      "gap": 0.08,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f48r",
+      "dominant": "DISTILLATION",
+      "score": 0.1798,
+      "gap": 0.0787,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f103v",
+      "dominant": "DISTILLATION",
+      "score": 0.2116,
+      "gap": 0.0735,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f111v",
+      "dominant": "DISTILLATION",
+      "score": 0.2086,
+      "gap": 0.0731,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f50r",
+      "dominant": "DISTILLATION",
+      "score": 0.1798,
+      "gap": 0.0674,
+      "regime": "REGIME_2",
+      "section": "H"
+    },
+    {
+      "folio": "f116r",
+      "dominant": "DISTILLATION",
+      "score": 0.1825,
+      "gap": 0.0652,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f112v",
+      "dominant": "DISTILLATION",
+      "score": 0.2217,
+      "gap": 0.0651,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f66r",
+      "dominant": "DISTILLATION",
+      "score": 0.1854,
+      "gap": 0.0638,
+      "regime": "REGIME_4",
+      "section": "T"
+    },
+    {
+      "folio": "f85r1",
+      "dominant": "DISTILLATION",
+      "score": 0.1652,
+      "gap": 0.0631,
+      "regime": "REGIME_3",
+      "section": "T"
+    },
+    {
+      "folio": "f94r",
+      "dominant": "DISTILLATION",
+      "score": 0.1463,
+      "gap": 0.061,
+      "regime": "REGIME_2",
+      "section": "H"
+    },
+    {
+      "folio": "f113r",
+      "dominant": "DISTILLATION",
+      "score": 0.1699,
+      "gap": 0.056,
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    {
+      "folio": "f48v",
+      "dominant": "SEALED_VESSEL",
+      "score": 0.1032,
+      "gap": 0.0556,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f84v",
+      "dominant": "DISTILLATION",
+      "score": 0.196,
+      "gap": 0.0548,
+      "regime": "REGIME_1",
+      "section": "B"
+    },
+    {
+      "folio": "f111r",
+      "dominant": "DISTILLATION",
+      "score": 0.184,
+      "gap": 0.0489,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f34r",
+      "dominant": "DISTILLATION",
+      "score": 0.1528,
+      "gap": 0.0486,
+      "regime": "REGIME_3",
+      "section": "H"
+    },
+    {
+      "folio": "f105r",
+      "dominant": "DISTILLATION",
+      "score": 0.1676,
+      "gap": 0.0459,
+      "regime": "REGIME_4",
+      "section": "S"
+    },
+    {
+      "folio": "f107r",
+      "dominant": "DISTILLATION",
+      "score": 0.1865,
+      "gap": 0.0451,
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    {
+      "folio": "f108r",
+      "dominant": "DISTILLATION",
+      "score": 0.2424,
+      "gap": 0.0448,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f50v",
+      "dominant": "SEALED_VESSEL",
+      "score": 0.1837,
+      "gap": 0.0408,
+      "regime": "REGIME_2",
+      "section": "H"
+    },
+    {
+      "folio": "f39v",
+      "dominant": "SEALED_VESSEL",
+      "score": 0.1127,
+      "gap": 0.0352,
+      "regime": "REGIME_2",
+      "section": "H"
+    },
+    {
+      "folio": "f26v",
+      "dominant": "DISTILLATION",
+      "score": 0.1685,
+      "gap": 0.0337,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f86v4",
+      "dominant": "DISTILLATION",
+      "score": 0.1117,
+      "gap": 0.0319,
+      "regime": "REGIME_4",
+      "section": "C"
+    },
+    {
+      "folio": "f112r",
+      "dominant": "SEALED_VESSEL",
+      "score": 0.198,
+      "gap": 0.0305,
+      "regime": "REGIME_1",
+      "section": "S"
+    },
+    {
+      "folio": "f94v",
+      "dominant": "DISTILLATION",
+      "score": 0.1584,
+      "gap": 0.0297,
+      "regime": "REGIME_3",
+      "section": "H"
+    },
+    {
+      "folio": "f41v",
+      "dominant": "SEALED_VESSEL",
+      "score": 0.2059,
+      "gap": 0.0294,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f66v",
+      "dominant": "SUSTAINED_HEAT",
+      "score": 0.1239,
+      "gap": 0.0265,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f95r2",
+      "dominant": "DISTILLATION",
+      "score": 0.1646,
+      "gap": 0.0253,
+      "regime": "REGIME_2",
+      "section": "H"
+    },
+    {
+      "folio": "f113v",
+      "dominant": "DISTILLATION",
+      "score": 0.1816,
+      "gap": 0.0251,
+      "regime": "REGIME_3",
+      "section": "S"
+    },
+    {
+      "folio": "f26r",
+      "dominant": "DISTILLATION",
+      "score": 0.1412,
+      "gap": 0.0235,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f57r",
+      "dominant": "SUSTAINED_HEAT",
+      "score": 0.1264,
+      "gap": 0.023,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f39r",
+      "dominant": "DISTILLATION",
+      "score": 0.1234,
+      "gap": 0.0195,
+      "regime": "REGIME_3",
+      "section": "H"
+    },
+    {
+      "folio": "f55v",
+      "dominant": "SEALED_VESSEL",
+      "score": 0.1058,
+      "gap": 0.0192,
+      "regime": "REGIME_2",
+      "section": "H"
+    },
+    {
+      "folio": "f46r",
+      "dominant": "DISTILLATION",
+      "score": 0.1274,
+      "gap": 0.0191,
+      "regime": "REGIME_3",
+      "section": "H"
+    },
+    {
+      "folio": "f33v",
+      "dominant": "SEALED_VESSEL",
+      "score": 0.1376,
+      "gap": 0.0183,
+      "regime": "REGIME_2",
+      "section": "H"
+    },
+    {
+      "folio": "f46v",
+      "dominant": "SUSTAINED_HEAT",
+      "score": 0.1261,
+      "gap": 0.018,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f95v2",
+      "dominant": "SEALED_VESSEL",
+      "score": 0.1406,
+      "gap": 0.0156,
+      "regime": "REGIME_2",
+      "section": "H"
+    },
+    {
+      "folio": "f33r",
+      "dominant": "SEALED_VESSEL",
+      "score": 0.1111,
+      "gap": 0.0139,
+      "regime": "REGIME_2",
+      "section": "H"
+    },
+    {
+      "folio": "f43v",
+      "dominant": "DISTILLATION",
+      "score": 0.1046,
+      "gap": 0.0131,
+      "regime": "REGIME_4",
+      "section": "H"
+    },
+    {
+      "folio": "f40v",
+      "dominant": "SEALED_VESSEL",
+      "score": 0.1698,
+      "gap": 0.0094,
+      "regime": "REGIME_2",
+      "section": "H"
+    },
+    {
+      "folio": "f34v",
+      "dominant": "DISTILLATION",
+      "score": 0.0957,
+      "gap": 0.0087,
+      "regime": "REGIME_3",
+      "section": "H"
+    },
+    {
+      "folio": "f55r",
+      "dominant": "SEALED_VESSEL",
+      "score": 0.129,
+      "gap": 0.0081,
+      "regime": "REGIME_2",
+      "section": "H"
+    },
+    {
+      "folio": "f105v",
+      "dominant": "SEALED_VESSEL",
+      "score": 0.1256,
+      "gap": 0.0051,
+      "regime": "REGIME_3",
+      "section": "S"
+    }
+  ]
+}

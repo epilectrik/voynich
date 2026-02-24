@@ -2444,6 +2444,19 @@ provenance:
       - "E-depth matched at category (OR=2.625) but complementary within e-subset rho=-0.262; i null (C1245)"
       - "Mode A enriches energy+specific-measurement pairs MI=1.425; Mode B enriches sustained+passive MI=0.978 JSD z=4.60 (C1246)"
 
+  apparatus_vocabulary_classification:
+    description: "REGIME encodes apparatus type via vocabulary signatures; R1/R3 single-apparatus, R2/R4 mixed"
+    constraints: [C1247, C1248, C1249]
+    findings:
+      - "aii (unseal) is 41x enriched in REGIME_3 vs REGIME_1; 14/20 R3 folios vs 1/32 R1; R3=open-cycle batch apparatus (C1247)"
+      - "Line context: close/check → aii → open/continue; aii sits at batch transition points (C1247)"
+      - "Distillation cycle: t+eol co-occur OR=16.27 p=0.0001; sustained heat cycle: ke+eeol always co-occur OR=inf p=0.0003 (C1248)"
+      - "DISTILLATION vs PRECISION profiles anti-correlate rho=-0.666 p<0.0001: folios specialize (C1248)"
+      - "R1/R3 are single-apparatus REGIMEs (97%/95% distillation); R2/R4 mix apparatus types within fire degree (C1248)"
+      - "R3 batch vocabulary: aii 41x, eo cool-open 7.6x, od collect 6.9x; R1 continuous vocabulary: ke 3.2x, ck 2.7x, lk 4.3x (C1248)"
+      - "Section H (Herbal) is most apparatus-diverse: R2-SEALED 100% Herbal, R4-non-distillation 100% Herbal (C1249)"
+      - "Top-down PCA (5-test battery) returned NOT_SUPPORTED; bottom-up profile scoring from Brunschwig markers found the signal"
+
   small_role_anatomy:
     - "C581"   # CC definitive census
     - "C582"   # FL definitive census

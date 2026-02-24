@@ -4,6 +4,26 @@
 
 ---
 
+## Version 4.48.34 (2026-02-24) - Phase 445: Apparatus Vocabulary Classification
+
+### Summary
+
+Phase 445: Apparatus vocabulary profiling of Currier B folios. Initial top-down PCA battery (5 tests) returned NOT_SUPPORTED — residual structure too diffuse after REGIME control. Bottom-up approach using Brunschwig-derived apparatus profiles found strong signal. 3 new constraints (C1247-C1249). **Result: REGIME ENCODES APPARATUS TYPE.** aii (unseal) is 41x enriched in REGIME_3 vs REGIME_1 (C1247). Distillation cycle co-occurrence: t+eol OR=16.27, ke+eeol OR=inf (C1248). DISTILLATION vs PRECISION anti-correlate rho=-0.666. R1/R3 are single-apparatus REGIMEs; R2/R4 mix apparatus types within fire degree. Herbal is the only apparatus-diverse section (C1249).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/APPARATUS_VOCABULARY_CLASSIFICATION/` -- 2 scripts + 2 results JSONs |
+| **ADDED** | C1247-C1249 constraint files (3 new constraints, 1090->1093) |
+| **UPDATED** | `currierB.bcsc.yaml` -- apparatus vocabulary block added |
+| **UPDATED** | `INTERPRETATION_SUMMARY.md` -- apparatus classification section |
+| **UPDATED** | `CLAUDE.md` -- 1090->1093 constraints, 444->445 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 1090->1093 constraints |
+| **UPDATED** | `INDEX.md` -- 1090->1093 total, Phase 445 section added |
+
+---
+
 ## Version 4.47.33 (2026-02-24) - Phase 444: EN Cross-Lane Pairing
 
 ### Summary

@@ -6117,3 +6117,23 @@ The C1242 MI signal decomposes into a **selectivity gradient**: rare QO MIDDLEs 
 E-depth shows a **two-scale pattern**: at the category level, e-containing tokens match (OR=2.625); within the e-containing subset, high-e QO pairs with low-e CHSH (rho=-0.262). Strong heat gets light monitoring; gentle heat gets deep monitoring.
 
 **Mode A (specification) and Mode B (execution) use different pairings** (JSD z=4.60). Mode A enriches energy+specific-measurement pairs (k-ck 5.1x, ke-ey 3.7x) with MI=1.425 bits. Mode B enriches sustained+passive pairs (k-eol 6.5x, l-edy 3.3x) with MI=0.978 bits. Specification lines lock energy to targeted checks; execution lines pair routine operations with generic monitoring.
+
+### Apparatus Vocabulary Classification (C1247-C1249)
+
+REGIME encodes apparatus type via vocabulary signatures. Five apparatus profiles (DISTILLATION, SEALED_VESSEL, SUSTAINED_HEAT, PRECISION, DIRECT_FIRE) defined from Brunschwig-grounded MIDDLE glosses score each folio against apparatus-specific vocabulary.
+
+**Key structural findings:**
+
+- **aii (unseal) is the strongest single-MIDDLE REGIME discriminator**: 41x enriched in REGIME_3 vs REGIME_1. 14/20 R3 folios contain aii (70%) vs 1/32 R1 folios (3.1%). Line context shows close→unseal→open transition pattern. R3 operates as open-cycle batch processing; R1 as continuous-run.
+
+- **Distillation cycle signature**: t+eol co-occur at OR=16.27 (p=0.0001). If a program drives off volatiles, it sustains output. Sustained heat cycle: every folio with eeol also has ke (OR=inf, p=0.0003).
+
+- **DISTILLATION vs PRECISION anti-correlate** at rho=-0.666 (p<0.0001) — the strongest inter-profile axis. Folios specialize: either distillation vocabulary or precision vocabulary, not both.
+
+- **R1/R3 are single-apparatus REGIMEs** (97%/95% distillation-dominant). **R2/R4 mix apparatus types** within the same fire degree — consistent with Brunschwig's description of applying the same temperature via different apparatus. R2 splits 60% sealed vessel / 40% distillation; R4 splits three ways.
+
+- **R3 vs R1 vocabulary differentiation**: R3-enriched = aii 41x, eo "cool-open" 7.6x, od "collect" 6.9x. R1-enriched = ke "sustained heat" 3.2x, ck "direct heat" 2.7x, lk "L-compound energy" 4.3x. R3 programs include unsealing, collecting, and cooling-with-opening. R1 emphasizes sustained energy management without interruption.
+
+- **Section H (Herbal) is the most apparatus-diverse section**: all non-distillation folios in R2 and R4 are Herbal. Section B is overwhelmingly distillation (0.293 vs H 0.134). Herbal procedures reflect material-specific processing requirements.
+
+**Methodological note**: An initial top-down approach (PCA on 2587 PREFIX-MIDDLE pair vectors residualized against REGIME) found no clean structure (NOT_SUPPORTED). The bottom-up approach — defining apparatus profiles from domain knowledge and scoring folios against them — found the real signal. The lesson: apparatus is a domain-specific category that requires domain-specific feature engineering, not unsupervised discovery.

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1090 validated constraints | **Version:** 4.47 | **Date:** 2026-02-24
+**Total:** 1093 validated constraints | **Version:** 4.48 | **Date:** 2026-02-24
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3425,6 +3425,22 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 - i-atom control null (C1205 confirmed)
 - Pair frequencies are domain-specific (refines C821: topology invariant, frequencies not)
 - Mode A (specification) has tighter heat-measure coupling than Mode B (execution)
+
+### Apparatus Vocabulary Classification (C1247-C1249) -- Phase: APPARATUS_VOCABULARY_CLASSIFICATION (Phase 445)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1247** | **aii REGIME_3 Specificity** (aii "unseal" is 41x enriched in R3 vs R1; 14/20 R3 folios contain aii vs 1/32 R1; line context shows close→unseal→open transition; R3 = open-cycle batch apparatus) | 2 | B, REGIME, aii, apparatus, batch | -> [C1247_aii_regime3_specificity.md](C1247_aii_regime3_specificity.md) |
+| **1248** | **Apparatus-Marker Co-occurrence Architecture** (t+eol co-occur OR=16.27 p=0.0001; ke+eeol co-occur OR=inf p=0.0003; DISTILLATION vs PRECISION rho=-0.666; R1/R3=single-apparatus R2/R4=mixed-apparatus REGIMEs) | 2 | B, apparatus, co-occurrence, REGIME, profile | -> [C1248_apparatus_marker_cooccurrence.md](C1248_apparatus_marker_cooccurrence.md) |
+| **1249** | **Section-Conditioned Apparatus Diversity** (Herbal is most apparatus-diverse section; R2-SEALED 100% Herbal; R4-SEALED/SUSTAINED 100% Herbal; Section B overwhelmingly distillation 0.293 vs H 0.134; weakest signatures all Herbal) | 2 | B, section, apparatus, diversity, Herbal | -> [C1249_section_apparatus_diversity.md](C1249_section_apparatus_diversity.md) |
+
+**Phase 445 findings (Apparatus Vocabulary Classification):**
+- REGIME encodes apparatus type: R1=continuous distillation, R3=batch distillation with unsealing, R2/R4=mixed
+- aii (unseal) at 41x R3/R1 enrichment is the strongest single-MIDDLE REGIME discriminator
+- Distillation cycle signature: t+eol co-occurrence OR=16.27; sustained heat cycle: ke+eeol always co-occur
+- DISTILLATION vs PRECISION profiles anti-correlate strongly (rho=-0.666)
+- Herbal section is apparatus-diverse; other sections are distillation-dominant
+- Initial top-down PCA approach (5-test battery) returned APPARATUS_VOCABULARY_NOT_SUPPORTED; bottom-up profile scoring found the real signal
 
 ---
 
