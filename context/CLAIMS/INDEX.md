@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1095 validated constraints | **Version:** 4.49 | **Date:** 2026-02-24
+**Total:** 1097 validated constraints | **Version:** 4.50 | **Date:** 2026-02-24
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3455,6 +3455,23 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 - Morphological grammar (C1191) governs atom position/co-occurrence independently of semantic content
 - V1 null model failure diagnosed: shuffling among same 90 MIDDLEs too conservative; v2 uses dual null models
 - Three affinity groups emerge from kernel co-occurrence: E-affiliated (y,d,o,t,l), K-affiliated (i), H-affiliated (p,f,c,s,r)
+
+### Paragraph Operational Classification (C1252-C1253) -- Phase: PARAGRAPH_OPERATIONAL_CLASSIFICATION (Phase 447)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1252** | **Folio Operational Specialization** (within-folio paragraph JSD 0.263 < between-folio 0.294, p=0.000; folios specialize operationally — paragraphs within a folio share similar gloss profiles; 74 multi-paragraph folios; extends C1041 folio=program) | 2 | B, folio, paragraph, specialization, gloss, JSD | -> [C1252_folio_operational_specialization.md](C1252_folio_operational_specialization.md) |
+| **1253** | **Paragraph-Level Apparatus Correlation** (THERMAL fraction at paragraph level correlates with apparatus score rho=0.409 p=0.000; weaker than token-level 0.758 due to aggregation; confirms C1250 T6 scales to paragraph unit; shuffled null 0.257) | 2 | B, paragraph, apparatus, THERMAL, correlation | -> [C1253_paragraph_apparatus_correlation.md](C1253_paragraph_apparatus_correlation.md) |
+
+**Phase 447 findings (Paragraph Operational Classification):**
+- 2/7 WEAK overall; gallows-gloss primary test (T1) fails — C869 remains Tier 3
+- Gallows type does NOT predict body gloss profile (V=0.032, p=0.539); gallows mark boundaries, not operational content
+- Paragraphs form continuous distribution (sil=0.192), not discrete operational types
+- Folio operational specialization confirmed (T4): paragraphs within folios share similar profiles
+- Apparatus correlation persists at paragraph level (T7): rho=0.409, attenuated from token-level 0.758
+- Gloss adds nothing to REGIME prediction beyond section (T3: -1.9pp increment)
+- Ordinal trends suggestive but sub-Bonferroni (MONITORING declines rho=-0.202, TRANSITION increases rho=0.165)
+- -am termination test underpowered (n=23)
 
 ---
 

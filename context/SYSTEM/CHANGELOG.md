@@ -4,6 +4,24 @@
 
 ---
 
+## Version 4.50.36 (2026-02-24) - Phase 447: Paragraph Operational Classification
+
+### Summary
+
+Phase 447: Paragraph-level operational profiling using validated gloss categories (C1250). 7-test battery with gallows-gloss prediction as primary test (C869 tier promotion attempt). **Result: 2/7 WEAK.** PRIMARY test (T1): gallows type does NOT predict body gloss profile (V=0.032, p=0.539) — C869 remains Tier 3; gallows mark paragraph boundaries but don't determine operational content. Paragraphs form continuous operational distribution (sil=0.192), not discrete types. Gloss adds nothing to REGIME beyond section (-1.9pp). Two passes: T4 folio operational specialization (within-folio JSD 0.263 < between-folio 0.294, p=0.000 — folios specialize operationally, extends C1041); T7 paragraph-level apparatus correlation (rho=0.409, attenuated from token-level 0.758 but significant). Ordinal trends suggestive but sub-Bonferroni.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/PARAGRAPH_OPERATIONAL_CLASSIFICATION/` -- 1 script + 1 results JSON |
+| **ADDED** | C1252-C1253 constraint files (2 new constraints, 1095->1097) |
+| **UPDATED** | `CLAUDE.md` -- 1095->1097 constraints, 446->447 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 1095->1097 constraints, v4.49->v4.50 |
+| **UPDATED** | `INDEX.md` -- 1095->1097 total, Phase 447 section added |
+
+---
+
 ## Version 4.49.35 (2026-02-24) - Phase 446: Gloss Scale Validation
 
 ### Summary
