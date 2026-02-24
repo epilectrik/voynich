@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1102 validated constraints | **Version:** 4.53 | **Date:** 2026-02-24
+**Total:** 1104 validated constraints | **Version:** 4.54 | **Date:** 2026-02-24
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3520,6 +3520,25 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 - Mode B carries continuity (vocabulary, kernel, FL); Mode A injects specification
 - Cross-mode coupling is bidirectional: A influences B and B influences A
 - C670's adjacent-line null explained: it measured across voices, not within them
+
+### Gradient Decomposition (C1259-C1260) -- Phase: GRADIENT_DECOMPOSITION (Phase 451)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1259** | **Gradient Decomposition by Suffix Mode** (Mode A proportion FLAT across paragraph body rho=-0.027 p=0.449; C933 prep verb concentration is ARTIFACT of Mode A vocabulary 77%; C1227 FL resets GENUINE within B-track B->B 49.7% > cross-mode 40.5%; C676 suffix trajectory GENUINE in Mode B bare rho=0.072 p=0.008; C1228 PREFIX switching MIXTURE within<cross p=0.002; C932 C965 NOT REPLICATED in aggregate) | 2 | B, gradient, suffix-mode, decomposition, mode-proportion, artifact, genuine | -> [C1259_gradient_decomposition.md](C1259_gradient_decomposition.md) |
+| **1260** | **Mode B Thermal State Tracking** (energy balance propagates through B-track: e_frac rho=0.376 ke_ratio rho=0.228 qo_frac rho=0.186 k_frac rho=0.139 all p=0.000; FL stage does NOT propagate rho=0.026 p=0.56; no ordinal progression in energy variables; ke_ratio lag-1 autocorrelation survives permutation p=0.002; B-track carries thermal context but independently assesses material state; line shortening rho=-0.243) | 2 | B, mode-b, thermal, state-tracking, energy-balance, propagation, FL, steady-state | -> [C1260_mode_b_thermal_state_tracking.md](C1260_mode_b_thermal_state_tracking.md) |
+
+**Phase 451 findings (Gradient Decomposition):**
+- Mode A proportion is flat across paragraph body -- mode-proportion shift is NOT a confound
+- Prep verb early concentration (C933) is an artifact of prep verbs being Mode A tokens
+- FL resets (C1227) are genuine B-track internal phenomena (B->B rate highest)
+- Suffix trajectory (C676) is genuine within Mode B (bare fraction increases)
+- PREFIX switching (C1228) is a mixture of mode alternation and within-track process
+- C932 and C965 could not be replicated in aggregate (methodology concern)
+- **Mode B thermal state tracking:** energy balance propagates (e_frac, ke_ratio, qo_frac, k_frac)
+- FL stage does NOT propagate -- material state independently assessed each cycle
+- No ordinal drift in energy variables -- steady-state thermal operation, not progressive ramp
+- Lines shorten monotonically through the B-track (rho=-0.243)
 
 ---
 

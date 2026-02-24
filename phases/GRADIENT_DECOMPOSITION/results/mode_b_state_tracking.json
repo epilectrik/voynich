@@ -1,0 +1,175 @@
+{
+  "phase": "Phase 451 Follow-up: MODE_B_STATE_TRACKING",
+  "verdict": "STATE_TRACKING -- B-track carries sequential state",
+  "signals": [
+    "k_frac",
+    "e_frac",
+    "ke_ratio",
+    "qo_frac",
+    "terminal_frac",
+    "ordinal_n_toks",
+    "autocorr_ke_ratio"
+  ],
+  "n_signals": 7,
+  "S1": {
+    "test": "S1_fl_propagation",
+    "rho": 0.0262,
+    "parametric_p": 0.536341,
+    "perm_p": 0.56,
+    "mean_end_fl": 3.407,
+    "mean_start_fl": 2.909,
+    "n_forward": 294,
+    "n_reset": 264,
+    "n_pairs": 558,
+    "signal": false
+  },
+  "S2": {
+    "test": "S2_energy_balance",
+    "variables": {
+      "k_frac": {
+        "rho": 0.1391,
+        "perm_p": 0.0,
+        "mean_N": 0.1564,
+        "mean_N1": 0.1553,
+        "signal": true
+      },
+      "e_frac": {
+        "rho": 0.3761,
+        "perm_p": 0.0,
+        "mean_N": 0.3257,
+        "mean_N1": 0.3363,
+        "signal": true
+      },
+      "ke_ratio": {
+        "rho": 0.2283,
+        "perm_p": 0.0,
+        "mean_N": 0.6638,
+        "mean_N1": 0.617,
+        "signal": true
+      },
+      "qo_frac": {
+        "rho": 0.1864,
+        "perm_p": 0.0,
+        "mean_N": 0.1395,
+        "mean_N1": 0.134,
+        "signal": true
+      }
+    },
+    "n_pairs": 616
+  },
+  "S3": {
+    "test": "S3_suffix_state",
+    "variables": {
+      "terminal_frac": {
+        "rho": 0.1445,
+        "perm_p": 0.001,
+        "signal": true
+      },
+      "bare_frac": {
+        "rho": 0.092,
+        "perm_p": 0.023,
+        "signal": false
+      }
+    },
+    "n_pairs": 616
+  },
+  "S4": {
+    "test": "S4_ordinal_progression",
+    "variables": {
+      "k_frac": {
+        "rho": -0.0108,
+        "p": 0.772282,
+        "signal": false
+      },
+      "e_frac": {
+        "rho": 0.0669,
+        "p": 0.072288,
+        "signal": false
+      },
+      "ke_ratio": {
+        "rho": -0.0461,
+        "p": 0.215623,
+        "signal": false
+      },
+      "qo_frac": {
+        "rho": -0.0573,
+        "p": 0.123759,
+        "signal": false
+      },
+      "terminal_frac": {
+        "rho": -0.0253,
+        "p": 0.497746,
+        "signal": false
+      },
+      "bare_frac": {
+        "rho": -0.0175,
+        "p": 0.638332,
+        "signal": false
+      },
+      "mean_fl": {
+        "rho": -0.0616,
+        "p": 0.106948,
+        "signal": false
+      },
+      "n_toks": {
+        "rho": -0.2434,
+        "p": 0.0,
+        "signal": true
+      }
+    },
+    "n_lines": 722,
+    "n_sequences": 134
+  },
+  "S5": {
+    "test": "S5_lag_autocorrelation",
+    "variables": {
+      "k_frac": {
+        "autocorr": 0.1521,
+        "perm_p": 0.068,
+        "n_pairs": 588,
+        "signal": false
+      },
+      "e_frac": {
+        "autocorr": 0.3846,
+        "perm_p": 0.039,
+        "n_pairs": 588,
+        "signal": false
+      },
+      "ke_ratio": {
+        "autocorr": 0.2498,
+        "perm_p": 0.002,
+        "n_pairs": 588,
+        "signal": true
+      },
+      "qo_frac": {
+        "autocorr": 0.2089,
+        "perm_p": 0.139,
+        "n_pairs": 588,
+        "signal": false
+      },
+      "terminal_frac": {
+        "autocorr": 0.1543,
+        "perm_p": 0.012,
+        "n_pairs": 588,
+        "signal": false
+      },
+      "bare_frac": {
+        "autocorr": 0.0924,
+        "perm_p": 0.866,
+        "n_pairs": 588,
+        "signal": false
+      },
+      "mean_fl": {
+        "autocorr": 0.0797,
+        "perm_p": 0.165,
+        "n_pairs": 534,
+        "signal": false
+      }
+    }
+  },
+  "data_summary": {
+    "n_bb_pairs": 616,
+    "n_bb_sequences": 162,
+    "n_b_lines": 778
+  }
+}

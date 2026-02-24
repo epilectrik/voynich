@@ -1,0 +1,338 @@
+{
+  "phase": "Phase 451: GRADIENT_DECOMPOSITION",
+  "overall_verdict": "MIXED -- some gradients genuine, some artifacts of mode proportion",
+  "n_genuine": 2,
+  "n_artifact": 1,
+  "n_mixture": 1,
+  "classifications": {
+    "T2_vocabulary_rarity": "NO_GRADIENT",
+    "T3_prep_verb_position": "ARTIFACT",
+    "T4_kernel_composition": "NO_GRADIENT",
+    "T5_fl_reset": "GENUINE",
+    "T6_prefix_switch": "MIXTURE",
+    "T7_morphological_trajectory": "GENUINE"
+  },
+  "T1": {
+    "test": "T1_mode_proportion_gradient",
+    "quintile_mode_a_fracs": {
+      "0": 0.4201,
+      "1": 0.4348,
+      "2": 0.4257,
+      "3": 0.413,
+      "4": 0.3943
+    },
+    "quintile_rho": -0.7,
+    "quintile_p": 0.1881,
+    "line_level_rho": -0.0273,
+    "line_level_p": 0.44938,
+    "direction": "Mode A concentrates EARLY",
+    "n_lines": 768,
+    "n_paragraphs": 63,
+    "pass": false,
+    "verdict": "FAIL"
+  },
+  "T2": {
+    "test": "T2_vocabulary_rarity",
+    "aggregate": {
+      "rare_fracs": [
+        0.021,
+        0.0195,
+        0.0262,
+        0.0197,
+        0.0204
+      ],
+      "universal_fracs": [
+        0.8327,
+        0.835,
+        0.8287,
+        0.8273,
+        0.8174
+      ],
+      "rare_r": -0.0544,
+      "universal_r": -0.893
+    },
+    "mode_b": {
+      "rare_fracs": [
+        0.0207,
+        0.016,
+        0.0211,
+        0.0187,
+        0.0168
+      ],
+      "universal_fracs": [
+        0.8523,
+        0.8655,
+        0.8548,
+        0.8555,
+        0.84
+      ],
+      "rare_r": -0.3455,
+      "universal_r": -0.5973
+    },
+    "mode_a": {
+      "rare_fracs": [
+        0.0215,
+        0.0247,
+        0.0336,
+        0.0214,
+        0.0265
+      ],
+      "universal_fracs": [
+        0.8037,
+        0.7909,
+        0.7915,
+        0.7825,
+        0.7795
+      ],
+      "rare_r": 0.209,
+      "universal_r": -0.9507
+    },
+    "classification": "NO_GRADIENT",
+    "c932_reference": {
+      "rare_r": -0.97,
+      "universal_r": 0.92
+    },
+    "pass": false,
+    "verdict": "NO_GRADIENT"
+  },
+  "T3": {
+    "test": "T3_prep_verb_position",
+    "detail": {
+      "lch": {
+        "agg_mean_pos": 0.491,
+        "mode_b_mean_pos": 0.506,
+        "mode_a_mean_pos": 0.488,
+        "n_all": 29,
+        "n_mode_b": 6,
+        "n_mode_a": 23
+      },
+      "pch": {
+        "agg_mean_pos": 0.462,
+        "mode_b_mean_pos": 0.591,
+        "mode_a_mean_pos": 0.397,
+        "n_all": 9,
+        "n_mode_b": 3,
+        "n_mode_a": 6
+      },
+      "tch": {
+        "agg_mean_pos": 0.614,
+        "mode_b_mean_pos": 0.463,
+        "mode_a_mean_pos": 0.701,
+        "n_all": 11,
+        "n_mode_b": 4,
+        "n_mode_a": 7
+      },
+      "te": {
+        "agg_mean_pos": 0.568,
+        "mode_b_mean_pos": 0.409,
+        "mode_a_mean_pos": 0.631,
+        "n_all": 28,
+        "n_mode_b": 8,
+        "n_mode_a": 20
+      }
+    },
+    "mode_b_combined_mean_pos": 0.473,
+    "aggregate_combined_mean_pos": 0.5339,
+    "perm_p": 0.639,
+    "classification": "ARTIFACT",
+    "c933_reference": {
+      "te": 0.394,
+      "pch": 0.429,
+      "tch": 0.424,
+      "lch": 0.445
+    },
+    "pass": false,
+    "verdict": "ARTIFACT"
+  },
+  "T4": {
+    "test": "T4_kernel_composition",
+    "aggregate": {
+      "h_rho": -0.0188,
+      "h_p": 0.602601,
+      "e_rho": 0.0549,
+      "e_p": 0.128157,
+      "k_rho": -0.0369,
+      "k_p": 0.305985,
+      "n": 770,
+      "quintile_h": [
+        0.0544,
+        0.0599,
+        0.057,
+        0.0481,
+        0.0509
+      ],
+      "quintile_e": [
+        0.3488,
+        0.3576,
+        0.3397,
+        0.3589,
+        0.3905
+      ]
+    },
+    "mode_b": {
+      "h_rho": 0.0769,
+      "h_p": 0.10418,
+      "e_rho": 0.0574,
+      "e_p": 0.225154,
+      "k_rho": -0.0034,
+      "k_p": 0.943465,
+      "n": 448,
+      "quintile_h": [
+        0.0356,
+        0.0323,
+        0.0325,
+        0.0333,
+        0.0456
+      ],
+      "quintile_e": [
+        0.3178,
+        0.3308,
+        0.3188,
+        0.3442,
+        0.3573
+      ]
+    },
+    "mode_a": {
+      "h_rho": -0.0994,
+      "h_p": 0.075856,
+      "e_rho": 0.0768,
+      "e_p": 0.170771,
+      "k_rho": -0.0844,
+      "k_p": 0.131911,
+      "n": 320,
+      "quintile_h": [
+        0.0804,
+        0.0969,
+        0.0901,
+        0.07,
+        0.0587
+      ],
+      "quintile_e": [
+        0.3916,
+        0.3902,
+        0.3679,
+        0.3861,
+        0.4398
+      ]
+    },
+    "classification": "NO_GRADIENT",
+    "c965_reference": {
+      "h_rho": 0.1005,
+      "e_rho": -0.0863,
+      "k_rho": -0.0027
+    },
+    "pass": false,
+    "verdict": "NO_GRADIENT"
+  },
+  "T5": {
+    "test": "T5_fl_reset",
+    "by_mode_pair": {
+      "BB": {
+        "regression_rate": 0.4966,
+        "n": 298
+      },
+      "AB": {
+        "regression_rate": 0.4214,
+        "n": 159
+      },
+      "BA": {
+        "regression_rate": 0.3889,
+        "n": 144
+      },
+      "AA": {
+        "regression_rate": 0.3364,
+        "n": 107
+      }
+    },
+    "aggregate_regression_rate": 0.4336,
+    "bb_rate": 0.4966,
+    "cross_mode_mean_rate": 0.4052,
+    "diff": -0.0914,
+    "perm_p": 0.99,
+    "n_total": 708,
+    "classification": "GENUINE",
+    "c1227_reference": {
+      "aggregate_regression_rate": 0.364
+    },
+    "pass": true,
+    "verdict": "GENUINE"
+  },
+  "T6": {
+    "test": "T6_prefix_switch",
+    "by_mode_pair": {
+      "BB": {
+        "mean_jsd": 0.3281,
+        "n": 499
+      },
+      "AB": {
+        "mean_jsd": 0.3423,
+        "n": 289
+      },
+      "BA": {
+        "mean_jsd": 0.3616,
+        "n": 284
+      },
+      "AA": {
+        "mean_jsd": 0.3216,
+        "n": 235
+      },
+      "all": {
+        "mean_jsd": 0.3374,
+        "n": 1307
+      }
+    },
+    "within_mode_mean_jsd": 0.3261,
+    "cross_mode_mean_jsd": 0.3518,
+    "diff": 0.0258,
+    "perm_p": 0.002,
+    "classification": "MIXTURE",
+    "c1228_reference": {
+      "aggregate_interior_jsd": 0.47
+    },
+    "pass": true,
+    "verdict": "MIXTURE"
+  },
+  "T7": {
+    "test": "T7_morphological_trajectory",
+    "aggregate": {
+      "qo_rho": 0.0091,
+      "qo_p": 0.656478,
+      "bare_rho": 0.0465,
+      "bare_p": 0.022558,
+      "e_fam_rho": 0.0297,
+      "e_fam_p": 0.145477,
+      "n": 2401
+    },
+    "mode_b": {
+      "qo_rho": 0.018,
+      "qo_p": 0.508662,
+      "bare_rho": 0.0724,
+      "bare_p": 0.007592,
+      "e_fam_rho": 0.0072,
+      "e_fam_p": 0.792125,
+      "n": 1357
+    },
+    "mode_a": {
+      "qo_rho": 0.0167,
+      "qo_p": 0.592749,
+      "bare_rho": 0.0156,
+      "bare_p": 0.616553,
+      "e_fam_rho": 0.0654,
+      "e_fam_p": 0.03576,
+      "n": 1030
+    },
+    "classification": "GENUINE",
+    "c676_reference": {
+      "qo_rho": -0.085,
+      "bare_rho": 0.095,
+      "e_fam_rho": -0.087
+    },
+    "pass": true,
+    "verdict": "GENUINE"
+  },
+  "data_summary": {
+    "n_tokens": 23096,
+    "n_folios": 82,
+    "n_paragraphs_8plus": 63
+  }
+}

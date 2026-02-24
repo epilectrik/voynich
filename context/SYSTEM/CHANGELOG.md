@@ -4,6 +4,24 @@
 
 ---
 
+## Version 4.54.40 (2026-02-24) - Phase 451: Gradient Decomposition
+
+### Summary
+
+Phase 451: Decomposes prior paragraph-body gradient constraints by suffix mode (C1258 parallel tracks). 7-test battery retesting C932, C933, C965, C1227, C1228, C676. **Headline finding: Mode A proportion is FLAT across the paragraph body (rho=-0.027, p=0.449)** -- mode-proportion shift is NOT a confound for aggregate gradients. Results: C933 (prep verb early concentration) is ARTIFACT of prep verbs being Mode A tokens (77%); C1227 (FL resets) GENUINE within B-track (B->B 49.7% > cross-mode 40.5%); C676 (suffix trajectory) GENUINE in Mode B (bare rho=0.072, p=0.008); C1228 (PREFIX switching) MIXTURE (within<cross p=0.002). C932 and C965 could NOT be replicated in aggregate -- methodology concern independent of mode decomposition. **Follow-up: Mode B thermal state tracking** -- energy balance propagates through B-track (e_frac rho=0.376, ke_ratio rho=0.228, qo_frac rho=0.186, k_frac rho=0.139, all p=0.000) while FL stage does NOT propagate (rho=0.026, p=0.56). No ordinal progression in energy variables. B-track carries thermal context but independently assesses material state each cycle.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/GRADIENT_DECOMPOSITION/` -- 2 scripts + 2 results JSONs |
+| **ADDED** | C1259-C1260 constraint files (2 new constraints, 1102->1104) |
+| **UPDATED** | `CLAUDE.md` -- 1102->1104 constraints, 450->451 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 1102->1104 constraints, v4.53->v4.54 |
+| **UPDATED** | `INDEX.md` -- 1102->1104 total, Phase 451 section added |
+
+---
+
 ## Version 4.53.39 (2026-02-24) - Phase 450: Sequential Content Prediction
 
 ### Summary
