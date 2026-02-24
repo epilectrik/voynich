@@ -4,6 +4,24 @@
 
 ---
 
+## Version 4.52.38 (2026-02-24) - Phase 449: Category Section Vocabulary
+
+### Summary
+
+Phase 449: Tests whether sections use different specific MIDDLEs within the same operational categories. Uses full 99.5% coverage (human + dark auto-assigned per C1254). **Result: 2/5 WEAK_SIGNAL.** Clean pass/fail split: vocabulary is SHARED across sections (Jaccard 0.676≈null 0.669, T1 FAIL), but frequencies are SECTION-SPECIFIC (34.3% enriched p=0.001 T2, 76.8% classification +37.8pp p=0.001 T3). Category conditioning adds nothing to section divergence (1.13x, T4 FAIL). Critical T5 finding: dark compounds (WEAK tier) have Jaccard 0.894 (nearly disjoint across sections) while core grammar (LOCKED/SOLID) has 0.343 (universal). Unifies C1134 (frequency modulation), C1148 (dark hyper-modulation), and C1176 (atom-selection) into single picture: core grammar is equipment-independent, dark compounds carry section identity.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/CATEGORY_SECTION_VOCABULARY/` -- 1 script + 1 results JSON |
+| **ADDED** | C1255 constraint file (1 new constraint, 1098->1099) |
+| **UPDATED** | `CLAUDE.md` -- 1098->1099 constraints, 448->449 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 1098->1099 constraints, v4.51->v4.52 |
+| **UPDATED** | `INDEX.md` -- 1098->1099 total, Phase 449 section added |
+
+---
+
 ## Version 4.51.37 (2026-02-24) - Phase 448: Dark Pipeline Characterization
 
 ### Summary

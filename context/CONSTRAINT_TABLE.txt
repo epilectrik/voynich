@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1099 constraints | 2026-02-24
+CONSTRAINT_REFERENCE v2.6 | 1100 constraints | 2026-02-24
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1103,3 +1103,4 @@ C1251	**Atom Gloss Compositional Validation** (atom->gloss validates through com
 C1252	**Folio Operational Specialization** (within-folio paragraph JSD 0.263 < between-folio 0.294, p=0.000; folios specialize operationally — paragraphs within a folio share similar gloss profiles; 74 multi-paragraph folios; extends C1041 folio=program)	2	B, folio, paragraph, specialization, gloss, JSD	-> C1252_folio_operational_specialization.md
 C1253	**Paragraph-Level Apparatus Correlation** (THERMAL fraction at paragraph level correlates with apparatus score rho=0.409 p=0.000; weaker than token-level 0.758 due to aggregation; confirms C1250 T6 scales to paragraph unit; shuffled null 0.257)	2	B, paragraph, apparatus, THERMAL, correlation	-> C1253_paragraph_apparatus_correlation.md
 C1254	**Dark Pipeline Category Generalization** (8 categories partially generalize to 1,144 dark MIDDLEs via atom plurality vote; 3/6 PASS; coverage 88.6%→99.5%; line position 10.8x, within-line MI 1.5x; behavioral silhouette FAIL overall but LOCKED+SOLID tier p=0.001; section divergence FAIL; confidence stratification is key: trust LOCKED/SOLID, WEAK atoms add noise)	2	B, dark-pipeline, gloss, generalization, HT, atom, coverage	-> C1254_dark_pipeline_category_generalization.md
+C1255	**Category-Section Universal Vocabulary** (8 categories are section-universal in vocabulary but section-parameterized in frequency; 2/5 WEAK_SIGNAL; Jaccard 0.676≈null 0.669 shared vocab; 34.3% MIDDLEs section-enriched >2x p=0.001; LOO section classification 76.8% +37.8pp p=0.001; conditioned JS adds nothing 1.13x p=0.603; WEAK dark compounds J=0.894 section-specific vs LOCKED/SOLID J=0.343 universal; unifies C1134+C1148+C1176)	2	B, section, category, vocabulary, frequency, universal, dark-pipeline	-> C1255_category_section_universal_vocabulary.md

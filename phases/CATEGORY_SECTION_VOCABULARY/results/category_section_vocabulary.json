@@ -1,0 +1,525 @@
+{
+  "_metadata": {
+    "phase": "CATEGORY_SECTION_VOCABULARY",
+    "phase_number": 449,
+    "description": "Section-specific vocabulary within operational categories",
+    "n_tokens": 23096,
+    "n_classified": 22969,
+    "sections_used": [
+      "B",
+      "C",
+      "H",
+      "S",
+      "T"
+    ],
+    "section_counts": {
+      "B": 6796,
+      "C": 1476,
+      "H": 3423,
+      "S": 10613,
+      "T": 661
+    },
+    "n_permutations": 1000,
+    "p_threshold": 0.01,
+    "elapsed_seconds": 83.5
+  },
+  "synthesis": {
+    "pass_count": 2,
+    "fail_count": 3,
+    "skip_count": 0,
+    "total_tests": 5,
+    "verdict": "WEAK_SIGNAL",
+    "summary": "2/5 tests pass (p<0.01), 0 skipped"
+  },
+  "tests": {
+    "T1_jaccard": {
+      "status": "FAIL",
+      "obs_mean_jaccard": 0.6762,
+      "null_mean_jaccard": 0.6689,
+      "p_value_empirical": 0.3337,
+      "n_valid_categories": 8,
+      "per_category": {
+        "CONTAINMENT": {
+          "mean_jaccard": 0.2944,
+          "n_sections": 5,
+          "section_counts": {
+            "B": 9,
+            "C": 8,
+            "H": 8,
+            "S": 9,
+            "T": 4
+          }
+        },
+        "FLOW": {
+          "mean_jaccard": 0.5052,
+          "n_sections": 5,
+          "section_counts": {
+            "B": 21,
+            "C": 14,
+            "H": 17,
+            "S": 31,
+            "T": 14
+          }
+        },
+        "MARKING": {
+          "mean_jaccard": 0.8161,
+          "n_sections": 5,
+          "section_counts": {
+            "B": 62,
+            "C": 46,
+            "H": 86,
+            "S": 141,
+            "T": 28
+          }
+        },
+        "MONITORING": {
+          "mean_jaccard": 0.7914,
+          "n_sections": 5,
+          "section_counts": {
+            "B": 39,
+            "C": 17,
+            "H": 38,
+            "S": 50,
+            "T": 13
+          }
+        },
+        "OPERATION": {
+          "mean_jaccard": 0.6322,
+          "n_sections": 5,
+          "section_counts": {
+            "B": 15,
+            "C": 17,
+            "H": 21,
+            "S": 39,
+            "T": 10
+          }
+        },
+        "STAGING": {
+          "mean_jaccard": 0.7947,
+          "n_sections": 5,
+          "section_counts": {
+            "B": 55,
+            "C": 22,
+            "H": 34,
+            "S": 112,
+            "T": 19
+          }
+        },
+        "THERMAL": {
+          "mean_jaccard": 0.842,
+          "n_sections": 5,
+          "section_counts": {
+            "B": 118,
+            "C": 68,
+            "H": 139,
+            "S": 320,
+            "T": 53
+          }
+        },
+        "TRANSITION": {
+          "mean_jaccard": 0.7338,
+          "n_sections": 5,
+          "section_counts": {
+            "B": 45,
+            "C": 36,
+            "H": 55,
+            "S": 115,
+            "T": 26
+          }
+        }
+      }
+    },
+    "T2_enrichment": {
+      "status": "PASS",
+      "enriched_count": 70,
+      "total_tested": 204,
+      "enriched_rate": 0.3431,
+      "null_enriched_rate": 0.1336,
+      "p_value_empirical": 0.001,
+      "enriched_by_category": {
+        "CONTAINMENT": 3,
+        "FLOW": 3,
+        "MARKING": 16,
+        "MONITORING": 11,
+        "OPERATION": 4,
+        "STAGING": 7,
+        "THERMAL": 15,
+        "TRANSITION": 11
+      },
+      "tested_by_category": {
+        "CONTAINMENT": 9,
+        "FLOW": 16,
+        "MARKING": 33,
+        "MONITORING": 20,
+        "OPERATION": 10,
+        "STAGING": 20,
+        "THERMAL": 64,
+        "TRANSITION": 32
+      },
+      "top_examples": {
+        "CONTAINMENT": [
+          {
+            "middle": "an",
+            "section": "C",
+            "ratio": 2.59,
+            "observed": 3,
+            "expected": 1.2
+          },
+          {
+            "middle": "dy",
+            "section": "H",
+            "ratio": 2.37,
+            "observed": 238,
+            "expected": 100.6
+          },
+          {
+            "middle": "olk",
+            "section": "C",
+            "ratio": 2.31,
+            "observed": 4,
+            "expected": 1.7
+          }
+        ],
+        "FLOW": [
+          {
+            "middle": "oct",
+            "section": "C",
+            "ratio": 4.45,
+            "observed": 4,
+            "expected": 0.9
+          },
+          {
+            "middle": "or",
+            "section": "C",
+            "ratio": 2.27,
+            "observed": 65,
+            "expected": 28.7
+          },
+          {
+            "middle": "ot",
+            "section": "C",
+            "ratio": 2.03,
+            "observed": 6,
+            "expected": 3.0
+          }
+        ],
+        "MARKING": [
+          {
+            "middle": "x",
+            "section": "T",
+            "ratio": 11.58,
+            "observed": 4,
+            "expected": 0.3
+          },
+          {
+            "middle": "f",
+            "section": "T",
+            "ratio": 10.22,
+            "observed": 5,
+            "expected": 0.5
+          },
+          {
+            "middle": "of",
+            "section": "T",
+            "ratio": 6.95,
+            "observed": 3,
+            "expected": 0.4
+          },
+          {
+            "middle": "pc",
+            "section": "C",
+            "ratio": 6.22,
+            "observed": 4,
+            "expected": 0.6
+          },
+          {
+            "middle": "p",
+            "section": "T",
+            "ratio": 3.7,
+            "observed": 5,
+            "expected": 1.4
+          }
+        ],
+        "MONITORING": [
+          {
+            "middle": "cph",
+            "section": "T",
+            "ratio": 6.76,
+            "observed": 7,
+            "expected": 1.0
+          },
+          {
+            "middle": "octh",
+            "section": "C",
+            "ratio": 3.11,
+            "observed": 3,
+            "expected": 1.0
+          },
+          {
+            "middle": "ksh",
+            "section": "C",
+            "ratio": 2.99,
+            "observed": 5,
+            "expected": 1.7
+          },
+          {
+            "middle": "lsh",
+            "section": "B",
+            "ratio": 2.68,
+            "observed": 19,
+            "expected": 7.1
+          },
+          {
+            "middle": "hy",
+            "section": "H",
+            "ratio": 2.52,
+            "observed": 3,
+            "expected": 1.2
+          }
+        ],
+        "OPERATION": [
+          {
+            "middle": "ek",
+            "section": "H",
+            "ratio": 2.7,
+            "observed": 68,
+            "expected": 25.2
+          },
+          {
+            "middle": "lch",
+            "section": "B",
+            "ratio": 2.19,
+            "observed": 48,
+            "expected": 21.9
+          },
+          {
+            "middle": "tch",
+            "section": "T",
+            "ratio": 2.14,
+            "observed": 4,
+            "expected": 1.9
+          },
+          {
+            "middle": "od",
+            "section": "C",
+            "ratio": 2.02,
+            "observed": 23,
+            "expected": 11.4
+          }
+        ],
+        "STAGING": [
+          {
+            "middle": "im",
+            "section": "C",
+            "ratio": 5.84,
+            "observed": 3,
+            "expected": 0.5
+          },
+          {
+            "middle": "ii",
+            "section": "T",
+            "ratio": 4.53,
+            "observed": 3,
+            "expected": 0.7
+          },
+          {
+            "middle": "keeo",
+            "section": "T",
+            "ratio": 2.74,
+            "observed": 3,
+            "expected": 1.1
+          },
+          {
+            "middle": "im",
+            "section": "H",
+            "ratio": 2.52,
+            "observed": 3,
+            "expected": 1.2
+          },
+          {
+            "middle": "s",
+            "section": "H",
+            "ratio": 2.33,
+            "observed": 50,
+            "expected": 21.5
+          }
+        ],
+        "THERMAL": [
+          {
+            "middle": "ef",
+            "section": "H",
+            "ratio": 6.71,
+            "observed": 6,
+            "expected": 0.9
+          },
+          {
+            "middle": "alk",
+            "section": "C",
+            "ratio": 4.67,
+            "observed": 3,
+            "expected": 0.6
+          },
+          {
+            "middle": "oek",
+            "section": "H",
+            "ratio": 3.36,
+            "observed": 3,
+            "expected": 0.9
+          },
+          {
+            "middle": "yk",
+            "section": "H",
+            "ratio": 3.05,
+            "observed": 5,
+            "expected": 1.6
+          },
+          {
+            "middle": "ko",
+            "section": "C",
+            "ratio": 2.92,
+            "observed": 3,
+            "expected": 1.0
+          }
+        ],
+        "TRANSITION": [
+          {
+            "middle": "dai",
+            "section": "T",
+            "ratio": 6.04,
+            "observed": 4,
+            "expected": 0.7
+          },
+          {
+            "middle": "keo",
+            "section": "T",
+            "ratio": 5.35,
+            "observed": 4,
+            "expected": 0.7
+          },
+          {
+            "middle": "yt",
+            "section": "H",
+            "ratio": 3.91,
+            "observed": 7,
+            "expected": 1.8
+          },
+          {
+            "middle": "dal",
+            "section": "H",
+            "ratio": 3.36,
+            "observed": 4,
+            "expected": 1.2
+          },
+          {
+            "middle": "da",
+            "section": "H",
+            "ratio": 3.1,
+            "observed": 6,
+            "expected": 1.9
+          }
+        ]
+      }
+    },
+    "T3_classification": {
+      "status": "PASS",
+      "accuracy": 0.7683,
+      "baseline_accuracy": 0.3902,
+      "increment": 0.378,
+      "p_value_empirical": 0.001,
+      "null_accuracy_mean": 0.2634,
+      "n_folios": 82,
+      "section_counts": {
+        "S": 23,
+        "H": 32,
+        "T": 2,
+        "B": 20,
+        "C": 5
+      }
+    },
+    "T4_partitioning": {
+      "status": "FAIL",
+      "raw_mean_js": 0.1224,
+      "conditioned_mean_js": 0.1385,
+      "ratio": 1.13,
+      "p_value_empirical": 0.6034,
+      "null_conditioned_mean": 0.1487,
+      "per_category": {
+        "CONTAINMENT": {
+          "mean_js": 0.0654,
+          "n_middles": 9,
+          "n_sections": 5
+        },
+        "FLOW": {
+          "mean_js": 0.0477,
+          "n_middles": 37,
+          "n_sections": 5
+        },
+        "MARKING": {
+          "mean_js": 0.2472,
+          "n_middles": 234,
+          "n_sections": 5
+        },
+        "MONITORING": {
+          "mean_js": 0.3127,
+          "n_middles": 95,
+          "n_sections": 5
+        },
+        "OPERATION": {
+          "mean_js": 0.0798,
+          "n_middles": 55,
+          "n_sections": 5
+        },
+        "STAGING": {
+          "mean_js": 0.0885,
+          "n_middles": 164,
+          "n_sections": 5
+        },
+        "THERMAL": {
+          "mean_js": 0.1514,
+          "n_middles": 479,
+          "n_sections": 5
+        },
+        "TRANSITION": {
+          "mean_js": 0.1156,
+          "n_middles": 162,
+          "n_sections": 5
+        }
+      }
+    },
+    "T5_confidence": {
+      "status": "FAIL",
+      "tiers": {
+        "LOCKED_SOLID": {
+          "n_tokens": 20863,
+          "n_categories_tested": 8,
+          "mean_jaccard": 0.3427,
+          "section_token_counts": {
+            "H": 3070,
+            "T": 573,
+            "B": 6425,
+            "C": 1306,
+            "S": 9489
+          }
+        },
+        "WEAK": {
+          "n_tokens": 1523,
+          "n_categories_tested": 7,
+          "mean_jaccard": 0.8938,
+          "section_token_counts": {
+            "H": 225,
+            "T": 64,
+            "B": 257,
+            "C": 117,
+            "S": 860
+          }
+        }
+      },
+      "comparison": {
+        "ls_jaccard": 0.3427,
+        "weak_jaccard": 0.8938,
+        "delta": -0.5511,
+        "direction": "WEAK_HIGHER"
+      }
+    }
+  }
+}

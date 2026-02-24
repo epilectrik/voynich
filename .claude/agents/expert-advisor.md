@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1098 validated constraints and 71 explanatory fits loaded
+embedded below. You have ALL 1099 validated constraints and 71 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1098 validated)
+- Tier 0-2 binding constraints (1099 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1098 constraints, 71 fits,
+full content in their source documents. All 1099 constraints, 71 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-24 13:45
-**Version:** FROZEN STATE (1098 constraints, 71 fits) [COMPACT]
+**Generated:** 2026-02-24 14:10
+**Version:** FROZEN STATE (1099 constraints, 71 fits) [COMPACT]
 
 ---
 
@@ -113,7 +113,7 @@ and 4 structural contracts are complete.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 4.51 | **Status:** FROZEN | **Constraints:** 1098 | **Date:** 2026-02-24
+**Version:** 4.52 | **Status:** FROZEN | **Constraints:** 1099 | **Date:** 2026-02-24
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1099 constraints | 2026-02-24
+CONSTRAINT_REFERENCE v2.6 | 1100 constraints | 2026-02-24
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2207,6 +2207,7 @@ C1251	**Atom Gloss Compositional Validation**
 C1252	**Folio Operational Specialization**
 C1253	**Paragraph-Level Apparatus Correlation**
 C1254	**Dark Pipeline Category Generalization**
+C1255	**Category-Section Universal Vocabulary**
 
 ---
 

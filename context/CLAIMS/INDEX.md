@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1098 validated constraints | **Version:** 4.51 | **Date:** 2026-02-24
+**Total:** 1099 validated constraints | **Version:** 4.52 | **Date:** 2026-02-24
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3488,6 +3488,20 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 - Section divergence fails: dark categories don't concentrate by section (selection-level, not category-level modulation)
 - Atom-level operational encoding penetrates HT layer — more fundamental than 49-class grammar boundary
 - Q-MIDDLEs (58 types, 127 tokens): insufficient data for 9th category test, no structural divergence from auto-assigned
+
+### Category Section Vocabulary (C1255) -- Phase: CATEGORY_SECTION_VOCABULARY (Phase 449)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1255** | **Category-Section Universal Vocabulary** (8 categories are section-universal in vocabulary but section-parameterized in frequency; 2/5 WEAK_SIGNAL; Jaccard 0.676≈null 0.669 shared vocab; 34.3% MIDDLEs section-enriched >2x p=0.001; LOO section classification 76.8% +37.8pp p=0.001; conditioned JS adds nothing 1.13x p=0.603; WEAK dark compounds J=0.894 section-specific vs LOCKED/SOLID J=0.343 universal; unifies C1134+C1148+C1176) | 2 | B, section, category, vocabulary, frequency, universal, dark-pipeline | -> [C1255_category_section_universal_vocabulary.md](C1255_category_section_universal_vocabulary.md) |
+
+**Phase 449 findings (Category Section Vocabulary):**
+- Operational categories are section-universal: same MIDDLEs used across all sections (Jaccard null)
+- Section identity encoded through frequency modulation (34.3% enriched, 76.8% classification accuracy)
+- Category conditioning orthogonal to section divergence (conditioned JS 1.13x, below null)
+- Dark compounds (WEAK tier) are section-specific (J=0.894 nearly disjoint); core grammar is universal (J=0.343)
+- MONITORING and MARKING most section-specific (55% and 48% enrichment rates)
+- Unifies C1134 (frequency modulation), C1148 (dark hyper-modulation), C1176 (atom-selection) into single picture
 
 ---
 
