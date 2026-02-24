@@ -4,6 +4,26 @@
 
 ---
 
+## Version 4.47.33 (2026-02-24) - Phase 444: EN Cross-Lane Pairing
+
+### Summary
+
+Phase 444: 6-test battery decomposing the C1242 cross-lane MI signal into specific QO-CHSH MIDDLE pairings. 2 new constraints (C1245-C1246). **Result: SELECTIVITY GRADIENT + MODE-DIFFERENTIATED PAIRING.** QO MIDDLEs span 1.773-bit entropy range in CHSH partner selection; rare MIDDLEs are selective, common are promiscuous (rho=0.665). E-depth shows matched intensity at category level (OR=2.625) but complementary within e-containing subset (rho=-0.262). i-atom control null (C1205 confirmed). Pair frequencies are domain-specific (refines C821). Mode A (specification) enriches energy+specific-measurement pairs (MI=1.425), Mode B (execution) enriches sustained+passive pairs (MI=0.978), JSD z=4.60 (C1246).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/EN_CROSS_LANE_PAIRING/` -- script + results (6 tests: T1-T6) |
+| **ADDED** | C1245-C1246 constraint files (2 new constraints, 1088->1090) |
+| **UPDATED** | `currierB.bcsc.yaml` -- cross_lane_prediction block extended |
+| **UPDATED** | `INTERPRETATION_SUMMARY.md` -- pairing decomposition section |
+| **UPDATED** | `CLAUDE.md` -- 1088->1090 constraints, 443->444 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 1088->1090 constraints |
+| **UPDATED** | `INDEX.md` -- 1088->1090 total, Phase 444 section added |
+
+---
+
 ## Version 4.46.32 (2026-02-23) - Phase 443: EN Lane Cross-Prediction
 
 ### Summary

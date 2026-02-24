@@ -6109,3 +6109,11 @@ Empirical support: bare k is 92.6% of QO heat MIDDLEs in REGIME_2 (highest inten
 ### Cycle Is Strictly Line-Scoped
 
 Cross-line atom MI is null (z=0.37). Cross-line lane pattern matches independence exactly. The heat-measure cycle resets at every line boundary, consistent with C1233 (cross-line independence).
+
+### Cross-Lane Pairing Decomposition (C1245, C1246)
+
+The C1242 MI signal decomposes into a **selectivity gradient**: rare QO MIDDLEs (ked, te, keeo) lock to 1-3 CHSH partners (entropy 3.4 bits), while common QO MIDDLEs (k, t, aiin) are promiscuous (entropy 4.6-5.1 bits, near the marginal 5.2 bits). Selectivity correlates with frequency (rho=0.665) — specialized operations require specific monitoring, generic operations accept any.
+
+E-depth shows a **two-scale pattern**: at the category level, e-containing tokens match (OR=2.625); within the e-containing subset, high-e QO pairs with low-e CHSH (rho=-0.262). Strong heat gets light monitoring; gentle heat gets deep monitoring.
+
+**Mode A (specification) and Mode B (execution) use different pairings** (JSD z=4.60). Mode A enriches energy+specific-measurement pairs (k-ck 5.1x, ke-ey 3.7x) with MI=1.425 bits. Mode B enriches sustained+passive pairs (k-eol 6.5x, l-edy 3.3x) with MI=0.978 bits. Specification lines lock energy to targeted checks; execution lines pair routine operations with generic monitoring.

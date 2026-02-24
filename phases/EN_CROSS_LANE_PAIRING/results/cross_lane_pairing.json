@@ -1,0 +1,1297 @@
+{
+  "phase": "EN_CROSS_LANE_PAIRING",
+  "phase_number": 444,
+  "metadata": {
+    "n_total_tokens": 23096,
+    "n_en_tokens": 13229,
+    "n_cross_lane_pairs": 5591,
+    "n_lines_with_2plus_en": 2330
+  },
+  "T1_pair_enrichment": {
+    "test": "T1_pair_enrichment",
+    "n_pairs": 5591,
+    "n_cells_tested": 166,
+    "bonferroni_alpha": 0.00030120481927710846,
+    "n_enriched_sig": 4,
+    "n_depleted_sig": 2,
+    "enriched": [
+      {
+        "qo_middle": "l",
+        "chsh_middle": "ey",
+        "obs": 42,
+        "exp": 21.4,
+        "ratio": 1.96,
+        "odds_ratio": 2.271,
+        "p_raw": 1.4347349362072115e-05,
+        "p_corrected": 0.002381659994103971,
+        "significant": "True"
+      },
+      {
+        "qo_middle": "k",
+        "chsh_middle": "eck",
+        "obs": 43,
+        "exp": 26.3,
+        "ratio": 1.632,
+        "odds_ratio": 2.22,
+        "p_raw": 0.00025720406247736207,
+        "p_corrected": 0.0426958743712421,
+        "significant": "True"
+      },
+      {
+        "qo_middle": "k",
+        "chsh_middle": "ey",
+        "obs": 181,
+        "exp": 142.3,
+        "ratio": 1.272,
+        "odds_ratio": 1.482,
+        "p_raw": 9.291019413767802e-05,
+        "p_corrected": 0.015423092226854552,
+        "significant": "True"
+      },
+      {
+        "qo_middle": "k",
+        "chsh_middle": "edy",
+        "obs": 441,
+        "exp": 352.5,
+        "ratio": 1.251,
+        "odds_ratio": 1.54,
+        "p_raw": 4.884810152022671e-10,
+        "p_corrected": 8.108784852357634e-08,
+        "significant": "True"
+      }
+    ],
+    "depleted": [
+      {
+        "qo_middle": "aiin",
+        "chsh_middle": "edy",
+        "obs": 25,
+        "exp": 46.2,
+        "ratio": 0.541,
+        "odds_ratio": 0.468,
+        "p_raw": 0.00017122755973154028,
+        "p_corrected": 0.028423774915435688,
+        "significant": "True"
+      },
+      {
+        "qo_middle": "k",
+        "chsh_middle": "ed",
+        "obs": 32,
+        "exp": 54.7,
+        "ratio": 0.585,
+        "odds_ratio": 0.491,
+        "p_raw": 0.00016214047562519034,
+        "p_corrected": 0.026915318953781596,
+        "significant": "True"
+      }
+    ],
+    "verdict": "WEAK_PAIRING"
+  },
+  "T2_selectivity_gradient": {
+    "test": "T2_selectivity_gradient",
+    "n_qo_middles_tested": 36,
+    "marginal_chsh_entropy": 5.241,
+    "qo_selectivities": [
+      {
+        "qo_middle": "ked",
+        "n_pairs": 26,
+        "n_partners": 14,
+        "entropy": 3.364,
+        "selectivity_ratio": 1.558,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 8,
+            "frac": 0.308
+          },
+          {
+            "chsh_middle": "dy",
+            "count": 3,
+            "frac": 0.115
+          },
+          {
+            "chsh_middle": "eey",
+            "count": 2,
+            "frac": 0.077
+          }
+        ]
+      },
+      {
+        "qo_middle": "te",
+        "n_pairs": 56,
+        "n_partners": 22,
+        "entropy": 3.49,
+        "selectivity_ratio": 1.501,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 21,
+            "frac": 0.375
+          },
+          {
+            "chsh_middle": "ey",
+            "count": 6,
+            "frac": 0.107
+          },
+          {
+            "chsh_middle": "ed",
+            "count": 4,
+            "frac": 0.071
+          }
+        ]
+      },
+      {
+        "qo_middle": "keeo",
+        "n_pairs": 21,
+        "n_partners": 13,
+        "entropy": 3.499,
+        "selectivity_ratio": 1.498,
+        "top_3": [
+          {
+            "chsh_middle": "ek",
+            "count": 4,
+            "frac": 0.19
+          },
+          {
+            "chsh_middle": "edy",
+            "count": 3,
+            "frac": 0.143
+          },
+          {
+            "chsh_middle": "eo",
+            "count": 2,
+            "frac": 0.095
+          }
+        ]
+      },
+      {
+        "qo_middle": "lch",
+        "n_pairs": 23,
+        "n_partners": 14,
+        "entropy": 3.501,
+        "selectivity_ratio": 1.497,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 6,
+            "frac": 0.261
+          },
+          {
+            "chsh_middle": "e",
+            "count": 2,
+            "frac": 0.087
+          },
+          {
+            "chsh_middle": "ol",
+            "count": 2,
+            "frac": 0.087
+          }
+        ]
+      },
+      {
+        "qo_middle": "eol",
+        "n_pairs": 26,
+        "n_partners": 15,
+        "entropy": 3.639,
+        "selectivity_ratio": 1.44,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 5,
+            "frac": 0.192
+          },
+          {
+            "chsh_middle": "ey",
+            "count": 4,
+            "frac": 0.154
+          },
+          {
+            "chsh_middle": "ol",
+            "count": 2,
+            "frac": 0.077
+          }
+        ]
+      },
+      {
+        "qo_middle": "l",
+        "n_pairs": 241,
+        "n_partners": 40,
+        "entropy": 3.692,
+        "selectivity_ratio": 1.419,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 74,
+            "frac": 0.307
+          },
+          {
+            "chsh_middle": "ey",
+            "count": 42,
+            "frac": 0.174
+          },
+          {
+            "chsh_middle": "e",
+            "count": 26,
+            "frac": 0.108
+          }
+        ]
+      },
+      {
+        "qo_middle": "kc",
+        "n_pairs": 23,
+        "n_partners": 15,
+        "entropy": 3.762,
+        "selectivity_ratio": 1.393,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 3,
+            "frac": 0.13
+          },
+          {
+            "chsh_middle": "ey",
+            "count": 3,
+            "frac": 0.13
+          },
+          {
+            "chsh_middle": "e",
+            "count": 2,
+            "frac": 0.087
+          }
+        ]
+      },
+      {
+        "qo_middle": "ed",
+        "n_pairs": 39,
+        "n_partners": 22,
+        "entropy": 3.776,
+        "selectivity_ratio": 1.388,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 13,
+            "frac": 0.333
+          },
+          {
+            "chsh_middle": "eol",
+            "count": 3,
+            "frac": 0.077
+          },
+          {
+            "chsh_middle": "ey",
+            "count": 2,
+            "frac": 0.051
+          }
+        ]
+      },
+      {
+        "qo_middle": "ol",
+        "n_pairs": 60,
+        "n_partners": 23,
+        "entropy": 3.793,
+        "selectivity_ratio": 1.382,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 18,
+            "frac": 0.3
+          },
+          {
+            "chsh_middle": "dy",
+            "count": 6,
+            "frac": 0.1
+          },
+          {
+            "chsh_middle": "ed",
+            "count": 4,
+            "frac": 0.067
+          }
+        ]
+      },
+      {
+        "qo_middle": "or",
+        "n_pairs": 31,
+        "n_partners": 18,
+        "entropy": 3.793,
+        "selectivity_ratio": 1.382,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 8,
+            "frac": 0.258
+          },
+          {
+            "chsh_middle": "eok",
+            "count": 2,
+            "frac": 0.065
+          },
+          {
+            "chsh_middle": "d",
+            "count": 2,
+            "frac": 0.065
+          }
+        ]
+      },
+      {
+        "qo_middle": "eeo",
+        "n_pairs": 31,
+        "n_partners": 18,
+        "entropy": 3.913,
+        "selectivity_ratio": 1.339,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 4,
+            "frac": 0.129
+          },
+          {
+            "chsh_middle": "eey",
+            "count": 4,
+            "frac": 0.129
+          },
+          {
+            "chsh_middle": "e",
+            "count": 3,
+            "frac": 0.097
+          }
+        ]
+      },
+      {
+        "qo_middle": "p",
+        "n_pairs": 20,
+        "n_partners": 16,
+        "entropy": 3.922,
+        "selectivity_ratio": 1.336,
+        "top_3": [
+          {
+            "chsh_middle": "e",
+            "count": 2,
+            "frac": 0.1
+          },
+          {
+            "chsh_middle": "dy",
+            "count": 2,
+            "frac": 0.1
+          },
+          {
+            "chsh_middle": "edy",
+            "count": 2,
+            "frac": 0.1
+          }
+        ]
+      },
+      {
+        "qo_middle": "eed",
+        "n_pairs": 31,
+        "n_partners": 18,
+        "entropy": 3.938,
+        "selectivity_ratio": 1.331,
+        "top_3": [
+          {
+            "chsh_middle": "ol",
+            "count": 4,
+            "frac": 0.129
+          },
+          {
+            "chsh_middle": "e",
+            "count": 4,
+            "frac": 0.129
+          },
+          {
+            "chsh_middle": "eey",
+            "count": 3,
+            "frac": 0.097
+          }
+        ]
+      },
+      {
+        "qo_middle": "ee",
+        "n_pairs": 37,
+        "n_partners": 20,
+        "entropy": 4.064,
+        "selectivity_ratio": 1.289,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 5,
+            "frac": 0.135
+          },
+          {
+            "chsh_middle": "eey",
+            "count": 4,
+            "frac": 0.108
+          },
+          {
+            "chsh_middle": "e",
+            "count": 4,
+            "frac": 0.108
+          }
+        ]
+      },
+      {
+        "qo_middle": "r",
+        "n_pairs": 46,
+        "n_partners": 24,
+        "entropy": 4.071,
+        "selectivity_ratio": 1.287,
+        "top_3": [
+          {
+            "chsh_middle": "ey",
+            "count": 10,
+            "frac": 0.217
+          },
+          {
+            "chsh_middle": "eey",
+            "count": 5,
+            "frac": 0.109
+          },
+          {
+            "chsh_middle": "o",
+            "count": 4,
+            "frac": 0.087
+          }
+        ]
+      },
+      {
+        "qo_middle": "o",
+        "n_pairs": 29,
+        "n_partners": 19,
+        "entropy": 4.073,
+        "selectivity_ratio": 1.287,
+        "top_3": [
+          {
+            "chsh_middle": "ey",
+            "count": 4,
+            "frac": 0.138
+          },
+          {
+            "chsh_middle": "dy",
+            "count": 3,
+            "frac": 0.103
+          },
+          {
+            "chsh_middle": "od",
+            "count": 2,
+            "frac": 0.069
+          }
+        ]
+      },
+      {
+        "qo_middle": "ai",
+        "n_pairs": 32,
+        "n_partners": 20,
+        "entropy": 4.117,
+        "selectivity_ratio": 1.273,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 4,
+            "frac": 0.125
+          },
+          {
+            "chsh_middle": "ed",
+            "count": 3,
+            "frac": 0.094
+          },
+          {
+            "chsh_middle": "t",
+            "count": 3,
+            "frac": 0.094
+          }
+        ]
+      },
+      {
+        "qo_middle": "tch",
+        "n_pairs": 44,
+        "n_partners": 24,
+        "entropy": 4.278,
+        "selectivity_ratio": 1.225,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 8,
+            "frac": 0.182
+          },
+          {
+            "chsh_middle": "dy",
+            "count": 4,
+            "frac": 0.091
+          },
+          {
+            "chsh_middle": "d",
+            "count": 2,
+            "frac": 0.045
+          }
+        ]
+      },
+      {
+        "qo_middle": "pch",
+        "n_pairs": 49,
+        "n_partners": 26,
+        "entropy": 4.308,
+        "selectivity_ratio": 1.216,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 7,
+            "frac": 0.143
+          },
+          {
+            "chsh_middle": "ey",
+            "count": 5,
+            "frac": 0.102
+          },
+          {
+            "chsh_middle": "ed",
+            "count": 4,
+            "frac": 0.082
+          }
+        ]
+      },
+      {
+        "qo_middle": "kch",
+        "n_pairs": 72,
+        "n_partners": 30,
+        "entropy": 4.418,
+        "selectivity_ratio": 1.186,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 13,
+            "frac": 0.181
+          },
+          {
+            "chsh_middle": "dy",
+            "count": 6,
+            "frac": 0.083
+          },
+          {
+            "chsh_middle": "eo",
+            "count": 6,
+            "frac": 0.083
+          }
+        ]
+      },
+      {
+        "qo_middle": "ke",
+        "n_pairs": 260,
+        "n_partners": 56,
+        "entropy": 4.42,
+        "selectivity_ratio": 1.186,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 66,
+            "frac": 0.254
+          },
+          {
+            "chsh_middle": "e",
+            "count": 31,
+            "frac": 0.119
+          },
+          {
+            "chsh_middle": "ey",
+            "count": 23,
+            "frac": 0.088
+          }
+        ]
+      },
+      {
+        "qo_middle": "eey",
+        "n_pairs": 145,
+        "n_partners": 41,
+        "entropy": 4.534,
+        "selectivity_ratio": 1.156,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 23,
+            "frac": 0.159
+          },
+          {
+            "chsh_middle": "ey",
+            "count": 16,
+            "frac": 0.11
+          },
+          {
+            "chsh_middle": "eey",
+            "count": 15,
+            "frac": 0.103
+          }
+        ]
+      },
+      {
+        "qo_middle": "ain",
+        "n_pairs": 200,
+        "n_partners": 46,
+        "entropy": 4.564,
+        "selectivity_ratio": 1.148,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 35,
+            "frac": 0.175
+          },
+          {
+            "chsh_middle": "ey",
+            "count": 24,
+            "frac": 0.12
+          },
+          {
+            "chsh_middle": "e",
+            "count": 23,
+            "frac": 0.115
+          }
+        ]
+      },
+      {
+        "qo_middle": "al",
+        "n_pairs": 169,
+        "n_partners": 51,
+        "entropy": 4.584,
+        "selectivity_ratio": 1.143,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 43,
+            "frac": 0.254
+          },
+          {
+            "chsh_middle": "ey",
+            "count": 14,
+            "frac": 0.083
+          },
+          {
+            "chsh_middle": "dy",
+            "count": 12,
+            "frac": 0.071
+          }
+        ]
+      },
+      {
+        "qo_middle": "am",
+        "n_pairs": 36,
+        "n_partners": 27,
+        "entropy": 4.593,
+        "selectivity_ratio": 1.141,
+        "top_3": [
+          {
+            "chsh_middle": "d",
+            "count": 4,
+            "frac": 0.111
+          },
+          {
+            "chsh_middle": "edy",
+            "count": 3,
+            "frac": 0.083
+          },
+          {
+            "chsh_middle": "et",
+            "count": 2,
+            "frac": 0.056
+          }
+        ]
+      },
+      {
+        "qo_middle": "dy",
+        "n_pairs": 55,
+        "n_partners": 31,
+        "entropy": 4.593,
+        "selectivity_ratio": 1.141,
+        "top_3": [
+          {
+            "chsh_middle": "ed",
+            "count": 6,
+            "frac": 0.109
+          },
+          {
+            "chsh_middle": "edy",
+            "count": 6,
+            "frac": 0.109
+          },
+          {
+            "chsh_middle": "eo",
+            "count": 5,
+            "frac": 0.091
+          }
+        ]
+      },
+      {
+        "qo_middle": "k",
+        "n_pairs": 1601,
+        "n_partners": 135,
+        "entropy": 4.648,
+        "selectivity_ratio": 1.127,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 441,
+            "frac": 0.275
+          },
+          {
+            "chsh_middle": "ey",
+            "count": 181,
+            "frac": 0.113
+          },
+          {
+            "chsh_middle": "e",
+            "count": 99,
+            "frac": 0.062
+          }
+        ]
+      },
+      {
+        "qo_middle": "eo",
+        "n_pairs": 39,
+        "n_partners": 29,
+        "entropy": 4.663,
+        "selectivity_ratio": 1.124,
+        "top_3": [
+          {
+            "chsh_middle": "e",
+            "count": 4,
+            "frac": 0.103
+          },
+          {
+            "chsh_middle": "edy",
+            "count": 3,
+            "frac": 0.077
+          },
+          {
+            "chsh_middle": "eo",
+            "count": 3,
+            "frac": 0.077
+          }
+        ]
+      },
+      {
+        "qo_middle": "edy",
+        "n_pairs": 189,
+        "n_partners": 53,
+        "entropy": 4.668,
+        "selectivity_ratio": 1.123,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 48,
+            "frac": 0.254
+          },
+          {
+            "chsh_middle": "e",
+            "count": 12,
+            "frac": 0.063
+          },
+          {
+            "chsh_middle": "dy",
+            "count": 11,
+            "frac": 0.058
+          }
+        ]
+      },
+      {
+        "qo_middle": "e",
+        "n_pairs": 187,
+        "n_partners": 56,
+        "entropy": 4.694,
+        "selectivity_ratio": 1.116,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 45,
+            "frac": 0.241
+          },
+          {
+            "chsh_middle": "ed",
+            "count": 15,
+            "frac": 0.08
+          },
+          {
+            "chsh_middle": "ey",
+            "count": 12,
+            "frac": 0.064
+          }
+        ]
+      },
+      {
+        "qo_middle": "ey",
+        "n_pairs": 80,
+        "n_partners": 37,
+        "entropy": 4.708,
+        "selectivity_ratio": 1.113,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 11,
+            "frac": 0.138
+          },
+          {
+            "chsh_middle": "ey",
+            "count": 9,
+            "frac": 0.113
+          },
+          {
+            "chsh_middle": "dy",
+            "count": 6,
+            "frac": 0.075
+          }
+        ]
+      },
+      {
+        "qo_middle": "y",
+        "n_pairs": 97,
+        "n_partners": 40,
+        "entropy": 4.819,
+        "selectivity_ratio": 1.087,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 13,
+            "frac": 0.134
+          },
+          {
+            "chsh_middle": "ey",
+            "count": 8,
+            "frac": 0.082
+          },
+          {
+            "chsh_middle": "eey",
+            "count": 7,
+            "frac": 0.072
+          }
+        ]
+      },
+      {
+        "qo_middle": "t",
+        "n_pairs": 412,
+        "n_partners": 75,
+        "entropy": 4.83,
+        "selectivity_ratio": 1.085,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 92,
+            "frac": 0.223
+          },
+          {
+            "chsh_middle": "e",
+            "count": 30,
+            "frac": 0.073
+          },
+          {
+            "chsh_middle": "ey",
+            "count": 27,
+            "frac": 0.066
+          }
+        ]
+      },
+      {
+        "qo_middle": "ar",
+        "n_pairs": 167,
+        "n_partners": 50,
+        "entropy": 4.846,
+        "selectivity_ratio": 1.081,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 30,
+            "frac": 0.18
+          },
+          {
+            "chsh_middle": "dy",
+            "count": 15,
+            "frac": 0.09
+          },
+          {
+            "chsh_middle": "ar",
+            "count": 8,
+            "frac": 0.048
+          }
+        ]
+      },
+      {
+        "qo_middle": "d",
+        "n_pairs": 76,
+        "n_partners": 42,
+        "entropy": 5.036,
+        "selectivity_ratio": 1.041,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 8,
+            "frac": 0.105
+          },
+          {
+            "chsh_middle": "eo",
+            "count": 5,
+            "frac": 0.066
+          },
+          {
+            "chsh_middle": "ck",
+            "count": 4,
+            "frac": 0.053
+          }
+        ]
+      },
+      {
+        "qo_middle": "aiin",
+        "n_pairs": 210,
+        "n_partners": 61,
+        "entropy": 5.137,
+        "selectivity_ratio": 1.02,
+        "top_3": [
+          {
+            "chsh_middle": "edy",
+            "count": 25,
+            "frac": 0.119
+          },
+          {
+            "chsh_middle": "ey",
+            "count": 17,
+            "frac": 0.081
+          },
+          {
+            "chsh_middle": "eo",
+            "count": 15,
+            "frac": 0.071
+          }
+        ]
+      }
+    ],
+    "entropy_range": 1.773,
+    "selectivity_vs_frequency": {
+      "rho": 0.665,
+      "p": 0.0
+    },
+    "verdict": "SELECTIVITY_GRADIENT"
+  },
+  "T3_edepth_correlation": {
+    "test": "T3_edepth_correlation",
+    "n_pairs": 5591,
+    "spearman_ee": {
+      "rho": 0.0655,
+      "p": 9.61e-07
+    },
+    "spearman_ke": {
+      "rho": 0.0459,
+      "p": 0.000602
+    },
+    "spearman_ek": {
+      "rho": -0.0022,
+      "p": 0.872
+    },
+    "stratified_ee": {
+      "rho": -0.2615,
+      "p": 3.86e-67,
+      "n": 4235
+    },
+    "cross_tab": {
+      "both_single": 4721,
+      "qo_single_chsh_multi": 482,
+      "qo_multi_chsh_single": 306,
+      "both_multi": 82,
+      "fisher_p": 0.0,
+      "odds_ratio": 2.625
+    },
+    "fb007_prediction": "MATCHED_INTENSITY"
+  },
+  "T4_i_atom_control": {
+    "test": "T4_i_atom_control",
+    "spearman_ii": {
+      "rho": 0.0093,
+      "p": 0.488
+    },
+    "spearman_ie": {
+      "rho": -0.005,
+      "p": 0.707
+    },
+    "n_pairs_with_i": 568,
+    "is_null": "True",
+    "verdict": "CONTROL_PASSED"
+  },
+  "T5_conditioning": {
+    "test": "T5_conditioning",
+    "n_pairs_tested": 6,
+    "section_results": {
+      "l-ey": {
+        "counts": {
+          "B": 28,
+          "H": 0,
+          "S": 14
+        },
+        "chi2": 23.28,
+        "p": 0.0001,
+        "sig": "True"
+      },
+      "k-eck": {
+        "counts": {
+          "B": 29,
+          "H": 2,
+          "S": 12
+        },
+        "chi2": 22.77,
+        "p": 0.0001,
+        "sig": "True"
+      },
+      "k-ey": {
+        "counts": {
+          "B": 97,
+          "H": 11,
+          "S": 72
+        },
+        "chi2": 41.12,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "k-edy": {
+        "counts": {
+          "B": 282,
+          "H": 23,
+          "S": 124
+        },
+        "chi2": 195.64,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "aiin-edy": {
+        "counts": {
+          "B": 10,
+          "H": 1,
+          "S": 14
+        },
+        "chi2": 4.15,
+        "p": 0.3857,
+        "sig": "False"
+      },
+      "k-ed": {
+        "counts": {
+          "B": 11,
+          "H": 1,
+          "S": 19
+        },
+        "chi2": 4.58,
+        "p": 0.3337,
+        "sig": "False"
+      }
+    },
+    "regime_results": {
+      "l-ey": {
+        "counts": {
+          "REGIME_1": 39,
+          "REGIME_2": 0,
+          "REGIME_3": 3,
+          "REGIME_4": 0
+        },
+        "chi2": 21.18,
+        "p": 0.0001,
+        "sig": "True"
+      },
+      "k-eck": {
+        "counts": {
+          "REGIME_1": 40,
+          "REGIME_2": 0,
+          "REGIME_3": 2,
+          "REGIME_4": 1
+        },
+        "chi2": 21.76,
+        "p": 0.0001,
+        "sig": "True"
+      },
+      "k-ey": {
+        "counts": {
+          "REGIME_1": 159,
+          "REGIME_2": 3,
+          "REGIME_3": 15,
+          "REGIME_4": 4
+        },
+        "chi2": 67.65,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "k-edy": {
+        "counts": {
+          "REGIME_1": 380,
+          "REGIME_2": 12,
+          "REGIME_3": 41,
+          "REGIME_4": 8
+        },
+        "chi2": 154.28,
+        "p": 0.0,
+        "sig": "True"
+      },
+      "aiin-edy": {
+        "counts": {
+          "REGIME_1": 17,
+          "REGIME_2": 1,
+          "REGIME_3": 6,
+          "REGIME_4": 1
+        },
+        "chi2": 1.29,
+        "p": 0.7319,
+        "sig": "False"
+      },
+      "k-ed": {
+        "counts": {
+          "REGIME_1": 20,
+          "REGIME_2": 0,
+          "REGIME_3": 11,
+          "REGIME_4": 1
+        },
+        "chi2": 3.95,
+        "p": 0.2672,
+        "sig": "False"
+      }
+    },
+    "n_section_significant": 4,
+    "n_regime_significant": 4,
+    "c821_consistent": false,
+    "verdict": "DOMAIN_SPECIFIC"
+  },
+  "T6_mode_pairing": {
+    "test": "T6_mode_pairing",
+    "n_paragraphs": 47,
+    "n_lines_with_modes": 557,
+    "n_mode_a_pairs": 546,
+    "n_mode_b_pairs": 756,
+    "mi_mode_a": 1.425,
+    "mi_mode_b": 0.9772,
+    "jsd": 0.41877,
+    "jsd_z": 4.6,
+    "mode_a_enriched": [
+      {
+        "qo_middle": "k",
+        "chsh_middle": "ect",
+        "a_frac": 0.0092,
+        "b_frac": 0.0013,
+        "ratio": 6.92
+      },
+      {
+        "qo_middle": "k",
+        "chsh_middle": "ck",
+        "a_frac": 0.0403,
+        "b_frac": 0.0079,
+        "ratio": 5.08
+      },
+      {
+        "qo_middle": "ke",
+        "chsh_middle": "ey",
+        "a_frac": 0.0147,
+        "b_frac": 0.004,
+        "ratio": 3.69
+      },
+      {
+        "qo_middle": "k",
+        "chsh_middle": "ckh",
+        "a_frac": 0.0092,
+        "b_frac": 0.004,
+        "ratio": 2.31
+      },
+      {
+        "qo_middle": "ke",
+        "chsh_middle": "e",
+        "a_frac": 0.0183,
+        "b_frac": 0.0093,
+        "ratio": 1.98
+      },
+      {
+        "qo_middle": "t",
+        "chsh_middle": "e",
+        "a_frac": 0.0092,
+        "b_frac": 0.0053,
+        "ratio": 1.73
+      },
+      {
+        "qo_middle": "k",
+        "chsh_middle": "eck",
+        "a_frac": 0.0165,
+        "b_frac": 0.0106,
+        "ratio": 1.56
+      },
+      {
+        "qo_middle": "ke",
+        "chsh_middle": "edy",
+        "a_frac": 0.0256,
+        "b_frac": 0.0185,
+        "ratio": 1.38
+      },
+      {
+        "qo_middle": "k",
+        "chsh_middle": "ey",
+        "a_frac": 0.0421,
+        "b_frac": 0.0317,
+        "ratio": 1.33
+      }
+    ],
+    "mode_b_enriched": [
+      {
+        "qo_middle": "k",
+        "chsh_middle": "eol",
+        "a_frac": 0.0037,
+        "b_frac": 0.0238,
+        "ratio": 6.5
+      },
+      {
+        "qo_middle": "l",
+        "chsh_middle": "eey",
+        "a_frac": 0.0018,
+        "b_frac": 0.0093,
+        "ratio": 5.06
+      },
+      {
+        "qo_middle": "k",
+        "chsh_middle": "cth",
+        "a_frac": 0.0018,
+        "b_frac": 0.0066,
+        "ratio": 3.61
+      },
+      {
+        "qo_middle": "ke",
+        "chsh_middle": "eol",
+        "a_frac": 0.0018,
+        "b_frac": 0.0066,
+        "ratio": 3.61
+      },
+      {
+        "qo_middle": "l",
+        "chsh_middle": "edy",
+        "a_frac": 0.0092,
+        "b_frac": 0.0304,
+        "ratio": 3.32
+      },
+      {
+        "qo_middle": "edy",
+        "chsh_middle": "edy",
+        "a_frac": 0.0055,
+        "b_frac": 0.0172,
+        "ratio": 3.13
+      },
+      {
+        "qo_middle": "al",
+        "chsh_middle": "edy",
+        "a_frac": 0.0037,
+        "b_frac": 0.0093,
+        "ratio": 2.53
+      },
+      {
+        "qo_middle": "ain",
+        "chsh_middle": "edy",
+        "a_frac": 0.0037,
+        "b_frac": 0.0093,
+        "ratio": 2.53
+      },
+      {
+        "qo_middle": "k",
+        "chsh_middle": "k",
+        "a_frac": 0.0037,
+        "b_frac": 0.0093,
+        "ratio": 2.53
+      },
+      {
+        "qo_middle": "l",
+        "chsh_middle": "e",
+        "a_frac": 0.0037,
+        "b_frac": 0.0093,
+        "ratio": 2.53
+      }
+    ],
+    "verdict": "MODE_DIFFERENTIATED"
+  }
+}

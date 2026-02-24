@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1088 validated constraints | **Version:** 4.46 | **Date:** 2026-02-23
+**Total:** 1090 validated constraints | **Version:** 4.47 | **Date:** 2026-02-24
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3411,6 +3411,20 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 - aiin→ain directional wind-down (64.9%): sustained cycling → final pass
 - Extensible atom scaling (e=intensity, i=duration) documented as fit F-B-007
 - Cycle strictly line-scoped (cross-line null)
+
+### EN Cross-Lane Pairing (C1245-C1246) -- Phase: EN_CROSS_LANE_PAIRING (Phase 444)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1245** | **Cross-Lane Selectivity Gradient** (QO MIDDLEs span 1.773-bit entropy range in CHSH partner selection; rare=selective common=promiscuous rho=0.665; 4 enriched pairs survive Bonferroni; e-depth matched at category OR=2.625 complementary within e-subset rho=-0.262; pair frequencies domain-specific refines C821) | 2 | B, cross-lane, selectivity, entropy, e-depth, pairing | -> [C1245_cross_lane_selectivity_gradient.md](C1245_cross_lane_selectivity_gradient.md) |
+| **1246** | **Mode-Differentiated Cross-Lane Pairing** (Mode A/B lines use different QO-CHSH pairings JSD z=4.60; Mode A MI=1.425 Mode B MI=0.978; A enriches energy+specific-measurement B enriches sustained+passive-monitoring; extends C1229/C1230 to cross-lane level) | 2 | B, cross-lane, mode, pairing, specification, execution | -> [C1246_mode_differentiated_pairing.md](C1246_mode_differentiated_pairing.md) |
+
+**Phase 444 findings (EN Cross-Lane Pairing):**
+- Selectivity gradient: rare QO MIDDLEs lock to few CHSH partners, common ones are promiscuous
+- E-depth matched at category level (OR=2.625) but complementary within e-subset (rho=-0.262)
+- i-atom control null (C1205 confirmed)
+- Pair frequencies are domain-specific (refines C821: topology invariant, frequencies not)
+- Mode A (specification) has tighter heat-measure coupling than Mode B (execution)
 
 ---
 

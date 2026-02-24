@@ -13,7 +13,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1088 validated constraints and 71 explanatory fits loaded
+embedded below. You have ALL 1090 validated constraints and 71 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -54,8 +54,8 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # EMBEDDED EXPERT CONTEXT
 
-**Generated:** 2026-02-24 08:36
-**Version:** FROZEN STATE (1088 constraints, 71 fits) [FULL]
+**Generated:** 2026-02-24 09:30
+**Version:** FROZEN STATE (1090 constraints, 71 fits) [FULL]
 
 ---
 
@@ -79,7 +79,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 4.46 | **Status:** FROZEN | **Constraints:** 1088 | **Date:** 2026-02-23
+**Version:** 4.47 | **Status:** FROZEN | **Constraints:** 1090 | **Date:** 2026-02-24
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -335,8 +335,8 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 1088 |
-| Completed phases | 443 |
+| Validated constraints | 1090 |
+| Completed phases | 444 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -1828,7 +1828,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1089 constraints | 2026-02-24
+CONSTRAINT_REFERENCE v2.6 | 1091 constraints | 2026-02-24
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2923,6 +2923,8 @@ C1241	**Header-Body Length Independence** (header complexity does not predict bo
 C1242	**Cross-Lane Content Prediction** (adjacent QO/CHSH pairs MI=1.0632 bits z_perm=13.42 GENUINE; within-lane ordering null z_wl=0.05; kernel routing z=49.12 CHSH→QO 2.2x stronger; cross-line null z=0.37; line-scoped co-occurrence not sequential)	2	B, cross-lane, MI, prediction, kernel, routing, line-scoped	-> C1242_cross_lane_content_prediction.md
 C1243	**sh/ch Cross-Lane Routing Split** (sh→QO(k) 32.0% vs ch→QO(k) 24.0% 1.34x; sh entropy 4.763 ch entropy 5.068; sh=monitor-pivot formulaic ch=checkpoint-gate varied; extends C929 with routing evidence)	2	B, sh, ch, routing, pivot, gate, C929-extension	-> C1243_sh_ch_routing_split.md
 C1244	**aiin-ain Sequential Wind-Down** (aiin before ain 64.9% on co-occurring lines 98/151; adjacent aiin→ain 19 vs ain→aiin 11; loop-back 15.5% 2.05x baseline; 84.5% advance to different MIDDLE; sustained cycling to final pass)	2	B, suffix, aiin, ain, wind-down, iteration, ordering	-> C1244_aiin_ain_wind_down.md
+C1245	**Cross-Lane Selectivity Gradient** (QO MIDDLEs span 1.773-bit entropy range in CHSH partner selection; rare=selective common=promiscuous rho=0.665; 4 enriched pairs survive Bonferroni; e-depth matched at category OR=2.625 complementary within e-subset rho=-0.262; pair frequencies domain-specific refines C821)	2	B, cross-lane, selectivity, entropy, e-depth, pairing	-> C1245_cross_lane_selectivity_gradient.md
+C1246	**Mode-Differentiated Cross-Lane Pairing** (Mode A/B lines use different QO-CHSH pairings JSD z=4.60; Mode A MI=1.425 Mode B MI=0.978; A enriches energy+specific-measurement B enriches sustained+passive-monitoring; extends C1229/C1230 to cross-lane level)	2	B, cross-lane, mode, pairing, specification, execution	-> C1246_mode_differentiated_pairing.md
 
 ---
 
@@ -9123,6 +9125,14 @@ Empirical support: bare k is 92.6% of QO heat MIDDLEs in REGIME_2 (highest inten
 
 Cross-line atom MI is null (z=0.37). Cross-line lane pattern matches independence exactly. The heat-measure cycle resets at every line boundary, consistent with C1233 (cross-line independence).
 
+### Cross-Lane Pairing Decomposition (C1245, C1246)
+
+The C1242 MI signal decomposes into a **selectivity gradient**: rare QO MIDDLEs (ked, te, keeo) lock to 1-3 CHSH partners (entropy 3.4 bits), while common QO MIDDLEs (k, t, aiin) are promiscuous (entropy 4.6-5.1 bits, near the marginal 5.2 bits). Selectivity correlates with frequency (rho=0.665) — specialized operations require specific monitoring, generic operations accept any.
+
+E-depth shows a **two-scale pattern**: at the category level, e-containing tokens match (OR=2.625); within the e-containing subset, high-e QO pairs with low-e CHSH (rho=-0.262). Strong heat gets light monitoring; gentle heat gets deep monitoring.
+
+**Mode A (specification) and Mode B (execution) use different pairings** (JSD z=4.60). Mode A enriches energy+specific-measurement pairs (k-ck 5.1x, ke-ey 3.7x) with MI=1.425 bits. Mode B enriches sustained+passive pairs (k-eol 6.5x, l-edy 3.3x) with MI=0.978 bits. Specification lines lock energy to targeted checks; execution lines pair routine operations with generic monitoring.
+
 
 ---
 
@@ -12338,7 +12348,7 @@ provenance:
 
   cross_lane_prediction:
     description: "Cross-lane content prediction, routing asymmetry, and heat-measure cycle"
-    constraints: [C1242, C1243, C1244]
+    constraints: [C1242, C1243, C1244, C1245, C1246]
     fits: [F-B-007]
     findings:
       - "Adjacent QO/CHSH pairs show genuine MIDDLE co-occurrence MI=1.0632 z=13.42 but null sequential ordering z=0.05 (C1242)"
@@ -12347,6 +12357,9 @@ provenance:
       - "sh=monitor-pivot routes to heat 32% formulaic; ch=checkpoint-gate routes to heat 24% varied (C1243)"
       - "aiin→ain directional wind-down 64.9%: sustained cycling to final pass (C1244)"
       - "e-extension=intensity (k>ke>kee), i-extension=duration (i<ii): two independent scaling axes (F-B-007, fit)"
+      - "QO MIDDLEs span 1.773-bit selectivity gradient; rare=selective common=promiscuous rho=0.665 (C1245)"
+      - "E-depth matched at category (OR=2.625) but complementary within e-subset rho=-0.262; i null (C1245)"
+      - "Mode A enriches energy+specific-measurement pairs MI=1.425; Mode B enriches sustained+passive MI=0.978 JSD z=4.60 (C1246)"
 
   small_role_anatomy:
     - "C581"   # CC definitive census

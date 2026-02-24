@@ -2431,7 +2431,7 @@ provenance:
 
   cross_lane_prediction:
     description: "Cross-lane content prediction, routing asymmetry, and heat-measure cycle"
-    constraints: [C1242, C1243, C1244]
+    constraints: [C1242, C1243, C1244, C1245, C1246]
     fits: [F-B-007]
     findings:
       - "Adjacent QO/CHSH pairs show genuine MIDDLE co-occurrence MI=1.0632 z=13.42 but null sequential ordering z=0.05 (C1242)"
@@ -2440,6 +2440,9 @@ provenance:
       - "sh=monitor-pivot routes to heat 32% formulaic; ch=checkpoint-gate routes to heat 24% varied (C1243)"
       - "aiin→ain directional wind-down 64.9%: sustained cycling to final pass (C1244)"
       - "e-extension=intensity (k>ke>kee), i-extension=duration (i<ii): two independent scaling axes (F-B-007, fit)"
+      - "QO MIDDLEs span 1.773-bit selectivity gradient; rare=selective common=promiscuous rho=0.665 (C1245)"
+      - "E-depth matched at category (OR=2.625) but complementary within e-subset rho=-0.262; i null (C1245)"
+      - "Mode A enriches energy+specific-measurement pairs MI=1.425; Mode B enriches sustained+passive MI=0.978 JSD z=4.60 (C1246)"
 
   small_role_anatomy:
     - "C581"   # CC definitive census
