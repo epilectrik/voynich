@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1082 validated constraints and 70 explanatory fits loaded
+embedded below. You have ALL 1085 validated constraints and 70 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1082 validated)
+- Tier 0-2 binding constraints (1085 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1082 constraints, 70 fits,
+full content in their source documents. All 1085 constraints, 70 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-23 20:34
-**Version:** FROZEN STATE (1082 constraints, 70 fits) [COMPACT]
+**Generated:** 2026-02-23 21:24
+**Version:** FROZEN STATE (1085 constraints, 70 fits) [COMPACT]
 
 ---
 
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1083 constraints | 2026-02-23
+CONSTRAINT_REFERENCE v2.6 | 1086 constraints | 2026-02-23
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2191,6 +2191,9 @@ C1235	**Line-Final Routing Architecture** (line-final = routing not processing; 
 C1236	**Suffix Scope Markers** (terminal suffixes -edy Mode A specification 2.5-3.0x; checkpoint suffixes -aiin mode-independent; Mode A=36.1% terminal, Mode B=62.0% bare)
 C1237	**Paragraph Termination by -am** (-am 5.19x at paragraph-final; terminal suffixes are batch-close not termination; last lines shorter 7.3 vs 10.0, cooling-enriched; steady-state until -am)
 C1238	**Kernel Initiation Order** (first-occurrence ordering e->k->h cool->process->monitor; e before k 64.6%, h before k only 28.3%; refines C873 mean-position ordering)
+C1239	**Paragraph Body Length Parameterization**
+C1240	**Paragraph-Final -am Trigger Context**
+C1241	**Header-Body Length Independence** (header complexity does not predict body length r=-0.039 tokens, -0.072 unique MIDDLEs; length externally determined; short and long paragraphs structurally identical)
 
 ---
 

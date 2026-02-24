@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1082 validated constraints | **Version:** 4.44 | **Date:** 2026-02-23
+**Total:** 1085 validated constraints | **Version:** 4.45 | **Date:** 2026-02-23
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3387,6 +3387,14 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 | **1236** | **Suffix Scope Markers** (terminal suffixes -edy Mode A specification 2.5-3.0x; checkpoint suffixes -aiin mode-independent; Mode A=36.1% terminal, Mode B=62.0% bare) | 2 | B, suffix, scope, terminal, checkpoint, mode | -> [C1236_suffix_scope_markers.md](C1236_suffix_scope_markers.md) |
 | **1237** | **Paragraph Termination by -am** (-am 5.19x at paragraph-final; terminal suffixes are batch-close not termination; last lines shorter 7.3 vs 10.0, cooling-enriched; steady-state until -am) | 2 | B, paragraph, termination, -am, cooling | -> [C1237_paragraph_termination_by_am.md](C1237_paragraph_termination_by_am.md) |
 | **1238** | **Kernel Initiation Order** (first-occurrence ordering e->k->h cool->process->monitor; e before k 64.6%, h before k only 28.3%; refines C873 mean-position ordering) | 2 | B, kernel, initiation, ordering, e, k, h | -> [C1238_kernel_initiation_order.md](C1238_kernel_initiation_order.md) |
+
+### Paragraph Termination Mechanics (C1239-C1241) -- Phase: PARAGRAPH_TERMINATION_MECHANICS (Phase 442)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1239** | **Paragraph Body Length Parameterization** (section-parameterized F=17.35 eta2=0.107, REGIME-parameterized F=12.55 eta2=0.061; within-section roughly memoryless HERBAL var/mean=0.92; BIO 6.15 lines, HERBAL 2.80; ~85% variance folio-specific; non-geometric is mixture artifact) | 2 | B, paragraph, length, section, REGIME, memoryless | -> [C1239_paragraph_length_parameterization.md](C1239_paragraph_length_parameterization.md) |
+| **1240** | **Paragraph-Final -am Trigger Context** (qo prefix 0% at para-final vs 19.7% non-final; ch 2.81x, al 3.80x, e-MIDDLE 2.53x enriched; preceded by aiin/aiiin loop-check; cooling-verified shutdown not processing; n=31) | 2 | B, paragraph, termination, -am, trigger, cooling, shutdown | -> [C1240_am_trigger_context.md](C1240_am_trigger_context.md) |
+| **1241** | **Header-Body Length Independence** (header complexity does not predict body length r=-0.039 tokens, -0.072 unique MIDDLEs; length externally determined; short and long paragraphs structurally identical) | 2 | B, paragraph, header, body, length, independence | -> [C1241_header_body_independence.md](C1241_header_body_independence.md) |
 
 ---
 

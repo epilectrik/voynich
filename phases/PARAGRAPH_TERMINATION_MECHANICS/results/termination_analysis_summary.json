@@ -1,0 +1,55 @@
+{
+  "phase": 442,
+  "name": "PARAGRAPH_TERMINATION_MECHANICS",
+  "description": "Investigate what controls paragraph length and what triggers -am termination. Five gaps: distribution shape, section/REGIME effects, -am trigger context, short vs long structure, header-body correlation.",
+
+  "findings": {
+    "gap1_distribution": {
+      "title": "Body Length Distribution Shape",
+      "result": "Overall non-geometric (chi2=64.30, z=12.14), but this is a MIXTURE artifact. Within sections, termination is roughly memoryless: HERBAL var/mean=0.92, T=1.06 (near-geometric). BIO=5.00, Stars=2.22 (overdispersed due to folio variation).",
+      "interpretation": "Each section has its own roughly geometric termination rate. No cross-line memory or state accumulation. Confirms C1237 steady-state model."
+    },
+    "gap2_effects": {
+      "title": "Section & REGIME Effects on Body Length",
+      "section_f": 17.35,
+      "section_eta2": 0.107,
+      "regime_f": 12.55,
+      "regime_eta2": 0.061,
+      "section_means": {"B": 6.15, "C": 4.88, "S": 3.62, "T": 3.05, "H": 2.80},
+      "regime_means": {"REGIME_1": 5.03, "REGIME_2": 3.07, "REGIME_3": 3.26, "REGIME_4": 3.32},
+      "interpretation": "Section explains 10.7%, REGIME 6.1%. Combined ~15%. The remaining 85% is folio/paragraph specific. BIO runs longest (thermal-intensive processes), HERBAL shortest."
+    },
+    "gap3_am_trigger": {
+      "title": "-am Trigger Context",
+      "para_final_am_count": 31,
+      "nonpara_final_am_count": 157,
+      "key_findings": {
+        "qo_absent": "qo prefix is 0% at paragraph-final -am vs 19.7% at non-final. Processing prefix never appears in termination.",
+        "ch_enriched": "ch prefix 2.81x enriched at paragraph-final",
+        "al_enriched": "al prefix 3.80x enriched at paragraph-final",
+        "e_middle_enriched": "e-MIDDLE 2.53x enriched — cooling at termination",
+        "preceded_by_loop_check": "aiin/aiiin appear immediately before paragraph-final -am",
+        "position": "Para-final -am at body position 0.677 vs non-final at 0.313",
+        "line_length": "Para-final -am on shorter lines (8.6 vs 10.6)"
+      },
+      "interpretation": "Paragraph-final -am is a cooling-verified shutdown: system switches from processing (qo absent) to monitoring (ch/al), cools (e-MIDDLE), checks loop (aiin), then fires -am. Structurally distinct from mid-paragraph batch-close -am."
+    },
+    "gap4_short_vs_long": {
+      "title": "Short vs Long Paragraph Structure",
+      "counts": {"short_2-4": 331, "medium_5-7": 102, "long_8+": 58},
+      "result": "Structurally identical. Kernel balance, mode ratio, interleave rate all similar across length classes. Length difference is a section composition effect (SHORT=60% Stars, LONG=60% BIO), not internal structural difference."
+    },
+    "gap5_header_body": {
+      "title": "Header Complexity -> Body Length",
+      "n_pairs": 75,
+      "correlations": {"h_tokens": -0.039, "h_unique_middles": -0.072, "h_ht_count": -0.009, "h_kernel_diversity": 0.213},
+      "result": "Header complexity does NOT predict body length. All correlations near zero. Length is externally determined, not programmed by header specification."
+    }
+  },
+
+  "new_constraints": {
+    "C1239": "Paragraph body length is section-parameterized (F=17.35, eta2=0.107) and REGIME-parameterized (F=12.55, eta2=0.061). Within sections, termination is roughly memoryless (HERBAL var/mean=0.92, T=1.06). BIO averages 6.15 body lines, HERBAL 2.80. ~85% of length variance is folio/paragraph specific.",
+    "C1240": "Paragraph-final -am has distinctive trigger context: qo prefix absent (0% vs 19.7% non-final), ch enriched 2.81x, al enriched 3.80x, e-MIDDLE enriched 2.53x, preceded by loop-check tokens (aiin/aiiin). Termination is a cooling-verified shutdown, not a processing operation. n=31, small sample.",
+    "C1241": "Header complexity does not predict body length (r=-0.039 for token count, -0.072 for unique MIDDLEs). Paragraph length is externally determined, not programmed by header specification. Short and long paragraphs are structurally identical (same kernel balance, mode ratio, interleave rate)."
+  }
+}

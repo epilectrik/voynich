@@ -1,0 +1,103 @@
+{
+  "gap1_distribution": {
+    "n_paragraphs": 584,
+    "mean_body_length": 4.0,
+    "std": 3.61,
+    "variance": 13.07,
+    "dispersion_ratio": 1.09,
+    "geometric_p": 0.2498,
+    "chi2_geometric": 64.3,
+    "df": 10,
+    "length_distribution": {
+      "1": 93,
+      "2": 122,
+      "3": 125,
+      "4": 84,
+      "5": 51,
+      "6": 34,
+      "7": 17,
+      "8": 19,
+      "9": 7,
+      "10": 5,
+      "11": 6,
+      "12": 3,
+      "13": 2,
+      "14": 3,
+      "15": 1,
+      "16": 3,
+      "18": 1,
+      "20": 1,
+      "21": 2,
+      "23": 1,
+      "24": 1,
+      "27": 1,
+      "28": 1,
+      "32": 1
+    },
+    "section_means": {
+      "S": 3.62,
+      "H": 2.8,
+      "T": 3.05,
+      "B": 6.15,
+      "C": 4.88
+    }
+  },
+  "gap2_effects": {
+    "section_f": 17.35,
+    "section_eta2": 0.107,
+    "regime_f": 12.55,
+    "regime_eta2": 0.061,
+    "regime_means": {
+      "REGIME_1": 5.03,
+      "REGIME_3": 3.26,
+      "REGIME_4": 3.32,
+      "REGIME_2": 3.07
+    }
+  },
+  "gap3_am_context": {
+    "para_final_am_count": 31,
+    "nonpara_final_am_count": 157,
+    "para_final_top_words": {
+      "alkam": 3,
+      "olkam": 3,
+      "chctham": 2,
+      "cheokam": 1,
+      "charam": 1,
+      "opalkam": 1,
+      "lcheam": 1,
+      "okalam": 1,
+      "cheam": 1,
+      "chedam": 1
+    },
+    "nonpara_final_top_words": {
+      "qokam": 19,
+      "ram": 12,
+      "qotam": 6,
+      "chdam": 5,
+      "lam": 4,
+      "olkam": 3,
+      "daram": 3,
+      "chedam": 3,
+      "opam": 3,
+      "otaram": 3
+    },
+    "para_final_mean_position": 0.677,
+    "nonpara_final_mean_position": 0.313,
+    "para_final_mean_linelen": 8.6,
+    "nonpara_final_mean_linelen": 10.6
+  },
+  "gap4_short_vs_long": {
+    "short_count": 331,
+    "medium_count": 102,
+    "long_count": 58
+  },
+  "gap5_header_body": {
+    "n_pairs": 75,
+    "correlations": {
+      "h_tokens": -0.039,
+      "h_unique_middles": -0.072,
+      "h_ht_count": -0.009,
+      "h_kernel_diversity": 0.213
+    }
+  }
+}
