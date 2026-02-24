@@ -152,7 +152,7 @@ All glosses below have been validated by the expert-advisor agent against the co
 | -ey | set / established | **Early (0.435)** | Condition established, proceed. GLOSS_RESEARCH Test 02 |
 | -ly | settled / cooled | Late (0.695) | Strong late bias |
 | -am | finalize | **Line-final (0.930)** | Almost exclusively last token |
-| -aiin / -ain | check | Early-mid (0.465/0.477) | Verification moment, C561 |
+| -aiin / -ain | settle / intake | Early-mid (0.465/0.477) | C561 bigram, C1244 wind-down, C1245 iteration. aiin=sustained cycling (a+ii+n), ain=final pass (a+i+n). "Check" applies to or→aiin bigram (C561), not suffix semantics — monitoring is CHSH's job (C929, C1243) |
 | -al | complete / transfer | Mid (0.494) | |
 | -ar | close | Mid (0.480) | |
 | -or | portion | Mid (0.473) | Kept neutral (expert rejected "measure", C469) |

@@ -1,6 +1,6 @@
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.91 | **Status:** FROZEN | **Constraints:** 1034 | **Date:** 2026-02-20
+**Version:** 4.46 | **Status:** FROZEN | **Constraints:** 1089 | **Date:** 2026-02-23
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >

@@ -6048,3 +6048,64 @@ Phase 409 adds three structural signatures that sharpen the operational-profile 
 **What Phase 409 rules out:** The dark-exclusive atom pool (25 atoms) is NOT a structurally special subclass — same section behavior (C1143), same slot positions (C1145), and doesn't explain ordering mismatches (C1144). The operational-profile naming system uses ALL atoms interchangeably. The 25 "dark-exclusive" atoms are simply rarer variants of the same building blocks — possibly encoding less common processing properties that only matter for material naming, not for operational instructions.
 
 **Updated analogy:** The manuscript is a recipe collection organized by material domain. Each section is like a chapter in a pharmacopoeia. The bridge MIDDLEs are the shared procedural verbs (heat, filter, decant, macerate) used across all chapters. The dark-pipeline MIDDLEs are the domain-specific ingredient lists — and each chapter has its own list, assembled from the same root concepts but combined differently to name different substances. When a procedure is complex, the recipe is mostly verbs; when many materials are involved, the recipe is mostly names. The names aren't arbitrary labels — they are compressed descriptions of how each material behaves under processing.
+
+## XV. Cross-Lane Content Prediction and Heat-Measure Cycle (Phase 443)
+
+**Phase:** EN_LANE_CROSS_PREDICTION | **Constraints:** C1242-C1245
+
+### Core Finding
+
+Adjacent QO and CHSH EN tokens carry paired information within each line. The specific QO MIDDLE predicts the specific CHSH MIDDLE (MI=1.0632 bits, z=13.42) — but the sequential order doesn't matter (z=0.05). It's the pairing that's structured, not the sequence. This resolves the C961 tension: within-lane ordering IS null, but cross-lane content pairing is genuine.
+
+### The Heat-Measure Cycle
+
+Lines encode a heat-measure cycle: QO applies energy, CHSH monitors, QO adjusts. The dominant atom handoff pattern:
+
+```
+QO(k-terminal) → CHSH(e-initial...y-terminal) → QO(k-initial)
+Heat            → Cool/measure...end           → Heat again
+```
+
+- Top QO→CHSH handoff: k→e at 20.7% (heat, then cool/measure)
+- Top CHSH→QO handoff: y→k at 19.5% (measurement done, heat again)
+- Lines open with CHSH 54.2% (measure first), close with QO 59.8% (heat last)
+- Kernel routing is massive (z=49.12), with CHSH→QO 2.2x stronger than QO→CHSH — the monitoring result constrains next energy operation more strongly than energy constrains monitoring. This is a feedback architecture.
+
+### sh Monitor-Pivot vs ch Checkpoint-Gate (C1243)
+
+The two CHSH prefixes serve different routing functions:
+
+| | sh (monitor) | ch (test) |
+|---|---|---|
+| Routes to QO(k=heat) | 32.0% | 24.0% |
+| Routes to k-containing | 47.2% | 35.6% |
+| Entropy (→QO) | 4.763 bits (formulaic) | 5.068 bits (varied) |
+| Function | **Pivot**: "watched, keep heating" | **Gate**: "tested, decide next action" |
+
+sh is the steady-state pivot that keeps the process running in the same mode. ch is the decision point that can branch to different operations based on the test result. This extends C929's positional/suffix evidence with cross-lane routing evidence.
+
+### aiin→ain Wind-Down Pattern (C1244)
+
+When both appear on a line, aiin precedes ain 64.9% of the time. This represents wind-down from sustained cycling to final pass:
+
+```
+qokaiin → sh(monitor) → qokain
+"heat, keep cycling" → watch → "heat, one more pass"
+```
+
+The MIDDLE changes 84.5% of the time (not literal repetition), but the suffix decreases: aiin (sustained) → ain (finishing). The cycle progresses through different operations while the iteration specification decreases.
+
+### Two Independent Scaling Axes (C1245, Tier 3)
+
+The two extensible atoms encode independent control parameters:
+
+| Dimension | Atom | Extension | Effect |
+|-----------|------|-----------|--------|
+| **Intensity** | e | e, ee, eee | k=full heat, ke=modulated, kee=gentle |
+| **Duration** | i | i, ii, iii | i=single pass, ii=sustained cycling |
+
+Empirical support: bare k is 92.6% of QO heat MIDDLEs in REGIME_2 (highest intensity), while ke mixing reaches 18.6% in REGIME_1 (modulated regime). The "check" gloss for -aiin/-ain (C561) applies to the or→aiin bigram context; in suffix semantics, aiin = a(yield) + ii(iterate) + n(halt) = "sustained cycling until halt."
+
+### Cycle Is Strictly Line-Scoped
+
+Cross-line atom MI is null (z=0.37). Cross-line lane pattern matches independence exactly. The heat-measure cycle resets at every line boundary, consistent with C1233 (cross-line independence).

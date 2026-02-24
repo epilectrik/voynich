@@ -1,0 +1,1324 @@
+{
+  "phase": "EN_LANE_CROSS_PREDICTION",
+  "stage": 1,
+  "n_lines_with_2plus_en": 2330,
+  "n_en_tokens": 13229,
+  "n_total_tokens": 23096,
+  "pair_counts": {
+    "CHSH_QO": 2951,
+    "QO_CHSH": 2640,
+    "QO_QO": 3249,
+    "CHSH_CHSH": 1990
+  },
+  "interleave_rate": 0.5163,
+  "T1_cross_lane_middle_mi": {
+    "n_pairs": 5591,
+    "chi2": 177464.3,
+    "cramers_v": 0.3237,
+    "mi_observed": 1.0632,
+    "mi_shuffle_mean_perm": 0.9077,
+    "mi_shuffle_std_perm": 0.0116,
+    "z_score_perm": 13.42,
+    "mi_shuffle_mean_within_lane": 1.0625,
+    "z_score_within_lane": 0.05,
+    "verdict": "GENUINE",
+    "enriched_top10": [
+      {
+        "qo_middle": "ar",
+        "chsh_middle": "dy",
+        "obs": 15,
+        "exp": 6.0,
+        "ratio": 2.5
+      },
+      {
+        "qo_middle": "e",
+        "chsh_middle": "ed",
+        "obs": 15,
+        "exp": 6.4,
+        "ratio": 2.35
+      },
+      {
+        "qo_middle": "aiin",
+        "chsh_middle": "eo",
+        "obs": 15,
+        "exp": 6.7,
+        "ratio": 2.24
+      },
+      {
+        "qo_middle": "eey",
+        "chsh_middle": "eey",
+        "obs": 15,
+        "exp": 7.1,
+        "ratio": 2.12
+      },
+      {
+        "qo_middle": "t",
+        "chsh_middle": "ct",
+        "obs": 16,
+        "exp": 7.7,
+        "ratio": 2.07
+      },
+      {
+        "qo_middle": "al",
+        "chsh_middle": "dy",
+        "obs": 12,
+        "exp": 6.1,
+        "ratio": 1.98
+      },
+      {
+        "qo_middle": "l",
+        "chsh_middle": "ey",
+        "obs": 42,
+        "exp": 21.4,
+        "ratio": 1.96
+      },
+      {
+        "qo_middle": "ke",
+        "chsh_middle": "e",
+        "obs": 31,
+        "exp": 16.9,
+        "ratio": 1.83
+      },
+      {
+        "qo_middle": "aiin",
+        "chsh_middle": "ck",
+        "obs": 12,
+        "exp": 6.7,
+        "ratio": 1.79
+      },
+      {
+        "qo_middle": "l",
+        "chsh_middle": "eey",
+        "obs": 21,
+        "exp": 11.8,
+        "ratio": 1.78
+      }
+    ],
+    "depleted_top10": [
+      {
+        "qo_middle": "l",
+        "chsh_middle": "eo",
+        "obs": 1,
+        "exp": 7.7,
+        "ratio": 0.13
+      },
+      {
+        "qo_middle": "l",
+        "chsh_middle": "ek",
+        "obs": 1,
+        "exp": 5.4,
+        "ratio": 0.19
+      },
+      {
+        "qo_middle": "ol",
+        "chsh_middle": "ey",
+        "obs": 1,
+        "exp": 5.3,
+        "ratio": 0.19
+      },
+      {
+        "qo_middle": "ke",
+        "chsh_middle": "eo",
+        "obs": 2,
+        "exp": 8.3,
+        "ratio": 0.24
+      },
+      {
+        "qo_middle": "o",
+        "chsh_middle": "edy",
+        "obs": 2,
+        "exp": 6.4,
+        "ratio": 0.31
+      },
+      {
+        "qo_middle": "e",
+        "chsh_middle": "eo",
+        "obs": 2,
+        "exp": 6.0,
+        "ratio": 0.34
+      },
+      {
+        "qo_middle": "k",
+        "chsh_middle": "t",
+        "obs": 3,
+        "exp": 8.9,
+        "ratio": 0.34
+      },
+      {
+        "qo_middle": "eo",
+        "chsh_middle": "edy",
+        "obs": 3,
+        "exp": 8.6,
+        "ratio": 0.35
+      },
+      {
+        "qo_middle": "k",
+        "chsh_middle": "eeo",
+        "obs": 4,
+        "exp": 11.2,
+        "ratio": 0.36
+      },
+      {
+        "qo_middle": "t",
+        "chsh_middle": "k",
+        "obs": 2,
+        "exp": 5.5,
+        "ratio": 0.36
+      }
+    ]
+  },
+  "T1a_same_lane_control": {
+    "QO_QO": {
+      "n_pairs": 3249,
+      "mi_observed": 1.3285,
+      "mi_shuffle_mean": 1.1709,
+      "mi_shuffle_std": 0.0151,
+      "z_score": 10.46
+    },
+    "CHSH_CHSH": {
+      "n_pairs": 1990,
+      "mi_observed": 1.7568,
+      "mi_shuffle_mean": 1.6105,
+      "mi_shuffle_std": 0.0174,
+      "z_score": 8.42
+    },
+    "cross_vs_same_ratio": 0.689
+  },
+  "T3_directional_asymmetry": {
+    "QO_to_CHSH": {
+      "n_pairs": 2640,
+      "chi2": 106231.7,
+      "cramers_v": 0.4306,
+      "mi_observed": 1.3163,
+      "mi_shuffle_mean": 1.1723,
+      "mi_shuffle_std": 0.0175,
+      "z_score": 8.23
+    },
+    "CHSH_to_QO": {
+      "n_pairs": 2951,
+      "chi2": 86929.0,
+      "cramers_v": 0.3518,
+      "mi_observed": 1.3044,
+      "mi_shuffle_mean": 1.1397,
+      "mi_shuffle_std": 0.0163,
+      "z_score": 10.09
+    },
+    "direction_ratio": 1.009,
+    "stronger_direction": "QO_to_CHSH"
+  },
+  "T4_kernel_routing": {
+    "n_pairs": 5591,
+    "chi2": 1206.8,
+    "cramers_v": 0.1242,
+    "mi_observed": 0.147,
+    "mi_shuffle_mean": 0.0273,
+    "mi_shuffle_std": 0.0024,
+    "z_score": 49.12,
+    "carryover_matrix": {
+      "a->a": {
+        "obs": 3,
+        "ratio": 0.97
+      },
+      "a->c": {
+        "obs": 2,
+        "ratio": null
+      },
+      "a->d": {
+        "obs": 3,
+        "ratio": null
+      },
+      "a->e": {
+        "obs": 19,
+        "ratio": 1.42
+      },
+      "a->f": {
+        "obs": 0,
+        "ratio": null
+      },
+      "a->i": {
+        "obs": 0,
+        "ratio": null
+      },
+      "a->k": {
+        "obs": 2,
+        "ratio": 0.27
+      },
+      "a->l": {
+        "obs": 0,
+        "ratio": null
+      },
+      "a->o": {
+        "obs": 2,
+        "ratio": null
+      },
+      "a->p": {
+        "obs": 0,
+        "ratio": null
+      },
+      "a->r": {
+        "obs": 0,
+        "ratio": null
+      },
+      "a->s": {
+        "obs": 0,
+        "ratio": null
+      },
+      "a->t": {
+        "obs": 1,
+        "ratio": null
+      },
+      "a->x": {
+        "obs": 0,
+        "ratio": null
+      },
+      "a->y": {
+        "obs": 2,
+        "ratio": null
+      },
+      "c->a": {
+        "obs": 2,
+        "ratio": 0.33
+      },
+      "c->c": {
+        "obs": 2,
+        "ratio": 0.66
+      },
+      "c->d": {
+        "obs": 2,
+        "ratio": 0.65
+      },
+      "c->e": {
+        "obs": 26,
+        "ratio": 1.0
+      },
+      "c->f": {
+        "obs": 1,
+        "ratio": null
+      },
+      "c->i": {
+        "obs": 0,
+        "ratio": null
+      },
+      "c->k": {
+        "obs": 12,
+        "ratio": 0.83
+      },
+      "c->l": {
+        "obs": 0,
+        "ratio": null
+      },
+      "c->o": {
+        "obs": 5,
+        "ratio": 1.17
+      },
+      "c->p": {
+        "obs": 9,
+        "ratio": null
+      },
+      "c->r": {
+        "obs": 0,
+        "ratio": null
+      },
+      "c->s": {
+        "obs": 0,
+        "ratio": null
+      },
+      "c->t": {
+        "obs": 5,
+        "ratio": 1.08
+      },
+      "c->x": {
+        "obs": 0,
+        "ratio": null
+      },
+      "c->y": {
+        "obs": 2,
+        "ratio": null
+      },
+      "d->a": {
+        "obs": 40,
+        "ratio": 1.21
+      },
+      "d->c": {
+        "obs": 17,
+        "ratio": 1.01
+      },
+      "d->d": {
+        "obs": 31,
+        "ratio": 1.83
+      },
+      "d->e": {
+        "obs": 121,
+        "ratio": 0.84
+      },
+      "d->f": {
+        "obs": 1,
+        "ratio": null
+      },
+      "d->i": {
+        "obs": 0,
+        "ratio": null
+      },
+      "d->k": {
+        "obs": 61,
+        "ratio": 0.77
+      },
+      "d->l": {
+        "obs": 4,
+        "ratio": 0.39
+      },
+      "d->o": {
+        "obs": 39,
+        "ratio": 1.65
+      },
+      "d->p": {
+        "obs": 13,
+        "ratio": 2.52
+      },
+      "d->r": {
+        "obs": 0,
+        "ratio": null
+      },
+      "d->s": {
+        "obs": 1,
+        "ratio": null
+      },
+      "d->t": {
+        "obs": 29,
+        "ratio": 1.13
+      },
+      "d->x": {
+        "obs": 1,
+        "ratio": null
+      },
+      "d->y": {
+        "obs": 7,
+        "ratio": 1.11
+      },
+      "e->a": {
+        "obs": 43,
+        "ratio": 0.95
+      },
+      "e->c": {
+        "obs": 19,
+        "ratio": 0.83
+      },
+      "e->d": {
+        "obs": 18,
+        "ratio": 0.78
+      },
+      "e->e": {
+        "obs": 222,
+        "ratio": 1.13
+      },
+      "e->f": {
+        "obs": 1,
+        "ratio": null
+      },
+      "e->i": {
+        "obs": 0,
+        "ratio": null
+      },
+      "e->k": {
+        "obs": 104,
+        "ratio": 0.95
+      },
+      "e->l": {
+        "obs": 11,
+        "ratio": 0.77
+      },
+      "e->o": {
+        "obs": 32,
+        "ratio": 0.98
+      },
+      "e->p": {
+        "obs": 6,
+        "ratio": 0.85
+      },
+      "e->r": {
+        "obs": 0,
+        "ratio": null
+      },
+      "e->s": {
+        "obs": 2,
+        "ratio": null
+      },
+      "e->t": {
+        "obs": 36,
+        "ratio": 1.02
+      },
+      "e->x": {
+        "obs": 0,
+        "ratio": null
+      },
+      "e->y": {
+        "obs": 7,
+        "ratio": 0.81
+      },
+      "f->a": {
+        "obs": 2,
+        "ratio": null
+      },
+      "f->c": {
+        "obs": 0,
+        "ratio": null
+      },
+      "f->d": {
+        "obs": 2,
+        "ratio": null
+      },
+      "f->e": {
+        "obs": 3,
+        "ratio": 0.54
+      },
+      "f->f": {
+        "obs": 0,
+        "ratio": null
+      },
+      "f->i": {
+        "obs": 0,
+        "ratio": null
+      },
+      "f->k": {
+        "obs": 1,
+        "ratio": 0.33
+      },
+      "f->l": {
+        "obs": 0,
+        "ratio": null
+      },
+      "f->o": {
+        "obs": 0,
+        "ratio": null
+      },
+      "f->p": {
+        "obs": 2,
+        "ratio": null
+      },
+      "f->r": {
+        "obs": 0,
+        "ratio": null
+      },
+      "f->s": {
+        "obs": 0,
+        "ratio": null
+      },
+      "f->t": {
+        "obs": 3,
+        "ratio": null
+      },
+      "f->x": {
+        "obs": 0,
+        "ratio": null
+      },
+      "f->y": {
+        "obs": 1,
+        "ratio": null
+      },
+      "h->a": {
+        "obs": 21,
+        "ratio": 0.92
+      },
+      "h->c": {
+        "obs": 9,
+        "ratio": 0.77
+      },
+      "h->d": {
+        "obs": 19,
+        "ratio": 1.62
+      },
+      "h->e": {
+        "obs": 86,
+        "ratio": 0.86
+      },
+      "h->f": {
+        "obs": 2,
+        "ratio": null
+      },
+      "h->i": {
+        "obs": 0,
+        "ratio": null
+      },
+      "h->k": {
+        "obs": 43,
+        "ratio": 0.78
+      },
+      "h->l": {
+        "obs": 7,
+        "ratio": 0.97
+      },
+      "h->o": {
+        "obs": 29,
+        "ratio": 1.77
+      },
+      "h->p": {
+        "obs": 3,
+        "ratio": 0.84
+      },
+      "h->r": {
+        "obs": 1,
+        "ratio": null
+      },
+      "h->s": {
+        "obs": 0,
+        "ratio": null
+      },
+      "h->t": {
+        "obs": 28,
+        "ratio": 1.58
+      },
+      "h->x": {
+        "obs": 0,
+        "ratio": null
+      },
+      "h->y": {
+        "obs": 5,
+        "ratio": 1.14
+      },
+      "i->a": {
+        "obs": 4,
+        "ratio": 0.88
+      },
+      "i->c": {
+        "obs": 2,
+        "ratio": null
+      },
+      "i->d": {
+        "obs": 2,
+        "ratio": null
+      },
+      "i->e": {
+        "obs": 22,
+        "ratio": 1.12
+      },
+      "i->f": {
+        "obs": 0,
+        "ratio": null
+      },
+      "i->i": {
+        "obs": 0,
+        "ratio": null
+      },
+      "i->k": {
+        "obs": 4,
+        "ratio": 0.37
+      },
+      "i->l": {
+        "obs": 0,
+        "ratio": null
+      },
+      "i->o": {
+        "obs": 7,
+        "ratio": 2.16
+      },
+      "i->p": {
+        "obs": 2,
+        "ratio": null
+      },
+      "i->r": {
+        "obs": 1,
+        "ratio": null
+      },
+      "i->s": {
+        "obs": 1,
+        "ratio": null
+      },
+      "i->t": {
+        "obs": 5,
+        "ratio": 1.43
+      },
+      "i->x": {
+        "obs": 0,
+        "ratio": null
+      },
+      "i->y": {
+        "obs": 0,
+        "ratio": null
+      },
+      "k->a": {
+        "obs": 101,
+        "ratio": 0.97
+      },
+      "k->c": {
+        "obs": 87,
+        "ratio": 1.65
+      },
+      "k->d": {
+        "obs": 47,
+        "ratio": 0.88
+      },
+      "k->e": {
+        "obs": 608,
+        "ratio": 1.34
+      },
+      "k->f": {
+        "obs": 2,
+        "ratio": 0.61
+      },
+      "k->i": {
+        "obs": 0,
+        "ratio": null
+      },
+      "k->k": {
+        "obs": 148,
+        "ratio": 0.59
+      },
+      "k->l": {
+        "obs": 14,
+        "ratio": 0.43
+      },
+      "k->o": {
+        "obs": 83,
+        "ratio": 1.11
+      },
+      "k->p": {
+        "obs": 1,
+        "ratio": 0.06
+      },
+      "k->r": {
+        "obs": 2,
+        "ratio": 0.51
+      },
+      "k->s": {
+        "obs": 3,
+        "ratio": 0.97
+      },
+      "k->t": {
+        "obs": 30,
+        "ratio": 0.37
+      },
+      "k->x": {
+        "obs": 0,
+        "ratio": null
+      },
+      "k->y": {
+        "obs": 23,
+        "ratio": 1.15
+      },
+      "l->a": {
+        "obs": 41,
+        "ratio": 0.91
+      },
+      "l->c": {
+        "obs": 20,
+        "ratio": 0.87
+      },
+      "l->d": {
+        "obs": 29,
+        "ratio": 1.26
+      },
+      "l->e": {
+        "obs": 243,
+        "ratio": 1.24
+      },
+      "l->f": {
+        "obs": 0,
+        "ratio": null
+      },
+      "l->i": {
+        "obs": 1,
+        "ratio": null
+      },
+      "l->k": {
+        "obs": 84,
+        "ratio": 0.77
+      },
+      "l->l": {
+        "obs": 14,
+        "ratio": 0.99
+      },
+      "l->o": {
+        "obs": 27,
+        "ratio": 0.84
+      },
+      "l->p": {
+        "obs": 3,
+        "ratio": 0.43
+      },
+      "l->r": {
+        "obs": 1,
+        "ratio": null
+      },
+      "l->s": {
+        "obs": 2,
+        "ratio": null
+      },
+      "l->t": {
+        "obs": 26,
+        "ratio": 0.74
+      },
+      "l->x": {
+        "obs": 0,
+        "ratio": null
+      },
+      "l->y": {
+        "obs": 7,
+        "ratio": 0.81
+      },
+      "m->a": {
+        "obs": 1,
+        "ratio": null
+      },
+      "m->c": {
+        "obs": 2,
+        "ratio": null
+      },
+      "m->d": {
+        "obs": 2,
+        "ratio": null
+      },
+      "m->e": {
+        "obs": 3,
+        "ratio": 0.85
+      },
+      "m->f": {
+        "obs": 0,
+        "ratio": null
+      },
+      "m->i": {
+        "obs": 0,
+        "ratio": null
+      },
+      "m->k": {
+        "obs": 0,
+        "ratio": null
+      },
+      "m->l": {
+        "obs": 0,
+        "ratio": null
+      },
+      "m->o": {
+        "obs": 1,
+        "ratio": null
+      },
+      "m->p": {
+        "obs": 0,
+        "ratio": null
+      },
+      "m->r": {
+        "obs": 0,
+        "ratio": null
+      },
+      "m->s": {
+        "obs": 0,
+        "ratio": null
+      },
+      "m->t": {
+        "obs": 0,
+        "ratio": null
+      },
+      "m->x": {
+        "obs": 0,
+        "ratio": null
+      },
+      "m->y": {
+        "obs": 0,
+        "ratio": null
+      },
+      "n->a": {
+        "obs": 17,
+        "ratio": 0.78
+      },
+      "n->c": {
+        "obs": 23,
+        "ratio": 2.08
+      },
+      "n->d": {
+        "obs": 7,
+        "ratio": 0.63
+      },
+      "n->e": {
+        "obs": 153,
+        "ratio": 1.61
+      },
+      "n->f": {
+        "obs": 0,
+        "ratio": null
+      },
+      "n->i": {
+        "obs": 1,
+        "ratio": null
+      },
+      "n->k": {
+        "obs": 17,
+        "ratio": 0.32
+      },
+      "n->l": {
+        "obs": 0,
+        "ratio": 0.0
+      },
+      "n->o": {
+        "obs": 18,
+        "ratio": 1.15
+      },
+      "n->p": {
+        "obs": 2,
+        "ratio": 0.59
+      },
+      "n->r": {
+        "obs": 0,
+        "ratio": null
+      },
+      "n->s": {
+        "obs": 0,
+        "ratio": null
+      },
+      "n->t": {
+        "obs": 1,
+        "ratio": 0.06
+      },
+      "n->x": {
+        "obs": 0,
+        "ratio": null
+      },
+      "n->y": {
+        "obs": 2,
+        "ratio": 0.48
+      },
+      "o->a": {
+        "obs": 37,
+        "ratio": 1.28
+      },
+      "o->c": {
+        "obs": 5,
+        "ratio": 0.34
+      },
+      "o->d": {
+        "obs": 15,
+        "ratio": 1.01
+      },
+      "o->e": {
+        "obs": 96,
+        "ratio": 0.76
+      },
+      "o->f": {
+        "obs": 2,
+        "ratio": null
+      },
+      "o->i": {
+        "obs": 2,
+        "ratio": null
+      },
+      "o->k": {
+        "obs": 87,
+        "ratio": 1.25
+      },
+      "o->l": {
+        "obs": 6,
+        "ratio": 0.66
+      },
+      "o->o": {
+        "obs": 24,
+        "ratio": 1.16
+      },
+      "o->p": {
+        "obs": 7,
+        "ratio": 1.55
+      },
+      "o->r": {
+        "obs": 2,
+        "ratio": null
+      },
+      "o->s": {
+        "obs": 2,
+        "ratio": null
+      },
+      "o->t": {
+        "obs": 32,
+        "ratio": 1.43
+      },
+      "o->x": {
+        "obs": 1,
+        "ratio": null
+      },
+      "o->y": {
+        "obs": 2,
+        "ratio": 0.36
+      },
+      "p->a": {
+        "obs": 4,
+        "ratio": null
+      },
+      "p->c": {
+        "obs": 1,
+        "ratio": null
+      },
+      "p->d": {
+        "obs": 5,
+        "ratio": null
+      },
+      "p->e": {
+        "obs": 10,
+        "ratio": 0.77
+      },
+      "p->f": {
+        "obs": 0,
+        "ratio": null
+      },
+      "p->i": {
+        "obs": 0,
+        "ratio": null
+      },
+      "p->k": {
+        "obs": 6,
+        "ratio": 0.83
+      },
+      "p->l": {
+        "obs": 0,
+        "ratio": null
+      },
+      "p->o": {
+        "obs": 2,
+        "ratio": null
+      },
+      "p->p": {
+        "obs": 2,
+        "ratio": null
+      },
+      "p->r": {
+        "obs": 0,
+        "ratio": null
+      },
+      "p->s": {
+        "obs": 0,
+        "ratio": null
+      },
+      "p->t": {
+        "obs": 1,
+        "ratio": null
+      },
+      "p->x": {
+        "obs": 0,
+        "ratio": null
+      },
+      "p->y": {
+        "obs": 2,
+        "ratio": null
+      },
+      "r->a": {
+        "obs": 32,
+        "ratio": 1.84
+      },
+      "r->c": {
+        "obs": 12,
+        "ratio": 1.36
+      },
+      "r->d": {
+        "obs": 15,
+        "ratio": 1.69
+      },
+      "r->e": {
+        "obs": 84,
+        "ratio": 1.11
+      },
+      "r->f": {
+        "obs": 0,
+        "ratio": null
+      },
+      "r->i": {
+        "obs": 0,
+        "ratio": null
+      },
+      "r->k": {
+        "obs": 18,
+        "ratio": 0.43
+      },
+      "r->l": {
+        "obs": 2,
+        "ratio": 0.37
+      },
+      "r->o": {
+        "obs": 17,
+        "ratio": 1.36
+      },
+      "r->p": {
+        "obs": 3,
+        "ratio": null
+      },
+      "r->r": {
+        "obs": 0,
+        "ratio": null
+      },
+      "r->s": {
+        "obs": 0,
+        "ratio": null
+      },
+      "r->t": {
+        "obs": 6,
+        "ratio": 0.45
+      },
+      "r->x": {
+        "obs": 0,
+        "ratio": null
+      },
+      "r->y": {
+        "obs": 3,
+        "ratio": 0.9
+      },
+      "s->a": {
+        "obs": 1,
+        "ratio": 0.31
+      },
+      "s->c": {
+        "obs": 0,
+        "ratio": null
+      },
+      "s->d": {
+        "obs": 1,
+        "ratio": null
+      },
+      "s->e": {
+        "obs": 20,
+        "ratio": 1.41
+      },
+      "s->f": {
+        "obs": 1,
+        "ratio": null
+      },
+      "s->i": {
+        "obs": 0,
+        "ratio": null
+      },
+      "s->k": {
+        "obs": 2,
+        "ratio": 0.26
+      },
+      "s->l": {
+        "obs": 1,
+        "ratio": null
+      },
+      "s->o": {
+        "obs": 6,
+        "ratio": null
+      },
+      "s->p": {
+        "obs": 0,
+        "ratio": null
+      },
+      "s->r": {
+        "obs": 0,
+        "ratio": null
+      },
+      "s->s": {
+        "obs": 1,
+        "ratio": null
+      },
+      "s->t": {
+        "obs": 2,
+        "ratio": null
+      },
+      "s->x": {
+        "obs": 0,
+        "ratio": null
+      },
+      "s->y": {
+        "obs": 1,
+        "ratio": null
+      },
+      "t->a": {
+        "obs": 31,
+        "ratio": 0.99
+      },
+      "t->c": {
+        "obs": 20,
+        "ratio": 1.26
+      },
+      "t->d": {
+        "obs": 19,
+        "ratio": 1.19
+      },
+      "t->e": {
+        "obs": 149,
+        "ratio": 1.1
+      },
+      "t->f": {
+        "obs": 0,
+        "ratio": null
+      },
+      "t->i": {
+        "obs": 0,
+        "ratio": null
+      },
+      "t->k": {
+        "obs": 49,
+        "ratio": 0.65
+      },
+      "t->l": {
+        "obs": 7,
+        "ratio": 0.71
+      },
+      "t->o": {
+        "obs": 27,
+        "ratio": 1.21
+      },
+      "t->p": {
+        "obs": 2,
+        "ratio": 0.41
+      },
+      "t->r": {
+        "obs": 0,
+        "ratio": null
+      },
+      "t->s": {
+        "obs": 2,
+        "ratio": null
+      },
+      "t->t": {
+        "obs": 31,
+        "ratio": 1.28
+      },
+      "t->x": {
+        "obs": 0,
+        "ratio": null
+      },
+      "t->y": {
+        "obs": 8,
+        "ratio": 1.34
+      },
+      "x->a": {
+        "obs": 1,
+        "ratio": null
+      },
+      "x->c": {
+        "obs": 0,
+        "ratio": null
+      },
+      "x->d": {
+        "obs": 0,
+        "ratio": null
+      },
+      "x->e": {
+        "obs": 0,
+        "ratio": null
+      },
+      "x->f": {
+        "obs": 0,
+        "ratio": null
+      },
+      "x->i": {
+        "obs": 0,
+        "ratio": null
+      },
+      "x->k": {
+        "obs": 0,
+        "ratio": null
+      },
+      "x->l": {
+        "obs": 0,
+        "ratio": null
+      },
+      "x->o": {
+        "obs": 0,
+        "ratio": null
+      },
+      "x->p": {
+        "obs": 0,
+        "ratio": null
+      },
+      "x->r": {
+        "obs": 0,
+        "ratio": null
+      },
+      "x->s": {
+        "obs": 0,
+        "ratio": null
+      },
+      "x->t": {
+        "obs": 0,
+        "ratio": null
+      },
+      "x->x": {
+        "obs": 0,
+        "ratio": null
+      },
+      "x->y": {
+        "obs": 0,
+        "ratio": null
+      },
+      "y->a": {
+        "obs": 126,
+        "ratio": 0.94
+      },
+      "y->c": {
+        "obs": 36,
+        "ratio": 0.53
+      },
+      "y->d": {
+        "obs": 42,
+        "ratio": 0.61
+      },
+      "y->e": {
+        "obs": 337,
+        "ratio": 0.58
+      },
+      "y->f": {
+        "obs": 6,
+        "ratio": 1.41
+      },
+      "y->i": {
+        "obs": 2,
+        "ratio": null
+      },
+      "y->k": {
+        "obs": 580,
+        "ratio": 1.79
+      },
+      "y->l": {
+        "obs": 93,
+        "ratio": 2.2
+      },
+      "y->o": {
+        "obs": 44,
+        "ratio": 0.46
+      },
+      "y->p": {
+        "obs": 24,
+        "ratio": 1.14
+      },
+      "y->r": {
+        "obs": 12,
+        "ratio": 2.38
+      },
+      "y->s": {
+        "obs": 1,
+        "ratio": 0.25
+      },
+      "y->t": {
+        "obs": 156,
+        "ratio": 1.5
+      },
+      "y->x": {
+        "obs": 0,
+        "ratio": null
+      },
+      "y->y": {
+        "obs": 25,
+        "ratio": 0.97
+      }
+    },
+    "kernel_only": {
+      "e->e": 222,
+      "e->h": 0,
+      "e->k": 104,
+      "h->e": 86,
+      "h->h": 0,
+      "h->k": 43,
+      "k->e": 608,
+      "k->h": 0,
+      "k->k": 148
+    },
+    "directional": {
+      "QO_to_CHSH": {
+        "n_pairs": 2640,
+        "mi_observed": 0.0719,
+        "z_score": 5.94
+      },
+      "CHSH_to_QO": {
+        "n_pairs": 2951,
+        "mi_observed": 0.0999,
+        "z_score": 13.12
+      }
+    },
+    "c1200_comparison": "PRESENT"
+  }
+}

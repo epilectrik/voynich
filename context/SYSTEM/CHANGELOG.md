@@ -4,6 +4,27 @@
 
 ---
 
+## Version 4.46.32 (2026-02-23) - Phase 443: EN Lane Cross-Prediction
+
+### Summary
+
+Phase 443: 4-test battery (T1/T1a/T3/T4) plus exploratory cross-line, sh/ch routing, and aiin/ain ordering tests investigating whether adjacent QO and CHSH tokens predict each other's specific MIDDLE content. 4 new constraints (C1242-C1245). **Result: GENUINE CROSS-LANE CONTENT PREDICTION.** Adjacent cross-lane EN pairs show MI=1.0632 bits (z_perm=13.42) but within-lane ordering is null (z_wl=0.05) — it's line-level co-occurrence, not sequential. Kernel routing at lane boundaries is massive (z=49.12) with CHSH→QO asymmetry (2.2x). sh routes to heat 1.34x more than ch, functioning as a formulaic monitor-pivot while ch is a varied checkpoint-gate (C1243, extends C929). aiin→ain ordering is directional (64.9%), representing wind-down from sustained cycling to final pass (C1244, extends C1234). Extensible atoms encode two independent control dimensions: e=intensity (k/ke/kee), i=duration (i/ii) (C1245, Tier 3).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/EN_LANE_CROSS_PREDICTION/` -- script + results (Stage 1: T1/T1a/T3/T4) |
+| **ADDED** | C1242-C1245 constraint files (4 new constraints, 1085->1089) |
+| **UPDATED** | `currierB.bcsc.yaml` -- cross_lane_prediction block |
+| **UPDATED** | `GLOSSING.md` -- -aiin/-ain suffix gloss refined |
+| **UPDATED** | `INTERPRETATION_SUMMARY.md` -- heat-measure cycle section |
+| **UPDATED** | `CLAUDE.md` -- 1077->1089 constraints, 439->443 phases |
+| **UPDATED** | `CLAUDE_INDEX.md` -- 1034->1089 constraints, v3.91->v4.46 |
+| **UPDATED** | `INDEX.md` -- 1085->1089 total, Phase 443 section added |
+
+---
+
 ## Version 4.21.31 (2026-02-20) - Phase 421: Sister Entry Divergence Extension
 
 ### Summary
