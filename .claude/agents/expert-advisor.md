@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1085 validated constraints and 70 explanatory fits loaded
+embedded below. You have ALL 1089 validated constraints and 70 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1085 validated)
+- Tier 0-2 binding constraints (1089 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1085 constraints, 70 fits,
+full content in their source documents. All 1089 constraints, 70 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-23 21:24
-**Version:** FROZEN STATE (1085 constraints, 70 fits) [COMPACT]
+**Generated:** 2026-02-23 23:59
+**Version:** FROZEN STATE (1089 constraints, 70 fits) [COMPACT]
 
 ---
 
@@ -113,7 +113,7 @@ and 4 structural contracts are complete.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 3.91 | **Status:** FROZEN | **Constraints:** 1034 | **Date:** 2026-02-20
+**Version:** 4.46 | **Status:** FROZEN | **Constraints:** 1089 | **Date:** 2026-02-23
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1086 constraints | 2026-02-23
+CONSTRAINT_REFERENCE v2.6 | 1090 constraints | 2026-02-23
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2194,6 +2194,10 @@ C1238	**Kernel Initiation Order** (first-occurrence ordering e->k->h cool->proce
 C1239	**Paragraph Body Length Parameterization**
 C1240	**Paragraph-Final -am Trigger Context**
 C1241	**Header-Body Length Independence** (header complexity does not predict body length r=-0.039 tokens, -0.072 unique MIDDLEs; length externally determined; short and long paragraphs structurally identical)
+C1242	**Cross-Lane Content Prediction**
+C1243	**sh/ch Cross-Lane Routing Split** (sh→QO(k) 32.0% vs ch→QO(k) 24.0% 1.34x; sh entropy 4.763 ch entropy 5.068; sh=monitor-pivot formulaic ch=checkpoint-gate varied; extends C929 with routing evidence)
+C1244	**aiin-ain Sequential Wind-Down** (aiin before ain 64.9% on co-occurring lines 98/151; adjacent aiin→ain 19 vs ain→aiin 11; loop-back 15.5% 2.05x baseline; 84.5% advance to different MIDDLE; sustained cycling to final pass)
+C1245	**Extensible Atom Scaling** (e-extension=intensity k>ke>kee; i-extension=duration i<ii; bare k 92.6% REGIME_2 ke 18.6% REGIME_1; aiin=sustained-cycling ain=final-pass per C1195 atoms not "check"; two independent control dimensions)
 
 ---
 
@@ -4652,6 +4656,32 @@ The analogy is chemical nomenclature: methyl-ethyl-ketone names a substance by c
 
 
 
+
+
+
+## XV. Cross-Lane Content Prediction and Heat-Measure Cycle (Phase 443)
+
+### Core Finding
+
+Adjacent QO and CHSH EN tokens carry paired information within each line. The specific QO MIDDLE predicts the specific CHSH MIDDLE (MI=1.0632 bits, z=13.42) — but the sequential order doesn't matter (z=0.05). It's the pairing that's structured, not the sequence. This resolves the C961 tension: within-lane ordering IS null, but cross-lane content pairing is genuine.
+
+
+
+
+
+| | sh (monitor) | ch (test) |
+|---|---|---|
+| Routes to QO(k=heat) | 32.0% | 24.0% |
+| Routes to k-containing | 47.2% | 35.6% |
+
+
+
+
+
+| Dimension | Atom | Extension | Effect |
+|-----------|------|-----------|--------|
+| **Intensity** | e | e, ee, eee | k=full heat, ke=modulated, kee=gentle |
+| **Duration** | i | i, ii, iii | i=single pass, ii=sustained cycling |
 
 
 
