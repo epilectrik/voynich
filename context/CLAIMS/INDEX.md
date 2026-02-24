@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1076 validated constraints | **Version:** 4.43 | **Date:** 2026-02-22
+**Total:** 1082 validated constraints | **Version:** 4.44 | **Date:** 2026-02-23
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3376,6 +3376,17 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 | **1230** | **Suffix Mode MIDDLE Differentiation** (Mode A terminal-heavy lines have 1.62x k-family MIDDLEs p<0.000001, 2.86x prep MIDDLEs p=0.000034, 1.48x qo-PREFIX p<0.000001; Mode B bare-heavy lines have elevated e-family MIDDLEs p=0.000256; Mode A = energy + mechanical specification/agitation; Mode B = equilibration/continuation; partially lane-expressed r=0.256) | 2 | B, MIDDLE, PREFIX, suffix-mode, cycling, energy, extraction | -> [C1230_mode_middle_differentiation.md](C1230_mode_middle_differentiation.md) |
 | **1231** | **Universal Suffix Mode Centroids** (55 paragraphs converge on two global centroids: Mode A terminal=0.430/bare=0.466, Mode B terminal=0.155/bare=0.741; global silhouette 0.293 paragraph-labels, 0.428 refit; F=4.56 between/within variance ratio; modes are universal grammar property not paragraph-specific noise) | 2 | B, suffix-mode, universal, paragraph, clustering | -> [C1231_universal_suffix_modes.md](C1231_universal_suffix_modes.md) |
 | **1232** | **Paragraph Tail Product Signatures** (last 2 body lines cluster into k=3 distinct PREFIX+MIDDLE profiles silhouette 0.212; section-correlated chi2=31.73 p=0.0001; different paragraphs end with different operational signatures suggesting output product differentiation) | 2 | B, paragraph, tail, product, clustering, section | -> [C1232_paragraph_tail_product_signatures.md](C1232_paragraph_tail_product_signatures.md) |
+
+### Control Loop Architecture (C1233-C1238) -- Phase: CONTROL_LOOP_ARCHITECTURE (Phase 441)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1233** | **Cross-Line Independence** (cross-line FL regression, mode alternation, and channel switching are near-random entropy 97.8%, mutual info <1%; each line independently composed) | 2 | B, cross-line, independence, entropy | -> [C1233_cross_line_independence.md](C1233_cross_line_independence.md) |
+| **1234** | **Iteration Two-Track System** (iin at line-initial 29.6% for cycle setup, aiin at penultimate 1.35x for bounded loop control; ii=formal bounded 92.6% n, i=open 52.9% n) | 2 | B, iteration, iin, aiin, loop, line-initial | -> [C1234_iteration_two_track_system.md](C1234_iteration_two_track_system.md) |
+| **1235** | **Line-Final Routing Architecture** (line-final = routing not processing; m 29.77x enriched, k/e depleted 0.52-0.63x; 34.9% batch-close / 14.6% loop-check / 50.5% neutral) | 2 | B, line-final, routing, m, batch-close | -> [C1235_line_final_routing_architecture.md](C1235_line_final_routing_architecture.md) |
+| **1236** | **Suffix Scope Markers** (terminal suffixes -edy Mode A specification 2.5-3.0x; checkpoint suffixes -aiin mode-independent; Mode A=36.1% terminal, Mode B=62.0% bare) | 2 | B, suffix, scope, terminal, checkpoint, mode | -> [C1236_suffix_scope_markers.md](C1236_suffix_scope_markers.md) |
+| **1237** | **Paragraph Termination by -am** (-am 5.19x at paragraph-final; terminal suffixes are batch-close not termination; last lines shorter 7.3 vs 10.0, cooling-enriched; steady-state until -am) | 2 | B, paragraph, termination, -am, cooling | -> [C1237_paragraph_termination_by_am.md](C1237_paragraph_termination_by_am.md) |
+| **1238** | **Kernel Initiation Order** (first-occurrence ordering e->k->h cool->process->monitor; e before k 64.6%, h before k only 28.3%; refines C873 mean-position ordering) | 2 | B, kernel, initiation, ordering, e, k, h | -> [C1238_kernel_initiation_order.md](C1238_kernel_initiation_order.md) |
 
 ---
 
