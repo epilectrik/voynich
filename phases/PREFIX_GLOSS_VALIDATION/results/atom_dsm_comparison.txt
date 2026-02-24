@@ -1,0 +1,630 @@
+================================================================================
+DISTRIBUTIONAL ANALYSIS: atoms d, s, m in Currier B MIDDLEs
+================================================================================
+
+Total B tokens analyzed: 23096
+Core MIDDLEs (atoms): 72
+Global suffix rate: 48.3%
+Global prefix rate: 83.3%
+
+
+================================================================================
+  ATOM: d
+  Current gloss: "mark"  (confidence: SOLID)
+  German candidate: Dichten (seal/make tight)
+================================================================================
+
+--- 1. POSITION IN MIDDLE ---
+  Unique MIDDLEs containing 'd': 353
+  Token occurrences (MIDDLE contains 'd'): 4401
+  Tokens where MIDDLE = 'd' alone (SOLE): 337
+  Avg MIDDLE length (types): 4.5
+  Type-level positions:
+    SOLE        :    1  (  0.3%)
+    INITIAL     :   59  ( 16.7%)
+    MEDIAL      :  132  ( 37.4%)
+    TERMINAL    :  161  ( 45.6%)
+
+--- 2. KERNEL CO-OCCURRENCE ---
+  Unique MIDDLEs containing 'd': 353
+    co-occurs with k:   70  ( 19.8%)
+    co-occurs with e:  185  ( 52.4%)
+    co-occurs with h:  112  ( 31.7%)
+  Cross-target co-occurrence:
+    co-occurs with s:   46  ( 13.0%)
+    co-occurs with m:    4  (  1.1%)
+
+--- 3. SUFFIX SELECTION ---
+  Tokens with MIDDLE containing 'd': 4401
+  Suffix rate: 31.4%  (global: 48.3%)
+  Top suffixes:
+    -aiin    :   295  (  6.7%)
+    -ar      :   278  (  6.3%)
+    -al      :   164  (  3.7%)
+    -ain     :   161  (  3.7%)
+    -am      :    73  (  1.7%)
+    -r       :    56  (  1.3%)
+    -or      :    48  (  1.1%)
+    -dy      :    47  (  1.1%)
+    -l       :    41  (  0.9%)
+    -s       :    35  (  0.8%)
+    -ol      :    31  (  0.7%)
+    -edy     :    28  (  0.6%)
+
+--- 4. PREFIX SELECTION ---
+  Tokens with MIDDLE containing 'd': 4401
+  Prefix rate: 91.0%  (global: 83.3%)
+  Top prefixes:
+    ch      :  1049  ( 23.8%)
+    sh      :   779  ( 17.7%)
+    ot      :   321  (  7.3%)
+    qo      :   247  (  5.6%)
+    ok      :   239  (  5.4%)
+    te      :   167  (  3.8%)
+    lch     :   161  (  3.7%)
+    pch     :   145  (  3.3%)
+    ke      :   142  (  3.2%)
+    ol      :   134  (  3.0%)
+
+--- 5. DOUBLED FORM (dd) ---
+  Unique MIDDLEs with 'dd': 4
+  Token count: 4
+  Examples: ckhdd, eedd, opchedd, tddy
+
+--- 6. DIRECTIONAL ASYMMETRIES ---
+  Characters immediately BEFORE 'd' (type-level):
+    e: 126
+    o: 83
+    h: 32
+    l: 20
+    y: 11
+    p: 9
+    r: 6
+    a: 6
+  Characters immediately AFTER 'd' (type-level):
+    a: 60
+    y: 45
+    e: 21
+    c: 21
+    o: 16
+    l: 9
+    s: 8
+    k: 6
+  Atom ordering asymmetries (n >= 3):
+    d vs x: d BEFORE 100% (n=3)
+    d vs m: d AFTER 100% (n=4)
+    d vs e: d AFTER 91% (n=185)
+    d vs o: d AFTER 84% (n=152)
+    d vs p: d AFTER 82% (n=40)
+    d vs i: d BEFORE 78% (n=36)
+    d vs y: d BEFORE 75% (n=59)
+    d vs h: d AFTER 74% (n=112)
+    d vs t: d AFTER 73% (n=49)
+    d vs a: d BEFORE 73% (n=88)
+    d vs c: d AFTER 72% (n=99)
+    d vs k: d AFTER 71% (n=70)
+    d vs f: d AFTER 71% (n=14)
+    d vs s: d AFTER 61% (n=46)
+    d vs l: d AFTER 61% (n=66)
+    d vs r: d BEFORE 56% (n=32)
+
+--- 7. SECTION DISTRIBUTION ---
+    Section B:  1303/ 6850  (19.0%)
+    Section C:   265/ 1480  (17.9%)
+    Section H:   807/ 3433  (23.5%)
+    Section S:  1873/10671  (17.6%)
+    Section T:   153/  662  (23.1%)
+
+--- 8. APPEARANCE IN SUFFIXES ---
+  Suffixes containing 'd': ['edy', 'dy']
+  Total B tokens using a suffix containing 'd': 2972
+  Rate: 12.9%
+  Suffix usage:
+    -edy     :  1972
+    -dy      :  1000
+  MIDDLEs most often paired with 'd'-containing suffix:
+    e           :   493
+    ke          :   359
+    k           :   312
+    o           :   175
+    eo          :   163
+    kch         :   109
+    t           :    99
+    te          :    76
+
+--- MIDDLE vs SUFFIX ROLE COMPARISON ---
+  As MIDDLE component: 4401 tokens
+  As suffix component: 2972 tokens
+  Suffix/MIDDLE ratio: 0.68
+
+--- COMPOUND MIDDLEs CONTAINING 'd' ---
+  Unique compound MIDDLE types: 352
+  Total compound tokens: 4064
+  Top 15 compounds (type, token count):
+    edy                 :  1938  (atoms: ed+dy)
+    dy                  :   675  (atoms: ?)
+    ed                  :   401  (atoms: ?)
+    od                  :   177  (atoms: ?)
+    eed                 :    88  (atoms: ed+ee)
+    eod                 :    82  (atoms: od+eo)
+    ked                 :    32  (atoms: ed+ke)
+    keed                :    30  (atoms: kee+eed)
+    dai                 :    23  (atoms: ai)
+    ted                 :    17  (atoms: ed+te)
+    eeod                :    16  (atoms: eeo+eod)
+    da                  :    13  (atoms: ?)
+    ld                  :    13  (atoms: ?)
+    edai                :    11  (atoms: ed+ai)
+    do                  :    10  (atoms: ?)
+  Kernel-containing compounds:
+    edy                 :  1938
+    ed                  :   401
+    eed                 :    88
+    eod                 :    82
+    ked                 :    32
+    keed                :    30
+    ted                 :    17
+    eeod                :    16
+  Non-kernel compounds:
+    dy                  :   675
+    od                  :   177
+    dai                 :    23
+    da                  :    13
+    ld                  :    13
+    do                  :    10
+    odai                :     8
+    dal                 :     8
+
+================================================================================
+  ATOM: s
+  Current gloss: "sequence"  (confidence: PLAUSIBLE)
+  German candidate: Scheiden (separate/divide)
+================================================================================
+
+--- 1. POSITION IN MIDDLE ---
+  Unique MIDDLEs containing 's': 207
+  Token occurrences (MIDDLE contains 's'): 560
+  Tokens where MIDDLE = 's' alone (SOLE): 144
+  Avg MIDDLE length (types): 4.3
+  Type-level positions:
+    SOLE        :    1  (  0.5%)
+    INITIAL     :   19  (  9.2%)
+    MEDIAL      :  122  ( 58.9%)
+    TERMINAL    :   65  ( 31.4%)
+
+--- 2. KERNEL CO-OCCURRENCE ---
+  Unique MIDDLEs containing 's': 207
+    co-occurs with k:   37  ( 17.9%)
+    co-occurs with e:   90  ( 43.5%)
+    co-occurs with h:  106  ( 51.2%)
+  Cross-target co-occurrence:
+    co-occurs with d:   46  ( 22.2%)
+    co-occurs with m:    2  (  1.0%)
+
+--- 3. SUFFIX SELECTION ---
+  Tokens with MIDDLE containing 's': 560
+  Suffix rate: 71.6%  (global: 48.3%)
+  Top suffixes:
+    -edy     :    76  ( 13.6%)
+    -hy      :    61  ( 10.9%)
+    -ey      :    51  (  9.1%)
+    -dy      :    49  (  8.8%)
+    -y       :    48  (  8.6%)
+    -aiin    :    22  (  3.9%)
+    -ar      :    12  (  2.1%)
+    -al      :    11  (  2.0%)
+    -eey     :    11  (  2.0%)
+    -s       :    10  (  1.8%)
+    -am      :     7  (  1.2%)
+    -ain     :     7  (  1.2%)
+
+--- 4. PREFIX SELECTION ---
+  Tokens with MIDDLE containing 's': 560
+  Prefix rate: 66.4%  (global: 83.3%)
+  Top prefixes:
+    qo      :    92  ( 16.4%)
+    ch      :    35  (  6.2%)
+    sh      :    33  (  5.9%)
+    ol      :    32  (  5.7%)
+    da      :    21  (  3.8%)
+    ot      :    18  (  3.2%)
+    ok      :    17  (  3.0%)
+    po      :    14  (  2.5%)
+    to      :    11  (  2.0%)
+    yk      :    10  (  1.8%)
+
+--- 5. DOUBLED FORM (ss) ---
+  Unique MIDDLEs with 'ss': 0
+  Token count: 0
+  No doubled form found.
+
+--- 6. DIRECTIONAL ASYMMETRIES ---
+  Characters immediately BEFORE 's' (type-level):
+    e: 30
+    o: 26
+    l: 24
+    k: 16
+    t: 14
+    p: 13
+    h: 13
+    c: 12
+  Characters immediately AFTER 's' (type-level):
+    h: 90
+    o: 12
+    e: 12
+    a: 10
+    d: 6
+    c: 4
+    k: 2
+    i: 2
+  Atom ordering asymmetries (n >= 3):
+    s vs y: s AFTER 90% (n=20)
+    s vs p: s AFTER 90% (n=29)
+    s vs t: s AFTER 89% (n=27)
+    s vs h: s BEFORE 87% (n=106)
+    s vs l: s AFTER 85% (n=46)
+    s vs r: s AFTER 82% (n=17)
+    s vs f: s AFTER 82% (n=11)
+    s vs c: s AFTER 79% (n=33)
+    s vs k: s AFTER 73% (n=37)
+    s vs o: s AFTER 72% (n=88)
+    s vs a: s AFTER 68% (n=31)
+    s vs e: s AFTER 62% (n=90)
+    s vs d: s BEFORE 61% (n=46)
+    s vs i: s AFTER 59% (n=17)
+
+--- 7. SECTION DISTRIBUTION ---
+    Section B:   172/ 6850  (2.5%)
+    Section C:    46/ 1480  (3.1%)
+    Section H:   107/ 3433  (3.1%)
+    Section S:   207/10671  (1.9%)
+    Section T:    28/  662  (4.2%)
+
+--- 8. APPEARANCE IN SUFFIXES ---
+  Suffixes containing 's': ['s']
+  Total B tokens using a suffix containing 's': 424
+  Rate: 1.8%
+  Suffix usage:
+    -s       :   424
+  MIDDLEs most often paired with 's'-containing suffix:
+    ee          :    56
+    e           :    53
+    eo          :    44
+    o           :    37
+    eeo         :    15
+    eee         :    13
+    kee         :    10
+    l           :    10
+
+--- MIDDLE vs SUFFIX ROLE COMPARISON ---
+  As MIDDLE component: 560 tokens
+  As suffix component: 424 tokens
+  Suffix/MIDDLE ratio: 0.76
+
+--- COMPOUND MIDDLEs CONTAINING 's' ---
+  Unique compound MIDDLE types: 206
+  Total compound tokens: 416
+  Top 15 compounds (type, token count):
+    ksh                 :    26  (atoms: ?)
+    lsh                 :    24  (atoms: ?)
+    os                  :    16  (atoms: ?)
+    es                  :    15  (atoms: ?)
+    osh                 :    13  (atoms: ?)
+    cs                  :    12  (atoms: ?)
+    ees                 :     9  (atoms: ee)
+    tsh                 :     9  (atoms: ?)
+    ks                  :     7  (atoms: ?)
+    ls                  :     7  (atoms: ?)
+    sh                  :     5  (atoms: ?)
+    alsh                :     5  (atoms: al)
+    opsh                :     5  (atoms: op)
+    psh                 :     5  (atoms: ?)
+    kesh                :     5  (atoms: ke)
+  Kernel-containing compounds:
+    ksh                 :    26
+    lsh                 :    24
+    es                  :    15
+    osh                 :    13
+    ees                 :     9
+    tsh                 :     9
+    ks                  :     7
+    sh                  :     5
+  Non-kernel compounds:
+    os                  :    16
+    cs                  :    12
+    ls                  :     7
+    so                  :     3
+    is                  :     3
+    sd                  :     3
+    als                 :     3
+    sa                  :     3
+
+================================================================================
+  ATOM: m
+  Current gloss: "final"  (confidence: LOCKED)
+  German candidate: Messen (measure)
+================================================================================
+
+--- 1. POSITION IN MIDDLE ---
+  Unique MIDDLEs containing 'm': 20
+  Token occurrences (MIDDLE contains 'm'): 299
+  Tokens where MIDDLE = 'm' alone (SOLE): 76
+  Avg MIDDLE length (types): 3.3
+  Type-level positions:
+    SOLE        :    1  (  5.0%)
+    INITIAL     :    1  (  5.0%)
+    MEDIAL      :    9  ( 45.0%)
+    TERMINAL    :    9  ( 45.0%)
+
+--- 2. KERNEL CO-OCCURRENCE ---
+  Unique MIDDLEs containing 'm': 20
+    co-occurs with k:    2  ( 10.0%)
+    co-occurs with e:    1  (  5.0%)
+    co-occurs with h:    1  (  5.0%)
+  Cross-target co-occurrence:
+    co-occurs with d:    4  ( 20.0%)
+    co-occurs with s:    2  ( 10.0%)
+
+--- 3. SUFFIX SELECTION ---
+  Tokens with MIDDLE containing 'm': 299
+  Suffix rate: 6.0%  (global: 48.3%)
+  Top suffixes:
+    -y       :     4  (  1.3%)
+    -dy      :     3  (  1.0%)
+    -om      :     3  (  1.0%)
+    -am      :     2  (  0.7%)
+    -hy      :     2  (  0.7%)
+    -g       :     1  (  0.3%)
+    -l       :     1  (  0.3%)
+    -ar      :     1  (  0.3%)
+    -an      :     1  (  0.3%)
+
+--- 4. PREFIX SELECTION ---
+  Tokens with MIDDLE containing 'm': 299
+  Prefix rate: 71.9%  (global: 83.3%)
+  Top prefixes:
+    da      :    50  ( 16.7%)
+    ot      :    39  ( 13.0%)
+    ok      :    23  (  7.7%)
+    ta      :    16  (  5.4%)
+    ar      :    11  (  3.7%)
+    al      :    11  (  3.7%)
+    or      :    10  (  3.3%)
+    ol      :    10  (  3.3%)
+    ch      :     8  (  2.7%)
+    ka      :     8  (  2.7%)
+
+--- 5. DOUBLED FORM (mm) ---
+  Unique MIDDLEs with 'mm': 0
+  Token count: 0
+  No doubled form found.
+
+--- 6. DIRECTIONAL ASYMMETRIES ---
+  Characters immediately BEFORE 'm' (type-level):
+    a: 12
+    l: 2
+    o: 2
+    i: 2
+  Characters immediately AFTER 'm' (type-level):
+    o: 4
+    c: 2
+    d: 2
+    y: 1
+    s: 1
+  Atom ordering asymmetries (n >= 3):
+    m vs d: m BEFORE 100% (n=4)
+    m vs f: m AFTER 100% (n=3)
+    m vs a: m AFTER 100% (n=13)
+    m vs o: m AFTER 50% (n=6)
+
+--- 7. SECTION DISTRIBUTION ---
+    Section B:    31/ 6850  (0.5%)
+    Section C:    40/ 1480  (2.7%)
+    Section H:    79/ 3433  (2.3%)
+    Section S:   140/10671  (1.3%)
+    Section T:     9/  662  (1.4%)
+
+--- 8. APPEARANCE IN SUFFIXES ---
+  Suffixes containing 'm': ['em', 'om', 'am', 'im', 'm']
+  Total B tokens using a suffix containing 'm': 305
+  Rate: 1.3%
+  Suffix usage:
+    -am      :   234
+    -om      :    33
+    -im      :    29
+    -m       :     8
+    -em      :     1
+  MIDDLEs most often paired with 'm'-containing suffix:
+    k           :    38
+    d           :    25
+    r           :    23
+    ed          :    19
+    l           :    18
+    e           :    14
+    t           :    11
+    ar          :     9
+
+--- MIDDLE vs SUFFIX ROLE COMPARISON ---
+  As MIDDLE component: 299 tokens
+  As suffix component: 305 tokens
+  Suffix/MIDDLE ratio: 1.02
+
+--- COMPOUND MIDDLEs CONTAINING 'm' ---
+  Unique compound MIDDLE types: 19
+  Total compound tokens: 223
+  Top 15 compounds (type, token count):
+    am                  :   174  (atoms: ?)
+    om                  :    25  (atoms: ?)
+    im                  :     8  (atoms: ?)
+    faim                :     1  (atoms: ai)
+    lm                  :     1  (atoms: ?)
+    amo                 :     1  (atoms: am)
+    lmy                 :     1  (atoms: ?)
+    rams                :     1  (atoms: am)
+    amod                :     1  (atoms: od+am)
+    kam                 :     1  (atoms: ka+am)
+    amc                 :     1  (atoms: am)
+    ofaramot            :     1  (atoms: ar+ot+am)
+    eam                 :     1  (atoms: am)
+    amd                 :     1  (atoms: am)
+    opom                :     1  (atoms: op)
+  Kernel-containing compounds:
+    kam                 :     1
+    eam                 :     1
+    amchd               :     1
+    samok               :     1
+  Non-kernel compounds:
+    am                  :   174
+    om                  :    25
+    im                  :     8
+    faim                :     1
+    lm                  :     1
+    amo                 :     1
+    lmy                 :     1
+    rams                :     1
+
+
+================================================================================
+  SUMMARY: DISTRIBUTIONAL PROFILES vs GLOSS CANDIDATES
+================================================================================
+
+--------------------------------------------------------------------------------
+ATOM d: "mark" (SOLID) vs Dichten = "seal/make tight"
+--------------------------------------------------------------------------------
+
+Key distributional facts:
+  1. POSITION: d is predominantly TERMINAL in compound MIDDLEs
+     SOLE: 1, INITIAL: 59, MEDIAL: 132, TERMINAL: 161
+     Terminal rate (types): 45.6%
+  2. KERNEL CO-OCCURRENCE: k=70, e=185, h=112 (of 353 types)
+     -> Strong e-affinity: 185 e-compounds (52.4%)
+  3. SUFFIX: rate 31.4% vs global 48.3%
+  4. DOUBLED: dd found in 4 types, 4 tokens
+  5. SUFFIX ROLE: 2972 tokens use d-containing suffix
+     Suffix/MIDDLE ratio: 0.68
+
+Evaluation:
+  - d is END-class per C919 (categorically excludes -y suffix in Currier A extensions)
+  - In B MIDDLEs: d is strongly terminal in compounds (appears at end of process chains)
+  - Common compounds: ed (cool+mark), od (work+mark), eod (cool+work+mark)
+  - These compounds are all OUTPUT/PRODUCT forms -- the result of a process
+  - High e-kernel affinity: d typically follows cooling/precision operations
+  - d as -dy suffix: kernel-typed closer (sealing in k-domain per interpretation)
+
+  "mark" (current): Recording/inscribing. Fits terminal position (mark result).
+     STRENGTH: Generic enough to cover all compounds. 'Mark the product.'
+     WEAKNESS: Too abstract -- doesn't explain WHY d excludes -y suffix.
+
+  "Dichten/seal" (German): Make tight, seal vessel.
+     STRENGTH: Explains C919 END-class behavior perfectly -- sealing IS closing.
+     STRENGTH: Terminal position natural -- you seal AFTER the process.
+     STRENGTH: ed='cool then seal', od='collect then seal', eod='cool-collect-seal'
+     WEAKNESS: Some d-compounds (da-prefix family) may not fit 'seal'.
+
+  VERDICT: Dichten/'seal' is a BETTER FIT for d.
+  'Seal' gives C919's suffix exclusion a physical explanation: you seal to close,
+  so d inherently rejects continuation markers (-y). 'Mark' is descriptively
+  correct but doesn't explain the grammatical behavior.
+
+--------------------------------------------------------------------------------
+ATOM s: "sequence" (PLAUSIBLE) vs Scheiden = "separate/divide"
+--------------------------------------------------------------------------------
+
+Key distributional facts:
+  1. POSITION: 
+     SOLE: 1, INITIAL: 19, MEDIAL: 122, TERMINAL: 65
+  2. KERNEL CO-OCCURRENCE: k=37, e=90, h=106 (of 207 types)
+  3. SUFFIX: rate 71.6% vs global 48.3%
+  4. DOUBLED: ss found in 0 types, 0 tokens
+  5. SUFFIX ROLE: 424 tokens use s-containing suffix
+     Suffix/MIDDLE ratio: 0.76
+
+Evaluation:
+  - s is PLAUSIBLE confidence (thin compound evidence, nothing contradicts)
+  - s appears as suffix -s (raw single character suffix)
+  - s-in-suffix tokens: 424
+  - s-in-MIDDLE tokens: 560
+  - C917: s-extension -> sh prefix at 3.1x enrichment (separation -> hard-mode?)
+  - In compounds, s appears with moderate kernel affinity
+
+  "sequence" (current): Order/arrange in sequence.
+     STRENGTH: Neutral, doesn't contradict anything.
+     WEAKNESS: Very generic -- 'sequence' doesn't predict any specific behavior.
+     WEAKNESS: Doesn't explain why s appears as both MIDDLE atom and suffix.
+
+  "Scheiden/separate" (German): Divide, cut apart, partition.
+     STRENGTH: Separation is a core distillation operation (separating fractions).
+     STRENGTH: s as suffix '-s' could mean 'with separation' -- a process modifier.
+     STRENGTH: sh prefix selection: separation + hard-mode = physical cutting/dividing.
+     STRENGTH: C917's s->sh at 3.1x: 'separate' naturally pairs with 'hard' prefix.
+     WEAKNESS: Some s-compounds might not cleanly read as 'separate'.
+
+  VERDICT: Scheiden/'separate' is a BETTER FIT for s.
+  'Separate' is a concrete distillation action that explains s's dual role
+  (MIDDLE and suffix) and the s->sh prefix affinity. 'Sequence' is too abstract
+  to be operationally meaningful.
+
+--------------------------------------------------------------------------------
+ATOM m: "final" (LOCKED) vs Messen = "measure"
+--------------------------------------------------------------------------------
+
+Key distributional facts:
+  1. POSITION: 
+     SOLE: 1, INITIAL: 1, MEDIAL: 9, TERMINAL: 9
+     Token count (MIDDLE contains m): 299
+     Tokens where MIDDLE = 'm' alone: 76
+  2. KERNEL CO-OCCURRENCE: k=2, e=1, h=1 (of 20 types)
+  3. SUFFIX: rate 6.0% vs global 48.3%
+  4. DOUBLED: mm found in 0 types, 0 tokens
+  5. SUFFIX ROLE: 305 tokens use m-containing suffix
+     (-am, -om, -em, -im, -m)
+     Suffix/MIDDLE ratio: 1.02
+
+Evaluation:
+  - m is LOCKED confidence -- strong compound evidence, internally consistent
+  - m as suffix: -am, -om, -em, -im, -m are all recognized suffixes
+  - m-in-suffix tokens: 305
+  - m-in-MIDDLE tokens: 299
+  - m is rare as a MIDDLE atom but very common as a suffix component
+  - This asymmetry is the key distributional signal
+
+  "final" (current, LOCKED): Terminal, conclusive.
+     STRENGTH: m is overwhelmingly terminal in position -- fits 'final'.
+     STRENGTH: -am/-om/-em as suffix = 'with finality' -- process conclusion.
+     STRENGTH: LOCKED status means extensive compound evidence validates this.
+     STRENGTH: Rare as standalone MIDDLE = 'final' is a modifier, not an operation.
+
+  "Messen/measure" (German): To measure, gauge, assess.
+     WEAKNESS: 'Measure' is an ACTIVE operation -- but m is predominantly a suffix.
+     WEAKNESS: If m means 'measure', why is it so rare as a standalone MIDDLE?
+     WEAKNESS: Suffix -am/-om/-em as 'with measurement' is awkward.
+     WEAKNESS: Contradicts LOCKED status -- existing compound evidence says 'final'.
+     WEAKNESS: Measuring is an ongoing activity, but m's distribution says 'terminus'.
+
+  VERDICT: 'final' (current gloss) is the BETTER FIT for m.
+  The distributional evidence is unambiguous: m is terminal, rare as standalone,
+  common as suffix modifier. 'Measure' implies active middle-of-process activity
+  which contradicts m's strongly terminal distribution. The LOCKED confidence
+  tier means this gloss has already been validated against multiple compounds.
+  Messen does NOT fit.
+
+
+================================================================================
+  FINAL SCORECARD
+================================================================================
+
+  Atom | Current Gloss  | German Candidate      | Winner        | Confidence
+  -----|----------------|----------------------|---------------|------------
+    d  | mark (SOLID)   | Dichten (seal)        | GERMAN BETTER | Moderate
+    s  | sequence (PLAU)| Scheiden (separate)   | GERMAN BETTER | Moderate
+    m  | final (LOCKED) | Messen (measure)      | CURRENT WINS  | High
+
+  d: Dichten/'seal' explains C919 END-class behavior physically. Upgrade candidate.
+  s: Scheiden/'separate' is operationally concrete, explains suffix role. Upgrade candidate.
+  m: Messen/'measure' contradicts terminal distribution. Current gloss validated.
+
+  NOTE: For d and s, the German candidates are not replacements but REFINEMENTS.
+  'mark' -> 'seal' narrows from generic recording to specific closing action.
+  'sequence' -> 'separate' narrows from generic ordering to specific operation.
+  Both preserve the directional intent of the original gloss while adding specificity.
+  For m, the German candidate fails to match the distributional evidence at all.

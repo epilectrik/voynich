@@ -1,0 +1,502 @@
+{
+  "iteration_compounds_as_middle": {
+    "aiin": {
+      "exact_count": 834,
+      "mean_position": 0.526,
+      "line_final_rate": 5.9,
+      "line_initial_rate": 4.2,
+      "bare_suffix_rate": 99.5,
+      "top_prefixes": [
+        [
+          "ok",
+          170
+        ],
+        [
+          "ot",
+          109
+        ],
+        [
+          "lk",
+          51
+        ],
+        [
+          "ol",
+          36
+        ],
+        [
+          "yk",
+          32
+        ]
+      ]
+    },
+    "iin": {
+      "exact_count": 560,
+      "mean_position": 0.393,
+      "line_final_rate": 5.9,
+      "line_initial_rate": 29.6,
+      "bare_suffix_rate": 99.6,
+      "top_prefixes": [
+        [
+          "da",
+          328
+        ],
+        [
+          "sa",
+          102
+        ],
+        [
+          "ta",
+          58
+        ],
+        [
+          "ka",
+          49
+        ],
+        [
+          "so",
+          9
+        ]
+      ]
+    },
+    "in": {
+      "exact_count": 264,
+      "mean_position": 0.411,
+      "line_final_rate": 7.6,
+      "line_initial_rate": 29.5,
+      "bare_suffix_rate": 100.0,
+      "top_prefixes": [
+        [
+          "da",
+          117
+        ],
+        [
+          "sa",
+          61
+        ],
+        [
+          "ka",
+          49
+        ],
+        [
+          "ta",
+          29
+        ],
+        [
+          "so",
+          3
+        ]
+      ]
+    },
+    "ain": {
+      "exact_count": 420,
+      "mean_position": 0.536,
+      "line_final_rate": 10.5,
+      "line_initial_rate": 6.0,
+      "bare_suffix_rate": 99.5,
+      "top_prefixes": [
+        [
+          "ok",
+          137
+        ],
+        [
+          "ot",
+          92
+        ],
+        [
+          "lk",
+          35
+        ],
+        [
+          "or",
+          26
+        ],
+        [
+          "ol",
+          15
+        ]
+      ]
+    },
+    "oiin": {
+      "exact_count": 32,
+      "mean_position": 0.367,
+      "line_final_rate": 9.4,
+      "line_initial_rate": 18.8,
+      "bare_suffix_rate": 93.8,
+      "top_prefixes": [
+        [
+          "ol",
+          4
+        ],
+        [
+          "sh",
+          2
+        ],
+        [
+          "ar",
+          2
+        ],
+        [
+          "te",
+          1
+        ],
+        [
+          "yk",
+          1
+        ]
+      ]
+    },
+    "ii": {
+      "exact_count": 23,
+      "mean_position": 0.329,
+      "line_final_rate": 4.3,
+      "line_initial_rate": 34.8,
+      "bare_suffix_rate": 0.0,
+      "top_prefixes": [
+        [
+          "da",
+          14
+        ],
+        [
+          "sa",
+          3
+        ],
+        [
+          "do",
+          1
+        ],
+        [
+          "so",
+          1
+        ],
+        [
+          "ot",
+          1
+        ]
+      ]
+    },
+    "i": {
+      "exact_count": 137,
+      "mean_position": 0.407,
+      "line_final_rate": 7.3,
+      "line_initial_rate": 29.2,
+      "bare_suffix_rate": 0.0,
+      "top_prefixes": [
+        [
+          "da",
+          63
+        ],
+        [
+          "sa",
+          26
+        ],
+        [
+          "ka",
+          18
+        ],
+        [
+          "ta",
+          17
+        ],
+        [
+          "qo",
+          4
+        ]
+      ]
+    },
+    "n": {
+      "exact_count": 7,
+      "mean_position": 0.835,
+      "line_final_rate": 28.6,
+      "line_initial_rate": 0.0,
+      "bare_suffix_rate": 100.0,
+      "top_prefixes": [
+        [
+          "sa",
+          3
+        ],
+        [
+          "ka",
+          2
+        ],
+        [
+          "da",
+          2
+        ]
+      ]
+    }
+  },
+  "iteration_compounds_as_suffix": {
+    "aiin": {
+      "count": 949,
+      "mean_position": 0.465,
+      "line_final_rate": 6.4,
+      "top_middles": [
+        [
+          "k",
+          291
+        ],
+        [
+          "r",
+          80
+        ],
+        [
+          "d",
+          73
+        ],
+        [
+          "t",
+          71
+        ],
+        [
+          "ed",
+          65
+        ]
+      ],
+      "kernel_in_middle": {
+        "k": 361,
+        "e": 220,
+        "h": 25
+      }
+    },
+    "iin": {
+      "count": 1083,
+      "mean_position": 0.471,
+      "line_final_rate": 6.8,
+      "top_middles": [
+        [
+          "k",
+          294
+        ],
+        [
+          "r",
+          86
+        ],
+        [
+          "d",
+          74
+        ],
+        [
+          "t",
+          72
+        ],
+        [
+          "ed",
+          65
+        ]
+      ],
+      "kernel_in_middle": {
+        "k": 370,
+        "e": 228,
+        "h": 25
+      }
+    },
+    "in": {
+      "count": 1828,
+      "mean_position": 0.474,
+      "line_final_rate": 6.9,
+      "top_middles": [
+        [
+          "k",
+          628
+        ],
+        [
+          "t",
+          139
+        ],
+        [
+          "r",
+          121
+        ],
+        [
+          "ed",
+          111
+        ],
+        [
+          "d",
+          104
+        ]
+      ],
+      "kernel_in_middle": {
+        "k": 794,
+        "e": 424,
+        "h": 38
+      }
+    },
+    "ain": {
+      "count": 741,
+      "mean_position": 0.477,
+      "line_final_rate": 7.0,
+      "top_middles": [
+        [
+          "k",
+          333
+        ],
+        [
+          "t",
+          67
+        ],
+        [
+          "ed",
+          46
+        ],
+        [
+          "r",
+          35
+        ],
+        [
+          "d",
+          30
+        ]
+      ],
+      "kernel_in_middle": {
+        "k": 423,
+        "e": 195,
+        "h": 13
+      }
+    },
+    "oiin": {
+      "count": 18,
+      "mean_position": 0.429,
+      "line_final_rate": 0.0,
+      "top_middles": [
+        [
+          "r",
+          5
+        ],
+        [
+          "l",
+          4
+        ],
+        [
+          "k",
+          2
+        ],
+        [
+          "t",
+          1
+        ],
+        [
+          "y",
+          1
+        ]
+      ],
+      "kernel_in_middle": {
+        "k": 2
+      }
+    },
+    "ii": {
+      "count": 1083,
+      "mean_position": 0.471,
+      "line_final_rate": 6.8,
+      "top_middles": [
+        [
+          "k",
+          294
+        ],
+        [
+          "r",
+          86
+        ],
+        [
+          "d",
+          74
+        ],
+        [
+          "t",
+          72
+        ],
+        [
+          "ed",
+          65
+        ]
+      ],
+      "kernel_in_middle": {
+        "k": 370,
+        "e": 228,
+        "h": 25
+      }
+    },
+    "i": {
+      "count": 1857,
+      "mean_position": 0.48,
+      "line_final_rate": 8.0,
+      "top_middles": [
+        [
+          "k",
+          628
+        ],
+        [
+          "t",
+          139
+        ],
+        [
+          "r",
+          121
+        ],
+        [
+          "ed",
+          111
+        ],
+        [
+          "d",
+          104
+        ]
+      ],
+      "kernel_in_middle": {
+        "k": 799,
+        "e": 429,
+        "h": 38
+      }
+    },
+    "n": {
+      "count": 1856,
+      "mean_position": 0.475,
+      "line_final_rate": 7.2,
+      "top_middles": [
+        [
+          "k",
+          637
+        ],
+        [
+          "t",
+          140
+        ],
+        [
+          "r",
+          121
+        ],
+        [
+          "ed",
+          113
+        ],
+        [
+          "d",
+          105
+        ]
+      ],
+      "kernel_in_middle": {
+        "k": 805,
+        "e": 442,
+        "h": 41
+      }
+    }
+  },
+  "i_count_patterns": {
+    "1": {
+      "token_count": 1319,
+      "mean_position": 0.501,
+      "line_final_rate": 10.8
+    },
+    "2": {
+      "token_count": 1546,
+      "mean_position": 0.471,
+      "line_final_rate": 6.7
+    },
+    "3": {
+      "token_count": 10,
+      "mean_position": 0.583,
+      "line_final_rate": 30.0
+    }
+  },
+  "decision_point_enrichment": {}
+}

@@ -1,0 +1,445 @@
+{
+  "line_counts": {
+    "final": 2377,
+    "penultimate": 2377,
+    "medial": 15856,
+    "initial": 2377
+  },
+  "suffix_category_by_position": {
+    "INITIAL": {
+      "TERMINAL": 18.2,
+      "CHECKPOINT": 9.1,
+      "ITERATIVE": 2.9,
+      "BARE": 53.0,
+      "OTHER": 16.8
+    },
+    "MEDIAL": {
+      "TERMINAL": 23.7,
+      "CHECKPOINT": 7.9,
+      "ITERATIVE": 1.9,
+      "BARE": 51.8,
+      "OTHER": 14.7
+    },
+    "PENULTIMATE": {
+      "TERMINAL": 22.3,
+      "CHECKPOINT": 9.0,
+      "ITERATIVE": 1.4,
+      "BARE": 51.2,
+      "OTHER": 15.9
+    },
+    "FINAL": {
+      "TERMINAL": 26.0,
+      "CHECKPOINT": 5.0,
+      "ITERATIVE": 2.0,
+      "BARE": 50.9,
+      "OTHER": 16.2
+    }
+  },
+  "atom_enrichment_at_final": {
+    "a": {
+      "gloss": "accept",
+      "final_pct": 11.3,
+      "medial_pct": 6.7,
+      "enrichment": 1.7
+    },
+    "c": {
+      "gloss": "adjust",
+      "final_pct": 3.2,
+      "medial_pct": 4.5,
+      "enrichment": 0.72
+    },
+    "d": {
+      "gloss": "seal",
+      "final_pct": 9.3,
+      "medial_pct": 8.5,
+      "enrichment": 1.09
+    },
+    "e": {
+      "gloss": "cool",
+      "final_pct": 10.9,
+      "medial_pct": 21.0,
+      "enrichment": 0.52
+    },
+    "f": {
+      "gloss": "flag",
+      "final_pct": 0.7,
+      "medial_pct": 0.4,
+      "enrichment": 1.6
+    },
+    "h": {
+      "gloss": "watch",
+      "final_pct": 2.5,
+      "medial_pct": 3.4,
+      "enrichment": 0.76
+    },
+    "i": {
+      "gloss": "iterate",
+      "final_pct": 7.1,
+      "medial_pct": 8.1,
+      "enrichment": 0.87
+    },
+    "k": {
+      "gloss": "heat",
+      "final_pct": 6.0,
+      "medial_pct": 9.5,
+      "enrichment": 0.63
+    },
+    "l": {
+      "gloss": "collect",
+      "final_pct": 9.2,
+      "medial_pct": 6.0,
+      "enrichment": 1.54
+    },
+    "m": {
+      "gloss": "final",
+      "final_pct": 4.5,
+      "medial_pct": 0.2,
+      "enrichment": 29.77
+    },
+    "n": {
+      "gloss": "halt",
+      "final_pct": 3.3,
+      "medial_pct": 4.0,
+      "enrichment": 0.83
+    },
+    "o": {
+      "gloss": "vessel",
+      "final_pct": 9.2,
+      "medial_pct": 8.7,
+      "enrichment": 1.06
+    },
+    "p": {
+      "gloss": "pause",
+      "final_pct": 1.5,
+      "medial_pct": 1.3,
+      "enrichment": 1.15
+    },
+    "r": {
+      "gloss": "flow",
+      "final_pct": 5.8,
+      "medial_pct": 3.9,
+      "enrichment": 1.47
+    },
+    "s": {
+      "gloss": "separate",
+      "final_pct": 1.6,
+      "medial_pct": 1.0,
+      "enrichment": 1.67
+    },
+    "t": {
+      "gloss": "drive",
+      "final_pct": 2.6,
+      "medial_pct": 3.1,
+      "enrichment": 0.84
+    },
+    "y": {
+      "gloss": "end",
+      "final_pct": 11.0,
+      "medial_pct": 9.9,
+      "enrichment": 1.12
+    }
+  },
+  "decision_classification": {
+    "stop_pct": 34.9,
+    "continue_pct": 14.6,
+    "neutral_pct": 50.5
+  },
+  "top_stop_words": [
+    [
+      "am",
+      44
+    ],
+    [
+      "dam",
+      28
+    ],
+    [
+      "otam",
+      25
+    ],
+    [
+      "qokam",
+      19
+    ],
+    [
+      "ldy",
+      16
+    ],
+    [
+      "okam",
+      14
+    ],
+    [
+      "ram",
+      13
+    ],
+    [
+      "qokeey",
+      10
+    ],
+    [
+      "qokedy",
+      8
+    ],
+    [
+      "okeedy",
+      8
+    ],
+    [
+      "om",
+      8
+    ],
+    [
+      "oram",
+      7
+    ],
+    [
+      "ody",
+      7
+    ],
+    [
+      "chckhy",
+      7
+    ],
+    [
+      "qotam",
+      7
+    ]
+  ],
+  "top_continue_words": [
+    [
+      "daiin",
+      24
+    ],
+    [
+      "aiin",
+      14
+    ],
+    [
+      "dain",
+      9
+    ],
+    [
+      "otain",
+      9
+    ],
+    [
+      "okain",
+      9
+    ],
+    [
+      "okaiin",
+      8
+    ],
+    [
+      "qokain",
+      8
+    ],
+    [
+      "qokaiin",
+      8
+    ],
+    [
+      "ain",
+      7
+    ],
+    [
+      "orain",
+      7
+    ],
+    [
+      "saiin",
+      6
+    ],
+    [
+      "otaiin",
+      6
+    ],
+    [
+      "oraiin",
+      5
+    ],
+    [
+      "odain",
+      5
+    ],
+    [
+      "sain",
+      5
+    ]
+  ],
+  "penultimate_final_suffix_pairs": [
+    {
+      "from": "BARE",
+      "to": "BARE",
+      "count": 643,
+      "pct": 26.7
+    },
+    {
+      "from": "BARE",
+      "to": "TERMINAL",
+      "count": 307,
+      "pct": 12.8
+    },
+    {
+      "from": "TERMINAL",
+      "to": "BARE",
+      "count": 214,
+      "pct": 8.9
+    },
+    {
+      "from": "OTHER",
+      "to": "BARE",
+      "count": 203,
+      "pct": 8.4
+    },
+    {
+      "from": "BARE",
+      "to": "OTHER",
+      "count": 199,
+      "pct": 8.3
+    },
+    {
+      "from": "TERMINAL",
+      "to": "TERMINAL",
+      "count": 176,
+      "pct": 7.3
+    },
+    {
+      "from": "CHECKPOINT",
+      "to": "BARE",
+      "count": 134,
+      "pct": 5.6
+    },
+    {
+      "from": "OTHER",
+      "to": "TERMINAL",
+      "count": 103,
+      "pct": 4.3
+    },
+    {
+      "from": "TERMINAL",
+      "to": "OTHER",
+      "count": 98,
+      "pct": 4.1
+    },
+    {
+      "from": "BARE",
+      "to": "CHECKPOINT",
+      "count": 64,
+      "pct": 2.7
+    },
+    {
+      "from": "OTHER",
+      "to": "OTHER",
+      "count": 60,
+      "pct": 2.5
+    },
+    {
+      "from": "TERMINAL",
+      "to": "CHECKPOINT",
+      "count": 41,
+      "pct": 1.7
+    },
+    {
+      "from": "CHECKPOINT",
+      "to": "TERMINAL",
+      "count": 38,
+      "pct": 1.6
+    },
+    {
+      "from": "CHECKPOINT",
+      "to": "OTHER",
+      "count": 29,
+      "pct": 1.2
+    },
+    {
+      "from": "BARE",
+      "to": "ITERATIVE",
+      "count": 23,
+      "pct": 1.0
+    }
+  ],
+  "top_final_words": [
+    [
+      "am",
+      44
+    ],
+    [
+      "ol",
+      40
+    ],
+    [
+      "dy",
+      39
+    ],
+    [
+      "chedy",
+      35
+    ],
+    [
+      "oly",
+      34
+    ],
+    [
+      "dam",
+      28
+    ],
+    [
+      "al",
+      28
+    ],
+    [
+      "otam",
+      25
+    ],
+    [
+      "daiin",
+      24
+    ],
+    [
+      "dal",
+      22
+    ],
+    [
+      "qoky",
+      21
+    ],
+    [
+      "qokam",
+      19
+    ],
+    [
+      "lchedy",
+      17
+    ],
+    [
+      "ldy",
+      16
+    ],
+    [
+      "ary",
+      16
+    ],
+    [
+      "shedy",
+      16
+    ],
+    [
+      "chey",
+      16
+    ],
+    [
+      "ar",
+      15
+    ],
+    [
+      "dar",
+      15
+    ],
+    [
+      "lol",
+      15
+    ]
+  ]
+}

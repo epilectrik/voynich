@@ -1,0 +1,53 @@
+{
+  "total_cross_line_transitions": 1829,
+  "folios_decoded": 82,
+  "fl_transition_distribution": {
+    "REGRESS": 659,
+    "STATIC": 521,
+    "FORWARD": 439
+  },
+  "fl_transition_pcts": {
+    "REGRESS": 40.7,
+    "STATIC": 32.2,
+    "FORWARD": 27.1
+  },
+  "regression_pairs": {
+    "TERMINAL->MEDIAL": 185,
+    "LATE->MEDIAL": 157,
+    "MEDIAL->EARLY": 95,
+    "TERMINAL->LATE": 72,
+    "TERMINAL->EARLY": 57,
+    "MEDIAL->INITIAL": 36,
+    "LATE->EARLY": 33,
+    "TERMINAL->INITIAL": 18,
+    "LATE->INITIAL": 6
+  },
+  "mode_transition_distribution": {
+    "B->B": 619,
+    "A->B": 452,
+    "B->A": 378,
+    "A->A": 369
+  },
+  "mode_alternation_rate": 45.7,
+  "channel_switch_rate": 41.7,
+  "non_regressing_profile": {
+    "FORWARD": {
+      "count": 439,
+      "pct": 24.0,
+      "mode_alternation_rate": 45.3,
+      "channel_switch_rate": 42.6
+    },
+    "STATIC": {
+      "count": 521,
+      "pct": 28.5,
+      "mode_alternation_rate": 44.5,
+      "channel_switch_rate": 42.4
+    }
+  },
+  "regressing_profile": {
+    "count": 659,
+    "pct": 36.0,
+    "mode_alternation_rate": 45.5,
+    "channel_switch_rate": 41.4
+  }
+}

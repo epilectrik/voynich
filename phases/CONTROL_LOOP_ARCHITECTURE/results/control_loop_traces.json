@@ -1,0 +1,4924 @@
+{
+  "trace_count": 5,
+  "sections_covered": [
+    "B",
+    "H",
+    "S",
+    "C",
+    "T"
+  ],
+  "traces": [
+    {
+      "folio": "f75r",
+      "section": "B",
+      "paragraph_id": "P9",
+      "line_count": 15,
+      "token_count": 120,
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "structural": "P9 | (polshy) | : 15L/120T | kern=[e:31,h:4,k:30] | type=[ESCAPE_DOMINANT] | role=EN_QO | zones=[E:9/H:1/S:5] | mode=[AABBBAAABAABBBB] interleave=36% | tail=MIXED_OUTPUT",
+      "interpretive": "Waiting/settling phase - to completion - (finishing) - (spec->exec gradient) - (mixed output)",
+      "mode_sequence": [
+        "A",
+        "A",
+        "B",
+        "B",
+        "B",
+        "A",
+        "A",
+        "A",
+        "B",
+        "A",
+        "A",
+        "B",
+        "B",
+        "B",
+        "B"
+      ],
+      "interleave_rate": 0.36,
+      "tail_signature": "MIXED_OUTPUT",
+      "lines": [
+        {
+          "line_id": "32",
+          "tokens": [
+            {
+              "word": "polshy",
+              "gloss": "[pause+vessel] collect+separate (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "dal",
+              "gloss": "[seal+accept] collect",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "shedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokain",
+              "gloss": "[q+vessel] heat (LOOP_CHECK)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "das",
+              "gloss": "[seal+accept] separate",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "chsdy",
+              "gloss": "[adjust+watch] separate (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "shedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokar",
+              "gloss": "[q+vessel] heat (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "shedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "ldy",
+              "gloss": "collect (BATCH_CLOSE)",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "AXM"
+            }
+          ],
+          "token_count": 10,
+          "zone": "HEADER",
+          "suffix_mode": "A",
+          "fl_progression": "MIXED",
+          "position": "EARLY",
+          "flow_render": "setup frame [VERIFY] -> setup frame <k> (FL:LATE) -> monitor batch | [QO] heat <k> [CHECKPOINT] -> setup sequence -> test sequence [CLOSE] | monitor batch | [QO] heat <k> [CLOSE] | monitor batch -> frame <k> (FL:LATE) [CLOSE]",
+          "structural": "FL:MIXED | kern:[e,k,e,k,e]",
+          "interpretive": "processing material"
+        },
+        {
+          "line_id": "33",
+          "tokens": [
+            {
+              "word": "qokeey",
+              "gloss": "[q+vessel] heat (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "lshedy",
+              "gloss": "[collect+separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qol",
+              "gloss": "[q+vessel] collect",
+              "prefix_role": "EN_QO",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "chedy",
+              "gloss": "[adjust+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokain",
+              "gloss": "[q+vessel] heat (LOOP_CHECK)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "chcthedy",
+              "gloss": "[adjust+watch] adjust+drive+watch (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "h"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "ltedy",
+              "gloss": "[drive+cool] seal+end",
+              "prefix_role": "PREP_TIER",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "darom",
+              "gloss": "[seal+accept] flow (FINALIZE)",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            }
+          ],
+          "token_count": 8,
+          "zone": "SPECIFICATION",
+          "suffix_mode": "A",
+          "fl_progression": "MIXED",
+          "position": "EARLY",
+          "flow_render": "[QO] heat <k> [EXTENDED] | link batch | [QO] frame <k> | test batch | [QO] heat <k> [CHECKPOINT] | test hazard [THOROUGH] | process seal <k> -> setup input <k> (FL:MEDIAL) [FINALIZE]",
+          "structural": "FL:MIXED | kern:[k,e,k,h]",
+          "interpretive": "processing material"
+        },
+        {
+          "line_id": "34",
+          "tokens": [
+            {
+              "word": "solkedy",
+              "gloss": "[separate+vessel] collect+heat (BATCH_CLOSE)",
+              "prefix_role": "CC_INIT",
+              "fl_stage": null,
+              "kernels": [
+                "k"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "okal",
+              "gloss": "[vessel+heat] accept+collect",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "dar",
+              "gloss": "[seal+accept] flow",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "oty",
+              "gloss": "[vessel+drive] end",
+              "prefix_role": "EN_QO",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "otar",
+              "gloss": "[vessel+drive] accept+flow",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "otar",
+              "gloss": "[vessel+drive] accept+flow",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "ol",
+              "gloss": "vessel+collect",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "CC"
+            },
+            {
+              "word": "kain",
+              "gloss": "[heat+accept] iterate+halt",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "EARLY",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "olkedy",
+              "gloss": "[vessel+collect] heat (BATCH_CLOSE)",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            }
+          ],
+          "token_count": 9,
+          "zone": "SPECIFICATION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "EARLY",
+          "flow_render": "scaffold frame <k> [THOROUGH] -> vessel gather <k> -> setup input <k> (FL:MEDIAL) -> scaffold end | scaffold release | scaffold release -> continue <k> -> anchor link <k> -> store heat <k> [THOROUGH]",
+          "structural": "FL:MIXED | kern:[k]",
+          "interpretive": "checking progress"
+        },
+        {
+          "line_id": "35",
+          "tokens": [
+            {
+              "word": "qokain",
+              "gloss": "[q+vessel] heat (LOOP_CHECK)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "sheety",
+              "gloss": "[separate+watch] cool+cool+drive (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "qokain",
+              "gloss": "[q+vessel] heat (LOOP_CHECK)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "dar",
+              "gloss": "[seal+accept] flow",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "dar",
+              "gloss": "[seal+accept] flow",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "shedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokar",
+              "gloss": "[q+vessel] heat (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "ol",
+              "gloss": "vessel+collect",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "CC"
+            },
+            {
+              "word": "dy",
+              "gloss": "seal+end",
+              "prefix_role": null,
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            }
+          ],
+          "token_count": 9,
+          "zone": "SPECIFICATION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "EARLY",
+          "flow_render": "[QO] heat <k> [CHECKPOINT] | monitor path [END] | [QO] heat <k> [CHECKPOINT] -> setup input <k> (FL:MEDIAL) -> setup input <k> (FL:MEDIAL) -> monitor batch | [QO] heat <k> [CLOSE] -> continue <k> -> seal <k> (FL:TERMINAL)",
+          "structural": "FL:MIXED | kern:[k,e,k,e,k] | FINAL:dy",
+          "interpretive": "finishing step - -> done"
+        },
+        {
+          "line_id": "36",
+          "tokens": [
+            {
+              "word": "sol",
+              "gloss": "[separate+vessel] collect",
+              "prefix_role": "CC_INIT",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "keedy",
+              "gloss": "[heat+cool] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokeedy",
+              "gloss": "[q+vessel] heat+cool (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokey",
+              "gloss": "[q+vessel] heat (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "okar",
+              "gloss": "[vessel+heat] accept+flow",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "otar",
+              "gloss": "[vessel+drive] accept+flow",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "dar",
+              "gloss": "[seal+accept] flow",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "dar",
+              "gloss": "[seal+accept] flow",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "dy",
+              "gloss": "seal+end",
+              "prefix_role": null,
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            }
+          ],
+          "token_count": 9,
+          "zone": "SPECIFICATION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "EARLY",
+          "flow_render": "scaffold frame <k> -> heat-burst batch | [QO] steady <k> [THOROUGH] | [QO] heat <k> [SELECTIVE] | vessel release | scaffold release -> setup input <k> (FL:MEDIAL) -> setup input <k> (FL:MEDIAL) -> seal <k> (FL:TERMINAL)",
+          "structural": "FL:MIXED | kern:[e,k,e,k] | FINAL:dy",
+          "interpretive": "finishing step - -> done"
+        },
+        {
+          "line_id": "37",
+          "tokens": [
+            {
+              "word": "qokedy",
+              "gloss": "[q+vessel] heat (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "dy",
+              "gloss": "seal+end",
+              "prefix_role": null,
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "sheety",
+              "gloss": "[separate+watch] cool+cool+drive (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "qokedy",
+              "gloss": "[q+vessel] heat (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokchdy",
+              "gloss": "[q+vessel] heat+adjust+watch (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "h"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokechdy",
+              "gloss": "[q+vessel] heat+cool+adjust+watch (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "h",
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "lol",
+              "gloss": "collect (MOD)",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "AXM"
+            }
+          ],
+          "token_count": 7,
+          "zone": "SPECIFICATION",
+          "suffix_mode": "A",
+          "fl_progression": "MIXED",
+          "position": "MID",
+          "flow_render": "[QO] heat <k> [THOROUGH] -> seal <k> (FL:TERMINAL) -> monitor path [END] | [QO] heat <k> [THOROUGH] | [QO] pulse <k> [CLOSE] = [hold-heavy] [-dy] -> frame <k> (FL:LATE) [HOLD]",
+          "structural": "FL:MIXED | kern:[k,e,k,h,k,h,e]",
+          "interpretive": "processing material"
+        },
+        {
+          "line_id": "38",
+          "tokens": [
+            {
+              "word": "qokeedy",
+              "gloss": "[q+vessel] heat+cool (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokeedy",
+              "gloss": "[q+vessel] heat+cool (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokedy",
+              "gloss": "[q+vessel] heat (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokedy",
+              "gloss": "[q+vessel] heat (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokeedy",
+              "gloss": "[q+vessel] heat+cool (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "ldy",
+              "gloss": "collect (BATCH_CLOSE)",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "AXM"
+            }
+          ],
+          "token_count": 6,
+          "zone": "EXECUTION",
+          "suffix_mode": "A",
+          "fl_progression": "FORWARD",
+          "position": "MID",
+          "flow_render": "[QO] steady <k> [THOROUGH] = [QO] steady <k> [THOROUGH] = [QO] heat <k> [THOROUGH] = [QO] heat <k> [THOROUGH] = [QO] steady <k> [THOROUGH] -> frame <k> (FL:LATE) [CLOSE]",
+          "structural": "FL:FORWARD | kern:[k,e,k,e,k,e]",
+          "interpretive": "processing material - (progressing)"
+        },
+        {
+          "line_id": "39",
+          "tokens": [
+            {
+              "word": "yshedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "qokeedy",
+              "gloss": "[q+vessel] heat+cool (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokchdy",
+              "gloss": "[q+vessel] heat+adjust+watch (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "h"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "olkeedy",
+              "gloss": "[vessel+collect] heat+cool (BATCH_CLOSE)",
+              "prefix_role": "AX_LATE",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "otey",
+              "gloss": "[vessel+drive] cool+end",
+              "prefix_role": "EN_QO",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "koldy",
+              "gloss": "[heat+vessel] collect (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": null
+            }
+          ],
+          "token_count": 6,
+          "zone": "EXECUTION",
+          "suffix_mode": "A",
+          "fl_progression": "BACKWARD",
+          "position": "MID",
+          "flow_render": "monitor batch | [QO] steady <k> [THOROUGH] | [QO] pulse <k> [CLOSE] -> store steady <k> [THOROUGH] -> scaffold set | heat frame <k> [CLOSE]",
+          "structural": "FL:BACKWARD | kern:[e,k,e,k,h,k,e]",
+          "interpretive": "checking progress"
+        },
+        {
+          "line_id": "40",
+          "tokens": [
+            {
+              "word": "dar",
+              "gloss": "[seal+accept] flow",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "shedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokain",
+              "gloss": "[q+vessel] heat (LOOP_CHECK)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "shedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "dal",
+              "gloss": "[seal+accept] collect",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "keedy",
+              "gloss": "[heat+cool] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "rshedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            }
+          ],
+          "token_count": 7,
+          "zone": "EXECUTION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "MID",
+          "flow_render": "setup input <k> (FL:MEDIAL) -> monitor batch | [QO] heat <k> [CHECKPOINT] | monitor batch -> setup frame <k> (FL:LATE) -> heat-burst batch | monitor batch",
+          "structural": "FL:MIXED | kern:[e,k,e]",
+          "interpretive": "processing material"
+        },
+        {
+          "line_id": "41",
+          "tokens": [
+            {
+              "word": "sokeedy",
+              "gloss": "[separate+vessel] heat+cool (BATCH_CLOSE)",
+              "prefix_role": "CC_INIT",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "qokeedy",
+              "gloss": "[q+vessel] heat+cool (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "oteedy",
+              "gloss": "[vessel+drive] cool (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "qoky",
+              "gloss": "[q+vessel] heat (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "dykeedy",
+              "gloss": "[end+heat] cool (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "sy",
+              "gloss": "separate (MOD)",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            }
+          ],
+          "token_count": 6,
+          "zone": "EXECUTION",
+          "suffix_mode": "A",
+          "fl_progression": "FORWARD",
+          "position": "MID",
+          "flow_render": "scaffold steady <k> [THOROUGH] -> [QO] steady <k> [THOROUGH] = scaffold cool <e> [THOROUGH] | [QO] heat <k> [END] | init cool <e> [THOROUGH] -> sequence [END]",
+          "structural": "FL:FORWARD | kern:[k,e,k,e,k,e]",
+          "interpretive": "processing material - (progressing)"
+        },
+        {
+          "line_id": "42",
+          "tokens": [
+            {
+              "word": "dshedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokedy",
+              "gloss": "[q+vessel] heat (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "c",
+              "gloss": "adjust",
+              "prefix_role": null,
+              "fl_stage": null,
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "qoteey",
+              "gloss": "[q+vessel] drive (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qoteedy",
+              "gloss": "[q+vessel] drive+cool (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": null,
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "dar",
+              "gloss": "[seal+accept] flow",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            }
+          ],
+          "token_count": 6,
+          "zone": "EXECUTION",
+          "suffix_mode": "A",
+          "fl_progression": "BACKWARD",
+          "position": "LATE",
+          "flow_render": "monitor batch | [QO] heat <k> [THOROUGH] -> adjust -> [QO] transfer [EXTENDED] | [QO] gather [THOROUGH] -> setup input <k> (FL:MEDIAL)",
+          "structural": "FL:BACKWARD | kern:[e,k,e]",
+          "interpretive": "processing material"
+        },
+        {
+          "line_id": "43",
+          "tokens": [
+            {
+              "word": "yshedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "chekar",
+              "gloss": "[adjust+watch] cool+heat (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "oldy",
+              "gloss": "[vessel+collect] seal+end",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokain",
+              "gloss": "[q+vessel] heat (LOOP_CHECK)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "chkar",
+              "gloss": "[adjust+watch] heat (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "otar",
+              "gloss": "[vessel+drive] accept+flow",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "oldy",
+              "gloss": "[vessel+collect] seal+end",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            }
+          ],
+          "token_count": 7,
+          "zone": "EXECUTION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "LATE",
+          "flow_render": "monitor batch | test exact <k> [CLOSE] -> store seal <k> (FL:TERMINAL) -> [QO] heat <k> [CHECKPOINT] | test heat <k> [CLOSE] | scaffold release -> store seal <k> (FL:TERMINAL)",
+          "structural": "FL:MIXED | kern:[e,k,e,k]",
+          "interpretive": "checking progress"
+        },
+        {
+          "line_id": "44",
+          "tokens": [
+            {
+              "word": "dchedy",
+              "gloss": "[seal+adjust+watch] cool+seal+end",
+              "prefix_role": "PREP",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "sain",
+              "gloss": "[separate+accept] iterate+halt",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "EARLY",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "okedy",
+              "gloss": "[vessel+heat] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "qokedy",
+              "gloss": "[q+vessel] heat (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "otedy",
+              "gloss": "[vessel+drive] cool+seal+end",
+              "prefix_role": "EN_QO",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "okoldy",
+              "gloss": "[vessel+heat] vessel+collect (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "otar",
+              "gloss": "[vessel+drive] accept+flow",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "otam",
+              "gloss": "[vessel+drive] accept+final",
+              "prefix_role": "EN_QO",
+              "fl_stage": "FINAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "olaiin",
+              "gloss": "[vessel+collect] accept+iterate+iterate+halt",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "chdar",
+              "gloss": "[adjust+watch] seal (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "dy",
+              "gloss": "seal+end",
+              "prefix_role": null,
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            }
+          ],
+          "token_count": 11,
+          "zone": "EXECUTION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "LATE",
+          "flow_render": "process batch -> dry link <k> -> vessel batch | [QO] heat <k> [THOROUGH] | scaffold batch | vessel continue <k> [CLOSE] | scaffold release | scaffold finalize -> store settle (FL:MEDIAL) -> test mark <h> [CLOSE] -> seal <k> (FL:TERMINAL)",
+          "structural": "FL:MIXED | kern:[e,k,e] | FINAL:dy",
+          "interpretive": "finishing step - -> done"
+        },
+        {
+          "line_id": "45",
+          "tokens": [
+            {
+              "word": "sshedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "shckhy",
+              "gloss": "[separate+watch] adjust+heat (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokey",
+              "gloss": "[q+vessel] heat (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "okedy",
+              "gloss": "[vessel+heat] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "sorol",
+              "gloss": "[separate+vessel] flow (MOD)",
+              "prefix_role": "CC_INIT",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "oty",
+              "gloss": "[vessel+drive] end",
+              "prefix_role": "EN_QO",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "otedy",
+              "gloss": "[vessel+drive] cool+seal+end",
+              "prefix_role": "EN_QO",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "qotedy",
+              "gloss": "[q+vessel] drive (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "otedy",
+              "gloss": "[vessel+drive] cool+seal+end",
+              "prefix_role": "EN_QO",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "okaiin",
+              "gloss": "[vessel+heat] accept+iterate+iterate+halt",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            }
+          ],
+          "token_count": 10,
+          "zone": "EXECUTION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "LATE",
+          "flow_render": "monitor batch | monitor hard <k> [VERIFY] | [QO] heat <k> [SELECTIVE] | vessel batch -> scaffold input <k> [HOLD] -> scaffold end | scaffold batch | [QO] transfer [THOROUGH] | scaffold batch | vessel settle",
+          "structural": "FL:MIXED | kern:[e,k,e]",
+          "interpretive": "processing material"
+        },
+        {
+          "line_id": "46",
+          "tokens": [
+            {
+              "word": "qokey",
+              "gloss": "[q+vessel] heat (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokedy",
+              "gloss": "[q+vessel] heat (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "sheol",
+              "gloss": "[separate+watch] cool+vessel+collect",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokedy",
+              "gloss": "[q+vessel] heat (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "dain",
+              "gloss": "[seal+accept] iterate+halt",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "EARLY",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "shedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "otol",
+              "gloss": "[vessel+drive] vessel+collect",
+              "prefix_role": "EN_QO",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "chedy",
+              "gloss": "[adjust+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "olor",
+              "gloss": "[vessel+collect] vessel+flow",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            }
+          ],
+          "token_count": 9,
+          "zone": "EXECUTION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "LATE",
+          "flow_render": "[QO] heat <k> [SELECTIVE] | [QO] heat <k> [THOROUGH] | monitor sustain <k> | [QO] heat <k> [THOROUGH] -> setup link <k> (FL:EARLY) -> monitor batch | scaffold continue <k> | test batch -> store portion (FL:MEDIAL)",
+          "structural": "FL:MIXED | kern:[k,e,k,e]",
+          "interpretive": "checking progress"
+        }
+      ]
+    },
+    {
+      "folio": "f34r",
+      "section": "H",
+      "paragraph_id": "P1",
+      "line_count": 9,
+      "token_count": 86,
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "structural": "P1 | (pcheoepchy) | : 9L/86T | kern=[e:12,h:4,k:7] | type=[ESCAPE_DOMINANT] | role=EN_KERNEL | zones=[E:5/H:1/S:3] | mode=[AABBABAA] interleave=57% | tail=PROCESS_HEAVY",
+      "interpretive": "Waiting/settling phase - (spec->exec gradient) - (alternating spec/equil cycles) - (process-heavy output)",
+      "mode_sequence": [
+        "A",
+        "A",
+        "B",
+        "B",
+        "A",
+        "B",
+        "A",
+        "A"
+      ],
+      "interleave_rate": 0.57,
+      "tail_signature": "PROCESS_HEAVY",
+      "lines": [
+        {
+          "line_id": "1",
+          "tokens": [
+            {
+              "word": "pcheoepchy",
+              "gloss": "[pause+adjust+watch] cool+vessel+cool+pause+adjust (BATCH_CLOSE)",
+              "prefix_role": "PREP",
+              "fl_stage": null,
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "olar",
+              "gloss": "[vessel+collect] accept+flow",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXm"
+            },
+            {
+              "word": "yl",
+              "gloss": "end (MOD)",
+              "prefix_role": null,
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "yfody",
+              "gloss": "end+flag+vessel (BATCH_CLOSE)",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "okedody",
+              "gloss": "[vessel+heat] cool+seal+vessel (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "LATE",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "shod",
+              "gloss": "[separate+watch] vessel+seal",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "ololdy",
+              "gloss": "[vessel+collect] vessel+collect (BATCH_CLOSE)",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "dar",
+              "gloss": "[seal+accept] flow",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "ytey",
+              "gloss": "[drive+cool] end",
+              "prefix_role": "PREP_TIER",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            }
+          ],
+          "token_count": 9,
+          "zone": "HEADER",
+          "suffix_mode": "A",
+          "fl_progression": "MIXED",
+          "position": "EARLY",
+          "flow_render": "[hold-light] [-hy] -> store release (FL:MEDIAL) -> end (FL:TERMINAL) [FRAME] -> [hold-light] [-dy] -> vessel discharge <e> [CLOSE] | monitor precise -> store continue <k> (FL:LATE) [CLOSE] -> setup input <k> (FL:MEDIAL) -> process end",
+          "structural": "FL:MIXED | kern:[e]",
+          "interpretive": "[HEADER] Identification/specification line - 9 tokens (HT compounds per C935)"
+        },
+        {
+          "line_id": "2",
+          "tokens": [
+            {
+              "word": "ytar",
+              "gloss": "[drive+accept] flow",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "sheody",
+              "gloss": "[separate+watch] cool+vessel (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "LATE",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "olam",
+              "gloss": "[vessel+collect] accept+final",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "FINAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "octhede",
+              "gloss": "vessel+adjust+drive+watch+cool+seal+cool",
+              "prefix_role": null,
+              "fl_stage": null,
+              "kernels": [
+                "h",
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "otedy",
+              "gloss": "[vessel+drive] cool+seal+end",
+              "prefix_role": "EN_QO",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "chdain",
+              "gloss": "[adjust+watch] seal (LOOP_CHECK)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "oltey",
+              "gloss": "[vessel+collect] drive (BATCH_CLOSE)",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "kchy",
+              "gloss": "[heat+adjust+watch] end",
+              "prefix_role": "PREP",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "ty",
+              "gloss": "drive (MOD)",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            }
+          ],
+          "token_count": 9,
+          "zone": "SPECIFICATION",
+          "suffix_mode": "A",
+          "fl_progression": "MIXED",
+          "position": "EARLY",
+          "flow_render": "transfer input <k> -> monitor open <e> [CLOSE] -> store finalize (FL:FINAL) -> [hold-heavy] -> scaffold batch | test mark <h> [CHECKPOINT] -> store transfer [SELECTIVE] -> precision-heat end -> transfer [END]",
+          "structural": "FL:MIXED | kern:[e,h,e]",
+          "interpretive": "checking progress"
+        },
+        {
+          "line_id": "3",
+          "tokens": [
+            {
+              "word": "qotedy",
+              "gloss": "[q+vessel] drive (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "chyty",
+              "gloss": "[adjust+watch] end+drive (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "chdaly",
+              "gloss": "[adjust+watch] seal+accept (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "INITIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "dar",
+              "gloss": "[seal+accept] flow",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "chd",
+              "gloss": "[adjust+watch] seal",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "otedy",
+              "gloss": "[vessel+drive] cool+seal+end",
+              "prefix_role": "EN_QO",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "qotol",
+              "gloss": "[q+vessel] drive (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "okedy",
+              "gloss": "[vessel+heat] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "dody",
+              "gloss": "[seal+vessel] seal+end",
+              "prefix_role": "EN_QO",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "ody",
+              "gloss": "vessel (BATCH_CLOSE)",
+              "prefix_role": null,
+              "fl_stage": "FINAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "kam",
+              "gloss": "[heat+accept] final",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": null
+            }
+          ],
+          "token_count": 11,
+          "zone": "SPECIFICATION",
+          "suffix_mode": "A",
+          "fl_progression": "MIXED",
+          "position": "EARLY",
+          "flow_render": "[QO] transfer [THOROUGH] | test end [END] | test start [SETTLED] -> setup input <k> (FL:MEDIAL) -> test mark <h> | scaffold batch | [QO] transfer [HOLD] | vessel batch | mark seal <k> (FL:TERMINAL) -> work (FL:FINAL) [CLOSE] -> anchor final",
+          "structural": "FL:MIXED | kern:[e]",
+          "interpretive": "processing material"
+        },
+        {
+          "line_id": "4",
+          "tokens": [
+            {
+              "word": "ytedy",
+              "gloss": "[drive+cool] seal+end",
+              "prefix_role": "PREP_TIER",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "daiin",
+              "gloss": "[seal+accept] iterate+iterate+halt",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "EARLY",
+              "kernels": [],
+              "macro_state": "CC"
+            },
+            {
+              "word": "chey",
+              "gloss": "[adjust+watch] cool+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "aiin",
+              "gloss": "accept+iterate+iterate+halt",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "shy",
+              "gloss": "[separate+watch] end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "chckhy",
+              "gloss": "[adjust+watch] adjust+heat (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "oltchedy",
+              "gloss": "[vessel+collect] drive+adjust+watch (BATCH_CLOSE)",
+              "prefix_role": "AX_LATE",
+              "fl_stage": null,
+              "kernels": [
+                "h"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "otedy",
+              "gloss": "[vessel+drive] cool+seal+end",
+              "prefix_role": "EN_QO",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "dam",
+              "gloss": "[seal+accept] final",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "checthy",
+              "gloss": "[adjust+watch] cool+adjust+drive (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            }
+          ],
+          "token_count": 10,
+          "zone": "SPECIFICATION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "EARLY",
+          "flow_render": "process seal <k> -> setup iterate <k> -> test set -> settle -> monitor end | test hard <k> [VERIFY] -> store pound [THOROUGH] -> scaffold batch -> setup final (FL:TERMINAL) -> test regulate [VERIFY]",
+          "structural": "FL:MIXED | kern:[e,k,h,e]",
+          "interpretive": "Prepare material - checking progress"
+        },
+        {
+          "line_id": "5",
+          "tokens": [
+            {
+              "word": "qoteedy",
+              "gloss": "[q+vessel] drive+cool (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": null,
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "shedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "shedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "ol",
+              "gloss": "vessel+collect",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "CC"
+            },
+            {
+              "word": "okes",
+              "gloss": "[vessel+heat] cool (SEPARATE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "ar",
+              "gloss": "accept+flow",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "ykeedl",
+              "gloss": "[end+heat] cool+cool+seal (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "chedy",
+              "gloss": "[adjust+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "otey",
+              "gloss": "[vessel+drive] cool+end",
+              "prefix_role": "EN_QO",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "okaiin",
+              "gloss": "[vessel+heat] accept+iterate+iterate+halt",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            }
+          ],
+          "token_count": 10,
+          "zone": "EXECUTION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "MID",
+          "flow_render": "[QO] gather [THOROUGH] | monitor batch | monitor batch -> continue <k> -> vessel cool <e> [NEXT] -> release -> init extended <e> [FRAME] | test batch | scaffold set | vessel settle",
+          "structural": "FL:MIXED | kern:[e]",
+          "interpretive": "processing material"
+        },
+        {
+          "line_id": "6",
+          "tokens": [
+            {
+              "word": "oteol",
+              "gloss": "[vessel+drive] cool+vessel+collect",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXm"
+            },
+            {
+              "word": "chekey",
+              "gloss": "[adjust+watch] cool+heat (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "chetey",
+              "gloss": "[adjust+watch] cool+drive (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "oll",
+              "gloss": "[vessel+collect] collect",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "chesy",
+              "gloss": "[adjust+watch] cool+separate (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "daiin",
+              "gloss": "[seal+accept] iterate+iterate+halt",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "EARLY",
+              "kernels": [],
+              "macro_state": "CC"
+            },
+            {
+              "word": "cheky",
+              "gloss": "[adjust+watch] cool+heat (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "fchs",
+              "gloss": "[flag+adjust+watch] separate",
+              "prefix_role": "PREP",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "aiir",
+              "gloss": "accept+iterate+iterate (MOD)",
+              "prefix_role": null,
+              "fl_stage": "INITIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "amg",
+              "gloss": "accept+final (MOD)",
+              "prefix_role": null,
+              "fl_stage": "FINAL",
+              "kernels": [],
+              "macro_state": null
+            }
+          ],
+          "token_count": 10,
+          "zone": "EXECUTION",
+          "suffix_mode": "A",
+          "fl_progression": "MIXED",
+          "position": "MID",
+          "flow_render": "scaffold sustain <k> | test exact <k> [SELECTIVE] = test path [SELECTIVE] -> store frame <k> (FL:LATE) -> test cool [END] -> setup iterate <k> -> test exact <k> [END] -> process sequence -> open (FL:INITIAL) [CONTINUE] -> finalize",
+          "structural": "FL:MIXED | kern:[e,k,e,k,e]",
+          "interpretive": "checking progress"
+        },
+        {
+          "line_id": "7",
+          "tokens": [
+            {
+              "word": "qokedy",
+              "gloss": "[q+vessel] heat (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "dal",
+              "gloss": "[seal+accept] collect",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "chdy",
+              "gloss": "[adjust+watch] seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "olchy",
+              "gloss": "[vessel+collect] end",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "ykcheg",
+              "gloss": "[end+heat] cool (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "ykedy",
+              "gloss": "[end+heat] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokchdy",
+              "gloss": "[q+vessel] heat+adjust+watch (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "h"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "s",
+              "gloss": "separate",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "ar",
+              "gloss": "accept+flow",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "oldam",
+              "gloss": "[vessel+collect] seal (FINALIZE)",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            }
+          ],
+          "token_count": 10,
+          "zone": "EXECUTION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "LATE",
+          "flow_render": "[QO] heat <k> [THOROUGH] -> setup frame <k> (FL:LATE) -> test seal <k> -> store end -> init cool <e> | init batch | [QO] pulse <k> [CLOSE] -> sequence -> release -> store mark <h> (FL:MEDIAL) [FINALIZE]",
+          "structural": "FL:MIXED | kern:[k,e,k,h]",
+          "interpretive": "checking progress"
+        },
+        {
+          "line_id": "8",
+          "tokens": [
+            {
+              "word": "shotchy",
+              "gloss": "[separate+watch] vessel+drive+adjust (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "qoky",
+              "gloss": "[q+vessel] heat (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "olk",
+              "gloss": "[vessel+collect] heat",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "checkhy",
+              "gloss": "[adjust+watch] cool+adjust+heat (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "ysair",
+              "gloss": "[separate+accept] iterate (MOD)",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "INITIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "air",
+              "gloss": "accept+iterate (MOD)",
+              "prefix_role": null,
+              "fl_stage": "INITIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "chodar",
+              "gloss": "[adjust+watch] vessel+seal (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "tam",
+              "gloss": "[drive+accept] final",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": null
+            }
+          ],
+          "token_count": 8,
+          "zone": "EXECUTION",
+          "suffix_mode": "A",
+          "fl_progression": "MIXED",
+          "position": "LATE",
+          "flow_render": "monitor route [VERIFY] | [QO] heat <k> [END] -> store heat <k> -> test rigid <k> [VERIFY] -> dry iterate [CONTINUE] -> open (FL:INITIAL) [CONTINUE] -> test precise [CLOSE] -> transfer final",
+          "structural": "FL:MIXED | kern:[k,e]",
+          "interpretive": "checking progress"
+        },
+        {
+          "line_id": "9",
+          "tokens": [
+            {
+              "word": "ykchdy",
+              "gloss": "[end+heat] seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "qod",
+              "gloss": "[q+vessel] seal",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "ar",
+              "gloss": "accept+flow",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "chct",
+              "gloss": "[adjust+watch] adjust+drive",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "aikhy",
+              "gloss": "accept+iterate+heat (BATCH_CLOSE)",
+              "prefix_role": null,
+              "fl_stage": null,
+              "kernels": [
+                "k"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "orlchey",
+              "gloss": "[vessel+flow] collect+adjust+watch (BATCH_CLOSE)",
+              "prefix_role": "AX_LATE",
+              "fl_stage": null,
+              "kernels": [
+                "h"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "todaly",
+              "gloss": "[drive+vessel] seal+accept (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "INITIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "okaiin",
+              "gloss": "[vessel+heat] accept+iterate+iterate+halt",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "dardy",
+              "gloss": "[seal+accept] flow (BATCH_CLOSE)",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            }
+          ],
+          "token_count": 9,
+          "zone": "EXECUTION",
+          "suffix_mode": "A",
+          "fl_progression": "MIXED",
+          "position": "LATE",
+          "flow_render": "init seal <k> | [QO] mark <h> -> release -> test control -> open [VERIFY] -> portion strip <k> [SELECTIVE] -> transfer start [SETTLED] | vessel settle -> setup input <k> (FL:MEDIAL) [CLOSE]",
+          "structural": "FL:MIXED | kern:[k,h]",
+          "interpretive": "checking progress"
+        }
+      ]
+    },
+    {
+      "folio": "f103r",
+      "section": "S",
+      "paragraph_id": "P2",
+      "line_count": 8,
+      "token_count": 94,
+      "kernel_balance": "ESCAPE_DOMINANT",
+      "structural": "P2 | (pocharal) | : 8L/94T | kern=[e:13,h:3,k:7] | type=[ESCAPE_DOMINANT] | role=EN_KERNEL | zones=[E:5/H:1/S:2] | mode=[BAABBBBB] interleave=29% | tail=MIXED_OUTPUT",
+      "interpretive": "Waiting/settling phase - with initialization - to completion - (finishing) - (spec->exec gradient) - (mixed output)",
+      "mode_sequence": [
+        "B",
+        "A",
+        "A",
+        "B",
+        "B",
+        "B",
+        "B",
+        "B"
+      ],
+      "interleave_rate": 0.29,
+      "tail_signature": "MIXED_OUTPUT",
+      "lines": [
+        {
+          "line_id": "5",
+          "tokens": [
+            {
+              "word": "pocharal",
+              "gloss": "[pause+vessel] accept+flow (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "okedar",
+              "gloss": "[vessel+heat] cool+seal (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "shedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "oteey",
+              "gloss": "[vessel+drive] cool+cool+end",
+              "prefix_role": "EN_QO",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "qokey",
+              "gloss": "[q+vessel] heat (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "lkar",
+              "gloss": "[collect+heat] accept+flow",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "sheeky",
+              "gloss": "[separate+watch] cool+cool+heat (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "okalor",
+              "gloss": "[vessel+heat] accept+collect (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "shedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "rkar",
+              "gloss": "[heat+accept] flow",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "otan",
+              "gloss": "[vessel+drive] accept+halt",
+              "prefix_role": "EN_QO",
+              "fl_stage": "INITIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "okdy",
+              "gloss": "[vessel+heat] seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": null
+            }
+          ],
+          "token_count": 12,
+          "zone": "HEADER",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "EARLY",
+          "flow_render": "[hold-light] [-al] | vessel discharge <e> [CLOSE] | monitor batch | scaffold deep <e> | [QO] heat <k> [SELECTIVE] | watch release | monitor lock <k> [END] | vessel gather <k> [PORTION] | monitor batch -> anchor input <k> -> scaffold bind | vessel seal <k>",
+          "structural": "FL:MIXED | kern:[e,k,e]",
+          "interpretive": "processing material"
+        },
+        {
+          "line_id": "6",
+          "tokens": [
+            {
+              "word": "ocheey",
+              "gloss": "vessel+adjust+watch (BATCH_CLOSE)",
+              "prefix_role": null,
+              "fl_stage": null,
+              "kernels": [
+                "h"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "dain",
+              "gloss": "[seal+accept] iterate+halt",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "EARLY",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "shek",
+              "gloss": "[separate+watch] cool+heat",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "okeedy",
+              "gloss": "[vessel+heat] cool (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "okey",
+              "gloss": "[vessel+heat] cool+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "shedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokealdy",
+              "gloss": "[q+vessel] heat+cool+accept+collect (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k",
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "shcthy",
+              "gloss": "[separate+watch] adjust+drive (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qotedy",
+              "gloss": "[q+vessel] drive (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "san",
+              "gloss": "[separate+accept] halt",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": null,
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "am",
+              "gloss": "accept+final",
+              "prefix_role": null,
+              "fl_stage": "FINAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            }
+          ],
+          "token_count": 11,
+          "zone": "SPECIFICATION",
+          "suffix_mode": "A",
+          "fl_progression": "MIXED",
+          "position": "EARLY",
+          "flow_render": "watch <h> [EXTENDED] -> setup link <k> (FL:EARLY) -> monitor exact <k> | vessel cool <e> [THOROUGH] | vessel set | monitor batch | [hold-heavy] [-dy] | monitor control [VERIFY] | [QO] transfer [THOROUGH] -> dry halt -> finalize (FL:FINAL)",
+          "structural": "FL:MIXED | kern:[h,k,e,k,e] | FINAL:am",
+          "interpretive": "finishing step - -> done"
+        },
+        {
+          "line_id": "7",
+          "tokens": [
+            {
+              "word": "sain",
+              "gloss": "[separate+accept] iterate+halt",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "EARLY",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "chey",
+              "gloss": "[adjust+watch] cool+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "she",
+              "gloss": "[separate+watch] cool",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "olshedy",
+              "gloss": "[vessel+collect] cool+seal+end",
+              "prefix_role": "AX_LATE",
+              "fl_stage": null,
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokeey",
+              "gloss": "[q+vessel] heat (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "okeeody",
+              "gloss": "[vessel+heat] cool+cool+vessel (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "LATE",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qoeedy",
+              "gloss": "[q+vessel] cool (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "olshedy",
+              "gloss": "[vessel+collect] cool+seal+end",
+              "prefix_role": "AX_LATE",
+              "fl_stage": null,
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            }
+          ],
+          "token_count": 8,
+          "zone": "SPECIFICATION",
+          "suffix_mode": "A",
+          "fl_progression": "MIXED",
+          "position": "EARLY",
+          "flow_render": "dry link <k> -> test set | monitor cool <e> -> store batch -> [QO] heat <k> [EXTENDED] | vessel wide <e> [CLOSE] | [QO] cool <e> [THOROUGH] -> store batch",
+          "structural": "INIT:sain | FL:MIXED | kern:[e,k,e]",
+          "interpretive": "Start step - setting up"
+        },
+        {
+          "line_id": "8",
+          "tokens": [
+            {
+              "word": "daroal",
+              "gloss": "[seal+accept] flow+vessel (MOD)",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "okey",
+              "gloss": "[vessel+heat] cool+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "chedy",
+              "gloss": "[adjust+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "okey",
+              "gloss": "[vessel+heat] cool+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "rain",
+              "gloss": "flow (LOOP_CHECK)",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "okechy",
+              "gloss": "[vessel+heat] cool+adjust (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "qoisol",
+              "gloss": "[q+vessel] iterate+separate (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "qotar",
+              "gloss": "[q+vessel] drive (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "adchey",
+              "gloss": "accept+seal+adjust+watch (BATCH_CLOSE)",
+              "prefix_role": null,
+              "fl_stage": null,
+              "kernels": [
+                "h"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "ofcho",
+              "gloss": "vessel+flag+adjust+watch+vessel",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [
+                "h"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "lteody",
+              "gloss": "[drive+cool] vessel (BATCH_CLOSE)",
+              "prefix_role": "PREP_TIER",
+              "fl_stage": "FINAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "oral",
+              "gloss": "[vessel+flow] accept+collect",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "kechdy",
+              "gloss": "[heat+cool] seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "lo",
+              "gloss": "collect+vessel",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "AXM"
+            }
+          ],
+          "token_count": 14,
+          "zone": "EXECUTION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "MID",
+          "flow_render": "setup input (FL:LATE) [TRANSFER] -> vessel set | test batch | vessel set -> input <k> (FL:MEDIAL) [CHECKPOINT] -> vessel cool [VERIFY] | [QO] iterate [HOLD] | [QO] transfer [CLOSE] -> [hold-light] [-ey] -> work <h> -> process work [CLOSE] -> portion gather <k> (FL:LATE) -> heat-burst seal <k> -> open (FL:LATE)",
+          "structural": "FL:MIXED | kern:[e,h]",
+          "interpretive": "checking progress"
+        },
+        {
+          "line_id": "9",
+          "tokens": [
+            {
+              "word": "oteeos",
+              "gloss": "[vessel+drive] cool+cool+vessel (SEPARATE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "LATE",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "ar",
+              "gloss": "accept+flow",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "cheal",
+              "gloss": "[adjust+watch] cool (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "okeey",
+              "gloss": "[vessel+heat] cool+cool+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "shey",
+              "gloss": "[separate+watch] cool+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "lkaiin",
+              "gloss": "[collect+heat] accept+iterate+iterate+halt",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "shey",
+              "gloss": "[separate+watch] cool+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "lkeor",
+              "gloss": "[collect+heat] cool (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "otain",
+              "gloss": "[vessel+drive] accept+iterate+halt",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "shedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "otey",
+              "gloss": "[vessel+drive] cool+end",
+              "prefix_role": "EN_QO",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "l",
+              "gloss": "collect",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "ledy",
+              "gloss": "collect (BATCH_CLOSE)",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "okeedaram",
+              "gloss": "[vessel+heat] cool+cool+seal+accept+flow (FINALIZE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            }
+          ],
+          "token_count": 14,
+          "zone": "EXECUTION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "MID",
+          "flow_render": "scaffold wide <e> [NEXT] -> release -> test cool <e> [TRANSFER] | vessel deep <e> | monitor set | watch settle | monitor set | watch cool <e> [PORTION] | scaffold intake <k> | monitor batch | scaffold set -> frame <k> (FL:LATE) -> frame <k> [THOROUGH] -> [hold-heavy] [-am]",
+          "structural": "FL:MIXED | kern:[e]",
+          "interpretive": "processing material"
+        },
+        {
+          "line_id": "10",
+          "tokens": [
+            {
+              "word": "daiin",
+              "gloss": "[seal+accept] iterate+iterate+halt",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "EARLY",
+              "kernels": [],
+              "macro_state": "CC"
+            },
+            {
+              "word": "ol",
+              "gloss": "vessel+collect",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "CC"
+            },
+            {
+              "word": "oain",
+              "gloss": "vessel (LOOP_CHECK)",
+              "prefix_role": null,
+              "fl_stage": "FINAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "okeol",
+              "gloss": "[vessel+heat] cool+vessel+collect",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "chal",
+              "gloss": "[adjust+watch] accept+collect",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "okam",
+              "gloss": "[vessel+heat] accept+final",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "FINAL",
+              "kernels": [],
+              "macro_state": "AXm"
+            },
+            {
+              "word": "chety",
+              "gloss": "[adjust+watch] cool+drive (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "shedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "otaiin",
+              "gloss": "[vessel+drive] accept+iterate+iterate+halt",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "shedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "teolshy",
+              "gloss": "[drive+cool] vessel+collect+separate (BATCH_CLOSE)",
+              "prefix_role": "PREP_TIER",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "oteedy",
+              "gloss": "[vessel+drive] cool (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "sarain",
+              "gloss": "[separate+accept] flow (LOOP_CHECK)",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            }
+          ],
+          "token_count": 13,
+          "zone": "EXECUTION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "LATE",
+          "flow_render": "setup iterate <k> -> continue <k> -> work (FL:FINAL) [CHECKPOINT] -> vessel sustain <k> | test gather <k> | vessel finalize | test path [END] | monitor batch | scaffold settle | monitor batch | process continue <k> [VERIFY] | scaffold cool <e> [THOROUGH] -> dry input <k> [CHECKPOINT]",
+          "structural": "INIT:daiin | FL:MIXED | kern:[e]",
+          "interpretive": "Begin procedure - setting up"
+        },
+        {
+          "line_id": "11",
+          "tokens": [
+            {
+              "word": "dar",
+              "gloss": "[seal+accept] flow",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "oteey",
+              "gloss": "[vessel+drive] cool+cool+end",
+              "prefix_role": "EN_QO",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "otain",
+              "gloss": "[vessel+drive] accept+iterate+halt",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "lol",
+              "gloss": "collect (MOD)",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "shedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "okain",
+              "gloss": "[vessel+heat] accept+iterate+halt",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "chey",
+              "gloss": "[adjust+watch] cool+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qorain",
+              "gloss": "[q+vessel] flow (LOOP_CHECK)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "shey",
+              "gloss": "[separate+watch] cool+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "otoy",
+              "gloss": "[vessel+drive] vessel (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "FINAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "qokeol",
+              "gloss": "[q+vessel] heat (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "key",
+              "gloss": "[heat+cool] end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "daikhyky",
+              "gloss": "[seal+accept] iterate+heat+watch+end+heat (MOD)",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "h"
+              ],
+              "macro_state": null
+            }
+          ],
+          "token_count": 13,
+          "zone": "EXECUTION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "LATE",
+          "flow_render": "setup input <k> (FL:MEDIAL) -> scaffold deep <e> | scaffold intake <k> -> frame <k> (FL:LATE) [HOLD] -> monitor batch | vessel intake <k> | test set | [QO] input <k> [CHECKPOINT] | monitor set | scaffold work [END] | [QO] heat <k> | heat-burst end -> [hold-light] [-y]",
+          "structural": "FL:MIXED | kern:[e,k,h]",
+          "interpretive": "processing material"
+        },
+        {
+          "line_id": "12",
+          "tokens": [
+            {
+              "word": "oain",
+              "gloss": "vessel (LOOP_CHECK)",
+              "prefix_role": null,
+              "fl_stage": "FINAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "shey",
+              "gloss": "[separate+watch] cool+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "shckhy",
+              "gloss": "[separate+watch] adjust+heat (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "oteey",
+              "gloss": "[vessel+drive] cool+cool+end",
+              "prefix_role": "EN_QO",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "qokeol",
+              "gloss": "[q+vessel] heat (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "keedy",
+              "gloss": "[heat+cool] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "shar",
+              "gloss": "[separate+watch] accept+flow",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "aiin",
+              "gloss": "accept+iterate+iterate+halt",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "otedy",
+              "gloss": "[vessel+drive] cool+seal+end",
+              "prefix_role": "EN_QO",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            }
+          ],
+          "token_count": 9,
+          "zone": "EXECUTION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "LATE",
+          "flow_render": "work (FL:FINAL) [CHECKPOINT] -> monitor set | monitor hard <k> [VERIFY] | scaffold deep <e> | [QO] heat <k> | heat-burst batch | monitor release -> settle -> scaffold batch",
+          "structural": "FL:MIXED | kern:[e,k,e,k,e]",
+          "interpretive": "processing material"
+        }
+      ]
+    },
+    {
+      "folio": "f86v6",
+      "section": "C",
+      "paragraph_id": "P2",
+      "line_count": 11,
+      "token_count": 114,
+      "kernel_balance": "BALANCED",
+      "structural": "P2 | (tar) | : 11L/114T | kern=[e:15,h:6,k:18] | type=[BALANCED] | role=EN_KERNEL | zones=[E:7/H:1/S:3] | mode=[BBBBBABBABB] interleave=40% | tail=PROCESS_HEAVY",
+      "interpretive": "Mixed operations - with initialization - to completion - (process-heavy output)",
+      "mode_sequence": [
+        "B",
+        "B",
+        "B",
+        "B",
+        "B",
+        "A",
+        "B",
+        "B",
+        "A",
+        "B",
+        "B"
+      ],
+      "interleave_rate": 0.4,
+      "tail_signature": "PROCESS_HEAVY",
+      "lines": [
+        {
+          "line_id": "5",
+          "tokens": [
+            {
+              "word": "tar",
+              "gloss": "[drive+accept] flow",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "lol",
+              "gloss": "collect (MOD)",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "chol",
+              "gloss": "[adjust+watch] vessel+collect",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "olkar",
+              "gloss": "[vessel+collect] heat (MOD)",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "daiin",
+              "gloss": "[seal+accept] iterate+iterate+halt",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "EARLY",
+              "kernels": [],
+              "macro_state": "CC"
+            },
+            {
+              "word": "chear",
+              "gloss": "[adjust+watch] cool (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "or",
+              "gloss": "vessel+flow",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "otshey",
+              "gloss": "[vessel+drive] cool+end",
+              "prefix_role": "EN_QO",
+              "fl_stage": null,
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "qokar",
+              "gloss": "[q+vessel] heat (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "opchey",
+              "gloss": "vessel+pause+adjust+watch (BATCH_CLOSE)",
+              "prefix_role": null,
+              "fl_stage": null,
+              "kernels": [
+                "h"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "taiky",
+              "gloss": "[drive+accept] iterate+heat (MOD)",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": null,
+              "kernels": [
+                "k"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "qokar",
+              "gloss": "[q+vessel] heat (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            }
+          ],
+          "token_count": 12,
+          "zone": "HEADER",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "EARLY",
+          "flow_render": "transfer input <k> -> frame <k> (FL:LATE) [HOLD] -> test continue <k> -> store heat <k> [CLOSE] -> setup iterate <k> -> test cool <e> [CLOSE] -> portion -> scaffold set | [QO] heat <k> [CLOSE] -> operate <h> [SELECTIVE] -> transfer heat [END] -> [QO] heat <k> [CLOSE]",
+          "structural": "FL:MIXED | kern:[k,e,k,h,k]",
+          "interpretive": "checking progress"
+        },
+        {
+          "line_id": "6",
+          "tokens": [
+            {
+              "word": "daiin",
+              "gloss": "[seal+accept] iterate+iterate+halt",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "EARLY",
+              "kernels": [],
+              "macro_state": "CC"
+            },
+            {
+              "word": "sheol",
+              "gloss": "[separate+watch] cool+vessel+collect",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "keear",
+              "gloss": "[heat+cool] cool (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "or",
+              "gloss": "vessel+flow",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "chedy",
+              "gloss": "[adjust+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "orsheeen",
+              "gloss": "[vessel+flow] cool+cool (MOD)",
+              "prefix_role": "AX_LATE",
+              "fl_stage": null,
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "qotain",
+              "gloss": "[q+vessel] drive (LOOP_CHECK)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "odaiin",
+              "gloss": "vessel+seal (LOOP_CHECK)",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "olkeshar",
+              "gloss": "[vessel+collect] heat+cool+separate+watch (MOD)",
+              "prefix_role": "AX_LATE",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "h",
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "qokar",
+              "gloss": "[q+vessel] heat (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "ar",
+              "gloss": "accept+flow",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            }
+          ],
+          "token_count": 11,
+          "zone": "SPECIFICATION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "EARLY",
+          "flow_render": "setup iterate <k> -> monitor sustain <k> | heat-burst cool <e> [CLOSE] -> portion -> test batch -> [hold-light] [-en] -> [QO] transfer [CHECKPOINT] -> precise (FL:MEDIAL) [CHECKPOINT] -> store steady <k> [CLOSE] -> [QO] heat <k> [CLOSE] -> release",
+          "structural": "INIT:daiin | FL:MIXED | kern:[e,k,h,e,k]",
+          "interpretive": "Begin procedure - setting up"
+        },
+        {
+          "line_id": "7",
+          "tokens": [
+            {
+              "word": "qokaiin",
+              "gloss": "[q+vessel] heat (LOOP_CHECK)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "ylchedor",
+              "gloss": "[collect+adjust+watch] cool+seal (MOD)",
+              "prefix_role": "PREP_TIER",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "or",
+              "gloss": "vessel+flow",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "aiin",
+              "gloss": "accept+iterate+iterate+halt",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "ol",
+              "gloss": "vessel+collect",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "CC"
+            },
+            {
+              "word": "or",
+              "gloss": "vessel+flow",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "olkal",
+              "gloss": "[vessel+collect] heat (MOD)",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "or",
+              "gloss": "vessel+flow",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "shedy",
+              "gloss": "[separate+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokal",
+              "gloss": "[q+vessel] heat (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "sar",
+              "gloss": "[separate+accept] flow",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "orchey",
+              "gloss": "[vessel+flow] cool+end",
+              "prefix_role": "AX_LATE",
+              "fl_stage": null,
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "dy",
+              "gloss": "seal+end",
+              "prefix_role": null,
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            }
+          ],
+          "token_count": 13,
+          "zone": "SPECIFICATION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "EARLY",
+          "flow_render": "[QO] heat <k> [CHECKPOINT] -> process discharge <e> [PORTION] -> portion -> settle -> continue <k> -> portion -> store heat <k> [TRANSFER] -> portion -> monitor batch | [QO] heat <k> [TRANSFER] -> dry input <k> -> portion set -> seal <k> (FL:TERMINAL)",
+          "structural": "FL:MIXED | kern:[k,e,k,e,k,e] | FINAL:dy",
+          "interpretive": "Prepare material - finishing step - -> done"
+        },
+        {
+          "line_id": "8",
+          "tokens": [
+            {
+              "word": "ykaiin",
+              "gloss": "[end+heat] accept+iterate+iterate+halt",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "odaiin",
+              "gloss": "vessel+seal (LOOP_CHECK)",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "chal",
+              "gloss": "[adjust+watch] accept+collect",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "sair",
+              "gloss": "[separate+accept] iterate (MOD)",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "INITIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "ytar",
+              "gloss": "[drive+accept] flow",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "chody",
+              "gloss": "[adjust+watch] vessel (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "FINAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "ldaly",
+              "gloss": "[seal+accept] collect+end",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "FINAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "chdal",
+              "gloss": "[adjust+watch] seal (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "ykchedy",
+              "gloss": "[end+heat] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "lkchedy",
+              "gloss": "[collect+heat] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "dam",
+              "gloss": "[seal+accept] final",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            }
+          ],
+          "token_count": 11,
+          "zone": "SPECIFICATION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "EARLY",
+          "flow_render": "init settle -> precise (FL:MEDIAL) [CHECKPOINT] -> test gather <k> -> dry iterate [CONTINUE] -> transfer input <k> -> test work [CLOSE] -> setup end (FL:FINAL) -> test mark <h> [TRANSFER] | init batch | watch batch -> setup final (FL:TERMINAL)",
+          "structural": "FL:MIXED | kern:[e]",
+          "interpretive": "processing material"
+        },
+        {
+          "line_id": "9",
+          "tokens": [
+            {
+              "word": "dshor",
+              "gloss": "[separate+watch] vessel+flow",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXm"
+            },
+            {
+              "word": "ykaiin",
+              "gloss": "[end+heat] accept+iterate+iterate+halt",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "dar",
+              "gloss": "[seal+accept] flow",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "sheey",
+              "gloss": "[separate+watch] cool+cool+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokol",
+              "gloss": "[q+vessel] heat (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "cheol",
+              "gloss": "[adjust+watch] cool+vessel+collect",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "otar",
+              "gloss": "[vessel+drive] accept+flow",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "ar",
+              "gloss": "accept+flow",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "aiiin",
+              "gloss": "accept+iterate (LOOP_CHECK)",
+              "prefix_role": null,
+              "fl_stage": "INITIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qoteeos",
+              "gloss": "[q+vessel] drive+cool+cool+vessel (SEPARATE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "LATE",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "aiin",
+              "gloss": "accept+iterate+iterate+halt",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            }
+          ],
+          "token_count": 11,
+          "zone": "EXECUTION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "MID",
+          "flow_render": "monitor portion | init settle -> setup input <k> (FL:MEDIAL) -> monitor deep <e> | [QO] heat <k> [HOLD] | test sustain <k> | scaffold release -> release -> open (FL:INITIAL) [ITERATE] -> [QO] wide <e> [NEXT] -> settle",
+          "structural": "FL:MIXED | kern:[e,k,e]",
+          "interpretive": "processing material"
+        },
+        {
+          "line_id": "10",
+          "tokens": [
+            {
+              "word": "sarar",
+              "gloss": "[separate+accept] flow (MOD)",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "ykaiin",
+              "gloss": "[end+heat] accept+iterate+iterate+halt",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "saldam",
+              "gloss": "[separate+accept] collect+seal (FINALIZE)",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "sheol",
+              "gloss": "[separate+watch] cool+vessel+collect",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qckhy",
+              "gloss": "q+adjust+heat (BATCH_CLOSE)",
+              "prefix_role": null,
+              "fl_stage": null,
+              "kernels": [
+                "k"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "dalor",
+              "gloss": "[seal+accept] collect (MOD)",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "olaiin",
+              "gloss": "[vessel+collect] accept+iterate+iterate+halt",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "olkaiin",
+              "gloss": "[vessel+collect] heat (LOOP_CHECK)",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qodar",
+              "gloss": "[q+vessel] seal (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXm"
+            },
+            {
+              "word": "oxy",
+              "gloss": "vessel+x (MOD)",
+              "prefix_role": null,
+              "fl_stage": null,
+              "kernels": [],
+              "macro_state": null
+            }
+          ],
+          "token_count": 10,
+          "zone": "EXECUTION",
+          "suffix_mode": "A",
+          "fl_progression": "MIXED",
+          "position": "MID",
+          "flow_render": "dry input <k> [CLOSE] -> init settle -> dry mark [FINALIZE] -> monitor sustain <k> -> [hold-light] [-hy] -> setup frame <k> (FL:LATE) [PORTION] -> store settle (FL:MEDIAL) -> store heat <k> [CHECKPOINT] -> [QO] mark <h> [CLOSE] -> [hold-light] [-y]",
+          "structural": "FL:MIXED | kern:[e,k]",
+          "interpretive": "checking progress"
+        },
+        {
+          "line_id": "11",
+          "tokens": [
+            {
+              "word": "qokaiin",
+              "gloss": "[q+vessel] heat (LOOP_CHECK)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "olkeey",
+              "gloss": "[vessel+collect] heat (BATCH_CLOSE)",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokear",
+              "gloss": "[q+vessel] heat+cool (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "or",
+              "gloss": "vessel+flow",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "cheeaiin",
+              "gloss": "[adjust+watch] cool+cool (LOOP_CHECK)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "yteedy",
+              "gloss": "[drive+cool] cool+seal+end",
+              "prefix_role": "PREP_TIER",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qoko",
+              "gloss": "[q+vessel] heat+vessel",
+              "prefix_role": "EN_QO",
+              "fl_stage": "LATE",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "lchdol",
+              "gloss": "[collect+adjust+watch] seal (MOD)",
+              "prefix_role": "PREP_TIER",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "or",
+              "gloss": "vessel+flow",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "chcphar",
+              "gloss": "[adjust+watch] adjust+pause+watch (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "h"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "ar",
+              "gloss": "accept+flow",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            }
+          ],
+          "token_count": 11,
+          "zone": "EXECUTION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "MID",
+          "flow_render": "[QO] heat <k> [CHECKPOINT] -> store heat <k> [EXTENDED] -> [QO] steady <k> [CLOSE] -> portion -> test long [CHECKPOINT] | process batch | [QO] heat -> process mark <h> [HOLD] -> portion -> test measure [CLOSE] -> release",
+          "structural": "FL:MIXED | kern:[k,e,k,h]",
+          "interpretive": "checking progress"
+        },
+        {
+          "line_id": "12",
+          "tokens": [
+            {
+              "word": "ykeealar",
+              "gloss": "[end+heat] cool+cool+accept+collect (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "qokal",
+              "gloss": "[q+vessel] heat (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "otar",
+              "gloss": "[vessel+drive] accept+flow",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "ykairolky",
+              "gloss": "[end+heat] accept+iterate+flow+vessel+collect+heat (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "k"
+              ],
+              "macro_state": null
+            }
+          ],
+          "token_count": 4,
+          "zone": "EXECUTION",
+          "suffix_mode": "B",
+          "fl_progression": "FORWARD",
+          "position": "LATE",
+          "flow_render": "[attend-heavy] [-ar] | [QO] heat <k> [TRANSFER] | scaffold release | [attend-heavy] [-y]",
+          "structural": "FL:FORWARD | kern:[e,k]",
+          "interpretive": "processing material - (progressing)"
+        },
+        {
+          "line_id": "13",
+          "tokens": [
+            {
+              "word": "ctholcthy",
+              "gloss": "[adjust+drive] watch+vessel+collect+adjust+drive (BATCH_CLOSE)",
+              "prefix_role": "A_ENRICHED",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "h"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "qopaiin",
+              "gloss": "[q+vessel] pause (LOOP_CHECK)",
+              "prefix_role": "EN_QO",
+              "fl_stage": null,
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "ypchdy",
+              "gloss": "[pause+adjust+watch] seal+end",
+              "prefix_role": "PREP",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "cpholkaiin",
+              "gloss": "adjust+pause+watch+vessel+collect+heat (LOOP_CHECK)",
+              "prefix_role": null,
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "h"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "cholfchy",
+              "gloss": "[adjust+watch] vessel+collect+flag+adjust (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "qopar",
+              "gloss": "[q+vessel] pause (MOD)",
+              "prefix_role": "EN_QO",
+              "fl_stage": null,
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "aroiin",
+              "gloss": "[accept+flow] vessel+iterate+iterate+halt",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "opchedy",
+              "gloss": "vessel+pause+adjust+watch (BATCH_CLOSE)",
+              "prefix_role": null,
+              "fl_stage": null,
+              "kernels": [
+                "h"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "opoly",
+              "gloss": "vessel+pause+vessel (BATCH_CLOSE)",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": null
+            }
+          ],
+          "token_count": 9,
+          "zone": "EXECUTION",
+          "suffix_mode": "A",
+          "fl_progression": "MIXED",
+          "position": "LATE",
+          "flow_render": "[attend-heavy] [-hy] | [QO] pause [CHECKPOINT] -> process seal <k> -> [attend-heavy] [-aiin] -> [attend-light] [-hy] | [QO] pause [CLOSE] -> close loop <k> (FL:LATE) -> operate <h> [THOROUGH] -> [attend-light] [-ly]",
+          "structural": "FL:MIXED | kern:[h,k,h]",
+          "interpretive": "checking progress"
+        },
+        {
+          "line_id": "14",
+          "tokens": [
+            {
+              "word": "ykchy",
+              "gloss": "[end+heat] end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "cholkaiin",
+              "gloss": "[adjust+watch] vessel+collect+heat (LOOP_CHECK)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "k"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "chey",
+              "gloss": "[adjust+watch] cool+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "ykeeedy",
+              "gloss": "[end+heat] cool+cool (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "okal",
+              "gloss": "[vessel+heat] accept+collect",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "or",
+              "gloss": "vessel+flow",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "checfhy",
+              "gloss": "[adjust+watch] cool+adjust+flag (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "lkey",
+              "gloss": "[collect+heat] cool+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "okar",
+              "gloss": "[vessel+heat] accept+flow",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "dar",
+              "gloss": "[seal+accept] flow",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "ol",
+              "gloss": "vessel+collect",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "CC"
+            },
+            {
+              "word": "ain",
+              "gloss": "accept+iterate+halt",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            }
+          ],
+          "token_count": 12,
+          "zone": "EXECUTION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "LATE",
+          "flow_render": "init end | test hold <k> [CHECKPOINT] | test set | init long [THOROUGH] | vessel gather <k> -> portion -> [hold-light] [-hy] | watch set | vessel release -> setup input <k> (FL:MEDIAL) -> continue <k> -> intake <k>",
+          "structural": "FL:MIXED | kern:[k,e]",
+          "interpretive": "processing material"
+        },
+        {
+          "line_id": "15",
+          "tokens": [
+            {
+              "word": "shol",
+              "gloss": "[separate+watch] vessel+collect",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "shotaiin",
+              "gloss": "[separate+watch] vessel+drive (LOOP_CHECK)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "shckhor",
+              "gloss": "[separate+watch] adjust+heat+watch (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "h"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "olaiin",
+              "gloss": "[vessel+collect] accept+iterate+iterate+halt",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "chdy",
+              "gloss": "[adjust+watch] seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokain",
+              "gloss": "[q+vessel] heat (LOOP_CHECK)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "odaiiin",
+              "gloss": "vessel+seal+accept+iterate (LOOP_CHECK)",
+              "prefix_role": null,
+              "fl_stage": "INITIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "cheor",
+              "gloss": "[adjust+watch] cool (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "olkain",
+              "gloss": "[vessel+collect] heat (LOOP_CHECK)",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "chey",
+              "gloss": "[adjust+watch] cool+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            }
+          ],
+          "token_count": 10,
+          "zone": "EXECUTION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "LATE",
+          "flow_render": "monitor continue <k> | monitor route [CHECKPOINT] | monitor firm <k> [PORTION] -> store settle (FL:MEDIAL) -> test seal <k> | [QO] heat <k> [CHECKPOINT] -> open (FL:INITIAL) [ITERATE] -> test cool <e> [PORTION] -> store heat <k> [CHECKPOINT] -> test set",
+          "structural": "FL:MIXED | kern:[k,h,k,e,k,e]",
+          "interpretive": "checking progress"
+        }
+      ]
+    },
+    {
+      "folio": "f113r",
+      "section": "T",
+      "paragraph_id": "P2",
+      "line_count": 4,
+      "token_count": 47,
+      "kernel_balance": "BALANCED",
+      "structural": "P2 | (kcheeos) | : 4L/47T | kern=[e:8,h:3,k:10] | type=[BALANCED] | role=EN_KERNEL | zones=[E:2/H:1/S:1] | mode=[ABBB] interleave=33% | tail=PROCESS_HEAVY",
+      "interpretive": "Mixed operations - (late-stage focus) - (process-heavy output)",
+      "mode_sequence": [
+        "A",
+        "B",
+        "B",
+        "B"
+      ],
+      "interleave_rate": 0.33,
+      "tail_signature": "PROCESS_HEAVY",
+      "lines": [
+        {
+          "line_id": "4",
+          "tokens": [
+            {
+              "word": "kcheeos",
+              "gloss": "[heat+adjust+watch] cool+cool+vessel (SEPARATE)",
+              "prefix_role": "PREP",
+              "fl_stage": "LATE",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "olkeedy",
+              "gloss": "[vessel+collect] heat+cool (BATCH_CLOSE)",
+              "prefix_role": "AX_LATE",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "shoaiin",
+              "gloss": "[separate+watch] vessel (LOOP_CHECK)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "FINAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "cheeody",
+              "gloss": "[adjust+watch] cool+cool+vessel (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "LATE",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXm"
+            },
+            {
+              "word": "qokchedy",
+              "gloss": "[q+vessel] heat+adjust+watch (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "h"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "chckhody",
+              "gloss": "[adjust+watch] adjust+heat+watch+vessel (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "LATE",
+              "kernels": [
+                "k",
+                "h"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "qokedy",
+              "gloss": "[q+vessel] heat (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qotaly",
+              "gloss": "[q+vessel] drive+accept (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "INITIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "lkar",
+              "gloss": "[collect+heat] accept+flow",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "ar",
+              "gloss": "accept+flow",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FL_HAZ"
+            },
+            {
+              "word": "alog",
+              "gloss": "[accept+collect] vessel (MOD)",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "FINAL",
+              "kernels": [],
+              "macro_state": null
+            }
+          ],
+          "token_count": 11,
+          "zone": "HEADER",
+          "suffix_mode": "A",
+          "fl_progression": "MIXED",
+          "position": "EARLY",
+          "flow_render": "precision-heat wide <e> [NEXT] -> store steady <k> [THOROUGH] -> monitor work [CHECKPOINT] | test wide <e> [CLOSE] | [QO] pulse <k> [THOROUGH] | test firm <k> [CLOSE] | [QO] heat <k> [THOROUGH] | [QO] transfer [SETTLED] | watch release -> release -> close work",
+          "structural": "FL:MIXED | kern:[e,k,e,k,h,k,h,k]",
+          "interpretive": "checking progress"
+        },
+        {
+          "line_id": "5",
+          "tokens": [
+            {
+              "word": "ycheeckhy",
+              "gloss": "[adjust+watch] cool+cool+adjust+heat (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "osaiin",
+              "gloss": "vessel+separate (LOOP_CHECK)",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "cheoar",
+              "gloss": "[adjust+watch] cool+vessel (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "LATE",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "qokaiin",
+              "gloss": "[q+vessel] heat (LOOP_CHECK)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "chekal",
+              "gloss": "[adjust+watch] cool+heat (MOD)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "otar",
+              "gloss": "[vessel+drive] accept+flow",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "shosaiin",
+              "gloss": "[separate+watch] vessel+separate (LOOP_CHECK)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "chckhy",
+              "gloss": "[adjust+watch] adjust+heat (BATCH_CLOSE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": null,
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "chdo",
+              "gloss": "[adjust+watch] seal+vessel",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "okol",
+              "gloss": "[vessel+heat] vessel+collect",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "chedy",
+              "gloss": "[adjust+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "chedy",
+              "gloss": "[adjust+watch] cool+seal+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            }
+          ],
+          "token_count": 12,
+          "zone": "SPECIFICATION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "MID",
+          "flow_render": "test rigid <k> [VERIFY] -> sequence [CHECKPOINT] -> test open <e> [CLOSE] | [QO] heat <k> [CHECKPOINT] | test exact <k> [TRANSFER] | scaffold release | monitor sequence [CHECKPOINT] | test hard <k> [VERIFY] | test mark | vessel continue <k> | test batch | test batch",
+          "structural": "FL:MIXED | kern:[k,e,k,e,k,e]",
+          "interpretive": "processing material"
+        },
+        {
+          "line_id": "6",
+          "tokens": [
+            {
+              "word": "sor",
+              "gloss": "[separate+vessel] flow",
+              "prefix_role": "CC_INIT",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "cheo",
+              "gloss": "[adjust+watch] cool+vessel",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "LATE",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "cheey",
+              "gloss": "[adjust+watch] cool+cool+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "oteeos",
+              "gloss": "[vessel+drive] cool+cool+vessel (SEPARATE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": "LATE",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "aiin",
+              "gloss": "accept+iterate+iterate+halt",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "otain",
+              "gloss": "[vessel+drive] accept+iterate+halt",
+              "prefix_role": "EN_QO",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "otal",
+              "gloss": "[vessel+drive] accept+collect",
+              "prefix_role": "EN_QO",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "ches",
+              "gloss": "[adjust+watch] cool (SEPARATE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "aiin",
+              "gloss": "accept+iterate+iterate+halt",
+              "prefix_role": null,
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "alchl",
+              "gloss": "[accept+collect] collect",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": null
+            },
+            {
+              "word": "sheey",
+              "gloss": "[separate+watch] cool+cool+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "kchol",
+              "gloss": "[heat+adjust+watch] vessel+collect",
+              "prefix_role": "PREP",
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "okeeo",
+              "gloss": "[vessel+heat] cool+cool+vessel",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "LATE",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "l",
+              "gloss": "collect",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "kaiin",
+              "gloss": "[heat+accept] iterate+iterate+halt",
+              "prefix_role": "AX_SCAFFOLD",
+              "fl_stage": "EARLY",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "ol",
+              "gloss": "vessel+collect",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "CC"
+            }
+          ],
+          "token_count": 16,
+          "zone": "EXECUTION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "MID",
+          "flow_render": "scaffold input <k> -> test open <e> | test deep <e> | scaffold wide <e> [NEXT] -> settle -> scaffold intake <k> | scaffold gather <k> | test cool <e> [NEXT] -> settle -> close frame <k> -> monitor deep <e> -> precision-heat continue <k> -> vessel wide <e> -> frame <k> (FL:LATE) -> anchor iterate <k> -> continue <k>",
+          "structural": "FL:MIXED | kern:[e]",
+          "interpretive": "checking progress"
+        },
+        {
+          "line_id": "7",
+          "tokens": [
+            {
+              "word": "chos",
+              "gloss": "[adjust+watch] vessel (SEPARATE)",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "FINAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "sheey",
+              "gloss": "[separate+watch] cool+cool+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "qokchey",
+              "gloss": "[q+vessel] heat+adjust+watch (BATCH_CLOSE)",
+              "prefix_role": "EN_QO",
+              "fl_stage": null,
+              "kernels": [
+                "k",
+                "h"
+              ],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "sokal",
+              "gloss": "[separate+vessel] heat (MOD)",
+              "prefix_role": "CC_INIT",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": null
+            },
+            {
+              "word": "okeey",
+              "gloss": "[vessel+heat] cool+cool+end",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "TERMINAL",
+              "kernels": [
+                "e"
+              ],
+              "macro_state": "FQ"
+            },
+            {
+              "word": "char",
+              "gloss": "[adjust+watch] accept+flow",
+              "prefix_role": "EN_KERNEL",
+              "fl_stage": "MEDIAL",
+              "kernels": [],
+              "macro_state": "AXM"
+            },
+            {
+              "word": "laiin",
+              "gloss": "collect (LOOP_CHECK)",
+              "prefix_role": null,
+              "fl_stage": "LATE",
+              "kernels": [],
+              "macro_state": "AXm"
+            },
+            {
+              "word": "olkain",
+              "gloss": "[vessel+collect] heat (LOOP_CHECK)",
+              "prefix_role": "AX_LATE",
+              "fl_stage": "MEDIAL",
+              "kernels": [
+                "k"
+              ],
+              "macro_state": "AXM"
+            }
+          ],
+          "token_count": 8,
+          "zone": "EXECUTION",
+          "suffix_mode": "B",
+          "fl_progression": "MIXED",
+          "position": "LATE",
+          "flow_render": "test work [NEXT] | monitor deep <e> | [QO] pulse <k> [SELECTIVE] -> scaffold heat <k> [TRANSFER] -> vessel deep <e> | test release -> frame <k> (FL:LATE) [CHECKPOINT] -> store heat <k> [CHECKPOINT]",
+          "structural": "FL:MIXED | kern:[e,k,h,k,e,k]",
+          "interpretive": "checking progress"
+        }
+      ]
+    }
+  ]
+}

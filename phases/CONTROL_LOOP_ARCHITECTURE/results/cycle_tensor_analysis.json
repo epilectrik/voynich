@@ -1,0 +1,125 @@
+{
+  "total_transitions": 1611,
+  "tensor_total": 1611,
+  "independence_test": {
+    "three_way_chi2": 23.56,
+    "three_way_df": 17,
+    "three_way_independent": true,
+    "cramers_v": 0.1209
+  },
+  "pairwise_tests": {
+    "FL_x_MODE": {
+      "chi2": 7.98,
+      "df": 6,
+      "independent": true
+    },
+    "FL_x_CHANNEL": {
+      "chi2": 0.35,
+      "df": 2,
+      "independent": true
+    },
+    "MODE_x_CHANNEL": {
+      "chi2": 8.55,
+      "df": 3,
+      "independent": false
+    }
+  },
+  "mutual_information": {
+    "CH_given_FL_MODE_bits": 0.00706,
+    "MODE_given_FL_bits": 0.003559,
+    "channel_info_pct": 0.71,
+    "mode_fl_info_pct": 0.22
+  },
+  "top_deviations": [
+    {
+      "fl": "FWD",
+      "mode": "AA",
+      "ch": "SW",
+      "observed": 49,
+      "expected": 37.8,
+      "ratio": 1.295,
+      "chi2": 3.29
+    },
+    {
+      "fl": "STA",
+      "mode": "BA",
+      "ch": "SW",
+      "observed": 31,
+      "expected": 43.5,
+      "ratio": 0.712,
+      "chi2": 3.6
+    },
+    {
+      "fl": "STA",
+      "mode": "AB",
+      "ch": "SW",
+      "observed": 66,
+      "expected": 55.3,
+      "ratio": 1.194,
+      "chi2": 2.09
+    },
+    {
+      "fl": "REG",
+      "mode": "BB",
+      "ch": "SW",
+      "observed": 78,
+      "expected": 93.8,
+      "ratio": 0.832,
+      "chi2": 2.65
+    },
+    {
+      "fl": "FWD",
+      "mode": "BB",
+      "ch": "SW",
+      "observed": 53,
+      "expected": 62.5,
+      "ratio": 0.848,
+      "chi2": 1.44
+    },
+    {
+      "fl": "FWD",
+      "mode": "AB",
+      "ch": "SW",
+      "observed": 53,
+      "expected": 46.6,
+      "ratio": 1.137,
+      "chi2": 0.87
+    },
+    {
+      "fl": "REG",
+      "mode": "AA",
+      "ch": "SAME",
+      "observed": 68,
+      "expected": 78.4,
+      "ratio": 0.868,
+      "chi2": 1.37
+    },
+    {
+      "fl": "REG",
+      "mode": "BB",
+      "ch": "SAME",
+      "observed": 146,
+      "expected": 129.4,
+      "ratio": 1.129,
+      "chi2": 2.14
+    },
+    {
+      "fl": "FWD",
+      "mode": "BA",
+      "ch": "SW",
+      "observed": 32,
+      "expected": 36.7,
+      "ratio": 0.872,
+      "chi2": 0.6
+    },
+    {
+      "fl": "REG",
+      "mode": "AA",
+      "ch": "SW",
+      "observed": 64,
+      "expected": 56.8,
+      "ratio": 1.127,
+      "chi2": 0.91
+    }
+  ]
+}

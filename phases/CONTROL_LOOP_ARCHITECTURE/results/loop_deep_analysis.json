@@ -1,0 +1,71 @@
+{
+  "test1_decision_predictors": {
+    "n_lines": 1992,
+    "stop_pct": 34.1,
+    "continue_pct": 13.1,
+    "neutral_pct": 52.8,
+    "para_pos_stop_mean": 0.47,
+    "para_pos_cont_mean": 0.577,
+    "para_pos_neut_mean": 0.496
+  },
+  "test2_stop_by_position": {
+    "quintile_stop_rates": [
+      38.7,
+      28.2,
+      35.5,
+      40.4,
+      28.5
+    ],
+    "slope": -0.82,
+    "verdict": "FLAT"
+  },
+  "test3_kernel_ordering": {
+    "e_before_k_pct": 64.6,
+    "e_before_h_pct": 71.6,
+    "h_before_k_pct": 28.3,
+    "e_before_k_effect": 0.146
+  },
+  "test4_top_bigrams": [
+    [
+      "or",
+      "aiin",
+      42,
+      3.63
+    ],
+    [
+      "ar",
+      "aiin",
+      23,
+      2.77
+    ],
+    [
+      "shedy",
+      "qokedy",
+      21,
+      2.26
+    ],
+    [
+      "ol",
+      "shedy",
+      21,
+      1.63
+    ],
+    [
+      "ol",
+      "chedy",
+      21,
+      1.39
+    ]
+  ],
+  "test5_mode_entropy": {
+    "transition_entropy": 0.9782,
+    "max_entropy": 1.0,
+    "entropy_ratio": 97.8,
+    "p_a": 0.43,
+    "p_b": 0.57,
+    "mean_run_a": 1.61,
+    "mean_run_b": 2.01,
+    "expected_run_a": 1.76,
+    "expected_run_b": 2.32
+  }
+}

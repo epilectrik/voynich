@@ -1,0 +1,204 @@
+{
+  "phase": 441,
+  "name": "CONTROL_LOOP_ARCHITECTURE",
+  "description": "Token-level control loop architecture. Initial 5-gap survey followed by deep statistical validation (5 tests), stop-vs-ending test, and extension analysis. The 'three orthogonal cycling dimensions' model was rejected; replaced by steady-state extraction pass model with two parametric axes.",
+  "prerequisite": "Phase 440 PREFIX_GLOSS_VALIDATION: 12 atom glosses refined (k=heat, t=drive, e=cool, h=watch, l=collect, d=seal, s=separate, i=iterate, n=halt, a=accept, m=final, r=flow)",
+  "existing_constraints": ["C1227 (FL cross-line reset)", "C1228 (prefix channel switching)", "C1229 (alternating suffix modes)", "C1230 (mode MIDDLE differentiation)", "C1231 (universal suffix modes)", "C1232 (paragraph tail product signatures)"],
+
+  "findings": {
+
+    "gap1_cycle_boundaries": {
+      "title": "Cycle Boundary Detection",
+      "script": "cycle_boundary_analysis.py",
+      "total_transitions": 1829,
+      "folios_decoded": 82,
+      "fl_transition_distribution": {
+        "REGRESS": {"count": 659, "pct": 40.7},
+        "STATIC": {"count": 521, "pct": 32.2},
+        "FORWARD": {"count": 439, "pct": 27.1}
+      },
+      "mode_alternation_rate": 45.7,
+      "channel_switch_rate": 41.7,
+      "key_finding": "FL regression, mode alternation, and channel switching are statistically independent but carry near-zero information. All three occur at ~40-46% regardless of other dimensions. Initial interpretation ('three orthogonal cycling dimensions') was REJECTED by deep analysis — independence reflects near-randomness, not meaningful cycling.",
+      "revised_by": "deep_analysis (tensor test: chi2=23.56, Cramer's V=0.12; mode entropy 97.8% of max; mutual info <1%)"
+    },
+
+    "gap2_iteration_atoms": {
+      "title": "Iteration Atom Grammar",
+      "script": "iteration_atom_analysis.py",
+      "compounds_analyzed": ["aiin", "iin", "in", "ain", "oiin", "ii", "i", "n"],
+      "aiin_profile": {
+        "count": 834,
+        "mean_position": 0.526,
+        "line_final_rate": 5.9,
+        "penultimate_enrichment": 1.59,
+        "bare_suffix_rate": 99.5,
+        "top_prefixes": ["ok (170)", "ot (109)", "lk (51)", "ol (36)", "yk (32)"]
+      },
+      "iin_profile": {
+        "count": 560,
+        "mean_position": 0.393,
+        "line_initial_rate": 29.6,
+        "top_prefixes": ["da (328)", "sa (102)", "ta (58)", "ka (49)"]
+      },
+      "i_count_pattern": {
+        "i1_tokens": 1319,
+        "i1_n_co_pct": 52.9,
+        "i2_tokens": 1546,
+        "i2_n_co_pct": 92.6,
+        "i3_tokens": 10,
+        "note": "ii is MORE common than i (inverted gradient per C1204). ii+n = formal bounded cycling with mandatory halt-check. i without n = open cycling without formal check."
+      },
+      "key_finding": "Iteration atoms specify loop parameters at line-initial. ii (formal bounded cycling, 92.6% n-accompanied) is the default mode; i (open cycling, 52.9% n-accompanied) is the lighter variant. The ii/i distinction is formalization of cycling, not a literal pass count — consistent with C1204 inverted gradient where the doubled form is more common. Two-track system: infrastructure prefixes (da/sa/ta/ka) + iin at line start; scaffold/energy prefixes (ok/ot/lk) + aiin at penultimate.",
+      "constraint_candidate": "C1234: Iteration atoms form a two-track system — iin at line-initial (29.6%, infrastructure prefixes da/sa/ta/ka) for cycle setup, aiin at penultimate (14.1%, 1.35x enriched, scaffold/energy prefixes ok/ot/lk) for bounded loop control. ii = formal bounded cycling (92.6% n-accompanied), i = open cycling (52.9% n-accompanied)."
+    },
+
+    "gap3_decision_points": {
+      "title": "Decision Point Architecture",
+      "script": "decision_point_analysis.py",
+      "line_final_classification": {
+        "STOP_pct": 34.9,
+        "CONTINUE_pct": 14.6,
+        "NEUTRAL_pct": 50.5
+      },
+      "atom_enrichment_at_final": {
+        "m_final": {"enrichment": 29.77, "note": "Strongest signal: m=final is 30x enriched at line-final"},
+        "a_accept": {"enrichment": 1.70},
+        "l_collect": {"enrichment": 1.54},
+        "r_flow": {"enrichment": 1.47},
+        "e_cool_DEPLETED": {"enrichment": 0.52},
+        "k_heat_DEPLETED": {"enrichment": 0.63}
+      },
+      "key_finding": "Line-final position is a ROUTING DECISION, not a processing step. Active processing atoms (k, e) are depleted 0.5-0.6x. Decision atom m (29.77x) and routing prefixes (ar 9.57x, al 6.21x, or 5.38x) dominate. IMPORTANT: 'STOP' at line-final means batch-close within the paragraph, NOT paragraph termination (see stop_vs_ending test).",
+      "constraint_candidate": "C1235: Line-final tokens constitute routing decisions, not processing steps. Active kernel atoms (k, e) are depleted 0.52-0.63x; decision atom m is enriched 29.77x; routing prefixes (ar 9.57x, al 6.21x, or 5.38x) dominate."
+    },
+
+    "gap4_suffix_scope": {
+      "title": "Suffix Scope Markers",
+      "script": "suffix_scope_analysis.py",
+      "mode_token_counts": {"A": 9224, "B": 12931},
+      "category_enrichment": {
+        "TERMINAL_in_A": {"ratio": 2.59, "A_pct": 36.1, "B_pct": 13.9},
+        "BARE_in_B": {"ratio": 0.62, "A_pct": 38.2, "B_pct": 62.0},
+        "CHECKPOINT_slight_A": {"ratio": 1.25, "A_pct": 9.0, "B_pct": 7.2}
+      },
+      "key_finding": "Terminal suffixes (-edy 3.0x, -dy 2.5x) are Mode A specification markers. Checkpoint suffixes (-aiin 1.25x) are mode-independent loop controllers. Mode A = specify batch parameters, Mode B = execute with minimal marking.",
+      "constraint_candidate": "C1236: Terminal suffixes (-edy, -dy, -eey) are Mode A specification markers (2.5-3.0x enriched). Checkpoint suffixes (-aiin, -ain) are mode-independent loop controllers. Mode A lines average 36.1% terminal suffixes; Mode B lines average 62.0% bare tokens."
+    },
+
+    "gap5_control_traces": {
+      "title": "Integrated Control Loop Traces",
+      "script": "control_loop_trace.py",
+      "sections_covered": ["B", "H", "S", "C", "T"],
+      "folios_traced": ["f75r", "f34r", "f103r", "f86v6", "f113r"],
+      "key_finding": "Traces confirm within-line structure (setup, process, route) and across-line envelope (spec-to-exec gradient per C932). Mode A/B cycling is visible but unpredictable in sequence."
+    },
+
+    "deep_analysis": {
+      "title": "Deep Statistical Validation (5 tests)",
+      "script": "loop_deep_analysis.py",
+      "test1_decision_predictors": {
+        "n_lines": 1992,
+        "stop_pct": 34.1,
+        "continue_pct": 13.1,
+        "neutral_pct": 52.8,
+        "strongest_predictor": "Mode A/B (STOP is 52.7% Mode A vs 38.7% for CONTINUE)",
+        "kernel_balance": "NOT predictive (nearly identical across decisions)",
+        "finding": "Mode A is the strongest predictor of line-final STOP classification. Kernel balance, token count, and FL stage have minimal predictive power."
+      },
+      "test2_stop_by_position": {
+        "slope": -0.82,
+        "verdict": "FLAT",
+        "quintile_stop_rates": [38.7, 28.2, 35.5, 40.4, 28.5],
+        "finding": "STOP rate is flat across paragraph position. The paragraph is a STEADY-STATE processor, not a countdown toward termination."
+      },
+      "test3_kernel_ordering": {
+        "e_before_k_pct": 64.6,
+        "e_before_h_pct": 71.6,
+        "h_before_k_pct": 28.3,
+        "e_before_k_effect": "+14.6pp above chance",
+        "finding": "First-occurrence ordering is e -> k -> h (cool -> process -> monitor), not e -> h -> k from C873 mean positions. Both valid — C873 measures center of mass, this measures initiation sequence. Expert confirmed no contradiction."
+      },
+      "test4_bigram_motifs": {
+        "top_bigram": "or -> aiin (42, PMI 3.63)",
+        "cross_line_max": "ol -> daiin (5)",
+        "finding": "No stereotyped word sequences. Grammar composes each line fresh. Only routing-to-iteration pairs (or->aiin, ar->aiin) show elevated PMI."
+      },
+      "test5_mode_entropy": {
+        "transition_entropy": 0.9782,
+        "max_entropy": 1.0,
+        "entropy_ratio_pct": 97.8,
+        "mean_run_a": 1.61,
+        "mean_run_b": 2.01,
+        "finding": "Mode transitions are near-random (97.8% of max entropy). No structured ABABAB cycling. Run lengths match random expectations. Mode A/B is a line-level property, not a cycling dimension."
+      }
+    },
+
+    "stop_vs_ending": {
+      "title": "STOP vs Paragraph Ending Test",
+      "script": "stop_vs_ending_test.py",
+      "stop_enrichment_on_last_line": 0.78,
+      "am_paragraph_final_enrichment": 5.19,
+      "am_line_final_enrichment": 29.25,
+      "aiin_last_line_enrichment": 2.22,
+      "edy_last_line_enrichment": 0.58,
+      "last_line_avg_length": 7.3,
+      "nonlast_line_avg_length": 10.0,
+      "last_line_e_kernel_pct": 60.8,
+      "nonlast_line_e_kernel_pct": 57.0,
+      "finding": "Line-final 'STOP' tokens (-am, -edy) are batch-close signals WITHIN the paragraph, not paragraph termination. -am at paragraph-final TOKEN is 5.19x enriched — the actual paragraph termination signal. -edy depleted 0.58x on last lines (mid-paragraph specification). Last body lines are shorter (7.3 vs 10.0), more e-heavy (cooling down), with -aiin enriched 2.22x (loop return).",
+      "constraint_candidate": "C1237: -am is the paragraph termination signal (5.19x enriched at paragraph-final token, 29.25x at line-final generally). Terminal suffixes (-edy 0.58x, -am 0.53x on last lines) are batch-close within paragraphs, not termination signals. Last body lines are shortened (7.3 vs 10.0 tokens) and cooling-enriched (e-kernel 60.8% vs 57.0%)."
+    },
+
+    "extension_analysis": {
+      "title": "Extension Characters as Loop Parameters",
+      "script": "extension_analysis.py",
+      "i_extension": {
+        "i1_count": 1828,
+        "i2_count": 2328,
+        "i3_count": 112,
+        "ii_more_common_than_i": true,
+        "ii_line_initial_enrichment": 1.46,
+        "ii_line_final_enrichment": 0.62,
+        "ii_n_accompanied_pct": 92.6,
+        "i_n_accompanied_pct": 52.9,
+        "finding": "ii is the default form (more common than i per C1204). ii at line-initial specifies formal bounded cycling with mandatory halt-check. i = open cycling without formal check. The doubling is formalization, not a literal count — consistent with C1204 inverted gradient and distillation physics (you don't do multiple passes on a single fraction step)."
+      },
+      "e_extension": {
+        "e1_count": 6228,
+        "e2_count": 2993,
+        "e3_count": 241,
+        "ee_mode_a_ratio": 1.56,
+        "eee_mode_a_ratio": 1.63,
+        "connection_to_C1225": "E-depth restructures suffix grammar (single-e: 64% -edy; multi-e: 12% -edy, 37% -y)",
+        "connection_to_C1226": "ke/ek ratio is process-conditioned (REGIME_1: 81.4% ke; REGIME_4: 64.0% ek)",
+        "finding": "e-extension encodes the heat:cool ratio — the hysteresis window width. More e's = more cooling relative to heating. ee is Mode A enriched (1.56x) because specification lines set thermal parameters. Connects directly to C1225 (e-depth parametricity) and C1226 (ke/ek process conditioning)."
+      }
+    }
+  },
+
+  "synthesis": {
+    "rejected_model": "The initial 'three orthogonal cycling dimensions' (FL regression, mode alternation, channel switching) was REJECTED. All three signals are statistically independent because they are near-random, not because they represent meaningful cycling. Mode entropy 97.8%, mutual information <1%, STOP rate flat across position.",
+    "accepted_model": "The control loop is a STEADY-STATE EXTRACTION PASS repeated per line, with two parametric axes and one termination signal.",
+    "within_line_architecture": "Each line is one extraction pass: (1) ii-specification at line-initial declares loop parameters, (2) e->k->h kernel ordering (cool->process->monitor) fills the interior, (3) aiin at penultimate bounds the iteration, (4) line-final routing decides batch-close (-am/-dy) or continue (BARE).",
+    "two_parametric_axes": "The line has two tunable parameters: (a) ii/i at line-initial = formal vs open cycling specification; (b) ee-count in ke-family tokens = heat:cool ratio / hysteresis window width (per C1225/C1226). Both extensions are operational parameters, not grammatical categories.",
+    "paragraph_termination": "-am is the paragraph termination signal (5.19x enriched at paragraph-final). Last body lines are shortened (7.3 vs 10.0 tokens) and cooling-enriched (e 60.8% vs 57.0%). The paragraph runs at steady state until -am fires — there is no countdown.",
+    "mode_ab_reinterpretation": "Mode A/B is not a cycling dimension (entropy 97.8%). Mode A = specification lines (terminal suffixes, more ee, set parameters). Mode B = execution lines (bare tokens, continue processing). The sequence is near-random because which mode a line needs depends on process state, not on the previous line.",
+    "cross_line_independence": "Confirmed by this phase and supported by C670 (vocabulary coupling null), C673 (CC independence), C972 (independence stronger than random Markov), C966 (no cross-line memory). Each line is an independently composed instruction."
+  },
+
+  "expert_validation": {
+    "conflicts": "ZERO conflicts with existing constraint base",
+    "supporting_constraints": ["C670 (adjacent-line vocabulary null)", "C673 (CC sequential independence)", "C674 (EN lane autocorrelation null)", "C681 (folio-mediated not sequential coupling)", "C961 (WORK zone unordered)", "C964 (boundary-constrained free-interior)", "C966 (no cross-line memory)", "C972 (cross-line independence)", "C1002 (am 88% line-final)", "C1195 (i = cycle/iterate LOCKED)", "C1204 (i-extension inverted gradient)", "C1205 (i orthogonal to k/e)", "C1225 (e-depth parametricity)", "C1226 (ke/ek process conditioning)", "C1228 (cycling not apparatus switching)", "C1229 (alternating suffix modes)", "C1231 (universal suffix mode centroids)"],
+    "tier_assessment": "Cross-line independence: Tier 2. Kernel first-occurrence ordering: Tier 2. -am paragraph termination: Tier 2. ii formalization interpretation: Tier 3. ee as hysteresis window: Tier 3-4."
+  },
+
+  "new_constraints": {
+    "C1233": "REVISED: Cross-line FL regression (40.7%), suffix mode alternation (45.7%), and prefix channel switching (41.7%) are statistically independent AND near-random (mode entropy 97.8%, mutual info <1%). Cross-line sequencing is unstructured; each line is an independently composed extraction pass. Supported by C670, C673, C972.",
+    "C1234": "Iteration atoms form a two-track system: iin at line-initial (29.6%, infrastructure prefixes) for cycle setup, aiin at penultimate (1.35x enriched, scaffold/energy prefixes) for bounded loop control. ii = formal bounded cycling (92.6% n-accompanied, default form per C1204), i = open cycling (52.9% n-accompanied).",
+    "C1235": "Line-final tokens are routing decisions: m-atom 29.77x enriched, active kernels (k/e) depleted 0.52-0.63x, routing prefixes (ar 9.57x, al 6.21x) dominate. Batch-close within paragraph, not paragraph termination.",
+    "C1236": "Terminal suffixes (-edy, -dy) are Mode A specification markers (2.5-3.0x enriched). Checkpoint suffixes (-aiin) are mode-independent loop controllers. Mode A = specification (36.1% terminal); Mode B = execution (62.0% bare).",
+    "C1237": "-am is the paragraph termination signal (5.19x enriched at paragraph-final token). Last body lines are shortened (7.3 vs 10.0 tokens), cooling-enriched (e-kernel 60.8% vs 57.0%), with -aiin enriched 2.22x. The paragraph runs at steady state until -am terminates.",
+    "C1238": "First-occurrence kernel ordering within lines is e -> k -> h (cool 64.6% before heat, +14.6pp above chance; heat 71.7% before monitor). Refines C873 mean-position ordering; measures initiation sequence rather than center of mass."
+  }
+}

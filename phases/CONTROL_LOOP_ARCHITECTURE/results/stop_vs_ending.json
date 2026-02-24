@@ -1,0 +1,62 @@
+{
+  "test_a_stop_vs_ending": {
+    "last_line": {
+      "NEUTRAL": 194,
+      "CONTINUE": 71,
+      "STOP": 102
+    },
+    "nonlast_lines": {
+      "NEUTRAL": 863,
+      "STOP": 579,
+      "CONTINUE": 190
+    },
+    "last_stop_rate": 27.8,
+    "nonlast_stop_rate": 35.5,
+    "enrichment": 0.78
+  },
+  "test_b_last_line_suffixes": {
+    "top_enriched": []
+  },
+  "test_c_para_final": {
+    "decisions": {
+      "NEUTRAL": 300,
+      "CONTINUE": 105,
+      "STOP": 179
+    },
+    "top_suffixes": {
+      "BARE": 310,
+      "dy": 35,
+      "am": 31,
+      "y": 26,
+      "aiin": 25,
+      "edy": 19,
+      "hy": 17,
+      "ain": 14,
+      "al": 13,
+      "s": 11
+    },
+    "top_words": {
+      "chedy": 15,
+      "shedy": 9,
+      "chey": 9,
+      "okaiin": 7,
+      "otam": 6,
+      "daiin": 6,
+      "qoky": 6,
+      "aiin": 5,
+      "olor": 5,
+      "qokeey": 5,
+      "dam": 5,
+      "okain": 5,
+      "lchedy": 5,
+      "okam": 5,
+      "chdy": 5
+    }
+  },
+  "test_e_line_properties": {
+    "avg_last_length": 7.3,
+    "avg_nonlast_length": 10.0,
+    "avg_last_bare_rate": 0.542,
+    "avg_nonlast_bare_rate": 0.506
+  }
+}

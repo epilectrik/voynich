@@ -1,0 +1,562 @@
+{
+  "phase": 440,
+  "name": "PREFIX_GLOSS_VALIDATION",
+  "description": "Distributional validation of 12 glosses: 5 prefixes, 6 atoms, 1 articulator (rounds 1-6)",
+  "findings": {
+    "sa": {
+      "old_gloss": "dry",
+      "new_gloss": "begin",
+      "evidence": "43.8% line-initial (vs da 19.8%). Same MIDDLE inventory as da. Positionally complementary."
+    },
+    "lk": {
+      "old_gloss": "watch",
+      "new_gloss": "check",
+      "evidence": "82% Section S. Selects checkpoint MIDDLEs (aiin,ain,e). Zero k-MIDDLE."
+    },
+    "ot": {
+      "old_gloss": "scaffold",
+      "new_gloss": "adjust",
+      "evidence": "Sister pair with ok (cosine 0.955). ot favors process MIDDLEs, later position, C-enriched."
+    },
+    "ol_prefix": {
+      "old_gloss": "store",
+      "new_gloss": "close",
+      "evidence": "Most similar to al(0.888)/qo(0.869), NOT ok/ot(0.33). k-family 39.4%. AX_LATE, CLOSE phase."
+    },
+    "y_articulator": {
+      "old_gloss": "init",
+      "new_gloss": "line-start",
+      "evidence": "45.6% line-initial vs 9.5% non-y (36pp gap). Positional marker, not semantic."
+    },
+    "l_atom": {
+      "old_gloss": "frame",
+      "new_gloss": "collect",
+      "evidence": "70% suffixless, 79% terminal, boundary-enriched. Latin lege (collect)."
+    },
+    "o_atom": {
+      "old_gloss": "work",
+      "new_gloss": "vessel",
+      "evidence": "k-o anti-correlation r=-0.585 (C1207). qo/MIDDLE-o complementary distribution. -dy (seal) 6.5x enriched. ch/sh (sensory) 2x enriched. e->o->l directional chain. 53.7% of o-MIDDLEs kernel-free. German Ofen=furnace hypothesis (Tier 4)."
+    },
+    "a_atom": {
+      "old_gloss": "yield",
+      "new_gloss": "accept",
+      "evidence": "86.3% initial position contradicts output reading. a->i 50.5% (accept then iterate). a->y FORBIDDEN (0 occurrences). {a,i,n,r} iteration cluster. Complementary to e: a initiates intake, e initiates closure. 'yield' only works as 'yield to' (accept/receive)."
+    },
+    "so_prefix": {
+      "old_gloss": "scaffold",
+      "new_gloss": "initiate",
+      "evidence": "70.4% line-initial (6.39x enrichment). 72% kernel density. B-section 2.23x enriched. Role is CC_INIT not AX_SCAFFOLD. Selects K-family MIDDLEs (l 28%, r 21%, lk 8.5%). Jaccard 0.22 with sa — NOT a scaffold."
+    },
+    "r_atom": {
+      "old_gloss": "input",
+      "new_gloss": "flow",
+      "evidence": "96.5% kernel-free (vs 21% k baseline). Terminal absorber: a->r 17x stronger than r->a, o->r 5.6x stronger than r->o. 76% suffixless (self-completing). 34.7% sole MIDDLE (highest of any common atom). rr FORBIDDEN (0 occurrences). Infrastructure prefixes 3-5x enriched (da, ta, sa, ka). Kernel prefixes depleted (ch 0.30x, sh 0.29x). Seal suffixes depleted (dy 0.31x, y 0.25x). Non-energy channel that absorbs and routes."
+    },
+    "d_atom": {
+      "old_gloss": "mark",
+      "new_gloss": "seal",
+      "evidence": "Terminal position 45.6% (type-level). e-affinity 52.4% (185/353 types). Suffix rate 31.4% (vs 48.3% global). C919 END-class: categorically excludes -y suffix. ed=cool-seal, od=vessel-seal, eod=cool-vessel-seal — all OUTPUT forms. -dy suffix = kernel-typed closer. German Dichten = seal/make tight. Explains C919 physically: sealing IS closing, inherently rejects continuation markers."
+    },
+    "s_atom": {
+      "old_gloss": "sequence",
+      "new_gloss": "separate",
+      "evidence": "Medial position 58.9%. h-affinity 51.2% (106/207 types). Suffix rate 71.6% (vs 48.3% global). ss FORBIDDEN (0 occurrences). s->h 87% asymmetry (separation precedes watching). Dual MIDDLE/suffix role (560 MIDDLE, 424 suffix, ratio 0.76). C917: s-extension -> sh prefix at 3.1x enrichment. German Scheiden = separate/divide. Core distillation operation (separating fractions)."
+    },
+    "t_atom": {
+      "old_gloss": "transfer",
+      "new_gloss": "drive",
+      "evidence": "87% of sole-t tokens qo-prefixed (energy channel). k-exclusion 0.6% (complementary, not redundant). 95% suffix-requiring (needs endpoints). t->h 56:1 asymmetry (drives into watching). c->t->e/h sequence. tt FORBIDDEN. Never in suffixes. German treiben/abtreiben = drive off volatile fraction. k/t QO-EDY hierarchy confirmed in brunschwig_comparison.md. MIDPROCESS gap (C1222): Voynich decomposes Brunschwig's undifferentiated DISTILL into k (fire management) + t (vapor management)."
+    }
+  },
+  "data": {
+    "sa": {
+      "count": 329,
+      "pct": 1.42,
+      "line_initial_pct": 43.2,
+      "mean_position": 0.362,
+      "top_middles": [
+        [
+          "iin",
+          102
+        ],
+        [
+          "r",
+          63
+        ],
+        [
+          "in",
+          61
+        ],
+        [
+          "l",
+          33
+        ],
+        [
+          "i",
+          26
+        ],
+        [
+          "ir",
+          6
+        ],
+        [
+          "m",
+          4
+        ],
+        [
+          "ii",
+          3
+        ],
+        [
+          "lch",
+          3
+        ],
+        [
+          "n",
+          3
+        ]
+      ],
+      "bare_suffix_pct": 79.3,
+      "kernel_pct": 2.7,
+      "sections": {
+        "S": 135,
+        "B": 130,
+        "H": 36,
+        "C": 21,
+        "T": 7
+      }
+    },
+    "da": {
+      "count": 1083,
+      "pct": 4.69,
+      "line_initial_pct": 18.5,
+      "mean_position": 0.521,
+      "top_middles": [
+        [
+          "iin",
+          328
+        ],
+        [
+          "r",
+          208
+        ],
+        [
+          "l",
+          165
+        ],
+        [
+          "in",
+          117
+        ],
+        [
+          "i",
+          63
+        ],
+        [
+          "m",
+          45
+        ],
+        [
+          "ly",
+          18
+        ],
+        [
+          "ii",
+          14
+        ],
+        [
+          "ry",
+          13
+        ],
+        [
+          "ir",
+          10
+        ]
+      ],
+      "bare_suffix_pct": 80.1,
+      "kernel_pct": 4.2,
+      "sections": {
+        "S": 355,
+        "B": 348,
+        "H": 238,
+        "C": 80,
+        "T": 62
+      }
+    },
+    "lk": {
+      "count": 438,
+      "pct": 1.9,
+      "line_initial_pct": 1.6,
+      "top_middles": [
+        [
+          "e",
+          55
+        ],
+        [
+          "aiin",
+          51
+        ],
+        [
+          "edy",
+          49
+        ],
+        [
+          "eey",
+          41
+        ],
+        [
+          "ain",
+          35
+        ],
+        [
+          "ar",
+          30
+        ],
+        [
+          "y",
+          18
+        ],
+        [
+          "ey",
+          17
+        ],
+        [
+          "eeo",
+          12
+        ],
+        [
+          "l",
+          11
+        ]
+      ],
+      "bare_suffix_pct": 71.5,
+      "sections": {
+        "S": 358,
+        "B": 48,
+        "C": 18,
+        "H": 10,
+        "T": 4
+      },
+      "kernel_k_pct": 0.2,
+      "kernel_e_pct": 55.7
+    },
+    "ok": {
+      "count": 1476,
+      "pct": 6.39,
+      "mean_position": 0.538,
+      "top_middles": [
+        [
+          "aiin",
+          170
+        ],
+        [
+          "e",
+          139
+        ],
+        [
+          "edy",
+          138
+        ],
+        [
+          "ain",
+          137
+        ],
+        [
+          "eey",
+          130
+        ],
+        [
+          "ar",
+          116
+        ],
+        [
+          "al",
+          109
+        ],
+        [
+          "y",
+          68
+        ],
+        [
+          "ey",
+          61
+        ],
+        [
+          "ee",
+          29
+        ]
+      ],
+      "sections": {
+        "S": 772,
+        "B": 345,
+        "H": 289,
+        "C": 36,
+        "T": 34
+      }
+    },
+    "ot": {
+      "count": 1448,
+      "pct": 6.27,
+      "mean_position": 0.588,
+      "top_middles": [
+        [
+          "edy",
+          197
+        ],
+        [
+          "ar",
+          130
+        ],
+        [
+          "e",
+          126
+        ],
+        [
+          "al",
+          116
+        ],
+        [
+          "aiin",
+          109
+        ],
+        [
+          "eey",
+          95
+        ],
+        [
+          "ain",
+          92
+        ],
+        [
+          "y",
+          77
+        ],
+        [
+          "ey",
+          60
+        ],
+        [
+          "am",
+          38
+        ]
+      ],
+      "sections": {
+        "S": 798,
+        "B": 300,
+        "H": 177,
+        "C": 128,
+        "T": 45
+      }
+    },
+    "ol_prefix": {
+      "count": 875,
+      "pct": 3.79,
+      "mean_position": 0.56,
+      "line_final_pct": 20.2,
+      "k_family_pct": 40.9,
+      "top_middles": [
+        [
+          "k",
+          218
+        ],
+        [
+          "y",
+          64
+        ],
+        [
+          "edy",
+          61
+        ],
+        [
+          "ke",
+          52
+        ],
+        [
+          "ey",
+          38
+        ],
+        [
+          "aiin",
+          36
+        ],
+        [
+          "dy",
+          32
+        ],
+        [
+          "or",
+          31
+        ],
+        [
+          "t",
+          18
+        ],
+        [
+          "eey",
+          17
+        ]
+      ],
+      "cosine_similarities": {
+        "ok": 0.33,
+        "ot": 0.36,
+        "al": 0.888,
+        "qo": 0.869,
+        "ch": 0.416,
+        "sh": 0.367
+      }
+    },
+    "y_articulator": {
+      "count": 522,
+      "pct": 2.26,
+      "line_initial_pct": 43.9,
+      "non_y_line_initial_pct": 9.7,
+      "top_prefixes": [
+        [
+          "ch",
+          137
+        ],
+        [
+          "te",
+          113
+        ],
+        [
+          "ta",
+          87
+        ],
+        [
+          "sh",
+          68
+        ],
+        [
+          "tch",
+          36
+        ],
+        [
+          "pch",
+          32
+        ],
+        [
+          "da",
+          13
+        ],
+        [
+          "to",
+          11
+        ],
+        [
+          "fch",
+          5
+        ],
+        [
+          "lch",
+          3
+        ]
+      ],
+      "sections": {
+        "S": 219,
+        "H": 114,
+        "C": 92,
+        "B": 82,
+        "T": 15
+      }
+    },
+    "l_atom": {
+      "count": 3234,
+      "suffixless_pct": 70.0,
+      "non_l_suffixless_pct": 48.7,
+      "terminal_pct": 79.4,
+      "sole_middle_pct": 26.4
+    },
+    "d_atom": {
+      "count": 4401,
+      "pct": 19.1,
+      "unique_middles": 353,
+      "sole_count": 337,
+      "terminal_pct_types": 45.6,
+      "e_co_pct": 52.4,
+      "h_co_pct": 31.7,
+      "k_co_pct": 19.8,
+      "suffix_rate": 31.4,
+      "dd_count": 4,
+      "suffix_role_tokens": 2972,
+      "suffix_middle_ratio": 0.68,
+      "top_prefixes": [
+        ["ch", 1049], ["sh", 779], ["ot", 321], ["qo", 247], ["ok", 239]
+      ],
+      "sections": {"B": 1303, "C": 265, "H": 807, "S": 1873, "T": 153}
+    },
+    "s_atom": {
+      "count": 560,
+      "pct": 2.4,
+      "unique_middles": 207,
+      "sole_count": 144,
+      "medial_pct_types": 58.9,
+      "terminal_pct_types": 31.4,
+      "h_co_pct": 51.2,
+      "e_co_pct": 43.5,
+      "k_co_pct": 17.9,
+      "suffix_rate": 71.6,
+      "ss_count": 0,
+      "s_to_h_pct": 87.0,
+      "suffix_role_tokens": 424,
+      "suffix_middle_ratio": 0.76,
+      "top_prefixes": [
+        ["qo", 92], ["ch", 35], ["sh", 33], ["ol", 32], ["da", 21]
+      ],
+      "sections": {"B": 172, "C": 46, "H": 107, "S": 207, "T": 28}
+    },
+    "r_atom": {
+      "count": 2160,
+      "pct": 9.4,
+      "sole_middle_pct": 34.7,
+      "kernel_free_pct": 96.5,
+      "suffixless_pct": 76.0,
+      "terminal_pct_multi": 86.0,
+      "a_to_r": 726,
+      "r_to_a": 42,
+      "o_to_r": 446,
+      "r_to_o": 72,
+      "rr_count": 0,
+      "top_prefixes_enriched": {
+        "da": 3.06,
+        "ta": 4.66,
+        "sa": 2.81,
+        "ka": 3.80,
+        "so": 2.94
+      },
+      "top_prefixes_depleted": {
+        "ch": 0.30,
+        "sh": 0.29
+      },
+      "top_sole_r_words": ["dar", "raiin", "sar", "kar", "tar", "sor"],
+      "mean_line_position": 0.530
+    },
+    "t_atom": {
+      "count": 1560,
+      "pct": 6.7,
+      "sole_middle_pct": 8.7,
+      "qo_pct_sole_t": 87.0,
+      "k_co_pct": 0.6,
+      "e_co_pct": 42.3,
+      "h_co_pct": 5.1,
+      "suffixless_pct": 5.0,
+      "tt_count": 0,
+      "t_in_suffix": 0,
+      "t_to_h": 56,
+      "h_to_t": 1,
+      "c_to_t": 185,
+      "t_to_c": 3,
+      "etymology": {
+        "german": "treiben/abtreiben (to drive off)",
+        "latin": "bullire (boil), decoquere (boil down)",
+        "brunschwig": "DISTILL undifferentiated 227x; Voynich decomposes into k+t"
+      },
+      "distillation_support": {
+        "kt_hierarchy": "k/t QO-EDY hierarchy (brunschwig_comparison.md)",
+        "midprocess_gap": "C1222: modern 34.5% MIDPROCESS, Brunschwig 0%",
+        "cycle_position": "k->t->e->h->l (heat->drive->cool->watch->collect)"
+      }
+    }
+  }
+}
