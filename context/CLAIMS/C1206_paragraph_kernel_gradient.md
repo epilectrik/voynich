@@ -41,3 +41,11 @@ The pattern is: monitoring (h) front-loads, energy operations (k/e) back-load wi
 
 **Script:** `phases/I_ATOM_CHARACTERIZATION/scripts/i_atom_test.py` (T6b)
 **Results:** `phases/I_ATOM_CHARACTERIZATION/results/i_atom_results.json`
+
+---
+
+## Status
+
+WEAKENED — C1206 uses MIDDLE-character-based kernel classification (counting h/k/e characters within MIDDLE strings), which measures a different variable than C965's PREFIX-based classification. Phase 451 PREFIX-based retest found h rho=+0.058 (p=0.037), same direction as C965 but sub-Bonferroni. The sign contradiction with C965 (C1206: h declines r=-0.920; C965: h rises +0.10) arises because "h in MIDDLE" and "ch/sh in PREFIX" are different measurements. Both effects are fragile and sub-Bonferroni when properly retested. The underlying phenomenon (kernel composition shift through paragraph body) exists as a weak trend but is not robust.
+
+**Provenance:** C1259, `phases/GRADIENT_DECOMPOSITION/results/c965_prefix_retest.json`.

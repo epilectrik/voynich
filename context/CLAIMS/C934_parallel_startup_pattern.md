@@ -77,4 +77,6 @@ The 65% heat-first rate is well above chance (50% if independent) but not univer
 
 ## Status
 
-CONFIRMED - 65% heat-first ordering, co-occurrence r=-0.94 declining trend.
+WEAKENED — Both pillars of C934 are undermined by Phase 451 findings. C933 (prep verb early concentration) is an ARTIFACT of prep verbs being Mode A vocabulary (C1259 T3). C965 (kernel composition gradient) does not survive Bonferroni correction in PREFIX-based retest (h rho=+0.058, p=0.037 vs original +0.10, p=0.0004). The "heat before prep" ordering may simply reflect that k-containing MIDDLEs are distributed across both modes while prep MIDDLEs are concentrated in Mode A. A direct mode-decomposed retest of first-occurrence ordering has not been run, but the circumstantial case for artifact is strong.
+
+**Provenance:** C1259, `phases/GRADIENT_DECOMPOSITION/results/c965_prefix_retest.json`.

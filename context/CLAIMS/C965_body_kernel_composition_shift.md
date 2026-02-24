@@ -51,4 +51,15 @@ This is NOT a diversity collapse: the number of distinct kernels per line is fla
 
 ## Status
 
-CONFIRMED — h_fraction and e_fraction both survive Bonferroni correction and line-length control.
+WEAKENED — Phase 451 PREFIX-based retest (faithful methodology) finds same direction but ~half the effect size and sub-Bonferroni significance:
+
+| Metric | C965 original | Phase 451 retest | Mode B only |
+|--------|--------------|-----------------|-------------|
+| h_fraction rho | +0.1005 (p=0.0004) | +0.0579 (p=0.037) | +0.0555 (p=0.060) |
+| e_fraction rho | -0.0863 (p=0.0022) | -0.0544 (p=0.050) | -0.0555 (p=0.060) |
+| n_paragraphs | 187 | 178 | — |
+| n_body_lines | 1,261 | 1,297 | 1,148 |
+
+The trend is directionally real (h rises Q0=0.284->Q4=0.325, e falls Q0=0.590->Q4=0.553) but does not survive Bonferroni correction (alpha=0.002). Not a mode-proportion artifact — Mode B shows the same borderline trend. Likely reflects minor paragraph detection differences (line-gap heuristic vs par_initial markers). Original effect size was overstated.
+
+**Provenance:** `phases/GRADIENT_DECOMPOSITION/results/c965_prefix_retest.json`, C1259.

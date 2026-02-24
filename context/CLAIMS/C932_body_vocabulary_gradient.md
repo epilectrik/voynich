@@ -79,4 +79,6 @@ This is consistent with a "job card" model: early lines specify *what's differen
 
 ## Status
 
-CONFIRMED - All trend correlations |r| > 0.80.
+NOT REPLICATED — Phase 451 retest (C1259 T2) found the original script included header lines in Q0, inflating rarity in the first quintile. When properly restricted to body-only lines (header excluded), RARE r drops from -0.97 to -0.054 and UNIVERSAL r flips from +0.92 to -0.893. The near-perfect correlations were an artifact of measuring header-vs-body contrast, not a body-internal gradient. Original script (`scratchpad/spec_exec_vocabulary_test.py`) did not exclude line 0 despite the claim text specifying "lines 2+".
+
+**Provenance:** `phases/GRADIENT_DECOMPOSITION/results/gradient_decomposition.json` (T2), C1259.

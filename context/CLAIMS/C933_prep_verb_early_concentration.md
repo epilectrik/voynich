@@ -54,4 +54,6 @@ The prep verbs specify *what materials are being processed*. This is specificati
 
 ## Status
 
-CONFIRMED - All 4 prep verbs show early concentration (avg position < 0.45).
+ARTIFACT — Phase 451 retest (C1259 T3) found that 77% of prep verb tokens (te, pch, tch, lch) occur on Mode A lines. The early concentration reflects Mode A vocabulary character, not a paragraph-positional gradient. Within Mode B lines only, prep verbs show no positional bias (combined mean position 0.473, permutation p=0.639). The original test pooled all lines without mode awareness.
+
+**Provenance:** `phases/GRADIENT_DECOMPOSITION/results/gradient_decomposition.json` (T3), C1259.
