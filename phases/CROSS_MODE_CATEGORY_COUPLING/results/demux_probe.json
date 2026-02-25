@@ -1,0 +1,109 @@
+{
+  "phase": "CROSS_MODE_CATEGORY_COUPLING_DEMUX",
+  "phase_number": "460b",
+  "overall_verdict": "DEMUX_CONFIRMED_ARTIFACT_SUSPECT",
+  "pass_count": 5,
+  "weak_count": 0,
+  "fail_count": 1,
+  "n_lines": 2194,
+  "runtime_seconds": 114.89671111106873,
+  "tests": {
+    "T1": {
+      "test": "T1_interleaving",
+      "verdict": "PASS",
+      "direction": "CLUSTERED",
+      "mean_alternation_rate": 0.41716552578189176,
+      "null_mean": 0.43643102870972883,
+      "null_std": 0.0031859528109652166,
+      "z_score": -6.047014526244786,
+      "perm_p_interleave": 1.0,
+      "perm_p_cluster": 0.000999000999000999,
+      "n_mixed_lines": 1996,
+      "term_cluster_mean": 1.467914438502674,
+      "bare_cluster_mean": 2.648
+    },
+    "T2": {
+      "test": "T2_demux_coherence",
+      "verdict": "PASS",
+      "n_paired_lines": 1553,
+      "mean_mixed_H": 0.847270320755604,
+      "mean_term_H": 0.1956432280700872,
+      "mean_bare_H": 0.518996043013926,
+      "term_vs_mixed_p": 1.677474792520384e-236,
+      "bare_vs_mixed_p": 2.6322440763629153e-204,
+      "avg_demux_vs_mixed_p": 2.584105125814542e-248,
+      "mean_reduction_term": 0.6669131340341066,
+      "mean_reduction_bare": 0.3878798007859004,
+      "mean_reduction_avg": 0.5273964674100035
+    },
+    "T3": {
+      "test": "T3_cross_thread",
+      "verdict": "PASS",
+      "term_to_bare": {
+        "n": 2661,
+        "chi_squared": 93.08318220102947,
+        "cramers_v": 0.0706910046259115,
+        "p_value": 0.00014796390181973345,
+        "verdict": "PASS"
+      },
+      "bare_to_term": {
+        "n": 2887,
+        "chi_squared": 170.63319853974411,
+        "cramers_v": 0.09188811742544024,
+        "p_value": 2.3109866845330092e-15,
+        "verdict": "PASS"
+      },
+      "term_to_term": {
+        "n": 1593,
+        "chi_squared": 126.77385797412437,
+        "cramers_v": 0.10662473027781931,
+        "p_value": 8.190384042081213e-09,
+        "verdict": "PASS"
+      },
+      "bare_to_bare": {
+        "n": 8048,
+        "chi_squared": 230.16500066091035,
+        "cramers_v": 0.06391850938860735,
+        "p_value": 2.8294282228129254e-25,
+        "verdict": "PASS"
+      },
+      "cross_thread_mean_v": 0.08128956102567587,
+      "within_thread_mean_v": 0.08527161983321332
+    },
+    "T4": {
+      "test": "T4_category_runs",
+      "verdict": "PASS",
+      "n_paired": 930,
+      "mean_mixed_run": 1.2463384092854155,
+      "mean_term_run": 1.4897884882108183,
+      "mean_bare_run": 1.249414453260125,
+      "term_vs_mixed_p": 2.0765728600476703e-16,
+      "bare_vs_mixed_p": 0.9998371922529334,
+      "mean_diff_term": 0.23297739858951527,
+      "mean_diff_bare": -0.008846198644591784
+    },
+    "T5": {
+      "test": "T5_permutation_control",
+      "verdict": "FAIL",
+      "observed_reduction": 0.5273964674100035,
+      "null_mean": 0.5381303740768554,
+      "null_std": 0.004560407805116702,
+      "z_score": -2.35371640553914,
+      "perm_p": 0.985014985014985
+    },
+    "T6": {
+      "test": "T6_predictability",
+      "verdict": "PASS",
+      "h_mixed": 2.7193664394622954,
+      "h_term": 2.4949880316630897,
+      "h_bare": 2.643147095911036,
+      "term_reduction": 0.2243784077992057,
+      "bare_reduction": 0.07621934355125948,
+      "avg_reduction": 0.1502988756752326
+    },
+    "thread_categories": {
+      "suffix_type_x_category_v": 0.271541369699755,
+      "suffix_type_x_category_p": 0.0
+    }
+  }
+}

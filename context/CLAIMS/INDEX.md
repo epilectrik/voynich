@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1151 validated constraints | **Version:** 4.62 | **Date:** 2026-02-24
+**Total:** 1156 validated constraints | **Version:** 4.63 | **Date:** 2026-02-25
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3707,6 +3707,29 @@ Tests whether sister pair category divergence (C1298, C1299) is driven by positi
 - 0/33 MIDDLEs shift category between ch/sh: mechanism is vocabulary SELECTION not TRANSFORMATION
 - Cross-lane cargo diverges: ch routes STAGING to QO lane, sh routes THERMAL (V=0.122)
 - No three-way interaction: sister category effect is constant across position zones
+
+---
+
+### Cross-Mode Category Coupling (C1308-C1312) -- Phase: CROSS_MODE_CATEGORY_COUPLING (Phase 460)
+
+Tests whether Mode A and Mode B parallel tracks show structured category coupling — sequential zig-zag, positional alignment, or token-level interleaving. Discovers positional synchronization and B->A thermal feedback while ruling out sequential dependency.
+
+| # | Summary | Tier | Tags | Link |
+|---|---------|------|------|------|
+| **1308** | **Within-Paragraph Category Coherence** (within-para A-B JSD=0.141 < cross-para JSD=0.170 p=7.4e-6; both modes share paragraph's category key; 258 paragraphs with both modes) | 2 | B, paragraph, mode, category, coherence | -> [C1308_within_paragraph_category_coherence.md](C1308_within_paragraph_category_coherence.md) |
+| **1309** | **Mode Category Specialization** (A=THERMAL 32.5% MONITORING 2.6x; B=STAGING 1.37x TRANSITION 1.64x FLOW 1.22x; complementarity is mode-level not pair-specific; coverage perm p=1.0) | 2 | B, mode, category, specialization, THERMAL, TRANSITION | -> [C1309_mode_category_specialization.md](C1309_mode_category_specialization.md) |
+| **1310** | **Positional Category Alignment** (same-position same-category rate 21.4% vs 16.9% chance = 1.27x enrichment; perm p=0.001; NMI 0.042-0.063 across 5 position bins; THERMAL->THERMAL strongest at 7.6%) | 2 | B, mode, position, category, alignment, parallel tracks | -> [C1310_positional_category_alignment.md](C1310_positional_category_alignment.md) |
+| **1311** | **B-to-A Thermal Feedback Signal** (ke_ratio->MARKING rho=-0.198 p=0.0006; ke_ratio->THERMAL rho=+0.176 p=0.002; effect sizes small-to-moderate; feedback is B->A only, A->B shows no signal p>0.3; BA handoff TRANSITION->THERMAL at 12.0%; 300 BA pairs) | 2 | B, mode, thermal, feedback, cross-mode, MARKING | -> [C1311_b_to_a_thermal_feedback.md](C1311_b_to_a_thermal_feedback.md) |
+| **1312** | **No Cross-Line Sequential Category Coupling** (zig-zag WEAKER than null Z=-3.39 perm p=0.999; no A->B prediction V=0.170 p=0.146; no cross-line transition grammar; 0 cross-line forbidden transitions; all interleaving ratios increase entropy; same-mode > cross-mode coupling AA r=0.463 vs BA r=0.328) | 2 | B, mode, cross-line, sequential, independence, forbidden | -> [C1312_no_cross_line_sequential_coupling.md](C1312_no_cross_line_sequential_coupling.md) |
+
+**Phase 460 findings (Cross-Mode Category Coupling):**
+- **WEAK_ZIGZAG_ARTIFACT_SUSPECT (2 PASS, 1 WEAK, 5 FAIL)** + parallel track probe
+- Paragraphs provide a shared category "key" for both modes (within < cross JSD, p=7.4e-6)
+- Mode A = specification voice (THERMAL/MONITORING), Mode B = execution voice (FLOW/STAGING/TRANSITION)
+- Positional synchronization: same-category at same position 1.27x enriched (perm p=0.001)
+- B->A thermal feedback: hot B lines suppress MARKING in next A line (rho=-0.198)
+- No sequential coupling: zig-zag, interleaving, transition grammar, and forbidden transitions all negative
+- BA handoff dominated by TRANSITION->THERMAL (12.0%) — B exits through transition, A re-enters with thermal
 
 ---
 

@@ -1,6 +1,6 @@
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 4.62 | **Status:** FROZEN | **Constraints:** 1151 | **Date:** 2026-02-24
+**Version:** 4.63 | **Status:** FROZEN | **Constraints:** 1156 | **Date:** 2026-02-25
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -21,6 +21,9 @@ This is not language. This is not cipher. This is a control system reference man
 | Folios enumerated | 83 (75,248 instructions) |
 | Translation-eligible zones | 0 |
 | Forbidden transitions | 17 (in 5 hazard classes) |
+| Operational categories | 8 (span all 4 systems; C1250) |
+| Macro-automaton states | 6 (8.17x class compression; AXM attractor self=0.697; C1025) |
+| Generative sufficiency | 87% of measurable structure (M2 frontier; C1025/C1030/C1033/C1034) |
 
 ---
 
@@ -48,7 +51,7 @@ df = df[df['transcriber'] == 'H']  # PRIMARY track only
 
 ## How to Think About Tokens (Structural Layer)
 
-Voynich tokens function differently than words in natural language. The manuscript has three distinct vocabulary systems:
+Voynich tokens function differently than words in natural language. The manuscript has four distinct layers:
 
 ### Vocabulary by System
 
@@ -56,7 +59,8 @@ Voynich tokens function differently than words in natural language. The manuscri
 |--------|-------------|-------|
 | **Currier B** | 479 | 49 instruction classes (9.8x compression) |
 | **Currier A** | ~2,400 | Registry entries: 609 RI + 404 PP MIDDLEs |
-| **AZC** | ~800 | Hybrid (shares with both A and B) |
+| **AZC** | ~800 | Static positional lookup table (shares with both A and B) |
+| **HT** | ~1,200 | Compound specifications (morphological subset of B; C935) |
 | **Full H-track** | ~12,362 | All systems combined |
 
 ### Currier B: Execution Grammar
@@ -65,9 +69,13 @@ In B, tokens are **instruction operators**, not semantic words:
 
 1. **479 token types collapse to 49 instruction classes.** The functional behavior is determined by instruction class, not the specific token. (C121)
 
-2. **Tokens are interchangeable within their class.** Like assembly mnemonics (MOV, ADD, JMP), specific tokens are surface variants; the class determines behavior.
+2. **Token morphology: [ARTICULATOR] + [PREFIX] + MIDDLE + [SUFFIX].** PREFIX encodes operational channel AND line position via a base-modifier positional grammar (C929, C1218-C1219). MIDDLE encodes core action. SUFFIX encodes role-dependent markers.
 
-3. **High hapax rates are expected.** Compositional morphology (PREFIX + MIDDLE + SUFFIX) generates unique surface forms naturally. 35-39% hapax rate follows from productive combination.
+3. **8 operational categories** (THERMAL, CONTAINMENT, FLOW, MONITORING, OPERATION, STAGING, MARKING, TRANSITION) organize all four systems (C1250). Categories predict escape dynamics (C1274) and are structured in sequence (C1286).
+
+4. **6-state macro-automaton** compresses 49 classes into folio-level dynamics. AXM is the dominant attractor (self=0.697). 6 folio archetypes orthogonal to REGIMEs (C1025).
+
+5. **Paragraph body cycling:** Two universal suffix modes alternate within paragraphs — Mode A (specification/energy) and Mode B (continuation/equilibration). Cross-mode coupling is positional and paragraph-scoped, not sequential (C1229-C1231, C1308-C1312).
 
 ### Currier A: Registry Vocabulary
 
@@ -195,6 +203,8 @@ requires explicit authorization from the user.
 | **Validate B grammar (API)** | [STRUCTURAL_CONTRACTS/currierB.bcsc.yaml](STRUCTURAL_CONTRACTS/currierB.bcsc.yaml) |
 | **Understand A→AZC transform** | [STRUCTURAL_CONTRACTS/azc_activation.act.yaml](STRUCTURAL_CONTRACTS/azc_activation.act.yaml) |
 | **Understand AZC→B propagation** | [STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml](STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml) |
+| **Validate HT properties (API)** | [STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml](STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml) |
+| **Validate paragraph structure (API)** | [STRUCTURAL_CONTRACTS/paragraph.psc.yaml](STRUCTURAL_CONTRACTS/paragraph.psc.yaml) |
 | Work with Currier B grammar | [ARCHITECTURE/currier_B.md](ARCHITECTURE/currier_B.md) |
 | Work with Currier A registry | [ARCHITECTURE/currier_A.md](ARCHITECTURE/currier_A.md) |
 | Currier A characterization (detailed) | [ARCHITECTURE/currier_A_summary.md](ARCHITECTURE/currier_A_summary.md) |
@@ -243,6 +253,16 @@ See [CORE/falsifications.md](CORE/falsifications.md) for complete list with evid
 - LINK population (13.2% of tokens = ol-morphology, role-stratified; C609 density, C1174 morphological artifact)
 - Folio = complete program, Line = formal control block
 
+**Established (Tier 2):**
+- 6-state macro-automaton with AXM attractor (C1025)
+- 8 operational categories spanning all 4 systems (C1250)
+- PREFIX base-modifier positional grammar (C929, C1218-C1219)
+- Sister pairs achieve category divergence through vocabulary selection (C1303-C1307)
+- Paragraph body: suffix mode cycling within execution gradient envelope (C1229-C1232)
+- Cross-mode parallel tracks: positional alignment, B→A thermal feedback, no sequential coupling (C1308-C1312)
+- 5 apparatus profiles from marker MIDDLEs; REGIME encodes apparatus type (C1247-C1249)
+- Generative sufficiency: 49-class Markov + forbidden suppression reproduces 87% of structure (C1025/C1030)
+
 **Not encoded (operator provides externally):**
 - Sensory completion judgment (when to stop)
 - Material selection (what to process)
@@ -256,8 +276,8 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 1093 |
-| Completed phases | 445 |
+| Validated constraints | 1156 |
+| Completed phases | 460 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -267,22 +287,26 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 ---
 
-## Three Text Systems
+## Four-Layer Architecture
 
-The manuscript contains three distinct systems sharing a **global morphological type system** (not grammar):
+The manuscript comprises four structurally distinct systems sharing a **global morphological type system** (not grammar):
 
-> **Important distinction:** The "single shared grammar" in the frozen conclusion applies to **Currier B only**. Currier A uses a different formal system (non-sequential). What IS shared across all three systems is the morphological TYPE system (prefix/suffix structure, compositional rules).
+> **Important distinction:** The "single shared grammar" in the frozen conclusion applies to **Currier B only**. Currier A uses a different formal system (non-sequential). What IS shared across all systems is the morphological TYPE system (prefix/suffix structure, compositional rules).
 
-| System | % Tokens | Folios | Function |
-|--------|----------|--------|----------|
-| **Currier B** | 61.9% | 83 | Sequential executable programs |
-| **Currier A** | 30.5% | 114 | Non-sequential categorical registry |
-| **AZC** | 8.7% | 30 | Hybrid diagram annotation (labeling) |
+| Layer | System | Tokens | Function |
+|-------|--------|--------|----------|
+| **Execution** | Currier B | 23,243 (61.9%) | Controls what you do over time |
+| **Distinction** | Currier A | 11,415 (30.5%) | Catalogs where distinctions matter |
+| **Context** | AZC | 3,299 (8.7%) | Static positional lookup table classifying vocabulary |
+| **Orientation** | HT | 7,042* | Compound specifications redundant with body lines; keeps operator oriented |
+
+*HT tokens are a morphological subset of Currier B — already counted in B total. They use the same morphology but do not participate in the 49-class grammar. (C935)
 
 - A and B are **FOLIO-DISJOINT** (0 shared folios)
 - A and B are **GRAMMAR-DISJOINT** (different formal systems)
 - A and B are **VOCABULARY-INTEGRATED** (69.8% shared types)
 - AZC bridges both with 60.5% shared vocabulary
+- 8 operational categories are the first organizing principle spanning all 4 systems (C1250)
 
 See [ARCHITECTURE/cross_system.md](ARCHITECTURE/cross_system.md) for details.
 
@@ -292,8 +316,8 @@ See [ARCHITECTURE/cross_system.md](ARCHITECTURE/cross_system.md) for details.
 
 - **Constraints (by topic):** [CLAIMS/INDEX.md](CLAIMS/INDEX.md) - Browse by category, follow links to details
 - **Architectural guide:** [MODEL_CONTEXT.md](MODEL_CONTEXT.md) - How to interpret the constraint system
-- **Structural contracts:** [STRUCTURAL_CONTRACTS/](STRUCTURAL_CONTRACTS/) - Derived API specifications (CASC, AZC-ACT, AZC-B-ACT, BCSC)
-- **Phases:** [MAPS/phase_index.md](MAPS/phase_index.md) - 118 phases with status
+- **Structural contracts:** [STRUCTURAL_CONTRACTS/](STRUCTURAL_CONTRACTS/) - Derived API specifications (CASC, AZC-ACT, AZC-B-ACT, BCSC, HTSC, PSC)
+- **Phases:** [MAPS/phase_index.md](MAPS/phase_index.md) - Phase index
 - **Methodology:** [SYSTEM/METHODOLOGY.md](SYSTEM/METHODOLOGY.md) - Warnings and patterns
 - **Changelog:** [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) - Context system updates
 
@@ -310,7 +334,7 @@ These files are for scripts and validation tools, NOT for reading in full:
 Fits are explanatory models that account for observed patterns. They do NOT constrain the model.
 
 - **Fits explain. Constraints bind.** See [SYSTEM/FIT_METHODOLOGY.md](SYSTEM/FIT_METHODOLOGY.md)
-- **Fit registry:** [MODEL_FITS/INDEX.md](MODEL_FITS/INDEX.md) (31 fits logged)
+- **Fit registry:** [MODEL_FITS/INDEX.md](MODEL_FITS/INDEX.md) (71 fits logged)
 - **Cross-reference:** [MAPS/fit_to_constraint.md](MAPS/fit_to_constraint.md)
 - **Epistemic layers:** [SYSTEM/epistemic_layers.md](SYSTEM/epistemic_layers.md) - Constraint vs Fit vs Speculation legend
 
@@ -352,4 +376,4 @@ See [README.md](README.md) and [SYSTEM/HOW_TO_READ.md](SYSTEM/HOW_TO_READ.md) fo
 
 ---
 
-*Context System v3.84 | Project v3.84 FROZEN STATE | ANALYSIS CLOSED | PCA-v1 CERTIFIED | 2026-02-14*
+*Context System v4.63 | Project v4.63 FROZEN STATE | ANALYSIS CLOSED | PCA-v1 CERTIFIED | 2026-02-25*

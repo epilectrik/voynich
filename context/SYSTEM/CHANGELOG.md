@@ -4,6 +4,25 @@
 
 ---
 
+## Version 4.63.49 (2026-02-25) - Phase 460: Cross-Mode Category Coupling
+
+### Summary
+
+Phase 460: 8-test line-level battery (460a) + 6-probe parallel track analysis (460c) investigating whether Mode A and Mode B lines show structured category coupling. **Overall: WEAK_ZIGZAG_ARTIFACT_SUSPECT (460a: 2 PASS, 1 WEAK, 5 FAIL) + parallel track findings.** Headline: the two mode tracks are coordinated by shared paragraph context and positional synchronization, not by sequential dependency. Both modes share paragraph's category "key" (within-para A-B JSD=0.141 < cross-para JSD=0.170, p=7.4e-6). Mode A specializes in THERMAL/MONITORING; Mode B in FLOW/STAGING/TRANSITION. At the same relative position within adjacent A/B lines, categories align 1.27x above chance (perm p=0.001). B->A thermal feedback: ke_ratio predicts next A's MARKING (rho=-0.198, p=0.0006) and THERMAL (rho=+0.176, p=0.002). All sequential coupling tests negative: zig-zag weaker than null (Z=-3.39), no A->B prediction (p=0.146), no cross-line transition grammar, 0 cross-line forbidden transitions, all interleaving ratios increase entropy. BA handoff dominated by TRANSITION->THERMAL (12.0%). New constraints: C1308-C1312 (5 new, 1151->1156).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/CROSS_MODE_CATEGORY_COUPLING/` -- 3 scripts + 3 results JSON |
+| **ADDED** | C1308-C1312 constraint files (5 new constraints, 1151->1156) |
+| **UPDATED** | `CLAUDE.md` -- 1151->1156 constraints, 459->460 phases, v4.63 |
+| **UPDATED** | `INDEX.md` -- 1151->1156 total, Phase 460 section added |
+| **UPDATED** | `currierB.bcsc.yaml` -- cross-mode category coupling section |
+| **UPDATED** | `INTERPRETATION_SUMMARY.md` -- cross-mode coupling section |
+
+---
+
 ## Version 4.62.48 (2026-02-24) - Phase 459: Sister Category Mechanism
 
 ### Summary

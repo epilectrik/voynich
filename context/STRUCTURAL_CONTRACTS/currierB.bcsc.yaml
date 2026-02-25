@@ -963,6 +963,22 @@ program_structure:
           shortened (7.3 vs 10.0 tokens) and cooling-enriched (e-kernel
           60.8% vs 57.0%). (C1237)
         provenance: "C1227, C1228, C1229, C1230, C1231, C1232, C1233, C1236, C1237, C1256, C1258, C1259, C1260"
+      cross_mode_category_coupling:
+        statement: "Mode A and B are category-specialized, positionally synchronized parallel tracks with B->A thermal feedback, but no sequential coupling."
+        paragraph_coherence: "Both modes share paragraph's category key — within-para A-B JSD=0.141 < cross-para 0.170 (p=7.4e-6, C1308)"
+        mode_specialization: "A = THERMAL 32.5% + MONITORING 2.57x; B = TRANSITION 1.64x + STAGING 1.37x + FLOW 1.22x. Complementarity is mode-level, not pair-specific (C1309)"
+        positional_alignment: "Same relative position in adjacent A/B lines: same-category 1.27x enrichment (perm p=0.001). NMI 0.042-0.063 across 5 position bins (C1310)"
+        thermal_feedback: "B->A only: ke_ratio->MARKING rho=-0.198 (p=0.0006), ke_ratio->THERMAL rho=+0.176 (p=0.002). Effect sizes small-to-moderate. A->B shows no signal (p>0.3). Asymmetric feedback signal (C1311)"
+        no_sequential_coupling: |
+          All sequential coupling tests negative (C1312):
+          - Zig-zag WEAKER than null (Z=-3.39, perm p=0.999)
+          - No A->B category prediction (V=0.170, p=0.146)
+          - No cross-line transition grammar (all mode pairs p>0.05 except BB WEAK)
+          - 0 cross-line forbidden transitions (0/1384)
+          - All interleaving ratios increase entropy
+          - Same-mode coupling > cross-mode (AA r=0.463 > BA r=0.328)
+        ba_handoff: "TRANSITION->THERMAL dominates BA boundary (12.0%) — B exits through transition, A re-enters with thermal specification"
+        provenance: "C1308, C1309, C1310, C1311, C1312"
 
     paragraph_zones:
       # REVISED Phase 451: Two zones, not three. The body-internal

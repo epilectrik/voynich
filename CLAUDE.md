@@ -169,9 +169,9 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 4.62 |
-| Constraints | 1151 validated |
-| Phases | 459 completed |
+| Version | 4.63 |
+| Constraints | 1156 validated |
+| Phases | 460 completed |
 | Folios | 83 (Currier B) |
 | Core model | CLOSED (PCA-v1 CERTIFIED) |
 | Characterization | ACTIVE |
@@ -198,7 +198,7 @@ The user can ask for precision when needed. Default to clarity over pedantry in 
 
 > **"I don't know" is NEVER an acceptable answer about this project.**
 
-The context system contains 987 validated constraints. Before answering ANY question about Voynich structure, relationships, or behavior:
+The context system contains 1,156 validated constraints. Before answering ANY question about Voynich structure, relationships, or behavior:
 
 1. **STOP** - Do not answer from memory or intuition
 2. **SEARCH** - Grep/read `context/` for relevant constraints
@@ -236,7 +236,7 @@ context/
 ├── CORE/                ← Frozen facts, falsifications
 ├── ARCHITECTURE/        ← Currier A/B/AZC, cross-system
 ├── STRUCTURAL_CONTRACTS/ ← API layer (CASC, AZC-ACT, AZC-B-ACT, BCSC, HTSC)
-├── CLAIMS/              ← 879 constraints (INDEX + files)
+├── CLAIMS/              ← 1,156 constraints (INDEX + files)
 ├── OPERATIONS/          ← OPS doctrine, program taxonomy
 ├── TERMINOLOGY/         ← Definitions
 ├── METRICS/             ← Quantitative facts

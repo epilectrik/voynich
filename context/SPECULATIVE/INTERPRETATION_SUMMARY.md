@@ -6374,3 +6374,40 @@ The verb distinction maps to control system operations: you SET a temperature (o
 ### Additivity
 
 No three-way interaction exists between sister identity, category, and position (C1307). The sister category effect is additive with position: knowing the sister identity gives the same category information regardless of where in the line you are. This rules out models where sister pairs modulate category differently at different line positions (e.g., "ch selects THERMAL early but FLOW late").
+
+## XX. Cross-Mode Category Coupling (Phase 460)
+
+**Phase:** CROSS_MODE_CATEGORY_COUPLING (460)
+**Constraints:** C1308-C1312 | **Date:** 2026-02-25
+
+### Core Finding
+
+Mode A and Mode B parallel tracks are coordinated by shared paragraph context and positional synchronization, not by sequential dependency. The two tracks read from the same "key signature" (paragraph category profile) and are synchronized by position within the line, but play their parts independently — like two instruments reading from the same measure of sheet music.
+
+### Paragraph Category Coherence
+
+Both modes within a paragraph share a common category "key" (C1308). Within-paragraph A-B divergence (JSD=0.141) is significantly less than cross-paragraph (JSD=0.170, p=7.4e-6). A THERMAL-heavy paragraph has THERMAL content in both its Mode A and Mode B lines. The paragraph sets the operational domain; both voices contribute to it.
+
+### Mode Specialization
+
+Mode A is the specification/parameter voice: THERMAL (32.5% vs 20.7%) and MONITORING (2.6x enriched). Mode B is the execution/process voice: TRANSITION (1.64x), STAGING (1.37x), FLOW (1.22x). Together they cover 6.1 of 8 categories vs 4.8 alone (C1309). This maps directly onto suffix mode characterization: A (terminal-heavy = endpoint specification) encodes WHAT to achieve thermally; B (bare-heavy = continuation) encodes HOW to execute flow and transitions.
+
+### Positional Synchronization
+
+At the same relative position within adjacent A/B lines, categories align 1.27x above chance (perm p=0.001, C1310). NMI is consistent across all 5 position bins (0.042-0.063), peaking at MID-LATE. THERMAL->THERMAL is the strongest pairing (7.6%). The two tracks are synchronized by position — working on the same operational domain at the same point in the line.
+
+### B-to-A Thermal Feedback
+
+B's thermal state feeds back to the next A line through a narrow channel (C1311): ke_ratio -> MARKING (rho=-0.198, p=0.0006) and ke_ratio -> THERMAL (rho=+0.176, p=0.002). Hot B lines suppress marking content and boost thermal content in the next A line. The feedback is directional — A->B shows no signal (p>0.3). In control system terms: the execution voice reports back, and the specification voice adjusts.
+
+### No Sequential Coupling
+
+All sequential coupling tests are negative (C1312): zig-zag coupling is weaker than random (Z=-3.39), A's category doesn't predict B's (p=0.146), no cross-line transition grammar, 0 cross-line forbidden transitions, and all token-interleaving ratios increase entropy. Same-mode pairs show stronger coupling than cross-mode pairs (AA r=0.463 > BA r=0.328). Lines are operationally self-contained.
+
+### BA Handoff Pattern
+
+The BA boundary shows a characteristic handoff: TRANSITION->THERMAL at 12.0%, dominating all other transitions. B lines exit through TRANSITION, A lines re-enter with THERMAL specification. This makes physical sense: an execution phase completes a state change, then the specification voice sets new thermal parameters for the next cycle.
+
+### Cross-Mode Sheet Music Principle (Tier 3 Synthesis)
+
+The Phase 460 findings collectively establish a named structural principle: Mode A and Mode B lines read from the same paragraph-level "key signature" (C1308), are synchronized by relative position within the line (C1310), and play complementary parts — A carries specification/THERMAL, B carries execution/TRANSITION (C1309). But they compose their individual contributions independently (C1312). B's thermal state feeds back to A's category selection (C1311) as the only detectable cross-mode signal. Like two staves of sheet music, the voices are in the same key, coordinated by measure, and playing different roles — but each part is written as a self-contained line.

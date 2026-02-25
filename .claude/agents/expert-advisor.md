@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1151 validated constraints and 71 explanatory fits loaded
+embedded below. You have ALL 1156 validated constraints and 71 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1151 validated)
+- Tier 0-2 binding constraints (1156 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1151 constraints, 71 fits,
+full content in their source documents. All 1156 constraints, 71 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-24 23:43
-**Version:** FROZEN STATE (1151 constraints, 71 fits) [COMPACT]
+**Generated:** 2026-02-25 10:44
+**Version:** FROZEN STATE (1156 constraints, 71 fits) [COMPACT]
 
 ---
 
@@ -113,7 +113,7 @@ and 4 structural contracts are complete.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 4.62 | **Status:** FROZEN | **Constraints:** 1151 | **Date:** 2026-02-24
+**Version:** 4.63 | **Status:** FROZEN | **Constraints:** 1156 | **Date:** 2026-02-25
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1152 constraints | 2026-02-24
+CONSTRAINT_REFERENCE v2.6 | 1157 constraints | 2026-02-25
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2260,6 +2260,11 @@ C1304	**ok/ot Category Divergence Is Position-Independent**
 C1305	**MIDDLE Determines Category**
 C1306	**Cross-Lane Cargo Divergence**
 C1307	**No Sister x Category x Position Interaction**
+C1308	**Within-Paragraph Category Coherence**
+C1309	**Mode Category Specialization**
+C1310	**Positional Category Alignment**
+C1311	**B-to-A Thermal Feedback Channel**
+C1312	**No Cross-Line Sequential Category Coupling**
 
 ---
 
@@ -2267,7 +2272,7 @@ C1307	**No Sister x Category x Position Interaction**
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-02-24
+# Generated: 2026-02-25
 # Total: 71 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
@@ -4871,6 +4876,20 @@ Sister pair category divergence (ch/sh and ok/ot) is position-independent and me
 
 
 
+## XX. Cross-Mode Category Coupling (Phase 460)
+
+### Core Finding
+
+Mode A and Mode B parallel tracks are coordinated by shared paragraph context and positional synchronization, not by sequential dependency. The two tracks read from the same "key signature" (paragraph category profile) and are synchronized by position within the line, but play their parts independently — like two instruments reading from the same measure of sheet music.
+
+
+
+
+
+
+
+
+
 ---
 
 # Currier A Structure Contract
@@ -6543,6 +6562,22 @@ program_structure:
           shortened (7.3 vs 10.0 tokens) and cooling-enriched (e-kernel
           60.8% vs 57.0%). (C1237)
         provenance: "C1227, C1228, C1229, C1230, C1231, C1232, C1233, C1236, C1237, C1256, C1258, C1259, C1260"
+      cross_mode_category_coupling:
+        statement: "Mode A and B are category-specialized, positionally synchronized parallel tracks with B->A thermal feedback, but no sequential coupling."
+        paragraph_coherence: "Both modes share paragraph's category key — within-para A-B JSD=0.141 < cross-para 0.170 (p=7.4e-6, C1308)"
+        mode_specialization: "A = THERMAL 32.5% + MONITORING 2.57x; B = TRANSITION 1.64x + STAGING 1.37x + FLOW 1.22x. Complementarity is mode-level, not pair-specific (C1309)"
+        positional_alignment: "Same relative position in adjacent A/B lines: same-category 1.27x enrichment (perm p=0.001). NMI 0.042-0.063 across 5 position bins (C1310)"
+        thermal_feedback: "B->A only: ke_ratio->MARKING rho=-0.198 (p=0.0006), ke_ratio->THERMAL rho=+0.176 (p=0.002). Effect sizes small-to-moderate. A->B shows no signal (p>0.3). Asymmetric feedback signal (C1311)"
+        no_sequential_coupling: |
+          All sequential coupling tests negative (C1312):
+          - Zig-zag WEAKER than null (Z=-3.39, perm p=0.999)
+          - No A->B category prediction (V=0.170, p=0.146)
+          - No cross-line transition grammar (all mode pairs p>0.05 except BB WEAK)
+          - 0 cross-line forbidden transitions (0/1384)
+          - All interleaving ratios increase entropy
+          - Same-mode coupling > cross-mode (AA r=0.463 > BA r=0.328)
+        ba_handoff: "TRANSITION->THERMAL dominates BA boundary (12.0%) — B exits through transition, A re-enters with thermal specification"
+        provenance: "C1308, C1309, C1310, C1311, C1312"
 
     paragraph_zones:
       # REVISED Phase 451: Two zones, not three. The body-internal
