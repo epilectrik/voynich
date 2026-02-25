@@ -19,7 +19,7 @@ space in the expert-advisor agent which cannot access files.
 
 Usage:
     python generate_expert_context.py              # Generate agent with all documents
-    python generate_expert_context.py --compact    # Cognitively compressed (~270KB)
+    python generate_expert_context.py --compact    # Cognitively compressed (~310KB)
     python generate_expert_context.py --no-contracts  # Exclude structural contracts
     python generate_expert_context.py --legacy     # Also generate EXPERT_CONTEXT.md
     python generate_expert_context.py --no-filter  # Skip agent-specific filtering
@@ -96,24 +96,12 @@ def _strip_file_references(content):
             i += 1
             continue
 
-        # Skip standalone "See [...]" lines pointing to context/ files
-        # Also handle lines starting with "> " (blockquotes) before "See"
-        clean = re.sub(r'^>\s*', '', stripped)
-        if re.match(r'^See\s+\[', clean):
-            i += 1
-            continue
-
-        # Strip inline "See [...](...)" references mid-sentence
-        # e.g. "...frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for..."
-        if 'See [' in lines[i]:
-            lines[i] = re.sub(r'\s*See\s+\[[^\]]*\]\([^)]*\)[^.]*\.?', '', lines[i])
-
         filtered.append(lines[i])
         i += 1
     return '\n'.join(filtered)
 
 
-def _strip_claude_index_sections(content, compact=False):
+def _strip_claude_index_sections(content):
     """Strip sections from CLAUDE_INDEX that are useless to the expert agent.
 
     Removes:
@@ -122,15 +110,6 @@ def _strip_claude_index_sections(content, compact=False):
     - File Registry (file paths)
     - Automation (tool locations)
     - Context System (progressive disclosure instructions)
-
-    In compact mode, also removes sections duplicated by agent header
-    or Architectural Framework:
-    - Epistemic Tiers (duplicate tier table — already in agent header)
-    - STOP CONDITIONS (covered by MODEL_CONTEXT section III)
-    - Default Resolution Policy (references file system agent can't access)
-    - Escalation Rule (references file system agent can't access)
-    - Structural Analysis vs Interpretive (restates tier discipline)
-    - Why Visualization Tools (niche, agent doesn't do visualization)
     """
     sections_to_strip = [
         'DATA LOADING WARNING',
@@ -139,15 +118,6 @@ def _strip_claude_index_sections(content, compact=False):
         'Automation',
         'Context System',
     ]
-    if compact:
-        sections_to_strip.extend([
-            'Epistemic Tiers',
-            'STOP CONDITIONS',
-            'Default Resolution Policy',
-            'Escalation Rule',
-            'Structural Analysis vs Interpretive',
-            'Why Visualization Tools',
-        ])
     lines = content.split('\n')
     filtered = []
     skip_until_next_h2 = False
@@ -209,50 +179,32 @@ def _strip_yaml_provenance_maps(content):
 
 
 def _strip_constraint_table_columns(content):
-    """Strip LOCATION column from CONSTRAINT_TABLE.txt.
+    """Compress CONSTRAINT_TABLE.txt by removing TIER/SCOPE/LOCATION columns.
 
-    Keeps NUM, CONSTRAINT, TIER, SCOPE — all needed for reasoning.
-    Drops only LOCATION (file paths are useless to the embedded agent).
-    Also strips the header lines (count, tier/scope/location legends, column header)
-    to avoid count inconsistency — the agent header provides the authoritative count.
+    The agent rarely uses these for lookup - it searches by constraint
+    number and description. Removing these columns saves ~15-20% of
+    the table size.
     """
     lines = content.split('\n')
     filtered = []
     for line in lines:
-        stripped = line.strip()
-
-        # Strip header lines — agent header has authoritative count and legends
-        if stripped.startswith('CONSTRAINT_REFERENCE'):
-            continue
-        if stripped.startswith('TIER:') and '=' in stripped:
-            continue
-        if stripped.startswith('SCOPE:') and '=' in stripped:
-            continue
-        if stripped.startswith('LOCATION:') and '=' in stripped:
-            continue
-        # Strip the column header line (NUM\tCONSTRAINT\tTIER\tSCOPE\tLOCATION)
-        if stripped.startswith('NUM\t'):
-            continue
-
-        # Skip comment lines and blank lines
-        if line.startswith('#') or not stripped:
+        # Skip comment/header lines
+        if line.startswith('#') or not line.strip():
             filtered.append(line)
             continue
 
-        # TSV lines: NUM | CONSTRAINT | TIER | SCOPE | LOCATION
-        # Keep first 4 fields, drop LOCATION
+        # TSV lines: ID | TITLE | TIER | SCOPE | LOCATION
+        # Keep only ID and TITLE (first two fields)
         parts = line.split('\t')
-        if len(parts) >= 5:
-            filtered.append('\t'.join(parts[:4]))
-        elif len(parts) >= 2:
-            filtered.append(line)  # Short lines pass through
+        if len(parts) >= 2:
+            filtered.append(f"{parts[0]}\t{parts[1]}")
         else:
             filtered.append(line)
 
     return '\n'.join(filtered)
 
 
-def filter_for_agent(content, filename, compact=False):
+def filter_for_agent(content, filename):
     """Apply all agent-specific filters to a document before embedding."""
     original_size = len(content)
 
@@ -261,7 +213,7 @@ def filter_for_agent(content, filename, compact=False):
 
     # Document-specific filters
     if 'CLAUDE_INDEX' in filename:
-        content = _strip_claude_index_sections(content, compact=compact)
+        content = _strip_claude_index_sections(content)
     elif 'CONSTRAINT_TABLE' in filename:
         content = _strip_constraint_table_columns(content)
 
@@ -327,22 +279,6 @@ _INTERP_KEEP_FULL = [
     '0.K.',
 ]
 
-# Sections to heavy-condense (keep headers, blockquotes, constraint refs only)
-_INTERP_HEAVY_CONDENSE = [
-    'XI.',     # Rosettes Foldout
-    'XII.',    # Cross-System Vocabulary Flow
-    'XIII.',   # Dark Pipeline
-    'XIV.',    # PP Pipeline Atom Decomposition
-    'XV.',     # Cross-Lane Content Prediction
-    'XVI.',    # 8-Category Operational System
-    'XVII.',   # Paragraph Termination
-    'XVIII.',  # PREFIX Category Anatomy
-    'XIX.',    # Sister Category Mechanism
-    'XX.',     # Cross-Mode Category Coupling
-    'I.D.',    # MIDDLE Atomic Incompatibility Layer (large tables)
-    'I.O.',    # Physical World Reverse Engineering (long detail)
-]
-
 
 def _compact_interpretation_summary(content):
     """Cognitively compress INTERPRETATION_SUMMARY.
@@ -382,8 +318,6 @@ def _compact_interpretation_summary(content):
             elif header.startswith('X. External Alignment') or header.startswith('Navigation'):
                 state = 'section_x'
                 x_past_core_finding = False
-            elif any(header.startswith(k) for k in _INTERP_HEAVY_CONDENSE):
-                state = 'heavy_condense'
             else:
                 state = 'condense'
             continue
@@ -421,38 +355,6 @@ def _compact_interpretation_summary(content):
                 continue
 
             # Skip everything else in section X
-            continue
-
-        # HEAVY CONDENSE: keep headers, blockquotes, and constraint-citing bullets only
-        if state == 'heavy_condense':
-            # Keep ### subsection headers
-            if line.startswith('### '):
-                result.append(line)
-                consecutive_blank = 0
-                continue
-            # Keep blockquotes (core findings)
-            if stripped.startswith('>'):
-                result.append(line)
-                consecutive_blank = 0
-                continue
-            # Keep bullet lines citing constraints
-            if stripped.startswith('- ') and re.search(r'C\d{3,4}', stripped):
-                result.append(line)
-                consecutive_blank = 0
-                continue
-            # Keep bold standalone definitions
-            if stripped.startswith('**') and stripped.endswith('**') and len(stripped) < 120:
-                result.append(line)
-                consecutive_blank = 0
-                continue
-            # Keep blank lines (limit to 1 consecutive)
-            if stripped == '':
-                consecutive_blank += 1
-                if consecutive_blank <= 1:
-                    result.append('')
-                continue
-            consecutive_blank = 0
-            # Skip everything else (prose, tables, evidence detail)
             continue
 
         # CONDENSE: selective keep
@@ -513,171 +415,76 @@ def _compact_interpretation_summary(content):
     return '\n'.join(result)
 
 
-# Patterns that identify etymology/gloss candidate tables (semantic backsliding risk)
-_GLOSS_TABLE_PATTERNS = [
-    r'\(Ger\.\)',          # German candidate
-    r'\(Lat\.\)',          # Latin candidate
-    r'German Candidate',   # Table header
-    r'Abbreviation.*Meaning.*Confidence',  # Gloss table header
-    r'Our Gloss.*German',  # Consonant gloss table
-]
-
-_QUARANTINE_WARNING = (
-    '> **TIER 4 QUARANTINE:** The following etymology/gloss candidates are speculative '
-    'external-language mappings. Do NOT use these for structural answers. Use only when '
-    'the user explicitly asks about etymology or external-language alignment. '
-    'Structural role is determined by grammar position (C121), not word meaning (C171, C120).'
-)
-
-
-def _quarantine_gloss_tables(content):
-    """Insert quarantine warnings before German/Latin etymology tables.
-
-    Detects tables containing gloss/etymology candidates and inserts
-    a behavioral guardrail warning. This prevents the model from treating
-    Tier 4 speculative language mappings as structural facts.
-    """
-    lines = content.split('\n')
-    result = []
-    i = 0
-    quarantine_inserted = set()  # Track line indices where we've inserted warnings
-
-    while i < len(lines):
-        line = lines[i]
-        stripped = line.strip()
-
-        # Check if this line starts a table (pipe character) with gloss patterns
-        if stripped.startswith('|') and any(
-            re.search(p, stripped) for p in _GLOSS_TABLE_PATTERNS
-        ):
-            # Check if we already inserted a quarantine for a nearby table
-            # (some tables are adjacent — don't duplicate warnings)
-            if not any(abs(i - qi) < 5 for qi in quarantine_inserted):
-                result.append('')
-                result.append(_QUARANTINE_WARNING)
-                result.append('')
-                quarantine_inserted.add(i)
-
-        result.append(line)
-        i += 1
-
-    if quarantine_inserted:
-        print(f"  Quarantine: inserted {len(quarantine_inserted)} gloss table warnings")
-
-    return '\n'.join(result)
-
-
-# MODEL_CONTEXT sections to remove entirely in compact mode
-# Sections V-XII: covered by constraint table + contract signatures
-# Sections I-III: duplicated by CLAUDE_INDEX (Project Identity, Epistemic Tiers, Stop Conditions)
-# Navigation: file-reading artifact
+# MODEL_CONTEXT sections to remove entirely (fully redundant)
 _MC_REMOVE_SECTIONS = [
-    'I. PROJECT IDENTITY',
-    'II. EPISTEMIC GOVERNANCE',
-    'III. MODEL FREEZE',
-    'V. GLOBAL MORPHOLOGICAL',
-    'VI. CURRIER B',
-    'VII. CURRIER A',
-    'VIII. AZC',
-    'IX. HUMAN TRACK',
-    'X. CROSS-SYSTEM',
     'X.B. APPARATUS-CENTRIC',
-    'X.C. REPRESENTATION',
-    'XI. REJECTED',
     'XII. HISTORICAL',
-    'Navigation',
 ]
 
-# MODEL_CONTEXT ### subsections to remove (file-browsing instructions)
-_MC_REMOVE_SUBSECTIONS = [
-    'Layered Access',
-    'Programmatic Access',
-    'Grouped Registries',
-]
-
-# MODEL_CONTEXT: within section IV, remove paragraphs that duplicate
-# the four-layer table already in CLAUDE_INDEX. Keep Design Freedom subsection.
-_MC_IV_KEEP_SUBSECTIONS = [
-    'Design Freedom',
-    'Critical Distinctions',
-]
+# MODEL_CONTEXT sections to compress (keep first N lines)
+_MC_COMPRESS_SECTIONS = {
+    'V. GLOBAL MORPHOLOGICAL': 65,
+    'VI. CURRIER B': 55,
+    'VII. CURRIER A': 35,
+    'VIII. AZC': 30,
+}
 
 
 def _compact_model_context(content):
-    """Cognitively compress MODEL_CONTEXT for compact mode.
+    """Cognitively compress MODEL_CONTEXT.
 
-    Removes:
-    - Sections I-III (duplicated by CLAUDE_INDEX Project Identity/Tiers/Stop Conditions)
-    - Sections V-XII (covered by constraint table + contract signatures)
-    - Navigation (file-reading artifact)
-    - File-browsing subsections (Layered Access, Programmatic Access, Grouped Registries)
-
-    Keeps:
-    - Section IV Design Freedom subsection + Critical Distinctions
-    - Section XIII Methodological Warnings
-    - Section XV How to Read Constraints (minus file-browsing subsections)
-    - Section XVI Change-Safety Statement
+    Compress V (morphology), VI (B), VII (A), VIII (AZC) to core concepts.
+    Remove X.B and XII (redundant with INTERPRETATION_SUMMARY).
+    Keep governance sections I-IV, IX, XI, XIII-XVI in full.
     """
     lines = content.split('\n')
     result = []
-    state = 'keep'
-    skip_subsection = False
+    state = 'keep'  # 'keep', 'remove', 'compress'
+    compress_limit = 0
+    lines_in_section = 0
 
     for line in lines:
         # Detect ## section headers
         if line.startswith('## '):
             header = line[3:].strip()
-            skip_subsection = False
 
+            # Check if this section should be removed
             if any(header.startswith(r) for r in _MC_REMOVE_SECTIONS):
                 state = 'remove'
+                result.append(line)
+                result.append('')
+                result.append('*[Section condensed — content available in INTERPRETATION_SUMMARY or structural contracts.]*')
+                result.append('')
                 continue
-            elif header.startswith('IV. SYSTEM ARCHITECTURE'):
-                # Keep section IV header but selectively filter content
-                # Skip opening prose/table (duplicated in CLAUDE_INDEX)
-                # until we hit a whitelisted ### subsection
-                state = 'section_iv'
-                skip_subsection = True  # Skip opening content before first ###
-                continue
-            else:
+
+            # Check if this section should be compressed
+            matched = False
+            for prefix, limit in _MC_COMPRESS_SECTIONS.items():
+                if header.startswith(prefix):
+                    state = 'compress'
+                    compress_limit = limit
+                    lines_in_section = 0
+                    matched = True
+                    break
+
+            if not matched:
                 state = 'keep'
 
             result.append(line)
             continue
 
-        # Handle ### subsection headers
-        if line.startswith('### '):
-            sub_header = line[4:].strip()
-
-            # Always remove file-browsing subsections
-            if any(sub_header.startswith(s) for s in _MC_REMOVE_SUBSECTIONS):
-                skip_subsection = True
-                continue
-            else:
-                skip_subsection = False
-
-            # In section IV, only keep specific subsections
-            if state == 'section_iv':
-                if any(sub_header.startswith(k) for k in _MC_IV_KEEP_SUBSECTIONS):
-                    result.append(line)
-                    skip_subsection = False
-                else:
-                    skip_subsection = True
-                continue
-
-            if state != 'remove':
-                result.append(line)
-            continue
-
-        if skip_subsection:
-            continue
-
         if state == 'keep':
             result.append(line)
-        elif state == 'section_iv':
-            # In section IV outside a skip, keep line only if not in skipped subsection
-            if not skip_subsection:
+        elif state == 'remove':
+            continue
+        elif state == 'compress':
+            lines_in_section += 1
+            if lines_in_section <= compress_limit:
                 result.append(line)
+            elif lines_in_section == compress_limit + 1:
+                result.append('')
+                result.append('*[Remaining detail available in structural contracts.]*')
+                result.append('')
 
     return '\n'.join(result)
 
@@ -786,7 +593,6 @@ def compact_filter(content, filename):
 
     if 'INTERPRETATION_SUMMARY' in filename:
         content = _compact_interpretation_summary(content)
-        content = _quarantine_gloss_tables(content)
     elif 'MODEL_CONTEXT' in filename:
         content = _compact_model_context(content)
     elif 'CONSTRAINT_TABLE' in filename:
@@ -813,255 +619,12 @@ def compact_contract_filter(content, filename):
     return content
 
 
-# ============================================================
-# CONTRACT SIGNATURE GENERATION
-# ============================================================
-# Replaces full YAML contracts with compact index in compact mode.
-# Extracts guarantees, invariants, section->constraint mappings,
-# disallowed interpretations, and key parameters.
-
-def _generate_contract_signature(filepath, title):
-    """Generate a compact contract signature from a YAML contract file.
-
-    Extracts structural metadata without embedding the full YAML.
-    All constraint references are preserved for citability.
-    """
-    content = filepath.read_text(encoding='utf-8')
-    lines = content.split('\n')
-
-    # Extract meta fields
-    meta_info = {}
-    in_meta = False
-    for line in lines:
-        if line.strip() == 'meta:':
-            in_meta = True
-            continue
-        if in_meta:
-            if line and line[0] not in (' ', '\t'):
-                break
-            m = re.match(r'\s+(name|acronym|version|status|date|layer_type):\s*"?([^"]*)"?', line)
-            if m:
-                meta_info[m.group(1)] = m.group(2).strip()
-
-    # Extract scope fields
-    scope_info = {}
-    in_scope = False
-    for line in lines:
-        if line.strip() == 'scope:':
-            in_scope = True
-            continue
-        if in_scope:
-            if line and line[0] not in (' ', '\t'):
-                break
-            m = re.match(r'\s+(system|coverage|coverage_under_b_grammar|folio_count|function):\s*"?([^"]*)"?', line)
-            if m:
-                scope_info[m.group(1)] = m.group(2).strip()
-
-    # Extract guarantees (list of dicts with id, statement, provenance)
-    guarantees = []
-    in_guarantees = False
-    current = {}
-    for line in lines:
-        stripped = line.strip()
-        if stripped == 'guarantees:':
-            in_guarantees = True
-            continue
-        if in_guarantees:
-            if line and line[0] not in (' ', '\t', '') and ':' in stripped and not stripped.startswith('#') and not stripped.startswith('-'):
-                break
-            m = re.match(r'\s+- id:\s*"([^"]*)"', line)
-            if m:
-                if current:
-                    guarantees.append(current)
-                current = {'id': m.group(1)}
-                continue
-            m = re.match(r'\s+statement:\s*"([^"]*)"', line)
-            if m and current:
-                current['statement'] = m.group(1)[:120]  # Truncate long statements
-            m = re.match(r'\s+provenance:\s*"([^"]*)"', line)
-            if m and current:
-                current['provenance'] = m.group(1)
-    if current and current.get('id'):
-        guarantees.append(current)
-
-    # Extract invariants (dict of name -> {statement, provenance})
-    invariants = []
-    in_invariants = False
-    inv_name = None
-    inv_data = {}
-    for line in lines:
-        stripped = line.strip()
-        if stripped == 'invariants:':
-            in_invariants = True
-            continue
-        if in_invariants:
-            if line and line[0] not in (' ', '\t', '') and ':' in stripped and not stripped.startswith('#') and not stripped.startswith('-'):
-                break
-            # Invariant name (2-space indented key)
-            m = re.match(r'  ([a-z_]+):', line)
-            if m and not line.startswith('    '):
-                if inv_name and inv_data:
-                    invariants.append(inv_data)
-                inv_name = m.group(1)
-                inv_data = {'name': inv_name}
-                continue
-            m = re.match(r'\s+statement:\s*"([^"]*)"', line)
-            if m and inv_name:
-                inv_data['statement'] = m.group(1)[:100]
-            m = re.match(r'\s+provenance:\s*"([^"]*)"', line)
-            if m and inv_name:
-                inv_data['provenance'] = m.group(1)
-    if inv_name and inv_data:
-        invariants.append(inv_data)
-
-    # Extract disallowed interpretations
-    disallowed = []
-    in_disallowed = False
-    current_dis = {}
-    for line in lines:
-        stripped = line.strip()
-        if stripped == 'disallowed:':
-            in_disallowed = True
-            continue
-        if in_disallowed:
-            if line and line[0] not in (' ', '\t', '') and ':' in stripped and not stripped.startswith('#') and not stripped.startswith('-'):
-                break
-            m = re.match(r'\s+- interpretation:\s*"([^"]*)"', line)
-            if m:
-                if current_dis:
-                    disallowed.append(current_dis)
-                current_dis = {'text': m.group(1)}
-                continue
-            m = re.match(r'\s+provenance:\s*"([^"]*)"', line)
-            if m and current_dis:
-                current_dis['provenance'] = m.group(1)
-    if current_dis and current_dis.get('text'):
-        disallowed.append(current_dis)
-
-    # Extract top-level sections and their constraint references
-    sections_map = {}
-    current_section = None
-    # Skip meta/scope/guarantees/invariants/disallowed/ownership/provenance/annotations/deferred
-    skip_keys = {'meta', 'scope', 'guarantees', 'invariants', 'disallowed',
-                 'ownership', 'provenance', 'provenance_map', 'provenance_summary',
-                 'annotations', 'deferred', 'negative_guarantees'}
-    for line in lines:
-        stripped = line.strip()
-        # Detect top-level keys
-        m = re.match(r'^([a-z_]+):', line)
-        if m:
-            key = m.group(1)
-            if key in skip_keys:
-                current_section = None
-            else:
-                current_section = key
-                sections_map[current_section] = set()
-            continue
-        # Collect constraint refs in current section
-        if current_section:
-            for ref in re.findall(r'C\d{3,4}', line):
-                sections_map[current_section].add(ref)
-
-    # Also extract negative_guarantees constraint refs (important guardrails)
-    neg_guarantees = []
-    in_neg = False
-    for line in lines:
-        stripped = line.strip()
-        if stripped == 'negative_guarantees:':
-            in_neg = True
-            continue
-        if in_neg:
-            if line and line[0] not in (' ', '\t', '') and ':' in stripped and not stripped.startswith('#') and not stripped.startswith('-'):
-                break
-            m = re.match(r'\s+- "([^"]*)"', line)
-            if m:
-                refs = re.findall(r'C\d{3,4}', m.group(1))
-                neg_guarantees.append({'text': m.group(1), 'refs': refs})
-
-    # Build signature markdown
-    out = []
-    # Header
-    acronym = meta_info.get('acronym', '')
-    name = meta_info.get('name', title)
-    version = meta_info.get('version', '?')
-    status = meta_info.get('status', '?')
-    scope_text = scope_info.get('coverage', scope_info.get('system', ''))
-    if scope_info.get('folio_count'):
-        scope_text += f", {scope_info['folio_count']} folios"
-
-    out.append(f"## {acronym} ({name})")
-    out.append(f"**Meta:** v{version}, {status}, {scope_text}")
-    out.append("")
-
-    # Guarantees
-    if guarantees:
-        out.append(f"### Guarantees ({len(guarantees)})")
-        for g in guarantees:
-            prov = g.get('provenance', '')
-            out.append(f"- {g['id']}: {g.get('statement', '')} [{prov}]")
-        out.append("")
-
-    # Invariants
-    if invariants:
-        out.append(f"### Invariants ({len(invariants)})")
-        for inv in invariants:
-            prov = inv.get('provenance', '')
-            out.append(f"- {inv['name']}: {inv.get('statement', '')} [{prov}]")
-        out.append("")
-
-    # Sections -> Constraints
-    if sections_map:
-        out.append("### Sections -> Constraints")
-        for section, refs in sections_map.items():
-            if refs:
-                # Sort constraint refs numerically
-                sorted_refs = sorted(refs, key=lambda x: int(re.search(r'\d+', x).group()))
-                out.append(f"- {section}: {', '.join(sorted_refs)}")
-            else:
-                out.append(f"- {section}: (no constraint refs)")
-        out.append("")
-
-    # Negative guarantees (if any)
-    if neg_guarantees:
-        out.append(f"### Negative Guarantees ({len(neg_guarantees)})")
-        for ng in neg_guarantees:
-            out.append(f"- {ng['text']}")
-        out.append("")
-
-    # Disallowed interpretations
-    if disallowed:
-        out.append(f"### Disallowed Interpretations ({len(disallowed)})")
-        for d in disallowed:
-            prov = d.get('provenance', '')
-            out.append(f'- "{d["text"]}" [{prov}]')
-        out.append("")
-
-    return '\n'.join(out)
-
-
-def _generate_all_contract_signatures():
-    """Generate compact signatures for all structural contracts.
-
-    Returns concatenated markdown replacing the full YAML contracts.
-    """
-    result = []
-    for filename, title in CONTRACTS:
-        filepath = CONTEXT_DIR / filename
-        if filepath.exists():
-            sig = _generate_contract_signature(filepath, title)
-            result.append(sig)
-            print(f"  Signature {filename}: {len(sig):,} bytes")
-        else:
-            print(f"WARNING: {filename} not found")
-    return '\n---\n\n'.join(result)
-
-
 # Cognitive operating stance for compact agent header
 COMPACT_STANCE = """
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints ({constraint_count} validated, with tier and scope metadata)
+- Tier 0-2 binding constraints ({constraint_count} validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -1070,8 +633,7 @@ This is a structurally closed system with:
 
 When reasoning:
 - Honor Tier discipline (Tier 0 frozen, Tier 1 falsified, Tier 2 binding)
-- Use constraint table (with tier/scope) as authoritative source
-- Use contract signatures to find which constraints cover a topic
+- Use contracts for structural questions
 - Use interpretive layer for cross-layer integration
 - Never infer token meanings beyond structural role
 - Dangerous contexts restrict grammar instead of raising alerts (C458)
@@ -1079,12 +641,9 @@ When reasoning:
 - Free variation envelope: ~57% of folio-level dynamics are genuine design freedom (C980, C1035)
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
-**Note:** This is a compact agent build. Full structural contracts have been replaced
-with contract signatures (topic heading + constraint IDs + key parameters). All
-{constraint_count} validated constraints are present as canonical one-line claims with tier
-and scope metadata. {fit_count} fits are complete. Tier 3-4 interpretive sections are
-condensed but all section headers and constraint references are preserved. Gloss/etymology
-tables are quarantined — do not use for structural answers.
+**Note:** This is a compact agent build. Sections marked *[condensed]* have
+full content in their source documents. All {constraint_count} constraints, {fit_count} fits,
+and 4 structural contracts are complete.
 
 ---
 
@@ -1139,9 +698,8 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all {constraint_count} validated constraints and {fit_count} explanatory fits loaded
-as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1312.
+embedded below. You have ALL {constraint_count} validated constraints and {fit_count} explanatory fits loaded
+as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -1202,7 +760,7 @@ def generate_content(header, include_contracts=True, apply_filters=True, compact
     # Metadata (counts parsed dynamically from INDEX.md and FIT_TABLE.txt)
     mode_label = "COMPACT" if compact else "FULL"
     sections.append(f"""**Generated:** {datetime.now().strftime('%Y-%m-%d %H:%M')}
-**Version:** FROZEN STATE ({constraint_count} validated constraints, {fit_count} fits) [{mode_label}]
+**Version:** FROZEN STATE ({constraint_count} constraints, {fit_count} fits) [{mode_label}]
 
 ---
 
@@ -1216,13 +774,9 @@ def generate_content(header, include_contracts=True, apply_filters=True, compact
         sections[-1] += f"{toc_num}. {title}\n"
         toc_num += 1
     if include_contracts:
-        if compact:
-            sections[-1] += f"{toc_num}. Structural Contract Signatures (6 contracts)\n"
+        for _, title in CONTRACTS:
+            sections[-1] += f"{toc_num}. {title}\n"
             toc_num += 1
-        else:
-            for _, title in CONTRACTS:
-                sections[-1] += f"{toc_num}. {title}\n"
-                toc_num += 1
 
     sections[-1] += "\n---\n"
 
@@ -1232,7 +786,7 @@ def generate_content(header, include_contracts=True, apply_filters=True, compact
         if filepath.exists():
             content = filepath.read_text(encoding='utf-8')
             if apply_filters:
-                content = filter_for_agent(content, filename, compact=compact)
+                content = filter_for_agent(content, filename)
             if compact:
                 content = compact_filter(content, filename)
             component_sizes[title] = len(content)
@@ -1242,22 +796,18 @@ def generate_content(header, include_contracts=True, apply_filters=True, compact
 
     # Contracts
     if include_contracts:
-        if compact:
-            # Compact mode: generate contract signatures instead of full YAML
-            signatures = _generate_all_contract_signatures()
-            component_sizes['Contract Signatures (all 6)'] = len(signatures)
-            sections.append(f"\n# Structural Contract Signatures\n\n{signatures}\n\n---\n")
-        else:
-            for filename, title in CONTRACTS:
-                filepath = CONTEXT_DIR / filename
-                if filepath.exists():
-                    content = filepath.read_text(encoding='utf-8')
-                    if apply_filters:
-                        content = filter_contract_for_agent(content, filename)
-                    component_sizes[title] = len(content)
-                    sections.append(f"\n# {title}\n\n```yaml\n{content}\n```\n\n---\n")
-                else:
-                    print(f"WARNING: {filename} not found")
+        for filename, title in CONTRACTS:
+            filepath = CONTEXT_DIR / filename
+            if filepath.exists():
+                content = filepath.read_text(encoding='utf-8')
+                if apply_filters:
+                    content = filter_contract_for_agent(content, filename)
+                if compact:
+                    content = compact_contract_filter(content, filename)
+                component_sizes[title] = len(content)
+                sections.append(f"\n# {title}\n\n```yaml\n{content}\n```\n\n---\n")
+            else:
+                print(f"WARNING: {filename} not found")
 
     return "".join(sections), component_sizes
 

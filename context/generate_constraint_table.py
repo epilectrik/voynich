@@ -46,6 +46,7 @@ def parse_index_constraints(index_path):
     # Pattern: | NUMBER | Description | Tier | Scope | Location |
     # Handle both bold (**074**) and plain (074) numbers
     # Also handle sub-numbered constraints like 384.a
+    # The number field must be ONLY digits (optionally .a/.b suffix) — reject ranges like 251-262
     pattern = r'\|\s*\*{0,2}(\d+(?:\.[a-z])?)\*{0,2}\s*\|\s*(.+?)\s*\|\s*(\d+)\s*\|\s*([^|]+?)\s*\|\s*(.+?)\s*\|'
 
     for match in re.finditer(pattern, content):
@@ -54,6 +55,10 @@ def parse_index_constraints(index_path):
         tier = match.group(3).strip()
         scope = match.group(4).strip()
         location = match.group(5).strip()
+
+        # Skip if tier is not a valid number 0-4 (catches garbled range-row mis-parses)
+        if tier not in ('0', '1', '2', '3', '4'):
+            continue
 
         # Clean up location - remove markdown links and Unicode
         location = re.sub(r'\[([^\]]+)\]\([^)]+\)', r'\1', location)
