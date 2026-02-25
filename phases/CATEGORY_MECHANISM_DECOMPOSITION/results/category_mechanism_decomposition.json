@@ -1,0 +1,499 @@
+{
+  "phase": "CATEGORY_MECHANISM_DECOMPOSITION",
+  "phase_number": 455,
+  "timestamp": "2026-02-24T19:47:26",
+  "bonferroni_threshold": 0.00625,
+  "tests": {
+    "T1": {
+      "test": "T1_transition_successor_role",
+      "chi2": 47.73527388163273,
+      "p": 1.0716463737323323e-09,
+      "cramers_v": 0.056857567719858844,
+      "trans_n": 2001,
+      "other_n": 12765,
+      "en_en_rate_transition": 0.4737903225806452,
+      "en_en_rate_all": 0.5174783974862529,
+      "successor_distribution": {
+        "TRANSITION": {
+          "AUXILIARY": 569,
+          "CORE_CONTROL": 86,
+          "ENERGY_OPERATOR": 806,
+          "FLOW_OPERATOR": 124,
+          "FREQUENT_OPERATOR": 416
+        },
+        "OTHER": {
+          "AUXILIARY": 2930,
+          "CORE_CONTROL": 543,
+          "ENERGY_OPERATOR": 6070,
+          "FLOW_OPERATOR": 870,
+          "FREQUENT_OPERATOR": 2352
+        }
+      },
+      "verdict": "PASS"
+    },
+    "T2": {
+      "test": "T2_transition_persistence",
+      "n_qualifying_lines": 2406,
+      "per_category": {
+        "CONTAINMENT": {
+          "obs_mean_run": 1.0649854510184287,
+          "null_mean_run": 1.0701609475405842,
+          "null_std": 0.007174643155500392,
+          "z": -0.7213594334915157,
+          "p": 0.782
+        },
+        "FLOW": {
+          "obs_mean_run": 1.2590513612124614,
+          "null_mean_run": 1.2308575268943063,
+          "null_std": 0.0071365420241774015,
+          "z": 3.9506296218307386,
+          "p": 0.001
+        },
+        "MARKING": {
+          "obs_mean_run": 1.145140664961637,
+          "null_mean_run": 1.135411811288504,
+          "null_std": 0.00797610052817612,
+          "z": 1.2197506336291735,
+          "p": 0.128
+        },
+        "MONITORING": {
+          "obs_mean_run": 1.0138121546961325,
+          "null_mean_run": 1.0190839294355791,
+          "null_std": 0.006504038021258425,
+          "z": -0.8105387333554701,
+          "p": 0.847
+        },
+        "OPERATION": {
+          "obs_mean_run": 1.1522388059701492,
+          "null_mean_run": 1.1650796450249776,
+          "null_std": 0.006599897711348316,
+          "z": -1.9456118286119874,
+          "p": 0.981
+        },
+        "STAGING": {
+          "obs_mean_run": 1.1299542682926829,
+          "null_mean_run": 1.1428419569919006,
+          "null_std": 0.006329897903859858,
+          "z": -2.036002617255338,
+          "p": 0.986
+        },
+        "THERMAL": {
+          "obs_mean_run": 1.3564307078763709,
+          "null_mean_run": 1.3095384220384485,
+          "null_std": 0.007359684724238239,
+          "z": 6.37150742116551,
+          "p": 0.0
+        },
+        "TRANSITION": {
+          "obs_mean_run": 1.1636794048021644,
+          "null_mean_run": 1.1731353243555136,
+          "null_std": 0.006409723491254882,
+          "z": -1.4752460954439666,
+          "p": 0.932
+        }
+      },
+      "transition_z": -1.4752460954439666,
+      "transition_p": 0.932,
+      "verdict": "FAIL"
+    },
+    "T3": {
+      "test": "T3_forbidden_category_structure",
+      "n_forbidden": 17,
+      "n_classified": 17,
+      "n_same_category": 2,
+      "n_cross_category": 15,
+      "same_category_rate": 0.11764705882352941,
+      "baseline_same_rate": 0.190501549186677,
+      "p_binom": 0.7560904778378612,
+      "forbidden_pairs": [
+        [
+          "shey",
+          "aiin",
+          "MONITORING",
+          "TRANSITION"
+        ],
+        [
+          "shey",
+          "al",
+          "MONITORING",
+          "FLOW"
+        ],
+        [
+          "shey",
+          "c",
+          "MONITORING",
+          "MARKING"
+        ],
+        [
+          "chol",
+          "r",
+          "MARKING",
+          "FLOW"
+        ],
+        [
+          "chedy",
+          "ee",
+          "MARKING",
+          "THERMAL"
+        ],
+        [
+          "dy",
+          "aiin",
+          "CONTAINMENT",
+          "TRANSITION"
+        ],
+        [
+          "dy",
+          "chey",
+          "CONTAINMENT",
+          "MARKING"
+        ],
+        [
+          "l",
+          "chol",
+          "STAGING",
+          "MARKING"
+        ],
+        [
+          "or",
+          "dal",
+          "FLOW",
+          "MARKING"
+        ],
+        [
+          "chey",
+          "chedy",
+          "MARKING",
+          "MARKING"
+        ],
+        [
+          "chey",
+          "shedy",
+          "MARKING",
+          "MARKING"
+        ],
+        [
+          "ar",
+          "dal",
+          "FLOW",
+          "MARKING"
+        ],
+        [
+          "c",
+          "ee",
+          "MARKING",
+          "THERMAL"
+        ],
+        [
+          "he",
+          "t",
+          "MONITORING",
+          "FLOW"
+        ],
+        [
+          "he",
+          "or",
+          "MONITORING",
+          "FLOW"
+        ],
+        [
+          "shedy",
+          "aiin",
+          "MARKING",
+          "TRANSITION"
+        ],
+        [
+          "shedy",
+          "o",
+          "MARKING",
+          "OPERATION"
+        ]
+      ],
+      "verdict": "FAIL"
+    },
+    "T4": {
+      "test": "T4_category_transition_matrix",
+      "chi2": 526.0781457660286,
+      "p": 3.751351554332677e-81,
+      "cramers_v": 0.060318842356337325,
+      "total_bigrams": 20656,
+      "transition_matrix": [
+        [
+          67.0,
+          197.0,
+          98.0,
+          11.0,
+          129.0,
+          125.0,
+          217.0,
+          110.0
+        ],
+        [
+          192.0,
+          922.0,
+          270.0,
+          71.0,
+          629.0,
+          417.0,
+          727.0,
+          779.0
+        ],
+        [
+          84.0,
+          297.0,
+          227.0,
+          29.0,
+          252.0,
+          174.0,
+          292.0,
+          206.0
+        ],
+        [
+          19.0,
+          64.0,
+          28.0,
+          5.0,
+          47.0,
+          48.0,
+          94.0,
+          38.0
+        ],
+        [
+          160.0,
+          604.0,
+          237.0,
+          53.0,
+          459.0,
+          358.0,
+          938.0,
+          384.0
+        ],
+        [
+          153.0,
+          474.0,
+          166.0,
+          34.0,
+          453.0,
+          341.0,
+          525.0,
+          471.0
+        ],
+        [
+          233.0,
+          1001.0,
+          291.0,
+          86.0,
+          785.0,
+          612.0,
+          1430.0,
+          688.0
+        ],
+        [
+          137.0,
+          525.0,
+          211.0,
+          36.0,
+          367.0,
+          401.0,
+          694.0,
+          484.0
+        ]
+      ],
+      "top_asymmetries": [
+        [
+          "CONTAINMENT",
+          "MONITORING",
+          11,
+          19,
+          0.42105263157894735
+        ],
+        [
+          "FLOW",
+          "TRANSITION",
+          779,
+          525,
+          0.32605905006418484
+        ],
+        [
+          "MONITORING",
+          "STAGING",
+          48,
+          34,
+          0.2916666666666667
+        ],
+        [
+          "FLOW",
+          "THERMAL",
+          727,
+          1001,
+          0.27372627372627373
+        ],
+        [
+          "OPERATION",
+          "STAGING",
+          358,
+          453,
+          0.2097130242825607
+        ],
+        [
+          "CONTAINMENT",
+          "TRANSITION",
+          110,
+          137,
+          0.19708029197080293
+        ],
+        [
+          "CONTAINMENT",
+          "OPERATION",
+          129,
+          160,
+          0.19375
+        ],
+        [
+          "CONTAINMENT",
+          "STAGING",
+          125,
+          153,
+          0.1830065359477124
+        ],
+        [
+          "OPERATION",
+          "THERMAL",
+          938,
+          785,
+          0.1631130063965885
+        ],
+        [
+          "STAGING",
+          "TRANSITION",
+          471,
+          401,
+          0.14861995753715498
+        ]
+      ],
+      "verdict": "PASS"
+    },
+    "T5": {
+      "test": "T5_paragraph_header_body",
+      "chi2": 127.95439033350526,
+      "p": 1.681036609369832e-24,
+      "cramers_v": 0.07458547105896353,
+      "n_headers": 498,
+      "n_body": 22503,
+      "header_profile": {
+        "CONTAINMENT": 20,
+        "FLOW": 101,
+        "MARKING": 91,
+        "MONITORING": 8,
+        "OPERATION": 79,
+        "STAGING": 92,
+        "THERMAL": 55,
+        "TRANSITION": 52
+      },
+      "body_profile": {
+        "CONTAINMENT": 1073,
+        "FLOW": 4371,
+        "MARKING": 1687,
+        "MONITORING": 357,
+        "OPERATION": 3382,
+        "STAGING": 2861,
+        "THERMAL": 5393,
+        "TRANSITION": 3379
+      },
+      "verdict": "PASS"
+    },
+    "T6": {
+      "test": "T6_paragraph_independence",
+      "n_qualifying_paragraphs": 484,
+      "n_folios_multi": 74,
+      "obs_within_jsd": 0.10858821350224893,
+      "obs_across_jsd": 0.12231808635821108,
+      "null_within_mean": 0.12173817467337666,
+      "null_within_std": 0.002674330099120282,
+      "z": -4.917104726695259,
+      "p": 0.0,
+      "direction": "COHERENT",
+      "verdict": "PASS"
+    },
+    "T7": {
+      "test": "T7_category_axm_prediction",
+      "n_folios": 82,
+      "axm_self_rate_mean": 0.6622020169197084,
+      "axm_self_rate_std": 0.12766514743377885,
+      "correlations": {
+        "CONTAINMENT": {
+          "rho": -0.16661859224535613,
+          "p": 0.13462440867326225
+        },
+        "FLOW": {
+          "rho": -0.15884661374772863,
+          "p": 0.1540408725105117
+        },
+        "MARKING": {
+          "rho": -0.24862982206939807,
+          "p": 0.024298948648858273
+        },
+        "MONITORING": {
+          "rho": 0.1573283589027618,
+          "p": 0.1580661958128342
+        },
+        "OPERATION": {
+          "rho": 0.024279533213335334,
+          "p": 0.8285846676886242
+        },
+        "STAGING": {
+          "rho": 0.09709583398024585,
+          "p": 0.3855065438325932
+        },
+        "THERMAL": {
+          "rho": 0.5195062525270419,
+          "p": 5.698099501198958e-07
+        },
+        "TRANSITION": {
+          "rho": -0.5185211434491034,
+          "p": 6.036744322090488e-07
+        }
+      },
+      "best_category": "THERMAL",
+      "best_rho": 0.5195062525270419,
+      "best_p": 5.698099501198958e-07,
+      "n_bonferroni_significant": 2,
+      "verdict": "PASS"
+    },
+    "T8": {
+      "test": "T8_paragraph_category_mode",
+      "chi2": 300.3683113532508,
+      "p": 5.047485875570848e-61,
+      "cramers_v": 0.11438012648524919,
+      "n_mode_a": 175,
+      "n_mode_b": 309,
+      "mode_a_profile": {
+        "CONTAINMENT": 347,
+        "FLOW": 1387,
+        "MARKING": 577,
+        "MONITORING": 160,
+        "OPERATION": 1318,
+        "STAGING": 925,
+        "THERMAL": 2278,
+        "TRANSITION": 913
+      },
+      "mode_b_profile": {
+        "CONTAINMENT": 745,
+        "FLOW": 3075,
+        "MARKING": 1198,
+        "MONITORING": 205,
+        "OPERATION": 2133,
+        "STAGING": 2021,
+        "THERMAL": 3166,
+        "TRANSITION": 2511
+      },
+      "verdict": "PASS"
+    }
+  },
+  "summary": {
+    "n_pass": 6,
+    "n_weak": 0,
+    "n_fail": 2,
+    "overall_verdict": "CATEGORY_MECHANISM_PERVASIVE"
+  }
+}

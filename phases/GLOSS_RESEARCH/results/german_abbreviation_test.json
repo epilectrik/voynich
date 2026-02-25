@@ -1,0 +1,275 @@
+{
+  "total_verbs_compiled": 120,
+  "letter_coverage": {
+    "covered": 21,
+    "total": 26,
+    "rate": 0.8076923076923077,
+    "covered_letters": [
+      "a",
+      "b",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "j",
+      "k",
+      "l",
+      "m",
+      "n",
+      "p",
+      "r",
+      "s",
+      "t",
+      "u",
+      "v",
+      "w",
+      "z"
+    ],
+    "uncovered_letters": [
+      "i",
+      "o",
+      "q",
+      "x",
+      "y"
+    ]
+  },
+  "naive_probability": {
+    "p_hypergeometric": 0.04565217391304348,
+    "p_binomial": 0.0954345026152276,
+    "significant_at_05": true
+  },
+  "forward_test": {
+    "k": {
+      "matching": 1,
+      "total": 5,
+      "non_matching": 4,
+      "ratio": 0.2
+    },
+    "e": {
+      "matching": 1,
+      "total": 13,
+      "non_matching": 12,
+      "ratio": 0.07692307692307693
+    },
+    "h": {
+      "matching": 1,
+      "total": 3,
+      "non_matching": 2,
+      "ratio": 0.3333333333333333
+    },
+    "d": {
+      "matching": 1,
+      "total": 8,
+      "non_matching": 7,
+      "ratio": 0.125
+    },
+    "t": {
+      "matching": 1,
+      "total": 4,
+      "non_matching": 3,
+      "ratio": 0.25
+    },
+    "s": {
+      "matching": 1,
+      "total": 10,
+      "non_matching": 9,
+      "ratio": 0.1
+    },
+    "g": {
+      "matching": 1,
+      "total": 3,
+      "non_matching": 2,
+      "ratio": 0.3333333333333333
+    },
+    "m": {
+      "matching": 1,
+      "total": 5,
+      "non_matching": 4,
+      "ratio": 0.2
+    },
+    "r": {
+      "matching": 1,
+      "total": 5,
+      "non_matching": 4,
+      "ratio": 0.2
+    },
+    "l": {
+      "matching": 2,
+      "total": 7,
+      "non_matching": 5,
+      "ratio": 0.2857142857142857
+    },
+    "p": {
+      "matching": 0,
+      "total": 3,
+      "non_matching": 3,
+      "ratio": 0.0
+    }
+  },
+  "reverse_test": {
+    "HEAT (heating/boiling)": {
+      "claimed": "k",
+      "matching": 1,
+      "total": 19,
+      "alternative_letters": [
+        "a",
+        "b",
+        "c",
+        "d",
+        "e",
+        "g",
+        "h",
+        "r",
+        "s",
+        "w"
+      ],
+      "n_alternatives": 10
+    },
+    "COOL (cooling)": {
+      "claimed": "e",
+      "matching": 1,
+      "total": 4,
+      "alternative_letters": [
+        "a",
+        "k",
+        "l"
+      ],
+      "n_alternatives": 3
+    },
+    "HOLD (maintaining)": {
+      "claimed": "h",
+      "matching": 1,
+      "total": 5,
+      "alternative_letters": [
+        "a",
+        "b",
+        "e",
+        "l"
+      ],
+      "n_alternatives": 4
+    },
+    "SEAL (closing/sealing)": {
+      "claimed": "d",
+      "matching": 1,
+      "total": 9,
+      "alternative_letters": [
+        "a",
+        "b",
+        "f",
+        "l",
+        "v",
+        "z"
+      ],
+      "n_alternatives": 6
+    },
+    "DRIVE/TRANSFER": {
+      "claimed": "t",
+      "matching": 1,
+      "total": 5,
+      "alternative_letters": [
+        "a",
+        "g",
+        "s",
+        "u"
+      ],
+      "n_alternatives": 4
+    },
+    "SEPARATE (break/separate)": {
+      "claimed": "s",
+      "matching": 1,
+      "total": 8,
+      "alternative_letters": [
+        "a",
+        "d",
+        "n",
+        "t",
+        "z"
+      ],
+      "n_alternatives": 5
+    },
+    "COMPLETE (done/finished)": {
+      "claimed": "g",
+      "matching": 1,
+      "total": 5,
+      "alternative_letters": [
+        "a",
+        "b",
+        "f",
+        "v"
+      ],
+      "n_alternatives": 4
+    },
+    "MEASURE": {
+      "claimed": "m",
+      "matching": 1,
+      "total": 7,
+      "alternative_letters": [
+        "a",
+        "j",
+        "p",
+        "w"
+      ],
+      "n_alternatives": 4
+    },
+    "STIR": {
+      "claimed": "r",
+      "matching": 1,
+      "total": 8,
+      "alternative_letters": [
+        "a",
+        "d",
+        "e",
+        "s",
+        "u",
+        "v"
+      ],
+      "n_alternatives": 6
+    },
+    "ALLOW (let/continue)": {
+      "claimed": "l",
+      "matching": 1,
+      "total": 6,
+      "alternative_letters": [
+        "a",
+        "e",
+        "g",
+        "s",
+        "z"
+      ],
+      "n_alternatives": 5
+    },
+    "PAUSE (rest/wait)": {
+      "claimed": "p",
+      "matching": 1,
+      "total": 6,
+      "alternative_letters": [
+        "a",
+        "i",
+        "r",
+        "w"
+      ],
+      "n_alternatives": 4
+    }
+  },
+  "permutation_test": {
+    "total_permutations": 39916800,
+    "valid_permutations": 22,
+    "p_value": 5.511463844797178e-07
+  },
+  "reverse_combined_p": 4.122861265718409e-09,
+  "forward_wins": 1,
+  "strong_mappings": [
+    "k_kochen",
+    "r_rühren",
+    "m_messen"
+  ],
+  "weak_mappings": [
+    "e_erkalten",
+    "g_gar",
+    "p_pause",
+    "qo_coquo"
+  ],
+  "verdict": "INSUFFICIENT_TO_CONFIRM_OR_REJECT"
+}

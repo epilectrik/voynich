@@ -1,0 +1,999 @@
+{
+  "phase_name": "PREFIX_CATEGORY_ANATOMY",
+  "phase_number": 458,
+  "n_tokens": 23086,
+  "bonferroni_p": 0.00625,
+  "tests": [
+    {
+      "test": "T1_full_contingency",
+      "n_qualifying": 32,
+      "n_excluded": 4,
+      "n_tokens": 23033,
+      "chi2": 15597.783160129517,
+      "p": 0.0,
+      "dof": 217,
+      "V": 0.3110334985826126,
+      "prefix_profiles": {
+        "BARE": {
+          "n": 3854,
+          "dominant": "FLOW",
+          "purity": 0.294,
+          "profile": {
+            "CONTAINMENT": 0.0374,
+            "FLOW": 0.294,
+            "MARKING": 0.1053,
+            "MONITORING": 0.013,
+            "OPERATION": 0.1105,
+            "STAGING": 0.2065,
+            "THERMAL": 0.0407,
+            "TRANSITION": 0.1925
+          }
+        },
+        "al": {
+          "n": 173,
+          "dominant": "THERMAL",
+          "purity": 0.277,
+          "profile": {
+            "CONTAINMENT": 0.052,
+            "FLOW": 0.104,
+            "MARKING": 0.0809,
+            "MONITORING": 0.0058,
+            "OPERATION": 0.1445,
+            "STAGING": 0.1214,
+            "THERMAL": 0.2775,
+            "TRANSITION": 0.2139
+          }
+        },
+        "ar": {
+          "n": 136,
+          "dominant": "TRANSITION",
+          "purity": 0.382,
+          "profile": {
+            "CONTAINMENT": 0.0294,
+            "FLOW": 0.25,
+            "MARKING": 0.0441,
+            "MONITORING": 0.0,
+            "OPERATION": 0.1544,
+            "STAGING": 0.1103,
+            "THERMAL": 0.0294,
+            "TRANSITION": 0.3824
+          }
+        },
+        "ch": {
+          "n": 3492,
+          "dominant": "OPERATION",
+          "purity": 0.259,
+          "profile": {
+            "CONTAINMENT": 0.0956,
+            "FLOW": 0.1183,
+            "MARKING": 0.0908,
+            "MONITORING": 0.0295,
+            "OPERATION": 0.2589,
+            "STAGING": 0.0599,
+            "THERMAL": 0.2093,
+            "TRANSITION": 0.1377
+          }
+        },
+        "ct": {
+          "n": 60,
+          "dominant": "MONITORING",
+          "purity": 0.9,
+          "profile": {
+            "CONTAINMENT": 0.0,
+            "FLOW": 0.0167,
+            "MARKING": 0.05,
+            "MONITORING": 0.9,
+            "OPERATION": 0.0,
+            "STAGING": 0.0,
+            "THERMAL": 0.0167,
+            "TRANSITION": 0.0167
+          }
+        },
+        "da": {
+          "n": 1083,
+          "dominant": "STAGING",
+          "purity": 0.563,
+          "profile": {
+            "CONTAINMENT": 0.0018,
+            "FLOW": 0.2216,
+            "MARKING": 0.12,
+            "MONITORING": 0.0055,
+            "OPERATION": 0.0083,
+            "STAGING": 0.5633,
+            "THERMAL": 0.0037,
+            "TRANSITION": 0.0757
+          }
+        },
+        "dch": {
+          "n": 104,
+          "dominant": "OPERATION",
+          "purity": 0.308,
+          "profile": {
+            "CONTAINMENT": 0.0962,
+            "FLOW": 0.0865,
+            "MARKING": 0.0769,
+            "MONITORING": 0.0,
+            "OPERATION": 0.3077,
+            "STAGING": 0.0385,
+            "THERMAL": 0.2212,
+            "TRANSITION": 0.1731
+          }
+        },
+        "do": {
+          "n": 126,
+          "dominant": "STAGING",
+          "purity": 0.571,
+          "profile": {
+            "CONTAINMENT": 0.0317,
+            "FLOW": 0.2302,
+            "MARKING": 0.0794,
+            "MONITORING": 0.0159,
+            "OPERATION": 0.0238,
+            "STAGING": 0.5714,
+            "THERMAL": 0.0397,
+            "TRANSITION": 0.0079
+          }
+        },
+        "fch": {
+          "n": 57,
+          "dominant": "OPERATION",
+          "purity": 0.351,
+          "profile": {
+            "CONTAINMENT": 0.1228,
+            "FLOW": 0.1228,
+            "MARKING": 0.0702,
+            "MONITORING": 0.0,
+            "OPERATION": 0.3509,
+            "STAGING": 0.0351,
+            "THERMAL": 0.1754,
+            "TRANSITION": 0.1228
+          }
+        },
+        "ka": {
+          "n": 238,
+          "dominant": "STAGING",
+          "purity": 0.429,
+          "profile": {
+            "CONTAINMENT": 0.0042,
+            "FLOW": 0.2647,
+            "MARKING": 0.2227,
+            "MONITORING": 0.0,
+            "OPERATION": 0.0126,
+            "STAGING": 0.4286,
+            "THERMAL": 0.0,
+            "TRANSITION": 0.0672
+          }
+        },
+        "kch": {
+          "n": 97,
+          "dominant": "OPERATION",
+          "purity": 0.289,
+          "profile": {
+            "CONTAINMENT": 0.2268,
+            "FLOW": 0.0309,
+            "MARKING": 0.0722,
+            "MONITORING": 0.0,
+            "OPERATION": 0.2887,
+            "STAGING": 0.0619,
+            "THERMAL": 0.0825,
+            "TRANSITION": 0.2371
+          }
+        },
+        "ke": {
+          "n": 259,
+          "dominant": "OPERATION",
+          "purity": 0.313,
+          "profile": {
+            "CONTAINMENT": 0.2008,
+            "FLOW": 0.0618,
+            "MARKING": 0.0618,
+            "MONITORING": 0.0154,
+            "OPERATION": 0.3127,
+            "STAGING": 0.0463,
+            "THERMAL": 0.1081,
+            "TRANSITION": 0.1931
+          }
+        },
+        "ko": {
+          "n": 48,
+          "dominant": "STAGING",
+          "purity": 0.354,
+          "profile": {
+            "CONTAINMENT": 0.0625,
+            "FLOW": 0.3333,
+            "MARKING": 0.1042,
+            "MONITORING": 0.0,
+            "OPERATION": 0.0625,
+            "STAGING": 0.3542,
+            "THERMAL": 0.0,
+            "TRANSITION": 0.0833
+          }
+        },
+        "lch": {
+          "n": 315,
+          "dominant": "OPERATION",
+          "purity": 0.4,
+          "profile": {
+            "CONTAINMENT": 0.0698,
+            "FLOW": 0.0889,
+            "MARKING": 0.0381,
+            "MONITORING": 0.0095,
+            "OPERATION": 0.4,
+            "STAGING": 0.0317,
+            "THERMAL": 0.1556,
+            "TRANSITION": 0.2063
+          }
+        },
+        "lk": {
+          "n": 438,
+          "dominant": "THERMAL",
+          "purity": 0.313,
+          "profile": {
+            "CONTAINMENT": 0.0137,
+            "FLOW": 0.1941,
+            "MARKING": 0.0046,
+            "MONITORING": 0.0205,
+            "OPERATION": 0.153,
+            "STAGING": 0.0411,
+            "THERMAL": 0.3128,
+            "TRANSITION": 0.2603
+          }
+        },
+        "lsh": {
+          "n": 116,
+          "dominant": "OPERATION",
+          "purity": 0.397,
+          "profile": {
+            "CONTAINMENT": 0.0345,
+            "FLOW": 0.0431,
+            "MARKING": 0.069,
+            "MONITORING": 0.0086,
+            "OPERATION": 0.3966,
+            "STAGING": 0.0345,
+            "THERMAL": 0.1983,
+            "TRANSITION": 0.2155
+          }
+        },
+        "ok": {
+          "n": 1476,
+          "dominant": "FLOW",
+          "purity": 0.276,
+          "profile": {
+            "CONTAINMENT": 0.0169,
+            "FLOW": 0.2764,
+            "MARKING": 0.0305,
+            "MONITORING": 0.0122,
+            "OPERATION": 0.1247,
+            "STAGING": 0.0278,
+            "THERMAL": 0.2466,
+            "TRANSITION": 0.2649
+          }
+        },
+        "ol": {
+          "n": 875,
+          "dominant": "THERMAL",
+          "purity": 0.422,
+          "profile": {
+            "CONTAINMENT": 0.0457,
+            "FLOW": 0.1314,
+            "MARKING": 0.0491,
+            "MONITORING": 0.0057,
+            "OPERATION": 0.1006,
+            "STAGING": 0.0663,
+            "THERMAL": 0.4217,
+            "TRANSITION": 0.1794
+          }
+        },
+        "or": {
+          "n": 173,
+          "dominant": "TRANSITION",
+          "purity": 0.393,
+          "profile": {
+            "CONTAINMENT": 0.0231,
+            "FLOW": 0.2948,
+            "MARKING": 0.0231,
+            "MONITORING": 0.0116,
+            "OPERATION": 0.0925,
+            "STAGING": 0.104,
+            "THERMAL": 0.0578,
+            "TRANSITION": 0.3931
+          }
+        },
+        "ot": {
+          "n": 1448,
+          "dominant": "FLOW",
+          "purity": 0.279,
+          "profile": {
+            "CONTAINMENT": 0.0242,
+            "FLOW": 0.279,
+            "MARKING": 0.0214,
+            "MONITORING": 0.0048,
+            "OPERATION": 0.1733,
+            "STAGING": 0.0428,
+            "THERMAL": 0.2023,
+            "TRANSITION": 0.2521
+          }
+        },
+        "pch": {
+          "n": 245,
+          "dominant": "OPERATION",
+          "purity": 0.273,
+          "profile": {
+            "CONTAINMENT": 0.0857,
+            "FLOW": 0.1796,
+            "MARKING": 0.1714,
+            "MONITORING": 0.0,
+            "OPERATION": 0.2735,
+            "STAGING": 0.0286,
+            "THERMAL": 0.1143,
+            "TRANSITION": 0.1469
+          }
+        },
+        "po": {
+          "n": 136,
+          "dominant": "STAGING",
+          "purity": 0.419,
+          "profile": {
+            "CONTAINMENT": 0.0147,
+            "FLOW": 0.1912,
+            "MARKING": 0.1397,
+            "MONITORING": 0.0221,
+            "OPERATION": 0.1103,
+            "STAGING": 0.4191,
+            "THERMAL": 0.0588,
+            "TRANSITION": 0.0441
+          }
+        },
+        "qo": {
+          "n": 4069,
+          "dominant": "THERMAL",
+          "purity": 0.59,
+          "profile": {
+            "CONTAINMENT": 0.015,
+            "FLOW": 0.201,
+            "MARKING": 0.0727,
+            "MONITORING": 0.0081,
+            "OPERATION": 0.0315,
+            "STAGING": 0.0668,
+            "THERMAL": 0.5901,
+            "TRANSITION": 0.0147
+          }
+        },
+        "rch": {
+          "n": 41,
+          "dominant": "OPERATION",
+          "purity": 0.366,
+          "profile": {
+            "CONTAINMENT": 0.0,
+            "FLOW": 0.122,
+            "MARKING": 0.0244,
+            "MONITORING": 0.0,
+            "OPERATION": 0.3659,
+            "STAGING": 0.0732,
+            "THERMAL": 0.1463,
+            "TRANSITION": 0.2683
+          }
+        },
+        "sa": {
+          "n": 329,
+          "dominant": "STAGING",
+          "purity": 0.523,
+          "profile": {
+            "CONTAINMENT": 0.0,
+            "FLOW": 0.2219,
+            "MARKING": 0.1945,
+            "MONITORING": 0.003,
+            "OPERATION": 0.0122,
+            "STAGING": 0.5228,
+            "THERMAL": 0.0091,
+            "TRANSITION": 0.0365
+          }
+        },
+        "sh": {
+          "n": 2329,
+          "dominant": "OPERATION",
+          "purity": 0.308,
+          "profile": {
+            "CONTAINMENT": 0.0674,
+            "FLOW": 0.085,
+            "MARKING": 0.0571,
+            "MONITORING": 0.0215,
+            "OPERATION": 0.3083,
+            "STAGING": 0.0472,
+            "THERMAL": 0.2404,
+            "TRANSITION": 0.173
+          }
+        },
+        "so": {
+          "n": 189,
+          "dominant": "STAGING",
+          "purity": 0.45,
+          "profile": {
+            "CONTAINMENT": 0.0053,
+            "FLOW": 0.2487,
+            "MARKING": 0.0794,
+            "MONITORING": 0.0212,
+            "OPERATION": 0.0794,
+            "STAGING": 0.4497,
+            "THERMAL": 0.0899,
+            "TRANSITION": 0.0265
+          }
+        },
+        "ta": {
+          "n": 237,
+          "dominant": "STAGING",
+          "purity": 0.46,
+          "profile": {
+            "CONTAINMENT": 0.0,
+            "FLOW": 0.3165,
+            "MARKING": 0.135,
+            "MONITORING": 0.0042,
+            "OPERATION": 0.0,
+            "STAGING": 0.4599,
+            "THERMAL": 0.0,
+            "TRANSITION": 0.0844
+          }
+        },
+        "tch": {
+          "n": 172,
+          "dominant": "OPERATION",
+          "purity": 0.326,
+          "profile": {
+            "CONTAINMENT": 0.1744,
+            "FLOW": 0.1395,
+            "MARKING": 0.064,
+            "MONITORING": 0.0058,
+            "OPERATION": 0.3256,
+            "STAGING": 0.0233,
+            "THERMAL": 0.0523,
+            "TRANSITION": 0.2151
+          }
+        },
+        "te": {
+          "n": 289,
+          "dominant": "CONTAINMENT",
+          "purity": 0.263,
+          "profile": {
+            "CONTAINMENT": 0.263,
+            "FLOW": 0.0588,
+            "MARKING": 0.0865,
+            "MONITORING": 0.0,
+            "OPERATION": 0.2249,
+            "STAGING": 0.0519,
+            "THERMAL": 0.0796,
+            "TRANSITION": 0.2353
+          }
+        },
+        "to": {
+          "n": 115,
+          "dominant": "STAGING",
+          "purity": 0.339,
+          "profile": {
+            "CONTAINMENT": 0.087,
+            "FLOW": 0.1826,
+            "MARKING": 0.1565,
+            "MONITORING": 0.0435,
+            "OPERATION": 0.0174,
+            "STAGING": 0.3391,
+            "THERMAL": 0.113,
+            "TRANSITION": 0.0609
+          }
+        },
+        "yk": {
+          "n": 314,
+          "dominant": "THERMAL",
+          "purity": 0.341,
+          "profile": {
+            "CONTAINMENT": 0.0223,
+            "FLOW": 0.1879,
+            "MARKING": 0.035,
+            "MONITORING": 0.0064,
+            "OPERATION": 0.1465,
+            "STAGING": 0.0414,
+            "THERMAL": 0.3408,
+            "TRANSITION": 0.2197
+          }
+        }
+      },
+      "qualifying_prefixes": [
+        "BARE",
+        "al",
+        "ar",
+        "ch",
+        "ct",
+        "da",
+        "dch",
+        "do",
+        "fch",
+        "ka",
+        "kch",
+        "ke",
+        "ko",
+        "lch",
+        "lk",
+        "lsh",
+        "ok",
+        "ol",
+        "or",
+        "ot",
+        "pch",
+        "po",
+        "qo",
+        "rch",
+        "sa",
+        "sh",
+        "so",
+        "ta",
+        "tch",
+        "te",
+        "to",
+        "yk"
+      ],
+      "verdict": "PASS"
+    },
+    {
+      "test": "T2_ok_ot_divergence",
+      "n_ok": 1476,
+      "n_ot": 1448,
+      "chi2": 32.00815617623268,
+      "p": 4.047474299286689e-05,
+      "dof": 7,
+      "V": 0.10462648727094333,
+      "JSD": 0.007965106094724408,
+      "enrichment": {
+        "CONTAINMENT": {
+          "ok": 0.0169,
+          "ot": 0.0242,
+          "ratio": 0.7
+        },
+        "FLOW": {
+          "ok": 0.2764,
+          "ot": 0.279,
+          "ratio": 0.99
+        },
+        "MARKING": {
+          "ok": 0.0305,
+          "ot": 0.0214,
+          "ratio": 1.42
+        },
+        "MONITORING": {
+          "ok": 0.0122,
+          "ot": 0.0048,
+          "ratio": 2.52
+        },
+        "OPERATION": {
+          "ok": 0.1247,
+          "ot": 0.1733,
+          "ratio": 0.72
+        },
+        "STAGING": {
+          "ok": 0.0278,
+          "ot": 0.0428,
+          "ratio": 0.65
+        },
+        "THERMAL": {
+          "ok": 0.2466,
+          "ot": 0.2023,
+          "ratio": 1.22
+        },
+        "TRANSITION": {
+          "ok": 0.2649,
+          "ot": 0.2521,
+          "ratio": 1.05
+        }
+      },
+      "verdict": "PASS"
+    },
+    {
+      "test": "T3_ch_sh_control",
+      "n_ch": 3492,
+      "n_sh": 2329,
+      "chi2": 85.70260579207476,
+      "p": 9.412870694820932e-16,
+      "dof": 7,
+      "V": 0.12133838599343277,
+      "JSD": 0.011308734816314295,
+      "c1268_reference": {
+        "V": 0.021,
+        "p": 0.48,
+        "scope": "Currier A"
+      },
+      "profiles": {
+        "CONTAINMENT": {
+          "ch": 0.0956,
+          "sh": 0.0674
+        },
+        "FLOW": {
+          "ch": 0.1183,
+          "sh": 0.085
+        },
+        "MARKING": {
+          "ch": 0.0908,
+          "sh": 0.0571
+        },
+        "MONITORING": {
+          "ch": 0.0295,
+          "sh": 0.0215
+        },
+        "OPERATION": {
+          "ch": 0.2589,
+          "sh": 0.3083
+        },
+        "STAGING": {
+          "ch": 0.0599,
+          "sh": 0.0472
+        },
+        "THERMAL": {
+          "ch": 0.2093,
+          "sh": 0.2404
+        },
+        "TRANSITION": {
+          "ch": 0.1377,
+          "sh": 0.173
+        }
+      },
+      "verdict": "CONTROL_VIOLATED"
+    },
+    {
+      "test": "T4_qo_purity",
+      "n_qo": 4069,
+      "qo_thermal_rate": 0.5900712705824527,
+      "corpus_thermal_rate": 0.23607381096768604,
+      "ratio": 2.4995202481956884,
+      "binomial_p": 0.0,
+      "qo_rank": 1,
+      "n_ranked": 32,
+      "qo_profile": {
+        "CONTAINMENT": 0.015,
+        "FLOW": 0.201,
+        "MARKING": 0.0727,
+        "MONITORING": 0.0081,
+        "OPERATION": 0.0315,
+        "STAGING": 0.0668,
+        "THERMAL": 0.5901,
+        "TRANSITION": 0.0147
+      },
+      "verdict": "PASS"
+    },
+    {
+      "test": "T5_da_sa",
+      "n_da": 1083,
+      "n_sa": 329,
+      "chi2": 19.60403723968118,
+      "p": 0.012987012987012988,
+      "dof": 7,
+      "V": 0.11782987339775094,
+      "permutation_used": true,
+      "enrichment": {
+        "CONTAINMENT": {
+          "da": 0.0018,
+          "sa": 0.0
+        },
+        "FLOW": {
+          "da": 0.2216,
+          "sa": 0.2219
+        },
+        "MARKING": {
+          "da": 0.12,
+          "sa": 0.1945
+        },
+        "MONITORING": {
+          "da": 0.0055,
+          "sa": 0.003
+        },
+        "OPERATION": {
+          "da": 0.0083,
+          "sa": 0.0122
+        },
+        "STAGING": {
+          "da": 0.5633,
+          "sa": 0.5228
+        },
+        "THERMAL": {
+          "da": 0.0037,
+          "sa": 0.0091
+        },
+        "TRANSITION": {
+          "da": 0.0757,
+          "sa": 0.0365
+        }
+      },
+      "verdict": "WEAK"
+    },
+    {
+      "test": "T6_tautology_decomposition",
+      "v_base": 0.2581682972535017,
+      "chi2_base": 10770.913846353835,
+      "p_base": 0.0,
+      "v_prefix": 0.3110334985826126,
+      "chi2_prefix": 15597.783160129517,
+      "p_prefix": 0.0,
+      "within_base": {
+        "a": {
+          "prefixes": [
+            "da",
+            "ka",
+            "sa",
+            "ta"
+          ],
+          "n": 1887,
+          "chi2": 54.77566653484038,
+          "p": 7.621484623038153e-05,
+          "dof": 21,
+          "V": 0.09836650885564682
+        },
+        "e": {
+          "prefixes": [
+            "ke",
+            "te"
+          ],
+          "n": 548,
+          "chi2": 14.228937401162726,
+          "p": 0.04725611608360214,
+          "dof": 7,
+          "V": 0.16113725278686616
+        },
+        "h": {
+          "prefixes": [
+            "ch",
+            "dch",
+            "fch",
+            "kch",
+            "lch",
+            "lsh",
+            "pch",
+            "rch",
+            "sh",
+            "tch"
+          ],
+          "n": 6968,
+          "chi2": 316.4563143796778,
+          "p": 1.928194414240058e-35,
+          "dof": 63,
+          "V": 0.08054782018345583
+        },
+        "k": {
+          "prefixes": [
+            "lk",
+            "ok",
+            "yk"
+          ],
+          "n": 2228,
+          "chi2": 47.18524484291855,
+          "p": 1.791833891154382e-05,
+          "dof": 14,
+          "V": 0.10290358742077996
+        },
+        "l": {
+          "prefixes": [
+            "al",
+            "ol"
+          ],
+          "n": 1048,
+          "chi2": 20.54284721802062,
+          "p": 0.004509093977283887,
+          "dof": 7,
+          "V": 0.1400069764415679
+        },
+        "o": {
+          "prefixes": [
+            "do",
+            "ko",
+            "po",
+            "qo",
+            "so",
+            "to"
+          ],
+          "n": 4683,
+          "chi2": 1106.3297476134442,
+          "p": 1.2621878570085547e-209,
+          "dof": 35,
+          "V": 0.2173678020677419
+        },
+        "r": {
+          "prefixes": [
+            "ar",
+            "or"
+          ],
+          "n": 309,
+          "chi2": 7.124900473319376,
+          "p": 0.4159922685324726,
+          "dof": 7,
+          "V": 0.15184837942621224
+        },
+        "t": {
+          "prefixes": [
+            "ct",
+            "ot"
+          ],
+          "n": 1508,
+          "chi2": 1195.9074175783803,
+          "p": 5.418923850464721e-254,
+          "dof": 7,
+          "V": 0.8905290866092298
+        }
+      },
+      "fisher_stat": 2347.7012187886903,
+      "fisher_dof": 16,
+      "fisher_p": 0.0,
+      "h_cat": 2.742263935877679,
+      "h_cat_given_base": 2.4090719526521633,
+      "h_cat_given_prefix": 2.351089303971962,
+      "mi_base": 0.33319198322551546,
+      "mi_prefix": 0.391174631905717,
+      "conditional_mi": 0.05798264868020153,
+      "cmi_pct": 2.1144080232978677,
+      "verdict": "PASS"
+    },
+    {
+      "test": "T7_bare_profile",
+      "n_bare": 3854,
+      "n_prefixed": 19232,
+      "chi2": 1368.4535679759354,
+      "p": 2.5828233018300945e-291,
+      "dof": 7,
+      "V": 0.24346732686786676,
+      "bare_profile": {
+        "CONTAINMENT": 0.0374,
+        "FLOW": 0.294,
+        "MARKING": 0.1053,
+        "MONITORING": 0.013,
+        "OPERATION": 0.1105,
+        "STAGING": 0.2065,
+        "THERMAL": 0.0407,
+        "TRANSITION": 0.1925
+      },
+      "prefixed_profile": {
+        "CONTAINMENT": 0.0497,
+        "FLOW": 0.1745,
+        "MARKING": 0.0722,
+        "MONITORING": 0.0165,
+        "OPERATION": 0.1586,
+        "STAGING": 0.1129,
+        "THERMAL": 0.2752,
+        "TRANSITION": 0.1404
+      },
+      "verdict": "PASS"
+    },
+    {
+      "test": "T8_base_alignment",
+      "alignment_scores": {
+        "a": {
+          "n": 1887,
+          "predicted_cats": [
+            "STAGING"
+          ],
+          "alignment": 0.526,
+          "profile": {
+            "CONTAINMENT": 0.0016,
+            "FLOW": 0.239,
+            "MARKING": 0.1479,
+            "MONITORING": 0.0042,
+            "OPERATION": 0.0085,
+            "STAGING": 0.5262,
+            "THERMAL": 0.0037,
+            "TRANSITION": 0.0689
+          }
+        },
+        "o": {
+          "n": 4683,
+          "predicted_cats": [
+            "THERMAL",
+            "FLOW"
+          ],
+          "alignment": 0.726,
+          "profile": {
+            "CONTAINMENT": 0.0173,
+            "FLOW": 0.2044,
+            "MARKING": 0.0775,
+            "MONITORING": 0.01,
+            "OPERATION": 0.0354,
+            "STAGING": 0.1157,
+            "THERMAL": 0.5219,
+            "TRANSITION": 0.0177
+          }
+        },
+        "h": {
+          "n": 6993,
+          "predicted_cats": [
+            "CONTAINMENT",
+            "TRANSITION"
+          ],
+          "alignment": 0.246,
+          "profile": {
+            "CONTAINMENT": 0.0874,
+            "FLOW": 0.1054,
+            "MARKING": 0.0778,
+            "MONITORING": 0.0227,
+            "OPERATION": 0.2889,
+            "STAGING": 0.0518,
+            "THERMAL": 0.2075,
+            "TRANSITION": 0.1586
+          }
+        },
+        "e": {
+          "n": 576,
+          "predicted_cats": [
+            "TRANSITION"
+          ],
+          "alignment": 0.217,
+          "profile": {
+            "CONTAINMENT": 0.2257,
+            "FLOW": 0.0625,
+            "MARKING": 0.0747,
+            "MONITORING": 0.0087,
+            "OPERATION": 0.2622,
+            "STAGING": 0.0486,
+            "THERMAL": 0.1007,
+            "TRANSITION": 0.217
+          }
+        },
+        "k": {
+          "n": 2228,
+          "predicted_cats": [
+            "STAGING",
+            "CONTAINMENT"
+          ],
+          "alignment": 0.049,
+          "profile": {
+            "CONTAINMENT": 0.0171,
+            "FLOW": 0.2478,
+            "MARKING": 0.026,
+            "MONITORING": 0.013,
+            "OPERATION": 0.1333,
+            "STAGING": 0.0323,
+            "THERMAL": 0.2729,
+            "TRANSITION": 0.2576
+          }
+        },
+        "t": {
+          "n": 1508,
+          "predicted_cats": [
+            "STAGING",
+            "CONTAINMENT"
+          ],
+          "alignment": 0.064,
+          "profile": {
+            "CONTAINMENT": 0.0232,
+            "FLOW": 0.2686,
+            "MARKING": 0.0225,
+            "MONITORING": 0.0405,
+            "OPERATION": 0.1664,
+            "STAGING": 0.0411,
+            "THERMAL": 0.195,
+            "TRANSITION": 0.2427
+          }
+        },
+        "r": {
+          "n": 309,
+          "predicted_cats": [
+            "STAGING"
+          ],
+          "alignment": 0.107,
+          "profile": {
+            "CONTAINMENT": 0.0259,
+            "FLOW": 0.2751,
+            "MARKING": 0.0324,
+            "MONITORING": 0.0065,
+            "OPERATION": 0.1197,
+            "STAGING": 0.1068,
+            "THERMAL": 0.0453,
+            "TRANSITION": 0.3883
+          }
+        }
+      },
+      "mean_alignment": 0.2764285714285714,
+      "perm_p": 0.000999000999000999,
+      "diagnostic": "WEAK alignment: base-category mapping surprisingly loose",
+      "verdict": "WEAK"
+    }
+  ],
+  "summary": {
+    "n_pass": 5,
+    "n_weak": 2,
+    "n_fail": 1,
+    "n_skip": 0,
+    "t6_gate": true,
+    "overall_verdict": "PARTIAL_ANATOMY"
+  }
+}

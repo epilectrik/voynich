@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1104 validated constraints | **Version:** 4.54 | **Date:** 2026-02-24
+**Total:** 1151 validated constraints | **Version:** 4.62 | **Date:** 2026-02-24
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3539,6 +3539,174 @@ Only e and i support consecutive repetition; all other atoms are binary. Order w
 - FL stage does NOT propagate -- material state independently assessed each cycle
 - No ordinal drift in energy variables -- steady-state thermal operation, not progressive ramp
 - Lines shorten monotonically through the B-track (rho=-0.243)
+
+### A Category Scattershot (C1261-C1268) -- Phase: A_CATEGORY_SCATTERSHOT (Phase 452)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1261** | **A Record Category Coherence** (A records draw PP MIDDLEs from fewer operational categories than random; mean entropy 1.810 vs null 1.886; d=9.7 p<0.001; 1539 records 10382 tokens; extends C475 into category dimension) | 2 | A, category, record, coherence, entropy | -> [C1261_a_record_category_coherence.md](C1261_a_record_category_coherence.md) |
+| **1262** | **RI Extension Character Category Coupling** (RI extension character associated with PP base category; chi2=165.2 V=0.221 perm p=0.001; 486 decompositions 16 ext chars 8 categories; h-ext MARKING 50% k-ext OPERATION 42% o-ext MONITORING 26%; extensions are operationally coupled not arbitrary) | 2 | A, RI, extension, category, coupling, C913 | -> [C1262_ri_extension_category_coupling.md](C1262_ri_extension_category_coupling.md) |
+| **1263** | **A Paragraph Category Specialization** (A paragraphs specialize by operational category; entropy 2.533 vs null 2.623; d=12.5 p<0.001; 242 paragraphs; extends C1039 cluster selectivity into category space) | 2 | A, paragraph, category, specialization, entropy | -> [C1263_a_paragraph_category_specialization.md](C1263_a_paragraph_category_specialization.md) |
+| **1264** | **Bridge vs Dark Pipeline Category Divergence** (bridge and dark pipeline MIDDLEs have different category profiles; chi2=73.0 V=0.441 perm p=0.001; bridges TRANSITION-enriched 20% vs 2%; dark MARKING-dominated 36% vs 11%; survives length control short p=0.0002 medium p=0.001) | 2 | A->B, bridge, dark-pipeline, category, divergence | -> [C1264_bridge_dark_category_divergence.md](C1264_bridge_dark_category_divergence.md) |
+| **1265** | **A Record Atom-Profile Coherence Independent of Category** (within-record AXIS cosine 0.272 vs null 0.238 d=11.6 p<0.001; same-category pairs 0.529 vs null 0.238; atom coherence persists after category control; C1207 AXIS and C1250 categories are complementary organizational axes) | 2 | A, atom, coherence, AXIS, independent, record | -> [C1265_a_record_atom_coherence.md](C1265_a_record_atom_coherence.md) |
+| **1266** | **A Section Atom-Level Differentiation** (5/7 AXIS clusters differentiate H/P/T sections at Bonferroni; STABILITY H=30.2 FREE H=20.9 ENERGY H=20.2 MONITORING H=16.7 CLOSURE H=12.9; H CLOSURE/MONITORING-heavy P STABILITY/ENERGY-heavy T ITERATION/ENERGY-heavy; breaks C946 cosine-0.997 barrier at atom resolution) | 2 | A, section, atom, differentiation, AXIS, C946 | -> [C1266_a_section_atom_differentiation.md](C1266_a_section_atom_differentiation.md) |
+| **1267** | **Mode A/B Distinction is B-Execution Only** (B mode affinity does not cluster in A records; concentration 0.692 vs null 0.690 d=0.85 p=0.204; A is mode-agnostic; mode assignment happens at B execution time not A registry) | 2 | A, B, mode, null, orthogonality | -> [C1267_mode_distinction_b_only.md](C1267_mode_distinction_b_only.md) |
+| **1268** | **PREFIX Track and Category Track Orthogonal** (ch/sh contexts have identical category distributions; chi2=6.52 V=0.021 JSD=0.0002 p=0.480; 8669 ch-context vs 5473 sh-context tokens; prefix choice does not select category; confirms C410 scope) | 2 | A, prefix, category, orthogonal, ch, sh, null | -> [C1268_prefix_category_orthogonality.md](C1268_prefix_category_orthogonality.md) |
+
+**Phase 452 findings (A Category Scattershot):**
+- A's registry is organized by operational category at record (C1261, d=9.7) and paragraph (C1263, d=12.5) scales
+- RI extensions are operationally coupled to PP base categories (C1262, V=0.221) -- not arbitrary markers
+- Bridge vs dark pipeline channels carry different category profiles (C1264, V=0.441) -- pipeline is category-structured
+- Atom coherence within records is independent of category (C1265, residual +0.291) -- AXIS and category are complementary
+- Atom decomposition breaks C946's MIDDLE-level uniformity barrier (C1266, 5/7 axes significant)
+- Mode A/B distinction does NOT propagate backward into A (C1267, null) -- mode is B-execution only
+- Prefix family (ch/sh) does NOT select category context (C1268, null) -- prefix and category are orthogonal
+
+### AZC Category Scattershot (C1269-C1276) -- Phase: AZC_CATEGORY_SCATTERSHOT (Phase 453)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1269** | **AZC Zone Category Specialization** (AZC zones R/C/S/P have distinct category distributions; chi2=52.18 V=0.084 p=0.000180; R TRANSITION/FLOW-heavy C TRANSITION/OPERATION P TRANSITION/STAGING S TRANSITION/FLOW; position encodes category bias not just legality) | 2 | AZC, zone, category, specialization, C313 | -> [C1269_azc_zone_category_specialization.md](C1269_azc_zone_category_specialization.md) |
+| **1270** | **AZC Family Category Divergence** (Zodiac vs A/C families differ in category profile; chi2=40.23 V=0.122 p=0.000001; Zodiac TRANSITION/FLOW/THERMAL-enriched; A/C TRANSITION/STAGING/OPERATION-enriched; mechanism family-agnostic but content category-biased) | 2 | AZC, family, category, zodiac, divergence | -> [C1270_azc_family_category_divergence.md](C1270_azc_family_category_divergence.md) |
+| **1271** | **AZC Zone Atom-Level Uniformity** (AZC zones do NOT differentiate at atom level; 1/8 AXIS clusters at p<0.05 0/8 at Bonferroni; contrasts A sections C1266 5/7 axes; category-level zone differences not driven by atom composition) | 2 | AZC, zone, atom, uniformity, null, AXIS | -> [C1271_azc_zone_atom_uniformity.md](C1271_azc_zone_atom_uniformity.md) |
+| **1272** | **AZC Mediates Bridge-Dark Category Sorting** (bridge and dark MIDDLEs occupy different AZC zones; chi2=33.45 V=0.117 p<0.001; bridge R-dominated 47.5% dark S-shifted 26.9%; category predicts zone within bridge p=0.0003 but NOT within dark p=0.198; AZC sorts bridge vocabulary by category) | 2 | AZC, A->B, bridge, dark-pipeline, sorting, zone | -> [C1272_azc_mediates_bridge_dark_sorting.md](C1272_azc_mediates_bridge_dark_sorting.md) |
+| **1273** | **AZC-Exclusive Vocabulary is MARKING/THERMAL Enriched** (356 UNK MIDDLEs assigned by atom vote; MARKING 27.2% THERMAL 27.0% TRANSITION 6.5%; divergent from bridge V=0.382 dark V=0.210 PP V=0.192; AZC has categorically specialized private vocabulary) | 2 | AZC, exclusive, vocabulary, MARKING, THERMAL | -> [C1273_azc_exclusive_vocabulary_profile.md](C1273_azc_exclusive_vocabulary_profile.md) |
+| **1274** | **AZC Category Composition Predicts B Escape Rate** (THERMAL rho=+0.780 p<0.001 predicts high escape; TRANSITION rho=-0.598 p<0.001 predicts low escape; CONTAINMENT rho=-0.399 MARKING rho=-0.349; 82 B folios; category mix of AZC-shared vocabulary predicts B escape dynamics) | 2 | AZC, A->B, category, escape, THERMAL, TRANSITION, qo-prefix | -> [C1274_azc_category_predicts_b_escape.md](C1274_azc_category_predicts_b_escape.md) |
+| **1275** | **No Within-Zone Spatial Category Coherence** (AZC diagram lines have no within-unit category clustering; entropy 1.464 vs null 1.461 d=-0.173 p=0.568; 264 groups 2626 tokens; category structure is zone-grain not line-grain; contrasts A record coherence C1261 d=9.7) | 2 | AZC, spatial, coherence, null, entropy | -> [C1275_no_within_zone_spatial_coherence.md](C1275_no_within_zone_spatial_coherence.md) |
+| **1276** | **AZC Sections Converge on A Pharma Atom Profile** (all AZC sections closest to A Pharma; AZC-A/P r=0.920 AZC-C/P r=0.916 AZC-Z/P r=0.928; no diverse mapping; AZC draws from Pharma-like atom pool; internal JSD=0.013) | 2 | AZC, A, section, atom, Pharma, convergence | -> [C1276_azc_sections_converge_on_pharma.md](C1276_azc_sections_converge_on_pharma.md) |
+
+**Phase 453 findings (AZC Category Scattershot):**
+- AZC zones specialize by operational category (C1269, V=0.084) but NOT at atom level (C1271, 0/8 Bonferroni)
+- Zodiac and A/C families have different category emphases (C1270, V=0.122) -- content diverges despite mechanism being family-agnostic
+- AZC positional zones mediate bridge/dark category sorting (C1272, V=0.117) -- bridge sorted by category (p=0.0003), dark not (p=0.198)
+- AZC-exclusive vocabulary is MARKING/THERMAL enriched, TRANSITION-depleted (C1273, V=0.382 vs bridge)
+- THERMAL vocabulary predicts high escape, TRANSITION predicts low escape in B (C1274, rho=+0.780/-0.598) -- category is cross-system organizing principle
+- No spatial coherence within diagram lines (C1275, null) -- organization is at zone grain, not line grain
+- All AZC sections converge on A Pharma atom profile (C1276, r>0.916) -- atom-uniform internally
+
+### Category B Execution (C1277-C1284) -- Phase: CATEGORY_B_EXECUTION (Phase 454)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1277** | **THERMAL Escape is PREFIX-Mediated** (THERMAL->escape rho=+0.780 fully mediated by qo-PREFIX; THERMAL 44.1% qo-prefixed vs 9.5% baseline; partial rho=-0.081 after control; chain: THERMAL->qo->QO lane->escape; category x PREFIX chi2=5845 V=0.291) | 2 | B, A->B, THERMAL, escape, PREFIX, qo, mediation | -> [C1277_thermal_escape_prefix_mediation.md](C1277_thermal_escape_prefix_mediation.md) |
+| **1278** | **Category Predicts Instruction Class Beyond PREFIX** (category reduces class entropy 1.207 bits 24.7%; adds 0.906 bits 18.6% BEYOND PREFIX; PREFIX 53.1% category 24.7% together 71.7%; complementary axes; perm p=0.001 d=1051; 16054 tokens) | 2 | B, category, instruction-class, entropy, PREFIX | -> [C1278_category_class_prediction.md](C1278_category_class_prediction.md) |
+| **1279** | **Mode A/B Lines Differ by Category** (Mode A THERMAL-enriched 28.9% vs 19.9% MONITORING 2.2x; Mode B TRANSITION-enriched 17.4% vs 11.3% STAGING 1.3x; chi2=536.7 V=0.153 p<0.001; Mode A injects escape-capable vocabulary Mode B maintains transition baseline) | 2 | B, mode, category, THERMAL, TRANSITION | -> [C1279_mode_category_differentiation.md](C1279_mode_category_differentiation.md) |
+| **1280** | **Hazard Concentrates in FLOW/CONTAINMENT** (hazard MIDDLEs 50.4% FLOW vs 8.8% safe; 11.5% CONTAINMENT vs 2.5%; THERMAL 2.6% vs 30.8% hazard-immune; chi2=7227.5 V=0.560; FLOW-hazard rho=+0.558 THERMAL-hazard rho=-0.602 at folio level) | 2 | B, hazard, FLOW, CONTAINMENT, THERMAL, category | -> [C1280_hazard_category_concentration.md](C1280_hazard_category_concentration.md) |
+| **1281** | **TRANSITION Anti-Escape is PREFIX-Independent** (TRANSITION-escape rho=-0.582 survives ch/sh control partial=-0.586 p<0.001; TRANSITION ch/sh rate 25.7% = baseline 25.1%; hazard rate 24.2% moderate; mechanism unknown but real and strong) | 2 | B, TRANSITION, escape, PREFIX-independent, anti-escape | -> [C1281_transition_independent_anti_escape.md](C1281_transition_independent_anti_escape.md) |
+| **1282** | **Category Predicts B Section Membership** (section x category chi2=759.8 V=0.106 p<0.001; 6/8 categories differentiate at Bonferroni; B=THERMAL-heavy C=FLOW-heavy H=FLOW/TRANSITION S=THERMAL/FLOW; compresses C1134 frequency modulation) | 2 | B, section, category, differentiation | -> [C1282_category_section_differentiation.md](C1282_category_section_differentiation.md) |
+| **1283** | **Category Differentiates Entry vs Exit Zones** (entry THERMAL-enriched 24.4% vs exit 17.1%; exit TRANSITION-enriched 20.2% vs entry 13.9%; entry vs exit chi2=183.6 V=0.141 p<0.001; lines begin thermal specification end transition convergence) | 2 | B, boundary, entry, exit, THERMAL, TRANSITION | -> [C1283_category_boundary_divergence.md](C1283_category_boundary_divergence.md) |
+| **1284** | **Kernel-Category Calibration** (CALIBRATION not discovery; THERMAL-k +0.646 THERMAL-e +0.668 TRANSITION-k -0.606 MONITORING-h +0.378; 9/24 sig; expected by C1250 construction; confirms consistency) | 2 | B, kernel, calibration, category, circularity | -> [C1284_kernel_category_calibration.md](C1284_kernel_category_calibration.md) |
+
+**Phase 454 findings (Category B Execution):**
+- THERMAL escape is fully PREFIX-mediated: THERMAL->qo (44.1%)->QO lane->escape (C1277, partial collapses to -0.081)
+- Category adds 18.6% instruction class information BEYOND PREFIX (C1278) -- complementary axes
+- Mode A lines inject THERMAL/escape-capable vocabulary; Mode B lines carry TRANSITION/escape-restrictive vocabulary (C1279, V=0.153)
+- Hazard concentrates in FLOW (50.4%) and CONTAINMENT (11.5%); THERMAL is hazard-immune (2.6%) (C1280, V=0.560)
+- TRANSITION anti-escape is PREFIX-independent and NOT hazard-mediated (C1281, partial=-0.586) -- mechanism unknown
+- Category predicts section (6/8 Bonferroni) (C1282), and entry vs exit zones (V=0.141) (C1283)
+- Kernel calibration confirms consistency (C1284, not scored)
+
+### Category Mechanism Decomposition (C1285-C1290) -- Phase: CATEGORY_MECHANISM_DECOMPOSITION (Phase 455)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1285** | **TRANSITION Anti-Escape via Role Redirection** (TRANSITION sources redirect successors to AUX 1.24x/FQ 1.13x enriched; EN successor rate 0.403 vs 0.476 baseline 0.85x; EN->EN self-loop 0.474 vs 0.517; rejects self-loop hypothesis; per-token mechanism; chi2=47.7 V=0.057 p<0.001) | 2 | B, TRANSITION, anti-escape, role-redirection, AUX, FQ | -> [C1285_transition_role_redirection.md](C1285_transition_role_redirection.md) |
+| **1286** | **Category Transition Grammar is Structured** (8x8 category transition matrix chi2=526.1 V=0.060 p=3.75e-81; self-loops enriched MARKING +10.4 THERMAL +6.0 FLOW +4.6; FLOW->TRANSITION +6.7 OPERATION->THERMAL +6.5; THERMAL->TRANSITION -3.4 FLOW->THERMAL -7.3; directional operational sequencing) | 2 | B, category, transition-matrix, sequential, grammar | -> [C1286_category_transition_grammar.md](C1286_category_transition_grammar.md) |
+| **1287** | **Paragraph Headers are MARKING-Enriched** (header vs body chi2=128.0 V=0.075 p<0.001; MARKING 2.44x enriched headers 18.3% vs body 7.5%; STAGING 1.45x; THERMAL 0.46x suppressed; three-level hierarchy: paragraph=marking, line-entry=thermal, body=flow/transition) | 2 | B, paragraph, header, MARKING, STAGING, specification | -> [C1287_paragraph_header_marking_enrichment.md](C1287_paragraph_header_marking_enrichment.md) |
+| **1288** | **Within-Folio Paragraphs Share Category Profiles** (within-folio JSD=0.1086 vs null=0.1217 z=-4.92 p<0.001; across-folio JSD=0.1223; ratio=0.888; folio imposes category theme on paragraphs; N=484 paragraphs 74 folios) | 2 | B, paragraph, folio, coherence, category, JSD | -> [C1288_within_folio_paragraph_coherence.md](C1288_within_folio_paragraph_coherence.md) |
+| **1289** | **Category Predicts AXM Self-Transition Rate** (THERMAL rho=+0.520 p<0.001 TRANSITION rho=-0.519 p<0.001; both Bonferroni; THERMAL=high AXM dwell TRANSITION=low AXM dwell; partially explains C1169 27% residual; N=82 folios) | 2 | B, AXM, category, THERMAL, TRANSITION, dwell, macro-state | -> [C1289_category_predicts_axm_dwell.md](C1289_category_predicts_axm_dwell.md) |
+| **1290** | **Paragraph Category Predicts Mode** (Mode A=THERMAL 28.8% TRANSITION 11.5%; Mode B=THERMAL 21.0% TRANSITION 16.7%; chi2=300.4 V=0.114 p<0.001; confirms C1279 at paragraph level; N=175 A 309 B paragraphs) | 2 | B, paragraph, mode, category, THERMAL, TRANSITION | -> [C1290_paragraph_category_mode_prediction.md](C1290_paragraph_category_mode_prediction.md) |
+
+**Phase 455 findings (Category Mechanism Decomposition):**
+- TRANSITION anti-escape solved: role redirection to AUX/FQ, not EN self-loop (C1285)
+- Category transition grammar is strongly structured (C1286, chi2=526, operational sequencing: heat->heat, flow->close, no heat->close)
+- Paragraph headers are MARKING-enriched (2.44x), THERMAL-suppressed (0.46x) (C1287) -- contrasts line entries (THERMAL-enriched)
+- Within-folio paragraphs share category profiles (C1288, z=-4.92) -- folio imposes thematic coherence
+- THERMAL/TRANSITION predict AXM dwell (C1289, rho=+/-0.52) -- partially resolves 27% AXM residual
+- Paragraph mode A=THERMAL-heavy, B=TRANSITION-heavy (C1290, V=0.114) -- confirms C1279 at paragraph level
+- FAIL: TRANSITION does NOT cluster within lines (T2) -- anti-escape is per-token, not sequential
+- FAIL: Forbidden transitions are cross-category (T3, 2/17 same-category) -- MARKING-dominated targets
+
+### Category-REGIME Integration (C1291-C1294) -- Phase: CATEGORY_REGIME_INTEGRATION (Phase 456)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1291** | **Category-REGIME Association is Kernel-Mediated** (chi2=526 V=0.106 p=5.5e-98; but after kernel residualization Fisher p=0.061; THERMAL kernel R2=0.779 TRANSITION=0.546 FLOW=0.409; association runs through k/h/e atoms shared by both systems; N=72 folios) | 2 | B, category, REGIME, kernel, circularity, mediation | -> [C1291_category_regime_kernel_mediation.md](C1291_category_regime_kernel_mediation.md) |
+| **1292** | **Section-Independent Category-REGIME Association** (within-section stratified chi2=216.4 dof=49 p<1e-20; H chi2=67.4 S chi2=116.9 C chi2=32.1; section is not sole mediator; kernel is primary pathway) | 2 | B, category, REGIME, section, stratified | -> [C1292_section_independent_regime_category.md](C1292_section_independent_regime_category.md) |
+| **1293** | **Categories Discriminate Beyond Role Profiles** (category JSD > role JSD in 5/6 REGIME pairs; role-residualized Fisher p=7.5e-8; 4/8 categories significant; mean JSD: role=0.0145 category=0.0228; categories not redundant with roles) | 2 | B, category, role, REGIME, resolution, discrimination | -> [C1293_category_discriminates_beyond_roles.md](C1293_category_discriminates_beyond_roles.md) |
+| **1294** | **Category Fractions Do Not Extend C1169 AXM Model** (all 8 Spearman |rho|<0.14 with C1169 residuals; none Holm-significant; C1169 replication R2=0.853 LOO=0.726; 27% residual not reducible to categories; validates C1169 closure; N=65 folios) | 2 | B, AXM, category, C1169, residual, validation, negative | -> [C1294_categories_do_not_extend_c1169.md](C1294_categories_do_not_extend_c1169.md) |
+
+**Phase 456 findings (Category-REGIME Integration):**
+- Category-REGIME association exists (chi2=526, V=0.106) but is kernel-mediated (C1291) -- T3 circularity gate FAILED
+- Association survives section control (C1292) but not kernel residualization -- kernel atoms are the primary pathway
+- Categories add genuine resolution beyond role profiles (C1293, Fisher p=7.5e-8) -- not a relabeling of known structure
+- Categories do NOT extend C1169 AXM model (C1294) -- 27% residual validated as irreducible design freedom
+- REGIME_1=THERMAL-dominant (29.7%), REGIME_2=FLOW-dominant (28.1%), REGIME_4=OPERATION/TRANSITION-dominant
+- Overall: CATEGORY_REGIME_PARTIAL (4 PASS, 2 FAIL, 1 SKIP)
+
+---
+
+### Paragraph Termination Trigger (C1295-C1296) -- Phase: PARAGRAPH_TERMINATION_TRIGGER (Phase 457)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1295** | **Paragraph Termination is Memoryless** (7/7 trigger hypotheses FAIL at Bonferroni p<0.00625: thermal level Fisher p=0.236, B-track Fisher p=0.178, thermal step perm p=0.822, thermal budget within-folio rho=-0.007 p=0.930, mode gate chi2=1.19 p=0.276, category shift perm p=0.400, folio prediction F-test p=0.365; no line-level feature predicts termination; -am is marker not trigger; N=257 paragraphs 3+ body lines) | 2 | B, paragraph, termination, memoryless, thermal, negative | -> [C1295_paragraph_termination_memoryless.md](C1295_paragraph_termination_memoryless.md) |
+| **1296** | **Tail Type Category Divergence** (3 tail product types C1232 have distinct 8-category profiles chi2=139.1 p<1e-22 perm p=0.001; Cluster 0 TRANSITION-enriched 20.1%, Cluster 2 THERMAL-dominant 33.5%; tail FORM covaries with category but tail TIMING does not C1295; N=257 paragraphs) | 2 | B, paragraph, termination, tail, category, divergence | -> [C1296_tail_type_category_divergence.md](C1296_tail_type_category_divergence.md) |
+
+**Phase 457 findings (Paragraph Termination Trigger):**
+- **TERMINATION_MEMORYLESS (1/8 PASS, 7/8 FAIL)** -- no line-level feature predicts when a paragraph terminates
+- All thermal hypotheses fail: no level trigger, no B-track signature, no thermal step, no thermal budget
+- No mode gate (suffix mode independent of termination) and no category shift (body homogeneous to the end)
+- T1 e_frac signal is entirely a C963 length confound (vanishes after n_toks stratification)
+- T4 definitive: within-folio mean e_frac vs body length rho=-0.007 -- no thermal budget governs duration
+- Sole PASS (T8): tail product types have distinct category profiles -- the FORM of shutdown varies but the DECISION to stop does not
+- Extends C963 body homogeneity from role fractions to thermal/category grain
+- Overall: termination is folio-programmed (C1239), not state-triggered
+
+---
+
+### PREFIX Category Anatomy (C1297-C1302) -- Phase: PREFIX_CATEGORY_ANATOMY (Phase 458)
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1297** | **PREFIX-Category Structured Association** (32 x 8 contingency table chi2=15,598 dof=217 p~0 V=0.311; 32 qualifying PREFIXes N>=30; qo=59% THERMAL, ct=90% MONITORING, da=56% STAGING, ch/sh=OPERATION; structured selectivity not monolithic; N=23,086 tokens) | 2 | B, PREFIX, category, contingency | -> [C1297_prefix_category_structured_association.md](C1297_prefix_category_structured_association.md) |
+| **1298** | **ok-ot Category Divergence** (sister pair ok/ot diverge in 8-category profiles chi2=32.0 dof=7 p=4.0e-5 V=0.105 JSD=0.008; ok THERMAL-enriched 24.7% vs 20.2% and MONITORING 2.52x; ot OPERATION-enriched 17.3% vs 12.5%; different operational emphasis despite shared FLOW dominance; N=2,924) | 2 | B, PREFIX, sister pair, ok, ot, category, divergence | -> [C1298_ok_ot_category_divergence.md](C1298_ok_ot_category_divergence.md) |
+| **1299** | **ch-sh B-Specific Category Divergence** (ch/sh diverge in B chi2=85.7 p=9.4e-16 V=0.121 despite A-identical C1268 V=0.021; survives section control Fisher p=3.4e-10 and position control; ch selects broader MIDDLE vocabulary FLOW/CONTAINMENT/MARKING; sh concentrates OPERATION/THERMAL; mechanism is MIDDLE-level not artifact; N=5,821) | 2 | B, PREFIX, sister pair, ch, sh, category, divergence, system-dependent | -> [C1299_ch_sh_b_category_divergence.md](C1299_ch_sh_b_category_divergence.md) |
+| **1300** | **qo Near-Pure THERMAL Channel** (qo is 59.0% THERMAL 2.50x corpus baseline 23.6% rank 1/32 binomial p~0; only PREFIX exceeding 50% in single category; secondary FLOW 20.1%; OPERATION 3.2% TRANSITION 1.5% strongly suppressed; primary thermal injection channel; N=4,069) | 2 | B, PREFIX, qo, THERMAL, channel, purity | -> [C1300_qo_near_pure_thermal_channel.md](C1300_qo_near_pure_thermal_channel.md) |
+| **1301** | **PREFIX Category Information Beyond Base Group** (conditional MI I(CAT;PREFIX|BASE)=0.058 bits 2.1% of H(CAT)=2.742; Fisher-combined within-base p~0; t-base V=0.891 ct vs ot; o-base V=0.217 qo-driven; PREFIX is not tautological with base group; N=23,086 across 9 base groups) | 2 | B, PREFIX, base group, tautology, information theory, conditional MI | -> [C1301_prefix_category_beyond_base_group.md](C1301_prefix_category_beyond_base_group.md) |
+| **1302** | **BARE Distinctive Category Profile** (BARE vs prefixed chi2=1,368 p~10^-291 V=0.243; BARE is FLOW-enriched 29.4% 1.68x STAGING-enriched 20.7% 1.83x THERMAL-depleted 4.1% 0.15x; inverse of qo C1300; bypasses base-MIDDLE-category chain; PREFIX slot is primary thermal injection mechanism; N=23,086) | 2 | B, PREFIX, BARE, category, THERMAL depletion, FLOW | -> [C1302_bare_distinctive_category_profile.md](C1302_bare_distinctive_category_profile.md) |
+
+**Phase 458 findings (PREFIX Category Anatomy):**
+- **PARTIAL_ANATOMY (5 PASS, 2 WEAK, 1 CONTROL_VIOLATED)** -- PREFIX predicts category with structured selectivity
+- T6 tautology gate PASSED: PREFIX adds 0.058 bits (2.1%) beyond base group, concentrated in t-base (V=0.891) and o-base (V=0.217)
+- qo is near-pure THERMAL channel (59.0%, rank 1/32); ct is near-pure MONITORING (90.0%)
+- ok/ot sister pair diverges (V=0.105): ok THERMAL-enriched, ot OPERATION-enriched
+- ch/sh diverge in B (V=0.121) but not A (C1268 V=0.021) -- system-dependent effect, survives section/position controls
+- BARE tokens are THERMAL-depleted (4.1% vs 27.5%) and FLOW/STAGING-enriched -- PREFIX is primary thermal injection mechanism
+- WEAK: da/sa divergence (p=0.013, sub-Bonferroni); base-category alignment 27.6% (below 40% threshold)
+- Channel symmetry: EN channel (ch/sh + qo) parallels AX channel (ok/ot + ct) -- sister pair + specialized third member
+
+---
+
+### Sister Category Mechanism (C1303-C1307) -- Phase: SISTER_CATEGORY_MECHANISM (Phase 459)
+
+Tests whether sister pair category divergence (C1298, C1299) is driven by positional placement or genuine categorical selection. Decomposes the mechanism into position control, MIDDLE-level category stability, and cross-lane cargo routing.
+
+| # | Description | Tier | Tags | Location |
+|---|-------------|------|------|----------|
+| **1303** | **ch/sh Category Divergence Is Position-Independent** (V retention 98.3%; Fisher-combined p=1.17e-4; within-zone V stable 0.094-0.102 across EARLY/MID/LATE; CATEGORY_GENUINE; positional axis C929 orthogonal to categorical axis; N=5,821) | 2 | B, PREFIX, sister pair, ch, sh, category, position | -> [C1303_chsh_position_independent_category.md](C1303_chsh_position_independent_category.md) |
+| **1304** | **ok/ot Category Divergence Is Position-Independent** (V retention 124.1%; Fisher-combined p=4.62e-5; position was SUPPRESSING divergence; EARLY V=0.207 strongest; CATEGORY_GENUINE; ok STAGING-enriched, ot MARKING-enriched within zones; N=2,924) | 2 | B, PREFIX, sister pair, ok, ot, category, position | -> [C1304_okot_position_independent_category.md](C1304_okot_position_independent_category.md) |
+| **1305** | **MIDDLE Determines Category** (0/33 qualifying MIDDLEs shift dominant category between ch/sh; binom p=1.0; sister pairs diverge via vocabulary SELECTION not TRANSFORMATION; MIDDLE category is intrinsic; mechanism is differential MIDDLE deployment) | 2 | B, PREFIX, MIDDLE, sister pair, category, mechanism | -> [C1305_middle_determines_category.md](C1305_middle_determines_category.md) |
+| **1306** | **Cross-Lane Cargo Divergence** (ch->QO vs sh->QO cargo V=0.122 chi2=33.29 p=2.34e-5; ch routes STAGING 20.6% vs 12.9%; sh routes THERMAL 53.6% vs 45.0%; sister identity shapes downstream QO-lane category composition; N=2,220 transitions) | 2 | B, PREFIX, sister pair, ch, sh, QO lane, cross-lane, category | -> [C1306_cross_lane_cargo_divergence.md](C1306_cross_lane_cargo_divergence.md) |
+| **1307** | **No Sister x Category x Position Interaction** (ch/sh V range=0.009 perm p=1.0; ok/ot V range=0.114 perm p=1.0; sister category effect is additive with position, not interactive; same category information regardless of line position) | 2 | B, PREFIX, sister pair, position, category, interaction | -> [C1307_no_sister_position_category_interaction.md](C1307_no_sister_position_category_interaction.md) |
+
+**Phase 459 findings (Sister Category Mechanism):**
+- **PARTIAL_MODE_SELECTION (4 PASS, 2 FAIL)** -- sister category divergence is genuine and position-independent
+- ch/sh V retention 98.3%: position explains almost none of the category divergence (CATEGORY_GENUINE)
+- ok/ot V retention 124.1%: position was MASKING divergence; true signal stronger than raw measurement
+- 0/33 MIDDLEs shift category between ch/sh: mechanism is vocabulary SELECTION not TRANSFORMATION
+- Cross-lane cargo diverges: ch routes STAGING to QO lane, sh routes THERMAL (V=0.122)
+- No three-way interaction: sister category effect is constant across position zones
 
 ---
 

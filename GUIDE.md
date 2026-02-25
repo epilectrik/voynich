@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,104 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,151 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -57,7 +57,7 @@ Every Currier B token is compositional. It decomposes into parts that each carry
 [ARTICULATOR] + [PREFIX] + MIDDLE + [SUFFIX]
 ```
 
-- **PREFIX** selects the operational channel AND encodes line position. Internally, each PREFIX has a base-modifier positional grammar: [MODIFIER (position 0)] + [BASE (position 1)]. The base character (h, e, k, o, a) determines which family of core actions is grammatically legal — within-base MIDDLE cosine similarity is 0.950, while between-base similarity drops to 0.515 (C1218-C1219). Modifiers (q, d, f, p, y) occupy position 0 and refine the operational meaning. PREFIXes also encode where in the line the token appears — they cluster into initial, central, and final positional zones. There are 8 prefix families organized into functional groups (including sister pairs ch/sh and ok/ot that function as equivalent mode selectors).
+- **PREFIX** selects the operational channel AND encodes line position. Internally, each PREFIX has a base-modifier positional grammar: [MODIFIER (position 0)] + [BASE (position 1)]. The base character (h, e, k, o, a) determines which family of core actions is grammatically legal — within-base MIDDLE cosine similarity is 0.950, while between-base similarity drops to 0.515 (C1218-C1219). Modifiers (q, d, f, p, y) occupy position 0 and refine the operational meaning. PREFIXes also encode where in the line the token appears — they cluster into initial, central, and final positional zones. There are 8 prefix families organized into functional groups. PREFIXes predict operational categories with structured selectivity (V=0.311, C1297) and read as two-atom instructions: [VERB]+[TARGET] — for example, ok = "operate heat," ot = "operate transfer," ch = "adjust watch." Sister pairs (ch/sh, ok/ot) achieve category divergence through vocabulary SELECTION — choosing different MIDDLEs — not by changing what any MIDDLE means. The positional axis (ch later, sh earlier) is orthogonal to the category axis (ch selects different operational themes than sh), giving each sister-prefixed token two independent pieces of information: WHEN to act and WHAT to act on (C1303-C1307).
 - **MIDDLE** is the primary discriminative content — the specific action variant within the channel the prefix opened. Approximately 30 core MIDDLEs handle 67.6% of all tokens, with a long tail of ~1,150 rarer variants.
 - **SUFFIX** encodes context-dependent markers that relate to control flow — what happens next, how broad the operation's scope is.
 - **ARTICULATOR** is an optional refinement layer that doesn't change the core meaning.
@@ -100,6 +100,29 @@ The 6 states don't just classify tokens — they form a dynamic system with well
 When you zoom into individual folios, each program tunes its own version of these macro dynamics. The 72 folios with enough data cluster into 6 dynamical archetypes — ranging from "strong attractor" programs (where AXM dominates with 82% self-transition and the system rarely leaves its home state) to "active interchange" programs (where AXM self-transition drops to 47% and the system spends much more time cycling through FQ operations and hazard states).
 
 These archetypes are almost completely unrelated to the 4 REGIMEs that classify programs by aggregate behavior. REGIMEs describe *what* a program does overall; archetypes describe *how* its macro-automaton behaves moment to moment. REGIME and section membership together explain only about a third of the variation between folio transition profiles — the remaining two-thirds is program-specific tuning. Each folio individually configures its position within the shared 6-state topology.
+
+### Eight Operational Categories
+
+In addition to the 6-state macro grammar (which classifies tokens by their grammatical role), the system supports an orthogonal 8-category classification that captures what operational domain each token participates in:
+
+| Category | What It Covers | Share |
+|----------|---------------|-------|
+| **THERMAL** | Heating, cooling, temperature control | 23.6% |
+| **MARKING** | Labeling, identification, tagging | 8.1% |
+| **FLOW** | Routing, transfer, movement | 19.2% |
+| **OPERATION** | Active execution, work operations | 15.0% |
+| **STAGING** | Setup, preparation, initialization | 12.5% |
+| **TRANSITION** | State changes, phase shifts | 14.7% |
+| **CONTAINMENT** | Enclosure, sealing, vessel management | 5.3% |
+| **MONITORING** | Observation, checking, measurement | 1.7% |
+
+These categories are assigned from MIDDLE-level behavioral profiles (not from PREFIX or suffix), and they organize all four systems:
+
+- **In Currier A:** Records and paragraphs are category-themed. A THERMAL-heavy record doesn't randomly include MONITORING vocabulary (C1261, Cohen d=9.7). Paragraphs show even stronger specialization (C1263, d=12.5).
+- **In AZC:** Positional zones partition vocabulary by category (C1269). AZC sorts bridge vocabulary by category (p=0.0003) but not dark pipeline vocabulary (p=0.198) — categories are the mechanism through which AZC zone structure connects to B execution dynamics (C1272).
+- **In Currier B:** Categories predict escape dynamics — THERMAL vocabulary enables escape (rho=+0.780), TRANSITION suppresses it (rho=-0.598). Category adds 18.6% information beyond PREFIX for instruction class prediction (C1278). Categories are also structured in sequence: THERMAL→THERMAL and FLOW→TRANSITION are common, but THERMAL→TRANSITION is rare (C1286).
+
+The category system is the first organizing principle shown to span all four manuscript systems through a single mechanism: A organizes its registry by operational theme, AZC sorts shared vocabulary by category into positional zones, and B executes programs whose dynamics are shaped by the category mix of their vocabulary.
 
 ### The Kernel: Three Core Operators
 
@@ -188,6 +211,14 @@ Each line in Currier A is an independent record — there are no inter-line depe
 
 A uses the same morphological system as B (PREFIX + MIDDLE + SUFFIX) but with different behavior. 60.1% of A's MIDDLEs never appear in B at all — they exist only within the registry, cataloging distinctions at a resolution the registry alone requires.
 
+### A Records Are Category-Themed
+
+A's registry is not just organized by morphological compatibility (C475) — it is organized by operational category. Individual records (folio, line) draw PP MIDDLEs from fewer operational categories than random assignment would produce (C1261, Cohen d=9.7, p<0.001). This effect is even stronger at the paragraph level (C1263, d=12.5): each A paragraph specializes in a subset of operational themes.
+
+RI extensions (the identification markers within A records) are operationally coupled to the PP base categories in the same record (C1262, V=0.221). A record about THERMAL operations uses THERMAL-related RI markers, not arbitrary ones.
+
+In A, sister pairs ch and sh are category-identical (C1268, V=0.021) — the distinction that emerges strongly in B (V=0.121) is invisible in A's simpler vocabulary structure. A sections show distinct atom-level signatures: Herbal is DYNAMIC/ENERGY-enriched, Pharma is STABILITY/STRUCTURAL-enriched (C1266).
+
 ### How A Relates to B
 
 A and B share vocabulary but not structure:
@@ -236,6 +267,12 @@ Each AZC position clusters vocabulary with a distinct operational character:
 | **C** | Core / central | Balanced across all operational axes |
 
 Critically, **position has zero independent effect on behavior**. After controlling for which MIDDLEs appear at a position, the position itself adds no predictive power for how those tokens behave in Currier B. Position reflects what the vocabulary already is — it doesn't transform it.
+
+### AZC Category Sorting
+
+AZC positional zones don't just classify vocabulary by legality — they partition it by operational category (C1269, V=0.084). More importantly, AZC is the mechanism that sorts bridge and dark pipeline vocabulary into different category profiles (C1272, V=0.117). Bridge MIDDLEs are category-sorted by zone (p=0.0003), while dark pipeline MIDDLEs are not (p=0.198). This sorting propagates downstream: the category composition of AZC-shared vocabulary per B folio predicts B's escape dynamics — THERMAL vocabulary enables escape (rho=+0.780), TRANSITION vocabulary suppresses it (rho=-0.598, C1274).
+
+All AZC sections (A, C, Zodiac) converge on the same atom profile: Currier A's Pharma section (r=0.916-0.928, C1276). AZC draws disproportionately from the stability/structural atom pool, consistent with its classification function.
 
 ### AZC and Currier B
 
@@ -302,7 +339,9 @@ The four layers are independent systems that share vocabulary but serve differen
 
 **The bridge backbone connects A's vocabulary geometry to B's execution dynamics.** Of the 972 MIDDLEs in Currier A's discrimination space, 85 are "bridge" MIDDLEs that also appear in Currier B. These bridges carry nearly all of the information that connects vocabulary structure (which MIDDLEs a folio uses) to dynamical behavior (how that folio's macro-automaton operates). Non-bridge MIDDLEs contribute almost nothing to predicting a folio's dynamical profile. The bridge backbone is where vocabulary geometry and execution topology overlap — it's the concrete mechanism through which A's discrimination index constrains B's behavioral space. Notably, from B's perspective all 85 unique MIDDLEs are bridges (100% coverage; C1020) — "bridge vs non-bridge" partitions A's vocabulary space, not B's internal grammar.
 
-**The only structural element that transfers perfectly across all systems** is the morphological type dichotomy: kernel-heavy prefixes (ch, sh, ok) make ~100% kernel character contact and avoid LINK positions; kernel-light prefixes (da, sa) make less than 5% kernel contact and cluster near LINK positions. This division reflects control-flow participation and is universal across all four systems.
+**The 8 operational categories are the first organizing principle shown to span all four systems.** A organizes its registry by operational theme (C1261-C1263). AZC sorts shared vocabulary by category into positional zones (C1269, C1272). B's execution dynamics are predicted by the category composition of its vocabulary (C1274). The category system provides the missing link between A's discrimination structure and B's execution behavior — it is the dimension along which vocabulary structure, positional classification, and execution dynamics all align.
+
+**The morphological type dichotomy also transfers across all systems:** kernel-heavy prefixes (ch, sh, ok) make ~100% kernel character contact and avoid LINK positions; kernel-light prefixes (da, sa) make less than 5% kernel contact and cluster near LINK positions. This division reflects control-flow participation and is universal across all four systems.
 
 ---
 
@@ -486,11 +525,11 @@ These interpretations have been structurally ruled out:
 
 ## How This Analysis Was Built
 
-This project was built using AI-assisted computational analysis over 446 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
+This project was built using AI-assisted computational analysis over 459 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
 
 The central methodological innovation is a **progressive context system**: a growing body of numbered, tiered, validated constraints that accumulates across research phases and is always available to the AI agents performing analysis. Every finding that survives statistical testing becomes a permanent constraint. Every falsified hypothesis is permanently closed. Each new phase starts with full knowledge of everything that came before.
 
-This matters because no single analytical session — human or AI — could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, and the Brunschwig alignment in one pass. But 446 phases, each building on validated prior work and never losing what was already proven, could. The constraint system is the project's memory, and its growth is what made the depth of analysis possible.
+This matters because no single analytical session — human or AI — could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, 8 cross-system operational categories, and the Brunschwig alignment in one pass. But 459 phases, each building on validated prior work and never losing what was already proven, could. The constraint system is the project's memory, and its growth is what made the depth of analysis possible.
 
 For technical details on the progressive context architecture, see the Methodology section in `README.md`.
 

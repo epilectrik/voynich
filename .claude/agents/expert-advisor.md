@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1104 validated constraints and 71 explanatory fits loaded
+embedded below. You have ALL 1151 validated constraints and 71 explanatory fits loaded
 as permanent context.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
@@ -65,7 +65,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1104 validated)
+- Tier 0-2 binding constraints (1151 validated)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -83,13 +83,13 @@ When reasoning:
 - Pairwise compositionality: no three-way morphological synergy (C1003)
 
 **Note:** This is a compact agent build. Sections marked *[condensed]* have
-full content in their source documents. All 1104 constraints, 71 fits,
+full content in their source documents. All 1151 constraints, 71 fits,
 and 4 structural contracts are complete.
 
 ---
 
-**Generated:** 2026-02-24 16:44
-**Version:** FROZEN STATE (1104 constraints, 71 fits) [COMPACT]
+**Generated:** 2026-02-24 23:43
+**Version:** FROZEN STATE (1151 constraints, 71 fits) [COMPACT]
 
 ---
 
@@ -113,7 +113,7 @@ and 4 structural contracts are complete.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 4.54 | **Status:** FROZEN | **Constraints:** 1104 | **Date:** 2026-02-24
+**Version:** 4.62 | **Status:** FROZEN | **Constraints:** 1151 | **Date:** 2026-02-24
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -1103,7 +1103,7 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1105 constraints | 2026-02-24
+CONSTRAINT_REFERENCE v2.6 | 1152 constraints | 2026-02-24
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -2213,6 +2213,53 @@ C1257	**Consecutive Paragraph Vocabulary Coupling**
 C1258	**Parallel Mode Tracks**
 C1259	**Gradient Decomposition by Suffix Mode**
 C1260	**Mode B Thermal State Tracking**
+C1261	**A Record Category Coherence**
+C1262	**RI Extension Character Category Coupling**
+C1263	**A Paragraph Category Specialization**
+C1264	**Bridge vs Dark Pipeline Category Divergence**
+C1265	**A Record Atom-Profile Coherence Independent of Category**
+C1266	**A Section Atom-Level Differentiation** (5/7 AXIS clusters differentiate H/P/T sections at Bonferroni; STABILITY H=30.2 FREE H=20.9 ENERGY H=20.2 MONITORING H=16.7 CLOSURE H=12.9; H CLOSURE/MONITORING-heavy P STABILITY/ENERGY-heavy T ITERATION/ENERGY-heavy; breaks C946 cosine-0.997 barrier at atom resolution)
+C1267	**Mode A/B Distinction is B-Execution Only**
+C1268	**PREFIX Track and Category Track Orthogonal**
+C1269	**AZC Zone Category Specialization**
+C1270	**AZC Family Category Divergence**
+C1271	**AZC Zone Atom-Level Uniformity**
+C1272	**AZC Mediates Bridge-Dark Category Sorting**
+C1273	**AZC-Exclusive Vocabulary is MARKING/THERMAL Enriched** (356 UNK MIDDLEs assigned by atom vote; MARKING 27.2% THERMAL 27.0% TRANSITION 6.5%; divergent from bridge V=0.382 dark V=0.210 PP V=0.192; AZC has categorically specialized private vocabulary)
+C1274	**AZC Category Composition Predicts B Escape Rate**
+C1275	**No Within-Zone Spatial Category Coherence**
+C1276	**AZC Sections Converge on A Pharma Atom Profile**
+C1277	**THERMAL Escape is PREFIX-Mediated**
+C1278	**Category Predicts Instruction Class Beyond PREFIX**
+C1279	**Mode A/B Lines Differ by Category**
+C1280	**Hazard Concentrates in FLOW/CONTAINMENT**
+C1281	**TRANSITION Anti-Escape is PREFIX-Independent**
+C1282	**Category Predicts B Section Membership**
+C1283	**Category Differentiates Entry vs Exit Zones**
+C1284	**Kernel-Category Calibration** (CALIBRATION not discovery; THERMAL-k +0.646 THERMAL-e +0.668 TRANSITION-k -0.606 MONITORING-h +0.378; 9/24 sig; expected by C1250 construction; confirms consistency)
+C1285	**TRANSITION Anti-Escape via Role Redirection**
+C1286	**Category Transition Grammar is Structured**
+C1287	**Paragraph Headers are MARKING-Enriched**
+C1288	**Within-Folio Paragraphs Share Category Profiles**
+C1289	**Category Predicts AXM Self-Transition Rate**
+C1290	**Paragraph Category Predicts Mode**
+C1291	**Category-REGIME Association is Kernel-Mediated**
+C1292	**Section-Independent Category-REGIME Association**
+C1293	**Categories Discriminate Beyond Role Profiles**
+C1294	**Category Fractions Do Not Extend C1169 AXM Model**
+C1295	**Paragraph Termination is Memoryless**
+C1296	**Tail Type Category Divergence**
+C1297	**PREFIX-Category Structured Association**
+C1298	**ok-ot Category Divergence**
+C1299	**ch-sh B-Specific Category Divergence**
+C1300	**qo Near-Pure THERMAL Channel**
+C1301	**PREFIX Category Information Beyond Base Group** (conditional MI I(CAT;PREFIX|BASE)=0.058 bits 2.1% of H(CAT)=2.742; Fisher-combined within-base p~0; t-base V=0.891 ct vs ot; o-base V=0.217 qo-driven; PREFIX is not tautological with base group; N=23,086 across 9 base groups)
+C1302	**BARE Distinctive Category Profile**
+C1303	**ch/sh Category Divergence Is Position-Independent**
+C1304	**ok/ot Category Divergence Is Position-Independent**
+C1305	**MIDDLE Determines Category**
+C1306	**Cross-Lane Cargo Divergence**
+C1307	**No Sister x Category x Position Interaction**
 
 ---
 
@@ -4712,6 +4759,117 @@ Adjacent QO and CHSH EN tokens carry paired information within each line. The sp
 
 
 
+---
+
+
+## XVI. 8-Category Operational System (Phases 452-456)
+
+### Core Finding
+
+91 human-glossed MIDDLEs plus ~1,144 dark-auto-assigned MIDDLEs (via atom plurality vote) partition into 8 operational categories: THERMAL, CONTAINMENT, FLOW, MONITORING, OPERATION, TRANSITION, STAGING, MARKING. This system organizes the manuscript at every level — Currier A records, AZC diagram positions, B execution grammar, paragraph structure, and macro-state dynamics. It is the strongest cross-system organizing principle discovered to date (C1250).
+
+| Category | Gloss Examples | Role |
+|----------|---------------|------|
+| THERMAL | heat, fire, cool, sustain, pulse | Energy management: heating, cooling, temperature maintenance |
+| CONTAINMENT | seal, hold, lock, bind, rigid | Physical constraint: sealing vessels, maintaining closure |
+
+
+
+
+**Escape architecture solved:**
+- THERMAL escape is fully PREFIX-mediated (C1277): THERMAL MIDDLEs are 44.1% qo-prefixed (vs 9.5% baseline). Partial correlation collapses to rho=-0.081 after controlling for qo. Chain: THERMAL MIDDLE -> qo-PREFIX selection -> zero-hazard QO lane (C601) -> escape.
+- TRANSITION anti-escape is PREFIX-independent (C1281): partial=-0.586 survives ch/sh control. Mechanism initially unknown.
+
+
+
+
+
+
+
+| Pattern | Residual | Process Interpretation |
+|---------|----------|----------------------|
+| MARKING -> MARKING | +10.4 | Annotation persists in theme |
+| FLOW -> TRANSITION | +6.7 | Transfer leads to closing/finalizing |
+
+
+**Paragraph architecture (C1287-C1290):**
+- **Headers are MARKING-enriched (C1287):** Paragraph headers (first token) are 2.44x enriched for MARKING and 1.45x for STAGING, while THERMAL is suppressed (0.46x). This contrasts with line entries, which are THERMAL-enriched (C1283). Three-level specification hierarchy: paragraph header = marking/staging specification -> line entry = thermal specification -> line body = flow/transition execution.
+- **Within-folio paragraph coherence (C1288):** Paragraphs within the same folio are more category-similar than cross-folio paragraphs (within JSD=0.109 vs null=0.122, z=-4.92). The folio (= program) imposes a category theme on all its paragraphs. Paragraph independence (C891-C893) is structural (grammar, kernel access) but not thematic (category composition).
+- **Category predicts AXM dwell (C1289):** THERMAL fraction predicts high AXM self-transition (rho=+0.520), TRANSITION fraction predicts low AXM self-transition (rho=-0.519). Both survive Bonferroni. AXM is the dominant macro-state where 33/49 classes reside. THERMAL vocabulary keeps the system in its main operational loop; TRANSITION vocabulary moves it through state changes. This partially resolves the C1169 27% AXM residual variance.
+- **Paragraph mode = category emphasis (C1290):** Mode A paragraphs are THERMAL-enriched (28.8% vs 21.0%), Mode B are TRANSITION-enriched (16.7% vs 11.5%). Chi2=300.4, V=0.114. Confirms C1279 at paragraph granularity.
+
+
+
+
+
+
+
+
+
+**Key findings:**
+- Categories survive section control but not kernel residualization -- kernel atoms are the primary pathway (C1291-C1292)
+- Categories add genuine resolution beyond role profiles (Fisher p=7.5e-8) -- not a relabeling of existing class/role structure (C1293)
+- **Categories do NOT extend C1169 AXM model** (C1294) -- the raw correlations (C1289, rho=+/-0.52) are fully absorbed by existing predictors. The 27% AXM residual is validated as irreducible design freedom.
+
+
+---
+
+
+## XVII. Paragraph Termination Mechanism (Phase 457)
+
+### Core Finding
+
+Paragraph termination is **memoryless**: no line-level feature predicts when a paragraph ends. An exhaustive 8-test battery (Bonferroni p<0.00625) tested every plausible trigger mechanism — thermal threshold, thermal budget, thermal step, B-track signature, suffix mode gate, category shutdown sequence, folio-level prediction extension — and ALL failed (C1295). The sole PASS: tail product types (C1232's 3 clusters) have distinct category profiles (C1296, chi2=139.1), meaning the *form* of shutdown varies by operational theme but the *decision* to stop shows no precursor.
+
+| Hypothesis | Test | Result |
+|------------|------|--------|
+| Thermal threshold (high e_frac triggers stop) | T1: e_frac last vs interior, length-controlled | FAIL (Fisher p=0.236, raw signal = length confound) |
+| B-track terminal cooling | T2: terminal B-line vs interior B-line e_frac | FAIL (Fisher p=0.178) |
+
+
+
+---
+
+
+## XVIII. PREFIX Category Anatomy (Phase 458)
+
+### Core Finding
+
+Individual PREFIXes predict operational categories with structured selectivity (V=0.311, chi2=15,598). This is not tautological with base-group membership: PREFIX adds 0.058 bits (2.1%) of category information beyond base group (C1301). The association is concentrated in specific pairs, particularly t-base (ct vs ot, V=0.891) and o-base (qo vs others, V=0.217).
+
+
+| Channel | Sister Pair | Third Member | Third's Purity |
+|---------|-------------|-------------|----------------|
+| EN | ch/sh (OPERATION) | qo | 59% THERMAL |
+| AX | ok/ot (FLOW) | ct | 90% MONITORING |
+
+
+
+
+
+
+
+---
+
+
+## XIX. Sister Category Mechanism (Phase 459)
+
+### Core Finding
+
+Sister pair category divergence (ch/sh and ok/ot) is position-independent and mechanistically driven by vocabulary selection, not vocabulary transformation. Position explains almost none (ch/sh) or actually masks (ok/ot) the true category signal. The MIDDLE's category is intrinsic -- it does not change based on which sister PREFIX selects it.
+
+
+
+
+
+
+
+| PREFIX | Verb | Target | Dominant Category | Reading |
+|--------|------|--------|-------------------|---------|
+| ok | o (set/execute) | k (heat) | STAGING/THERMAL | "set heat parameters" |
+| ot | o (set/execute) | t (transfer) | MARKING/OPERATION | "set transfer routing" |
+
+
 
 ---
 
@@ -4722,8 +4880,8 @@ Adjacent QO and CHSH EN tokens carry paired information within each line. The sp
 meta:
   name: "Currier A Structural Contract"
   acronym: "CASC"
-  version: "2.0"
-  date: "2026-02-14"
+  version: "2.1"
+  date: "2026-02-24"
   status: "ACTIVE"
   derived_from: "Tier-2 constraints only"
   governance: |
@@ -4793,7 +4951,8 @@ morphology:
     function: "Control-flow participation / functional type marker"
     mutual_exclusion: true
     semantic_meaning: false  # Markers, not categories
-    provenance: "C235, C466-C467"
+    category_orthogonal: true  # C1268: ch/sh context categories identical (JSD=0.0002, p=0.480)
+    provenance: "C235, C466-C467, C1268"
 
   sister:
     pairs:
@@ -4927,10 +5086,44 @@ morphology:
             strongest_output: ["-ry (0.20x = 5x OUTPUT bias)"]
             provenance: "C839"
 
-          provenance: "C831, C832, C833, C835, C836, C837, C838, C839"
+          extension_category_coupling:  # C1262
+            statement: "RI extension characters predict the operational category of the PP base"
+            chi_squared: 165.2
+            cramers_v: 0.221
+            p_value: 0.001
+            n_decomposed: 486
+            top_associations:
+              h: "MARKING (50%)"
+              k: "OPERATION (42%)"
+              o: "MONITORING (26%)"
+              e: "THERMAL (24%)"
+            interpretation: "Extensions are operationally coupled, not arbitrary identity markers"
+            provenance: "C1262"
+
+          provenance: "C831, C832, C833, C835, C836, C837, C838, C839, C1262"
 
       provenance: "C498, C498.a, C498.b, C498.c, C498.d, C513-NOTE-B, C528, C831-C839"
       revision_date: "2026-01-29"
+
+    # Operational category organization (C1261, C1265)
+    category_organization:
+      statement: "PP MIDDLEs within records and paragraphs cluster by operational category"
+      categories: ["THERMAL", "CONTAINMENT", "FLOW", "MONITORING", "OPERATION", "TRANSITION", "STAGING", "MARKING"]
+      record_coherence:  # C1261
+        obs_entropy: 1.810
+        null_entropy: 1.886
+        cohen_d: 9.7
+        p_value: "<0.001"
+        n_records: 1539
+      atom_coherence:  # C1265
+        statement: "Atom-profile coherence within records is INDEPENDENT of category"
+        obs_cosine: 0.272
+        null_cosine: 0.238
+        cohen_d: 11.6
+        same_category_residual: 0.291  # atom coherence persists after category control
+        interpretation: "AXIS clusters and categories are complementary organizational axes"
+      category_coverage: "99.8% of PP tokens assigned to one of 8 categories"
+      provenance: "C1261, C1265"
 
     # Gallows patterns (C529-C530)
     gallows:
@@ -5131,9 +5324,19 @@ paragraph_structure:
         extends: "C476 coverage optimality"
         provenance: "C1041"
 
+      category_specialization:  # C1263
+        statement: "Paragraphs specialize by operational category (entropy below null)"
+        obs_entropy: 2.533
+        null_entropy: 2.623
+        cohen_d: 12.5
+        p_value: "<0.001"
+        n_paragraphs: 242
+        interpretation: "Paragraphs are category-themed, not just cluster-selective"
+        provenance: "C1263"
+
       ordering_not_compositional: true  # H4 FAIL (p=0.223)
       linkers_not_compositional: true  # H7 FAIL (p=0.151)
-      provenance: "C1039, C1040, C1041"
+      provenance: "C1039, C1040, C1041, C1263"
 
   ab_relationship:  # C846
     model: "Pool-based, not address-based"
@@ -5269,8 +5472,17 @@ participation:
           bridge_disjoint: "0 shared MIDDLEs with bridge set (C1139)"
           atom_substrate: "Built from bridge atoms (86% of atom types, C1141)"
           bridge_anticorrelation: "Folio-level dark-pipeline and bridge token rates anti-correlate (r=-0.865, within-section r=-0.82 to -0.88); complementary distribution across the A->B pipeline (C1146)"
+          category_divergence:  # C1264
+            statement: "Bridge and dark pipeline MIDDLEs have divergent category profiles"
+            cramers_v: 0.441
+            p_value: 0.001
+            bridge_enriched: "TRANSITION (20% vs 2%), CONTAINMENT (8% vs 1%), MONITORING (7% vs 2%)"
+            dark_enriched: "MARKING (36% vs 11%), THERMAL (19% vs 12%)"
+            length_controlled: true  # survives short (p=0.0002) and medium (p=0.001) bins
+            interpretation: "Pipeline channel is category-structured -- bridges carry state-change vocab, dark carries annotation vocab"
+            provenance: "C1264"
           note: "B-side behavioral characterization (C1134 frequency modulation, C1137 HT substrate, C1138 distinct grammar, C1147 interior enrichment, C1148 hyper-modulation) lives in BCSC"
-          provenance: "C1135, C1136, C1139, C1140, C1141, C1146"
+          provenance: "C1135, C1136, C1139, C1140, C1141, C1146, C1264"
 
     provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016, C1135, C1136, C1139, C1140, C1141, C1146"
 
@@ -5301,7 +5513,17 @@ positional:
     suppression: "2.42x lower overlap at boundaries"
     cross_section_overlap: "9.7% Jaccard"
     hard_discontinuity: true
-    provenance: "C260, C421"
+    atom_level_differentiation:  # C1266
+      statement: "Sections differ at atom level despite MIDDLE-level uniformity (C946 cosine 0.997)"
+      significant_axes: 5  # of 7 AXIS clusters
+      profiles:
+        H: "CLOSURE/MONITORING-heavy (closure 0.129, monitoring 0.111)"
+        P: "STABILITY/ENERGY-heavy (stability 0.198, energy 0.175)"
+        T: "ITERATION/ENERGY-heavy (iteration 0.336, energy 0.183)"
+      universal_axes: ["ITERATION (p=0.069)", "STRUCTURAL (p=0.276)"]
+      interpretation: "Atom decomposition breaks C946 barrier -- sections were always specialized at sub-MIDDLE resolution"
+      provenance: "C1266"
+    provenance: "C260, C421, C1266"
 
   control_operator_boundary_bias:
     boundary_proximity_p: 0.0099
@@ -5346,6 +5568,16 @@ disallowed:
     reason: "A is maintained, not produced"
     status: "FALSIFIED"
 
+  - interpretation: "B mode A/B distinction organizes A records"
+    reason: "Mode affinity shows no within-record clustering (p=0.204, d=0.85)"
+    status: "FALSIFIED"
+    provenance: "C1267"
+
+  - interpretation: "Prefix family (ch/sh) selects operational category context"
+    reason: "Identical category distributions (JSD=0.0002, V=0.021, p=0.480)"
+    status: "FALSIFIED"
+    provenance: "C1268"
+
 
 
 ```
@@ -5359,8 +5591,8 @@ disallowed:
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.12"
-  date: "2026-02-23"
+  version: "3.15"
+  date: "2026-02-24"
   status: "ACTIVE"
   layer_type: "grammar contract"
   derived_from: "Tier 0-2 constraints (structural); Tier 3 operational layer clearly marked"
@@ -7497,6 +7729,181 @@ negative_guarantees:
   - guarantee: "No family structure"
     reason: "Families are emergent, not grammar partitions (C126, C144)"
 
+category_execution:
+  provenance: "C1277-C1294"
+  audit_note: "v3.15: Phase 456 category-REGIME integration (C1291-C1294): kernel-mediated, validates C1169 closure"
+
+  escape_mechanism:
+    statement: "THERMAL escape is fully PREFIX-mediated: THERMAL->qo(44.1%)->QO lane->escape"
+    thermal_qo_rate: "44.1% (vs 9.5% baseline, 4.6x)"
+    transition_qo_rate: "1.7% (26x lower than THERMAL)"
+    partial_after_control: "rho=-0.081 (p=0.468) -- mediation complete"
+    chain: "THERMAL MIDDLEs -> qo-PREFIX selection -> zero-hazard QO lane (C601) -> escape"
+    provenance: "C1277"
+
+  anti_escape_mechanism:
+    statement: "TRANSITION anti-escape via role redirection: successors routed to AUX (1.24x) and FQ (1.13x), away from EN (0.85x)"
+    mechanism: "Role redirection, not EN self-loop (expert hypothesis rejected)"
+    en_successor_rate: "0.403 for TRANSITION vs 0.476 baseline"
+    en_en_selfloop: "0.474 for TRANSITION EN sources vs 0.517 baseline (suppressed)"
+    sequential_clustering: "None (per-token mechanism, T2 FAIL z=-1.48)"
+    asymmetry: "Escape = PREFIX routing (THERMAL), anti-escape = role redirection (TRANSITION)"
+    provenance: "C1285, C1281"
+
+  category_transition_grammar:
+    statement: "8x8 category transition matrix is strongly structured (chi2=526, V=0.060, p~10^-81)"
+    self_loops_enriched: "MARKING +10.4, THERMAL +6.0, FLOW +4.6 (operations persist in theme)"
+    key_pathways: "FLOW->TRANSITION +6.7 (transfer->close), OPERATION->THERMAL +6.5 (work->heat)"
+    depleted: "FLOW->THERMAL -7.3, THERMAL->TRANSITION -3.4 (no direct heat->close)"
+    directional: "Asymmetric -- FLOW->TRANSITION (779) vs TRANSITION->FLOW (525)"
+    provenance: "C1286"
+
+  class_prediction:
+    statement: "Category and PREFIX are complementary axes for instruction class prediction"
+    category_ig: "1.207 bits (24.7%)"
+    prefix_ig: "2.589 bits (53.1%)"
+    combined_ig: "3.496 bits (71.7%)"
+    category_beyond_prefix: "0.906 bits (18.6%)"
+    provenance: "C1278"
+
+  mode_category:
+    statement: "Mode A injects THERMAL/escape-capable vocabulary; Mode B maintains TRANSITION baseline"
+    mode_a_thermal: "28.9%"
+    mode_b_thermal: "19.9%"
+    mode_a_transition: "11.3%"
+    mode_b_transition: "17.4%"
+    paragraph_level: "Confirmed at paragraph level: Mode A THERMAL 28.8%, Mode B THERMAL 21.0% (C1290, V=0.114)"
+    provenance: "C1279, C1290"
+
+  hazard_categories:
+    statement: "Hazard concentrates in FLOW/CONTAINMENT; THERMAL is hazard-immune"
+    flow_hazard_rate: "50.4% (vs 8.8% safe)"
+    containment_hazard_rate: "11.5% (vs 2.5% safe)"
+    thermal_hazard_rate: "2.6% (vs 30.8% safe)"
+    cramers_v: "0.560"
+    forbidden_transitions: "17 forbidden pairs are cross-category (15/17), MARKING-target dominated -- below category level"
+    provenance: "C1280"
+
+  boundary_categories:
+    statement: "Entry zones THERMAL/STAGING-enriched; exit zones TRANSITION/FLOW-enriched"
+    entry_thermal: "24.4%"
+    exit_thermal: "17.1%"
+    entry_transition: "13.9%"
+    exit_transition: "20.2%"
+    provenance: "C1283"
+
+  section_prediction:
+    statement: "Category predicts section membership (6/8 categories Bonferroni-significant)"
+    cramers_v: "0.106"
+    provenance: "C1282"
+
+  paragraph_architecture:
+    header_specification:
+      statement: "Paragraph headers are MARKING-enriched (2.44x) and STAGING-enriched (1.45x); THERMAL suppressed (0.46x)"
+      three_level_hierarchy: "Paragraph header = marking/staging, Line entry = thermal, Line body = flow/transition"
+      provenance: "C1287"
+    folio_coherence:
+      statement: "Within-folio paragraphs share category profiles (within JSD=0.109 vs null=0.122, z=-4.92)"
+      interpretation: "Folio imposes category theme on paragraphs; independence is structural not thematic"
+      provenance: "C1288"
+
+  axm_category_prediction:
+    statement: "Category composition predicts raw AXM self-transition rate but NOT C1169 residuals"
+    thermal_rho: "+0.520 (p<0.001) -- THERMAL = high AXM dwell"
+    transition_rho: "-0.519 (p<0.001) -- TRANSITION = low AXM dwell"
+    c1169_residual: "No category fraction correlates with C1169 residuals (all |rho|<0.14) -- signal fully absorbed by REGIME+boundary model"
+    interpretation: "Raw correlation is real but mediated by kernel composition; existing C1169 predictors capture all category-level AXM information"
+    provenance: "C1289, C1294"
+
+  regime_category_integration:
+    statement: "Category-REGIME association exists but is kernel-mediated -- not an independent organizational axis"
+    raw_association: "chi2=526, V=0.106, p=5.5e-98"
+    kernel_residualized: "Fisher p=0.061 (non-significant after removing k/h/e pathway)"
+    kernel_r2: "THERMAL=0.779, TRANSITION=0.546, FLOW=0.409, CONTAINMENT=0.201"
+    regime_profiles: "REGIME_1=THERMAL-dominant(29.7%), REGIME_2=FLOW-dominant(28.1%), REGIME_4=OPERATION/TRANSITION-dominant"
+    section_control: "Survives section stratification (within-section chi2=216.4) -- section is not sole mediator"
+    beyond_roles: "Categories add resolution beyond role profiles (Fisher p=7.5e-8, cat JSD > role JSD in 5/6 pairs)"
+    c1169_closure: "Categories do NOT extend C1169 -- 27% residual validated as irreducible design freedom"
+    provenance: "C1291, C1292, C1293, C1294"
+
+  prefix_category_anatomy:
+    statement: "Individual PREFIXes predict 8-category labels with structured selectivity (V=0.311)"
+    audit_note: "v3.16: Phase 458 PREFIX_CATEGORY_ANATOMY (C1297-C1302): PREFIX-category association structured, tautology gate passed"
+    full_table: "32 x 8 contingency table, chi2=15,598, dof=217, V=0.311 -- not monolithic"
+    dominant_profiles:
+      qo: "59.0% THERMAL (rank 1/32, near-pure channel)"
+      ct: "90.0% MONITORING (only 60 tokens but highest purity)"
+      a_base: "da 56.3%, sa 52.3%, ka 42.9%, ta 46.0% -- all STAGING-dominant"
+      ok: "27.6% FLOW + 26.5% TRANSITION + 24.7% THERMAL (balanced)"
+      ot: "27.9% FLOW + 25.2% TRANSITION + 20.2% THERMAL (balanced but OPERATION-enriched vs ok)"
+      ch: "25.9% OPERATION + 20.9% THERMAL + 13.8% TRANSITION"
+      sh: "30.8% OPERATION + 24.0% THERMAL + 17.3% TRANSITION"
+      BARE: "29.4% FLOW + 20.7% STAGING + 19.3% TRANSITION (THERMAL-depleted 4.1%)"
+    sister_pair_ok_ot:
+      statement: "ok/ot diverge at category grain (V=0.105, p=4.0e-5)"
+      ok_enrichment: "THERMAL 1.22x, MONITORING 2.52x"
+      ot_enrichment: "OPERATION 0.72x, STAGING 0.65x"
+      interpretation: "ok skews monitoring/measurement, ot skews execution/staging"
+    sister_pair_ch_sh:
+      statement: "ch/sh diverge in B (V=0.121, p=9.4e-16) but NOT in A (C1268 V=0.021)"
+      section_control: "Survives section stratification (Fisher p=3.4e-10)"
+      position_control: "Present in both line halves"
+      mechanism: "ch selects broader MIDDLE vocabulary (FLOW/CONTAINMENT/MARKING minorities)"
+      scope_note: "C1268 remains valid in A -- system-dependent effect"
+    qo_purity:
+      statement: "qo is the primary thermal injection channel (59.0% THERMAL, 2.50x baseline)"
+      suppressed: "OPERATION 3.2%, TRANSITION 1.5% -- strongly excluded from non-thermal operations"
+    tautology_gate:
+      statement: "PREFIX adds genuine category info beyond base group (CMI=0.058 bits, 2.1%)"
+      v_base: 0.258
+      v_prefix: 0.311
+      cmi_bits: 0.058
+      key_within_base: "t-base V=0.891 (ct vs ot), o-base V=0.217 (qo vs others)"
+      conclusion: "Not tautological -- PREFIX identity matters beyond base membership"
+    bare_profile:
+      statement: "BARE tokens are THERMAL-depleted (4.1% vs 27.5%) and FLOW/STAGING-enriched"
+      implication: "PREFIX slot is the primary mechanism for injecting thermal content"
+      anti_qo: "BARE is the categorical inverse of qo -- no prefix = no thermal channel"
+    channel_symmetry:
+      statement: "EN channel (ch/sh + qo) parallels AX channel (ok/ot + ct)"
+      pattern: "Sister pair + categorically pure third member in each channel"
+      en_third: "qo = 59% THERMAL"
+      ax_third: "ct = 90% MONITORING"
+      asymmetry: "ct is rare in B (60 tokens, 0.26%) while qo is common (4,069, 17.6%)"
+    provenance: "C1297, C1298, C1299, C1300, C1301, C1302"
+
+  sister_category_mechanism:
+    statement: "Sister pair category divergence is position-independent and driven by vocabulary selection"
+    audit_note: "v3.17: Phase 459 SISTER_CATEGORY_MECHANISM (C1303-C1307): position-controlled V retention, MIDDLE stability, cross-lane cargo"
+    position_independence:
+      ch_sh:
+        V_retention: "98.3% -- position explains almost none of category divergence"
+        fisher_p: "1.17e-4"
+        zone_V: "EARLY=0.094, MID=0.097, LATE=0.102 (stable across zones)"
+        interpretation: "CATEGORY_GENUINE -- C929 positional axis orthogonal to category axis"
+      ok_ot:
+        V_retention: "124.1% -- position was SUPPRESSING divergence"
+        fisher_p: "4.62e-5"
+        zone_V: "EARLY=0.207, MID=0.125, LATE=0.093"
+        interpretation: "CATEGORY_GENUINE -- C1184 positional polarity was hiding category signal"
+    mechanism:
+      statement: "0/33 qualifying MIDDLEs shift dominant category between ch and sh (binom p=1.0)"
+      interpretation: "MIDDLE_DETERMINES_CATEGORY -- MIDDLE category is intrinsic, not context-dependent"
+      implication: "Sister pairs diverge by choosing DIFFERENT MIDDLEs, not by changing what the same MIDDLE means"
+      analogy: "PREFIX is a vocabulary selector (which words to use), not a vocabulary transformer (what words mean)"
+    cross_lane_cargo:
+      statement: "ch->QO and sh->QO transitions carry different category cargo (V=0.122, p=2.34e-5)"
+      ch_routing: "STAGING 20.6% vs 12.9% (1.59x)"
+      sh_routing: "THERMAL 53.6% vs 45.0% (1.19x)"
+      self_category: "ch/sh tokens themselves also differ at transition points (V=0.115)"
+      interpretation: "Sister identity shapes downstream QO-lane category composition"
+    no_interaction:
+      statement: "No sister x category x position three-way interaction"
+      ch_sh_V_range: "0.009 (perm p=1.0)"
+      ok_ot_V_range: "0.114 (perm p=1.0)"
+      interpretation: "Sister category effect is additive with position, not interactive"
+    provenance: "C1303, C1304, C1305, C1306, C1307"
+
 disallowed:
   - interpretation: "B grammar varies by Currier A source"
     reason: "Grammar is universal (C124)"
@@ -7562,12 +7969,12 @@ disallowed:
 meta:
   name: "AZC Positional Classification Contract"
   acronym: "AZC-ACT"
-  version: "1.2"
-  date: "2026-02-06"
+  version: "1.3"
+  date: "2026-02-24"
   status: "ACTIVE"
   layer_type: "mapping contract"
   derived_from: "Tier-2 constraints only"
-  audit_note: "v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31) finding that AZC is static lookup table with no independent positional effect."
+  audit_note: "v1.3: Category organization added (C1269-C1276, Phase 453). Zones specialize by category. Family category divergence. Bridge/dark sorting mechanism. THERMAL predicts escape. v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31)."
   governance: |
     AZC-ACT is NOT authoritative. Constraints are authoritative.
     AZC-ACT describes HOW vocabulary is positionally classified in AZC.
@@ -7610,6 +8017,22 @@ guarantees:
     statement: "AZC legality mechanism is family-agnostic"
     provenance: "C430-C436, C441-C443"
 
+  - id: "ZONE_CATEGORY_SPECIALIZATION"
+    statement: "AZC zones (R, C, S, P) have statistically distinct operational category profiles (V=0.084, p=0.000180)"
+    provenance: "C1269"
+
+  - id: "FAMILY_CATEGORY_DIVERGENCE"
+    statement: "Zodiac and A/C families have distinct category profiles (V=0.122, p=0.000001) despite family-agnostic mechanism"
+    provenance: "C1270"
+
+  - id: "BRIDGE_DARK_ZONE_SORTING"
+    statement: "AZC zones mediate bridge/dark category sorting; bridge sorted by category within zones (p=0.0003), dark not (p=0.198)"
+    provenance: "C1272"
+
+  - id: "EXCLUSIVE_VOCABULARY_SPECIALIZED"
+    statement: "356 AZC-exclusive MIDDLEs are MARKING/THERMAL enriched, TRANSITION-depleted (V=0.382 vs bridge)"
+    provenance: "C1273"
+
 invariants:
   monotonicity:
     statement: "Survivor options never increase from earlier to later positions"
@@ -7626,6 +8049,54 @@ invariants:
   scaffold_independence:
     statement: "Legality zones are independent of scaffold presentation"
     provenance: "C430-C436"
+
+  zone_atom_uniformity:
+    statement: "AZC zones share the same atom-level (character) composition despite category-level specialization"
+    provenance: "C1271"
+
+  no_spatial_coherence:
+    statement: "Category assignment is spatially random within zones; organization is zone-grain not line-grain"
+    provenance: "C1275"
+
+  pharma_atom_convergence:
+    statement: "All AZC sections converge on Currier A Pharma section atom profile (r>0.916)"
+    provenance: "C1276"
+
+category_organization:
+  provenance: "C1269-C1276"
+
+  zone_category_profiles:
+    statement: "Zones specialize by operational category (chi2=52.18, V=0.084, p=0.000180)"
+    R: "TRANSITION/FLOW-heavy"
+    C: "TRANSITION/OPERATION-enriched"
+    P: "TRANSITION/STAGING-heavy"
+    S: "TRANSITION/FLOW/OPERATION"
+    provenance: "C1269"
+
+  family_category_profiles:
+    statement: "Zodiac vs A/C families differ in category content despite identical mechanism"
+    zodiac: "TRANSITION/FLOW/THERMAL-enriched"
+    ac: "TRANSITION/STAGING/OPERATION-enriched"
+    provenance: "C1270"
+
+  sorting_mechanism:
+    statement: "AZC zones mediate bridge/dark category sorting"
+    bridge: "Category-zone coupled (p=0.0003), R-dominated (47.5%)"
+    dark: "Category-zone uncoupled (p=0.198), S-shifted (26.9%)"
+    implication: "AZC positional structure sorts bridge vocabulary by category for B grammar channel"
+    provenance: "C1272"
+
+  exclusive_vocabulary:
+    statement: "356 AZC-exclusive MIDDLEs form categorically specialized population"
+    profile: "MARKING 27.2%, THERMAL 27.0%, TRANSITION 6.5%"
+    divergence: "V=0.382 vs bridge, V=0.210 vs dark"
+    provenance: "C1273"
+
+  atom_level:
+    zone_uniformity: "Zones do NOT differentiate at atom level (0/8 AXIS at Bonferroni)"
+    section_convergence: "All AZC sections converge on A Pharma atom profile (r>0.916)"
+    grain: "Category structure is MIDDLE-level, not character-level"
+    provenance: "C1271, C1276"
 
 inputs:
   accepted:
@@ -7788,6 +8259,14 @@ disallowed:
     reason: "AZC restricts, does not expand. Only A-record MIDDLEs are legal for B execution."
     provenance: "C481, C502"
 
+  - interpretation: "AZC diagram lines are thematically organized"
+    reason: "No within-line category coherence (C1275, p=0.568). Category structure is zone-grain, not line-grain."
+    provenance: "C1275"
+
+  - interpretation: "AZC zones differ at atom (character) level"
+    reason: "0/8 AXIS clusters differentiate zones at Bonferroni (C1271). Category specialization is MIDDLE-level only."
+    provenance: "C1271"
+
 
 ```
 
@@ -7800,12 +8279,12 @@ disallowed:
 meta:
   name: "AZC-B Vocabulary Correlation Contract"
   acronym: "AZC-B-ACT"
-  version: "1.2"
-  date: "2026-02-06"
+  version: "1.5"
+  date: "2026-02-24"
   status: "ACTIVE"
   layer_type: "correlation contract"
   derived_from: "Tier-2 constraints only"
-  audit_note: "v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31) finding that AZC is static lookup table with no independent positional effect."
+  audit_note: "v1.5: TRANSITION anti-escape mechanism solved (C1285, Phase 455). Role redirection to AUX/FQ, NOT EN self-loop. Category transition grammar structured (C1286, chi2=526). THERMAL/TRANSITION predict AXM dwell (C1289, rho=+/-0.52). v1.4: THERMAL escape mechanism solved (C1277). v1.3: Category-escape correlation (C1274). v1.2: Pipeline framing removed."
   governance: |
     AZC-B-ACT is NOT authoritative. Constraints are authoritative.
     AZC-B-ACT describes HOW vocabulary classified in AZC co-varies with B behavior.
@@ -7861,6 +8340,10 @@ guarantees:
     statement: "Resolution via vocabulary availability, not parameters"
     provenance: "C469"
 
+  - id: "CATEGORY_ESCAPE_CORRELATION"
+    statement: "Operational category composition of AZC-shared vocabulary predicts B escape rate: THERMAL (rho=+0.780) high escape, TRANSITION (rho=-0.598) low escape, across 82 B folios"
+    provenance: "C1274"
+
 invariants:
   vocabulary_mediated_correlation:
     statement: "AZC positional classification and B intervention dynamics co-vary via shared vocabulary properties"
@@ -7915,6 +8398,35 @@ correlation:
     effect: "Fine distinctions encoded in which tokens are legal"
     frequency_dimension: "Section differentiation also manifests as frequency variation of shared PP vocabulary (74% of section JS divergence from PP frequency modulation, C1134)"
     provenance: "C469, C1134"
+
+  category_escape_mechanism:
+    statement: "Category composition of AZC-shared vocabulary predicts B escape dynamics"
+    thermal_effect: "THERMAL rho=+0.780 (p<0.001) -- high THERMAL = high escape"
+    transition_effect: "TRANSITION rho=-0.598 (p<0.001) -- high TRANSITION = low escape"
+    containment_effect: "CONTAINMENT rho=-0.399 (p<0.001) -- anti-escape"
+    marking_effect: "MARKING rho=-0.349 (p=0.001) -- anti-escape"
+    n_folios: 82
+    bonferroni_survivors: "4/8 categories"
+    provenance: "C1274"
+
+  thermal_escape_mediation:
+    statement: "THERMAL escape is fully PREFIX-mediated: THERMAL MIDDLEs -> qo-PREFIX (44.1%) -> QO lane (zero hazard) -> escape"
+    thermal_qo_rate: "44.1% (vs 9.5% baseline)"
+    partial_after_qo_control: "rho=-0.081 (p=0.468) -- mediation complete"
+    provenance: "C1277"
+
+  transition_anti_escape:
+    statement: "TRANSITION anti-escape via role redirection: successors routed to AUX (1.24x) and FQ (1.13x), away from EN (0.85x). PREFIX-independent (partial=-0.586 survives), NOT hazard-mediated (24.2%), NOT sequential (no clustering)."
+    mechanism: "Role redirection -- TRANSITION MIDDLEs produce AUX/FQ successors that lack escape capacity"
+    en_en_selfloop: "Rejected (0.474 vs 0.517 baseline, suppressed not enriched)"
+    per_token: "Each TRANSITION token independently redirects; no sequential persistence"
+    asymmetry: "Escape = PREFIX routing (THERMAL->qo), anti-escape = role redirection (TRANSITION->AUX/FQ)"
+    provenance: "C1285, C1281"
+
+  hazard_category_concentration:
+    statement: "Hazard concentrates in FLOW (50.4%) and CONTAINMENT (11.5%). THERMAL is hazard-immune (2.6%)."
+    cramers_v: "0.560"
+    provenance: "C1280"
 
   vanishing_semantics:
     statement: "Illegality manifests as absence, not marking"
@@ -8018,6 +8530,10 @@ disallowed:
   - interpretation: "AZC expands B vocabulary beyond A specification"
     reason: "AZC restricts, does not expand. Only A-record MIDDLEs are legal for B."
     provenance: "C481, C502"
+
+  - interpretation: "Category composition is orthogonal to B escape dynamics"
+    reason: "THERMAL (rho=+0.780) and TRANSITION (rho=-0.598) strongly predict escape rate. Category is the mechanism connecting AZC classification to B behavior."
+    provenance: "C1274"
 
 
 ```
@@ -8452,8 +8968,8 @@ summary: |
 meta:
   name: "Paragraph Structural Contract"
   acronym: "PSC"
-  version: "1.1"
-  date: "2026-02-15"
+  version: "1.2"
+  date: "2026-02-24"
   status: "ACTIVE"
   layer_type: "cross-system structural unit contract"
   derived_from: "Tier 0-2 constraints (structural)"
@@ -8568,7 +9084,9 @@ guarantees:
       EN fraction rho: -0.023 (p=0.350). FL fraction rho: -0.050 (p=0.068).
       CC fraction rho: -0.049 (p=0.076). All collapse to ~0 after length control.
       Only length progression (rho=-0.229, p=0.001) is systematic.
-    provenance: "C963"
+      Extended to thermal/category grain (C1295): e_frac, ke_ratio, suffix mode,
+      and 8-category profile are all position-independent in the body.
+    provenance: "C963, C1295"
 
   - id: "POOL_RELATIONSHIP"
     statement: |
@@ -8610,6 +9128,19 @@ guarantees:
       Effect is tiny and driven by gallows tokens (87.7% AXM).
       Macro-dynamics operate at folio/section scale, not paragraph scale.
     provenance: "C1022"
+
+  - id: "TERMINATION_MEMORYLESS"
+    statement: |
+      Paragraph termination has no detectable line-level trigger.
+      7/7 trigger hypotheses fail (Bonferroni p<0.00625): thermal level
+      (length confound), B-track thermal, thermal step, thermal budget
+      (within-folio rho=-0.007), mode gate, category shift, folio prediction.
+      -am (C1237, 5.19x enriched) is the termination MARKER but nothing
+      in the body predicts WHEN it fires. Termination is folio-programmed
+      (C1239), not state-triggered. The 3 tail product types (C1232)
+      have distinct category profiles (C1296, chi2=139.1) -- the FORM
+      of shutdown varies by operational theme but the DECISION is memoryless.
+    provenance: "C1295, C1296, C1237, C1239"
 
   - id: "CLUSTER_SELECTIVE"
     statement: |
@@ -8660,6 +9191,10 @@ invariants:
   - id: "BODY_LENGTH_SHRINKAGE"
     statement: "Lines shrink toward paragraph end: rho=-0.229, p=0.001 — sole systematic body progression"
     provenance: "C963"
+
+  - id: "TERMINATION_NO_TRIGGER"
+    statement: "No line-level feature predicts termination: thermal (7 tests FAIL), modal, categorical all non-significant. Folio-programmed via C1239."
+    provenance: "C1295"
 
 cross_system_manifestation:
 
@@ -8876,6 +9411,14 @@ disallowed_interpretations:
     claim: "Paragraphs cluster hazard violations"
     refutation: "C1027: paragraph clustering p=0.320; folio p=0.688; no spatial concentration"
 
+  - id: "NOT_THERMAL_TRIGGERED_TERMINATION"
+    claim: "Paragraph termination is triggered by thermal state (cooling threshold, budget, or step)"
+    refutation: "C1295: All thermal triggers fail -- level (length confound), step (perm p=0.822), budget (within-folio rho=-0.007). Termination is folio-programmed, not state-driven."
+
+  - id: "NOT_CATEGORY_SHUTDOWN_SEQUENCE"
+    claim: "Paragraph termination is preceded by a distinctive category or mode sequence"
+    refutation: "C1295: Category profile at termination (perm p=0.400) and mode at termination (chi2=1.19, p=0.276) are both non-significant. Body lines are structurally equivalent until -am."
+
 # Summary statement
 summary: |
   A paragraph is a gallows-delimited, self-contained operational unit that
@@ -8885,7 +9428,10 @@ summary: |
   complementary entries that diversify within selected compatibility clusters.
   In Currier B: paragraphs are independent mini-programs with header-body
   architecture, parallel Mode A/B tracks with thermal state continuity, and
-  kernel-predicted operation types.
+  kernel-predicted operation types. Termination is memoryless: no line-level
+  thermal, modal, or categorical feature predicts when -am fires. The
+  decision to stop is folio-programmed (C1239), though the form of shutdown
+  varies by operational category (C1296).
 
   Both systems show matching 5-cluster taxonomy, header-body enrichment,
   and pool-based vocabulary correspondence. Paragraphs operate independently

@@ -3,12 +3,12 @@
 meta:
   name: "AZC-B Vocabulary Correlation Contract"
   acronym: "AZC-B-ACT"
-  version: "1.2"
-  date: "2026-02-06"
+  version: "1.5"
+  date: "2026-02-24"
   status: "ACTIVE"
   layer_type: "correlation contract"
   derived_from: "Tier-2 constraints only"
-  audit_note: "v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31) finding that AZC is static lookup table with no independent positional effect."
+  audit_note: "v1.5: TRANSITION anti-escape mechanism solved (C1285, Phase 455). Role redirection to AUX/FQ, NOT EN self-loop. Category transition grammar structured (C1286, chi2=526). THERMAL/TRANSITION predict AXM dwell (C1289, rho=+/-0.52). v1.4: THERMAL escape mechanism solved (C1277). v1.3: Category-escape correlation (C1274). v1.2: Pipeline framing removed."
   governance: |
     AZC-B-ACT is NOT authoritative. Constraints are authoritative.
     AZC-B-ACT describes HOW vocabulary classified in AZC co-varies with B behavior.
@@ -64,6 +64,10 @@ guarantees:
   - id: "CATEGORICAL_RESOLUTION"
     statement: "Resolution via vocabulary availability, not parameters"
     provenance: "C469"
+
+  - id: "CATEGORY_ESCAPE_CORRELATION"
+    statement: "Operational category composition of AZC-shared vocabulary predicts B escape rate: THERMAL (rho=+0.780) high escape, TRANSITION (rho=-0.598) low escape, across 82 B folios"
+    provenance: "C1274"
 
 # ============================================================
 invariants:
@@ -122,6 +126,35 @@ correlation:
     effect: "Fine distinctions encoded in which tokens are legal"
     frequency_dimension: "Section differentiation also manifests as frequency variation of shared PP vocabulary (74% of section JS divergence from PP frequency modulation, C1134)"
     provenance: "C469, C1134"
+
+  category_escape_mechanism:
+    statement: "Category composition of AZC-shared vocabulary predicts B escape dynamics"
+    thermal_effect: "THERMAL rho=+0.780 (p<0.001) -- high THERMAL = high escape"
+    transition_effect: "TRANSITION rho=-0.598 (p<0.001) -- high TRANSITION = low escape"
+    containment_effect: "CONTAINMENT rho=-0.399 (p<0.001) -- anti-escape"
+    marking_effect: "MARKING rho=-0.349 (p=0.001) -- anti-escape"
+    n_folios: 82
+    bonferroni_survivors: "4/8 categories"
+    provenance: "C1274"
+
+  thermal_escape_mediation:
+    statement: "THERMAL escape is fully PREFIX-mediated: THERMAL MIDDLEs -> qo-PREFIX (44.1%) -> QO lane (zero hazard) -> escape"
+    thermal_qo_rate: "44.1% (vs 9.5% baseline)"
+    partial_after_qo_control: "rho=-0.081 (p=0.468) -- mediation complete"
+    provenance: "C1277"
+
+  transition_anti_escape:
+    statement: "TRANSITION anti-escape via role redirection: successors routed to AUX (1.24x) and FQ (1.13x), away from EN (0.85x). PREFIX-independent (partial=-0.586 survives), NOT hazard-mediated (24.2%), NOT sequential (no clustering)."
+    mechanism: "Role redirection -- TRANSITION MIDDLEs produce AUX/FQ successors that lack escape capacity"
+    en_en_selfloop: "Rejected (0.474 vs 0.517 baseline, suppressed not enriched)"
+    per_token: "Each TRANSITION token independently redirects; no sequential persistence"
+    asymmetry: "Escape = PREFIX routing (THERMAL->qo), anti-escape = role redirection (TRANSITION->AUX/FQ)"
+    provenance: "C1285, C1281"
+
+  hazard_category_concentration:
+    statement: "Hazard concentrates in FLOW (50.4%) and CONTAINMENT (11.5%). THERMAL is hazard-immune (2.6%)."
+    cramers_v: "0.560"
+    provenance: "C1280"
 
   vanishing_semantics:
     statement: "Illegality manifests as absence, not marking"
@@ -256,6 +289,10 @@ disallowed:
     reason: "AZC restricts, does not expand. Only A-record MIDDLEs are legal for B."
     provenance: "C481, C502"
 
+  - interpretation: "Category composition is orthogonal to B escape dynamics"
+    reason: "THERMAL (rho=+0.780) and TRANSITION (rho=-0.598) strongly predict escape rate. Category is the mechanism connecting AZC classification to B behavior."
+    provenance: "C1274"
+
 # ============================================================
 
 annotations:
@@ -286,6 +323,15 @@ annotations:
     recovery_cv: "0.72-0.82"
     provenance: "C458"
 
+  category_escape_statistics:
+    thermal_rho: "+0.780 (p<0.001)"
+    transition_rho: "-0.598 (p<0.001)"
+    containment_rho: "-0.399 (p<0.001)"
+    marking_rho: "-0.349 (p=0.001)"
+    n_b_folios: 82
+    mean_escape_rate: "15.6%"
+    provenance: "C1274"
+
 # ============================================================
 provenance:
   vocabulary_correlation:
@@ -313,5 +359,14 @@ provenance:
     - "C468"  # Causal transfer
     - "C470"  # Restriction preservation
     - "C469"  # Non-parametric
+
+  category_escape:
+    - "C1274"  # Category composition predicts B escape rate
+    - "C1277"  # THERMAL escape fully PREFIX-mediated (partial=-0.081)
+    - "C1280"  # Hazard concentrates FLOW/CONTAINMENT (V=0.560)
+    - "C1281"  # TRANSITION anti-escape PREFIX-independent (partial=-0.586)
+    - "C1285"  # TRANSITION anti-escape via role redirection to AUX/FQ
+    - "C1286"  # Category transition grammar structured (chi2=526)
+    - "C1289"  # THERMAL/TRANSITION predict AXM dwell (rho=+/-0.52)
 
 # ============================================================

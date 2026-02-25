@@ -38,7 +38,7 @@ This project does not attempt to translate the Voynich Manuscript. The structura
 
 A researcher who discovers musical scores without knowing the notation cannot translate notes into words, because notes are not words. But structural analysis reveals patterns that match the harmonic series: forbidden combinations correspond to dissonant intervals, positional rules match musical form. The researcher proves the documents encode music without ever hearing a note.
 
-Similarly, the Voynich Manuscript's 49 instruction classes, 17 forbidden transitions (in 5 hazard classes), kernel-centric convergence behavior, and bounded recovery architecture are structural constraints that map onto the physics of controlled distillation. The forbidden transitions correspond to physical failure modes. The convergence behavior matches thermodynamic equilibrium-seeking. The recovery architecture matches historical practice (Brunschwig's bounded reinfusion). The Galenic organizational framework (3/4 structural tests pass, Phase 376) provides the intellectual genealogy.
+Similarly, the Voynich Manuscript's 49 instruction classes, 17 forbidden transitions (in 5 hazard classes), kernel-centric convergence behavior, and bounded recovery architecture are structural constraints that map onto the physics of controlled distillation. The forbidden transitions correspond to physical failure modes. The convergence behavior matches thermodynamic equilibrium-seeking. The recovery architecture matches historical practice (Brunschwig's bounded reinfusion). The Galenic organizational framework (6/6 directional coherence at organizational level, but 0/4 at grammar level; Phase 376-384) provides the intellectual genealogy — as training background, not design principle (F-RUP-001).
 
 This framing applies to ALL interpretations below: each section explores what specific aspects of the structure might correspond to in the physical domain, given that the structural fit has already been established.
 
@@ -6137,3 +6137,240 @@ REGIME encodes apparatus type via vocabulary signatures. Five apparatus profiles
 - **Section H (Herbal) is the most apparatus-diverse section**: all non-distillation folios in R2 and R4 are Herbal. Section B is overwhelmingly distillation (0.293 vs H 0.134). Herbal procedures reflect material-specific processing requirements.
 
 **Methodological note**: An initial top-down approach (PCA on 2587 PREFIX-MIDDLE pair vectors residualized against REGIME) found no clean structure (NOT_SUPPORTED). The bottom-up approach — defining apparatus profiles from domain knowledge and scoring folios against them — found the real signal. The lesson: apparatus is a domain-specific category that requires domain-specific feature engineering, not unsupervised discovery.
+
+---
+
+## XVI. 8-Category Operational System (Phases 452-456)
+
+**Phases:** A_CATEGORY_SCATTERSHOT (452) | AZC_CATEGORY_SCATTERSHOT (453) | CATEGORY_B_EXECUTION (454) | CATEGORY_MECHANISM_DECOMPOSITION (455) | CATEGORY_REGIME_INTEGRATION (456)
+**Constraints:** C1261-C1294 | **Date:** 2026-02-24
+
+### Core Finding
+
+91 human-glossed MIDDLEs plus ~1,144 dark-auto-assigned MIDDLEs (via atom plurality vote) partition into 8 operational categories: THERMAL, CONTAINMENT, FLOW, MONITORING, OPERATION, TRANSITION, STAGING, MARKING. This system organizes the manuscript at every level — Currier A records, AZC diagram positions, B execution grammar, paragraph structure, and macro-state dynamics. It is the strongest cross-system organizing principle discovered to date (C1250).
+
+### The 8 Categories
+
+| Category | Gloss Examples | Role |
+|----------|---------------|------|
+| THERMAL | heat, fire, cool, sustain, pulse | Energy management: heating, cooling, temperature maintenance |
+| CONTAINMENT | seal, hold, lock, bind, rigid | Physical constraint: sealing vessels, maintaining closure |
+| FLOW | transfer, gather, discharge, route, input | Material movement: transferring, collecting, dispensing |
+| MONITORING | watch, check, verify, scan, measure | Observation: temperature checks, quality verification |
+| OPERATION | work, operate, batch, pound, strip | Active processing: physical manipulation of materials |
+| TRANSITION | start, open, close, end, finish, halt | State changes: beginning/ending phases, opening/closing |
+| STAGING | frame, step, iterate, sequence, cycle | Process organization: iteration, sequencing, cycling |
+| MARKING | mark, flag, note, pause, adjust, hazard | Annotation: flagging conditions, noting adjustments |
+
+### Cross-System Organization (Phases 452-453)
+
+**Currier A (Phase 452):** Categories organize A at every tested grain. Records cluster by category (C1261, d=9.7). Paragraphs specialize: THERMAL dominates long paragraphs, MARKING dominates short ones (C1263, d=12.5). The bridge/dark pipeline split aligns with category: bridge MIDDLEs are TRANSITION-enriched, dark-pipeline MIDDLEs are MARKING-dominated (C1264, V=0.441). A sections differentiate at the atom level by category-aligned AXIS clusters (C1266).
+
+**AZC (Phase 453):** AZC zones (R, C, S, P) specialize by category (C1269, V=0.084). Bridge MIDDLEs are sorted by category within AZC zones (C1272, p=0.0003) while dark MIDDLEs are not (p=0.198) — AZC mediates the bridge sorting. AZC-exclusive vocabulary has a distinctive category profile: MARKING/THERMAL-enriched, TRANSITION-depleted (C1273, V=0.382). All AZC sections converge on A Pharma atom profiles (C1276).
+
+**The headline cross-system finding (C1274):** THERMAL category fraction predicts high B escape rate (rho=+0.780), TRANSITION fraction predicts low escape (rho=-0.598). Category composition in AZC/A directly predicts B dynamics.
+
+### B Execution Grammar (Phase 454)
+
+Phase 454 proved categories organize B's internal execution with 7/7 PASS:
+
+**Escape architecture solved:**
+- THERMAL escape is fully PREFIX-mediated (C1277): THERMAL MIDDLEs are 44.1% qo-prefixed (vs 9.5% baseline). Partial correlation collapses to rho=-0.081 after controlling for qo. Chain: THERMAL MIDDLE -> qo-PREFIX selection -> zero-hazard QO lane (C601) -> escape.
+- TRANSITION anti-escape is PREFIX-independent (C1281): partial=-0.586 survives ch/sh control. Mechanism initially unknown.
+
+**Category adds information beyond PREFIX (C1278):** Category reduces instruction class entropy by 24.7% (1.207 bits). PREFIX reduces it by 53.1% (2.589 bits). Together they explain 71.7% (3.496 bits). Category adds 18.6% beyond what PREFIX already provides — they are complementary organizational axes.
+
+**Mode differentiation (C1279):** Mode A lines (terminal-suffix dominant) are THERMAL-enriched (28.9%), injecting escape-capable vocabulary. Mode B lines (bare-suffix dominant) are TRANSITION-enriched (17.4%), maintaining escape restriction. The suffix mode system and category system, derived independently, converge on the same operational axis.
+
+**Hazard concentration (C1280):** Hazard MIDDLEs concentrate in FLOW (50.4%) and CONTAINMENT (11.5%). THERMAL is essentially hazard-immune (2.6%). V=0.560 — the strongest category effect measured. In process terms: transferring material and maintaining seals are dangerous; heating is safe (consistent with distillation physics where the fire is controlled but the transfer/seal failure modes are catastrophic).
+
+### Category Mechanism Decomposition (Phase 455)
+
+Phase 455 decomposed three open mechanisms with 6/8 PASS:
+
+**TRANSITION anti-escape mechanism solved (C1285):** The expert hypothesized EN->EN self-loops. **Rejected.** TRANSITION sources actually have *lower* EN successor rates (0.403 vs 0.476 baseline) and *lower* EN->EN self-loop rates (0.474 vs 0.517). Instead, TRANSITION redirects successors toward AUXILIARY (1.24x enriched) and FREQUENT_OPERATOR (1.13x enriched) — roles that lack escape capacity because qo-prefix tokens concentrate in ENERGY_OPERATOR. Each TRANSITION token independently redirects its successor (no sequential clustering, T2 FAIL). The anti-escape property is baked into the vocabulary, not into sequential patterns.
+
+**Asymmetric escape architecture:** THERMAL enables escape via PREFIX routing (qo). TRANSITION prevents escape via role redirection (AUX/FQ). Same category system, opposite mechanisms at different layers — PREFIX for enabling, role for suppressing.
+
+**Category transition grammar (C1286):** The 8x8 category-to-category bigram matrix is massively structured (chi2=526, V=0.060, p~10^-81). Key features:
+
+| Pattern | Residual | Process Interpretation |
+|---------|----------|----------------------|
+| MARKING -> MARKING | +10.4 | Annotation persists in theme |
+| FLOW -> TRANSITION | +6.7 | Transfer leads to closing/finalizing |
+| OPERATION -> THERMAL | +6.5 | Work leads to heating |
+| THERMAL -> THERMAL | +6.0 | Sustained heating persists |
+| FLOW -> FLOW | +4.6 | Sustained transfer persists |
+| FLOW -> THERMAL | -7.3 | No direct flow-to-heat (strongest avoidance) |
+| OPERATION -> TRANSITION | -4.7 | No direct work-to-close |
+| THERMAL -> MARKING | -4.5 | No direct heat-to-mark |
+| THERMAL -> TRANSITION | -3.4 | No direct heat-to-close |
+
+The system follows process control logic: you heat (and keep heating), then transfer (and keep transferring), then close. You don't jump from heating to closing or from flow to heating. The pathways are also directional: FLOW->TRANSITION (779) vs TRANSITION->FLOW (525).
+
+**Forbidden transitions are cross-category (T3 FAIL):** 15/17 forbidden transitions cross category boundaries (only 2 within-category, both MARKING->MARKING). MARKING is the dominant target/source in forbidden pairs (10/17 involve MARKING). Forbidden transitions operate below category level — they enforce specific MIDDLE-level constraints, not category boundaries.
+
+**Paragraph architecture (C1287-C1290):**
+
+- **Headers are MARKING-enriched (C1287):** Paragraph headers (first token) are 2.44x enriched for MARKING and 1.45x for STAGING, while THERMAL is suppressed (0.46x). This contrasts with line entries, which are THERMAL-enriched (C1283). Three-level specification hierarchy: paragraph header = marking/staging specification -> line entry = thermal specification -> line body = flow/transition execution.
+
+- **Within-folio paragraph coherence (C1288):** Paragraphs within the same folio are more category-similar than cross-folio paragraphs (within JSD=0.109 vs null=0.122, z=-4.92). The folio (= program) imposes a category theme on all its paragraphs. Paragraph independence (C891-C893) is structural (grammar, kernel access) but not thematic (category composition).
+
+- **Category predicts AXM dwell (C1289):** THERMAL fraction predicts high AXM self-transition (rho=+0.520), TRANSITION fraction predicts low AXM self-transition (rho=-0.519). Both survive Bonferroni. AXM is the dominant macro-state where 33/49 classes reside. THERMAL vocabulary keeps the system in its main operational loop; TRANSITION vocabulary moves it through state changes. This partially resolves the C1169 27% AXM residual variance.
+
+- **Paragraph mode = category emphasis (C1290):** Mode A paragraphs are THERMAL-enriched (28.8% vs 21.0%), Mode B are TRANSITION-enriched (16.7% vs 11.5%). Chi2=300.4, V=0.114. Confirms C1279 at paragraph granularity.
+
+### Relationship to Galenic Framework
+
+The 8-category system is NOT an extension of the Galenic framework (F-RUP-001). The Galenic framework uses 4 qualities (hot/cold/wet/dry) x 4 degrees. Phase 384 showed that Galenic predictions fail at the grammar level (0/4 tests pass) — the Galenic framework is the author's training background, not the system's design principle.
+
+The 8-category system is derived from Brunschwig process glosses and validated structurally. It succeeds where Galenic fails: organizing the grammar's sequential flow, paragraph structure, macro-state dynamics, and escape architecture. The categories are operational (what you DO in distillation) rather than qualitative (what properties materials HAVE). The Voynich author encoded process control, not natural philosophy.
+
+### Interpretation (Tier 3)
+
+In distillation context, the 8-category transition grammar describes a process control language where:
+
+1. **The folio sets an operational theme.** A THERMAL-heavy folio is a heating-focused program. A TRANSITION-heavy folio manages state changes. All paragraphs within the folio follow this theme.
+
+2. **Each paragraph begins with marking/staging annotation** (what to note, what to adjust) before executing its operational content. This matches recipe structure: "Note: check the seal. Then heat at sustained temperature, transfer the distillate, close the vessel."
+
+3. **Sequential operations follow preferred pathways.** You heat and keep heating. You transfer and then close. You don't jump from heating to closing (THERMAL->TRANSITION depleted). You don't jump from flow to heating (FLOW->THERMAL depleted). The grammar enforces physically reasonable process sequences.
+
+4. **The escape/anti-escape architecture maps to process control authority.** THERMAL operations (via qo-PREFIX) can exit the main operational loop — because changing temperature is a fundamental control action. TRANSITION operations suppress exit — because when you're in a close/finalize sequence, you need to complete it before the system can change state. This is feedback control: heating gives you options, closing locks you in until done.
+
+5. **AXM dwell = sustained processing.** THERMAL vocabulary keeps the system in its dominant macro-state (the main processing loop). TRANSITION vocabulary breaks out of it. High-THERMAL folios are sustained processing programs; high-TRANSITION folios manage state changes and transitions between processing phases.
+
+### REGIME-Category Relationship (Phase 456)
+
+Phase 456 tested whether categories integrate with the 4-REGIME classification (C179/C494, GMM k=4 on 15 folio features). The association is strong (chi2=526, V=0.106) but **kernel-mediated**: after residualizing on k/h/e atom composition, the signal drops to non-significant (Fisher p=0.061). THERMAL's kernel R2=0.779 means ~78% of its folio-level variance is explained by k/e atom prevalence alone.
+
+**Key findings:**
+- **REGIME_1** (thermal-control-intensive, 32 folios) = THERMAL-dominant (29.7%)
+- **REGIME_2** (output-intensive, 15 folios) = FLOW-dominant (28.1%)
+- **REGIME_4** (precision-constrained, 15 folios) = OPERATION/TRANSITION-dominant
+- Categories survive section control but not kernel residualization -- kernel atoms are the primary pathway (C1291-C1292)
+- Categories add genuine resolution beyond role profiles (Fisher p=7.5e-8) -- not a relabeling of existing class/role structure (C1293)
+- **Categories do NOT extend C1169 AXM model** (C1294) -- the raw correlations (C1289, rho=+/-0.52) are fully absorbed by existing predictors. The 27% AXM residual is validated as irreducible design freedom.
+
+**Interpretation:** REGIMEs and categories are not independently designed classification systems. Both express the same underlying kernel chemistry at different scales. REGIMEs are the macro view (this folio is a heating program because its k-ratio is high). Categories are the micro view (this token does heating work because its MIDDLE contains k-atoms). They converge because the author's system is coherent: the program type determines the vocabulary.
+
+---
+
+## XVII. Paragraph Termination Mechanism (Phase 457)
+
+**Phase:** PARAGRAPH_TERMINATION_TRIGGER (457)
+**Constraints:** C1295-C1296 | **Date:** 2026-02-24
+
+### Core Finding
+
+Paragraph termination is **memoryless**: no line-level feature predicts when a paragraph ends. An exhaustive 8-test battery (Bonferroni p<0.00625) tested every plausible trigger mechanism — thermal threshold, thermal budget, thermal step, B-track signature, suffix mode gate, category shutdown sequence, folio-level prediction extension — and ALL failed (C1295). The sole PASS: tail product types (C1232's 3 clusters) have distinct category profiles (C1296, chi2=139.1), meaning the *form* of shutdown varies by operational theme but the *decision* to stop shows no precursor.
+
+### What Was Tested and Failed
+
+| Hypothesis | Test | Result |
+|------------|------|--------|
+| Thermal threshold (high e_frac triggers stop) | T1: e_frac last vs interior, length-controlled | FAIL (Fisher p=0.236, raw signal = length confound) |
+| B-track terminal cooling | T2: terminal B-line vs interior B-line e_frac | FAIL (Fisher p=0.178) |
+| Thermal step into final line | T3: delta_e_frac terminal vs interior pairs | FAIL (perm p=0.822) |
+| Thermal budget (hotter = shorter) | T4: mean e_frac vs body length, within-folio | FAIL (rho=-0.007, p=0.930) |
+| Mode gate (A or B mode triggers stop) | T5: Mode A fraction last 2 vs earlier | FAIL (chi2=1.19, p=0.276) |
+| Category shutdown sequence | T6: 8-category profile last 2 vs earlier | FAIL (perm p=0.400) |
+| Folio-level thermal/category prediction | T7: extended OLS vs section+REGIME baseline | FAIL (F p=0.365, LOO decreases) |
+
+### Interpretation (Tier 3)
+
+The paragraph body is genuinely homogeneous until -am fires the termination signal (C1237, 5.19x enriched). This extends C963's body homogeneity finding from role fractions to thermal, modal, and categorical grain. The T1 result is particularly instructive: the apparent thermal enrichment in last lines is entirely a line-length confound (last lines are shorter, short lines have different e_frac distributions).
+
+In distillation terms: a paragraph is a batch operation that runs for a predetermined duration. The operator does not look at the material's state to decide when to stop — the duration was decided when the program was written (at the folio level, C1239). The -am suffix is the "batch complete" stamp, not a "conditions met" sensor. This is consistent with a reference manual rather than a real-time control system: the manual specifies HOW LONG to run each operation, not WHEN to stop based on observations.
+
+The T8 finding (tail type category divergence) adds nuance: while the timing is memoryless, the vocabulary used in the final lines reflects the paragraph's operational theme. A THERMAL-heavy paragraph ends with heating vocabulary (Cluster 2, THERMAL 33.5%). A TRANSITION-heavy paragraph ends with state-change vocabulary (Cluster 0, TRANSITION 20.1%). The shutdown vocabulary is thematically appropriate even though its placement is not state-triggered.
+
+---
+
+## XVIII. PREFIX Category Anatomy (Phase 458)
+
+**Phase:** PREFIX_CATEGORY_ANATOMY (458)
+**Constraints:** C1297-C1302 | **Date:** 2026-02-24
+
+### Core Finding
+
+Individual PREFIXes predict operational categories with structured selectivity (V=0.311, chi2=15,598). This is not tautological with base-group membership: PREFIX adds 0.058 bits (2.1%) of category information beyond base group (C1301). The association is concentrated in specific pairs, particularly t-base (ct vs ot, V=0.891) and o-base (qo vs others, V=0.217).
+
+### Channel Architecture
+
+Two parallel channels organize PREFIX-category flow, each with a sister pair plus a categorically pure third member:
+
+| Channel | Sister Pair | Third Member | Third's Purity |
+|---------|-------------|-------------|----------------|
+| EN | ch/sh (OPERATION) | qo | 59% THERMAL |
+| AX | ok/ot (FLOW) | ct | 90% MONITORING |
+
+The third members are the most categorically pure PREFIXes in the system. qo injects thermal content; ct provides monitoring operations. The asymmetry is striking: qo is common in B (4,069 tokens, 17.6%) while ct is rare (60 tokens, 0.26%), reflecting ct's primary A-system role (C282, 0.14x B frequency).
+
+### Sister Pair Divergence in B
+
+ch/sh are category-identical in Currier A (C1268, V=0.021) but diverge in B (C1299, V=0.121, p=9.4e-16). This survives section control (Fisher p=3.4e-10) and position control. The mechanism is MIDDLE-level: ch selects a broader vocabulary including minority MIDDLEs (ot MIDDLE 91.9% ch, ckh 76.4% ch), while sh concentrates on high-frequency MIDDLEs in OPERATION (edy at 21.2%). B's richer vocabulary reveals selectivity differences invisible in A's more uniform token set.
+
+ok/ot likewise diverge (C1298, V=0.105): ok is THERMAL-enriched (24.7% vs 20.2%) and MONITORING-enriched (2.52x), while ot is OPERATION-enriched (17.3% vs 12.5%).
+
+### BARE as Anti-Thermal Anchor
+
+BARE tokens (no PREFIX) are THERMAL-depleted at 4.1% (vs 27.5% prefixed), establishing the PREFIX slot as the primary mechanism for thermal injection (C1302). BARE tokens concentrate in FLOW (29.4%) and STAGING (20.7%) -- infrastructure and preparation operations that do not carry thermal parameters.
+
+### Interpretation (Tier 3)
+
+The PREFIX is not merely a passive label or a redundant echo of base-group identity. It selects the operational channel through which a token contributes to the program. In distillation terms:
+
+- **qo-prefixed tokens** are primarily heating/cooling instructions (THERMAL)
+- **ct-prefixed tokens** are temperature/flow monitoring checkpoints (MONITORING)
+- **a-base prefixed tokens** (da, sa, ka, ta) are setup/preparation instructions (STAGING)
+- **h-base prefixed tokens** (ch, sh, etc.) are the primary execution vocabulary (OPERATION)
+- **BARE tokens** are routing and flow infrastructure
+
+The channel symmetry (EN and AX each having a sister pair + pure third) suggests the PREFIX system is organized around two complementary operational channels, each providing general-purpose execution via the sister pair and specialized single-purpose injection via the third member. The qo/ct asymmetry (thermal injection is common, monitoring is rare) is consistent with a system that spends most of its time executing thermal operations and only occasionally pauses to check monitoring conditions.
+
+---
+
+## XIX. Sister Category Mechanism (Phase 459)
+
+**Phase:** SISTER_CATEGORY_MECHANISM (459)
+**Constraints:** C1303-C1307 | **Date:** 2026-02-24
+
+### Core Finding
+
+Sister pair category divergence (ch/sh and ok/ot) is position-independent and mechanistically driven by vocabulary selection, not vocabulary transformation. Position explains almost none (ch/sh) or actually masks (ok/ot) the true category signal. The MIDDLE's category is intrinsic -- it does not change based on which sister PREFIX selects it.
+
+### Position Independence
+
+ch/sh category divergence retains 98.3% of its V after position control (C1303). The category profiles are remarkably stable across EARLY/MID/LATE zones (V=0.094 to 0.102). C929's positional axis (ch later, sh earlier) is genuinely orthogonal to the category axis (ch selects different MIDDLEs than sh).
+
+ok/ot shows 124.1% V retention (C1304) -- position was actually *suppressing* the true divergence. C1184's opposite positional polarity (ok early, ot late) was a confounder masking the category signal. Within EARLY positions alone, the divergence is V=0.207, nearly double the raw V=0.114.
+
+### Mechanism: Vocabulary Selection
+
+0 of 33 qualifying MIDDLEs shift dominant category between ch and sh (C1305). When the same MIDDLE (e.g., "e", "dy", "ck") appears after ch vs after sh, it keeps the same category (THERMAL, CONTAINMENT, MARKING respectively). The sister pair achieves its category divergence entirely by selecting DIFFERENT MIDDLEs at different rates, not by changing what any individual MIDDLE means.
+
+This is the resolution: PREFIX is a vocabulary selector (which words to deploy) not a vocabulary transformer (what words mean). In process control terms: ch and sh send different instructions (different MIDDLEs), but any given instruction has the same meaning regardless of which sister dispatched it.
+
+### Cross-Lane Category Routing
+
+When ch and sh tokens transition to QO-lane tokens, the QO token's category differs (C1306, V=0.122, p=2.34e-5). ch routes more STAGING cargo (20.6% vs 12.9%) to the QO lane, while sh routes more THERMAL cargo (53.6% vs 45.0%). Sister identity shapes not just the token's own category but the categorical composition of the downstream execution channel.
+
+### Two-Atom PREFIX Instructions (Tier 3)
+
+The results support reading PREFIXes as two-atom instructions with a [VERB] + [TARGET] format:
+
+| PREFIX | Verb | Target | Dominant Category | Reading |
+|--------|------|--------|-------------------|---------|
+| ok | o (set/execute) | k (heat) | STAGING/THERMAL | "set heat parameters" |
+| ot | o (set/execute) | t (transfer) | MARKING/OPERATION | "set transfer routing" |
+| ch | c (adjust/calibrate) | h (watch) | OPERATION | "adjust monitoring" |
+| sh | s (sequence/step) | h (watch) | THERMAL/MARKING | "sequence monitoring" |
+| qo | q (?) | o (operate) | THERMAL (59%) | "thermal operation" |
+| ct | c (adjust) | t (transfer) | MONITORING (90%) | "calibrate transfer" |
+
+The verb distinction maps to control system operations: you SET a temperature (ok), you ADJUST a thermometer (ch). Different verbs on different subsystems. The base atom (k, t, h) determines WHICH subsystem the instruction targets; the lead atom determines WHAT action to take on that subsystem.
+
+### Additivity
+
+No three-way interaction exists between sister identity, category, and position (C1307). The sister category effect is additive with position: knowing the sister identity gives the same category information regardless of where in the line you are. This rules out models where sister pairs modulate category differently at different line positions (e.g., "ch selects THERMAL early but FLOW late").

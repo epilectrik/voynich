@@ -4,6 +4,156 @@
 
 ---
 
+## Version 4.62.48 (2026-02-24) - Phase 459: Sister Category Mechanism
+
+### Summary
+
+Phase 459: 6-test battery decomposing whether sister pair category divergence (C1298, C1299) is driven by positional placement or genuine categorical selection. **Overall: PARTIAL_MODE_SELECTION (4 PASS, 2 FAIL).** Headline: sister pair category divergence is position-independent and mechanistically driven by vocabulary SELECTION not TRANSFORMATION. ch/sh V retention 98.3%: position explains almost none of the category divergence (CATEGORY_GENUINE). ok/ot V retention 124.1%: position was actually MASKING divergence -- true category signal is stronger than raw measurement. 0/33 qualifying MIDDLEs shift dominant category between ch and sh (binom p=1.0): sister pairs diverge by choosing DIFFERENT MIDDLEs, not by changing what the same MIDDLE means (MIDDLE_DETERMINES_CATEGORY). Cross-lane cargo diverges: ch routes STAGING (20.6% vs 12.9%) to QO lane, sh routes THERMAL (53.6% vs 45.0%), V=0.122, p=2.34e-5. No three-way interaction (sister x category x position): ch/sh V range=0.009 perm p=1.0, ok/ot V range=0.114 perm p=1.0 -- sister category effect is additive with position. FAIL: T3 MIDDLE shift test confirms mechanism is selection not transformation (informative failure). FAIL: T6 no interaction detected. New constraints: C1303-C1307 (5 new, 1146->1151).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/SISTER_CATEGORY_MECHANISM/` -- 1 script + 1 results JSON |
+| **ADDED** | C1303-C1307 constraint files (5 new constraints, 1146->1151) |
+| **UPDATED** | `CLAUDE.md` -- 1146->1151 constraints, 458->459 phases, v4.62 |
+| **UPDATED** | `INDEX.md` -- 1146->1151 total, Phase 459 section added |
+| **UPDATED** | `currierB.bcsc.yaml` -- sister category mechanism section |
+| **UPDATED** | `INTERPRETATION_SUMMARY.md` -- sister category mechanism section |
+
+---
+
+## Version 4.61.47 (2026-02-24) - Phase 458: PREFIX Category Anatomy
+
+### Summary
+
+Phase 458: 8-test battery decomposing how individual PREFIXes predict 8-category operational labels. **Overall: PARTIAL_ANATOMY (5 PASS, 2 WEAK, 1 CONTROL_VIOLATED).** Headline: PREFIX-category association is strongly structured (V=0.311, chi2=15,598) and survives the tautology gate (T6: CMI=0.058 bits, 2.1% beyond base group). qo is 59% THERMAL (rank 1/32, near-pure channel). ct is 90% MONITORING. ok/ot sister pair diverges (V=0.105, p=4.0e-5): ok THERMAL-enriched, ot OPERATION-enriched. ch/sh diverge in B (V=0.121, p=9.4e-16) despite A-identity (C1268 V=0.021) -- survives section/position controls, mechanism is MIDDLE-level vocabulary breadth. BARE is THERMAL-depleted (4.1% vs 27.5%) and FLOW/STAGING-enriched (V=0.243) -- PREFIX slot is primary thermal injection mechanism. Channel symmetry discovered: EN (ch/sh + qo) parallels AX (ok/ot + ct) -- sister pair + categorically pure third member. WEAK: da/sa sub-Bonferroni (p=0.013), base-category alignment 27.6% (below 40% threshold). New constraints: C1297-C1302 (6 new, 1140->1146).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/PREFIX_CATEGORY_ANATOMY/` -- 1 script + 1 results JSON |
+| **ADDED** | C1297-C1302 constraint files (6 new constraints, 1140->1146) |
+| **UPDATED** | `CLAUDE.md` -- 1140->1146 constraints, 457->458 phases, v4.61 |
+| **UPDATED** | `INDEX.md` -- 1140->1146 total, Phase 458 section added |
+| **UPDATED** | `currierB.bcsc.yaml` -- PREFIX-category anatomy section |
+| **UPDATED** | `INTERPRETATION_SUMMARY.md` -- PREFIX category anatomy section |
+
+---
+
+## Version 4.60.46 (2026-02-24) - Phase 457: Paragraph Termination Trigger
+
+### Summary
+
+Phase 457: 8-test battery probing what triggers paragraph termination. **Overall: TERMINATION_MEMORYLESS (1 PASS, 0 WEAK, 7 FAIL).** Headline: no line-level feature predicts when a paragraph terminates. All 7 trigger hypotheses fail at Bonferroni p<0.00625: thermal level (length confound, Fisher p=0.236), B-track thermal (p=0.178), thermal step into final line (perm p=0.822), thermal budget (within-folio rho=-0.007 p=0.930), mode gate (chi2=1.19 p=0.276), category profile shift (perm p=0.400), folio prediction extension (F-test p=0.365, LOO decreases). Body is homogeneous at thermal/category grain until -am fires, extending C963 beyond role fractions. T4 within-folio test is definitive: no thermal budget governs paragraph duration. Sole PASS (T8): 3 tail product types (C1232) have distinct category profiles (chi2=139.1, perm p=0.001) -- tail FORM varies but tail TIMING does not. New constraints: C1295 (termination memoryless), C1296 (tail type category divergence). Termination is folio-programmed (C1239), not state-triggered.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/PARAGRAPH_TERMINATION_TRIGGER/` -- 1 script + 1 results JSON |
+| **ADDED** | C1295-C1296 constraint files (2 new constraints, 1138->1140) |
+| **UPDATED** | `CLAUDE.md` -- 1138->1140 constraints, 456->457 phases, v4.60 |
+| **UPDATED** | `INDEX.md` -- 1138->1140 total, Phase 457 section added |
+| **UPDATED** | `paragraph.psc.yaml` -- termination memoryless finding |
+| **UPDATED** | `INTERPRETATION_SUMMARY.md` -- paragraph termination section |
+
+---
+
+## Version 4.59.45 (2026-02-24) - Phase 456: Category-REGIME Integration
+
+### Summary
+
+Phase 456: 7-test battery + 1 calibration probing whether the 8-category system (C1250) integrates with the 4-REGIME classification (C179/C494). **Overall: CATEGORY_REGIME_PARTIAL (4 PASS, 0 WEAK, 2 FAIL, 1 SKIP).** Headline: Category-REGIME association is strong (chi2=526, V=0.106) but **kernel-mediated** -- after residualizing on k/h/e composition, Fisher p=0.061 (C1291). THERMAL kernel R2=0.779, TRANSITION=0.546, FLOW=0.409. The association survives section control (C1292, within-section chi2=216.4) but not kernel residualization. Categories genuinely discriminate beyond role profiles (C1293, Fisher p=7.5e-8, category JSD > role JSD in 5/6 REGIME pairs). **Critical negative: categories do NOT extend C1169 AXM model** (C1294, all |rho|<0.14 with residuals) -- validates C1169 closure. REGIME_1=THERMAL-dominant (29.7%), REGIME_2=FLOW-dominant (28.1%), REGIME_4=OPERATION/TRANSITION-dominant. T3 circularity gate FAILED, capping overall verdict at PARTIAL.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/CATEGORY_REGIME_INTEGRATION/` -- 1 script + 1 results JSON |
+| **ADDED** | C1291-C1294 constraint files (4 new constraints, 1134->1138) |
+| **UPDATED** | `CLAUDE.md` -- 1134->1138 constraints, 455->456 phases, v4.59 |
+| **UPDATED** | `INDEX.md` -- 1134->1138 total, Phase 456 section added |
+| **UPDATED** | `currierB.bcsc.yaml` -- category-REGIME integration section |
+| **UPDATED** | `INTERPRETATION_SUMMARY.md` -- kernel mediation finding |
+
+---
+
+## Version 4.58.44 (2026-02-24) - Phase 455: Category Mechanism Decomposition
+
+### Summary
+
+Phase 455: 8-test battery decomposing category mechanisms across three tiers: TRANSITION anti-escape, forbidden transition structure, and paragraph-level dynamics. **Overall: CATEGORY_MECHANISM_PERVASIVE (6/8 PASS, 0 WEAK, 2 FAIL).** Headline: TRANSITION anti-escape mechanism solved -- role redirection to AUX (1.24x) and FQ (1.13x), NOT EN self-loop (C1285). Expert hypothesis rejected: EN successor rate 0.403 for TRANSITION vs 0.476 baseline. Category transition grammar is strongly structured (C1286, chi2=526, p~10^-81): self-loops enriched (MARKING +10.4, THERMAL +6.0), FLOW->TRANSITION enriched (+6.7), THERMAL->TRANSITION depleted (-3.4). Paragraph headers are MARKING-enriched 2.44x (C1287), contrasting line entries (THERMAL-enriched). Within-folio paragraphs share category profiles (C1288, z=-4.92). **THERMAL/TRANSITION predict AXM dwell (C1289, rho=+/-0.52), partially resolving C1169 27% residual.** Paragraph mode confirmed at paragraph level (C1290, V=0.114). FAILs: TRANSITION does NOT cluster (T2, per-token mechanism); forbidden transitions are cross-category (T3, MARKING-target dominated).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/CATEGORY_MECHANISM_DECOMPOSITION/` -- 1 script + 1 results JSON |
+| **ADDED** | C1285-C1290 constraint files (6 new constraints, 1128->1134) |
+| **UPDATED** | `CLAUDE.md` -- 1128->1134 constraints, 454->455 phases, v4.58 |
+| **UPDATED** | `INDEX.md` -- 1128->1134 total, Phase 455 section added |
+| **UPDATED** | `currierB.bcsc.yaml` -- category mechanism decomposition section |
+| **UPDATED** | `azc_b_activation.act.yaml` -- TRANSITION role redirection mechanism |
+
+---
+
+## Version 4.57.43 (2026-02-24) - Phase 454: Category B Execution
+
+### Summary
+
+Phase 454: 8-test battery probing whether the 8-category operational system (C1250) organizes Currier B's execution grammar. **Overall: CATEGORY_EXECUTES (7/7 PASS, 1 CALIBRATION).** Headline: THERMAL->escape is fully PREFIX-mediated (C1277) -- THERMAL MIDDLEs are 44.1% qo-prefixed, and partial correlation collapses (rho=-0.081) after controlling for qo composition. Chain solved: THERMAL->qo-PREFIX->QO lane (zero hazard)->escape. Category adds 18.6% instruction class entropy reduction BEYOND PREFIX (C1278) -- complementary axes explaining 71.7% together. Mode A lines are THERMAL-enriched (28.9%) = escape-capable; Mode B lines are TRANSITION-enriched (17.4%) = escape-restrictive (C1279). **Strongest effect: hazard concentrates in FLOW/CONTAINMENT (V=0.560, C1280) -- THERMAL is hazard-immune (2.6%).** TRANSITION anti-escape is PREFIX-independent (C1281, partial=-0.586 survives) -- asymmetric mechanism, unknown. Category predicts section (6/8 Bonferroni, C1282) and differentiates entry vs exit zones (V=0.141, C1283). Kernel calibration confirms consistency (C1284, not scored).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/CATEGORY_B_EXECUTION/` -- 1 script + 1 results JSON |
+| **ADDED** | C1277-C1284 constraint files (8 new constraints, 1120->1128) |
+| **UPDATED** | `CLAUDE.md` -- 1120->1128 constraints, 453->454 phases, v4.57 |
+| **UPDATED** | `INDEX.md` -- 1120->1128 total, Phase 454 section added |
+| **UPDATED** | `currierB.bcsc.yaml` -- category_execution section added |
+| **UPDATED** | `azc_b_activation.act.yaml` -- THERMAL mediation mechanism added |
+
+---
+
+## Version 4.56.42 (2026-02-24) - Phase 453: AZC Category Scattershot
+
+### Summary
+
+Phase 453: 8-test scattershot battery probing whether the 8-category operational system (C1250) organizes AZC's positional structure. **Overall: AZC_CATEGORY_STRUCTURED (5/8 PASS, 1 WEAK, 2 FAIL).** AZC zones specialize by category (C1269, V=0.084) and families diverge (C1270, V=0.122). AZC mediates bridge/dark category sorting -- bridge MIDDLEs sorted by category within zones (C1272, p=0.0003), dark not (p=0.198). AZC-exclusive vocabulary is MARKING/THERMAL enriched (C1273, V=0.382). **Headline: THERMAL category predicts high B escape (C1274, rho=+0.780), TRANSITION predicts low escape (rho=-0.598) -- category is a cross-system organizing principle connecting A registry through AZC to B dynamics.** Two nulls: AZC zones do NOT differentiate at atom level (C1271, 0/8 Bonferroni) and no within-zone spatial coherence (C1275, d=-0.173). All AZC sections converge on A Pharma atom profile (C1276, WEAK).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/AZC_CATEGORY_SCATTERSHOT/` -- 1 script + 1 results JSON |
+| **ADDED** | C1269-C1276 constraint files (8 new constraints, 1112->1120) |
+| **UPDATED** | `CLAUDE.md` -- 1112->1120 constraints, 452->453 phases, v4.56 |
+| **UPDATED** | `INDEX.md` -- 1112->1120 total, Phase 453 section added |
+| **UPDATED** | `azc_activation.act.yaml` -- v1.2->v1.3, category organization added |
+| **UPDATED** | `azc_b_activation.act.yaml` -- v1.2->v1.3, category-escape correlation added |
+
+---
+
+## Version 4.55.41 (2026-02-24) - Phase 452: A Category Scattershot
+
+### Summary
+
+Phase 452: 8-test scattershot battery probing whether the 8-category operational system (C1250) organizes Currier A's registry structure. **Overall: CATEGORY_ORGANIZED (6/8 PASS, 2 FAIL).** A records (C1261, d=9.7) and paragraphs (C1263, d=12.5) are strongly category-coherent. RI extension characters predict PP base category (C1262, V=0.221). Bridge vs dark pipeline MIDDLEs have divergent category profiles (C1264, V=0.441, survives length control). Atom coherence within records is independent of category (C1265, residual +0.291). Atom decomposition breaks C946's MIDDLE-level uniformity barrier (C1266, 5/7 AXIS clusters differentiate sections). **Two clean nulls:** Mode A/B distinction does not propagate into A records (C1267, p=0.204) -- mode is B-execution only. Prefix ch/sh does not select category context (C1268, JSD=0.0002) -- prefix and category are orthogonal.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/A_CATEGORY_SCATTERSHOT/` -- 1 script + 1 results JSON |
+| **ADDED** | C1261-C1268 constraint files (8 new constraints, 1104->1112) |
+| **UPDATED** | `CLAUDE.md` -- 1104->1112 constraints, 451->452 phases, v4.55 |
+| **UPDATED** | `INDEX.md` -- 1104->1112 total, Phase 452 section added |
+
+---
+
 ## Version 4.54.40 (2026-02-24) - Phase 451: Gradient Decomposition
 
 ### Summary

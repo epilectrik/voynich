@@ -3,8 +3,8 @@
 meta:
   name: "Paragraph Structural Contract"
   acronym: "PSC"
-  version: "1.1"
-  date: "2026-02-15"
+  version: "1.2"
+  date: "2026-02-24"
   status: "ACTIVE"
   layer_type: "cross-system structural unit contract"
   derived_from: "Tier 0-2 constraints (structural)"
@@ -121,7 +121,9 @@ guarantees:
       EN fraction rho: -0.023 (p=0.350). FL fraction rho: -0.050 (p=0.068).
       CC fraction rho: -0.049 (p=0.076). All collapse to ~0 after length control.
       Only length progression (rho=-0.229, p=0.001) is systematic.
-    provenance: "C963"
+      Extended to thermal/category grain (C1295): e_frac, ke_ratio, suffix mode,
+      and 8-category profile are all position-independent in the body.
+    provenance: "C963, C1295"
 
   - id: "POOL_RELATIONSHIP"
     statement: |
@@ -163,6 +165,19 @@ guarantees:
       Effect is tiny and driven by gallows tokens (87.7% AXM).
       Macro-dynamics operate at folio/section scale, not paragraph scale.
     provenance: "C1022"
+
+  - id: "TERMINATION_MEMORYLESS"
+    statement: |
+      Paragraph termination has no detectable line-level trigger.
+      7/7 trigger hypotheses fail (Bonferroni p<0.00625): thermal level
+      (length confound), B-track thermal, thermal step, thermal budget
+      (within-folio rho=-0.007), mode gate, category shift, folio prediction.
+      -am (C1237, 5.19x enriched) is the termination MARKER but nothing
+      in the body predicts WHEN it fires. Termination is folio-programmed
+      (C1239), not state-triggered. The 3 tail product types (C1232)
+      have distinct category profiles (C1296, chi2=139.1) -- the FORM
+      of shutdown varies by operational theme but the DECISION is memoryless.
+    provenance: "C1295, C1296, C1237, C1239"
 
   - id: "CLUSTER_SELECTIVE"
     statement: |
@@ -214,6 +229,10 @@ invariants:
   - id: "BODY_LENGTH_SHRINKAGE"
     statement: "Lines shrink toward paragraph end: rho=-0.229, p=0.001 — sole systematic body progression"
     provenance: "C963"
+
+  - id: "TERMINATION_NO_TRIGGER"
+    statement: "No line-level feature predicts termination: thermal (7 tests FAIL), modal, categorical all non-significant. Folio-programmed via C1239."
+    provenance: "C1295"
 
 # ============================================================
 cross_system_manifestation:
@@ -435,6 +454,14 @@ disallowed_interpretations:
     claim: "Paragraphs cluster hazard violations"
     refutation: "C1027: paragraph clustering p=0.320; folio p=0.688; no spatial concentration"
 
+  - id: "NOT_THERMAL_TRIGGERED_TERMINATION"
+    claim: "Paragraph termination is triggered by thermal state (cooling threshold, budget, or step)"
+    refutation: "C1295: All thermal triggers fail -- level (length confound), step (perm p=0.822), budget (within-folio rho=-0.007). Termination is folio-programmed, not state-driven."
+
+  - id: "NOT_CATEGORY_SHUTDOWN_SEQUENCE"
+    claim: "Paragraph termination is preceded by a distinctive category or mode sequence"
+    refutation: "C1295: Category profile at termination (perm p=0.400) and mode at termination (chi2=1.19, p=0.276) are both non-significant. Body lines are structurally equivalent until -am."
+
 # ============================================================
 provenance:
 
@@ -463,6 +490,9 @@ provenance:
       - {id: "C963", topic: "Body homogeneity (length only rho=-0.229)"}
       - {id: "C1022", topic: "Macro-dynamics neutral (AXM delta +0.028, gallows-driven)"}
       - {id: "C1027", topic: "Hazard archaeology (no paragraph clustering p=0.320)"}
+    termination:
+      - {id: "C1295", topic: "Paragraph termination memoryless (7/7 triggers FAIL, no line-level predictor)"}
+      - {id: "C1296", topic: "Tail type category divergence (chi2=139.1, form varies but timing does not)"}
     combinatorial:
       - {id: "C1052", topic: "B paragraph cluster selectivity (z=-2.614, p=0.007)"}
       - {id: "C1054", topic: "Affordance bin gradient invariance (HUB ~64% all quintiles)"}
@@ -521,9 +551,9 @@ provenance:
       ht_related:
         - {id: "C927", topic: "HT elevation in label contexts (2.42x vs paragraphs)"}
 
-  total_owned: 20
+  total_owned: 22
   total_referenced: 36
-  total_coverage: 56
+  total_coverage: 58
 
 # ============================================================
 # Summary statement
@@ -535,7 +565,10 @@ summary: |
   complementary entries that diversify within selected compatibility clusters.
   In Currier B: paragraphs are independent mini-programs with header-body
   architecture, parallel Mode A/B tracks with thermal state continuity, and
-  kernel-predicted operation types.
+  kernel-predicted operation types. Termination is memoryless: no line-level
+  thermal, modal, or categorical feature predicts when -am fires. The
+  decision to stop is folio-programmed (C1239), though the form of shutdown
+  varies by operational category (C1296).
 
   Both systems show matching 5-cluster taxonomy, header-body enrichment,
   and pool-based vocabulary correspondence. Paragraphs operate independently

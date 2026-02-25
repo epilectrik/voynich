@@ -3,8 +3,8 @@
 meta:
   name: "Currier A Structural Contract"
   acronym: "CASC"
-  version: "2.0"
-  date: "2026-02-14"
+  version: "2.1"
+  date: "2026-02-24"
   status: "ACTIVE"
   derived_from: "Tier-2 constraints only"
   governance: |
@@ -77,7 +77,8 @@ morphology:
     function: "Control-flow participation / functional type marker"
     mutual_exclusion: true
     semantic_meaning: false  # Markers, not categories
-    provenance: "C235, C466-C467"
+    category_orthogonal: true  # C1268: ch/sh context categories identical (JSD=0.0002, p=0.480)
+    provenance: "C235, C466-C467, C1268"
 
   sister:
     pairs:
@@ -211,10 +212,44 @@ morphology:
             strongest_output: ["-ry (0.20x = 5x OUTPUT bias)"]
             provenance: "C839"
 
-          provenance: "C831, C832, C833, C835, C836, C837, C838, C839"
+          extension_category_coupling:  # C1262
+            statement: "RI extension characters predict the operational category of the PP base"
+            chi_squared: 165.2
+            cramers_v: 0.221
+            p_value: 0.001
+            n_decomposed: 486
+            top_associations:
+              h: "MARKING (50%)"
+              k: "OPERATION (42%)"
+              o: "MONITORING (26%)"
+              e: "THERMAL (24%)"
+            interpretation: "Extensions are operationally coupled, not arbitrary identity markers"
+            provenance: "C1262"
+
+          provenance: "C831, C832, C833, C835, C836, C837, C838, C839, C1262"
 
       provenance: "C498, C498.a, C498.b, C498.c, C498.d, C513-NOTE-B, C528, C831-C839"
       revision_date: "2026-01-29"
+
+    # Operational category organization (C1261, C1265)
+    category_organization:
+      statement: "PP MIDDLEs within records and paragraphs cluster by operational category"
+      categories: ["THERMAL", "CONTAINMENT", "FLOW", "MONITORING", "OPERATION", "TRANSITION", "STAGING", "MARKING"]
+      record_coherence:  # C1261
+        obs_entropy: 1.810
+        null_entropy: 1.886
+        cohen_d: 9.7
+        p_value: "<0.001"
+        n_records: 1539
+      atom_coherence:  # C1265
+        statement: "Atom-profile coherence within records is INDEPENDENT of category"
+        obs_cosine: 0.272
+        null_cosine: 0.238
+        cohen_d: 11.6
+        same_category_residual: 0.291  # atom coherence persists after category control
+        interpretation: "AXIS clusters and categories are complementary organizational axes"
+      category_coverage: "99.8% of PP tokens assigned to one of 8 categories"
+      provenance: "C1261, C1265"
 
     # Gallows patterns (C529-C530)
     gallows:
@@ -417,9 +452,19 @@ paragraph_structure:
         extends: "C476 coverage optimality"
         provenance: "C1041"
 
+      category_specialization:  # C1263
+        statement: "Paragraphs specialize by operational category (entropy below null)"
+        obs_entropy: 2.533
+        null_entropy: 2.623
+        cohen_d: 12.5
+        p_value: "<0.001"
+        n_paragraphs: 242
+        interpretation: "Paragraphs are category-themed, not just cluster-selective"
+        provenance: "C1263"
+
       ordering_not_compositional: true  # H4 FAIL (p=0.223)
       linkers_not_compositional: true  # H7 FAIL (p=0.151)
-      provenance: "C1039, C1040, C1041"
+      provenance: "C1039, C1040, C1041, C1263"
 
   ab_relationship:  # C846
     model: "Pool-based, not address-based"
@@ -556,8 +601,17 @@ participation:
           bridge_disjoint: "0 shared MIDDLEs with bridge set (C1139)"
           atom_substrate: "Built from bridge atoms (86% of atom types, C1141)"
           bridge_anticorrelation: "Folio-level dark-pipeline and bridge token rates anti-correlate (r=-0.865, within-section r=-0.82 to -0.88); complementary distribution across the A->B pipeline (C1146)"
+          category_divergence:  # C1264
+            statement: "Bridge and dark pipeline MIDDLEs have divergent category profiles"
+            cramers_v: 0.441
+            p_value: 0.001
+            bridge_enriched: "TRANSITION (20% vs 2%), CONTAINMENT (8% vs 1%), MONITORING (7% vs 2%)"
+            dark_enriched: "MARKING (36% vs 11%), THERMAL (19% vs 12%)"
+            length_controlled: true  # survives short (p=0.0002) and medium (p=0.001) bins
+            interpretation: "Pipeline channel is category-structured -- bridges carry state-change vocab, dark carries annotation vocab"
+            provenance: "C1264"
           note: "B-side behavioral characterization (C1134 frequency modulation, C1137 HT substrate, C1138 distinct grammar, C1147 interior enrichment, C1148 hyper-modulation) lives in BCSC"
-          provenance: "C1135, C1136, C1139, C1140, C1141, C1146"
+          provenance: "C1135, C1136, C1139, C1140, C1141, C1146, C1264"
 
     provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016, C1135, C1136, C1139, C1140, C1141, C1146"
 
@@ -589,7 +643,17 @@ positional:
     suppression: "2.42x lower overlap at boundaries"
     cross_section_overlap: "9.7% Jaccard"
     hard_discontinuity: true
-    provenance: "C260, C421"
+    atom_level_differentiation:  # C1266
+      statement: "Sections differ at atom level despite MIDDLE-level uniformity (C946 cosine 0.997)"
+      significant_axes: 5  # of 7 AXIS clusters
+      profiles:
+        H: "CLOSURE/MONITORING-heavy (closure 0.129, monitoring 0.111)"
+        P: "STABILITY/ENERGY-heavy (stability 0.198, energy 0.175)"
+        T: "ITERATION/ENERGY-heavy (iteration 0.336, energy 0.183)"
+      universal_axes: ["ITERATION (p=0.069)", "STRUCTURAL (p=0.276)"]
+      interpretation: "Atom decomposition breaks C946 barrier -- sections were always specialized at sub-MIDDLE resolution"
+      provenance: "C1266"
+    provenance: "C260, C421, C1266"
 
   control_operator_boundary_bias:
     boundary_proximity_p: 0.0099
@@ -634,6 +698,16 @@ disallowed:
   - interpretation: "A is generative or producible"
     reason: "A is maintained, not produced"
     status: "FALSIFIED"
+
+  - interpretation: "B mode A/B distinction organizes A records"
+    reason: "Mode affinity shows no within-record clustering (p=0.204, d=0.85)"
+    status: "FALSIFIED"
+    provenance: "C1267"
+
+  - interpretation: "Prefix family (ch/sh) selects operational category context"
+    reason: "Identical category distributions (JSD=0.0002, V=0.021, p=0.480)"
+    status: "FALSIFIED"
+    provenance: "C1268"
 
 # ============================================================
 
@@ -692,6 +766,10 @@ provenance:
     - "C888"  # Section-specific WITHOUT-RI function
     - "C889"  # ct-ho reserved PP vocabulary
     - "C898"  # A PP internal structure (positional preferences)
+    - "C1261"  # Record category coherence (d=9.7)
+    - "C1262"  # RI extension category coupling (V=0.221)
+    - "C1265"  # Atom-profile coherence independent of category (d=11.6)
+    - "C1268"  # PREFIX-category orthogonality (null)
 
   line_structure:
     - "C250"  # INVALIDATED (was 64.1% repetition - transcriber artifact)
@@ -720,6 +798,7 @@ provenance:
     - "C1039"  # Paragraph cluster selectivity
     - "C1040"  # Folio-level paragraph compatibility coherence
     - "C1041"  # Paragraph complementary diversification
+    - "C1263"  # Paragraph category specialization (d=12.5)
 
   participation:
     - "C299"  # Section distribution in B
@@ -743,6 +822,8 @@ provenance:
     - "C1139"  # Bridge-dark pipeline MIDDLE-level disjointness
     - "C1140"  # PP pipeline four-way partition (85+4+300+15=404)
     - "C1141"  # Bridge atom substrate for dark-pipeline compounds (86% types, 96.5% coverage)
+    - "C1264"  # Bridge vs dark pipeline category divergence (V=0.441)
+    - "C1267"  # Mode A/B distinction is B-execution only (null)
 
   positional:
     - "C260"  # Section isolation
@@ -751,6 +832,7 @@ provenance:
     - "C421"  # Boundary suppression
     - "C424"  # Clustered adjacency
     - "C484"  # Control operator bias
+    - "C1266"  # Section atom-level differentiation (5/7 axes, breaks C946 barrier)
 
   disallowed:
     - "C225"  # No grammar
@@ -764,5 +846,7 @@ provenance:
     - "C476"  # Maintained not produced
     - "C483"  # Ordinal only
     - "C484"  # No header interpretation
+    - "C1267"  # Mode A/B distinction B-execution only
+    - "C1268"  # PREFIX-category orthogonal
 
 # ============================================================

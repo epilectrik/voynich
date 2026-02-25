@@ -3,12 +3,12 @@
 meta:
   name: "AZC Positional Classification Contract"
   acronym: "AZC-ACT"
-  version: "1.2"
-  date: "2026-02-06"
+  version: "1.3"
+  date: "2026-02-24"
   status: "ACTIVE"
   layer_type: "mapping contract"
   derived_from: "Tier-2 constraints only"
-  audit_note: "v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31) finding that AZC is static lookup table with no independent positional effect."
+  audit_note: "v1.3: Category organization added (C1269-C1276, Phase 453). Zones specialize by category. Family category divergence. Bridge/dark sorting mechanism. THERMAL predicts escape. v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31)."
   governance: |
     AZC-ACT is NOT authoritative. Constraints are authoritative.
     AZC-ACT describes HOW vocabulary is positionally classified in AZC.
@@ -52,6 +52,22 @@ guarantees:
     statement: "AZC legality mechanism is family-agnostic"
     provenance: "C430-C436, C441-C443"
 
+  - id: "ZONE_CATEGORY_SPECIALIZATION"
+    statement: "AZC zones (R, C, S, P) have statistically distinct operational category profiles (V=0.084, p=0.000180)"
+    provenance: "C1269"
+
+  - id: "FAMILY_CATEGORY_DIVERGENCE"
+    statement: "Zodiac and A/C families have distinct category profiles (V=0.122, p=0.000001) despite family-agnostic mechanism"
+    provenance: "C1270"
+
+  - id: "BRIDGE_DARK_ZONE_SORTING"
+    statement: "AZC zones mediate bridge/dark category sorting; bridge sorted by category within zones (p=0.0003), dark not (p=0.198)"
+    provenance: "C1272"
+
+  - id: "EXCLUSIVE_VOCABULARY_SPECIALIZED"
+    statement: "356 AZC-exclusive MIDDLEs are MARKING/THERMAL enriched, TRANSITION-depleted (V=0.382 vs bridge)"
+    provenance: "C1273"
+
 # ============================================================
 invariants:
   monotonicity:
@@ -69,6 +85,55 @@ invariants:
   scaffold_independence:
     statement: "Legality zones are independent of scaffold presentation"
     provenance: "C430-C436"
+
+  zone_atom_uniformity:
+    statement: "AZC zones share the same atom-level (character) composition despite category-level specialization"
+    provenance: "C1271"
+
+  no_spatial_coherence:
+    statement: "Category assignment is spatially random within zones; organization is zone-grain not line-grain"
+    provenance: "C1275"
+
+  pharma_atom_convergence:
+    statement: "All AZC sections converge on Currier A Pharma section atom profile (r>0.916)"
+    provenance: "C1276"
+
+# ============================================================
+category_organization:
+  provenance: "C1269-C1276"
+
+  zone_category_profiles:
+    statement: "Zones specialize by operational category (chi2=52.18, V=0.084, p=0.000180)"
+    R: "TRANSITION/FLOW-heavy"
+    C: "TRANSITION/OPERATION-enriched"
+    P: "TRANSITION/STAGING-heavy"
+    S: "TRANSITION/FLOW/OPERATION"
+    provenance: "C1269"
+
+  family_category_profiles:
+    statement: "Zodiac vs A/C families differ in category content despite identical mechanism"
+    zodiac: "TRANSITION/FLOW/THERMAL-enriched"
+    ac: "TRANSITION/STAGING/OPERATION-enriched"
+    provenance: "C1270"
+
+  sorting_mechanism:
+    statement: "AZC zones mediate bridge/dark category sorting"
+    bridge: "Category-zone coupled (p=0.0003), R-dominated (47.5%)"
+    dark: "Category-zone uncoupled (p=0.198), S-shifted (26.9%)"
+    implication: "AZC positional structure sorts bridge vocabulary by category for B grammar channel"
+    provenance: "C1272"
+
+  exclusive_vocabulary:
+    statement: "356 AZC-exclusive MIDDLEs form categorically specialized population"
+    profile: "MARKING 27.2%, THERMAL 27.0%, TRANSITION 6.5%"
+    divergence: "V=0.382 vs bridge, V=0.210 vs dark"
+    provenance: "C1273"
+
+  atom_level:
+    zone_uniformity: "Zones do NOT differentiate at atom level (0/8 AXIS at Bonferroni)"
+    section_convergence: "All AZC sections converge on A Pharma atom profile (r>0.916)"
+    grain: "Category structure is MIDDLE-level, not character-level"
+    provenance: "C1271, C1276"
 
 # ============================================================
 inputs:
@@ -258,6 +323,14 @@ disallowed:
     reason: "AZC restricts, does not expand. Only A-record MIDDLEs are legal for B execution."
     provenance: "C481, C502"
 
+  - interpretation: "AZC diagram lines are thematically organized"
+    reason: "No within-line category coherence (C1275, p=0.568). Category structure is zone-grain, not line-grain."
+    provenance: "C1275"
+
+  - interpretation: "AZC zones differ at atom (character) level"
+    reason: "0/8 AXIS clusters differentiate zones at Bonferroni (C1271). Category specialization is MIDDLE-level only."
+    provenance: "C1271"
+
 # ============================================================
 
 annotations:
@@ -345,5 +418,15 @@ provenance:
     - "C384"  # No entry-level A-B coupling
     - "C443"  # Monotonicity source
     - "C444"  # Position independence
+
+  category_organization:
+    - "C1269"  # Zone category specialization (V=0.084)
+    - "C1270"  # Family category divergence (V=0.122)
+    - "C1271"  # Zone atom-level uniformity (null)
+    - "C1272"  # Bridge/dark zone sorting (V=0.117)
+    - "C1273"  # AZC-exclusive MARKING/THERMAL vocabulary
+    - "C1274"  # Category predicts B escape (THERMAL rho=+0.780)
+    - "C1275"  # No within-zone spatial coherence (null)
+    - "C1276"  # AZC sections converge on Pharma atom profile
 
 # ============================================================

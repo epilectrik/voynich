@@ -1,0 +1,2244 @@
+{
+  "atoms": {
+    "y": {
+      "gloss": "end",
+      "kernel": null,
+      "tokens": 458
+    },
+    "l": {
+      "gloss": "late",
+      "kernel": "K",
+      "tokens": 853
+    },
+    "o": {
+      "gloss": "near",
+      "kernel": null,
+      "tokens": 376
+    },
+    "e": {
+      "gloss": "cool",
+      "kernel": "E",
+      "tokens": 845
+    },
+    "g": {
+      "gloss": "complete",
+      "kernel": null,
+      "tokens": 8
+    },
+    "s": {
+      "gloss": "break",
+      "kernel": null,
+      "tokens": 142
+    },
+    "k": {
+      "gloss": "heat",
+      "kernel": "K",
+      "tokens": 2081
+    },
+    "h": {
+      "gloss": "watch",
+      "kernel": "H",
+      "tokens": 48
+    },
+    "r": {
+      "gloss": "mid",
+      "kernel": "K",
+      "tokens": 749
+    },
+    "i": {
+      "gloss": "early",
+      "kernel": null,
+      "tokens": 137
+    },
+    "p": {
+      "gloss": "pause",
+      "kernel": null,
+      "tokens": 47
+    },
+    "d": {
+      "gloss": "mark",
+      "kernel": "H",
+      "tokens": 312
+    },
+    "t": {
+      "gloss": "transfer",
+      "kernel": null,
+      "tokens": 574
+    },
+    "a": {
+      "gloss": "yield",
+      "kernel": null,
+      "tokens": 63
+    },
+    "f": {
+      "gloss": "flag",
+      "kernel": null,
+      "tokens": 17
+    },
+    "c": {
+      "gloss": "adjust",
+      "kernel": null,
+      "tokens": 52
+    },
+    "m": {
+      "gloss": "final",
+      "kernel": null,
+      "tokens": 76
+    },
+    "x": {
+      "gloss": "diagram",
+      "kernel": null,
+      "tokens": 12
+    },
+    "n": {
+      "gloss": "halt",
+      "kernel": null,
+      "tokens": 7
+    }
+  },
+  "proposed_atoms": {
+    "o": "vessel",
+    "c": "adjust",
+    "n": "halt"
+  },
+  "compounds": [
+    {
+      "middle": "edy",
+      "tokens": 1763,
+      "gloss": "batch",
+      "kernel": null,
+      "decomposition": [
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "d",
+          "mark"
+        ],
+        [
+          "y",
+          "end"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "aiin",
+      "tokens": 831,
+      "gloss": "settle",
+      "kernel": null,
+      "decomposition": [
+        [
+          "a",
+          "yield"
+        ],
+        [
+          "i",
+          "early"
+        ],
+        [
+          "i",
+          "early"
+        ],
+        [
+          "n",
+          "halt"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ey",
+      "tokens": 769,
+      "gloss": "set",
+      "kernel": "E",
+      "decomposition": [
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "y",
+          "end"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ol",
+      "tokens": 759,
+      "gloss": "continue",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "o",
+          "near"
+        ],
+        [
+          "l",
+          "late"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ar",
+      "tokens": 670,
+      "gloss": "release",
+      "kernel": null,
+      "decomposition": [
+        [
+          "a",
+          "yield"
+        ],
+        [
+          "r",
+          "mid"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "eey",
+      "tokens": 615,
+      "gloss": "deep",
+      "kernel": "E",
+      "decomposition": [
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "y",
+          "end"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "dy",
+      "tokens": 594,
+      "gloss": "seal",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "d",
+          "mark"
+        ],
+        [
+          "y",
+          "end"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "iin",
+      "tokens": 560,
+      "gloss": "iterate",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "i",
+          "early"
+        ],
+        [
+          "i",
+          "early"
+        ],
+        [
+          "n",
+          "halt"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "al",
+      "tokens": 520,
+      "gloss": "gather",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "a",
+          "yield"
+        ],
+        [
+          "l",
+          "late"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "or",
+      "tokens": 436,
+      "gloss": "portion",
+      "kernel": null,
+      "decomposition": [
+        [
+          "o",
+          "near"
+        ],
+        [
+          "r",
+          "mid"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ke",
+      "tokens": 421,
+      "gloss": "steady",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "k",
+          "heat"
+        ],
+        [
+          "e",
+          "cool"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ain",
+      "tokens": 419,
+      "gloss": "intake",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "a",
+          "yield"
+        ],
+        [
+          "i",
+          "early"
+        ],
+        [
+          "n",
+          "halt"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ed",
+      "tokens": 377,
+      "gloss": "discharge",
+      "kernel": "E",
+      "decomposition": [
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "d",
+          "mark"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ch",
+      "tokens": 351,
+      "gloss": "check",
+      "kernel": "H",
+      "decomposition": [
+        [
+          "c",
+          "adjust"
+        ],
+        [
+          "h",
+          "watch"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "eo",
+      "tokens": 340,
+      "gloss": "open",
+      "kernel": "E",
+      "decomposition": [
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "o",
+          "near"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "eol",
+      "tokens": 281,
+      "gloss": "sustain",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "o",
+          "near"
+        ],
+        [
+          "l",
+          "late"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "in",
+      "tokens": 264,
+      "gloss": "link",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "i",
+          "early"
+        ],
+        [
+          "n",
+          "halt"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ck",
+      "tokens": 196,
+      "gloss": "hard",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "c",
+          "adjust"
+        ],
+        [
+          "k",
+          "heat"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ai",
+      "tokens": 174,
+      "gloss": "open",
+      "kernel": null,
+      "decomposition": [
+        [
+          "a",
+          "yield"
+        ],
+        [
+          "i",
+          "early"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "od",
+      "tokens": 173,
+      "gloss": "precise",
+      "kernel": null,
+      "decomposition": [
+        [
+          "o",
+          "near"
+        ],
+        [
+          "d",
+          "mark"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "am",
+      "tokens": 172,
+      "gloss": "finalize",
+      "kernel": null,
+      "decomposition": [
+        [
+          "a",
+          "yield"
+        ],
+        [
+          "m",
+          "final"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ek",
+      "tokens": 166,
+      "gloss": "exact",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "k",
+          "heat"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "kch",
+      "tokens": 148,
+      "gloss": "pulse",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "k",
+          "heat"
+        ],
+        [
+          "c",
+          "adjust"
+        ],
+        [
+          "h",
+          "watch"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ee",
+      "tokens": 146,
+      "gloss": "long",
+      "kernel": "E",
+      "decomposition": [
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "e",
+          "cool"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "eeo",
+      "tokens": 130,
+      "gloss": "wide",
+      "kernel": "E",
+      "decomposition": [
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "o",
+          "near"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ckh",
+      "tokens": 127,
+      "gloss": "firm",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "c",
+          "adjust"
+        ],
+        [
+          "k",
+          "heat"
+        ],
+        [
+          "h",
+          "watch"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "sh",
+      "tokens": 109,
+      "gloss": "verify",
+      "kernel": "H",
+      "decomposition": [
+        [
+          "s",
+          "break"
+        ],
+        [
+          "h",
+          "watch"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "opch",
+      "tokens": 107,
+      "gloss": "operate",
+      "kernel": "H",
+      "decomposition": [
+        [
+          "o",
+          "near"
+        ],
+        [
+          "p",
+          "pause"
+        ],
+        [
+          "c",
+          "adjust"
+        ],
+        [
+          "h",
+          "watch"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ct",
+      "tokens": 91,
+      "gloss": "control",
+      "kernel": null,
+      "decomposition": [
+        [
+          "c",
+          "adjust"
+        ],
+        [
+          "t",
+          "transfer"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "eck",
+      "tokens": 88,
+      "gloss": "rigid",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "c",
+          "adjust"
+        ],
+        [
+          "k",
+          "heat"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "te",
+      "tokens": 87,
+      "gloss": "gather",
+      "kernel": "E",
+      "decomposition": [
+        [
+          "t",
+          "transfer"
+        ],
+        [
+          "e",
+          "cool"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "eed",
+      "tokens": 84,
+      "gloss": "extended",
+      "kernel": "E",
+      "decomposition": [
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "d",
+          "mark"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "eod",
+      "tokens": 80,
+      "gloss": "stand",
+      "kernel": "E",
+      "decomposition": [
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "o",
+          "near"
+        ],
+        [
+          "d",
+          "mark"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "pch",
+      "tokens": 79,
+      "gloss": "pause",
+      "kernel": "H",
+      "decomposition": [
+        [
+          "p",
+          "pause"
+        ],
+        [
+          "c",
+          "adjust"
+        ],
+        [
+          "h",
+          "watch"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "lch",
+      "tokens": 74,
+      "gloss": "strip",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "l",
+          "late"
+        ],
+        [
+          "c",
+          "adjust"
+        ],
+        [
+          "h",
+          "watch"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ok",
+      "tokens": 70,
+      "gloss": "seal",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "o",
+          "near"
+        ],
+        [
+          "k",
+          "heat"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "tch",
+      "tokens": 65,
+      "gloss": "pound",
+      "kernel": null,
+      "decomposition": [
+        [
+          "t",
+          "transfer"
+        ],
+        [
+          "c",
+          "adjust"
+        ],
+        [
+          "h",
+          "watch"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "lk",
+      "tokens": 58,
+      "gloss": "frame",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "l",
+          "late"
+        ],
+        [
+          "k",
+          "heat"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "et",
+      "tokens": 58,
+      "gloss": "path",
+      "kernel": "E",
+      "decomposition": [
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "t",
+          "transfer"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "eek",
+      "tokens": 54,
+      "gloss": "lock",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "k",
+          "heat"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ly",
+      "tokens": 49,
+      "gloss": "end",
+      "kernel": null,
+      "decomposition": [
+        [
+          "l",
+          "late"
+        ],
+        [
+          "y",
+          "end"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "cth",
+      "tokens": 48,
+      "gloss": "hazard",
+      "kernel": "H",
+      "decomposition": [
+        [
+          "c",
+          "adjust"
+        ],
+        [
+          "t",
+          "transfer"
+        ],
+        [
+          "h",
+          "watch"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ect",
+      "tokens": 47,
+      "gloss": "regulate",
+      "kernel": "E",
+      "decomposition": [
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "c",
+          "adjust"
+        ],
+        [
+          "t",
+          "transfer"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "eeol",
+      "tokens": 46,
+      "gloss": "overnight",
+      "kernel": "E",
+      "decomposition": [
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "o",
+          "near"
+        ],
+        [
+          "l",
+          "late"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ot",
+      "tokens": 45,
+      "gloss": "route",
+      "kernel": null,
+      "decomposition": [
+        [
+          "o",
+          "near"
+        ],
+        [
+          "t",
+          "transfer"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "eok",
+      "tokens": 39,
+      "gloss": "cool",
+      "kernel": "E",
+      "decomposition": [
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "o",
+          "near"
+        ],
+        [
+          "k",
+          "heat"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "keeo",
+      "tokens": 38,
+      "gloss": "cycle",
+      "kernel": "E",
+      "decomposition": [
+        [
+          "k",
+          "heat"
+        ],
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "o",
+          "near"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "op",
+      "tokens": 36,
+      "gloss": "start",
+      "kernel": null,
+      "decomposition": [
+        [
+          "o",
+          "near"
+        ],
+        [
+          "p",
+          "pause"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "cph",
+      "tokens": 36,
+      "gloss": "measure",
+      "kernel": "H",
+      "decomposition": [
+        [
+          "c",
+          "adjust"
+        ],
+        [
+          "p",
+          "pause"
+        ],
+        [
+          "h",
+          "watch"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "kee",
+      "tokens": 34,
+      "gloss": "deep",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "k",
+          "heat"
+        ],
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "e",
+          "cool"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ech",
+      "tokens": 34,
+      "gloss": "check",
+      "kernel": "H",
+      "decomposition": [
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "c",
+          "adjust"
+        ],
+        [
+          "h",
+          "watch"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ry",
+      "tokens": 33,
+      "gloss": "finish",
+      "kernel": null,
+      "decomposition": [
+        [
+          "r",
+          "mid"
+        ],
+        [
+          "y",
+          "end"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "lo",
+      "tokens": 33,
+      "gloss": "open",
+      "kernel": null,
+      "decomposition": [
+        [
+          "l",
+          "late"
+        ],
+        [
+          "o",
+          "near"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "kc",
+      "tokens": 33,
+      "gloss": "bond",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "k",
+          "heat"
+        ],
+        [
+          "c",
+          "adjust"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "oiin",
+      "tokens": 32,
+      "gloss": "loop",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "o",
+          "near"
+        ],
+        [
+          "i",
+          "early"
+        ],
+        [
+          "i",
+          "early"
+        ],
+        [
+          "n",
+          "halt"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ked",
+      "tokens": 32,
+      "gloss": "release",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "k",
+          "heat"
+        ],
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "d",
+          "mark"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "aii",
+      "tokens": 32,
+      "gloss": "open",
+      "kernel": null,
+      "decomposition": [
+        [
+          "a",
+          "yield"
+        ],
+        [
+          "i",
+          "early"
+        ],
+        [
+          "i",
+          "early"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "keed",
+      "tokens": 30,
+      "gloss": "vent",
+      "kernel": "E",
+      "decomposition": [
+        [
+          "k",
+          "heat"
+        ],
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "d",
+          "mark"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "eckh",
+      "tokens": 28,
+      "gloss": "danger",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "c",
+          "adjust"
+        ],
+        [
+          "k",
+          "heat"
+        ],
+        [
+          "h",
+          "watch"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "olk",
+      "tokens": 27,
+      "gloss": "hold",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "o",
+          "near"
+        ],
+        [
+          "l",
+          "late"
+        ],
+        [
+          "k",
+          "heat"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ksh",
+      "tokens": 26,
+      "gloss": "scan",
+      "kernel": "H",
+      "decomposition": [
+        [
+          "k",
+          "heat"
+        ],
+        [
+          "s",
+          "break"
+        ],
+        [
+          "h",
+          "watch"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "keo",
+      "tokens": 26,
+      "gloss": "open",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "k",
+          "heat"
+        ],
+        [
+          "e",
+          "cool"
+        ],
+        [
+          "o",
+          "near"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "om",
+      "tokens": 25,
+      "gloss": "work",
+      "kernel": null,
+      "decomposition": [
+        [
+          "o",
+          "near"
+        ],
+        [
+          "m",
+          "final"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ka",
+      "tokens": 25,
+      "gloss": "fire",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "k",
+          "heat"
+        ],
+        [
+          "a",
+          "yield"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "lsh",
+      "tokens": 24,
+      "gloss": "verify",
+      "kernel": "H",
+      "decomposition": [
+        [
+          "l",
+          "late"
+        ],
+        [
+          "s",
+          "break"
+        ],
+        [
+          "h",
+          "watch"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "kai",
+      "tokens": 24,
+      "gloss": "step",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "k",
+          "heat"
+        ],
+        [
+          "a",
+          "yield"
+        ],
+        [
+          "i",
+          "early"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "ii",
+      "tokens": 23,
+      "gloss": "repeat",
+      "kernel": null,
+      "decomposition": [
+        [
+          "i",
+          "early"
+        ],
+        [
+          "i",
+          "early"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "fch",
+      "tokens": 23,
+      "gloss": "note",
+      "kernel": "H",
+      "decomposition": [
+        [
+          "f",
+          "flag"
+        ],
+        [
+          "c",
+          "adjust"
+        ],
+        [
+          "h",
+          "watch"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "an",
+      "tokens": 18,
+      "gloss": "bind",
+      "kernel": null,
+      "decomposition": [
+        [
+          "a",
+          "yield"
+        ],
+        [
+          "n",
+          "halt"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "da",
+      "tokens": 13,
+      "gloss": "start",
+      "kernel": null,
+      "decomposition": [
+        [
+          "d",
+          "mark"
+        ],
+        [
+          "a",
+          "yield"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "hy",
+      "tokens": 7,
+      "gloss": "confirm",
+      "kernel": "H",
+      "decomposition": [
+        [
+          "h",
+          "watch"
+        ],
+        [
+          "y",
+          "end"
+        ]
+      ],
+      "all_atoms_known": true
+    },
+    {
+      "middle": "oqok",
+      "tokens": 5,
+      "gloss": "dense",
+      "kernel": "K",
+      "decomposition": [
+        [
+          "o",
+          "near"
+        ],
+        [
+          "q",
+          null
+        ],
+        [
+          "o",
+          "near"
+        ],
+        [
+          "k",
+          "heat"
+        ]
+      ],
+      "all_atoms_known": false
+    }
+  ],
+  "atom_contexts": {
+    "e": [
+      [
+        "ek",
+        "exact"
+      ],
+      [
+        "eok",
+        "cool"
+      ],
+      [
+        "keed",
+        "vent"
+      ],
+      [
+        "kee",
+        "deep"
+      ],
+      [
+        "eod",
+        "stand"
+      ],
+      [
+        "eol",
+        "sustain"
+      ],
+      [
+        "keeo",
+        "cycle"
+      ],
+      [
+        "eey",
+        "deep"
+      ],
+      [
+        "edy",
+        "batch"
+      ],
+      [
+        "eek",
+        "lock"
+      ],
+      [
+        "eed",
+        "extended"
+      ],
+      [
+        "ed",
+        "discharge"
+      ],
+      [
+        "te",
+        "gather"
+      ],
+      [
+        "ked",
+        "release"
+      ],
+      [
+        "ech",
+        "check"
+      ],
+      [
+        "eeol",
+        "overnight"
+      ],
+      [
+        "keo",
+        "open"
+      ],
+      [
+        "eo",
+        "open"
+      ],
+      [
+        "et",
+        "path"
+      ],
+      [
+        "ect",
+        "regulate"
+      ],
+      [
+        "eck",
+        "rigid"
+      ],
+      [
+        "ee",
+        "long"
+      ],
+      [
+        "eckh",
+        "danger"
+      ],
+      [
+        "ey",
+        "set"
+      ],
+      [
+        "ke",
+        "steady"
+      ],
+      [
+        "eeo",
+        "wide"
+      ]
+    ],
+    "d": [
+      [
+        "od",
+        "precise"
+      ],
+      [
+        "edy",
+        "batch"
+      ],
+      [
+        "dy",
+        "seal"
+      ],
+      [
+        "eod",
+        "stand"
+      ],
+      [
+        "eed",
+        "extended"
+      ],
+      [
+        "da",
+        "start"
+      ],
+      [
+        "ed",
+        "discharge"
+      ],
+      [
+        "ked",
+        "release"
+      ],
+      [
+        "keed",
+        "vent"
+      ]
+    ],
+    "y": [
+      [
+        "eey",
+        "deep"
+      ],
+      [
+        "edy",
+        "batch"
+      ],
+      [
+        "dy",
+        "seal"
+      ],
+      [
+        "ey",
+        "set"
+      ],
+      [
+        "ry",
+        "finish"
+      ],
+      [
+        "hy",
+        "confirm"
+      ],
+      [
+        "ly",
+        "end"
+      ]
+    ],
+    "a": [
+      [
+        "kai",
+        "step"
+      ],
+      [
+        "ain",
+        "intake"
+      ],
+      [
+        "al",
+        "gather"
+      ],
+      [
+        "ai",
+        "open"
+      ],
+      [
+        "an",
+        "bind"
+      ],
+      [
+        "aii",
+        "open"
+      ],
+      [
+        "ka",
+        "fire"
+      ],
+      [
+        "aiin",
+        "settle"
+      ],
+      [
+        "da",
+        "start"
+      ],
+      [
+        "am",
+        "finalize"
+      ],
+      [
+        "ar",
+        "release"
+      ]
+    ],
+    "i": [
+      [
+        "kai",
+        "step"
+      ],
+      [
+        "ain",
+        "intake"
+      ],
+      [
+        "ii",
+        "repeat"
+      ],
+      [
+        "ai",
+        "open"
+      ],
+      [
+        "oiin",
+        "loop"
+      ],
+      [
+        "iin",
+        "iterate"
+      ],
+      [
+        "aii",
+        "open"
+      ],
+      [
+        "aiin",
+        "settle"
+      ],
+      [
+        "in",
+        "link"
+      ]
+    ],
+    "n": [
+      [
+        "ain",
+        "intake"
+      ],
+      [
+        "oiin",
+        "loop"
+      ],
+      [
+        "iin",
+        "iterate"
+      ],
+      [
+        "an",
+        "bind"
+      ],
+      [
+        "aiin",
+        "settle"
+      ],
+      [
+        "in",
+        "link"
+      ]
+    ],
+    "o": [
+      [
+        "lo",
+        "open"
+      ],
+      [
+        "oiin",
+        "loop"
+      ],
+      [
+        "or",
+        "portion"
+      ],
+      [
+        "olk",
+        "hold"
+      ],
+      [
+        "ot",
+        "route"
+      ],
+      [
+        "eok",
+        "cool"
+      ],
+      [
+        "od",
+        "precise"
+      ],
+      [
+        "opch",
+        "operate"
+      ],
+      [
+        "eod",
+        "stand"
+      ],
+      [
+        "ok",
+        "seal"
+      ],
+      [
+        "oqok",
+        "dense"
+      ],
+      [
+        "eol",
+        "sustain"
+      ],
+      [
+        "keeo",
+        "cycle"
+      ],
+      [
+        "op",
+        "start"
+      ],
+      [
+        "ol",
+        "continue"
+      ],
+      [
+        "om",
+        "work"
+      ],
+      [
+        "eeol",
+        "overnight"
+      ],
+      [
+        "keo",
+        "open"
+      ],
+      [
+        "eo",
+        "open"
+      ],
+      [
+        "eeo",
+        "wide"
+      ]
+    ],
+    "l": [
+      [
+        "lo",
+        "open"
+      ],
+      [
+        "al",
+        "gather"
+      ],
+      [
+        "ol",
+        "continue"
+      ],
+      [
+        "lch",
+        "strip"
+      ],
+      [
+        "lk",
+        "frame"
+      ],
+      [
+        "olk",
+        "hold"
+      ],
+      [
+        "lsh",
+        "verify"
+      ],
+      [
+        "eol",
+        "sustain"
+      ],
+      [
+        "eeol",
+        "overnight"
+      ],
+      [
+        "ly",
+        "end"
+      ]
+    ],
+    "r": [
+      [
+        "ry",
+        "finish"
+      ],
+      [
+        "ar",
+        "release"
+      ],
+      [
+        "or",
+        "portion"
+      ]
+    ],
+    "k": [
+      [
+        "ckh",
+        "firm"
+      ],
+      [
+        "ck",
+        "hard"
+      ],
+      [
+        "ek",
+        "exact"
+      ],
+      [
+        "kc",
+        "bond"
+      ],
+      [
+        "lk",
+        "frame"
+      ],
+      [
+        "olk",
+        "hold"
+      ],
+      [
+        "eok",
+        "cool"
+      ],
+      [
+        "keed",
+        "vent"
+      ],
+      [
+        "kee",
+        "deep"
+      ],
+      [
+        "ok",
+        "seal"
+      ],
+      [
+        "oqok",
+        "dense"
+      ],
+      [
+        "keeo",
+        "cycle"
+      ],
+      [
+        "kai",
+        "step"
+      ],
+      [
+        "eek",
+        "lock"
+      ],
+      [
+        "ksh",
+        "scan"
+      ],
+      [
+        "kch",
+        "pulse"
+      ],
+      [
+        "ked",
+        "release"
+      ],
+      [
+        "keo",
+        "open"
+      ],
+      [
+        "eck",
+        "rigid"
+      ],
+      [
+        "eckh",
+        "danger"
+      ],
+      [
+        "ke",
+        "steady"
+      ],
+      [
+        "ka",
+        "fire"
+      ]
+    ],
+    "c": [
+      [
+        "ckh",
+        "firm"
+      ],
+      [
+        "ck",
+        "hard"
+      ],
+      [
+        "ect",
+        "regulate"
+      ],
+      [
+        "ct",
+        "control"
+      ],
+      [
+        "opch",
+        "operate"
+      ],
+      [
+        "eck",
+        "rigid"
+      ],
+      [
+        "pch",
+        "pause"
+      ],
+      [
+        "lch",
+        "strip"
+      ],
+      [
+        "eckh",
+        "danger"
+      ],
+      [
+        "fch",
+        "note"
+      ],
+      [
+        "kch",
+        "pulse"
+      ],
+      [
+        "tch",
+        "pound"
+      ],
+      [
+        "kc",
+        "bond"
+      ],
+      [
+        "ch",
+        "check"
+      ],
+      [
+        "cth",
+        "hazard"
+      ],
+      [
+        "ech",
+        "check"
+      ],
+      [
+        "cph",
+        "measure"
+      ]
+    ],
+    "h": [
+      [
+        "ckh",
+        "firm"
+      ],
+      [
+        "sh",
+        "verify"
+      ],
+      [
+        "ksh",
+        "scan"
+      ],
+      [
+        "opch",
+        "operate"
+      ],
+      [
+        "pch",
+        "pause"
+      ],
+      [
+        "lch",
+        "strip"
+      ],
+      [
+        "eckh",
+        "danger"
+      ],
+      [
+        "fch",
+        "note"
+      ],
+      [
+        "kch",
+        "pulse"
+      ],
+      [
+        "tch",
+        "pound"
+      ],
+      [
+        "ch",
+        "check"
+      ],
+      [
+        "cth",
+        "hazard"
+      ],
+      [
+        "hy",
+        "confirm"
+      ],
+      [
+        "lsh",
+        "verify"
+      ],
+      [
+        "ech",
+        "check"
+      ],
+      [
+        "cph",
+        "measure"
+      ]
+    ],
+    "m": [
+      [
+        "om",
+        "work"
+      ],
+      [
+        "am",
+        "finalize"
+      ]
+    ],
+    "s": [
+      [
+        "lsh",
+        "verify"
+      ],
+      [
+        "sh",
+        "verify"
+      ],
+      [
+        "ksh",
+        "scan"
+      ]
+    ],
+    "p": [
+      [
+        "op",
+        "start"
+      ],
+      [
+        "pch",
+        "pause"
+      ],
+      [
+        "cph",
+        "measure"
+      ],
+      [
+        "opch",
+        "operate"
+      ]
+    ],
+    "t": [
+      [
+        "et",
+        "path"
+      ],
+      [
+        "ct",
+        "control"
+      ],
+      [
+        "ect",
+        "regulate"
+      ],
+      [
+        "tch",
+        "pound"
+      ],
+      [
+        "cth",
+        "hazard"
+      ],
+      [
+        "te",
+        "gather"
+      ],
+      [
+        "ot",
+        "route"
+      ]
+    ],
+    "f": [
+      [
+        "fch",
+        "note"
+      ]
+    ],
+    "q": [
+      [
+        "oqok",
+        "dense"
+      ]
+    ]
+  }
+}

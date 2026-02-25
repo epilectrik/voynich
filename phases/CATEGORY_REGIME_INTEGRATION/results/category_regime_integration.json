@@ -1,0 +1,641 @@
+{
+  "phase_name": "CATEGORY_REGIME_INTEGRATION",
+  "phase_number": 456,
+  "n_valid_folios": 72,
+  "bonferroni_p": 0.0071428571428571435,
+  "n_scored_tests": 7,
+  "tests": [
+    {
+      "test": "T1_category_regime_contingency",
+      "chi2": 525.9600040305394,
+      "p": 5.496432284797378e-98,
+      "dof": 21,
+      "cramers_v": 0.1062639466848173,
+      "total_tokens": 15526,
+      "centroids": {
+        "REGIME_1": {
+          "CONTAINMENT": 0.04212393304511695,
+          "FLOW": 0.17913756789712892,
+          "MARKING": 0.025939474559361488,
+          "MONITORING": 0.012858884824298858,
+          "OPERATION": 0.16916084691275912,
+          "STAGING": 0.14033920851346857,
+          "THERMAL": 0.29741713778960205,
+          "TRANSITION": 0.13302294645826404
+        },
+        "REGIME_2": {
+          "CONTAINMENT": 0.07021604938271606,
+          "FLOW": 0.2808641975308642,
+          "MARKING": 0.029320987654320986,
+          "MONITORING": 0.005401234567901234,
+          "OPERATION": 0.12731481481481483,
+          "STAGING": 0.12885802469135801,
+          "THERMAL": 0.14737654320987653,
+          "TRANSITION": 0.21064814814814814
+        },
+        "REGIME_3": {
+          "CONTAINMENT": 0.044145873320537425,
+          "FLOW": 0.2329654510556622,
+          "MARKING": 0.032869481765834936,
+          "MONITORING": 0.005518234165067178,
+          "OPERATION": 0.15475047984644913,
+          "STAGING": 0.1276391554702495,
+          "THERMAL": 0.1998560460652591,
+          "TRANSITION": 0.2022552783109405
+        },
+        "REGIME_4": {
+          "CONTAINMENT": 0.06147934678194044,
+          "FLOW": 0.1988472622478386,
+          "MARKING": 0.01825168107588857,
+          "MONITORING": 0.012487992315081652,
+          "OPERATION": 0.21613832853025935,
+          "STAGING": 0.14024975984630164,
+          "THERMAL": 0.1373679154658982,
+          "TRANSITION": 0.21517771373679154
+        }
+      },
+      "verdict": "PASS"
+    },
+    {
+      "test": "T2_regime_centroid_signatures",
+      "observed_mean_jsd": 0.022783906051083647,
+      "null_mean": 0.003902407454081119,
+      "null_std": 0.0014826460459369997,
+      "z": 12.734999951771929,
+      "p": 0.0,
+      "pairwise_jsd": {
+        "REGIME_1-REGIME_2": 0.04206443343576452,
+        "REGIME_1-REGIME_3": 0.01904002084117141,
+        "REGIME_1-REGIME_4": 0.04137875399698894,
+        "REGIME_2-REGIME_3": 0.007222996463649166,
+        "REGIME_2-REGIME_4": 0.01383599615363159,
+        "REGIME_3-REGIME_4": 0.013161235415296268
+      },
+      "drivers": {
+        "REGIME_1": {
+          "CONTAINMENT": -0.01820044172898319,
+          "FLOW": -0.04355495105851834,
+          "MARKING": -0.0009866505072353496,
+          "MONITORING": 0.002261896080388402,
+          "OPERATION": -0.0023202480100909806,
+          "STAGING": 0.013509167669515904,
+          "THERMAL": 0.11011332498853033,
+          "TRANSITION": -0.060822097433606725
+        },
+        "REGIME_2": {
+          "CONTAINMENT": 0.02229175402801152,
+          "FLOW": 0.05208597872352999,
+          "MARKING": 0.0031717972795475315,
+          "MONITORING": -0.002265226513605288,
+          "OPERATION": -0.03263953902922276,
+          "STAGING": -0.008693991028321496,
+          "THERMAL": -0.049019123466054915,
+          "TRANSITION": 0.015068350006115339
+        },
+        "REGIME_3": {
+          "CONTAINMENT": -0.007416541552465544,
+          "FLOW": 0.008713774942583574,
+          "MARKING": 0.008602582957938254,
+          "MONITORING": -0.003411836324391772,
+          "OPERATION": -0.011107801737862938,
+          "STAGING": -0.006149797342152236,
+          "THERMAL": 0.0012636084966283212,
+          "TRANSITION": 0.009506010559722361
+        },
+        "REGIME_4": {
+          "CONTAINMENT": 0.003325229253437187,
+          "FLOW": -0.017244802607595283,
+          "MARKING": -0.010787729730250434,
+          "MONITORING": 0.003415166757608657,
+          "OPERATION": 0.04606758877717668,
+          "STAGING": 0.0013346207009578004,
+          "THERMAL": -0.062357810019103704,
+          "TRANSITION": 0.036247736867769
+        }
+      },
+      "verdict": "PASS"
+    },
+    {
+      "test": "T3_circularity_decomposition",
+      "n_folios": 72,
+      "r2_kernel": {
+        "CONTAINMENT": 0.2013309077788773,
+        "FLOW": 0.409281502316751,
+        "MARKING": 0.10462366982501592,
+        "MONITORING": 0.06012040810402741,
+        "OPERATION": 0.10003552373944424,
+        "STAGING": 0.055057303376089495,
+        "THERMAL": 0.778589051176687,
+        "TRANSITION": 0.5457856390694711
+      },
+      "combined_chi2": 30.431565656565656,
+      "combined_dof": 24,
+      "combined_p": 0.1708570288282314,
+      "fisher_stat": 25.508985483915726,
+      "fisher_dof": 16,
+      "fisher_p": 0.06134063080433372,
+      "kw_results": {
+        "CONTAINMENT": {
+          "H": 3.010426035468811,
+          "p": 0.3900204783523957
+        },
+        "FLOW": {
+          "H": 4.184681864305134,
+          "p": 0.24220000267299233
+        },
+        "MARKING": {
+          "H": 6.628392227065149,
+          "p": 0.08473425528018376
+        },
+        "MONITORING": {
+          "H": 0.6850074662146426,
+          "p": 0.8767245503724055
+        },
+        "OPERATION": {
+          "H": 8.969000363221255,
+          "p": 0.029705895551059222
+        },
+        "STAGING": {
+          "H": 1.5453886755684607,
+          "p": 0.6718349537424666
+        },
+        "THERMAL": {
+          "H": 8.995764580738864,
+          "p": 0.02934725177679022
+        },
+        "TRANSITION": {
+          "H": 1.4109433374844116,
+          "p": 0.7029715688973122
+        }
+      },
+      "kw_significant": 2,
+      "kw_total": 8,
+      "cat_chi2_results": {
+        "CONTAINMENT": {
+          "chi2": 5.25429292929293,
+          "p": 0.1540959014454352,
+          "dof": 3
+        },
+        "FLOW": {
+          "chi2": 6.350505050505051,
+          "p": 0.09574837871838077,
+          "dof": 3
+        },
+        "MARKING": {
+          "chi2": 3.9936868686868685,
+          "p": 0.26214664150847994,
+          "dof": 3
+        },
+        "MONITORING": {
+          "chi2": 2.883838383838384,
+          "p": 0.40988392164971377,
+          "dof": 3
+        },
+        "OPERATION": {
+          "chi2": 6.762626262626263,
+          "p": 0.07986111957603798,
+          "dof": 3
+        },
+        "STAGING": {
+          "chi2": 1.2159090909090908,
+          "p": 0.7491912380108077,
+          "dof": 3
+        },
+        "THERMAL": {
+          "chi2": 3.5686868686868687,
+          "p": 0.3119623210598734,
+          "dof": 3
+        },
+        "TRANSITION": {
+          "chi2": 0.40202020202020206,
+          "p": 0.9398248529060338,
+          "dof": 3
+        }
+      },
+      "verdict": "FAIL"
+    },
+    {
+      "test": "T4_section_controlled_association",
+      "section_results": {
+        "C": {
+          "n_folios": 5,
+          "n_regimes": 3,
+          "chi2": 32.12242356843378,
+          "p": 0.0038485653653250553,
+          "dof": 14
+        },
+        "H": {
+          "n_folios": 22,
+          "n_regimes": 4,
+          "chi2": 67.39865615927087,
+          "p": 9.122888254435512e-07,
+          "dof": 21
+        },
+        "S": {
+          "n_folios": 23,
+          "n_regimes": 3,
+          "chi2": 116.85663967212054,
+          "p": 2.59095104441288e-18,
+          "dof": 14
+        }
+      },
+      "combined_chi2": 216.3777193998252,
+      "combined_dof": 49,
+      "combined_p": 0.0,
+      "verdict": "PASS"
+    },
+    {
+      "test": "T5_category_beyond_class_profiles",
+      "pair_results": {
+        "REGIME_1-REGIME_2": {
+          "jsd_role": 0.033700131666451985,
+          "jsd_cat": 0.04206443343576452,
+          "cat_exceeds_role": true
+        },
+        "REGIME_1-REGIME_3": {
+          "jsd_role": 0.00531666075176805,
+          "jsd_cat": 0.01904002084117141,
+          "cat_exceeds_role": true
+        },
+        "REGIME_1-REGIME_4": {
+          "jsd_role": 0.02069691414498374,
+          "jsd_cat": 0.04137875399698894,
+          "cat_exceeds_role": true
+        },
+        "REGIME_2-REGIME_3": {
+          "jsd_role": 0.016224527734146663,
+          "jsd_cat": 0.007222996463649166,
+          "cat_exceeds_role": false
+        },
+        "REGIME_2-REGIME_4": {
+          "jsd_role": 0.005950237182374498,
+          "jsd_cat": 0.01383599615363159,
+          "cat_exceeds_role": true
+        },
+        "REGIME_3-REGIME_4": {
+          "jsd_role": 0.005355451401227505,
+          "jsd_cat": 0.013161235415296268,
+          "cat_exceeds_role": true
+        }
+      },
+      "cat_exceeds_count": 5,
+      "total_pairs": 6,
+      "mean_jsd_role": 0.014540653813492075,
+      "mean_jsd_cat": 0.022783906051083647,
+      "kw_role_residualized": {
+        "CONTAINMENT": {
+          "H": 5.275980120843087,
+          "p": 0.15266862015543267
+        },
+        "FLOW": {
+          "H": 16.337551888750482,
+          "p": 0.0009668622522501015
+        },
+        "MARKING": {
+          "H": 6.941109583275647,
+          "p": 0.07379868658636242
+        },
+        "MONITORING": {
+          "H": 4.937722977491802,
+          "p": 0.1764145874917362
+        },
+        "OPERATION": {
+          "H": 10.762010371984672,
+          "p": 0.013084906364845737
+        },
+        "STAGING": {
+          "H": 0.4374233199575599,
+          "p": 0.9324076980752775
+        },
+        "THERMAL": {
+          "H": 21.77869044324524,
+          "p": 7.252597500660356e-05
+        },
+        "TRANSITION": {
+          "H": 12.999413657119106,
+          "p": 0.004637873609666647
+        }
+      },
+      "kw_sig": 4,
+      "kw_total": 8,
+      "fisher_stat": 64.94723797458762,
+      "fisher_dof": 16,
+      "fisher_p": 7.522295097928122e-08,
+      "verdict": "PASS"
+    },
+    {
+      "test": "T6_category_vs_residuals",
+      "n_folios": 65,
+      "model_r2": 0.8527580899234056,
+      "model_loo": 0.7261632450390647,
+      "spearman_results": {
+        "CONTAINMENT": {
+          "rho": -0.027863066687269587,
+          "p": 0.8256194250819938
+        },
+        "FLOW": {
+          "rho": 0.07312142834165022,
+          "p": 0.5626830386494792
+        },
+        "MARKING": {
+          "rho": 0.08628848153344641,
+          "p": 0.49431752151196506
+        },
+        "MONITORING": {
+          "rho": 0.010849275285104066,
+          "p": 0.9316453186366416
+        },
+        "OPERATION": {
+          "rho": -0.08851008044680717,
+          "p": 0.48322628305276805
+        },
+        "STAGING": {
+          "rho": -0.10290871743535619,
+          "p": 0.41464474373615
+        },
+        "THERMAL": {
+          "rho": 0.1390967995799772,
+          "p": 0.2691348365932921
+        },
+        "TRANSITION": {
+          "rho": -0.13289043805904815,
+          "p": 0.2912892675869973
+        }
+      },
+      "holm_results": {
+        "THERMAL": {
+          "p": 0.2691348365932921,
+          "holm_threshold": 0.00625,
+          "significant": false
+        },
+        "TRANSITION": {
+          "p": 0.2912892675869973,
+          "holm_threshold": 0.0071428571428571435,
+          "significant": false
+        },
+        "STAGING": {
+          "p": 0.41464474373615,
+          "holm_threshold": 0.008333333333333333,
+          "significant": false
+        },
+        "OPERATION": {
+          "p": 0.48322628305276805,
+          "holm_threshold": 0.01,
+          "significant": false
+        },
+        "MARKING": {
+          "p": 0.49431752151196506,
+          "holm_threshold": 0.0125,
+          "significant": false
+        },
+        "FLOW": {
+          "p": 0.5626830386494792,
+          "holm_threshold": 0.016666666666666666,
+          "significant": false
+        },
+        "CONTAINMENT": {
+          "p": 0.8256194250819938,
+          "holm_threshold": 0.025,
+          "significant": false
+        },
+        "MONITORING": {
+          "p": 0.9316453186366416,
+          "holm_threshold": 0.05,
+          "significant": false
+        }
+      },
+      "significant_categories": [],
+      "verdict": "FAIL"
+    },
+    {
+      "test": "T7_axm_regression_extension",
+      "verdict": "SKIP",
+      "reason": "T6 found no significant categories"
+    },
+    {
+      "test": "T8_feature_category_correlation",
+      "n_folios": 72,
+      "correlations": [
+        {
+          "feature": "k_frac",
+          "category": "THERMAL",
+          "rho": 0.7409860842261776,
+          "p": 9.939165181675209e-14,
+          "circular": true
+        },
+        {
+          "feature": "k_frac",
+          "category": "TRANSITION",
+          "rho": -0.7354229807860384,
+          "p": 1.8829202060283616e-13,
+          "circular": false
+        },
+        {
+          "feature": "qo_fraction",
+          "category": "THERMAL",
+          "rho": 0.7055007083073002,
+          "p": 4.5312217557819985e-12,
+          "circular": false
+        },
+        {
+          "feature": "hazard_density",
+          "category": "THERMAL",
+          "rho": -0.6629792504360172,
+          "p": 2.2283093294298436e-10,
+          "circular": false
+        },
+        {
+          "feature": "e_frac",
+          "category": "THERMAL",
+          "rho": 0.6567891309590803,
+          "p": 3.730591646258375e-10,
+          "circular": true
+        },
+        {
+          "feature": "bridge_pc1",
+          "category": "CONTAINMENT",
+          "rho": -0.5366786986370173,
+          "p": 1.1764619865528898e-06,
+          "circular": false
+        },
+        {
+          "feature": "e_frac",
+          "category": "FLOW",
+          "rho": -0.5069982072533579,
+          "p": 5.501524478659275e-06,
+          "circular": false
+        },
+        {
+          "feature": "k_frac",
+          "category": "FLOW",
+          "rho": -0.4999919608331787,
+          "p": 7.755884997401994e-06,
+          "circular": false
+        },
+        {
+          "feature": "qo_fraction",
+          "category": "TRANSITION",
+          "rho": -0.4755434788141351,
+          "p": 2.4273329189920877e-05,
+          "circular": false
+        },
+        {
+          "feature": "bridge_pc1",
+          "category": "THERMAL",
+          "rho": 0.4248056531558355,
+          "p": 0.00019976074067280122,
+          "circular": false
+        },
+        {
+          "feature": "hazard_density",
+          "category": "CONTAINMENT",
+          "rho": 0.42207786999662095,
+          "p": 0.0002216946337544588,
+          "circular": false
+        },
+        {
+          "feature": "e_frac",
+          "category": "CONTAINMENT",
+          "rho": -0.4075568775625049,
+          "p": 0.0003804137638948427,
+          "circular": false
+        },
+        {
+          "feature": "vocab_residual",
+          "category": "TRANSITION",
+          "rho": 0.39567003514450994,
+          "p": 0.0005814001067487623,
+          "circular": false
+        },
+        {
+          "feature": "hazard_density",
+          "category": "FLOW",
+          "rho": 0.39141060896156704,
+          "p": 0.0006742779637750987,
+          "circular": false
+        },
+        {
+          "feature": "hazard_density",
+          "category": "TRANSITION",
+          "rho": 0.3877575632021679,
+          "p": 0.0007644694442868856,
+          "circular": false
+        },
+        {
+          "feature": "e_frac",
+          "category": "TRANSITION",
+          "rho": -0.3462979339175174,
+          "p": 0.0028843960250968005,
+          "circular": false
+        },
+        {
+          "feature": "vocab_residual",
+          "category": "THERMAL",
+          "rho": -0.32590502376665154,
+          "p": 0.005210726693283847,
+          "circular": false
+        },
+        {
+          "feature": "hazard_density",
+          "category": "MONITORING",
+          "rho": -0.3244179869246341,
+          "p": 0.0054321457188042915,
+          "circular": false
+        },
+        {
+          "feature": "qo_fraction",
+          "category": "CONTAINMENT",
+          "rho": -0.28355737105282414,
+          "p": 0.015790534085463687,
+          "circular": false
+        },
+        {
+          "feature": "e_frac",
+          "category": "OPERATION",
+          "rho": 0.2668408572321101,
+          "p": 0.023460772573076986,
+          "circular": false
+        },
+        {
+          "feature": "e_frac",
+          "category": "MARKING",
+          "rho": -0.2543842059470494,
+          "p": 0.031056071942790132,
+          "circular": false
+        },
+        {
+          "feature": "qo_fraction",
+          "category": "FLOW",
+          "rho": -0.25128835954474077,
+          "p": 0.033235311381482384,
+          "circular": false
+        },
+        {
+          "feature": "vocab_residual",
+          "category": "FLOW",
+          "rho": 0.24851271826864327,
+          "p": 0.03529661638252969,
+          "circular": false
+        },
+        {
+          "feature": "e_frac",
+          "category": "MONITORING",
+          "rho": 0.247268112404303,
+          "p": 0.03625498840716959,
+          "circular": false
+        },
+        {
+          "feature": "h_frac",
+          "category": "THERMAL",
+          "rho": -0.2426478865435509,
+          "p": 0.040004447584295874,
+          "circular": false
+        },
+        {
+          "feature": "bridge_pc1",
+          "category": "MARKING",
+          "rho": 0.2402386510703929,
+          "p": 0.04208389933683222,
+          "circular": false
+        },
+        {
+          "feature": "qo_fraction",
+          "category": "OPERATION",
+          "rho": -0.2396063644261749,
+          "p": 0.042644218932704786,
+          "circular": false
+        },
+        {
+          "feature": "h_frac",
+          "category": "MARKING",
+          "rho": 0.23502167317537845,
+          "p": 0.046894350955579304,
+          "circular": false
+        },
+        {
+          "feature": "k_frac",
+          "category": "STAGING",
+          "rho": 0.2277353485301201,
+          "p": 0.05436183574181839,
+          "circular": false
+        },
+        {
+          "feature": "qo_fraction",
+          "category": "STAGING",
+          "rho": 0.20768111414639567,
+          "p": 0.08002652093163048,
+          "circular": false
+        }
+      ],
+      "verdict": "CALIBRATION"
+    }
+  ],
+  "summary": {
+    "n_pass": 4,
+    "n_weak": 0,
+    "n_fail": 2,
+    "n_skip": 1,
+    "t3_circularity_gate": false,
+    "overall_verdict": "CATEGORY_REGIME_PARTIAL"
+  }
+}

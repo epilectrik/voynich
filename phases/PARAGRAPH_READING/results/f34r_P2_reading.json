@@ -1,0 +1,1058 @@
+{
+  "meta": {
+    "phase": "PARAGRAPH_READING",
+    "phase_number": 443,
+    "version": "1.0",
+    "folio": "f34r",
+    "paragraph": "P2",
+    "tier": 3,
+    "date": "2026-02-23",
+    "provenance": [
+      "C932 (spec->exec gradient)",
+      "C961 (WORK unordered)",
+      "C855 (parallel programs)",
+      "C1229-C1232 (suffix mode cycling)",
+      "C1233 (cross-line independence)",
+      "C1237 (paragraph termination by -am)",
+      "C1240 (-am trigger context)"
+    ]
+  },
+  "context": {
+    "folio": "f34r",
+    "section": "H",
+    "regime": "REGIME_3",
+    "archetype": 6,
+    "folio_kernel": {
+      "e": 51.4,
+      "h": 15.7,
+      "k": 32.9
+    }
+  },
+  "paragraph_overview": {
+    "paragraph_id": "P2",
+    "line_count": 6,
+    "token_count": 58,
+    "boundary_token": "tcheo",
+    "kernel_balance": {
+      "e": 37.9,
+      "k": 37.9,
+      "h": 24.1
+    },
+    "kernel_character": "BALANCED",
+    "suffix_mode_sequence": [
+      "B",
+      "A",
+      "B",
+      "B",
+      "B",
+      "A"
+    ],
+    "mode_interleave_rate": 0.6,
+    "zone_distribution": {
+      "HEADER": 1,
+      "SPECIFICATION": 1,
+      "EXECUTION": 4
+    },
+    "gradient_direction": "SPEC_TO_EXEC",
+    "tail_product_signature": "PROCESS_HEAVY"
+  },
+  "lines": [
+    {
+      "line_id": "11",
+      "paragraph_zone": "HEADER",
+      "suffix_mode": "B",
+      "token_count": 5,
+      "kernel_summary": "e:2 k:1",
+      "ht_count": 3,
+      "work_en_chsh_count": 0,
+      "work_en_qo_count": 0,
+      "work_ax_count": 1,
+      "check_count": 1,
+      "fl_count": 0,
+      "setup_count": 0,
+      "close_count": 0,
+      "narrative": "HEADER (Mode B): 5 tokens, 3 HT/UN (60%). Identification: 3 specification token(s): tcheo, olchckhy, chefalas. Operations (concurrent): scaffold: scaffold seal. Checkpoints: store end. Kernels: e:2 k:1.",
+      "tokens": [
+        {
+          "word": "tcheo",
+          "prefix": "tch",
+          "middle": "eo",
+          "suffix": null,
+          "interpretive": "process open[e]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "e"
+          ],
+          "fl_stage": null,
+          "operation": "process open <e>",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "olchckhy",
+          "prefix": "ol",
+          "middle": "ck",
+          "suffix": "hy",
+          "interpretive": "[attend-light] [-hy]",
+          "is_ht": true,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "k"
+          ],
+          "fl_stage": null,
+          "operation": "[attend-light] [-hy]",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "oly",
+          "prefix": "ol",
+          "middle": "y",
+          "suffix": null,
+          "interpretive": "store end (FL)",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": "TERMINAL",
+          "operation": "store end",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "otchdy",
+          "prefix": "ot",
+          "middle": "dy",
+          "suffix": null,
+          "interpretive": "scaffold seal[k]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "scaffold seal <k>",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "chefalas",
+          "prefix": "ch",
+          "middle": "efala",
+          "suffix": "s",
+          "interpretive": "[attend-light] [-s]",
+          "is_ht": true,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "e"
+          ],
+          "fl_stage": null,
+          "operation": "[attend-light] [-s]",
+          "flow": "",
+          "flow_type": ""
+        }
+      ]
+    },
+    {
+      "line_id": "12",
+      "paragraph_zone": "SPECIFICATION",
+      "suffix_mode": "A",
+      "token_count": 8,
+      "kernel_summary": "e:2 h:2 k:2",
+      "ht_count": 2,
+      "work_en_chsh_count": 3,
+      "work_en_qo_count": 1,
+      "work_ax_count": 1,
+      "check_count": 0,
+      "fl_count": 0,
+      "setup_count": 1,
+      "close_count": 0,
+      "narrative": "SPECIFICATION pass (Mode A): 8 tokens. Setup: dry iterate. Operations (concurrent): monitoring/testing: verify, test exact->end (precision), test transfer->end (precision) + energy: energy heat->extended + scaffold: scaffold batch. Kernels: e:2 h:2 k:2.",
+      "tokens": [
+        {
+          "word": "qokeey",
+          "prefix": "qo",
+          "middle": "k",
+          "suffix": "eey",
+          "interpretive": "heat[k] . [extended]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "k"
+          ],
+          "fl_stage": null,
+          "operation": "[QO] heat <k>",
+          "flow": "EXTENDED",
+          "flow_type": "CRITERION"
+        },
+        {
+          "word": "sh",
+          "prefix": null,
+          "middle": "sh",
+          "suffix": null,
+          "interpretive": "verify[h]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "h"
+          ],
+          "fl_stage": null,
+          "operation": "verify <h>",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "kaldaiin",
+          "prefix": "ka",
+          "middle": "ld",
+          "suffix": "aiin",
+          "interpretive": "[ident:ld] [-aiin]",
+          "is_ht": false,
+          "is_dark_pipeline": true,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "anchor frame",
+          "flow": "CHECKPOINT",
+          "flow_type": "GATE"
+        },
+        {
+          "word": "cheky",
+          "prefix": "ch",
+          "middle": "ek",
+          "suffix": "y",
+          "interpretive": "test exact[k] .",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "k",
+            "e"
+          ],
+          "fl_stage": null,
+          "operation": "test exact <k>",
+          "flow": "END",
+          "flow_type": "TERMINAL"
+        },
+        {
+          "word": "cthdaly",
+          "prefix": "ct",
+          "middle": "hda",
+          "suffix": "ly",
+          "interpretive": "[hold-light] [-ly]",
+          "is_ht": true,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "h"
+          ],
+          "fl_stage": null,
+          "operation": "[hold-light] [-ly]",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "otchedy",
+          "prefix": "ot",
+          "middle": "edy",
+          "suffix": null,
+          "interpretive": "scaffold batch[e]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "e"
+          ],
+          "fl_stage": null,
+          "operation": "scaffold batch",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "chty",
+          "prefix": "ch",
+          "middle": "t",
+          "suffix": "y",
+          "interpretive": "test transfer .",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "test transfer",
+          "flow": "END",
+          "flow_type": "TERMINAL"
+        },
+        {
+          "word": "saiin",
+          "prefix": "sa",
+          "middle": "iin",
+          "suffix": null,
+          "interpretive": "dry iterate[k]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "dry iterate <k>",
+          "flow": "",
+          "flow_type": ""
+        }
+      ]
+    },
+    {
+      "line_id": "13",
+      "paragraph_zone": "EXECUTION",
+      "suffix_mode": "B",
+      "token_count": 13,
+      "kernel_summary": "k:3",
+      "ht_count": 1,
+      "work_en_chsh_count": 3,
+      "work_en_qo_count": 2,
+      "work_ax_count": 2,
+      "check_count": 1,
+      "fl_count": 3,
+      "setup_count": 1,
+      "close_count": 0,
+      "narrative": "EXECUTION pass (Mode B): 13 tokens. Setup: setup iterate. Operations (concurrent): monitoring/testing: test release (precision), test hard->verify (precision), test mark->transfer (precision) + energy: energy heat->close, energy heat->close + scaffold: vessel portion, transfer frame. Checkpoints: settle. State index: release, release, setup final. Kernels: k:3.",
+      "tokens": [
+        {
+          "word": "char",
+          "prefix": "ch",
+          "middle": "ar",
+          "suffix": null,
+          "interpretive": "test release",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "test release",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "aiin",
+          "prefix": null,
+          "middle": "aiin",
+          "suffix": null,
+          "interpretive": "settle",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "settle",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "okor",
+          "prefix": "ok",
+          "middle": "or",
+          "suffix": null,
+          "interpretive": "vessel portion",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "vessel portion",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "ar",
+          "prefix": null,
+          "middle": "ar",
+          "suffix": null,
+          "interpretive": "release",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "release",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "tol",
+          "prefix": "to",
+          "middle": "l",
+          "suffix": null,
+          "interpretive": "transfer frame[k]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "transfer frame <k>",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "qokar",
+          "prefix": "qo",
+          "middle": "k",
+          "suffix": "ar",
+          "interpretive": "heat[k] , [close]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "k"
+          ],
+          "fl_stage": null,
+          "operation": "[QO] heat <k>",
+          "flow": "CLOSE",
+          "flow_type": "MOVE"
+        },
+        {
+          "word": "chckhy",
+          "prefix": "ch",
+          "middle": "ck",
+          "suffix": "hy",
+          "interpretive": "test hard[k] . [verify]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "k"
+          ],
+          "fl_stage": null,
+          "operation": "test hard <k>",
+          "flow": "VERIFY",
+          "flow_type": "CHECK"
+        },
+        {
+          "word": "chdal",
+          "prefix": "ch",
+          "middle": "d",
+          "suffix": "al",
+          "interpretive": "test mark[h]  [transfer]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "test mark <h>",
+          "flow": "TRANSFER",
+          "flow_type": "MOVE"
+        },
+        {
+          "word": "ked",
+          "prefix": "ke",
+          "middle": "d",
+          "suffix": null,
+          "interpretive": "heat-burst mark[h]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "heat-burst mark <h>",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "qokar",
+          "prefix": "qo",
+          "middle": "k",
+          "suffix": "ar",
+          "interpretive": "heat[k] , [close]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "k"
+          ],
+          "fl_stage": null,
+          "operation": "[QO] heat <k>",
+          "flow": "CLOSE",
+          "flow_type": "MOVE"
+        },
+        {
+          "word": "ar",
+          "prefix": null,
+          "middle": "ar",
+          "suffix": null,
+          "interpretive": "release",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "release",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "daiin",
+          "prefix": "da",
+          "middle": "iin",
+          "suffix": null,
+          "interpretive": "setup iterate[k]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "setup iterate <k>",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "dam",
+          "prefix": "da",
+          "middle": "m",
+          "suffix": null,
+          "interpretive": "setup final (FL)",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": "TERMINAL",
+          "operation": "setup final",
+          "flow": "",
+          "flow_type": ""
+        }
+      ]
+    },
+    {
+      "line_id": "14",
+      "paragraph_zone": "EXECUTION",
+      "suffix_mode": "B",
+      "token_count": 11,
+      "kernel_summary": "e:1 h:2 k:1",
+      "ht_count": 3,
+      "work_en_chsh_count": 1,
+      "work_en_qo_count": 1,
+      "work_ax_count": 3,
+      "check_count": 1,
+      "fl_count": 2,
+      "setup_count": 0,
+      "close_count": 0,
+      "narrative": "EXECUTION pass (Mode B): 11 tokens. Operations (concurrent): monitoring/testing: test portion (precision) + energy: energy pulse->close + scaffold: frame->portion, vessel yield->settled, open->iterate. Checkpoints: store end. State index: release, setup end. Kernels: e:1 h:2 k:1.",
+      "tokens": [
+        {
+          "word": "ykeo",
+          "prefix": "yk",
+          "middle": "eo",
+          "suffix": null,
+          "interpretive": "init open[e]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "e"
+          ],
+          "fl_stage": null,
+          "operation": "init open <e>",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "lor",
+          "prefix": null,
+          "middle": "l",
+          "suffix": "or",
+          "interpretive": "frame[k] (FL) , [portion]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": "LATE",
+          "operation": "frame <k>",
+          "flow": "PORTION",
+          "flow_type": "MOVE"
+        },
+        {
+          "word": "ochey",
+          "prefix": null,
+          "middle": "och",
+          "suffix": "ey",
+          "interpretive": "[ident:och] [-ey]",
+          "is_ht": false,
+          "is_dark_pipeline": true,
+          "kernels": [
+            "h"
+          ],
+          "fl_stage": null,
+          "operation": "watch <h>",
+          "flow": "SELECTIVE",
+          "flow_type": "CRITERION"
+        },
+        {
+          "word": "oly",
+          "prefix": "ol",
+          "middle": "y",
+          "suffix": null,
+          "interpretive": "store end (FL)",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": "TERMINAL",
+          "operation": "store end",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "okaly",
+          "prefix": "ok",
+          "middle": "a",
+          "suffix": "ly",
+          "interpretive": "vessel yield . [settled]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "vessel yield",
+          "flow": "SETTLED",
+          "flow_type": "CRITERION"
+        },
+        {
+          "word": "kechdy",
+          "prefix": "ke",
+          "middle": "dy",
+          "suffix": null,
+          "interpretive": "heat-burst seal[k]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "heat-burst seal <k>",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "qokchdy",
+          "prefix": "qo",
+          "middle": "kch",
+          "suffix": "dy",
+          "interpretive": "pulse[k] . [close]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "k",
+            "h"
+          ],
+          "fl_stage": null,
+          "operation": "[QO] pulse <k>",
+          "flow": "CLOSE",
+          "flow_type": "TERMINAL"
+        },
+        {
+          "word": "chor",
+          "prefix": "ch",
+          "middle": "or",
+          "suffix": null,
+          "interpretive": "test portion",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "test portion",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "ar",
+          "prefix": null,
+          "middle": "ar",
+          "suffix": null,
+          "interpretive": "release",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "release",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "aiiin",
+          "prefix": null,
+          "middle": "ai",
+          "suffix": "iin",
+          "interpretive": "open (FL)  [loop]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": "INITIAL",
+          "operation": "open",
+          "flow": "ITERATE",
+          "flow_type": "LOOP"
+        },
+        {
+          "word": "daly",
+          "prefix": "da",
+          "middle": "ly",
+          "suffix": null,
+          "interpretive": "setup end (FL)",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": "FINAL",
+          "operation": "setup end",
+          "flow": "",
+          "flow_type": ""
+        }
+      ]
+    },
+    {
+      "line_id": "15",
+      "paragraph_zone": "EXECUTION",
+      "suffix_mode": "B",
+      "token_count": 13,
+      "kernel_summary": "e:2 h:1 k:2",
+      "ht_count": 2,
+      "work_en_chsh_count": 3,
+      "work_en_qo_count": 1,
+      "work_ax_count": 0,
+      "check_count": 3,
+      "fl_count": 2,
+      "setup_count": 1,
+      "close_count": 1,
+      "narrative": "EXECUTION pass (Mode B): 13 tokens. Setup: continue. Operations (concurrent): monitoring/testing: test work->close (precision), test batch (precision), test exact->end (precision) + energy: energy heat->transfer. Checkpoints: portion, end, vessel end. State index: release, gather. Close: anchor input. Kernels: e:2 h:1 k:2.",
+      "tokens": [
+        {
+          "word": "or",
+          "prefix": null,
+          "middle": "or",
+          "suffix": null,
+          "interpretive": "portion",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "portion",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "ar",
+          "prefix": null,
+          "middle": "ar",
+          "suffix": null,
+          "interpretive": "release",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "release",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "y",
+          "prefix": null,
+          "middle": "y",
+          "suffix": null,
+          "interpretive": "end (FL)",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": "TERMINAL",
+          "operation": "end",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "kar",
+          "prefix": "ka",
+          "middle": "r",
+          "suffix": null,
+          "interpretive": "anchor input[k]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "anchor input <k>",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "ol",
+          "prefix": null,
+          "middle": "ol",
+          "suffix": null,
+          "interpretive": "continue[k]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "continue <k>",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "al",
+          "prefix": null,
+          "middle": "al",
+          "suffix": null,
+          "interpretive": "gather[k] (FL)",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": "LATE",
+          "operation": "gather <k>",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "oky",
+          "prefix": "ok",
+          "middle": "y",
+          "suffix": null,
+          "interpretive": "vessel end",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "vessel end",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "chody",
+          "prefix": "ch",
+          "middle": "o",
+          "suffix": "dy",
+          "interpretive": "test work . [close]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "test work",
+          "flow": "CLOSE",
+          "flow_type": "TERMINAL"
+        },
+        {
+          "word": "qokal",
+          "prefix": "qo",
+          "middle": "k",
+          "suffix": "al",
+          "interpretive": "heat[k]  [transfer]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "k"
+          ],
+          "fl_stage": null,
+          "operation": "[QO] heat <k>",
+          "flow": "TRANSFER",
+          "flow_type": "MOVE"
+        },
+        {
+          "word": "chedy",
+          "prefix": "ch",
+          "middle": "edy",
+          "suffix": null,
+          "interpretive": "test batch[e]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "e"
+          ],
+          "fl_stage": null,
+          "operation": "test batch",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "chcthedy",
+          "prefix": "ch",
+          "middle": "cth",
+          "suffix": "edy",
+          "interpretive": "[ident:cth] [-edy]",
+          "is_ht": false,
+          "is_dark_pipeline": true,
+          "kernels": [
+            "h"
+          ],
+          "fl_stage": null,
+          "operation": "test hazard",
+          "flow": "THOROUGH",
+          "flow_type": "CRITERION"
+        },
+        {
+          "word": "cheky",
+          "prefix": "ch",
+          "middle": "ek",
+          "suffix": "y",
+          "interpretive": "test exact[k] .",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "k",
+            "e"
+          ],
+          "fl_stage": null,
+          "operation": "test exact <k>",
+          "flow": "END",
+          "flow_type": "TERMINAL"
+        },
+        {
+          "word": "daram",
+          "prefix": "da",
+          "middle": "r",
+          "suffix": "am",
+          "interpretive": "setup input[k] (FL) . [final]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": "MEDIAL",
+          "operation": "setup input <k>",
+          "flow": "FINALIZE",
+          "flow_type": "TERMINAL"
+        }
+      ]
+    },
+    {
+      "line_id": "16",
+      "paragraph_zone": "EXECUTION",
+      "suffix_mode": "A",
+      "token_count": 8,
+      "kernel_summary": "e:4 h:2 k:5",
+      "ht_count": 4,
+      "work_en_chsh_count": 2,
+      "work_en_qo_count": 1,
+      "work_ax_count": 0,
+      "check_count": 0,
+      "fl_count": 0,
+      "setup_count": 1,
+      "close_count": 0,
+      "narrative": "SPECIFICATION pass (Mode A): 8 tokens. Setup: dry iterate->continue. Operations (concurrent): monitoring/testing: test exact->end (precision), monitor exact (tolerance) + energy: energy heat->thorough. Kernels: e:4 h:2 k:5.",
+      "tokens": [
+        {
+          "word": "sair",
+          "prefix": "sa",
+          "middle": "i",
+          "suffix": "r",
+          "interpretive": "dry iterate",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [],
+          "fl_stage": null,
+          "operation": "dry iterate",
+          "flow": "CONTINUE",
+          "flow_type": "SEQUENCE"
+        },
+        {
+          "word": "chekar",
+          "prefix": "ch",
+          "middle": "ek",
+          "suffix": "ar",
+          "interpretive": "test exact[k] , [close]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "k",
+            "e"
+          ],
+          "fl_stage": null,
+          "operation": "test exact <k>",
+          "flow": "CLOSE",
+          "flow_type": "MOVE"
+        },
+        {
+          "word": "cheky",
+          "prefix": "ch",
+          "middle": "ek",
+          "suffix": "y",
+          "interpretive": "test exact[k] .",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "k",
+            "e"
+          ],
+          "fl_stage": null,
+          "operation": "test exact <k>",
+          "flow": "END",
+          "flow_type": "TERMINAL"
+        },
+        {
+          "word": "shek",
+          "prefix": "sh",
+          "middle": "ek",
+          "suffix": null,
+          "interpretive": "monitor exact[k]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "k",
+            "e"
+          ],
+          "fl_stage": null,
+          "operation": "monitor exact <k>",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "cholchedy",
+          "prefix": "ch",
+          "middle": "olch",
+          "suffix": "edy",
+          "interpretive": "[ident:olch] [-edy]",
+          "is_ht": false,
+          "is_dark_pipeline": true,
+          "kernels": [
+            "h"
+          ],
+          "fl_stage": null,
+          "operation": "test strip <k>",
+          "flow": "THOROUGH",
+          "flow_type": "CRITERION"
+        },
+        {
+          "word": "qokedy",
+          "prefix": "qo",
+          "middle": "k",
+          "suffix": "edy",
+          "interpretive": "heat[k] . [thorough]",
+          "is_ht": false,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "k"
+          ],
+          "fl_stage": null,
+          "operation": "[QO] heat <k>",
+          "flow": "THOROUGH",
+          "flow_type": "CRITERION"
+        },
+        {
+          "word": "yk",
+          "prefix": null,
+          "middle": "yk",
+          "suffix": null,
+          "interpretive": "[ident:yk]",
+          "is_ht": false,
+          "is_dark_pipeline": true,
+          "kernels": [
+            "k"
+          ],
+          "fl_stage": null,
+          "operation": "end",
+          "flow": "",
+          "flow_type": ""
+        },
+        {
+          "word": "cheolchcthy",
+          "prefix": "ch",
+          "middle": "eolchct",
+          "suffix": "hy",
+          "interpretive": "[hold-heavy] [-hy]",
+          "is_ht": true,
+          "is_dark_pipeline": false,
+          "kernels": [
+            "h",
+            "e"
+          ],
+          "fl_stage": null,
+          "operation": "[hold-heavy] [-hy]",
+          "flow": "",
+          "flow_type": ""
+        }
+      ]
+    }
+  ],
+  "paragraph_narrative": "P2 is a 6-line, 58-token program in section H (REGIME_3), opened by a tcheo-gallows. Kernel balance: e=37.9%, h=24.1%, k=37.9% (BALANCED). Suffix mode cycling: BABBBA (60% interleave rate). Zones: HEADER=1, SPECIFICATION=1, EXECUTION=4. The header establishes identification context with 3 HT/UN tokens. Body lines are dominated by CHSH operations across 5 lines. Tail product signature: PROCESS_HEAVY. Gradient: SPEC_TO_EXEC.",
+  "coherence_assessment": {
+    "kernel_consistency": {
+      "status": "PASS",
+      "detail": "Kernel balance {'e': 37.9, 'k': 37.9, 'h': 24.1}, character: BALANCED"
+    },
+    "zone_coverage": {
+      "status": "PASS",
+      "detail": "Zones present: ['EXECUTION', 'HEADER', 'SPECIFICATION']. Header: yes"
+    },
+    "mode_cycling": {
+      "status": "PASS",
+      "detail": "Modes: BABBBA. Both present: True"
+    },
+    "narrative_coverage": {
+      "status": "PASS",
+      "detail": "49/49 operational tokens glossed (100%). 9 HT/UN tokens (identification, not operational)."
+    },
+    "overall": "COHERENT"
+  }
+}

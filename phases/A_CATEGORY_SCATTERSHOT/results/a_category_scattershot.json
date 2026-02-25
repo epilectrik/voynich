@@ -1,0 +1,710 @@
+{
+  "phase": "A_CATEGORY_SCATTERSHOT",
+  "phase_number": 452,
+  "n_perm": 1000,
+  "bonferroni_p": 0.00625,
+  "seed": 42,
+  "data_summary": {
+    "n_a_tokens": 11174,
+    "n_b_tokens": 23096,
+    "n_middles_with_category": 1235,
+    "n_pp_middles": 404,
+    "n_ri_middles": 609,
+    "n_bridge_middles": 85,
+    "n_dark_middles": 300,
+    "a_pp_category_coverage": "99.8%"
+  },
+  "tests": {
+    "T1": {
+      "test": "T1",
+      "verdict": "PASS",
+      "p_value": 0.0,
+      "obs_mean_entropy": 1.8102397033286382,
+      "null_mean_entropy": 1.8861631096875946,
+      "null_std_entropy": 0.007817110415068955,
+      "effect_cohen_d": 9.712464365718475,
+      "n_records": 1539,
+      "n_pp_middles": 10382
+    },
+    "T2": {
+      "test": "T2",
+      "verdict": "FAIL",
+      "p_value": 0.204,
+      "obs_mean_concentration": 0.6921932683240984,
+      "null_mean_concentration": 0.689968706454858,
+      "null_std": 0.0026256970267322425,
+      "effect_cohen_d": 0.8472271727259321,
+      "n_records": 1534,
+      "n_classified_pp": 10064,
+      "affinity_counts": {
+        "B_ENRICHED": 88,
+        "A_ENRICHED": 69,
+        "NEUTRAL": 81
+      },
+      "b_mode_counts": {
+        "A": 1035,
+        "B": 1371
+      }
+    },
+    "T3": {
+      "test": "T3",
+      "verdict": "PASS",
+      "p_value": 0.000999000999000999,
+      "chi_squared": 165.1589046107414,
+      "cramers_v": 0.22124754367254024,
+      "n_decomposed": 486,
+      "n_filtered": 482,
+      "ext_chars": [
+        "a",
+        "c",
+        "d",
+        "e",
+        "f",
+        "h",
+        "i",
+        "k",
+        "l",
+        "m",
+        "o",
+        "p",
+        "r",
+        "s",
+        "t",
+        "y"
+      ],
+      "categories": [
+        "CONTAINMENT",
+        "FLOW",
+        "MARKING",
+        "MONITORING",
+        "OPERATION",
+        "STAGING",
+        "THERMAL",
+        "TRANSITION"
+      ],
+      "contingency": [
+        [
+          3,
+          12,
+          17,
+          5,
+          5,
+          1,
+          5,
+          2
+        ],
+        [
+          2,
+          7,
+          17,
+          4,
+          11,
+          7,
+          9,
+          6
+        ],
+        [
+          1,
+          8,
+          7,
+          2,
+          7,
+          3,
+          5,
+          6
+        ],
+        [
+          1,
+          8,
+          9,
+          5,
+          2,
+          5,
+          12,
+          9
+        ],
+        [
+          0,
+          0,
+          0,
+          0,
+          0,
+          1,
+          1,
+          1
+        ],
+        [
+          0,
+          4,
+          8,
+          0,
+          1,
+          1,
+          2,
+          0
+        ],
+        [
+          0,
+          5,
+          3,
+          0,
+          4,
+          6,
+          2,
+          3
+        ],
+        [
+          0,
+          1,
+          3,
+          0,
+          8,
+          1,
+          4,
+          2
+        ],
+        [
+          0,
+          4,
+          3,
+          0,
+          7,
+          4,
+          0,
+          3
+        ],
+        [
+          0,
+          3,
+          0,
+          0,
+          1,
+          0,
+          1,
+          1
+        ],
+        [
+          0,
+          19,
+          12,
+          21,
+          5,
+          10,
+          8,
+          6
+        ],
+        [
+          1,
+          2,
+          0,
+          0,
+          1,
+          1,
+          0,
+          1
+        ],
+        [
+          0,
+          3,
+          5,
+          1,
+          5,
+          1,
+          2,
+          0
+        ],
+        [
+          1,
+          8,
+          12,
+          0,
+          7,
+          2,
+          8,
+          8
+        ],
+        [
+          0,
+          3,
+          3,
+          0,
+          1,
+          3,
+          2,
+          1
+        ],
+        [
+          2,
+          4,
+          7,
+          1,
+          3,
+          3,
+          5,
+          3
+        ]
+      ],
+      "top_associations": [
+        {
+          "ext_char": "a",
+          "dominant_category": "MARKING",
+          "fraction": 0.34,
+          "count": 50
+        },
+        {
+          "ext_char": "c",
+          "dominant_category": "MARKING",
+          "fraction": 0.2698412698412698,
+          "count": 63
+        },
+        {
+          "ext_char": "d",
+          "dominant_category": "FLOW",
+          "fraction": 0.20512820512820512,
+          "count": 39
+        },
+        {
+          "ext_char": "e",
+          "dominant_category": "THERMAL",
+          "fraction": 0.23529411764705882,
+          "count": 51
+        },
+        {
+          "ext_char": "f",
+          "dominant_category": "STAGING",
+          "fraction": 0.3333333333333333,
+          "count": 3
+        },
+        {
+          "ext_char": "h",
+          "dominant_category": "MARKING",
+          "fraction": 0.5,
+          "count": 16
+        },
+        {
+          "ext_char": "i",
+          "dominant_category": "STAGING",
+          "fraction": 0.2608695652173913,
+          "count": 23
+        },
+        {
+          "ext_char": "k",
+          "dominant_category": "OPERATION",
+          "fraction": 0.42105263157894735,
+          "count": 19
+        },
+        {
+          "ext_char": "l",
+          "dominant_category": "OPERATION",
+          "fraction": 0.3333333333333333,
+          "count": 21
+        },
+        {
+          "ext_char": "m",
+          "dominant_category": "FLOW",
+          "fraction": 0.5,
+          "count": 6
+        },
+        {
+          "ext_char": "o",
+          "dominant_category": "MONITORING",
+          "fraction": 0.25925925925925924,
+          "count": 81
+        },
+        {
+          "ext_char": "p",
+          "dominant_category": "FLOW",
+          "fraction": 0.3333333333333333,
+          "count": 6
+        },
+        {
+          "ext_char": "r",
+          "dominant_category": "MARKING",
+          "fraction": 0.29411764705882354,
+          "count": 17
+        },
+        {
+          "ext_char": "s",
+          "dominant_category": "MARKING",
+          "fraction": 0.2608695652173913,
+          "count": 46
+        },
+        {
+          "ext_char": "t",
+          "dominant_category": "FLOW",
+          "fraction": 0.23076923076923078,
+          "count": 13
+        },
+        {
+          "ext_char": "y",
+          "dominant_category": "MARKING",
+          "fraction": 0.25,
+          "count": 28
+        }
+      ]
+    },
+    "T4": {
+      "test": "T4",
+      "verdict": "PASS",
+      "p_value": 0.0,
+      "obs_mean_entropy": 2.5333163015927016,
+      "null_mean_entropy": 2.623384238070412,
+      "null_std_entropy": 0.007233073358113283,
+      "effect_cohen_d": 12.452236000652423,
+      "n_paragraphs": 242,
+      "n_pp_middles": 10192,
+      "par_size_median": 37.5,
+      "par_size_range": [
+        3,
+        204
+      ]
+    },
+    "T5": {
+      "test": "T5",
+      "verdict": "PASS",
+      "p_value": 0.000999000999000999,
+      "chi_squared": 72.97508237919824,
+      "cramers_v": 0.4405481425475801,
+      "n_bridge": 84,
+      "n_dark": 292,
+      "bridge_dist": {
+        "CONTAINMENT": 7,
+        "STAGING": 11,
+        "TRANSITION": 17,
+        "THERMAL": 10,
+        "FLOW": 15,
+        "MARKING": 9,
+        "OPERATION": 9,
+        "MONITORING": 6
+      },
+      "dark_dist": {
+        "FLOW": 59,
+        "STAGING": 28,
+        "MARKING": 105,
+        "MONITORING": 6,
+        "THERMAL": 55,
+        "OPERATION": 31,
+        "TRANSITION": 6,
+        "CONTAINMENT": 2
+      },
+      "categories": [
+        "CONTAINMENT",
+        "FLOW",
+        "MARKING",
+        "MONITORING",
+        "OPERATION",
+        "STAGING",
+        "THERMAL",
+        "TRANSITION"
+      ],
+      "contingency": [
+        [
+          7,
+          15,
+          9,
+          6,
+          9,
+          11,
+          10,
+          17
+        ],
+        [
+          2,
+          59,
+          105,
+          6,
+          31,
+          28,
+          55,
+          6
+        ]
+      ],
+      "length_control": {
+        "short": {
+          "chi2": 28.33750652790349,
+          "p": 0.00019097933033742276,
+          "n_bridge": 53,
+          "n_dark": 58
+        },
+        "medium": {
+          "chi2": 23.877566817417737,
+          "p": 0.00119719721772672,
+          "n_bridge": 31,
+          "n_dark": 197
+        },
+        "long": {
+          "skip": "too_few_samples",
+          "n_bridge": 0,
+          "n_dark": 37
+        }
+      }
+    },
+    "T6": {
+      "test": "T6",
+      "verdict": "FAIL",
+      "p_value": 0.4800338595497219,
+      "chi_squared": 6.524244286565647,
+      "cramers_v": 0.02147878399651627,
+      "jsd": 0.00024332025224541075,
+      "n_ch_context": 8669,
+      "n_sh_context": 5473,
+      "ch_dist": {
+        "TRANSITION": 1549,
+        "CONTAINMENT": 417,
+        "FLOW": 1547,
+        "STAGING": 1959,
+        "THERMAL": 1212,
+        "MONITORING": 334,
+        "MARKING": 613,
+        "OPERATION": 1038
+      },
+      "sh_dist": {
+        "FLOW": 940,
+        "STAGING": 1215,
+        "OPERATION": 701,
+        "TRANSITION": 978,
+        "CONTAINMENT": 235,
+        "THERMAL": 784,
+        "MONITORING": 205,
+        "MARKING": 415
+      },
+      "categories": [
+        "CONTAINMENT",
+        "FLOW",
+        "MARKING",
+        "MONITORING",
+        "OPERATION",
+        "STAGING",
+        "THERMAL",
+        "TRANSITION"
+      ],
+      "contingency": [
+        [
+          417,
+          1547,
+          613,
+          334,
+          1038,
+          1959,
+          1212,
+          1549
+        ],
+        [
+          235,
+          940,
+          415,
+          205,
+          701,
+          1215,
+          784,
+          978
+        ]
+      ]
+    },
+    "T7": {
+      "test": "T7",
+      "verdict": "PASS",
+      "p_value": 0.0,
+      "obs_mean_coherence": 0.2718757996726994,
+      "null_mean_coherence": 0.2380424656043362,
+      "null_std": 0.002913013348718761,
+      "effect_cohen_d": 11.614548238040067,
+      "n_records": 1539,
+      "residual_effect": 0.2913826833441906
+    },
+    "T8": {
+      "test": "T8",
+      "verdict": "PASS",
+      "min_p": 2.772185392767917e-07,
+      "n_sig_axes": 5,
+      "any_bonferroni": true,
+      "kruskal_wallis": {
+        "CLOSURE": {
+          "H": 12.922605326966131,
+          "p": 0.0015627586352635354,
+          "means": {
+            "H": 0.1286865818417388,
+            "P": 0.08207487157464674,
+            "T": 0.09146162746611819
+          }
+        },
+        "ENERGY": {
+          "H": 20.228852316857907,
+          "p": 4.049118918816359e-05,
+          "means": {
+            "H": 0.12325764038670416,
+            "P": 0.17534043994834017,
+            "T": 0.18279852343400252
+          }
+        },
+        "FREE": {
+          "H": 20.855199676215886,
+          "p": 2.9604036487577462e-05,
+          "means": {
+            "H": 0.039076544580102006,
+            "P": 0.012659925386368296,
+            "T": 0.02373907248832845
+          }
+        },
+        "ITERATION": {
+          "H": 5.356761227532991,
+          "p": 0.06867427433119981,
+          "means": {
+            "H": 0.28092035802564874,
+            "P": 0.22766886243914228,
+            "T": 0.3356302875012469
+          }
+        },
+        "MONITORING": {
+          "H": 16.6939972175793,
+          "p": 0.0002371071026984679,
+          "means": {
+            "H": 0.11143547439425538,
+            "P": 0.07254467766585798,
+            "T": 0.07863537694799519
+          }
+        },
+        "OTHER": {
+          "H": 1.3812798487921463,
+          "p": 0.5012552009795816,
+          "means": {
+            "H": 0.03127229953049722,
+            "P": 0.027696796629479683,
+            "T": 0.03414064701477112
+          }
+        },
+        "STABILITY": {
+          "H": 30.196919382718317,
+          "p": 2.772185392767917e-07,
+          "means": {
+            "H": 0.08459019979569454,
+            "P": 0.19825800006939764,
+            "T": 0.09628402068257563
+          }
+        },
+        "STRUCTURAL": {
+          "H": 2.57228286054089,
+          "p": 0.2763349864318433,
+          "means": {
+            "H": 0.20076090144535919,
+            "P": 0.20375642628676724,
+            "T": 0.157310444464962
+          }
+        }
+      },
+      "a_section_profiles": {
+        "T": [
+          0.08363201911589008,
+          0.19952210274790919,
+          0.023297491039426525,
+          0.33990442054958186,
+          0.07108721624850657,
+          0.03345280764635603,
+          0.1003584229390681,
+          0.14874551971326164
+        ],
+        "H": [
+          0.12352494651852874,
+          0.12538817196880822,
+          0.03809260920571389,
+          0.2778966254916845,
+          0.11103443516665516,
+          0.03146780760472017,
+          0.08853771306328066,
+          0.20405769098060866
+        ],
+        "P": [
+          0.08181432810512929,
+          0.17189487070792708,
+          0.011869436201780416,
+          0.23590504451038577,
+          0.06994489190334888,
+          0.02755404832556168,
+          0.19987282746926663,
+          0.20114455277660026
+        ]
+      },
+      "b_section_profiles": {
+        "H": [
+          0.2253627569528416,
+          0.125453446191052,
+          0.02176541717049577,
+          0.2846130592503023,
+          0.06302902055622733,
+          0.02690447400241838,
+          0.15145102781136638,
+          0.10142079806529625
+        ],
+        "T": [
+          0.2036888532477947,
+          0.12910986367281477,
+          0.03207698476343224,
+          0.22774659182036888,
+          0.07698476343223737,
+          0.02967121090617482,
+          0.17321571772253408,
+          0.12750601443464316
+        ],
+        "B": [
+          0.23357890655292748,
+          0.21256300891818533,
+          0.03311360992632804,
+          0.17766576192322606,
+          0.0635129895308259,
+          0.013726250484683986,
+          0.20155098875533153,
+          0.06428848390849166
+        ],
+        "C": [
+          0.16546515619636115,
+          0.10298661174047374,
+          0.03158256093374528,
+          0.34946790250600757,
+          0.06041881222107793,
+          0.025746652935118436,
+          0.13353930655681429,
+          0.13079299691040164
+        ],
+        "S": [
+          0.1637250348351138,
+          0.13385973060845333,
+          0.02772875058058523,
+          0.2799814212726428,
+          0.05991639572689271,
+          0.014444960520204365,
+          0.21686019507663726,
+          0.10348351137947051
+        ]
+      },
+      "cross_system_correlation": null,
+      "axis_names": [
+        "CLOSURE",
+        "ENERGY",
+        "FREE",
+        "ITERATION",
+        "MONITORING",
+        "OTHER",
+        "STABILITY",
+        "STRUCTURAL"
+      ],
+      "sections_tested": [
+        "H",
+        "P",
+        "T"
+      ],
+      "n_folios_per_section": {
+        "T": 3,
+        "H": 95,
+        "P": 16
+      }
+    }
+  },
+  "summary": {
+    "pass": 6,
+    "weak": 0,
+    "fail": 2,
+    "skip": 0,
+    "overall_verdict": "CATEGORY_ORGANIZED"
+  },
+  "runtime_seconds": 434.6
+}

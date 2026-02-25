@@ -1,0 +1,114 @@
+{
+  "n_folios": 82,
+  "generated": "2026-02-21",
+  "metrics": {
+    "k_ratio": {
+      "mean": 0.3121,
+      "std": 0.0953
+    },
+    "h_ratio": {
+      "mean": 0.1645,
+      "std": 0.0565
+    },
+    "e_ratio": {
+      "mean": 0.5235,
+      "std": 0.0928
+    },
+    "iteration_rate": {
+      "mean": 0.0087,
+      "std": 0.0105
+    },
+    "checkpoint_rate": {
+      "mean": 0.1329,
+      "std": 0.0749
+    },
+    "terminal_rate": {
+      "mean": 0.2184,
+      "std": 0.0998
+    },
+    "thermo_ke": {
+      "mean": 0.0282,
+      "std": 0.0222
+    },
+    "thermo_kch": {
+      "mean": 0.0088,
+      "std": 0.0093
+    },
+    "energy_rate": {
+      "mean": 0.2893,
+      "std": 0.0932
+    },
+    "frequent_rate": {
+      "mean": 0.1361,
+      "std": 0.0562
+    },
+    "link_rate": {
+      "mean": 0.0011,
+      "std": 0.0023
+    },
+    "vocab_richness": {
+      "mean": 0.3233,
+      "std": 0.1177
+    },
+    "mean_line_length": {
+      "mean": 9.7613,
+      "std": 3.3883
+    },
+    "qo_fraction": {
+      "mean": 0.2821,
+      "std": 0.0869
+    },
+    "fq_rate": {
+      "mean": 0.1264,
+      "std": 0.0651
+    },
+    "axm_self": {
+      "mean": 0.6625277447639247,
+      "std": 0.11469889000478825
+    },
+    "hazard_density": {
+      "mean": 0.23617001124841508,
+      "std": 0.06690773115432647
+    },
+    "sister_ratio": {
+      "mean": 0.613205339784394,
+      "std": 0.1423443701966413
+    },
+    "ol_rate": {
+      "mean": 0.12493804099084649,
+      "std": 0.0621794323280782
+    },
+    "compound_rate": {
+      "mean": 0.33124645257895063,
+      "std": 0.06369983721803775
+    },
+    "bridge_rate": {
+      "mean": 0.8643886876428803,
+      "std": 0.046719024035452625
+    },
+    "dark_pipeline_rate": {
+      "mean": 0.07402699509288328,
+      "std": 0.026516606707496285
+    },
+    "role_EN_pct": {
+      "mean": 0.8003228849913415,
+      "std": 0.05811506090338739
+    },
+    "role_CC_pct": {
+      "mean": 0.008609437756086372,
+      "std": 0.012486822254202938
+    },
+    "role_AX_pct": {
+      "mean": 0.19106767725257212,
+      "std": 0.055881986822669594
+    },
+    "role_FL_pct": {
+      "mean": 0.0,
+      "std": 0.0
+    },
+    "role_FQ_pct": {
+      "mean": 0.0,
+      "std": 0.0
+    }
+  }
+}
