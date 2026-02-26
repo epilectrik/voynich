@@ -3,7 +3,7 @@
 > **This document logs explanatory fits.**
 > **No entry in this file constrains the model.**
 
-**Version:** 1.3 | **Last Updated:** 2026-02-23 | **Fit Count:** 7
+**Version:** 1.4 | **Last Updated:** 2026-02-25 | **Fit Count:** 12
 
 ---
 
@@ -364,6 +364,179 @@ The control program has two dials. The e-count on a heat MIDDLE sets how intense
 - **Extends:** C1242 (cross-lane prediction — the heat-measure cycle uses both dimensions)
 - **Refines:** C1244 (aiin→ain wind-down = duration decreasing toward line end)
 - **Gloss refinement:** -aiin/-ain suffix gloss updated from "check" to "settle/intake" in GLOSSING.md
+
+---
+
+## Distillation Terminology Fits
+
+These fits map Voynich B structural features to distillation physics. All are Tier 3-4 interpretive (extending GLOSSING.md), with Tier 2 structural foundations where noted.
+
+**Source phase:** DISTILLATION_TERMINOLOGY_MAPPING (Phase 461)
+
+---
+
+### F-B-008 - Two-Channel Thermal Architecture
+
+**Tier:** F3 | **Result:** SUCCESS | **Supports:** C647, C601, C1207
+
+#### Hypothesis
+
+qo and ok manage two physically distinct thermal channels: qo = heat source (k-enriched), ok = vessel temperature (e-enriched).
+
+#### Evidence
+
+- qo k-fraction: 0.510, ok k-fraction: 0.001 (Mann-Whitney p < 0.001)
+- ok e-fraction: 0.282, qo e-fraction: 0.102 (Mann-Whitney p < 0.001)
+- Permutation test (10K shuffles): p < 0.001 for both
+- Negative control: sa prefix shows no k-vs-e differentiation (p = 0.999)
+- Cross-validates F-B-006: QO = 70.7% k (energy), CHSH = 68.7% e (stabilization)
+
+#### Interpretation (Tier 3-4)
+
+qo selects the heat source domain (fire/furnace management — adding energy), while ok selects the vessel temperature domain (still/apparatus — managing received heat). These are the two independent thermal channels in distillation: the fire you're tending and the vessel you're monitoring. The k/e enrichment is consistent with C1207 (k-o anti-correlation r=-0.585) and Phase 440 (ok = "vessel").
+
+**Brunschwig:** Fire managed via air holes (lines 2038-2055) vs vessel tested by finger (lines 1880-1893).
+
+#### Limitations
+
+- The structural fact (qo is k-enriched, ok is e-enriched) is Tier 2. The physical interpretation (heat source vs vessel temperature) is Tier 3-4.
+- qo k-frac = 0.510 (not ~0.707 as F-B-006 lane level) because this measures PREFIX-level, not lane-level.
+
+---
+
+### F-B-009 - Overshoot-Correct Cycling
+
+**Tier:** F3 | **Result:** SUCCESS | **Supports:** C643, C647
+
+#### Hypothesis
+
+Within lines, qo-k tokens followed by ok-e tokens more than chance — consistent with heat overshoot → vessel correction cycle.
+
+#### Evidence
+
+- qo-k → ok-e: 103 transitions (null mean: 72.0, permutation p < 0.001)
+- ok-e → qo-k: 112 transitions (null mean: 72.1, permutation p < 0.001)
+- Both directions elevated: the cycle completes (overshoot → correct → overshoot)
+- Negative control: da→sa transitions = 6 (p = 0.996, at chance)
+
+#### Interpretation (Tier 3-4)
+
+The grammar encodes overshoot-correct cycling at the within-line level. The operator applies heat (qo+k), the vessel overshoots, the operator cools (ok+e), then repeats. This is the fundamental control loop in pre-thermometer distillation: heat always overshoots because there's no precise temperature control, so the operator continually corrects.
+
+**Brunschwig:** "wo es hehender tropfen ist so wer das fuer zu gross" — if it drips faster, the fire is too great.
+
+#### Limitations
+
+- The transition elevation is modest (~40% above null). The grammar prefers but does not require this cycling.
+- Cannot distinguish overshoot-correct from any other source of qo/ok alternation within lines.
+
+---
+
+### F-B-010 - REGIME Token Profile Discrimination
+
+**Tier:** F3 | **Result:** SUCCESS | **Supports:** C643, REGIME system
+
+#### Hypothesis
+
+The 4 REGIMEs produce statistically different token profiles across multiple metrics.
+
+#### Evidence
+
+6/7 metrics discriminate by REGIME in B (Kruskal-Wallis p < 0.01):
+
+| Metric | H | p | R1 | R2 | R3 | R4 |
+|--------|---|---|----|----|----|----|
+| k_frac | 49.2 | <0.001 | 0.168 | 0.113 | 0.086 | 0.080 |
+| e_frac | 35.9 | <0.001 | 0.194 | 0.088 | 0.167 | 0.197 |
+| h_frac | 27.0 | <0.001 | 0.018 | 0.017 | 0.028 | 0.029 |
+| THERMAL_rate | 44.7 | <0.001 | 0.278 | 0.143 | 0.184 | 0.169 |
+| MONITORING_rate | 13.9 | 0.003 | 0.019 | 0.007 | 0.014 | 0.019 |
+| CONTAINMENT_rate | 11.8 | 0.008 | 0.048 | 0.074 | 0.053 | 0.072 |
+| mean_line_length | 3.3 | 0.345 | 9.20 | 9.15 | 9.93 | 11.35 |
+
+**Negative control:** Currier A tokens show 0/7 significant metrics — the discrimination is B-specific (execution, not configuration).
+
+#### Interpretation (Tier 3-4)
+
+The REGIMEs correspond to distinct operational modes. Alignment with Brunschwig fire degrees (Tier 3):
+- REGIME_1: highest THERMAL (0.278), highest e-frac (0.194) — consistent with balneum marie (gentle, thermal-intensive with cooling)
+- REGIME_2: lowest THERMAL (0.143), lowest e-frac (0.088) — sustained operation, low thermal modulation
+- REGIME_3: highest h-frac (0.028) — consistent with direct fire (needs more monitoring)
+- REGIME_4: highest h-frac (0.029), longest lines (11.35) — precision operation
+
+#### Limitations
+
+- REGIME-to-Brunschwig mapping is Tier 3. The structural discrimination is Tier 2.
+- Mean line length does not discriminate (p = 0.345).
+
+---
+
+### F-B-011 - Luting-CONTAINMENT REGIME Association
+
+**Tier:** F3 | **Result:** SUCCESS (via dy-MIDDLE) | **Supports:** REGIME system
+
+#### Hypothesis
+
+Sealing/luting operations discriminate between REGIMEs.
+
+#### Evidence
+
+Category-level CONTAINMENT rate does NOT discriminate (R1=0.048, R3=0.053, p=0.778). But the specific MIDDLE `dy` (seal/close) does:
+
+- R1 dy-rate: 0.138, R3 dy-rate: 0.100 (Mann-Whitney p = 0.015, Cohen's d = -0.753)
+- **Unexpected direction:** R1 (balneum) has MORE sealing than R3 (ash/sand)
+- Negative control: OPERATION rate p = 0.215 (not significant)
+
+#### Interpretation (Tier 3-4)
+
+The dy-MIDDLE discriminates REGIMEs with a large effect size (d = -0.75). The direction is reversed from prediction: balneum marie (R1) uses more sealing operations than direct fire (R3). This makes physical sense: balneum marie requires sealed vessels immersed in water baths, while direct fire methods may use open or loosely covered vessels.
+
+**Brunschwig note:** "die in balneum marie durfent nit verlottiert sin" (line 1344-1348) says balneum doesn't need luting of joints — but the vessel itself must be sealed to prevent water ingress. The distinction is between joint-luting (not needed for balneum) and vessel-sealing (more needed for balneum).
+
+#### Limitations
+
+- The category-level test failed; only the specific MIDDLE test passed.
+- The direction reversal suggests the hypothesis was partially wrong about which REGIME needs more sealing.
+
+---
+
+### F-B-012 - E-Compound Cooling Taxonomy
+
+**Tier:** F4 | **Result:** SUCCESS | **Supports:** C1197, REGIME system
+
+#### Hypothesis
+
+Different e-compound MIDDLEs correspond to different cooling modes, varying by REGIME.
+
+#### Evidence
+
+Chi-square: 140.67 (p < 0.001, df = 6). REGIME x e-compound contingency is highly significant.
+
+| | e_basic | eo_active | ee_extended |
+|---|---|---|---|
+| REGIME_1 | 550 | 224 | 526 |
+| REGIME_2 | 35 | 22 | 33 |
+| REGIME_3 | 220 | 302 | 325 |
+| REGIME_4 | 62 | 105 | 91 |
+
+2/3 specific predictions confirmed:
+- ee_extended enriched in R1 vs R3: YES (526 > 325 after normalizing)
+- eo_active enriched in R3 vs R1: YES (302/847 = 35.7% vs 224/1300 = 17.2%)
+- e_basic enriched in R3: NO (220/847 vs 550/1300 — R1 has more after normalizing)
+
+#### Interpretation (Tier 3-4)
+
+The e-compound system encodes multiple cooling strategies:
+- **ee_extended** (eey, eeol, ee, eeo): Extended cooling — overnight standing, gradual cooling. Enriched in REGIME_1 (balneum).
+- **eo_active** (eo, eol): Active cooling — condenser management, water replenishment. Enriched in REGIME_3 (direct fire).
+- **e_basic** (e): Basic cooling — simple heat reduction. Universal.
+
+This aligns with C1197 (extensibility partition) where e-extension modulates cooling duration/intensity.
+
+#### Limitations
+
+- The mapping of specific e-compounds to specific physical cooling methods is Tier 4.
+- eeol R1 enrichment is only 0.94x (not enriched as predicted); the ee_extended enrichment comes from eey and eeo.
 
 ---
 

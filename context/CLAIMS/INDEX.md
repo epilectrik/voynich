@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1156 validated constraints | **Version:** 4.63 | **Date:** 2026-02-25
+**Total:** 1160 validated constraints | **Version:** 4.64 | **Date:** 2026-02-25
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3730,6 +3730,30 @@ Tests whether Mode A and Mode B parallel tracks show structured category couplin
 - B->A thermal feedback: hot B lines suppress MARKING in next A line (rho=-0.198)
 - No sequential coupling: zig-zag, interleaving, transition grammar, and forbidden transitions all negative
 - BA handoff dominated by TRANSITION->THERMAL (12.0%) — B exits through transition, A re-enters with thermal
+
+---
+
+### Distillation Terminology Mapping (C1313-C1316) -- Phase: DISTILLATION_TERMINOLOGY_MAPPING (Phase 461)
+
+Tests whether distillation physics maps to the manuscript's structural patterns. 10 tests with negative controls: two-channel thermal model, overshoot-correct cycling, MIDPROCESS action mapping, REGIME profile discrimination, luting, cooling modes, monitoring, o-prefix differentiation, thermal shock, bang-bang rate. 9/10 pass. Tier 3-4 interpretive mapping with Tier 2 structural byproducts.
+
+| # | Summary | Tier | Tags | Link |
+|---|---------|------|------|------|
+| **1313** | **Two-Channel Thermal Atom Separation** (qo k-frac=0.510 vs ok k-frac=0.001; ok e-frac=0.282 vs qo e-frac=0.102; MW p=0.0 both; perm p=0.0; sa neutral control p=0.999) | 2 | B, PREFIX, thermal, atom, qo, ok, separation | -> [C1313_two_channel_thermal_atom_separation.md](C1313_two_channel_thermal_atom_separation.md) |
+| **1314** | **Overshoot-Correct Bigram Enrichment** (qo-k->ok-e: 103 obs vs 72.0 null = 43% above chance p=0.0; reverse: 112 obs vs 72.1 null = 55% above chance p=0.0; da->sa neg ctrl p=0.996) | 2 | B, PREFIX, thermal, sequencing, bigram, cycling | -> [C1314_overshoot_correct_bigram_enrichment.md](C1314_overshoot_correct_bigram_enrichment.md) |
+| **1315** | **REGIME B Token Profile Discrimination** (6/7 metrics KW p<0.01 for B tokens by REGIME; A tokens 0/7 significant; B-specific discrimination in k-frac, e-frac, h-frac, THERMAL, MONITORING, CONTAINMENT rates) | 2 | B, REGIME, discrimination, category, atom, A-control | -> [C1315_regime_b_token_profile_discrimination.md](C1315_regime_b_token_profile_discrimination.md) |
+| **1316** | **O-PREFIX Categorical Distinction** (ok/ot/ol/or 4x8 chi-sq p<0.001; ok->ot asymmetry 1.18x vs 1.04x; trigram qo->ok->ot preferred; ok +4.4% THERMAL, ot +4.9% OPERATION; 3/4 distinct dominant category) | 2 | B, PREFIX, o-prefix, ok, ot, ol, or, category, sequential | -> [C1316_o_prefix_categorical_distinction.md](C1316_o_prefix_categorical_distinction.md) |
+
+**Phase 461 findings (Distillation Terminology Mapping):**
+- **9/10 tests pass** (T10 fails: alternation ordering reversed)
+- Two-channel thermal atom separation: qo = k-dominant (0.510), ok = e-dominant (0.282), completely non-overlapping
+- Overshoot-correct cycling: qo-k to ok-e transitions 43% above chance within lines
+- REGIME discrimination: 6/7 metrics significant for B, 0/7 for A — B-specific
+- O-PREFIX distinction: ok/ot/ol/or all categorically separable; ok->ot sequential ordering (1.18x)
+- 13 modern MIDPROCESS actions all map to distinguishable PREFIX+category patterns (cosine 0.73 vs 0.003 random)
+- 5 Fits registered (F-B-008 through F-B-012)
+- Token coverage: 99.5% of B tokens receive a distillation mapping
+- Post-phase: ok = thermal verification (coarse), ot = operational verification (fine); control flow sh->qo->ok->ot
 
 ---
 

@@ -1188,7 +1188,166 @@ class PPSemantics:
 # ============================================================
 # Consolidates structural knowledge for decoding Currier B folios.
 # Based on constraints: C371-378, C510-522, C766-769, C884, C906-907,
-#                      F-BRU-011, F-BRU-018-020
+#                      C1250-C1251, C1305, F-BRU-011, F-BRU-018-020
+
+
+class CategoryClassifier:
+    """8-category operational classification (C1250, Tier 2).
+
+    Categories are MIDDLE properties derived from atom gloss plurality vote.
+    Tokens inherit category from their MIDDLE (C1305: 0/33 MIDDLEs shift
+    category between ch/sh — MIDDLE determines category intrinsically).
+
+    Provenance: Phase 446 (GLOSS_SCALE_VALIDATION), validated Phases 452-460.
+    """
+
+    CATEGORIES = ('THERMAL', 'FLOW', 'CONTAINMENT', 'STAGING',
+                  'OPERATION', 'TRANSITION', 'MARKING', 'MONITORING')
+
+    # Abbreviated codes for display (prevent semantic drift per C171)
+    ABBREV = {
+        'THERMAL': 'TH', 'FLOW': 'FL', 'CONTAINMENT': 'CN',
+        'STAGING': 'ST', 'OPERATION': 'OP', 'TRANSITION': 'TR',
+        'MARKING': 'MK', 'MONITORING': 'MN',
+    }
+
+    # Human gloss → category (C1250, from middle_dictionary.json 'gloss' field)
+    GLOSS_TO_CATEGORY = {
+        'heat': 'THERMAL', 'fire': 'THERMAL', 'cool': 'THERMAL',
+        'sustain': 'THERMAL', 'pulse': 'THERMAL', 'steady': 'THERMAL',
+        'extended': 'THERMAL', 'deep': 'THERMAL', 'long': 'THERMAL',
+        'overnight': 'THERMAL',
+        'seal': 'CONTAINMENT', 'hold': 'CONTAINMENT', 'lock': 'CONTAINMENT',
+        'bind': 'CONTAINMENT', 'bond': 'CONTAINMENT', 'rigid': 'CONTAINMENT',
+        'firm': 'CONTAINMENT', 'dense': 'CONTAINMENT',
+        'transfer': 'FLOW', 'gather': 'FLOW', 'discharge': 'FLOW',
+        'release': 'FLOW', 'vent': 'FLOW', 'route': 'FLOW',
+        'portion': 'FLOW', 'input': 'FLOW', 'intake': 'FLOW',
+        'watch': 'MONITORING', 'check': 'MONITORING', 'verify': 'MONITORING',
+        'confirm': 'MONITORING', 'scan': 'MONITORING', 'measure': 'MONITORING',
+        'control': 'MONITORING', 'regulate': 'MONITORING',
+        'work': 'OPERATION', 'operate': 'OPERATION', 'batch': 'OPERATION',
+        'pound': 'OPERATION', 'strip': 'OPERATION', 'exact': 'OPERATION',
+        'precise': 'OPERATION', 'hard': 'OPERATION', 'wide': 'OPERATION',
+        'start': 'TRANSITION', 'open': 'TRANSITION', 'close': 'TRANSITION',
+        'end': 'TRANSITION', 'finish': 'TRANSITION', 'complete': 'TRANSITION',
+        'finalize': 'TRANSITION', 'yield': 'TRANSITION', 'final': 'TRANSITION',
+        'stand': 'TRANSITION', 'settle': 'TRANSITION', 'set': 'TRANSITION',
+        'halt': 'TRANSITION',
+        'frame': 'STAGING', 'step': 'STAGING', 'iterate': 'STAGING',
+        'sequence': 'STAGING', 'continue': 'STAGING', 'repeat': 'STAGING',
+        'cycle': 'STAGING', 'loop': 'STAGING', 'path': 'STAGING',
+        'mark': 'MARKING', 'flag': 'MARKING', 'note': 'MARKING',
+        'pause': 'MARKING', 'diagram': 'MARKING', 'hazard': 'MARKING',
+        'danger': 'MARKING', 'link': 'MARKING', 'adjust': 'MARKING',
+    }
+
+    # Atom character → gloss (C1195 confidence tiers)
+    ATOM_GLOSSES = {
+        'k': 'heat', 'e': 'cool', 'h': 'watch', 'y': 'end',       # LOCKED
+        'i': 'iterate', 'n': 'halt', 'a': 'yield', 'm': 'final',   # LOCKED
+        'd': 'mark', 't': 'transfer',                                # SOLID
+        'c': 'adjust', 'p': 'pause', 'f': 'flag', 's': 'sequence', # PLAUSIBLE
+        'g': 'complete', 'o': 'work', 'l': 'frame', 'r': 'input',  # WEAK (o,l,r)
+    }
+
+    # Atom character → category (derived from ATOM_GLOSSES → GLOSS_TO_CATEGORY)
+    ATOM_TO_CATEGORY = {
+        'k': 'THERMAL', 'e': 'THERMAL',        # heat, cool → THERMAL
+        'h': 'MONITORING',                       # watch → MONITORING
+        'y': 'TRANSITION',                       # end → TRANSITION
+        'i': 'STAGING', 'n': 'TRANSITION',       # iterate → STAGING, halt → TRANSITION
+        'a': 'TRANSITION', 'm': 'TRANSITION',    # yield → TRANSITION, final → TRANSITION
+        'd': 'MARKING', 't': 'FLOW',             # mark → MARKING, transfer → FLOW
+        'c': 'MARKING', 'p': 'MARKING',          # adjust → MARKING, pause → MARKING
+        'f': 'MARKING', 's': 'STAGING',           # flag → MARKING, sequence → STAGING
+        'g': 'TRANSITION',                        # complete → TRANSITION
+        'o': 'OPERATION', 'l': 'STAGING',         # work → OPERATION, frame → STAGING
+        'r': 'FLOW',                              # input → FLOW
+    }
+
+    # C1195 confidence tiers for atom characters
+    _ATOM_CONFIDENCE = {
+        'k': 'LOCKED', 'e': 'LOCKED', 'h': 'LOCKED', 'y': 'LOCKED',
+        'i': 'LOCKED', 'n': 'LOCKED', 'a': 'LOCKED', 'm': 'LOCKED',
+        'd': 'SOLID', 't': 'SOLID',
+        'c': 'PLAUSIBLE', 'p': 'PLAUSIBLE', 'f': 'PLAUSIBLE',
+        's': 'PLAUSIBLE', 'g': 'PLAUSIBLE',
+        'o': 'WEAK', 'l': 'WEAK', 'r': 'WEAK',
+    }
+
+    _CONFIDENCE_RANK = {'LOCKED': 3, 'SOLID': 2, 'PLAUSIBLE': 1, 'WEAK': 0}
+
+    def __init__(self):
+        """Build MIDDLE → category cache from middle_dictionary.json."""
+        dict_path = PROJECT_ROOT / 'data' / 'middle_dictionary.json'
+        with open(dict_path, 'r', encoding='utf-8') as f:
+            mid_dict = json.load(f)['middles']
+
+        self._mid_to_category = {}
+        self._mid_to_confidence = {}
+
+        # Pass 1: Human-glossed MIDDLEs (priority)
+        for mid, minfo in mid_dict.items():
+            gloss = minfo.get('gloss')
+            if gloss and gloss in self.GLOSS_TO_CATEGORY:
+                self._mid_to_category[mid] = self.GLOSS_TO_CATEGORY[gloss]
+                self._mid_to_confidence[mid] = 'HIGH'  # Human-glossed = high confidence
+
+        # Pass 2: Auto-assigned via atom plurality vote (fallback)
+        for mid, minfo in mid_dict.items():
+            if mid in self._mid_to_category:
+                continue
+            atoms_str = minfo.get('autogloss_atoms', '')
+            if atoms_str:
+                cat = self._auto_assign(atoms_str)
+                if cat:
+                    self._mid_to_category[mid] = cat
+                    self._mid_to_confidence[mid] = self._compute_confidence(atoms_str)
+
+    def _auto_assign(self, atoms_str: str) -> Optional[str]:
+        """Assign category via plurality vote over atom characters (C1251)."""
+        votes = Counter()
+        for atom in atoms_str:
+            cat = self.ATOM_TO_CATEGORY.get(atom)
+            if cat:
+                votes[cat] += 1
+        if not votes:
+            return None
+        max_count = max(votes.values())
+        winners = [c for c, v in votes.items() if v == max_count]
+        return sorted(winners)[0]  # Alphabetical tie-break
+
+    def _compute_confidence(self, atoms_str: str) -> str:
+        """Compute confidence from C1195 atom tier composition."""
+        if not atoms_str:
+            return 'LOW'
+        ranks = [self._CONFIDENCE_RANK.get(
+            self._ATOM_CONFIDENCE.get(c, 'WEAK'), 0) for c in atoms_str]
+        avg = sum(ranks) / len(ranks)
+        if avg >= 2.0:
+            return 'HIGH'
+        elif avg >= 1.0:
+            return 'MEDIUM'
+        return 'LOW'
+
+    def classify(self, middle: str) -> Optional[str]:
+        """Get operational category for a MIDDLE. Returns None if unclassifiable."""
+        return self._mid_to_category.get(middle)
+
+    def confidence(self, middle: str) -> Optional[str]:
+        """Get category confidence for a MIDDLE (HIGH/MEDIUM/LOW)."""
+        return self._mid_to_confidence.get(middle)
+
+    def abbrev(self, category: str) -> str:
+        """Get abbreviated code for a category."""
+        return self.ABBREV.get(category, category[:2].upper())
+
+    @property
+    def coverage(self) -> int:
+        """Number of MIDDLEs with category assignments."""
+        return len(self._mid_to_category)
+
 
 @dataclass
 class BTokenAnalysis:
@@ -1261,6 +1420,11 @@ class BTokenAnalysis:
     # PREFIX base-modifier decomposition (C1218-C1219)
     prefix_base: Optional[str] = None              # h, e, k, o, a (last char of prefix)
     prefix_modifier: Optional[str] = None          # q, d, f, p, y (first char of 2+ char prefix)
+
+    # 8-category operational classification (C1250, C1305, Tier 2)
+    # Category is a MIDDLE property — tokens inherit from their MIDDLE.
+    operational_category: Optional[str] = None     # THERMAL, FLOW, CONTAINMENT, STAGING, OPERATION, TRANSITION, MARKING, MONITORING
+    category_confidence: Optional[str] = None      # HIGH, MEDIUM, LOW (from C1195 atom tiers)
 
     # Descriptive label maps (human-readable register)
     MACRO_LABELS = {
@@ -2079,6 +2243,10 @@ class BFolioAnalysis:
     dominant_role: Optional[str] = None   # Top 5-role category: CC/EN/FL/FQ/AX (C552)
     paragraph_count: Optional[int] = None # Number of paragraphs (C858)
 
+    # 8-category operational profile (C1250, C1278, C1291)
+    category_profile: Dict[str, int] = field(default_factory=dict)  # Aggregated across all tokens
+    category_regime_character: Optional[str] = None  # From C1291 (REGIME_1=THERMAL-dominant, etc.)
+
     # Deviation reporting
     baseline: Optional['BBaseline'] = None           # B-wide baseline (set by BFolioDecoder)
     role_proportions: Optional[Dict[str, float]] = None  # {'EN': 0.80, 'AX': 0.19, ...}
@@ -2380,10 +2548,15 @@ class BLineAnalysis:
     line_type: str               # 'INIT', 'PROCESS', 'TERMINAL', 'ESCAPE', 'HEADER'
     opener_role: Optional[str] = None     # C959: Role of opening token (determines line character)
     is_header: bool = False      # C747/C935: Line-1 HEADER (50% HT, operationally redundant)
-    paragraph_zone: Optional[str] = None  # HEADER, SPECIFICATION, EXECUTION (C932, set by paragraph analysis)
+    paragraph_zone: Optional[str] = None  # HEADER, BODY, TAIL (C747/C963/C1237, set by paragraph analysis)
 
     # Suffix mode classification (C1229-C1231)
     suffix_mode: Optional[str] = None    # 'A' (spec/energy), 'B' (continuation/bare), None if insufficient
+
+    # 8-category operational profile (C1250, C1278)
+    category_profile: Dict[str, int] = field(default_factory=dict)  # {'THERMAL': 5, 'FLOW': 3, ...}
+    dominant_category: Optional[str] = None  # Category with highest count
+    category_mode_character: Optional[str] = None  # 'SPECIFICATION' if TH+MN>40%, 'CONTINUATION' if FL+TR+ST>40% (C1279/C1309)
 
     # Control loop annotations (C1234, C1235, C1237)
     loop_markers: Dict[str, str] = field(default_factory=dict)  # {'setup': 'daiin', 'check': 'okaiin'}
@@ -2529,13 +2702,13 @@ class BParagraphAnalysis:
     dominant_role: Optional[str]    # Most common prefix role
     fl_trend: str                   # EARLY_HEAVY, LATE_HEAVY, DISTRIBUTED
 
-    # Paragraph zones (C932: execution gradient)
-    zone_distribution: Dict[str, int] = None  # {'HEADER': 1, 'SPECIFICATION': 3, 'EXECUTION': 5}
+    # Paragraph zones (C747/C963/C1237: header/body/tail)
+    zone_distribution: Dict[str, int] = None  # {'HEADER': 1, 'BODY': 3, 'TAIL': 1}
 
-    # Spec→exec gradient (C933/C934)
-    spec_ht_rate: float = 0.0       # HT fraction in SPECIFICATION zone
-    exec_ht_rate: float = 0.0       # HT fraction in EXECUTION zone
-    gradient_direction: str = 'FLAT' # SPEC_TO_EXEC or FLAT
+    # 8-category operational profile (C1250, C1278, C1287, C1308)
+    category_profile: Dict[str, int] = field(default_factory=dict)  # Aggregated across all lines
+    header_marking_rate: float = 0.0   # MARKING fraction in header line (C1287: 2.44x enrichment)
+    category_key: List[str] = field(default_factory=list)  # Top 2-3 categories defining operational domain (C1308)
 
     # Cycling model (C1229-C1232)
     suffix_mode_sequence: List[str] = field(default_factory=list)  # ['A','B','A','B',...] per body line
@@ -2564,6 +2737,14 @@ class BParagraphAnalysis:
         if self.zone_distribution:
             zone_str = '/'.join(f"{z[0]}:{c}" for z, c in sorted(self.zone_distribution.items()))
             parts.append(f"zones=[{zone_str}]")
+
+        # Category key (C1308)
+        if self.category_key:
+            _abbrev = {'THERMAL': 'TH', 'FLOW': 'FL', 'CONTAINMENT': 'CN',
+                       'STAGING': 'ST', 'OPERATION': 'OP', 'TRANSITION': 'TR',
+                       'MARKING': 'MK', 'MONITORING': 'MN'}
+            key_str = '|'.join(_abbrev.get(c, c[:2]) for c in self.category_key)
+            parts.append(f"key=[{key_str}]")
 
         # Cycling model (C1229-C1232)
         if self.suffix_mode_sequence:
@@ -2604,9 +2785,6 @@ class BParagraphAnalysis:
         }
         if self.fl_trend in fl_gloss:
             parts.append(fl_gloss[self.fl_trend])
-
-        if self.gradient_direction == 'SPEC_TO_EXEC':
-            parts.append("(spec->exec gradient)")
 
         # Cycling model (C1229-C1232)
         if self.mode_interleave_rate > 0.5:
@@ -2679,6 +2857,7 @@ class BFolioDecoder:
         self.morph = Morphology()
         self.token_dict = TokenDictionary()
         self.middle_dict = MiddleDictionary()
+        self.category_classifier = CategoryClassifier()
 
         # MiddleAnalyzer for compound MIDDLE decomposition (C872, C522)
         self.mid_analyzer = MiddleAnalyzer()
@@ -3146,6 +3325,12 @@ class BFolioDecoder:
         elif m.prefix and len(m.prefix) == 1:
             analysis.prefix_base = m.prefix
 
+        # 8-category operational classification (C1250, C1305, Tier 2)
+        # Category is a MIDDLE property — tokens inherit from their MIDDLE.
+        if m.middle:
+            analysis.operational_category = self.category_classifier.classify(m.middle)
+            analysis.category_confidence = self.category_classifier.confidence(m.middle)
+
         return analysis
 
     def _classify_suffix_mode(self, line_tokens: List[BTokenAnalysis]) -> Optional[str]:
@@ -3417,6 +3602,25 @@ class BFolioDecoder:
             elif _fmid and _fmid.endswith('m'):
                 line_final_type = 'ROUTE'
 
+        # 8-category operational profile (C1250, C1278)
+        cat_profile = Counter(
+            t.operational_category for t in line_tokens
+            if t.operational_category
+        )
+        dominant_cat = cat_profile.most_common(1)[0][0] if cat_profile else None
+
+        # Category mode character (C1279/C1309)
+        cat_total = sum(cat_profile.values())
+        cat_mode_char = None
+        if cat_total > 0:
+            spec_frac = (cat_profile.get('THERMAL', 0) + cat_profile.get('MONITORING', 0)) / cat_total
+            cont_frac = (cat_profile.get('FLOW', 0) + cat_profile.get('TRANSITION', 0)
+                         + cat_profile.get('STAGING', 0)) / cat_total
+            if spec_frac > 0.4:
+                cat_mode_char = 'SPECIFICATION'
+            elif cont_frac > 0.4:
+                cat_mode_char = 'CONTINUATION'
+
         return BLineAnalysis(
             line_id=line_id,
             tokens=line_tokens,
@@ -3433,6 +3637,9 @@ class BFolioDecoder:
             opener_role=opener_role,
             is_header=is_header,
             suffix_mode=suffix_mode,
+            category_profile=dict(cat_profile),
+            dominant_category=dominant_cat,
+            category_mode_character=cat_mode_char,
             loop_markers=loop_markers,
             line_final_type=line_final_type,
         )
@@ -3535,27 +3742,25 @@ class BFolioDecoder:
         else:
             fl_trend = 'DISTRIBUTED'
 
-        # C932: Paragraph zone assignment (HEADER / SPECIFICATION / EXECUTION)
+        # Paragraph zone assignment: HEADER / BODY / TAIL (C747/C963/C1237)
+        # C932/C933/C934 spec→exec gradient RETRACTED (Phase 451, C1259).
+        # Body is homogeneous at category grain (C963). TAIL identified by -am termination (C1237).
         n = len(lines)
         zone_dist = Counter()
+        # Detect -am termination for TAIL assignment (C1237: 5.19x enrichment)
+        has_am_tail = False
+        if lines and lines[-1].tokens:
+            _last_sfx = lines[-1].tokens[-1].morph.suffix if lines[-1].tokens[-1].morph else ''
+            if _last_sfx == 'am':
+                has_am_tail = True
         for i, la in enumerate(lines):
-            pos = i / max(n - 1, 1)
             if i == 0:
                 la.paragraph_zone = 'HEADER'
-            elif pos < 0.4:
-                la.paragraph_zone = 'SPECIFICATION'
+            elif i == n - 1 and has_am_tail:
+                la.paragraph_zone = 'TAIL'
             else:
-                la.paragraph_zone = 'EXECUTION'
+                la.paragraph_zone = 'BODY'
             zone_dist[la.paragraph_zone] += 1
-
-        # C933/C934: spec→exec vocabulary gradient (HT concentration as proxy)
-        spec_tokens = [t for la in lines if la.paragraph_zone == 'SPECIFICATION'
-                       for t in la.tokens]
-        exec_tokens = [t for la in lines if la.paragraph_zone == 'EXECUTION'
-                       for t in la.tokens]
-        spec_ht = (sum(1 for t in spec_tokens if t.is_ht) / max(len(spec_tokens), 1))
-        exec_ht = (sum(1 for t in exec_tokens if t.is_ht) / max(len(exec_tokens), 1))
-        gradient = 'SPEC_TO_EXEC' if spec_ht > exec_ht else 'FLAT'
 
         # Cycling model (C1229-C1232)
         # Collect suffix modes from body lines (skip header)
@@ -3586,6 +3791,22 @@ class BFolioDecoder:
                 term_token = _last_tok.word
                 term_type = 'AM_SHUTDOWN'
 
+        # 8-category paragraph profile (C1250, C1278, C1287, C1308)
+        para_cat_profile = Counter()
+        for la in lines:
+            for cat, cnt in la.category_profile.items():
+                para_cat_profile[cat] += cnt
+
+        # Header MARKING rate (C1287: 2.44x enrichment in header lines)
+        header_mk_rate = 0.0
+        if lines and lines[0].category_profile:
+            hdr_total = sum(lines[0].category_profile.values())
+            if hdr_total > 0:
+                header_mk_rate = lines[0].category_profile.get('MARKING', 0) / hdr_total
+
+        # Category key: top 2-3 categories defining operational domain (C1308)
+        cat_key = [cat for cat, _ in para_cat_profile.most_common(3)] if para_cat_profile else []
+
         return BParagraphAnalysis(
             paragraph_id=para_id,
             lines=lines,
@@ -3604,9 +3825,9 @@ class BFolioDecoder:
             dominant_role=dominant_role,
             fl_trend=fl_trend,
             zone_distribution=dict(zone_dist),
-            spec_ht_rate=spec_ht,
-            exec_ht_rate=exec_ht,
-            gradient_direction=gradient,
+            category_profile=dict(para_cat_profile),
+            header_marking_rate=header_mk_rate,
+            category_key=cat_key,
             suffix_mode_sequence=suffix_mode_seq,
             mode_interleave_rate=interleave,
             tail_product_signature=tail_sig,
@@ -3704,8 +3925,6 @@ class BFolioDecoder:
                 output.append(f"    Types: init={pa.init_lines}, process={pa.process_lines}, "
                             f"escape={pa.escape_lines}, terminal={pa.terminal_lines}")
                 output.append(f"    FL trend: {pa.fl_trend}")
-                if pa.gradient_direction == 'SPEC_TO_EXEC':
-                    output.append(f"    Gradient: SPEC({pa.spec_ht_rate:.0%} HT) -> EXEC({pa.exec_ht_rate:.0%} HT)")
 
                 # Show line summaries
                 for la in pa.lines[:3]:  # First 3 lines
@@ -3868,6 +4087,20 @@ class BFolioDecoder:
         # Section from transcript metadata (external, illustration-based)
         section = folio_tokens[0].section if folio_tokens else None
 
+        # 8-category folio profile (C1250, C1278, C1291)
+        folio_cat_profile = Counter(
+            a.operational_category for a in analyses
+            if a.operational_category
+        )
+        # Category regime character (C1291: REGIME_1=THERMAL-dominant, etc.)
+        cat_regime = None
+        folio_cat_total = sum(folio_cat_profile.values())
+        if folio_cat_total > 0:
+            top_cat = folio_cat_profile.most_common(1)[0][0]
+            top_frac = folio_cat_profile[top_cat] / folio_cat_total
+            if top_frac > 0.35:
+                cat_regime = f'{top_cat}_DOMINANT'
+
         result = BFolioAnalysis(
             folio=folio,
             token_count=total,
@@ -3892,6 +4125,8 @@ class BFolioDecoder:
             sister_ratio=sister_ratio,
             dominant_role=dominant_role,
             section=section,
+            category_profile=dict(folio_cat_profile),
+            category_regime_character=cat_regime,
         )
 
         # Attach deviation reporting data

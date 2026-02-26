@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.70
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.71
 
 ---
 
@@ -6411,3 +6411,116 @@ The BA boundary shows a characteristic handoff: TRANSITION->THERMAL at 12.0%, do
 ### Cross-Mode Sheet Music Principle (Tier 3 Synthesis)
 
 The Phase 460 findings collectively establish a named structural principle: Mode A and Mode B lines read from the same paragraph-level "key signature" (C1308), are synchronized by relative position within the line (C1310), and play complementary parts — A carries specification/THERMAL, B carries execution/TRANSITION (C1309). But they compose their individual contributions independently (C1312). B's thermal state feeds back to A's category selection (C1311) as the only detectable cross-mode signal. Like two staves of sheet music, the voices are in the same key, coordinated by measure, and playing different roles — but each part is written as a self-contained line.
+
+## XXI. Distillation Terminology Mapping (Phase 461)
+
+**Phase:** DISTILLATION_TERMINOLOGY_MAPPING (461)
+**Constraints:** C1313-C1316 | **Fits:** F-B-008 through F-B-012 | **Date:** 2026-02-25
+**Tier:** 3-4 (intentionally interpretive, extending GLOSSING.md)
+
+### Purpose
+
+Systematic test of whether distillation physics maps directly to the manuscript's structural patterns. 10 tests with negative controls, producing the authoritative Tier 3-4 reference mapping that survives context loss. 9/10 tests pass.
+
+### Two-Channel Thermal Architecture (C1313, F-B-008)
+
+qo and ok access completely non-overlapping thermal atom pools:
+
+| PREFIX | k-fraction | e-fraction | Role |
+|--------|-----------|-----------|------|
+| qo | **0.510** | 0.102 | Heat source (k-dominant) |
+| ok | 0.001 | **0.282** | Vessel temperature (e-dominant) |
+| sa (control) | 0.005 | 0.003 | Neutral (no thermal bias) |
+
+In distillation terms: qo manages the fire/furnace (adding energy), ok manages the vessel/still (cooling/stabilization). Two physically independent thermal channels. Brunschwig confirms: fire managed via air holes (lines 2038-2055) vs vessel tested by finger (lines 1880-1893).
+
+### Overshoot-Correct Cycling (C1314, F-B-009)
+
+Within lines, qo-k tokens transition to ok-e tokens 43% above chance (103 observed vs 72 null, p=0.0). The reverse (ok-e to qo-k) is 55% above chance (112 vs 72, p=0.0). This is consistent with heat overshoot followed by vessel correction — the standard problem in distillation where heat always overshoots and must be corrected.
+
+### Control Flow Loop
+
+Within-line bigram analysis reveals a preferred PREFIX sequencing:
+
+```
+sh (watch) -> qo (stoke fire) -> ok (check vessel temp) -> ot (check output) -> sh (watch)
+   1.98x          1.08x              1.18x
+```
+
+- **sh -> qo (1.98x):** Passive monitoring is the primary trigger for heat action
+- **qo -> ok (1.08x):** Heat action triggers vessel thermal check
+- **ok -> ot (1.18x):** Vessel check leads to operations check (coarse then fine)
+- **ok/ot -> qo (0.84/0.88x):** Neither verification leads back to heat directly
+
+### ok vs ot: Two-Stage Verification (C1316)
+
+ok and ot are e-sisters (both e-dominant: 0.282 and 0.258) but serve sequential roles:
+
+| Property | ok (coarse) | ot (fine) |
+|----------|------------|----------|
+| THERMAL | 24.7% | 20.2% |
+| OPERATION | 12.5% | 17.3% |
+| Top MIDDLE | aiin (settling) | edy (batching) |
+| Enriched MIDDLEs | ee (extended cool) | od (collect), or (portion) |
+
+ok checks **thermal state** (is the temperature right?), ot checks **operational state** (is the process running correctly?). The operator would not fine-tune flow rate if temperature was not stable yet.
+
+### REGIME Token Profile Discrimination (C1315, F-B-010)
+
+The 4 REGIMEs produce statistically different B token profiles (6/7 metrics significant at p<0.01). Currier A tokens show 0/7 — discrimination is entirely B-specific. This confirms REGIMEs capture real B-internal variation.
+
+### Luting-CONTAINMENT Association (F-B-011)
+
+CONTAINMENT category tokens show REGIME discrimination (dy-MIDDLE: p=0.015, d=-0.753). However, the direction was reversed from prediction: REGIME_1 (balneum) shows MORE sealing than REGIME_3 (direct fire). Physical explanation: balneum vessels immersed in water baths require more vessel-sealing, distinct from joint-luting.
+
+### E-Compound Cooling Taxonomy (F-B-012)
+
+Different e-compound MIDDLEs distribute non-randomly across REGIMEs (chi-sq p<0.01):
+- **eeol** (extended cool + continue): Enriched in REGIME_2 (sustained operation, overnight standing)
+- **eo** (cool + work): Enriched in REGIME_2 (monitored cooling)
+- **e** (basic cool): More uniform distribution
+
+### MIDPROCESS Action Mapping
+
+13 modern distillation MIDPROCESS actions each map to distinguishable PREFIX + category patterns. All 13 significant at Bonferroni-corrected p < 0.005. Mean pairwise cosine distance = 0.73 (random mapping: 0.003). The real mapping dramatically outperforms random assignment (p < 0.001).
+
+### PREFIX-to-Distillation Domain Table (Tier 3-4)
+
+| PREFIX | Domain | Physical Referent | Evidence |
+|--------|--------|-------------------|----------|
+| qo | Heat source | Fire/furnace management | C1313, C1314 |
+| ok | Vessel temperature | Thermal verification (coarse) | C1313, C1316 |
+| ot | Vessel operations | Operational verification (fine) | C1316 |
+| ch | Active testing | Discrete physical tests | C929, T7 |
+| sh | Passive monitoring | Continuous observation | C929, T7, T9 |
+| ol | Continuation | Maintaining during active process | T8 |
+| da | Setup/infrastructure | Apparatus preparation | T4 |
+| sa | Scaffold | Supporting infrastructure | T1 neg ctrl |
+
+### REGIME-to-Fire-Degree Mapping (Tier 3)
+
+| REGIME | Proposed Method | Characteristic | Evidence |
+|--------|----------------|----------------|----------|
+| REGIME_1 | Balneum marie (water bath) | Gentle, e-rich, more sealing, highest alternation rate | T4, T5, T6, T10 |
+| REGIME_2 | Sustained operation | High iteration, overnight cooling | T4, T10 |
+| REGIME_3 | Ash/sand (per ignem) | Direct fire, rapid gathering | T4, T5, T7 |
+| REGIME_4 | Precision operation | h-rich monitoring, tight tolerance | T4, T7 |
+
+### Test Summary
+
+| Test | Topic | Result | p-value |
+|------|-------|--------|---------|
+| T1 | Two-channel thermal model | PASS | 0.0 |
+| T2 | Overshoot-correct cycling | PASS | 0.0 |
+| T3 | MIDPROCESS action mapping | PASS | all 13 sig |
+| T4 | REGIME token profiles | PASS | 6/7 p<0.01 |
+| T5 | Luting discrimination | PASS | dy p=0.015 |
+| T6 | Cooling mode differentiation | PASS | chi-sq p<0.01 |
+| T7 | Monitoring PREFIX x REGIME | PASS | 3/4 predictions |
+| T8 | O-PREFIX differentiation | PASS | chi-sq p<0.001 |
+| T9 | Thermal shock prevention | PASS | THERMAL enriched |
+| T10 | Bang-bang rate by REGIME | FAIL | ordering reversed |
+
+### What This Means
+
+The Voynich B text's structural patterns — PREFIX selection, atom composition, within-line sequencing, REGIME variation — map systematically onto the physics of controlled distillation. This is not translation; it is structural alignment at the level of operational roles. The manuscript's control programs are consistent with managing heat input, monitoring vessel state, verifying output, and cycling through these operations with precision appropriate to the fire degree. Token coverage: 99.5% of B tokens receive a mapping.

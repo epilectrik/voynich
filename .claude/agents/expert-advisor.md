@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1156 validated constraints and 71 explanatory fits loaded
+embedded below. You have all 1160 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
 the highest ID present is C1312.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1156 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1160 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1156 validated constraints are present as canonical one-line claims with tier
-and scope metadata. 71 fits are complete. Tier 3-4 interpretive sections are
+1160 validated constraints are present as canonical one-line claims with tier
+and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-02-25 14:10
-**Version:** FROZEN STATE (1156 validated constraints, 71 fits) [COMPACT]
+**Generated:** 2026-02-25 20:20
+**Version:** FROZEN STATE (1160 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1585,6 +1585,10 @@ C1309	**Mode Category Specialization**	2	B, mode, category, specialization, THER
 C1310	**Positional Category Alignment**	2	B, mode, position, category, alignment, parallel tracks
 C1311	**B-to-A Thermal Feedback Signal**	2	B, mode, thermal, feedback, cross-mode, MARKING
 C1312	**No Cross-Line Sequential Category Coupling**	2	B, mode, cross-line, sequential, independence, forbidden
+C1313	**Two-Channel Thermal Atom Separation**	2	B, PREFIX, thermal, atom, qo, ok, separation
+C1314	**Overshoot-Correct Bigram Enrichment**	2	B, PREFIX, thermal, sequencing, bigram, cycling
+C1315	**REGIME B Token Profile Discrimination**	2	B, REGIME, discrimination, category, atom, A-control
+C1316	**O-PREFIX Categorical Distinction**	2	B, PREFIX, o-prefix, ok, ot, ol, or, category, sequential
 
 ---
 
@@ -1593,7 +1597,7 @@ C1312	**No Cross-Line Sequential Category Coupling**	2	B, mode, cross-line, sequ
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
 # Generated: 2026-02-25
-# Total: 71 fits
+# Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
 ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
@@ -1612,6 +1616,10 @@ F-B-004	Lane Hysteresis Control Model	F2	B	SUCCESS	C643, C549, C577, C608	in: fi
 F-B-005	PP-Lane MIDDLE Discrimination	F2	B	SUCCESS	C646, C576, C642	in: fits_currier_b
 F-B-006	Energy/Stabilization Lane Assignment	F3	B	PARTIAL	C647, C645, C601, C521	in: fits_currier_b
 F-B-007	Extensible Atom Scaling: Intensity and Duration Dimensions	F3	B	CONSISTENT	C1197, C1204, C1205, C1242, C1244	in: fits_currier_b
+F-B-008	Two-Channel Thermal Architecture	F3	B	SUCCESS	C647, C601, C1207	in: fits_currier_b
+F-B-009	Overshoot-Correct Cycling	F3	B	SUCCESS	C643, C647	in: fits_currier_b
+F-B-010	REGIME Token Profile Discrimination	F3	B	SUCCESS	C643, REGIME system	in: fits_currier_b
+F-B-012	E-Compound Cooling Taxonomy	F4	B	SUCCESS	C1197, REGIME system	in: fits_currier_b
 F-AZC-001	Placement Prediction Model	F4	AZC	NEGATIVE	C466-C467	in: fits_azc
 F-AZC-002	Zodiac Positional Grammar	F2	AZC	SUCCESS	C467	in: fits_azc
 F-AZC-005	A/C Positional Grammar Test (DECISIVE)	F2	AZC	SUCCESS	C430-C436, C467	in: fits_azc
@@ -1675,7 +1683,7 @@ F-RUP-001	Galenic Framework Directional Enhancement	F4	B	DIRECTIONAL_COHERENCE	C
 
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.70
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.71
 
 ---
 
@@ -4211,6 +4219,43 @@ Only Tier 0-2 structural findings are binding.
 
 ### Cross-Mode Sheet Music Principle (Tier 3 Synthesis)
 
+
+
+## XXI. Distillation Terminology Mapping (Phase 461)
+
+
+
+| PREFIX | k-fraction | e-fraction | Role |
+|--------|-----------|-----------|------|
+| qo | **0.510** | 0.102 | Heat source (k-dominant) |
+| ok | 0.001 | **0.282** | Vessel temperature (e-dominant) |
+
+
+
+
+
+
+| Property | ok (coarse) | ot (fine) |
+|----------|------------|----------|
+| THERMAL | 24.7% | 20.2% |
+| OPERATION | 12.5% | 17.3% |
+
+
+
+
+
+| PREFIX | Domain | Physical Referent | Evidence |
+|--------|--------|-------------------|----------|
+| qo | Heat source | Fire/furnace management | C1313, C1314 |
+| ok | Vessel temperature | Thermal verification (coarse) | C1313, C1316 |
+| REGIME | Proposed Method | Characteristic | Evidence |
+|--------|----------------|----------------|----------|
+| REGIME_1 | Balneum marie (water bath) | Gentle, e-rich, more sealing, highest alternation rate | T4, T5, T6, T10 |
+| REGIME_2 | Sustained operation | High iteration, overnight cooling | T4, T10 |
+| Test | Topic | Result | p-value |
+|------|-------|--------|---------|
+| T1 | Two-channel thermal model | PASS | 0.0 |
+| T2 | Overshoot-correct cycling | PASS | 0.0 |
 
 
 ---

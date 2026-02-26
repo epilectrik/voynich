@@ -1,0 +1,1161 @@
+{
+  "phase": "DISTILLATION_TERMINOLOGY_MAPPING",
+  "phase_number": 461,
+  "tier": "3-4 (intentionally interpretive, extending GLOSSING.md)",
+  "seed": 42,
+  "n_permutations": 10000,
+  "canonical_counts": {
+    "B": 23096,
+    "A": 11174
+  },
+  "tests": {
+    "T1": {
+      "test": "T1: Two-Channel Thermal Model",
+      "tier": "Structural=T2, Interpretation=T3-4",
+      "passed": true,
+      "qo_count": 4069,
+      "ok_count": 1476,
+      "sa_count": 329,
+      "qo_k_mean": 0.5098,
+      "ok_k_mean": 0.0014,
+      "qo_e_mean": 0.1018,
+      "ok_e_mean": 0.2823,
+      "sa_k_mean": 0.0051,
+      "sa_e_mean": 0.0026,
+      "mw_k_p": 0.0,
+      "mw_e_p": 0.0,
+      "perm_k_p": 0.0,
+      "perm_e_p": 0.0,
+      "neg_ctrl_sa_kve_p": 0.999182,
+      "neg_ctrl_sa_neutral": true,
+      "f_b_006_crossval": "qo k=0.510 (expect ~0.707), ok e=0.282 (expect ~0.687)"
+    },
+    "T2": {
+      "test": "T2: Overshoot-Correct Cycling",
+      "tier": "Structural=T2, Interpretation=T3-4",
+      "passed": true,
+      "qo_k_to_ok_e": 103,
+      "null_mean_fwd": 72.0,
+      "ok_e_to_qo_k": 112,
+      "null_mean_rev": 72.1,
+      "total_bigrams": 20676,
+      "p_forward": 0.0,
+      "p_reverse": 0.0,
+      "neg_ctrl_da_sa": 6,
+      "neg_ctrl_p": 0.9964
+    },
+    "T3": {
+      "test": "T3: MIDPROCESS Action Mapping",
+      "tier": "Tier 3-4 (intentionally interpretive)",
+      "passed": true,
+      "significant_actions": 13,
+      "total_actions": 13,
+      "mean_cosine_distance": 0.7331,
+      "random_mean_distance": 0.0028,
+      "p_discriminability": 0.0,
+      "action_counts": {
+        "MONITOR_TEMP": 1291,
+        "MONITOR_RATE": 344,
+        "MONITOR_VISUAL": 1769,
+        "ADJUST_HEAT": 2623,
+        "COOL_CONDENSER": 673,
+        "REPLENISH_WATER": 240,
+        "DETECT_ENDPOINT": 327,
+        "COLLECT_FRACTION": 115,
+        "COHOBATE": 561,
+        "MANAGE_PRESSURE": 1099,
+        "AGITATE": 904,
+        "SEAL_JOINTS": 239,
+        "DETECT_CHANNELING": 60
+      },
+      "enrichment": {
+        "MONITOR_TEMP": {
+          "count": 1291,
+          "chi2": 4441.83,
+          "p": 0.0,
+          "significant": true
+        },
+        "MONITOR_RATE": {
+          "count": 344,
+          "chi2": 112.64,
+          "p": 0.0,
+          "significant": true
+        },
+        "MONITOR_VISUAL": {
+          "count": 1769,
+          "chi2": 1580.09,
+          "p": 0.0,
+          "significant": true
+        },
+        "ADJUST_HEAT": {
+          "count": 2623,
+          "chi2": 6901.68,
+          "p": 0.0,
+          "significant": true
+        },
+        "COOL_CONDENSER": {
+          "count": 673,
+          "chi2": 535.46,
+          "p": 0.0,
+          "significant": true
+        },
+        "REPLENISH_WATER": {
+          "count": 240,
+          "chi2": 1003.72,
+          "p": 0.0,
+          "significant": true
+        },
+        "DETECT_ENDPOINT": {
+          "count": 327,
+          "chi2": 85.63,
+          "p": 0.0,
+          "significant": true
+        },
+        "COLLECT_FRACTION": {
+          "count": 115,
+          "chi2": 478.32,
+          "p": 0.0,
+          "significant": true
+        },
+        "COHOBATE": {
+          "count": 561,
+          "chi2": 2309.61,
+          "p": 0.0,
+          "significant": true
+        },
+        "MANAGE_PRESSURE": {
+          "count": 1099,
+          "chi2": 22969.0,
+          "p": 0.0,
+          "significant": true
+        },
+        "AGITATE": {
+          "count": 904,
+          "chi2": 5327.72,
+          "p": 0.0,
+          "significant": true
+        },
+        "SEAL_JOINTS": {
+          "count": 239,
+          "chi2": 413.42,
+          "p": 0.0,
+          "significant": true
+        },
+        "DETECT_CHANNELING": {
+          "count": 60,
+          "chi2": 2991.7,
+          "p": 0.0,
+          "significant": true
+        }
+      },
+      "action_profiles": {
+        "MONITOR_TEMP": {
+          "THERMAL": 1.0,
+          "FLOW": 0.0,
+          "CONTAINMENT": 0.0,
+          "STAGING": 0.0,
+          "OPERATION": 0.0,
+          "TRANSITION": 0.0,
+          "MARKING": 0.0,
+          "MONITORING": 0.0
+        },
+        "MONITOR_RATE": {
+          "THERMAL": 0.203,
+          "FLOW": 0.294,
+          "CONTAINMENT": 0.096,
+          "STAGING": 0.029,
+          "OPERATION": 0.183,
+          "TRANSITION": 0.052,
+          "MARKING": 0.142,
+          "MONITORING": 0.0
+        },
+        "MONITOR_VISUAL": {
+          "THERMAL": 0.0,
+          "FLOW": 0.112,
+          "CONTAINMENT": 0.089,
+          "STAGING": 0.062,
+          "OPERATION": 0.406,
+          "TRANSITION": 0.228,
+          "MARKING": 0.075,
+          "MONITORING": 0.028
+        },
+        "ADJUST_HEAT": {
+          "THERMAL": 0.882,
+          "FLOW": 0.023,
+          "CONTAINMENT": 0.019,
+          "STAGING": 0.034,
+          "OPERATION": 0.011,
+          "TRANSITION": 0.009,
+          "MARKING": 0.013,
+          "MONITORING": 0.009
+        },
+        "COOL_CONDENSER": {
+          "THERMAL": 0.541,
+          "FLOW": 0.046,
+          "CONTAINMENT": 0.0,
+          "STAGING": 0.006,
+          "OPERATION": 0.239,
+          "TRANSITION": 0.122,
+          "MARKING": 0.024,
+          "MONITORING": 0.022
+        },
+        "REPLENISH_WATER": {
+          "THERMAL": 0.0,
+          "FLOW": 1.0,
+          "CONTAINMENT": 0.0,
+          "STAGING": 0.0,
+          "OPERATION": 0.0,
+          "TRANSITION": 0.0,
+          "MARKING": 0.0,
+          "MONITORING": 0.0
+        },
+        "DETECT_ENDPOINT": {
+          "THERMAL": 0.282,
+          "FLOW": 0.303,
+          "CONTAINMENT": 0.025,
+          "STAGING": 0.142,
+          "OPERATION": 0.062,
+          "TRANSITION": 0.046,
+          "MARKING": 0.136,
+          "MONITORING": 0.003
+        },
+        "COLLECT_FRACTION": {
+          "THERMAL": 0.0,
+          "FLOW": 1.0,
+          "CONTAINMENT": 0.0,
+          "STAGING": 0.0,
+          "OPERATION": 0.0,
+          "TRANSITION": 0.0,
+          "MARKING": 0.0,
+          "MONITORING": 0.0
+        },
+        "COHOBATE": {
+          "THERMAL": 0.002,
+          "FLOW": 0.03,
+          "CONTAINMENT": 0.0,
+          "STAGING": 0.756,
+          "OPERATION": 0.0,
+          "TRANSITION": 0.0,
+          "MARKING": 0.212,
+          "MONITORING": 0.0
+        },
+        "MANAGE_PRESSURE": {
+          "THERMAL": 0.0,
+          "FLOW": 0.0,
+          "CONTAINMENT": 1.0,
+          "STAGING": 0.0,
+          "OPERATION": 0.0,
+          "TRANSITION": 0.0,
+          "MARKING": 0.0,
+          "MONITORING": 0.0
+        },
+        "AGITATE": {
+          "THERMAL": 0.0,
+          "FLOW": 0.0,
+          "CONTAINMENT": 0.0,
+          "STAGING": 0.0,
+          "OPERATION": 1.0,
+          "TRANSITION": 0.0,
+          "MARKING": 0.0,
+          "MONITORING": 0.0
+        },
+        "SEAL_JOINTS": {
+          "THERMAL": 0.088,
+          "FLOW": 0.117,
+          "CONTAINMENT": 0.092,
+          "STAGING": 0.0,
+          "OPERATION": 0.582,
+          "TRANSITION": 0.004,
+          "MARKING": 0.117,
+          "MONITORING": 0.0
+        },
+        "DETECT_CHANNELING": {
+          "THERMAL": 0.017,
+          "FLOW": 0.017,
+          "CONTAINMENT": 0.0,
+          "STAGING": 0.0,
+          "OPERATION": 0.0,
+          "TRANSITION": 0.017,
+          "MARKING": 0.05,
+          "MONITORING": 0.9
+        }
+      }
+    },
+    "T4": {
+      "test": "T4: REGIME Token Profile Variation",
+      "tier": "Structural=T2, Brunschwig alignment=T3-4",
+      "passed": true,
+      "significant_metrics_b": 6,
+      "significant_metrics_a": 0,
+      "stronger_than_a": true,
+      "b_results": {
+        "k_frac": {
+          "H": 49.2,
+          "p": 0.0,
+          "significant": true,
+          "regime_means": {
+            "REGIME_1": 0.1681,
+            "REGIME_2": 0.1125,
+            "REGIME_3": 0.0864,
+            "REGIME_4": 0.0802
+          }
+        },
+        "e_frac": {
+          "H": 35.87,
+          "p": 0.0,
+          "significant": true,
+          "regime_means": {
+            "REGIME_1": 0.194,
+            "REGIME_2": 0.0884,
+            "REGIME_3": 0.1665,
+            "REGIME_4": 0.197
+          }
+        },
+        "h_frac": {
+          "H": 26.96,
+          "p": 1.1e-05,
+          "significant": true,
+          "regime_means": {
+            "REGIME_1": 0.0183,
+            "REGIME_2": 0.0174,
+            "REGIME_3": 0.0276,
+            "REGIME_4": 0.0291
+          }
+        },
+        "THERMAL_rate": {
+          "H": 44.66,
+          "p": 0.0,
+          "significant": true,
+          "regime_means": {
+            "REGIME_1": 0.2779,
+            "REGIME_2": 0.143,
+            "REGIME_3": 0.1836,
+            "REGIME_4": 0.1688
+          }
+        },
+        "MONITORING_rate": {
+          "H": 13.87,
+          "p": 0.003278,
+          "significant": true,
+          "regime_means": {
+            "REGIME_1": 0.0186,
+            "REGIME_2": 0.0072,
+            "REGIME_3": 0.0138,
+            "REGIME_4": 0.0192
+          }
+        },
+        "CONTAINMENT_rate": {
+          "H": 11.75,
+          "p": 0.008443,
+          "significant": true,
+          "regime_means": {
+            "REGIME_1": 0.0478,
+            "REGIME_2": 0.0742,
+            "REGIME_3": 0.0531,
+            "REGIME_4": 0.0724
+          }
+        },
+        "mean_line_length": {
+          "H": 3.32,
+          "p": 0.345149,
+          "significant": false,
+          "regime_means": {
+            "REGIME_1": 9.2004,
+            "REGIME_2": 9.1463,
+            "REGIME_3": 9.9272,
+            "REGIME_4": 11.3516
+          }
+        }
+      },
+      "a_neg_ctrl": {
+        "k_frac": {
+          "H": 0,
+          "p": 1.0
+        },
+        "e_frac": {
+          "H": 0,
+          "p": 1.0
+        },
+        "h_frac": {
+          "H": 0,
+          "p": 1.0
+        },
+        "THERMAL_rate": {
+          "H": 0,
+          "p": 1.0
+        },
+        "MONITORING_rate": {
+          "H": 0,
+          "p": 1.0
+        },
+        "CONTAINMENT_rate": {
+          "H": 0,
+          "p": 1.0
+        },
+        "mean_line_length": {
+          "H": 0,
+          "p": 1.0
+        }
+      }
+    },
+    "T5": {
+      "test": "T5: Luting Discrimination",
+      "tier": "Structural=T2, Brunschwig=T3-4",
+      "passed": true,
+      "R1_containment_mean": 0.0481,
+      "R3_containment_mean": 0.0532,
+      "containment_mw_p": 0.777842,
+      "containment_d": 0.161,
+      "R1_dy_mean": 0.1377,
+      "R3_dy_mean": 0.1003,
+      "dy_mw_p": 0.014479,
+      "dy_d": -0.753,
+      "R1_n_folios": 32,
+      "R3_n_folios": 20,
+      "neg_ctrl_operation_p": 0.214464
+    },
+    "T6": {
+      "test": "T6: Cooling Mode Differentiation",
+      "tier": "Tier 3-4",
+      "passed": true,
+      "chi2": 140.67,
+      "p": 0.0,
+      "df": 6,
+      "regime_e_counts": {
+        "REGIME_1": {
+          "e_basic": 550,
+          "eo_active": 224,
+          "ee_extended": 526
+        },
+        "REGIME_2": {
+          "e_basic": 35,
+          "eo_active": 22,
+          "ee_extended": 33
+        },
+        "REGIME_3": {
+          "e_basic": 220,
+          "eo_active": 302,
+          "ee_extended": 325
+        },
+        "REGIME_4": {
+          "e_basic": 62,
+          "eo_active": 105,
+          "ee_extended": 91
+        }
+      },
+      "predictions_confirmed": 2,
+      "eeol_R1_enrichment": 0.94
+    },
+    "T7": {
+      "test": "T7: Monitoring PREFIX x REGIME",
+      "tier": "Structural=T2, Interpretation=T3-4",
+      "passed": true,
+      "kw_H": 13.23,
+      "kw_p": 0.004354,
+      "regime_ch_sh_means": {
+        "REGIME_1": 0.548,
+        "REGIME_2": 0.6493,
+        "REGIME_3": 0.6838,
+        "REGIME_4": 0.6221
+      },
+      "predictions_confirmed": 3,
+      "neg_ctrl_da_sa_H": 18.07,
+      "neg_ctrl_da_sa_p": 0.0005
+    },
+    "T8": {
+      "test": "T8: O-PREFIX Differentiation",
+      "tier": "Structural=T2, Interpretation=T3-4",
+      "passed": true,
+      "chi2": 324.98,
+      "p": 0.0,
+      "df": 21,
+      "counts": {
+        "ok": 1476,
+        "ot": 1448,
+        "ol": 875,
+        "or": 173
+      },
+      "dominant_category": {
+        "ok": {
+          "cat": "FLOW",
+          "count": 408
+        },
+        "ot": {
+          "cat": "FLOW",
+          "count": 404
+        },
+        "ol": {
+          "cat": "THERMAL",
+          "count": 369
+        },
+        "or": {
+          "cat": "TRANSITION",
+          "count": 68
+        }
+      },
+      "unique_dominant_categories": 3,
+      "suffix_profiles": {
+        "ok": {
+          "edy": 0.292,
+          "dy": 0.116,
+          "al": 0.057,
+          "s": 0.055,
+          "eey": 0.052
+        },
+        "ot": {
+          "edy": 0.262,
+          "dy": 0.122,
+          "s": 0.081,
+          "ar": 0.071,
+          "r": 0.064
+        },
+        "ol": {
+          "edy": 0.238,
+          "eey": 0.114,
+          "aiin": 0.097,
+          "ain": 0.081,
+          "ar": 0.07
+        },
+        "or": {
+          "r": 0.14,
+          "iin": 0.14,
+          "ly": 0.116,
+          "hy": 0.093,
+          "ry": 0.07
+        }
+      },
+      "mean_line_positions": {
+        "ok": 0.538,
+        "ot": 0.588,
+        "ol": 0.56,
+        "or": 0.664
+      },
+      "tier34_interpretation": {
+        "ok": "vessel management (e-enriched per T1)",
+        "ot": "adjustment/correction (C911 h-family)",
+        "ol": "continuation/collection (k-dominant)",
+        "or": "output/portioning (FLOW)"
+      }
+    },
+    "T9": {
+      "test": "T9: Thermal Shock Prevention",
+      "tier": "Structural=T2, Interpretation=T3-4",
+      "passed": true,
+      "n_adjacent": 4183,
+      "n_non_adjacent": 18913,
+      "chi2": 1696.28,
+      "p": 0.0,
+      "adj_thermal": 0.4744,
+      "non_thermal": 0.1825,
+      "adj_monitoring": 0.0098,
+      "non_monitoring": 0.0173,
+      "adj_chsh_rate": 0.2773,
+      "non_chsh_rate": 0.2464,
+      "adj_qo_rate": 0.3235,
+      "non_qo_rate": 0.1436,
+      "neg_ctrl_p": 0.0
+    },
+    "T10": {
+      "test": "T10: Bang-Bang Rate by REGIME",
+      "tier": "Structural=T2, Brunschwig=T3-4",
+      "passed": false,
+      "kw_H": 25.36,
+      "kw_p": 2.2e-05,
+      "regime_means": {
+        "REGIME_1": 0.5514,
+        "REGIME_2": 0.5141,
+        "REGIME_3": 0.4712,
+        "REGIME_4": 0.3788
+      },
+      "overall_rate": 0.5113,
+      "f_b_004_crossval": "overall=0.511 (expect ~0.563)",
+      "predictions_confirmed": 0,
+      "neg_ctrl_a_H": 0,
+      "neg_ctrl_a_p": 1.0
+    }
+  },
+  "mapping_table": {
+    "description": "Tier 3-4 interpretive reference mapping (extends GLOSSING.md)",
+    "precedent": "GLOSSING.md (Tier 3-4, context/GLOSSING.md)",
+    "prefix_to_domain": [
+      {
+        "prefix": "qo",
+        "domain": "Heat source",
+        "physical": "Fire/furnace management",
+        "tests": [
+          "T1",
+          "T2",
+          "T10"
+        ],
+        "tier": 3
+      },
+      {
+        "prefix": "ok",
+        "domain": "Vessel temperature",
+        "physical": "Still/apparatus thermal state",
+        "tests": [
+          "T1",
+          "T2",
+          "T8"
+        ],
+        "tier": 3,
+        "refinement": "Vessel thermal state verification (coarse). Checks whether vessel temperature is correct after heat action. e-enriched (0.282), THERMAL 24.7%. Precedes ot (ok->ot 1.18x)."
+      },
+      {
+        "prefix": "ch",
+        "domain": "Active testing",
+        "physical": "Discrete tests (finger, taste, thumbnail)",
+        "tests": [
+          "T7",
+          "T9"
+        ],
+        "tier": 3
+      },
+      {
+        "prefix": "sh",
+        "domain": "Passive monitoring",
+        "physical": "Continuous observation (drip, fire)",
+        "tests": [
+          "T7"
+        ],
+        "tier": 3
+      },
+      {
+        "prefix": "ot",
+        "domain": "Adjustment",
+        "physical": "Corrective action on apparatus",
+        "tests": [
+          "T8"
+        ],
+        "tier": 4,
+        "refinement": "Vessel operational verification (fine). Checks whether output/process is running correctly after temperature stabilized. e-enriched (0.258), OPERATION 17.3%. Follows ok in preferred sequence."
+      },
+      {
+        "prefix": "ol",
+        "domain": "Continuation",
+        "physical": "Maintaining during active process",
+        "tests": [
+          "T8"
+        ],
+        "tier": 4
+      },
+      {
+        "prefix": "da",
+        "domain": "Setup/infrastructure",
+        "physical": "Apparatus prep, material loading",
+        "tests": [
+          "T4"
+        ],
+        "tier": 4
+      },
+      {
+        "prefix": "sa",
+        "domain": "Scaffold",
+        "physical": "Supporting infrastructure",
+        "tests": [
+          "T1 neg"
+        ],
+        "tier": 4
+      }
+    ],
+    "middle_to_operation": [
+      {
+        "middle": "k",
+        "operation": "Heat application",
+        "physical": "Add fire, open air holes",
+        "tests": [
+          "T1",
+          "T2"
+        ],
+        "tier": 3
+      },
+      {
+        "middle": "e",
+        "operation": "Cooling",
+        "physical": "Close air holes, water cooling",
+        "tests": [
+          "T1",
+          "T2"
+        ],
+        "tier": 3
+      },
+      {
+        "middle": "ke",
+        "operation": "Sustained heat",
+        "physical": "Maintain fire at level",
+        "tests": [
+          "T6"
+        ],
+        "tier": 3
+      },
+      {
+        "middle": "eey/eeol",
+        "operation": "Extended cooling",
+        "physical": "Overnight standing",
+        "tests": [
+          "T6"
+        ],
+        "tier": 3
+      },
+      {
+        "middle": "dy",
+        "operation": "Seal/close",
+        "physical": "Lute joints, close vessel",
+        "tests": [
+          "T5"
+        ],
+        "tier": 3
+      },
+      {
+        "middle": "edy",
+        "operation": "Batch",
+        "physical": "Standard operational batch",
+        "tests": [],
+        "tier": 4
+      },
+      {
+        "middle": "od",
+        "operation": "Collect",
+        "physical": "Gather distillate",
+        "tests": [
+          "T8"
+        ],
+        "tier": 4
+      },
+      {
+        "middle": "iin",
+        "operation": "Iterate",
+        "physical": "Repeated cycling (cohobation)",
+        "tests": [
+          "T3"
+        ],
+        "tier": 4
+      },
+      {
+        "middle": "aiin/ain",
+        "operation": "Settle/intake",
+        "physical": "Wind-down cycling",
+        "tests": [
+          "T8"
+        ],
+        "tier": 4
+      }
+    ],
+    "category_to_domain": [
+      {
+        "category": "THERMAL",
+        "domain": "Temperature management",
+        "tests": [
+          "T1",
+          "T4",
+          "T9"
+        ],
+        "tier": 3
+      },
+      {
+        "category": "MONITORING",
+        "domain": "Sensory feedback",
+        "tests": [
+          "T7",
+          "T9"
+        ],
+        "tier": 3
+      },
+      {
+        "category": "CONTAINMENT",
+        "domain": "Vessel integrity (luting, sealing)",
+        "tests": [
+          "T5"
+        ],
+        "tier": 3
+      },
+      {
+        "category": "FLOW",
+        "domain": "Material movement (transfer, collection)",
+        "tests": [
+          "T8"
+        ],
+        "tier": 3
+      },
+      {
+        "category": "OPERATION",
+        "domain": "Physical work (stirring, pounding)",
+        "tests": [
+          "T3"
+        ],
+        "tier": 4
+      },
+      {
+        "category": "STAGING",
+        "domain": "Process sequencing",
+        "tests": [
+          "T8"
+        ],
+        "tier": 4
+      },
+      {
+        "category": "TRANSITION",
+        "domain": "Phase boundaries (start, end)",
+        "tests": [
+          "T3"
+        ],
+        "tier": 4
+      },
+      {
+        "category": "MARKING",
+        "domain": "Annotations, hazard flags",
+        "tests": [
+          "T9"
+        ],
+        "tier": 4
+      }
+    ],
+    "regime_to_brunschwig": [
+      {
+        "regime": "REGIME_1",
+        "brunschwig": "Balneum marie (water bath)",
+        "character": "Gentle, e-rich, overnight cooling, no luting",
+        "tests": [
+          "T4",
+          "T5",
+          "T6"
+        ],
+        "tier": 3
+      },
+      {
+        "regime": "REGIME_2",
+        "brunschwig": "Sustained operation",
+        "character": "High k-purity, iteration-heavy",
+        "tests": [
+          "T4",
+          "T10"
+        ],
+        "tier": 3
+      },
+      {
+        "regime": "REGIME_3",
+        "brunschwig": "Ash/sand (per ignem)",
+        "character": "Direct fire, rapid gathering, luting required",
+        "tests": [
+          "T4",
+          "T5",
+          "T7"
+        ],
+        "tier": 3
+      },
+      {
+        "regime": "REGIME_4",
+        "brunschwig": "Precision operation",
+        "character": "h-rich monitoring, tight tolerance",
+        "tests": [
+          "T4",
+          "T7"
+        ],
+        "tier": 3
+      }
+    ],
+    "midprocess_action_profiles": {
+      "MONITOR_TEMP": {
+        "THERMAL": 1.0,
+        "FLOW": 0.0,
+        "CONTAINMENT": 0.0,
+        "STAGING": 0.0,
+        "OPERATION": 0.0,
+        "TRANSITION": 0.0,
+        "MARKING": 0.0,
+        "MONITORING": 0.0
+      },
+      "MONITOR_RATE": {
+        "THERMAL": 0.203,
+        "FLOW": 0.294,
+        "CONTAINMENT": 0.096,
+        "STAGING": 0.029,
+        "OPERATION": 0.183,
+        "TRANSITION": 0.052,
+        "MARKING": 0.142,
+        "MONITORING": 0.0
+      },
+      "MONITOR_VISUAL": {
+        "THERMAL": 0.0,
+        "FLOW": 0.112,
+        "CONTAINMENT": 0.089,
+        "STAGING": 0.062,
+        "OPERATION": 0.406,
+        "TRANSITION": 0.228,
+        "MARKING": 0.075,
+        "MONITORING": 0.028
+      },
+      "ADJUST_HEAT": {
+        "THERMAL": 0.882,
+        "FLOW": 0.023,
+        "CONTAINMENT": 0.019,
+        "STAGING": 0.034,
+        "OPERATION": 0.011,
+        "TRANSITION": 0.009,
+        "MARKING": 0.013,
+        "MONITORING": 0.009
+      },
+      "COOL_CONDENSER": {
+        "THERMAL": 0.541,
+        "FLOW": 0.046,
+        "CONTAINMENT": 0.0,
+        "STAGING": 0.006,
+        "OPERATION": 0.239,
+        "TRANSITION": 0.122,
+        "MARKING": 0.024,
+        "MONITORING": 0.022
+      },
+      "REPLENISH_WATER": {
+        "THERMAL": 0.0,
+        "FLOW": 1.0,
+        "CONTAINMENT": 0.0,
+        "STAGING": 0.0,
+        "OPERATION": 0.0,
+        "TRANSITION": 0.0,
+        "MARKING": 0.0,
+        "MONITORING": 0.0
+      },
+      "DETECT_ENDPOINT": {
+        "THERMAL": 0.282,
+        "FLOW": 0.303,
+        "CONTAINMENT": 0.025,
+        "STAGING": 0.142,
+        "OPERATION": 0.062,
+        "TRANSITION": 0.046,
+        "MARKING": 0.136,
+        "MONITORING": 0.003
+      },
+      "COLLECT_FRACTION": {
+        "THERMAL": 0.0,
+        "FLOW": 1.0,
+        "CONTAINMENT": 0.0,
+        "STAGING": 0.0,
+        "OPERATION": 0.0,
+        "TRANSITION": 0.0,
+        "MARKING": 0.0,
+        "MONITORING": 0.0
+      },
+      "COHOBATE": {
+        "THERMAL": 0.002,
+        "FLOW": 0.03,
+        "CONTAINMENT": 0.0,
+        "STAGING": 0.756,
+        "OPERATION": 0.0,
+        "TRANSITION": 0.0,
+        "MARKING": 0.212,
+        "MONITORING": 0.0
+      },
+      "MANAGE_PRESSURE": {
+        "THERMAL": 0.0,
+        "FLOW": 0.0,
+        "CONTAINMENT": 1.0,
+        "STAGING": 0.0,
+        "OPERATION": 0.0,
+        "TRANSITION": 0.0,
+        "MARKING": 0.0,
+        "MONITORING": 0.0
+      },
+      "AGITATE": {
+        "THERMAL": 0.0,
+        "FLOW": 0.0,
+        "CONTAINMENT": 0.0,
+        "STAGING": 0.0,
+        "OPERATION": 1.0,
+        "TRANSITION": 0.0,
+        "MARKING": 0.0,
+        "MONITORING": 0.0
+      },
+      "SEAL_JOINTS": {
+        "THERMAL": 0.088,
+        "FLOW": 0.117,
+        "CONTAINMENT": 0.092,
+        "STAGING": 0.0,
+        "OPERATION": 0.582,
+        "TRANSITION": 0.004,
+        "MARKING": 0.117,
+        "MONITORING": 0.0
+      },
+      "DETECT_CHANNELING": {
+        "THERMAL": 0.017,
+        "FLOW": 0.017,
+        "CONTAINMENT": 0.0,
+        "STAGING": 0.0,
+        "OPERATION": 0.0,
+        "TRANSITION": 0.017,
+        "MARKING": 0.05,
+        "MONITORING": 0.9
+      }
+    }
+  },
+  "coverage": {
+    "mapped": 22973,
+    "total": 23096,
+    "coverage": 99.5
+  },
+  "summary": {
+    "tests_passed": 9,
+    "tests_total": 10
+  },
+  "fits_to_register": {
+    "F-B-008": {
+      "name": "Two-Channel Thermal Architecture",
+      "source": "T1",
+      "tier": "F3",
+      "register": true
+    },
+    "F-B-009": {
+      "name": "Overshoot-Correct Cycling",
+      "source": "T2",
+      "tier": "F3",
+      "register": true
+    },
+    "F-B-010": {
+      "name": "REGIME Token Profile Discrimination",
+      "source": "T4",
+      "tier": "F3",
+      "register": true
+    },
+    "F-B-011": {
+      "name": "Luting-CONTAINMENT REGIME Association",
+      "source": "T5",
+      "tier": "F3",
+      "register": true
+    },
+    "F-B-012": {
+      "name": "E-Compound Cooling Taxonomy",
+      "source": "T6",
+      "tier": "F4",
+      "register": true
+    }
+  },
+  "post_phase_analysis": {
+    "ok_vs_ot_sequential_verification": {
+      "description": "Post-phase investigation of ok vs ot roles. ok and ot are e-sisters (both e-dominant, ~0.28 and ~0.26) but serve sequential verification roles: ok checks thermal state (coarse), ot checks operational output (fine).",
+      "tier": "Tier 3-4 (interpretive)",
+      "atom_composition": {
+        "qo": {
+          "k": 0.51,
+          "e": 0.102,
+          "h": 0.037,
+          "dominant": "k"
+        },
+        "ok": {
+          "k": 0.001,
+          "e": 0.282,
+          "h": 0.007,
+          "dominant": "e"
+        },
+        "ot": {
+          "k": 0.003,
+          "e": 0.258,
+          "h": 0.005,
+          "dominant": "e"
+        }
+      },
+      "category_differences": {
+        "ok_thermal": 0.247,
+        "ot_thermal": 0.202,
+        "delta_thermal": -0.045,
+        "ok_operation": 0.125,
+        "ot_operation": 0.173,
+        "delta_operation": 0.049,
+        "ok_flow": 0.276,
+        "ot_flow": 0.279,
+        "delta_flow": 0.003,
+        "interpretation": "ok is more THERMAL (temperature state), ot is more OPERATION (process activity)"
+      },
+      "directional_transitions": {
+        "ok_to_ot": {
+          "count": 115,
+          "expected": 97.2,
+          "ratio": 1.18
+        },
+        "ot_to_ok": {
+          "count": 101,
+          "expected": 97.2,
+          "ratio": 1.04
+        },
+        "asymmetry": 1.14,
+        "interpretation": "ok precedes ot more than reverse, supporting coarse->fine ordering"
+      },
+      "trigram_ordering": {
+        "qo_ok_ot": 23,
+        "qo_ot_ok": 21,
+        "interpretation": "qo->ok->ot (heat, coarse check, fine check) is preferred sequence"
+      },
+      "top_middles": {
+        "ok_top3": [
+          {
+            "middle": "aiin",
+            "pct": 0.115,
+            "cat": "TRANSITION",
+            "role": "settling/cycling"
+          },
+          {
+            "middle": "e",
+            "pct": 0.094,
+            "cat": "THERMAL",
+            "role": "cooling"
+          },
+          {
+            "middle": "edy",
+            "pct": 0.093,
+            "cat": "OPERATION",
+            "role": "batch"
+          }
+        ],
+        "ot_top3": [
+          {
+            "middle": "edy",
+            "pct": 0.136,
+            "cat": "OPERATION",
+            "role": "batch"
+          },
+          {
+            "middle": "ar",
+            "pct": 0.09,
+            "cat": "FLOW",
+            "role": "release"
+          },
+          {
+            "middle": "e",
+            "pct": 0.087,
+            "cat": "THERMAL",
+            "role": "cooling"
+          }
+        ],
+        "interpretation": "ok leads with aiin (settling), ot leads with edy (batching) - different operational focus"
+      },
+      "ot_enriched_middles": {
+        "od": {
+          "ok_rate": 0.001,
+          "ot_rate": 0.007,
+          "ratio": 0.1,
+          "cat": "OPERATION"
+        },
+        "eod": {
+          "ok_rate": 0.001,
+          "ot_rate": 0.005,
+          "ratio": 0.14,
+          "cat": "TRANSITION"
+        },
+        "or": {
+          "ok_rate": 0.007,
+          "ot_rate": 0.017,
+          "ratio": 0.45,
+          "cat": "FLOW"
+        },
+        "interpretation": "ot enriched in operational and flow MIDDLEs (od=collect, or=portion)"
+      },
+      "control_flow_model": {
+        "sequence": "sh (watch) -> qo (stoke fire) -> ok (check vessel temp) -> ot (check output) -> sh (watch again)",
+        "sh_to_qo_ratio": 1.98,
+        "qo_to_ok_ratio": 1.08,
+        "qo_to_ot_ratio": 1.08,
+        "ok_to_ot_ratio": 1.18,
+        "interpretation": "sh is the primary observation that triggers heat action. ok and ot are post-action verification (thermal state then operational state). Neither ok nor ot leads back to qo directly (both below chance)."
+      },
+      "physical_interpretation": "After stoking fire (qo), the operator performs two sequential checks: (1) ok checks whether the vessel temperature has stabilized (THERMAL-heavy, aiin settling); (2) ot checks whether the operation is running correctly (OPERATION-heavy, edy batching, od collecting). This is coarse-then-fine verification: temperature first, output second. The operator would not fine-tune flow rate if vessel temperature was not stable yet. Passive monitoring (sh) at 1.98x is the primary trigger for the next heat action."
+    }
+  }
+}

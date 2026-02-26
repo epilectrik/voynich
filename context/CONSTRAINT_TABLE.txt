@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1156 constraints | 2026-02-25
+CONSTRAINT_REFERENCE v2.6 | 1160 constraints | 2026-02-25
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1160,3 +1160,7 @@ C1309	**Mode Category Specialization** (A=THERMAL 32.5% MONITORING 2.6x; B=STAGI
 C1310	**Positional Category Alignment** (same-position same-category rate 21.4% vs 16.9% chance = 1.27x enrichment; perm p=0.001; NMI 0.042-0.063 across 5 position bins; THERMAL->THERMAL strongest at 7.6%)	2	B, mode, position, category, alignment, parallel tracks	-> C1310_positional_category_alignment.md
 C1311	**B-to-A Thermal Feedback Signal** (ke_ratio->MARKING rho=-0.198 p=0.0006; ke_ratio->THERMAL rho=+0.176 p=0.002; effect sizes small-to-moderate; feedback is B->A only, A->B shows no signal p>0.3; BA handoff TRANSITION->THERMAL at 12.0%; 300 BA pairs)	2	B, mode, thermal, feedback, cross-mode, MARKING	-> C1311_b_to_a_thermal_feedback.md
 C1312	**No Cross-Line Sequential Category Coupling** (zig-zag WEAKER than null Z=-3.39 perm p=0.999; no A->B prediction V=0.170 p=0.146; no cross-line transition grammar; 0 cross-line forbidden transitions; all interleaving ratios increase entropy; same-mode > cross-mode coupling AA r=0.463 vs BA r=0.328)	2	B, mode, cross-line, sequential, independence, forbidden	-> C1312_no_cross_line_sequential_coupling.md
+C1313	**Two-Channel Thermal Atom Separation** (qo k-frac=0.510 vs ok k-frac=0.001; ok e-frac=0.282 vs qo e-frac=0.102; MW p=0.0 both; perm p=0.0; sa neutral control p=0.999)	2	B, PREFIX, thermal, atom, qo, ok, separation	-> C1313_two_channel_thermal_atom_separation.md
+C1314	**Overshoot-Correct Bigram Enrichment** (qo-k->ok-e: 103 obs vs 72.0 null = 43% above chance p=0.0; reverse: 112 obs vs 72.1 null = 55% above chance p=0.0; da->sa neg ctrl p=0.996)	2	B, PREFIX, thermal, sequencing, bigram, cycling	-> C1314_overshoot_correct_bigram_enrichment.md
+C1315	**REGIME B Token Profile Discrimination** (6/7 metrics KW p<0.01 for B tokens by REGIME; A tokens 0/7 significant; B-specific discrimination in k-frac, e-frac, h-frac, THERMAL, MONITORING, CONTAINMENT rates)	2	B, REGIME, discrimination, category, atom, A-control	-> C1315_regime_b_token_profile_discrimination.md
+C1316	**O-PREFIX Categorical Distinction** (ok/ot/ol/or 4x8 chi-sq p<0.001; ok->ot asymmetry 1.18x vs 1.04x; trigram qo->ok->ot preferred; ok +4.4% THERMAL, ot +4.9% OPERATION; 3/4 distinct dominant category)	2	B, PREFIX, o-prefix, ok, ot, ol, or, category, sequential	-> C1316_o_prefix_categorical_distinction.md

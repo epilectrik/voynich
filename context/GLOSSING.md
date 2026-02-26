@@ -93,11 +93,11 @@ All glosses below have been validated by the expert-advisor agent against the co
 |---|---|---|---|
 | ch | test | Active state testing (discrete checkpoint) | C929: pos 0.515, checkpoint suffix 1.87x, followed by close/input/iterate. Brunschwig: finger test, taste test, thumbnail viscosity |
 | sh | monitor | Passive process monitoring (continuous observation) | C929: pos 0.396, front-loaded 33% in first 20% of line, followed by heat 18.3%. Brunschwig: drip watching, fire monitoring, color watching |
-| qo | energy | Energy domain | C644: energy operations |
+| qo | energy | **Heat source control.** k-enriched (0.510), THERMAL 59%. Part of two-channel thermal architecture: qo manages heat input while ok/ot verify vessel response. sh->qo = 1.98x (monitoring triggers heat action). | C644, C911: k-family only. C1313: k-frac=0.510. C1314: overshoot-correct cycling |
 | ol | continue / LINK | Morphological component, role-stratified (not unified function) | C609: density, C1174: morphological artifact |
 | da | setup | Infrastructure, anchoring | C911: infrastructure selector |
-| ok | vessel | **DOMAIN SELECTOR.** ok selects the vessel/apparatus as action target; MIDDLE provides the action. ok+aiin = "check vessel," ok+ar = "close vessel," ok+e = "cool vessel," ok+ai = "open vessel." 378 same-MIDDLE pairs confirm domain differentiation. Late in line (0.538). Sister pair with ot (proactive vs corrective). | C936 (revised), C911: e-family + infra. C570/C571: PREFIX = role selector |
-| ot | (scaffold) | Often silent/structural | C911: h-family selector |
+| ok | vessel (thermal) | **Vessel thermal verification (coarse).** ok selects the vessel/apparatus as action target; MIDDLE provides the action. e-enriched (0.282), THERMAL 24.7%. First stage of post-heat-action verification: checks whether vessel temperature has stabilized. ok->ot = 1.18x (coarse precedes fine). Top MIDDLE: aiin (settling). | C936 (revised), C911: e-family + infra. C1313: e-frac=0.282. C1316: ok->ot asymmetry 1.14 |
+| ot | vessel (operations) | **Vessel operational verification (fine).** e-enriched (0.258), OPERATION 17.3%. Second stage of post-heat-action verification: checks whether the operation/output is running correctly. Top MIDDLE: edy (batching). Enriched in od (collect), or (portion). Follows ok in preferred sequence qo->ok->ot. | C911: h-family selector. C1316: ot +4.9% OPERATION vs ok. C408: ok/ot sister pair |
 | ct | control | Control, hazard management | |
 
 ### Extended Prefixes
@@ -177,6 +177,34 @@ All glosses below have been validated by the expert-advisor agent against the co
 | ee | "deep cool" | "Deep" unclear; double-e encodes duration | "extended cool" (Test 12) |
 | ok | "lock" | Not a verb — domain selector (Test 26) | "vessel" (domain selector, C936 revised) |
 | ok | "seal/cover/plug" | Composite verb glosses produce word salad at line level (Test 26) | "vessel" (domain selector) |
+
+### Control Flow Loop (Phase 461, Tier 3-4)
+
+Within-line bigram analysis reveals a preferred PREFIX sequencing pattern consistent with a closed-loop control cycle:
+
+```
+sh (watch) -> qo (stoke fire) -> ok (check vessel temp) -> ot (check output) -> sh (watch)
+   1.98x          1.08x              1.18x                    (return to monitoring)
+```
+
+**Key transition ratios (vs chance):**
+
+| Transition | Ratio | Interpretation |
+|---|---|---|
+| sh -> qo | 1.98x | Passive monitoring triggers heat action (strongest link) |
+| qo -> ok | 1.08x | Heat action triggers vessel thermal check |
+| qo -> ot | 1.08x | Heat action triggers operations check |
+| ok -> ot | 1.18x | Vessel check leads to operations check (coarse then fine) |
+| ok -> qo | 0.84x | Vessel check does NOT lead back to heat directly |
+| ot -> qo | 0.88x | Operations check does NOT lead back to heat directly |
+
+**Two-stage verification:** After heat action (qo), the operator performs two sequential checks:
+1. **ok (coarse):** Is the vessel temperature correct? (THERMAL 24.7%, top MIDDLE: aiin = settling)
+2. **ot (fine):** Is the operation running properly? (OPERATION 17.3%, top MIDDLE: edy = batching)
+
+The operator would not fine-tune flow rate if vessel temperature was not stable yet. Neither verification step leads directly back to heat action — passive monitoring (sh) is the gatekeeper for the next heat cycle.
+
+**Evidence:** C1313 (atom separation), C1314 (overshoot cycling), C1316 (ok->ot ordering). Phase 461 T1, T2, T8, post-phase analysis.
 
 ---
 

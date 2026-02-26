@@ -43,6 +43,24 @@ FL_COLORS = {
     'TERMINAL': Fore.RED,
 } if HAS_COLOR else {}
 
+# 8-category operational colors (C1250)
+CATEGORY_COLORS = {
+    'THERMAL': Fore.RED,
+    'FLOW': Fore.BLUE,
+    'CONTAINMENT': Fore.YELLOW,
+    'STAGING': Fore.GREEN,
+    'OPERATION': Fore.LIGHTWHITE_EX,
+    'TRANSITION': Fore.MAGENTA,
+    'MARKING': Fore.CYAN,
+    'MONITORING': Fore.LIGHTBLUE_EX,
+} if HAS_COLOR else {}
+
+# Mode colors: A=warm (specification), B=cool (continuation) — Sheet Music Principle
+MODE_COLORS = {
+    'A': Fore.LIGHTYELLOW_EX,
+    'B': Fore.LIGHTCYAN_EX,
+} if HAS_COLOR else {}
+
 
 def token_color(tok) -> str:
     """Semantic color by functional role. Priority: HT > FL > prefix_role.
@@ -76,7 +94,8 @@ def print_legend():
     """Print compact color legend at top of output."""
     if not HAS_COLOR:
         return
-    parts = [
+    # Role colors
+    role_parts = [
         f"{Fore.RED}QO:energy{Style.RESET_ALL}",
         f"{Fore.CYAN}CH/SH:monitor{Style.RESET_ALL}",
         f"{Fore.YELLOW}CC:control{Style.RESET_ALL}",
@@ -87,7 +106,24 @@ def print_legend():
         f"{Style.DIM}{Fore.WHITE}HT:human{Style.RESET_ALL}",
         f"{Fore.LIGHTWHITE_EX}BARE:bare{Style.RESET_ALL}",
     ]
-    print(f"Legend: {' | '.join(parts)}")
+    print(f"Roles: {' | '.join(role_parts)}")
+    # Category colors (C1250)
+    cat_parts = [
+        f"{Fore.RED}TH{Style.RESET_ALL}",
+        f"{Fore.BLUE}FL{Style.RESET_ALL}",
+        f"{Fore.YELLOW}CN{Style.RESET_ALL}",
+        f"{Fore.GREEN}ST{Style.RESET_ALL}",
+        f"{Fore.LIGHTWHITE_EX}OP{Style.RESET_ALL}",
+        f"{Fore.MAGENTA}TR{Style.RESET_ALL}",
+        f"{Fore.CYAN}MK{Style.RESET_ALL}",
+        f"{Fore.LIGHTBLUE_EX}MN{Style.RESET_ALL}",
+    ]
+    # Mode colors
+    mode_parts = [
+        f"{Fore.LIGHTYELLOW_EX}[A]{Style.RESET_ALL}=specification",
+        f"{Fore.LIGHTCYAN_EX}[B]{Style.RESET_ALL}=continuation",
+    ]
+    print(f"Categories: {' '.join(cat_parts)}  Mode: {' '.join(mode_parts)}")
 
 
 # ── Control IR mode ─────────────────────────────────────────────────────────
@@ -163,6 +199,8 @@ class IRToken:
     prefix_phase: Optional[str] = None  # SETUP/PREP/WORK/CLOSE (C556)
     prefix_role_raw: Optional[str] = None  # Raw prefix_role for audit
     zone_basis: str = ''               # census/phase/role/ht/dp/c740/default
+    operational_category: Optional[str] = None  # 8-category (C1250)
+    hazard_category: Optional[str] = None  # HIGH (FL/CN), LOW (TH), None (C1280)
 
     def role_tag(self) -> str:
         """Role-typed notation per BCSC census (C573, C581-C583, C563-C572).
@@ -245,6 +283,10 @@ class IRBlock:
     # Control loop annotations (C1234, C1235, C1237)
     loop_markers: Dict[str, str] = field(default_factory=dict)  # {'setup': word, 'check': word}
     line_final_type: Optional[str] = None  # FINALIZE/LOOP_CHECK/TERMINAL/CLOSE/ROUTE/OPEN
+
+    # 8-category operational profile (C1250, C1278)
+    category_profile: Dict[str, int] = field(default_factory=dict)
+    category_mode_character: Optional[str] = None  # SPECIFICATION or CONTINUATION (C1279/C1309)
 
 
 def _ir_zone_and_basis(tok, token_class) -> tuple:
@@ -438,11 +480,25 @@ def _ir_t3_gloss(t: IRToken) -> Optional[tuple]:
         sfx_label = _SUFFIX_GLOSS.get(t.suffix, t.suffix)
         sfx_exp = f' ({sfx_label})'
 
+    # Category-hazard indicator (C1280: supplementary to C109 class-based hazard)
+    _cat_abbrev = {'THERMAL': 'TH', 'FLOW': 'FL', 'CONTAINMENT': 'CN',
+                   'STAGING': 'ST', 'OPERATION': 'OP', 'TRANSITION': 'TR',
+                   'MARKING': 'MK', 'MONITORING': 'MN'}
+    cat_ind = ''
+    if t.operational_category:
+        ca = _cat_abbrev.get(t.operational_category, '??')
+        if t.hazard_category == 'HIGH':
+            cat_ind = f' [{ca}!]'   # hazard-associated
+        elif t.hazard_category == 'LOW':
+            cat_ind = f' [{ca}.]'   # low-hazard
+        else:
+            cat_ind = f' [{ca}]'
+
     if pfx:
         pfx_gloss = _PREFIX_GLOSS.get(pfx, pfx)
-        gloss = f"[{role_tag}] ({pfx_gloss}) {mid_exp}{sfx_exp}"
+        gloss = f"[{role_tag}] ({pfx_gloss}) {mid_exp}{sfx_exp}{cat_ind}"
     else:
-        gloss = f"[{role_tag}] {mid_exp}{sfx_exp}"
+        gloss = f"[{role_tag}] {mid_exp}{sfx_exp}{cat_ind}"
     return (t.word, gloss)
 
 
@@ -511,6 +567,14 @@ def compile_ir_block(la, d, middle_dict=None) -> IRBlock:
             if (token_class is not None and token_class in _BCSC_FL) or tok.is_fl_role:
                 fl_stage = tok.fl_stage
 
+        # Category-hazard association (C1280: V=0.560)
+        op_cat = tok.operational_category if hasattr(tok, 'operational_category') else None
+        hazard_cat = None
+        if op_cat in ('FLOW', 'CONTAINMENT'):
+            hazard_cat = 'HIGH'    # FL 66.1%, CN 61.0%
+        elif op_cat == 'THERMAL':
+            hazard_cat = 'LOW'     # TH 2.6%
+
         ir_tokens.append(IRToken(
             word=tok.word,
             position=idx + 1,              # 1-based position in line
@@ -535,6 +599,8 @@ def compile_ir_block(la, d, middle_dict=None) -> IRBlock:
             prefix_phase=tok.prefix_phase,
             prefix_role_raw=tok.prefix_role,
             zone_basis=zone_basis,
+            operational_category=op_cat,
+            hazard_category=hazard_cat,
         ))
 
     # Partition by zone (role-first for WORK: C574 lanes are EN-internal)
@@ -636,45 +702,51 @@ def compile_ir_block(la, d, middle_dict=None) -> IRBlock:
         t3_annotations=t3_records,
         loop_markers=la.loop_markers if hasattr(la, 'loop_markers') else {},
         line_final_type=la.line_final_type if hasattr(la, 'line_final_type') else None,
+        category_profile=la.category_profile if hasattr(la, 'category_profile') else {},
+        category_mode_character=la.category_mode_character if hasattr(la, 'category_mode_character') else None,
     )
 
 
 def _render_ir_block(block: IRBlock, color_enabled: bool):
     """Render a single IRBlock as pseudocode."""
-    # Header line
-    _zone_abbrev = {'HEADER': 'HEADER', 'SPECIFICATION': 'SPEC', 'EXECUTION': 'EXEC'}
+    # Category abbreviations (C1250)
+    _cat_abbrev = {'THERMAL': 'TH', 'FLOW': 'FL', 'CONTAINMENT': 'CN',
+                   'STAGING': 'ST', 'OPERATION': 'OP', 'TRANSITION': 'TR',
+                   'MARKING': 'MK', 'MONITORING': 'MN'}
+
+    # Mode marker: first visual element on body lines (Sheet Music Principle)
+    mode_marker = ''
+    if block.suffix_mode:
+        if color_enabled and block.suffix_mode in MODE_COLORS:
+            mc = MODE_COLORS[block.suffix_mode]
+            mode_marker = f" {mc}[{block.suffix_mode}]{Style.RESET_ALL}"
+        else:
+            mode_marker = f" [{block.suffix_mode}]"
+
+    # Zone tag
+    _zone_abbrev = {'HEADER': 'HEADER', 'BODY': 'BODY', 'TAIL': 'TAIL'}
     zone_tag = f" [{_zone_abbrev.get(block.paragraph_zone, block.paragraph_zone)}]" if block.paragraph_zone else ""
-    # FL tag: genuine FL tokens (C582) vs suffix-derived hints
-    if block.fl_range:
-        fl_tag = f" FL:({block.fl_range})"
-    elif block.suffix_stage_range:
-        fl_tag = f" sfx_hint:({block.suffix_stage_range})"
-    else:
-        fl_tag = ""
+
     kern_tag = f" kern({block.kernel_summary})" if block.kernel_summary != '-' else ""
-    mode_tag = f" mode:{block.suffix_mode}" if block.suffix_mode else ""
 
-    # Control loop: iteration markers (C1234)
-    lm = block.loop_markers
-    if lm:
-        parts = []
-        if 'setup' in lm:
-            parts.append(f"setup({lm['setup']})")
-        if 'check' in lm:
-            parts.append(f"check({lm['check']})")
-        loop_tag = f" loop:{'->'.join(parts)}"
-    else:
-        loop_tag = ""
-
-    # Control loop: line-final classification (C1235, C1237)
-    lft = block.line_final_type
-    if lft and lft != 'OPEN':
-        final_word = block.raw_sequence[-1] if block.raw_sequence else '?'
-        final_tag = f" final:{lft}({final_word})"
-    elif lft == 'OPEN':
-        final_tag = " final:OPEN"
-    else:
-        final_tag = ""
+    # Category profile: compact top-3 display (C1250, C1278)
+    cat_tag = ''
+    if block.category_profile:
+        cat_total = sum(block.category_profile.values())
+        if cat_total > 0:
+            sorted_cats = sorted(block.category_profile.items(), key=lambda x: -x[1])[:3]
+            if color_enabled:
+                cat_parts = []
+                for c, n in sorted_cats:
+                    abbr_code = _cat_abbrev.get(c, c[:2])
+                    cc = CATEGORY_COLORS.get(c, '')
+                    pct = int(100 * n / cat_total)
+                    cat_parts.append(f"{cc}{abbr_code}:{pct}%{Style.RESET_ALL}")
+                cat_tag = f" cat:{'/'.join(cat_parts)}"
+            else:
+                cat_parts = [f"{_cat_abbrev.get(c, c[:2])}:{int(100*n/cat_total)}%"
+                             for c, n in sorted_cats]
+                cat_tag = f" cat:{'/'.join(cat_parts)}"
 
     role_parts = []
     for k in ('EN:CHSH', 'EN:QO', 'AX'):
@@ -682,7 +754,30 @@ def _render_ir_block(block: IRBlock, color_enabled: bool):
             role_parts.append(f"{k}:{block.lane_counts[k]}")
     lane_tag = '  ' + ' '.join(role_parts) if role_parts else ''
 
-    print(f"L{block.line_id}{zone_tag}{loop_tag}{final_tag}{kern_tag}{mode_tag}{lane_tag}")
+    print(f"L{block.line_id}{mode_marker}{zone_tag}{kern_tag}{cat_tag}{lane_tag}")
+
+    # Loop/final details on second sub-line (less prominent — useful but not primary signal)
+    detail_parts = []
+    # Control loop: iteration markers (C1234)
+    lm = block.loop_markers
+    if lm:
+        lm_parts = []
+        if 'setup' in lm:
+            lm_parts.append(f"setup({lm['setup']})")
+        if 'check' in lm:
+            lm_parts.append(f"check({lm['check']})")
+        detail_parts.append(f"loop:{'->'.join(lm_parts)}")
+
+    # Control loop: line-final classification (C1235, C1237)
+    lft = block.line_final_type
+    if lft and lft != 'OPEN':
+        final_word = block.raw_sequence[-1] if block.raw_sequence else '?'
+        detail_parts.append(f"final:{lft}({final_word})")
+    elif lft == 'OPEN':
+        detail_parts.append("final:OPEN")
+
+    if detail_parts:
+        print(f"  | {' '.join(detail_parts)}")
 
     # SETUP zone
     if block.setup_tokens:
@@ -771,6 +866,9 @@ def display_ir(folio_id: str, line_num=None, para_num=None, use_color=True):
     print(f"loop: C1234 iteration (setup=line-initial iin/in, check=penultimate aiin/ain).")
     print(f"final: C1235/C1237 line ending (FINALIZE/LOOP_CHECK/TERMINAL/CLOSE/ROUTE/OPEN).")
     print(f"term: C1237 paragraph termination by -am.")
+    print(f"cat: 8-category operational classification (C1250). Structural, not semantic translations.")
+    print(f"  TH=thermal FL=flow CN=containment ST=staging OP=operation TR=transition MK=marking MN=monitoring")
+    print(f"mode: A=specification (suffix-heavy) B=continuation (bare-heavy) per C1229-C1231.")
     print(f"{'=' * W}")
     if color_enabled:
         print_legend()
@@ -819,9 +917,18 @@ def display_ir(folio_id: str, line_num=None, para_num=None, use_color=True):
         else:
             term_str = ' term:-'
 
+        # Category key (C1308)
+        _cat_abbrev = {'THERMAL': 'TH', 'FLOW': 'FL', 'CONTAINMENT': 'CN',
+                       'STAGING': 'ST', 'OPERATION': 'OP', 'TRANSITION': 'TR',
+                       'MARKING': 'MK', 'MONITORING': 'MN'}
+        cat_key_str = ''
+        if hasattr(para, 'category_key') and para.category_key:
+            key_parts = [_cat_abbrev.get(c, c[:2]) for c in para.category_key]
+            cat_key_str = f' key:[{"|".join(key_parts)}]'
+
         print(f"-- {para.paragraph_id} ({bt}-gallows, "
               f"{para.line_count}L/{para.token_count}T) "
-              f"k{kp}/h{hp}/e{ep} EN:{en_pct}%{cycling_str}{term_str} "
+              f"k{kp}/h{hp}/e{ep} EN:{en_pct}%{cat_key_str}{cycling_str}{term_str} "
               + '-' * 20)
 
         for la in lines:
@@ -838,7 +945,7 @@ def display_flow(folio_id: str, line_num: int = None, para_num: int = None, use_
 
     d = BFolioDecoder()
 
-    # Get lines through paragraph analysis (sets paragraph_zone per C932)
+    # Get lines through paragraph analysis (sets paragraph_zone per C747/C963/C1237)
     paragraphs = d.analyze_folio_paragraphs(folio_id)
     if para_num:
         paragraphs = [p for p in paragraphs if p.paragraph_id == f"P{para_num}"]
