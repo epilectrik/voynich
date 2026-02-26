@@ -6528,3 +6528,62 @@ Different e-compound MIDDLEs distribute non-randomly across REGIMEs (chi-sq p<0.
 ### What This Means
 
 The Voynich B text's structural patterns — PREFIX selection, atom composition, within-line sequencing, REGIME variation — map systematically onto the physics of controlled distillation. This is not translation; it is structural alignment at the level of operational roles. The manuscript's control programs are consistent with managing heat input, monitoring vessel state, verifying output, and cycling through these operations with precision appropriate to the fire degree. Token coverage: 99.5% of B tokens receive a mapping.
+
+## XXII. Parallel Operator Hypothesis (Session Analysis, 2026-02-25)
+
+### Context
+
+Following Phase 461's control loop characterization (sh→qo→ok→ot), analysis of paragraph-level prefix profiles revealed that paragraphs within a folio have distinct operational emphasis — some are heat-dominant (qo-heavy), others watch-heavy (sh), others verification-focused (ot), others low-heat or test-only. This raised the question: are paragraphs parallel task assignments for multiple operators rather than sequential steps in a single procedure?
+
+### Findings (Statistical)
+
+**1. Shared vs Divergent MIDDLE Category Profiles (chi-squared = 2604, p < 0.001, 73 folios, 2721 paragraph pairs)**
+
+MIDDLEs shared between paragraphs on the same folio have a significantly different category profile from MIDDLEs unique to individual paragraphs:
+
+| Category | Shared | Divergent | Ratio | Interpretation |
+|----------|--------|-----------|-------|----------------|
+| THERMAL | 23.7% | 18.5% | 1.28x | Shared: batch identity |
+| TRANSITION | 18.8% | 13.3% | 1.41x | Shared: state changes |
+| OPERATION | 13.8% | 11.4% | 1.21x | Shared: operation type |
+| MONITORING | 0.6% | 3.0% | 0.20x | Divergent: task-specific |
+| MARKING | 3.8% | 15.1% | 0.25x | Divergent: task-specific |
+| CONTAINMENT | 3.8% | 5.3% | 0.71x | Divergent: vessel handling |
+
+Paragraphs share what batch they're processing (THERMAL, TRANSITION identity) but diverge on what each operator does (MONITORING station, MARKING checkpoints, CONTAINMENT responsibility).
+
+PREFIX profile of shared vs divergent MIDDLEs shows `ot` (verify) enriched in shared vocabulary (1.21x) while `ch` (test) and `da` (setup) are enriched in divergent vocabulary — verification is common, testing and setup are task-specific.
+
+**2. No Ordinal Complexity Gradient (74 folios with 3+ paragraphs)**
+
+If paragraphs were a training curriculum (simple→complex), first paragraphs should be simplest and last paragraphs most complex. Tested: completeness (control elements present) shows no ordinal trend. P1 mean completeness = 5.11/6, last paragraph = 4.97/6. Largest paragraph position: 31% first, 41% middle, 28% last (no preferred position). Rules out strict sequential training model.
+
+**3. "Master" Paragraph is Not a Combiner (59 folios with 4+ paragraphs)**
+
+The most complete paragraph (highest control element count, then largest) covers 55.6% of each specialist's MIDDLEs vs 36.3% inter-specialist coverage (1.53x lift). However, size-controlled test: master is 2.83x bigger than average specialist, so coverage/size = 0.54x. Master coverage is fully explained by size alone — it is not actively combining specialist vocabularies. 36.9% of master's MIDDLEs are unique to master.
+
+**4. Paragraph Count Distribution**
+
+82 B folios range from 1 to 20 paragraphs (mean 7.1). High-paragraph folios (≥8, n=32) average 3.8 lines/paragraph; low-paragraph folios (≤3, n=25) average 8.1 lines/paragraph. REGIME_3 concentrates in high-paragraph group (13 vs 3). REGIME_4 concentrates in low-paragraph group (9 vs 1). REGIME_1 appears in both.
+
+### Interpretation (Tier 3-4)
+
+The data is consistent with a **parallel operator model** where paragraphs on a folio represent task assignments for different workers at a shared apparatus:
+
+- Each operator has their own instructions (self-contained paragraphs, C845)
+- All operators work the same batch (shared THERMAL/TRANSITION MIDDLEs)
+- Each operator has distinct responsibilities (divergent MONITORING/MARKING/CONTAINMENT)
+- The "biggest" paragraph is the busiest station, not a master compilation
+- No fixed ordering (no ordinal gradient) — task assignments don't follow page order
+
+This is consistent with historical documentation of 14th-15th century distillation workshops, which show labor division: furnace tenders, condenser watchers, quality checkers, material handlers, and a master overseeing (Brunschwig woodcuts, 1500; Italian apothecary frescoes, 15th c.). The emergence of the professional *Wasserbrenner* (water burner/distiller) in 14th century German cities, with Frankfurt regulating the profession from 1361, confirms commercial-scale multi-person operations in the Voynich's time period.
+
+High-paragraph folios (many short paragraphs) may represent high-volume products requiring more workers/stations; low-paragraph folios (few long paragraphs) may represent simpler procedures handled by fewer people. The coexistence of both formats within the same REGIME supports this — same process type, different operational scale.
+
+### Caveats
+
+- The parallel operator interpretation is Tier 4 speculation consistent with the statistical findings
+- Alternative: paragraphs are parallel *variants* of the same recipe (different configurations), not parallel *workers*
+- Alternative: high-paragraph folios are training/reference documents, low-paragraph folios are production documents
+- The statistical findings (shared THERMAL, divergent MONITORING/MARKING) are Tier 2 data; only the "operator" interpretation is speculative
+- C1121 (domain irrecoverability) still applies — we cannot identify what product was being made

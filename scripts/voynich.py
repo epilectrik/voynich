@@ -1592,9 +1592,21 @@ class BTokenAnalysis:
         if self.is_dark_pipeline:
             middle = self.morph.middle if self.morph else self.word
             suffix = self.morph.suffix if self.morph else None
-            spec = f"[ident:{middle}]"
+            # Expand MIDDLE chars with ATOM_GLOSSES for readability
+            mid_expanded = '.'.join(
+                CategoryClassifier.ATOM_GLOSSES.get(c, c) for c in middle
+            )
+            spec = f"[ident: {mid_expanded}]"
             if suffix:
-                spec += f" [-{suffix}]"
+                # Use learned suffix gloss if available, else char-expand
+                sfx_label = None
+                if hasattr(self, '_suffix_gloss'):
+                    sfx_label = self._suffix_gloss.get(suffix)
+                if not sfx_label:
+                    sfx_label = '.'.join(
+                        CategoryClassifier.ATOM_GLOSSES.get(c, c) for c in suffix
+                    )
+                spec += f" (-{sfx_label})"
             return spec
 
         # MIDDLE signature for gloss discrimination (C506.b, C908)
@@ -2030,7 +2042,14 @@ class BTokenAnalysis:
             if not atom_gloss:
                 return None
 
-            # Expert rule: standalone label only, no extension descriptions
+            # Include extension character glosses as parameters (C872, C522)
+            ext_parts = []
+            for c in pre_ext:
+                ext_parts.append(CategoryClassifier.ATOM_GLOSSES.get(c, c))
+            for c in suf_ext:
+                ext_parts.append(CategoryClassifier.ATOM_GLOSSES.get(c, c))
+            if ext_parts:
+                return f"{atom_gloss}({'-'.join(ext_parts)})"
             return atom_gloss
 
         # Fallback: multi-atom segmentation for long compounds
@@ -2038,11 +2057,14 @@ class BTokenAnalysis:
         if not segments:
             return None
 
-        # Use first atom gloss only (standalone label)
+        # Compose from all segments: atoms get glosses, extensions get char glosses
+        parts = []
         for seg, stype, gloss in segments:
             if stype == 'ATOM' and gloss:
-                return gloss
-        return None
+                parts.append(gloss)
+            elif stype == 'EXT':
+                parts.append(CategoryClassifier.ATOM_GLOSSES.get(seg, seg))
+        return '-'.join(parts) if parts else None
 
     def _ht_spec_bundle(self) -> Optional[str]:
         """Render HT token as posture gloss.

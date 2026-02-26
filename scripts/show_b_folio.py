@@ -411,7 +411,7 @@ def _format_ir_token(t: IRToken, color_enabled: bool) -> str:
 
 # PREFIX operational glosses from decoder_maps.json prefix_actions
 _PREFIX_GLOSS = {
-    'qo': 'energy', 'ch': 'test', 'sh': 'monitor', 'ok': 'vessel', 'ot': 'verify',
+    'qo': 'heat-src', 'ch': 'test', 'sh': 'watch', 'ok': 'vessel-chk', 'ot': 'fine-chk',
     'ol': 'continue', 'ke': 'heat-burst', 'ek': 'check-heat', 'da': 'setup',
     'sa': 'dry', 'so': 'scaffold', 'ct': 'control', 'kch': 'precision-heat',
     'pch': 'process', 'tch': 'process', 'dch': 'process', 'lch': 'process',
@@ -472,7 +472,11 @@ def _ir_t3_gloss(t: IRToken) -> Optional[tuple]:
         role_tag = t.role_5 or '?'
 
     pfx = t.prefix if t.prefix else ''
-    mid_exp = _char_expand(t.middle)
+    # Use learned MiddleDictionary gloss when available, else char-expand
+    if t.t3_gloss:
+        mid_exp = t.t3_gloss
+    else:
+        mid_exp = _char_expand(t.middle)
 
     # Suffix: whole-unit gloss (BCSC operational layer), never character-expand
     sfx_exp = ''
@@ -1145,11 +1149,16 @@ def display_paragraph(folio_id: str, line_num: int = None, para_num: int = None,
                 structural_glosses.append(structural)
                 tokens.append(tok.word)
 
-        # Print line: manual gloss, structural (if enabled), tokens
+        # Print line: manual gloss, structural (if enabled), tokens, prefix chain
         print(f"L{la.line_id}: {' '.join(glosses)}")
         if show_calc:
             print(f"    {' '.join(structural_glosses)}")
         print(f"    [{' '.join(tokens)}]")
+        # Prefix chain: compact control flow hint (Phase 461)
+        pfx_chain = [tok.morph.prefix for tok in la.tokens
+                     if tok.morph and tok.morph.prefix]
+        if pfx_chain:
+            print(f"    pfx: {' > '.join(pfx_chain)}")
         print()
 
     print(f"{'='*80}")
@@ -1391,6 +1400,10 @@ def main():
             display_flow(args.folio, line_num=args.line, para_num=args.para,
                          use_color=not args.no_color)
         return
+
+    if args.interp:
+        print("Warning: --interp only affects --profile mode. Use --profile --interp.",
+              file=sys.stderr)
 
     if args.ir:
         display_ir(args.folio, line_num=args.line, para_num=args.para,
