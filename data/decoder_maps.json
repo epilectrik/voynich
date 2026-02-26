@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "1.9",
+    "version": "2.0",
     "description": "Externalized BFolioDecoder maps with constraint citations",
     "source": "Extracted from scripts/voynich.py BFolioDecoder class",
     "v1.1_changes": "Expert validation: fixed -ey (strong→selective), -dy (gentle→basic), -ar (recover→close), removed sch=grind (unsupported), demoted ksh/FL glosses to Tier 4, fixed CC_TOKENS to use C874 labels",
@@ -8,11 +8,12 @@
     "v1.3_changes": "Expert deep validation: ct CC_CORE→A_ENRICHED (C282), al/ar/or AX_LINK→AX_LATE (C539/C609), ly WATER demoted to Tier 4, OIL_MARKER kc/okch demoted to Tier 4 (F-BRU-020 is F4)",
     "v1.4_changes": "Expert f26r glossing: -edy energy-check→thorough (C283), -dy basic→close (C597), -hy maintain→verify-maintain (C907)",
     "v1.5_changes": "Control grammar viewer: added macro_state (C976, 49→6-state), hub_sub_role (C1000, 23 hub MIDDLEs), prefix_zone (C1001, positional bias)",
-    "v1.6_changes": "Verb consolidation: synced 10 prefix_actions entries to GLOSSING.md (pch=chop, tch=pound, te=gather, ke=sustain, kch=precision-heat, lch=modified energy, ot=scaffold, qo=energy, rch=input-test, dch=divide-test). Deprecated brunschwig_gloss map. Fixed self-description from 'Operational verbs' to 'PREFIX operational labels'.",
+    "v1.6_changes": "Verb consolidation: synced 10 prefix_actions entries to GLOSSING.md (pch=chop, tch=pound, te=gather, ke=sustain, kch=precision-heat, lch=modified energy, ot=scaffold [later updated v2.0], qo=energy, rch=input-test, dch=divide-test). Deprecated brunschwig_gloss map. Fixed self-description from 'Operational verbs' to 'PREFIX operational labels'.",
     "v1.7_changes": "BCSC v3.12 alignment: ke/ek gloss update (C1226), PREFIX base-modifier map (C1218), suffix mode centroids (C1231), tail product centroids (C1232). ke sustain→heat-burst, added ek=check-heat.",
     "v1.8_changes": "Expert validation fixes: (1) Prep PREFIX glosses chop/pound/gather/etc→process material (C1221: h-base variants not distinct operations). (2) FL stage map corrected per C777: al/l/ol MEDIAL→LATE, o/ly LATE→FINAL, am TERMINAL→FINAL.",
     "tier_note": "tier 0-2 = structural (constraint-backed), tier 3 = interpretive (Brunschwig-grounded), tier 4 = speculative",
-    "v1.9_changes": "Added gloss_to_category and atom_to_category reference maps (C1250, Tier 2). Canonical source for 8-category operational classification system."
+    "v1.9_changes": "Added gloss_to_category and atom_to_category reference maps (C1250, Tier 2). Canonical source for 8-category operational classification system.",
+    "v2.0_changes": "Phase 461 gloss sync: ot scaffold→verify (C1316), qo/ok notes updated for two-channel thermal model (C1313, C1314). Control flow: sh→qo→ok→ot."
   },
   "maps": {
     "prefix_phase": {
@@ -1796,21 +1797,21 @@
         },
         "qo": {
           "value": "energy",
-          "constraint": "C644, C556, C931",
+          "constraint": "C644, C556, C931, C1313, C1314",
           "tier": 3,
-          "note": "Energy domain selector (C644). Rank 1 prefix, selects kernel MIDDLEs (k,t,ke) exclusively. Uniform positional distribution (always present). B-enriched 1.30x."
+          "note": "Heat source control. k-enriched (0.510), THERMAL 59%. Part of two-channel thermal architecture (C1313): qo manages heat input, ok/ot verify vessel response. Overshoot-correct cycling with ok (C1314). sh->qo = 1.98x (monitoring triggers heat action). Rank 1 prefix, selects k-family MIDDLEs exclusively (C911)."
         },
         "ok": {
           "value": "vessel",
-          "constraint": "C556, C931, C936",
+          "constraint": "C556, C931, C936, C1313, C1316",
           "tier": 3,
-          "note": "DOMAIN SELECTOR: vessel/apparatus target (C936 revised). MIDDLE provides action on vessel. Late position (mean 0.538). H-enriched 1.36x. e-family + infra MIDDLEs (C911). Sister pair with ot (proactive/corrective). Jaccard 0.82 with ot."
+          "note": "Vessel thermal verification (coarse). e-enriched (0.282), THERMAL 24.7%. First stage of post-heat-action verification: checks vessel temperature. ok->ot = 1.18x (coarse precedes fine, C1316). Top MIDDLE: aiin (settling). Late position (mean 0.538). e-family + infra MIDDLEs (C911). Sister pair with ot."
         },
         "ot": {
-          "value": "scaffold",
-          "constraint": "C556, C931, C911",
+          "value": "verify",
+          "constraint": "C556, C931, C911, C1316",
           "tier": 3,
-          "note": "Scaffold — often silent/structural. Late position (init/final 0.36x). C-enriched 1.48x. Selects finalize MIDDLEs (al 4.6x, am 4.3x, ar 4.0x). Jaccard 0.82 with ok."
+          "note": "Vessel operational verification (fine). e-enriched (0.258), OPERATION 17.3%. Second stage of post-heat-action verification: checks whether operation/output is running correctly. Top MIDDLE: edy (batching). Enriched in od (collect), or (portion). Follows ok in preferred sequence qo->ok->ot (C1316). Jaccard 0.82 with ok."
         },
         "da": {
           "value": "setup",
@@ -1819,10 +1820,10 @@
           "note": "Setup/mix/replenish. Bimodal position (both setup and teardown). H-enriched 1.53x, T-enriched 2.02x. Selects continuation MIDDLEs (iin 10.4x, r 6.9x, m 11.1x). Jaccard 0.67 with sa."
         },
         "ol": {
-          "value": "store",
-          "constraint": "C558, C931",
+          "value": "continue",
+          "constraint": "C558, C931, C1174",
           "tier": 3,
-          "note": "Store/continue. Final position (init/final 0.40x). B-enriched 1.47x. Selects kernel MIDDLEs (k dominant in all sections, sh 10.3x). Complements lk (section anti-correlated)."
+          "note": "Continue/maintain. Morphological component, role-stratified (C1174). Final position (init/final 0.40x). B-enriched 1.47x. Selects kernel MIDDLEs (k dominant in all sections, sh 10.3x). Complements lk (section anti-correlated)."
         },
         "ct": {
           "value": "control",

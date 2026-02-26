@@ -411,12 +411,12 @@ def _format_ir_token(t: IRToken, color_enabled: bool) -> str:
 
 # PREFIX operational glosses from decoder_maps.json prefix_actions
 _PREFIX_GLOSS = {
-    'qo': 'energy', 'ch': 'test', 'sh': 'monitor', 'ok': 'vessel', 'ot': 'adjust',
-    'ol': 'close', 'ke': 'heat-burst', 'ek': 'check-heat', 'da': 'infrastructure',
-    'sa': 'begin', 'so': 'initiate', 'ct': 'control', 'kch': 'precision-heat',
+    'qo': 'energy', 'ch': 'test', 'sh': 'monitor', 'ok': 'vessel', 'ot': 'verify',
+    'ol': 'continue', 'ke': 'heat-burst', 'ek': 'check-heat', 'da': 'setup',
+    'sa': 'dry', 'so': 'scaffold', 'ct': 'control', 'kch': 'precision-heat',
     'pch': 'process', 'tch': 'process', 'dch': 'process', 'lch': 'process',
     'fch': 'process', 'rch': 'process', 'sch': 'process', 'ksh': 'process',
-    'te': 'process', 'lk': 'check', 'lsh': 'link', 'yk': 'init',
+    'te': 'process', 'lk': 'watch', 'lsh': 'link', 'yk': 'init',
     'ko': 'heat', 'ka': 'anchor', 'do': 'mark', 'po': 'setup',
     'or': 'portion', 'ar': 'close', 'al': 'close', 'ta': 'transfer',
     'to': 'transfer', 'de': 'divide', 'pe': 'start', 'se': 'scaffold',
@@ -432,17 +432,17 @@ _SUFFIX_GLOSS = {
     'o': 'hold', 'oiin': 'hold-check',
 }
 
-# Character-level MIDDLE atom glosses (C1195 confidence tiers)
+# Character-level MIDDLE atom glosses — synced to voynich.py ATOM_GLOSSES (C1195)
 _CHAR_GLOSS = {
     # LOCKED (strong compound evidence, internally consistent)
     'k': 'heat', 'e': 'cool', 'h': 'watch', 'y': 'end',
-    'i': 'iterate', 'n': 'halt', 'a': 'accept', 'm': 'final',
+    'i': 'iterate', 'n': 'halt', 'a': 'yield', 'm': 'final',
     # SOLID (good evidence, label might be refined)
-    'd': 'seal', 't': 'drive',
+    'd': 'mark', 't': 'transfer',
     # PLAUSIBLE (thin evidence, nothing contradicts)
-    'c': 'adjust', 'p': 'pause', 'f': 'flag', 's': 'separate', 'g': 'complete',
+    'c': 'adjust', 'p': 'pause', 'f': 'flag', 's': 'sequence', 'g': 'complete',
     # WEAK (correct direction but very generic)
-    'o': 'vessel', 'l': 'collect', 'r': 'flow',
+    'o': 'work', 'l': 'frame', 'r': 'input',
 }
 
 
