@@ -5,7 +5,7 @@
     "token_count": 8150,
     "schema_notes": "v3: locations[], role, notes. v4: azc{positions[], by_folio{}}. v5: gloss field (Tier 3-4). v6: fl_state, fl_meaning, is_fl_role (C770-C777). v6: Added fl_state, fl_meaning, is_fl_role fields (C770-C777).",
     "migrated": "2026-02-02",
-    "glossed": 923,
+    "glossed": 0,
     "vocabulary_notes": {
       "v1_shift": "Systematic vocabulary shift to distillation register (2026-02-06)",
       "ch_prefix": "check -- active verification (C645: 75.2% post-hazard, C412: precision mode)",

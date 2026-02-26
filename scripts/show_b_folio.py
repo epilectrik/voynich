@@ -411,14 +411,14 @@ def _format_ir_token(t: IRToken, color_enabled: bool) -> str:
 
 # PREFIX operational glosses from decoder_maps.json prefix_actions
 _PREFIX_GLOSS = {
-    'qo': 'heat-src', 'ch': 'test', 'sh': 'watch', 'ok': 'vessel-chk', 'ot': 'fine-chk',
+    'qo': 'heat-src', 'ch': 'test', 'sh': 'monitor', 'ok': 'vessel-temp', 'ot': 'verify-ops',
     'ol': 'continue', 'ke': 'heat-burst', 'ek': 'check-heat', 'da': 'setup',
-    'sa': 'dry', 'so': 'scaffold', 'ct': 'control', 'kch': 'precision-heat',
+    'sa': 'scaffold', 'so': 'scaffold', 'ct': 'control', 'kch': 'precision-heat',
     'pch': 'process', 'tch': 'process', 'dch': 'process', 'lch': 'process',
     'fch': 'process', 'rch': 'process', 'sch': 'process', 'ksh': 'process',
-    'te': 'process', 'lk': 'watch', 'lsh': 'link', 'yk': 'init',
-    'ko': 'heat', 'ka': 'anchor', 'do': 'mark', 'po': 'setup',
-    'or': 'portion', 'ar': 'close', 'al': 'close', 'ta': 'transfer',
+    'te': 'process', 'lk': 'process', 'lsh': 'link', 'yk': 'init',
+    'ko': 'heat-work', 'ka': 'heat-yield', 'do': 'mark', 'po': 'pre-work',
+    'or': 'portion', 'ar': 'close', 'al': 'close', 'ta': 'transfer-yield',
     'to': 'transfer', 'de': 'divide', 'pe': 'start', 'se': 'scaffold',
 }
 

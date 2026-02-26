@@ -57,10 +57,12 @@ PREFIX functions as a **domain selector** — it determines WHAT you're acting o
 | PREFIX | Domain Target | Evidence |
 |---|---|---|
 | ch/sh | the PROCESS (testing, monitoring) | C929: ch=active testing, sh=passive monitoring |
-| qo | the HEAT SOURCE (energy management) | C911: k-family only |
-| ok | the VESSEL (apparatus management) | C936: 378 same-MIDDLE pairs, late position |
-| da/sa | the SETUP (infrastructure) | C911: infrastructure only |
-| ot/ol | the ADJUSTMENT (correction, continuation) | C408: ot=ok sister pair |
+| qo | the HEAT SOURCE (fire/furnace management) | C911: k-family only. Phase 461 T1: k=0.510 |
+| ok | the VESSEL TEMPERATURE (coarse thermal verification) | C936, Phase 461 T1: e=0.282, T8 |
+| ot | the OPERATIONAL STATE (fine process verification) | C408: ok/ot sister pair. Phase 461 T8, post-phase |
+| ol | CONTINUATION (maintaining during active process) | C609, Phase 461 T8 |
+| da | the SETUP (infrastructure, apparatus prep) | C911: infrastructure only. Phase 461 T4 |
+| sa | the SCAFFOLD (supporting infrastructure) | Phase 461 T1 neg: thermally neutral |
 
 **Same-MIDDLE differentiation examples:**
 
@@ -93,23 +95,25 @@ All glosses below have been validated by the expert-advisor agent against the co
 |---|---|---|---|
 | ch | test | Active state testing (discrete checkpoint) | C929: pos 0.515, checkpoint suffix 1.87x, followed by close/input/iterate. Brunschwig: finger test, taste test, thumbnail viscosity |
 | sh | monitor | Passive process monitoring (continuous observation) | C929: pos 0.396, front-loaded 33% in first 20% of line, followed by heat 18.3%. Brunschwig: drip watching, fire monitoring, color watching |
-| qo | energy | **Heat source control.** k-enriched (0.510), THERMAL 59%. Part of two-channel thermal architecture: qo manages heat input while ok/ot verify vessel response. sh->qo = 1.98x (monitoring triggers heat action). | C644, C911: k-family only. C1313: k-frac=0.510. C1314: overshoot-correct cycling |
+| qo | heat source | **Heat source control.** k-enriched (0.510), THERMAL 59%. Part of two-channel thermal architecture: qo manages heat input while ok/ot verify vessel response. sh->qo = 1.98x (monitoring triggers heat action). | C644, C911: k-family only. C1313: k-frac=0.510. C1314: overshoot-correct cycling |
 | ol | continue / LINK | Morphological component, role-stratified (not unified function) | C609: density, C1174: morphological artifact |
-| da | setup | Infrastructure, anchoring | C911: infrastructure selector |
-| ok | vessel (thermal) | **Vessel thermal verification (coarse).** ok selects the vessel/apparatus as action target; MIDDLE provides the action. e-enriched (0.282), THERMAL 24.7%. First stage of post-heat-action verification: checks whether vessel temperature has stabilized. ok->ot = 1.18x (coarse precedes fine). Top MIDDLE: aiin (settling). | C936 (revised), C911: e-family + infra. C1313: e-frac=0.282. C1316: ok->ot asymmetry 1.14 |
-| ot | vessel (operations) | **Vessel operational verification (fine).** e-enriched (0.258), OPERATION 17.3%. Second stage of post-heat-action verification: checks whether the operation/output is running correctly. Top MIDDLE: edy (batching). Enriched in od (collect), or (portion). Follows ok in preferred sequence qo->ok->ot. | C911: h-family selector. C1316: ot +4.9% OPERATION vs ok. C408: ok/ot sister pair |
+| da | setup | Infrastructure, apparatus prep | C911: infrastructure selector. Phase 461 T4 |
+| sa | scaffold | Supporting infrastructure (thermally neutral) | Phase 461 T1 neg: neutral control. Not "dry" (stale). |
+| ok | vessel temperature | **Vessel thermal verification (coarse).** ok selects the vessel/apparatus as action target; MIDDLE provides the action. e-enriched (0.282), THERMAL 24.7%. First stage of post-heat-action verification: checks whether vessel temperature has stabilized. ok->ot = 1.18x (coarse precedes fine). Top MIDDLE: aiin (settling). | C936 (revised), C911: e-family + infra. C1313: e-frac=0.282. C1316: ok->ot asymmetry 1.14 |
+| ot | operational verification | **Vessel operational verification (fine).** e-enriched (0.258), OPERATION 17.3%. Second stage of post-heat-action verification: checks whether the operation/output is running correctly. Top MIDDLE: edy (batching). Enriched in od (collect), or (portion). Follows ok in preferred sequence qo->ok->ot. | C911: h-family selector. C1316: ot +4.9% OPERATION vs ok. C408: ok/ot sister pair |
 | ct | control | Control, hazard management | |
 
 ### Extended Prefixes
 
 | Prefix | Gloss | Notes |
 |---|---|---|
-| pch, tch, kch, fch | chop, pound, precision-heat, prepare | F-BRU-012 prep operations. pch/tch/fch peak R2 (1.4-2.0x). C929: ch=active interaction; chop/pound/prepare ARE active material work. Test 18 |
-| lk, lch, lsh | L-compound: modified energy | C298: NOT LINK (C609), L-modifier. lk peaks R2 (1.8x). Test 18 |
-| ke, te, se, de, pe | sustain, gather, scaffold, divide, start | Compound prefixes |
-| so, po, do, ko | scaffold-work, pre-work, mark-work, heat-work | Compound [C]+o prefixes. so peaks R1 (1.9x, pos 0.190), po peaks R2 (pos 0.107 = line-initial). Test 18 |
-| ta, ka | transfer-input, heat-anchor | Compound [C]+a prefixes. ta peaks R2 (1.8x), ka peaks R2 (1.3x, pos 0.570 = late). Test 18 |
-| dch, rch, sch | divide-test, input-test, scaffold-test | Compound [C]+ch prefixes. C929: ch=active testing. dch peaks R3 (pos 0.168 = early), rch peaks R2 (1.7x). Test 18 |
+| pch, tch, fch | process, process, process | Prep operations (C1221: collapsed to generic "process"). pch/tch/fch peak R2 (1.4-2.0x). Low confidence on specific verbs. Test 18 |
+| kch | precision-heat | Retained specific label: k+ch compound. Test 18 |
+| lk, lch, lsh | process, process, link | L-compound prefixes. C298: NOT LINK (C609), L-modifier. lk peaks R2 (1.8x). Test 18 |
+| ke, te, se, de, pe | heat-burst, process, scaffold, divide, start | Compound prefixes. ke updated per C1226. te = "process" (C1221 collapse). |
+| so, po, do, ko | scaffold, pre-work, mark, heat-work | Compound [C]+o prefixes. so peaks R1 (1.9x, pos 0.190), po peaks R2 (pos 0.107 = line-initial). Test 18 |
+| ta, ka | transfer-yield, heat-yield | Compound [C]+a prefixes. ta peaks R2 (1.8x), ka peaks R2 (1.3x, pos 0.570 = late). Test 18 |
+| dch, rch, sch | process, process, process | Compound [C]+ch prefixes. C1221: collapsed to generic "process". Test 18 |
 
 ### Middles (Operation Types) — Top Frequency
 

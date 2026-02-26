@@ -515,7 +515,7 @@
     "od": {
       "kernel": null,
       "regime": "PRECISION",
-      "gloss": "precise",
+      "gloss": "collect",
       "token_count": 173,
       "folio_count": 52,
       "example_tokens": [
@@ -2465,7 +2465,7 @@
     "aii": {
       "kernel": null,
       "regime": "SETTLING",
-      "gloss": "open",
+      "gloss": "unseal",
       "token_count": 32,
       "folio_count": 21,
       "example_tokens": [
@@ -4376,7 +4376,7 @@
     "ot": {
       "kernel": null,
       "regime": null,
-      "gloss": "route",
+      "gloss": "verify",
       "token_count": 45,
       "folio_count": 25,
       "example_tokens": [

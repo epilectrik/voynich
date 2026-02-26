@@ -1796,19 +1796,19 @@
           "note": "Ongoing watch (C929: sh=monitor, ch=test discrimination)"
         },
         "qo": {
-          "value": "energy",
+          "value": "heat-src",
           "constraint": "C644, C556, C931, C1313, C1314",
           "tier": 3,
           "note": "Heat source control. k-enriched (0.510), THERMAL 59%. Part of two-channel thermal architecture (C1313): qo manages heat input, ok/ot verify vessel response. Overshoot-correct cycling with ok (C1314). sh->qo = 1.98x (monitoring triggers heat action). Rank 1 prefix, selects k-family MIDDLEs exclusively (C911)."
         },
         "ok": {
-          "value": "vessel",
+          "value": "vessel-temp",
           "constraint": "C556, C931, C936, C1313, C1316",
           "tier": 3,
           "note": "Vessel thermal verification (coarse). e-enriched (0.282), THERMAL 24.7%. First stage of post-heat-action verification: checks vessel temperature. ok->ot = 1.18x (coarse precedes fine, C1316). Top MIDDLE: aiin (settling). Late position (mean 0.538). e-family + infra MIDDLEs (C911). Sister pair with ot."
         },
         "ot": {
-          "value": "verify",
+          "value": "verify-ops",
           "constraint": "C556, C931, C911, C1316",
           "tier": 3,
           "note": "Vessel operational verification (fine). e-enriched (0.258), OPERATION 17.3%. Second stage of post-heat-action verification: checks whether operation/output is running correctly. Top MIDDLE: edy (batching). Enriched in od (collect), or (portion). Follows ok in preferred sequence qo->ok->ot (C1316). Jaccard 0.82 with ok."
@@ -1832,10 +1832,10 @@
           "note": "Direct control (CTRL lane)"
         },
         "sa": {
-          "value": "dry",
+          "value": "scaffold",
           "constraint": "C556, C931",
           "tier": 3,
-          "note": "Dry/macerate (pre-treatment). 43.8% line-initial (3.89x init/final). Selects continuation MIDDLEs (iin 10.6x, i 11.2x, in 13.6x). Jaccard 0.67 with da, 0.00 with ch/sh/ok/ot."
+          "note": "Supporting infrastructure (Phase 461 T1 neg: thermally neutral). 43.8% line-initial (3.89x init/final). Selects continuation MIDDLEs (iin 10.6x, i 11.2x, in 13.6x). Jaccard 0.67 with da, 0.00 with ch/sh/ok/ot."
         },
         "so": {
           "value": "scaffold",
@@ -1866,7 +1866,7 @@
           "note": "Check then heat (C1226: stability-check-first ordering). Cautious variant. REGIME_4 64.0% ek, HERBAL 79.1% ek."
         },
         "ka": {
-          "value": "anchor",
+          "value": "heat-yield",
           "constraint": "C556",
           "tier": 3
         },
@@ -1891,7 +1891,7 @@
           "tier": 3
         },
         "po": {
-          "value": "setup",
+          "value": "pre-work",
           "constraint": "C556",
           "tier": 3
         },

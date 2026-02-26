@@ -28,18 +28,18 @@ Token-per-row table with three columns: TOKEN, CALCULATED gloss, MANUAL gloss.
 
 ```
 TOKEN          | CALCULATED                          | MANUAL GLOSS
-kchedy         | precision-heat batch[e]             | -
+kchedy         | precision-heat cool-mark-end[e]     | -
 qokar          | heat[k] , [close]                   | -
-shedy          | monitor batch[e]                    | -
+shedy          | monitor cool-mark-end[e]            | -
 ```
 
 - **TOKEN**: Raw Voynich word
 - **CALCULATED**: Auto-composed gloss from PREFIX + MIDDLE + SUFFIX mappings
-- **MANUAL**: Hand-assigned gloss from `data/token_dictionary.json` (mostly empty)
+- **MANUAL**: Hand-assigned gloss from `data/token_dictionary.json` (currently all empty — glosses lost in encoding crash, replaced by auto-composition)
 
 **Gloss composition** (CALCULATED column):
-- PREFIX is looked up in `_PREFIX_GLOSS` (e.g., `qo` = "heat-src", `sh` = "watch")
-- MIDDLE is expanded via `MiddleDictionary` learned glosses, or character-level atom glosses (C1195)
+- PREFIX is looked up in `_PREFIX_GLOSS` (e.g., `qo` = "heat-src", `sh` = "monitor")
+- MIDDLE is expanded character by character using atom glosses (C1195): `k`=heat, `e`=cool, `h`=watch, etc.
 - SUFFIX is shown as a bracketed hint (e.g., `[close]`, `[thorough]`, `[check]`)
 - Kernel markers `[k]`/`[e]`/`[h]` indicate which kernel operator dominates the MIDDLE
 - `(FL)` marks tokens in the FL census (C582)
@@ -61,9 +61,9 @@ shedy          | monitor batch[e]                    | -
 Same table layout as default, but the CALCULATED column shows raw morpheme notation instead of English glosses. Useful for cross-folio comparison without gloss interpretation.
 
 ```
-kchedy         | precision-heat edy[e]               | -
-qokar          | k[k] (ar)                           | -
-shedy          | monitor edy[e]                      | -
+kchedy         | precision-heat edy[e]              | -
+qokar          | k[k] (ar)                          | -
+shedy          | monitor edy[e]                     | -
 ```
 
 MIDDLE is shown as raw characters, not expanded to English. PREFIX still uses its label. Suffix shown raw.
@@ -74,7 +74,7 @@ Groups tokens by line, showing three layers per line plus a prefix chain.
 
 ```
 L1: ___ ___ ___ ___ ___ ___ ___ ___
-    precision-heat batch[e] anchor finish vessel deep[e] ...
+    precision-heat cool-mark-end[e] heat-yield input-end vessel-temp cool-cool-end[e] ...
     [kchedy kary okeey qokar shy kchedy qotar shedy]
     pfx: kch > ka > ok > qo > sh > kch > qo > sh
 ```
@@ -93,7 +93,7 @@ Use `--no-calc` to hide the calculated gloss line.
 Control-flow rendering showing operation semantics, FL stages, and macro states.
 
 ```
-L1 [HEADER]: precision-heat batch -> anchor finish -> vessel deep <e> | [QO] heat <k> [CLOSE] | monitor end -> ...
+L1 [HEADER]: precision-heat cool-mark-end -> heat-yield input-end -> vessel-temp cool-cool-end <e> | [QO] heat <k> [CLOSE] | monitor end -> ...
     macro: AXM --- FQ AXM AXM AXM AXM AXM
     [kchedy kary okeey qokar shy kchedy qotar shedy]
 ```
@@ -120,7 +120,7 @@ L1 [B] [HEADER] kern(e:4 k:1) cat:OP:37%/TR:25%/TH:25%  EN:CHSH:2 EN:QO:2 AX:2
   }
   CHECK { 3:okeey[FQ:PREFIXED|c13] }
   # T3 {unordered}
-  #   1: kchedy = [AX] (precision-heat) batch [OP]
+  #   1: kchedy = [AX] (precision-heat) cool.mark.end [OP]
   > kchedy kary okeey qokar shy kchedy qotar shedy
 ```
 
@@ -155,7 +155,6 @@ L1 [B] [HEADER] kern(e:4 k:1) cat:OP:37%/TR:25%/TH:25%  EN:CHSH:2 EN:QO:2 AX:2
 
 **T3 annotations** (Tier 3, commented):
 - Character-level kernel expansion of MIDDLE using C1195 atom glosses
-- Uses MiddleDictionary learned glosses when available, falls back to character expansion
 - Category-hazard indicator: `[TH.]` = thermal/low-hazard, `[FL!]` = flow/high-hazard, `[OP]` = operation/neutral
 
 **Paragraph header** (above each paragraph's lines):
@@ -242,13 +241,13 @@ The decoder composes glosses from multiple data sources:
 | Source | File | What it provides |
 |--------|------|-----------------|
 | PREFIX glosses | `_PREFIX_GLOSS` in show_b_folio.py | Prefix → operational label (e.g., `qo`→"heat-src") |
-| MIDDLE dictionary | `data/middle_dictionary.json` | Learned MIDDLE → gloss (e.g., `od`→"work") |
 | Atom glosses | `_CHAR_GLOSS` / C1195 | Single character → kernel meaning (e.g., `k`→"heat") |
-| Suffix glosses | `_SUFFIX_GLOSS` | Whole suffix → operational label (e.g., `edy`→"batch") |
-| Token dictionary | `data/token_dictionary.json` | Whole token → manual gloss (sparse) |
+| Suffix glosses | `_SUFFIX_GLOSS` | Whole suffix → control label (e.g., `ar`→"close") |
 | Decoder maps | `data/decoder_maps.json` | Canonical prefix/suffix/category mappings |
+| MIDDLE dictionary | `data/middle_dictionary.json` | 91 learned MIDDLE glosses (IR mode T3 only) |
+| Token dictionary | `data/token_dictionary.json` | Whole-token manual glosses (currently empty — structural metadata only) |
 
-**Gloss priority** (CALCULATED column): Token dictionary → MIDDLE dictionary → character-level expansion.
+**Gloss pipeline** (CALCULATED column): Compound MIDDLE decomposition → character-level atom expansion (C1195). PREFIX and SUFFIX labels are composed around the MIDDLE gloss. MiddleDictionary and F-BRU tier labels are bypassed in favor of transparent atom expansion.
 
 **DP tokens** use character-level expansion of MIDDLE with dot-separated atom glosses: `[ident: frame.adjust.watch]`.
 

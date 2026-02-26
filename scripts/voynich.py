@@ -1661,23 +1661,28 @@ class BTokenAnalysis:
         # 2. AUTO-COMPOSED GLOSS (when MIDDLE meaning is known)
         mid_meaning = None
         if middle:
-            # Dictionary gloss first (manually curated)
-            if hasattr(self, '_middle_dict') and self._middle_dict:
-                mid_meaning = self._middle_dict.get_gloss(middle)
-            # Fall back to middle_tiers gloss (F-BRU tier-based)
-            # Skip when prefix_role is PREP_TIER — middle_meaning was overridden
-            # with the prep action, not the actual MIDDLE semantics
-            # Skip "contains X" substring matches — compound decomposition is better
-            if not mid_meaning and self.middle_meaning and self.prefix_role != 'PREP_TIER':
-                tier_gloss = str(self.middle_meaning)
-                if not tier_gloss.startswith('contains '):
-                    # One-verb rule: use first word only from tier glosses
-                    mid_meaning = tier_gloss.split()[0] if ' ' in tier_gloss else tier_gloss
+            # MiddleDictionary lookup DISABLED — stale glosses inconsistent with
+            # atom expansion (C1195). Dictionary kept intact for IR mode T3 and
+            # future audit. Atom expansion via _compose_compound_gloss() is now
+            # the default path for all interpretive() output.
+            #
+            # middle_tiers (F-BRU tier-based) ALSO BYPASSED here — tier labels
+            # like "major scaffold", "flow terminal" are structural classifications,
+            # not operational glosses. They block atom expansion from firing.
+            # Tier info remains available via middle_tier attribute for structural
+            # modes (--structural-mode, --profile).
 
             # Compound MIDDLE decomposition: atom_gloss (+extension_gloss)
             # Compound MIDDLEs = PP atom + parameter extensions (C872, C522)
             if not mid_meaning:
                 mid_meaning = self._compose_compound_gloss(middle)
+
+            # Character-level atom expansion (C1195) — default for core MIDDLEs
+            # and any MIDDLE not handled by compound decomposition
+            if not mid_meaning:
+                mid_meaning = '-'.join(
+                    CategoryClassifier.ATOM_GLOSSES.get(c, c) for c in middle
+                )
 
         if mid_meaning:
             # Compose: [PREFIX_ACTION] MIDDLE_MEANING[signature] [SUFFIX_GLOSS]
@@ -1873,14 +1878,16 @@ class BTokenAnalysis:
                 return result
 
         mid_meaning = None
-        if middle and hasattr(self, '_middle_dict') and self._middle_dict:
-            mid_meaning = self._middle_dict.get_gloss(middle)
-        if not mid_meaning and self.middle_meaning and self.prefix_role != 'PREP_TIER':
-            if not str(self.middle_meaning).startswith('contains '):
-                mid_meaning = self.middle_meaning
+        # MiddleDictionary and middle_tiers BYPASSED — see interpretive()
+        # for full rationale. Atom expansion is the default path.
         # Compound MIDDLE decomposition (same as interpretive())
         if not mid_meaning and middle:
             mid_meaning = self._compose_compound_gloss(middle)
+        # Character-level atom expansion (C1195) fallback
+        if not mid_meaning and middle:
+            mid_meaning = '-'.join(
+                CategoryClassifier.ATOM_GLOSSES.get(c, c) for c in middle
+            )
 
         # For qo: suppress prefix verb (same as interpretive())
         prep_action = None
