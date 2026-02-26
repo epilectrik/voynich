@@ -4,6 +4,46 @@
 
 ---
 
+## Version 4.64.50 (2026-02-25) - Phase 461: Distillation Terminology Mapping + Gloss Sync
+
+### Summary
+
+Phase 461: 10-test battery testing whether distillation physics maps to the manuscript's structural patterns. **Overall: 9/10 PASS.** Also includes 8-category ClassifierClassifier integration into voynich.py and a full gloss synchronization pass.
+
+**Phase 461 headline findings:**
+- Two-channel thermal architecture: qo k-enriched (0.510), ok e-enriched (0.282), completely non-overlapping (C1313)
+- Overshoot-correct cycling: qo-k to ok-e transitions 43% above chance within lines (C1314)
+- REGIME discrimination: 6/7 metrics significant for B, 0/7 for A — B-specific (C1315)
+- O-PREFIX categorical distinction: ok/ot/ol/or all separable; ok->ot sequential ordering 1.18x (C1316)
+- 13 modern MIDPROCESS actions all map to distinguishable PREFIX+category patterns (cosine 0.73 vs 0.003 random)
+- Control flow loop: sh(1.98x)->qo->ok(1.18x)->ot (coarse thermal check then fine operational check)
+- Post-phase: ok = vessel thermal verification (coarse), ot = vessel operational verification (fine)
+- T10 FAIL: alternation ordering reversed (REGIME_1 highest, not REGIME_3)
+- 5 Fits registered (F-B-008 through F-B-012), 99.5% B token coverage
+
+**Gloss synchronization:**
+- decoder_maps.json v2.0: ot "scaffold" -> "verify" (C1316), ol "store" -> "continue" (GLOSSING.md), qo/ok notes updated for two-channel model
+- show_b_folio.py: 7 atom glosses synced to voynich.py ATOM_GLOSSES, 5 PREFIX glosses synced to decoder_maps.json
+- All 37 shared PREFIX glosses and 18 atom glosses now match across decoder_maps.json, voynich.py, and show_b_folio.py
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/DISTILLATION_TERMINOLOGY_MAPPING/` -- 1 script + 1 results JSON |
+| **ADDED** | C1313-C1316 constraint files (4 new constraints, 1156->1160) |
+| **ADDED** | F-B-008 through F-B-012 (5 new Fits, fits_currier_b.md v1.4) |
+| **UPDATED** | `voynich.py` -- CategoryClassifier integration, 8-category system |
+| **UPDATED** | `show_b_folio.py` -- category display, gloss sync (7 atoms + 6 prefixes) |
+| **UPDATED** | `decoder_maps.json` v1.9->v2.0 -- category maps, ot/ol/qo/ok prefix updates |
+| **UPDATED** | `INDEX.md` -- 1156->1160 total, Phase 461 section added |
+| **UPDATED** | `GLOSSING.md` -- ot/qo/ok prefix glosses, control flow loop section |
+| **UPDATED** | `INTERPRETATION_SUMMARY.md` v4.71 -- Section XXI (distillation mapping) |
+| **UPDATED** | `fits_currier_b.md` v1.3->v1.4 -- 5 new distillation terminology fits |
+| **REGENERATED** | CONSTRAINT_TABLE.txt, FIT_TABLE.txt, expert-advisor.md |
+
+---
+
 ## Version 4.63.49 (2026-02-25) - Phase 460: Cross-Mode Category Coupling
 
 ### Summary
