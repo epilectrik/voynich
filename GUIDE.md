@@ -552,3 +552,4 @@ For technical details on the progressive context architecture, see the Methodolo
 | View a decoded folio | `python scripts/show_b_folio.py f76r -p` (paragraph view) |
 | View control flow | `python scripts/show_b_folio.py f76r --flow` (macro states + FL stages) |
 | View full metadata | `python scripts/show_b_folio.py f76r --detail 4` (all classification layers) |
+| Decoder documentation | [`scripts/DECODER.md`](scripts/DECODER.md) (all 6 modes, flags, gloss pipeline) |

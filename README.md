@@ -136,7 +136,7 @@ python scripts/show_b_folio.py f76r --flow     # Control-flow view (macro states
 python scripts/show_b_folio.py f76r --detail 4 # Full metadata dump (all classification layers)
 ```
 
-Renders any Currier B folio with morphological parse, structural roles, interpretive glosses, 6-state macro classification, and hub/affordance metadata.
+Renders any Currier B folio with morphological parse, structural roles, interpretive glosses, 6-state macro classification, and hub/affordance metadata. See [`scripts/DECODER.md`](scripts/DECODER.md) for full documentation of all 6 rendering modes and flags.
 
 ## Directory Structure
 
