@@ -204,6 +204,22 @@ sh (watch) -> qo (stoke fire) -> ok (check vessel temp) -> ot (check output) -> 
 
 The operator would not fine-tune flow rate if vessel temperature was not stable yet. Neither verification step leads directly back to heat action — passive monitoring (sh) is the gatekeeper for the next heat cycle.
 
+**What sh watches before triggering heat:** 36.7% of sh tokens precede qo. The sh-before-qo position is enriched in OPERATION (+4.4%, especially edy=batch at 1.32x) and depleted in FLOW (ar 0.29x) and STAGING (ol 0.58x). The monitor watches **the ongoing batch operation** and triggers heat when it needs more energy. It does NOT trigger heat after flow endpoints or staging transitions.
+
+| sh->qo enriched | Ratio | Category | Reading |
+|---|---|---|---|
+| edy (batch) | 1.32x | OPERATION | "batch needs more heat" |
+| eck (containment check) | 1.36x | CONTAINMENT | "seal integrity check triggers heat" |
+| ect (monitoring) | 1.44x | MONITORING | "monitoring result triggers heat" |
+
+| sh->qo depleted | Ratio | Category | Reading |
+|---|---|---|---|
+| ar (close/release) | 0.29x | FLOW | flow endpoints do NOT trigger heat |
+| ol (continue) | 0.58x | STAGING | staging transitions do NOT trigger heat |
+| y (end) | 0.63x | TRANSITION | completion does NOT trigger heat |
+
+**Loop scope: cross-line, not intra-line.** The full sh->qo->ok->ot sequence completes within a single line only 3.3% of the time (48 lines of 2,417). Contiguous 4-token chains (sh-qo-ok-ot adjacent): only 4 lines in the corpus. With mean line length of 8 tokens and 5.2 unique prefixes per line, each line executes one or two steps of the loop, not a complete cycle. The loop is a statistical tendency that emerges across lines. Forward/reverse directionality is 6.0x (strongly directional despite being cross-line).
+
 **Evidence:** C1313 (atom separation), C1314 (overshoot cycling), C1316 (ok->ot ordering). Phase 461 T1, T2, T8, post-phase analysis.
 
 ---

@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-02-25 20:20
+**Generated:** 2026-02-25 20:42
 **Version:** FROZEN STATE (1160 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -4229,6 +4229,8 @@ Only Tier 0-2 structural findings are binding.
 |--------|-----------|-----------|------|
 | qo | **0.510** | 0.102 | Heat source (k-dominant) |
 | ok | 0.001 | **0.282** | Vessel temperature (e-dominant) |
+
+
 
 
 

@@ -6452,6 +6452,10 @@ sh (watch) -> qo (stoke fire) -> ok (check vessel temp) -> ot (check output) -> 
 - **ok -> ot (1.18x):** Vessel check leads to operations check (coarse then fine)
 - **ok/ot -> qo (0.84/0.88x):** Neither verification leads back to heat directly
 
+**What triggers heat:** 36.7% of sh tokens precede qo. sh-before-qo is enriched in edy (batch, 1.32x OPERATION) and depleted in ar (close, 0.29x FLOW) and ol (continue, 0.58x STAGING). The monitor watches the ongoing batch and triggers heat when it needs energy — not after flow endpoints or staging transitions.
+
+**Loop scope:** Cross-line, not intra-line. Full sh->qo->ok->ot within a single line: only 3.3% of sh->qo starts (48 of 2,417 lines). Each line executes one or two steps, not a complete cycle. Forward/reverse directionality: 6.0x.
+
 ### ok vs ot: Two-Stage Verification (C1316)
 
 ok and ot are e-sisters (both e-dominant: 0.282 and 0.258) but serve sequential roles:
