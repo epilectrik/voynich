@@ -2,6 +2,8 @@
 
 Command-line tool for rendering Currier B folios with structural annotations derived from the constraint system.
 
+> **Work in progress.** The decoder is under active development. Gloss labels, rendering modes, and annotation layers evolve as new constraints are validated. Outputs are structural projections, not translations — treat labels as display tokens subject to revision. Check back for updates.
+
 ## Quick Start
 
 ```bash
