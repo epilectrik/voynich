@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1217 validated constraints | **Version:** 4.88 | **Date:** 2026-02-27
+**Total:** 1218 validated constraints | **Version:** 4.89 | **Date:** 2026-02-27
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4171,6 +4171,22 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - ok/ot contribute +3.3pp FLOW+TRANSITION at Q5 (line-final resolution specialists)
 - **C1372 amendment**: PREFIX confound control was too aggressive; within-PREFIX gradient is genuine
 - Verdict: H1+H2 HYBRID — gradient from major PREFIXes covering >85% of tokens
+
+### Within-PREFIX MIDDLE Positional Selection (C1374) -- Phase: WITHIN_PREFIX_MIDDLE_POSITION (Phase 487)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1374** | **Within-PREFIX MIDDLE Positional Selection** (MIDDLE selection changes by position within every PREFIX 7/7 p<0.001; within ch top 2 MIDDLEs eey+eol explain 100% THERMAL decline; position specialists are PREFIX-generalists breadth 15.3 vs 8.3 p=0.0004; BARE equal positional selection JSD rank 14/27; ch/sh parallel moderate rho=0.468; QO/CHSH lane orthogonal to position; gradient is MIDDLE-level property not PREFIX-level) | 2 | B, PREFIX, MIDDLE, line, positional, category, sister pair | -> [C1374_within_prefix_middle_position.md](C1374_within_prefix_middle_position.md) |
+
+**Phase 487 findings (Within-PREFIX MIDDLE Positional Selection):**
+- MIDDLE distributions change by line position within EVERY major PREFIX (7/7 significant)
+- Within ch: just 2 MIDDLEs (eey + eol, both THERMAL) explain 100% of the THERMAL decline
+- Position specialists are PREFIX-generalists (appear under 15.3 PREFIXes vs 8.3 for flat MIDDLEs)
+- BARE shows equal positional MIDDLE selection — position is independent of PREFIX routing
+- sh has 9 EARLY specialists, ot/ok/BARE have late specialists — matches thermal arc direction
+- ch/sh parallel gradient moderate (rho=0.468, p=0.007) — shared direction but different magnitudes
+- QO lane vs CHSH lane partition does NOT predict positional behavior (p=0.120)
+- Thermal arc is a MIDDLE-level positional grammar property, not PREFIX-level
 
 ---
 

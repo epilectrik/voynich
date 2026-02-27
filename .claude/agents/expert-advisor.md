@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1217 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1218 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
 the highest ID present is C1312.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1217 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1218 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1217 validated constraints are present as canonical one-line claims with tier
+1218 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-02-27 16:05
-**Version:** FROZEN STATE (1217 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-02-27 16:20
+**Version:** FROZEN STATE (1218 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1646,6 +1646,7 @@ C1370	**Category Pipeline Trace A→AZC→B**	2	A, AZC, B, cross-system, categor
 C1371	**Position-Conditioned Category Grammar**	2	B, line, category, positional, transition
 C1372	**Thermodynamic Arc Validation**	2	B, line, category, positional, interpretation, PREFIX
 C1373	**PREFIX Category-Position Decomposition**	2	B, PREFIX, line, category, positional, sister pair
+C1374	**Within-PREFIX MIDDLE Positional Selection**	2	B, PREFIX, MIDDLE, line, positional, category, sister pair
 
 ---
 

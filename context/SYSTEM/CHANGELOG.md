@@ -4,6 +4,23 @@
 
 ---
 
+## Version 4.89.75 (2026-02-27) - Phase 487: Within-PREFIX MIDDLE Positional Selection
+
+### Summary
+
+Phase 487: Resolved the mechanism behind the within-PREFIX thermal arc (C1373). MIDDLE selection changes by line position within every major PREFIX (7/7 tests p<0.001). The within-ch THERMAL decline is driven by extreme concentration: just 2 MIDDLEs (eey + eol) explain 100% of the gradient. Position specialists are PREFIX-generalist MIDDLEs (breadth 15.3 vs 8.3, p=0.0004) — the common vocabulary, not restricted forms. BARE shows equal positional selection (rank 14/27), proving position drives MIDDLE selection independently of PREFIX routing. The thermal arc is a MIDDLE-level positional grammar property.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/WITHIN_PREFIX_MIDDLE_POSITION/` -- 1 script + 1 results JSON |
+| **ADDED** | C1374 constraint file (1 new constraint, 1217->1218) |
+| **UPDATED** | `INDEX.md` -- 1217->1218 total, Phase 487 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.88->v4.89, 486->487 phases, 1217->1218 constraints |
+
+---
+
 ## Version 4.88.74 (2026-02-27) - Phase 486: PREFIX Category-Position Decomposition
 
 ### Summary

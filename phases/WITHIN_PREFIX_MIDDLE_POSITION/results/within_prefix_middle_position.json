@@ -1,0 +1,703 @@
+{
+  "metadata": {
+    "phase": 487,
+    "name": "WITHIN_PREFIX_MIDDLE_POSITION",
+    "n_tokens": 22753,
+    "n_lines": 2413,
+    "n_middles": 1231,
+    "elapsed_seconds": 11.750686
+  },
+  "T1_positional_entropy": {
+    "ch": {
+      "jsd_q1_q5": 0.133852,
+      "perm_p": 0.0,
+      "significant": true,
+      "n_middles": 188,
+      "q1_n": 602,
+      "q5_n": 779
+    },
+    "sh": {
+      "jsd_q1_q5": 0.103274,
+      "perm_p": 0.0,
+      "significant": true,
+      "n_middles": 129,
+      "q1_n": 766,
+      "q5_n": 317
+    },
+    "qo": {
+      "jsd_q1_q5": 0.105623,
+      "perm_p": 0.0,
+      "significant": true,
+      "n_middles": 170,
+      "q1_n": 710,
+      "q5_n": 757
+    },
+    "ok": {
+      "jsd_q1_q5": 0.1195,
+      "perm_p": 0.0,
+      "significant": true,
+      "n_middles": 65,
+      "q1_n": 203,
+      "q5_n": 372
+    },
+    "ot": {
+      "jsd_q1_q5": 0.163616,
+      "perm_p": 0.0,
+      "significant": true,
+      "n_middles": 71,
+      "q1_n": 148,
+      "q5_n": 423
+    },
+    "da": {
+      "jsd_q1_q5": 0.160809,
+      "perm_p": 0.0,
+      "significant": true,
+      "n_middles": 64,
+      "q1_n": 271,
+      "q5_n": 336
+    },
+    "BARE": {
+      "jsd_q1_q5": 0.191506,
+      "perm_p": 0.0,
+      "significant": true,
+      "n_middles": 308,
+      "q1_n": 676,
+      "q5_n": 1171
+    },
+    "sig_count": 7,
+    "passed": true
+  },
+  "T2_specialist_census": {
+    "ch": {
+      "n_testable": 40,
+      "n_specialist": 5,
+      "specialist_rate": 0.125,
+      "n_early": 1,
+      "n_late": 0,
+      "top_specialists": [
+        [
+          "edy",
+          "MIXED",
+          "OPERATION",
+          508,
+          21.724409,
+          0.000227
+        ],
+        [
+          "eey",
+          "MIXED",
+          "THERMAL",
+          147,
+          19.360544,
+          0.007343
+        ],
+        [
+          "eeo",
+          "EARLY",
+          "OPERATION",
+          40,
+          18.0,
+          0.012341
+        ],
+        [
+          "eo",
+          "MIXED",
+          "TRANSITION",
+          128,
+          14.734375,
+          0.01057
+        ],
+        [
+          "ck",
+          "MIXED",
+          "OPERATION",
+          122,
+          13.491803,
+          0.036427
+        ]
+      ]
+    },
+    "sh": {
+      "n_testable": 34,
+      "n_specialist": 10,
+      "specialist_rate": 0.294118,
+      "n_early": 9,
+      "n_late": 0,
+      "top_specialists": [
+        [
+          "ey",
+          "EARLY",
+          "TRANSITION",
+          243,
+          59.983539,
+          0.0
+        ],
+        [
+          "eey",
+          "EARLY",
+          "THERMAL",
+          121,
+          35.900826,
+          1e-06
+        ],
+        [
+          "e",
+          "EARLY",
+          "THERMAL",
+          180,
+          35.333333,
+          5e-06
+        ],
+        [
+          "eo",
+          "EARLY",
+          "TRANSITION",
+          82,
+          32.878049,
+          6e-06
+        ],
+        [
+          "or",
+          "EARLY",
+          "FLOW",
+          34,
+          32.176471,
+          4.6e-05
+        ],
+        [
+          "ol",
+          "EARLY",
+          "STAGING",
+          71,
+          28.366197,
+          0.000179
+        ],
+        [
+          "eeo",
+          "EARLY",
+          "OPERATION",
+          13,
+          26.615385,
+          0.000262
+        ],
+        [
+          "ed",
+          "EARLY",
+          "FLOW",
+          81,
+          24.987654,
+          0.000658
+        ],
+        [
+          "edy",
+          "MIXED",
+          "OPERATION",
+          493,
+          23.602434,
+          0.000384
+        ],
+        [
+          "eol",
+          "EARLY",
+          "THERMAL",
+          86,
+          22.372093,
+          0.00169
+        ]
+      ]
+    },
+    "qo": {
+      "n_testable": 34,
+      "n_specialist": 2,
+      "specialist_rate": 0.058824,
+      "n_early": 0,
+      "n_late": 0,
+      "top_specialists": [
+        [
+          "t",
+          "MIXED",
+          "FLOW",
+          501,
+          29.968064,
+          3.5e-05
+        ],
+        [
+          "k",
+          "MIXED",
+          "THERMAL",
+          1706,
+          21.690504,
+          0.000231
+        ]
+      ]
+    },
+    "ok": {
+      "n_testable": 24,
+      "n_specialist": 5,
+      "specialist_rate": 0.208333,
+      "n_early": 0,
+      "n_late": 4,
+      "top_specialists": [
+        [
+          "am",
+          "LATE",
+          "TRANSITION",
+          21,
+          42.095238,
+          0.0
+        ],
+        [
+          "y",
+          "LATE",
+          "TRANSITION",
+          68,
+          21.558824,
+          0.003189
+        ],
+        [
+          "dy",
+          "LATE",
+          "CONTAINMENT",
+          22,
+          20.272727,
+          0.001323
+        ],
+        [
+          "a",
+          "LATE",
+          "TRANSITION",
+          23,
+          19.826087,
+          0.009728
+        ],
+        [
+          "edy",
+          "MIXED",
+          "OPERATION",
+          138,
+          9.753623,
+          0.044789
+        ]
+      ]
+    },
+    "ot": {
+      "n_testable": 22,
+      "n_specialist": 8,
+      "specialist_rate": 0.363636,
+      "n_early": 0,
+      "n_late": 7,
+      "top_specialists": [
+        [
+          "am",
+          "LATE",
+          "TRANSITION",
+          38,
+          114.894737,
+          0.0
+        ],
+        [
+          "y",
+          "LATE",
+          "TRANSITION",
+          77,
+          51.376623,
+          0.0
+        ],
+        [
+          "ar",
+          "LATE",
+          "FLOW",
+          130,
+          31.923077,
+          1.2e-05
+        ],
+        [
+          "al",
+          "LATE",
+          "FLOW",
+          116,
+          31.5,
+          5e-06
+        ],
+        [
+          "a",
+          "LATE",
+          "TRANSITION",
+          18,
+          31.444444,
+          1.2e-05
+        ],
+        [
+          "aiin",
+          "LATE",
+          "TRANSITION",
+          109,
+          19.944954,
+          0.004608
+        ],
+        [
+          "ain",
+          "LATE",
+          "FLOW",
+          92,
+          18.76087,
+          0.012259
+        ],
+        [
+          "edy",
+          "MIXED",
+          "OPERATION",
+          197,
+          14.497462,
+          0.005865
+        ]
+      ]
+    },
+    "da": {
+      "n_testable": 10,
+      "n_specialist": 8,
+      "specialist_rate": 0.8,
+      "n_early": 0,
+      "n_late": 4,
+      "top_specialists": [
+        [
+          "m",
+          "LATE",
+          "TRANSITION",
+          45,
+          87.777778,
+          0.0
+        ],
+        [
+          "iin",
+          "MIXED",
+          "STAGING",
+          328,
+          49.195122,
+          0.0
+        ],
+        [
+          "l",
+          "LATE",
+          "STAGING",
+          165,
+          46.484848,
+          0.0
+        ],
+        [
+          "ry",
+          "LATE",
+          "TRANSITION",
+          13,
+          28.923077,
+          8.1e-05
+        ],
+        [
+          "i",
+          "MIXED",
+          "STAGING",
+          63,
+          25.809524,
+          0.000173
+        ],
+        [
+          "ly",
+          "LATE",
+          "TRANSITION",
+          18,
+          18.111111,
+          0.009391
+        ],
+        [
+          "in",
+          "MIXED",
+          "MARKING",
+          117,
+          14.410256,
+          0.036567
+        ],
+        [
+          "r",
+          "MIXED",
+          "FLOW",
+          208,
+          13.875,
+          0.01541
+        ]
+      ]
+    },
+    "BARE": {
+      "n_testable": 35,
+      "n_specialist": 13,
+      "specialist_rate": 0.371429,
+      "n_early": 1,
+      "n_late": 5,
+      "top_specialists": [
+        [
+          "am",
+          "LATE",
+          "TRANSITION",
+          59,
+          180.745763,
+          0.0
+        ],
+        [
+          "l",
+          "LATE",
+          "STAGING",
+          199,
+          102.432161,
+          0.0
+        ],
+        [
+          "dy",
+          "LATE",
+          "CONTAINMENT",
+          113,
+          68.19469,
+          0.0
+        ],
+        [
+          "r",
+          "LATE",
+          "FLOW",
+          215,
+          67.162791,
+          0.0
+        ],
+        [
+          "y",
+          "MIXED",
+          "TRANSITION",
+          84,
+          56.0,
+          0.0
+        ],
+        [
+          "o",
+          "MIXED",
+          "OPERATION",
+          108,
+          30.703704,
+          1.4e-05
+        ],
+        [
+          "ar",
+          "MIXED",
+          "FLOW",
+          248,
+          25.830645,
+          0.000479
+        ],
+        [
+          "al",
+          "MIXED",
+          "FLOW",
+          186,
+          22.655914,
+          0.002522
+        ],
+        [
+          "om",
+          "LATE",
+          "OPERATION",
+          11,
+          20.363636,
+          0.011851
+        ],
+        [
+          "p",
+          "EARLY",
+          "MARKING",
+          12,
+          18.833333,
+          0.022882
+        ]
+      ]
+    },
+    "passed": false
+  },
+  "T3_gradient_concentration": {
+    "thermal_q1": 0.270764,
+    "thermal_q5": 0.181001,
+    "total_decline": 0.089763,
+    "n_for_50pct": 1,
+    "n_for_75pct": 2,
+    "n_for_90pct": 2,
+    "top_contributors": [
+      [
+        "eey",
+        0.048699,
+        true,
+        147,
+        "THERMAL"
+      ],
+      [
+        "eol",
+        0.041451,
+        true,
+        102,
+        "THERMAL"
+      ],
+      [
+        "ey",
+        0.039711,
+        false,
+        259,
+        "TRANSITION"
+      ],
+      [
+        "eo",
+        0.037298,
+        false,
+        128,
+        "TRANSITION"
+      ],
+      [
+        "eeo",
+        0.025672,
+        false,
+        40,
+        "OPERATION"
+      ],
+      [
+        "e",
+        0.021742,
+        true,
+        196,
+        "THERMAL"
+      ],
+      [
+        "ol",
+        0.019328,
+        false,
+        109,
+        "STAGING"
+      ],
+      [
+        "ee",
+        0.011477,
+        true,
+        35,
+        "THERMAL"
+      ],
+      [
+        "or",
+        0.008532,
+        false,
+        38,
+        "FLOW"
+      ],
+      [
+        "ed",
+        0.008378,
+        false,
+        145,
+        "FLOW"
+      ],
+      [
+        "ok",
+        0.007777,
+        false,
+        43,
+        "CONTAINMENT"
+      ],
+      [
+        "ek",
+        0.004226,
+        false,
+        93,
+        "OPERATION"
+      ],
+      [
+        "ain",
+        0.004077,
+        false,
+        9,
+        "FLOW"
+      ],
+      [
+        "eeol",
+        0.0037,
+        true,
+        8,
+        "THERMAL"
+      ],
+      [
+        "eeod",
+        0.0037,
+        true,
+        4,
+        "THERMAL"
+      ]
+    ],
+    "passed": true,
+    "strong": true
+  },
+  "T4_ch_sh_parallel": {
+    "n_shared": 114,
+    "n_ch_only": 203,
+    "n_sh_only": 101,
+    "n_shared_testable": 32,
+    "shared_rho": 0.468194,
+    "shared_p": 0.006883,
+    "ch_only_mean_com": 2.571429,
+    "sh_only_mean_com": 2.0,
+    "passed": false
+  },
+  "T5_qo_vs_chsh": {
+    "n_qo_only": 188,
+    "n_chsh_only": 343,
+    "qo_mean_position": 2.031901,
+    "chsh_mean_position": 2.278748,
+    "mann_whitney_p": 0.119644,
+    "k_mean_position": 1.861612,
+    "nonk_mean_position": 1.894165,
+    "passed": false
+  },
+  "T6_bare_contrast": {
+    "prefix_jsds": {
+      "sh": 0.103274,
+      "BARE": 0.191506,
+      "qo": 0.105623,
+      "ch": 0.133852,
+      "pch": 0.284012,
+      "dch": 0.392144,
+      "yk": 0.276145,
+      "te": 0.142353,
+      "ol": 0.235856,
+      "sa": 0.094663,
+      "da": 0.160809,
+      "al": 0.339972,
+      "ot": 0.163616,
+      "tch": 0.318707,
+      "ok": 0.1195,
+      "ar": 0.405468,
+      "or": 0.365203,
+      "to": 0.362302,
+      "ke": 0.183735,
+      "po": 0.324599,
+      "ka": 0.168057,
+      "lk": 0.184709,
+      "lch": 0.185383,
+      "ta": 0.157093,
+      "do": 0.233091,
+      "lsh": 0.208789,
+      "so": 0.200934
+    },
+    "bare_jsd": 0.191506,
+    "median_jsd": 0.191506,
+    "bare_rank": 14,
+    "total_prefixes": 27,
+    "passed": false
+  },
+  "T7_specialist_compatibility": {
+    "n_specialists": 24,
+    "n_flat": 43,
+    "specialist_mean_breadth": 15.291667,
+    "flat_mean_breadth": 8.27907,
+    "mann_whitney_p": 0.000371,
+    "verdict": "DEPLETED: specialists are LESS restricted (more versatile)"
+  },
+  "tests_passed": 2
+}
