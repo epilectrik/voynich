@@ -1,0 +1,530 @@
+{
+  "phase": "MULTIPLEXED_PROCEDURE_TEST",
+  "phase_number": 467,
+  "tier": "2-3 (structural with interpretive implications)",
+  "seed": 42,
+  "n_permutations": 1000,
+  "tests": {
+    "M1": {
+      "test": "M1: Block-0-Unique Category Enrichment",
+      "tier": "T2-3 (structural with interpretive)",
+      "passed": true,
+      "overall": {
+        "n_folios": 75,
+        "chi2": 212.32,
+        "p": 0.0,
+        "df": 14,
+        "cramers_v": 0.1364,
+        "n_b0_unique": 760,
+        "n_shared": 1895,
+        "n_later_unique": 3053,
+        "enrichment": {
+          "THERMAL": {
+            "block0_unique_frac": 0.1816,
+            "shared_frac": 0.1879,
+            "later_unique_frac": 0.1936,
+            "b0u_vs_shared": 0.967
+          },
+          "FLOW": {
+            "block0_unique_frac": 0.1684,
+            "shared_frac": 0.2127,
+            "later_unique_frac": 0.1536,
+            "b0u_vs_shared": 0.792
+          },
+          "CONTAINMENT": {
+            "block0_unique_frac": 0.05,
+            "shared_frac": 0.0628,
+            "later_unique_frac": 0.0478,
+            "b0u_vs_shared": 0.796
+          },
+          "STAGING": {
+            "block0_unique_frac": 0.125,
+            "shared_frac": 0.1272,
+            "later_unique_frac": 0.1241,
+            "b0u_vs_shared": 0.983
+          },
+          "OPERATION": {
+            "block0_unique_frac": 0.0789,
+            "shared_frac": 0.1219,
+            "later_unique_frac": 0.0953,
+            "b0u_vs_shared": 0.648
+          },
+          "TRANSITION": {
+            "block0_unique_frac": 0.1013,
+            "shared_frac": 0.1583,
+            "later_unique_frac": 0.1015,
+            "b0u_vs_shared": 0.64
+          },
+          "MARKING": {
+            "block0_unique_frac": 0.25,
+            "shared_frac": 0.1008,
+            "later_unique_frac": 0.2326,
+            "b0u_vs_shared": 2.48
+          },
+          "MONITORING": {
+            "block0_unique_frac": 0.0447,
+            "shared_frac": 0.0285,
+            "later_unique_frac": 0.0514,
+            "b0u_vs_shared": 1.57
+          }
+        },
+        "setup_frac_b0u": 0.175,
+        "setup_frac_shared": 0.19,
+        "setup_enrichment_ratio": 0.921
+      },
+      "section_breakdown": {
+        "B": {
+          "n_folios": 20,
+          "chi2": 52.18,
+          "p": 3e-06,
+          "df": 14,
+          "cramers_v": 0.139,
+          "n_b0_unique": 181,
+          "n_shared": 628,
+          "n_later_unique": 542,
+          "enrichment": {
+            "THERMAL": {
+              "block0_unique_frac": 0.1381,
+              "shared_frac": 0.1975,
+              "later_unique_frac": 0.1476,
+              "b0u_vs_shared": 0.7
+            },
+            "FLOW": {
+              "block0_unique_frac": 0.1713,
+              "shared_frac": 0.2325,
+              "later_unique_frac": 0.1384,
+              "b0u_vs_shared": 0.737
+            },
+            "CONTAINMENT": {
+              "block0_unique_frac": 0.0773,
+              "shared_frac": 0.0732,
+              "later_unique_frac": 0.0627,
+              "b0u_vs_shared": 1.056
+            },
+            "STAGING": {
+              "block0_unique_frac": 0.1657,
+              "shared_frac": 0.1385,
+              "later_unique_frac": 0.1365,
+              "b0u_vs_shared": 1.196
+            },
+            "OPERATION": {
+              "block0_unique_frac": 0.0773,
+              "shared_frac": 0.0987,
+              "later_unique_frac": 0.1107,
+              "b0u_vs_shared": 0.783
+            },
+            "TRANSITION": {
+              "block0_unique_frac": 0.0939,
+              "shared_frac": 0.1115,
+              "later_unique_frac": 0.1181,
+              "b0u_vs_shared": 0.843
+            },
+            "MARKING": {
+              "block0_unique_frac": 0.2099,
+              "shared_frac": 0.1035,
+              "later_unique_frac": 0.2011,
+              "b0u_vs_shared": 2.028
+            },
+            "MONITORING": {
+              "block0_unique_frac": 0.0663,
+              "shared_frac": 0.0446,
+              "later_unique_frac": 0.0849,
+              "b0u_vs_shared": 1.487
+            }
+          },
+          "setup_frac_b0u": 0.2431,
+          "setup_frac_shared": 0.2118,
+          "setup_enrichment_ratio": 1.148
+        },
+        "C": {
+          "n_folios": 5,
+          "chi2": 16.19,
+          "p": 0.264756,
+          "df": 14,
+          "cramers_v": 0.1386,
+          "n_b0_unique": 77,
+          "n_shared": 221,
+          "n_later_unique": 123,
+          "enrichment": {
+            "THERMAL": {
+              "block0_unique_frac": 0.1688,
+              "shared_frac": 0.1584,
+              "later_unique_frac": 0.1626,
+              "b0u_vs_shared": 1.066
+            },
+            "FLOW": {
+              "block0_unique_frac": 0.1818,
+              "shared_frac": 0.1493,
+              "later_unique_frac": 0.187,
+              "b0u_vs_shared": 1.218
+            },
+            "CONTAINMENT": {
+              "block0_unique_frac": 0.039,
+              "shared_frac": 0.0498,
+              "later_unique_frac": 0.0407,
+              "b0u_vs_shared": 0.783
+            },
+            "STAGING": {
+              "block0_unique_frac": 0.0779,
+              "shared_frac": 0.1267,
+              "later_unique_frac": 0.0976,
+              "b0u_vs_shared": 0.615
+            },
+            "OPERATION": {
+              "block0_unique_frac": 0.0779,
+              "shared_frac": 0.1222,
+              "later_unique_frac": 0.0894,
+              "b0u_vs_shared": 0.638
+            },
+            "TRANSITION": {
+              "block0_unique_frac": 0.0779,
+              "shared_frac": 0.1674,
+              "later_unique_frac": 0.0976,
+              "b0u_vs_shared": 0.465
+            },
+            "MARKING": {
+              "block0_unique_frac": 0.3506,
+              "shared_frac": 0.19,
+              "later_unique_frac": 0.2846,
+              "b0u_vs_shared": 1.845
+            },
+            "MONITORING": {
+              "block0_unique_frac": 0.026,
+              "shared_frac": 0.0362,
+              "later_unique_frac": 0.0407,
+              "b0u_vs_shared": 0.718
+            }
+          },
+          "setup_frac_b0u": 0.1169,
+          "setup_frac_shared": 0.1765,
+          "setup_enrichment_ratio": 0.662
+        },
+        "H": {
+          "n_folios": 25,
+          "chi2": 85.65,
+          "p": 0.0,
+          "df": 14,
+          "cramers_v": 0.1896,
+          "n_b0_unique": 324,
+          "n_shared": 403,
+          "n_later_unique": 464,
+          "enrichment": {
+            "THERMAL": {
+              "block0_unique_frac": 0.1636,
+              "shared_frac": 0.1514,
+              "later_unique_frac": 0.2069,
+              "b0u_vs_shared": 1.081
+            },
+            "FLOW": {
+              "block0_unique_frac": 0.1667,
+              "shared_frac": 0.201,
+              "later_unique_frac": 0.1379,
+              "b0u_vs_shared": 0.829
+            },
+            "CONTAINMENT": {
+              "block0_unique_frac": 0.0556,
+              "shared_frac": 0.0744,
+              "later_unique_frac": 0.0409,
+              "b0u_vs_shared": 0.746
+            },
+            "STAGING": {
+              "block0_unique_frac": 0.1173,
+              "shared_frac": 0.129,
+              "later_unique_frac": 0.1034,
+              "b0u_vs_shared": 0.909
+            },
+            "OPERATION": {
+              "block0_unique_frac": 0.0802,
+              "shared_frac": 0.1588,
+              "later_unique_frac": 0.0927,
+              "b0u_vs_shared": 0.505
+            },
+            "TRANSITION": {
+              "block0_unique_frac": 0.1296,
+              "shared_frac": 0.2035,
+              "later_unique_frac": 0.1379,
+              "b0u_vs_shared": 0.637
+            },
+            "MARKING": {
+              "block0_unique_frac": 0.2438,
+              "shared_frac": 0.072,
+              "later_unique_frac": 0.2392,
+              "b0u_vs_shared": 3.388
+            },
+            "MONITORING": {
+              "block0_unique_frac": 0.0432,
+              "shared_frac": 0.0099,
+              "later_unique_frac": 0.0409,
+              "b0u_vs_shared": 4.353
+            }
+          },
+          "setup_frac_b0u": 0.1728,
+          "setup_frac_shared": 0.2035,
+          "setup_enrichment_ratio": 0.849
+        },
+        "S": {
+          "n_folios": 23,
+          "chi2": 106.06,
+          "p": 0.0,
+          "df": 14,
+          "cramers_v": 0.1447,
+          "n_b0_unique": 151,
+          "n_shared": 592,
+          "n_later_unique": 1789,
+          "enrichment": {
+            "THERMAL": {
+              "block0_unique_frac": 0.2715,
+              "shared_frac": 0.2145,
+              "later_unique_frac": 0.204,
+              "b0u_vs_shared": 1.266
+            },
+            "FLOW": {
+              "block0_unique_frac": 0.1589,
+              "shared_frac": 0.2247,
+              "later_unique_frac": 0.1587,
+              "b0u_vs_shared": 0.707
+            },
+            "CONTAINMENT": {
+              "block0_unique_frac": 0.0199,
+              "shared_frac": 0.049,
+              "later_unique_frac": 0.047,
+              "b0u_vs_shared": 0.406
+            },
+            "STAGING": {
+              "block0_unique_frac": 0.1258,
+              "shared_frac": 0.1115,
+              "later_unique_frac": 0.1286,
+              "b0u_vs_shared": 1.129
+            },
+            "OPERATION": {
+              "block0_unique_frac": 0.0795,
+              "shared_frac": 0.1216,
+              "later_unique_frac": 0.095,
+              "b0u_vs_shared": 0.653
+            },
+            "TRANSITION": {
+              "block0_unique_frac": 0.0728,
+              "shared_frac": 0.1706,
+              "later_unique_frac": 0.0894,
+              "b0u_vs_shared": 0.427
+            },
+            "MARKING": {
+              "block0_unique_frac": 0.2384,
+              "shared_frac": 0.0861,
+              "later_unique_frac": 0.2331,
+              "b0u_vs_shared": 2.767
+            },
+            "MONITORING": {
+              "block0_unique_frac": 0.0331,
+              "shared_frac": 0.022,
+              "later_unique_frac": 0.0442,
+              "b0u_vs_shared": 1.508
+            }
+          },
+          "setup_frac_b0u": 0.1457,
+          "setup_frac_shared": 0.1605,
+          "setup_enrichment_ratio": 0.908
+        },
+        "T": {
+          "n_folios": 2,
+          "skipped": true
+        }
+      },
+      "sections_passing": 3
+    },
+    "M2": {
+      "test": "M2: Block Size Gradient",
+      "tier": "T2 (structural)",
+      "passed": false,
+      "n_folios": 56,
+      "n_blocks_total": 440,
+      "token_count": {
+        "median_rho": -0.0496,
+        "mean_rho": -0.0142,
+        "perm_p": 0.251,
+        "n_folios": 56,
+        "direction_count": {
+          "negative": 32,
+          "positive": 23,
+          "zero": 1
+        }
+      },
+      "para_count": {
+        "median_rho": 0.1786,
+        "mean_rho": 0.1582,
+        "perm_p": 0.278,
+        "n_folios": 50,
+        "direction_count": {
+          "negative": 13,
+          "positive": 36,
+          "zero": 1
+        }
+      },
+      "tok_decreasing": false,
+      "para_decreasing": false,
+      "mean_tokens_by_ordinal": {
+        "0": 91.0,
+        "1": 78.3,
+        "2": 68.5,
+        "3": 56.6,
+        "4": 60.1,
+        "5": 60.6,
+        "6": 44.1,
+        "7": 44.2,
+        "8": 52.1,
+        "9": 51.1,
+        "10": 41.5,
+        "11": 37.2,
+        "12": 43.4,
+        "13": 36.5,
+        "14": 50.2,
+        "15": 48.3,
+        "16": 36.0,
+        "17": 25.0
+      },
+      "section_breakdown": {
+        "B": {
+          "n_folios": 17,
+          "median_token_rho": -0.1429,
+          "median_para_rho": 0.125
+        },
+        "C": {
+          "n_folios": 4,
+          "median_token_rho": -0.325,
+          "median_para_rho": -0.2
+        },
+        "H": {
+          "n_folios": 10,
+          "median_token_rho": 0.2,
+          "median_para_rho": -0.4
+        },
+        "S": {
+          "n_folios": 23,
+          "median_token_rho": -0.0773,
+          "median_para_rho": 0.3393
+        },
+        "T": {
+          "n_folios": 2,
+          "median_token_rho": 0.2623,
+          "median_para_rho": 0.1656
+        }
+      }
+    },
+    "M3": {
+      "test": "M3: Asymmetric Vocabulary Containment",
+      "tier": "T2 (structural)",
+      "passed": false,
+      "n_folios": 75,
+      "n_pairs": 403,
+      "mean_forward": 0.4261,
+      "mean_reverse": 0.4882,
+      "mean_asymmetry": 0.0621,
+      "median_asymmetry": 0.0553,
+      "perm_p": 0.004,
+      "asymmetry_by_ordinal": {
+        "1": 0.0405,
+        "2": 0.0747,
+        "3": 0.1107,
+        "4": 0.0598,
+        "5": 0.1052,
+        "6": 0.095,
+        "7": 0.0234,
+        "8": 0.0171,
+        "9": 0.0029,
+        "10": 0.0371,
+        "11": 0.0892,
+        "12": 0.0569,
+        "13": 0.0429,
+        "14": 0.0058,
+        "15": 0.0525,
+        "16": 0.1097,
+        "17": 0.2897
+      },
+      "section_breakdown": {
+        "B": {
+          "n_pairs": 71,
+          "mean_asymmetry": 0.0939,
+          "median_asymmetry": 0.0497
+        },
+        "C": {
+          "n_pairs": 15,
+          "mean_asymmetry": 0.1416,
+          "median_asymmetry": 0.1427
+        },
+        "H": {
+          "n_pairs": 40,
+          "mean_asymmetry": 0.0378,
+          "median_asymmetry": 0.0825
+        },
+        "S": {
+          "n_pairs": 263,
+          "mean_asymmetry": 0.0526,
+          "median_asymmetry": 0.0504
+        },
+        "T": {
+          "n_pairs": 14,
+          "mean_asymmetry": 0.0629,
+          "median_asymmetry": 0.0553
+        }
+      }
+    },
+    "M4": {
+      "test": "M4: Kernel Stability Across Blocks",
+      "tier": "T2 (consistency check)",
+      "passed": true,
+      "n_folios": 56,
+      "median_kernel_distance": 0.02703,
+      "median_category_jsd": 0.05233,
+      "median_prefix_jsd": 0.14459,
+      "kernel_vs_category": {
+        "kern_lower_count": 36,
+        "total": 56,
+        "mw_z": -2.5895,
+        "mw_p": 0.0072
+      },
+      "kernel_vs_prefix": {
+        "kern_lower_count": 56,
+        "total": 56,
+        "mw_z": -8.0363,
+        "mw_p": 0.0
+      },
+      "section_breakdown": {
+        "B": {
+          "n_folios": 17,
+          "median_kernel": 0.01483,
+          "median_category": 0.03841,
+          "median_prefix": 0.07785
+        },
+        "C": {
+          "n_folios": 4,
+          "median_kernel": 0.0135,
+          "median_category": 0.0164,
+          "median_prefix": 0.06645
+        },
+        "H": {
+          "n_folios": 10,
+          "median_kernel": 0.03181,
+          "median_category": 0.06078,
+          "median_prefix": 0.17757
+        },
+        "S": {
+          "n_folios": 23,
+          "median_kernel": 0.06005,
+          "median_category": 0.06434,
+          "median_prefix": 0.1832
+        },
+        "T": {
+          "n_folios": 2,
+          "median_kernel": 0.03531,
+          "median_category": 0.04587,
+          "median_prefix": 0.13539
+        }
+      }
+    }
+  },
+  "summary": {
+    "tests_passed": 2,
+    "tests_total": 4,
+    "interpretation": "PARTIAL_BLOCK0_SPECIAL"
+  }
+}

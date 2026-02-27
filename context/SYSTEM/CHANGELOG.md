@@ -4,6 +4,311 @@
 
 ---
 
+## Version 4.76.62 (2026-02-26) - Phase 473: Layered Grammar Test
+
+### Summary
+
+Phase 473: 5-test battery testing whether B grammar has three tiers (dark=context → bridge=execution → suffix=mode) rather than binary grammar/non-grammar. **Overall: three-tier model FALSIFIED.** Gates pass (frequency gate, PREFIX independence gate) but all three core tests fail. Dark MIDDLEs have very local grammar influence (next-token) but do not constitute a grammar tier.
+
+**Phase 473 headline findings:**
+- Frequency gate: dark entropy survives freq matching (Z=-5.60) but collapses under subsampling (Z=-0.55) — partially artifact (C1355)
+- PREFIX independence gate: dark MIDDLE identity adds info beyond PREFIX (Z=4.50, perm p<0.001) — genuine (C1356)
+- CORE: dark presence does NOT condition bridge-to-bridge transitions (MI=0.098, null=0.101, p=0.90) (C1354)
+- CORE: dark removal does NOT genericize bridge transitions (entropy diff p=0.38) (C1354)
+- CORE: dark proximity weakly boosts terminal suffix (V=0.042) — real but tiny (C1357)
+- Binary model preserved with refinement: dark tokens are grammar-adjacent (local influence) not grammar-participating
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/LAYERED_GRAMMAR_TEST/` -- 1 script + 1 results JSON |
+| **ADDED** | C1354-C1357 constraint files (4 new constraints, 1197->1201) |
+| **UPDATED** | `INDEX.md` -- 1197->1201 total, Phase 473 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.75->v4.76, 472->473 phases, 1197->1201 constraints |
+
+---
+
+## Version 4.75.61 (2026-02-26) - Phase 472: Dark Pipeline Structure
+
+### Summary
+
+Phase 472: 5-test battery characterizing the structural role of dark pipeline MIDDLEs (300 MIDDLEs, identification channel). **Overall: dark pipeline = context-setting parameters, not material referents.** Dark MIDDLEs are atomistic (no co-occurrence groups), constrain local grammar continuation (narrow successor entropy), span folios as expected for their frequency (no staples/specialists split), and have no dedicated syntactic slot.
+
+**Phase 472 headline findings:**
+- Dark MIDDLEs show no within-section co-occurrence structure (C1350: 0/5 sections significant)
+- Dark-dark adjacency is perfectly random (C1350: ratio=1.02, p=0.76)
+- Dark successor entropy is significantly narrower than bridge (C1351: 2.59 vs 4.18 bits, Z=-7.45)
+- This falsifies the material-referent prediction (materials would have wide successor entropy)
+- Folio span matches frequency null (C1352: 78.3% within ±2σ, no bimodal split)
+- Weak positional bias before bridge (C1353: 52.7%, Z=3.0) but trivial effect (2.7%)
+- Dark pipeline = independent context-setting parameters that constrain local execution
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/DARK_PIPELINE_STRUCTURE/` -- 1 script + 1 results JSON |
+| **ADDED** | C1350-C1353 constraint files (4 new constraints, 1193->1197) |
+| **UPDATED** | `INDEX.md` -- 1193->1197 total, Phase 472 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.74->v4.75, 471->472 phases, 1193->1197 constraints |
+
+---
+
+## Version 4.74.60 (2026-02-26) - Phase 471: A-B Category Flow
+
+### Summary
+
+Phase 471: 4-test battery testing whether A-side category structure flows to B through the vocabulary pipeline. **Overall: dual-channel category architecture confirmed.** Bridge channel shows active reshaping by B (amplifies THERMAL/OPERATION, suppresses STAGING/MONITORING). Dark channel preserves category structure near-perfectly (rho=0.976). A sections differentiate at category level despite MIDDLE-level uniformity (C1136).
+
+**Phase 471 headline findings:**
+- B reshapes bridge category delivery: amplifies THERMAL 1.72x, OPERATION 1.58x, suppresses MONITORING 0.27x, STAGING 0.54x (C1347)
+- Bridge consumption perfectly matches B's total category landscape: JSD=0.004 (C1347)
+- Mode correlation: high-THERMAL-bridge folios run more Mode A lines (Z=3.45, p=0.0004) (C1347)
+- A sections differentiate at category level despite MIDDLE-level uniformity (C1348: chi2=380, V=0.144, perm p=0.001)
+- Section T category signal propagates cross-system: A-T → B-T rho=0.85, p=0.016 (C1348)
+- Dark pipeline preserves categories near-perfectly: rho=0.976, JSD=0.009 (C1349)
+- Bridge and dark carry independent category information per B section: rho=0.19 (C1349)
+- C1136 partially overturned: sections are MIDDLE-uniform but category-differentiated
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/A_B_CATEGORY_FLOW/` -- 1 script + 1 results JSON |
+| **ADDED** | C1347-C1349 constraint files (3 new constraints, 1190->1193) |
+| **UPDATED** | `INDEX.md` -- 1190->1193 total, Phase 471 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.73->v4.74, 470->471 phases, 1190->1193 constraints |
+
+---
+
+## Version 4.73.59 (2026-02-26) - Phase 470: Suffix Mode Context
+
+### Summary
+
+Phase 470: 5-test battery decomposing the ~20% contextual residual in suffix mode prediction (C1341). **Overall: PREFIX is the dominant contextual channel.** Four factors contribute, largely non-redundantly: PREFIX (50% of MI), category environment (29%), position (12%), opener mode (8%).
+
+**Phase 470 headline findings:**
+- PREFIX modulates suffix for flexible MIDDLEs: conditional MI 0.097 bits, V=0.23 (C1342)
+- da→93% bare, qo→41% terminal, ok_group→52% terminal — PREFIX routes MIDDLE into suffix context
+- THERMAL-rich neighborhoods independently push toward terminal suffix: Z=5.87 (C1343)
+- MID-line position has highest terminal fraction: 40.6% vs EARLY 34.6% (C1344)
+- Opener mode barely propagates to token suffix: V=0.048, section-heterogeneous (C1345)
+- Factors are non-redundant: MI between pairs only 0.003-0.006 bits (C1346)
+- Resolves C1339 THERMAL paradox: PREFIX controls whether THERMAL content gets suffixed
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/SUFFIX_MODE_CONTEXT/` -- 1 script + 1 results JSON |
+| **ADDED** | C1342-C1346 constraint files (5 new constraints, 1185->1190) |
+| **UPDATED** | `INDEX.md` -- 1185->1190 total, Phase 470 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.72->v4.73, 469->470 phases, 1185->1190 constraints |
+
+---
+
+## Version 4.72.58 (2026-02-26) - Phase 469: Suffix Mode Assignment
+
+### Summary
+
+Phase 469: 4-test battery discriminating between identity model (MIDDLE determines suffix) and context model (line imposes mode on tokens) for suffix mode assignment. **Overall: Identity model dominates.** MIDDLE identity carries 11.57x more suffix information than line mode. Mode is ~80% emergent from token composition.
+
+**Phase 469 headline findings:**
+- I(MIDDLE; suffix) = 0.697 bits, 11.57x more than I(line_mode; suffix) = 0.060 bits (C1338)
+- Only 7.7% of frequent MIDDLEs are mode-locked; 92.3% freely appear in both modes (C1339)
+- Same MIDDLE keeps same suffix across modes: median cross-mode JSD = 0.020 (C1340)
+- Token-identity-predicted mode matches actual 80.0% (baseline 59.7%, lift 1.34x) (C1341)
+- Generative mechanism: MIDDLEs bring intrinsic suffix preferences → aggregate → line mode emerges
+- Resolves C1256 (opener seeds profile), C1259 (flat mode proportion), C1229 (mode alternation)
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/SUFFIX_MODE_ASSIGNMENT/` -- 1 script + 1 results JSON |
+| **ADDED** | C1338-C1341 constraint files (4 new constraints, 1181->1185) |
+| **UPDATED** | `INDEX.md` -- 1181->1185 total, Phase 469 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.71->v4.72, 468->469 phases, 1181->1185 constraints |
+
+---
+
+## Version 4.71.57 (2026-02-26) - Phase 468: A Paragraph Category Architecture
+
+### Summary
+
+Phase 468: 4-test battery characterizing how the 8-category operational system organizes Currier A paragraphs. Extends Phase 452's scattershot (C1263: paragraphs specialize, d=12.5) into full architectural characterization. **Overall: 2/4 PASS, 1 WEAK, 1 FAIL.**
+
+**Phase 468 headline findings:**
+- STAGING dominates 43.6% of A paragraphs at 1.89x base rate; CONTAINMENT/MONITORING/MARKING never dominate (C1334)
+- 5 distinct category-based paragraph types: STAGING(105), FLOW(48), TRANSITION(42), THERMAL(33), OPERATION(12) (C1335)
+- MARKING is front-loaded in A paragraphs (pos 0.429, p<0.001) — cross-system pattern with B headers (C1287) and B block 0 (C1332) (C1336)
+- No folio-level paragraph sequencing — confirms C240 NON_SEQUENTIAL extends to paragraph category organization (C1337)
+- Section specialization: H→STAGING-centric, P→THERMAL-centric, T→FLOW-centric
+- Two-tier category architecture: 5 "dominating" categories structure paragraphs, 3 "supporting" categories appear within but never organize paragraphs
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/A_PARAGRAPH_CATEGORY_ARCHITECTURE/` -- 1 script + 1 results JSON |
+| **ADDED** | C1334-C1337 constraint files (4 new constraints, 1177->1181) |
+| **UPDATED** | `INDEX.md` -- 1177->1181 total, Phase 468 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.70->v4.71, 467->468 phases, 1177->1181 constraints |
+
+---
+
+## Version 4.70.56 (2026-02-26) - Phase 467: Multiplexed Procedure Test
+
+### Summary
+
+Phase 467: 4-test battery testing whether block architecture reflects multiplexed procedures (one fire regime, multiple vessels/batches, block 0 documents shared context). **Overall: 2/4 PASS (M1 + M4).** Strict multiplexing NOT confirmed, but block 0 IS categorically special — its unique vocabulary is MARKING/MONITORING-enriched, providing annotation context rather than apparatus setup.
+
+**Phase 467 headline findings:**
+- Block-0-unique MIDDLEs are MARKING 2.48x enriched, MONITORING 1.57x — NOT STAGING/CONTAINMENT (C1332)
+- Kernel is the most stable inter-block dimension: 0.027 < category 0.052 < PREFIX 0.145 (C1333)
+- No block size gradient (token rho=-0.050, p=0.251) — multiplexing prediction of "later blocks shorter" fails
+- Vocabulary containment asymmetry exists (6.2pp, p=0.004) but below 10pp threshold
+- "Setup block" interpretation falsified; "marking context block" emerges instead
+- All blocks share operational work (OPERATION, TRANSITION in shared vocabulary); only block 0 adds full marking/monitoring annotations
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/MULTIPLEXED_PROCEDURE_TEST/` -- 1 script + 1 results JSON |
+| **ADDED** | C1332-C1333 constraint files (2 new constraints, 1175->1177) |
+| **UPDATED** | `INDEX.md` -- 1175->1177 total, Phase 467 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.69->v4.70, 466->467 phases, 1175->1177 constraints |
+
+---
+
+## Version 4.69.55 (2026-02-26) - Phase 466: Block Vocabulary Drift
+
+### Summary
+
+Phase 466: 4-test battery testing whether consecutive blocks show directional vocabulary drift consistent with iterative refinement (proposed by internal expert following C1326). **Overall: 1/4 PASS.** Iterative refinement falsified. Vocabulary narrowing is the only universal signal — later blocks use fewer distinct MIDDLEs.
+
+**Phase 466 headline findings:**
+- Vocabulary narrowing universal: later blocks use fewer MIDDLEs (rho=-0.248, perm p<0.001) (C1330)
+- No k→e kernel drift (rho=+0.026, p=0.600) — blocks don't shift from energy to precision (C1331)
+- No Mode A→B suffix shift (rho=-0.038, p=0.199) — specification doesn't decrease (C1331)
+- No FL stage progression (rho=+0.021, p=0.435) — material state doesn't advance (C1331)
+- Section-specific: B/C show partial drift, H reversed, S flat — no universal mechanism
+- C1326 (cross-block similarity) explained by REGIME sharing, not convergence toward target
+- Iterative refinement model falsified: blocks share context but don't converge
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/BLOCK_VOCABULARY_DRIFT/` -- 1 script + 1 results JSON |
+| **ADDED** | C1330-C1331 constraint files (2 new constraints, 1173->1175) |
+| **UPDATED** | `INDEX.md` -- 1173->1175 total, Phase 466 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.68->v4.69, 465->466 phases, 1173->1175 constraints |
+
+---
+
+## Version 4.68.54 (2026-02-26) - Phase 465: Section S Block Architecture
+
+### Summary
+
+Phase 465: 6-test battery testing whether Section S's anomalous single-paragraph blocks (12.4/folio) are parallel monitoring stations or ordered stages. **Overall: 1/6 PASS.** Parallel stations hypothesis falsified. S blocks are an ordered monitoring sequence with progressive OPERATION→THERMAL/TRANSITION shift.
+
+**Phase 465 headline findings:**
+- Section S ordinal progression: OPERATION decreases (rho=-0.169, p<0.001), THERMAL/TRANSITION increase with block position (C1327)
+- S p-gallows dominance: p→p self-continuation at 69%, no k/f/p→t cycle (C1328)
+- S blocks MORE categorically diverse than non-S (JSD 0.069 > 0.052, z=7.20) (C1329)
+- S blocks vocabulary-independent (Jaccard 0.327 < non-S 0.438) but operationally ordered
+- Parallel stations falsified: blocks are NOT exchangeable, show sequential structure
+- Section S = ordered monitoring rounds, not parallel identical stations
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/SECTION_S_BLOCK_ARCHITECTURE/` -- 1 script + 1 results JSON |
+| **ADDED** | C1327-C1329 constraint files (3 new constraints, 1170->1173) |
+| **UPDATED** | `INDEX.md` -- 1170->1173 total, Phase 465 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.67->v4.68, 464->465 phases, 1170->1173 constraints |
+
+---
+
+## Version 4.67.53 (2026-02-26) - Phase 464: Block Execution Cycle
+
+### Summary
+
+Phase 464: 8-test battery testing whether visual text blocks form complete execution cycles with cross-block restart, block-final termination, and REGIME inheritance. **Overall: 2/8 PASS** (A1 gallows restart, C1 REGIME homogeneity). Block-final termination signatures absent — blocks restart via gallows reset, not vocabulary markers.
+
+**Phase 464 headline findings:**
+- Cross-block gallows restart confirmed: block-initial k/f/p=72.3%, block-final t=39.8% (C1323)
+- Block-final termination absent: -am depleted 0.36x, suffix mode identical, 0/8 category shifts (C1324)
+- Folio REGIME homogeneity: within-folio block distance 0.056 < between-folio 0.065, p<0.001 (C1325)
+- Cross-block category continuity: JSD 0.071 < within-block 0.136, z=-8.98 (C1326)
+- Block boundaries are gallows-level structural markers (C845), not vocabulary-level content markers
+- Architecture: folio = REGIME container, block = processing stage, paragraph = specialized operator
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/BLOCK_EXECUTION_CYCLE/` -- 1 script + 1 results JSON |
+| **ADDED** | C1323-C1326 constraint files (4 new constraints, 1166->1170) |
+| **UPDATED** | `INDEX.md` -- 1166->1170 total, Phase 464 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.66->v4.67, 463->464 phases, 1166->1170 constraints |
+
+---
+
+## Version 4.66.52 (2026-02-26) - Phase 463: Block Gallows Ordering
+
+### Summary
+
+Phase 463: 5-test battery testing whether gallows letters encode paragraph operator roles within blocks. **Overall: 1/5 PASS.** Gallows encode positional phase (when in block), not operational type (what it does).
+
+**Phase 463 headline findings:**
+- Gallows within-block ordering: t clusters late (0.700), k/f/p cluster early (0.255-0.319) (C1321)
+- Transition matrix: universal k/f/p→t flow (chi-sq=64.88, p<0.001), t self-continues at 72%
+- Gallows-category independence: 0/8 categories predicted by gallows letter (C1322)
+- Gallows encode PHASE (when), PREFIX encodes TYPE (what) — orthogonal axes
+- C869 (Tier 3) revised: split is k/f/p vs t, not k/f vs p/t
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/BLOCK_GALLOWS_ORDERING/` -- 1 script + 1 results JSON |
+| **ADDED** | C1321-C1322 constraint files (2 new constraints, 1164->1166) |
+| **UPDATED** | `INDEX.md` -- 1164->1166 total, Phase 463 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.65->v4.66, 462->463 phases, 1164->1166 constraints |
+
+---
+
+## Version 4.65.51 (2026-02-26) - Phase 462: Text Block Parallel Operators
+
+### Summary
+
+Phase 462: 7-test battery testing whether visual text blocks group complementary parallel operators. **Overall: 4/7 PASS.** Establishes blocks as a new validated organizational level between paragraph and folio.
+
+**Phase 462 headline findings:**
+- Block census: 91.5% of B folios have 2+ blocks, 485 total across 82 folios (C1317)
+- PREFIX complementarity: within-block JSD > between-block (p<0.001), confirmed in 4/5 sections (C1318)
+- Block-initial enrichment: HT 7.3% vs 4.9% (z=7.07), MARKING 9.4% vs 7.0% (z=4.81) (C1319)
+- Thermal envelope hypothesis FALSIFIED: blocks maximize internal diversity, not convergence (C1320)
+- Section-specific architecture: S=12.4, B=4.6, H=2.3 blocks/folio (KW H=56.8, p<0.001)
+- Revised model: blocks are self-contained processing stages with complementary operations
+- Structural hierarchy: token < line < paragraph < block < folio
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/TEXT_BLOCK_PARALLEL_OPERATORS/` -- 1 script + 1 results JSON |
+| **ADDED** | C1317-C1320 constraint files (4 new constraints, 1160->1164) |
+| **UPDATED** | `INDEX.md` -- 1160->1164 total, Phase 462 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.64->v4.65, 461->462 phases, 1160->1164 constraints |
+
+---
+
 ## Version 4.64.50 (2026-02-25) - Phase 461: Distillation Terminology Mapping + Gloss Sync
 
 ### Summary

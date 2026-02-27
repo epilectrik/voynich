@@ -1,0 +1,611 @@
+{
+  "T1": {
+    "test": "T1_prefix_modulation",
+    "verdict": "PASS",
+    "n_tokens": 5611,
+    "chi2": 886.82,
+    "cramers_v": 0.2295,
+    "chi2_p": 0.0,
+    "conditional_mi_bits": 0.096606,
+    "null_mean_mi": 0.034266,
+    "perm_p": 0.001,
+    "n_middles_used": 28,
+    "group_profiles": {
+      "BARE": {
+        "terminal": 0.149,
+        "connector": 0.0354,
+        "iterate": 0.4015,
+        "bare": 0.4141
+      },
+      "OTHER": {
+        "terminal": 0.3167,
+        "connector": 0.0292,
+        "iterate": 0.1486,
+        "bare": 0.5055
+      },
+      "ch": {
+        "terminal": 0.336,
+        "connector": 0.0434,
+        "iterate": 0.2926,
+        "bare": 0.328
+      },
+      "da": {
+        "terminal": 0.0125,
+        "connector": 0.0063,
+        "iterate": 0.05,
+        "bare": 0.9313
+      },
+      "ok_group": {
+        "terminal": 0.5189,
+        "connector": 0.0338,
+        "iterate": 0.2068,
+        "bare": 0.2405
+      },
+      "qo": {
+        "terminal": 0.4071,
+        "connector": 0.0124,
+        "iterate": 0.4037,
+        "bare": 0.1768
+      },
+      "sh": {
+        "terminal": 0.4215,
+        "connector": 0.0579,
+        "iterate": 0.1901,
+        "bare": 0.3306
+      }
+    },
+    "group_deviation_rates": {
+      "BARE": {
+        "deviation_rate": 0.5732,
+        "n": 396,
+        "terminal_frac": 0.149,
+        "bare_frac": 0.4141
+      },
+      "OTHER": {
+        "deviation_rate": 0.3301,
+        "n": 821,
+        "terminal_frac": 0.3167,
+        "bare_frac": 0.5055
+      },
+      "ch": {
+        "deviation_rate": 0.4692,
+        "n": 991,
+        "terminal_frac": 0.336,
+        "bare_frac": 0.328
+      },
+      "da": {
+        "deviation_rate": 0.0625,
+        "n": 160,
+        "terminal_frac": 0.0125,
+        "bare_frac": 0.9313
+      },
+      "ok_group": {
+        "deviation_rate": 0.4108,
+        "n": 740,
+        "terminal_frac": 0.5189,
+        "bare_frac": 0.2405
+      },
+      "qo": {
+        "deviation_rate": 0.5468,
+        "n": 2019,
+        "terminal_frac": 0.4071,
+        "bare_frac": 0.1768
+      },
+      "sh": {
+        "deviation_rate": 0.4236,
+        "n": 484,
+        "terminal_frac": 0.4215,
+        "bare_frac": 0.3306
+      }
+    },
+    "top_mi_middles": [
+      {
+        "middle": "ot",
+        "mi": 0.504717,
+        "n": 37
+      },
+      {
+        "middle": "a",
+        "mi": 0.345859,
+        "n": 46
+      },
+      {
+        "middle": "r",
+        "mi": 0.260285,
+        "n": 582
+      },
+      {
+        "middle": "ee",
+        "mi": 0.235763,
+        "n": 121
+      },
+      {
+        "middle": "eek",
+        "mi": 0.234265,
+        "n": 49
+      },
+      {
+        "middle": "d",
+        "mi": 0.209949,
+        "n": 225
+      },
+      {
+        "middle": "et",
+        "mi": 0.198662,
+        "n": 49
+      },
+      {
+        "middle": "ok",
+        "mi": 0.195709,
+        "n": 52
+      },
+      {
+        "middle": "lk",
+        "mi": 0.168108,
+        "n": 38
+      },
+      {
+        "middle": "h",
+        "mi": 0.163826,
+        "n": 44
+      }
+    ]
+  },
+  "T2": {
+    "test": "T2_category_environment",
+    "verdict": "PASS",
+    "n_tokens": 5611,
+    "terminal_mean_thermal_frac": 0.2663,
+    "bare_mean_thermal_frac": 0.2332,
+    "mann_whitney_z": 5.873,
+    "mann_whitney_p": 0.0,
+    "quintile_spearman_rho": 0.8,
+    "quintile_spearman_p": 0.0839,
+    "quintile_data": [
+      {
+        "quintile": 0,
+        "n": 1132,
+        "terminal_frac": 0.3507,
+        "mean_thermal_frac": 0.0374
+      },
+      {
+        "quintile": 1,
+        "n": 1378,
+        "terminal_frac": 0.336,
+        "mean_thermal_frac": 0.1595
+      },
+      {
+        "quintile": 2,
+        "n": 972,
+        "terminal_frac": 0.3704,
+        "mean_thermal_frac": 0.2514
+      },
+      {
+        "quintile": 3,
+        "n": 1135,
+        "terminal_frac": 0.3639,
+        "mean_thermal_frac": 0.3475
+      },
+      {
+        "quintile": 4,
+        "n": 994,
+        "terminal_frac": 0.4336,
+        "mean_thermal_frac": 0.5274
+      }
+    ],
+    "conditional_mi_bits": 0.056946,
+    "n_middles_used": 28,
+    "top_mi_middles": [
+      {
+        "middle": "keed",
+        "mi": 0.451649,
+        "n": 26
+      },
+      {
+        "middle": "ked",
+        "mi": 0.381078,
+        "n": 23
+      },
+      {
+        "middle": "ot",
+        "mi": 0.362519,
+        "n": 37
+      },
+      {
+        "middle": "eok",
+        "mi": 0.311635,
+        "n": 28
+      },
+      {
+        "middle": "kee",
+        "mi": 0.27985,
+        "n": 27
+      },
+      {
+        "middle": "et",
+        "mi": 0.242276,
+        "n": 49
+      },
+      {
+        "middle": "eek",
+        "mi": 0.214279,
+        "n": 49
+      },
+      {
+        "middle": "h",
+        "mi": 0.201019,
+        "n": 44
+      },
+      {
+        "middle": "eod",
+        "mi": 0.196895,
+        "n": 55
+      },
+      {
+        "middle": "ee",
+        "mi": 0.179557,
+        "n": 121
+      }
+    ]
+  },
+  "T3": {
+    "test": "T3_position",
+    "verdict": "PASS",
+    "n_tokens": 5611,
+    "chi2": 38.33,
+    "cramers_v": 0.0584,
+    "chi2_p": 1.2760200549521983e-06,
+    "spearman_rho": 0.0948,
+    "spearman_p": 0.0,
+    "conditional_mi_bits": 0.024086,
+    "n_middles_used": 28,
+    "zone_profiles": {
+      "EARLY": {
+        "terminal": 0.3456,
+        "connector": 0.032,
+        "iterate": 0.2707,
+        "bare": 0.3518
+      },
+      "MID": {
+        "terminal": 0.4062,
+        "connector": 0.0305,
+        "iterate": 0.2931,
+        "bare": 0.2702
+      },
+      "LATE": {
+        "terminal": 0.3565,
+        "connector": 0.0234,
+        "iterate": 0.3123,
+        "bare": 0.3078
+      }
+    },
+    "per_middle_position_rho": {
+      "n_middles": 28,
+      "mean_abs_rho": 0.1794,
+      "top_5": [
+        {
+          "middle": "keeo",
+          "rho": 0.3934,
+          "p": 0.0251,
+          "n": 31
+        },
+        {
+          "middle": "r",
+          "rho": 0.3756,
+          "p": 0.0,
+          "n": 582
+        },
+        {
+          "middle": "ked",
+          "rho": 0.3132,
+          "p": 0.1172,
+          "n": 23
+        },
+        {
+          "middle": "kee",
+          "rho": 0.3057,
+          "p": 0.0975,
+          "n": 27
+        },
+        {
+          "middle": "eod",
+          "rho": 0.3018,
+          "p": 0.0209,
+          "n": 55
+        }
+      ]
+    },
+    "top_mi_middles": [
+      {
+        "middle": "kee",
+        "mi": 0.24059,
+        "n": 27
+      },
+      {
+        "middle": "ok",
+        "mi": 0.193045,
+        "n": 52
+      },
+      {
+        "middle": "h",
+        "mi": 0.117268,
+        "n": 44
+      },
+      {
+        "middle": "keeo",
+        "mi": 0.114776,
+        "n": 31
+      },
+      {
+        "middle": "ked",
+        "mi": 0.113222,
+        "n": 23
+      },
+      {
+        "middle": "ka",
+        "mi": 0.107094,
+        "n": 20
+      },
+      {
+        "middle": "ot",
+        "mi": 0.0999,
+        "n": 37
+      },
+      {
+        "middle": "ee",
+        "mi": 0.068438,
+        "n": 121
+      },
+      {
+        "middle": "lo",
+        "mi": 0.066264,
+        "n": 25
+      },
+      {
+        "middle": "od",
+        "mi": 0.057472,
+        "n": 122
+      }
+    ]
+  },
+  "T4": {
+    "test": "T4_paragraph_opener",
+    "verdict": "MIXED",
+    "n_tokens": 4090,
+    "chi2": 9.5,
+    "cramers_v": 0.0482,
+    "chi2_p": 0.017535328983026677,
+    "conditional_mi_bits": 0.016039,
+    "n_middles_used": 28,
+    "opener_profiles": {
+      "A": {
+        "n": 1927,
+        "deviation_rate": 0.4603,
+        "profile": {
+          "terminal": 0.3882,
+          "connector": 0.0192,
+          "iterate": 0.288,
+          "bare": 0.3046
+        }
+      },
+      "B": {
+        "n": 2163,
+        "deviation_rate": 0.4582,
+        "profile": {
+          "terminal": 0.3611,
+          "connector": 0.0319,
+          "iterate": 0.3061,
+          "bare": 0.301
+        }
+      }
+    },
+    "section_stratification": [
+      {
+        "section": "B",
+        "n": 1517,
+        "chi2": 2.41,
+        "v": 0.0398,
+        "p": 0.49352425956135937
+      },
+      {
+        "section": "C",
+        "n": 296,
+        "chi2": 10.07,
+        "v": 0.1845,
+        "p": 0.0135276651739904
+      },
+      {
+        "section": "H",
+        "n": 647,
+        "chi2": 4.83,
+        "v": 0.0864,
+        "p": 0.15148841474662966
+      },
+      {
+        "section": "S",
+        "n": 1521,
+        "chi2": 8.26,
+        "v": 0.0737,
+        "p": 0.030925914402517574
+      },
+      {
+        "section": "T",
+        "n": 109,
+        "chi2": 0.09,
+        "v": 0.0295,
+        "p": 0.990582174151263
+      }
+    ],
+    "fisher_combined_p": 0.017325,
+    "top_mi_middles": [
+      {
+        "middle": "kee",
+        "mi": 0.198192,
+        "n": 16
+      },
+      {
+        "middle": "eok",
+        "mi": 0.104802,
+        "n": 17
+      },
+      {
+        "middle": "ot",
+        "mi": 0.086118,
+        "n": 21
+      },
+      {
+        "middle": "eeo",
+        "mi": 0.083904,
+        "n": 63
+      },
+      {
+        "middle": "ked",
+        "mi": 0.077439,
+        "n": 18
+      },
+      {
+        "middle": "keed",
+        "mi": 0.069833,
+        "n": 16
+      },
+      {
+        "middle": "h",
+        "mi": 0.059506,
+        "n": 37
+      },
+      {
+        "middle": "eed",
+        "mi": 0.059311,
+        "n": 42
+      },
+      {
+        "middle": "ek",
+        "mi": 0.045162,
+        "n": 115
+      },
+      {
+        "middle": "ee",
+        "mi": 0.040289,
+        "n": 84
+      }
+    ]
+  },
+  "T5": {
+    "test": "T5_variance_decomposition",
+    "verdict": "INCONCLUSIVE",
+    "verdict_detail": "combined=5.2%",
+    "n_records": 5611,
+    "overall_deviation_rate": 0.4609,
+    "single_factors": {
+      "prefix_group": {
+        "variance_explained": 0.0042,
+        "mi_bits": 0.035273,
+        "groups": {
+          "BARE": {
+            "n": 396,
+            "deviation_rate": 0.5732
+          },
+          "ok_group": {
+            "n": 740,
+            "deviation_rate": 0.4108
+          },
+          "OTHER": {
+            "n": 821,
+            "deviation_rate": 0.3301
+          },
+          "qo": {
+            "n": 2019,
+            "deviation_rate": 0.5468
+          },
+          "ch": {
+            "n": 991,
+            "deviation_rate": 0.4692
+          },
+          "da": {
+            "n": 160,
+            "deviation_rate": 0.0625
+          },
+          "sh": {
+            "n": 484,
+            "deviation_rate": 0.4236
+          }
+        }
+      },
+      "position_zone": {
+        "variance_explained": 0.0002,
+        "mi_bits": 0.000844,
+        "groups": {
+          "EARLY": {
+            "n": 1936,
+            "deviation_rate": 0.4406
+          },
+          "MID": {
+            "n": 1706,
+            "deviation_rate": 0.4601
+          },
+          "LATE": {
+            "n": 1969,
+            "deviation_rate": 0.4815
+          }
+        }
+      },
+      "opener_mode": {
+        "variance_explained": 0.0001,
+        "mi_bits": 0.000416,
+        "groups": {
+          "A": {
+            "n": 2570,
+            "deviation_rate": 0.4479
+          },
+          "B": {
+            "n": 3041,
+            "deviation_rate": 0.4719
+          }
+        }
+      },
+      "thermal_bin": {
+        "variance_explained": 0.0,
+        "mi_bits": 0.00016,
+        "groups": {
+          "MED": {
+            "n": 2438,
+            "deviation_rate": 0.4676
+          },
+          "LOW": {
+            "n": 1704,
+            "deviation_rate": 0.4501
+          },
+          "HIGH": {
+            "n": 1469,
+            "deviation_rate": 0.4622
+          }
+        }
+      }
+    },
+    "combined_variance_explained": 0.0519,
+    "n_combo_groups": 42,
+    "dominant_factor": "prefix_group",
+    "max_single_var_explained": 0.0042,
+    "redundancy_prefix_opener_mi": 0.002627,
+    "redundancy_prefix_thermal_mi": 0.00589
+  },
+  "meta": {
+    "phase": 470,
+    "name": "SUFFIX_MODE_CONTEXT",
+    "n_classified_lines": 1927,
+    "n_all_tokens": 17844,
+    "n_flexible_tokens": 5611,
+    "flex_threshold": 0.8,
+    "min_freq": 20,
+    "n_perm": 1000,
+    "seed": 42,
+    "runtime_s": 10.4,
+    "verdicts": {
+      "T1": "PASS",
+      "T2": "PASS",
+      "T3": "PASS",
+      "T4": "MIXED",
+      "T5": "INCONCLUSIVE"
+    }
+  }
+}

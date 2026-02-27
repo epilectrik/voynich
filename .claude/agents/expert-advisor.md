@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1160 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1201 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
 the highest ID present is C1312.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1160 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1201 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1160 validated constraints are present as canonical one-line claims with tier
+1201 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-02-25 20:42
-**Version:** FROZEN STATE (1160 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-02-26 22:15
+**Version:** FROZEN STATE (1201 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1589,6 +1589,47 @@ C1313	**Two-Channel Thermal Atom Separation**	2	B, PREFIX, thermal, atom, qo, ok
 C1314	**Overshoot-Correct Bigram Enrichment**	2	B, PREFIX, thermal, sequencing, bigram, cycling
 C1315	**REGIME B Token Profile Discrimination**	2	B, REGIME, discrimination, category, atom, A-control
 C1316	**O-PREFIX Categorical Distinction**	2	B, PREFIX, o-prefix, ok, ot, ol, or, category, sequential
+C1317	**Visual Text Block Census**	2	B, block, census, section, layout
+C1318	**Block PREFIX Complementarity**	2	B, block, PREFIX, complementarity, divergence, parallel
+C1319	**Block-Initial Paragraph Enrichment**	2	B, block, HT, MARKING, enrichment, header
+C1320	**Block Internal Diversity**	2	B, block, kernel, category, diversity, falsified
+C1321	**Gallows Within-Block Ordering**	2	B, gallows, block, ordering, transition, t-late
+C1322	**Gallows-Category Independence**	2	B, gallows, category, independence, kernel, falsified
+C1323	**Cross-Block Gallows Restart**	2	B, gallows, block, restart, cross-block
+C1324	**Block-Final Termination Absence** (block-final -am DEPLETED 0.36x; suffix mode identical 58.9%=58.9%; 0/8 category shifts; boundaries are gallows-level not vocabulary-level)	2	B, block, termination, -am, suffix-mode, falsified
+C1325	**Folio REGIME Homogeneity**	2	B, block, folio, REGIME, kernel, homogeneity
+C1326	**Cross-Block Category Continuity**	2	B, block, category, continuity, cross-block, diversity
+C1327	**Section S Ordinal Progression**	2	B, section-S, ordinal, category, progression, falsified
+C1328	**Section S p-Gallows Dominance**	2	B, section-S, gallows, p-dominance, transition
+C1329	**Section S Block Diversity**	2	B, section-S, block, diversity, category, REGIME, falsified
+C1330	**Block Vocabulary Narrowing**	2	B, block, vocabulary, MIDDLE, ordinal, narrowing
+C1331	**Iterative Refinement Falsified**	1	B, block, refinement, falsified, kernel, suffix-mode, FL
+C1332	**Block-0 Marking Enrichment**	2	B, block, MARKING, MONITORING, category, vocabulary, block-0
+C1333	**Kernel Most Stable Dimension**	2	B, block, kernel, stability, REGIME, dimension
+C1334	**A Paragraph Dominance Structure**	2	A, paragraph, category, dominance, STAGING, section
+C1335	**A Paragraph Category Taxonomy**	2	A, paragraph, category, taxonomy, type
+C1336	**MARKING Paragraph-Initial Concentration**	2	A, paragraph, MARKING, positional, cross-system
+C1337	**A Folio Paragraph Category Independence**	2	A, paragraph, folio, category, independence, NON_SEQUENTIAL
+C1338	**MIDDLE Suffix Selectivity** (I(MIDDLE; suffix_cat) = 0.697 bits, 11.57x more than I(line_mode; suffix_cat) = 0.060; 60% of frequent MIDDLEs suffix-locked at >80%; 37.1% bare-locked, 22.9% terminal-locked; suffix is a MIDDLE property not a line property)	2	B, suffix, mode, MIDDLE, identity, mutual-information
+C1339	**MIDDLE Mode Flexibility** (only 7.7% of frequent MIDDLEs mode-locked >80%; 34.6% flexible 40-60%; MIDDLEs freely appear in both modes; THERMAL MIDDLEs lean Mode B 0.406 despite THERMAL enrichment in Mode A — suffix behavior not token selection)	2	B, suffix, mode, MIDDLE, flexibility, category
+C1340	**Suffix Stability Across Modes**	2	B, suffix, mode, stability, context
+C1341	**Suffix Mode Is Emergent Property** (token-identity-predicted mode matches actual 80.0% accuracy; baseline 59.7% lift 1.34x; Mode A recall 89.4%; mode emerges from token composition ~80%, contextual modulation ~20%; resolves C1256 opener mechanism and C1259 flat mode proportion)	2	B, suffix, mode, emergent, generative, identity
+C1342	**PREFIX Modulates Suffix Choice**	2	B, PREFIX, suffix, modulation, context
+C1343	**Category Environment Suffix Effect**	2	B, category, environment, suffix, THERMAL
+C1344	**Position Suffix Modulation**	2	B, position, suffix, modulation
+C1345	**Opener Mode Weak Propagation**	2	B, opener, mode, paragraph, propagation
+C1346	**Contextual Modulation Decomposition** (20% contextual residual decomposes: PREFIX 0.097 bits 50% → environment 0.057 bits 29% → position 0.024 bits 12% → opener 0.016 bits 8%; factors largely non-redundant MI 0.003-0.006 bits between pairs; modulation is probabilistic not deterministic)	2	B, context, decomposition, PREFIX, suffix, mode
+C1347	**B Reshapes Bridge Category Usage**	2	cross-system, bridge, category, reshaping, THERMAL
+C1348	**A Sections Differentiate at Category Level**	2	cross-system, section, category, differentiation
+C1349	**Dark Pipeline Preserves Category Structure**	2	cross-system, dark, category, preservation, independence
+C1350	**Dark MIDDLEs Atomistically Distributed**	2	B, dark, co-occurrence, adjacency, atomistic
+C1351	**Dark Successor Entropy Is Narrow**	2	B, dark, entropy, successor, grammar, context
+C1352	**Dark Folio Span Frequency-Matched** (78.3% of reliable dark MIDDLEs span folios within ±2σ of frequency-controlled null; 21.7% concentrated 0% dispersed; no bimodal staples-vs-specialists split; unimodal median 8 folios mean 10.8; span is consequence of abundance not role)	2	B, dark, span, frequency, distribution
+C1353	**Dark Weak Positional Bias**	2	B, dark, position, ordering, weak
+C1354	**Dark Grammar Influence Is Local Not Contextual**	2	B, dark, grammar, local, falsification
+C1355	**Dark Entropy Difference Partially Frequency-Mediated**	2	B, dark, entropy, frequency, artifact
+C1356	**Dark MIDDLE Identity Beyond PREFIX**	2	B, dark, PREFIX, MIDDLE, information
+C1357	**Dark Proximity Weakly Boosts Terminal Suffix**	2	B, dark, suffix, terminal, proximity
 
 ---
 
@@ -1596,7 +1637,7 @@ C1316	**O-PREFIX Categorical Distinction**	2	B, PREFIX, o-prefix, ok, ot, ol, or
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-02-25
+# Generated: 2026-02-26
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
@@ -1683,7 +1724,7 @@ F-RUP-001	Galenic Framework Directional Enhancement	F4	B	DIRECTIONAL_COHERENCE	C
 
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.71
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.72
 
 ---
 
@@ -4258,6 +4299,141 @@ Only Tier 0-2 structural findings are binding.
 |------|-------|--------|---------|
 | T1 | Two-channel thermal model | PASS | 0.0 |
 | T2 | Overshoot-correct cycling | PASS | 0.0 |
+
+
+## XXII. Parallel Operator Hypothesis (Session Analysis, 2026-02-25)
+
+**1. Shared vs Divergent MIDDLE Category Profiles (chi-squared = 2604, p < 0.001, 73 folios, 2721 paragraph pairs)**
+
+| Category | Shared | Divergent | Ratio | Interpretation |
+|----------|--------|-----------|-------|----------------|
+| THERMAL | 23.7% | 18.5% | 1.28x | Shared: batch identity |
+| TRANSITION | 18.8% | 13.3% | 1.41x | Shared: state changes |
+
+
+**2. No Ordinal Complexity Gradient (74 folios with 3+ paragraphs)**
+
+**3. "Master" Paragraph is Not a Combiner (59 folios with 4+ paragraphs)**
+
+**4. Paragraph Count Distribution**
+
+
+- Each operator has their own instructions (self-contained paragraphs, C845)
+
+
+
+- C1121 (domain irrecoverability) still applies — we cannot identify what product was being made
+
+
+## XXIII. Block Architecture: Gallows-Delimited Processing Stages (Phases 462-465)
+
+
+
+| Section | Blocks/folio | Paras/block | Tokens/block |
+|---------|-------------|-------------|--------------|
+| B | 3.1 | 3.16 | 190 |
+| H | 5.3 | 2.24 | 186 |
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+| Level | Unit | Sets | Inherits | Internal Structure |
+|-------|------|------|----------|-------------------|
+| **Folio** | Program | REGIME (thermal mode) | — | Blocks inherit REGIME |
+| **Block** | Processing stage | Operational emphasis (PREFIX) | REGIME from folio | Paragraphs diversify within |
+
+
+
+
+- The "no shutdown signal" finding (C1324) could mean blocks truly lack termination, or that the termination signal uses a channel we haven't tested (e.g., visual markers, spacing).
+
+---
+
+
+## XXIV. Block Vocabulary Drift and Multiplexing (Phases 466-467)
+
+
+
+| Test | Metric | Result | Verdict |
+|------|--------|--------|---------|
+| Kernel drift (k→e) | Spearman rho | +0.026, p=0.600 | **FAIL** |
+| Vocabulary narrowing | Spearman rho | **-0.248, p<0.001** | **PASS** |
+
+
+
+
+
+
+
+
+---
+
+
+## XXV. A Paragraph Category Architecture (Phase 468)
+
+
+
+| Type | Count | % | Section bias |
+|------|-------|---|-------------|
+| STAGING | 105 | 43.6% | H-dominant (88/105) |
+| FLOW | 48 | 19.9% | T-dominant (7/48) |
+
+
+
+
+
+| System | Location | MARKING Signal |
+|--------|----------|---------------|
+| **Currier A** | Paragraph beginnings (C1336) | Position 0.429, 2.07x first-token |
+| **Currier B** | Paragraph headers (C1287) | Header enrichment |
+
+
+
+
+
+
+
+- The C171 semantic ceiling means we cannot confirm that "STAGING-dominant" paragraphs actually describe procedural sequences — the category labels are structural metaphors, not translations
+
+---
+
+
+## XXVI. Suffix Mode as Emergent Property (Phase 469)
+
+
+
+
+
+
+| Band | Count | % |
+|------|-------|---|
+| Bare-locked (>80% bare) | 26 | 37.1% |
+| Terminal-locked (>80% terminal) | 16 | 22.9% |
+
+
+
+
+
+
+
+
+
+- **C1259**: Mode proportion is flat across body position (rho=-0.027) — because the vocabulary pool doesn't change position
+- **C1233**: Mode alternation has near-random entropy (97.8%) — because mode is a consequence of vocabulary sampling, not a deterministic sequence
+- **C1267**: Mode distinction doesn't organize A records — because mode is a B-execution phenomenon that emerges from how B tokens are suffixed, not from which MIDDLEs are selected
+
+- The suffix sets and centroids (C1231) are defined from the corpus itself, so the "mode" construct is inherently circular at some level — mode is defined by suffixes, and we're testing what determines suffixes
 
 
 ---

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1160 validated constraints | **Version:** 4.64 | **Date:** 2026-02-25
+**Total:** 1201 validated constraints | **Version:** 4.76 | **Date:** 2026-02-26
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3754,6 +3754,238 @@ Tests whether distillation physics maps to the manuscript's structural patterns.
 - 5 Fits registered (F-B-008 through F-B-012)
 - Token coverage: 99.5% of B tokens receive a distillation mapping
 - Post-phase: ok = thermal verification (coarse), ot = operational verification (fine); control flow sh->qo->ok->ot
+
+---
+
+### Visual Text Block Parallel Operators (C1317-C1320) -- Phase: TEXT_BLOCK_PARALLEL_OPERATORS (Phase 462)
+
+Tests whether visual text blocks (physical text clumps on folios) group complementary parallel operators. 7-test battery: block census, thermal convergence, PREFIX divergence, category convergence, operational coverage, block-initial enrichment, section architecture. 4/7 pass. Key finding: blocks maximize internal diversity — paragraphs within a block specialize in different operations (PREFIX), different thermal profiles (kernel), and different categories. Block-initial paragraphs serve as headers.
+
+| # | Summary | Tier | Tags | Link |
+|---|---------|------|------|------|
+| **1317** | **Visual Text Block Census** (91.5% multi-block, 485 blocks/82 folios; S=12.4, B=4.6, H=2.3 blocks/folio; KW H=56.8/123.5 both p<0.001) | 2 | B, block, census, section, layout | -> [C1317_visual_text_block_census.md](C1317_visual_text_block_census.md) |
+| **1318** | **Block PREFIX Complementarity** (within-block JSD=0.276 > between-block 0.225; MW z=6.12 p<0.001; perm p=0.000; confirmed 4/5 sections: B p=0.006, C p=0.030, H p=0.017, S p<0.001) | 2 | B, block, PREFIX, complementarity, divergence, parallel | -> [C1318_block_prefix_complementarity.md](C1318_block_prefix_complementarity.md) |
+| **1319** | **Block-Initial Paragraph Enrichment** (HT: 7.3% vs 4.9% z=7.07 p<0.001; MARKING: 9.4% vs 7.0% z=4.81 p<0.001; 484 initial vs 190 internal paragraphs) | 2 | B, block, HT, MARKING, enrichment, header | -> [C1319_block_initial_enrichment.md](C1319_block_initial_enrichment.md) |
+| **1320** | **Block Internal Diversity** (kernel cosine: within 0.888 vs between 0.920, p=0.104; category Jaccard: within 0.667 vs between 0.731, z=-3.96 p<0.001; thermal envelope hypothesis falsified; blocks maximize internal diversity) | 2 | B, block, kernel, category, diversity, falsified | -> [C1320_block_internal_diversity.md](C1320_block_internal_diversity.md) |
+
+**Phase 462 findings (Text Block Parallel Operators):**
+- **4/7 tests pass** (T2, T4 reversed — blocks diversify rather than converge; T5 marginal p=0.021)
+- Block census: 91.5% multi-block, 485 total, section-specific architecture (S=12.4 vs H=2.3 blocks/folio)
+- PREFIX complementarity: within-block JSD > between-block (p<0.001), confirmed in 4/5 sections independently
+- Block-initial enrichment: HT 7.3% vs 4.9% (z=7.07), MARKING 9.4% vs 7.0% (z=4.81) — header pattern
+- Thermal envelope hypothesis FALSIFIED: within-block kernel similarity NOT higher than between-block
+- Category envelope hypothesis FALSIFIED: within-block category overlap significantly LOWER than between-block
+- Revised model: blocks are self-contained processing stages that maximize internal operational diversity
+- Structural hierarchy confirmed: token < line < paragraph < block < folio
+
+---
+
+### Block Gallows Ordering (C1321-C1322) -- Phase: BLOCK_GALLOWS_ORDERING (Phase 463)
+
+Tests whether gallows letters encode paragraph operator roles within blocks and whether blocks have internal ordered execution structure. 5-test battery: gallows-category association, gallows-kernel association, gallows ordering within blocks, within-block position gradient, block position in folio. 1/5 pass. Key finding: gallows encode paragraph PHASE (when in block), not TYPE (what it does). t-gallows clusters late (position 0.700), k/f/p cluster early (0.255-0.319). Universal k/f/p→t transition flow.
+
+| # | Summary | Tier | Tags | Link |
+|---|---------|------|------|------|
+| **1321** | **Gallows Within-Block Ordering** (t mean pos=0.700 vs k/f/p 0.255-0.319; transition chi-sq=64.88 df=9 p<0.001; perm p=0.002; k→t 77%, p→t 74%, t→t 72%; 131 blocks, 186 transitions) | 2 | B, gallows, block, ordering, transition, t-late | -> [C1321_gallows_within_block_ordering.md](C1321_gallows_within_block_ordering.md) |
+| **1322** | **Gallows-Category Independence** (0/8 categories KW p<0.01 across gallows types; 1/3 kernel fracs sig but only 1 section; category range across gallows <0.024; gallows encode position not type) | 2 | B, gallows, category, independence, kernel, falsified | -> [C1322_gallows_category_independence.md](C1322_gallows_category_independence.md) |
+
+**Phase 463 findings (Block Gallows Ordering):**
+- **1/5 tests pass** (T1/T2 fail: gallows don't predict operational type; T4/T5 fail: no position gradients)
+- Gallows within-block ordering: t clusters late (0.700), k/f/p cluster early (0.255-0.319)
+- Transition matrix highly non-uniform (chi-sq=64.88, p<0.001): universal k/f/p→t flow
+- t self-continues at 72% within blocks — sustained execution/continuation marker
+- Gallows-category independence: 0/8 categories significantly predicted by gallows letter
+- Gallows encode WHEN in the block (phase), not WHAT it does (type)
+- C869 (Tier 3) partially supported (k/f early) but revised: split is k/f/p vs t, not k/f vs p/t
+- PREFIX encodes operational specialization (C1318), gallows encodes positional phase — orthogonal axes
+
+---
+
+### Block Execution Cycle (C1323-C1326) -- Phase: BLOCK_EXECUTION_CYCLE (Phase 464)
+
+Tests whether visual text blocks form complete execution cycles with cross-block restart, block-final termination signatures, and REGIME inheritance.
+
+| # | Summary | Tier | Tags | Link |
+|---|---------|------|------|------|
+| **1323** | **Cross-Block Gallows Restart** (block-final t=39.8%, block-initial k/f/p=72.3%; chi-sq=14.82 df=3 p=0.002; 403 transitions; gallows cycle restarts at block boundaries) | 2 | B, gallows, block, restart, cross-block | -> [C1323_cross_block_gallows_restart.md](C1323_cross_block_gallows_restart.md) |
+| **1324** | **Block-Final Termination Absence** (block-final -am DEPLETED 0.36x; suffix mode identical 58.9%=58.9%; 0/8 category shifts; boundaries are gallows-level not vocabulary-level) | 2 | B, block, termination, -am, suffix-mode, falsified | -> [C1324_block_final_termination_absence.md](C1324_block_final_termination_absence.md) |
+| **1325** | **Folio REGIME Homogeneity** (within-folio block distance 0.056 < between-folio 0.065; MW z=-8.62 p<0.001; perm p<0.001; folio sets REGIME, blocks inherit) | 2 | B, block, folio, REGIME, kernel, homogeneity | -> [C1325_folio_regime_homogeneity.md](C1325_folio_regime_homogeneity.md) |
+| **1326** | **Cross-Block Category Continuity** (cross-block JSD 0.071 < within-block 0.136; z=-8.98 p<0.001; block boundaries smooth not discontinuous; reinforces C1320 within-block diversity) | 2 | B, block, category, continuity, cross-block, diversity | -> [C1326_cross_block_category_continuity.md](C1326_cross_block_category_continuity.md) |
+
+**Phase 464 findings (Block Execution Cycle):**
+- **2/8 tests pass** (A1 gallows restart, C1 REGIME homogeneity)
+- Gallows cycle restarts at block boundaries: k/f/p-enriched at block-initial, t-enriched at block-final
+- Block-final paragraphs show NO termination signatures: -am depleted (0.36x), suffix mode identical, 0/8 category shifts
+- Folio REGIME homogeneity: blocks within a folio share thermal character (kernel distance 0.056 < 0.065)
+- Cross-block category continuity: adjacent blocks more categorically similar than within-block paragraphs (JSD 0.071 < 0.136)
+- Block boundaries are gallows-level structural markers (C845), not vocabulary-level content markers
+- Outcome matches predicted: "cross-block transitions confirmed but block-final signatures weak"
+- Block architecture: folio = REGIME container, block = processing stage, paragraph = specialized operator
+
+---
+
+### Section S Block Architecture (C1327-C1329) -- Phase: SECTION_S_BLOCK_ARCHITECTURE (Phase 465)
+
+Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 paras/block) are parallel monitoring stations or ordered processing stages. Parallel stations hypothesis falsified (1/6 pass).
+
+| # | Summary | Tier | Tags | Link |
+|---|---------|------|------|------|
+| **1327** | **Section S Ordinal Progression** (OPERATION rho=-0.169 p<0.001; THERMAL rho=+0.123 p=0.003; TRANSITION rho=+0.160 p=0.002; 3/12 metrics significant; early=OPERATION, late=THERMAL/TRANSITION; falsifies exchangeability) | 2 | B, section-S, ordinal, category, progression, falsified | -> [C1327_section_s_ordinal_progression.md](C1327_section_s_ordinal_progression.md) |
+| **1328** | **Section S p-Gallows Dominance** (p=59.8% of S blocks; p->p 69% self-continuation; chi-sq=61.58 p<0.001; distinct from k/f/p->t pattern in non-S; all "running mode") | 2 | B, section-S, gallows, p-dominance, transition | -> [C1328_section_s_p_gallows_dominance.md](C1328_section_s_p_gallows_dominance.md) |
+| **1329** | **Section S Block Diversity** (within-folio block JSD 0.069 > non-S 0.052; z=7.20 p<0.001; S blocks MORE diverse, not less; kernel distance also higher than B/C; reverses parallel prediction) | 2 | B, section-S, block, diversity, category, REGIME, falsified | -> [C1329_section_s_block_diversity.md](C1329_section_s_block_diversity.md) |
+
+**Phase 465 findings (Section S Block Architecture):**
+- **1/6 tests pass** — parallel stations hypothesis falsified
+- S blocks show ordinal progression: OPERATION→THERMAL/TRANSITION shift with block position (C1327)
+- S has unique p-gallows dominance: p→p self-continuation at 69%, no k/f/p→t cycle (C1328)
+- S blocks are MORE categorically diverse than non-S, not less (C1329)
+- S blocks ARE vocabulary-independent (Jaccard 0.327 < non-S 0.438), but operationally ordered
+- lk distribution marginal ordinal trend (p=0.010) — monitoring may increase toward later blocks
+- Section S = ordered monitoring sequence through operationally diverse checkpoints, not parallel stations
+
+### Block Vocabulary Drift (C1330-C1331) -- Phase: BLOCK_VOCABULARY_DRIFT (Phase 466)
+
+| # | Constraint | Tier | Tags | Ref |
+|---|-----------|------|------|-----|
+| **1330** | **Block Vocabulary Narrowing** (later blocks use fewer distinct MIDDLEs; median rho=-0.248 perm p<0.001; 39/56 folios negative; universal across sections B/C/H/S; coverage of block 0 MIDDLEs drops to ~0.40 by block 3) | 2 | B, block, vocabulary, MIDDLE, ordinal, narrowing | -> [C1330_block_vocabulary_narrowing.md](C1330_block_vocabulary_narrowing.md) |
+| **1331** | **Iterative Refinement Falsified** (blocks do NOT show directional drift toward target: k not decreasing rho=+0.026 p=0.600; Mode A not decreasing rho=-0.038 p=0.199; FL not advancing rho=+0.021 p=0.435; only e marginal at p=0.033; section-specific sub-Bonferroni signals do not constitute universal mechanism) | 1 | B, block, refinement, falsified, kernel, suffix-mode, FL | -> [C1331_iterative_refinement_falsified.md](C1331_iterative_refinement_falsified.md) |
+
+**Phase 466 findings (Block Vocabulary Drift):**
+- **1/4 tests pass** — iterative refinement hypothesis falsified
+- Vocabulary narrowing is universal: later blocks use fewer distinct MIDDLEs (C1330)
+- No k→e kernel drift, no Mode A→B shift, no FL stage progression across blocks (C1331)
+- Section-specific signals: B/C show partial refinement, H reversed, S flat — no universal mechanism
+- C1326 (cross-block similarity) is NOT explained by convergence — blocks share REGIME, not a target
+
+### Multiplexed Procedure Test (C1332-C1333) -- Phase: MULTIPLEXED_PROCEDURE_TEST (Phase 467)
+
+| # | Constraint | Tier | Tags | Ref |
+|---|-----------|------|------|-----|
+| **1332** | **Block-0 Marking Enrichment** (block-0-unique MIDDLEs are MARKING 2.48x enriched and MONITORING 1.57x enriched; OPERATION 0.65x and TRANSITION 0.64x depleted; STAGING+CONTAINMENT flat at 0.92x; chi2=212, V=0.136; holds in 3/3 sections; "setup block" prediction falsified) | 2 | B, block, MARKING, MONITORING, category, vocabulary, block-0 | -> [C1332_block0_marking_enrichment.md](C1332_block0_marking_enrichment.md) |
+| **1333** | **Kernel Most Stable Dimension** (within-folio inter-block kernel distance 0.027 < category JSD 0.052 < PREFIX JSD 0.145; kernel lowest in all 5 sections; kernel < category in 36/56 folios MW p=0.007; kernel < PREFIX in 56/56 folios p<0.001) | 2 | B, block, kernel, stability, REGIME, dimension | -> [C1333_kernel_most_stable_dimension.md](C1333_kernel_most_stable_dimension.md) |
+
+**Phase 467 findings (Multiplexed Procedure Test):**
+- **2/4 tests pass** — block 0 IS special but NOT as a "setup" block
+- Block-0-unique vocabulary is MARKING/MONITORING-enriched, not STAGING/CONTAINMENT (C1332)
+- Kernel is the most stable inter-block dimension in every section (C1333)
+- No significant block size gradient (token rho=-0.050, p=0.251) — later blocks not reliably shorter
+- Vocabulary containment asymmetry exists (6.2pp, p=0.004) but below 10pp threshold
+- Block 0 provides marking/annotation context; later blocks focus on operational execution
+- Strict multiplexing model (shared apparatus setup) NOT confirmed; "marking context" model emerges
+
+### A Paragraph Category Architecture (C1334-C1337) -- Phase: A_PARAGRAPH_CATEGORY_ARCHITECTURE (Phase 468)
+
+| # | Constraint | Tier | Tags | Ref |
+|---|-----------|------|------|-----|
+| **1334** | **A Paragraph Dominance Structure** (43.6% of A paragraphs are STAGING-dominant at 1.89x base rate; CONTAINMENT/MONITORING/MARKING rarely or never dominate paragraphs; mean dominance 0.299 vs null 0.281, perm p<0.001; section-structured: H→STAGING, P→THERMAL, T→FLOW) | 2 | A, paragraph, category, dominance, STAGING, section | -> [C1334_a_paragraph_dominance_structure.md](C1334_a_paragraph_dominance_structure.md) |
+| **1335** | **A Paragraph Category Taxonomy** (5 distinct category-based paragraph types: STAGING:105, FLOW:48, TRANSITION:42, THERMAL:33, OPERATION:12; within-type JSD 0.074 < between-type 0.108, MW z=-45.67 p<0.001; gap 0.034 vs null 0.0002; independent of C850 structural taxonomy) | 2 | A, paragraph, category, taxonomy, type | -> [C1335_a_paragraph_category_taxonomy.md](C1335_a_paragraph_category_taxonomy.md) |
+| **1336** | **MARKING Paragraph-Initial Concentration** (MARKING mean position 0.429 in A paragraphs, deviation 0.071, perm p<0.001; first-token MARKING rate 15.5% vs base 7.5% = 2.07x; sole exception to paragraph-level position-free behavior; parallels B C1287 header and C1332 block-0 enrichment) | 2 | A, paragraph, MARKING, positional, cross-system | -> [C1336_marking_paragraph_initial_concentration.md](C1336_marking_paragraph_initial_concentration.md) |
+| **1337** | **A Folio Paragraph Category Independence** (consecutive paragraph JSD 0.104 vs random 0.096, perm p=0.850; first-paragraph JSD from rest = 0.004, max enrichment 1.25x; confirms C240 NON_SEQUENTIAL extends to paragraph categories; contrasts with B C1326 block continuity and C1332 block-0 distinctness) | 2 | A, paragraph, folio, category, independence, NON_SEQUENTIAL | -> [C1337_a_folio_paragraph_category_independence.md](C1337_a_folio_paragraph_category_independence.md) |
+
+**Phase 468 findings (A Paragraph Category Architecture):**
+- **2/4 tests pass, 1 weak, 1 fail** — A paragraph category architecture characterized
+- STAGING dominates the A registry: 43.6% of paragraphs are STAGING-dominant (C1334)
+- 5 distinct paragraph types exist, complementing C850's structural taxonomy (C1335)
+- MARKING is the sole exception to position-free paragraph behavior — front-loaded at 0.429 (C1336)
+- No folio-level paragraph sequencing — A paragraphs are categorically independent within folios (C1337)
+- Section specialization: H is STAGING-centric, P is THERMAL-centric, T is FLOW-centric
+- Cross-system MARKING pattern: front-loaded in A paragraphs (C1336), enriched in B headers (C1287), enriched in B block 0 (C1332)
+
+### Suffix Mode Assignment (C1338-C1341) -- Phase: SUFFIX_MODE_ASSIGNMENT (Phase 469)
+
+| # | Constraint | Tier | Tags | Ref |
+|---|-----------|------|------|-----|
+| **1338** | **MIDDLE Suffix Selectivity** (I(MIDDLE; suffix_cat) = 0.697 bits, 11.57x more than I(line_mode; suffix_cat) = 0.060; 60% of frequent MIDDLEs suffix-locked at >80%; 37.1% bare-locked, 22.9% terminal-locked; suffix is a MIDDLE property not a line property) | 2 | B, suffix, mode, MIDDLE, identity, mutual-information | -> [C1338_middle_suffix_selectivity.md](C1338_middle_suffix_selectivity.md) |
+| **1339** | **MIDDLE Mode Flexibility** (only 7.7% of frequent MIDDLEs mode-locked >80%; 34.6% flexible 40-60%; MIDDLEs freely appear in both modes; THERMAL MIDDLEs lean Mode B 0.406 despite THERMAL enrichment in Mode A — suffix behavior not token selection) | 2 | B, suffix, mode, MIDDLE, flexibility, category | -> [C1339_middle_mode_flexibility.md](C1339_middle_mode_flexibility.md) |
+| **1340** | **Suffix Stability Across Modes** (same MIDDLE carries same suffix regardless of mode; median cross-mode JSD 0.020; only 12.1% show significant shift p<0.01; small real context effect perm p=0.003 mean JSD 0.035 vs null 0.026) | 2 | B, suffix, mode, stability, context | -> [C1340_suffix_stability_across_modes.md](C1340_suffix_stability_across_modes.md) |
+| **1341** | **Suffix Mode Is Emergent Property** (token-identity-predicted mode matches actual 80.0% accuracy; baseline 59.7% lift 1.34x; Mode A recall 89.4%; mode emerges from token composition ~80%, contextual modulation ~20%; resolves C1256 opener mechanism and C1259 flat mode proportion) | 2 | B, suffix, mode, emergent, generative, identity | -> [C1341_mode_emergent_property.md](C1341_mode_emergent_property.md) |
+
+**Phase 469 findings (Suffix Mode Assignment):**
+- **1/4 PASS, 1 FAIL, 2 MIXED** — suffix mode mechanism resolved
+- MIDDLE identity determines suffix 11.57x more than line mode (C1338) — suffix is a token property
+- MIDDLEs are NOT mode-locked (92.3% flexible), freely appearing in both modes (C1339)
+- Same MIDDLE keeps its suffix across modes (median JSD 0.020, 87.9% stable) (C1340)
+- Line mode is 80% predictable from token composition alone (C1341) — mode is emergent, not imposed
+- The generative model: MIDDLEs bring intrinsic suffix preferences → aggregate profile → line mode emerges
+- ~20% contextual modulation accounts for the "low selectivity" MIDDLEs and mode-level coordination
+- Resolves: C1256 (opener seeds profile), C1259 (flat proportion = position-independent vocabulary)
+
+### Suffix Mode Context (C1342-C1346) -- Phase: SUFFIX_MODE_CONTEXT (Phase 470)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1342** | **PREFIX Modulates Suffix Choice** (PREFIX is dominant contextual suffix modulator for flexible MIDDLEs; conditional MI 0.097 bits 2.82x null perm p=0.001; V=0.23; da→93% bare qo→41% terminal ok_group→52% terminal BARE→41% bare; resolves C1339 THERMAL paradox) | 2 | B, PREFIX, suffix, modulation, context | -> [C1342_prefix_suffix_modulation.md](C1342_prefix_suffix_modulation.md) |
+| **1343** | **Category Environment Suffix Effect** (THERMAL-rich line neighborhoods push flexible MIDDLEs toward terminal suffix; terminal tokens have mean 26.6% THERMAL neighbors vs 23.3% for bare; Mann-Whitney Z=5.87 p<0.001; conditional MI 0.057 bits) | 2 | B, category, environment, suffix, THERMAL | -> [C1343_category_environment_suffix_effect.md](C1343_category_environment_suffix_effect.md) |
+| **1344** | **Position Suffix Modulation** (MID-line position boosts terminal suffix for flexible MIDDLEs; MID 40.6% terminal vs EARLY 34.6%; V=0.058 p<0.001; Spearman rho=0.095; conditional MI 0.024 bits; specification peaks at mid-line) | 2 | B, position, suffix, modulation | -> [C1344_position_suffix_modulation.md](C1344_position_suffix_modulation.md) |
+| **1345** | **Opener Mode Weak Propagation** (paragraph opener mode weakly propagates to flexible MIDDLE suffix; A-opened 38.8% terminal vs B-opened 36.1%; V=0.048 p=0.018; conditional MI 0.016 bits; section-heterogeneous: Section C V=0.185 drives effect) | 2 | B, opener, mode, paragraph, propagation | -> [C1345_opener_mode_weak_propagation.md](C1345_opener_mode_weak_propagation.md) |
+| **1346** | **Contextual Modulation Decomposition** (20% contextual residual decomposes: PREFIX 0.097 bits 50% → environment 0.057 bits 29% → position 0.024 bits 12% → opener 0.016 bits 8%; factors largely non-redundant MI 0.003-0.006 bits between pairs; modulation is probabilistic not deterministic) | 2 | B, context, decomposition, PREFIX, suffix, mode | -> [C1346_contextual_modulation_decomposition.md](C1346_contextual_modulation_decomposition.md) |
+
+**Phase 470 findings (Suffix Mode Context):**
+- **3/5 PASS, 1 MIXED, 1 INCONCLUSIVE** — contextual residual decomposed
+- PREFIX is the dominant contextual channel (C1342: 0.097 bits, 50% of total contextual MI)
+- da PREFIX suppresses suffixation (93% bare), qo/ok bias toward terminal (C1342)
+- THERMAL-rich neighborhoods independently push toward terminal suffix (C1343: Z=5.87)
+- MID-line position has highest terminal fraction (C1344: 40.6% vs EARLY 34.6%)
+- Opener mode barely reaches individual token suffix (C1345: V=0.048, section-heterogeneous)
+- Factors are non-redundant and distributed — PREFIX dominates but doesn't account for everything (C1346)
+- Resolves: C1339 THERMAL paradox, extends C1297/C1302 from category to suffix domain
+
+### A-B Category Flow (C1347-C1349) -- Phase: A_B_CATEGORY_FLOW (Phase 471)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1347** | **B Reshapes Bridge Category Usage** (Bridge MIDDLEs carry same category in A and B but B reshapes usage; A delivers STAGING-heavy 25.0% B consumes THERMAL-heavy 23.7%; amplifies THERMAL 1.72x OPERATION 1.58x suppresses MONITORING 0.27x STAGING 0.54x; JSD=0.026 rho=0.64; consumption matches B total JSD=0.004; mode correlation Z=3.45 p=0.0004) | 2 | cross-system, bridge, category, reshaping, THERMAL | -> [C1347_bridge_category_reshaping.md](C1347_bridge_category_reshaping.md) |
+| **1348** | **A Sections Differentiate at Category Level** (Despite C1136 MIDDLE-level uniformity cosine 0.9997 A sections differentiate at category level chi2=380 V=0.144 perm p=0.001; P is THERMAL-heavy 25.1% T is FLOW-heavy 22.9% H is STAGING-heavy 26.0%; cross-system T→T rho=0.85 p=0.016; category-level parameterization via frequency weighting of shared MIDDLEs) | 2 | cross-system, section, category, differentiation | -> [C1348_section_category_differentiation.md](C1348_section_category_differentiation.md) |
+| **1349** | **Dark Pipeline Preserves Category Structure** (Dark pipeline 300 MIDDLEs preserves category structure A→B almost perfectly JSD=0.009 rho=0.976 p=0.005; MARKING dominates both sides A 40.0% B 33.1%; section-modulated in B chi2=184 V=0.166 perm p=0.001; bridge-dark category independence rho=0.19 p=0.57; dual-channel architecture confirmed) | 2 | cross-system, dark, category, preservation, independence | -> [C1349_dark_pipeline_category_preservation.md](C1349_dark_pipeline_category_preservation.md) |
+
+**Phase 471 findings (A-B Category Flow):**
+- **2 MIXED, 1 SECTION_FLOW, 1 PRESERVED** — dual-channel category architecture quantified
+- B actively reshapes bridge category delivery: amplifies THERMAL/OPERATION, suppresses STAGING/MONITORING (C1347)
+- Bridge consumption perfectly integrates into B's category landscape: JSD(consumption, B_total) = 0.004 (C1347)
+- A sections differentiate at category level despite MIDDLE-level uniformity (C1348: V=0.144, perm p=0.001)
+- Category-level parameterization: A sends same MIDDLEs at different rates, creating section-specific category signatures (C1348)
+- Dark pipeline preserves category structure near-perfectly across systems (C1349: rho=0.976, JSD=0.009)
+- Bridge and dark carry independent category information per B section (C1349: rho=0.19)
+- Extends: C918 (A parameterizes B — now quantified at category level), C1136 (section-blind MIDDLEs — overturned at category level), C1272 (dark not category-sorted — explains preservation)
+
+### Dark Pipeline Structure (C1350-C1353) -- Phase: DARK_PIPELINE_STRUCTURE (Phase 472)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1350** | **Dark MIDDLEs Atomistically Distributed** (No within-section co-occurrence structure 0/5 sections significant; dark-dark adjacency ratio=1.024 p=0.76 random; no combinatorial groups no material-list behavior; each dark MIDDLE operates independently) | 2 | B, dark, co-occurrence, adjacency, atomistic | -> [C1350_dark_atomistic_distribution.md](C1350_dark_atomistic_distribution.md) |
+| **1351** | **Dark Successor Entropy Is Narrow** (Dark MIDDLEs have significantly narrower successor entropy than bridge; median 2.59 vs 4.18 bits Z=-7.45 p<0.001; each dark token constrains local grammar continuation to restricted instruction classes; contra material-referent prediction; consistent with context-setting parameters) | 2 | B, dark, entropy, successor, grammar, context | -> [C1351_dark_successor_constraint.md](C1351_dark_successor_constraint.md) |
+| **1352** | **Dark Folio Span Frequency-Matched** (78.3% of reliable dark MIDDLEs span folios within ±2σ of frequency-controlled null; 21.7% concentrated 0% dispersed; no bimodal staples-vs-specialists split; unimodal median 8 folios mean 10.8; span is consequence of abundance not role) | 2 | B, dark, span, frequency, distribution | -> [C1352_dark_span_frequency_matched.md](C1352_dark_span_frequency_matched.md) |
+| **1353** | **Dark Weak Positional Bias** (Dark tokens precede bridge 52.7% Z=3.0 perm p=0.004 but effect size trivial 2.7% above null; section-uniform 49-57%; no dedicated syntactic slot; freely interleaved with grammar tokens) | 2 | B, dark, position, ordering, weak | -> [C1353_dark_weak_positional_bias.md](C1353_dark_weak_positional_bias.md) |
+
+**Phase 472 findings (Dark Pipeline Structure):**
+- **1 NARROW, 3 MIXED, 1 RANDOM** — dark pipeline is neither material referents nor process identifiers
+- Dark MIDDLEs are atomistic: no co-occurrence groups, no adjacency clustering (C1350)
+- Dark successor entropy is significantly narrower than bridge (C1351: Z=-7.45) — each dark token constrains grammar continuation
+- Folio span matches frequency expectation, no staples-vs-specialists split (C1352)
+- Weak positional bias (52.7% before bridge) but no syntactic slot (C1353)
+- Overall: dark pipeline = **context-setting parameters** that independently constrain local execution, not material referents or process labels
+- Falsifies: material-referent interpretation (no co-occurrence groups, no wide entropy, no clustering)
+- Extends: C1349 (dark preserves A's category structure — the preserved content is parameterization context)
+
+### Layered Grammar Test (C1354-C1357) -- Phase: LAYERED_GRAMMAR_TEST (Phase 473)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1354** | **Dark Grammar Influence Is Local Not Contextual** (Dark presence does NOT condition bridge-to-bridge transitions MI=0.098 null=0.101 perm p=0.90; dark removal does not genericize transitions entropy diff 0.73 null 0.72 p=0.38; three-tier grammar model FALSIFIED; dark influence is next-token only) | 2 | B, dark, grammar, local, falsification | -> [C1354_dark_local_not_contextual.md](C1354_dark_local_not_contextual.md) |
+| **1355** | **Dark Entropy Difference Partially Frequency-Mediated** (Dark-bridge successor entropy difference survives frequency matching Z=-5.60 p<0.001 but collapses under subsampling to equal n Z=-0.55 p=0.50; dark MIDDLEs have restricted environments rather than inherently narrow entropy; C1351 magnitude is partially sampling artifact) | 2 | B, dark, entropy, frequency, artifact | -> [C1355_dark_entropy_frequency_ambiguous.md](C1355_dark_entropy_frequency_ambiguous.md) |
+| **1356** | **Dark MIDDLE Identity Beyond PREFIX** (Within each PREFIX group dark MIDDLE identity significantly predicts successor class conditional MI=2.761 null=2.683 Z=4.50 perm p<0.001; compound structure encodes specific grammar constraints PREFIX cannot explain; 13 PREFIX groups MI range 1.44-3.11 bits) | 2 | B, dark, PREFIX, MIDDLE, information | -> [C1356_dark_middle_beyond_prefix.md](C1356_dark_middle_beyond_prefix.md) |
+| **1357** | **Dark Proximity Weakly Boosts Terminal Suffix** (Bridge tokens adjacent to dark have higher terminal rate 25.2% vs 20.7% Z=3.51 p<0.001 V=0.042; survives PREFIX control 12/16 groups show boost; effect real but tiny; dark proximity biases toward specification mode) | 2 | B, dark, suffix, terminal, proximity | -> [C1357_dark_proximity_suffix_boost.md](C1357_dark_proximity_suffix_boost.md) |
+
+**Phase 473 findings (Layered Grammar Test):**
+- **Gates PASS, all 3 core tests FAIL** — three-tier grammar model falsified
+- Dark successor entropy survives frequency matching but collapses under subsampling (C1355)
+- Dark MIDDLE identity adds info beyond PREFIX (C1356: Z=4.50) — genuine but local
+- Dark presence does NOT condition line-level bridge transitions (C1354: p=0.90)
+- Dark removal does NOT genericize bridge transitions (C1354: p=0.38)
+- Dark proximity weakly boosts terminal suffix (C1357: V=0.042) — detectable but tiny
+- Overall: dark MIDDLEs have very local grammar influence (next-token) but are NOT a grammar tier
+- Falsifies: three-tier grammar model (dark=context → bridge=execution → suffix=mode)
+- Preserves: binary model with refinement — dark tokens are grammar-adjacent, not grammar-participating
 
 ---
 

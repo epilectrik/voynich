@@ -1,0 +1,168 @@
+{
+  "phase": "TEXT_BLOCK_PARALLEL_OPERATORS",
+  "phase_number": 462,
+  "tier": "2-3 (structural with interpretive implications)",
+  "seed": 42,
+  "n_permutations": 10000,
+  "tests": {
+    "T1": {
+      "test": "T1: Block Census Validation",
+      "tier": "T2 (structural)",
+      "passed": true,
+      "total_folios": 82,
+      "multi_block_folios": 75,
+      "multi_block_pct": 91.5,
+      "total_blocks": 485,
+      "section_summary": {
+        "B": {
+          "folios": 20,
+          "multi_block": 20,
+          "pct_multi": 100.0,
+          "avg_blocks": 4.55,
+          "min_blocks": 2,
+          "max_blocks": 8
+        },
+        "C": {
+          "folios": 5,
+          "multi_block": 5,
+          "pct_multi": 100.0,
+          "avg_blocks": 4.0,
+          "min_blocks": 2,
+          "max_blocks": 6
+        },
+        "H": {
+          "folios": 32,
+          "multi_block": 25,
+          "pct_multi": 78.1,
+          "avg_blocks": 2.25,
+          "min_blocks": 1,
+          "max_blocks": 4
+        },
+        "S": {
+          "folios": 23,
+          "multi_block": 23,
+          "pct_multi": 100.0,
+          "avg_blocks": 12.43,
+          "min_blocks": 6,
+          "max_blocks": 18
+        },
+        "T": {
+          "folios": 2,
+          "multi_block": 2,
+          "pct_multi": 100.0,
+          "avg_blocks": 8.0,
+          "min_blocks": 6,
+          "max_blocks": 10
+        }
+      }
+    },
+    "T2": {
+      "test": "T2: Thermal Envelope Convergence",
+      "tier": "T2 (structural)",
+      "passed": false,
+      "within_mean": 0.8829,
+      "between_mean": 0.9222,
+      "diff": -0.0393,
+      "n_within": 250,
+      "n_between": 3240,
+      "mw_z": -3.143,
+      "mw_p": 0.00123,
+      "perm_p": 0.996
+    },
+    "T3": {
+      "test": "T3: PREFIX Profile Divergence",
+      "tier": "T2 (structural)",
+      "passed": true,
+      "within_mean": 0.2778,
+      "between_mean": 0.2182,
+      "diff": 0.0596,
+      "n_within": 260,
+      "n_between": 3247,
+      "mw_z": 7.268,
+      "mw_p": 0.0,
+      "perm_p": 0.0
+    },
+    "T4": {
+      "test": "T4: Category Envelope Convergence",
+      "tier": "T2 (structural)",
+      "passed": false,
+      "within_mean": 0.6705,
+      "between_mean": 0.7387,
+      "diff": -0.0682,
+      "n_within": 263,
+      "n_between": 3256,
+      "mw_z": -4.464,
+      "mw_p": 6e-06,
+      "perm_p": 0.9969
+    },
+    "T5": {
+      "test": "T5: Operational Coverage",
+      "tier": "T2 (structural)",
+      "passed": false,
+      "observed_mean_ratio": 1.2263,
+      "null_mean_ratio": 1.2108,
+      "n_blocks": 136,
+      "perm_p": 0.0298
+    },
+    "T6": {
+      "ht_initial_mean": 0.0732,
+      "ht_internal_mean": 0.0485,
+      "ht_mw_z": 7.071,
+      "ht_mw_p": 0.0,
+      "marking_initial_mean": 0.0942,
+      "marking_internal_mean": 0.07,
+      "marking_mw_z": 4.805,
+      "marking_mw_p": 1e-06,
+      "test": "T6: Block-Initial Paragraph Enrichment",
+      "tier": "T2 (structural)",
+      "passed": true,
+      "n_initial": 484,
+      "n_internal": 190
+    },
+    "T7": {
+      "test": "T7: Section-Specific Block Architecture",
+      "tier": "T2 (structural)",
+      "block_count_H": 56.828,
+      "block_count_p": 0.0,
+      "block_size_H": 123.466,
+      "block_size_p": 0.0,
+      "section_summary": {
+        "B": {
+          "n_folios": 20,
+          "mean_blocks": 4.55,
+          "mean_block_tokens": 104.1,
+          "mean_paras_per_block": 1.59
+        },
+        "C": {
+          "n_folios": 5,
+          "mean_blocks": 4.0,
+          "mean_block_tokens": 123.3,
+          "mean_paras_per_block": 1.7
+        },
+        "H": {
+          "n_folios": 32,
+          "mean_blocks": 2.25,
+          "mean_block_tokens": 51.2,
+          "mean_paras_per_block": 1.86
+        },
+        "S": {
+          "n_folios": 23,
+          "mean_blocks": 12.43,
+          "mean_block_tokens": 49.0,
+          "mean_paras_per_block": 1.17
+        },
+        "T": {
+          "n_folios": 2,
+          "mean_blocks": 8.0,
+          "mean_block_tokens": 66.8,
+          "mean_paras_per_block": 1.81
+        }
+      },
+      "passed": true
+    }
+  },
+  "summary": {
+    "tests_passed": 4,
+    "tests_total": 7
+  }
+}

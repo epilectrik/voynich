@@ -1,0 +1,266 @@
+{
+  "T1": {
+    "test": "T1_category_persistence",
+    "verdict": "MIXED",
+    "n_bridge_with_cat": 82,
+    "a_profile": {
+      "CONTAINMENT": 0.0534,
+      "FLOW": 0.1726,
+      "MARKING": 0.041,
+      "MONITORING": 0.0532,
+      "OPERATION": 0.0965,
+      "STAGING": 0.2496,
+      "THERMAL": 0.1378,
+      "TRANSITION": 0.1959
+    },
+    "b_profile": {
+      "CONTAINMENT": 0.054,
+      "FLOW": 0.2008,
+      "MARKING": 0.0372,
+      "MONITORING": 0.0144,
+      "OPERATION": 0.1529,
+      "STAGING": 0.1336,
+      "THERMAL": 0.2373,
+      "TRANSITION": 0.1698
+    },
+    "a_total_tokens": 9168,
+    "b_total_tokens": 19771,
+    "jsd": 0.025782,
+    "spearman_rho": 0.6429,
+    "spearman_p": 0.0745,
+    "enrichment_ratios": {
+      "CONTAINMENT": 0.99,
+      "FLOW": 0.859,
+      "MARKING": 1.102,
+      "MONITORING": 3.693,
+      "OPERATION": 0.632,
+      "STAGING": 1.868,
+      "THERMAL": 0.58,
+      "TRANSITION": 1.154
+    },
+    "null_mean_jsd": 0.022677,
+    "perm_p": 0.6274
+  },
+  "T2": {
+    "test": "T2_bridge_delivery_consumption",
+    "verdict": "MIXED",
+    "delivery_profile": {
+      "CONTAINMENT": 0.0534,
+      "FLOW": 0.1726,
+      "MARKING": 0.041,
+      "MONITORING": 0.0532,
+      "OPERATION": 0.0965,
+      "STAGING": 0.2496,
+      "THERMAL": 0.1378,
+      "TRANSITION": 0.1959
+    },
+    "consumption_profile": {
+      "CONTAINMENT": 0.054,
+      "FLOW": 0.2008,
+      "MARKING": 0.0372,
+      "MONITORING": 0.0144,
+      "OPERATION": 0.1529,
+      "STAGING": 0.1336,
+      "THERMAL": 0.2373,
+      "TRANSITION": 0.1698
+    },
+    "b_total_profile": {
+      "CONTAINMENT": 0.0483,
+      "FLOW": 0.1944,
+      "MARKING": 0.0778,
+      "MONITORING": 0.0181,
+      "OPERATION": 0.1437,
+      "STAGING": 0.1302,
+      "THERMAL": 0.2376,
+      "TRANSITION": 0.1499
+    },
+    "jsd_delivery_consumption": 0.025782,
+    "jsd_delivery_total": 0.027923,
+    "jsd_consumption_total": 0.004262,
+    "spearman_dc": 0.6429,
+    "spearman_dc_p": 0.0745,
+    "amplification": {
+      "CONTAINMENT": 1.01,
+      "FLOW": 1.164,
+      "MARKING": 0.908,
+      "MONITORING": 0.271,
+      "OPERATION": 1.583,
+      "STAGING": 0.535,
+      "THERMAL": 1.723,
+      "TRANSITION": 0.867
+    },
+    "null_mean_jsd": 0.060438,
+    "perm_p": 0.0639,
+    "mode_correlation": {
+      "high_thermal_mean_mode_a": 0.5033,
+      "low_thermal_mean_mode_a": 0.3211,
+      "n_high": 20,
+      "n_low": 20,
+      "mann_whitney_z": 3.449,
+      "mann_whitney_p": 0.0004
+    }
+  },
+  "T3": {
+    "test": "T3_section_flow",
+    "verdict": "SECTION_FLOW",
+    "a_sections": [
+      "H",
+      "P",
+      "T"
+    ],
+    "chi2": 380.43,
+    "cramers_v": 0.144,
+    "chi2_p": 0.0,
+    "pairwise_jsds": {
+      "H-P": 0.0253,
+      "H-T": 0.013135,
+      "P-T": 0.013841
+    },
+    "cross_correlations": {
+      "H": {
+        "rho": 0.619,
+        "p": 0.086
+      },
+      "T": {
+        "rho": 0.8512,
+        "p": 0.0159
+      }
+    },
+    "shared_sections": [
+      "H",
+      "T"
+    ],
+    "null_mean_chi2": 13.9,
+    "perm_p": 0.001,
+    "a_section_profiles": {
+      "H": {
+        "CONTAINMENT": 0.0546,
+        "FLOW": 0.1778,
+        "MARKING": 0.0466,
+        "MONITORING": 0.0642,
+        "OPERATION": 0.1026,
+        "STAGING": 0.2601,
+        "THERMAL": 0.1005,
+        "TRANSITION": 0.1935
+      },
+      "P": {
+        "CONTAINMENT": 0.0501,
+        "FLOW": 0.134,
+        "MARKING": 0.0261,
+        "MONITORING": 0.024,
+        "OPERATION": 0.0813,
+        "STAGING": 0.2399,
+        "THERMAL": 0.2512,
+        "TRANSITION": 0.1934
+      },
+      "T": {
+        "CONTAINMENT": 0.0518,
+        "FLOW": 0.2289,
+        "MARKING": 0.0313,
+        "MONITORING": 0.0341,
+        "OPERATION": 0.0831,
+        "STAGING": 0.1826,
+        "THERMAL": 0.1649,
+        "TRANSITION": 0.2234
+      }
+    }
+  },
+  "T4": {
+    "test": "T4_dark_pipeline_categories",
+    "verdict": "PRESERVED",
+    "n_dark_with_cat": 292,
+    "a_dark_profile": {
+      "CONTAINMENT": 0.005,
+      "FLOW": 0.1735,
+      "MARKING": 0.4002,
+      "MONITORING": 0.0221,
+      "OPERATION": 0.1304,
+      "STAGING": 0.0622,
+      "THERMAL": 0.1916,
+      "TRANSITION": 0.015
+    },
+    "b_dark_profile": {
+      "CONTAINMENT": 0.0193,
+      "FLOW": 0.1554,
+      "MARKING": 0.3313,
+      "MONITORING": 0.0404,
+      "OPERATION": 0.1096,
+      "STAGING": 0.0916,
+      "THERMAL": 0.2404,
+      "TRANSITION": 0.012
+    },
+    "a_dark_tokens": 997,
+    "b_dark_tokens": 1660,
+    "jsd_a_b_dark": 0.008792,
+    "spearman_rho": 0.9762,
+    "spearman_p": 0.0046,
+    "section_chi2": 183.6,
+    "section_v": 0.1663,
+    "section_chi2_p": 0.0,
+    "section_perm_p": 0.001,
+    "dark_grammar_correlations": {
+      "B": {
+        "rho": 0.1726,
+        "p": 0.6
+      },
+      "C": {
+        "rho": 0.0179,
+        "p": 0.9516
+      },
+      "H": {
+        "rho": 0.3988,
+        "p": 0.2607
+      },
+      "S": {
+        "rho": 0.4762,
+        "p": 0.1839
+      },
+      "T": {
+        "rho": 0.494,
+        "p": 0.1687
+      }
+    },
+    "bridge_dark_correlations": {
+      "B": {
+        "rho": 0.1905,
+        "p": 0.5663
+      },
+      "C": {
+        "rho": 0.0179,
+        "p": 0.9516
+      },
+      "H": {
+        "rho": 0.2202,
+        "p": 0.513
+      },
+      "S": {
+        "rho": 0.4762,
+        "p": 0.1839
+      },
+      "T": {
+        "rho": 0.0179,
+        "p": 0.9516
+      }
+    },
+    "overall_bridge_dark_rho": 0.1905,
+    "overall_bridge_dark_p": 0.5663
+  },
+  "meta": {
+    "phase": 471,
+    "name": "A_B_CATEGORY_FLOW",
+    "n_bridge": 85,
+    "n_dark": 300,
+    "n_a_tokens": 11174,
+    "n_b_tokens": 23096,
+    "n_middles_with_category": 1233,
+    "n_perm": 1000,
+    "seed": 42,
+    "runtime_s": 13.7,
+    "verdicts": {
+      "T1": "MIXED",
+      "T2": "MIXED",
+      "T3": "SECTION_FLOW",
+      "T4": "PRESERVED"
+    }
+  }
+}

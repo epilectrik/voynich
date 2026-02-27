@@ -1,0 +1,288 @@
+{
+  "phase": "SECTION_S_BLOCK_ARCHITECTURE",
+  "phase_number": 465,
+  "tier": "2-3 (structural with interpretive implications)",
+  "seed": 42,
+  "n_permutations": 1000,
+  "section": "S",
+  "tests": {
+    "S1": {
+      "test": "S1: Within-Folio Block Independence",
+      "passed": true,
+      "s_mean": 0.3274,
+      "non_s_mean": 0.4378,
+      "n_s": 263,
+      "n_non_s": 140,
+      "mw_z": -6.353,
+      "mw_p": 0.0,
+      "section_summary": {
+        "B": {
+          "mean": 0.4856,
+          "n": 71
+        },
+        "C": {
+          "mean": 0.547,
+          "n": 15
+        },
+        "H": {
+          "mean": 0.3326,
+          "n": 40
+        },
+        "S": {
+          "mean": 0.3274,
+          "n": 263
+        },
+        "T": {
+          "mean": 0.3791,
+          "n": 14
+        }
+      }
+    },
+    "S2": {
+      "test": "S2: No Block-Position Effect",
+      "passed": false,
+      "significant_count": 3,
+      "total_metrics": 12,
+      "n_blocks": 286,
+      "n_folios": 23,
+      "metric_results": {
+        "kernel_k": {
+          "rho": 0.0698,
+          "perm_p": 0.086,
+          "sig": false
+        },
+        "kernel_h": {
+          "rho": -0.0816,
+          "perm_p": 0.049,
+          "sig": false
+        },
+        "kernel_e": {
+          "rho": 0.0226,
+          "perm_p": 0.359,
+          "sig": false
+        },
+        "lk_rate": {
+          "rho": 0.1297,
+          "perm_p": 0.014,
+          "sig": false
+        },
+        "THERMAL": {
+          "rho": 0.123,
+          "perm_p": 0.003,
+          "sig": true
+        },
+        "FLOW": {
+          "rho": -0.0968,
+          "perm_p": 0.053,
+          "sig": false
+        },
+        "CONTAINMENT": {
+          "rho": 0.0326,
+          "perm_p": 0.371,
+          "sig": false
+        },
+        "STAGING": {
+          "rho": -0.0325,
+          "perm_p": 0.263,
+          "sig": false
+        },
+        "OPERATION": {
+          "rho": -0.1685,
+          "perm_p": 0.0,
+          "sig": true
+        },
+        "TRANSITION": {
+          "rho": 0.1602,
+          "perm_p": 0.002,
+          "sig": true
+        },
+        "MARKING": {
+          "rho": -0.0994,
+          "perm_p": 0.035,
+          "sig": false
+        },
+        "MONITORING": {
+          "rho": 0.1232,
+          "perm_p": 0.189,
+          "sig": false
+        }
+      }
+    },
+    "S3": {
+      "test": "S3: Gallows Distribution Uniformity",
+      "passed": false,
+      "s_transition_matrix": [
+        [
+          7,
+          1,
+          7,
+          2
+        ],
+        [
+          1,
+          4,
+          10,
+          8
+        ],
+        [
+          3,
+          12,
+          108,
+          34
+        ],
+        [
+          3,
+          2,
+          35,
+          26
+        ]
+      ],
+      "ns_transition_matrix": [
+        [
+          4,
+          0,
+          0,
+          0
+        ],
+        [
+          0,
+          1,
+          4,
+          4
+        ],
+        [
+          1,
+          3,
+          54,
+          16
+        ],
+        [
+          0,
+          0,
+          19,
+          17
+        ]
+      ],
+      "s_chi2": 61.579,
+      "s_p": 0.0,
+      "ns_chi2": 108.791,
+      "ns_p": 0.0,
+      "s_gallows_dist": {
+        "p": 171,
+        "t": 73,
+        "k": 24,
+        "f": 18
+      },
+      "ns_gallows_dist": {
+        "p": 110,
+        "k": 12,
+        "t": 54,
+        "f": 6
+      },
+      "dist_chi2": 3.128,
+      "dist_p": 0.340983
+    },
+    "S4": {
+      "test": "S4: Block-Level Profile Homogeneity",
+      "passed": false,
+      "s_mean": 0.0685,
+      "non_s_mean": 0.052,
+      "n_s": 1741,
+      "n_non_s": 357,
+      "mw_z": 7.2,
+      "mw_p": 0.0,
+      "section_summary": {
+        "B": {
+          "mean": 0.0444,
+          "n": 203
+        },
+        "C": {
+          "mean": 0.0251,
+          "n": 34
+        },
+        "H": {
+          "mean": 0.0678,
+          "n": 60
+        },
+        "S": {
+          "mean": 0.0685,
+          "n": 1741
+        },
+        "T": {
+          "mean": 0.077,
+          "n": 60
+        }
+      }
+    },
+    "S5": {
+      "test": "S5: REGIME Homogeneity vs Other Sections",
+      "passed": false,
+      "sig_count": 0,
+      "section_summary": {
+        "B": {
+          "mean": 0.0334,
+          "n": 203
+        },
+        "C": {
+          "mean": 0.025,
+          "n": 34
+        },
+        "H": {
+          "mean": 0.0581,
+          "n": 60
+        },
+        "S": {
+          "mean": 0.0596,
+          "n": 1741
+        },
+        "T": {
+          "mean": 0.0333,
+          "n": 60
+        }
+      },
+      "comparisons": {
+        "B": {
+          "mw_z": 6.543,
+          "mw_p": 0.0,
+          "sig": false
+        },
+        "C": {
+          "mw_z": 2.982,
+          "mw_p": 0.00211,
+          "sig": false
+        },
+        "H": {
+          "mw_z": 0.767,
+          "mw_p": 0.373182,
+          "sig": false
+        },
+        "T": {
+          "mw_z": 2.684,
+          "mw_p": 0.005392,
+          "sig": false
+        }
+      }
+    },
+    "S6": {
+      "test": "S6: lk Distribution Within Section S",
+      "passed": false,
+      "rho": 0.1297,
+      "perm_p": 0.01,
+      "rho_significant": true,
+      "prefix_cvs": {
+        "ch": 0.4807,
+        "sh": 0.8124,
+        "qo": 0.4805,
+        "lk": 1.1763
+      },
+      "mean_folio_lk_cv": 1.0803,
+      "n_blocks": 286,
+      "n_folios": 23
+    }
+  },
+  "summary": {
+    "tests_passed": 1,
+    "tests_total": 6,
+    "interpretation": "SEQUENTIAL_OR_MIXED"
+  }
+}

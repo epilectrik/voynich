@@ -1,0 +1,279 @@
+{
+  "phase": "BLOCK_VOCABULARY_DRIFT",
+  "phase_number": 466,
+  "tier": "2-3 (structural with interpretive implications)",
+  "seed": 42,
+  "n_permutations": 1000,
+  "min_blocks": 3,
+  "tests": {
+    "D1": {
+      "test": "D1: Atom Profile Shift",
+      "tier": "T2 (structural)",
+      "passed": false,
+      "n_folios": 56,
+      "n_blocks_total": 440,
+      "kernel_results": {
+        "k": {
+          "median_rho": 0.0263,
+          "mean_rho": -0.0294,
+          "perm_p": 0.6,
+          "n_folios": 56,
+          "direction_count": {
+            "negative": 27,
+            "positive": 29,
+            "zero": 0
+          }
+        },
+        "h": {
+          "median_rho": -0.0969,
+          "mean_rho": -0.0652,
+          "perm_p": 0.085,
+          "n_folios": 56,
+          "direction_count": {
+            "negative": 30,
+            "positive": 25,
+            "zero": 1
+          }
+        },
+        "e": {
+          "median_rho": 0.1538,
+          "mean_rho": 0.073,
+          "perm_p": 0.033,
+          "n_folios": 56,
+          "direction_count": {
+            "negative": 25,
+            "positive": 31,
+            "zero": 0
+          }
+        }
+      },
+      "k_decreasing": false,
+      "e_increasing": false,
+      "section_breakdown": {
+        "B": {
+          "n_folios": 17,
+          "median_k_rho": -0.2857,
+          "median_e_rho": 0.3095,
+          "median_h_rho": 0.0179
+        },
+        "C": {
+          "n_folios": 4,
+          "median_k_rho": -0.0679,
+          "median_e_rho": 0.25,
+          "median_h_rho": -0.15
+        },
+        "H": {
+          "n_folios": 10,
+          "median_k_rho": 0.45,
+          "median_e_rho": 0.375,
+          "median_h_rho": -0.45
+        },
+        "S": {
+          "n_folios": 23,
+          "median_k_rho": 0.0667,
+          "median_e_rho": 0.0412,
+          "median_h_rho": -0.1
+        },
+        "T": {
+          "n_folios": 2,
+          "median_k_rho": -0.2994,
+          "median_e_rho": 0.2426,
+          "median_h_rho": -0.0874
+        }
+      }
+    },
+    "D2": {
+      "test": "D2: Vocabulary Convergence",
+      "tier": "T2 (structural)",
+      "passed": true,
+      "vocab_size_test": {
+        "median_rho": -0.2479,
+        "mean_rho": -0.1409,
+        "perm_p": 0.0,
+        "n_folios": 56,
+        "direction_count": {
+          "negative": 39,
+          "positive": 17,
+          "zero": 0
+        }
+      },
+      "jaccard_trend_test": {
+        "median_rho": 0.0768,
+        "mean_rho": 0.0524,
+        "perm_p": 0.202,
+        "n_folios": 44,
+        "direction_count": {
+          "negative": 18,
+          "positive": 26,
+          "zero": 0
+        }
+      },
+      "cumulative_coverage": {
+        "mean_coverages_by_ordinal": {
+          "0": 1.0,
+          "1": 0.5326,
+          "2": 0.4434,
+          "3": 0.3993,
+          "4": 0.3938,
+          "5": 0.3947,
+          "6": 0.3803,
+          "7": 0.421,
+          "8": 0.4113,
+          "9": 0.4105,
+          "10": 0.3778,
+          "11": 0.3359,
+          "12": 0.3501,
+          "13": 0.3287,
+          "14": 0.3997,
+          "15": 0.4428,
+          "16": 0.3448,
+          "17": 0.3103
+        }
+      },
+      "section_breakdown": {
+        "B": {
+          "n_folios_vocab": 17,
+          "median_vocab_rho": -0.4286,
+          "n_folios_jaccard": 10,
+          "median_jaccard_rho": 0.3
+        },
+        "C": {
+          "n_folios_vocab": 4,
+          "median_vocab_rho": -0.625,
+          "n_folios_jaccard": 4,
+          "median_jaccard_rho": 0.0
+        },
+        "H": {
+          "n_folios_vocab": 10,
+          "median_vocab_rho": -0.325,
+          "n_folios_jaccard": 5,
+          "median_jaccard_rho": -0.5
+        },
+        "S": {
+          "n_folios_vocab": 23,
+          "median_vocab_rho": -0.136,
+          "n_folios_jaccard": 23,
+          "median_jaccard_rho": 0.05
+        },
+        "T": {
+          "n_folios_vocab": 2,
+          "median_vocab_rho": 0.2578,
+          "n_folios_jaccard": 2,
+          "median_jaccard_rho": 0.2417
+        }
+      }
+    },
+    "D3": {
+      "test": "D3: Suffix Mode Shift",
+      "tier": "T2-3 (structural with interpretive)",
+      "passed": false,
+      "median_rho": -0.0377,
+      "mean_rho": -0.0588,
+      "perm_p": 0.199,
+      "n_folios": 56,
+      "n_blocks_total": 440,
+      "direction_count": {
+        "negative": 29,
+        "positive": 27,
+        "zero": 0
+      },
+      "section_breakdown": {
+        "B": {
+          "n_folios": 17,
+          "median_rho": -0.4286,
+          "mean_rho": -0.1564
+        },
+        "C": {
+          "n_folios": 4,
+          "median_rho": -0.6821,
+          "mean_rho": -0.4036
+        },
+        "H": {
+          "n_folios": 10,
+          "median_rho": 0.35,
+          "mean_rho": 0.135
+        },
+        "S": {
+          "n_folios": 23,
+          "median_rho": 0.0302,
+          "mean_rho": -0.0233
+        },
+        "T": {
+          "n_folios": 2,
+          "median_rho": 0.084,
+          "mean_rho": 0.084
+        }
+      }
+    },
+    "D4": {
+      "test": "D4: FL Stage Progression",
+      "tier": "T2-3 (structural with interpretive)",
+      "passed": false,
+      "median_rho": 0.0212,
+      "mean_rho": -0.0107,
+      "perm_p": 0.435,
+      "n_folios": 56,
+      "n_blocks_total": 440,
+      "blocks_without_fl": 0,
+      "direction_count": {
+        "negative": 26,
+        "positive": 29,
+        "zero": 1
+      },
+      "mean_fl_by_ordinal": {
+        "0": 2.8473,
+        "1": 2.8373,
+        "2": 2.7795,
+        "3": 2.7652,
+        "4": 2.78,
+        "5": 2.6479,
+        "6": 2.6186,
+        "7": 2.5945,
+        "8": 2.6308,
+        "9": 2.6388,
+        "10": 2.5382,
+        "11": 2.6969,
+        "12": 2.7737,
+        "13": 2.7477,
+        "14": 2.8289,
+        "15": 2.8192,
+        "16": 3.2424,
+        "17": 3.1905
+      },
+      "section_breakdown": {
+        "B": {
+          "n_folios": 17,
+          "median_rho": -0.5,
+          "mean_rho": -0.1303
+        },
+        "C": {
+          "n_folios": 4,
+          "median_rho": 0.55,
+          "mean_rho": 0.3821
+        },
+        "H": {
+          "n_folios": 10,
+          "median_rho": 0.35,
+          "mean_rho": 0.035
+        },
+        "S": {
+          "n_folios": 23,
+          "median_rho": 0.0273,
+          "mean_rho": -0.0085
+        },
+        "T": {
+          "n_folios": 2,
+          "median_rho": -0.0344,
+          "mean_rho": -0.0344
+        }
+      }
+    }
+  },
+  "summary": {
+    "tests_passed": 1,
+    "tests_total": 4,
+    "eligible_folios": 56,
+    "total_blocks": 440,
+    "interpretation": "WEAK_SIGNAL"
+  }
+}

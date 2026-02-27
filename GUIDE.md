@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,156 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,201 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -493,6 +493,17 @@ Phase 406 resolved a key architectural paradox: shared pipeline vocabulary is ty
 
 New constraints: C1134-C1136.
 
+### Dark Pipeline Characterization (Phases 470-473)
+
+Further investigation revealed that the 315 dark pipeline MIDDLEs and the 85 bridge MIDDLEs constitute two structurally distinct vocabulary channels with different behaviors across every tested dimension:
+
+- **Bridge channel** (85 MIDDLEs): Actively reshaped by B — amplifies THERMAL and OPERATION categories, suppresses STAGING and MONITORING (C1347). Bridge MIDDLEs are the grammar's working vocabulary.
+- **Dark channel** (300 MIDDLEs): Preserves A's category distribution unchanged (rho=0.976, JSD=0.009; C1349). Dark MIDDLEs pass through without B reshaping them.
+
+Dark MIDDLEs distribute atomistically — no co-occurrence groups, no clustering, random adjacency patterns (C1350). Each dark MIDDLE constrains the immediately following grammar token to a narrow set of instruction classes (successor entropy 2.59 bits vs 4.18 for bridge; C1351), and this constraint is MIDDLE-specific, not just PREFIX-mediated (C1356). However, this influence is strictly local: dark MIDDLEs affect only the next token, not line-level bridge-to-bridge transitions (C1354). The three-tier grammar model (dark=context → bridge=execution → suffix=mode) was tested and falsified — dark tokens are inline annotations with very localized ripple effects, not a grammar tier.
+
+New constraints: C1347-C1357.
+
 ---
 
 ## What This Analysis Cannot Determine
@@ -525,11 +536,11 @@ These interpretations have been structurally ruled out:
 
 ## How This Analysis Was Built
 
-This project was built using AI-assisted computational analysis over 460 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
+This project was built using AI-assisted computational analysis over 473 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
 
 The central methodological innovation is a **progressive context system**: a growing body of numbered, tiered, validated constraints that accumulates across research phases and is always available to the AI agents performing analysis. Every finding that survives statistical testing becomes a permanent constraint. Every falsified hypothesis is permanently closed. Each new phase starts with full knowledge of everything that came before.
 
-This matters because no single analytical session — human or AI — could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, 8 cross-system operational categories, and the Brunschwig alignment in one pass. But 460 phases, each building on validated prior work and never losing what was already proven, could. The constraint system is the project's memory, and its growth is what made the depth of analysis possible.
+This matters because no single analytical session — human or AI — could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, 8 cross-system operational categories, and the Brunschwig alignment in one pass. But 473 phases, each building on validated prior work and never losing what was already proven, could. The constraint system is the project's memory, and its growth is what made the depth of analysis possible.
 
 For technical details on the progressive context architecture, see the Methodology section in `README.md`.
 

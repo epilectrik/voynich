@@ -1,0 +1,198 @@
+{
+  "phase": "BLOCK_EXECUTION_CYCLE",
+  "phase_number": 464,
+  "tier": "2-3 (structural with interpretive implications)",
+  "seed": 42,
+  "n_permutations": 1000,
+  "tests": {
+    "A1": {
+      "test": "A1: Gallows Restart Confirmation",
+      "passed": true,
+      "contingency_table": [
+        [
+          18,
+          28,
+          190,
+          156
+        ],
+        [
+          20,
+          24,
+          243,
+          110
+        ]
+      ],
+      "final_gallows": {
+        "p": 190,
+        "t": 156,
+        "k": 28,
+        "f": 18
+      },
+      "initial_gallows": {
+        "p": 243,
+        "t": 110,
+        "k": 24,
+        "f": 20
+      },
+      "t_final_pct": 39.8,
+      "t_initial_pct": 27.7,
+      "kfp_initial_pct": 72.3,
+      "kfp_final_pct": 60.2,
+      "chi2": 14.824,
+      "p": 0.001585,
+      "df": 3
+    },
+    "A2": {
+      "test": "A2: Kernel Initiation Reset",
+      "passed": false,
+      "initial_mean": 0.441,
+      "internal_mean": 0.4839,
+      "n_initial": 119,
+      "n_internal": 144,
+      "mw_z": -1.484,
+      "mw_p": 0.107862
+    },
+    "A3": {
+      "test": "A3: Cross-Block PREFIX Discontinuity",
+      "passed": false,
+      "cross_mean": 0.4025,
+      "within_mean": 0.3712,
+      "diff": 0.0314,
+      "n_cross": 401,
+      "n_within": 191,
+      "mw_z": 2.467,
+      "mw_p": 0.010166,
+      "perm_p": 0.009
+    },
+    "A4": {
+      "test": "A4: Cross-Block Category Discontinuity",
+      "passed": false,
+      "cross_mean": 0.0714,
+      "within_mean": 0.1355,
+      "diff": -0.0641,
+      "n_cross": 403,
+      "n_within": 192,
+      "mw_z": -8.982,
+      "mw_p": 0.0,
+      "perm_p": 1.0
+    },
+    "B1": {
+      "test": "B1: Block-Final -am Enrichment",
+      "passed": false,
+      "final_am": 4,
+      "final_total": 109,
+      "final_rate": 0.0367,
+      "internal_am": 19,
+      "internal_total": 188,
+      "internal_rate": 0.1011,
+      "enrichment_ratio": 0.363,
+      "fisher_p": 0.990393,
+      "chi2": 4.001,
+      "chi2_p": 0.033074
+    },
+    "B2": {
+      "test": "B2: Block-Final Suffix Mode",
+      "passed": false,
+      "final_modes": {
+        "B": 63,
+        "A": 44
+      },
+      "internal_modes": {
+        "B": 106,
+        "A": 74
+      },
+      "final_b_pct": 58.9,
+      "internal_b_pct": 58.9,
+      "chi2": 0.0,
+      "p": 0.959158,
+      "df": 1
+    },
+    "B3": {
+      "test": "B3: Block-Final Category Profile",
+      "passed": false,
+      "significant_categories": 0,
+      "n_final": 69,
+      "n_internal": 139,
+      "category_results": {
+        "THERMAL": {
+          "final_mean": 0.2163,
+          "internal_mean": 0.2331,
+          "mw_z": -0.744,
+          "mw_p": 0.386167,
+          "sig": false
+        },
+        "FLOW": {
+          "final_mean": 0.1741,
+          "internal_mean": 0.1902,
+          "mw_z": -1.143,
+          "mw_p": 0.203833,
+          "sig": false
+        },
+        "CONTAINMENT": {
+          "final_mean": 0.0676,
+          "internal_mean": 0.058,
+          "mw_z": 0.907,
+          "mw_p": 0.301391,
+          "sig": false
+        },
+        "STAGING": {
+          "final_mean": 0.135,
+          "internal_mean": 0.1286,
+          "mw_z": 0.234,
+          "mw_p": 0.76157,
+          "sig": false
+        },
+        "OPERATION": {
+          "final_mean": 0.1248,
+          "internal_mean": 0.1413,
+          "mw_z": -1.552,
+          "mw_p": 0.093861,
+          "sig": false
+        },
+        "TRANSITION": {
+          "final_mean": 0.1733,
+          "internal_mean": 0.1576,
+          "mw_z": 1.181,
+          "mw_p": 0.190723,
+          "sig": false
+        },
+        "MARKING": {
+          "final_mean": 0.0922,
+          "internal_mean": 0.0738,
+          "mw_z": 0.565,
+          "mw_p": 0.497563,
+          "sig": false
+        },
+        "MONITORING": {
+          "final_mean": 0.0167,
+          "internal_mean": 0.0174,
+          "mw_z": 0.15,
+          "mw_p": 0.840948,
+          "sig": false
+        }
+      }
+    },
+    "C1": {
+      "test": "C1: Block-Level REGIME Homogeneity",
+      "passed": true,
+      "within_folio_mean": 0.0557,
+      "between_folio_mean": 0.0653,
+      "diff": -0.0095,
+      "n_within": 2098,
+      "n_between": 111905,
+      "mw_z": -8.617,
+      "mw_p": 0.0,
+      "perm_p": 0.0,
+      "interpretation": "REGIME-HOMOGENEOUS",
+      "n_folios": 75,
+      "n_blocks": 478
+    }
+  },
+  "summary": {
+    "tests_passed": 2,
+    "tests_total": 8,
+    "group_a_passed": 1,
+    "group_b_passed": 0,
+    "group_c_result": "REGIME-HOMOGENEOUS"
+  }
+}

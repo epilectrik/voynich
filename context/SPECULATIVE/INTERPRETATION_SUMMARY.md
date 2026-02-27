@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.71
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.72
 
 ---
 
@@ -6587,3 +6587,283 @@ High-paragraph folios (many short paragraphs) may represent high-volume products
 - Alternative: high-paragraph folios are training/reference documents, low-paragraph folios are production documents
 - The statistical findings (shared THERMAL, divergent MONITORING/MARKING) are Tier 2 data; only the "operator" interpretation is speculative
 - C1121 (domain irrecoverability) still applies — we cannot identify what product was being made
+
+## XXIII. Block Architecture: Gallows-Delimited Processing Stages (Phases 462-465)
+
+**Phases:** TEXT_BLOCK_PARALLEL_OPERATORS (462) | BLOCK_GALLOWS_ORDERING (463) | BLOCK_EXECUTION_CYCLE (464) | SECTION_S_BLOCK_ARCHITECTURE (465)
+**Constraints:** C1317-C1329 | **Date:** 2026-02-25 to 2026-02-26
+
+### Context
+
+Previous work (Phases 457-461, Section XXII) established the paragraph as the primary operational unit — self-contained, gallows-initiated, independently executable. But paragraphs cluster into larger units on each folio. Phases 462-465 discovered and characterized a previously unrecognized structural layer: the **block**.
+
+### What Blocks Are (Phase 462, C1317)
+
+A block is a contiguous group of paragraphs on a folio. Blocks are detected by visual text-block boundaries in the manuscript layout. Currier B has 357 blocks across 82 folios (mean 4.3 blocks/folio, range 1-18).
+
+| Section | Blocks/folio | Paras/block | Tokens/block |
+|---------|-------------|-------------|--------------|
+| B | 3.1 | 3.16 | 190 |
+| H | 5.3 | 2.24 | 186 |
+| C | 1.5 | 3.33 | 229 |
+| T | 2.4 | 2.52 | 126 |
+| **S** | **12.4** | **1.17** | **49** |
+
+Section S is the anomaly: 3x more blocks than any other section, almost all single-paragraph, a quarter the size. This motivated the Section S deep dive (Phase 465).
+
+### Gallows Within-Block Ordering (Phase 463, C1321-C1322)
+
+Within multi-paragraph blocks, gallows follow a structured cycle: **k/f/p → t**. First paragraphs are enriched in k, f, and p gallows (initiation types); later paragraphs shift toward t (continuation). The transition matrix is non-random (chi-sq=64.88, p<0.001) with k→t at 55%, f→t at 45%, p→t at 35%.
+
+Gallows type is independent of operational category (C1322, V=0.045). A paragraph's gallows marks its role in the block sequence (initiating vs continuing), not what operational domain it covers. The gallows cycle is a **structural clock** running orthogonally to content.
+
+### Cross-Block Restart Without Shutdown (Phase 464, C1323-C1324)
+
+At block boundaries, the gallows cycle restarts: block-initial paragraphs are 72.3% k/f/p, block-final paragraphs are 39.8% t (chi-sq=14.82, p=0.002). The new block re-initiates a fresh k/f/p→t cycle.
+
+But there is no termination signal at block-final position. Block-final paragraphs show:
+- -am suffix **depleted** 0.36x (opposite of enrichment)
+- Identical suffix mode distribution to block-internal (58.9% = 58.9%)
+- 0/8 category shifts between block-final and block-internal
+
+Blocks don't "close" — they just stop, and the next block starts fresh. In process terms: a processing stage runs until completed, then a new stage begins with a fresh gallows initiation. There is no explicit handoff protocol.
+
+### Folio = REGIME Container, Block = Processing Stage (Phase 464, C1325-C1326)
+
+Within-folio between-block kernel distance (0.056) is significantly less than between-folio distance (0.065, perm p<0.001). All blocks on a folio share the same thermal mode. The folio sets the REGIME; blocks inherit it.
+
+Adjacent blocks are more category-similar (JSD 0.071) than within-block paragraph pairs (JSD 0.136, z=-8.98). Blocks are not category-independent — they share operational themes with their neighbors while their internal paragraphs diversify.
+
+### PREFIX Complementarity (Phase 462, C1318)
+
+Adjacent blocks on the same folio have complementary PREFIX profiles. Block-initial paragraphs are enriched in prefixes that block-final paragraphs lack, and vice versa. This means consecutive blocks don't duplicate each other's operational focus — they do different but complementary jobs.
+
+### Internal Diversity (Phase 462, C1320)
+
+Within each block, paragraphs maximize categorical diversity. Each paragraph within a block covers a different operational domain. Combined with PREFIX complementarity between blocks: the system maximizes coverage at every level. Within a block, paragraphs diversify. Between blocks, operational emphasis shifts.
+
+### Section S: Ordered Monitoring Checkpoints (Phase 465, C1327-C1329)
+
+Section S's 12 single-paragraph blocks per folio initially suggested "parallel monitoring stations" — exchangeable snapshots of vessel status under the same fire regime. This was tested and **falsified**.
+
+**Ordinal progression (C1327):** Later blocks on an S folio shift from OPERATION-focused (rho=-0.169, p<0.001) to THERMAL/TRANSITION-focused (rho=+0.123/+0.160, p<0.003). Early blocks describe active setup/manipulation; later blocks describe thermal monitoring and state changes.
+
+**p-gallows dominance (C1328):** S blocks are 59.8% p-gallows, with p→p self-continuation at 69%. The k/f/p→t cycle collapses when blocks have only one paragraph — everything is "continuation." There's no initiation→continuation transition because each block is already mid-process.
+
+**Categorical diversity (C1329):** S blocks within a folio are MORE categorically diverse than in other sections (JSD 0.069 vs 0.052, z=7.20). Each block does a different job using different vocabulary. They are vocabulary-independent (Jaccard 0.327 < 0.438) AND categorically diverse — different words doing different things.
+
+### Interpretation: Three-Level Operational Hierarchy (Tier 3)
+
+Phases 462-465 establish a three-level organizational hierarchy for Currier B:
+
+| Level | Unit | Sets | Inherits | Internal Structure |
+|-------|------|------|----------|-------------------|
+| **Folio** | Program | REGIME (thermal mode) | — | Blocks inherit REGIME |
+| **Block** | Processing stage | Operational emphasis (PREFIX) | REGIME from folio | Paragraphs diversify within |
+| **Paragraph** | Operator task | Specific instruction sequence | Emphasis from block | Gallows-initiated, self-contained |
+
+In distillation terms:
+- The **folio** specifies what kind of fire and apparatus setup you're running (water bath, direct fire, etc.)
+- Each **block** is a processing stage within that setup — first you prepare, then you heat, then you monitor, then you collect. Adjacent blocks do complementary jobs.
+- Each **paragraph** within a block is one operator's task assignment for that stage — the sealer, the temperature watcher, the material handler.
+
+The gallows cycle (k/f/p→t) is the block's structural clock: it initiates a new processing stage and progresses through it. At block boundaries, the clock restarts. No shutdown signal is needed because the next stage simply begins.
+
+Section S represents a different operational deployment: instead of multi-paragraph stages with internal task division, S folios lay out a sequence of single-task monitoring checkpoints. Each checkpoint has one paragraph doing one job. The sequence progresses from active manipulation to thermal monitoring as the process matures — consistent with a procedure where the operator walks through a checklist, each item a different aspect of an ongoing process.
+
+### Relationship to Section XXII (Parallel Operator Hypothesis)
+
+Section XXII proposed that paragraphs on a folio are parallel task assignments for different workers. Phases 462-465 refine this: paragraphs within a **block** are parallel task assignments. Blocks themselves are **sequential stages** — adjacent blocks do complementary, ordered work. The "parallel stations" metaphor applies within blocks (multiple workers at one stage) but not between blocks (stages are ordered).
+
+### Caveats
+
+- The three-level hierarchy is a Tier 3 interpretation. The structural facts (gallows restart, REGIME homogeneity, PREFIX complementarity, ordinal progression) are Tier 2.
+- Block boundaries are detected from visual layout, not from text-internal signals. If block segmentation is unreliable, within-block paragraph relationships may be artifacts.
+- Section S ordinal progression is statistically significant (3/12 metrics at p<0.01) but explains modest variance (rho ~0.12-0.17). Most variation is not ordinal.
+- The "no shutdown signal" finding (C1324) could mean blocks truly lack termination, or that the termination signal uses a channel we haven't tested (e.g., visual markers, spacing).
+
+---
+
+## XXIV. Block Vocabulary Drift and Multiplexing (Phases 466-467)
+
+**Phases:** BLOCK_VOCABULARY_DRIFT (466) | MULTIPLEXED_PROCEDURE_TEST (467)
+**Constraints:** C1330-C1333 | **Date:** 2026-02-26
+
+### Context
+
+Section XXIII established the three-level hierarchy (folio→block→paragraph). Two natural follow-up questions: (1) Do blocks within a folio show directional drift consistent with iterative refinement? (2) Does block 0 serve a special "setup" role in a multiplexed procedure?
+
+### Iterative Refinement: Falsified (Phase 466, C1331)
+
+The hypothesis that consecutive blocks re-run a procedure with progressive refinement was tested with 4 metrics: kernel k→e drift, vocabulary narrowing, Mode A decrease, and FL stage progression. **Only vocabulary narrowing passed** — 3/4 directional signals are absent:
+
+| Test | Metric | Result | Verdict |
+|------|--------|--------|---------|
+| Kernel drift (k→e) | Spearman rho | +0.026, p=0.600 | **FAIL** |
+| Vocabulary narrowing | Spearman rho | **-0.248, p<0.001** | **PASS** |
+| Mode A decrease | Spearman rho | -0.038, p=0.199 | **FAIL** |
+| FL stage progression | Spearman rho | +0.021, p=0.435 | **FAIL** |
+
+The vocabulary narrowing is universal: later blocks use fewer distinct MIDDLEs (C1330). Coverage drops from 1.0 to ~0.40 by block 3 across 39/56 eligible folios. But this is not accompanied by any directional shift in operational parameters. Blocks don't converge toward a target — they simply use fewer words.
+
+### Block 0 Is a Marking Context, Not a Setup Block (Phase 467, C1332-C1333)
+
+The multiplexed procedure model predicted block 0 would be a "setup block" enriched in STAGING/CONTAINMENT vocabulary (shared apparatus preparation). This was **falsified**:
+
+- Block-0-unique MIDDLEs are **MARKING 2.48x** and **MONITORING 1.57x** enriched
+- STAGING+CONTAINMENT are flat (0.92x)
+- OPERATION 0.65x and TRANSITION 0.64x depleted
+
+Block 0's special role is providing **marking/annotation context** — what to watch for, what to flag — not documenting apparatus setup. Later blocks focus on operational execution without repeating these annotations.
+
+The kernel (k/h/e distribution) is the most stable inter-block dimension (distance 0.027 < category JSD 0.052 < PREFIX JSD 0.145), confirming that blocks share the same thermal mode while varying in other dimensions (C1333).
+
+### Interpretation: Vocabulary Narrowing as Shared Context (Tier 3)
+
+In distillation terms: a folio describes a procedure with multiple processing stages (blocks). The first block documents the full operational context including annotations and monitoring notes. Later blocks can skip this shared preamble — the operator already knows what to watch for. This explains vocabulary narrowing without directional drift: later blocks aren't refining toward a target, they're just assuming prior context.
+
+The "multiplexed" model (one fire, multiple vessels) is partially supported by REGIME homogeneity (C1325) and vocabulary narrowing (C1330), but the specific "setup block" prediction failed. The correct model is not shared apparatus setup but shared annotation context.
+
+### Caveats
+
+- Section-specific signals exist (B and C show partial drift on some metrics) but no universal mechanism operates across all sections
+- Section S shows near-zero effects on all drift tests, consistent with its independent-checkpoint architecture
+
+---
+
+## XXV. A Paragraph Category Architecture (Phase 468)
+
+**Phase:** A_PARAGRAPH_CATEGORY_ARCHITECTURE (468)
+**Constraints:** C1334-C1337 | **Date:** 2026-02-26
+
+### Context
+
+Phase 452's scattershot confirmed the 8-category system works in A (C1261: record coherence d=9.7, C1263: paragraph specialization d=12.5). Phase 468 goes deeper: not just "paragraphs specialize" but HOW they specialize, what types exist, and whether there's internal or folio-level organization.
+
+### A Registry Has 5 Paragraph Types (C1334-C1335)
+
+A paragraphs form 5 distinct category-based types, defined by their dominant operational category:
+
+| Type | Count | % | Section bias |
+|------|-------|---|-------------|
+| STAGING | 105 | 43.6% | H-dominant (88/105) |
+| FLOW | 48 | 19.9% | T-dominant (7/48) |
+| TRANSITION | 42 | 17.4% | H-dominant (34/42) |
+| THERMAL | 33 | 13.7% | P-dominant (21/33) |
+| OPERATION | 12 | 5.0% | H-dominant (11/12) |
+
+Three categories — CONTAINMENT, MONITORING, MARKING — never or essentially never dominate a paragraph. They appear as supporting vocabulary within paragraphs but never organize one. This creates a **two-tier architecture**: 5 dominating categories that structure paragraphs, and 3 supporting categories that contribute within but don't lead.
+
+Within-type JSD (0.074) < between-type JSD (0.108), MW z=-45.67, surviving all three sections. This taxonomy is independent of and complementary to C850's 5 structural types (short, standard, long, only, metadata — based on size, not category).
+
+The section specialization is striking: **H catalogs procedures** (STAGING 48%), **P catalogs thermal specifications** (THERMAL 45%), **T catalogs flow operations** (FLOW 64%).
+
+### MARKING Is Front-Loaded: A Cross-System Pattern (C1336)
+
+MARKING tokens (mark, flag, note, pause, diagram, hazard, danger, link, adjust) concentrate toward the beginning of A paragraphs: mean normalized position 0.429 (vs 0.5 expected), deviation 0.071, p<0.001. First-token MARKING rate is 15.5% vs base 7.5% (2.07x enrichment). All other categories are within 0.03 of center — position-free for 7 of 8 categories.
+
+This is now a confirmed cross-system pattern:
+
+| System | Location | MARKING Signal |
+|--------|----------|---------------|
+| **Currier A** | Paragraph beginnings (C1336) | Position 0.429, 2.07x first-token |
+| **Currier B** | Paragraph headers (C1287) | Header enrichment |
+| **Currier B** | Block 0 unique vocabulary (C1332) | 2.48x enrichment |
+
+Across both systems, the documentation practice is the same: **tell them what to watch for before telling them what to do.**
+
+### No Folio-Level Paragraph Sequencing (C1337)
+
+A paragraph types are NOT organized within folios. Consecutive paragraphs are no more categorically similar than random pairs (JSD 0.104 vs 0.096, p=0.850). The first paragraph has no distinct category profile (JSD=0.004 from rest).
+
+This confirms C240 (NON_SEQUENTIAL_CATEGORICAL_REGISTRY) extends to paragraph category organization. The contrast with B is sharp: B blocks ARE sequenced (C1326 adjacent similarity) and block 0 IS special (C1332 marking enrichment). A paragraphs within a folio are a catalog — unordered, independently accessible.
+
+### Interpretation: A as the Reference Manual (Tier 3)
+
+The A registry is organized like a reference manual for an operational practice:
+
+- **STAGING paragraphs** (43.6%) = procedural sequences — step-by-step instructions, iteration protocols, continuation rules. This is the operational backbone of the catalog.
+- **FLOW paragraphs** (19.9%) = transfer and discharge operations — what moves where, when to gather or release.
+- **TRANSITION paragraphs** (17.4%) = start/stop/endpoint specifications — when to begin, when a stage is complete.
+- **THERMAL paragraphs** (13.7%) = heat management specifications — temperatures, durations, fire types.
+- **OPERATION paragraphs** (5.0%) = specific work instructions — physical manipulations, precise handling.
+
+Section H (herbal) is overwhelmingly procedural (STAGING), consistent with recipes or protocols for preparing botanical materials. Section P (pharmaceutical) is overwhelmingly thermal, consistent with heat-intensive preparation (distillation, sublimation). Section T focuses on flow operations.
+
+The MARKING front-loading means each catalog entry begins with annotations: what hazards to watch for, what to flag, what adjustments might be needed. Only after the cautionary context does the operational content follow. This matches historical practice: medieval recipe manuscripts often begin entries with warnings or notes before the instructions proper.
+
+### Caveats
+
+- Category assignments depend on the Phase 446 gloss→category mapping — systematic bias in the mapping would affect all findings
+- The C171 semantic ceiling means we cannot confirm that "STAGING-dominant" paragraphs actually describe procedural sequences — the category labels are structural metaphors, not translations
+- Section T has only 11 paragraphs; FLOW dominance (64%) is based on small n
+
+---
+
+## XXVI. Suffix Mode as Emergent Property (Phase 469)
+
+**Phase:** SUFFIX_MODE_ASSIGNMENT (469)
+**Constraints:** C1338-C1341 | **Date:** 2026-02-26
+
+### Context
+
+The alternating suffix modes (C1229: Mode A = terminal-heavy/specification, Mode B = bare-heavy/continuation) are a universal B grammar property. They form coupled parallel tracks (C1258) with B→A thermal feedback (C1311). The opener MIDDLE selects mode (C1256, V=0.30). But what fundamentally determines whether a line is Mode A or Mode B? Two competing models:
+
+1. **Identity model**: Each MIDDLE has a preferred suffix; mode emerges from which tokens happen to be on the line.
+2. **Context model**: The line is assigned a mode, and tokens receive suffixes accordingly.
+
+### MIDDLE Identity Determines Suffix (C1338)
+
+The identity model wins decisively. MIDDLE identity carries **11.57x more mutual information** about suffix category than line mode:
+
+- I(MIDDLE; suffix_cat) = **0.697 bits**
+- I(line_mode; suffix_cat) = 0.060 bits
+
+60% of frequent MIDDLEs (70 with 20+ occurrences) are suffix-locked — they carry the same suffix category >80% of the time regardless of context. The population splits:
+
+| Band | Count | % |
+|------|-------|---|
+| Bare-locked (>80% bare) | 26 | 37.1% |
+| Terminal-locked (>80% terminal) | 16 | 22.9% |
+| Moderate (60-80%) | 12 | 17.1% |
+| Low selectivity (<60%) | 16 | 22.9% |
+
+The high-frequency backbone of the B grammar — edy (n=1545), ey (n=727), eey (n=558) — is intrinsically bare. The k-family MIDDLEs — eck (n=78), ect (n=43), kc (n=24) — are intrinsically terminal. These are MIDDLE properties, not line properties.
+
+### MIDDLEs Are Mode-Flexible (C1339)
+
+Despite having strong suffix preferences, MIDDLEs are NOT locked to modes. Only 7.7% of frequent MIDDLEs appear >80% in one mode. The same MIDDLE freely appears on both Mode A and Mode B lines.
+
+The category→mode lean is consistent with C1279/C1309 but weak: MONITORING MIDDLEs lean Mode A (0.586), TRANSITION lean Mode B (0.328). Notably, THERMAL MIDDLEs lean Mode B (0.406) even though Mode A lines are THERMAL-enriched (C1279: 1.45x). The paradox resolves: THERMAL MIDDLEs carry terminal suffixes more often than average — when they do, they boost Mode A classification; when they appear bare, they blend into Mode B. The enrichment is about suffix behavior, not token selection.
+
+### Suffix Stable Across Modes (C1340)
+
+When the same MIDDLE appears in Mode A and Mode B lines, its suffix distribution barely changes (median cross-mode JSD = 0.020). Only 12.1% of dual-mode MIDDLEs show significant suffix shift (p<0.01). A small but real contextual modulation exists (mean JSD 0.035 vs null 0.026, perm p=0.003), but the dominant pattern is stability.
+
+### Mode Is ~80% Emergent (C1341)
+
+If each token is assigned its most common suffix (the "modal suffix" — the suffix this MIDDLE usually carries), the resulting predicted mode matches actual mode with **80.0% accuracy** (baseline 59.7%, lift 1.34x). Mode A is especially predictable: 89.4% recall.
+
+The ~20% accuracy gap represents genuine contextual modulation: some MIDDLEs (the 23% "low selectivity" group) have flexible suffixes that respond to line-level or paragraph-level context. This minority contextual channel likely drives the cross-mode coupling (C1258) and thermal feedback (C1311).
+
+### Interpretation: Mode as Compositional Emergence (Tier 3)
+
+The generative mechanism for suffix modes is now clear:
+
+1. A B body line is assembled from MIDDLEs (drawn from the paragraph's vocabulary pool)
+2. Each MIDDLE brings its intrinsic suffix preference: edy → always bare, eck → always terminal, od → usually bare but sometimes terminal
+3. The aggregate suffix profile of the line determines mode classification: if enough terminal-preferring MIDDLEs accumulate, the line is Mode A; if bare-preferring MIDDLEs dominate, Mode B
+4. The opener MIDDLE (C1256) seeds the profile — not by imposing mode, but because its own suffix preference influences whether subsequent tokens reinforce or dilute that tendency
+
+In distillation terms: Mode A lines ("specification") are lines that happen to contain MIDDLEs requiring explicit parameter-setting suffixes — measurements, energy settings, tight tolerances. Mode B lines ("continuation") contain MIDDLEs that need no such specification — they describe ongoing processes, equilibrium states, steady conditions. The distinction between "set a parameter" and "maintain a state" is intrinsic to the vocabulary, not imposed by a line-level grammar.
+
+This resolves three previously unexplained facts:
+- **C1259**: Mode proportion is flat across body position (rho=-0.027) — because the vocabulary pool doesn't change position
+- **C1233**: Mode alternation has near-random entropy (97.8%) — because mode is a consequence of vocabulary sampling, not a deterministic sequence
+- **C1267**: Mode distinction doesn't organize A records — because mode is a B-execution phenomenon that emerges from how B tokens are suffixed, not from which MIDDLEs are selected
+
+### Caveats
+
+- The 80% accuracy of the identity model means 20% of mode assignment involves something beyond token identity — likely paragraph-level cycling or adjacent-token interaction effects
+- The suffix sets and centroids (C1231) are defined from the corpus itself, so the "mode" construct is inherently circular at some level — mode is defined by suffixes, and we're testing what determines suffixes
+- Low-selectivity MIDDLEs (23%) are the locus of contextual modulation but their exact mechanism is uncharacterized
