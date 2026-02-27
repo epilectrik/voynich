@@ -4,6 +4,23 @@
 
 ---
 
+## Version 4.90.76 (2026-02-27) - Phase 488: Hebrew Cipher Cross-Validation
+
+### Summary
+
+Phase 488: Cross-validation against Antenore Gatta's Hebrew cipher hypothesis (voynich-toolkit). Their EVA→Hebrew decode (context-sensitive, RTL, digraph/positional/homophone mapping) INCREASES character bigram entropy (+0.218 bits) and DECREASES token MI (-0.755 bits) — the opposite of correct decipherment, consistent with C130. Zero category coherence in Hebrew space (C171 holds). Only 1/35 PREFIXes exactly matches a Hebrew morpheme. The T2 within-class clustering (z=-15.5) is a morphological confound, not Hebrew structure. Score: 3/7 control program, 1/7 cipher, 3/7 ambiguous = STRONG FALSIFICATION at grammar layer.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/HEBREW_CIPHER_CROSS_VALIDATION/` -- 1 script + 1 results JSON |
+| **ADDED** | C1375 constraint file (1 new constraint, 1218->1219) |
+| **UPDATED** | `INDEX.md` -- 1218->1219 total, Phase 488 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.89->v4.90, 487->488 phases, 1218->1219 constraints |
+
+---
+
 ## Version 4.89.75 (2026-02-27) - Phase 487: Within-PREFIX MIDDLE Positional Selection
 
 ### Summary

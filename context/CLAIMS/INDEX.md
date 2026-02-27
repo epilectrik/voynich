@@ -4188,6 +4188,21 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - QO lane vs CHSH lane partition does NOT predict positional behavior (p=0.120)
 - Thermal arc is a MIDDLE-level positional grammar property, not PREFIX-level
 
+### Hebrew Cipher Cross-Validation (C1375) -- Phase: HEBREW_CIPHER_CROSS_VALIDATION (Phase 488)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1375** | **Hebrew Cipher Cross-Validation** (Gatta Hebrew cipher decode INCREASES entropy +0.218 bits DECREASES MI -0.755 bits opposite of decipherment; 0/8 categories show Hebrew coherence ratio=0.991; 1/35 PREFIXes match Hebrew morpheme; T2 class clustering z=-15.5 is morphological confound; 3/7 control program 1/7 cipher 3/7 ambiguous = STRONG FALSIFICATION at grammar layer) | 2 | B, cross-validation, external, cipher, Hebrew, information theory | -> [C1375_hebrew_cipher_cross_validation.md](C1375_hebrew_cipher_cross_validation.md) |
+
+**Phase 488 findings (Hebrew Cipher Cross-Validation):**
+- Gatta (voynich-toolkit) proposes EVA→Hebrew consonantal, RTL, with context-sensitive mapping
+- Their decode INCREASES character bigram entropy (+0.218 bits) — opposite of correct decipherment
+- Their decode DECREASES token MI (-0.755 bits) — destroys structural signal, consistent with C130
+- Our 8 operational categories show ZERO Hebrew-space coherence (C171 semantic ceiling holds)
+- Only 1/35 PREFIXes (ch→kaf=ke-) exactly matches a Hebrew morpheme
+- T2 within-class clustering (z=-15.5) is a confound: EVA morphological similarity survives any char transform
+- Verdict: STRONG FALSIFICATION of cipher at grammar layer; Gatta's patterns may exist below grammar level
+
 ---
 
 ## Navigation

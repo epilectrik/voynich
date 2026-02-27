@@ -1,0 +1,855 @@
+{
+  "metadata": {
+    "phase": 488,
+    "title": "Hebrew Cipher Cross-Validation",
+    "external_repo": "github.com/antenore/voynich-toolkit",
+    "external_author": "Antenore Gatta",
+    "framing": "Respectful cross-validation of two independent analyses",
+    "n_tokens": 23096,
+    "n_lines": 2420,
+    "n_forbidden_pairs": 17
+  },
+  "gatta_transform": {
+    "type": "context-sensitive EVA->Hebrew",
+    "features": [
+      "RTL_reversal",
+      "q/qo_prefix_strip",
+      "ch_digraph",
+      "ii_digraph",
+      "positional_overrides",
+      "homophone_merge_f_p"
+    ],
+    "samples": {
+      "chedy": "Srpt",
+      "qokaiin": "bEyt",
+      "daiin": "bEyr",
+      "okeedy": "Srpptw",
+      "shedy": "SrpEn",
+      "otchol": "mwtJw"
+    }
+  },
+  "pre_registered_predictions": {
+    "control_program": {
+      "T1": "Boundaries collapse (consistency < 0.3)",
+      "T2": "No Hebrew clustering (ratio ~1.0)",
+      "T3": "No phonological pattern (0-2/17)",
+      "T4": "No category coherence (ratio ~1.0)",
+      "T5": "MI decreases, entropy increases",
+      "T6": "Few morpheme matches (< 3/30)",
+      "T7": "LTR at all levels"
+    },
+    "cipher": {
+      "T1": "Boundaries map to Hebrew morphemes (consistency > 0.7)",
+      "T2": "Hebrew clustering in classes (ratio < 0.80)",
+      "T3": "Hebrew phonotactic explanation (5+/17)",
+      "T4": "Semantic clustering by category",
+      "T5": "MI increases, entropy decreases",
+      "T6": "Many morpheme matches (8+/30)",
+      "T7": "RTL at character level"
+    }
+  },
+  "T1_morphological_boundaries": {
+    "overall_consistency": 0.5517,
+    "n_prefixes_tested": 33,
+    "n_tokens_tested": 19223,
+    "prefix_details": {
+      "al": {
+        "n_tokens": 173,
+        "decoded_prefix": "my",
+        "consistency": 1.0
+      },
+      "ar": {
+        "n_tokens": 136,
+        "decoded_prefix": "hy",
+        "consistency": 1.0
+      },
+      "ch": {
+        "n_tokens": 3492,
+        "decoded_prefix": "k",
+        "consistency": 0.0
+      },
+      "ct": {
+        "n_tokens": 60,
+        "decoded_prefix": "JA",
+        "consistency": 1.0
+      },
+      "da": {
+        "n_tokens": 1083,
+        "decoded_prefix": "yr",
+        "consistency": 1.0
+      },
+      "dch": {
+        "n_tokens": 104,
+        "decoded_prefix": "kr",
+        "consistency": 0.0
+      },
+      "de": {
+        "n_tokens": 19,
+        "decoded_prefix": "pr",
+        "consistency": 1.0
+      },
+      "do": {
+        "n_tokens": 126,
+        "decoded_prefix": "wr",
+        "consistency": 1.0
+      },
+      "fch": {
+        "n_tokens": 57,
+        "decoded_prefix": "kl",
+        "consistency": 0.0
+      },
+      "ka": {
+        "n_tokens": 238,
+        "decoded_prefix": "yt",
+        "consistency": 1.0
+      },
+      "kch": {
+        "n_tokens": 97,
+        "decoded_prefix": "kt",
+        "consistency": 0.0
+      },
+      "ke": {
+        "n_tokens": 259,
+        "decoded_prefix": "pt",
+        "consistency": 1.0
+      },
+      "ko": {
+        "n_tokens": 48,
+        "decoded_prefix": "wt",
+        "consistency": 1.0
+      },
+      "lch": {
+        "n_tokens": 315,
+        "decoded_prefix": "km",
+        "consistency": 0.0
+      },
+      "lk": {
+        "n_tokens": 438,
+        "decoded_prefix": "tm",
+        "consistency": 1.0
+      },
+      "lsh": {
+        "n_tokens": 116,
+        "decoded_prefix": "Enm",
+        "consistency": 1.0
+      },
+      "ok": {
+        "n_tokens": 1476,
+        "decoded_prefix": "tw",
+        "consistency": 1.0
+      },
+      "ol": {
+        "n_tokens": 875,
+        "decoded_prefix": "mw",
+        "consistency": 1.0
+      },
+      "or": {
+        "n_tokens": 173,
+        "decoded_prefix": "hw",
+        "consistency": 1.0
+      },
+      "ot": {
+        "n_tokens": 1448,
+        "decoded_prefix": "Jw",
+        "consistency": 1.0
+      },
+      "pch": {
+        "n_tokens": 245,
+        "decoded_prefix": "kl",
+        "consistency": 0.0
+      },
+      "po": {
+        "n_tokens": 136,
+        "decoded_prefix": "wl",
+        "consistency": 1.0
+      },
+      "qo": {
+        "n_tokens": 4069,
+        "decoded_prefix": "wq",
+        "consistency": 0.0
+      },
+      "rch": {
+        "n_tokens": 41,
+        "decoded_prefix": "kh",
+        "consistency": 0.0
+      },
+      "sa": {
+        "n_tokens": 329,
+        "decoded_prefix": "yn",
+        "consistency": 1.0
+      },
+      "sch": {
+        "n_tokens": 25,
+        "decoded_prefix": "kn",
+        "consistency": 0.0
+      },
+      "sh": {
+        "n_tokens": 2329,
+        "decoded_prefix": "En",
+        "consistency": 1.0
+      },
+      "so": {
+        "n_tokens": 189,
+        "decoded_prefix": "wn",
+        "consistency": 1.0
+      },
+      "ta": {
+        "n_tokens": 237,
+        "decoded_prefix": "yJ",
+        "consistency": 1.0
+      },
+      "tch": {
+        "n_tokens": 172,
+        "decoded_prefix": "kJ",
+        "consistency": 0.0
+      },
+      "te": {
+        "n_tokens": 289,
+        "decoded_prefix": "pJ",
+        "consistency": 1.0
+      },
+      "to": {
+        "n_tokens": 115,
+        "decoded_prefix": "wJ",
+        "consistency": 1.0
+      },
+      "yk": {
+        "n_tokens": 314,
+        "decoded_prefix": "tS",
+        "consistency": 1.0
+      }
+    },
+    "within_prefix_edit_dist": 2.529,
+    "between_prefix_edit_dist": 4.368,
+    "clustering_ratio": 0.579,
+    "verdict": "PARTIAL",
+    "favors": "ambiguous"
+  },
+  "T2_class_grammar": {
+    "within_class_edit_dist": 3.051,
+    "between_class_edit_dist": 3.908,
+    "ratio": 0.7806,
+    "null_mean_ratio": 0.9605,
+    "null_std": 0.0116,
+    "z_score": -15.464,
+    "homophone_collisions": 65,
+    "homophone_collision_rate": 0.1693,
+    "total_unique_decoded": 384,
+    "verdict": "STRONG_CLUSTERING",
+    "favors": "cipher"
+  },
+  "T3_forbidden_transitions": {
+    "decoded_forbidden_pairs": [
+      {
+        "eva_source": "shey",
+        "eva_target": "aiin",
+        "hebrew_source": "SpEn",
+        "hebrew_target": "dhy",
+        "same_initial": false,
+        "adjacent_identical": false
+      },
+      {
+        "eva_source": "shey",
+        "eva_target": "al",
+        "hebrew_source": "SpEn",
+        "hebrew_target": "my",
+        "same_initial": false,
+        "adjacent_identical": false
+      },
+      {
+        "eva_source": "shey",
+        "eva_target": "c",
+        "hebrew_source": "SpEn",
+        "hebrew_target": "A",
+        "same_initial": false,
+        "adjacent_identical": false
+      },
+      {
+        "eva_source": "chol",
+        "eva_target": "r",
+        "hebrew_source": "mwk",
+        "hebrew_target": "h",
+        "same_initial": false,
+        "adjacent_identical": false
+      },
+      {
+        "eva_source": "chedy",
+        "eva_target": "ee",
+        "hebrew_source": "Srpk",
+        "hebrew_target": "pp",
+        "same_initial": false,
+        "adjacent_identical": false
+      },
+      {
+        "eva_source": "dy",
+        "eva_target": "aiin",
+        "hebrew_source": "Sr",
+        "hebrew_target": "dhy",
+        "same_initial": false,
+        "adjacent_identical": false
+      },
+      {
+        "eva_source": "dy",
+        "eva_target": "chey",
+        "hebrew_source": "Sr",
+        "hebrew_target": "Spk",
+        "same_initial": true,
+        "adjacent_identical": false
+      },
+      {
+        "eva_source": "l",
+        "eva_target": "chol",
+        "hebrew_source": "m",
+        "hebrew_target": "mwk",
+        "same_initial": true,
+        "adjacent_identical": true
+      },
+      {
+        "eva_source": "or",
+        "eva_target": "dal",
+        "hebrew_source": "hw",
+        "hebrew_target": "myr",
+        "same_initial": false,
+        "adjacent_identical": false
+      },
+      {
+        "eva_source": "chey",
+        "eva_target": "chedy",
+        "hebrew_source": "Spk",
+        "hebrew_target": "Srpk",
+        "same_initial": true,
+        "adjacent_identical": false
+      },
+      {
+        "eva_source": "chey",
+        "eva_target": "shedy",
+        "hebrew_source": "Spk",
+        "hebrew_target": "SrpEn",
+        "same_initial": true,
+        "adjacent_identical": false
+      },
+      {
+        "eva_source": "ar",
+        "eva_target": "dal",
+        "hebrew_source": "hy",
+        "hebrew_target": "myr",
+        "same_initial": false,
+        "adjacent_identical": false
+      },
+      {
+        "eva_source": "c",
+        "eva_target": "ee",
+        "hebrew_source": "A",
+        "hebrew_target": "pp",
+        "same_initial": false,
+        "adjacent_identical": false
+      },
+      {
+        "eva_source": "he",
+        "eva_target": "t",
+        "hebrew_source": "pE",
+        "hebrew_target": "J",
+        "same_initial": false,
+        "adjacent_identical": false
+      },
+      {
+        "eva_source": "he",
+        "eva_target": "or",
+        "hebrew_source": "pE",
+        "hebrew_target": "hw",
+        "same_initial": false,
+        "adjacent_identical": false
+      },
+      {
+        "eva_source": "shedy",
+        "eva_target": "aiin",
+        "hebrew_source": "SrpEn",
+        "hebrew_target": "dhy",
+        "same_initial": false,
+        "adjacent_identical": false
+      },
+      {
+        "eva_source": "shedy",
+        "eva_target": "o",
+        "hebrew_source": "SrpEn",
+        "hebrew_target": "w",
+        "same_initial": false,
+        "adjacent_identical": false
+      }
+    ],
+    "forbidden_same_initial": 4,
+    "forbidden_adjacent_identical": 1,
+    "control_same_initial": 1,
+    "control_adjacent_identical": 2,
+    "forbidden_pattern_rate": 0.235,
+    "control_pattern_rate": 0.059,
+    "hebrew_explained_count": 4,
+    "verdict": "WEAK_PATTERN",
+    "favors": "ambiguous"
+  },
+  "T4_category_coherence": {
+    "within_category_edit_dist": 2.428,
+    "between_category_edit_dist": 2.449,
+    "ratio": 0.991,
+    "category_samples": {
+      "THERMAL": [
+        [
+          "k",
+          2083,
+          "t"
+        ],
+        [
+          "e",
+          867,
+          "p"
+        ],
+        [
+          "eey",
+          644,
+          "Spp"
+        ],
+        [
+          "ke",
+          421,
+          "pt"
+        ],
+        [
+          "eol",
+          294,
+          "mwp"
+        ]
+      ],
+      "FLOW": [
+        [
+          "r",
+          749,
+          "h"
+        ],
+        [
+          "ar",
+          677,
+          "hy"
+        ],
+        [
+          "t",
+          576,
+          "J"
+        ],
+        [
+          "al",
+          521,
+          "my"
+        ],
+        [
+          "or",
+          446,
+          "hw"
+        ]
+      ],
+      "CONTAINMENT": [
+        [
+          "dy",
+          675,
+          "Sr"
+        ],
+        [
+          "ckh",
+          127,
+          "EtA"
+        ],
+        [
+          "eck",
+          90,
+          "tAp"
+        ],
+        [
+          "ok",
+          70,
+          "tw"
+        ],
+        [
+          "eek",
+          54,
+          "tpp"
+        ]
+      ],
+      "STAGING": [
+        [
+          "l",
+          855,
+          "m"
+        ],
+        [
+          "ol",
+          762,
+          "mw"
+        ],
+        [
+          "iin",
+          560,
+          "dh"
+        ],
+        [
+          "s",
+          144,
+          "n"
+        ],
+        [
+          "i",
+          137,
+          "r"
+        ]
+      ],
+      "OPERATION": [
+        [
+          "edy",
+          1938,
+          "Srp"
+        ],
+        [
+          "o",
+          388,
+          "w"
+        ],
+        [
+          "ck",
+          197,
+          "tA"
+        ],
+        [
+          "ek",
+          169,
+          "tp"
+        ],
+        [
+          "eeo",
+          133,
+          "wpp"
+        ]
+      ],
+      "TRANSITION": [
+        [
+          "ey",
+          889,
+          "Sp"
+        ],
+        [
+          "aiin",
+          834,
+          "dhy"
+        ],
+        [
+          "y",
+          513,
+          "S"
+        ],
+        [
+          "eo",
+          359,
+          "wp"
+        ],
+        [
+          "am",
+          174,
+          "gy"
+        ]
+      ],
+      "MARKING": [
+        [
+          "d",
+          337,
+          "r"
+        ],
+        [
+          "in",
+          264,
+          "dr"
+        ],
+        [
+          "pch",
+          79,
+          "kl"
+        ],
+        [
+          "cth",
+          49,
+          "EJA"
+        ],
+        [
+          "p",
+          47,
+          "l"
+        ]
+      ],
+      "MONITORING": [
+        [
+          "ct",
+          95,
+          "JA"
+        ],
+        [
+          "h",
+          48,
+          "E"
+        ],
+        [
+          "ect",
+          47,
+          "JAp"
+        ],
+        [
+          "ot",
+          46,
+          "Jw"
+        ],
+        [
+          "cph",
+          36,
+          "ElA"
+        ]
+      ]
+    },
+    "verdict": "NO_COHERENCE",
+    "favors": "control_program"
+  },
+  "T5_information_theory": {
+    "eva_bigram_entropy": 2.0094,
+    "decoded_bigram_entropy": 2.2277,
+    "entropy_delta": 0.2182,
+    "entropy_verdict": "INCREASES",
+    "eva_alphabet_size": 20,
+    "decoded_alphabet_size": 18,
+    "eva_token_MI": 5.675394,
+    "decoded_token_MI": 4.920655,
+    "MI_delta": -0.754739,
+    "MI_verdict": "MI_DECREASES",
+    "prefix_middle_MI_before": 1.5367,
+    "prefix_middle_MI_after": 1.7614,
+    "f_p_class_overlap": 1,
+    "f_total": 73,
+    "p_total": 418,
+    "verdict": "INCREASES_MI_DECREASES",
+    "favors": "control_program"
+  },
+  "T6_prefix_role": {
+    "n_prefixes": 35,
+    "morpheme_matches": 1,
+    "match_rate": 0.029,
+    "prefix_details": {
+      "al": {
+        "decoded": "my",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "ar": {
+        "decoded": "hy",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "ch": {
+        "decoded": "k",
+        "is_hebrew_morpheme": true,
+        "morpheme": "ke- (like/as)"
+      },
+      "ct": {
+        "decoded": "JA",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "da": {
+        "decoded": "yr",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "dch": {
+        "decoded": "kr",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "de": {
+        "decoded": "pr",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "do": {
+        "decoded": "wr",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "fch": {
+        "decoded": "kl",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "ka": {
+        "decoded": "yt",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "kch": {
+        "decoded": "kt",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "ke": {
+        "decoded": "pt",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "ko": {
+        "decoded": "wt",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "lch": {
+        "decoded": "km",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "lk": {
+        "decoded": "tm",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "lsh": {
+        "decoded": "Enm",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "ok": {
+        "decoded": "tw",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "ol": {
+        "decoded": "mw",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "or": {
+        "decoded": "hw",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "ot": {
+        "decoded": "Jw",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "pch": {
+        "decoded": "kl",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "pe": {
+        "decoded": "pl",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "po": {
+        "decoded": "wl",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "qo": {
+        "decoded": "wq",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "rch": {
+        "decoded": "kh",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "sa": {
+        "decoded": "yn",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "sch": {
+        "decoded": "kn",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "se": {
+        "decoded": "pn",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "sh": {
+        "decoded": "En",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "so": {
+        "decoded": "wn",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "ta": {
+        "decoded": "yJ",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "tch": {
+        "decoded": "kJ",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "te": {
+        "decoded": "pJ",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "to": {
+        "decoded": "wJ",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      },
+      "yk": {
+        "decoded": "tS",
+        "is_hebrew_morpheme": false,
+        "morpheme": null
+      }
+    },
+    "modifier_decoded": {
+      "q": "q",
+      "d": "r",
+      "f": "l",
+      "p": "l",
+      "y": "S",
+      "s": "n"
+    },
+    "base_decoded": {
+      "h": "E",
+      "e": "p"
+    },
+    "modifier_base_overlap": 0,
+    "qo_agreement": true,
+    "verdict": "NO_ALIGNMENT",
+    "favors": "control_program"
+  },
+  "T7_directionality": {
+    "eva_forward_MI": 5.67465,
+    "eva_reverse_MI": 5.673488,
+    "token_direction": "SYMMETRIC",
+    "decoded_forward_MI": 4.920232,
+    "decoded_reverse_MI": 4.918048,
+    "eva_ltr_char_entropy": 2.0094,
+    "eva_rtl_char_entropy": 2.0095,
+    "decoded_ltr_char_entropy": 2.2277,
+    "decoded_rtl_char_entropy": 2.2277,
+    "char_direction": "RTL_lower_entropy",
+    "first_token_gallows_rate": 0.24,
+    "last_token_gallows_rate": 0.044,
+    "gallows_direction": "LTR",
+    "verdict": "INCONCLUSIVE",
+    "favors": "ambiguous"
+  },
+  "scorecard": {
+    "control_program": 3,
+    "cipher": 1,
+    "ambiguous": 3,
+    "overall_verdict": "STRONG_FALSIFICATION"
+  }
+}
