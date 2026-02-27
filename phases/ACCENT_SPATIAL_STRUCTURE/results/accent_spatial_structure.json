@@ -1,0 +1,256 @@
+{
+  "metadata": {
+    "phase": 482,
+    "name": "ACCENT_SPATIAL_STRUCTURE",
+    "n_folios": 72,
+    "n_permutations": 1000,
+    "seed": 482,
+    "elapsed_seconds": 0.883303
+  },
+  "T1_gate": {
+    "PC1": {
+      "r2_section_only": 0.456488,
+      "r2_section_plus_position": 0.45707,
+      "partial_r2_position": 0.000582,
+      "F": 0.070767,
+      "p": 0.791053
+    },
+    "PC2": {
+      "r2_section_only": 0.066554,
+      "r2_section_plus_position": 0.076675,
+      "partial_r2_position": 0.010121,
+      "F": 0.72344,
+      "p": 0.398093
+    },
+    "PC3": {
+      "r2_section_only": 0.457005,
+      "r2_section_plus_position": 0.460586,
+      "partial_r2_position": 0.003581,
+      "F": 0.438163,
+      "p": 0.510315
+    },
+    "gate_decision": "SECTION_CONFOUND"
+  },
+  "T2_adjacent": {
+    "B": {
+      "n": 20,
+      "observed_mean_dist": 3.277042,
+      "null_mean_dist": 3.976125,
+      "null_std": 0.381946,
+      "p": 0.039,
+      "significant": true
+    },
+    "H": {
+      "n": 22,
+      "observed_mean_dist": 1.954351,
+      "null_mean_dist": 2.126384,
+      "null_std": 0.182518,
+      "p": 0.155,
+      "significant": false
+    },
+    "S": {
+      "n": 23,
+      "observed_mean_dist": 3.191872,
+      "null_mean_dist": 3.711809,
+      "null_std": 0.255657,
+      "p": 0.024,
+      "significant": true
+    },
+    "any_significant": true
+  },
+  "T3_quire": {
+    "test_possible": false
+  },
+  "T4_autocorrelation": {
+    "B": {
+      "PC1": {
+        "lag1": {
+          "r": 0.323131,
+          "p": 0.177205
+        },
+        "lag2": {
+          "r": -0.325519,
+          "p": 0.187451
+        },
+        "lag3": {
+          "r": -0.422049,
+          "p": 0.091504
+        }
+      },
+      "PC2": {
+        "lag1": {
+          "r": 0.053379,
+          "p": 0.828182
+        },
+        "lag2": {
+          "r": 0.071884,
+          "p": 0.776831
+        },
+        "lag3": {
+          "r": -0.067747,
+          "p": 0.796138
+        }
+      },
+      "PC3": {
+        "lag1": {
+          "r": 0.071912,
+          "p": 0.769862
+        },
+        "lag2": {
+          "r": -0.071893,
+          "p": 0.776805
+        },
+        "lag3": {
+          "r": -0.278339,
+          "p": 0.279356
+        }
+      }
+    },
+    "H": {
+      "PC1": {
+        "lag1": {
+          "r": -0.099897,
+          "p": 0.666589
+        },
+        "lag2": {
+          "r": -0.228441,
+          "p": 0.33268
+        },
+        "lag3": {
+          "r": -0.064703,
+          "p": 0.792426
+        }
+      },
+      "PC2": {
+        "lag1": {
+          "r": 0.334873,
+          "p": 0.13785
+        },
+        "lag2": {
+          "r": -0.260393,
+          "p": 0.267518
+        },
+        "lag3": {
+          "r": -0.602594,
+          "p": 0.006322
+        }
+      },
+      "PC3": {
+        "lag1": {
+          "r": 0.152336,
+          "p": 0.509761
+        },
+        "lag2": {
+          "r": -0.012086,
+          "p": 0.959667
+        },
+        "lag3": {
+          "r": 0.000492,
+          "p": 0.998404
+        }
+      }
+    },
+    "S": {
+      "PC1": {
+        "lag1": {
+          "r": 0.195816,
+          "p": 0.382474
+        },
+        "lag2": {
+          "r": -0.040383,
+          "p": 0.862024
+        },
+        "lag3": {
+          "r": -0.021436,
+          "p": 0.928524
+        }
+      },
+      "PC2": {
+        "lag1": {
+          "r": 0.340006,
+          "p": 0.121569
+        },
+        "lag2": {
+          "r": 0.254931,
+          "p": 0.264741
+        },
+        "lag3": {
+          "r": 0.211709,
+          "p": 0.370228
+        }
+      },
+      "PC3": {
+        "lag1": {
+          "r": 0.12722,
+          "p": 0.572628
+        },
+        "lag2": {
+          "r": -0.030438,
+          "p": 0.895795
+        },
+        "lag3": {
+          "r": -0.350868,
+          "p": 0.129319
+        }
+      }
+    },
+    "significant_lag1_count": 0
+  },
+  "T5_boundary": {
+    "within_section_n": 64,
+    "within_section_mean_dist": 2.754957,
+    "boundary_n": 7,
+    "boundary_mean_dist": 3.241239,
+    "boundary_to_within_ratio": 1.176511,
+    "interpretation": "Moderate discontinuity"
+  },
+  "T6_archetype": {
+    "1": {
+      "n": 10,
+      "observed_mean_dist": 13.955556,
+      "null_mean_dist": 24.277378,
+      "p": 0.005,
+      "spatially_clustered": true
+    },
+    "2": {
+      "n": 13,
+      "observed_mean_dist": 17.846154,
+      "null_mean_dist": 24.374205,
+      "p": 0.026,
+      "spatially_clustered": true
+    },
+    "3": {
+      "n": 7,
+      "observed_mean_dist": 26.857143,
+      "null_mean_dist": 24.557714,
+      "p": 0.676,
+      "spatially_clustered": false
+    },
+    "4": {
+      "n": 5,
+      "observed_mean_dist": 23.6,
+      "null_mean_dist": 24.0812,
+      "p": 0.479,
+      "spatially_clustered": false
+    },
+    "5": {
+      "n": 7,
+      "observed_mean_dist": 25.809524,
+      "null_mean_dist": 24.554571,
+      "p": 0.566,
+      "spatially_clustered": false
+    },
+    "6": {
+      "n": 30,
+      "observed_mean_dist": 25.795402,
+      "null_mean_dist": 24.3062,
+      "p": 0.829,
+      "spatially_clustered": false
+    },
+    "clustered_archetypes": [
+      "1",
+      "2"
+    ]
+  },
+  "verdict": "SECTION_CONFOUND: PC2 position partial R²=0.0101 < 0.02. The folio_position signal in C1368 is section-mediated. Boundary ratio=1.18. Lag-1 significant=0."
+}

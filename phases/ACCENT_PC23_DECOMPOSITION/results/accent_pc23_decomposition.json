@@ -1,0 +1,177 @@
+{
+  "metadata": {
+    "phase": 481,
+    "name": "ACCENT_PC23_DECOMPOSITION",
+    "n_folios": 72,
+    "elapsed_seconds": 1.027994
+  },
+  "T1_section_pc2": {
+    "section_means": {
+      "S": 0.145306,
+      "H": 0.199436,
+      "T": 1.300219,
+      "B": -0.546747,
+      "C": 0.120975
+    },
+    "section_n": {
+      "S": 23,
+      "H": 22,
+      "T": 2,
+      "B": 20,
+      "C": 5
+    },
+    "F": 1.194261,
+    "p": 0.321464,
+    "eta_sq": 0.066554,
+    "prediction_confirmed": false
+  },
+  "T2_section_pc3": {
+    "section_means": {
+      "S": 0.941966,
+      "H": -0.40399,
+      "T": -0.104854,
+      "B": -0.639159,
+      "C": 0.043091
+    },
+    "section_n": {
+      "S": 23,
+      "H": 22,
+      "T": 2,
+      "B": 20,
+      "C": 5
+    },
+    "F": 14.097425,
+    "p": 0.0,
+    "eta_sq": 0.457005,
+    "prediction_confirmed": false
+  },
+  "T3_paragraph_pc2": {
+    "rho_raw": -0.052423,
+    "p_raw": 0.661862,
+    "rho_partial": -0.026779,
+    "p_partial": 0.82331,
+    "prediction_confirmed": false
+  },
+  "T4_dark_pc3": {
+    "rho_raw": null,
+    "p_raw": null,
+    "rho_partial": 0.0,
+    "p_partial": 1.0,
+    "prediction_confirmed": false
+  },
+  "T5_archetype_pc2": {
+    "F": 1.801004,
+    "p": 0.124783,
+    "eta_sq": 0.120059,
+    "prediction_confirmed": false
+  },
+  "T6_archetype_pc3": {
+    "F": 1.019631,
+    "p": 0.413348,
+    "eta_sq": 0.071706,
+    "prediction_confirmed": true
+  },
+  "T7_multivariate_pc2": {
+    "n_candidates": 16,
+    "candidate_names": [
+      "section_B",
+      "section_C",
+      "section_H",
+      "section_S",
+      "paragraph_count",
+      "line_count",
+      "folio_position",
+      "ch_preference",
+      "cat_THERMAL_resid",
+      "cat_FLOW_resid",
+      "cat_CONTAINMENT_resid",
+      "cat_STAGING_resid",
+      "cat_OPERATION_resid",
+      "cat_TRANSITION_resid",
+      "cat_MARKING_resid",
+      "cat_MONITORING_resid"
+    ],
+    "selected_names": [
+      "cat_THERMAL_resid",
+      "folio_position"
+    ],
+    "aic_trace": [
+      [
+        "intercept_only",
+        60.466308
+      ],
+      [
+        "cat_THERMAL_resid",
+        38.07696
+      ],
+      [
+        "folio_position",
+        34.373381
+      ]
+    ],
+    "loo_r2": 0.266879,
+    "r2_insample": 0.34161,
+    "max_single_predictor": "cat_THERMAL_resid",
+    "max_single_r2": 0.287333,
+    "prediction4_confirmed": true
+  },
+  "T8_multivariate_pc3": {
+    "n_candidates": 16,
+    "candidate_names": [
+      "section_B",
+      "section_C",
+      "section_H",
+      "section_S",
+      "paragraph_count",
+      "line_count",
+      "folio_position",
+      "ch_preference",
+      "cat_THERMAL_resid",
+      "cat_FLOW_resid",
+      "cat_CONTAINMENT_resid",
+      "cat_STAGING_resid",
+      "cat_OPERATION_resid",
+      "cat_TRANSITION_resid",
+      "cat_MARKING_resid",
+      "cat_MONITORING_resid"
+    ],
+    "selected_names": [
+      "section_S",
+      "cat_CONTAINMENT_resid",
+      "ch_preference"
+    ],
+    "aic_trace": [
+      [
+        "intercept_only",
+        0.442568
+      ],
+      [
+        "section_S",
+        -37.475718
+      ],
+      [
+        "cat_CONTAINMENT_resid",
+        -41.724352
+      ],
+      [
+        "ch_preference",
+        -50.186459
+      ]
+    ],
+    "loo_r2": 0.496141,
+    "r2_insample": 0.54457,
+    "max_single_predictor": "section_S",
+    "max_single_r2": 0.425595,
+    "prediction4_confirmed": false
+  },
+  "predictions": {
+    "P1_section_pc2_not_pc3": false,
+    "P2_paragraph_pc2": false,
+    "P3_dark_pc3": false,
+    "P4_no_single_above_30pct": false,
+    "P5_not_archetype_structured": false,
+    "confirmed_count": 0,
+    "falsified_count": 4
+  },
+  "verdict": "PC2 (26.7% LOO) predicted by ['cat_THERMAL_resid', 'folio_position']; PC3 (49.6% LOO) predicted by ['section_S', 'cat_CONTAINMENT_resid', 'ch_preference']; 0/5 predictions confirmed"
+}

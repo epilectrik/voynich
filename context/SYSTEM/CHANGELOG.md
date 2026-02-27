@@ -4,6 +4,88 @@
 
 ---
 
+## Version 4.86.72 (2026-02-27) - Phase 484: Position-Conditioned Category Grammar
+
+### Summary
+
+Phase 484: Tested whether 8-category transition grammar varies by line position, extending M2.1's class-level position-conditioning (C1362) to the operational category layer. **YES — category transitions are position-conditioned** (chi² p=4.5e-65, V=0.102). Line-final (Q5) is the most distinctive position. THERMAL self-loops erode Q1→Q5 (32.4%→19.1%). FLOW has the only significant monotonic gradient (rho=0.900, increasing). Section-position interaction absent, confirming C1047 at category level.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/POSITION_CONDITIONED_CATEGORY_GRAMMAR/` -- 1 script + 1 results JSON |
+| **ADDED** | C1371 constraint file (1 new constraint, 1214->1215) |
+| **UPDATED** | `INDEX.md` -- 1214->1215 total, Phase 484 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.85->v4.86, 483->484 phases, 1214->1215 constraints |
+
+---
+
+## Version 4.85.71 (2026-02-27) - Phase 483: Category Pipeline Trace
+
+### Summary
+
+Phase 483: First end-to-end trace of the 8-category system through the A→AZC→B pipeline. Pipeline is WEAKLY_RESHAPED (JS A↔B=0.026). B selectively amplifies THERMAL (+72%) and OPERATION (+58%) while attenuating STAGING (-47%) and MONITORING (-73%). AZC is intermediate, closer to A. Section-specific transfer functions: BIO=maximum THERMAL (2.03x), HERBAL=THERMAL-neutral (0.98x). Dark pipeline 3x more stable than bridge. 4/7 predictions confirmed.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/CATEGORY_PIPELINE_TRACE/` -- 1 script + 1 results JSON |
+| **ADDED** | C1370 constraint file (1 new constraint, 1213->1214) |
+| **UPDATED** | `INDEX.md` -- 1213->1214 total, Phase 483 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.84->v4.85, 482->483 phases, 1213->1214 constraints |
+
+---
+
+## Version 4.84.70 (2026-02-27) - Phase 482: Accent Spatial Structure
+
+### Summary
+
+Phase 482: Tested whether the folio_position signal in C1368's PC2 model represents genuine manuscript-order structure or a section confound. **GATE: SECTION_CONFOUND** — position adds only 1.0% partial R² beyond section for PC2 (threshold 2%). However, within-section local coherence exists: adjacent Bio (p=0.039) and Stars (p=0.024) folios have more similar accents than random same-section pairs. No manuscript-level gradient detected.
+
+**Phase 482 headline findings:**
+- folio_position in C1368 is section-mediated (partial R²=0.010 < 0.02)
+- Within-section local coherence: Bio and Stars adjacent folios are ~15-18% more accent-similar
+- 0/9 lag autocorrelations significant — coherence is weak but present
+- Section boundaries moderate (ratio 1.18) — accent transitions relatively smooth
+- Archetypes 1-2 spatially clustered (section-driven)
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/ACCENT_SPATIAL_STRUCTURE/` -- 1 script + 1 results JSON |
+| **ADDED** | C1369 constraint file (1 new constraint, 1212->1213) |
+| **UPDATED** | `INDEX.md` -- 1212->1213 total, Phase 482 section added, C1368 note amended |
+| **UPDATED** | `CLAUDE.md` -- v4.83->v4.84, 481->482 phases, 1212->1213 constraints |
+
+---
+
+## Version 4.83.69 (2026-02-27) - Phase 481: Accent PC2/PC3 Decomposition
+
+### Summary
+
+Phase 481: Characterized the uncharacterized accent dimensions PC2 (sequential complexity, 20.5%) and PC3 (morphological texture, 8.9%). 0/5 expert predictions confirmed — the accent surprised us. THERMAL is the pervasive accent predictor across PC1+PC2 (79.4% combined). Stars section dominates PC3 morphological axis (eta²=0.457). Manuscript folio position enters PC2 model — first accent-level evidence of manuscript-order signal.
+
+**Phase 481 headline findings:**
+- PC2: THERMAL (kernel-residualized) + folio_position → LOO R² = 0.267
+- PC3: section_S + CONTAINMENT (residualized) + ch_preference → LOO R² = 0.496
+- Section predicts morphological texture (PC3), NOT sequential complexity (PC2) — reversed prediction
+- THERMAL dominates both PC1 (C1367) and PC2 — pervasive accent predictor
+- Folio position signal in PC2 — motivates cross-folio spatial analysis
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/ACCENT_PC23_DECOMPOSITION/` -- 1 script + 1 results JSON |
+| **ADDED** | C1368 constraint file (1 new constraint, 1211->1212) |
+| **UPDATED** | `INDEX.md` -- 1211->1212 total, Phase 481 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.82->v4.83, 480->481 phases, 1211->1212 constraints |
+
+---
+
 ## Version 4.82.68 (2026-02-27) - Phase 480: Folio Accent Vector Analysis
 
 ### Summary

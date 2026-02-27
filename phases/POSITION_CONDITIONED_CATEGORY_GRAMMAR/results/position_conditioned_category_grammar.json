@@ -1,0 +1,325 @@
+{
+  "metadata": {
+    "phase": 484,
+    "name": "POSITION_CONDITIONED_CATEGORY_GRAMMAR",
+    "n_tokens": 22753,
+    "n_transitions": 20340,
+    "n_lines": 2413,
+    "elapsed_seconds": 1.05452
+  },
+  "T1_position_dependence": {
+    "chi2": 844.728728,
+    "p": 0.0,
+    "dof": 252,
+    "cramers_v": 0.101895,
+    "js_per_quintile": [
+      0.004612,
+      0.00392,
+      0.002126,
+      0.00255,
+      0.016199
+    ],
+    "position_dependent": true
+  },
+  "T2_category_gradient": {
+    "THERMAL": {
+      "quintile_fracs": [
+        0.243347,
+        0.293375,
+        0.250307,
+        0.244601,
+        0.175966
+      ],
+      "spearman_rho": -0.4,
+      "spearman_p": 0.504632,
+      "peak_quintile": 1,
+      "trough_quintile": 4
+    },
+    "FLOW": {
+      "quintile_fracs": [
+        0.175806,
+        0.167678,
+        0.193017,
+        0.203349,
+        0.225201
+      ],
+      "spearman_rho": 0.9,
+      "spearman_p": 0.037386,
+      "peak_quintile": 4,
+      "trough_quintile": 1
+    },
+    "CONTAINMENT": {
+      "quintile_fracs": [
+        0.035685,
+        0.045377,
+        0.058028,
+        0.048289,
+        0.054705
+      ],
+      "spearman_rho": 0.7,
+      "spearman_p": 0.18812,
+      "peak_quintile": 2,
+      "trough_quintile": 0
+    },
+    "STAGING": {
+      "quintile_fracs": [
+        0.155444,
+        0.122543,
+        0.120974,
+        0.110895,
+        0.134573
+      ],
+      "spearman_rho": -0.4,
+      "spearman_p": 0.504632,
+      "peak_quintile": 0,
+      "trough_quintile": 3
+    },
+    "OPERATION": {
+      "quintile_fracs": [
+        0.147782,
+        0.153361,
+        0.154414,
+        0.146809,
+        0.122721
+      ],
+      "spearman_rho": -0.6,
+      "spearman_p": 0.284757,
+      "peak_quintile": 2,
+      "trough_quintile": 4
+    },
+    "TRANSITION": {
+      "quintile_fracs": [
+        0.141129,
+        0.138316,
+        0.126137,
+        0.1405,
+        0.191101
+      ],
+      "spearman_rho": 0.3,
+      "spearman_p": 0.623838,
+      "peak_quintile": 4,
+      "trough_quintile": 2
+    },
+    "MARKING": {
+      "quintile_fracs": [
+        0.083669,
+        0.063334,
+        0.077699,
+        0.08299,
+        0.079322
+      ],
+      "spearman_rho": -0.1,
+      "spearman_p": 0.872889,
+      "peak_quintile": 0,
+      "trough_quintile": 1
+    },
+    "MONITORING": {
+      "quintile_fracs": [
+        0.017137,
+        0.016016,
+        0.019425,
+        0.022567,
+        0.016411
+      ],
+      "spearman_rho": 0.2,
+      "spearman_p": 0.74706,
+      "peak_quintile": 3,
+      "trough_quintile": 1
+    },
+    "P1_marking_front": false,
+    "P1_ratio": 1.054811,
+    "P2_thermal_medial": true,
+    "P3_flow_final": false,
+    "P4_transition_late": true
+  },
+  "T3_positional_bigrams": {
+    "n_variant_bigrams": 7,
+    "top_variants": [
+      [
+        "CONTAINMENT→TRANSITION",
+        5,
+        2.047186,
+        34
+      ],
+      [
+        "MARKING→THERMAL",
+        5,
+        0.386925,
+        17
+      ],
+      [
+        "MONITORING→OPERATION",
+        5,
+        0.397395,
+        3
+      ],
+      [
+        "STAGING→MONITORING",
+        4,
+        0.400192,
+        3
+      ],
+      [
+        "MONITORING→TRANSITION",
+        2,
+        0.470066,
+        4
+      ],
+      [
+        "CONTAINMENT→STAGING",
+        1,
+        0.480563,
+        15
+      ],
+      [
+        "CONTAINMENT→THERMAL",
+        5,
+        0.48835,
+        16
+      ]
+    ]
+  },
+  "T4_section_interaction": {
+    "section_js_profiles": {
+      "B": [
+        0.006317,
+        0.007308,
+        0.004996,
+        0.006555,
+        0.026858
+      ],
+      "C": [
+        0.023585,
+        0.024034,
+        0.022977,
+        0.027375,
+        0.033594
+      ],
+      "H": [
+        0.014065,
+        0.021981,
+        0.019437,
+        0.018241,
+        0.058762
+      ],
+      "S": [
+        0.007435,
+        0.007309,
+        0.003798,
+        0.004533,
+        0.01965
+      ]
+    },
+    "mean_profile_correlation": 0.616667,
+    "P6_additive": true
+  },
+  "T5_self_transitions": {
+    "THERMAL": {
+      "self_rates": [
+        0.323944,
+        0.299421,
+        0.279961,
+        0.261905,
+        0.190625
+      ],
+      "spearman_rho": -1.0,
+      "spearman_p": 0.0,
+      "significant": true
+    },
+    "FLOW": {
+      "self_rates": [
+        0.213303,
+        0.222865,
+        0.236943,
+        0.242243,
+        0.250331
+      ],
+      "spearman_rho": 1.0,
+      "spearman_p": 0.0,
+      "significant": true
+    },
+    "CONTAINMENT": {
+      "self_rates": [
+        0.073446,
+        0.064171,
+        0.072034,
+        0.070352,
+        0.077922
+      ],
+      "spearman_rho": 0.3,
+      "spearman_p": 0.623838,
+      "significant": false
+    },
+    "STAGING": {
+      "self_rates": [
+        0.118029,
+        0.150495,
+        0.126016,
+        0.109409,
+        0.161954
+      ],
+      "spearman_rho": 0.3,
+      "spearman_p": 0.623838,
+      "significant": true
+    },
+    "OPERATION": {
+      "self_rates": [
+        0.148704,
+        0.137658,
+        0.128981,
+        0.142149,
+        0.135468
+      ],
+      "spearman_rho": -0.5,
+      "spearman_p": 0.391002,
+      "significant": false
+    },
+    "TRANSITION": {
+      "self_rates": [
+        0.158571,
+        0.161404,
+        0.118908,
+        0.181347,
+        0.22658
+      ],
+      "spearman_rho": 0.7,
+      "spearman_p": 0.18812,
+      "significant": true
+    },
+    "MARKING": {
+      "self_rates": [
+        0.110843,
+        0.1341,
+        0.186709,
+        0.160819,
+        0.172249
+      ],
+      "spearman_rho": 0.7,
+      "spearman_p": 0.18812,
+      "significant": true
+    },
+    "MONITORING": {
+      "self_rates": [
+        0.011765,
+        0.030303,
+        0.012658,
+        0.010753,
+        0.016949
+      ],
+      "spearman_rho": 0.0,
+      "spearman_p": 1.0,
+      "significant": false
+    },
+    "P5_self_rate_variation": true,
+    "significant_count": 5
+  },
+  "predictions": {
+    "P1_marking_front": false,
+    "P2_thermal_medial": true,
+    "P3_flow_final": false,
+    "P4_transition_late": true,
+    "P5_self_rate_variation": true,
+    "P6_additive": true
+  },
+  "verdict": "Category transitions ARE position-conditioned (chi2 p=4.54e-65, V=0.1019). 7 position-variant bigrams. 4/6 predictions confirmed."
+}

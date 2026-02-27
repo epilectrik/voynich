@@ -1,0 +1,315 @@
+{
+  "metadata": {
+    "phase": 483,
+    "name": "CATEGORY_PIPELINE_TRACE",
+    "n_bridge": 85,
+    "n_dark": 300,
+    "elapsed_seconds": 1.246055
+  },
+  "T1_system_profiles": {
+    "profiles": {
+      "A": {
+        "THERMAL": 0.137762,
+        "FLOW": 0.172557,
+        "CONTAINMENT": 0.053447,
+        "STAGING": 0.249564,
+        "OPERATION": 0.096531,
+        "TRANSITION": 0.195899,
+        "MARKING": 0.041012,
+        "MONITORING": 0.053229
+      },
+      "AZC": {
+        "THERMAL": 0.144312,
+        "FLOW": 0.189728,
+        "CONTAINMENT": 0.046265,
+        "STAGING": 0.16129,
+        "OPERATION": 0.125637,
+        "TRANSITION": 0.287351,
+        "MARKING": 0.023769,
+        "MONITORING": 0.021647
+      },
+      "B": {
+        "THERMAL": 0.237317,
+        "FLOW": 0.20085,
+        "CONTAINMENT": 0.053968,
+        "STAGING": 0.133579,
+        "OPERATION": 0.15285,
+        "TRANSITION": 0.169794,
+        "MARKING": 0.037226,
+        "MONITORING": 0.014415
+      }
+    },
+    "totals": {
+      "A": 9168,
+      "AZC": 2356,
+      "B": 19771
+    },
+    "js_a_b": 0.025782,
+    "js_a_azc": 0.015057,
+    "js_azc_b": 0.016026,
+    "P1_significant_redistribution": false,
+    "P2_azc_intermediate": true,
+    "P2_azc_closer_to": "A"
+  },
+  "T2_amplification": {
+    "THERMAL": {
+      "A": 0.137762,
+      "AZC": 0.144312,
+      "B": 0.237317,
+      "A_to_B_ratio": 1.722664,
+      "amplified": true,
+      "attenuated": false
+    },
+    "FLOW": {
+      "A": 0.172557,
+      "AZC": 0.189728,
+      "B": 0.20085,
+      "A_to_B_ratio": 1.163964,
+      "amplified": true,
+      "attenuated": false
+    },
+    "CONTAINMENT": {
+      "A": 0.053447,
+      "AZC": 0.046265,
+      "B": 0.053968,
+      "A_to_B_ratio": 1.009751,
+      "amplified": false,
+      "attenuated": false
+    },
+    "STAGING": {
+      "A": 0.249564,
+      "AZC": 0.16129,
+      "B": 0.133579,
+      "A_to_B_ratio": 0.535252,
+      "amplified": false,
+      "attenuated": true
+    },
+    "OPERATION": {
+      "A": 0.096531,
+      "AZC": 0.125637,
+      "B": 0.15285,
+      "A_to_B_ratio": 1.583424,
+      "amplified": true,
+      "attenuated": false
+    },
+    "TRANSITION": {
+      "A": 0.195899,
+      "AZC": 0.287351,
+      "B": 0.169794,
+      "A_to_B_ratio": 0.866744,
+      "amplified": false,
+      "attenuated": true
+    },
+    "MARKING": {
+      "A": 0.041012,
+      "AZC": 0.023769,
+      "B": 0.037226,
+      "A_to_B_ratio": 0.907687,
+      "amplified": false,
+      "attenuated": false
+    },
+    "MONITORING": {
+      "A": 0.053229,
+      "AZC": 0.021647,
+      "B": 0.014415,
+      "A_to_B_ratio": 0.270814,
+      "amplified": false,
+      "attenuated": true
+    },
+    "P3_thermal_amp_marking_staging_att": false
+  },
+  "T3_azc_zone": {
+    "zone_profiles": {
+      "C": {
+        "THERMAL": 0.126556,
+        "FLOW": 0.161826,
+        "CONTAINMENT": 0.053942,
+        "STAGING": 0.184647,
+        "OPERATION": 0.157676,
+        "TRANSITION": 0.267635,
+        "MARKING": 0.026971,
+        "MONITORING": 0.020747
+      },
+      "P": {
+        "THERMAL": 0.13738,
+        "FLOW": 0.14377,
+        "CONTAINMENT": 0.054313,
+        "STAGING": 0.194888,
+        "OPERATION": 0.102236,
+        "TRANSITION": 0.306709,
+        "MARKING": 0.015974,
+        "MONITORING": 0.044728
+      },
+      "R": {
+        "THERMAL": 0.163509,
+        "FLOW": 0.21336,
+        "CONTAINMENT": 0.036889,
+        "STAGING": 0.150548,
+        "OPERATION": 0.118644,
+        "TRANSITION": 0.267198,
+        "MARKING": 0.025922,
+        "MONITORING": 0.023928
+      },
+      "S": {
+        "THERMAL": 0.127451,
+        "FLOW": 0.232026,
+        "CONTAINMENT": 0.045752,
+        "STAGING": 0.101307,
+        "OPERATION": 0.133987,
+        "TRANSITION": 0.333333,
+        "MARKING": 0.022876,
+        "MONITORING": 0.003268
+      }
+    },
+    "zone_js": {
+      "C↔P": 0.007051,
+      "C↔R": 0.006074,
+      "C↔S": 0.015387,
+      "P↔R": 0.009426,
+      "P↔S": 0.025349,
+      "R↔S": 0.010513
+    },
+    "P4_s_transition_enrichment": true
+  },
+  "T4_section_conditioned": {
+    "section_profiles": {
+      "B": {
+        "THERMAL": 0.279455,
+        "FLOW": 0.166829,
+        "CONTAINMENT": 0.056151,
+        "STAGING": 0.164395,
+        "OPERATION": 0.169588,
+        "TRANSITION": 0.120902,
+        "MARKING": 0.025154,
+        "MONITORING": 0.017527
+      },
+      "C": {
+        "THERMAL": 0.163315,
+        "FLOW": 0.250201,
+        "CONTAINMENT": 0.049075,
+        "STAGING": 0.127112,
+        "OPERATION": 0.120676,
+        "TRANSITION": 0.226066,
+        "MARKING": 0.053097,
+        "MONITORING": 0.010459
+      },
+      "H": {
+        "THERMAL": 0.13522,
+        "FLOW": 0.206199,
+        "CONTAINMENT": 0.103774,
+        "STAGING": 0.128032,
+        "OPERATION": 0.165768,
+        "TRANSITION": 0.197215,
+        "MARKING": 0.048518,
+        "MONITORING": 0.015274
+      },
+      "S": {
+        "THERMAL": 0.253748,
+        "FLOW": 0.218617,
+        "CONTAINMENT": 0.037257,
+        "STAGING": 0.112777,
+        "OPERATION": 0.138733,
+        "TRANSITION": 0.186955,
+        "MARKING": 0.040166,
+        "MONITORING": 0.011748
+      },
+      "T": {
+        "THERMAL": 0.152672,
+        "FLOW": 0.173664,
+        "CONTAINMENT": 0.064885,
+        "STAGING": 0.171756,
+        "OPERATION": 0.175573,
+        "TRANSITION": 0.185115,
+        "MARKING": 0.04771,
+        "MONITORING": 0.028626
+      }
+    },
+    "section_js_from_a": {
+      "B": 0.031963,
+      "C": 0.023762,
+      "H": 0.025156,
+      "S": 0.033164,
+      "T": 0.011986
+    },
+    "thermal_ratios_by_section": {
+      "B": 2.028536,
+      "C": 1.185485,
+      "H": 0.98155,
+      "S": 1.841934,
+      "T": 1.10823
+    },
+    "closest_to_a": "T",
+    "P5_bio_thermal_herbal_closest": false
+  },
+  "T5_rank_stability": {
+    "n_shared": 82,
+    "rank_correlation_rho": 0.644018,
+    "rank_correlation_p": 0.0,
+    "P6_moderate_disruption": true,
+    "per_category_mean_rank_change": {
+      "THERMAL": -6.1,
+      "FLOW": -5.285714,
+      "CONTAINMENT": -2.571429,
+      "STAGING": 4.272727,
+      "OPERATION": -8.0,
+      "TRANSITION": 1.5,
+      "MARKING": 5.888889,
+      "MONITORING": 13.285714
+    },
+    "test_possible": true
+  },
+  "T6_dark_control": {
+    "dark_profiles": {
+      "A": {
+        "THERMAL": 0.191575,
+        "FLOW": 0.173521,
+        "CONTAINMENT": 0.005015,
+        "STAGING": 0.062187,
+        "OPERATION": 0.130391,
+        "TRANSITION": 0.015045,
+        "MARKING": 0.400201,
+        "MONITORING": 0.022066
+      },
+      "AZC": {
+        "THERMAL": 0.266106,
+        "FLOW": 0.154062,
+        "CONTAINMENT": 0.005602,
+        "STAGING": 0.061625,
+        "OPERATION": 0.134454,
+        "TRANSITION": 0.02521,
+        "MARKING": 0.338936,
+        "MONITORING": 0.014006
+      },
+      "B": {
+        "THERMAL": 0.240361,
+        "FLOW": 0.155422,
+        "CONTAINMENT": 0.019277,
+        "STAGING": 0.091566,
+        "OPERATION": 0.109639,
+        "TRANSITION": 0.012048,
+        "MARKING": 0.331325,
+        "MONITORING": 0.040361
+      }
+    },
+    "dark_totals": {
+      "A": 997,
+      "AZC": 357,
+      "B": 1660
+    },
+    "js_dark_a_b": 0.008792,
+    "js_dark_a_azc": 0.005735,
+    "js_bridge_a_b": 0.025782,
+    "P7_dark_less_redistribution": true
+  },
+  "predictions": {
+    "P1": false,
+    "P2": true,
+    "P3": false,
+    "P4": true,
+    "P5": false,
+    "P6": true,
+    "P7": true
+  },
+  "pipeline_type": "WEAKLY_RESHAPED",
+  "verdict": "Pipeline type: WEAKLY_RESHAPED (A↔B JS=0.0258). AZC closer to A. 3/7 predictions confirmed."
+}

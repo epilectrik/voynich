@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1211 validated constraints | **Version:** 4.82 | **Date:** 2026-02-27
+**Total:** 1215 validated constraints | **Version:** 4.86 | **Date:** 2026-02-27
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4085,6 +4085,62 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - THERMAL category fraction survives kernel control (partial rho=0.588, p<0.0001); FLOW vanishes after kernel control
 - BIO accent persists within REGIME_1 (1.573 vs 1.234, MW p=0.019) — section-intrinsic
 - Archetype 1: 8/10 are BIO, mean sign agreement 0.88, driven by class_concentration (4.67) and axm_fraction (4.14)
+
+### Accent PC2/PC3 Decomposition (C1368) -- Phase: ACCENT_PC23_DECOMPOSITION (Phase 481)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1368** | **Accent PC2/PC3 Decomposition** (PC2 sequential complexity predicted by THERMAL + folio position LOO R²=0.267; PC3 morphological texture dominated by STARS section eta²=0.457 + CONTAINMENT + sister pair LOO R²=0.496; 0/5 expert predictions confirmed; THERMAL extends accent across PC1+PC2 = 79.4% of variance) | 2 | B, folio, accent, PCA, section, category, sister pair | -> [C1368_accent_pc23_decomposition.md](C1368_accent_pc23_decomposition.md) |
+
+**Phase 481 findings (Accent PC2/PC3 Decomposition):**
+- PC2 (20.5%): THERMAL (kernel-residualized) + folio position → LOO R² = 0.267
+- PC3 (8.9%): STARS section (eta²=0.457) + CONTAINMENT (residualized) + sister pair ch_preference → LOO R² = 0.496
+- Section predicts PC3 (morphological), NOT PC2 (sequential) — reversed expert prediction
+- THERMAL is pervasive accent predictor: dominates PC1 (C1367) AND enters PC2 first
+- Folio position enters PC2 model — but see C1369: section confound
+- 0/5 pre-registered predictions confirmed — accent dimensions behave differently than expected
+
+### Accent Spatial Structure (C1369) -- Phase: ACCENT_SPATIAL_STRUCTURE (Phase 482)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1369** | **Accent Spatial Structure** (folio_position in C1368 PC2 is section confound, partial R²=0.010; within-section local coherence: Bio p=0.039, Stars p=0.024; no manuscript gradient; archetypes 1-2 spatially clustered via section concentration; boundary ratio 1.18 moderate) | 2 | B, folio, accent, spatial, section, archetype | -> [C1369_accent_spatial_structure.md](C1369_accent_spatial_structure.md) |
+
+**Phase 482 findings (Accent Spatial Structure):**
+- **GATE: SECTION_CONFOUND** — PC2 position partial R²=0.010 < 0.02 after section control
+- Within-section local coherence: adjacent Bio folios (p=0.039) and Stars folios (p=0.024) have more similar accents
+- 0/9 lag autocorrelations significant — local coherence is weak
+- Section boundaries show moderate discontinuity (ratio 1.18), not dramatic
+- Archetypes 1-2 spatially clustered (p=0.005, 0.026) — section-driven
+- C1368 amendment: folio_position term in PC2 model is section-mediated, not genuine manuscript-order structure
+
+### Category Pipeline Trace (C1370) -- Phase: CATEGORY_PIPELINE_TRACE (Phase 483)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1370** | **Category Pipeline Trace A→AZC→B** (WEAKLY_RESHAPED pipeline JS=0.026; THERMAL +72% OPERATION +58% amplified A→B; STAGING -47% MONITORING -73% attenuated; AZC intermediate closer to A; BIO=max THERMAL 2.03x HERBAL=THERMAL-neutral 0.98x; dark 3x more stable than bridge; rank rho=0.644; 4/7 predictions confirmed) | 2 | A, AZC, B, cross-system, category, bridge, dark pipeline | -> [C1370_category_pipeline_trace.md](C1370_category_pipeline_trace.md) |
+
+**Phase 483 findings (Category Pipeline Trace):**
+- Pipeline is WEAKLY_RESHAPED: same vocabulary, different frequency emphasis (JS A↔B=0.026)
+- B amplifies execution categories (THERMAL +72%, OPERATION +58%), attenuates specification (STAGING -47%, MONITORING -73%)
+- AZC is intermediate and closer to A; TRANSITION peaks in AZC (28.7%)
+- BIO = maximum THERMAL amplification (2.03x); HERBAL = THERMAL-neutral (0.98x), amplifies CONTAINMENT instead
+- Dark pipeline 3x more categorically stable than bridge (JS 0.009 vs 0.026)
+- Per-MIDDLE rank rho=0.644; "edy" (OPERATION) is top gainer, "hy" (MONITORING) is top loser
+
+### Position-Conditioned Category Grammar (C1371) -- Phase: POSITION_CONDITIONED_CATEGORY_GRAMMAR (Phase 484)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1371** | **Position-Conditioned Category Grammar** (Category transitions position-conditioned chi² p=4.5e-65 V=0.102; Q5 most deviant JS=0.016; THERMAL self-loops erode Q1→Q5 32.4%→19.1%; FLOW monotonic gradient rho=0.900 p=0.037; section-position additive confirming C1047; 5/8 self-transition rates vary; 4/6 predictions confirmed) | 2 | B, line, category, positional, transition | -> [C1371_position_conditioned_category_grammar.md](C1371_position_conditioned_category_grammar.md) |
+
+**Phase 484 findings (Position-Conditioned Category Grammar):**
+- Category transitions ARE position-conditioned (chi² p=4.5e-65, V=0.102)
+- Line-final (Q5) is the most distinctive position — THERMAL drops, FLOW/TRANSITION spike
+- THERMAL self-loop erosion: 32.4% (Q1) → 19.1% (Q5) — thermal bursts decay across line
+- FLOW is the only significant monotonic gradient (rho=0.900, p=0.037, increasing toward line end)
+- Section-position interaction absent (mean profile corr=0.617) — C1047 extends to categories
+- "Thermal arc": heat loads at front, disperses through middle, resolves to flow/transition at end
 
 ---
 

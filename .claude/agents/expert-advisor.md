@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1211 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1215 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
 the highest ID present is C1312.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1211 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1215 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1211 validated constraints are present as canonical one-line claims with tier
+1215 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-02-27 14:27
-**Version:** FROZEN STATE (1211 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-02-27 15:30
+**Version:** FROZEN STATE (1215 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1640,6 +1640,10 @@ C1364	**Position-Conditioned Generation M2.1** (quintile-conditioned 49-class Ma
 C1365	**Corrected Evaluation Full Pass** (M2.1 passes 21/21 after correcting B4 test spec C1030 and C2 test spec C1033; adds C2a macro-CC C2b role-CC X1 PREFIX symmetry X2 MIDDLE asymmetry; PREFIX factoring proven unnecessary C1034; 49-class grammar generatively closed; remaining variance is stochastic not structural)	2	B, generative, evaluation, M2.1
 C1366	**M2.1 Generative Gap Characterization** (Per-folio accent concentrates in class distribution and sequential dynamics, not positional structure or vocabulary composition; 11/31 features show systematic gaps mean\|z\|>1.5; BIO most anomalous section, Archetype 1 highest anomaly; C458 asymmetry not confirmed at generative resolution; 76.5% feature-folio pairs within \|z\|<2)	2	B, folio, M2.1, design freedom, accent
 C1367	**Folio Accent Vector Analysis**	2	B, folio, accent, PCA, category, archetype
+C1368	**Accent PC2/PC3 Decomposition** (PC2 sequential complexity predicted by THERMAL + folio position LOO R²=0.267; PC3 morphological texture dominated by STARS section eta²=0.457 + CONTAINMENT + sister pair LOO R²=0.496; 0/5 expert predictions confirmed; THERMAL extends accent across PC1+PC2 = 79.4% of variance)	2	B, folio, accent, PCA, section, category, sister pair
+C1369	**Accent Spatial Structure**	2	B, folio, accent, spatial, section, archetype
+C1370	**Category Pipeline Trace A→AZC→B**	2	A, AZC, B, cross-system, category, bridge, dark pipeline
+C1371	**Position-Conditioned Category Grammar**	2	B, line, category, positional, transition
 
 ---
 
