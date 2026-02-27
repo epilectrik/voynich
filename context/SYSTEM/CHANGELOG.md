@@ -4,6 +4,106 @@
 
 ---
 
+## Version 4.80.66 (2026-02-27) - Phase 477: Corrected Evaluation — M2.1 Full Pass
+
+### Summary
+
+Phase 477: Corrected two test specification bugs (B4 per C1030, C2 per C1033), added PREFIX/MIDDLE symmetry diagnostics (X1, X2), and re-evaluated M2.1 on a 21-metric battery. **M2.1 achieves 21/21 — the 49-class grammar is generatively closed.** PREFIX-factored generation confirmed unnecessary (C1034: distributionally equivalent to M2, reconstruction error 0.000000).
+
+**Phase 477 headline findings:**
+- B4 corrected: real data has EN>FQ>AX>FL>CC, not FQ>FL>EN. M2.1 matches at 70%.
+- C2 split: C2a macro CC=100% (passes 100%), C2b role CC matches real within 3pp (passes 70%)
+- X1 PREFIX symmetry: M2.1 reproduces near-symmetry (0.036 vs real 0.051)
+- X2 MIDDLE asymmetry: M2.1 reproduces directionality (0.094 vs real 0.126)
+- PREFIX factoring proven unnecessary — symmetric forbidden suppression captures the required symmetry
+- M2.1 full pass: 21/21 metrics, mean 20.0 per run
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/CORRECTED_EVALUATION/` -- 1 script + 1 results JSON |
+| **ADDED** | C1365 constraint file (1 new constraint, 1208->1209) |
+| **UPDATED** | `INDEX.md` -- 1208->1209 total, Phase 477 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.79->v4.80, 476->477 phases, 1208->1209 constraints |
+
+---
+
+## Version 4.79.65 (2026-02-27) - Phase 476: Position-Conditioned Generation (M2.1)
+
+### Summary
+
+Phase 476: M2.1 position-conditioned generation. Two models (M2-SF baseline, M2.1 quintile-conditioned) evaluated side-by-side on 18-metric battery (15 original + 3 new position metrics), 10 runs each. **M2.1 passes 16/18 with zero regressions, gaining all 3 positional metrics.** Position conditioning delivers 2.0-2.4x improvement on quintile class KL, transition JSD, and specialist accuracy. Remaining failures (B4 role rank, C2 CC suffix-free) are morphological, targeted by Phases 477-478.
+
+**Phase 476 headline findings:**
+- M2.1 passes 16/18 vs M2-SF 13/18 — +3 tests gained, 0 lost (C1364)
+- P1 quintile class KL: 0.066→0.029 (2.2x improvement)
+- P2 quintile transition JSD: 0.299→0.146 (2.0x improvement)
+- P3 specialist accuracy: 0.149→0.062 (2.4x improvement)
+- B5 passes at 90% confirming C1034 symmetric forbidden suppression
+- M2.1 is the new generative frontier at 88.9% pass rate
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/POSITION_CONDITIONED_GENERATION/` -- 1 script + 1 results JSON |
+| **ADDED** | C1364 constraint file (1 new constraint, 1207->1208) |
+| **UPDATED** | `INDEX.md` -- 1207->1208 total, Phase 476 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.78->v4.79, 475->476 phases, 1207->1208 constraints |
+
+---
+
+## Version 4.78.64 (2026-02-26) - Phase 475: Gradient Steepness
+
+### Summary
+
+Phase 475: 5-test gated battery testing whether the within-line AXM gradient (C1359: 0.737→0.549) varies by folio/program. **Overall: clean null — gradient is universal.** Both gates closed: slope variance does not exceed permutation noise (p=0.105), and steepness adds negligible info beyond C1168 boundary architecture (delta-R²=0.010). REGIME and section do not predict gradient steepness. The line gradient is an emergent property of the shared 49-class grammar, not a tunable parameter.
+
+**Phase 475 headline findings:**
+- T1 gate CLOSED: per-folio slope variance indistinguishable from noise (p=0.105, 1000 permutations)
+- T2 gate CLOSED: delta-R² = 0.010 beyond C1168 entry+exit divergence — no new information
+- T3 FAIL: REGIME does not predict gradient steepness (KW p=0.22, pre-registered R1<R3 direction correct but MW p=0.67)
+- T4 FAIL: Section does not predict gradient steepness (KW p=0.13)
+- T5 unreliable: k=2 silhouette=0.50 but only n=10 folios with sufficient data for clustering
+- **Key finding:** Programs differ in WHAT they execute but not in HOW their lines unfold positionally. Extends C821.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/GRADIENT_STEEPNESS/` -- 1 script + 1 results JSON |
+| **ADDED** | C1363 constraint file (1 new constraint, 1206->1207) |
+| **UPDATED** | `INDEX.md` -- 1206->1207 total, Phase 475 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.77->v4.78, 474->475 phases, 1206->1207 constraints |
+
+---
+
+## Version 4.77.63 (2026-02-26) - Phase 474: Line Micro-Grammar
+
+### Summary
+
+Phase 474: 5-test battery characterizing line-internal execution structure at 49-class resolution. **Overall: smooth positional gradient with massive generative improvement.** Half the classes (24/48) are positional specialists. Transition structure changes monotonically Q0→Q4 (rho=0.639). No positional motifs — grammar is invariant, only class frequencies shift. Position-conditioned M2p beats stationary M2 on all 5 metrics (1.6-2.5x improvement).
+
+**Phase 474 headline findings:**
+- 24/48 classes are positional specialists (C1358): FL_SAFE at line-end, initial classes at line-start
+- Smooth monotonic transition gradient (C1359): AXM self drops 0.737→0.549 across quintiles, rho=0.639
+- Forbidden transitions nearly absolute at MIDDLE level (C1360): 11/20,676 = 0.053%, position-independent
+- No positional motifs (C1361): 1/1,556 bigrams significant after Bonferroni — grammar rules same everywhere
+- M2p wins 5/5 generative metrics (C1362): position conditioning is M2's primary blind spot
+- **Key insight:** positional gradient from class frequency shift, not position-specific grammar rules
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/LINE_MICRO_GRAMMAR/` -- 1 script + 1 results JSON |
+| **ADDED** | C1358-C1362 constraint files (5 new constraints, 1201->1206) |
+| **UPDATED** | `INDEX.md` -- 1201->1206 total, Phase 474 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.76->v4.77, 473->474 phases, 1201->1206 constraints |
+
+---
+
 ## Version 4.76.62 (2026-02-26) - Phase 473: Layered Grammar Test
 
 ### Summary

@@ -1,0 +1,213 @@
+{
+  "phase": "GRADIENT_STEEPNESS",
+  "phase_number": 475,
+  "tests": [
+    {
+      "test": "T1_GRADIENT_VARIANCE",
+      "verdict": "GATE_CLOSED",
+      "n_folios": 53,
+      "mean_slope": -0.027081,
+      "slope_variance": 0.002265,
+      "slope_range": [
+        -0.11381,
+        0.126661
+      ],
+      "corpus_profile": {
+        "Q0": 0.724429,
+        "Q1": 0.710265,
+        "Q2": 0.688642,
+        "Q3": 0.653789,
+        "Q4": 0.597706
+      },
+      "perm_p": 0.105
+    },
+    {
+      "test": "T2_INCREMENTAL_INFO",
+      "verdict": "GATE_CLOSED",
+      "n": 52,
+      "r2_baseline": 0.126255,
+      "r2_extended": 0.136725,
+      "delta_r2": 0.01047,
+      "r2_slope_alone": 0.008867,
+      "slope_entry_rho": -0.055152,
+      "slope_entry_p": 0.627183,
+      "slope_exit_rho": 0.130966,
+      "slope_exit_p": 0.292066
+    },
+    {
+      "test": "T3_REGIME_PREDICTION",
+      "verdict": "FAIL",
+      "kw_H": 4.038994,
+      "kw_p": 0.21951,
+      "kw_df": 3,
+      "regime_means": {
+        "REGIME_1": -0.02192,
+        "REGIME_3": -0.032269,
+        "REGIME_4": -0.019408,
+        "REGIME_2": -0.065537
+      },
+      "regime_n": {
+        "REGIME_1": 30,
+        "REGIME_3": 15,
+        "REGIME_4": 5,
+        "REGIME_2": 3
+      },
+      "r1_mean": -0.02192,
+      "r3_mean": -0.032269,
+      "direction_correct": true,
+      "r1_r3_mw_z": 0.33708,
+      "r1_r3_mw_p": 0.67061,
+      "herbal_control": null
+    },
+    {
+      "test": "T4_SECTION_EFFECT",
+      "verdict": "FAIL",
+      "kw_H": 5.198338,
+      "kw_p": 0.127334,
+      "section_means": {
+        "S": -0.035941,
+        "H": -0.030377,
+        "T": -0.008047,
+        "B": -0.016281,
+        "C": -0.036353
+      },
+      "section_n": {
+        "S": 23,
+        "H": 4,
+        "T": 2,
+        "B": 20,
+        "C": 4
+      },
+      "within_regime": {
+        "REGIME_1": {
+          "H": 3.253548,
+          "p": 0.052894,
+          "df": 1,
+          "sections": {
+            "S": {
+              "n": 10,
+              "mean": -0.033198
+            },
+            "B": {
+              "n": 20,
+              "mean": -0.016281
+            }
+          }
+        }
+      }
+    },
+    {
+      "test": "T5_SHAPE_TAXONOMY",
+      "verdict": "TAXONOMIC",
+      "n": 10,
+      "best_k": 2,
+      "best_silhouette": 0.501801,
+      "results_by_k": {
+        "2": {
+          "silhouette": 0.501801,
+          "inertia": 0.156887,
+          "centroids": [
+            [
+              0.756841,
+              0.782385,
+              0.715177,
+              0.704394,
+              0.758788
+            ],
+            [
+              0.727074,
+              0.731605,
+              0.711996,
+              0.706224,
+              0.436623
+            ]
+          ],
+          "cluster_sizes": {
+            "1": 5,
+            "0": 5
+          }
+        },
+        "3": {
+          "silhouette": 0.48592,
+          "inertia": 0.083268,
+          "centroids": [
+            [
+              0.797614,
+              0.780064,
+              0.751114,
+              0.730492,
+              0.765152
+            ],
+            [
+              0.727074,
+              0.731605,
+              0.711996,
+              0.706224,
+              0.436623
+            ],
+            [
+              0.59375,
+              0.791667,
+              0.571429,
+              0.6,
+              0.733333
+            ]
+          ],
+          "cluster_sizes": {
+            "1": 5,
+            "0": 4,
+            "2": 1
+          }
+        },
+        "4": {
+          "silhouette": 0.207633,
+          "inertia": 0.069528,
+          "centroids": [
+            [
+              0.797614,
+              0.780064,
+              0.751114,
+              0.730492,
+              0.765152
+            ],
+            [
+              0.713927,
+              0.702772,
+              0.712701,
+              0.696581,
+              0.409524
+            ],
+            [
+              0.746794,
+              0.774854,
+              0.710938,
+              0.720688,
+              0.477273
+            ],
+            [
+              0.59375,
+              0.791667,
+              0.571429,
+              0.6,
+              0.733333
+            ]
+          ],
+          "cluster_sizes": {
+            "2": 2,
+            "1": 3,
+            "0": 4,
+            "3": 1
+          }
+        }
+      }
+    }
+  ],
+  "verdicts": {
+    "T1": "GATE_CLOSED",
+    "T2": "GATE_CLOSED",
+    "T3": "FAIL",
+    "T4": "FAIL",
+    "T5": "TAXONOMIC"
+  },
+  "elapsed_seconds": 24.3
+}

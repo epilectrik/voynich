@@ -1,0 +1,320 @@
+{
+  "phase": "LINE_MICRO_GRAMMAR",
+  "phase_number": 474,
+  "tests": [
+    {
+      "test": "T1_CLASS_POSITIONAL_SPECIALIZATION",
+      "verdict": "MODERATE",
+      "n_specialist": 24,
+      "n_generalist": 24,
+      "n_tested": 48,
+      "n_lines": 1890,
+      "n_tokens": 14437,
+      "top10_specialists": [
+        {
+          "class": 40,
+          "state": "FL_SAFE",
+          "entropy": 1.377381,
+          "chi2": 159.263881,
+          "p": 0.0,
+          "peak_quintile": 4,
+          "profile": {
+            "0": 0.048387,
+            "1": 0.048387,
+            "2": 0.080645,
+            "3": 0.096774,
+            "4": 0.725806
+          },
+          "total": 62
+        },
+        {
+          "class": 22,
+          "state": "AXM",
+          "entropy": 1.595204,
+          "chi2": 82.161037,
+          "p": 0.0,
+          "peak_quintile": 4,
+          "profile": {
+            "0": 0.073171,
+            "1": 0.073171,
+            "2": 0.073171,
+            "3": 0.121951,
+            "4": 0.658537
+          },
+          "total": 41
+        },
+        {
+          "class": 38,
+          "state": "FL_SAFE",
+          "entropy": 1.807288,
+          "chi2": 54.225372,
+          "p": 0.0,
+          "peak_quintile": 4,
+          "profile": {
+            "0": 0.095238,
+            "1": 0.047619,
+            "2": 0.214286,
+            "3": 0.095238,
+            "4": 0.547619
+          },
+          "total": 42
+        },
+        {
+          "class": 15,
+          "state": "AXM",
+          "entropy": 1.836581,
+          "chi2": 78.432847,
+          "p": 0.0,
+          "peak_quintile": 4,
+          "profile": {
+            "0": 0.096774,
+            "1": 0.048387,
+            "2": 0.177419,
+            "3": 0.129032,
+            "4": 0.548387
+          },
+          "total": 62
+        },
+        {
+          "class": 21,
+          "state": "AXM",
+          "entropy": 2.061851,
+          "chi2": 74.203511,
+          "p": 0.0,
+          "peak_quintile": 4,
+          "profile": {
+            "0": 0.123711,
+            "1": 0.164948,
+            "2": 0.123711,
+            "3": 0.123711,
+            "4": 0.463918
+          },
+          "total": 97
+        },
+        {
+          "class": 4,
+          "state": "AXM",
+          "entropy": 2.089596,
+          "chi2": 28.587359,
+          "p": 1.1e-05,
+          "peak_quintile": 0,
+          "profile": {
+            "0": 0.425926,
+            "1": 0.212963,
+            "2": 0.157407,
+            "3": 0.111111,
+            "4": 0.092593
+          },
+          "total": 108
+        },
+        {
+          "class": 26,
+          "state": "AXM",
+          "entropy": 2.111123,
+          "chi2": 33.966545,
+          "p": 1e-06,
+          "peak_quintile": 0,
+          "profile": {
+            "0": 0.427536,
+            "1": 0.181159,
+            "2": 0.130435,
+            "3": 0.15942,
+            "4": 0.101449
+          },
+          "total": 138
+        },
+        {
+          "class": 5,
+          "state": "AXm",
+          "entropy": 2.147487,
+          "chi2": 19.386912,
+          "p": 0.000554,
+          "peak_quintile": 0,
+          "profile": {
+            "0": 0.4,
+            "1": 0.136842,
+            "2": 0.115789,
+            "3": 0.210526,
+            "4": 0.136842
+          },
+          "total": 95
+        },
+        {
+          "class": 25,
+          "state": "AXM",
+          "entropy": 2.163567,
+          "chi2": 38.777147,
+          "p": 0.0,
+          "peak_quintile": 4,
+          "profile": {
+            "0": 0.072165,
+            "1": 0.164948,
+            "2": 0.195876,
+            "3": 0.206186,
+            "4": 0.360825
+          },
+          "total": 97
+        },
+        {
+          "class": 19,
+          "state": "AXm",
+          "entropy": 2.165033,
+          "chi2": 28.628756,
+          "p": 1.1e-05,
+          "peak_quintile": 4,
+          "profile": {
+            "0": 0.119403,
+            "1": 0.104478,
+            "2": 0.223881,
+            "3": 0.179104,
+            "4": 0.373134
+          },
+          "total": 67
+        }
+      ],
+      "mean_specialist_entropy": 2.11839,
+      "mean_generalist_entropy": 2.241954,
+      "max_entropy": 2.321928
+    },
+    {
+      "test": "T2_TRANSITION_GRADIENT_RESOLUTION",
+      "verdict": "GRADIENT",
+      "pairwise_jsd": {
+        "Q0_Q1": 0.146837,
+        "Q0_Q2": 0.144642,
+        "Q0_Q3": 0.167101,
+        "Q0_Q4": 0.354522,
+        "Q1_Q2": 0.136788,
+        "Q1_Q3": 0.149651,
+        "Q1_Q4": 0.347214,
+        "Q2_Q3": 0.149761,
+        "Q2_Q4": 0.327712,
+        "Q3_Q4": 0.298804
+      },
+      "mean_jsd": 0.222303,
+      "perm_p": 0.0,
+      "spearman_rho": 0.639394,
+      "spearman_p": 0.045152,
+      "axm_self_by_quintile": {
+        "Q0": 0.73682,
+        "Q1": 0.715566,
+        "Q2": 0.688082,
+        "Q3": 0.665713,
+        "Q4": 0.549072
+      },
+      "n_transitions": 12547,
+      "transitions_per_quintile": {
+        "Q0": 3233,
+        "Q1": 2970,
+        "Q2": 2996,
+        "Q3": 2731,
+        "Q4": 617
+      }
+    },
+    {
+      "test": "T3_FORBIDDEN_TRANSITION_LOCALIZATION",
+      "verdict": "DISPERSED",
+      "n_forbidden": 11,
+      "n_total": 20676,
+      "violation_rate": 0.000532,
+      "ks_stat": 0.232323,
+      "ks_crit_01": 0.491463,
+      "ks_p_approx": "p>=0.05",
+      "forbidden_quintile_dist": {
+        "Q0": 2,
+        "Q1": 1,
+        "Q2": 2,
+        "Q3": 2,
+        "Q4": 4
+      },
+      "all_quintile_dist": {
+        "Q0": 5022,
+        "Q1": 4186,
+        "Q2": 4135,
+        "Q3": 4186,
+        "Q4": 3147
+      },
+      "forbidden_entropy": 2.186704,
+      "all_entropy": 2.306692,
+      "top_types": {
+        "dy->aiin": 10,
+        "ar->dal": 1
+      }
+    },
+    {
+      "test": "T4_POSITIONAL_MOTIF_DETECTION",
+      "verdict": "FREE",
+      "n_significant": 1,
+      "n_tested": 1556,
+      "bonferroni_threshold": 1e-06,
+      "peak_quintile_distribution": {
+        "Q0": 0,
+        "Q1": 0,
+        "Q2": 0,
+        "Q3": 1,
+        "Q4": 0
+      },
+      "top15_motifs": [
+        {
+          "bigram": "9->23",
+          "states": "FQ->FQ",
+          "chi2": 56.015936,
+          "p": 0.0,
+          "total": 17,
+          "peak_quintile": 3,
+          "enrichment": 1.891766,
+          "profile": {
+            "0": 0.117647,
+            "1": 0.0,
+            "2": 0.058824,
+            "3": 0.411765,
+            "4": 0.411765
+          }
+        }
+      ]
+    },
+    {
+      "test": "T5_POSITION_CONDITIONED_GENERATIVE_IMPROVEMENT",
+      "verdict": "IMPROVEMENT",
+      "m2p_wins": 5,
+      "metrics": {
+        "a_quintile_class_kl": {
+          "m2": 0.156392,
+          "m2p": 0.064029,
+          "winner": "M2p"
+        },
+        "b_quintile_trans_jsd": {
+          "m2": 0.213145,
+          "m2p": 0.126239,
+          "winner": "M2p"
+        },
+        "c_class_pos_entropy": {
+          "m2": 0.107184,
+          "m2p": 0.068444,
+          "winner": "M2p"
+        },
+        "d_axm_self_match": {
+          "m2": 0.045241,
+          "m2p": 0.02511,
+          "winner": "M2p"
+        },
+        "e_specialist_accuracy": {
+          "m2": 0.180531,
+          "m2p": 0.072982,
+          "winner": "M2p"
+        }
+      },
+      "n_synth_lines": 1000,
+      "n_real_lines": 1890,
+      "mean_line_length": 7.638624
+    }
+  ],
+  "verdicts": {
+    "T1": "MODERATE",
+    "T2": "GRADIENT",
+    "T3": "DISPERSED",
+    "T4": "FREE",
+    "T5": "IMPROVEMENT"
+  },
+  "elapsed_seconds": 24.6
+}

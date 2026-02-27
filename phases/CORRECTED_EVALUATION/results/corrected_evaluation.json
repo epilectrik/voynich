@@ -1,0 +1,281 @@
+{
+  "metadata": {
+    "phase": 477,
+    "name": "CORRECTED_EVALUATION",
+    "n_runs": 10,
+    "n_tests": 21,
+    "seed": 42,
+    "corrections": {
+      "B4": "Changed from FQ>FL>EN to matching real role ordering (C1030)",
+      "C2": "Split into C2a (MACRO CC>=99%) and C2b (|gen-real|<3pp) (C1033)"
+    },
+    "new_metrics": {
+      "X1": "PREFIX transition forward-backward JSD (C1024)",
+      "X2": "MIDDLE transition forward-backward JSD (C1024)"
+    },
+    "prefix_factoring_status": "Proven unnecessary (C1034: distributionally equivalent to M2)"
+  },
+  "real_metrics": {
+    "A2_hapax_rate": 0.025641,
+    "A3_active_classes": 48,
+    "A4_type_count": 468,
+    "B1_spectral_gap": 0.893811,
+    "B2_axm_self": 0.697555,
+    "B4_role_order": [
+      "EN",
+      "FQ",
+      "AX",
+      "FL",
+      "CC"
+    ],
+    "B4_role_self": {
+      "CC": 0.072331,
+      "EN": 0.508376,
+      "FL": 0.120948,
+      "FQ": 0.251267,
+      "AX": 0.237094
+    },
+    "B5_fwd_rev_jsd": 0.090061,
+    "C1_suffix_rate": 0.369378,
+    "C2a_macro_cc_sfree": 1.0,
+    "C2b_role_cc_sfree": 0.833822,
+    "C3_prefix_entropy_red": 0.592395,
+    "D1_stationary": {
+      "AXM": 0.676654,
+      "AXm": 0.030397,
+      "FQ": 0.180017,
+      "CC": 0.045783,
+      "FL_HAZ": 0.059549,
+      "FL_SAFE": 0.007599
+    },
+    "D2_axm_dwell": 2.509356,
+    "D3_cross_line_mi": 0.521202,
+    "X1_prefix_jsd": 0.05064,
+    "X2_middle_jsd": 0.126018
+  },
+  "p_thresholds": {
+    "P1": 0.033527,
+    "P2": 0.148785,
+    "P3": 0.077166
+  },
+  "models": {
+    "M2-SF": {
+      "mean_pass": 17.4,
+      "std_pass": 0.663325,
+      "per_test_pass_rate": {
+        "A1": 1.0,
+        "A2": 1.0,
+        "A3": 1.0,
+        "A4": 1.0,
+        "B1": 1.0,
+        "B2": 1.0,
+        "B3": 1.0,
+        "B4": 0.8,
+        "B5": 0.9,
+        "C1": 1.0,
+        "C2a": 1.0,
+        "C2b": 0.7,
+        "C3": 1.0,
+        "D1": 1.0,
+        "D2": 1.0,
+        "D3": 1.0,
+        "P1": 0.0,
+        "P2": 0.0,
+        "P3": 0.0,
+        "X1": 1.0,
+        "X2": 1.0
+      },
+      "metric_stats": {
+        "A1_class_kl": {
+          "mean": 0.010537,
+          "std": 0.000691
+        },
+        "A2_hapax_rate": {
+          "mean": 0.033223,
+          "std": 0.009
+        },
+        "A3_active_classes": {
+          "mean": 48.0,
+          "std": 0.0
+        },
+        "A4_type_count": {
+          "mean": 460.2,
+          "std": 2.521904
+        },
+        "B1_spectral_gap": {
+          "mean": 0.872465,
+          "std": 0.010538
+        },
+        "B2_axm_self": {
+          "mean": 0.699871,
+          "std": 0.006222
+        },
+        "B3_forbidden": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "B5_fwd_rev_jsd": {
+          "mean": 0.128602,
+          "std": 0.003535
+        },
+        "C1_suffix_rate": {
+          "mean": 0.37522,
+          "std": 0.006422
+        },
+        "C2a_macro_cc_sfree": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "C2b_role_cc_sfree": {
+          "mean": 0.853268,
+          "std": 0.010774
+        },
+        "C3_prefix_entropy_red": {
+          "mean": 0.591135,
+          "std": 0.004935
+        },
+        "D2_axm_dwell": {
+          "mean": 2.45514,
+          "std": 0.032913
+        },
+        "D3_cross_line_mi": {
+          "mean": 0.488899,
+          "std": 0.009097
+        },
+        "P1_quintile_class_kl": {
+          "mean": 0.065958,
+          "std": 0.002646
+        },
+        "P2_quintile_trans_jsd": {
+          "mean": 0.298826,
+          "std": 0.006324
+        },
+        "P3_specialist_accuracy": {
+          "mean": 0.148578,
+          "std": 0.006233
+        },
+        "X1_prefix_jsd": {
+          "mean": 0.034354,
+          "std": 0.001876
+        },
+        "X2_middle_jsd": {
+          "mean": 0.094184,
+          "std": 0.002167
+        }
+      }
+    },
+    "M2.1": {
+      "mean_pass": 20.0,
+      "std_pass": 1.183216,
+      "per_test_pass_rate": {
+        "A1": 1.0,
+        "A2": 1.0,
+        "A3": 1.0,
+        "A4": 1.0,
+        "B1": 1.0,
+        "B2": 1.0,
+        "B3": 1.0,
+        "B4": 0.7,
+        "B5": 0.9,
+        "C1": 1.0,
+        "C2a": 1.0,
+        "C2b": 0.7,
+        "C3": 1.0,
+        "D1": 1.0,
+        "D2": 1.0,
+        "D3": 1.0,
+        "P1": 1.0,
+        "P2": 0.7,
+        "P3": 1.0,
+        "X1": 1.0,
+        "X2": 1.0
+      },
+      "metric_stats": {
+        "A1_class_kl": {
+          "mean": 0.011487,
+          "std": 0.001016
+        },
+        "A2_hapax_rate": {
+          "mean": 0.030415,
+          "std": 0.005763
+        },
+        "A3_active_classes": {
+          "mean": 48.0,
+          "std": 0.0
+        },
+        "A4_type_count": {
+          "mean": 460.1,
+          "std": 2.343075
+        },
+        "B1_spectral_gap": {
+          "mean": 0.874067,
+          "std": 0.008542
+        },
+        "B2_axm_self": {
+          "mean": 0.700846,
+          "std": 0.003356
+        },
+        "B3_forbidden": {
+          "mean": 0.0,
+          "std": 0.0
+        },
+        "B5_fwd_rev_jsd": {
+          "mean": 0.126944,
+          "std": 0.004885
+        },
+        "C1_suffix_rate": {
+          "mean": 0.380012,
+          "std": 0.004208
+        },
+        "C2a_macro_cc_sfree": {
+          "mean": 1.0,
+          "std": 0.0
+        },
+        "C2b_role_cc_sfree": {
+          "mean": 0.85002,
+          "std": 0.017592
+        },
+        "C3_prefix_entropy_red": {
+          "mean": 0.594528,
+          "std": 0.002714
+        },
+        "D2_axm_dwell": {
+          "mean": 2.502051,
+          "std": 0.01907
+        },
+        "D3_cross_line_mi": {
+          "mean": 0.500899,
+          "std": 0.012314
+        },
+        "P1_quintile_class_kl": {
+          "mean": 0.029332,
+          "std": 0.001794
+        },
+        "P2_quintile_trans_jsd": {
+          "mean": 0.146045,
+          "std": 0.002902
+        },
+        "P3_specialist_accuracy": {
+          "mean": 0.061543,
+          "std": 0.008211
+        },
+        "X1_prefix_jsd": {
+          "mean": 0.036115,
+          "std": 0.001561
+        },
+        "X2_middle_jsd": {
+          "mean": 0.09375,
+          "std": 0.005184
+        }
+      }
+    }
+  },
+  "comparison": {
+    "m2sf_pass_count": 18,
+    "m21_pass_count": 21,
+    "tests_gained": 3,
+    "tests_lost": 0
+  },
+  "verdict": "M2.1 FULL PASS (21/21 \u2014 generative grammar closed at this resolution)",
+  "elapsed_seconds": 51.4
+}

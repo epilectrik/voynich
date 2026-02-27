@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1201 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1209 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
 the highest ID present is C1312.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1201 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1209 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1201 validated constraints are present as canonical one-line claims with tier
+1209 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-02-26 22:15
-**Version:** FROZEN STATE (1201 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-02-27 09:24
+**Version:** FROZEN STATE (1209 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1630,6 +1630,14 @@ C1354	**Dark Grammar Influence Is Local Not Contextual**	2	B, dark, grammar, loc
 C1355	**Dark Entropy Difference Partially Frequency-Mediated**	2	B, dark, entropy, frequency, artifact
 C1356	**Dark MIDDLE Identity Beyond PREFIX**	2	B, dark, PREFIX, MIDDLE, information
 C1357	**Dark Proximity Weakly Boosts Terminal Suffix**	2	B, dark, suffix, terminal, proximity
+C1358	**Class Positional Specialization**	2	B, line, position, 49-class
+C1359	**Transition Gradient Resolution**	2	B, line, transition, gradient, position
+C1360	**Forbidden Transition Violations Dispersed and Rare** (11 violations in 20,676 transitions 0.053% rate; KS=0.232 p>=0.05 vs uniform; 10/11 are dy→aiin; hazard avoidance uniform across line positions; forbidden pairs nearly absolute at MIDDLE level)	2	B, line, forbidden, position
+C1361	**No Positional Motifs** (1/1556 class bigrams significant after Bonferroni; class-class transitions not locked to positions; grammar same everywhere; positional gradient arises from shifting class FREQUENCIES not position-specific rules; confirms C964 free interior at 49-class)	2	B, line, bigrams, position, motifs
+C1362	**Position-Conditioned Generative Improvement** (M2p quintile-conditioned wins 5/5 metrics vs stationary M2; class KL 2.4x better, transition JSD 1.7x, positional entropy 1.6x, AXM self 1.8x, specialist accuracy 2.5x; position is M2's primary blind spot; grammar unchanged but class frequencies shift across line)	2	B, line, generative, M2p, position
+C1363	**Gradient Steepness Universal**	2	B, line, folio, gradient
+C1364	**Position-Conditioned Generation M2.1** (quintile-conditioned 49-class Markov + symmetric forbidden passes 16/18 generative metrics; gains P1 P2 P3 with zero regressions vs M2-SF 13/18; P1 class KL 2.2x better P2 trans JSD 2.0x P3 specialist 2.4x; remaining failures B4 C2 are morphological not sequential; M2.1 is new generative frontier at 88.9%)	2	B, generative, position, M2.1
+C1365	**Corrected Evaluation Full Pass** (M2.1 passes 21/21 after correcting B4 test spec C1030 and C2 test spec C1033; adds C2a macro-CC C2b role-CC X1 PREFIX symmetry X2 MIDDLE asymmetry; PREFIX factoring proven unnecessary C1034; 49-class grammar generatively closed; remaining variance is stochastic not structural)	2	B, generative, evaluation, M2.1
 
 ---
 
