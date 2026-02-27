@@ -20,7 +20,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1209 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1211 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
 the highest ID present is C1312.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1209 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1211 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1209 validated constraints are present as canonical one-line claims with tier
+1211 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-02-27 09:24
-**Version:** FROZEN STATE (1209 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-02-27 14:27
+**Version:** FROZEN STATE (1211 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1638,6 +1638,8 @@ C1362	**Position-Conditioned Generative Improvement** (M2p quintile-conditioned 
 C1363	**Gradient Steepness Universal**	2	B, line, folio, gradient
 C1364	**Position-Conditioned Generation M2.1** (quintile-conditioned 49-class Markov + symmetric forbidden passes 16/18 generative metrics; gains P1 P2 P3 with zero regressions vs M2-SF 13/18; P1 class KL 2.2x better P2 trans JSD 2.0x P3 specialist 2.4x; remaining failures B4 C2 are morphological not sequential; M2.1 is new generative frontier at 88.9%)	2	B, generative, position, M2.1
 C1365	**Corrected Evaluation Full Pass** (M2.1 passes 21/21 after correcting B4 test spec C1030 and C2 test spec C1033; adds C2a macro-CC C2b role-CC X1 PREFIX symmetry X2 MIDDLE asymmetry; PREFIX factoring proven unnecessary C1034; 49-class grammar generatively closed; remaining variance is stochastic not structural)	2	B, generative, evaluation, M2.1
+C1366	**M2.1 Generative Gap Characterization** (Per-folio accent concentrates in class distribution and sequential dynamics, not positional structure or vocabulary composition; 11/31 features show systematic gaps mean\|z\|>1.5; BIO most anomalous section, Archetype 1 highest anomaly; C458 asymmetry not confirmed at generative resolution; 76.5% feature-folio pairs within \|z\|<2)	2	B, folio, M2.1, design freedom, accent
+C1367	**Folio Accent Vector Analysis**	2	B, folio, accent, PCA, category, archetype
 
 ---
 

@@ -4,6 +4,55 @@
 
 ---
 
+## Version 4.82.68 (2026-02-27) - Phase 480: Folio Accent Vector Analysis
+
+### Summary
+
+Phase 480: Extracted per-folio accent vectors from Phase 479 z-scores, ran PCA, and tested whether the accent structure is archetype-dominated or captures new folio-level structure. **Gating test: NEW_STRUCTURE** — accent PC1 correlates weakly with archetypes (|rho|=0.274), capturing 67% independent variance. THERMAL category fraction predicts the accent beyond kernel balance (partial rho=0.588). BIO accent is section-intrinsic.
+
+**Phase 480 headline findings:**
+- PC1 explains 58.9% of accent variance (AXM dynamics intensity)
+- Accent-archetype |rho|=0.274 → genuinely new structure, not archetype-dominated
+- THERMAL fraction survives kernel control (partial rho=0.588, p<0.0001) — category has independent accent signal
+- BIO accent persists within REGIME_1 (p=0.019) — section-intrinsic, not REGIME-mediated
+- Archetype 1 = 8/10 BIO, highly homogeneous (sign agreement 0.88)
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/FOLIO_ACCENT_VECTOR/` -- 1 script + 1 results JSON |
+| **ADDED** | C1367 constraint file (1 new constraint, 1210->1211) |
+| **UPDATED** | `INDEX.md` -- 1210->1211 total, Phase 480 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.81->v4.82, 479->480 phases, 1210->1211 constraints |
+
+---
+
+## Version 4.81.67 (2026-02-27) - Phase 479: M2.1 Generative Gap Characterization
+
+### Summary
+
+Phase 479: Characterized the per-folio gap between M2.1 (corpus-wide model, 21/21) and real folio structure. Generated 100 synthetic counterparts per real folio, computed 31-feature z-score profiles. **The folio accent is a macro-automaton operating point parameter** — concentrated in class distribution (AXM/FQ fractions) and sequential dynamics (AXM self-transition, run length), not in positional structure or vocabulary composition.
+
+**Phase 479 headline findings:**
+- 11/31 features show systematic gaps (mean|z| > 1.5)
+- Top gap features: AXM fraction (2.14), class concentration (2.03), AXM self-transition (2.03)
+- BIO section has HIGHEST anomaly (1.691) — coherent AND distinctive (C1048 reinterpretation)
+- Archetype 1 (strong attractor) has highest anomaly (2.034)
+- C458 hazard/recovery asymmetry does NOT manifest at generative gap resolution
+- 76.5% of feature-folio pairs within |z| < 2
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/GENERATIVE_GAP_CHARACTERIZATION/` -- 1 script + 1 results JSON |
+| **ADDED** | C1366 constraint file (1 new constraint, 1209->1210) |
+| **UPDATED** | `INDEX.md` -- 1209->1210 total, Phase 479 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.80->v4.81, 477->479 phases, 1209->1210 constraints |
+
+---
+
 ## Version 4.80.66 (2026-02-27) - Phase 477: Corrected Evaluation — M2.1 Full Pass
 
 ### Summary

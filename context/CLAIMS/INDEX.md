@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1209 validated constraints | **Version:** 4.80 | **Date:** 2026-02-27
+**Total:** 1211 validated constraints | **Version:** 4.82 | **Date:** 2026-02-27
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4053,6 +4053,38 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - X2 MIDDLE asymmetry: M2.1 reproduces MIDDLE directionality (0.094 vs real 0.126, within 50%)
 - PREFIX-factored generation confirmed unnecessary (C1034: distributionally equivalent to M2)
 - **Key result:** The 49-class grammar is generatively closed. M2.1 reproduces all measurable structural properties.
+
+---
+
+### Generative Gap Characterization (C1366) -- Phase: GENERATIVE_GAP_CHARACTERIZATION (Phase 479)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1366** | **M2.1 Generative Gap Characterization** (Per-folio accent concentrates in class distribution and sequential dynamics, not positional structure or vocabulary composition; 11/31 features show systematic gaps mean\|z\|>1.5; BIO most anomalous section, Archetype 1 highest anomaly; C458 asymmetry not confirmed at generative resolution; 76.5% feature-folio pairs within \|z\|<2) | 2 | B, folio, M2.1, design freedom, accent | -> [C1366_generative_gap_characterization.md](C1366_generative_gap_characterization.md) |
+
+**Phase 479 findings (Generative Gap Characterization):**
+- 72 real folios x 100 M2.1 synthetic counterparts, 31 features, z-score analysis
+- The folio accent is **macro-automaton operating point**: AXM fraction (mean|z|=2.14), class concentration (2.03), AXM self-transition (2.03), FQ fraction (1.92), mean word length (1.91)
+- NOT in: positional features, dark/bridge fractions, spectral gap
+- BIO section has HIGHEST anomaly (1.691) — internally coherent (C1048) AND externally distinctive
+- Archetype 1 (strong attractor) has highest anomaly (2.034)
+- C458 hazard/recovery asymmetry does not manifest at generative gap resolution (ratio=0.96)
+- Top 5 most anomalous: f77r, f82r, f83v, f77v, f82v (all BIO)
+
+---
+
+### Folio Accent Vector Analysis (C1367) -- Phase: FOLIO_ACCENT_VECTOR (Phase 480)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1367** | **Folio Accent Vector Analysis** (Accent is low-dimensional PC1=58.9%; weakly correlated with archetypes \|rho\|=0.274 → NEW_STRUCTURE; THERMAL category predicts accent beyond kernel partial rho=0.588; BIO accent section-intrinsic p=0.019; archetype 1 = BIO at maximum accent strength) | 2 | B, folio, accent, PCA, category, archetype | -> [C1367_folio_accent_vector.md](C1367_folio_accent_vector.md) |
+
+**Phase 480 findings (Folio Accent Vector):**
+- PC1 (59%) = AXM dynamics intensity; PC2 (21%) = sequential complexity; PC3 (9%) = morphological texture
+- **Gating test: NEW_STRUCTURE** — accent captures 67% independent structure beyond archetypes
+- THERMAL category fraction survives kernel control (partial rho=0.588, p<0.0001); FLOW vanishes after kernel control
+- BIO accent persists within REGIME_1 (1.573 vs 1.234, MW p=0.019) — section-intrinsic
+- Archetype 1: 8/10 are BIO, mean sign agreement 0.88, driven by class_concentration (4.67) and axm_fraction (4.14)
 
 ---
 
