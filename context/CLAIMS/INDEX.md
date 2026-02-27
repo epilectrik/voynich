@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1215 validated constraints | **Version:** 4.86 | **Date:** 2026-02-27
+**Total:** 1217 validated constraints | **Version:** 4.88 | **Date:** 2026-02-27
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4141,6 +4141,36 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - FLOW is the only significant monotonic gradient (rho=0.900, p=0.037, increasing toward line end)
 - Section-position interaction absent (mean profile corr=0.617) — C1047 extends to categories
 - "Thermal arc": heat loads at front, disperses through middle, resolves to flow/transition at end
+
+### Thermodynamic Arc Validation (C1372) -- Phase: THERMODYNAMIC_ARC_VALIDATION (Phase 485)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1372** | **Thermodynamic Arc Validation** (First-principles thermodynamic ordering model FAILS 0/7 tests; rho=0.286 p=0.493; 2/8 shapes correct; MSE 2.8x worse than uniform null; 6/7 directional predictions confirmed but partially circular; PREFIX confound COLLAPSES signal; CONTAINMENT is LATE not early; category gradient mediated by PREFIX positional grammar C1001) | 2 | B, line, category, positional, interpretation, PREFIX | -> [C1372_thermodynamic_arc_validation.md](C1372_thermodynamic_arc_validation.md) |
+
+**Phase 485 findings (Thermodynamic Arc Validation):**
+- Thermodynamic ordering model (STAGING < MARKING < CONTAINMENT < THERMAL < ... < TRANSITION) fails all 7 formal tests
+- Directional predictions 6/7 confirmed but 3/6 are circular with C1371 known findings
+- T3 GATE CLOSED: thermodynamic model 2.8x WORSE than uniform null at predicting shapes
+- CONTAINMENT is the LATEST category (COM=2.235), not early as predicted — reframes as "collection" not "preparation"
+- PREFIX confound control: signal COLLAPSES after controlling for PREFIX positional grammar (C1001)
+- Constrains Tier 3 distillation interpretation: process ordering does not independently predict category position
+
+### PREFIX Category-Position Decomposition (C1373) -- Phase: PREFIX_CATEGORY_POSITION_DECOMPOSITION (Phase 486)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1373** | **PREFIX Category-Position Decomposition** (Thermal arc NOT a PREFIX artifact; ch chi²=75.9 p=3e-6 THERMAL rho=-0.900; sh chi²=61.2 p=3e-4 rho=-0.800; 11/27 PREFIXes |rho|>0.50; weighted avg rho=-0.720; removing specialists STRENGTHENS gradient; qo creates Q2 bump; BARE anchors Q5 THERMAL depletion; H3 compositional artifact FALSIFIED; C1372 amendment) | 2 | B, PREFIX, line, category, positional, sister pair | -> [C1373_prefix_category_position_decomposition.md](C1373_prefix_category_position_decomposition.md) |
+
+**Phase 486 findings (PREFIX Category-Position Decomposition):**
+- **H3 FALSIFIED**: Thermal arc exists WITHIN individual PREFIXes, not just between them
+- ch and sh both show significant within-PREFIX category-position gradients (THERMAL declines Q1→Q5)
+- Removing positional specialists (5.7% of tokens) STRENGTHENS the gradient (rho -0.400 → -0.900)
+- qo (59% THERMAL, peaks Q2) creates non-monotonic Q2 bump; removing qo yields monotonic decline
+- BARE tokens anchor Q5: concentrate at line-final (rho=1.000), near-zero THERMAL, high FLOW
+- ok/ot contribute +3.3pp FLOW+TRANSITION at Q5 (line-final resolution specialists)
+- **C1372 amendment**: PREFIX confound control was too aggressive; within-PREFIX gradient is genuine
+- Verdict: H1+H2 HYBRID — gradient from major PREFIXes covering >85% of tokens
 
 ---
 

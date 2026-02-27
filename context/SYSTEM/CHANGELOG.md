@@ -4,6 +4,41 @@
 
 ---
 
+## Version 4.88.74 (2026-02-27) - Phase 486: PREFIX Category-Position Decomposition
+
+### Summary
+
+Phase 486: Decomposed the PREFIX confound identified in C1372. The thermal arc (C1371) is **NOT** a PREFIX compositional artifact — it exists WITHIN individual PREFIX families. ch shows THERMAL rho=-0.900 (chi² p=3e-6), sh shows rho=-0.800 (chi² p=3e-4). 11/27 PREFIXes show |rho|>0.50 (weighted average=-0.720). Removing positional specialists (5.7% of tokens) actually STRENGTHENS the gradient. qo (59% THERMAL, peaks Q2) creates the non-monotonic Q2 bump. BARE tokens anchor Q5 THERMAL depletion. H3 (compositional artifact) is FALSIFIED. **C1372 amendment:** the PREFIX confound control was too aggressive; the gradient is genuinely within-PREFIX.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/PREFIX_CATEGORY_POSITION_DECOMPOSITION/` -- 1 script + 1 results JSON |
+| **ADDED** | C1373 constraint file (1 new constraint, 1216->1217) |
+| **AMENDED** | C1372 — PREFIX confound conclusion was too strong |
+| **UPDATED** | `INDEX.md` -- 1216->1217 total, Phase 486 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.87->v4.88, 485->486 phases, 1216->1217 constraints |
+
+---
+
+## Version 4.87.73 (2026-02-27) - Phase 485: Thermodynamic Arc Validation
+
+### Summary
+
+Phase 485: Tested whether a first-principles thermodynamic ordering model (derived from distillation process logic) predicts the observed 8-category quintile profiles (C1371). **NO — 0/7 formal tests pass.** Predicted rank ordering (rho=0.286) far below threshold. Thermodynamic model 2.8x WORSE than uniform null at predicting gradient shapes. CONTAINMENT is LATE (COM=2.235), not early as predicted. 6/7 directional predictions confirmed but partially circular with C1371. **PREFIX confound control COLLAPSES the signal** — category gradient is substantially mediated by PREFIX positional grammar (C1001), not independent thermodynamic ordering. Constrains Tier 3 distillation interpretation.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/THERMODYNAMIC_ARC_VALIDATION/` -- 1 script + 1 results JSON |
+| **ADDED** | C1372 constraint file (1 new constraint, 1215->1216) |
+| **UPDATED** | `INDEX.md` -- 1215->1216 total, Phase 485 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.86->v4.87, 484->485 phases, 1215->1216 constraints |
+
+---
+
 ## Version 4.86.72 (2026-02-27) - Phase 484: Position-Conditioned Category Grammar
 
 ### Summary

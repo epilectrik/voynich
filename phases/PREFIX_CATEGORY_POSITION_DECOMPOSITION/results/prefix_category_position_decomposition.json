@@ -1,0 +1,429 @@
+{
+  "metadata": {
+    "phase": 486,
+    "name": "PREFIX_CATEGORY_POSITION_DECOMPOSITION",
+    "n_tokens": 22753,
+    "n_lines": 2413,
+    "elapsed_seconds": 30.690552
+  },
+  "T1_within_prefix_gradient": {
+    "ch": {
+      "n": 3457,
+      "chi2": 75.921591,
+      "p": 3e-06,
+      "dof": 28,
+      "cramers_v": 0.074097,
+      "thermal_rho": -0.9,
+      "thermal_p": 0.037386,
+      "flow_rho": 0.9,
+      "flow_p": 0.037386,
+      "significant_bonferroni": true,
+      "quintile_fracs": {
+        "THERMAL": [
+          0.270764,
+          0.228863,
+          0.18661,
+          0.202035,
+          0.181001
+        ],
+        "FLOW": [
+          0.104651,
+          0.093294,
+          0.108262,
+          0.111919,
+          0.127086
+        ],
+        "CONTAINMENT": [
+          0.069767,
+          0.107872,
+          0.109687,
+          0.098837,
+          0.09371
+        ],
+        "STAGING": [
+          0.053156,
+          0.065598,
+          0.081197,
+          0.049419,
+          0.052632
+        ],
+        "OPERATION": [
+          0.214286,
+          0.265306,
+          0.242165,
+          0.274709,
+          0.256739
+        ],
+        "TRANSITION": [
+          0.19103,
+          0.132653,
+          0.125356,
+          0.119186,
+          0.133504
+        ],
+        "MARKING": [
+          0.069767,
+          0.067055,
+          0.11396,
+          0.098837,
+          0.103979
+        ],
+        "MONITORING": [
+          0.026578,
+          0.039359,
+          0.032764,
+          0.045058,
+          0.051348
+        ]
+      }
+    },
+    "sh": {
+      "n": 2306,
+      "chi2": 61.192025,
+      "p": 0.000286,
+      "dof": 28,
+      "cramers_v": 0.081449,
+      "thermal_rho": -0.8,
+      "thermal_p": 0.104088,
+      "flow_rho": -0.6,
+      "flow_p": 0.284757,
+      "significant_bonferroni": true,
+      "quintile_fracs": {
+        "THERMAL": [
+          0.262402,
+          0.262582,
+          0.239609,
+          0.201681,
+          0.217666
+        ],
+        "FLOW": [
+          0.099217,
+          0.089716,
+          0.05868,
+          0.07563,
+          0.082019
+        ],
+        "CONTAINMENT": [
+          0.052219,
+          0.063457,
+          0.090465,
+          0.070028,
+          0.082019
+        ],
+        "STAGING": [
+          0.056136,
+          0.050328,
+          0.03423,
+          0.036415,
+          0.053628
+        ],
+        "OPERATION": [
+          0.265013,
+          0.308534,
+          0.342298,
+          0.327731,
+          0.299685
+        ],
+        "TRANSITION": [
+          0.208877,
+          0.142232,
+          0.166259,
+          0.159664,
+          0.167192
+        ],
+        "MARKING": [
+          0.048303,
+          0.052516,
+          0.051345,
+          0.084034,
+          0.066246
+        ],
+        "MONITORING": [
+          0.007833,
+          0.030635,
+          0.017115,
+          0.044818,
+          0.031546
+        ]
+      }
+    },
+    "verdict": "H2_SUPPORTED: both ch and sh show within-PREFIX gradient"
+  },
+  "T2_specialist_contribution": {
+    "rho_full": -0.4,
+    "rho_specialists_removed": -0.9,
+    "p_specialists_removed": 0.037386,
+    "n_specialists_removed": 21445,
+    "rho_chsh_only": -1.0,
+    "p_chsh_only": 0.0,
+    "n_chsh_only": 5763,
+    "ratio_nonspec": 2.25,
+    "ratio_chsh": 2.5,
+    "ci_nonspec": [
+      1.0,
+      2.666667
+    ],
+    "ci_chsh": [
+      0.777778,
+      3.008333
+    ],
+    "specialist_n": 1308,
+    "specialist_pct": 5.748692,
+    "verdict": "H2_SUPPORTED: gradient survives specialist removal"
+  },
+  "T3_ch_sh_matched_position": {
+    "jsd_per_quintile": [
+      0.005945,
+      0.005626,
+      0.023848,
+      0.006438,
+      0.008566
+    ],
+    "v_per_quintile": [
+      0.108605,
+      0.102167,
+      0.204112,
+      0.106655,
+      0.115618
+    ],
+    "sig_count": 1,
+    "jsd_range_mean": 1.806929,
+    "stable": false,
+    "consistent": false,
+    "verdict": "WEAK: ch/sh divergence is position-dependent or absent"
+  },
+  "T4_ok_ot_final": {
+    "full_q5_n": 5484,
+    "ok_q5_n": 372,
+    "ot_q5_n": 423,
+    "deltas": {
+      "THERMAL": 0.001089,
+      "FLOW": 0.012789,
+      "CONTAINMENT": -0.003943,
+      "STAGING": -0.016845,
+      "OPERATION": -0.003106,
+      "TRANSITION": 0.020276,
+      "MARKING": -0.008117,
+      "MONITORING": -0.002143
+    },
+    "flow_trans_delta_pp": 3.306461,
+    "verdict": "SIGNIFICANT: ok/ot substantially shape Q5"
+  },
+  "T5_qo_thermal": {
+    "qo_total": 4066,
+    "qo_frac_per_quintile": [
+      0.143145,
+      0.232953,
+      0.206786,
+      0.193642,
+      0.138038
+    ],
+    "thermal_full": [
+      0.243347,
+      0.293375,
+      0.250307,
+      0.244601,
+      0.175966
+    ],
+    "thermal_no_qo": [
+      0.180471,
+      0.19962,
+      0.16336,
+      0.160096,
+      0.116141
+    ],
+    "rho_full": -0.4,
+    "rho_no_qo": -0.9,
+    "attenuation_ratio": 2.25,
+    "verdict": "MINOR: qo contributes little to THERMAL gradient"
+  },
+  "T6_bare_profile": {
+    "bare_total": 3634,
+    "bare_frac_per_quintile": [
+      0.13629,
+      0.137345,
+      0.144578,
+      0.153603,
+      0.21353
+    ],
+    "bare_position_rho": 1.0,
+    "bare_position_p": 0.0,
+    "internal_chi2": 94.20396,
+    "internal_p": 0.0,
+    "internal_v": 0.080503,
+    "thermal_rho": -0.8,
+    "thermal_p": 0.104088
+  },
+  "T7_within_prefix_stratification": {
+    "per_prefix": {
+      "qo": {
+        "n": 4066,
+        "thermal_rho": -0.9,
+        "thermal_p": 0.037386,
+        "strong": true
+      },
+      "BARE": {
+        "n": 3634,
+        "thermal_rho": -0.8,
+        "thermal_p": 0.104088,
+        "strong": true
+      },
+      "ch": {
+        "n": 3457,
+        "thermal_rho": -0.9,
+        "thermal_p": 0.037386,
+        "strong": true
+      },
+      "sh": {
+        "n": 2306,
+        "thermal_rho": -0.8,
+        "thermal_p": 0.104088,
+        "strong": true
+      },
+      "ok": {
+        "n": 1474,
+        "thermal_rho": -0.7,
+        "thermal_p": 0.18812,
+        "strong": true
+      },
+      "ot": {
+        "n": 1437,
+        "thermal_rho": -1.0,
+        "thermal_p": 0.0,
+        "strong": true
+      },
+      "da": {
+        "n": 1083,
+        "thermal_rho": 0.223607,
+        "thermal_p": 0.717686,
+        "strong": false
+      },
+      "ol": {
+        "n": 872,
+        "thermal_rho": -0.9,
+        "thermal_p": 0.037386,
+        "strong": true
+      },
+      "lk": {
+        "n": 435,
+        "thermal_rho": -1.0,
+        "thermal_p": 0.0,
+        "strong": true
+      },
+      "sa": {
+        "n": 329,
+        "thermal_rho": -0.447214,
+        "thermal_p": 0.450185,
+        "strong": false
+      },
+      "lch": {
+        "n": 314,
+        "thermal_rho": -1.0,
+        "thermal_p": 0.0,
+        "strong": true
+      },
+      "yk": {
+        "n": 312,
+        "thermal_rho": -0.7,
+        "thermal_p": 0.18812,
+        "strong": true
+      },
+      "te": {
+        "n": 286,
+        "thermal_rho": -0.1,
+        "thermal_p": 0.872889,
+        "strong": false
+      },
+      "ke": {
+        "n": 255,
+        "thermal_rho": -0.3,
+        "thermal_p": 0.623838,
+        "strong": false
+      },
+      "pch": {
+        "n": 239,
+        "thermal_rho": -0.9,
+        "thermal_p": 0.037386,
+        "strong": true
+      },
+      "ka": {
+        "n": 238,
+        "thermal_rho": 0.0,
+        "thermal_p": 1.0,
+        "strong": false
+      },
+      "ta": {
+        "n": 237,
+        "thermal_rho": 0.0,
+        "thermal_p": 1.0,
+        "strong": false
+      },
+      "so": {
+        "n": 188,
+        "thermal_rho": -0.205196,
+        "thermal_p": 0.740582,
+        "strong": false
+      },
+      "or": {
+        "n": 172,
+        "thermal_rho": -0.3,
+        "thermal_p": 0.623838,
+        "strong": false
+      },
+      "al": {
+        "n": 169,
+        "thermal_rho": 0.5,
+        "thermal_p": 0.391002,
+        "strong": false
+      },
+      "tch": {
+        "n": 169,
+        "thermal_rho": -0.5,
+        "thermal_p": 0.391002,
+        "strong": false
+      },
+      "po": {
+        "n": 136,
+        "thermal_rho": 0.223607,
+        "thermal_p": 0.717686,
+        "strong": false
+      },
+      "ar": {
+        "n": 131,
+        "thermal_rho": -0.410391,
+        "thermal_p": 0.492536,
+        "strong": false
+      },
+      "do": {
+        "n": 126,
+        "thermal_rho": -0.205196,
+        "thermal_p": 0.740582,
+        "strong": false
+      },
+      "to": {
+        "n": 115,
+        "thermal_rho": 0.3,
+        "thermal_p": 0.623838,
+        "strong": false
+      },
+      "lsh": {
+        "n": 114,
+        "thermal_rho": -0.1,
+        "thermal_p": 0.872889,
+        "strong": false
+      },
+      "dch": {
+        "n": 104,
+        "thermal_rho": -0.46169,
+        "thermal_p": 0.433766,
+        "strong": false
+      }
+    },
+    "weighted_avg_rho": -0.720295,
+    "n_qualifying": 27,
+    "n_strong": 11,
+    "total_weight": 22398,
+    "verdict": "H1_PARTIAL: gradient from 11 PREFIXes, not distributed"
+  },
+  "overall_hypothesis": "H1+H2 HYBRID: gradient from subset of PREFIXes"
+}

@@ -1,0 +1,341 @@
+{
+  "metadata": {
+    "phase": 485,
+    "name": "THERMODYNAMIC_ARC_VALIDATION",
+    "n_tokens": 22753,
+    "n_lines": 2413,
+    "elapsed_seconds": 5.974028
+  },
+  "T1_rank_correlation": {
+    "category_coms": {
+      "THERMAL": 1.873312,
+      "FLOW": 2.197467,
+      "CONTAINMENT": 2.234759,
+      "STAGING": 1.961525,
+      "OPERATION": 1.95506,
+      "TRANSITION": 2.206745,
+      "MARKING": 2.0684,
+      "MONITORING": 2.089588
+    },
+    "predicted_ranks": {
+      "STAGING": 1,
+      "MARKING": 2,
+      "CONTAINMENT": 3,
+      "THERMAL": 4,
+      "MONITORING": 5,
+      "OPERATION": 6,
+      "FLOW": 7,
+      "TRANSITION": 8
+    },
+    "spearman_rho": 0.285714,
+    "spearman_p": 0.492726,
+    "permutation_p": 0.2497,
+    "passed": false,
+    "strong": false
+  },
+  "T2_gradient_shapes": {
+    "THERMAL": {
+      "quintile_fracs": [
+        0.243347,
+        0.293375,
+        0.250307,
+        0.244601,
+        0.175966
+      ],
+      "observed_shape": "PEAKED",
+      "predicted_shape": "DECLINING",
+      "match": false
+    },
+    "FLOW": {
+      "quintile_fracs": [
+        0.175806,
+        0.167678,
+        0.193017,
+        0.203349,
+        0.225201
+      ],
+      "observed_shape": "RISING",
+      "predicted_shape": "RISING",
+      "match": true
+    },
+    "CONTAINMENT": {
+      "quintile_fracs": [
+        0.035685,
+        0.045377,
+        0.058028,
+        0.048289,
+        0.054705
+      ],
+      "observed_shape": "PEAKED",
+      "predicted_shape": "PEAKED",
+      "match": true
+    },
+    "STAGING": {
+      "quintile_fracs": [
+        0.155444,
+        0.122543,
+        0.120974,
+        0.110895,
+        0.134573
+      ],
+      "observed_shape": "U_SHAPED",
+      "predicted_shape": "DECLINING",
+      "match": false
+    },
+    "OPERATION": {
+      "quintile_fracs": [
+        0.147782,
+        0.153361,
+        0.154414,
+        0.146809,
+        0.122721
+      ],
+      "observed_shape": "FLAT",
+      "predicted_shape": "RISING",
+      "match": false
+    },
+    "TRANSITION": {
+      "quintile_fracs": [
+        0.141129,
+        0.138316,
+        0.126137,
+        0.1405,
+        0.191101
+      ],
+      "observed_shape": "U_SHAPED",
+      "predicted_shape": "RISING",
+      "match": false
+    },
+    "MARKING": {
+      "quintile_fracs": [
+        0.083669,
+        0.063334,
+        0.077699,
+        0.08299,
+        0.079322
+      ],
+      "observed_shape": "FLAT",
+      "predicted_shape": "DECLINING",
+      "match": false
+    },
+    "MONITORING": {
+      "quintile_fracs": [
+        0.017137,
+        0.016016,
+        0.019425,
+        0.022567,
+        0.016411
+      ],
+      "observed_shape": "RISING",
+      "predicted_shape": "FLAT",
+      "match": false
+    },
+    "correct_count": 2,
+    "passed": false,
+    "strong": false
+  },
+  "T3_superiority_over_null": {
+    "mse_thermodynamic": 0.001171,
+    "mse_uniform_decay": 0.000417,
+    "mse_ratio": 2.810381,
+    "passed": false,
+    "strong": false
+  },
+  "T4_cross_section": {
+    "section_rhos": {
+      "BIO": {
+        "rho": 0.238095,
+        "p": 0.570156
+      },
+      "COSMO": {
+        "rho": 0.071429,
+        "p": 0.866526
+      },
+      "HERBAL": {
+        "rho": 0.166667,
+        "p": 0.693239
+      },
+      "STARS": {
+        "rho": 0.166667,
+        "p": 0.693239
+      }
+    },
+    "min_rho": 0.071429,
+    "max_rho": 0.238095,
+    "median_rho": 0.166667,
+    "passed": false,
+    "strong": false
+  },
+  "T5_operation_lag": {
+    "thermal_com": 1.873312,
+    "operation_com": 1.95506,
+    "global_lag": 0.081747,
+    "folio_mean_lag": -0.01324,
+    "folio_t_stat": -0.266753,
+    "folio_p_one_tailed": 0.604831,
+    "n_folios": 82,
+    "passed": false,
+    "strong": false
+  },
+  "T6_monitoring_flat": {
+    "category_cvs": {
+      "THERMAL": 0.155764,
+      "FLOW": 0.105694,
+      "CONTAINMENT": 0.16085,
+      "STAGING": 0.11839,
+      "OPERATION": 0.079579,
+      "TRANSITION": 0.152611,
+      "MARKING": 0.09532,
+      "MONITORING": 0.132903
+    },
+    "monitoring_cv": 0.132903,
+    "monitoring_rank": 5,
+    "passed": false,
+    "strong": false
+  },
+  "T7_pairwise_ordering": {
+    "correct": 18,
+    "total": 28,
+    "accuracy": 0.642857,
+    "binomial_p": 0.092467,
+    "mismatches": [
+      {
+        "pair": "THERMAL vs CONTAINMENT",
+        "predicted_earlier": "CONTAINMENT",
+        "observed_earlier": "THERMAL",
+        "match": false
+      },
+      {
+        "pair": "THERMAL vs STAGING",
+        "predicted_earlier": "STAGING",
+        "observed_earlier": "THERMAL",
+        "match": false
+      },
+      {
+        "pair": "THERMAL vs MARKING",
+        "predicted_earlier": "MARKING",
+        "observed_earlier": "THERMAL",
+        "match": false
+      },
+      {
+        "pair": "FLOW vs CONTAINMENT",
+        "predicted_earlier": "CONTAINMENT",
+        "observed_earlier": "FLOW",
+        "match": false
+      },
+      {
+        "pair": "CONTAINMENT vs OPERATION",
+        "predicted_earlier": "CONTAINMENT",
+        "observed_earlier": "OPERATION",
+        "match": false
+      },
+      {
+        "pair": "CONTAINMENT vs TRANSITION",
+        "predicted_earlier": "CONTAINMENT",
+        "observed_earlier": "TRANSITION",
+        "match": false
+      },
+      {
+        "pair": "CONTAINMENT vs MONITORING",
+        "predicted_earlier": "CONTAINMENT",
+        "observed_earlier": "MONITORING",
+        "match": false
+      },
+      {
+        "pair": "STAGING vs OPERATION",
+        "predicted_earlier": "STAGING",
+        "observed_earlier": "OPERATION",
+        "match": false
+      },
+      {
+        "pair": "OPERATION vs MARKING",
+        "predicted_earlier": "MARKING",
+        "observed_earlier": "OPERATION",
+        "match": false
+      },
+      {
+        "pair": "OPERATION vs MONITORING",
+        "predicted_earlier": "MONITORING",
+        "observed_earlier": "OPERATION",
+        "match": false
+      }
+    ],
+    "passed": false,
+    "strong": false
+  },
+  "supplement_prefix_control": {
+    "residual_coms": {
+      "THERMAL": -0.1424,
+      "FLOW": 0.08135,
+      "CONTAINMENT": 0.260373,
+      "STAGING": -0.073754,
+      "OPERATION": -0.018392,
+      "TRANSITION": 0.084961,
+      "MARKING": 0.053922,
+      "MONITORING": 0.042972
+    },
+    "residualized_rho": 0.333333,
+    "residualized_p": 0.419753,
+    "residualized_shapes": {
+      "THERMAL": {
+        "observed": "PEAKED",
+        "predicted": "DECLINING",
+        "match": false
+      },
+      "FLOW": {
+        "observed": "RISING",
+        "predicted": "RISING",
+        "match": true
+      },
+      "CONTAINMENT": {
+        "observed": "RISING",
+        "predicted": "PEAKED",
+        "match": false
+      },
+      "STAGING": {
+        "observed": "U_SHAPED",
+        "predicted": "DECLINING",
+        "match": false
+      },
+      "OPERATION": {
+        "observed": "FLAT",
+        "predicted": "RISING",
+        "match": false
+      },
+      "TRANSITION": {
+        "observed": "U_SHAPED",
+        "predicted": "RISING",
+        "match": false
+      },
+      "MARKING": {
+        "observed": "FLAT",
+        "predicted": "DECLINING",
+        "match": false
+      },
+      "MONITORING": {
+        "observed": "RISING",
+        "predicted": "FLAT",
+        "match": false
+      }
+    },
+    "resid_shape_correct": 1,
+    "survives_t1": false,
+    "survives_t2": false,
+    "survives": false
+  },
+  "predictions": {
+    "P1_thermal_peak": true,
+    "P2_flow_monotonic": true,
+    "P3_staging_front": true,
+    "P4_transition_final": true,
+    "P5_monitoring_flat": true,
+    "P6_containment_early": false,
+    "P7_operation_lag": true
+  },
+  "test_scorecard": {
+    "passed": 0,
+    "strong": 0,
+    "t3_gate": false
+  },
+  "verdict": "WEAK: 0/7 tests pass, 0/7 strong, 6/7 predictions confirmed (PREFIX-confounded: category gradient may be PREFIX artifact)"
+}
