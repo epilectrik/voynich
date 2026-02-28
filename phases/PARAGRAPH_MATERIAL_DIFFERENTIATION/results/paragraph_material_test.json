@@ -1,0 +1,348 @@
+{
+  "phase": 492,
+  "name": "PARAGRAPH_MATERIAL_DIFFERENTIATION",
+  "hypothesis": "Each folio = multi-material session; each paragraph = one material",
+  "historical_basis": "Brunschwig 6-still water bath; 15th-C 4-vent furnace; Norton athanor",
+  "structural_basis": [
+    "C845",
+    "C855",
+    "C1257",
+    "C1083",
+    "C1288",
+    "C1325",
+    "C1377"
+  ],
+  "test_T1_all_middles": {
+    "observed_within": 0.7864910029510844,
+    "observed_between": 0.7185907216084221,
+    "observed_diff": 0.06790028134266235,
+    "ratio": 1.094490896279152,
+    "n_within_pairs": 2542,
+    "n_between_pairs": 703,
+    "p_value": 0.9972002799720028,
+    "n_permutations": 10000,
+    "significant": false
+  },
+  "test_T2_dark_pipeline": {
+    "observed_within": 0.9721999222205009,
+    "observed_between": 0.9632162838494203,
+    "observed_diff": 0.008983638371080627,
+    "ratio": 1.009326709402356,
+    "n_within_pairs": 1858,
+    "n_between_pairs": 691,
+    "p_value": 0.9796020397960205,
+    "n_permutations": 10000,
+    "significant": false
+  },
+  "test_T3_bridge_control": {
+    "observed_within": 0.7173180316980371,
+    "observed_between": 0.5720423964202003,
+    "observed_diff": 0.14527563527783682,
+    "ratio": 1.2539595599678646,
+    "n_within_pairs": 2542,
+    "n_between_pairs": 703,
+    "p_value": 0.9736026397360263,
+    "n_permutations": 10000,
+    "significant": false
+  },
+  "test_T4_header_vs_body": {
+    "observed_header_diversity": 0.8846048090899249,
+    "observed_body_diversity": 0.7965514845656176,
+    "observed_diff": 0.08805332452430725,
+    "ratio": 1.110543167931355,
+    "n_header_pairs": 2542,
+    "n_body_pairs": 1928,
+    "p_value": 9.999000099990002e-05,
+    "n_permutations": 10000,
+    "significant": true
+  },
+  "test_T5_paragraph_counts": {
+    "overall": {
+      "mean": 7.666666666666667,
+      "min": 3,
+      "max": 20,
+      "n_folios": 72
+    },
+    "by_regime": {
+      "REGIME_1": {
+        "mean": 8.172413793103448,
+        "min": 3,
+        "max": 19,
+        "n": 29,
+        "counts": [
+          3,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          5,
+          6,
+          6,
+          7,
+          7,
+          7,
+          7,
+          7,
+          7,
+          8,
+          9,
+          9,
+          9,
+          9,
+          10,
+          11,
+          11,
+          13,
+          15,
+          15,
+          16,
+          19
+        ]
+      },
+      "REGIME_2": {
+        "mean": 4.923076923076923,
+        "min": 3,
+        "max": 9,
+        "n": 13,
+        "counts": [
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          5,
+          5,
+          6,
+          6,
+          8,
+          9
+        ]
+      },
+      "REGIME_3": {
+        "mean": 11.055555555555555,
+        "min": 3,
+        "max": 20,
+        "n": 18,
+        "counts": [
+          3,
+          4,
+          4,
+          6,
+          7,
+          10,
+          11,
+          11,
+          11,
+          12,
+          12,
+          12,
+          14,
+          15,
+          15,
+          15,
+          17,
+          20
+        ]
+      },
+      "REGIME_4": {
+        "mean": 4.333333333333333,
+        "min": 3,
+        "max": 8,
+        "n": 12,
+        "counts": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          5,
+          5,
+          7,
+          8
+        ]
+      }
+    },
+    "by_section": {
+      "B": {
+        "mean": 6.588235294117647,
+        "min": 3,
+        "max": 16,
+        "n": 17,
+        "counts": [
+          3,
+          3,
+          3,
+          4,
+          4,
+          5,
+          6,
+          6,
+          7,
+          7,
+          7,
+          7,
+          7,
+          9,
+          9,
+          9,
+          16
+        ]
+      },
+      "C": {
+        "mean": 5.75,
+        "min": 3,
+        "max": 9,
+        "n": 4,
+        "counts": [
+          3,
+          3,
+          8,
+          9
+        ]
+      },
+      "H": {
+        "mean": 4.1923076923076925,
+        "min": 3,
+        "max": 7,
+        "n": 26,
+        "counts": [
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          3,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          4,
+          5,
+          5,
+          5,
+          5,
+          6,
+          6,
+          6,
+          7
+        ]
+      },
+      "S": {
+        "mean": 12.478260869565217,
+        "min": 7,
+        "max": 20,
+        "n": 23,
+        "counts": [
+          7,
+          8,
+          8,
+          9,
+          10,
+          10,
+          11,
+          11,
+          11,
+          11,
+          11,
+          12,
+          12,
+          12,
+          13,
+          15,
+          15,
+          15,
+          15,
+          15,
+          17,
+          19,
+          20
+        ]
+      },
+      "T": {
+        "mean": 10.5,
+        "min": 7,
+        "max": 14,
+        "n": 2,
+        "counts": [
+          7,
+          14
+        ]
+      }
+    }
+  },
+  "section_stratified": {
+    "B": {
+      "within_diversity": 0.9527155600926094,
+      "between_diversity": 0.9403905102027268,
+      "diff": 0.012325049889882589,
+      "ratio": 1.013106310363793,
+      "n_within_pairs": 183,
+      "n_between_pairs": 136,
+      "n_paragraphs": 82,
+      "n_qualifying_folios": 17
+    },
+    "C": {
+      "within_diversity": 0.9478188478188476,
+      "between_diversity": 1.0,
+      "diff": -0.05218115218115238,
+      "ratio": 0.9478188478188476,
+      "n_within_pairs": 62,
+      "n_between_pairs": 1,
+      "n_paragraphs": 22,
+      "n_qualifying_folios": 4
+    },
+    "H": {
+      "within_diversity": 0.9952418926103136,
+      "between_diversity": 0.9831957972582971,
+      "diff": 0.012046095352016506,
+      "ratio": 1.0122519801097685,
+      "n_within_pairs": 95,
+      "n_between_pairs": 88,
+      "n_paragraphs": 79,
+      "n_qualifying_folios": 24
+    },
+    "S": {
+      "within_diversity": 0.9753375902517795,
+      "between_diversity": 0.9623854845225828,
+      "diff": 0.012952105729196695,
+      "ratio": 1.0134583344590051,
+      "n_within_pairs": 1419,
+      "n_between_pairs": 111,
+      "n_paragraphs": 258,
+      "n_qualifying_folios": 23
+    },
+    "T": {
+      "within_diversity": 0.9564012026133237,
+      "between_diversity": 0.0,
+      "diff": 0.9564012026133237,
+      "ratio": "inf",
+      "n_within_pairs": 99,
+      "n_between_pairs": 0,
+      "n_paragraphs": 20,
+      "n_qualifying_folios": 2
+    }
+  },
+  "verdicts": {
+    "T1": "NULL",
+    "T2": "NULL",
+    "T3": "CONTROL_PASS",
+    "T4": "PASS",
+    "T5": "EXPLORATORY"
+  },
+  "overall_verdict": "HYPOTHESIS NULL",
+  "interpretation": "No statistically significant dark-pipeline MIDDLE differentiation detected at paragraph level. The semantic ceiling (C171) may extend to paragraph granularity, or the effect is too small to detect with current sample size. Multi-material model remains plausible but unconfirmed by internal analysis."
+}

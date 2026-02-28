@@ -1,0 +1,392 @@
+{
+  "phase": 490,
+  "name": "PUFF_VOYNICH_STRUCTURAL_REVISIT",
+  "description": "Revisit of Puff-Voynich connection with modern structural tools. Tests whether Voynich folio profiles differentiate by plant material type from PPC blind morphological classification.",
+  "methodology": {
+    "assignment_source": "PPC blind morphological classification",
+    "assignment_method": "Pre-registered before test computation",
+    "significance_threshold": 0.0033,
+    "effect_size_threshold": 0.25,
+    "n_permutations": 10000,
+    "reordering_robust": true,
+    "reordering_note": "All tests are distributional, not positional. Results invariant to folio ordering."
+  },
+  "folio_assignments": {
+    "total_assigned": 21,
+    "total_excluded": 6,
+    "groups": {
+      "ROOT": 8,
+      "FLOWER": 7,
+      "HERB": 6
+    },
+    "assignments": {
+      "f26r": "ROOT",
+      "f26v": "ROOT",
+      "f31r": "ROOT",
+      "f34r": "ROOT",
+      "f39r": "ROOT",
+      "f41v": "ROOT",
+      "f43r": "ROOT",
+      "f55v": "ROOT",
+      "f33r": "FLOWER",
+      "f39v": "FLOWER",
+      "f40r": "FLOWER",
+      "f40v": "FLOWER",
+      "f46v": "FLOWER",
+      "f50r": "FLOWER",
+      "f50v": "FLOWER",
+      "f33v": "HERB",
+      "f41r": "HERB",
+      "f46r": "HERB",
+      "f48r": "HERB",
+      "f48v": "HERB",
+      "f55r": "HERB"
+    },
+    "exclusions": {
+      "f34v": "WOODY_SHRUB (only 1 folio, below minimum group size)",
+      "f31v": "COMPOSITE (ambiguous, 2 plants shown)",
+      "f43v": "COMPOSITE (ambiguous, multiple plant types)",
+      "f57r": "Not classified in PPC morphology study",
+      "f66r": "Not classified in PPC morphology study",
+      "f66v": "Not classified in PPC morphology study"
+    }
+  },
+  "puff_context": {
+    "total_chapters": 85,
+    "category_distribution": {
+      "FLOWER": 17,
+      "HERB": 42,
+      "TREE_FLOWER": 5,
+      "FERN": 1,
+      "SUCCULENT": 1,
+      "BULB": 1,
+      "VEGETABLE": 1,
+      "ROOT": 5,
+      "FRUIT": 1,
+      "SHRUB": 1,
+      "FUNGUS": 2,
+      "PARASITE": 1,
+      "TREE_LEAF": 1,
+      "VINE": 1,
+      "ANIMAL": 1,
+      "OIL": 1,
+      "LEGUME_FLOWER": 1,
+      "BERRY": 1,
+      "SPIRIT": 1
+    }
+  },
+  "test_D": {
+    "test": "D",
+    "name": "Category Distribution Matching",
+    "role": "PRIMARY",
+    "n_folios": 21,
+    "group_sizes": {
+      "ROOT": 8,
+      "FLOWER": 7,
+      "HERB": 6
+    },
+    "group_mean_profiles": {
+      "ROOT": {
+        "THERMAL": 0.1763,
+        "FLOW": 0.1609,
+        "TRANSITION": 0.1855,
+        "OPERATION": 0.1603,
+        "STAGING": 0.1363,
+        "CONTAINMENT": 0.0724,
+        "MARKING": 0.0921,
+        "MONITORING": 0.0162
+      },
+      "FLOWER": {
+        "THERMAL": 0.1431,
+        "FLOW": 0.2224,
+        "TRANSITION": 0.1776,
+        "OPERATION": 0.1469,
+        "STAGING": 0.1239,
+        "CONTAINMENT": 0.0798,
+        "MARKING": 0.0971,
+        "MONITORING": 0.009
+      },
+      "HERB": {
+        "THERMAL": 0.1641,
+        "FLOW": 0.18,
+        "TRANSITION": 0.1576,
+        "OPERATION": 0.1591,
+        "STAGING": 0.1099,
+        "CONTAINMENT": 0.1184,
+        "MARKING": 0.0942,
+        "MONITORING": 0.0167
+      }
+    },
+    "multivariate": {
+      "pseudo_F": 0.8999,
+      "eta_squared": 0.0909,
+      "p_value": 0.510149,
+      "n_permutations": 10000,
+      "significant": false,
+      "effect_sufficient": false
+    },
+    "per_category_kruskal_wallis": {
+      "THERMAL": {
+        "H_statistic": 0.6439,
+        "p_value": 0.738926,
+        "significant": false,
+        "group_means": {
+          "ROOT": 0.1763,
+          "FLOWER": 0.1431,
+          "HERB": 0.1641
+        }
+      },
+      "FLOW": {
+        "H_statistic": 3.2042,
+        "p_value": 0.208879,
+        "significant": false,
+        "group_means": {
+          "ROOT": 0.1609,
+          "FLOWER": 0.2224,
+          "HERB": 0.18
+        }
+      },
+      "TRANSITION": {
+        "H_statistic": 0.9532,
+        "p_value": 0.645535,
+        "significant": false,
+        "group_means": {
+          "ROOT": 0.1855,
+          "FLOWER": 0.1776,
+          "HERB": 0.1576
+        }
+      },
+      "OPERATION": {
+        "H_statistic": 0.661,
+        "p_value": 0.735026,
+        "significant": false,
+        "group_means": {
+          "ROOT": 0.1603,
+          "FLOWER": 0.1469,
+          "HERB": 0.1591
+        }
+      },
+      "STAGING": {
+        "H_statistic": 0.9185,
+        "p_value": 0.646335,
+        "significant": false,
+        "group_means": {
+          "ROOT": 0.1363,
+          "FLOWER": 0.1239,
+          "HERB": 0.1099
+        }
+      },
+      "CONTAINMENT": {
+        "H_statistic": 3.8072,
+        "p_value": 0.153085,
+        "significant": false,
+        "group_means": {
+          "ROOT": 0.0724,
+          "FLOWER": 0.0798,
+          "HERB": 0.1184
+        }
+      },
+      "MARKING": {
+        "H_statistic": 0.0654,
+        "p_value": 0.968803,
+        "significant": false,
+        "group_means": {
+          "ROOT": 0.0921,
+          "FLOWER": 0.0971,
+          "HERB": 0.0942
+        }
+      },
+      "MONITORING": {
+        "H_statistic": 2.3655,
+        "p_value": 0.30057,
+        "significant": false,
+        "group_means": {
+          "ROOT": 0.0162,
+          "FLOWER": 0.009,
+          "HERB": 0.0167
+        }
+      }
+    },
+    "pre_registered_predictions": {
+      "hits": 3,
+      "total": 4,
+      "hit_rate": 0.75,
+      "details": {
+        "FLOWER_THERMAL_elevated": {
+          "predicted": "above_grand_mean",
+          "group_mean": 0.1431,
+          "grand_mean": 0.1612,
+          "hit": false
+        },
+        "FLOWER_OPERATION_reduced": {
+          "predicted": "below_grand_mean",
+          "group_mean": 0.1469,
+          "grand_mean": 0.1554,
+          "hit": true
+        },
+        "ROOT_OPERATION_elevated": {
+          "predicted": "above_grand_mean",
+          "group_mean": 0.1603,
+          "grand_mean": 0.1554,
+          "hit": true
+        },
+        "ROOT_STAGING_elevated": {
+          "predicted": "above_grand_mean",
+          "group_mean": 0.1363,
+          "grand_mean": 0.1234,
+          "hit": true
+        }
+      }
+    },
+    "signal": false,
+    "verdict": "NULL"
+  },
+  "test_A": {
+    "test": "A",
+    "name": "Apparatus Profile Distributional Matching",
+    "role": "SECONDARY",
+    "n_folios": 21,
+    "group_sizes": {
+      "ROOT": 8,
+      "FLOWER": 7,
+      "HERB": 6
+    },
+    "group_mean_profiles": {
+      "ROOT": {
+        "DISTILLATION": 0.160325,
+        "SEALED_VESSEL": 0.100144,
+        "DIRECT_FIRE": 0.01327,
+        "PRECISION": 0.064665,
+        "SUSTAINED_HEAT": 0.1093
+      },
+      "FLOWER": {
+        "DISTILLATION": 0.120643,
+        "SEALED_VESSEL": 0.148393,
+        "DIRECT_FIRE": 0.018258,
+        "PRECISION": 0.049335,
+        "SUSTAINED_HEAT": 0.079567
+      },
+      "HERB": {
+        "DISTILLATION": 0.118054,
+        "SEALED_VESSEL": 0.099416,
+        "DIRECT_FIRE": 0.020714,
+        "PRECISION": 0.070733,
+        "SUSTAINED_HEAT": 0.089064
+      }
+    },
+    "multivariate": {
+      "pseudo_F": 1.6249,
+      "eta_squared": 0.1529,
+      "p_value": 0.151685,
+      "n_permutations": 10000,
+      "significant": false,
+      "effect_sufficient": false
+    },
+    "per_apparatus_kruskal_wallis": {
+      "DISTILLATION": {
+        "H_statistic": 1.7256,
+        "p_value": 0.433457,
+        "significant": false,
+        "group_means": {
+          "ROOT": 0.160325,
+          "FLOWER": 0.120643,
+          "HERB": 0.118054
+        }
+      },
+      "SEALED_VESSEL": {
+        "H_statistic": 3.2185,
+        "p_value": 0.20228,
+        "significant": false,
+        "group_means": {
+          "ROOT": 0.100144,
+          "FLOWER": 0.148393,
+          "HERB": 0.099416
+        }
+      },
+      "DIRECT_FIRE": {
+        "H_statistic": 1.7635,
+        "p_value": 0.434557,
+        "significant": false,
+        "group_means": {
+          "ROOT": 0.01327,
+          "FLOWER": 0.018258,
+          "HERB": 0.020714
+        }
+      },
+      "PRECISION": {
+        "H_statistic": 2.2913,
+        "p_value": 0.331667,
+        "significant": false,
+        "group_means": {
+          "ROOT": 0.064665,
+          "FLOWER": 0.049335,
+          "HERB": 0.070733
+        }
+      },
+      "SUSTAINED_HEAT": {
+        "H_statistic": 4.3494,
+        "p_value": 0.112289,
+        "significant": false,
+        "group_means": {
+          "ROOT": 0.1093,
+          "FLOWER": 0.079567,
+          "HERB": 0.089064
+        }
+      }
+    },
+    "pre_registered_predictions": {
+      "hits": 1,
+      "total": 5,
+      "hit_rate": 0.2,
+      "details": {
+        "FLOWER_DISTILLATION_elevated": {
+          "predicted": "above_grand_mean",
+          "group_mean": 0.120643,
+          "grand_mean": 0.133007,
+          "hit": false
+        },
+        "FLOWER_DIRECT_FIRE_reduced": {
+          "predicted": "below_grand_mean",
+          "group_mean": 0.018258,
+          "grand_mean": 0.017414,
+          "hit": false
+        },
+        "HERB_DISTILLATION_elevated": {
+          "predicted": "above_grand_mean",
+          "group_mean": 0.118054,
+          "grand_mean": 0.133007,
+          "hit": false
+        },
+        "ROOT_SUSTAINED_HEAT_elevated": {
+          "predicted": "above_grand_mean",
+          "group_mean": 0.1093,
+          "grand_mean": 0.092644,
+          "hit": true
+        },
+        "ROOT_DIRECT_FIRE_elevated": {
+          "predicted": "above_grand_mean",
+          "group_mean": 0.01327,
+          "grand_mean": 0.017414,
+          "hit": false
+        }
+      }
+    },
+    "signal": false,
+    "verdict": "NULL"
+  },
+  "test_B": {
+    "test": "B",
+    "name": "Three-Way Triangulation",
+    "role": "CONDITIONAL",
+    "skipped": true,
+    "skip_reason": "Test D showed no signal; Test A showed no signal",
+    "verdict": "SKIPPED"
+  },
+  "overall": {
+    "verdict": "CEILING_CONFIRMED",
+    "interpretation": "No material-type differentiation in operational category profiles. The early evidential ceiling is confirmed with modern structural tools. Puff connection remains suggestive but not structurally diagnostic.",
+    "D_signal": false,
+    "A_signal": false,
+    "B_signal": false
+  }
+}

@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,209 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,220 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -224,7 +224,7 @@ In A, sister pairs ch and sh are category-identical (C1268, V=0.021) — the dis
 A and B share vocabulary but not structure:
 
 - **No entry-level coupling**: A entries don't map to specific B folios through simple lookup
-- **Shared vocabulary pool**: A and B draw from a common vocabulary (69.8% overlap at the type level), but neither references the other
+- **Shared vocabulary pool**: A and B draw from a common vocabulary (69.8% of B tokens use vocabulary shared with A), but neither references the other
 - **Massive filtering**: Where vocabulary overlaps, morphological compatibility rules restrict co-occurrence so heavily that 94.7%–99.2% of combinations are excluded
 
 The most likely relationship is **construction-time, not runtime**: A served as a reference vocabulary when the B programs were originally written. The author consulted A's discrimination index, checked AZC's positional classification, and composed B programs from that vocabulary. Once written, B programs are fixed and self-contained — there is no active "compilation" from A data during execution. A may also have served as a lookup reference for an operator encountering an unfamiliar token while running a procedure.
@@ -517,6 +517,8 @@ Certain questions are structurally unanswerable from the manuscript's grammar:
 
 These are not gaps in the analysis. They are properties of the system: a control grammar that works precisely because it is domain-general.
 
+The remaining questions — authorship, specific materials, precise token-to-operation mappings — will likely be resolved through **archival research** (uncatalogued guild records, apothecary inventories, and teaching manuscripts from early 15th-century Central Europe) and **domain expertise** from historians of distillation or practitioners familiar with pre-industrial reflux technique. The computational analysis has narrowed the search space; the answers themselves are probably sitting in an archive in Vienna, Prague, or the Upper Rhine.
+
 ---
 
 ## Falsified Hypotheses
@@ -536,11 +538,11 @@ These interpretations have been structurally ruled out:
 
 ## How This Analysis Was Built
 
-This project was built using AI-assisted computational analysis over 477 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
+This project was built using AI-assisted computational analysis over 491 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
 
 The central methodological innovation is a **progressive context system**: a growing body of numbered, tiered, validated constraints that accumulates across research phases and is always available to the AI agents performing analysis. Every finding that survives statistical testing becomes a permanent constraint. Every falsified hypothesis is permanently closed. Each new phase starts with full knowledge of everything that came before.
 
-This matters because no single analytical session — human or AI — could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, 8 cross-system operational categories, and the Brunschwig alignment in one pass. But 477 phases, each building on validated prior work and never losing what was already proven, could. The constraint system is the project's memory, and its growth is what made the depth of analysis possible.
+This matters because no single analytical session — human or AI — could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, 8 cross-system operational categories, and the Brunschwig alignment in one pass. But 491 phases, each building on validated prior work and never losing what was already proven, could. The constraint system is the project's memory, and its growth is what made the depth of analysis possible.
 
 For technical details on the progressive context architecture, see the Methodology section in `README.md`.
 
@@ -559,6 +561,7 @@ For technical details on the progressive context architecture, see the Methodolo
 | See paragraph structure contract | `context/STRUCTURAL_CONTRACTS/paragraph.psc.yaml` |
 | See the Brunschwig comparison | `context/SPECULATIVE/brunschwig_comparison.md` |
 | See the Rupescissa/Galenic comparison | `context/SPECULATIVE/rupescissa_comparative.md` |
+| See the historical network | `phases/HISTORICAL_NETWORK/HISTORICAL_NETWORK.md` |
 | Run the core analysis library | `scripts/voynich.py` (see `CLAUDE.md` for examples) |
 | View a decoded folio | `python scripts/show_b_folio.py f76r -p` (paragraph view) |
 | View control flow | `python scripts/show_b_folio.py f76r --flow` (macro states + FL stages) |

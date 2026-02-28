@@ -1,0 +1,21 @@
+{
+  "predictions": {
+    "T1": "within > between for all MIDDLEs",
+    "T2": "within > between for dark-pipeline MIDDLEs (KEY TEST)",
+    "T3": "within = between for bridge MIDDLEs (CONTROL)",
+    "T4": "header diversity > body diversity within folio"
+  },
+  "falsifier": "T2 observed_within <= observed_between",
+  "thresholds": {
+    "p_threshold": 0.0025,
+    "min_ratio": 1.15,
+    "n_permutations": 10000,
+    "min_tokens_per_para": 5,
+    "min_paras_per_folio": 3
+  },
+  "sample": {
+    "n_folios": 72,
+    "n_paragraphs": 552,
+    "skipped_folios": 10
+  }
+}

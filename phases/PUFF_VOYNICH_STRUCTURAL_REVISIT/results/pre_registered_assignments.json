@@ -1,0 +1,87 @@
+{
+  "phase": 490,
+  "pre_registration": true,
+  "description": "Folio-to-material-type assignments based on PPC blind morphological classification",
+  "source": "phases/PPC_program_plant_correlation/plant_morphology_classification.md",
+  "assignments": {
+    "f26r": "ROOT",
+    "f26v": "ROOT",
+    "f31r": "ROOT",
+    "f34r": "ROOT",
+    "f39r": "ROOT",
+    "f41v": "ROOT",
+    "f43r": "ROOT",
+    "f55v": "ROOT",
+    "f33r": "FLOWER",
+    "f39v": "FLOWER",
+    "f40r": "FLOWER",
+    "f40v": "FLOWER",
+    "f46v": "FLOWER",
+    "f50r": "FLOWER",
+    "f50v": "FLOWER",
+    "f33v": "HERB",
+    "f41r": "HERB",
+    "f46r": "HERB",
+    "f48r": "HERB",
+    "f48v": "HERB",
+    "f55r": "HERB"
+  },
+  "excluded": {
+    "f34v": "WOODY_SHRUB (only 1 folio, below minimum group size)",
+    "f31v": "COMPOSITE (ambiguous, 2 plants shown)",
+    "f43v": "COMPOSITE (ambiguous, multiple plant types)",
+    "f57r": "Not classified in PPC morphology study",
+    "f66r": "Not classified in PPC morphology study",
+    "f66v": "Not classified in PPC morphology study"
+  },
+  "group_sizes": {
+    "ROOT": 8,
+    "FLOWER": 7,
+    "HERB": 6
+  },
+  "predictions_D": {
+    "FLOWER": {
+      "elevated": [
+        "THERMAL"
+      ],
+      "reduced": [
+        "OPERATION"
+      ]
+    },
+    "HERB": {
+      "elevated": [],
+      "reduced": []
+    },
+    "ROOT": {
+      "elevated": [
+        "OPERATION",
+        "STAGING"
+      ],
+      "reduced": []
+    }
+  },
+  "predictions_A": {
+    "FLOWER": {
+      "elevated": [
+        "DISTILLATION"
+      ],
+      "reduced": [
+        "DIRECT_FIRE"
+      ]
+    },
+    "HERB": {
+      "elevated": [
+        "DISTILLATION"
+      ],
+      "reduced": []
+    },
+    "ROOT": {
+      "elevated": [
+        "SUSTAINED_HEAT",
+        "DIRECT_FIRE"
+      ],
+      "reduced": []
+    }
+  },
+  "reordering_note": "All tests are distributional, not positional. Results invariant to folio binding order."
+}

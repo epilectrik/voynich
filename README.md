@@ -11,7 +11,7 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 | Metric | Value |
 |--------|-------|
 | Validated constraints | 1,220 |
-| Research phases completed | 489 |
+| Research phases completed | 491 |
 | Model fits tested | 75 |
 | Constraint tiers | 0 (frozen fact) through 4 (exploratory) |
 
@@ -87,12 +87,24 @@ Key alignments:
 - **Sensory modalities**: Both use categorical sensory tests without instruments
 - **Illustration anchoring**: Root-emphasized plant illustrations correlate with POUND/CHOP operations (r = 0.366, p = 0.0007)
 
+## Historical Context
+
+The manuscript's radiocarbon date (1404-1438) and known provenance chain place it within a specific intellectual network centered on Vienna, Northern Italy, and the Upper Rhine. Phase 491 maps this network: 58 persons, 98 edges, and 16 contemporary cipher parallels across the Voynich's temporal-geographic zone.
+
+Key findings:
+- **Cipher use was normal** in this zone — Giovanni Fontana (c.1420) used invented glyphs, the *Buch der heiligen Dreifaltigkeit* (c.1410) encrypted alchemical knowledge, and the *Alchymey Teuczsch* (1426) is a full cipher manuscript
+- **Selective encryption of commercially valuable knowledge** was standard practice among apothecaries and distillers
+- **Brunschwig's 1512 publication** explicitly marks the transition from secrecy to openness ("*geoffenbart*" — revealed/made public)
+- **The Vienna medical faculty** (c.1400-1440) sits at the intersection of all structural, temporal, and domain evidence
+
+Full documentation: [`phases/HISTORICAL_NETWORK/HISTORICAL_NETWORK.md`](phases/HISTORICAL_NETWORK/HISTORICAL_NETWORK.md)
+
 ## What This Project Does NOT Claim
 
 - Specific product or material identities (semantic ceiling: C171)
 - Natural language meanings for any token
 - Historical identity of the author
-- That illustrations carry semantic content (C138: illustrations are epiphenomenal)
+- That illustrations carry semantic content (C138: illustrations do not constrain text)
 - Token-level "translation" — operational roles are not word meanings
 
 ## Falsified Hypotheses
@@ -151,7 +163,7 @@ voynich/
     SPECULATIVE/      # Tier 3-4 interpretations
   data/               # Transcript, dictionaries, Brunschwig recipes
   scripts/            # voynich.py core library + analysis tools
-  phases/             # 487 completed research phases
+  phases/             # 491 completed research phases
   results/            # Legacy analysis outputs (early phases; new results go in phases/)
   folio_analysis/     # Per-folio hazard maps
   annotation_data/    # Folio annotation work
@@ -165,8 +177,8 @@ voynich/
 | Tier | Meaning | Count |
 |------|---------|-------|
 | 0 | FROZEN FACT — proven, do not reopen | 25 |
-| 1 | FALSIFICATION — rejected, do not retry | 15 |
-| 2 | STRUCTURAL — high-confidence, bounded | 1,133 |
+| 1 | FALSIFICATION — rejected, do not retry | 16 |
+| 2 | STRUCTURAL — high-confidence, bounded | 1,142 |
 | 3 | SPECULATIVE — interpretive layer | 35 |
 | 4 | EXPLORATORY — idea generation only | 2 |
 
@@ -184,7 +196,7 @@ The system works as follows:
 
 2. **Constraints are tiered by confidence.** Tier 0 constraints are frozen facts that cannot be reopened. Tier 1 constraints are falsified hypotheses that cannot be retried. Tier 2 constraints are high-confidence structural findings. Tiers 3-4 are speculative or exploratory. This prevents the system from drifting backward or re-deriving known results.
 
-3. **Context is always loaded.** Every new analysis session begins with the full constraint system available. The AI doesn't start from scratch — it starts from everything that has already been proven, disproven, or established. This means phase 477 benefits from all constraints accumulated across the previous phases.
+3. **Context is always loaded.** Every new analysis session begins with the full constraint system available. The AI doesn't start from scratch — it starts from everything that has already been proven, disproven, or established. This means phase 491 benefits from all constraints accumulated across the previous phases.
 
 4. **Structural contracts provide fast lookup.** As the constraint count grew, key subsystems were summarized into API-like contracts (YAML files) that encode the essential properties of each manuscript layer in a single file. These contracts are the "shallow API" — check the contract first, drill into individual constraints only when needed.
 
@@ -201,6 +213,16 @@ This architecture is what allowed the project to reach conclusions that would be
 Transcript: EVA (Extensible Voynich Alphabet) interlinear format, H transcriber track (primary). 37,957 tokens across 225 folios.
 
 The Voynich Manuscript is held by the Beinecke Rare Book & Manuscript Library, Yale University (MS 408). The manuscript and all transcript data are in the public domain.
+
+## Where the Answers Likely Are
+
+Computational analysis has established what the manuscript encodes (a control system grammar for thermodynamic process control) and what it does not encode (natural language, cipher, or glossolalia). But the questions that remain — who wrote it, what specific materials are being processed, and how the notation maps to specific operations — are beyond the reach of internal structural analysis. The grammar was designed to work without encoding that information.
+
+The next breakthroughs will likely come from two directions:
+
+- **Uncatalogued archives.** The manuscript's provenance chain passes through Central European medical faculties, apothecary guilds, and court collections from the early 15th century. Many archives in Vienna, Prague, Padua, and the Upper Rhine region contain uncatalogued material from this period — guild records, apothecary inventories, teaching manuscripts, and private correspondence. A single confirmed parallel notation system or explicit reference to encoded distillation knowledge would transform the analysis.
+
+- **External distillation domain expertise.** The structural findings describe a specific control grammar — 49 instruction classes, 5 hazard classes, 3 kernel operators, bounded recovery architecture. A practicing distiller, historical chemist, or process engineer familiar with pre-industrial reflux distillation may recognize operational patterns that computational analysis can identify structurally but cannot name. The [folio decoder](scripts/DECODER.md) renders any Currier B folio with full structural annotation for domain expert review.
 
 ## License
 

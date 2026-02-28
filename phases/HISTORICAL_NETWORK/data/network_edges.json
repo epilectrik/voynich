@@ -1,0 +1,1033 @@
+{
+  "_metadata": {
+    "phase": "HISTORICAL_NETWORK",
+    "phase_number": 491,
+    "status": "ONGOING",
+    "description": "Directed edges connecting persons and works in the network",
+    "last_updated": "2026-02-27",
+    "id_scheme": "E### where ### is sequential",
+    "edge_types": [
+      "teacher_of",
+      "student_of",
+      "authored",
+      "printed_by",
+      "cites_work",
+      "source_for",
+      "colleague_at",
+      "collaborated_with",
+      "patron_of",
+      "edited_expanded",
+      "translated_adapted",
+      "contemporary_at",
+      "institutional_pipeline",
+      "same_printer",
+      "co_bound_manuscript",
+      "combined_published"
+    ]
+  },
+  "edges": [
+    {
+      "id": "E001",
+      "type": "teacher_of",
+      "from": "P004",
+      "from_name": "William of Saliceto",
+      "to": "P005",
+      "to_name": "Lanfranchi of Milan",
+      "date": "c.1260s-1270s",
+      "location": "Bologna",
+      "evidence": "Lanfranchi trained under Saliceto at Bologna before exile to France",
+      "sources": ["Encyclopedia.com"]
+    },
+    {
+      "id": "E002",
+      "type": "authored",
+      "from": "P005",
+      "from_name": "Lanfranchi of Milan",
+      "to": "W001",
+      "to_name": "Chirurgia Magna",
+      "date": "1296",
+      "location": "Paris"
+    },
+    {
+      "id": "E003",
+      "type": "authored",
+      "from": "P007",
+      "from_name": "John of Rupescissa",
+      "to": "W002",
+      "to_name": "De consideratione quintae essentiae",
+      "date": "c.1351-1352",
+      "location": "Avignon (prison)"
+    },
+    {
+      "id": "E004",
+      "type": "authored",
+      "from": "P014",
+      "from_name": "Michael Puff von Schrick",
+      "to": "W003",
+      "to_name": "Buchlein von den ausgebrannten Wassern",
+      "date": "c.1455",
+      "location": "Vienna"
+    },
+    {
+      "id": "E005",
+      "type": "authored",
+      "from": "P018",
+      "from_name": "Hieronymus Brunschwig",
+      "to": "W004",
+      "to_name": "Liber de arte distillandi de simplicibus (Small Book)",
+      "date": "1500",
+      "location": "Strasbourg"
+    },
+    {
+      "id": "E006",
+      "type": "authored",
+      "from": "P018",
+      "from_name": "Hieronymus Brunschwig",
+      "to": "W005",
+      "to_name": "Liber de arte distillandi de compositis (Large Book)",
+      "date": "1512",
+      "location": "Strasbourg"
+    },
+    {
+      "id": "E007",
+      "type": "authored",
+      "from": "P018",
+      "from_name": "Hieronymus Brunschwig",
+      "to": "W006",
+      "to_name": "Buch der Chirurgia",
+      "date": "1497",
+      "location": "Strasbourg"
+    },
+    {
+      "id": "E008",
+      "type": "source_for",
+      "from": "W003",
+      "from_name": "Buchlein von den ausgebrannten Wassern (Puff)",
+      "to": "W004",
+      "to_name": "Small Book (Brunschwig)",
+      "evidence": "Brunschwig acknowledged Puff as his main source for the Small Book",
+      "sources": ["PMC (Taape)"]
+    },
+    {
+      "id": "E009",
+      "type": "source_for",
+      "from": "W003",
+      "from_name": "Buchlein von den ausgebrannten Wassern (Puff)",
+      "to": "W005",
+      "to_name": "Large Book (Brunschwig)",
+      "evidence": "Puff remained primary practical source for expanded Large Book"
+    },
+    {
+      "id": "E010",
+      "type": "source_for",
+      "from": "W002",
+      "from_name": "De consideratione quintae essentiae (Rupescissa)",
+      "to": "W005",
+      "to_name": "Large Book (Brunschwig)",
+      "evidence": "1/3 of quintessence chapters derived from Rupescissa; cited 7+ times by name",
+      "sources": ["PMC (Taape)"]
+    },
+    {
+      "id": "E011",
+      "type": "printed_by",
+      "from": "P019",
+      "from_name": "Johann Gruninger",
+      "to": "W004",
+      "to_name": "Small Book (Brunschwig)",
+      "date": "1500",
+      "location": "Strasbourg"
+    },
+    {
+      "id": "E012",
+      "type": "printed_by",
+      "from": "P019",
+      "from_name": "Johann Gruninger",
+      "to": "W005",
+      "to_name": "Large Book (Brunschwig)",
+      "date": "1512",
+      "location": "Strasbourg"
+    },
+    {
+      "id": "E013",
+      "type": "printed_by",
+      "from": "P019",
+      "from_name": "Johann Gruninger",
+      "to": "W006",
+      "to_name": "Buch der Chirurgia (Brunschwig)",
+      "date": "1497",
+      "location": "Strasbourg"
+    },
+    {
+      "id": "E014",
+      "type": "printed_by",
+      "from": "P019",
+      "from_name": "Johann Gruninger",
+      "to": "W010",
+      "to_name": "Antidotarius animae (Salicetus)",
+      "date": "1489",
+      "location": "Strasbourg"
+    },
+    {
+      "id": "E015",
+      "type": "same_printer",
+      "from": "P018",
+      "from_name": "Hieronymus Brunschwig",
+      "to": "P020",
+      "to_name": "Nicolaus Salicetus",
+      "via": "P019 (Johann Gruninger)",
+      "evidence": "Both published by Gruninger in Strasbourg within 11 years (1489-1500)"
+    },
+    {
+      "id": "E016",
+      "type": "colleague_at",
+      "from": "P014",
+      "from_name": "Michael Puff von Schrick",
+      "to": "P016",
+      "to_name": "Johannes de Ketham",
+      "location": "University of Vienna (medical faculty)",
+      "date": "c.1455-1470",
+      "evidence": "Both on Vienna medical faculty simultaneously; Puff was Dean 11 times"
+    },
+    {
+      "id": "E017",
+      "type": "colleague_at",
+      "from": "P014",
+      "from_name": "Michael Puff von Schrick",
+      "to": "P034",
+      "to_name": "Johannes Tichtel",
+      "location": "University of Vienna (medical faculty)",
+      "date": "c.1463-1473",
+      "evidence": "Tichtel enrolled in medicine 1463; Puff was Dean through 1470; overlapping years"
+    },
+    {
+      "id": "E018",
+      "type": "institutional_pipeline",
+      "from": "P011",
+      "from_name": "Galeazzo di Santa Sofia",
+      "to": "P014",
+      "to_name": "Michael Puff von Schrick",
+      "location": "University of Vienna",
+      "date": "1404-1435",
+      "evidence": "Galeazzo brought Padua medical traditions to Vienna (first dissection 1404); Puff entered faculty c.1435. Direct institutional transmission even if no personal overlap — the curriculum and methods Galeazzo established shaped the environment Puff worked in"
+    },
+    {
+      "id": "E019",
+      "type": "teacher_of",
+      "from": "P026",
+      "from_name": "Georg Peuerbach",
+      "to": "P027",
+      "to_name": "Regiomontanus",
+      "location": "University of Vienna",
+      "date": "c.1450s",
+      "evidence": "Regiomontanus studied under Peuerbach at Vienna"
+    },
+    {
+      "id": "E020",
+      "type": "institutional_pipeline",
+      "from": "P027",
+      "from_name": "Regiomontanus",
+      "to_type": "location",
+      "to": "Padua",
+      "date": "1464",
+      "evidence": "Regiomontanus lectured at University of Padua in 1464; demonstrates active Vienna-Padua academic exchange"
+    },
+    {
+      "id": "E021",
+      "type": "collaborated_with",
+      "from": "P021",
+      "from_name": "Nicholas Jankowitz",
+      "to": "P022",
+      "to_name": "Michael von Prapach",
+      "date": "1426",
+      "location": "eastern Bavaria (Passau region)",
+      "evidence": "Co-authors of the Alchymey Teuczsch cipher manuscript"
+    },
+    {
+      "id": "E022",
+      "type": "collaborated_with",
+      "from": "P021",
+      "from_name": "Nicholas Jankowitz",
+      "to": "P023",
+      "to_name": "Michael Wulfing",
+      "date": "1426",
+      "location": "eastern Bavaria (Passau region)",
+      "evidence": "Co-authors of the Alchymey Teuczsch cipher manuscript"
+    },
+    {
+      "id": "E023",
+      "type": "authored",
+      "from": "P021",
+      "from_name": "Nicholas Jankowitz et al.",
+      "to": "W007",
+      "to_name": "Alchymey Teuczsch",
+      "date": "1426",
+      "location": "eastern Bavaria"
+    },
+    {
+      "id": "E024",
+      "type": "authored",
+      "from": "P024",
+      "from_name": "Giovanni Fontana",
+      "to": "W008",
+      "to_name": "Bellicorum instrumentorum liber",
+      "date": "c.1420",
+      "location": "Padua/Venice"
+    },
+    {
+      "id": "E025",
+      "type": "authored",
+      "from": "P024",
+      "from_name": "Giovanni Fontana",
+      "to": "W009",
+      "to_name": "Secretum de thesauro experimentorum ymaginationis hominum",
+      "date": "c.1430",
+      "location": "Padua/Venice"
+    },
+    {
+      "id": "E026",
+      "type": "authored",
+      "from": "P020",
+      "from_name": "Nicolaus Salicetus",
+      "to": "W010",
+      "to_name": "Antidotarius animae",
+      "date": "1489",
+      "location": "Alsace"
+    },
+    {
+      "id": "E027",
+      "type": "authored",
+      "from": "P006",
+      "from_name": "Ortolf von Baierland",
+      "to": "W011",
+      "to_name": "Arzneibuch",
+      "date": "c.1300",
+      "location": "Wurzburg"
+    },
+    {
+      "id": "E028",
+      "type": "authored",
+      "from": "P009",
+      "from_name": "Konrad von Megenberg",
+      "to": "W012",
+      "to_name": "Buch der Natur",
+      "date": "c.1350",
+      "location": "Regensburg"
+    },
+    {
+      "id": "E029",
+      "type": "authored",
+      "from": "P015",
+      "from_name": "Johannes Hartlieb",
+      "to": "W013",
+      "to_name": "Krauterbuch",
+      "date": "c.1440/1462"
+    },
+    {
+      "id": "E030",
+      "type": "authored",
+      "from": "P015",
+      "from_name": "Johannes Hartlieb",
+      "to": "W014",
+      "to_name": "Buch aller verbotenen Kunst",
+      "date": "1456"
+    },
+    {
+      "id": "E031",
+      "type": "authored",
+      "from": "P012",
+      "from_name": "Michele Savonarola",
+      "to": "W018",
+      "to_name": "Libreto de Aqua Ardente",
+      "date": "1444-1450",
+      "location": "Padua/Ferrara"
+    },
+    {
+      "id": "E032",
+      "type": "authored",
+      "from": "P013",
+      "from_name": "Nicolo Roccabonella",
+      "to": "W019",
+      "to_name": "Liber de simplicibus",
+      "date": "c.1445",
+      "location": "Padua"
+    },
+    {
+      "id": "E033",
+      "type": "authored",
+      "from": "P030",
+      "from_name": "Johann Wonnecke von Kaub",
+      "to": "W016",
+      "to_name": "Gart der Gesundheit",
+      "date": "1485",
+      "location": "Mainz"
+    },
+    {
+      "id": "E034",
+      "type": "authored",
+      "from": "P031",
+      "from_name": "Philipp Ulstad",
+      "to": "W017",
+      "to_name": "Coelum philosophorum",
+      "date": "1525",
+      "location": "Basel/Fribourg"
+    },
+    {
+      "id": "E035",
+      "type": "cites_work",
+      "from": "W017",
+      "from_name": "Coelum philosophorum (Ulstad)",
+      "to": "W002",
+      "to_name": "De consideratione quintae essentiae (Rupescissa)",
+      "evidence": "Ulstad synthesized the entire quintessence tradition including Rupescissa"
+    },
+    {
+      "id": "E036",
+      "type": "cites_work",
+      "from": "W017",
+      "from_name": "Coelum philosophorum (Ulstad)",
+      "to": "W004",
+      "to_name": "Small Book (Brunschwig)",
+      "evidence": "Ulstad drew on Brunschwig's practical distillation content"
+    },
+    {
+      "id": "E037",
+      "type": "co_bound_manuscript",
+      "from": "W001",
+      "from_name": "Chirurgia Magna (Lanfranchi)",
+      "to": "W002",
+      "to_name": "De consideratione quintae essentiae (Rupescissa)",
+      "via": "W020 (Erlangen MS B 3)",
+      "date": "1484",
+      "evidence": "Both texts copied into single manuscript Erlangen MS B 3 in German translation; proves surgery + alchemical distillation studied together"
+    },
+    {
+      "id": "E038",
+      "type": "combined_published",
+      "from": "W003",
+      "from_name": "Buchlein (Puff)",
+      "to": "W004",
+      "to_name": "Small Book (Brunschwig)",
+      "date": "1619",
+      "evidence": "Combined as 'Apoteck fur den gemeinen Mann' (1619) — recognized as complementary works"
+    },
+    {
+      "id": "E039",
+      "type": "edited_expanded",
+      "from": "P035",
+      "from_name": "Benedikt Planckh",
+      "to": "W003",
+      "to_name": "Buchlein (Puff)",
+      "date": "1553",
+      "evidence": "Transcribed and expanded Puff's work; cited additional sources"
+    },
+    {
+      "id": "E040",
+      "type": "edited_expanded",
+      "from": "P036",
+      "from_name": "Leonhardt Kargl",
+      "to": "W003",
+      "to_name": "Buchlein (Puff)",
+      "date": "1499",
+      "evidence": "Transcribed and amended Puff's work"
+    },
+    {
+      "id": "E041",
+      "type": "authored",
+      "from": "P016",
+      "from_name": "Johannes de Ketham",
+      "to": "W015",
+      "to_name": "Fasciculus medicinae",
+      "date": "1491",
+      "note": "Ketham was compiler/editor rather than original author; text is 6 independent medieval treatises"
+    },
+    {
+      "id": "E042",
+      "type": "contemporary_at",
+      "from": "P012",
+      "from_name": "Michele Savonarola",
+      "to": "P013",
+      "to_name": "Nicolo Roccabonella",
+      "location": "Padua",
+      "date": "c.1440s",
+      "evidence": "Both active at Padua medical faculty in the 1440s; Savonarola professor, Roccabonella physician"
+    },
+    {
+      "id": "E043",
+      "type": "contemporary_at",
+      "from": "P012",
+      "from_name": "Michele Savonarola",
+      "to": "P024",
+      "to_name": "Giovanni Fontana",
+      "location": "Padua",
+      "date": "c.1420s-1440s",
+      "evidence": "Both connected to Padua; Fontana took medical degree 1421, Savonarola was professor"
+    },
+    {
+      "id": "E044",
+      "type": "institutional_pipeline",
+      "from": "P003",
+      "from_name": "Peter of Abano",
+      "to": "P011",
+      "to_name": "Galeazzo di Santa Sofia",
+      "location": "University of Padua",
+      "date": "1300s",
+      "evidence": "Peter of Abano established the Padua medical-philosophical tradition that Galeazzo inherited and transmitted to Vienna; not direct student-teacher but institutional legacy"
+    },
+    {
+      "id": "E045",
+      "type": "institutional_pipeline",
+      "from": "P001",
+      "from_name": "Taddeo Alderotti",
+      "to": "P004",
+      "to_name": "William of Saliceto",
+      "location": "Bologna",
+      "date": "late 13th C",
+      "evidence": "Both at Bologna; Alderotti's distillation innovations and Saliceto's surgical tradition coexisted in same university"
+    },
+    {
+      "id": "E046",
+      "type": "patron_of",
+      "from_type": "institutional",
+      "from": "Philip IV of France",
+      "to": "P005",
+      "to_name": "Lanfranchi of Milan",
+      "evidence": "Chirurgia Magna dedicated to Philip IV"
+    },
+    {
+      "id": "E047",
+      "type": "patron_of",
+      "from_type": "institutional",
+      "from": "Duke Albrecht III of Bavaria-Munich",
+      "to": "P015",
+      "to_name": "Johannes Hartlieb",
+      "evidence": "Hartlieb served as court physician"
+    },
+    {
+      "id": "E048",
+      "type": "patron_of",
+      "from_type": "institutional",
+      "from": "Archduke Albrecht II of Austria",
+      "to": "P014",
+      "to_name": "Michael Puff von Schrick",
+      "evidence": "Puff was personal physician to Archduke"
+    },
+    {
+      "id": "E049",
+      "type": "source_for",
+      "from": "W011",
+      "from_name": "Arzneibuch (Ortolf)",
+      "to": "W003",
+      "to_name": "Buchlein (Puff)",
+      "evidence": "Ortolf's Arzneibuch was the foundational German medical text; Puff's work built on this tradition of vernacular medical writing"
+    },
+    {
+      "id": "E050",
+      "type": "institutional_pipeline",
+      "from": "P028",
+      "from_name": "Konrad Celtis",
+      "to_type": "location",
+      "to": "Vienna-Italy circuit",
+      "date": "1487-1497",
+      "evidence": "Celtis traveled through Padua, Ferrara, Bologna, Florence, Venice, Rome before appointment at Vienna (1497); humanist network parallels earlier medical network"
+    },
+    {
+      "id": "E051",
+      "type": "contemporary_at",
+      "from": "P024",
+      "from_name": "Giovanni Fontana",
+      "to": "P003",
+      "to_name": "Peter of Abano",
+      "location": "Padua",
+      "date": "institutional legacy",
+      "note": "Not personal contemporaries (Abano d.1316, Fontana fl.1420s), but Fontana explicitly studied within the tradition Abano established at Padua"
+    },
+    {
+      "id": "E052",
+      "type": "cites_work",
+      "from": "W005",
+      "from_name": "Large Book (Brunschwig)",
+      "to": "W001",
+      "to_name": "Chirurgia Magna (Lanfranchi)",
+      "evidence": "Brunschwig, as a surgeon-apothecary, drew on the Lanfranchi surgical tradition; his Chirurgia (1497) preceded his distillation works"
+    },
+    {
+      "id": "E053",
+      "type": "translated_adapted",
+      "from": "W002",
+      "from_name": "De consideratione quintae essentiae (Rupescissa)",
+      "to": "W020",
+      "to_name": "Erlangen MS B 3",
+      "date": "1484",
+      "evidence": "German translation of Rupescissa's quintessence text copied into this composite manuscript"
+    },
+    {
+      "id": "E054",
+      "type": "translated_adapted",
+      "from": "W001",
+      "from_name": "Chirurgia Magna (Lanfranchi)",
+      "to": "W020",
+      "to_name": "Erlangen MS B 3",
+      "date": "1484",
+      "evidence": "German translation (Chirurgia parva) copied into this composite manuscript"
+    },
+    {
+      "id": "E055",
+      "type": "institutional_pipeline",
+      "from": "P033",
+      "from_name": "Hartmann Schedel",
+      "to_type": "location",
+      "to": "Padua-Nuremberg",
+      "date": "1466",
+      "evidence": "Medical doctorate from Padua; his library documents the MS-to-print overlap period; Nuremberg was major printing center"
+    },
+    {
+      "id": "E056",
+      "type": "source_for",
+      "from": "W002",
+      "from_name": "De consideratione quintae essentiae (Rupescissa)",
+      "to": "W017",
+      "to_name": "Coelum philosophorum (Ulstad)",
+      "evidence": "Ulstad synthesized Rupescissa as theoretical foundation"
+    },
+    {
+      "id": "E057",
+      "type": "source_for",
+      "from": "W021",
+      "from_name": "Secretum Secretorum (pseudo-Aristotle)",
+      "to_type": "cultural",
+      "to": "15th C secrecy culture",
+      "evidence": "600+ Latin copies established the cultural norm that important knowledge = 'secrets'; the most widely copied 'secret knowledge' text of medieval period"
+    },
+    {
+      "id": "E058",
+      "type": "collaborated_with",
+      "from": "P021",
+      "from_name": "Niklas Jankowitz",
+      "to": "P037",
+      "to_name": "Friedrich",
+      "date": "1423",
+      "location": "eastern Bavaria",
+      "evidence": "Friedrich performed hands-on laboratory work for the gold multiplication experiment under Jankowitz's direction (Cpg 597, fol. 94v)"
+    },
+    {
+      "id": "E059",
+      "type": "institutional_pipeline",
+      "from": "P038",
+      "from_name": "Salman Teublein",
+      "to": "P021",
+      "to_name": "Niklas Jankowitz",
+      "date": "c.1415-1426",
+      "location": "eastern Bavaria (Passau region)",
+      "evidence": "Rec argues Jankowitz's circle were successors to Teublein; the manuscript binding is Teublein's secrecy diploma from the Landgraves of Leuchtenberg; direct knowledge transmission across the Jewish-Christian boundary"
+    },
+    {
+      "id": "E060",
+      "type": "patron_of",
+      "from_type": "institutional",
+      "from": "Landgraves of Leuchtenberg and Counts of Hals",
+      "to": "P038",
+      "to_name": "Salman Teublein",
+      "date": "c.1415",
+      "evidence": "Diploma required Teublein to keep his art secret; if leaving, must teach his three best procedures under oath and swear he withheld nothing; landgraves agreed never to reveal his secrets outside their family"
+    },
+    {
+      "id": "E061",
+      "type": "patron_of",
+      "from_type": "institutional",
+      "from": "Landgraves of Leuchtenberg and Counts of Hals",
+      "to": "P021",
+      "to_name": "Niklas Jankowitz",
+      "date": "c.1426",
+      "evidence": "Implied by the manuscript's binding being the Teublein diploma; the alchemist circle likely served the same patrons"
+    },
+    {
+      "id": "E062",
+      "type": "glossator_of",
+      "from": "P040",
+      "from_name": "Rupescissa Glossator (unidentified)",
+      "to": "W002",
+      "to_name": "De consideratione quintae essentiae (Rupescissa)",
+      "date": "before 1463",
+      "location": "Padua",
+      "evidence": "Brunschwig (1512) cites 'der glosierer uber Johannes Rupescissus' as his primary quintessence authority; this glossator publicly defended quintessence theory at Padua in 1463 (line 5400-5406)"
+    },
+    {
+      "id": "E063",
+      "type": "source_for",
+      "from": "P040",
+      "from_name": "Rupescissa Glossator",
+      "to": "W005",
+      "to_name": "Large Book (Brunschwig)",
+      "date": "1512",
+      "evidence": "Brunschwig almost never cites Rupescissa directly; nearly all quintessence citations go through 'der glosierer' — this glossator is Brunschwig's primary authority for the quintessence material (10+ citations)"
+    },
+    {
+      "id": "E064",
+      "type": "source_for",
+      "from": "P041",
+      "from_name": "Marsilio Ficino",
+      "to": "W005",
+      "to_name": "Large Book (Brunschwig)",
+      "date": "1512",
+      "evidence": "Brunschwig cites Ficino's De triplici vita 7+ times with specific book/chapter references; names Ficino alongside Arnoldus as a keeper of the Aurum potabile secret"
+    },
+    {
+      "id": "E065",
+      "type": "secret_keeper",
+      "from": "P002",
+      "from_name": "Arnald of Villanova",
+      "to_type": "knowledge",
+      "to": "Aurum potabile preparation",
+      "evidence": "Brunschwig (1512, lines 36023-36028): names Arnoldus and Ficino as keepers of the Aurum potabile secret, 'which one should keep in great safeguarding and concealment' — had not love compelled Brunschwig to reveal it"
+    },
+    {
+      "id": "E066",
+      "type": "secret_keeper",
+      "from": "P041",
+      "from_name": "Marsilio Ficino",
+      "to_type": "knowledge",
+      "to": "Aurum potabile preparation",
+      "evidence": "Same passage as E065; Ficino named alongside Arnoldus as custodian of the secret"
+    },
+    {
+      "id": "E067",
+      "type": "public_defense",
+      "from": "P040",
+      "from_name": "Rupescissa Glossator",
+      "to_type": "institutional",
+      "to": "University of Padua",
+      "date": "1463",
+      "evidence": "Brunschwig (1512, lines 5400-5406): 'in der disputatz... M. CCCC. sechtzig vnd dry iar / in der Universitet zu Padua / in einer offenbarlichen versamlung der artzet' — public academic defense of quintessence theory"
+    },
+    {
+      "id": "E068",
+      "type": "degree_promoter",
+      "from": "P011",
+      "from_name": "Galeazzo di Santa Sofia",
+      "to": "P024",
+      "to_name": "Giovanni Fontana",
+      "date": "1418-1421",
+      "location": "University of Padua",
+      "evidence": "Galeazzo served as one of Fontana's official degree promoters for his arts degree (1418) and medical degree (1421). This establishes a direct personal relationship between someone who had spent a decade at Vienna (1394-1405) and the only known Padua physician to create an invented cipher alphabet. Source: Treccani DBI entry for Fontana; Sparavigna (arXiv 1304.4588)."
+    },
+    {
+      "id": "E069",
+      "type": "at_vienna",
+      "from": "P011",
+      "from_name": "Galeazzo di Santa Sofia",
+      "to_type": "institutional",
+      "to": "University of Vienna / Austrian Court",
+      "date": "1394-1405",
+      "evidence": "Taught medicine at University of Vienna; personal physician to Duke Albrecht IV of Austria (d.1404). Performed first public anatomical dissection north of the Alps in Vienna in 1404. Source: University of Vienna 650plus, Wikipedia."
+    },
+    {
+      "id": "E070",
+      "type": "uncited_incorporation",
+      "from": "W003",
+      "from_name": "Buchlein (Puff)",
+      "to": "W004",
+      "to_name": "Small Book (Brunschwig)",
+      "date": "1500",
+      "evidence": "Modern scholars identified word-for-word incorporation of Puff's material into Brunschwig's 1500 Small Book without attribution. Puff is NOT cited by name in either the 1500 or 1512 Brunschwig books. The transmission chain is real but invisible at the citation level."
+    },
+    {
+      "id": "E071",
+      "type": "ownership",
+      "from": "P046",
+      "from_name": "Rudolf II",
+      "to": "P042",
+      "to_name": "Jacobus Horcicky de Tepenec",
+      "date": "c.1608",
+      "location": "Prague",
+      "evidence": "Rudolf likely gave the Voynich to Horcicky, possibly as partial payment for debts. Horcicky's erased signature 'Jacobi a Tepenecz' on fol. 1r (confirmed under UV) dates the transfer to after October 1608 (when Horcicky was ennobled with the 'de Tepenec' title)."
+    },
+    {
+      "id": "E072",
+      "type": "purchase",
+      "from": "P047",
+      "from_name": "Karl Widemann",
+      "to": "P046",
+      "to_name": "Rudolf II",
+      "date": "1599-03-01",
+      "location": "Prague",
+      "evidence": "Guzy (2022): 500 Taler (= 600 Rheinische Gulden) for 'etlich rare bucher'; only transaction out of 7,000 journal entries matching 600 gold coins. Geizkofler archives, Ludwigsburg. Matches the 600-ducat amount reported by Mnishovsky via Marci."
+    },
+    {
+      "id": "E073",
+      "type": "ownership",
+      "from": "P042",
+      "from_name": "Jacobus Horcicky de Tepenec",
+      "to": "P043",
+      "to_name": "Georg Baresch",
+      "date": "c.1622-1637",
+      "location": "Prague",
+      "evidence": "Horcicky died September 25, 1622. By 1637 Baresch had the manuscript for 'many years.' Both connected to the Clementinum. Missing Jesuit library mark on the Voynich suggests it did not pass through the Jesuit library. The path from Horcicky to Baresch is unconfirmed but the Clementinum connection is suggestive."
+    },
+    {
+      "id": "E074",
+      "type": "ownership",
+      "from": "P043",
+      "from_name": "Georg Baresch",
+      "to": "P044",
+      "to_name": "Jan Marek Marci",
+      "date": "c.1650-1662",
+      "location": "Prague",
+      "evidence": "Baresch bequeathed his alchemical library, including the Voynich, to his friend Marci. Marci's 1665 letter: 'This book, bequeathed to me by an intimate friend.'"
+    },
+    {
+      "id": "E075",
+      "type": "ownership",
+      "from": "P044",
+      "from_name": "Jan Marek Marci",
+      "to": "P045",
+      "to_name": "Athanasius Kircher",
+      "date": "1665",
+      "location": "Prague → Rome",
+      "evidence": "Marci's letter of August 19, 1665 (or 1666) accompanying the manuscript to the Collegio Romano. Via Jesuit mail system."
+    },
+    {
+      "id": "E076",
+      "type": "correspondence",
+      "from": "P043",
+      "from_name": "Georg Baresch",
+      "to": "P045",
+      "to_name": "Athanasius Kircher",
+      "date": "1637-1639",
+      "location": "Prague → Rome",
+      "evidence": "At least two letters (c. late 1637 via Theodor Moretus S.J.; April 27, 1639). First letter lost; second is earliest surviving mention of the Voynich manuscript (discovered by Zandbergen). Baresch described it as medical, herbal, and chemical."
+    },
+    {
+      "id": "E077",
+      "type": "patron_of",
+      "from": "P046",
+      "from_name": "Rudolf II",
+      "to": "P042",
+      "to_name": "Jacobus Horcicky de Tepenec",
+      "date": "1607-1612",
+      "evidence": "Rudolf appointed Horcicky as Imperial Chemist (1607), curator of botanical gardens, and personal physician. Ennobled him (1608). Horcicky lent Rudolf enormous sums and received the Melnik estate."
+    },
+    {
+      "id": "E078",
+      "type": "employed_by",
+      "from": "P047",
+      "from_name": "Karl Widemann",
+      "to_type": "person",
+      "to": "Edward Kelley",
+      "date": "1587-1588",
+      "location": "Prague",
+      "evidence": "Widemann worked as secretary to Edward Kelley at Rudolf II's court. This places the probable seller of the Voynich within the Prague alchemical circle."
+    },
+    {
+      "id": "E079",
+      "type": "housed_in",
+      "from": "P047",
+      "from_name": "Karl Widemann",
+      "to": "P048",
+      "to_name": "Leonhard Rauwolf",
+      "date": "after 1597",
+      "location": "Augsburg",
+      "evidence": "Widemann lived in Rauwolf's former house in Augsburg after Rauwolf's widow died (1597). He was Rauwolf's successor as city physician. Likely handled sale of Rauwolf's remaining books."
+    },
+    {
+      "id": "E080",
+      "type": "institutional_connection",
+      "from": "P042",
+      "from_name": "Jacobus Horcicky de Tepenec",
+      "to": "P043",
+      "to_name": "Georg Baresch",
+      "via": "Clementinum (Prague)",
+      "date": "1598-1622",
+      "evidence": "Both men were connected to the Clementinum: Horcicky studied and later died there (1598-1622); Baresch earned his BA (1602) and MA (1603) there. This institutional overlap provides a plausible transfer path for the manuscript."
+    },
+    {
+      "id": "E081",
+      "type": "reported_by",
+      "from": "P049",
+      "from_name": "Raphael Mnishovsky",
+      "to": "P044",
+      "to_name": "Jan Marek Marci",
+      "date": "before 1644",
+      "evidence": "Mnishovsky told Marci that Rudolf paid 600 ducats for the Voynich and that the author was believed to be Roger Bacon. Mnishovsky died in 1644; the information was at minimum 55 years old when Marci relayed it in 1665."
+    },
+    {
+      "id": "E082",
+      "type": "institutional_pipeline",
+      "from": "P051",
+      "from_name": "Hugo Blotius",
+      "to": "P046",
+      "to_name": "Rudolf II",
+      "date": "1583-1608",
+      "location": "Vienna → Prague",
+      "evidence": "Blotius facilitated transfers of alchemical and magical texts from the Viennese Hofbibliothek to Rudolf's personal collections in Prague. Documents an active institutional channel for manuscript transfer from Vienna to Prague."
+    },
+    {
+      "id": "E083",
+      "type": "institutional_pipeline",
+      "from": "P047",
+      "from_name": "Karl Widemann",
+      "to_type": "location",
+      "to": "Padua",
+      "date": "c.1575-1580",
+      "evidence": "Widemann studied at the University of Padua and obtained a doctorate. This places the probable seller of the Voynich at the central institution of our historical network, though a century after the manuscript's creation."
+    },
+    {
+      "id": "E084",
+      "type": "teacher_of",
+      "from": "P052",
+      "from_name": "Martin Schaffner",
+      "to": "P042",
+      "to_name": "Jacobus Horcicky de Tepenec",
+      "date": "c.1590-1598",
+      "location": "Cesky Krumlov (Jesuit seminary)",
+      "evidence": "Schaffner trained Horcicky in 'practical techniques such as distillation and the preparation of herbal remedies' at the Jesuit college pharmacy. Schaffner was born in Olomouc — the same city where Brunschwig's Czech translation was published in 1559."
+    },
+    {
+      "id": "E085",
+      "type": "teacher_of",
+      "from": "P053",
+      "from_name": "Guillaume Rondelet",
+      "to": "P048",
+      "to_name": "Leonhard Rauwolf",
+      "date": "1560-1562",
+      "location": "University of Montpellier",
+      "evidence": "Rauwolf studied medicine under Rondelet at Montpellier. Rondelet reportedly 'introduced alcohol in medicine as an antiseptic and diffused the technique of distillation.'"
+    },
+    {
+      "id": "E086",
+      "type": "teacher_of",
+      "from": "P053",
+      "from_name": "Guillaume Rondelet",
+      "to": "P054",
+      "to_name": "Carolus Clusius",
+      "date": "c.1551-1554",
+      "location": "University of Montpellier",
+      "evidence": "Clusius studied under Rondelet at Montpellier before Rauwolf. Both were part of a remarkable generation of Rondelet students who became leading European botanists."
+    },
+    {
+      "id": "E087",
+      "type": "correspondence",
+      "from": "P048",
+      "from_name": "Leonhard Rauwolf",
+      "to": "P054",
+      "to_name": "Carolus Clusius",
+      "date": "1565-1584+",
+      "evidence": "Long-term scholarly correspondence. Clusius visited Rauwolf in Augsburg (1565) to examine his herbaria and annotated/corrected plant names. In a letter dated September 7, 1584, Rauwolf asked Clusius to help find a buyer for his plant collections."
+    },
+    {
+      "id": "E088",
+      "type": "correspondence",
+      "from": "P048",
+      "from_name": "Leonhard Rauwolf",
+      "to": "P055",
+      "to_name": "Johann Aicholz",
+      "date": "1581+",
+      "location": "Augsburg → Vienna",
+      "evidence": "Aicholz reported to Camerarius on May 10, 1581 that he had received plant-care instructions from Rauwolf. Documents a connection between Rauwolf and the Vienna medical faculty — the same institution where Puff had been dean a century earlier."
+    },
+    {
+      "id": "E089",
+      "type": "colleague_at",
+      "from": "P054",
+      "from_name": "Carolus Clusius",
+      "to": "P055",
+      "to_name": "Johann Aicholz",
+      "date": "1573-1577",
+      "location": "Vienna",
+      "evidence": "Clusius lived with Aicholz during his time as prefect of the imperial botanical garden in Vienna under Maximilian II."
+    },
+    {
+      "id": "E090",
+      "type": "annotated",
+      "from": "P056",
+      "from_name": "Leonhart Fuchs",
+      "to": "P048",
+      "to_name": "Leonhard Rauwolf",
+      "date": "1563",
+      "location": "Tubingen",
+      "evidence": "Rauwolf visited Fuchs at Tubingen on his return from Italy. Fuchs extensively annotated Rauwolf's three herbarium volumes — one of Fuchs's final scholarly interactions before his death in 1566."
+    },
+    {
+      "id": "E091",
+      "type": "printed_by",
+      "from": "P057",
+      "from_name": "Johann Bamler",
+      "to": "W003",
+      "to_name": "Buchlein (Puff)",
+      "date": "1476-1477",
+      "location": "Augsburg",
+      "evidence": "FIRST PRINTED EDITION of Puff's distillation manual was produced in Augsburg — the same city where Rauwolf would serve as city physician a century later and where Widemann would sell books to Rudolf II."
+    },
+    {
+      "id": "E092",
+      "type": "institutional_pipeline",
+      "from": "P002",
+      "from_name": "Arnald of Villanova",
+      "to": "P053",
+      "to_name": "Guillaume Rondelet",
+      "location": "University of Montpellier",
+      "date": "institutional legacy (c.1300 → 1550s)",
+      "evidence": "Arnald of Villanova established the distillation tradition at Montpellier (c.1300). Rondelet inherited this institutional legacy and reportedly 'diffused the technique of distillation.' Not direct student-teacher but institutional continuity across 250 years at the same university."
+    },
+    {
+      "id": "E093",
+      "type": "herbaria_sale",
+      "from": "P048",
+      "from_name": "Leonhard Rauwolf",
+      "to": "P046",
+      "to_name": "Rudolf II",
+      "date": "1593",
+      "evidence": "Rauwolf sold his Levantine herbarium volumes directly to Rudolf II for 310 Reichstaler. These volumes were later looted by Swedish troops in the 1648 sack of Prague."
+    },
+    {
+      "id": "E094",
+      "type": "circumstantial_link",
+      "from": "W004",
+      "from_name": "Small Book (Brunschwig, Czech trans. 1559)",
+      "to": "P052",
+      "to_name": "Martin Schaffner",
+      "date": "1559-1590s",
+      "location": "Olomouc",
+      "evidence": "Brunschwig's Kleines Destillierbuch was published in Czech in 1559 in Olomouc (translated by Jan Jevicky Cerny, printed by Jan Gunther). Schaffner was born in Olomouc c.1564 — five years after this publication. Schaffner later trained Horcicky in distillation. No direct evidence Schaffner used this text, but the geographic and professional overlap is strong."
+    },
+    {
+      "id": "E095",
+      "type": "circumstantial_link",
+      "from": "W004",
+      "from_name": "Small Book (Brunschwig)",
+      "to": "P042",
+      "to_name": "Jacobus Horcicky de Tepenec",
+      "date": "c.1590s-1607",
+      "evidence": "Brunschwig's Senf (mustard) entry (fol. 109v) describes distilling mustard seeds after vinegar maceration. Horcicky's commercial product was Aqua Sinapis (distilled mustard water). Puff's Büchlein has NO mustard chapter. The Brunschwig-Horcicky connection through mustard distillation is circumstantial but specific. No surviving Horcicky recipe for comparison."
+    },
+    {
+      "id": "E096",
+      "type": "institutional_overlap",
+      "from": "P058",
+      "from_name": "Johannes von Gmunden",
+      "to": "P011",
+      "to_name": "Galeazzo di Santa Sofia",
+      "date": "1400-1405",
+      "evidence": "Gmunden enrolled at Vienna in 1400; Galeazzo taught medicine at Vienna until 1405. They overlapped at the university for 5 years. Galeazzo performed the first Viennese anatomical dissection in 1404, during Gmunden's student years. As an Arts student, Gmunden would have been in the same institutional environment as the medical faculty's most prominent Italian professor."
+    },
+    {
+      "id": "E097",
+      "type": "institutional_predecessor",
+      "from": "P058",
+      "from_name": "Johannes von Gmunden",
+      "to": "P026",
+      "to_name": "Georg Peuerbach",
+      "date": "1442-1446",
+      "evidence": "Gmunden died in 1442, bequeathing his astronomical/mathematical manuscripts and instruments to the University of Vienna. Peuerbach enrolled in 1446. There were NO astronomy professors during Peuerbach's student years — Gmunden's bequeathed library and instruments sustained the tradition across the 4-year gap. Peuerbach built directly on Gmunden's foundation to create the 'First Viennese School of Mathematics' (named by Tannstetter, 1514)."
+    },
+    {
+      "id": "E098",
+      "type": "institutional_overlap",
+      "from": "P058",
+      "from_name": "Johannes von Gmunden",
+      "to": "P014",
+      "to_name": "Michael Puff von Schrick",
+      "date": "c.1420-1442",
+      "evidence": "Puff was born c.1400-1401 and first appears as Dean of the Medical Faculty in 1435, meaning he was at Vienna as a student and then faculty member from roughly the early 1420s. Gmunden was a senior Arts faculty master throughout this period (Dean 1423, Vice-chancellor after 1425). Puff would have studied natural philosophy (Physica, Meteorologica) under Arts faculty masters like Gmunden before entering the Medical faculty. The theoretical foundation for Puff's distillation work — elements, qualities, transformation — was taught in the Arts faculty that Gmunden dominated."
+    }
+  ]
+}

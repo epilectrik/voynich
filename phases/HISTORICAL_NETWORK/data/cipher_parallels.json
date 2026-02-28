@@ -1,0 +1,452 @@
+{
+  "_metadata": {
+    "phase": "HISTORICAL_NETWORK",
+    "phase_number": 491,
+    "status": "ONGOING",
+    "description": "Cipher manuscripts and coded writing systems from the Voynich's temporal-geographic zone (c.1350-1530, Northern Italy / Southern Germany / Austria / Alsace / Switzerland)",
+    "last_updated": "2026-02-27",
+    "id_scheme": "CP### where ### is sequential",
+    "relevance_scale": "VERY_HIGH = same region + period + content domain; HIGH = 2 of 3 match; MEDIUM = 1 of 3 match + interesting parallel; LOW = contextual only"
+  },
+  "cipher_manuscripts": [
+    {
+      "id": "CP001",
+      "name": "Alchymey Teuczsch",
+      "date": "1426",
+      "region": "eastern Bavaria (Passau area)",
+      "language": "German + 3 cipher alphabets",
+      "content_type": "alchemical",
+      "cipher_type": "substitution (3 different alphabets)",
+      "cipher_details": {
+        "num_alphabets": 3,
+        "type": "invented symbol alphabets (monoalphabetic substitution)",
+        "selective_encryption": true,
+        "what_is_encrypted": "alchemical formulas, gold multiplication procedures, transmutation recipes",
+        "what_is_clear": "medical recipes, astrological calendar, magical spells/incantations, Cisioianus",
+        "encryption_logic": "Only knowledge with commercial or competitive value is encrypted; general knowledge remains readable",
+        "cipher_key": "Provided on fol. 1r, later struck through to prevent easy access",
+        "authors_statement": "We ourselves created this new alphabet so that one would not recognize it as an alphabet",
+        "decknamen_layer": "Additional word-level encoding beyond cipher: gold = gelbe Erde (yellow earth), silver = weisse Erde (white earth), saltpeter = Salzstein (salt stone)",
+        "vulnerability": "Breakable via word endings (common German suffixes remain identifiable in cipher text)",
+        "deciphered_by": "Gerhard Eis (published 1957)"
+      },
+      "authors": ["Niklas Jankowitz (P021)", "Michael von Prapach (P022)", "Michael Wulfing (P023)", "Friedrich (P037, lab assistant)"],
+      "person_ids": ["P021", "P022", "P023", "P037"],
+      "work_id": "W007",
+      "shelfmark": "Heidelberg, UB, Cod. Pal. germ. 597 (Cpg 597)",
+      "digital_facsimile": "https://digi.ub.uni-heidelberg.de/diglit/cpg597",
+      "predecessor_tradition": "Likely successors to Jewish alchemist Salman Teublein (P038); manuscript binding is a diploma concerning Teublein's obligation to keep his art secret",
+      "voynich_relevance": "VERY_HIGH",
+      "voynich_parallels": [
+        "Same geographic zone (Bavaria vs. Voynich radiocarbon provenance)",
+        "Same period (1426 vs. 1404-1438 radiocarbon)",
+        "Alchemical-pharmaceutical content domain",
+        "Multiple cipher alphabets (Voynich has no known alphabet)",
+        "German-language base text",
+        "Selective encryption of commercially valuable knowledge",
+        "Group authorship (3+ collaborators)"
+      ],
+      "voynich_differences": [
+        "Alchymey Teuczsch uses simple substitution (deciphered by Eis 1951); Voynich resists all decipherment",
+        "Alchymey Teuczsch has clear-text sections; Voynich is entirely in its script",
+        "Alchymey Teuczsch includes cipher key (fol. 1r, struck through); Voynich has no key",
+        "No botanical illustrations in Alchymey Teuczsch",
+        "Alchymey Teuczsch is paper; Voynich is vellum",
+        "Known authors vs. unknown author"
+      ],
+      "key_references": [
+        "Wattenbach, 'Alchymey teuczsch', Anzeiger fur Kunde der deutschen Vorzeit 16 (1869), cols. 264-268",
+        "Eis, 'Von der Rede und dem Schweigen der Alchemisten', Deutsche Vierteljahrsschrift 25 (1951), pp. 415-435",
+        "Bischoff, 'Ubersicht uber die nichtdiplomatischen Geheimschriften des Mittelalters', MIOG 62 (1954)",
+        "Rec, 'Ciphers and Secrecy Among the Alchemists', Societas Magica Newsletter 31 (2014), pp. 1-6",
+        "Rec, 'Jewish Alchemists in Central Europe', Speculum (c.2018)",
+        "Lang/Zotov/Piorko, 'Sources of Alchemical Cryptography', HistoCrypt 2024",
+        "Kalning/Miller/Zimmermann, Die Codices Palatini germanici (Harrassowitz, 2014)"
+      ],
+      "research_status": "COMPLETE — full details documented"
+    },
+    {
+      "id": "CP002",
+      "name": "Bellicorum instrumentorum liber (Giovanni Fontana)",
+      "date": "c.1420",
+      "region": "Padua/Venice",
+      "language": "Latin + substitution cipher (invented signs)",
+      "content_type": "technical/military/medical",
+      "cipher_type": "simple substitution with invented glyphs",
+      "cipher_details": {
+        "num_alphabets": 1,
+        "selective_encryption": true,
+        "what_is_encrypted": "detailed technical descriptions",
+        "what_is_clear": "first sentence of each description in Latin",
+        "glyph_design": "Invented signs — no letters or numbers used in cipher portions",
+        "difficulty": "Relatively easy to read by design; suggests concealment from casual readers, not serious cryptographic security"
+      },
+      "authors": ["Giovanni Fontana (P024)"],
+      "person_ids": ["P024"],
+      "work_id": "W008",
+      "shelfmark": "Bayerische Staatsbibliothek, BSB Cod.icon. 242",
+      "voynich_relevance": "VERY_HIGH",
+      "voynich_parallels": [
+        "Padua physician — exact institutional and geographic match",
+        "Exact radiocarbon overlap (c.1420 vs. 1404-1438)",
+        "Invented glyph system — not standard alphabet substitution",
+        "Selective encryption pattern (clear text + cipher text mixed)",
+        "Technical/scientific content domain",
+        "Fontana held both arts and medical degrees from Padua"
+      ],
+      "voynich_differences": [
+        "Fontana's cipher is simple substitution (decipherable); Voynich is not",
+        "Fontana's cipher was designed to be relatively easy to read",
+        "Fontana's subject matter is military/technical, not botanical/pharmaceutical",
+        "Fontana provides Latin clear-text headers; Voynich has no clear text"
+      ],
+      "key_references": ["Voynich Portal", "Cipher Mysteries (Pelling)", "Battisti & Saccaro Battisti, Le macchine cifrate di Giovanni Fontana (1984)"]
+    },
+    {
+      "id": "CP003",
+      "name": "Secretum de thesauro experimentorum ymaginationis hominum (Giovanni Fontana)",
+      "date": "c.1430",
+      "region": "Padua/Venice",
+      "language": "Latin + substitution cipher",
+      "content_type": "mnemonic/memory systems",
+      "cipher_type": "same substitution system as CP002",
+      "authors": ["Giovanni Fontana (P024)"],
+      "person_ids": ["P024"],
+      "work_id": "W009",
+      "voynich_relevance": "HIGH",
+      "voynich_parallels": [
+        "Same author as CP002 — establishes a pattern of cipher use by a Padua physician",
+        "Mnemonic/memory system content — connects to knowledge organization",
+        "Title includes 'Secretum' — explicit secrecy framing"
+      ],
+      "key_references": ["Voynich Portal"]
+    },
+    {
+      "id": "CP004",
+      "name": "Buch der heiligen Dreifaltigkeit",
+      "date": "c.1410-1419 (archetype)",
+      "region": "Southern Germany or Austria (Franciscan)",
+      "language": "German",
+      "content_type": "alchemical",
+      "cipher_type": "cipher grids + allegorical encoding",
+      "cipher_details": {
+        "selective_encryption": true,
+        "encryption_logic": "Cipher grids appear within an allegorical framework (alchemical process = Passion of Christ); first alchemical text in German",
+        "num_copies": "Multiple 15th-century copies survive"
+      },
+      "authors": ["Frater Ulmannus (pseudonym, German Franciscan)"],
+      "shelfmarks": [
+        "Berlin, Staatsbibliothek, Cod. 78 A 11 (archetype, 1410-1419)",
+        "Heidelberg, UB, Cpg 843 Fasc. 3",
+        "Munich, BSB, Cgm 598 (after 1467)",
+        "St. Gallen, Kantonsbibl., VadSlg Ms. 428 (1488)"
+      ],
+      "voynich_relevance": "HIGH",
+      "voynich_parallels": [
+        "Southern Germany/Austria origin — same region",
+        "Exact period overlap (1410-1419 vs. 1404-1438)",
+        "Alchemical content with cipher elements",
+        "German-language base text",
+        "Franciscan authorship — mendicant order with alchemical interests"
+      ],
+      "voynich_differences": [
+        "Primarily allegorical rather than systematic cipher",
+        "Religious-alchemical content (not pharmaceutical/botanical)",
+        "Cipher grids are limited elements within larger clear text"
+      ],
+      "key_references": ["Wikipedia: Buch der heiligen Dreifaltigkeit", "Labyrinth Designers study"]
+    },
+    {
+      "id": "CP005",
+      "name": "Mellon MS 27 (Alchemical Miscellany)",
+      "date": "15th-16th century",
+      "region": "German-speaking lands",
+      "language": "German + Latin + cipher",
+      "content_type": "alchemical recipes (some medical)",
+      "cipher_type": "substitution cipher for selected recipes",
+      "cipher_details": {
+        "selective_encryption": true,
+        "what_is_encrypted": "Selected alchemical recipes",
+        "what_is_clear": "Other recipes in standard German/Latin",
+        "num_scripts": "5+ different scripts plus cipher passages",
+        "notable_folio": "f.23r contains cipher passage",
+        "later_additions": "16th-century cipher additions by Martin Roesel"
+      },
+      "shelfmark": "New Haven, Yale, Beinecke Library, Mellon MS 27",
+      "voynich_relevance": "HIGH",
+      "voynich_parallels": [
+        "German-speaking origin, 15th century",
+        "Same repository as Voynich (Beinecke Library)",
+        "Selective encryption of alchemical content",
+        "Multiple scribal hands — collaborative/accumulated knowledge",
+        "Mix of medical and alchemical recipes"
+      ],
+      "key_references": ["Rec, Societas Magica Newsletter 31 (2014)", "Beinecke pre-1600 MS catalog"]
+    },
+    {
+      "id": "CP006",
+      "name": "Tranchedino Cipher Ledger",
+      "date": "c.1475 (covers 1450-1496)",
+      "region": "Milan (Sforza Chancery)",
+      "language": "Italian + cipher",
+      "content_type": "diplomatic cipher key compilation",
+      "cipher_type": "~300 cipher keys: homophones, nomenclators, nulls, syllable substitutions",
+      "cipher_details": {
+        "num_keys": "~300",
+        "features": ["homophonic substitution", "nomenclators", "nulls", "syllable substitutions"],
+        "context": "Working reference manual for the Sforza chancellery's diplomatic encryption"
+      },
+      "shelfmark": "Vienna, ONB, Cod. Vindob. 2398",
+      "voynich_relevance": "MEDIUM",
+      "voynich_parallels": [
+        "Now held in Vienna (ONB) — same library as many Voynich-era manuscripts",
+        "Demonstrates sophisticated Northern Italian cipher culture during Voynich period",
+        "The Milanese system was the most advanced in Europe by 1450"
+      ],
+      "voynich_differences": [
+        "Diplomatic, not scientific/medical",
+        "Standard alphabet-based substitution systems",
+        "State-level infrastructure, not individual practitioner"
+      ],
+      "key_references": ["Ziereis Facsimiles", "Springer: Deciphering the Diplomatic Archives of 15th-C Italy"]
+    },
+    {
+      "id": "CP007",
+      "name": "Gabriele de Lavinde Papal Ciphers",
+      "date": "1379",
+      "region": "Avignon (Lavinde from Parma)",
+      "language": "Latin + cipher",
+      "content_type": "diplomatic (papal)",
+      "cipher_type": "first documented nomenclator: monoalphabetic substitution + nulls + two-letter word codes",
+      "cipher_details": {
+        "num_keys": 24,
+        "for_correspondents": "24 separate keys for 24 correspondents",
+        "innovation": "First documented nomenclator system in European history"
+      },
+      "voynich_relevance": "MEDIUM",
+      "voynich_parallels": [
+        "Avignon connection — same city where Rupescissa wrote (imprisoned)",
+        "Predates Voynich by ~25-50 years; establishes that cipher was routine in papal circles",
+        "Shows cipher culture was embedded in the same institutional networks as alchemical knowledge"
+      ],
+      "key_references": ["Britannica: Gabriele de Lavinde", "Kahn, The Codebreakers"]
+    },
+    {
+      "id": "CP008",
+      "name": "Mantua Homophonic Cipher (Francesco I Gonzaga)",
+      "date": "1401",
+      "region": "Mantua, Northern Italy",
+      "language": "Italian + cipher",
+      "content_type": "diplomatic",
+      "cipher_type": "earliest known homophonic substitution",
+      "cipher_details": {
+        "method": "Reversed alphabet (A→Z, B→Y, etc.) + multiple homophonic shapes per vowel (~4 each)",
+        "correspondents": "Simeone de Crema, King of Hungary"
+      },
+      "voynich_relevance": "MEDIUM",
+      "voynich_parallels": [
+        "Northern Italy, exact radiocarbon overlap (1401 vs. 1404-1438)",
+        "Earliest homophonic substitution — relevant to Voynich entropy properties",
+        "Gonzaga connection to Hungarian court (King of Hungary) — later Voynich provenance touches Hungary"
+      ],
+      "key_references": ["Cipher Mysteries: Fifteenth Century Cryptography"]
+    },
+    {
+      "id": "CP009",
+      "name": "Paolo Guinigi Cipher Archive",
+      "date": "1401-1439",
+      "region": "Lucca, Tuscany",
+      "language": "Italian + mixed cipher systems",
+      "content_type": "diplomatic",
+      "cipher_type": "mixed characters, letters, numbers; includes 'Greek alphabet' key",
+      "cipher_details": {
+        "num_keys": 74,
+        "earliest_enciphered_letters": "1404",
+        "features": "Artistically inventive cipher key designs; monoalphabetic with nomenclature",
+        "notable": "Greek alphabet key shared with Antonio de Giglis"
+      },
+      "shelfmark": "Archivio di Stato di Lucca, Governo da Paolo Guinigi, Codex No. 5",
+      "voynich_relevance": "MEDIUM",
+      "voynich_parallels": [
+        "74 keys from 1401-1439 — exact Voynich period",
+        "Earliest enciphered letters from 1404 — exact radiocarbon start date",
+        "Artistically inventive glyph designs (not just letter substitution)",
+        "Italian city-state context"
+      ],
+      "key_references": ["Cipher Mysteries: Paolo Guinigi and Ciphers (Pelling, 2020)"]
+    },
+    {
+      "id": "CP010",
+      "name": "Cicco Simonetta, Regulae ad extrahendum",
+      "date": "1474",
+      "region": "Pavia/Milan",
+      "language": "Latin",
+      "content_type": "cryptanalysis treatise",
+      "cipher_type": "not a cipher — first European cryptanalysis manual",
+      "cipher_details": {
+        "num_rules": 13,
+        "methods": "Vowel identification, common short word patterns, q-u digraph rule",
+        "note": "Does NOT include frequency analysis — that comes later"
+      },
+      "voynich_relevance": "LOW",
+      "voynich_parallels": [
+        "Demonstrates that by 1474, cipher-breaking was a recognized professional skill in Northern Italy",
+        "If the Voynich was created in this environment, its creator may have been aware of cryptanalysis and designed accordingly"
+      ],
+      "key_references": ["Cipher Foundation", "Wikipedia: Cicco Simonetta"]
+    },
+    {
+      "id": "CP011",
+      "name": "Leon Battista Alberti, De componendis cifris",
+      "date": "1466-1467",
+      "region": "Rome (Alberti was Florentine)",
+      "language": "Latin",
+      "content_type": "cryptographic theory",
+      "cipher_type": "first Western cryptography treatise; polyalphabetic substitution; cipher disk",
+      "cipher_details": {
+        "innovation": "Alberti Cipher Disk — two concentric rotating disks implementing polyalphabetic substitution with mixed alphabets",
+        "note": "Circulated as manuscript until first printing 1568"
+      },
+      "voynich_relevance": "MEDIUM",
+      "voynich_parallels": [
+        "Italian intellectual context",
+        "Polyalphabetic substitution — relevant to Voynich statistical properties",
+        "Manuscript circulation only until 1568 — knowledge was restricted"
+      ],
+      "key_references": ["Wikipedia: Alberti Cipher", "CMU Libraries"]
+    },
+    {
+      "id": "CP012",
+      "name": "Johannes Trithemius, Steganographia",
+      "date": "c.1499 (written); 1606 (printed)",
+      "region": "Sponheim, Germany",
+      "language": "Latin",
+      "content_type": "cryptographic/steganographic treatise disguised as angel magic",
+      "cipher_type": "polyalphabetic substitution + steganographic methods",
+      "cipher_details": {
+        "structure": "Books I-II disguise cipher as angel-summoning rituals; Book III also contains cryptographic material (proven by Jim Reeds, 1998)",
+        "cultural_significance": "First book-length treatment of cryptography; deliberately disguised as occult text"
+      },
+      "voynich_relevance": "MEDIUM",
+      "voynich_parallels": [
+        "German-speaking region",
+        "Deliberate disguise of cryptographic content as something else",
+        "Connects secrecy traditions to occult/magical framing",
+        "Influenced by earlier traditions including Bacon and Secretum Secretorum"
+      ],
+      "key_references": ["Wikipedia: Steganographia", "Reeds, Cryptologia (1998)"]
+    },
+    {
+      "id": "CP013",
+      "name": "Alchemical Decknamen tradition",
+      "date": "continuous, 14th-15th centuries",
+      "region": "pan-European, heavy in German-speaking lands",
+      "language": "Latin, German",
+      "content_type": "alchemical",
+      "cipher_type": "systematic pseudonyms (not true cipher)",
+      "cipher_details": {
+        "method": "Coded nomenclature — systematic pseudonyms for substances, processes, and the elixir",
+        "examples": "Green lion = vitriol; red lion = cinnabar/mercury sulfide; etc.",
+        "distinction": "Professional jargon and deliberate obfuscation, not letter-level cipher",
+        "prevalence": "Ubiquitous in 15th-century alchemical manuscripts"
+      },
+      "voynich_relevance": "HIGH",
+      "voynich_parallels": [
+        "Same knowledge domain (alchemical/pharmaceutical)",
+        "Demonstrates that concealment was NORMAL in this field",
+        "Word-level encoding rather than letter-level — potentially relevant to Voynich token structure",
+        "Commercially motivated secrecy (protect valuable formulas)"
+      ],
+      "key_references": ["Lang, Heritage of Alchemical Cryptography (2019)", "Lang, Situating Ciphers Among Alchemical Techniques of Secrecy (HistoCrypt)", "Rec, Societas Magica (2014)"]
+    },
+    {
+      "id": "CP014",
+      "name": "Codex Rohonczi",
+      "date": "paper 1530s (Venetian); text date uncertain",
+      "region": "Rohonc/Rechnitz (Austria-Hungary border)",
+      "language": "unknown (~200 unique symbols)",
+      "content_type": "uncertain (possibly religious)",
+      "cipher_type": "unknown code system",
+      "cipher_details": {
+        "num_symbols": "~200 unique",
+        "pages": 448,
+        "illustrations": "87, including religious scenes",
+        "status": "Undeciphered; possibly 18th-century hoax"
+      },
+      "shelfmark": "Budapest, Library of the Hungarian Academy of Sciences",
+      "voynich_relevance": "LOW",
+      "voynich_parallels": [
+        "Undeciphered manuscript with unknown script",
+        "Venetian paper connection",
+        "Austria-Hungary border zone"
+      ],
+      "voynich_differences": [
+        "Likely post-Voynich (1530s paper at earliest)",
+        "Possibly a hoax",
+        "Religious rather than scientific content"
+      ],
+      "key_references": ["Benedek Lang, The Rohonc Code (Penn State UP, 2021)"]
+    },
+    {
+      "id": "CP015",
+      "name": "Roger Bacon, Epistola de secretis operibus",
+      "date": "c.1270s (widely copied 14th-15th C)",
+      "region": "England (origin); continental circulation",
+      "language": "Latin",
+      "content_type": "natural philosophy with cipher advocacy",
+      "cipher_type": "theoretical — describes 7 methods of concealing knowledge",
+      "cipher_details": {
+        "seven_methods": ["invented characters", "shorthand", "abbreviation", "mixed methods", "foreign language", "symbol systems", "other"],
+        "gunpowder_cipher": "Contains alleged anagram concealing gunpowder recipe (disputed)",
+        "principle": "Dangerous knowledge should be hidden from the vulgar but accessible to the wise"
+      },
+      "voynich_relevance": "HIGH",
+      "voynich_parallels": [
+        "Bacon was historically associated with the Voynich (Wilfrid Voynich's original attribution)",
+        "His advocacy for concealment provided intellectual justification for 15th-C cipher traditions",
+        "His Secretum Secretorum edition (~600 Latin copies) established the cultural norm that important knowledge = secrets",
+        "Widely copied in the same manuscript collections as alchemical texts"
+      ],
+      "key_references": ["Voynich Revisionist: Roger Bacon on Ciphers", "Wikipedia: Roger Bacon"]
+    },
+    {
+      "id": "CP016",
+      "name": "Konrad Kyeser, Bellifortis",
+      "date": "1402-1405",
+      "region": "Eichstatt, Bavaria",
+      "language": "Latin",
+      "content_type": "military technology + occult",
+      "cipher_type": "none (but relevant parallel)",
+      "cipher_details": {
+        "note": "NOT enciphered, but first fully illustrated manual of military technology; includes occult/magical content alongside technical material; parallels Fontana's approach"
+      },
+      "shelfmarks": ["University of Gottingen (original, 1405)", "Munich, BSB, Clm 30150"],
+      "voynich_relevance": "MEDIUM",
+      "voynich_parallels": [
+        "Bavaria, exact period (1402-1405 vs. 1404-1438)",
+        "Mix of technical and occult knowledge in illustrated manuscript",
+        "Written in exile (parallels secrecy/concealment motivation)",
+        "Contemporary of Fontana — same intersection of technical/military/magical"
+      ],
+      "key_references": ["Wikipedia: Konrad Kyeser"]
+    }
+  ],
+  "synthesis": {
+    "pattern_summary": "The Voynich manuscript was created during a period of intense cipher activity in its geographic zone. Between 1379-1499, we can document cipher use in at least 4 distinct domains: (1) diplomatic correspondence (Italian city-states, papacy), (2) alchemical manuscripts (Bavaria, German-speaking lands), (3) technical/medical treatises (Padua/Venice), and (4) theoretical cryptography (Alberti, Trithemius). The alchemical tradition is most relevant to the Voynich because it shares the same content domain, geographic zone, and selective-encryption logic.",
+    "key_observations": [
+      "SELECTIVE ENCRYPTION: Both the Alchymey Teuczsch and Fontana encrypt only the commercially/strategically valuable content, leaving general knowledge in clear text. The Voynich is entirely in its script — either everything was considered secret, or the system is not selective encryption.",
+      "INVENTED GLYPHS: Fontana and possibly others used invented signs rather than standard alphabet substitution. This is closer to the Voynich than simple letter-for-letter substitution.",
+      "DECKNAMEN vs CIPHER: The alchemical tradition used BOTH word-level encoding (Decknamen) and letter-level cipher. The Voynich's token structure (morphological regularity, limited MIDDLE vocabulary) may reflect word-level encoding rather than letter-level cipher.",
+      "COMMERCIAL MOTIVATION: The Alchymey Teuczsch selectively encrypts commercially valuable formulas. If the Voynich encodes distillation procedures (our working model), the same commercial motivation applies.",
+      "INSTITUTIONAL CONTEXT: Cipher use correlates with institutional power — diplomatic chanceries, university faculties, court physicians. The Voynich's author likely had institutional backing.",
+      "SECRECY-TO-OPENNESS TRANSITION: Brunschwig's 1512 'geoffenbart' (revealed) marks the moment when printed vernacular texts made formerly secret knowledge public. The Voynich may represent the pre-revelation period."
+    ],
+    "geographic_density": {
+      "padua_venice": ["Fontana (CP002, CP003)", "Savonarola", "Roccabonella"],
+      "bavaria": ["Alchymey Teuczsch (CP001)", "Buch der heiligen Dreifaltigkeit (CP004)", "Kyeser (CP016)"],
+      "milan": ["Visconti-Sforza ciphers (CP006)", "Simonetta (CP010)"],
+      "strasbourg": ["Brunschwig secrecy-to-openness", "Trithemius nearby"],
+      "vienna": ["Tranchedino ledger held at ONB (CP006)", "Puff institutional context"]
+    }
+  }
+}

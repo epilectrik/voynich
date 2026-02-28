@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1218 validated constraints | **Version:** 4.89 | **Date:** 2026-02-27
+**Total:** 1220 validated constraints | **Version:** 4.93 | **Date:** 2026-02-28
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4216,6 +4216,36 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - Reconciles C1117 (LTR at token level) with RTL at character level: different structural layers
 - Kernel transitions (C521) actually OPPOSE the RTL gradient (-10.3%), creating LTR bias for kernel pairs
 - No Phase 490 needed: no residual signal beyond grammar
+
+### Puff-Voynich Structural Revisit (C1377) -- Phase: PUFF_VOYNICH_STRUCTURAL_REVISIT (Phase 490)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1377** | **Puff-Voynich Structural Revisit (NULL)** (21 folios, 3 material types, category pseudo-F=0.90 p=0.51, apparatus pseudo-F=1.62 p=0.15; ceiling confirmed with modern tools) | 2 | B, Puff, material type, category, apparatus, NULL, ceiling | -> [C1377_puff_structural_revisit_null.md](C1377_puff_structural_revisit_null.md) |
+
+**Phase 490 findings (Puff-Voynich Structural Revisit):**
+- Revisits early Puff connection (v2.20-2.62) with 8-category profiles and 5-apparatus profiles
+- 21 Currier B herbal folios classified by PPC blind morphology (8 ROOT, 7 FLOWER, 6 HERB)
+- Pre-registered assignments, permutation-based p-values (10,000), Bonferroni p<0.0033
+- Test D (8 categories): pseudo-F=0.90, eta²=0.091, p=0.51 — ROOT/FLOWER/HERB indistinguishable
+- Test A (5 apparatus): pseudo-F=1.62, eta²=0.153, p=0.15 — no material-type differentiation
+- Test B (Puff→Brunschwig→REGIME triangulation): SKIPPED (requires D+A signal)
+- Early evidential ceiling CONFIRMED: Puff connection is not structurally diagnostic at folio level
+
+### Paragraph-Level Material Differentiation (C1378) -- Phase: PARAGRAPH_MATERIAL_DIFFERENTIATION (Phase 492)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1378** | **Paragraph-Level Material Differentiation (NULL)** (72 folios, dark-pipeline Jaccard within=0.972 between=0.963 ratio=1.009x p=0.98; header diversity PASS p=0.0001 ratio=1.11x; semantic ceiling extends to paragraph granularity) | 2 | B, paragraph, material, dark-pipeline, MIDDLE, NULL, header, ceiling | -> [C1378_paragraph_material_differentiation_null.md](C1378_paragraph_material_differentiation_null.md) |
+
+**Phase 492 findings (Paragraph-Level Material Differentiation):**
+- Tests whether paragraphs within a folio encode different plant materials (Brunschwig multi-material batch processing)
+- T1 (All MIDDLEs): NULL, within-folio paragraphs MORE similar (0.786 vs 0.719, p=0.997)
+- T2 (Dark-pipeline KEY TEST): NULL, near-identical within vs between (0.972 vs 0.963, p=0.980)
+- T3 (Bridge control): PASS — bridge vocabulary is folio-coherent as expected
+- T4 (Header vs body): PASS p=0.0001 — headers 1.11x more diverse than bodies (new finding)
+- T5 (Paragraph counts): Exploratory, section-driven (H=4.2, S=12.5)
+- Semantic ceiling (C171) confirmed at paragraph granularity; material identity irrecoverable
 
 ---
 

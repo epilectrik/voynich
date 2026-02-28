@@ -4,6 +4,60 @@
 
 ---
 
+## Version 4.93.81 (2026-02-28) - Phase 492: Paragraph-Level Material Differentiation (NULL)
+
+### Summary
+
+Phase 492 tests whether paragraphs within a folio encode different plant materials, motivated by Brunschwig's 6-still water bath and 15th-century multi-material batch processing. Pre-registered two-level prediction: category profiles converge (same apparatus), dark-pipeline MIDDLEs diverge (different materials). Result: dark-pipeline MIDDLEs are near-identical across paragraphs within a folio (Jaccard 0.972 vs 0.963, p=0.98). Semantic ceiling (C171) extends to paragraph granularity. Bonus finding: paragraph headers are 1.11x more diverse than bodies (p=0.0001), qualifying C855. New constraint C1378.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/PARAGRAPH_MATERIAL_DIFFERENTIATION/` -- Phase 492 directory |
+| **ADDED** | Phase 492 script and results (5 tests, 72 folios, 10K permutations) |
+| **ADDED** | C1378: Paragraph-level material differentiation (NULL result) |
+| **UPDATED** | INDEX.md -- +1 constraint (1220 total) |
+
+---
+
+## Version 4.92.80 (2026-02-27) - Phase 491: Historical Network (Initial Build)
+
+### Summary
+
+Phase 491 maps the intellectual network of persons, works, and institutions in the Voynich's temporal-geographic zone (c.1350-1530, N. Italy / S. Germany / Austria / Alsace). Initial build: 39 persons, 21 works, 61 edges, 16 cipher parallels. Key findings: (1) cipher use was normal in this zone (Alchymey Teuczsch 1426, Fontana c.1420, Buch der heiligen Dreifaltigkeit c.1410); (2) selective encryption of commercially valuable knowledge was standard; (3) Fontana used invented glyphs (not letter substitution) at exact Voynich radiocarbon date; (4) Brunschwig's 1512 "geoffenbart" marks explicit secrecy-to-openness transition. ONGOING phase — designed for incremental expansion.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/HISTORICAL_NETWORK/` -- Phase 491 directory |
+| **ADDED** | `data/network_persons.json` -- 39 persons (P001-P039) |
+| **ADDED** | `data/network_works.json` -- 21 works (W001-W021) |
+| **ADDED** | `data/network_edges.json` -- 61 edges (E001-E061) |
+| **ADDED** | `data/cipher_parallels.json` -- 16 cipher systems (CP001-CP016) |
+| **ADDED** | `HISTORICAL_NETWORK.md` -- main narrative with 3 clusters, 4 chains |
+| **ADDED** | `OPEN_QUESTIONS.md` -- 10 research threads, 4 priority levels |
+
+---
+
+## Version 4.91.79 (2026-02-27) - Phase 490: Puff-Voynich Structural Revisit (NULL)
+
+### Summary
+
+Phase 490 revisits the Puff-Voynich connection with modern structural tools (8-category profiles, 5-apparatus profiles, REGIME system). Uses blind PPC morphological classification to assign 21 Currier B herbal folios to 3 plant material groups (8 ROOT, 7 FLOWER, 6 HERB). Pre-registered, distributional (reordering-invariant), permutation-based. Result: both category profiles (p=0.51) and apparatus profiles (p=0.15) show NULL — no material-type differentiation. Early evidential ceiling confirmed. New constraint C1377.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/PUFF_VOYNICH_STRUCTURAL_REVISIT/` -- Phase 490 directory |
+| **ADDED** | Phase 490 script and results (3 tests, 21 folios, 10K permutations) |
+| **ADDED** | C1377: Puff-Voynich structural revisit (NULL result) |
+| **UPDATED** | INDEX.md -- +1 constraint (1219 total) |
+
+---
+
 ## Version 4.91.78 (2026-02-27) - Phase 488 T8: Lexicon Signal Decomposition
 
 ### Summary
