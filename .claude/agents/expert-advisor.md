@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-02-27 17:27
+**Generated:** 2026-02-27 18:25
 **Version:** FROZEN STATE (1218 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -1648,6 +1648,7 @@ C1372	**Thermodynamic Arc Validation**	2	B, line, category, positional, interpre
 C1373	**PREFIX Category-Position Decomposition**	2	B, PREFIX, line, category, positional, sister pair
 C1374	**Within-PREFIX MIDDLE Positional Selection**	2	B, PREFIX, MIDDLE, line, positional, category, sister pair
 C1375	**Hebrew Cipher Cross-Validation** (Gatta Hebrew cipher decode INCREASES entropy +0.218 bits DECREASES MI -0.755 bits opposite of decipherment; 0/8 categories show Hebrew coherence ratio=0.991; 1/35 PREFIXes match Hebrew morpheme; T2 class clustering z=-15.5 is morphological confound; 3/7 control program 1/7 cipher 3/7 ambiguous = STRONG FALSIFICATION at grammar layer)	2	B, cross-validation, external, cipher, Hebrew, information theory
+C1376	**Character-Level RTL Signal Is Grammar-Internal**	2	B, directionality, character-level, slot syntax, external, grammar
 
 ---
 

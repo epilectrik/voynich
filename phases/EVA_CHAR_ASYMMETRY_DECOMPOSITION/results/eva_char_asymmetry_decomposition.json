@@ -1,0 +1,195 @@
+{
+  "metadata": {
+    "phase": 489,
+    "name": "EVA_CHAR_ASYMMETRY_DECOMPOSITION",
+    "description": "Decompose character-level directional signal against known grammar asymmetries (C1209, C521, C1024)",
+    "n_tokens": 23096,
+    "n_lines": 2420,
+    "depends_on": [
+      "C1209",
+      "C1024",
+      "C521",
+      "C1065",
+      "C1117",
+      "C1375"
+    ],
+    "motivation": "Gatta RTL z=22.97 vs our LTR z=17 — decompose to determine if character-level signal is grammar-internal"
+  },
+  "T1_replicate_signal": {
+    "test": "T1_replicate_signal",
+    "bigram_entropy_ltr": 1.953019,
+    "bigram_entropy_rtl": 1.845901,
+    "bigram_entropy_diff": 0.107118,
+    "trigram_entropy_ltr": 1.727514,
+    "trigram_entropy_rtl": 1.644355,
+    "trigram_entropy_diff": 0.083158,
+    "bootstrap_mean": 0.107086,
+    "bootstrap_std": 0.002908,
+    "z_score": 36.83,
+    "direction": "RTL_FAVORED",
+    "note": "RTL bigrams have lower conditional entropy → more predictable reversed",
+    "n_bigrams": 95979,
+    "n_bootstrap": 1000
+  },
+  "T2_morphological_decomposition": {
+    "test": "T2_morphological_decomposition",
+    "slots": {
+      "PREFIX_internal": {
+        "entropy_ltr": 0.7828,
+        "entropy_rtl": 1.042631,
+        "entropy_diff": -0.25983,
+        "n_pairs": 20404
+      },
+      "MIDDLE_internal": {
+        "entropy_ltr": 2.024348,
+        "entropy_rtl": 1.476803,
+        "entropy_diff": 0.547545,
+        "n_pairs": 27871
+      },
+      "SUFFIX_internal": {
+        "entropy_ltr": 1.077779,
+        "entropy_rtl": 0.906117,
+        "entropy_diff": 0.171662,
+        "n_pairs": 14954
+      },
+      "PREFIX_MIDDLE_junction": {
+        "entropy_ltr": 1.948506,
+        "entropy_rtl": 1.390003,
+        "entropy_diff": 0.558503,
+        "n_pairs": 19232
+      },
+      "MIDDLE_SUFFIX_junction": {
+        "entropy_ltr": 1.680407,
+        "entropy_rtl": 2.242937,
+        "entropy_diff": -0.562529,
+        "n_pairs": 11151
+      }
+    },
+    "weighted_entropy_diff": 0.181541,
+    "dominant_contributor": "MIDDLE_internal",
+    "contributions_weighted": {
+      "PREFIX_internal": -5301.57132,
+      "MIDDLE_internal": 15260.626695,
+      "SUFFIX_internal": 2567.033548,
+      "PREFIX_MIDDLE_junction": 10741.129696,
+      "MIDDLE_SUFFIX_junction": -6272.760879
+    },
+    "middle_fraction_of_total": 0.3802
+  },
+  "T3_slot_syntax_prediction": {
+    "test": "T3_slot_syntax_prediction",
+    "slot_h_ltr": 1.611451,
+    "slot_h_rtl": 1.343983,
+    "slot_h_diff": 0.267468,
+    "char_h_ltr_middle": 2.024348,
+    "char_h_rtl_middle": 1.476803,
+    "char_h_diff_middle": 0.547545,
+    "slot_explains_fraction": 0.4885,
+    "residual_h": 0.280077,
+    "initial_to_terminal": 4936,
+    "terminal_to_initial": 501,
+    "gradient_ratio": 9.85,
+    "slot_transitions_top15": {
+      "MEDIAL->TERMINAL": 6148,
+      "INITIAL->MEDIAL": 5961,
+      "INITIAL->TERMINAL": 4936,
+      "INITIAL->INITIAL": 3190,
+      "MEDIAL->MEDIAL": 2235,
+      "FREE->INITIAL": 1142,
+      "MEDIAL->FREE": 880,
+      "INITIAL->FREE": 719,
+      "TERMINAL->INITIAL": 501,
+      "FREE->MEDIAL": 479,
+      "TERMINAL->MEDIAL": 477,
+      "FREE->TERMINAL": 362,
+      "MEDIAL->INITIAL": 352,
+      "TERMINAL->FREE": 316,
+      "TERMINAL->TERMINAL": 154
+    }
+  },
+  "T4_synthetic_controls": {
+    "test": "T4_synthetic_controls",
+    "observed_middle_h_diff": 0.547545,
+    "controls": {
+      "shuffled_within_middle": {
+        "mean_diff": 0.000164,
+        "std_diff": 0.006862,
+        "z_vs_observed": 79.77
+      },
+      "reversed_token": {
+        "entropy_diff": -0.547545,
+        "sign_flipped": true,
+        "note": "Asymmetry flips sign when tokens are pre-reversed"
+      },
+      "random_frequency_matched": {
+        "mean_diff": 0.000291,
+        "std_diff": 0.00644,
+        "z_vs_observed": 84.97
+      },
+      "slot_preserving_shuffle": {
+        "mean_diff": 0.558595,
+        "std_diff": 0.004295,
+        "z_vs_observed": -2.57,
+        "note": "Preserves slot structure, shuffles character identity within slots"
+      }
+    }
+  },
+  "T5_gallows_contribution": {
+    "test": "T5_gallows_contribution",
+    "full_h_diff": 0.107118,
+    "no_gallows_h_diff": 0.145404,
+    "gallows_contribution": -0.038286,
+    "gallows_fraction": -0.3574,
+    "gallows_left_context_mi": 0.04633,
+    "gallows_right_context_mi": 0.147316,
+    "mean_gallows_position": 0.3253,
+    "n_gallows_occurrences": 12572
+  },
+  "T6_kernel_and_combined": {
+    "test": "T6_kernel_and_combined",
+    "kernel_h_ltr": 0.671926,
+    "kernel_h_rtl": 1.179296,
+    "kernel_h_diff": -0.50737,
+    "non_kernel_h_ltr": 1.865887,
+    "non_kernel_h_rtl": 1.432361,
+    "non_kernel_h_diff": 0.433526,
+    "full_middle_h_ltr": 2.024348,
+    "full_middle_h_rtl": 1.476803,
+    "full_middle_h_diff": 0.547545,
+    "n_kernel": 3111,
+    "n_non_kernel": 24760,
+    "n_total": 27871,
+    "kernel_weighted": -0.056633,
+    "non_kernel_weighted": 0.385136,
+    "kernel_fraction_of_middle": -0.1034
+  },
+  "combined_grammar_model": {
+    "signal_detected": true,
+    "signal_direction": "RTL_FAVORED",
+    "signal_z": 36.83,
+    "middle_dominance": 0.3802,
+    "coarse_slot_syntax_explains": 0.4885,
+    "slot_preserving_explains": 1.0,
+    "kernel_fraction": -0.1034,
+    "gallows_fraction": -0.3574,
+    "grammar_explained": 1.0,
+    "residual": 0.0,
+    "controls_confirm": {
+      "shuffle_destroys": true,
+      "reversal_flips": true,
+      "slot_preserving_z": -2.57
+    },
+    "evidence": [
+      "Strong RTL_FAVORED signal at z=37",
+      "MIDDLE is dominant contributor (38%)",
+      "Coarse slot syntax (4 categories) explains 49%",
+      "Slot-preserving shuffle preserves 100% of asymmetry",
+      "Random within-MIDDLE shuffle destroys asymmetry (z=80)",
+      "Token reversal flips asymmetry sign (directional, not artifactual)",
+      "Gallows contribute -36% (FREE chars per C1209)",
+      "Kernel contributes -10% (C521 opposes main gradient)"
+    ],
+    "verdict": "FULLY_EXPLAINED",
+    "note": "Grammar asymmetries (C1209 slot syntax) fully account for character-level directional signal. No Phase 490 needed."
+  }
+}

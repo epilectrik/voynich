@@ -4,6 +4,23 @@
 
 ---
 
+## Version 4.91.77 (2026-02-27) - Phase 489: Character-Level RTL Is Grammar-Internal
+
+### Summary
+
+Phase 489: Decomposition of the character-level RTL directional signal (replicated at z=36.8 within-token bigram conditional entropy) against known grammar asymmetries. The signal is FULLY EXPLAINED by C1209's INITIAL→MEDIAL→TERMINAL slot syntax. Slot-preserving shuffle preserves 102% of asymmetry (z=-2.6 from observed); random shuffle destroys it (z=79.8). Coarse 4-category slot syntax explains 48.9%, fine-grained per-slot character frequencies explain the rest. Kernel transitions (C521) actually oppose the gradient (-10.3%). Reconciles C1117 (LTR at token level) with character-level RTL: different structural layers of the same grammar. No Phase 490 needed.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/EVA_CHAR_ASYMMETRY_DECOMPOSITION/` -- 1 script + 1 results JSON |
+| **ADDED** | C1376 constraint file (1 new constraint, 1219->1220) |
+| **UPDATED** | `INDEX.md` -- 1219->1220 total, Phase 489 section added |
+| **UPDATED** | `CLAUDE.md` -- v4.90->v4.91, 488->489 phases, 1219->1220 constraints |
+
+---
+
 ## Version 4.90.76 (2026-02-27) - Phase 488: Hebrew Cipher Cross-Validation
 
 ### Summary

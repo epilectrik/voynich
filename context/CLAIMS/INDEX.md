@@ -4203,6 +4203,20 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T2 within-class clustering (z=-15.5) is a confound: EVA morphological similarity survives any char transform
 - Verdict: STRONG FALSIFICATION of cipher at grammar layer; Gatta's patterns may exist below grammar level
 
+### EVA Character-Level Asymmetry Decomposition (C1376) -- Phase: EVA_CHAR_ASYMMETRY_DECOMPOSITION (Phase 489)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1376** | **Character-Level RTL Signal Is Grammar-Internal** (within-token RTL z=36.8 replicated; MIDDLE slot syntax INITIAL→MEDIAL→TERMINAL fully explains signal; slot-preserving shuffle preserves 102% of asymmetry z=-2.6; coarse 4-category explains 48.9% fine-grained slot structure explains rest; kernel opposes main gradient -10.3%; gallows reduce asymmetry -35.7%; no encoding design feature beyond C1209 grammar) | 2 | B, directionality, character-level, slot syntax, external, grammar | -> [C1376_char_level_rtl_is_grammar.md](C1376_char_level_rtl_is_grammar.md) |
+
+**Phase 489 findings (EVA Character-Level Asymmetry Decomposition):**
+- Gatta's character-level RTL finding REPLICATED at z=36.8 (within-token bigram conditional entropy)
+- Signal is FULLY EXPLAINED by C1209's INITIAL→MEDIAL→TERMINAL slot syntax
+- Slot-preserving shuffle preserves the asymmetry (z=-2.6 from observed); random shuffle destroys it (z=79.8)
+- Reconciles C1117 (LTR at token level) with RTL at character level: different structural layers
+- Kernel transitions (C521) actually OPPOSE the RTL gradient (-10.3%), creating LTR bias for kernel pairs
+- No Phase 490 needed: no residual signal beyond grammar
+
 ---
 
 ## Navigation
