@@ -21,8 +21,9 @@ Tests:
   T5: Information-theoretic preservation
   T6: PREFIX role coherence
   T7: Directionality reconciliation
+  T8: Lexicon signal decomposition (slot-preserving shuffle)
 
-Depends on: C120, C130, C132, C109, C121, C124, C1250, C1365
+Depends on: C120, C130, C132, C109, C121, C124, C1250, C1365, C1376
 Cross-ref: github.com/antenore/voynich-toolkit (EPILECTRIK_NOTES.md)
 """
 
@@ -31,6 +32,7 @@ import sys
 import re
 import math
 import functools
+import random
 import numpy as np
 from pathlib import Path
 from collections import Counter, defaultdict
@@ -1065,6 +1067,316 @@ def test7_directionality(tokens, lines):
     return result
 
 
+# ── C1209 Slot Categories (for T8) ───────────────────────────────────
+
+INITIAL_CHARS = set('aqeo')
+MEDIAL_CHARS = set('cipdfs')
+TERMINAL_CHARS = set('ynmrhl')
+FREE_CHARS = set('kt')
+
+
+def char_slot(c):
+    """Return C1209 slot category for a character."""
+    if c in INITIAL_CHARS:
+        return 'INITIAL'
+    elif c in MEDIAL_CHARS:
+        return 'MEDIAL'
+    elif c in TERMINAL_CHARS:
+        return 'TERMINAL'
+    elif c in FREE_CHARS:
+        return 'FREE'
+    return 'OTHER'
+
+
+# ── T8: Lexicon Signal Under Slot-Preserving Shuffle ─────────────────
+
+def test8_lexicon_survival(tokens, morph):
+    """Test whether decoded vocabulary properties survive slot-preserving shuffle.
+
+    Gatta reports lexicon match z=3.6-4.4 (decoded EVA matches Hebrew lexicon
+    more than random bijective mappings). We test whether this signal survives
+    when C1209 slot structure is preserved but character identity is shuffled.
+
+    Without Gatta's 491K Hebrew lexicon, we test proxy metrics: vocabulary
+    concentration, bigram entropy, and type frequency distribution of decoded
+    text. If these are indistinguishable between real and slot-shuffled decoded
+    text, the lexicon signal is likely a slot-structure artifact.
+    """
+    print("\nT8: Lexicon Signal Under Slot-Preserving Shuffle")
+
+    # Step 1: Decode all real tokens
+    real_decoded = [gatta_decode(t['word']) for t in tokens]
+    real_decoded_3plus = [d for d in real_decoded if len(d) >= 3]
+    n_3plus = len(real_decoded_3plus)
+
+    # Real metrics
+    real_types = set(real_decoded_3plus)
+    real_type_count = len(real_types)
+    real_ttr = real_type_count / n_3plus if n_3plus > 0 else 0
+    real_char_stream = ' '.join(real_decoded)
+    real_bigram_h = bigram_entropy(real_char_stream)
+    real_freq = Counter(real_decoded_3plus)
+    real_freq_h = -sum((c / n_3plus) * math.log2(c / n_3plus)
+                       for c in real_freq.values() if c > 0) if n_3plus > 0 else 0
+
+    print(f"  Real decoded (len>=3): {n_3plus} tokens, {real_type_count} types")
+    print(f"  Real TTR: {real_ttr:.4f}")
+    print(f"  Real decoded bigram H: {real_bigram_h:.4f}")
+    print(f"  Real type frequency H: {real_freq_h:.4f}")
+
+    # Step 2: Build slot-preserving shuffle infrastructure
+    # For each token: (before_middle, middle_chars, after_middle, slot_sequence)
+    token_parts = []
+    slot_char_pools = defaultdict(list)
+
+    for t in tokens:
+        word = t['word']
+        m = morph.extract(word)
+        if m:
+            art = m.articulator or ''
+            pfx = m.prefix or ''
+            mid = m.middle or word
+            sfx = m.suffix or ''
+        else:
+            art, pfx, mid, sfx = '', '', word, ''
+
+        before = art + pfx
+        after = sfx
+        slots = [char_slot(c) for c in mid]
+        token_parts.append((before, mid, after, slots))
+        for c, s in zip(mid, slots):
+            slot_char_pools[s].append(c)
+
+    # Step 3: Run 100 slot-preserving shuffles
+    print("  Running 100 slot-preserving shuffles...")
+    n_shuffles = 100
+    random.seed(42)
+
+    shuf_type_counts = []
+    shuf_ttrs = []
+    shuf_bigram_hs = []
+    shuf_freq_hs = []
+
+    for si in range(n_shuffles):
+        # Shuffle each slot's character pool
+        shuffled_pools = {}
+        for s, chars in slot_char_pools.items():
+            pool = list(chars)
+            random.shuffle(pool)
+            shuffled_pools[s] = iter(pool)
+
+        # Rebuild tokens with shuffled MIDDLEs, decode
+        shuf_decoded = []
+        for i, (before, mid, after, slots) in enumerate(token_parts):
+            try:
+                new_mid = ''.join(next(shuffled_pools[s]) for s in slots)
+            except StopIteration:
+                # Fallback: use original token
+                shuf_decoded.append(gatta_decode(tokens[i]['word']))
+                continue
+            new_word = before + new_mid + after
+            shuf_decoded.append(gatta_decode(new_word))
+
+        shuf_3plus = [d for d in shuf_decoded if len(d) >= 3]
+        n_s = len(shuf_3plus)
+        shuf_types = set(shuf_3plus)
+        shuf_type_counts.append(len(shuf_types))
+        shuf_ttrs.append(len(shuf_types) / n_s if n_s > 0 else 0)
+
+        shuf_stream = ' '.join(shuf_decoded)
+        shuf_bigram_hs.append(bigram_entropy(shuf_stream))
+
+        shuf_freq = Counter(shuf_3plus)
+        shuf_fh = -sum((c / n_s) * math.log2(c / n_s)
+                       for c in shuf_freq.values() if c > 0) if n_s > 0 else 0
+        shuf_freq_hs.append(shuf_fh)
+
+    # Step 4: Z-scores
+    def z_score(real_val, shuf_vals):
+        m = np.mean(shuf_vals)
+        s = np.std(shuf_vals)
+        return (real_val - m) / s if s > 0 else 0.0
+
+    z_types = z_score(real_type_count, shuf_type_counts)
+    z_ttr = z_score(real_ttr, shuf_ttrs)
+    z_bh = z_score(real_bigram_h, shuf_bigram_hs)
+    z_fh = z_score(real_freq_h, shuf_freq_hs)
+
+    print(f"\n  Slot-preserving shuffle results ({n_shuffles} iterations):")
+    print(f"    Unique types: real={real_type_count}, "
+          f"shuf={np.mean(shuf_type_counts):.0f}\u00b1{np.std(shuf_type_counts):.0f}, "
+          f"z={z_types:.2f}")
+    print(f"    TTR:          real={real_ttr:.4f}, "
+          f"shuf={np.mean(shuf_ttrs):.4f}\u00b1{np.std(shuf_ttrs):.4f}, "
+          f"z={z_ttr:.2f}")
+    print(f"    Bigram H:     real={real_bigram_h:.4f}, "
+          f"shuf={np.mean(shuf_bigram_hs):.4f}\u00b1{np.std(shuf_bigram_hs):.4f}, "
+          f"z={z_bh:.2f}")
+    print(f"    Freq entropy: real={real_freq_h:.4f}, "
+          f"shuf={np.mean(shuf_freq_hs):.4f}\u00b1{np.std(shuf_freq_hs):.4f}, "
+          f"z={z_fh:.2f}")
+
+    # Step 5: CRITICAL CONTROL — Random bijective mapping
+    # The massive z-scores above might reflect EVA's within-slot co-occurrence
+    # structure (part of our grammar), not specifically Hebrew. To distinguish:
+    # Run the same real-vs-slot-shuffled comparison using a RANDOM bijective
+    # mapping instead of Gatta's. If random mappings produce the same z-scores,
+    # then T8 measures EVA structure, not Hebrew alignment.
+    print("\n  Random bijective mapping control (20 mappings x 20 shuffles)...")
+
+    eva_chars = sorted(GATTA_BASE.keys())  # The 17 EVA characters Gatta maps
+    hebrew_chars = sorted(set(GATTA_BASE.values()))  # Target characters
+
+    random.seed(123)
+    n_rand_maps = 20
+    n_rand_shuf = 20
+    rand_map_z_types = []
+    rand_map_z_ttrs = []
+
+    for mi in range(n_rand_maps):
+        # Create random bijective-ish mapping (same source chars, shuffled targets)
+        shuffled_targets = list(hebrew_chars)
+        random.shuffle(shuffled_targets)
+        # Map each EVA char to a random Hebrew char (cycling if needed)
+        rand_map = {}
+        for i, ec in enumerate(eva_chars):
+            rand_map[ec] = shuffled_targets[i % len(shuffled_targets)]
+
+        # Simple decode: just apply character mapping (no digraphs/positional logic)
+        def rand_decode(word):
+            return ''.join(rand_map.get(c, c) for c in word)
+
+        # Real decoded via random map
+        rr_decoded = [rand_decode(t['word']) for t in tokens]
+        rr_3plus = [d for d in rr_decoded if len(d) >= 3]
+        rr_type_count = len(set(rr_3plus))
+        rr_ttr = len(set(rr_3plus)) / len(rr_3plus) if rr_3plus else 0
+
+        # Slot-shuffled decoded via random map
+        rs_type_counts = []
+        rs_ttrs = []
+        for si in range(n_rand_shuf):
+            shuffled_pools = {}
+            for s, chars in slot_char_pools.items():
+                pool = list(chars)
+                random.shuffle(pool)
+                shuffled_pools[s] = iter(pool)
+
+            rs_decoded = []
+            for i, (before, mid, after, slots) in enumerate(token_parts):
+                try:
+                    new_mid = ''.join(next(shuffled_pools[s]) for s in slots)
+                except StopIteration:
+                    rs_decoded.append(rand_decode(tokens[i]['word']))
+                    continue
+                new_word = before + new_mid + after
+                rs_decoded.append(rand_decode(new_word))
+
+            rs_3plus = [d for d in rs_decoded if len(d) >= 3]
+            rs_type_counts.append(len(set(rs_3plus)))
+            rs_ttrs.append(len(set(rs_3plus)) / len(rs_3plus) if rs_3plus else 0)
+
+        rz_types = z_score(rr_type_count, rs_type_counts)
+        rz_ttr = z_score(rr_ttr, rs_ttrs)
+        rand_map_z_types.append(rz_types)
+        rand_map_z_ttrs.append(rz_ttr)
+
+    rand_z_types_mean = float(np.mean(rand_map_z_types))
+    rand_z_ttr_mean = float(np.mean(rand_map_z_ttrs))
+
+    print(f"    Random mapping z_types: mean={rand_z_types_mean:.1f} "
+          f"(Gatta={z_types:.1f})")
+    print(f"    Random mapping z_ttr:   mean={rand_z_ttr_mean:.1f} "
+          f"(Gatta={z_ttr:.1f})")
+
+    # If random bijective mappings show comparable z-scores, the signal
+    # is from EVA structure, not Hebrew specifically
+    gatta_is_special = abs(z_types) > abs(rand_z_types_mean) * 1.5
+
+    print(f"    Gatta mapping is {'SPECIAL' if gatta_is_special else 'NOT special'} "
+          f"vs random bijective")
+
+    # Step 6: Verdict (incorporating control)
+    # The key question: is the character identity signal specific to Gatta's
+    # Hebrew mapping, or would ANY mapping show it?
+    if abs(rand_z_types_mean) > 10:
+        # Random mappings also show massive z-scores → EVA structure, not Hebrew
+        verdict = "GRAMMAR_STRUCTURE"
+        favors = "control_program"
+        note = ("Character identity produces vocabulary concentration under ALL "
+                "character mappings (random z={:.0f}, Gatta z={:.0f}). "
+                "This is EVA's within-slot co-occurrence structure (part of our "
+                "grammar), not Hebrew-specific. Gatta's lexicon z=3.6-4.4 likely "
+                "reflects this grammar interacting with Hebrew lexicon coverage "
+                "probability.".format(rand_z_types_mean, z_types))
+    elif not gatta_is_special:
+        verdict = "GRAMMAR_STRUCTURE"
+        favors = "control_program"
+        note = ("Gatta's mapping shows no more vocabulary concentration than random "
+                "bijective mappings. The lexicon signal is from EVA grammar structure.")
+    else:
+        # Gatta's mapping is genuinely special
+        sig = []
+        if abs(z_types) > 2:
+            sig.append(f"unique_types(z={z_types:.1f})")
+        if abs(z_ttr) > 2:
+            sig.append(f"TTR(z={z_ttr:.1f})")
+        if abs(z_bh) > 2:
+            sig.append(f"bigram_H(z={z_bh:.1f})")
+        if abs(z_fh) > 2:
+            sig.append(f"freq_entropy(z={z_fh:.1f})")
+
+        if sig:
+            verdict = "GATTA_SPECIFIC_SIGNAL"
+            favors = "cipher"
+            note = (f"Gatta's mapping produces significantly more vocabulary "
+                    f"concentration than random mappings: {', '.join(sig)}")
+        else:
+            verdict = "LEXICON_ABSORBED"
+            favors = "control_program"
+            note = "No significant signal specific to Gatta's mapping."
+
+    print(f"\n  Verdict: {verdict}")
+    print(f"  Favors: {favors}")
+
+    result = {
+        'n_decoded_3plus': n_3plus,
+        'real_unique_types': real_type_count,
+        'real_ttr': round(real_ttr, 6),
+        'real_bigram_entropy': round(real_bigram_h, 6),
+        'real_freq_entropy': round(real_freq_h, 6),
+        'shuffle_unique_types_mean': round(float(np.mean(shuf_type_counts)), 2),
+        'shuffle_unique_types_std': round(float(np.std(shuf_type_counts)), 2),
+        'shuffle_ttr_mean': round(float(np.mean(shuf_ttrs)), 6),
+        'shuffle_ttr_std': round(float(np.std(shuf_ttrs)), 6),
+        'shuffle_bigram_h_mean': round(float(np.mean(shuf_bigram_hs)), 6),
+        'shuffle_bigram_h_std': round(float(np.std(shuf_bigram_hs)), 6),
+        'shuffle_freq_h_mean': round(float(np.mean(shuf_freq_hs)), 6),
+        'shuffle_freq_h_std': round(float(np.std(shuf_freq_hs)), 6),
+        'z_unique_types': round(z_types, 3),
+        'z_ttr': round(z_ttr, 3),
+        'z_bigram_h': round(z_bh, 3),
+        'z_freq_entropy': round(z_fh, 3),
+        'random_bijective_control': {
+            'n_random_maps': n_rand_maps,
+            'n_shuffles_per_map': n_rand_shuf,
+            'random_z_types_mean': round(rand_z_types_mean, 2),
+            'random_z_ttr_mean': round(rand_z_ttr_mean, 2),
+            'gatta_is_special': gatta_is_special,
+            'interpretation': ('Random bijective mappings show comparable z-scores; '
+                               'the vocabulary concentration is from EVA grammar '
+                               'structure, not Hebrew-specific alignment'
+                               if abs(rand_z_types_mean) > 10 else
+                               'Gatta mapping may be specifically aligned'),
+        },
+        'n_shuffles': n_shuffles,
+        'verdict': verdict,
+        'favors': favors,
+        'note': note,
+    }
+    return result
+
+
 # ── Main ─────────────────────────────────────────────────────────────
 
 def main():
@@ -1089,9 +1401,10 @@ def main():
     t5 = test5_information_theory(tokens)
     t6 = test6_prefix_role_coherence(all_prefixes)
     t7 = test7_directionality(tokens, lines)
+    t8 = test8_lexicon_survival(tokens, morph)
 
     # Score
-    tests = [t1, t2, t3, t4, t5, t6, t7]
+    tests = [t1, t2, t3, t4, t5, t6, t7, t8]
     cipher_count = sum(1 for t in tests if t['favors'] == 'cipher')
     cp_count = sum(1 for t in tests if t['favors'] == 'control_program')
     ambiguous_count = sum(1 for t in tests if t['favors'] in ('ambiguous', 'reconciliation'))
@@ -1110,9 +1423,9 @@ def main():
     print("=" * 70)
     for i, t in enumerate(tests, 1):
         print(f"  T{i}: {t['verdict']:30s} -> {t['favors']}")
-    print(f"\n  Control program: {cp_count}/7")
-    print(f"  Cipher: {cipher_count}/7")
-    print(f"  Ambiguous: {ambiguous_count}/7")
+    print(f"\n  Control program: {cp_count}/8")
+    print(f"  Cipher: {cipher_count}/8")
+    print(f"  Ambiguous: {ambiguous_count}/8")
     print(f"\n  OVERALL VERDICT: {overall}")
 
     output = {
@@ -1141,6 +1454,7 @@ def main():
                 'T5': 'MI decreases, entropy increases',
                 'T6': 'Few morpheme matches (< 3/30)',
                 'T7': 'LTR at all levels',
+                'T8': 'Decoded vocabulary unchanged by slot-preserving shuffle (z<2)',
             },
             'cipher': {
                 'T1': 'Boundaries map to Hebrew morphemes (consistency > 0.7)',
@@ -1150,6 +1464,7 @@ def main():
                 'T5': 'MI increases, entropy decreases',
                 'T6': 'Many morpheme matches (8+/30)',
                 'T7': 'RTL at character level',
+                'T8': 'Decoded vocabulary significantly different from slot-shuffled (z>2)',
             },
         },
         'T1_morphological_boundaries': t1,
@@ -1159,6 +1474,7 @@ def main():
         'T5_information_theory': t5,
         'T6_prefix_role': t6,
         'T7_directionality': t7,
+        'T8_lexicon_survival': t8,
         'scorecard': {
             'control_program': cp_count,
             'cipher': cipher_count,

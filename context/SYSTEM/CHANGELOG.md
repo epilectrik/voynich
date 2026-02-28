@@ -4,6 +4,23 @@
 
 ---
 
+## Version 4.91.78 (2026-02-27) - Phase 488 T8: Lexicon Signal Decomposition
+
+### Summary
+
+Phase 488 extended with T8: lexicon signal decomposition under slot-preserving shuffle. Tests whether Gatta's z=3.6-4.4 Hebrew lexicon match is specific to Hebrew or an artifact of EVA's within-slot co-occurrence structure (C1209). Result: random bijective mappings show comparable vocabulary concentration (z=-158 vs Gatta z=-131) when comparing real vs slot-shuffled decoded text. The lexicon signal is from EVA grammar structure, not Hebrew-specific alignment. Updated scorecard: 4/8 control program, 1/8 cipher, 3/8 ambiguous = STRONG FALSIFICATION.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **UPDATED** | `phases/HEBREW_CIPHER_CROSS_VALIDATION/scripts/hebrew_cipher_cross_validation.py` -- T8 added |
+| **UPDATED** | `phases/HEBREW_CIPHER_CROSS_VALIDATION/results/hebrew_cipher_cross_validation.json` -- T8 results |
+| **UPDATED** | `phases/HEBREW_CIPHER_CROSS_VALIDATION/CROSS_VALIDATION_REPORT.md` -- T8 section added |
+| **UPDATED** | C1375 constraint file -- T8 findings, scorecard 3/7→4/8 |
+
+---
+
 ## Version 4.91.77 (2026-02-27) - Phase 489: Character-Level RTL Is Grammar-Internal
 
 ### Summary

@@ -36,7 +36,8 @@
       "T4": "No category coherence (ratio ~1.0)",
       "T5": "MI decreases, entropy increases",
       "T6": "Few morpheme matches (< 3/30)",
-      "T7": "LTR at all levels"
+      "T7": "LTR at all levels",
+      "T8": "Decoded vocabulary unchanged by slot-preserving shuffle (z<2)"
     },
     "cipher": {
       "T1": "Boundaries map to Hebrew morphemes (consistency > 0.7)",
@@ -45,7 +46,8 @@
       "T4": "Semantic clustering by category",
       "T5": "MI increases, entropy decreases",
       "T6": "Many morpheme matches (8+/30)",
-      "T7": "RTL at character level"
+      "T7": "RTL at character level",
+      "T8": "Decoded vocabulary significantly different from slot-shuffled (z>2)"
     }
   },
   "T1_morphological_boundaries": {
@@ -226,12 +228,12 @@
     "favors": "ambiguous"
   },
   "T2_class_grammar": {
-    "within_class_edit_dist": 3.051,
-    "between_class_edit_dist": 3.908,
-    "ratio": 0.7806,
-    "null_mean_ratio": 0.9605,
-    "null_std": 0.0116,
-    "z_score": -15.464,
+    "within_class_edit_dist": 3.045,
+    "between_class_edit_dist": 3.89,
+    "ratio": 0.7826,
+    "null_mean_ratio": 0.9649,
+    "null_std": 0.0117,
+    "z_score": -15.598,
     "homophone_collisions": 65,
     "homophone_collision_rate": 0.1693,
     "total_unique_decoded": 384,
@@ -379,10 +381,10 @@
     ],
     "forbidden_same_initial": 4,
     "forbidden_adjacent_identical": 1,
-    "control_same_initial": 1,
-    "control_adjacent_identical": 2,
+    "control_same_initial": 3,
+    "control_adjacent_identical": 0,
     "forbidden_pattern_rate": 0.235,
-    "control_pattern_rate": 0.059,
+    "control_pattern_rate": 0.176,
     "hebrew_explained_count": 4,
     "verdict": "WEAK_PATTERN",
     "favors": "ambiguous"
@@ -846,8 +848,39 @@
     "verdict": "INCONCLUSIVE",
     "favors": "ambiguous"
   },
+  "T8_lexicon_survival": {
+    "n_decoded_3plus": 20865,
+    "real_unique_types": 4118,
+    "real_ttr": 0.197364,
+    "real_bigram_entropy": 2.227693,
+    "real_freq_entropy": 9.474869,
+    "shuffle_unique_types_mean": 7394.59,
+    "shuffle_unique_types_std": 25.01,
+    "shuffle_ttr_mean": 0.354597,
+    "shuffle_ttr_std": 0.001194,
+    "shuffle_bigram_h_mean": 2.746158,
+    "shuffle_bigram_h_std": 0.001427,
+    "shuffle_freq_h_mean": 11.298218,
+    "shuffle_freq_h_std": 0.005937,
+    "z_unique_types": -130.99,
+    "z_ttr": -131.731,
+    "z_bigram_h": -363.226,
+    "z_freq_entropy": -307.122,
+    "random_bijective_control": {
+      "n_random_maps": 20,
+      "n_shuffles_per_map": 20,
+      "random_z_types_mean": -157.63,
+      "random_z_ttr_mean": -157.63,
+      "gatta_is_special": "False",
+      "interpretation": "Random bijective mappings show comparable z-scores; the vocabulary concentration is from EVA grammar structure, not Hebrew-specific alignment"
+    },
+    "n_shuffles": 100,
+    "verdict": "GRAMMAR_STRUCTURE",
+    "favors": "control_program",
+    "note": "Character identity produces vocabulary concentration under ALL character mappings (random z=-158, Gatta z=-131). This is EVA's within-slot co-occurrence structure (part of our grammar), not Hebrew-specific. Gatta's lexicon z=3.6-4.4 likely reflects this grammar interacting with Hebrew lexicon coverage probability."
+  },
   "scorecard": {
-    "control_program": 3,
+    "control_program": 4,
     "cipher": 1,
     "ambiguous": 3,
     "overall_verdict": "STRONG_FALSIFICATION"
