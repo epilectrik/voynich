@@ -1,0 +1,436 @@
+{
+  "census": {
+    "n_records": 1550,
+    "n_tokens_total": 11165,
+    "mean_record_length": 7.2,
+    "median_record_length": 7,
+    "head_distribution": {
+      "NONE": 4348,
+      "o": 3179,
+      "e": 1767,
+      "a": 854,
+      "k": 642,
+      "t": 375
+    },
+    "head_fractions": {
+      "NONE": 0.3894,
+      "o": 0.2847,
+      "e": 0.1583,
+      "a": 0.0765,
+      "k": 0.0575,
+      "t": 0.0336
+    },
+    "record_length_distribution": {
+      "2": 35,
+      "3": 92,
+      "4": 158,
+      "5": 183,
+      "6": 202,
+      "7": 181,
+      "8": 214,
+      "9": 220,
+      "10": 139,
+      "11": 50,
+      "12": 28,
+      "13": 12,
+      "14": 3,
+      "15": 5,
+      "16": 7,
+      "17": 3,
+      "18": 3,
+      "19": 2,
+      "20": 1,
+      "21": 2,
+      "22": 2,
+      "23": 3,
+      "24": 3,
+      "25": 2
+    }
+  },
+  "t1_basic_coherence": {
+    "all_same_count": 37,
+    "all_same_fraction": 0.0239,
+    "dominant_count": 616,
+    "dominant_fraction": 0.3974,
+    "mean_dominant_frac": 0.5257,
+    "median_dominant_frac": 0.5,
+    "mean_n_distinct": 3.197
+  },
+  "t2_entropy": {
+    "within_mean": 1.4363,
+    "within_std": 0.471,
+    "between_entropy": 2.1518,
+    "ratio": 0.6675
+  },
+  "t3_permutation_head": {
+    "real_mean_entropy": 1.4363,
+    "perm_mean_entropy": 1.5561,
+    "perm_std": 0.0069,
+    "z_score": -17.3971,
+    "p_value": 0.0,
+    "n_permutations": 1000,
+    "coherent": true,
+    "entropy_reduction_pct": 7.7
+  },
+  "t4_length_vs_coherence": {
+    "2-3": {
+      "n_records": 127,
+      "all_same_frac": 0.1732,
+      "mean_dominant_frac": 0.6404,
+      "mean_entropy": 0.8836
+    },
+    "4-5": {
+      "n_records": 341,
+      "all_same_frac": 0.0381,
+      "mean_dominant_frac": 0.554,
+      "mean_entropy": 1.2824
+    },
+    "6-8": {
+      "n_records": 597,
+      "all_same_frac": 0.0034,
+      "mean_dominant_frac": 0.5222,
+      "mean_entropy": 1.4683
+    },
+    "9+": {
+      "n_records": 485,
+      "all_same_frac": 0.0,
+      "mean_dominant_frac": 0.4801,
+      "mean_entropy": 1.6497
+    }
+  },
+  "t5_section_coherence": {
+    "H": {
+      "n_records": 1219,
+      "all_same_frac": 0.0295,
+      "mean_entropy": 1.3613,
+      "permutation_z": -10.258,
+      "permutation_p": 0.0,
+      "entropy_reduction_pct": 5.55
+    },
+    "P": {
+      "n_records": 225,
+      "all_same_frac": 0.0,
+      "mean_entropy": 1.7198,
+      "permutation_z": -2.9913,
+      "permutation_p": 0.0,
+      "entropy_reduction_pct": 2.55
+    },
+    "T": {
+      "n_records": 106,
+      "all_same_frac": 0.0094,
+      "mean_entropy": 1.6972,
+      "permutation_z": -6.3065,
+      "permutation_p": 0.0,
+      "entropy_reduction_pct": 7.92
+    }
+  },
+  "t6_terminal_coherence": {
+    "all_same_frac": 0.0445,
+    "mean_dominant_frac": 0.5612,
+    "permutation": {
+      "real_mean_entropy": 1.4458,
+      "perm_mean_entropy": 1.5017,
+      "perm_std": 0.0062,
+      "z_score": -8.9727,
+      "p_value": 0.0,
+      "n_permutations": 1000,
+      "coherent": true,
+      "entropy_reduction_pct": 3.72
+    }
+  },
+  "t7_a_vs_b": {
+    "a_all_same_frac": 0.0239,
+    "b_all_same_frac": 0.0041,
+    "a_mean_dominant": 0.5257,
+    "b_mean_dominant": 0.4391,
+    "a_perm_z": -17.3971,
+    "b_perm_z": -19.6051,
+    "a_entropy_reduction": 7.7,
+    "b_entropy_reduction": 5.2,
+    "b_permutation": {
+      "real_mean_entropy": 1.7907,
+      "perm_mean_entropy": 1.8889,
+      "perm_std": 0.005,
+      "z_score": -19.6051,
+      "p_value": 0.0,
+      "n_permutations": 1000,
+      "coherent": true,
+      "entropy_reduction_pct": 5.2
+    }
+  },
+  "t8_preferred_combinations": [
+    {
+      "head1": "NONE",
+      "head2": "o",
+      "domain1": "HEADLESS",
+      "domain2": "STAGING",
+      "records": 1226,
+      "same_domain": false
+    },
+    {
+      "head1": "NONE",
+      "head2": "e",
+      "domain1": "HEADLESS",
+      "domain2": "THERMAL/OPERATION",
+      "records": 788,
+      "same_domain": false
+    },
+    {
+      "head1": "e",
+      "head2": "o",
+      "domain1": "THERMAL/OPERATION",
+      "domain2": "STAGING",
+      "records": 726,
+      "same_domain": false
+    },
+    {
+      "head1": "NONE",
+      "head2": "a",
+      "domain1": "HEADLESS",
+      "domain2": "FLOW/TRANSITION",
+      "records": 509,
+      "same_domain": false
+    },
+    {
+      "head1": "a",
+      "head2": "o",
+      "domain1": "FLOW/TRANSITION",
+      "domain2": "STAGING",
+      "records": 456,
+      "same_domain": false
+    },
+    {
+      "head1": "NONE",
+      "head2": "k",
+      "domain1": "HEADLESS",
+      "domain2": "THERMAL",
+      "records": 443,
+      "same_domain": false
+    },
+    {
+      "head1": "k",
+      "head2": "o",
+      "domain1": "THERMAL",
+      "domain2": "STAGING",
+      "records": 396,
+      "same_domain": false
+    },
+    {
+      "head1": "a",
+      "head2": "e",
+      "domain1": "FLOW/TRANSITION",
+      "domain2": "THERMAL/OPERATION",
+      "records": 305,
+      "same_domain": false
+    },
+    {
+      "head1": "NONE",
+      "head2": "t",
+      "domain1": "HEADLESS",
+      "domain2": "FLOW",
+      "records": 291,
+      "same_domain": false
+    },
+    {
+      "head1": "e",
+      "head2": "k",
+      "domain1": "THERMAL/OPERATION",
+      "domain2": "THERMAL",
+      "records": 279,
+      "same_domain": false
+    },
+    {
+      "head1": "o",
+      "head2": "t",
+      "domain1": "STAGING",
+      "domain2": "FLOW",
+      "records": 266,
+      "same_domain": false
+    },
+    {
+      "head1": "a",
+      "head2": "k",
+      "domain1": "FLOW/TRANSITION",
+      "domain2": "THERMAL",
+      "records": 183,
+      "same_domain": false
+    },
+    {
+      "head1": "e",
+      "head2": "t",
+      "domain1": "THERMAL/OPERATION",
+      "domain2": "FLOW",
+      "records": 148,
+      "same_domain": false
+    },
+    {
+      "head1": "a",
+      "head2": "t",
+      "domain1": "FLOW/TRANSITION",
+      "domain2": "FLOW",
+      "records": 99,
+      "same_domain": false
+    },
+    {
+      "head1": "k",
+      "head2": "t",
+      "domain1": "THERMAL",
+      "domain2": "FLOW",
+      "records": 83,
+      "same_domain": false
+    }
+  ],
+  "t9_domain_coherence": {
+    "all_same_frac": 0.0239,
+    "mean_dominant_frac": 0.5257,
+    "real_entropy": 1.4363,
+    "perm_entropy": 1.5562,
+    "z_score": -17.36,
+    "p_value": 0.0,
+    "entropy_reduction_pct": 7.71
+  },
+  "t10_positional": {
+    "first_token": {
+      "o": 581,
+      "NONE": 481,
+      "e": 201,
+      "k": 106,
+      "t": 95,
+      "a": 86
+    },
+    "last_token": {
+      "NONE": 861,
+      "o": 315,
+      "a": 155,
+      "e": 127,
+      "k": 48,
+      "t": 44
+    },
+    "interior_tokens": {
+      "NONE": 3006,
+      "o": 2283,
+      "e": 1439,
+      "a": 613,
+      "k": 488,
+      "t": 236
+    }
+  },
+  "t11_transitions": {
+    "same_head_frac": 0.3179,
+    "expected_same": 0.2681,
+    "enrichment": 1.186,
+    "n_transitions": 9615,
+    "top_bigrams": [
+      {
+        "from": "NONE",
+        "to": "NONE",
+        "count": 1513,
+        "fraction": 0.1574
+      },
+      {
+        "from": "o",
+        "to": "NONE",
+        "count": 1101,
+        "fraction": 0.1145
+      },
+      {
+        "from": "o",
+        "to": "o",
+        "count": 933,
+        "fraction": 0.097
+      },
+      {
+        "from": "NONE",
+        "to": "o",
+        "count": 903,
+        "fraction": 0.0939
+      },
+      {
+        "from": "e",
+        "to": "NONE",
+        "count": 615,
+        "fraction": 0.064
+      },
+      {
+        "from": "NONE",
+        "to": "e",
+        "count": 500,
+        "fraction": 0.052
+      },
+      {
+        "from": "o",
+        "to": "e",
+        "count": 434,
+        "fraction": 0.0451
+      },
+      {
+        "from": "e",
+        "to": "e",
+        "count": 408,
+        "fraction": 0.0424
+      },
+      {
+        "from": "e",
+        "to": "o",
+        "count": 366,
+        "fraction": 0.0381
+      },
+      {
+        "from": "NONE",
+        "to": "a",
+        "count": 296,
+        "fraction": 0.0308
+      },
+      {
+        "from": "a",
+        "to": "NONE",
+        "count": 276,
+        "fraction": 0.0287
+      },
+      {
+        "from": "k",
+        "to": "NONE",
+        "count": 229,
+        "fraction": 0.0238
+      },
+      {
+        "from": "o",
+        "to": "a",
+        "count": 189,
+        "fraction": 0.0197
+      },
+      {
+        "from": "NONE",
+        "to": "k",
+        "count": 178,
+        "fraction": 0.0185
+      },
+      {
+        "from": "a",
+        "to": "o",
+        "count": 165,
+        "fraction": 0.0172
+      }
+    ]
+  },
+  "t12_headless": {
+    "any_headless_frac": 0.9265,
+    "all_headless_frac": 0.0129,
+    "headed_only_n": 114,
+    "headed_only_all_same_frac": 0.1491,
+    "headed_only_perm_z": -5.1419,
+    "headed_only_entropy_reduction": 13.48
+  },
+  "summary": {
+    "verdict": "DOMAIN_COHERENT",
+    "n_records": 1550,
+    "all_same_frac": 0.0239,
+    "head_permutation_z": -17.3971,
+    "head_entropy_reduction_pct": 7.7,
+    "same_head_transition_enrichment": 1.186,
+    "terminal_permutation_z": -8.9727,
+    "domain_permutation_z": -17.36,
+    "a_entropy_reduction": 7.7,
+    "b_entropy_reduction": 5.2
+  }
+}

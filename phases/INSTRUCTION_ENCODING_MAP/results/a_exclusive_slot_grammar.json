@@ -1,0 +1,866 @@
+{
+  "test1_census": {
+    "a_exclusive_types": 579,
+    "a_exclusive_tokens": 750,
+    "bridge_types": 393,
+    "bridge_tokens": 32135,
+    "b_exclusive_types": 900,
+    "b_exclusive_tokens": 1385,
+    "a_exclusive_length_dist": {
+      "2": 23,
+      "3": 109,
+      "4": 177,
+      "5": 148,
+      "6": 74,
+      "7": 35,
+      "8": 9,
+      "9": 3,
+      "10": 1
+    }
+  },
+  "test2_compound_rate": {
+    "a_single_types": 0,
+    "a_compound_types": 579,
+    "a_comp_type_rate": 1.0,
+    "a_comp_token_rate": 1.0,
+    "b_single_types": 24,
+    "b_compound_types": 1269,
+    "b_comp_type_rate": 0.9814,
+    "b_comp_token_rate": 0.6912,
+    "fisher_p": 0.00019064274557823504,
+    "fisher_or": Infinity
+  },
+  "test3_slot_compliance": {
+    "a_exclusive": {
+      "total": 579,
+      "valid_head": 320,
+      "headless": 259,
+      "valid_term": 115,
+      "open_term": 464,
+      "mod_violations": 270,
+      "clean": 50,
+      "headless_rate": 0.4473,
+      "clean_rate": 0.0864
+    },
+    "b": {
+      "total": 1269,
+      "valid_head": 802,
+      "headless": 467,
+      "valid_term": 294,
+      "open_term": 975,
+      "mod_violations": 545,
+      "clean": 257,
+      "headless_rate": 0.368,
+      "clean_rate": 0.2025
+    },
+    "fisher_headless_p": 0.001443901223639214,
+    "fisher_headless_or": 0.719
+  },
+  "test4_modifier_ordering": {
+    "A-exclusive": {
+      "compliant_pairs": 59,
+      "total_pairs": 96,
+      "compliance_rate": 0.6146,
+      "compounds_with_multi_mod": 84
+    },
+    "B": {
+      "compliant_pairs": 158,
+      "total_pairs": 253,
+      "compliance_rate": 0.6245,
+      "compounds_with_multi_mod": 208
+    },
+    "fisher_p": 0.9018777275509438,
+    "fisher_or": 0.959
+  },
+  "test5_atom_frequency": {
+    "a_atom_dist": {
+      "a": 166,
+      "c": 247,
+      "d": 170,
+      "e": 227,
+      "f": 37,
+      "g": 0,
+      "h": 264,
+      "i": 74,
+      "k": 156,
+      "l": 131,
+      "m": 10,
+      "n": 13,
+      "o": 459,
+      "p": 73,
+      "q": 20,
+      "r": 80,
+      "s": 133,
+      "t": 119,
+      "x": 0,
+      "y": 113
+    },
+    "b_atom_dist": {
+      "a": 345,
+      "c": 447,
+      "d": 375,
+      "e": 659,
+      "f": 103,
+      "g": 4,
+      "h": 439,
+      "i": 206,
+      "k": 361,
+      "l": 298,
+      "m": 20,
+      "n": 26,
+      "o": 699,
+      "p": 190,
+      "q": 59,
+      "r": 159,
+      "s": 215,
+      "t": 202,
+      "x": 13,
+      "y": 151
+    },
+    "chi2": 96.6,
+    "p": 2.233047500029899e-12,
+    "cramers_v": 0.114,
+    "ratios": {
+      "a": 0.96,
+      "c": 1.102,
+      "d": 0.904,
+      "e": 0.687,
+      "f": 0.717,
+      "g": 0.0,
+      "h": 1.2,
+      "i": 0.717,
+      "k": 0.862,
+      "l": 0.877,
+      "m": 0.997,
+      "n": 0.997,
+      "o": 1.31,
+      "p": 0.766,
+      "q": 0.676,
+      "r": 1.004,
+      "s": 1.234,
+      "t": 1.175,
+      "x": 0.0,
+      "y": 1.493
+    }
+  },
+  "test6_pair_lock": {
+    "a_standalone_rates": {
+      "a": 0.0397,
+      "c": 0.0007,
+      "d": 0.1522,
+      "e": 0.1799,
+      "f": 0.0345,
+      "g": 1.0,
+      "h": 0.1612,
+      "i": 0.0729,
+      "k": 0.2419,
+      "l": 0.187,
+      "m": 0.3835,
+      "n": 0.0208,
+      "o": 0.1316,
+      "p": 0.0439,
+      "q": 0.0208,
+      "r": 0.2687,
+      "s": 0.488,
+      "t": 0.1962,
+      "x": 0,
+      "y": 0.3612
+    },
+    "b_standalone_rates": {
+      "a": 0.018,
+      "c": 0.0024,
+      "d": 0.0762,
+      "e": 0.1239,
+      "f": 0.0787,
+      "g": 0.7273,
+      "h": 0.0291,
+      "i": 0.056,
+      "k": 0.4694,
+      "l": 0.2628,
+      "m": 0.2542,
+      "n": 0.0032,
+      "o": 0.087,
+      "p": 0.0734,
+      "q": 0.0758,
+      "r": 0.3453,
+      "s": 0.2535,
+      "t": 0.3845,
+      "x": 0.4444,
+      "y": 0.1036
+    },
+    "pair_lock_agreement": 0.8421,
+    "matches": 16,
+    "testable": 19
+  },
+  "test7_head_term_dist": {
+    "HEAD": {
+      "a_dist": {
+        "k": 30,
+        "o": 198,
+        "t": 39,
+        "e": 80,
+        "a": 31
+      },
+      "b_dist": {
+        "e": 5970,
+        "o": 2329,
+        "a": 3015,
+        "k": 1017,
+        "t": 345
+      },
+      "chi2": 382.8,
+      "p": 1.4801093431306445e-81,
+      "cramers_v": 0.171
+    },
+    "TERM": {
+      "a_dist": {
+        "y": 7,
+        "h": 43,
+        "k": 25,
+        "l": 23,
+        "r": 10,
+        "t": 17,
+        "n": 5,
+        "m": 2
+      },
+      "b_dist": {
+        "k": 591,
+        "y": 3492,
+        "n": 1312,
+        "h": 699,
+        "l": 1680,
+        "t": 242,
+        "r": 1167,
+        "m": 202
+      },
+      "chi2": 236.9,
+      "p": 1.725993082272968e-47,
+      "cramers_v": 0.158
+    }
+  },
+  "test8_frame_category": {
+    "frame_category_coherence": 0.5132,
+    "total_frames": 32,
+    "total_tokens": 378,
+    "top_frames": [
+      {
+        "frame": "o->-",
+        "types": 100,
+        "tokens": 124,
+        "dominant_cat": "MARKING",
+        "coherence": 0.3952
+      },
+      {
+        "frame": "e->-",
+        "types": 46,
+        "tokens": 52,
+        "dominant_cat": "THERMAL",
+        "coherence": 0.5769
+      },
+      {
+        "frame": "t->-",
+        "types": 24,
+        "tokens": 33,
+        "dominant_cat": "FLOW",
+        "coherence": 0.5758
+      },
+      {
+        "frame": "o->h",
+        "types": 19,
+        "tokens": 21,
+        "dominant_cat": "MARKING",
+        "coherence": 0.4762
+      },
+      {
+        "frame": "k->-",
+        "types": 19,
+        "tokens": 21,
+        "dominant_cat": "MARKING",
+        "coherence": 0.3333
+      },
+      {
+        "frame": "o->l",
+        "types": 12,
+        "tokens": 17,
+        "dominant_cat": "OPERATION",
+        "coherence": 0.7647
+      },
+      {
+        "frame": "a->-",
+        "types": 16,
+        "tokens": 16,
+        "dominant_cat": "MARKING",
+        "coherence": 0.375
+      },
+      {
+        "frame": "o->k",
+        "types": 13,
+        "tokens": 13,
+        "dominant_cat": "OPERATION",
+        "coherence": 0.5385
+      },
+      {
+        "frame": "e->h",
+        "types": 11,
+        "tokens": 13,
+        "dominant_cat": "THERMAL",
+        "coherence": 0.3846
+      },
+      {
+        "frame": "o->r",
+        "types": 8,
+        "tokens": 8,
+        "dominant_cat": "OPERATION",
+        "coherence": 0.375
+      },
+      {
+        "frame": "o->t",
+        "types": 4,
+        "tokens": 7,
+        "dominant_cat": "FLOW",
+        "coherence": 1.0
+      },
+      {
+        "frame": "a->h",
+        "types": 5,
+        "tokens": 6,
+        "dominant_cat": "MARKING",
+        "coherence": 0.5
+      },
+      {
+        "frame": "e->k",
+        "types": 6,
+        "tokens": 6,
+        "dominant_cat": "THERMAL",
+        "coherence": 1.0
+      },
+      {
+        "frame": "e->t",
+        "types": 4,
+        "tokens": 4,
+        "dominant_cat": "THERMAL",
+        "coherence": 0.75
+      },
+      {
+        "frame": "o->n",
+        "types": 2,
+        "tokens": 4,
+        "dominant_cat": "OPERATION",
+        "coherence": 0.75
+      }
+    ]
+  },
+  "test9_slot_chi2": {
+    "HEAD": {
+      "chi2": 29.4,
+      "p": 6.4131745944176785e-06,
+      "cramers_v": 0.162
+    },
+    "MOD": {
+      "chi2": 80.0,
+      "p": 1.842184177025934e-09,
+      "cramers_v": 0.116
+    },
+    "TERM": {
+      "chi2": 3.0,
+      "p": 0.8862350220494208,
+      "cramers_v": 0.085
+    }
+  },
+  "test10_top_examples": [
+    {
+      "middle": "ho",
+      "freq": 42,
+      "head": "-",
+      "mods": "h+o",
+      "term": "-",
+      "category": "MONITORING",
+      "violation": "headless"
+    },
+    {
+      "middle": "hod",
+      "freq": 12,
+      "head": "-",
+      "mods": "h+o+d",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "headless"
+    },
+    {
+      "middle": "heo",
+      "freq": 9,
+      "head": "-",
+      "mods": "h+e+o",
+      "term": "-",
+      "category": "MONITORING",
+      "violation": "headless"
+    },
+    {
+      "middle": "tod",
+      "freq": 8,
+      "head": "t",
+      "mods": "o+d",
+      "term": "-",
+      "category": "FLOW",
+      "violation": "head_in_mod(o)"
+    },
+    {
+      "middle": "ytc",
+      "freq": 5,
+      "head": "-",
+      "mods": "y+t+c",
+      "term": "-",
+      "category": "FLOW",
+      "violation": "headless"
+    },
+    {
+      "middle": "oro",
+      "freq": 4,
+      "head": "o",
+      "mods": "r+o",
+      "term": "-",
+      "category": "OPERATION",
+      "violation": "head_in_mod(o)"
+    },
+    {
+      "middle": "ykc",
+      "freq": 4,
+      "head": "-",
+      "mods": "y+k+c",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "headless"
+    },
+    {
+      "middle": "opyd",
+      "freq": 4,
+      "head": "o",
+      "mods": "p+y+d",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "term_in_mod(y)"
+    },
+    {
+      "middle": "oyt",
+      "freq": 4,
+      "head": "o",
+      "mods": "y",
+      "term": "t",
+      "category": "FLOW",
+      "violation": "term_in_mod(y)"
+    },
+    {
+      "middle": "oks",
+      "freq": 4,
+      "head": "o",
+      "mods": "k+s",
+      "term": "-",
+      "category": "OPERATION",
+      "violation": null
+    },
+    {
+      "middle": "cphod",
+      "freq": 4,
+      "head": "-",
+      "mods": "c+p+h+o+d",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "headless"
+    },
+    {
+      "middle": "on",
+      "freq": 3,
+      "head": "o",
+      "mods": "-",
+      "term": "n",
+      "category": "OPERATION",
+      "violation": null
+    },
+    {
+      "middle": "otol",
+      "freq": 3,
+      "head": "o",
+      "mods": "t+o",
+      "term": "l",
+      "category": "OPERATION",
+      "violation": "head_in_mod(o)"
+    },
+    {
+      "middle": "lcho",
+      "freq": 3,
+      "head": "-",
+      "mods": "l+c+h+o",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "headless"
+    },
+    {
+      "middle": "okeeo",
+      "freq": 3,
+      "head": "o",
+      "mods": "k+ee+o",
+      "term": "-",
+      "category": "THERMAL",
+      "violation": "head_in_mod(o)"
+    },
+    {
+      "middle": "otcho",
+      "freq": 3,
+      "head": "o",
+      "mods": "t+c+h+o",
+      "term": "-",
+      "category": "OPERATION",
+      "violation": "head_in_mod(o)"
+    },
+    {
+      "middle": "hol",
+      "freq": 3,
+      "head": "-",
+      "mods": "h+o+l",
+      "term": "-",
+      "category": "MONITORING",
+      "violation": "headless"
+    },
+    {
+      "middle": "qko",
+      "freq": 3,
+      "head": "-",
+      "mods": "q+k+o",
+      "term": "-",
+      "category": "OPERATION",
+      "violation": "headless"
+    },
+    {
+      "middle": "cfho",
+      "freq": 3,
+      "head": "-",
+      "mods": "c+f+h+o",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "headless"
+    },
+    {
+      "middle": "co",
+      "freq": 3,
+      "head": "-",
+      "mods": "c+o",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "headless"
+    },
+    {
+      "middle": "mo",
+      "freq": 3,
+      "head": "-",
+      "mods": "m+o",
+      "term": "-",
+      "category": "OPERATION",
+      "violation": "headless"
+    },
+    {
+      "middle": "cpheod",
+      "freq": 3,
+      "head": "-",
+      "mods": "c+p+h+e+o+d",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "headless"
+    },
+    {
+      "middle": "heod",
+      "freq": 3,
+      "head": "-",
+      "mods": "h+e+o+d",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "headless"
+    },
+    {
+      "middle": "opy",
+      "freq": 3,
+      "head": "o",
+      "mods": "p",
+      "term": "y",
+      "category": "MARKING",
+      "violation": null
+    },
+    {
+      "middle": "hold",
+      "freq": 3,
+      "head": "-",
+      "mods": "h+o+l+d",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "headless"
+    },
+    {
+      "middle": "otsh",
+      "freq": 3,
+      "head": "o",
+      "mods": "t+s",
+      "term": "h",
+      "category": "FLOW",
+      "violation": null
+    },
+    {
+      "middle": "olol",
+      "freq": 3,
+      "head": "o",
+      "mods": "l+o",
+      "term": "l",
+      "category": "OPERATION",
+      "violation": "head_in_mod(o)"
+    },
+    {
+      "middle": "loi",
+      "freq": 2,
+      "head": "-",
+      "mods": "l+o+i",
+      "term": "-",
+      "category": "STAGING",
+      "violation": "headless"
+    },
+    {
+      "middle": "ckheod",
+      "freq": 2,
+      "head": "-",
+      "mods": "c+k+h+e+o+d",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "headless"
+    },
+    {
+      "middle": "yda",
+      "freq": 2,
+      "head": "-",
+      "mods": "y+d+a",
+      "term": "-",
+      "category": "TRANSITION",
+      "violation": "headless"
+    },
+    {
+      "middle": "ckha",
+      "freq": 2,
+      "head": "-",
+      "mods": "c+k+h+a",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "headless"
+    },
+    {
+      "middle": "eoee",
+      "freq": 2,
+      "head": "e",
+      "mods": "o+ee",
+      "term": "-",
+      "category": "THERMAL",
+      "violation": "head_in_mod(o)"
+    },
+    {
+      "middle": "faii",
+      "freq": 2,
+      "head": "-",
+      "mods": "f+a+ii",
+      "term": "-",
+      "category": "STAGING",
+      "violation": "headless"
+    },
+    {
+      "middle": "ytsho",
+      "freq": 2,
+      "head": "-",
+      "mods": "y+t+s+h+o",
+      "term": "-",
+      "category": "FLOW",
+      "violation": "headless"
+    },
+    {
+      "middle": "koi",
+      "freq": 2,
+      "head": "k",
+      "mods": "o+i",
+      "term": "-",
+      "category": "OPERATION",
+      "violation": "head_in_mod(o)"
+    },
+    {
+      "middle": "qkh",
+      "freq": 2,
+      "head": "-",
+      "mods": "q+k+h",
+      "term": "-",
+      "category": "MONITORING",
+      "violation": "headless"
+    },
+    {
+      "middle": "hos",
+      "freq": 2,
+      "head": "-",
+      "mods": "h+o+s",
+      "term": "-",
+      "category": "MONITORING",
+      "violation": "headless"
+    },
+    {
+      "middle": "ots",
+      "freq": 2,
+      "head": "o",
+      "mods": "t+s",
+      "term": "-",
+      "category": "FLOW",
+      "violation": null
+    },
+    {
+      "middle": "echod",
+      "freq": 2,
+      "head": "e",
+      "mods": "c+h+o+d",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "head_in_mod(o)"
+    },
+    {
+      "middle": "ekcho",
+      "freq": 2,
+      "head": "e",
+      "mods": "k+c+h+o",
+      "term": "-",
+      "category": "THERMAL",
+      "violation": "head_in_mod(o)"
+    },
+    {
+      "middle": "olod",
+      "freq": 2,
+      "head": "o",
+      "mods": "l+o+d",
+      "term": "-",
+      "category": "OPERATION",
+      "violation": "head_in_mod(o)"
+    },
+    {
+      "middle": "cpheck",
+      "freq": 2,
+      "head": "-",
+      "mods": "c+p+h+e+c+k",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "headless"
+    },
+    {
+      "middle": "cphol",
+      "freq": 2,
+      "head": "-",
+      "mods": "c+p+h+o+l",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "headless"
+    },
+    {
+      "middle": "daii",
+      "freq": 2,
+      "head": "-",
+      "mods": "d+a+ii",
+      "term": "-",
+      "category": "STAGING",
+      "violation": "headless"
+    },
+    {
+      "middle": "okchod",
+      "freq": 2,
+      "head": "o",
+      "mods": "k+c+h+o+d",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "head_in_mod(o)"
+    },
+    {
+      "middle": "tchod",
+      "freq": 2,
+      "head": "t",
+      "mods": "c+h+o+d",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "head_in_mod(o)"
+    },
+    {
+      "middle": "okol",
+      "freq": 2,
+      "head": "o",
+      "mods": "k+o",
+      "term": "l",
+      "category": "OPERATION",
+      "violation": "head_in_mod(o)"
+    },
+    {
+      "middle": "ckch",
+      "freq": 2,
+      "head": "-",
+      "mods": "c+k+c+h",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "headless"
+    },
+    {
+      "middle": "pyda",
+      "freq": 2,
+      "head": "-",
+      "mods": "p+y+d+a",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "headless"
+    },
+    {
+      "middle": "foch",
+      "freq": 2,
+      "head": "-",
+      "mods": "f+o+c+h",
+      "term": "-",
+      "category": "MARKING",
+      "violation": "headless"
+    }
+  ],
+  "synthesis": {
+    "verdicts": [
+      {
+        "test": "Compound rate",
+        "result": "MATCH",
+        "detail": "A=100.0% vs B=98.1%"
+      },
+      {
+        "test": "Headless rate",
+        "result": "MATCH",
+        "detail": "A=44.7% vs B=36.8%"
+      },
+      {
+        "test": "Clean decomposition",
+        "result": "DIVERGE",
+        "detail": "A=8.6% vs B=20.2%"
+      },
+      {
+        "test": "Modifier order",
+        "result": "MATCH",
+        "detail": "A=61.5% vs B=62.5%"
+      },
+      {
+        "test": "Atom distribution",
+        "result": "MATCH",
+        "detail": "V=0.114"
+      },
+      {
+        "test": "Pair-lock",
+        "result": "MATCH",
+        "detail": "84.2%"
+      },
+      {
+        "test": "Frame coherence",
+        "result": "PARTIAL",
+        "detail": "A=51.3%"
+      }
+    ],
+    "match_count": 5,
+    "partial_count": 1,
+    "diverge_count": 1,
+    "testable": 7,
+    "overall_verdict": "SHARED_GRAMMAR"
+  }
+}

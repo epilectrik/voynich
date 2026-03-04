@@ -1,0 +1,666 @@
+{
+  "test1_prefix_base_head_mapping": {
+    "a": {
+      "prefix_base": "a",
+      "mapped_head": "a",
+      "headless_tokens": 1000,
+      "headed_tokens": 2983,
+      "cosine_similarity": 0.1458,
+      "kl_divergence": 2.7382,
+      "chi2": 2946.8,
+      "p_value": 0.0,
+      "cramers_v": 0.86,
+      "headless_dist": {
+        "CONTAINMENT": 0.002,
+        "FLOW": 0.056,
+        "MARKING": 0.277,
+        "MONITORING": 0.008,
+        "OPERATION": 0.015,
+        "STAGING": 0.586,
+        "THERMAL": 0.005,
+        "TRANSITION": 0.051
+      },
+      "headed_dist": {
+        "CONTAINMENT": 0.006,
+        "FLOW": 0.5538,
+        "MARKING": 0.0121,
+        "MONITORING": 0.0013,
+        "OPERATION": 0.0017,
+        "STAGING": 0.0174,
+        "THERMAL": 0.006,
+        "TRANSITION": 0.4016
+      }
+    },
+    "e": {
+      "prefix_base": "e",
+      "mapped_head": "e",
+      "headless_tokens": 146,
+      "headed_tokens": 5970,
+      "cosine_similarity": 0.0656,
+      "kl_divergence": 3.1948,
+      "chi2": 2501.3,
+      "p_value": 0.0,
+      "cramers_v": 0.64,
+      "headless_dist": {
+        "CONTAINMENT": 0.8836,
+        "FLOW": 0.0137,
+        "MARKING": 0.089,
+        "MONITORING": 0.0,
+        "OPERATION": 0.0068,
+        "STAGING": 0.0,
+        "THERMAL": 0.0,
+        "TRANSITION": 0.0068
+      },
+      "headed_dist": {
+        "CONTAINMENT": 0.0241,
+        "FLOW": 0.0782,
+        "MARKING": 0.033,
+        "MONITORING": 0.0147,
+        "OPERATION": 0.3776,
+        "STAGING": 0.0147,
+        "THERMAL": 0.2342,
+        "TRANSITION": 0.2235
+      }
+    },
+    "k": {
+      "prefix_base": "k",
+      "mapped_head": "k",
+      "headless_tokens": 50,
+      "headed_tokens": 1017,
+      "cosine_similarity": 0.1085,
+      "kl_divergence": 2.1208,
+      "chi2": 342.3,
+      "p_value": 5.5561084201630446e-70,
+      "cramers_v": 0.566,
+      "headless_dist": {
+        "CONTAINMENT": 0.64,
+        "FLOW": 0.0,
+        "MARKING": 0.12,
+        "MONITORING": 0.08,
+        "OPERATION": 0.02,
+        "STAGING": 0.12,
+        "THERMAL": 0.02,
+        "TRANSITION": 0.0
+      },
+      "headed_dist": {
+        "CONTAINMENT": 0.0324,
+        "FLOW": 0.0669,
+        "MARKING": 0.0324,
+        "MONITORING": 0.0256,
+        "OPERATION": 0.0197,
+        "STAGING": 0.0895,
+        "THERMAL": 0.706,
+        "TRANSITION": 0.0275
+      }
+    },
+    "o": {
+      "prefix_base": "o",
+      "mapped_head": "o",
+      "headless_tokens": 518,
+      "headed_tokens": 2141,
+      "cosine_similarity": 0.7006,
+      "kl_divergence": 0.3587,
+      "chi2": 297.1,
+      "p_value": 2.49333583478129e-60,
+      "cramers_v": 0.334,
+      "headless_dist": {
+        "CONTAINMENT": 0.0946,
+        "FLOW": 0.0579,
+        "MARKING": 0.3958,
+        "MONITORING": 0.0444,
+        "OPERATION": 0.1236,
+        "STAGING": 0.1931,
+        "THERMAL": 0.056,
+        "TRANSITION": 0.0347
+      },
+      "headed_dist": {
+        "CONTAINMENT": 0.0476,
+        "FLOW": 0.2373,
+        "MARKING": 0.134,
+        "MONITORING": 0.0294,
+        "OPERATION": 0.121,
+        "STAGING": 0.383,
+        "THERMAL": 0.0294,
+        "TRANSITION": 0.0182
+      }
+    },
+    "t": {
+      "prefix_base": "t",
+      "mapped_head": "t",
+      "headless_tokens": 52,
+      "headed_tokens": 344,
+      "cosine_similarity": 0.0794,
+      "kl_divergence": 17.797,
+      "chi2": 323.3,
+      "p_value": 6.22042401559828e-66,
+      "cramers_v": 0.904,
+      "headless_dist": {
+        "CONTAINMENT": 0.5769,
+        "FLOW": 0.0385,
+        "MARKING": 0.1154,
+        "MONITORING": 0.1923,
+        "OPERATION": 0.0,
+        "STAGING": 0.0,
+        "THERMAL": 0.0385,
+        "TRANSITION": 0.0385
+      },
+      "headed_dist": {
+        "CONTAINMENT": 0.0,
+        "FLOW": 0.6512,
+        "MARKING": 0.0494,
+        "MONITORING": 0.0,
+        "OPERATION": 0.1977,
+        "STAGING": 0.0174,
+        "THERMAL": 0.0843,
+        "TRANSITION": 0.0
+      }
+    }
+  },
+  "test2_per_prefix_analysis": {
+    "da": {
+      "headless_tokens": 574,
+      "all_tokens": 575,
+      "headless_fraction": 0.9983,
+      "prefix_base": "a",
+      "category_dist": {
+        "CONTAINMENT": 2,
+        "FLOW": 31,
+        "MARKING": 129,
+        "MONITORING": 6,
+        "OPERATION": 9,
+        "STAGING": 361,
+        "THERMAL": 3,
+        "TRANSITION": 33
+      }
+    },
+    "ch": {
+      "headless_tokens": 516,
+      "all_tokens": 2856,
+      "headless_fraction": 0.1807,
+      "prefix_base": "h",
+      "category_dist": {
+        "CONTAINMENT": 203,
+        "FLOW": 8,
+        "MARKING": 92,
+        "MONITORING": 72,
+        "OPERATION": 122,
+        "STAGING": 7,
+        "THERMAL": 7,
+        "TRANSITION": 5
+      }
+    },
+    "BARE": {
+      "headless_tokens": 491,
+      "all_tokens": 2840,
+      "headless_fraction": 0.1729,
+      "prefix_base": null,
+      "category_dist": {
+        "CONTAINMENT": 132,
+        "FLOW": 77,
+        "MARKING": 113,
+        "MONITORING": 30,
+        "OPERATION": 14,
+        "STAGING": 43,
+        "THERMAL": 19,
+        "TRANSITION": 63
+      }
+    },
+    "qo": {
+      "headless_tokens": 296,
+      "all_tokens": 1546,
+      "headless_fraction": 0.1915,
+      "prefix_base": "o",
+      "category_dist": {
+        "CONTAINMENT": 29,
+        "FLOW": 11,
+        "MARKING": 165,
+        "MONITORING": 10,
+        "OPERATION": 29,
+        "STAGING": 30,
+        "THERMAL": 14,
+        "TRANSITION": 8
+      }
+    },
+    "sa": {
+      "headless_tokens": 194,
+      "all_tokens": 194,
+      "headless_fraction": 1.0,
+      "prefix_base": "a",
+      "category_dist": {
+        "CONTAINMENT": 0,
+        "FLOW": 10,
+        "MARKING": 64,
+        "MONITORING": 1,
+        "OPERATION": 4,
+        "STAGING": 108,
+        "THERMAL": 2,
+        "TRANSITION": 5
+      }
+    },
+    "sh": {
+      "headless_tokens": 192,
+      "all_tokens": 1926,
+      "headless_fraction": 0.0997,
+      "prefix_base": "h",
+      "category_dist": {
+        "CONTAINMENT": 78,
+        "FLOW": 1,
+        "MARKING": 27,
+        "MONITORING": 28,
+        "OPERATION": 55,
+        "STAGING": 0,
+        "THERMAL": 1,
+        "TRANSITION": 2
+      }
+    },
+    "ka": {
+      "headless_tokens": 125,
+      "all_tokens": 127,
+      "headless_fraction": 0.9843,
+      "prefix_base": "a",
+      "category_dist": {
+        "CONTAINMENT": 0,
+        "FLOW": 9,
+        "MARKING": 53,
+        "MONITORING": 0,
+        "OPERATION": 2,
+        "STAGING": 54,
+        "THERMAL": 0,
+        "TRANSITION": 7
+      }
+    },
+    "ta": {
+      "headless_tokens": 107,
+      "all_tokens": 107,
+      "headless_fraction": 1.0,
+      "prefix_base": "a",
+      "category_dist": {
+        "CONTAINMENT": 0,
+        "FLOW": 6,
+        "MARKING": 31,
+        "MONITORING": 1,
+        "OPERATION": 0,
+        "STAGING": 63,
+        "THERMAL": 0,
+        "TRANSITION": 6
+      }
+    },
+    "te": {
+      "headless_tokens": 84,
+      "all_tokens": 233,
+      "headless_fraction": 0.3605,
+      "prefix_base": "e",
+      "category_dist": {
+        "CONTAINMENT": 75,
+        "FLOW": 1,
+        "MARKING": 8,
+        "MONITORING": 0,
+        "OPERATION": 0,
+        "STAGING": 0,
+        "THERMAL": 0,
+        "TRANSITION": 0
+      }
+    },
+    "so": {
+      "headless_tokens": 68,
+      "all_tokens": 78,
+      "headless_fraction": 0.8718,
+      "prefix_base": "o",
+      "category_dist": {
+        "CONTAINMENT": 1,
+        "FLOW": 3,
+        "MARKING": 10,
+        "MONITORING": 4,
+        "OPERATION": 15,
+        "STAGING": 26,
+        "THERMAL": 7,
+        "TRANSITION": 2
+      }
+    },
+    "po": {
+      "headless_tokens": 62,
+      "all_tokens": 76,
+      "headless_fraction": 0.8158,
+      "prefix_base": "o",
+      "category_dist": {
+        "CONTAINMENT": 2,
+        "FLOW": 7,
+        "MARKING": 11,
+        "MONITORING": 3,
+        "OPERATION": 12,
+        "STAGING": 20,
+        "THERMAL": 4,
+        "TRANSITION": 3
+      }
+    },
+    "ol": {
+      "headless_tokens": 58,
+      "all_tokens": 496,
+      "headless_fraction": 0.1169,
+      "prefix_base": "l",
+      "category_dist": {
+        "CONTAINMENT": 32,
+        "FLOW": 0,
+        "MARKING": 21,
+        "MONITORING": 2,
+        "OPERATION": 1,
+        "STAGING": 2,
+        "THERMAL": 0,
+        "TRANSITION": 0
+      }
+    },
+    "ke": {
+      "headless_tokens": 58,
+      "all_tokens": 212,
+      "headless_fraction": 0.2736,
+      "prefix_base": "e",
+      "category_dist": {
+        "CONTAINMENT": 52,
+        "FLOW": 1,
+        "MARKING": 4,
+        "MONITORING": 0,
+        "OPERATION": 1,
+        "STAGING": 0,
+        "THERMAL": 0,
+        "TRANSITION": 0
+      }
+    },
+    "to": {
+      "headless_tokens": 43,
+      "all_tokens": 49,
+      "headless_fraction": 0.8776,
+      "prefix_base": "o",
+      "category_dist": {
+        "CONTAINMENT": 10,
+        "FLOW": 2,
+        "MARKING": 9,
+        "MONITORING": 4,
+        "OPERATION": 2,
+        "STAGING": 11,
+        "THERMAL": 2,
+        "TRANSITION": 3
+      }
+    },
+    "ot": {
+      "headless_tokens": 38,
+      "all_tokens": 1171,
+      "headless_fraction": 0.0325,
+      "prefix_base": "t",
+      "category_dist": {
+        "CONTAINMENT": 30,
+        "FLOW": 1,
+        "MARKING": 4,
+        "MONITORING": 1,
+        "OPERATION": 0,
+        "STAGING": 0,
+        "THERMAL": 1,
+        "TRANSITION": 1
+      }
+    },
+    "ok": {
+      "headless_tokens": 33,
+      "all_tokens": 1183,
+      "headless_fraction": 0.0279,
+      "prefix_base": "k",
+      "category_dist": {
+        "CONTAINMENT": 22,
+        "FLOW": 0,
+        "MARKING": 3,
+        "MONITORING": 2,
+        "OPERATION": 0,
+        "STAGING": 6,
+        "THERMAL": 0,
+        "TRANSITION": 0
+      }
+    },
+    "pch": {
+      "headless_tokens": 32,
+      "all_tokens": 201,
+      "headless_fraction": 0.1592,
+      "prefix_base": "h",
+      "category_dist": {
+        "CONTAINMENT": 18,
+        "FLOW": 2,
+        "MARKING": 11,
+        "MONITORING": 0,
+        "OPERATION": 0,
+        "STAGING": 0,
+        "THERMAL": 1,
+        "TRANSITION": 0
+      }
+    },
+    "do": {
+      "headless_tokens": 31,
+      "all_tokens": 33,
+      "headless_fraction": 0.9394,
+      "prefix_base": "o",
+      "category_dist": {
+        "CONTAINMENT": 4,
+        "FLOW": 4,
+        "MARKING": 8,
+        "MONITORING": 2,
+        "OPERATION": 3,
+        "STAGING": 8,
+        "THERMAL": 2,
+        "TRANSITION": 0
+      }
+    },
+    "tch": {
+      "headless_tokens": 30,
+      "all_tokens": 146,
+      "headless_fraction": 0.2055,
+      "prefix_base": "h",
+      "category_dist": {
+        "CONTAINMENT": 26,
+        "FLOW": 2,
+        "MARKING": 1,
+        "MONITORING": 1,
+        "OPERATION": 0,
+        "STAGING": 0,
+        "THERMAL": 0,
+        "TRANSITION": 0
+      }
+    },
+    "kch": {
+      "headless_tokens": 23,
+      "all_tokens": 78,
+      "headless_fraction": 0.2949,
+      "prefix_base": "h",
+      "category_dist": {
+        "CONTAINMENT": 21,
+        "FLOW": 0,
+        "MARKING": 2,
+        "MONITORING": 0,
+        "OPERATION": 0,
+        "STAGING": 0,
+        "THERMAL": 0,
+        "TRANSITION": 0
+      }
+    },
+    "lch": {
+      "headless_tokens": 22,
+      "all_tokens": 261,
+      "headless_fraction": 0.0843,
+      "prefix_base": "h",
+      "category_dist": {
+        "CONTAINMENT": 18,
+        "FLOW": 0,
+        "MARKING": 1,
+        "MONITORING": 2,
+        "OPERATION": 1,
+        "STAGING": 0,
+        "THERMAL": 0,
+        "TRANSITION": 0
+      }
+    },
+    "ko": {
+      "headless_tokens": 18,
+      "all_tokens": 22,
+      "headless_fraction": 0.8182,
+      "prefix_base": "o",
+      "category_dist": {
+        "CONTAINMENT": 3,
+        "FLOW": 3,
+        "MARKING": 2,
+        "MONITORING": 0,
+        "OPERATION": 3,
+        "STAGING": 5,
+        "THERMAL": 0,
+        "TRANSITION": 2
+      }
+    },
+    "al": {
+      "headless_tokens": 16,
+      "all_tokens": 87,
+      "headless_fraction": 0.1839,
+      "prefix_base": "l",
+      "category_dist": {
+        "CONTAINMENT": 9,
+        "FLOW": 0,
+        "MARKING": 4,
+        "MONITORING": 0,
+        "OPERATION": 0,
+        "STAGING": 1,
+        "THERMAL": 1,
+        "TRANSITION": 1
+      }
+    },
+    "ct": {
+      "headless_tokens": 14,
+      "all_tokens": 15,
+      "headless_fraction": 0.9333,
+      "prefix_base": "t",
+      "category_dist": {
+        "CONTAINMENT": 0,
+        "FLOW": 1,
+        "MARKING": 2,
+        "MONITORING": 9,
+        "OPERATION": 0,
+        "STAGING": 0,
+        "THERMAL": 1,
+        "TRANSITION": 1
+      }
+    },
+    "dch": {
+      "headless_tokens": 11,
+      "all_tokens": 89,
+      "headless_fraction": 0.1236,
+      "prefix_base": "h",
+      "category_dist": {
+        "CONTAINMENT": 8,
+        "FLOW": 0,
+        "MARKING": 1,
+        "MONITORING": 0,
+        "OPERATION": 0,
+        "STAGING": 0,
+        "THERMAL": 1,
+        "TRANSITION": 1
+      }
+    },
+    "yk": {
+      "headless_tokens": 10,
+      "all_tokens": 252,
+      "headless_fraction": 0.0397,
+      "prefix_base": "k",
+      "category_dist": {
+        "CONTAINMENT": 5,
+        "FLOW": 0,
+        "MARKING": 3,
+        "MONITORING": 1,
+        "OPERATION": 0,
+        "STAGING": 0,
+        "THERMAL": 1,
+        "TRANSITION": 0
+      }
+    }
+  },
+  "test3_prediction_improvement": {
+    "total_headless_tokens": 3183,
+    "baseline_accuracy": 0.252,
+    "baseline_category": "CONTAINMENT",
+    "method_B_accuracy": 0.0906,
+    "method_B_applicable": 1766,
+    "method_C_accuracy": 0.497,
+    "improvement_B": -0.1614,
+    "improvement_C": 0.2451
+  },
+  "test4_a_base_differentiation": {
+    "a_base_prefixes": {
+      "sa": {
+        "n": 194,
+        "cats": {
+          "STAGING": 108,
+          "MARKING": 64,
+          "OPERATION": 4,
+          "THERMAL": 2,
+          "FLOW": 10,
+          "TRANSITION": 5,
+          "MONITORING": 1
+        }
+      },
+      "da": {
+        "n": 574,
+        "cats": {
+          "STAGING": 361,
+          "OPERATION": 9,
+          "MARKING": 129,
+          "TRANSITION": 33,
+          "FLOW": 31,
+          "THERMAL": 3,
+          "MONITORING": 6,
+          "CONTAINMENT": 2
+        }
+      },
+      "ta": {
+        "n": 107,
+        "cats": {
+          "STAGING": 63,
+          "FLOW": 6,
+          "TRANSITION": 6,
+          "MARKING": 31,
+          "MONITORING": 1
+        }
+      },
+      "ka": {
+        "n": 125,
+        "cats": {
+          "MARKING": 53,
+          "STAGING": 54,
+          "TRANSITION": 7,
+          "FLOW": 9,
+          "OPERATION": 2
+        }
+      }
+    },
+    "chi2": 35.7,
+    "p_value": 0.023569899998521982,
+    "cramers_v": 0.109,
+    "pairwise_cosine": {
+      "da_vs_ka": 0.9086,
+      "da_vs_sa": 0.9807,
+      "da_vs_ta": 0.9933,
+      "ka_vs_sa": 0.9693,
+      "ka_vs_ta": 0.9496,
+      "sa_vs_ta": 0.9953
+    }
+  },
+  "test5_non_a_base": {
+    "a_base_n": 1000,
+    "non_a_n": 1692,
+    "bare_n": 491,
+    "cosine_a_vs_non_a": 0.3437,
+    "cosine_a_vs_bare": 0.4767,
+    "cosine_non_a_vs_bare": 0.8696
+  },
+  "test6_full_recovery": {
+    "recoverable": 1767,
+    "not_recoverable": 1521,
+    "atom_vote_total": 1766,
+    "original_atom_accuracy": 0.6082,
+    "recovered_atom_accuracy": 0.5725,
+    "improvement_pp": -3.6
+  },
+  "verdict": "REJECTED",
+  "explanation": "PREFIX-base categories are DISSIMILAR to HEAD categories. Headless compounds are genuinely different operations, not abbreviated headed ones.",
+  "recovery_useful": false
+}

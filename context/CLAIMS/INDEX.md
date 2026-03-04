@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1238 validated constraints | **Version:** 5.04 | **Date:** 2026-03-04
+**Total:** 1239 validated constraints | **Version:** 5.04 | **Date:** 2026-03-04
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4482,7 +4482,7 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 
 | # | Constraint | Tier | Tags | Details |
 |---|-----------|------|------|---------|
-| 1394 | instruction encoding architecture | 2 | B, grammar, composition | HEAD+MOD*+TERM with variable-length ordered modifier stack (p→f→i→c→d→s). Frame predicts 64% of category; modifiers shift 36%. Fusion gradient: only dy hard-fused, most "macro-atoms" are adjacent slots. Suffix confirmed independent layer (entropy 1.475 bits). |
+| 1394 | instruction encoding architecture | 2 | GLOBAL, grammar, composition | HEAD+MOD*+TERM with variable-length ordered modifier stack (p→f→i→c→d→s). Frame predicts 64% of category; modifiers shift 36%. Fusion gradient: only dy hard-fused, most "macro-atoms" are adjacent slots. Suffix confirmed independent layer (entropy 1.475 bits). Scope upgraded to GLOBAL by C1395 (Phase 507). |
 
 **Phase 505 findings (Instruction Encoding Architecture, 7 tests):**
 - T1: Suffix boundary — suffix is independent layer (77.1% of MIDDLEs take 3+ suffixes, entropy 1.475 bits), not an artifact of terminal atoms
@@ -4499,6 +4499,21 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T9: h-terminal transparency — NOT chaotic; HEAD+MODS predict at V=0.988. h="watch" is transparent (lets HEAD signal through). PREFIX compensates +0.166 V
 - T10: Modifier ordering — morphological convention (71% same category on reversal); first modifier dominates (66.5%); multi-stage stacking collapses to MARKING (97-100%); suffix mode coupling V=0.260
 - T11: e-atom domain specificity — genuine domain, NOT default. o is real versatility champion (entropy 2.396). e-depth saturation: ee=84% THERMAL, eee=100%. e has LOWEST modifier dominance (V=0.672)
+
+### Cross-System Instruction Encoding (C1395) -- Phase: INSTRUCTION_ENCODING_MAP (Phase 507)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1395 | cross-system instruction encoding | 2 | GLOBAL, grammar, composition | HEAD+MOD*+TERM architecture is manuscript-wide: A-exclusive MIDDLEs follow same slot grammar (Fisher p=0.90, pair-lock 84.2%, V=0.114). Bridge MIDDLEs 100% category stable (V=0.562). A enriched in state terminals (l 1.84x), B in action terminals (dy 144x). A records show positional grammar: o-HEAD leads, headless trails. |
+
+**Phase 507 findings (Cross-System Instruction Encoding, 7 tests):**
+- T1: A-exclusive slot grammar — 579 A-exclusive MIDDLEs follow same encoding (modifier ordering Fisher p=0.90, pair-lock 84.2% agreement, atom distribution V=0.114). VERDICT: SHARED_GRAMMAR
+- T2: Headless HEAD recovery — REJECTED (cosine 0.220, accuracy 9.1% vs 25.2% baseline). Headless compounds are genuinely headless, not abbreviated
+- T3: A record HEAD coherence — DOMAIN_COHERENT (z=-17.4, 7.7% entropy reduction). A records more coherent than B lines (7.7% vs 5.2%). o-HEAD leads (37.5% first), headless trails (55.5% last)
+- T4: Cross-system HEAD stability — 100% category match for all 85 bridge MIDDLEs. HEAD×Category V=0.562. PREFIX wrapping tracks HEAD cross-system (cosine 0.675-0.998)
+- T5: A-exclusive frames — only 2 A-exclusive frames (k+n, k+t); 17 B-only execution frames. dy cliff: 144x B-enriched. A=state descriptions (l 1.84x), B=action instructions (dy 14.4%)
+- T6: A record → B folio prediction — statistically significant (z=+8.60) but practically flat (R²<5%). Near-saturation: each A record → ~81/82 B folios. Confirms C1136/C484 pool relationship
+- T7: Situation description tests — P8 CONFIRMED (within-folio Jaccard 1.22x, z=+20.9), P10 CONFIRMED (positional grammar all p≈0), P6 PARTIAL (confounded by record length)
 
 ---
 

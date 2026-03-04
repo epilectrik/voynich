@@ -1,0 +1,795 @@
+{
+  "test_a_frames": {
+    "vocabulary_partition": {
+      "a_exclusive": 579,
+      "b_exclusive": 900,
+      "shared": 393
+    },
+    "a_excl_stats": {
+      "total_compounds": 579,
+      "single_atoms": 0,
+      "headless": 259,
+      "termless": 0
+    },
+    "b_stats": {
+      "total_compounds": 1273,
+      "single_atoms": 20,
+      "headless": 466,
+      "termless": 0
+    },
+    "frame_exclusivity": {
+      "a_only_frames": 2,
+      "b_only_frames": 17,
+      "shared_frames": 30
+    },
+    "a_only_frames": {
+      "kxn": {
+        "types": 1,
+        "tokens": 1,
+        "examples": [
+          "kydain"
+        ],
+        "head_gloss": "heat",
+        "term_gloss": "halt"
+      },
+      "kxt": {
+        "types": 2,
+        "tokens": 2,
+        "examples": [
+          "keeyct",
+          "kyt"
+        ],
+        "head_gloss": "heat",
+        "term_gloss": "transfer"
+      }
+    },
+    "b_only_frames": {
+      "axm": {
+        "types": 1,
+        "tokens": 174,
+        "examples": [
+          "am"
+        ],
+        "head_gloss": "yield",
+        "term_gloss": "final"
+      },
+      "axn": {
+        "types": 3,
+        "tokens": 1272,
+        "examples": [
+          "an",
+          "aiin",
+          "ain"
+        ],
+        "head_gloss": "yield",
+        "term_gloss": "halt"
+      },
+      "axr": {
+        "types": 5,
+        "tokens": 687,
+        "examples": [
+          "ar",
+          "aiir",
+          "akar",
+          "allar",
+          "air"
+        ],
+        "head_gloss": "yield",
+        "term_gloss": "respond"
+      },
+      "dx_": {
+        "types": 1,
+        "tokens": 675,
+        "examples": [
+          "dy"
+        ],
+        "head_gloss": "mark",
+        "term_gloss": "NONE"
+      },
+      "exdy": {
+        "types": 1,
+        "tokens": 1938,
+        "examples": [
+          "edy"
+        ],
+        "head_gloss": "cool",
+        "term_gloss": "seal"
+      },
+      "exl": {
+        "types": 9,
+        "tokens": 356,
+        "examples": [
+          "eeol",
+          "eeal",
+          "edal",
+          "eal",
+          "eedl"
+        ],
+        "head_gloss": "cool",
+        "term_gloss": "state"
+      },
+      "exn": {
+        "types": 1,
+        "tokens": 1,
+        "examples": [
+          "eain"
+        ],
+        "head_gloss": "cool",
+        "term_gloss": "halt"
+      },
+      "ix_": {
+        "types": 2,
+        "tokens": 24,
+        "examples": [
+          "ii",
+          "iii"
+        ],
+        "head_gloss": "iterate",
+        "term_gloss": "NONE"
+      },
+      "kxdy": {
+        "types": 2,
+        "tokens": 2,
+        "examples": [
+          "kchdy",
+          "kedy"
+        ],
+        "head_gloss": "heat",
+        "term_gloss": "seal"
+      },
+      "kxm": {
+        "types": 1,
+        "tokens": 1,
+        "examples": [
+          "kam"
+        ],
+        "head_gloss": "heat",
+        "term_gloss": "final"
+      },
+      "kxr": {
+        "types": 5,
+        "tokens": 7,
+        "examples": [
+          "kchedar",
+          "kor",
+          "kar",
+          "kair",
+          "kaidarar"
+        ],
+        "head_gloss": "heat",
+        "term_gloss": "respond"
+      },
+      "oxdy": {
+        "types": 2,
+        "tokens": 2,
+        "examples": [
+          "ody",
+          "oldy"
+        ],
+        "head_gloss": "arrange",
+        "term_gloss": "seal"
+      },
+      "oxm": {
+        "types": 2,
+        "tokens": 26,
+        "examples": [
+          "opom",
+          "om"
+        ],
+        "head_gloss": "arrange",
+        "term_gloss": "final"
+      },
+      "txdy": {
+        "types": 1,
+        "tokens": 1,
+        "examples": [
+          "tddy"
+        ],
+        "head_gloss": "transfer",
+        "term_gloss": "seal"
+      },
+      "txk": {
+        "types": 4,
+        "tokens": 4,
+        "examples": [
+          "tchok",
+          "teytyqok",
+          "tlolk",
+          "tok"
+        ],
+        "head_gloss": "transfer",
+        "term_gloss": "heat"
+      },
+      "txr": {
+        "types": 3,
+        "tokens": 3,
+        "examples": [
+          "tchor",
+          "tar",
+          "tor"
+        ],
+        "head_gloss": "transfer",
+        "term_gloss": "respond"
+      },
+      "txy": {
+        "types": 1,
+        "tokens": 4,
+        "examples": [
+          "ty"
+        ],
+        "head_gloss": "transfer",
+        "term_gloss": "end"
+      }
+    },
+    "shared_frame_comparison": [
+      {
+        "frame": "ox_",
+        "a_excl_types": 100,
+        "b_types": 178,
+        "a_frac": 0.3125,
+        "b_frac": 0.2206,
+        "ratio": 1.417,
+        "head_gloss": "arrange",
+        "term_gloss": "NONE"
+      },
+      {
+        "frame": "ex_",
+        "a_excl_types": 46,
+        "b_types": 172,
+        "a_frac": 0.1437,
+        "b_frac": 0.2131,
+        "ratio": 0.674,
+        "head_gloss": "cool",
+        "term_gloss": "NONE"
+      },
+      {
+        "frame": "tx_",
+        "a_excl_types": 24,
+        "b_types": 41,
+        "a_frac": 0.075,
+        "b_frac": 0.0508,
+        "ratio": 1.476,
+        "head_gloss": "transfer",
+        "term_gloss": "NONE"
+      },
+      {
+        "frame": "oxh",
+        "a_excl_types": 19,
+        "b_types": 38,
+        "a_frac": 0.0594,
+        "b_frac": 0.0471,
+        "ratio": 1.261,
+        "head_gloss": "arrange",
+        "term_gloss": "watch"
+      },
+      {
+        "frame": "kx_",
+        "a_excl_types": 19,
+        "b_types": 58,
+        "a_frac": 0.0594,
+        "b_frac": 0.0719,
+        "ratio": 0.826,
+        "head_gloss": "heat",
+        "term_gloss": "NONE"
+      },
+      {
+        "frame": "ax_",
+        "a_excl_types": 16,
+        "b_types": 61,
+        "a_frac": 0.05,
+        "b_frac": 0.0756,
+        "ratio": 0.661,
+        "head_gloss": "yield",
+        "term_gloss": "NONE"
+      },
+      {
+        "frame": "oxk",
+        "a_excl_types": 13,
+        "b_types": 20,
+        "a_frac": 0.0406,
+        "b_frac": 0.0248,
+        "ratio": 1.639,
+        "head_gloss": "arrange",
+        "term_gloss": "heat"
+      },
+      {
+        "frame": "oxl",
+        "a_excl_types": 12,
+        "b_types": 11,
+        "a_frac": 0.0375,
+        "b_frac": 0.0136,
+        "ratio": 2.751,
+        "head_gloss": "arrange",
+        "term_gloss": "state"
+      },
+      {
+        "frame": "exh",
+        "a_excl_types": 11,
+        "b_types": 38,
+        "a_frac": 0.0344,
+        "b_frac": 0.0471,
+        "ratio": 0.73,
+        "head_gloss": "cool",
+        "term_gloss": "watch"
+      },
+      {
+        "frame": "oxr",
+        "a_excl_types": 8,
+        "b_types": 8,
+        "a_frac": 0.025,
+        "b_frac": 0.0099,
+        "ratio": 2.522,
+        "head_gloss": "arrange",
+        "term_gloss": "respond"
+      },
+      {
+        "frame": "exk",
+        "a_excl_types": 6,
+        "b_types": 26,
+        "a_frac": 0.0187,
+        "b_frac": 0.0322,
+        "ratio": 0.582,
+        "head_gloss": "cool",
+        "term_gloss": "heat"
+      },
+      {
+        "frame": "axh",
+        "a_excl_types": 5,
+        "b_types": 13,
+        "a_frac": 0.0156,
+        "b_frac": 0.0161,
+        "ratio": 0.97,
+        "head_gloss": "yield",
+        "term_gloss": "watch"
+      },
+      {
+        "frame": "axk",
+        "a_excl_types": 4,
+        "b_types": 9,
+        "a_frac": 0.0125,
+        "b_frac": 0.0112,
+        "ratio": 1.121,
+        "head_gloss": "yield",
+        "term_gloss": "heat"
+      },
+      {
+        "frame": "ext",
+        "a_excl_types": 4,
+        "b_types": 15,
+        "a_frac": 0.0125,
+        "b_frac": 0.0186,
+        "ratio": 0.672,
+        "head_gloss": "cool",
+        "term_gloss": "transfer"
+      },
+      {
+        "frame": "oxt",
+        "a_excl_types": 4,
+        "b_types": 11,
+        "a_frac": 0.0125,
+        "b_frac": 0.0136,
+        "ratio": 0.917,
+        "head_gloss": "arrange",
+        "term_gloss": "transfer"
+      },
+      {
+        "frame": "axl",
+        "a_excl_types": 3,
+        "b_types": 5,
+        "a_frac": 0.0094,
+        "b_frac": 0.0062,
+        "ratio": 1.513,
+        "head_gloss": "yield",
+        "term_gloss": "state"
+      },
+      {
+        "frame": "txt",
+        "a_excl_types": 3,
+        "b_types": 2,
+        "a_frac": 0.0094,
+        "b_frac": 0.0025,
+        "ratio": 3.783,
+        "head_gloss": "transfer",
+        "term_gloss": "transfer"
+      },
+      {
+        "frame": "txh",
+        "a_excl_types": 2,
+        "b_types": 5,
+        "a_frac": 0.0063,
+        "b_frac": 0.0062,
+        "ratio": 1.009,
+        "head_gloss": "transfer",
+        "term_gloss": "watch"
+      },
+      {
+        "frame": "oxn",
+        "a_excl_types": 2,
+        "b_types": 3,
+        "a_frac": 0.0063,
+        "b_frac": 0.0037,
+        "ratio": 1.681,
+        "head_gloss": "arrange",
+        "term_gloss": "halt"
+      },
+      {
+        "frame": "exr",
+        "a_excl_types": 2,
+        "b_types": 9,
+        "a_frac": 0.0063,
+        "b_frac": 0.0112,
+        "ratio": 0.56,
+        "head_gloss": "cool",
+        "term_gloss": "respond"
+      },
+      {
+        "frame": "exm",
+        "a_excl_types": 2,
+        "b_types": 1,
+        "a_frac": 0.0063,
+        "b_frac": 0.0012,
+        "ratio": 5.044,
+        "head_gloss": "cool",
+        "term_gloss": "final"
+      },
+      {
+        "frame": "kxk",
+        "a_excl_types": 2,
+        "b_types": 5,
+        "a_frac": 0.0063,
+        "b_frac": 0.0062,
+        "ratio": 1.009,
+        "head_gloss": "heat",
+        "term_gloss": "heat"
+      },
+      {
+        "frame": "kxl",
+        "a_excl_types": 2,
+        "b_types": 4,
+        "a_frac": 0.0063,
+        "b_frac": 0.005,
+        "ratio": 1.261,
+        "head_gloss": "heat",
+        "term_gloss": "state"
+      },
+      {
+        "frame": "oxy",
+        "a_excl_types": 2,
+        "b_types": 2,
+        "a_frac": 0.0063,
+        "b_frac": 0.0025,
+        "ratio": 2.522,
+        "head_gloss": "arrange",
+        "term_gloss": "end"
+      },
+      {
+        "frame": "txl",
+        "a_excl_types": 1,
+        "b_types": 2,
+        "a_frac": 0.0031,
+        "b_frac": 0.0025,
+        "ratio": 1.261,
+        "head_gloss": "transfer",
+        "term_gloss": "state"
+      },
+      {
+        "frame": "kxy",
+        "a_excl_types": 1,
+        "b_types": 2,
+        "a_frac": 0.0031,
+        "b_frac": 0.0025,
+        "ratio": 1.261,
+        "head_gloss": "heat",
+        "term_gloss": "end"
+      },
+      {
+        "frame": "axt",
+        "a_excl_types": 1,
+        "b_types": 3,
+        "a_frac": 0.0031,
+        "b_frac": 0.0037,
+        "ratio": 0.841,
+        "head_gloss": "yield",
+        "term_gloss": "transfer"
+      },
+      {
+        "frame": "exy",
+        "a_excl_types": 1,
+        "b_types": 6,
+        "a_frac": 0.0031,
+        "b_frac": 0.0074,
+        "ratio": 0.42,
+        "head_gloss": "cool",
+        "term_gloss": "end"
+      },
+      {
+        "frame": "axy",
+        "a_excl_types": 1,
+        "b_types": 1,
+        "a_frac": 0.0031,
+        "b_frac": 0.0012,
+        "ratio": 2.522,
+        "head_gloss": "yield",
+        "term_gloss": "end"
+      },
+      {
+        "frame": "kxh",
+        "a_excl_types": 1,
+        "b_types": 14,
+        "a_frac": 0.0031,
+        "b_frac": 0.0173,
+        "ratio": 0.18,
+        "head_gloss": "heat",
+        "term_gloss": "watch"
+      }
+    ]
+  },
+  "test_b_terminals": {
+    "type_level": {
+      "a_all_total": 574,
+      "b_all_total": 807,
+      "enrichment": [
+        {
+          "terminal": "dy",
+          "a_all_types": 2,
+          "a_pct": 0.35,
+          "b_all_types": 6,
+          "b_pct": 0.74,
+          "ratio_a_over_b": 0.469,
+          "a_exclusive_types": 0,
+          "b_exclusive_types": 4,
+          "gloss": "seal",
+          "category_bias": "seal/END-class"
+        },
+        {
+          "terminal": "h",
+          "a_all_types": 73,
+          "a_pct": 12.72,
+          "b_all_types": 108,
+          "b_pct": 13.38,
+          "ratio_a_over_b": 0.95,
+          "a_exclusive_types": 38,
+          "b_exclusive_types": 73,
+          "gloss": "watch",
+          "category_bias": "transparent"
+        },
+        {
+          "terminal": "k",
+          "a_all_types": 43,
+          "a_pct": 7.49,
+          "b_all_types": 64,
+          "b_pct": 7.93,
+          "ratio_a_over_b": 0.945,
+          "a_exclusive_types": 25,
+          "b_exclusive_types": 46,
+          "gloss": "heat",
+          "category_bias": "THERMAL-biased"
+        },
+        {
+          "terminal": "l",
+          "a_all_types": 30,
+          "a_pct": 5.23,
+          "b_all_types": 31,
+          "b_pct": 3.84,
+          "ratio_a_over_b": 1.361,
+          "a_exclusive_types": 18,
+          "b_exclusive_types": 19,
+          "gloss": "state",
+          "category_bias": "47% STAGING"
+        },
+        {
+          "terminal": "m",
+          "a_all_types": 5,
+          "a_pct": 0.87,
+          "b_all_types": 5,
+          "b_pct": 0.62,
+          "ratio_a_over_b": 1.406,
+          "a_exclusive_types": 2,
+          "b_exclusive_types": 2,
+          "gloss": "final",
+          "category_bias": "87% TRANSITION"
+        },
+        {
+          "terminal": "n",
+          "a_all_types": 8,
+          "a_pct": 1.39,
+          "b_all_types": 7,
+          "b_pct": 0.87,
+          "ratio_a_over_b": 1.607,
+          "a_exclusive_types": 3,
+          "b_exclusive_types": 2,
+          "gloss": "halt",
+          "category_bias": "64% TRANSITION"
+        },
+        {
+          "terminal": "r",
+          "a_all_types": 19,
+          "a_pct": 3.31,
+          "b_all_types": 30,
+          "b_pct": 3.72,
+          "ratio_a_over_b": 0.89,
+          "a_exclusive_types": 10,
+          "b_exclusive_types": 21,
+          "gloss": "respond",
+          "category_bias": "99% FLOW"
+        },
+        {
+          "terminal": "t",
+          "a_all_types": 31,
+          "a_pct": 5.4,
+          "b_all_types": 31,
+          "b_pct": 3.84,
+          "ratio_a_over_b": 1.406,
+          "a_exclusive_types": 14,
+          "b_exclusive_types": 14,
+          "gloss": "transfer",
+          "category_bias": "MONITORING-biased"
+        },
+        {
+          "terminal": "y",
+          "a_all_types": 9,
+          "a_pct": 1.57,
+          "b_all_types": 12,
+          "b_pct": 1.49,
+          "ratio_a_over_b": 1.054,
+          "a_exclusive_types": 5,
+          "b_exclusive_types": 8,
+          "gloss": "end",
+          "category_bias": "56% OPERATION"
+        },
+        {
+          "terminal": "_NONE_",
+          "a_all_types": 354,
+          "a_pct": 61.67,
+          "b_all_types": 513,
+          "b_pct": 63.57,
+          "ratio_a_over_b": 0.97,
+          "a_exclusive_types": 205,
+          "b_exclusive_types": 364,
+          "gloss": "none",
+          "category_bias": "?"
+        }
+      ]
+    },
+    "token_level": {
+      "a_all_total": 5578,
+      "b_all_total": 13540,
+      "enrichment": [
+        {
+          "terminal": "dy",
+          "a_tokens": 8,
+          "a_pct": 0.14,
+          "b_tokens": 1943,
+          "b_pct": 14.35,
+          "ratio": 0.01
+        },
+        {
+          "terminal": "h",
+          "a_tokens": 304,
+          "a_pct": 5.45,
+          "b_tokens": 699,
+          "b_pct": 5.16,
+          "ratio": 1.056
+        },
+        {
+          "terminal": "k",
+          "a_tokens": 249,
+          "a_pct": 4.46,
+          "b_tokens": 591,
+          "b_pct": 4.36,
+          "ratio": 1.023
+        },
+        {
+          "terminal": "l",
+          "a_tokens": 1276,
+          "a_pct": 22.88,
+          "b_tokens": 1680,
+          "b_pct": 12.41,
+          "ratio": 1.844
+        },
+        {
+          "terminal": "m",
+          "a_tokens": 109,
+          "a_pct": 1.95,
+          "b_tokens": 202,
+          "b_pct": 1.49,
+          "ratio": 1.31
+        },
+        {
+          "terminal": "n",
+          "a_tokens": 397,
+          "a_pct": 7.12,
+          "b_tokens": 1312,
+          "b_pct": 9.69,
+          "ratio": 0.735
+        },
+        {
+          "terminal": "r",
+          "a_tokens": 782,
+          "a_pct": 14.02,
+          "b_tokens": 1167,
+          "b_pct": 8.62,
+          "ratio": 1.627
+        },
+        {
+          "terminal": "t",
+          "a_tokens": 174,
+          "a_pct": 3.12,
+          "b_tokens": 242,
+          "b_pct": 1.79,
+          "ratio": 1.745
+        },
+        {
+          "terminal": "y",
+          "a_tokens": 523,
+          "a_pct": 9.38,
+          "b_tokens": 1549,
+          "b_pct": 11.44,
+          "ratio": 0.82
+        },
+        {
+          "terminal": "_NONE_",
+          "a_tokens": 1756,
+          "a_pct": 31.48,
+          "b_tokens": 4155,
+          "b_pct": 30.69,
+          "ratio": 1.026
+        }
+      ]
+    },
+    "chi_squared_all": {
+      "chi2": 5.89,
+      "p": 0.7512896902192585,
+      "dof": 9,
+      "cramers_v": 0.0653,
+      "n": 1381
+    },
+    "chi_squared_exclusive": {
+      "chi2": 8.95,
+      "p": 0.44177548176145776,
+      "cramers_v": 0.1013
+    },
+    "a_enriched_terminals": [
+      {
+        "terminal": "n",
+        "ratio": 1.607,
+        "gloss": "halt",
+        "category_bias": "64% TRANSITION"
+      },
+      {
+        "terminal": "m",
+        "ratio": 1.406,
+        "gloss": "final",
+        "category_bias": "87% TRANSITION"
+      },
+      {
+        "terminal": "t",
+        "ratio": 1.406,
+        "gloss": "transfer",
+        "category_bias": "MONITORING-biased"
+      },
+      {
+        "terminal": "l",
+        "ratio": 1.361,
+        "gloss": "state",
+        "category_bias": "47% STAGING"
+      }
+    ],
+    "b_enriched_terminals": [
+      {
+        "terminal": "dy",
+        "ratio": 0.469,
+        "gloss": "seal",
+        "category_bias": "seal/END-class"
+      }
+    ],
+    "l_r_prediction": {
+      "l_a_pct": 5.23,
+      "l_b_pct": 3.84,
+      "l_confirmed": true,
+      "r_a_pct": 3.31,
+      "r_b_pct": 3.72,
+      "r_confirmed": true
+    }
+  }
+}

@@ -4,6 +4,24 @@
 
 ---
 
+## Version 5.04.100 (2026-03-04) - Phase 507: Cross-System Instruction Encoding
+
+### Summary
+
+Phase 507 extends the HEAD+MOD*+TERM instruction encoding architecture (C1394) from B-only to manuscript-wide through 7 cross-system tests. A-exclusive MIDDLEs (579 types) follow the same slot grammar as B (modifier ordering Fisher p=0.90; pair-lock 84.2% agreement; atom distribution V=0.114). Bridge MIDDLEs show 100% HEAD category stability across A and B (V=0.562). However, A and B use the shared grammar with different functional emphasis: A is enriched in state-describing terminals (l at 1.84x) and arrangement frames (o-HEAD 2.5-2.8x), while B is dominated by action-performing terminals (dy at 144x enrichment) and execution frames (edy, aiin, ar). A records exhibit positional grammar — o-HEAD leads (37.5% first), headless trails (55.5% last) — with within-folio PP compatibility exceeding between-folio by 1.22x (z=+20.9). Headless HEAD recovery is rejected (9.1% accuracy, worse than random) — headless compounds are genuinely headless. A→B prediction is statistically significant (z=+8.60) but practically flat (R²<5%), confirming the uniform pool relationship (C484/C1136).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1395: cross-system instruction encoding (7 tests, shared grammar Fisher p=0.90, 100% bridge stability, A=state/B=action split, positional grammar confirmed) |
+| **ADDED** | `phases/INSTRUCTION_ENCODING_MAP/scripts/` — 7 scripts (a_exclusive_slot_grammar, headless_head_recovery, a_record_head_coherence, cross_system_head_stability, a_exclusive_frames_and_terminals, a_record_b_folio_prediction, a_situation_description_tests) |
+| **ADDED** | `phases/INSTRUCTION_ENCODING_MAP/results/` — 7 JSON result files |
+| **UPDATED** | C1394: scope expanded from B to GLOBAL; headless HEAD recovery open question resolved (REJECTED) |
+| **UPDATED** | INDEX.md — +1 constraint (1239 total) |
+
+---
+
 ## Version 5.04.99 (2026-03-04) - Phase 506: Instruction Encoding Refinement
 
 ### Summary

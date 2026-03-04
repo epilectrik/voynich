@@ -1,0 +1,1428 @@
+{
+  "t1_census": {
+    "a": {
+      "n_middles": 9,
+      "b_tokens": 2914,
+      "a_tokens": 790,
+      "middles": [
+        "a",
+        "ai",
+        "aii",
+        "aiin",
+        "ain",
+        "al",
+        "am",
+        "an",
+        "ar"
+      ]
+    },
+    "e": {
+      "n_middles": 16,
+      "b_tokens": 6223,
+      "a_tokens": 1530,
+      "middles": [
+        "e",
+        "eck",
+        "ect",
+        "ed",
+        "edy",
+        "ee",
+        "eek",
+        "eeo",
+        "eeol",
+        "eey",
+        "ek",
+        "eo",
+        "eod",
+        "eol",
+        "et",
+        "ey"
+      ]
+    },
+    "k": {
+      "n_middles": 10,
+      "b_tokens": 2840,
+      "a_tokens": 516,
+      "middles": [
+        "k",
+        "ka",
+        "kai",
+        "kc",
+        "kch",
+        "ke",
+        "kec",
+        "keed",
+        "keeo",
+        "keo"
+      ]
+    },
+    "o": {
+      "n_middles": 14,
+      "b_tokens": 2129,
+      "a_tokens": 2641,
+      "middles": [
+        "o",
+        "ock",
+        "oct",
+        "od",
+        "oiin",
+        "ok",
+        "okc",
+        "ol",
+        "om",
+        "op",
+        "opc",
+        "opch",
+        "or",
+        "ot"
+      ]
+    },
+    "t": {
+      "n_middles": 6,
+      "b_tokens": 766,
+      "a_tokens": 289,
+      "middles": [
+        "t",
+        "tc",
+        "tch",
+        "tcho",
+        "te",
+        "teo"
+      ]
+    },
+    "NONE": {
+      "n_middles": 30,
+      "middles": [
+        "ck",
+        "ckh",
+        "cp",
+        "cph",
+        "ct",
+        "d",
+        "do",
+        "dy",
+        "g",
+        "h",
+        "hy",
+        "i",
+        "ii",
+        "iin",
+        "im",
+        "in",
+        "l",
+        "lo",
+        "ly",
+        "m",
+        "n",
+        "pc",
+        "pch",
+        "qo",
+        "r",
+        "ry",
+        "s",
+        "sh",
+        "y",
+        "yt"
+      ]
+    }
+  },
+  "t2_b_categories": {
+    "NONE": {
+      "total_tokens": 5126,
+      "category_pcts": {
+        "THERMAL": 0.0,
+        "FLOW": 14.8,
+        "CONTAINMENT": 15.6,
+        "STAGING": 33.7,
+        "OPERATION": 3.8,
+        "TRANSITION": 14.0,
+        "MARKING": 13.9,
+        "MONITORING": 3.7
+      },
+      "dominant_category": "STAGING",
+      "dominant_pct": 33.7
+    },
+    "a": {
+      "total_tokens": 2914,
+      "category_pcts": {
+        "THERMAL": 0.0,
+        "FLOW": 55.5,
+        "CONTAINMENT": 0.6,
+        "STAGING": 0.0,
+        "OPERATION": 0.0,
+        "TRANSITION": 42.8,
+        "MARKING": 0.0,
+        "MONITORING": 0.0
+      },
+      "dominant_category": "FLOW",
+      "dominant_pct": 55.5
+    },
+    "e": {
+      "total_tokens": 6223,
+      "category_pcts": {
+        "THERMAL": 32.2,
+        "FLOW": 6.4,
+        "CONTAINMENT": 2.3,
+        "STAGING": 0.9,
+        "OPERATION": 36.0,
+        "TRANSITION": 21.4,
+        "MARKING": 0.0,
+        "MONITORING": 0.8
+      },
+      "dominant_category": "OPERATION",
+      "dominant_pct": 36.0
+    },
+    "k": {
+      "total_tokens": 2840,
+      "category_pcts": {
+        "THERMAL": 94.7,
+        "FLOW": 1.1,
+        "CONTAINMENT": 1.2,
+        "STAGING": 2.2,
+        "OPERATION": 0.0,
+        "TRANSITION": 0.9,
+        "MARKING": 0.0,
+        "MONITORING": 0.0
+      },
+      "dominant_category": "THERMAL",
+      "dominant_pct": 94.7
+    },
+    "o": {
+      "total_tokens": 2129,
+      "category_pcts": {
+        "THERMAL": 0.0,
+        "FLOW": 21.6,
+        "CONTAINMENT": 3.3,
+        "STAGING": 37.3,
+        "OPERATION": 24.4,
+        "TRANSITION": 1.7,
+        "MARKING": 1.2,
+        "MONITORING": 2.2
+      },
+      "dominant_category": "STAGING",
+      "dominant_pct": 37.3
+    },
+    "t": {
+      "total_tokens": 766,
+      "category_pcts": {
+        "THERMAL": 0.0,
+        "FLOW": 91.5,
+        "CONTAINMENT": 0.0,
+        "STAGING": 0.0,
+        "OPERATION": 8.5,
+        "TRANSITION": 0.0,
+        "MARKING": 0.0,
+        "MONITORING": 0.0
+      },
+      "dominant_category": "FLOW",
+      "dominant_pct": 91.5
+    }
+  },
+  "t3_a_prefixes": {
+    "NONE": {
+      "total_tokens": 3625,
+      "dominant_prefix": "da",
+      "dominant_pct": 27.8,
+      "top5": {
+        "da": 27.8,
+        "BARE": 20.2,
+        "ct": 9.0,
+        "ch": 5.9,
+        "do": 4.7
+      }
+    },
+    "a": {
+      "total_tokens": 790,
+      "dominant_prefix": "BARE",
+      "dominant_pct": 23.4,
+      "top5": {
+        "BARE": 23.4,
+        "ch": 16.3,
+        "ok": 15.9,
+        "ot": 14.1,
+        "sh": 6.6
+      }
+    },
+    "e": {
+      "total_tokens": 1530,
+      "dominant_prefix": "ch",
+      "dominant_pct": 32.7,
+      "top5": {
+        "ch": 32.7,
+        "sh": 22.0,
+        "ok": 13.3,
+        "ot": 5.7,
+        "yk": 4.9
+      }
+    },
+    "k": {
+      "total_tokens": 516,
+      "dominant_prefix": "qo",
+      "dominant_pct": 79.8,
+      "top5": {
+        "qo": 79.8,
+        "ch": 9.5,
+        "BARE": 2.9,
+        "ol": 2.5,
+        "sh": 2.1
+      }
+    },
+    "o": {
+      "total_tokens": 2641,
+      "dominant_prefix": "ch",
+      "dominant_pct": 35.5,
+      "top5": {
+        "ch": 35.5,
+        "sh": 19.7,
+        "BARE": 15.4,
+        "ok": 6.1,
+        "ot": 5.3
+      }
+    },
+    "t": {
+      "total_tokens": 289,
+      "dominant_prefix": "qo",
+      "dominant_pct": 83.0,
+      "top5": {
+        "qo": 83.0,
+        "ch": 6.9,
+        "BARE": 3.5,
+        "so": 1.7,
+        "sh": 1.4
+      }
+    }
+  },
+  "t4_per_middle": {
+    "n_compared": 85,
+    "matches": 85,
+    "mismatches": 0,
+    "match_rate_type": 1.0,
+    "match_rate_token": 1.0,
+    "details": [
+      {
+        "middle": "a",
+        "head": "a",
+        "atom_vote_category": "TRANSITION",
+        "b_dominant_category": "TRANSITION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 64,
+        "a_tokens": 44
+      },
+      {
+        "middle": "ai",
+        "head": "a",
+        "atom_vote_category": "TRANSITION",
+        "b_dominant_category": "TRANSITION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 174,
+        "a_tokens": 32
+      },
+      {
+        "middle": "aii",
+        "head": "a",
+        "atom_vote_category": "UNKNOWN",
+        "b_dominant_category": "UNKNOWN",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 32,
+        "a_tokens": 14
+      },
+      {
+        "middle": "aiin",
+        "head": "a",
+        "atom_vote_category": "TRANSITION",
+        "b_dominant_category": "TRANSITION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 834,
+        "a_tokens": 271
+      },
+      {
+        "middle": "ain",
+        "head": "a",
+        "atom_vote_category": "FLOW",
+        "b_dominant_category": "FLOW",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 420,
+        "a_tokens": 47
+      },
+      {
+        "middle": "al",
+        "head": "a",
+        "atom_vote_category": "FLOW",
+        "b_dominant_category": "FLOW",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 521,
+        "a_tokens": 143
+      },
+      {
+        "middle": "am",
+        "head": "a",
+        "atom_vote_category": "TRANSITION",
+        "b_dominant_category": "TRANSITION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 174,
+        "a_tokens": 56
+      },
+      {
+        "middle": "an",
+        "head": "a",
+        "atom_vote_category": "CONTAINMENT",
+        "b_dominant_category": "CONTAINMENT",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 18,
+        "a_tokens": 22
+      },
+      {
+        "middle": "ar",
+        "head": "a",
+        "atom_vote_category": "FLOW",
+        "b_dominant_category": "FLOW",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 677,
+        "a_tokens": 161
+      },
+      {
+        "middle": "ck",
+        "head": "NONE",
+        "atom_vote_category": "OPERATION",
+        "b_dominant_category": "OPERATION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 197,
+        "a_tokens": 81
+      },
+      {
+        "middle": "ckh",
+        "head": "NONE",
+        "atom_vote_category": "CONTAINMENT",
+        "b_dominant_category": "CONTAINMENT",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 127,
+        "a_tokens": 127
+      },
+      {
+        "middle": "cp",
+        "head": "NONE",
+        "atom_vote_category": "MARKING",
+        "b_dominant_category": "MARKING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 10,
+        "a_tokens": 20
+      },
+      {
+        "middle": "cph",
+        "head": "NONE",
+        "atom_vote_category": "MONITORING",
+        "b_dominant_category": "MONITORING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 36,
+        "a_tokens": 41
+      },
+      {
+        "middle": "ct",
+        "head": "NONE",
+        "atom_vote_category": "MONITORING",
+        "b_dominant_category": "MONITORING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 95,
+        "a_tokens": 35
+      },
+      {
+        "middle": "d",
+        "head": "NONE",
+        "atom_vote_category": "MARKING",
+        "b_dominant_category": "MARKING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 337,
+        "a_tokens": 152
+      },
+      {
+        "middle": "do",
+        "head": "NONE",
+        "atom_vote_category": "MARKING",
+        "b_dominant_category": "MARKING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 10,
+        "a_tokens": 14
+      },
+      {
+        "middle": "dy",
+        "head": "NONE",
+        "atom_vote_category": "CONTAINMENT",
+        "b_dominant_category": "CONTAINMENT",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 675,
+        "a_tokens": 183
+      },
+      {
+        "middle": "e",
+        "head": "e",
+        "atom_vote_category": "THERMAL",
+        "b_dominant_category": "THERMAL",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 867,
+        "a_tokens": 310
+      },
+      {
+        "middle": "eck",
+        "head": "e",
+        "atom_vote_category": "CONTAINMENT",
+        "b_dominant_category": "CONTAINMENT",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 90,
+        "a_tokens": 2
+      },
+      {
+        "middle": "ect",
+        "head": "e",
+        "atom_vote_category": "MONITORING",
+        "b_dominant_category": "MONITORING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 47,
+        "a_tokens": 2
+      },
+      {
+        "middle": "ed",
+        "head": "e",
+        "atom_vote_category": "FLOW",
+        "b_dominant_category": "FLOW",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 401,
+        "a_tokens": 4
+      },
+      {
+        "middle": "edy",
+        "head": "e",
+        "atom_vote_category": "OPERATION",
+        "b_dominant_category": "OPERATION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 1938,
+        "a_tokens": 7
+      },
+      {
+        "middle": "ee",
+        "head": "e",
+        "atom_vote_category": "THERMAL",
+        "b_dominant_category": "THERMAL",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 151,
+        "a_tokens": 71
+      },
+      {
+        "middle": "eek",
+        "head": "e",
+        "atom_vote_category": "CONTAINMENT",
+        "b_dominant_category": "CONTAINMENT",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 54,
+        "a_tokens": 10
+      },
+      {
+        "middle": "eeo",
+        "head": "e",
+        "atom_vote_category": "OPERATION",
+        "b_dominant_category": "OPERATION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 133,
+        "a_tokens": 26
+      },
+      {
+        "middle": "eeol",
+        "head": "e",
+        "atom_vote_category": "THERMAL",
+        "b_dominant_category": "THERMAL",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 47,
+        "a_tokens": 34
+      },
+      {
+        "middle": "eey",
+        "head": "e",
+        "atom_vote_category": "THERMAL",
+        "b_dominant_category": "THERMAL",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 644,
+        "a_tokens": 204
+      },
+      {
+        "middle": "ek",
+        "head": "e",
+        "atom_vote_category": "OPERATION",
+        "b_dominant_category": "OPERATION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 169,
+        "a_tokens": 41
+      },
+      {
+        "middle": "eo",
+        "head": "e",
+        "atom_vote_category": "TRANSITION",
+        "b_dominant_category": "TRANSITION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 359,
+        "a_tokens": 216
+      },
+      {
+        "middle": "eod",
+        "head": "e",
+        "atom_vote_category": "TRANSITION",
+        "b_dominant_category": "TRANSITION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 82,
+        "a_tokens": 51
+      },
+      {
+        "middle": "eol",
+        "head": "e",
+        "atom_vote_category": "THERMAL",
+        "b_dominant_category": "THERMAL",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 294,
+        "a_tokens": 224
+      },
+      {
+        "middle": "et",
+        "head": "e",
+        "atom_vote_category": "STAGING",
+        "b_dominant_category": "STAGING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 58,
+        "a_tokens": 19
+      },
+      {
+        "middle": "ey",
+        "head": "e",
+        "atom_vote_category": "TRANSITION",
+        "b_dominant_category": "TRANSITION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 889,
+        "a_tokens": 309
+      },
+      {
+        "middle": "g",
+        "head": "NONE",
+        "atom_vote_category": "TRANSITION",
+        "b_dominant_category": "TRANSITION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 8,
+        "a_tokens": 11
+      },
+      {
+        "middle": "h",
+        "head": "NONE",
+        "atom_vote_category": "MONITORING",
+        "b_dominant_category": "MONITORING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 48,
+        "a_tokens": 220
+      },
+      {
+        "middle": "hy",
+        "head": "NONE",
+        "atom_vote_category": "MONITORING",
+        "b_dominant_category": "MONITORING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 8,
+        "a_tokens": 104
+      },
+      {
+        "middle": "i",
+        "head": "NONE",
+        "atom_vote_category": "STAGING",
+        "b_dominant_category": "STAGING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 137,
+        "a_tokens": 82
+      },
+      {
+        "middle": "ii",
+        "head": "NONE",
+        "atom_vote_category": "STAGING",
+        "b_dominant_category": "STAGING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 23,
+        "a_tokens": 24
+      },
+      {
+        "middle": "iin",
+        "head": "NONE",
+        "atom_vote_category": "STAGING",
+        "b_dominant_category": "STAGING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 560,
+        "a_tokens": 654
+      },
+      {
+        "middle": "im",
+        "head": "NONE",
+        "atom_vote_category": "STAGING",
+        "b_dominant_category": "STAGING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 8,
+        "a_tokens": 8
+      },
+      {
+        "middle": "in",
+        "head": "NONE",
+        "atom_vote_category": "MARKING",
+        "b_dominant_category": "MARKING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 264,
+        "a_tokens": 115
+      },
+      {
+        "middle": "k",
+        "head": "k",
+        "atom_vote_category": "THERMAL",
+        "b_dominant_category": "THERMAL",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 2083,
+        "a_tokens": 338
+      },
+      {
+        "middle": "ka",
+        "head": "k",
+        "atom_vote_category": "THERMAL",
+        "b_dominant_category": "THERMAL",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 25,
+        "a_tokens": 12
+      },
+      {
+        "middle": "kai",
+        "head": "k",
+        "atom_vote_category": "STAGING",
+        "b_dominant_category": "STAGING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 24,
+        "a_tokens": 6
+      },
+      {
+        "middle": "kc",
+        "head": "k",
+        "atom_vote_category": "CONTAINMENT",
+        "b_dominant_category": "CONTAINMENT",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 33,
+        "a_tokens": 47
+      },
+      {
+        "middle": "kch",
+        "head": "k",
+        "atom_vote_category": "THERMAL",
+        "b_dominant_category": "THERMAL",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 148,
+        "a_tokens": 45
+      },
+      {
+        "middle": "ke",
+        "head": "k",
+        "atom_vote_category": "THERMAL",
+        "b_dominant_category": "THERMAL",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 421,
+        "a_tokens": 22
+      },
+      {
+        "middle": "kec",
+        "head": "k",
+        "atom_vote_category": "THERMAL",
+        "b_dominant_category": "THERMAL",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 12,
+        "a_tokens": 3
+      },
+      {
+        "middle": "keed",
+        "head": "k",
+        "atom_vote_category": "FLOW",
+        "b_dominant_category": "FLOW",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 30,
+        "a_tokens": 1
+      },
+      {
+        "middle": "keeo",
+        "head": "k",
+        "atom_vote_category": "STAGING",
+        "b_dominant_category": "STAGING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 38,
+        "a_tokens": 16
+      },
+      {
+        "middle": "keo",
+        "head": "k",
+        "atom_vote_category": "TRANSITION",
+        "b_dominant_category": "TRANSITION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 26,
+        "a_tokens": 26
+      },
+      {
+        "middle": "l",
+        "head": "NONE",
+        "atom_vote_category": "STAGING",
+        "b_dominant_category": "STAGING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 855,
+        "a_tokens": 355
+      },
+      {
+        "middle": "lo",
+        "head": "NONE",
+        "atom_vote_category": "TRANSITION",
+        "b_dominant_category": "TRANSITION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 33,
+        "a_tokens": 10
+      },
+      {
+        "middle": "ly",
+        "head": "NONE",
+        "atom_vote_category": "TRANSITION",
+        "b_dominant_category": "TRANSITION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 49,
+        "a_tokens": 17
+      },
+      {
+        "middle": "m",
+        "head": "NONE",
+        "atom_vote_category": "TRANSITION",
+        "b_dominant_category": "TRANSITION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 76,
+        "a_tokens": 79
+      },
+      {
+        "middle": "n",
+        "head": "NONE",
+        "atom_vote_category": "TRANSITION",
+        "b_dominant_category": "TRANSITION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 7,
+        "a_tokens": 25
+      },
+      {
+        "middle": "o",
+        "head": "o",
+        "atom_vote_category": "OPERATION",
+        "b_dominant_category": "OPERATION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 388,
+        "a_tokens": 602
+      },
+      {
+        "middle": "ock",
+        "head": "o",
+        "atom_vote_category": "MARKING",
+        "b_dominant_category": "MARKING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 13,
+        "a_tokens": 24
+      },
+      {
+        "middle": "oct",
+        "head": "o",
+        "atom_vote_category": "FLOW",
+        "b_dominant_category": "FLOW",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 14,
+        "a_tokens": 33
+      },
+      {
+        "middle": "od",
+        "head": "o",
+        "atom_vote_category": "UNKNOWN",
+        "b_dominant_category": "UNKNOWN",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 177,
+        "a_tokens": 198
+      },
+      {
+        "middle": "oiin",
+        "head": "o",
+        "atom_vote_category": "STAGING",
+        "b_dominant_category": "STAGING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 32,
+        "a_tokens": 50
+      },
+      {
+        "middle": "ok",
+        "head": "o",
+        "atom_vote_category": "CONTAINMENT",
+        "b_dominant_category": "CONTAINMENT",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 70,
+        "a_tokens": 99
+      },
+      {
+        "middle": "okc",
+        "head": "o",
+        "atom_vote_category": "MARKING",
+        "b_dominant_category": "MARKING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 4,
+        "a_tokens": 24
+      },
+      {
+        "middle": "ol",
+        "head": "o",
+        "atom_vote_category": "STAGING",
+        "b_dominant_category": "STAGING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 762,
+        "a_tokens": 831
+      },
+      {
+        "middle": "om",
+        "head": "o",
+        "atom_vote_category": "OPERATION",
+        "b_dominant_category": "OPERATION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 25,
+        "a_tokens": 50
+      },
+      {
+        "middle": "op",
+        "head": "o",
+        "atom_vote_category": "TRANSITION",
+        "b_dominant_category": "TRANSITION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 36,
+        "a_tokens": 22
+      },
+      {
+        "middle": "opc",
+        "head": "o",
+        "atom_vote_category": "MARKING",
+        "b_dominant_category": "MARKING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 9,
+        "a_tokens": 11
+      },
+      {
+        "middle": "opch",
+        "head": "o",
+        "atom_vote_category": "OPERATION",
+        "b_dominant_category": "OPERATION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 107,
+        "a_tokens": 25
+      },
+      {
+        "middle": "or",
+        "head": "o",
+        "atom_vote_category": "FLOW",
+        "b_dominant_category": "FLOW",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 446,
+        "a_tokens": 596
+      },
+      {
+        "middle": "ot",
+        "head": "o",
+        "atom_vote_category": "MONITORING",
+        "b_dominant_category": "MONITORING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 46,
+        "a_tokens": 76
+      },
+      {
+        "middle": "pc",
+        "head": "NONE",
+        "atom_vote_category": "MARKING",
+        "b_dominant_category": "MARKING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 10,
+        "a_tokens": 5
+      },
+      {
+        "middle": "pch",
+        "head": "NONE",
+        "atom_vote_category": "MARKING",
+        "b_dominant_category": "MARKING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 79,
+        "a_tokens": 11
+      },
+      {
+        "middle": "qo",
+        "head": "NONE",
+        "atom_vote_category": "UNKNOWN",
+        "b_dominant_category": "UNKNOWN",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 18,
+        "a_tokens": 11
+      },
+      {
+        "middle": "r",
+        "head": "NONE",
+        "atom_vote_category": "FLOW",
+        "b_dominant_category": "FLOW",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 749,
+        "a_tokens": 342
+      },
+      {
+        "middle": "ry",
+        "head": "NONE",
+        "atom_vote_category": "TRANSITION",
+        "b_dominant_category": "TRANSITION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 33,
+        "a_tokens": 22
+      },
+      {
+        "middle": "s",
+        "head": "NONE",
+        "atom_vote_category": "STAGING",
+        "b_dominant_category": "STAGING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 144,
+        "a_tokens": 243
+      },
+      {
+        "middle": "sh",
+        "head": "NONE",
+        "atom_vote_category": "MONITORING",
+        "b_dominant_category": "MONITORING",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 5,
+        "a_tokens": 10
+      },
+      {
+        "middle": "t",
+        "head": "t",
+        "atom_vote_category": "FLOW",
+        "b_dominant_category": "FLOW",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 576,
+        "a_tokens": 156
+      },
+      {
+        "middle": "tc",
+        "head": "t",
+        "atom_vote_category": "FLOW",
+        "b_dominant_category": "FLOW",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 16,
+        "a_tokens": 57
+      },
+      {
+        "middle": "tch",
+        "head": "t",
+        "atom_vote_category": "OPERATION",
+        "b_dominant_category": "OPERATION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 65,
+        "a_tokens": 53
+      },
+      {
+        "middle": "tcho",
+        "head": "t",
+        "atom_vote_category": "FLOW",
+        "b_dominant_category": "FLOW",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 4,
+        "a_tokens": 13
+      },
+      {
+        "middle": "te",
+        "head": "t",
+        "atom_vote_category": "FLOW",
+        "b_dominant_category": "FLOW",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 87,
+        "a_tokens": 5
+      },
+      {
+        "middle": "teo",
+        "head": "t",
+        "atom_vote_category": "FLOW",
+        "b_dominant_category": "FLOW",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 18,
+        "a_tokens": 5
+      },
+      {
+        "middle": "y",
+        "head": "NONE",
+        "atom_vote_category": "TRANSITION",
+        "b_dominant_category": "TRANSITION",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 513,
+        "a_tokens": 605
+      },
+      {
+        "middle": "yt",
+        "head": "NONE",
+        "atom_vote_category": "FLOW",
+        "b_dominant_category": "FLOW",
+        "b_dominant_pct": 100.0,
+        "match": true,
+        "b_tokens": 12,
+        "a_tokens": 19
+      }
+    ]
+  },
+  "t5_head_stability": {
+    "chi2": 18499.3,
+    "p_value": 0.0,
+    "cramers_v": 0.562,
+    "n_tokens": 14663,
+    "n_heads": 5,
+    "n_categories": 8,
+    "per_head": {
+      "a": {
+        "total_tokens": 2882,
+        "category_pcts": {
+          "THERMAL": 0.0,
+          "FLOW": 56.1,
+          "CONTAINMENT": 0.6,
+          "STAGING": 0.0,
+          "OPERATION": 0.0,
+          "TRANSITION": 43.2,
+          "MARKING": 0.0,
+          "MONITORING": 0.0
+        },
+        "dominant": "FLOW",
+        "dominant_pct": 56.1
+      },
+      "e": {
+        "total_tokens": 6223,
+        "category_pcts": {
+          "THERMAL": 32.2,
+          "FLOW": 6.4,
+          "CONTAINMENT": 2.3,
+          "STAGING": 0.9,
+          "OPERATION": 36.0,
+          "TRANSITION": 21.4,
+          "MARKING": 0.0,
+          "MONITORING": 0.8
+        },
+        "dominant": "OPERATION",
+        "dominant_pct": 36.0
+      },
+      "k": {
+        "total_tokens": 2840,
+        "category_pcts": {
+          "THERMAL": 94.7,
+          "FLOW": 1.1,
+          "CONTAINMENT": 1.2,
+          "STAGING": 2.2,
+          "OPERATION": 0.0,
+          "TRANSITION": 0.9,
+          "MARKING": 0.0,
+          "MONITORING": 0.0
+        },
+        "dominant": "THERMAL",
+        "dominant_pct": 94.7
+      },
+      "o": {
+        "total_tokens": 1952,
+        "category_pcts": {
+          "THERMAL": 0.0,
+          "FLOW": 23.6,
+          "CONTAINMENT": 3.6,
+          "STAGING": 40.7,
+          "OPERATION": 26.6,
+          "TRANSITION": 1.8,
+          "MARKING": 1.3,
+          "MONITORING": 2.4
+        },
+        "dominant": "STAGING",
+        "dominant_pct": 40.7
+      },
+      "t": {
+        "total_tokens": 766,
+        "category_pcts": {
+          "THERMAL": 0.0,
+          "FLOW": 91.5,
+          "CONTAINMENT": 0.0,
+          "STAGING": 0.0,
+          "OPERATION": 8.5,
+          "TRANSITION": 0.0,
+          "MARKING": 0.0,
+          "MONITORING": 0.0
+        },
+        "dominant": "FLOW",
+        "dominant_pct": 91.5
+      }
+    }
+  },
+  "t6_purity": {
+    "a": {
+      "n_middles": 9,
+      "tokens": 2914,
+      "dominant_category": "FLOW",
+      "dominant_pct": 55.5,
+      "entropy": 1.112
+    },
+    "e": {
+      "n_middles": 16,
+      "tokens": 6223,
+      "dominant_category": "OPERATION",
+      "dominant_pct": 36.0,
+      "entropy": 2.03
+    },
+    "k": {
+      "n_middles": 10,
+      "tokens": 2840,
+      "dominant_category": "THERMAL",
+      "dominant_pct": 94.7,
+      "entropy": 0.401
+    },
+    "o": {
+      "n_middles": 14,
+      "tokens": 2129,
+      "dominant_category": "STAGING",
+      "dominant_pct": 37.3,
+      "entropy": 2.262
+    },
+    "t": {
+      "n_middles": 6,
+      "tokens": 766,
+      "dominant_category": "FLOW",
+      "dominant_pct": 91.5,
+      "entropy": 0.419
+    }
+  },
+  "t7_permutation": {
+    "real_mean_purity": 0.63,
+    "shuffled_mean_purity": 0.3155,
+    "shuffled_std": 0.0028,
+    "z_score": 111.13,
+    "p_value": 0.0,
+    "enrichment": 1.997,
+    "n_permutations": 2000
+  },
+  "t8_prefix_comparison": {
+    "a": {
+      "cosine": 0.903,
+      "jsd": 0.11,
+      "a_dominant_prefix": "BARE",
+      "b_dominant_prefix": "BARE",
+      "a_top3": {
+        "BARE": 23.4,
+        "ch": 16.3,
+        "ok": 15.9
+      },
+      "b_top3": {
+        "BARE": 36.3,
+        "ok": 20.8,
+        "ot": 18.2
+      }
+    },
+    "e": {
+      "cosine": 0.977,
+      "jsd": 0.059,
+      "a_dominant_prefix": "ch",
+      "b_dominant_prefix": "ch",
+      "a_top3": {
+        "ch": 32.7,
+        "sh": 22.0,
+        "ok": 13.3
+      },
+      "b_top3": {
+        "ch": 29.2,
+        "sh": 24.2,
+        "ok": 9.5
+      }
+    },
+    "k": {
+      "cosine": 0.99,
+      "jsd": 0.057,
+      "a_dominant_prefix": "qo",
+      "b_dominant_prefix": "qo",
+      "a_top3": {
+        "qo": 79.8,
+        "ch": 9.5,
+        "BARE": 2.9
+      },
+      "b_top3": {
+        "qo": 82.2,
+        "ol": 11.1,
+        "ch": 2.7
+      }
+    },
+    "o": {
+      "cosine": 0.675,
+      "jsd": 0.156,
+      "a_dominant_prefix": "ch",
+      "b_dominant_prefix": "BARE",
+      "a_top3": {
+        "ch": 35.5,
+        "sh": 19.7,
+        "BARE": 15.4
+      },
+      "b_top3": {
+        "BARE": 49.5,
+        "ch": 17.0,
+        "sh": 9.8
+      }
+    },
+    "t": {
+      "cosine": 0.998,
+      "jsd": 0.024,
+      "a_dominant_prefix": "qo",
+      "b_dominant_prefix": "qo",
+      "a_top3": {
+        "qo": 83.0,
+        "ch": 6.9,
+        "BARE": 3.5
+      },
+      "b_top3": {
+        "qo": 88.1,
+        "ch": 4.2,
+        "ol": 3.7
+      }
+    }
+  },
+  "t9_summary": {
+    "head_match_rate": 0.4,
+    "rows": [
+      {
+        "head": "a",
+        "expected_category": "TRANSITION",
+        "b_observed_category": "FLOW",
+        "match": false,
+        "b_dominant_pct": 56.1,
+        "n_bridge_middles": 9
+      },
+      {
+        "head": "e",
+        "expected_category": "THERMAL",
+        "b_observed_category": "OPERATION",
+        "match": false,
+        "b_dominant_pct": 36.0,
+        "n_bridge_middles": 16
+      },
+      {
+        "head": "k",
+        "expected_category": "THERMAL",
+        "b_observed_category": "THERMAL",
+        "match": true,
+        "b_dominant_pct": 94.7,
+        "n_bridge_middles": 10
+      },
+      {
+        "head": "o",
+        "expected_category": "OPERATION",
+        "b_observed_category": "STAGING",
+        "match": false,
+        "b_dominant_pct": 40.7,
+        "n_bridge_middles": 14
+      },
+      {
+        "head": "t",
+        "expected_category": "FLOW",
+        "b_observed_category": "FLOW",
+        "match": true,
+        "b_dominant_pct": 91.5,
+        "n_bridge_middles": 6
+      }
+    ]
+  },
+  "t10_separation": {
+    "mean_jsd": 0.6147,
+    "max_jsd": 0.9583,
+    "min_jsd": 0.2926,
+    "n_pairs": 10
+  },
+  "synthesis": {
+    "verdict": "STRONG_MIDDLE_MATCH + HEAD_DETERMINES_CATEGORY + HEADS_WELL_SEPARATED + PREDICTION_PARTIAL",
+    "per_middle_match_rate_type": 1.0,
+    "per_middle_match_rate_token": 1.0,
+    "permutation_z": 111.13,
+    "chi2": 18499.3,
+    "cramers_v": 0.562,
+    "mean_between_head_jsd": 0.6147,
+    "head_prediction_accuracy": 0.4
+  }
+}

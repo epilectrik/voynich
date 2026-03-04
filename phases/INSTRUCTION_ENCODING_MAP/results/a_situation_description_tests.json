@@ -1,0 +1,270 @@
+{
+  "meta": {
+    "description": "A Situation Description Language Tests",
+    "n_permutations": 1000,
+    "overall_verdict": "STRONG SUPPORT for situation description hypothesis",
+    "verdicts": {
+      "P6": "PARTIAL (confounded by record length)",
+      "P8": "CONFIRMED",
+      "P10": "CONFIRMED"
+    },
+    "counts": {
+      "confirmed": 2,
+      "partial": 1,
+      "failed": 0
+    }
+  },
+  "P6": {
+    "test": "P6_RI_complexity_vs_B_coverage",
+    "prediction": "Negative correlation: more RI = narrower B coverage",
+    "n_records": 1559,
+    "n_b_folios": 82,
+    "raw_spearman_rho": -0.1292,
+    "raw_spearman_p": 3.0605e-07,
+    "partial_spearman_rho": 0.0783,
+    "partial_spearman_p": 0.0019803,
+    "bridge_coverage_rho": 0.4304,
+    "bridge_coverage_p": 2.5777e-71,
+    "permutation_z": -5.144,
+    "permutation_p_one_tail": 0.0,
+    "bins": [
+      {
+        "bin": "0%",
+        "n_records": 992,
+        "mean_b_coverage": 81.03,
+        "mean_n_bridge": 5.89,
+        "mean_record_length": 6.83
+      },
+      {
+        "bin": "1-25%",
+        "n_records": 480,
+        "mean_b_coverage": 81.51,
+        "mean_n_bridge": 6.08,
+        "mean_record_length": 8.21
+      },
+      {
+        "bin": "26-50%",
+        "n_records": 76,
+        "mean_b_coverage": 78.04,
+        "mean_n_bridge": 3.33,
+        "mean_record_length": 5.53
+      },
+      {
+        "bin": "51-75%",
+        "n_records": 5,
+        "mean_b_coverage": 69.6,
+        "mean_n_bridge": 2.2,
+        "mean_record_length": 6.0
+      },
+      {
+        "bin": "76-100%",
+        "n_records": 6,
+        "mean_b_coverage": 0.0,
+        "mean_n_bridge": 0.0,
+        "mean_record_length": 1.33
+      }
+    ],
+    "verdict": "PARTIAL (confounded by record length)"
+  },
+  "P8": {
+    "test": "P8_within_folio_compatibility",
+    "prediction": "Within-folio PP Jaccard > between-folio PP Jaccard",
+    "n_folios": 114,
+    "n_within_pairs": 11741,
+    "n_between_pairs": 35223,
+    "within_mean_jaccard": 0.1094,
+    "between_mean_jaccard": 0.0897,
+    "ratio": 1.219,
+    "mann_whitney_U": 229219317.0,
+    "mann_whitney_p": 1.6207e-73,
+    "permutation_z": 20.874,
+    "permutation_p": 0.0,
+    "section_breakdown": {
+      "H": {
+        "n_pairs": 8242,
+        "mean_jaccard": 0.1052,
+        "median_jaccard": 0.1
+      },
+      "P": {
+        "n_pairs": 1560,
+        "mean_jaccard": 0.134,
+        "median_jaccard": 0.125
+      },
+      "T": {
+        "n_pairs": 1939,
+        "mean_jaccard": 0.1072,
+        "median_jaccard": 0.0909
+      }
+    },
+    "verdict": "CONFIRMED"
+  },
+  "P10": {
+    "test": "P10_terminal_head_positional_concentration",
+    "prediction": "o-HEAD initial, l-terminal medial, headless final",
+    "n_records": 1515,
+    "n_tokens": 11095,
+    "head_positions": {
+      "NONE": {
+        "n": 4321,
+        "mean_pos": 0.5628,
+        "std_pos": 0.3345,
+        "frac_initial": 0.1581,
+        "frac_medial": 0.4603,
+        "frac_final": 0.2687
+      },
+      "a": {
+        "n": 850,
+        "mean_pos": 0.5469,
+        "std_pos": 0.339,
+        "frac_initial": 0.1776,
+        "frac_medial": 0.4247,
+        "frac_final": 0.2588
+      },
+      "e": {
+        "n": 1761,
+        "mean_pos": 0.4657,
+        "std_pos": 0.3058,
+        "frac_initial": 0.1988,
+        "frac_medial": 0.5202,
+        "frac_final": 0.1431
+      },
+      "k": {
+        "n": 637,
+        "mean_pos": 0.4424,
+        "std_pos": 0.3054,
+        "frac_initial": 0.2119,
+        "frac_medial": 0.5463,
+        "frac_final": 0.1209
+      },
+      "o": {
+        "n": 3154,
+        "mean_pos": 0.4388,
+        "std_pos": 0.329,
+        "frac_initial": 0.2635,
+        "frac_medial": 0.462,
+        "frac_final": 0.1535
+      },
+      "t": {
+        "n": 372,
+        "mean_pos": 0.4435,
+        "std_pos": 0.3457,
+        "frac_initial": 0.2876,
+        "frac_medial": 0.4624,
+        "frac_final": 0.1694
+      }
+    },
+    "terminal_positions": {
+      "NONE": {
+        "n": 3558,
+        "mean_pos": 0.4898,
+        "std_pos": 0.3399,
+        "frac_initial": 0.2274,
+        "frac_medial": 0.4564,
+        "frac_final": 0.2046
+      },
+      "dy": {
+        "n": 9,
+        "mean_pos": 0.6856,
+        "std_pos": 0.2963,
+        "frac_initial": 0.0,
+        "frac_medial": 0.4444,
+        "frac_final": 0.4444
+      },
+      "h": {
+        "n": 812,
+        "mean_pos": 0.4816,
+        "std_pos": 0.3175,
+        "frac_initial": 0.1958,
+        "frac_medial": 0.5246,
+        "frac_final": 0.1552
+      },
+      "k": {
+        "n": 701,
+        "mean_pos": 0.4786,
+        "std_pos": 0.3123,
+        "frac_initial": 0.1812,
+        "frac_medial": 0.5378,
+        "frac_final": 0.1626
+      },
+      "l": {
+        "n": 1646,
+        "mean_pos": 0.4865,
+        "std_pos": 0.3125,
+        "frac_initial": 0.1889,
+        "frac_medial": 0.5134,
+        "frac_final": 0.1634
+      },
+      "m": {
+        "n": 197,
+        "mean_pos": 0.7785,
+        "std_pos": 0.2912,
+        "frac_initial": 0.0457,
+        "frac_medial": 0.2792,
+        "frac_final": 0.5939
+      },
+      "n": {
+        "n": 1181,
+        "mean_pos": 0.5551,
+        "std_pos": 0.3435,
+        "frac_initial": 0.1804,
+        "frac_medial": 0.4327,
+        "frac_final": 0.2743
+      },
+      "r": {
+        "n": 1137,
+        "mean_pos": 0.4283,
+        "std_pos": 0.3399,
+        "frac_initial": 0.2955,
+        "frac_medial": 0.409,
+        "frac_final": 0.1662
+      },
+      "t": {
+        "n": 398,
+        "mean_pos": 0.5141,
+        "std_pos": 0.3355,
+        "frac_initial": 0.1834,
+        "frac_medial": 0.4724,
+        "frac_final": 0.2236
+      },
+      "y": {
+        "n": 1456,
+        "mean_pos": 0.5293,
+        "std_pos": 0.3149,
+        "frac_initial": 0.1511,
+        "frac_medial": 0.5137,
+        "frac_final": 0.204
+      }
+    },
+    "o_head_test": {
+      "o_mean_pos": 0.4388,
+      "non_o_mean_pos": 0.4784,
+      "o_initial_frac": 0.2635,
+      "non_o_initial_frac": 0.2052,
+      "mann_whitney_U": 5297652.0,
+      "mann_whitney_p": 1.4167e-07,
+      "o_is_more_initial": true
+    },
+    "l_terminal_test": {
+      "l_mean_pos": 0.4865,
+      "non_l_mean_pos": 0.5138,
+      "l_medial_frac": 0.5134,
+      "non_l_medial_frac": 0.461,
+      "mann_whitney_U": 3625831.0,
+      "mann_whitney_p": 6.8815e-07,
+      "l_is_more_medial": true
+    },
+    "headless_test": {
+      "headless_mean_pos": 0.5628,
+      "headed_mean_pos": 0.4599,
+      "headless_final_frac": 0.2687,
+      "headed_final_frac": 0.1618,
+      "mann_whitney_U": 17240389.0,
+      "mann_whitney_p": 4.2259e-57,
+      "headless_is_more_final": true
+    },
+    "o_permutation_z": -12.492,
+    "o_permutation_p": 0.0,
+    "sub_tests_passed": 3,
+    "verdict": "CONFIRMED"
+  }
+}

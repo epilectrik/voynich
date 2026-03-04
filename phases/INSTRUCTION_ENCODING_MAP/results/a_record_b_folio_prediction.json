@@ -1,0 +1,305 @@
+{
+  "phase": "INSTRUCTION_ENCODING_MAP",
+  "test": "a_record_b_folio_prediction",
+  "t1_census": {
+    "n_a_records": 1550,
+    "n_a_with_bridges": 1548,
+    "pct_with_bridges": 99.9,
+    "mean_bridges_per_record": 6.72,
+    "n_bridge_middles": 393,
+    "n_b_folios": 82,
+    "a_head_distribution": {
+      "a": 0.0765,
+      "e": 0.1583,
+      "k": 0.0575,
+      "o": 0.2847,
+      "t": 0.0336,
+      "NONE": 0.3894
+    },
+    "b_head_distribution": {
+      "a": 0.1333,
+      "e": 0.3032,
+      "k": 0.1342,
+      "o": 0.1176,
+      "t": 0.0399,
+      "NONE": 0.2718
+    }
+  },
+  "t2_connection_graph": {
+    "n_a_connected": 1548,
+    "pct_a_connected": 99.9,
+    "mean_b_folios_per_a_record": 81.0,
+    "median_b_folios_per_a_record": 82.0,
+    "max_b_folios": 82,
+    "bridge_fanout_mean": 12.4,
+    "bridge_fanout_median": 3.0
+  },
+  "t3_head_alignment": {
+    "mean_cosine": 0.7215,
+    "std_cosine": 0.1453,
+    "median_cosine": 0.7278,
+    "n_records_tested": 1548
+  },
+  "t4_per_head_correlation": {
+    "a": {
+      "spearman_rho": 0.386,
+      "p_value": 0.0,
+      "n": 1548,
+      "a_mean_frac": 0.072,
+      "b_mean_frac": 0.1335
+    },
+    "e": {
+      "spearman_rho": 0.2858,
+      "p_value": 0.0,
+      "n": 1548,
+      "a_mean_frac": 0.1474,
+      "b_mean_frac": 0.2874
+    },
+    "k": {
+      "spearman_rho": 0.4741,
+      "p_value": 0.0,
+      "n": 1548,
+      "a_mean_frac": 0.056,
+      "b_mean_frac": 0.1218
+    },
+    "o": {
+      "spearman_rho": 0.3249,
+      "p_value": 0.0,
+      "n": 1548,
+      "a_mean_frac": 0.2977,
+      "b_mean_frac": 0.1244
+    },
+    "t": {
+      "spearman_rho": 0.5946,
+      "p_value": 0.0,
+      "n": 1548,
+      "a_mean_frac": 0.0365,
+      "b_mean_frac": 0.0357
+    },
+    "NONE": {
+      "spearman_rho": 0.3902,
+      "p_value": 0.0,
+      "n": 1548,
+      "a_mean_frac": 0.3905,
+      "b_mean_frac": 0.2972
+    }
+  },
+  "t5_permutation_cosine": {
+    "real_mean_cosine": 0.7215,
+    "perm_mean_cosine": 0.7211,
+    "perm_std": 0.0,
+    "z_score": 8.6,
+    "p_value": 0.0,
+    "n_permutations": 1000,
+    "significant": true
+  },
+  "t6_cluster_overlap": {
+    "within_mean_jaccard": 0.9787,
+    "between_mean_jaccard": 0.9751,
+    "ratio": 1.004,
+    "n_within_pairs": 69264,
+    "n_between_pairs": 3000,
+    "cluster_sizes": {
+      "a": 95,
+      "e": 242,
+      "k": 43,
+      "o": 500,
+      "t": 11,
+      "NONE": 657
+    }
+  },
+  "t7_detailed_per_head": {
+    "k": {
+      "spearman_rho": 0.4741,
+      "p_value": 0.0,
+      "pearson_r": 0.0568,
+      "r_squared": 0.0032,
+      "a_mean": 0.056,
+      "a_std": 0.1006,
+      "b_mean": 0.1218,
+      "b_std": 0.0014,
+      "n": 1548
+    },
+    "e": {
+      "spearman_rho": 0.2858,
+      "p_value": 0.0,
+      "pearson_r": 0.1554,
+      "r_squared": 0.0241,
+      "a_mean": 0.1474,
+      "a_std": 0.1708,
+      "b_mean": 0.2874,
+      "b_std": 0.002,
+      "n": 1548
+    },
+    "o": {
+      "spearman_rho": 0.3249,
+      "p_value": 0.0,
+      "pearson_r": 0.2145,
+      "r_squared": 0.046,
+      "a_mean": 0.2977,
+      "a_std": 0.2106,
+      "b_mean": 0.1244,
+      "b_std": 0.0013,
+      "n": 1548
+    },
+    "a": {
+      "spearman_rho": 0.386,
+      "p_value": 0.0,
+      "pearson_r": 0.0182,
+      "r_squared": 0.0003,
+      "a_mean": 0.072,
+      "a_std": 0.1203,
+      "b_mean": 0.1335,
+      "b_std": 0.0016,
+      "n": 1548
+    },
+    "t": {
+      "spearman_rho": 0.5946,
+      "p_value": 0.0,
+      "pearson_r": 0.0628,
+      "r_squared": 0.0039,
+      "a_mean": 0.0365,
+      "a_std": 0.084,
+      "b_mean": 0.0357,
+      "b_std": 0.0004,
+      "n": 1548
+    }
+  },
+  "t8_section_control": {
+    "H": {
+      "n": 1217,
+      "mean_cosine": 0.699,
+      "per_head": {
+        "k": {
+          "rho": 0.4826,
+          "p": 0.0
+        },
+        "e": {
+          "rho": 0.3289,
+          "p": 0.0
+        },
+        "o": {
+          "rho": 0.321,
+          "p": 0.0
+        }
+      }
+    },
+    "P": {
+      "n": 225,
+      "mean_cosine": 0.8324,
+      "per_head": {
+        "k": {
+          "rho": 0.5171,
+          "p": 0.0
+        },
+        "e": {
+          "rho": 0.2144,
+          "p": 0.001
+        },
+        "o": {
+          "rho": 0.2909,
+          "p": 0.0
+        }
+      }
+    },
+    "T": {
+      "n": 106,
+      "mean_cosine": 0.7441,
+      "per_head": {
+        "k": {
+          "rho": 0.4998,
+          "p": 0.0
+        },
+        "e": {
+          "rho": 0.1837,
+          "p": 0.0566
+        },
+        "o": {
+          "rho": 0.3661,
+          "p": 0.0001
+        }
+      }
+    }
+  },
+  "t9_per_head_permutation": {
+    "k": {
+      "real_rho": 0.4741,
+      "perm_mean_rho": 0.4458,
+      "perm_std": 0.0135,
+      "z_score": 2.1,
+      "p_value": 0.02,
+      "significant": true
+    },
+    "e": {
+      "real_rho": 0.2858,
+      "perm_mean_rho": 0.2171,
+      "perm_std": 0.0197,
+      "z_score": 3.5,
+      "p_value": 0.001,
+      "significant": true
+    },
+    "o": {
+      "real_rho": 0.3249,
+      "perm_mean_rho": 0.1394,
+      "perm_std": 0.0217,
+      "z_score": 8.55,
+      "p_value": 0.0,
+      "significant": true
+    },
+    "a": {
+      "real_rho": 0.386,
+      "perm_mean_rho": 0.4164,
+      "perm_std": 0.0148,
+      "z_score": -2.06,
+      "p_value": 0.982,
+      "significant": true
+    },
+    "t": {
+      "real_rho": 0.5946,
+      "perm_mean_rho": 0.5864,
+      "perm_std": 0.0103,
+      "z_score": 0.79,
+      "p_value": 0.222,
+      "significant": false
+    }
+  },
+  "t10_bridge_head": {
+    "bridge_head_distribution": {
+      "a": 0.0662,
+      "e": 0.1934,
+      "k": 0.0789,
+      "o": 0.2646,
+      "t": 0.0509,
+      "NONE": 0.3461
+    },
+    "bridge_vs_a_ratio": {
+      "a": 0.865,
+      "e": 1.222,
+      "k": 1.372,
+      "o": 0.929,
+      "t": 1.515,
+      "NONE": 0.889
+    }
+  },
+  "summary": {
+    "verdict": "STRONG_PREDICTION",
+    "cosine_z_score": 8.6,
+    "cosine_significant": true,
+    "n_head_significant": 4,
+    "cluster_ratio": 1.004,
+    "per_head_rhos": {
+      "k": 0.4741,
+      "e": 0.2858,
+      "o": 0.3249,
+      "a": 0.386,
+      "t": 0.5946
+    },
+    "per_head_z_scores": {
+      "k": 2.1,
+      "e": 3.5,
+      "o": 8.55,
+      "a": -2.06,
+      "t": 0.79
+    }
+  }
+}

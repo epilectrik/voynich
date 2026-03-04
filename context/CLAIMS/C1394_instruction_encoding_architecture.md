@@ -1,7 +1,7 @@
 # C1394: Instruction Encoding Architecture
 
 **Tier:** 2 (ESTABLISHED)
-**Scope:** B, grammar, composition
+**Scope:** GLOBAL, grammar, composition
 **Phase:** INSTRUCTION_ENCODING_MAP (Phases 505–506)
 **Depends on:** C1393 (composition grammar), C1195 (atom glosses), C1065 (atom ordering), C1200 (state forward), C1197 (e/i extensibility)
 
@@ -10,6 +10,8 @@
 Compound MIDDLEs encode instructions as **HEAD + MOD\* + TERM** — fixed endpoints with a variable-length, internally ordered modifier stack. The frame (HEAD+TERM) predicts 64% of instruction category; modifiers account for the remaining 36% through consistent category-shifting effects. This extends C1393's three-slot model by establishing: (1) the modifier slot is a variable-length ordered array, not a single position; (2) modifiers follow a fixed stacking order (p→f→i→c→d→s); (3) each modifier has a measurable, consistent effect on instruction category; (4) most "macro-atoms" are just adjacent slots, not fused units.
 
 Phase 506 resolved all four open questions: headless compounds are a specialized subgrammar for infrastructure operations (V=0.568); h-terminal is transparent, not chaotic (HEAD+MODS reach V=0.988); modifier ordering is morphological convention with first-modifier dominance (66.5% decisive); all five HEADs are genuine domains with e showing a depth-dependent cooling→thermal saturation gradient (ee=84% THERMAL, eee=100%).
+
+Phase 507 (C1395) extended this architecture cross-system: A-exclusive MIDDLEs follow the same slot grammar (Fisher p=0.90), bridge MIDDLEs show 100% category stability, and A uses the encoding for state descriptions (l-terminal enriched 1.84x) while B uses it for action instructions (dy-terminal 144x enriched). Scope upgraded from B to GLOBAL.
 
 ## Key Findings
 
@@ -200,7 +202,7 @@ All four original open questions were **resolved in Phase 506** (T8–T11):
 
 ## Remaining Open Questions (Phase 506)
 
-- **Headless compound HEAD recovery:** Can the missing HEAD be reliably inferred from PREFIX channel? (da→a-domain? ka→k-domain?)
+- ~~Headless compound HEAD recovery~~ → **REJECTED** (C1395 T2): PREFIX-base→HEAD mapping gives 9.1% accuracy, worse than 25.2% random baseline (cosine 0.220). Headless compounds are genuinely headless, not abbreviated.
 - **Multi-stage MARKING collapse:** Why do compounds spanning 3+ pipeline stages converge to MARKING? Is this identification vocabulary (HT/dark pipeline) or a genuine operational pattern?
 - **e/k thermal polarity:** e and k both map to THERMAL from opposite directions (cool vs heat). How does the system distinguish cooling operations from heating operations at the execution level?
 - **o versatility mechanism:** o is the most category-diverse HEAD (entropy 2.396). What makes the "arrange" domain span more operational categories than any single physical process?
