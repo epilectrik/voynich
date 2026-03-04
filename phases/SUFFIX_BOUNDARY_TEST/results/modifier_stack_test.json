@@ -1,0 +1,2618 @@
+{
+  "test1": {
+    "size_distribution_types": {
+      "2": 144,
+      "3": 295,
+      "4": 383,
+      "5": 251,
+      "6": 135,
+      "7": 46,
+      "8": 16,
+      "9": 3
+    },
+    "size_distribution_tokens": {
+      "2": 7687,
+      "3": 6058,
+      "4": 1870,
+      "5": 320,
+      "6": 152,
+      "7": 47,
+      "8": 16,
+      "9": 3
+    },
+    "modifier_depth_types": {
+      "0": 21,
+      "1": 131,
+      "2": 335,
+      "3": 318,
+      "4": 236,
+      "5": 154,
+      "6": 59,
+      "7": 17,
+      "8": 2
+    },
+    "modifier_depth_tokens": {
+      "0": 3890,
+      "1": 7592,
+      "2": 3429,
+      "3": 671,
+      "4": 311,
+      "5": 181,
+      "6": 60,
+      "7": 17,
+      "8": 2
+    },
+    "total_compound_types": 1273,
+    "total_compound_tokens": 16153
+  },
+  "test2": {
+    "n_compounds_with_2plus_distinct_mods": 1091,
+    "repeated_modifier_atoms": {
+      "e": 150,
+      "i": 63,
+      "o": 30,
+      "c": 23,
+      "d": 22,
+      "l": 11,
+      "s": 8,
+      "a": 6,
+      "r": 6,
+      "y": 3,
+      "h": 3,
+      "p": 2,
+      "k": 1,
+      "f": 1
+    },
+    "modifier_atom_frequencies_types": {
+      "c": 423,
+      "d": 352,
+      "f": 101,
+      "i": 203,
+      "p": 187,
+      "s": 206
+    },
+    "modifier_atom_frequencies_tokens": {
+      "c": 2091,
+      "d": 4064,
+      "f": 198,
+      "i": 2738,
+      "p": 591,
+      "s": 416
+    },
+    "co_occurrence": {
+      "c,d": {
+        "observed": 99,
+        "expected": 116.96,
+        "ratio": 0.85,
+        "p1": 0.3323,
+        "p2": 0.2765
+      },
+      "c,f": {
+        "observed": 46,
+        "expected": 33.56,
+        "ratio": 1.37,
+        "p1": 0.3323,
+        "p2": 0.0793
+      },
+      "c,i": {
+        "observed": 27,
+        "expected": 67.45,
+        "ratio": 0.4,
+        "p1": 0.3323,
+        "p2": 0.1595
+      },
+      "c,p": {
+        "observed": 101,
+        "expected": 62.14,
+        "ratio": 1.63,
+        "p1": 0.3323,
+        "p2": 0.1469
+      },
+      "c,s": {
+        "observed": 33,
+        "expected": 68.45,
+        "ratio": 0.48,
+        "p1": 0.3323,
+        "p2": 0.1618
+      },
+      "d,f": {
+        "observed": 14,
+        "expected": 27.93,
+        "ratio": 0.5,
+        "p1": 0.2765,
+        "p2": 0.0793
+      },
+      "d,i": {
+        "observed": 36,
+        "expected": 56.13,
+        "ratio": 0.64,
+        "p1": 0.2765,
+        "p2": 0.1595
+      },
+      "d,p": {
+        "observed": 40,
+        "expected": 51.71,
+        "ratio": 0.77,
+        "p1": 0.2765,
+        "p2": 0.1469
+      },
+      "d,s": {
+        "observed": 46,
+        "expected": 56.96,
+        "ratio": 0.81,
+        "p1": 0.2765,
+        "p2": 0.1618
+      },
+      "f,i": {
+        "observed": 14,
+        "expected": 16.11,
+        "ratio": 0.87,
+        "p1": 0.0793,
+        "p2": 0.1595
+      },
+      "f,p": {
+        "observed": 7,
+        "expected": 14.84,
+        "ratio": 0.47,
+        "p1": 0.0793,
+        "p2": 0.1469
+      },
+      "f,s": {
+        "observed": 11,
+        "expected": 16.34,
+        "ratio": 0.67,
+        "p1": 0.0793,
+        "p2": 0.1618
+      },
+      "i,p": {
+        "observed": 28,
+        "expected": 29.82,
+        "ratio": 0.94,
+        "p1": 0.1595,
+        "p2": 0.1469
+      },
+      "i,s": {
+        "observed": 17,
+        "expected": 32.85,
+        "ratio": 0.52,
+        "p1": 0.1595,
+        "p2": 0.1618
+      },
+      "p,s": {
+        "observed": 29,
+        "expected": 30.26,
+        "ratio": 0.96,
+        "p1": 0.1469,
+        "p2": 0.1618
+      }
+    }
+  },
+  "test3": {
+    "ordered_pairs": {
+      "a,a": {
+        "ab_types": 8,
+        "ba_types": 8,
+        "ab_tokens": 8,
+        "ba_tokens": 8,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "a"
+      },
+      "a,c": {
+        "ab_types": 14,
+        "ba_types": 11,
+        "ab_tokens": 16,
+        "ba_tokens": 11,
+        "asymmetry_ratio": 1.27,
+        "dominant_first": "a"
+      },
+      "a,d": {
+        "ab_types": 10,
+        "ba_types": 68,
+        "ab_tokens": 11,
+        "ba_tokens": 146,
+        "asymmetry_ratio": 6.8,
+        "dominant_first": "d"
+      },
+      "a,e": {
+        "ab_types": 8,
+        "ba_types": 38,
+        "ab_tokens": 8,
+        "ba_tokens": 42,
+        "asymmetry_ratio": 4.75,
+        "dominant_first": "e"
+      },
+      "a,f": {
+        "ab_types": 1,
+        "ba_types": 14,
+        "ab_tokens": 1,
+        "ba_tokens": 15,
+        "asymmetry_ratio": 14.0,
+        "dominant_first": "f"
+      },
+      "a,h": {
+        "ab_types": 2,
+        "ba_types": 12,
+        "ab_tokens": 2,
+        "ba_tokens": 12,
+        "asymmetry_ratio": 6.0,
+        "dominant_first": "h"
+      },
+      "a,i": {
+        "ab_types": 123,
+        "ba_types": 9,
+        "ab_tokens": 247,
+        "ba_tokens": 9,
+        "asymmetry_ratio": 13.67,
+        "dominant_first": "a"
+      },
+      "a,k": {
+        "ab_types": 6,
+        "ba_types": 22,
+        "ab_tokens": 6,
+        "ba_tokens": 27,
+        "asymmetry_ratio": 3.67,
+        "dominant_first": "k"
+      },
+      "a,l": {
+        "ab_types": 37,
+        "ba_types": 31,
+        "ab_tokens": 44,
+        "ba_tokens": 39,
+        "asymmetry_ratio": 1.19,
+        "dominant_first": "a"
+      },
+      "a,m": {
+        "ab_types": 4,
+        "ba_types": 0,
+        "ab_tokens": 4,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 4.0,
+        "dominant_first": "a"
+      },
+      "a,n": {
+        "ab_types": 3,
+        "ba_types": 2,
+        "ab_tokens": 3,
+        "ba_tokens": 2,
+        "asymmetry_ratio": 1.5,
+        "dominant_first": "a"
+      },
+      "a,o": {
+        "ab_types": 29,
+        "ba_types": 18,
+        "ab_tokens": 30,
+        "ba_tokens": 21,
+        "asymmetry_ratio": 1.61,
+        "dominant_first": "a"
+      },
+      "a,p": {
+        "ab_types": 1,
+        "ba_types": 39,
+        "ab_tokens": 1,
+        "ba_tokens": 63,
+        "asymmetry_ratio": 39.0,
+        "dominant_first": "p"
+      },
+      "a,q": {
+        "ab_types": 0,
+        "ba_types": 3,
+        "ab_tokens": 0,
+        "ba_tokens": 3,
+        "asymmetry_ratio": 3.0,
+        "dominant_first": "q"
+      },
+      "a,r": {
+        "ab_types": 21,
+        "ba_types": 25,
+        "ab_tokens": 22,
+        "ba_tokens": 42,
+        "asymmetry_ratio": 1.19,
+        "dominant_first": "r"
+      },
+      "a,s": {
+        "ab_types": 13,
+        "ba_types": 11,
+        "ab_tokens": 14,
+        "ba_tokens": 14,
+        "asymmetry_ratio": 1.18,
+        "dominant_first": "a"
+      },
+      "a,t": {
+        "ab_types": 1,
+        "ba_types": 8,
+        "ab_tokens": 1,
+        "ba_tokens": 8,
+        "asymmetry_ratio": 8.0,
+        "dominant_first": "t"
+      },
+      "a,x": {
+        "ab_types": 3,
+        "ba_types": 1,
+        "ab_tokens": 3,
+        "ba_tokens": 1,
+        "asymmetry_ratio": 3.0,
+        "dominant_first": "a"
+      },
+      "a,y": {
+        "ab_types": 1,
+        "ba_types": 10,
+        "ab_tokens": 1,
+        "ba_tokens": 11,
+        "asymmetry_ratio": 10.0,
+        "dominant_first": "y"
+      },
+      "c,c": {
+        "ab_types": 23,
+        "ba_types": 23,
+        "ab_tokens": 23,
+        "ba_tokens": 23,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "c"
+      },
+      "c,d": {
+        "ab_types": 75,
+        "ba_types": 31,
+        "ab_tokens": 123,
+        "ba_tokens": 41,
+        "asymmetry_ratio": 2.42,
+        "dominant_first": "c"
+      },
+      "c,e": {
+        "ab_types": 119,
+        "ba_types": 72,
+        "ab_tokens": 179,
+        "ba_tokens": 125,
+        "asymmetry_ratio": 1.65,
+        "dominant_first": "c"
+      },
+      "c,f": {
+        "ab_types": 25,
+        "ba_types": 28,
+        "ab_tokens": 38,
+        "ba_tokens": 79,
+        "asymmetry_ratio": 1.12,
+        "dominant_first": "f"
+      },
+      "c,h": {
+        "ab_types": 197,
+        "ba_types": 24,
+        "ab_tokens": 294,
+        "ba_tokens": 24,
+        "asymmetry_ratio": 8.21,
+        "dominant_first": "c"
+      },
+      "c,i": {
+        "ab_types": 9,
+        "ba_types": 25,
+        "ab_tokens": 9,
+        "ba_tokens": 25,
+        "asymmetry_ratio": 2.78,
+        "dominant_first": "i"
+      },
+      "c,k": {
+        "ab_types": 44,
+        "ba_types": 40,
+        "ab_tokens": 227,
+        "ba_tokens": 61,
+        "asymmetry_ratio": 1.1,
+        "dominant_first": "c"
+      },
+      "c,l": {
+        "ab_types": 3,
+        "ba_types": 73,
+        "ab_tokens": 3,
+        "ba_tokens": 183,
+        "asymmetry_ratio": 24.33,
+        "dominant_first": "l"
+      },
+      "c,m": {
+        "ab_types": 0,
+        "ba_types": 2,
+        "ab_tokens": 0,
+        "ba_tokens": 2,
+        "asymmetry_ratio": 2.0,
+        "dominant_first": "m"
+      },
+      "c,o": {
+        "ab_types": 64,
+        "ba_types": 56,
+        "ab_tokens": 90,
+        "ba_tokens": 80,
+        "asymmetry_ratio": 1.14,
+        "dominant_first": "c"
+      },
+      "c,p": {
+        "ab_types": 33,
+        "ba_types": 76,
+        "ab_tokens": 91,
+        "ba_tokens": 320,
+        "asymmetry_ratio": 2.3,
+        "dominant_first": "p"
+      },
+      "c,q": {
+        "ab_types": 0,
+        "ba_types": 19,
+        "ab_tokens": 0,
+        "ba_tokens": 33,
+        "asymmetry_ratio": 19.0,
+        "dominant_first": "q"
+      },
+      "c,r": {
+        "ab_types": 1,
+        "ba_types": 24,
+        "ab_tokens": 1,
+        "ba_tokens": 35,
+        "asymmetry_ratio": 24.0,
+        "dominant_first": "r"
+      },
+      "c,s": {
+        "ab_types": 27,
+        "ba_types": 8,
+        "ab_tokens": 44,
+        "ba_tokens": 8,
+        "asymmetry_ratio": 3.38,
+        "dominant_first": "c"
+      },
+      "c,t": {
+        "ab_types": 28,
+        "ba_types": 18,
+        "ab_tokens": 111,
+        "ba_tokens": 28,
+        "asymmetry_ratio": 1.56,
+        "dominant_first": "c"
+      },
+      "c,x": {
+        "ab_types": 1,
+        "ba_types": 1,
+        "ab_tokens": 1,
+        "ba_tokens": 1,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "c"
+      },
+      "c,y": {
+        "ab_types": 5,
+        "ba_types": 25,
+        "ab_tokens": 5,
+        "ba_tokens": 28,
+        "asymmetry_ratio": 5.0,
+        "dominant_first": "y"
+      },
+      "d,d": {
+        "ab_types": 22,
+        "ba_types": 22,
+        "ab_tokens": 22,
+        "ba_tokens": 22,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "d"
+      },
+      "d,e": {
+        "ab_types": 40,
+        "ba_types": 178,
+        "ab_tokens": 54,
+        "ba_tokens": 461,
+        "asymmetry_ratio": 4.45,
+        "dominant_first": "e"
+      },
+      "d,f": {
+        "ab_types": 4,
+        "ba_types": 10,
+        "ab_tokens": 4,
+        "ba_tokens": 14,
+        "asymmetry_ratio": 2.5,
+        "dominant_first": "f"
+      },
+      "d,h": {
+        "ab_types": 7,
+        "ba_types": 88,
+        "ab_tokens": 7,
+        "ba_tokens": 142,
+        "asymmetry_ratio": 12.57,
+        "dominant_first": "h"
+      },
+      "d,i": {
+        "ab_types": 33,
+        "ba_types": 13,
+        "ab_tokens": 74,
+        "ba_tokens": 14,
+        "asymmetry_ratio": 2.54,
+        "dominant_first": "d"
+      },
+      "d,k": {
+        "ab_types": 5,
+        "ba_types": 27,
+        "ab_tokens": 6,
+        "ba_tokens": 32,
+        "asymmetry_ratio": 5.4,
+        "dominant_first": "k"
+      },
+      "d,l": {
+        "ab_types": 19,
+        "ba_types": 45,
+        "ab_tokens": 19,
+        "ba_tokens": 78,
+        "asymmetry_ratio": 2.37,
+        "dominant_first": "l"
+      },
+      "d,m": {
+        "ab_types": 0,
+        "ba_types": 4,
+        "ab_tokens": 0,
+        "ba_tokens": 4,
+        "asymmetry_ratio": 4.0,
+        "dominant_first": "m"
+      },
+      "d,n": {
+        "ab_types": 0,
+        "ba_types": 2,
+        "ab_tokens": 0,
+        "ba_tokens": 2,
+        "asymmetry_ratio": 2.0,
+        "dominant_first": "n"
+      },
+      "d,o": {
+        "ab_types": 40,
+        "ba_types": 74,
+        "ab_tokens": 56,
+        "ba_tokens": 198,
+        "asymmetry_ratio": 1.85,
+        "dominant_first": "o"
+      },
+      "d,p": {
+        "ab_types": 7,
+        "ba_types": 37,
+        "ab_tokens": 8,
+        "ba_tokens": 55,
+        "asymmetry_ratio": 5.29,
+        "dominant_first": "p"
+      },
+      "d,q": {
+        "ab_types": 1,
+        "ba_types": 7,
+        "ab_tokens": 1,
+        "ba_tokens": 9,
+        "asymmetry_ratio": 7.0,
+        "dominant_first": "q"
+      },
+      "d,r": {
+        "ab_types": 9,
+        "ba_types": 16,
+        "ab_tokens": 10,
+        "ba_tokens": 25,
+        "asymmetry_ratio": 1.78,
+        "dominant_first": "r"
+      },
+      "d,s": {
+        "ab_types": 18,
+        "ba_types": 29,
+        "ab_tokens": 22,
+        "ba_tokens": 41,
+        "asymmetry_ratio": 1.61,
+        "dominant_first": "s"
+      },
+      "d,t": {
+        "ab_types": 9,
+        "ba_types": 20,
+        "ab_tokens": 9,
+        "ba_tokens": 20,
+        "asymmetry_ratio": 2.22,
+        "dominant_first": "t"
+      },
+      "d,x": {
+        "ab_types": 3,
+        "ba_types": 0,
+        "ab_tokens": 3,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 3.0,
+        "dominant_first": "d"
+      },
+      "d,y": {
+        "ab_types": 35,
+        "ba_types": 23,
+        "ab_tokens": 46,
+        "ba_tokens": 24,
+        "asymmetry_ratio": 1.52,
+        "dominant_first": "d"
+      },
+      "e,e": {
+        "ab_types": 202,
+        "ba_types": 202,
+        "ab_tokens": 395,
+        "ba_tokens": 395,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "e"
+      },
+      "e,f": {
+        "ab_types": 20,
+        "ba_types": 18,
+        "ab_tokens": 26,
+        "ba_tokens": 19,
+        "asymmetry_ratio": 1.11,
+        "dominant_first": "e"
+      },
+      "e,g": {
+        "ab_types": 0,
+        "ba_types": 1,
+        "ab_tokens": 0,
+        "ba_tokens": 1,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "g"
+      },
+      "e,h": {
+        "ab_types": 7,
+        "ba_types": 146,
+        "ab_tokens": 7,
+        "ba_tokens": 208,
+        "asymmetry_ratio": 20.86,
+        "dominant_first": "h"
+      },
+      "e,i": {
+        "ab_types": 13,
+        "ba_types": 1,
+        "ab_tokens": 14,
+        "ba_tokens": 1,
+        "asymmetry_ratio": 13.0,
+        "dominant_first": "e"
+      },
+      "e,k": {
+        "ab_types": 25,
+        "ba_types": 96,
+        "ab_tokens": 29,
+        "ba_tokens": 144,
+        "asymmetry_ratio": 3.84,
+        "dominant_first": "k"
+      },
+      "e,l": {
+        "ab_types": 10,
+        "ba_types": 69,
+        "ab_tokens": 11,
+        "ba_tokens": 111,
+        "asymmetry_ratio": 6.9,
+        "dominant_first": "l"
+      },
+      "e,o": {
+        "ab_types": 172,
+        "ba_types": 64,
+        "ab_tokens": 548,
+        "ba_tokens": 72,
+        "asymmetry_ratio": 2.69,
+        "dominant_first": "e"
+      },
+      "e,p": {
+        "ab_types": 18,
+        "ba_types": 59,
+        "ab_tokens": 21,
+        "ba_tokens": 83,
+        "asymmetry_ratio": 3.28,
+        "dominant_first": "p"
+      },
+      "e,q": {
+        "ab_types": 1,
+        "ba_types": 40,
+        "ab_tokens": 1,
+        "ba_tokens": 75,
+        "asymmetry_ratio": 40.0,
+        "dominant_first": "q"
+      },
+      "e,r": {
+        "ab_types": 1,
+        "ba_types": 13,
+        "ab_tokens": 1,
+        "ba_tokens": 13,
+        "asymmetry_ratio": 13.0,
+        "dominant_first": "r"
+      },
+      "e,s": {
+        "ab_types": 44,
+        "ba_types": 50,
+        "ab_tokens": 67,
+        "ba_tokens": 63,
+        "asymmetry_ratio": 1.14,
+        "dominant_first": "s"
+      },
+      "e,t": {
+        "ab_types": 14,
+        "ba_types": 40,
+        "ab_tokens": 15,
+        "ba_tokens": 44,
+        "asymmetry_ratio": 2.86,
+        "dominant_first": "t"
+      },
+      "e,x": {
+        "ab_types": 0,
+        "ba_types": 3,
+        "ab_tokens": 0,
+        "ba_tokens": 3,
+        "asymmetry_ratio": 3.0,
+        "dominant_first": "x"
+      },
+      "e,y": {
+        "ab_types": 17,
+        "ba_types": 31,
+        "ab_tokens": 17,
+        "ba_tokens": 32,
+        "asymmetry_ratio": 1.82,
+        "dominant_first": "y"
+      },
+      "f,f": {
+        "ab_types": 1,
+        "ba_types": 1,
+        "ab_tokens": 1,
+        "ba_tokens": 1,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "f"
+      },
+      "f,h": {
+        "ab_types": 17,
+        "ba_types": 11,
+        "ab_tokens": 20,
+        "ba_tokens": 11,
+        "asymmetry_ratio": 1.55,
+        "dominant_first": "f"
+      },
+      "f,i": {
+        "ab_types": 12,
+        "ba_types": 7,
+        "ab_tokens": 12,
+        "ba_tokens": 9,
+        "asymmetry_ratio": 1.71,
+        "dominant_first": "f"
+      },
+      "f,k": {
+        "ab_types": 2,
+        "ba_types": 4,
+        "ab_tokens": 2,
+        "ba_tokens": 4,
+        "asymmetry_ratio": 2.0,
+        "dominant_first": "k"
+      },
+      "f,l": {
+        "ab_types": 2,
+        "ba_types": 6,
+        "ab_tokens": 2,
+        "ba_tokens": 10,
+        "asymmetry_ratio": 3.0,
+        "dominant_first": "l"
+      },
+      "f,m": {
+        "ab_types": 1,
+        "ba_types": 0,
+        "ab_tokens": 1,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "f"
+      },
+      "f,n": {
+        "ab_types": 1,
+        "ba_types": 0,
+        "ab_tokens": 1,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "f"
+      },
+      "f,o": {
+        "ab_types": 20,
+        "ba_types": 6,
+        "ab_tokens": 22,
+        "ba_tokens": 6,
+        "asymmetry_ratio": 3.33,
+        "dominant_first": "f"
+      },
+      "f,p": {
+        "ab_types": 2,
+        "ba_types": 5,
+        "ab_tokens": 2,
+        "ba_tokens": 5,
+        "asymmetry_ratio": 2.5,
+        "dominant_first": "p"
+      },
+      "f,q": {
+        "ab_types": 0,
+        "ba_types": 3,
+        "ab_tokens": 0,
+        "ba_tokens": 3,
+        "asymmetry_ratio": 3.0,
+        "dominant_first": "q"
+      },
+      "f,r": {
+        "ab_types": 2,
+        "ba_types": 4,
+        "ab_tokens": 2,
+        "ba_tokens": 4,
+        "asymmetry_ratio": 2.0,
+        "dominant_first": "r"
+      },
+      "f,s": {
+        "ab_types": 9,
+        "ba_types": 2,
+        "ab_tokens": 10,
+        "ba_tokens": 2,
+        "asymmetry_ratio": 4.5,
+        "dominant_first": "f"
+      },
+      "f,y": {
+        "ab_types": 2,
+        "ba_types": 10,
+        "ab_tokens": 2,
+        "ba_tokens": 10,
+        "asymmetry_ratio": 5.0,
+        "dominant_first": "y"
+      },
+      "g,l": {
+        "ab_types": 0,
+        "ba_types": 1,
+        "ab_tokens": 0,
+        "ba_tokens": 1,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "l"
+      },
+      "h,h": {
+        "ab_types": 3,
+        "ba_types": 3,
+        "ab_tokens": 3,
+        "ba_tokens": 3,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "h"
+      },
+      "h,i": {
+        "ab_types": 9,
+        "ba_types": 8,
+        "ab_tokens": 9,
+        "ba_tokens": 8,
+        "asymmetry_ratio": 1.12,
+        "dominant_first": "h"
+      },
+      "h,k": {
+        "ab_types": 3,
+        "ba_types": 37,
+        "ab_tokens": 3,
+        "ba_tokens": 46,
+        "asymmetry_ratio": 12.33,
+        "dominant_first": "k"
+      },
+      "h,l": {
+        "ab_types": 4,
+        "ba_types": 32,
+        "ab_tokens": 4,
+        "ba_tokens": 48,
+        "asymmetry_ratio": 8.0,
+        "dominant_first": "l"
+      },
+      "h,m": {
+        "ab_types": 0,
+        "ba_types": 1,
+        "ab_tokens": 0,
+        "ba_tokens": 1,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "m"
+      },
+      "h,o": {
+        "ab_types": 83,
+        "ba_types": 13,
+        "ab_tokens": 113,
+        "ba_tokens": 14,
+        "asymmetry_ratio": 6.38,
+        "dominant_first": "h"
+      },
+      "h,p": {
+        "ab_types": 7,
+        "ba_types": 74,
+        "ab_tokens": 7,
+        "ba_tokens": 107,
+        "asymmetry_ratio": 10.57,
+        "dominant_first": "p"
+      },
+      "h,q": {
+        "ab_types": 0,
+        "ba_types": 5,
+        "ab_tokens": 0,
+        "ba_tokens": 5,
+        "asymmetry_ratio": 5.0,
+        "dominant_first": "q"
+      },
+      "h,r": {
+        "ab_types": 3,
+        "ba_types": 10,
+        "ab_tokens": 3,
+        "ba_tokens": 10,
+        "asymmetry_ratio": 3.33,
+        "dominant_first": "r"
+      },
+      "h,s": {
+        "ab_types": 18,
+        "ba_types": 43,
+        "ab_tokens": 19,
+        "ba_tokens": 55,
+        "asymmetry_ratio": 2.39,
+        "dominant_first": "s"
+      },
+      "h,t": {
+        "ab_types": 4,
+        "ba_types": 22,
+        "ab_tokens": 4,
+        "ba_tokens": 27,
+        "asymmetry_ratio": 5.5,
+        "dominant_first": "t"
+      },
+      "h,x": {
+        "ab_types": 2,
+        "ba_types": 0,
+        "ab_tokens": 2,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 2.0,
+        "dominant_first": "h"
+      },
+      "h,y": {
+        "ab_types": 7,
+        "ba_types": 6,
+        "ab_tokens": 7,
+        "ba_tokens": 6,
+        "asymmetry_ratio": 1.17,
+        "dominant_first": "h"
+      },
+      "i,i": {
+        "ab_types": 83,
+        "ba_types": 83,
+        "ab_tokens": 1576,
+        "ba_tokens": 1576,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "i"
+      },
+      "i,k": {
+        "ab_types": 7,
+        "ba_types": 14,
+        "ab_tokens": 8,
+        "ba_tokens": 17,
+        "asymmetry_ratio": 2.0,
+        "dominant_first": "k"
+      },
+      "i,l": {
+        "ab_types": 14,
+        "ba_types": 20,
+        "ab_tokens": 14,
+        "ba_tokens": 26,
+        "asymmetry_ratio": 1.43,
+        "dominant_first": "l"
+      },
+      "i,n": {
+        "ab_types": 19,
+        "ba_types": 0,
+        "ab_tokens": 19,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 19.0,
+        "dominant_first": "i"
+      },
+      "i,o": {
+        "ab_types": 43,
+        "ba_types": 24,
+        "ab_tokens": 55,
+        "ba_tokens": 27,
+        "asymmetry_ratio": 1.79,
+        "dominant_first": "i"
+      },
+      "i,p": {
+        "ab_types": 6,
+        "ba_types": 28,
+        "ab_tokens": 8,
+        "ba_tokens": 41,
+        "asymmetry_ratio": 4.67,
+        "dominant_first": "p"
+      },
+      "i,q": {
+        "ab_types": 0,
+        "ba_types": 2,
+        "ab_tokens": 0,
+        "ba_tokens": 2,
+        "asymmetry_ratio": 2.0,
+        "dominant_first": "q"
+      },
+      "i,r": {
+        "ab_types": 30,
+        "ba_types": 20,
+        "ab_tokens": 41,
+        "ba_tokens": 34,
+        "asymmetry_ratio": 1.5,
+        "dominant_first": "i"
+      },
+      "i,s": {
+        "ab_types": 15,
+        "ba_types": 7,
+        "ab_tokens": 18,
+        "ba_tokens": 8,
+        "asymmetry_ratio": 2.14,
+        "dominant_first": "i"
+      },
+      "i,t": {
+        "ab_types": 4,
+        "ba_types": 4,
+        "ab_tokens": 5,
+        "ba_tokens": 4,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "i"
+      },
+      "i,x": {
+        "ab_types": 3,
+        "ba_types": 0,
+        "ab_tokens": 3,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 3.0,
+        "dominant_first": "i"
+      },
+      "i,y": {
+        "ab_types": 2,
+        "ba_types": 7,
+        "ab_tokens": 2,
+        "ba_tokens": 8,
+        "asymmetry_ratio": 3.5,
+        "dominant_first": "y"
+      },
+      "k,k": {
+        "ab_types": 1,
+        "ba_types": 1,
+        "ab_tokens": 1,
+        "ba_tokens": 1,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "k"
+      },
+      "k,l": {
+        "ab_types": 2,
+        "ba_types": 34,
+        "ab_tokens": 2,
+        "ba_tokens": 69,
+        "asymmetry_ratio": 17.0,
+        "dominant_first": "l"
+      },
+      "k,o": {
+        "ab_types": 32,
+        "ba_types": 29,
+        "ab_tokens": 38,
+        "ba_tokens": 37,
+        "asymmetry_ratio": 1.1,
+        "dominant_first": "k"
+      },
+      "k,p": {
+        "ab_types": 1,
+        "ba_types": 3,
+        "ab_tokens": 1,
+        "ba_tokens": 3,
+        "asymmetry_ratio": 3.0,
+        "dominant_first": "p"
+      },
+      "k,q": {
+        "ab_types": 0,
+        "ba_types": 11,
+        "ab_tokens": 0,
+        "ba_tokens": 16,
+        "asymmetry_ratio": 11.0,
+        "dominant_first": "q"
+      },
+      "k,r": {
+        "ab_types": 0,
+        "ba_types": 2,
+        "ab_tokens": 0,
+        "ba_tokens": 2,
+        "asymmetry_ratio": 2.0,
+        "dominant_first": "r"
+      },
+      "k,s": {
+        "ab_types": 15,
+        "ba_types": 3,
+        "ab_tokens": 21,
+        "ba_tokens": 3,
+        "asymmetry_ratio": 5.0,
+        "dominant_first": "k"
+      },
+      "k,t": {
+        "ab_types": 1,
+        "ba_types": 0,
+        "ab_tokens": 1,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "k"
+      },
+      "k,x": {
+        "ab_types": 0,
+        "ba_types": 1,
+        "ab_tokens": 0,
+        "ba_tokens": 1,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "x"
+      },
+      "k,y": {
+        "ab_types": 6,
+        "ba_types": 15,
+        "ab_tokens": 6,
+        "ba_tokens": 16,
+        "asymmetry_ratio": 2.5,
+        "dominant_first": "y"
+      },
+      "l,l": {
+        "ab_types": 11,
+        "ba_types": 11,
+        "ab_tokens": 13,
+        "ba_tokens": 13,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "l"
+      },
+      "l,m": {
+        "ab_types": 1,
+        "ba_types": 0,
+        "ab_tokens": 1,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "l"
+      },
+      "l,n": {
+        "ab_types": 1,
+        "ba_types": 0,
+        "ab_tokens": 1,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "l"
+      },
+      "l,o": {
+        "ab_types": 58,
+        "ba_types": 52,
+        "ab_tokens": 108,
+        "ba_tokens": 69,
+        "asymmetry_ratio": 1.12,
+        "dominant_first": "l"
+      },
+      "l,p": {
+        "ab_types": 7,
+        "ba_types": 10,
+        "ab_tokens": 11,
+        "ba_tokens": 13,
+        "asymmetry_ratio": 1.43,
+        "dominant_first": "p"
+      },
+      "l,q": {
+        "ab_types": 0,
+        "ba_types": 2,
+        "ab_tokens": 0,
+        "ba_tokens": 2,
+        "asymmetry_ratio": 2.0,
+        "dominant_first": "q"
+      },
+      "l,r": {
+        "ab_types": 4,
+        "ba_types": 11,
+        "ab_tokens": 4,
+        "ba_tokens": 11,
+        "asymmetry_ratio": 2.75,
+        "dominant_first": "r"
+      },
+      "l,s": {
+        "ab_types": 44,
+        "ba_types": 3,
+        "ab_tokens": 91,
+        "ba_tokens": 3,
+        "asymmetry_ratio": 14.67,
+        "dominant_first": "l"
+      },
+      "l,t": {
+        "ab_types": 10,
+        "ba_types": 1,
+        "ab_tokens": 12,
+        "ba_tokens": 1,
+        "asymmetry_ratio": 10.0,
+        "dominant_first": "l"
+      },
+      "l,x": {
+        "ab_types": 2,
+        "ba_types": 1,
+        "ab_tokens": 3,
+        "ba_tokens": 1,
+        "asymmetry_ratio": 2.0,
+        "dominant_first": "l"
+      },
+      "l,y": {
+        "ab_types": 3,
+        "ba_types": 5,
+        "ab_tokens": 3,
+        "ba_tokens": 5,
+        "asymmetry_ratio": 1.67,
+        "dominant_first": "y"
+      },
+      "m,o": {
+        "ab_types": 4,
+        "ba_types": 0,
+        "ab_tokens": 4,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 4.0,
+        "dominant_first": "m"
+      },
+      "m,r": {
+        "ab_types": 0,
+        "ba_types": 2,
+        "ab_tokens": 0,
+        "ba_tokens": 2,
+        "asymmetry_ratio": 2.0,
+        "dominant_first": "r"
+      },
+      "m,s": {
+        "ab_types": 1,
+        "ba_types": 1,
+        "ab_tokens": 1,
+        "ba_tokens": 1,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "m"
+      },
+      "n,o": {
+        "ab_types": 7,
+        "ba_types": 0,
+        "ab_tokens": 7,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 7.0,
+        "dominant_first": "n"
+      },
+      "n,p": {
+        "ab_types": 0,
+        "ba_types": 1,
+        "ab_tokens": 0,
+        "ba_tokens": 1,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "p"
+      },
+      "n,r": {
+        "ab_types": 2,
+        "ba_types": 0,
+        "ab_tokens": 2,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 2.0,
+        "dominant_first": "n"
+      },
+      "n,s": {
+        "ab_types": 1,
+        "ba_types": 0,
+        "ab_tokens": 1,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "n"
+      },
+      "n,x": {
+        "ab_types": 1,
+        "ba_types": 0,
+        "ab_tokens": 1,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "n"
+      },
+      "n,y": {
+        "ab_types": 1,
+        "ba_types": 0,
+        "ab_tokens": 1,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "n"
+      },
+      "o,o": {
+        "ab_types": 30,
+        "ba_types": 30,
+        "ab_tokens": 32,
+        "ba_tokens": 32,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "o"
+      },
+      "o,p": {
+        "ab_types": 14,
+        "ba_types": 44,
+        "ab_tokens": 18,
+        "ba_tokens": 56,
+        "asymmetry_ratio": 3.14,
+        "dominant_first": "p"
+      },
+      "o,q": {
+        "ab_types": 0,
+        "ba_types": 23,
+        "ab_tokens": 0,
+        "ba_tokens": 44,
+        "asymmetry_ratio": 23.0,
+        "dominant_first": "q"
+      },
+      "o,r": {
+        "ab_types": 11,
+        "ba_types": 47,
+        "ab_tokens": 11,
+        "ba_tokens": 80,
+        "asymmetry_ratio": 4.27,
+        "dominant_first": "r"
+      },
+      "o,s": {
+        "ab_types": 25,
+        "ba_types": 37,
+        "ab_tokens": 28,
+        "ba_tokens": 45,
+        "asymmetry_ratio": 1.48,
+        "dominant_first": "s"
+      },
+      "o,t": {
+        "ab_types": 16,
+        "ba_types": 20,
+        "ab_tokens": 19,
+        "ba_tokens": 25,
+        "asymmetry_ratio": 1.25,
+        "dominant_first": "t"
+      },
+      "o,x": {
+        "ab_types": 0,
+        "ba_types": 2,
+        "ab_tokens": 0,
+        "ba_tokens": 2,
+        "asymmetry_ratio": 2.0,
+        "dominant_first": "x"
+      },
+      "o,y": {
+        "ab_types": 0,
+        "ba_types": 21,
+        "ab_tokens": 0,
+        "ba_tokens": 23,
+        "asymmetry_ratio": 21.0,
+        "dominant_first": "y"
+      },
+      "p,p": {
+        "ab_types": 2,
+        "ba_types": 2,
+        "ab_tokens": 2,
+        "ba_tokens": 2,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "p"
+      },
+      "p,q": {
+        "ab_types": 0,
+        "ba_types": 6,
+        "ab_tokens": 0,
+        "ba_tokens": 7,
+        "asymmetry_ratio": 6.0,
+        "dominant_first": "q"
+      },
+      "p,r": {
+        "ab_types": 5,
+        "ba_types": 1,
+        "ab_tokens": 5,
+        "ba_tokens": 1,
+        "asymmetry_ratio": 5.0,
+        "dominant_first": "p"
+      },
+      "p,s": {
+        "ab_types": 26,
+        "ba_types": 3,
+        "ab_tokens": 36,
+        "ba_tokens": 3,
+        "asymmetry_ratio": 8.67,
+        "dominant_first": "p"
+      },
+      "p,t": {
+        "ab_types": 1,
+        "ba_types": 1,
+        "ab_tokens": 1,
+        "ba_tokens": 1,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "p"
+      },
+      "p,x": {
+        "ab_types": 1,
+        "ba_types": 0,
+        "ab_tokens": 1,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "p"
+      },
+      "p,y": {
+        "ab_types": 7,
+        "ba_types": 12,
+        "ab_tokens": 7,
+        "ba_tokens": 18,
+        "asymmetry_ratio": 1.71,
+        "dominant_first": "y"
+      },
+      "q,r": {
+        "ab_types": 0,
+        "ba_types": 1,
+        "ab_tokens": 0,
+        "ba_tokens": 1,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "r"
+      },
+      "q,s": {
+        "ab_types": 4,
+        "ba_types": 0,
+        "ab_tokens": 4,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 4.0,
+        "dominant_first": "q"
+      },
+      "q,t": {
+        "ab_types": 8,
+        "ba_types": 1,
+        "ab_tokens": 12,
+        "ba_tokens": 1,
+        "asymmetry_ratio": 8.0,
+        "dominant_first": "q"
+      },
+      "q,y": {
+        "ab_types": 3,
+        "ba_types": 3,
+        "ab_tokens": 3,
+        "ba_tokens": 3,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "q"
+      },
+      "r,r": {
+        "ab_types": 6,
+        "ba_types": 6,
+        "ab_tokens": 6,
+        "ba_tokens": 6,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "r"
+      },
+      "r,s": {
+        "ab_types": 16,
+        "ba_types": 2,
+        "ab_tokens": 18,
+        "ba_tokens": 2,
+        "asymmetry_ratio": 8.0,
+        "dominant_first": "r"
+      },
+      "r,t": {
+        "ab_types": 2,
+        "ba_types": 0,
+        "ab_tokens": 2,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 2.0,
+        "dominant_first": "r"
+      },
+      "r,x": {
+        "ab_types": 2,
+        "ba_types": 0,
+        "ab_tokens": 2,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 2.0,
+        "dominant_first": "r"
+      },
+      "r,y": {
+        "ab_types": 1,
+        "ba_types": 2,
+        "ab_tokens": 1,
+        "ba_tokens": 2,
+        "asymmetry_ratio": 2.0,
+        "dominant_first": "y"
+      },
+      "s,s": {
+        "ab_types": 8,
+        "ba_types": 8,
+        "ab_tokens": 8,
+        "ba_tokens": 8,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "s"
+      },
+      "s,t": {
+        "ab_types": 2,
+        "ba_types": 13,
+        "ab_tokens": 2,
+        "ba_tokens": 14,
+        "asymmetry_ratio": 6.5,
+        "dominant_first": "t"
+      },
+      "s,x": {
+        "ab_types": 2,
+        "ba_types": 0,
+        "ab_tokens": 2,
+        "ba_tokens": 0,
+        "asymmetry_ratio": 2.0,
+        "dominant_first": "s"
+      },
+      "s,y": {
+        "ab_types": 2,
+        "ba_types": 18,
+        "ab_tokens": 2,
+        "ba_tokens": 20,
+        "asymmetry_ratio": 9.0,
+        "dominant_first": "y"
+      },
+      "t,y": {
+        "ab_types": 3,
+        "ba_types": 23,
+        "ab_tokens": 3,
+        "ba_tokens": 24,
+        "asymmetry_ratio": 7.67,
+        "dominant_first": "y"
+      },
+      "x,y": {
+        "ab_types": 0,
+        "ba_types": 1,
+        "ab_tokens": 0,
+        "ba_tokens": 1,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "y"
+      },
+      "y,y": {
+        "ab_types": 3,
+        "ba_types": 3,
+        "ab_tokens": 3,
+        "ba_tokens": 3,
+        "asymmetry_ratio": 1.0,
+        "dominant_first": "y"
+      }
+    },
+    "mean_positions": {
+      "c": 0.5324,
+      "d": 0.6965,
+      "f": 0.3954,
+      "i": 0.5193,
+      "p": 0.2249,
+      "s": 0.7135
+    },
+    "inferred_order": [
+      "p",
+      "f",
+      "i",
+      "c",
+      "d",
+      "s"
+    ]
+  },
+  "test4": {
+    "n_extended_compounds": 786,
+    "n_heterogeneous": 778,
+    "modifier_repetitions": {
+      "ex2": 127,
+      "ix2": 53,
+      "ox2": 30,
+      "cx2": 23,
+      "dx2": 22,
+      "ex3": 21,
+      "lx2": 11,
+      "ix3": 10,
+      "sx2": 8,
+      "rx2": 6,
+      "ax2": 5,
+      "yx2": 3,
+      "hx2": 3,
+      "ex4": 2,
+      "px2": 2,
+      "ax3": 1,
+      "kx2": 1,
+      "fx2": 1
+    },
+    "top_modifier_sequences": {
+      "dai": 6,
+      "eeo": 5,
+      "pche": 5,
+      "eeod": 5,
+      "cho": 5,
+      "lkc": 5,
+      "eda": 5,
+      "iii": 5,
+      "eed": 4,
+      "chd": 4,
+      "pai": 4,
+      "che": 4,
+      "olc": 4,
+      "ees": 4,
+      "paii": 4,
+      "lke": 3,
+      "eod": 3,
+      "rai": 3,
+      "eec": 3,
+      "ched": 3
+    },
+    "examples": [
+      {
+        "middle": "keeo",
+        "tokens": 38,
+        "modifier_sequence": "eeo",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "e",
+          "o"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "HMMM",
+        "atom_pattern": "FHHH"
+      },
+      {
+        "middle": "keed",
+        "tokens": 30,
+        "modifier_sequence": "eed",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "d",
+          "e"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "HMMM",
+        "atom_pattern": "FHHM"
+      },
+      {
+        "middle": "dai",
+        "tokens": 23,
+        "modifier_sequence": "dai",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "a",
+          "d",
+          "i"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "MMM",
+        "atom_pattern": "MHM"
+      },
+      {
+        "middle": "lke",
+        "tokens": 20,
+        "modifier_sequence": "lke",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "e",
+          "k",
+          "l"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "MMM",
+        "atom_pattern": "TFH"
+      },
+      {
+        "middle": "eeod",
+        "tokens": 16,
+        "modifier_sequence": "eod",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "d",
+          "e",
+          "o"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "HMMM",
+        "atom_pattern": "HHHM"
+      },
+      {
+        "middle": "rai",
+        "tokens": 12,
+        "modifier_sequence": "rai",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "a",
+          "i",
+          "r"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "MMM",
+        "atom_pattern": "THM"
+      },
+      {
+        "middle": "edai",
+        "tokens": 11,
+        "modifier_sequence": "dai",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "a",
+          "d",
+          "i"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "HMMM",
+        "atom_pattern": "HMHM"
+      },
+      {
+        "middle": "eeeo",
+        "tokens": 10,
+        "modifier_sequence": "eeo",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "e",
+          "o"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "HMMM",
+        "atom_pattern": "HHHH"
+      },
+      {
+        "middle": "teed",
+        "tokens": 9,
+        "modifier_sequence": "eed",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "d",
+          "e"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "HMMM",
+        "atom_pattern": "FHHM"
+      },
+      {
+        "middle": "olke",
+        "tokens": 8,
+        "modifier_sequence": "lke",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "e",
+          "k",
+          "l"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "HMMM",
+        "atom_pattern": "HTFH"
+      },
+      {
+        "middle": "keec",
+        "tokens": 8,
+        "modifier_sequence": "eec",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "c",
+          "e"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "HMMM",
+        "atom_pattern": "FHHM"
+      },
+      {
+        "middle": "teeo",
+        "tokens": 8,
+        "modifier_sequence": "eeo",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "e",
+          "o"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "HMMM",
+        "atom_pattern": "FHHH"
+      },
+      {
+        "middle": "odai",
+        "tokens": 8,
+        "modifier_sequence": "dai",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "a",
+          "d",
+          "i"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "HMMM",
+        "atom_pattern": "HMHM"
+      },
+      {
+        "middle": "tched",
+        "tokens": 7,
+        "modifier_sequence": "ched",
+        "n_modifiers": 4,
+        "unique_mod_atoms": [
+          "c",
+          "d",
+          "e",
+          "h"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "HMMMM",
+        "atom_pattern": "FMTHM"
+      },
+      {
+        "middle": "rod",
+        "tokens": 7,
+        "modifier_sequence": "rod",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "d",
+          "o",
+          "r"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "MMM",
+        "atom_pattern": "THM"
+      },
+      {
+        "middle": "airo",
+        "tokens": 7,
+        "modifier_sequence": "iro",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "i",
+          "o",
+          "r"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "HMMM",
+        "atom_pattern": "HMTH"
+      },
+      {
+        "middle": "opched",
+        "tokens": 7,
+        "modifier_sequence": "pched",
+        "n_modifiers": 5,
+        "unique_mod_atoms": [
+          "c",
+          "d",
+          "e",
+          "h",
+          "p"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "HMMMMM",
+        "atom_pattern": "HMMTHM"
+      },
+      {
+        "middle": "lod",
+        "tokens": 7,
+        "modifier_sequence": "lod",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "d",
+          "l",
+          "o"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "MMM",
+        "atom_pattern": "THM"
+      },
+      {
+        "middle": "tchd",
+        "tokens": 7,
+        "modifier_sequence": "chd",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "c",
+          "d",
+          "h"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "HMMM",
+        "atom_pattern": "FMTM"
+      },
+      {
+        "middle": "opche",
+        "tokens": 6,
+        "modifier_sequence": "pche",
+        "n_modifiers": 4,
+        "unique_mod_atoms": [
+          "c",
+          "e",
+          "h",
+          "p"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "HMMMM",
+        "atom_pattern": "HMMTH"
+      },
+      {
+        "middle": "keeod",
+        "tokens": 6,
+        "modifier_sequence": "eeod",
+        "n_modifiers": 4,
+        "unique_mod_atoms": [
+          "d",
+          "e",
+          "o"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "HMMMM",
+        "atom_pattern": "FHHHM"
+      },
+      {
+        "middle": "opai",
+        "tokens": 6,
+        "modifier_sequence": "pai",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "a",
+          "i",
+          "p"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "HMMM",
+        "atom_pattern": "HMHM"
+      },
+      {
+        "middle": "lai",
+        "tokens": 6,
+        "modifier_sequence": "lai",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "a",
+          "i",
+          "l"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "MMM",
+        "atom_pattern": "THM"
+      },
+      {
+        "middle": "kchd",
+        "tokens": 6,
+        "modifier_sequence": "chd",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "c",
+          "d",
+          "h"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "HMMM",
+        "atom_pattern": "FMTM"
+      },
+      {
+        "middle": "tche",
+        "tokens": 5,
+        "modifier_sequence": "che",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "c",
+          "e",
+          "h"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "HMMM",
+        "atom_pattern": "FMTH"
+      },
+      {
+        "middle": "pche",
+        "tokens": 5,
+        "modifier_sequence": "pche",
+        "n_modifiers": 4,
+        "unique_mod_atoms": [
+          "c",
+          "e",
+          "h",
+          "p"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "MMMM",
+        "atom_pattern": "MMTH"
+      },
+      {
+        "middle": "lchd",
+        "tokens": 5,
+        "modifier_sequence": "lchd",
+        "n_modifiers": 4,
+        "unique_mod_atoms": [
+          "c",
+          "d",
+          "h",
+          "l"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "MMMM",
+        "atom_pattern": "TMTM"
+      },
+      {
+        "middle": "qee",
+        "tokens": 5,
+        "modifier_sequence": "qee",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "e",
+          "q"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "MMM",
+        "atom_pattern": "UHH"
+      },
+      {
+        "middle": "lche",
+        "tokens": 5,
+        "modifier_sequence": "lche",
+        "n_modifiers": 4,
+        "unique_mod_atoms": [
+          "c",
+          "e",
+          "h",
+          "l"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "MMMM",
+        "atom_pattern": "TMTH"
+      },
+      {
+        "middle": "iro",
+        "tokens": 5,
+        "modifier_sequence": "iro",
+        "n_modifiers": 3,
+        "unique_mod_atoms": [
+          "i",
+          "o",
+          "r"
+        ],
+        "homogeneous": false,
+        "pos_pattern": "MMM",
+        "atom_pattern": "MTH"
+      }
+    ]
+  },
+  "test5": {
+    "by_head": {
+      "[c]mod": {
+        "atom_class": "MOD",
+        "n_types": 61,
+        "mean_mods_type": 4.066,
+        "mean_mods_token": 1.789,
+        "distribution": {
+          "1": 3,
+          "2": 7,
+          "3": 9,
+          "4": 15,
+          "5": 19,
+          "6": 7,
+          "7": 1
+        }
+      },
+      "[d]mod": {
+        "atom_class": "MOD",
+        "n_types": 59,
+        "mean_mods_type": 3.237,
+        "mean_mods_token": 1.284,
+        "distribution": {
+          "1": 4,
+          "2": 15,
+          "3": 16,
+          "4": 15,
+          "5": 5,
+          "6": 4
+        }
+      },
+      "[f]mod": {
+        "atom_class": "MOD",
+        "n_types": 19,
+        "mean_mods_type": 3.211,
+        "mean_mods_token": 2.636,
+        "distribution": {
+          "2": 6,
+          "3": 6,
+          "4": 5,
+          "5": 1,
+          "6": 1
+        }
+      },
+      "[g]mod": {
+        "atom_class": "MOD",
+        "n_types": 1,
+        "mean_mods_type": 2.0,
+        "mean_mods_token": 2.0,
+        "distribution": {
+          "2": 1
+        }
+      },
+      "[h]mod": {
+        "atom_class": "MOD",
+        "n_types": 8,
+        "mean_mods_type": 3.125,
+        "mean_mods_token": 2.125,
+        "distribution": {
+          "1": 1,
+          "2": 1,
+          "3": 3,
+          "4": 2,
+          "5": 1
+        }
+      },
+      "[i]mod": {
+        "atom_class": "MOD",
+        "n_types": 35,
+        "mean_mods_type": 2.629,
+        "mean_mods_token": 1.712,
+        "distribution": {
+          "1": 6,
+          "2": 9,
+          "3": 14,
+          "4": 4,
+          "5": 2
+        }
+      },
+      "[l]mod": {
+        "atom_class": "MOD",
+        "n_types": 92,
+        "mean_mods_type": 3.337,
+        "mean_mods_token": 2.194,
+        "distribution": {
+          "1": 6,
+          "2": 19,
+          "3": 29,
+          "4": 17,
+          "5": 18,
+          "6": 3
+        }
+      },
+      "[m]mod": {
+        "atom_class": "MOD",
+        "n_types": 1,
+        "mean_mods_type": 2.0,
+        "mean_mods_token": 2.0,
+        "distribution": {
+          "2": 1
+        }
+      },
+      "[p]mod": {
+        "atom_class": "MOD",
+        "n_types": 48,
+        "mean_mods_type": 3.938,
+        "mean_mods_token": 2.803,
+        "distribution": {
+          "2": 10,
+          "3": 9,
+          "4": 11,
+          "5": 11,
+          "6": 6,
+          "7": 1
+        }
+      },
+      "[q]mod": {
+        "atom_class": "MOD",
+        "n_types": 46,
+        "mean_mods_type": 3.5,
+        "mean_mods_token": 2.856,
+        "distribution": {
+          "1": 2,
+          "2": 14,
+          "3": 9,
+          "4": 9,
+          "5": 6,
+          "6": 4,
+          "7": 2
+        }
+      },
+      "[r]mod": {
+        "atom_class": "MOD",
+        "n_types": 43,
+        "mean_mods_type": 3.349,
+        "mean_mods_token": 2.377,
+        "distribution": {
+          "1": 3,
+          "2": 12,
+          "3": 6,
+          "4": 13,
+          "5": 7,
+          "6": 2
+        }
+      },
+      "[s]mod": {
+        "atom_class": "MOD",
+        "n_types": 19,
+        "mean_mods_type": 2.684,
+        "mean_mods_token": 2.312,
+        "distribution": {
+          "1": 3,
+          "2": 5,
+          "3": 7,
+          "4": 3,
+          "5": 1
+        }
+      },
+      "[x]mod": {
+        "atom_class": "MOD",
+        "n_types": 1,
+        "mean_mods_type": 7.0,
+        "mean_mods_token": 7.0,
+        "distribution": {
+          "7": 1
+        }
+      },
+      "[y]mod": {
+        "atom_class": "MOD",
+        "n_types": 36,
+        "mean_mods_type": 2.944,
+        "mean_mods_token": 2.225,
+        "distribution": {
+          "1": 5,
+          "2": 7,
+          "3": 17,
+          "4": 3,
+          "5": 1,
+          "6": 2,
+          "7": 1
+        }
+      },
+      "a": {
+        "atom_class": "HEAD",
+        "n_types": 101,
+        "mean_mods_type": 2.703,
+        "mean_mods_token": 0.892,
+        "distribution": {
+          "0": 6,
+          "1": 13,
+          "2": 33,
+          "3": 19,
+          "4": 19,
+          "5": 6,
+          "6": 4,
+          "7": 1
+        }
+      },
+      "e": {
+        "atom_class": "HEAD",
+        "n_types": 278,
+        "mean_mods_type": 2.939,
+        "mean_mods_token": 1.016,
+        "distribution": {
+          "0": 6,
+          "1": 28,
+          "2": 85,
+          "3": 75,
+          "4": 45,
+          "5": 26,
+          "6": 7,
+          "7": 6
+        }
+      },
+      "k": {
+        "atom_class": "FREE",
+        "n_types": 91,
+        "mean_mods_type": 2.868,
+        "mean_mods_token": 1.505,
+        "distribution": {
+          "0": 2,
+          "1": 13,
+          "2": 21,
+          "3": 26,
+          "4": 19,
+          "5": 8,
+          "6": 2
+        }
+      },
+      "o": {
+        "atom_class": "HEAD",
+        "n_types": 275,
+        "mean_mods_type": 3.142,
+        "mean_mods_token": 0.864,
+        "distribution": {
+          "0": 6,
+          "1": 31,
+          "2": 78,
+          "3": 51,
+          "4": 50,
+          "5": 38,
+          "6": 15,
+          "7": 4,
+          "8": 2
+        }
+      },
+      "t": {
+        "atom_class": "FREE",
+        "n_types": 59,
+        "mean_mods_type": 2.661,
+        "mean_mods_token": 1.687,
+        "distribution": {
+          "0": 1,
+          "1": 13,
+          "2": 11,
+          "3": 22,
+          "4": 6,
+          "5": 4,
+          "6": 2
+        }
+      }
+    }
+  },
+  "test6": {
+    "by_terminal": {
+      "[a]mod": {
+        "atom_class": "MOD",
+        "n_types": 49,
+        "mean_mods_type": 2.878,
+        "mean_mods_token": 2.047,
+        "distribution": {
+          "1": 4,
+          "2": 15,
+          "3": 17,
+          "4": 10,
+          "5": 2,
+          "6": 1
+        }
+      },
+      "[c]mod": {
+        "atom_class": "MOD",
+        "n_types": 79,
+        "mean_mods_type": 3.19,
+        "mean_mods_token": 2.221,
+        "distribution": {
+          "1": 4,
+          "2": 25,
+          "3": 22,
+          "4": 13,
+          "5": 11,
+          "6": 3,
+          "7": 1
+        }
+      },
+      "[d]mod": {
+        "atom_class": "MOD",
+        "n_types": 178,
+        "mean_mods_type": 3.989,
+        "mean_mods_token": 1.979,
+        "distribution": {
+          "1": 3,
+          "2": 20,
+          "3": 45,
+          "4": 47,
+          "5": 41,
+          "6": 15,
+          "7": 7
+        }
+      },
+      "[e]mod": {
+        "atom_class": "MOD",
+        "n_types": 105,
+        "mean_mods_type": 3.448,
+        "mean_mods_token": 1.536,
+        "distribution": {
+          "1": 4,
+          "2": 19,
+          "3": 34,
+          "4": 30,
+          "5": 12,
+          "6": 4,
+          "7": 2
+        }
+      },
+      "[f]mod": {
+        "atom_class": "MOD",
+        "n_types": 33,
+        "mean_mods_type": 3.242,
+        "mean_mods_token": 2.344,
+        "distribution": {
+          "1": 2,
+          "2": 15,
+          "3": 3,
+          "4": 5,
+          "5": 4,
+          "6": 2,
+          "7": 2
+        }
+      },
+      "[g]mod": {
+        "atom_class": "MOD",
+        "n_types": 2,
+        "mean_mods_type": 1.5,
+        "mean_mods_token": 1.5,
+        "distribution": {
+          "1": 1,
+          "2": 1
+        }
+      },
+      "[i]mod": {
+        "atom_class": "MOD",
+        "n_types": 75,
+        "mean_mods_type": 3.627,
+        "mean_mods_token": 2.054,
+        "distribution": {
+          "1": 3,
+          "2": 8,
+          "3": 26,
+          "4": 22,
+          "5": 13,
+          "6": 1,
+          "8": 2
+        }
+      },
+      "[o]mod": {
+        "atom_class": "MOD",
+        "n_types": 155,
+        "mean_mods_type": 3.858,
+        "mean_mods_token": 2.041,
+        "distribution": {
+          "1": 5,
+          "2": 27,
+          "3": 27,
+          "4": 45,
+          "5": 31,
+          "6": 17,
+          "7": 3
+        }
+      },
+      "[p]mod": {
+        "atom_class": "MOD",
+        "n_types": 29,
+        "mean_mods_type": 2.69,
+        "mean_mods_token": 1.724,
+        "distribution": {
+          "1": 3,
+          "2": 16,
+          "3": 4,
+          "4": 2,
+          "5": 1,
+          "6": 3
+        }
+      },
+      "[q]mod": {
+        "atom_class": "MOD",
+        "n_types": 1,
+        "mean_mods_type": 1.0,
+        "mean_mods_token": 1.0,
+        "distribution": {
+          "1": 1
+        }
+      },
+      "[s]mod": {
+        "atom_class": "MOD",
+        "n_types": 72,
+        "mean_mods_type": 3.167,
+        "mean_mods_token": 2.377,
+        "distribution": {
+          "1": 5,
+          "2": 16,
+          "3": 29,
+          "4": 9,
+          "5": 10,
+          "6": 3
+        }
+      },
+      "[x]mod": {
+        "atom_class": "MOD",
+        "n_types": 10,
+        "mean_mods_type": 3.1,
+        "mean_mods_token": 2.692,
+        "distribution": {
+          "1": 2,
+          "2": 4,
+          "4": 2,
+          "6": 1,
+          "7": 1
+        }
+      },
+      "h": {
+        "atom_class": "TERM",
+        "n_types": 187,
+        "mean_mods_type": 2.813,
+        "mean_mods_token": 1.899,
+        "distribution": {
+          "0": 1,
+          "1": 15,
+          "2": 68,
+          "3": 56,
+          "4": 34,
+          "5": 8,
+          "6": 4,
+          "7": 1
+        }
+      },
+      "k": {
+        "atom_class": "FREE",
+        "n_types": 101,
+        "mean_mods_type": 2.455,
+        "mean_mods_token": 0.945,
+        "distribution": {
+          "0": 3,
+          "1": 23,
+          "2": 35,
+          "3": 19,
+          "4": 10,
+          "5": 8,
+          "6": 3
+        }
+      },
+      "l": {
+        "atom_class": "TERM",
+        "n_types": 47,
+        "mean_mods_type": 1.936,
+        "mean_mods_token": 0.314,
+        "distribution": {
+          "0": 4,
+          "1": 14,
+          "2": 16,
+          "3": 9,
+          "4": 2,
+          "5": 2
+        }
+      },
+      "m": {
+        "atom_class": "TERM",
+        "n_types": 9,
+        "mean_mods_type": 1.222,
+        "mean_mods_token": 0.085,
+        "distribution": {
+          "0": 2,
+          "1": 4,
+          "2": 2,
+          "3": 1
+        }
+      },
+      "n": {
+        "atom_class": "TERM",
+        "n_types": 13,
+        "mean_mods_type": 2.077,
+        "mean_mods_token": 1.664,
+        "distribution": {
+          "0": 1,
+          "1": 3,
+          "2": 5,
+          "3": 3,
+          "5": 1
+        }
+      },
+      "r": {
+        "atom_class": "TERM",
+        "n_types": 48,
+        "mean_mods_type": 2.188,
+        "mean_mods_token": 0.131,
+        "distribution": {
+          "0": 3,
+          "1": 11,
+          "2": 19,
+          "3": 9,
+          "4": 2,
+          "5": 3,
+          "6": 1
+        }
+      },
+      "t": {
+        "atom_class": "FREE",
+        "n_types": 48,
+        "mean_mods_type": 2.333,
+        "mean_mods_token": 0.945,
+        "distribution": {
+          "0": 3,
+          "1": 14,
+          "2": 13,
+          "3": 8,
+          "4": 3,
+          "5": 6,
+          "6": 1
+        }
+      },
+      "y": {
+        "atom_class": "TERM",
+        "n_types": 32,
+        "mean_mods_type": 1.719,
+        "mean_mods_token": 0.796,
+        "distribution": {
+          "0": 4,
+          "1": 10,
+          "2": 11,
+          "3": 6,
+          "5": 1
+        }
+      }
+    }
+  },
+  "bonus_mod_position_classes": {
+    "by_class": {
+      "MOD": 1601,
+      "HEAD": 1271,
+      "TERM": 751,
+      "FREE": 262
+    },
+    "by_char": {
+      "e": 605,
+      "c": 446,
+      "o": 423,
+      "d": 374,
+      "i": 276,
+      "h": 251,
+      "l": 250,
+      "a": 243,
+      "s": 214,
+      "p": 189,
+      "k": 168,
+      "y": 118,
+      "r": 110,
+      "f": 102,
+      "t": 94,
+      "q": 58,
+      "n": 12,
+      "x": 12,
+      "m": 10,
+      "g": 3
+    },
+    "by_char_tokens": {
+      "i": 4304,
+      "d": 4086,
+      "e": 2950,
+      "c": 2114,
+      "o": 1743,
+      "l": 686,
+      "p": 593,
+      "a": 477,
+      "k": 429,
+      "s": 424,
+      "h": 368,
+      "r": 207,
+      "f": 199,
+      "t": 192,
+      "y": 173,
+      "q": 122,
+      "x": 15,
+      "n": 12,
+      "m": 10,
+      "g": 3
+    }
+  }
+}

@@ -1,0 +1,356 @@
+{
+  "test1": {
+    "a": {
+      "tokens": 3047,
+      "entropy": 1.2966,
+      "dominant_category": "FLOW",
+      "dominant_pct": 54.2,
+      "cats_above_10pct": 2,
+      "distribution": {
+        "FLOW": 1652,
+        "TRANSITION": 1262,
+        "STAGING": 52,
+        "MARKING": 36,
+        "THERMAL": 18,
+        "CONTAINMENT": 18,
+        "OPERATION": 5,
+        "MONITORING": 4
+      },
+      "subsampled_entropy_mean": 1.2918,
+      "subsampled_entropy_std": 0.0326
+    },
+    "e": {
+      "tokens": 7002,
+      "entropy": 2.1914,
+      "dominant_category": "THERMAL",
+      "dominant_pct": 34.7,
+      "cats_above_10pct": 3,
+      "distribution": {
+        "THERMAL": 2430,
+        "OPERATION": 2254,
+        "TRANSITION": 1334,
+        "FLOW": 467,
+        "MARKING": 197,
+        "CONTAINMENT": 144,
+        "STAGING": 88,
+        "MONITORING": 88
+      },
+      "subsampled_entropy_mean": 2.1884,
+      "subsampled_entropy_std": 0.0358
+    },
+    "k": {
+      "tokens": 3100,
+      "entropy": 0.7082,
+      "dominant_category": "THERMAL",
+      "dominant_pct": 90.4,
+      "cats_above_10pct": 1,
+      "distribution": {
+        "THERMAL": 2801,
+        "STAGING": 91,
+        "FLOW": 68,
+        "CONTAINMENT": 33,
+        "MARKING": 33,
+        "TRANSITION": 28,
+        "MONITORING": 26,
+        "OPERATION": 20
+      },
+      "subsampled_entropy_mean": 0.7028,
+      "subsampled_entropy_std": 0.0495
+    },
+    "o": {
+      "tokens": 2529,
+      "entropy": 2.3965,
+      "dominant_category": "STAGING",
+      "dominant_pct": 32.4,
+      "cats_above_10pct": 4,
+      "distribution": {
+        "STAGING": 820,
+        "OPERATION": 647,
+        "FLOW": 508,
+        "MARKING": 287,
+        "CONTAINMENT": 102,
+        "THERMAL": 63,
+        "MONITORING": 63,
+        "TRANSITION": 39
+      },
+      "subsampled_entropy_mean": 2.3928,
+      "subsampled_entropy_std": 0.0286
+    },
+    "t": {
+      "tokens": 920,
+      "entropy": 0.7641,
+      "dominant_category": "FLOW",
+      "dominant_pct": 87.0,
+      "cats_above_10pct": 1,
+      "distribution": {
+        "FLOW": 800,
+        "OPERATION": 68,
+        "THERMAL": 29,
+        "MARKING": 17,
+        "STAGING": 6
+      },
+      "subsampled_entropy_mean": 0.7641,
+      "subsampled_entropy_std": 0.0
+    }
+  },
+  "test2": {
+    "a": {
+      "n_tokens": 1577,
+      "n_modifiers": 70,
+      "cramers_v": 0.8663,
+      "interpretation": "MOD dominates"
+    },
+    "e": {
+      "n_tokens": 4122,
+      "n_modifiers": 165,
+      "cramers_v": 0.6721,
+      "interpretation": "MOD dominates"
+    },
+    "k": {
+      "n_tokens": 1011,
+      "n_modifiers": 58,
+      "cramers_v": 0.8288,
+      "interpretation": "MOD dominates"
+    },
+    "o": {
+      "n_tokens": 791,
+      "n_modifiers": 190,
+      "cramers_v": 0.873,
+      "interpretation": "MOD dominates"
+    },
+    "t": {
+      "n_tokens": 340,
+      "n_modifiers": 42,
+      "cramers_v": 0.8116,
+      "interpretation": "MOD dominates"
+    }
+  },
+  "test3": {
+    "second_atom_distribution": {
+      "d": 2025,
+      "o": 618,
+      "c": 243,
+      "k": 46,
+      "y": 25,
+      "p": 20,
+      "s": 17,
+      "f": 15,
+      "a": 15,
+      "t": 13,
+      "r": 1
+    },
+    "head_class_second_fraction": 0.2278,
+    "total_3plus_tokens": 3038,
+    "strip_e_test": {
+      "tokens_tested": 2854,
+      "same_category": 256,
+      "same_pct": 9.0
+    }
+  },
+  "test4": {
+    "depth_distributions": {
+      "1": {
+        "tokens": 5722,
+        "entropy": 2.2496,
+        "dominant_cat": "OPERATION",
+        "dominant_pct": 37.0,
+        "distribution": {
+          "OPERATION": 2120,
+          "THERMAL": 1344,
+          "TRANSITION": 1334,
+          "FLOW": 467,
+          "MARKING": 191,
+          "CONTAINMENT": 90,
+          "STAGING": 88,
+          "MONITORING": 88
+        }
+      },
+      "2": {
+        "tokens": 1237,
+        "entropy": 0.7894,
+        "dominant_cat": "THERMAL",
+        "dominant_pct": 84.3,
+        "distribution": {
+          "THERMAL": 1043,
+          "OPERATION": 134,
+          "CONTAINMENT": 54,
+          "MARKING": 6
+        }
+      },
+      "3": {
+        "tokens": 43,
+        "entropy": 0.0,
+        "dominant_cat": "THERMAL",
+        "dominant_pct": 100.0,
+        "distribution": {
+          "THERMAL": 43
+        }
+      }
+    },
+    "frame_pairs_compared": 13,
+    "same_category": 3,
+    "shifted": 10,
+    "shift_examples": [
+      {
+        "rest": "y",
+        "d1": 1,
+        "d2": 2,
+        "cat1": "TRANSITION",
+        "cat2": "THERMAL",
+        "n1": 889,
+        "n2": 644
+      },
+      {
+        "rest": "o",
+        "d1": 1,
+        "d2": 2,
+        "cat1": "TRANSITION",
+        "cat2": "OPERATION",
+        "n1": 359,
+        "n2": 133
+      },
+      {
+        "rest": "o",
+        "d1": 2,
+        "d2": 3,
+        "cat1": "OPERATION",
+        "cat2": "THERMAL",
+        "n1": 133,
+        "n2": 10
+      },
+      {
+        "rest": "d",
+        "d1": 1,
+        "d2": 2,
+        "cat1": "FLOW",
+        "cat2": "THERMAL",
+        "n1": 401,
+        "n2": 88
+      },
+      {
+        "rest": "k",
+        "d1": 1,
+        "d2": 2,
+        "cat1": "OPERATION",
+        "cat2": "CONTAINMENT",
+        "n1": 169,
+        "n2": 54
+      }
+    ]
+  },
+  "test5": {
+    "e_mod_tokens": 1113,
+    "e_head_tokens": 5970,
+    "e_mod_distribution": {
+      "THERMAL": 714,
+      "FLOW": 212,
+      "MARKING": 86,
+      "STAGING": 38,
+      "OPERATION": 35,
+      "TRANSITION": 26,
+      "MONITORING": 2
+    },
+    "e_head_distribution": {
+      "OPERATION": 2254,
+      "THERMAL": 1398,
+      "TRANSITION": 1334,
+      "FLOW": 467,
+      "MARKING": 197,
+      "CONTAINMENT": 144,
+      "STAGING": 88,
+      "MONITORING": 88
+    },
+    "modifier_v_values": {
+      "c": {
+        "v": 0.543,
+        "n_present": 1050
+      },
+      "d": {
+        "v": 0.7489,
+        "n_present": 2447
+      },
+      "e": {
+        "v": 0.3346,
+        "n_present": 531
+      },
+      "f": {
+        "v": 0.3214,
+        "n_present": 88
+      },
+      "i": {
+        "v": 0.7939,
+        "n_present": 1497
+      },
+      "p": {
+        "v": 0.3618,
+        "n_present": 278
+      },
+      "s": {
+        "v": 0.333,
+        "n_present": 192
+      }
+    }
+  },
+  "test6": {
+    "shared_frames": 120,
+    "total_comparisons": 47,
+    "same_dominant": 6,
+    "different_dominant": 41,
+    "same_pct": 12.8,
+    "pair_jsd": {
+      "a-e": {
+        "mean_jsd": 0.9816,
+        "n_frames": 2
+      },
+      "a-k": {
+        "mean_jsd": 1.0,
+        "n_frames": 1
+      },
+      "a-o": {
+        "mean_jsd": 0.875,
+        "n_frames": 8
+      },
+      "a-t": {
+        "mean_jsd": 1.0,
+        "n_frames": 1
+      },
+      "e-k": {
+        "mean_jsd": 0.5937,
+        "n_frames": 4
+      },
+      "e-o": {
+        "mean_jsd": 0.7426,
+        "n_frames": 12
+      },
+      "e-t": {
+        "mean_jsd": 1.0,
+        "n_frames": 4
+      },
+      "k-o": {
+        "mean_jsd": 0.5778,
+        "n_frames": 4
+      },
+      "k-t": {
+        "mean_jsd": 0.8052,
+        "n_frames": 8
+      },
+      "o-t": {
+        "mean_jsd": 0.9467,
+        "n_frames": 3
+      }
+    },
+    "e_pair_mean_jsd": 0.8295,
+    "non_e_pair_mean_jsd": 0.8674
+  },
+  "synthesis": {
+    "e_entropy_rank": 2,
+    "e_modifier_v_rank": 5,
+    "strip_e_same_pct": 9.0,
+    "head_second_fraction": 0.2278,
+    "e_pair_jsd": 0.8295,
+    "non_e_pair_jsd": 0.8674,
+    "transparent_score": 0,
+    "domain_score": 4,
+    "verdict": "e is a DOMAIN-SPECIFIC HEAD - genuinely encodes 'cooling/thermal stabilization'"
+  }
+}

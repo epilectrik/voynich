@@ -169,11 +169,11 @@ Use these to verify your filtering is correct:
 
 | Metric | Value |
 |--------|-------|
-| Version | 4.93 |
-| Constraints | 1220 validated |
-| Phases | 492 (491 completed + 1 ongoing) |
+| Version | 5.04 |
+| Constraints | 1238 validated |
+| Phases | 507 (506 completed + 1 ongoing) |
 | Folios | 83 (Currier B) |
-| Core model | CLOSED (PCA-v1 CERTIFIED) |
+| Core model | CLOSED (PCA-v1 passed) |
 | Characterization | ACTIVE |
 
 ---

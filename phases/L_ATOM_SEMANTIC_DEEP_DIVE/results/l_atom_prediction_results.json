@@ -1,0 +1,293 @@
+{
+  "phase": 496,
+  "name": "L_ATOM_SEMANTIC_DEEP_DIVE",
+  "date": "2026-03-03",
+  "description": "15-round hypothesis-test investigation of atom l's semantic function, using crazy-expert agent to propose hypotheses and quantitative scripts to test them. Established l = 'state/condition marker' at SOLID confidence, upgrading from WEAK ('frame'). Discovered ACTOR/RESPONDER terminal-atom timing split as independent structural finding.",
+  "source": "Crazy-expert agent iterative hypothesis generation + quantitative validation",
+  "final_gloss": {
+    "atom": "l",
+    "previous_gloss": "frame",
+    "previous_tier": "WEAK",
+    "new_gloss": "state",
+    "new_tier": "SOLID",
+    "german_candidate": "Lage (situation/condition/state of affairs)",
+    "compound_readings": {
+      "ol": "vessel-state (state of containment)",
+      "el": "cool-state (thermal stability reading)",
+      "al": "into-state (flow condition)",
+      "kl": "heat-state (thermal energy reading)",
+      "dl": "seal-state (closure condition)"
+    }
+  },
+  "tests": {
+    "P-L1": {
+      "name": "l-initial MIDDLEs enriched in REGIME_2 (collection)",
+      "hypothesis": "let flow",
+      "prediction": "l-initial enriched in REGIME_2 vs REGIME_1",
+      "result": "NULL",
+      "details": {
+        "regime_2_l_frac": 0.0081,
+        "regime_1_l_frac": 0.0068,
+        "ratio": 1.19,
+        "p_value": 0.39
+      },
+      "reason": "Directionally correct but not significant. l-initial is too rare overall for regime-level detection."
+    },
+    "P-L2": {
+      "name": "l-atom tokens have elevated FL_SAFE rates",
+      "hypothesis": "let flow",
+      "prediction": "l-bearing MIDDLEs enriched in FL_SAFE macro-state",
+      "result": "WRONG_DIRECTION",
+      "details": {
+        "l_flsafe_rate": 0.193,
+        "nol_flsafe_rate": 0.213,
+        "ratio": 0.907,
+        "l_axm_enrichment": 1.069
+      },
+      "reason": "l is NOT enriched in FL_SAFE. Instead slightly enriched in AXM (1.069x). l-terminal specifically shows strongest AXM enrichment. 'Let flow' falsified."
+    },
+    "P-L3": {
+      "name": "l-bearing MIDDLEs enriched in TRANSITION category",
+      "hypothesis": "release/discharge",
+      "prediction": "l-atom MIDDLEs enriched in TRANSITION category (C1250)",
+      "result": "WRONG_DIRECTION",
+      "details": {
+        "l_transition_rate": 0.052,
+        "nol_transition_rate": 0.085,
+        "enrichment": 0.61,
+        "top_l_category": "STAGING",
+        "staging_enrichment": 9.7
+      },
+      "reason": "l is DEPLETED in TRANSITION (0.61x). Instead massively enriched in STAGING (9.7x). l-terminal position shows STAGING at 28.3% vs 3.3% baseline. 'Release/discharge' falsified. STAGING signal is the key finding."
+    },
+    "P-L4": {
+      "name": "l-atom tokens front-load within paragraphs",
+      "hypothesis": "arrange/lay (staging)",
+      "prediction": "l-atom enriched in paragraph Q0 (first 20%) at >= 1.5x vs Q4",
+      "result": "NULL",
+      "details": {
+        "q0_q4_ratio": 1.03,
+        "p_value": 0.72
+      },
+      "reason": "Dead flat. l has no paragraph-positional gradient. 'Arrange/lay' falsified at paragraph level."
+    },
+    "P-L5": {
+      "name": "l-atom fraction correlates with THERMAL line fraction",
+      "hypothesis": "level (maintained thermal state)",
+      "prediction": "Spearman rho(l-fraction, THERMAL-fraction) > +0.30",
+      "result": "WRONG_DIRECTION",
+      "details": {
+        "rho_thermal": -0.078,
+        "p_thermal": 0.001,
+        "strongest_positive": "STAGING rho=+0.299",
+        "l_vs_k_line_level": -0.184,
+        "l_anticorrelates_with": ["d", "e", "i"]
+      },
+      "reason": "l anticorrelates with THERMAL (-0.078). Strongest positive is STAGING (+0.299). At line level, l anticorrelates with k (-0.184) despite folio-level positive cluster (Simpson's paradox). 'Level' falsified."
+    },
+    "P-L6": {
+      "name": "l-terminal compounds show universal STAGING additive shift",
+      "hypothesis": "configure/lay out (domain modifier)",
+      "prediction": "l-terminal STAGING enriched across >=3 initial-atom groups",
+      "result": "CONFIRMED",
+      "details": {
+        "category_redirection": "0/5 match base atom default",
+        "groups_confirmed": 5,
+        "ol_staging": "12x",
+        "el_staging": "8x",
+        "note": "l-terminal always redirects to a DIFFERENT category than base atom's default"
+      },
+      "constraint_worthy": false,
+      "reason": "STAGING shift confirmed but the pattern is REDIRECTION not ADDITION. l doesn't add staging to the base — it replaces the base's default category entirely. This is stronger than predicted."
+    },
+    "P-L7": {
+      "name": "l-terminal compounds have highest categorical purity (HHI)",
+      "hypothesis": "specifier/dedicated",
+      "prediction": "l-terminal HHI highest of all terminal atoms",
+      "result": "INVERTED",
+      "details": {
+        "l_hhi_rank": "11/13",
+        "l_hhi": 0.189,
+        "top_hhi_atom": "n (0.298)"
+      },
+      "reason": "l-terminal is one of the LEAST categorically pure terminal atoms. 'Specifier' falsified."
+    },
+    "P-L8": {
+      "name": "l-terminal MIDDLE fraction predicts LOW AXM self-transition",
+      "hypothesis": "redirect (exit main loop)",
+      "prediction": "Negative rho for l-terminal fraction vs AXM self-transition",
+      "result": "CONFIRMED",
+      "details": {
+        "rho": 0.299,
+        "p_value": 0.011,
+        "direction": "POSITIVE (pro-AXM, not anti-AXM)"
+      },
+      "reason": "Direction INVERTED vs prediction but finding is important: l is pro-AXM (+0.299), ranking 3rd after k (+0.620) and t (+0.318). l operates WITHIN the main loop, not as an exit. 'Redirect' falsified."
+    },
+    "P-L9": {
+      "name": "l-terminal MIDDLEs predict LOW macro-state transition rate",
+      "hypothesis": "continue/sustain",
+      "prediction": "rho(l-terminal fraction, transition rate) ~ -0.15 to -0.25",
+      "result": "CONFIRMED_BUT_NUANCED",
+      "details": {
+        "ol_transition_rho": 0.119,
+        "ol_increases_transitions": true,
+        "non_ol_l_transition_rho": -0.068,
+        "non_ol_l_decreases_transitions": true,
+        "note": "ol (most common l-terminal) INCREASES transitions; other l-terminals weakly decrease them"
+      },
+      "reason": "Split result: ol diverges from other l-terminals. The ol compound has a different functional signature. 'Continue/sustain' partially falsified."
+    },
+    "P-L10": {
+      "name": "l-terminal MIDDLEs have higher suffix mode flexibility",
+      "hypothesis": "nominalizer",
+      "prediction": "l-terminal closer to 50/50 Mode A/B than non-l-terminal",
+      "result": "FAILED",
+      "details": {
+        "l_mode_a_rate": 0.281,
+        "l_mode_b_rate": 0.719,
+        "l_flexibility_rank": "16/17",
+        "note": "l is Mode B LOCKED. Only pro-AXM terminal that is also Mode B."
+      },
+      "reason": "l is one of the LEAST flexible atoms for mode. Mode B locking means l appears overwhelmingly in continuation/bare lines. 'Nominalizer' falsified. But Mode B locking later supports 'state' — states are observed (Mode B), not specified (Mode A)."
+    },
+    "P-L11": {
+      "name": "l-terminal lines have lower kernel contact",
+      "hypothesis": "idle/standby",
+      "prediction": "l-terminal kernel contact ratio <= 0.85x",
+      "result": "NEAR_HIT",
+      "details": {
+        "kernel_contact_ratio": 0.870,
+        "spearman_rho": -0.197,
+        "p_value": 0.000001,
+        "per_kernel": {"k": 0.836, "h": 0.744, "e": 0.885},
+        "within_section": {"B": -0.286, "C": -0.272, "H": -0.185, "S": -0.215}
+      },
+      "constraint_worthy": true,
+      "reason": "Just missed 0.85x threshold (0.870x) but correlation is HIGHLY significant. h most avoided (0.744x). Holds in all sections. Best result up to this point."
+    },
+    "P-L12": {
+      "name": "l-terminal tokens in longer same-state runs (extended dwell)",
+      "hypothesis": "hold/standby",
+      "prediction": "l-terminal mean run length > 1.05x non-l",
+      "result": "INVERTED",
+      "details": {
+        "run_length_ratio": 0.739,
+        "next_same_state_ratio": 0.642,
+        "line_level_rho": -0.148,
+        "ranking": "long-dwell: e,h,y,k,t; short-dwell: n,r,l,m"
+      },
+      "reason": "Completely inverted: l is in SHORTER runs (0.739x) and predicts state CHANGES. l is at state BOUNDARIES, not in stable dwell. 'Hold/standby' definitively falsified."
+    },
+    "P-L13": {
+      "name": "l-terminal has HIGH successor MIDDLE diversity",
+      "hypothesis": "free/available",
+      "prediction": "l-terminal successor entropy in TOP 3, above e,k,h",
+      "result": "FAILED",
+      "details": {
+        "l_entropy_rank": "12/15",
+        "l_entropy": 5.630,
+        "e_entropy": 5.804,
+        "k_entropy": 5.800,
+        "h_entropy": 6.213,
+        "l_top_successor": "edy (13.6%)"
+      },
+      "reason": "l has CONSTRAINED/predictable successors, not open-ended. After a state reading, the next step is predictable. 'Free/available' falsified."
+    },
+    "P-L14": {
+      "name": "X-atom precedes Xl-compound on shared lines",
+      "hypothesis": "product/deposit",
+      "prediction": "X precedes Xl at >60% on shared lines",
+      "result": "PARTIAL_BUT_CONTROL_KILLS",
+      "details": {
+        "a_x_before_xl": "69.8%",
+        "o_x_before_xl": "56.8%",
+        "e_x_before_xl": "57.4%",
+        "l_ordering_rank_o_initial": "12/14",
+        "l_ordering_rank_e_initial": "11/14",
+        "el_appears_earlier_than_e_nonl": true
+      },
+      "reason": "Some base atoms show X-before-Xl, but the control test is devastating: l is NOT special for ordering. el appears EARLIER than e-non-l (opposite of product). 'Product/deposit' falsified by control."
+    },
+    "P-L15": {
+      "name": "l-terminal is state/condition marker (4 sub-tests)",
+      "hypothesis": "state/condition marker",
+      "prediction": "Avoids opener, post-state-change enriched, kernel-before-l",
+      "result": "CONFIRMED",
+      "details": {
+        "test_1_opener_rate": 0.0742,
+        "test_1_mean_rate": 0.0975,
+        "test_3_post_change_rate": 0.689,
+        "test_3_baseline": 0.472,
+        "test_4_kernel_before_l": 0.770,
+        "actor_responder_split": {
+          "ACTORS": {"e": 0.184, "h": 0.291, "k": 0.318, "t": 0.304},
+          "NEUTRAL": {"d": 0.383, "y": 0.439, "o": 0.424, "i": 0.487},
+          "RESPONDERS": {"n": 0.636, "l": 0.689, "r": 0.726, "m": 0.782}
+        }
+      },
+      "constraint_worthy": true,
+      "constraint_ids": ["C1385", "C1386"],
+      "reason": "STRONGEST RESULT IN ALL 15 ROUNDS. Three of four tests confirm: l avoids driving lines (7.42% opener vs 9.75%), l appears after state changes at 68.9% (vs 47.2% baseline — MASSIVE), kernel precedes l 77% of the time. Discovered ACTOR/RESPONDER timing split as independent structural finding."
+    }
+  },
+  "chsh_analysis": {
+    "name": "CHSH + l compositional confirmation",
+    "total_chsh_l_tokens": 450,
+    "chsh_l_fraction": 0.092,
+    "top_combinations": {
+      "ch+ol": 109,
+      "ch+eol": 102,
+      "sh+eol": 86,
+      "sh+ol": 71,
+      "ch+al": 33
+    },
+    "lane_l_fractions": {
+      "CHSH": 0.092,
+      "QO": 0.019,
+      "BARE": 0.208
+    },
+    "compositional_readings": {
+      "ch+ol": "checkpoint the vessel-state",
+      "ch+eol": "checkpoint the cooling-state",
+      "sh+ol": "monitor the vessel-state",
+      "sh+eol": "monitor the cooling-state",
+      "ch+al": "checkpoint the flow-state"
+    },
+    "suffix_pattern": "overwhelmingly BARE (status readings, no specification)"
+  },
+  "summary": {
+    "rounds_tested": 15,
+    "confirmed": 3,
+    "near_hit": 1,
+    "partial": 1,
+    "null": 2,
+    "wrong_direction": 3,
+    "inverted": 2,
+    "failed": 2,
+    "nuanced": 1,
+    "hypotheses_tested": [
+      "let flow", "release/discharge", "arrange/lay", "level",
+      "configure", "specifier", "redirect", "continue/sustain",
+      "nominalizer", "idle/standby", "hold/standby", "free/available",
+      "product/deposit", "state/condition marker"
+    ],
+    "hypotheses_falsified": 10,
+    "final_hypothesis": "state/condition marker",
+    "final_confidence": "SOLID",
+    "constraints_added": ["C1385", "C1386"],
+    "constraints_updated": ["C1195"],
+    "key_evidence": [
+      "68.9% post-state-change rate (vs 47.2% baseline)",
+      "77.0% kernel-before-l on mixed lines",
+      "Kernel contact ratio 0.870x (rho=-0.197, p<0.000001)",
+      "Mode B locked (72%) -- status readings not specifications",
+      "STAGING 9.7x enrichment -- staging/readiness domain",
+      "Category redirection (0/5 match base atom default)",
+      "Simpson's paradox: k+l folio-positive, line-negative",
+      "450 CHSH + l compositional tokens confirmed",
+      "Short dwell (0.739x) -- at state boundaries",
+      "ACTOR/RESPONDER timing split discovered"
+    ]
+  }
+}

@@ -1,0 +1,291 @@
+{
+  "summary": {
+    "compound_types": 1266,
+    "compound_tokens": 16120,
+    "atoms_in_compounds": 19
+  },
+  "atom_stats": [
+    {
+      "atom": "a",
+      "solo": 64,
+      "compound": 3492,
+      "first_pct": 86.42611683848797,
+      "middle_pct": 9.936998854524628,
+      "last_pct": 3.6368843069873997,
+      "mean_pos": 0.08672850870015816,
+      "role": "HEAD",
+      "first": 3018,
+      "middle": 347,
+      "last": 127
+    },
+    {
+      "atom": "e",
+      "solo": 873,
+      "compound": 9079,
+      "first_pct": 68.04714175569997,
+      "middle_pct": 21.797554796783785,
+      "last_pct": 10.155303447516246,
+      "mean_pos": 0.21177022852317465,
+      "role": "HEAD",
+      "first": 6178,
+      "middle": 1979,
+      "last": 922
+    },
+    {
+      "atom": "o",
+      "solo": 409,
+      "compound": 4051,
+      "first_pct": 57.442606763762036,
+      "middle_pct": 20.760306097259935,
+      "last_pct": 21.79708713897803,
+      "mean_pos": 0.3219757614228111,
+      "role": "head-lean",
+      "first": 2327,
+      "middle": 841,
+      "last": 883
+    },
+    {
+      "atom": "p",
+      "solo": 47,
+      "compound": 593,
+      "first_pct": 26.644182124789207,
+      "middle_pct": 55.64924114671164,
+      "last_pct": 17.706576728499158,
+      "mean_pos": 0.37904320244117856,
+      "role": "MODIFIER",
+      "first": 158,
+      "middle": 330,
+      "last": 105
+    },
+    {
+      "atom": "c",
+      "solo": 5,
+      "compound": 2114,
+      "first_pct": 29.943235572374647,
+      "middle_pct": 59.7918637653737,
+      "last_pct": 10.264900662251655,
+      "mean_pos": 0.40382202549894125,
+      "role": "MODIFIER",
+      "first": 633,
+      "middle": 1264,
+      "last": 217
+    },
+    {
+      "atom": "i",
+      "solo": 137,
+      "compound": 4304,
+      "first_pct": 21.328996282527882,
+      "middle_pct": 68.72676579925651,
+      "last_pct": 9.944237918215613,
+      "mean_pos": 0.4435931691449816,
+      "role": "MODIFIER",
+      "first": 918,
+      "middle": 2958,
+      "last": 428
+    },
+    {
+      "atom": "k",
+      "solo": 2086,
+      "compound": 2352,
+      "first_pct": 43.23979591836735,
+      "middle_pct": 18.239795918367346,
+      "last_pct": 38.52040816326531,
+      "mean_pos": 0.47651036605118263,
+      "role": "flexible",
+      "first": 1017,
+      "middle": 429,
+      "last": 906
+    },
+    {
+      "atom": "f",
+      "solo": 18,
+      "compound": 198,
+      "first_pct": 22.22222222222222,
+      "middle_pct": 45.95959595959596,
+      "last_pct": 31.818181818181817,
+      "mean_pos": 0.5037578162578163,
+      "role": "MODIFIER",
+      "first": 44,
+      "middle": 91,
+      "last": 63
+    },
+    {
+      "atom": "t",
+      "solo": 577,
+      "compound": 921,
+      "first_pct": 37.56786102062975,
+      "middle_pct": 20.738327904451683,
+      "last_pct": 41.693811074918564,
+      "mean_pos": 0.5218383227340884,
+      "role": "flexible",
+      "first": 346,
+      "middle": 191,
+      "last": 384
+    },
+    {
+      "atom": "d",
+      "solo": 337,
+      "compound": 4086,
+      "first_pct": 19.701419481155163,
+      "middle_pct": 52.32501223690651,
+      "last_pct": 27.973568281938327,
+      "mean_pos": 0.5398011211337198,
+      "role": "MODIFIER",
+      "first": 805,
+      "middle": 2138,
+      "last": 1143
+    },
+    {
+      "atom": "s",
+      "solo": 145,
+      "compound": 423,
+      "first_pct": 7.801418439716312,
+      "middle_pct": 57.91962174940898,
+      "last_pct": 34.2789598108747,
+      "mean_pos": 0.6382528425081615,
+      "role": "MODIFIER",
+      "first": 33,
+      "middle": 245,
+      "last": 145
+    },
+    {
+      "atom": "g",
+      "solo": 8,
+      "compound": 3,
+      "first_pct": 33.333333333333336,
+      "middle_pct": 0.0,
+      "last_pct": 66.66666666666667,
+      "mean_pos": 0.6666666666666666,
+      "role": "TERMINAL",
+      "first": 1,
+      "middle": 0,
+      "last": 2
+    },
+    {
+      "atom": "l",
+      "solo": 855,
+      "compound": 2399,
+      "first_pct": 17.88245102125886,
+      "middle_pct": 10.712796998749479,
+      "last_pct": 71.40475197999166,
+      "mean_pos": 0.7675092796601763,
+      "role": "TERMINAL",
+      "first": 429,
+      "middle": 257,
+      "last": 1713
+    },
+    {
+      "atom": "x",
+      "solo": 12,
+      "compound": 15,
+      "first_pct": 6.666666666666667,
+      "middle_pct": 6.666666666666667,
+      "last_pct": 86.66666666666667,
+      "mean_pos": 0.88,
+      "role": "TERMINAL",
+      "first": 1,
+      "middle": 1,
+      "last": 13
+    },
+    {
+      "atom": "r",
+      "solo": 749,
+      "compound": 1420,
+      "first_pct": 8.591549295774648,
+      "middle_pct": 5.985915492957746,
+      "last_pct": 85.4225352112676,
+      "mean_pos": 0.8864168343393694,
+      "role": "TERMINAL",
+      "first": 122,
+      "middle": 85,
+      "last": 1213
+    },
+    {
+      "atom": "h",
+      "solo": 48,
+      "compound": 1604,
+      "first_pct": 0.9975062344139651,
+      "middle_pct": 21.945137157107233,
+      "last_pct": 77.0573566084788,
+      "mean_pos": 0.902178333927088,
+      "role": "TERMINAL",
+      "first": 16,
+      "middle": 352,
+      "last": 1236
+    },
+    {
+      "atom": "y",
+      "solo": 513,
+      "compound": 4440,
+      "first_pct": 1.6441441441441442,
+      "middle_pct": 2.2522522522522523,
+      "last_pct": 96.1036036036036,
+      "mean_pos": 0.9713293650793636,
+      "role": "TERMINAL",
+      "first": 73,
+      "middle": 100,
+      "last": 4267
+    },
+    {
+      "atom": "m",
+      "solo": 76,
+      "compound": 223,
+      "first_pct": 0.4484304932735426,
+      "middle_pct": 4.0358744394618835,
+      "last_pct": 95.51569506726457,
+      "mean_pos": 0.9751761691223575,
+      "role": "TERMINAL",
+      "first": 1,
+      "middle": 9,
+      "last": 213
+    },
+    {
+      "atom": "n",
+      "solo": 7,
+      "compound": 2152,
+      "first_pct": 0.0,
+      "middle_pct": 0.5576208178438662,
+      "last_pct": 99.44237918215613,
+      "mean_pos": 0.9980649229952202,
+      "role": "TERMINAL",
+      "first": 0,
+      "middle": 12,
+      "last": 2140
+    }
+  ],
+  "functional_groups": {
+    "heads": [
+      "a",
+      "e",
+      "o"
+    ],
+    "terminals": [
+      "g",
+      "l",
+      "x",
+      "r",
+      "h",
+      "y",
+      "m",
+      "n"
+    ],
+    "modifiers": [
+      "p",
+      "c",
+      "i",
+      "f",
+      "d",
+      "s"
+    ],
+    "flexibles": [
+      "k",
+      "t"
+    ]
+  },
+  "chi2_test": {
+    "chi2": 30867.639339602523,
+    "p_value": 0.0,
+    "cramers_v": 0.5932625852698776,
+    "n_atoms_tested": 17
+  }
+}

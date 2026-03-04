@@ -1,0 +1,47 @@
+{
+  "test1": {
+    "h_terminal_types": 108,
+    "h_terminal_tokens": 699,
+    "category_distribution": {
+      "THERMAL": 190,
+      "MARKING": 173,
+      "OPERATION": 173,
+      "MONITORING": 84,
+      "FLOW": 61,
+      "STAGING": 17,
+      "UNKNOWN": 1
+    }
+  },
+  "test2_modifier_effects": {
+    "v_head_only": 0.541,
+    "v_head_plus_mods": 0.988,
+    "modifier_gain": 0.447,
+    "p_head": 2.1826310771717723e-157,
+    "p_head_mods": 0.0
+  },
+  "test3_prefix_interaction": {
+    "v_prefix_h": 0.389,
+    "v_prefix_non_h": 0.223,
+    "difference": 0.166,
+    "p_h": 1.0420273007506672e-68,
+    "p_non_h": 0.0
+  },
+  "test4_open_monitor": {
+    "v_head_for_h": 0.541,
+    "v_term_for_all": 0.549,
+    "v_term_for_non_h": 0.591,
+    "v_head_for_all": 0.429,
+    "ratio_head_h_to_term_non_h": 0.916,
+    "verdict": "SUPPORTED: HEAD carries category signal when TERM=h, h is transparent"
+  },
+  "test5_ch_unit": {
+    "ch_ending_types": 54,
+    "ch_ending_tokens": 494,
+    "ch_ending_pct": 70.7,
+    "non_ch_h_types": 54,
+    "non_ch_h_tokens": 205,
+    "entropy_ch_ending": 1.993,
+    "entropy_non_ch_h": 2.119,
+    "entropy_diff": -0.126
+  }
+}

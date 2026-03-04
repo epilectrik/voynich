@@ -1,0 +1,2922 @@
+{
+  "test1_summary": {
+    "total_frames": 54,
+    "top_frames": [
+      {
+        "frame": "e->y",
+        "types": 7,
+        "tokens": 3475,
+        "dominant_cat": "OPERATION"
+      },
+      {
+        "frame": "e->-",
+        "types": 172,
+        "tokens": 1576,
+        "dominant_cat": "TRANSITION"
+      },
+      {
+        "frame": "a->n",
+        "types": 3,
+        "tokens": 1272,
+        "dominant_cat": "TRANSITION"
+      },
+      {
+        "frame": "k->-",
+        "types": 58,
+        "tokens": 779,
+        "dominant_cat": "THERMAL"
+      },
+      {
+        "frame": "o->l",
+        "types": 11,
+        "tokens": 777,
+        "dominant_cat": "STAGING"
+      },
+      {
+        "frame": "a->r",
+        "types": 5,
+        "tokens": 687,
+        "dominant_cat": "FLOW"
+      },
+      {
+        "frame": "o->-",
+        "types": 178,
+        "tokens": 560,
+        "dominant_cat": "UNKNOWN"
+      },
+      {
+        "frame": "a->l",
+        "types": 5,
+        "tokens": 527,
+        "dominant_cat": "FLOW"
+      },
+      {
+        "frame": "o->r",
+        "types": 8,
+        "tokens": 455,
+        "dominant_cat": "FLOW"
+      },
+      {
+        "frame": "e->k",
+        "types": 26,
+        "tokens": 405,
+        "dominant_cat": "OPERATION"
+      },
+      {
+        "frame": "e->l",
+        "types": 9,
+        "tokens": 356,
+        "dominant_cat": "THERMAL"
+      },
+      {
+        "frame": "a->-",
+        "types": 61,
+        "tokens": 292,
+        "dominant_cat": "TRANSITION"
+      },
+      {
+        "frame": "o->h",
+        "types": 38,
+        "tokens": 252,
+        "dominant_cat": "OPERATION"
+      },
+      {
+        "frame": "t->-",
+        "types": 41,
+        "tokens": 249,
+        "dominant_cat": "FLOW"
+      },
+      {
+        "frame": "k->h",
+        "types": 14,
+        "tokens": 202,
+        "dominant_cat": "THERMAL"
+      }
+    ]
+  },
+  "test2_top_frame_consistency": {
+    "e->y": {
+      "types": 7,
+      "tokens": 3475,
+      "consistency": 55.8,
+      "dominant_cat": "OPERATION",
+      "entries": [
+        {
+          "middle": "edy",
+          "freq": 1938,
+          "mods": [
+            "d"
+          ],
+          "mod_str": "d",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "ey",
+          "freq": 889,
+          "mods": [],
+          "mod_str": "(none)",
+          "category": "TRANSITION"
+        },
+        {
+          "middle": "eey",
+          "freq": 644,
+          "mods": [],
+          "mod_str": "(none)",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "ecty",
+          "freq": 1,
+          "mods": [
+            "c",
+            "t"
+          ],
+          "mod_str": "c+t",
+          "category": "FLOW"
+        },
+        {
+          "middle": "echy",
+          "freq": 1,
+          "mods": [
+            "c",
+            "h"
+          ],
+          "mod_str": "c+h",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eky",
+          "freq": 1,
+          "mods": [
+            "k"
+          ],
+          "mod_str": "k",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eoty",
+          "freq": 1,
+          "mods": [
+            "o",
+            "t"
+          ],
+          "mod_str": "o+t",
+          "category": "FLOW"
+        }
+      ]
+    },
+    "e->-": {
+      "types": 172,
+      "tokens": 1576,
+      "consistency": 28.1,
+      "dominant_cat": "TRANSITION",
+      "entries": [
+        {
+          "middle": "ed",
+          "freq": 401,
+          "mods": [
+            "d"
+          ],
+          "mod_str": "d",
+          "category": "FLOW"
+        },
+        {
+          "middle": "eo",
+          "freq": 359,
+          "mods": [
+            "o"
+          ],
+          "mod_str": "o",
+          "category": "TRANSITION"
+        },
+        {
+          "middle": "ee",
+          "freq": 151,
+          "mods": [],
+          "mod_str": "(none)",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eeo",
+          "freq": 133,
+          "mods": [
+            "o"
+          ],
+          "mod_str": "o",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "eed",
+          "freq": 88,
+          "mods": [
+            "d"
+          ],
+          "mod_str": "d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eod",
+          "freq": 82,
+          "mods": [
+            "o",
+            "d"
+          ],
+          "mod_str": "o+d",
+          "category": "TRANSITION"
+        },
+        {
+          "middle": "eeod",
+          "freq": 16,
+          "mods": [
+            "o",
+            "d"
+          ],
+          "mod_str": "o+d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "ep",
+          "freq": 16,
+          "mods": [
+            "p"
+          ],
+          "mod_str": "p",
+          "category": "MARKING"
+        },
+        {
+          "middle": "ec",
+          "freq": 16,
+          "mods": [
+            "c"
+          ],
+          "mod_str": "c",
+          "category": "MARKING"
+        },
+        {
+          "middle": "es",
+          "freq": 15,
+          "mods": [
+            "s"
+          ],
+          "mod_str": "s",
+          "category": "STAGING"
+        },
+        {
+          "middle": "eee",
+          "freq": 14,
+          "mods": [],
+          "mod_str": "(none)",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "edai",
+          "freq": 11,
+          "mods": [
+            "d",
+            "a",
+            "i"
+          ],
+          "mod_str": "d+a+i",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eeeo",
+          "freq": 10,
+          "mods": [
+            "o"
+          ],
+          "mod_str": "o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eda",
+          "freq": 9,
+          "mods": [
+            "d",
+            "a"
+          ],
+          "mod_str": "d+a",
+          "category": "MARKING"
+        },
+        {
+          "middle": "ees",
+          "freq": 9,
+          "mods": [
+            "s"
+          ],
+          "mod_str": "s",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "ea",
+          "freq": 8,
+          "mods": [
+            "a"
+          ],
+          "mod_str": "a",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eke",
+          "freq": 7,
+          "mods": [
+            "k",
+            "e"
+          ],
+          "mod_str": "k+e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eef",
+          "freq": 6,
+          "mods": [
+            "f"
+          ],
+          "mod_str": "f",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eec",
+          "freq": 6,
+          "mods": [
+            "c"
+          ],
+          "mod_str": "c",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "ef",
+          "freq": 6,
+          "mods": [
+            "f"
+          ],
+          "mod_str": "f",
+          "category": "MARKING"
+        },
+        {
+          "middle": "edo",
+          "freq": 5,
+          "mods": [
+            "d",
+            "o"
+          ],
+          "mod_str": "d+o",
+          "category": "MARKING"
+        },
+        {
+          "middle": "ekc",
+          "freq": 5,
+          "mods": [
+            "k",
+            "c"
+          ],
+          "mod_str": "k+c",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "ede",
+          "freq": 5,
+          "mods": [
+            "d",
+            "e"
+          ],
+          "mod_str": "d+e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eeed",
+          "freq": 4,
+          "mods": [
+            "d"
+          ],
+          "mod_str": "d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "epc",
+          "freq": 4,
+          "mods": [
+            "p",
+            "c"
+          ],
+          "mod_str": "p+c",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eees",
+          "freq": 3,
+          "mods": [
+            "s"
+          ],
+          "mod_str": "s",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "efc",
+          "freq": 3,
+          "mods": [
+            "f",
+            "c"
+          ],
+          "mod_str": "f+c",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eop",
+          "freq": 3,
+          "mods": [
+            "o",
+            "p"
+          ],
+          "mod_str": "o+p",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eka",
+          "freq": 3,
+          "mods": [
+            "k",
+            "a"
+          ],
+          "mod_str": "k+a",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eoke",
+          "freq": 3,
+          "mods": [
+            "o",
+            "k",
+            "e"
+          ],
+          "mod_str": "o+k+e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eekc",
+          "freq": 3,
+          "mods": [
+            "k",
+            "c"
+          ],
+          "mod_str": "k+c",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "ekai",
+          "freq": 3,
+          "mods": [
+            "k",
+            "a",
+            "i"
+          ],
+          "mod_str": "k+a+i",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "ecp",
+          "freq": 3,
+          "mods": [
+            "c",
+            "p"
+          ],
+          "mod_str": "c+p",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eocp",
+          "freq": 3,
+          "mods": [
+            "o",
+            "c",
+            "p"
+          ],
+          "mod_str": "o+c+p",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eeda",
+          "freq": 3,
+          "mods": [
+            "d",
+            "a"
+          ],
+          "mod_str": "d+a",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eoc",
+          "freq": 3,
+          "mods": [
+            "o",
+            "c"
+          ],
+          "mod_str": "o+c",
+          "category": "MARKING"
+        },
+        {
+          "middle": "esho",
+          "freq": 3,
+          "mods": [
+            "s",
+            "h",
+            "o"
+          ],
+          "mod_str": "s+h+o",
+          "category": "MONITORING"
+        },
+        {
+          "middle": "eolke",
+          "freq": 3,
+          "mods": [
+            "o",
+            "l",
+            "k",
+            "e"
+          ],
+          "mod_str": "o+l+k+e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "ese",
+          "freq": 2,
+          "mods": [
+            "s",
+            "e"
+          ],
+          "mod_str": "s+e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eko",
+          "freq": 2,
+          "mods": [
+            "k",
+            "o"
+          ],
+          "mod_str": "k+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eked",
+          "freq": 2,
+          "mods": [
+            "k",
+            "e",
+            "d"
+          ],
+          "mod_str": "k+e+d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eep",
+          "freq": 2,
+          "mods": [
+            "p"
+          ],
+          "mod_str": "p",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eckhed",
+          "freq": 2,
+          "mods": [
+            "c",
+            "k",
+            "h",
+            "e",
+            "d"
+          ],
+          "mod_str": "c+k+h+e+d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "edc",
+          "freq": 2,
+          "mods": [
+            "d",
+            "c"
+          ],
+          "mod_str": "d+c",
+          "category": "MARKING"
+        },
+        {
+          "middle": "echd",
+          "freq": 2,
+          "mods": [
+            "c",
+            "h",
+            "d"
+          ],
+          "mod_str": "c+h+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eedo",
+          "freq": 2,
+          "mods": [
+            "d",
+            "o"
+          ],
+          "mod_str": "d+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "ete",
+          "freq": 2,
+          "mods": [
+            "t",
+            "e"
+          ],
+          "mod_str": "t+e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eokeeo",
+          "freq": 2,
+          "mods": [
+            "o",
+            "k",
+            "ee",
+            "o"
+          ],
+          "mod_str": "o+k+ee+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eodai",
+          "freq": 2,
+          "mods": [
+            "o",
+            "d",
+            "a",
+            "i"
+          ],
+          "mod_str": "o+d+a+i",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eodc",
+          "freq": 2,
+          "mods": [
+            "o",
+            "d",
+            "c"
+          ],
+          "mod_str": "o+d+c",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eche",
+          "freq": 2,
+          "mods": [
+            "c",
+            "h",
+            "e"
+          ],
+          "mod_str": "c+h+e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eeodai",
+          "freq": 2,
+          "mods": [
+            "o",
+            "d",
+            "a",
+            "i"
+          ],
+          "mod_str": "o+d+a+i",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "edyo",
+          "freq": 2,
+          "mods": [
+            "d",
+            "y",
+            "o"
+          ],
+          "mod_str": "d+y+o",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eshd",
+          "freq": 2,
+          "mods": [
+            "s",
+            "h",
+            "d"
+          ],
+          "mod_str": "s+h+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eokai",
+          "freq": 2,
+          "mods": [
+            "o",
+            "k",
+            "a",
+            "i"
+          ],
+          "mod_str": "o+k+a+i",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eoked",
+          "freq": 1,
+          "mods": [
+            "o",
+            "k",
+            "e",
+            "d"
+          ],
+          "mod_str": "o+k+e+d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eolo",
+          "freq": 1,
+          "mods": [
+            "o",
+            "l",
+            "o"
+          ],
+          "mod_str": "o+l+o",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "eylc",
+          "freq": 1,
+          "mods": [
+            "y",
+            "l",
+            "c"
+          ],
+          "mod_str": "y+l+c",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eolai",
+          "freq": 1,
+          "mods": [
+            "o",
+            "l",
+            "a",
+            "i"
+          ],
+          "mod_str": "o+l+a+i",
+          "category": "STAGING"
+        },
+        {
+          "middle": "edalo",
+          "freq": 1,
+          "mods": [
+            "d",
+            "a",
+            "l",
+            "o"
+          ],
+          "mod_str": "d+a+l+o",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eeedeed",
+          "freq": 1,
+          "mods": [
+            "d",
+            "ee",
+            "d"
+          ],
+          "mod_str": "d+ee+d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eykai",
+          "freq": 1,
+          "mods": [
+            "y",
+            "k",
+            "a",
+            "i"
+          ],
+          "mod_str": "y+k+a+i",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eoepc",
+          "freq": 1,
+          "mods": [
+            "o",
+            "e",
+            "p",
+            "c"
+          ],
+          "mod_str": "o+e+p+c",
+          "category": "MARKING"
+        },
+        {
+          "middle": "epchx",
+          "freq": 1,
+          "mods": [
+            "p",
+            "c",
+            "h",
+            "x"
+          ],
+          "mod_str": "p+c+h+x",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eoo",
+          "freq": 1,
+          "mods": [
+            "o",
+            "o"
+          ],
+          "mod_str": "o+o",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "esheo",
+          "freq": 1,
+          "mods": [
+            "s",
+            "h",
+            "e",
+            "o"
+          ],
+          "mod_str": "s+h+e+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "echoked",
+          "freq": 1,
+          "mods": [
+            "c",
+            "h",
+            "o",
+            "k",
+            "e",
+            "d"
+          ],
+          "mod_str": "c+h+o+k+e+d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eeorf",
+          "freq": 1,
+          "mods": [
+            "o",
+            "r",
+            "f"
+          ],
+          "mod_str": "o+r+f",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eode",
+          "freq": 1,
+          "mods": [
+            "o",
+            "d",
+            "e"
+          ],
+          "mod_str": "o+d+e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eeeoc",
+          "freq": 1,
+          "mods": [
+            "o",
+            "c"
+          ],
+          "mod_str": "o+c",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eeks",
+          "freq": 1,
+          "mods": [
+            "k",
+            "s"
+          ],
+          "mod_str": "k+s",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eoka",
+          "freq": 1,
+          "mods": [
+            "o",
+            "k",
+            "a"
+          ],
+          "mod_str": "o+k+a",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eekeo",
+          "freq": 1,
+          "mods": [
+            "k",
+            "e",
+            "o"
+          ],
+          "mod_str": "k+e+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eoe",
+          "freq": 1,
+          "mods": [
+            "o",
+            "e"
+          ],
+          "mod_str": "o+e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eted",
+          "freq": 1,
+          "mods": [
+            "t",
+            "e",
+            "d"
+          ],
+          "mod_str": "t+e+d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eedchs",
+          "freq": 1,
+          "mods": [
+            "d",
+            "c",
+            "h",
+            "s"
+          ],
+          "mod_str": "d+c+h+s",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eckho",
+          "freq": 1,
+          "mods": [
+            "c",
+            "k",
+            "h",
+            "o"
+          ],
+          "mod_str": "c+k+h+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eeos",
+          "freq": 1,
+          "mods": [
+            "o",
+            "s"
+          ],
+          "mod_str": "o+s",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eolkc",
+          "freq": 1,
+          "mods": [
+            "o",
+            "l",
+            "k",
+            "c"
+          ],
+          "mod_str": "o+l+k+c",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eta",
+          "freq": 1,
+          "mods": [
+            "t",
+            "a"
+          ],
+          "mod_str": "t+a",
+          "category": "FLOW"
+        },
+        {
+          "middle": "eeeykc",
+          "freq": 1,
+          "mods": [
+            "y",
+            "k",
+            "c"
+          ],
+          "mod_str": "y+k+c",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "edee",
+          "freq": 1,
+          "mods": [
+            "d",
+            "ee"
+          ],
+          "mod_str": "d+ee",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eolte",
+          "freq": 1,
+          "mods": [
+            "o",
+            "l",
+            "t",
+            "e"
+          ],
+          "mod_str": "o+l+t+e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eorsho",
+          "freq": 1,
+          "mods": [
+            "o",
+            "r",
+            "s",
+            "h",
+            "o"
+          ],
+          "mod_str": "o+r+s+h+o",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "eoeed",
+          "freq": 1,
+          "mods": [
+            "o",
+            "ee",
+            "d"
+          ],
+          "mod_str": "o+ee+d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eeecf",
+          "freq": 1,
+          "mods": [
+            "c",
+            "f"
+          ],
+          "mod_str": "c+f",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "esfc",
+          "freq": 1,
+          "mods": [
+            "s",
+            "f",
+            "c"
+          ],
+          "mod_str": "s+f+c",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eopc",
+          "freq": 1,
+          "mods": [
+            "o",
+            "p",
+            "c"
+          ],
+          "mod_str": "o+p+c",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eoa",
+          "freq": 1,
+          "mods": [
+            "o",
+            "a"
+          ],
+          "mod_str": "o+a",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "eeke",
+          "freq": 1,
+          "mods": [
+            "k",
+            "e"
+          ],
+          "mod_str": "k+e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "ekeeykeo",
+          "freq": 1,
+          "mods": [
+            "k",
+            "ee",
+            "y",
+            "k",
+            "e",
+            "o"
+          ],
+          "mod_str": "k+ee+y+k+e+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eopcheod",
+          "freq": 1,
+          "mods": [
+            "o",
+            "p",
+            "c",
+            "h",
+            "e",
+            "o",
+            "d"
+          ],
+          "mod_str": "o+p+c+h+e+o+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eokeo",
+          "freq": 1,
+          "mods": [
+            "o",
+            "k",
+            "e",
+            "o"
+          ],
+          "mod_str": "o+k+e+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "ekeod",
+          "freq": 1,
+          "mods": [
+            "k",
+            "e",
+            "o",
+            "d"
+          ],
+          "mod_str": "k+e+o+d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "edka",
+          "freq": 1,
+          "mods": [
+            "d",
+            "k",
+            "a"
+          ],
+          "mod_str": "d+k+a",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "epd",
+          "freq": 1,
+          "mods": [
+            "p",
+            "d"
+          ],
+          "mod_str": "p+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eeeod",
+          "freq": 1,
+          "mods": [
+            "o",
+            "d"
+          ],
+          "mod_str": "o+d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eodalo",
+          "freq": 1,
+          "mods": [
+            "o",
+            "d",
+            "a",
+            "l",
+            "o"
+          ],
+          "mod_str": "o+d+a+l+o",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "edyp",
+          "freq": 1,
+          "mods": [
+            "d",
+            "y",
+            "p"
+          ],
+          "mod_str": "d+y+p",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eeytyd",
+          "freq": 1,
+          "mods": [
+            "y",
+            "t",
+            "y",
+            "d"
+          ],
+          "mod_str": "y+t+y+d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eckhd",
+          "freq": 1,
+          "mods": [
+            "c",
+            "k",
+            "h",
+            "d"
+          ],
+          "mod_str": "c+k+h+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eykeeed",
+          "freq": 1,
+          "mods": [
+            "y",
+            "k",
+            "eee",
+            "d"
+          ],
+          "mod_str": "y+k+eee+d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eea",
+          "freq": 1,
+          "mods": [
+            "a"
+          ],
+          "mod_str": "a",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eolkeepc",
+          "freq": 1,
+          "mods": [
+            "o",
+            "l",
+            "k",
+            "ee",
+            "p",
+            "c"
+          ],
+          "mod_str": "o+l+k+ee+p+c",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eoes",
+          "freq": 1,
+          "mods": [
+            "o",
+            "e",
+            "s"
+          ],
+          "mod_str": "o+e+s",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eeta",
+          "freq": 1,
+          "mods": [
+            "t",
+            "a"
+          ],
+          "mod_str": "t+a",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "etc",
+          "freq": 1,
+          "mods": [
+            "t",
+            "c"
+          ],
+          "mod_str": "t+c",
+          "category": "FLOW"
+        },
+        {
+          "middle": "eeokeo",
+          "freq": 1,
+          "mods": [
+            "o",
+            "k",
+            "e",
+            "o"
+          ],
+          "mod_str": "o+k+e+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eolka",
+          "freq": 1,
+          "mods": [
+            "o",
+            "l",
+            "k",
+            "a"
+          ],
+          "mod_str": "o+l+k+a",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eeyte",
+          "freq": 1,
+          "mods": [
+            "y",
+            "t",
+            "e"
+          ],
+          "mod_str": "y+t+e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "ecs",
+          "freq": 1,
+          "mods": [
+            "c",
+            "s"
+          ],
+          "mod_str": "c+s",
+          "category": "MARKING"
+        },
+        {
+          "middle": "etsho",
+          "freq": 1,
+          "mods": [
+            "t",
+            "s",
+            "h",
+            "o"
+          ],
+          "mod_str": "t+s+h+o",
+          "category": "FLOW"
+        },
+        {
+          "middle": "efee",
+          "freq": 1,
+          "mods": [
+            "f",
+            "ee"
+          ],
+          "mod_str": "f+ee",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "efo",
+          "freq": 1,
+          "mods": [
+            "f",
+            "o"
+          ],
+          "mod_str": "f+o",
+          "category": "MARKING"
+        },
+        {
+          "middle": "ekee",
+          "freq": 1,
+          "mods": [
+            "k",
+            "ee"
+          ],
+          "mod_str": "k+ee",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eokcheo",
+          "freq": 1,
+          "mods": [
+            "o",
+            "k",
+            "c",
+            "h",
+            "e",
+            "o"
+          ],
+          "mod_str": "o+k+c+h+e+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "epakeo",
+          "freq": 1,
+          "mods": [
+            "p",
+            "a",
+            "k",
+            "e",
+            "o"
+          ],
+          "mod_str": "p+a+k+e+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eolsho",
+          "freq": 1,
+          "mods": [
+            "o",
+            "l",
+            "s",
+            "h",
+            "o"
+          ],
+          "mod_str": "o+l+s+h+o",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "eykeeo",
+          "freq": 1,
+          "mods": [
+            "y",
+            "k",
+            "ee",
+            "o"
+          ],
+          "mod_str": "y+k+ee+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eoltched",
+          "freq": 1,
+          "mods": [
+            "o",
+            "l",
+            "t",
+            "c",
+            "h",
+            "e",
+            "d"
+          ],
+          "mod_str": "o+l+t+c+h+e+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eodof",
+          "freq": 1,
+          "mods": [
+            "o",
+            "d",
+            "o",
+            "f"
+          ],
+          "mod_str": "o+d+o+f",
+          "category": "MARKING"
+        },
+        {
+          "middle": "efaloi",
+          "freq": 1,
+          "mods": [
+            "f",
+            "a",
+            "l",
+            "o",
+            "i"
+          ],
+          "mod_str": "f+a+l+o+i",
+          "category": "STAGING"
+        },
+        {
+          "middle": "eeeos",
+          "freq": 1,
+          "mods": [
+            "o",
+            "s"
+          ],
+          "mod_str": "o+s",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "ekeeo",
+          "freq": 1,
+          "mods": [
+            "k",
+            "ee",
+            "o"
+          ],
+          "mod_str": "k+ee+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eedd",
+          "freq": 1,
+          "mods": [
+            "d",
+            "d"
+          ],
+          "mod_str": "d+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eoto",
+          "freq": 1,
+          "mods": [
+            "o",
+            "t",
+            "o"
+          ],
+          "mod_str": "o+t+o",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "eolc",
+          "freq": 1,
+          "mods": [
+            "o",
+            "l",
+            "c"
+          ],
+          "mod_str": "o+l+c",
+          "category": "MARKING"
+        },
+        {
+          "middle": "ecf",
+          "freq": 1,
+          "mods": [
+            "c",
+            "f"
+          ],
+          "mod_str": "c+f",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eeodee",
+          "freq": 1,
+          "mods": [
+            "o",
+            "d",
+            "ee"
+          ],
+          "mod_str": "o+d+ee",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "epched",
+          "freq": 1,
+          "mods": [
+            "p",
+            "c",
+            "h",
+            "e",
+            "d"
+          ],
+          "mod_str": "p+c+h+e+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eyf",
+          "freq": 1,
+          "mods": [
+            "y",
+            "f"
+          ],
+          "mod_str": "y+f",
+          "category": "MARKING"
+        },
+        {
+          "middle": "echypc",
+          "freq": 1,
+          "mods": [
+            "c",
+            "h",
+            "y",
+            "p",
+            "c"
+          ],
+          "mod_str": "c+h+y+p+c",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eede",
+          "freq": 1,
+          "mods": [
+            "d",
+            "e"
+          ],
+          "mod_str": "d+e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eols",
+          "freq": 1,
+          "mods": [
+            "o",
+            "l",
+            "s"
+          ],
+          "mod_str": "o+l+s",
+          "category": "STAGING"
+        },
+        {
+          "middle": "eesod",
+          "freq": 1,
+          "mods": [
+            "s",
+            "o",
+            "d"
+          ],
+          "mod_str": "s+o+d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "ekcs",
+          "freq": 1,
+          "mods": [
+            "k",
+            "c",
+            "s"
+          ],
+          "mod_str": "k+c+s",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eokc",
+          "freq": 1,
+          "mods": [
+            "o",
+            "k",
+            "c"
+          ],
+          "mod_str": "o+k+c",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "edef",
+          "freq": 1,
+          "mods": [
+            "d",
+            "e",
+            "f"
+          ],
+          "mod_str": "d+e+f",
+          "category": "MARKING"
+        },
+        {
+          "middle": "edyted",
+          "freq": 1,
+          "mods": [
+            "d",
+            "y",
+            "t",
+            "e",
+            "d"
+          ],
+          "mod_str": "d+y+t+e+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eteeda",
+          "freq": 1,
+          "mods": [
+            "t",
+            "ee",
+            "d",
+            "a"
+          ],
+          "mod_str": "t+ee+d+a",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "epchef",
+          "freq": 1,
+          "mods": [
+            "p",
+            "c",
+            "h",
+            "e",
+            "f"
+          ],
+          "mod_str": "p+c+h+e+f",
+          "category": "MARKING"
+        },
+        {
+          "middle": "edacp",
+          "freq": 1,
+          "mods": [
+            "d",
+            "a",
+            "c",
+            "p"
+          ],
+          "mod_str": "d+a+c+p",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eosees",
+          "freq": 1,
+          "mods": [
+            "o",
+            "s",
+            "ee",
+            "s"
+          ],
+          "mod_str": "o+s+ee+s",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eodoiid",
+          "freq": 1,
+          "mods": [
+            "o",
+            "d",
+            "o",
+            "ii",
+            "d"
+          ],
+          "mod_str": "o+d+o+ii+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eodo",
+          "freq": 1,
+          "mods": [
+            "o",
+            "d",
+            "o"
+          ],
+          "mod_str": "o+d+o",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "ekeo",
+          "freq": 1,
+          "mods": [
+            "k",
+            "e",
+            "o"
+          ],
+          "mod_str": "k+e+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eotd",
+          "freq": 1,
+          "mods": [
+            "o",
+            "t",
+            "d"
+          ],
+          "mod_str": "o+t+d",
+          "category": "FLOW"
+        },
+        {
+          "middle": "echs",
+          "freq": 1,
+          "mods": [
+            "c",
+            "h",
+            "s"
+          ],
+          "mod_str": "c+h+s",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eolchd",
+          "freq": 1,
+          "mods": [
+            "o",
+            "l",
+            "c",
+            "h",
+            "d"
+          ],
+          "mod_str": "o+l+c+h+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "edp",
+          "freq": 1,
+          "mods": [
+            "d",
+            "p"
+          ],
+          "mod_str": "d+p",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eoko",
+          "freq": 1,
+          "mods": [
+            "o",
+            "k",
+            "o"
+          ],
+          "mod_str": "o+k+o",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "erod",
+          "freq": 1,
+          "mods": [
+            "r",
+            "o",
+            "d"
+          ],
+          "mod_str": "r+o+d",
+          "category": "FLOW"
+        },
+        {
+          "middle": "eold",
+          "freq": 1,
+          "mods": [
+            "o",
+            "l",
+            "d"
+          ],
+          "mod_str": "o+l+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "efshoro",
+          "freq": 1,
+          "mods": [
+            "f",
+            "s",
+            "h",
+            "o",
+            "r",
+            "o"
+          ],
+          "mod_str": "f+s+h+o+r+o",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "edeed",
+          "freq": 1,
+          "mods": [
+            "d",
+            "ee",
+            "d"
+          ],
+          "mod_str": "d+ee+d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "etals",
+          "freq": 1,
+          "mods": [
+            "t",
+            "a",
+            "l",
+            "s"
+          ],
+          "mod_str": "t+a+l+s",
+          "category": "STAGING"
+        },
+        {
+          "middle": "edyd",
+          "freq": 1,
+          "mods": [
+            "d",
+            "y",
+            "d"
+          ],
+          "mod_str": "d+y+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "edaii",
+          "freq": 1,
+          "mods": [
+            "d",
+            "a",
+            "ii"
+          ],
+          "mod_str": "d+a+ii",
+          "category": "STAGING"
+        },
+        {
+          "middle": "eala",
+          "freq": 1,
+          "mods": [
+            "a",
+            "l",
+            "a"
+          ],
+          "mod_str": "a+l+a",
+          "category": "TRANSITION"
+        },
+        {
+          "middle": "eeka",
+          "freq": 1,
+          "mods": [
+            "k",
+            "a"
+          ],
+          "mod_str": "k+a",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "ecthedc",
+          "freq": 1,
+          "mods": [
+            "c",
+            "t",
+            "h",
+            "e",
+            "d",
+            "c"
+          ],
+          "mod_str": "c+t+h+e+d+c",
+          "category": "MARKING"
+        },
+        {
+          "middle": "eeocho",
+          "freq": 1,
+          "mods": [
+            "o",
+            "c",
+            "h",
+            "o"
+          ],
+          "mod_str": "o+c+h+o",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "eopoltee",
+          "freq": 1,
+          "mods": [
+            "o",
+            "p",
+            "o",
+            "l",
+            "t",
+            "ee"
+          ],
+          "mod_str": "o+p+o+l+t+ee",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "ekeef",
+          "freq": 1,
+          "mods": [
+            "k",
+            "ee",
+            "f"
+          ],
+          "mod_str": "k+ee+f",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eos",
+          "freq": 1,
+          "mods": [
+            "o",
+            "s"
+          ],
+          "mod_str": "o+s",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "eeedc",
+          "freq": 1,
+          "mods": [
+            "d",
+            "c"
+          ],
+          "mod_str": "d+c",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eocka",
+          "freq": 1,
+          "mods": [
+            "o",
+            "c",
+            "k",
+            "a"
+          ],
+          "mod_str": "o+c+k+a",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "efala",
+          "freq": 1,
+          "mods": [
+            "f",
+            "a",
+            "l",
+            "a"
+          ],
+          "mod_str": "f+a+l+a",
+          "category": "TRANSITION"
+        },
+        {
+          "middle": "eoteo",
+          "freq": 1,
+          "mods": [
+            "o",
+            "t",
+            "e",
+            "o"
+          ],
+          "mod_str": "o+t+e+o",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "eedeo",
+          "freq": 1,
+          "mods": [
+            "d",
+            "e",
+            "o"
+          ],
+          "mod_str": "d+e+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eeyks",
+          "freq": 1,
+          "mods": [
+            "y",
+            "k",
+            "s"
+          ],
+          "mod_str": "y+k+s",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "eei",
+          "freq": 1,
+          "mods": [
+            "i"
+          ],
+          "mod_str": "i",
+          "category": "THERMAL"
+        }
+      ]
+    },
+    "a->n": {
+      "types": 3,
+      "tokens": 1272,
+      "consistency": 65.6,
+      "dominant_cat": "TRANSITION",
+      "entries": [
+        {
+          "middle": "aiin",
+          "freq": 834,
+          "mods": [
+            "ii"
+          ],
+          "mod_str": "ii",
+          "category": "TRANSITION"
+        },
+        {
+          "middle": "ain",
+          "freq": 420,
+          "mods": [
+            "i"
+          ],
+          "mod_str": "i",
+          "category": "FLOW"
+        },
+        {
+          "middle": "an",
+          "freq": 18,
+          "mods": [],
+          "mod_str": "(none)",
+          "category": "CONTAINMENT"
+        }
+      ]
+    },
+    "k->-": {
+      "types": 58,
+      "tokens": 779,
+      "consistency": 69.1,
+      "dominant_cat": "THERMAL",
+      "entries": [
+        {
+          "middle": "ke",
+          "freq": 421,
+          "mods": [
+            "e"
+          ],
+          "mod_str": "e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "keeo",
+          "freq": 38,
+          "mods": [
+            "ee",
+            "o"
+          ],
+          "mod_str": "ee+o",
+          "category": "STAGING"
+        },
+        {
+          "middle": "kee",
+          "freq": 34,
+          "mods": [
+            "ee"
+          ],
+          "mod_str": "ee",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "kc",
+          "freq": 33,
+          "mods": [
+            "c"
+          ],
+          "mod_str": "c",
+          "category": "CONTAINMENT"
+        },
+        {
+          "middle": "ked",
+          "freq": 32,
+          "mods": [
+            "e",
+            "d"
+          ],
+          "mod_str": "e+d",
+          "category": "FLOW"
+        },
+        {
+          "middle": "keed",
+          "freq": 30,
+          "mods": [
+            "ee",
+            "d"
+          ],
+          "mod_str": "ee+d",
+          "category": "FLOW"
+        },
+        {
+          "middle": "keo",
+          "freq": 26,
+          "mods": [
+            "e",
+            "o"
+          ],
+          "mod_str": "e+o",
+          "category": "TRANSITION"
+        },
+        {
+          "middle": "ka",
+          "freq": 25,
+          "mods": [
+            "a"
+          ],
+          "mod_str": "a",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "kai",
+          "freq": 24,
+          "mods": [
+            "a",
+            "i"
+          ],
+          "mod_str": "a+i",
+          "category": "STAGING"
+        },
+        {
+          "middle": "ko",
+          "freq": 16,
+          "mods": [
+            "o"
+          ],
+          "mod_str": "o",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "kec",
+          "freq": 12,
+          "mods": [
+            "e",
+            "c"
+          ],
+          "mod_str": "e+c",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "keec",
+          "freq": 8,
+          "mods": [
+            "ee",
+            "c"
+          ],
+          "mod_str": "ee+c",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "ks",
+          "freq": 7,
+          "mods": [
+            "s"
+          ],
+          "mod_str": "s",
+          "category": "STAGING"
+        },
+        {
+          "middle": "kchd",
+          "freq": 6,
+          "mods": [
+            "c",
+            "h",
+            "d"
+          ],
+          "mod_str": "c+h+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "keeod",
+          "freq": 6,
+          "mods": [
+            "ee",
+            "o",
+            "d"
+          ],
+          "mod_str": "ee+o+d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "kod",
+          "freq": 4,
+          "mods": [
+            "o",
+            "d"
+          ],
+          "mod_str": "o+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "kaii",
+          "freq": 4,
+          "mods": [
+            "a",
+            "ii"
+          ],
+          "mod_str": "a+ii",
+          "category": "STAGING"
+        },
+        {
+          "middle": "keod",
+          "freq": 3,
+          "mods": [
+            "e",
+            "o",
+            "d"
+          ],
+          "mod_str": "e+o+d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "kcho",
+          "freq": 3,
+          "mods": [
+            "c",
+            "h",
+            "o"
+          ],
+          "mod_str": "c+h+o",
+          "category": "MARKING"
+        },
+        {
+          "middle": "kshd",
+          "freq": 3,
+          "mods": [
+            "s",
+            "h",
+            "d"
+          ],
+          "mod_str": "s+h+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "kees",
+          "freq": 2,
+          "mods": [
+            "ee",
+            "s"
+          ],
+          "mod_str": "ee+s",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "kii",
+          "freq": 2,
+          "mods": [
+            "ii"
+          ],
+          "mod_str": "ii",
+          "category": "STAGING"
+        },
+        {
+          "middle": "ksheo",
+          "freq": 2,
+          "mods": [
+            "s",
+            "h",
+            "e",
+            "o"
+          ],
+          "mod_str": "s+h+e+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "kche",
+          "freq": 2,
+          "mods": [
+            "c",
+            "h",
+            "e"
+          ],
+          "mod_str": "c+h+e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "kes",
+          "freq": 2,
+          "mods": [
+            "e",
+            "s"
+          ],
+          "mod_str": "e+s",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "keee",
+          "freq": 2,
+          "mods": [
+            "eee"
+          ],
+          "mod_str": "eee",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "keefc",
+          "freq": 1,
+          "mods": [
+            "ee",
+            "f",
+            "c"
+          ],
+          "mod_str": "ee+f+c",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "kchsd",
+          "freq": 1,
+          "mods": [
+            "c",
+            "h",
+            "s",
+            "d"
+          ],
+          "mod_str": "c+h+s+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "kake",
+          "freq": 1,
+          "mods": [
+            "a",
+            "k",
+            "e"
+          ],
+          "mod_str": "a+k+e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "kyde",
+          "freq": 1,
+          "mods": [
+            "y",
+            "d",
+            "e"
+          ],
+          "mod_str": "y+d+e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "kao",
+          "freq": 1,
+          "mods": [
+            "a",
+            "o"
+          ],
+          "mod_str": "a+o",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "keea",
+          "freq": 1,
+          "mods": [
+            "ee",
+            "a"
+          ],
+          "mod_str": "ee+a",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "keoc",
+          "freq": 1,
+          "mods": [
+            "e",
+            "o",
+            "c"
+          ],
+          "mod_str": "e+o+c",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "keedai",
+          "freq": 1,
+          "mods": [
+            "ee",
+            "d",
+            "a",
+            "i"
+          ],
+          "mod_str": "ee+d+a+i",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "keeea",
+          "freq": 1,
+          "mods": [
+            "eee",
+            "a"
+          ],
+          "mod_str": "eee+a",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "kaeke",
+          "freq": 1,
+          "mods": [
+            "a",
+            "e",
+            "k",
+            "e"
+          ],
+          "mod_str": "a+e+k+e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "keedo",
+          "freq": 1,
+          "mods": [
+            "ee",
+            "d",
+            "o"
+          ],
+          "mod_str": "ee+d+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "kaloro",
+          "freq": 1,
+          "mods": [
+            "a",
+            "l",
+            "o",
+            "r",
+            "o"
+          ],
+          "mod_str": "a+l+o+r+o",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "kchod",
+          "freq": 1,
+          "mods": [
+            "c",
+            "h",
+            "o",
+            "d"
+          ],
+          "mod_str": "c+h+o+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "keshe",
+          "freq": 1,
+          "mods": [
+            "e",
+            "s",
+            "h",
+            "e"
+          ],
+          "mod_str": "e+s+h+e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "kshed",
+          "freq": 1,
+          "mods": [
+            "s",
+            "h",
+            "e",
+            "d"
+          ],
+          "mod_str": "s+h+e+d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "keeed",
+          "freq": 1,
+          "mods": [
+            "eee",
+            "d"
+          ],
+          "mod_str": "eee+d",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "kaiii",
+          "freq": 1,
+          "mods": [
+            "a",
+            "iii"
+          ],
+          "mod_str": "a+iii",
+          "category": "STAGING"
+        },
+        {
+          "middle": "kched",
+          "freq": 1,
+          "mods": [
+            "c",
+            "h",
+            "e",
+            "d"
+          ],
+          "mod_str": "c+h+e+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "kop",
+          "freq": 1,
+          "mods": [
+            "o",
+            "p"
+          ],
+          "mod_str": "o+p",
+          "category": "MARKING"
+        },
+        {
+          "middle": "kchs",
+          "freq": 1,
+          "mods": [
+            "c",
+            "h",
+            "s"
+          ],
+          "mod_str": "c+h+s",
+          "category": "MARKING"
+        },
+        {
+          "middle": "kyld",
+          "freq": 1,
+          "mods": [
+            "y",
+            "l",
+            "d"
+          ],
+          "mod_str": "y+l+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "kechc",
+          "freq": 1,
+          "mods": [
+            "e",
+            "c",
+            "h",
+            "c"
+          ],
+          "mod_str": "e+c+h+c",
+          "category": "MARKING"
+        },
+        {
+          "middle": "koki",
+          "freq": 1,
+          "mods": [
+            "o",
+            "k",
+            "i"
+          ],
+          "mod_str": "o+k+i",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "kcheod",
+          "freq": 1,
+          "mods": [
+            "c",
+            "h",
+            "e",
+            "o",
+            "d"
+          ],
+          "mod_str": "c+h+e+o+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "kchoke",
+          "freq": 1,
+          "mods": [
+            "c",
+            "h",
+            "o",
+            "k",
+            "e"
+          ],
+          "mod_str": "c+h+o+k+e",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "kald",
+          "freq": 1,
+          "mods": [
+            "a",
+            "l",
+            "d"
+          ],
+          "mod_str": "a+l+d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "kecho",
+          "freq": 1,
+          "mods": [
+            "e",
+            "c",
+            "h",
+            "o"
+          ],
+          "mod_str": "e+c+h+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "kecheo",
+          "freq": 1,
+          "mods": [
+            "e",
+            "c",
+            "h",
+            "e",
+            "o"
+          ],
+          "mod_str": "e+c+h+e+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "keodai",
+          "freq": 1,
+          "mods": [
+            "e",
+            "o",
+            "d",
+            "a",
+            "i"
+          ],
+          "mod_str": "e+o+d+a+i",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "kcheo",
+          "freq": 1,
+          "mods": [
+            "c",
+            "h",
+            "e",
+            "o"
+          ],
+          "mod_str": "c+h+e+o",
+          "category": "THERMAL"
+        },
+        {
+          "middle": "kard",
+          "freq": 1,
+          "mods": [
+            "a",
+            "r",
+            "d"
+          ],
+          "mod_str": "a+r+d",
+          "category": "FLOW"
+        },
+        {
+          "middle": "keeeo",
+          "freq": 1,
+          "mods": [
+            "eee",
+            "o"
+          ],
+          "mod_str": "eee+o",
+          "category": "THERMAL"
+        }
+      ]
+    },
+    "o->l": {
+      "types": 11,
+      "tokens": 777,
+      "consistency": 98.1,
+      "dominant_cat": "STAGING",
+      "entries": [
+        {
+          "middle": "ol",
+          "freq": 762,
+          "mods": [],
+          "mod_str": "(none)",
+          "category": "STAGING"
+        },
+        {
+          "middle": "opal",
+          "freq": 4,
+          "mods": [
+            "p",
+            "a"
+          ],
+          "mod_str": "p+a",
+          "category": "MARKING"
+        },
+        {
+          "middle": "ool",
+          "freq": 2,
+          "mods": [
+            "o"
+          ],
+          "mod_str": "o",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "opchol",
+          "freq": 2,
+          "mods": [
+            "p",
+            "c",
+            "h",
+            "o"
+          ],
+          "mod_str": "p+c+h+o",
+          "category": "MARKING"
+        },
+        {
+          "middle": "opol",
+          "freq": 1,
+          "mods": [
+            "p",
+            "o"
+          ],
+          "mod_str": "p+o",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "oshepol",
+          "freq": 1,
+          "mods": [
+            "s",
+            "h",
+            "e",
+            "p",
+            "o"
+          ],
+          "mod_str": "s+h+e+p+o",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "opshol",
+          "freq": 1,
+          "mods": [
+            "p",
+            "s",
+            "h",
+            "o"
+          ],
+          "mod_str": "p+s+h+o",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "oolal",
+          "freq": 1,
+          "mods": [
+            "o",
+            "l",
+            "a"
+          ],
+          "mod_str": "o+l+a",
+          "category": "OPERATION"
+        },
+        {
+          "middle": "opcheal",
+          "freq": 1,
+          "mods": [
+            "p",
+            "c",
+            "h",
+            "e",
+            "a"
+          ],
+          "mod_str": "p+c+h+e+a",
+          "category": "MARKING"
+        },
+        {
+          "middle": "odl",
+          "freq": 1,
+          "mods": [
+            "d"
+          ],
+          "mod_str": "d",
+          "category": "MARKING"
+        },
+        {
+          "middle": "odal",
+          "freq": 1,
+          "mods": [
+            "d",
+            "a"
+          ],
+          "mod_str": "d+a",
+          "category": "MARKING"
+        }
+      ]
+    }
+  },
+  "test3_modifier_effects": {
+    "p": {
+      "gloss": "pause",
+      "with_count": 334,
+      "without_count": 12531,
+      "chi2": 1738.0,
+      "p": 0.0,
+      "cramers_v": 0.368,
+      "strongest_shift": "MARKING",
+      "shift_magnitude": 45.6
+    },
+    "c": {
+      "gloss": "adjust",
+      "with_count": 1124,
+      "without_count": 11741,
+      "chi2": 3276.1,
+      "p": 0.0,
+      "cramers_v": 0.505,
+      "strongest_shift": "MARKING",
+      "shift_magnitude": 30.1
+    },
+    "i": {
+      "gloss": "iterate",
+      "with_count": 1725,
+      "without_count": 11140,
+      "chi2": 2244.7,
+      "p": 0.0,
+      "cramers_v": 0.418,
+      "strongest_shift": "TRANSITION",
+      "shift_magnitude": 44.7
+    },
+    "f": {
+      "gloss": "flag",
+      "with_count": 116,
+      "without_count": 12749,
+      "chi2": 1589.1,
+      "p": 0.0,
+      "cramers_v": 0.351,
+      "strongest_shift": "MARKING",
+      "shift_magnitude": 76.4
+    },
+    "d": {
+      "gloss": "mark",
+      "with_count": 3124,
+      "without_count": 9741,
+      "chi2": 5545.9,
+      "p": 0.0,
+      "cramers_v": 0.657,
+      "strongest_shift": "OPERATION",
+      "shift_magnitude": 55.6
+    },
+    "s": {
+      "gloss": "sequence",
+      "with_count": 246,
+      "without_count": 12619,
+      "chi2": 773.7,
+      "p": 9.392511735484055e-162,
+      "cramers_v": 0.245,
+      "strongest_shift": "TRANSITION",
+      "shift_magnitude": -20.2
+    }
+  },
+  "test4_compound_count": 190,
+  "test5_multi_mod_count": 643,
+  "synthesis": {
+    "overall_frame_category_coherence": 63.8
+  }
+}

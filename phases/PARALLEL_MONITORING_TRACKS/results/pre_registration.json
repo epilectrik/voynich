@@ -1,0 +1,32 @@
+{
+  "phase": 494,
+  "name": "PARALLEL_MONITORING_TRACKS",
+  "hypothesis": "MIDDLE atoms encode parallel monitoring parameters (not sequential steps). High-affinity atom pairs (C1210) are fused macro-atoms that compose in parallel.",
+  "structural_basis": [
+    "C1190 (additive behavioral composition r=0.754)",
+    "C1209 (3-slot INITIAL/MEDIAL/TERMINAL grammar)",
+    "C1210 (forbidden combinations + strong affinities)",
+    "C1211 (negative 3-way synergy -0.827 bits)",
+    "C1225 (e-depth restructures suffix grammar)"
+  ],
+  "predictions": {
+    "T1_macro_atom": "Macro-atom decomposition improves C1190 composition r significantly over individual atoms",
+    "T2_order_magnitude": "Reversed MIDDLE pairs (same atoms, different order) have JSD ratio < 0.5 vs different-set pairs",
+    "T3_cross_token_coupling": "SET carry MI >= TERMINAL->INITIAL MI (parallel) OR INITIAL->INITIAL comparable to TERMINAL->INITIAL",
+    "T4_atom_removal": "Removing any single atom position produces roughly equal behavioral change (JSD ratio < 1.5)"
+  },
+  "falsifiers": {
+    "T1": "Macro-atom r <= individual atom r OR permutation p >= 0.05",
+    "T2": "Reversed/different-set JSD ratio >= 1.0",
+    "T3": "SET carry MI << TERMINAL->INITIAL MI AND INITIAL->INITIAL << TERMINAL->INITIAL",
+    "T4": "One position dominates all others by ratio > 2.0"
+  },
+  "thresholds": {
+    "p_threshold": 0.05,
+    "min_macro_improvement": 0.01,
+    "parallel_jsd_ratio": 0.5,
+    "removal_symmetry_ratio": 1.5,
+    "n_permutations": 1000,
+    "min_tokens_per_middle": 5
+  }
+}

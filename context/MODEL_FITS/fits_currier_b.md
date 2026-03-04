@@ -19,9 +19,11 @@ These fits map verified control mechanisms from Brunschwig's *Liber de arte dist
 
 ### F-B-001 - LINK Operator as Sustained Monitoring Interval
 
-**Tier:** F2 | **Result:** SUCCESS | **Supports:** C366, C609, C190
+**Tier:** F2 | **Result:** SUPERSEDED | **Supports:** C366, C609, C190 | **Superseded by:** C1174
 
-#### Question
+> **STATUS: SUPERSEDED.** C1174 (Phase 418) demonstrated that the LINK population is a morphological artifact, not a functional layer. The `ol` substring behaves differently in each grammatical role (CC: standalone operator, AX: prefix component, EN: MIDDLE/SPAN positions) with no unified cross-role substrate (C1171: 0/4 consistent). The aggregate properties matched below were artifacts of averaging across a heterogeneous population. The C190 anticorrelation (r=-0.71) remains a valid statistical finding, but its explanation shifts from "monitoring intervals" to role-specific vocabulary selection that correlates with complexity. See C1170-C1174 for the full decomposition.
+
+#### Original Question
 
 Does the LINK operator's structural behavior align with Brunschwig's drop-rate monitoring technique — the primary feedback mechanism in historical distillation?
 
@@ -33,43 +35,40 @@ Lines 2039-2042: "wie die glock ſchlecht eyns zwei das ein tropffen felt vnnd a
 
 This describes: sustained attention without physical action, occurring between interventions, where deviation from expected rate triggers transition to active control (adjust air holes).
 
-#### Structural Properties of LINK (Tier 2)
+#### Original Structural Mapping (now superseded)
 
-| Property | LINK (C366, C609) | Drop-rate monitoring |
-|----------|-------------------|---------------------|
-| Operational status | Non-operational (no state change) | Non-operational (observe only) |
-| Phase role | Boundary between monitoring and intervention | Boundary between "system OK" and "adjust fire" |
-| Spatial distribution | Uniform within lines (C365) | Sustained, not positional |
-| Control effort correlation | r = -0.7057 with CEI (C190) | More monitoring when system stable, less when intervening |
-| Preceding context | AUXILIARY / FLOW tokens | Setup / flow establishment |
-| Following context | HIGH_IMPACT / ENERGY tokens | Active intervention (air hole adjustment) |
-| Token share | 13.2% of B tokens (C609) | ~1 in 8 operational moments is pure observation |
+| Property | LINK (C366, C609) | Drop-rate monitoring | Post-C1174 Status |
+|----------|-------------------|---------------------|-------------------|
+| Operational status | Non-operational (no state change) | Non-operational (observe only) | Artifact of role-averaging |
+| Phase role | Boundary between monitoring and intervention | Boundary between "system OK" and "adjust fire" | CC `ol` only (421/3047 tokens) |
+| Spatial distribution | Uniform within lines (C365) | Sustained, not positional | Role-dependent, not uniform |
+| Control effort correlation | r = -0.7057 with CEI (C190) | More monitoring when system stable, less when intervening | Valid statistic, reinterpreted |
+| Preceding context | AUXILIARY / FLOW tokens | Setup / flow establishment | Role-dependent context |
+| Following context | HIGH_IMPACT / ENERGY tokens | Active intervention (air hole adjustment) | Role-dependent context |
+| Token share | 13.2% of B tokens (C609) | ~1 in 8 operational moments is pure observation | Morphological frequency, not functional duty cycle |
 
-#### Result Details
+#### Why This Fit Failed
 
-All six structural properties of LINK have direct counterparts in the physical practice:
+C1174's 5-test battery showed:
+1. **Vocabulary is role-stratified** (V=0.404, C1170) — LINK tokens in different roles use different vocabulary
+2. **Behavior is role-dominant** (0/4 consistent, C1171) — no cross-role substrate effect exists
+3. **BIO excess is targeted** (EN_SPAN 4.65x, C1172) — not uniform LINK deployment
+4. **Boundary enrichment is passive** (1.09x, C1173) — CC-dominated, not LINK-driven
+5. **Enrichment does not correlate with divergence** (rho=-0.059/-0.151, both NS)
 
-1. **Non-operational status** — LINK tokens produce no state change in the grammar; the operator counting drops produces no change in the apparatus. MATCH.
-2. **Phase boundary** — LINK gates the grammar transition from passive to active control (C366); drop-rate deviation gates the physical transition from observation to intervention. MATCH.
-3. **Uniformity** — LINK is spatially uniform within lines (not about specific positions); monitoring is temporally sustained (not about specific moments). MATCH.
-4. **CEI anticorrelation** — More LINK = less intervention effort (C190, r=-0.7057); a stable drop rate means less fire adjustment needed. MATCH.
-5. **Preceding context** — LINK follows setup/flow tokens; monitoring follows apparatus establishment. MATCH.
-6. **Following context** — LINK precedes high-impact/energy tokens; deviation triggers active intervention. MATCH.
+The six "MATCH" properties above were real at the aggregate level but dissolve when decomposed by role. The fit was matching against an averaging artifact.
 
-#### Interpretation
+#### What Survives
 
-The LINK operator accounts for the structural role of sustained sensory monitoring in a control system. Its grammar-state transition function (gating passive-to-active control) is sufficient to explain why 13.2% of B tokens are non-operational: they represent the monitoring intervals between interventions. The LINK-CEI anticorrelation (r=-0.7057) accounts for why stable processes require more monitoring and less intervention — the physical reality of drop-rate watching.
-
-#### Limitations
-
-- LINK is generic — it does not specify *what* is being monitored. This fit maps LINK to drop-rate monitoring, but LINK could equally account for visual monitoring, olfactory checking, or any sustained attention activity.
-- The 13.2% duty cycle is consistent with, but not diagnostic of, drop-rate counting specifically. Other monitoring patterns could produce similar token shares.
-- The mapping is to the *structural role of monitoring*, not to the *specific physical sense employed*.
+- The Brunschwig drop-rate monitoring evidence is valid historical practice
+- C190's anticorrelation (r=-0.71) is a valid statistical finding
+- CC `ol` specifically (421 tokens, not all 3,047) may still function as a monitoring/continuation operator (C874: "continue" function)
+- The physical mapping may apply to the CC `ol` subpopulation, but this has not been tested in isolation
 
 #### Relation to Constraints
 
-- **Supports:** C366 (LINK phase boundary), C609 (LINK density), C190 (LINK-CEI anticorrelation)
-- **Refines:** C190 (provides physical mechanism for the anticorrelation)
+- **Originally supported:** C366 (LINK phase boundary), C609 (LINK density), C190 (LINK-CEI anticorrelation)
+- **Superseded by:** C1174 (LINK is morphological artifact), C1170-C1173
 - **Introduces NEW constraints:** NO
 
 ---

@@ -1,0 +1,80 @@
+{
+  "phase": 495,
+  "name": "GLOSS_PREDICTION_TESTS",
+  "date": "2026-03-02",
+  "description": "Three testable predictions from crazy-expert gloss analysis. Tests whether atom-level semantic hypotheses yield novel structural findings.",
+  "source": "Crazy-expert agent analysis of Tier 4 gloss/etymology tables",
+  "tests": {
+    "P6": {
+      "name": "n-terminal MIDDLEs at Mode A/B boundaries",
+      "prediction": "n-terminal MIDDLEs (aiin, iin, ain) enriched at suffix mode transition lines",
+      "result": "INVERTED",
+      "details": {
+        "transition_lines": 1019,
+        "non_transition_lines": 1305,
+        "n_rate_transition": 0.0835,
+        "n_rate_non_transition": 0.1030,
+        "ratio": 0.811,
+        "chi2": 23.914,
+        "p_value": 0.0000,
+        "interpretation": "n-terminal MIDDLEs are DEPLETED at mode transitions. They concentrate in stable mode regions, consistent with n as steady-state/continuation marker."
+      },
+      "constraint_worthy": false,
+      "reason": "Confirms existing gloss interpretation (n = sustain/iterate) but inverts the prediction direction. Not a novel structural finding."
+    },
+    "P7": {
+      "name": "o-initial MIDDLEs enriched in AZC apparatus vocabulary",
+      "prediction": "o-initial MIDDLEs disproportionately present in AZC (apparatus classification layer)",
+      "result": "CONFIRMED",
+      "details": {
+        "azc_tokens": 3227,
+        "azc_unique_words": 1660,
+        "o_initial_rate_azc": 0.2240,
+        "o_initial_rate_currier_b": 0.1176,
+        "azc_b_ratio": 1.905,
+        "chi2": 281.257,
+        "p_value": 0.0000,
+        "b_section_rates": {
+          "B": 0.0915,
+          "C": 0.1885,
+          "H": 0.1328,
+          "S": 0.1187,
+          "T": 0.1329
+        },
+        "b_shared_with_azc_rate": 0.1347,
+        "b_exclusive_rate": 0.0978,
+        "shared_exclusive_ratio": 1.377,
+        "interpretation": "o-initial MIDDLEs are 1.9x enriched in AZC vs Currier B. Within B, words shared with AZC have higher o-initial rates than B-exclusive words. Section C (structurally closest to AZC) has highest B-internal rate. Smooth gradient from apparatus layer to execution layer."
+      },
+      "constraint_worthy": true,
+      "constraint_id": "C1381"
+    },
+    "P8": {
+      "name": "f-atoms enriched in REGIME_3",
+      "prediction": "f-containing tokens concentrated in REGIME_3",
+      "result": "WRONG_DIRECTION",
+      "details": {
+        "f_rate_by_regime": {
+          "REGIME_1": 0.0062,
+          "REGIME_2": 0.0229,
+          "REGIME_3": 0.0137,
+          "REGIME_4": 0.0254
+        },
+        "highest_regime": "REGIME_4",
+        "chi2": 90.621,
+        "p_value": 0.0000,
+        "interpretation": "f-atoms ARE non-uniformly distributed across regimes (significant), but peak in REGIME_4 and REGIME_2, not REGIME_3. The smaller specialized regimes have higher f-rates. REGIME_1 has lowest (0.62%)."
+      },
+      "constraint_worthy": false,
+      "reason": "Distribution is significant but prediction direction was wrong. f-atom regime specificity may reflect general small-regime vocabulary effect rather than f-specific semantics."
+    }
+  },
+  "summary": {
+    "predictions_tested": 3,
+    "confirmed": 1,
+    "inverted": 1,
+    "wrong_direction": 1,
+    "constraints_added": ["C1381"],
+    "crazy_expert_overall_scorecard": "6 confirmed, 1 inverted, 1 wrong direction out of 8 predictions"
+  }
+}

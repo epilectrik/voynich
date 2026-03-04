@@ -262,6 +262,36 @@ The network currently has 41 persons. Future additions should focus on:
 - [ ] **Leonardus de Bertapalia** — surgeon cited 10+ times by Brunschwig for wound waters
 - [ ] **Bartholomeus de Montegnana** — Padua-connected recipe source cited by Brunschwig
 - [ ] **Stainpeis** (fl. ~1520) — testified about Puff's unpublished experimenta
+- [x] **Bartholomaeus de Benevento** (fl. unknown) — ADDED as P058. Ghost figure credited as author of Büchlein in 1484 Lübeck edition; actual compiler of the core text?
+- [ ] **Kaspar Grießenpeck** — Puff's student; collaborated on pharmaceutical investigations of alcoholic extracts
+
+### OQ-025: Büchlein Authorship Question — Bartholomaeus de Benevento
+
+**Discovered (2026-03-02):** The 1484 Low German edition (Lübeck, Bartholomäus Gothan) credits "meyster Bartholomeus de Benevento" as author, describing him as a doctor who "compiled and wrote from many books at the request of honorable people." Modern scholarship (Müller-Grzenda 1996) notes only a smaller portion of the wording comes from Puff himself. The Handschriftencensus lists the manuscript version (Traktat, 17 copies) and print version (Büchlein, 25 MSS + 31 incunabula) as SEPARATE works.
+
+**What we need:**
+- [ ] Who was Bartholomaeus de Benevento? Any university records, other works, biographical traces?
+- [ ] Is "Benevento" a real place-name attribution or a pseudonym? (Benevento is near Salerno medical school)
+- [ ] What is the textual relationship between the 17 Traktat manuscripts and the 25 Büchlein manuscripts? Do they differ in content?
+- [ ] Which portions are "Puff's own" vs the "unknown author" per Müller-Grzenda?
+- [ ] Does the 1484 Low German edition contain material absent from the standard printed editions?
+- [ ] Could this be a southern Italian compilation that traveled north via the Padua-Vienna pipeline?
+- [ ] Parallels the Rupescissa Glossator (P040) — another ghost figure in the chain
+
+**Why this matters:** If the Büchlein is a compilation from "many books" by an Italian physician, organized by Puff under Vienna faculty authority, then the distillation knowledge tradition is more layered than we assumed. The "unknown author" question directly affects how we understand the Puff-Voynich relationship.
+
+### OQ-026: Puff's Other Works — Procedural Content
+
+**Discovered (2026-03-02):** Deutsche Biographie documents several Puff works beyond the Büchlein that we have not examined:
+
+- [ ] **Cardiac regimen** — treatment guide for high-ranking colleague (Karlsruhe, Cod. Donaueschingen 793). Is this manuscript digitized?
+- [ ] **Cough-asthma regimen** — for "pater Heinricus" (same manuscript). Procedural medical consultation.
+- [ ] **Harn-Konsilium** — urinalysis consultation in German. Where does this survive?
+- [ ] **Plague remedies** — "recept für den lauff der pestilentz" — fragments of a larger plague manual. Which manuscripts?
+- [ ] **Armen-Apotheke** — "Poor man's pharmacy." Compilation of accessible remedies. Where does this survive?
+- [ ] **Kaspar Grießenpeck collaboration** — pharmaceutical investigations of alcoholic extracts. Any surviving records?
+
+**Why this matters:** The Büchlein deliberately omits procedural knowledge. These medical consultations and regimens ARE procedural by nature — they describe treatments, sequences, dosages. They represent Puff's operational voice, not his public-registry voice. If any contain encoded or unusual notation, or procedural language resembling the Voynich's operational structure, that would be significant.
 
 ## Priority 2.5: Provenance Questions
 

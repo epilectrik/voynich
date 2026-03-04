@@ -1,0 +1,311 @@
+"""
+S-S12: Compositional Convergence (DECISIVE) — do s-compound readings match
+CategoryClassifier output?
+
+6 compounds tested:
+  1. sh  = s(sequence)+h(watch) = "verify"     -> MONITORING expected
+  2. ksh = k(heat)+s(sequence)+h(watch) = "scan" -> MONITORING or THERMAL
+  3. lsh = l(state)+s(sequence)+h(watch) = "verify" -> MONITORING or STAGING
+  4. os  = o(arrange)+s(sequence) = "arranged sequence" -> STAGING or OPERATION
+  5. es  = e(cool)+s(sequence) = "cool sequence"       -> STAGING or THERMAL
+  6. cs  = c(adjust)+s(sequence) = "adjusted sequence"  -> MONITORING or MARKING
+
+Pass: >= 3/6 FULL or PARTIAL matches.
+
+KEY DISCRIMINANT: Non-h compounds (os, es, cs) determine the gloss:
+  - If os, es -> STAGING: H1 "sequence" confirmed
+  - If os, es -> MONITORING: H2 "sift" better
+  - If os, es -> OPERATION: H3 "step" better
+"""
+
+import sys
+from pathlib import Path
+from collections import defaultdict
+
+sys.path.insert(0, str(Path(__file__).resolve().parent.parent.parent.parent))
+
+from scripts.voynich import Transcript, Morphology, CategoryClassifier
+
+# ── Load data ──────────────────────────────────────────────────────────────
+tx = Transcript()
+morph = Morphology()
+cc = CategoryClassifier()
+
+CATEGORIES = ['THERMAL', 'CONTAINMENT', 'FLOW', 'MONITORING',
+              'OPERATION', 'STAGING', 'MARKING', 'TRANSITION']
+
+print("=" * 72)
+print("S-S12: Compositional Convergence (DECISIVE)")
+print("=" * 72)
+print()
+
+# ── Gather all B MIDDLE category profiles ─────────────────────────────────
+middle_cat_counts = defaultdict(lambda: defaultdict(int))
+middle_cat_totals = defaultdict(int)
+middle_token_count = defaultdict(int)
+
+for token in tx.currier_b():
+    m = morph.extract(token.word)
+    if m is None or m.middle is None:
+        continue
+    middle_token_count[m.middle] += 1
+    cat = cc.classify(m.middle)
+    if cat and cat != 'UNK':
+        middle_cat_counts[m.middle][cat] += 1
+        middle_cat_totals[m.middle] += 1
+
+
+def get_profile(mid):
+    """Return (category_dict, total, primary_category)."""
+    total = middle_cat_totals.get(mid, 0)
+    if total == 0:
+        return {}, 0, None
+    profile = {}
+    for cat in CATEGORIES:
+        profile[cat] = middle_cat_counts[mid].get(cat, 0) / total
+    primary = max(profile, key=profile.get)
+    return profile, total, primary
+
+
+# ── Define compound tests ─────────────────────────────────────────────────
+compounds = [
+    {
+        'middle': 'sh',
+        'decomposition': 's(sequence) + h(watch)',
+        'gloss': 'verify',
+        'expected': ['MONITORING'],
+        'h_junction': True,
+    },
+    {
+        'middle': 'ksh',
+        'decomposition': 'k(heat) + s(sequence) + h(watch)',
+        'gloss': 'scan',
+        'expected': ['MONITORING', 'THERMAL'],
+        'h_junction': True,
+    },
+    {
+        'middle': 'lsh',
+        'decomposition': 'l(state) + s(sequence) + h(watch)',
+        'gloss': 'verify',
+        'expected': ['MONITORING', 'STAGING'],
+        'h_junction': True,
+    },
+    {
+        'middle': 'os',
+        'decomposition': 'o(arrange) + s(sequence)',
+        'gloss': 'arranged sequence',
+        'expected': ['STAGING', 'OPERATION'],
+        'h_junction': False,
+    },
+    {
+        'middle': 'es',
+        'decomposition': 'e(cool) + s(sequence)',
+        'gloss': 'cool sequence',
+        'expected': ['STAGING', 'THERMAL'],
+        'h_junction': False,
+    },
+    {
+        'middle': 'cs',
+        'decomposition': 'c(adjust) + s(sequence)',
+        'gloss': 'adjusted sequence',
+        'expected': ['MONITORING', 'MARKING'],
+        'h_junction': False,
+    },
+]
+
+# ── Test each compound ────────────────────────────────────────────────────
+results = []
+
+for comp in compounds:
+    mid = comp['middle']
+    profile, total, primary = get_profile(mid)
+    token_n = middle_token_count.get(mid, 0)
+
+    print(f"  {mid} = {comp['decomposition']} -> \"{comp['gloss']}\"")
+    print(f"    Tokens: {token_n}, Classified: {total}")
+
+    if total == 0:
+        print(f"    NO DATA -- skipping")
+        print(f"    Match: SKIP")
+        results.append({'mid': mid, 'match': 'SKIP', 'h_junction': comp['h_junction']})
+        print()
+        continue
+
+    # Show profile
+    print(f"    Expected: {' or '.join(comp['expected'])}")
+    print(f"    Observed profile:")
+    for cat in CATEGORIES:
+        pct = profile.get(cat, 0) * 100
+        marker = ""
+        if cat == primary:
+            marker = " <-- PRIMARY"
+        elif cat in comp['expected'] and pct >= 20.0:
+            marker = " <-- expected (>=20%)"
+        elif cat in comp['expected']:
+            marker = " (expected)"
+        if pct >= 1.0 or cat in comp['expected']:
+            print(f"      {cat:<14}: {pct:>5.1f}%{marker}")
+
+    # Evaluate match
+    full_match = primary in comp['expected']
+    partial_match = any(profile.get(cat, 0) >= 0.20 for cat in comp['expected'])
+
+    if full_match:
+        match_type = 'FULL'
+    elif partial_match:
+        match_type = 'PARTIAL'
+    else:
+        match_type = 'NONE'
+
+    print(f"    Match: {match_type} (primary={primary})")
+    results.append({
+        'mid': mid, 'match': match_type, 'primary': primary,
+        'profile': profile, 'h_junction': comp['h_junction'],
+        'expected': comp['expected']
+    })
+    print()
+
+# ── Order sensitivity check ───────────────────────────────────────────────
+print("-" * 72)
+print("Order sensitivity check")
+print("-" * 72)
+print()
+
+order_pairs = [('os', 'so'), ('es', 'se'), ('cs', 'sc'), ('sh', 'hs')]
+
+for fwd, rev in order_pairs:
+    fwd_profile, fwd_n, fwd_primary = get_profile(fwd)
+    rev_profile, rev_n, rev_primary = get_profile(rev)
+
+    fwd_tok = middle_token_count.get(fwd, 0)
+    rev_tok = middle_token_count.get(rev, 0)
+
+    if fwd_n > 0 and rev_n > 0:
+        print(f"  {fwd} (N={fwd_tok}, primary={fwd_primary}) vs "
+              f"{rev} (N={rev_tok}, primary={rev_primary})")
+        # Show key differences
+        for cat in CATEGORIES:
+            f_pct = fwd_profile.get(cat, 0) * 100
+            r_pct = rev_profile.get(cat, 0) * 100
+            if abs(f_pct - r_pct) >= 5.0:
+                print(f"    {cat:<14}: {fwd}={f_pct:.1f}% vs {rev}={r_pct:.1f}% "
+                      f"(delta={r_pct - f_pct:+.1f}pp)")
+    elif fwd_n > 0:
+        print(f"  {fwd} exists (N={fwd_tok}), {rev} absent")
+    elif rev_n > 0:
+        print(f"  {fwd} absent, {rev} exists (N={rev_tok})")
+    else:
+        print(f"  Neither {fwd} nor {rev} found")
+    print()
+
+# ── h-junction vs non-h-junction comparison ───────────────────────────────
+print("-" * 72)
+print("h-junction effect: sh-family vs non-sh compounds")
+print("-" * 72)
+print()
+
+h_junction_results = [r for r in results if r.get('h_junction') and r['match'] != 'SKIP']
+non_h_results = [r for r in results if not r.get('h_junction') and r['match'] != 'SKIP']
+
+if h_junction_results:
+    h_mon_rates = []
+    for r in h_junction_results:
+        mon = r.get('profile', {}).get('MONITORING', 0) * 100
+        h_mon_rates.append(mon)
+        print(f"  h-junction {r['mid']}: MONITORING = {mon:.1f}%")
+    mean_h_mon = sum(h_mon_rates) / len(h_mon_rates) if h_mon_rates else 0
+    print(f"  Mean h-junction MONITORING: {mean_h_mon:.1f}%")
+else:
+    mean_h_mon = 0
+    print("  No h-junction compounds with data")
+
+print()
+
+if non_h_results:
+    non_h_mon_rates = []
+    non_h_stg_rates = []
+    for r in non_h_results:
+        mon = r.get('profile', {}).get('MONITORING', 0) * 100
+        stg = r.get('profile', {}).get('STAGING', 0) * 100
+        non_h_mon_rates.append(mon)
+        non_h_stg_rates.append(stg)
+        print(f"  non-h {r['mid']}: MONITORING={mon:.1f}%, STAGING={stg:.1f}%")
+    mean_non_h_mon = sum(non_h_mon_rates) / len(non_h_mon_rates) if non_h_mon_rates else 0
+    mean_non_h_stg = sum(non_h_stg_rates) / len(non_h_stg_rates) if non_h_stg_rates else 0
+    print(f"  Mean non-h MONITORING: {mean_non_h_mon:.1f}%")
+    print(f"  Mean non-h STAGING:    {mean_non_h_stg:.1f}%")
+else:
+    mean_non_h_mon = 0
+    mean_non_h_stg = 0
+    print("  No non-h compounds with data")
+
+if h_junction_results and non_h_results:
+    h_shift = mean_h_mon - mean_non_h_mon
+    print(f"\n  h-junction MONITORING shift: {h_shift:+.1f}pp")
+    if h_shift > 10:
+        print("  -> h-junction pulls s-compounds toward MONITORING")
+    elif h_shift < -10:
+        print("  -> h-junction pulls AWAY from MONITORING (unexpected)")
+    else:
+        print("  -> h-junction effect modest")
+
+# ── Overall evaluation ────────────────────────────────────────────────────
+print()
+print("=" * 72)
+print("OVERALL EVALUATION")
+print("=" * 72)
+print()
+
+valid_results = [r for r in results if r['match'] != 'SKIP']
+full_count = sum(1 for r in valid_results if r['match'] == 'FULL')
+partial_count = sum(1 for r in valid_results if r['match'] == 'PARTIAL')
+none_count = sum(1 for r in valid_results if r['match'] == 'NONE')
+skip_count = sum(1 for r in results if r['match'] == 'SKIP')
+
+print(f"  Results: {full_count} FULL + {partial_count} PARTIAL + {none_count} NONE + {skip_count} SKIP")
+print(f"  Pass threshold: >= 3 (FULL or PARTIAL) out of {len(valid_results)} testable")
+print()
+
+match_count = full_count + partial_count
+overall_pass = match_count >= 3
+
+for r in results:
+    status = r['match']
+    if status == 'SKIP':
+        print(f"  {r['mid']:<5}: SKIP (no data)")
+    else:
+        print(f"  {r['mid']:<5}: {status} (primary={r.get('primary', '?')})")
+
+print()
+print(f"OVERALL: {'PASS' if overall_pass else 'FAIL'} ({match_count}/{len(valid_results)} match)")
+print()
+
+# ── Hypothesis discrimination from non-h compounds ───────────────────────
+print("KEY DISCRIMINANT: Non-h compound primary categories")
+print()
+
+non_h_primaries = defaultdict(int)
+for r in non_h_results:
+    if r.get('primary'):
+        non_h_primaries[r['primary']] += 1
+
+if non_h_primaries:
+    dominant_cat = max(non_h_primaries, key=non_h_primaries.get)
+    print(f"  Non-h compound primaries: {dict(non_h_primaries)}")
+    print(f"  Dominant: {dominant_cat}")
+    print()
+
+    if dominant_cat == 'STAGING':
+        print("  -> Non-h compounds are STAGING-dominant: H1 'sequence' SUPPORTED")
+    elif dominant_cat == 'MONITORING':
+        print("  -> Non-h compounds are MONITORING-dominant: H2 'sift' SUPPORTED")
+    elif dominant_cat == 'OPERATION':
+        print("  -> Non-h compounds are OPERATION-dominant: H3 'step' SUPPORTED")
+    elif dominant_cat == 'THERMAL':
+        print("  -> Non-h compounds are THERMAL-dominant: s absorbed by thermal context")
+        print("     (H1/H2 distinction unresolved by this test)")
+    else:
+        print(f"  -> Non-h compounds are {dominant_cat}-dominant: unexpected")
+        print("     (none of H1/H2/H3 directly supported)")
+else:
+    print("  No non-h compound data available for discrimination")

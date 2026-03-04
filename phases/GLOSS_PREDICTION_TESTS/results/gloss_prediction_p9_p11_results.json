@@ -1,0 +1,68 @@
+{
+  "phase": 495,
+  "batch": 2,
+  "name": "GLOSS_PREDICTION_TESTS (P9-P11)",
+  "date": "2026-03-02",
+  "tests": {
+    "P9": {
+      "name": "n-terminal MIDDLEs at line-final positions",
+      "prediction": "n-terminal MIDDLEs enriched 1.4-2.0x at line-final",
+      "result": "INVERTED",
+      "details": {
+        "n_terminal_line_final_rate": 0.0745,
+        "other_line_final_rate": 0.1073,
+        "ratio": 0.694,
+        "chi2": 22.433,
+        "p_value": 0.000005,
+        "section_ratios": {"B": 0.728, "C": 1.126, "H": 0.973, "S": 0.564, "T": 0.465}
+      },
+      "constraint_worthy": false,
+      "reason": "Second inversion for n-terminal predictions (also P6). Confirms n as mid-line/mid-mode steady-state atom that avoids boundaries. Interesting but negative result."
+    },
+    "P10": {
+      "name": "k-initial MIDDLEs depleted in Mode B lines",
+      "prediction": "k-initial MIDDLEs 0.5-0.7x depleted in Mode B vs Mode A",
+      "result": "CONFIRMED",
+      "details": {
+        "mode_a_k_rate": 0.1961,
+        "mode_b_k_rate": 0.1143,
+        "b_a_ratio": 0.583,
+        "chi2": 245.013,
+        "p_value": 0.0,
+        "section_ratios": {"B": 0.562, "C": 0.607, "H": 0.633, "S": 0.672, "T": 0.452},
+        "comparison_atoms": {
+          "k": {"b_a_ratio": 0.583, "direction": "Mode A"},
+          "a": {"b_a_ratio": 2.034, "direction": "Mode B"},
+          "e": {"b_a_ratio": 0.986, "direction": "neutral"},
+          "o": {"b_a_ratio": 1.030, "direction": "neutral"},
+          "d": {"b_a_ratio": 1.130, "direction": "slight Mode B"}
+        }
+      },
+      "constraint_worthy": true,
+      "constraint_id": "C1382"
+    },
+    "P11": {
+      "name": "Bridge MIDDLEs simpler than dark pipeline (frequency-controlled)",
+      "prediction": "Bridge 0.6-0.8x compound depth after frequency control",
+      "result": "MIXED",
+      "details": {
+        "raw_depth_ratio": 0.921,
+        "raw_depth_p": 0.238,
+        "char_length_ratio": 0.682,
+        "char_length_p": 0.0,
+        "freq_matched_depth_ratio": 0.754,
+        "freq_matched_p": 0.000009,
+        "bridge_simpler_in_bands": "4/5"
+      },
+      "constraint_worthy": false,
+      "reason": "Raw depth not significant. Frequency-matched depth is significant (p=0.000009) and char length strongly confirms, but primary metric failed. Structure is correct but MiddleAnalyzer depth metric too coarse at shallow end."
+    }
+  },
+  "summary": {
+    "confirmed": 1,
+    "inverted": 1,
+    "mixed": 1,
+    "constraints_added": ["C1382"],
+    "crazy_expert_cumulative_scorecard": "7/11 confirmed, 2 inverted, 1 wrong direction, 1 mixed"
+  }
+}

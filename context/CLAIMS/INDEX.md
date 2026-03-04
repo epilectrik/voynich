@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1220 validated constraints | **Version:** 4.93 | **Date:** 2026-02-28
+**Total:** 1238 validated constraints | **Version:** 5.04 | **Date:** 2026-03-04
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -3277,7 +3277,7 @@ Validated atom glosses against compound evidence, assigned confidence tiers, gen
 
 | # | Constraint | Tier | Scope | Location |
 |---|-----------|------|-------|----------|
-| **1195** | **Atom Gloss Confidence Tiers** (18 atoms in 4 tiers: 8 LOCKED (k,e,h,y,i,n,a,m), 2 SOLID (d,t), 6 PLAUSIBLE (c,p,f,s,g,x), 3 WEAK (o,l,r); validated against 91 glossed compounds; 5 dictionary discrepancies fixed to match GLOSSING.md) | 2 | B, atoms, glossing | -> [C1195_atom_gloss_confidence_tiers.md](C1195_atom_gloss_confidence_tiers.md) |
+| **1195** | **Atom Gloss Confidence Tiers** (18 atoms in 4 tiers: 8 LOCKED (k,e,h,y,i,n,a,m), 6 SOLID (d,t,l,o,c,p), 5 PLAUSIBLE (f,s,g,x,r), 0 WEAK; validated against 91 glossed compounds; upgraded by Phases 496-500) | 2 | B, atoms, glossing | -> [C1195_atom_gloss_confidence_tiers.md](C1195_atom_gloss_confidence_tiers.md) |
 | **1196** | **Autogloss Composition Coverage** (1144/1273 compound MIDDLEs auto-glossed from atom decomposition; confidence: 72 LOCKED, 86 SOLID, 289 PLAUSIBLE, 768 WEAK; 58 incomplete (q); 67.1% WEAK driven by 3 generic atoms o/l/r) | 2 | B, compounds, glossing | -> [C1196_autogloss_composition_coverage.md](C1196_autogloss_composition_coverage.md) |
 
 ### Atom Extensibility (C1197-C1199) -- Phase: ATOM_EXTENSIBILITY (Phase 425)
@@ -4246,6 +4246,259 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T4 (Header vs body): PASS p=0.0001 — headers 1.11x more diverse than bodies (new finding)
 - T5 (Paragraph counts): Exploratory, section-driven (H=4.2, S=12.5)
 - Semantic ceiling (C171) confirmed at paragraph granularity; material identity irrecoverable
+
+### Two-Level Parallel Composition (C1379) -- Phase: PARALLEL_MONITORING_TRACKS (Phase 494)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1379** | **Two-Level Parallel Composition with Priority Ordering** (macro-atom r=0.797 vs individual r=0.760, z=5.98 p<0.001; 9 fused pairs from C1210; atom removal ratio 1.375 <1.5 PASS but initial dominates Kruskal p=0.004; reversed/different JSD ratio 0.904 rejects pure parallelism; T→I MI=0.079 > SET MI=0.025; T5 channel separation: ke/ct/ck 1.9-2.9x Mode A enriched, in 0.54x Mode B, thermal p=0.0000; macro-atoms have functional channel assignments) | 2 | B, MIDDLE, composition, macro-atom, parallel, priority, channel, suffix-mode, C1190, C1210, C1229 | -> [C1379_two_level_parallel_composition.md](C1379_two_level_parallel_composition.md) |
+
+**Phase 494 findings (Parallel Monitoring Tracks):**
+- T1 (KEY TEST): Macro-atom decomposition using C1210 high-affinity pairs improves C1190's behavioral composition from r=0.760 to r=0.797 (z=5.98, p<0.001 vs 1000 random pairings)
+- T2: Reversed MIDDLE pairs (same atoms, different order) are NOT significantly more similar than different-set pairs (ratio 0.904, p=0.146) — atom ORDER matters, pure parallelism rejected
+- T3: Cross-token coupling flows through TERMINAL→INITIAL (MI=0.079) not full SET (MI=0.025); INITIAL→INITIAL at 75% of T→I shows entry state persistence
+- T4: All positions contribute (removal ratio 1.375 < 1.5) but INITIAL dominates (Kruskal p=0.004); medial drops first — consistent with expert-oriented elision
+- T5 (EXTENSION): Macro-atoms split by suffix mode channel — ke (2.68x), ct (2.87x), ck (1.91x) concentrate in Mode A (thermal specification); in (0.54x) concentrates in Mode B (continuation). qo PREFIX 1.91x Mode A enriched (p=0.0000). Macro-atoms have functional channel assignments.
+- Refined model: two-channel parallel composition with priority ordering — fused macro-atoms serve different instruction streams (specification vs continuation)
+
+### Apparatus Parameterization in AXM Residual (C1380) -- Phase: PARALLEL_MONITORING_TRACKS (Phase 494)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1380** | **Apparatus Profile Partially Explains AXM Residual** (Mantel r=0.224 p=0.002 5K perms; eta²=0.083 p=0.034; raw r=0.243 p=0.0002; SEALED_VESSEL +0.022 most repetitive, SUSTAINED_HEAT -0.018 most varied; ~8% of C1169 residual is apparatus parameterization, ~92% remains free) | 2 | B, AXM, residual, apparatus, design-freedom, Mantel, C1169, C1248 | -> [C1380_apparatus_parameterization_in_residual.md](C1380_apparatus_parameterization_in_residual.md) |
+
+**Phase 494 findings (Apparatus Parameterization):**
+- Pairwise apparatus profile similarity predicts AXM residual similarity (Mantel r=0.224, p=0.002)
+- Dominant apparatus group clusters in residual space (eta²=0.083, p=0.034)
+- Sealed-vessel folios are more self-repetitive (+0.022), distillation/sustained-heat more varied (-0.011/-0.018)
+- C1169 missed this because it tested univariate regression, not pairwise similarity
+- Qualifies C1169: ~8% of "design freedom" is actually apparatus input parameterization
+
+---
+
+### o-Initial MIDDLE AZC Enrichment (C1381) -- Phase: GLOSS_PREDICTION_TESTS (Phase 495)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1381** | **o-Initial MIDDLE Enrichment in AZC** (AZC 22.4% vs B 11.8%, ratio=1.9x, chi2=281.3 p<0.0001; B-shared 13.5% vs B-exclusive 9.8%; Section C highest at 18.9%; smooth gradient from apparatus layer into execution layer) | 2 | CROSS, AZC, MIDDLE, atom, o-initial, apparatus, C496, C1269, C1273, C1274 | -> [C1381_o_initial_middle_azc_enrichment.md](C1381_o_initial_middle_azc_enrichment.md) |
+
+**Phase 495 findings (Gloss Prediction Tests):**
+- Crazy-expert proposed 8 testable predictions from Tier 4 gloss analysis; 5 already confirmed by existing constraints, 3 tested here
+- P6 (n-terminal at mode boundaries): INVERTED — n-terminal MIDDLEs depleted at transitions (0.81x, p<0.0001), consistent with n as steady-state marker
+- P7 (o-initial in AZC): CONFIRMED — 1.9x enrichment with smooth gradient (new constraint C1381)
+- P8 (f-atoms in REGIME_3): WRONG DIRECTION — f peaks in REGIME_4/REGIME_2, not REGIME_3; distribution is non-uniform (chi2=90.6) but prediction target was wrong
+- Crazy-expert overall: 6/8 confirmed, 1 inverted, 1 wrong direction
+
+### k/a Atom-Initial Suffix Mode Polarization (C1382) -- Phase: GLOSS_PREDICTION_TESTS (Phase 495)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1382** | **k/a Atom-Initial Suffix Mode Polarization** (k-initial 0.583x depleted in Mode B vs Mode A, chi2=245 p<0.0001, all 5 sections consistent; a-initial 2.034x Mode B enriched; e-initial neutral 0.986x; atom-initial predicts suffix mode along same axis as C1309 THERMAL/TRANSITION) | 2 | B, MIDDLE, atom, suffix-mode, k-initial, a-initial, C1229, C1309, C908, C1381 | -> [C1382_k_a_atom_suffix_mode_polarization.md](C1382_k_a_atom_suffix_mode_polarization.md) |
+
+**Phase 495 findings (Gloss Prediction Tests, batch 2: P9-P11):**
+- P9 (n-terminal at line-final): INVERTED — n-terminal MIDDLEs depleted at line-final (0.694x, p=0.000005); second n-terminal inversion confirms n as steady-state mid-line atom
+- P10 (k-initial in Mode B): CONFIRMED — 0.583x depleted, all sections consistent; a-initial shows symmetric opposite (2.034x Mode B); new constraint C1382
+- P11 (bridge simpler than dark): MIXED — raw depth not significant (p=0.24) but frequency-matched depth significant (0.754x, p=0.000009) and character length strongly confirms (0.682x)
+- Crazy-expert cumulative: 7/11 confirmed, 2 inverted, 1 wrong direction, 1 mixed
+
+### n-Terminal MIDDLE Boundary Avoidance (C1383) -- Phase: GLOSS_PREDICTION_TESTS (Phase 495)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1383** | **n-Terminal MIDDLE Boundary Avoidance** (depleted at mode transitions 0.81x p<0.0001; depleted at line-final 0.694x p=0.000005; 4/5 sections consistent; mean position 0.479 vs 0.502; n is interior/steady-state, avoids all tested boundary types) | 2 | B, MIDDLE, atom, n-terminal, boundary, position, mode, C1208, C1209, C1210, C1382 | -> [C1383_n_terminal_boundary_avoidance.md](C1383_n_terminal_boundary_avoidance.md) |
+
+**C1383 rationale:** Two independent predictions (P6, P9) that n-terminal MIDDLEs would be enriched at boundaries both inverted significantly. The consistent direction (depletion, not enrichment) establishes n as a steady-state interior atom. Documented to prevent future boundary-role predictions for n.
+
+### k-Initial MIDDLE Fraction Predicts AXM Dwell (C1384) -- Phase: GLOSS_PREDICTION_TESTS (Phase 495)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1384** | **k-Initial MIDDLE Fraction Predicts AXM Self-Transition** (rho=+0.620 p<0.0001 72 folios; k is ONLY positive atom-initial; a=-0.503 o=-0.427 d=-0.411 all negative; survives within-section B rho=+0.496 H rho=+0.407; four-level chain: k-initial → Mode A → THERMAL → AXM dwell) | 2 | B, MIDDLE, atom, k-initial, AXM, dwell, folio, C1382, C1289, C1309, C1208 | -> [C1384_k_initial_axm_dwell_correlation.md](C1384_k_initial_axm_dwell_correlation.md) |
+
+**Phase 495 findings (Gloss Prediction Tests, batch 3: P12-P14):**
+- P12 (h-terminal CHSH enrichment): INVERTED — h-terminal depleted in CHSH (0.767x, p=0.0002); complementary distribution, not resonance
+- P13 (e/k vs AXM): HALF CONFIRMED — k-initial rho=+0.620 confirmed; e-initial inverted (rho=+0.350, positive not negative); true axis is k vs {a,o,d}, not k vs e; new constraint C1384
+- P14 (y-terminal paragraph-final): NULL — 0.950x, p=0.14, dead flat
+- Crazy-expert cumulative: 8/14 confirmed, 3 inverted, 1 wrong direction, 1 mixed, 1 null
+
+### l-Terminal State/Condition Marker (C1385) -- Phase: L_ATOM_SEMANTIC_DEEP_DIVE (Phase 496)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1385** | **l-Terminal State/Condition Marker** (68.9% post-state-change rate vs 47.2% baseline; 77% kernel-before-l ordering on mixed lines; kernel contact rho=-0.197 p<0.000001; Mode B locked 72%; category redirection 0/5 match; STAGING 9.7x; 450 CHSH+l compositional tokens; 15-round investigation, 10 hypotheses falsified; upgrades l from WEAK to SOLID; German: Lage) | 2 | B, MIDDLE, atom, l-terminal, state, gloss, C1195, C1207, C1209, C1250, C1386 | -> [C1385_l_terminal_state_condition_marker.md](C1385_l_terminal_state_condition_marker.md) |
+
+### ACTOR/RESPONDER Terminal-Atom Timing Split (C1386) -- Phase: L_ATOM_SEMANTIC_DEEP_DIVE (Phase 496)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1386** | **ACTOR/RESPONDER Terminal-Atom Timing Split** (terminal atoms partition by macro-state transition timing: ACTORS {e=18.4%, h=29.1%, k=31.8%, t=30.4%} precede changes; NEUTRAL {d=38.3%, o=42.4%, y=43.9%, i=48.7%}; RESPONDERS {n=63.6%, l=68.9%, r=72.6%, m=78.2%} follow changes; baseline 47.2%; orthogonal to C1208 carryover and C1209 positional grammar) | 2 | B, MIDDLE, atom, timing, macro-state, transition, C1200, C1209, C1208, C976 | -> [C1386_actor_responder_timing_split.md](C1386_actor_responder_timing_split.md) |
+
+**Phase 496 findings (L-Atom Semantic Deep Dive):**
+- 15-round hypothesis-test investigation of atom l using crazy-expert agent
+- 10 hypotheses tested and falsified: let-flow, release, arrange, level, specifier, redirect, continue, nominalizer, hold, free, product
+- Final interpretation: l = "state/condition marker" (SOLID confidence) — converts operations to status readings
+- Key evidence: 68.9% post-state-change (21.7pp above baseline), 77% kernel-before-l, kernel avoidance rho=-0.197, Mode B locked
+- ACTOR/RESPONDER timing split discovered as independent structural finding (C1386)
+- CHSH + l compositional reading confirmed: ch+ol = "checkpoint the vessel-state" (450 tokens)
+- C1195 updated: l upgraded from WEAK ("frame") to SOLID ("state")
+
+### r-Terminal Hazard-Response Partitioning (C1387) -- Phase: R_ATOM_SEMANTIC_DEEP_DIVE (Phase 497)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1387** | **r-Terminal Hazard-Response Partitioning** (ar monopolizes FL_HAZ 248:0 vs or, 4.910x enrichment chi-sq=1473.71; or concentrates in FQ 70.5%; only r/l/n at FL_HAZ = RESPONDER-exclusive; r anti-cycling rho=-0.334 p=0.003; r→a forward chain 2.142x; r exists only as ar and or; 10-round investigation, 4 hypotheses falsified; upgrades r from WEAK to PLAUSIBLE; gloss: respond) | 2 | B, MIDDLE, atom, r-terminal, FL_HAZ, macro-state, hazard, respond, C1195, C1207, C1208, C1386, C976 | -> [C1387_r_terminal_hazard_response_partitioning.md](C1387_r_terminal_hazard_response_partitioning.md) |
+
+**Phase 497 findings (R-Atom Semantic Deep Dive):**
+- 10-round hypothesis-test investigation of atom r using crazy-expert agent
+- 4 hypotheses tested: return/reflux (Rücklauf), flow/run (rinnen), ripen/mature (reifen), repeat (repetieren) — all falsified or partially falsified
+- 0 fully confirmed predictions across 10 tests (vs l-atom Phase 496: 15 tests, multiple confirmations)
+- Key structural discovery: r exists ONLY as "ar" and "or" (extreme compound selectivity)
+- ar monopolizes FL_HAZ (248 tokens, zero or) at 4.910x enrichment (chi-sq=1473.71)
+- Only RESPONDER atoms {r, l, n} appear at FL_HAZ — consistent with C1386
+- r anti-cycling: rho=-0.334, p=0.003 (more r = less mode alternation)
+- r→a forward chain at 2.142x (strongest sequential dependency in iteration axis)
+- Final interpretation: r = "respond" (PLAUSIBLE confidence)
+- PLAUSIBLE ceiling: a/o initial confound prevents full isolation of r's contribution
+- C1195 updated: r upgraded from WEAK ("input") to PLAUSIBLE ("respond"); tier counts 8/3/7/1
+
+### o-Atom Arrangement Domain Marker (C1388) -- Phase: O_ATOM_SEMANTIC_DEEP_DIVE (Phase 498)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| **1388** | **o-Atom Arrangement Domain Marker** (o=arrange/ordnen; STAGING 2.49x OPERATION 1.78x THERMAL 0.105x depleted; #1 anti-AXM (rho=-0.614) #1 kernel interleaver (52.1%); C874 convergence — ol=LINK from structural analysis independently confirmed by o(arrange)+l(state) = 100% STAGING 7.68x; 100% compound determinism ol=STAGING ok=CONTAINMENT or=FLOW ot=MONITORING; temporal ordering falsified (48.6% chance) — domain marker not sequential verb; 23-test battery 8/23 confirmed; upgrades o from WEAK to SOLID; German: ordnen) | 2 | B, MIDDLE, atom, o-initial, o-terminal, arrange, ordnen, STAGING, OPERATION, anti-AXM, interleaving, domain-marker, C874, C1195, C1207, C1381, C1384, C1386, C1190, C1305 | -> [C1388_o_atom_apparatus_management_profile.md](C1388_o_atom_apparatus_management_profile.md) |
+
+**Phase 498 findings (O-Atom Semantic Deep Dive):**
+- 23-test investigation across three batteries: vessel/Ofen (12 tests, 3 pass), ordnen/arrange (8 tests, 4 pass), tiebreakers (3 tests, 1 pass)
+- Vessel/CONTAINMENT prediction falsified (CONTAINMENT 0.835x) — actual categories: STAGING 2.49x, OPERATION 1.78x
+- Ordnen/arrange hypothesis confirmed through convergent evidence:
+  - C874 convergence: ol independently established as LINK operator from structural analysis; compositional decomposition independently yields o(arrange)+l(state) = 100% STAGING (7.68x). Two methods, zero shared assumptions, same conclusion.
+  - 100% compound determinism: ol=STAGING (762 tokens), ok=CONTAINMENT (70), or=FLOW (446), ot=MONITORING (46). Contrast: al=FLOW vs ol=STAGING — same l, different first atom → proves o carries independent semantic content.
+  - Anti-THERMAL 0.105x (most extreme single-category depletion of any atom)
+  - Anti-AXM #1 of all 20 atoms; kernel interleaver #1 among NEUTRAL atoms
+  - CHSH+o STAGING 4.77x (strongest category signal in CHSH compounds)
+- Temporal ordering falsified: o does NOT precede k within lines (48.6%, chance). o is a domain marker, not a sequential action verb.
+- German candidate: ordnen (to arrange), consistent with K=Kochen, E=Erkalten, D=Dichten, T=Treiben pattern
+- C1195 updated: o upgraded from WEAK ("work") to SOLID ("arrange"); tier counts now 8/4/7/0 (zero WEAK atoms remaining)
+
+### c-Atom Main-Loop Modifier Profile (C1389) -- Phase: C_ATOM_SEMANTIC_DEEP_DIVE (Phase 499)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1389 | c-atom main-loop modifier profile | 2 | B | c=adjust upgraded PLAUSIBLE->SOLID; 6/6 compositional convergence, 93.5% AXM-confined, MONITORING 12.237x, 100% compound determinism across 61 c-MIDDLEs, CHSH+c MONITORING 23.09x, order-sensitive (ck=OPERATION vs kc=CONTAINMENT) |
+
+**Phase 499 findings (C-Atom Semantic Deep Dive):**
+- 19-test investigation across three batteries: initial cross-token (4/12), compound decomposition (2/4), tiebreakers (2/3) = 8/19 total
+- Category identity confirmed: MONITORING 12.237x (#1 enriched), MARKING 2.916x, anti-THERMAL 0.055x (near-zero)
+- c is 93.5% AXM — most macro-state-confined atom in the system. Zero FL_HAZ, FQ, CC
+- 100% compound determinism: ck=OPERATION (197 tokens), ckh=CONTAINMENT (127), ct=MONITORING (95), cth=MARKING (49), cph=MONITORING (36), cfh=MARKING (9)
+- CHSH+c: MONITORING 23.09x enrichment — most extreme PREFIX+atom signal observed. MARKING 6.02x
+- Key discovery: c->h obligatory junction (C1216: 380/380) is INTRA-token (compound formation), NOT cross-token (0 c-terminal->h-initial instances). The {c,h} cluster reflects compound co-occurrence, not sequential execution
+- **Decisive evidence (Phase 499b/c):** 6/6 compositional convergence — every independently glossed c-compound matches CategoryClassifier when decomposed through c(adjust)+X. MON+MARK injection +43.2pp (5/5 bases). Order sensitivity: ck=OPERATION vs kc=CONTAINMENT (100% category flips). h-suffix category transformation (p<0.000001). Folio coverage exceeds all controls
+- ACTOR timing: 31.6% post-state-change (proactive, not reactive). "Correct" hypothesis falsified (0/2)
+- German candidate: justieren (to adjust/calibrate)
+- C1195 updated: c upgraded from PLAUSIBLE ("adjust") to SOLID ("adjust"); tier counts now 8/5/6/0
+
+### p-Atom Marking Pause Profile (C1390) -- Phase: P_ATOM_SEMANTIC_DEEP_DIVE (Phase 500)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1390 | p-atom marking pause profile | 2 | B | p=pause upgraded PLAUSIBLE->SOLID; #1 MARKING atom (12.033x, 93.63%), #1 carryover (8.126x), 3/4 compositional convergence, 4/4 MARKING injection +68.3pp, op gateway 95.5% INITIAL/TRANSITION, CHSH+p MON+MARK 87.4%, AXM 88.7%, line-boundary reset; 12-test battery 10/12 |
+
+**Phase 500 findings (P-Atom Semantic Deep Dive):**
+- 12-test investigation scored 10/12 (Cycle 1: 4/4, Cycle 2: 3/4, Cycle 3: 3/4)
+- p is the #1 MARKING atom in the entire system: 12.033x enrichment, 93.63% of all p-initial tokens classify as MARKING
+- p is the #1 carryover atom: 8.126x consecutive pair enrichment, ZERO cross-line pairs (line-boundary reset)
+- AXM 88.7% (enriched 1.311x), FL_HAZ 0.000x — main-loop, not hazard-associated. Less confined than c (93.5%)
+- Compositional convergence 3/4: op=TRANSITION (match), cph=MONITORING (match), cp=MARKING (match); ep=MARKING (miss, expected THERMAL — p dominates e)
+- MARKING injection: +68.3pp across all 4 testable bases (universal, strongest single-category injection of any atom)
+- op gateway compound: 95.5% INITIAL (210/220), 100% TRANSITION, 63 folios (76.8% corpus). Process restart/transition point
+- CHSH+p: MON+MARK 87.4%, MARKING 11.86x — higher than CHSH+c's known extreme signal
+- p->c junction: 11.02x intra-compound (306 tokens), cross-token depleted 0.78x — same intra-compound pattern as c->h
+- cp and pc both 100% MARKING — p's dominance prevents order sensitivity (unique behavior among tested atoms)
+- ACTOR timing: 26.7% (proactive, not reactive). Post-hazard depleted (0.56x)
+- Section gradient: MARKING rho=+0.657, but best tracker is FLOW rho=+0.714 (minor miss)
+- German candidate: pausieren. Consistent with REGIME 2: "seal->heat->PAUSE->cool overnight->unseal->collect"
+- C1195 updated: p upgraded from PLAUSIBLE ("pause") to SOLID ("pause"); tier counts now 8/6/5/0
+
+### s-Atom Staging Sequence Profile (C1391) -- Phase: S_ATOM_SEMANTIC_DEEP_DIVE (Phase 501)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1391 | s-atom staging sequence profile | 2 | B | s=sequence remains PLAUSIBLE; #1 STAGING atom (6.721x, 87.50%), 6/6 compound determinism at 100% purity, FQ macro-state (3.59x), sh compound-suffix (13.16x s->h junction), modifier cosine 0.966 (SM-8); combined 11/20 across Phases 501+503 |
+
+**Phase 501 findings (S-Atom Semantic Deep Dive, standard battery 6/12):**
+- s is #1 STAGING atom: 6.721x enrichment, 87.50%, perfect compound determinism (6/6 at 100% purity)
+- FQ macro-state (64.6%, 3.59x) — cycling, not AXM-confined; sh compound-suffix 13.16x junction
+- Bifurcated: sh-family = MONITORING, non-h compounds = OPERATION/STAGING/MARKING
+- H1 "sequence" best (3/4); H2 "sift" rejected (MONITORING 2.84% standalone)
+
+**Phase 503 findings (S-Atom Modifier Battery, 5/8):**
+- SM-8 (DECISIVE): s is PREDICTABLE modifier — cosine 0.966 across corpus halves (all 5 compounds >= 0.925)
+- SM-2: s shifts partner category (4/5 Xs compounds change primary category, each 100% purity)
+- SM-3: s-modifier PREFIXes amplify base selectivity (sa beats 2/3 a-base, sh beats ch)
+- SM-4: s changes suffix distributions (sh-initial 100% bare, es chi2=822 p<0.001)
+- SM-7: sh routes differently from ch (chi2=211.2, p~0, replicates C1243 at 1.74x)
+- SM-1 (INFORMATIVE FAIL): h-junction not universal — tsh=FLOW, psh=MARKING override
+- Combined 11/20 — below SOLID threshold. s is a predictable base-dependent sequencing modifier
+- C1195 reviewed: s remains PLAUSIBLE ("sequence"); tier counts unchanged 8/6/5/0
+
+### f-Atom Marking Flag Profile (C1392) -- Phase: F_ATOM_SEMANTIC_DEEP_DIVE (Phase 502)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1392 | f-atom marking flag profile | 2 | B | f=flag remains PLAUSIBLE; #2 MARKING atom (12.009x), 100% HT/UN (never enters 49-class grammar), 90.9% compound MARKING uniformity, f->c junction 10.28x, CHSH+f 82.8% MARKING, H1 'flag' 4/4 discriminants, 5/5 convergence; 12-test battery 6/12 (data ceiling) |
+
+**Phase 502 findings (F-Atom Semantic Deep Dive):**
+- 12-test investigation scored 6/12 (6 PASS, 4 FAIL, 1 INCONCLUSIVE, 1 N/A)
+- f is the #2 MARKING atom in the system: 12.009x enrichment, behind only p (12.033x)
+- KEY STRUCTURAL FINDING: f-initial vocabulary is 100% HT/UN — never enters 49-class execution grammar
+- f is the purest identification/annotation atom: operates exclusively in the Human Track layer
+- All f-compounds are uniformly MARKING (90.9%) — strongest compound uniformity of any tested atom
+- f->c junction 10.28x enrichment: fch is a compound unit (like sh in s-atom)
+- CHSH+f 82.8% MARKING (11.75x enrichment), comparable to CHSH+p's 87.4%
+- H1 "flag" wins 4/4 discriminants: NEUTRAL timing 100%, R4 1.58x, pos 0.466, line-1 enrichment 7.00x (27.9%)
+- 5/5 compositional convergence — no h-junction diversification (all compounds uniformly MARKING)
+- Failures are data-driven: 215 total tokens, sparse compounds, no testable reversed forms
+- f remains PLAUSIBLE — data ceiling prevents SOLID despite qualitatively strong evidence
+- C1195 reviewed: f remains PLAUSIBLE ("flag"); tier counts unchanged 8/6/5/0
+
+### Compound MIDDLE Composition Grammar (C1393) -- Phase: GLOSS_PREDICTION_TESTS (Phase 504)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1393 | compound MIDDLE composition grammar | 2 | B, grammar, composition | Head-initial three-slot grammar (V=0.593): HEAD (a,e,o) + MODIFIER (p,c,i,f,d,s) + TERMINAL (l,r,h,y,m,n) + FREE (k,t). First atom predicts category 74-76%. k/t role-dual: actor under qo, target under ch/sh. Replicates C1209 (15/19). Channel-specific slot modulation. |
+
+**Phase 504 findings (Compound MIDDLE Composition Grammar, 6 tests):**
+- T1: Head-initial structure — first atom determines category at 76.4%/74.2% (PREFIX/direct), token-weighted 85.9%/78.3%
+- T2: Four-role partition — HEAD/MODIFIER/TERMINAL/FREE (chi2=30,868, V=0.593). a=86.4% first, n=99.4% last. Replicates C1209 independently (15/19 match)
+- T3: k/t role duality — k-first=98.4% THERMAL (actor), k-last=88.3% MONITORING (target). JSD=0.717, HIGHER than HEAD atom e (0.593). FREE = positionally mobile with role duality
+- T4: Terminal carry-over — within-line chi2=1144 p~10^-118 V=0.077 (real but weak). Across-line p=0.209 (resets at boundary, consistent with C1200/C1233). Strongest: r->a 1.98x
+- T5: Action vs channel distinction — atom glosses predict intrinsic FUNCTION, PREFIX predicts deployment CHANNEL. Two independent readable layers
+- T6: Channel-specific slot grammar — universal skeleton (y,n,m,h always terminal, head-initial 93.5%) + channel-specific assignment (k 90.5% FIRST under qo, 2.0% under ch; i exclusive to a-base channels; d enriched in monitoring)
+- Composition reading rule: [HEAD=domain] + [MODIFIER(s)=how] + [TERMINAL=state], PREFIX = channel. k/t = process variable nouns
+- Open questions: l-anomaly (shifts to INITIAL under some channels), modifier stacking order, 2-atom vs 3+ behavior
+
+### Instruction Encoding Architecture (C1394) -- Phase: INSTRUCTION_ENCODING_MAP (Phase 505)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1394 | instruction encoding architecture | 2 | B, grammar, composition | HEAD+MOD*+TERM with variable-length ordered modifier stack (p→f→i→c→d→s). Frame predicts 64% of category; modifiers shift 36%. Fusion gradient: only dy hard-fused, most "macro-atoms" are adjacent slots. Suffix confirmed independent layer (entropy 1.475 bits). |
+
+**Phase 505 findings (Instruction Encoding Architecture, 7 tests):**
+- T1: Suffix boundary — suffix is independent layer (77.1% of MIDDLEs take 3+ suffixes, entropy 1.475 bits), not an artifact of terminal atoms
+- T2: Fusion gradient — dy is only hard-fused pair; ed/ol/op/ck/ch/in are soft-fused; ke/ee/od/ey are just adjacent slots
+- T3: Pair-locked atoms — 9/18 atoms are pair-locked (<10% standalone): all 5 MOD atoms, HEAD a/o, TERMINAL n/h
+- T4: Modifier ordering — fixed internal order p(0.22)→f(0.40)→i(0.52)→c(0.53)→d(0.70)→s(0.71); co-occurrence avoidance (c/i 0.40x, c/s 0.48x)
+- T5: HEAD×TERM frame matrix — o→l 98.1% STAGING, a→r 99.4% FLOW, k→_ 69.1% THERMAL; HEAD+TERM predicts 64% of category
+- T6: Modifier effects — d(V=0.657 +56% OPERATION), f(+76% MARKING, most concentrated), i(+45% TRANSITION), c(+30% MARKING), p(+46% MARKING), s(weakest)
+- T7: Size distribution — 1-mod compounds are 47% of tokens (workhorses); 0-mod=24%; 2+=29%
+- Instruction encoding model: PREFIX(channel) + HEAD(domain) + MOD*(ordered parametrization) + TERM(exit state) + SUFFIX(context marker)
+
+**Phase 506 findings (Instruction Encoding Refinement, 4 tests resolving open questions):**
+- T8: Headless compounds — specialized subgrammar (V=0.568), 20.6% of tokens, CONTAINMENT/MARKING/MONITORING enriched, a-base PREFIX concentrated (da 2213x), boundary-position enriched (paragraph-initial 2.16x)
+- T9: h-terminal transparency — NOT chaotic; HEAD+MODS predict at V=0.988. h="watch" is transparent (lets HEAD signal through). PREFIX compensates +0.166 V
+- T10: Modifier ordering — morphological convention (71% same category on reversal); first modifier dominates (66.5%); multi-stage stacking collapses to MARKING (97-100%); suffix mode coupling V=0.260
+- T11: e-atom domain specificity — genuine domain, NOT default. o is real versatility champion (entropy 2.396). e-depth saturation: ee=84% THERMAL, eee=100%. e has LOWEST modifier dominance (V=0.672)
 
 ---
 

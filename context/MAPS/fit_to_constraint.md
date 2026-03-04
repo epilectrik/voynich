@@ -28,7 +28,7 @@ Look up a constraint number to see which fits explain its mechanism.
 | F-ECR-001 | Material-Class Identification | F3 | C109-C114, C232 | SUCCESS |
 | F-ECR-002 | Apparatus-Role Identification | F3 | C085-C108, C171, C216 | SUCCESS |
 | F-ECR-003 | Decision-State Semantics | F3 | C384, C404-C405, C459-C460 | SUCCESS |
-| F-B-001 | LINK Operator as Sustained Monitoring Interval | F2 | C366, C609, C190 | SUCCESS |
+| F-B-001 | LINK Operator as Sustained Monitoring Interval | F2 | C366, C609, C190 | SUPERSEDED (C1174) |
 | F-B-002 | QO Lane as Safe Energy Pathway | F3 | C601, C574, C600 | SUCCESS |
 | F-B-003 | Pre-Operational Configuration via A→AZC→B Pipeline | F2 | C473, C506, C468 | SUCCESS |
 | F-B-004 | Lane Hysteresis Control Model | F2 | C643, C549, C577, C608 | SUCCESS |
@@ -100,9 +100,9 @@ Look up a constraint number to see which fits explain its mechanism.
 
 | Constraint | Fit ID | What Fit Explains |
 |------------|--------|-------------------|
-| C366 | F-B-001 | LINK phase boundary maps to monitoring-to-intervention transition |
-| C609 | F-B-001 | 13.2% LINK density maps to sustained monitoring duty cycle |
-| C190 | F-B-001 | LINK-CEI anticorrelation (r=-0.7057) maps to stable-process monitoring pattern |
+| C366 | F-B-001 | ~~LINK phase boundary maps to monitoring-to-intervention transition~~ SUPERSEDED by C1174 |
+| C609 | F-B-001 | ~~13.2% LINK density maps to sustained monitoring duty cycle~~ SUPERSEDED by C1174 |
+| C190 | F-B-001 | LINK-CEI anticorrelation (r=-0.7057) — statistic valid, interpretation SUPERSEDED by C1174 |
 | C601 | F-B-002 | QO's 0/19 hazard exclusion maps to non-fire/safe thermal pathway |
 | C574 | F-B-002 | QO-CHSH grammatical identity maps to same operations at different risk levels |
 | C600 | F-B-002 | CC sub-group trigger selectivity maps to distinct entry points for different methods |
@@ -110,7 +110,7 @@ Look up a constraint number to see which fits explain its mechanism.
 | C506 | F-B-003 | PP→survival correlation (r=0.715) maps to better configuration → more operational options |
 | C468 | F-B-003 | B blind execution maps to operator executing within pre-set apparatus constraints |
 
-**Interpretation:** F-B-001 through F-B-003 demonstrate alignment between Brunschwig's verified distillation control practices and Currier B's structural architecture. All mappings verified against original German text (sources/brunschwig_1500_text.txt, Part 1, lines 1-2800).
+**Interpretation:** F-B-002 and F-B-003 demonstrate alignment between Brunschwig's verified distillation control practices and Currier B's structural architecture. F-B-001 was SUPERSEDED by C1174 (LINK is morphological artifact, not functional layer). All mappings verified against original German text (sources/brunschwig_1500_text.txt, Part 1, lines 1-2800).
 
 ---
 

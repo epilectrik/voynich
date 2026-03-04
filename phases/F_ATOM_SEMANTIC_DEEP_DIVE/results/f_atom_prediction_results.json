@@ -1,0 +1,98 @@
+{
+  "phase": 502,
+  "atom": "f",
+  "current_gloss": "flag",
+  "current_tier": "PLAUSIBLE",
+  "hypotheses": {
+    "H1": "flag (Flagge/Fahne) — MARKING dominant, sentinel/checkpoint",
+    "H2": "format/prepare (Fassung) — MARKING/STAGING mixed",
+    "H3": "fill (füllen) — OPERATION/MARKING mixed"
+  },
+  "results": {
+    "F-F1": {
+      "name": "f-initial 8-category profile",
+      "verdict": "PASS",
+      "details": "MARKING 12.009x (#2 atom behind p), THERMAL 0.069x, stable 5/5 sections. All 4/4 sub-criteria pass."
+    },
+    "F-F2": {
+      "name": "f+X compound category determinism",
+      "verdict": "PASS",
+      "details": "5/5 compound matches: fch=MARKING, of=MARKING, ef=MARKING, cfh=MARKING, eef=THERMAL. 90.9% of all f-compounds are MARKING (uniform distribution)."
+    },
+    "F-F3": {
+      "name": "f NEUTRAL carryover run analysis",
+      "verdict": "INCONCLUSIVE",
+      "details": "Only 1 f-f consecutive pair found (need >= 3). f is ~1% rate, too sparse for carryover analysis."
+    },
+    "F-F4": {
+      "name": "f-initial macro-state distribution",
+      "verdict": "N/A (STRUCTURAL FINDING)",
+      "details": "0 f-initial tokens classified by 49-class execution grammar. f is 100% HT/UN (identification/annotation layer). f never enters the execution grammar — the purest identification atom in the system."
+    },
+    "F-F5": {
+      "name": "f->c junction analysis",
+      "verdict": "PASS",
+      "details": "f->c junction 10.28x enrichment, 98.6% MARKING in f->c compounds. fch is a compound unit analogous to sh in s-atom."
+    },
+    "F-F6": {
+      "name": "CHSH+f compound enrichment",
+      "verdict": "PASS",
+      "details": "CHSH+f 82.8% MARKING, 11.75x enrichment vs non-f. Comparable to CHSH+p's 87.4% MON+MARK."
+    },
+    "F-F7": {
+      "name": "fch compound family survey",
+      "verdict": "FAIL",
+      "details": "2/4 sub-predictions: f->c adjacency 67.9% (< 80% threshold), no category diversity (all MARKING). Failure is INFORMATIVE — f is so uniformly MARKING it overrides diversification. f also bonds with h directly (fh family), not exclusively through c."
+    },
+    "F-F8": {
+      "name": "f-compound order sensitivity",
+      "verdict": "FAIL",
+      "details": "0/3 testable pairs (fo, fe, fc all N < 5). Data limitation, not structural finding. Controls validated (ck/kc, ek/ke order-sensitive)."
+    },
+    "F-F9": {
+      "name": "Section gradient",
+      "verdict": "FAIL",
+      "details": "rho(f, MARKING) = +0.900 (best tracker, passes P1). But |rho(f, THERMAL)| = 0.900 (fails P2, needed <= 0.50). Same anti-THERMAL correlation pattern as s-atom."
+    },
+    "F-F10": {
+      "name": "Alternative hypothesis discrimination",
+      "verdict": "PASS",
+      "details": "H1 'flag' 4/4 (NEUTRAL 100%, R4 1.58x, pos 0.466, line-1 27.9%). H2 'format' 3/4, H3 'fill' 3/4. H1 wins decisively."
+    },
+    "F-F11": {
+      "name": "MARKING injection",
+      "verdict": "FAIL",
+      "details": "2/3 positive (ef +100pp, of +100pp; cf +0pp because base already MARKING). Mean delta +66.7pp is enormous where measurable. Technical failure: cf base already saturated."
+    },
+    "F-F12": {
+      "name": "Compositional convergence",
+      "verdict": "PASS",
+      "details": "5/5 FULL match — fch=MARKING, ofch=MARKING, of=MARKING, ef=MARKING, cf=MARKING. All compounds 100% MARKING. No h-junction diversification (unlike s-atom). H1 'flag' supported."
+    }
+  },
+  "score": {
+    "pass": 6,
+    "fail": 4,
+    "inconclusive": 1,
+    "not_applicable": 1,
+    "total": 12
+  },
+  "hypothesis_scores": {
+    "H1_flag": "Decisive winner — F-F10 4/4, F-F12 5/5, MARKING 12.009x #2 atom",
+    "H2_format": "Rejected — no STAGING signal, MARKING purity too high for mixed prediction",
+    "H3_fill": "Rejected — no OPERATION signal, 100% HT/UN layer"
+  },
+  "structural_finding": "F-F4 reveals f-initial vocabulary is 100% HT/UN — never enters 49-class execution grammar. f is the purest identification/annotation atom, operating exclusively in the Human Track layer. This distinguishes f from fellow MARKING atoms p (88.7% AXM) and d (execution grammar participant).",
+  "upgrade_decision": "REMAIN PLAUSIBLE — 6/12 score in standard range, but evidence is qualitatively strong. All failures are data limitations (215 tokens) or test calibration (f too uniformly MARKING for diversity tests). The gloss 'flag' is decisively supported (H1 4/4). Data ceiling prevents SOLID: only 17 standalone tokens, sparse compounds, no testable reversed forms.",
+  "key_findings": [
+    "f is #2 MARKING atom (12.009x enrichment, behind only p at 12.033x)",
+    "100% HT/UN — f never enters the 49-class execution grammar (purest identification atom)",
+    "All f-compounds are uniformly MARKING (90.9%) — strongest uniformity of any tested atom",
+    "f->c junction 10.28x enrichment — fch is a compound unit (like sh in s-atom)",
+    "CHSH+f 82.8% MARKING (11.75x) — comparable to CHSH+p's 87.4%",
+    "H1 'flag' wins 4/4 discriminants: NEUTRAL timing 100%, R4 1.58x, line-1 27.9% (7.00x)",
+    "5/5 compositional convergence — no h-junction diversification (unlike s-atom bifurcation)",
+    "Line-1 enrichment 7.00x (27.9% in line 1) — consistent with folio opener gallows role (C865)"
+  ],
+  "gloss_revision": "NOT WARRANTED — H1 'flag' decisively best (4/4 discriminants, 5/5 convergence). H2/H3 rejected."
+}

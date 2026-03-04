@@ -1,0 +1,65 @@
+{
+  "phase": 494,
+  "name": "PARALLEL_MONITORING_TRACKS",
+  "n_tokens": 23096,
+  "n_profiled_middles": 210,
+  "n_features": 22,
+  "T1_macro_atom": {
+    "r_individual_all": 0.7575,
+    "r_individual_ge3": 0.7597,
+    "r_macro_ge3": 0.797,
+    "improvement": 0.0373,
+    "n_compounds_all": 190,
+    "n_compounds_ge3": 122,
+    "permutation_mean": 0.761,
+    "permutation_std": 0.006,
+    "p_value": 0.0,
+    "z_score": 5.98,
+    "n_permutations": 1000,
+    "significant": true,
+    "verdict": "PASS"
+  },
+  "T2_order_magnitude": {
+    "n_reversed_pairs": 7,
+    "mean_reversed_jsd": 0.4879,
+    "mean_different_set_jsd": 0.5399,
+    "ratio": 0.904,
+    "mann_whitney_u": 1352.0,
+    "mann_whitney_p": 0.146,
+    "n_different_pairs": 503,
+    "verdict": "FAIL"
+  },
+  "T3_cross_token": {
+    "terminal_initial_MI": 0.0788,
+    "terminal_initial_V": 0.0785,
+    "initial_initial_MI": 0.0595,
+    "initial_initial_V": 0.0683,
+    "terminal_terminal_MI": 0.0507,
+    "terminal_terminal_V": 0.0635,
+    "set_carry_MI": 0.0253,
+    "set_ti_ratio": 0.32,
+    "ii_ti_ratio": 0.75,
+    "n_pairs": 23014,
+    "verdict": "MIXED"
+  },
+  "T4_atom_removal": {
+    "n_testable_middles": 38,
+    "n_comparisons": 114,
+    "mean_jsd_initial": 0.3736,
+    "mean_jsd_medial": 0.2717,
+    "mean_jsd_terminal": 0.2986,
+    "max_min_ratio": 1.375,
+    "kruskal_H": 10.9,
+    "kruskal_p": 0.0043,
+    "effect_ordering": [
+      "initial",
+      "terminal",
+      "medial"
+    ],
+    "parallel_threshold_pass": true,
+    "positions_equal": false,
+    "verdict": "PASS"
+  },
+  "constraint_statement": "MIDDLE atoms show partial parallel composition with priority ordering. Macro-atom decomposition confirmed but pure parallelism rejected.",
+  "overall_verdict": "PARTIAL"
+}

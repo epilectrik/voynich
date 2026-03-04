@@ -1,0 +1,176 @@
+{
+  "phase": "494_extension",
+  "name": "SUFFIX_MODE_CHANNEL_SEPARATION",
+  "n_lines_mode_a": 1035,
+  "n_lines_mode_b": 1371,
+  "n_tokens": 23074,
+  "T1_prefix_channel": {
+    "chi2": 626.9,
+    "dof": 9,
+    "cramers_v": 0.1648,
+    "thermal_mode_a_pct": 0.3931,
+    "thermal_mode_b_pct": 0.3047,
+    "thermal_a_b_ratio": 1.29,
+    "thermal_p": 0.0,
+    "assess_mode_a_pct": 0.306,
+    "assess_mode_b_pct": 0.3004,
+    "assess_a_b_ratio": 1.019,
+    "assess_p": 0.8169,
+    "per_channel": {
+      "ASSESSMENT_CH": {
+        "mode_a_count": 1812,
+        "mode_a_pct": 0.1922,
+        "mode_b_count": 2729,
+        "mode_b_pct": 0.2,
+        "a_b_ratio": 0.961
+      },
+      "ASSESSMENT_SH": {
+        "mode_a_count": 1073,
+        "mode_a_pct": 0.1138,
+        "mode_b_count": 1371,
+        "mode_b_pct": 0.1005,
+        "a_b_ratio": 1.133
+      },
+      "BARE": {
+        "mode_a_count": 1274,
+        "mode_a_pct": 0.1351,
+        "mode_b_count": 2586,
+        "mode_b_pct": 0.1895,
+        "a_b_ratio": 0.713
+      },
+      "OTHER": {
+        "mode_a_count": 1052,
+        "mode_a_pct": 0.1116,
+        "mode_b_count": 1901,
+        "mode_b_pct": 0.1393,
+        "a_b_ratio": 0.801
+      },
+      "STAGING_DA": {
+        "mode_a_count": 376,
+        "mode_a_pct": 0.0399,
+        "mode_b_count": 707,
+        "mode_b_pct": 0.0518,
+        "a_b_ratio": 0.77
+      },
+      "STAGING_SA": {
+        "mode_a_count": 134,
+        "mode_a_pct": 0.0142,
+        "mode_b_count": 195,
+        "mode_b_pct": 0.0143,
+        "a_b_ratio": 0.995
+      },
+      "THERMAL_SOURCE": {
+        "mode_a_count": 2312,
+        "mode_a_pct": 0.2453,
+        "mode_b_count": 1755,
+        "mode_b_pct": 0.1286,
+        "a_b_ratio": 1.907
+      },
+      "THERMAL_VESSEL_K": {
+        "mode_a_count": 528,
+        "mode_a_pct": 0.056,
+        "mode_b_count": 948,
+        "mode_b_pct": 0.0695,
+        "a_b_ratio": 0.806
+      },
+      "THERMAL_VESSEL_L": {
+        "mode_a_count": 360,
+        "mode_a_pct": 0.0382,
+        "mode_b_count": 514,
+        "mode_b_pct": 0.0377,
+        "a_b_ratio": 1.014
+      },
+      "THERMAL_VESSEL_T": {
+        "mode_a_count": 506,
+        "mode_a_pct": 0.0537,
+        "mode_b_count": 941,
+        "mode_b_pct": 0.069,
+        "a_b_ratio": 0.778
+      }
+    },
+    "verdict": "PASS"
+  },
+  "T2_macro_atom_mode": {
+    "per_macro": {
+      "am": {
+        "a_pct": 0.0101,
+        "b_pct": 0.0123,
+        "ratio": 0.824
+      },
+      "an": {
+        "a_pct": 0.0,
+        "b_pct": 0.0019,
+        "ratio": 0.0
+      },
+      "ch": {
+        "a_pct": 0.0887,
+        "b_pct": 0.0378,
+        "ratio": 2.345
+      },
+      "ck": {
+        "a_pct": 0.0474,
+        "b_pct": 0.0248,
+        "ratio": 1.909
+      },
+      "ct": {
+        "a_pct": 0.0284,
+        "b_pct": 0.0099,
+        "ratio": 2.874
+      },
+      "dy": {
+        "a_pct": 0.1569,
+        "b_pct": 0.1704,
+        "ratio": 0.921
+      },
+      "in": {
+        "a_pct": 0.0868,
+        "b_pct": 0.1613,
+        "ratio": 0.538
+      },
+      "ke": {
+        "a_pct": 0.0756,
+        "b_pct": 0.0282,
+        "ratio": 2.682
+      },
+      "ph": {
+        "a_pct": 0.0062,
+        "b_pct": 0.0031,
+        "ratio": 2.025
+      }
+    },
+    "a_dominant": [
+      "ch",
+      "ck",
+      "ct",
+      "ke",
+      "ph"
+    ],
+    "b_dominant": [
+      "am",
+      "an",
+      "in"
+    ],
+    "neutral": [
+      "dy"
+    ]
+  },
+  "T3_kernel_mode": {
+    "k": {
+      "a_pct": 0.2586,
+      "b_pct": 0.1451,
+      "ratio": 1.783
+    },
+    "h": {
+      "a_pct": 0.1031,
+      "b_pct": 0.0483,
+      "ratio": 2.135
+    },
+    "e": {
+      "a_pct": 0.3843,
+      "b_pct": 0.337,
+      "ratio": 1.14
+    },
+    "ke_ratio_a": 0.673,
+    "ke_ratio_b": 0.431
+  }
+}

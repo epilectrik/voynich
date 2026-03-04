@@ -1,0 +1,165 @@
+{
+  "phase": "R_ATOM_SEMANTIC_DEEP_DIVE",
+  "phase_number": 497,
+  "atom": "r",
+  "initial_gloss": "input",
+  "initial_tier": "WEAK",
+  "final_gloss": "respond",
+  "final_tier": "PLAUSIBLE",
+  "total_tests": 10,
+  "hypotheses_tested": [
+    "return/reflux (Rücklauf)",
+    "flow/run (rinnen)",
+    "ripen/mature (reifen)",
+    "repeat (repetieren)"
+  ],
+  "hypotheses_fully_confirmed": 0,
+  "hypotheses_partially_confirmed": 1,
+  "hypotheses_falsified": 3,
+  "ceiling_reason": "a/o initial confound — with only 2 MIDDLE forms (ar, or), r's contribution cannot be fully isolated from the initial atom's influence",
+  "key_structural_findings": {
+    "r_exists_only_as": ["ar", "or"],
+    "ar_monopolizes_FL_HAZ": {
+      "ar_FL_HAZ_tokens": 248,
+      "or_FL_HAZ_tokens": 0,
+      "enrichment": "4.910x",
+      "chi_sq": 1473.71
+    },
+    "FL_HAZ_responder_exclusive": {
+      "r_pct": 45.3,
+      "l_pct": 34.0,
+      "n_pct": 20.7,
+      "note": "Only RESPONDER atoms appear at FL_HAZ"
+    },
+    "r_anti_cycling": {
+      "rho": -0.334,
+      "p": 0.003,
+      "interpretation": "More r = less mode alternation"
+    },
+    "r_forward_chain": {
+      "r_to_a": "2.142x",
+      "note": "Strongest sequential dependency"
+    }
+  },
+  "tests": [
+    {
+      "id": "P-R1",
+      "title": "ar vs or suffix mode profiles",
+      "hypothesis": "return/reflux (Rücklauf)",
+      "prediction": "ar leans Mode A (specification), or leans Mode B (continuation)",
+      "pass_criterion": "ar %A > 40%, or %A < 20%, delta > 20pp",
+      "result": "NULL",
+      "evidence": "ar=27.4% Mode A, or=26.6% Mode A — nearly identical (+0.8pp)",
+      "interpretation": "ar and or have indistinguishable suffix mode profiles; mode is not driven by initial atom choice",
+      "script": "p_r01_ar_or_mode_profiles.py"
+    },
+    {
+      "id": "P-R2",
+      "title": "r-terminal enrichment after state transitions",
+      "hypothesis": "return/reflux (Rücklauf)",
+      "prediction": "r enriched at post-state-change positions, especially AXM→FL transitions",
+      "pass_criterion": "r post-change rate > 60%, enriched at AXM→FL",
+      "result": "CONFIRMED (but non-specific)",
+      "evidence": "r post-change rate = 72.6% (4th highest, RESPONDER class from C1386). Not AXM→FL specific.",
+      "interpretation": "Confirms r as RESPONDER but does not distinguish return from respond — all RESPONDER atoms show this",
+      "script": "p_r02_post_state_transitions.py"
+    },
+    {
+      "id": "P-R3",
+      "title": "r-terminal paragraph position gradient",
+      "hypothesis": "return/reflux (Rücklauf)",
+      "prediction": "Q0 depleted, Q2-Q3 enriched, possibly Q4 declining",
+      "pass_criterion": "Q2+Q3 enrichment > 1.2x vs Q0, gradient statistically significant",
+      "result": "NULL",
+      "evidence": "r-terminal paragraph shape is FLAT (Q0-Q4 all within 0.97-1.03x enrichment). No gradient.",
+      "interpretation": "r does not have a paragraph-positional gradient; it appears uniformly throughout paragraph bodies",
+      "script": "p_r03_paragraph_position.py"
+    },
+    {
+      "id": "P-R4",
+      "title": "r-terminal FLOW category co-occurrence",
+      "hypothesis": "flow/run (rinnen)",
+      "prediction": "FLOW lift > 1.3x, THERMAL lift < 1.0x on lines with r-terminal",
+      "pass_criterion": "FLOW co-occurrence lift > 1.3x",
+      "result": "WRONG_DIRECTION",
+      "evidence": "All category lifts near 1.0x (range 0.95-1.05). No preferential FLOW co-occurrence. r does not attract FLOW-category neighbors.",
+      "interpretation": "r is category-neutral at line level; it does not preferentially co-occur with any specific operational category",
+      "script": "p_r04_flow_cooccurrence.py"
+    },
+    {
+      "id": "P-R5",
+      "title": "k→r vs e→r bigram chaining",
+      "hypothesis": "flow/run (rinnen) vs return/reflux (Rücklauf)",
+      "prediction": "If flow: k→r enriched; if return: e→r enriched",
+      "pass_criterion": "k/e enrichment ratio > 1.3x in either direction",
+      "result": "PARTIALLY_CONFIRMED",
+      "evidence": "r→a forward chain at 2.142x (strongest); n→r backward chain at 1.234x; r→r self-chain at 1.865x. Neither k→r nor e→r specifically enriched — instead r chains with iteration-axis atoms (a, n, r).",
+      "interpretation": "r participates in iteration-axis sequential dependencies, not kernel-specific chains. Supports 'respond' over either 'flow' or 'return'.",
+      "script": "p_r05_bigram_chaining.py"
+    },
+    {
+      "id": "P-R6",
+      "title": "FL_HAZ macro-state deep dive",
+      "hypothesis": "flow/run (rinnen)",
+      "prediction": "r enriched at FL_HAZ, depleted at AXM",
+      "pass_criterion": "FL_HAZ enrichment > 2.0x, AXM < 0.8x",
+      "result": "CONFIRMED (extreme)",
+      "evidence": "r at FL_HAZ: 45.34% of terminal atoms (4.910x enrichment, chi-sq=1473.71, p≈0). ALL 248 FL_HAZ r-terminal tokens are 'ar' — zero 'or'. Only r(45.3%), l(34.0%), n(20.7%) appear at FL_HAZ. Responder-exclusive.",
+      "interpretation": "ar monopolizes FL_HAZ. This is the strongest single signal for r, but it's ar specifically (not or), revealing the a/o initial confound.",
+      "script": "p_r06_flhaz_deep_dive.py"
+    },
+    {
+      "id": "P-R7",
+      "title": "ar vs or mode by macro-state",
+      "hypothesis": "ripen/mature (reifen)",
+      "prediction": "ar Mode A > 55%, or Mode B > 60%",
+      "pass_criterion": "ar-or mode delta > 10pp per state",
+      "result": "NULL",
+      "evidence": "ar=27.4% Mode A, or=26.6% Mode A (identical). Per-state mode profiles also identical. BUT: ar and or have COMPLETELY DIFFERENT macro-state distributions (ar: 41.8% FL_HAZ; or: 0% FL_HAZ, 70.5% FQ).",
+      "interpretation": "Mode is not the differentiator — macro-state is. ar and or occupy completely different operational niches despite identical mode signatures.",
+      "script": "p_r07_ar_or_mode_by_state.py"
+    },
+    {
+      "id": "P-R8",
+      "title": "ar vs or line position",
+      "hypothesis": "ripen/mature (reifen)",
+      "prediction": "ar mean position > 0.65, or 0.45-0.60, delta > 0.10",
+      "pass_criterion": "ar > 0.65, ar-or delta > 0.10",
+      "result": "NULL",
+      "evidence": "ar mean position: 0.4892, or mean position: 0.4918. Delta: -0.0026. Both perfectly medial.",
+      "interpretation": "ar and or have identical line positions. Line position does not differentiate r-terminal forms.",
+      "script": "p_r08_line_position.py"
+    },
+    {
+      "id": "P-R9",
+      "title": "Kernel profile on ar-lines vs or-lines",
+      "hypothesis": "ripen/mature (reifen)",
+      "prediction": "k-kernel higher on ar-lines, h-kernel higher on or-lines",
+      "pass_criterion": "k delta > +5pp, h delta > +5pp in predicted directions",
+      "result": "NULL",
+      "evidence": "k-kernel on ar-lines: 6.12%, or-lines: 5.64% (delta +0.48pp). h-kernel on ar-lines: 6.58%, or-lines: 5.91% (delta +0.67pp). All deltas < 1pp — negligible.",
+      "interpretation": "Kernel composition of lines is not affected by ar vs or presence. The local kernel environment is identical.",
+      "script": "p_r09_kernel_profile.py"
+    },
+    {
+      "id": "P-R10",
+      "title": "r-density vs suffix-mode cycling rate",
+      "hypothesis": "repeat (repetieren)",
+      "prediction": "rho > +0.15, p < 0.01 (more r = more cycling)",
+      "pass_criterion": "Spearman rho > +0.15, p < 0.01",
+      "result": "INVERTED",
+      "evidence": "rho = -0.334, p = 0.003. More r-terminal tokens in a paragraph = LESS mode alternation, not more. r is the strongest anti-cycling terminal atom.",
+      "interpretation": "r actively suppresses cycling. This is the opposite of 'repeat' and instead supports 'respond' — r locks the system into sustained response rather than oscillation.",
+      "script": "p_r10_cycling_correlation.py"
+    }
+  ],
+  "summary": {
+    "confirmed": ["P-R2 (non-specific)", "P-R6 (extreme)"],
+    "partially_confirmed": ["P-R5"],
+    "null": ["P-R1", "P-R3", "P-R7", "P-R8", "P-R9"],
+    "inverted": ["P-R10"],
+    "wrong_direction": ["P-R4"],
+    "new_constraint": "C1387",
+    "updated_constraints": ["C1195"]
+  }
+}

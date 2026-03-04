@@ -1,0 +1,69 @@
+{
+  "test_a_macro_positions": {
+    "ch": {
+      "LAST": 717,
+      "MIDDLE": 208
+    },
+    "dy": {
+      "LAST": 1947,
+      "MIDDLE": 16,
+      "FIRST": 29
+    },
+    "in": {
+      "LAST": 428,
+      "FIRST": 2,
+      "MIDDLE": 4
+    },
+    "ph": {
+      "LAST": 47,
+      "MIDDLE": 22
+    },
+    "ct": {
+      "MIDDLE": 44,
+      "LAST": 70,
+      "FIRST": 66
+    },
+    "iin": {
+      "LAST": 866,
+      "MIDDLE": 4,
+      "FIRST": 1
+    },
+    "ck": {
+      "FIRST": 160,
+      "MIDDLE": 63,
+      "LAST": 121
+    },
+    "kee": {
+      "FIRST": 94,
+      "MIDDLE": 13,
+      "LAST": 5
+    },
+    "ke": {
+      "MIDDLE": 21,
+      "FIRST": 99,
+      "LAST": 61
+    },
+    "am": {
+      "FIRST": 5,
+      "MIDDLE": 3,
+      "LAST": 3
+    },
+    "iiin": {
+      "LAST": 2,
+      "MIDDLE": 1
+    },
+    "keee": {
+      "FIRST": 3,
+      "MIDDLE": 1
+    },
+    "an": {
+      "LAST": 1
+    }
+  },
+  "test_b_follows_rules_pct": 93.6,
+  "test_b_violates_pct": 6.4,
+  "test_b_individual_violation_pct": 25.8,
+  "test_d_individual_acc": 28.8,
+  "test_d_macro_acc": 28.8,
+  "test_e_collapse_pct": 61.7
+}

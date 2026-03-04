@@ -82,7 +82,7 @@ See [FIT_METHODOLOGY.md](../SYSTEM/FIT_METHODOLOGY.md) for the complete standard
 
 | ID | Fit | Tier | Result | Supports |
 |----|-----|------|--------|----------|
-| F-B-001 | LINK Operator as Sustained Monitoring Interval | F2 | SUCCESS | C366, C609, C190 |
+| F-B-001 | LINK Operator as Sustained Monitoring Interval | F2 | SUPERSEDED | C366, C609, C190 (superseded by C1174) |
 | F-B-002 | QO Lane as Safe Energy Pathway | F3 | SUCCESS | C601, C574, C600 |
 | F-B-003 | Pre-Operational Configuration via A->AZC->B Pipeline | F2 | SUCCESS | C473, C506, C468 |
 | F-B-004 | Lane Hysteresis Control Model | F2 | SUCCESS | C643, C549, C577, C608 |

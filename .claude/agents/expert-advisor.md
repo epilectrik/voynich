@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1218 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1238 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1312.
+the highest ID present is C1394.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1218 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1238 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1218 validated constraints are present as canonical one-line claims with tier
+1238 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-02-27 18:25
-**Version:** FROZEN STATE (1218 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-04 08:35
+**Version:** FROZEN STATE (1238 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1467,7 +1467,7 @@ C1191	**Position-Dependent Behavioral Composition**	2	B, morphology, positional 
 C1192	**SUFFIX Additive Composition**	2	B, SUFFIX, composition
 C1193	**PREFIX Compositional Duality** (PREFIX compounds split into compositional class (ke/te/ka/po/pch, predictable from atom profiles) and emergent class (ch/sh/da/ot/ok/ol, opaque); maps to EXTENDED/CORE prefix classification; discrete role clustering k=2: {a,d,o,q} vs {c,e,f,h,k,l,p,r,s,t,y})	2	B, PREFIX, composition
 C1194	**Position-Specific Pair Discrimination** (near-identical atom pairs separate under position-specific profiles: k-t 0.993->0.568, d-o 0.945->0.296, p-t 0.935->0.467, l-r 0.919->0.806; global identity was masking PREFIX distinctions; no true atom redundancy)	2	B, atoms, discrimination
-C1195	**Atom Gloss Confidence Tiers** (18 atoms in 4 tiers: 8 LOCKED (k,e,h,y,i,n,a,m), 2 SOLID (d,t), 6 PLAUSIBLE (c,p,f,s,g,x), 3 WEAK (o,l,r); validated against 91 glossed compounds; 5 dictionary discrepancies fixed to match GLOSSING.md)	2	B, atoms, glossing
+C1195	**Atom Gloss Confidence Tiers** (18 atoms in 4 tiers: 8 LOCKED (k,e,h,y,i,n,a,m), 6 SOLID (d,t,l,o,c,p), 5 PLAUSIBLE (f,s,g,x,r), 0 WEAK; validated against 91 glossed compounds; upgraded by Phases 496-500)	2	B, atoms, glossing
 C1196	**Autogloss Composition Coverage** (1144/1273 compound MIDDLEs auto-glossed from atom decomposition; confidence: 72 LOCKED, 86 SOLID, 289 PLAUSIBLE, 768 WEAK; 58 incomplete (q); 67.1% WEAK driven by 3 generic atoms o/l/r)	2	B, compounds, glossing
 C1197	**Atom Extensibility Partition** (only e and i repeat consecutively at structural levels (1555/1554 tokens); 18 other atoms are binary (present once or absent); extends C901 from A to B; 129 ratio families exist)	2	B, atoms, extensibility
 C1198	**MIDDLE Order Irrelevance**	2	B, composition, order
@@ -1649,6 +1649,24 @@ C1373	**PREFIX Category-Position Decomposition**	2	B, PREFIX, line, category, po
 C1374	**Within-PREFIX MIDDLE Positional Selection**	2	B, PREFIX, MIDDLE, line, positional, category, sister pair
 C1375	**Hebrew Cipher Cross-Validation** (Gatta Hebrew cipher decode INCREASES entropy +0.218 bits DECREASES MI -0.755 bits opposite of decipherment; 0/8 categories show Hebrew coherence ratio=0.991; 1/35 PREFIXes match Hebrew morpheme; T2 class clustering z=-15.5 is morphological confound; 3/7 control program 1/7 cipher 3/7 ambiguous = STRONG FALSIFICATION at grammar layer)	2	B, cross-validation, external, cipher, Hebrew, information theory
 C1376	**Character-Level RTL Signal Is Grammar-Internal**	2	B, directionality, character-level, slot syntax, external, grammar
+C1377	**Puff-Voynich Structural Revisit (NULL)**	2	B, Puff, material type, category, apparatus, NULL, ceiling
+C1378	**Paragraph-Level Material Differentiation (NULL)**	2	B, paragraph, material, dark-pipeline, MIDDLE, NULL, header, ceiling
+C1379	**Two-Level Parallel Composition with Priority Ordering**	2	B, MIDDLE, composition, macro-atom, parallel, priority, channel, suffix-mode, C1190, C1210, C1229
+C1380	**Apparatus Profile Partially Explains AXM Residual**	2	B, AXM, residual, apparatus, design-freedom, Mantel, C1169, C1248
+C1381	**o-Initial MIDDLE Enrichment in AZC**	2	CROSS, AZC, MIDDLE, atom, o-initial, apparatus, C496, C1269, C1273, C1274
+C1382	**k/a Atom-Initial Suffix Mode Polarization**	2	B, MIDDLE, atom, suffix-mode, k-initial, a-initial, C1229, C1309, C908, C1381
+C1383	**n-Terminal MIDDLE Boundary Avoidance**	2	B, MIDDLE, atom, n-terminal, boundary, position, mode, C1208, C1209, C1210, C1382
+C1384	**k-Initial MIDDLE Fraction Predicts AXM Self-Transition**	2	B, MIDDLE, atom, k-initial, AXM, dwell, folio, C1382, C1289, C1309, C1208
+C1385	**l-Terminal State/Condition Marker**	2	B, MIDDLE, atom, l-terminal, state, gloss, C1195, C1207, C1209, C1250, C1386
+C1386	**ACTOR/RESPONDER Terminal-Atom Timing Split**	2	B, MIDDLE, atom, timing, macro-state, transition, C1200, C1209, C1208, C976
+C1387	**r-Terminal Hazard-Response Partitioning**	2	B, MIDDLE, atom, r-terminal, FL_HAZ, macro-state, hazard, respond, C1195, C1207, C1208, C1386, C976
+C1388	**o-Atom Arrangement Domain Marker** #1 kernel interleaver (52.1%); C874 convergence — ol=LINK from structural analysis independently confirmed by o(arrange)+l(state) = 100% STAGING 7.68x; 100% compound determinism ol=STAGING ok=CONTAINMENT or=FLOW ot=MONITORING; temporal ordering falsified (48.6% chance) — domain marker not sequential verb; 23-test battery 8/23 confirmed; upgrades o from WEAK to SOLID; German: ordnen)	2	B, MIDDLE, atom, o-initial, o-terminal, arrange, ordnen, STAGING, OPERATION, anti-AXM, interleaving, domain-marker, C874, C1195, C1207, C1381, C1384, C1386, C1190, C1305
+C1389	c-atom main-loop modifier profile	2	B
+C1390	p-atom marking pause profile	2	B
+C1391	s-atom staging sequence profile	2	B
+C1392	f-atom marking flag profile	2	B
+C1393	compound MIDDLE composition grammar	2	B, grammar, composition
+C1394	instruction encoding architecture	2	B, grammar, composition
 
 ---
 
@@ -1656,7 +1674,7 @@ C1376	**Character-Level RTL Signal Is Grammar-Internal**	2	B, directionality, ch
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-02-27
+# Generated: 2026-03-04
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
@@ -1669,7 +1687,7 @@ F-A-005	Scarcity-Weighted Registry Effort	F1	A	NULL	C293	in: fits_currier_a
 F-A-007	Forbidden-Zone Attraction	F1	A	NULL	C281	in: fits_currier_a
 F-A-008	Repetition as Relational Stabilizer	F1	A	INVALIDATED	(none - artifact)	in: fits_currier_a
 F-A-009	Comparability Window	F2	A	SUCCESS	C424	in: fits_currier_a
-F-B-001	LINK Operator as Sustained Monitoring Interval	F2	B	SUCCESS	C366, C609, C190	in: fits_currier_b
+F-B-001	LINK Operator as Sustained Monitoring Interval	F2	B	SUPERSEDED	C366, C609, C190 | **Superseded by:** C1174	in: fits_currier_b
 F-B-002	QO Lane as Safe Energy Pathway	F3	B	SUCCESS	C601, C574, C600	in: fits_currier_b
 F-B-003	Pre-Operational Configuration via A→AZC→B Pipeline	F2	B	SUCCESS	C473, C506, C468	in: fits_currier_b
 F-B-004	Lane Hysteresis Control Model	F2	B	SUCCESS	C643, C549, C577, C608	in: fits_currier_b

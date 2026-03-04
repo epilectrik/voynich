@@ -1,0 +1,1513 @@
+====================================================================================================
+FOLIO f103r: COMPOSITIONAL READING
+====================================================================================================
+Section: S (Stars/Recipes) | REGIME_1 | Archetype 6 (HAZARD_TOLERANT)
+Kernel Balance: ESCAPE_DOMINANT (k=33% h=7% e=60%)
+Category Profile: {'FLOW': 86, 'CONTAINMENT': 25, 'MARKING': 33, 'TRANSITION': 77, 'OPERATION': 80, 'STAGING': 52, 'THERMAL': 157, 'MONITORING': 11}
+Token count: 522 | Paragraphs: 18 | Lines: 54
+QO-lane: 30.8% | ch-sister: 41.6%
+
+BRUNSCHWIG CONTEXT:
+  REGIME_1 = First-degree fire (balneum mariae / gentle water-bath heating)
+  Section S = Recipe/procedure reference (Stars section)
+  ESCAPE_DOMINANT kernel = e-heavy (cooling/stabilization emphasis)
+  Archetype 6 = HAZARD_TOLERANT (forgiving program, fewer critical failures)
+
+----------------------------------------------------------------------------------------------------
+
+====================================================================================================
+PARAGRAPH 1 of 18
+  Lines: 4 | Kernel: ESCAPE_DOMINANT | Top categories: ['FLOW', 'OPERATION', 'MARKING']
+  Mode sequence: BBB | Termination: none
+  Gallows: p-gallows (stable mode)
+====================================================================================================
+
+  --- Line 1 (13 tokens) ---
+    pchedal              | PFX:pch    | MID:ed         | SFX:al     | CAT:FLOW           | atoms: e=cool/settle d=mark/seal
+                           pfx: PREP: process material         | mid: discharge       | sfx: TRANSFER-CONT (transfer) [LINE-INIT,PAR-INIT]
+    shdy                 | PFX:sh     | MID:dy         | SFX:-      | CAT:CONTAINMENT    | atoms: d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: seal            | sfx: NONE
+    yteechypchy          | PFX:te     | MID:echypc     | SFX:hy     | CAT:MARKING        | atoms: e=cool/settle c=adjust/loop h=watch/monitor y=end/close p=pause/mark c=adjust/loop
+                           pfx: PROCESS: gather/collect        | mid: cool/settle+adjust/loop+watch/monitor+end/close+pause/mark+adjust/loop | sfx: VERIFY-END (confirm.)
+    otey                 | PFX:ot     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: set             | sfx: NONE
+    ylshey               | PFX:lsh    | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: LINK: verify connection        | mid: set             | sfx: NONE
+    qoteey               | PFX:qo     | MID:t          | SFX:eey    | CAT:FLOW           | atoms: t=transfer/drive
+                           pfx: HEAT-SRC: fire/furnace management | mid: transfer        | sfx: EXTENDED-END (deep.)
+    qotal                | PFX:qo     | MID:t          | SFX:al     | CAT:FLOW           | atoms: t=transfer/drive
+                           pfx: HEAT-SRC: fire/furnace management | mid: transfer        | sfx: TRANSFER-CONT (transfer)
+    shedy                | PFX:sh     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: batch           | sfx: NONE
+    yshdal               | PFX:sh     | MID:d          | SFX:al     | CAT:MARKING        | atoms: d=mark/seal
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: mark            | sfx: TRANSFER-CONT (transfer)
+    dain                 | PFX:da     | MID:in         | SFX:-      | CAT:MARKING        | atoms: i=iterate/cycle n=halt/bind
+                           pfx: SETUP: initialize/configure apparatus | mid: link            | sfx: NONE
+    okol                 | PFX:ok     | MID:ol         | SFX:-      | CAT:STAGING        | atoms: o=arrange/work l=frame/state
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: continue        | sfx: NONE
+    dal                  | PFX:da     | MID:l          | SFX:-      | CAT:STAGING        | atoms: l=frame/state
+                           pfx: SETUP: initialize/configure apparatus | mid: frame           | sfx: NONE
+    dy                   | PFX:-      | MID:dy         | SFX:-      | CAT:CONTAINMENT    | atoms: d=mark/seal y=end/close
+                           pfx: BARE                           | mid: seal            | sfx: NONE [LINE-FINAL]
+
+    >> READING: [PREP] discharge [transfer] | [MONITOR] seal | [PROCESS] cool/settle+adjust/loop+watch/monitor+end/close+pause/mark+adjust/loop [confirm.] | [VERIFY-OPS] set | [LINK] set | [HEAT-SRC] transfer [deep.] | [HEAT-SRC] transfer [transfer] | [MONITOR] batch | [MONITOR] mark [transfer] | [SETUP] link | [VESSEL-TEMP] continue | [SETUP] frame | seal
+
+  --- Line 10 (13 tokens) ---
+    daiin                | PFX:da     | MID:iin        | SFX:-      | CAT:STAGING        | atoms: i=iterate/cycle i=iterate/cycle n=halt/bind
+                           pfx: SETUP: initialize/configure apparatus | mid: iterate         | sfx: NONE [LINE-INIT]
+    ol                   | PFX:-      | MID:ol         | SFX:-      | CAT:STAGING        | atoms: o=arrange/work l=frame/state
+                           pfx: BARE                           | mid: continue        | sfx: NONE
+    oain                 | PFX:-      | MID:o          | SFX:ain    | CAT:OPERATION      | atoms: o=arrange/work
+                           pfx: BARE                           | mid: work            | sfx: CHECK (intake)
+    okeol                | PFX:ok     | MID:eol        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle o=arrange/work l=frame/state
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: sustain         | sfx: NONE
+    chal                 | PFX:ch     | MID:al         | SFX:-      | CAT:FLOW           | atoms: a=yield/open l=frame/state
+                           pfx: TEST: active test/check fire (ch-lane) | mid: gather          | sfx: NONE
+    okam                 | PFX:ok     | MID:am         | SFX:-      | CAT:TRANSITION     | atoms: a=yield/open m=finalize
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: finalize        | sfx: NONE
+    chety                | PFX:ch     | MID:et         | SFX:y      | CAT:STAGING        | atoms: e=cool/settle t=transfer/drive
+                           pfx: TEST: active test/check fire (ch-lane) | mid: path            | sfx: END (.)
+    shedy                | PFX:sh     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: batch           | sfx: NONE
+    otaiin               | PFX:ot     | MID:aiin       | SFX:-      | CAT:TRANSITION     | atoms: a=yield/open i=iterate/cycle i=iterate/cycle n=halt/bind
+                           pfx: VERIFY-OPS: fine operational check | mid: settle          | sfx: NONE
+    shedy                | PFX:sh     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: batch           | sfx: NONE
+    teolshy              | PFX:te     | MID:ols        | SFX:hy     | CAT:STAGING        | atoms: o=arrange/work l=frame/state s=sequence/stage
+                           pfx: PROCESS: gather/collect        | mid: arrange/work+frame/state+sequence/stage | sfx: VERIFY-END (confirm.)
+    oteedy               | PFX:ot     | MID:e          | SFX:edy    | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: VERIFY-OPS: fine operational check | mid: cool            | sfx: THOROUGH-END (batch close.)
+    sarain               | PFX:sa     | MID:r          | SFX:ain    | CAT:FLOW           | atoms: r=input/respond
+                           pfx: SCAFFOLD: structural arrangement | mid: input           | sfx: CHECK (intake) [LINE-FINAL]
+
+    >> READING: [SETUP] iterate | continue | work [intake] | [VESSEL-TEMP] sustain | [TEST] gather | [VESSEL-TEMP] finalize | [TEST] path [.] | [MONITOR] batch | [VERIFY-OPS] settle | [MONITOR] batch | [PROCESS] arrange/work+frame/state+sequence/stage [confirm.] | [VERIFY-OPS] cool [batch close.] | [SCAFFOLD] input [intake]
+
+  --- Line 11 (13 tokens) ---
+    dar                  | PFX:da     | MID:r          | SFX:-      | CAT:FLOW           | atoms: r=input/respond
+                           pfx: SETUP: initialize/configure apparatus | mid: input           | sfx: NONE [LINE-INIT]
+    oteey                | PFX:ot     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: deep            | sfx: NONE
+    otain                | PFX:ot     | MID:ain        | SFX:-      | CAT:FLOW           | atoms: a=yield/open i=iterate/cycle n=halt/bind
+                           pfx: VERIFY-OPS: fine operational check | mid: intake          | sfx: NONE
+    lol                  | PFX:-      | MID:l          | SFX:ol     | CAT:STAGING        | atoms: l=frame/state
+                           pfx: BARE                           | mid: frame           | sfx: HOLD-CONT (hold)
+    shedy                | PFX:sh     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: batch           | sfx: NONE
+    okain                | PFX:ok     | MID:ain        | SFX:-      | CAT:FLOW           | atoms: a=yield/open i=iterate/cycle n=halt/bind
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: intake          | sfx: NONE
+    chey                 | PFX:ch     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: set             | sfx: NONE
+    qorain               | PFX:qo     | MID:r          | SFX:ain    | CAT:FLOW           | atoms: r=input/respond
+                           pfx: HEAT-SRC: fire/furnace management | mid: input           | sfx: CHECK (intake)
+    shey                 | PFX:sh     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: set             | sfx: NONE
+    otoy                 | PFX:ot     | MID:o          | SFX:y      | CAT:OPERATION      | atoms: o=arrange/work
+                           pfx: VERIFY-OPS: fine operational check | mid: work            | sfx: END (.)
+    qokeol               | PFX:qo     | MID:k          | SFX:eol    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: (eol)
+    key                  | PFX:ke     | MID:y          | SFX:-      | CAT:TRANSITION     | atoms: y=end/close
+                           pfx: HEAT-BURST: short heat application | mid: end             | sfx: NONE
+    daikhyky             | PFX:da     | MID:ikhyk      | SFX:y      | CAT:THERMAL        | atoms: i=iterate/cycle k=heat/apply-energy h=watch/monitor y=end/close k=heat/apply-energy
+                           pfx: SETUP: initialize/configure apparatus | mid: iterate/cycle+heat/apply-energy+watch/monitor+end/close+heat/apply-energy | sfx: END (.) [LINE-FINAL]
+
+    >> READING: [SETUP] input | [VERIFY-OPS] deep | [VERIFY-OPS] intake | frame [hold] | [MONITOR] batch | [VESSEL-TEMP] intake | [TEST] set | [HEAT-SRC] input [intake] | [MONITOR] set | [VERIFY-OPS] work [.] | [HEAT-SRC] heat | [HEAT-BURST] end | [SETUP] iterate/cycle+heat/apply-energy+watch/monitor+end/close+heat/apply-energy [.]
+
+  --- Line 12 (9 tokens) ---
+    oain                 | PFX:-      | MID:o          | SFX:ain    | CAT:OPERATION      | atoms: o=arrange/work
+                           pfx: BARE                           | mid: work            | sfx: CHECK (intake) [LINE-INIT]
+    shey                 | PFX:sh     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: set             | sfx: NONE
+    shckhy               | PFX:sh     | MID:ck         | SFX:hy     | CAT:OPERATION      | atoms: c=adjust/loop k=heat/apply-energy
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: hard            | sfx: VERIFY-END (confirm.)
+    oteey                | PFX:ot     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: deep            | sfx: NONE
+    qokeol               | PFX:qo     | MID:k          | SFX:eol    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: (eol)
+    keedy                | PFX:ke     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: HEAT-BURST: short heat application | mid: batch           | sfx: NONE
+    shar                 | PFX:sh     | MID:ar         | SFX:-      | CAT:FLOW           | atoms: a=yield/open r=input/respond
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: release         | sfx: NONE
+    aiin                 | PFX:-      | MID:aiin       | SFX:-      | CAT:TRANSITION     | atoms: a=yield/open i=iterate/cycle i=iterate/cycle n=halt/bind
+                           pfx: BARE                           | mid: settle          | sfx: NONE
+    otedy                | PFX:ot     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: batch           | sfx: NONE [LINE-FINAL]
+
+    >> READING: work [intake] | [MONITOR] set | [MONITOR] hard [confirm.] | [VERIFY-OPS] deep | [HEAT-SRC] heat | [HEAT-BURST] batch | [MONITOR] release | settle | [VERIFY-OPS] batch
+
+  PARAGRAPH SUMMARY:
+    Kernel profile: k=5(19%) h=2(7%) e=20(74%)
+    Category breakdown: {'FLOW': 10, 'CONTAINMENT': 2, 'MARKING': 3, 'TRANSITION': 9, 'OPERATION': 10, 'STAGING': 7, 'THERMAL': 7}
+    INTERPRETATION: cooling/settling emphasis | focus on material flow control, active processing, labeling/identification
+
+====================================================================================================
+PARAGRAPH 2 of 18
+  Lines: 3 | Kernel: ESCAPE_DOMINANT | Top categories: ['OPERATION', 'FLOW', 'THERMAL']
+  Mode sequence: BAABBBBB | Termination: none
+  Gallows: p-gallows (stable mode)
+====================================================================================================
+
+  --- Line 13 (12 tokens) ---
+    podar                | PFX:po     | MID:d          | SFX:ar     | CAT:MARKING        | atoms: d=mark/seal
+                           pfx: PRE-WORK: preliminary operation | mid: mark            | sfx: CLOSE-CONT (release,) [LINE-INIT,PAR-INIT]
+    sheor                | PFX:sh     | MID:e          | SFX:or     | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: cool            | sfx: PORTION-CONT (divide,)
+    qotedy               | PFX:qo     | MID:t          | SFX:edy    | CAT:FLOW           | atoms: t=transfer/drive
+                           pfx: HEAT-SRC: fire/furnace management | mid: transfer        | sfx: THOROUGH-END (batch close.)
+    okeey                | PFX:ok     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: deep            | sfx: NONE
+    qokar                | PFX:qo     | MID:k          | SFX:ar     | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: CLOSE-CONT (release,)
+    checkhy              | PFX:ch     | MID:eck        | SFX:hy     | CAT:CONTAINMENT    | atoms: e=cool/settle c=adjust/loop k=heat/apply-energy
+                           pfx: TEST: active test/check fire (ch-lane) | mid: rigid           | sfx: VERIFY-END (confirm.)
+    qokain               | PFX:qo     | MID:k          | SFX:ain    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: CHECK (intake)
+    chedy                | PFX:ch     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: batch           | sfx: NONE
+    pchdy                | PFX:pch    | MID:dy         | SFX:-      | CAT:CONTAINMENT    | atoms: d=mark/seal y=end/close
+                           pfx: PREP: process material         | mid: seal            | sfx: NONE
+    tshdy                | PFX:sh     | MID:dy         | SFX:-      | CAT:CONTAINMENT    | atoms: d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: seal            | sfx: NONE
+    dal                  | PFX:da     | MID:l          | SFX:-      | CAT:STAGING        | atoms: l=frame/state
+                           pfx: SETUP: initialize/configure apparatus | mid: frame           | sfx: NONE
+    kasol                | PFX:ka     | MID:s          | SFX:ol     | CAT:STAGING        | atoms: s=sequence/stage
+                           pfx: HEAT-YIELD: fire-open          | mid: sequence        | sfx: HOLD-CONT (hold) [LINE-FINAL]
+
+    >> READING: [PRE-WORK] mark [release,] | [MONITOR] cool [divide,] | [HEAT-SRC] transfer [batch close.] | [VESSEL-TEMP] deep | [HEAT-SRC] heat [release,] | [TEST] rigid [confirm.] | [HEAT-SRC] heat [intake] | [TEST] batch | [PREP] seal | [MONITOR] seal | [SETUP] frame | [HEAT-YIELD] sequence [hold]
+
+  --- Line 14 (13 tokens) ---
+    okain                | PFX:ok     | MID:ain        | SFX:-      | CAT:FLOW           | atoms: a=yield/open i=iterate/cycle n=halt/bind
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: intake          | sfx: NONE [LINE-INIT]
+    shekain              | PFX:sh     | MID:ek         | SFX:ain    | CAT:OPERATION      | atoms: e=cool/settle k=heat/apply-energy
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: exact           | sfx: CHECK (intake)
+    chedy                | PFX:ch     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: batch           | sfx: NONE
+    qokeechy             | PFX:qo     | MID:keec       | SFX:hy     | CAT:THERMAL        | atoms: k=heat/apply-energy e=cool/settle e=cool/settle c=adjust/loop
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat/apply-energy+cool/settle+cool/settle+adjust/loop | sfx: VERIFY-END (confirm.)
+    qoky                 | PFX:qo     | MID:k          | SFX:y      | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: END (.)
+    shey                 | PFX:sh     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: set             | sfx: NONE
+    lol                  | PFX:-      | MID:l          | SFX:ol     | CAT:STAGING        | atoms: l=frame/state
+                           pfx: BARE                           | mid: frame           | sfx: HOLD-CONT (hold)
+    s                    | PFX:-      | MID:s          | SFX:-      | CAT:STAGING        | atoms: s=sequence/stage
+                           pfx: BARE                           | mid: sequence        | sfx: NONE
+    aiin                 | PFX:-      | MID:aiin       | SFX:-      | CAT:TRANSITION     | atoms: a=yield/open i=iterate/cycle i=iterate/cycle n=halt/bind
+                           pfx: BARE                           | mid: settle          | sfx: NONE
+    chey                 | PFX:ch     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: set             | sfx: NONE
+    eekain               | PFX:-      | MID:eek        | SFX:ain    | CAT:CONTAINMENT    | atoms: e=cool/settle e=cool/settle k=heat/apply-energy
+                           pfx: BARE                           | mid: lock            | sfx: CHECK (intake)
+    chcthy               | PFX:ch     | MID:ct         | SFX:hy     | CAT:MONITORING     | atoms: c=adjust/loop t=transfer/drive
+                           pfx: TEST: active test/check fire (ch-lane) | mid: control         | sfx: VERIFY-END (confirm.)
+    qoky                 | PFX:qo     | MID:k          | SFX:y      | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: END (.) [LINE-FINAL]
+
+    >> READING: [VESSEL-TEMP] intake | [MONITOR] exact [intake] | [TEST] batch | [HEAT-SRC] heat/apply-energy+cool/settle+cool/settle+adjust/loop [confirm.] | [HEAT-SRC] heat [.] | [MONITOR] set | frame [hold] | sequence | settle | [TEST] set | lock [intake] | [TEST] control [confirm.] | [HEAT-SRC] heat [.]
+
+  --- Line 15 (5 tokens) ---
+    qotedy               | PFX:qo     | MID:t          | SFX:edy    | CAT:FLOW           | atoms: t=transfer/drive
+                           pfx: HEAT-SRC: fire/furnace management | mid: transfer        | sfx: THOROUGH-END (batch close.) [LINE-INIT]
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    shol                 | PFX:sh     | MID:ol         | SFX:-      | CAT:STAGING        | atoms: o=arrange/work l=frame/state
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: continue        | sfx: NONE
+    qotey                | PFX:qo     | MID:t          | SFX:ey     | CAT:FLOW           | atoms: t=transfer/drive
+                           pfx: HEAT-SRC: fire/furnace management | mid: transfer        | sfx: SELECTIVE-END (set.)
+    shkain               | PFX:sh     | MID:k          | SFX:ain    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: heat            | sfx: CHECK (intake) [LINE-FINAL]
+
+    >> READING: [HEAT-SRC] transfer [batch close.] | [HEAT-SRC] heat [deep.] | [MONITOR] continue | [HEAT-SRC] transfer [set.] | [MONITOR] heat [intake]
+
+  PARAGRAPH SUMMARY:
+    Kernel profile: k=10(43%) h=0(0%) e=13(57%)
+    Category breakdown: {'MARKING': 1, 'THERMAL': 9, 'FLOW': 4, 'CONTAINMENT': 4, 'OPERATION': 3, 'STAGING': 5, 'TRANSITION': 3, 'MONITORING': 1}
+    INTERPRETATION: cooling/settling emphasis | focus on active processing, material flow control, temperature management
+
+====================================================================================================
+PARAGRAPH 3 of 18
+  Lines: 2 | Kernel: ESCAPE_DOMINANT | Top categories: ['THERMAL', 'FLOW', 'TRANSITION']
+  Mode sequence: BAABB | Termination: none
+====================================================================================================
+
+  --- Line 16 (11 tokens) ---
+    dshol                | PFX:sh     | MID:ol         | SFX:-      | CAT:STAGING        | atoms: o=arrange/work l=frame/state
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: continue        | sfx: NONE [LINE-INIT,PAR-INIT]
+    sholkar              | PFX:sh     | MID:olk        | SFX:ar     | CAT:CONTAINMENT    | atoms: o=arrange/work l=frame/state k=heat/apply-energy
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: hold            | sfx: CLOSE-CONT (release,)
+    sedaiin              | PFX:se     | MID:d          | SFX:aiin   | CAT:MARKING        | atoms: d=mark/seal
+                           pfx: SCAFFOLD: stage-settle         | mid: mark            | sfx: GATE (bounded loop)
+    cheey                | PFX:ch     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: deep            | sfx: NONE
+    rar                  | PFX:-      | MID:r          | SFX:ar     | CAT:FLOW           | atoms: r=input/respond
+                           pfx: BARE                           | mid: input           | sfx: CLOSE-CONT (release,)
+    okeey                | PFX:ok     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: deep            | sfx: NONE
+    shefhedy             | PFX:sh     | MID:efh        | SFX:edy    | CAT:MARKING        | atoms: e=cool/settle f=flag/mark h=watch/monitor
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: cool/settle+flag/mark+watch/monitor | sfx: THOROUGH-END (batch close.)
+    opcheol              | PFX:-      | MID:opch       | SFX:eol    | CAT:OPERATION      | atoms: o=arrange/work p=pause/mark c=adjust/loop h=watch/monitor
+                           pfx: BARE                           | mid: operate         | sfx: (eol)
+    oteedy               | PFX:ot     | MID:e          | SFX:edy    | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: VERIFY-OPS: fine operational check | mid: cool            | sfx: THOROUGH-END (batch close.)
+    tchey                | PFX:tch    | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: PREP: process/treat material   | mid: set             | sfx: NONE
+    shky                 | PFX:sh     | MID:k          | SFX:y      | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: heat            | sfx: END (.) [LINE-FINAL]
+
+    >> READING: [MONITOR] continue | [MONITOR] hold [release,] | [SCAFFOLD] mark [bounded loop] | [TEST] deep | input [release,] | [VESSEL-TEMP] deep | [MONITOR] cool/settle+flag/mark+watch/monitor [batch close.] | operate | [VERIFY-OPS] cool [batch close.] | [PREP] set | [MONITOR] heat [.]
+
+  --- Line 17 (10 tokens) ---
+    sar                  | PFX:sa     | MID:r          | SFX:-      | CAT:FLOW           | atoms: r=input/respond
+                           pfx: SCAFFOLD: structural arrangement | mid: input           | sfx: NONE [LINE-INIT]
+    shey                 | PFX:sh     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: set             | sfx: NONE
+    qokey                | PFX:qo     | MID:k          | SFX:ey     | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: SELECTIVE-END (set.)
+    keedy                | PFX:ke     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: HEAT-BURST: short heat application | mid: batch           | sfx: NONE
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    chckhy               | PFX:ch     | MID:ck         | SFX:hy     | CAT:OPERATION      | atoms: c=adjust/loop k=heat/apply-energy
+                           pfx: TEST: active test/check fire (ch-lane) | mid: hard            | sfx: VERIFY-END (confirm.)
+    qokal                | PFX:qo     | MID:k          | SFX:al     | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: TRANSFER-CONT (transfer)
+    oty                  | PFX:ot     | MID:y          | SFX:-      | CAT:TRANSITION     | atoms: y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: end             | sfx: NONE
+    or                   | PFX:-      | MID:or         | SFX:-      | CAT:FLOW           | atoms: o=arrange/work r=input/respond
+                           pfx: BARE                           | mid: portion         | sfx: NONE
+    aiin                 | PFX:-      | MID:aiin       | SFX:-      | CAT:TRANSITION     | atoms: a=yield/open i=iterate/cycle i=iterate/cycle n=halt/bind
+                           pfx: BARE                           | mid: settle          | sfx: NONE [LINE-FINAL]
+
+    >> READING: [SCAFFOLD] input | [MONITOR] set | [HEAT-SRC] heat [set.] | [HEAT-BURST] batch | [HEAT-SRC] heat [deep.] | [TEST] hard [confirm.] | [HEAT-SRC] heat [transfer] | [VERIFY-OPS] end | portion | settle
+
+  PARAGRAPH SUMMARY:
+    Kernel profile: k=6(35%) h=2(12%) e=9(53%)
+    Category breakdown: {'STAGING': 1, 'CONTAINMENT': 1, 'MARKING': 2, 'THERMAL': 7, 'FLOW': 3, 'OPERATION': 3, 'TRANSITION': 4}
+    INTERPRETATION: cooling/settling emphasis | focus on temperature management, material flow control, state change operations
+
+====================================================================================================
+PARAGRAPH 4 of 18
+  Lines: 4 | Kernel: ESCAPE_DOMINANT | Top categories: ['THERMAL', 'FLOW', 'TRANSITION']
+  Mode sequence: ABB | Termination: none
+  Gallows: p-gallows (stable mode)
+====================================================================================================
+
+  --- Line 18 (10 tokens) ---
+    polchedy             | PFX:po     | MID:lch        | SFX:edy    | CAT:OPERATION      | atoms: l=frame/state c=adjust/loop h=watch/monitor
+                           pfx: PRE-WORK: preliminary operation | mid: strip           | sfx: THOROUGH-END (batch close.) [LINE-INIT,PAR-INIT]
+    qokeol               | PFX:qo     | MID:k          | SFX:eol    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: (eol)
+    okain                | PFX:ok     | MID:ain        | SFX:-      | CAT:FLOW           | atoms: a=yield/open i=iterate/cycle n=halt/bind
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: intake          | sfx: NONE
+    checthy              | PFX:ch     | MID:ect        | SFX:hy     | CAT:MONITORING     | atoms: e=cool/settle c=adjust/loop t=transfer/drive
+                           pfx: TEST: active test/check fire (ch-lane) | mid: regulate        | sfx: VERIFY-END (confirm.)
+    oteey                | PFX:ot     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: deep            | sfx: NONE
+    lshedy               | PFX:lsh    | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: LINK: verify connection        | mid: batch           | sfx: NONE
+    okain                | PFX:ok     | MID:ain        | SFX:-      | CAT:FLOW           | atoms: a=yield/open i=iterate/cycle n=halt/bind
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: intake          | sfx: NONE
+    qokain               | PFX:qo     | MID:k          | SFX:ain    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: CHECK (intake)
+    qokalshedy           | PFX:qo     | MID:kalsh      | SFX:edy    | CAT:STAGING        | atoms: k=heat/apply-energy a=yield/open l=frame/state s=sequence/stage h=watch/monitor
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat/apply-energy+yield/open+frame/state+sequence/stage+watch/monitor | sfx: THOROUGH-END (batch close.)
+    oteys                | PFX:ot     | MID:ey         | SFX:s      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: set             | sfx: NEXT (; step) [LINE-FINAL]
+
+    >> READING: [PRE-WORK] strip [batch close.] | [HEAT-SRC] heat | [VESSEL-TEMP] intake | [TEST] regulate [confirm.] | [VERIFY-OPS] deep | [LINK] batch | [VESSEL-TEMP] intake | [HEAT-SRC] heat [intake] | [HEAT-SRC] heat/apply-energy+yield/open+frame/state+sequence/stage+watch/monitor [batch close.] | [VERIFY-OPS] set [; step]
+
+  --- Line 19 (12 tokens) ---
+    okaiin               | PFX:ok     | MID:aiin       | SFX:-      | CAT:TRANSITION     | atoms: a=yield/open i=iterate/cycle i=iterate/cycle n=halt/bind
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: settle          | sfx: NONE [LINE-INIT]
+    chey                 | PFX:ch     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: set             | sfx: NONE
+    qoy                  | PFX:qo     | MID:y          | SFX:-      | CAT:TRANSITION     | atoms: y=end/close
+                           pfx: HEAT-SRC: fire/furnace management | mid: end             | sfx: NONE
+    shey                 | PFX:sh     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: set             | sfx: NONE
+    qokaiin              | PFX:qo     | MID:k          | SFX:aiin   | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: GATE (bounded loop)
+    chedy                | PFX:ch     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: batch           | sfx: NONE
+    qokain               | PFX:qo     | MID:k          | SFX:ain    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: CHECK (intake)
+    oteol                | PFX:ot     | MID:eol        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle o=arrange/work l=frame/state
+                           pfx: VERIFY-OPS: fine operational check | mid: sustain         | sfx: NONE
+    lkar                 | PFX:lk     | MID:ar         | SFX:-      | CAT:FLOW           | atoms: a=yield/open r=input/respond
+                           pfx: WATCH: observe state           | mid: release         | sfx: NONE
+    okaral               | PFX:ok     | MID:ar         | SFX:al     | CAT:FLOW           | atoms: a=yield/open r=input/respond
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: release         | sfx: TRANSFER-CONT (transfer)
+    lkldy                | PFX:lk     | MID:l          | SFX:dy     | CAT:STAGING        | atoms: l=frame/state
+                           pfx: WATCH: observe state           | mid: frame           | sfx: SEAL-END (close.)
+    lr                   | PFX:-      | MID:l          | SFX:r      | CAT:STAGING        | atoms: l=frame/state
+                           pfx: BARE                           | mid: frame           | sfx: CONTINUE (,) [LINE-FINAL]
+
+    >> READING: [VESSEL-TEMP] settle | [TEST] set | [HEAT-SRC] end | [MONITOR] set | [HEAT-SRC] heat [bounded loop] | [TEST] batch | [HEAT-SRC] heat [intake] | [VERIFY-OPS] sustain | [WATCH] release | [VESSEL-TEMP] release [transfer] | [WATCH] frame [close.] | frame [,]
+
+  --- Line 2 (14 tokens) ---
+    dain                 | PFX:da     | MID:in         | SFX:-      | CAT:MARKING        | atoms: i=iterate/cycle n=halt/bind
+                           pfx: SETUP: initialize/configure apparatus | mid: link            | sfx: NONE [LINE-INIT]
+    shek                 | PFX:sh     | MID:ek         | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle k=heat/apply-energy
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: exact           | sfx: NONE
+    chcphhdy             | PFX:ch     | MID:cphh       | SFX:dy     | CAT:MARKING        | atoms: c=adjust/loop p=pause/mark h=watch/monitor h=watch/monitor
+                           pfx: TEST: active test/check fire (ch-lane) | mid: adjust/loop+pause/mark+watch/monitor+watch/monitor | sfx: SEAL-END (close.)
+    daloky               | PFX:da     | MID:lok        | SFX:y      | CAT:OPERATION      | atoms: l=frame/state o=arrange/work k=heat/apply-energy
+                           pfx: SETUP: initialize/configure apparatus | mid: frame/state+arrange/work+heat/apply-energy | sfx: END (.)
+    opchedy              | PFX:-      | MID:opch       | SFX:edy    | CAT:OPERATION      | atoms: o=arrange/work p=pause/mark c=adjust/loop h=watch/monitor
+                           pfx: BARE                           | mid: operate         | sfx: THOROUGH-END (batch close.)
+    peshol               | PFX:pe     | MID:ol         | SFX:-      | CAT:STAGING        | atoms: o=arrange/work l=frame/state
+                           pfx: START: begin-settle            | mid: continue        | sfx: NONE
+    chep                 | PFX:ch     | MID:ep         | SFX:-      | CAT:MARKING        | atoms: e=cool/settle p=pause/mark
+                           pfx: TEST: active test/check fire (ch-lane) | mid: cool/settle+pause/mark | sfx: NONE
+    ar                   | PFX:-      | MID:ar         | SFX:-      | CAT:FLOW           | atoms: a=yield/open r=input/respond
+                           pfx: BARE                           | mid: release         | sfx: NONE
+    otchy                | PFX:ot     | MID:y          | SFX:-      | CAT:TRANSITION     | atoms: y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: end             | sfx: NONE
+    sal                  | PFX:sa     | MID:l          | SFX:-      | CAT:STAGING        | atoms: l=frame/state
+                           pfx: SCAFFOLD: structural arrangement | mid: frame           | sfx: NONE
+    lkeey                | PFX:lk     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: WATCH: observe state           | mid: deep            | sfx: NONE
+    sar                  | PFX:sa     | MID:r          | SFX:-      | CAT:FLOW           | atoms: r=input/respond
+                           pfx: SCAFFOLD: structural arrangement | mid: input           | sfx: NONE
+    ain                  | PFX:-      | MID:ain        | SFX:-      | CAT:FLOW           | atoms: a=yield/open i=iterate/cycle n=halt/bind
+                           pfx: BARE                           | mid: intake          | sfx: NONE
+    chedy                | PFX:ch     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: batch           | sfx: NONE [LINE-FINAL]
+
+    >> READING: [SETUP] link | [MONITOR] exact | [TEST] adjust/loop+pause/mark+watch/monitor+watch/monitor [close.] | [SETUP] frame/state+arrange/work+heat/apply-energy [.] | operate [batch close.] | [START] continue | [TEST] cool/settle+pause/mark | release | [VERIFY-OPS] end | [SCAFFOLD] frame | [WATCH] deep | [SCAFFOLD] input | intake | [TEST] batch
+
+  --- Line 20 (7 tokens) ---
+    ychain               | PFX:ch     | MID:ain        | SFX:-      | CAT:FLOW           | atoms: a=yield/open i=iterate/cycle n=halt/bind
+                           pfx: TEST: active test/check fire (ch-lane) | mid: intake          | sfx: NONE [LINE-INIT]
+    shckhy               | PFX:sh     | MID:ck         | SFX:hy     | CAT:OPERATION      | atoms: c=adjust/loop k=heat/apply-energy
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: hard            | sfx: VERIFY-END (confirm.)
+    qokaiin              | PFX:qo     | MID:k          | SFX:aiin   | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: GATE (bounded loop)
+    shey                 | PFX:sh     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: set             | sfx: NONE
+    qokain               | PFX:qo     | MID:k          | SFX:ain    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: CHECK (intake)
+    shedy                | PFX:sh     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: batch           | sfx: NONE
+    olor                 | PFX:ol     | MID:or         | SFX:-      | CAT:FLOW           | atoms: o=arrange/work r=input/respond
+                           pfx: CONTINUE: maintain current operation | mid: portion         | sfx: NONE [LINE-FINAL]
+
+    >> READING: [TEST] intake | [MONITOR] hard [confirm.] | [HEAT-SRC] heat [bounded loop] | [MONITOR] set | [HEAT-SRC] heat [intake] | [MONITOR] batch | [CONTINUE] portion
+
+  PARAGRAPH SUMMARY:
+    Kernel profile: k=10(32%) h=5(16%) e=16(52%)
+    Category breakdown: {'OPERATION': 9, 'THERMAL': 9, 'FLOW': 9, 'MONITORING': 1, 'STAGING': 5, 'TRANSITION': 7, 'MARKING': 3}
+    INTERPRETATION: cooling/settling emphasis | focus on temperature management, material flow control, state change operations
+
+====================================================================================================
+PARAGRAPH 5 of 18
+  Lines: 3 | Kernel: BALANCED | Top categories: ['THERMAL', 'STAGING', 'MARKING']
+  Mode sequence: AAA | Termination: none
+  Gallows: p-gallows (stable mode)
+====================================================================================================
+
+  --- Line 21 (12 tokens) ---
+    pcheam               | PFX:pch    | MID:e          | SFX:am     | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: PREP: process material         | mid: cool            | sfx: FINAL (. stop) [LINE-INIT,PAR-INIT]
+    sokedy               | PFX:so     | MID:k          | SFX:edy    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: SCAFFOLD: structural arrangement | mid: heat            | sfx: THOROUGH-END (batch close.)
+    dalkar               | PFX:da     | MID:lk         | SFX:ar     | CAT:STAGING        | atoms: l=frame/state k=heat/apply-energy
+                           pfx: SETUP: initialize/configure apparatus | mid: frame           | sfx: CLOSE-CONT (release,)
+    otal                 | PFX:ot     | MID:al         | SFX:-      | CAT:FLOW           | atoms: a=yield/open l=frame/state
+                           pfx: VERIFY-OPS: fine operational check | mid: gather          | sfx: NONE
+    qokal                | PFX:qo     | MID:k          | SFX:al     | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: TRANSFER-CONT (transfer)
+    chepy                | PFX:ch     | MID:ep         | SFX:y      | CAT:MARKING        | atoms: e=cool/settle p=pause/mark
+                           pfx: TEST: active test/check fire (ch-lane) | mid: cool/settle+pause/mark | sfx: END (.)
+    okedy                | PFX:ok     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: batch           | sfx: NONE
+    qoky                 | PFX:qo     | MID:k          | SFX:y      | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: END (.)
+    pchedy               | PFX:pch    | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: PREP: process material         | mid: batch           | sfx: NONE
+    okaly                | PFX:ok     | MID:a          | SFX:ly     | CAT:TRANSITION     | atoms: a=yield/open
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: yield           | sfx: SETTLED-END (end.)
+    qokeedy              | PFX:qo     | MID:ke         | SFX:edy    | CAT:THERMAL        | atoms: k=heat/apply-energy e=cool/settle
+                           pfx: HEAT-SRC: fire/furnace management | mid: steady          | sfx: THOROUGH-END (batch close.)
+    lor                  | PFX:-      | MID:l          | SFX:or     | CAT:STAGING        | atoms: l=frame/state
+                           pfx: BARE                           | mid: frame           | sfx: PORTION-CONT (divide,) [LINE-FINAL]
+
+    >> READING: [PREP] cool [. stop] | [SCAFFOLD] heat [batch close.] | [SETUP] frame [release,] | [VERIFY-OPS] gather | [HEAT-SRC] heat [transfer] | [TEST] cool/settle+pause/mark [.] | [VESSEL-TEMP] batch | [HEAT-SRC] heat [.] | [PREP] batch | [VESSEL-TEMP] yield [end.] | [HEAT-SRC] steady [batch close.] | frame [divide,]
+
+  --- Line 22 (11 tokens) ---
+    dalshy               | PFX:da     | MID:ls         | SFX:hy     | CAT:STAGING        | atoms: l=frame/state s=sequence/stage
+                           pfx: SETUP: initialize/configure apparatus | mid: frame/state+sequence/stage | sfx: VERIFY-END (confirm.) [LINE-INIT]
+    okain                | PFX:ok     | MID:ain        | SFX:-      | CAT:FLOW           | atoms: a=yield/open i=iterate/cycle n=halt/bind
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: intake          | sfx: NONE
+    shckhody             | PFX:sh     | MID:ckho       | SFX:dy     | CAT:MARKING        | atoms: c=adjust/loop k=heat/apply-energy h=watch/monitor o=arrange/work
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: adjust/loop+heat/apply-energy+watch/monitor+arrange/work | sfx: SEAL-END (close.)
+    shdal                | PFX:sh     | MID:d          | SFX:al     | CAT:MARKING        | atoms: d=mark/seal
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: mark            | sfx: TRANSFER-CONT (transfer)
+    qokeedy              | PFX:qo     | MID:ke         | SFX:edy    | CAT:THERMAL        | atoms: k=heat/apply-energy e=cool/settle
+                           pfx: HEAT-SRC: fire/furnace management | mid: steady          | sfx: THOROUGH-END (batch close.)
+    shedy                | PFX:sh     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: batch           | sfx: NONE
+    qotar                | PFX:qo     | MID:t          | SFX:ar     | CAT:FLOW           | atoms: t=transfer/drive
+                           pfx: HEAT-SRC: fire/furnace management | mid: transfer        | sfx: CLOSE-CONT (release,)
+    chcthy               | PFX:ch     | MID:ct         | SFX:hy     | CAT:MONITORING     | atoms: c=adjust/loop t=transfer/drive
+                           pfx: TEST: active test/check fire (ch-lane) | mid: control         | sfx: VERIFY-END (confirm.)
+    chepar               | PFX:ch     | MID:ep         | SFX:ar     | CAT:MARKING        | atoms: e=cool/settle p=pause/mark
+                           pfx: TEST: active test/check fire (ch-lane) | mid: cool/settle+pause/mark | sfx: CLOSE-CONT (release,)
+    otar                 | PFX:ot     | MID:ar         | SFX:-      | CAT:FLOW           | atoms: a=yield/open r=input/respond
+                           pfx: VERIFY-OPS: fine operational check | mid: release         | sfx: NONE
+    opchy                | PFX:-      | MID:opc        | SFX:hy     | CAT:MARKING        | atoms: o=arrange/work p=pause/mark c=adjust/loop
+                           pfx: BARE                           | mid: arrange/work+pause/mark+adjust/loop | sfx: VERIFY-END (confirm.) [LINE-FINAL]
+
+    >> READING: [SETUP] frame/state+sequence/stage [confirm.] | [VESSEL-TEMP] intake | [MONITOR] adjust/loop+heat/apply-energy+watch/monitor+arrange/work [close.] | [MONITOR] mark [transfer] | [HEAT-SRC] steady [batch close.] | [MONITOR] batch | [HEAT-SRC] transfer [release,] | [TEST] control [confirm.] | [TEST] cool/settle+pause/mark [release,] | [VERIFY-OPS] release | arrange/work+pause/mark+adjust/loop [confirm.]
+
+  --- Line 23 (5 tokens) ---
+    daiin                | PFX:da     | MID:iin        | SFX:-      | CAT:STAGING        | atoms: i=iterate/cycle i=iterate/cycle n=halt/bind
+                           pfx: SETUP: initialize/configure apparatus | mid: iterate         | sfx: NONE [LINE-INIT]
+    sheckhy              | PFX:sh     | MID:eck        | SFX:hy     | CAT:CONTAINMENT    | atoms: e=cool/settle c=adjust/loop k=heat/apply-energy
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: rigid           | sfx: VERIFY-END (confirm.)
+    lchedy               | PFX:lch    | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: PREP: strip/extract            | mid: batch           | sfx: NONE
+    chckhy               | PFX:ch     | MID:ck         | SFX:hy     | CAT:OPERATION      | atoms: c=adjust/loop k=heat/apply-energy
+                           pfx: TEST: active test/check fire (ch-lane) | mid: hard            | sfx: VERIFY-END (confirm.)
+    shol                 | PFX:sh     | MID:ol         | SFX:-      | CAT:STAGING        | atoms: o=arrange/work l=frame/state
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: continue        | sfx: NONE [LINE-FINAL]
+
+    >> READING: [SETUP] iterate | [MONITOR] rigid [confirm.] | [PREP] batch | [TEST] hard [confirm.] | [MONITOR] continue
+
+  PARAGRAPH SUMMARY:
+    Kernel profile: k=9(45%) h=1(5%) e=10(50%)
+    Category breakdown: {'THERMAL': 6, 'STAGING': 5, 'FLOW': 4, 'MARKING': 5, 'OPERATION': 5, 'TRANSITION': 1, 'MONITORING': 1, 'CONTAINMENT': 1}
+    INTERPRETATION: cooling/settling emphasis | focus on temperature management, arrangement/setup, labeling/identification
+
+====================================================================================================
+PARAGRAPH 6 of 18
+  Lines: 3 | Kernel: ESCAPE_DOMINANT | Top categories: ['THERMAL', 'TRANSITION', 'FLOW']
+  Mode sequence: BBAABA | Termination: none
+  Gallows: t-gallows (transition mode)
+====================================================================================================
+
+  --- Line 24 (12 tokens) ---
+    tchoky               | PFX:tch    | MID:ok         | SFX:y      | CAT:CONTAINMENT    | atoms: o=arrange/work k=heat/apply-energy
+                           pfx: PREP: process/treat material   | mid: seal            | sfx: END (.) [LINE-INIT,PAR-INIT]
+    okeal                | PFX:ok     | MID:e          | SFX:al     | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: cool            | sfx: TRANSFER-CONT (transfer)
+    shedy                | PFX:sh     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: batch           | sfx: NONE
+    qokal                | PFX:qo     | MID:k          | SFX:al     | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: TRANSFER-CONT (transfer)
+    oty                  | PFX:ot     | MID:y          | SFX:-      | CAT:TRANSITION     | atoms: y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: end             | sfx: NONE
+    opchedy              | PFX:-      | MID:opch       | SFX:edy    | CAT:OPERATION      | atoms: o=arrange/work p=pause/mark c=adjust/loop h=watch/monitor
+                           pfx: BARE                           | mid: operate         | sfx: THOROUGH-END (batch close.)
+    qotain               | PFX:qo     | MID:t          | SFX:ain    | CAT:FLOW           | atoms: t=transfer/drive
+                           pfx: HEAT-SRC: fire/furnace management | mid: transfer        | sfx: CHECK (intake)
+    shcthy               | PFX:sh     | MID:ct         | SFX:hy     | CAT:MONITORING     | atoms: c=adjust/loop t=transfer/drive
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: control         | sfx: VERIFY-END (confirm.)
+    otey                 | PFX:ot     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: set             | sfx: NONE
+    dain                 | PFX:da     | MID:in         | SFX:-      | CAT:MARKING        | atoms: i=iterate/cycle n=halt/bind
+                           pfx: SETUP: initialize/configure apparatus | mid: link            | sfx: NONE
+    oteey                | PFX:ot     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: deep            | sfx: NONE
+    oky                  | PFX:ok     | MID:y          | SFX:-      | CAT:TRANSITION     | atoms: y=end/close
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: end             | sfx: NONE [LINE-FINAL]
+
+    >> READING: [PREP] seal [.] | [VESSEL-TEMP] cool [transfer] | [MONITOR] batch | [HEAT-SRC] heat [transfer] | [VERIFY-OPS] end | operate [batch close.] | [HEAT-SRC] transfer [intake] | [MONITOR] control [confirm.] | [VERIFY-OPS] set | [SETUP] link | [VERIFY-OPS] deep | [VESSEL-TEMP] end
+
+  --- Line 25 (12 tokens) ---
+    dar                  | PFX:da     | MID:r          | SFX:-      | CAT:FLOW           | atoms: r=input/respond
+                           pfx: SETUP: initialize/configure apparatus | mid: input           | sfx: NONE [LINE-INIT]
+    shey                 | PFX:sh     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: set             | sfx: NONE
+    qokain               | PFX:qo     | MID:k          | SFX:ain    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: CHECK (intake)
+    chckhey              | PFX:ch     | MID:ckh        | SFX:ey     | CAT:CONTAINMENT    | atoms: c=adjust/loop k=heat/apply-energy h=watch/monitor
+                           pfx: TEST: active test/check fire (ch-lane) | mid: firm            | sfx: SELECTIVE-END (set.)
+    chey                 | PFX:ch     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: set             | sfx: NONE
+    kain                 | PFX:ka     | MID:in         | SFX:-      | CAT:MARKING        | atoms: i=iterate/cycle n=halt/bind
+                           pfx: HEAT-YIELD: fire-open          | mid: link            | sfx: NONE
+    chedal               | PFX:ch     | MID:ed         | SFX:al     | CAT:FLOW           | atoms: e=cool/settle d=mark/seal
+                           pfx: TEST: active test/check fire (ch-lane) | mid: discharge       | sfx: TRANSFER-CONT (transfer)
+    okeeey               | PFX:ok     | MID:e          | SFX:eey    | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: cool            | sfx: EXTENDED-END (deep.)
+    qoodain              | PFX:qo     | MID:od         | SFX:ain    | CAT:?              | atoms: o=arrange/work d=mark/seal
+                           pfx: HEAT-SRC: fire/furnace management | mid: collect         | sfx: CHECK (intake)
+    okain                | PFX:ok     | MID:ain        | SFX:-      | CAT:FLOW           | atoms: a=yield/open i=iterate/cycle n=halt/bind
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: intake          | sfx: NONE
+    oteey                | PFX:ot     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: deep            | sfx: NONE
+    ol                   | PFX:-      | MID:ol         | SFX:-      | CAT:STAGING        | atoms: o=arrange/work l=frame/state
+                           pfx: BARE                           | mid: continue        | sfx: NONE [LINE-FINAL]
+
+    >> READING: [SETUP] input | [MONITOR] set | [HEAT-SRC] heat [intake] | [TEST] firm [set.] | [TEST] set | [HEAT-YIELD] link | [TEST] discharge [transfer] | [VESSEL-TEMP] cool [deep.] | [HEAT-SRC] collect [intake] | [VESSEL-TEMP] intake | [VERIFY-OPS] deep | continue
+
+  --- Line 26 (7 tokens) ---
+    oteedy               | PFX:ot     | MID:e          | SFX:edy    | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: VERIFY-OPS: fine operational check | mid: cool            | sfx: THOROUGH-END (batch close.) [LINE-INIT]
+    okeey                | PFX:ok     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: deep            | sfx: NONE
+    qotchy               | PFX:qo     | MID:tc         | SFX:hy     | CAT:FLOW           | atoms: t=transfer/drive c=adjust/loop
+                           pfx: HEAT-SRC: fire/furnace management | mid: transfer/drive+adjust/loop | sfx: VERIFY-END (confirm.)
+    shey                 | PFX:sh     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: set             | sfx: NONE
+    olcheedar            | PFX:ol     | MID:eed        | SFX:ar     | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle d=mark/seal
+                           pfx: CONTINUE: maintain current operation | mid: extended        | sfx: CLOSE-CONT (release,)
+    shey                 | PFX:sh     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: set             | sfx: NONE
+    lotos                | PFX:ot     | MID:o          | SFX:s      | CAT:OPERATION      | atoms: o=arrange/work
+                           pfx: VERIFY-OPS: fine operational check | mid: work            | sfx: NEXT (; step) [LINE-FINAL]
+
+    >> READING: [VERIFY-OPS] cool [batch close.] | [VESSEL-TEMP] deep | [HEAT-SRC] transfer/drive+adjust/loop [confirm.] | [MONITOR] set | [CONTINUE] extended [release,] | [MONITOR] set | [VERIFY-OPS] work [; step]
+
+  PARAGRAPH SUMMARY:
+    Kernel profile: k=4(17%) h=2(8%) e=18(75%)
+    Category breakdown: {'CONTAINMENT': 2, 'THERMAL': 9, 'OPERATION': 3, 'TRANSITION': 7, 'FLOW': 5, 'MONITORING': 1, 'MARKING': 2, None: 1, 'STAGING': 1}
+    INTERPRETATION: cooling/settling emphasis | focus on temperature management, state change operations, material flow control
+
+====================================================================================================
+PARAGRAPH 7 of 18
+  Lines: 4 | Kernel: ESCAPE_DOMINANT | Top categories: ['THERMAL', 'OPERATION', 'TRANSITION']
+  Mode sequence: ABAAABA | Termination: none
+====================================================================================================
+
+  --- Line 27 (11 tokens) ---
+    qokechy              | PFX:qo     | MID:kec        | SFX:hy     | CAT:THERMAL        | atoms: k=heat/apply-energy e=cool/settle c=adjust/loop
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat/apply-energy+cool/settle+adjust/loop | sfx: VERIFY-END (confirm.) [LINE-INIT,PAR-INIT]
+    okeey                | PFX:ok     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: deep            | sfx: NONE
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    lkeeody              | PFX:lk     | MID:eeo        | SFX:dy     | CAT:OPERATION      | atoms: e=cool/settle e=cool/settle o=arrange/work
+                           pfx: WATCH: observe state           | mid: wide            | sfx: SEAL-END (close.)
+    sheey                | PFX:sh     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: deep            | sfx: NONE
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    lkeol                | PFX:lk     | MID:eol        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle o=arrange/work l=frame/state
+                           pfx: WATCH: observe state           | mid: sustain         | sfx: NONE
+    tchey                | PFX:tch    | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: PREP: process/treat material   | mid: set             | sfx: NONE
+    qokchy               | PFX:qo     | MID:kc         | SFX:hy     | CAT:CONTAINMENT    | atoms: k=heat/apply-energy c=adjust/loop
+                           pfx: HEAT-SRC: fire/furnace management | mid: bond            | sfx: VERIFY-END (confirm.)
+    okeey                | PFX:ok     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: deep            | sfx: NONE
+    qokaly               | PFX:qo     | MID:ka         | SFX:ly     | CAT:THERMAL        | atoms: k=heat/apply-energy a=yield/open
+                           pfx: HEAT-SRC: fire/furnace management | mid: fire            | sfx: SETTLED-END (end.) [LINE-FINAL]
+
+    >> READING: [HEAT-SRC] heat/apply-energy+cool/settle+adjust/loop [confirm.] | [VESSEL-TEMP] deep | [HEAT-SRC] heat [deep.] | [WATCH] wide [close.] | [MONITOR] deep | [HEAT-SRC] heat [deep.] | [WATCH] sustain | [PREP] set | [HEAT-SRC] bond [confirm.] | [VESSEL-TEMP] deep | [HEAT-SRC] fire [end.]
+
+  --- Line 28 (11 tokens) ---
+    deshedy              | PFX:de     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: DIVIDE: separate portions      | mid: batch           | sfx: NONE [LINE-INIT]
+    qokchey              | PFX:qo     | MID:kch        | SFX:ey     | CAT:THERMAL        | atoms: k=heat/apply-energy c=adjust/loop h=watch/monitor
+                           pfx: HEAT-SRC: fire/furnace management | mid: pulse           | sfx: SELECTIVE-END (set.)
+    dalkain              | PFX:da     | MID:lk         | SFX:ain    | CAT:STAGING        | atoms: l=frame/state k=heat/apply-energy
+                           pfx: SETUP: initialize/configure apparatus | mid: frame           | sfx: CHECK (intake)
+    okaiin               | PFX:ok     | MID:aiin       | SFX:-      | CAT:TRANSITION     | atoms: a=yield/open i=iterate/cycle i=iterate/cycle n=halt/bind
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: settle          | sfx: NONE
+    chedy                | PFX:ch     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: batch           | sfx: NONE
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    otain                | PFX:ot     | MID:ain        | SFX:-      | CAT:FLOW           | atoms: a=yield/open i=iterate/cycle n=halt/bind
+                           pfx: VERIFY-OPS: fine operational check | mid: intake          | sfx: NONE
+    ain                  | PFX:-      | MID:ain        | SFX:-      | CAT:FLOW           | atoms: a=yield/open i=iterate/cycle n=halt/bind
+                           pfx: BARE                           | mid: intake          | sfx: NONE
+    ol                   | PFX:-      | MID:ol         | SFX:-      | CAT:STAGING        | atoms: o=arrange/work l=frame/state
+                           pfx: BARE                           | mid: continue        | sfx: NONE
+    cheey                | PFX:ch     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: deep            | sfx: NONE
+    lkeedy               | PFX:lk     | MID:e          | SFX:edy    | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: WATCH: observe state           | mid: cool            | sfx: THOROUGH-END (batch close.) [LINE-FINAL]
+
+    >> READING: [DIVIDE] batch | [HEAT-SRC] pulse [set.] | [SETUP] frame [intake] | [VESSEL-TEMP] settle | [TEST] batch | [HEAT-SRC] heat [deep.] | [VERIFY-OPS] intake | intake | continue | [TEST] deep | [WATCH] cool [batch close.]
+
+  --- Line 29 (6 tokens) ---
+    qokechchy            | PFX:qo     | MID:kechc      | SFX:hy     | CAT:MARKING        | atoms: k=heat/apply-energy e=cool/settle c=adjust/loop h=watch/monitor c=adjust/loop
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat/apply-energy+cool/settle+adjust/loop+watch/monitor+adjust/loop | sfx: VERIFY-END (confirm.) [LINE-INIT]
+    shokeey              | PFX:sh     | MID:ok         | SFX:eey    | CAT:CONTAINMENT    | atoms: o=arrange/work k=heat/apply-energy
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: seal            | sfx: EXTENDED-END (deep.)
+    qochey               | PFX:qo     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: HEAT-SRC: fire/furnace management | mid: set             | sfx: NONE
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    chal                 | PFX:ch     | MID:al         | SFX:-      | CAT:FLOW           | atoms: a=yield/open l=frame/state
+                           pfx: TEST: active test/check fire (ch-lane) | mid: gather          | sfx: NONE
+    chedy                | PFX:ch     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: batch           | sfx: NONE [LINE-FINAL]
+
+    >> READING: [HEAT-SRC] heat/apply-energy+cool/settle+adjust/loop+watch/monitor+adjust/loop [confirm.] | [MONITOR] seal [deep.] | [HEAT-SRC] set | [HEAT-SRC] heat [deep.] | [TEST] gather | [TEST] batch
+
+  --- Line 3 (13 tokens) ---
+    yshdain              | PFX:sh     | MID:d          | SFX:ain    | CAT:MARKING        | atoms: d=mark/seal
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: mark            | sfx: CHECK (intake) [LINE-INIT]
+    sheek                | PFX:sh     | MID:eek        | SFX:-      | CAT:CONTAINMENT    | atoms: e=cool/settle e=cool/settle k=heat/apply-energy
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: lock            | sfx: NONE
+    cheoty               | PFX:ch     | MID:eot        | SFX:y      | CAT:FLOW           | atoms: e=cool/settle o=arrange/work t=transfer/drive
+                           pfx: TEST: active test/check fire (ch-lane) | mid: cool/settle+arrange/work+transfer/drive | sfx: END (.)
+    chokal               | PFX:ch     | MID:ok         | SFX:al     | CAT:CONTAINMENT    | atoms: o=arrange/work k=heat/apply-energy
+                           pfx: TEST: active test/check fire (ch-lane) | mid: seal            | sfx: TRANSFER-CONT (transfer)
+    chedy                | PFX:ch     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: batch           | sfx: NONE
+    chckhy               | PFX:ch     | MID:ck         | SFX:hy     | CAT:OPERATION      | atoms: c=adjust/loop k=heat/apply-energy
+                           pfx: TEST: active test/check fire (ch-lane) | mid: hard            | sfx: VERIFY-END (confirm.)
+    or                   | PFX:-      | MID:or         | SFX:-      | CAT:FLOW           | atoms: o=arrange/work r=input/respond
+                           pfx: BARE                           | mid: portion         | sfx: NONE
+    orol                 | PFX:or     | MID:ol         | SFX:-      | CAT:STAGING        | atoms: o=arrange/work l=frame/state
+                           pfx: PORTION: divide/portion out    | mid: continue        | sfx: NONE
+    okain                | PFX:ok     | MID:ain        | SFX:-      | CAT:FLOW           | atoms: a=yield/open i=iterate/cycle n=halt/bind
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: intake          | sfx: NONE
+    chal                 | PFX:ch     | MID:al         | SFX:-      | CAT:FLOW           | atoms: a=yield/open l=frame/state
+                           pfx: TEST: active test/check fire (ch-lane) | mid: gather          | sfx: NONE
+    ot                   | PFX:-      | MID:ot         | SFX:-      | CAT:MONITORING     | atoms: o=arrange/work t=transfer/drive
+                           pfx: BARE                           | mid: verify          | sfx: NONE
+    kar                  | PFX:ka     | MID:r          | SFX:-      | CAT:FLOW           | atoms: r=input/respond
+                           pfx: HEAT-YIELD: fire-open          | mid: input           | sfx: NONE
+    chym                 | PFX:ch     | MID:y          | SFX:m      | CAT:TRANSITION     | atoms: y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: end             | sfx: (m) [LINE-FINAL]
+
+    >> READING: [MONITOR] mark [intake] | [MONITOR] lock | [TEST] cool/settle+arrange/work+transfer/drive [.] | [TEST] seal [transfer] | [TEST] batch | [TEST] hard [confirm.] | portion | [PORTION] continue | [VESSEL-TEMP] intake | [TEST] gather | verify | [HEAT-YIELD] input | [TEST] end
+
+  PARAGRAPH SUMMARY:
+    Kernel profile: k=14(36%) h=2(5%) e=23(59%)
+    Category breakdown: {'THERMAL': 13, 'OPERATION': 6, 'TRANSITION': 4, 'CONTAINMENT': 4, 'STAGING': 3, 'FLOW': 8, 'MARKING': 2, 'MONITORING': 1}
+    INTERPRETATION: cooling/settling emphasis | focus on temperature management, active processing, state change operations
+
+====================================================================================================
+PARAGRAPH 8 of 18
+  Lines: 3 | Kernel: ESCAPE_DOMINANT | Top categories: ['THERMAL', 'OPERATION', 'FLOW']
+  Mode sequence: AABAA | Termination: none
+  Gallows: p-gallows (stable mode)
+====================================================================================================
+
+  --- Line 30 (9 tokens) ---
+    pcholkchdy           | PFX:pch    | MID:olkch      | SFX:dy     | CAT:MARKING        | atoms: o=arrange/work l=frame/state k=heat/apply-energy c=adjust/loop h=watch/monitor
+                           pfx: PREP: process material         | mid: arrange/work+frame/state+heat/apply-energy+adjust/loop+watch/monitor | sfx: SEAL-END (close.) [LINE-INIT,PAR-INIT]
+    sheckhy              | PFX:sh     | MID:eck        | SFX:hy     | CAT:CONTAINMENT    | atoms: e=cool/settle c=adjust/loop k=heat/apply-energy
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: rigid           | sfx: VERIFY-END (confirm.)
+    qokey                | PFX:qo     | MID:k          | SFX:ey     | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: SELECTIVE-END (set.)
+    okaiin               | PFX:ok     | MID:aiin       | SFX:-      | CAT:TRANSITION     | atoms: a=yield/open i=iterate/cycle i=iterate/cycle n=halt/bind
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: settle          | sfx: NONE
+    shedy                | PFX:sh     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: batch           | sfx: NONE
+    chpchy               | PFX:ch     | MID:pc         | SFX:hy     | CAT:MARKING        | atoms: p=pause/mark c=adjust/loop
+                           pfx: TEST: active test/check fire (ch-lane) | mid: pause/mark+adjust/loop | sfx: VERIFY-END (confirm.)
+    opchedy              | PFX:-      | MID:opch       | SFX:edy    | CAT:OPERATION      | atoms: o=arrange/work p=pause/mark c=adjust/loop h=watch/monitor
+                           pfx: BARE                           | mid: operate         | sfx: THOROUGH-END (batch close.)
+    oteeykshy            | PFX:ot     | MID:eeyks      | SFX:hy     | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close k=heat/apply-energy s=sequence/stage
+                           pfx: VERIFY-OPS: fine operational check | mid: cool/settle+cool/settle+end/close+heat/apply-energy+sequence/stage | sfx: VERIFY-END (confirm.)
+    chdaly               | PFX:ch     | MID:da         | SFX:ly     | CAT:TRANSITION     | atoms: d=mark/seal a=yield/open
+                           pfx: TEST: active test/check fire (ch-lane) | mid: start           | sfx: SETTLED-END (end.) [LINE-FINAL]
+
+    >> READING: [PREP] arrange/work+frame/state+heat/apply-energy+adjust/loop+watch/monitor [close.] | [MONITOR] rigid [confirm.] | [HEAT-SRC] heat [set.] | [VESSEL-TEMP] settle | [MONITOR] batch | [TEST] pause/mark+adjust/loop [confirm.] | operate [batch close.] | [VERIFY-OPS] cool/settle+cool/settle+end/close+heat/apply-energy+sequence/stage [confirm.] | [TEST] start [end.]
+
+  --- Line 31 (11 tokens) ---
+    soiin                | PFX:so     | MID:iin        | SFX:-      | CAT:STAGING        | atoms: i=iterate/cycle i=iterate/cycle n=halt/bind
+                           pfx: SCAFFOLD: structural arrangement | mid: iterate         | sfx: NONE [LINE-INIT]
+    eeol                 | PFX:-      | MID:eeol       | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle o=arrange/work l=frame/state
+                           pfx: BARE                           | mid: overnight       | sfx: NONE
+    kaiin                | PFX:ka     | MID:iin        | SFX:-      | CAT:STAGING        | atoms: i=iterate/cycle i=iterate/cycle n=halt/bind
+                           pfx: HEAT-YIELD: fire-open          | mid: iterate         | sfx: NONE
+    chal                 | PFX:ch     | MID:al         | SFX:-      | CAT:FLOW           | atoms: a=yield/open l=frame/state
+                           pfx: TEST: active test/check fire (ch-lane) | mid: gather          | sfx: NONE
+    okaiin               | PFX:ok     | MID:aiin       | SFX:-      | CAT:TRANSITION     | atoms: a=yield/open i=iterate/cycle i=iterate/cycle n=halt/bind
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: settle          | sfx: NONE
+    shckhy               | PFX:sh     | MID:ck         | SFX:hy     | CAT:OPERATION      | atoms: c=adjust/loop k=heat/apply-energy
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: hard            | sfx: VERIFY-END (confirm.)
+    qokal                | PFX:qo     | MID:k          | SFX:al     | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: TRANSFER-CONT (transfer)
+    shdar                | PFX:sh     | MID:d          | SFX:ar     | CAT:MARKING        | atoms: d=mark/seal
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: mark            | sfx: CLOSE-CONT (release,)
+    shchdy               | PFX:sh     | MID:dy         | SFX:-      | CAT:CONTAINMENT    | atoms: d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: seal            | sfx: NONE
+    okaiin               | PFX:ok     | MID:aiin       | SFX:-      | CAT:TRANSITION     | atoms: a=yield/open i=iterate/cycle i=iterate/cycle n=halt/bind
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: settle          | sfx: NONE
+    chty                 | PFX:ch     | MID:t          | SFX:y      | CAT:FLOW           | atoms: t=transfer/drive
+                           pfx: TEST: active test/check fire (ch-lane) | mid: transfer        | sfx: END (.) [LINE-FINAL]
+
+    >> READING: [SCAFFOLD] iterate | overnight | [HEAT-YIELD] iterate | [TEST] gather | [VESSEL-TEMP] settle | [MONITOR] hard [confirm.] | [HEAT-SRC] heat [transfer] | [MONITOR] mark [release,] | [MONITOR] seal | [VESSEL-TEMP] settle | [TEST] transfer [.]
+
+  --- Line 32 (8 tokens) ---
+    okeey                | PFX:ok     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: deep            | sfx: NONE [LINE-INIT]
+    shedy                | PFX:sh     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: batch           | sfx: NONE
+    qokedy               | PFX:qo     | MID:k          | SFX:edy    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: THOROUGH-END (batch close.)
+    qokal                | PFX:qo     | MID:k          | SFX:al     | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: TRANSFER-CONT (transfer)
+    shety                | PFX:sh     | MID:et         | SFX:y      | CAT:STAGING        | atoms: e=cool/settle t=transfer/drive
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: path            | sfx: END (.)
+    otedy                | PFX:ot     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: batch           | sfx: NONE
+    shcthy               | PFX:sh     | MID:ct         | SFX:hy     | CAT:MONITORING     | atoms: c=adjust/loop t=transfer/drive
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: control         | sfx: VERIFY-END (confirm.)
+    oraiin               | PFX:or     | MID:aiin       | SFX:-      | CAT:TRANSITION     | atoms: a=yield/open i=iterate/cycle i=iterate/cycle n=halt/bind
+                           pfx: PORTION: divide/portion out    | mid: settle          | sfx: NONE [LINE-FINAL]
+
+    >> READING: [VESSEL-TEMP] deep | [MONITOR] batch | [HEAT-SRC] heat [batch close.] | [HEAT-SRC] heat [transfer] | [MONITOR] path [.] | [VERIFY-OPS] batch | [MONITOR] control [confirm.] | [PORTION] settle
+
+  PARAGRAPH SUMMARY:
+    Kernel profile: k=8(38%) h=2(10%) e=11(52%)
+    Category breakdown: {'MARKING': 3, 'CONTAINMENT': 2, 'THERMAL': 7, 'TRANSITION': 5, 'OPERATION': 5, 'STAGING': 3, 'FLOW': 2, 'MONITORING': 1}
+    INTERPRETATION: cooling/settling emphasis | focus on temperature management, active processing, material flow control
+
+====================================================================================================
+PARAGRAPH 9 of 18
+  Lines: 2 | Kernel: ESCAPE_DOMINANT | Top categories: ['TRANSITION', 'THERMAL', 'STAGING']
+  Mode sequence: B | Termination: none
+====================================================================================================
+
+  --- Line 33 (10 tokens) ---
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.) [LINE-INIT,PAR-INIT]
+    chechy               | PFX:ch     | MID:ec         | SFX:hy     | CAT:MARKING        | atoms: e=cool/settle c=adjust/loop
+                           pfx: TEST: active test/check fire (ch-lane) | mid: cool/settle+adjust/loop | sfx: VERIFY-END (confirm.)
+    qokey                | PFX:qo     | MID:k          | SFX:ey     | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: SELECTIVE-END (set.)
+    shckhy               | PFX:sh     | MID:ck         | SFX:hy     | CAT:OPERATION      | atoms: c=adjust/loop k=heat/apply-energy
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: hard            | sfx: VERIFY-END (confirm.)
+    choldy               | PFX:ch     | MID:ol         | SFX:dy     | CAT:STAGING        | atoms: o=arrange/work l=frame/state
+                           pfx: TEST: active test/check fire (ch-lane) | mid: continue        | sfx: SEAL-END (close.)
+    qokaly               | PFX:qo     | MID:ka         | SFX:ly     | CAT:THERMAL        | atoms: k=heat/apply-energy a=yield/open
+                           pfx: HEAT-SRC: fire/furnace management | mid: fire            | sfx: SETTLED-END (end.)
+    shedy                | PFX:sh     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: batch           | sfx: NONE
+    yteedy               | PFX:te     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: PROCESS: gather/collect        | mid: batch           | sfx: NONE
+    qotail               | PFX:qo     | MID:tai        | SFX:l      | CAT:FLOW           | atoms: t=transfer/drive a=yield/open i=iterate/cycle
+                           pfx: HEAT-SRC: fire/furnace management | mid: transfer/drive+yield/open+iterate/cycle | sfx: FRAME (|)
+    seedy                | PFX:se     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: SCAFFOLD: stage-settle         | mid: batch           | sfx: NONE [LINE-FINAL]
+
+    >> READING: [HEAT-SRC] heat [deep.] | [TEST] cool/settle+adjust/loop [confirm.] | [HEAT-SRC] heat [set.] | [MONITOR] hard [confirm.] | [TEST] continue [close.] | [HEAT-SRC] fire [end.] | [MONITOR] batch | [PROCESS] batch | [HEAT-SRC] transfer/drive+yield/open+iterate/cycle [|] | [SCAFFOLD] batch
+
+  --- Line 34 (3 tokens) ---
+    sheod                | PFX:sh     | MID:eod        | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle o=arrange/work d=mark/seal
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: stand           | sfx: NONE [LINE-INIT]
+    oshey                | PFX:-      | MID:osh        | SFX:ey     | CAT:MONITORING     | atoms: o=arrange/work s=sequence/stage h=watch/monitor
+                           pfx: BARE                           | mid: arrange/work+sequence/stage+watch/monitor | sfx: SELECTIVE-END (set.)
+    cheedalaiin          | PFX:ch     | MID:eedal      | SFX:aiin   | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle d=mark/seal a=yield/open l=frame/state
+                           pfx: TEST: active test/check fire (ch-lane) | mid: cool/settle+cool/settle+mark/seal+yield/open+frame/state | sfx: GATE (bounded loop) [LINE-FINAL]
+
+    >> READING: [MONITOR] stand | arrange/work+sequence/stage+watch/monitor [set.] | [TEST] cool/settle+cool/settle+mark/seal+yield/open+frame/state [bounded loop]
+
+  PARAGRAPH SUMMARY:
+    Kernel profile: k=4(33%) h=1(8%) e=7(58%)
+    Category breakdown: {'THERMAL': 4, 'MARKING': 1, 'OPERATION': 4, 'STAGING': 1, 'FLOW': 1, 'TRANSITION': 1, 'MONITORING': 1}
+    INTERPRETATION: cooling/settling emphasis | focus on state change operations, temperature management, arrangement/setup
+
+====================================================================================================
+PARAGRAPH 10 of 18
+  Lines: 2 | Kernel: ESCAPE_DOMINANT | Top categories: ['THERMAL', 'FLOW', 'STAGING']
+  Mode sequence: BAAAA | Termination: none
+====================================================================================================
+
+  --- Line 35 (10 tokens) ---
+    qokeear              | PFX:qo     | MID:kee        | SFX:ar     | CAT:THERMAL        | atoms: k=heat/apply-energy e=cool/settle e=cool/settle
+                           pfx: HEAT-SRC: fire/furnace management | mid: deep            | sfx: CLOSE-CONT (release,) [LINE-INIT,PAR-INIT]
+    chain                | PFX:ch     | MID:ain        | SFX:-      | CAT:FLOW           | atoms: a=yield/open i=iterate/cycle n=halt/bind
+                           pfx: TEST: active test/check fire (ch-lane) | mid: intake          | sfx: NONE
+    olain                | PFX:ol     | MID:ain        | SFX:-      | CAT:FLOW           | atoms: a=yield/open i=iterate/cycle n=halt/bind
+                           pfx: CONTINUE: maintain current operation | mid: intake          | sfx: NONE
+    chey                 | PFX:ch     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: set             | sfx: NONE
+    kain                 | PFX:ka     | MID:in         | SFX:-      | CAT:MARKING        | atoms: i=iterate/cycle n=halt/bind
+                           pfx: HEAT-YIELD: fire-open          | mid: link            | sfx: NONE
+    sheol                | PFX:sh     | MID:eol        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle o=arrange/work l=frame/state
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: sustain         | sfx: NONE
+    shedain              | PFX:sh     | MID:ed         | SFX:ain    | CAT:FLOW           | atoms: e=cool/settle d=mark/seal
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: discharge       | sfx: CHECK (intake)
+    qokeedy              | PFX:qo     | MID:ke         | SFX:edy    | CAT:THERMAL        | atoms: k=heat/apply-energy e=cool/settle
+                           pfx: HEAT-SRC: fire/furnace management | mid: steady          | sfx: THOROUGH-END (batch close.)
+    ykeedy               | PFX:yk     | MID:e          | SFX:edy    | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: (yk)                           | mid: cool            | sfx: THOROUGH-END (batch close.)
+    lcheg                | PFX:lch    | MID:e          | SFX:g      | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: PREP: strip/extract            | mid: cool            | sfx: (g) [LINE-FINAL]
+
+    >> READING: [HEAT-SRC] deep [release,] | [TEST] intake | [CONTINUE] intake | [TEST] set | [HEAT-YIELD] link | [MONITOR] sustain | [MONITOR] discharge [intake] | [HEAT-SRC] steady [batch close.] | cool [batch close.] | [PREP] cool
+
+  --- Line 36 (8 tokens) ---
+    okool                | PFX:ok     | MID:ool        | SFX:-      | CAT:OPERATION      | atoms: o=arrange/work o=arrange/work l=frame/state
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: arrange/work+arrange/work+frame/state | sfx: NONE [LINE-INIT]
+    chedy                | PFX:ch     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: batch           | sfx: NONE
+    okeedy               | PFX:ok     | MID:e          | SFX:edy    | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: cool            | sfx: THOROUGH-END (batch close.)
+    qokeedy              | PFX:qo     | MID:ke         | SFX:edy    | CAT:THERMAL        | atoms: k=heat/apply-energy e=cool/settle
+                           pfx: HEAT-SRC: fire/furnace management | mid: steady          | sfx: THOROUGH-END (batch close.)
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    shdy                 | PFX:sh     | MID:dy         | SFX:-      | CAT:CONTAINMENT    | atoms: d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: seal            | sfx: NONE
+    otey                 | PFX:ot     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: set             | sfx: NONE
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.) [LINE-FINAL]
+
+    >> READING: [VESSEL-TEMP] arrange/work+arrange/work+frame/state | [TEST] batch | [VESSEL-TEMP] cool [batch close.] | [HEAT-SRC] steady [batch close.] | [HEAT-SRC] heat [deep.] | [MONITOR] seal | [VERIFY-OPS] set | [HEAT-SRC] heat [deep.]
+
+  PARAGRAPH SUMMARY:
+    Kernel profile: k=5(29%) h=0(0%) e=12(71%)
+    Category breakdown: {'THERMAL': 9, 'FLOW': 3, 'TRANSITION': 2, 'MARKING': 1, 'OPERATION': 2, 'CONTAINMENT': 1}
+    INTERPRETATION: cooling/settling emphasis | focus on temperature management, material flow control, arrangement/setup
+
+====================================================================================================
+PARAGRAPH 11 of 18
+  Lines: 4 | Kernel: ESCAPE_DOMINANT | Top categories: ['THERMAL', 'TRANSITION', 'STAGING']
+  Mode sequence: ABBA | Termination: none
+  Gallows: p-gallows (stable mode)
+====================================================================================================
+
+  --- Line 37 (9 tokens) ---
+    pchedy               | PFX:pch    | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: PREP: process material         | mid: batch           | sfx: NONE [LINE-INIT,PAR-INIT]
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    qokeodair            | PFX:qo     | MID:keodai     | SFX:r      | CAT:THERMAL        | atoms: k=heat/apply-energy e=cool/settle o=arrange/work d=mark/seal a=yield/open i=iterate/cycle
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat/apply-energy+cool/settle+arrange/work+mark/seal+yield/open+iterate/cycle | sfx: CONTINUE (,)
+    qokshy               | PFX:qo     | MID:ks         | SFX:hy     | CAT:STAGING        | atoms: k=heat/apply-energy s=sequence/stage
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat/apply-energy+sequence/stage | sfx: VERIFY-END (confirm.)
+    qokeedy              | PFX:qo     | MID:ke         | SFX:edy    | CAT:THERMAL        | atoms: k=heat/apply-energy e=cool/settle
+                           pfx: HEAT-SRC: fire/furnace management | mid: steady          | sfx: THOROUGH-END (batch close.)
+    qokeedy              | PFX:qo     | MID:ke         | SFX:edy    | CAT:THERMAL        | atoms: k=heat/apply-energy e=cool/settle
+                           pfx: HEAT-SRC: fire/furnace management | mid: steady          | sfx: THOROUGH-END (batch close.)
+    chsky                | PFX:ch     | MID:sk         | SFX:y      | CAT:STAGING        | atoms: s=sequence/stage k=heat/apply-energy
+                           pfx: TEST: active test/check fire (ch-lane) | mid: sequence/stage+heat/apply-energy | sfx: END (.)
+    shey                 | PFX:sh     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: set             | sfx: NONE
+    shalky               | PFX:sh     | MID:alk        | SFX:y      | CAT:STAGING        | atoms: a=yield/open l=frame/state k=heat/apply-energy
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: yield/open+frame/state+heat/apply-energy | sfx: END (.) [LINE-FINAL]
+
+    >> READING: [PREP] batch | [HEAT-SRC] heat [deep.] | [HEAT-SRC] heat/apply-energy+cool/settle+arrange/work+mark/seal+yield/open+iterate/cycle [,] | [HEAT-SRC] heat/apply-energy+sequence/stage [confirm.] | [HEAT-SRC] steady [batch close.] | [HEAT-SRC] steady [batch close.] | [TEST] sequence/stage+heat/apply-energy [.] | [MONITOR] set | [MONITOR] yield/open+frame/state+heat/apply-energy [.]
+
+  --- Line 38 (9 tokens) ---
+    otechedy             | PFX:ot     | MID:ech        | SFX:edy    | CAT:MONITORING     | atoms: e=cool/settle c=adjust/loop h=watch/monitor
+                           pfx: VERIFY-OPS: fine operational check | mid: check           | sfx: THOROUGH-END (batch close.) [LINE-INIT]
+    qokain               | PFX:qo     | MID:k          | SFX:ain    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: CHECK (intake)
+    shcthy               | PFX:sh     | MID:ct         | SFX:hy     | CAT:MONITORING     | atoms: c=adjust/loop t=transfer/drive
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: control         | sfx: VERIFY-END (confirm.)
+    chckhy               | PFX:ch     | MID:ck         | SFX:hy     | CAT:OPERATION      | atoms: c=adjust/loop k=heat/apply-energy
+                           pfx: TEST: active test/check fire (ch-lane) | mid: hard            | sfx: VERIFY-END (confirm.)
+    lokeedy              | PFX:ok     | MID:e          | SFX:edy    | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: cool            | sfx: THOROUGH-END (batch close.)
+    checkhy              | PFX:ch     | MID:eck        | SFX:hy     | CAT:CONTAINMENT    | atoms: e=cool/settle c=adjust/loop k=heat/apply-energy
+                           pfx: TEST: active test/check fire (ch-lane) | mid: rigid           | sfx: VERIFY-END (confirm.)
+    lokain               | PFX:ok     | MID:ain        | SFX:-      | CAT:FLOW           | atoms: a=yield/open i=iterate/cycle n=halt/bind
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: intake          | sfx: NONE
+    shedy                | PFX:sh     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: batch           | sfx: NONE
+    okeey                | PFX:ok     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: deep            | sfx: NONE [LINE-FINAL]
+
+    >> READING: [VERIFY-OPS] check [batch close.] | [HEAT-SRC] heat [intake] | [MONITOR] control [confirm.] | [TEST] hard [confirm.] | [VESSEL-TEMP] cool [batch close.] | [TEST] rigid [confirm.] | [VESSEL-TEMP] intake | [MONITOR] batch | [VESSEL-TEMP] deep
+
+  --- Line 39 (6 tokens) ---
+    ykeedy               | PFX:yk     | MID:e          | SFX:edy    | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: (yk)                           | mid: cool            | sfx: THOROUGH-END (batch close.) [LINE-INIT]
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    lsheey               | PFX:lsh    | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: LINK: verify connection        | mid: deep            | sfx: NONE
+    qotal                | PFX:qo     | MID:t          | SFX:al     | CAT:FLOW           | atoms: t=transfer/drive
+                           pfx: HEAT-SRC: fire/furnace management | mid: transfer        | sfx: TRANSFER-CONT (transfer)
+    shedy                | PFX:sh     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: batch           | sfx: NONE
+    oteey                | PFX:ot     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: deep            | sfx: NONE [LINE-FINAL]
+
+    >> READING: cool [batch close.] | [HEAT-SRC] heat [deep.] | [LINK] deep | [HEAT-SRC] transfer [transfer] | [MONITOR] batch | [VERIFY-OPS] deep
+
+  --- Line 4 (9 tokens) ---
+    ychedy               | PFX:ch     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: batch           | sfx: NONE [LINE-INIT]
+    qokedy               | PFX:qo     | MID:k          | SFX:edy    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: THOROUGH-END (batch close.)
+    okedy                | PFX:ok     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: batch           | sfx: NONE
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    okey                 | PFX:ok     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: set             | sfx: NONE
+    chdarol              | PFX:ch     | MID:dar        | SFX:ol     | CAT:FLOW           | atoms: d=mark/seal a=yield/open r=input/respond
+                           pfx: TEST: active test/check fire (ch-lane) | mid: mark/seal+yield/open+input/respond | sfx: HOLD-CONT (hold)
+    loty                 | PFX:ot     | MID:y          | SFX:-      | CAT:TRANSITION     | atoms: y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: end             | sfx: NONE
+    chedar               | PFX:ch     | MID:ed         | SFX:ar     | CAT:FLOW           | atoms: e=cool/settle d=mark/seal
+                           pfx: TEST: active test/check fire (ch-lane) | mid: discharge       | sfx: CLOSE-CONT (release,)
+    aly                  | PFX:al     | MID:y          | SFX:-      | CAT:TRANSITION     | atoms: y=end/close
+                           pfx: CLOSE: output/gather           | mid: end             | sfx: NONE [LINE-FINAL]
+
+    >> READING: [TEST] batch | [HEAT-SRC] heat [batch close.] | [VESSEL-TEMP] batch | [HEAT-SRC] heat [deep.] | [VESSEL-TEMP] set | [TEST] mark/seal+yield/open+input/respond [hold] | [VERIFY-OPS] end | [TEST] discharge [release,] | [CLOSE] end
+
+  PARAGRAPH SUMMARY:
+    Kernel profile: k=13(37%) h=1(3%) e=21(60%)
+    Category breakdown: {'OPERATION': 6, 'THERMAL': 13, 'STAGING': 3, 'TRANSITION': 4, 'MONITORING': 2, 'CONTAINMENT': 1, 'FLOW': 4}
+    INTERPRETATION: cooling/settling emphasis | focus on temperature management, state change operations, arrangement/setup
+
+====================================================================================================
+PARAGRAPH 12 of 18
+  Lines: 3 | Kernel: ESCAPE_DOMINANT | Top categories: ['THERMAL', 'FLOW', 'TRANSITION']
+  Mode sequence: AAA | Termination: none
+====================================================================================================
+
+  --- Line 40 (11 tokens) ---
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.) [LINE-INIT,PAR-INIT]
+    sheeol               | PFX:sh     | MID:eeol       | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle o=arrange/work l=frame/state
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: overnight       | sfx: NONE
+    shckhy               | PFX:sh     | MID:ck         | SFX:hy     | CAT:OPERATION      | atoms: c=adjust/loop k=heat/apply-energy
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: hard            | sfx: VERIFY-END (confirm.)
+    sheol                | PFX:sh     | MID:eol        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle o=arrange/work l=frame/state
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: sustain         | sfx: NONE
+    shody                | PFX:sh     | MID:o          | SFX:dy     | CAT:OPERATION      | atoms: o=arrange/work
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: work            | sfx: SEAL-END (close.)
+    ol                   | PFX:-      | MID:ol         | SFX:-      | CAT:STAGING        | atoms: o=arrange/work l=frame/state
+                           pfx: BARE                           | mid: continue        | sfx: NONE
+    aiin                 | PFX:-      | MID:aiin       | SFX:-      | CAT:TRANSITION     | atoms: a=yield/open i=iterate/cycle i=iterate/cycle n=halt/bind
+                           pfx: BARE                           | mid: settle          | sfx: NONE
+    otedy                | PFX:ot     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: batch           | sfx: NONE
+    qoteey               | PFX:qo     | MID:t          | SFX:eey    | CAT:FLOW           | atoms: t=transfer/drive
+                           pfx: HEAT-SRC: fire/furnace management | mid: transfer        | sfx: EXTENDED-END (deep.)
+    lotar                | PFX:ot     | MID:ar         | SFX:-      | CAT:FLOW           | atoms: a=yield/open r=input/respond
+                           pfx: VERIFY-OPS: fine operational check | mid: release         | sfx: NONE
+    otam                 | PFX:ot     | MID:am         | SFX:-      | CAT:TRANSITION     | atoms: a=yield/open m=finalize
+                           pfx: VERIFY-OPS: fine operational check | mid: finalize        | sfx: NONE [LINE-FINAL]
+
+    >> READING: [HEAT-SRC] heat [deep.] | [MONITOR] overnight | [MONITOR] hard [confirm.] | [MONITOR] sustain | [MONITOR] work [close.] | continue | settle | [VERIFY-OPS] batch | [HEAT-SRC] transfer [deep.] | [VERIFY-OPS] release | [VERIFY-OPS] finalize
+
+  --- Line 41 (11 tokens) ---
+    cheol                | PFX:ch     | MID:eol        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle o=arrange/work l=frame/state
+                           pfx: TEST: active test/check fire (ch-lane) | mid: sustain         | sfx: NONE [LINE-INIT]
+    sheeey               | PFX:sh     | MID:e          | SFX:eey    | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: cool            | sfx: EXTENDED-END (deep.)
+    qotey                | PFX:qo     | MID:t          | SFX:ey     | CAT:FLOW           | atoms: t=transfer/drive
+                           pfx: HEAT-SRC: fire/furnace management | mid: transfer        | sfx: SELECTIVE-END (set.)
+    oteeal               | PFX:ot     | MID:ee         | SFX:al     | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle
+                           pfx: VERIFY-OPS: fine operational check | mid: long            | sfx: TRANSFER-CONT (transfer)
+    oteedy               | PFX:ot     | MID:e          | SFX:edy    | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: VERIFY-OPS: fine operational check | mid: cool            | sfx: THOROUGH-END (batch close.)
+    shetsho              | PFX:sh     | MID:etsho      | SFX:-      | CAT:FLOW           | atoms: e=cool/settle t=transfer/drive s=sequence/stage h=watch/monitor o=arrange/work
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: cool/settle+transfer/drive+sequence/stage+watch/monitor+arrange/work | sfx: NONE
+    keeos                | PFX:ke     | MID:eo         | SFX:s      | CAT:TRANSITION     | atoms: e=cool/settle o=arrange/work
+                           pfx: HEAT-BURST: short heat application | mid: open            | sfx: NEXT (; step)
+    shey                 | PFX:sh     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: set             | sfx: NONE
+    qokeedy              | PFX:qo     | MID:ke         | SFX:edy    | CAT:THERMAL        | atoms: k=heat/apply-energy e=cool/settle
+                           pfx: HEAT-SRC: fire/furnace management | mid: steady          | sfx: THOROUGH-END (batch close.)
+    qokal                | PFX:qo     | MID:k          | SFX:al     | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: TRANSFER-CONT (transfer)
+    dal                  | PFX:da     | MID:l          | SFX:-      | CAT:STAGING        | atoms: l=frame/state
+                           pfx: SETUP: initialize/configure apparatus | mid: frame           | sfx: NONE [LINE-FINAL]
+
+    >> READING: [TEST] sustain | [MONITOR] cool [deep.] | [HEAT-SRC] transfer [set.] | [VERIFY-OPS] long [transfer] | [VERIFY-OPS] cool [batch close.] | [MONITOR] cool/settle+transfer/drive+sequence/stage+watch/monitor+arrange/work | [HEAT-BURST] open [; step] | [MONITOR] set | [HEAT-SRC] steady [batch close.] | [HEAT-SRC] heat [transfer] | [SETUP] frame
+
+  --- Line 42 (4 tokens) ---
+    tshey                | PFX:sh     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: set             | sfx: NONE [LINE-INIT]
+    sheol                | PFX:sh     | MID:eol        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle o=arrange/work l=frame/state
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: sustain         | sfx: NONE
+    cheolshy             | PFX:ch     | MID:eols       | SFX:hy     | CAT:STAGING        | atoms: e=cool/settle o=arrange/work l=frame/state s=sequence/stage
+                           pfx: TEST: active test/check fire (ch-lane) | mid: cool/settle+arrange/work+frame/state+sequence/stage | sfx: VERIFY-END (confirm.)
+    chalal               | PFX:ch     | MID:al         | SFX:al     | CAT:FLOW           | atoms: a=yield/open l=frame/state
+                           pfx: TEST: active test/check fire (ch-lane) | mid: gather          | sfx: TRANSFER-CONT (transfer) [LINE-FINAL]
+
+    >> READING: [MONITOR] set | [MONITOR] sustain | [TEST] cool/settle+arrange/work+frame/state+sequence/stage [confirm.] | [TEST] gather [transfer]
+
+  PARAGRAPH SUMMARY:
+    Kernel profile: k=4(19%) h=1(5%) e=16(76%)
+    Category breakdown: {'THERMAL': 10, 'OPERATION': 3, 'STAGING': 3, 'TRANSITION': 5, 'FLOW': 5}
+    INTERPRETATION: cooling/settling emphasis | focus on temperature management, material flow control, state change operations
+
+====================================================================================================
+PARAGRAPH 13 of 18
+  Lines: 2 | Kernel: ? | Top categories: ['?']
+  Mode sequence:  | Termination: ?
+  Gallows: t-gallows (transition mode)
+====================================================================================================
+
+  --- Line 43 (11 tokens) ---
+    tar                  | PFX:ta     | MID:r          | SFX:-      | CAT:FLOW           | atoms: r=input/respond
+                           pfx: TRANSFER: move material        | mid: input           | sfx: NONE [LINE-INIT,PAR-INIT]
+    cheal                | PFX:ch     | MID:e          | SFX:al     | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: TEST: active test/check fire (ch-lane) | mid: cool            | sfx: TRANSFER-CONT (transfer)
+    ol                   | PFX:-      | MID:ol         | SFX:-      | CAT:STAGING        | atoms: o=arrange/work l=frame/state
+                           pfx: BARE                           | mid: continue        | sfx: NONE
+    sheey                | PFX:sh     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: deep            | sfx: NONE
+    qotal                | PFX:qo     | MID:t          | SFX:al     | CAT:FLOW           | atoms: t=transfer/drive
+                           pfx: HEAT-SRC: fire/furnace management | mid: transfer        | sfx: TRANSFER-CONT (transfer)
+    sheal                | PFX:sh     | MID:e          | SFX:al     | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: cool            | sfx: TRANSFER-CONT (transfer)
+    qokal                | PFX:qo     | MID:k          | SFX:al     | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: TRANSFER-CONT (transfer)
+    sheedy               | PFX:sh     | MID:e          | SFX:edy    | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: cool            | sfx: THOROUGH-END (batch close.)
+    okeshedy             | PFX:ok     | MID:esh        | SFX:edy    | CAT:MONITORING     | atoms: e=cool/settle s=sequence/stage h=watch/monitor
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: cool/settle+sequence/stage+watch/monitor | sfx: THOROUGH-END (batch close.)
+    shokey               | PFX:sh     | MID:ok         | SFX:ey     | CAT:CONTAINMENT    | atoms: o=arrange/work k=heat/apply-energy
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: seal            | sfx: SELECTIVE-END (set.)
+    qokaiin              | PFX:qo     | MID:k          | SFX:aiin   | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: GATE (bounded loop) [LINE-FINAL]
+
+    >> READING: [TRANSFER] input | [TEST] cool [transfer] | continue | [MONITOR] deep | [HEAT-SRC] transfer [transfer] | [MONITOR] cool [transfer] | [HEAT-SRC] heat [transfer] | [MONITOR] cool [batch close.] | [VESSEL-TEMP] cool/settle+sequence/stage+watch/monitor [batch close.] | [MONITOR] seal [set.] | [HEAT-SRC] heat [bounded loop]
+
+  --- Line 44 (5 tokens) ---
+    odeeey               | PFX:-      | MID:ode        | SFX:eey    | CAT:MARKING        | atoms: o=arrange/work d=mark/seal e=cool/settle
+                           pfx: BARE                           | mid: arrange/work+mark/seal+cool/settle | sfx: EXTENDED-END (deep.) [LINE-INIT]
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    shey                 | PFX:sh     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: set             | sfx: NONE
+    sheal                | PFX:sh     | MID:e          | SFX:al     | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: cool            | sfx: TRANSFER-CONT (transfer)
+    otshedy              | PFX:ot     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: batch           | sfx: NONE [LINE-FINAL]
+
+    >> READING: arrange/work+mark/seal+cool/settle [deep.] | [HEAT-SRC] heat [deep.] | [MONITOR] set | [MONITOR] cool [transfer] | [VERIFY-OPS] batch
+
+  PARAGRAPH SUMMARY:
+    Kernel profile: k=4(27%) h=1(7%) e=10(67%)
+    Category breakdown: {'FLOW': 2, 'THERMAL': 8, 'STAGING': 1, 'MONITORING': 1, 'CONTAINMENT': 1, 'MARKING': 1, 'TRANSITION': 1, 'OPERATION': 1}
+    INTERPRETATION: cooling/settling emphasis | focus on ?
+
+====================================================================================================
+PARAGRAPH 14 of 18
+  Lines: 3 | Kernel: ? | Top categories: ['?']
+  Mode sequence:  | Termination: ?
+====================================================================================================
+
+  --- Line 45 (9 tokens) ---
+    qokeedy              | PFX:qo     | MID:ke         | SFX:edy    | CAT:THERMAL        | atoms: k=heat/apply-energy e=cool/settle
+                           pfx: HEAT-SRC: fire/furnace management | mid: steady          | sfx: THOROUGH-END (batch close.) [LINE-INIT,PAR-INIT]
+    qokeedy              | PFX:qo     | MID:ke         | SFX:edy    | CAT:THERMAL        | atoms: k=heat/apply-energy e=cool/settle
+                           pfx: HEAT-SRC: fire/furnace management | mid: steady          | sfx: THOROUGH-END (batch close.)
+    shol                 | PFX:sh     | MID:ol         | SFX:-      | CAT:STAGING        | atoms: o=arrange/work l=frame/state
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: continue        | sfx: NONE
+    shedar               | PFX:sh     | MID:ed         | SFX:ar     | CAT:FLOW           | atoms: e=cool/settle d=mark/seal
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: discharge       | sfx: CLOSE-CONT (release,)
+    chedy                | PFX:ch     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: batch           | sfx: NONE
+    qoteedy              | PFX:qo     | MID:te         | SFX:edy    | CAT:FLOW           | atoms: t=transfer/drive e=cool/settle
+                           pfx: HEAT-SRC: fire/furnace management | mid: gather          | sfx: THOROUGH-END (batch close.)
+    oteedy               | PFX:ot     | MID:e          | SFX:edy    | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: VERIFY-OPS: fine operational check | mid: cool            | sfx: THOROUGH-END (batch close.)
+    olkeol               | PFX:ol     | MID:k          | SFX:eol    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: CONTINUE: maintain current operation | mid: heat            | sfx: (eol)
+    ltary                | PFX:ta     | MID:ry         | SFX:-      | CAT:TRANSITION     | atoms: r=input/respond y=end/close
+                           pfx: TRANSFER: move material        | mid: finish          | sfx: NONE [LINE-FINAL]
+
+    >> READING: [HEAT-SRC] steady [batch close.] | [HEAT-SRC] steady [batch close.] | [MONITOR] continue | [MONITOR] discharge [release,] | [TEST] batch | [HEAT-SRC] gather [batch close.] | [VERIFY-OPS] cool [batch close.] | [CONTINUE] heat | [TRANSFER] finish
+
+  --- Line 46 (11 tokens) ---
+    chol                 | PFX:ch     | MID:ol         | SFX:-      | CAT:STAGING        | atoms: o=arrange/work l=frame/state
+                           pfx: TEST: active test/check fire (ch-lane) | mid: continue        | sfx: NONE [LINE-INIT]
+    keey                 | PFX:ke     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: HEAT-BURST: short heat application | mid: set             | sfx: NONE
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    cheol                | PFX:ch     | MID:eol        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle o=arrange/work l=frame/state
+                           pfx: TEST: active test/check fire (ch-lane) | mid: sustain         | sfx: NONE
+    chorol               | PFX:ch     | MID:or         | SFX:ol     | CAT:FLOW           | atoms: o=arrange/work r=input/respond
+                           pfx: TEST: active test/check fire (ch-lane) | mid: portion         | sfx: HOLD-CONT (hold)
+    shedy                | PFX:sh     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: batch           | sfx: NONE
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    ol                   | PFX:-      | MID:ol         | SFX:-      | CAT:STAGING        | atoms: o=arrange/work l=frame/state
+                           pfx: BARE                           | mid: continue        | sfx: NONE
+    laiin                | PFX:-      | MID:l          | SFX:aiin   | CAT:STAGING        | atoms: l=frame/state
+                           pfx: BARE                           | mid: frame           | sfx: GATE (bounded loop)
+    chedan               | PFX:ch     | MID:ed         | SFX:an     | CAT:FLOW           | atoms: e=cool/settle d=mark/seal
+                           pfx: TEST: active test/check fire (ch-lane) | mid: discharge       | sfx: BIND (~) [LINE-FINAL]
+
+    >> READING: [TEST] continue | [HEAT-BURST] set | [HEAT-SRC] heat [deep.] | [TEST] sustain | [TEST] portion [hold] | [MONITOR] batch | [HEAT-SRC] heat [deep.] | [HEAT-SRC] heat [deep.] | continue | frame [bounded loop] | [TEST] discharge [~]
+
+  --- Line 47 (6 tokens) ---
+    ssheey               | PFX:sh     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: deep            | sfx: NONE [LINE-INIT]
+    okeeol               | PFX:ok     | MID:eeol       | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle o=arrange/work l=frame/state
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: overnight       | sfx: NONE
+    lchey                | PFX:lch    | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: PREP: strip/extract            | mid: set             | sfx: NONE
+    qokaly               | PFX:qo     | MID:ka         | SFX:ly     | CAT:THERMAL        | atoms: k=heat/apply-energy a=yield/open
+                           pfx: HEAT-SRC: fire/furnace management | mid: fire            | sfx: SETTLED-END (end.)
+    lcheedy              | PFX:lch    | MID:e          | SFX:edy    | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: PREP: strip/extract            | mid: cool            | sfx: THOROUGH-END (batch close.)
+    oloraiin             | PFX:ol     | MID:or         | SFX:aiin   | CAT:FLOW           | atoms: o=arrange/work r=input/respond
+                           pfx: CONTINUE: maintain current operation | mid: portion         | sfx: GATE (bounded loop) [LINE-FINAL]
+
+    >> READING: [MONITOR] deep | [VESSEL-TEMP] overnight | [PREP] set | [HEAT-SRC] fire [end.] | [PREP] cool [batch close.] | [CONTINUE] portion [bounded loop]
+
+  PARAGRAPH SUMMARY:
+    Kernel profile: k=7(30%) h=0(0%) e=16(70%)
+    Category breakdown: {'THERMAL': 12, 'STAGING': 4, 'FLOW': 5, 'OPERATION': 2, 'TRANSITION': 3}
+    INTERPRETATION: cooling/settling emphasis | focus on ?
+
+====================================================================================================
+PARAGRAPH 15 of 18
+  Lines: 2 | Kernel: ? | Top categories: ['?']
+  Mode sequence:  | Termination: ?
+  Gallows: p-gallows (stable mode)
+====================================================================================================
+
+  --- Line 48 (9 tokens) ---
+    polarar              | PFX:po     | MID:lar        | SFX:ar     | CAT:FLOW           | atoms: l=frame/state a=yield/open r=input/respond
+                           pfx: PRE-WORK: preliminary operation | mid: frame/state+yield/open+input/respond | sfx: CLOSE-CONT (release,) [LINE-INIT,PAR-INIT]
+    lshedy               | PFX:lsh    | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: LINK: verify connection        | mid: batch           | sfx: NONE
+    qotolaiin            | PFX:qo     | MID:tol        | SFX:aiin   | CAT:FLOW           | atoms: t=transfer/drive o=arrange/work l=frame/state
+                           pfx: HEAT-SRC: fire/furnace management | mid: transfer/drive+arrange/work+frame/state | sfx: GATE (bounded loop)
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    shkchy               | PFX:sh     | MID:kc         | SFX:hy     | CAT:CONTAINMENT    | atoms: k=heat/apply-energy c=adjust/loop
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: bond            | sfx: VERIFY-END (confirm.)
+    opchealol            | PFX:-      | MID:opcheal    | SFX:ol     | CAT:MARKING        | atoms: o=arrange/work p=pause/mark c=adjust/loop h=watch/monitor e=cool/settle a=yield/open l=frame/state
+                           pfx: BARE                           | mid: arrange/work+pause/mark+adjust/loop+watch/monitor+cool/settle+yield/open+frame/state | sfx: HOLD-CONT (hold)
+    kchy                 | PFX:kch    | MID:y          | SFX:-      | CAT:TRANSITION     | atoms: y=end/close
+                           pfx: PRECISION: controlled heat pulse | mid: end             | sfx: NONE
+    sam                  | PFX:sa     | MID:m          | SFX:-      | CAT:TRANSITION     | atoms: m=finalize
+                           pfx: SCAFFOLD: structural arrangement | mid: final           | sfx: NONE [LINE-FINAL]
+
+    >> READING: [PRE-WORK] frame/state+yield/open+input/respond [release,] | [LINK] batch | [HEAT-SRC] transfer/drive+arrange/work+frame/state [bounded loop] | [HEAT-SRC] heat [deep.] | [HEAT-SRC] heat [deep.] | [MONITOR] bond [confirm.] | arrange/work+pause/mark+adjust/loop+watch/monitor+cool/settle+yield/open+frame/state [hold] | [PRECISION] end | [SCAFFOLD] final
+
+  --- Line 49 (13 tokens) ---
+    okeey                | PFX:ok     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: deep            | sfx: NONE [LINE-INIT]
+    lr                   | PFX:-      | MID:l          | SFX:r      | CAT:STAGING        | atoms: l=frame/state
+                           pfx: BARE                           | mid: frame           | sfx: CONTINUE (,)
+    ain                  | PFX:-      | MID:ain        | SFX:-      | CAT:FLOW           | atoms: a=yield/open i=iterate/cycle n=halt/bind
+                           pfx: BARE                           | mid: intake          | sfx: NONE
+    l                    | PFX:-      | MID:l          | SFX:-      | CAT:STAGING        | atoms: l=frame/state
+                           pfx: BARE                           | mid: frame           | sfx: NONE
+    ol                   | PFX:-      | MID:ol         | SFX:-      | CAT:STAGING        | atoms: o=arrange/work l=frame/state
+                           pfx: BARE                           | mid: continue        | sfx: NONE
+    sheed                | PFX:sh     | MID:eed        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle d=mark/seal
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: extended        | sfx: NONE
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    sheol                | PFX:sh     | MID:eol        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle o=arrange/work l=frame/state
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: sustain         | sfx: NONE
+    qokeedy              | PFX:qo     | MID:ke         | SFX:edy    | CAT:THERMAL        | atoms: k=heat/apply-energy e=cool/settle
+                           pfx: HEAT-SRC: fire/furnace management | mid: steady          | sfx: THOROUGH-END (batch close.)
+    shedy                | PFX:sh     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: batch           | sfx: NONE
+    qoky                 | PFX:qo     | MID:k          | SFX:y      | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: END (.)
+    leeesain             | PFX:-      | MID:leees      | SFX:ain    | CAT:THERMAL        | atoms: l=frame/state e=cool/settle e=cool/settle e=cool/settle s=sequence/stage
+                           pfx: BARE                           | mid: frame/state+cool/settle+cool/settle+cool/settle+sequence/stage | sfx: CHECK (intake)
+    am                   | PFX:-      | MID:am         | SFX:-      | CAT:TRANSITION     | atoms: a=yield/open m=finalize
+                           pfx: BARE                           | mid: finalize        | sfx: NONE [LINE-FINAL]
+
+    >> READING: [VESSEL-TEMP] deep | frame [,] | intake | frame | continue | [MONITOR] extended | [HEAT-SRC] heat [deep.] | [MONITOR] sustain | [HEAT-SRC] steady [batch close.] | [MONITOR] batch | [HEAT-SRC] heat [.] | frame/state+cool/settle+cool/settle+cool/settle+sequence/stage [intake] | finalize
+
+  PARAGRAPH SUMMARY:
+    Kernel profile: k=6(32%) h=1(5%) e=12(63%)
+    Category breakdown: {'FLOW': 3, 'OPERATION': 2, 'THERMAL': 9, 'CONTAINMENT': 1, 'MARKING': 1, 'TRANSITION': 3, 'STAGING': 3}
+    INTERPRETATION: cooling/settling emphasis | focus on ?
+
+====================================================================================================
+PARAGRAPH 16 of 18
+  Lines: 3 | Kernel: ? | Top categories: ['?']
+  Mode sequence:  | Termination: ?
+  Gallows: p-gallows (stable mode)
+====================================================================================================
+
+  --- Line 5 (12 tokens) ---
+    pocharal             | PFX:po     | MID:ar         | SFX:al     | CAT:FLOW           | atoms: a=yield/open r=input/respond
+                           pfx: PRE-WORK: preliminary operation | mid: release         | sfx: TRANSFER-CONT (transfer) [LINE-INIT,PAR-INIT]
+    okedar               | PFX:ok     | MID:ed         | SFX:ar     | CAT:FLOW           | atoms: e=cool/settle d=mark/seal
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: discharge       | sfx: CLOSE-CONT (release,)
+    shedy                | PFX:sh     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: batch           | sfx: NONE
+    oteey                | PFX:ot     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: deep            | sfx: NONE
+    qokey                | PFX:qo     | MID:k          | SFX:ey     | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: SELECTIVE-END (set.)
+    lkar                 | PFX:lk     | MID:ar         | SFX:-      | CAT:FLOW           | atoms: a=yield/open r=input/respond
+                           pfx: WATCH: observe state           | mid: release         | sfx: NONE
+    sheeky               | PFX:sh     | MID:eek        | SFX:y      | CAT:CONTAINMENT    | atoms: e=cool/settle e=cool/settle k=heat/apply-energy
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: lock            | sfx: END (.)
+    okalor               | PFX:ok     | MID:al         | SFX:or     | CAT:FLOW           | atoms: a=yield/open l=frame/state
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: gather          | sfx: PORTION-CONT (divide,)
+    shedy                | PFX:sh     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: batch           | sfx: NONE
+    rkar                 | PFX:ka     | MID:r          | SFX:-      | CAT:FLOW           | atoms: r=input/respond
+                           pfx: HEAT-YIELD: fire-open          | mid: input           | sfx: NONE
+    otan                 | PFX:ot     | MID:an         | SFX:-      | CAT:CONTAINMENT    | atoms: a=yield/open n=halt/bind
+                           pfx: VERIFY-OPS: fine operational check | mid: bind            | sfx: NONE
+    okdy                 | PFX:ok     | MID:dy         | SFX:-      | CAT:CONTAINMENT    | atoms: d=mark/seal y=end/close
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: seal            | sfx: NONE [LINE-FINAL]
+
+    >> READING: [PRE-WORK] release [transfer] | [VESSEL-TEMP] discharge [release,] | [MONITOR] batch | [VERIFY-OPS] deep | [HEAT-SRC] heat [set.] | [WATCH] release | [MONITOR] lock [.] | [VESSEL-TEMP] gather [divide,] | [MONITOR] batch | [HEAT-YIELD] input | [VERIFY-OPS] bind | [VESSEL-TEMP] seal
+
+  --- Line 50 (10 tokens) ---
+    ssheey               | PFX:sh     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: deep            | sfx: NONE [LINE-INIT]
+    lshey                | PFX:lsh    | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: LINK: verify connection        | mid: set             | sfx: NONE
+    qol                  | PFX:qo     | MID:l          | SFX:-      | CAT:STAGING        | atoms: l=frame/state
+                           pfx: HEAT-SRC: fire/furnace management | mid: frame           | sfx: NONE
+    cheey                | PFX:ch     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: deep            | sfx: NONE
+    chey                 | PFX:ch     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: set             | sfx: NONE
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    okeey                | PFX:ok     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: deep            | sfx: NONE
+    qokain               | PFX:qo     | MID:k          | SFX:ain    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: CHECK (intake)
+    cheey                | PFX:ch     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: deep            | sfx: NONE
+    qotain               | PFX:qo     | MID:t          | SFX:ain    | CAT:FLOW           | atoms: t=transfer/drive
+                           pfx: HEAT-SRC: fire/furnace management | mid: transfer        | sfx: CHECK (intake) [LINE-FINAL]
+
+    >> READING: [MONITOR] deep | [LINK] set | [HEAT-SRC] frame | [TEST] deep | [TEST] set | [HEAT-SRC] heat [deep.] | [VESSEL-TEMP] deep | [HEAT-SRC] heat [intake] | [TEST] deep | [HEAT-SRC] transfer [intake]
+
+  --- Line 51 (4 tokens) ---
+    saiin                | PFX:sa     | MID:iin        | SFX:-      | CAT:STAGING        | atoms: i=iterate/cycle i=iterate/cycle n=halt/bind
+                           pfx: SCAFFOLD: structural arrangement | mid: iterate         | sfx: NONE [LINE-INIT]
+    chekeey              | PFX:ch     | MID:ek         | SFX:eey    | CAT:OPERATION      | atoms: e=cool/settle k=heat/apply-energy
+                           pfx: TEST: active test/check fire (ch-lane) | mid: exact           | sfx: EXTENDED-END (deep.)
+    shey                 | PFX:sh     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: set             | sfx: NONE
+    cheosaiin            | PFX:ch     | MID:eos        | SFX:aiin   | CAT:OPERATION      | atoms: e=cool/settle o=arrange/work s=sequence/stage
+                           pfx: TEST: active test/check fire (ch-lane) | mid: cool/settle+arrange/work+sequence/stage | sfx: GATE (bounded loop) [LINE-FINAL]
+
+    >> READING: [SCAFFOLD] iterate | [TEST] exact [deep.] | [MONITOR] set | [TEST] cool/settle+arrange/work+sequence/stage [bounded loop]
+
+  PARAGRAPH SUMMARY:
+    Kernel profile: k=5(20%) h=0(0%) e=20(80%)
+    Category breakdown: {'FLOW': 6, 'OPERATION': 4, 'THERMAL': 8, 'CONTAINMENT': 3, 'TRANSITION': 3, 'STAGING': 2}
+    INTERPRETATION: cooling/settling emphasis | focus on ?
+
+====================================================================================================
+PARAGRAPH 17 of 18
+  Lines: 5 | Kernel: ? | Top categories: ['?']
+  Mode sequence:  | Termination: ?
+  Gallows: p-gallows (stable mode)
+====================================================================================================
+
+  --- Line 52 (10 tokens) ---
+    pchedal              | PFX:pch    | MID:ed         | SFX:al     | CAT:FLOW           | atoms: e=cool/settle d=mark/seal
+                           pfx: PREP: process material         | mid: discharge       | sfx: TRANSFER-CONT (transfer) [LINE-INIT,PAR-INIT]
+    oteey                | PFX:ot     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: deep            | sfx: NONE
+    qol                  | PFX:qo     | MID:l          | SFX:-      | CAT:STAGING        | atoms: l=frame/state
+                           pfx: HEAT-SRC: fire/furnace management | mid: frame           | sfx: NONE
+    keedy                | PFX:ke     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: HEAT-BURST: short heat application | mid: batch           | sfx: NONE
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    qoty                 | PFX:qo     | MID:t          | SFX:y      | CAT:FLOW           | atoms: t=transfer/drive
+                           pfx: HEAT-SRC: fire/furnace management | mid: transfer        | sfx: END (.)
+    chepchy              | PFX:ch     | MID:epc        | SFX:hy     | CAT:MARKING        | atoms: e=cool/settle p=pause/mark c=adjust/loop
+                           pfx: TEST: active test/check fire (ch-lane) | mid: cool/settle+pause/mark+adjust/loop | sfx: VERIFY-END (confirm.)
+    qopchey              | PFX:qo     | MID:pch        | SFX:ey     | CAT:MARKING        | atoms: p=pause/mark c=adjust/loop h=watch/monitor
+                           pfx: HEAT-SRC: fire/furnace management | mid: pause           | sfx: SELECTIVE-END (set.)
+    lkaiin               | PFX:lk     | MID:aiin       | SFX:-      | CAT:TRANSITION     | atoms: a=yield/open i=iterate/cycle i=iterate/cycle n=halt/bind
+                           pfx: WATCH: observe state           | mid: settle          | sfx: NONE
+    otalsy               | PFX:ot     | MID:als        | SFX:y      | CAT:STAGING        | atoms: a=yield/open l=frame/state s=sequence/stage
+                           pfx: VERIFY-OPS: fine operational check | mid: yield/open+frame/state+sequence/stage | sfx: END (.) [LINE-FINAL]
+
+    >> READING: [PREP] discharge [transfer] | [VERIFY-OPS] deep | [HEAT-SRC] frame | [HEAT-BURST] batch | [HEAT-SRC] heat [deep.] | [HEAT-SRC] transfer [.] | [TEST] cool/settle+pause/mark+adjust/loop [confirm.] | [HEAT-SRC] pause [set.] | [WATCH] settle | [VERIFY-OPS] yield/open+frame/state+sequence/stage [.]
+
+  --- Line 53 (10 tokens) ---
+    sshey                | PFX:sh     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: set             | sfx: NONE [LINE-INIT]
+    qokedy               | PFX:qo     | MID:k          | SFX:edy    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: THOROUGH-END (batch close.)
+    qokaiin              | PFX:qo     | MID:k          | SFX:aiin   | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: GATE (bounded loop)
+    shdy                 | PFX:sh     | MID:dy         | SFX:-      | CAT:CONTAINMENT    | atoms: d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: seal            | sfx: NONE
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    chedy                | PFX:ch     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: batch           | sfx: NONE
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    lchedy               | PFX:lch    | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: PREP: strip/extract            | mid: batch           | sfx: NONE
+    loty                 | PFX:ot     | MID:y          | SFX:-      | CAT:TRANSITION     | atoms: y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: end             | sfx: NONE [LINE-FINAL]
+
+    >> READING: [MONITOR] set | [HEAT-SRC] heat [batch close.] | [HEAT-SRC] heat [bounded loop] | [MONITOR] seal | [HEAT-SRC] heat [deep.] | [TEST] batch | [HEAT-SRC] heat [deep.] | [HEAT-SRC] heat [deep.] | [PREP] batch | [VERIFY-OPS] end
+
+  --- Line 54 (5 tokens) ---
+    dshey                | PFX:sh     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: set             | sfx: NONE [LINE-INIT]
+    qoteeey              | PFX:qo     | MID:te         | SFX:eey    | CAT:FLOW           | atoms: t=transfer/drive e=cool/settle
+                           pfx: HEAT-SRC: fire/furnace management | mid: gather          | sfx: EXTENDED-END (deep.)
+    darchedy             | PFX:da     | MID:rch        | SFX:edy    | CAT:FLOW           | atoms: r=input/respond c=adjust/loop h=watch/monitor
+                           pfx: SETUP: initialize/configure apparatus | mid: input/respond+adjust/loop+watch/monitor | sfx: THOROUGH-END (batch close.)
+    qokey                | PFX:qo     | MID:k          | SFX:ey     | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: SELECTIVE-END (set.)
+    qoty                 | PFX:qo     | MID:t          | SFX:y      | CAT:FLOW           | atoms: t=transfer/drive
+                           pfx: HEAT-SRC: fire/furnace management | mid: transfer        | sfx: END (.) [LINE-FINAL]
+
+    >> READING: [MONITOR] set | [HEAT-SRC] gather [deep.] | [SETUP] input/respond+adjust/loop+watch/monitor [batch close.] | [HEAT-SRC] heat [set.] | [HEAT-SRC] transfer [.]
+
+  --- Line 6 (11 tokens) ---
+    ocheey               | PFX:-      | MID:och        | SFX:eey    | CAT:MARKING        | atoms: o=arrange/work c=adjust/loop h=watch/monitor
+                           pfx: BARE                           | mid: arrange/work+adjust/loop+watch/monitor | sfx: EXTENDED-END (deep.) [LINE-INIT]
+    dain                 | PFX:da     | MID:in         | SFX:-      | CAT:MARKING        | atoms: i=iterate/cycle n=halt/bind
+                           pfx: SETUP: initialize/configure apparatus | mid: link            | sfx: NONE
+    shek                 | PFX:sh     | MID:ek         | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle k=heat/apply-energy
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: exact           | sfx: NONE
+    okeedy               | PFX:ok     | MID:e          | SFX:edy    | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: cool            | sfx: THOROUGH-END (batch close.)
+    okey                 | PFX:ok     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: set             | sfx: NONE
+    shedy                | PFX:sh     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: batch           | sfx: NONE
+    qokealdy             | PFX:qo     | MID:keal       | SFX:dy     | CAT:THERMAL        | atoms: k=heat/apply-energy e=cool/settle a=yield/open l=frame/state
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat/apply-energy+cool/settle+yield/open+frame/state | sfx: SEAL-END (close.)
+    shcthy               | PFX:sh     | MID:ct         | SFX:hy     | CAT:MONITORING     | atoms: c=adjust/loop t=transfer/drive
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: control         | sfx: VERIFY-END (confirm.)
+    qotedy               | PFX:qo     | MID:t          | SFX:edy    | CAT:FLOW           | atoms: t=transfer/drive
+                           pfx: HEAT-SRC: fire/furnace management | mid: transfer        | sfx: THOROUGH-END (batch close.)
+    san                  | PFX:sa     | MID:n          | SFX:-      | CAT:TRANSITION     | atoms: n=halt/bind
+                           pfx: SCAFFOLD: structural arrangement | mid: halt            | sfx: NONE
+    am                   | PFX:-      | MID:am         | SFX:-      | CAT:TRANSITION     | atoms: a=yield/open m=finalize
+                           pfx: BARE                           | mid: finalize        | sfx: NONE [LINE-FINAL]
+
+    >> READING: arrange/work+adjust/loop+watch/monitor [deep.] | [SETUP] link | [MONITOR] exact | [VESSEL-TEMP] cool [batch close.] | [VESSEL-TEMP] set | [MONITOR] batch | [HEAT-SRC] heat/apply-energy+cool/settle+yield/open+frame/state [close.] | [MONITOR] control [confirm.] | [HEAT-SRC] transfer [batch close.] | [SCAFFOLD] halt | finalize
+
+  --- Line 7 (8 tokens) ---
+    sain                 | PFX:sa     | MID:in         | SFX:-      | CAT:MARKING        | atoms: i=iterate/cycle n=halt/bind
+                           pfx: SCAFFOLD: structural arrangement | mid: link            | sfx: NONE [LINE-INIT]
+    chey                 | PFX:ch     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: set             | sfx: NONE
+    she                  | PFX:sh     | MID:e          | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: cool            | sfx: NONE
+    olshedy              | PFX:ol     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: CONTINUE: maintain current operation | mid: batch           | sfx: NONE
+    qokeey               | PFX:qo     | MID:k          | SFX:eey    | CAT:THERMAL        | atoms: k=heat/apply-energy
+                           pfx: HEAT-SRC: fire/furnace management | mid: heat            | sfx: EXTENDED-END (deep.)
+    okeeody              | PFX:ok     | MID:eeo        | SFX:dy     | CAT:OPERATION      | atoms: e=cool/settle e=cool/settle o=arrange/work
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: wide            | sfx: SEAL-END (close.)
+    qoeedy               | PFX:qo     | MID:e          | SFX:edy    | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: HEAT-SRC: fire/furnace management | mid: cool            | sfx: THOROUGH-END (batch close.)
+    olshedy              | PFX:ol     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: CONTINUE: maintain current operation | mid: batch           | sfx: NONE [LINE-FINAL]
+
+    >> READING: [SCAFFOLD] link | [TEST] set | [MONITOR] cool | [CONTINUE] batch | [HEAT-SRC] heat [deep.] | [VESSEL-TEMP] wide [close.] | [HEAT-SRC] cool [batch close.] | [CONTINUE] batch
+
+  PARAGRAPH SUMMARY:
+    Kernel profile: k=10(29%) h=3(9%) e=22(63%)
+    Category breakdown: {'FLOW': 6, 'THERMAL': 13, 'STAGING': 2, 'OPERATION': 8, 'MARKING': 5, 'TRANSITION': 8, 'CONTAINMENT': 1, 'MONITORING': 1}
+    INTERPRETATION: cooling/settling emphasis | focus on ?
+
+====================================================================================================
+PARAGRAPH 18 of 18
+  Lines: 2 | Kernel: ? | Top categories: ['?']
+  Mode sequence:  | Termination: ?
+====================================================================================================
+
+  --- Line 8 (14 tokens) ---
+    daroal               | PFX:da     | MID:ro         | SFX:al     | CAT:FLOW           | atoms: r=input/respond o=arrange/work
+                           pfx: SETUP: initialize/configure apparatus | mid: input/respond+arrange/work | sfx: TRANSFER-CONT (transfer) [LINE-INIT,PAR-INIT]
+    okey                 | PFX:ok     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: set             | sfx: NONE
+    chedy                | PFX:ch     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: TEST: active test/check fire (ch-lane) | mid: batch           | sfx: NONE
+    okey                 | PFX:ok     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: set             | sfx: NONE
+    rain                 | PFX:-      | MID:r          | SFX:ain    | CAT:FLOW           | atoms: r=input/respond
+                           pfx: BARE                           | mid: input           | sfx: CHECK (intake)
+    okechy               | PFX:ok     | MID:ec         | SFX:hy     | CAT:MARKING        | atoms: e=cool/settle c=adjust/loop
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: cool/settle+adjust/loop | sfx: VERIFY-END (confirm.)
+    qoisol               | PFX:qo     | MID:is         | SFX:ol     | CAT:STAGING        | atoms: i=iterate/cycle s=sequence/stage
+                           pfx: HEAT-SRC: fire/furnace management | mid: iterate/cycle+sequence/stage | sfx: HOLD-CONT (hold)
+    qotar                | PFX:qo     | MID:t          | SFX:ar     | CAT:FLOW           | atoms: t=transfer/drive
+                           pfx: HEAT-SRC: fire/furnace management | mid: transfer        | sfx: CLOSE-CONT (release,)
+    adchey               | PFX:-      | MID:adch       | SFX:ey     | CAT:MARKING        | atoms: a=yield/open d=mark/seal c=adjust/loop h=watch/monitor
+                           pfx: BARE                           | mid: yield/open+mark/seal+adjust/loop+watch/monitor | sfx: SELECTIVE-END (set.)
+    ofcho                | PFX:-      | MID:ofcho      | SFX:-      | CAT:MARKING        | atoms: o=arrange/work f=flag/mark c=adjust/loop h=watch/monitor o=arrange/work
+                           pfx: BARE                           | mid: arrange/work+flag/mark+adjust/loop+watch/monitor+arrange/work | sfx: NONE
+    lteody               | PFX:te     | MID:o          | SFX:dy     | CAT:OPERATION      | atoms: o=arrange/work
+                           pfx: PROCESS: gather/collect        | mid: work            | sfx: SEAL-END (close.)
+    oral                 | PFX:or     | MID:al         | SFX:-      | CAT:FLOW           | atoms: a=yield/open l=frame/state
+                           pfx: PORTION: divide/portion out    | mid: gather          | sfx: NONE
+    kechdy               | PFX:ke     | MID:dy         | SFX:-      | CAT:CONTAINMENT    | atoms: d=mark/seal y=end/close
+                           pfx: HEAT-BURST: short heat application | mid: seal            | sfx: NONE
+    lo                   | PFX:-      | MID:lo         | SFX:-      | CAT:TRANSITION     | atoms: l=frame/state o=arrange/work
+                           pfx: BARE                           | mid: open            | sfx: NONE [LINE-FINAL]
+
+    >> READING: [SETUP] input/respond+arrange/work [transfer] | [VESSEL-TEMP] set | [TEST] batch | [VESSEL-TEMP] set | input [intake] | [VESSEL-TEMP] cool/settle+adjust/loop [confirm.] | [HEAT-SRC] iterate/cycle+sequence/stage [hold] | [HEAT-SRC] transfer [release,] | yield/open+mark/seal+adjust/loop+watch/monitor [set.] | arrange/work+flag/mark+adjust/loop+watch/monitor+arrange/work | [PROCESS] work [close.] | [PORTION] gather | [HEAT-BURST] seal | open
+
+  --- Line 9 (14 tokens) ---
+    oteeos               | PFX:ot     | MID:eeo        | SFX:s      | CAT:OPERATION      | atoms: e=cool/settle e=cool/settle o=arrange/work
+                           pfx: VERIFY-OPS: fine operational check | mid: wide            | sfx: NEXT (; step) [LINE-INIT]
+    ar                   | PFX:-      | MID:ar         | SFX:-      | CAT:FLOW           | atoms: a=yield/open r=input/respond
+                           pfx: BARE                           | mid: release         | sfx: NONE
+    cheal                | PFX:ch     | MID:e          | SFX:al     | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: TEST: active test/check fire (ch-lane) | mid: cool            | sfx: TRANSFER-CONT (transfer)
+    okeey                | PFX:ok     | MID:eey        | SFX:-      | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle y=end/close
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: deep            | sfx: NONE
+    shey                 | PFX:sh     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: set             | sfx: NONE
+    lkaiin               | PFX:lk     | MID:aiin       | SFX:-      | CAT:TRANSITION     | atoms: a=yield/open i=iterate/cycle i=iterate/cycle n=halt/bind
+                           pfx: WATCH: observe state           | mid: settle          | sfx: NONE
+    shey                 | PFX:sh     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: set             | sfx: NONE
+    lkeor                | PFX:lk     | MID:e          | SFX:or     | CAT:THERMAL        | atoms: e=cool/settle
+                           pfx: WATCH: observe state           | mid: cool            | sfx: PORTION-CONT (divide,)
+    otain                | PFX:ot     | MID:ain        | SFX:-      | CAT:FLOW           | atoms: a=yield/open i=iterate/cycle n=halt/bind
+                           pfx: VERIFY-OPS: fine operational check | mid: intake          | sfx: NONE
+    shedy                | PFX:sh     | MID:edy        | SFX:-      | CAT:OPERATION      | atoms: e=cool/settle d=mark/seal y=end/close
+                           pfx: MONITOR: passive watch/scan fire (sh-lane) | mid: batch           | sfx: NONE
+    otey                 | PFX:ot     | MID:ey         | SFX:-      | CAT:TRANSITION     | atoms: e=cool/settle y=end/close
+                           pfx: VERIFY-OPS: fine operational check | mid: set             | sfx: NONE
+    l                    | PFX:-      | MID:l          | SFX:-      | CAT:STAGING        | atoms: l=frame/state
+                           pfx: BARE                           | mid: frame           | sfx: NONE
+    ledy                 | PFX:-      | MID:l          | SFX:edy    | CAT:STAGING        | atoms: l=frame/state
+                           pfx: BARE                           | mid: frame           | sfx: THOROUGH-END (batch close.)
+    okeedaram            | PFX:ok     | MID:eedar      | SFX:am     | CAT:THERMAL        | atoms: e=cool/settle e=cool/settle d=mark/seal a=yield/open r=input/respond
+                           pfx: VESSEL-TEMP: coarse thermal check | mid: cool/settle+cool/settle+mark/seal+yield/open+input/respond | sfx: FINAL (. stop) [LINE-FINAL]
+
+    >> READING: [VERIFY-OPS] wide [; step] | release | [TEST] cool [transfer] | [VESSEL-TEMP] deep | [MONITOR] set | [WATCH] settle | [MONITOR] set | [WATCH] cool [divide,] | [VERIFY-OPS] intake | [MONITOR] batch | [VERIFY-OPS] set | frame | frame [batch close.] | [VESSEL-TEMP] cool/settle+cool/settle+mark/seal+yield/open+input/respond [. stop]
+
+  PARAGRAPH SUMMARY:
+    Kernel profile: k=0(0%) h=2(11%) e=16(89%)
+    Category breakdown: {'FLOW': 6, 'TRANSITION': 7, 'OPERATION': 4, 'MARKING': 3, 'STAGING': 3, 'CONTAINMENT': 1, 'THERMAL': 4}
+    INTERPRETATION: cooling/settling emphasis | focus on ?
+
+====================================================================================================
+FOLIO-LEVEL INTERPRETATION
+====================================================================================================
+
+======================================================================
+PROGRAM CARD: f103r                                             [Tier 2]
+======================================================================
+  Section: S - "Stars/Recipes" | STARS
+  Kernel: k=33.0% [~avg]  h=6.7% [-10pp* z=1.7]  e=60.3% [+8pp z=0.9]
+  Roles: EN +10pp* z=1.7 | AX -9pp* z=1.7 | CC ~avg
+  REGIME: REGIME_1 (100%) (C494)
+  Archetype: 6 - HAZARD_TOLERANT (C1016)
+
+  STRUCTURAL PROFILE
+  ----------------------------------------
+  QO-lane:      30.8% [~avg]
+  Sister ch:    41.6% [-20pp z=1.4]
+  ol-morph:     10.7% [~avg] (C1174)
+  Forgiveness:  0.75 [+9pp z=0.8] (C1016)
+  Haz density:  12.7% [-11pp* z=1.6] (C622)
+
+  VOCABULARY
+  ----------------------------------------
+  Bridge: 89.3% [+3pp z=0.6] | Dark: 6.1% [~avg]
+  Unique MIDDLEs: 108 | Compound: 33.9% [~avg]
+  AXM vocab: 45 | AXM residual: -0.3
+======================================================================

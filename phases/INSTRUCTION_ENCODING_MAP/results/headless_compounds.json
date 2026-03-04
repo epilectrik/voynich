@@ -1,0 +1,682 @@
+{
+  "test1_inventory": {
+    "single_types": 24,
+    "single_tokens": 7132,
+    "headed_types": 802,
+    "headed_tokens": 12676,
+    "headless_types": 467,
+    "headless_tokens": 3288,
+    "headless_type_fraction": 0.3680063041765169,
+    "headless_token_fraction": 0.20596341768980206,
+    "first_atom_distribution": {
+      "y": {
+        "types": 36,
+        "tokens": 71
+      },
+      "d": {
+        "types": 59,
+        "tokens": 805
+      },
+      "c": {
+        "types": 61,
+        "tokens": 612
+      },
+      "i": {
+        "types": 33,
+        "tokens": 894
+      },
+      "s": {
+        "types": 19,
+        "tokens": 32
+      },
+      "l": {
+        "types": 92,
+        "tokens": 428
+      },
+      "g": {
+        "types": 1,
+        "tokens": 1
+      },
+      "r": {
+        "types": 43,
+        "tokens": 122
+      },
+      "f": {
+        "types": 19,
+        "tokens": 44
+      },
+      "q": {
+        "types": 46,
+        "tokens": 104
+      },
+      "p": {
+        "types": 48,
+        "tokens": 157
+      },
+      "h": {
+        "types": 8,
+        "tokens": 16
+      },
+      "x": {
+        "types": 1,
+        "tokens": 1
+      },
+      "m": {
+        "types": 1,
+        "tokens": 1
+      }
+    },
+    "top20": [
+      {
+        "middle": "dy",
+        "tokens": 675,
+        "atoms": [
+          "d",
+          "y"
+        ]
+      },
+      {
+        "middle": "iin",
+        "tokens": 560,
+        "atoms": [
+          "ii",
+          "n"
+        ]
+      },
+      {
+        "middle": "in",
+        "tokens": 264,
+        "atoms": [
+          "i",
+          "n"
+        ]
+      },
+      {
+        "middle": "ck",
+        "tokens": 197,
+        "atoms": [
+          "c",
+          "k"
+        ]
+      },
+      {
+        "middle": "ckh",
+        "tokens": 127,
+        "atoms": [
+          "c",
+          "k",
+          "h"
+        ]
+      },
+      {
+        "middle": "ct",
+        "tokens": 95,
+        "atoms": [
+          "c",
+          "t"
+        ]
+      },
+      {
+        "middle": "pch",
+        "tokens": 79,
+        "atoms": [
+          "p",
+          "c",
+          "h"
+        ]
+      },
+      {
+        "middle": "lch",
+        "tokens": 74,
+        "atoms": [
+          "l",
+          "c",
+          "h"
+        ]
+      },
+      {
+        "middle": "lk",
+        "tokens": 58,
+        "atoms": [
+          "l",
+          "k"
+        ]
+      },
+      {
+        "middle": "cth",
+        "tokens": 49,
+        "atoms": [
+          "c",
+          "t",
+          "h"
+        ]
+      },
+      {
+        "middle": "ly",
+        "tokens": 49,
+        "atoms": [
+          "l",
+          "y"
+        ]
+      },
+      {
+        "middle": "cph",
+        "tokens": 36,
+        "atoms": [
+          "c",
+          "p",
+          "h"
+        ]
+      },
+      {
+        "middle": "ry",
+        "tokens": 33,
+        "atoms": [
+          "r",
+          "y"
+        ]
+      },
+      {
+        "middle": "lo",
+        "tokens": 33,
+        "atoms": [
+          "l",
+          "o"
+        ]
+      },
+      {
+        "middle": "lsh",
+        "tokens": 24,
+        "atoms": [
+          "l",
+          "s",
+          "h"
+        ]
+      },
+      {
+        "middle": "fch",
+        "tokens": 23,
+        "atoms": [
+          "f",
+          "c",
+          "h"
+        ]
+      },
+      {
+        "middle": "dai",
+        "tokens": 23,
+        "atoms": [
+          "d",
+          "a",
+          "i"
+        ]
+      },
+      {
+        "middle": "lke",
+        "tokens": 20,
+        "atoms": [
+          "l",
+          "k",
+          "e"
+        ]
+      },
+      {
+        "middle": "ir",
+        "tokens": 19,
+        "atoms": [
+          "i",
+          "r"
+        ]
+      },
+      {
+        "middle": "qo",
+        "tokens": 18,
+        "atoms": [
+          "q",
+          "o"
+        ]
+      }
+    ]
+  },
+  "test2_categories": {
+    "headed_cats": {
+      "THERMAL": 2226,
+      "STAGING": 1057,
+      "MARKING": 570,
+      "OPERATION": 2606,
+      "FLOW": 2919,
+      "TRANSITION": 2599,
+      "UNKNOWN": 221,
+      "CONTAINMENT": 297,
+      "MONITORING": 181
+    },
+    "headless_cats": {
+      "MARKING": 783,
+      "CONTAINMENT": 802,
+      "MONITORING": 184,
+      "STAGING": 746,
+      "OPERATION": 277,
+      "THERMAL": 67,
+      "TRANSITION": 144,
+      "UNKNOWN": 105,
+      "FLOW": 180
+    },
+    "chi2": 5154.692083489921,
+    "p": 0.0,
+    "cramers_v": 0.5682383025167576,
+    "enrichment": {
+      "CONTAINMENT": 10.410422145215332,
+      "MARKING": 5.295870149827122,
+      "MONITORING": 3.919130002285223,
+      "STAGING": 2.720910532724716,
+      "UNKNOWN": 1.8316709053076594,
+      "OPERATION": 0.4097847378219456,
+      "FLOW": 0.23773265016766568,
+      "TRANSITION": 0.21360264896942396,
+      "THERMAL": 0.11603795445552778
+    }
+  },
+  "test3_abbreviation": {
+    "tested_count": 55,
+    "has_headed_version": 47,
+    "no_headed_version": 8,
+    "mean_headless_fraction": 0.7061173507080998,
+    "abbreviation_count": 9,
+    "dominant_count": 22,
+    "mixed_count": 24,
+    "details": [
+      {
+        "headless": "dy",
+        "headless_tokens": 675,
+        "headed_versions": {
+          "edy": 1938,
+          "ody": 1
+        },
+        "total_headed_tokens": 1939,
+        "headless_fraction": 0.25822494261667944
+      },
+      {
+        "headless": "iin",
+        "headless_tokens": 560,
+        "headed_versions": {
+          "aiin": 834,
+          "oiin": 32
+        },
+        "total_headed_tokens": 866,
+        "headless_fraction": 0.39270687237026647
+      },
+      {
+        "headless": "in",
+        "headless_tokens": 264,
+        "headed_versions": {
+          "ain": 420,
+          "oin": 6
+        },
+        "total_headed_tokens": 426,
+        "headless_fraction": 0.3826086956521739
+      },
+      {
+        "headless": "ck",
+        "headless_tokens": 197,
+        "headed_versions": {
+          "eck": 90,
+          "ock": 13
+        },
+        "total_headed_tokens": 103,
+        "headless_fraction": 0.6566666666666666
+      },
+      {
+        "headless": "ckh",
+        "headless_tokens": 127,
+        "headed_versions": {
+          "eckh": 29,
+          "ockh": 16
+        },
+        "total_headed_tokens": 45,
+        "headless_fraction": 0.7383720930232558
+      },
+      {
+        "headless": "ct",
+        "headless_tokens": 95,
+        "headed_versions": {
+          "ect": 47,
+          "oct": 14
+        },
+        "total_headed_tokens": 61,
+        "headless_fraction": 0.6089743589743589
+      },
+      {
+        "headless": "pch",
+        "headless_tokens": 79,
+        "headed_versions": {
+          "epch": 8,
+          "opch": 107
+        },
+        "total_headed_tokens": 115,
+        "headless_fraction": 0.4072164948453608
+      },
+      {
+        "headless": "lch",
+        "headless_tokens": 74,
+        "headed_versions": {
+          "alch": 3,
+          "klch": 1,
+          "olch": 8
+        },
+        "total_headed_tokens": 12,
+        "headless_fraction": 0.8604651162790697
+      },
+      {
+        "headless": "lk",
+        "headless_tokens": 58,
+        "headed_versions": {
+          "alk": 10,
+          "olk": 27
+        },
+        "total_headed_tokens": 37,
+        "headless_fraction": 0.6105263157894737
+      },
+      {
+        "headless": "cth",
+        "headless_tokens": 49,
+        "headed_versions": {
+          "acth": 1,
+          "ecth": 12,
+          "octh": 15
+        },
+        "total_headed_tokens": 28,
+        "headless_fraction": 0.6363636363636364
+      },
+      {
+        "headless": "ly",
+        "headless_tokens": 49,
+        "headed_versions": {},
+        "total_headed_tokens": 0,
+        "headless_fraction": 1.0
+      },
+      {
+        "headless": "cph",
+        "headless_tokens": 36,
+        "headed_versions": {
+          "ecph": 3,
+          "ocph": 5
+        },
+        "total_headed_tokens": 8,
+        "headless_fraction": 0.8181818181818182
+      },
+      {
+        "headless": "ry",
+        "headless_tokens": 33,
+        "headed_versions": {
+          "ary": 1
+        },
+        "total_headed_tokens": 1,
+        "headless_fraction": 0.9705882352941176
+      },
+      {
+        "headless": "lo",
+        "headless_tokens": 33,
+        "headed_versions": {
+          "alo": 3,
+          "olo": 3
+        },
+        "total_headed_tokens": 6,
+        "headless_fraction": 0.8461538461538461
+      },
+      {
+        "headless": "lsh",
+        "headless_tokens": 24,
+        "headed_versions": {
+          "alsh": 5,
+          "olsh": 1
+        },
+        "total_headed_tokens": 6,
+        "headless_fraction": 0.8
+      },
+      {
+        "headless": "fch",
+        "headless_tokens": 23,
+        "headed_versions": {
+          "efch": 6,
+          "ofch": 17
+        },
+        "total_headed_tokens": 23,
+        "headless_fraction": 0.5
+      },
+      {
+        "headless": "dai",
+        "headless_tokens": 23,
+        "headed_versions": {
+          "edai": 11,
+          "odai": 8
+        },
+        "total_headed_tokens": 19,
+        "headless_fraction": 0.5476190476190477
+      },
+      {
+        "headless": "lke",
+        "headless_tokens": 20,
+        "headed_versions": {
+          "alke": 1,
+          "olke": 8
+        },
+        "total_headed_tokens": 9,
+        "headless_fraction": 0.6896551724137931
+      },
+      {
+        "headless": "ir",
+        "headless_tokens": 19,
+        "headed_versions": {
+          "air": 6
+        },
+        "total_headed_tokens": 6,
+        "headless_fraction": 0.76
+      },
+      {
+        "headless": "qo",
+        "headless_tokens": 18,
+        "headed_versions": {
+          "oqo": 1
+        },
+        "total_headed_tokens": 1,
+        "headless_fraction": 0.9473684210526315
+      },
+      {
+        "headless": "da",
+        "headless_tokens": 13,
+        "headed_versions": {
+          "eda": 9,
+          "oda": 4
+        },
+        "total_headed_tokens": 13,
+        "headless_fraction": 0.5
+      },
+      {
+        "headless": "ld",
+        "headless_tokens": 13,
+        "headed_versions": {
+          "ald": 4,
+          "old": 4
+        },
+        "total_headed_tokens": 8,
+        "headless_fraction": 0.6190476190476191
+      },
+      {
+        "headless": "ro",
+        "headless_tokens": 13,
+        "headed_versions": {
+          "aro": 3
+        },
+        "total_headed_tokens": 3,
+        "headless_fraction": 0.8125
+      },
+      {
+        "headless": "rai",
+        "headless_tokens": 12,
+        "headed_versions": {},
+        "total_headed_tokens": 0,
+        "headless_fraction": 1.0
+      },
+      {
+        "headless": "yt",
+        "headless_tokens": 12,
+        "headed_versions": {
+          "eyt": 3
+        },
+        "total_headed_tokens": 3,
+        "headless_fraction": 0.8
+      },
+      {
+        "headless": "cs",
+        "headless_tokens": 12,
+        "headed_versions": {
+          "ecs": 1
+        },
+        "total_headed_tokens": 1,
+        "headless_fraction": 0.9230769230769231
+      },
+      {
+        "headless": "yk",
+        "headless_tokens": 11,
+        "headed_versions": {
+          "eyk": 8
+        },
+        "total_headed_tokens": 8,
+        "headless_fraction": 0.5789473684210527
+      },
+      {
+        "headless": "cp",
+        "headless_tokens": 10,
+        "headed_versions": {
+          "ecp": 3,
+          "ocp": 1
+        },
+        "total_headed_tokens": 4,
+        "headless_fraction": 0.7142857142857143
+      },
+      {
+        "headless": "do",
+        "headless_tokens": 10,
+        "headed_versions": {
+          "edo": 5,
+          "odo": 1
+        },
+        "total_headed_tokens": 6,
+        "headless_fraction": 0.625
+      },
+      {
+        "headless": "qek",
+        "headless_tokens": 10,
+        "headed_versions": {
+          "oqek": 1
+        },
+        "total_headed_tokens": 1,
+        "headless_fraction": 0.9090909090909091
+      }
+    ]
+  },
+  "test4_prefix": {
+    "headed_prefix_dist": {
+      "sh": 1756,
+      "BARE": 2464,
+      "pch": 175,
+      "ch": 2374,
+      "dch": 78,
+      "yk": 244,
+      "ol": 440,
+      "qo": 1252,
+      "rch": 30,
+      "ot": 1144,
+      "tch": 119,
+      "ok": 1152,
+      "de": 11,
+      "or": 138,
+      "ke": 157,
+      "ar": 93,
+      "lk": 331,
+      "al": 75,
+      "lch": 240,
+      "te": 152,
+      "se": 4,
+      "lsh": 95,
+      "fch": 43,
+      "kch": 55,
+      "to": 6,
+      "sch": 13,
+      "po": 14,
+      "ct": 1,
+      "ko": 4,
+      "so": 10,
+      "do": 2,
+      "ka": 2,
+      "pe": 1,
+      "da": 1
+    },
+    "headless_prefix_dist": {
+      "ch": 516,
+      "te": 84,
+      "BARE": 593,
+      "sh": 192,
+      "sa": 194,
+      "da": 574,
+      "al": 16,
+      "pch": 32,
+      "qo": 297,
+      "ok": 33,
+      "tch": 30,
+      "to": 43,
+      "po": 62,
+      "fch": 7,
+      "ta": 107,
+      "kch": 23,
+      "ct": 14,
+      "ol": 59,
+      "do": 31,
+      "yk": 10,
+      "or": 5,
+      "ot": 38,
+      "ka": 125,
+      "ke": 58,
+      "sch": 6,
+      "ko": 18,
+      "dch": 11,
+      "ar": 4,
+      "lch": 22,
+      "so": 68,
+      "lsh": 5,
+      "de": 4,
+      "lk": 7
+    },
+    "chi2": 4853.5670665968755,
+    "p": 0.0,
+    "cramers_v": 0.5647626888317919,
+    "bare_rate_headed": 19.438308614704955,
+    "bare_rate_headless": 18.035279805352797
+  },
+  "test5_position": {
+    "headed_mean_pos": 0.49222019718969606,
+    "headless_mean_pos": 0.5003288245401782,
+    "headed_initial_rate": 0.09253707794256863,
+    "headless_initial_rate": 0.16757907542579076,
+    "headed_final_rate": 0.0922215209845377,
+    "headless_final_rate": 0.13777372262773724,
+    "headed_par_initial_rate": 0.02059009151151783,
+    "headless_par_initial_rate": 0.04440389294403893,
+    "mann_whitney_u": 20551062.5,
+    "mann_whitney_p": 0.2203061121979909,
+    "headed_quintiles": {
+      "Q1(0-0.2)": 21.72609656042916,
+      "Q2(0.2-0.4)": 19.193751972230988,
+      "Q3(0.4-0.6)": 18.13663616282739,
+      "Q4(0.6-0.8)": 18.28652571789208,
+      "Q5(0.8-1.0)": 22.656989586620384
+    },
+    "headless_quintiles": {
+      "Q1(0-0.2)": 24.300486618004864,
+      "Q2(0.2-0.4)": 14.628953771289538,
+      "Q3(0.4-0.6)": 17.63990267639903,
+      "Q4(0.6-0.8)": 18.035279805352797,
+      "Q5(0.8-1.0)": 25.395377128953772
+    }
+  }
+}

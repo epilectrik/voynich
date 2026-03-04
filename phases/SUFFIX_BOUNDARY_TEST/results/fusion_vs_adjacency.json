@@ -1,0 +1,2175 @@
+{
+  "metadata": {
+    "candidates": [
+      "ed",
+      "ke",
+      "ol",
+      "od",
+      "ai",
+      "ey",
+      "dy",
+      "in",
+      "ck",
+      "ch",
+      "ee",
+      "op"
+    ],
+    "total_middle_tokens": 23096,
+    "unique_middles": 1293,
+    "compound_tokens": 16153,
+    "unique_compounds": 1273,
+    "slot_assignments": {
+      "HEAD": [
+        "a",
+        "e",
+        "o"
+      ],
+      "MODIFIER": [
+        "c",
+        "d",
+        "f",
+        "i",
+        "p",
+        "s"
+      ],
+      "TERMINAL": [
+        "h",
+        "l",
+        "m",
+        "n",
+        "r",
+        "y"
+      ],
+      "FREE": [
+        "k",
+        "t"
+      ]
+    }
+  },
+  "test1_separation": {
+    "ed": {
+      "adjacent_tokens": 2708,
+      "separated_tokens": 351,
+      "separation_ratio": 0.1296,
+      "adjacent_examples": [
+        [
+          "edy",
+          1938
+        ],
+        [
+          "teed",
+          9
+        ],
+        [
+          "ed",
+          401
+        ],
+        [
+          "eed",
+          88
+        ],
+        [
+          "edai",
+          11
+        ]
+      ],
+      "separated_examples": [
+        [
+          "teed",
+          9
+        ],
+        [
+          "eed",
+          88
+        ],
+        [
+          "eod",
+          82
+        ],
+        [
+          "echd",
+          2
+        ],
+        [
+          "keed",
+          30
+        ]
+      ],
+      "verdict": "WEAK_FUSION"
+    },
+    "ke": {
+      "adjacent_tokens": 753,
+      "separated_tokens": 187,
+      "separation_ratio": 0.2483,
+      "adjacent_examples": [
+        [
+          "ke",
+          421
+        ],
+        [
+          "kee",
+          34
+        ],
+        [
+          "keo",
+          26
+        ],
+        [
+          "eke",
+          7
+        ],
+        [
+          "ked",
+          32
+        ]
+      ],
+      "separated_examples": [
+        [
+          "kee",
+          34
+        ],
+        [
+          "ckheo",
+          3
+        ],
+        [
+          "keed",
+          30
+        ],
+        [
+          "keeo",
+          38
+        ],
+        [
+          "keec",
+          8
+        ]
+      ],
+      "verdict": "SEPARATE_SLOTS"
+    },
+    "ol": {
+      "adjacent_tokens": 1271,
+      "separated_tokens": 34,
+      "separation_ratio": 0.0268,
+      "adjacent_examples": [
+        [
+          "ol",
+          762
+        ],
+        [
+          "eeol",
+          47
+        ],
+        [
+          "eol",
+          294
+        ],
+        [
+          "olch",
+          8
+        ],
+        [
+          "olk",
+          27
+        ]
+      ],
+      "separated_examples": [
+        [
+          "opal",
+          4
+        ],
+        [
+          "opchol",
+          2
+        ],
+        [
+          "opalk",
+          4
+        ],
+        [
+          "ool",
+          2
+        ]
+      ],
+      "verdict": "FUSED"
+    },
+    "od": {
+      "adjacent_tokens": 401,
+      "separated_tokens": 80,
+      "separation_ratio": 0.1995,
+      "adjacent_examples": [
+        [
+          "od",
+          177
+        ],
+        [
+          "odai",
+          8
+        ],
+        [
+          "eod",
+          82
+        ],
+        [
+          "lod",
+          7
+        ],
+        [
+          "rod",
+          7
+        ]
+      ],
+      "separated_examples": [
+        [
+          "oed",
+          2
+        ],
+        [
+          "oeeed",
+          2
+        ],
+        [
+          "old",
+          4
+        ],
+        [
+          "opshed",
+          2
+        ],
+        [
+          "oched",
+          3
+        ]
+      ],
+      "verdict": "WEAK_FUSION"
+    },
+    "ai": {
+      "adjacent_tokens": 1734,
+      "separated_tokens": 924,
+      "separation_ratio": 0.5329,
+      "adjacent_examples": [
+        [
+          "ain",
+          420
+        ],
+        [
+          "aiin",
+          834
+        ],
+        [
+          "odai",
+          8
+        ],
+        [
+          "rai",
+          12
+        ],
+        [
+          "edai",
+          11
+        ]
+      ],
+      "separated_examples": [
+        [
+          "aiin",
+          834
+        ],
+        [
+          "raii",
+          2
+        ],
+        [
+          "aii",
+          32
+        ],
+        [
+          "kaii",
+          4
+        ],
+        [
+          "taii",
+          3
+        ]
+      ],
+      "verdict": "SEPARATE_SLOTS"
+    },
+    "ey": {
+      "adjacent_tokens": 1562,
+      "separated_tokens": 2611,
+      "separation_ratio": 1.6716,
+      "adjacent_examples": [
+        [
+          "ey",
+          889
+        ],
+        [
+          "eey",
+          644
+        ],
+        [
+          "eyk",
+          8
+        ],
+        [
+          "eyt",
+          3
+        ]
+      ],
+      "separated_examples": [
+        [
+          "edy",
+          1938
+        ],
+        [
+          "eey",
+          644
+        ],
+        [
+          "edyo",
+          2
+        ],
+        [
+          "edyt",
+          2
+        ],
+        [
+          "edyk",
+          2
+        ]
+      ],
+      "verdict": "SEPARATE_SLOTS"
+    },
+    "dy": {
+      "adjacent_tokens": 2666,
+      "separated_tokens": 4,
+      "separation_ratio": 0.0015,
+      "adjacent_examples": [
+        [
+          "edy",
+          1938
+        ],
+        [
+          "dy",
+          675
+        ],
+        [
+          "dyt",
+          7
+        ]
+      ],
+      "separated_examples": [],
+      "verdict": "FUSED"
+    },
+    "in": {
+      "adjacent_tokens": 2133,
+      "separated_tokens": 1435,
+      "separation_ratio": 0.6728,
+      "adjacent_examples": [
+        [
+          "ain",
+          420
+        ],
+        [
+          "iin",
+          560
+        ],
+        [
+          "aiin",
+          834
+        ],
+        [
+          "in",
+          264
+        ],
+        [
+          "oin",
+          6
+        ]
+      ],
+      "separated_examples": [
+        [
+          "iin",
+          560
+        ],
+        [
+          "aiin",
+          834
+        ],
+        [
+          "oiin",
+          32
+        ]
+      ],
+      "verdict": "SEPARATE_SLOTS"
+    },
+    "ck": {
+      "adjacent_tokens": 543,
+      "separated_tokens": 19,
+      "separation_ratio": 0.035,
+      "adjacent_examples": [
+        [
+          "ck",
+          197
+        ],
+        [
+          "ckh",
+          127
+        ],
+        [
+          "eckh",
+          29
+        ],
+        [
+          "ockh",
+          16
+        ],
+        [
+          "eck",
+          90
+        ]
+      ],
+      "separated_examples": [
+        [
+          "opchek",
+          2
+        ],
+        [
+          "cseek",
+          2
+        ]
+      ],
+      "verdict": "FUSED"
+    },
+    "ch": {
+      "adjacent_tokens": 930,
+      "separated_tokens": 419,
+      "separation_ratio": 0.4505,
+      "adjacent_examples": [
+        [
+          "lch",
+          74
+        ],
+        [
+          "kch",
+          148
+        ],
+        [
+          "ofch",
+          17
+        ],
+        [
+          "opch",
+          107
+        ],
+        [
+          "fch",
+          23
+        ]
+      ],
+      "separated_examples": [
+        [
+          "ecth",
+          12
+        ],
+        [
+          "ckh",
+          127
+        ],
+        [
+          "eckh",
+          29
+        ],
+        [
+          "cth",
+          49
+        ],
+        [
+          "octh",
+          15
+        ]
+      ],
+      "verdict": "SEPARATE_SLOTS"
+    },
+    "ee": {
+      "adjacent_tokens": 1555,
+      "separated_tokens": 158,
+      "separation_ratio": 0.1016,
+      "adjacent_examples": [
+        [
+          "eey",
+          644
+        ],
+        [
+          "teed",
+          9
+        ],
+        [
+          "eec",
+          6
+        ],
+        [
+          "eet",
+          22
+        ],
+        [
+          "ee",
+          151
+        ]
+      ],
+      "separated_examples": [
+        [
+          "ese",
+          2
+        ],
+        [
+          "eeeo",
+          10
+        ],
+        [
+          "eoek",
+          2
+        ],
+        [
+          "oeeeo",
+          2
+        ],
+        [
+          "eke",
+          7
+        ]
+      ],
+      "verdict": "WEAK_FUSION"
+    },
+    "op": {
+      "adjacent_tokens": 256,
+      "separated_tokens": 25,
+      "separation_ratio": 0.0977,
+      "adjacent_examples": [
+        [
+          "op",
+          36
+        ],
+        [
+          "opch",
+          107
+        ],
+        [
+          "opc",
+          9
+        ],
+        [
+          "opche",
+          6
+        ],
+        [
+          "opal",
+          4
+        ]
+      ],
+      "separated_examples": [
+        [
+          "ocph",
+          5
+        ],
+        [
+          "eocp",
+          3
+        ]
+      ],
+      "verdict": "WEAK_FUSION"
+    }
+  },
+  "test2_head_selectivity": {
+    "a": {
+      "slot": "HEAD",
+      "total_following": 3364,
+      "unique_followers": 13,
+      "chi2_uniformity": 12032.3,
+      "top_follower": "i",
+      "top_follower_frac": 0.5155,
+      "distribution": {
+        "i": 1734,
+        "r": 727,
+        "l": 643,
+        "m": 185,
+        "k": 23,
+        "n": 19,
+        "d": 13,
+        "p": 4,
+        "s": 4,
+        "t": 4
+      }
+    },
+    "e": {
+      "slot": "HEAD",
+      "total_following": 8157,
+      "unique_followers": 15,
+      "chi2_uniformity": 18315.1,
+      "top_follower": "d",
+      "top_follower_frac": 0.3324,
+      "distribution": {
+        "d": 2711,
+        "e": 1623,
+        "y": 1562,
+        "o": 1325,
+        "k": 313,
+        "c": 310,
+        "t": 112,
+        "s": 69,
+        "p": 50,
+        "f": 39
+      }
+    },
+    "o": {
+      "slot": "HEAD",
+      "total_following": 3151,
+      "unique_followers": 16,
+      "chi2_uniformity": 7789.2,
+      "top_follower": "l",
+      "top_follower_frac": 0.4034,
+      "distribution": {
+        "l": 1271,
+        "r": 481,
+        "d": 401,
+        "p": 256,
+        "k": 175,
+        "c": 154,
+        "t": 87,
+        "e": 81,
+        "i": 76,
+        "f": 56
+      }
+    },
+    "k": {
+      "slot": "FREE",
+      "total_following": 1446,
+      "unique_followers": 9,
+      "chi2_uniformity": 2907.8,
+      "top_follower": "e",
+      "top_follower_frac": 0.5214,
+      "distribution": {
+        "e": 754,
+        "c": 253,
+        "h": 226,
+        "a": 107,
+        "s": 56,
+        "o": 35,
+        "y": 9,
+        "l": 3,
+        "i": 3
+      }
+    },
+    "t": {
+      "slot": "FREE",
+      "total_following": 537,
+      "unique_followers": 10,
+      "chi2_uniformity": 739.5,
+      "top_follower": "e",
+      "top_follower_frac": 0.3482,
+      "distribution": {
+        "e": 187,
+        "c": 136,
+        "h": 112,
+        "a": 33,
+        "o": 26,
+        "s": 25,
+        "y": 11,
+        "d": 5,
+        "l": 1,
+        "i": 1
+      }
+    }
+  },
+  "test3_substitution": {
+    "ed": {
+      "pair_freq": 401,
+      "pos0_substitutions": [
+        [
+          "ad",
+          7
+        ],
+        [
+          "ld",
+          13
+        ],
+        [
+          "md",
+          1
+        ],
+        [
+          "od",
+          177
+        ],
+        [
+          "pd",
+          2
+        ],
+        [
+          "rd",
+          3
+        ],
+        [
+          "sd",
+          3
+        ],
+        [
+          "yd",
+          2
+        ]
+      ],
+      "pos1_substitutions": [
+        [
+          "ea",
+          8
+        ],
+        [
+          "ec",
+          16
+        ],
+        [
+          "ee",
+          151
+        ],
+        [
+          "ef",
+          6
+        ],
+        [
+          "eh",
+          1
+        ],
+        [
+          "ek",
+          169
+        ],
+        [
+          "el",
+          3
+        ],
+        [
+          "eo",
+          359
+        ],
+        [
+          "ep",
+          16
+        ],
+        [
+          "er",
+          4
+        ],
+        [
+          "es",
+          15
+        ],
+        [
+          "et",
+          58
+        ],
+        [
+          "ey",
+          889
+        ]
+      ],
+      "pos0_freedom": 0.5,
+      "pos1_freedom": 0.812,
+      "pos0_freedom_f5": 0.188,
+      "pos1_freedom_f5": 0.625,
+      "avg_freedom": 0.656,
+      "avg_freedom_f5": 0.406,
+      "verdict": "SEPARATE_SLOTS"
+    },
+    "ke": {
+      "pair_freq": 421,
+      "pos0_substitutions": [
+        [
+          "de",
+          5
+        ],
+        [
+          "ee",
+          151
+        ],
+        [
+          "he",
+          2
+        ],
+        [
+          "le",
+          2
+        ],
+        [
+          "oe",
+          11
+        ],
+        [
+          "pe",
+          1
+        ],
+        [
+          "re",
+          1
+        ],
+        [
+          "te",
+          87
+        ]
+      ],
+      "pos1_substitutions": [
+        [
+          "ka",
+          25
+        ],
+        [
+          "kc",
+          33
+        ],
+        [
+          "kl",
+          2
+        ],
+        [
+          "ko",
+          16
+        ],
+        [
+          "ks",
+          7
+        ],
+        [
+          "ky",
+          4
+        ]
+      ],
+      "pos0_freedom": 0.5,
+      "pos1_freedom": 0.375,
+      "pos0_freedom_f5": 0.25,
+      "pos1_freedom_f5": 0.25,
+      "avg_freedom": 0.438,
+      "avg_freedom_f5": 0.25,
+      "verdict": "SEPARATE_SLOTS"
+    },
+    "ol": {
+      "pair_freq": 762,
+      "pos0_substitutions": [
+        [
+          "al",
+          521
+        ],
+        [
+          "dl",
+          3
+        ],
+        [
+          "el",
+          3
+        ],
+        [
+          "kl",
+          2
+        ],
+        [
+          "ll",
+          4
+        ],
+        [
+          "rl",
+          1
+        ],
+        [
+          "sl",
+          1
+        ],
+        [
+          "yl",
+          4
+        ]
+      ],
+      "pos1_substitutions": [
+        [
+          "oa",
+          1
+        ],
+        [
+          "oc",
+          1
+        ],
+        [
+          "od",
+          177
+        ],
+        [
+          "oe",
+          11
+        ],
+        [
+          "of",
+          15
+        ],
+        [
+          "oi",
+          13
+        ],
+        [
+          "ok",
+          70
+        ],
+        [
+          "om",
+          25
+        ],
+        [
+          "oo",
+          2
+        ],
+        [
+          "op",
+          36
+        ],
+        [
+          "or",
+          446
+        ],
+        [
+          "os",
+          16
+        ],
+        [
+          "ot",
+          46
+        ],
+        [
+          "oy",
+          1
+        ]
+      ],
+      "pos0_freedom": 0.5,
+      "pos1_freedom": 0.875,
+      "pos0_freedom_f5": 0.062,
+      "pos1_freedom_f5": 0.625,
+      "avg_freedom": 0.688,
+      "avg_freedom_f5": 0.344,
+      "verdict": "SEPARATE_SLOTS"
+    },
+    "od": {
+      "pair_freq": 177,
+      "pos0_substitutions": [
+        [
+          "ad",
+          7
+        ],
+        [
+          "ed",
+          401
+        ],
+        [
+          "ld",
+          13
+        ],
+        [
+          "md",
+          1
+        ],
+        [
+          "pd",
+          2
+        ],
+        [
+          "rd",
+          3
+        ],
+        [
+          "sd",
+          3
+        ],
+        [
+          "yd",
+          2
+        ]
+      ],
+      "pos1_substitutions": [
+        [
+          "oa",
+          1
+        ],
+        [
+          "oc",
+          1
+        ],
+        [
+          "oe",
+          11
+        ],
+        [
+          "of",
+          15
+        ],
+        [
+          "oi",
+          13
+        ],
+        [
+          "ok",
+          70
+        ],
+        [
+          "ol",
+          762
+        ],
+        [
+          "om",
+          25
+        ],
+        [
+          "oo",
+          2
+        ],
+        [
+          "op",
+          36
+        ],
+        [
+          "or",
+          446
+        ],
+        [
+          "os",
+          16
+        ],
+        [
+          "ot",
+          46
+        ],
+        [
+          "oy",
+          1
+        ]
+      ],
+      "pos0_freedom": 0.5,
+      "pos1_freedom": 0.875,
+      "pos0_freedom_f5": 0.188,
+      "pos1_freedom_f5": 0.625,
+      "avg_freedom": 0.688,
+      "avg_freedom_f5": 0.406,
+      "verdict": "SEPARATE_SLOTS"
+    },
+    "ai": {
+      "pair_freq": 174,
+      "pos0_substitutions": [
+        [
+          "ii",
+          23
+        ],
+        [
+          "oi",
+          13
+        ],
+        [
+          "ti",
+          1
+        ]
+      ],
+      "pos1_substitutions": [
+        [
+          "ad",
+          7
+        ],
+        [
+          "ak",
+          12
+        ],
+        [
+          "al",
+          521
+        ],
+        [
+          "am",
+          174
+        ],
+        [
+          "an",
+          18
+        ],
+        [
+          "ao",
+          1
+        ],
+        [
+          "ap",
+          2
+        ],
+        [
+          "ar",
+          677
+        ],
+        [
+          "as",
+          1
+        ],
+        [
+          "at",
+          4
+        ]
+      ],
+      "pos0_freedom": 0.188,
+      "pos1_freedom": 0.625,
+      "pos0_freedom_f5": 0.125,
+      "pos1_freedom_f5": 0.375,
+      "avg_freedom": 0.406,
+      "avg_freedom_f5": 0.25,
+      "verdict": "SEPARATE_SLOTS"
+    },
+    "ey": {
+      "pair_freq": 889,
+      "pos0_substitutions": [
+        [
+          "dy",
+          675
+        ],
+        [
+          "hy",
+          8
+        ],
+        [
+          "ky",
+          4
+        ],
+        [
+          "ly",
+          49
+        ],
+        [
+          "oy",
+          1
+        ],
+        [
+          "ry",
+          33
+        ],
+        [
+          "ty",
+          4
+        ]
+      ],
+      "pos1_substitutions": [
+        [
+          "ea",
+          8
+        ],
+        [
+          "ec",
+          16
+        ],
+        [
+          "ed",
+          401
+        ],
+        [
+          "ee",
+          151
+        ],
+        [
+          "ef",
+          6
+        ],
+        [
+          "eh",
+          1
+        ],
+        [
+          "ek",
+          169
+        ],
+        [
+          "el",
+          3
+        ],
+        [
+          "eo",
+          359
+        ],
+        [
+          "ep",
+          16
+        ],
+        [
+          "er",
+          4
+        ],
+        [
+          "es",
+          15
+        ],
+        [
+          "et",
+          58
+        ]
+      ],
+      "pos0_freedom": 0.438,
+      "pos1_freedom": 0.812,
+      "pos0_freedom_f5": 0.25,
+      "pos1_freedom_f5": 0.625,
+      "avg_freedom": 0.625,
+      "avg_freedom_f5": 0.438,
+      "verdict": "SEPARATE_SLOTS"
+    },
+    "dy": {
+      "pair_freq": 675,
+      "pos0_substitutions": [
+        [
+          "ey",
+          889
+        ],
+        [
+          "hy",
+          8
+        ],
+        [
+          "ky",
+          4
+        ],
+        [
+          "ly",
+          49
+        ],
+        [
+          "oy",
+          1
+        ],
+        [
+          "ry",
+          33
+        ],
+        [
+          "ty",
+          4
+        ]
+      ],
+      "pos1_substitutions": [
+        [
+          "da",
+          13
+        ],
+        [
+          "dc",
+          1
+        ],
+        [
+          "de",
+          5
+        ],
+        [
+          "dk",
+          2
+        ],
+        [
+          "dl",
+          3
+        ],
+        [
+          "do",
+          10
+        ],
+        [
+          "dp",
+          1
+        ],
+        [
+          "dr",
+          1
+        ]
+      ],
+      "pos0_freedom": 0.438,
+      "pos1_freedom": 0.5,
+      "pos0_freedom_f5": 0.25,
+      "pos1_freedom_f5": 0.188,
+      "avg_freedom": 0.469,
+      "avg_freedom_f5": 0.219,
+      "verdict": "SEPARATE_SLOTS"
+    },
+    "in": {
+      "pair_freq": 264,
+      "pos0_substitutions": [
+        [
+          "an",
+          18
+        ]
+      ],
+      "pos1_substitutions": [
+        [
+          "ic",
+          1
+        ],
+        [
+          "ih",
+          1
+        ],
+        [
+          "ii",
+          23
+        ],
+        [
+          "ik",
+          2
+        ],
+        [
+          "im",
+          8
+        ],
+        [
+          "ip",
+          2
+        ],
+        [
+          "ir",
+          19
+        ],
+        [
+          "is",
+          3
+        ],
+        [
+          "it",
+          3
+        ]
+      ],
+      "pos0_freedom": 0.062,
+      "pos1_freedom": 0.562,
+      "pos0_freedom_f5": 0.062,
+      "pos1_freedom_f5": 0.188,
+      "avg_freedom": 0.312,
+      "avg_freedom_f5": 0.125,
+      "verdict": "WEAK_FUSION"
+    },
+    "ck": {
+      "pair_freq": 197,
+      "pos0_substitutions": [
+        [
+          "ak",
+          12
+        ],
+        [
+          "dk",
+          2
+        ],
+        [
+          "ek",
+          169
+        ],
+        [
+          "ik",
+          2
+        ],
+        [
+          "lk",
+          58
+        ],
+        [
+          "ok",
+          70
+        ],
+        [
+          "rk",
+          1
+        ],
+        [
+          "sk",
+          2
+        ],
+        [
+          "yk",
+          11
+        ]
+      ],
+      "pos1_substitutions": [
+        [
+          "cf",
+          3
+        ],
+        [
+          "ch",
+          4
+        ],
+        [
+          "cp",
+          10
+        ],
+        [
+          "cs",
+          12
+        ],
+        [
+          "ct",
+          95
+        ]
+      ],
+      "pos0_freedom": 0.562,
+      "pos1_freedom": 0.312,
+      "pos0_freedom_f5": 0.312,
+      "pos1_freedom_f5": 0.188,
+      "avg_freedom": 0.438,
+      "avg_freedom_f5": 0.25,
+      "verdict": "SEPARATE_SLOTS"
+    },
+    "ch": {
+      "pair_freq": 4,
+      "pos0_substitutions": [
+        [
+          "eh",
+          1
+        ],
+        [
+          "ih",
+          1
+        ],
+        [
+          "sh",
+          5
+        ],
+        [
+          "yh",
+          1
+        ]
+      ],
+      "pos1_substitutions": [
+        [
+          "cf",
+          3
+        ],
+        [
+          "ck",
+          197
+        ],
+        [
+          "cp",
+          10
+        ],
+        [
+          "cs",
+          12
+        ],
+        [
+          "ct",
+          95
+        ]
+      ],
+      "pos0_freedom": 0.25,
+      "pos1_freedom": 0.312,
+      "pos0_freedom_f5": 0.062,
+      "pos1_freedom_f5": 0.25,
+      "avg_freedom": 0.281,
+      "avg_freedom_f5": 0.156,
+      "verdict": "WEAK_FUSION"
+    },
+    "ee": {
+      "pair_freq": 151,
+      "pos0_substitutions": [
+        [
+          "de",
+          5
+        ],
+        [
+          "he",
+          2
+        ],
+        [
+          "ke",
+          421
+        ],
+        [
+          "le",
+          2
+        ],
+        [
+          "oe",
+          11
+        ],
+        [
+          "pe",
+          1
+        ],
+        [
+          "re",
+          1
+        ],
+        [
+          "te",
+          87
+        ]
+      ],
+      "pos1_substitutions": [
+        [
+          "ea",
+          8
+        ],
+        [
+          "ec",
+          16
+        ],
+        [
+          "ed",
+          401
+        ],
+        [
+          "ef",
+          6
+        ],
+        [
+          "eh",
+          1
+        ],
+        [
+          "ek",
+          169
+        ],
+        [
+          "el",
+          3
+        ],
+        [
+          "eo",
+          359
+        ],
+        [
+          "ep",
+          16
+        ],
+        [
+          "er",
+          4
+        ],
+        [
+          "es",
+          15
+        ],
+        [
+          "et",
+          58
+        ],
+        [
+          "ey",
+          889
+        ]
+      ],
+      "pos0_freedom": 0.5,
+      "pos1_freedom": 0.812,
+      "pos0_freedom_f5": 0.25,
+      "pos1_freedom_f5": 0.625,
+      "avg_freedom": 0.656,
+      "avg_freedom_f5": 0.438,
+      "verdict": "SEPARATE_SLOTS"
+    },
+    "op": {
+      "pair_freq": 36,
+      "pos0_substitutions": [
+        [
+          "ap",
+          2
+        ],
+        [
+          "cp",
+          10
+        ],
+        [
+          "dp",
+          1
+        ],
+        [
+          "ep",
+          16
+        ],
+        [
+          "ip",
+          2
+        ],
+        [
+          "lp",
+          4
+        ],
+        [
+          "sp",
+          1
+        ],
+        [
+          "yp",
+          5
+        ]
+      ],
+      "pos1_substitutions": [
+        [
+          "oa",
+          1
+        ],
+        [
+          "oc",
+          1
+        ],
+        [
+          "od",
+          177
+        ],
+        [
+          "oe",
+          11
+        ],
+        [
+          "of",
+          15
+        ],
+        [
+          "oi",
+          13
+        ],
+        [
+          "ok",
+          70
+        ],
+        [
+          "ol",
+          762
+        ],
+        [
+          "om",
+          25
+        ],
+        [
+          "oo",
+          2
+        ],
+        [
+          "or",
+          446
+        ],
+        [
+          "os",
+          16
+        ],
+        [
+          "ot",
+          46
+        ],
+        [
+          "oy",
+          1
+        ]
+      ],
+      "pos0_freedom": 0.5,
+      "pos1_freedom": 0.875,
+      "pos0_freedom_f5": 0.188,
+      "pos1_freedom_f5": 0.625,
+      "avg_freedom": 0.688,
+      "avg_freedom_f5": 0.406,
+      "verdict": "SEPARATE_SLOTS"
+    }
+  },
+  "test4_positional_consistency": {
+    "ed": {
+      "pair_total_in_compounds": 2310,
+      "pair_profile": {
+        "START": 0.869,
+        "INTERIOR": 0.016,
+        "END": 0.115
+      },
+      "x_profile": {
+        "START": 0.675,
+        "INTERIOR": 0.223,
+        "END": 0.102
+      },
+      "y_profile": {
+        "START": 0.197,
+        "INTERIOR": 0.523,
+        "END": 0.28
+      },
+      "dominant_position": "START",
+      "dominant_fraction": 0.869,
+      "pair_entropy": 0.632,
+      "x_slot": "HEAD",
+      "y_slot": "MOD",
+      "verdict": "POSITIONAL"
+    },
+    "ke": {
+      "pair_total_in_compounds": 333,
+      "pair_profile": {
+        "START": 0.697,
+        "INTERIOR": 0.12,
+        "END": 0.183
+      },
+      "x_profile": {
+        "START": 0.432,
+        "INTERIOR": 0.182,
+        "END": 0.386
+      },
+      "y_profile": {
+        "START": 0.675,
+        "INTERIOR": 0.223,
+        "END": 0.102
+      },
+      "dominant_position": "START",
+      "dominant_fraction": 0.697,
+      "pair_entropy": 1.179,
+      "x_slot": "FREE",
+      "y_slot": "HEAD",
+      "verdict": "FLEXIBLE"
+    },
+    "ol": {
+      "pair_total_in_compounds": 509,
+      "pair_profile": {
+        "START": 0.167,
+        "INTERIOR": 0.128,
+        "END": 0.705
+      },
+      "x_profile": {
+        "START": 0.572,
+        "INTERIOR": 0.207,
+        "END": 0.221
+      },
+      "y_profile": {
+        "START": 0.178,
+        "INTERIOR": 0.108,
+        "END": 0.714
+      },
+      "dominant_position": "END",
+      "dominant_fraction": 0.705,
+      "pair_entropy": 1.166,
+      "x_slot": "HEAD",
+      "y_slot": "TERM",
+      "verdict": "POSITIONAL"
+    },
+    "od": {
+      "pair_total_in_compounds": 224,
+      "pair_profile": {
+        "START": 0.183,
+        "INTERIOR": 0.094,
+        "END": 0.723
+      },
+      "x_profile": {
+        "START": 0.572,
+        "INTERIOR": 0.207,
+        "END": 0.221
+      },
+      "y_profile": {
+        "START": 0.197,
+        "INTERIOR": 0.523,
+        "END": 0.28
+      },
+      "dominant_position": "END",
+      "dominant_fraction": 0.723,
+      "pair_entropy": 1.107,
+      "x_slot": "HEAD",
+      "y_slot": "MOD",
+      "verdict": "POSITIONAL"
+    },
+    "ai": {
+      "pair_total_in_compounds": 1560,
+      "pair_profile": {
+        "START": 0.865,
+        "INTERIOR": 0.041,
+        "END": 0.094
+      },
+      "x_profile": {
+        "START": 0.863,
+        "INTERIOR": 0.1,
+        "END": 0.036
+      },
+      "y_profile": {
+        "START": 0.213,
+        "INTERIOR": 0.687,
+        "END": 0.099
+      },
+      "dominant_position": "START",
+      "dominant_fraction": 0.865,
+      "pair_entropy": 0.689,
+      "x_slot": "HEAD",
+      "y_slot": "MOD",
+      "verdict": "POSITIONAL"
+    },
+    "ey": {
+      "pair_total_in_compounds": 673,
+      "pair_profile": {
+        "START": 0.028,
+        "INTERIOR": 0.013,
+        "END": 0.958
+      },
+      "x_profile": {
+        "START": 0.675,
+        "INTERIOR": 0.223,
+        "END": 0.102
+      },
+      "y_profile": {
+        "START": 0.016,
+        "INTERIOR": 0.023,
+        "END": 0.961
+      },
+      "dominant_position": "END",
+      "dominant_fraction": 0.958,
+      "pair_entropy": 0.287,
+      "x_slot": "HEAD",
+      "y_slot": "TERM",
+      "verdict": "FUSED"
+    },
+    "dy": {
+      "pair_total_in_compounds": 1992,
+      "pair_profile": {
+        "START": 0.015,
+        "INTERIOR": 0.008,
+        "END": 0.977
+      },
+      "x_profile": {
+        "START": 0.197,
+        "INTERIOR": 0.523,
+        "END": 0.28
+      },
+      "y_profile": {
+        "START": 0.016,
+        "INTERIOR": 0.023,
+        "END": 0.961
+      },
+      "dominant_position": "END",
+      "dominant_fraction": 0.977,
+      "pair_entropy": 0.177,
+      "x_slot": "MOD",
+      "y_slot": "TERM",
+      "verdict": "FUSED"
+    },
+    "in": {
+      "pair_total_in_compounds": 1869,
+      "pair_profile": {
+        "START": 0.001,
+        "INTERIOR": 0.005,
+        "END": 0.994
+      },
+      "x_profile": {
+        "START": 0.213,
+        "INTERIOR": 0.687,
+        "END": 0.099
+      },
+      "y_profile": {
+        "START": 0.0,
+        "INTERIOR": 0.006,
+        "END": 0.994
+      },
+      "dominant_position": "END",
+      "dominant_fraction": 0.994,
+      "pair_entropy": 0.06,
+      "x_slot": "MOD",
+      "y_slot": "TERM",
+      "verdict": "FUSED"
+    },
+    "ck": {
+      "pair_total_in_compounds": 346,
+      "pair_profile": {
+        "START": 0.445,
+        "INTERIOR": 0.199,
+        "END": 0.355
+      },
+      "x_profile": {
+        "START": 0.289,
+        "INTERIOR": 0.608,
+        "END": 0.103
+      },
+      "y_profile": {
+        "START": 0.432,
+        "INTERIOR": 0.182,
+        "END": 0.386
+      },
+      "dominant_position": "START",
+      "dominant_fraction": 0.445,
+      "pair_entropy": 1.514,
+      "x_slot": "MOD",
+      "y_slot": "FREE",
+      "verdict": "FLEXIBLE"
+    },
+    "ch": {
+      "pair_total_in_compounds": 928,
+      "pair_profile": {
+        "START": 0.0,
+        "INTERIOR": 0.224,
+        "END": 0.776
+      },
+      "x_profile": {
+        "START": 0.289,
+        "INTERIOR": 0.608,
+        "END": 0.103
+      },
+      "y_profile": {
+        "START": 0.01,
+        "INTERIOR": 0.219,
+        "END": 0.771
+      },
+      "dominant_position": "END",
+      "dominant_fraction": 0.776,
+      "pair_entropy": 0.768,
+      "x_slot": "MOD",
+      "y_slot": "TERM",
+      "verdict": "POSITIONAL"
+    },
+    "ee": {
+      "pair_total_in_compounds": 1472,
+      "pair_profile": {
+        "START": 0.767,
+        "INTERIOR": 0.167,
+        "END": 0.066
+      },
+      "x_profile": {
+        "START": 0.675,
+        "INTERIOR": 0.223,
+        "END": 0.102
+      },
+      "y_profile": {
+        "START": 0.675,
+        "INTERIOR": 0.223,
+        "END": 0.102
+      },
+      "dominant_position": "START",
+      "dominant_fraction": 0.767,
+      "pair_entropy": 0.983,
+      "x_slot": "HEAD",
+      "y_slot": "HEAD",
+      "verdict": "POSITIONAL"
+    },
+    "op": {
+      "pair_total_in_compounds": 220,
+      "pair_profile": {
+        "START": 0.955,
+        "INTERIOR": 0.014,
+        "END": 0.032
+      },
+      "x_profile": {
+        "START": 0.572,
+        "INTERIOR": 0.207,
+        "END": 0.221
+      },
+      "y_profile": {
+        "START": 0.265,
+        "INTERIOR": 0.558,
+        "END": 0.177
+      },
+      "dominant_position": "START",
+      "dominant_fraction": 0.955,
+      "pair_entropy": 0.307,
+      "x_slot": "HEAD",
+      "y_slot": "MOD",
+      "verdict": "FUSED"
+    }
+  },
+  "test5_frequency_excess": {
+    "ed": {
+      "observed": 2711,
+      "expected": 965.7,
+      "oe_ratio": 2.807,
+      "log2_oe": 1.489,
+      "p_x_first": 0.29432,
+      "p_y_second": 0.11838,
+      "verdict": "ENRICHED"
+    },
+    "ke": {
+      "observed": 754,
+      "expected": 151.3,
+      "oe_ratio": 4.985,
+      "log2_oe": 2.318,
+      "p_x_first": 0.05217,
+      "p_y_second": 0.1046,
+      "verdict": "ENRICHED"
+    },
+    "ol": {
+      "observed": 1271,
+      "expected": 224.0,
+      "oe_ratio": 5.675,
+      "log2_oe": 2.505,
+      "p_x_first": 0.11369,
+      "p_y_second": 0.07108,
+      "verdict": "FUSED"
+    },
+    "od": {
+      "observed": 401,
+      "expected": 373.0,
+      "oe_ratio": 1.075,
+      "log2_oe": 0.104,
+      "p_x_first": 0.11369,
+      "p_y_second": 0.11838,
+      "verdict": "EXPECTED"
+    },
+    "ai": {
+      "observed": 1734,
+      "expected": 411.0,
+      "oe_ratio": 4.219,
+      "log2_oe": 2.077,
+      "p_x_first": 0.12138,
+      "p_y_second": 0.12217,
+      "verdict": "ENRICHED"
+    },
+    "ey": {
+      "observed": 1562,
+      "expected": 1285.3,
+      "oe_ratio": 1.215,
+      "log2_oe": 0.281,
+      "p_x_first": 0.29432,
+      "p_y_second": 0.15757,
+      "verdict": "EXPECTED"
+    },
+    "dy": {
+      "observed": 2667,
+      "expected": 463.6,
+      "oe_ratio": 5.753,
+      "log2_oe": 2.524,
+      "p_x_first": 0.10615,
+      "p_y_second": 0.15757,
+      "verdict": "FUSED"
+    },
+    "in": {
+      "observed": 2133,
+      "expected": 300.9,
+      "oe_ratio": 7.089,
+      "log2_oe": 2.826,
+      "p_x_first": 0.13982,
+      "p_y_second": 0.07765,
+      "verdict": "FUSED"
+    },
+    "ck": {
+      "observed": 543,
+      "expected": 91.4,
+      "oe_ratio": 5.942,
+      "log2_oe": 2.571,
+      "p_x_first": 0.06845,
+      "p_y_second": 0.04817,
+      "verdict": "FUSED"
+    },
+    "ch": {
+      "observed": 932,
+      "expected": 108.7,
+      "oe_ratio": 8.575,
+      "log2_oe": 3.1,
+      "p_x_first": 0.06845,
+      "p_y_second": 0.0573,
+      "verdict": "FUSED"
+    },
+    "ee": {
+      "observed": 1623,
+      "expected": 853.2,
+      "oe_ratio": 1.902,
+      "log2_oe": 0.928,
+      "p_x_first": 0.29432,
+      "p_y_second": 0.1046,
+      "verdict": "EXPECTED"
+    },
+    "op": {
+      "observed": 256,
+      "expected": 49.5,
+      "oe_ratio": 5.176,
+      "log2_oe": 2.372,
+      "p_x_first": 0.11369,
+      "p_y_second": 0.0157,
+      "verdict": "FUSED"
+    }
+  },
+  "synthesis": {
+    "ed": {
+      "t1_separation": 0.1296,
+      "t3_substitution": 0.406,
+      "t4_positional": 0.632,
+      "t5_oe_ratio": 2.807,
+      "fusion_evidence": 3,
+      "adjacency_evidence": 1,
+      "verdict": "LIKELY_FUSED"
+    },
+    "ke": {
+      "t1_separation": 0.2483,
+      "t3_substitution": 0.25,
+      "t4_positional": 1.179,
+      "t5_oe_ratio": 4.985,
+      "fusion_evidence": 1,
+      "adjacency_evidence": 3,
+      "verdict": "LIKELY_ADJACENT"
+    },
+    "ol": {
+      "t1_separation": 0.0268,
+      "t3_substitution": 0.344,
+      "t4_positional": 1.166,
+      "t5_oe_ratio": 5.675,
+      "fusion_evidence": 4,
+      "adjacency_evidence": 2,
+      "verdict": "LIKELY_FUSED"
+    },
+    "od": {
+      "t1_separation": 0.1995,
+      "t3_substitution": 0.406,
+      "t4_positional": 1.107,
+      "t5_oe_ratio": 1.075,
+      "fusion_evidence": 0,
+      "adjacency_evidence": 5,
+      "verdict": "ADJACENT_SLOTS"
+    },
+    "ai": {
+      "t1_separation": 0.5329,
+      "t3_substitution": 0.25,
+      "t4_positional": 0.689,
+      "t5_oe_ratio": 4.219,
+      "fusion_evidence": 2,
+      "adjacency_evidence": 2,
+      "verdict": "AMBIGUOUS"
+    },
+    "ey": {
+      "t1_separation": 1.6716,
+      "t3_substitution": 0.438,
+      "t4_positional": 0.287,
+      "t5_oe_ratio": 1.215,
+      "fusion_evidence": 1,
+      "adjacency_evidence": 4,
+      "verdict": "ADJACENT_SLOTS"
+    },
+    "dy": {
+      "t1_separation": 0.0015,
+      "t3_substitution": 0.219,
+      "t4_positional": 0.177,
+      "t5_oe_ratio": 5.753,
+      "fusion_evidence": 5,
+      "adjacency_evidence": 1,
+      "verdict": "FUSED"
+    },
+    "in": {
+      "t1_separation": 0.6728,
+      "t3_substitution": 0.125,
+      "t4_positional": 0.06,
+      "t5_oe_ratio": 7.089,
+      "fusion_evidence": 4,
+      "adjacency_evidence": 1,
+      "verdict": "LIKELY_FUSED"
+    },
+    "ck": {
+      "t1_separation": 0.035,
+      "t3_substitution": 0.25,
+      "t4_positional": 1.514,
+      "t5_oe_ratio": 5.942,
+      "fusion_evidence": 4,
+      "adjacency_evidence": 2,
+      "verdict": "LIKELY_FUSED"
+    },
+    "ch": {
+      "t1_separation": 0.4505,
+      "t3_substitution": 0.156,
+      "t4_positional": 0.768,
+      "t5_oe_ratio": 8.575,
+      "fusion_evidence": 4,
+      "adjacency_evidence": 1,
+      "verdict": "LIKELY_FUSED"
+    },
+    "ee": {
+      "t1_separation": 0.1016,
+      "t3_substitution": 0.438,
+      "t4_positional": 0.983,
+      "t5_oe_ratio": 1.902,
+      "fusion_evidence": 1,
+      "adjacency_evidence": 3,
+      "verdict": "LIKELY_ADJACENT"
+    },
+    "op": {
+      "t1_separation": 0.0977,
+      "t3_substitution": 0.406,
+      "t4_positional": 0.307,
+      "t5_oe_ratio": 5.176,
+      "fusion_evidence": 4,
+      "adjacency_evidence": 1,
+      "verdict": "LIKELY_FUSED"
+    }
+  }
+}

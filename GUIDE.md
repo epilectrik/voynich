@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,220 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,238 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -8,9 +8,9 @@ For the full constraint system and technical details, see `context/CLAUDE_INDEX.
 
 ## The Short Version
 
-The Voynich Manuscript is not a language. It is not a cipher. It is a **control system reference manual** — a collection of written programs that tell an operator how to maintain a physical process (most likely reflux distillation) within safe operating limits.
+The Voynich Manuscript is not a language. It is not a cipher. It is a **control system grammar** — a collection of structured programs whose architecture is consistent with maintaining a physical process within safe operating limits. Structural comparison with Brunschwig's distillation manual (1500) suggests reflux distillation as one plausible domain (Tier 3 interpretation).
 
-The manuscript is organized into four structurally distinct layers, each serving a different function. Together they form a system that works **in silence**: the operator never needs to read explanations because the structure itself encodes what to do, when to intervene, and what to avoid.
+The manuscript is organized into four structurally distinct layers, each serving a different function. Together they form a self-contained system: the structure itself encodes operational sequences, intervention points, and avoidance constraints without requiring external explanation.
 
 ---
 
@@ -47,7 +47,7 @@ These layers never explain each other. B doesn't reference A. A doesn't mention 
 
 **What it is:** 23,243 tokens across 83 folios (61.9% of the manuscript). Every folio is a complete, self-contained program. Every program uses the same grammar.
 
-**What it does:** Each program guides an operator through a closed-loop control process — applying energy, monitoring state, checking for hazards, and recovering when things drift. The programs don't describe a process linearly; they encode adaptive responses to whatever state the system is in.
+**What it does:** Each program encodes a closed-loop control process — applying energy, monitoring state, checking for hazards, and recovering when things drift. The programs don't describe a process linearly; they encode adaptive responses to whatever state the system is in.
 
 ### How Tokens Work
 
@@ -58,8 +58,12 @@ Every Currier B token is compositional. It decomposes into parts that each carry
 ```
 
 - **PREFIX** selects the operational channel AND encodes line position. Internally, each PREFIX has a base-modifier positional grammar: [MODIFIER (position 0)] + [BASE (position 1)]. The base character (h, e, k, o, a) determines which family of core actions is grammatically legal — within-base MIDDLE cosine similarity is 0.950, while between-base similarity drops to 0.515 (C1218-C1219). Modifiers (q, d, f, p, y) occupy position 0 and refine the operational meaning. PREFIXes also encode where in the line the token appears — they cluster into initial, central, and final positional zones. There are 8 prefix families organized into functional groups. PREFIXes predict operational categories with structured selectivity (V=0.311, C1297) and read as two-atom instructions: [VERB]+[TARGET] — for example, ok = "operate heat," ot = "operate transfer," ch = "adjust watch." Sister pairs (ch/sh, ok/ot) achieve category divergence through vocabulary SELECTION — choosing different MIDDLEs — not by changing what any MIDDLE means. The positional axis (ch later, sh earlier) is orthogonal to the category axis (ch selects different operational themes than sh), giving each sister-prefixed token two independent pieces of information: WHEN to act and WHAT to act on (C1303-C1307).
-- **MIDDLE** is the primary discriminative content — the specific action variant within the channel the prefix opened. Approximately 30 core MIDDLEs handle 67.6% of all tokens, with a long tail of ~1,150 rarer variants.
-- **SUFFIX** encodes context-dependent markers that relate to control flow — what happens next, how broad the operation's scope is.
+- **MIDDLE** is the primary discriminative content — the specific action variant within the channel the prefix opened. MIDDLEs are themselves compositional, decomposing as **HEAD + MOD\* + TERM** (C1393-C1394):
+  - **HEAD** (a, e, o, k, t) sets the operational domain — k=thermal, e=cooling, o=staging, a=yielding, t=transfer
+  - **MOD stack** (p, c, i, f, d, s) parametrizes the action in a fixed internal order: p(pause)→f(flag)→i(iterate)→c(adjust)→d(mark)→s(sequence). The first modifier carries the most weight (66.5% decisive). Each modifier has a consistent category-shifting effect — `d` pulls toward OPERATION (V=0.657), `f` toward MARKING (76.4%), `i` toward TRANSITION (44.7%).
+  - **TERM** (y, l, r, h, m, n) sets the exit condition — r=respond (99% FLOW), y=end (56% OPERATION), h=watch (transparent — lets HEAD+MODS determine category at V=0.988)
+  - The frame (HEAD+TERM) predicts 64% of operational category; modifiers shift the remaining 36%. Approximately 30 core MIDDLEs handle 67.6% of all tokens, with a long tail of ~1,150 rarer variants. Headless compounds (20.6% of tokens) form a specialized subgrammar for infrastructure operations at boundary positions.
+- **SUFFIX** is an independent compositional domain built from the same atom inventory as MIDDLE (entropy 1.475 bits of suffix freedom given MIDDLE). It encodes context-dependent markers that relate to control flow — what happens next, how broad the operation's scope is.
 - **ARTICULATOR** is an optional refinement layer that doesn't change the core meaning.
 
 ### The 49 Instruction Classes
@@ -136,6 +140,32 @@ These three operators define the grammar's backbone. They are bound morphemes �
 
 The ke and ek orderings are functionally distinct: ke = "heat burst then equilibrate" (energy-first, aggressive), ek = "check then heat" (stability-check-first, cautious). The ke/ek ratio is REGIME-conditioned (REGIME_1: 18.6% ek, REGIME_4: 64.0% ek) and section-conditioned (HERBAL 79.1% ek). The e-depth within a MIDDLE also restructures suffix grammar: single-e selects 64% -edy suffixes, while multi-e selects 37% -y suffixes (C1225-C1226). These are MIDDLE-internal parametric axes, independent of REGIME or section.
 
+### Instruction Encoding Architecture
+
+The MIDDLE layer — the core action of every token — is itself a compositional instruction (C1393-C1394). Each MIDDLE decomposes into:
+
+```
+HEAD + MOD* + TERM
+```
+
+- **HEAD** sets the operational domain: k=thermal (71% THERMAL), e=cooling (most versatile), o=staging, a=yielding (55% FLOW), t=transfer (65% FLOW)
+- **MOD stack** parametrizes the action in a fixed order: p(pause)→f(flag)→i(iterate)→c(adjust)→d(mark)→s(sequence). The modifier closest to HEAD carries the most category weight (66.5% decisive). Each modifier has a consistent effect — `d` pulls toward OPERATION, `f` and `p` toward MARKING, `i` toward TRANSITION. Modifiers that avoid each other (c/i, c/s, d/f) encode incompatible parametrization paths.
+- **TERM** sets the exit condition. Most terminals are **opaque** — they impose a category regardless of what precedes them (r→99% FLOW, m→87% TRANSITION). The terminal `h` ("watch") is **transparent** — it lets HEAD+MODS determine category (V=0.988), consistent with "keep monitoring whatever the HEAD specifies."
+
+The frame (HEAD+TERM) predicts 64% of operational category. Modifiers shift the remaining 36%. Example readings (**Tier 3** — the structural decomposition is Tier 2, but the English glosses like "heat" and "cool" are interpretive labels, not proven translations):
+
+| Token | PREFIX | MIDDLE | Decomposition | Category | Reading |
+|-------|--------|--------|--------------|----------|---------|
+| qokeedy | qo | keedy | k(heat) + ee(cool×2) + d(mark) + y(end) | THERMAL | energy channel: sustained cooling, mark completion |
+| cholaiin | ch | olaiin | o(arrange) + l(state) + a(yield) + ii(iterate×2) + n(halt) | STAGING | monitor channel: arrange state, yield with repeated iteration, halt |
+| okedy | ok | edy | e(cool) + d(mark) + y(end) | OPERATION | operate-heat channel: cool, mark, end |
+
+The system also includes **headless compounds** (20.6% of tokens) — MIDDLEs that start with modifier or terminal atoms instead of a HEAD. These are not abbreviations; they form a specialized subgrammar for infrastructure and support operations (CONTAINMENT 10.4x, MARKING 5.3x enriched), concentrated at line boundaries and paragraph headers, and deployed primarily through a-base PREFIX channels (da, sa, ka, ta).
+
+The e-atom shows a depth-dependent saturation gradient: single-e compounds are diverse across categories, but ee compounds are 84% THERMAL and eee compounds are 100% THERMAL — increasing cooling intensity saturates to pure thermal identity.
+
+Only e and i can repeat in the modifier stack (C1197), and only `dy` is a hard-fused pair that never separates (O/E 5.75x). All other frequent pairs (ed, ol, ke, ch) are either soft-fused or simply adjacent slots following the grammar.
+
 ### Hazard Topology
 
 The grammar enforces 17 forbidden transitions organized into 5 hazard classes:
@@ -183,7 +213,7 @@ At the macro-state level, the forgiveness mechanism has a concrete realization: 
 
 ### What B Cannot Tell You
 
-The grammar is purely operational. It encodes control-flow structure but not the identity of what is being controlled. You can determine that a program applies energy, monitors state, and avoids contamination — but you cannot determine what substance is being processed. This is not a gap in the analysis — the system was designed to work without encoding what is being processed. The operator's trained judgment supplies the meaning that the grammar deliberately omits.
+The grammar is purely operational. It encodes control-flow structure but not the identity of what is being controlled. You can determine that a program applies energy, monitors state, and avoids contamination — but you cannot determine what substance is being processed. This is not a gap in the analysis — the system encodes process control without specifying what is being processed. The specific material knowledge would have been supplied externally, whether by a trained operator's judgment or by some other reference.
 
 ---
 
@@ -538,11 +568,11 @@ These interpretations have been structurally ruled out:
 
 ## How This Analysis Was Built
 
-This project was built using AI-assisted computational analysis over 491 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
+This project was built using AI-assisted computational analysis over 506 research phases. The primary development environment was [Claude Code](https://claude.ai/claude-code) (Anthropic), with independent cross-validation from GPT-5 (OpenAI) at key decision points.
 
 The central methodological innovation is a **progressive context system**: a growing body of numbered, tiered, validated constraints that accumulates across research phases and is always available to the AI agents performing analysis. Every finding that survives statistical testing becomes a permanent constraint. Every falsified hypothesis is permanently closed. Each new phase starts with full knowledge of everything that came before.
 
-This matters because no single analytical session — human or AI — could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, 8 cross-system operational categories, and the Brunschwig alignment in one pass. But 491 phases, each building on validated prior work and never losing what was already proven, could. The constraint system is the project's memory, and its growth is what made the depth of analysis possible.
+This matters because no single analytical session — human or AI — could discover 49 instruction classes, 17 forbidden transitions, 6 macro states, 8 cross-system operational categories, an 18-atom instruction encoding architecture, and the Brunschwig alignment in one pass. But 506 phases, each building on validated prior work and never losing what was already proven, could. The constraint system is the project's memory, and its growth is what made the depth of analysis possible.
 
 For technical details on the progressive context architecture, see the Methodology section in `README.md`.
 

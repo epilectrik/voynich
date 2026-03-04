@@ -1,0 +1,31 @@
+{
+  "phase": "494_extension",
+  "name": "DESIGN_FREEDOM_APPARATUS_TEST",
+  "n_folios": 82,
+  "T3_mantel": {
+    "r": 0.2239,
+    "p": 0.0024,
+    "n_pairs": 3321,
+    "verdict": "PASS"
+  },
+  "T4_within_between": {
+    "total_var": 0.001847,
+    "within_var": 0.001694,
+    "eta_sq": 0.0831,
+    "p": 0.0329,
+    "groups": {
+      "SEALED_VESSEL": 19,
+      "DISTILLATION": 39,
+      "SUSTAINED_HEAT": 9,
+      "PRECISION": 14,
+      "DIRECT_FIRE": 1
+    },
+    "verdict": "PASS"
+  },
+  "T5_raw_mantel": {
+    "r": 0.2427,
+    "p": 0.0005,
+    "verdict": "PASS"
+  },
+  "overall_verdict": "PASS"
+}

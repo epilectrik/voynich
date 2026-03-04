@@ -33,9 +33,10 @@ CONTEXT_DIR = Path(__file__).parent
 
 
 def get_counts():
-    """Parse constraint and fit counts from their respective index files."""
+    """Parse constraint count, fit count, and highest constraint ID from index files."""
     constraint_count = 0
     fit_count = 0
+    highest_id = "C0000"
 
     # Parse constraint count from INDEX.md line 3: "**Total:** NNN validated constraints"
     index_file = CONTEXT_DIR / "CLAIMS" / "INDEX.md"
@@ -57,7 +58,15 @@ def get_counts():
                 fit_count = int(m.group(1))
                 break
 
-    return constraint_count, fit_count
+    # Parse highest constraint ID from CONSTRAINT_TABLE.txt
+    ct_file = CONTEXT_DIR / "CONSTRAINT_TABLE.txt"
+    if ct_file.exists():
+        for line in ct_file.read_text(encoding='utf-8').split('\n'):
+            m = re.match(r'^(C\d+)\t', line)
+            if m:
+                highest_id = m.group(1)  # last match wins (file is sorted)
+
+    return constraint_count, fit_count, highest_id
 
 
 # ============================================================
@@ -1141,7 +1150,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all {constraint_count} validated constraints and {fit_count} explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1312.
+the highest ID present is {highest_id}.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -1186,12 +1195,12 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 def generate_content(header, include_contracts=True, apply_filters=True, compact=False):
     """Generate expert context content with given header."""
-    constraint_count, fit_count = get_counts()
+    constraint_count, fit_count, highest_id = get_counts()
     sections = []
     component_sizes = {}
 
     # Header with instructions (fill in dynamic counts)
-    sections.append(header.format(constraint_count=constraint_count, fit_count=fit_count))
+    sections.append(header.format(constraint_count=constraint_count, fit_count=fit_count, highest_id=highest_id))
 
     # Add cognitive stance for compact mode
     if compact:

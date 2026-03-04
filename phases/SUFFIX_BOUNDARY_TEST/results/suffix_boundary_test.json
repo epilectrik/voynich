@@ -1,0 +1,747 @@
+{
+  "test1_suffix_decomposition": {
+    "suffixes": [
+      {
+        "suffix": "g",
+        "chars": [
+          "g"
+        ],
+        "roles": [
+          "UNKNOWN"
+        ],
+        "pattern": "UNKNOWN",
+        "all_known": false,
+        "ends_terminal": false,
+        "valid_pattern": false
+      },
+      {
+        "suffix": "l",
+        "chars": [
+          "l"
+        ],
+        "roles": [
+          "TERMINAL"
+        ],
+        "pattern": "TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "m",
+        "chars": [
+          "m"
+        ],
+        "roles": [
+          "TERMINAL"
+        ],
+        "pattern": "TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "n",
+        "chars": [
+          "n"
+        ],
+        "roles": [
+          "TERMINAL"
+        ],
+        "pattern": "TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "r",
+        "chars": [
+          "r"
+        ],
+        "roles": [
+          "TERMINAL"
+        ],
+        "pattern": "TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "s",
+        "chars": [
+          "s"
+        ],
+        "roles": [
+          "MODIFIER"
+        ],
+        "pattern": "MODIFIER",
+        "all_known": true,
+        "ends_terminal": false,
+        "valid_pattern": false
+      },
+      {
+        "suffix": "y",
+        "chars": [
+          "y"
+        ],
+        "roles": [
+          "TERMINAL"
+        ],
+        "pattern": "TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "al",
+        "chars": [
+          "a",
+          "l"
+        ],
+        "roles": [
+          "HEAD",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "am",
+        "chars": [
+          "a",
+          "m"
+        ],
+        "roles": [
+          "HEAD",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "an",
+        "chars": [
+          "a",
+          "n"
+        ],
+        "roles": [
+          "HEAD",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "ar",
+        "chars": [
+          "a",
+          "r"
+        ],
+        "roles": [
+          "HEAD",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "dy",
+        "chars": [
+          "d",
+          "y"
+        ],
+        "roles": [
+          "MODIFIER",
+          "TERMINAL"
+        ],
+        "pattern": "MODIFIER+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "el",
+        "chars": [
+          "e",
+          "l"
+        ],
+        "roles": [
+          "HEAD",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "em",
+        "chars": [
+          "e",
+          "m"
+        ],
+        "roles": [
+          "HEAD",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "en",
+        "chars": [
+          "e",
+          "n"
+        ],
+        "roles": [
+          "HEAD",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "er",
+        "chars": [
+          "e",
+          "r"
+        ],
+        "roles": [
+          "HEAD",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "ey",
+        "chars": [
+          "e",
+          "y"
+        ],
+        "roles": [
+          "HEAD",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "hy",
+        "chars": [
+          "h",
+          "y"
+        ],
+        "roles": [
+          "TERMINAL",
+          "TERMINAL"
+        ],
+        "pattern": "TERMINAL+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "im",
+        "chars": [
+          "i",
+          "m"
+        ],
+        "roles": [
+          "MODIFIER",
+          "TERMINAL"
+        ],
+        "pattern": "MODIFIER+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "in",
+        "chars": [
+          "i",
+          "n"
+        ],
+        "roles": [
+          "MODIFIER",
+          "TERMINAL"
+        ],
+        "pattern": "MODIFIER+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "ly",
+        "chars": [
+          "l",
+          "y"
+        ],
+        "roles": [
+          "TERMINAL",
+          "TERMINAL"
+        ],
+        "pattern": "TERMINAL+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "ol",
+        "chars": [
+          "o",
+          "l"
+        ],
+        "roles": [
+          "HEAD",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "om",
+        "chars": [
+          "o",
+          "m"
+        ],
+        "roles": [
+          "HEAD",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "on",
+        "chars": [
+          "o",
+          "n"
+        ],
+        "roles": [
+          "HEAD",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "or",
+        "chars": [
+          "o",
+          "r"
+        ],
+        "roles": [
+          "HEAD",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "ry",
+        "chars": [
+          "r",
+          "y"
+        ],
+        "roles": [
+          "TERMINAL",
+          "TERMINAL"
+        ],
+        "pattern": "TERMINAL+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "ain",
+        "chars": [
+          "a",
+          "i",
+          "n"
+        ],
+        "roles": [
+          "HEAD",
+          "MODIFIER",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+MODIFIER+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "edy",
+        "chars": [
+          "e",
+          "d",
+          "y"
+        ],
+        "roles": [
+          "HEAD",
+          "MODIFIER",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+MODIFIER+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "eey",
+        "chars": [
+          "e",
+          "e",
+          "y"
+        ],
+        "roles": [
+          "HEAD",
+          "HEAD",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+HEAD+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "ein",
+        "chars": [
+          "e",
+          "i",
+          "n"
+        ],
+        "roles": [
+          "HEAD",
+          "MODIFIER",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+MODIFIER+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "eol",
+        "chars": [
+          "e",
+          "o",
+          "l"
+        ],
+        "roles": [
+          "HEAD",
+          "HEAD",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+HEAD+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "iin",
+        "chars": [
+          "i",
+          "i",
+          "n"
+        ],
+        "roles": [
+          "MODIFIER",
+          "MODIFIER",
+          "TERMINAL"
+        ],
+        "pattern": "MODIFIER+MODIFIER+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "oin",
+        "chars": [
+          "o",
+          "i",
+          "n"
+        ],
+        "roles": [
+          "HEAD",
+          "MODIFIER",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+MODIFIER+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "ool",
+        "chars": [
+          "o",
+          "o",
+          "l"
+        ],
+        "roles": [
+          "HEAD",
+          "HEAD",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+HEAD+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "aiin",
+        "chars": [
+          "a",
+          "i",
+          "i",
+          "n"
+        ],
+        "roles": [
+          "HEAD",
+          "MODIFIER",
+          "MODIFIER",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+MODIFIER+MODIFIER+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "eeol",
+        "chars": [
+          "e",
+          "e",
+          "o",
+          "l"
+        ],
+        "roles": [
+          "HEAD",
+          "HEAD",
+          "HEAD",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+HEAD+HEAD+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "eiin",
+        "chars": [
+          "e",
+          "i",
+          "i",
+          "n"
+        ],
+        "roles": [
+          "HEAD",
+          "MODIFIER",
+          "MODIFIER",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+MODIFIER+MODIFIER+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      },
+      {
+        "suffix": "oiin",
+        "chars": [
+          "o",
+          "i",
+          "i",
+          "n"
+        ],
+        "roles": [
+          "HEAD",
+          "MODIFIER",
+          "MODIFIER",
+          "TERMINAL"
+        ],
+        "pattern": "HEAD+MODIFIER+MODIFIER+TERMINAL",
+        "all_known": true,
+        "ends_terminal": true,
+        "valid_pattern": true
+      }
+    ],
+    "valid_fraction": 0.9473684210526315,
+    "ends_terminal_fraction": 0.9473684210526315,
+    "pattern_distribution": {
+      "UNKNOWN": 1,
+      "TERMINAL": 5,
+      "MODIFIER": 1,
+      "HEAD+TERMINAL": 13,
+      "MODIFIER+TERMINAL": 3,
+      "TERMINAL+TERMINAL": 3,
+      "HEAD+MODIFIER+TERMINAL": 4,
+      "HEAD+HEAD+TERMINAL": 3,
+      "MODIFIER+MODIFIER+TERMINAL": 1,
+      "HEAD+MODIFIER+MODIFIER+TERMINAL": 3,
+      "HEAD+HEAD+HEAD+TERMINAL": 1
+    }
+  },
+  "test2_suffix_independence": {
+    "n_middles_freq5": 210,
+    "mean_entropy": 1.4745040270999543,
+    "median_entropy": 1.6104673549495567,
+    "frac_3plus_suffixes": 0.7714285714285715,
+    "frac_1_suffix_only": 0.14285714285714285,
+    "single_atom_mean_entropy": 1.99404425989755,
+    "compound_mean_entropy": 1.4198155815423128,
+    "entropy_ratio": 0.7120281179793171
+  },
+  "test3_grammar_quality": {
+    "split": {
+      "chi2": 30377.7284172186,
+      "p": 0.0,
+      "df": 32,
+      "V": 0.5886029357289627,
+      "n": 43841,
+      "n_atoms": 17,
+      "atom_positions": {
+        "a": 0.08680177599541677,
+        "c": 0.4038535612920665,
+        "d": 0.5399332633910358,
+        "e": 0.21167238430952903,
+        "f": 0.5037578162578162,
+        "h": 0.902458882555516,
+        "i": 0.4437497234023721,
+        "k": 0.476489107547781,
+        "l": 0.7686233007393275,
+        "m": 0.9751761691223575,
+        "n": 0.9980870508054525,
+        "o": 0.32223222375186794,
+        "p": 0.37918373082791296,
+        "r": 0.8867521797451375,
+        "s": 0.6387143982888664,
+        "t": 0.5218383227340883,
+        "y": 0.9713454525954525
+      },
+      "label": "SPLIT (suffix stripped)"
+    },
+    "merged": {
+      "chi2": 58034.99619203252,
+      "p": 0.0,
+      "df": 32,
+      "V": 0.6223863851245593,
+      "n": 74910,
+      "n_atoms": 17,
+      "atom_positions": {
+        "a": 0.2622900490694798,
+        "c": 0.21447266715334734,
+        "d": 0.5151566154321631,
+        "e": 0.2259559067070032,
+        "f": 0.2664560294892049,
+        "h": 0.5612825179165962,
+        "i": 0.49382276712584255,
+        "k": 0.11967802399050988,
+        "l": 0.7440859447213748,
+        "m": 0.9753150598613736,
+        "n": 0.9969899486740804,
+        "o": 0.2735940565071,
+        "p": 0.18492874613157628,
+        "r": 0.8454356292265948,
+        "s": 0.639674049049049,
+        "t": 0.15703076598923887,
+        "y": 0.9812456091376464
+      },
+      "label": "MERGED (MIDDLE + SUFFIX)"
+    },
+    "V_ratio": 1.0573959920090392
+  },
+  "test4_terminal_provenance": {
+    "total_compound_middles": 1273,
+    "terminal_in_suffix_chars": 972,
+    "terminal_in_suffix_chars_frac": 0.7635506677140613,
+    "terminal_in_terminal_set": 336,
+    "terminal_in_terminal_set_frac": 0.26394344069128045,
+    "terminal_matches_suffix_list": 223,
+    "terminal_matches_suffix_list_frac": 0.17517674783974863,
+    "terminal_char_distribution": {
+      "t": 48,
+      "a": 49,
+      "o": 155,
+      "d": 178,
+      "h": 187,
+      "k": 101,
+      "y": 32,
+      "e": 105,
+      "r": 48,
+      "p": 29,
+      "f": 33,
+      "s": 72,
+      "x": 10,
+      "i": 75,
+      "c": 79,
+      "n": 13,
+      "l": 47,
+      "m": 9,
+      "g": 2,
+      "q": 1
+    }
+  },
+  "test5_stripped_structure": {
+    "total_stripped_compounds": 1273,
+    "ending_terminal": 336,
+    "ending_terminal_frac": 0.26394344069128045,
+    "ending_modifier": 466,
+    "ending_modifier_frac": 0.36606441476826396,
+    "ending_head": 309,
+    "ending_head_frac": 0.24273369992144542,
+    "ending_free": 149,
+    "ending_free_frac": 0.11704634721131187,
+    "n_both_forms": 97,
+    "both_forms_terminal_dist": {
+      "FREE": 16,
+      "TERMINAL": 25,
+      "HEAD": 24,
+      "MODIFIER": 30,
+      "UNKNOWN": 2
+    }
+  },
+  "synthesis": {
+    "T1_suffix_slot_compliance": 0.9473684210526315,
+    "T1_ends_terminal": 0.9473684210526315,
+    "T2_mean_entropy": 1.4745040270999543,
+    "T2_frac_3plus_suffixes": 0.7714285714285715,
+    "T2_frac_1_suffix_only": 0.14285714285714285,
+    "T2_single_atom_entropy": 1.99404425989755,
+    "T2_compound_entropy": 1.4198155815423128,
+    "T2_entropy_ratio": 0.7120281179793171,
+    "T3_split_V": 0.5886029357289627,
+    "T3_merged_V": 0.6223863851245593,
+    "T3_V_ratio": 1.0573959920090392,
+    "T4_terminal_in_suffix_chars": 0.7635506677140613,
+    "T4_terminal_matches_suffix": 0.17517674783974863,
+    "T5_ending_terminal": 0.26394344069128045,
+    "T5_ending_modifier": 0.36606441476826396,
+    "T5_ending_head": 0.24273369992144542,
+    "overall_verdict": "MIXED EVIDENCE: Suffix shows partial independence from MIDDLE. The boundary is real but porous \u2014 some 'suffixes' may be MIDDLE terminals, while others are genuinely independent."
+  }
+}

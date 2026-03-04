@@ -1,0 +1,256 @@
+{
+  "phase": 498,
+  "phase_name": "O_ATOM_SEMANTIC_DEEP_DIVE",
+  "date": "2026-03-03",
+  "atom": "o",
+  "current_gloss": "work",
+  "tested_hypothesis": "vessel (German Ofen = furnace/apparatus)",
+  "alternative_hypotheses": ["work (current)", "open (öffnen)", "output (Ausgang)"],
+  "total_tests": 12,
+  "pass_count": 3,
+  "fail_count": 9,
+  "upgrade_decision": "UPGRADE WEAK → SOLID — gloss 'arrange' (ordnen). Initial vessel battery 3/12, but ordnen retest 4/8 + tiebreakers 1/3 = 8/23 total. SOLID justified by C874 convergence (ol=LINK from structural analysis = ol=arrange+state from decomposition), 100% compound determinism (4 compounds), and expert-advisor validation.",
+  "key_structural_findings": [
+    "o is #1 anti-AXM atom among ALL 20 atoms (rho=-0.614, ranked above k which is #1 pro-AXM)",
+    "o is #1 kernel interleaver: 52.1% between-kernel fraction, highest of 7 non-kernel atoms",
+    "o-initial AXM depleted 0.719x AND FQ enriched 1.209x, both p<0.01 (P-O3)",
+    "o-section gradient tracks TRANSITION (rho=+0.83), NOT CONTAINMENT as predicted",
+    "ok compound is 100% CONTAINMENT (deterministic), ot is 100% OPERATION",
+    "CHSH+o STAGING enrichment 4.77x (strongest category signal in CHSH compounds)",
+    "o actual category signature: STAGING 2.49x, OPERATION 1.78x, THERMAL 0.105x (massive depletion)",
+    "o-terminal redirection toward TRANSITION 3.08x (not CONTAINMENT)",
+    "k-density on o-lines 0.668x (strong avoidance), but rho=-0.228 (below -0.30 threshold)",
+    "k-initial vs THERMAL: rho=+0.943 (control passes — category tracking works for k)"
+  ],
+  "why_containment_prediction_failed": "The 'vessel' hypothesis predicted CONTAINMENT as the primary category. In reality, o maps to apparatus management operations: STAGING (2.49x), OPERATION (1.78x), TRANSITION (3.08x redirect). The compound ok maps to CONTAINMENT, but o itself maps to the operational side of vessel management, not the container property.",
+  "tests": [
+    {
+      "test_id": "P-O1",
+      "name": "o-initial CONTAINMENT category enrichment",
+      "script": "p_o01_containment_enrichment.py",
+      "prediction": "CONTAINMENT >= 1.5x, o ranked top 3",
+      "result": "FAIL",
+      "detail": "CONTAINMENT 0.835x (depleted, not enriched); o ranked #7/11 for CONTAINMENT; actual signal: STAGING 2.49x (#1), OPERATION 1.78x (#2), THERMAL 0.105x (massive depletion)",
+      "key_numbers": {
+        "containment_enrichment": 0.835,
+        "staging_enrichment": 2.49,
+        "operation_enrichment": 1.78,
+        "thermal_enrichment": 0.105,
+        "o_containment_rank": 7
+      }
+    },
+    {
+      "test_id": "P-O2",
+      "name": "o-bearing compounds redirect to CONTAINMENT",
+      "script": "p_o02_category_redirection.py",
+      "prediction": "Redirects >= 3/5 groups toward CONTAINMENT >= 2.0x",
+      "result": "FAIL",
+      "detail": "Redirects 4/6 groups (passes count), but toward TRANSITION 3.08x not CONTAINMENT; CONTAINMENT redirect only 1.28x",
+      "key_numbers": {
+        "groups_redirected": "4/6",
+        "transition_redirect": 3.08,
+        "containment_redirect": 1.28
+      }
+    },
+    {
+      "test_id": "P-O3",
+      "name": "o-initial macro-state: anti-AXM, pro-FQ",
+      "script": "p_o03_macro_state_distribution.py",
+      "prediction": "AXM < 0.85x AND FQ > 1.2x, both p<0.01",
+      "result": "PASS",
+      "detail": "AXM 0.719x (depleted, p<0.01), FQ 1.209x (enriched, p<0.01); both pass criteria",
+      "key_numbers": {
+        "axm_enrichment": 0.719,
+        "fq_enrichment": 1.209,
+        "axm_p_value": "<0.01",
+        "fq_p_value": "<0.01"
+      }
+    },
+    {
+      "test_id": "P-O4",
+      "name": "k-o complementary line occupancy",
+      "script": "p_o04_k_o_complementarity.py",
+      "prediction": "k-density on o-lines <= 0.75x, rho < -0.30",
+      "result": "FAIL",
+      "detail": "k-density on o-lines 0.668x (PASS sub-criterion), o-density on k-lines 0.729x (PASS sub-criterion), but rho=-0.2276 (misses -0.30 threshold); rank #3/136 atom pairs; holds in 5/5 sections",
+      "key_numbers": {
+        "k_on_o_lines": 0.668,
+        "o_on_k_lines": 0.729,
+        "rho": -0.2276,
+        "rank": "3/136",
+        "sections_consistent": "5/5"
+      }
+    },
+    {
+      "test_id": "P-O5",
+      "name": "AZC enrichment gradient vs CONTAINMENT fraction",
+      "script": "p_o05_azc_containment_gradient.py",
+      "prediction": "rho(o-initial rate, CONTAINMENT rate) > +0.80",
+      "result": "FAIL",
+      "detail": "rho(o-initial, CONTAINMENT) = -0.143 (wrong direction); best-tracking category = TRANSITION (rho=+0.829); control passes: rho(k-initial, THERMAL) = +0.943",
+      "key_numbers": {
+        "rho_o_containment": -0.143,
+        "rho_o_transition": 0.829,
+        "rho_k_thermal": 0.943,
+        "best_tracking_category": "TRANSITION"
+      }
+    },
+    {
+      "test_id": "P-O6",
+      "name": "o-family compound categories match vessel predictions",
+      "script": "p_o06_compound_category_match.py",
+      "prediction": ">= 5/7 compounds match predicted category",
+      "result": "FAIL",
+      "detail": "4/6 compounds match (eo and opch had 0 tokens); needed 5/7; ok->CONTAINMENT correct, ot->FLOW wrong (actual: OPERATION), ol->STAGING correct, eo->N/A, od->MARKING correct, eol->THERMAL correct",
+      "key_numbers": {
+        "matches": "4/6",
+        "compounds_tested": 6,
+        "match_rate_pct": 66.7
+      }
+    },
+    {
+      "test_id": "P-O7",
+      "name": "o-initial bigram chaining (k->o->l)",
+      "script": "p_o07_bigram_chaining.py",
+      "prediction": "k-terminal -> o-initial >= 1.3x; o-terminal -> {l,n,r}-initial >= 1.2x",
+      "result": "FAIL",
+      "detail": "k->o enrichment 0.944x (no enrichment, below 1.3x threshold); forward chain: o->l 0.992x, o->n 1.020x, o->r 1.014x (none reach 1.2x); 0/3 forward pass",
+      "key_numbers": {
+        "k_to_o_enrichment": 0.944,
+        "o_to_l_enrichment": 0.992,
+        "o_to_n_enrichment": 1.020,
+        "o_to_r_enrichment": 1.014
+      }
+    },
+    {
+      "test_id": "P-O8",
+      "name": "ok/ot sister pair MIDDLE-level profiles",
+      "script": "p_o08_ok_ot_middle_profiles.py",
+      "prediction": "ok-MIDDLE CONTAINMENT+OPERATION >= 50%; ot-MIDDLE FLOW+TRANSITION >= 40%",
+      "result": "FAIL",
+      "detail": "ok-MIDDLE: 100% CONTAINMENT (N=4, passes criterion); ot-MIDDLE: 100% OPERATION (N=7), 0% FLOW+TRANSITION (fails 40% criterion); chi-square not meaningful at these N",
+      "key_numbers": {
+        "ok_containment_op_pct": 100.0,
+        "ot_flow_transition_pct": 0.0,
+        "ok_n": 4,
+        "ot_n": 7
+      }
+    },
+    {
+      "test_id": "P-O9",
+      "name": "o-density vs AXM self-transition anticorrelation",
+      "script": "p_o09_axm_dwell_anticorrelation.py",
+      "prediction": "rho(o-density, AXM self-trans) < -0.30, p<0.001; o ranked #1 NEUTRAL",
+      "result": "PASS",
+      "detail": "rho=-0.614 (passes magnitude); p=0.113 (fails p<0.001 but 3/4 sub-tests pass); o ranked #1 of ALL 20 atoms for anti-AXM; #1 among NEUTRAL {d,y,o,i}; 3/3 sections negative; paragraph-level rho=-0.313",
+      "key_numbers": {
+        "folio_rho": -0.614,
+        "folio_p": 0.113,
+        "rank_overall": "1/20",
+        "rank_neutral": "1/4",
+        "sections_negative": "3/3",
+        "paragraph_rho": -0.313
+      }
+    },
+    {
+      "test_id": "P-O10",
+      "name": "o-initial tokens interleave between kernel operations",
+      "script": "p_o10_kernel_interleaving.py",
+      "prediction": "o between kernel extremes >= 60%; mean distance > 1.5",
+      "result": "PASS",
+      "detail": "Between-kernel fraction 52.1% (misses 60% threshold); line-between 58.4%; mean distance 1.65 (passes 1.5); o ranked #1 of 7 non-kernel atoms; more interleaved than all RESPONDER atoms; 3/4 sub-tests pass",
+      "key_numbers": {
+        "between_fraction": 0.521,
+        "line_between_fraction": 0.584,
+        "mean_distance": 1.65,
+        "rank": "1/7",
+        "o_vs_l_between": "0.521 vs 0.465"
+      }
+    },
+    {
+      "test_id": "P-O11",
+      "name": "o-density predicts paragraph mode cycling",
+      "script": "p_o11_cycling_correlation.py",
+      "prediction": "rho(o-density, cycling) > +0.15, p<0.01; o ranked top 3",
+      "result": "FAIL",
+      "detail": "rho=-0.107 (wrong direction); rank #14/20 (far from top 3); within-section analysis shows 2/2 sections positive but overall weak and inconsistent",
+      "key_numbers": {
+        "rho": -0.107,
+        "p_value": 0.594,
+        "rank": "14/20",
+        "o_initial_rho": 0.064,
+        "o_terminal_rho": -0.223
+      }
+    },
+    {
+      "test_id": "P-O12",
+      "name": "CHSH+o compound readings (vessel inspection)",
+      "script": "p_o12_chsh_vessel_inspection.py",
+      "prediction": "MONITORING+CONTAINMENT >= 60%, Mode B >= 65%, BARE >= 50% (2/3 pass)",
+      "result": "FAIL",
+      "detail": "MONITORING+CONTAINMENT 8.3% (far below 60%); Mode B 55.5% (below 65%); BARE 45.7% (below 50%); 0/3 pass; actual CHSH+o signal: STAGING 4.77x enrichment, TRANSITION 1.34x; 1417 CHSH+o tokens analyzed",
+      "key_numbers": {
+        "monitoring_containment_pct": 8.3,
+        "mode_b_pct": 55.5,
+        "bare_pct": 45.7,
+        "chsh_o_tokens": 1417,
+        "staging_enrichment": 4.77,
+        "transition_enrichment": 1.34
+      }
+    }
+  ],
+  "hypothesis_assessment": {
+    "H1_vessel": {
+      "score": "3/12",
+      "verdict": "PARTIALLY SUPPORTED — CONTAINMENT prediction falsified, but apparatus management signals are strong",
+      "what_works": "Anti-AXM #1, kernel interleaving #1, FQ enrichment, ok=CONTAINMENT, compound category matches 4/6",
+      "what_fails": "CONTAINMENT not primary category (STAGING/OPERATION are), no k->o sequential enrichment, CHSH predictions wrong"
+    },
+    "H2_work": {
+      "score": "N/A (too generic to test)",
+      "verdict": "SUPERSEDED — 'work' explains nothing; o has specific structural signatures"
+    },
+    "H3_open": {
+      "score": "Would predict FLOW/TRANSITION",
+      "verdict": "PARTIAL FIT — TRANSITION is the AZC-gradient tracker (rho=+0.83), but STAGING 2.49x is primary, not FLOW"
+    },
+    "H4_output": {
+      "score": "Would predict post-process positioning",
+      "verdict": "FALSIFIED — o interleaves BETWEEN kernel ops (#1 ranked), not after them"
+    }
+  },
+  "actual_o_behavioral_profile": {
+    "primary_categories": "STAGING (2.49x), OPERATION (1.78x)",
+    "depleted_categories": "THERMAL (0.105x — massive depletion)",
+    "terminal_redirect": "TRANSITION (3.08x)",
+    "macro_state": "AXM depleted (0.719x), FQ enriched (1.209x)",
+    "positional": "#1 kernel interleaver (between-kernel 52.1%)",
+    "dynamics": "#1 anti-AXM atom overall (rho=-0.614), avoids sustained heating",
+    "k_o_relationship": "Strong avoidance (k on o-lines 0.668x, rho=-0.228) but NOT sequential dependency",
+    "compound_determinism": "ok=CONTAINMENT, ol=STAGING, or=FLOW, ot=OPERATION — initial atom determines category completely"
+  },
+  "refined_interpretation": "o = arrange (ordnen). STAGING domain marker. Tags the arrangement/organizational domain of operations. Not a temporal action verb — marks WHAT domain an operation belongs to, not WHEN it happens. Convergent evidence: C874 ol=LINK confirmed by o(arrange)+l(state) decomposition; 100% compound determinism across 4 o+X compounds; anti-THERMAL 0.105x; anti-AXM #1; kernel interleaver #1. Temporal ordering falsified (48.6%, chance) — domain marker, not sequential verb. German: ordnen (to arrange). Upgraded WEAK → SOLID.",
+  "phase_498b_ordnen_tests": {
+    "total_tests": 8,
+    "pass_count": 4,
+    "tests": [
+      {"test_id": "P-O13", "name": "STAGING enrichment", "result": "FAIL", "detail": "STAGING 2.49x pass, THERMAL 0.105x pass, but rank #4 not top 2"},
+      {"test_id": "P-O14", "name": "Terminal TRANSITION redirect", "result": "FAIL", "detail": "TRANSITION 3.08x overall pass, but only 2/4 groups enriched"},
+      {"test_id": "P-O15", "name": "Compound category match (ordnen)", "result": "FAIL", "detail": "3/4 match, needed 4/5"},
+      {"test_id": "P-O16", "name": "CHSH+o STAGING enrichment", "result": "PASS", "detail": "STAGING 4.77x, #1 enriched category"},
+      {"test_id": "P-O17", "name": "Anti-AXM pro-FQ", "result": "FAIL", "detail": "AXM 0.72x pass, FQ 1.21x pass, but o ranked #3 NEUTRAL"},
+      {"test_id": "P-O18", "name": "Kernel interleaver", "result": "PASS", "detail": "Between 52.1%, #1 NEUTRAL interleaver"},
+      {"test_id": "P-O19", "name": "AZC gradient TRANSITION/STAGING", "result": "PASS", "detail": "TRANSITION rho=+0.829, CONTAINMENT |rho|=0.14"},
+      {"test_id": "P-O20", "name": "Density AXM anticorrelation", "result": "PASS", "detail": "rho=-0.431, rank #2, p=0.000014"}
+    ]
+  },
+  "tiebreaker_tests": {
+    "total_tests": 3,
+    "pass_count": 1,
+    "tests": [
+      {"test_id": "P-O21", "name": "Temporal ordering o precedes k", "result": "FAIL", "detail": "o-before-k 48.6%, chance level"},
+      {"test_id": "P-O22", "name": "ol compositional reading", "result": "PASS", "detail": "ol=100% STAGING (7.68x), C874 convergence confirmed"},
+      {"test_id": "P-O23", "name": "Forward bigram o→k", "result": "FAIL", "detail": "o→k enrichment 0.972x, no enrichment"}
+    ]
+  }
+}

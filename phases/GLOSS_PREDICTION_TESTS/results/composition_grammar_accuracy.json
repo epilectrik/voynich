@@ -1,0 +1,173 @@
+{
+  "n_compounds": 264,
+  "category_distribution": {
+    "MONITORING": 134,
+    "THERMAL": 94,
+    "FLOW": 21,
+    "STAGING": 15
+  },
+  "most_common_category": "MONITORING",
+  "models": {
+    "M1_baseline": {
+      "type_accuracy": 50.8,
+      "token_accuracy": 70.3,
+      "correct": 134,
+      "total": 264
+    },
+    "M2_head_only": {
+      "type_accuracy": 29.2,
+      "token_accuracy": 17.9,
+      "correct": 77,
+      "total": 264
+    },
+    "M3_head_dominance": {
+      "type_accuracy": 29.2,
+      "token_accuracy": 17.9,
+      "correct": 77,
+      "total": 264
+    },
+    "M4_composition": {
+      "type_accuracy": 31.4,
+      "token_accuracy": 17.7,
+      "correct": 83,
+      "total": 264
+    }
+  },
+  "misses_top15": [
+    {
+      "middle": "edy",
+      "atoms": "edy",
+      "head": "e",
+      "terminal": "y",
+      "true_cat": "MONITORING",
+      "pred_cat": "THERMAL",
+      "tokens": 1938
+    },
+    {
+      "middle": "ey",
+      "atoms": "ey",
+      "head": "e",
+      "terminal": "y",
+      "true_cat": "MONITORING",
+      "pred_cat": "THERMAL",
+      "tokens": 889
+    },
+    {
+      "middle": "aiin",
+      "atoms": "aiin",
+      "head": "a",
+      "terminal": "n",
+      "true_cat": "THERMAL",
+      "pred_cat": "FLOW",
+      "tokens": 834
+    },
+    {
+      "middle": "ol",
+      "atoms": "ol",
+      "head": "o",
+      "terminal": "l",
+      "true_cat": "MONITORING",
+      "pred_cat": "STAGING",
+      "tokens": 762
+    },
+    {
+      "middle": "ar",
+      "atoms": "ar",
+      "head": "a",
+      "terminal": "r",
+      "true_cat": "MONITORING",
+      "pred_cat": "FLOW",
+      "tokens": 677
+    },
+    {
+      "middle": "dy",
+      "atoms": "dy",
+      "head": "d",
+      "terminal": "y",
+      "true_cat": "MONITORING",
+      "pred_cat": "MARKING",
+      "tokens": 675
+    },
+    {
+      "middle": "eey",
+      "atoms": "eey",
+      "head": "e",
+      "terminal": "y",
+      "true_cat": "MONITORING",
+      "pred_cat": "THERMAL",
+      "tokens": 644
+    },
+    {
+      "middle": "al",
+      "atoms": "al",
+      "head": "a",
+      "terminal": "l",
+      "true_cat": "MONITORING",
+      "pred_cat": "FLOW",
+      "tokens": 521
+    },
+    {
+      "middle": "or",
+      "atoms": "or",
+      "head": "o",
+      "terminal": "r",
+      "true_cat": "MONITORING",
+      "pred_cat": "STAGING",
+      "tokens": 446
+    },
+    {
+      "middle": "ain",
+      "atoms": "ain",
+      "head": "a",
+      "terminal": "n",
+      "true_cat": "THERMAL",
+      "pred_cat": "FLOW",
+      "tokens": 420
+    },
+    {
+      "middle": "ed",
+      "atoms": "ed",
+      "head": "e",
+      "terminal": "d",
+      "true_cat": "MONITORING",
+      "pred_cat": "THERMAL",
+      "tokens": 401
+    },
+    {
+      "middle": "eo",
+      "atoms": "eo",
+      "head": "e",
+      "terminal": "o",
+      "true_cat": "MONITORING",
+      "pred_cat": "THERMAL",
+      "tokens": 359
+    },
+    {
+      "middle": "eol",
+      "atoms": "eol",
+      "head": "e",
+      "terminal": "l",
+      "true_cat": "MONITORING",
+      "pred_cat": "THERMAL",
+      "tokens": 294
+    },
+    {
+      "middle": "od",
+      "atoms": "od",
+      "head": "o",
+      "terminal": "d",
+      "true_cat": "MONITORING",
+      "pred_cat": "STAGING",
+      "tokens": 177
+    },
+    {
+      "middle": "am",
+      "atoms": "am",
+      "head": "a",
+      "terminal": "m",
+      "true_cat": "MONITORING",
+      "pred_cat": "FLOW",
+      "tokens": 174
+    }
+  ]
+}

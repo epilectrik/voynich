@@ -1,0 +1,95 @@
+{
+  "phase": 501,
+  "atom": "s",
+  "current_gloss": "sequence",
+  "current_tier": "PLAUSIBLE",
+  "hypotheses": {
+    "H1": "sequence (sequenzieren) — STAGING dominant",
+    "H2": "sift/inspect (sichten) — MONITORING dominant",
+    "H3": "step (Schritt) — STAGING/OPERATION mixed"
+  },
+  "results": {
+    "S-S1": {
+      "name": "s-initial 8-category profile",
+      "verdict": "PASS",
+      "details": "STAGING 87.50% (#1 atom, 6.721x enrichment), THERMAL 0.048x, stable 5/5 sections. 4/4 sub-criteria pass. MONITORING only 2.84% — strongly favors H1."
+    },
+    "S-S2": {
+      "name": "s+X compound category determinism",
+      "verdict": "PASS",
+      "details": "6/6 FULL MATCH at 100% purity. sh=MONITORING, ksh=MONITORING, lsh=MONITORING, os=OPERATION, es=STAGING, cs=MARKING. Perfect compound determinism."
+    },
+    "S-S3": {
+      "name": "s POSITIVE carryover run analysis",
+      "verdict": "INCONCLUSIVE",
+      "details": "2.523x enrichment but only 3 s-s pairs (below 5-pair minimum). Known HIGH risk test."
+    },
+    "S-S4": {
+      "name": "s-initial macro-state distribution",
+      "verdict": "FAIL",
+      "details": "AXM only 35.4% (0.523x, rank #13). FQ 64.6% (3.59x enrichment). s lives in FQ macro-state, not AXM. FL_HAZ 0%. s operates during cycling, unlike AXM-confined c/p."
+    },
+    "S-S5": {
+      "name": "s->h junction analysis",
+      "verdict": "PASS",
+      "details": "s->h 208 observed (13.16x enrichment). MON+STAGING 53.8%. Cross-token depleted (1.61x). Intra:cross ratio 208:1. All 4 sub-criteria pass."
+    },
+    "S-S6": {
+      "name": "CHSH+s compound enrichment",
+      "verdict": "FAIL",
+      "details": "MONITORING only 1.5% (needed >= 30%). But STAGING 44.1% (8.70x enrichment). s maintains STAGING under CHSH prefix, does not shift to MONITORING like c does."
+    },
+    "S-S7": {
+      "name": "sh family compound survey",
+      "verdict": "PASS",
+      "details": "3/4 sub-predictions. P1 PASS (92.9% s->h adjacency), P2 PASS (4 distinct Xsh categories), P3 FAIL (5/10 have MON >= 20%), P4 PASS (73.9% compound-final)."
+    },
+    "S-S8": {
+      "name": "s-compound order sensitivity",
+      "verdict": "FAIL",
+      "details": "No testable pairs (so N=3, se N=0, sc N=0). Controls validated (ck/kc order-sensitive). All pairs INCONCLUSIVE due to sparse reversed forms."
+    },
+    "S-S9": {
+      "name": "Section gradient",
+      "verdict": "FAIL",
+      "details": "rho(s, MONITORING)=+0.500 >= +0.35 passes P1. But |rho(s, THERMAL)|=0.800 fails P2 (needed <= 0.50). Best tracker is CONTAINMENT (+0.800), not STAGING or MONITORING."
+    },
+    "S-S10": {
+      "name": "Alternative hypothesis discrimination",
+      "verdict": "PASS",
+      "details": "H1 'sequence' 3/4, H2 'sift' 2/4, H3 'step' 2/4. D1: NEUTRAL 77.3% (H1 match). D2: R4 2.55x (all match). D3: mean 0.547 (all match). D4: MON 36.0% (none match). H1 is best hypothesis."
+    },
+    "S-S11": {
+      "name": "Staging injection",
+      "verdict": "FAIL",
+      "details": "Only 2/6 positive for STAGING injection (ks +100pp, es +100pp). 0/6 for MONITORING. os, cs, sd show 0pp delta. s is structurally neutral in most compound contexts."
+    },
+    "S-S12": {
+      "name": "Compositional convergence",
+      "verdict": "PASS",
+      "details": "6/6 FULL match. sh=MONITORING, ksh=MONITORING, lsh=MONITORING, os=OPERATION, es=STAGING, cs=MARKING. Non-h compounds diversely categorized (OPERATION, STAGING, MARKING). h-junction pulls +100pp toward MONITORING."
+    }
+  },
+  "score": {
+    "pass": 6,
+    "fail": 5,
+    "inconclusive": 1,
+    "total": 12
+  },
+  "hypothesis_scores": {
+    "H1_sequence": "Best — S-S10 3/4, S-S1 STAGING #1, S-S12 non-h compounds not MONITORING-dominant",
+    "H2_sift": "Rejected — MONITORING only 2.84% standalone, non-h compounds not MONITORING",
+    "H3_step": "Rejected — OPERATION not dominant"
+  },
+  "upgrade_decision": "REMAIN PLAUSIBLE — 6/12 meets threshold for 'remain PLAUSIBLE' (5-7 range). Current gloss 'sequence' is best hypothesis (H1 wins S-S10), but compound behavior is complex: sh-family is MONITORING, non-h compounds are each different. The 100% compound determinism (S-S2) is the strongest structural result.",
+  "key_findings": [
+    "s is the #1 STAGING atom (87.50%, 6.72x enrichment) — not MONITORING",
+    "Perfect compound determinism: each s-compound maps to a unique category at 100% purity",
+    "s operates in FQ macro-state (64.6%, 3.59x), not AXM — unlike c/p which are AXM-confined",
+    "sh compound-suffix: s->h junction 13.16x, sh is terminal (73.9%), X determines Xsh category",
+    "h-junction effect: sh-family = MONITORING, but non-h compounds = STAGING/OPERATION/MARKING",
+    "R4 PRECISION enrichment 2.55x confirms s involvement in high-precision contexts",
+    "NEUTRAL timing 77.3% — s rarely follows state changes (not RESPONDER), rarely precedes them (not ACTOR)"
+  ],
+  "gloss_revision": "NOT WARRANTED — H2 'sift' rejected (MONITORING only 2.84% standalone, non-h compounds not MONITORING-dominant). Current gloss 'sequence' remains best fit."
+}

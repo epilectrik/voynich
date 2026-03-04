@@ -1,0 +1,161 @@
+{
+  "test1_order_violations": {
+    "pairs_with_both": 7,
+    "same_category": 5,
+    "different_category": 2,
+    "verdict": "ORDER_CONVENTION",
+    "pairs": {
+      "c,f": {
+        "canonical_n": 41,
+        "reversed_n": 10,
+        "canonical_dominant": "MARKING",
+        "reversed_dominant": "MARKING",
+        "same_dominant": true,
+        "chi2": 1.4,
+        "p": 0.48717537998250215
+      },
+      "c,p": {
+        "canonical_n": 182,
+        "reversed_n": 20,
+        "canonical_dominant": "OPERATION",
+        "reversed_dominant": "MARKING",
+        "same_dominant": false,
+        "chi2": 26.0,
+        "p": 2.2414457862764035e-06
+      },
+      "c,s": {
+        "canonical_n": 3,
+        "reversed_n": 1,
+        "canonical_dominant": "MARKING",
+        "reversed_dominant": "THERMAL",
+        "same_dominant": false,
+        "chi2": 0,
+        "p": 1.0
+      },
+      "d,p": {
+        "canonical_n": 7,
+        "reversed_n": 1,
+        "canonical_dominant": "MARKING",
+        "reversed_dominant": "MARKING",
+        "same_dominant": true,
+        "chi2": 0,
+        "p": 1.0
+      },
+      "d,s": {
+        "canonical_n": 5,
+        "reversed_n": 4,
+        "canonical_dominant": "MARKING",
+        "reversed_dominant": "MARKING",
+        "same_dominant": true,
+        "chi2": 0,
+        "p": 1.0
+      },
+      "f,s": {
+        "canonical_n": 4,
+        "reversed_n": 1,
+        "canonical_dominant": "MARKING",
+        "reversed_dominant": "MARKING",
+        "same_dominant": true,
+        "chi2": 0,
+        "p": 1.0
+      },
+      "i,s": {
+        "canonical_n": 4,
+        "reversed_n": 1,
+        "canonical_dominant": "STAGING",
+        "reversed_dominant": "STAGING",
+        "same_dominant": true,
+        "chi2": 0,
+        "p": 1.0
+      }
+    }
+  },
+  "test2_order_effect_correlation": {
+    "canonical_spearman": 0.086,
+    "canonical_p": 0.8717434402332361,
+    "canonical_pearson": 0.259,
+    "direction": "later_stronger",
+    "observed_positions": {
+      "p": 0.139,
+      "f": 0.367,
+      "i": 0.705,
+      "c": 0.607,
+      "d": 0.721,
+      "s": 0.676
+    }
+  },
+  "test3_progressive_shift": {
+    "total_compounds": 183,
+    "changed_count": 133,
+    "unchanged_count": 50,
+    "stage_dominance": {
+      "1": 323,
+      "0": 658,
+      "3": 2,
+      "2": 7
+    },
+    "mean_decisive_position": 0.346,
+    "verdict": "FIRST_DOMINATES"
+  },
+  "test4_pipeline_stages": {
+    "single_stage_totals": {
+      "SEAL": 3163,
+      "LOOP": 1637,
+      "TUNE": 786,
+      "GATE": 135
+    },
+    "multi_stage_count": 440,
+    "single_stage_count": 5721,
+    "chi2": 1639.7,
+    "p": 0.0,
+    "cramers_v": 0.516
+  },
+  "test5_suffix_mode": {
+    "mod_class_counts": {
+      "MIXED": 146,
+      "EARLY+LATE": 40,
+      "LATE_ONLY": 190,
+      "MID_ONLY": 194,
+      "EARLY_ONLY": 39
+    },
+    "mod_class_suffix": {
+      "EARLY+LATE": {
+        "terminal_pct": 32.8,
+        "bare_pct": 24.1,
+        "total": 58
+      },
+      "EARLY_ONLY": {
+        "terminal_pct": 28.9,
+        "bare_pct": 12.6,
+        "total": 135
+      },
+      "LATE_ONLY": {
+        "terminal_pct": 6.6,
+        "bare_pct": 69.6,
+        "total": 3163
+      },
+      "MID_ONLY": {
+        "terminal_pct": 32.2,
+        "bare_pct": 53.7,
+        "total": 2432
+      },
+      "MIXED": {
+        "terminal_pct": 62.2,
+        "bare_pct": 11.8,
+        "total": 373
+      }
+    },
+    "early_vs_late_chi2": 223.3,
+    "early_vs_late_p": 3.865565715878902e-48,
+    "early_vs_late_v": 0.26
+  },
+  "synthesis": {
+    "order_matters": false,
+    "strong_correlation": false,
+    "pipeline_valid": "True",
+    "mode_coupling": "True",
+    "evidence_for": "2",
+    "evidence_against": "2",
+    "overall_verdict": "ORDERING_PARTIAL"
+  }
+}

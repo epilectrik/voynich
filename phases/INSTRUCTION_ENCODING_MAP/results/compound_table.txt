@@ -1,0 +1,203 @@
+Phase 505: Full Compound Decomposition Table
+==========================================================================================
+
+      MIDDLE  HEAD         MODS  TERM     CATEGORY  FREQ  GLOSS
+------------ ----- ------------ ----- ------------ -----  -----------------------------------
+        alsh     a          l+s     h      STAGING     5  yield + state + sequence + watch
+          ak     a            -     k      THERMAL    12  yield + heat
+         alk     a            l     k      STAGING    10  yield + state + heat
+          al     a            -     l         FLOW   521  yield + state
+          am     a            -     m   TRANSITION   174  yield + final
+        aiin     a           ii     n   TRANSITION   834  yield + iterate(ixi) + halt
+         ain     a            i     n         FLOW   420  yield + iterate + halt
+          an     a            -     n  CONTAINMENT    18  yield + halt
+          ar     a            -     r         FLOW   677  yield + respond
+         air     a            i     r         FLOW     6  yield + iterate + respond
+          ai     a            i     -   TRANSITION   174  yield + iterate
+         aii     a           ii     -      UNKNOWN    32  yield + iterate(ixi)
+          ad     a            d     -      MARKING     7  yield + mark
+        airo     a        i+r+o     -         FLOW     7  yield + iterate + respond + arrange
+
+         ech     e            c     h   MONITORING    34  cool + adjust + watch
+        eckh     e          c+k     h      MARKING    29  cool + adjust + heat + watch
+        ecth     e          c+t     h         FLOW    12  cool + adjust + transfer + watch
+        epch     e          p+c     h      MARKING     8  cool + pause + adjust + watch
+        efch     e          f+c     h      MARKING     6  cool + flag + adjust + watch
+          ek     e            -     k    OPERATION   169  cool + heat
+         eck     e            c     k  CONTAINMENT    90  cool + adjust + heat
+         eek    ee            -     k  CONTAINMENT    54  cool(exe) + heat
+         eok     e            o     k      THERMAL    39  cool + arrange + heat
+        eolk     e          o+l     k      THERMAL     9  cool + arrange + state + heat
+         eyk     e            y     k      THERMAL     8  cool + end + heat
+        eock     e          o+c     k      THERMAL     7  cool + arrange + adjust + heat
+         edk     e            d     k      THERMAL     5  cool + mark + heat
+         eol     e            o     l      THERMAL   294  cool + arrange + state
+        eeol    ee            o     l      THERMAL    47  cool(exe) + arrange + state
+          et     e            -     t      STAGING    58  cool + transfer
+         ect     e            c     t   MONITORING    47  cool + adjust + transfer
+         eet    ee            -     t      THERMAL    22  cool(exe) + transfer
+         eot     e            o     t         FLOW    13  cool + arrange + transfer
+        eoct     e          o+c     t         FLOW     5  cool + arrange + adjust + transfer
+         edy     e            d     y    OPERATION  1938  cool + mark + end
+          ey     e            -     y   TRANSITION   889  cool + end
+         eey    ee            -     y      THERMAL   644  cool(exe) + end
+          ed     e            d     -         FLOW   401  cool + mark
+          eo     e            o     -   TRANSITION   359  cool + arrange
+          ee    ee            -     -      THERMAL   151  cool(exe)
+         eeo    ee            o     -    OPERATION   133  cool(exe) + arrange
+         eed    ee            d     -      THERMAL    88  cool(exe) + mark
+         eod     e          o+d     -   TRANSITION    82  cool + arrange + mark
+          ep     e            p     -      MARKING    16  cool + pause
+        eeod    ee          o+d     -      THERMAL    16  cool(exe) + arrange + mark
+          ec     e            c     -      MARKING    16  cool + adjust
+          es     e            s     -      STAGING    15  cool + sequence
+         eee   eee            -     -      THERMAL    14  cool(exexe)
+        edai     e        d+a+i     -      MARKING    11  cool + mark + yield + iterate
+        eeeo   eee            o     -      THERMAL    10  cool(exexe) + arrange
+         ees    ee            s     -      THERMAL     9  cool(exe) + sequence
+         eda     e          d+a     -      MARKING     9  cool + mark + yield
+          ea     e            a     -      THERMAL     8  cool + yield
+         eke     e          k+e     -      THERMAL     7  cool + heat + cool
+         eec    ee            c     -      THERMAL     6  cool(exe) + adjust
+         eef    ee            f     -      THERMAL     6  cool(exe) + flag
+          ef     e            f     -      MARKING     6  cool + flag
+         edo     e          d+o     -      MARKING     5  cool + mark + arrange
+         ekc     e          k+c     -      THERMAL     5  cool + heat + adjust
+         ede     e          d+e     -      THERMAL     5  cool + mark + cool
+
+          ii    ii            -     -      STAGING    23  iterate(ixi)
+
+         kch     k            c     h      THERMAL   148  heat + adjust + watch
+         ksh     k            s     h   MONITORING    26  heat + sequence + watch
+        kech     k          e+c     h      THERMAL     8  heat + cool + adjust + watch
+        kesh     k          e+s     h      THERMAL     5  heat + cool + sequence + watch
+         kal     k            a     l      STAGING    10  heat + yield + state
+          ke     k            e     -      THERMAL   421  heat + cool
+        keeo     k         ee+o     -      STAGING    38  heat + cool(exe) + arrange
+         kee     k           ee     -      THERMAL    34  heat + cool(exe)
+          kc     k            c     -  CONTAINMENT    33  heat + adjust
+         ked     k          e+d     -         FLOW    32  heat + cool + mark
+        keed     k         ee+d     -         FLOW    30  heat + cool(exe) + mark
+         keo     k          e+o     -   TRANSITION    26  heat + cool + arrange
+          ka     k            a     -      THERMAL    25  heat + yield
+         kai     k          a+i     -      STAGING    24  heat + yield + iterate
+          ko     k            o     -    OPERATION    16  heat + arrange
+         kec     k          e+c     -      THERMAL    12  heat + cool + adjust
+        keec     k         ee+c     -      THERMAL     8  heat + cool(exe) + adjust
+          ks     k            s     -      STAGING     7  heat + sequence
+        kchd     k        c+h+d     -      MARKING     6  heat + adjust + watch + mark
+       keeod     k       ee+o+d     -      THERMAL     6  heat + cool(exe) + arrange + mark
+
+        opch     o          p+c     h    OPERATION   107  arrange + pause + adjust + watch
+         och     o            c     h      MARKING    20  arrange + adjust + watch
+        ofch     o          f+c     h      MARKING    17  arrange + flag + adjust + watch
+        ockh     o          c+k     h      MARKING    16  arrange + adjust + heat + watch
+        octh     o          c+t     h         FLOW    15  arrange + adjust + transfer + watch
+         osh     o            s     h   MONITORING    13  arrange + sequence + watch
+        olch     o          l+c     h      MARKING     8  arrange + state + adjust + watch
+        otch     o          t+c     h         FLOW     7  arrange + transfer + adjust + watch
+        ocph     o          c+p     h      MARKING     5  arrange + adjust + pause + watch
+        opsh     o          p+s     h      MARKING     5  arrange + pause + sequence + watch
+        okch     o          k+c     h      MARKING     5  arrange + heat + adjust + watch
+          ok     o            -     k  CONTAINMENT    70  arrange + heat
+         olk     o            l     k  CONTAINMENT    27  arrange + state + heat
+         ock     o            c     k      MARKING    13  arrange + adjust + heat
+         oek     o            e     k      THERMAL     6  arrange + cool + heat
+        oqok     o          q+o     k  CONTAINMENT     5  arrange + ? + arrange + heat
+          ol     o            -     l      STAGING   762  arrange + state
+          om     o            -     m    OPERATION    25  arrange + final
+        oiin     o           ii     n      STAGING    32  arrange + iterate(ixi) + halt
+         oin     o            i     n    OPERATION     6  arrange + iterate + halt
+          or     o            -     r         FLOW   446  arrange + respond
+          ot     o            -     t   MONITORING    46  arrange + transfer
+         oct     o            c     t         FLOW    14  arrange + adjust + transfer
+          od     o            d     -      UNKNOWN   177  arrange + mark
+          op     o            p     -   TRANSITION    36  arrange + pause
+          os     o            s     -    OPERATION    16  arrange + sequence
+          of     o            f     -      MARKING    15  arrange + flag
+          oi     o            i     -    OPERATION    13  arrange + iterate
+          oe     o            e     -    OPERATION    11  arrange + cool
+         oee     o           ee     -      THERMAL    10  arrange + cool(exe)
+         opc     o          p+c     -      MARKING     9  arrange + pause + adjust
+        odai     o        d+a+i     -      MARKING     8  arrange + mark + yield + iterate
+        olke     o        l+k+e     -      THERMAL     8  arrange + state + heat + cool
+      opched     o    p+c+h+e+d     -      MARKING     7  arrange + pause + adjust + watch + cool + mark
+       opche     o      p+c+h+e     -      MARKING     6  arrange + pause + adjust + watch + cool
+         opa     o          p+a     -      MARKING     6  arrange + pause + yield
+        opai     o        p+a+i     -      MARKING     6  arrange + pause + yield + iterate
+         ode     o          d+e     -      MARKING     5  arrange + mark + cool
+         oke     o          k+e     -      THERMAL     5  arrange + heat + cool
+
+         tch     t            c     h    OPERATION    65  transfer + adjust + watch
+         tsh     t            s     h         FLOW     9  transfer + sequence + watch
+          te     t            e     -         FLOW    87  transfer + cool
+         teo     t          e+o     -         FLOW    18  transfer + cool + arrange
+         ted     t          e+d     -         FLOW    17  transfer + cool + mark
+          tc     t            c     -         FLOW    16  transfer + adjust
+          to     t            o     -         FLOW    11  transfer + arrange
+        teed     t         ee+d     -      THERMAL     9  transfer + cool(exe) + mark
+          ta     t            a     -         FLOW     9  transfer + yield
+         tai     t          a+i     -         FLOW     8  transfer + yield + iterate
+        teeo     t         ee+o     -      THERMAL     8  transfer + cool(exe) + arrange
+         tee     t           ee     -      THERMAL     7  transfer + cool(exe)
+        tchd     t        c+h+d     -      MARKING     7  transfer + adjust + watch + mark
+       tched     t      c+h+e+d     -      MARKING     7  transfer + adjust + watch + cool + mark
+        tche     t        c+h+e     -         FLOW     5  transfer + adjust + watch + cool
+
+          dy     -          d+y     -  CONTAINMENT   675  mark + end
+         iin     -         ii+n     -      STAGING   560  iterate(ixi) + halt
+          in     -          i+n     -      MARKING   264  iterate + halt
+          ck     -          c+k     -    OPERATION   197  adjust + heat
+         ckh     -        c+k+h     -  CONTAINMENT   127  adjust + heat + watch
+          ct     -          c+t     -   MONITORING    95  adjust + transfer
+         pch     -        p+c+h     -      MARKING    79  pause + adjust + watch
+         lch     -        l+c+h     -    OPERATION    74  state + adjust + watch
+          lk     -          l+k     -      STAGING    58  state + heat
+         cth     -        c+t+h     -      MARKING    49  adjust + transfer + watch
+          ly     -          l+y     -   TRANSITION    49  state + end
+         cph     -        c+p+h     -   MONITORING    36  adjust + pause + watch
+          ry     -          r+y     -   TRANSITION    33  respond + end
+          lo     -          l+o     -   TRANSITION    33  state + arrange
+         lsh     -        l+s+h     -   MONITORING    24  state + sequence + watch
+         fch     -        f+c+h     -      MARKING    23  flag + adjust + watch
+         dai     -        d+a+i     -      MARKING    23  mark + yield + iterate
+         lke     -        l+k+e     -      THERMAL    20  state + heat + cool
+          ir     -          i+r     -         FLOW    19  iterate + respond
+          qo     -          q+o     -      UNKNOWN    18  ? + arrange
+          da     -          d+a     -   TRANSITION    13  mark + yield
+          ld     -          l+d     -      MARKING    13  state + mark
+          ro     -          r+o     -         FLOW    13  respond + arrange
+         rai     -        r+a+i     -         FLOW    12  respond + yield + iterate
+          yt     -          y+t     -         FLOW    12  end + transfer
+          cs     -          c+s     -      MARKING    12  adjust + sequence
+          yk     -          y+k     -      THERMAL    11  end + heat
+          cp     -          c+p     -      MARKING    10  adjust + pause
+          do     -          d+o     -      MARKING    10  mark + arrange
+         qek     -        q+e+k     -      UNKNOWN    10  ? + cool + heat
+          pc     -          p+c     -      MARKING    10  pause + adjust
+         cfh     -        c+f+h     -      MARKING     9  adjust + flag + watch
+          hy     -          h+y     -   MONITORING     8  watch + end
+         dal     -        d+a+l     -      MARKING     8  mark + yield + state
+          im     -          i+m     -      STAGING     8  iterate + final
+         lod     -        l+o+d     -      MARKING     7  state + arrange + mark
+         rod     -        r+o+d     -         FLOW     7  respond + arrange + mark
+         dyt     -        d+y+t     -         FLOW     7  mark + end + transfer
+          ls     -          l+s     -      STAGING     7  state + sequence
+         rch     -        r+c+h     -         FLOW     7  respond + adjust + watch
+          lt     -          l+t     -         FLOW     7  state + transfer
+         lai     -        l+a+i     -      STAGING     6  state + yield + iterate
+          qe     -          q+e     -      UNKNOWN     6  ? + cool
+          lc     -          l+c     -      MARKING     6  state + adjust
+         qet     -        q+e+t     -      UNKNOWN     6  ? + cool + transfer
+          sh     -          s+h     -   MONITORING     5  sequence + watch
+        lchd     -      l+c+h+d     -      MARKING     5  state + adjust + watch + mark
+          yp     -          y+p     -      MARKING     5  end + pause
+         iro     -        i+r+o     -         FLOW     5  iterate + respond + arrange
+          de     -          d+e     -      MARKING     5  mark + cool
+        lche     -      l+c+h+e     -      MARKING     5  state + adjust + watch + cool
+         psh     -        p+s+h     -      MARKING     5  pause + sequence + watch
+          rc     -          r+c     -         FLOW     5  respond + adjust
+         qee     -         q+ee     -      UNKNOWN     5  ? + cool(exe)
+        pche     -      p+c+h+e     -      MARKING     5  pause + adjust + watch + cool
+
+Total compounds (freq >= 5): 190

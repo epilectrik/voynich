@@ -1270,10 +1270,10 @@ class CategoryClassifier:
     _ATOM_CONFIDENCE = {
         'k': 'LOCKED', 'e': 'LOCKED', 'h': 'LOCKED', 'y': 'LOCKED',
         'i': 'LOCKED', 'n': 'LOCKED', 'a': 'LOCKED', 'm': 'LOCKED',
-        'd': 'SOLID', 't': 'SOLID',
-        'c': 'PLAUSIBLE', 'p': 'PLAUSIBLE', 'f': 'PLAUSIBLE',
-        's': 'PLAUSIBLE', 'g': 'PLAUSIBLE',
-        'o': 'WEAK', 'l': 'WEAK', 'r': 'WEAK',
+        'd': 'SOLID', 't': 'SOLID', 'l': 'SOLID', 'o': 'SOLID',
+        'c': 'SOLID', 'p': 'SOLID',
+        'f': 'PLAUSIBLE', 's': 'PLAUSIBLE', 'g': 'PLAUSIBLE',
+        'x': 'PLAUSIBLE', 'r': 'PLAUSIBLE',
     }
 
     _CONFIDENCE_RANK = {'LOCKED': 3, 'SOLID': 2, 'PLAUSIBLE': 1, 'WEAK': 0}

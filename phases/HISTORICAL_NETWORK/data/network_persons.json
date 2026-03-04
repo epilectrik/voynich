@@ -673,6 +673,19 @@
       "significance": "Probably the first dedicated lecturer for mathematical disciplines at a European university. Enrolled at Vienna 1400, BA 1402, MA 1406. Lectured on Aristotle's Physica (1408), Meteorologica (1409, 1411), planetary theory (1406), Euclid (1421), mathematical optics (1414), sexagesimal arithmetic (1412-1417). Dean of Arts Faculty 1413 and 1423. Vice-chancellor. Canon of St. Stephen's Chapter. Bequeathed his entire collection of astronomical/mathematical manuscripts and instruments to the university at death (1442), creating the permanent infrastructure that sustained the 'First Viennese School of Mathematics' (Peuerbach, Regiomontanus). Over 400 manuscripts of his work survive. Active at Vienna throughout the Voynich radiocarbon window (1404-1438).",
       "voynich_relevance": "HIGH - dominant Arts faculty figure at Vienna during the exact Voynich radiocarbon window. Taught the natural philosophy (Physica, Meteorologica) that provided the theoretical foundation for distillation science: elements, qualities, transformation, generation and corruption. Every medical student — including those who went on to the medical faculty under Puff's deanship — first studied under Arts faculty masters like Gmunden. His lectures on Physica (1408) and Meteorologica (1409) are the theoretical infrastructure underlying the practical distillation knowledge encoded in the Voynich.",
       "sources": ["Encyclopedia.com: John of Gmunden", "The Renaissance Mathematicus: Vienna and Astronomy", "Prabook: John of Gmunden", "University of Vienna 650plus"]
+    },
+    {
+      "id": "P058",
+      "name": "Bartholomaeus de Benevento",
+      "alt_names": ["Bartholomäus von Benevent", "Dr. Bartholomäus von Benevent"],
+      "dates": {"born": "unknown", "died": "unknown"},
+      "locations": ["Benevento (southern Italy)?"],
+      "roles": ["physician", "compiler"],
+      "institutions": [],
+      "language": "unknown",
+      "significance": "GHOST FIGURE. Credited as author of the Büchlein von den ausgebrannten Wässern in the 1484 Low German edition (Lübeck, Bartholomäus Gothan): 'meyster Bartholomeus de Benevento (en doctor in d arstedie) dorch leue vnd bede willen erliker erbaren personen / vth velen boken ghesamelt vnde beschreuen' — compiled from many books at the request of honorable people. Modern scholarship notes 'only a smaller portion of the wording comes from Puff himself, while the actual credit belongs to an unknown author' (Müller-Grzenda). If real, he is the actual compiler of the distillation manual that Puff organized and lent institutional authority to. No independent biographical traces found. Benevento is near the Schola Medica Salernitana, suggesting possible southern Italian medical training — a different pipeline from Vienna-Padua.",
+      "voynich_relevance": "MEDIUM - if the Büchlein's core text was compiled by an Italian physician from 'many books,' it reframes the work as a north-south knowledge transfer product rather than a Vienna faculty original. Parallels the Rupescissa Glossator (P040) as another ghost figure in the distillation chain. Needs identification.",
+      "sources": ["1484 Lübeck edition (Bartholomäus Gothan)", "DeWiki Büchlein article", "Müller-Grzenda 1996"]
     }
   ]
 }

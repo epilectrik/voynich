@@ -1,0 +1,141 @@
+{
+  "phase": 504,
+  "name": "Compound MIDDLE Composition Grammar",
+  "date": "2026-03-03",
+  "tests": 6,
+  "summary": "Compound MIDDLEs follow a head-initial three-slot composition grammar with channel-specific slot modulation",
+
+  "test_1_head_position": {
+    "name": "Compound Head Position",
+    "result": "H2 SUPPORTED: first atom determines category",
+    "approach_a_prefix": {
+      "first_match_pct": 76.4,
+      "last_match_pct": 19.1,
+      "first_only_pct": 63.1,
+      "last_only_pct": 5.8,
+      "token_weighted_first_pct": 85.9,
+      "token_weighted_last_pct": 46.9,
+      "n_testable": 225
+    },
+    "approach_b_direct": {
+      "first_match_pct": 74.2,
+      "last_match_pct": 31.9,
+      "first_only_pct": 60.2,
+      "last_only_pct": 17.9,
+      "token_weighted_first_pct": 78.3,
+      "token_weighted_last_pct": 44.9,
+      "n_testable": 279
+    },
+    "position_gradient_3plus": {
+      "first_0.0": 63.5,
+      "middle_0.5": 59.3,
+      "last_1.0": 37.6,
+      "note": "Monotonic decline from first to last"
+    }
+  },
+
+  "test_2_atom_positions": {
+    "name": "Atom Positional Preferences",
+    "result": "Three-slot partition with V=0.593",
+    "chi2": 30867.6,
+    "p_value": 0.0,
+    "cramers_v": 0.593,
+    "n_atoms_tested": 17,
+    "slots": {
+      "HEAD": {"atoms": ["a", "e", "o"], "mean_pos_range": [0.087, 0.322]},
+      "MODIFIER": {"atoms": ["p", "c", "i", "f", "d", "s"], "mean_pos_range": [0.379, 0.638]},
+      "TERMINAL": {"atoms": ["l", "r", "h", "y", "m", "n"], "mean_pos_range": [0.768, 0.998]},
+      "FREE": {"atoms": ["k", "t"], "mean_pos_range": [0.477, 0.522]}
+    },
+    "extremes": {
+      "most_initial": {"atom": "a", "first_pct": 86.4, "mean_pos": 0.087},
+      "most_terminal": {"atom": "n", "last_pct": 99.4, "mean_pos": 0.998},
+      "most_flexible_k": {"first_pct": 43.2, "last_pct": 38.5, "mean_pos": 0.477},
+      "most_flexible_t": {"first_pct": 37.6, "last_pct": 41.7, "mean_pos": 0.522}
+    }
+  },
+
+  "test_3_free_atom_independence": {
+    "name": "k/t Position Independence",
+    "result": "INVERTED: k and t are MOST position-sensitive, not least",
+    "k": {"chi2": 1536.9, "p_value": 0.0, "jsd": 0.717, "verdict": "POS-DEPENDENT"},
+    "t": {"chi2": 661.7, "p_value": 9.4e-141, "jsd": 0.794, "verdict": "POS-DEPENDENT"},
+    "e_control": {"chi2": 4270.2, "p_value": 0.0, "jsd": 0.593, "verdict": "POS-DEPENDENT"},
+    "interpretation": "k-first=98.4% THERMAL (actor), k-last=88.3% MONITORING (target). FREE means positionally mobile with ROLE DUALITY, not behavioral invariance. JSD for k/t HIGHER than HEAD atom e."
+  },
+
+  "test_4_terminal_carryover": {
+    "name": "Terminal-to-Head Carry-Over",
+    "result": "CONFIRMED but weak, resets at line boundaries",
+    "within_line": {"chi2": 1144.0, "p": 2.47e-118, "V": 0.077, "n": 13704},
+    "across_line": {"chi2": 207.6, "p": 0.209, "V": 0.086, "n": 2334},
+    "strongest_transitions": [
+      {"terminal": "h", "head": "p", "ratio": 2.59},
+      {"terminal": "h", "head": "r", "ratio": 2.14},
+      {"terminal": "r", "head": "a", "ratio": 1.98, "note": "response->intake cycle"},
+      {"terminal": "e", "head": "r", "ratio": 1.83},
+      {"terminal": "i", "head": "o", "ratio": 1.73}
+    ],
+    "interpretation": "Terminal atoms carry weak probabilistic state forward (~1% variance explained). Signal resets at line boundaries (consistent with C1200, C1233)."
+  },
+
+  "test_5_composition_accuracy": {
+    "name": "Composition Grammar Prediction Accuracy",
+    "result": "INFORMATIVE FAILURE revealing action-vs-channel distinction",
+    "models": {
+      "M1_baseline_monitoring": {"type_acc": 50.8, "token_acc": 70.3},
+      "M2_head_only": {"type_acc": 29.2, "token_acc": 17.9},
+      "M3_head_dominance": {"type_acc": 29.2, "token_acc": 17.9},
+      "M4_full_composition": {"type_acc": 31.4, "token_acc": 17.7}
+    },
+    "n_compounds": 264,
+    "interpretation": "Head-only model correctly predicts intrinsic FUNCTION (what the MIDDLE does) but fails to predict PREFIX-derived CHANNEL (which subsystem deploys it). edy is operationally THERMAL but deployed by ch/sh MONITORING channel. Two independent readable layers: MIDDLE composition = action, PREFIX = channel."
+  },
+
+  "test_6_channel_slot_grammar": {
+    "name": "Channel-Specific Slot Grammar",
+    "result": "PARTIALLY CHANNEL-SPECIFIC: universal skeleton with channel-specific slot assignment",
+    "compound_tokens_analyzed": 16120,
+    "prefix_channels_tested": 28,
+    "universal_layer": {
+      "terminal_atoms_always_terminal": ["y", "n", "m", "h"],
+      "head_initial_global": 93.5,
+      "note": "Ordering grammar C1065 applies everywhere"
+    },
+    "channel_specific_layer": {
+      "kt_role_reversal": {
+        "qo_k_first_pct": 90.5,
+        "qo_k_last_pct": 4.9,
+        "ch_k_first_pct": 2.0,
+        "ch_k_last_pct": 68.9,
+        "sh_k_first_pct": 3.7,
+        "sh_k_last_pct": 70.0,
+        "interpretation": "k=actor under qo/ol, k=target under ch/sh. Complete role reversal by channel."
+      },
+      "iteration_exclusivity": {
+        "da_i_rate": 52.9,
+        "ta_i_rate": 55.2,
+        "ch_i_rate": 0.8,
+        "sh_i_rate": 0.8,
+        "note": "i-atom exclusive to a-base channels"
+      },
+      "checkpoint_enrichment": {
+        "monitoring_d_rate": "12-27%",
+        "iteration_d_rate": "<2%",
+        "note": "d (checkpoint) enriched in monitoring, absent from iteration"
+      }
+    },
+    "cross_channel_consistency": {
+      "universal_atoms": ["h", "m", "n", "y"],
+      "mixed_atoms": 8,
+      "channel_specific_atoms": ["t", "p", "f", "k", "l"],
+      "note": "17 atoms tested. TERMINAL atoms universal. FREE atoms most channel-specific."
+    }
+  },
+
+  "open_questions": [
+    "l-anomaly: l shifts from TERMINAL to INITIAL under po/so/to/da channels — semi-free?",
+    "Modifier internal ordering: when multiple modifiers stack, is their sub-order fixed?",
+    "2-atom vs 3+ atom compounds: does grammar differ when no modifier slot exists?"
+  ]
+}

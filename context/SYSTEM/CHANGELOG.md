@@ -4,6 +4,311 @@
 
 ---
 
+## Version 5.04.99 (2026-03-04) - Phase 506: Instruction Encoding Refinement
+
+### Summary
+
+Phase 506 resolves all four open questions from C1394. Headless compounds (20.6% of compound tokens) are a specialized subgrammar for infrastructure/support operations (CONTAINMENT 10.4x, MARKING 5.3x) concentrated at boundary positions and under a-base PREFIXes (da 2213x enrichment). The h-terminal is not chaotic but transparent — HEAD+MODS predict category at V=0.988, and h="watch" lets the HEAD's domain signal pass through. PREFIX compensates for h-ambiguity (+0.166 V). Modifier ordering (p→f→i→c→d→s) is morphological convention with first-modifier dominance (66.5% decisive); the pipeline model is falsified for multi-stage stacking, which collapses to MARKING (97–100%). The e-atom is a genuine domain-specific HEAD (not a default); o is the real versatility champion (entropy 2.396). e-depth creates a saturation gradient: single-e is diverse, ee=84% THERMAL, eee=100% THERMAL.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **UPDATED** | C1394: +4 tests (T8–T11), all open questions resolved, encoding model refined (h-transparency, headless subgrammar, e-depth saturation, first-modifier dominance) |
+| **ADDED** | `phases/INSTRUCTION_ENCODING_MAP/scripts/` — 4 scripts (headless_compounds, h_terminal_analysis, modifier_order_semantics, e_versatility_test) |
+| **ADDED** | `phases/INSTRUCTION_ENCODING_MAP/results/` — 4 JSON result files |
+
+---
+
+## Version 5.04.98 (2026-03-04) - Phase 505: Instruction Encoding Architecture
+
+### Summary
+
+Phase 505 extends C1393's three-slot composition grammar into a full instruction encoding architecture. The modifier slot is revealed as a variable-length, internally ordered array (p→f→i→c→d→s) rather than a single position. The HEAD+TERM frame predicts 64% of instruction category, with modifiers accounting for the remaining 36% through consistent category-shifting effects (d→OPERATION at V=0.657, f→MARKING at 76.4%, i→TRANSITION at 44.7%). Most "macro-atoms" from C1379 are shown to be adjacent slots rather than fused units — only dy is hard-fused (never separated, O/E 5.75x); ke, ee, od are just adjacent slots following the grammar. Nine atoms are pair-locked (standalone <10%), including all 5 modifier atoms and HEAD atoms a/o. The suffix is confirmed as an independent morphological layer (entropy 1.475 bits) built from the same atom inventory but compositionally separate from the MIDDLE.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1394: instruction encoding architecture (7 tests, frame predicts 64%, modifier ordering p→f→i→c→d→s, fusion gradient, pair-locking) |
+| **ADDED** | `phases/SUFFIX_BOUNDARY_TEST/scripts/` — 4 scripts (suffix_boundary_test, pair_locked_atoms, fusion_vs_adjacency, modifier_stack_test) |
+| **ADDED** | `phases/INSTRUCTION_ENCODING_MAP/scripts/instruction_map.py` — frame matrix, modifier effects, compound decomposition table |
+| **ADDED** | `phases/INSTRUCTION_ENCODING_MAP/results/compound_table.txt` — 190 compounds decomposed with glosses |
+| **UPDATED** | C1393: suffix boundary resolved in open questions (entropy 1.475 bits, confirmed independent) |
+| **UPDATED** | INDEX.md — +1 constraint (1238 total), v5.04 |
+
+---
+
+## Version 5.03.97 (2026-03-03) - Phase 504: Compound MIDDLE Composition Grammar
+
+### Summary
+
+Phase 504 discovers and validates the three-slot composition grammar for compound MIDDLEs through 6 tests. Atoms partition into HEAD (a,e,o — always first, set domain), MODIFIER (p,c,i,f,d,s — always middle, shape action), TERMINAL (l,r,h,y,m,n — always last, carry state), and FREE (k,t — positionally mobile, role-dual process variables). The partition has Cramér's V=0.593 (chi²=30,868) and independently replicates C1209 (15/19 atom match). First atom predicts compound category at 74–76%.
+
+Key findings: (1) k and t are NOT position-independent — they are the MOST position-sensitive atoms (JSD 0.72/0.79 vs e at 0.59), reversing from actor (98% THERMAL when first) to measurement target (88% MONITORING when last). (2) PREFIX channels modulate slot interpretation — qo deploys k as actor, ch/sh deploy k as target. (3) Atom glosses predict intrinsic FUNCTION (what the MIDDLE does), while PREFIX assignment predicts deployment CHANNEL (who orders it) — two independent readable layers. (4) Terminal-to-head carry-over is real (p~10⁻¹¹⁸) but weak (V=0.077), resetting at line boundaries.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1393: compound MIDDLE composition grammar (6 tests, V=0.593, head-initial, role duality, channel modulation) |
+| **ADDED** | `phases/GLOSS_PREDICTION_TESTS/scripts/` — 6 test scripts (compound_head_test, atom_position_preferences, free_atom_position_test, terminal_head_carryover, composition_grammar_accuracy, channel_slot_grammar) |
+| **ADDED** | `phases/GLOSS_PREDICTION_TESTS/results/phase_504_composition_grammar.json` — consolidated results |
+| **UPDATED** | C1195: Phase 504 composition grammar cross-reference added |
+| **UPDATED** | INDEX.md — +1 constraint (1237 total), v5.03 |
+
+---
+
+## Version 5.02.96 (2026-03-03) - Phase 503: S-Atom Modifier Battery
+
+### Summary
+
+Phase 503 is a follow-up to Phase 501, testing atom s with a purpose-built 8-test modifier battery instead of the standard category injection framework. Score: 5/8 (SM-2/3/4/7/8 PASS, SM-1/5/6 FAIL). The DECISIVE test SM-8 proved s is a PREDICTABLE base-dependent modifier: cosine 0.966 across independent corpus halves (all 5 testable compounds >= 0.925). s systematically shifts partner category (4/5 Xs compounds change primary, SM-2), amplifies PREFIX selectivity (SM-3), changes suffix distributions (SM-4), and routes differently from ch (SM-7, chi2=211.2, replicating C1243). h-junction not universal — tsh=FLOW, psh=MARKING (SM-1). Combined with Phase 501: 11/20 total, below 12+ SOLID threshold. s remains PLAUSIBLE but with strong modifier characterization: it's a sequencing modifier that doesn't inject a category but deterministically transforms its partner's operational domain.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/PARALLEL_MONITORING_TRACKS/PHASE_503_S_MODIFIER/` -- 8 modifier battery scripts + results JSON |
+| **UPDATED** | C1391: Phase 503 modifier evidence added (SM-8 cosine 0.966, combined 11/20) |
+| **UPDATED** | C1195: s evidence paragraph updated with Phase 503 modifier battery findings |
+| **UPDATED** | INDEX.md -- Phase 503 findings section added to C1391 entry |
+
+---
+
+## Version 5.02.95 (2026-03-03) - Phase 502: F-Atom Semantic Deep Dive
+
+### Summary
+
+Phase 502 investigates atom f (current gloss: "flag") through 12 prediction tests in 3 cycles. Score: 6/12 (6 PASS, 4 FAIL, 1 INCONCLUSIVE, 1 N/A). f is the #2 MARKING atom (12.009x enrichment, behind only p's 12.033x) with the strongest compound uniformity of any tested atom — 90.9% of all f-compounds are MARKING. KEY STRUCTURAL FINDING: f-initial vocabulary is 100% HT/UN and never enters the 49-class execution grammar, making f the purest identification/annotation atom in the system. This distinguishes f from fellow MARKING atoms p (88.7% AXM execution) and d (execution grammar participant). f->c junction at 10.28x enrichment makes fch a compound unit (like sh in s-atom). CHSH+f 82.8% MARKING. H1 "flag" wins decisively (4/4 discriminants in F-F10, 5/5 compositional convergence in F-F12). All 4 failures are data-driven (215 tokens, sparse compounds, no testable reversed forms) or test calibration issues (f too uniformly MARKING for diversity predictions). f remains PLAUSIBLE due to data sparsity ceiling. German candidate: Flagge/Fahne.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/F_ATOM_SEMANTIC_DEEP_DIVE/` -- Phase 502 directory (12 scripts, results JSON) |
+| **ADDED** | C1392: f-atom marking flag profile (#2 MARKING 12.009x, 100% HT/UN, 5/5 convergence, 6/12 tests, PLAUSIBLE) |
+| **UPDATED** | C1195: Phase 502 evidence added; f remains PLAUSIBLE ("flag"); tier counts unchanged 8/6/5/0 |
+| **UPDATED** | INDEX.md -- +1 constraint (1234 total), v5.02 |
+
+---
+
+## Version 5.01.94 (2026-03-03) - Phase 501: S-Atom Semantic Deep Dive
+
+### Summary
+
+Phase 501 investigates atom s (current gloss: "sequence") through 12 prediction tests in 3 cycles. Score: 6/12 (Cycle 1: 2P+1I+1F, Cycle 2: 2P+2F, Cycle 3: 2P+3F). s is the #1 STAGING atom in the system (87.50%, 6.721x enrichment) with perfect compound determinism — all 6 tested compounds map to a unique category at 100% purity (sh=MONITORING, ksh=MONITORING, lsh=MONITORING, os=OPERATION, es=STAGING, cs=MARKING). s operates in FQ macro-state (64.6%, 3.59x), distinguishing it from AXM-confined atoms c and p. The sh compound-suffix family dominates s's compound architecture: s->h junction 13.16x (208 observed), sh terminal 73.9%, first atom X determines Xsh category across 4 distinct categories. Bifurcated architecture explains 0/3 glossed compound match — all glossed compounds are in the sh-family (MONITORING) while standalone s is overwhelmingly STAGING. H1 "sequence" is best hypothesis (S-S10: 3/4 vs H2 "sift" 2/4, H3 "step" 2/4). H2 "sift" rejected (MONITORING only 2.84% standalone). s remains PLAUSIBLE — strong category identity but complex compound behavior and structural neutrality in injection tests (2/6) prevent SOLID upgrade. German candidate: sequenzieren.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/S_ATOM_SEMANTIC_DEEP_DIVE/` -- Phase 501 directory (12 scripts, results JSON) |
+| **ADDED** | C1391: s-atom staging sequence profile (#1 STAGING 6.721x, 6/6 compound determinism, FQ macro-state, sh compound-suffix, 6/12 tests, PLAUSIBLE) |
+| **UPDATED** | C1195: Phase 501 evidence added; s remains PLAUSIBLE ("sequence"); tier counts unchanged 8/6/5/0 |
+| **UPDATED** | INDEX.md -- +1 constraint (1233 total), v5.01 |
+
+---
+
+## Version 5.00.93 (2026-03-03) - Phase 500: P-Atom Semantic Deep Dive
+
+### Summary
+
+Phase 500 investigates atom p (current gloss: "pause") through 12 prediction tests in 3 cycles. Score: 10/12 PASS (Cycle 1: 4/4, Cycle 2: 3/4, Cycle 3: 3/4). p is the #1 MARKING atom in the entire system (12.033x enrichment, 93.63% of all p-initial tokens), with the strongest carryover of any atom (8.126x consecutive pair enrichment, ZERO cross-line pairs). Compositional convergence: 3/4 gloss-to-category matches (op=TRANSITION, cph=MONITORING, cp=MARKING; ep=MARKING miss). Universal MARKING injection +68.3pp across 4/4 testable bases. Gateway compound op: 95.5% INITIAL position (210/220), 100% TRANSITION, 63 folios. CHSH+p MON+MARK 87.4% (higher than CHSH+c). AXM 88.7% (enriched but less confined than c's 93.5%), FL_HAZ 0.000x. Two minor failures: cp/pc both MARKING (p too dominant for order sensitivity), section gradient best tracker FLOW (+0.714) not MARKING (+0.657). p upgraded PLAUSIBLE -> SOLID. German candidate: pausieren. Consistent with REGIME 2: "seal->heat->PAUSE->cool overnight->unseal->collect".
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/P_ATOM_SEMANTIC_DEEP_DIVE/` -- Phase 500 directory (12 scripts, results JSON) |
+| **ADDED** | C1390: p-atom marking pause profile (#1 MARKING 12.033x, #1 carryover 8.126x, 10/12 tests, SOLID) |
+| **UPDATED** | C1195: p upgraded from PLAUSIBLE ("pause") to SOLID ("pause"); tier counts now 8/6/5/0 |
+| **UPDATED** | INDEX.md -- +1 constraint (1232 total), v5.00 |
+
+---
+
+## Version 4.99.92 (2026-03-03) - Phase 499: C-Atom Semantic Deep Dive
+
+### Summary
+
+Phase 499 investigates atom c (current gloss: "adjust") through 19 prediction tests across three batteries. Initial cross-token battery scored 4/12, revealing c as an intra-compound modifier rather than a cross-token operator: 93.5% AXM-confined (exclusive main-loop, zero FL_HAZ/FQ/CC), MONITORING 12.237x enrichment (#1), anti-THERMAL 0.055x (near-zero), c->h junction (C1216: 380/380) operates WITHIN MIDDLEs producing ZERO cross-token signal. Compound decomposition battery (Phase 499b, 4 tests) and tiebreakers (Phase 499c, 3 tests) provided the decisive evidence: 6/6 compositional convergence — every independently glossed c-compound matches CategoryClassifier output when decomposed through c(adjust)+X. MON+MARK injection +43.2pp across 5/5 base atoms. Order sensitivity with 100% category flips (ck=OPERATION vs kc=CONTAINMENT, ct=MONITORING vs tc=FLOW). h-suffix category transformation (p<0.000001). 100% compound determinism across all 61 c-initial MIDDLEs. Expert-advisor validated SOLID upgrade: zero constraint conflicts, compositional convergence is strongest among all non-LOCKED atoms. c upgraded PLAUSIBLE -> SOLID. German candidate: justieren.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/C_ATOM_SEMANTIC_DEEP_DIVE/` — Phase 499 directory (19 scripts across 3 batteries, results JSON) |
+| **ADDED** | C1389: c-atom main-loop modifier profile (6/6 compositional convergence, 100% compound determinism, SOLID) |
+| **UPDATED** | C1195: c upgraded from PLAUSIBLE ("adjust") to SOLID ("adjust"); tier counts now 8/5/6/0 |
+| **UPDATED** | INDEX.md — +1 constraint (1231 total), v4.99 |
+
+---
+
+## Version 4.98.91 (2026-03-03) - Phase 498: O-Atom Semantic Deep Dive
+
+### Summary
+
+Phase 498 documents the most extensive single-atom investigation in the project: 23 tests across three batteries. Initial "vessel" (Ofen/CONTAINMENT) hypothesis scored 3/12 — CONTAINMENT prediction falsified, but revealed o's actual profile: STAGING 2.49x, OPERATION 1.78x, THERMAL 0.105x (most extreme depletion of any atom), anti-AXM #1 of all 20 atoms. Pivoted to "ordnen" (arrange) hypothesis: 4/8 confirmed. Tiebreaker tests: 1/3 — temporal ordering falsified (o does NOT precede k within lines, 48.6% chance), but ol compositional reading confirmed (100% STAGING, 7.68x, C874 convergence). Expert-advisor validated SOLID upgrade based on: (1) C874 convergence — ol=LINK from structural analysis independently confirmed by o(arrange)+l(state) decomposition; (2) 100% compound determinism across 4 o+X compounds (ol=STAGING, ok=CONTAINMENT, or=FLOW, ot=MONITORING); contrast al=FLOW vs ol=STAGING proves first atom carries independent semantic content; (3) German etymology fits pattern: K=Kochen, E=Erkalten, D=Dichten, T=Treiben, O=Ordnen. o upgraded WEAK→SOLID. Zero WEAK atoms remaining.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/O_ATOM_SEMANTIC_DEEP_DIVE/` — Phase 498 directory (23 scripts, results JSON) |
+| **ADDED** | C1388: o-atom arrangement domain marker (C874 convergence, 100% compound determinism, SOLID) |
+| **UPDATED** | C1195: o upgraded from WEAK ("work") to SOLID ("arrange"); tier counts now 8/4/7/0 |
+| **UPDATED** | INDEX.md — +1 constraint (1230 total), v4.98 |
+
+---
+
+## Version 4.97.90 (2026-03-03) - Phase 497: R-Atom Semantic Deep Dive
+
+### Summary
+
+Phase 497 documents the r-atom investigation: 10 rounds of hypothesis-test cycles across 4 hypotheses (return/reflux, flow/run, ripen/mature, repeat), all falsified or partially falsified. Unlike the l-atom (Phase 496, 15 tests, WEAK→SOLID), r produced 0 fully confirmed predictions. However, the investigation discovered extreme structural facts: r exists ONLY as "ar" and "or" (extreme compound selectivity); ar monopolizes FL_HAZ (248:0 vs or, 4.910x enrichment, chi-sq=1473.71); only r/l/n appear at FL_HAZ (all RESPONDER-class); r anti-cycling (rho=-0.334, p=0.003); r→a forward chain at 2.142x. r upgraded from WEAK ("input") to PLAUSIBLE ("respond") in C1195. PLAUSIBLE ceiling due to a/o initial confound — with only 2 MIDDLE forms, r's contribution cannot be fully isolated.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/R_ATOM_SEMANTIC_DEEP_DIVE/` — Phase 497 directory (10 scripts, results JSON) |
+| **ADDED** | C1387: r-terminal hazard-response partitioning (ar monopolizes FL_HAZ 248:0, anti-cycling rho=-0.334) |
+| **UPDATED** | C1195: r upgraded from WEAK ("input") to PLAUSIBLE ("respond"); tier counts now 8/3/7/1 |
+| **UPDATED** | INDEX.md — +1 constraint (1229 total), v4.97 |
+
+---
+
+## Version 4.96.89 (2026-03-03) - Phase 496: L-Atom Semantic Deep Dive
+
+### Summary
+
+Phase 496 documents the most thorough single-atom investigation in the project's history: 15 rounds of hypothesis-test cycles on atom l, using the crazy-expert agent to propose hypotheses and quantitative scripts to validate them. 10 alternative hypotheses were tested and falsified (let-flow, release, arrange, level, specifier, redirect, continue, nominalizer, hold, free, product). The final interpretation — l = "state/condition marker" — is supported by massive evidence: 68.9% post-state-change rate (vs 47.2% baseline), 77% kernel-before-l ordering on mixed lines, kernel contact avoidance (rho=-0.197, p<0.000001), Mode B locking (72%), and category redirection (0/5 match base atom default). German candidate: Lage (situation/condition/state of affairs). Compound readings: ol=vessel-state, el=cool-state, kl=heat-state. CHSH + l compositional reading confirmed with 450 tokens (ch+ol = "checkpoint the vessel-state"). Independent finding: ACTOR/RESPONDER terminal-atom timing split — atoms partition into ACTORS {e,k,h,t} at 18-32%, NEUTRAL {d,o,y,i} at 38-49%, RESPONDERS {n,l,r,m} at 64-78% post-state-change rate. Orthogonal to C1208 carryover and C1209 positional grammar. C1195 updated: l upgraded from WEAK ("frame") to SOLID ("state").
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/L_ATOM_SEMANTIC_DEEP_DIVE/` — Phase 496 directory (15 scripts, results JSON) |
+| **ADDED** | C1385: l-terminal state/condition marker (68.9% post-change, 77% kernel-before-l, SOLID) |
+| **ADDED** | C1386: ACTOR/RESPONDER terminal-atom timing split (3-way partition, orthogonal to C1208/C1209) |
+| **UPDATED** | C1195: l upgraded from WEAK ("frame") to SOLID ("state"); tier counts now 8/3/6/2 |
+| **UPDATED** | INDEX.md — +2 constraints (1228 total), v4.96 |
+
+---
+
+## Version 4.95.88 (2026-03-02) - Phase 495: Gloss Prediction Tests (batch 3)
+
+### Summary
+
+Phase 495 extended with P12-P14 predictions. P12 (h-terminal CHSH lane enrichment): INVERTED — h-terminal depleted in CHSH (0.767x, p=0.0002), complementary distribution not resonance. P13 (e/k vs AXM): HALF CONFIRMED — k-initial rho=+0.620 (p<0.0001), strongest atom-to-dynamics correlation; e-initial inverted (positive not negative); true axis is k vs {a,o,d}. New constraint C1384. P14 (y-terminal paragraph-final): NULL (0.950x, p=0.14). Crazy-expert cumulative: 8/14 confirmed, 3 inverted, 1 wrong direction, 1 mixed, 1 null.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1384: k-initial MIDDLE fraction predicts AXM self-transition (rho=+0.620) |
+| **ADDED** | Phase 495 batch 3 script and results (P12-P14) |
+| **UPDATED** | INDEX.md -- +1 constraint (1226 total) |
+
+---
+
+## Version 4.95.87 (2026-03-02) - C1383: n-terminal boundary avoidance
+
+### Summary
+
+Two independent predictions (P6, P9) that n-terminal MIDDLEs would be enriched at boundaries both inverted significantly (0.81x at mode transitions, 0.694x at line-final). Documented as C1383 to establish n as a steady-state interior atom and prevent future boundary-role predictions. Extends C1208 (anti-clustering) and C1209 (within-MIDDLE terminality) to line-level positional behavior.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1383: n-terminal MIDDLE boundary avoidance |
+| **UPDATED** | INDEX.md -- +1 constraint (1225 total) |
+
+---
+
+## Version 4.95.86 (2026-03-02) - Phase 495: Gloss Prediction Tests (batch 2)
+
+### Summary
+
+Phase 495 extended with P9-P11 predictions. P9 (n-terminal at line-final): INVERTED — depleted at line-final (0.694x, p=0.000005), second n-terminal inversion confirms n as steady-state mid-line atom. P10 (k-initial Mode B depletion): CONFIRMED — k-initial MIDDLEs 0.583x depleted in Mode B vs Mode A (chi2=245, p<0.0001), holds in all 5 sections; a-initial shows symmetric opposite at 2.034x Mode B enrichment; e-initial perfectly neutral. New constraint C1382. P11 (bridge simpler than dark): MIXED — raw depth not significant but frequency-matched depth confirms (0.754x, p=0.000009). Crazy-expert cumulative: 7/11 confirmed, 2 inverted, 1 wrong direction, 1 mixed.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1382: k/a atom-initial suffix mode polarization |
+| **ADDED** | Phase 495 batch 2 script and results (P9-P11) |
+| **UPDATED** | INDEX.md -- +1 constraint (1224 total) |
+
+---
+
+## Version 4.95.85 (2026-03-02) - Phase 495: Gloss Prediction Tests
+
+### Summary
+
+Phase 495 tests three predictions from crazy-expert agent's analysis of Tier 4 gloss/etymology tables. P6 (n-terminal MIDDLEs at mode boundaries): INVERTED — depleted at transitions (0.81x, p<0.0001), n concentrates in stable mode regions. P7 (o-initial MIDDLEs in AZC): CONFIRMED — 1.9x enriched (22.4% vs 11.8%, chi2=281.3, p<0.0001), smooth gradient from AZC through B-shared to B-exclusive vocabulary, Section C highest B-internal rate (18.9%). P8 (f-atoms in REGIME_3): WRONG DIRECTION — peaks in REGIME_4/REGIME_2, not REGIME_3. New constraint C1381. Crazy-expert overall scorecard: 6/8 confirmed, 1 inverted, 1 wrong direction.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/GLOSS_PREDICTION_TESTS/` -- Phase 495 directory |
+| **ADDED** | Phase 495 script and results (3 tests, 26K tokens) |
+| **ADDED** | C1381: o-initial MIDDLE enrichment in AZC (1.9x, cross-system gradient) |
+| **UPDATED** | INDEX.md -- +1 constraint (1223 total), v4.95 |
+
+---
+
+## Version 4.94.84 (2026-03-02) - F-B-001 SUPERSEDED by C1174
+
+### Summary
+
+Coherence audit identified that F-B-001 (LINK Operator as Sustained Monitoring Interval, SUCCESS) was never updated after C1174 (Phase 418) demonstrated LINK is a morphological artifact, not a functional layer. The fit's 6 structural property matches were artifacts of averaging across a heterogeneous population (C1171: 0/4 cross-role consistency). F-B-001 downgraded from SUCCESS to SUPERSEDED. C190 anticorrelation (r=-0.71) remains valid statistically but reinterpreted as role-specific vocabulary selection. Updated: fits_currier_b.md, FIT_TABLE.txt, INDEX.md, fit_to_constraint.md.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **UPDATED** | F-B-001 status: SUCCESS -> SUPERSEDED (by C1174) |
+| **UPDATED** | FIT_TABLE.txt, INDEX.md, fit_to_constraint.md |
+
+---
+
+## Version 4.94.83 (2026-03-02) - Phase 494: Parallel Monitoring Tracks (continued)
+
+### Summary
+
+Phase 494 extended with C1380: apparatus profile similarity predicts AXM self-transition residual similarity (Mantel r=0.224, p=0.002, 5K permutations). Dominant apparatus group clusters in residual space (eta²=0.083, p=0.034). Sealed-vessel folios are most self-repetitive (+0.022), sustained-heat most varied (-0.018). Qualifies C1169: ~8% of "genuine design freedom" is actually apparatus input parameterization. C1169's univariate battery missed this because the signal is in pairwise profile similarity, not individual predictors.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1380: Apparatus parameterization in AXM residual |
+| **ADDED** | `design_freedom_apparatus_test.py` script and results |
+| **UPDATED** | C1379 extended with T5 (suffix mode channel separation) |
+| **UPDATED** | INDEX.md -- +1 constraint (1222 total) |
+
+---
+
+## Version 4.94.82 (2026-03-01) - Phase 494: Parallel Monitoring Tracks
+
+### Summary
+
+Phase 494 tests whether MIDDLE atoms encode parallel monitoring parameters and whether high-affinity atom pairs from C1210 are fused macro-atoms. Five-test battery: (T1) macro-atom composition improves C1190 r from 0.760 to 0.797 (z=5.98, p<0.001) — PASS; (T2) reversed pairs not significantly more similar than different-set (ratio 0.904) — FAIL, pure parallelism rejected; (T3) cross-token coupling dominated by TERMINAL→INITIAL (MI=0.079) not SET carry (0.025) — MIXED; (T4) atom removal ratio 1.375 < 1.5 threshold but initial dominates (Kruskal p=0.004) — PASS qualified; (T5) suffix mode channel separation: ke/ct/ck 1.9-2.9x Mode A enriched, in 0.54x Mode B, qo 1.91x Mode A (p=0.0000) — PASS. Macro-atoms have functional channel assignments (specification vs continuation). New constraint C1379.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/PARALLEL_MONITORING_TRACKS/` -- Phase 494 directory |
+| **ADDED** | Phase 494 scripts and results (5 tests, 23K tokens, 10K permutations) |
+| **ADDED** | C1379: Two-level parallel composition with priority ordering + channel separation |
+| **UPDATED** | INDEX.md -- +1 constraint (1221 total), v4.94 |
+
+---
+
 ## Version 4.93.81 (2026-02-28) - Phase 492: Paragraph-Level Material Differentiation (NULL)
 
 ### Summary
