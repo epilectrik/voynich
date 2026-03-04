@@ -3,8 +3,8 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.15"
-  date: "2026-02-24"
+  version: "3.16"
+  date: "2026-03-04"
   status: "ACTIVE"
   layer_type: "grammar contract"
   derived_from: "Tier 0-2 constraints (structural); Tier 3 operational layer clearly marked"
@@ -42,6 +42,7 @@ ownership:
     - execution_syntax
     - morphological_architecture  # Added v3.0: TOKEN decomposition, PREFIX/MIDDLE/SUFFIX roles
     - prefix_internal_grammar  # Added v3.12: Base-modifier decomposition within PREFIX (C1218-C1221)
+    - middle_instruction_encoding  # Added v3.16: HEAD+MOD*+TERM decomposition, 18-atom slot grammar (C1393-C1394)
     - paragraph_execution_model  # Added v3.0: spec→exec gradient, startup patterns
     - paragraph_cycling_model  # Added v3.12: Two alternating suffix modes, FL cross-line resets, tail signatures (C1227-C1232)
     - operational_layer  # Added v3.0: Tier 3 behavioral glosses for context grounding
@@ -186,6 +187,10 @@ guarantees:
   - id: "HT_OPERATIONAL_REDUNDANCY"
     statement: "HT/compound tokens contain operational content that is redundant with body simple MIDDLEs (71.6% atom hit rate vs 59.2% random). Removal doesn't change outcomes because of redundancy, not emptiness."
     provenance: "C404, C935"
+
+  - id: "MIDDLE_INSTRUCTION_ENCODING"
+    statement: "Compound MIDDLEs encode instructions as HEAD + MOD* + TERM: 18 atoms in 4 slot roles (5 HEAD, 6 MOD, 6 TERM, 2 dual). Fixed modifier ordering (p→f→i→c→d→s). Frame (HEAD+TERM) predicts 64% of operational category; modifiers shift remaining 36%. Headless compounds (20.6%) form a specialized infrastructure subgrammar. h-terminal is transparent (HEAD+MODS reach V=0.988). Suffix is an independent compositional domain using the same atom inventory (entropy 1.475 bits)."
+    provenance: "C1393, C1394"
 
 # ============================================================
 invariants:
@@ -348,15 +353,16 @@ morphology:
         total_unique: 1339
         function: "Primary operational vocabulary — determines WHAT happens"
         compound_structure: |
-          MIDDLEs can be simple (single atom: k, e, ch, edy) or compound
-          (multiple atoms: opcheodai = op+ch+e+od+ai). 100% of compounds
-          decompose into core atoms. Compound rate: 31.5% (grammar types),
-          45.8% (HT/UN types). Dark-pipeline compounds are built from
-          bridge atoms (86% of atom types, 91.6% of occurrences, 96.5%
-          compound coverage) using a modified construction grammar (50%
-          agreement with C1065 atom ordering, gateway/terminal positioning
-          preserved). C935, C1141, C1142.
-        provenance: "C267, C506.b, C935, C1141, C1142"
+          Compound MIDDLEs decompose as HEAD + MOD* + TERM (C1393, C1394):
+          18 atoms in 4 slot roles. HEAD sets operational domain, an ordered
+          modifier stack parametrizes the action, TERMINAL sets exit condition.
+          Frame (HEAD+TERM) predicts 64% of category; modifiers shift 36%.
+          See middle_instruction_encoding section for full architecture.
+          Dark-pipeline compounds are built from bridge atoms (86% of atom
+          types, 91.6% of occurrences, 96.5% compound coverage) using a
+          modified construction grammar (50% agreement with C1065 atom
+          ordering, gateway/terminal positioning preserved). C935, C1141, C1142.
+        provenance: "C267, C506.b, C935, C1141, C1142, C1393, C1394"
       behavioral_atomicity:
         statement: |
           Single characters are genuine behavioral atoms of MIDDLE composition.
@@ -542,6 +548,154 @@ morphology:
       interpretation: "Each body line is one processing cycle. FL partially resets between cycles (typically to MEDIAL, not EARLY) because the next cycle picks up from current process state rather than starting fresh."
       provenance: "C1227"
     provenance: "C777, C897, C1015, C1227"
+
+# ============================================================
+# Added v3.16: MIDDLE instruction encoding architecture (C1393, C1394)
+middle_instruction_encoding:
+
+  statement: |
+    Compound MIDDLEs encode instructions as HEAD + MOD* + TERM — fixed endpoints
+    with a variable-length, internally ordered modifier stack. The frame (HEAD+TERM)
+    predicts 64% of instruction category; modifiers account for the remaining 36%.
+
+  atom_inventory:
+    total: 18
+    slot_assignments:
+      HEAD: {atoms: ["a", "e", "o", "k*", "t*"], note: "k/t are role-dual: HEAD when first, TERM when last"}
+      MODIFIER: {atoms: ["p", "f", "i", "c", "d", "s"], note: "All 6 are pair-locked (standalone <10%)"}
+      TERMINAL: {atoms: ["l", "r", "h", "y", "m", "n", "k*", "t*"], note: "k/t dual; h is transparent"}
+    provenance: "C1393, C1394 T3"
+
+  pair_locked_atoms:
+    statement: "9/18 atoms have standalone MIDDLE rate <10% — they require compound context"
+    atoms:
+      - {atom: "c", role: "MODIFIER", standalone_pct: 0.2}
+      - {atom: "n", role: "TERMINAL", standalone_pct: 0.3}
+      - {atom: "a", role: "HEAD", standalone_pct: 1.8}
+      - {atom: "h", role: "TERMINAL", standalone_pct: 2.9}
+      - {atom: "i", role: "MODIFIER", standalone_pct: 4.8}
+      - {atom: "p", role: "MODIFIER", standalone_pct: 7.4}
+      - {atom: "d", role: "MODIFIER", standalone_pct: 7.7}
+      - {atom: "f", role: "MODIFIER", standalone_pct: 7.9}
+      - {atom: "o", role: "HEAD", standalone_pct: 9.0}
+    free_atoms: "k (47%), t (39%), e (33%), r (35%), y (25%)"
+    provenance: "C1394 T3"
+
+  fusion_gradient:
+    statement: "Candidate macro-atoms fall on a gradient, not a binary fused/separate distinction"
+    categories:
+      hard_fused: {pairs: ["dy"], evidence: "Never separated (0.15%), 97.7% LAST, O/E 5.75x"}
+      soft_fused: {pairs: ["ed", "ol", "op", "ck", "ch", "in"], evidence: "Rarely separated, high O/E (2.8-8.6x), but components substitute independently"}
+      adjacent_slots: {pairs: ["ke", "ee", "od", "ey"], evidence: "Separate freely; ke 25% separation, od O/E=1.08 (chance)"}
+    implication: "Most apparent macro-atoms are adjacent slots with HEAD-modifier affinity, not fused units"
+    provenance: "C1394 T2"
+
+  modifier_stack:
+    ordering: ["p", "f", "i", "c", "d", "s"]
+    ordering_glosses: ["pause", "flag", "iterate", "adjust", "mark", "sequence"]
+    mean_positions: {p: 0.225, f: 0.395, i: 0.519, c: 0.532, d: 0.696, s: 0.713}
+    ordering_nature: "Morphological convention with weak semantic coupling, not procedural pipeline"
+    first_modifier_dominance: "66.5% decisive — modifier closest to HEAD carries most category weight"
+    multi_stage_collapse: "Compounds spanning 3+ pipeline stages converge 97-100% on MARKING — identification vocabulary, not procedural pipeline"
+    co_occurrence_avoidance: ["c/i (0.40x)", "c/s (0.48x)", "i/s (0.52x)", "d/f (0.50x)"]
+    provenance: "C1394 T4, T10"
+
+  compound_size_distribution:
+    zero_modifiers: "24.1% of tokens"
+    one_modifier: "47.0% of tokens (modal)"
+    two_plus_modifiers: "28.9% of tokens"
+    note: "4+ atoms = 35% of types but only 15% of tokens"
+    provenance: "C1394 T7"
+
+  frame_matrix:
+    statement: "HEAD × TERM frame predicts 64% of operational category"
+    dominant_frames:
+      - {frame: "e→y", tokens: 3475, category: "OPERATION", purity: "55.8%"}
+      - {frame: "a→n", tokens: 1272, category: "TRANSITION", purity: "65.6%"}
+      - {frame: "k→(open)", tokens: 779, category: "THERMAL", purity: "69.1%"}
+      - {frame: "o→l", tokens: 777, category: "STAGING", purity: "98.1%"}
+      - {frame: "a→r", tokens: 687, category: "FLOW", purity: "99.4%"}
+      - {frame: "o→r", tokens: 455, category: "FLOW", purity: "~99%"}
+    head_category_dominance:
+      k: "71% THERMAL"
+      t: "65% FLOW"
+      a: "55% FLOW"
+      e: "37% OPERATION (most versatile HEAD)"
+      o: "35% STAGING"
+    terminal_category_dominance:
+      r: "99% FLOW (nearly deterministic)"
+      m: "87% TRANSITION"
+      n: "64% TRANSITION"
+      y: "56% OPERATION"
+      l: "47% STAGING"
+      h: "transparent — category determined by HEAD+MODS (V=0.988)"
+    provenance: "C1394 T5"
+
+  modifier_category_effects:
+    statement: "Each modifier has a consistent, statistically significant effect on instruction category"
+    effects:
+      d: {V: 0.657, strongest_shift: "+55.6% OPERATION", note: "strongest modifier overall"}
+      c: {V: 0.505, strongest_shift: "+30.1% MARKING"}
+      i: {V: 0.418, strongest_shift: "+44.7% TRANSITION; kills OPERATION/THERMAL"}
+      p: {V: 0.368, strongest_shift: "+45.6% MARKING"}
+      f: {V: 0.351, strongest_shift: "+76.4% MARKING", note: "most concentrated (80.2% MARKING)"}
+      s: {V: 0.245, strongest_shift: "boosts MONITORING/STAGING", note: "weakest modifier"}
+    hierarchy: "d > c > i > p > f > s by effect size"
+    provenance: "C1394 T6"
+
+  headless_compounds:
+    statement: "467 headless compound types (20.6% of compound tokens) lack a valid HEAD atom — a specialized infrastructure subgrammar"
+    category_divergence: "V=0.568"
+    enriched: {CONTAINMENT: "10.4x", MARKING: "5.3x", MONITORING: "3.9x", STAGING: "2.7x"}
+    depleted: {THERMAL: "0.12x", TRANSITION: "0.21x", FLOW: "0.24x"}
+    prefix_concentration: "V=0.565; massively concentrated under a-base PREFIXes (da, sa, ka, ta)"
+    positional_enrichment: "paragraph-initial 2.16x, line-initial 1.8x, line-final 1.5x"
+    interpretation: "HEAD-free instruction class for infrastructure/support operations at boundary positions"
+    not_abbreviations: "Mean headless fraction 0.706 — most are their own primary forms"
+    provenance: "C1394 T8"
+
+  h_terminal_transparency:
+    statement: "h-terminal apparent chaos (27% purity) is resolved: h is transparent, not random"
+    head_plus_mods_V: 0.988
+    head_alone_V: 0.541
+    prefix_compensation: "V(PREFIX,category) = 0.389 for h-terminal vs 0.223 non-h (delta +0.166)"
+    ch_substructure: "70.7% of h-terminal tokens end in ...ch; within ch-ending, HEAD is highly predictive (k→96% THERMAL, t→98% OPERATION)"
+    open_monitor_ratio: 0.916
+    interpretation: "h lets HEAD signal pass through — consistent with h='watch' (keep monitoring whatever HEAD specifies)"
+    provenance: "C1394 T9"
+
+  e_atom_domain:
+    statement: "e is a genuine domain-specific HEAD (cooling), not a transparent default"
+    e_modifier_dominance: "V=0.672 (LOWEST of all HEADs — opposite of transparent default)"
+    o_is_most_versatile: "o entropy 2.396 vs e 2.191"
+    e_stripping_changes_category: "91% of cases"
+    e_depth_saturation:
+      single_e: "diverse (entropy 2.250)"
+      double_e: "84.3% THERMAL (entropy 0.789)"
+      triple_e: "100% THERMAL (entropy 0.0)"
+    e_as_modifier: "64.2% THERMAL (more focused than as HEAD)"
+    e_k_thermal_polarity: "Both map to THERMAL from opposite directions (cool vs heat)"
+    provenance: "C1394 T11"
+
+  suffix_independence:
+    statement: "Suffix is a genuine independent compositional domain, not an artifact of terminal atoms being stripped from compound MIDDLEs"
+    evidence: "77.1% of MIDDLEs appear with 3+ different suffixes; entropy 1.475 bits of suffix freedom given MIDDLE"
+    same_atom_inventory: "94.7% of suffixes follow C1393 slot grammar"
+    compound_narrowing: "Compound MIDDLEs narrow suffix choice slightly (1.42 bits vs 1.99 for single-atom)"
+    provenance: "C1394 T1"
+
+  encoding_model: |
+    TOKEN = PREFIX + MIDDLE + SUFFIX
+    MIDDLE = HEAD + MOD* + TERM
+    Where:
+      HEAD in {a, e, o, k*, t*}     — operational domain
+      MOD  in {p, f, i, c, d, s}*   — ordered parametrization stack
+      TERM in {l, r, h, y, m, n, k*, t*} — exit state/condition
+      * k, t are role-dual: HEAD when first, TERM when last
+    Modifier stacking order: p -> f -> i -> c -> d -> s
+    Frame predicts 64% of category; modifiers shift remaining 36%.
+
+  provenance: "C1393, C1394"
 
 # ============================================================
 
