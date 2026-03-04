@@ -3,8 +3,8 @@
 meta:
   name: "Currier A Structural Contract"
   acronym: "CASC"
-  version: "2.1"
-  date: "2026-02-24"
+  version: "2.2"
+  date: "2026-03-04"
   status: "ACTIVE"
   derived_from: "Tier-2 constraints only"
   governance: |
@@ -27,16 +27,20 @@ guarantees:
     provenance: "C233"
 
   - id: "POSITION_FREE"
-    statement: "No positional grammar within lines"
-    provenance: "C234"
+    statement: "No token-to-token positional grammar within lines (but HEAD-type positional tendencies exist: o-HEAD leads, headless trails)"
+    provenance: "C234, C1395"
 
   - id: "NON_SEQUENTIAL"
     statement: "No generative grammar exists"
     provenance: "C225, C230, C231, C240"
 
   - id: "FLAT_REGISTRY"
-    statement: "Not hierarchical"
-    provenance: "C236"
+    statement: "Not hierarchical between tokens (no sequential grammar); tokens are internally structured via HEAD+MOD*+TERM"
+    provenance: "C236, C1395"
+
+  - id: "MIDDLE_INSTRUCTION_ENCODING"
+    statement: "A MIDDLEs follow the same HEAD+MOD*+TERM instruction encoding as B (modifier ordering Fisher p=0.90, pair-lock 84.2%)"
+    provenance: "C1393, C1394, C1395"
 
 # ============================================================
 record_types:
@@ -99,6 +103,36 @@ morphology:
     essentiality: "Primary discriminator (402 unique distinctions)"
     entropy: "6.70 bits (65.6% of maximum)"
     incompatibility_rate: "95.7% of pairs are illegal"  # C475
+
+    # MIDDLE internal encoding structure (C1393, C1394, C1395)
+    internal_encoding:
+      architecture: "HEAD + MOD* + TERM (same as B)"
+      statement: |
+        MIDDLEs are not opaque identifiers — they decompose into HEAD (domain marker),
+        zero or more MOD atoms (parametrization), and TERM (exit/terminal). A-exclusive
+        MIDDLEs follow the same slot grammar as B (modifier ordering Fisher p=0.90,
+        pair-lock 84.2% agreement, atom distribution V=0.114).
+      a_exclusive_count: 579
+      modifier_ordering_agreement: "61.5% (A) vs 62.5% (B), Fisher p=0.90"
+      pair_lock_agreement: "84.2% (16/19 atoms)"
+      atom_distribution_divergence: "V=0.114 (small)"
+      clean_decomposition_rate: "8.6% (A) vs 20.3% (B) — lower in A due to o in medial positions"
+      verdict: "SHARED_GRAMMAR — encoding is manuscript-wide"
+      terminal_divergence:  # C1395 T5
+        statement: "A and B use the same encoding with different functional emphasis"
+        a_enriched:
+          l_terminal: "1.84x enriched (state-describing)"
+          o_frames: "2.5-2.8x enriched (arrangement)"
+        a_depleted:
+          dy_terminal: "0.1% in A vs 14.4% in B (144x B-enriched)"
+        b_enriched:
+          dy_terminal: "14.4% (action-sealing)"
+          execution_frames: "edy, aiin, ar, am (B-only)"
+        a_exclusive_frames: 2  # k+n, k+t (both k-initial)
+        b_only_frames: 17
+        interpretation: "A = state-describing terminals, B = action-performing terminals"
+        provenance: "C1395 T5"
+      provenance: "C1393, C1394, C1395 T1, C1395 T5"
     two_track_structure:
       # REGENERATED 2026-01-24: Atomic-suffix parser (voynich.py)
       shared_with_b:
@@ -377,6 +411,56 @@ line_structure:
       T: "65.0%"
     semantic_content: false  # Punctuation, not classifier
     provenance: "C422"
+
+# ============================================================
+# NOTE ON "FLAT" STRUCTURE:
+# A records are flat BETWEEN tokens — no sequential grammar (C240, transition validity 2.1%).
+# But individual tokens are internally structured via HEAD+MOD*+TERM (C1393/C1394/C1395).
+# The "flat registry" guarantee (C236) applies to inter-token ordering, not intra-token encoding.
+
+record_internal_grammar:
+  # Within-record positional grammar discovered in C1395 T3 and T7 (P10)
+  # NOTE: This is token-TYPE positional grammar (HEAD-type → position), NOT sequential grammar.
+  # C240 (no sequential grammar) remains valid — there is no token-to-token transition rule.
+
+  positional_structure:
+    statement: "Records exhibit internal positional grammar by HEAD-type"
+    o_head:
+      position: "leads"
+      first_position_rate: "37.5%"
+      mean_normalized_position: 0.439
+    l_terminal:
+      position: "medial"
+      mean_normalized_position: 0.487
+      highest_medial_fraction: 0.513
+    headless:
+      position: "trails"
+      last_position_rate: "55.5%"
+      mean_normalized_position: 0.563
+    m_terminal:
+      position: "most final-biased"
+      mean_normalized_position: 0.779
+    all_p_values: "≈0"
+    provenance: "C1395 T3, T7 (P10)"
+
+  domain_coherence:
+    statement: "Records are domain-coherent beyond chance"
+    z_score: -17.4
+    entropy_reduction: "7.7%"
+    a_vs_b: "A records MORE coherent than B lines (7.7% vs 5.2%)"
+    typical_heads_per_record: "3+ (mixed but coherent)"
+    all_same_head_records: "2.4%"
+    provenance: "C1395 T3"
+
+  within_folio_compatibility:  # C1395 T7 (P8)
+    statement: "Within-folio PP MIDDLE Jaccard exceeds between-folio"
+    jaccard_ratio: "1.22x"
+    z_score: "+20.9"
+    section_p_compatibility: 0.134  # Section P highest
+    interpretation: "Folio is a designed compatibility unit"
+    provenance: "C1395 T7 (P8)"
+
+  provenance: "C1395 T3, C1395 T7"
 
 # ============================================================
 paragraph_structure:
@@ -675,8 +759,8 @@ disallowed:
     reason: "Magnitude has no downstream effect"
     status: "FALSIFIED"
 
-  - interpretation: "A has sequential grammar"
-    reason: "Transition validity is 2.1%"
+  - interpretation: "A has sequential grammar (token-to-token)"
+    reason: "Transition validity is 2.1%. No token-to-token transition rules exist. (Note: HEAD-type positional tendencies DO exist per C1395 — this is type-level bias, not sequential grammar.)"
     status: "FALSIFIED"
 
   - interpretation: "Prefixes are semantic categories"
@@ -724,8 +808,11 @@ provenance:
     - "C231"  # Regular not grammatical
     - "C233"  # Line atomic
     - "C234"  # Position free
-    - "C236"  # Flat
+    - "C236"  # Flat (between tokens)
     - "C240"  # Non-sequential registry
+    - "C1393"  # Compound MIDDLE composition grammar (HEAD+MOD*+TERM)
+    - "C1394"  # Instruction encoding architecture
+    - "C1395"  # Cross-system instruction encoding (A follows same slot grammar as B)
 
   record_types:
     - "C482"  # Batch semantics
@@ -770,6 +857,9 @@ provenance:
     - "C1262"  # RI extension category coupling (V=0.221)
     - "C1265"  # Atom-profile coherence independent of category (d=11.6)
     - "C1268"  # PREFIX-category orthogonality (null)
+    - "C1393"  # Compound MIDDLE composition grammar (HEAD+MOD*+TERM)
+    - "C1394"  # Instruction encoding architecture
+    - "C1395"  # Cross-system instruction encoding (MIDDLE internal encoding, terminal divergence)
 
   line_structure:
     - "C250"  # INVALIDATED (was 64.1% repetition - transcriber artifact)
@@ -781,6 +871,9 @@ provenance:
     - "C482"  # Batch semantics
     - "C483"  # Ordinal repetition
     - "C484"  # Minimum sizes
+
+  record_internal_grammar:
+    - "C1395"  # Cross-system instruction encoding (record positional grammar, domain coherence, within-folio compatibility)
 
   paragraph_structure:
     - "C827"  # Paragraph operational unit

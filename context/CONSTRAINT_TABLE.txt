@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1238 constraints | 2026-03-04
+CONSTRAINT_REFERENCE v2.6 | 1239 constraints | 2026-03-04
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1241,4 +1241,5 @@ C1390	p-atom marking pause profile	2	B	p=pause upgraded PLAUSIBLE->SOLID; #1 MAR
 C1391	s-atom staging sequence profile	2	B	s=sequence remains PLAUSIBLE; #1 STAGING atom (6.721x, 87.50%), 6/6 compound determinism at 100% purity, FQ macro-state (3.59x), sh compound-suffix (13.16x s->h junction), modifier cosine 0.966 (SM-8); combined 11/20 across Phases 501+503
 C1392	f-atom marking flag profile	2	B	f=flag remains PLAUSIBLE; #2 MARKING atom (12.009x), 100% HT/UN (never enters 49-class grammar), 90.9% compound MARKING uniformity, f->c junction 10.28x, CHSH+f 82.8% MARKING, H1 'flag' 4/4 discriminants, 5/5 convergence; 12-test battery 6/12 (data ceiling)
 C1393	compound MIDDLE composition grammar	2	B, grammar, composition	Head-initial three-slot grammar (V=0.593): HEAD (a,e,o) + MODIFIER (p,c,i,f,d,s) + TERMINAL (l,r,h,y,m,n) + FREE (k,t). First atom predicts category 74-76%. k/t role-dual: actor under qo, target under ch/sh. Replicates C1209 (15/19). Channel-specific slot modulation.
-C1394	instruction encoding architecture	2	B, grammar, composition	HEAD+MOD*+TERM with variable-length ordered modifier stack (p->f->i->c->d->s). Frame predicts 64% of category; modifiers shift 36%. Fusion gradient: only dy hard-fused, most "macro-atoms" are adjacent slots. Suffix confirmed independent layer (entropy 1.475 bits).
+C1394	instruction encoding architecture	2	GLOBAL, grammar, composition	HEAD+MOD*+TERM with variable-length ordered modifier stack (p->f->i->c->d->s). Frame predicts 64% of category; modifiers shift 36%. Fusion gradient: only dy hard-fused, most "macro-atoms" are adjacent slots. Suffix confirmed independent layer (entropy 1.475 bits). Scope upgraded to GLOBAL by C1395 (Phase 507).
+C1395	cross-system instruction encoding	2	GLOBAL, grammar, composition	HEAD+MOD*+TERM architecture is manuscript-wide: A-exclusive MIDDLEs follow same slot grammar (Fisher p=0.90, pair-lock 84.2%, V=0.114). Bridge MIDDLEs 100% category stable (V=0.562). A enriched in state terminals (l 1.84x), B in action terminals (dy 144x). A records show positional grammar: o-HEAD leads, headless trails.

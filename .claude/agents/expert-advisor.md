@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1238 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1239 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1394.
+the highest ID present is C1395.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1238 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1239 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1238 validated constraints are present as canonical one-line claims with tier
+1239 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-04 08:35
-**Version:** FROZEN STATE (1238 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-04 15:51
+**Version:** FROZEN STATE (1239 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1666,7 +1666,8 @@ C1390	p-atom marking pause profile	2	B
 C1391	s-atom staging sequence profile	2	B
 C1392	f-atom marking flag profile	2	B
 C1393	compound MIDDLE composition grammar	2	B, grammar, composition
-C1394	instruction encoding architecture	2	B, grammar, composition
+C1394	instruction encoding architecture	2	GLOBAL, grammar, composition
+C1395	cross-system instruction encoding	2	GLOBAL, grammar, composition
 
 ---
 
@@ -4478,18 +4479,20 @@ Only Tier 0-2 structural findings are binding.
 # Structural Contract Signatures
 
 ## CASC (Currier A Structural Contract)
-**Meta:** v2.1, ACTIVE, Currier A, 114  # C272 folios
+**Meta:** v2.2, ACTIVE, Currier A, 114  # C272 folios
 
-### Guarantees (4)
+### Guarantees (5)
 - LINE_ATOMIC: Each line is an independent unit [C233]
-- POSITION_FREE: No positional grammar within lines [C234]
+- POSITION_FREE: No token-to-token positional grammar within lines (but HEAD-type positional tendencies exist: o-HEAD leads, headless tra [C234, C1395]
 - NON_SEQUENTIAL: No generative grammar exists [C225, C230, C231, C240]
-- FLAT_REGISTRY: Not hierarchical [C236]
+- FLAT_REGISTRY: Not hierarchical between tokens (no sequential grammar); tokens are internally structured via HEAD+MOD*+TERM [C236, C1395]
+- MIDDLE_INSTRUCTION_ENCODING: A MIDDLEs follow the same HEAD+MOD*+TERM instruction encoding as B (modifier ordering Fisher p=0.90, pair-lock 84.2%) [C1393, C1394, C1395]
 
 ### Sections -> Constraints
 - record_types: C482, C484
-- morphology: C235, C267, C268, C269, C277, C278, C291, C292, C293, C408, C412, C423, C466, C467, C475, C495, C498, C510, C511, C512, C513, C528, C529, C530, C831, C832, C833, C835, C836, C837, C838, C839, C1013, C1137, C1140, C1261, C1262, C1265, C1268
-- line_structure: C233, C250, C422, C482, C484
+- morphology: C235, C267, C268, C269, C277, C278, C291, C292, C293, C408, C412, C423, C466, C467, C475, C495, C498, C510, C511, C512, C513, C528, C529, C530, C831, C832, C833, C835, C836, C837, C838, C839, C1013, C1137, C1140, C1261, C1262, C1265, C1268, C1393, C1394, C1395
+- line_structure: C233, C236, C240, C250, C422, C482, C484, C1393, C1394, C1395
+- record_internal_grammar: C240, C1395
 - paragraph_structure: C475, C476, C827, C834, C846, C847, C848, C849, C850, C854, C1039, C1040, C1041, C1263
 - participation: C299, C384, C441, C442, C481, C484, C502, C824, C825, C826, C1013, C1014, C1016, C1018, C1020, C1134, C1135, C1136, C1137, C1138, C1139, C1140, C1141, C1146, C1147, C1148, C1264
 - positional: C260, C346, C420, C421, C424, C484, C946, C1266
@@ -4497,7 +4500,7 @@ Only Tier 0-2 structural findings are binding.
 ### Disallowed Interpretations (10)
 - "A tokens map to B folios (context-free)" []
 - "Repetition encodes quantity or ratio" []
-- "A has sequential grammar" []
+- "A has sequential grammar (token-to-token)" []
 - "Prefixes are semantic categories" []
 - "A is lookup table for B" []
 - "A encodes danger or hazard" []
@@ -4509,9 +4512,9 @@ Only Tier 0-2 structural findings are binding.
 ---
 
 ## BCSC (Currier B Structural Contract)
-**Meta:** v3.15, ACTIVE, 61.9% of tokens, 83 folios
+**Meta:** v3.16, ACTIVE, 61.9% of tokens, 83 folios
 
-### Guarantees (34)
+### Guarantees (35)
 - GRAMMAR_UNIVERSAL: 49-class grammar applies to all 83 folios without exception [C121, C124]
 - FORTY_NINE_CLASS_OPTIMALITY: 49-class is the optimal resolution for transition dynamics; token-level Markov is 38% worse due to sparsity; suffix cond [C1004]
 - TOTAL_COVERAGE: Every Currier B token parses; zero non-executable [C115, C124]
@@ -4546,6 +4549,7 @@ Only Tier 0-2 structural findings are binding.
 - PARAGRAPH_EXECUTION_GRADIENT: Paragraph body lines follow a specification→execution gradient: early lines have rare/unique vocabulary (specification), [C932, C933, C934]
 - PARAGRAPH_SUFFIX_CYCLING: 100% of paragraphs with 8+ body lines contain two alternating suffix modes (k=2, silhouette 0.459, 80% interleaved). Mod [C1227, C1228, C1229, C1230, C1231, C1232]
 - HT_OPERATIONAL_REDUNDANCY: HT/compound tokens contain operational content that is redundant with body simple MIDDLEs (71.6% atom hit rate vs 59.2%  [C404, C935]
+- MIDDLE_INSTRUCTION_ENCODING: Compound MIDDLEs encode instructions as HEAD + MOD* + TERM: 18 atoms in 4 slot roles (5 HEAD, 6 MOD, 6 TERM, 2 dual). Fi [C1393, C1394]
 
 ### Invariants (23)
 - grammar_universality: Same 49 classes apply to every folio [C124]
@@ -4574,7 +4578,8 @@ Only Tier 0-2 structural findings are binding.
 
 ### Sections -> Constraints
 - grammar: C085, C121, C124, C411, C1004
-- morphology: C267, C382, C383, C408, C506, C522, C588, C661, C662, C777, C787, C897, C911, C929, C935, C936, C1001, C1004, C1015, C1017, C1065, C1141, C1142, C1190, C1191, C1193, C1218, C1219, C1220, C1221, C1227
+- morphology: C267, C382, C383, C408, C506, C522, C588, C661, C662, C777, C787, C897, C911, C929, C935, C936, C1001, C1004, C1015, C1017, C1065, C1141, C1142, C1190, C1191, C1193, C1218, C1219, C1220, C1221, C1227, C1393, C1394
+- middle_instruction_encoding: C1393, C1394
 - role_taxonomy: C121, C366, C547, C550, C557, C558, C560, C562, C563, C567, C572, C573, C574, C575, C581, C582, C583, C584, C586, C587, C588, C591, C593, C594, C595, C597, C770, C777, C788, C791, C863, C864, C865, C866, C867, C868, C869
 - kernel: C089, C103, C104, C105, C332, C333, C339, C521, C1225, C1226
 - hazards: C109, C110, C111, C112, C386, C789
