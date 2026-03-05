@@ -4,6 +4,26 @@
 
 ---
 
+## Version 5.04.105 (2026-03-05) - Phase 512: Paragraph State-Independent Ordering
+
+### Summary
+
+Phase 512 tests whether paragraph ordering is state-dependent (terminal physical state routes what comes next). Result: 0/8 PASS after disambiguation. Terminal kernel balance, category profile, and tail product type do NOT predict next paragraph zone. Folio-mode baseline (0.685) dominates all state models. The initial T5 thermal continuity signal (rho=+0.230) was disambiguated as folio-level shared environment: shuffle p=0.565, adjacent≈non-adjacent (p=0.690), lag gradient flat. Folio-residualized correlation flips to -0.161 (p=0.029) — weak thermal anti-correlation (compensatory cycling, not carryover). Combined with C1399: paragraphs are independently composed subroutines within the folio's thematic envelope, ordered neither by position nor by state.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1400: paragraph state-independent ordering (8+4 tests, 0/8 PASS, thermal disambiguation) |
+| **ADDED** | `phases/PARAGRAPH_STATE_DEPENDENT_ORDERING/scripts/state_dependent_ordering.py` |
+| **ADDED** | `phases/PARAGRAPH_STATE_DEPENDENT_ORDERING/scripts/thermal_disambiguation.py` |
+| **ADDED** | `phases/PARAGRAPH_STATE_DEPENDENT_ORDERING/results/state_dependent_ordering.json` |
+| **ADDED** | `phases/PARAGRAPH_STATE_DEPENDENT_ORDERING/results/thermal_disambiguation.json` |
+| **UPDATED** | BCSC v3.21 — paragraph section: added state_independent_ordering subsection |
+| **UPDATED** | INDEX.md — +1 constraint (1244 total) |
+
+---
+
 ## Version 5.04.104 (2026-03-04) - Phase 511: Paragraph Ordering Null
 
 ### Summary

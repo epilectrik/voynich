@@ -3,7 +3,7 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.20"
+  version: "3.21"
   date: "2026-03-04"
   status: "ACTIVE"
   layer_type: "grammar contract"
@@ -1234,6 +1234,21 @@ program_structure:
       section_controlled: "All within-section ordering tests FAIL (all p>0.17)"
       interpretation: "Folio specifies WHAT concerns and HOW MUCH of each, not in WHAT ORDER"
       provenance: "C1399, C1398, C845, C862"
+
+    state_independent_ordering:
+      statement: "Terminal physical state does NOT predict next paragraph zone (0/8 PASS after disambiguation)"
+      folio_mode_baseline: "0.685 — just knowing folio's most common zone beats all state models"
+      thermal_continuity_disambiguated: |
+        Raw consecutive e_frac rho=+0.230 is entirely folio-level shared environment:
+        shuffle p=0.565, adjacent≈non-adjacent (p=0.690), lag gradient flat.
+        Folio-residualized: rho flips to -0.161 (p=0.029) — weak thermal
+        anti-correlation (compensatory cycling, not heat carryover).
+      combined_model: "Adding state features DEGRADES prediction (0.484 vs zone-only 0.566)"
+      interpretation: |
+        Paragraphs are independently composed within the folio's thematic envelope.
+        Ordering is driven neither by position (C1399) nor by terminal state (C1400).
+        Folio specifies operational character; paragraphs sample from it independently.
+      provenance: "C1400, C1399, C1398, C1260, C1288, C1121"
 
   folio_paragraph_architecture:
     # Paragraph-as-unit properties (C855-C862) are now owned by PSC (paragraph.psc.yaml)
@@ -2610,6 +2625,7 @@ provenance:
     - "C1397"  # Headless compound functional grammar (pseudo-HEAD, V=0.503, suffix bifurcation, da=i-initial)
     - "C1398"  # Paragraph operational gradient (continuous space, 4 zones, section V=0.408, REGIME V=0.371, C1378 connection)
     - "C1399"  # Paragraph ordering null (7/8 FAIL, zone inertia O/E=2.02, no sequence)
+    - "C1400"  # Paragraph state-independent ordering (0/8 PASS, thermal continuity is shared environment, folio-mode baseline 0.685)
 
   link:
     - "C334"   # LINK section conditioning

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1243 validated constraints | **Version:** 5.04 | **Date:** 2026-03-04
+**Total:** 1244 validated constraints | **Version:** 5.04 | **Date:** 2026-03-04
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4588,6 +4588,23 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T6: Monotonicity — FAIL (rho=-0.052, p=0.611). No thermal→monitoring ramp
 - T7: First-half vs second-half — FAIL (chi2=3.12, p=0.374). MONITORING 1.70x enriched in FIRST half (opposite of sequence)
 - T8: Section-controlled — ALL FAIL (all p>0.17). Genuine absence, not section confound
+
+---
+
+### Paragraph State-Independent Ordering (C1400) -- Phase: PARAGRAPH_STATE_DEPENDENT_ORDERING (Phase 512)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1400 | paragraph state-independent ordering | 2 | B, paragraph, ordering, thermal, state | Terminal physical state does NOT predict next paragraph zone. 0/8 tests PASS after disambiguation. Raw thermal continuity (rho=+0.230) is entirely folio-level shared environment (shuffle p=0.565, adjacent≈non-adjacent p=0.690). Folio-residualized correlation flips to -0.161 (thermal anti-correlation). Folio-mode baseline (0.685) dominates all models. Combined state model DEGRADES prediction. |
+
+**Phase 512 findings (State-Dependent Ordering, 8+4 tests):**
+- T1-T4: Terminal kernel/category/cross-zone/thermal-gradient — ALL FAIL. No state feature predicts next zone
+- T5: Raw thermal continuity rho=+0.230 — DISAMBIGUATED as shared environment (shuffle p=0.565, lag gradient flat, adjacent≈non-adjacent)
+- T6: Tail product → next zone — FAIL (chi2=10.11, p=0.120)
+- T7: Combined model — FAIL (0.484 vs zone-only 0.566, state HURTS)
+- T8: Section-controlled — FAIL (state features DEGRADE within-section models)
+- Disambiguation T2: Folio-residualized e_frac rho=-0.161 (p=0.029) — thermal anti-correlation within folio's thermal budget
+- Folio-mode baseline (0.685) crushes all models. Paragraphs independently composed within folio's thematic envelope
 
 ---
 

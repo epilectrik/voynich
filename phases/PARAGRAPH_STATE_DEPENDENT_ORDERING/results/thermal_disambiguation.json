@@ -1,0 +1,147 @@
+{
+  "metadata": {
+    "phase": "Phase 512 Supplement: THERMAL DISAMBIGUATION",
+    "question": "Does T5 thermal continuity (rho=+0.230) reflect physical continuity or shared environment?",
+    "n_folios": 57,
+    "n_paragraphs": 241,
+    "random_seed": 42
+  },
+  "T1_adjacent_vs_nonadjacent": {
+    "n_adjacent": 184,
+    "n_nonadjacent": 271,
+    "adjacent_e": {
+      "rho": 0.23030363121163203,
+      "p": 0.0016603674815879493
+    },
+    "nonadjacent_e": {
+      "rho": 0.19371394898468355,
+      "p": 0.0013524930227425433
+    },
+    "adjacent_k": {
+      "rho": 0.2378466863810158,
+      "p": 0.0011495688365259884
+    },
+    "nonadjacent_k": {
+      "rho": 0.07656954443613276,
+      "p": 0.20893012689496818
+    },
+    "fisher_z_e": {
+      "z": 0.398267901800813,
+      "p": 0.6904327182852091
+    },
+    "fisher_z_k": {
+      "z": 1.7230240737191862,
+      "p": 0.08488417169354857
+    },
+    "verdict": "SHARED_ENVIRONMENT",
+    "interpretation": "Adjacent and non-adjacent correlations are similar"
+  },
+  "T2_folio_controlled": {
+    "n_pairs": 184,
+    "raw_e": {
+      "rho": 0.23030363121163203,
+      "p": 0.0016603674815879493
+    },
+    "raw_k": {
+      "rho": 0.2378466863810158,
+      "p": 0.0011495688365259884
+    },
+    "residualized_e": {
+      "rho": -0.16099532226661722,
+      "p": 0.029019149535725954
+    },
+    "residualized_k": {
+      "rho": -0.04433326013083983,
+      "p": 0.550132682069316
+    },
+    "e_folio_fraction": 0.30094318782722784,
+    "k_folio_fraction": 0.813605727263231,
+    "verdict": "PHYSICAL_CONTINUITY",
+    "interpretation": "Significant residual correlation survives folio control"
+  },
+  "T3_lag_gradient": {
+    "lags": {
+      "1": {
+        "n": 184,
+        "e_rho": 0.23030363121163203,
+        "e_p": 0.0016603674815879493,
+        "k_rho": 0.2378466863810158,
+        "k_p": 0.0011495688365259884
+      },
+      "2": {
+        "n": 127,
+        "e_rho": 0.17689955220061152,
+        "e_p": 0.04663880729918436,
+        "k_rho": 0.04968931372615839,
+        "k_p": 0.5790476336216033
+      },
+      "3": {
+        "n": 81,
+        "e_rho": 0.23311692175797707,
+        "e_p": 0.03622511752373967,
+        "k_rho": 0.14962249745191258,
+        "k_p": 0.18246915603687403
+      },
+      "4": {
+        "n": 43,
+        "e_rho": 0.1359733774348984,
+        "e_p": 0.3846223629947929,
+        "k_rho": 0.07427017300675103,
+        "k_p": 0.6359808930479303
+      },
+      "5": {
+        "n": 16,
+        "e_rho": 0.24390570336413775,
+        "e_p": 0.3626435403878866,
+        "k_rho": -0.0944655877909435,
+        "k_p": 0.727847286941904
+      }
+    },
+    "e_lag_rhos_first3": [
+      0.23030363121163203,
+      0.17689955220061152,
+      0.23311692175797707
+    ],
+    "k_lag_rhos_first3": [
+      0.2378466863810158,
+      0.04968931372615839,
+      0.14962249745191258
+    ],
+    "e_range_first3": 0.05621736955736556,
+    "k_range_first3": 0.1881573726548574,
+    "e_monotonic_decay": false,
+    "verdict": "SHARED_ENVIRONMENT",
+    "interpretation": "No clear decay pattern; correlation approximately constant"
+  },
+  "T4_shuffle_control": {
+    "n_shuffles": 1000,
+    "observed_e_rho": 0.23030363121163203,
+    "shuffle_mean_e": 0.23947128811757076,
+    "shuffle_std_e": 0.05438347018487527,
+    "shuffle_p95_e": 0.32958186859756744,
+    "permutation_p_e": 0.565,
+    "z_score_e": -0.16857432736038197,
+    "observed_k_rho": 0.2378466863810158,
+    "shuffle_mean_k": 0.1733911534226057,
+    "shuffle_std_k": 0.05541406705162782,
+    "shuffle_p95_k": 0.2625993757943265,
+    "permutation_p_k": 0.124,
+    "z_score_k": 1.1631619259845807,
+    "verdict": "SHARED_ENVIRONMENT",
+    "interpretation": "Observed adjacent correlation NOT significantly better than shuffled (folio-level signal only)"
+  },
+  "synthesis": {
+    "verdicts": {
+      "T1_adjacent_vs_nonadjacent": "SHARED_ENVIRONMENT",
+      "T2_folio_controlled": "PHYSICAL_CONTINUITY",
+      "T3_lag_gradient": "SHARED_ENVIRONMENT",
+      "T4_shuffle_control": "SHARED_ENVIRONMENT"
+    },
+    "physical_count": 1,
+    "shared_count": 3,
+    "mixed_count": 0,
+    "ambiguous_count": 0,
+    "overall": "SHARED_ENVIRONMENT",
+    "interpretation": "The T5 thermal continuity signal is FOLIO-LEVEL (shared environment). 3/4 tests confirm that consecutive paragraphs have similar thermal profiles because they belong to the same folio, not because heat physically carries over from one paragraph to the next. The correlation does not decay with lag, does not exceed shuffled controls, and/or vanishes after folio-mean removal."
+  }
+}

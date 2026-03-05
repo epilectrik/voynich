@@ -1,0 +1,413 @@
+{
+  "metadata": {
+    "phase": "PARAGRAPH_STATE_DEPENDENT_ORDERING (Phase 512)",
+    "n_pairs": 184,
+    "n_cross_zone": 81,
+    "n_same_zone": 103,
+    "cross_zone_fraction": 0.44021739130434784,
+    "random_seed": 42,
+    "feature_names": [
+      "THERMAL",
+      "CONTAINMENT",
+      "FLOW",
+      "MONITORING",
+      "OPERATION",
+      "STAGING",
+      "MARKING",
+      "TRANSITION",
+      "k_frac",
+      "e_frac",
+      "h_frac",
+      "qo_frac",
+      "chsh_frac",
+      "bare_frac",
+      "headless_frac",
+      "bare_suffix_frac",
+      "dy_frac"
+    ],
+    "zone_names": {
+      "0": "THERMAL-QO",
+      "1": "CONTAINMENT-Sealing",
+      "2": "OPERATION-Iteration",
+      "3": "MONITORING-Phase"
+    }
+  },
+  "T1_kernel_prediction": {
+    "n_pairs": 184,
+    "overall_mode_baseline": 0.3532608695652174,
+    "folio_mode_baseline": 0.6847826086956522,
+    "lr_kernel_mean": 0.38033033033033037,
+    "lr_kernel_std": 0.07585124302690353,
+    "lr_kernel_folds": [
+      0.32432432432432434,
+      0.5135135135135135,
+      0.2972972972972973,
+      0.40540540540540543,
+      0.3611111111111111
+    ],
+    "rf_kernel_mean": 0.37492492492492496,
+    "rf_kernel_std": 0.04574925021020232,
+    "rf_kernel_folds": [
+      0.4594594594594595,
+      0.32432432432432434,
+      0.35135135135135137,
+      0.3783783783783784,
+      0.3611111111111111
+    ],
+    "verdict": "NOT_PREDICTIVE"
+  },
+  "T2_category_prediction": {
+    "lr_category_mean": 0.45675675675675687,
+    "lr_category_std": 0.054323652006058855,
+    "lr_category_folds": [
+      0.5135135135135135,
+      0.3783783783783784,
+      0.4864864864864865,
+      0.40540540540540543,
+      0.5
+    ],
+    "rf_category_mean": 0.4346846846846847,
+    "rf_category_std": 0.055790429568976695,
+    "rf_category_folds": [
+      0.4864864864864865,
+      0.3783783783783784,
+      0.3783783783783784,
+      0.5135135135135135,
+      0.4166666666666667
+    ],
+    "verdict": "NOT_PREDICTIVE"
+  },
+  "T3_cross_zone_prediction": {
+    "n_cross_pairs": 81,
+    "cross_mode_baseline": 0.4074074074074074,
+    "lr_cross_mean": 0.2963235294117647,
+    "lr_cross_folds": [
+      0.29411764705882354,
+      0.1875,
+      0.25,
+      0.4375,
+      0.3125
+    ],
+    "rf_cross_mean": 0.28455882352941175,
+    "rf_cross_folds": [
+      0.23529411764705882,
+      0.375,
+      0.1875,
+      0.375,
+      0.25
+    ],
+    "verdict": "NOT_PREDICTIVE"
+  },
+  "T4_terminal_thermal_ratio": {
+    "transitions": {
+      "0->0": {
+        "n": 45,
+        "mean_ek_ratio": 0.6162092270835127,
+        "mean_k": 0.25350874849663385,
+        "mean_e": 0.3983230310219137,
+        "std_ek_ratio": 0.1605431299680772
+      },
+      "0->1": {
+        "n": 6,
+        "mean_ek_ratio": 0.6347688652049122,
+        "mean_k": 0.24496535456287774,
+        "mean_e": 0.409953806083837,
+        "std_ek_ratio": 0.09155039000643676
+      },
+      "0->2": {
+        "n": 13,
+        "mean_ek_ratio": 0.6526682666373174,
+        "mean_k": 0.23354762646260624,
+        "mean_e": 0.47252024291497974,
+        "std_ek_ratio": 0.15110258784496064
+      },
+      "0->3": {
+        "n": 1,
+        "mean_ek_ratio": 0.7125552230297849,
+        "mean_k": 0.11764705882352941,
+        "mean_e": 0.29411764705882354,
+        "std_ek_ratio": 0.0
+      },
+      "1->0": {
+        "n": 8,
+        "mean_ek_ratio": 0.6117790743549435,
+        "mean_k": 0.17828604144393617,
+        "mean_e": 0.2890169771748719,
+        "std_ek_ratio": 0.12945890295110937
+      },
+      "1->1": {
+        "n": 21,
+        "mean_ek_ratio": 0.5946169212601097,
+        "mean_k": 0.1927495958510996,
+        "mean_e": 0.2874966999027149,
+        "std_ek_ratio": 0.20339263637227137
+      },
+      "1->2": {
+        "n": 8,
+        "mean_ek_ratio": 0.6148805401215385,
+        "mean_k": 0.2025361076831665,
+        "mean_e": 0.3077388706065177,
+        "std_ek_ratio": 0.09745245945030316
+      },
+      "1->3": {
+        "n": 2,
+        "mean_ek_ratio": 0.7604577889473936,
+        "mean_k": 0.1294642857142857,
+        "mean_e": 0.4017857142857143,
+        "std_ek_ratio": 0.09497420420915048
+      },
+      "2->0": {
+        "n": 10,
+        "mean_ek_ratio": 0.695449871633041,
+        "mean_k": 0.16438243673537792,
+        "mean_e": 0.37812447628624096,
+        "std_ek_ratio": 0.16491188108733987
+      },
+      "2->1": {
+        "n": 6,
+        "mean_ek_ratio": 0.6792893850271646,
+        "mean_k": 0.12679615705931493,
+        "mean_e": 0.32111528822055135,
+        "std_ek_ratio": 0.2152884690860614
+      },
+      "2->2": {
+        "n": 26,
+        "mean_ek_ratio": 0.6627888511185337,
+        "mean_k": 0.1662183779875492,
+        "mean_e": 0.3216735295280782,
+        "std_ek_ratio": 0.17715653065630707
+      },
+      "2->3": {
+        "n": 10,
+        "mean_ek_ratio": 0.7699327017824864,
+        "mean_k": 0.13197413654456996,
+        "mean_e": 0.4347630774797957,
+        "std_ek_ratio": 0.13517552613257003
+      },
+      "3->0": {
+        "n": 2,
+        "mean_ek_ratio": 0.6818695224898956,
+        "mean_k": 0.26666666666666666,
+        "mean_e": 0.5666666666666667,
+        "std_ek_ratio": 0.06719414792208933
+      },
+      "3->1": {
+        "n": 3,
+        "mean_ek_ratio": 0.5857604835454355,
+        "mean_k": 0.15767543859649122,
+        "mean_e": 0.22346491228070176,
+        "std_ek_ratio": 0.1759209789321453
+      },
+      "3->2": {
+        "n": 12,
+        "mean_ek_ratio": 0.729358862792515,
+        "mean_k": 0.1591114223467165,
+        "mean_e": 0.4092475879240585,
+        "std_ek_ratio": 0.13691078741699567
+      },
+      "3->3": {
+        "n": 11,
+        "mean_ek_ratio": 0.6567048460135669,
+        "mean_k": 0.21521185549318542,
+        "mean_e": 0.39442211667275606,
+        "std_ek_ratio": 0.1484610734204834
+      }
+    },
+    "same_vs_cross_U": 3485.0,
+    "same_vs_cross_p": 0.05577173293102517,
+    "same_zone_mean_ek": 0.62788965048982,
+    "cross_zone_mean_ek": 0.6783078675024143,
+    "kruskal_wallis_H": 15.245613985360558,
+    "kruskal_wallis_p": 0.17152647487472247,
+    "kruskal_wallis_n_groups": 12,
+    "kruskal_wallis_group_labels": [
+      "0->0",
+      "0->1",
+      "0->2",
+      "1->0",
+      "1->1",
+      "1->2",
+      "2->0",
+      "2->1",
+      "2->2",
+      "2->3",
+      "3->2",
+      "3->3"
+    ],
+    "verdict": "NO_THERMAL_DIFFERENTIATION"
+  },
+  "T5_thermal_continuity": {
+    "n_pairs": 184,
+    "correlations": {
+      "e_frac": {
+        "rho": 0.23030363121163203,
+        "p": 0.0016603674815879493
+      },
+      "k_frac": {
+        "rho": 0.2378466863810158,
+        "p": 0.0011495688365259884
+      },
+      "h_frac": {
+        "rho": 0.15424011730897574,
+        "p": 0.03657443875953651
+      },
+      "qo_frac": {
+        "rho": 0.1355104611334674,
+        "p": 0.06663974911296902
+      },
+      "chsh_frac": {
+        "rho": 0.23389071243161183,
+        "p": 0.0013960441994907466
+      }
+    },
+    "cross_zone_n": 81,
+    "cross_zone_e_rho": 0.27774733563381604,
+    "cross_zone_e_p": 0.012056759754841755,
+    "cross_zone_k_rho": 0.009923034688790185,
+    "cross_zone_k_p": 0.929939171854417,
+    "reference_within_paragraph_rho": 0.376,
+    "verdict": "THERMAL_CONTINUITY"
+  },
+  "T6_tail_product_prediction": {
+    "n_pairs": 184,
+    "tail_centroids": {
+      "0": {
+        "k_frac": 0.289725174773951,
+        "e_frac": 0.373279088488797,
+        "h_frac": 0.1113031763493239,
+        "bare_suffix_frac": 0.3996158142472179,
+        "dy_frac": 0.010133975558357834
+      },
+      "1": {
+        "k_frac": 0.16859223381487085,
+        "e_frac": 0.3130988951001244,
+        "h_frac": 0.047599262521407844,
+        "bare_suffix_frac": 0.6218627056031445,
+        "dy_frac": 0.08912828682679345
+      },
+      "2": {
+        "k_frac": 0.16109460523398725,
+        "e_frac": 0.38638614707515423,
+        "h_frac": 0.03178262304422949,
+        "bare_suffix_frac": 0.5765626891424129,
+        "dy_frac": -2.42861286636753e-17
+      }
+    },
+    "contingency": {
+      "Tail_0": {
+        "Z0": 21,
+        "Z1": 7,
+        "Z2": 15,
+        "Z3": 10
+      },
+      "Tail_1": {
+        "Z0": 15,
+        "Z1": 10,
+        "Z2": 7,
+        "Z3": 2
+      },
+      "Tail_2": {
+        "Z0": 29,
+        "Z1": 19,
+        "Z2": 37,
+        "Z3": 12
+      }
+    },
+    "chi_squared": 10.107573471917707,
+    "p_value": 0.12019435552010031,
+    "cramers_v": 0.1657293946789342,
+    "verdict": "NO_PREDICTION"
+  },
+  "T7_combined_model": {
+    "models": {
+      "Overall mode baseline": 0.3532608695652174,
+      "Folio-mode baseline": 0.6847826086956522,
+      "Zone-only (LR)": 0.5654654654654655,
+      "State-only (LR)": 0.41846846846846847,
+      "Combined zone+state (LR)": 0.48408408408408404,
+      "Combined zone+state (RF)": 0.5166666666666667
+    },
+    "lr_zone_folds": [
+      0.5405405405405406,
+      0.6756756756756757,
+      0.5405405405405406,
+      0.4594594594594595,
+      0.6111111111111112
+    ],
+    "lr_state_folds": [
+      0.4594594594594595,
+      0.35135135135135137,
+      0.40540540540540543,
+      0.4594594594594595,
+      0.4166666666666667
+    ],
+    "lr_combined_folds": [
+      0.4864864864864865,
+      0.43243243243243246,
+      0.4594594594594595,
+      0.4864864864864865,
+      0.5555555555555556
+    ],
+    "rf_combined_folds": [
+      0.5135135135135135,
+      0.5135135135135135,
+      0.4594594594594595,
+      0.5135135135135135,
+      0.5833333333333334
+    ],
+    "zone_to_combined_gain": -0.08138138138138146,
+    "state_over_baseline": 0.06520759890325106,
+    "verdict": "ZONE_SUFFICIENT"
+  },
+  "T8_section_controlled": {
+    "sections": {
+      "BIO": {
+        "n": 61,
+        "n_classes": 3,
+        "skipped": false,
+        "mode_baseline": 0.6721311475409836,
+        "zone_only_acc": 0.7358974358974358,
+        "combined_acc": 0.5551282051282052,
+        "state_gain": -0.18076923076923068
+      },
+      "HERBAL": {
+        "n": 13,
+        "skipped": true,
+        "reason": "insufficient data"
+      },
+      "STARS_RECIPE": {
+        "n": 96,
+        "n_classes": 4,
+        "skipped": false,
+        "mode_baseline": 0.4895833333333333,
+        "zone_only_acc": 0.4789473684210527,
+        "combined_acc": 0.4068421052631579,
+        "state_gain": -0.07210526315789478
+      },
+      "COSMO": {
+        "n": 10,
+        "skipped": true,
+        "reason": "insufficient data"
+      }
+    },
+    "mean_gain": -0.12643724696356273,
+    "verdict": "NO_WITHIN_SECTION_GAIN"
+  },
+  "synthesis": {
+    "verdicts": {
+      "T1_kernel_prediction": "NOT_PREDICTIVE",
+      "T2_category_prediction": "NOT_PREDICTIVE",
+      "T3_cross_zone_prediction": "NOT_PREDICTIVE",
+      "T4_thermal_differentiation": "NO_THERMAL_DIFFERENTIATION",
+      "T5_thermal_continuity": "THERMAL_CONTINUITY",
+      "T6_tail_product_prediction": "NO_PREDICTION",
+      "T7_combined_model": "ZONE_SUFFICIENT",
+      "T8_section_controlled": "NO_WITHIN_SECTION_GAIN"
+    },
+    "n_pass": 1,
+    "n_fail": 7,
+    "n_other": 0,
+    "overall": "WEAK_STATE_SIGNAL",
+    "interpretation": "Weak state signal. Only 1/8 tests positive. Ordering is primarily driven by folio theme (zone inertia 2.02x), not by terminal physical state. State carries minimal cross-paragraph information."
+  }
+}
