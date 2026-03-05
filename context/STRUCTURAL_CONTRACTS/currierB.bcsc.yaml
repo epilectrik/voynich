@@ -3,7 +3,7 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.26"
+  version: "3.27"
   date: "2026-03-05"
   status: "ACTIVE"
   layer_type: "grammar contract"
@@ -181,8 +181,8 @@ guarantees:
     provenance: "C932, C933, C934"
 
   - id: "PARAGRAPH_SUFFIX_CYCLING"
-    statement: "100% of paragraphs with 8+ body lines contain two alternating suffix modes (k=2, silhouette 0.459, 80% interleaved). Mode A (terminal-heavy): k-family 1.62x, prep 2.86x, qo 1.48x. Mode B (bare-heavy): e-family elevated. Universal centroids across all 55 qualifying paragraphs (global silhouette 0.428, F=4.56). Tail lines cluster into k=3 product signatures, section-correlated (chi2=31.73). FL partially resets between body lines (36.4%, LATE->MEDIAL dominant). PREFIX channels switch in 73.2% of paragraphs."
-    provenance: "C1227, C1228, C1229, C1230, C1231, C1232"
+    statement: "100% of paragraphs with 8+ body lines contain two suffix modes (k=2, silhouette 0.459). Mode A (THERMAL/MONITORING atoms: {d,e,ee,h,y}), Mode B (STAGING/FLOW atoms: {a,i,ii,l,m,n,o,r,s}). 80% of qualifying paragraphs classified as interleaved (containing non-trivial mixture of both modes). NOTE: consecutive-line switch rate is 39.4% (BELOW random 49.9%) — lines mildly persist in mode (C1423). Token mode is ~80% MIDDLE-determined (C1422), with TERMINAL atom as primary gatekeeper (V=0.503). No token-level sequential dependency (CMI=1.64%). TERMINAL switching does NOT drive mode switching (C1424). Universal centroids across all 55 qualifying paragraphs (global silhouette 0.428, F=4.56)."
+    provenance: "C1227, C1228, C1229, C1230, C1231, C1232, C1422, C1423, C1424"
 
   - id: "HT_OPERATIONAL_REDUNDANCY"
     statement: "HT/compound tokens contain operational content that is redundant with body simple MIDDLEs (71.6% atom hit rate vs 59.2% random). Removal doesn't change outcomes because of redundancy, not emptiness."
@@ -267,8 +267,8 @@ invariants:
     provenance: "C1218, C1219"
 
   suffix_mode_universality:
-    statement: "Two alternating suffix modes (specification/continuation) are universal across all paragraphs with sufficient body lines; global silhouette 0.428, F=4.56, 80% interleaved"
-    provenance: "C1229, C1231"
+    statement: "Two suffix modes (specification/continuation) are universal across all paragraphs with sufficient body lines; global silhouette 0.428, F=4.56. 80% of paragraphs contain interleaved modes, but consecutive-line switch rate is 39.4% (below random) — lines persist in mode. Mode is MIDDLE-determined (C1422), not sequentially driven."
+    provenance: "C1229, C1231, C1422, C1423"
 
   pairwise_interaction_sufficiency:
     statement: "Pairwise morphological component interactions capture all exploitable TOKEN structure; no three-way synergy"
@@ -1116,13 +1116,16 @@ program_structure:
       length_progression: "rho = -0.229, p = 0.001"
       composition_after_control: "EN/FL/CC fractions collapse to rho ~ 0 after controlling for line length"
       suffix_mode_cycling: |
-        Two universal suffix modes alternate within bodies (C1229):
-        Mode A (terminal=0.430, bare=0.466): k-family 1.62x, prep 2.86x, qo 1.48x
-        Mode B (terminal=0.155, bare=0.741): e-family elevated (0.824x)
-        80% interleaved (not sequential), continuous gradient (3.3% breakpoints)
+        Two universal suffix modes present in bodies (C1229):
+        Mode A = {d,e,ee,h,y} THERMAL/MONITORING atoms (C1410)
+        Mode B = {a,i,ii,l,m,n,o,r,s} STAGING/FLOW atoms (C1410)
+        80% of paragraphs classified as containing interleaved mixture of both modes.
+        BUT: consecutive-line switch rate = 39.4% (BELOW random 49.9%) — mode PERSISTENCE (C1423).
+        Token mode ~80% MIDDLE-determined (C1422), no sequential dependency (CMI=1.64%).
+        Mode switching is TERMINAL-independent at line level (C1424).
         Universal centroids: silhouette 0.428, F=4.56 (C1231)
-      reconciliation: "C963 homogeneity is at role-fraction level (EN/FL/CC); cycling operates at suffix-category/MIDDLE-family level — a finer grain below role resolution. Both are true simultaneously."
-      provenance: "C963, C677, C1229, C1230, C1231"
+      reconciliation: "C963 homogeneity is at role-fraction level (EN/FL/CC); mode variation operates at suffix-atom level — a finer grain below role resolution. Both are true simultaneously. The 'cycling' is vocabulary mixture, not sequential alternation."
+      provenance: "C963, C677, C1229, C1230, C1231, C1410, C1422, C1423, C1424"
 
     execution_gradient:
       # REVISED Phase 451 (C1259): The spec->exec vocabulary gradient (C932) did NOT

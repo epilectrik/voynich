@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,265 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,268 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -200,7 +200,7 @@ Within the body, two architectural layers operate simultaneously:
 
 1. **Execution gradient (the envelope):** Terminal suffix fraction declines monotonically from top to bottom (r = -0.89), while bare suffix fraction increases (r = +0.90). This gradient tracks the shift from specification to execution.
 
-2. **Suffix mode cycling (the oscillation):** Within that envelope, every qualifying paragraph alternates between two universal suffix modes (silhouette 0.459, 80% interleaved). At atom level (C1410), Mode A uses THERMAL/MONITORING suffix atoms {d, e, h, y} — an active specification phase concentrating k-family MIDDLEs (1.62x), preparation operations (2.86x), and energy PREFIXes (1.48x). Mode B uses STAGING/FLOW suffix atoms {a, i, l, m, n, o, r, s} — a continuation/equilibration phase elevating e-family MIDDLEs. These modes are universal across all qualifying paragraphs (global silhouette 0.428, F = 4.56; C1229-C1231, C1410).
+2. **Suffix mode coexistence (the texture):** Within that envelope, every qualifying paragraph contains two universal suffix modes (silhouette 0.459, 80% of paragraphs contain both). At atom level (C1410), Mode A uses THERMAL/MONITORING suffix atoms {d, e, h, y} — an active specification phase concentrating k-family MIDDLEs (1.62x), preparation operations (2.86x), and energy PREFIXes (1.48x). Mode B uses STAGING/FLOW suffix atoms {a, i, l, m, n, o, r, s} — a continuation/equilibration phase elevating e-family MIDDLEs. These modes are universal across all qualifying paragraphs (global silhouette 0.428, F = 4.56; C1229-C1231, C1410). Crucially, mode is ~80% determined by each token's own MIDDLE content, not by sequential alternation — lines persist in a mode (60.6% same-mode) rather than oscillating, and the mechanism is MIDDLE TERMINAL gating, not a paragraph-level clock (C1422-C1424).
 
 The final 2 body lines cluster into 3 distinct product signatures that correlate with section (chi2 = 31.73, p = 0.0001), suggesting paragraphs end with different output types (C1232).
 

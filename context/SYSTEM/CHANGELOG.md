@@ -4,6 +4,26 @@
 
 ---
 
+## Version 5.09.111 (2026-03-05) - Phase 518: Suffix Mode Cycling Mechanism
+
+### Summary
+
+Phase 518 investigates what drives the alternation between suffix Mode A ({d,e,ee,h,y} -- THERMAL/MONITORING) and Mode B ({a,i,ii,l,m,n,o,r,s} -- STAGING/FLOW) within paragraphs. Result: token-level mode is ~80% MIDDLE-determined (C1412) with NO sequential dependency (CMI=0.016 bits, 1.64% of H). Lines show mild mode PERSISTENCE (60.6% same-mode rate, vs 50% random), not interleaving. C1229's "80% interleaved" refers to paragraph classification (fraction containing mixed modes), NOT consecutive-line switch rate (which is 39.4%, BELOW random). TERMINAL switching does not drive mode switching -- mode switch rate is identical (39.1% vs 39.4%) regardless of whether the dominant TERMINAL changed. The 2.89% genuine line-level sequential signal represents mild operational state inertia.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1422: suffix mode is MIDDLE-determined without sequential dependency |
+| **ADDED** | C1423: line-level mode persistence with weak inertia |
+| **ADDED** | C1424: mode switching is TERMINAL-independent at line level |
+| **ADDED** | `phases/SUFFIX_MODE_CYCLING_MECHANISM/scripts/suffix_mode_mechanism.py` |
+| **ADDED** | `phases/SUFFIX_MODE_CYCLING_MECHANISM/results/suffix_mode_mechanism.json` |
+| **UPDATED** | INDEX.md -- +3 constraints (1268 total) |
+| **UPDATED** | CONSTRAINT_TABLE.txt regenerated (1268 constraints) |
+
+---
+
 ## Version 5.08.110 (2026-03-05) - Phase 517: ARTICULATOR Deep Dive
 
 ### Summary

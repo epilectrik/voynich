@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1265 validated constraints | **Version:** 5.08 | **Date:** 2026-03-05
+**Total:** 1268 validated constraints | **Version:** 5.09 | **Date:** 2026-03-05
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4721,6 +4721,30 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T8: Paragraph headers 4.11x enriched; par-final depleted
 - T9: 29 forbidden ART x PREFIX pairs; 4 forbidden ART x HEAD pairs
 - T10: q is NOT an articulator; qo confirmed as PREFIX compound
+
+---
+
+### Suffix Mode Cycling Mechanism (C1422-C1424) -- Phase: SUFFIX_MODE_CYCLING_MECHANISM (Phase 518)
+
+> **Summary:** Investigates what drives the alternation between suffix Mode A ({d, e, ee, h, y} -- THERMAL/MONITORING) and Mode B ({a, i, ii, l, m, n, o, r, s} -- STAGING/FLOW) within paragraphs. Token-level mode is ~80% MIDDLE-determined (C1412) with NO sequential dependency. Lines show mild mode PERSISTENCE (60.6% same-mode), not interleaving. C1229's "80% interleaved" refers to paragraph classification (fraction containing mixed modes), not consecutive-line switch rate (which is 39.4%, BELOW random). TERMINAL switching does not drive mode switching -- mode switch rate is identical regardless of whether dominant TERMINAL changed.
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1422 | suffix mode is MIDDLE-determined without sequential dependency | 2 | B, suffix, mode, MIDDLE, sequential, token-level | Joint token features (PREFIX+HEAD+TERM) explain 21.4% of mode entropy (accuracy 0.682, 1.33x). Previous token mode adds only 1.64% beyond features (CMI=0.016 bits). Raw sequential MI (0.003 bits, 0.3%) fully absorbed by token identity. No token-level sequential cycling mechanism. |
+| 1423 | line-level mode persistence with weak inertia | 2 | B, suffix, mode, line, sequential, persistence | Consecutive lines: 60.6% same-mode (vs 50% random). CMI(prev_mode; curr_mode \| dom_TERM) = 0.029 bits (2.89% of H). 4/8 TERMINAL strata significant. Lines persist in mode, not alternate. C1229 "80% interleaved" = paragraph classification, not line-pair switch rate. |
+| 1424 | mode switching is TERMINAL-independent at line level | 2 | B, suffix, mode, line, TERMINAL, independence | Switch rate 39.1% when same dominant TERMINAL vs 39.4% when different (delta 0.3pp, NS). TERMINAL determines each line's mode independently. Below-random interleaving (39.4% vs 49.9%) 100.6% captured by TERMINAL vocabulary effects. No TERMINAL alternation driver. |
+
+**Phase 518 findings (Suffix Mode Cycling Mechanism, 10 tests):**
+- T1: TERMINAL switch rate 0.734, switch-to-expected 0.938 (self-chain enriched: t 2.15x, k 1.96x, h 1.89x)
+- T2: TERMINAL->mode V=0.503 (replicates C1412); h=91.2%A, r=96.7%B, k=67.0%A, y=62.5%B
+- T3: Line mode prediction: TERMINAL acc=0.582 (1.11x baseline); position alternation acc=0.505 (below baseline)
+- T4: HEAD MI=0.091 bits (9.1%); HEAD-TERMINAL MI=0.935 bits (strongly coupled)
+- T5: PREFIX MI=0.028 bits (2.8%)
+- T6: Joint features 21.4% of H; CMI(prev_mode|features) = 1.64% -- NO token sequential dependency
+- T7: Line CMI(prev|TERM) = 2.89%; 4/8 strata significant (y, l, n, h) -- WEAK genuine line inertia
+- T8: 0 forbidden TERMINAL pairs; self-chain enriched for Mode A terminals
+- T9: Cross-line token switch 43.7% vs within-line 46.4% (p=0.037); line boundaries mildly suppress switching
+- T10: Line interleave rate 0.3935, BELOW random 0.499; TERMINAL switching does NOT drive mode switching (39.1%=39.4%)
 
 ---
 

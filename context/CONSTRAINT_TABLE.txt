@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1265 constraints | 2026-03-05
+CONSTRAINT_REFERENCE v2.6 | 1268 constraints | 2026-03-05
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1269,3 +1269,6 @@ C1418	ARTICULATOR PREFIX-locked with BARE/qo exclusion	2	B, PREFIX, ARTICULATOR	
 C1419	ARTICULATOR e-HEAD selectivity and k-HEAD exclusion	2	B, MIDDLE, ARTICULATOR, atom	76-90% e-initial MIDDLE vs 40% baseline (1.9-2.3x). k-HEAD excluded from d,k,t (4 forbidden pairs). PREFIX mediates 68.3%. Articulators mark cooling not heating.
 C1420	ARTICULATOR suffix suppression	2	B, SUFFIX, ARTICULATOR	Suffix rate 16.7-27.2% vs 49.3% baseline (0.34-0.55x). Only p matches baseline (58.2%). Specification context suppresses execution-mode marking.
 C1421	ARTICULATOR category full MIDDLE mediation	2	B, ARTICULATOR, category	I(ART;CAT\
+C1422	suffix mode is MIDDLE-determined without sequential dependency	2	B, suffix, mode, MIDDLE, sequential, token-level	Joint token features (PREFIX+HEAD+TERM) explain 21.4% of mode entropy (accuracy 0.682, 1.33x). Previous token mode adds only 1.64% beyond features (CMI=0.016 bits). Raw sequential MI (0.003 bits, 0.3%) fully absorbed by token identity. No token-level sequential cycling mechanism.
+C1423	line-level mode persistence with weak inertia	2	B, suffix, mode, line, sequential, persistence	Consecutive lines: 60.6% same-mode (vs 50% random). CMI(prev_mode; curr_mode \
+C1424	mode switching is TERMINAL-independent at line level	2	B, suffix, mode, line, TERMINAL, independence	Switch rate 39.1% when same dominant TERMINAL vs 39.4% when different (delta 0.3pp, NS). TERMINAL determines each line's mode independently. Below-random interleaving (39.4% vs 49.9%) 100.6% captured by TERMINAL vocabulary effects. No TERMINAL alternation driver.
