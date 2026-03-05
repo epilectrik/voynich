@@ -3,7 +3,7 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.17"
+  version: "3.18"
   date: "2026-03-04"
   status: "ACTIVE"
   layer_type: "grammar contract"
@@ -653,15 +653,21 @@ middle_instruction_encoding:
     provenance: "C1394 T6"
 
   headless_compounds:
-    statement: "467 headless compound types (20.6% of compound tokens) lack a valid HEAD atom — a specialized infrastructure subgrammar"
-    category_divergence: "V=0.568"
-    enriched: {CONTAINMENT: "10.4x", MARKING: "5.3x", MONITORING: "3.9x", STAGING: "2.7x"}
-    depleted: {THERMAL: "0.12x", TRANSITION: "0.21x", FLOW: "0.24x"}
-    prefix_concentration: "V=0.565; massively concentrated under a-base PREFIXes (da, sa, ka, ta)"
-    positional_enrichment: "paragraph-initial 2.16x, line-initial 1.8x, line-final 1.5x"
-    interpretation: "HEAD-free instruction class for infrastructure/support operations at boundary positions"
-    not_abbreviations: "Mean headless fraction 0.706 — most are their own primary forms"
-    provenance: "C1394 T8"
+    statement: "467 headless types (20.6%, 3,288 tokens) — NOT homogeneous. Initial atom acts as pseudo-HEAD with atom-specific functional domains (V=0.503)"
+    category_by_initial:
+      d: "CONTAINMENT 83.9%, bare 85.1%, ch-channel, late-line — sealing/closing"
+      i: "STAGING 66.0%, bare 93.2%, da-channel (54%), line-initial 29.3% — cycle control"
+      c: "OPERATION 32.2% (most diverse), suffixed 96.2%, ch-channel (53%), interior-locked — process adjustment"
+      p: "MARKING 91.7%, suffixed 96.8%, qo-channel (71%) — pause/hold"
+      f: "MARKING 90.9%, suffixed 93.2%, qo-channel (61%) — flag/checkpoint"
+      r: "FLOW 60.7%, BARE-channel (39%), line-final 44.3% — response/routing"
+      l: "STAGING 27.8% (most versatile, 6 categories >6%), suffixed 77.3%, both boundaries — state annotation"
+    suffix_bifurcation: "d/i bare (85-93%) vs c/p/f suffixed (93-97%): binary ops vs parametric ops"
+    da_correction: "C1394 T8 da-enrichment is i-initial-specific (iin/in), NOT generic headless. d/c prefer ch/sh; p/f prefer qo"
+    modifier_ordering: "Same grammar (61.9% vs 70.1% headed); c atom primary violator"
+    q_exclusion: "104 q-initial tokens are non-grammar (98% BARE, 100% UNK) — exclude"
+    not_abbreviations: "HEAD recovery rejected (C1395 T2: 9.1%). Genuinely headless"
+    provenance: "C1394 T8, C1397"
 
   h_terminal_transparency:
     statement: "h-terminal apparent chaos (27% purity) is resolved: h is transparent, not random"
@@ -2551,6 +2557,7 @@ provenance:
     - "C1220"  # Modifier consistency varies by character (high o=0.836, low d=0.345)
     - "C1221"  # Prep PREFIX similarity base-driven (shuffle p=0.998, challenges F-BRU-012)
     - "C1396"  # Prep PREFIX structural differentiation (7/8 non-content dimensions, atom-grounded glosses)
+    - "C1397"  # Headless compound functional grammar (pseudo-HEAD, V=0.503, suffix bifurcation, da=i-initial)
 
   link:
     - "C334"   # LINK section conditioning

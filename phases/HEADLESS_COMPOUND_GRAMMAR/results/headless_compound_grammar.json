@@ -1,0 +1,961 @@
+{
+  "test1_census": {
+    "single_types": 24,
+    "single_tokens": 7132,
+    "headed_types": 802,
+    "headed_tokens": 12676,
+    "headless_types": 467,
+    "headless_tokens": 3288,
+    "headless_type_pct": 36.8,
+    "headless_token_pct": 20.6,
+    "first_atom_types": {
+      "y": 36,
+      "d": 59,
+      "c": 61,
+      "i": 33,
+      "s": 19,
+      "l": 92,
+      "g": 1,
+      "r": 43,
+      "f": 19,
+      "q": 46,
+      "p": 48,
+      "h": 8,
+      "x": 1,
+      "m": 1
+    },
+    "first_atom_tokens": {
+      "y": 71,
+      "d": 805,
+      "c": 612,
+      "i": 894,
+      "s": 32,
+      "l": 428,
+      "g": 1,
+      "r": 122,
+      "f": 44,
+      "q": 104,
+      "p": 157,
+      "h": 16,
+      "x": 1,
+      "m": 1
+    },
+    "modifier_atoms_present": [
+      "i",
+      "d",
+      "c",
+      "p",
+      "f",
+      "s"
+    ],
+    "terminal_atoms_present": [
+      "l",
+      "r",
+      "y",
+      "h",
+      "m"
+    ],
+    "verdict": "All 6 MOD atoms represented: YES; TERM atoms: 5/6"
+  },
+  "test2_functional_profiles": {
+    "chi2": 5601.4,
+    "p": 0.0,
+    "cramers_v": 0.503,
+    "atom_profiles": {
+      "i": {
+        "n": 894,
+        "categories": {
+          "THERMAL": 0.1,
+          "CONTAINMENT": 0.0,
+          "FLOW": 3.5,
+          "MONITORING": 0.2,
+          "OPERATION": 0.1,
+          "STAGING": 66.0,
+          "MARKING": 30.1,
+          "TRANSITION": 0.0
+        },
+        "top_category": "STAGING",
+        "c1394_role": "MODIFIER"
+      },
+      "d": {
+        "n": 805,
+        "categories": {
+          "THERMAL": 0.0,
+          "CONTAINMENT": 83.9,
+          "FLOW": 2.2,
+          "MONITORING": 0.0,
+          "OPERATION": 0.0,
+          "STAGING": 0.6,
+          "MARKING": 11.1,
+          "TRANSITION": 2.1
+        },
+        "top_category": "CONTAINMENT",
+        "c1394_role": "MODIFIER"
+      },
+      "c": {
+        "n": 612,
+        "categories": {
+          "THERMAL": 1.3,
+          "CONTAINMENT": 20.8,
+          "FLOW": 1.3,
+          "MONITORING": 22.4,
+          "OPERATION": 32.2,
+          "STAGING": 0.0,
+          "MARKING": 22.1,
+          "TRANSITION": 0.0
+        },
+        "top_category": "OPERATION",
+        "c1394_role": "MODIFIER"
+      },
+      "l": {
+        "n": 428,
+        "categories": {
+          "THERMAL": 7.5,
+          "CONTAINMENT": 0.0,
+          "FLOW": 4.7,
+          "MONITORING": 6.5,
+          "OPERATION": 17.8,
+          "STAGING": 27.8,
+          "MARKING": 16.1,
+          "TRANSITION": 19.6
+        },
+        "top_category": "STAGING",
+        "c1394_role": "TERMINAL"
+      },
+      "p": {
+        "n": 157,
+        "categories": {
+          "THERMAL": 1.3,
+          "CONTAINMENT": 0.0,
+          "FLOW": 3.8,
+          "MONITORING": 0.0,
+          "OPERATION": 0.0,
+          "STAGING": 2.5,
+          "MARKING": 91.7,
+          "TRANSITION": 0.6
+        },
+        "top_category": "MARKING",
+        "c1394_role": "MODIFIER"
+      },
+      "r": {
+        "n": 122,
+        "categories": {
+          "THERMAL": 1.6,
+          "CONTAINMENT": 0.0,
+          "FLOW": 60.7,
+          "MONITORING": 0.0,
+          "OPERATION": 0.0,
+          "STAGING": 7.4,
+          "MARKING": 1.6,
+          "TRANSITION": 28.7
+        },
+        "top_category": "FLOW",
+        "c1394_role": "TERMINAL"
+      },
+      "q": {
+        "n": 104,
+        "categories": {
+          "THERMAL": 0.0,
+          "CONTAINMENT": 0.0,
+          "FLOW": 0.0,
+          "MONITORING": 0.0,
+          "OPERATION": 0.0,
+          "STAGING": 0.0,
+          "MARKING": 0.0,
+          "TRANSITION": 0.0
+        },
+        "top_category": "THERMAL",
+        "c1394_role": "UNKNOWN"
+      },
+      "y": {
+        "n": 71,
+        "categories": {
+          "THERMAL": 22.5,
+          "CONTAINMENT": 0.0,
+          "FLOW": 29.6,
+          "MONITORING": 1.4,
+          "OPERATION": 0.0,
+          "STAGING": 11.3,
+          "MARKING": 31.0,
+          "TRANSITION": 4.2
+        },
+        "top_category": "MARKING",
+        "c1394_role": "TERMINAL"
+      },
+      "f": {
+        "n": 44,
+        "categories": {
+          "THERMAL": 2.3,
+          "CONTAINMENT": 0.0,
+          "FLOW": 0.0,
+          "MONITORING": 0.0,
+          "OPERATION": 0.0,
+          "STAGING": 2.3,
+          "MARKING": 90.9,
+          "TRANSITION": 4.5
+        },
+        "top_category": "MARKING",
+        "c1394_role": "MODIFIER"
+      },
+      "s": {
+        "n": 32,
+        "categories": {
+          "THERMAL": 6.2,
+          "CONTAINMENT": 0.0,
+          "FLOW": 3.1,
+          "MONITORING": 15.6,
+          "OPERATION": 9.4,
+          "STAGING": 31.2,
+          "MARKING": 31.2,
+          "TRANSITION": 3.1
+        },
+        "top_category": "STAGING",
+        "c1394_role": "MODIFIER"
+      }
+    },
+    "reliable_atoms": [
+      "i",
+      "d",
+      "c",
+      "l",
+      "p",
+      "r",
+      "q",
+      "y",
+      "f",
+      "s"
+    ],
+    "overall_pcts": {
+      "THERMAL": 2.0,
+      "CONTAINMENT": 24.4,
+      "FLOW": 5.5,
+      "MONITORING": 5.6,
+      "OPERATION": 8.4,
+      "STAGING": 22.7,
+      "MARKING": 23.8,
+      "TRANSITION": 4.4
+    },
+    "verdict": "Chi2=5601.4, V=0.503 (SIGNIFICANT). Different headless initial atoms DO predict different categories."
+  },
+  "test3_positional": {
+    "headed_ref": {
+      "n": 12676,
+      "mean_pos": 0.492,
+      "initial_rate": 9.3,
+      "final_rate": 9.2,
+      "par_initial_rate": 2.1
+    },
+    "atom_profiles": {
+      "i": {
+        "n": 894,
+        "mean_pos": 0.419,
+        "initial_rate": 29.3,
+        "final_rate": 8.8,
+        "par_initial_rate": 1.3,
+        "ks_stat": 0.199,
+        "ks_p": 2.0241530714208824e-29
+      },
+      "d": {
+        "n": 805,
+        "mean_pos": 0.568,
+        "initial_rate": 8.1,
+        "final_rate": 16.9,
+        "par_initial_rate": 4.3,
+        "ks_stat": 0.111,
+        "ks_p": 1.4368339803229739e-08
+      },
+      "c": {
+        "n": 612,
+        "mean_pos": 0.523,
+        "initial_rate": 2.9,
+        "final_rate": 8.2,
+        "par_initial_rate": 0.5,
+        "ks_stat": 0.074,
+        "ks_p": 0.003154078810883566
+      },
+      "l": {
+        "n": 428,
+        "mean_pos": 0.473,
+        "initial_rate": 27.3,
+        "final_rate": 19.4,
+        "par_initial_rate": 12.6,
+        "ks_stat": 0.167,
+        "ks_p": 1.486618174229899e-10
+      },
+      "p": {
+        "n": 157,
+        "mean_pos": 0.517,
+        "initial_rate": 10.2,
+        "final_rate": 8.3,
+        "par_initial_rate": 8.3,
+        "ks_stat": 0.101,
+        "ks_p": 0.07662527064391056
+      },
+      "r": {
+        "n": 122,
+        "mean_pos": 0.67,
+        "initial_rate": 22.1,
+        "final_rate": 44.3,
+        "par_initial_rate": 11.5,
+        "ks_stat": 0.344,
+        "ks_p": 2.60657767849611e-13
+      },
+      "q": {
+        "n": 104,
+        "mean_pos": 0.478,
+        "initial_rate": 11.5,
+        "final_rate": 10.6,
+        "par_initial_rate": 1.9,
+        "ks_stat": 0.078,
+        "ks_p": 0.5319225371293657
+      },
+      "y": {
+        "n": 71,
+        "mean_pos": 0.496,
+        "initial_rate": 22.5,
+        "final_rate": 14.1,
+        "par_initial_rate": 0.0,
+        "ks_stat": 0.133,
+        "ks_p": 0.1493048962187017
+      },
+      "f": {
+        "n": 44,
+        "mean_pos": 0.455,
+        "initial_rate": 6.8,
+        "final_rate": 9.1,
+        "par_initial_rate": 6.8,
+        "ks_stat": 0.162,
+        "ks_p": 0.18029670762013428
+      },
+      "s": {
+        "n": 32,
+        "mean_pos": 0.415,
+        "initial_rate": 40.6,
+        "final_rate": 34.4,
+        "par_initial_rate": 25.0,
+        "ks_stat": 0.257,
+        "ks_p": 0.023366941623306436
+      }
+    },
+    "pairwise_sig": 23,
+    "pairwise_total": 45,
+    "verdict": "23/45 atom pairs have significantly different positions."
+  },
+  "test4_prefix": {
+    "chi2": 6198.5,
+    "p": 0.0,
+    "cramers_v": 0.459,
+    "atom_profiles": {
+      "i": {
+        "n": 894,
+        "top_prefixes": {
+          "da": 479,
+          "sa": 174,
+          "ka": 105,
+          "ta": 93,
+          "so": 12,
+          "BARE": 8,
+          "do": 8,
+          "qo": 6,
+          "ok": 4,
+          "po": 3
+        },
+        "bare_rate": 0.9
+      },
+      "d": {
+        "n": 805,
+        "top_prefixes": {
+          "ch": 157,
+          "BARE": 150,
+          "te": 83,
+          "sh": 69,
+          "ke": 56,
+          "ol": 32,
+          "ot": 32,
+          "tch": 28,
+          "pch": 27,
+          "ok": 24
+        },
+        "bare_rate": 18.6
+      },
+      "c": {
+        "n": 612,
+        "top_prefixes": {
+          "ch": 326,
+          "sh": 118,
+          "BARE": 96,
+          "qo": 41,
+          "ol": 4,
+          "to": 4,
+          "lch": 3,
+          "or": 3,
+          "lsh": 2,
+          "sch": 2
+        },
+        "bare_rate": 15.7
+      },
+      "l": {
+        "n": 428,
+        "top_prefixes": {
+          "BARE": 103,
+          "qo": 83,
+          "da": 60,
+          "so": 49,
+          "po": 45,
+          "to": 20,
+          "sa": 15,
+          "do": 14,
+          "ko": 11,
+          "ka": 8
+        },
+        "bare_rate": 24.1
+      },
+      "p": {
+        "n": 157,
+        "top_prefixes": {
+          "qo": 111,
+          "BARE": 17,
+          "ch": 14,
+          "ol": 12,
+          "al": 2,
+          "lch": 1
+        },
+        "bare_rate": 10.8
+      },
+      "r": {
+        "n": 122,
+        "top_prefixes": {
+          "BARE": 48,
+          "da": 31,
+          "ka": 11,
+          "ta": 7,
+          "po": 5,
+          "sa": 4,
+          "do": 3,
+          "ko": 3,
+          "qo": 3,
+          "to": 3
+        },
+        "bare_rate": 39.3
+      },
+      "q": {
+        "n": 104,
+        "top_prefixes": {
+          "BARE": 102,
+          "qo": 1,
+          "ol": 1
+        },
+        "bare_rate": 98.1
+      },
+      "y": {
+        "n": 71,
+        "top_prefixes": {
+          "BARE": 48,
+          "ch": 7,
+          "ot": 4,
+          "ok": 3,
+          "qo": 2,
+          "sh": 2,
+          "sa": 1,
+          "yk": 1,
+          "dch": 1,
+          "te": 1
+        },
+        "bare_rate": 67.6
+      },
+      "f": {
+        "n": 44,
+        "top_prefixes": {
+          "qo": 27,
+          "BARE": 8,
+          "ol": 6,
+          "al": 2,
+          "ch": 1
+        },
+        "bare_rate": 18.2
+      },
+      "s": {
+        "n": 32,
+        "top_prefixes": {
+          "BARE": 11,
+          "ch": 5,
+          "pch": 3,
+          "sh": 2,
+          "ol": 2,
+          "so": 2,
+          "po": 2,
+          "ke": 2,
+          "ot": 1,
+          "da": 1
+        },
+        "bare_rate": 34.4
+      }
+    },
+    "headed_bare_rate": 19.4,
+    "da_universal": false,
+    "verdict": "V=0.459. da enrichment universal: False. Some atoms prefer different channels."
+  },
+  "test5_suffix": {
+    "chi2": 3645.2,
+    "p": 0.0,
+    "cramers_v": 0.352,
+    "headless_bare_pct": 52.9,
+    "headed_bare_pct": 65.0,
+    "atom_profiles": {
+      "i": {
+        "n": 894,
+        "bare_rate": 93.2,
+        "top_suffixes": {
+          "BARE": 833,
+          "dy": 9,
+          "al": 7,
+          "ol": 7,
+          "hy": 7,
+          "y": 5,
+          "ar": 5,
+          "am": 4
+        }
+      },
+      "d": {
+        "n": 805,
+        "bare_rate": 85.1,
+        "top_suffixes": {
+          "BARE": 685,
+          "r": 23,
+          "dy": 22,
+          "edy": 13,
+          "s": 7,
+          "hy": 6,
+          "ly": 5,
+          "ey": 5
+        }
+      },
+      "c": {
+        "n": 612,
+        "bare_rate": 3.8,
+        "top_suffixes": {
+          "hy": 330,
+          "ey": 69,
+          "edy": 59,
+          "dy": 50,
+          "BARE": 23,
+          "al": 11,
+          "eey": 10,
+          "ol": 9
+        }
+      },
+      "l": {
+        "n": 428,
+        "bare_rate": 22.7,
+        "top_suffixes": {
+          "BARE": 97,
+          "edy": 88,
+          "ey": 30,
+          "dy": 26,
+          "hy": 24,
+          "eey": 20,
+          "ain": 19,
+          "aiin": 17
+        }
+      },
+      "p": {
+        "n": 157,
+        "bare_rate": 3.2,
+        "top_suffixes": {
+          "edy": 46,
+          "dy": 26,
+          "hy": 14,
+          "ar": 10,
+          "ey": 9,
+          "s": 7,
+          "eey": 7,
+          "r": 6
+        }
+      },
+      "r": {
+        "n": 122,
+        "bare_rate": 36.9,
+        "top_suffixes": {
+          "BARE": 45,
+          "r": 12,
+          "hy": 11,
+          "y": 9,
+          "s": 7,
+          "dy": 7,
+          "aiin": 6,
+          "edy": 5
+        }
+      },
+      "q": {
+        "n": 104,
+        "bare_rate": 19.2,
+        "top_suffixes": {
+          "BARE": 20,
+          "edy": 14,
+          "ar": 11,
+          "hy": 10,
+          "eey": 8,
+          "dy": 6,
+          "aiin": 6,
+          "y": 6
+        }
+      },
+      "y": {
+        "n": 71,
+        "bare_rate": 9.9,
+        "top_suffixes": {
+          "y": 12,
+          "edy": 8,
+          "BARE": 7,
+          "aiin": 7,
+          "ar": 6,
+          "or": 6,
+          "ey": 5,
+          "dy": 5
+        }
+      },
+      "f": {
+        "n": 44,
+        "bare_rate": 6.8,
+        "top_suffixes": {
+          "edy": 13,
+          "dy": 5,
+          "al": 4,
+          "ey": 4,
+          "BARE": 3,
+          "y": 2,
+          "hy": 2,
+          "eol": 2
+        }
+      },
+      "s": {
+        "n": 32,
+        "bare_rate": 37.5,
+        "top_suffixes": {
+          "BARE": 12,
+          "s": 3,
+          "y": 3,
+          "edy": 2,
+          "ly": 2,
+          "ar": 2,
+          "aiin": 1,
+          "g": 1
+        }
+      }
+    },
+    "verdict": "Headless bare=52.9% vs headed=65.0%. V=0.352. MORE suffix-rich."
+  },
+  "test6_length": {
+    "headed_mean": 2.76,
+    "headless_mean": 2.65,
+    "delta": -0.11,
+    "atom_profiles": {
+      "i": {
+        "n": 894,
+        "mean": 2.68,
+        "median": 3,
+        "min": 2,
+        "max": 6
+      },
+      "d": {
+        "n": 805,
+        "mean": 2.18,
+        "median": 2,
+        "min": 2,
+        "max": 6
+      },
+      "c": {
+        "n": 612,
+        "mean": 2.66,
+        "median": 2,
+        "min": 2,
+        "max": 7
+      },
+      "l": {
+        "n": 428,
+        "mean": 2.8,
+        "median": 3,
+        "min": 2,
+        "max": 7
+      },
+      "p": {
+        "n": 157,
+        "mean": 3.43,
+        "median": 3,
+        "min": 2,
+        "max": 7
+      },
+      "r": {
+        "n": 122,
+        "mean": 2.84,
+        "median": 2,
+        "min": 2,
+        "max": 6
+      },
+      "q": {
+        "n": 104,
+        "mean": 3.37,
+        "median": 3,
+        "min": 2,
+        "max": 7
+      },
+      "y": {
+        "n": 71,
+        "mean": 2.86,
+        "median": 2,
+        "min": 2,
+        "max": 7
+      },
+      "f": {
+        "n": 44,
+        "mean": 3.32,
+        "median": 3,
+        "min": 2,
+        "max": 6
+      },
+      "s": {
+        "n": 32,
+        "mean": 2.62,
+        "median": 2,
+        "min": 2,
+        "max": 5
+      }
+    },
+    "verdict": "Headless mean=2.65, headed mean=2.76. Delta=-0.11 chars."
+  },
+  "test7_regime": {
+    "within_chi2": 240.9,
+    "within_p": 3.2820898476676334e-36,
+    "within_v": 0.157,
+    "vs_headed_chi2": 39.8,
+    "vs_headed_p": 1.194751601411943e-08,
+    "vs_headed_v": 0.05,
+    "atom_profiles": {
+      "i": {
+        "n": 894,
+        "regime_pcts": {
+          "REGIME_1": 53.5,
+          "REGIME_2": 12.4,
+          "REGIME_3": 26.2,
+          "REGIME_4": 7.9
+        }
+      },
+      "d": {
+        "n": 805,
+        "regime_pcts": {
+          "REGIME_1": 40.4,
+          "REGIME_2": 14.8,
+          "REGIME_3": 28.6,
+          "REGIME_4": 16.3
+        }
+      },
+      "c": {
+        "n": 612,
+        "regime_pcts": {
+          "REGIME_1": 56.9,
+          "REGIME_2": 8.5,
+          "REGIME_3": 23.9,
+          "REGIME_4": 10.8
+        }
+      },
+      "l": {
+        "n": 428,
+        "regime_pcts": {
+          "REGIME_1": 65.4,
+          "REGIME_2": 5.4,
+          "REGIME_3": 22.2,
+          "REGIME_4": 7.0
+        }
+      },
+      "p": {
+        "n": 157,
+        "regime_pcts": {
+          "REGIME_1": 31.2,
+          "REGIME_2": 10.8,
+          "REGIME_3": 50.3,
+          "REGIME_4": 7.6
+        }
+      },
+      "r": {
+        "n": 122,
+        "regime_pcts": {
+          "REGIME_1": 42.6,
+          "REGIME_2": 4.1,
+          "REGIME_3": 41.0,
+          "REGIME_4": 12.3
+        }
+      },
+      "q": {
+        "n": 104,
+        "regime_pcts": {
+          "REGIME_1": 68.3,
+          "REGIME_2": 3.8,
+          "REGIME_3": 21.2,
+          "REGIME_4": 6.7
+        }
+      },
+      "y": {
+        "n": 71,
+        "regime_pcts": {
+          "REGIME_1": 25.4,
+          "REGIME_2": 21.1,
+          "REGIME_3": 29.6,
+          "REGIME_4": 23.9
+        }
+      },
+      "f": {
+        "n": 44,
+        "regime_pcts": {
+          "REGIME_1": 29.5,
+          "REGIME_2": 22.7,
+          "REGIME_3": 38.6,
+          "REGIME_4": 9.1
+        }
+      },
+      "s": {
+        "n": 32,
+        "regime_pcts": {
+          "REGIME_1": 43.8,
+          "REGIME_2": 3.1,
+          "REGIME_3": 18.8,
+          "REGIME_4": 34.4
+        }
+      }
+    },
+    "headed_regime": {
+      "REGIME_1": 50.4,
+      "REGIME_2": 8.7,
+      "REGIME_3": 31.7,
+      "REGIME_4": 9.3
+    },
+    "verdict": "Within-headless V=0.157. Headless-vs-headed V=0.050."
+  },
+  "test8_ordering": {
+    "headless_testable": 464,
+    "headless_compliant": 287,
+    "headless_compliance_rate": 61.9,
+    "headed_testable": 472,
+    "headed_compliant": 331,
+    "headed_compliance_rate": 70.1,
+    "violation_examples": [
+      [
+        "cph",
+        36
+      ],
+      [
+        "dai",
+        23
+      ],
+      [
+        "cp",
+        10
+      ],
+      [
+        "cfh",
+        9
+      ],
+      [
+        "cpho",
+        3
+      ]
+    ],
+    "verdict": "Headless compliance=61.9%, headed=70.1%. SAME grammar."
+  },
+  "test9_ht_association": {
+    "headless_ht_pct": 3.2,
+    "headed_ht_pct": 1.7,
+    "ratio": 1.83,
+    "atom_profiles": {
+      "i": {
+        "n": 894,
+        "ht_rate": 0.0,
+        "classified_rate": 100.0
+      },
+      "d": {
+        "n": 805,
+        "ht_rate": 0.1,
+        "classified_rate": 99.9
+      },
+      "c": {
+        "n": 612,
+        "ht_rate": 0.0,
+        "classified_rate": 100.0
+      },
+      "l": {
+        "n": 428,
+        "ht_rate": 0.0,
+        "classified_rate": 100.0
+      },
+      "p": {
+        "n": 157,
+        "ht_rate": 0.0,
+        "classified_rate": 100.0
+      },
+      "r": {
+        "n": 122,
+        "ht_rate": 0.0,
+        "classified_rate": 100.0
+      },
+      "q": {
+        "n": 104,
+        "ht_rate": 100.0,
+        "classified_rate": 0.0
+      },
+      "y": {
+        "n": 71,
+        "ht_rate": 0.0,
+        "classified_rate": 100.0
+      },
+      "f": {
+        "n": 44,
+        "ht_rate": 0.0,
+        "classified_rate": 100.0
+      },
+      "s": {
+        "n": 32,
+        "ht_rate": 0.0,
+        "classified_rate": 100.0
+      }
+    },
+    "verdict": "Headless HT=3.2% vs headed HT=1.7%. Headless are MORE HT-enriched."
+  },
+  "test10_context": {
+    "n_total": 3288,
+    "first_in_line_pct": 15.7,
+    "last_in_line_pct": 13.2,
+    "predecessor_cats": {
+      "MARKING": 268,
+      "OPERATION": 446,
+      "CONTAINMENT": 180,
+      "THERMAL": 598,
+      "TRANSITION": 427,
+      "STAGING": 330,
+      "FLOW": 428,
+      "MONITORING": 62,
+      "UNKNOWN": 32
+    },
+    "successor_cats": {
+      "OPERATION": 392,
+      "CONTAINMENT": 166,
+      "FLOW": 543,
+      "THERMAL": 615,
+      "STAGING": 376,
+      "UNKNOWN": 28,
+      "MONITORING": 39,
+      "MARKING": 272,
+      "TRANSITION": 422
+    },
+    "predecessor_types": {
+      "headed": 1504,
+      "headless": 468,
+      "single": 799
+    },
+    "successor_types": {
+      "headed": 1508,
+      "headless": 468,
+      "single": 877
+    },
+    "self_sequencing_pct": 16.9,
+    "verdict": "First-in-line=15.7%, last-in-line=13.2%. Self-sequencing=16.9%."
+  }
+}

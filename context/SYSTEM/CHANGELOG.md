@@ -4,6 +4,24 @@
 
 ---
 
+## Version 5.04.102 (2026-03-04) - Phase 509: Headless Compound Functional Grammar
+
+### Summary
+
+Phase 509 characterizes the headless compound subgrammar (20.6% of compound tokens, 3,288 tokens, 467 types). The initial atom of a headless compound acts as a pseudo-HEAD, creating atom-specific functional domains with high discriminative power (category V=0.503, PREFIX channel V=0.459). Seven initial atoms show distinct profiles: d=CONTAINMENT 84%, p=MARKING 92%, f=MARKING 91%, i=STAGING 66%, r=FLOW 61%, c=OPERATION 32% (most diverse), l=STAGING 28% (most versatile). A stark suffix bifurcation separates binary operations (d/i bare 85-93%) from parametric operations (c/p/f suffixed 93-97%). The da-PREFIX enrichment reported in C1394 T8 is driven specifically by i-initial compounds (iin, in), not headless compounds generally. Modifier ordering follows the same grammar (61.9% vs 70.1% headed). q-initial (104 tokens) is a separate non-grammar artifact.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1397: headless compound functional grammar (10 tests, V=0.503 category, pseudo-HEAD, suffix bifurcation) |
+| **ADDED** | `phases/HEADLESS_COMPOUND_GRAMMAR/scripts/headless_compound_grammar.py` |
+| **ADDED** | `phases/HEADLESS_COMPOUND_GRAMMAR/results/headless_compound_grammar.json` |
+| **UPDATED** | BCSC v3.18 — headless_compounds section rewritten with per-atom profiles |
+| **UPDATED** | INDEX.md — +1 constraint (1241 total) |
+
+---
+
 ## Version 5.04.101 (2026-03-04) - Phase 508: Prep PREFIX Profiling
 
 ### Summary

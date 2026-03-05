@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1240 validated constraints | **Version:** 5.04 | **Date:** 2026-03-04
+**Total:** 1241 validated constraints | **Version:** 5.04 | **Date:** 2026-03-04
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4532,6 +4532,26 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T6: Paragraph position — DIFFERENTIATED (pch 41.2% par-initial vs lch 0%; 8/10 KS pairs significant)
 - T7: Section distribution — DIFFERENTIATED (lch 40% Section B; chi2=127.3, V=0.168)
 - T8: Bare ch comparison — DIFFERENTIATED (27/35 dimension-prefix pairs significant; pch/tch diverge on all 7)
+
+---
+
+### Headless Compound Functional Grammar (C1397) -- Phase: HEADLESS_COMPOUND_GRAMMAR (Phase 509)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1397 | headless compound functional grammar | 2 | B, MIDDLE, headless, grammar, composition | Headless compounds (20.6%, 3,288 tokens) are NOT homogeneous infrastructure. Initial atom acts as pseudo-HEAD: d=CONTAINMENT 84%, p=MARKING 92%, f=MARKING 91%, i=STAGING 66%, r=FLOW 61%. V=0.503 category, V=0.459 PREFIX channels. Suffix bifurcation: d/i bare (85-93%) vs c/p/f suffixed (93-97%). da enrichment is i-initial specific, not generic headless. Same modifier ordering (61.9% vs 70.1%). q-initial (104 tokens) is non-grammar artifact. |
+
+**Phase 509 findings (Headless Compound Grammar, 10 tests):**
+- T1: Census — 467 types, 3,288 tokens. All 6 MOD atoms lead; 5/6 TERM atoms lead (n absent). MOD-initial 77.4%, TERM-initial 19.4%
+- T2: Functional profiles — DIFFERENTIATED (chi2=5,601, V=0.503). d=84% CONTAINMENT, p=92% MARKING, f=91% MARKING, i=66% STAGING, r=61% FLOW, c=32% OPERATION (most diverse), l=28% STAGING (most versatile)
+- T3: Positional — DIFFERENTIATED (23/45 KS pairs). r extreme line-final (44.3%), i line-initial (29.3%), c interior-locked (2.9% initial)
+- T4: PREFIX channels — DIFFERENTIATED (chi2=6,199, V=0.459). i→da (54%), c→ch (53%), p→qo (71%), f→qo (61%), r→BARE (39%). da enrichment is i-initial specific
+- T5: Suffix bifurcation — DIFFERENTIATED (chi2=3,645, V=0.352). d/i bare (85-93%), c/p/f suffixed (93-97%). Binary ops vs parametric ops
+- T6: Length — headless 2.65 vs headed 2.76 chars (slightly shorter)
+- T7: REGIME — MODERATE (V=0.157). l=65% R1, p=50% R3, s=34% R4
+- T8: Modifier ordering — SAME_GRAMMAR (61.9% vs 70.1%). c atom is primary violator
+- T9: HT association — q-initial only (100% HT). All other headless types 0.0-0.1% HT
+- T10: Sequential context — embedded in normal sequences (54.3% preceded by headed, 16.9% headless→headless)
 
 ---
 
