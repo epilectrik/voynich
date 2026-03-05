@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,259 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,265 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -64,7 +64,7 @@ Every Currier B token is compositional. It decomposes into parts that each carry
   - **TERM** (y, l, r, h, m, n) sets the exit condition — r=respond (99% FLOW), y=end (56% OPERATION), h=watch (transparent — lets HEAD+MODS determine category at V=0.988)
   - The frame (HEAD+TERM) predicts 64% of operational category; modifiers shift the remaining 36%. Approximately 30 core MIDDLEs handle 67.6% of all tokens, with a long tail of ~1,150 rarer variants. Headless compounds (20.6% of tokens) form a specialized subgrammar for infrastructure operations at boundary positions.
 - **SUFFIX** is a parallel compositional domain using a 16-atom subset of MIDDLE's inventory (missing k, t, p, f, c — the action-specific atoms). Like MIDDLE, suffix decomposes as **HEAD + TERM**: the first atom selects operational category (V=0.277), the last atom selects line position/scope (R²=0.059). The same atom character carries different operational information in suffix vs MIDDLE position — the alphabet is shared but the semantics are position-dependent (C1408-C1409). Two alternating suffix modes cycle within every qualifying paragraph (C1229): Mode A uses THERMAL/MONITORING atoms {d, e, h, y} (specification lines), Mode B uses STAGING/FLOW atoms {a, i, l, m, n, o, r, s} (continuation lines). The modes interleave at 80%, creating an oscillating specification→continuation rhythm within the execution envelope (C1410).
-- **ARTICULATOR** is an optional refinement layer that doesn't change the core meaning.
+- **ARTICULATOR** (q, y, s, d) is an optional line-position marker present on 4.41% of B tokens (C1416-C1421). Articulators are 6.48x enriched at line-initial position, strongly select for e-HEAD (stability) MIDDLEs while avoiding k-HEAD (thermal), and suppress suffix attachment (0.34–0.55x normal rate). Critically, they add zero information about operational category beyond what MIDDLE already provides (conditional MI = 0.000 bits) — they are orthogonal to the PREFIX→MIDDLE→SUFFIX content chain. The articulator marks *where* in the line a token sits, not *what* it does. There are 29 forbidden ARTICULATOR × PREFIX combinations, confirming PREFIX-locked deployment.
 
 ### The 49 Instruction Classes
 

@@ -1,0 +1,452 @@
+{
+  "T1_inventory": {
+    "total_tokens": 23096,
+    "articulated_count": 1019,
+    "articulated_rate": 0.0441,
+    "per_articulator": {
+      "NONE": 22077,
+      "y": 522,
+      "d": 118,
+      "l": 116,
+      "r": 71,
+      "p": 55,
+      "t": 53,
+      "k": 36,
+      "s": 34,
+      "f": 14
+    },
+    "per_section": {
+      "BIO": {
+        "total": 6850,
+        "articulated": 249,
+        "rate": 0.0364
+      },
+      "COSMO": {
+        "total": 1480,
+        "articulated": 123,
+        "rate": 0.0831
+      },
+      "HERBAL": {
+        "total": 3433,
+        "articulated": 184,
+        "rate": 0.0536
+      },
+      "STARS": {
+        "total": 10671,
+        "articulated": 427,
+        "rate": 0.04
+      },
+      "TEXT": {
+        "total": 662,
+        "articulated": 36,
+        "rate": 0.0544
+      }
+    },
+    "per_position": {
+      "initial": {
+        "total": 2544,
+        "articulated": 439,
+        "rate": 0.1726
+      },
+      "medial": {
+        "total": 18095,
+        "articulated": 482,
+        "rate": 0.0266
+      },
+      "final": {
+        "total": 2457,
+        "articulated": 98,
+        "rate": 0.0399
+      }
+    }
+  },
+  "T2_prefix_selectivity": {
+    "cramers_v": 0.1957,
+    "p_value": 1e-300,
+    "n": 23096,
+    "per_articulator_top_prefixes": {
+      "p": {
+        "sh": 30,
+        "da": 9,
+        "ar": 6,
+        "al": 5,
+        "yk": 2
+      },
+      "NONE": {
+        "qo": 4066,
+        "BARE": 3864,
+        "ch": 3355,
+        "sh": 2022,
+        "ok": 1464
+      },
+      "y": {
+        "ch": 137,
+        "te": 113,
+        "ta": 87,
+        "sh": 68,
+        "tch": 36
+      },
+      "t": {
+        "sh": 50,
+        "da": 2,
+        "do": 1
+      },
+      "d": {
+        "sh": 85,
+        "yk": 13,
+        "ka": 6,
+        "ke": 4,
+        "lch": 3
+      },
+      "k": {
+        "sh": 34,
+        "sch": 1,
+        "sa": 1
+      },
+      "l": {
+        "ol": 19,
+        "te": 17,
+        "pch": 13,
+        "da": 12,
+        "ta": 11
+      },
+      "f": {
+        "ol": 6,
+        "sh": 4,
+        "ar": 2,
+        "se": 1,
+        "de": 1
+      },
+      "s": {
+        "sh": 18,
+        "ka": 5,
+        "yk": 3,
+        "ke": 2,
+        "se": 1
+      },
+      "r": {
+        "sh": 18,
+        "ar": 16,
+        "ol": 11,
+        "al": 9,
+        "or": 7
+      }
+    }
+  },
+  "T3_middle_selectivity": {
+    "middle_head": {
+      "cramers_v": 0.0888,
+      "p_value": 3.176605113885608e-77,
+      "n": 16819
+    },
+    "middle_term": {
+      "cramers_v": 0.0644,
+      "p_value": 2.5435873707410457e-39,
+      "n": 12076
+    },
+    "mi_art_head": 0.0267,
+    "cmi_art_head_given_prefix": 0.0085,
+    "prefix_mediation_pct": 68.3
+  },
+  "T4_suffix_selectivity": {
+    "suffix_presence": {
+      "p": {
+        "rate": 0.5818,
+        "n": 55
+      },
+      "NONE": {
+        "rate": 0.4926,
+        "n": 22077
+      },
+      "y": {
+        "rate": 0.272,
+        "n": 522
+      },
+      "t": {
+        "rate": 0.3585,
+        "n": 53
+      },
+      "d": {
+        "rate": 0.1864,
+        "n": 118
+      },
+      "k": {
+        "rate": 0.1667,
+        "n": 36
+      },
+      "l": {
+        "rate": 0.1983,
+        "n": 116
+      },
+      "f": {
+        "rate": 0.3571,
+        "n": 14
+      },
+      "s": {
+        "rate": 0.2353,
+        "n": 34
+      },
+      "r": {
+        "rate": 0.2535,
+        "n": 71
+      }
+    },
+    "suffix_identity": {
+      "cramers_v": 0.0613,
+      "p_value": 0.0033419709592299096,
+      "n": 142
+    }
+  },
+  "T5_category_selectivity": {
+    "cramers_v": 0.0418,
+    "p_value": 9.126392394875127e-28,
+    "n": 22760,
+    "mi_raw": 0.0085,
+    "cmi_given_prefix": 0.0199,
+    "cmi_given_middle": 0.0,
+    "prefix_mediation_pct": -135.3,
+    "middle_mediation_pct": 100.0
+  },
+  "T6_information_chain": {
+    "pairwise_mi": {
+      "I(ART;PREFIX)": 0.1108,
+      "I(ART;MIDDLE)": 0.06,
+      "I(ART;SUFFIX)": 0.0153,
+      "I(PREFIX;MIDDLE)": 1.5367,
+      "I(PREFIX;SUFFIX)": 0.29,
+      "I(MIDDLE;SUFFIX)": 1.6656
+    },
+    "cmi_middle_art_given_prefix": 0.0604,
+    "cmi_suffix_art_given_middle": 0.0189
+  },
+  "T7_line_position": {
+    "cramers_v_position": 0.0915,
+    "p_value": 8.76564555224182e-115,
+    "quintile_rates": {
+      "0": {
+        "total": 5028,
+        "articulated": 490,
+        "rate": 0.0975
+      },
+      "1": {
+        "total": 4186,
+        "articulated": 115,
+        "rate": 0.0275
+      },
+      "2": {
+        "total": 4135,
+        "articulated": 116,
+        "rate": 0.0281
+      },
+      "3": {
+        "total": 4186,
+        "articulated": 106,
+        "rate": 0.0253
+      },
+      "4": {
+        "total": 5561,
+        "articulated": 192,
+        "rate": 0.0345
+      }
+    }
+  },
+  "T8_paragraph_structure": {
+    "header_art_rate": 0.1681,
+    "body_art_rate": 0.0409,
+    "header_body_ratio": 4.109,
+    "par_final_rate": 0.0326,
+    "non_par_final_rate": 0.0444,
+    "n_header": 583,
+    "n_body": 22513
+  },
+  "T9_combinatorial_constraints": {
+    "forbidden_art_prefix": [
+      [
+        "d",
+        "BARE",
+        19.7
+      ],
+      [
+        "d",
+        "ch",
+        17.8
+      ],
+      [
+        "d",
+        "da",
+        5.5
+      ],
+      [
+        "d",
+        "ok",
+        7.5
+      ],
+      [
+        "d",
+        "ot",
+        7.4
+      ],
+      [
+        "d",
+        "qo",
+        20.8
+      ],
+      [
+        "k",
+        "BARE",
+        6.0
+      ],
+      [
+        "k",
+        "ch",
+        5.4
+      ],
+      [
+        "k",
+        "qo",
+        6.3
+      ],
+      [
+        "l",
+        "BARE",
+        19.4
+      ],
+      [
+        "l",
+        "ch",
+        17.5
+      ],
+      [
+        "l",
+        "qo",
+        20.4
+      ],
+      [
+        "l",
+        "sh",
+        11.7
+      ],
+      [
+        "p",
+        "BARE",
+        9.2
+      ],
+      [
+        "p",
+        "ch",
+        8.3
+      ],
+      [
+        "p",
+        "qo",
+        9.7
+      ],
+      [
+        "r",
+        "BARE",
+        11.9
+      ],
+      [
+        "r",
+        "ch",
+        10.7
+      ],
+      [
+        "r",
+        "qo",
+        12.5
+      ],
+      [
+        "s",
+        "BARE",
+        5.7
+      ],
+      [
+        "s",
+        "ch",
+        5.1
+      ],
+      [
+        "s",
+        "qo",
+        6.0
+      ],
+      [
+        "t",
+        "BARE",
+        8.9
+      ],
+      [
+        "t",
+        "ch",
+        8.0
+      ],
+      [
+        "t",
+        "qo",
+        9.3
+      ],
+      [
+        "y",
+        "BARE",
+        87.3
+      ],
+      [
+        "y",
+        "ka",
+        5.4
+      ],
+      [
+        "y",
+        "ke",
+        5.9
+      ],
+      [
+        "y",
+        "yk",
+        7.1
+      ]
+    ],
+    "n_forbidden_art_prefix": 29,
+    "n_extreme_enrichment": 12,
+    "forbidden_art_head": [
+      [
+        "d",
+        "k",
+        17.9
+      ],
+      [
+        "d",
+        "t",
+        5.3
+      ],
+      [
+        "k",
+        "k",
+        4.4
+      ],
+      [
+        "t",
+        "k",
+        7.6
+      ]
+    ],
+    "n_forbidden_art_head": 4
+  },
+  "T10_q_deep_dive": {
+    "q_not_canonical_articulator": true,
+    "qo_token_count": 4069,
+    "o_base_token_count": 3972,
+    "articulator_counts": {
+      "y": 522,
+      "k": 36,
+      "d": 118,
+      "s": 34,
+      "l": 116,
+      "p": 55,
+      "f": 14,
+      "r": 71,
+      "t": 53
+    }
+  }
+}

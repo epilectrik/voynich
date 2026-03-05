@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1259 validated constraints | **Version:** 5.07 | **Date:** 2026-03-05
+**Total:** 1265 validated constraints | **Version:** 5.08 | **Date:** 2026-03-05
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4696,6 +4696,31 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T7: BASE V=0.494 vs modifier V=0.295 for MIDDLE HEAD; base dominates (confirms C1219)
 - T8: MIDDLE reduces suffix entropy 6.2x more than PREFIX; MIDDLE TERM 2.5x more than HEAD
 - T9: 83 depleted PREFIX x HEAD pairs; 2 absolute TERM x SUF_HEAD prohibitions (l/r x e = 0)
+
+### ARTICULATOR Deep Dive (C1416-C1421) -- Phase: ARTICULATOR_DEEP_DIVE (Phase 517)
+
+> **Summary:** Comprehensive analysis of the ARTICULATOR slot `[ARTICULATOR] + PREFIX + MIDDLE + [SUFFIX]`. Articulators are rare (4.41% of B tokens), dominated by y (51.2%), and concentrate at line-initial position (17.3% vs 2.7% medial = 6.48x). They categorically exclude BARE tokens and qo-PREFIX, lock to sh-family PREFIXes, select e-HEAD MIDDLEs (76-90% vs 40% baseline), and suppress suffix attachment (0.34-0.55x). Category information is 100% MIDDLE-mediated (I(ART;CAT|MIDDLE) = 0.000 bits). ARTICULATOR is a peripheral line-opening specification marker, not a fourth independent morphological axis.
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1416 | ARTICULATOR rate and inventory | 2 | B | 4.41% of B tokens (1,019/23,096). y=51.2%, d=11.6%, l=11.4%, r=7.0%, p=5.4%, t=5.2%, k=3.5%, s=3.3%, f=1.4%. Section-dependent: COSMO 8.31% highest, BIO 3.64% lowest. |
+| 1417 | ARTICULATOR line-initial concentration | 2 | B, line, position | 17.3% at line-initial vs 2.7% medial (6.48x). Paragraph headers 4.11x enriched. Two sub-groups: INITIAL (d,k,p,s,t,y at Q0 2.4-4.2x) and FINAL (l,r at Q4 2.4-2.6x). V=0.092, p < 1e-115. |
+| 1418 | ARTICULATOR PREFIX-locked with BARE/qo exclusion | 2 | B, PREFIX, ARTICULATOR | 29 forbidden ART x PREFIX pairs. BARE: 0/3,864 (zero). qo: 3/4,069 (0.07%). sh-locked: t 94%, k 94%, d 72%. y distributes across ch/te/ta/sh. V=0.196, p < 1e-300. |
+| 1419 | ARTICULATOR e-HEAD selectivity and k-HEAD exclusion | 2 | B, MIDDLE, ARTICULATOR, atom | 76-90% e-initial MIDDLE vs 40% baseline (1.9-2.3x). k-HEAD excluded from d,k,t (4 forbidden pairs). PREFIX mediates 68.3%. Articulators mark cooling not heating. |
+| 1420 | ARTICULATOR suffix suppression | 2 | B, SUFFIX, ARTICULATOR | Suffix rate 16.7-27.2% vs 49.3% baseline (0.34-0.55x). Only p matches baseline (58.2%). Specification context suppresses execution-mode marking. |
+| 1421 | ARTICULATOR category full MIDDLE mediation | 2 | B, ARTICULATOR, category | I(ART;CAT\|MIDDLE) = 0.000 bits. Raw V=0.042 entirely MIDDLE-mediated. MI: ART-PREFIX 0.111 > ART-MIDDLE 0.060 > ART-SUFFIX 0.015 bits, all 10-100x below main chain. |
+
+**Phase 517 findings (ARTICULATOR Deep Dive, 10 tests):**
+- T1: 4.41% rate, y dominant, COSMO 2.3x BIO rate
+- T2: V(ART,PREFIX)=0.196; BARE/qo categorically excluded; sh-family dominates
+- T3: e-HEAD 76-90% vs 40% baseline; k-HEAD excluded; PREFIX mediates 68.3%
+- T4: Suffix rate 0.34-0.55x; p-articulator sole exception
+- T5: V(ART,CAT)=0.042; I(ART;CAT|MIDDLE) = 0.000 bits (full mediation)
+- T6: MI hierarchy ART-PREFIX 0.111 > ART-MIDDLE 0.060 > ART-SUFFIX 0.015 bits (10-100x below chain)
+- T7: Line-initial 17.3% vs 2.7% medial (6.48x); V=0.092 p<1e-115
+- T8: Paragraph headers 4.11x enriched; par-final depleted
+- T9: 29 forbidden ART x PREFIX pairs; 4 forbidden ART x HEAD pairs
+- T10: q is NOT an articulator; qo confirmed as PREFIX compound
 
 ---
 

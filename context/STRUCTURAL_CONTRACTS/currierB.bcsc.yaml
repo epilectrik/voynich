@@ -3,7 +3,7 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.25"
+  version: "3.26"
   date: "2026-03-05"
   status: "ACTIVE"
   layer_type: "grammar contract"
@@ -321,10 +321,11 @@ morphology:
     components:
       ARTICULATOR:
         required: false
-        count: "~9 forms"
-        function: "Optional refinement layer"
+        count: "9 forms (y, d, l, r, p, t, k, s, f)"
+        rate: "4.41% of B tokens"
+        function: "Line-initial specification marker — selects e-HEAD MIDDLEs, suppresses suffix, locks to sh-family PREFIXes"
         example: "y- in ychody"
-        provenance: "C267"
+        provenance: "C267, C1416, C1417, C1418, C1419, C1420, C1421"
       PREFIX:
         required: true  # Most tokens have a prefix; unprefixed tokens exist but are a specific category
         common_prefixes: ["qo", "ch", "sh", "da", "sa", "ok", "ot", "ol", "lk", "lch", "te", "pch", "tch"]
@@ -723,6 +724,35 @@ middle_instruction_encoding:
     absolute_prohibitions: "l-TERM x e-SUF_HEAD = 0, r-TERM x e-SUF_HEAD = 0"
     forbidden_prefix_head_pairs: 83
     provenance: "C1411, C1412, C1413, C1414, C1415"
+
+  # Added v3.26: ARTICULATOR deep dive (C1416-C1421)
+  articulator_architecture:
+    statement: "ARTICULATOR is a peripheral line-opening specification marker, not a fourth independent morphological axis"
+    rate: "4.41% of B tokens (1,019/23,096)"
+    inventory: "9 articulators: y (51.2%), d (11.6%), l (11.4%), r (7.0%), p (5.4%), t (5.2%), k (3.5%), s (3.3%), f (1.4%)"
+    line_initial_concentration: "17.3% at initial vs 2.7% medial (6.48x enrichment)"
+    paragraph_header_enrichment: "4.11x (16.8% vs 4.1%)"
+    positional_sub_groups:
+      INITIAL: {members: ["d", "k", "p", "s", "t", "y"], Q0_enrichment: "2.4-4.2x"}
+      FINAL: {members: ["l", "r"], Q4_enrichment: "2.4-2.6x"}
+    prefix_selectivity:
+      cramers_v: 0.196
+      bare_exclusion: "0/3,864 (categorical)"
+      qo_exclusion: "3/4,069 (0.07%)"
+      sh_locking: "t: 94%, k: 94%, d: 72%"
+      forbidden_pairs: 29
+    middle_selectivity:
+      e_head_enrichment: "76-90% vs 40% baseline (1.9-2.3x)"
+      k_head_exclusion: "4 forbidden ART x k-HEAD pairs"
+      prefix_mediation: "68.3%"
+    suffix_suppression: "0.34-0.55x baseline rate (16.7-27.2% vs 49.3%); p sole exception (58.2%)"
+    category_mediation: "I(ART;CAT|MIDDLE) = 0.000 bits — 100% MIDDLE-mediated"
+    information_hierarchy:
+      art_prefix_MI: "0.111 bits"
+      art_middle_MI: "0.060 bits"
+      art_suffix_MI: "0.015 bits"
+      main_chain_range: "0.290-1.666 bits (10-100x larger)"
+    provenance: "C1416, C1417, C1418, C1419, C1420, C1421"
 
   encoding_model: |
     TOKEN = PREFIX + MIDDLE + SUFFIX

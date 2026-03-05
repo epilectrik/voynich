@@ -4,6 +4,29 @@
 
 ---
 
+## Version 5.08.110 (2026-03-05) - Phase 517: ARTICULATOR Deep Dive
+
+### Summary
+
+Phase 517 provides the first comprehensive analysis of the ARTICULATOR slot in token morphology `[ARTICULATOR] + PREFIX + MIDDLE + [SUFFIX]`. Articulators are rare (4.41% of B tokens, 1,019/23,096), dominated by y (51.2%), and concentrate at line-initial position (17.3% vs 2.7% medial = 6.48x). They categorically exclude BARE tokens (0/3,864) and qo-PREFIX (3/4,069 = 0.07%), locking instead to sh-family PREFIXes (t: 94%, k: 94%, d: 72%). Articulated tokens overwhelmingly carry e-initial MIDDLEs (76-90% vs 40% baseline), with k-HEAD MIDDLEs categorically excluded. Suffix attachment is suppressed (0.34-0.55x baseline). Category information is 100% MIDDLE-mediated (I(ART;CAT|MIDDLE) = 0.000 bits). Two positional sub-groups: INITIAL articulators (d,k,p,s,t,y) and FINAL articulators (l,r). ARTICULATOR is a peripheral line-opening specification marker, not a fourth independent morphological axis.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1416: ARTICULATOR rate and inventory |
+| **ADDED** | C1417: ARTICULATOR line-initial concentration |
+| **ADDED** | C1418: ARTICULATOR PREFIX-locked with BARE/qo exclusion |
+| **ADDED** | C1419: ARTICULATOR e-HEAD selectivity and k-HEAD exclusion |
+| **ADDED** | C1420: ARTICULATOR suffix suppression |
+| **ADDED** | C1421: ARTICULATOR category full MIDDLE mediation |
+| **ADDED** | `phases/ARTICULATOR_DEEP_DIVE/scripts/articulator_deep_dive.py` |
+| **ADDED** | `phases/ARTICULATOR_DEEP_DIVE/results/articulator_deep_dive.json` |
+| **UPDATED** | BCSC v3.26 -- morphology section: added ARTICULATOR findings |
+| **UPDATED** | INDEX.md -- +6 constraints (1265 total) |
+
+---
+
 ## Version 5.07.109 (2026-03-05) - Phase 516: Cross-Slot Interaction Grammar
 
 ### Summary
