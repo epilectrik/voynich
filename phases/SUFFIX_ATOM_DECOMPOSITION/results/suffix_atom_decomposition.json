@@ -1,0 +1,1815 @@
+{
+  "T1": {
+    "distinct_suffix_types": 35,
+    "suffixed_token_count": 11151,
+    "bare_token_count": 11945,
+    "suffix_counts": {
+      "BARE": 11945,
+      "edy": 1972,
+      "dy": 1000,
+      "aiin": 949,
+      "hy": 854,
+      "ar": 829,
+      "ain": 741,
+      "y": 678,
+      "al": 660,
+      "eey": 593,
+      "ey": 498,
+      "s": 424,
+      "or": 408,
+      "r": 407,
+      "ol": 292,
+      "am": 234,
+      "iin": 115,
+      "ly": 108,
+      "l": 99,
+      "ry": 70,
+      "eol": 56,
+      "om": 33,
+      "im": 29,
+      "an": 25,
+      "g": 19,
+      "oiin": 18,
+      "eeol": 10,
+      "m": 8,
+      "er": 7,
+      "oin": 4,
+      "el": 4,
+      "en": 2,
+      "ool": 2,
+      "n": 1,
+      "em": 1,
+      "eiin": 1
+    },
+    "suffix_decompositions": {
+      "y": [
+        "y"
+      ],
+      "r": [
+        "r"
+      ],
+      "ey": [
+        "e",
+        "y"
+      ],
+      "dy": [
+        "d",
+        "y"
+      ],
+      "hy": [
+        "h",
+        "y"
+      ],
+      "edy": [
+        "e",
+        "d",
+        "y"
+      ],
+      "aiin": [
+        "a",
+        "ii",
+        "n"
+      ],
+      "al": [
+        "a",
+        "l"
+      ],
+      "s": [
+        "s"
+      ],
+      "am": [
+        "a",
+        "m"
+      ],
+      "eey": [
+        "ee",
+        "y"
+      ],
+      "ar": [
+        "a",
+        "r"
+      ],
+      "ry": [
+        "r",
+        "y"
+      ],
+      "or": [
+        "o",
+        "r"
+      ],
+      "iin": [
+        "ii",
+        "n"
+      ],
+      "ol": [
+        "o",
+        "l"
+      ],
+      "om": [
+        "o",
+        "m"
+      ],
+      "oiin": [
+        "o",
+        "ii",
+        "n"
+      ],
+      "l": [
+        "l"
+      ],
+      "ly": [
+        "l",
+        "y"
+      ],
+      "ain": [
+        "a",
+        "i",
+        "n"
+      ],
+      "g": [
+        "g"
+      ],
+      "im": [
+        "i",
+        "m"
+      ],
+      "m": [
+        "m"
+      ],
+      "eol": [
+        "e",
+        "o",
+        "l"
+      ],
+      "an": [
+        "a",
+        "n"
+      ],
+      "er": [
+        "e",
+        "r"
+      ],
+      "oin": [
+        "o",
+        "i",
+        "n"
+      ],
+      "eeol": [
+        "ee",
+        "o",
+        "l"
+      ],
+      "en": [
+        "e",
+        "n"
+      ],
+      "n": [
+        "n"
+      ],
+      "el": [
+        "e",
+        "l"
+      ],
+      "em": [
+        "e",
+        "m"
+      ],
+      "ool": [
+        "oo",
+        "l"
+      ],
+      "eiin": [
+        "e",
+        "ii",
+        "n"
+      ]
+    },
+    "atom_frequency": {
+      "y": 5773,
+      "a": 3438,
+      "d": 2972,
+      "e": 2541,
+      "n": 1856,
+      "r": 1721,
+      "l": 1231,
+      "ii": 1083,
+      "h": 854,
+      "o": 821,
+      "i": 774,
+      "ee": 603,
+      "s": 424,
+      "m": 305,
+      "g": 19,
+      "oo": 2
+    },
+    "length_distribution": {
+      "1": 1636,
+      "2": 5764,
+      "3": 3751
+    },
+    "distinct_atoms": [
+      "a",
+      "d",
+      "e",
+      "ee",
+      "g",
+      "h",
+      "i",
+      "ii",
+      "l",
+      "m",
+      "n",
+      "o",
+      "oo",
+      "r",
+      "s",
+      "y"
+    ],
+    "head_atoms_present": [
+      "a",
+      "e",
+      "o"
+    ],
+    "mod_atoms_present": [
+      "d",
+      "i",
+      "s"
+    ],
+    "term_atoms_present": [
+      "h",
+      "l",
+      "m",
+      "n",
+      "r",
+      "y"
+    ],
+    "special_atoms": [
+      "ee",
+      "g",
+      "ii",
+      "oo"
+    ],
+    "verdict": "16 distinct atoms in suffix (3 HEAD, 3 MOD, 6 TERM). Most suffixes are 2-atom (5764 tokens). Atom inventory overlaps strongly with MIDDLE atoms \u2014 same character set, different domain."
+  },
+  "T2": {
+    "atom_positional_profiles": {
+      "a": {
+        "INITIAL": 3438,
+        "MEDIAL": 0,
+        "TERMINAL": 0,
+        "SINGLE": 0
+      },
+      "d": {
+        "INITIAL": 1000,
+        "MEDIAL": 1972,
+        "TERMINAL": 0,
+        "SINGLE": 0
+      },
+      "e": {
+        "INITIAL": 2541,
+        "MEDIAL": 0,
+        "TERMINAL": 0,
+        "SINGLE": 0
+      },
+      "ee": {
+        "INITIAL": 603,
+        "MEDIAL": 0,
+        "TERMINAL": 0,
+        "SINGLE": 0
+      },
+      "g": {
+        "INITIAL": 0,
+        "MEDIAL": 0,
+        "TERMINAL": 0,
+        "SINGLE": 19
+      },
+      "h": {
+        "INITIAL": 854,
+        "MEDIAL": 0,
+        "TERMINAL": 0,
+        "SINGLE": 0
+      },
+      "i": {
+        "INITIAL": 29,
+        "MEDIAL": 745,
+        "TERMINAL": 0,
+        "SINGLE": 0
+      },
+      "ii": {
+        "INITIAL": 115,
+        "MEDIAL": 968,
+        "TERMINAL": 0,
+        "SINGLE": 0
+      },
+      "l": {
+        "INITIAL": 108,
+        "MEDIAL": 0,
+        "TERMINAL": 1024,
+        "SINGLE": 99
+      },
+      "m": {
+        "INITIAL": 0,
+        "MEDIAL": 0,
+        "TERMINAL": 297,
+        "SINGLE": 8
+      },
+      "n": {
+        "INITIAL": 0,
+        "MEDIAL": 0,
+        "TERMINAL": 1855,
+        "SINGLE": 1
+      },
+      "o": {
+        "INITIAL": 755,
+        "MEDIAL": 66,
+        "TERMINAL": 0,
+        "SINGLE": 0
+      },
+      "oo": {
+        "INITIAL": 2,
+        "MEDIAL": 0,
+        "TERMINAL": 0,
+        "SINGLE": 0
+      },
+      "r": {
+        "INITIAL": 70,
+        "MEDIAL": 0,
+        "TERMINAL": 1244,
+        "SINGLE": 407
+      },
+      "s": {
+        "INITIAL": 0,
+        "MEDIAL": 0,
+        "TERMINAL": 0,
+        "SINGLE": 424
+      },
+      "y": {
+        "INITIAL": 0,
+        "MEDIAL": 0,
+        "TERMINAL": 5095,
+        "SINGLE": 678
+      }
+    },
+    "multi_atom_initial_distribution": {
+      "HEAD": 6734,
+      "MOD": 1029,
+      "TERM": 1032
+    },
+    "multi_atom_terminal_distribution": {
+      "HEAD": 0,
+      "MOD": 0,
+      "TERM": 9515
+    },
+    "head_initial_fraction": 0.7657,
+    "term_terminal_fraction": 1.0819,
+    "ordering_verdict": "STRONG",
+    "forbidden_violations": 0,
+    "forbidden_violation_pct": 0.0
+  },
+  "T3": {
+    "cramers_v": 0.1737,
+    "atom_category_profiles": {
+      "a": {
+        "counts": {
+          "THERMAL": 1365,
+          "FLOW": 927,
+          "CONTAINMENT": 81,
+          "STAGING": 170,
+          "OPERATION": 128,
+          "TRANSITION": 108,
+          "MARKING": 451,
+          "MONITORING": 37
+        },
+        "total": 3267,
+        "dominant_category": "THERMAL",
+        "dominant_pct": 41.78,
+        "profile": [
+          0.4178,
+          0.2837,
+          0.0248,
+          0.052,
+          0.0392,
+          0.0331,
+          0.138,
+          0.0113
+        ]
+      },
+      "d": {
+        "counts": {
+          "THERMAL": 1450,
+          "FLOW": 290,
+          "CONTAINMENT": 53,
+          "STAGING": 145,
+          "OPERATION": 429,
+          "TRANSITION": 197,
+          "MARKING": 282,
+          "MONITORING": 101
+        },
+        "total": 2947,
+        "dominant_category": "THERMAL",
+        "dominant_pct": 49.2,
+        "profile": [
+          0.492,
+          0.0984,
+          0.018,
+          0.0492,
+          0.1456,
+          0.0668,
+          0.0957,
+          0.0343
+        ]
+      },
+      "e": {
+        "counts": {
+          "THERMAL": 1535,
+          "FLOW": 277,
+          "CONTAINMENT": 84,
+          "STAGING": 48,
+          "OPERATION": 204,
+          "TRANSITION": 2,
+          "MARKING": 254,
+          "MONITORING": 115
+        },
+        "total": 2519,
+        "dominant_category": "THERMAL",
+        "dominant_pct": 60.94,
+        "profile": [
+          0.6094,
+          0.11,
+          0.0333,
+          0.0191,
+          0.081,
+          0.0008,
+          0.1008,
+          0.0457
+        ]
+      },
+      "ee": {
+        "counts": {
+          "THERMAL": 444,
+          "FLOW": 52,
+          "CONTAINMENT": 18,
+          "STAGING": 14,
+          "OPERATION": 21,
+          "TRANSITION": 4,
+          "MARKING": 27,
+          "MONITORING": 10
+        },
+        "total": 590,
+        "dominant_category": "THERMAL",
+        "dominant_pct": 75.25,
+        "profile": [
+          0.7525,
+          0.0881,
+          0.0305,
+          0.0237,
+          0.0356,
+          0.0068,
+          0.0458,
+          0.0169
+        ]
+      },
+      "g": {
+        "counts": {
+          "THERMAL": 8,
+          "FLOW": 2,
+          "CONTAINMENT": 0,
+          "STAGING": 2,
+          "OPERATION": 1,
+          "TRANSITION": 3,
+          "MARKING": 3,
+          "MONITORING": 0
+        },
+        "total": 19,
+        "dominant_category": "THERMAL",
+        "dominant_pct": 42.11,
+        "profile": [
+          0.4211,
+          0.1053,
+          0.0,
+          0.1053,
+          0.0526,
+          0.1579,
+          0.1579,
+          0.0
+        ]
+      },
+      "h": {
+        "counts": {
+          "THERMAL": 69,
+          "FLOW": 79,
+          "CONTAINMENT": 129,
+          "STAGING": 42,
+          "OPERATION": 202,
+          "TRANSITION": 2,
+          "MARKING": 172,
+          "MONITORING": 148
+        },
+        "total": 843,
+        "dominant_category": "OPERATION",
+        "dominant_pct": 23.96,
+        "profile": [
+          0.0819,
+          0.0937,
+          0.153,
+          0.0498,
+          0.2396,
+          0.0024,
+          0.204,
+          0.1756
+        ]
+      },
+      "i": {
+        "counts": {
+          "THERMAL": 389,
+          "FLOW": 176,
+          "CONTAINMENT": 20,
+          "STAGING": 44,
+          "OPERATION": 28,
+          "TRANSITION": 27,
+          "MARKING": 53,
+          "MONITORING": 3
+        },
+        "total": 740,
+        "dominant_category": "THERMAL",
+        "dominant_pct": 52.57,
+        "profile": [
+          0.5257,
+          0.2378,
+          0.027,
+          0.0595,
+          0.0378,
+          0.0365,
+          0.0716,
+          0.0041
+        ]
+      },
+      "ii": {
+        "counts": {
+          "THERMAL": 344,
+          "FLOW": 263,
+          "CONTAINMENT": 23,
+          "STAGING": 76,
+          "OPERATION": 54,
+          "TRANSITION": 84,
+          "MARKING": 159,
+          "MONITORING": 6
+        },
+        "total": 1009,
+        "dominant_category": "THERMAL",
+        "dominant_pct": 34.09,
+        "profile": [
+          0.3409,
+          0.2607,
+          0.0228,
+          0.0753,
+          0.0535,
+          0.0833,
+          0.1576,
+          0.0059
+        ]
+      },
+      "l": {
+        "counts": {
+          "THERMAL": 433,
+          "FLOW": 318,
+          "CONTAINMENT": 28,
+          "STAGING": 107,
+          "OPERATION": 57,
+          "TRANSITION": 88,
+          "MARKING": 149,
+          "MONITORING": 21
+        },
+        "total": 1201,
+        "dominant_category": "THERMAL",
+        "dominant_pct": 36.05,
+        "profile": [
+          0.3605,
+          0.2648,
+          0.0233,
+          0.0891,
+          0.0475,
+          0.0733,
+          0.1241,
+          0.0175
+        ]
+      },
+      "m": {
+        "counts": {
+          "THERMAL": 75,
+          "FLOW": 93,
+          "CONTAINMENT": 5,
+          "STAGING": 38,
+          "OPERATION": 7,
+          "TRANSITION": 22,
+          "MARKING": 54,
+          "MONITORING": 3
+        },
+        "total": 297,
+        "dominant_category": "FLOW",
+        "dominant_pct": 31.31,
+        "profile": [
+          0.2525,
+          0.3131,
+          0.0168,
+          0.1279,
+          0.0236,
+          0.0741,
+          0.1818,
+          0.0101
+        ]
+      },
+      "n": {
+        "counts": {
+          "THERMAL": 743,
+          "FLOW": 442,
+          "CONTAINMENT": 44,
+          "STAGING": 115,
+          "OPERATION": 83,
+          "TRANSITION": 101,
+          "MARKING": 209,
+          "MONITORING": 11
+        },
+        "total": 1748,
+        "dominant_category": "THERMAL",
+        "dominant_pct": 42.51,
+        "profile": [
+          0.4251,
+          0.2529,
+          0.0252,
+          0.0658,
+          0.0475,
+          0.0578,
+          0.1196,
+          0.0063
+        ]
+      },
+      "o": {
+        "counts": {
+          "THERMAL": 288,
+          "FLOW": 194,
+          "CONTAINMENT": 18,
+          "STAGING": 142,
+          "OPERATION": 25,
+          "TRANSITION": 21,
+          "MARKING": 95,
+          "MONITORING": 23
+        },
+        "total": 806,
+        "dominant_category": "THERMAL",
+        "dominant_pct": 35.73,
+        "profile": [
+          0.3573,
+          0.2407,
+          0.0223,
+          0.1762,
+          0.031,
+          0.0261,
+          0.1179,
+          0.0285
+        ]
+      },
+      "oo": {
+        "counts": {
+          "THERMAL": 2,
+          "FLOW": 0,
+          "CONTAINMENT": 0,
+          "STAGING": 0,
+          "OPERATION": 0,
+          "TRANSITION": 0,
+          "MARKING": 0,
+          "MONITORING": 0
+        },
+        "total": 2,
+        "dominant_category": "THERMAL",
+        "dominant_pct": 100.0,
+        "profile": [
+          1.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "r": {
+        "counts": {
+          "THERMAL": 485,
+          "FLOW": 323,
+          "CONTAINMENT": 24,
+          "STAGING": 300,
+          "OPERATION": 57,
+          "TRANSITION": 180,
+          "MARKING": 248,
+          "MONITORING": 27
+        },
+        "total": 1644,
+        "dominant_category": "THERMAL",
+        "dominant_pct": 29.5,
+        "profile": [
+          0.295,
+          0.1965,
+          0.0146,
+          0.1825,
+          0.0347,
+          0.1095,
+          0.1509,
+          0.0164
+        ]
+      },
+      "s": {
+        "counts": {
+          "THERMAL": 183,
+          "FLOW": 23,
+          "CONTAINMENT": 2,
+          "STAGING": 37,
+          "OPERATION": 68,
+          "TRANSITION": 71,
+          "MARKING": 35,
+          "MONITORING": 2
+        },
+        "total": 421,
+        "dominant_category": "THERMAL",
+        "dominant_pct": 43.47,
+        "profile": [
+          0.4347,
+          0.0546,
+          0.0048,
+          0.0879,
+          0.1615,
+          0.1686,
+          0.0831,
+          0.0048
+        ]
+      },
+      "y": {
+        "counts": {
+          "THERMAL": 2389,
+          "FLOW": 601,
+          "CONTAINMENT": 308,
+          "STAGING": 311,
+          "OPERATION": 852,
+          "TRANSITION": 297,
+          "MARKING": 625,
+          "MONITORING": 323
+        },
+        "total": 5706,
+        "dominant_category": "THERMAL",
+        "dominant_pct": 41.87,
+        "profile": [
+          0.4187,
+          0.1053,
+          0.054,
+          0.0545,
+          0.1493,
+          0.0521,
+          0.1095,
+          0.0566
+        ]
+      }
+    },
+    "specialists": [
+      [
+        "a",
+        "THERMAL",
+        41.78
+      ],
+      [
+        "d",
+        "THERMAL",
+        49.2
+      ],
+      [
+        "e",
+        "THERMAL",
+        60.94
+      ],
+      [
+        "ee",
+        "THERMAL",
+        75.25
+      ],
+      [
+        "i",
+        "THERMAL",
+        52.57
+      ],
+      [
+        "n",
+        "THERMAL",
+        42.51
+      ],
+      [
+        "s",
+        "THERMAL",
+        43.47
+      ],
+      [
+        "y",
+        "THERMAL",
+        41.87
+      ]
+    ],
+    "generalists": [
+      "h",
+      "ii",
+      "l",
+      "m",
+      "o",
+      "r"
+    ],
+    "verdict": "Cramer's V=0.174. Suffix atoms show moderate category association. 8 specialist atoms identified."
+  },
+  "T4": {
+    "cramers_v_state": 0.1552,
+    "atom_state_profiles": {
+      "a": {
+        "counts": {
+          "AXM": 1768,
+          "AXm": 44,
+          "CC": 0,
+          "FL_HAZ": 0,
+          "FL_SAFE": 0,
+          "FQ": 0
+        },
+        "total": 1812,
+        "dominant_state": "AXM",
+        "dominant_pct": 97.57,
+        "profile": [
+          0.9757,
+          0.0243,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "d": {
+        "counts": {
+          "AXM": 1585,
+          "AXm": 50,
+          "CC": 0,
+          "FL_HAZ": 0,
+          "FL_SAFE": 11,
+          "FQ": 191
+        },
+        "total": 1837,
+        "dominant_state": "AXM",
+        "dominant_pct": 86.28,
+        "profile": [
+          0.8628,
+          0.0272,
+          0.0,
+          0.0,
+          0.006,
+          0.104
+        ]
+      },
+      "e": {
+        "counts": {
+          "AXM": 1404,
+          "AXm": 25,
+          "CC": 0,
+          "FL_HAZ": 0,
+          "FL_SAFE": 0,
+          "FQ": 191
+        },
+        "total": 1620,
+        "dominant_state": "AXM",
+        "dominant_pct": 86.67,
+        "profile": [
+          0.8667,
+          0.0154,
+          0.0,
+          0.0,
+          0.0,
+          0.1179
+        ]
+      },
+      "ee": {
+        "counts": {
+          "AXM": 364,
+          "AXm": 18,
+          "CC": 0,
+          "FL_HAZ": 0,
+          "FL_SAFE": 0,
+          "FQ": 0
+        },
+        "total": 382,
+        "dominant_state": "AXM",
+        "dominant_pct": 95.29,
+        "profile": [
+          0.9529,
+          0.0471,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "g": {
+        "counts": {
+          "AXM": 0,
+          "AXm": 0,
+          "CC": 0,
+          "FL_HAZ": 0,
+          "FL_SAFE": 0,
+          "FQ": 0
+        },
+        "total": 0,
+        "dominant_state": "AXM",
+        "dominant_pct": 0,
+        "profile": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "h": {
+        "counts": {
+          "AXM": 477,
+          "AXm": 12,
+          "CC": 0,
+          "FL_HAZ": 0,
+          "FL_SAFE": 0,
+          "FQ": 0
+        },
+        "total": 489,
+        "dominant_state": "AXM",
+        "dominant_pct": 97.55,
+        "profile": [
+          0.9755,
+          0.0245,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "i": {
+        "counts": {
+          "AXM": 437,
+          "AXm": 7,
+          "CC": 0,
+          "FL_HAZ": 0,
+          "FL_SAFE": 0,
+          "FQ": 0
+        },
+        "total": 444,
+        "dominant_state": "AXM",
+        "dominant_pct": 98.42,
+        "profile": [
+          0.9842,
+          0.0158,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "ii": {
+        "counts": {
+          "AXM": 614,
+          "AXm": 18,
+          "CC": 0,
+          "FL_HAZ": 0,
+          "FL_SAFE": 0,
+          "FQ": 0
+        },
+        "total": 632,
+        "dominant_state": "AXM",
+        "dominant_pct": 97.15,
+        "profile": [
+          0.9715,
+          0.0285,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "l": {
+        "counts": {
+          "AXM": 562,
+          "AXm": 15,
+          "CC": 0,
+          "FL_HAZ": 0,
+          "FL_SAFE": 0,
+          "FQ": 0
+        },
+        "total": 577,
+        "dominant_state": "AXM",
+        "dominant_pct": 97.4,
+        "profile": [
+          0.974,
+          0.026,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "m": {
+        "counts": {
+          "AXM": 35,
+          "AXm": 9,
+          "CC": 0,
+          "FL_HAZ": 0,
+          "FL_SAFE": 0,
+          "FQ": 0
+        },
+        "total": 44,
+        "dominant_state": "AXM",
+        "dominant_pct": 79.55,
+        "profile": [
+          0.7955,
+          0.2045,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "n": {
+        "counts": {
+          "AXM": 1051,
+          "AXm": 25,
+          "CC": 0,
+          "FL_HAZ": 0,
+          "FL_SAFE": 0,
+          "FQ": 0
+        },
+        "total": 1076,
+        "dominant_state": "AXM",
+        "dominant_pct": 97.68,
+        "profile": [
+          0.9768,
+          0.0232,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "o": {
+        "counts": {
+          "AXM": 336,
+          "AXm": 13,
+          "CC": 0,
+          "FL_HAZ": 0,
+          "FL_SAFE": 0,
+          "FQ": 0
+        },
+        "total": 349,
+        "dominant_state": "AXM",
+        "dominant_pct": 96.28,
+        "profile": [
+          0.9628,
+          0.0372,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "oo": {
+        "counts": {
+          "AXM": 0,
+          "AXm": 0,
+          "CC": 0,
+          "FL_HAZ": 0,
+          "FL_SAFE": 0,
+          "FQ": 0
+        },
+        "total": 0,
+        "dominant_state": "AXM",
+        "dominant_pct": 0,
+        "profile": [
+          0,
+          0,
+          0,
+          0,
+          0,
+          0
+        ]
+      },
+      "r": {
+        "counts": {
+          "AXM": 715,
+          "AXm": 17,
+          "CC": 0,
+          "FL_HAZ": 49,
+          "FL_SAFE": 7,
+          "FQ": 0
+        },
+        "total": 788,
+        "dominant_state": "AXM",
+        "dominant_pct": 90.74,
+        "profile": [
+          0.9074,
+          0.0216,
+          0.0,
+          0.0622,
+          0.0089,
+          0.0
+        ]
+      },
+      "s": {
+        "counts": {
+          "AXM": 109,
+          "AXm": 2,
+          "CC": 0,
+          "FL_HAZ": 0,
+          "FL_SAFE": 0,
+          "FQ": 0
+        },
+        "total": 111,
+        "dominant_state": "AXM",
+        "dominant_pct": 98.2,
+        "profile": [
+          0.982,
+          0.018,
+          0.0,
+          0.0,
+          0.0,
+          0.0
+        ]
+      },
+      "y": {
+        "counts": {
+          "AXM": 3068,
+          "AXm": 108,
+          "CC": 0,
+          "FL_HAZ": 0,
+          "FL_SAFE": 11,
+          "FQ": 191
+        },
+        "total": 3378,
+        "dominant_state": "AXM",
+        "dominant_pct": 90.82,
+        "profile": [
+          0.9082,
+          0.032,
+          0.0,
+          0.0,
+          0.0033,
+          0.0565
+        ]
+      }
+    },
+    "verdict": "Cramer's V=0.155 for atom x macro-state. AXM dominates all atoms (expected: 67.7% base rate)."
+  },
+  "T5": {
+    "atom_position_stats": {
+      "a": {
+        "n": 3438,
+        "mean_pos": 0.5096,
+        "std_pos": 0.3282,
+        "initial_pct": 13.55,
+        "final_pct": 13.93,
+        "direction": "MEDIAL"
+      },
+      "d": {
+        "n": 2972,
+        "mean_pos": 0.4923,
+        "std_pos": 0.3029,
+        "initial_pct": 10.3,
+        "final_pct": 9.05,
+        "direction": "MEDIAL"
+      },
+      "e": {
+        "n": 2541,
+        "mean_pos": 0.4681,
+        "std_pos": 0.2935,
+        "initial_pct": 10.9,
+        "final_pct": 5.63,
+        "direction": "MEDIAL"
+      },
+      "ee": {
+        "n": 603,
+        "mean_pos": 0.4158,
+        "std_pos": 0.2809,
+        "initial_pct": 12.94,
+        "final_pct": 4.15,
+        "direction": "INITIAL"
+      },
+      "g": {
+        "n": 19,
+        "mean_pos": 0.9415,
+        "std_pos": 0.1705,
+        "initial_pct": 0.0,
+        "final_pct": 89.47,
+        "direction": "FINAL"
+      },
+      "h": {
+        "n": 854,
+        "mean_pos": 0.5024,
+        "std_pos": 0.3005,
+        "initial_pct": 8.2,
+        "final_pct": 10.07,
+        "direction": "MEDIAL"
+      },
+      "i": {
+        "n": 774,
+        "mean_pos": 0.4917,
+        "std_pos": 0.3183,
+        "initial_pct": 13.44,
+        "final_pct": 12.79,
+        "direction": "MEDIAL"
+      },
+      "ii": {
+        "n": 1083,
+        "mean_pos": 0.4715,
+        "std_pos": 0.3135,
+        "initial_pct": 14.22,
+        "final_pct": 7.94,
+        "direction": "MEDIAL"
+      },
+      "l": {
+        "n": 1231,
+        "mean_pos": 0.5209,
+        "std_pos": 0.3198,
+        "initial_pct": 11.7,
+        "final_pct": 14.38,
+        "direction": "MEDIAL"
+      },
+      "m": {
+        "n": 305,
+        "mean_pos": 0.9264,
+        "std_pos": 0.1991,
+        "initial_pct": 0.98,
+        "final_pct": 82.95,
+        "direction": "FINAL"
+      },
+      "n": {
+        "n": 1856,
+        "mean_pos": 0.4755,
+        "std_pos": 0.3136,
+        "initial_pct": 14.12,
+        "final_pct": 9.16,
+        "direction": "MEDIAL"
+      },
+      "o": {
+        "n": 821,
+        "mean_pos": 0.5065,
+        "std_pos": 0.3275,
+        "initial_pct": 14.62,
+        "final_pct": 14.13,
+        "direction": "MEDIAL"
+      },
+      "r": {
+        "n": 1721,
+        "mean_pos": 0.4846,
+        "std_pos": 0.3316,
+        "initial_pct": 17.43,
+        "final_pct": 10.81,
+        "direction": "MEDIAL"
+      },
+      "s": {
+        "n": 424,
+        "mean_pos": 0.4605,
+        "std_pos": 0.3284,
+        "initial_pct": 17.69,
+        "final_pct": 10.85,
+        "direction": "MEDIAL"
+      },
+      "y": {
+        "n": 5773,
+        "mean_pos": 0.499,
+        "std_pos": 0.3079,
+        "initial_pct": 9.84,
+        "final_pct": 11.02,
+        "direction": "MEDIAL"
+      }
+    },
+    "bare_mean_position": 0.4974,
+    "position_specialists": [
+      [
+        "ee",
+        0.4158,
+        "INITIAL"
+      ],
+      [
+        "m",
+        0.9264,
+        "FINAL"
+      ]
+    ],
+    "verdict": "2 position-specialist atoms. Bare tokens at mean 0.497."
+  },
+  "T6": {
+    "shared_atoms": [
+      "a",
+      "d",
+      "e",
+      "h",
+      "i",
+      "l",
+      "m",
+      "n",
+      "o",
+      "r",
+      "s",
+      "y"
+    ],
+    "cross_position_comparison": {
+      "a": {
+        "suffix_n": 3267,
+        "middle_terminal_n": 191,
+        "jsd": 0.2287,
+        "suffix_dominant": "THERMAL",
+        "middle_dominant": "TRANSITION",
+        "stable": "NO",
+        "suffix_profile": [
+          0.4178,
+          0.2837,
+          0.0248,
+          0.052,
+          0.0392,
+          0.0331,
+          0.138,
+          0.0113
+        ],
+        "middle_profile": [
+          0.267,
+          0.0838,
+          0.0,
+          0.0419,
+          0.0209,
+          0.4503,
+          0.1361,
+          0.0
+        ]
+      },
+      "d": {
+        "suffix_n": 2947,
+        "middle_terminal_n": 1295,
+        "jsd": 0.3321,
+        "suffix_dominant": "THERMAL",
+        "middle_dominant": "MARKING",
+        "stable": "NO",
+        "suffix_profile": [
+          0.492,
+          0.0984,
+          0.018,
+          0.0492,
+          0.1456,
+          0.0668,
+          0.0957,
+          0.0343
+        ],
+        "middle_profile": [
+          0.1243,
+          0.39,
+          0.0,
+          0.0069,
+          0.0023,
+          0.0664,
+          0.41,
+          0.0
+        ]
+      },
+      "e": {
+        "suffix_n": 2519,
+        "middle_terminal_n": 1779,
+        "jsd": 0.1092,
+        "suffix_dominant": "THERMAL",
+        "middle_dominant": "THERMAL",
+        "stable": "NO",
+        "suffix_profile": [
+          0.6094,
+          0.11,
+          0.0333,
+          0.0191,
+          0.081,
+          0.0008,
+          0.1008,
+          0.0457
+        ],
+        "middle_profile": [
+          0.9039,
+          0.0573,
+          0.0,
+          0.0028,
+          0.0079,
+          0.0,
+          0.0264,
+          0.0017
+        ]
+      },
+      "h": {
+        "suffix_n": 843,
+        "middle_terminal_n": 1261,
+        "jsd": 0.027,
+        "suffix_dominant": "OPERATION",
+        "middle_dominant": "MARKING",
+        "stable": "PARTIAL",
+        "suffix_profile": [
+          0.0819,
+          0.0937,
+          0.153,
+          0.0498,
+          0.2396,
+          0.0024,
+          0.204,
+          0.1756
+        ],
+        "middle_profile": [
+          0.1515,
+          0.0619,
+          0.1007,
+          0.023,
+          0.1959,
+          0.0,
+          0.2998,
+          0.1673
+        ]
+      },
+      "i": {
+        "suffix_n": 740,
+        "middle_terminal_n": 532,
+        "jsd": 0.4931,
+        "suffix_dominant": "THERMAL",
+        "middle_dominant": "STAGING",
+        "stable": "NO",
+        "suffix_profile": [
+          0.5257,
+          0.2378,
+          0.027,
+          0.0595,
+          0.0378,
+          0.0365,
+          0.0716,
+          0.0041
+        ],
+        "middle_profile": [
+          0.0244,
+          0.047,
+          0.0,
+          0.4417,
+          0.0338,
+          0.3402,
+          0.1128,
+          0.0
+        ]
+      },
+      "l": {
+        "suffix_n": 1201,
+        "middle_terminal_n": 2567,
+        "jsd": 0.3252,
+        "suffix_dominant": "THERMAL",
+        "middle_dominant": "STAGING",
+        "stable": "NO",
+        "suffix_profile": [
+          0.3605,
+          0.2648,
+          0.0233,
+          0.0891,
+          0.0475,
+          0.0733,
+          0.1241,
+          0.0175
+        ],
+        "middle_profile": [
+          0.1344,
+          0.2061,
+          0.0,
+          0.6451,
+          0.0031,
+          0.0004,
+          0.0109,
+          0.0
+        ]
+      },
+      "m": {
+        "suffix_n": 297,
+        "middle_terminal_n": 289,
+        "jsd": 0.7136,
+        "suffix_dominant": "FLOW",
+        "middle_dominant": "TRANSITION",
+        "stable": "NO",
+        "suffix_profile": [
+          0.2525,
+          0.3131,
+          0.0168,
+          0.1279,
+          0.0236,
+          0.0741,
+          0.1818,
+          0.0101
+        ],
+        "middle_profile": [
+          0.0,
+          0.0,
+          0.0,
+          0.0311,
+          0.09,
+          0.8789,
+          0.0,
+          0.0
+        ]
+      },
+      "n": {
+        "suffix_n": 1748,
+        "middle_terminal_n": 2147,
+        "jsd": 0.3903,
+        "suffix_dominant": "THERMAL",
+        "middle_dominant": "TRANSITION",
+        "stable": "NO",
+        "suffix_profile": [
+          0.4251,
+          0.2529,
+          0.0252,
+          0.0658,
+          0.0475,
+          0.0578,
+          0.1196,
+          0.0063
+        ],
+        "middle_profile": [
+          0.0,
+          0.1956,
+          0.0084,
+          0.2771,
+          0.0028,
+          0.3931,
+          0.123,
+          0.0
+        ]
+      },
+      "o": {
+        "suffix_n": 806,
+        "middle_terminal_n": 1265,
+        "jsd": 0.489,
+        "suffix_dominant": "THERMAL",
+        "middle_dominant": "OPERATION",
+        "stable": "NO",
+        "suffix_profile": [
+          0.3573,
+          0.2407,
+          0.0223,
+          0.1762,
+          0.031,
+          0.0261,
+          0.1179,
+          0.0285
+        ],
+        "middle_profile": [
+          0.0435,
+          0.0617,
+          0.0,
+          0.0387,
+          0.4751,
+          0.332,
+          0.0466,
+          0.0024
+        ]
+      },
+      "r": {
+        "suffix_n": 1644,
+        "middle_terminal_n": 1961,
+        "jsd": 0.5773,
+        "suffix_dominant": "THERMAL",
+        "middle_dominant": "FLOW",
+        "stable": "NO",
+        "suffix_profile": [
+          0.295,
+          0.1965,
+          0.0146,
+          0.1825,
+          0.0347,
+          0.1095,
+          0.1509,
+          0.0164
+        ],
+        "middle_profile": [
+          0.002,
+          0.9893,
+          0.0,
+          0.0046,
+          0.002,
+          0.001,
+          0.001,
+          0.0
+        ]
+      },
+      "s": {
+        "suffix_n": 421,
+        "middle_terminal_n": 287,
+        "jsd": 0.3741,
+        "suffix_dominant": "THERMAL",
+        "middle_dominant": "STAGING",
+        "stable": "NO",
+        "suffix_profile": [
+          0.4347,
+          0.0546,
+          0.0048,
+          0.0879,
+          0.1615,
+          0.1686,
+          0.0831,
+          0.0048
+        ],
+        "middle_profile": [
+          0.101,
+          0.0348,
+          0.0,
+          0.7038,
+          0.0627,
+          0.0035,
+          0.0941,
+          0.0
+        ]
+      },
+      "y": {
+        "suffix_n": 5706,
+        "middle_terminal_n": 4779,
+        "jsd": 0.3333,
+        "suffix_dominant": "THERMAL",
+        "middle_dominant": "OPERATION",
+        "stable": "NO",
+        "suffix_profile": [
+          0.4187,
+          0.1053,
+          0.054,
+          0.0545,
+          0.1493,
+          0.0521,
+          0.1095,
+          0.0566
+        ],
+        "middle_profile": [
+          0.1362,
+          0.0019,
+          0.1412,
+          0.0,
+          0.4057,
+          0.3112,
+          0.0021,
+          0.0017
+        ]
+      }
+    },
+    "stability_counts": {
+      "stable": 0,
+      "partial": 1,
+      "divergent": 11
+    },
+    "verdict": "0/12 atoms stable across positions. Atoms shift category identity between suffix and MIDDLE-terminal positions."
+  },
+  "T7": {
+    "category_cramers_v": {
+      "first_atom": 0.2773,
+      "last_atom": 0.1628,
+      "whole_suffix": 0.2911
+    },
+    "position_r_squared": {
+      "first_atom": 0.0216,
+      "last_atom": 0.059,
+      "whole_suffix": 0.0771
+    },
+    "category_structure": "FIRST_ATOM_DOMINANT (HEAD-like)",
+    "position_structure": "LAST_ATOM_DOMINANT (TERM-like)",
+    "head_term_structure": "YES",
+    "verdict": "Category: first-atom V=0.277 vs last-atom V=0.163. Position: first-atom R\u00b2=0.0216 vs last-atom R\u00b2=0.0590. Compositional structure: YES."
+  },
+  "T8": {
+    "mode_a_line_count": 1241,
+    "mode_b_line_count": 1153,
+    "median_terminal_fraction": 0.25,
+    "mode_enrichments": {
+      "a": {
+        "mode_a_fraction": 0.0973,
+        "mode_b_fraction": 0.2001,
+        "ratio": 0.4866,
+        "direction": "MODE_B"
+      },
+      "d": {
+        "mode_a_fraction": 0.1519,
+        "mode_b_fraction": 0.0685,
+        "ratio": 2.2175,
+        "direction": "MODE_A"
+      },
+      "e": {
+        "mode_a_fraction": 0.1286,
+        "mode_b_fraction": 0.054,
+        "ratio": 2.3804,
+        "direction": "MODE_A"
+      },
+      "ee": {
+        "mode_a_fraction": 0.0311,
+        "mode_b_fraction": 0.0169,
+        "ratio": 1.8355,
+        "direction": "MODE_A"
+      },
+      "g": {
+        "mode_a_fraction": 0.0006,
+        "mode_b_fraction": 0.0014,
+        "ratio": 0.425,
+        "direction": "MODE_B"
+      },
+      "h": {
+        "mode_a_fraction": 0.0436,
+        "mode_b_fraction": 0.026,
+        "ratio": 1.6772,
+        "direction": "MODE_A"
+      },
+      "i": {
+        "mode_a_fraction": 0.021,
+        "mode_b_fraction": 0.0416,
+        "ratio": 0.5058,
+        "direction": "MODE_B"
+      },
+      "ii": {
+        "mode_a_fraction": 0.0293,
+        "mode_b_fraction": 0.0617,
+        "ratio": 0.4753,
+        "direction": "MODE_B"
+      },
+      "l": {
+        "mode_a_fraction": 0.0405,
+        "mode_b_fraction": 0.0701,
+        "ratio": 0.5773,
+        "direction": "MODE_B"
+      },
+      "m": {
+        "mode_a_fraction": 0.0088,
+        "mode_b_fraction": 0.019,
+        "ratio": 0.4662,
+        "direction": "MODE_B"
+      },
+      "n": {
+        "mode_a_fraction": 0.0508,
+        "mode_b_fraction": 0.1026,
+        "ratio": 0.4948,
+        "direction": "MODE_B"
+      },
+      "o": {
+        "mode_a_fraction": 0.0269,
+        "mode_b_fraction": 0.0454,
+        "ratio": 0.592,
+        "direction": "MODE_B"
+      },
+      "oo": {
+        "mode_a_fraction": 0.0001,
+        "mode_b_fraction": 0.0001,
+        "ratio": 0.7435,
+        "direction": "MODE_B"
+      },
+      "r": {
+        "mode_a_fraction": 0.0544,
+        "mode_b_fraction": 0.1079,
+        "ratio": 0.5041,
+        "direction": "MODE_B"
+      },
+      "s": {
+        "mode_a_fraction": 0.0122,
+        "mode_b_fraction": 0.0333,
+        "ratio": 0.3655,
+        "direction": "MODE_B"
+      },
+      "y": {
+        "mode_a_fraction": 0.303,
+        "mode_b_fraction": 0.1515,
+        "ratio": 1.9995,
+        "direction": "MODE_A"
+      }
+    },
+    "mode_a_enriched": [
+      "d",
+      "e",
+      "ee",
+      "h",
+      "y"
+    ],
+    "mode_b_enriched": [
+      "a",
+      "g",
+      "i",
+      "ii",
+      "l",
+      "m",
+      "n",
+      "o",
+      "oo",
+      "r",
+      "s"
+    ],
+    "verdict": "Mode A enriched: ['d', 'e', 'ee', 'h', 'y']. Mode B enriched: ['a', 'g', 'i', 'ii', 'l', 'm', 'n', 'o', 'oo', 'r', 's']. Modes separate at atom level, confirming C1229."
+  },
+  "T9": {
+    "overall_verdict": {
+      "compositional_structure": "YES",
+      "ordering_pattern": "STRONG",
+      "category_predictive": true,
+      "cross_position_stable": false,
+      "mode_decomposable": true
+    },
+    "summary": "Suffix uses the same 16 atoms as MIDDLE with STRONG HEAD->TERM ordering. First atom captures category info (V=0.277), confirming HEAD-like domain selection. Atoms are shifted across suffix/MIDDLE positions. Suffix modes (C1229) decompose cleanly: Mode A = ['d', 'e', 'ee', 'h', 'y'], Mode B = ['a', 'g', 'i', 'ii', 'l', 'm', 'n', 'o', 'oo', 'r', 's']."
+  }
+}

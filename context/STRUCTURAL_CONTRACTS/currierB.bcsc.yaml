@@ -3,7 +3,7 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.23"
+  version: "3.24"
   date: "2026-03-05"
   status: "ACTIVE"
   layer_type: "grammar contract"
@@ -698,6 +698,15 @@ middle_instruction_encoding:
     same_atom_inventory: "94.7% of suffixes follow C1393 slot grammar"
     compound_narrowing: "Compound MIDDLEs narrow suffix choice slightly (1.42 bits vs 1.99 for single-atom)"
     provenance: "C1394 T1"
+
+  suffix_compositional_structure:
+    statement: "Suffix decomposes as HEAD→TERM using 16-atom subset (missing k,t,p,f,c from MIDDLE inventory)"
+    ordering: "76.6% HEAD-initial, 100% TERM-terminal, zero violations"
+    first_atom_category_V: 0.277
+    last_atom_position_R2: 0.059
+    cross_position_divergence: "0/12 shared atoms maintain identical profiles between suffix and MIDDLE-terminal (JSD 0.004-0.560)"
+    mode_partition: "Mode A={d,e,ee,h,y} THERMAL/MONITORING; Mode B={a,i,ii,l,m,n,o,r,s} STAGING/FLOW"
+    provenance: "C1408, C1409, C1410"
 
   encoding_model: |
     TOKEN = PREFIX + MIDDLE + SUFFIX

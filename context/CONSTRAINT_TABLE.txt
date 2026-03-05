@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1251 constraints | 2026-03-05
+CONSTRAINT_REFERENCE v2.6 | 1254 constraints | 2026-03-05
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1255,3 +1255,6 @@ C1404	Section structural differentiation is REGIME-dominated	2	B, section, REGIM
 C1405	Paragraph AXM driven by PREFIX not section	2	B, paragraph, AXM, PREFIX, variance decomposition	PREFIX alone CV R2=0.736; section alone -0.027. Full model 0.760, section marginal +0.017. Top: qo_frac +0.576, bare_frac -0.515, chsh_frac +0.508. 24% residual = design freedom. Extends C1023 (PREFIX routing load-bearing) to paragraph level.
 C1406	Section is REGIME composition at paragraph level	2	B, section, REGIME, paragraph, PREFIX	Chain: section -> REGIME (V=0.573) -> PREFIX availability -> AXM (CV R2=0.736). Neither section (-0.027) nor REGIME (-0.092) has positive paragraph-level CV R2. Section adds zero beyond PREFIX. Sections are REGIME allocation policies.
 C1407	PREFIX-AXM relationship universal across sections	2	B, PREFIX, AXM, section, universality	6/7 features show consistent sign across all sections. Only transition_frac inconsistent. Section modulates magnitude not direction. Extends C821 (syntax REGIME invariance) to paragraph-section interaction.
+C1408	suffix has HEAD→TERM compositional structure	2	B, suffix, atom, compositional, structure	16-atom subset of MIDDLE inventory (missing k,t,p,f,c). Strong HEAD->TERM ordering: 76.6% HEAD-initial, 100% TERM-terminal, zero violations. First atom predicts category (V=0.277), last atom predicts position (R²=0.059). Parallels MIDDLE's HEAD->MOD->TERM at reduced scale.
+C1409	suffix atoms diverge from MIDDLE-terminal atoms	2	B, suffix, atom, MIDDLE, cross-position, divergence	0/12 shared atoms maintain identical category profiles across suffix vs MIDDLE-terminal position. JSD range: h=0.004 (most stable) to m=0.560 (most divergent). Three tiers: near-stable (h,y,d), moderate shift (l,n,e,r,o,s), strong divergence (a,i,m). Same alphabet, position-dependent semantics.
+C1410	suffix modes are atom-level category partitions	2	B, suffix, atom, mode, paragraph, cycling	C1229's two modes decompose at atom level: Mode A (specification) = {d,e,ee,h,y} THERMAL/MONITORING atoms (1.68-2.38x enrichment). Mode B (continuation) = {a,i,ii,l,m,n,o,r,s} STAGING/TRANSITION/FLOW atoms. Near-equal balance (51.8%/48.2%). Not arbitrary clusters — operationally grounded atom partitions.

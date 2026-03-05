@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1251 validated constraints | **Version:** 5.05 | **Date:** 2026-03-05
+**Total:** 1254 validated constraints | **Version:** 5.06 | **Date:** 2026-03-05
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4650,6 +4650,27 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - B5: Hazard density — FL_HAZ rho=-0.440 (survives length control)
 - B6: Variance decomposition — PREFIX 0.736, section -0.027, full 0.760, section marginal +0.017
 - C3: Interaction — 6/7 features sign-consistent across sections; PREFIX-AXM universal
+
+---
+
+### Suffix Atom Decomposition (C1408-C1410) -- Phase: SUFFIX_ATOM_DECOMPOSITION (Phase 515)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1408 | suffix has HEAD→TERM compositional structure | 2 | B, suffix, atom, compositional, structure | 16-atom subset of MIDDLE inventory (missing k,t,p,f,c). Strong HEAD→TERM ordering: 76.6% HEAD-initial, 100% TERM-terminal, zero violations. First atom predicts category (V=0.277), last atom predicts position (R²=0.059). Parallels MIDDLE's HEAD→MOD→TERM at reduced scale. |
+| 1409 | suffix atoms diverge from MIDDLE-terminal atoms | 2 | B, suffix, atom, MIDDLE, cross-position, divergence | 0/12 shared atoms maintain identical category profiles across suffix vs MIDDLE-terminal position. JSD range: h=0.004 (most stable) to m=0.560 (most divergent). Three tiers: near-stable (h,y,d), moderate shift (l,n,e,r,o,s), strong divergence (a,i,m). Same alphabet, position-dependent semantics. |
+| 1410 | suffix modes are atom-level category partitions | 2 | B, suffix, atom, mode, paragraph, cycling | C1229's two modes decompose at atom level: Mode A (specification) = {d,e,ee,h,y} THERMAL/MONITORING atoms (1.68-2.38x enrichment). Mode B (continuation) = {a,i,ii,l,m,n,o,r,s} STAGING/TRANSITION/FLOW atoms. Near-equal balance (51.8%/48.2%). Not arbitrary clusters — operationally grounded atom partitions. |
+
+**Phase 515 findings (Suffix Atom Decomposition, 9 tests):**
+- T1: Inventory — 16 atoms, 35 suffix types, 11,151 suffixed tokens (48.3% of B)
+- T2: Positional grammar — STRONG HEAD→TERM ordering (76.6% HEAD-initial, 100% TERM-terminal, zero violations)
+- T3: Category — V=0.174; e/ee→THERMAL, h→MONITORING/CONTAINMENT, s→TRANSITION, o→STAGING
+- T4: Macro-state — V=0.155 (weak); only m notable (20.5% AXm)
+- T5: Line position — only m (0.926, line-final) and ee (0.416, early) are specialists
+- T6: Cross-position divergence — 0/12 shared atoms stable; h most stable (JSD=0.004), m most divergent (JSD=0.560)
+- T7: Compositional structure — YES: first atom V=0.277 (category), last atom R²=0.059 (position)
+- T8: Mode decomposition — Mode A={d,e,ee,h,y} THERMAL; Mode B={a,i,ii,l,m,n,o,r,s} STAGING/FLOW
+- T9: Synthesis — suffix is parallel compositional domain: same alphabet, HEAD→TERM structure, position-dependent semantics
 
 ---
 

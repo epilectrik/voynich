@@ -4,6 +4,26 @@
 
 ---
 
+## Version 5.06.108 (2026-03-05) - Phase 515: Suffix Atom Decomposition
+
+### Summary
+
+Phase 515 decomposes the suffix domain at atom resolution, paralleling the MIDDLE encoding work (C1393-C1394). Result: suffix uses 16 atoms (a reduced subset of MIDDLE's 18 — missing k, t, p, f, c) with strong HEAD→TERM compositional structure (76.6% HEAD-initial, 100% TERM-terminal, zero violations). First atom predicts category (V=0.277), last atom predicts line position (R²=0.059). Cross-position comparison shows atoms carry different operational information in suffix vs MIDDLE position (0/12 stable, JSD range 0.004-0.560). C1229's two alternating suffix modes decompose cleanly: Mode A = {d,e,ee,h,y} THERMAL/MONITORING atoms; Mode B = {a,i,ii,l,m,n,o,r,s} STAGING/FLOW atoms.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1408: suffix has HEAD→TERM compositional structure |
+| **ADDED** | C1409: suffix atoms diverge from MIDDLE-terminal atoms (0/12 stable) |
+| **ADDED** | C1410: suffix modes are atom-level category partitions |
+| **ADDED** | `phases/SUFFIX_ATOM_DECOMPOSITION/scripts/suffix_atom_decomposition.py` |
+| **ADDED** | `phases/SUFFIX_ATOM_DECOMPOSITION/results/suffix_atom_decomposition.json` |
+| **UPDATED** | BCSC v3.24 — suffix section: added C1408-C1410 |
+| **UPDATED** | INDEX.md — +3 constraints (1254 total) |
+
+---
+
 ## Version 5.05.107 (2026-03-05) - Phase 514: Section and Paragraph AXM Drivers
 
 ### Summary
