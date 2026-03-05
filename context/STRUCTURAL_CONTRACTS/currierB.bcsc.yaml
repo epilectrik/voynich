@@ -3,7 +3,7 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.19"
+  version: "3.20"
   date: "2026-03-04"
   status: "ACTIVE"
   layer_type: "grammar contract"
@@ -1220,6 +1220,20 @@ program_structure:
       top_discriminator: "dy_frac (F=0.532) — the d-initial headless containment seal token"
       stability: "ARI=0.765 (100 bootstrap runs) — real tendencies, fuzzy boundaries"
       provenance: "C1398, C1378, C862, C1288"
+
+    ordering_null:
+      statement: "Paragraphs have NO preferred ordering within folios (7/8 tests FAIL)"
+      zone_ordinals: "All zones cluster at ~0.5 (KW p=0.289, epsilon-squared=0.016)"
+      monotonicity: "rho=-0.052, p=0.611 — no thermal-first/monitoring-last ramp"
+      zone_inertia: |
+        Transition matrix is structured (V=0.424) but reveals INERTIA, not sequence.
+        Self-transition O/E=2.02 (103 observed vs 50.9 expected).
+        Folios run consecutive paragraphs of the same operational type.
+        THERMAL↔MONITORING mutual avoidance (O/E=0.12/0.20) reflects different
+        program types, not sequential incompatibility.
+      section_controlled: "All within-section ordering tests FAIL (all p>0.17)"
+      interpretation: "Folio specifies WHAT concerns and HOW MUCH of each, not in WHAT ORDER"
+      provenance: "C1399, C1398, C845, C862"
 
   folio_paragraph_architecture:
     # Paragraph-as-unit properties (C855-C862) are now owned by PSC (paragraph.psc.yaml)
@@ -2595,6 +2609,7 @@ provenance:
     - "C1396"  # Prep PREFIX structural differentiation (7/8 non-content dimensions, atom-grounded glosses)
     - "C1397"  # Headless compound functional grammar (pseudo-HEAD, V=0.503, suffix bifurcation, da=i-initial)
     - "C1398"  # Paragraph operational gradient (continuous space, 4 zones, section V=0.408, REGIME V=0.371, C1378 connection)
+    - "C1399"  # Paragraph ordering null (7/8 FAIL, zone inertia O/E=2.02, no sequence)
 
   link:
     - "C334"   # LINK section conditioning

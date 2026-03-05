@@ -4,6 +4,24 @@
 
 ---
 
+## Version 5.04.104 (2026-03-04) - Phase 511: Paragraph Ordering Null
+
+### Summary
+
+Phase 511 tests whether the 4 operational gradient zones (C1398) follow a preferred sequence within folios. Result: NO_ORDERING (7/8 FAIL). All zones cluster at normalized ordinal ~0.5. No monotonic ramp (rho=-0.052). The one structured test (transition matrix, V=0.424) reveals zone INERTIA (self-transition O/E=2.02), not sequential ordering — folios run consecutive paragraphs of the same type. THERMAL↔MONITORING mutual avoidance (O/E=0.12/0.20) reflects different program types, not sequential incompatibility. Section-controlled: all FAIL. Folio specifies WHAT operational concerns and HOW MUCH, not in WHAT ORDER. Strengthens C845 (self-containment) and C862 (parallel programs).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1399: paragraph ordering null (8 tests, 7/8 FAIL, zone inertia O/E=2.02) |
+| **ADDED** | `phases/PARAGRAPH_ORDERING_WITHIN_FOLIOS/scripts/paragraph_ordering.py` |
+| **ADDED** | `phases/PARAGRAPH_ORDERING_WITHIN_FOLIOS/results/paragraph_ordering.json` |
+| **UPDATED** | BCSC v3.20 — paragraph section: added ordering_null subsection |
+| **UPDATED** | INDEX.md — +1 constraint (1243 total) |
+
+---
+
 ## Version 5.04.103 (2026-03-04) - Phase 510: Paragraph Operational Gradient
 
 ### Summary

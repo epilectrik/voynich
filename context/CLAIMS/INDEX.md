@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1242 validated constraints | **Version:** 5.04 | **Date:** 2026-03-04
+**Total:** 1243 validated constraints | **Version:** 5.04 | **Date:** 2026-03-04
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4570,6 +4570,24 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T6: Feature importance — dy_frac (0.532) top discriminator, then h_kernel (0.442), MONITORING (0.428)
 - T7: Stability — MODERATE (ARI=0.765, std=0.179). Real tendencies, fuzzy boundaries
 - T8: Length — SIGNIFICANT (F=8.40, p<0.0001). Zone 0 longest (7.0 lines), Zone 3 shortest (3.9 lines)
+
+---
+
+### Paragraph Ordering Within Folios (C1399) -- Phase: PARAGRAPH_ORDERING_WITHIN_FOLIOS (Phase 511)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1399 | paragraph ordering null | 2 | B, paragraph, ordering, folio, sequence | Paragraphs have NO preferred ordering within folios. 7/8 tests FAIL for sequential structure. Transition matrix (T4) is structured (V=0.424) but reveals zone INERTIA (self-transition O/E=2.02), not sequence. THERMAL↔MONITORING mutual avoidance (O/E=0.12/0.20). No monotonic ramp (rho=-0.052). Section-controlled: all FAIL. Folio specifies WHAT concerns and HOW MUCH, not in WHAT ORDER. |
+
+**Phase 511 findings (Paragraph Ordering, 8 tests):**
+- T1: Zone ordinal position — FAIL (KW H=3.76, p=0.289, all zones at ~0.5)
+- T2: First-paragraph zone — FAIL (chi2=2.63, p=0.452)
+- T3: Last-paragraph zone — FAIL (p=0.470)
+- T4: Transition matrix — PASS (chi2=99.1, V=0.424). Structure is INERTIA: self-transitions O/E=2.02
+- T5: Bigram enrichment — Z3→Z3 O/E=3.01, Z1→Z1 O/E=2.75, Z0→Z0 O/E=1.96. THERMAL→MONITORING O/E=0.12 (most depleted)
+- T6: Monotonicity — FAIL (rho=-0.052, p=0.611). No thermal→monitoring ramp
+- T7: First-half vs second-half — FAIL (chi2=3.12, p=0.374). MONITORING 1.70x enriched in FIRST half (opposite of sequence)
+- T8: Section-controlled — ALL FAIL (all p>0.17). Genuine absence, not section confound
 
 ---
 

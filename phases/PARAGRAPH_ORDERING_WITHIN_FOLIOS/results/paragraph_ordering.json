@@ -1,0 +1,407 @@
+{
+  "metadata": {
+    "phase": "PARAGRAPH_ORDERING_WITHIN_FOLIOS (Phase 511)",
+    "total_paragraphs": 264,
+    "total_folios": 80,
+    "multi_para_folios": 57,
+    "multi_zone_folios": 40,
+    "zone_names": {
+      "0": "THERMAL-QO",
+      "1": "CONTAINMENT-Sealing",
+      "2": "OPERATION-Iteration",
+      "3": "MONITORING-Phase"
+    },
+    "zone_sizes": {
+      "1": 68,
+      "0": 87,
+      "2": 75,
+      "3": 34
+    },
+    "random_seed": 42
+  },
+  "T1_zone_ordinal": {
+    "zone_means": {
+      "0": 0.5093869731800765,
+      "1": 0.4673076923076923,
+      "2": 0.5548309178743961,
+      "3": 0.4121212121212121
+    },
+    "zone_medians": {
+      "0": 0.5,
+      "1": 0.5,
+      "2": 0.6,
+      "3": 0.3333333333333333
+    },
+    "zone_sds": {
+      "0": 0.3815902494181312,
+      "1": 0.38934749187327233,
+      "2": 0.3518195337011327,
+      "3": 0.3516261580209746
+    },
+    "zone_ns": {
+      "1": 52,
+      "0": 87,
+      "2": 69,
+      "3": 33
+    },
+    "kruskal_wallis_H": 3.7595593740772593,
+    "kruskal_wallis_p": 0.2886252257460688,
+    "epsilon_squared": 0.015664830725321915,
+    "pairwise_mann_whitney": {
+      "0_vs_1": {
+        "U": 2405.0,
+        "p": 0.5267477678630658
+      },
+      "0_vs_2": {
+        "U": 2798.0,
+        "p": 0.46274439450499194
+      },
+      "0_vs_3": {
+        "U": 1642.0,
+        "p": 0.21854526178747902
+      },
+      "1_vs_2": {
+        "U": 1559.0,
+        "p": 0.2131043921076432
+      },
+      "1_vs_3": {
+        "U": 919.5,
+        "p": 0.5750739849209655
+      },
+      "2_vs_3": {
+        "U": 1399.5,
+        "p": 0.05994412666556467
+      }
+    },
+    "verdict": "NOT_SIGNIFICANT",
+    "interpretation": "Zones do NOT have distinct positional preferences within folios (KW H=3.76, p=0.2886, eps^2=0.0157). Zone ordering: MONITORING-Phase(0.412) < CONTAINMENT-Sealing(0.467) < THERMAL-QO(0.509) < OPERATION-Iteration(0.555)"
+  },
+  "T2_first_paragraph": {
+    "n_multi_zone_folios": 40,
+    "observed": {
+      "0": 14,
+      "1": 10,
+      "2": 8,
+      "3": 8
+    },
+    "expected_uniform": 10.0,
+    "expected_proportional": {
+      "0": 13.181818181818182,
+      "1": 10.303030303030303,
+      "2": 11.363636363636365,
+      "3": 5.151515151515151
+    },
+    "chi2_vs_uniform": 2.4,
+    "p_vs_uniform": 0.49363462271172787,
+    "chi2_vs_proportional": 2.630377281947263,
+    "p_vs_proportional": 0.4521888879278033,
+    "zone_0_enrichment_vs_proportional": 1.0620689655172413,
+    "verdict": "NOT_SIGNIFICANT"
+  },
+  "T3_last_paragraph": {
+    "observed": {
+      "0": 14,
+      "1": 7,
+      "2": 15,
+      "3": 4
+    },
+    "chi2_vs_uniform": 8.6,
+    "p_vs_uniform": 0.03511011567598098,
+    "chi2_vs_proportional": 2.530730223123731,
+    "p_vs_proportional": 0.4697630341138378,
+    "zone_3_enrichment_vs_proportional": 0.7764705882352941,
+    "verdict": "NOT_SIGNIFICANT"
+  },
+  "T4_transition_matrix": {
+    "total_transitions": 184,
+    "matrix": {
+      "0": {
+        "0": 45,
+        "1": 6,
+        "2": 13,
+        "3": 1
+      },
+      "1": {
+        "0": 8,
+        "1": 21,
+        "2": 8,
+        "3": 2
+      },
+      "2": {
+        "0": 10,
+        "1": 6,
+        "2": 26,
+        "3": 10
+      },
+      "3": {
+        "0": 2,
+        "1": 3,
+        "2": 12,
+        "3": 11
+      }
+    },
+    "chi2": 99.07603518363497,
+    "p_value": 2.4193010296357837e-17,
+    "dof": 9,
+    "cramers_v": 0.42365737451960633,
+    "verdict": "STRUCTURED"
+  },
+  "T5_bigram_enrichment": {
+    "enrichment_ratios": {
+      "0->0": 1.9597633136094676,
+      "0->1": 0.4717948717948718,
+      "0->2": 0.6237288135593221,
+      "0->3": 0.11794871794871796,
+      "1->0": 0.5806706114398422,
+      "1->1": 2.752136752136752,
+      "1->2": 0.6397218600608431,
+      "1->3": 0.39316239316239315,
+      "2->0": 0.5443786982248521,
+      "2->1": 0.5897435897435896,
+      "2->2": 1.559322033898305,
+      "2->3": 1.4743589743589745,
+      "3->0": 0.20219780219780217,
+      "3->1": 0.5476190476190476,
+      "3->2": 1.3365617433414045,
+      "3->3": 3.011904761904762
+    },
+    "self_transition_observed": 103,
+    "self_transition_expected": 50.91847826086956,
+    "self_transition_OE": 2.022841285089124,
+    "top_enriched": [
+      [
+        "3->3",
+        3.011904761904762
+      ],
+      [
+        "1->1",
+        2.752136752136752
+      ],
+      [
+        "0->0",
+        1.9597633136094676
+      ],
+      [
+        "2->2",
+        1.559322033898305
+      ],
+      [
+        "2->3",
+        1.4743589743589745
+      ]
+    ],
+    "top_depleted": [
+      [
+        "2->0",
+        0.5443786982248521
+      ],
+      [
+        "0->1",
+        0.4717948717948718
+      ],
+      [
+        "1->3",
+        0.39316239316239315
+      ],
+      [
+        "3->0",
+        0.20219780219780217
+      ],
+      [
+        "0->3",
+        0.11794871794871796
+      ]
+    ]
+  },
+  "T6_monotonicity": {
+    "n_folios": 40,
+    "mean_rho": -0.05161073901408122,
+    "median_rho": -0.02988071523335984,
+    "n_positive": 15,
+    "n_negative": 20,
+    "n_zero": 5,
+    "ttest_t": -0.5131295479852801,
+    "ttest_p": 0.610755325259329,
+    "wilcoxon_W": 287.0,
+    "wilcoxon_p": 0.6463828437846285,
+    "verdict": "NOT_MONOTONIC",
+    "interpretation": "Mean rho=-0.052 is not significantly different from 0 (t=-0.51, p=0.6108). 15/40 folios show positive correlation (thermal-early, monitoring-late)."
+  },
+  "T7_half_composition": {
+    "first_half_n": 107,
+    "second_half_n": 134,
+    "first_half_counts": {
+      "0": 36,
+      "1": 24,
+      "2": 28,
+      "3": 19
+    },
+    "second_half_counts": {
+      "0": 51,
+      "1": 28,
+      "2": 41,
+      "3": 14
+    },
+    "first_half_pcts": {
+      "0": 33.64485981308411,
+      "1": 22.429906542056074,
+      "2": 26.168224299065418,
+      "3": 17.75700934579439
+    },
+    "second_half_pcts": {
+      "0": 38.059701492537314,
+      "1": 20.8955223880597,
+      "2": 30.597014925373134,
+      "3": 10.44776119402985
+    },
+    "chi2": 3.1149511712890705,
+    "p_value": 0.37423928920205074,
+    "cramers_v": 0.11368864760634836,
+    "verdict": "HALVES_EQUIVALENT"
+  },
+  "T8_section_controlled": {
+    "B": {
+      "skipped": false,
+      "n_folios": 19,
+      "n_paras": 80,
+      "n_multi_zone_folios": 10,
+      "zone_means": {
+        "0": 0.5084848484848484,
+        "1": 0.45294117647058824,
+        "2": 0.619047619047619
+      },
+      "zone_ns": {
+        "0": 55,
+        "1": 17,
+        "2": 7
+      },
+      "kw_H": 0.9612840525308876,
+      "kw_p": 0.618386244119246,
+      "monotonicity_mean_rho": 0.0037639071748620466,
+      "monotonicity_n": 10,
+      "monotonicity_t": 0.01814815500746084,
+      "monotonicity_p": 0.9859166236167711,
+      "zone_order_significant": false,
+      "monotonicity_significant": false
+    },
+    "C": {
+      "skipped": false,
+      "n_folios": 4,
+      "n_paras": 14,
+      "n_multi_zone_folios": 4,
+      "zone_means": {
+        "1": 0.5694444444444444,
+        "2": 0.65,
+        "3": 0.1111111111111111
+      },
+      "zone_ns": {
+        "1": 6,
+        "2": 5,
+        "3": 3
+      },
+      "kw_H": 3.4746543778801873,
+      "kw_p": 0.17599016099571224,
+      "monotonicity_mean_rho": -0.27597254778926517,
+      "monotonicity_n": 4,
+      "monotonicity_t": -0.6387806963900144,
+      "monotonicity_p": 0.5683919289462984,
+      "zone_order_significant": false,
+      "monotonicity_significant": false
+    },
+    "H": {
+      "skipped": false,
+      "n_folios": 10,
+      "n_paras": 23,
+      "n_multi_zone_folios": 4,
+      "zone_means": {
+        "0": 0.6666666666666666,
+        "1": 0.42857142857142855,
+        "2": 0.25,
+        "3": 0.75
+      },
+      "zone_ns": {
+        "0": 3,
+        "1": 14,
+        "2": 2,
+        "3": 4
+      },
+      "kw_H": 2.3309523809523855,
+      "kw_p": 0.5066171998688063,
+      "monotonicity_mean_rho": 0.24999999999999997,
+      "monotonicity_n": 4,
+      "monotonicity_t": 0.5222329678670935,
+      "monotonicity_p": 0.6376180914006018,
+      "zone_order_significant": false,
+      "monotonicity_significant": false
+    },
+    "S": {
+      "skipped": false,
+      "n_folios": 23,
+      "n_paras": 119,
+      "n_multi_zone_folios": 21,
+      "zone_means": {
+        "0": 0.49482758620689654,
+        "1": 0.41111111111111115,
+        "2": 0.5592592592592593,
+        "3": 0.41736111111111107
+      },
+      "zone_ns": {
+        "0": 29,
+        "1": 12,
+        "2": 54,
+        "3": 24
+      },
+      "kw_H": 3.5885379360622838,
+      "kw_p": 0.30945929081042095,
+      "monotonicity_mean_rho": -0.05788355471570866,
+      "monotonicity_n": 21,
+      "monotonicity_t": -0.4930182691909362,
+      "monotonicity_p": 0.6273692386275678,
+      "zone_order_significant": false,
+      "monotonicity_significant": false
+    },
+    "T": {
+      "skipped": true,
+      "n_folios": 1
+    }
+  },
+  "summary": {
+    "test_verdicts": {
+      "T1_zone_ordinal": "False",
+      "T2_first_para": "False",
+      "T3_last_para": "False",
+      "T4_transition": "True",
+      "T6_monotonicity": "False",
+      "T7_halves": "False",
+      "T8_section_ordering_survives": false,
+      "T8_section_monotonicity_survives": false
+    },
+    "n_pass": 1,
+    "n_total": 8,
+    "overall_verdict": "WEAK_ORDERING",
+    "summary": "Paragraphs show weak positional tendencies that do not consistently survive controls. Ordering is present but not strong.",
+    "self_transition_enrichment": 2.022841285089124,
+    "zone_order_by_mean_ordinal": [
+      {
+        "zone": 3,
+        "name": "MONITORING-Phase",
+        "mean_ordinal": 0.4121212121212121
+      },
+      {
+        "zone": 1,
+        "name": "CONTAINMENT-Sealing",
+        "mean_ordinal": 0.4673076923076923
+      },
+      {
+        "zone": 0,
+        "name": "THERMAL-QO",
+        "mean_ordinal": 0.5093869731800765
+      },
+      {
+        "zone": 2,
+        "name": "OPERATION-Iteration",
+        "mean_ordinal": 0.5548309178743961
+      }
+    ]
+  }
+}
