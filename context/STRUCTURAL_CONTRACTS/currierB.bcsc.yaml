@@ -3,7 +3,7 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.18"
+  version: "3.19"
   date: "2026-03-04"
   status: "ACTIVE"
   layer_type: "grammar contract"
@@ -1184,6 +1184,42 @@ program_structure:
     self_containment:
       provenance: "C845"
     provenance: "C840-C845, C932-C935"
+
+    operational_gradient:
+      statement: "Paragraphs form a continuous operational variation space (silhouette 0.113), not discrete types"
+      gradient_zones:
+        zone_0_thermal_qo:
+          n: 87
+          signature: "THERMAL +0.69z, qo_frac +0.80z, k_kernel +0.68z"
+          section_bias: "BIO (55/87)"
+          regime_bias: "REGIME_1 (80/87)"
+        zone_1_containment_sealing:
+          n: 68
+          signature: "dy_frac +1.23z, headless_d +1.01z, CONTAINMENT +0.90z"
+          section_bias: "HERBAL (29/68)"
+          regime_bias: "Mixed"
+        zone_2_operation_iteration:
+          n: 75
+          signature: "OPERATION +0.88z, bare_frac +0.83z, headless_i +0.65z"
+          section_bias: "STARS_RECIPE (54/75)"
+          regime_bias: "REGIME_3 (34/75)"
+        zone_3_monitoring_phase:
+          n: 34
+          signature: "h_kernel +1.72z, MONITORING +1.61z, mean_middle_len +1.11z"
+          section_bias: "STARS_RECIPE (24/34)"
+          regime_bias: "REGIME_3 (23/34)"
+      section_correspondence: "V=0.408 (chi2=131.9, p=2.6e-22)"
+      regime_correspondence: "V=0.371 (chi2=108.8, p=2.5e-19)"
+      multi_type_folios: "50% (40/80 folios contain multiple zones)"
+      connection_to_c1378: |
+        Phase 492 (C1378) showed paragraphs do NOT differentiate by material
+        (dark-pipeline Jaccard 0.972 within folio). Phase 510 shows they
+        differentiate by OPERATIONAL EMPHASIS instead. Combined: same material,
+        same role proportions, different operational subroutines. Paragraphs
+        are aspects of one job, not different jobs on shared equipment.
+      top_discriminator: "dy_frac (F=0.532) — the d-initial headless containment seal token"
+      stability: "ARI=0.765 (100 bootstrap runs) — real tendencies, fuzzy boundaries"
+      provenance: "C1398, C1378, C862, C1288"
 
   folio_paragraph_architecture:
     # Paragraph-as-unit properties (C855-C862) are now owned by PSC (paragraph.psc.yaml)
@@ -2558,6 +2594,7 @@ provenance:
     - "C1221"  # Prep PREFIX similarity base-driven (shuffle p=0.998, challenges F-BRU-012)
     - "C1396"  # Prep PREFIX structural differentiation (7/8 non-content dimensions, atom-grounded glosses)
     - "C1397"  # Headless compound functional grammar (pseudo-HEAD, V=0.503, suffix bifurcation, da=i-initial)
+    - "C1398"  # Paragraph operational gradient (continuous space, 4 zones, section V=0.408, REGIME V=0.371, C1378 connection)
 
   link:
     - "C334"   # LINK section conditioning

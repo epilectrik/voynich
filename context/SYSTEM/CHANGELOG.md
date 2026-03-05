@@ -4,6 +4,24 @@
 
 ---
 
+## Version 5.04.103 (2026-03-04) - Phase 510: Paragraph Operational Gradient
+
+### Summary
+
+Phase 510 tests whether paragraphs form discrete program types. Result: paragraphs form a **continuous operational variation space** (silhouette 0.113, well below 0.25 threshold), NOT discrete types. However, 4 interpretable gradient zones emerge: THERMAL-QO (n=87, BIO/REGIME_1), CONTAINMENT-Sealing (n=68, HERBAL), OPERATION-Iteration (n=75, STARS_RECIPE/REGIME_3), MONITORING-Phase (n=34, STARS_RECIPE/REGIME_3). Strong section (V=0.408) and REGIME (V=0.371) correspondence. 50% of folios contain multiple zones. Combined with C1378 (NULL material differentiation): paragraphs are subroutines handling different operational aspects of the same job, not different jobs on shared equipment.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1398: paragraph operational gradient (8 tests, continuous space, 4 gradient zones, C1378 connection) |
+| **ADDED** | `phases/PARAGRAPH_PROGRAM_TYPING/scripts/paragraph_program_typing.py` |
+| **ADDED** | `phases/PARAGRAPH_PROGRAM_TYPING/results/paragraph_program_typing.json` |
+| **UPDATED** | BCSC v3.19 — paragraph section: added operational_gradient subsection |
+| **UPDATED** | INDEX.md — +1 constraint (1242 total) |
+
+---
+
 ## Version 5.04.102 (2026-03-04) - Phase 509: Headless Compound Functional Grammar
 
 ### Summary

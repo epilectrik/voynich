@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1241 validated constraints | **Version:** 5.04 | **Date:** 2026-03-04
+**Total:** 1242 validated constraints | **Version:** 5.04 | **Date:** 2026-03-04
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4552,6 +4552,24 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T8: Modifier ordering — SAME_GRAMMAR (61.9% vs 70.1%). c atom is primary violator
 - T9: HT association — q-initial only (100% HT). All other headless types 0.0-0.1% HT
 - T10: Sequential context — embedded in normal sequences (54.3% preceded by headed, 16.9% headless→headless)
+
+---
+
+### Paragraph Operational Gradient (C1398) -- Phase: PARAGRAPH_PROGRAM_TYPING (Phase 510)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1398 | paragraph operational gradient | 2 | B, paragraph, clustering, section, REGIME | Paragraphs form a continuous operational variation space (silhouette 0.113), NOT discrete types. 4 gradient zones: THERMAL-QO (n=87, BIO/R1), CONTAINMENT-Sealing (n=68, HERBAL), OPERATION-Iteration (n=75, STARS_RECIPE/R3), MONITORING-Phase (n=34, STARS_RECIPE/R3). Section V=0.408, REGIME V=0.371. 50% of folios multi-type. Connects to C1378 (NULL material differentiation): same material, different operational emphases. |
+
+**Phase 510 findings (Paragraph Program Typing, 8 tests):**
+- T1: Clustering — CONTINUOUS (silhouette 0.113, best k=4, all k=2-8 below 0.25)
+- T2: Zone interpretation — 4 gradient zones: THERMAL-QO (qo/k-kernel enriched), CONTAINMENT-Sealing (dy/headless_d enriched), OPERATION-Iteration (OPERATION/bare/headless_i enriched), MONITORING-Phase (h-kernel/MONITORING enriched)
+- T3: Section — STRONG (chi2=131.9, V=0.408). BIO→Zone 0, HERBAL→Zone 1, STARS_RECIPE→Zones 2-3
+- T4: REGIME — STRONG (chi2=108.8, V=0.371). R1→Zone 0, R3→Zones 2-3, R2→Zone 1
+- T5: Folio composition — 50% multi-type (mean 1.68 zones/folio). Folios combine operational emphases
+- T6: Feature importance — dy_frac (0.532) top discriminator, then h_kernel (0.442), MONITORING (0.428)
+- T7: Stability — MODERATE (ARI=0.765, std=0.179). Real tendencies, fuzzy boundaries
+- T8: Length — SIGNIFICANT (F=8.40, p<0.0001). Zone 0 longest (7.0 lines), Zone 3 shortest (3.9 lines)
 
 ---
 
