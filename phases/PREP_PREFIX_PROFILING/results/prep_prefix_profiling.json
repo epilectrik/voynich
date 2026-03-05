@@ -1,0 +1,1270 @@
+{
+  "_metadata": {
+    "phase": "PREP_PREFIX_PROFILING",
+    "phase_number": 508,
+    "description": "Comprehensive profiling of prep PREFIXes (pch, tch, dch, lch, te)",
+    "background": "C1221 showed identical MIDDLE content. C1394 provides atom-level modifier functions.",
+    "token_counts": {
+      "pch": 245,
+      "tch": 172,
+      "dch": 104,
+      "lch": 315,
+      "te": 289,
+      "ch": 3492
+    }
+  },
+  "T1_positional_differentiation": {
+    "stats": {
+      "pch": {
+        "mean": 0.2994,
+        "std": 0.3382,
+        "n": 245,
+        "line_initial_pct": 48.2,
+        "line_final_pct": 2.4
+      },
+      "tch": {
+        "mean": 0.2828,
+        "std": 0.3348,
+        "n": 172,
+        "line_initial_pct": 52.9,
+        "line_final_pct": 2.3
+      },
+      "dch": {
+        "mean": 0.1676,
+        "std": 0.2868,
+        "n": 104,
+        "line_initial_pct": 71.2,
+        "line_final_pct": 2.9
+      },
+      "lch": {
+        "mean": 0.5296,
+        "std": 0.3293,
+        "n": 315,
+        "line_initial_pct": 6.7,
+        "line_final_pct": 16.8
+      },
+      "te": {
+        "mean": 0.4409,
+        "std": 0.3396,
+        "n": 289,
+        "line_initial_pct": 19.7,
+        "line_final_pct": 5.9
+      },
+      "ch": {
+        "mean": 0.5153,
+        "std": 0.2953,
+        "n": 3492,
+        "line_initial_pct": 4.8,
+        "line_final_pct": 8.9
+      }
+    },
+    "ks_prep_pairs": {
+      "pch_vs_tch": {
+        "D": 0.0474,
+        "p": 1.0
+      },
+      "pch_vs_dch": {
+        "D": 0.2179,
+        "p": 0.001566
+      },
+      "pch_vs_lch": {
+        "D": 0.4068,
+        "p": 0.0
+      },
+      "pch_vs_te": {
+        "D": 0.2797,
+        "p": 0.0
+      },
+      "tch_vs_dch": {
+        "D": 0.1905,
+        "p": 0.015462
+      },
+      "tch_vs_lch": {
+        "D": 0.4434,
+        "p": 0.0
+      },
+      "tch_vs_te": {
+        "D": 0.3042,
+        "p": 0.0
+      },
+      "dch_vs_lch": {
+        "D": 0.6096,
+        "p": 0.0
+      },
+      "dch_vs_te": {
+        "D": 0.482,
+        "p": 0.0
+      },
+      "lch_vs_te": {
+        "D": 0.1438,
+        "p": 0.003441
+      }
+    },
+    "ks_vs_bare_ch": {
+      "pch_vs_ch": {
+        "D": 0.4262,
+        "p": 0.0
+      },
+      "tch_vs_ch": {
+        "D": 0.4566,
+        "p": 0.0
+      },
+      "dch_vs_ch": {
+        "D": 0.6277,
+        "p": 0.0
+      },
+      "lch_vs_ch": {
+        "D": 0.0854,
+        "p": 0.027701
+      },
+      "te_vs_ch": {
+        "D": 0.1568,
+        "p": 3e-06
+      }
+    },
+    "verdict": "DIFFERENTIATED",
+    "interpretation": "9/10 prep pairs significant at p<0.05 for line position"
+  },
+  "T2_sequential_context": {
+    "top3_predecessors": {
+      "pch": [
+        [
+          8,
+          11
+        ],
+        [
+          29,
+          11
+        ],
+        [
+          31,
+          7
+        ]
+      ],
+      "tch": [
+        [
+          34,
+          12
+        ],
+        [
+          8,
+          7
+        ],
+        [
+          31,
+          6
+        ]
+      ],
+      "dch": [
+        [
+          6,
+          3
+        ],
+        [
+          31,
+          2
+        ],
+        [
+          9,
+          2
+        ]
+      ],
+      "lch": [
+        [
+          33,
+          29
+        ],
+        [
+          13,
+          22
+        ],
+        [
+          34,
+          22
+        ]
+      ],
+      "te": [
+        [
+          8,
+          18
+        ],
+        [
+          34,
+          17
+        ],
+        [
+          13,
+          14
+        ]
+      ],
+      "ch": [
+        [
+          33,
+          345
+        ],
+        [
+          13,
+          190
+        ],
+        [
+          32,
+          159
+        ]
+      ]
+    },
+    "top3_successors": {
+      "pch": [
+        [
+          33,
+          17
+        ],
+        [
+          8,
+          10
+        ],
+        [
+          30,
+          8
+        ]
+      ],
+      "tch": [
+        [
+          33,
+          14
+        ],
+        [
+          31,
+          9
+        ],
+        [
+          32,
+          9
+        ]
+      ],
+      "dch": [
+        [
+          33,
+          10
+        ],
+        [
+          8,
+          8
+        ],
+        [
+          28,
+          8
+        ]
+      ],
+      "lch": [
+        [
+          33,
+          24
+        ],
+        [
+          29,
+          15
+        ],
+        [
+          8,
+          13
+        ]
+      ],
+      "te": [
+        [
+          33,
+          22
+        ],
+        [
+          13,
+          20
+        ],
+        [
+          34,
+          12
+        ]
+      ],
+      "ch": [
+        [
+          33,
+          287
+        ],
+        [
+          13,
+          156
+        ],
+        [
+          32,
+          138
+        ]
+      ]
+    },
+    "pred_chi2_prep": {
+      "chi2": 212.3,
+      "p": 0.006581,
+      "dof": 164,
+      "V": 0.308
+    },
+    "succ_chi2_prep": {
+      "chi2": 203.1,
+      "p": 0.15876,
+      "dof": 184,
+      "V": 0.271
+    },
+    "pred_chi2_all": {
+      "chi2": 462.6,
+      "p": 0.0,
+      "dof": 235,
+      "V": 0.175
+    },
+    "succ_chi2_all": {
+      "chi2": 288.0,
+      "p": 0.010399,
+      "dof": 235,
+      "V": 0.14
+    },
+    "verdict": "DIFFERENTIATED"
+  },
+  "T3_suffix_divergence": {
+    "top5_suffixes": {
+      "pch": [
+        [
+          "BARE",
+          124
+        ],
+        [
+          "ar",
+          26
+        ],
+        [
+          "dy",
+          16
+        ],
+        [
+          "aiin",
+          11
+        ],
+        [
+          "al",
+          10
+        ]
+      ],
+      "tch": [
+        [
+          "BARE",
+          126
+        ],
+        [
+          "dy",
+          8
+        ],
+        [
+          "aiin",
+          7
+        ],
+        [
+          "or",
+          6
+        ],
+        [
+          "s",
+          5
+        ]
+      ],
+      "dch": [
+        [
+          "BARE",
+          68
+        ],
+        [
+          "s",
+          7
+        ],
+        [
+          "dy",
+          6
+        ],
+        [
+          "edy",
+          4
+        ],
+        [
+          "ar",
+          3
+        ]
+      ],
+      "lch": [
+        [
+          "BARE",
+          256
+        ],
+        [
+          "edy",
+          12
+        ],
+        [
+          "hy",
+          6
+        ],
+        [
+          "am",
+          6
+        ],
+        [
+          "dy",
+          6
+        ]
+      ],
+      "te": [
+        [
+          "BARE",
+          206
+        ],
+        [
+          "dy",
+          23
+        ],
+        [
+          "ar",
+          12
+        ],
+        [
+          "ain",
+          8
+        ],
+        [
+          "edy",
+          7
+        ]
+      ],
+      "ch": [
+        [
+          "BARE",
+          1641
+        ],
+        [
+          "hy",
+          336
+        ],
+        [
+          "dy",
+          181
+        ],
+        [
+          "y",
+          172
+        ],
+        [
+          "ar",
+          160
+        ]
+      ]
+    },
+    "chi2_prep": {
+      "chi2": 183.4,
+      "p": 0.0,
+      "dof": 92,
+      "V": 0.202
+    },
+    "chi2_all": {
+      "chi2": 420.0,
+      "p": 0.0,
+      "dof": 150,
+      "V": 0.135
+    },
+    "bare_rates": {
+      "pch": 0.5061,
+      "tch": 0.7326,
+      "dch": 0.6538,
+      "lch": 0.8127,
+      "te": 0.7128,
+      "ch": 0.4699
+    },
+    "verdict": "DIFFERENTIATED"
+  },
+  "T4_regime_distribution": {
+    "distributions": {
+      "pch": {
+        "REGIME_1": 87,
+        "REGIME_2": 18,
+        "REGIME_3": 98,
+        "REGIME_4": 42
+      },
+      "tch": {
+        "REGIME_1": 50,
+        "REGIME_2": 24,
+        "REGIME_3": 75,
+        "REGIME_4": 23
+      },
+      "dch": {
+        "REGIME_1": 43,
+        "REGIME_2": 7,
+        "REGIME_3": 41,
+        "REGIME_4": 13
+      },
+      "lch": {
+        "REGIME_1": 222,
+        "REGIME_2": 9,
+        "REGIME_3": 75,
+        "REGIME_4": 9
+      },
+      "te": {
+        "REGIME_1": 138,
+        "REGIME_2": 23,
+        "REGIME_3": 71,
+        "REGIME_4": 57
+      },
+      "ch": {
+        "REGIME_1": 1678,
+        "REGIME_2": 259,
+        "REGIME_3": 1227,
+        "REGIME_4": 328
+      }
+    },
+    "chi2_prep": {
+      "chi2": 138.7,
+      "p": 0.0,
+      "dof": 12,
+      "V": 0.203
+    },
+    "chi2_all": {
+      "chi2": 158.4,
+      "p": 0.0,
+      "dof": 15,
+      "V": 0.107
+    },
+    "verdict": "DIFFERENTIATED"
+  },
+  "T5_middle_vocabulary": {
+    "top10_middles": {
+      "pch": [
+        [
+          "edy",
+          52
+        ],
+        [
+          "ed",
+          26
+        ],
+        [
+          "d",
+          19
+        ],
+        [
+          "dy",
+          18
+        ],
+        [
+          "ey",
+          16
+        ],
+        [
+          "eo",
+          13
+        ],
+        [
+          "e",
+          12
+        ],
+        [
+          "or",
+          9
+        ],
+        [
+          "eol",
+          7
+        ],
+        [
+          "ol",
+          6
+        ]
+      ],
+      "tch": [
+        [
+          "edy",
+          43
+        ],
+        [
+          "dy",
+          26
+        ],
+        [
+          "ey",
+          15
+        ],
+        [
+          "ed",
+          11
+        ],
+        [
+          "eo",
+          9
+        ],
+        [
+          "y",
+          8
+        ],
+        [
+          "o",
+          6
+        ],
+        [
+          "d",
+          6
+        ],
+        [
+          "or",
+          5
+        ],
+        [
+          "eod",
+          5
+        ]
+      ],
+      "dch": [
+        [
+          "edy",
+          26
+        ],
+        [
+          "ey",
+          7
+        ],
+        [
+          "dy",
+          7
+        ],
+        [
+          "eol",
+          7
+        ],
+        [
+          "eey",
+          6
+        ],
+        [
+          "ed",
+          6
+        ],
+        [
+          "eo",
+          6
+        ],
+        [
+          "d",
+          4
+        ],
+        [
+          "e",
+          4
+        ],
+        [
+          "ol",
+          4
+        ]
+      ],
+      "lch": [
+        [
+          "edy",
+          118
+        ],
+        [
+          "ey",
+          45
+        ],
+        [
+          "e",
+          20
+        ],
+        [
+          "dy",
+          18
+        ],
+        [
+          "eey",
+          14
+        ],
+        [
+          "ed",
+          13
+        ],
+        [
+          "y",
+          8
+        ],
+        [
+          "eol",
+          8
+        ],
+        [
+          "d",
+          7
+        ],
+        [
+          "o",
+          6
+        ]
+      ],
+      "te": [
+        [
+          "dy",
+          75
+        ],
+        [
+          "edy",
+          45
+        ],
+        [
+          "ey",
+          38
+        ],
+        [
+          "o",
+          15
+        ],
+        [
+          "d",
+          15
+        ],
+        [
+          "eo",
+          14
+        ],
+        [
+          "y",
+          12
+        ],
+        [
+          "ol",
+          12
+        ],
+        [
+          "ed",
+          11
+        ],
+        [
+          "e",
+          9
+        ]
+      ],
+      "ch": [
+        [
+          "edy",
+          508
+        ],
+        [
+          "ey",
+          259
+        ],
+        [
+          "e",
+          196
+        ],
+        [
+          "eey",
+          147
+        ],
+        [
+          "ed",
+          145
+        ],
+        [
+          "dy",
+          135
+        ],
+        [
+          "eo",
+          128
+        ],
+        [
+          "ck",
+          122
+        ],
+        [
+          "ol",
+          109
+        ],
+        [
+          "eol",
+          102
+        ]
+      ]
+    },
+    "jaccard_prep_pairs": {
+      "pch_vs_tch": 0.2714,
+      "pch_vs_dch": 0.2769,
+      "pch_vs_lch": 0.2703,
+      "pch_vs_te": 0.2778,
+      "tch_vs_dch": 0.32,
+      "tch_vs_lch": 0.3509,
+      "tch_vs_te": 0.3158,
+      "dch_vs_lch": 0.2909,
+      "dch_vs_te": 0.3529,
+      "lch_vs_te": 0.3333
+    },
+    "jaccard_vs_bare_ch": {
+      "pch_vs_ch": 0.1042,
+      "tch_vs_ch": 0.0793,
+      "dch_vs_ch": 0.0807,
+      "lch_vs_ch": 0.1115,
+      "te_vs_ch": 0.0753
+    },
+    "unique_middles": {
+      "pch": [
+        "allar",
+        "aral",
+        "cfh",
+        "dair",
+        "daro",
+        "de",
+        "dl",
+        "ecfh",
+        "edair",
+        "edch",
+        "edp",
+        "eet",
+        "eock",
+        "eocp",
+        "eodc",
+        "eoepc",
+        "eok",
+        "eolk",
+        "er",
+        "esfc",
+        "odai",
+        "oet",
+        "of",
+        "olkch",
+        "olke",
+        "sed",
+        "sod",
+        "tch"
+      ],
+      "tch": [
+        "cs",
+        "dar",
+        "dolt",
+        "edai",
+        "ede",
+        "eepch",
+        "eoko",
+        "eolc",
+        "eorsho",
+        "k",
+        "oarors",
+        "odairo",
+        "odl"
+      ],
+      "dch": [
+        "ckh",
+        "da",
+        "dal",
+        "eeokeo",
+        "efo",
+        "ekcs",
+        "eot",
+        "eyt"
+      ],
+      "lch": [
+        "ain",
+        "ck",
+        "cph",
+        "ea",
+        "eal",
+        "eala",
+        "ech",
+        "eck",
+        "edo",
+        "eeol",
+        "eoek",
+        "eolsh",
+        "eylc",
+        "g",
+        "l",
+        "pch",
+        "r"
+      ],
+      "te": [
+        "dcheo",
+        "do",
+        "dsh",
+        "dyk",
+        "echypc",
+        "edar",
+        "eolte",
+        "odaro",
+        "odk",
+        "odyteyt",
+        "oiin",
+        "olked",
+        "ols",
+        "ot",
+        "yte"
+      ]
+    },
+    "mean_prep_jaccard": 0.306,
+    "verdict": "PARTIAL"
+  },
+  "T6_paragraph_position": {
+    "stats": {
+      "pch": {
+        "mean": 0.1339,
+        "std": 0.276,
+        "n": 245,
+        "par_initial_pct": 41.2
+      },
+      "tch": {
+        "mean": 0.366,
+        "std": 0.3665,
+        "n": 172,
+        "par_initial_pct": 22.7
+      },
+      "dch": {
+        "mean": 0.5492,
+        "std": 0.3313,
+        "n": 104,
+        "par_initial_pct": 3.8
+      },
+      "lch": {
+        "mean": 0.5379,
+        "std": 0.3301,
+        "n": 315,
+        "par_initial_pct": 0.0
+      },
+      "te": {
+        "mean": 0.4268,
+        "std": 0.3278,
+        "n": 289,
+        "par_initial_pct": 4.2
+      },
+      "ch": {
+        "mean": 0.5349,
+        "std": 0.3358,
+        "n": 3492,
+        "par_initial_pct": 0.1
+      }
+    },
+    "ks_prep_pairs": {
+      "pch_vs_tch": {
+        "D": 0.3959,
+        "p": 0.0
+      },
+      "pch_vs_dch": {
+        "D": 0.6642,
+        "p": 0.0
+      },
+      "pch_vs_lch": {
+        "D": 0.6585,
+        "p": 0.0
+      },
+      "pch_vs_te": {
+        "D": 0.5506,
+        "p": 0.0
+      },
+      "tch_vs_dch": {
+        "D": 0.278,
+        "p": 6.4e-05
+      },
+      "tch_vs_lch": {
+        "D": 0.279,
+        "p": 0.0
+      },
+      "tch_vs_te": {
+        "D": 0.1692,
+        "p": 0.003567
+      },
+      "dch_vs_lch": {
+        "D": 0.0612,
+        "p": 1.0
+      },
+      "dch_vs_te": {
+        "D": 0.1478,
+        "p": 0.063841
+      },
+      "lch_vs_te": {
+        "D": 0.1518,
+        "p": 0.001657
+      }
+    },
+    "ks_vs_bare_ch": {
+      "pch_vs_ch": {
+        "D": 0.637,
+        "p": 0.0
+      },
+      "tch_vs_ch": {
+        "D": 0.2573,
+        "p": 0.0
+      },
+      "dch_vs_ch": {
+        "D": 0.0325,
+        "p": 1.0
+      },
+      "lch_vs_ch": {
+        "D": 0.0389,
+        "p": 0.821939
+      },
+      "te_vs_ch": {
+        "D": 0.1321,
+        "p": 0.000156
+      }
+    },
+    "verdict": "DIFFERENTIATED"
+  },
+  "T7_section_distribution": {
+    "distributions": {
+      "pch": {
+        "B": 42,
+        "C": 19,
+        "H": 46,
+        "S": 126,
+        "T": 12
+      },
+      "tch": {
+        "B": 31,
+        "C": 24,
+        "H": 45,
+        "S": 70,
+        "T": 2
+      },
+      "dch": {
+        "B": 32,
+        "C": 8,
+        "H": 18,
+        "S": 43,
+        "T": 3
+      },
+      "lch": {
+        "B": 126,
+        "C": 5,
+        "H": 11,
+        "S": 168,
+        "T": 5
+      },
+      "te": {
+        "B": 70,
+        "C": 33,
+        "H": 58,
+        "S": 124,
+        "T": 4
+      },
+      "ch": {
+        "B": 839,
+        "C": 156,
+        "H": 585,
+        "S": 1823,
+        "T": 89
+      }
+    },
+    "chi2_prep": {
+      "chi2": 127.3,
+      "p": 0.0,
+      "dof": 16,
+      "V": 0.168
+    },
+    "chi2_all": {
+      "chi2": 167.3,
+      "p": 0.0,
+      "dof": 20,
+      "V": 0.095
+    },
+    "verdict": "DIFFERENTIATED"
+  },
+  "T8_bare_ch_comparison": {
+    "per_prefix_divergence": {
+      "pch": {
+        "position_KS": {
+          "D": 0.4262,
+          "p": 0.0
+        },
+        "suffix_chi2": {
+          "chi2": 76.5,
+          "p": 7e-06,
+          "V": 0.143
+        },
+        "regime_chi2": {
+          "chi2": 23.0,
+          "p": 6e-05,
+          "V": 0.079
+        },
+        "section_chi2": {
+          "chi2": 15.1,
+          "p": 0.00459,
+          "V": 0.064
+        },
+        "para_pos_KS": {
+          "D": 0.637,
+          "p": 0.0
+        },
+        "middle_jaccard": 0.1042,
+        "pred_chi2": {
+          "chi2": 109.3,
+          "p": 1e-06,
+          "V": 0.207
+        },
+        "succ_chi2": {
+          "chi2": 80.0,
+          "p": 0.00192,
+          "V": 0.183
+        }
+      },
+      "tch": {
+        "position_KS": {
+          "D": 0.4566,
+          "p": 0.0
+        },
+        "suffix_chi2": {
+          "chi2": 61.8,
+          "p": 0.000387,
+          "V": 0.13
+        },
+        "regime_chi2": {
+          "chi2": 27.6,
+          "p": 9e-06,
+          "V": 0.087
+        },
+        "section_chi2": {
+          "chi2": 46.4,
+          "p": 0.0,
+          "V": 0.113
+        },
+        "para_pos_KS": {
+          "D": 0.2573,
+          "p": 0.0
+        },
+        "middle_jaccard": 0.0793,
+        "pred_chi2": {
+          "chi2": 97.9,
+          "p": 2.1e-05,
+          "V": 0.197
+        },
+        "succ_chi2": {
+          "chi2": 68.7,
+          "p": 0.021249,
+          "V": 0.17
+        }
+      },
+      "dch": {
+        "position_KS": {
+          "D": 0.6277,
+          "p": 0.0
+        },
+        "suffix_chi2": {
+          "chi2": 33.9,
+          "p": 0.243442,
+          "V": 0.097
+        },
+        "regime_chi2": {
+          "chi2": 2.6,
+          "p": 0.465569,
+          "V": 0.027
+        },
+        "section_chi2": {
+          "chi2": 6.6,
+          "p": 0.159747,
+          "V": 0.043
+        },
+        "para_pos_KS": {
+          "D": 0.0325,
+          "p": 1.0
+        },
+        "middle_jaccard": 0.0807,
+        "pred_chi2": {
+          "chi2": 85.6,
+          "p": 0.000507,
+          "V": 0.185
+        },
+        "succ_chi2": {
+          "chi2": 56.6,
+          "p": 0.158577,
+          "V": 0.156
+        }
+      },
+      "lch": {
+        "position_KS": {
+          "D": 0.0854,
+          "p": 0.027701
+        },
+        "suffix_chi2": {
+          "chi2": 159.7,
+          "p": 0.0,
+          "V": 0.205
+        },
+        "regime_chi2": {
+          "chi2": 62.4,
+          "p": 0.0,
+          "V": 0.128
+        },
+        "section_chi2": {
+          "chi2": 68.4,
+          "p": 0.0,
+          "V": 0.134
+        },
+        "para_pos_KS": {
+          "D": 0.0389,
+          "p": 0.821939
+        },
+        "middle_jaccard": 0.1115,
+        "pred_chi2": {
+          "chi2": 128.8,
+          "p": 0.0,
+          "V": 0.219
+        },
+        "succ_chi2": {
+          "chi2": 52.3,
+          "p": 0.276296,
+          "V": 0.146
+        }
+      },
+      "te": {
+        "position_KS": {
+          "D": 0.1568,
+          "p": 3e-06
+        },
+        "suffix_chi2": {
+          "chi2": 108.0,
+          "p": 0.0,
+          "V": 0.169
+        },
+        "regime_chi2": {
+          "chi2": 36.8,
+          "p": 0.0,
+          "V": 0.099
+        },
+        "section_chi2": {
+          "chi2": 33.5,
+          "p": 2e-06,
+          "V": 0.094
+        },
+        "para_pos_KS": {
+          "D": 0.1321,
+          "p": 0.000156
+        },
+        "middle_jaccard": 0.0753,
+        "pred_chi2": {
+          "chi2": 98.4,
+          "p": 1.8e-05,
+          "V": 0.193
+        },
+        "succ_chi2": {
+          "chi2": 51.4,
+          "p": 0.306539,
+          "V": 0.145
+        }
+      }
+    },
+    "total_significant": 27,
+    "max_possible": 35,
+    "verdict": "DIFFERENTIATED"
+  },
+  "verdicts": {
+    "T1_position": "DIFFERENTIATED",
+    "T2_context": "DIFFERENTIATED",
+    "T3_suffix": "DIFFERENTIATED",
+    "T4_regime": "DIFFERENTIATED",
+    "T5_vocabulary": "PARTIAL",
+    "T6_paragraph": "DIFFERENTIATED",
+    "T7_section": "DIFFERENTIATED",
+    "T8_bare_ch": "DIFFERENTIATED"
+  },
+  "overall_verdict": "PREP_PREFIXES_DIFFERENTIATED",
+  "overall_interpretation": "Prep PREFIXes show genuine multi-dimensional differentiation despite C1221's finding of identical MIDDLE category content. The modifier characters (p, t, d, l) alter non-content dimensions: position, suffix, REGIME, section, or sequential context."
+}

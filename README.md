@@ -10,8 +10,8 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 
 | Metric | Value |
 |--------|-------|
-| Validated constraints | 1,239 |
-| Research phases completed | 507 |
+| Validated constraints | 1,240 |
+| Research phases completed | 508 |
 | Model fits tested | 75 |
 | Constraint tiers | 0 (frozen fact) through 4 (exploratory) |
 
@@ -86,7 +86,7 @@ Key alignments:
 - **Fire degrees**: Brunschwig's 4 fire degrees correlate with Voynich LINK/FL ratio as stability proxy (rho = -0.457, p < 0.0001)
 - **Material-apparatus separation**: Both systems encode procedures independently of materials
 - **Sensory modalities**: Both use categorical sensory tests without instruments
-- **Illustration anchoring**: Root-emphasized plant illustrations correlate with POUND/CHOP operations (r = 0.366, p = 0.0007)
+- **Illustration anchoring**: Root-emphasized plant illustrations correlate with preparation-class PREFIX operations (r = 0.366, p = 0.0007)
 
 ## Historical Context
 
@@ -155,7 +155,7 @@ Renders any Currier B folio with morphological parse, structural roles, interpre
 
 ```
 voynich/
-  context/            # Constraint system (1,239 validated constraints)
+  context/            # Constraint system (1,240 validated constraints)
     CLAUDE_INDEX.md   # Start here for full documentation
     CLAIMS/           # Individual constraint files
     ARCHITECTURE/     # System architecture docs (A, B, AZC, cross-system)
@@ -164,7 +164,7 @@ voynich/
     SPECULATIVE/      # Tier 3-4 interpretations
   data/               # Transcript, dictionaries, Brunschwig recipes
   scripts/            # voynich.py core library + analysis tools
-  phases/             # 507 completed research phases
+  phases/             # 508 completed research phases
   results/            # Legacy analysis outputs (early phases; new results go in phases/)
   folio_analysis/     # Per-folio hazard maps
   annotation_data/    # Folio annotation work

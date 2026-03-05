@@ -4,6 +4,25 @@
 
 ---
 
+## Version 5.04.101 (2026-03-04) - Phase 508: Prep PREFIX Profiling
+
+### Summary
+
+Phase 508 resolves the prep PREFIX glossing question. C1221 (Phase 434) had collapsed the Brunschwig-derived verb glosses (CHOP, POUND, STRIP, GATHER) to generic "process" after showing identical MIDDLE category content (cosine 0.963, shuffle p=0.998). Phase 508 tests 7 non-content dimensions and finds 7/8 DIFFERENTIATED. Prep PREFIXes share MIDDLE content but diverge strongly on position (dch 71.2% line-initial, lch mean 0.530), paragraph position (pch 41.2% par-initial, lch 0%), suffix bare rate (pch 50.6%, lch 81.3%), REGIME (lch 70.5% R1, pch/tch 40-44% R3), section (lch 40% Section B), and sequential context (V=0.308). Atom-grounded glosses replace generic "process": pch=stage-test, tch=transfer-test, dch=mark-test, lch=hold-test, te=transfer-cool. Three positional tiers emerge: OPENER (pch, dch, tch), BODY (te), SUSTAINER (lch).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1396: prep PREFIX structural differentiation (8 tests, 7/8 differentiated, atom-grounded glosses) |
+| **ADDED** | `phases/PREP_PREFIX_PROFILING/scripts/prep_prefix_profiling.py` |
+| **ADDED** | `phases/PREP_PREFIX_PROFILING/results/prep_prefix_profiling.json` |
+| **UPDATED** | GLOSSING.md — prep PREFIX glosses revised from "process" to atom-grounded (pch=stage-test, etc.) |
+| **UPDATED** | README.md, GUIDE.md — POUND/CHOP references replaced with "preparation-class PREFIX operations" |
+| **UPDATED** | INDEX.md — +1 constraint (1240 total) |
+
+---
+
 ## Version 5.04.100 (2026-03-04) - Phase 507: Cross-System Instruction Encoding
 
 ### Summary

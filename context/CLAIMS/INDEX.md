@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1239 validated constraints | **Version:** 5.04 | **Date:** 2026-03-04
+**Total:** 1240 validated constraints | **Version:** 5.04 | **Date:** 2026-03-04
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4514,6 +4514,24 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T5: A-exclusive frames — only 2 A-exclusive frames (k+n, k+t); 17 B-only execution frames. dy cliff: 144x B-enriched. A=state descriptions (l 1.84x), B=action instructions (dy 14.4%)
 - T6: A record → B folio prediction — statistically significant (z=+8.60) but practically flat (R²<5%). Near-saturation: each A record → ~81/82 B folios. Confirms C1136/C484 pool relationship
 - T7: Situation description tests — P8 CONFIRMED (within-folio Jaccard 1.22x, z=+20.9), P10 CONFIRMED (positional grammar all p≈0), P6 PARTIAL (confounded by record length)
+
+---
+
+### Prep PREFIX Profiling (C1396) -- Phase: PREP_PREFIX_PROFILING (Phase 508)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1396 | prep PREFIX structural differentiation | 2 | B, PREFIX, prep, position, REGIME, suffix, atom | Prep PREFIXes share MIDDLE content (C1221) but differentiate on 7/8 non-content dimensions: position, paragraph, suffix, REGIME, section, context, vocabulary. pch=paragraph-opener (41.2%), dch=line-initial (71.2%), lch=sustainer (REGIME_1 70.5%, 81.3% bare, 0% par-initial). Atom glosses align: pch=stage-test, tch=transfer-test, dch=mark-test, lch=hold-test. Revises C1221 collapse to generic "process." |
+
+**Phase 508 findings (Prep PREFIX Profiling, 8 tests):**
+- T1: Line position — DIFFERENTIATED (9/10 KS pairs significant; dch 71.2% line-initial, lch mean 0.530)
+- T2: Sequential context — DIFFERENTIATED (predecessor chi2=212.3, V=0.308, p=0.007)
+- T3: Suffix patterns — DIFFERENTIATED (bare rates: pch 50.6%, lch 81.3%; chi2=183.4, V=0.202)
+- T4: REGIME distribution — DIFFERENTIATED (lch 70.5% R1, pch/tch 40-44% R3; chi2=138.7, V=0.203)
+- T5: MIDDLE vocabulary — PARTIAL (mean Jaccard 0.306; top MIDDLEs overlap but vocabulary sets only 31% shared)
+- T6: Paragraph position — DIFFERENTIATED (pch 41.2% par-initial vs lch 0%; 8/10 KS pairs significant)
+- T7: Section distribution — DIFFERENTIATED (lch 40% Section B; chi2=127.3, V=0.168)
+- T8: Bare ch comparison — DIFFERENTIATED (27/35 dimension-prefix pairs significant; pch/tch diverge on all 7)
 
 ---
 

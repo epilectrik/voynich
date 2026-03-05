@@ -891,8 +891,14 @@ SUFFIX semantic correlation:
 - Section-material correspondence: CONFIRMED
 - PREFIX modification system: CONFIRMED (lch diversity)
 - SUFFIX × Section correlation: CONFIRMED (statistical)
-- Specific operation names: SPECULATIVE (Tier 3)
-- Token-level interpretations: SPECULATIVE (Tier 4)
+- Specific operation names: **REVISED by C1396** — CHOP/POUND/STRIP/GATHER replaced by atom-grounded glosses (pch=stage-test, tch=transfer-test, dch=mark-test, lch=hold-test, te=transfer-cool)
+- Token-level interpretations: SPECULATIVE (Tier 4) — verb glosses should use C1396 atom-grounded labels
+
+### C1396 Revision Note (Phase 508)
+
+C1221 (Phase 434) showed that the MIDDLE content of prep PREFIXes is identical (cosine 0.963, shuffle p=0.998), challenging the specific verb glosses. C1396 (Phase 508) confirmed that the specific action verbs (CHOP, POUND, STRIP, GATHER) do not hold as *operation type* labels — the MIDDLEs are the same. However, C1396 found that the modifiers (p, t, d, l) differentiate on 7/8 non-content dimensions (position, paragraph position, suffix rate, REGIME, section, sequential context). The functional differentiation is real but the axis is *structural role* (where/when in the sequence), not *physical action* (what you do). Revised glosses are atom-grounded: pch=stage-test, tch=transfer-test, dch=mark-test, lch=hold-test.
+
+The frequency rank correlation (rho=1.000) and section-material correspondence remain CONFIRMED — these structural facts are independent of specific verb labels.
 
 ### Naming Note
 

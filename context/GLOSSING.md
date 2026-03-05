@@ -107,13 +107,17 @@ All glosses below have been validated by the expert-advisor agent against the co
 
 | Prefix | Gloss | Notes |
 |---|---|---|
-| pch, tch, fch | process, process, process | Prep operations (C1221: collapsed to generic "process"). pch/tch/fch peak R2 (1.4-2.0x). Low confidence on specific verbs. Test 18 |
+| pch | stage-test | C1396: paragraph-opener (41.2% par-initial), suffix-heavy (50.6% bare), REGIME_3. p=pause/marking + ch=test. Atom-grounded. |
+| tch | transfer-test | C1396: initial-biased (52.9%), REGIME_3 (43.6%), highest Section C. t=transfer + ch=test. Atom-grounded. |
+| dch | mark-test | C1396: most line-initial (71.2%). d=mark + ch=test. Atom-grounded. |
+| fch | flag-test | f=flag + ch=test. No C1396 profiling (low frequency). Atom-inferred. |
 | kch | precision-heat | Retained specific label: k+ch compound. Test 18 |
-| lk, lch, lsh | process, process, link | L-compound prefixes. C298: NOT LINK (C609), L-modifier. lk peaks R2 (1.8x). Test 18 |
-| ke, te, se, de, pe | heat-burst, process, scaffold, divide, start | Compound prefixes. ke updated per C1226. te = "process" (C1221 collapse). |
+| lch | hold-test | C1396: sustainer (81.3% bare, REGIME_1 70.5%, 0% par-initial, Section B 40%). l=state + ch=test. Atom-grounded. |
+| lk, lsh | hold-heat, hold-monitor | L-compound prefixes. C298: NOT LINK (C609), L-modifier. lk peaks R2 (1.8x). Test 18 |
+| ke, te, se, de, pe | heat-burst, transfer-cool, scaffold, divide, start | Compound prefixes. ke updated per C1226. te = "transfer-cool" (C1396: body position, distributed REGIMEs). |
 | so, po, do, ko | scaffold, pre-work, mark, heat-work | Compound [C]+o prefixes. so peaks R1 (1.9x, pos 0.190), po peaks R2 (pos 0.107 = line-initial). Test 18 |
 | ta, ka | transfer-yield, heat-yield | Compound [C]+a prefixes. ta peaks R2 (1.8x), ka peaks R2 (1.3x, pos 0.570 = late). Test 18 |
-| dch, rch, sch | process, process, process | Compound [C]+ch prefixes. C1221: collapsed to generic "process". Test 18 |
+| rch, sch | respond-test, sequence-test | Compound [C]+ch prefixes. Atom-inferred from C1394; no C1396 profiling (low frequency). |
 
 ### Middles (Operation Types) — Top Frequency
 
@@ -302,7 +306,7 @@ Empirical tests to validate, refine, or reject gloss assignments. Tests and resu
 | 19 | suffix_regime_discrimination.py | **Suffix REGIME test. NEGATIVE RESULT.** Suffixes are NOT apparatus-specific (1/9 PASS). Only -am (finalize) peaks R2 correctly. However, suffix POSITIONS shift by regime: -ly shifts 0.241 (late in R3, mid in R4), -ain shifts 0.128 (early in R2, late in R4). Conclusion: suffixes are universal grammar markers. Apparatus info is in middles (high) and prefixes (moderate), not suffixes. |
 | 20 | ch_sh_sensory_modality.py | **ch/sh sensory modality discrimination. C929.** ch=active state testing (pos 0.515), sh=passive process monitoring (pos 0.396), delta +0.120. ch gets checkpoint suffixes 1.87x; sh followed by heat 18.3% (monitoring fire), ch followed by input 1.98x and iterate 2.01x (testing then acting). Maps to Brunschwig: sh=drip watching/fire monitoring (continuous), ch=finger test/taste test/thumbnail (discrete sampling). Folio-unique middles amplify delta to +0.156. |
 | 21 | fix_ch_sh_glosses.py | Applied C929 vocabulary to 159 token glosses: ch "check"->"test" (106), sh "observe"->"monitor" (45). Compound prefixes initially overcorrected (pch/tch/fch lost prep verbs). |
-| 22 | restore_prep_verbs.py | Restored F-BRU-012 prep verbs overcorrected by Test 21: pch="chop" (2), tch="pound" (3), fch="prepare" (3). These are Brunschwig-grounded active interactions, compatible with C929 (ch=active). |
+| 22 | restore_prep_verbs.py | Restored F-BRU-012 prep verbs overcorrected by Test 21: pch="chop" (2), tch="pound" (3), fch="prepare" (3). **SUPERSEDED by C1396:** atom-grounded glosses (pch=stage-test, tch=transfer-test, dch=mark-test, lch=hold-test) replace both Brunschwig verbs and generic "process". |
 | 23 | full_gloss_refresh.py | **Full refresh.** 5 new suffix glosses (-eey=extended, -ry=output, -eol=sustain, -om=work-final, -im=iterate-final). Auto-composed 2,973 tokens. Token coverage: **67.8% -> 95.6%**. Zero stale prefix fixes needed (Tests 21-22 already caught them). |
 | 24 | edy_batch_regloss.py | **Cracked the "standard" problem.** Middle `edy` (1,763 tokens, 5% of B) reglossed from "standard" to "batch." Proved edy is genuine middle, NOT misparse of ed+y or e+dy (prep prefix test: pchedy/tchedy make no sense as "chop cool" or "chop discharge"). Folio-level correlation with e/ed near zero (r~0.13). edy sits in heat-check-heat cycles (26.9% followed by heat). 49 token glosses updated. |
 | 25 | ok_three_operations.py + apply_ok_glosses.py | **SUPERSEDED by Test 26.** Originally found three Brunschwig sealing operations (LUTE_JOINTS/PLUG/COVER). Distributional evidence valid but verb-based glosses produce incoherent line readings. |

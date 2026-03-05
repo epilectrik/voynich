@@ -3,7 +3,7 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.16"
+  version: "3.17"
   date: "2026-03-04"
   status: "ACTIVE"
   layer_type: "grammar contract"
@@ -444,13 +444,22 @@ morphology:
         k_base: {dominant_axis: "ITERATION+STABILITY (68%)", prefixes: ["ok", "lk", "yk"]}
       provenance: "C1219"
     prep_prefix_reinterpretation:
-      statement: "Prep PREFIXes (pch, tch, dch, te, lch) are NOT distinct operation types"
-      evidence: "Mean pairwise cosine 0.963, shuffle p=0.998 (random groups of 5 achieve equal or greater similarity)"
-      explanation: "Similarity fully explained by shared h-base (4 of 5 are h-based)"
-      reinterpretation: "Prep PREFIXes are h-base mode variants differentiated by modifier character and line position, not by operational content"
-      challenges: "F-BRU-012 distinct operation assignment (CHOP, POUND, STRIP, GATHER) — does not falsify fit, but specific glosses are challenged"
-      provenance: "C1221"
-    provenance: "C911, C661, C662, C936, C1015, C1219, C1221"
+      statement: "Prep PREFIXes (pch, tch, dch, te, lch) share MIDDLE content (C1221) but are structurally differentiated on 7/8 non-content dimensions (C1396)"
+      content_similarity: "Mean pairwise cosine 0.963, shuffle p=0.998 — MIDDLE content identical (C1221 HOLDS)"
+      structural_differentiation: "7/8 tests DIFFERENTIATED: position, paragraph, suffix, REGIME, section, context, bare-ch comparison"
+      three_tiers:
+        opener: "pch (41.2% par-initial), dch (71.2% line-initial), tch (52.9% line-initial) — open sequences"
+        body: "te — mid-line, mid-paragraph, distributed REGIMEs"
+        sustainer: "lch — interior (0% par-initial), REGIME_1 (70.5%), 81.3% bare, Section B (40%)"
+      atom_glosses:
+        pch: "stage-test (p=pause + ch=test)"
+        tch: "transfer-test (t=transfer + ch=test)"
+        dch: "mark-test (d=mark + ch=test)"
+        lch: "hold-test (l=state + ch=test)"
+        te: "transfer-cool (t=transfer + e=cool)"
+      challenges: "F-BRU-012 specific action verbs (CHOP, POUND, STRIP, GATHER) replaced by atom-grounded glosses"
+      provenance: "C1221, C1396"
+    provenance: "C911, C661, C662, C936, C1015, C1219, C1221, C1396"
 
   prefix_positional_zones:
     # Tier 2 structural fact: PREFIX encodes line position (dual encoding with content)
@@ -1072,11 +1081,13 @@ program_structure:
         fl_reset_genuine: "B->B regression 49.7% > cross-mode 40.5% — FL cycling is B-track internal (C1259 T5)"
         prefix_switching_mixture: "Within-mode JSD 0.326 < cross-mode 0.352 (p=0.002) — partly mode alternation (C1259 T6)"
       prep_reinterpretation: |
-        C1221 shows prep PREFIXes are NOT distinct operation verbs but h-base
-        variants (mean pairwise cosine 0.963, shuffle p=0.998). Prep MIDDLEs
-        are overwhelmingly Mode A vocabulary (77%, C1259 T3). Their apparent
-        early concentration was a Mode A property, not a positional gradient.
-      prep_reinterpretation_provenance: "C1221, C1230, C1259"
+        Prep PREFIXes share MIDDLE content (C1221: cosine 0.963, p=0.998) but
+        are structurally differentiated on 7/8 non-content dimensions (C1396).
+        Three positional tiers: OPENER (pch/dch/tch), BODY (te), SUSTAINER (lch).
+        Atom-grounded glosses: pch=stage-test, tch=transfer-test, dch=mark-test,
+        lch=hold-test. Prep MIDDLEs are overwhelmingly Mode A vocabulary (77%,
+        C1259 T3). Their apparent early concentration was a Mode A property.
+      prep_reinterpretation_provenance: "C1221, C1230, C1259, C1396"
       parallel_tracks:
         statement: "Mode A and B lines form coupled parallel sequential tracks within paragraphs (C1258, 5/5 PASS)"
         mode_b_track: "Continuous track — vocabulary (p=0.000), kernel (p=0.000), FL (p=0.001) continuity across interleaved A-line interruptions"
@@ -2539,6 +2550,7 @@ provenance:
     - "C1219"  # Base character determines MIDDLE content (within-base cosine 0.950)
     - "C1220"  # Modifier consistency varies by character (high o=0.836, low d=0.345)
     - "C1221"  # Prep PREFIX similarity base-driven (shuffle p=0.998, challenges F-BRU-012)
+    - "C1396"  # Prep PREFIX structural differentiation (7/8 non-content dimensions, atom-grounded glosses)
 
   link:
     - "C334"   # LINK section conditioning

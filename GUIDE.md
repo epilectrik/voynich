@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,239 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,240 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -389,7 +389,7 @@ Across four independent test suites (28 tests total):
 - **Fire degrees**: Brunschwig's 4 fire degrees (low flame to open flame) correlate with Voynich process stability metrics (rho = -0.457, p < 0.0001)
 - **Material-apparatus separation**: Both systems encode procedures independently of the specific materials being processed
 - **Sensory modalities**: Both use categorical sensory tests (look, smell, touch) without instruments
-- **Illustration anchoring**: Root-emphasized plant illustrations correlate with POUND/CHOP operations (r = 0.366, p = 0.0007)
+- **Illustration anchoring**: Root-emphasized plant illustrations correlate with preparation-class PREFIX operations (r = 0.366, p = 0.0007)
 
 ### Process Dimensionality
 

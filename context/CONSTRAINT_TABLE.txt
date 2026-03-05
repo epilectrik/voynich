@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1239 constraints | 2026-03-04
+CONSTRAINT_REFERENCE v2.6 | 1240 constraints | 2026-03-04
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1243,3 +1243,4 @@ C1392	f-atom marking flag profile	2	B	f=flag remains PLAUSIBLE; #2 MARKING atom 
 C1393	compound MIDDLE composition grammar	2	B, grammar, composition	Head-initial three-slot grammar (V=0.593): HEAD (a,e,o) + MODIFIER (p,c,i,f,d,s) + TERMINAL (l,r,h,y,m,n) + FREE (k,t). First atom predicts category 74-76%. k/t role-dual: actor under qo, target under ch/sh. Replicates C1209 (15/19). Channel-specific slot modulation.
 C1394	instruction encoding architecture	2	GLOBAL, grammar, composition	HEAD+MOD*+TERM with variable-length ordered modifier stack (p->f->i->c->d->s). Frame predicts 64% of category; modifiers shift 36%. Fusion gradient: only dy hard-fused, most "macro-atoms" are adjacent slots. Suffix confirmed independent layer (entropy 1.475 bits). Scope upgraded to GLOBAL by C1395 (Phase 507).
 C1395	cross-system instruction encoding	2	GLOBAL, grammar, composition	HEAD+MOD*+TERM architecture is manuscript-wide: A-exclusive MIDDLEs follow same slot grammar (Fisher p=0.90, pair-lock 84.2%, V=0.114). Bridge MIDDLEs 100% category stable (V=0.562). A enriched in state terminals (l 1.84x), B in action terminals (dy 144x). A records show positional grammar: o-HEAD leads, headless trails.
+C1396	prep PREFIX structural differentiation	2	B, PREFIX, prep, position, REGIME, suffix, atom	Prep PREFIXes share MIDDLE content (C1221) but differentiate on 7/8 non-content dimensions: position, paragraph, suffix, REGIME, section, context, vocabulary. pch=paragraph-opener (41.2%), dch=line-initial (71.2%), lch=sustainer (REGIME_1 70.5%, 81.3% bare, 0% par-initial). Atom glosses align: pch=stage-test, tch=transfer-test, dch=mark-test, lch=hold-test. Revises C1221 collapse to generic "process."
