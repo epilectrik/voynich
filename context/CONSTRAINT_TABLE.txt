@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1274 constraints | 2026-03-05
+CONSTRAINT_REFERENCE v2.6 | 1277 constraints | 2026-03-05
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1278,3 +1278,6 @@ C1427	line-final transition profile	2	B, line, position, final, transition, clos
 C1428	THERMAL-peak-then-decline positional gradient	2	B, line, position, gradient, category, THERMAL	THERMAL peaks Q1 (29.4%) not Q0 (24.3%) because Q0 is specification zone. Declines to 17.6% Q4. FLOW rises monotonically (17.6%->22.6%). TRANSITION jumps Q4 (14.1%->19.1%). BARE rises Q0->Q4 (14.3%->21.9%).
 C1429	cross-line category independence	2	B, line, independence, category, cross-line	Suffix mode MI=0.003, category MI=0.032 bits, vocabulary Jaccard=0.153. Line length r=0.406 (folio-mediated). Extends C670/C673/C674/C1233. Lines are i.i.d. samples conditioned on folio identity.
 C1430	information U-shape at line boundaries	2	B, line, information, position, boundary	Token info U-shape: Q0=10.29, Q1-Q3=9.58-9.62, Q4=10.11 bits. Boundaries more informative than interior. Initial=specification (folio-specific), final=routing (closure markers), interior=routine thermal.
+C1431	non-PREFIX features add zero predictive power for paragraph AXM	2	B, paragraph, AXM, MIDDLE, suffix, articulator, line, design-freedom	41 features across 8 groups (HEAD, TERMINAL, suffix, line, articulator, kernel, MIDDLE props, interactions) all show negative or zero delta beyond PREFIX. Full model CV R2=0.707 vs PREFIX-only 0.711. All non-PREFIX features are PREFIX-mediated (C1411, C1418, C1422) or irrelevant.
+C1432	paragraph AXM residual is 85% measurement noise	2	B, paragraph, AXM, noise, design-freedom, C1169, C1405	29.4% residual = 25.2% binomial sampling noise + 4.2% genuine freedom. Noise = 85.5% of residual. Theoretical max R2=0.748; PREFIX achieves 0.706 (94.4% of max). Residuals normal (Shapiro-Wilk p=0.152), section-neutral (p=0.061), REGIME-neutral (p=0.444). Refines C1169.
+C1433	PREFIX-AXM mediation chain is complete at paragraph level	2	B, paragraph, AXM, PREFIX, mediation, C1405, C1411, C1418, C1422	PREFIX is sole load-bearing predictor. Complete mediation: PREFIX->HEAD (C1411), PREFIX->ART (C1418), MIDDLE->suffix (C1422). No interaction or structural feature carries independent signal. 4.2% genuine freedom is irreducible per-program variation.

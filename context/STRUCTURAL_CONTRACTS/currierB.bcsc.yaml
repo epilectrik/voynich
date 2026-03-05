@@ -1409,15 +1409,31 @@ convergence:
     provenance: "C1404"
 
   paragraph_axm_drivers:
-    dominant_predictor: "PREFIX composition (CV R2=0.736)"
+    dominant_predictor: "PREFIX composition (CV R2=0.706-0.736)"
     section_only: "CV R2=-0.027 (worse than grand mean)"
-    full_model: "CV R2=0.760"
+    full_model: "CV R2=0.707 (41 features WORSE than PREFIX-only 0.711)"
     section_marginal: "+1.7% (effectively zero)"
     top_predictors: "qo_frac (+0.576), staging_frac (-0.525), bare_frac (-0.515), chsh_frac (+0.508)"
-    residual: "24% = paragraph-level design freedom"
     universality: "PREFIX-AXM mapping consistent across all sections (6/7 features sign-consistent)"
     chain: "section -> REGIME -> PREFIX -> AXM (section fully mediated)"
-    provenance: "C1405, C1406, C1407"
+    residual_decomposition:
+      total_residual: "29.4%"
+      measurement_noise: "25.2% (binomial sampling variance from finite tokens per paragraph)"
+      genuine_freedom: "4.2% (irreducible per-program design choice)"
+      noise_in_residual: "85.5%"
+      theoretical_max_r2: 0.748
+      prefix_fraction_of_max: "94.4%"
+      note: "Refines C1169's 27% to ~4% genuine + ~25% noise at paragraph level"
+    mediation_completeness:
+      statement: "PREFIX is sole load-bearing predictor. All non-PREFIX features fully mediated."
+      head_atoms_delta: "-0.005 (mediated by C1411)"
+      suffix_delta: "-0.003 (mediated by C1422)"
+      articulator_delta: "-0.002 (mediated by C1418)"
+      kernel_delta: "0.000"
+      line_structure_delta: "+0.0004"
+      interactions_delta: "-0.155 (overfitting)"
+      note: "Instruction grammar has ONE dynamical control point: PREFIX composition"
+    provenance: "C1405, C1406, C1407, C1431, C1432, C1433"
 
 # ============================================================
 link_operator:
@@ -2141,7 +2157,7 @@ vocabulary_architecture:
       c1035_trajectory: "~57% → ~49% → ~32% → ~27% irreducible"
       provenance: "C1168"
     residual_freedom_closure:
-      statement: "AXM residual CLOSED at ~27% — genuine per-program design freedom"
+      statement: "AXM residual CLOSED at ~27% folio-level — refined to ~4% genuine + ~25% noise at paragraph level (C1432)"
       exhaustive_battery: "5 tests, 23 candidate predictors"
       univariate_holm_sig: 0  # out of 23
       rf_cv_r2: -0.141  # permutation p=0.375
@@ -2149,8 +2165,9 @@ vocabulary_architecture:
       regime_kw_p: 0.998  # perfect homogeneity
       c458_asymmetry: "SYMMETRIC — freedom not preferentially in recovery space"
       c1035_final_trajectory: "~57% → ~49% → ~32% → ~27% CLOSED"
-      interpretation: "73% structurally determined (dual boundary model), 27% genuine per-program design freedom"
-      provenance: "C1169"
+      interpretation: "73% structurally determined (dual boundary model), 27% folio-level residual. At paragraph level: 70.6% PREFIX + 25.2% noise + 4.2% genuine freedom (C1432)"
+      paragraph_noise_decomposition: "C1432 shows 85.5% of paragraph residual is binomial sampling noise. True design freedom ~4.2%"
+      provenance: "C1169, C1431, C1432, C1433"
     dark_pipeline_profile:
       compound_rate: "66.7%"
       section_concentration: "Herf 0.716 (strongly section-specific)"
@@ -2764,6 +2781,9 @@ provenance:
     - "C1405"  # Paragraph AXM rate driven by PREFIX not section
     - "C1406"  # Section is REGIME composition at paragraph level
     - "C1407"  # PREFIX-AXM relationship universal across sections
+    - "C1431"  # Non-PREFIX features add zero AXM power (41 features, 8 groups, all redundant)
+    - "C1432"  # Paragraph AXM residual = 85% noise + 4.2% genuine freedom
+    - "C1433"  # PREFIX-AXM mediation chain complete (sole load-bearing predictor)
 
   recovery:
     - "C397"   # qo-prefix post-source frequency (REVISED: lane transition, not escape)

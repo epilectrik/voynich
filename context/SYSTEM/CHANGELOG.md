@@ -4,6 +4,27 @@
 
 ---
 
+## Version 5.11.113 (2026-03-05) - Phase 520: Paragraph AXM Residual
+
+### Summary
+
+Phase 520 systematically decomposes the ~24% paragraph AXM variance unexplained by PREFIX composition (C1405). 10 tests across 41 features, 283 paragraphs, 23,096 tokens. No non-PREFIX feature adds predictive power -- full 41-feature model DEGRADES vs PREFIX-only (CV R2=0.707 vs 0.711). The residual decomposes as 25.2% binomial sampling noise + 4.2% genuine design freedom. PREFIX achieves 94.4% of the theoretical maximum R2. All non-PREFIX correlations (HEAD atoms, suffix mode, articulators) are fully PREFIX-mediated via C1411/C1418/C1422. Refines C1169's "~27% design freedom" to "~4% genuine + ~25% noise" at paragraph level.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1431: non-PREFIX features add zero predictive power for paragraph AXM |
+| **ADDED** | C1432: paragraph AXM residual is 85% measurement noise |
+| **ADDED** | C1433: PREFIX-AXM mediation chain is complete at paragraph level |
+| **ADDED** | `phases/PARAGRAPH_AXM_RESIDUAL/scripts/paragraph_axm_residual.py` |
+| **ADDED** | `phases/PARAGRAPH_AXM_RESIDUAL/results/paragraph_axm_residual.json` |
+| **ADDED** | `phases/PARAGRAPH_AXM_RESIDUAL/REPORT.md` |
+| **UPDATED** | INDEX.md -- +3 constraints (1278 total) |
+| **UPDATED** | CONSTRAINT_TABLE.txt regenerated (1278 constraints) |
+
+---
+
 ## Version 5.10.112 (2026-03-05) - Phase 519: Line-Level Architecture
 
 ### Summary

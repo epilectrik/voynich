@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1275 validated constraints | **Version:** 5.10 | **Date:** 2026-03-05
+**Total:** 1278 validated constraints | **Version:** 5.11 | **Date:** 2026-03-05
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4772,6 +4772,30 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T8: U-shaped info: Q0=10.29 > Q1-Q3~9.6 < Q4=10.11 bits. Boundaries more informative
 - T9: Body 52.2% THERMAL-dominant. Headers 15.4% MARKING. BIO 58.5% THERMAL, COSMO 32.5% FLOW
 - T10: Cross-line entropy 0.984x within-line. LINE=PARAGRAPH boundary strength. -m 9.54x final
+
+---
+
+### Paragraph AXM Residual (C1431-C1433) -- Phase: PARAGRAPH_AXM_RESIDUAL (Phase 520)
+
+> **Summary:** Systematic decomposition of the ~24% paragraph AXM variance unexplained by PREFIX composition (C1405). 10 tests across 41 features, 283 paragraphs, 23,096 tokens. No non-PREFIX feature adds predictive power. The residual decomposes as 25.2% measurement noise + 4.2% genuine design freedom. PREFIX is the sole dynamical control point at paragraph level.
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1431 | non-PREFIX features add zero predictive power for paragraph AXM | 2 | B, paragraph, AXM, MIDDLE, suffix, articulator, line, design-freedom | 41 features across 8 groups (HEAD, TERMINAL, suffix, line, articulator, kernel, MIDDLE props, interactions) all show negative or zero delta beyond PREFIX. Full model CV R2=0.707 vs PREFIX-only 0.711. All non-PREFIX features are PREFIX-mediated (C1411, C1418, C1422) or irrelevant. |
+| 1432 | paragraph AXM residual is 85% measurement noise | 2 | B, paragraph, AXM, noise, design-freedom, C1169, C1405 | 29.4% residual = 25.2% binomial sampling noise + 4.2% genuine freedom. Noise = 85.5% of residual. Theoretical max R2=0.748; PREFIX achieves 0.706 (94.4% of max). Residuals normal (Shapiro-Wilk p=0.152), section-neutral (p=0.061), REGIME-neutral (p=0.444). Refines C1169. |
+| 1433 | PREFIX-AXM mediation chain is complete at paragraph level | 2 | B, paragraph, AXM, PREFIX, mediation, C1405, C1411, C1418, C1422 | PREFIX is sole load-bearing predictor. Complete mediation: PREFIX->HEAD (C1411), PREFIX->ART (C1418), MIDDLE->suffix (C1422). No interaction or structural feature carries independent signal. 4.2% genuine freedom is irreducible per-program variation. |
+
+**Phase 520 findings (Paragraph AXM Residual, 10 tests):**
+- T1: HEAD atoms explain 26.0% alone but add -0.5% beyond PREFIX. k-initial rho=+0.491, a-initial rho=-0.553. Fully PREFIX-mediated.
+- T2: Suffix features add -0.3% beyond PREFIX. Suffix rate rho=+0.380 but doubly mediated.
+- T3: Line structure (count, mean/std length) adds +0.04% beyond PREFIX. Irrelevant.
+- T4: Articulator features add -0.2% beyond PREFIX. PREFIX-determined per C1418.
+- T5: Full 41-feature model DEGRADES vs PREFIX-only: CV delta=-0.004, LOO delta=-0.011.
+- T6: Drop-one shows PREFIX is sole load-bearing group (delta=+0.508). All others negative or zero.
+- T7: Residuals normal, unstructured. No section/REGIME/position pattern.
+- T8: PREFIX-MIDDLE interactions produce overfitting. 60 terms: delta=-0.155. 3 key: delta=-0.006.
+- T9: Headless compound fraction NS (rho=-0.054, p=0.367). Compound fraction mediated by PREFIX.
+- T10: Noise floor 25.2%. Genuine freedom 4.2%. PREFIX achieves 94.4% of theoretical maximum.
 
 ---
 

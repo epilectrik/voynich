@@ -10,8 +10,8 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 
 | Metric | Value |
 |--------|-------|
-| Validated constraints | 1,275 |
-| Research phases completed | 519 |
+| Validated constraints | 1,278 |
+| Research phases completed | 520 |
 | Model fits tested | 75 |
 | Constraint tiers | 0 (frozen fact) through 4 (exploratory) |
 
