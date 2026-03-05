@@ -3,7 +3,7 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.24"
+  version: "3.25"
   date: "2026-03-05"
   status: "ACTIVE"
   layer_type: "grammar contract"
@@ -707,6 +707,22 @@ middle_instruction_encoding:
     cross_position_divergence: "0/12 shared atoms maintain identical profiles between suffix and MIDDLE-terminal (JSD 0.004-0.560)"
     mode_partition: "Mode A={d,e,ee,h,y} THERMAL/MONITORING; Mode B={a,i,ii,l,m,n,o,r,s} STAGING/FLOW"
     provenance: "C1408, C1409, C1410"
+
+  # Added v3.25: Cross-slot interaction grammar (C1411-C1415)
+  cross_slot_interaction:
+    statement: "Instruction encoding chain is PREFIX->MIDDLE->SUFFIX (not three-way)"
+    prefix_to_middle_head_V: 0.414
+    prefix_to_middle_head_MI: "1.089 bits"
+    middle_to_suffix_mode_V: 0.678
+    middle_term_to_suffix_mode_V: 0.503
+    prefix_to_suffix_NMI: 0.090
+    sister_pair_atom_identity: "ch/sh JSD=0.010, ok/ot JSD=0.010 — sisters select identical MIDDLE atoms"
+    suffix_gatekeeper: "MIDDLE TERM atom is the primary suffix selector (0.910 bits reduction vs HEAD 0.366)"
+    three_way_synergy: "negligible (+0.009 bits identity, +0.047 bits mode); confirms C1003 at atom level"
+    cross_slot_repulsion: "d O/E=0.203 (REPEL), e O/E=1.310 (ATTRACT); complementary information principle"
+    absolute_prohibitions: "l-TERM x e-SUF_HEAD = 0, r-TERM x e-SUF_HEAD = 0"
+    forbidden_prefix_head_pairs: 83
+    provenance: "C1411, C1412, C1413, C1414, C1415"
 
   encoding_model: |
     TOKEN = PREFIX + MIDDLE + SUFFIX

@@ -4,6 +4,28 @@
 
 ---
 
+## Version 5.07.109 (2026-03-05) - Phase 516: Cross-Slot Interaction Grammar
+
+### Summary
+
+Phase 516 tests how PREFIX, MIDDLE, and SUFFIX constrain each other within tokens at atom resolution. Result: the instruction encoding chain is strictly PREFIX -> MIDDLE -> SUFFIX (not three-way). PREFIX selects MIDDLE HEAD atom (V=0.414, MI=1.089 bits); MIDDLE determines suffix via terminal atom (TERM V=0.503 outpredicts PREFIX V=0.169 by 3x); PREFIX-SUFFIX is the most independent pair (NMI=0.090), almost entirely mediated through MIDDLE. Sister pairs (ch/sh, ok/ot) select identical MIDDLE atoms (JSD=0.010). Cross-slot atom co-occurrence reveals d REPELS (O/E=0.203), e ATTRACTS (1.310), and 2 absolute prohibitions (l/r-TERM x e-SUFFIX HEAD = 0). 83 forbidden PREFIX x MIDDLE HEAD combinations quantify atom-level channeling. Three-way synergy is negligible (+0.009 bits), confirming C1003 at atom resolution.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1411: PREFIX->MIDDLE selectivity hierarchy with sister pair atom identity |
+| **ADDED** | C1412: MIDDLE dominates suffix determination via terminal atom |
+| **ADDED** | C1413: PREFIX-SUFFIX coupling is MIDDLE-mediated |
+| **ADDED** | C1414: cross-slot atom co-occurrence exclusion rules |
+| **ADDED** | C1415: 83 forbidden PREFIX x MIDDLE HEAD combinations at atom level |
+| **ADDED** | `phases/CROSS_SLOT_INTERACTION/scripts/cross_slot_interaction.py` |
+| **ADDED** | `phases/CROSS_SLOT_INTERACTION/results/cross_slot_interaction.json` |
+| **UPDATED** | BCSC v3.25 — morphology section: added cross-slot interaction findings |
+| **UPDATED** | INDEX.md — +5 constraints (1259 total) |
+
+---
+
 ## Version 5.06.108 (2026-03-05) - Phase 515: Suffix Atom Decomposition
 
 ### Summary

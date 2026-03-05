@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1254 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1259 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1410.
+the highest ID present is C1415.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1254 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1259 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1254 validated constraints are present as canonical one-line claims with tier
+1259 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-05 11:23
-**Version:** FROZEN STATE (1254 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-05 13:12
+**Version:** FROZEN STATE (1259 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1683,6 +1683,11 @@ C1407	PREFIX-AXM relationship universal across sections	2	B, PREFIX, AXM, sectio
 C1408	suffix has HEAD→TERM compositional structure	2	B, suffix, atom, compositional, structure
 C1409	suffix atoms diverge from MIDDLE-terminal atoms	2	B, suffix, atom, MIDDLE, cross-position, divergence
 C1410	suffix modes are atom-level category partitions	2	B, suffix, atom, mode, paragraph, cycling
+C1411	PREFIX->MIDDLE selectivity hierarchy with sister pair atom identity	2	B, PREFIX, MIDDLE, atom, sister pair, selectivity
+C1412	MIDDLE dominates suffix determination via terminal atom	2	B, MIDDLE, suffix, atom, selectivity, terminal
+C1413	PREFIX-SUFFIX coupling is MIDDLE-mediated	2	B, PREFIX, MIDDLE, suffix, independence, mediation
+C1414	cross-slot atom co-occurrence exclusion rules	2	B, MIDDLE, suffix, atom, co-occurrence, exclusion
+C1415	83 forbidden PREFIX x MIDDLE HEAD combinations at atom level	2	B, PREFIX, MIDDLE, atom, forbidden, combinations
 
 ---
 
@@ -4527,7 +4532,7 @@ Only Tier 0-2 structural findings are binding.
 ---
 
 ## BCSC (Currier B Structural Contract)
-**Meta:** v3.24, ACTIVE, 61.9% of tokens, 83 folios
+**Meta:** v3.25, ACTIVE, 61.9% of tokens, 83 folios
 
 ### Guarantees (35)
 - GRAMMAR_UNIVERSAL: 49-class grammar applies to all 83 folios without exception [C121, C124]
@@ -4594,7 +4599,7 @@ Only Tier 0-2 structural findings are binding.
 ### Sections -> Constraints
 - grammar: C085, C121, C124, C411, C1004
 - morphology: C267, C382, C383, C408, C506, C522, C588, C661, C662, C777, C787, C897, C911, C929, C935, C936, C1001, C1004, C1015, C1017, C1065, C1141, C1142, C1190, C1191, C1193, C1218, C1219, C1220, C1221, C1227, C1393, C1394, C1396
-- middle_instruction_encoding: C1393, C1394, C1395, C1397, C1408, C1409, C1410
+- middle_instruction_encoding: C1003, C1393, C1394, C1395, C1397, C1408, C1409, C1410, C1411, C1412, C1413, C1414, C1415
 - role_taxonomy: C121, C366, C547, C550, C557, C558, C560, C562, C563, C567, C572, C573, C574, C575, C581, C582, C583, C584, C586, C587, C588, C591, C593, C594, C595, C597, C770, C777, C788, C791, C863, C864, C865, C866, C867, C868, C869
 - kernel: C089, C103, C104, C105, C332, C333, C339, C521, C1225, C1226
 - hazards: C109, C110, C111, C112, C386, C789

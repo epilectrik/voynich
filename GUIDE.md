@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,254 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,259 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -165,6 +165,10 @@ The system also includes **headless compounds** (20.6% of tokens) — MIDDLEs th
 The e-atom shows a depth-dependent saturation gradient: single-e compounds are diverse across categories, but ee compounds are 84% THERMAL and eee compounds are 100% THERMAL — increasing cooling intensity saturates to pure thermal identity.
 
 Only e and i can repeat in the modifier stack (C1197), and only `dy` is a hard-fused pair that never separates (O/E 5.75x). All other frequent pairs (ed, ol, ke, ch) are either soft-fused or simply adjacent slots following the grammar.
+
+### Cross-Slot Interaction
+
+The three morphological slots (PREFIX, MIDDLE, SUFFIX) are not independent — information flows through MIDDLE as a hub. PREFIX predicts MIDDLE HEAD atoms (V=0.414) and MIDDLE TERMINAL predicts suffix mode (V=0.503), but PREFIX barely predicts suffix directly (NMI=0.090). The chain is PREFIX→MIDDLE→SUFFIX, with MIDDLE mediating essentially all of PREFIX's influence on suffix selection (C1411-C1413). Sister PREFIX pairs (ch/sh, ok/ot) are nearly identical at the atom level (JSD=0.010) — their known category divergence comes from vocabulary selection, not from selecting different atoms. At the atom level, cross-slot co-occurrence shows specific rules: `d` repels itself across slots (0.203x expected), while `e` attracts itself (1.310x), and the terminals `l` and `r` absolutely block `e` from appearing in the suffix (C1414). There are also 83 forbidden PREFIX × MIDDLE HEAD combinations — structural gaps where common elements never co-occur (C1415).
 
 ### Hazard Topology
 

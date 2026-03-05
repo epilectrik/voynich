@@ -1,0 +1,1113 @@
+{
+  "metadata": {
+    "phase": 516,
+    "total_tokens": 23096,
+    "prefixed": 19232,
+    "suffixed": 11151,
+    "both_prefix_suffix": 9422
+  },
+  "T1_prefix_middle_selectivity": {
+    "prefix_to_mid_head": {
+      "chi2": 48077.0,
+      "p": 0.0,
+      "V": 0.4135,
+      "MI_bits": 1.0891,
+      "N": 16537
+    },
+    "prefix_to_mid_term": {
+      "chi2": 5118.1,
+      "p": 0.0,
+      "V": 0.3137,
+      "MI_bits": 0.3842,
+      "N": 7428
+    },
+    "sister_comparisons": {
+      "ch_vs_sh_HEAD": {
+        "ch_dist": {
+          "o": 452,
+          "e": 2101,
+          "s": 10,
+          "y": 39,
+          "k": 82,
+          "d": 92,
+          "a": 122,
+          "t": 37,
+          "l": 30,
+          "p": 4,
+          "x": 1,
+          "r": 5,
+          "f": 1
+        },
+        "sh_dist": {
+          "e": 1677,
+          "a": 63,
+          "y": 39,
+          "o": 259,
+          "d": 38,
+          "k": 35,
+          "s": 6,
+          "t": 12,
+          "l": 4,
+          "r": 1,
+          "x": 2,
+          "f": 1
+        },
+        "ch_n": 2976,
+        "sh_n": 2137,
+        "JSD": 0.0103
+      },
+      "ch_vs_sh_TERM": {
+        "ch_dist": {
+          "h": 83,
+          "y": 916,
+          "k": 286,
+          "l": 260,
+          "t": 135,
+          "m": 7,
+          "r": 93,
+          "n": 21
+        },
+        "sh_dist": {
+          "k": 173,
+          "y": 859,
+          "h": 53,
+          "l": 185,
+          "t": 55,
+          "r": 64,
+          "m": 5,
+          "n": 13
+        },
+        "ch_n": 1801,
+        "sh_n": 1407,
+        "JSD": 0.0099
+      },
+      "ok_vs_ot_HEAD": {
+        "ok_dist": {
+          "e": 670,
+          "a": 627,
+          "y": 68,
+          "o": 62,
+          "d": 13,
+          "l": 1,
+          "r": 1,
+          "h": 1
+        },
+        "ot_dist": {
+          "e": 650,
+          "a": 559,
+          "o": 110,
+          "y": 77,
+          "d": 3,
+          "s": 4,
+          "l": 4,
+          "k": 1,
+          "i": 2
+        },
+        "ok_n": 1443,
+        "ot_n": 1410,
+        "JSD": 0.0099
+      },
+      "ok_vs_ot_TERM": {
+        "ok_dist": {
+          "y": 329,
+          "l": 162,
+          "n": 311,
+          "r": 130,
+          "m": 23,
+          "h": 26,
+          "k": 4,
+          "t": 2
+        },
+        "ot_dist": {
+          "y": 356,
+          "l": 178,
+          "r": 158,
+          "n": 207,
+          "m": 39,
+          "k": 9,
+          "h": 17,
+          "t": 3
+        },
+        "ok_n": 987,
+        "ot_n": 967,
+        "JSD": 0.0124
+      }
+    }
+  },
+  "T2_prefix_suffix_selectivity": {
+    "prefix_to_suffix_presence": {
+      "chi2": 4597.7,
+      "p": 0.0,
+      "V": 0.4889,
+      "MI_bits": 0.1915,
+      "N": 19232
+    },
+    "per_prefix_suffix_rate": {
+      "qo": 0.904,
+      "ch": 0.53,
+      "sh": 0.407,
+      "ok": 0.285,
+      "ot": 0.271,
+      "da": 0.199,
+      "ol": 0.552,
+      "lk": 0.285,
+      "sa": 0.207,
+      "lch": 0.187,
+      "yk": 0.363,
+      "te": 0.287,
+      "ke": 0.297,
+      "pch": 0.494,
+      "ka": 0.193
+    },
+    "prefix_to_suffix_mode": {
+      "chi2": 265.5,
+      "p": 3.9440899222391147e-38,
+      "V": 0.1694,
+      "MI_bits": 0.0214,
+      "N": 9246
+    },
+    "per_prefix_mode_a_fraction": {
+      "qo": 0.552,
+      "ch": 0.532,
+      "sh": 0.637,
+      "ok": 0.592,
+      "ot": 0.505,
+      "da": 0.297,
+      "ol": 0.565,
+      "lk": 0.659,
+      "sa": 0.154,
+      "lch": 0.456,
+      "yk": 0.591,
+      "te": 0.415,
+      "ke": 0.547,
+      "pch": 0.311,
+      "ka": 0.244
+    }
+  },
+  "T3_middle_suffix_selectivity": {
+    "mid_head_to_suf_mode": {
+      "chi2": 981.2,
+      "p": 7.259702778845638e-197,
+      "V": 0.3227,
+      "MI_bits": 0.0908,
+      "N": 9425
+    },
+    "mid_term_to_suf_mode": {
+      "chi2": 443.2,
+      "p": 1.2766689629824363e-91,
+      "V": 0.5025,
+      "MI_bits": 0.1874,
+      "N": 1755
+    },
+    "full_middle_to_suf_mode": {
+      "chi2": 5026.5,
+      "p": 0.0,
+      "V": 0.6778,
+      "MI_bits": 0.4221,
+      "N": 10940
+    },
+    "mid_head_to_suf_presence": {
+      "chi2": 6384.6,
+      "p": 0.0,
+      "V": 0.5677,
+      "N": 19808
+    },
+    "per_head_mode_a": {
+      "a": {
+        "mode_a_frac": 0.227,
+        "n": 441
+      },
+      "d": {
+        "mode_a_frac": 0.031,
+        "n": 291
+      },
+      "e": {
+        "mode_a_frac": 0.562,
+        "n": 2713
+      },
+      "f": {
+        "mode_a_frac": 0.167,
+        "n": 12
+      },
+      "h": {
+        "mode_a_frac": 0.681,
+        "n": 47
+      },
+      "i": {
+        "mode_a_frac": 0.032,
+        "n": 155
+      },
+      "k": {
+        "mode_a_frac": 0.549,
+        "n": 2982
+      },
+      "l": {
+        "mode_a_frac": 0.181,
+        "n": 265
+      },
+      "o": {
+        "mode_a_frac": 0.516,
+        "n": 1270
+      },
+      "p": {
+        "mode_a_frac": 0.14,
+        "n": 43
+      },
+      "q": {
+        "mode_a_frac": 0.7,
+        "n": 10
+      },
+      "r": {
+        "mode_a_frac": 0.008,
+        "n": 246
+      },
+      "s": {
+        "mode_a_frac": 0.575,
+        "n": 40
+      },
+      "t": {
+        "mode_a_frac": 0.528,
+        "n": 873
+      },
+      "y": {
+        "mode_a_frac": 0.409,
+        "n": 22
+      }
+    }
+  },
+  "T4_three_way_interaction": {
+    "suffix_mode": {
+      "MI_prefix": 0.0214,
+      "MI_middle": 0.3839,
+      "MI_joint": 0.4519,
+      "sum_individual": 0.4053,
+      "synergy": 0.0465,
+      "H_suffix_mode": 0.9961,
+      "joint_explains_pct": 45.4,
+      "N": 9246
+    },
+    "suffix_identity": {
+      "MI_prefix": 0.2686,
+      "MI_middle": 1.7035,
+      "MI_joint": 1.9815,
+      "synergy": 0.0093,
+      "H_suffix": 3.8203,
+      "N": 9246
+    }
+  },
+  "T5_slot_independence": {
+    "complete_tokens_N": 9422,
+    "entropies": {
+      "H_prefix": 3.148,
+      "H_middle": 5.904,
+      "H_suffix": 3.915
+    },
+    "pairwise_MI": {
+      "prefix_middle": 1.5142,
+      "prefix_suffix": 0.2833,
+      "middle_suffix": 1.7672
+    },
+    "normalized_MI": {
+      "prefix_middle": 0.4809,
+      "prefix_suffix": 0.09,
+      "middle_suffix": 0.4514
+    },
+    "z_scores": {
+      "prefix_middle": 148.5,
+      "prefix_suffix": 79.1,
+      "middle_suffix": 239.1
+    },
+    "all_pairs_MI": {
+      "prefix_middle": 1.4874,
+      "prefix_suffix": 0.2833,
+      "middle_suffix": 1.8659
+    },
+    "all_pairs_N": {
+      "prefix_middle": 19232,
+      "prefix_suffix": 9422,
+      "middle_suffix": 11151
+    }
+  },
+  "T6_cross_slot_atom_cooccurrence": {
+    "a": {
+      "both": 132,
+      "mid_only": 788,
+      "suf_only": 3306,
+      "neither": 6925,
+      "expected_both": 283.6,
+      "obs_exp_ratio": 0.465,
+      "chi2": 126.9,
+      "p": 1.939377866023604e-29,
+      "direction": "REPEL",
+      "mid_rate": 0.083,
+      "suf_rate": 0.308
+    },
+    "d": {
+      "both": 75,
+      "mid_only": 1308,
+      "suf_only": 2897,
+      "neither": 6871,
+      "expected_both": 368.6,
+      "obs_exp_ratio": 0.203,
+      "chi2": 362.7,
+      "p": 7.111776958529847e-81,
+      "direction": "REPEL",
+      "mid_rate": 0.124,
+      "suf_rate": 0.267
+    },
+    "e": {
+      "both": 1423,
+      "mid_only": 2429,
+      "suf_only": 1721,
+      "neither": 5578,
+      "expected_both": 1086.1,
+      "obs_exp_ratio": 1.31,
+      "chi2": 221.7,
+      "p": 3.771513817488384e-50,
+      "direction": "ATTRACT",
+      "mid_rate": 0.345,
+      "suf_rate": 0.282
+    },
+    "h": {
+      "both": 58,
+      "mid_only": 1429,
+      "suf_only": 796,
+      "neither": 8868,
+      "expected_both": 113.9,
+      "obs_exp_ratio": 0.509,
+      "chi2": 33.7,
+      "p": 6.582545603058274e-09,
+      "direction": "REPEL",
+      "mid_rate": 0.133,
+      "suf_rate": 0.077
+    },
+    "i": {
+      "both": 126,
+      "mid_only": 613,
+      "suf_only": 1731,
+      "neither": 8681,
+      "expected_both": 123.1,
+      "obs_exp_ratio": 1.024,
+      "chi2": 0.1,
+      "p": 0.8036839486445774,
+      "direction": "ATTRACT",
+      "mid_rate": 0.066,
+      "suf_rate": 0.167
+    },
+    "l": {
+      "both": 128,
+      "mid_only": 842,
+      "suf_only": 1103,
+      "neither": 9078,
+      "expected_both": 107.1,
+      "obs_exp_ratio": 1.195,
+      "chi2": 4.8,
+      "p": 0.028569428150887696,
+      "direction": "ATTRACT",
+      "mid_rate": 0.087,
+      "suf_rate": 0.11
+    },
+    "m": {
+      "both": 5,
+      "mid_only": 13,
+      "suf_only": 300,
+      "neither": 10833,
+      "expected_both": 0.5,
+      "obs_exp_ratio": 10.156,
+      "chi2": 33.6,
+      "p": 6.7877732038820585e-09,
+      "direction": "ATTRACT",
+      "mid_rate": 0.002,
+      "suf_rate": 0.027
+    },
+    "n": {
+      "both": 0,
+      "mid_only": 25,
+      "suf_only": 1856,
+      "neither": 9270,
+      "expected_both": 4.2,
+      "obs_exp_ratio": 0.0,
+      "chi2": 3.9,
+      "p": 0.04906831244395758,
+      "direction": "REPEL",
+      "mid_rate": 0.002,
+      "suf_rate": 0.166
+    },
+    "o": {
+      "both": 102,
+      "mid_only": 2077,
+      "suf_only": 721,
+      "neither": 8251,
+      "expected_both": 160.8,
+      "obs_exp_ratio": 0.634,
+      "chi2": 28.4,
+      "p": 9.962554048960942e-08,
+      "direction": "REPEL",
+      "mid_rate": 0.195,
+      "suf_rate": 0.074
+    },
+    "r": {
+      "both": 97,
+      "mid_only": 421,
+      "suf_only": 1624,
+      "neither": 9009,
+      "expected_both": 79.9,
+      "obs_exp_ratio": 1.213,
+      "chi2": 4.3,
+      "p": 0.03923233916664416,
+      "direction": "ATTRACT",
+      "mid_rate": 0.046,
+      "suf_rate": 0.154
+    },
+    "s": {
+      "both": 10,
+      "mid_only": 391,
+      "suf_only": 414,
+      "neither": 10336,
+      "expected_both": 15.2,
+      "obs_exp_ratio": 0.656,
+      "chi2": 1.6,
+      "p": 0.20677032127473358,
+      "direction": "REPEL",
+      "mid_rate": 0.036,
+      "suf_rate": 0.038
+    },
+    "y": {
+      "both": 122,
+      "mid_only": 102,
+      "suf_only": 5651,
+      "neither": 5276,
+      "expected_both": 116.0,
+      "obs_exp_ratio": 1.052,
+      "chi2": 0.6,
+      "p": 0.45485890279407726,
+      "direction": "ATTRACT",
+      "mid_rate": 0.02,
+      "suf_rate": 0.518
+    }
+  },
+  "T7_prefix_base_vs_modifier": {
+    "base_to_mid_head": {
+      "V": 0.494,
+      "MI": 0.9842,
+      "N": 16537
+    },
+    "modifier_to_mid_head": {
+      "V": 0.295,
+      "MI": 0.8689,
+      "N": 16537
+    },
+    "base_to_suf_mode": {
+      "V": 0.1253,
+      "MI": 0.0116,
+      "N": 9246
+    },
+    "modifier_to_suf_mode": {
+      "V": 0.1247,
+      "MI": 0.0113,
+      "N": 9246
+    },
+    "base_to_suf_identity": {
+      "MI": 0.209
+    },
+    "modifier_to_suf_identity": {
+      "MI": 0.2113
+    },
+    "N_multi_prefix_tokens": 19232
+  },
+  "T8_conditional_entropy_chain": {
+    "suffix_chain": {
+      "H_suffix": 3.9151,
+      "H_suffix_given_prefix": 3.6318,
+      "H_suffix_given_middle": 2.1479,
+      "H_suffix_given_both": 1.8534,
+      "prefix_reduction": 0.2833,
+      "middle_reduction": 1.7672,
+      "both_reduction": 2.0617
+    },
+    "middle_chain": {
+      "H_middle": 5.9045,
+      "H_middle_given_prefix": 4.3903,
+      "prefix_reduction": 1.5142
+    },
+    "suffix_given_mid_atoms": {
+      "H_suffix_base": 3.6154,
+      "H_suffix_given_mid_head": 3.249,
+      "H_suffix_given_mid_term": 2.7054,
+      "H_suffix_given_mid_head_term": 2.5187,
+      "N": 1439
+    },
+    "prefix_chain": {
+      "H_prefix": 3.1484,
+      "H_prefix_given_suffix": 2.8652,
+      "H_prefix_given_middle": 1.6343
+    },
+    "N": 9422
+  },
+  "T9_forbidden_combinations": {
+    "prefix_x_mid_head": {
+      "forbidden_count": 83,
+      "items": [
+        {
+          "prefix": "qo",
+          "head": "e",
+          "expected": 1584.6,
+          "observed": 97,
+          "ratio": 0.061
+        },
+        {
+          "prefix": "qo",
+          "head": "a",
+          "expected": 443.6,
+          "observed": 31,
+          "ratio": 0.07
+        },
+        {
+          "prefix": "qo",
+          "head": "o",
+          "expected": 298.1,
+          "observed": 11,
+          "ratio": 0.037
+        },
+        {
+          "prefix": "qo",
+          "head": "y",
+          "expected": 97.9,
+          "observed": 5,
+          "ratio": 0.051
+        },
+        {
+          "prefix": "qo",
+          "head": "m",
+          "expected": 16.4,
+          "observed": 0
+        },
+        {
+          "prefix": "qo",
+          "head": "h",
+          "expected": 10.7,
+          "observed": 0
+        },
+        {
+          "prefix": "ch",
+          "head": "r",
+          "expected": 95.9,
+          "observed": 5,
+          "ratio": 0.052
+        },
+        {
+          "prefix": "ch",
+          "head": "i",
+          "expected": 28.4,
+          "observed": 0
+        },
+        {
+          "prefix": "ch",
+          "head": "m",
+          "expected": 13.0,
+          "observed": 0
+        },
+        {
+          "prefix": "ch",
+          "head": "h",
+          "expected": 8.5,
+          "observed": 0
+        },
+        {
+          "prefix": "sh",
+          "head": "k",
+          "expected": 398.5,
+          "observed": 35,
+          "ratio": 0.088
+        },
+        {
+          "prefix": "sh",
+          "head": "l",
+          "expected": 84.8,
+          "observed": 4,
+          "ratio": 0.047
+        },
+        {
+          "prefix": "sh",
+          "head": "r",
+          "expected": 68.9,
+          "observed": 1,
+          "ratio": 0.015
+        },
+        {
+          "prefix": "sh",
+          "head": "i",
+          "expected": 20.4,
+          "observed": 0
+        },
+        {
+          "prefix": "sh",
+          "head": "m",
+          "expected": 9.3,
+          "observed": 0
+        },
+        {
+          "prefix": "sh",
+          "head": "h",
+          "expected": 6.1,
+          "observed": 0
+        },
+        {
+          "prefix": "ok",
+          "head": "k",
+          "expected": 269.1,
+          "observed": 0
+        },
+        {
+          "prefix": "ok",
+          "head": "t",
+          "expected": 79.2,
+          "observed": 0
+        },
+        {
+          "prefix": "ok",
+          "head": "l",
+          "expected": 57.2,
+          "observed": 1,
+          "ratio": 0.017
+        },
+        {
+          "prefix": "ok",
+          "head": "r",
+          "expected": 46.5,
+          "observed": 1,
+          "ratio": 0.022
+        },
+        {
+          "prefix": "ok",
+          "head": "i",
+          "expected": 13.8,
+          "observed": 0
+        },
+        {
+          "prefix": "ok",
+          "head": "s",
+          "expected": 7.0,
+          "observed": 0
+        },
+        {
+          "prefix": "ok",
+          "head": "m",
+          "expected": 6.3,
+          "observed": 0
+        },
+        {
+          "prefix": "ot",
+          "head": "k",
+          "expected": 263.0,
+          "observed": 1,
+          "ratio": 0.004
+        },
+        {
+          "prefix": "ot",
+          "head": "t",
+          "expected": 77.4,
+          "observed": 0
+        },
+        {
+          "prefix": "ot",
+          "head": "l",
+          "expected": 55.9,
+          "observed": 4,
+          "ratio": 0.072
+        },
+        {
+          "prefix": "ot",
+          "head": "r",
+          "expected": 45.4,
+          "observed": 0
+        },
+        {
+          "prefix": "ot",
+          "head": "m",
+          "expected": 6.1,
+          "observed": 0
+        },
+        {
+          "prefix": "ol",
+          "head": "i",
+          "expected": 7.8,
+          "observed": 0
+        },
+        {
+          "prefix": "da",
+          "head": "e",
+          "expected": 213.8,
+          "observed": 0
+        },
+        {
+          "prefix": "da",
+          "head": "k",
+          "expected": 94.9,
+          "observed": 1,
+          "ratio": 0.011
+        },
+        {
+          "prefix": "da",
+          "head": "a",
+          "expected": 59.9,
+          "observed": 1,
+          "ratio": 0.017
+        },
+        {
+          "prefix": "da",
+          "head": "o",
+          "expected": 40.2,
+          "observed": 0
+        },
+        {
+          "prefix": "da",
+          "head": "t",
+          "expected": 27.9,
+          "observed": 0
+        },
+        {
+          "prefix": "da",
+          "head": "y",
+          "expected": 13.2,
+          "observed": 1,
+          "ratio": 0.076
+        },
+        {
+          "prefix": "lk",
+          "head": "k",
+          "expected": 80.4,
+          "observed": 0
+        },
+        {
+          "prefix": "lk",
+          "head": "t",
+          "expected": 23.7,
+          "observed": 0
+        },
+        {
+          "prefix": "lk",
+          "head": "r",
+          "expected": 13.9,
+          "observed": 0
+        },
+        {
+          "prefix": "lk",
+          "head": "d",
+          "expected": 8.2,
+          "observed": 0
+        },
+        {
+          "prefix": "yk",
+          "head": "k",
+          "expected": 56.7,
+          "observed": 0
+        },
+        {
+          "prefix": "yk",
+          "head": "t",
+          "expected": 16.7,
+          "observed": 0
+        },
+        {
+          "prefix": "yk",
+          "head": "l",
+          "expected": 12.1,
+          "observed": 1,
+          "ratio": 0.083
+        },
+        {
+          "prefix": "yk",
+          "head": "r",
+          "expected": 9.8,
+          "observed": 0
+        },
+        {
+          "prefix": "lch",
+          "head": "k",
+          "expected": 54.6,
+          "observed": 0
+        },
+        {
+          "prefix": "lch",
+          "head": "t",
+          "expected": 16.1,
+          "observed": 0
+        },
+        {
+          "prefix": "pch",
+          "head": "k",
+          "expected": 39.7,
+          "observed": 0
+        },
+        {
+          "prefix": "pch",
+          "head": "t",
+          "expected": 11.7,
+          "observed": 1,
+          "ratio": 0.086
+        },
+        {
+          "prefix": "pch",
+          "head": "l",
+          "expected": 8.4,
+          "observed": 0
+        },
+        {
+          "prefix": "pch",
+          "head": "r",
+          "expected": 6.9,
+          "observed": 0
+        },
+        {
+          "prefix": "te",
+          "head": "k",
+          "expected": 38.2,
+          "observed": 0
+        },
+        {
+          "prefix": "te",
+          "head": "a",
+          "expected": 24.1,
+          "observed": 2,
+          "ratio": 0.083
+        },
+        {
+          "prefix": "te",
+          "head": "t",
+          "expected": 11.3,
+          "observed": 0
+        },
+        {
+          "prefix": "te",
+          "head": "l",
+          "expected": 8.1,
+          "observed": 0
+        },
+        {
+          "prefix": "te",
+          "head": "r",
+          "expected": 6.6,
+          "observed": 0
+        },
+        {
+          "prefix": "ke",
+          "head": "k",
+          "expected": 37.5,
+          "observed": 0
+        },
+        {
+          "prefix": "ke",
+          "head": "a",
+          "expected": 23.6,
+          "observed": 1,
+          "ratio": 0.042
+        },
+        {
+          "prefix": "ke",
+          "head": "t",
+          "expected": 11.0,
+          "observed": 0
+        },
+        {
+          "prefix": "ke",
+          "head": "l",
+          "expected": 8.0,
+          "observed": 0
+        },
+        {
+          "prefix": "ke",
+          "head": "r",
+          "expected": 6.5,
+          "observed": 0
+        },
+        {
+          "prefix": "or",
+          "head": "k",
+          "expected": 31.3,
+          "observed": 3,
+          "ratio": 0.096
+        },
+        {
+          "prefix": "or",
+          "head": "t",
+          "expected": 9.2,
+          "observed": 0
+        },
+        {
+          "prefix": "or",
+          "head": "l",
+          "expected": 6.7,
+          "observed": 0
+        },
+        {
+          "prefix": "or",
+          "head": "r",
+          "expected": 5.4,
+          "observed": 0
+        },
+        {
+          "prefix": "al",
+          "head": "t",
+          "expected": 8.6,
+          "observed": 0
+        },
+        {
+          "prefix": "al",
+          "head": "r",
+          "expected": 5.1,
+          "observed": 0
+        },
+        {
+          "prefix": "tch",
+          "head": "k",
+          "expected": 26.5,
+          "observed": 1,
+          "ratio": 0.038
+        },
+        {
+          "prefix": "tch",
+          "head": "t",
+          "expected": 7.8,
+          "observed": 0
+        },
+        {
+          "prefix": "tch",
+          "head": "l",
+          "expected": 5.6,
+          "observed": 0
+        },
+        {
+          "prefix": "sa",
+          "head": "e",
+          "expected": 56.7,
+          "observed": 0
+        },
+        {
+          "prefix": "sa",
+          "head": "k",
+          "expected": 25.2,
+          "observed": 1,
+          "ratio": 0.04
+        },
+        {
+          "prefix": "sa",
+          "head": "a",
+          "expected": 15.9,
+          "observed": 0
+        },
+        {
+          "prefix": "sa",
+          "head": "o",
+          "expected": 10.7,
+          "observed": 0
+        },
+        {
+          "prefix": "sa",
+          "head": "t",
+          "expected": 7.4,
+          "observed": 0
+        },
+        {
+          "prefix": "ar",
+          "head": "e",
+          "expected": 55.5,
+          "observed": 4,
+          "ratio": 0.072
+        },
+        {
+          "prefix": "ar",
+          "head": "k",
+          "expected": 24.6,
+          "observed": 0
+        },
+        {
+          "prefix": "ar",
+          "head": "t",
+          "expected": 7.2,
+          "observed": 0
+        },
+        {
+          "prefix": "ta",
+          "head": "e",
+          "expected": 54.6,
+          "observed": 0
+        },
+        {
+          "prefix": "ta",
+          "head": "k",
+          "expected": 24.2,
+          "observed": 0
+        },
+        {
+          "prefix": "ta",
+          "head": "a",
+          "expected": 15.3,
+          "observed": 0
+        },
+        {
+          "prefix": "ta",
+          "head": "o",
+          "expected": 10.3,
+          "observed": 0
+        },
+        {
+          "prefix": "ta",
+          "head": "t",
+          "expected": 7.1,
+          "observed": 0
+        },
+        {
+          "prefix": "so",
+          "head": "e",
+          "expected": 50.8,
+          "observed": 2,
+          "ratio": 0.039
+        },
+        {
+          "prefix": "so",
+          "head": "o",
+          "expected": 9.6,
+          "observed": 0
+        }
+      ],
+      "N": 16537
+    },
+    "mid_term_x_suf_head": {
+      "forbidden_count": 2,
+      "items": [
+        {
+          "mid_term": "l",
+          "suf_head": "e",
+          "expected": 36.9,
+          "observed": 0
+        },
+        {
+          "mid_term": "r",
+          "suf_head": "e",
+          "expected": 46.3,
+          "observed": 0
+        }
+      ],
+      "N": 995
+    },
+    "prefix_x_suffix": {
+      "forbidden_count": 2,
+      "items": [
+        {
+          "prefix": "yk",
+          "suffix": "al",
+          "expected": 7.1,
+          "observed": 0
+        },
+        {
+          "prefix": "te",
+          "suffix": "y",
+          "expected": 5.1,
+          "observed": 0
+        }
+      ],
+      "N": 9422
+    }
+  }
+}

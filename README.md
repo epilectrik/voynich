@@ -10,8 +10,8 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 
 | Metric | Value |
 |--------|-------|
-| Validated constraints | 1,254 |
-| Research phases completed | 515 |
+| Validated constraints | 1,259 |
+| Research phases completed | 516 |
 | Model fits tested | 75 |
 | Constraint tiers | 0 (frozen fact) through 4 (exploratory) |
 
@@ -66,7 +66,7 @@ Every Currier B token decomposes as: **[ARTICULATOR] + [PREFIX] + MIDDLE + [SUFF
 
 - **PREFIX** encodes the operational domain AND line position via a base-modifier positional grammar: each PREFIX decomposes into [MODIFIER (position 0)] + [BASE (position 1)], where the base character determines which MIDDLE content domain is legal (within-base cosine 0.950 vs between-base 0.515; C1218-C1219). PREFIXes predict operational categories with structured selectivity (V=0.311, C1297) and read as two-atom instructions: [VERB]+[TARGET] (e.g., ok="operate heat", ch="adjust watch"). Sister pairs (ch/sh, ok/ot) achieve category divergence through vocabulary SELECTION, not transformation — the same MIDDLE keeps its category regardless of which sister selects it (C1305). Tier 3 glosses grounded in Tier 2 structural differentiation (C911, C661)
 - **MIDDLE** encodes the core action as a compositional compound: **HEAD + MOD\* + TERM**. The HEAD atom (a, e, o, k, t) sets the operational domain; an ordered modifier stack (p→f→i→c→d→s) parametrizes the action; a TERMINAL atom (y, l, r, h, m, n) sets the exit condition. The frame (HEAD+TERM) predicts 64% of operational category; modifiers shift the remaining 36% (C1393-C1394). Approximately 30 core MIDDLEs handle 67.6% of all tokens. The TERMINAL `h` ("watch") is transparent — it lets HEAD+MODS determine category (V=0.988), unlike opaque terminals like `r` (99% FLOW). Headless compounds (20.6% of tokens) form a specialized subgrammar for infrastructure operations at boundary positions (C1394 T8-T11). Note: structural decomposition and category assignments are Tier 2; English glosses like "watch" are Tier 3 interpretive labels (C1195).
-- **SUFFIX** is a parallel compositional domain using a 16-atom subset of MIDDLE's inventory (missing k, t, p, f, c — the action-specific atoms). Like MIDDLE, suffix decomposes as **HEAD + TERM** with strong ordering (76.6% HEAD-initial, 100% TERM-terminal, zero violations). The first atom selects operational category (V=0.277); the last atom selects line position/scope (R²=0.059). Crucially, atoms carry **different information by position** — the same character means different things in suffix vs MIDDLE (0/12 shared atoms maintain identical profiles; C1408-C1409). Two alternating suffix modes cycle within paragraphs (C1229): Mode A = THERMAL/MONITORING atoms {d,e,h,y}; Mode B = STAGING/FLOW atoms {a,i,l,m,n,o,r,s} (C1410). Entropy: 1.475 bits of suffix freedom given MIDDLE (C1002, C1004).
+- **SUFFIX** is a parallel compositional domain using a 16-atom subset of MIDDLE's inventory (missing k, t, p, f, c — the action-specific atoms). Like MIDDLE, suffix decomposes as **HEAD + TERM** with strong ordering (76.6% HEAD-initial, 100% TERM-terminal, zero violations). The first atom selects operational category (V=0.277); the last atom selects line position/scope (R²=0.059). Crucially, atoms carry **different information by position** — the same character means different things in suffix vs MIDDLE (0/12 shared atoms maintain identical profiles; C1408-C1409). Two alternating suffix modes cycle within paragraphs (C1229): Mode A = THERMAL/MONITORING atoms {d,e,h,y}; Mode B = STAGING/FLOW atoms {a,i,l,m,n,o,r,s} (C1410). Suffix selection is dominated by the MIDDLE TERMINAL atom (V=0.503), not PREFIX (V=0.166) — PREFIX's influence on suffix is fully mediated through MIDDLE (C1411-C1413). Entropy: 1.475 bits of suffix freedom given MIDDLE (C1002, C1004).
 
 This compositional structure was derived statistically from distributional analysis of the transcript.
 

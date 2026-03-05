@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1254 validated constraints | **Version:** 5.06 | **Date:** 2026-03-05
+**Total:** 1259 validated constraints | **Version:** 5.07 | **Date:** 2026-03-05
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4671,6 +4671,31 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T7: Compositional structure — YES: first atom V=0.277 (category), last atom R²=0.059 (position)
 - T8: Mode decomposition — Mode A={d,e,ee,h,y} THERMAL; Mode B={a,i,ii,l,m,n,o,r,s} STAGING/FLOW
 - T9: Synthesis — suffix is parallel compositional domain: same alphabet, HEAD→TERM structure, position-dependent semantics
+
+---
+
+### Cross-Slot Interaction Grammar (C1411-C1415) -- Phase: CROSS_SLOT_INTERACTION (Phase 516)
+
+> **Summary:** Tests how PREFIX, MIDDLE, and SUFFIX constrain each other within tokens at atom resolution. The instruction encoding chain is PREFIX -> MIDDLE -> SUFFIX (not three-way): PREFIX selects MIDDLE HEAD atom (V=0.414), MIDDLE determines suffix via TERM atom (V=0.503 > PREFIX V=0.169), PREFIX-SUFFIX is the most independent pair (NMI=0.090, mediated through MIDDLE). Sister pairs select identical MIDDLE atoms (JSD=0.010). Cross-slot atom co-occurrence reveals exclusion rules (d O/E=0.203, e O/E=1.310) and 2 absolute prohibitions (l/r-TERM x e-SUFFIX HEAD = 0). 83 forbidden PREFIX x MIDDLE HEAD combinations quantify atom-level channeling.
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1411 | PREFIX->MIDDLE selectivity hierarchy with sister pair atom identity | 2 | B, PREFIX, MIDDLE, atom, sister pair, selectivity | PREFIX->MIDDLE HEAD V=0.414 (MI=1.089 bits). Sister pairs nearly identical: ch/sh JSD=0.010, ok/ot JSD=0.010. BASE predicts HEAD better than modifier (V=0.494 vs 0.295). Sisters select same atoms, differ only in manner. |
+| 1412 | MIDDLE dominates suffix determination via terminal atom | 2 | B, MIDDLE, suffix, atom, selectivity, terminal | Full MIDDLE->suffix mode V=0.678, MIDDLE TERM->mode V=0.503, PREFIX->mode V=0.169. MIDDLE TERM outpredicts PREFIX 3x. MIDDLE reduces suffix entropy 1.767 bits (45.1%) vs PREFIX 0.283 bits (7.2%). TERM is the suffix gatekeeper. |
+| 1413 | PREFIX-SUFFIX coupling is MIDDLE-mediated | 2 | B, PREFIX, MIDDLE, suffix, independence, mediation | PREFIX-SUFFIX NMI=0.090 (weakest pair) vs MIDDLE-SUFFIX NMI=0.451, PREFIX-MIDDLE NMI=0.481. Three-way synergy: +0.047 bits mode, +0.009 bits identity (negligible). Instruction chain: PREFIX->MIDDLE->SUFFIX, confirming C1003 at atom level. |
+| 1414 | Cross-slot atom co-occurrence exclusion rules | 2 | B, MIDDLE, suffix, atom, co-occurrence, exclusion | d REPELS (O/E=0.203, p=7.1e-81), a REPELS (0.465), h REPELS (0.509); e ATTRACTS (1.310, p=3.8e-50). Absolute: l-TERM x e-SUF_HEAD = 0 (exp=37), r-TERM x e-SUF_HEAD = 0 (exp=46). Complementary information principle; stability accumulates. |
+| 1415 | 83 forbidden PREFIX x MIDDLE HEAD combinations at atom level | 2 | B, PREFIX, MIDDLE, atom, forbidden, combinations | 83 pairs with O/E < 0.10: qo x e (0.061), qo x o (0.037), ok x k (0.000), da x e (0.000), ch x i (0.000). Each PREFIX defines narrow atom window. Extends C911 to sub-MIDDLE atom level. |
+
+**Phase 516 findings (Cross-Slot Interaction Grammar, 9 tests):**
+- T1: PREFIX->MIDDLE HEAD V=0.414, MI=1.089 bits; sister pairs JSD=0.010 (identical atoms)
+- T2: PREFIX->suffix PRESENCE V=0.489; qo 90.4% suffixed vs ok/ot 28%
+- T3: MIDDLE->suffix mode V=0.678; MIDDLE TERM alone V=0.503 > PREFIX V=0.169
+- T4: Three-way synergy +0.047 bits (mild); pairwise dominates (confirms C1003)
+- T5: Slot independence: MIDDLE-SUFFIX NMI=0.451, PREFIX-MIDDLE NMI=0.481, PREFIX-SUFFIX NMI=0.090
+- T6: d REPELS across slots (0.203), e ATTRACTS (1.310); n near-zero co-occurrence
+- T7: BASE V=0.494 vs modifier V=0.295 for MIDDLE HEAD; base dominates (confirms C1219)
+- T8: MIDDLE reduces suffix entropy 6.2x more than PREFIX; MIDDLE TERM 2.5x more than HEAD
+- T9: 83 depleted PREFIX x HEAD pairs; 2 absolute TERM x SUF_HEAD prohibitions (l/r x e = 0)
 
 ---
 
