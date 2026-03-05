@@ -4827,6 +4827,33 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 
 ---
 
+### Two-Level Closure Architecture (C1440-C1445) -- Phase: TWO_LEVEL_CLOSURE (Phase 522)
+
+> **Summary:** Characterizes the two-level closure architecture where MIDDLE terminal atoms and suffix atoms encode complementary information at the token boundary. 10 tests across 16,925 tokens with terminal classification. Key findings: three-tier terminal opacity gradient (OPAQUE y/m/n <5% suffix, SEMI-TRANSPARENT l/r 17-20%, TRANSPARENT h 99%) is an active grammar rule not distributional artifact (y O/E=0.159, m O/E=0.105, n O/E=0.168 in matched body-line-final population). TERMINAL carries 3.6x more category information than suffix head (1.261 vs 0.347 bits) with only 8.2% redundancy -- position-invariant (3.2-3.5x across all quintiles). 17 forbidden TERMINAL x suffix-head pairs; e-suffix universally blocked by non-h terminals (h is exclusive e-suffix gateway). Self-atom cross-layer repulsion for y (0.028x), n (0.000x), r (0.486x). Paragraph-level m-terminal/suffix anticorrelation (rho=-0.199, p=0.00001).
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1440 | three-tier terminal opacity gradient | 2 | B, MIDDLE, atom, terminal, suffix, gradient, opacity | OPAQUE (n 0.84%, y 1.61%, m 4.15%), SEMI-TRANSPARENT (l 16.78%, r 19.52%), TRANSPARENT (h 98.68%). V=0.753, chi2=7384.7. NOT binary. |
+| 1441 | active terminal-suffix exclusion grammar rule | 2 | B, MIDDLE, atom, terminal, suffix, exclusion, grammar, rule | y O/E=0.159, m O/E=0.105, n O/E=0.168 in matched body-line-final non-par-final population (N=1,439, baseline 45.8%). m/am Fisher p=0.000012. Active grammar rule, not distributional artifact. |
+| 1442 | TERMINAL-suffix category information complementarity | 2 | B, MIDDLE, atom, terminal, suffix, information, complementarity, mutual-information, category | TERMINAL 1.261 bits vs suffix-head 0.347 bits (3.6x ratio). Joint 1.252 bits, redundancy 0.112 bits (8.2%). 88.5% of TERM x suffix-head pairs have different top categories. Layer ratio stable 3.2-3.5x across all line positions. |
+| 1443 | 17 forbidden TERMINAL x suffix-head pairs | 2 | B, MIDDLE, atom, terminal, suffix, forbidden, co-occurrence, exclusion | e-suffix blocked by all non-h terminals (5 pairs). r-terminal excludes 5 suffix heads. l-terminal excludes 4. h-terminal excludes 5. 8 enriched pairs (>3.0x): o-suffix universal attractor for l/r/m terminals. |
+| 1444 | self-atom cross-layer repulsion | 2 | B, MIDDLE, atom, terminal, suffix, self-repulsion, cross-layer | y O/E=0.028 (Fisher p=0.0), n O/E=0.000 (p=0.0), r O/E=0.486 (p=0.0). l weak (0.621). h neutral (0.843). m neutral (1.048). Strongest repulsion at most opaque terminals. |
+| 1445 | m-terminal and suffix anticorrelation at paragraph level | 2 | B, MIDDLE, atom, m-terminal, suffix, paragraph, anticorrelation, section | rho=-0.199, p=0.00001 across 486 paragraphs. Mean m-term 1.27%, suffix 49.7%, both 0.06%. Bio lowest m-term (0.57%), Stars/Recipe highest suffix (52.0%). Two closure layers are partial substitutes at paragraph scale. |
+
+**Phase 522 findings (Two-Level Closure, 10 tests):**
+- T1: 6x13 TERMINAL x suffix-head contingency table. 17 forbidden pairs (O/E<0.1). e-suffix blocked by all non-h terminals. 8 enriched (>3.0x).
+- T2: Three-tier opacity gradient. OPAQUE (y/m/n <5%), SEMI-TRANSPARENT (l/r 17-20%), TRANSPARENT (h 99%). V=0.753, chi2=7384.7.
+- T3: Self-atom repulsion. y 0.028x, n 0.000x, r 0.486x across MIDDLE-terminal to suffix-head boundary. Strongest at most opaque terminals.
+- T4: Category complementarity. TERMINAL 1.261 bits vs suffix-head 0.347 bits, 3.6x ratio. 8.2% redundancy. 88.5% of pairs different top categories.
+- T5: h-terminal suffix composition. h-terminal tokens freely take all suffix types -- transparent gating.
+- T6: Enriched pair catalog. y+l 8.4x, n+y 8.2x, l+o 5.4x, y+d 3.8x, m+o 3.7x, r+o 3.5x, y+s 3.1x, y+r 3.0x.
+- T7: Category MI by position quintile. Ratio stable 3.2-3.5x across Q0-Q4.
+- T8: Position-invariant complementarity confirmed. Neither layer gains or loses dominance.
+- T9: Paragraph-level m-terminal/suffix anticorrelation. rho=-0.199, p=0.00001. Bio lowest m-term, Stars/Recipe highest suffix.
+- T10: Active exclusion test in matched population (body-line-final, non-par-final, N=1,439). y 0.159x, m 0.105x, n 0.168x vs 45.8% baseline. m/am Fisher p=0.000012.
+
+---
+
 ## Navigation
 
 ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)

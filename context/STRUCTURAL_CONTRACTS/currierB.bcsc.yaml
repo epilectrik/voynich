@@ -189,8 +189,8 @@ guarantees:
     provenance: "C404, C935"
 
   - id: "MIDDLE_INSTRUCTION_ENCODING"
-    statement: "Compound MIDDLEs encode instructions as HEAD + MOD* + TERM: 18 atoms in 4 slot roles (5 HEAD, 6 MOD, 6 TERM, 2 dual). Fixed modifier ordering (p→f→i→c→d→s). Frame (HEAD+TERM) predicts 64% of operational category; modifiers shift remaining 36%. Headless compounds (20.6%) form a specialized infrastructure subgrammar. h-terminal is transparent (HEAD+MODS reach V=0.988). Suffix is an independent compositional domain using the same atom inventory (entropy 1.475 bits)."
-    provenance: "C1393, C1394"
+    statement: "Compound MIDDLEs encode instructions as HEAD + MOD* + TERM: 18 atoms in 4 slot roles (5 HEAD, 6 MOD, 6 TERM, 2 dual). Fixed modifier ordering (p→f→i→c→d→s). Frame (HEAD+TERM) predicts 64% of operational category; modifiers shift remaining 36%. Headless compounds (20.6%) form a specialized infrastructure subgrammar. h-terminal is transparent (HEAD+MODS reach V=0.988). Suffix is an independent compositional domain using the same atom inventory (entropy 1.475 bits). TERMINAL atom gates suffix attachment via a three-tier opacity gradient (OPAQUE y/m/n <5%, SEMI-TRANSPARENT l/r 17-20%, TRANSPARENT h 99%; C1440) with active exclusion (C1441) and 17 forbidden TERMINAL x suffix-head pairs (C1443). TERMINAL and suffix encode complementary category information (3.6x MI ratio, 8.2% redundancy; C1442)."
+    provenance: "C1393, C1394, C1440, C1441, C1442, C1443"
 
 # ============================================================
 invariants:
@@ -708,6 +708,54 @@ middle_instruction_encoding:
     cross_position_divergence: "0/12 shared atoms maintain identical profiles between suffix and MIDDLE-terminal (JSD 0.004-0.560)"
     mode_partition: "Mode A={d,e,ee,h,y} THERMAL/MONITORING; Mode B={a,i,ii,l,m,n,o,r,s} STAGING/FLOW"
     provenance: "C1408, C1409, C1410"
+
+  # Added v3.27: Two-level closure architecture (C1440-C1445)
+  two_level_closure:
+    statement: "MIDDLE terminal atom and suffix encode complementary category information with active exclusion grammar"
+    terminal_opacity_gradient:
+      statement: "Three-tier suffix rate gradient (NOT binary)"
+      tiers:
+        OPAQUE: {atoms: ["n", "y", "m"], suffix_rates: ["0.84%", "1.61%", "4.15%"], note: "Active suffix suppression"}
+        SEMI_TRANSPARENT: {atoms: ["l", "r"], suffix_rates: ["16.78%", "19.52%"], note: "Selective suffix gating"}
+        TRANSPARENT: {atoms: ["h"], suffix_rate: "98.68%", note: "h freely passes through — HEAD+MODS determine category (V=0.988)"}
+      effect_size: "V=0.753, chi2=7384.7"
+      provenance: "C1440"
+    active_exclusion:
+      statement: "Opaque terminals suppress suffix via active grammar rule, not distributional separation"
+      matched_population: "Body-line-final, non-paragraph-final (N=1,439, baseline suffix rate 45.8%)"
+      suppression_rates: {y: "O/E=0.159", m: "O/E=0.105", n: "O/E=0.168"}
+      neutral: {l: "O/E=0.948", r: "O/E=1.217", h: "O/E=2.184 (always suffixed)"}
+      m_am_exclusion: "Fisher OR=0.06, p=0.000012 (13.5x depletion)"
+      provenance: "C1441"
+    information_complementarity:
+      statement: "TERMINAL and suffix-head encode different category information with minimal redundancy"
+      terminal_MI: "1.261 bits"
+      suffix_head_MI: "0.347 bits"
+      ratio: "3.6x"
+      joint_MI: "1.252 bits"
+      redundancy: "0.112 bits (8.2%)"
+      functional_partitioning: "88.5% of TERMINAL x suffix-head pairs have different top categories"
+      position_invariance: "Layer ratio stable 3.2-3.5x across all 5 line-position quintiles"
+      provenance: "C1442"
+    forbidden_pairs:
+      count: 17
+      key_patterns:
+        - pattern: "e-suffix blocked by all non-h terminals (5 pairs)"
+          note: "h is exclusive gateway for e-suffixed tokens"
+        - pattern: "r-terminal broadest exclusion (5 suffix heads blocked)"
+        - pattern: "o-suffix universal attractor for l/r/m terminals (3.5-5.4x)"
+      self_repulsion:
+        statement: "Same atom avoids repeating across MIDDLE-terminal → suffix-head boundary"
+        values: {y: "O/E=0.028", n: "O/E=0.000", r: "O/E=0.486", l: "O/E=0.621", h: "neutral", m: "neutral"}
+        interpretation: "Strongest repulsion at most opaque terminals"
+      provenance: "C1443, C1444"
+    paragraph_budget:
+      statement: "m-terminal closure and suffix attachment anticorrelate at paragraph level"
+      correlation: "Spearman rho=-0.199, p=0.00001 (486 paragraphs)"
+      section_variation: "Bio lowest m-term (0.57%), Stars/Recipe highest suffix (52.0%)"
+      co_occurrence: "Mean both fraction 0.06% (near-zero)"
+      provenance: "C1445"
+    provenance: "C1440, C1441, C1442, C1443, C1444, C1445"
 
   # Added v3.25: Cross-slot interaction grammar (C1411-C1415)
   cross_slot_interaction:

@@ -4,6 +4,31 @@
 
 ---
 
+## Version 5.13.115 (2026-03-05) - Phase 522: Two-Level Closure Architecture
+
+### Summary
+
+Phase 522 characterizes the two-level closure architecture where MIDDLE terminal atoms and suffix atoms encode complementary information at the token boundary. 10 tests across 16,925 tokens with terminal classification. Key findings: three-tier terminal opacity gradient (OPAQUE y/m/n <5% suffix, SEMI-TRANSPARENT l/r 17-20%, TRANSPARENT h 99%) is an active grammar rule (C1441: O/E 0.105-0.168 in matched population). TERMINAL carries 3.6x more category mutual information than suffix head (1.261 vs 0.347 bits) with only 8.2% redundancy, position-invariant across all quintiles. 17 forbidden TERMINAL x suffix-head pairs; e-suffix universally blocked by non-h terminals. Self-atom cross-layer repulsion (y 0.028x, n 0.000x). Paragraph-level m-terminal/suffix anticorrelation (rho=-0.199).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1440: three-tier terminal opacity gradient (OPAQUE/SEMI-TRANSPARENT/TRANSPARENT, V=0.753) |
+| **ADDED** | C1441: active terminal-suffix exclusion grammar rule (y 0.159x, m 0.105x, n 0.168x) |
+| **ADDED** | C1442: TERMINAL-suffix category information complementarity (3.6x MI ratio, 8.2% redundancy) |
+| **ADDED** | C1443: 17 forbidden TERMINAL x suffix-head pairs (e-suffix blocked by all non-h terminals) |
+| **ADDED** | C1444: self-atom cross-layer repulsion (y 0.028x, n 0.000x, r 0.486x) |
+| **ADDED** | C1445: m-terminal and suffix anticorrelation at paragraph level (rho=-0.199, p=0.00001) |
+| **ADDED** | `phases/TWO_LEVEL_CLOSURE/scripts/two_level_closure.py` |
+| **ADDED** | `phases/TWO_LEVEL_CLOSURE/results/two_level_closure.json` |
+| **ADDED** | `phases/TWO_LEVEL_CLOSURE/REPORT.md` |
+| **UPDATED** | INDEX.md -- +6 constraints (1290 total) |
+| **UPDATED** | CONSTRAINT_TABLE.txt regenerated (1290 constraints) |
+| **UPDATED** | currierB.bcsc.yaml -- added two-level closure architecture to middle_instruction_encoding |
+
+---
+
 ## Version 5.12.114 (2026-03-05) - Phase 521: m-Terminal Anomaly
 
 ### Summary
