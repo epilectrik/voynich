@@ -4,6 +4,26 @@
 
 ---
 
+## Version 5.04.106 (2026-03-05) - Phase 513: STATE-C Convergence Revisit
+
+### Summary
+
+Phase 513 revisits the early STATE-C convergence model (C074, C325, Phases 13-14) in light of paragraph independence findings (C1398-C1400). Result: FULL_REFRAME. C325's completion gradient (rho=+0.24 with folio position) is a section confound — within every section, the gradient collapses to zero. Section B (74.5% AXM) sits later in the manuscript (section-position rho=+0.391). No sequential convergence toward AXM is detected at any scale: across paragraphs (rho=-0.019, p=0.78), within paragraphs (rho=-0.016, p=0.535), or between adjacent paragraphs (rho=0.001, perm p=0.983). Position-aware models are 29.6% worse than simple folio-mean baseline. C074/C079/C084 remain factually correct but their "convergence" framing is reinterpreted: MONOSTATE describes AXM as the dominant operational mode (59-75% by section), not a sequential convergence endpoint.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1401: C325 completion gradient is section confound |
+| **ADDED** | C1402: no sequential convergence to AXM at any scale (7 tests, 0 sequential) |
+| **ADDED** | C1403: MONOSTATE is thematic dominance not sequential convergence (reframes C074/C079/C084) |
+| **ADDED** | `phases/STATE_C_CONVERGENCE_REVISIT/scripts/state_c_revisit.py` |
+| **ADDED** | `phases/STATE_C_CONVERGENCE_REVISIT/results/state_c_revisit.json` |
+| **UPDATED** | BCSC v3.22 — convergence section: reframed with C1401-C1403 |
+| **UPDATED** | INDEX.md — +3 constraints (1247 total) |
+
+---
+
 ## Version 5.04.105 (2026-03-05) - Phase 512: Paragraph State-Independent Ordering
 
 ### Summary

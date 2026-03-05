@@ -4608,6 +4608,25 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 
 ---
 
+### STATE-C Convergence Revisit (C1401-C1403) -- Phase: STATE_C_CONVERGENCE_REVISIT (Phase 513)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1401 | C325 completion gradient is section confound | 2 | B, convergence, section, position | Raw folio-position vs AXM rate (rho=+0.226, p=0.041) collapses to zero within every section (B: -0.012, H: +0.084, S: -0.008; all p>0.6). Gradient arises because section B (74.5% AXM) occupies later manuscript positions (section-position rho=+0.391). C325 QUALIFIED. |
+| 1402 | no sequential convergence to AXM at any scale | 2 | B, convergence, paragraph, line, AXM | Neither cross-paragraph (rho=-0.019, p=0.78; 16 increasing/15 decreasing/14 flat) nor within-paragraph (rho=-0.016, Wilcoxon p=0.535) shows sequential convergence. Adjacent paragraph AXM rates uncorrelated (rho=0.001, perm p=0.983). Position-aware model 29.6% WORSE than folio-mean baseline. AXM dominance is thematic, not sequential. |
+| 1403 | MONOSTATE is thematic dominance not sequential convergence | 2 | B, convergence, MONOSTATE, AXM, reframe | C084's MONOSTATE describes AXM as dominant operational mode (59-75% by section), not sequential convergence endpoint. Folio ICC=0.286 (71% paragraph-level variation). Reframes C074/C079/C084 without contradicting Tier 0 facts — statistical findings remain true, dynamical "convergence" interpretation replaced by static "thematic dominance". |
+
+**Phase 513 findings (STATE-C Convergence Revisit, 7 tests):**
+- T1: C325 completion gradient — SECTION_CONFOUND (within-section rho collapses to zero; section-position rho=+0.391)
+- T2: Paragraph terminal AXM — MIXED (mean 65.3%; folio ICC=0.286, 71% paragraph-level variation)
+- T3: Sequential convergence across paragraphs — FAIL (rho=-0.019, p=0.78; 16 up/15 down/14 flat)
+- T4: Adjacent paragraph independence — CONFIRMED (rho=0.001, perm p=0.983)
+- T5: Folio theme sufficiency — CONFIRMED (position-aware model 29.6% worse than folio mean)
+- T6: Within-paragraph convergence — FAIL (rho=-0.016, Wilcoxon p=0.535; first/second half AXM identical)
+- T7: Synthesis — FULL_REFRAME: "convergence to STATE-C" is AXM thematic dominance at section level, not sequential dynamics
+
+---
+
 ## Navigation
 
 ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)

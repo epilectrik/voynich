@@ -1,0 +1,205 @@
+{
+  "phase": "Phase 513: STATE-C CONVERGENCE REVISIT",
+  "n_tokens": 23096,
+  "n_folios": 82,
+  "n_paragraphs": 264,
+  "AXM_STATE": 4,
+  "T1_section_confound": {
+    "raw_rho": 0.22591177719006106,
+    "raw_p": 0.04127304758937509,
+    "section_position_rho": 0.390938131578222,
+    "section_position_p": 0.0002818921905253601,
+    "within_section": {
+      "B": {
+        "n": 20,
+        "rho": -0.012030075187969924,
+        "p": 0.9598534442846784,
+        "mean_axm": 0.744729372104335,
+        "verdict": "NOT_SIGNIFICANT"
+      },
+      "C": {
+        "n": 5,
+        "rho": 0.6,
+        "p": 0.28475697986529375,
+        "mean_axm": 0.58198616835717,
+        "verdict": "NOT_SIGNIFICANT"
+      },
+      "H": {
+        "n": 32,
+        "rho": 0.08394428152492668,
+        "p": 0.6478324222371902,
+        "mean_axm": 0.5892753550148754,
+        "verdict": "NOT_SIGNIFICANT"
+      },
+      "S": {
+        "n": 23,
+        "rho": -0.007905138339920948,
+        "p": 0.9714434970216934,
+        "mean_axm": 0.6683422495696347,
+        "verdict": "NOT_SIGNIFICANT"
+      },
+      "T": {
+        "n": 2,
+        "rho": null,
+        "p": null,
+        "verdict": "INSUFFICIENT"
+      }
+    },
+    "section_means": {
+      "B": 0.744729372104335,
+      "C": 0.58198616835717,
+      "H": 0.5892753550148754,
+      "S": 0.6683422495696347,
+      "T": 0.5816831683168318
+    },
+    "verdict": "SECTION_CONFOUND"
+  },
+  "T2_paragraph_terminal": {
+    "n_valid": 264,
+    "mean_terminal_axm": 0.6527777777777778,
+    "mean_overall_axm": 0.6767575047140206,
+    "terminal_distribution": {
+      "<0.5": 76,
+      ">=0.9": 81,
+      "0.5-0.9": 107
+    },
+    "section_terminal": {
+      "B": {
+        "n": 81,
+        "mean": 0.7078189300411524,
+        "std": 0.29342458386791587
+      },
+      "C": {
+        "n": 15,
+        "mean": 0.6222222222222222,
+        "std": 0.23934065809486688
+      },
+      "H": {
+        "n": 44,
+        "mean": 0.5454545454545454,
+        "std": 0.3022717779281819
+      },
+      "S": {
+        "n": 119,
+        "mean": 0.6610644257703083,
+        "std": 0.2833150209185497
+      },
+      "T": {
+        "n": 5,
+        "mean": 0.5999999999999999,
+        "std": 0.3265986323710904
+      }
+    },
+    "folio_icc_approx": 0.285995928622009,
+    "verdict": "MIXED"
+  },
+  "T3_sequential_convergence": {
+    "n_folios_tested": 46,
+    "verdict_distribution": {
+      "INCREASING": 16,
+      "DECREASING": 15,
+      "FLAT": 14,
+      "CONSTANT": 1
+    },
+    "mean_within_folio_rho": -0.006450480498660362,
+    "global_rho": -0.019143921935558004,
+    "global_p": 0.7796692320399441,
+    "verdict": "NO_SEQUENTIAL_CONVERGENCE"
+  },
+  "T4_independence": {
+    "n_adjacent_pairs": 173,
+    "adjacent_rho": 0.0010239993869318124,
+    "adjacent_p": 0.9893318268279647,
+    "shuffle_mean_rho": 0.01633879715881514,
+    "permutation_p": 0.983,
+    "verdict": "INDEPENDENT_NEGLIGIBLE_EFFECT",
+    "note": "rho=0.0010 is negligible; permutation p=0.9830 may reflect distributional artifacts"
+  },
+  "T5_folio_sufficiency": {
+    "mse_folio_baseline": 0.11036360561474717,
+    "mse_position_model": 0.1430473972630653,
+    "position_improvement": -0.2961464648265426,
+    "verdict": "FOLIO_SUFFICIENT"
+  },
+  "T6_within_paragraph": {
+    "n_paragraphs": 260,
+    "mean_rho": -0.0161404272070428,
+    "median_rho": -0.006154574548966636,
+    "pct_positive": 0.4653846153846154,
+    "pct_negative": 0.5,
+    "wilcoxon_p": 0.5348441946599719,
+    "first_half_mean_axm": 0.6898981009722485,
+    "second_half_mean_axm": 0.680745811495293,
+    "mannwhitney_p": 0.8295236909199839,
+    "section_within_stats": {
+      "B": {
+        "n": 78,
+        "mean_rho": 0.015359552763337803,
+        "pct_positive": 0.5128205128205128
+      },
+      "C": {
+        "n": 14,
+        "mean_rho": -0.014616607500275667,
+        "pct_positive": 0.35714285714285715
+      },
+      "H": {
+        "n": 44,
+        "mean_rho": -0.045039188894783394,
+        "pct_positive": 0.4318181818181818
+      },
+      "S": {
+        "n": 118,
+        "mean_rho": -0.04610260836659431,
+        "pct_positive": 0.4491525423728814
+      },
+      "T": {
+        "n": 5,
+        "mean_rho": 0.4463816828521958,
+        "pct_positive": 0.8
+      }
+    },
+    "verdict": "NO_WITHIN_PARAGRAPH_CONVERGENCE"
+  },
+  "T7_synthesis": {
+    "verdicts": {
+      "T1": "SECTION_CONFOUND",
+      "T2": "MIXED",
+      "T3": "NO_SEQUENTIAL_CONVERGENCE",
+      "T4": "INDEPENDENT_NEGLIGIBLE_EFFECT",
+      "T5": "FOLIO_SUFFICIENT",
+      "T6": "NO_WITHIN_PARAGRAPH_CONVERGENCE"
+    },
+    "Q1_thematic_envelope": "YES - AXM dominance is a folio-level thematic property, not sequential convergence",
+    "Q2_section_confound": "YES - gradient collapses within sections",
+    "Q3_sequential_any_scale": "NO_AT_ANY_SCALE",
+    "Q4_reframe_monostate": "REFRAME: MONOSTATE describes folio-level AXM thematic dominance, not sequential convergence to a terminal state",
+    "overall_assessment": "FULL_REFRAME: C074/C084 convergence to STATE-C is better understood as AXM dominance within each folio program. The folio-position gradient (C325) is a section confound. Paragraphs within folios are independently composed at this level. Sequential convergence is not detected at any scale."
+  },
+  "diagnostic_quintiles": {
+    "Q0": {
+      "n": 58,
+      "mean": 0.6494252873563219,
+      "std": 0.2797262878997232
+    },
+    "Q1": {
+      "n": 46,
+      "mean": 0.717391304347826,
+      "std": 0.27773576661937394
+    },
+    "Q2": {
+      "n": 42,
+      "mean": 0.6587301587301587,
+      "std": 0.32924553194748474
+    },
+    "Q3": {
+      "n": 46,
+      "mean": 0.6521739130434783,
+      "std": 0.3104968881975152
+    },
+    "Q4": {
+      "n": 27,
+      "mean": 0.6419753086419754,
+      "std": 0.23875406920757675
+    }
+  }
+}

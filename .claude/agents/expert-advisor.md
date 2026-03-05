@@ -22,7 +22,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1244 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1400.
+the highest ID present is C1403.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-05 00:04
+**Generated:** 2026-03-05 10:14
 **Version:** FROZEN STATE (1244 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -1673,6 +1673,9 @@ C1397	headless compound functional grammar	2	B, MIDDLE, headless, grammar, compo
 C1398	paragraph operational gradient	2	B, paragraph, clustering, section, REGIME
 C1399	paragraph ordering null	2	B, paragraph, ordering, folio, sequence
 C1400	paragraph state-independent ordering	2	B, paragraph, ordering, thermal, state
+C1401	C325 completion gradient is section confound	2	B, convergence, section, position
+C1402	no sequential convergence to AXM at any scale	2	B, convergence, paragraph, line, AXM
+C1403	MONOSTATE is thematic dominance not sequential convergence	2	B, convergence, MONOSTATE, AXM, reframe
 
 ---
 
@@ -4517,13 +4520,13 @@ Only Tier 0-2 structural findings are binding.
 ---
 
 ## BCSC (Currier B Structural Contract)
-**Meta:** v3.21, ACTIVE, 61.9% of tokens, 83 folios
+**Meta:** v3.22, ACTIVE, 61.9% of tokens, 83 folios
 
 ### Guarantees (35)
 - GRAMMAR_UNIVERSAL: 49-class grammar applies to all 83 folios without exception [C121, C124]
 - FORTY_NINE_CLASS_OPTIMALITY: 49-class is the optimal resolution for transition dynamics; token-level Markov is 38% worse due to sparsity; suffix cond [C1004]
 - TOTAL_COVERAGE: Every Currier B token parses; zero non-executable [C115, C124]
-- CONVERGENT_ARCHITECTURE: Grammar targets single stable state (STATE-C) [C074, C079, C084]
+- CONVERGENT_ARCHITECTURE: Grammar targets single stable state (STATE-C) — reframed as AXM thematic dominance, not sequential convergence (C1403) [C074, C079, C084, C1403]
 - HAZARD_TOPOLOGY_FIXED: 17 forbidden transitions in 5 classes are DISFAVORED (~65% compliance, not absolute) [C109, C789]
 - KERNEL_CENTRALITY: k, h, e form irreducible morphological core governing within-token construction [C089, C521, C522]
 - LINE_FORMALITY: Lines are formal control blocks, not scribal wrapping [C357-C360]
@@ -4558,7 +4561,7 @@ Only Tier 0-2 structural findings are binding.
 
 ### Invariants (23)
 - grammar_universality: Same 49 classes apply to every folio [C124]
-- convergence_dominance: Majority of programs terminate in STATE-C [C074, C084, C323]
+- convergence_dominance: Majority of programs terminate in STATE-C (AXM thematic dominance, not sequential convergence — C140 [C074, C084, C323, C1403]
 - hazard_asymmetry: Most forbidden transitions are directional [C111]
 - line_invariance: Grammar violations do not cross line boundaries [C360]
 - constraint_symmetry: Grammar constraints are bidirectional; execution is directional. PREFIX routes symmetrically; MIDDLE [C391, C886, C1024]
@@ -4589,7 +4592,7 @@ Only Tier 0-2 structural findings are binding.
 - kernel: C089, C103, C104, C105, C332, C333, C339, C521, C1225, C1226
 - hazards: C109, C110, C111, C112, C386, C789
 - program_structure: C178, C357, C358, C359, C360, C531, C535, C556, C557, C561, C562, C670, C673, C677, C777, C815, C840, C841, C842, C843, C845, C855, C856, C857, C858, C859, C860, C861, C862, C864, C870, C897, C932, C933, C935, C956, C957, C958, C959, C960, C961, C962, C963, C964, C965, C966, C971, C972, C975, C1121, C1221, C1227, C1228, C1229, C1230, C1231, C1232, C1233, C1236, C1237, C1256, C1258, C1259, C1260, C1288, C1308, C1309, C1310, C1311, C1312, C1378, C1396, C1398, C1399, C1400
-- convergence: C079, C084, C323, C325
+- convergence: C079, C084, C323, C325, C1401, C1402, C1403
 - link_operator: C340, C365, C366, C609, C804, C805, C806, C807, C808, C809, C810, C1170, C1171, C1172, C1173, C1174
 - recovery: C105, C397, C398, C399, C601, C643, C645
 - safety_buffer_architecture: C997, C1000, C1009, C1018

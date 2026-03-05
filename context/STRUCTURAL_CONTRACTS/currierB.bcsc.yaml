@@ -3,8 +3,8 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.21"
-  date: "2026-03-04"
+  version: "3.22"
+  date: "2026-03-05"
   status: "ACTIVE"
   layer_type: "grammar contract"
   derived_from: "Tier 0-2 constraints (structural); Tier 3 operational layer clearly marked"
@@ -65,8 +65,8 @@ guarantees:
     provenance: "C115, C124"
 
   - id: "CONVERGENT_ARCHITECTURE"
-    statement: "Grammar targets single stable state (STATE-C)"
-    provenance: "C074, C079, C084"
+    statement: "Grammar targets single stable state (STATE-C) — reframed as AXM thematic dominance, not sequential convergence (C1403)"
+    provenance: "C074, C079, C084, C1403"
 
   - id: "HAZARD_TOPOLOGY_FIXED"
     statement: "17 forbidden transitions in 5 classes are DISFAVORED (~65% compliance, not absolute)"
@@ -199,8 +199,8 @@ invariants:
     provenance: "C124"
 
   convergence_dominance:
-    statement: "Majority of programs terminate in STATE-C"
-    provenance: "C074, C084, C323"
+    statement: "Majority of programs terminate in STATE-C (AXM thematic dominance, not sequential convergence — C1403)"
+    provenance: "C074, C084, C323, C1403"
 
   hazard_asymmetry:
     statement: "Most forbidden transitions are directional"
@@ -1288,19 +1288,31 @@ program_structure:
 convergence:
 
   target:
-    state: "STATE-C"
-    type: "MONOSTATE"
-    provenance: "C079, C084"
+    state: "STATE-C (= AXM macro-state)"
+    type: "MONOSTATE — thematic dominance, not sequential convergence (C1403)"
+    mechanism: "AXM is the dominant operational mode at section-determined rates (59-75%), not a terminal state that programs converge toward"
+    provenance: "C079, C084, C1403"
 
   terminal_distribution:
     state_c: "57.8%"
     transitional: "38.6%"
     initial_reset: "3.6%"
-    provenance: "C323"
+    note: "57.8% is corpus-wide average of section-level AXM thematic profiles"
+    provenance: "C323, C1403"
 
   gradient:
-    direction: "STATE-C increases with position"
-    provenance: "C325"
+    direction: "SECTION CONFOUND — raw rho=+0.226 collapses to zero within every section (C1401)"
+    mechanism: "Section B (74.5% AXM) occupies later manuscript positions (section-position rho=+0.391)"
+    within_section: "B: -0.012, H: +0.084, S: -0.008 (all p>0.6)"
+    provenance: "C325 (QUALIFIED by C1401)"
+
+  sequential_convergence:
+    across_paragraphs: "rho=-0.019, p=0.78 (16 increasing/15 decreasing/14 flat)"
+    within_paragraphs: "rho=-0.016, Wilcoxon p=0.535"
+    adjacent_independence: "rho=0.001, perm p=0.983"
+    position_predictive_value: "Position-aware model 29.6% WORSE than folio-mean baseline"
+    verdict: "NO_SEQUENTIAL_CONVERGENCE_AT_ANY_SCALE"
+    provenance: "C1402"
 
 # ============================================================
 link_operator:
@@ -2466,8 +2478,10 @@ annotations:
   convergence_statistics:
     state_c_terminal: "57.8%"
     transitional_terminal: "38.6%"
-    completion_gradient_rho: "+0.24"
-    provenance: "C323, C325"
+    completion_gradient_rho: "+0.24 (SECTION CONFOUND — C1401)"
+    sequential_convergence: "NONE at any scale (C1402)"
+    monostate_reframe: "Thematic dominance, not sequential convergence (C1403)"
+    provenance: "C323, C325, C1401, C1402, C1403"
 
   link_statistics:
     density: "38%"
@@ -2637,7 +2651,10 @@ provenance:
   convergence:
     - "C323"   # Terminal distribution
     - "C324"   # Section-dependent terminals
-    - "C325"   # Completion gradient
+    - "C325"   # Completion gradient (QUALIFIED by C1401: section confound)
+    - "C1401"  # C325 completion gradient is section confound
+    - "C1402"  # No sequential convergence to AXM at any scale
+    - "C1403"  # MONOSTATE is thematic dominance not sequential convergence
 
   recovery:
     - "C397"   # qo-prefix post-source frequency (REVISED: lane transition, not escape)
