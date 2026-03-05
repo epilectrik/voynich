@@ -1,0 +1,1706 @@
+{
+  "T1_inventory": {
+    "n_m_terminal": 289,
+    "frac_of_all": 0.012512989262209907,
+    "unique_m_middles": 10,
+    "m_middle_inventory": {
+      "am": 174,
+      "m": 76,
+      "om": 25,
+      "im": 8,
+      "faim": 1,
+      "lm": 1,
+      "kam": 1,
+      "eam": 1,
+      "opom": 1,
+      "fam": 1
+    },
+    "head_atoms": {
+      "a": 174,
+      "null": 87,
+      "o": 26,
+      "k": 1,
+      "e": 1
+    },
+    "mod_stacks": {
+      "i": 8,
+      "a": 2,
+      "fai": 1,
+      "l": 1,
+      "po": 1,
+      "fa": 1
+    },
+    "terminal_diversity": {
+      "y": {
+        "count": 4780,
+        "unique": 33,
+        "frac": 0.20696,
+        "top5": [
+          [
+            "edy",
+            1938
+          ],
+          [
+            "ey",
+            889
+          ],
+          [
+            "dy",
+            675
+          ],
+          [
+            "eey",
+            644
+          ],
+          [
+            "y",
+            513
+          ]
+        ]
+      },
+      "l": {
+        "count": 2568,
+        "unique": 48,
+        "frac": 0.11119,
+        "top5": [
+          [
+            "l",
+            855
+          ],
+          [
+            "ol",
+            762
+          ],
+          [
+            "al",
+            521
+          ],
+          [
+            "eol",
+            294
+          ],
+          [
+            "eeol",
+            47
+          ]
+        ]
+      },
+      "r": {
+        "count": 1962,
+        "unique": 49,
+        "frac": 0.08495,
+        "top5": [
+          [
+            "r",
+            749
+          ],
+          [
+            "ar",
+            677
+          ],
+          [
+            "or",
+            446
+          ],
+          [
+            "ir",
+            19
+          ],
+          [
+            "air",
+            6
+          ]
+        ]
+      },
+      "h": {
+        "count": 1284,
+        "unique": 188,
+        "frac": 0.05559,
+        "top5": [
+          [
+            "kch",
+            148
+          ],
+          [
+            "ckh",
+            127
+          ],
+          [
+            "opch",
+            107
+          ],
+          [
+            "pch",
+            79
+          ],
+          [
+            "lch",
+            74
+          ]
+        ]
+      },
+      "m": {
+        "count": 289,
+        "unique": 10,
+        "frac": 0.01251,
+        "top5": [
+          [
+            "am",
+            174
+          ],
+          [
+            "m",
+            76
+          ],
+          [
+            "om",
+            25
+          ],
+          [
+            "im",
+            8
+          ],
+          [
+            "faim",
+            1
+          ]
+        ]
+      },
+      "n": {
+        "count": 2147,
+        "unique": 14,
+        "frac": 0.09296,
+        "top5": [
+          [
+            "aiin",
+            834
+          ],
+          [
+            "iin",
+            560
+          ],
+          [
+            "ain",
+            420
+          ],
+          [
+            "in",
+            264
+          ],
+          [
+            "oiin",
+            32
+          ]
+        ]
+      },
+      "k": {
+        "count": 2992,
+        "unique": 102,
+        "frac": 0.12955,
+        "top5": [
+          [
+            "k",
+            2083
+          ],
+          [
+            "ck",
+            197
+          ],
+          [
+            "ek",
+            169
+          ],
+          [
+            "eck",
+            90
+          ],
+          [
+            "ok",
+            70
+          ]
+        ]
+      },
+      "t": {
+        "count": 961,
+        "unique": 49,
+        "frac": 0.04161,
+        "top5": [
+          [
+            "t",
+            576
+          ],
+          [
+            "ct",
+            95
+          ],
+          [
+            "et",
+            58
+          ],
+          [
+            "ect",
+            47
+          ],
+          [
+            "ot",
+            46
+          ]
+        ]
+      }
+    }
+  },
+  "T2_positional": {
+    "positional_rates_m": {
+      "1": {
+        "rate": 0.00041,
+        "count": 1,
+        "total": 2420
+      },
+      "10": {
+        "rate": 0.04516,
+        "count": 62,
+        "total": 1373
+      },
+      "11": {
+        "rate": 0.05948,
+        "count": 53,
+        "total": 891
+      },
+      "12": {
+        "rate": 0.07692,
+        "count": 37,
+        "total": 481
+      },
+      "13": {
+        "rate": 0.09231,
+        "count": 18,
+        "total": 195
+      },
+      "14": {
+        "rate": 0.0597,
+        "count": 4,
+        "total": 67
+      },
+      "2": {
+        "rate": 0.00124,
+        "count": 3,
+        "total": 2414
+      },
+      "3": {
+        "rate": 0.00208,
+        "count": 5,
+        "total": 2406
+      },
+      "4": {
+        "rate": 0.0021,
+        "count": 5,
+        "total": 2377
+      },
+      "5": {
+        "rate": 0.00867,
+        "count": 20,
+        "total": 2306
+      },
+      "6": {
+        "rate": 0.00501,
+        "count": 11,
+        "total": 2194
+      },
+      "7": {
+        "rate": 0.00724,
+        "count": 15,
+        "total": 2073
+      },
+      "8": {
+        "rate": 0.00886,
+        "count": 17,
+        "total": 1919
+      },
+      "9": {
+        "rate": 0.01596,
+        "count": 27,
+        "total": 1692
+      },
+      "FINAL": {
+        "rate": 0.08802,
+        "count": 213,
+        "total": 2420
+      },
+      "Q0": {
+        "rate": 0.00162,
+        "count": 9,
+        "total": 5567
+      },
+      "Q1": {
+        "rate": 0.00153,
+        "count": 7,
+        "total": 4580
+      },
+      "Q2": {
+        "rate": 0.00387,
+        "count": 18,
+        "total": 4657
+      },
+      "Q3": {
+        "rate": 0.00638,
+        "count": 29,
+        "total": 4543
+      },
+      "Q4": {
+        "rate": 0.06028,
+        "count": 226,
+        "total": 3749
+      }
+    },
+    "terminal_positional_profiles": {
+      "y": {
+        "POS1": 0.17274,
+        "Q0": 0.21671,
+        "Q1": 0.21654,
+        "Q2": 0.2057,
+        "Q3": 0.21176,
+        "Q4": 0.18642,
+        "FINAL": 0.21612
+      },
+      "l": {
+        "POS1": 0.10605,
+        "Q0": 0.1109,
+        "Q1": 0.10849,
+        "Q2": 0.11258,
+        "Q3": 0.10778,
+        "Q4": 0.1088,
+        "FINAL": 0.12686
+      },
+      "r": {
+        "POS1": 0.09611,
+        "Q0": 0.08167,
+        "Q1": 0.06715,
+        "Q2": 0.0806,
+        "Q3": 0.09571,
+        "Q4": 0.10742,
+        "FINAL": 0.08678
+      },
+      "h": {
+        "POS1": 0.05468,
+        "Q0": 0.05656,
+        "Q1": 0.05906,
+        "Q2": 0.06374,
+        "Q3": 0.05456,
+        "Q4": 0.05267,
+        "FINAL": 0.03678
+      },
+      "m": {
+        "POS1": 0.00041,
+        "Q0": 0.00254,
+        "Q1": 0.00153,
+        "Q2": 0.00389,
+        "Q3": 0.00581,
+        "Q4": 0.01109,
+        "FINAL": 0.08802
+      },
+      "n": {
+        "POS1": 0.12966,
+        "Q0": 0.08548,
+        "Q1": 0.08443,
+        "Q2": 0.09183,
+        "Q3": 0.09459,
+        "Q4": 0.1185,
+        "FINAL": 0.06612
+      }
+    },
+    "concentration_indices": {
+      "y": 1.04,
+      "l": 1.14,
+      "r": 1.02,
+      "h": 0.66,
+      "m": 7.03,
+      "n": 0.71
+    }
+  },
+  "T3_scope": {
+    "line_final": {
+      "n": 2554,
+      "m_count": 225,
+      "m_rate": 0.0881
+    },
+    "par_final": {
+      "n": 583,
+      "m_count": 19,
+      "m_rate": 0.03259
+    },
+    "body_line_final_not_par_final": {
+      "n": 1971,
+      "m_count": 206,
+      "m_rate": 0.10452
+    },
+    "header_line_final": {
+      "n": 87,
+      "m_count": 0,
+      "m_rate": 0.0
+    },
+    "non_header_line_final": {
+      "n": 2467,
+      "m_count": 225,
+      "m_rate": 0.0912
+    },
+    "folio_final": {
+      "n": 83,
+      "m_count": 3,
+      "m_rate": 0.03614
+    },
+    "non_final": {
+      "n": 20542,
+      "m_count": 64,
+      "m_rate": 0.00312
+    },
+    "par_vs_body_fisher_p": 0.0
+  },
+  "T4_prefix": {
+    "prefix_distribution": {
+      "BARE": {
+        "count": 77,
+        "frac_of_m": 0.2664,
+        "overall_frac": 0.1673,
+        "enrichment": 1.59
+      },
+      "da": {
+        "count": 50,
+        "frac_of_m": 0.173,
+        "overall_frac": 0.0469,
+        "enrichment": 3.69
+      },
+      "ot": {
+        "count": 39,
+        "frac_of_m": 0.1349,
+        "overall_frac": 0.0627,
+        "enrichment": 2.15
+      },
+      "ok": {
+        "count": 23,
+        "frac_of_m": 0.0796,
+        "overall_frac": 0.0639,
+        "enrichment": 1.25
+      },
+      "ta": {
+        "count": 16,
+        "frac_of_m": 0.0554,
+        "overall_frac": 0.0103,
+        "enrichment": 5.4
+      },
+      "ar": {
+        "count": 11,
+        "frac_of_m": 0.0381,
+        "overall_frac": 0.0059,
+        "enrichment": 6.46
+      },
+      "al": {
+        "count": 11,
+        "frac_of_m": 0.0381,
+        "overall_frac": 0.0075,
+        "enrichment": 5.08
+      },
+      "or": {
+        "count": 10,
+        "frac_of_m": 0.0346,
+        "overall_frac": 0.0075,
+        "enrichment": 4.62
+      },
+      "ol": {
+        "count": 10,
+        "frac_of_m": 0.0346,
+        "overall_frac": 0.0379,
+        "enrichment": 0.91
+      },
+      "ch": {
+        "count": 7,
+        "frac_of_m": 0.0242,
+        "overall_frac": 0.1512,
+        "enrichment": 0.16
+      },
+      "ka": {
+        "count": 7,
+        "frac_of_m": 0.0242,
+        "overall_frac": 0.0103,
+        "enrichment": 2.35
+      },
+      "lk": {
+        "count": 7,
+        "frac_of_m": 0.0242,
+        "overall_frac": 0.019,
+        "enrichment": 1.28
+      },
+      "sa": {
+        "count": 6,
+        "frac_of_m": 0.0208,
+        "overall_frac": 0.0142,
+        "enrichment": 1.46
+      },
+      "sh": {
+        "count": 5,
+        "frac_of_m": 0.0173,
+        "overall_frac": 0.1008,
+        "enrichment": 0.17
+      },
+      "yk": {
+        "count": 3,
+        "frac_of_m": 0.0104,
+        "overall_frac": 0.0136,
+        "enrichment": 0.76
+      },
+      "ko": {
+        "count": 1,
+        "frac_of_m": 0.0035,
+        "overall_frac": 0.0021,
+        "enrichment": 1.66
+      },
+      "fch": {
+        "count": 1,
+        "frac_of_m": 0.0035,
+        "overall_frac": 0.0025,
+        "enrichment": 1.4
+      },
+      "qo": {
+        "count": 1,
+        "frac_of_m": 0.0035,
+        "overall_frac": 0.1762,
+        "enrichment": 0.02
+      },
+      "ke": {
+        "count": 1,
+        "frac_of_m": 0.0035,
+        "overall_frac": 0.0112,
+        "enrichment": 0.31
+      },
+      "po": {
+        "count": 1,
+        "frac_of_m": 0.0035,
+        "overall_frac": 0.0059,
+        "enrichment": 0.59
+      }
+    },
+    "chi2": 281.6,
+    "p": 8.004970788658534e-52,
+    "cramers_v": 0.1163
+  },
+  "T5_suffix": {
+    "suffix_rate_m": 0.0415,
+    "suffix_rate_all": 0.4828,
+    "suffix_distribution": {
+      "BARE": {
+        "count": 277,
+        "frac_of_m": 0.9585,
+        "overall_frac": 0.5172
+      },
+      "dy": {
+        "count": 3,
+        "frac_of_m": 0.0104,
+        "overall_frac": 0.0433
+      },
+      "om": {
+        "count": 3,
+        "frac_of_m": 0.0104,
+        "overall_frac": 0.0014
+      },
+      "y": {
+        "count": 2,
+        "frac_of_m": 0.0069,
+        "overall_frac": 0.0294
+      },
+      "g": {
+        "count": 1,
+        "frac_of_m": 0.0035,
+        "overall_frac": 0.0008
+      },
+      "am": {
+        "count": 1,
+        "frac_of_m": 0.0035,
+        "overall_frac": 0.0101
+      },
+      "ar": {
+        "count": 1,
+        "frac_of_m": 0.0035,
+        "overall_frac": 0.0359
+      },
+      "an": {
+        "count": 1,
+        "frac_of_m": 0.0035,
+        "overall_frac": 0.0011
+      }
+    },
+    "mode_dist_m": {
+      "A": 5,
+      "null": 1,
+      "B": 6
+    },
+    "mode_dist_all": {
+      "A": 5676,
+      "B": 5456,
+      "null": 19
+    },
+    "mode_a_frac_m": 0.4167,
+    "mode_a_frac_all": 0.509
+  },
+  "T6_category": {
+    "category_profile": {
+      "CONTAINMENT": {
+        "m_count": 0,
+        "m_frac": 0.0,
+        "all_frac": 0.0483,
+        "enrichment": 0.0
+      },
+      "FLOW": {
+        "m_count": 0,
+        "m_frac": 0.0,
+        "all_frac": 0.1944,
+        "enrichment": 0.0
+      },
+      "MARKING": {
+        "m_count": 0,
+        "m_frac": 0.0,
+        "all_frac": 0.0778,
+        "enrichment": 0.0
+      },
+      "MONITORING": {
+        "m_count": 0,
+        "m_frac": 0.0,
+        "all_frac": 0.0181,
+        "enrichment": 0.0
+      },
+      "OPERATION": {
+        "m_count": 26,
+        "m_frac": 0.09,
+        "all_frac": 0.1437,
+        "enrichment": 0.63
+      },
+      "STAGING": {
+        "m_count": 9,
+        "m_frac": 0.0311,
+        "all_frac": 0.1302,
+        "enrichment": 0.24
+      },
+      "THERMAL": {
+        "m_count": 0,
+        "m_frac": 0.0,
+        "all_frac": 0.2376,
+        "enrichment": 0.0
+      },
+      "TRANSITION": {
+        "m_count": 254,
+        "m_frac": 0.8789,
+        "all_frac": 0.1499,
+        "enrichment": 5.86
+      }
+    },
+    "per_middle_category": {
+      "am": {
+        "count": 174,
+        "category": "TRANSITION"
+      },
+      "m": {
+        "count": 76,
+        "category": "TRANSITION"
+      },
+      "om": {
+        "count": 25,
+        "category": "OPERATION"
+      },
+      "im": {
+        "count": 8,
+        "category": "STAGING"
+      },
+      "faim": {
+        "count": 1,
+        "category": "TRANSITION"
+      },
+      "lm": {
+        "count": 1,
+        "category": "STAGING"
+      },
+      "kam": {
+        "count": 1,
+        "category": "TRANSITION"
+      },
+      "eam": {
+        "count": 1,
+        "category": "TRANSITION"
+      },
+      "opom": {
+        "count": 1,
+        "category": "OPERATION"
+      },
+      "fam": {
+        "count": 1,
+        "category": "TRANSITION"
+      }
+    },
+    "transition_m_count": 254,
+    "transition_non_m_count": 3157,
+    "transition_total": 3411,
+    "m_frac_of_transition": 0.0745
+  },
+  "T7_successors": {
+    "within_line_successor_cats": {
+      "TRANSITION": 17,
+      "FLOW": 14,
+      "OPERATION": 13,
+      "CONTAINMENT": 8,
+      "MARKING": 7,
+      "STAGING": 7,
+      "THERMAL": 6,
+      "MONITORING": 3,
+      "UNK": 1
+    },
+    "cross_line_successor_cats_after_m": {
+      "THERMAL": 49,
+      "STAGING": 45,
+      "FLOW": 33,
+      "OPERATION": 31,
+      "TRANSITION": 22,
+      "MARKING": 14,
+      "CONTAINMENT": 8,
+      "UNK": 4,
+      "MONITORING": 4
+    },
+    "cross_line_successor_cats_after_nonm": {
+      "THERMAL": 465,
+      "STAGING": 436,
+      "FLOW": 347,
+      "OPERATION": 288,
+      "TRANSITION": 249,
+      "MARKING": 225,
+      "CONTAINMENT": 43,
+      "MONITORING": 39,
+      "UNK": 36
+    },
+    "n_within_line_successors": 76,
+    "n_cross_line_after_m": 210,
+    "n_cross_line_after_nonm": 2128
+  },
+  "T8_hazard": {
+    "m_in_hazard_cats": 0,
+    "m_in_safe_cats": 35,
+    "m_hazard_rate": 0.0,
+    "all_hazard_rate": 0.2391,
+    "m_preceded_by_hazard": 92,
+    "m_followed_by_hazard": 22,
+    "total_m_with_context": 289
+  },
+  "T9_comparison": {
+    "terminal_comparison": {
+      "y": {
+        "count": 4780,
+        "frac": 0.20696,
+        "final_count": 546,
+        "final_rate": 0.21378,
+        "concentration_idx": 1.03,
+        "initial_count": 434,
+        "initial_rate": 0.1706
+      },
+      "l": {
+        "count": 2568,
+        "frac": 0.11119,
+        "final_count": 318,
+        "final_rate": 0.12451,
+        "concentration_idx": 1.12,
+        "initial_count": 275,
+        "initial_rate": 0.1081
+      },
+      "r": {
+        "count": 1962,
+        "frac": 0.08495,
+        "final_count": 221,
+        "final_rate": 0.08653,
+        "concentration_idx": 1.02,
+        "initial_count": 246,
+        "initial_rate": 0.0967
+      },
+      "h": {
+        "count": 1284,
+        "frac": 0.05559,
+        "final_count": 96,
+        "final_rate": 0.03759,
+        "concentration_idx": 0.68,
+        "initial_count": 139,
+        "initial_rate": 0.05464
+      },
+      "m": {
+        "count": 289,
+        "frac": 0.01251,
+        "final_count": 225,
+        "final_rate": 0.0881,
+        "concentration_idx": 7.04,
+        "initial_count": 1,
+        "initial_rate": 0.00039
+      },
+      "n": {
+        "count": 2147,
+        "frac": 0.09296,
+        "final_count": 165,
+        "final_rate": 0.0646,
+        "concentration_idx": 0.69,
+        "initial_count": 320,
+        "initial_rate": 0.12579
+      },
+      "k": {
+        "count": 2992,
+        "frac": 0.12955,
+        "final_count": 226,
+        "final_rate": 0.08849,
+        "concentration_idx": 0.68,
+        "initial_count": 227,
+        "initial_rate": 0.08923
+      },
+      "t": {
+        "count": 961,
+        "frac": 0.04161,
+        "final_count": 93,
+        "final_rate": 0.03641,
+        "concentration_idx": 0.88,
+        "initial_count": 40,
+        "initial_rate": 0.01572
+      }
+    }
+  },
+  "T10_closure": {
+    "line_length": {
+      "m_closed_mean": 10.9,
+      "non_m_mean": 9.41,
+      "n_m_lines": 213,
+      "n_nonm_lines": 2207,
+      "mann_whitney_U": 294750.0,
+      "p": 0.0
+    },
+    "category_composition": {
+      "OPERATION": {
+        "m_frac": 0.1365,
+        "non_m_frac": 0.1422,
+        "ratio": 0.96
+      },
+      "MONITORING": {
+        "m_frac": 0.0125,
+        "non_m_frac": 0.0185,
+        "ratio": 0.676
+      },
+      "THERMAL": {
+        "m_frac": 0.2201,
+        "non_m_frac": 0.2357,
+        "ratio": 0.934
+      },
+      "CONTAINMENT": {
+        "m_frac": 0.0426,
+        "non_m_frac": 0.0481,
+        "ratio": 0.886
+      },
+      "TRANSITION": {
+        "m_frac": 0.2037,
+        "non_m_frac": 0.1414,
+        "ratio": 1.44
+      },
+      "MARKING": {
+        "m_frac": 0.0702,
+        "non_m_frac": 0.0774,
+        "ratio": 0.907
+      },
+      "STAGING": {
+        "m_frac": 0.1055,
+        "non_m_frac": 0.1308,
+        "ratio": 0.806
+      },
+      "FLOW": {
+        "m_frac": 0.1925,
+        "non_m_frac": 0.1914,
+        "ratio": 1.006
+      }
+    },
+    "paragraph_position": {
+      "m_closed": {
+        "body": 158,
+        "last": 17,
+        "header": 36,
+        "single": 2
+      },
+      "non_m_closed": {
+        "header": 466,
+        "body": 1251,
+        "last": 459,
+        "single": 31
+      }
+    },
+    "next_line_initial_cat_after_m": {
+      "THERMAL": 49,
+      "STAGING": 45,
+      "FLOW": 33,
+      "OPERATION": 31,
+      "TRANSITION": 22,
+      "MARKING": 14,
+      "CONTAINMENT": 8,
+      "UNK": 4,
+      "MONITORING": 4
+    },
+    "next_line_initial_cat_after_nonm": {
+      "THERMAL": 465,
+      "STAGING": 436,
+      "FLOW": 347,
+      "OPERATION": 288,
+      "TRANSITION": 249,
+      "MARKING": 225,
+      "CONTAINMENT": 43,
+      "MONITORING": 39
+    },
+    "next_line_initial_pfx_after_m": {
+      "sh": 30,
+      "BARE": 21,
+      "qo": 21,
+      "da": 19,
+      "sa": 18,
+      "ch": 13,
+      "to": 8,
+      "ta": 8,
+      "dch": 8,
+      "so": 8
+    },
+    "section_enrichment": {
+      "H": {
+        "m_count": 79,
+        "m_frac": 0.2734,
+        "all_frac": 0.1486,
+        "enrichment": 1.84
+      },
+      "T": {
+        "m_count": 9,
+        "m_frac": 0.0311,
+        "all_frac": 0.0287,
+        "enrichment": 1.09
+      },
+      "B": {
+        "m_count": 29,
+        "m_frac": 0.1003,
+        "all_frac": 0.2966,
+        "enrichment": 0.34
+      },
+      "C": {
+        "m_count": 38,
+        "m_frac": 0.1315,
+        "all_frac": 0.0641,
+        "enrichment": 2.05
+      },
+      "S": {
+        "m_count": 134,
+        "m_frac": 0.4637,
+        "all_frac": 0.462,
+        "enrichment": 1.0
+      }
+    },
+    "am_suffix_analysis": {
+      "n_am_suffix": 234,
+      "am_suffix_line_final_rate": 0.8205,
+      "am_suffix_also_m_terminal_middle": 1,
+      "m_terminal_without_am_suffix": 288
+    }
+  },
+  "A1_full_inventory": [
+    {
+      "word": "am",
+      "count": 55,
+      "prefix": null,
+      "middle": "am",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "dam",
+      "count": 42,
+      "prefix": "da",
+      "middle": "m",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "otam",
+      "count": 37,
+      "prefix": "ot",
+      "middle": "am",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "okam",
+      "count": 19,
+      "prefix": "ok",
+      "middle": "am",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "om",
+      "count": 11,
+      "prefix": null,
+      "middle": "om",
+      "suffix": null,
+      "category": "OPERATION",
+      "terminal": "m",
+      "head": "o"
+    },
+    {
+      "word": "ytam",
+      "count": 9,
+      "prefix": "ta",
+      "middle": "m",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "oram",
+      "count": 8,
+      "prefix": "or",
+      "middle": "am",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "aram",
+      "count": 8,
+      "prefix": "ar",
+      "middle": "am",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "lkam",
+      "count": 7,
+      "prefix": "lk",
+      "middle": "am",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "cham",
+      "count": 6,
+      "prefix": "ch",
+      "middle": "am",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "olam",
+      "count": 6,
+      "prefix": "ol",
+      "middle": "am",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "kam",
+      "count": 6,
+      "prefix": "ka",
+      "middle": "m",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "sham",
+      "count": 5,
+      "prefix": "sh",
+      "middle": "am",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "alom",
+      "count": 5,
+      "prefix": "al",
+      "middle": "om",
+      "suffix": null,
+      "category": "OPERATION",
+      "terminal": "m",
+      "head": "o"
+    },
+    {
+      "word": "alam",
+      "count": 5,
+      "prefix": "al",
+      "middle": "am",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "tam",
+      "count": 4,
+      "prefix": "ta",
+      "middle": "m",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "m",
+      "count": 4,
+      "prefix": null,
+      "middle": "m",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "daim",
+      "count": 4,
+      "prefix": "da",
+      "middle": "im",
+      "suffix": null,
+      "category": "STAGING",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "ykam",
+      "count": 3,
+      "prefix": "yk",
+      "middle": "am",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "sam",
+      "count": 3,
+      "prefix": "sa",
+      "middle": "m",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "raram",
+      "count": 3,
+      "prefix": "ar",
+      "middle": "am",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "okom",
+      "count": 2,
+      "prefix": "ok",
+      "middle": "om",
+      "suffix": null,
+      "category": "OPERATION",
+      "terminal": "m",
+      "head": "o"
+    },
+    {
+      "word": "saim",
+      "count": 2,
+      "prefix": "sa",
+      "middle": "im",
+      "suffix": null,
+      "category": "STAGING",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "olom",
+      "count": 2,
+      "prefix": "ol",
+      "middle": "om",
+      "suffix": null,
+      "category": "OPERATION",
+      "terminal": "m",
+      "head": "o"
+    },
+    {
+      "word": "lokam",
+      "count": 2,
+      "prefix": "ok",
+      "middle": "am",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "orom",
+      "count": 2,
+      "prefix": "or",
+      "middle": "om",
+      "suffix": null,
+      "category": "OPERATION",
+      "terminal": "m",
+      "head": "o"
+    },
+    {
+      "word": "komdy",
+      "count": 1,
+      "prefix": "ko",
+      "middle": "m",
+      "suffix": "dy",
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "amg",
+      "count": 1,
+      "prefix": null,
+      "middle": "am",
+      "suffix": "g",
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "ydam",
+      "count": 1,
+      "prefix": "da",
+      "middle": "m",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "faimy",
+      "count": 1,
+      "prefix": null,
+      "middle": "faim",
+      "suffix": "y",
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "amam",
+      "count": 1,
+      "prefix": null,
+      "middle": "am",
+      "suffix": "am",
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "dalmy",
+      "count": 1,
+      "prefix": "da",
+      "middle": "lm",
+      "suffix": "y",
+      "category": "STAGING",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "fcham",
+      "count": 1,
+      "prefix": "fch",
+      "middle": "am",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "lolom",
+      "count": 1,
+      "prefix": "ol",
+      "middle": "om",
+      "suffix": null,
+      "category": "OPERATION",
+      "terminal": "m",
+      "head": "o"
+    },
+    {
+      "word": "tdam",
+      "count": 1,
+      "prefix": "da",
+      "middle": "m",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "dkam",
+      "count": 1,
+      "prefix": "ka",
+      "middle": "m",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "damom",
+      "count": 1,
+      "prefix": "da",
+      "middle": "m",
+      "suffix": "om",
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "ytaim",
+      "count": 1,
+      "prefix": "ta",
+      "middle": "im",
+      "suffix": null,
+      "category": "STAGING",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "qokamdy",
+      "count": 1,
+      "prefix": "qo",
+      "middle": "kam",
+      "suffix": "dy",
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "k"
+    },
+    {
+      "word": "olcham",
+      "count": 1,
+      "prefix": "ol",
+      "middle": "am",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "ltam",
+      "count": 1,
+      "prefix": "ta",
+      "middle": "m",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "keam",
+      "count": 1,
+      "prefix": "ke",
+      "middle": "am",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "cheamar",
+      "count": 1,
+      "prefix": "ch",
+      "middle": "eam",
+      "suffix": "ar",
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "e"
+    },
+    {
+      "word": "aman",
+      "count": 1,
+      "prefix": null,
+      "middle": "am",
+      "suffix": "an",
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "taim",
+      "count": 1,
+      "prefix": "ta",
+      "middle": "im",
+      "suffix": null,
+      "category": "STAGING",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "opomdy",
+      "count": 1,
+      "prefix": null,
+      "middle": "opom",
+      "suffix": "dy",
+      "category": "OPERATION",
+      "terminal": "m",
+      "head": "o"
+    },
+    {
+      "word": "pom",
+      "count": 1,
+      "prefix": "po",
+      "middle": "m",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "famom",
+      "count": 1,
+      "prefix": null,
+      "middle": "fam",
+      "suffix": "om",
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "otom",
+      "count": 1,
+      "prefix": "ot",
+      "middle": "om",
+      "suffix": null,
+      "category": "OPERATION",
+      "terminal": "m",
+      "head": "o"
+    },
+    {
+      "word": "otcham",
+      "count": 1,
+      "prefix": "ot",
+      "middle": "am",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "lteam",
+      "count": 1,
+      "prefix": "te",
+      "middle": "am",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "ksam",
+      "count": 1,
+      "prefix": "sa",
+      "middle": "m",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": null
+    },
+    {
+      "word": "ralom",
+      "count": 1,
+      "prefix": "al",
+      "middle": "om",
+      "suffix": null,
+      "category": "OPERATION",
+      "terminal": "m",
+      "head": "o"
+    },
+    {
+      "word": "lcham",
+      "count": 1,
+      "prefix": "lch",
+      "middle": "am",
+      "suffix": null,
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    },
+    {
+      "word": "amom",
+      "count": 1,
+      "prefix": null,
+      "middle": "am",
+      "suffix": "om",
+      "category": "TRANSITION",
+      "terminal": "m",
+      "head": "a"
+    }
+  ],
+  "A2_m_anywhere": {
+    "total_types": 20,
+    "total_tokens": 299,
+    "non_terminal_types": 10,
+    "non_terminal_tokens": 10,
+    "non_terminal_examples": [
+      [
+        "amo",
+        1
+      ],
+      [
+        "lmy",
+        1
+      ],
+      [
+        "rams",
+        1
+      ],
+      [
+        "amod",
+        1
+      ],
+      [
+        "amc",
+        1
+      ],
+      [
+        "ofaramot",
+        1
+      ],
+      [
+        "amd",
+        1
+      ],
+      [
+        "amchd",
+        1
+      ],
+      [
+        "md",
+        1
+      ],
+      [
+        "samok",
+        1
+      ]
+    ]
+  },
+  "A3_am_suffix": {
+    "n_am_suffix": 234,
+    "categories": {
+      "FLOW": 81,
+      "THERMAL": 62,
+      "MARKING": 45,
+      "STAGING": 21,
+      "OPERATION": 6,
+      "TRANSITION": 5,
+      "CONTAINMENT": 3,
+      "MONITORING": 3
+    },
+    "prefixes": {
+      "BARE": 48,
+      "ch": 42,
+      "qo": 40,
+      "ok": 14,
+      "ol": 14,
+      "ot": 13,
+      "da": 13,
+      "sh": 12,
+      "al": 8,
+      "lch": 6
+    },
+    "middle_terminals": {
+      "k": 49,
+      "r": 43,
+      "t": 21,
+      "l": 13,
+      "h": 9,
+      "m": 1,
+      "n": 1
+    },
+    "double_m_count": 1,
+    "double_m_examples": [
+      {
+        "word": "amam",
+        "mid": "am",
+        "sfx": "am"
+      }
+    ]
+  },
+  "A4_preceding": {
+    "preceding_categories": {
+      "FLOW": 79,
+      "TRANSITION": 56,
+      "THERMAL": 41,
+      "STAGING": 40,
+      "OPERATION": 29,
+      "MARKING": 19,
+      "CONTAINMENT": 13,
+      "UNK": 7,
+      "MONITORING": 4
+    },
+    "preceding_terminals": {
+      "UNK": 70,
+      "y": 51,
+      "n": 48,
+      "r": 34,
+      "l": 29,
+      "k": 27,
+      "t": 15,
+      "h": 8,
+      "m": 6
+    },
+    "preceding_prefixes": {
+      "BARE": 55,
+      "ch": 47,
+      "ot": 34,
+      "qo": 30,
+      "ok": 22,
+      "da": 15,
+      "sh": 13,
+      "ta": 11,
+      "ol": 8,
+      "ka": 7
+    }
+  },
+  "A5_section_final": {
+    "B": {
+      "n_final": 842,
+      "m_final": 27,
+      "rate": 0.0321
+    },
+    "H": {
+      "n_final": 377,
+      "m_final": 54,
+      "rate": 0.1432
+    },
+    "S": {
+      "n_final": 1083,
+      "m_final": 108,
+      "rate": 0.0997
+    },
+    "C": {
+      "n_final": 153,
+      "m_final": 28,
+      "rate": 0.183
+    },
+    "T": {
+      "n_final": 99,
+      "m_final": 8,
+      "rate": 0.0808
+    }
+  }
+}

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1278 validated constraints | **Version:** 5.11 | **Date:** 2026-03-05
+**Total:** 1284 validated constraints | **Version:** 5.12 | **Date:** 2026-03-05
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4796,6 +4796,34 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T8: PREFIX-MIDDLE interactions produce overfitting. 60 terms: delta=-0.155. 3 key: delta=-0.006.
 - T9: Headless compound fraction NS (rho=-0.054, p=0.367). Compound fraction mediated by PREFIX.
 - T10: Noise floor 25.2%. Genuine freedom 4.2%. PREFIX achieves 94.4% of theoretical maximum.
+
+---
+
+### m-Terminal Anomaly (C1434-C1439) -- Phase: M_TERMINAL_ANOMALY (Phase 521)
+
+> **Summary:** Deep characterization of the m-terminal MIDDLE atom, which shows 196x enrichment from line-initial to line-final (C1427). 10 tests plus 5 deep-dives across 289 m-terminal tokens. m is a dedicated body-line closure operator: 10 types (lowest diversity), 87.9% TRANSITION (most concentrated), 0% hazard categories, 4.2% suffix rate (most suppressed), body-line-exclusive (0% header, depleted par-final). The -am suffix and m-terminal MIDDLE are orthogonal systems (1 token overlap) operating at different grammar levels.
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1434 | m-terminal low-diversity closure specialization | 2 | B, MIDDLE, atom, m-terminal, closure, diversity | 10 types, 289 tokens, 1.25% of B. `am` 60.2% + `m` 26.3% = 86.5%. Lowest diversity of any terminal (10 vs y:33, l:48, r:49, h:188). 95.9% bare. Near-zero MOD stack. |
+| 1435 | m-terminal body-line exclusivity | 2 | B, MIDDLE, atom, m-terminal, line, paragraph, body, header, position | 10.45% body-line-final, 0.00% header-line-final, 3.26% par-final (Fisher p<0.000001). Categorically excluded from headers, depleted at paragraph boundaries. Scope = LINE BODY. |
+| 1436 | m-terminal near-pure TRANSITION category | 2 | B, MIDDLE, atom, m-terminal, category, TRANSITION | 87.9% TRANSITION (5.86x). Most category-concentrated terminal atom. 5 categories absent (THERMAL, MONITORING, FLOW, CONTAINMENT, MARKING). 7.4% of all TRANSITION tokens. |
+| 1437 | m-terminal complete hazard exclusion | 2 | B, MIDDLE, atom, m-terminal, hazard, FLOW, CONTAINMENT | 0% FLOW, 0% CONTAINMENT. 31.8% preceded by FLOW tokens -- closes hazard-containing sequences without being hazardous. Never source, target, or buffer. |
+| 1438 | m-terminal categorical suffix suppression | 2 | B, MIDDLE, atom, m-terminal, suffix, suppression | 4.2% suffix vs 48.3% overall = 11.5x suppression. Most extreme of any terminal. 6.8x stronger than ARTICULATOR suppression (C1420). Self-contained closure operators. |
+| 1439 | m-terminal MIDDLE and -am suffix are orthogonal systems | 2 | B, MIDDLE, atom, m-terminal, suffix, -am, paragraph, line, closure | 1 token overlap (`amam`). m-terminal: 289 tokens, TRANSITION 87.9%, body-line-final. -am suffix: 234 tokens, multi-category, par-final 5.19x. Two-level closure: m closes body lines, -am closes paragraphs. |
+
+**Phase 521 findings (m-Terminal Anomaly, 10 tests + 5 deep-dives):**
+- T1: 289 tokens, 10 types. `am` 60.2%, `m` 26.3%. Lowest terminal diversity.
+- T2: Exponential ramp from 0.04% (pos 1) to 8.8% (final). 7.0x concentration index (next: l 1.1x).
+- T3: Body-line-final 10.45%, header 0%, par-final 3.26%. Body-line exclusive.
+- T4: ch/sh 0.16-0.17x, qo 0.02x depleted. ar/al/or 4.6-6.5x, da 3.7x enriched. LATE/BARE channel.
+- T5: 4.2% suffix rate (11.5x suppression). 95.9% bare. Self-contained operators.
+- T6: 87.9% TRANSITION (5.86x). 5 categories absent. Most concentrated terminal.
+- T7: Within-line successor broadly distributed. Cross-line successor neutral. Pure closure, no routing.
+- T8: 0% FLOW/CONTAINMENT. 31.8% preceded by FLOW. Closes hazard sequences safely.
+- T9: m most concentrated (7.0x), most initial-depleted (0.04%). Extreme positional polarity.
+- T10: m-closed lines longer (10.9 vs 9.4). TRANSITION elevated (1.44x). Anti-correlated with Bio section (3.2% vs Cosmo 18.3%).
+- A1-A5: -am suffix and m-terminal MIDDLE overlap at 1 token. Orthogonal closure systems at different grammar levels.
 
 ---
 

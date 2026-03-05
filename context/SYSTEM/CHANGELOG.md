@@ -4,6 +4,30 @@
 
 ---
 
+## Version 5.12.114 (2026-03-05) - Phase 521: m-Terminal Anomaly
+
+### Summary
+
+Phase 521 deeply characterizes the m-terminal MIDDLE atom, which C1427 found shows 196x enrichment from line-initial to line-final -- the largest positional effect ever observed. 10 tests plus 5 deep-dives across 289 m-terminal tokens (10 unique types). Key findings: m is a dedicated body-line closure operator with the lowest diversity of any terminal (10 types), near-pure TRANSITION category (87.9%), complete hazard exclusion (0% FLOW/CONTAINMENT), extreme suffix suppression (4.2% vs 48.3%, 11.5x), and body-line exclusivity (0% header, depleted par-final). The -am suffix and m-terminal MIDDLE are orthogonal systems (1 token overlap) operating at different grammar levels: m closes body lines, -am closes paragraphs.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1434: m-terminal low-diversity closure specialization (10 types, 289 tokens, 86.5% = am+m) |
+| **ADDED** | C1435: m-terminal body-line exclusivity (10.45% body-line-final, 0% header, 3.26% par-final) |
+| **ADDED** | C1436: m-terminal near-pure TRANSITION category (87.9%, 5.86x enrichment) |
+| **ADDED** | C1437: m-terminal complete hazard exclusion (0% FLOW/CONTAINMENT) |
+| **ADDED** | C1438: m-terminal categorical suffix suppression (4.2% vs 48.3%, 11.5x) |
+| **ADDED** | C1439: m-terminal MIDDLE and -am suffix are orthogonal systems (1 token overlap) |
+| **ADDED** | `phases/M_TERMINAL_ANOMALY/scripts/m_terminal_analysis.py` |
+| **ADDED** | `phases/M_TERMINAL_ANOMALY/results/m_terminal_analysis.json` |
+| **ADDED** | `phases/M_TERMINAL_ANOMALY/REPORT.md` |
+| **UPDATED** | INDEX.md -- +6 constraints (1284 total) |
+| **UPDATED** | CONSTRAINT_TABLE.txt regenerated (1284 constraints) |
+
+---
+
 ## Version 5.11.113 (2026-03-05) - Phase 520: Paragraph AXM Residual
 
 ### Summary

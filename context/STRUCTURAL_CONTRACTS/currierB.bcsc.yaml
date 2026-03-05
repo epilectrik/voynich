@@ -1108,13 +1108,24 @@ program_structure:
           depleted: ["THERMAL 0.56x"]
           character: "Routing and state-change markers"
           information: "10.11 bits (second highest)"
+          m_terminal_anatomy:
+            statement: "m-terminal is a dedicated body-line closure operator (C1434-C1439)"
+            inventory: "10 types, 289 tokens (1.25%); am 60.2%, m 26.3% = 86.5%"
+            positional_polarity: "7.0x concentration at line-final (next: l 1.1x); 0.04% line-initial"
+            scope: "Body-line-final (10.45%); header-line-final 0.00%; paragraph-final depleted (3.26%)"
+            category: "87.9% TRANSITION (5.86x); 5 categories completely absent (THERMAL, MONITORING, FLOW, CONTAINMENT, MARKING)"
+            hazard: "0% in hazard categories; 31.8% preceded by FLOW (closes hazard sequences safely)"
+            suffix: "4.2% suffix rate vs 48.3% overall (11.5x suppression); self-contained operators"
+            prefix_selectivity: "ch/sh 0.16-0.17x, qo 0.02x depleted; ar/al/or 4.6-6.5x enriched (LATE channel)"
+            two_level_closure: "m-terminal (body-line closer) and -am suffix (paragraph terminator) are orthogonal: 1 token overlap, complementary scopes"
+            provenance: "C1434, C1435, C1436, C1437, C1438, C1439"
       cross_line_independence:
         statement: "Adjacent lines are categorically independent; each line is a fresh i.i.d. sample from the folio's operational profile"
         suffix_mode_MI: "0.003 bits"
         dominant_category_MI: "0.032 bits"
         vocabulary_jaccard: "0.153"
-      provenance: "C1425, C1426, C1427, C1428, C1429, C1430"
-    provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897, C1425-C1430"
+      provenance: "C1425, C1426, C1427, C1428, C1429, C1430, C1434-C1439"
+    provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897, C1425-C1430, C1434-C1439"
 
   paragraph:
     # For comprehensive paragraph-as-unit model, see PSC (paragraph.psc.yaml)
