@@ -4,6 +4,27 @@
 
 ---
 
+## Version 5.05.107 (2026-03-05) - Phase 514: Section and Paragraph AXM Drivers
+
+### Summary
+
+Phase 514 asks what structurally differentiates sections and what drives the 71% paragraph-level AXM variation that folio membership doesn't explain (C1402 ICC=0.286). Result: sections are REGIME allocation policies (V=0.573, 7.4x next effect); paragraph AXM is dominated by PREFIX composition (CV R2=0.736); section alone has negative predictive power (CV R2=-0.027). The full chain is section→REGIME→PREFIX→AXM, with section fully mediated. PREFIX-AXM mapping is universal across all sections (6/7 features sign-consistent). 24% residual = genuine paragraph design freedom.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1404: section structural differentiation is REGIME-dominated (V=0.573) |
+| **ADDED** | C1405: paragraph AXM rate driven by PREFIX not section (CV R2=0.736) |
+| **ADDED** | C1406: section is REGIME composition at paragraph level (fully mediated) |
+| **ADDED** | C1407: PREFIX-AXM relationship universal across sections (6/7 consistent) |
+| **ADDED** | `phases/SECTION_PARAGRAPH_AXM_DRIVERS/scripts/section_paragraph_drivers.py` |
+| **ADDED** | `phases/SECTION_PARAGRAPH_AXM_DRIVERS/results/section_paragraph_drivers.json` |
+| **UPDATED** | BCSC v3.23 — section/convergence: added C1404-C1407 |
+| **UPDATED** | INDEX.md — +4 constraints (1251 total) |
+
+---
+
 ## Version 5.04.106 (2026-03-05) - Phase 513: STATE-C Convergence Revisit
 
 ### Summary

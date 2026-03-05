@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1244 validated constraints | **Version:** 5.04 | **Date:** 2026-03-04
+**Total:** 1251 validated constraints | **Version:** 5.05 | **Date:** 2026-03-05
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4624,6 +4624,32 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T5: Folio theme sufficiency — CONFIRMED (position-aware model 29.6% worse than folio mean)
 - T6: Within-paragraph convergence — FAIL (rho=-0.016, Wilcoxon p=0.535; first/second half AXM identical)
 - T7: Synthesis — FULL_REFRAME: "convergence to STATE-C" is AXM thematic dominance at section level, not sequential dynamics
+
+---
+
+### Section and Paragraph AXM Drivers (C1404-C1407) -- Phase: SECTION_PARAGRAPH_AXM_DRIVERS (Phase 514)
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1404 | Section structural differentiation is REGIME-dominated | 2 | B, section, REGIME, macro-state, kernel, hazard, morphology | REGIME composition V=0.573, 7.4x next effect (macro-state V=0.077). Section B=100% R1. Transition entropy 3.09-4.47 bits. Sections are primarily REGIME mixtures with modest independent kernel/morphological effects. |
+| 1405 | Paragraph AXM driven by PREFIX not section | 2 | B, paragraph, AXM, PREFIX, variance decomposition | PREFIX alone CV R2=0.736; section alone -0.027. Full model 0.760, section marginal +0.017. Top: qo_frac +0.576, bare_frac -0.515, chsh_frac +0.508. 24% residual = design freedom. Extends C1023 (PREFIX routing load-bearing) to paragraph level. |
+| 1406 | Section is REGIME composition at paragraph level | 2 | B, section, REGIME, paragraph, PREFIX | Chain: section -> REGIME (V=0.573) -> PREFIX availability -> AXM (CV R2=0.736). Neither section (-0.027) nor REGIME (-0.092) has positive paragraph-level CV R2. Section adds zero beyond PREFIX. Sections are REGIME allocation policies. |
+| 1407 | PREFIX-AXM relationship universal across sections | 2 | B, PREFIX, AXM, section, universality | 6/7 features show consistent sign across all sections. Only transition_frac inconsistent. Section modulates magnitude not direction. Extends C821 (syntax REGIME invariance) to paragraph-section interaction. |
+
+**Phase 514 findings (Section and Paragraph AXM Drivers, 12 tests):**
+- A1: Macro-state profiles — chi2=384.8, V=0.077; B highest AXM (74.4%), H highest FQ (24.0%)
+- A2: Morphological signatures — B qo-dominated, T sh>ch inversion, mean PREFIX JSD=0.033
+- A3: Kernel profiles — chi2=142.8, V=0.071; B k-enriched (24.2%), T h-enriched (9.7%)
+- A4: Hazard profiles — B lowest FL_HAZ (4.4%, 0 violations); C/T highest (8.2%)
+- A5: REGIME distribution — V=0.573 (dominant), B=100% R1, H diverse, T no R1
+- A6: Transition entropy — T tightest (3.09 bits), S loosest (4.47 bits)
+- B1: Morphological predictors — CV R2=0.747 (21 features); top: qo_frac +0.576
+- B2: Paragraph length — weak (rho=+0.139, p=0.019)
+- B3: PREFIX channel — qo +0.576, chsh +0.508, BARE -0.515
+- B4: Kernel balance — k +0.432, e +0.273, h +0.173
+- B5: Hazard density — FL_HAZ rho=-0.440 (survives length control)
+- B6: Variance decomposition — PREFIX 0.736, section -0.027, full 0.760, section marginal +0.017
+- C3: Interaction — 6/7 features sign-consistent across sections; PREFIX-AXM universal
 
 ---
 
