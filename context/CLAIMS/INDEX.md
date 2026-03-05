@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1268 validated constraints | **Version:** 5.09 | **Date:** 2026-03-05
+**Total:** 1275 validated constraints | **Version:** 5.10 | **Date:** 2026-03-05
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4745,6 +4745,33 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T8: 0 forbidden TERMINAL pairs; self-chain enriched for Mode A terminals
 - T9: Cross-line token switch 43.7% vs within-line 46.4% (p=0.037); line boundaries mildly suppress switching
 - T10: Line interleave rate 0.3935, BELOW random 0.499; TERMINAL switching does NOT drive mode switching (39.1%=39.4%)
+
+---
+
+### Line-Level Architecture (C1425-C1430) -- Phase: LINE_LEVEL_ARCHITECTURE (Phase 519)
+
+> **Summary:** Systematic profiling of the Currier B line as a structural unit: length distribution, boundary profiles, internal category gradients, PREFIX positional grammar validation, internal transitions, cross-line independence, information content, line types, and boundary marking hierarchy. 10 tests across 23,096 tokens in 2,420 lines. Lines are self-contained execution units with three zones: SPECIFICATION (Q0), THERMAL WORK (Q1-Q3), CLOSURE (Q4).
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1425 | line length unimodal distribution | 2 | B, line, length, distribution | Mean=9.54, median=10, CV=0.340. Mode at 10 tokens (19.9%). 94.7% within 3-13. Header 1.097x longer than body. BIO shortest (8.97), COSMO longest (11.65). Continuous unimodal, not discrete. |
+| 1426 | line-initial specification profile | 2 | B, line, position, initial, specification | ARTICULATOR 3.93x, STAGING 1.57x, MARKING 1.42x. PREFIXes po/dch/so/to 5-8x enriched. Head atom e-dominant (53.7%). Lines open with specification vocabulary. Top words: daiin (3.5%), saiin (2.0%). |
+| 1427 | line-final transition profile | 2 | B, line, position, final, transition, closure | TRANSITION 1.63x, THERMAL 0.56x depleted. Terminal m atom 196x increase pos1->final. Suffix -m 9.54x, -am 7.83x enriched. PREFIXes ar/al/or 3.4-4.6x. Lines close with state-change/closure vocabulary. |
+| 1428 | THERMAL-peak-then-decline positional gradient | 2 | B, line, position, gradient, category, THERMAL | THERMAL peaks Q1 (29.4%) not Q0 (24.3%) because Q0 is specification zone. Declines to 17.6% Q4. FLOW rises monotonically (17.6%->22.6%). TRANSITION jumps Q4 (14.1%->19.1%). BARE rises Q0->Q4 (14.3%->21.9%). |
+| 1429 | cross-line category independence | 2 | B, line, independence, category, cross-line | Suffix mode MI=0.003, category MI=0.032 bits, vocabulary Jaccard=0.153. Line length r=0.406 (folio-mediated). Extends C670/C673/C674/C1233. Lines are i.i.d. samples conditioned on folio identity. |
+| 1430 | information U-shape at line boundaries | 2 | B, line, information, position, boundary | Token info U-shape: Q0=10.29, Q1-Q3=9.58-9.62, Q4=10.11 bits. Boundaries more informative than interior. Initial=specification (folio-specific), final=routing (closure markers), interior=routine thermal. |
+
+**Phase 519 findings (Line-Level Architecture, 10 tests):**
+- T1: Mean=9.54, median=10, CV=0.340. 94.7% in 3-13 range. Header/body ratio 1.097x
+- T2: ARTICULATOR 3.93x line-initial. po/dch/so/to 5-8x enriched. STAGING 1.57x, MARKING 1.42x
+- T3: TRANSITION 1.63x line-final, THERMAL 0.56x depleted. -m 9.54x, -am 7.83x. ar/al/or 3.4-4.6x
+- T4: THERMAL peaks Q1 (29.4%), FLOW rises Q0->Q4, TRANSITION jumps Q4, ARTICULATOR drops sharply after Q0
+- T5: 33 PREFIXes: 12 INITIAL, 8 FINAL, 13 CENTRAL. sh=0.396 < ch=0.515. Validates C1218-C1219
+- T6: Category self-transition 0.185. THERMAL->THERMAL 0.277 strongest. Mean entropy 2.806 bits (weakly constrained)
+- T7: INDEPENDENT. Category MI=0.032, suffix MI=0.003, length r=0.406 (folio-mediated)
+- T8: U-shaped info: Q0=10.29 > Q1-Q3~9.6 < Q4=10.11 bits. Boundaries more informative
+- T9: Body 52.2% THERMAL-dominant. Headers 15.4% MARKING. BIO 58.5% THERMAL, COSMO 32.5% FLOW
+- T10: Cross-line entropy 0.984x within-line. LINE=PARAGRAPH boundary strength. -m 9.54x final
 
 ---
 

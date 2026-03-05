@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1268 constraints | 2026-03-05
+CONSTRAINT_REFERENCE v2.6 | 1274 constraints | 2026-03-05
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1272,3 +1272,9 @@ C1421	ARTICULATOR category full MIDDLE mediation	2	B, ARTICULATOR, category	I(AR
 C1422	suffix mode is MIDDLE-determined without sequential dependency	2	B, suffix, mode, MIDDLE, sequential, token-level	Joint token features (PREFIX+HEAD+TERM) explain 21.4% of mode entropy (accuracy 0.682, 1.33x). Previous token mode adds only 1.64% beyond features (CMI=0.016 bits). Raw sequential MI (0.003 bits, 0.3%) fully absorbed by token identity. No token-level sequential cycling mechanism.
 C1423	line-level mode persistence with weak inertia	2	B, suffix, mode, line, sequential, persistence	Consecutive lines: 60.6% same-mode (vs 50% random). CMI(prev_mode; curr_mode \
 C1424	mode switching is TERMINAL-independent at line level	2	B, suffix, mode, line, TERMINAL, independence	Switch rate 39.1% when same dominant TERMINAL vs 39.4% when different (delta 0.3pp, NS). TERMINAL determines each line's mode independently. Below-random interleaving (39.4% vs 49.9%) 100.6% captured by TERMINAL vocabulary effects. No TERMINAL alternation driver.
+C1425	line length unimodal distribution	2	B, line, length, distribution	Mean=9.54, median=10, CV=0.340. Mode at 10 tokens (19.9%). 94.7% within 3-13. Header 1.097x longer than body. BIO shortest (8.97), COSMO longest (11.65). Continuous unimodal, not discrete.
+C1426	line-initial specification profile	2	B, line, position, initial, specification	ARTICULATOR 3.93x, STAGING 1.57x, MARKING 1.42x. PREFIXes po/dch/so/to 5-8x enriched. Head atom e-dominant (53.7%). Lines open with specification vocabulary. Top words: daiin (3.5%), saiin (2.0%).
+C1427	line-final transition profile	2	B, line, position, final, transition, closure	TRANSITION 1.63x, THERMAL 0.56x depleted. Terminal m atom 196x increase pos1->final. Suffix -m 9.54x, -am 7.83x enriched. PREFIXes ar/al/or 3.4-4.6x. Lines close with state-change/closure vocabulary.
+C1428	THERMAL-peak-then-decline positional gradient	2	B, line, position, gradient, category, THERMAL	THERMAL peaks Q1 (29.4%) not Q0 (24.3%) because Q0 is specification zone. Declines to 17.6% Q4. FLOW rises monotonically (17.6%->22.6%). TRANSITION jumps Q4 (14.1%->19.1%). BARE rises Q0->Q4 (14.3%->21.9%).
+C1429	cross-line category independence	2	B, line, independence, category, cross-line	Suffix mode MI=0.003, category MI=0.032 bits, vocabulary Jaccard=0.153. Line length r=0.406 (folio-mediated). Extends C670/C673/C674/C1233. Lines are i.i.d. samples conditioned on folio identity.
+C1430	information U-shape at line boundaries	2	B, line, information, position, boundary	Token info U-shape: Q0=10.29, Q1-Q3=9.58-9.62, Q4=10.11 bits. Boundaries more informative than interior. Initial=specification (folio-specific), final=routing (closure markers), interior=routine thermal.

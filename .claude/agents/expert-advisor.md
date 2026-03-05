@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1268 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1275 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1424.
+the highest ID present is C1430.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1268 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1275 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1268 validated constraints are present as canonical one-line claims with tier
+1275 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-05 14:47
-**Version:** FROZEN STATE (1268 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-05 15:26
+**Version:** FROZEN STATE (1275 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1697,6 +1697,12 @@ C1421	ARTICULATOR category full MIDDLE mediation	2	B, ARTICULATOR, category
 C1422	suffix mode is MIDDLE-determined without sequential dependency	2	B, suffix, mode, MIDDLE, sequential, token-level
 C1423	line-level mode persistence with weak inertia	2	B, suffix, mode, line, sequential, persistence
 C1424	mode switching is TERMINAL-independent at line level	2	B, suffix, mode, line, TERMINAL, independence
+C1425	line length unimodal distribution	2	B, line, length, distribution
+C1426	line-initial specification profile	2	B, line, position, initial, specification
+C1427	line-final transition profile	2	B, line, position, final, transition, closure
+C1428	THERMAL-peak-then-decline positional gradient	2	B, line, position, gradient, category, THERMAL
+C1429	cross-line category independence	2	B, line, independence, category, cross-line
+C1430	information U-shape at line boundaries	2	B, line, information, position, boundary
 
 ---
 
@@ -4589,7 +4595,7 @@ Only Tier 0-2 structural findings are binding.
 - kernel_boundary_adjacency: Classes containing kernel characters tend to be hazard-involved [C107, C522]
 - class_member_differentiation: Grammar is universal at class level, differentiation at token level [C506.b, C537]
 - folio_vocabulary_minimality: 81/82 folios required for complete vocabulary coverage [C535]
-- execution_syntax: Lines follow SETUP→WORK→CHECK→CLOSE positional grammar [C556, C562]
+- execution_syntax: Lines follow SPECIFICATION→THERMAL_WORK→CLOSURE positional grammar with category-level resolution [C556, C562, C1425, C1426, C1427, C1428, C1429, C1430]
 - energy_flow_anticorrelation: ENERGY and FLOW roles are anticorrelated across sections [C551]
 - ax_behavioral_collapse: 19 AX classes do not form distinct behavioral groups [C572]
 - regime_syntax_invariance: Line syntax is INVARIANT across all four REGIMEs [C821]

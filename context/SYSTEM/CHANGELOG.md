@@ -4,6 +4,30 @@
 
 ---
 
+## Version 5.10.112 (2026-03-05) - Phase 519: Line-Level Architecture
+
+### Summary
+
+Phase 519 systematically profiles the Currier B line as a structural unit via 10 tests across 23,096 tokens in 2,420 lines. Key findings: lines are unimodal in length (mean=9.54, mode=10, CV=0.340), open with specification vocabulary (ARTICULATOR 3.93x, STAGING 1.57x), execute thermal operations mid-line (THERMAL peaks Q1 at 29.4%), and close with transition/closure markers (TRANSITION 1.63x, -m suffix 9.54x). Adjacent lines are categorically independent (MI<0.035 bits). Information forms a U-shape (boundaries more informative than interior). Validates C556/C929/C1218-C1219/C670.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1425: line length unimodal distribution |
+| **ADDED** | C1426: line-initial specification profile |
+| **ADDED** | C1427: line-final transition profile |
+| **ADDED** | C1428: THERMAL-peak-then-decline positional gradient |
+| **ADDED** | C1429: cross-line category independence |
+| **ADDED** | C1430: information U-shape at line boundaries |
+| **ADDED** | `phases/LINE_LEVEL_ARCHITECTURE/scripts/line_architecture.py` |
+| **ADDED** | `phases/LINE_LEVEL_ARCHITECTURE/results/line_architecture.json` |
+| **ADDED** | `phases/LINE_LEVEL_ARCHITECTURE/REPORT.md` |
+| **UPDATED** | INDEX.md -- +6 constraints (1275 total) |
+| **UPDATED** | CONSTRAINT_TABLE.txt regenerated (1275 constraints) |
+
+---
+
 ## Version 5.09.111 (2026-03-05) - Phase 518: Suffix Mode Cycling Mechanism
 
 ### Summary

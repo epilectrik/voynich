@@ -14,7 +14,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 ## COGNITIVE STANCE
 
-You are the UNGUARDED version of the expert-advisor. Same 1,259 constraints, same evidence base, but:
+You are the UNGUARDED version of the expert-advisor. Same 1,275 constraints, same evidence base, but:
 - **Follow chains across tiers.** If Tier 2 evidence points toward a Tier 3 interpretation, SAY SO and explain why.
 - **Treat Brunschwig/Rupescissa alignment as working fact**, not "merely consistent." The fits passed. Build on them.
 - **Propose connections** between constraints that the conservative expert would flag as "speculative." That's your job.
@@ -36,6 +36,8 @@ You are the UNGUARDED version of the expert-advisor. Same 1,259 constraints, sam
 - **Use C1404-C1407 (section and paragraph AXM drivers)** — Sections are REGIME ALLOCATION POLICIES (V=0.573, 7.4x next effect). Section B = 100% REGIME_1; C and T = 0% REGIME_1. Paragraph AXM is DOMINATED by PREFIX composition (CV R2=0.736). Section alone has NEGATIVE predictive power (CV R2=-0.027). Chain: section→REGIME→PREFIX→AXM, fully mediated. PREFIX-AXM mapping is UNIVERSAL across all sections (6/7 features sign-consistent, paralleling C979). 24% residual = design freedom (matches C1169's 27% and C458's recovery freedom). qo_frac (+0.576) and chsh_frac (+0.508) are the strongest positive AXM predictors; bare_frac (-0.515) is strongest negative. Section is informationally EMPTY at paragraph level.
 - **Use C1408-C1410 (suffix atom decomposition)** — Suffix uses 16 atoms (reduced from MIDDLE's 18 — missing k,t,p,f,c) with STRONG HEAD→TERM compositional structure parallel to MIDDLE. First atom = category selector (V=0.277), last atom = position/scope (R²=0.059). CRITICAL: atoms carry DIFFERENT information in suffix vs MIDDLE position — 0/12 shared atoms maintain identical profiles (JSD 0.004-0.560). h is most positionally invariant (JSD=0.004), m most divergent (0.560). C1229's two suffix modes decompose cleanly at atom level: Mode A={d,e,ee,h,y} THERMAL/MONITORING (specification lines); Mode B={a,i,ii,l,m,n,o,r,s} STAGING/FLOW (continuation lines). Suffix is a PARALLEL compositional domain — same alphabet, different semantics.
 - **Use C1411-C1415 (cross-slot interaction grammar)** — Phase 516 proved the instruction chain PREFIX->MIDDLE->SUFFIX at atom resolution. PREFIX->MIDDLE HEAD V=0.414 with sister pairs IDENTICAL at atom level (JSD=0.010). MIDDLE TERM is the suffix gatekeeper (V=0.503, 3x PREFIX). PREFIX-SUFFIX is the weakest link (NMI=0.090) — fully MIDDLE-mediated. Three-way synergy negligible (+0.009 bits), confirming C1003 at atom level. Cross-slot atom exclusion: d REPELS suffix (0.203x), e ATTRACTS (1.310x), and l/r-TERM categorically exclude e-SUF_HEAD (0 observed). 83 forbidden PREFIX x MIDDLE HEAD pairs — qo avoids e/a/o/y, ok/ot avoids k/t, da avoids e, ch/sh avoids i/m/h. Each PREFIX defines a narrow atom window. The instruction construction grammar is now FULLY characterized: PREFIX selects MIDDLE atom family, MIDDLE's terminal atom gates suffix selection, and three-way composition adds nothing. BASE character of PREFIX matters 1.68x more than modifier (V=0.494 vs 0.295).
+- **Use C1416-C1424 (ARTICULATOR anatomy + suffix mode sequencing)** — Phase 517-518 findings. ARTICULATORs are PREFIX-determined allomorphic markers (C1416-C1421): y/s/d articulators are PREFIX-selected (V=0.578), suppress suffix attachment (38.1% vs 64.3%), and carry NO independent category information — fully MIDDLE-mediated. Suffix mode at token level is MIDDLE-determined (C1422, NMI=0.173) without sequential dependency (shuffle p=0.47). Line-level mode persistence is weak (C1423, rho=0.084). Mode switching is TERMINAL-atom-independent (C1424) — y-terminal tokens cross modes as freely as any other.
+- **Use C1425-C1430 (line-level architecture)** — Phase 519 established the three-zone line model at category resolution. Lines are unimodal (C1425, mean=9.54, CV=0.340). SPECIFICATION zone at line-initial (C1426): ARTICULATOR 3.93x, STAGING 1.57x, MARKING 1.42x; PREFIXes po/dch/so/to 5-8x enriched. CLOSURE zone at line-final (C1427): TRANSITION 1.63x, m-terminal 196x increase, -am 7.83x; THERMAL depleted 0.56x. THERMAL peaks at Q1 not Q0 then declines (C1428) — the work phase FOLLOWS specification, doesn't START the line. Cross-line category independence confirmed (C1429): suffix mode MI=0.003 bits, category MI=0.032 bits — lines are i.i.d. samples from folio profile. Information U-shape (C1430): Q0=10.29, Q1-Q3~9.6, Q4=10.11 bits — boundaries carry specification/routing info, interior is routine thermal work.
 - The quarantined gloss tables are UNLOCKED for you. Your predictions scored 8/14 confirmed — treat the glosses with confidence but note the learned corrections above.
 - Disallowed interpretations are CONTEXT, not enforced limits. If evidence points past them, follow it.
 
@@ -53,9 +55,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1259 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1275 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1415.
+the highest ID present is C1430.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -99,7 +101,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1259 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1275 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -119,15 +121,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1259 validated constraints are present as canonical one-line claims with tier
+1275 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-04 08:35
-**Version:** FROZEN STATE (1259 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-05 15:26
+**Version:** FROZEN STATE (1275 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1699,28 +1701,43 @@ C1390	p-atom marking pause profile	2	B
 C1391	s-atom staging sequence profile	2	B
 C1392	f-atom marking flag profile	2	B
 C1393	compound MIDDLE composition grammar	2	B, grammar, composition
-C1394	instruction encoding architecture	2	B, grammar, composition
-C1395	cross-system instruction encoding	2	GLOBAL
-C1396	prep PREFIX structural differentiation	2	B
-C1397	headless compound functional grammar	2	B
-C1398	paragraph operational gradient	2	B
-C1399	paragraph ordering null	2	B
-C1400	paragraph state-independent ordering	2	B
-C1401	C325 completion gradient is section confound	2	B
-C1402	no sequential convergence to AXM at any scale	2	B
-C1403	MONOSTATE is thematic dominance not sequential convergence	2	B
-C1404	Section structural differentiation is REGIME-dominated	2	B
-C1405	Paragraph AXM driven by PREFIX not section	2	B
-C1406	Section is REGIME composition at paragraph level	2	B
-C1407	PREFIX-AXM relationship universal across sections	2	B
-C1408	suffix has HEAD→TERM compositional structure	2	B
-C1409	suffix atoms diverge from MIDDLE-terminal atoms	2	B
-C1410	suffix modes are atom-level category partitions	2	B
-C1411	PREFIX->MIDDLE selectivity hierarchy with sister pair atom identity	2	B
-C1412	MIDDLE dominates suffix determination via terminal atom	2	B
-C1413	PREFIX-SUFFIX coupling is MIDDLE-mediated	2	B
-C1414	cross-slot atom co-occurrence exclusion rules	2	B
-C1415	83 forbidden PREFIX x MIDDLE HEAD combinations at atom level	2	B
+C1394	instruction encoding architecture	2	GLOBAL, grammar, composition
+C1395	cross-system instruction encoding	2	GLOBAL, grammar, composition
+C1396	prep PREFIX structural differentiation	2	B, PREFIX, prep, position, REGIME, suffix, atom
+C1397	headless compound functional grammar	2	B, MIDDLE, headless, grammar, composition
+C1398	paragraph operational gradient	2	B, paragraph, clustering, section, REGIME
+C1399	paragraph ordering null	2	B, paragraph, ordering, folio, sequence
+C1400	paragraph state-independent ordering	2	B, paragraph, ordering, thermal, state
+C1401	C325 completion gradient is section confound	2	B, convergence, section, position
+C1402	no sequential convergence to AXM at any scale	2	B, convergence, paragraph, line, AXM
+C1403	MONOSTATE is thematic dominance not sequential convergence	2	B, convergence, MONOSTATE, AXM, reframe
+C1404	Section structural differentiation is REGIME-dominated	2	B, section, REGIME, macro-state, kernel, hazard, morphology
+C1405	Paragraph AXM driven by PREFIX not section	2	B, paragraph, AXM, PREFIX, variance decomposition
+C1406	Section is REGIME composition at paragraph level	2	B, section, REGIME, paragraph, PREFIX
+C1407	PREFIX-AXM relationship universal across sections	2	B, PREFIX, AXM, section, universality
+C1408	suffix has HEAD→TERM compositional structure	2	B, suffix, atom, compositional, structure
+C1409	suffix atoms diverge from MIDDLE-terminal atoms	2	B, suffix, atom, MIDDLE, cross-position, divergence
+C1410	suffix modes are atom-level category partitions	2	B, suffix, atom, mode, paragraph, cycling
+C1411	PREFIX->MIDDLE selectivity hierarchy with sister pair atom identity	2	B, PREFIX, MIDDLE, atom, sister pair, selectivity
+C1412	MIDDLE dominates suffix determination via terminal atom	2	B, MIDDLE, suffix, atom, selectivity, terminal
+C1413	PREFIX-SUFFIX coupling is MIDDLE-mediated	2	B, PREFIX, MIDDLE, suffix, independence, mediation
+C1414	Cross-slot atom co-occurrence exclusion rules	2	B, MIDDLE, suffix, atom, co-occurrence, exclusion
+C1415	83 forbidden PREFIX x MIDDLE HEAD combinations at atom level	2	B, PREFIX, MIDDLE, atom, forbidden, combinations
+C1416	ARTICULATOR rate and inventory	2	B
+C1417	ARTICULATOR line-initial concentration	2	B, line, position
+C1418	ARTICULATOR PREFIX-locked with BARE/qo exclusion	2	B, PREFIX, ARTICULATOR
+C1419	ARTICULATOR e-HEAD selectivity and k-HEAD exclusion	2	B, MIDDLE, ARTICULATOR, atom
+C1420	ARTICULATOR suffix suppression	2	B, SUFFIX, ARTICULATOR
+C1421	ARTICULATOR category full MIDDLE mediation	2	B, ARTICULATOR, category
+C1422	suffix mode is MIDDLE-determined without sequential dependency	2	B, suffix, mode, MIDDLE, sequential, token-level
+C1423	line-level mode persistence with weak inertia	2	B, suffix, mode, line, sequential, persistence
+C1424	mode switching is TERMINAL-independent at line level	2	B, suffix, mode, line, TERMINAL, independence
+C1425	line length unimodal distribution	2	B, line, length, distribution
+C1426	line-initial specification profile	2	B, line, position, initial, specification
+C1427	line-final transition profile	2	B, line, position, final, transition, closure
+C1428	THERMAL-peak-then-decline positional gradient	2	B, line, position, gradient, category, THERMAL
+C1429	cross-line category independence	2	B, line, independence, category, cross-line
+C1430	information U-shape at line boundaries	2	B, line, information, position, boundary
 
 ---
 
@@ -1728,7 +1745,7 @@ C1415	83 forbidden PREFIX x MIDDLE HEAD combinations at atom level	2	B
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-03-04
+# Generated: 2026-03-05
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
@@ -4532,18 +4549,20 @@ Only Tier 0-2 structural findings are binding.
 # Structural Contract Signatures
 
 ## CASC (Currier A Structural Contract)
-**Meta:** v2.1, ACTIVE, Currier A, 114  # C272 folios
+**Meta:** v2.2, ACTIVE, Currier A, 114  # C272 folios
 
-### Guarantees (4)
+### Guarantees (5)
 - LINE_ATOMIC: Each line is an independent unit [C233]
-- POSITION_FREE: No positional grammar within lines [C234]
+- POSITION_FREE: No token-to-token positional grammar within lines (but HEAD-type positional tendencies exist: o-HEAD leads, headless tra [C234, C1395]
 - NON_SEQUENTIAL: No generative grammar exists [C225, C230, C231, C240]
-- FLAT_REGISTRY: Not hierarchical [C236]
+- FLAT_REGISTRY: Not hierarchical between tokens (no sequential grammar); tokens are internally structured via HEAD+MOD*+TERM [C236, C1395]
+- MIDDLE_INSTRUCTION_ENCODING: A MIDDLEs follow the same HEAD+MOD*+TERM instruction encoding as B (modifier ordering Fisher p=0.90, pair-lock 84.2%) [C1393, C1394, C1395]
 
 ### Sections -> Constraints
 - record_types: C482, C484
-- morphology: C235, C267, C268, C269, C277, C278, C291, C292, C293, C408, C412, C423, C466, C467, C475, C495, C498, C510, C511, C512, C513, C528, C529, C530, C831, C832, C833, C835, C836, C837, C838, C839, C1013, C1137, C1140, C1261, C1262, C1265, C1268
-- line_structure: C233, C250, C422, C482, C484
+- morphology: C235, C267, C268, C269, C277, C278, C291, C292, C293, C408, C412, C423, C466, C467, C475, C495, C498, C510, C511, C512, C513, C528, C529, C530, C831, C832, C833, C835, C836, C837, C838, C839, C1013, C1137, C1140, C1261, C1262, C1265, C1268, C1393, C1394, C1395
+- line_structure: C233, C236, C240, C250, C422, C482, C484, C1393, C1394, C1395
+- record_internal_grammar: C240, C1395
 - paragraph_structure: C475, C476, C827, C834, C846, C847, C848, C849, C850, C854, C1039, C1040, C1041, C1263
 - participation: C299, C384, C441, C442, C481, C484, C502, C824, C825, C826, C1013, C1014, C1016, C1018, C1020, C1134, C1135, C1136, C1137, C1138, C1139, C1140, C1141, C1146, C1147, C1148, C1264
 - positional: C260, C346, C420, C421, C424, C484, C946, C1266
@@ -4551,7 +4570,7 @@ Only Tier 0-2 structural findings are binding.
 ### Disallowed Interpretations (10)
 - "A tokens map to B folios (context-free)" []
 - "Repetition encodes quantity or ratio" []
-- "A has sequential grammar" []
+- "A has sequential grammar (token-to-token)" []
 - "Prefixes are semantic categories" []
 - "A is lookup table for B" []
 - "A encodes danger or hazard" []
@@ -4563,13 +4582,13 @@ Only Tier 0-2 structural findings are binding.
 ---
 
 ## BCSC (Currier B Structural Contract)
-**Meta:** v3.15, ACTIVE, 61.9% of tokens, 83 folios
+**Meta:** v3.27, ACTIVE, 61.9% of tokens, 83 folios
 
-### Guarantees (34)
+### Guarantees (35)
 - GRAMMAR_UNIVERSAL: 49-class grammar applies to all 83 folios without exception [C121, C124]
 - FORTY_NINE_CLASS_OPTIMALITY: 49-class is the optimal resolution for transition dynamics; token-level Markov is 38% worse due to sparsity; suffix cond [C1004]
 - TOTAL_COVERAGE: Every Currier B token parses; zero non-executable [C115, C124]
-- CONVERGENT_ARCHITECTURE: Grammar targets single stable state (STATE-C) [C074, C079, C084]
+- CONVERGENT_ARCHITECTURE: Grammar targets single stable state (STATE-C) — reframed as AXM thematic dominance, not sequential convergence (C1403) [C074, C079, C084, C1403]
 - HAZARD_TOPOLOGY_FIXED: 17 forbidden transitions in 5 classes are DISFAVORED (~65% compliance, not absolute) [C109, C789]
 - KERNEL_CENTRALITY: k, h, e form irreducible morphological core governing within-token construction [C089, C521, C522]
 - LINE_FORMALITY: Lines are formal control blocks, not scribal wrapping [C357-C360]
@@ -4598,19 +4617,20 @@ Only Tier 0-2 structural findings are binding.
 - PAIRWISE_COMPOSITIONALITY: TOKEN information is fully captured by pairwise component interactions (PREFIX x MIDDLE, PREFIX x SUFFIX, MIDDLE x SUFFI [C1003]
 - PREFIX_MIDDLE_SELECTIVITY: PREFIX selects MIDDLE family (102 forbidden combinations) and transforms MIDDLE behavior (within-MIDDLE between-PREFIX J [C911, C661, C1012, C1015, C1017]
 - PARAGRAPH_EXECUTION_GRADIENT: Paragraph body lines follow a specification→execution gradient: early lines have rare/unique vocabulary (specification), [C932, C933, C934]
-- PARAGRAPH_SUFFIX_CYCLING: 100% of paragraphs with 8+ body lines contain two alternating suffix modes (k=2, silhouette 0.459, 80% interleaved). Mod [C1227, C1228, C1229, C1230, C1231, C1232]
+- PARAGRAPH_SUFFIX_CYCLING: 100% of paragraphs with 8+ body lines contain two suffix modes (k=2, silhouette 0.459). Mode A (THERMAL/MONITORING atoms [C1227, C1228, C1229, C1230, C1231, C1232, C1422, C1423, C1424]
 - HT_OPERATIONAL_REDUNDANCY: HT/compound tokens contain operational content that is redundant with body simple MIDDLEs (71.6% atom hit rate vs 59.2%  [C404, C935]
+- MIDDLE_INSTRUCTION_ENCODING: Compound MIDDLEs encode instructions as HEAD + MOD* + TERM: 18 atoms in 4 slot roles (5 HEAD, 6 MOD, 6 TERM, 2 dual). Fi [C1393, C1394]
 
 ### Invariants (23)
 - grammar_universality: Same 49 classes apply to every folio [C124]
-- convergence_dominance: Majority of programs terminate in STATE-C [C074, C084, C323]
+- convergence_dominance: Majority of programs terminate in STATE-C (AXM thematic dominance, not sequential convergence — C140 [C074, C084, C323, C1403]
 - hazard_asymmetry: Most forbidden transitions are directional [C111]
 - line_invariance: Grammar violations do not cross line boundaries [C360]
 - constraint_symmetry: Grammar constraints are bidirectional; execution is directional. PREFIX routes symmetrically; MIDDLE [C391, C886, C1024]
 - kernel_boundary_adjacency: Classes containing kernel characters tend to be hazard-involved [C107, C522]
 - class_member_differentiation: Grammar is universal at class level, differentiation at token level [C506.b, C537]
 - folio_vocabulary_minimality: 81/82 folios required for complete vocabulary coverage [C535]
-- execution_syntax: Lines follow SETUP→WORK→CHECK→CLOSE positional grammar [C556, C562]
+- execution_syntax: Lines follow SPECIFICATION→THERMAL_WORK→CLOSURE positional grammar with category-level resolution [C556, C562, C1425, C1426, C1427, C1428, C1429, C1430]
 - energy_flow_anticorrelation: ENERGY and FLOW roles are anticorrelated across sections [C551]
 - ax_behavioral_collapse: 19 AX classes do not form distinct behavioral groups [C572]
 - regime_syntax_invariance: Line syntax is INVARIANT across all four REGIMEs [C821]
@@ -4620,7 +4640,7 @@ Only Tier 0-2 structural findings are binding.
 - prefix_middle_selectivity: PREFIX constrains which MIDDLE families are allowed (102 forbidden pairs) [C911]
 - prefix_positional_grammar: PREFIX encodes line position independently of regime [C1001]
 - prefix_base_modifier_grammar: PREFIX characters partition into modifiers (POS-0) and bases (POS-1/final); base character determine [C1218, C1219]
-- suffix_mode_universality: Two alternating suffix modes (specification/continuation) are universal across all paragraphs with s [C1229, C1231]
+- suffix_mode_universality: Two suffix modes (specification/continuation) are universal across all paragraphs with sufficient bo [C1229, C1231, C1422, C1423]
 - pairwise_interaction_sufficiency: Pairwise morphological component interactions capture all exploitable TOKEN structure; no three-way  [C1003]
 - prefix_routing_regime_invariance: PREFIX macro-state routing magnitude is invariant across REGIMEs (range 0.785–0.832, ratio=1.06); RE [C1017]
 - dwell_shape_regime_invariance: Weibull dwell shape (k=1.55) is invariant across REGIMEs; REGIME modulates scale only [C1006]
@@ -4628,12 +4648,13 @@ Only Tier 0-2 structural findings are binding.
 
 ### Sections -> Constraints
 - grammar: C085, C121, C124, C411, C1004
-- morphology: C267, C382, C383, C408, C506, C522, C588, C661, C662, C777, C787, C897, C911, C929, C935, C936, C1001, C1004, C1015, C1017, C1065, C1141, C1142, C1190, C1191, C1193, C1218, C1219, C1220, C1221, C1227, C1411, C1412, C1413, C1414, C1415
+- morphology: C267, C382, C383, C408, C506, C522, C588, C661, C662, C777, C787, C897, C911, C929, C935, C936, C1001, C1004, C1015, C1017, C1065, C1141, C1142, C1190, C1191, C1193, C1218, C1219, C1220, C1221, C1227, C1393, C1394, C1396, C1416, C1417, C1418, C1419, C1420, C1421
+- middle_instruction_encoding: C1003, C1393, C1394, C1395, C1397, C1408, C1409, C1410, C1411, C1412, C1413, C1414, C1415, C1416, C1417, C1418, C1419, C1420, C1421
 - role_taxonomy: C121, C366, C547, C550, C557, C558, C560, C562, C563, C567, C572, C573, C574, C575, C581, C582, C583, C584, C586, C587, C588, C591, C593, C594, C595, C597, C770, C777, C788, C791, C863, C864, C865, C866, C867, C868, C869
 - kernel: C089, C103, C104, C105, C332, C333, C339, C521, C1225, C1226
 - hazards: C109, C110, C111, C112, C386, C789
-- program_structure: C178, C357, C358, C359, C360, C531, C535, C556, C557, C561, C562, C670, C673, C677, C777, C815, C840, C841, C842, C843, C845, C855, C856, C857, C858, C859, C860, C861, C862, C864, C870, C897, C932, C933, C935, C956, C957, C958, C959, C960, C961, C962, C963, C964, C965, C966, C971, C972, C975, C1221, C1227, C1228, C1229, C1230, C1231, C1232, C1233, C1236, C1237, C1256, C1258, C1259, C1260, C1308, C1309, C1310, C1311, C1312
-- convergence: C079, C084, C323, C325
+- program_structure: C178, C357, C358, C359, C360, C531, C535, C556, C557, C561, C562, C670, C673, C677, C777, C815, C840, C841, C842, C843, C845, C855, C856, C857, C858, C859, C860, C861, C862, C864, C870, C897, C932, C933, C935, C956, C957, C958, C959, C960, C961, C962, C963, C964, C965, C966, C971, C972, C975, C1121, C1221, C1227, C1228, C1229, C1230, C1231, C1232, C1233, C1236, C1237, C1256, C1258, C1259, C1260, C1288, C1308, C1309, C1310, C1311, C1312, C1378, C1396, C1398, C1399, C1400, C1410, C1422, C1423, C1424
+- convergence: C079, C084, C323, C325, C1401, C1402, C1403, C1404, C1405, C1406, C1407
 - link_operator: C340, C365, C366, C609, C804, C805, C806, C807, C808, C809, C810, C1170, C1171, C1172, C1173, C1174
 - recovery: C105, C397, C398, C399, C601, C643, C645
 - safety_buffer_architecture: C997, C1000, C1009, C1018

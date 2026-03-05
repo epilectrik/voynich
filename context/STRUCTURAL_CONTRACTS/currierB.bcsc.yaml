@@ -227,8 +227,8 @@ invariants:
     provenance: "C535"
 
   execution_syntax:
-    statement: "Lines follow SETUP→WORK→CHECK→CLOSE positional grammar"
-    provenance: "C556, C562"
+    statement: "Lines follow SPECIFICATION→THERMAL_WORK→CLOSURE positional grammar with category-level resolution"
+    provenance: "C556, C562, C1425, C1426, C1427, C1428, C1429, C1430"
 
   energy_flow_anticorrelation:
     statement: "ENERGY and FLOW roles are anticorrelated across sections"
@@ -1088,7 +1088,33 @@ program_structure:
           LINK_to_FL: "0.659 (moderately ordered)"
         interpretation: "Phases are positional tendencies, not rigid blocks — consistent with C815 (eta-squared=0.015)"
       provenance: "C556, C557, C561, C562, C956-C964"
-    provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897"
+    category_gradient:
+      statement: "Category-level resolution reveals three-zone architecture: SPECIFICATION→THERMAL_WORK→CLOSURE"
+      zones:
+        - zone: "SPECIFICATION"
+          quintile: "Q0 (initial)"
+          enriched: ["STAGING 1.57x", "MARKING 1.42x", "ARTICULATOR 3.93x"]
+          depleted: ["THERMAL 0.73x"]
+          prefixes: "po/dch/so/to 5-8x enriched; paragraph/folio-specific vocabulary"
+          information: "10.29 bits (highest)"
+        - zone: "THERMAL_WORK"
+          quintile: "Q1-Q3 (interior)"
+          enriched: ["THERMAL peaks Q1 at 29.4% then declines"]
+          character: "Routine operations using common MIDDLEs"
+          information: "9.58-9.62 bits (lowest)"
+        - zone: "CLOSURE"
+          quintile: "Q4 (final)"
+          enriched: ["TRANSITION 1.63x", "m-terminal 196x", "-am 7.83x"]
+          depleted: ["THERMAL 0.56x"]
+          character: "Routing and state-change markers"
+          information: "10.11 bits (second highest)"
+      cross_line_independence:
+        statement: "Adjacent lines are categorically independent; each line is a fresh i.i.d. sample from the folio's operational profile"
+        suffix_mode_MI: "0.003 bits"
+        dominant_category_MI: "0.032 bits"
+        vocabulary_jaccard: "0.153"
+      provenance: "C1425, C1426, C1427, C1428, C1429, C1430"
+    provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897, C1425-C1430"
 
   paragraph:
     # For comprehensive paragraph-as-unit model, see PSC (paragraph.psc.yaml)

@@ -1,0 +1,1620 @@
+{
+  "phase": "LINE_LEVEL_ARCHITECTURE",
+  "phase_number": 519,
+  "date": "2026-03-05",
+  "n_tokens": 23096,
+  "n_lines": 2420,
+  "T1_line_length": {
+    "n_lines": 2420,
+    "n_tokens": 23096,
+    "mean": 9.54,
+    "median": 10,
+    "std": 3.25,
+    "cv": 0.34,
+    "min": 1,
+    "max": 54,
+    "length_distribution": {
+      "1": 6,
+      "2": 8,
+      "3": 29,
+      "4": 71,
+      "5": 112,
+      "6": 121,
+      "7": 154,
+      "8": 227,
+      "9": 319,
+      "10": 482,
+      "11": 410,
+      "12": 286,
+      "13": 128,
+      "14": 45,
+      "15": 7,
+      "16": 4,
+      "27": 1,
+      "28": 1,
+      "31": 1,
+      "32": 1,
+      "35": 1,
+      "36": 1,
+      "44": 1,
+      "46": 2,
+      "48": 1,
+      "54": 1
+    },
+    "by_section": {
+      "HERBAL": {
+        "n_lines": 377,
+        "mean": 9.11,
+        "std": 2.65,
+        "min": 1,
+        "max": 14,
+        "median": 10
+      },
+      "ZODIAC": {
+        "n_lines": 69,
+        "mean": 9.59,
+        "std": 2.61,
+        "min": 1,
+        "max": 14,
+        "median": 10
+      },
+      "BIO": {
+        "n_lines": 764,
+        "mean": 8.97,
+        "std": 2.33,
+        "min": 1,
+        "max": 16,
+        "median": 9
+      },
+      "COSMO": {
+        "n_lines": 127,
+        "mean": 11.65,
+        "std": 9.14,
+        "min": 1,
+        "max": 54,
+        "median": 10
+      },
+      "STARS_RECIPE": {
+        "n_lines": 1083,
+        "mean": 9.85,
+        "std": 2.48,
+        "min": 1,
+        "max": 16,
+        "median": 10
+      }
+    },
+    "header_mean": 10.25,
+    "body_mean": 9.34,
+    "header_body_ratio": 1.097,
+    "n_header_lines": 535,
+    "n_body_lines": 1885
+  },
+  "T2_initial_profile": {
+    "n_initial": 2420,
+    "prefix_distribution": {
+      "sh": 0.135,
+      "qo": 0.1341,
+      "da": 0.0925,
+      "ch": 0.0754,
+      "sa": 0.0656,
+      "so": 0.0559,
+      "pch": 0.0527,
+      "po": 0.0522,
+      "tch": 0.0384,
+      "yk": 0.0328,
+      "dch": 0.0324,
+      "ol": 0.0319,
+      "ok": 0.0296,
+      "to": 0.0287,
+      "te": 0.0259
+    },
+    "prefix_enrichment_vs_overall": {
+      "po": 7.93,
+      "dch": 6.42,
+      "so": 6.11,
+      "to": 5.15,
+      "tch": 4.61,
+      "pch": 4.44,
+      "sa": 4.12,
+      "sch": 3.44,
+      "de": 3.01,
+      "yk": 2.16,
+      "do": 2.05,
+      "ta": 2.01,
+      "te": 1.85,
+      "da": 1.76,
+      "kch": 1.38
+    },
+    "head_atom_distribution": {
+      "e": 0.5372,
+      "o": 0.1849,
+      "k": 0.1703,
+      "a": 0.0778,
+      "t": 0.0299
+    },
+    "terminal_atom_distribution": {
+      "y": 0.26,
+      "n": 0.1951,
+      "l": 0.1596,
+      "r": 0.1453,
+      "k": 0.1328,
+      "h": 0.0823,
+      "t": 0.0243,
+      "m": 0.0006
+    },
+    "suffix_rate": 0.4707,
+    "suffix_rate_overall": 0.4828,
+    "suffix_enrichment": 0.975,
+    "articulator_rate": 0.1736,
+    "articulator_rate_overall": 0.0441,
+    "articulator_enrichment": 3.934,
+    "category_distribution": {
+      "THERMAL": 0.2202,
+      "STAGING": 0.2046,
+      "FLOW": 0.1681,
+      "OPERATION": 0.1378,
+      "TRANSITION": 0.1181,
+      "MARKING": 0.1105,
+      "CONTAINMENT": 0.0227,
+      "MONITORING": 0.0181
+    },
+    "category_enrichment": {
+      "STAGING": 1.57,
+      "MARKING": 1.42,
+      "MONITORING": 0.99,
+      "OPERATION": 0.96,
+      "THERMAL": 0.92,
+      "FLOW": 0.86,
+      "TRANSITION": 0.79,
+      "CONTAINMENT": 0.47
+    },
+    "top_initial_words": {
+      "daiin": 0.0351,
+      "saiin": 0.0198,
+      "dain": 0.014,
+      "sain": 0.014,
+      "qokeedy": 0.0128,
+      "dshedy": 0.012,
+      "y": 0.0112,
+      "qokeey": 0.0107,
+      "sol": 0.0107,
+      "sor": 0.0103,
+      "qokain": 0.0099,
+      "qokaiin": 0.0095,
+      "sar": 0.0091,
+      "dar": 0.0087,
+      "ol": 0.0087,
+      "tchedy": 0.0083,
+      "qokedy": 0.0079,
+      "dair": 0.0079,
+      "pol": 0.007,
+      "dchedy": 0.0066
+    }
+  },
+  "T3_final_profile": {
+    "n_final": 2420,
+    "n_paragraph_final": 509,
+    "prefix_distribution": {
+      "ch": 0.1683,
+      "qo": 0.1341,
+      "da": 0.1032,
+      "ol": 0.0977,
+      "ot": 0.0822,
+      "ok": 0.0822,
+      "sh": 0.0508,
+      "al": 0.0359,
+      "ar": 0.0359,
+      "or": 0.0337,
+      "lch": 0.0287,
+      "lk": 0.0221,
+      "sa": 0.0193,
+      "ka": 0.0166,
+      "ta": 0.016
+    },
+    "prefix_enrichment_vs_overall": {
+      "ar": 4.56,
+      "al": 3.59,
+      "or": 3.37,
+      "ko": 1.99,
+      "ol": 1.93,
+      "da": 1.65,
+      "lch": 1.58,
+      "de": 1.51,
+      "ka": 1.2,
+      "se": 1.19,
+      "ta": 1.17,
+      "rch": 1.16,
+      "ct": 1.11,
+      "sa": 1.02,
+      "ot": 0.98
+    },
+    "head_atom_distribution": {
+      "a": 0.3107,
+      "e": 0.2871,
+      "o": 0.2108,
+      "k": 0.1408,
+      "t": 0.0506
+    },
+    "terminal_atom_distribution": {
+      "y": 0.2902,
+      "l": 0.1704,
+      "m": 0.1182,
+      "k": 0.1176,
+      "r": 0.1165,
+      "n": 0.0888,
+      "h": 0.0494,
+      "t": 0.0488
+    },
+    "suffix_rate": 0.495,
+    "suffix_rate_overall": 0.4828,
+    "suffix_enrichment": 1.025,
+    "articulator_rate": 0.0393,
+    "articulator_rate_overall": 0.0441,
+    "articulator_enrichment": 0.89,
+    "category_distribution": {
+      "TRANSITION": 0.2451,
+      "FLOW": 0.1972,
+      "STAGING": 0.146,
+      "THERMAL": 0.1339,
+      "OPERATION": 0.1087,
+      "MARKING": 0.0957,
+      "CONTAINMENT": 0.0608,
+      "MONITORING": 0.0126
+    },
+    "category_enrichment": {
+      "TRANSITION": 1.63,
+      "CONTAINMENT": 1.26,
+      "MARKING": 1.23,
+      "STAGING": 1.12,
+      "FLOW": 1.01,
+      "OPERATION": 0.76,
+      "MONITORING": 0.69,
+      "THERMAL": 0.56
+    },
+    "paragraph_final_suffix_rate": 0.5187,
+    "paragraph_final_category_distribution": {
+      "TRANSITION": 0.2173,
+      "THERMAL": 0.1972,
+      "FLOW": 0.1751,
+      "OPERATION": 0.1529,
+      "STAGING": 0.0986,
+      "MARKING": 0.0724,
+      "CONTAINMENT": 0.0684,
+      "MONITORING": 0.0181
+    },
+    "top_final_words": {
+      "am": 0.0182,
+      "ol": 0.0165,
+      "dy": 0.0161,
+      "chedy": 0.0149,
+      "oly": 0.014,
+      "dam": 0.0116,
+      "al": 0.0116,
+      "otam": 0.0103,
+      "daiin": 0.0099,
+      "dal": 0.0091,
+      "qoky": 0.0087,
+      "qokam": 0.0079,
+      "lchedy": 0.007,
+      "ldy": 0.0066,
+      "ary": 0.0066,
+      "shedy": 0.0066,
+      "chey": 0.0066,
+      "ar": 0.0062,
+      "dar": 0.0062,
+      "lol": 0.0062
+    }
+  },
+  "T4_positional_gradient": {
+    "quintile_profiles": {
+      "Q0": {
+        "n_tokens": 5022,
+        "prefix_distribution": {
+          "sh": 0.18,
+          "qo": 0.1638,
+          "ch": 0.141,
+          "da": 0.063,
+          "ok": 0.0483,
+          "sa": 0.0358,
+          "ol": 0.0348,
+          "ot": 0.0346,
+          "so": 0.0311,
+          "pch": 0.0297
+        },
+        "head_atom_distribution": {
+          "e": 0.5116,
+          "o": 0.1715,
+          "k": 0.1573,
+          "a": 0.1263,
+          "t": 0.0333
+        },
+        "terminal_atom_distribution": {
+          "y": 0.2877,
+          "l": 0.1595,
+          "k": 0.1578,
+          "n": 0.1515,
+          "r": 0.1282,
+          "h": 0.077,
+          "t": 0.0365,
+          "m": 0.0017
+        },
+        "suffix_rate": 0.459,
+        "articulator_rate": 0.0974,
+        "category_distribution": {
+          "THERMAL": 0.2433,
+          "FLOW": 0.1761,
+          "STAGING": 0.1561,
+          "OPERATION": 0.1472,
+          "TRANSITION": 0.1407,
+          "MARKING": 0.0837,
+          "CONTAINMENT": 0.0354,
+          "MONITORING": 0.0174
+        },
+        "bare_prefix_rate": 0.1428
+      },
+      "Q1": {
+        "n_tokens": 4186,
+        "prefix_distribution": {
+          "qo": 0.2688,
+          "ch": 0.1942,
+          "sh": 0.1291,
+          "ok": 0.0805,
+          "ot": 0.0704,
+          "ol": 0.0467,
+          "da": 0.0394,
+          "lk": 0.0237,
+          "lch": 0.0196,
+          "ke": 0.0165
+        },
+        "head_atom_distribution": {
+          "e": 0.4263,
+          "k": 0.2244,
+          "o": 0.1489,
+          "a": 0.1456,
+          "t": 0.0548
+        },
+        "terminal_atom_distribution": {
+          "y": 0.2891,
+          "k": 0.2177,
+          "l": 0.1434,
+          "n": 0.1142,
+          "r": 0.0931,
+          "h": 0.0844,
+          "t": 0.0558,
+          "m": 0.0023
+        },
+        "suffix_rate": 0.505,
+        "articulator_rate": 0.0275,
+        "category_distribution": {
+          "THERMAL": 0.2943,
+          "FLOW": 0.1651,
+          "OPERATION": 0.1535,
+          "TRANSITION": 0.1396,
+          "STAGING": 0.1207,
+          "MARKING": 0.0645,
+          "CONTAINMENT": 0.0463,
+          "MONITORING": 0.016
+        },
+        "bare_prefix_rate": 0.145
+      },
+      "Q2": {
+        "n_tokens": 4135,
+        "prefix_distribution": {
+          "qo": 0.2396,
+          "ch": 0.2022,
+          "sh": 0.1174,
+          "ok": 0.0911,
+          "ot": 0.0757,
+          "da": 0.0463,
+          "ol": 0.0351,
+          "lk": 0.0277,
+          "yk": 0.0166,
+          "lch": 0.0134
+        },
+        "head_atom_distribution": {
+          "e": 0.3995,
+          "k": 0.1981,
+          "a": 0.1779,
+          "o": 0.1606,
+          "t": 0.0638
+        },
+        "terminal_atom_distribution": {
+          "y": 0.2764,
+          "k": 0.192,
+          "l": 0.1587,
+          "n": 0.1254,
+          "r": 0.1015,
+          "h": 0.0821,
+          "t": 0.0588,
+          "m": 0.0048
+        },
+        "suffix_rate": 0.4866,
+        "articulator_rate": 0.0281,
+        "category_distribution": {
+          "THERMAL": 0.2484,
+          "FLOW": 0.1963,
+          "OPERATION": 0.155,
+          "TRANSITION": 0.1247,
+          "STAGING": 0.1242,
+          "MARKING": 0.0768,
+          "CONTAINMENT": 0.056,
+          "MONITORING": 0.0188
+        },
+        "bare_prefix_rate": 0.1531
+      },
+      "Q3": {
+        "n_tokens": 4186,
+        "prefix_distribution": {
+          "qo": 0.2299,
+          "ch": 0.1976,
+          "sh": 0.1031,
+          "ot": 0.1005,
+          "ok": 0.0834,
+          "da": 0.0497,
+          "ol": 0.0454,
+          "lk": 0.0251,
+          "yk": 0.014,
+          "ke": 0.014
+        },
+        "head_atom_distribution": {
+          "e": 0.4114,
+          "k": 0.1936,
+          "a": 0.1846,
+          "o": 0.1508,
+          "t": 0.0596
+        },
+        "terminal_atom_distribution": {
+          "y": 0.2904,
+          "k": 0.1861,
+          "l": 0.1309,
+          "n": 0.1232,
+          "r": 0.1136,
+          "h": 0.0834,
+          "t": 0.0651,
+          "m": 0.0071
+        },
+        "suffix_rate": 0.494,
+        "articulator_rate": 0.0253,
+        "category_distribution": {
+          "THERMAL": 0.2458,
+          "FLOW": 0.2021,
+          "OPERATION": 0.1458,
+          "TRANSITION": 0.1419,
+          "STAGING": 0.1089,
+          "MARKING": 0.0832,
+          "CONTAINMENT": 0.0497,
+          "MONITORING": 0.0226
+        },
+        "bare_prefix_rate": 0.1634
+      },
+      "Q4": {
+        "n_tokens": 5561,
+        "prefix_distribution": {
+          "ch": 0.1818,
+          "qo": 0.1746,
+          "ot": 0.0991,
+          "ok": 0.085,
+          "da": 0.0772,
+          "sh": 0.0737,
+          "ol": 0.0636,
+          "lk": 0.024,
+          "lch": 0.0217,
+          "al": 0.0203
+        },
+        "head_atom_distribution": {
+          "e": 0.3358,
+          "a": 0.2721,
+          "o": 0.1729,
+          "k": 0.1557,
+          "t": 0.0634
+        },
+        "terminal_atom_distribution": {
+          "y": 0.2678,
+          "l": 0.1595,
+          "k": 0.142,
+          "r": 0.133,
+          "n": 0.1178,
+          "t": 0.0658,
+          "h": 0.0575,
+          "m": 0.0567
+        },
+        "suffix_rate": 0.4765,
+        "articulator_rate": 0.0345,
+        "category_distribution": {
+          "FLOW": 0.2256,
+          "TRANSITION": 0.1906,
+          "THERMAL": 0.1757,
+          "STAGING": 0.1345,
+          "OPERATION": 0.1234,
+          "MARKING": 0.079,
+          "CONTAINMENT": 0.0547,
+          "MONITORING": 0.0166
+        },
+        "bare_prefix_rate": 0.2194
+      }
+    },
+    "gradient_metrics": {
+      "suffix_rate": [
+        0.459,
+        0.505,
+        0.4866,
+        0.494,
+        0.4765
+      ],
+      "articulator_rate": [
+        0.0974,
+        0.0275,
+        0.0281,
+        0.0253,
+        0.0345
+      ],
+      "bare_prefix_rate": [
+        0.1428,
+        0.145,
+        0.1531,
+        0.1634,
+        0.2194
+      ],
+      "THERMAL_rate": [
+        0.2433,
+        0.2943,
+        0.2484,
+        0.2458,
+        0.1757
+      ],
+      "TRANSITION_rate": [
+        0.1407,
+        0.1396,
+        0.1247,
+        0.1419,
+        0.1906
+      ],
+      "FLOW_rate": [
+        0.1761,
+        0.1651,
+        0.1963,
+        0.2021,
+        0.2256
+      ],
+      "STAGING_rate": [
+        0.1561,
+        0.1207,
+        0.1242,
+        0.1089,
+        0.1345
+      ],
+      "MARKING_rate": [
+        0.0837,
+        0.0645,
+        0.0768,
+        0.0832,
+        0.079
+      ],
+      "MONITORING_rate": [
+        0.0174,
+        0.016,
+        0.0188,
+        0.0226,
+        0.0166
+      ]
+    },
+    "absolute_position_profiles": {
+      "1": {
+        "n_tokens": 2414,
+        "suffix_rate": 0.471,
+        "articulator_rate": 0.1736,
+        "top_prefixes": {
+          "sh": 0.1352,
+          "qo": 0.1343,
+          "da": 0.0926,
+          "ch": 0.075,
+          "sa": 0.0657
+        },
+        "category_distribution": {
+          "THERMAL": 0.2203,
+          "STAGING": 0.2051,
+          "FLOW": 0.1676,
+          "OPERATION": 0.1382,
+          "TRANSITION": 0.1179,
+          "MARKING": 0.1099,
+          "CONTAINMENT": 0.0227,
+          "MONITORING": 0.0181
+        }
+      },
+      "2": {
+        "n_tokens": 2414,
+        "suffix_rate": 0.4548,
+        "articulator_rate": 0.024,
+        "top_prefixes": {
+          "sh": 0.2318,
+          "ch": 0.2065,
+          "qo": 0.199,
+          "ok": 0.0657,
+          "ol": 0.0448
+        },
+        "category_distribution": {
+          "THERMAL": 0.2745,
+          "FLOW": 0.1739,
+          "OPERATION": 0.1681,
+          "TRANSITION": 0.1605,
+          "STAGING": 0.1102,
+          "MARKING": 0.0541,
+          "CONTAINMENT": 0.0453,
+          "MONITORING": 0.0134
+        }
+      },
+      "3": {
+        "n_tokens": 2406,
+        "suffix_rate": 0.5224,
+        "articulator_rate": 0.0245,
+        "top_prefixes": {
+          "qo": 0.2755,
+          "ch": 0.1945,
+          "sh": 0.1348,
+          "ok": 0.0795,
+          "ot": 0.0572
+        },
+        "category_distribution": {
+          "THERMAL": 0.2982,
+          "FLOW": 0.1594,
+          "OPERATION": 0.1472,
+          "TRANSITION": 0.1358,
+          "STAGING": 0.1168,
+          "MARKING": 0.0687,
+          "CONTAINMENT": 0.0531,
+          "MONITORING": 0.0207
+        }
+      },
+      "4": {
+        "n_tokens": 2377,
+        "suffix_rate": 0.5023,
+        "articulator_rate": 0.0282,
+        "top_prefixes": {
+          "qo": 0.2511,
+          "ch": 0.2027,
+          "sh": 0.119,
+          "ok": 0.0885,
+          "ot": 0.0818
+        },
+        "category_distribution": {
+          "THERMAL": 0.2825,
+          "FLOW": 0.1726,
+          "OPERATION": 0.1534,
+          "TRANSITION": 0.1389,
+          "STAGING": 0.1167,
+          "MARKING": 0.0654,
+          "CONTAINMENT": 0.0521,
+          "MONITORING": 0.0184
+        }
+      },
+      "5": {
+        "n_tokens": 2306,
+        "suffix_rate": 0.4874,
+        "articulator_rate": 0.0304,
+        "top_prefixes": {
+          "qo": 0.2453,
+          "ch": 0.1914,
+          "sh": 0.1103,
+          "ok": 0.0929,
+          "ot": 0.077
+        },
+        "category_distribution": {
+          "THERMAL": 0.2585,
+          "FLOW": 0.1943,
+          "OPERATION": 0.1459,
+          "STAGING": 0.1385,
+          "TRANSITION": 0.1297,
+          "MARKING": 0.0637,
+          "CONTAINMENT": 0.0488,
+          "MONITORING": 0.0207
+        }
+      },
+      "6": {
+        "n_tokens": 2194,
+        "suffix_rate": 0.4977,
+        "articulator_rate": 0.0269,
+        "top_prefixes": {
+          "qo": 0.2249,
+          "ch": 0.2098,
+          "sh": 0.1157,
+          "ok": 0.0904,
+          "ot": 0.0807
+        },
+        "category_distribution": {
+          "THERMAL": 0.2452,
+          "FLOW": 0.1925,
+          "OPERATION": 0.1547,
+          "TRANSITION": 0.1307,
+          "STAGING": 0.1251,
+          "MARKING": 0.0826,
+          "CONTAINMENT": 0.0563,
+          "MONITORING": 0.0129
+        }
+      },
+      "7": {
+        "n_tokens": 2073,
+        "suffix_rate": 0.5147,
+        "articulator_rate": 0.0328,
+        "top_prefixes": {
+          "qo": 0.2321,
+          "ch": 0.2039,
+          "sh": 0.1048,
+          "ok": 0.0887,
+          "ot": 0.0812
+        },
+        "category_distribution": {
+          "THERMAL": 0.2358,
+          "FLOW": 0.1982,
+          "TRANSITION": 0.1445,
+          "OPERATION": 0.1406,
+          "STAGING": 0.1172,
+          "MARKING": 0.085,
+          "CONTAINMENT": 0.0532,
+          "MONITORING": 0.0254
+        }
+      },
+      "8": {
+        "n_tokens": 1919,
+        "suffix_rate": 0.4966,
+        "articulator_rate": 0.0261,
+        "top_prefixes": {
+          "qo": 0.2162,
+          "ch": 0.1762,
+          "ot": 0.1181,
+          "sh": 0.0988,
+          "ok": 0.0831
+        },
+        "category_distribution": {
+          "THERMAL": 0.2344,
+          "FLOW": 0.2068,
+          "OPERATION": 0.1501,
+          "TRANSITION": 0.1495,
+          "STAGING": 0.1082,
+          "MARKING": 0.0806,
+          "CONTAINMENT": 0.0493,
+          "MONITORING": 0.0212
+        }
+      },
+      "9": {
+        "n_tokens": 1692,
+        "suffix_rate": 0.4716,
+        "articulator_rate": 0.0343,
+        "top_prefixes": {
+          "qo": 0.2026,
+          "ch": 0.1983,
+          "ot": 0.1049,
+          "ok": 0.0854,
+          "sh": 0.0832
+        },
+        "category_distribution": {
+          "FLOW": 0.2421,
+          "THERMAL": 0.2055,
+          "TRANSITION": 0.1546,
+          "OPERATION": 0.1336,
+          "STAGING": 0.1132,
+          "MARKING": 0.0761,
+          "CONTAINMENT": 0.0533,
+          "MONITORING": 0.0216
+        }
+      },
+      "10": {
+        "n_tokens": 1373,
+        "suffix_rate": 0.4487,
+        "articulator_rate": 0.0328,
+        "top_prefixes": {
+          "ch": 0.1825,
+          "qo": 0.1654,
+          "ot": 0.1093,
+          "ok": 0.096,
+          "da": 0.0694
+        },
+        "category_distribution": {
+          "FLOW": 0.2567,
+          "TRANSITION": 0.1899,
+          "THERMAL": 0.1602,
+          "STAGING": 0.1231,
+          "OPERATION": 0.1061,
+          "MARKING": 0.095,
+          "CONTAINMENT": 0.0534,
+          "MONITORING": 0.0156
+        }
+      },
+      "11": {
+        "n_tokens": 891,
+        "suffix_rate": 0.4175,
+        "articulator_rate": 0.0325,
+        "top_prefixes": {
+          "ch": 0.1677,
+          "qo": 0.1523,
+          "ot": 0.1031,
+          "da": 0.0738,
+          "sh": 0.0692
+        },
+        "category_distribution": {
+          "FLOW": 0.2247,
+          "TRANSITION": 0.2225,
+          "THERMAL": 0.151,
+          "STAGING": 0.1407,
+          "OPERATION": 0.1203,
+          "MARKING": 0.0817,
+          "CONTAINMENT": 0.0477,
+          "MONITORING": 0.0114
+        }
+      },
+      "12": {
+        "n_tokens": 481,
+        "suffix_rate": 0.422,
+        "articulator_rate": 0.027,
+        "top_prefixes": {
+          "ch": 0.1597,
+          "qo": 0.131,
+          "ot": 0.1278,
+          "da": 0.1278,
+          "ol": 0.0639
+        },
+        "category_distribution": {
+          "FLOW": 0.2474,
+          "TRANSITION": 0.2304,
+          "STAGING": 0.1586,
+          "OPERATION": 0.1163,
+          "THERMAL": 0.1057,
+          "MARKING": 0.0782,
+          "CONTAINMENT": 0.0486,
+          "MONITORING": 0.0148
+        }
+      }
+    }
+  },
+  "T5_prefix_positional_grammar": {
+    "n_prefixes_tested": 33,
+    "prefix_stats": {
+      "po": {
+        "n": 136,
+        "mean_pos": 0.107,
+        "std_pos": 0.27,
+        "quintile_distribution": {
+          "Q0": 0.86,
+          "Q1": 0.007,
+          "Q2": 0.022,
+          "Q3": 0.022,
+          "Q4": 0.088
+        },
+        "initial_rate": 0.86,
+        "final_rate": 0.088,
+        "position_class": "INITIAL_BIASED"
+      },
+      "dch": {
+        "n": 104,
+        "mean_pos": 0.168,
+        "std_pos": 0.287,
+        "quintile_distribution": {
+          "Q0": 0.731,
+          "Q1": 0.048,
+          "Q2": 0.087,
+          "Q3": 0.077,
+          "Q4": 0.058
+        },
+        "initial_rate": 0.731,
+        "final_rate": 0.058,
+        "position_class": "INITIAL_BIASED"
+      },
+      "so": {
+        "n": 188,
+        "mean_pos": 0.189,
+        "std_pos": 0.311,
+        "quintile_distribution": {
+          "Q0": 0.713,
+          "Q1": 0.059,
+          "Q2": 0.074,
+          "Q3": 0.069,
+          "Q4": 0.085
+        },
+        "initial_rate": 0.713,
+        "final_rate": 0.085,
+        "position_class": "INITIAL_BIASED"
+      },
+      "to": {
+        "n": 115,
+        "mean_pos": 0.267,
+        "std_pos": 0.347,
+        "quintile_distribution": {
+          "Q0": 0.6,
+          "Q1": 0.061,
+          "Q2": 0.096,
+          "Q3": 0.122,
+          "Q4": 0.122
+        },
+        "initial_rate": 0.6,
+        "final_rate": 0.122,
+        "position_class": "INITIAL_BIASED"
+      },
+      "tch": {
+        "n": 172,
+        "mean_pos": 0.283,
+        "std_pos": 0.335,
+        "quintile_distribution": {
+          "Q0": 0.558,
+          "Q1": 0.07,
+          "Q2": 0.11,
+          "Q3": 0.151,
+          "Q4": 0.11
+        },
+        "initial_rate": 0.558,
+        "final_rate": 0.11,
+        "position_class": "INITIAL_BIASED"
+      },
+      "pch": {
+        "n": 245,
+        "mean_pos": 0.299,
+        "std_pos": 0.338,
+        "quintile_distribution": {
+          "Q0": 0.522,
+          "Q1": 0.094,
+          "Q2": 0.11,
+          "Q3": 0.147,
+          "Q4": 0.127
+        },
+        "initial_rate": 0.522,
+        "final_rate": 0.127,
+        "position_class": "INITIAL_BIASED"
+      },
+      "sa": {
+        "n": 329,
+        "mean_pos": 0.362,
+        "std_pos": 0.379,
+        "quintile_distribution": {
+          "Q0": 0.468,
+          "Q1": 0.097,
+          "Q2": 0.103,
+          "Q3": 0.119,
+          "Q4": 0.213
+        },
+        "initial_rate": 0.468,
+        "final_rate": 0.213,
+        "position_class": "INITIAL_BIASED"
+      },
+      "lsh": {
+        "n": 116,
+        "mean_pos": 0.377,
+        "std_pos": 0.288,
+        "quintile_distribution": {
+          "Q0": 0.336,
+          "Q1": 0.216,
+          "Q2": 0.198,
+          "Q3": 0.129,
+          "Q4": 0.121
+        },
+        "initial_rate": 0.336,
+        "final_rate": 0.121,
+        "position_class": "INITIAL_BIASED"
+      },
+      "sch": {
+        "n": 25,
+        "mean_pos": 0.384,
+        "std_pos": 0.339,
+        "quintile_distribution": {
+          "Q0": 0.4,
+          "Q1": 0.04,
+          "Q2": 0.24,
+          "Q3": 0.2,
+          "Q4": 0.12
+        },
+        "initial_rate": 0.4,
+        "final_rate": 0.12,
+        "position_class": "INITIAL_BIASED"
+      },
+      "sh": {
+        "n": 2329,
+        "mean_pos": 0.396,
+        "std_pos": 0.299,
+        "quintile_distribution": {
+          "Q0": 0.333,
+          "Q1": 0.198,
+          "Q2": 0.176,
+          "Q3": 0.155,
+          "Q4": 0.137
+        },
+        "initial_rate": 0.333,
+        "final_rate": 0.137,
+        "position_class": "INITIAL_BIASED"
+      },
+      "yk": {
+        "n": 314,
+        "mean_pos": 0.428,
+        "std_pos": 0.334,
+        "quintile_distribution": {
+          "Q0": 0.309,
+          "Q1": 0.153,
+          "Q2": 0.185,
+          "Q3": 0.156,
+          "Q4": 0.197
+        },
+        "initial_rate": 0.309,
+        "final_rate": 0.197,
+        "position_class": "INITIAL_BIASED"
+      },
+      "kch": {
+        "n": 97,
+        "mean_pos": 0.436,
+        "std_pos": 0.29,
+        "quintile_distribution": {
+          "Q0": 0.227,
+          "Q1": 0.227,
+          "Q2": 0.227,
+          "Q3": 0.175,
+          "Q4": 0.144
+        },
+        "initial_rate": 0.227,
+        "final_rate": 0.144,
+        "position_class": "CENTRAL"
+      },
+      "te": {
+        "n": 289,
+        "mean_pos": 0.441,
+        "std_pos": 0.34,
+        "quintile_distribution": {
+          "Q0": 0.308,
+          "Q1": 0.17,
+          "Q2": 0.152,
+          "Q3": 0.149,
+          "Q4": 0.221
+        },
+        "initial_rate": 0.308,
+        "final_rate": 0.221,
+        "position_class": "INITIAL_BIASED"
+      },
+      "do": {
+        "n": 126,
+        "mean_pos": 0.444,
+        "std_pos": 0.322,
+        "quintile_distribution": {
+          "Q0": 0.286,
+          "Q1": 0.127,
+          "Q2": 0.238,
+          "Q3": 0.143,
+          "Q4": 0.206
+        },
+        "initial_rate": 0.286,
+        "final_rate": 0.206,
+        "position_class": "CENTRAL"
+      },
+      "qo": {
+        "n": 4069,
+        "mean_pos": 0.485,
+        "std_pos": 0.289,
+        "quintile_distribution": {
+          "Q0": 0.173,
+          "Q1": 0.236,
+          "Q2": 0.206,
+          "Q3": 0.198,
+          "Q4": 0.186
+        },
+        "initial_rate": 0.173,
+        "final_rate": 0.186,
+        "position_class": "CENTRAL"
+      },
+      "ke": {
+        "n": 258,
+        "mean_pos": 0.49,
+        "std_pos": 0.292,
+        "quintile_distribution": {
+          "Q0": 0.202,
+          "Q1": 0.229,
+          "Q2": 0.174,
+          "Q3": 0.19,
+          "Q4": 0.205
+        },
+        "initial_rate": 0.202,
+        "final_rate": 0.205,
+        "position_class": "CENTRAL"
+      },
+      "ta": {
+        "n": 237,
+        "mean_pos": 0.495,
+        "std_pos": 0.359,
+        "quintile_distribution": {
+          "Q0": 0.278,
+          "Q1": 0.11,
+          "Q2": 0.165,
+          "Q3": 0.165,
+          "Q4": 0.283
+        },
+        "initial_rate": 0.278,
+        "final_rate": 0.283,
+        "position_class": "CENTRAL"
+      },
+      "ch": {
+        "n": 3491,
+        "mean_pos": 0.515,
+        "std_pos": 0.295,
+        "quintile_distribution": {
+          "Q0": 0.174,
+          "Q1": 0.199,
+          "Q2": 0.203,
+          "Q3": 0.198,
+          "Q4": 0.226
+        },
+        "initial_rate": 0.174,
+        "final_rate": 0.226,
+        "position_class": "CENTRAL"
+      },
+      "da": {
+        "n": 1083,
+        "mean_pos": 0.521,
+        "std_pos": 0.361,
+        "quintile_distribution": {
+          "Q0": 0.25,
+          "Q1": 0.13,
+          "Q2": 0.15,
+          "Q3": 0.161,
+          "Q4": 0.309
+        },
+        "initial_rate": 0.25,
+        "final_rate": 0.309,
+        "position_class": "FINAL_BIASED"
+      },
+      "lch": {
+        "n": 315,
+        "mean_pos": 0.53,
+        "std_pos": 0.329,
+        "quintile_distribution": {
+          "Q0": 0.181,
+          "Q1": 0.222,
+          "Q2": 0.149,
+          "Q3": 0.149,
+          "Q4": 0.298
+        },
+        "initial_rate": 0.181,
+        "final_rate": 0.298,
+        "position_class": "CENTRAL"
+      },
+      "lk": {
+        "n": 438,
+        "mean_pos": 0.536,
+        "std_pos": 0.286,
+        "quintile_distribution": {
+          "Q0": 0.146,
+          "Q1": 0.194,
+          "Q2": 0.221,
+          "Q3": 0.201,
+          "Q4": 0.237
+        },
+        "initial_rate": 0.146,
+        "final_rate": 0.237,
+        "position_class": "CENTRAL"
+      },
+      "ok": {
+        "n": 1476,
+        "mean_pos": 0.538,
+        "std_pos": 0.293,
+        "quintile_distribution": {
+          "Q0": 0.141,
+          "Q1": 0.195,
+          "Q2": 0.216,
+          "Q3": 0.198,
+          "Q4": 0.25
+        },
+        "initial_rate": 0.141,
+        "final_rate": 0.25,
+        "position_class": "CENTRAL"
+      },
+      "ct": {
+        "n": 60,
+        "mean_pos": 0.541,
+        "std_pos": 0.312,
+        "quintile_distribution": {
+          "Q0": 0.2,
+          "Q1": 0.067,
+          "Q2": 0.25,
+          "Q3": 0.267,
+          "Q4": 0.217
+        },
+        "initial_rate": 0.2,
+        "final_rate": 0.217,
+        "position_class": "CENTRAL"
+      },
+      "BARE": {
+        "n": 3861,
+        "mean_pos": 0.557,
+        "std_pos": 0.327,
+        "quintile_distribution": {
+          "Q0": 0.186,
+          "Q1": 0.157,
+          "Q2": 0.164,
+          "Q3": 0.177,
+          "Q4": 0.316
+        },
+        "initial_rate": 0.186,
+        "final_rate": 0.316,
+        "position_class": "FINAL_BIASED"
+      },
+      "ol": {
+        "n": 875,
+        "mean_pos": 0.56,
+        "std_pos": 0.334,
+        "quintile_distribution": {
+          "Q0": 0.171,
+          "Q1": 0.191,
+          "Q2": 0.141,
+          "Q3": 0.182,
+          "Q4": 0.315
+        },
+        "initial_rate": 0.171,
+        "final_rate": 0.315,
+        "position_class": "FINAL_BIASED"
+      },
+      "fch": {
+        "n": 57,
+        "mean_pos": 0.564,
+        "std_pos": 0.305,
+        "quintile_distribution": {
+          "Q0": 0.158,
+          "Q1": 0.088,
+          "Q2": 0.246,
+          "Q3": 0.246,
+          "Q4": 0.263
+        },
+        "initial_rate": 0.158,
+        "final_rate": 0.263,
+        "position_class": "CENTRAL"
+      },
+      "ka": {
+        "n": 238,
+        "mean_pos": 0.57,
+        "std_pos": 0.3,
+        "quintile_distribution": {
+          "Q0": 0.113,
+          "Q1": 0.231,
+          "Q2": 0.172,
+          "Q3": 0.16,
+          "Q4": 0.324
+        },
+        "initial_rate": 0.113,
+        "final_rate": 0.324,
+        "position_class": "FINAL_BIASED"
+      },
+      "rch": {
+        "n": 41,
+        "mean_pos": 0.582,
+        "std_pos": 0.29,
+        "quintile_distribution": {
+          "Q0": 0.146,
+          "Q1": 0.146,
+          "Q2": 0.146,
+          "Q3": 0.293,
+          "Q4": 0.268
+        },
+        "initial_rate": 0.146,
+        "final_rate": 0.268,
+        "position_class": "CENTRAL"
+      },
+      "ot": {
+        "n": 1448,
+        "mean_pos": 0.588,
+        "std_pos": 0.283,
+        "quintile_distribution": {
+          "Q0": 0.103,
+          "Q1": 0.174,
+          "Q2": 0.183,
+          "Q3": 0.243,
+          "Q4": 0.297
+        },
+        "initial_rate": 0.103,
+        "final_rate": 0.297,
+        "position_class": "CENTRAL"
+      },
+      "ko": {
+        "n": 48,
+        "mean_pos": 0.641,
+        "std_pos": 0.33,
+        "quintile_distribution": {
+          "Q0": 0.167,
+          "Q1": 0.042,
+          "Q2": 0.167,
+          "Q3": 0.208,
+          "Q4": 0.417
+        },
+        "initial_rate": 0.167,
+        "final_rate": 0.417,
+        "position_class": "FINAL_BIASED"
+      },
+      "or": {
+        "n": 173,
+        "mean_pos": 0.664,
+        "std_pos": 0.344,
+        "quintile_distribution": {
+          "Q0": 0.139,
+          "Q1": 0.098,
+          "Q2": 0.127,
+          "Q3": 0.156,
+          "Q4": 0.48
+        },
+        "initial_rate": 0.139,
+        "final_rate": 0.48,
+        "position_class": "FINAL_BIASED"
+      },
+      "al": {
+        "n": 173,
+        "mean_pos": 0.692,
+        "std_pos": 0.332,
+        "quintile_distribution": {
+          "Q0": 0.121,
+          "Q1": 0.098,
+          "Q2": 0.121,
+          "Q3": 0.15,
+          "Q4": 0.509
+        },
+        "initial_rate": 0.121,
+        "final_rate": 0.509,
+        "position_class": "FINAL_BIASED"
+      },
+      "ar": {
+        "n": 136,
+        "mean_pos": 0.744,
+        "std_pos": 0.327,
+        "quintile_distribution": {
+          "Q0": 0.11,
+          "Q1": 0.059,
+          "Q2": 0.125,
+          "Q3": 0.096,
+          "Q4": 0.61
+        },
+        "initial_rate": 0.11,
+        "final_rate": 0.61,
+        "position_class": "FINAL_BIASED"
+      }
+    },
+    "position_class_counts": {
+      "INITIAL_BIASED": 12,
+      "FINAL_BIASED": 8,
+      "CENTRAL": 13
+    },
+    "modifier_char_mean_pos": 0.362,
+    "base_char_mean_pos": null
+  },
+  "T6_internal_transitions": {
+    "n_transitions": 20676,
+    "category_transition_matrix": {
+      "THERMAL": {
+        "THERMAL": 0.277,
+        "FLOW": 0.192,
+        "OPERATION": 0.147,
+        "TRANSITION": 0.132,
+        "STAGING": 0.12,
+        "MARKING": 0.056,
+        "CONTAINMENT": 0.046,
+        "MONITORING": 0.019
+      },
+      "FLOW": {
+        "THERMAL": 0.181,
+        "FLOW": 0.228,
+        "OPERATION": 0.145,
+        "TRANSITION": 0.194,
+        "STAGING": 0.102,
+        "MARKING": 0.066,
+        "CONTAINMENT": 0.048,
+        "MONITORING": 0.019
+      },
+      "OPERATION": {
+        "THERMAL": 0.295,
+        "FLOW": 0.181,
+        "OPERATION": 0.137,
+        "TRANSITION": 0.114,
+        "STAGING": 0.114,
+        "MARKING": 0.072,
+        "CONTAINMENT": 0.051,
+        "MONITORING": 0.02
+      },
+      "TRANSITION": {
+        "THERMAL": 0.243,
+        "FLOW": 0.18,
+        "OPERATION": 0.118,
+        "TRANSITION": 0.164,
+        "STAGING": 0.141,
+        "MARKING": 0.073,
+        "CONTAINMENT": 0.048,
+        "MONITORING": 0.015
+      },
+      "STAGING": {
+        "THERMAL": 0.199,
+        "FLOW": 0.18,
+        "OPERATION": 0.168,
+        "TRANSITION": 0.177,
+        "STAGING": 0.13,
+        "MARKING": 0.063,
+        "CONTAINMENT": 0.059,
+        "MONITORING": 0.014
+      },
+      "MARKING": {
+        "THERMAL": 0.187,
+        "FLOW": 0.187,
+        "OPERATION": 0.148,
+        "TRANSITION": 0.13,
+        "STAGING": 0.11,
+        "MARKING": 0.146,
+        "CONTAINMENT": 0.054,
+        "MONITORING": 0.021
+      },
+      "CONTAINMENT": {
+        "THERMAL": 0.226,
+        "FLOW": 0.203,
+        "OPERATION": 0.13,
+        "TRANSITION": 0.115,
+        "STAGING": 0.131,
+        "MARKING": 0.101,
+        "CONTAINMENT": 0.07,
+        "MONITORING": 0.014
+      },
+      "MONITORING": {
+        "THERMAL": 0.261,
+        "FLOW": 0.188,
+        "OPERATION": 0.125,
+        "TRANSITION": 0.107,
+        "STAGING": 0.146,
+        "MARKING": 0.081,
+        "CONTAINMENT": 0.06,
+        "MONITORING": 0.016
+      }
+    },
+    "mean_category_transition_entropy": 2.806,
+    "category_self_transition_rate": 0.185,
+    "prefix_self_transition_rates": {
+      "BARE": 0.283,
+      "qo": 0.21,
+      "ch": 0.152,
+      "ot": 0.131,
+      "sh": 0.098,
+      "ok": 0.097,
+      "lk": 0.08,
+      "ol": 0.067,
+      "lch": 0.053,
+      "da": 0.051,
+      "ta": 0.048,
+      "tch": 0.036,
+      "yk": 0.034,
+      "pch": 0.033,
+      "te": 0.033
+    }
+  },
+  "T7_line_independence": {
+    "n_consecutive_pairs": 2338,
+    "suffix_mode_MI": 0.0034,
+    "dominant_category_MI": 0.0319,
+    "boundary_category_MI": 0.025,
+    "line_length_correlation": 0.4063,
+    "mean_vocabulary_jaccard": 0.1531,
+    "interpretation": "INDEPENDENT"
+  },
+  "T8_information_unit": {
+    "word_entropy_global": 9.875,
+    "quintile_info_content": {
+      "Q0": {
+        "mean_info_bits": 10.291,
+        "n_tokens": 5014
+      },
+      "Q1": {
+        "mean_info_bits": 9.606,
+        "n_tokens": 4186
+      },
+      "Q2": {
+        "mean_info_bits": 9.575,
+        "n_tokens": 4135
+      },
+      "Q3": {
+        "mean_info_bits": 9.623,
+        "n_tokens": 4186
+      },
+      "Q4": {
+        "mean_info_bits": 10.108,
+        "n_tokens": 5553
+      }
+    },
+    "mean_line_entropy": 3.117,
+    "pos1_prefix_to_rest_category_MI": 0.0837,
+    "info_gradient": [
+      10.291,
+      9.606,
+      9.575,
+      9.623,
+      10.108
+    ]
+  },
+  "T9_line_types": {
+    "n_lines_profiled": 2414,
+    "dominant_category_distribution": {
+      "THERMAL": 0.4959,
+      "FLOW": 0.2204,
+      "TRANSITION": 0.1611,
+      "STAGING": 0.0775,
+      "MARKING": 0.0452
+    },
+    "header_dominant_category": {
+      "THERMAL": 0.403,
+      "FLOW": 0.2542,
+      "MARKING": 0.1544,
+      "TRANSITION": 0.1412,
+      "STAGING": 0.0471
+    },
+    "body_dominant_category": {
+      "THERMAL": 0.522,
+      "FLOW": 0.2108,
+      "TRANSITION": 0.1668,
+      "STAGING": 0.086,
+      "MARKING": 0.0143
+    },
+    "section_dominant_category": {
+      "HERBAL": {
+        "THERMAL": 0.3271,
+        "FLOW": 0.258,
+        "TRANSITION": 0.258,
+        "MARKING": 0.0851,
+        "STAGING": 0.0718
+      },
+      "ZODIAC": {
+        "THERMAL": 0.3582,
+        "FLOW": 0.2388,
+        "TRANSITION": 0.194,
+        "MARKING": 0.1045,
+        "STAGING": 0.1045
+      },
+      "BIO": {
+        "THERMAL": 0.5845,
+        "FLOW": 0.1796,
+        "STAGING": 0.1206,
+        "TRANSITION": 0.0996,
+        "MARKING": 0.0157
+      },
+      "COSMO": {
+        "FLOW": 0.3254,
+        "THERMAL": 0.2619,
+        "TRANSITION": 0.246,
+        "STAGING": 0.0952,
+        "MARKING": 0.0714
+      },
+      "STARS_RECIPE": {
+        "THERMAL": 0.5277,
+        "FLOW": 0.2227,
+        "TRANSITION": 0.159,
+        "STAGING": 0.0453,
+        "MARKING": 0.0453
+      }
+    },
+    "short_line_suffix_rate": 0.508,
+    "long_line_suffix_rate": 0.473,
+    "n_short_lines": 220,
+    "n_long_lines": 1373
+  },
+  "T10_boundary_markers": {
+    "within_line_mean_entropy": 2.806,
+    "cross_line_mean_entropy": 2.76,
+    "entropy_ratio_cross_vs_within": 0.984,
+    "paragraph_cross_mean_entropy": 2.669,
+    "non_paragraph_cross_mean_entropy": 2.674,
+    "bare_suffix_final_rate": 0.505,
+    "top_final_suffixes": {
+      "am": 0.1603,
+      "dy": 0.1135,
+      "y": 0.1077,
+      "edy": 0.0726,
+      "hy": 0.0543,
+      "aiin": 0.0509,
+      "al": 0.0492,
+      "ain": 0.0434,
+      "ly": 0.0367,
+      "ar": 0.0351
+    },
+    "suffix_final_enrichment": {
+      "m": 9.54,
+      "n": 9.54,
+      "em": 9.54,
+      "g": 8.54,
+      "om": 8.1,
+      "am": 7.83,
+      "im": 7.57,
+      "ry": 5.59,
+      "ly": 3.89,
+      "an": 2.67
+    },
+    "boundary_hierarchy": "LINE = PARAGRAPH"
+  }
+}

@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,268 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,275 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -188,11 +188,13 @@ All 17 forbidden transitions are mediated through 23 "hub" MIDDLEs — the most 
 
 ### Program Structure
 
-Each folio is a program. Each line within a folio is a formal control block (3.3x more regular than random line breaks). Lines follow a consistent execution pattern:
+Each folio is a program. Each line within a folio is a formal control block (3.3x more regular than random line breaks, mean 9.54 tokens, mode 10; C1425). Lines follow a three-zone gradient:
 
 ```
-SETUP → WORK → CHECK → CLOSE
+SPECIFICATION → THERMAL WORK → CLOSURE
 ```
+
+Line-initial tokens are high-information specification markers: ARTICULATOR-enriched (3.93x), STAGING (1.57x) and MARKING elevated, setting up what the line will do (C1426). THERMAL operations peak at quarter Q1 — work follows specification, not the reverse (C1428). Line-final tokens are CLOSURE markers: TRANSITION enriched (1.63x), THERMAL depleted, with the m-terminal appearing 196x above baseline as a routing/halt signal (C1427). Token information follows a U-shape — boundaries carry the highest-entropy tokens (10.29 bits initial, 10.11 bits final vs 9.82 mid-line; C1430). Lines within a paragraph are statistically independent (MI < 0.032 bits between consecutive lines; C1429) — each is a self-contained control block, not a step in a sequence.
 
 Lines group into paragraphs, which function as mini-programs with their own internal structure: a header line followed by body lines that execute operations. Header lines use distinctive vocabulary — 50.2% of first-line tokens come from a specialized identification vocabulary, compared to 29.8% in body lines. The structure suggests that headers specify what the paragraph will do, with body lines carrying out the operations in simpler individual tokens.
 
