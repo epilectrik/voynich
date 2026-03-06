@@ -4,6 +4,37 @@
 
 ---
 
+## Version 5.29.150 (2026-03-06) - Phase 540: Suffix Atom Taxonomy
+
+### Summary
+
+Phase 540 decomposes the suffix layer at atom-level resolution using CategoryClassifier (8 categories) and morphological decomposition. 12 analyses (T1-T12) on 11,151 suffixed B tokens (35 unique suffixes, 13 single-char atoms). Verdict: suffix is a PARALLEL compositional domain -- same HEAD+TERM grammar as MIDDLE but compressed (13 vs 18 atoms, missing k/t ACTION HEADs and p/f/c EXECUTIVE MODs), with attenuated HEAD (V=0.277, 53% of MIDDLE) and amplified TERM (R2=0.059, 1.68x MIDDLE). MIDDLE terminal atom dominates suffix content selection (V=0.513 vs HEAD V=0.305). ALL 12 shared atoms carry DIFFERENT category info in suffix vs MIDDLE (mean JSD=0.526). Cross-system suffix atom inventory identical (A=B=13, JSD=0.050). Suffix modes confirmed at full 8-category resolution with positional asymmetry.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1510: Suffix parallel HEAD+TERM decomposition (first-atom V=0.277 53% HEAD, last-atom R2=0.059 1.68x TERM) |
+| **ADDED** | C1511: Suffix excludes ACTION HEAD and EXECUTIVE MOD atoms ({k,t} + {p,f,c}; action-free executive-free) |
+| **ADDED** | C1512: MIDDLE terminal dominates suffix content selection (V=0.513 vs HEAD V=0.305, 1.68x) |
+| **ADDED** | C1513: Suffix atoms universally divergent from MIDDLE atoms (12/12, mean JSD=0.526, n=1.000) |
+| **ADDED** | C1514: Cross-system suffix atom identity (A=B=13, JSD=0.050; B enriches d/e/i, A enriches o/h/l/s) |
+| **ADDED** | C1515: Suffix mode category anatomy with positional asymmetry (Mode A medial/specification, Mode B boundary/continuation) |
+| **ADDED** | `phases/SUFFIX_ATOM_TAXONOMY/scripts/suffix_atom_taxonomy.py` |
+| **ADDED** | `phases/SUFFIX_ATOM_TAXONOMY/results/suffix_atom_taxonomy.json` |
+| **ADDED** | `phases/SUFFIX_ATOM_TAXONOMY/REPORT.md` |
+| **UPDATED** | INDEX.md -- +6 constraints (1359 total) |
+| **CONFIRMED** | C1408 (suffix HEAD->TERM structure): quantified attenuation/amplification ratios |
+| **CONFIRMED** | C1409 (suffix atom divergence): extended to full 8-category profiles, ALL 12 divergent |
+| **CONFIRMED** | C1410 (suffix modes atom-level): extended to 8-category resolution with positional asymmetry |
+| **CONFIRMED** | C1440-C1445 (terminal opacity): h 98.7%, y 1.6%, n 0.8% suffix rates in suffix context |
+| **CONFIRMED** | C1499 (shared substrate): extended to suffix layer, identical inventories A=B |
+| **EXTENDED** | C1412 (MIDDLE terminal dominates suffix): atom-level confirmation V=0.513 |
+| **EXTENDED** | C1413 (PREFIX-SUFFIX MIDDLE-mediated): specifically through TERMINAL atom not HEAD |
+| **EXTENDED** | C1507 (A arrangement emphasis): A suffix also o-enriched 3.31x |
+
+---
+
 ## Version 5.28.144 (2026-03-06) - Phase 539: Bridge Atom Stability Across A and B
 
 ### Summary

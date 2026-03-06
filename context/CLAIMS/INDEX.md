@@ -5235,6 +5235,35 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 
 ---
 
+### Suffix Atom Taxonomy (C1510-C1515) -- Phase: SUFFIX_ATOM_TAXONOMY (Phase 540)
+
+> **Summary:** Phase 540 decomposes the suffix layer at atom-level resolution using CategoryClassifier (8 categories) and morphological decomposition. 12 analyses (T1-T12) on 11,151 suffixed B tokens (35 unique suffixes, 13 single-char atoms). Verdict: suffix is a PARALLEL compositional domain -- same HEAD+TERM grammar as MIDDLE, but with compressed inventory (13 vs 18 atoms, missing k/t ACTION HEADs and p/f/c EXECUTIVE MODs), attenuated HEAD category selectivity (V=0.277, 53% of MIDDLE HEAD's 0.520), and amplified TERM positional signal (R2=0.059, 1.68x MIDDLE TERM). MIDDLE terminal atom dominates suffix content selection (V=0.513, 1.68x stronger than MIDDLE HEAD at V=0.305). ALL 12 shared atoms carry DIFFERENT category information in suffix vs MIDDLE position (mean JSD=0.526; e most stable 0.202, n most divergent 1.000). Cross-system suffix atom inventory is IDENTICAL (A=B=13 atoms, JSD=0.050); B enriches execution atoms (d,e,i), A enriches arrangement atoms (o,h,l,s). Suffix modes confirmed at full 8-category resolution: Mode A = THERMAL/MONITORING/OPERATION/CONTAINMENT (medial), Mode B = FLOW/STAGING/TRANSITION (boundary-biased).
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1510 | Suffix parallel HEAD+TERM decomposition | 2 | B, suffix, atom, decomposition, HEAD, TERM, parallel | First-atom V=0.277 (53% of MIDDLE HEAD 0.520), last-atom R2=0.059 (1.68x MIDDLE TERM 0.035). 5 terminal atoms only: y 53.5%, n 19.5%, r 13.1%, l 10.8%, m 3.1%. m-terminal 7.89x line-final. |
+| 1511 | Suffix excludes ACTION HEAD and EXECUTIVE MOD atoms | 2 | B, suffix, atom, missing, HEAD, MOD, exclusion | Missing {k,t} = 2 ACTION HEADs + {p,f,c} = 3 EXEC MODs. All 5 also 0 TERMINAL in MIDDLE. Suffix is systematically action-free and executive-free. |
+| 1512 | MIDDLE terminal dominates suffix content (V=0.513) | 2 | B, MIDDLE, suffix, atom, terminal, gating, content | V(MIDDLE TERM x suffix first-atom) = 0.513 vs V(MIDDLE HEAD) = 0.305 (1.68x). h-terminal: 98.7% suffix, e-first 59.4%. r-terminal: a-first 72.8%. l-terminal: o-first 36.9%. |
+| 1513 | Suffix atoms universally divergent from MIDDLE atoms | 2 | B, suffix, MIDDLE, atom, behavioral, divergence, JSD | 12/12 atoms divergent, mean JSD=0.526. Most stable: e (0.202). Most divergent: n (1.000, TRANSITION->FLOW inversion). Same alphabet, different category semantics. |
+| 1514 | Cross-system suffix atom identity (A=B=13, JSD=0.050) | 2 | GLOBAL, suffix, atom, cross-system, identity | A=B=13 atoms, 0 exclusive. B enriches d (0.50x), e (0.41x), i (0.35x). A enriches o (3.31x), h (1.71x), l (1.67x), s (2.01x). Extends C1499 to suffix. |
+| 1515 | Suffix mode category anatomy with positional asymmetry | 2 | B, suffix, mode, category, positional, THERMAL, FLOW | Mode A: MONITORING 5.08x, CONTAINMENT 2.93x, OPERATION 2.95x, THERMAL 1.20x; medial (0.491). Mode B: FLOW 2.13x, STAGING 2.15x, TRANSITION 2.17x; boundary (0.514). |
+
+**Phase 540 findings (Suffix Atom Taxonomy, 12 analyses):**
+- T1: Census. 11,151 suffixed tokens (48.3%), 35 unique suffixes, top: -edy (1972), -dy (1000), -aiin (949). Atom-lengths: 1-atom 14.7%, 2-atom 51.7%, 3-atom 33.6%.
+- T2: Inventory. 13 atoms in suffix, missing {c,f,k,p,t}. 3 doubled: ee, ii, oo. All 5 missing have 0 TERMINAL in MIDDLE.
+- T3: First-atom category. V=0.277 (53% of MIDDLE HEAD 0.520). Top: a (36.1% THERMAL-dom), e (26.7% THERMAL-dom), d (10.5% OPERATION-dom).
+- T4: Last-atom position. R2=0.059 (1.68x MIDDLE TERM). 5 terminals: y 53.5%, n 19.5%, r 13.1%, l 10.8%, m 3.1%. m: mean pos 0.924, 7.89x final.
+- T5: PARALLEL_DECOMPOSITION verdict. First=category (V>last), last=position (R2>first). Ratios >1.3x on both axes.
+- T6: MIDDLE HEAD -> suffix first-atom. V=0.305. k-HEAD: a-first (1109), e-first (921). e-HEAD: a-first (735), e-first (705).
+- T7: MIDDLE TERMINAL -> suffix first-atom. V=0.513 (1.68x HEAD). h-term 98.7% suffix (e-first 59.4%). y-term 1.6%, n-term 0.8%.
+- T8: Mode A (N=5676): THERMAL 42.9%, MONITORING 5.8%, OPERATION 14.8%, CONTAINMENT 5.5%. Mode B (N=5454): FLOW 22.7%, STAGING 11.4%, TRANSITION 8.8%.
+- T9: Missing atoms = 2 ACTION HEADs {k,t} + 3 EXEC MODs {p,f,c}. Suffix = action-free, executive-free.
+- T10: A=B=13 atoms, JSD=0.050. B enriches e/i/d (execution). A enriches o/h/l/s (arrangement).
+- T11: All 12 atoms divergent MIDDLE vs suffix. Mean JSD=0.526. Most stable: e (0.202). Most divergent: n (1.000).
+- T12: Suffix atom pairwise JSD. Mean=0.108. Closest: ii-l (0.005). Most distant: ee-h (0.416). h maximally isolated.
+
+---
+
 ## Navigation
 
 ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)

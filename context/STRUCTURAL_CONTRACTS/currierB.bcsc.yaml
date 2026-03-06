@@ -3,7 +3,7 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.32"
+  version: "3.33"
   date: "2026-03-06"
   status: "ACTIVE"
   layer_type: "grammar contract"
@@ -190,7 +190,7 @@ guarantees:
 
   - id: "MIDDLE_INSTRUCTION_ENCODING"
     statement: "Compound MIDDLEs encode instructions as HEAD + MOD* + TERM: 18 atoms in 4 slot roles (5 HEAD, 6 MOD, 6 TERM, 2 dual). Fixed modifier ordering (p→f→i→c→d→s). Frame (HEAD+TERM) predicts 64% of operational category; modifiers shift remaining 36%. HEAD atoms define distinct operational domains (C1475): k=THERMAL 90.3%, t=FLOW 87.0%, a=FLOW+TRANSITION, e=THERMAL+OPERATION, o=STAGING+OPERATION. k-HEAD immunity is intrinsic (C1476, 0% in all contexts). a-HEAD is primary hazard carrier (C1477, 66%, quench-resistant). k/t are terminal-identical but categorically opposed (C1478). Each HEAD selects distinct modifiers creating a near-partition (C1479). TERMINAL atoms define exit conditions in three functional tiers (C1483-C1487): LOCKED (r=FLOW 98.9%, m=TRANSITION 87.9%), CHANNELED (l=STAGING 64.5%, y=OPERATION 40.6%, n=TRANSITION 39.3%), DIFFUSE (h=6 categories, bare=6 categories). TERMINAL x CATEGORY V=0.463 (2nd after HEAD). TERMINAL gates modifier selection: n takes only i, y takes only d, h takes {c,p,f,s} (C1484). HEAD-TERMINAL affinity creates compositional frames: e->y (72.7%), a->n/m (59-60%), k/t avoid n/m (C1485). Opacity and category specificity are orthogonal design axes. Headless compounds (20.5%, 3312 tokens, 469 types; C1488) form a coherent functional domain, NOT grab-bag infrastructure: initial atom acts as PSEUDO-HEAD (V=0.511; C1489) with d=CONTAINMENT 84%, i=STAGING 67%, p=MARKING 92%, f=MARKING 91%, r=FLOW 61%, c=OPERATION 32%. Headless terminal profile shifts: h 2.98x, n 2.45x enriched, LOCKED tier 6.2x depleted (structural hazard avoidance; C1490). PREFIX near-exclusive: da 2284x enriched, sa/ta headless-only, ok/ot near-absent (C1491). Suffix bifurcation: d/i bare (binary ops) vs c/p/f suffixed (parametric ops; C1492). 35.7% contain displaced HEAD atoms (C1493). Same modifier ordering grammar applies (61.9% vs 70.1%). Suffix is an independent compositional domain using same atom inventory (entropy 1.475 bits). TERMINAL gates suffix attachment via three-tier opacity gradient (OPAQUE y/m/n <5%, SEMI-TRANSPARENT l/r 17-20%, TRANSPARENT h 99%; C1440) with active exclusion (C1441). TERMINAL and suffix encode complementary category information (3.6x MI ratio, 8.2% redundancy; C1442)."
-    provenance: "C1393, C1394, C1440, C1441, C1442, C1443, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487, C1488, C1489, C1490, C1491, C1492, C1493"
+    provenance: "C1393, C1394, C1440, C1441, C1442, C1443, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487, C1488, C1489, C1490, C1491, C1492, C1493, C1510, C1511, C1512, C1513, C1514, C1515"
 
 # ============================================================
 invariants:
@@ -726,13 +726,21 @@ middle_instruction_encoding:
     provenance: "C1394 T1"
 
   suffix_compositional_structure:
-    statement: "Suffix decomposes as HEAD→TERM using 16-atom subset (missing k,t,p,f,c from MIDDLE inventory)"
+    statement: "Suffix is a PARALLEL compositional domain -- same HEAD+TERM grammar as MIDDLE but compressed (13 vs 18 atoms), with attenuated HEAD and amplified TERM"
+    atom_inventory: "13 single-char atoms {a,d,e,g,h,i,l,m,n,o,r,s,y}; MISSING {k,t} ACTION HEADs + {p,f,c} EXECUTIVE MODs; suffix is systematically action-free"
+    doubled_atoms: "ee, ii, oo (extensible atoms only)"
     ordering: "76.6% HEAD-initial, 100% TERM-terminal, zero violations"
     first_atom_category_V: 0.277
+    first_atom_attenuation: "53% of MIDDLE HEAD V=0.520 — category selection is present but weaker"
     last_atom_position_R2: 0.059
-    cross_position_divergence: "0/12 shared atoms maintain identical profiles between suffix and MIDDLE-terminal (JSD 0.004-0.560)"
-    mode_partition: "Mode A={d,e,ee,h,y} THERMAL/MONITORING; Mode B={a,i,ii,l,m,n,o,r,s} STAGING/FLOW"
-    provenance: "C1408, C1409, C1410"
+    last_atom_amplification: "1.68x MIDDLE TERM R2=0.035 — positional scope is amplified"
+    terminal_atoms: "5 only: y (53.5%), n (19.5%), r (13.1%), l (10.8%), m (3.1%); m-terminal 7.89x line-final"
+    middle_terminal_gating: "MIDDLE TERM atom V=0.513 dominates suffix content; HEAD V=0.305 (1.68x weaker); h-terminal 98.7% suffix (e-first 59.4%)"
+    cross_position_divergence: "ALL 12 shared atoms divergent MIDDLE vs suffix (mean JSD=0.526); e most stable (0.202), n most divergent (1.000 — complete categorical inversion)"
+    cross_system_identity: "A=B=13 atoms, 0 exclusive, JSD=0.050; B enriches d/e/i (execution), A enriches o/h/l/s (arrangement)"
+    mode_partition: "Mode A={d,e,ee,h,y} THERMAL/MONITORING/CONTAINMENT (medial 0.491); Mode B={a,i,ii,l,m,n,o,r,s} FLOW/STAGING/TRANSITION (boundary 0.514)"
+    mode_category_ratios: "Mode A vs B: MONITORING 5.08x, CONTAINMENT 2.93x, OPERATION 2.95x, THERMAL 1.20x; FLOW 0.47x, STAGING 0.46x, TRANSITION 0.46x"
+    provenance: "C1408, C1409, C1410, C1510, C1511, C1512, C1513, C1514, C1515"
 
   # Added v3.27: Two-level closure architecture (C1440-C1445)
   two_level_closure:

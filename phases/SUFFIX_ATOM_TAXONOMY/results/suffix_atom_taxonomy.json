@@ -1,0 +1,720 @@
+{
+  "T1": {
+    "n_suffixed_tokens": 11151,
+    "n_bare_tokens": 11945,
+    "n_unique_suffixes": 35,
+    "top_suffixes": [
+      [
+        "edy",
+        1972
+      ],
+      [
+        "dy",
+        1000
+      ],
+      [
+        "aiin",
+        949
+      ],
+      [
+        "hy",
+        854
+      ],
+      [
+        "ar",
+        829
+      ],
+      [
+        "ain",
+        741
+      ],
+      [
+        "y",
+        678
+      ],
+      [
+        "al",
+        660
+      ],
+      [
+        "eey",
+        593
+      ],
+      [
+        "ey",
+        498
+      ],
+      [
+        "s",
+        424
+      ],
+      [
+        "or",
+        408
+      ],
+      [
+        "r",
+        407
+      ],
+      [
+        "ol",
+        292
+      ],
+      [
+        "am",
+        234
+      ],
+      [
+        "iin",
+        115
+      ],
+      [
+        "ly",
+        108
+      ],
+      [
+        "l",
+        99
+      ],
+      [
+        "ry",
+        70
+      ],
+      [
+        "eol",
+        56
+      ],
+      [
+        "om",
+        33
+      ],
+      [
+        "im",
+        29
+      ],
+      [
+        "an",
+        25
+      ],
+      [
+        "g",
+        19
+      ],
+      [
+        "oiin",
+        18
+      ],
+      [
+        "eeol",
+        10
+      ],
+      [
+        "m",
+        8
+      ],
+      [
+        "er",
+        7
+      ],
+      [
+        "oin",
+        4
+      ],
+      [
+        "el",
+        4
+      ]
+    ],
+    "suffix_char_lengths": {
+      "1": 7,
+      "2": 17,
+      "3": 7,
+      "4": 4
+    },
+    "suffix_atom_lengths": {
+      "1": 1636,
+      "2": 5764,
+      "3": 3751
+    }
+  },
+  "T2": {
+    "n_single_atoms_in_suffix": 13,
+    "atoms_present": [
+      "a",
+      "d",
+      "e",
+      "g",
+      "h",
+      "i",
+      "l",
+      "m",
+      "n",
+      "o",
+      "r",
+      "s",
+      "y"
+    ],
+    "atoms_missing": [
+      "c",
+      "f",
+      "k",
+      "p",
+      "t"
+    ],
+    "doubled_atoms": [
+      "ee",
+      "ii",
+      "oo"
+    ],
+    "missing_atom_slots": {
+      "k": "HEAD",
+      "t": "HEAD",
+      "f": "MOD",
+      "p": "MOD",
+      "c": "MOD"
+    },
+    "suffix_atom_freq": {
+      "a": 3438,
+      "c": 0,
+      "d": 2972,
+      "e": 2541,
+      "ee": 603,
+      "f": 0,
+      "g": 19,
+      "h": 854,
+      "i": 774,
+      "ii": 1083,
+      "k": 0,
+      "l": 1231,
+      "m": 305,
+      "n": 1856,
+      "o": 821,
+      "oo": 2,
+      "p": 0,
+      "r": 1721,
+      "s": 424,
+      "t": 0,
+      "x": 0,
+      "y": 5773
+    },
+    "middle_atom_freq": {
+      "a": 3556,
+      "c": 2119,
+      "d": 4423,
+      "e": 9952,
+      "ee": 0,
+      "f": 216,
+      "g": 11,
+      "h": 1652,
+      "i": 4441,
+      "ii": 0,
+      "k": 4438,
+      "l": 3254,
+      "m": 299,
+      "n": 2159,
+      "o": 4460,
+      "oo": 0,
+      "p": 640,
+      "r": 2169,
+      "s": 568,
+      "t": 1498,
+      "x": 27,
+      "y": 4953
+    }
+  },
+  "T3": {
+    "n_multi_atom": 9515,
+    "first_atom_dist": {
+      "a": 3438,
+      "e": 2541,
+      "d": 1000,
+      "h": 854,
+      "o": 755,
+      "ee": 603,
+      "ii": 115,
+      "l": 108,
+      "r": 70,
+      "i": 29,
+      "oo": 2
+    },
+    "V_first_atom_x_category": 0.2773,
+    "first_atom_category_profiles": {
+      "a": {
+        "OPERATION": 128,
+        "TRANSITION": 108,
+        "MONITORING": 37,
+        "THERMAL": 1365,
+        "FLOW": 927,
+        "MARKING": 451,
+        "CONTAINMENT": 81,
+        "STAGING": 170
+      },
+      "d": {
+        "MARKING": 120,
+        "THERMAL": 119,
+        "TRANSITION": 196,
+        "CONTAINMENT": 24,
+        "STAGING": 115,
+        "OPERATION": 299,
+        "FLOW": 77,
+        "MONITORING": 41
+      },
+      "e": {
+        "MARKING": 254,
+        "FLOW": 277,
+        "THERMAL": 1535,
+        "OPERATION": 204,
+        "MONITORING": 115,
+        "STAGING": 48,
+        "CONTAINMENT": 84,
+        "TRANSITION": 2
+      },
+      "ee": {
+        "MARKING": 27,
+        "THERMAL": 444,
+        "MONITORING": 10,
+        "OPERATION": 21,
+        "CONTAINMENT": 18,
+        "STAGING": 14,
+        "FLOW": 52,
+        "TRANSITION": 4
+      },
+      "h": {
+        "FLOW": 79,
+        "MONITORING": 148,
+        "OPERATION": 202,
+        "THERMAL": 69,
+        "MARKING": 172,
+        "STAGING": 42,
+        "CONTAINMENT": 129,
+        "TRANSITION": 2
+      },
+      "i": {
+        "TRANSITION": 11,
+        "THERMAL": 6,
+        "STAGING": 6,
+        "MARKING": 5,
+        "FLOW": 1
+      },
+      "ii": {
+        "MARKING": 12,
+        "TRANSITION": 52,
+        "THERMAL": 4,
+        "STAGING": 29,
+        "FLOW": 5,
+        "OPERATION": 12
+      },
+      "l": {
+        "TRANSITION": 47,
+        "MARKING": 9,
+        "THERMAL": 21,
+        "FLOW": 8,
+        "OPERATION": 16,
+        "STAGING": 4,
+        "CONTAINMENT": 1
+      },
+      "o": {
+        "FLOW": 184,
+        "THERMAL": 256,
+        "MARKING": 90,
+        "STAGING": 140,
+        "OPERATION": 16,
+        "CONTAINMENT": 14,
+        "TRANSITION": 21,
+        "MONITORING": 20
+      },
+      "r": {
+        "TRANSITION": 23,
+        "MARKING": 8,
+        "STAGING": 13,
+        "FLOW": 4,
+        "OPERATION": 13,
+        "THERMAL": 8
+      }
+    }
+  },
+  "T4": {
+    "last_atom_dist": {
+      "y": 5095,
+      "n": 1855,
+      "r": 1244,
+      "l": 1024,
+      "m": 297
+    },
+    "last_atom_mean_position": {
+      "n": 0.4752,
+      "r": 0.4778,
+      "y": 0.4878,
+      "l": 0.4989,
+      "m": 0.9244
+    },
+    "R2_last_atom_position": 0.059,
+    "last_atom_final_enrichment": {
+      "y": 0.808,
+      "n": 0.701,
+      "r": 0.618,
+      "l": 0.963,
+      "m": 7.889
+    },
+    "base_final_rate": 0.1054
+  },
+  "T5": {
+    "V_first_atom_x_category": 0.2773,
+    "V_last_atom_x_category": 0.1628,
+    "R2_first_atom_position": 0.0216,
+    "R2_last_atom_position": 0.059,
+    "V_MIDDLE_HEAD_x_category": 0.5205,
+    "R2_MIDDLE_TERM_position": 0.0351,
+    "decomposition_verdict": "PARALLEL_DECOMPOSITION"
+  },
+  "T6": {
+    "V_midhead_x_sfx_first": 0.3047,
+    "mid_head_sfx_profiles": {
+      "a": {
+        "r": 150,
+        "a": 82,
+        "ii": 54,
+        "l": 45,
+        "d": 34
+      },
+      "e": {
+        "a": 735,
+        "e": 705,
+        "d": 278,
+        "h": 242,
+        "y": 218
+      },
+      "k": {
+        "a": 1109,
+        "e": 921,
+        "ee": 359,
+        "y": 184,
+        "d": 139
+      },
+      "o": {
+        "a": 400,
+        "d": 256,
+        "e": 212,
+        "h": 83,
+        "y": 73
+      },
+      "t": {
+        "a": 313,
+        "e": 260,
+        "y": 82,
+        "d": 60,
+        "o": 56
+      }
+    },
+    "headless_sfx_profile": {
+      "a": 799,
+      "e": 428,
+      "h": 411,
+      "o": 294,
+      "d": 233
+    }
+  },
+  "T7": {
+    "V_midterm_x_sfx_first": 0.5129,
+    "mid_term_suffix_rates": {
+      "bare": 0.8904,
+      "y": 0.0161,
+      "h": 0.9868,
+      "n": 0.0084,
+      "l": 0.1678,
+      "r": 0.1952,
+      "m": 0.0415
+    }
+  },
+  "T8": {
+    "n_mode_a": 5676,
+    "n_mode_b": 5454,
+    "cat_mode_a": {
+      "THERMAL": 2405,
+      "MARKING": 614,
+      "FLOW": 599,
+      "MONITORING": 327,
+      "OPERATION": 832,
+      "TRANSITION": 227,
+      "STAGING": 296,
+      "CONTAINMENT": 311
+    },
+    "cat_mode_b": {
+      "STAGING": 595,
+      "OPERATION": 263,
+      "TRANSITION": 462,
+      "MONITORING": 60,
+      "MARKING": 689,
+      "THERMAL": 1872,
+      "FLOW": 1189,
+      "CONTAINMENT": 99
+    },
+    "mode_a_mean_pos": 0.4909,
+    "mode_b_mean_pos": 0.5138,
+    "mode_a_line_initial": 0.0893,
+    "mode_b_line_initial": 0.1272,
+    "mode_a_line_final": 0.0846,
+    "mode_b_line_final": 0.1388
+  },
+  "T9": {
+    "missing_atoms": [
+      "c",
+      "f",
+      "k",
+      "p",
+      "t"
+    ],
+    "missing_atom_details": {
+      "c": {
+        "total_in_middle": 2119,
+        "as_head": 0,
+        "as_mod": 2096,
+        "as_term": 0
+      },
+      "f": {
+        "total_in_middle": 216,
+        "as_head": 0,
+        "as_mod": 215,
+        "as_term": 0
+      },
+      "k": {
+        "total_in_middle": 4438,
+        "as_head": 3100,
+        "as_mod": 1333,
+        "as_term": 0
+      },
+      "p": {
+        "total_in_middle": 640,
+        "as_head": 0,
+        "as_mod": 638,
+        "as_term": 0
+      },
+      "t": {
+        "total_in_middle": 1498,
+        "as_head": 921,
+        "as_mod": 575,
+        "as_term": 0
+      }
+    },
+    "missing_atom_functional_class": {
+      "k": "ACTION_HEAD",
+      "t": "ACTION_HEAD",
+      "p": "EXEC_MOD",
+      "f": "EXEC_MOD",
+      "c": "EXEC_MOD"
+    }
+  },
+  "T10": {
+    "a_suffixed_tokens": 4808,
+    "a_unique_suffixes": 33,
+    "a_atom_set": [
+      "a",
+      "d",
+      "e",
+      "g",
+      "h",
+      "i",
+      "l",
+      "m",
+      "n",
+      "o",
+      "r",
+      "s",
+      "y"
+    ],
+    "b_atom_set": [
+      "a",
+      "d",
+      "e",
+      "g",
+      "h",
+      "i",
+      "l",
+      "m",
+      "n",
+      "o",
+      "r",
+      "s",
+      "y"
+    ],
+    "a_only_atoms": [],
+    "b_only_atoms": [],
+    "cross_system_jsd": 0.0497,
+    "a_top_suffixes": [
+      [
+        "hy",
+        557
+      ],
+      [
+        "dy",
+        545
+      ],
+      [
+        "or",
+        482
+      ],
+      [
+        "y",
+        426
+      ],
+      [
+        "aiin",
+        408
+      ],
+      [
+        "ol",
+        354
+      ],
+      [
+        "s",
+        324
+      ],
+      [
+        "ey",
+        267
+      ],
+      [
+        "ar",
+        238
+      ],
+      [
+        "al",
+        176
+      ]
+    ],
+    "b_top_suffixes": [
+      [
+        "edy",
+        1972
+      ],
+      [
+        "dy",
+        1000
+      ],
+      [
+        "aiin",
+        949
+      ],
+      [
+        "hy",
+        854
+      ],
+      [
+        "ar",
+        829
+      ],
+      [
+        "ain",
+        741
+      ],
+      [
+        "y",
+        678
+      ],
+      [
+        "al",
+        660
+      ],
+      [
+        "eey",
+        593
+      ],
+      [
+        "ey",
+        498
+      ]
+    ]
+  },
+  "T11": {
+    "atom_category_jsd": {
+      "a": 0.4327,
+      "d": 0.6447,
+      "e": 0.2022,
+      "h": 0.5171,
+      "i": 0.4024,
+      "l": 0.4083,
+      "m": 0.5099,
+      "n": 1.0,
+      "o": 0.2225,
+      "r": 0.6969,
+      "s": 0.5994,
+      "y": 0.6708
+    },
+    "mean_jsd": 0.5256,
+    "most_stable": "e",
+    "most_divergent": "n"
+  },
+  "T12": {
+    "valid_atoms": [
+      "a",
+      "d",
+      "e",
+      "ee",
+      "h",
+      "i",
+      "ii",
+      "l",
+      "m",
+      "n",
+      "o",
+      "r",
+      "s",
+      "y"
+    ],
+    "closest_pairs": [
+      [
+        "ii",
+        "l",
+        0.0046
+      ],
+      [
+        "a",
+        "n",
+        0.005
+      ],
+      [
+        "l",
+        "n",
+        0.006
+      ],
+      [
+        "ii",
+        "n",
+        0.0073
+      ],
+      [
+        "i",
+        "n",
+        0.0109
+      ]
+    ],
+    "distant_pairs": [
+      [
+        "h",
+        "m",
+        0.3061
+      ],
+      [
+        "h",
+        "n",
+        0.3095
+      ],
+      [
+        "h",
+        "s",
+        0.3418
+      ],
+      [
+        "h",
+        "i",
+        0.3611
+      ],
+      [
+        "ee",
+        "h",
+        0.4157
+      ]
+    ],
+    "mean_pairwise_jsd": 0.1075
+  }
+}
