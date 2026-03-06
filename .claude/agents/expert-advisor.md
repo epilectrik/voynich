@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1337 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1349 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1498.
+the highest ID present is C1505.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1337 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1349 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1337 validated constraints are present as canonical one-line claims with tier
+1349 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-06 09:34
-**Version:** FROZEN STATE (1337 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-06 13:53
+**Version:** FROZEN STATE (1349 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1771,6 +1771,13 @@ C1495	HEAD-set atoms do not function as domain selectors when displaced	2	B, MID
 C1496	c-modifier primary displacement context	2	B, MIDDLE, headless, displaced, HEAD, c-modifier, k, t, ck, ct, context
 C1497	Displaced HEAD extreme suffix rate	2	B, MIDDLE, headless, displaced, HEAD, suffix, rate, morphology
 C1498	n/y-terminal categorical displacement exclusion	2	B, MIDDLE, headless, displaced, HEAD, terminal, n, y, bare, exclusion, gate
+C1499	Atom ontology manuscript-wide shared substrate	2	GLOBAL, MIDDLE, atom, substrate, cross-system, Jaccard
+C1500	Bridge-dark HEAD domain differentiation	2	B, A->B, MIDDLE, atom, bridge, dark, HEAD, differentiation
+C1501	Bridge terminal tier outlier	2	B, A->B, MIDDLE, atom, bridge, terminal, tier, outlier
+C1502	AZC o-HEAD domain enrichment (2.70x)	2	AZC, MIDDLE, atom, o-HEAD, enrichment, arrangement
+C1503	Bridge atom redistribution across A/B	2	GLOBAL, A->B, MIDDLE, atom, bridge, redistribution, suffix, PREFIX
+C1504	Modifier grammar universality across channels	2	GLOBAL, MIDDLE, atom, modifier, universality, cross-system
+C1505	Dark pipeline MARKING-dominant category profile	2	B, A->B, MIDDLE, atom, dark, pipeline, category, MARKING, bridge, balanced
 
 ---
 
@@ -4615,7 +4622,7 @@ Only Tier 0-2 structural findings are binding.
 ---
 
 ## BCSC (Currier B Structural Contract)
-**Meta:** v3.30, ACTIVE, 61.9% of tokens, 83 folios
+**Meta:** v3.31, ACTIVE, 61.9% of tokens, 83 folios
 
 ### Guarantees (35)
 - GRAMMAR_UNIVERSAL: 49-class grammar applies to all 83 folios without exception [C121, C124]
@@ -4693,13 +4700,13 @@ Only Tier 0-2 structural findings are binding.
 - safety_buffer_architecture: C997, C1000, C1009, C1018
 - axm_internal_architecture: C979, C1006, C1007, C1008, C1009, C1016, C1017, C1023
 - macro_state_transition_matrix: C1015
-- three_compression_architecture: C986, C1000, C1003, C1004, C1010, C1013, C1019, C1020, C1021, C1139, C1141, C1190, C1191
+- three_compression_architecture: C986, C1000, C1003, C1004, C1010, C1013, C1019, C1020, C1021, C1139, C1141, C1190, C1191, C1499, C1500, C1501, C1503, C1504, C1505
 - design_freedom: C121, C458, C929, C1016, C1017, C1018, C1163, C1165, C1169, C1179, C1180, C1181, C1182, C1183, C1184, C1185, C1186, C1187, C1188, C1189
 - control_loop: C807, C810, C811, C813, C814, C815, C816, C873, C1204, C1205, C1225, C1226, C1234, C1235, C1237, C1238
 - section_profiles: C551, C552, C553, C554, C555, C909, C1049, C1134
 - process_characterization: C1222, C1223, C1224
 - vocabulary_architecture: C121, C124, C506, C531, C532, C533, C535, C537, C959, C1013, C1016, C1035, C1134, C1135, C1136, C1137, C1139, C1140, C1146, C1149, C1150, C1151, C1152, C1153, C1154, C1155, C1156, C1157, C1158, C1159, C1160, C1161, C1162, C1163, C1164, C1165, C1166, C1167, C1168, C1169, C1431, C1432, C1433
-- ht_un_integration: C209, C404, C405, C475, C740, C742, C743, C744, C746, C747, C794, C795, C812, C870, C871, C872, C935, C1028, C1065, C1134, C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1175, C1176, C1177, C1178, C1254, C1255
+- ht_un_integration: C209, C404, C405, C475, C740, C742, C743, C744, C746, C747, C794, C795, C812, C870, C871, C872, C935, C1028, C1065, C1134, C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1175, C1176, C1177, C1178, C1254, C1255, C1499, C1500, C1501, C1502, C1505
 - robustness: C328, C329, C330, C331, C506, C908, C910, C911
 - operational_layer: C382, C588, C936, C1225, C1226, C1250, C1251, C1252, C1253
 - category_execution: C601, C929, C1169, C1184, C1268, C1277, C1278, C1279, C1280, C1281, C1282, C1283, C1285, C1286, C1287, C1288, C1289, C1290, C1291, C1292, C1293, C1294, C1297, C1298, C1299, C1300, C1301, C1302, C1303, C1304, C1305, C1306, C1307

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1337 validated constraints | **Version:** 5.25 | **Date:** 2026-03-06
+**Total:** 1349 validated constraints | **Version:** 5.27 | **Date:** 2026-03-06
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5154,6 +5154,7 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 
 ### Displaced HEAD Grammar (C1494-C1498) -- Phase: DISPLACED_HEAD_GRAMMAR (Phase 537)
 
+
 > **Summary:** Phase 537 resolves C1493's finding that 35.7% of headless compound MIDDLEs contain HEAD atoms {a,e,o,k,t} at non-initial positions. The verdict is HEAD_SET_CHARACTER_NOT_FUNCTIONING_AS_HEAD: displaced HEAD-set atoms are NOT functioning as domain selectors. The pseudo-HEAD (first atom) predicts category 2.68x better than the displaced HEAD (35.1% vs 13.1%, N=1,084). 0/5 displaced HEADs match their canonical category dominant. k/t are enriched 5.3x/6.9x (functioning as TERMINALS per C1478), e is depleted 0.26x (almost never terminal). c-modifier is the primary displacement context (87.1%), with ck/ct as the structural backbone. Suffix rate is extreme (89.8% vs 24.0% genuine headless). n/y-terminals categorically exclude displacement (0.36-0.39% rate). There is no alternative MOD+HEAD+TERM compositional order -- the headless domain is genuinely headless.
 
 | # | Constraint | Tier | Tags | Details |
@@ -5177,6 +5178,34 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T10: Predictors. c=87.1%, i=2.3% displacement rate. bare-terminal 83.9%, n/y <0.4%.
 - T11: Category prediction. Pseudo-HEAD 35.1% vs displaced HEAD 13.1% (2.68x). PSEUDO_HEAD_DOMINATES.
 - T12: Detailed comparison. 0/5 HEAD matches. 3/10 pseudo-HEAD matches. Pseudo controls category.
+
+---
+
+### Cross-Layer Atom Decomposition (C1499-C1505) -- Phase: CROSS_LAYER_ATOM_DECOMPOSITION (Phase 538)
+
+> **Summary:** Phase 538 tests whether the HEAD+MOD*+TERM atom grammar (C1393-C1394) is manuscript-wide or B-local, and whether bridge and dark pipeline MIDDLEs differ at atom-level slot composition. 10 tests across 7 pipeline channels: bridge (85), dark (300), a_exclusive (579), b_only (900), all_A (972), all_B (1293), all_AZC (617). Verdict: SHARED_SUBSTRATE_GRADED_SLOTS -- the atom grammar is manuscript-wide (minimum pairwise atom Jaccard 0.895, modifier JSD < 0.007 between non-bridge channels). Channels differentiate through slot PROPORTIONS, not slot INVENTORIES. Bridge is the systematic outlier across all three slot dimensions (HEAD, TERMINAL, MODIFIER), reflecting its unique dual-system role as dynamical backbone. Dark pipeline uses the same atoms in identification-optimized proportions: o-HEAD dominant (28.7% vs bridge 16.5%), bare/h-terminal dominant (74.7%/15.7%), full modifier complement. AZC shows strongest o-HEAD enrichment (31.8%, 2.70x vs B baseline). Bridge MIDDLEs undergo dramatic morphological redistribution between A and B contexts (suffix -edy ~50x B-enriched, PREFIX ct ~12x A-enriched). Predictions: 4/5 confirmed (P3 FAIL: dark prefers bare+DIFFUSE, not CHANNELED terminals).
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1499 | Atom ontology manuscript-wide shared substrate | 2 | GLOBAL, MIDDLE, atom, substrate, cross-system, Jaccard | Min pairwise Jaccard 0.895. HEAD JSD mean 0.0197 between non-bridge channels. All 7 channels share 18 core atoms. MOD JSD < 0.007. |
+| 1500 | Bridge-dark HEAD domain differentiation | 2 | B, A->B, MIDDLE, atom, bridge, dark, HEAD, differentiation | Bridge e/k/t 37.6% vs dark 31.0%. Dark o+headless 63.3% vs bridge 51.8%. HEAD JSD bridge-dark: 0.0237. Bridge = balanced execution; dark = arrangement/identification. |
+| 1501 | Bridge terminal tier outlier | 2 | B, A->B, MIDDLE, atom, bridge, terminal, tier, outlier | Bridge LOCKED 8.2%, CHANNELED 23.5%, bare 58.8%. Dark bare 74.7%, DIFFUSE/h 15.7%. TERM JSD bridge-to-others 0.039-0.082 (5-20x non-bridge). Dark uses transparent terminals for identification. |
+| 1502 | AZC o-HEAD domain enrichment (2.70x) | 2 | AZC, MIDDLE, atom, o-HEAD, enrichment, arrangement | o-HEAD 31.8% vs 11.8% B baseline (2.70x). k-HEAD 0.314x, t-HEAD 0.488x depleted. Extends C1381 to type level. AZC = arrangement-dominated, execution-depleted. |
+| 1503 | Bridge atom redistribution across A/B | 2 | GLOBAL, A->B, MIDDLE, atom, bridge, redistribution, suffix, PREFIX | Same 85 bridge MIDDLEs wrapped differently: -edy ~50x B-enriched, ct ~12x A-enriched, qo ~2x B-enriched. HEAD JSD A-vs-B weighted: 0.0767. |
+| 1504 | Modifier grammar universality across channels | 2 | GLOBAL, MIDDLE, atom, modifier, universality, cross-system | All channels same 6 modifiers {p,c,i,f,d,s}. c dominant everywhere. MOD JSD non-bridge < 0.007. Bridge outlier at 0.074-0.088 (lower rate 77.7%, f absent). |
+| 1505 | Dark pipeline MARKING-dominant category profile | 2 | B, A->B, MIDDLE, atom, dark, pipeline, category, MARKING, bridge, balanced | Bridge balanced V=0.4427 across 8 categories. Dark MARKING-dominant 36.0%, FLOW 20.2%, TRANSITION depleted 2.1%. Confirms C1264 at atom level. |
+
+**Phase 538 findings (Cross-Layer Atom Decomposition, 10 analyses):**
+- T-a: HEAD domain profiles. Bridge enriched in executable HEADs e/k/t (37.6%) vs dark (31.0%). Dark enriched in o-HEAD (28.7% vs 16.5%, 1.74x). AZC strongest o-HEAD (31.8%, 2.70x).
+- T-b: Terminal tier profiles. Bridge is TERM outlier (LOCKED 8.2%, CHANNELED 23.5%, bare 58.8%). Dark prefers bare (74.7%) + DIFFUSE/h (15.7%). TERM JSD bridge-to-others: 0.039-0.082.
+- T-c: Modifier profiles. All channels use same 6 modifiers. c dominant everywhere. MOD JSD between non-bridge: 0.002-0.007. Bridge outlier (0.074-0.088).
+- T-d: Headless rates. Bridge 35.3%, dark 34.7% -- virtually identical. A-exclusive highest 44.7%. AZC lowest 25.9%.
+- T-e: Category stability. Bridge balanced V=0.4427. Dark MARKING-dominant 36.0% with FLOW 20.2%, depleted TRANSITION 2.1%.
+- T-f: Bridge redistribution. Same MIDDLEs undergo dramatic morphological redistribution A vs B. -edy ~50x B-enriched, ct ~12x A-enriched. HEAD JSD=0.0767.
+- T-g: AZC HEAD enrichment. o-HEAD 2.70x, k-HEAD 0.314x, t-HEAD 0.488x. Confirms C1381, extends to type level.
+- T-h: JSD matrices. Bridge outlier in all three (HEAD, TERM, MOD). Non-bridge cluster tightly.
+- T-i: Compound depth. Bridge mean 2.27 atoms (simplest). Dark 3.33, a_exclusive 4.52, b_only 4.50.
+- T-j: Atom Jaccard similarity. Min pairwise 0.895. All channels share same 18-atom core.
 
 ---
 

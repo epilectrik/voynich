@@ -4,6 +4,36 @@
 
 ---
 
+## Version 5.27.140 (2026-03-06) - Phase 538: Cross-Layer Atom Decomposition
+
+### Summary
+
+Phase 538 tests whether the HEAD+MOD*+TERM atom grammar (C1393-C1394) is manuscript-wide or B-local, and whether bridge and dark pipeline MIDDLEs differ at atom-level slot composition. 10 tests across 7 pipeline channels (bridge 85, dark 300, a_exclusive 579, b_only 900, all_A 972, all_B 1293, all_AZC 617). Verdict: SHARED_SUBSTRATE_GRADED_SLOTS -- the atom ontology is manuscript-wide (minimum pairwise Jaccard 0.895, modifier JSD < 0.007 between non-bridge channels). Channels differentiate through slot PROPORTIONS, not slot INVENTORIES. Bridge is the systematic outlier across all three slot types (HEAD, TERMINAL, MODIFIER), reflecting its dual-system role as dynamical backbone. Dark pipeline uses the same atoms in identification-optimized proportions: o-HEAD dominant (28.7% vs bridge 16.5%), bare/h-terminal dominant (74.7%/15.7%), MARKING-dominant category (36.0%). AZC shows strongest o-HEAD enrichment of any channel (31.8%, 2.70x). Bridge MIDDLEs undergo dramatic morphological redistribution between A and B contexts (-edy ~50x B-enriched, ct ~12x A-enriched). Predictions: 4/5 confirmed (P3 FAIL: dark prefers bare+DIFFUSE/h terminals, NOT CHANNELED as predicted).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1499: Atom ontology manuscript-wide shared substrate (min Jaccard 0.895, all 7 channels share 18 atoms) |
+| **ADDED** | C1500: Bridge-dark HEAD domain differentiation (bridge e/k/t 37.6% vs dark 31.0%; dark o+headless 63.3%) |
+| **ADDED** | C1501: Bridge terminal tier outlier (LOCKED 8.2%, bare 58.8%; dark bare 74.7%, h 15.7%; TERM JSD 0.039-0.082) |
+| **ADDED** | C1502: AZC o-HEAD domain enrichment 2.70x (k 0.314x, t 0.488x depleted) |
+| **ADDED** | C1503: Bridge atom redistribution across A/B (-edy ~50x B-enriched, ct ~12x A-enriched, HEAD JSD 0.0767) |
+| **ADDED** | C1504: Modifier grammar universality across channels (same 6 modifiers, MOD JSD < 0.007 non-bridge) |
+| **ADDED** | C1505: Dark pipeline MARKING-dominant category profile (36.0% vs bridge balanced V=0.4427) |
+| **ADDED** | `phases/CROSS_LAYER_ATOM_DECOMPOSITION/scripts/cross_layer_atoms.py` |
+| **ADDED** | `phases/CROSS_LAYER_ATOM_DECOMPOSITION/results/cross_layer_atoms.json` |
+| **ADDED** | `phases/CROSS_LAYER_ATOM_DECOMPOSITION/REPORT.md` |
+| **UPDATED** | INDEX.md -- +7 constraints (1349 total) |
+| **UPDATED** | BCSC v3.31 -- bridge_dual_role updated with cross-system atom substrate findings, dark_pipeline_integration updated with atom-level category profile |
+| **CONFIRMED** | C1381 (o-initial AZC enrichment): extended to type-level at stronger effect (2.70x) |
+| **CONFIRMED** | C1264 (bridge vs dark category divergence): confirmed at full atom-decomposition level |
+| **CONFIRMED** | C1394 (instruction encoding architecture): modifier grammar proven manuscript-wide |
+| **CONFIRMED** | C1141 (dark compounds from bridge atoms): atom Jaccard 0.895 confirms shared substrate |
+| **EXTENDED** | C1347 (B reshapes bridge category usage): extended to atom and morphological wrapping level |
+
+---
+
 ## Version 5.26.133 (2026-03-06) - Phase 537: Displaced HEAD Grammar
 
 ### Summary

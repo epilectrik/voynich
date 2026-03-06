@@ -3,7 +3,7 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.30"
+  version: "3.31"
   date: "2026-03-06"
   status: "ACTIVE"
   layer_type: "grammar contract"
@@ -1882,6 +1882,16 @@ three_compression_architecture:
     (C1141) — dark-pipeline compounds are built FROM bridge atoms but share no
     complete MIDDLEs with bridges.
 
+    Phase 538 (C1499-C1505) established that the atom ontology is MANUSCRIPT-WIDE:
+    all 7 pipeline channels share the same 18-atom core (min Jaccard 0.895, C1499).
+    Modifier grammar is universal (JSD < 0.007 between non-bridge channels, C1504).
+    Channels differentiate through slot PROPORTIONS, not inventories. Bridge is the
+    systematic outlier across HEAD (enriched e/k/t 37.6% vs dark 31.0%, C1500),
+    TERMINAL (LOCKED 8.2% vs dark 3.7%, C1501), and MODIFIER distributions
+    (f absent, i elevated 30.2%, C1504). Same bridge MIDDLEs undergo dramatic
+    morphological redistribution between A and B contexts: -edy ~50x B-enriched,
+    ct ~12x A-enriched (C1503).
+
   atom_behavioral_basis: |
     Bridge atoms serve as building blocks (C1141) BECAUSE they carry genuine
     behavioral profiles that compose additively in MIDDLE position (C1190).
@@ -1893,7 +1903,7 @@ three_compression_architecture:
     atom substrates through behavioral composition, not arbitrary string
     concatenation.
 
-  provenance: "C1019, C1020, C1021, C1003, C1004, C1010, C1013, C1139, C1141, C1190, C1191"
+  provenance: "C1019, C1020, C1021, C1003, C1004, C1010, C1013, C1139, C1141, C1190, C1191, C1499, C1500, C1501, C1503, C1504"
 
 # ============================================================
 design_freedom:
@@ -2526,6 +2536,15 @@ ht_un_integration:
       curation_parallel: "Parallels C1028 (0.9% PREFIX×MIDDLE×SUFFIX occupancy)"
       phantom_middles: "15 B-absent ch/sh-initial MIDDLEs — morphologically isolated, dead naming pattern (C1178)"
       provenance: "C1175, C1176, C1177, C1178"
+    atom_level_category:
+      # Phase 538: CROSS_LAYER_ATOM_DECOMPOSITION (C1505)
+      statement: "Dark pipeline is MARKING-dominant (36.0%) with secondary FLOW (20.2%), depleted TRANSITION (2.1%)"
+      bridge_contrast: "Bridge balanced across 8 categories (V=0.4427); dark concentrated in 3"
+      head_profile: "Dark o+headless 63.3% vs bridge 51.8% — arrangement/identification dominated (C1500)"
+      terminal_profile: "Dark bare 74.7% + DIFFUSE/h 15.7% — transparent terminals for identification (C1501)"
+      azc_enrichment: "AZC o-HEAD 2.70x (strongest HEAD enrichment any channel, C1502)"
+      provenance: "C1499, C1500, C1501, C1502, C1505"
+
     category_generalization:
       # Phase 448: DARK_PIPELINE_CHARACTERIZATION (C1254)
       statement: "8 operational categories partially generalize to dark pipeline via atom plurality vote"

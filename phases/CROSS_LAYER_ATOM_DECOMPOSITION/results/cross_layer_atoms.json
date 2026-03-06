@@ -1,0 +1,1442 @@
+{
+  "phase": "CROSS_LAYER_ATOM_DECOMPOSITION",
+  "phase_number": 538,
+  "question": "Is HEAD+MOD*+TERM atom grammar manuscript-wide or B-local?",
+  "channel_counts": {
+    "bridge": 85,
+    "dark": 300,
+    "a_exclusive": 579,
+    "b_only": 900,
+    "all_A": 972,
+    "all_B": 1293,
+    "all_AZC": 617
+  },
+  "head_profiles": {
+    "bridge": {
+      "n_types": 85,
+      "counts": {
+        "a": 9,
+        "e": 16,
+        "o": 14,
+        "k": 10,
+        "t": 6,
+        "headless": 30
+      },
+      "distribution": {
+        "a": 0.1059,
+        "e": 0.1882,
+        "o": 0.1647,
+        "k": 0.1176,
+        "t": 0.0706,
+        "headless": 0.3529
+      },
+      "enrichment_vs_b": {
+        "a": 0.794,
+        "e": 0.621,
+        "o": 1.4,
+        "k": 0.877,
+        "t": 1.77,
+        "headless": 1.299
+      }
+    },
+    "dark": {
+      "n_types": 300,
+      "counts": {
+        "a": 17,
+        "e": 58,
+        "o": 86,
+        "k": 21,
+        "t": 14,
+        "headless": 104
+      },
+      "distribution": {
+        "a": 0.0567,
+        "e": 0.1933,
+        "o": 0.2867,
+        "k": 0.07,
+        "t": 0.0467,
+        "headless": 0.3467
+      },
+      "enrichment_vs_b": {
+        "a": 0.425,
+        "e": 0.638,
+        "o": 2.437,
+        "k": 0.522,
+        "t": 1.17,
+        "headless": 1.276
+      }
+    },
+    "a_exclusive": {
+      "n_types": 579,
+      "counts": {
+        "a": 30,
+        "e": 72,
+        "o": 160,
+        "k": 28,
+        "t": 30,
+        "headless": 259
+      },
+      "distribution": {
+        "a": 0.0518,
+        "e": 0.1244,
+        "o": 0.2763,
+        "k": 0.0484,
+        "t": 0.0518,
+        "headless": 0.4473
+      },
+      "enrichment_vs_b": {
+        "a": 0.389,
+        "e": 0.41,
+        "o": 2.349,
+        "k": 0.36,
+        "t": 1.299,
+        "headless": 1.646
+      }
+    },
+    "b_only": {
+      "n_types": 900,
+      "counts": {
+        "a": 76,
+        "e": 203,
+        "o": 172,
+        "k": 61,
+        "t": 40,
+        "headless": 348
+      },
+      "distribution": {
+        "a": 0.0844,
+        "e": 0.2256,
+        "o": 0.1911,
+        "k": 0.0678,
+        "t": 0.0444,
+        "headless": 0.3867
+      },
+      "enrichment_vs_b": {
+        "a": 0.633,
+        "e": 0.744,
+        "o": 1.625,
+        "k": 0.505,
+        "t": 1.115,
+        "headless": 1.423
+      }
+    },
+    "all_A": {
+      "n_types": 972,
+      "counts": {
+        "a": 56,
+        "e": 148,
+        "o": 264,
+        "k": 59,
+        "t": 50,
+        "headless": 395
+      },
+      "distribution": {
+        "a": 0.0576,
+        "e": 0.1523,
+        "o": 0.2716,
+        "k": 0.0607,
+        "t": 0.0514,
+        "headless": 0.4064
+      },
+      "enrichment_vs_b": {
+        "a": 0.432,
+        "e": 0.502,
+        "o": 2.309,
+        "k": 0.452,
+        "t": 1.29,
+        "headless": 1.495
+      }
+    },
+    "all_AZC": {
+      "n_types": 617,
+      "counts": {
+        "a": 53,
+        "e": 170,
+        "o": 196,
+        "k": 26,
+        "t": 12,
+        "headless": 160
+      },
+      "distribution": {
+        "a": 0.0859,
+        "e": 0.2755,
+        "o": 0.3177,
+        "k": 0.0421,
+        "t": 0.0194,
+        "headless": 0.2593
+      },
+      "enrichment_vs_b": {
+        "a": 0.644,
+        "e": 0.909,
+        "o": 2.7,
+        "k": 0.314,
+        "t": 0.488,
+        "headless": 0.954
+      }
+    },
+    "b_baseline": {
+      "n_tokens": 23096,
+      "distribution": {
+        "a": 0.1333,
+        "e": 0.3032,
+        "o": 0.1176,
+        "k": 0.1342,
+        "t": 0.0399,
+        "headless": 0.2718
+      }
+    }
+  },
+  "terminal_profiles": {
+    "bridge": {
+      "n_types": 85,
+      "counts": {
+        "y": 8,
+        "l": 5,
+        "r": 3,
+        "h": 8,
+        "m": 4,
+        "n": 7,
+        "bare": 50
+      },
+      "distribution": {
+        "y": 0.0941,
+        "l": 0.0588,
+        "r": 0.0353,
+        "h": 0.0941,
+        "m": 0.0471,
+        "n": 0.0824,
+        "bare": 0.5882
+      },
+      "enrichment_vs_b": {
+        "y": 0.455,
+        "l": 0.529,
+        "r": 0.415,
+        "h": 1.693,
+        "m": 3.761,
+        "n": 0.886,
+        "bare": 1.35
+      },
+      "tier_distribution": {
+        "LOCKED": 0.0824,
+        "CHANNELED": 0.2353,
+        "DIFFUSE": 0.0941,
+        "bare": 0.5882
+      }
+    },
+    "dark": {
+      "n_types": 300,
+      "counts": {
+        "y": 4,
+        "l": 12,
+        "r": 10,
+        "h": 47,
+        "m": 1,
+        "n": 2,
+        "bare": 224
+      },
+      "distribution": {
+        "y": 0.0133,
+        "l": 0.04,
+        "r": 0.0333,
+        "h": 0.1567,
+        "m": 0.0033,
+        "n": 0.0067,
+        "bare": 0.7467
+      },
+      "enrichment_vs_b": {
+        "y": 0.064,
+        "l": 0.36,
+        "r": 0.392,
+        "h": 2.818,
+        "m": 0.266,
+        "n": 0.072,
+        "bare": 1.713
+      },
+      "tier_distribution": {
+        "LOCKED": 0.0367,
+        "CHANNELED": 0.06,
+        "DIFFUSE": 0.1567,
+        "bare": 0.7467
+      }
+    },
+    "a_exclusive": {
+      "n_types": 579,
+      "counts": {
+        "y": 10,
+        "l": 34,
+        "r": 19,
+        "h": 64,
+        "m": 3,
+        "n": 5,
+        "bare": 444
+      },
+      "distribution": {
+        "y": 0.0173,
+        "l": 0.0587,
+        "r": 0.0328,
+        "h": 0.1105,
+        "m": 0.0052,
+        "n": 0.0086,
+        "bare": 0.7668
+      },
+      "enrichment_vs_b": {
+        "y": 0.083,
+        "l": 0.528,
+        "r": 0.386,
+        "h": 1.988,
+        "m": 0.414,
+        "n": 0.093,
+        "bare": 1.759
+      },
+      "tier_distribution": {
+        "LOCKED": 0.038,
+        "CHANNELED": 0.0846,
+        "DIFFUSE": 0.1105,
+        "bare": 0.7668
+      }
+    },
+    "b_only": {
+      "n_types": 900,
+      "counts": {
+        "y": 21,
+        "l": 31,
+        "r": 36,
+        "h": 131,
+        "m": 5,
+        "n": 5,
+        "bare": 671
+      },
+      "distribution": {
+        "y": 0.0233,
+        "l": 0.0344,
+        "r": 0.04,
+        "h": 0.1456,
+        "m": 0.0056,
+        "n": 0.0056,
+        "bare": 0.7456
+      },
+      "enrichment_vs_b": {
+        "y": 0.113,
+        "l": 0.31,
+        "r": 0.471,
+        "h": 2.618,
+        "m": 0.444,
+        "n": 0.06,
+        "bare": 1.711
+      },
+      "tier_distribution": {
+        "LOCKED": 0.0456,
+        "CHANNELED": 0.0633,
+        "DIFFUSE": 0.1456,
+        "bare": 0.7456
+      }
+    },
+    "all_A": {
+      "n_types": 972,
+      "counts": {
+        "y": 22,
+        "l": 51,
+        "r": 32,
+        "h": 121,
+        "m": 8,
+        "n": 14,
+        "bare": 724
+      },
+      "distribution": {
+        "y": 0.0226,
+        "l": 0.0525,
+        "r": 0.0329,
+        "h": 0.1245,
+        "m": 0.0082,
+        "n": 0.0144,
+        "bare": 0.7449
+      },
+      "enrichment_vs_b": {
+        "y": 0.109,
+        "l": 0.472,
+        "r": 0.388,
+        "h": 2.239,
+        "m": 0.658,
+        "n": 0.155,
+        "bare": 1.709
+      },
+      "tier_distribution": {
+        "LOCKED": 0.0412,
+        "CHANNELED": 0.0895,
+        "DIFFUSE": 0.1245,
+        "bare": 0.7449
+      }
+    },
+    "all_AZC": {
+      "n_types": 617,
+      "counts": {
+        "y": 23,
+        "l": 35,
+        "r": 27,
+        "h": 76,
+        "m": 9,
+        "n": 10,
+        "bare": 437
+      },
+      "distribution": {
+        "y": 0.0373,
+        "l": 0.0567,
+        "r": 0.0438,
+        "h": 0.1232,
+        "m": 0.0146,
+        "n": 0.0162,
+        "bare": 0.7083
+      },
+      "enrichment_vs_b": {
+        "y": 0.18,
+        "l": 0.51,
+        "r": 0.515,
+        "h": 2.216,
+        "m": 1.166,
+        "n": 0.174,
+        "bare": 1.625
+      },
+      "tier_distribution": {
+        "LOCKED": 0.0583,
+        "CHANNELED": 0.1102,
+        "DIFFUSE": 0.1232,
+        "bare": 0.7083
+      }
+    },
+    "b_baseline": {
+      "distribution": {
+        "y": 0.207,
+        "l": 0.1112,
+        "r": 0.0849,
+        "h": 0.0556,
+        "m": 0.0125,
+        "n": 0.093,
+        "bare": 0.4358
+      },
+      "tier_distribution": {
+        "LOCKED": 0.0975,
+        "CHANNELED": 0.4111,
+        "DIFFUSE": 0.0556,
+        "bare": 0.4358
+      }
+    }
+  },
+  "modifier_profiles": {
+    "bridge": {
+      "modifier_rate": 0.7765,
+      "counts": {
+        "p": 7,
+        "c": 20,
+        "i": 16,
+        "f": 0,
+        "d": 8,
+        "s": 2
+      },
+      "distribution": {
+        "p": 0.1321,
+        "c": 0.3774,
+        "i": 0.3019,
+        "f": 0.0,
+        "d": 0.1509,
+        "s": 0.0377
+      }
+    },
+    "dark": {
+      "modifier_rate": 0.9867,
+      "counts": {
+        "p": 28,
+        "c": 93,
+        "i": 45,
+        "f": 20,
+        "d": 59,
+        "s": 34
+      },
+      "distribution": {
+        "p": 0.1004,
+        "c": 0.3333,
+        "i": 0.1613,
+        "f": 0.0717,
+        "d": 0.2115,
+        "s": 0.1219
+      }
+    },
+    "a_exclusive": {
+      "modifier_rate": 0.9965,
+      "counts": {
+        "p": 73,
+        "c": 247,
+        "i": 111,
+        "f": 37,
+        "d": 170,
+        "s": 133
+      },
+      "distribution": {
+        "p": 0.0947,
+        "c": 0.3204,
+        "i": 0.144,
+        "f": 0.048,
+        "d": 0.2205,
+        "s": 0.1725
+      }
+    },
+    "b_only": {
+      "modifier_rate": 0.9967,
+      "counts": {
+        "p": 155,
+        "c": 330,
+        "i": 215,
+        "f": 83,
+        "d": 307,
+        "s": 177
+      },
+      "distribution": {
+        "p": 0.1223,
+        "c": 0.2605,
+        "i": 0.1697,
+        "f": 0.0655,
+        "d": 0.2423,
+        "s": 0.1397
+      }
+    },
+    "all_A": {
+      "modifier_rate": 0.9743,
+      "counts": {
+        "p": 108,
+        "c": 364,
+        "i": 173,
+        "f": 57,
+        "d": 238,
+        "s": 171
+      },
+      "distribution": {
+        "p": 0.0972,
+        "c": 0.3276,
+        "i": 0.1557,
+        "f": 0.0513,
+        "d": 0.2142,
+        "s": 0.1539
+      }
+    },
+    "all_AZC": {
+      "modifier_rate": 0.9627,
+      "counts": {
+        "p": 61,
+        "c": 189,
+        "i": 103,
+        "f": 39,
+        "d": 122,
+        "s": 111
+      },
+      "distribution": {
+        "p": 0.0976,
+        "c": 0.3024,
+        "i": 0.1648,
+        "f": 0.0624,
+        "d": 0.1952,
+        "s": 0.1776
+      }
+    },
+    "b_baseline": {
+      "modifier_rate": 0.9799,
+      "distribution": {
+        "p": 0.1182,
+        "c": 0.2782,
+        "i": 0.1724,
+        "f": 0.0641,
+        "d": 0.2334,
+        "s": 0.1338
+      }
+    }
+  },
+  "headless_rates": {
+    "bridge": {
+      "n_headless": 30,
+      "n_total": 85,
+      "headless_rate": 0.3529
+    },
+    "dark": {
+      "n_headless": 104,
+      "n_total": 300,
+      "headless_rate": 0.3467
+    },
+    "a_exclusive": {
+      "n_headless": 259,
+      "n_total": 579,
+      "headless_rate": 0.4473
+    },
+    "b_only": {
+      "n_headless": 348,
+      "n_total": 900,
+      "headless_rate": 0.3867
+    },
+    "all_A": {
+      "n_headless": 395,
+      "n_total": 972,
+      "headless_rate": 0.4064
+    },
+    "all_AZC": {
+      "n_headless": 160,
+      "n_total": 617,
+      "headless_rate": 0.2593
+    },
+    "b_baseline": {
+      "headless_rate": 0.3743
+    }
+  },
+  "category_stability": {
+    "head_category_map": {
+      "a": {
+        "total": 8,
+        "dominant_category": "TRANSITION",
+        "dominant_purity": 0.5,
+        "all_categories": {
+          "CONTAINMENT": 1,
+          "TRANSITION": 4,
+          "FLOW": 3
+        }
+      },
+      "e": {
+        "total": 16,
+        "dominant_category": "THERMAL",
+        "dominant_purity": 0.3125,
+        "all_categories": {
+          "THERMAL": 5,
+          "TRANSITION": 3,
+          "MONITORING": 1,
+          "FLOW": 1,
+          "STAGING": 1,
+          "OPERATION": 3,
+          "CONTAINMENT": 2
+        }
+      },
+      "o": {
+        "total": 13,
+        "dominant_category": "OPERATION",
+        "dominant_purity": 0.2308,
+        "all_categories": {
+          "OPERATION": 3,
+          "STAGING": 2,
+          "MARKING": 3,
+          "FLOW": 2,
+          "TRANSITION": 1,
+          "CONTAINMENT": 1,
+          "MONITORING": 1
+        }
+      },
+      "k": {
+        "total": 10,
+        "dominant_category": "THERMAL",
+        "dominant_purity": 0.5,
+        "all_categories": {
+          "TRANSITION": 1,
+          "STAGING": 2,
+          "THERMAL": 5,
+          "FLOW": 1,
+          "CONTAINMENT": 1
+        }
+      },
+      "t": {
+        "total": 6,
+        "dominant_category": "FLOW",
+        "dominant_purity": 0.8333,
+        "all_categories": {
+          "FLOW": 5,
+          "OPERATION": 1
+        }
+      },
+      "headless": {
+        "total": 29,
+        "dominant_category": "TRANSITION",
+        "dominant_purity": 0.2414,
+        "all_categories": {
+          "TRANSITION": 7,
+          "MONITORING": 5,
+          "FLOW": 2,
+          "MARKING": 6,
+          "STAGING": 6,
+          "OPERATION": 1,
+          "CONTAINMENT": 2
+        }
+      }
+    },
+    "bridge_head_a_vs_b": {
+      "jsd": 0.076676,
+      "a_weighted": {
+        "a": 0.0841,
+        "e": 0.1629,
+        "o": 0.2812,
+        "k": 0.0549,
+        "t": 0.0308,
+        "headless": 0.386
+      },
+      "b_weighted": {
+        "a": 0.1457,
+        "e": 0.3112,
+        "o": 0.1065,
+        "k": 0.142,
+        "t": 0.0383,
+        "headless": 0.2563
+      }
+    }
+  },
+  "channel_categories": {
+    "bridge": {
+      "n_classified": 82,
+      "classified_rate": 0.9647,
+      "counts": {
+        "OPERATION": 8,
+        "FLOW": 14,
+        "TRANSITION": 16,
+        "STAGING": 11,
+        "MONITORING": 7,
+        "MARKING": 9,
+        "THERMAL": 10,
+        "CONTAINMENT": 7
+      },
+      "distribution": {
+        "THERMAL": 0.122,
+        "FLOW": 0.1707,
+        "CONTAINMENT": 0.0854,
+        "STAGING": 0.1341,
+        "OPERATION": 0.0976,
+        "TRANSITION": 0.1951,
+        "MARKING": 0.1098,
+        "MONITORING": 0.0854
+      }
+    },
+    "dark": {
+      "n_classified": 292,
+      "classified_rate": 0.9733,
+      "counts": {
+        "FLOW": 59,
+        "CONTAINMENT": 2,
+        "TRANSITION": 6,
+        "MARKING": 105,
+        "THERMAL": 55,
+        "OPERATION": 31,
+        "STAGING": 28,
+        "MONITORING": 6
+      },
+      "distribution": {
+        "THERMAL": 0.1884,
+        "FLOW": 0.2021,
+        "CONTAINMENT": 0.0068,
+        "STAGING": 0.0959,
+        "OPERATION": 0.1062,
+        "TRANSITION": 0.0205,
+        "MARKING": 0.3596,
+        "MONITORING": 0.0205
+      }
+    },
+    "a_exclusive": {
+      "n_classified": 0,
+      "classified_rate": 0.0,
+      "counts": {},
+      "distribution": {
+        "THERMAL": 0.0,
+        "FLOW": 0.0,
+        "CONTAINMENT": 0.0,
+        "STAGING": 0.0,
+        "OPERATION": 0.0,
+        "TRANSITION": 0.0,
+        "MARKING": 0.0,
+        "MONITORING": 0.0
+      }
+    },
+    "b_only": {
+      "n_classified": 851,
+      "classified_rate": 0.9456,
+      "counts": {
+        "THERMAL": 204,
+        "MARKING": 307,
+        "STAGING": 122,
+        "FLOW": 109,
+        "OPERATION": 60,
+        "MONITORING": 16,
+        "TRANSITION": 33
+      },
+      "distribution": {
+        "THERMAL": 0.2397,
+        "FLOW": 0.1281,
+        "CONTAINMENT": 0.0,
+        "STAGING": 0.1434,
+        "OPERATION": 0.0705,
+        "TRANSITION": 0.0388,
+        "MARKING": 0.3608,
+        "MONITORING": 0.0188
+      }
+    },
+    "all_A": {
+      "n_classified": 382,
+      "classified_rate": 0.393,
+      "counts": {
+        "MARKING": 117,
+        "OPERATION": 39,
+        "TRANSITION": 22,
+        "MONITORING": 14,
+        "THERMAL": 67,
+        "STAGING": 39,
+        "FLOW": 75,
+        "CONTAINMENT": 9
+      },
+      "distribution": {
+        "THERMAL": 0.1754,
+        "FLOW": 0.1963,
+        "CONTAINMENT": 0.0236,
+        "STAGING": 0.1021,
+        "OPERATION": 0.1021,
+        "TRANSITION": 0.0576,
+        "MARKING": 0.3063,
+        "MONITORING": 0.0366
+      }
+    },
+    "all_AZC": {
+      "n_classified": 303,
+      "classified_rate": 0.4911,
+      "counts": {
+        "MARKING": 81,
+        "OPERATION": 33,
+        "THERMAL": 70,
+        "TRANSITION": 22,
+        "MONITORING": 14,
+        "STAGING": 34,
+        "FLOW": 41,
+        "CONTAINMENT": 8
+      },
+      "distribution": {
+        "THERMAL": 0.231,
+        "FLOW": 0.1353,
+        "CONTAINMENT": 0.0264,
+        "STAGING": 0.1122,
+        "OPERATION": 0.1089,
+        "TRANSITION": 0.0726,
+        "MARKING": 0.2673,
+        "MONITORING": 0.0462
+      }
+    }
+  },
+  "bridge_category_chi2": {
+    "chi2": 73.31,
+    "df": 7,
+    "cramers_v": 0.4427
+  },
+  "bridge_redistribution": {
+    "bridge_suffix_a": {
+      "bare": 6015,
+      "or": 381,
+      "dy": 370,
+      "hy": 339,
+      "aiin": 325,
+      "y": 317,
+      "ol": 278,
+      "s": 190,
+      "ar": 175,
+      "ey": 168,
+      "eey": 127,
+      "al": 117,
+      "r": 107,
+      "eol": 77,
+      "ly": 69,
+      "ain": 62,
+      "am": 50,
+      "om": 48,
+      "ry": 34,
+      "iin": 26
+    },
+    "bridge_suffix_b": {
+      "bare": 11546,
+      "edy": 1601,
+      "aiin": 773,
+      "dy": 704,
+      "ar": 650,
+      "ain": 633,
+      "hy": 559,
+      "al": 550,
+      "eey": 503,
+      "y": 481,
+      "or": 327,
+      "ey": 292,
+      "r": 289,
+      "s": 277,
+      "ol": 235,
+      "am": 167,
+      "iin": 77,
+      "l": 73,
+      "ly": 66,
+      "eol": 37
+    },
+    "bridge_prefix_a": {
+      "ch": 1850,
+      "BARE": 1366,
+      "sh": 1028,
+      "da": 1011,
+      "qo": 852,
+      "ok": 557,
+      "ot": 423,
+      "ct": 339,
+      "yk": 209,
+      "do": 177,
+      "ol": 163,
+      "tch": 163,
+      "dch": 141,
+      "kch": 126,
+      "so": 117,
+      "sa": 116,
+      "to": 115,
+      "ko": 92,
+      "ke": 90,
+      "ta": 68
+    },
+    "bridge_prefix_b": {
+      "qo": 3493,
+      "BARE": 3010,
+      "ch": 2992,
+      "sh": 2065,
+      "ok": 1362,
+      "ot": 1345,
+      "da": 993,
+      "ol": 790,
+      "lk": 401,
+      "sa": 305,
+      "lch": 303,
+      "yk": 274,
+      "te": 272,
+      "ke": 234,
+      "ta": 224,
+      "ka": 216,
+      "pch": 204,
+      "al": 161,
+      "tch": 158,
+      "or": 158
+    },
+    "a_total_tokens": 9391,
+    "b_total_tokens": 19998
+  },
+  "azc_head_profile": {
+    "type_level": {
+      "counts": {
+        "a": 53,
+        "e": 170,
+        "o": 196,
+        "k": 26,
+        "t": 12,
+        "headless": 160
+      },
+      "distribution": {
+        "a": 0.0859,
+        "e": 0.2755,
+        "o": 0.3177,
+        "k": 0.0421,
+        "t": 0.0194,
+        "headless": 0.2593
+      },
+      "enrichment_vs_b": {
+        "a": 0.644,
+        "e": 0.909,
+        "o": 2.7,
+        "k": 0.314,
+        "t": 0.488,
+        "headless": 0.954
+      }
+    },
+    "token_weighted": {
+      "distribution": {
+        "a": 0.1531,
+        "e": 0.3077,
+        "o": 0.224,
+        "k": 0.026,
+        "t": 0.0105,
+        "headless": 0.2786
+      }
+    },
+    "o_head_enrichment": 2.7
+  },
+  "jsd_matrices": {
+    "head_jsd": {
+      "a_exclusive": {
+        "a_exclusive": 0.0,
+        "all_A": 0.0024,
+        "all_AZC": 0.0492,
+        "all_B": 0.018,
+        "b_only": 0.0222,
+        "bridge": 0.0377,
+        "dark": 0.0117
+      },
+      "all_A": {
+        "a_exclusive": 0.0024,
+        "all_A": 0.0,
+        "all_AZC": 0.0347,
+        "all_B": 0.0086,
+        "b_only": 0.0126,
+        "bridge": 0.0253,
+        "dark": 0.0039
+      },
+      "all_AZC": {
+        "a_exclusive": 0.0492,
+        "all_A": 0.0347,
+        "all_AZC": 0.0,
+        "all_B": 0.0245,
+        "b_only": 0.0282,
+        "bridge": 0.0542,
+        "dark": 0.0192
+      },
+      "all_B": {
+        "a_exclusive": 0.018,
+        "all_A": 0.0086,
+        "all_AZC": 0.0245,
+        "all_B": 0.0,
+        "b_only": 0.0007,
+        "bridge": 0.0106,
+        "dark": 0.006
+      },
+      "b_only": {
+        "a_exclusive": 0.0222,
+        "all_A": 0.0126,
+        "all_AZC": 0.0282,
+        "all_B": 0.0007,
+        "b_only": 0.0,
+        "bridge": 0.0104,
+        "dark": 0.0106
+      },
+      "bridge": {
+        "a_exclusive": 0.0377,
+        "all_A": 0.0253,
+        "all_AZC": 0.0542,
+        "all_B": 0.0106,
+        "b_only": 0.0104,
+        "bridge": 0.0,
+        "dark": 0.0237
+      },
+      "dark": {
+        "a_exclusive": 0.0117,
+        "all_A": 0.0039,
+        "all_AZC": 0.0192,
+        "all_B": 0.006,
+        "b_only": 0.0106,
+        "bridge": 0.0237,
+        "dark": 0.0
+      }
+    },
+    "term_jsd": {
+      "a_exclusive": {
+        "a_exclusive": 0.0,
+        "all_A": 0.0016,
+        "all_AZC": 0.0069,
+        "all_B": 0.0047,
+        "b_only": 0.005,
+        "bridge": 0.0689,
+        "dark": 0.0047
+      },
+      "all_A": {
+        "a_exclusive": 0.0016,
+        "all_A": 0.0,
+        "all_AZC": 0.0029,
+        "all_B": 0.0019,
+        "b_only": 0.0039,
+        "bridge": 0.0552,
+        "dark": 0.0046
+      },
+      "all_AZC": {
+        "a_exclusive": 0.0069,
+        "all_A": 0.0029,
+        "all_AZC": 0.0,
+        "all_B": 0.0044,
+        "b_only": 0.0077,
+        "bridge": 0.0389,
+        "dark": 0.0119
+      },
+      "all_B": {
+        "a_exclusive": 0.0047,
+        "all_A": 0.0019,
+        "all_AZC": 0.0044,
+        "all_B": 0.0,
+        "b_only": 0.0009,
+        "bridge": 0.0606,
+        "dark": 0.0027
+      },
+      "b_only": {
+        "a_exclusive": 0.005,
+        "all_A": 0.0039,
+        "all_AZC": 0.0077,
+        "all_B": 0.0009,
+        "b_only": 0.0,
+        "bridge": 0.0722,
+        "dark": 0.0018
+      },
+      "bridge": {
+        "a_exclusive": 0.0689,
+        "all_A": 0.0552,
+        "all_AZC": 0.0389,
+        "all_B": 0.0606,
+        "b_only": 0.0722,
+        "bridge": 0.0,
+        "dark": 0.0822
+      },
+      "dark": {
+        "a_exclusive": 0.0047,
+        "all_A": 0.0046,
+        "all_AZC": 0.0119,
+        "all_B": 0.0027,
+        "b_only": 0.0018,
+        "bridge": 0.0822,
+        "dark": 0.0
+      }
+    },
+    "mod_jsd": {
+      "a_exclusive": {
+        "a_exclusive": 0.0,
+        "all_A": 0.0007,
+        "all_AZC": 0.002,
+        "all_B": 0.0057,
+        "b_only": 0.0069,
+        "bridge": 0.087,
+        "dark": 0.0054
+      },
+      "all_A": {
+        "a_exclusive": 0.0007,
+        "all_A": 0.0,
+        "all_AZC": 0.0018,
+        "all_B": 0.0038,
+        "b_only": 0.0055,
+        "bridge": 0.0772,
+        "dark": 0.0026
+      },
+      "all_AZC": {
+        "a_exclusive": 0.002,
+        "all_A": 0.0018,
+        "all_AZC": 0.0,
+        "all_B": 0.0046,
+        "b_only": 0.0057,
+        "bridge": 0.0884,
+        "dark": 0.0048
+      },
+      "all_B": {
+        "a_exclusive": 0.0057,
+        "all_A": 0.0038,
+        "all_AZC": 0.0046,
+        "all_B": 0.0,
+        "b_only": 0.0004,
+        "bridge": 0.0777,
+        "dark": 0.0032
+      },
+      "b_only": {
+        "a_exclusive": 0.0069,
+        "all_A": 0.0055,
+        "all_AZC": 0.0057,
+        "all_B": 0.0004,
+        "b_only": 0.0,
+        "bridge": 0.0844,
+        "dark": 0.0054
+      },
+      "bridge": {
+        "a_exclusive": 0.087,
+        "all_A": 0.0772,
+        "all_AZC": 0.0884,
+        "all_B": 0.0777,
+        "b_only": 0.0844,
+        "bridge": 0.0,
+        "dark": 0.0745
+      },
+      "dark": {
+        "a_exclusive": 0.0054,
+        "all_A": 0.0026,
+        "all_AZC": 0.0048,
+        "all_B": 0.0032,
+        "b_only": 0.0054,
+        "bridge": 0.0745,
+        "dark": 0.0
+      }
+    }
+  },
+  "compound_depth": {
+    "bridge": {
+      "n_types": 85,
+      "mean_length": 2.27,
+      "compound_rate": 0.3647,
+      "n_unique_atoms": 18,
+      "atoms": [
+        "a",
+        "c",
+        "d",
+        "e",
+        "g",
+        "h",
+        "i",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "y"
+      ]
+    },
+    "dark": {
+      "n_types": 300,
+      "mean_length": 3.33,
+      "compound_rate": 0.7967,
+      "n_unique_atoms": 18,
+      "atoms": [
+        "a",
+        "c",
+        "d",
+        "e",
+        "f",
+        "h",
+        "i",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "y"
+      ]
+    },
+    "a_exclusive": {
+      "n_types": 579,
+      "mean_length": 4.52,
+      "compound_rate": 0.9603,
+      "n_unique_atoms": 18,
+      "atoms": [
+        "a",
+        "c",
+        "d",
+        "e",
+        "f",
+        "h",
+        "i",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "y"
+      ]
+    },
+    "b_only": {
+      "n_types": 900,
+      "mean_length": 4.5,
+      "compound_rate": 0.9478,
+      "n_unique_atoms": 20,
+      "atoms": [
+        "a",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "x",
+        "y"
+      ]
+    },
+    "all_A": {
+      "n_types": 972,
+      "mean_length": 3.95,
+      "compound_rate": 0.856,
+      "n_unique_atoms": 19,
+      "atoms": [
+        "a",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "y"
+      ]
+    },
+    "all_B": {
+      "n_types": 1293,
+      "mean_length": 4.07,
+      "compound_rate": 0.8732,
+      "n_unique_atoms": 20,
+      "atoms": [
+        "a",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "x",
+        "y"
+      ]
+    },
+    "all_AZC": {
+      "n_types": 617,
+      "mean_length": 3.87,
+      "compound_rate": 0.799,
+      "n_unique_atoms": 20,
+      "atoms": [
+        "a",
+        "c",
+        "d",
+        "e",
+        "f",
+        "g",
+        "h",
+        "i",
+        "k",
+        "l",
+        "m",
+        "n",
+        "o",
+        "p",
+        "q",
+        "r",
+        "s",
+        "t",
+        "x",
+        "y"
+      ]
+    },
+    "atom_jaccard": {
+      "a_exclusive": {
+        "a_exclusive": 1.0,
+        "all_A": 0.947,
+        "all_AZC": 0.9,
+        "all_B": 0.9,
+        "b_only": 0.9,
+        "bridge": 0.895,
+        "dark": 1.0
+      },
+      "all_A": {
+        "a_exclusive": 0.947,
+        "all_A": 1.0,
+        "all_AZC": 0.95,
+        "all_B": 0.95,
+        "b_only": 0.95,
+        "bridge": 0.947,
+        "dark": 0.947
+      },
+      "all_AZC": {
+        "a_exclusive": 0.9,
+        "all_A": 0.95,
+        "all_AZC": 1.0,
+        "all_B": 1.0,
+        "b_only": 1.0,
+        "bridge": 0.9,
+        "dark": 0.9
+      },
+      "all_B": {
+        "a_exclusive": 0.9,
+        "all_A": 0.95,
+        "all_AZC": 1.0,
+        "all_B": 1.0,
+        "b_only": 1.0,
+        "bridge": 0.9,
+        "dark": 0.9
+      },
+      "b_only": {
+        "a_exclusive": 0.9,
+        "all_A": 0.95,
+        "all_AZC": 1.0,
+        "all_B": 1.0,
+        "b_only": 1.0,
+        "bridge": 0.9,
+        "dark": 0.9
+      },
+      "bridge": {
+        "a_exclusive": 0.895,
+        "all_A": 0.947,
+        "all_AZC": 0.9,
+        "all_B": 0.9,
+        "b_only": 0.9,
+        "bridge": 1.0,
+        "dark": 0.895
+      },
+      "dark": {
+        "a_exclusive": 1.0,
+        "all_A": 0.947,
+        "all_AZC": 0.9,
+        "all_B": 0.9,
+        "b_only": 0.9,
+        "bridge": 0.895,
+        "dark": 1.0
+      }
+    }
+  },
+  "predictions": {
+    "P1": {
+      "description": "Bridge enriched in e/k/t HEADs (executable backbone)",
+      "bridge_ekt": 0.3764,
+      "dark_ekt": 0.31,
+      "pass": true
+    },
+    "P2": {
+      "description": "Dark enriched in o-HEAD and headless (identification substrate)",
+      "dark_o_headless": 0.6334,
+      "bridge_o_headless": 0.5176,
+      "pass": true
+    },
+    "P3": {
+      "description": "Dark prefers transparent/channeled terminals (h, n, y)",
+      "dark_diffuse_channeled": 0.2167,
+      "bridge_diffuse_channeled": 0.3294,
+      "pass": false
+    },
+    "P4": {
+      "description": "Bridge tolerates more locked terminals (m, r)",
+      "bridge_locked": 0.0824,
+      "dark_locked": 0.0367,
+      "pass": true
+    },
+    "P5": {
+      "description": "Dark = same atoms, different slot proportions (non-executable nominalization)",
+      "atom_jaccard": 0.895,
+      "head_jsd": 0.0237,
+      "term_jsd": 0.0822,
+      "mod_jsd": 0.0745,
+      "pass": true
+    }
+  },
+  "prediction_summary": "4/5"
+}
