@@ -3,8 +3,8 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.28"
-  date: "2026-03-05"
+  version: "3.29"
+  date: "2026-03-06"
   status: "ACTIVE"
   layer_type: "grammar contract"
   derived_from: "Tier 0-2 constraints (structural); Tier 3 operational layer clearly marked"
@@ -189,8 +189,8 @@ guarantees:
     provenance: "C404, C935"
 
   - id: "MIDDLE_INSTRUCTION_ENCODING"
-    statement: "Compound MIDDLEs encode instructions as HEAD + MOD* + TERM: 18 atoms in 4 slot roles (5 HEAD, 6 MOD, 6 TERM, 2 dual). Fixed modifier ordering (p→f→i→c→d→s). Frame (HEAD+TERM) predicts 64% of operational category; modifiers shift remaining 36%. HEAD atoms define distinct operational domains (C1475): k=THERMAL 90.3%, t=FLOW 87.0%, a=FLOW+TRANSITION, e=THERMAL+OPERATION, o=STAGING+OPERATION; headless=infrastructure. k-HEAD immunity is intrinsic (C1476, 0% in all contexts). a-HEAD is primary hazard carrier (C1477, 66%, quench-resistant). k/t are terminal-identical but categorically opposed (C1478). Each HEAD selects distinct modifiers creating a near-partition (C1479). Headless compounds (20.6%) form a specialized infrastructure subgrammar. h-terminal is transparent (HEAD+MODS reach V=0.988). Suffix is an independent compositional domain using the same atom inventory (entropy 1.475 bits). TERMINAL atom gates suffix attachment via a three-tier opacity gradient (OPAQUE y/m/n <5%, SEMI-TRANSPARENT l/r 17-20%, TRANSPARENT h 99%; C1440) with active exclusion (C1441) and 17 forbidden TERMINAL x suffix-head pairs (C1443). TERMINAL and suffix encode complementary category information (3.6x MI ratio, 8.2% redundancy; C1442)."
-    provenance: "C1393, C1394, C1440, C1441, C1442, C1443, C1475, C1476, C1477, C1478, C1479"
+    statement: "Compound MIDDLEs encode instructions as HEAD + MOD* + TERM: 18 atoms in 4 slot roles (5 HEAD, 6 MOD, 6 TERM, 2 dual). Fixed modifier ordering (p→f→i→c→d→s). Frame (HEAD+TERM) predicts 64% of operational category; modifiers shift remaining 36%. HEAD atoms define distinct operational domains (C1475): k=THERMAL 90.3%, t=FLOW 87.0%, a=FLOW+TRANSITION, e=THERMAL+OPERATION, o=STAGING+OPERATION; headless=infrastructure. k-HEAD immunity is intrinsic (C1476, 0% in all contexts). a-HEAD is primary hazard carrier (C1477, 66%, quench-resistant). k/t are terminal-identical but categorically opposed (C1478). Each HEAD selects distinct modifiers creating a near-partition (C1479). TERMINAL atoms define exit conditions in three functional tiers (C1483-C1487): LOCKED (r=FLOW 98.9%, m=TRANSITION 87.9%), CHANNELED (l=STAGING 64.5%, y=OPERATION 40.6%, n=TRANSITION 39.3%), DIFFUSE (h=6 categories, bare=6 categories). TERMINAL x CATEGORY V=0.463 (2nd after HEAD). TERMINAL gates modifier selection: n takes only i, y takes only d, h takes {c,p,f,s} (C1484). HEAD-TERMINAL affinity creates compositional frames: e->y (72.7%), a->n/m (59-60%), k/t avoid n/m (C1485). Opacity and category specificity are orthogonal design axes. Headless compounds (20.6%) form specialized infrastructure subgrammar. Suffix is an independent compositional domain using same atom inventory (entropy 1.475 bits). TERMINAL gates suffix attachment via three-tier opacity gradient (OPAQUE y/m/n <5%, SEMI-TRANSPARENT l/r 17-20%, TRANSPARENT h 99%; C1440) with active exclusion (C1441). TERMINAL and suffix encode complementary category information (3.6x MI ratio, 8.2% redundancy; C1442)."
+    provenance: "C1393, C1394, C1440, C1441, C1442, C1443, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487"
 
 # ============================================================
 invariants:
@@ -633,13 +633,14 @@ middle_instruction_encoding:
       e: "37% OPERATION (most versatile HEAD)"
       o: "35% STAGING"
     terminal_category_dominance:
-      r: "99% FLOW (nearly deterministic)"
-      m: "87% TRANSITION"
-      n: "64% TRANSITION"
-      y: "56% OPERATION"
-      l: "47% STAGING"
-      h: "transparent — category determined by HEAD+MODS (V=0.988)"
-    provenance: "C1394 T5"
+      r: "98.9% FLOW (LOCKED, norm_entropy=0.036)"
+      m: "87.9% TRANSITION (LOCKED, norm_entropy=0.211)"
+      l: "64.5% STAGING (CHANNELED, norm_entropy=0.456)"
+      y: "40.6% OPERATION (CHANNELED, norm_entropy=0.631)"
+      n: "39.3% TRANSITION (CHANNELED, norm_entropy=0.652)"
+      h: "30.0% MARKING, DIFFUSE across 6 categories (norm_entropy=0.844)"
+      bare: "43.2% THERMAL, DIFFUSE across 6 categories (norm_entropy=0.818)"
+    provenance: "C1394 T5, C1483, C1487"
 
   modifier_category_effects:
     statement: "Each modifier has a consistent, statistically significant effect on instruction category"
@@ -836,8 +837,33 @@ middle_instruction_encoding:
       broad HEAD, and FQ macro-state context (C1474).
     s reliably late, p reliably early; interior {c,d,f,i} weakly ordered.
     Frame predicts 64% of category; modifiers shift remaining 36%.
+    TERMINAL functional taxonomy (C1483-C1487):
+      Three functional tiers by category specificity:
+        LOCKED (1-2 categories):
+          r = FLOW 98.9% (norm_entropy 0.036) — flow routing terminal
+          m = TRANSITION 87.9% (norm_entropy 0.211) — closure valve terminal
+        CHANNELED (3-4 categories):
+          l = STAGING 64.5% — staging/state terminal
+          y = OPERATION 40.6% + CONTAINMENT + TRANSITION — work completion terminal
+          n = TRANSITION 39.3% + STAGING + MARKING — iteration binding terminal
+        DIFFUSE (5-6 categories):
+          h = MARKING 30.0% across 6 categories — transparent monitoring terminal
+          bare = THERMAL 43.2% across 6 categories — default operational terminal
+      TERMINAL x CATEGORY V=0.463 (2nd strongest after HEAD).
+      Opacity is ORTHOGONAL to category specificity:
+        r is SEMI-TRANSPARENT (19.3% suffix) but LOCKED to FLOW.
+        h is TRANSPARENT (98.7% suffix) but DIFFUSE across 6 categories.
+      TERMINAL modifier exclusivity (C1484):
+        n takes ONLY i (8.606x, zero others). y takes ONLY d (2.868x).
+        h takes {c,p,f,s} (5-9x each). l/r/m resist modification (<5%).
+        HEAD + TERMINAL jointly gate the modifier palette.
+      HEAD-TERMINAL affinity partition (C1485):
+        e locks to y-terminal (72.7%, 3,475 tokens).
+        a locks to n/m-terminal (59-60%).
+        k/t categorically avoid n,m terminals (0-1 tokens each).
+      Hazard axis: y sources 90.9% of violations, n absorbs 90.9%.
 
-  provenance: "C1393, C1394, C1472, C1473, C1474, C1475, C1476, C1477, C1478, C1479"
+  provenance: "C1393, C1394, C1472, C1473, C1474, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487"
 
 # ============================================================
 
@@ -2879,6 +2905,8 @@ provenance:
     - "C1480"  # i-modifier Simpson's paradox full resolution (selection +0.319, conditional -0.388)
     - "C1481"  # i-modifier terminal transformation within a-HEAD (n-term 1.2%→82.1%)
     - "C1482"  # Double-ii safety via TRANSITION-locked n-terminal (0.0%, monotonic gradient)
+    - "C1483"  # TERMINAL category specificity gradient (hazard axis: y=source 90.9%, n=target 90.9%)
+    - "C1485"  # HEAD-TERMINAL affinity partition (k/t avoid hazard-carrying n/m terminals)
 
   program_line:
     - "C357"   # Lines deliberately chunked
@@ -2908,6 +2936,19 @@ provenance:
     - "C1398"  # Paragraph operational gradient (continuous space, 4 zones, section V=0.408, REGIME V=0.371, C1378 connection)
     - "C1399"  # Paragraph ordering null (7/8 FAIL, zone inertia O/E=2.02, no sequence)
     - "C1400"  # Paragraph state-independent ordering (0/8 PASS, thermal continuity is shared environment, folio-mode baseline 0.685)
+    - "C1472"  # Modifier co-occurrence avoidance dominates ordering (8/15 pairs never co-occur)
+    - "C1473"  # Modifier avoidance is frame incompatibility (HEAD+TERM gate modifier palette)
+    - "C1474"  # s-modifier universal connector (co-occurs with all other modifiers)
+    - "C1475"  # HEAD atom categorical domain differentiation (V=0.553, 5 HEAD atoms)
+    - "C1476"  # k-HEAD intrinsic hazard immunity (0.0% across all compositional contexts)
+    - "C1477"  # a-HEAD quench-resistant hazard concentration (66.0% forbidden)
+    - "C1478"  # k/t terminal mirror (identical terminals, opposite categories)
+    - "C1479"  # HEAD modifier selectivity partition (each HEAD selects distinct modifier profile)
+    - "C1483"  # TERMINAL category specificity gradient (V=0.463, r=FLOW 98.9% to h=diffuse 6 categories)
+    - "C1484"  # TERMINAL modifier exclusivity (n=i-only, y=d-only, h={c,p,f,s}, l/r/m resist modification)
+    - "C1485"  # TERMINAL HEAD affinity partition (e->y 72.7%, a->n/m 59-60%, k/t avoid n/m)
+    - "C1486"  # m-terminal line-final closure (73.7% line-final, 87.9% TRANSITION, confirms C1434-C1439)
+    - "C1487"  # Six-terminal functional taxonomy (LOCKED r/m, CHANNELED l/y/n, DIFFUSE h/bare)
 
   link:
     - "C334"   # LINK section conditioning

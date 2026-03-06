@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1326 constraints | 2026-03-05
+CONSTRAINT_REFERENCE v2.6 | 1331 constraints | 2026-03-06
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1330,3 +1330,8 @@ C1479	HEAD-modifier selectivity partition	2	B, MIDDLE, atom, HEAD, modifier, sel
 C1480	i-modifier Simpson's paradox full resolution	2	B, MIDDLE, atom, i-modifier, Simpson, hazard, HEAD, selection, resolution	Total=-0.069 (i safer). Selection=+0.319, Conditional=-0.388. CF: avg HEAD dist -> 10.1%. Within a-HEAD: 5/5 protective, delta=-0.536.
 C1481	i-modifier terminal transformation within a-HEAD	2	B, MIDDLE, atom, i-modifier, a-HEAD, terminal, transformation, TRANSITION	n-term 1.2%->82.1% (70x). r-term 43.8%->0.5% (84x). FLOW->TRANSITION. Position 0.627->0.536. Category redirection not terminal avoidance.
 C1482	Double-ii safety via TRANSITION-locked n-terminal	2	B, MIDDLE, atom, i-modifier, double-ii, safety, n-terminal, TRANSITION, gradient	Gradient: no-i=79.3%, single-i=68.6%, ii=0.0% (N=887). ii is 94.0% n-terminal, 94.0% TRANSITION. All 5 terminals 0% hazard.
+C1483	TERMINAL category specificity gradient	2	B, MIDDLE, atom, terminal, category, specificity, gradient, V=0.463	V=0.463 (2nd after HEAD). r=FLOW 98.9% (norm_ent=0.036, 1 sig cat). m=TRANSITION 87.9% (0.211, 2 sig). l=STAGING 64.5% (0.456, 3 sig). y=OPERATION 40.6% (0.631, 4 sig). n=TRANSITION 39.3% (0.652, 4 sig). h=MARKING 30.0% (0.844, 6 sig). bare=THERMAL 43.2% (0.818, 6 sig).
+C1484	TERMINAL modifier exclusivity partition	2	B, MIDDLE, atom, terminal, modifier, exclusivity, partition, C1472, C1479	n: i=8.606x, all others 0.0x (3,553 i-mod, 0 others). y: d=2.868x, all <0.03x. h: c=9.1x, p=7.7x, f=6.4x, s=5.0x; i/d 0.1x. l/r/m: mod_rate <5%. HEAD+TERM jointly gate modifier palette.
+C1485	TERMINAL HEAD affinity partition	2	B, MIDDLE, atom, terminal, HEAD, affinity, partition, frame	e->y: 72.7% (2.40x, 3,475 tokens). a->n: 59.3% (4.44x). a->m: 60.2% (4.52x). o->l: 30.3% (2.57x). a->r: 35.0% (2.63x). h: no dominant HEAD (45.6% headless). k/t avoid n,m categorically (0-1 tokens).
+C1486	m-terminal line-final closure confirmation	2	B, MIDDLE, atom, terminal, m, line-final, closure, C1434	mean_pos=0.903 (all others <0.52). 73.7% line-final. 87.9% TRANSITION. 10 unique MIDDLEs only. 4.2% suffix rate (OPAQUE). Structural singularity. Confirms C1434-C1439.
+C1487	Six-terminal functional taxonomy	2	B, MIDDLE, atom, terminal, taxonomy, LOCKED, CHANNELED, DIFFUSE, opacity, orthogonal	Three tiers: LOCKED (r, m: 1-2 cats), CHANNELED (l, y, n: 3-4 cats), DIFFUSE (h, bare: 5-6 cats). Opacity orthogonal: r SEMI but LOCKED, h TRANSPARENT but DIFFUSE. Hazard axis: y sources 90.9%, n absorbs 90.9%. Symmetric counterpart to HEAD taxonomy (C1475).

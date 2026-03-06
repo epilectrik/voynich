@@ -4,6 +4,33 @@
 
 ---
 
+## Version 5.24.126 (2026-03-06) - Phase 535: TERMINAL Functional Taxonomy
+
+### Summary
+
+Phase 535 characterizes the 6 TERMINAL atoms {y, l, r, h, m, n} comprehensively across 12 behavioral dimensions, creating the symmetric counterpart to the HEAD domain taxonomy (C1475-C1479). TERMINAL x CATEGORY Cramer's V=0.463 -- terminals are the second strongest category determinant after HEAD. The 6 terminals form three functional tiers: LOCKED (r=FLOW 98.9%, m=TRANSITION 87.9%), CHANNELED (l=STAGING 64.5%, y=OPERATION 40.6%, n=TRANSITION 39.3%), DIFFUSE (h=MARKING 30.0% across 6 categories, bare=THERMAL 43.2% across 6). Modifier selection is near-perfectly terminal-gated (C1484): n exclusively takes i (8.606x, zero instances of any other modifier), y exclusively takes d (2.868x), h takes {c,p,f,s} (5-9x), l/r/m resist modification (<5%). HEAD-TERMINAL affinity creates compositional frames: e locks to y-terminal (72.7%), a locks to n/m-terminal (59-60%), k/t categorically avoid n/m (0-1 tokens). The hazard circuit is directional: y-terminal sources 90.9% of forbidden violations, n-terminal absorbs 90.9%. Two orthogonal design axes: opacity (suffix attachment rate) and category specificity (how narrowly terminal constrains domain). r is SEMI-TRANSPARENT but categorically LOCKED to FLOW; h is TRANSPARENT but DIFFUSE across 6 categories.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1483: TERMINAL category specificity gradient (V=0.463, r near-deterministic to h diffuse) |
+| **ADDED** | C1484: TERMINAL modifier exclusivity partition (n=i only, y=d only, h={c,p,f,s}) |
+| **ADDED** | C1485: TERMINAL HEAD affinity partition (e->y 72.7%, a->n/m 59-60%, k/t avoid n/m) |
+| **ADDED** | C1486: m-terminal line-final closure confirmation (mean_pos 0.903, 73.7% line-final) |
+| **ADDED** | C1487: Six-terminal functional taxonomy (LOCKED/CHANNELED/DIFFUSE, opacity orthogonal) |
+| **ADDED** | `phases/TERM_FUNCTIONAL_TAXONOMY/scripts/term_functional_taxonomy.py` |
+| **ADDED** | `phases/TERM_FUNCTIONAL_TAXONOMY/results/term_functional_taxonomy.json` |
+| **ADDED** | `phases/TERM_FUNCTIONAL_TAXONOMY/REPORT.md` |
+| **UPDATED** | INDEX.md -- +5 constraints (1331 total) |
+| **CONFIRMED** | C1440-C1441 (terminal opacity gradient): verified across all 6 terminals |
+| **CONFIRMED** | C1434-C1439 (m-terminal closure valve): 73.7% line-final, 87.9% TRANSITION |
+| **CONFIRMED** | C1447 (r-terminal hazard vector): 90.9% of source violations |
+| **EXTENDED** | C1472-C1474 (modifier co-occurrence): terminal gates modifier selection |
+| **PARALLELED** | C1475-C1479 (HEAD domain taxonomy): TERMINAL provides symmetric exit-condition taxonomy |
+
+---
+
 ## Version 5.23.125 (2026-03-05) - Phase 534: i-Modifier Paradox Resolution
 
 ### Summary

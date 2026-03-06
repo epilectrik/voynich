@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1326 validated constraints | **Version:** 5.23 | **Date:** 2026-03-05
+**Total:** 1331 validated constraints | **Version:** 5.24 | **Date:** 2026-03-06
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5092,6 +5092,34 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T6: Decomposition. Total -0.069, selection +0.319, conditional -0.388. Exact reconstruction.
 - T7: Operational profile. i converts a-HEAD from line-final FLOW (ar,al) to medial TRANSITION (aiin,ain).
 - T8: Mechanism. Category redirection TRUE, terminal redirection FALSE. ii creates exclusive safe frame.
+
+---
+
+### TERMINAL Functional Taxonomy (C1483-C1487) -- Phase: TERM_FUNCTIONAL_TAXONOMY (Phase 535)
+
+> **Summary:** Phase 535 characterizes the 6 TERMINAL atoms {y, l, r, h, m, n} comprehensively across 12 dimensions, paralleling the HEAD domain taxonomy (C1475-C1479). TERMINAL x CATEGORY Cramer's V=0.463 -- terminals are the second strongest category determinant after HEAD. The 6 terminals form three functional tiers: LOCKED (r=FLOW 98.9%, m=TRANSITION 87.9%), CHANNELED (l=STAGING 64.5%, y=OPERATION 40.6%, n=TRANSITION 39.3%), DIFFUSE (h=MARKING 30.0% across 6 categories, bare=THERMAL 43.2%). Modifier selection is near-perfectly terminal-gated: n exclusively takes i (8.606x, all others 0.0x), y exclusively takes d (2.868x), h takes {c,p,f,s} (5-9x), l/r/m resist modification (<5%). HEAD-TERMINAL affinity creates compositional frames: e locks to y (72.7% of y tokens), a locks to n/m (59-60%), k/t categorically avoid n/m. The hazard circuit is directional: y-terminal sources 90.9% of violations, n-terminal absorbs 90.9%. Opacity and category specificity are orthogonal design axes (r is SEMI-TRANSPARENT but LOCKED; h is TRANSPARENT but DIFFUSE).
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1483 | TERMINAL category specificity gradient | 2 | B, MIDDLE, atom, terminal, category, specificity, gradient, V=0.463 | V=0.463 (2nd after HEAD). r=FLOW 98.9% (norm_ent=0.036, 1 sig cat). m=TRANSITION 87.9% (0.211, 2 sig). l=STAGING 64.5% (0.456, 3 sig). y=OPERATION 40.6% (0.631, 4 sig). n=TRANSITION 39.3% (0.652, 4 sig). h=MARKING 30.0% (0.844, 6 sig). bare=THERMAL 43.2% (0.818, 6 sig). |
+| 1484 | TERMINAL modifier exclusivity partition | 2 | B, MIDDLE, atom, terminal, modifier, exclusivity, partition, C1472, C1479 | n: i=8.606x, all others 0.0x (3,553 i-mod, 0 others). y: d=2.868x, all <0.03x. h: c=9.1x, p=7.7x, f=6.4x, s=5.0x; i/d 0.1x. l/r/m: mod_rate <5%. HEAD+TERM jointly gate modifier palette. |
+| 1485 | TERMINAL HEAD affinity partition | 2 | B, MIDDLE, atom, terminal, HEAD, affinity, partition, frame | e->y: 72.7% (2.40x, 3,475 tokens). a->n: 59.3% (4.44x). a->m: 60.2% (4.52x). o->l: 30.3% (2.57x). a->r: 35.0% (2.63x). h: no dominant HEAD (45.6% headless). k/t avoid n,m categorically (0-1 tokens). |
+| 1486 | m-terminal line-final closure confirmation | 2 | B, MIDDLE, atom, terminal, m, line-final, closure, C1434 | mean_pos=0.903 (all others <0.52). 73.7% line-final. 87.9% TRANSITION. 10 unique MIDDLEs only. 4.2% suffix rate (OPAQUE). Structural singularity. Confirms C1434-C1439. |
+| 1487 | Six-terminal functional taxonomy | 2 | B, MIDDLE, atom, terminal, taxonomy, LOCKED, CHANNELED, DIFFUSE, opacity, orthogonal | Three tiers: LOCKED (r, m: 1-2 cats), CHANNELED (l, y, n: 3-4 cats), DIFFUSE (h, bare: 5-6 cats). Opacity orthogonal: r SEMI but LOCKED, h TRANSPARENT but DIFFUSE. Hazard axis: y sources 90.9%, n absorbs 90.9%. Symmetric counterpart to HEAD taxonomy (C1475). |
+
+**Phase 535 findings (TERMINAL Functional Taxonomy, 12 analyses):**
+- T1: Category profile. r=FLOW 98.9%, m=TRANSITION 87.9%, l=STAGING 64.5%, y=OPERATION 40.6%, n=TRANSITION 39.3%, h=6 categories.
+- T2: Opacity confirmation. m=4.2%, n=0.4%, y=0.3% (OPAQUE). l=17.1%, r=19.3% (SEMI). h=98.7%, bare=89.0% (TRANSPARENT).
+- T3: HEAD compatibility. e->y 3,475 tokens (72.7%). a->n/m 59-60%. k/t avoid n,m categorically (0-1 each).
+- T4: Modifier exclusivity. n takes ONLY i (8.606x). y takes ONLY d (2.868x). h takes {c,p,f,s}. l/r/m resist mods.
+- T5: Hazard. y=90.9% source violations (10/11). n=90.9% target violations (10/11). h/l/m/bare = 0 source.
+- T6: Line position. m=0.903 mean (outlier). All others 0.458-0.514. y most initial-biased.
+- T7: PREFIX selectivity. r strongly qo/ok/ot (3.5-4.5x). m strongly da (3.8x). n BARE dominated (2.56x).
+- T8: Census. y=4,784, n=3,567, h=2,703, l=1,213, m=547, r=1,554, bare=8,728.
+- T9: Bare comparison. bare most similar to h (JSD=0.220). Both diffuse multi-category.
+- T10: Pairwise distances. Most distant: m vs r (JSD=0.977). Most similar: bare vs h (0.220).
+- T11: Determination power. Overall V=0.463. r norm_entropy=0.036 (near-deterministic). h=0.844 (diffuse).
+- T12: HEAD x TERM frame matrix. 35 frames characterized, confirming C1448 at full resolution.
 
 ---
 
