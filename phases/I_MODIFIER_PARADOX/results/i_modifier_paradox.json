@@ -1,0 +1,764 @@
+{
+  "phase": "I_MODIFIER_PARADOX",
+  "phase_number": 534,
+  "total_tokens": 23096,
+  "n_i_tokens": 2875,
+  "T1_causal_chain": {
+    "i_a_head_fraction": 0.5315,
+    "confirms_C1473": false,
+    "a_head_hazard_rate": 0.5424,
+    "confirms_C1477": false,
+    "k_head_hazard_rate": 0.0326,
+    "confirms_C1476": false,
+    "per_modifier_head_dist": {
+      "i": {
+        "n": 2875,
+        "a_frac": 0.5315,
+        "e_frac": 0.0104,
+        "o_frac": 0.0407,
+        "k_frac": 0.0129,
+        "t_frac": 0.0045,
+        "headless_frac": 0.4
+      },
+      "c": {
+        "n": 2096,
+        "a_frac": 0.0134,
+        "e_frac": 0.1789,
+        "o_frac": 0.1679,
+        "k_frac": 0.1183,
+        "t_frac": 0.0577,
+        "headless_frac": 0.4637
+      },
+      "d": {
+        "n": 4401,
+        "a_frac": 0.0061,
+        "e_frac": 0.6042,
+        "o_frac": 0.0643,
+        "k_frac": 0.0229,
+        "t_frac": 0.0123,
+        "headless_frac": 0.2902
+      },
+      "f": {
+        "n": 215,
+        "a_frac": 0.0279,
+        "e_frac": 0.1721,
+        "o_frac": 0.3302,
+        "k_frac": 0.0047,
+        "t_frac": 0.0047,
+        "headless_frac": 0.4605
+      },
+      "p": {
+        "n": 638,
+        "a_frac": 0.0141,
+        "e_frac": 0.0956,
+        "o_frac": 0.4122,
+        "k_frac": 0.0016,
+        "t_frac": 0.0,
+        "headless_frac": 0.4765
+      },
+      "s": {
+        "n": 560,
+        "a_frac": 0.0286,
+        "e_frac": 0.1286,
+        "o_frac": 0.1482,
+        "k_frac": 0.0946,
+        "t_frac": 0.0393,
+        "headless_frac": 0.5607
+      }
+    },
+    "head_hazard_rates": {
+      "k": {
+        "n": 3100,
+        "hazard_rate": 0.0326
+      },
+      "e": {
+        "n": 7002,
+        "hazard_rate": 0.0873
+      },
+      "o": {
+        "n": 2717,
+        "hazard_rate": 0.2245
+      },
+      "t": {
+        "n": 921,
+        "hazard_rate": 0.8686
+      },
+      "a": {
+        "n": 3079,
+        "hazard_rate": 0.5424
+      },
+      "None": {
+        "n": 6277,
+        "hazard_rate": 0.2758
+      }
+    },
+    "n_i_tokens": 2875,
+    "n_mod_tokens": 13339
+  },
+  "T2_counterfactual": {
+    "i_actual_marginal_hazard": 0.1788,
+    "non_i_marginal_hazard": 0.2477,
+    "marginal_ratio": 0.7217,
+    "counterfactual_1_avg_head_overall_haz": 0.2267,
+    "counterfactual_2_avg_head_i_specific_haz": 0.1012,
+    "counterfactual_3_non_i_mod_head_overall_haz": 0.1756,
+    "i_actual_HEAD_dist": {
+      "None": 0.4,
+      "k": 0.0129,
+      "e": 0.0104,
+      "o": 0.0407,
+      "t": 0.0045,
+      "a": 0.5315
+    },
+    "avg_modifier_HEAD_dist": {
+      "None": 0.302,
+      "k": 0.0758,
+      "e": 0.3927,
+      "o": 0.0821,
+      "t": 0.0256,
+      "a": 0.1218
+    },
+    "non_i_modifier_HEAD_dist": {
+      "None": 0.2751,
+      "k": 0.0931,
+      "e": 0.4977,
+      "o": 0.0935,
+      "t": 0.0313,
+      "a": 0.0093
+    },
+    "explanation": {
+      "inflation_from_head_selection": 0.0776,
+      "pct_explained_by_selection": -112.5491
+    }
+  },
+  "T3_a_head_protection": {
+    "frame_results": {
+      "n": {
+        "n_total": 1272,
+        "n_i": 1254,
+        "n_no_i": 18,
+        "i_hazard": 0.3349,
+        "no_i_hazard": 1.0,
+        "delta": -0.6651,
+        "protective": true,
+        "p_value": 0.0,
+        "top_i_middles": [
+          "aiin",
+          "ain"
+        ]
+      },
+      "r": {
+        "n_total": 687,
+        "n_i": 8,
+        "n_no_i": 679,
+        "i_hazard": 0.75,
+        "no_i_hazard": 0.9971,
+        "delta": -0.2471,
+        "protective": true,
+        "p_value": 0.0,
+        "top_i_middles": [
+          "air",
+          "aiir"
+        ]
+      },
+      "l": {
+        "n_total": 527,
+        "n_i": 5,
+        "n_no_i": 522,
+        "i_hazard": 0.0,
+        "no_i_hazard": 0.9981,
+        "delta": -0.9981,
+        "protective": true,
+        "p_value": 0.0,
+        "top_i_middles": [
+          "ail",
+          "airol",
+          "aiil"
+        ]
+      },
+      "bare": {
+        "n_total": 397,
+        "n_i": 253,
+        "n_no_i": 144,
+        "i_hazard": 0.0553,
+        "no_i_hazard": 0.0833,
+        "delta": -0.028,
+        "protective": true,
+        "p_value": 0.278308,
+        "top_i_middles": [
+          "ai",
+          "aii",
+          "airo",
+          "ait",
+          "aik"
+        ]
+      },
+      "m": {
+        "n_total": 174,
+        "n_i": 0,
+        "n_no_i": 174,
+        "i_hazard": null,
+        "no_i_hazard": 0.0,
+        "delta": null,
+        "protective": false,
+        "p_value": null,
+        "top_i_middles": []
+      },
+      "h": {
+        "n_total": 21,
+        "n_i": 8,
+        "n_no_i": 13,
+        "i_hazard": 0.0,
+        "no_i_hazard": 0.1538,
+        "delta": -0.1538,
+        "protective": true,
+        "p_value": 0.243481,
+        "top_i_middles": [
+          "aikh",
+          "aifh",
+          "aiirch",
+          "aiphh",
+          "aiiikh"
+        ]
+      },
+      "y": {
+        "n_total": 1,
+        "n_i": 0,
+        "n_no_i": 1,
+        "i_hazard": null,
+        "no_i_hazard": 0.0,
+        "delta": null,
+        "protective": false,
+        "p_value": null,
+        "top_i_middles": []
+      }
+    },
+    "summary": {
+      "n_testable_frames": 5,
+      "n_protective": 5,
+      "n_amplifying": 0,
+      "weighted_delta_within_a_HEAD": -0.5359,
+      "verdict": "PROTECTIVE"
+    }
+  },
+  "T4_double_ii": {
+    "group_profiles": {
+      "no_i": {
+        "n": 1551,
+        "hazard_rate": 0.793,
+        "suffix_rate": 0.147,
+        "terminal_dist": {
+          "r": 0.4378,
+          "l": 0.3366,
+          "m": 0.1122,
+          "bare": 0.0928,
+          "n": 0.0116,
+          "h": 0.0084,
+          "y": 0.0006
+        },
+        "category_dist": {
+          "FLOW": 0.7814,
+          "TRANSITION": 0.1612,
+          "MARKING": 0.0174,
+          "STAGING": 0.0135,
+          "THERMAL": 0.0116,
+          "CONTAINMENT": 0.0116,
+          "OPERATION": 0.0032
+        },
+        "top_middles": [
+          "ar",
+          "al",
+          "am",
+          "a",
+          "an",
+          "ak",
+          "alk",
+          "ad",
+          "alsh",
+          "ald"
+        ]
+      },
+      "single_i": {
+        "n": 641,
+        "hazard_rate": 0.6864,
+        "suffix_rate": 0.3385,
+        "terminal_dist": {
+          "n": 0.6552,
+          "bare": 0.3198,
+          "h": 0.0094,
+          "r": 0.0094,
+          "l": 0.0062
+        },
+        "category_dist": {
+          "FLOW": 0.6864,
+          "TRANSITION": 0.2777,
+          "STAGING": 0.0172,
+          "MARKING": 0.0125,
+          "MONITORING": 0.0062
+        },
+        "top_middles": [
+          "ain",
+          "ai",
+          "airo",
+          "air",
+          "ait",
+          "aik",
+          "ail",
+          "aip",
+          "aikh",
+          "airod"
+        ]
+      },
+      "double_ii": {
+        "n": 887,
+        "hazard_rate": 0.0,
+        "suffix_rate": 0.0609,
+        "terminal_dist": {
+          "n": 0.9402,
+          "bare": 0.0541,
+          "h": 0.0023,
+          "r": 0.0023,
+          "l": 0.0011
+        },
+        "category_dist": {
+          "TRANSITION": 0.9402,
+          "UNKNOWN": 0.0361,
+          "STAGING": 0.0225,
+          "MARKING": 0.0011
+        },
+        "top_middles": [
+          "aiin",
+          "aii",
+          "aiir",
+          "aiik",
+          "aiict",
+          "aiifcho",
+          "aiirch",
+          "aiino",
+          "aiiinro",
+          "aiisock"
+        ]
+      }
+    },
+    "double_ii_per_terminal": {
+      "l": {
+        "n": 1,
+        "hazard_rate": 0.0
+      },
+      "h": {
+        "n": 2,
+        "hazard_rate": 0.0
+      },
+      "n": {
+        "n": 834,
+        "hazard_rate": 0.0
+      },
+      "bare": {
+        "n": 48,
+        "hazard_rate": 0.0
+      },
+      "r": {
+        "n": 2,
+        "hazard_rate": 0.0
+      }
+    },
+    "gradient": {
+      "no_i": 0.793,
+      "single_i": 0.6864,
+      "double_ii": 0.0
+    },
+    "ii_categorical_safety": true,
+    "ii_terminal_shift": {
+      "no_i_n_dominant_term": "r",
+      "ii_n_dominant_term": "n"
+    }
+  },
+  "T5_modifier_comparison": {
+    "modifier_results": {
+      "i": {
+        "n": 1528,
+        "hazard_rate": 0.288,
+        "baseline_no_mod_hazard": 0.8363,
+        "delta_from_bare": -0.5484,
+        "protective": true,
+        "quench_to_zero": false,
+        "top_middles": [
+          "aiin",
+          "ain",
+          "ai",
+          "aii",
+          "airo"
+        ]
+      },
+      "c": {
+        "n": 28,
+        "hazard_rate": 0.1786,
+        "baseline_no_mod_hazard": 0.8363,
+        "delta_from_bare": -0.6577,
+        "protective": true,
+        "quench_to_zero": false,
+        "top_middles": [
+          "alch",
+          "apchedyf",
+          "aiict",
+          "acth",
+          "alche"
+        ]
+      },
+      "d": {
+        "n": 27,
+        "hazard_rate": 0.1111,
+        "baseline_no_mod_hazard": 0.8363,
+        "delta_from_bare": -0.7252,
+        "protective": true,
+        "quench_to_zero": false,
+        "top_middles": [
+          "ad",
+          "ald",
+          "airod",
+          "adeeo",
+          "apchedyf"
+        ]
+      },
+      "f": {
+        "n": 6,
+        "hazard_rate": 0.0,
+        "baseline_no_mod_hazard": 0.8363,
+        "delta_from_bare": -0.8363,
+        "protective": true,
+        "quench_to_zero": true,
+        "top_middles": [
+          "aifh",
+          "aif",
+          "apchedyf",
+          "aiifcho"
+        ]
+      },
+      "p": {
+        "n": 9,
+        "hazard_rate": 0.1111,
+        "baseline_no_mod_hazard": 0.8363,
+        "delta_from_bare": -0.7252,
+        "protective": true,
+        "quench_to_zero": false,
+        "top_middles": [
+          "ap",
+          "aip",
+          "apchedyf",
+          "aiphh",
+          "aporai"
+        ]
+      },
+      "s": {
+        "n": 16,
+        "hazard_rate": 0.0625,
+        "baseline_no_mod_hazard": 0.8363,
+        "delta_from_bare": -0.7738,
+        "protective": true,
+        "quench_to_zero": false,
+        "top_middles": [
+          "alsh",
+          "als",
+          "as",
+          "asodlo",
+          "ais"
+        ]
+      }
+    },
+    "quench_within_a_head": {
+      "c": {
+        "n": 28,
+        "hazard_rate": 0.1786,
+        "quenches": false
+      },
+      "d": {
+        "n": 27,
+        "hazard_rate": 0.1111,
+        "quenches": false
+      },
+      "f": {
+        "n": 6,
+        "hazard_rate": 0.0,
+        "quenches": true
+      },
+      "p": {
+        "n": 9,
+        "hazard_rate": 0.1111,
+        "quenches": false
+      },
+      "s": {
+        "n": 16,
+        "hazard_rate": 0.0625,
+        "quenches": false
+      }
+    },
+    "n_bare_a_head": 1454,
+    "bare_a_head_hazard": 0.8363,
+    "comparison": {
+      "i_hazard_in_a": 0.288,
+      "avg_quench_hazard_in_a": 0.0927,
+      "bare_hazard_in_a": 0.8363,
+      "i_vs_quench": "quench better",
+      "i_vs_bare": "protective"
+    }
+  },
+  "T6_full_decomposition": {
+    "decomposition_by_head": {
+      "None": {
+        "P_HEAD_given_i": 0.4,
+        "P_HEAD_given_non_i": 0.2535,
+        "hazard_HEAD_with_i": 0.0487,
+        "hazard_HEAD_without_i": 0.3267,
+        "i_contribution": 0.0195,
+        "non_i_contribution": 0.0828,
+        "delta_contribution": -0.0634
+      },
+      "k": {
+        "P_HEAD_given_i": 0.0129,
+        "P_HEAD_given_non_i": 0.1515,
+        "hazard_HEAD_with_i": 0.027,
+        "hazard_HEAD_without_i": 0.0326,
+        "i_contribution": 0.0003,
+        "non_i_contribution": 0.0049,
+        "delta_contribution": -0.0046
+      },
+      "e": {
+        "P_HEAD_given_i": 0.0104,
+        "P_HEAD_given_non_i": 0.3448,
+        "hazard_HEAD_with_i": 0.0667,
+        "hazard_HEAD_without_i": 0.0873,
+        "i_contribution": 0.0007,
+        "non_i_contribution": 0.0301,
+        "delta_contribution": -0.0294
+      },
+      "o": {
+        "P_HEAD_given_i": 0.0407,
+        "P_HEAD_given_non_i": 0.1286,
+        "hazard_HEAD_with_i": 0.0427,
+        "hazard_HEAD_without_i": 0.2327,
+        "i_contribution": 0.0017,
+        "non_i_contribution": 0.0299,
+        "delta_contribution": -0.0282
+      },
+      "t": {
+        "P_HEAD_given_i": 0.0045,
+        "P_HEAD_given_non_i": 0.0449,
+        "hazard_HEAD_with_i": 0.7692,
+        "hazard_HEAD_without_i": 0.87,
+        "i_contribution": 0.0035,
+        "non_i_contribution": 0.0391,
+        "delta_contribution": -0.0356
+      },
+      "a": {
+        "P_HEAD_given_i": 0.5315,
+        "P_HEAD_given_non_i": 0.0767,
+        "hazard_HEAD_with_i": 0.288,
+        "hazard_HEAD_without_i": 0.793,
+        "i_contribution": 0.153,
+        "non_i_contribution": 0.0608,
+        "delta_contribution": 0.0922
+      }
+    },
+    "reconstructed_i_hazard": 0.1788,
+    "reconstructed_non_i_hazard": 0.2477,
+    "true_i_hazard": 0.1788,
+    "true_non_i_hazard": 0.2477,
+    "reconstruction_accuracy": {
+      "i_error": 0.0,
+      "non_i_error": 0.0
+    },
+    "effect_decomposition": {
+      "total_effect": -0.0689,
+      "selection_effect": 0.3192,
+      "conditional_effect": -0.3881,
+      "pct_selection": -463.0557,
+      "pct_conditional": 563.0557
+    },
+    "verdict": {
+      "selection_dominates": false,
+      "conditional_direction": "protective"
+    }
+  },
+  "T7_operational_profile": {
+    "a_i_profile": {
+      "n": 1528,
+      "label": "a-HEAD with i",
+      "terminal_dist": {
+        "n": 0.8207,
+        "bare": 0.1656,
+        "h": 0.0052,
+        "r": 0.0052,
+        "l": 0.0033
+      },
+      "category_dist": {
+        "TRANSITION": 0.6623,
+        "FLOW": 0.288,
+        "UNKNOWN": 0.0209,
+        "STAGING": 0.0203,
+        "MARKING": 0.0059,
+        "MONITORING": 0.0026
+      },
+      "suffix_rate": 0.1774,
+      "suffix_mode_A_rate": 0.034,
+      "mean_line_pos": 0.5357,
+      "line_initial_rate": 0.0452,
+      "line_final_rate": 0.0857,
+      "prefix_dist": {
+        "BARE": 0.392,
+        "ok": 0.2225,
+        "ot": 0.1518,
+        "lk": 0.0609,
+        "or": 0.0432,
+        "ol": 0.036,
+        "yk": 0.034,
+        "qo": 0.0144,
+        "ar": 0.0137,
+        "ch": 0.0131
+      },
+      "section_dist": {
+        "S": 0.5982,
+        "B": 0.1518,
+        "H": 0.1459,
+        "C": 0.089,
+        "T": 0.0151
+      }
+    },
+    "a_no_i_profile": {
+      "n": 1551,
+      "label": "a-HEAD without i",
+      "terminal_dist": {
+        "r": 0.4378,
+        "l": 0.3366,
+        "m": 0.1122,
+        "bare": 0.0928,
+        "n": 0.0116,
+        "h": 0.0084,
+        "y": 0.0006
+      },
+      "category_dist": {
+        "FLOW": 0.7814,
+        "TRANSITION": 0.1612,
+        "MARKING": 0.0174,
+        "STAGING": 0.0135,
+        "THERMAL": 0.0116,
+        "CONTAINMENT": 0.0116,
+        "OPERATION": 0.0032
+      },
+      "suffix_rate": 0.147,
+      "suffix_mode_A_rate": 0.0645,
+      "mean_line_pos": 0.6274,
+      "line_initial_rate": 0.0316,
+      "line_final_rate": 0.2179,
+      "prefix_dist": {
+        "BARE": 0.3449,
+        "ot": 0.2108,
+        "ok": 0.185,
+        "ch": 0.0658,
+        "sh": 0.0322,
+        "lk": 0.0322,
+        "yk": 0.0316,
+        "ar": 0.0245,
+        "or": 0.0181,
+        "ol": 0.0174
+      },
+      "section_dist": {
+        "S": 0.5583,
+        "H": 0.1767,
+        "B": 0.1567,
+        "C": 0.087,
+        "T": 0.0213
+      }
+    },
+    "terminal_shift": {
+      "l": {
+        "i_frac": 0.0033,
+        "no_i_frac": 0.3366,
+        "delta": -0.3333
+      },
+      "y": {
+        "i_frac": 0,
+        "no_i_frac": 0.0006,
+        "delta": -0.0006
+      },
+      "h": {
+        "i_frac": 0.0052,
+        "no_i_frac": 0.0084,
+        "delta": -0.0032
+      },
+      "n": {
+        "i_frac": 0.8207,
+        "no_i_frac": 0.0116,
+        "delta": 0.8091
+      },
+      "bare": {
+        "i_frac": 0.1656,
+        "no_i_frac": 0.0928,
+        "delta": 0.0728
+      },
+      "m": {
+        "i_frac": 0,
+        "no_i_frac": 0.1122,
+        "delta": -0.1122
+      },
+      "r": {
+        "i_frac": 0.0052,
+        "no_i_frac": 0.4378,
+        "delta": -0.4326
+      }
+    }
+  },
+  "T8_protection_mechanism": {
+    "terminal_shift_away_from_high_hazard": {
+      "i_in_high_hazard_terms": 0.8292,
+      "no_i_in_high_hazard_terms": 0.7859,
+      "delta": 0.0432,
+      "i_shifts_away": false
+    },
+    "a_n_frame_comparison": {
+      "n_i": 1254,
+      "n_no_i": 18,
+      "i_hazard": 0.3349,
+      "no_i_hazard": 1.0,
+      "delta": -0.6651,
+      "i_category_dist": {
+        "TRANSITION": 0.6651,
+        "FLOW": 0.3349
+      },
+      "no_i_category_dist": {
+        "CONTAINMENT": 1.0
+      }
+    },
+    "double_ii_terminal_profile": {
+      "terminal_dist": {
+        "n": 0.9402,
+        "bare": 0.0541,
+        "h": 0.0023,
+        "r": 0.0023,
+        "l": 0.0011
+      },
+      "n_tokens": 887,
+      "pct_in_high_hazard_terms": 0.9436,
+      "avoids_high_haz": false
+    },
+    "mechanism_verdict": {
+      "terminal_redirection": false,
+      "category_redirection": true,
+      "ii_creates_exclusive_safe_frame": true
+    }
+  },
+  "synthesis": {
+    "paradox_resolved": true,
+    "mechanism": "HEAD_DOMAIN_SELECTION",
+    "chain": [
+      "i-modifier demands a-HEAD (89% selectivity, C1473)",
+      "a-HEAD is the primary hazard carrier (66% forbidden, C1477)",
+      "Marginal hazard inflation is entirely an artifact of HEAD selection",
+      "Within a-HEAD frames, i conditionally protects (negative delta)",
+      "Double-ii creates a categorically safe mode (0% hazard)"
+    ],
+    "pct_selection": -463.0557,
+    "pct_conditional": 563.0557,
+    "conditional_direction": "protective",
+    "within_a_head_verdict": "PROTECTIVE"
+  }
+}

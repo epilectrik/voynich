@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1323 validated constraints | **Version:** 5.22 | **Date:** 2026-03-05
+**Total:** 1326 validated constraints | **Version:** 5.23 | **Date:** 2026-03-05
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5070,6 +5070,28 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T10: Population census. e=7,002 (30.3%), headless=6,277 (27.2%), k=3,100 (13.4%), a=3,079 (13.3%), o=2,717 (11.8%), t=921 (4.0%).
 - T11: k-immunity mechanism. k bare 0/2,682, k+mod 0/418, 0/6 frames nonzero, 0 forbidden pairs. INTRINSIC.
 - T12: Pairwise distances. Most distant: k vs a (0.494). Most similar: o vs headless (0.161).
+
+---
+
+### i-Modifier Paradox Resolution (C1480-C1482) -- Phase: I_MODIFIER_PARADOX (Phase 534)
+
+> **Summary:** Phase 534 fully resolves the i-modifier Simpson's paradox (C1452-C1456). i selects a-HEAD at 88.6% of headed tokens (C1479), and a-HEAD is the primary hazard carrier (C1477). Full Oaxaca-Blinder decomposition: total marginal effect = -0.069 (i is NET SAFER), selection effect = +0.319 (a-HEAD inflates), conditional effect = -0.388 (protective within each HEAD). The crude 1.69x ratio (C1452) compared i to ALL non-i tokens including unmodified safe-HEAD tokens; properly matched comparison shows i is 28% safer (17.9% vs 24.8%). Within a-HEAD, i produces a COMPLETE TERMINAL TRANSFORMATION: n-terminal goes from 1.2% to 82.1% (70x), category shifts from FLOW (78.1%) to TRANSITION (66.2%). Double-ii achieves 0.0% hazard (N=887) via terminal-locked TRANSITION through n-terminal (94.0%). Monotonic i-count gradient within a-HEAD: no-i=79.3%, single-i=68.6%, double-ii=0.0%.
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1480 | i-modifier Simpson's paradox full resolution | 2 | B, MIDDLE, atom, i-modifier, Simpson, hazard, HEAD, selection, resolution | Total=-0.069 (i safer). Selection=+0.319, Conditional=-0.388. CF: avg HEAD dist → 10.1%. Within a-HEAD: 5/5 protective, delta=-0.536. |
+| 1481 | i-modifier terminal transformation within a-HEAD | 2 | B, MIDDLE, atom, i-modifier, a-HEAD, terminal, transformation, TRANSITION | n-term 1.2%→82.1% (70x). r-term 43.8%→0.5% (84x). FLOW→TRANSITION. Position 0.627→0.536. Category redirection not terminal avoidance. |
+| 1482 | Double-ii safety via TRANSITION-locked n-terminal | 2 | B, MIDDLE, atom, i-modifier, double-ii, safety, n-terminal, TRANSITION, gradient | Gradient: no-i=79.3%, single-i=68.6%, ii=0.0% (N=887). ii is 94.0% n-terminal, 94.0% TRANSITION. All 5 terminals 0% hazard. |
+
+**Phase 534 findings (i-Modifier Paradox Resolution, 8 analyses):**
+- T1: Causal chain. i→a-HEAD 53.15% (88.6% of headed). a-HEAD hazard 54.2%. Chain confirmed.
+- T2: Counterfactual. i actual 17.9%, with avg HEAD dist 10.1%, non-i modified 24.8%. HEAD selection inflates 7.8pp.
+- T3: Within a-HEAD protection. 5/5 frames protective. Weighted delta -0.536. a→n dominant: 1,254 tokens, delta -0.665.
+- T4: Double-ii gradient. no-i=79.3%, single-i=68.6%, ii=0.0%. n-terminal progressive lock-in.
+- T5: Modifier comparison in a-HEAD. Bare=83.6%, i=28.8%, c=17.9%, d=11.1%, f=0%, p=11.1%, s=6.3%. i dominant but not strongest.
+- T6: Decomposition. Total -0.069, selection +0.319, conditional -0.388. Exact reconstruction.
+- T7: Operational profile. i converts a-HEAD from line-final FLOW (ar,al) to medial TRANSITION (aiin,ain).
+- T8: Mechanism. Category redirection TRUE, terminal redirection FALSE. ii creates exclusive safe frame.
 
 ---
 

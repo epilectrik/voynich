@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1323 constraints | 2026-03-05
+CONSTRAINT_REFERENCE v2.6 | 1326 constraints | 2026-03-05
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1327,3 +1327,6 @@ C1476	k-HEAD immunity is intrinsic not compositional	2	B, MIDDLE, atom, HEAD, k,
 C1477	a-HEAD is the primary hazard carrier	2	B, MIDDLE, atom, HEAD, a, hazard, forbidden, modifier, quench-resistant	66.0% forbidden (2,032/3,079). ONLY HEAD where quench fails (52.8% with mod). a->l 98.9%, a->r 98.5%, a->n 65.6%.
 C1478	k/t terminal mirror with category opposition	2	B, MIDDLE, atom, HEAD, k, t, terminal, category, mirror, PREFIX	Terminal JSD=0.0017, Category JSD=0.784. Both bare-dominant, qo-selected, high suffix rate. Parallel channels.
 C1479	HEAD-modifier selectivity partition	2	B, MIDDLE, atom, HEAD, modifier, selectivity, partition, co-occurrence	a monopolizes i (4.08x), e monopolizes d (1.99x), o attracts p/f/c. k/t modifier-depleted. Headless universal.
+C1480	i-modifier Simpson's paradox full resolution	2	B, MIDDLE, atom, i-modifier, Simpson, hazard, HEAD, selection, resolution	Total=-0.069 (i safer). Selection=+0.319, Conditional=-0.388. CF: avg HEAD dist -> 10.1%. Within a-HEAD: 5/5 protective, delta=-0.536.
+C1481	i-modifier terminal transformation within a-HEAD	2	B, MIDDLE, atom, i-modifier, a-HEAD, terminal, transformation, TRANSITION	n-term 1.2%->82.1% (70x). r-term 43.8%->0.5% (84x). FLOW->TRANSITION. Position 0.627->0.536. Category redirection not terminal avoidance.
+C1482	Double-ii safety via TRANSITION-locked n-terminal	2	B, MIDDLE, atom, i-modifier, double-ii, safety, n-terminal, TRANSITION, gradient	Gradient: no-i=79.3%, single-i=68.6%, ii=0.0% (N=887). ii is 94.0% n-terminal, 94.0% TRANSITION. All 5 terminals 0% hazard.

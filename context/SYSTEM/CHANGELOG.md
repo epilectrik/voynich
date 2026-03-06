@@ -4,6 +4,30 @@
 
 ---
 
+## Version 5.23.125 (2026-03-05) - Phase 534: i-Modifier Paradox Resolution
+
+### Summary
+
+Phase 534 FULLY RESOLVES the i-modifier Simpson's paradox (C1452-C1456). The complete causal chain: i selects a-HEAD at 88.6% of headed tokens (C1479), a-HEAD is the primary hazard carrier (C1477), inflating i's marginal hazard via selection (+0.319). But within each HEAD, i conditionally protects (-0.388). Net result: i is 28% SAFER than other modifiers (17.9% vs 24.8%). The crude 1.69x ratio from C1452 compared i to ALL non-i tokens including unmodified safe-HEAD tokens -- an apples-to-oranges comparison. Within a-HEAD, i produces a COMPLETE TERMINAL TRANSFORMATION: n-terminal from 1.2% to 82.1%, category from FLOW (78.1%) to TRANSITION (66.2%). Protection is categorical (changes what happens at the terminal), not positional (doesn't avoid terminals). Double-ii achieves 0.0% hazard (N=887) via 94.0% n-terminal TRANSITION lock-in. Monotonic i-count gradient within a-HEAD: no-i=79.3%, single-i=68.6%, double-ii=0.0%. C1477's "modifier quench failure" in a-HEAD is refined: rare modifiers (c,d,f,p,s) DO quench in a-HEAD, but i dominates the modifier population (1,528 vs 86 total) and only partially reduces hazard (to 28.8%), dragging the aggregate.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1480: i-modifier Simpson's paradox full resolution (selection +0.319, conditional -0.388, net -0.069 safer) |
+| **ADDED** | C1481: i-modifier terminal transformation within a-HEAD (n-term 1.2%→82.1%, FLOW→TRANSITION) |
+| **ADDED** | C1482: Double-ii safety via TRANSITION-locked n-terminal (0.0% hazard, monotonic gradient) |
+| **ADDED** | `phases/I_MODIFIER_PARADOX/scripts/i_modifier_paradox.py` |
+| **ADDED** | `phases/I_MODIFIER_PARADOX/results/i_modifier_paradox.json` |
+| **ADDED** | `phases/I_MODIFIER_PARADOX/REPORT.md` |
+| **UPDATED** | INDEX.md -- +3 constraints (1326 total) |
+| **CLOSED** | C1452-C1456 (i-modifier Simpson's paradox) -- complete mechanistic explanation |
+| **REFINED** | C1477 (a-HEAD quench resistance): aggregate effect of i dominance; rare modifiers DO quench |
+| **CONFIRMED** | C1453 (i protects within frames) at a-HEAD level with delta=-0.536 |
+| **CONFIRMED** | C1455 (double-ii categorical safety) with full n-terminal lock-in mechanism |
+
+---
+
 ## Version 5.22.124 (2026-03-05) - Phase 533: HEAD Domain Differentiation
 
 ### Summary

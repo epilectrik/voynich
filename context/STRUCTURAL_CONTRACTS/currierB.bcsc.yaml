@@ -1074,11 +1074,11 @@ hazards:
     sister_parity: "ok/ot 1.04x, ch/sh 1.29x — sister choice NOT hazard mechanism (C1449)"
     opacity_gradient: "SEMI_TRANSPARENT tier 56.5% hazard (2.5x OPAQUE); suffix reduces hazard 2.44x (C1450)"
     mode_b_violations: "Mode B carries 100% of forbidden violations (11/11); Mode A zero violations (C1451)"
-    modifier_quenching: "All 5 modifiers {c,d,f,p,s} quench hazard to 0%; i-modifier boosts 1.69x"
-    i_modifier_anomaly: "i hazard boost is Simpson's paradox: selects hazardous frames (61.8% in high-hazard) but REDUCES within-frame hazard (delta -0.407, 12/19 protective). Non-monotonic: single-i=39.8%, double-ii=0.0%. Anti-thermal (THERMAL 0.002x). Suffix-depleted (9.4%, n-terminal). (C1452-C1456)"
+    modifier_quenching: "All 5 modifiers {c,d,f,p,s} quench hazard to 0% globally; within a-HEAD rare modifiers reduce but only f quenches to 0% (N=6). i-modifier is NET SAFER (17.9% vs 24.8% other modifiers). (C1450, C1480)"
+    i_modifier_paradox_resolved: "RESOLVED (C1480-C1482). i selects a-HEAD at 88.6% (C1479); a-HEAD is primary hazard carrier (C1477). Oaxaca-Blinder: selection +0.319, conditional -0.388, net -0.069 (i safer). Within a-HEAD, i transforms terminals: n-term 1.2%→82.1%, FLOW→TRANSITION. Double-ii = 0.0% hazard via 94% n-terminal TRANSITION lock-in. Monotonic gradient: no-i=79.3%, single-i=68.6%, ii=0.0%. (C1480, C1481, C1482)"
     ey_safe_pathway: "e→y = 3,475 tokens (15.0%), 7 MIDDLEs (edy 55.8%, ey 25.6%, eey 18.5%), 0.06% hazard (400x reduction). NOT recovery-specific — ambient substrate at constant ~15% rate (post-hazard=14.75%, post-safe=15.35%, p=0.310). OPERATION 3.94x, CHSH-channel sh 2.45x, qo 0.04x excluded. Line-final 0.55x. Folio e→y rate predicts forgiveness: rho=+0.569 with AXM self-transition. Post-e→y AXM +9.4pp (one-way ratchet). (C1457-C1462)"
     thermal_safety_envelope: "k-HEAD (3,100 tokens, 0% hazard) + e→y (3,475 tokens, 0.06% hazard) = ~5,558 tokens (24% of corpus) at effectively zero hazard. Energy input and energy output are both categorically safe; hazard concentrates in transitions between them (FLOW, CONTAINMENT). (C1446, C1457-C1462)"
-    provenance: "C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456, C1457, C1458, C1459, C1460, C1461, C1462"
+    provenance: "C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456, C1457, C1458, C1459, C1460, C1461, C1462, C1480, C1481, C1482"
 
   properties:
     asymmetric_rate: "65%"
@@ -2876,6 +2876,9 @@ provenance:
     - "C1454"  # i-modifier anti-thermal category profile (THERMAL 0.002x)
     - "C1455"  # Quenching modifier partial i-override (22.6% -> 7.5%)
     - "C1456"  # i-modifier suffix depletion (9.4% suffix, 95.7% Mode B)
+    - "C1480"  # i-modifier Simpson's paradox full resolution (selection +0.319, conditional -0.388)
+    - "C1481"  # i-modifier terminal transformation within a-HEAD (n-term 1.2%→82.1%)
+    - "C1482"  # Double-ii safety via TRANSITION-locked n-terminal (0.0%, monotonic gradient)
 
   program_line:
     - "C357"   # Lines deliberately chunked
