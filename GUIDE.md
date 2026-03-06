@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,290 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,295 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -185,6 +185,8 @@ The grammar enforces 17 forbidden transitions organized into 5 hazard classes:
 Most hazards describe difficult-to-reverse failures — material contamination, phase disorder, or thermal damage. The grammar strongly disfavors these transitions (~65% compliance rate), though they are not absolutely prohibited. One hazard class (RATE_MISMATCH) describes recoverable imbalances rather than permanent damage. The entire grammar is organized around minimizing exposure to these transitions.
 
 All 17 forbidden transitions are mediated through 23 "hub" MIDDLEs — the most connected vocabulary items that appear across all instruction classes. These hub MIDDLEs decompose into four functional sub-roles: hazard sources (6), hazard targets (6), safety buffers (3), and connectors (8). The hazard topology is entirely a hub phenomenon — non-hub MIDDLEs never participate in forbidden transitions.
+
+At the atom level, hazard exposure decomposes cleanly (C1446-C1451): the k-HEAD atom (energy/thermal) has **complete hazard immunity** — 0.0% across 3,100 tokens and all frame combinations. The r-terminal is the system's primary hazard vector (92.58% of r-terminal tokens are hazardous). All standard modifiers {c, d, f, p, s} quench hazard to 0%; only the i-modifier (iterate) boosts it (1.69x). Semi-transparent terminals (l, r) concentrate hazard at 2.5x the rate of opaque terminals, and suffixed tokens have 2.44x lower hazard than unsuffixed — the suffix layer acts as a hazard buffer (C1450). Most strikingly, 100% of forbidden pair violations occur in Mode B (continuation/bare tokens); Mode A (specification) has zero violations (C1451). The system is safe during specification and only vulnerable during execution.
 
 ### Program Structure
 

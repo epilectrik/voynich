@@ -4,6 +4,30 @@
 
 ---
 
+## Version 5.14.116 (2026-03-05) - Phase 523: Hazard Atom-Level Decomposition
+
+### Summary
+
+Phase 523 decomposes the 17 forbidden transitions (C109, Tier 0) at atom-level resolution using the HEAD+MOD*+TERM instruction encoding framework (C1393-C1394). 10 tests across 23,096 tokens and 20,676 adjacency pairs. Key findings: k-HEAD is completely hazard-immune (0.0% across 3,100 tokens -- all frames neutralized). Terminal atom hazard partition: HIGH (r 92.58%, n 38.97%, l 30.88%), LOW (e 16.49%, y 15.82%), ZERO (k, m, h 0%). 7 high-hazard frames account for >95% of hazard. Sister pairs show hazard parity (ok/ot 1.04x, ch/sh 1.29x). SEMI_TRANSPARENT opacity tier concentrates hazard at 56.5% (2.5x OPAQUE). Mode B carries 100% of forbidden violations (11/11). All 5 standard modifiers {c,d,f,p,s} quench hazard to 0%; i-modifier boosts 1.69x.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1446: k-HEAD complete hazard immunity (0.0% across 3,100 tokens, all frames) |
+| **ADDED** | C1447: terminal atom hazard partition (HIGH r/n/l, LOW e/y, ZERO k/m/h) |
+| **ADDED** | C1448: HEAD x TERM frame hazard map with k-neutralization |
+| **ADDED** | C1449: PREFIX channel hazard with sister pair parity (ok/ot 1.04x, ch/sh 1.29x) |
+| **ADDED** | C1450: opacity tier hazard gradient (SEMI_TRANSPARENT 56.5%, 2.5x OPAQUE) |
+| **ADDED** | C1451: Mode B exclusive forbidden violation concentration (11/11 = 100%) |
+| **ADDED** | `phases/HAZARD_ATOM_DECOMPOSITION/scripts/hazard_atom_decomposition.py` |
+| **ADDED** | `phases/HAZARD_ATOM_DECOMPOSITION/results/hazard_atom_decomposition.json` |
+| **ADDED** | `phases/HAZARD_ATOM_DECOMPOSITION/REPORT.md` |
+| **UPDATED** | INDEX.md -- +6 constraints (1295 total) |
+| **UPDATED** | CONSTRAINT_TABLE.txt regenerated (1295 constraints) |
+
+---
+
 ## Version 5.13.115 (2026-03-05) - Phase 522: Two-Level Closure Architecture
 
 ### Summary

@@ -1,0 +1,5399 @@
+{
+  "phase": "HAZARD_ATOM_DECOMPOSITION",
+  "phase_number": 523,
+  "total_tokens": 23096,
+  "total_adjacency_pairs": 20676,
+  "total_forbidden_violations": 11,
+  "n_forbidden_pair_types": 17,
+  "T1_hub_atom_decomposition": {
+    "hub_middles": {
+      "ar": {
+        "sub_role": "HAZARD_SOURCE",
+        "atoms": [
+          "a",
+          "r"
+        ],
+        "slots": [
+          {
+            "atom": "a",
+            "position": 0,
+            "slot": "HEAD"
+          },
+          {
+            "atom": "r",
+            "position": 1,
+            "slot": "TERM"
+          }
+        ],
+        "head": "a",
+        "mods": [],
+        "term": "r",
+        "token_count": 677,
+        "category_dist": {
+          "FLOW": 1.0
+        }
+      },
+      "dy": {
+        "sub_role": "HAZARD_SOURCE",
+        "atoms": [
+          "d",
+          "y"
+        ],
+        "slots": [
+          {
+            "atom": "d",
+            "position": 0,
+            "slot": "MOD"
+          },
+          {
+            "atom": "y",
+            "position": 1,
+            "slot": "TERM"
+          }
+        ],
+        "head": "d",
+        "mods": [],
+        "term": "y",
+        "token_count": 675,
+        "category_dist": {
+          "CONTAINMENT": 1.0
+        }
+      },
+      "ey": {
+        "sub_role": "HAZARD_SOURCE",
+        "atoms": [
+          "e",
+          "y"
+        ],
+        "slots": [
+          {
+            "atom": "e",
+            "position": 0,
+            "slot": "HEAD"
+          },
+          {
+            "atom": "y",
+            "position": 1,
+            "slot": "TERM"
+          }
+        ],
+        "head": "e",
+        "mods": [],
+        "term": "y",
+        "token_count": 889,
+        "category_dist": {
+          "TRANSITION": 1.0
+        }
+      },
+      "l": {
+        "sub_role": "HAZARD_SOURCE",
+        "atoms": [
+          "l"
+        ],
+        "slots": [
+          {
+            "atom": "l",
+            "position": 0,
+            "slot": "TERM"
+          }
+        ],
+        "head": "l",
+        "mods": [],
+        "term": null,
+        "token_count": 855,
+        "category_dist": {
+          "STAGING": 1.0
+        }
+      },
+      "ol": {
+        "sub_role": "HAZARD_SOURCE",
+        "atoms": [
+          "o",
+          "l"
+        ],
+        "slots": [
+          {
+            "atom": "o",
+            "position": 0,
+            "slot": "HEAD"
+          },
+          {
+            "atom": "l",
+            "position": 1,
+            "slot": "TERM"
+          }
+        ],
+        "head": "o",
+        "mods": [],
+        "term": "l",
+        "token_count": 762,
+        "category_dist": {
+          "STAGING": 1.0
+        }
+      },
+      "or": {
+        "sub_role": "HAZARD_SOURCE",
+        "atoms": [
+          "o",
+          "r"
+        ],
+        "slots": [
+          {
+            "atom": "o",
+            "position": 0,
+            "slot": "HEAD"
+          },
+          {
+            "atom": "r",
+            "position": 1,
+            "slot": "TERM"
+          }
+        ],
+        "head": "o",
+        "mods": [],
+        "term": "r",
+        "token_count": 446,
+        "category_dist": {
+          "FLOW": 1.0
+        }
+      },
+      "aiin": {
+        "sub_role": "HAZARD_TARGET",
+        "atoms": [
+          "a",
+          "i",
+          "i",
+          "n"
+        ],
+        "slots": [
+          {
+            "atom": "a",
+            "position": 0,
+            "slot": "HEAD"
+          },
+          {
+            "atom": "i",
+            "position": 1,
+            "slot": "MOD"
+          },
+          {
+            "atom": "i",
+            "position": 2,
+            "slot": "MOD"
+          },
+          {
+            "atom": "n",
+            "position": 3,
+            "slot": "TERM"
+          }
+        ],
+        "head": "a",
+        "mods": [
+          "i",
+          "i"
+        ],
+        "term": "n",
+        "token_count": 834,
+        "category_dist": {
+          "TRANSITION": 1.0
+        }
+      },
+      "al": {
+        "sub_role": "HAZARD_TARGET",
+        "atoms": [
+          "a",
+          "l"
+        ],
+        "slots": [
+          {
+            "atom": "a",
+            "position": 0,
+            "slot": "HEAD"
+          },
+          {
+            "atom": "l",
+            "position": 1,
+            "slot": "TERM"
+          }
+        ],
+        "head": "a",
+        "mods": [],
+        "term": "l",
+        "token_count": 521,
+        "category_dist": {
+          "FLOW": 1.0
+        }
+      },
+      "ee": {
+        "sub_role": "HAZARD_TARGET",
+        "atoms": [
+          "e",
+          "e"
+        ],
+        "slots": [
+          {
+            "atom": "e",
+            "position": 0,
+            "slot": "HEAD"
+          },
+          {
+            "atom": "e",
+            "position": 1,
+            "slot": "HEAD"
+          }
+        ],
+        "head": "e",
+        "mods": [],
+        "term": "e",
+        "token_count": 151,
+        "category_dist": {
+          "THERMAL": 1.0
+        }
+      },
+      "o": {
+        "sub_role": "HAZARD_TARGET",
+        "atoms": [
+          "o"
+        ],
+        "slots": [
+          {
+            "atom": "o",
+            "position": 0,
+            "slot": "HEAD"
+          }
+        ],
+        "head": "o",
+        "mods": [],
+        "term": null,
+        "token_count": 388,
+        "category_dist": {
+          "OPERATION": 1.0
+        }
+      },
+      "r": {
+        "sub_role": "HAZARD_TARGET",
+        "atoms": [
+          "r"
+        ],
+        "slots": [
+          {
+            "atom": "r",
+            "position": 0,
+            "slot": "TERM"
+          }
+        ],
+        "head": "r",
+        "mods": [],
+        "term": null,
+        "token_count": 749,
+        "category_dist": {
+          "FLOW": 1.0
+        }
+      },
+      "t": {
+        "sub_role": "HAZARD_TARGET",
+        "atoms": [
+          "t"
+        ],
+        "slots": [
+          {
+            "atom": "t",
+            "position": 0,
+            "slot": "HEAD"
+          }
+        ],
+        "head": "t",
+        "mods": [],
+        "term": null,
+        "token_count": 576,
+        "category_dist": {
+          "FLOW": 1.0
+        }
+      },
+      "eol": {
+        "sub_role": "SAFETY_BUFFER",
+        "atoms": [
+          "e",
+          "o",
+          "l"
+        ],
+        "slots": [
+          {
+            "atom": "e",
+            "position": 0,
+            "slot": "HEAD"
+          },
+          {
+            "atom": "o",
+            "position": 1,
+            "slot": "HEAD"
+          },
+          {
+            "atom": "l",
+            "position": 2,
+            "slot": "TERM"
+          }
+        ],
+        "head": "e",
+        "mods": [
+          "o"
+        ],
+        "term": "l",
+        "token_count": 294,
+        "category_dist": {
+          "THERMAL": 1.0
+        }
+      },
+      "k": {
+        "sub_role": "SAFETY_BUFFER",
+        "atoms": [
+          "k"
+        ],
+        "slots": [
+          {
+            "atom": "k",
+            "position": 0,
+            "slot": "HEAD"
+          }
+        ],
+        "head": "k",
+        "mods": [],
+        "term": null,
+        "token_count": 2083,
+        "category_dist": {
+          "THERMAL": 1.0
+        }
+      },
+      "od": {
+        "sub_role": "SAFETY_BUFFER",
+        "atoms": [
+          "o",
+          "d"
+        ],
+        "slots": [
+          {
+            "atom": "o",
+            "position": 0,
+            "slot": "HEAD"
+          },
+          {
+            "atom": "d",
+            "position": 1,
+            "slot": "MOD"
+          }
+        ],
+        "head": "o",
+        "mods": [],
+        "term": "d",
+        "token_count": 177,
+        "category_dist": {
+          "null": 1.0
+        }
+      },
+      "d": {
+        "sub_role": "PURE_CONNECTOR",
+        "atoms": [
+          "d"
+        ],
+        "slots": [
+          {
+            "atom": "d",
+            "position": 0,
+            "slot": "MOD"
+          }
+        ],
+        "head": "d",
+        "mods": [],
+        "term": null,
+        "token_count": 337,
+        "category_dist": {
+          "MARKING": 1.0
+        }
+      },
+      "e": {
+        "sub_role": "PURE_CONNECTOR",
+        "atoms": [
+          "e"
+        ],
+        "slots": [
+          {
+            "atom": "e",
+            "position": 0,
+            "slot": "HEAD"
+          }
+        ],
+        "head": "e",
+        "mods": [],
+        "term": null,
+        "token_count": 867,
+        "category_dist": {
+          "THERMAL": 1.0
+        }
+      },
+      "eey": {
+        "sub_role": "PURE_CONNECTOR",
+        "atoms": [
+          "e",
+          "e",
+          "y"
+        ],
+        "slots": [
+          {
+            "atom": "e",
+            "position": 0,
+            "slot": "HEAD"
+          },
+          {
+            "atom": "e",
+            "position": 1,
+            "slot": "HEAD"
+          },
+          {
+            "atom": "y",
+            "position": 2,
+            "slot": "TERM"
+          }
+        ],
+        "head": "e",
+        "mods": [
+          "e"
+        ],
+        "term": "y",
+        "token_count": 644,
+        "category_dist": {
+          "THERMAL": 1.0
+        }
+      },
+      "ek": {
+        "sub_role": "PURE_CONNECTOR",
+        "atoms": [
+          "e",
+          "k"
+        ],
+        "slots": [
+          {
+            "atom": "e",
+            "position": 0,
+            "slot": "HEAD"
+          },
+          {
+            "atom": "k",
+            "position": 1,
+            "slot": "TERM"
+          }
+        ],
+        "head": "e",
+        "mods": [],
+        "term": "k",
+        "token_count": 169,
+        "category_dist": {
+          "OPERATION": 1.0
+        }
+      },
+      "eo": {
+        "sub_role": "PURE_CONNECTOR",
+        "atoms": [
+          "e",
+          "o"
+        ],
+        "slots": [
+          {
+            "atom": "e",
+            "position": 0,
+            "slot": "HEAD"
+          },
+          {
+            "atom": "o",
+            "position": 1,
+            "slot": "HEAD"
+          }
+        ],
+        "head": "e",
+        "mods": [],
+        "term": "o",
+        "token_count": 359,
+        "category_dist": {
+          "TRANSITION": 1.0
+        }
+      },
+      "iin": {
+        "sub_role": "PURE_CONNECTOR",
+        "atoms": [
+          "i",
+          "i",
+          "n"
+        ],
+        "slots": [
+          {
+            "atom": "i",
+            "position": 0,
+            "slot": "MOD"
+          },
+          {
+            "atom": "i",
+            "position": 1,
+            "slot": "MOD"
+          },
+          {
+            "atom": "n",
+            "position": 2,
+            "slot": "TERM"
+          }
+        ],
+        "head": "i",
+        "mods": [
+          "i"
+        ],
+        "term": "n",
+        "token_count": 560,
+        "category_dist": {
+          "STAGING": 1.0
+        }
+      },
+      "s": {
+        "sub_role": "PURE_CONNECTOR",
+        "atoms": [
+          "s"
+        ],
+        "slots": [
+          {
+            "atom": "s",
+            "position": 0,
+            "slot": "MOD"
+          }
+        ],
+        "head": "s",
+        "mods": [],
+        "term": null,
+        "token_count": 144,
+        "category_dist": {
+          "STAGING": 1.0
+        }
+      },
+      "y": {
+        "sub_role": "PURE_CONNECTOR",
+        "atoms": [
+          "y"
+        ],
+        "slots": [
+          {
+            "atom": "y",
+            "position": 0,
+            "slot": "TERM"
+          }
+        ],
+        "head": "y",
+        "mods": [],
+        "term": null,
+        "token_count": 513,
+        "category_dist": {
+          "TRANSITION": 1.0
+        }
+      }
+    },
+    "head_by_sub_role": {
+      "HAZARD_SOURCE": {
+        "a": 1,
+        "d": 1,
+        "e": 1,
+        "l": 1,
+        "o": 2
+      },
+      "HAZARD_TARGET": {
+        "a": 2,
+        "e": 1,
+        "o": 1,
+        "r": 1,
+        "t": 1
+      },
+      "SAFETY_BUFFER": {
+        "e": 1,
+        "k": 1,
+        "o": 1
+      },
+      "PURE_CONNECTOR": {
+        "d": 1,
+        "e": 4,
+        "i": 1,
+        "s": 1,
+        "y": 1
+      }
+    },
+    "term_by_sub_role": {
+      "HAZARD_SOURCE": {
+        "r": 2,
+        "y": 2,
+        "l": 1
+      },
+      "HAZARD_TARGET": {
+        "n": 1,
+        "l": 1,
+        "e": 1
+      },
+      "SAFETY_BUFFER": {
+        "l": 1,
+        "d": 1
+      },
+      "PURE_CONNECTOR": {
+        "y": 1,
+        "k": 1,
+        "o": 1,
+        "n": 1
+      }
+    },
+    "total_hub_middles": 23
+  },
+  "T2_hazard_class_signatures": {
+    "PHASE_ORDERING": {
+      "pairs": [
+        [
+          "chey",
+          "chedy"
+        ],
+        [
+          "chey",
+          "shedy"
+        ],
+        [
+          "chedy",
+          "ee"
+        ],
+        [
+          "shedy",
+          "aiin"
+        ],
+        [
+          "shedy",
+          "o"
+        ],
+        [
+          "shey",
+          "aiin"
+        ],
+        [
+          "shey",
+          "al"
+        ]
+      ],
+      "sources": [
+        "chedy",
+        "chey",
+        "shedy",
+        "shey"
+      ],
+      "targets": [
+        "aiin",
+        "al",
+        "chedy",
+        "ee",
+        "o",
+        "shedy"
+      ],
+      "source_atom_profile": {
+        "h": 4,
+        "e": 4,
+        "y": 4,
+        "s": 2,
+        "d": 2,
+        "c": 2
+      },
+      "target_atom_profile": {
+        "e": 4,
+        "a": 2,
+        "i": 2,
+        "h": 2,
+        "d": 2,
+        "y": 2,
+        "n": 1,
+        "o": 1,
+        "s": 1,
+        "l": 1,
+        "c": 1
+      },
+      "source_heads": {
+        "s": 2,
+        "c": 2
+      },
+      "source_terms": {
+        "y": 4
+      },
+      "target_heads": {
+        "a": 2,
+        "e": 1,
+        "o": 1,
+        "s": 1,
+        "c": 1
+      },
+      "target_terms": {
+        "n": 1,
+        "e": 1,
+        "y": 2,
+        "l": 1
+      },
+      "category_dist": {
+        "TRANSITION": 0.4403,
+        "FLOW": 0.2751,
+        "OPERATION": 0.2049,
+        "THERMAL": 0.0797
+      },
+      "n_pairs": 7
+    },
+    "COMPOSITION_JUMP": {
+      "pairs": [
+        [
+          "dy",
+          "aiin"
+        ],
+        [
+          "dy",
+          "chey"
+        ],
+        [
+          "ar",
+          "dal"
+        ],
+        [
+          "or",
+          "dal"
+        ]
+      ],
+      "sources": [
+        "ar",
+        "dy",
+        "or"
+      ],
+      "targets": [
+        "aiin",
+        "chey",
+        "dal"
+      ],
+      "source_atom_profile": {
+        "r": 2,
+        "o": 1,
+        "a": 1,
+        "d": 1,
+        "y": 1
+      },
+      "target_atom_profile": {
+        "a": 2,
+        "i": 2,
+        "d": 1,
+        "l": 1,
+        "n": 1,
+        "c": 1,
+        "h": 1,
+        "e": 1,
+        "y": 1
+      },
+      "source_heads": {
+        "o": 1,
+        "a": 1,
+        "d": 1
+      },
+      "source_terms": {
+        "r": 2,
+        "y": 1
+      },
+      "target_heads": {
+        "d": 1,
+        "a": 1,
+        "c": 1
+      },
+      "target_terms": {
+        "l": 1,
+        "n": 1,
+        "y": 1
+      },
+      "category_dist": {
+        "FLOW": 0.4254,
+        "TRANSITION": 0.3159,
+        "CONTAINMENT": 0.2557,
+        "MARKING": 0.003
+      },
+      "n_pairs": 4
+    },
+    "CONTAINMENT_TIMING": {
+      "pairs": [
+        [
+          "he",
+          "t"
+        ],
+        [
+          "he",
+          "or"
+        ],
+        [
+          "l",
+          "chol"
+        ],
+        [
+          "shey",
+          "c"
+        ]
+      ],
+      "sources": [
+        "he",
+        "l",
+        "shey"
+      ],
+      "targets": [
+        "c",
+        "chol",
+        "or",
+        "t"
+      ],
+      "source_atom_profile": {
+        "h": 2,
+        "e": 2,
+        "l": 1,
+        "s": 1,
+        "y": 1
+      },
+      "target_atom_profile": {
+        "o": 2,
+        "c": 2,
+        "t": 1,
+        "r": 1,
+        "h": 1,
+        "l": 1
+      },
+      "source_heads": {
+        "h": 1,
+        "l": 1,
+        "s": 1
+      },
+      "source_terms": {
+        "e": 1,
+        "y": 1
+      },
+      "target_heads": {
+        "t": 1,
+        "o": 1,
+        "c": 2
+      },
+      "target_terms": {
+        "r": 1,
+        "l": 1
+      },
+      "category_dist": {
+        "FLOW": 0.5425,
+        "STAGING": 0.4538,
+        "MARKING": 0.0027,
+        "MONITORING": 0.0011
+      },
+      "n_pairs": 4
+    },
+    "RATE_MISMATCH": {
+      "pairs": [
+        [
+          "c",
+          "ee"
+        ]
+      ],
+      "sources": [
+        "c"
+      ],
+      "targets": [
+        "ee"
+      ],
+      "source_atom_profile": {
+        "c": 1
+      },
+      "target_atom_profile": {
+        "e": 2
+      },
+      "source_heads": {
+        "c": 1
+      },
+      "source_terms": {},
+      "target_heads": {
+        "e": 1
+      },
+      "target_terms": {
+        "e": 1
+      },
+      "category_dist": {
+        "THERMAL": 0.9679,
+        "MARKING": 0.0321
+      },
+      "n_pairs": 1
+    },
+    "ENERGY_OVERSHOOT": {
+      "pairs": [
+        [
+          "chol",
+          "r"
+        ]
+      ],
+      "sources": [
+        "chol"
+      ],
+      "targets": [
+        "r"
+      ],
+      "source_atom_profile": {
+        "c": 1,
+        "h": 1,
+        "o": 1,
+        "l": 1
+      },
+      "target_atom_profile": {
+        "r": 1
+      },
+      "source_heads": {
+        "c": 1
+      },
+      "source_terms": {
+        "l": 1
+      },
+      "target_heads": {
+        "r": 1
+      },
+      "target_terms": {},
+      "category_dist": {
+        "FLOW": 1.0
+      },
+      "n_pairs": 1
+    }
+  },
+  "T3_head_atom_hazard": {
+    "a": {
+      "n_tokens": 3079,
+      "n_source_middles": 677,
+      "n_target_middles": 1355,
+      "n_any_hazard": 2032,
+      "source_rate": 0.2199,
+      "target_rate": 0.4401,
+      "any_hazard_rate": 0.66,
+      "n_forbidden_as_source": 1,
+      "n_forbidden_as_target": 10,
+      "category_dist": {
+        "FLOW": 0.5365,
+        "TRANSITION": 0.4099,
+        "STAGING": 0.0169,
+        "MARKING": 0.0117,
+        "null": 0.0104,
+        "THERMAL": 0.0058,
+        "CONTAINMENT": 0.0058,
+        "OPERATION": 0.0016,
+        "MONITORING": 0.0013
+      },
+      "hub_roles": {
+        "HAZARD_TARGET": 1355,
+        "HAZARD_SOURCE": 677
+      }
+    },
+    "c": {
+      "n_tokens": 617,
+      "n_source_middles": 5,
+      "n_target_middles": 5,
+      "n_any_hazard": 5,
+      "source_rate": 0.0081,
+      "target_rate": 0.0081,
+      "any_hazard_rate": 0.0081,
+      "n_forbidden_as_source": 0,
+      "n_forbidden_as_target": 0,
+      "category_dist": {
+        "OPERATION": 0.3193,
+        "MARKING": 0.2269,
+        "MONITORING": 0.222,
+        "CONTAINMENT": 0.2058,
+        "THERMAL": 0.013,
+        "FLOW": 0.013
+      },
+      "hub_roles": {}
+    },
+    "d": {
+      "n_tokens": 1142,
+      "n_source_middles": 675,
+      "n_target_middles": 8,
+      "n_any_hazard": 683,
+      "source_rate": 0.5911,
+      "target_rate": 0.007,
+      "any_hazard_rate": 0.5981,
+      "n_forbidden_as_source": 10,
+      "n_forbidden_as_target": 1,
+      "category_dist": {
+        "CONTAINMENT": 0.5911,
+        "MARKING": 0.373,
+        "FLOW": 0.0158,
+        "TRANSITION": 0.0149,
+        "STAGING": 0.0044,
+        "null": 0.0009
+      },
+      "hub_roles": {
+        "HAZARD_SOURCE": 675,
+        "PURE_CONNECTOR": 337
+      }
+    },
+    "e": {
+      "n_tokens": 7002,
+      "n_source_middles": 0,
+      "n_target_middles": 151,
+      "n_any_hazard": 151,
+      "source_rate": 0.0,
+      "target_rate": 0.0216,
+      "any_hazard_rate": 0.0216,
+      "n_forbidden_as_source": 0,
+      "n_forbidden_as_target": 0,
+      "category_dist": {
+        "THERMAL": 0.347,
+        "OPERATION": 0.3219,
+        "TRANSITION": 0.1905,
+        "FLOW": 0.0667,
+        "MARKING": 0.0281,
+        "CONTAINMENT": 0.0206,
+        "STAGING": 0.0126,
+        "MONITORING": 0.0126
+      },
+      "hub_roles": {
+        "HAZARD_SOURCE": 889,
+        "PURE_CONNECTOR": 2039,
+        "HAZARD_TARGET": 151,
+        "SAFETY_BUFFER": 294
+      }
+    },
+    "f": {
+      "n_tokens": 61,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "n_forbidden_as_source": 0,
+      "n_forbidden_as_target": 0,
+      "category_dist": {
+        "MARKING": 0.9344,
+        "TRANSITION": 0.0328,
+        "THERMAL": 0.0164,
+        "STAGING": 0.0164
+      },
+      "hub_roles": {}
+    },
+    "g": {
+      "n_tokens": 9,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "n_forbidden_as_source": 0,
+      "n_forbidden_as_target": 0,
+      "category_dist": {
+        "TRANSITION": 0.8889,
+        "THERMAL": 0.1111
+      },
+      "hub_roles": {}
+    },
+    "h": {
+      "n_tokens": 64,
+      "n_source_middles": 2,
+      "n_target_middles": 0,
+      "n_any_hazard": 2,
+      "source_rate": 0.0312,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0312,
+      "n_forbidden_as_source": 0,
+      "n_forbidden_as_target": 0,
+      "category_dist": {
+        "MONITORING": 0.9219,
+        "MARKING": 0.0312,
+        "THERMAL": 0.0156,
+        "FLOW": 0.0156,
+        "TRANSITION": 0.0156
+      },
+      "hub_roles": {}
+    },
+    "i": {
+      "n_tokens": 1055,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "n_forbidden_as_source": 0,
+      "n_forbidden_as_target": 0,
+      "category_dist": {
+        "STAGING": 0.7118,
+        "MARKING": 0.255,
+        "FLOW": 0.0294,
+        "MONITORING": 0.0019,
+        "OPERATION": 0.0009,
+        "THERMAL": 0.0009
+      },
+      "hub_roles": {
+        "PURE_CONNECTOR": 560
+      }
+    },
+    "k": {
+      "n_tokens": 3100,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "n_forbidden_as_source": 0,
+      "n_forbidden_as_target": 0,
+      "category_dist": {
+        "THERMAL": 0.9035,
+        "STAGING": 0.0294,
+        "FLOW": 0.0219,
+        "CONTAINMENT": 0.0106,
+        "MARKING": 0.0106,
+        "TRANSITION": 0.009,
+        "MONITORING": 0.0084,
+        "OPERATION": 0.0065
+      },
+      "hub_roles": {
+        "SAFETY_BUFFER": 2083
+      }
+    },
+    "l": {
+      "n_tokens": 1283,
+      "n_source_middles": 855,
+      "n_target_middles": 0,
+      "n_any_hazard": 855,
+      "source_rate": 0.6664,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.6664,
+      "n_forbidden_as_source": 0,
+      "n_forbidden_as_target": 0,
+      "category_dist": {
+        "STAGING": 0.7592,
+        "TRANSITION": 0.0655,
+        "OPERATION": 0.0592,
+        "MARKING": 0.0538,
+        "THERMAL": 0.0249,
+        "MONITORING": 0.0218,
+        "FLOW": 0.0156
+      },
+      "hub_roles": {
+        "HAZARD_SOURCE": 855
+      }
+    },
+    "m": {
+      "n_tokens": 77,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "n_forbidden_as_source": 0,
+      "n_forbidden_as_target": 0,
+      "category_dist": {
+        "TRANSITION": 0.987,
+        "MARKING": 0.013
+      },
+      "hub_roles": {}
+    },
+    "n": {
+      "n_tokens": 7,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "n_forbidden_as_source": 0,
+      "n_forbidden_as_target": 0,
+      "category_dist": {
+        "TRANSITION": 1.0
+      },
+      "hub_roles": {}
+    },
+    "o": {
+      "n_tokens": 2717,
+      "n_source_middles": 446,
+      "n_target_middles": 834,
+      "n_any_hazard": 834,
+      "source_rate": 0.1642,
+      "target_rate": 0.307,
+      "any_hazard_rate": 0.307,
+      "n_forbidden_as_source": 0,
+      "n_forbidden_as_target": 0,
+      "category_dist": {
+        "STAGING": 0.3018,
+        "OPERATION": 0.2381,
+        "FLOW": 0.187,
+        "MARKING": 0.1056,
+        "null": 0.0692,
+        "CONTAINMENT": 0.0375,
+        "THERMAL": 0.0232,
+        "MONITORING": 0.0232,
+        "TRANSITION": 0.0144
+      },
+      "hub_roles": {
+        "HAZARD_TARGET": 388,
+        "SAFETY_BUFFER": 177,
+        "HAZARD_SOURCE": 1208
+      }
+    },
+    "p": {
+      "n_tokens": 204,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "n_forbidden_as_source": 0,
+      "n_forbidden_as_target": 0,
+      "category_dist": {
+        "MARKING": 0.9363,
+        "FLOW": 0.0294,
+        "STAGING": 0.0196,
+        "THERMAL": 0.0098,
+        "TRANSITION": 0.0049
+      },
+      "hub_roles": {}
+    },
+    "q": {
+      "n_tokens": 114,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "n_forbidden_as_source": 0,
+      "n_forbidden_as_target": 0,
+      "category_dist": {
+        "null": 1.0
+      },
+      "hub_roles": {}
+    },
+    "r": {
+      "n_tokens": 871,
+      "n_source_middles": 0,
+      "n_target_middles": 749,
+      "n_any_hazard": 749,
+      "source_rate": 0.0,
+      "target_rate": 0.8599,
+      "any_hazard_rate": 0.8599,
+      "n_forbidden_as_source": 0,
+      "n_forbidden_as_target": 0,
+      "category_dist": {
+        "FLOW": 0.9449,
+        "TRANSITION": 0.0402,
+        "STAGING": 0.0103,
+        "MARKING": 0.0023,
+        "THERMAL": 0.0023
+      },
+      "hub_roles": {
+        "HAZARD_TARGET": 749
+      }
+    },
+    "s": {
+      "n_tokens": 176,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "n_forbidden_as_source": 0,
+      "n_forbidden_as_target": 0,
+      "category_dist": {
+        "STAGING": 0.875,
+        "MARKING": 0.0568,
+        "MONITORING": 0.0284,
+        "OPERATION": 0.017,
+        "THERMAL": 0.0114,
+        "FLOW": 0.0057,
+        "TRANSITION": 0.0057
+      },
+      "hub_roles": {
+        "PURE_CONNECTOR": 144
+      }
+    },
+    "t": {
+      "n_tokens": 921,
+      "n_source_middles": 0,
+      "n_target_middles": 576,
+      "n_any_hazard": 576,
+      "source_rate": 0.0,
+      "target_rate": 0.6254,
+      "any_hazard_rate": 0.6254,
+      "n_forbidden_as_source": 0,
+      "n_forbidden_as_target": 0,
+      "category_dist": {
+        "FLOW": 0.8686,
+        "OPERATION": 0.0738,
+        "THERMAL": 0.0315,
+        "MARKING": 0.0185,
+        "STAGING": 0.0065,
+        "null": 0.0011
+      },
+      "hub_roles": {
+        "HAZARD_TARGET": 576
+      }
+    },
+    "x": {
+      "n_tokens": 13,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "n_forbidden_as_source": 0,
+      "n_forbidden_as_target": 0,
+      "category_dist": {
+        "MARKING": 0.9231,
+        "THERMAL": 0.0769
+      },
+      "hub_roles": {}
+    },
+    "y": {
+      "n_tokens": 584,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "n_forbidden_as_source": 0,
+      "n_forbidden_as_target": 0,
+      "category_dist": {
+        "TRANSITION": 0.8836,
+        "MARKING": 0.0377,
+        "FLOW": 0.036,
+        "THERMAL": 0.0274,
+        "STAGING": 0.0137,
+        "MONITORING": 0.0017
+      },
+      "hub_roles": {
+        "PURE_CONNECTOR": 513
+      }
+    }
+  },
+  "T4_terminal_atom_hazard": {
+    "a": {
+      "n_tokens": 127,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "flow_containment_rate": 0.126,
+      "category_dist": {
+        "THERMAL": 0.4016,
+        "MARKING": 0.2047,
+        "TRANSITION": 0.1732,
+        "FLOW": 0.126,
+        "STAGING": 0.063,
+        "OPERATION": 0.0315
+      }
+    },
+    "c": {
+      "n_tokens": 217,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "flow_containment_rate": 0.3134,
+      "category_dist": {
+        "MARKING": 0.4608,
+        "THERMAL": 0.2028,
+        "FLOW": 0.1613,
+        "CONTAINMENT": 0.1521,
+        "STAGING": 0.0092,
+        "null": 0.0046,
+        "OPERATION": 0.0046,
+        "TRANSITION": 0.0046
+      }
+    },
+    "d": {
+      "n_tokens": 1143,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "flow_containment_rate": 0.4418,
+      "category_dist": {
+        "FLOW": 0.4418,
+        "MARKING": 0.1697,
+        "null": 0.1619,
+        "THERMAL": 0.1409,
+        "TRANSITION": 0.0752,
+        "STAGING": 0.0079,
+        "OPERATION": 0.0026
+      }
+    },
+    "e": {
+      "n_tokens": 928,
+      "n_source_middles": 2,
+      "n_target_middles": 151,
+      "n_any_hazard": 153,
+      "source_rate": 0.0022,
+      "target_rate": 0.1627,
+      "any_hazard_rate": 0.1649,
+      "flow_containment_rate": 0.1099,
+      "category_dist": {
+        "THERMAL": 0.7985,
+        "FLOW": 0.1099,
+        "MARKING": 0.0506,
+        "null": 0.0172,
+        "OPERATION": 0.0151,
+        "STAGING": 0.0054,
+        "MONITORING": 0.0032
+      }
+    },
+    "f": {
+      "n_tokens": 64,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "flow_containment_rate": 0.0469,
+      "category_dist": {
+        "MARKING": 0.7812,
+        "THERMAL": 0.1406,
+        "FLOW": 0.0469,
+        "null": 0.0312
+      }
+    },
+    "g": {
+      "n_tokens": 2,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "flow_containment_rate": 0.0,
+      "category_dist": {
+        "STAGING": 0.5,
+        "OPERATION": 0.5
+      }
+    },
+    "h": {
+      "n_tokens": 1236,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "flow_containment_rate": 0.1659,
+      "category_dist": {
+        "MARKING": 0.3058,
+        "OPERATION": 0.1998,
+        "THERMAL": 0.1545,
+        "MONITORING": 0.1319,
+        "CONTAINMENT": 0.1028,
+        "FLOW": 0.0631,
+        "STAGING": 0.0235,
+        "null": 0.0186
+      }
+    },
+    "i": {
+      "n_tokens": 428,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "flow_containment_rate": 0.0584,
+      "category_dist": {
+        "TRANSITION": 0.4229,
+        "STAGING": 0.229,
+        "MARKING": 0.1402,
+        "null": 0.0771,
+        "FLOW": 0.0584,
+        "OPERATION": 0.0421,
+        "THERMAL": 0.0304
+      }
+    },
+    "k": {
+      "n_tokens": 909,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "flow_containment_rate": 0.275,
+      "category_dist": {
+        "OPERATION": 0.4125,
+        "CONTAINMENT": 0.2706,
+        "THERMAL": 0.1474,
+        "STAGING": 0.0979,
+        "MARKING": 0.0418,
+        "null": 0.0242,
+        "FLOW": 0.0044,
+        "TRANSITION": 0.0011
+      }
+    },
+    "l": {
+      "n_tokens": 1713,
+      "n_source_middles": 0,
+      "n_target_middles": 529,
+      "n_any_hazard": 529,
+      "source_rate": 0.0,
+      "target_rate": 0.3088,
+      "any_hazard_rate": 0.3088,
+      "flow_containment_rate": 0.3088,
+      "category_dist": {
+        "STAGING": 0.4676,
+        "FLOW": 0.3088,
+        "THERMAL": 0.2014,
+        "MARKING": 0.0163,
+        "OPERATION": 0.0047,
+        "null": 0.0006,
+        "TRANSITION": 0.0006
+      }
+    },
+    "m": {
+      "n_tokens": 213,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "flow_containment_rate": 0.0,
+      "category_dist": {
+        "TRANSITION": 0.8357,
+        "OPERATION": 0.1221,
+        "STAGING": 0.0423
+      }
+    },
+    "n": {
+      "n_tokens": 2140,
+      "n_source_middles": 0,
+      "n_target_middles": 834,
+      "n_any_hazard": 834,
+      "source_rate": 0.0,
+      "target_rate": 0.3897,
+      "any_hazard_rate": 0.3897,
+      "flow_containment_rate": 0.2047,
+      "category_dist": {
+        "TRANSITION": 0.3911,
+        "STAGING": 0.278,
+        "FLOW": 0.1963,
+        "MARKING": 0.1234,
+        "CONTAINMENT": 0.0084,
+        "OPERATION": 0.0028
+      }
+    },
+    "o": {
+      "n_tokens": 901,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "flow_containment_rate": 0.0866,
+      "category_dist": {
+        "TRANSITION": 0.4661,
+        "OPERATION": 0.2364,
+        "FLOW": 0.0866,
+        "MARKING": 0.0655,
+        "THERMAL": 0.061,
+        "STAGING": 0.0544,
+        "null": 0.0266,
+        "MONITORING": 0.0033
+      }
+    },
+    "p": {
+      "n_tokens": 105,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "flow_containment_rate": 0.0095,
+      "category_dist": {
+        "MARKING": 0.6,
+        "TRANSITION": 0.3429,
+        "THERMAL": 0.019,
+        "OPERATION": 0.0095,
+        "STAGING": 0.0095,
+        "FLOW": 0.0095,
+        "null": 0.0095
+      }
+    },
+    "q": {
+      "n_tokens": 3,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "flow_containment_rate": 0.0,
+      "category_dist": {
+        "null": 1.0
+      }
+    },
+    "r": {
+      "n_tokens": 1213,
+      "n_source_middles": 1123,
+      "n_target_middles": 446,
+      "n_any_hazard": 1123,
+      "source_rate": 0.9258,
+      "target_rate": 0.3677,
+      "any_hazard_rate": 0.9258,
+      "flow_containment_rate": 0.9819,
+      "category_dist": {
+        "FLOW": 0.9819,
+        "STAGING": 0.0074,
+        "OPERATION": 0.0033,
+        "THERMAL": 0.0033,
+        "MARKING": 0.0016,
+        "TRANSITION": 0.0016,
+        "null": 0.0008
+      }
+    },
+    "s": {
+      "n_tokens": 146,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "flow_containment_rate": 0.0685,
+      "category_dist": {
+        "STAGING": 0.3973,
+        "THERMAL": 0.1986,
+        "MARKING": 0.1849,
+        "OPERATION": 0.1233,
+        "FLOW": 0.0685,
+        "null": 0.0205,
+        "TRANSITION": 0.0068
+      }
+    },
+    "t": {
+      "n_tokens": 385,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "flow_containment_rate": 0.239,
+      "category_dist": {
+        "MONITORING": 0.4883,
+        "FLOW": 0.239,
+        "STAGING": 0.1558,
+        "THERMAL": 0.0727,
+        "null": 0.026,
+        "MARKING": 0.013,
+        "OPERATION": 0.0026,
+        "TRANSITION": 0.0026
+      }
+    },
+    "x": {
+      "n_tokens": 13,
+      "n_source_middles": 0,
+      "n_target_middles": 0,
+      "n_any_hazard": 0,
+      "source_rate": 0.0,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.0,
+      "flow_containment_rate": 0.0769,
+      "category_dist": {
+        "OPERATION": 0.3077,
+        "STAGING": 0.3077,
+        "MARKING": 0.1538,
+        "TRANSITION": 0.1538,
+        "FLOW": 0.0769
+      }
+    },
+    "y": {
+      "n_tokens": 4267,
+      "n_source_middles": 675,
+      "n_target_middles": 0,
+      "n_any_hazard": 675,
+      "source_rate": 0.1582,
+      "target_rate": 0.0,
+      "any_hazard_rate": 0.1582,
+      "flow_containment_rate": 0.1603,
+      "category_dist": {
+        "OPERATION": 0.4544,
+        "TRANSITION": 0.2283,
+        "CONTAINMENT": 0.1582,
+        "THERMAL": 0.1526,
+        "MARKING": 0.0023,
+        "FLOW": 0.0021,
+        "MONITORING": 0.0019,
+        "null": 0.0002
+      }
+    }
+  },
+  "T5_frame_hazard_map": {
+    "matrix": {
+      "a": {
+        "_NONE_": {
+          "n": 64,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 64
+          }
+        },
+        "a": {
+          "n": 6,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 4,
+            "STAGING": 2
+          }
+        },
+        "c": {
+          "n": 8,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 3,
+            "FLOW": 3,
+            "STAGING": 1
+          }
+        },
+        "d": {
+          "n": 23,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 15,
+            "FLOW": 3,
+            "TRANSITION": 3
+          }
+        },
+        "e": {
+          "n": 4,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 3,
+            "MARKING": 1
+          }
+        },
+        "f": {
+          "n": 3,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 3
+          }
+        },
+        "h": {
+          "n": 21,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 7,
+            "MARKING": 7,
+            "MONITORING": 4
+          }
+        },
+        "i": {
+          "n": 209,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 176,
+            "null": 32,
+            "STAGING": 1
+          }
+        },
+        "k": {
+          "n": 32,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 19,
+            "THERMAL": 12,
+            "MARKING": 1
+          }
+        },
+        "l": {
+          "n": 527,
+          "hazard_n": 521,
+          "hazard_rate": 0.9886,
+          "top_categories": {
+            "FLOW": 521,
+            "STAGING": 5,
+            "TRANSITION": 1
+          }
+        },
+        "m": {
+          "n": 174,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 174
+          }
+        },
+        "n": {
+          "n": 1272,
+          "hazard_n": 834,
+          "hazard_rate": 0.6557,
+          "top_categories": {
+            "TRANSITION": 834,
+            "FLOW": 420,
+            "CONTAINMENT": 18
+          }
+        },
+        "o": {
+          "n": 25,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 11,
+            "OPERATION": 5,
+            "STAGING": 4
+          }
+        },
+        "p": {
+          "n": 6,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 4,
+            "STAGING": 1,
+            "FLOW": 1
+          }
+        },
+        "r": {
+          "n": 687,
+          "hazard_n": 677,
+          "hazard_rate": 0.9854,
+          "top_categories": {
+            "FLOW": 683,
+            "STAGING": 3,
+            "TRANSITION": 1
+          }
+        },
+        "s": {
+          "n": 6,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 6
+          }
+        },
+        "t": {
+          "n": 9,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 8,
+            "STAGING": 1
+          }
+        },
+        "x": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 1,
+            "STAGING": 1
+          }
+        },
+        "y": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 1
+          }
+        }
+      },
+      "c": {
+        "_NONE_": {
+          "n": 5,
+          "hazard_n": 5,
+          "hazard_rate": 1.0,
+          "top_categories": {
+            "MARKING": 5
+          }
+        },
+        "a": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 1,
+            "MARKING": 1
+          }
+        },
+        "c": {
+          "n": 5,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 5
+          }
+        },
+        "d": {
+          "n": 17,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 16,
+            "THERMAL": 1
+          }
+        },
+        "e": {
+          "n": 9,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 6,
+            "THERMAL": 2,
+            "FLOW": 1
+          }
+        },
+        "f": {
+          "n": 5,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 5
+          }
+        },
+        "h": {
+          "n": 233,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "CONTAINMENT": 127,
+            "MARKING": 64,
+            "MONITORING": 42
+          }
+        },
+        "i": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 1
+          }
+        },
+        "k": {
+          "n": 200,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "OPERATION": 197,
+            "THERMAL": 2,
+            "MARKING": 1
+          }
+        },
+        "o": {
+          "n": 17,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 9,
+            "FLOW": 5,
+            "THERMAL": 3
+          }
+        },
+        "p": {
+          "n": 10,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 10
+          }
+        },
+        "r": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1
+          }
+        },
+        "s": {
+          "n": 14,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 14
+          }
+        },
+        "t": {
+          "n": 96,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MONITORING": 95,
+            "MARKING": 1
+          }
+        },
+        "y": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 2
+          }
+        }
+      },
+      "d": {
+        "_NONE_": {
+          "n": 337,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 337
+          }
+        },
+        "a": {
+          "n": 15,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 14,
+            "MARKING": 1
+          }
+        },
+        "c": {
+          "n": 4,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 4
+          }
+        },
+        "d": {
+          "n": 6,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 6
+          }
+        },
+        "e": {
+          "n": 6,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 6
+          }
+        },
+        "h": {
+          "n": 14,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 13,
+            "FLOW": 1
+          }
+        },
+        "i": {
+          "n": 27,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 23,
+            "STAGING": 2,
+            "TRANSITION": 2
+          }
+        },
+        "k": {
+          "n": 6,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 6
+          }
+        },
+        "l": {
+          "n": 13,
+          "hazard_n": 8,
+          "hazard_rate": 0.6154,
+          "top_categories": {
+            "MARKING": 12,
+            "STAGING": 1
+          }
+        },
+        "o": {
+          "n": 17,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 13,
+            "FLOW": 3,
+            "null": 1
+          }
+        },
+        "p": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1
+          }
+        },
+        "r": {
+          "n": 4,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 4
+          }
+        },
+        "s": {
+          "n": 4,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 2,
+            "STAGING": 1,
+            "FLOW": 1
+          }
+        },
+        "t": {
+          "n": 8,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 8
+          }
+        },
+        "x": {
+          "n": 3,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1,
+            "STAGING": 1,
+            "FLOW": 1
+          }
+        },
+        "y": {
+          "n": 677,
+          "hazard_n": 675,
+          "hazard_rate": 0.997,
+          "top_categories": {
+            "CONTAINMENT": 675,
+            "TRANSITION": 1,
+            "MARKING": 1
+          }
+        }
+      },
+      "e": {
+        "_NONE_": {
+          "n": 867,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 867
+          }
+        },
+        "a": {
+          "n": 35,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 22,
+            "MARKING": 9,
+            "TRANSITION": 2
+          }
+        },
+        "c": {
+          "n": 58,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 37,
+            "THERMAL": 20,
+            "FLOW": 1
+          }
+        },
+        "d": {
+          "n": 623,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 403,
+            "THERMAL": 123,
+            "TRANSITION": 82
+          }
+        },
+        "e": {
+          "n": 200,
+          "hazard_n": 151,
+          "hazard_rate": 0.755,
+          "top_categories": {
+            "THERMAL": 200
+          }
+        },
+        "f": {
+          "n": 20,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 11,
+            "THERMAL": 9
+          }
+        },
+        "h": {
+          "n": 147,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 63,
+            "MONITORING": 38,
+            "THERMAL": 22
+          }
+        },
+        "i": {
+          "n": 25,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 13,
+            "THERMAL": 9,
+            "STAGING": 3
+          }
+        },
+        "k": {
+          "n": 405,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "OPERATION": 170,
+            "CONTAINMENT": 144,
+            "THERMAL": 90
+          }
+        },
+        "l": {
+          "n": 356,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 344,
+            "STAGING": 7,
+            "MARKING": 5
+          }
+        },
+        "m": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 1
+          }
+        },
+        "n": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 1
+          }
+        },
+        "o": {
+          "n": 544,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 359,
+            "OPERATION": 144,
+            "THERMAL": 28
+          }
+        },
+        "p": {
+          "n": 30,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 28,
+            "THERMAL": 2
+          }
+        },
+        "r": {
+          "n": 15,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 12,
+            "THERMAL": 3
+          }
+        },
+        "s": {
+          "n": 40,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 19,
+            "STAGING": 17,
+            "MARKING": 3
+          }
+        },
+        "t": {
+          "n": 159,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 58,
+            "MONITORING": 47,
+            "THERMAL": 27
+          }
+        },
+        "x": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1
+          }
+        },
+        "y": {
+          "n": 3475,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "OPERATION": 1938,
+            "TRANSITION": 889,
+            "THERMAL": 645
+          }
+        }
+      },
+      "f": {
+        "_NONE_": {
+          "n": 17,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 17
+          }
+        },
+        "c": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1
+          }
+        },
+        "d": {
+          "n": 7,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 7
+          }
+        },
+        "e": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 1,
+            "MARKING": 1
+          }
+        },
+        "h": {
+          "n": 26,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 26
+          }
+        },
+        "i": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1
+          }
+        },
+        "k": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1
+          }
+        },
+        "m": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 2
+          }
+        },
+        "o": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1
+          }
+        },
+        "p": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1
+          }
+        },
+        "r": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 1
+          }
+        },
+        "s": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1
+          }
+        }
+      },
+      "g": {
+        "_NONE_": {
+          "n": 8,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 8
+          }
+        },
+        "e": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 1
+          }
+        }
+      },
+      "h": {
+        "_NONE_": {
+          "n": 48,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MONITORING": 48
+          }
+        },
+        "a": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1
+          }
+        },
+        "d": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 1
+          }
+        },
+        "e": {
+          "n": 2,
+          "hazard_n": 2,
+          "hazard_rate": 1.0,
+          "top_categories": {
+            "MONITORING": 2
+          }
+        },
+        "h": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MONITORING": 1
+          }
+        },
+        "p": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1
+          }
+        },
+        "t": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 1,
+            "FLOW": 1
+          }
+        },
+        "y": {
+          "n": 8,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MONITORING": 8
+          }
+        }
+      },
+      "i": {
+        "_NONE_": {
+          "n": 137,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 137
+          }
+        },
+        "c": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 1,
+            "MARKING": 1
+          }
+        },
+        "d": {
+          "n": 3,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 2,
+            "MARKING": 1
+          }
+        },
+        "h": {
+          "n": 9,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 3,
+            "STAGING": 3,
+            "MONITORING": 2
+          }
+        },
+        "i": {
+          "n": 26,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 26
+          }
+        },
+        "k": {
+          "n": 4,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 3,
+            "THERMAL": 1
+          }
+        },
+        "l": {
+          "n": 4,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 4
+          }
+        },
+        "m": {
+          "n": 8,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 8
+          }
+        },
+        "n": {
+          "n": 825,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 561,
+            "MARKING": 264
+          }
+        },
+        "o": {
+          "n": 6,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 5,
+            "OPERATION": 1
+          }
+        },
+        "p": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 2
+          }
+        },
+        "r": {
+          "n": 22,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 19,
+            "STAGING": 3
+          }
+        },
+        "s": {
+          "n": 3,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 3
+          }
+        },
+        "t": {
+          "n": 3,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 3
+          }
+        },
+        "y": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 1
+          }
+        }
+      },
+      "k": {
+        "_NONE_": {
+          "n": 2083,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 2083
+          }
+        },
+        "a": {
+          "n": 27,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 27
+          }
+        },
+        "c": {
+          "n": 56,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "CONTAINMENT": 33,
+            "THERMAL": 22,
+            "MARKING": 1
+          }
+        },
+        "d": {
+          "n": 93,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 63,
+            "MARKING": 19,
+            "THERMAL": 11
+          }
+        },
+        "e": {
+          "n": 464,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 464
+          }
+        },
+        "h": {
+          "n": 202,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 167,
+            "MONITORING": 26,
+            "MARKING": 6
+          }
+        },
+        "i": {
+          "n": 34,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 31,
+            "THERMAL": 3
+          }
+        },
+        "k": {
+          "n": 6,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 6
+          }
+        },
+        "l": {
+          "n": 15,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 12,
+            "OPERATION": 2,
+            "THERMAL": 1
+          }
+        },
+        "m": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 1
+          }
+        },
+        "o": {
+          "n": 92,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 38,
+            "TRANSITION": 26,
+            "OPERATION": 18
+          }
+        },
+        "p": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1
+          }
+        },
+        "r": {
+          "n": 7,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 5,
+            "MARKING": 1,
+            "TRANSITION": 1
+          }
+        },
+        "s": {
+          "n": 12,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 7,
+            "THERMAL": 4,
+            "MARKING": 1
+          }
+        },
+        "y": {
+          "n": 7,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 6,
+            "MARKING": 1
+          }
+        }
+      },
+      "l": {
+        "_NONE_": {
+          "n": 855,
+          "hazard_n": 855,
+          "hazard_rate": 1.0,
+          "top_categories": {
+            "STAGING": 855
+          }
+        },
+        "a": {
+          "n": 7,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 3,
+            "MARKING": 2,
+            "OPERATION": 1
+          }
+        },
+        "c": {
+          "n": 14,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 14
+          }
+        },
+        "d": {
+          "n": 38,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 30,
+            "STAGING": 6,
+            "THERMAL": 2
+          }
+        },
+        "e": {
+          "n": 38,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 24,
+            "MARKING": 6,
+            "STAGING": 5
+          }
+        },
+        "f": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 2
+          }
+        },
+        "g": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 1
+          }
+        },
+        "h": {
+          "n": 118,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "OPERATION": 74,
+            "MONITORING": 28,
+            "STAGING": 8
+          }
+        },
+        "i": {
+          "n": 9,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 9
+          }
+        },
+        "k": {
+          "n": 64,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 59,
+            "MARKING": 3,
+            "THERMAL": 1
+          }
+        },
+        "l": {
+          "n": 5,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 5
+          }
+        },
+        "m": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 1
+          }
+        },
+        "n": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 1
+          }
+        },
+        "o": {
+          "n": 41,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 33,
+            "STAGING": 5,
+            "THERMAL": 2
+          }
+        },
+        "p": {
+          "n": 4,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 4
+          }
+        },
+        "r": {
+          "n": 9,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 7,
+            "THERMAL": 1,
+            "STAGING": 1
+          }
+        },
+        "s": {
+          "n": 14,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 13,
+            "THERMAL": 1
+          }
+        },
+        "t": {
+          "n": 9,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 8,
+            "STAGING": 1
+          }
+        },
+        "x": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 2
+          }
+        },
+        "y": {
+          "n": 51,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 50,
+            "MARKING": 1
+          }
+        }
+      },
+      "m": {
+        "_NONE_": {
+          "n": 76,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 76
+          }
+        },
+        "d": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1
+          }
+        }
+      },
+      "n": {
+        "_NONE_": {
+          "n": 7,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 7
+          }
+        }
+      },
+      "o": {
+        "_NONE_": {
+          "n": 388,
+          "hazard_n": 388,
+          "hazard_rate": 1.0,
+          "top_categories": {
+            "OPERATION": 388
+          }
+        },
+        "a": {
+          "n": 16,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 11,
+            "OPERATION": 2,
+            "THERMAL": 2
+          }
+        },
+        "c": {
+          "n": 29,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 23,
+            "FLOW": 3,
+            "THERMAL": 2
+          }
+        },
+        "d": {
+          "n": 235,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "null": 177,
+            "MARKING": 43,
+            "THERMAL": 11
+          }
+        },
+        "e": {
+          "n": 66,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 31,
+            "MARKING": 18,
+            "OPERATION": 14
+          }
+        },
+        "f": {
+          "n": 25,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 25
+          }
+        },
+        "g": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "OPERATION": 1
+          }
+        },
+        "h": {
+          "n": 252,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "OPERATION": 108,
+            "MARKING": 97,
+            "FLOW": 26
+          }
+        },
+        "i": {
+          "n": 55,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 18,
+            "OPERATION": 18,
+            "STAGING": 15
+          }
+        },
+        "k": {
+          "n": 144,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "CONTAINMENT": 102,
+            "MARKING": 23,
+            "THERMAL": 9
+          }
+        },
+        "l": {
+          "n": 777,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 762,
+            "MARKING": 9,
+            "OPERATION": 6
+          }
+        },
+        "m": {
+          "n": 26,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "OPERATION": 26
+          }
+        },
+        "n": {
+          "n": 39,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 33,
+            "OPERATION": 6
+          }
+        },
+        "o": {
+          "n": 55,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "OPERATION": 39,
+            "MARKING": 9,
+            "THERMAL": 4
+          }
+        },
+        "p": {
+          "n": 41,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 36,
+            "MARKING": 4,
+            "OPERATION": 1
+          }
+        },
+        "q": {
+          "n": 3,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "null": 3
+          }
+        },
+        "r": {
+          "n": 455,
+          "hazard_n": 446,
+          "hazard_rate": 0.9802,
+          "top_categories": {
+            "FLOW": 450,
+            "OPERATION": 4,
+            "STAGING": 1
+          }
+        },
+        "s": {
+          "n": 29,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "OPERATION": 17,
+            "STAGING": 4,
+            "THERMAL": 3
+          }
+        },
+        "t": {
+          "n": 72,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MONITORING": 46,
+            "FLOW": 21,
+            "MARKING": 2
+          }
+        },
+        "x": {
+          "n": 5,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "OPERATION": 4,
+            "TRANSITION": 1
+          }
+        },
+        "y": {
+          "n": 4,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 2,
+            "FLOW": 1,
+            "OPERATION": 1
+          }
+        }
+      },
+      "p": {
+        "_NONE_": {
+          "n": 47,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 47
+          }
+        },
+        "a": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1,
+            "TRANSITION": 1
+          }
+        },
+        "c": {
+          "n": 11,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 11
+          }
+        },
+        "d": {
+          "n": 16,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 15,
+            "THERMAL": 1
+          }
+        },
+        "e": {
+          "n": 8,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 7,
+            "THERMAL": 1
+          }
+        },
+        "f": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1
+          }
+        },
+        "h": {
+          "n": 87,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 87
+          }
+        },
+        "i": {
+          "n": 7,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 5,
+            "STAGING": 2
+          }
+        },
+        "k": {
+          "n": 3,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 2,
+            "STAGING": 1
+          }
+        },
+        "l": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1
+          }
+        },
+        "o": {
+          "n": 12,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 10,
+            "FLOW": 1,
+            "STAGING": 1
+          }
+        },
+        "r": {
+          "n": 5,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 5
+          }
+        },
+        "s": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 2
+          }
+        },
+        "t": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1
+          }
+        },
+        "y": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1
+          }
+        }
+      },
+      "q": {
+        "_NONE_": {
+          "n": 10,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "null": 10
+          }
+        },
+        "c": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "null": 1
+          }
+        },
+        "d": {
+          "n": 8,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "null": 8
+          }
+        },
+        "e": {
+          "n": 16,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "null": 16
+          }
+        },
+        "f": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "null": 2
+          }
+        },
+        "h": {
+          "n": 22,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "null": 22
+          }
+        },
+        "k": {
+          "n": 19,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "null": 19
+          }
+        },
+        "l": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "null": 1
+          }
+        },
+        "o": {
+          "n": 21,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "null": 21
+          }
+        },
+        "p": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "null": 1
+          }
+        },
+        "r": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "null": 1
+          }
+        },
+        "s": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "null": 2
+          }
+        },
+        "t": {
+          "n": 9,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "null": 9
+          }
+        },
+        "y": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "null": 1
+          }
+        }
+      },
+      "r": {
+        "_NONE_": {
+          "n": 749,
+          "hazard_n": 749,
+          "hazard_rate": 1.0,
+          "top_categories": {
+            "FLOW": 749
+          }
+        },
+        "a": {
+          "n": 3,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 3
+          }
+        },
+        "c": {
+          "n": 7,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 7
+          }
+        },
+        "d": {
+          "n": 14,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 12,
+            "MARKING": 2
+          }
+        },
+        "e": {
+          "n": 3,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 2,
+            "THERMAL": 1
+          }
+        },
+        "f": {
+          "n": 3,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 3
+          }
+        },
+        "h": {
+          "n": 10,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 9,
+            "STAGING": 1
+          }
+        },
+        "i": {
+          "n": 15,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 12,
+            "STAGING": 3
+          }
+        },
+        "k": {
+          "n": 3,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 1,
+            "FLOW": 1,
+            "THERMAL": 1
+          }
+        },
+        "l": {
+          "n": 3,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 3
+          }
+        },
+        "n": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 1,
+            "TRANSITION": 1
+          }
+        },
+        "o": {
+          "n": 15,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 15
+          }
+        },
+        "r": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 1
+          }
+        },
+        "s": {
+          "n": 6,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 3,
+            "FLOW": 2,
+            "TRANSITION": 1
+          }
+        },
+        "t": {
+          "n": 3,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 3
+          }
+        },
+        "y": {
+          "n": 34,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 33,
+            "FLOW": 1
+          }
+        }
+      },
+      "s": {
+        "_NONE_": {
+          "n": 144,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 144
+          }
+        },
+        "a": {
+          "n": 3,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 3
+          }
+        },
+        "d": {
+          "n": 6,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 6
+          }
+        },
+        "e": {
+          "n": 3,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 2,
+            "MARKING": 1
+          }
+        },
+        "h": {
+          "n": 5,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MONITORING": 5
+          }
+        },
+        "i": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 2
+          }
+        },
+        "k": {
+          "n": 3,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 2,
+            "TRANSITION": 1
+          }
+        },
+        "l": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 1
+          }
+        },
+        "o": {
+          "n": 4,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "OPERATION": 3,
+            "MARKING": 1
+          }
+        },
+        "p": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 2
+          }
+        },
+        "r": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 1
+          }
+        },
+        "s": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 2
+          }
+        }
+      },
+      "t": {
+        "_NONE_": {
+          "n": 576,
+          "hazard_n": 576,
+          "hazard_rate": 1.0,
+          "top_categories": {
+            "FLOW": 576
+          }
+        },
+        "a": {
+          "n": 10,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 10
+          }
+        },
+        "c": {
+          "n": 21,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 21
+          }
+        },
+        "d": {
+          "n": 46,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 21,
+            "MARKING": 15,
+            "THERMAL": 10
+          }
+        },
+        "e": {
+          "n": 101,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 93,
+            "THERMAL": 8
+          }
+        },
+        "f": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1
+          }
+        },
+        "h": {
+          "n": 77,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "OPERATION": 65,
+            "FLOW": 12
+          }
+        },
+        "i": {
+          "n": 13,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 10,
+            "STAGING": 3
+          }
+        },
+        "k": {
+          "n": 4,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 2,
+            "STAGING": 1,
+            "null": 1
+          }
+        },
+        "l": {
+          "n": 5,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 5
+          }
+        },
+        "o": {
+          "n": 48,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 36,
+            "THERMAL": 9,
+            "OPERATION": 3
+          }
+        },
+        "r": {
+          "n": 3,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 3
+          }
+        },
+        "s": {
+          "n": 9,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 5,
+            "THERMAL": 2,
+            "STAGING": 2
+          }
+        },
+        "t": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 2
+          }
+        },
+        "y": {
+          "n": 5,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 4,
+            "MARKING": 1
+          }
+        }
+      },
+      "x": {
+        "_NONE_": {
+          "n": 12,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 12
+          }
+        },
+        "e": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 1
+          }
+        }
+      },
+      "y": {
+        "_NONE_": {
+          "n": 513,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 513
+          }
+        },
+        "d": {
+          "n": 6,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 3,
+            "FLOW": 2,
+            "THERMAL": 1
+          }
+        },
+        "e": {
+          "n": 4,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 2,
+            "FLOW": 1,
+            "MARKING": 1
+          }
+        },
+        "f": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 2
+          }
+        },
+        "h": {
+          "n": 12,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 8,
+            "FLOW": 3,
+            "MONITORING": 1
+          }
+        },
+        "i": {
+          "n": 4,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "TRANSITION": 3,
+            "STAGING": 1
+          }
+        },
+        "k": {
+          "n": 15,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 12,
+            "STAGING": 3
+          }
+        },
+        "l": {
+          "n": 5,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "STAGING": 4,
+            "MARKING": 1
+          }
+        },
+        "o": {
+          "n": 3,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "THERMAL": 1,
+            "MARKING": 1,
+            "FLOW": 1
+          }
+        },
+        "p": {
+          "n": 5,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 5
+          }
+        },
+        "r": {
+          "n": 1,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 1
+          }
+        },
+        "s": {
+          "n": 2,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "MARKING": 1,
+            "FLOW": 1
+          }
+        },
+        "t": {
+          "n": 12,
+          "hazard_n": 0,
+          "hazard_rate": 0.0,
+          "top_categories": {
+            "FLOW": 12
+          }
+        }
+      }
+    },
+    "head_marginal": {
+      "a": {
+        "n": 3079,
+        "hazard_n": 2032,
+        "rate": 0.66
+      },
+      "c": {
+        "n": 617,
+        "hazard_n": 5,
+        "rate": 0.0081
+      },
+      "d": {
+        "n": 1142,
+        "hazard_n": 683,
+        "rate": 0.5981
+      },
+      "e": {
+        "n": 7002,
+        "hazard_n": 151,
+        "rate": 0.0216
+      },
+      "f": {
+        "n": 61,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "g": {
+        "n": 9,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "h": {
+        "n": 64,
+        "hazard_n": 2,
+        "rate": 0.0312
+      },
+      "i": {
+        "n": 1055,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "k": {
+        "n": 3100,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "l": {
+        "n": 1283,
+        "hazard_n": 855,
+        "rate": 0.6664
+      },
+      "m": {
+        "n": 77,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "n": {
+        "n": 7,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "o": {
+        "n": 2717,
+        "hazard_n": 834,
+        "rate": 0.307
+      },
+      "p": {
+        "n": 204,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "q": {
+        "n": 114,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "r": {
+        "n": 871,
+        "hazard_n": 749,
+        "rate": 0.8599
+      },
+      "s": {
+        "n": 176,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "t": {
+        "n": 921,
+        "hazard_n": 576,
+        "rate": 0.6254
+      },
+      "x": {
+        "n": 13,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "y": {
+        "n": 584,
+        "hazard_n": 0,
+        "rate": 0.0
+      }
+    },
+    "term_marginal": {
+      "_NONE_": {
+        "n": 6943,
+        "hazard_n": 2573,
+        "rate": 0.3706
+      },
+      "a": {
+        "n": 127,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "c": {
+        "n": 217,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "d": {
+        "n": 1143,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "e": {
+        "n": 928,
+        "hazard_n": 153,
+        "rate": 0.1649
+      },
+      "f": {
+        "n": 64,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "g": {
+        "n": 2,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "h": {
+        "n": 1236,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "i": {
+        "n": 428,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "k": {
+        "n": 909,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "l": {
+        "n": 1713,
+        "hazard_n": 529,
+        "rate": 0.3088
+      },
+      "m": {
+        "n": 213,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "n": {
+        "n": 2140,
+        "hazard_n": 834,
+        "rate": 0.3897
+      },
+      "o": {
+        "n": 901,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "p": {
+        "n": 105,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "q": {
+        "n": 3,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "r": {
+        "n": 1213,
+        "hazard_n": 1123,
+        "rate": 0.9258
+      },
+      "s": {
+        "n": 146,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "t": {
+        "n": 385,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "x": {
+        "n": 13,
+        "hazard_n": 0,
+        "rate": 0.0
+      },
+      "y": {
+        "n": 4267,
+        "hazard_n": 675,
+        "rate": 0.1582
+      }
+    },
+    "all_heads": [
+      "a",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "x",
+      "y"
+    ],
+    "all_terms": [
+      "_NONE_",
+      "a",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "x",
+      "y"
+    ]
+  },
+  "T6_prefix_channel_hazard": {
+    "prefix_stats": {
+      "BARE": {
+        "n_tokens": 3864,
+        "n_source": 815,
+        "n_target": 1139,
+        "n_any_hazard": 1699,
+        "source_rate": 0.2109,
+        "target_rate": 0.2948,
+        "hazard_rate": 0.4397,
+        "flow_containment_rate": 0.3248,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "FLOW": 0.2875,
+          "STAGING": 0.205,
+          "TRANSITION": 0.1861,
+          "MARKING": 0.0994,
+          "OPERATION": 0.0823,
+          "null": 0.0587,
+          "CONTAINMENT": 0.0373,
+          "THERMAL": 0.0298,
+          "MONITORING": 0.014
+        }
+      },
+      "al": {
+        "n_tokens": 173,
+        "n_source": 21,
+        "n_target": 22,
+        "n_any_hazard": 37,
+        "source_rate": 0.1214,
+        "target_rate": 0.1272,
+        "hazard_rate": 0.2139,
+        "flow_containment_rate": 0.1561,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "THERMAL": 0.2775,
+          "TRANSITION": 0.2139,
+          "STAGING": 0.1214,
+          "OPERATION": 0.1214,
+          "FLOW": 0.104,
+          "MARKING": 0.0809,
+          "CONTAINMENT": 0.052,
+          "null": 0.0231,
+          "MONITORING": 0.0058
+        }
+      },
+      "ar": {
+        "n_tokens": 136,
+        "n_source": 19,
+        "n_target": 51,
+        "n_any_hazard": 63,
+        "source_rate": 0.1397,
+        "target_rate": 0.375,
+        "hazard_rate": 0.4632,
+        "flow_containment_rate": 0.2647,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "TRANSITION": 0.3824,
+          "FLOW": 0.2353,
+          "OPERATION": 0.1176,
+          "STAGING": 0.1103,
+          "MARKING": 0.0441,
+          "null": 0.0368,
+          "THERMAL": 0.0294,
+          "CONTAINMENT": 0.0294,
+          "MONITORING": 0.0147
+        }
+      },
+      "ch": {
+        "n_tokens": 3492,
+        "n_source": 248,
+        "n_target": 236,
+        "n_any_hazard": 446,
+        "source_rate": 0.071,
+        "target_rate": 0.0676,
+        "hazard_rate": 0.1277,
+        "flow_containment_rate": 0.2042,
+        "n_actual_forbidden": 5,
+        "category_dist": {
+          "OPERATION": 0.2491,
+          "THERMAL": 0.2093,
+          "TRANSITION": 0.1377,
+          "FLOW": 0.1085,
+          "CONTAINMENT": 0.0956,
+          "MARKING": 0.0908,
+          "STAGING": 0.0599,
+          "MONITORING": 0.0392,
+          "null": 0.0097
+        }
+      },
+      "ct": {
+        "n_tokens": 60,
+        "n_source": 2,
+        "n_target": 0,
+        "n_any_hazard": 2,
+        "source_rate": 0.0333,
+        "target_rate": 0.0,
+        "hazard_rate": 0.0333,
+        "flow_containment_rate": 0.0167,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "MONITORING": 0.9,
+          "MARKING": 0.05,
+          "THERMAL": 0.0167,
+          "FLOW": 0.0167,
+          "TRANSITION": 0.0167
+        }
+      },
+      "da": {
+        "n_tokens": 1083,
+        "n_source": 168,
+        "n_target": 208,
+        "n_any_hazard": 376,
+        "source_rate": 0.1551,
+        "target_rate": 0.1921,
+        "hazard_rate": 0.3472,
+        "flow_containment_rate": 0.2235,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "STAGING": 0.5633,
+          "FLOW": 0.2216,
+          "MARKING": 0.12,
+          "TRANSITION": 0.0757,
+          "OPERATION": 0.0083,
+          "MONITORING": 0.0055,
+          "THERMAL": 0.0037,
+          "CONTAINMENT": 0.0018
+        }
+      },
+      "dch": {
+        "n_tokens": 104,
+        "n_source": 8,
+        "n_target": 7,
+        "n_any_hazard": 14,
+        "source_rate": 0.0769,
+        "target_rate": 0.0673,
+        "hazard_rate": 0.1346,
+        "flow_containment_rate": 0.1827,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "OPERATION": 0.3077,
+          "THERMAL": 0.2212,
+          "TRANSITION": 0.1731,
+          "CONTAINMENT": 0.0962,
+          "FLOW": 0.0865,
+          "MARKING": 0.0769,
+          "STAGING": 0.0385
+        }
+      },
+      "de": {
+        "n_tokens": 19,
+        "n_source": 2,
+        "n_target": 0,
+        "n_any_hazard": 2,
+        "source_rate": 0.1053,
+        "target_rate": 0.0,
+        "hazard_rate": 0.1053,
+        "flow_containment_rate": 0.1579,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "THERMAL": 0.3158,
+          "TRANSITION": 0.2632,
+          "OPERATION": 0.1579,
+          "CONTAINMENT": 0.1053,
+          "MARKING": 0.0526,
+          "FLOW": 0.0526,
+          "MONITORING": 0.0526
+        }
+      },
+      "do": {
+        "n_tokens": 126,
+        "n_source": 65,
+        "n_target": 27,
+        "n_any_hazard": 92,
+        "source_rate": 0.5159,
+        "target_rate": 0.2143,
+        "hazard_rate": 0.7302,
+        "flow_containment_rate": 0.2619,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "STAGING": 0.5714,
+          "FLOW": 0.2302,
+          "MARKING": 0.0794,
+          "THERMAL": 0.0397,
+          "CONTAINMENT": 0.0317,
+          "OPERATION": 0.0238,
+          "MONITORING": 0.0159,
+          "TRANSITION": 0.0079
+        }
+      },
+      "fch": {
+        "n_tokens": 57,
+        "n_source": 9,
+        "n_target": 5,
+        "n_any_hazard": 11,
+        "source_rate": 0.1579,
+        "target_rate": 0.0877,
+        "hazard_rate": 0.193,
+        "flow_containment_rate": 0.2456,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "OPERATION": 0.3333,
+          "THERMAL": 0.1754,
+          "CONTAINMENT": 0.1228,
+          "FLOW": 0.1228,
+          "TRANSITION": 0.1228,
+          "MARKING": 0.0702,
+          "STAGING": 0.0351,
+          "null": 0.0175
+        }
+      },
+      "ka": {
+        "n_tokens": 238,
+        "n_source": 24,
+        "n_target": 54,
+        "n_any_hazard": 78,
+        "source_rate": 0.1008,
+        "target_rate": 0.2269,
+        "hazard_rate": 0.3277,
+        "flow_containment_rate": 0.2689,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "STAGING": 0.4286,
+          "FLOW": 0.2647,
+          "MARKING": 0.2227,
+          "TRANSITION": 0.0672,
+          "OPERATION": 0.0126,
+          "CONTAINMENT": 0.0042
+        }
+      },
+      "kch": {
+        "n_tokens": 97,
+        "n_source": 22,
+        "n_target": 8,
+        "n_any_hazard": 29,
+        "source_rate": 0.2268,
+        "target_rate": 0.0825,
+        "hazard_rate": 0.299,
+        "flow_containment_rate": 0.2577,
+        "n_actual_forbidden": 1,
+        "category_dist": {
+          "OPERATION": 0.2887,
+          "TRANSITION": 0.2371,
+          "CONTAINMENT": 0.2268,
+          "THERMAL": 0.0825,
+          "MARKING": 0.0722,
+          "STAGING": 0.0619,
+          "FLOW": 0.0309
+        }
+      },
+      "ke": {
+        "n_tokens": 259,
+        "n_source": 55,
+        "n_target": 23,
+        "n_any_hazard": 75,
+        "source_rate": 0.2124,
+        "target_rate": 0.0888,
+        "hazard_rate": 0.2896,
+        "flow_containment_rate": 0.2625,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "OPERATION": 0.3012,
+          "CONTAINMENT": 0.2008,
+          "TRANSITION": 0.1931,
+          "THERMAL": 0.1081,
+          "FLOW": 0.0618,
+          "MARKING": 0.0618,
+          "STAGING": 0.0463,
+          "MONITORING": 0.0154,
+          "null": 0.0116
+        }
+      },
+      "ko": {
+        "n_tokens": 48,
+        "n_source": 15,
+        "n_target": 10,
+        "n_any_hazard": 25,
+        "source_rate": 0.3125,
+        "target_rate": 0.2083,
+        "hazard_rate": 0.5208,
+        "flow_containment_rate": 0.3958,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "STAGING": 0.3542,
+          "FLOW": 0.3333,
+          "MARKING": 0.1042,
+          "TRANSITION": 0.0833,
+          "CONTAINMENT": 0.0625,
+          "OPERATION": 0.0625
+        }
+      },
+      "lch": {
+        "n_tokens": 315,
+        "n_source": 28,
+        "n_target": 20,
+        "n_any_hazard": 43,
+        "source_rate": 0.0889,
+        "target_rate": 0.0635,
+        "hazard_rate": 0.1365,
+        "flow_containment_rate": 0.1587,
+        "n_actual_forbidden": 1,
+        "category_dist": {
+          "OPERATION": 0.3968,
+          "TRANSITION": 0.2063,
+          "THERMAL": 0.1556,
+          "FLOW": 0.0889,
+          "CONTAINMENT": 0.0698,
+          "MARKING": 0.0381,
+          "STAGING": 0.0317,
+          "MONITORING": 0.0095,
+          "null": 0.0032
+        }
+      },
+      "lk": {
+        "n_tokens": 438,
+        "n_source": 51,
+        "n_target": 75,
+        "n_any_hazard": 121,
+        "source_rate": 0.1164,
+        "target_rate": 0.1712,
+        "hazard_rate": 0.2763,
+        "flow_containment_rate": 0.2078,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "THERMAL": 0.3128,
+          "TRANSITION": 0.2557,
+          "FLOW": 0.1941,
+          "OPERATION": 0.1507,
+          "STAGING": 0.0411,
+          "MONITORING": 0.0205,
+          "CONTAINMENT": 0.0137,
+          "null": 0.0068,
+          "MARKING": 0.0046
+        }
+      },
+      "lsh": {
+        "n_tokens": 116,
+        "n_source": 5,
+        "n_target": 4,
+        "n_any_hazard": 8,
+        "source_rate": 0.0431,
+        "target_rate": 0.0345,
+        "hazard_rate": 0.069,
+        "flow_containment_rate": 0.0776,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "OPERATION": 0.3966,
+          "TRANSITION": 0.2069,
+          "THERMAL": 0.1983,
+          "MARKING": 0.0603,
+          "FLOW": 0.0431,
+          "CONTAINMENT": 0.0345,
+          "STAGING": 0.0345,
+          "null": 0.0172,
+          "MONITORING": 0.0086
+        }
+      },
+      "ok": {
+        "n_tokens": 1476,
+        "n_source": 150,
+        "n_target": 335,
+        "n_any_hazard": 474,
+        "source_rate": 0.1016,
+        "target_rate": 0.227,
+        "hazard_rate": 0.3211,
+        "flow_containment_rate": 0.2934,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "FLOW": 0.2764,
+          "TRANSITION": 0.2642,
+          "THERMAL": 0.2466,
+          "OPERATION": 0.124,
+          "MARKING": 0.0305,
+          "STAGING": 0.0278,
+          "CONTAINMENT": 0.0169,
+          "MONITORING": 0.0122,
+          "null": 0.0014
+        }
+      },
+      "ol": {
+        "n_tokens": 875,
+        "n_source": 78,
+        "n_target": 114,
+        "n_any_hazard": 161,
+        "source_rate": 0.0891,
+        "target_rate": 0.1303,
+        "hazard_rate": 0.184,
+        "flow_containment_rate": 0.1771,
+        "n_actual_forbidden": 1,
+        "category_dist": {
+          "THERMAL": 0.4217,
+          "TRANSITION": 0.1771,
+          "FLOW": 0.1314,
+          "OPERATION": 0.0994,
+          "STAGING": 0.0663,
+          "MARKING": 0.0491,
+          "CONTAINMENT": 0.0457,
+          "MONITORING": 0.0057,
+          "null": 0.0034
+        }
+      },
+      "or": {
+        "n_tokens": 173,
+        "n_source": 12,
+        "n_target": 50,
+        "n_any_hazard": 57,
+        "source_rate": 0.0694,
+        "target_rate": 0.289,
+        "hazard_rate": 0.3295,
+        "flow_containment_rate": 0.3179,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "TRANSITION": 0.3931,
+          "FLOW": 0.2948,
+          "STAGING": 0.104,
+          "OPERATION": 0.0867,
+          "THERMAL": 0.0578,
+          "CONTAINMENT": 0.0231,
+          "MARKING": 0.0231,
+          "MONITORING": 0.0116,
+          "null": 0.0058
+        }
+      },
+      "ot": {
+        "n_tokens": 1448,
+        "n_source": 188,
+        "n_target": 281,
+        "n_any_hazard": 445,
+        "source_rate": 0.1298,
+        "target_rate": 0.1941,
+        "hazard_rate": 0.3073,
+        "flow_containment_rate": 0.3018,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "FLOW": 0.2776,
+          "TRANSITION": 0.2514,
+          "THERMAL": 0.2023,
+          "OPERATION": 0.1664,
+          "STAGING": 0.0428,
+          "CONTAINMENT": 0.0242,
+          "MARKING": 0.0214,
+          "null": 0.0076,
+          "MONITORING": 0.0062
+        }
+      },
+      "pch": {
+        "n_tokens": 245,
+        "n_source": 28,
+        "n_target": 18,
+        "n_any_hazard": 37,
+        "source_rate": 0.1143,
+        "target_rate": 0.0735,
+        "hazard_rate": 0.151,
+        "flow_containment_rate": 0.2653,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "OPERATION": 0.249,
+          "FLOW": 0.1796,
+          "MARKING": 0.1714,
+          "TRANSITION": 0.1469,
+          "THERMAL": 0.1143,
+          "CONTAINMENT": 0.0857,
+          "STAGING": 0.0286,
+          "null": 0.0245
+        }
+      },
+      "pe": {
+        "n_tokens": 1,
+        "n_source": 0,
+        "n_target": 0,
+        "n_any_hazard": 0,
+        "source_rate": 0.0,
+        "target_rate": 0.0,
+        "hazard_rate": 0.0,
+        "flow_containment_rate": 0.0,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "STAGING": 1.0
+        }
+      },
+      "po": {
+        "n_tokens": 136,
+        "n_source": 42,
+        "n_target": 14,
+        "n_any_hazard": 55,
+        "source_rate": 0.3088,
+        "target_rate": 0.1029,
+        "hazard_rate": 0.4044,
+        "flow_containment_rate": 0.2059,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "STAGING": 0.4191,
+          "FLOW": 0.1912,
+          "MARKING": 0.1397,
+          "OPERATION": 0.1103,
+          "THERMAL": 0.0588,
+          "TRANSITION": 0.0441,
+          "MONITORING": 0.0221,
+          "CONTAINMENT": 0.0147
+        }
+      },
+      "qo": {
+        "n_tokens": 4069,
+        "n_source": 177,
+        "n_target": 548,
+        "n_any_hazard": 723,
+        "source_rate": 0.0435,
+        "target_rate": 0.1347,
+        "hazard_rate": 0.1777,
+        "flow_containment_rate": 0.2158,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "THERMAL": 0.5901,
+          "FLOW": 0.2008,
+          "MARKING": 0.0727,
+          "STAGING": 0.0668,
+          "OPERATION": 0.031,
+          "CONTAINMENT": 0.015,
+          "TRANSITION": 0.0147,
+          "MONITORING": 0.0081,
+          "null": 0.0007
+        }
+      },
+      "rch": {
+        "n_tokens": 41,
+        "n_source": 2,
+        "n_target": 4,
+        "n_any_hazard": 6,
+        "source_rate": 0.0488,
+        "target_rate": 0.0976,
+        "hazard_rate": 0.1463,
+        "flow_containment_rate": 0.122,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "OPERATION": 0.3659,
+          "TRANSITION": 0.2683,
+          "THERMAL": 0.1463,
+          "FLOW": 0.122,
+          "STAGING": 0.0732,
+          "MARKING": 0.0244
+        }
+      },
+      "sa": {
+        "n_tokens": 329,
+        "n_source": 33,
+        "n_target": 63,
+        "n_any_hazard": 96,
+        "source_rate": 0.1003,
+        "target_rate": 0.1915,
+        "hazard_rate": 0.2918,
+        "flow_containment_rate": 0.2219,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "STAGING": 0.5228,
+          "FLOW": 0.2219,
+          "MARKING": 0.1945,
+          "TRANSITION": 0.0365,
+          "OPERATION": 0.0122,
+          "THERMAL": 0.0091,
+          "MONITORING": 0.003
+        }
+      },
+      "sch": {
+        "n_tokens": 25,
+        "n_source": 4,
+        "n_target": 0,
+        "n_any_hazard": 4,
+        "source_rate": 0.16,
+        "target_rate": 0.0,
+        "hazard_rate": 0.16,
+        "flow_containment_rate": 0.2,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "OPERATION": 0.32,
+          "THERMAL": 0.16,
+          "CONTAINMENT": 0.16,
+          "TRANSITION": 0.12,
+          "STAGING": 0.12,
+          "FLOW": 0.04,
+          "MONITORING": 0.04,
+          "MARKING": 0.04
+        }
+      },
+      "se": {
+        "n_tokens": 8,
+        "n_source": 2,
+        "n_target": 2,
+        "n_any_hazard": 3,
+        "source_rate": 0.25,
+        "target_rate": 0.25,
+        "hazard_rate": 0.375,
+        "flow_containment_rate": 0.25,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "OPERATION": 0.25,
+          "FLOW": 0.25,
+          "TRANSITION": 0.25,
+          "THERMAL": 0.125,
+          "MARKING": 0.125
+        }
+      },
+      "sh": {
+        "n_tokens": 2329,
+        "n_source": 123,
+        "n_target": 141,
+        "n_any_hazard": 230,
+        "source_rate": 0.0528,
+        "target_rate": 0.0605,
+        "hazard_rate": 0.0988,
+        "flow_containment_rate": 0.1511,
+        "n_actual_forbidden": 2,
+        "category_dist": {
+          "OPERATION": 0.2988,
+          "THERMAL": 0.2404,
+          "TRANSITION": 0.173,
+          "FLOW": 0.0837,
+          "CONTAINMENT": 0.0674,
+          "MARKING": 0.0571,
+          "STAGING": 0.0472,
+          "MONITORING": 0.0228,
+          "null": 0.0094
+        }
+      },
+      "so": {
+        "n_tokens": 189,
+        "n_source": 54,
+        "n_target": 45,
+        "n_any_hazard": 99,
+        "source_rate": 0.2857,
+        "target_rate": 0.2381,
+        "hazard_rate": 0.5238,
+        "flow_containment_rate": 0.254,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "STAGING": 0.4497,
+          "FLOW": 0.2487,
+          "THERMAL": 0.0899,
+          "MARKING": 0.0794,
+          "OPERATION": 0.0794,
+          "TRANSITION": 0.0265,
+          "MONITORING": 0.0212,
+          "CONTAINMENT": 0.0053
+        }
+      },
+      "ta": {
+        "n_tokens": 237,
+        "n_source": 27,
+        "n_target": 69,
+        "n_any_hazard": 96,
+        "source_rate": 0.1139,
+        "target_rate": 0.2911,
+        "hazard_rate": 0.4051,
+        "flow_containment_rate": 0.3165,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "STAGING": 0.4599,
+          "FLOW": 0.3165,
+          "MARKING": 0.135,
+          "TRANSITION": 0.0844,
+          "MONITORING": 0.0042
+        }
+      },
+      "tch": {
+        "n_tokens": 172,
+        "n_source": 34,
+        "n_target": 13,
+        "n_any_hazard": 42,
+        "source_rate": 0.1977,
+        "target_rate": 0.0756,
+        "hazard_rate": 0.2442,
+        "flow_containment_rate": 0.314,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "OPERATION": 0.3081,
+          "TRANSITION": 0.2151,
+          "CONTAINMENT": 0.1744,
+          "FLOW": 0.1395,
+          "MARKING": 0.064,
+          "THERMAL": 0.0523,
+          "STAGING": 0.0233,
+          "null": 0.0174,
+          "MONITORING": 0.0058
+        }
+      },
+      "te": {
+        "n_tokens": 289,
+        "n_source": 77,
+        "n_target": 17,
+        "n_any_hazard": 93,
+        "source_rate": 0.2664,
+        "target_rate": 0.0588,
+        "hazard_rate": 0.3218,
+        "flow_containment_rate": 0.3183,
+        "n_actual_forbidden": 1,
+        "category_dist": {
+          "CONTAINMENT": 0.263,
+          "TRANSITION": 0.2353,
+          "OPERATION": 0.2145,
+          "MARKING": 0.0865,
+          "THERMAL": 0.0796,
+          "FLOW": 0.0554,
+          "STAGING": 0.0519,
+          "null": 0.0104,
+          "MONITORING": 0.0035
+        }
+      },
+      "to": {
+        "n_tokens": 115,
+        "n_source": 36,
+        "n_target": 21,
+        "n_any_hazard": 57,
+        "source_rate": 0.313,
+        "target_rate": 0.1826,
+        "hazard_rate": 0.4957,
+        "flow_containment_rate": 0.2696,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "STAGING": 0.3391,
+          "FLOW": 0.1826,
+          "MARKING": 0.1565,
+          "THERMAL": 0.113,
+          "CONTAINMENT": 0.087,
+          "TRANSITION": 0.0609,
+          "MONITORING": 0.0435,
+          "OPERATION": 0.0174
+        }
+      },
+      "yk": {
+        "n_tokens": 314,
+        "n_source": 36,
+        "n_target": 54,
+        "n_any_hazard": 88,
+        "source_rate": 0.1146,
+        "target_rate": 0.172,
+        "hazard_rate": 0.2803,
+        "flow_containment_rate": 0.2102,
+        "n_actual_forbidden": 0,
+        "category_dist": {
+          "THERMAL": 0.3408,
+          "TRANSITION": 0.2134,
+          "FLOW": 0.1879,
+          "OPERATION": 0.1465,
+          "STAGING": 0.0414,
+          "MARKING": 0.035,
+          "CONTAINMENT": 0.0223,
+          "null": 0.0064,
+          "MONITORING": 0.0064
+        }
+      }
+    },
+    "sister_comparison": {
+      "ch_vs_sh": {
+        "ch_hazard_rate": 0.1277,
+        "sh_hazard_rate": 0.0988,
+        "ratio": 1.2925,
+        "ch_flow_cont": 0.2042,
+        "sh_flow_cont": 0.1511
+      },
+      "ok_vs_ot": {
+        "ok_hazard_rate": 0.3211,
+        "ot_hazard_rate": 0.3073,
+        "ratio": 1.0449,
+        "ok_flow_cont": 0.2934,
+        "ot_flow_cont": 0.3018
+      }
+    }
+  },
+  "T7_hazard_line_position": {
+    "quintile_stats": {
+      "Q0": {
+        "n_tokens": 5022,
+        "hazard_token_rate": 0.2218,
+        "flow_containment_rate": 0.2083,
+        "category_dist": {
+          "THERMAL": 0.2395,
+          "FLOW": 0.1734,
+          "STAGING": 0.1537,
+          "OPERATION": 0.145,
+          "TRANSITION": 0.1386,
+          "MARKING": 0.0824,
+          "CONTAINMENT": 0.0348,
+          "MONITORING": 0.0171,
+          "null": 0.0153
+        }
+      },
+      "Q1": {
+        "n_tokens": 4186,
+        "hazard_token_rate": 0.2253,
+        "flow_containment_rate": 0.2083,
+        "category_dist": {
+          "THERMAL": 0.29,
+          "FLOW": 0.1627,
+          "OPERATION": 0.1512,
+          "TRANSITION": 0.1376,
+          "STAGING": 0.119,
+          "MARKING": 0.0635,
+          "CONTAINMENT": 0.0456,
+          "MONITORING": 0.0158,
+          "null": 0.0146
+        }
+      },
+      "Q2": {
+        "n_tokens": 4141,
+        "hazard_token_rate": 0.2659,
+        "flow_containment_rate": 0.2497,
+        "category_dist": {
+          "THERMAL": 0.2456,
+          "FLOW": 0.1944,
+          "OPERATION": 0.1531,
+          "TRANSITION": 0.1234,
+          "STAGING": 0.1227,
+          "MARKING": 0.0763,
+          "CONTAINMENT": 0.0553,
+          "MONITORING": 0.0186,
+          "null": 0.0106
+        }
+      },
+      "Q3": {
+        "n_tokens": 4186,
+        "hazard_token_rate": 0.2585,
+        "flow_containment_rate": 0.248,
+        "category_dist": {
+          "THERMAL": 0.242,
+          "FLOW": 0.199,
+          "OPERATION": 0.1436,
+          "TRANSITION": 0.1398,
+          "STAGING": 0.1073,
+          "MARKING": 0.0819,
+          "CONTAINMENT": 0.049,
+          "MONITORING": 0.0222,
+          "null": 0.0153
+        }
+      },
+      "Q4": {
+        "n_tokens": 5561,
+        "hazard_token_rate": 0.2962,
+        "flow_containment_rate": 0.2757,
+        "category_dist": {
+          "FLOW": 0.2219,
+          "TRANSITION": 0.1876,
+          "THERMAL": 0.1728,
+          "STAGING": 0.1324,
+          "OPERATION": 0.1214,
+          "MARKING": 0.0777,
+          "CONTAINMENT": 0.0538,
+          "MONITORING": 0.0164,
+          "null": 0.0162
+        }
+      }
+    },
+    "transition_by_quintile": {
+      "Q0": {
+        "n_transitions": 5022,
+        "n_forbidden": 2,
+        "forbidden_rate": 0.000398
+      },
+      "Q1": {
+        "n_transitions": 4186,
+        "n_forbidden": 1,
+        "forbidden_rate": 0.000239
+      },
+      "Q2": {
+        "n_transitions": 4135,
+        "n_forbidden": 2,
+        "forbidden_rate": 0.000484
+      },
+      "Q3": {
+        "n_transitions": 4186,
+        "n_forbidden": 2,
+        "forbidden_rate": 0.000478
+      },
+      "Q4": {
+        "n_transitions": 3147,
+        "n_forbidden": 4,
+        "forbidden_rate": 0.001271
+      }
+    },
+    "position_stats": {
+      "initial": {
+        "n": 2420,
+        "hazard_rate": 0.2128,
+        "flow_containment_rate": 0.1876
+      },
+      "final": {
+        "n": 2420,
+        "hazard_rate": 0.2665,
+        "flow_containment_rate": 0.2541
+      },
+      "body": {
+        "n": 18262,
+        "hazard_rate": 0.2589,
+        "flow_containment_rate": 0.244
+      }
+    }
+  },
+  "T8_hazard_closure_system": {
+    "tier_stats": {
+      "OPAQUE": {
+        "terminals": [
+          "m",
+          "n",
+          "y"
+        ],
+        "n_tokens": 6620,
+        "hazard_rate": 0.2279,
+        "suffix_rate": 0.0122,
+        "flow_containment_rate": 0.1695
+      },
+      "SEMI_TRANSPARENT": {
+        "terminals": [
+          "l",
+          "r"
+        ],
+        "n_tokens": 2926,
+        "hazard_rate": 0.5646,
+        "suffix_rate": 0.1032,
+        "flow_containment_rate": 0.5878
+      },
+      "TRANSPARENT": {
+        "terminals": [
+          "h"
+        ],
+        "n_tokens": 1236,
+        "hazard_rate": 0.0,
+        "suffix_rate": 0.9862,
+        "flow_containment_rate": 0.1659
+      }
+    },
+    "suffix_hazard": {
+      "suffixed": {
+        "n": 11151,
+        "hazard_rate": 0.1463
+      },
+      "unsuffixed": {
+        "n": 11945,
+        "hazard_rate": 0.3563
+      }
+    },
+    "hazard_tokens_with_suffix_count": 1631,
+    "hazard_tokens_with_suffix_examples": [
+      "lr",
+      "oaiin",
+      "oloy",
+      "saldy",
+      "qotedy",
+      "qotedy",
+      "keody",
+      "chees",
+      "keody",
+      "todydy",
+      "shees",
+      "qotar",
+      "qotedy",
+      "ldy",
+      "dals",
+      "dkarar",
+      "ytchos",
+      "kchody",
+      "keody",
+      "okees"
+    ]
+  },
+  "T9_hazard_suffix_mode": {
+    "mode_stats": {
+      "A": {
+        "n_tokens": 5773,
+        "hazard_rate": 0.0951,
+        "flow_containment_rate": 0.1575,
+        "category_dist": {
+          "THERMAL": 0.4138,
+          "OPERATION": 0.1476,
+          "MARKING": 0.1083,
+          "FLOW": 0.1041,
+          "MONITORING": 0.056,
+          "STAGING": 0.0539,
+          "CONTAINMENT": 0.0534,
+          "TRANSITION": 0.0514,
+          "null": 0.0116
+        },
+        "head_dist": {
+          "k": 0.287,
+          "e": 0.2692,
+          "o": 0.119,
+          "c": 0.0915,
+          "t": 0.0814,
+          "l": 0.0452,
+          "a": 0.0263,
+          "p": 0.0197,
+          "d": 0.0126,
+          "q": 0.0095,
+          "y": 0.008,
+          "r": 0.0069,
+          "h": 0.0062,
+          "i": 0.0061,
+          "s": 0.0057,
+          "f": 0.0052,
+          "g": 0.0002,
+          "m": 0.0002
+        }
+      },
+      "B": {
+        "n_tokens": 17323,
+        "hazard_rate": 0.3081,
+        "flow_containment_rate": 0.2664,
+        "category_dist": {
+          "FLOW": 0.2207,
+          "TRANSITION": 0.1798,
+          "THERMAL": 0.1743,
+          "STAGING": 0.1531,
+          "OPERATION": 0.1396,
+          "MARKING": 0.0662,
+          "CONTAINMENT": 0.0457,
+          "null": 0.0155,
+          "MONITORING": 0.0052
+        },
+        "head_dist": {
+          "e": 0.3145,
+          "a": 0.169,
+          "o": 0.1172,
+          "k": 0.0833,
+          "d": 0.0617,
+          "l": 0.059,
+          "i": 0.0589,
+          "r": 0.048,
+          "y": 0.0311,
+          "t": 0.026,
+          "s": 0.0083,
+          "p": 0.0052,
+          "c": 0.0051,
+          "m": 0.0044,
+          "q": 0.0034,
+          "f": 0.0018,
+          "h": 0.0016,
+          "x": 0.0008,
+          "g": 0.0005,
+          "n": 0.0004
+        }
+      }
+    },
+    "mode_forbidden_transitions": {
+      "A": {
+        "n_transitions": 5233,
+        "n_forbidden": 0,
+        "forbidden_rate": 0.0
+      },
+      "B": {
+        "n_transitions": 15443,
+        "n_forbidden": 11,
+        "forbidden_rate": 0.000712
+      }
+    }
+  },
+  "T10_modifier_hazard": {
+    "modifier_stats": {
+      "c": {
+        "n_with": 1277,
+        "n_without": 21819,
+        "hazard_rate_with": 0.0,
+        "hazard_rate_without": 0.2698,
+        "hazard_ratio": 0.0,
+        "flow_cont_rate_with": 0.1441,
+        "flow_cont_rate_without": 0.2447
+      },
+      "d": {
+        "n_with": 2136,
+        "n_without": 20960,
+        "hazard_rate_with": 0.0,
+        "hazard_rate_without": 0.2809,
+        "hazard_ratio": 0.0,
+        "flow_cont_rate_with": 0.0061,
+        "flow_cont_rate_without": 0.2629
+      },
+      "f": {
+        "n_with": 91,
+        "n_without": 23005,
+        "hazard_rate_with": 0.0,
+        "hazard_rate_without": 0.2559,
+        "hazard_ratio": 0.0,
+        "flow_cont_rate_with": 0.022,
+        "flow_cont_rate_without": 0.24
+      },
+      "i": {
+        "n_with": 2052,
+        "n_without": 21044,
+        "hazard_rate_with": 0.4064,
+        "hazard_rate_without": 0.2401,
+        "hazard_ratio": 1.6927,
+        "flow_cont_rate_with": 0.2232,
+        "flow_cont_rate_without": 0.2407
+      },
+      "p": {
+        "n_with": 331,
+        "n_without": 22765,
+        "hazard_rate_with": 0.0,
+        "hazard_rate_without": 0.2586,
+        "hazard_ratio": 0.0,
+        "flow_cont_rate_with": 0.003,
+        "flow_cont_rate_without": 0.2426
+      },
+      "s": {
+        "n_with": 245,
+        "n_without": 22851,
+        "hazard_rate_with": 0.0,
+        "hazard_rate_without": 0.2576,
+        "hazard_ratio": 0.0,
+        "flow_cont_rate_with": 0.1102,
+        "flow_cont_rate_without": 0.2405
+      }
+    },
+    "length_stats": {
+      "1": {
+        "n_tokens": 6943,
+        "hazard_rate": 0.3706
+      },
+      "2": {
+        "n_tokens": 7687,
+        "hazard_rate": 0.3216
+      },
+      "3": {
+        "n_tokens": 6058,
+        "hazard_rate": 0.0013
+      },
+      "4": {
+        "n_tokens": 1870,
+        "hazard_rate": 0.446
+      },
+      "5": {
+        "n_tokens": 320,
+        "hazard_rate": 0.0
+      },
+      "6": {
+        "n_tokens": 152,
+        "hazard_rate": 0.0
+      }
+    },
+    "mod_count_stats": {
+      "0": {
+        "n_tokens": 14630,
+        "hazard_rate": 0.3448
+      },
+      "1": {
+        "n_tokens": 6058,
+        "hazard_rate": 0.0013
+      },
+      "2": {
+        "n_tokens": 1870,
+        "hazard_rate": 0.446
+      },
+      "3": {
+        "n_tokens": 320,
+        "hazard_rate": 0.0
+      }
+    }
+  }
+}

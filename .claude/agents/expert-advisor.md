@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1284 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1295 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1445.
+the highest ID present is C1451.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1284 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1295 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1284 validated constraints are present as canonical one-line claims with tier
+1295 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-05 17:38
-**Version:** FROZEN STATE (1284 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-05 18:12
+**Version:** FROZEN STATE (1295 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1718,6 +1718,12 @@ C1442	TERMINAL-suffix category information complementarity	2	B, MIDDLE, atom, te
 C1443	17 forbidden TERMINAL x suffix-head pairs	2	B, MIDDLE, atom, terminal, suffix, forbidden, co-occurrence, exclusion
 C1444	self-atom cross-layer repulsion	2	B, MIDDLE, atom, terminal, suffix, self-repulsion, cross-layer
 C1445	m-terminal and suffix anticorrelation at paragraph level	2	B, MIDDLE, atom, m-terminal, suffix, paragraph, anticorrelation, section
+C1446	k-HEAD complete hazard immunity	2	B, MIDDLE, atom, k-initial, hazard, HEAD, immunity
+C1447	terminal atom hazard partition	2	B, MIDDLE, atom, terminal, hazard, partition, FLOW
+C1448	HEAD x TERM frame hazard map with k-neutralization	2	B, MIDDLE, atom, HEAD, TERM, frame, hazard, k-neutralization
+C1449	PREFIX channel hazard with sister parity	2	B, PREFIX, hazard, sister pair, ch, sh, ok, ot, channel
+C1450	opacity tier hazard gradient	2	B, MIDDLE, atom, terminal, hazard, opacity, gradient, suffix
+C1451	Mode B exclusive forbidden violation concentration	2	B, suffix, mode, hazard, forbidden, violation, Mode-B
 
 ---
 

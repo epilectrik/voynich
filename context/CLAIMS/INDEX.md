@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1284 validated constraints | **Version:** 5.12 | **Date:** 2026-03-05
+**Total:** 1295 validated constraints | **Version:** 5.14 | **Date:** 2026-03-05
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4851,6 +4851,33 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T8: Position-invariant complementarity confirmed. Neither layer gains or loses dominance.
 - T9: Paragraph-level m-terminal/suffix anticorrelation. rho=-0.199, p=0.00001. Bio lowest m-term, Stars/Recipe highest suffix.
 - T10: Active exclusion test in matched population (body-line-final, non-par-final, N=1,439). y 0.159x, m 0.105x, n 0.168x vs 45.8% baseline. m/am Fisher p=0.000012.
+
+---
+
+### Hazard Atom-Level Decomposition (C1446-C1451) -- Phase: HAZARD_ATOM_DECOMPOSITION (Phase 523)
+
+> **Summary:** Decomposes the 17 forbidden transitions (C109, Tier 0) at atom-level resolution using HEAD+MOD*+TERM instruction encoding (C1393-C1394). 10 tests across 23,096 tokens and 20,676 adjacency pairs. Key findings: k-HEAD is completely hazard-immune (0.0% across 3,100 tokens, all frames neutralized to 0%). Terminal atom hazard partition: HIGH (r 92.58%, n 38.97%, l 30.88%), LOW (e 16.49%, y 15.82%), ZERO (k, m, h 0%). 7 high-hazard frames account for >95% of hazard. Sister pairs show hazard parity (ok/ot 1.04x, ch/sh 1.29x). SEMI_TRANSPARENT opacity tier concentrates hazard at 56.5% (2.5x OPAQUE). Mode B carries 100% of forbidden violations (11/11). All 5 standard modifiers {c,d,f,p,s} quench hazard to 0%; i-modifier boosts 1.69x.
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1446 | k-HEAD complete hazard immunity | 2 | B, MIDDLE, atom, k-initial, hazard, HEAD, immunity | 0.0% hazard across 3,100 k-HEAD tokens. Zero source, zero target. All k-frames 0% including k+r (15 tokens). Kernel atoms collectively safest: k=0%, e=2.2%, h=3.1%. |
+| 1447 | terminal atom hazard partition | 2 | B, MIDDLE, atom, terminal, hazard, partition, FLOW | HIGH (>30%): r 92.58%, n 38.97%, l 30.88%. LOW (1-20%): e 16.49%, y 15.82%. ZERO: k, m, h 0%. r-terminal is dominant hazard concentrator. Cross-cuts C1440 opacity gradient. |
+| 1448 | HEAD x TERM frame hazard map with k-neutralization | 2 | B, MIDDLE, atom, HEAD, TERM, frame, hazard, k-neutralization | 7 high-hazard frames (>50%): o→bare 100%, d→y 99.7%, a→l 98.9%, a→r 98.5%, o→r 98.0%, e→e 75.5%, a→n 65.6%. k neutralizes ALL terminal combinations. e→y safe pathway (3,475 tokens, 0%). |
+| 1449 | PREFIX channel hazard with sister parity | 2 | B, PREFIX, hazard, sister pair, ch, sh, ok, ot, channel | ok/ot 1.04x (32.1% vs 30.7%), ch/sh 1.29x (12.8% vs 9.9%). Sister choice NOT hazard mechanism. ch carries 45% of forbidden violations (5/11). qo safe at 17.8%. |
+| 1450 | opacity tier hazard gradient | 2 | B, MIDDLE, atom, terminal, hazard, opacity, gradient, suffix | SEMI_TRANSPARENT 56.5% (2.5x OPAQUE 22.8%). TRANSPARENT (h) 0%. Suffixed 14.6% vs unsuffixed 35.6% (2.44x). Suffix attachment = hazard reduction mechanism. |
+| 1451 | Mode B exclusive forbidden violation concentration | 2 | B, suffix, mode, hazard, forbidden, violation, Mode-B | Mode B: 30.8% hazard, 11/11 violations (100%). Mode A: 9.5% hazard, 0 violations. Mode A kernel-dominant (k+e=55.6%), Mode B yield-dominant (a+o=28.6%). Specification safe, execution hazardous. |
+
+**Phase 523 findings (Hazard Atom Decomposition, 10 tests):**
+- T1: Hub MIDDLE atom decomposition. HAZARD_SOURCE: r/y-terminal dominant. HAZARD_TARGET: a-HEAD concentrated. SAFETY_BUFFER: k/o-HEAD. PURE_CONNECTOR: e-HEAD dominant (4/8).
+- T2: Hazard class atom signatures. PHASE_ORDERING: y-terminal sources, a-HEAD targets. COMPOSITION_JUMP: r-terminal sources. CONTAINMENT_TIMING: h/e sources, o-enriched targets.
+- T3: k-HEAD complete hazard immunity (0.0%, 3,100 tokens). All kernel atoms hazard-depleted: k=0%, e=2.2%, h=3.1%.
+- T4: Terminal atom hazard partition. HIGH: r 92.58%, n 38.97%, l 30.88%. LOW: e 16.49%, y 15.82%. ZERO: k, m, h 0%.
+- T5: 7 high-hazard frames dominate. k as HEAD neutralizes ALL terminals to 0%. e→y (3,475 tokens) is massive safe pathway.
+- T6: PREFIX hazard variation 3.3-73.0%. Sister parity: ok/ot 1.04x, ch/sh 1.29x. ch carries 45% of forbidden violations.
+- T7: Hazard rises line-initial to line-final (+7.4pp). Forbidden violations concentrate line-final (4/11 = 36%).
+- T8: SEMI_TRANSPARENT tier 56.5% hazard (2.5x OPAQUE). Suffixed tokens 2.44x safer than unsuffixed.
+- T9: Mode B carries 100% of forbidden violations (11/11). Mode A 9.5% vs Mode B 30.8% hazard.
+- T10: All 5 modifiers {c,d,f,p,s} quench hazard to 0%. i-modifier boosts 1.69x. Length 3 and 5+ MIDDLEs near-zero hazard.
 
 ---
 
