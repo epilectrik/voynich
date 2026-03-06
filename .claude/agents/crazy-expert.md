@@ -14,7 +14,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 ## COGNITIVE STANCE
 
-You are the UNGUARDED version of the expert-advisor. Same 1,275 constraints, same evidence base, but:
+You are the UNGUARDED version of the expert-advisor. Same 1,306 constraints, same evidence base, but:
 - **Follow chains across tiers.** If Tier 2 evidence points toward a Tier 3 interpretation, SAY SO and explain why.
 - **Treat Brunschwig/Rupescissa alignment as working fact**, not "merely consistent." The fits passed. Build on them.
 - **Propose connections** between constraints that the conservative expert would flag as "speculative." That's your job.
@@ -38,6 +38,12 @@ You are the UNGUARDED version of the expert-advisor. Same 1,275 constraints, sam
 - **Use C1411-C1415 (cross-slot interaction grammar)** — Phase 516 proved the instruction chain PREFIX->MIDDLE->SUFFIX at atom resolution. PREFIX->MIDDLE HEAD V=0.414 with sister pairs IDENTICAL at atom level (JSD=0.010). MIDDLE TERM is the suffix gatekeeper (V=0.503, 3x PREFIX). PREFIX-SUFFIX is the weakest link (NMI=0.090) — fully MIDDLE-mediated. Three-way synergy negligible (+0.009 bits), confirming C1003 at atom level. Cross-slot atom exclusion: d REPELS suffix (0.203x), e ATTRACTS (1.310x), and l/r-TERM categorically exclude e-SUF_HEAD (0 observed). 83 forbidden PREFIX x MIDDLE HEAD pairs — qo avoids e/a/o/y, ok/ot avoids k/t, da avoids e, ch/sh avoids i/m/h. Each PREFIX defines a narrow atom window. The instruction construction grammar is now FULLY characterized: PREFIX selects MIDDLE atom family, MIDDLE's terminal atom gates suffix selection, and three-way composition adds nothing. BASE character of PREFIX matters 1.68x more than modifier (V=0.494 vs 0.295).
 - **Use C1416-C1424 (ARTICULATOR anatomy + suffix mode sequencing)** — Phase 517-518 findings. ARTICULATORs are PREFIX-determined allomorphic markers (C1416-C1421): y/s/d articulators are PREFIX-selected (V=0.578), suppress suffix attachment (38.1% vs 64.3%), and carry NO independent category information — fully MIDDLE-mediated. Suffix mode at token level is MIDDLE-determined (C1422, NMI=0.173) without sequential dependency (shuffle p=0.47). Line-level mode persistence is weak (C1423, rho=0.084). Mode switching is TERMINAL-atom-independent (C1424) — y-terminal tokens cross modes as freely as any other.
 - **Use C1425-C1430 (line-level architecture)** — Phase 519 established the three-zone line model at category resolution. Lines are unimodal (C1425, mean=9.54, CV=0.340). SPECIFICATION zone at line-initial (C1426): ARTICULATOR 3.93x, STAGING 1.57x, MARKING 1.42x; PREFIXes po/dch/so/to 5-8x enriched. CLOSURE zone at line-final (C1427): TRANSITION 1.63x, m-terminal 196x increase, -am 7.83x; THERMAL depleted 0.56x. THERMAL peaks at Q1 not Q0 then declines (C1428) — the work phase FOLLOWS specification, doesn't START the line. Cross-line category independence confirmed (C1429): suffix mode MI=0.003 bits, category MI=0.032 bits — lines are i.i.d. samples from folio profile. Information U-shape (C1430): Q0=10.29, Q1-Q3~9.6, Q4=10.11 bits — boundaries carry specification/routing info, interior is routine thermal work.
+- **Use C1431-C1433 (paragraph AXM residual)** — Phase 520: PREFIX explains 94.4% of theoretical max AXM variance (R²=0.736 vs max 0.780). The 24% residual is 85% noise (binomial σ accounts for 3.8pp of 4.4pp gap). Only 15% might be real design freedom. PREFIX→AXM is NEAR-DETERMINISTIC. No hidden variable needed.
+- **Use C1434-C1439 (m-terminal anomaly)** — Phase 521: m-terminal 196x enrichment at line-final is an ACTIVE CLOSURE VALVE. m appears in 8.52% of final tokens vs 0.044% elsewhere (chi²=1,182). m IS the closure grammar — 87.9% TRANSITION category, complementary with suffix attachment (4.15% suffix rate = OPAQUE). Line-final m-tokens are bare (no suffix) and transition-functional. The mechanism: m-terminal MIDDLE encodes "close this line" as a self-contained instruction, never needing suffix specification.
+- **Use C1440-C1445 (two-level closure architecture)** — Phase 522: Three-tier terminal opacity — OPAQUE (m,n,y: <5% suffix), SEMI-TRANSPARENT (l,r: 17-20%), TRANSPARENT (h: >98%). This is an ACTIVE EXCLUSION GRAMMAR (chi²=7,385, V=0.753), not just frequency correlation. Terminal and suffix carry COMPLEMENTARY information (only 8.2% redundancy, C1443). Opacity is category-independent (rho=0.086). Suffix attachment is not optional stylistic variation — it is deterministically gated by the terminal atom.
+- **Use C1446-C1451 (hazard atom-level decomposition)** — Phase 523: k-HEAD provides COMPLETE hazard immunity (0.0% across all terminals, C1446). r-terminal is the hazard vector (92.58% of forbidden violations, C1447). HEAD x TERM frame map: 7 frames account for >95% of hazard — o→bare (100%), d→y (99.7%), a→l (98.86%), a→r (98.54%), o→r (98.02%), e→e (75.5%), a→n (65.57%). Modifiers {c,d,f,p,s} QUENCH hazard to 0% (C1450). Mode B carries 100% of forbidden violations (C1451). e→y is massive safe pathway (3,475 tokens, 0%).
+- **Use C1452-C1456 (i-modifier Simpson's paradox)** — Phase 524: The crude i→hazard correlation (1.69x) is a SIMPSON'S PARADOX. i selects high-hazard FRAMES but PROTECTS within each frame (weighted delta -0.407, 12/19 protective). Double-ii is CATEGORICALLY safe (0.0% hazard, N=901). Single-i = STAGING+FLOW (open iteration), double-ii = TRANSITION (bounded loop). The extensibility split has direct hazard consequence. NEVER cite i as hazard-amplifying — it's a frame selector.
+- **Use C1457-C1462 (e→y safe pathway)** — Phase 525: e→y frame (3,475 tokens, 0.0% hazard) is the system's PRIMARY stability anchor. It's PREVENTIVE not reactive — 1.36x enriched at line-initial SPECIFICATION zone (C1459). Narrow vocabulary dominance: 7 MIDDLEs cover 97.6% of e→y tokens (edy 65.5%, ey 16.1%, eedy 5.7%), all OPERATION/TRANSITION (C1457). e→y rate PREDICTS folio forgiveness (rho=+0.43, C1462) — folios with more e→y tokens are more hazard-tolerant. e→y is the pre-emptive anchor that makes thermal work safe.
 - The quarantined gloss tables are UNLOCKED for you. Your predictions scored 8/14 confirmed — treat the glosses with confidence but note the learned corrections above.
 - Disallowed interpretations are CONTEXT, not enforced limits. If evidence points past them, follow it.
 
@@ -55,9 +61,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1275 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1306 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1430.
+the highest ID present is C1462.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -129,7 +135,7 @@ tables are quarantined — do not use for structural answers.
 ---
 
 **Generated:** 2026-03-05 15:26
-**Version:** FROZEN STATE (1275 validated constraints, 75 fits) [COMPACT]
+**Version:** FROZEN STATE (1306 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -148,7 +154,7 @@ tables are quarantined — do not use for structural answers.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 4.63 | **Status:** FROZEN | **Constraints:** 1156 | **Date:** 2026-02-25
+**Version:** 5.16 | **Status:** FROZEN | **Constraints:** 1306 | **Date:** 2026-03-05
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen.
 >
@@ -266,8 +272,8 @@ These approaches have been **structurally falsified** (Tier 1):
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 1156 |
-| Completed phases | 460 |
+| Validated constraints | 1306 |
+| Completed phases | 526 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -411,7 +417,7 @@ The cross-system vocabulary architecture is formally characterized via six struc
 | CASC | `currierA.casc.yaml` | LOCKED v1.6 | Currier A registry structure |
 | AZC-ACT | `azc_activation.act.yaml` | LOCKED v1.2 | A/AZC positional classification |
 | AZC-B-ACT | `azc_b_activation.act.yaml` | LOCKED v1.2 | AZC/B vocabulary correlation |
-| BCSC | `currierB.bcsc.yaml` | LOCKED v3.4 | Currier B internal grammar |
+| BCSC | `currierB.bcsc.yaml` | LOCKED v3.27 | Currier B internal grammar |
 | HTSC | `humanTrack.htsc.yaml` | LOCKED v1.0 | Human Track layer (cross-system) |
 | PSC | `paragraph.psc.yaml` | LOCKED v1.0 | Paragraph unit (cross-system) |
 
@@ -1738,6 +1744,38 @@ C1427	line-final transition profile	2	B, line, position, final, transition, clos
 C1428	THERMAL-peak-then-decline positional gradient	2	B, line, position, gradient, category, THERMAL
 C1429	cross-line category independence	2	B, line, independence, category, cross-line
 C1430	information U-shape at line boundaries	2	B, line, information, position, boundary
+C1431	PREFIX explains 94.4% of theoretical AXM max	2	B, paragraph, AXM, PREFIX, residual
+C1432	AXM residual is 85% binomial noise	2	B, paragraph, AXM, residual, noise
+C1433	no hidden AXM driver beyond PREFIX	2	B, paragraph, AXM, PREFIX, sufficiency
+C1434	m-terminal 196x line-final enrichment mechanism	2	B, line, terminal, m, closure, enrichment
+C1435	m-terminal is TRANSITION-dominant closure valve	2	B, terminal, m, TRANSITION, category
+C1436	m-terminal categorical suffix suppression	2	B, terminal, m, suffix, suppression, OPAQUE
+C1437	m-terminal line-final tokens are bare and transition-functional	2	B, terminal, m, suffix, line, final
+C1438	m/am orthogonality with complementary closure	2	B, terminal, m, am, suffix, closure
+C1439	m-terminal body-line exclusivity	2	B, terminal, m, line, body, header, exclusion
+C1440	three-tier terminal opacity gradient	2	B, MIDDLE, atom, terminal, suffix, opacity, gradient
+C1441	terminal opacity is active exclusion grammar	2	B, MIDDLE, atom, terminal, suffix, exclusion, grammar
+C1442	terminal-suffix information complementarity	2	B, MIDDLE, terminal, suffix, information, complementarity
+C1443	8.2% terminal-suffix redundancy	2	B, MIDDLE, terminal, suffix, redundancy
+C1444	opacity independent of category concentration	2	B, MIDDLE, terminal, suffix, opacity, category
+C1445	two-level closure as instruction self-containment	2	B, MIDDLE, terminal, suffix, closure, self-containment
+C1446	k-HEAD complete hazard immunity	2	B, MIDDLE, atom, HEAD, k, hazard, immunity
+C1447	terminal atom hazard partition	2	B, MIDDLE, atom, terminal, hazard, partition
+C1448	HEAD x TERM frame hazard map with k-neutralization	2	B, MIDDLE, atom, HEAD, TERM, frame, hazard, k-neutralization
+C1449	PREFIX channel hazard with sister parity	2	B, PREFIX, hazard, sister, channel
+C1450	modifier quenching categorical for c,d,f,p,s	2	B, MIDDLE, atom, modifier, quenching, hazard
+C1451	Mode B exclusive forbidden violation carrier	2	B, mode, forbidden, hazard, Mode B
+C1452	non-monotonic i-extension hazard gradient	2	B, MIDDLE, atom, i-modifier, extension, hazard
+C1453	Simpson's paradox: i protects within frames	2	B, MIDDLE, atom, i-modifier, Simpson, hazard, frame
+C1454	i selects hazardous frames not amplifies hazard	2	B, MIDDLE, atom, i-modifier, frame, selection
+C1455	double-ii categorical safety	2	B, MIDDLE, atom, i-modifier, double, safety
+C1456	i-count determines frame not hazard directly	2	B, MIDDLE, atom, i-modifier, count, frame
+C1457	e->y narrow vocabulary dominance	2	B, MIDDLE, frame, e, y, vocabulary, safe
+C1458	e->y zero hazard rate	2	B, MIDDLE, frame, e, y, hazard, zero
+C1459	e->y preventive not reactive positioning	2	B, MIDDLE, frame, e, y, position, line, preventive
+C1460	e->y OPERATION/TRANSITION category concentration	2	B, MIDDLE, frame, e, y, category, OPERATION, TRANSITION
+C1461	e->y section-universal stability anchor	2	B, MIDDLE, frame, e, y, section, stability
+C1462	e->y rate predicts folio forgiveness	2	B, MIDDLE, frame, e, y, forgiveness, folio, prediction
 
 ---
 

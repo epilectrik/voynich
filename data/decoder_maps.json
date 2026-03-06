@@ -1,6 +1,6 @@
 {
   "meta": {
-    "version": "2.0",
+    "version": "2.1",
     "description": "Externalized BFolioDecoder maps with constraint citations",
     "source": "Extracted from scripts/voynich.py BFolioDecoder class",
     "v1.1_changes": "Expert validation: fixed -ey (strong→selective), -dy (gentle→basic), -ar (recover→close), removed sch=grind (unsupported), demoted ksh/FL glosses to Tier 4, fixed CC_TOKENS to use C874 labels",
@@ -13,7 +13,8 @@
     "v1.8_changes": "Expert validation fixes: (1) Prep PREFIX glosses chop/pound/gather/etc→process material (C1221: h-base variants not distinct operations). (2) FL stage map corrected per C777: al/l/ol MEDIAL→LATE, o/ly LATE→FINAL, am TERMINAL→FINAL.",
     "tier_note": "tier 0-2 = structural (constraint-backed), tier 3 = interpretive (Brunschwig-grounded), tier 4 = speculative",
     "v1.9_changes": "Added gloss_to_category and atom_to_category reference maps (C1250, Tier 2). Canonical source for 8-category operational classification system.",
-    "v2.0_changes": "Phase 461 gloss sync: ot scaffold→verify (C1316), qo/ok notes updated for two-channel thermal model (C1313, C1314). Control flow: sh→qo→ok→ot."
+    "v2.0_changes": "Phase 461 gloss sync: ot scaffold→verify (C1316), qo/ok notes updated for two-channel thermal model (C1313, C1314). Control flow: sh→qo→ok→ot.",
+    "v2.1_changes": "Phase 527: Added terminal_opacity (C1440, 3-tier suffix suppression) and frame_hazard (C1448, HEAD x TERM hazard map) maps. Supports HEAD+MOD*+TERM positional decomposition (C1393-C1394)."
   },
   "maps": {
     "prefix_phase": {
@@ -2847,6 +2848,36 @@
           "gloss": "input",
           "confidence": "WEAK"
         }
+      }
+    },
+    "terminal_opacity": {
+      "constraint_group": "C1440",
+      "tier": 2,
+      "description": "Three-tier suffix suppression gradient: OPAQUE (<5%), SEMI_TRANSPARENT (17-20%), TRANSPARENT (>98%)",
+      "entries": {
+        "m": { "value": "OPAQUE", "constraint": "C1440", "tier": 2 },
+        "n": { "value": "OPAQUE", "constraint": "C1440", "tier": 2 },
+        "y": { "value": "OPAQUE", "constraint": "C1440", "tier": 2 },
+        "l": { "value": "SEMI_TRANSPARENT", "constraint": "C1440", "tier": 2 },
+        "r": { "value": "SEMI_TRANSPARENT", "constraint": "C1440", "tier": 2 },
+        "h": { "value": "TRANSPARENT", "constraint": "C1440", "tier": 2 }
+      }
+    },
+    "frame_hazard": {
+      "constraint_group": "C1448, C1446, C1457",
+      "tier": 2,
+      "description": "HEAD x TERMINAL frame hazard classification. HIGH = >50% hazard rate, ZERO = 0% hazard, IMMUNE = k-HEAD neutralization. Default (unlisted) = LOW.",
+      "entries": {
+        "o->bare": { "value": "HIGH", "constraint": "C1448", "tier": 2, "note": "100% hazard, N=388" },
+        "d->y": { "value": "HIGH", "constraint": "C1448", "tier": 2, "note": "99.7% hazard, N=675" },
+        "a->l": { "value": "HIGH", "constraint": "C1448", "tier": 2, "note": "98.86% hazard, N=527" },
+        "a->r": { "value": "HIGH", "constraint": "C1448", "tier": 2, "note": "98.54% hazard, N=687" },
+        "o->r": { "value": "HIGH", "constraint": "C1448", "tier": 2, "note": "98.02% hazard, N=455" },
+        "e->e": { "value": "HIGH", "constraint": "C1448", "tier": 2, "note": "75.5% hazard, N=151" },
+        "a->n": { "value": "HIGH", "constraint": "C1448", "tier": 2, "note": "65.57% hazard, N=1272" },
+        "e->y": { "value": "ZERO", "constraint": "C1457", "tier": 2, "note": "0% hazard, N=3475, safe pathway" },
+        "e->l": { "value": "ZERO", "constraint": "C1448", "tier": 2, "note": "0% hazard" },
+        "i->n": { "value": "ZERO", "constraint": "C1448", "tier": 2, "note": "0% hazard, N=991" }
       }
     }
   }

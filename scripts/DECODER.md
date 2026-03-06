@@ -54,7 +54,7 @@ shedy          | monitor cool-mark-end[e]            | -
 - `--no-manual` — Hide manual gloss column
 - `--tokens-only` — Show only tokens (shortcut for `--no-calc --no-manual`)
 - `--line N` — Show only line N
-- `--detail N` — Detail level (1-4, default 2). Level 4 shows full metadata per token: macro state, hub role, affordance bin/family, prefix zone, terminal group, compound depth/atoms, DP flag, suffix continuation, prefix decomposition. Also shows HT structural internals (prefix/middle/suffix/kernel).
+- `--detail N` — Detail level (1-4, default 2). Level 4 shows full metadata per token: macro state, hub role, affordance bin/family, prefix zone, terminal group, compound depth/atoms, DP flag, suffix continuation, prefix decomposition, HEAD+MOD*+TERM decomposition (hmt:), frame, opacity tier, frame hazard, safe pathway flag, i-modifier count, quenching modifier flag. Also shows HT structural internals (prefix/middle/suffix/kernel).
 
 ### 2. Structural Mode (`-s` / `--structural-mode`)
 
@@ -103,6 +103,8 @@ L1 [HEADER]: precision-heat cool-mark-end -> heat-yield input-end -> vessel-temp
 - **`[FLOW_LABEL]`** shows control-flow labels like `[CLOSE]`, `[CHECKPOINT]`, `[VERIFY]`, `[THOROUGH]`
 - **Kernel markers**: `<k>` = heat, `<e>` = cool, `<h>` = watch
 - **`macro:` line** shows macro state sigils per token: AXM (active), FL (flow-layer), CC (control-change), `---` (no macro)
+- **`!!`** (red): High frame hazard token (C1448)
+- **`~~`** (green): Safe pathway token (e→y, C1457)
 - **Zone tag**: `[HEADER]`, `[BODY]`, or `[TAIL]` per C747/C963
 
 ### 5. Control IR (`--ir`)
@@ -156,6 +158,9 @@ L1 [B] [HEADER] kern(e:4 k:1) cat:OP:37%/TR:25%/TH:25%  EN:CHSH:2 EN:QO:2 AX:2
 **T3 annotations** (Tier 3, commented):
 - Character-level kernel expansion of MIDDLE using C1195 atom glosses
 - Category-hazard indicator: `[TH.]` = thermal/low-hazard, `[FL!]` = flow/high-hazard, `[OP]` = operation/neutral
+- Frame annotation: `{e->y}` = HEAD→TERM frame (C1393, C1448)
+- Hazard refinement: `!!HAZ` = high frame hazard, `~IMMUNE` = k-HEAD neutralization, `~SAFE` = e→y safe pathway
+- Modifier annotation: `[Q]` = quenching mod (c,d,f,p,s), `[i]`/`[ii]` = iteration count, `[i+Q]` = both (C1450-C1456)
 
 **Paragraph header** (above each paragraph's lines):
 ```
@@ -280,6 +285,13 @@ The decoder composes glosses from multiple data sources:
 | C1235, C1237 | Line-final / paragraph termination |
 | C1250 | 8-category operational classification |
 | C1280 | Category-hazard association |
+| C1393-C1394 | HEAD+MOD*+TERM positional grammar |
+| C1440 | Three-tier terminal opacity gradient |
+| C1446 | k-HEAD complete hazard immunity |
+| C1448 | HEAD x TERM frame hazard map |
+| C1450 | Modifier quenching (c,d,f,p,s → 0% hazard) |
+| C1452-C1456 | i-modifier hazard (Simpson's paradox) |
+| C1457-C1462 | e→y safe pathway / stability anchor |
 
 ---
 

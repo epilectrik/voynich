@@ -1349,6 +1349,43 @@ class CategoryClassifier:
         return len(self._mid_to_category)
 
 
+def decompose_middle_hmt(middle: str):
+    """Decompose MIDDLE into HEAD + MOD* + TERM (C1393-C1394).
+
+    HEAD = first char if in {a,e,o,k,t}, else None (headless).
+    TERM = last char if in {y,l,r,h,m,n}, else 'bare'.
+    MODS = everything between HEAD and TERM positions.
+    frame_str = first_char->term for hazard lookup (C1448).
+
+    Returns: (head, mods, term, frame_str)
+    """
+    if not middle:
+        return (None, '', 'bare', None)
+
+    HEADS = {'a', 'e', 'o', 'k', 't'}
+    TERMINALS = {'y', 'l', 'r', 'h', 'm', 'n'}
+
+    # HEAD: first char if in HEAD set
+    head = middle[0] if middle[0] in HEADS else None
+    head_end = 1 if head else 0
+
+    # TERM: last char if in TERMINAL set (and not same position as HEAD)
+    if len(middle) > head_end and middle[-1] in TERMINALS:
+        term = middle[-1]
+        term_start = len(middle) - 1
+    else:
+        term = 'bare'
+        term_start = len(middle)
+
+    # MODS: everything between HEAD and TERM
+    mods = middle[head_end:term_start]
+
+    # Frame string: first_char -> terminal (for hazard lookup per C1448)
+    frame_str = f"{middle[0]}->{term}"
+
+    return (head, mods, term, frame_str)
+
+
 @dataclass
 class BTokenAnalysis:
     """
@@ -1426,6 +1463,26 @@ class BTokenAnalysis:
     operational_category: Optional[str] = None     # THERMAL, FLOW, CONTAINMENT, STAGING, OPERATION, TRANSITION, MARKING, MONITORING
     category_confidence: Optional[str] = None      # HIGH, MEDIUM, LOW (from C1195 atom tiers)
 
+    # HEAD+MOD*+TERM positional decomposition (C1393-C1394, C1448)
+    middle_head: Optional[str] = None              # First char if in {a,e,o,k,t}, else None
+    middle_mods: str = ''                          # Modifier chars between HEAD and TERM
+    middle_term: str = 'bare'                      # Last char if in {y,l,r,h,m,n}, else 'bare'
+    head_term_frame: Optional[str] = None          # "e->y", "k->bare", "a->n", etc.
+
+    # Terminal opacity (C1440: three-tier suffix suppression gradient)
+    terminal_opacity: Optional[str] = None         # OPAQUE, SEMI_TRANSPARENT, TRANSPARENT
+
+    # Frame hazard (C1448: HEAD x TERM hazard map)
+    frame_hazard: Optional[str] = None             # HIGH, LOW, ZERO, IMMUNE
+
+    # Safe pathway (C1457-C1462: e->y stability anchor)
+    is_safe_pathway: bool = False                  # True for e->y frame
+
+    # Modifier hazard role (C1450, C1452-C1456)
+    has_quenching_mod: bool = False                # True if mods contain {c,d,f,p,s}
+    has_i_mod: bool = False                        # True if mods contain 'i'
+    i_count: int = 0                               # Number of 'i' chars in mods
+
     # Descriptive label maps (human-readable register)
     MACRO_LABELS = {
         'FL_HAZ': 'hazard flow', 'FL_SAFE': 'safe flow',
@@ -1481,6 +1538,15 @@ class BTokenAnalysis:
         # Dark pipeline marker (C1137, C1140)
         if self.is_dark_pipeline:
             parts.append('DP')
+        # HEAD+MOD*+TERM frame (C1393, C1448)
+        if self.head_term_frame:
+            parts.append(f"FRM:{self.head_term_frame}")
+        if self.frame_hazard:
+            parts.append(f"HAZ:{self.frame_hazard}")
+        if self.terminal_opacity:
+            parts.append(f"OPC:{self.terminal_opacity}")
+        if self.is_safe_pathway:
+            parts.append('SAFE')
         return ' + '.join(parts) if parts else '(unclassified)'
 
     def structural_gloss(self) -> str:
@@ -2961,6 +3027,12 @@ class BFolioDecoder:
             _dp_data = json.load(f)
         self._dark_pipeline_set = set(_dp_data['middles'])
 
+        # Terminal opacity (C1440: three-tier suffix suppression gradient)
+        self.TERMINAL_OPACITY = self._extract_simple(maps['terminal_opacity'])
+
+        # Frame hazard (C1448: HEAD x TERM hazard map)
+        self.FRAME_HAZARD = self._extract_simple(maps['frame_hazard'])
+
         # Bridge MIDDLE set (C1013, 85 MIDDLEs)
         _bridge_path = PROJECT_ROOT / 'phases' / 'BRIDGE_MIDDLE_SELECTION_MECHANISM' / 'results' / 'bridge_selection.json'
         with open(_bridge_path, 'r', encoding='utf-8') as f:
@@ -3359,6 +3431,37 @@ class BFolioDecoder:
         if m.middle:
             analysis.operational_category = self.category_classifier.classify(m.middle)
             analysis.category_confidence = self.category_classifier.confidence(m.middle)
+
+        # HEAD+MOD*+TERM positional decomposition (C1393-C1394, C1448)
+        if m.middle:
+            head, mods, term, frame_str = decompose_middle_hmt(m.middle)
+            analysis.middle_head = head
+            analysis.middle_mods = mods
+            analysis.middle_term = term
+            analysis.head_term_frame = frame_str
+
+            # Terminal opacity (C1440)
+            analysis.terminal_opacity = self.TERMINAL_OPACITY.get(term)
+
+            # Frame hazard (C1448): k-HEAD = IMMUNE, else map lookup, default LOW
+            if head == 'k':
+                analysis.frame_hazard = 'IMMUNE'
+            elif frame_str:
+                analysis.frame_hazard = self.FRAME_HAZARD.get(frame_str, 'LOW')
+
+            # Safe pathway (C1457-C1462): e->y is stability anchor
+            if frame_str == 'e->y':
+                analysis.is_safe_pathway = True
+
+            # Modifier hazard role (C1450, C1452-C1456)
+            QUENCHING = {'c', 'd', 'f', 'p', 's'}
+            if mods:
+                if set(mods) & QUENCHING:
+                    analysis.has_quenching_mod = True
+                i_ct = mods.count('i')
+                if i_ct > 0:
+                    analysis.has_i_mod = True
+                    analysis.i_count = i_ct
 
         return analysis
 

@@ -201,6 +201,17 @@ class IRToken:
     zone_basis: str = ''               # census/phase/role/ht/dp/c740/default
     operational_category: Optional[str] = None  # 8-category (C1250)
     hazard_category: Optional[str] = None  # HIGH (FL/CN), LOW (TH), None (C1280)
+    # HEAD+MOD*+TERM (C1393, C1448, C1440, C1457)
+    middle_head: Optional[str] = None
+    middle_mods: str = ''
+    middle_term: str = 'bare'
+    head_term_frame: Optional[str] = None
+    terminal_opacity: Optional[str] = None
+    frame_hazard: Optional[str] = None
+    is_safe_pathway: bool = False
+    has_quenching_mod: bool = False
+    has_i_mod: bool = False
+    i_count: int = 0
 
     def role_tag(self) -> str:
         """Role-typed notation per BCSC census (C573, C581-C583, C563-C572).
@@ -498,11 +509,34 @@ def _ir_t3_gloss(t: IRToken) -> Optional[tuple]:
         else:
             cat_ind = f' [{ca}]'
 
+    # Frame annotation (C1448)
+    frame_ind = ''
+    if t.head_term_frame:
+        frame_ind = f' {{{t.head_term_frame}}}'
+
+    # Hazard refinement (C1448, C1446, C1457)
+    haz_ind = ''
+    if t.frame_hazard == 'HIGH':
+        haz_ind = ' !!HAZ'
+    elif t.frame_hazard == 'IMMUNE':
+        haz_ind = ' ~IMMUNE'
+    elif t.is_safe_pathway:
+        haz_ind = ' ~SAFE'
+
+    # Modifier annotation (C1450, C1452-C1456)
+    mod_ind = ''
+    if t.has_i_mod and t.has_quenching_mod:
+        mod_ind = f' [i+Q]' if t.i_count == 1 else f' [{"i"*t.i_count}+Q]'
+    elif t.has_quenching_mod:
+        mod_ind = ' [Q]'
+    elif t.has_i_mod:
+        mod_ind = f' [{"i"*t.i_count}]'
+
     if pfx:
         pfx_gloss = _PREFIX_GLOSS.get(pfx, pfx)
-        gloss = f"[{role_tag}] ({pfx_gloss}) {mid_exp}{sfx_exp}{cat_ind}"
+        gloss = f"[{role_tag}] ({pfx_gloss}) {mid_exp}{sfx_exp}{cat_ind}{frame_ind}{haz_ind}{mod_ind}"
     else:
-        gloss = f"[{role_tag}] {mid_exp}{sfx_exp}{cat_ind}"
+        gloss = f"[{role_tag}] {mid_exp}{sfx_exp}{cat_ind}{frame_ind}{haz_ind}{mod_ind}"
     return (t.word, gloss)
 
 
@@ -605,6 +639,16 @@ def compile_ir_block(la, d, middle_dict=None) -> IRBlock:
             zone_basis=zone_basis,
             operational_category=op_cat,
             hazard_category=hazard_cat,
+            middle_head=tok.middle_head,
+            middle_mods=tok.middle_mods,
+            middle_term=tok.middle_term,
+            head_term_frame=tok.head_term_frame,
+            terminal_opacity=tok.terminal_opacity,
+            frame_hazard=tok.frame_hazard,
+            is_safe_pathway=tok.is_safe_pathway,
+            has_quenching_mod=tok.has_quenching_mod,
+            has_i_mod=tok.has_i_mod,
+            i_count=tok.i_count,
         ))
 
     # Partition by zone (role-first for WORK: C574 lanes are EN-internal)
@@ -873,6 +917,10 @@ def display_ir(folio_id: str, line_num=None, para_num=None, use_color=True):
     print(f"cat: 8-category operational classification (C1250). Structural, not semantic translations.")
     print(f"  TH=thermal FL=flow CN=containment ST=staging OP=operation TR=transition MK=marking MN=monitoring")
     print(f"mode: A=specification (suffix-heavy) B=continuation (bare-heavy) per C1229-C1231.")
+    print(f"frame: HEAD->TERM positional decomposition (C1393). {{e->y}} = cool-to-end.")
+    print(f"fhaz: frame hazard (C1448). !!HAZ=high, ~IMMUNE=k-HEAD, ~SAFE=e->y pathway.")
+    print(f"opacity: OPAQUE(m,n,y <5%) SEMI(l,r 17-20%) TRANSPARENT(h >98%) per C1440.")
+    print(f"mods: [Q]=quenching(c,d,f,p,s), [i]=iteration, [ii]=bounded, [i+Q]=both (C1450-C1456).")
     print(f"{'=' * W}")
     if color_enabled:
         print_legend()
@@ -1020,6 +1068,11 @@ def display_flow(folio_id: str, line_num: int = None, para_num: int = None, use_
                 # Control-flow label (bright)
                 if fg['flow']:
                     s += f" {Style.BRIGHT}[{fg['flow']}]{reset}"
+                # Frame hazard markers (C1448, C1457)
+                if tok.frame_hazard == 'HIGH':
+                    s += f" {Fore.RED}!!{reset}"
+                elif tok.is_safe_pathway:
+                    s += f" {Fore.GREEN}~~{reset}"
                 tok_parts.append((s, tok.prefix_phase, tok.suffix_continuation))
 
             # Join with zone-aware separators (C961, C964, C1058)
@@ -1290,6 +1343,21 @@ def display_folio(folio_id: str,
                 if tok.prefix_base:
                     mod_str = tok.prefix_modifier or '-'
                     meta_parts.append(f"pfx:{mod_str}+{tok.prefix_base}")
+                # HEAD+MOD*+TERM decomposition (C1393, C1448, C1440, C1457)
+                if tok.head_term_frame:
+                    hmt_str = f"hmt:{tok.middle_head or '-'}+{tok.middle_mods or '-'}+{tok.middle_term}"
+                    meta_parts.append(hmt_str)
+                    meta_parts.append(f"frame:{tok.head_term_frame}")
+                if tok.terminal_opacity:
+                    meta_parts.append(f"opacity:{tok.terminal_opacity}")
+                if tok.frame_hazard:
+                    meta_parts.append(f"fhaz:{tok.frame_hazard}")
+                if tok.is_safe_pathway:
+                    meta_parts.append(f"SAFE_PATH")
+                if tok.has_i_mod:
+                    meta_parts.append(f"i_mod:{tok.i_count}")
+                if tok.has_quenching_mod:
+                    meta_parts.append(f"quench_mod:True")
                 if meta_parts:
                     print(f"{'':>14}   {'  '.join(meta_parts)}")
 

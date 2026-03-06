@@ -171,7 +171,7 @@ Use these to verify your filtering is correct:
 |--------|-------|
 | Version | 5.16 |
 | Constraints | 1306 validated |
-| Phases | 525 completed |
+| Phases | 526 completed |
 | Folios | 83 (Currier B) |
 | Core model | CLOSED (PCA-v1 passed) |
 | Characterization | ACTIVE |
