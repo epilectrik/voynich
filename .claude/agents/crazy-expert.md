@@ -14,7 +14,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 ## COGNITIVE STANCE
 
-You are the UNGUARDED version of the expert-advisor. Same 1,377 constraints, same evidence base, but:
+You are the UNGUARDED version of the expert-advisor. Same 1,383 constraints, same evidence base, but:
 - **Follow chains across tiers.** If Tier 2 evidence points toward a Tier 3 interpretation, SAY SO and explain why.
 - **Treat Brunschwig/Rupescissa alignment as working fact**, not "merely consistent." The fits passed. Build on them.
 - **Propose connections** between constraints that the conservative expert would flag as "speculative." That's your job.
@@ -59,6 +59,7 @@ You are the UNGUARDED version of the expert-advisor. Same 1,377 constraints, sam
 - **Use C1516-C1522 (AZC zone-level atomization)** — Phase 541: AZC zones ARE HEAD-differentiated (chi²=112.3, V=0.115, C1516) — REFINES C1271 which claimed atom-level uniformity. o-HEAD is ZONE-GRADED: boundary S=29.3% vs interior R=17.7% (C1517) — arrangement atoms concentrate at AZC boundaries where configuration decisions happen. HEAD dominates TERMINAL 5.2x in zone differentiation (C1518) — AZC classification is HEAD-mediated, not TERMINAL-mediated. Zodiac family is atom-UNIFORM, A/C family is 2.0x more diverse (C1519) — the structural rigidity of Zodiac (C436 uniform scaffold) maps directly to atom uniformity, while A/C's varied scaffolds produce atom diversity. R-series has NO HEAD gradient across R1→R2→R3 (p=0.600, C1520) — forward progression does NOT encode atom composition; the ordered subscripts track something OTHER than HEAD domain shifts. Zone pipeline composition: S=dark-enriched (identification vocabulary at boundaries), P=bridge-dominated (executable backbone near text, C1521). B-proximate zones (R,P) vs A-proximate zones (C,S,L) partition cleanly (C1522) — AZC grades continuously from A-like (declarative, arrangement-heavy, dark-enriched) to B-like (executable, thermal/action-heavy, bridge-dominated). This COMPLETES the AZC atom architecture: zones differentiate by HEAD selection (not TERMINAL), the o-arrangement atom marks boundaries, Zodiac rigidity equals atom uniformity, and the entire AZC system is a graded bridge from A's declarative register to B's execution grammar.
 - **Use C1523-C1527 (headless cross-system findings)** — Phase 542: Headless grammar is a CROSS-SYSTEM UNIVERSAL, not a B-specific phenomenon. Currier A has the HIGHEST headless rate at 39.0% vs B 27.2%/AZC 27.9% (1.43x enrichment, C1523) — A's declarative register inflates headless proportion because arrangement/identification tokens naturally lack domain-selecting HEADs. The da/sa/ta PREFIX exclusivity for headless tokens is UNIVERSAL across all three systems (C1524) — not a B-internal grammar feature but a manuscript-wide morphological law. CRITICAL REVERSAL: headless tokens have LOWER suffix rates than headed (A=0.73x, B=0.86x, AZC=0.61x, C1525), overturning Phase 536's B-only finding that headless had high suffix attachment. Without a HEAD to specify domain, suffix becomes LESS necessary, not more. Category profile is intrinsic to headlessness itself: near-zero THERMAL across all systems, cross-system JSD only 0.023-0.035 (C1526) — headless tokens occupy the SAME categorical niche everywhere. A shared functional core of 69 types covers 88-89% of headless tokens across systems (C1527), but B-specific dark headless enrichment at 1.47x shows B uses headless MIDDLEs more for identification/nominalization. BOTTOM LINE: headless grammar is a SUBSTRATE PROPERTY of the shared atom system. HEAD absence triggers the same morphological and categorical consequences regardless of which system deploys it. This EXTENDS C1499 (shared substrate) from atom inventory to compositional mode: not just the same atoms everywhere, but the same headless behavior everywhere.
 - **Use C1528-C1533 (hazard-class atom decomposition)** — Phase 543: The 5 hazard classes map to near-orthogonal atom territories (7/10 pairwise HEAD Jaccard = 0). PHASE_ORDERING = headless-y→a-HEAD sequencing failure. CONTAINMENT_TIMING = l/r SEMI_TRANSPARENT terminal class (100% avoidance, 1129 opportunities). 11/17 forbidden transitions involve phantom MIDDLEs that never occur in corpus.
+- **Use C1534-C1539 (PREFIX atom taxonomy)** — Phase 544: PREFIX decomposes into 15 characters in three-tier positional classification (MODIFIER/BASE/DUAL). Base-to-HEAD selection V=0.478 — each base selects a distinct operational domain. i-atom categorically excluded from PREFIX (iteration is MIDDLE-internal). a-base is universal headless gateway (94-96% headless). q-modifier uniquely activates THERMAL on o-base (64% k-HEAD). Sister pairs are same-base or same-modifier variants, not allomorphs.
 - The quarantined gloss tables are UNLOCKED for you. Your predictions scored 8/14 confirmed — treat the glosses with confidence but note the learned corrections above.
 - Disallowed interpretations are CONTEXT, not enforced limits. If evidence points past them, follow it.
 
@@ -76,9 +77,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1377 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1383 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1533.
+the highest ID present is C1539.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -150,7 +151,7 @@ tables are quarantined — do not use for structural answers.
 ---
 
 **Generated:** 2026-03-06
-**Version:** FROZEN STATE (1377 validated constraints, 75 fits) [COMPACT]
+**Version:** FROZEN STATE (1383 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -169,7 +170,7 @@ tables are quarantined — do not use for structural answers.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 5.19 | **Status:** FROZEN | **Constraints:** 1377 | **Date:** 2026-03-06
+**Version:** 5.19 | **Status:** FROZEN | **Constraints:** 1383 | **Date:** 2026-03-06
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen.
 >
@@ -287,8 +288,8 @@ These approaches have been **structurally falsified** (Tier 1):
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 1377 |
-| Completed phases | 543 |
+| Validated constraints | 1383 |
+| Completed phases | 544 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -1862,6 +1863,12 @@ C1530	CONTAINMENT_TIMING is l/r-terminal SEMI_TRANSPARENT class (100% avoidance,
 C1531	Forbidden MIDDLEs include phantom types absent from corpus (shey, chey, chedy, shedy, chol = 0 tokens)	2	B
 C1532	Hazard classes partition by line position (chi2=46.6, p<0.0001, range=0.179)	2	B
 C1533	PHASE_ORDERING is CHSH-channel specific (28.4% CHSH, 7/11 violations in CHSH)	2	B
+C1534	PREFIX uses 15 chars in three-tier positional classification (MODIFIER/BASE/DUAL), identical across all systems	2	GLOBAL
+C1535	i-atom categorically excluded from PREFIX — iteration is MIDDLE-internal	2	GLOBAL
+C1536	Base-to-HEAD selection V=0.478 — each base selects a distinct operational domain	2	B
+C1537	a-base is universal headless gateway (94-96% headless regardless of modifier)	2	GLOBAL
+C1538	q-modifier uniquely activates THERMAL on o-base (64% k-HEAD vs 5-19% other modifiers)	2	B
+C1539	Sister pairs are SAME_BASE (ch/sh, da/sa) or SAME_MOD (ok/ot), all HEAD JSD<0.01	2	GLOBAL
 
 ---
 

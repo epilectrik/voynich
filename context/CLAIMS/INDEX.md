@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1377 validated constraints | **Version:** 5.32 | **Date:** 2026-03-06
+**Total:** 1383 validated constraints | **Version:** 5.33 | **Date:** 2026-03-06
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5335,6 +5335,27 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - Phantom finding: 5 forbidden MIDDLEs (shey, chey, chedy, shedy, chol) have 0 corpus occurrences. 11/17 transitions involve phantoms. Forbidden list partially encodes construction-level prohibitions.
 - PHASE_ORDERING anatomy: 10/11 corpus violations are dy->aiin. Headless y-terminal to a-HEAD n-terminal = cross-domain boundary failure at closure. Concentrates in CHSH sensory checkpoint context.
 - CONTAINMENT_TIMING: Strictest class — 1,129 source appearances, 0 violations. l/r SEMI_TRANSPARENT terminals. Grammar enforces absolute avoidance.
+
+### Phase 544: PREFIX Atom Taxonomy (PREFIX_ATOM_TAXONOMY)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1534 | PREFIX uses 15 characters in three-tier positional classification identical across all systems | 2 | GLOBAL, PREFIX, atom, positional, inventory, three-tier, MODIFIER, BASE, DUAL, C1218, C1499 | 15 chars: 7 MODIFIER {c,d,f,p,q,s,y}, 2 BASE {e,h}, 6 DUAL {a,k,l,o,r,t}. Cross-system Jaccard=1.000. Positional chi2=14,327.8, V=0.547. |
+| 1535 | i-atom categorically excluded from PREFIX — iteration absent from channel selection | 2 | GLOBAL, PREFIX, MIDDLE, atom, i-atom, exclusion, iteration, C1197, C1204, C1394, C1499, C1511 | PREFIX uses 15 of MIDDLE's 20 chars, excluding {i,m,n,g,x}. i is the ONLY MIDDLE MOD absent from PREFIX. PREFIX-MIDDLE Jaccard=0.750. |
+| 1536 | Base-to-HEAD selection V=0.478 — each base selects a distinct operational domain | 2 | GLOBAL, PREFIX, atom, base, HEAD, domain, V=0.478, C1218, C1219, C1475, C1507 | Chi2=21,946.2, V=0.478 (89% of C1475 V=0.511). o→THERMAL(k 57%), h→STABILITY(e 66%), a→HEADLESS(96%), k/t→STABILITY+CONTAINMENT. |
+| 1537 | a-base is the universal headless gateway (94-96% headless regardless of modifier) | 2 | GLOBAL, PREFIX, atom, base, a-base, headless, gateway, modifier-independent, C1488, C1491, C1524, C1536 | da=95.9%, sa=96.0%, ka=94.5%, ta=95.8%. Spread=1.5pp. Generalizes C1491 from da to entire a-base family. |
+| 1538 | q-modifier uniquely activates THERMAL channel on o-base (64% k-HEAD vs 5-19% other modifiers) | 2 | B, PREFIX, atom, modifier, q, o-base, THERMAL, k-HEAD, compositional, qo, C1300, C1313, C1536, C1537 | qo=64.0% k-HEAD, so=18.5%, to=15.7%, po=8.1%, do=4.8%. 3.5x gap. o-base is modifier-SENSITIVE (75pp spread). qo is compositionally transparent. |
+| 1539 | Sister pairs decompose into SAME_BASE (ch/sh, da/sa) and SAME_MOD (ok/ot) structural types | 2 | GLOBAL, PREFIX, atom, sister-pair, ch, sh, ok, ot, da, sa, SAME_BASE, SAME_MOD, C408, C1478, C1534, C1536 | All HEAD JSD<0.01 (content-equivalent). ch/sh non-content divergence: suffix 12.3pp, articulator 9.3pp. ok/ot and da/sa: near-identical on all dimensions. |
+
+**Phase 544 findings (PREFIX Atom Taxonomy, 13 analysis steps, 8 key findings):**
+- PREFIX inventory: 15 characters, identical across A/B/AZC (Jaccard=1.000). Three-tier positional classification: MODIFIER (POS-0 only: c,d,f,p,q,s,y), BASE (POS-1+ only: e,h), DUAL (both positions: a,k,l,o,r,t). Extends C1218 with positional chi2=14,327.8, V=0.547.
+- Cross-slot exclusion: PREFIX excludes {i,m,n,g,x} from MIDDLE. i is the only MIDDLE MOD atom absent from PREFIX — iteration is MIDDLE-internal, not channel-selectable. Suffix excludes {k,t,p,f,c} (C1511). Three slots partition functional information complementarily.
+- Base→HEAD domain selection: V=0.478 (89% of C1475 V=0.511). o-base→THERMAL(k), h-base→STABILITY(e), a-base→HEADLESS, k/t-base→STABILITY+CONTAINMENT, l-base→mixed THERMAL/STABILITY, r-base→CONTAINMENT+ARRANGEMENT.
+- a-base headless gateway: All a-base PREFIXes (da, sa, ka, ta) produce 94-96% headless. Modifier identity has NO effect (1.5pp spread). Generalizes C1491 da-exclusivity to entire a-base family.
+- q-modifier thermal activation: On o-base, q produces 64% k-HEAD (next highest: s at 18.5%, 3.5x gap). Without q, o-base defaults to 65-87% headless. q fundamentally transforms o-base from headless to thermal channel. qo is compositionally transparent.
+- Sister pair atom architecture: ch/sh and da/sa are SAME_BASE (shared base, different modifiers). ok/ot is SAME_MOD (shared modifier o, different bases k/t). All HEAD JSD<0.01. SAME_BASE pairs show non-content divergence (ch/sh: suffix 12.3pp, articulator 9.3pp). SAME_MOD pair is near-identical on all dimensions.
+- Cross-system substrate: Base distribution nearly identical across A/B/AZC (JSD 0.011-0.046). PREFIX atom grammar is truly manuscript-wide (extends C1499 shared substrate).
+- Base×Terminal interaction: chi2=12,798.8, V=0.308. h-base MIDDLEs strongly prefer y-terminal (48.3%), a-base prefers n-terminal (44.1%), o-base distributes across y/l/r. Extends C1485 HEAD×TERM affinity to PREFIX base level.
 
 ---
 

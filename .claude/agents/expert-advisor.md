@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1377 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1383 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1533.
+the highest ID present is C1539.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1377 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1383 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1377 validated constraints are present as canonical one-line claims with tier
+1383 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-06 16:44
-**Version:** FROZEN STATE (1377 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-06 17:11
+**Version:** FROZEN STATE (1383 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1806,6 +1806,12 @@ C1530	CONTAINMENT_TIMING is l/r-terminal SEMI_TRANSPARENT class with 100% avoida
 C1531	Forbidden MIDDLEs include 5 phantom types absent from corpus	2	B, MIDDLE, hazard, forbidden, phantom, construction, grammar, C109, C1178, C1394, C1528, C1529
 C1532	Hazard classes partition by line position (setup-early to closure-late)	2	B, MIDDLE, hazard, failure-class, line, position, zone, gradient, C109, C1463, C1464, C1465, C1528
 C1533	PHASE_ORDERING is CHSH-channel specific (28.4% CHSH, 7/11 violations)	2	B, MIDDLE, atom, PREFIX, hazard, PHASE_ORDERING, CHSH, channel, violation, C109, C929, C1449, C1451, C1529
+C1534	PREFIX uses 15 characters in three-tier positional classification identical across all systems	2	GLOBAL, PREFIX, atom, positional, inventory, three-tier, MODIFIER, BASE, DUAL, C1218, C1499
+C1535	i-atom categorically excluded from PREFIX — iteration absent from channel selection	2	GLOBAL, PREFIX, MIDDLE, atom, i-atom, exclusion, iteration, C1197, C1204, C1394, C1499, C1511
+C1536	Base-to-HEAD selection V=0.478 — each base selects a distinct operational domain	2	GLOBAL, PREFIX, atom, base, HEAD, domain, V=0.478, C1218, C1219, C1475, C1507
+C1537	a-base is the universal headless gateway (94-96% headless regardless of modifier)	2	GLOBAL, PREFIX, atom, base, a-base, headless, gateway, modifier-independent, C1488, C1491, C1524, C1536
+C1538	q-modifier uniquely activates THERMAL channel on o-base (64% k-HEAD vs 5-19% other modifiers)	2	B, PREFIX, atom, modifier, q, o-base, THERMAL, k-HEAD, compositional, qo, C1300, C1313, C1536, C1537
+C1539	Sister pairs decompose into SAME_BASE (ch/sh, da/sa) and SAME_MOD (ok/ot) structural types	2	GLOBAL, PREFIX, atom, sister-pair, ch, sh, ok, ot, da, sa, SAME_BASE, SAME_MOD, C408, C1478, C1534, C1536
 
 ---
 
@@ -4681,7 +4687,7 @@ Only Tier 0-2 structural findings are binding.
 - AX_BEHAVIORAL_COLLAPSE: 19 AX classes collapse to ≤2 effective behavioral groups; position is the only differentiator [C572]
 - AX_VOCABULARY_SCAFFOLD: AX is the scaffold layer of the shared cross-system vocabulary: 98.2% PP MIDDLEs, PREFIX-determined role [C567, C568, C571]
 - MORPHOLOGICAL_COMPOSITIONALITY: Every token decomposes into [ARTICULATOR] + PREFIX + MIDDLE + [SUFFIX] with predictable combination rules [C267, C382, C383]
-- PREFIX_INTERNAL_GRAMMAR: PREFIX characters have an internal base-modifier positional grammar: dedicated modifiers (q,d,f,p,y — POS-0, 96-100%), d [C1218, C1219, C1220, C1221]
+- PREFIX_INTERNAL_GRAMMAR: PREFIX uses 15 characters (identical inventory across A/B/AZC, Jaccard=1.000) in a three-tier positional grammar: 7 MODI [C1218, C1219, C1220, C1221, C1534, C1535, C1536, C1537, C1538, C1539]
 - PAIRWISE_COMPOSITIONALITY: TOKEN information is fully captured by pairwise component interactions (PREFIX x MIDDLE, PREFIX x SUFFIX, MIDDLE x SUFFI [C1003]
 - PREFIX_MIDDLE_SELECTIVITY: PREFIX selects MIDDLE family (102 forbidden combinations) and transforms MIDDLE behavior (within-MIDDLE between-PREFIX J [C911, C661, C1012, C1015, C1017]
 - PARAGRAPH_EXECUTION_GRADIENT: Paragraph body lines follow a specification→execution gradient: early lines have rare/unique vocabulary (specification), [C932, C933, C934]
@@ -4707,7 +4713,7 @@ Only Tier 0-2 structural findings are binding.
 - morphological_compositionality: TOKEN = [ARTICULATOR] + PREFIX + MIDDLE + [SUFFIX] is universal [C267, C382]
 - prefix_middle_selectivity: PREFIX constrains which MIDDLE families are allowed (102 forbidden pairs) [C911]
 - prefix_positional_grammar: PREFIX encodes line position independently of regime [C1001]
-- prefix_base_modifier_grammar: PREFIX characters partition into modifiers (POS-0) and bases (POS-1/final); base character determine [C1218, C1219]
+- prefix_base_modifier_grammar: PREFIX characters partition into three tiers: 7 MODIFIER (POS-0), 2 BASE (POS-1+), 6 DUAL (both); ba [C1218, C1219, C1534, C1535, C1536, C1537, C1538]
 - suffix_mode_universality: Two suffix modes (specification/continuation) are universal across all paragraphs with sufficient bo [C1229, C1231, C1422, C1423]
 - pairwise_interaction_sufficiency: Pairwise morphological component interactions capture all exploitable TOKEN structure; no three-way  [C1003]
 - prefix_routing_regime_invariance: PREFIX macro-state routing magnitude is invariant across REGIMEs (range 0.785–0.832, ratio=1.06); RE [C1017]

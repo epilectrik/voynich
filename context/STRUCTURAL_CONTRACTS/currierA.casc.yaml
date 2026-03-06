@@ -860,6 +860,11 @@ provenance:
     - "C1393"  # Compound MIDDLE composition grammar (HEAD+MOD*+TERM)
     - "C1394"  # Instruction encoding architecture
     - "C1395"  # Cross-system instruction encoding (MIDDLE internal encoding, terminal divergence)
+    - "C1534"  # PREFIX 15-char three-tier positional classification (identical across all systems)
+    - "C1535"  # i-atom excluded from PREFIX (iteration is MIDDLE-internal)
+    - "C1536"  # Base-to-HEAD selection V=0.478 (each base selects distinct domain)
+    - "C1537"  # a-base universal headless gateway (94-96% headless)
+    - "C1539"  # Sister pair SAME_BASE/SAME_MOD atom architecture
 
   line_structure:
     - "C250"  # INVALIDATED (was 64.1% repetition - transcriber artifact)

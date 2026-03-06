@@ -1,0 +1,1136 @@
+{
+  "phase": "Phase 544: PREFIX Atom Taxonomy",
+  "date": "2026-03-06",
+  "token_counts": {
+    "A": 9257,
+    "B": 19232,
+    "AZC": 2449
+  },
+  "prefix_inventory": {
+    "unique_types": {
+      "B": 35,
+      "A": 34,
+      "AZC": 34,
+      "ALL": 35
+    },
+    "character_inventory": [
+      "a",
+      "c",
+      "d",
+      "e",
+      "f",
+      "h",
+      "k",
+      "l",
+      "o",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "y"
+    ],
+    "character_count": 15,
+    "character_frequency": {
+      "o": 12787,
+      "h": 11748,
+      "c": 8462,
+      "q": 5227,
+      "s": 4779,
+      "k": 4618,
+      "t": 4297,
+      "a": 3939,
+      "d": 3062,
+      "l": 2259,
+      "e": 844,
+      "y": 648,
+      "p": 501,
+      "r": 489,
+      "f": 85
+    },
+    "length_distribution": {
+      "2": 29069,
+      "3": 1869
+    },
+    "top_30": [
+      [
+        "ch",
+        6187
+      ],
+      [
+        "qo",
+        5227
+      ],
+      [
+        "sh",
+        3692
+      ],
+      [
+        "ok",
+        2459
+      ],
+      [
+        "ot",
+        2398
+      ],
+      [
+        "da",
+        2374
+      ],
+      [
+        "ol",
+        1107
+      ],
+      [
+        "yk",
+        648
+      ],
+      [
+        "ct",
+        527
+      ],
+      [
+        "sa",
+        512
+      ],
+      [
+        "lk",
+        445
+      ],
+      [
+        "te",
+        398
+      ],
+      [
+        "ke",
+        377
+      ],
+      [
+        "tch",
+        366
+      ],
+      [
+        "so",
+        362
+      ],
+      [
+        "do",
+        354
+      ],
+      [
+        "lch",
+        328
+      ],
+      [
+        "ta",
+        326
+      ],
+      [
+        "pch",
+        323
+      ],
+      [
+        "dch",
+        288
+      ],
+      [
+        "ka",
+        285
+      ],
+      [
+        "to",
+        282
+      ],
+      [
+        "al",
+        258
+      ],
+      [
+        "or",
+        252
+      ],
+      [
+        "kch",
+        235
+      ],
+      [
+        "ar",
+        184
+      ],
+      [
+        "po",
+        177
+      ],
+      [
+        "ko",
+        169
+      ],
+      [
+        "lsh",
+        121
+      ],
+      [
+        "fch",
+        85
+      ]
+    ]
+  },
+  "positional_classification": {
+    "a": {
+      "role": "DUAL",
+      "total": 3939,
+      "pos0_pct": 11.2,
+      "initial_pct": 11.2,
+      "final_pct": 88.8,
+      "singleton_pct": 0.0,
+      "medial_pct": 0.0
+    },
+    "c": {
+      "role": "MODIFIER",
+      "total": 8462,
+      "pos0_pct": 79.3,
+      "initial_pct": 79.3,
+      "final_pct": 0.0,
+      "singleton_pct": 0.0,
+      "medial_pct": 20.7
+    },
+    "d": {
+      "role": "MODIFIER",
+      "total": 3062,
+      "pos0_pct": 100.0,
+      "initial_pct": 100.0,
+      "final_pct": 0.0,
+      "singleton_pct": 0.0,
+      "medial_pct": 0.0
+    },
+    "e": {
+      "role": "BASE",
+      "total": 844,
+      "pos0_pct": 0.0,
+      "initial_pct": 0.0,
+      "final_pct": 100.0,
+      "singleton_pct": 0.0,
+      "medial_pct": 0.0
+    },
+    "f": {
+      "role": "MODIFIER",
+      "total": 85,
+      "pos0_pct": 100.0,
+      "initial_pct": 100.0,
+      "final_pct": 0.0,
+      "singleton_pct": 0.0,
+      "medial_pct": 0.0
+    },
+    "h": {
+      "role": "BASE",
+      "total": 11748,
+      "pos0_pct": 0.0,
+      "initial_pct": 0.0,
+      "final_pct": 100.0,
+      "singleton_pct": 0.0,
+      "medial_pct": 0.0
+    },
+    "k": {
+      "role": "DUAL",
+      "total": 4618,
+      "pos0_pct": 23.1,
+      "initial_pct": 23.1,
+      "final_pct": 76.9,
+      "singleton_pct": 0.0,
+      "medial_pct": 0.0
+    },
+    "l": {
+      "role": "DUAL",
+      "total": 2259,
+      "pos0_pct": 39.6,
+      "initial_pct": 39.6,
+      "final_pct": 60.4,
+      "singleton_pct": 0.0,
+      "medial_pct": 0.0
+    },
+    "o": {
+      "role": "DUAL",
+      "total": 12787,
+      "pos0_pct": 48.6,
+      "initial_pct": 48.6,
+      "final_pct": 51.4,
+      "singleton_pct": 0.0,
+      "medial_pct": 0.0
+    },
+    "p": {
+      "role": "MODIFIER",
+      "total": 501,
+      "pos0_pct": 100.0,
+      "initial_pct": 100.0,
+      "final_pct": 0.0,
+      "singleton_pct": 0.0,
+      "medial_pct": 0.0
+    },
+    "q": {
+      "role": "MODIFIER",
+      "total": 5227,
+      "pos0_pct": 100.0,
+      "initial_pct": 100.0,
+      "final_pct": 0.0,
+      "singleton_pct": 0.0,
+      "medial_pct": 0.0
+    },
+    "r": {
+      "role": "DUAL",
+      "total": 489,
+      "pos0_pct": 10.8,
+      "initial_pct": 10.8,
+      "final_pct": 89.2,
+      "singleton_pct": 0.0,
+      "medial_pct": 0.0
+    },
+    "s": {
+      "role": "MODIFIER",
+      "total": 4779,
+      "pos0_pct": 97.5,
+      "initial_pct": 97.5,
+      "final_pct": 0.0,
+      "singleton_pct": 0.0,
+      "medial_pct": 2.5
+    },
+    "t": {
+      "role": "DUAL",
+      "total": 4297,
+      "pos0_pct": 31.9,
+      "initial_pct": 31.9,
+      "final_pct": 68.1,
+      "singleton_pct": 0.0,
+      "medial_pct": 0.0
+    },
+    "y": {
+      "role": "MODIFIER",
+      "total": 648,
+      "pos0_pct": 100.0,
+      "initial_pct": 100.0,
+      "final_pct": 0.0,
+      "singleton_pct": 0.0,
+      "medial_pct": 0.0
+    }
+  },
+  "base_head_selection": {
+    "base_head_profiles": {
+      "a": {
+        "a": 0.8,
+        "e": 0.4,
+        "k": 1.2,
+        "o": 1.5,
+        "t": 0.4,
+        "headless": 95.8,
+        "total": 1887
+      },
+      "e": {
+        "a": 1.9,
+        "e": 52.4,
+        "k": 0.2,
+        "o": 14.4,
+        "t": 0.3,
+        "headless": 30.7,
+        "total": 576
+      },
+      "h": {
+        "a": 3.5,
+        "e": 65.7,
+        "k": 5.9,
+        "o": 11.9,
+        "t": 2.7,
+        "headless": 10.3,
+        "total": 6993
+      },
+      "k": {
+        "a": 39.1,
+        "e": 49.0,
+        "k": 0.1,
+        "o": 4.2,
+        "t": 0.0,
+        "headless": 7.6,
+        "total": 2228
+      },
+      "l": {
+        "a": 10.1,
+        "e": 17.6,
+        "k": 37.8,
+        "o": 11.3,
+        "t": 3.5,
+        "headless": 19.8,
+        "total": 1048
+      },
+      "o": {
+        "a": 1.6,
+        "e": 3.3,
+        "k": 57.1,
+        "o": 0.6,
+        "t": 18.0,
+        "headless": 19.3,
+        "total": 4683
+      },
+      "r": {
+        "a": 49.5,
+        "e": 7.4,
+        "k": 1.0,
+        "o": 26.2,
+        "t": 1.0,
+        "headless": 14.9,
+        "total": 309
+      },
+      "t": {
+        "a": 37.3,
+        "e": 43.4,
+        "k": 0.1,
+        "o": 7.5,
+        "t": 0.2,
+        "headless": 11.6,
+        "total": 1508
+      }
+    },
+    "chi2": 21946.2,
+    "p_value": 0.0,
+    "cramers_v": 0.478
+  },
+  "modifier_analysis": {
+    "modifier_frequency": {
+      "c": 8462,
+      "o": 6216,
+      "q": 5227,
+      "s": 4779,
+      "d": 3062,
+      "t": 1372,
+      "k": 1066,
+      "l": 894,
+      "y": 648,
+      "p": 501,
+      "a": 442,
+      "f": 85,
+      "r": 53
+    },
+    "overlap_with_middle_mods": [
+      "c",
+      "d",
+      "f",
+      "p",
+      "s"
+    ],
+    "prefix_only_mods": [
+      "a",
+      "k",
+      "l",
+      "o",
+      "q",
+      "r",
+      "t",
+      "y"
+    ],
+    "middle_only_mods": [
+      "i"
+    ]
+  },
+  "sister_pair_decomposition": {
+    "ch_sh": {
+      "s1_mod": "c",
+      "s1_base": "h",
+      "s2_mod": "s",
+      "s2_base": "h",
+      "structure": "SAME_BASE",
+      "head_jsd": 0.0089,
+      "s1_n": 3492,
+      "s2_n": 2329,
+      "suffix_rate": {
+        "ch": 53.0,
+        "sh": 40.7
+      },
+      "headless_rate": {
+        "ch": 10.4,
+        "sh": 6.6
+      },
+      "articulator_rate": {
+        "ch": 3.9,
+        "sh": 13.2
+      }
+    },
+    "ok_ot": {
+      "s1_mod": "o",
+      "s1_base": "k",
+      "s2_mod": "o",
+      "s2_base": "t",
+      "structure": "SAME_MOD",
+      "head_jsd": 0.0034,
+      "s1_n": 1476,
+      "s2_n": 1448,
+      "suffix_rate": {
+        "ok": 28.5,
+        "ot": 27.1
+      },
+      "headless_rate": {
+        "ok": 7.7,
+        "ot": 8.6
+      },
+      "articulator_rate": {
+        "ok": 0.8,
+        "ot": 0.8
+      }
+    },
+    "da_sa": {
+      "s1_mod": "d",
+      "s1_base": "a",
+      "s2_mod": "s",
+      "s2_base": "a",
+      "structure": "SAME_BASE",
+      "head_jsd": 0.0028,
+      "s1_n": 1083,
+      "s2_n": 329,
+      "suffix_rate": {
+        "da": 19.9,
+        "sa": 20.7
+      },
+      "headless_rate": {
+        "da": 95.9,
+        "sa": 96.0
+      },
+      "articulator_rate": {
+        "da": 3.4,
+        "sa": 2.7
+      }
+    }
+  },
+  "cross_system": {
+    "base_jsd": {
+      "A_B": 0.0111,
+      "A_AZC": 0.0403,
+      "B_AZC": 0.0464
+    },
+    "modifier_jsd": {
+      "A_B": 0.0367,
+      "A_AZC": 0.0582,
+      "B_AZC": 0.0726
+    },
+    "character_jaccard": {
+      "A_B": 1.0,
+      "A_AZC": 1.0,
+      "B_AZC": 1.0
+    },
+    "shared_all": [
+      "a",
+      "c",
+      "d",
+      "e",
+      "f",
+      "h",
+      "k",
+      "l",
+      "o",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "y"
+    ]
+  },
+  "base_category_profiles": {
+    "a": {
+      "CONTAINMENT": 0.8,
+      "ARRANGEMENT": 1.5,
+      "FLOW": 0.4,
+      "STABILITY": 0.4,
+      "THERMAL": 1.2,
+      "HEADLESS": 95.8,
+      "total": 1887
+    },
+    "e": {
+      "STABILITY": 52.4,
+      "ARRANGEMENT": 14.4,
+      "CONTAINMENT": 1.9,
+      "THERMAL": 0.2,
+      "FLOW": 0.3,
+      "HEADLESS": 30.7,
+      "total": 576
+    },
+    "h": {
+      "STABILITY": 65.7,
+      "ARRANGEMENT": 11.9,
+      "FLOW": 2.7,
+      "CONTAINMENT": 3.5,
+      "THERMAL": 5.9,
+      "HEADLESS": 10.3,
+      "total": 6993
+    },
+    "k": {
+      "STABILITY": 49.0,
+      "CONTAINMENT": 39.1,
+      "ARRANGEMENT": 4.2,
+      "THERMAL": 0.1,
+      "HEADLESS": 7.6,
+      "total": 2228
+    },
+    "l": {
+      "ARRANGEMENT": 11.3,
+      "STABILITY": 17.6,
+      "CONTAINMENT": 10.1,
+      "FLOW": 3.5,
+      "THERMAL": 37.8,
+      "HEADLESS": 19.8,
+      "total": 1048
+    },
+    "o": {
+      "THERMAL": 57.1,
+      "FLOW": 18.0,
+      "CONTAINMENT": 1.6,
+      "STABILITY": 3.3,
+      "ARRANGEMENT": 0.6,
+      "HEADLESS": 19.3,
+      "total": 4683
+    },
+    "r": {
+      "STABILITY": 7.4,
+      "CONTAINMENT": 49.5,
+      "ARRANGEMENT": 26.2,
+      "THERMAL": 1.0,
+      "FLOW": 1.0,
+      "HEADLESS": 14.9,
+      "total": 309
+    },
+    "t": {
+      "STABILITY": 43.4,
+      "CONTAINMENT": 37.3,
+      "ARRANGEMENT": 7.5,
+      "FLOW": 0.2,
+      "THERMAL": 0.1,
+      "HEADLESS": 11.6,
+      "total": 1508
+    }
+  },
+  "modifier_effects": {
+    "h": {
+      "c": {
+        "HL": 10.4,
+        "o": 13.1,
+        "e": 60.3,
+        "k": 8.4,
+        "a": 4.0,
+        "t": 3.8,
+        "N": 3492
+      },
+      "dc": {
+        "e": 74.0,
+        "HL": 12.5,
+        "a": 1.9,
+        "k": 1.9,
+        "o": 9.6,
+        "N": 104
+      },
+      "fc": {
+        "HL": 21.1,
+        "e": 61.4,
+        "o": 14.0,
+        "a": 3.5,
+        "N": 57
+      },
+      "kc": {
+        "HL": 32.0,
+        "o": 9.3,
+        "e": 57.7,
+        "a": 1.0,
+        "N": 97
+      },
+      "lc": {
+        "e": 77.5,
+        "o": 4.8,
+        "HL": 14.0,
+        "a": 3.2,
+        "t": 0.3,
+        "k": 0.3,
+        "N": 315
+      },
+      "ls": {
+        "a": 2.6,
+        "e": 86.2,
+        "o": 3.4,
+        "t": 0.9,
+        "HL": 6.0,
+        "k": 0.9,
+        "N": 116
+      },
+      "pc": {
+        "e": 62.4,
+        "o": 15.1,
+        "HL": 16.3,
+        "a": 5.3,
+        "t": 0.4,
+        "k": 0.4,
+        "N": 245
+      },
+      "rc": {
+        "e": 75.6,
+        "HL": 19.5,
+        "a": 2.4,
+        "o": 2.4,
+        "N": 41
+      },
+      "s": {
+        "e": 72.0,
+        "t": 2.1,
+        "a": 3.0,
+        "HL": 6.6,
+        "o": 11.3,
+        "k": 5.0,
+        "N": 2329
+      },
+      "sc": {
+        "HL": 24.0,
+        "e": 68.0,
+        "t": 4.0,
+        "k": 4.0,
+        "N": 25
+      },
+      "tc": {
+        "e": 56.4,
+        "HL": 24.4,
+        "o": 14.5,
+        "k": 0.6,
+        "a": 3.5,
+        "t": 0.6,
+        "N": 172
+      }
+    },
+    "o": {
+      "d": {
+        "HL": 86.5,
+        "t": 3.2,
+        "e": 4.0,
+        "k": 4.8,
+        "a": 0.8,
+        "o": 0.8,
+        "N": 126
+      },
+      "k": {
+        "HL": 79.2,
+        "a": 2.1,
+        "t": 6.2,
+        "k": 6.2,
+        "o": 2.1,
+        "e": 4.2,
+        "N": 48
+      },
+      "p": {
+        "a": 14.7,
+        "HL": 65.4,
+        "e": 8.8,
+        "k": 8.1,
+        "t": 1.5,
+        "o": 1.5,
+        "N": 136
+      },
+      "q": {
+        "HL": 11.1,
+        "k": 64.0,
+        "t": 20.3,
+        "a": 1.1,
+        "e": 3.1,
+        "o": 0.4,
+        "N": 4069
+      },
+      "s": {
+        "HL": 73.0,
+        "k": 18.5,
+        "t": 2.1,
+        "o": 1.1,
+        "e": 2.1,
+        "a": 3.2,
+        "N": 189
+      },
+      "t": {
+        "e": 5.2,
+        "HL": 67.0,
+        "k": 15.7,
+        "a": 4.3,
+        "t": 4.3,
+        "o": 3.5,
+        "N": 115
+      }
+    },
+    "a": {
+      "d": {
+        "HL": 95.9,
+        "t": 0.2,
+        "o": 1.6,
+        "e": 0.5,
+        "k": 1.3,
+        "a": 0.6,
+        "N": 1083
+      },
+      "k": {
+        "HL": 94.5,
+        "a": 2.1,
+        "e": 0.8,
+        "o": 1.3,
+        "k": 0.8,
+        "t": 0.4,
+        "N": 238
+      },
+      "s": {
+        "HL": 96.0,
+        "a": 0.6,
+        "o": 0.9,
+        "k": 0.9,
+        "t": 1.2,
+        "e": 0.3,
+        "N": 329
+      },
+      "t": {
+        "HL": 95.8,
+        "o": 2.1,
+        "k": 1.3,
+        "a": 0.8,
+        "N": 237
+      }
+    },
+    "k": {
+      "l": {
+        "e": 55.5,
+        "o": 3.4,
+        "a": 32.6,
+        "HL": 8.4,
+        "N": 438
+      },
+      "o": {
+        "e": 45.4,
+        "HL": 7.7,
+        "a": 42.5,
+        "o": 4.3,
+        "k": 0.1,
+        "N": 1476
+      },
+      "y": {
+        "e": 56.7,
+        "a": 32.5,
+        "HL": 6.1,
+        "o": 4.5,
+        "k": 0.3,
+        "N": 314
+      }
+    },
+    "e": {
+      "d": {
+        "e": 78.9,
+        "HL": 15.8,
+        "t": 5.3,
+        "N": 19
+      },
+      "k": {
+        "o": 14.7,
+        "e": 57.1,
+        "HL": 26.3,
+        "a": 1.9,
+        "N": 259
+      },
+      "t": {
+        "HL": 36.0,
+        "e": 47.1,
+        "o": 14.5,
+        "k": 0.3,
+        "t": 0.3,
+        "a": 1.7,
+        "N": 289
+      }
+    }
+  },
+  "base_terminal": {
+    "chi2": 12798.8,
+    "p_value": 0.0,
+    "cramers_v": 0.308
+  },
+  "headless_by_prefix": [
+    [
+      "qo",
+      11.1,
+      451,
+      4069
+    ],
+    [
+      "ch",
+      10.4,
+      363,
+      3492
+    ],
+    [
+      "sh",
+      6.6,
+      154,
+      2329
+    ],
+    [
+      "ok",
+      7.7,
+      114,
+      1476
+    ],
+    [
+      "ot",
+      8.6,
+      124,
+      1448
+    ],
+    [
+      "da",
+      95.9,
+      1039,
+      1083
+    ],
+    [
+      "ol",
+      18.1,
+      158,
+      875
+    ],
+    [
+      "lk",
+      8.4,
+      37,
+      438
+    ],
+    [
+      "sa",
+      96.0,
+      316,
+      329
+    ],
+    [
+      "lch",
+      14.0,
+      44,
+      315
+    ],
+    [
+      "yk",
+      6.1,
+      19,
+      314
+    ],
+    [
+      "te",
+      36.0,
+      104,
+      289
+    ],
+    [
+      "ke",
+      26.3,
+      68,
+      259
+    ],
+    [
+      "pch",
+      16.3,
+      40,
+      245
+    ],
+    [
+      "ka",
+      94.5,
+      225,
+      238
+    ],
+    [
+      "ta",
+      95.8,
+      227,
+      237
+    ],
+    [
+      "so",
+      73.0,
+      138,
+      189
+    ],
+    [
+      "al",
+      28.3,
+      49,
+      173
+    ],
+    [
+      "or",
+      10.4,
+      18,
+      173
+    ],
+    [
+      "tch",
+      24.4,
+      42,
+      172
+    ],
+    [
+      "ar",
+      20.6,
+      28,
+      136
+    ],
+    [
+      "po",
+      65.4,
+      89,
+      136
+    ],
+    [
+      "do",
+      86.5,
+      109,
+      126
+    ],
+    [
+      "lsh",
+      6.0,
+      7,
+      116
+    ],
+    [
+      "to",
+      67.0,
+      77,
+      115
+    ],
+    [
+      "dch",
+      12.5,
+      13,
+      104
+    ],
+    [
+      "kch",
+      32.0,
+      31,
+      97
+    ],
+    [
+      "ct",
+      85.0,
+      51,
+      60
+    ],
+    [
+      "fch",
+      21.1,
+      12,
+      57
+    ],
+    [
+      "ko",
+      79.2,
+      38,
+      48
+    ],
+    [
+      "rch",
+      19.5,
+      8,
+      41
+    ]
+  ],
+  "pfx_art_rates": {
+    "qo": 0.1,
+    "ch": 3.9,
+    "sh": 13.2,
+    "ok": 0.8,
+    "ot": 0.8,
+    "da": 3.4,
+    "ol": 4.3,
+    "lk": 0.7,
+    "sa": 2.7,
+    "lch": 2.5,
+    "yk": 5.7,
+    "te": 45.7,
+    "ke": 2.7,
+    "pch": 19.6,
+    "ka": 5.0,
+    "ta": 42.2,
+    "so": 1.1,
+    "al": 8.1,
+    "or": 7.5,
+    "tch": 22.1,
+    "ar": 18.4,
+    "po": 0.7,
+    "do": 3.2,
+    "lsh": 1.7,
+    "to": 10.4,
+    "dch": 1.0,
+    "kch": 3.1,
+    "ct": 1.7,
+    "fch": 22.8
+  },
+  "cross_slot_inventory": {
+    "prefix_chars": [
+      "a",
+      "c",
+      "d",
+      "e",
+      "f",
+      "h",
+      "k",
+      "l",
+      "o",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "y"
+    ],
+    "middle_chars": [
+      "a",
+      "c",
+      "d",
+      "e",
+      "f",
+      "g",
+      "h",
+      "i",
+      "k",
+      "l",
+      "m",
+      "n",
+      "o",
+      "p",
+      "q",
+      "r",
+      "s",
+      "t",
+      "x",
+      "y"
+    ],
+    "suffix_chars": [
+      "a",
+      "d",
+      "e",
+      "g",
+      "h",
+      "i",
+      "l",
+      "m",
+      "n",
+      "o",
+      "r",
+      "s",
+      "y"
+    ],
+    "jaccard_pfx_mid": 0.75,
+    "jaccard_pfx_suf": 0.474,
+    "jaccard_mid_suf": 0.65,
+    "all_shared": [
+      "a",
+      "d",
+      "e",
+      "h",
+      "l",
+      "o",
+      "r",
+      "s",
+      "y"
+    ],
+    "pfx_exclusive": []
+  }
+}

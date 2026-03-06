@@ -4,6 +4,37 @@
 
 ---
 
+## Version 5.33.169 (2026-03-06) - Phase 544: PREFIX Atom Taxonomy
+
+### Summary
+
+Phase 544 decomposes PREFIX morphology at individual atom (character) level, paralleling MIDDLE decomposition (Phases 523-540) and suffix decomposition (Phase 540). 13 analysis steps on 19,232 B tokens with PREFIX. Key finding: PREFIX uses 15 characters (identical across A/B/AZC, Jaccard=1.000) in a three-tier positional classification: MODIFIER {c,d,f,p,q,s,y} at POS-0, BASE {e,h} at POS-1+, DUAL {a,k,l,o,r,t} at both. Base character predicts MIDDLE HEAD atom with V=0.478 (89% of MIDDLE HEAD category specificity V=0.511). a-base is the universal headless gateway (94-96% regardless of modifier, 1.5pp spread). q-modifier uniquely activates THERMAL channel on o-base (64% k-HEAD vs 5-19% for other modifiers, 3.5x gap), making qo compositionally transparent. Sister pairs decompose into SAME_BASE (ch/sh, da/sa) and SAME_MOD (ok/ot) structural types, all with HEAD JSD<0.01. i-atom is categorically excluded from PREFIX (the only MIDDLE MOD absent), confirming iteration is MIDDLE-internal. Cross-system base distribution JSD=0.011-0.046 extends C1499 shared substrate to PREFIX atoms.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1534: PREFIX uses 15 characters in three-tier positional classification (MODIFIER/BASE/DUAL), identical across all systems |
+| **ADDED** | C1535: i-atom categorically excluded from PREFIX -- iteration mechanism absent from channel selection |
+| **ADDED** | C1536: Base-to-HEAD selection V=0.478 -- each base selects a distinct operational domain |
+| **ADDED** | C1537: a-base is the universal headless gateway (94-96% headless regardless of modifier) |
+| **ADDED** | C1538: q-modifier uniquely activates THERMAL channel on o-base (64% k-HEAD vs 5-19% other modifiers) |
+| **ADDED** | C1539: Sister pairs decompose into SAME_BASE (ch/sh, da/sa) and SAME_MOD (ok/ot) structural types |
+| **ADDED** | `phases/PREFIX_ATOM_TAXONOMY/scripts/prefix_atom_taxonomy.py` |
+| **ADDED** | `phases/PREFIX_ATOM_TAXONOMY/results/prefix_atom_taxonomy.json` |
+| **ADDED** | `phases/PREFIX_ATOM_TAXONOMY/REPORT.md` |
+| **UPDATED** | INDEX.md -- +6 constraints (1383 total) |
+| **EXTENDED** | C1218 (PREFIX internal positional grammar): three-tier classification quantified with chi2=14,327.8, V=0.547 |
+| **EXTENDED** | C1219 (base determines MIDDLE content): upgraded to HEAD-atom resolution with V=0.478 domain specificity |
+| **EXTENDED** | C1491 (da-PREFIX near-exclusivity): generalized from da to entire a-base family (da/sa/ka/ta all 94-96% headless) |
+| **EXTENDED** | C1499 (shared substrate): PREFIX atom inventory is manuscript-wide (Jaccard=1.000 cross-system) |
+| **EXTENDED** | C1300 (qo near-pure THERMAL): decomposed to atom-level mechanism (q=thermal activation, o=domain base) |
+| **CONNECTED** | C1475 (HEAD domain differentiation): PREFIX base achieves 89% of HEAD's category specificity |
+| **CONNECTED** | C1478 (k/t terminal mirror): ok/ot SAME_MOD sister pair has smallest HEAD JSD (0.0034) because k,t are mirrors |
+| **CONNECTED** | C1511 (suffix atom exclusion): three-slot complementary partition -- PREFIX excludes {i,m,n,g,x}, suffix excludes {k,t,p,f,c} |
+
+---
+
 ## Version 5.32.168 (2026-03-06) - Phase 543: Hazard-Class Atomization
 
 ### Summary

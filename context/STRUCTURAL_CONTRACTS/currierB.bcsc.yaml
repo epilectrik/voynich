@@ -165,8 +165,8 @@ guarantees:
     provenance: "C267, C382, C383"
 
   - id: "PREFIX_INTERNAL_GRAMMAR"
-    statement: "PREFIX characters have an internal base-modifier positional grammar: dedicated modifiers (q,d,f,p,y — POS-0, 96-100%), dedicated bases (h,e — POS-1, 100%), dual-role (o,k,l,t,c). Base character determines MIDDLE content (within-base cosine 0.950 vs between-base 0.515, ratio 1.84). Modifier consistency varies: high (o=0.836, l=0.794), moderate (t,p), base-dependent (c=0.380, d=0.345). Prep PREFIXes are h-base variants, not distinct operations (shuffle p=0.998)."
-    provenance: "C1218, C1219, C1220, C1221"
+    statement: "PREFIX uses 15 characters (identical inventory across A/B/AZC, Jaccard=1.000) in a three-tier positional grammar: 7 MODIFIER {c,d,f,p,q,s,y} at POS-0, 2 BASE {e,h} at POS-1+, 6 DUAL {a,k,l,o,r,t} at both (chi2=14,327.8, V=0.547). Base character predicts MIDDLE HEAD atom domain (V=0.478, 89% of C1475 HEAD specificity): o→THERMAL(k), h→STABILITY(e), a→HEADLESS(94-96%), k/t→STABILITY+CONTAINMENT. q-modifier uniquely activates THERMAL channel on o-base (64% k-HEAD vs 5-19% other modifiers). i-atom categorically absent from PREFIX (iteration is MIDDLE-internal). Sister pairs are SAME_BASE (ch/sh, da/sa) or SAME_MOD (ok/ot), all HEAD JSD<0.01. Prep PREFIXes are h-base variants, not distinct operations (shuffle p=0.998)."
+    provenance: "C1218, C1219, C1220, C1221, C1534, C1535, C1536, C1537, C1538, C1539"
 
   - id: "PAIRWISE_COMPOSITIONALITY"
     statement: "TOKEN information is fully captured by pairwise component interactions (PREFIX x MIDDLE, PREFIX x SUFFIX, MIDDLE x SUFFIX); no three-way synergy exists (Co-I < 0.02 bits on all 4 targets; R-squared increment = 0)"
@@ -263,8 +263,8 @@ invariants:
     provenance: "C1001"
 
   prefix_base_modifier_grammar:
-    statement: "PREFIX characters partition into modifiers (POS-0) and bases (POS-1/final); base character determines MIDDLE content domain (within-base cosine 0.950 vs between-base 0.515)"
-    provenance: "C1218, C1219"
+    statement: "PREFIX characters partition into three tiers: 7 MODIFIER (POS-0), 2 BASE (POS-1+), 6 DUAL (both); base character predicts MIDDLE HEAD domain (V=0.478); a-base is universal headless gateway (94-96%); q-modifier uniquely activates THERMAL on o-base (64% k-HEAD); i-atom excluded from PREFIX"
+    provenance: "C1218, C1219, C1534, C1535, C1536, C1537, C1538"
 
   suffix_mode_universality:
     statement: "Two suffix modes (specification/continuation) are universal across all paragraphs with sufficient body lines; global silhouette 0.428, F=4.56. 80% of paragraphs contain interleaved modes, but consecutive-line switch rate is 39.4% (below random) — lines persist in mode. Mode is MIDDLE-determined (C1422), not sequentially driven."
@@ -3056,6 +3056,12 @@ provenance:
     - "C1485"  # TERMINAL HEAD affinity partition (e->y 72.7%, a->n/m 59-60%, k/t avoid n/m)
     - "C1486"  # m-terminal line-final closure (73.7% line-final, 87.9% TRANSITION, confirms C1434-C1439)
     - "C1487"  # Six-terminal functional taxonomy (LOCKED r/m, CHANNELED l/y/n, DIFFUSE h/bare)
+    - "C1534"  # PREFIX 15-char three-tier positional classification (MODIFIER/BASE/DUAL, V=0.547)
+    - "C1535"  # i-atom excluded from PREFIX (iteration is MIDDLE-internal)
+    - "C1536"  # Base-to-HEAD selection V=0.478 (89% of HEAD specificity)
+    - "C1537"  # a-base universal headless gateway (94-96% regardless of modifier)
+    - "C1538"  # q-modifier thermal activation on o-base (64% k-HEAD, 3.5x gap)
+    - "C1539"  # Sister pair SAME_BASE/SAME_MOD atom architecture (all HEAD JSD<0.01)
 
   link:
     - "C334"   # LINK section conditioning
