@@ -1,0 +1,813 @@
+{
+  "phase": 532,
+  "title": "Modifier Functional Grouping Analysis",
+  "token_counts": {
+    "total_b": 23096,
+    "modifier_bearing": 9786,
+    "multi_modifier": 905
+  },
+  "profiles": {
+    "c": {
+      "n_tokens": 2096,
+      "n_folios": 82,
+      "position": {
+        "medial": 1755,
+        "final": 162,
+        "initial": 179
+      },
+      "category": {
+        "HEADLESS": 972,
+        "OPERATION": 352,
+        "THERMAL": 623,
+        "TRANSITION": 28,
+        "FLOW": 121
+      },
+      "head": {
+        "HEADLESS": 972,
+        "o": 352,
+        "e": 375,
+        "a": 28,
+        "k": 248,
+        "t": 121
+      },
+      "terminal": {
+        "h": 1063,
+        "bare": 1019,
+        "y": 7,
+        "l": 4,
+        "r": 3
+      },
+      "frame_hazard": {
+        "UNCLASSIFIED": 1715,
+        "IMMUNE": 248,
+        "HIGH": 131,
+        "ZERO": 2
+      },
+      "section": {
+        "HERBAL": 328,
+        "TEXT": 69,
+        "BIO": 581,
+        "COSMO": 132,
+        "STARS": 986
+      },
+      "prefix_top5": {
+        "ch": 568,
+        "qo": 514,
+        "BARE": 433,
+        "sh": 260,
+        "ol": 54
+      },
+      "suffix_rate": 0.9509,
+      "par_initial_rate": 0.0248,
+      "par_final_rate": 0.0205
+    },
+    "d": {
+      "n_tokens": 4401,
+      "n_folios": 82,
+      "position": {
+        "medial": 3407,
+        "final": 463,
+        "initial": 531
+      },
+      "category": {
+        "OPERATION": 283,
+        "THERMAL": 2760,
+        "TRANSITION": 27,
+        "HEADLESS": 1277,
+        "FLOW": 54
+      },
+      "head": {
+        "o": 283,
+        "e": 2659,
+        "a": 27,
+        "HEADLESS": 1277,
+        "t": 54,
+        "k": 101
+      },
+      "terminal": {
+        "bare": 1713,
+        "y": 2623,
+        "h": 32,
+        "l": 22,
+        "r": 11
+      },
+      "frame_hazard": {
+        "HIGH": 949,
+        "ZERO": 1945,
+        "UNCLASSIFIED": 1406,
+        "IMMUNE": 101
+      },
+      "section": {
+        "HERBAL": 807,
+        "TEXT": 153,
+        "BIO": 1303,
+        "COSMO": 265,
+        "STARS": 1873
+      },
+      "prefix_top5": {
+        "ch": 1049,
+        "sh": 779,
+        "BARE": 394,
+        "ot": 321,
+        "qo": 247
+      },
+      "suffix_rate": 0.3142,
+      "par_initial_rate": 0.0459,
+      "par_final_rate": 0.03
+    },
+    "f": {
+      "n_tokens": 215,
+      "n_folios": 73,
+      "position": {
+        "medial": 171,
+        "final": 33,
+        "initial": 11
+      },
+      "category": {
+        "OPERATION": 71,
+        "TRANSITION": 6,
+        "HEADLESS": 99,
+        "THERMAL": 38,
+        "FLOW": 1
+      },
+      "head": {
+        "o": 71,
+        "a": 6,
+        "HEADLESS": 99,
+        "k": 1,
+        "e": 37,
+        "t": 1
+      },
+      "terminal": {
+        "bare": 129,
+        "h": 77,
+        "l": 1,
+        "m": 2,
+        "r": 5,
+        "y": 1
+      },
+      "frame_hazard": {
+        "HIGH": 45,
+        "UNCLASSIFIED": 169,
+        "IMMUNE": 1
+      },
+      "section": {
+        "HERBAL": 75,
+        "TEXT": 22,
+        "BIO": 29,
+        "COSMO": 20,
+        "STARS": 69
+      },
+      "prefix_top5": {
+        "BARE": 91,
+        "ch": 36,
+        "qo": 33,
+        "sh": 22,
+        "ol": 11
+      },
+      "suffix_rate": 0.9023,
+      "par_initial_rate": 0.0512,
+      "par_final_rate": 0.0279
+    },
+    "i": {
+      "n_tokens": 2875,
+      "n_folios": 82,
+      "position": {
+        "medial": 2188,
+        "initial": 436,
+        "final": 251
+      },
+      "category": {
+        "OPERATION": 117,
+        "TRANSITION": 1528,
+        "HEADLESS": 1150,
+        "THERMAL": 67,
+        "FLOW": 13
+      },
+      "head": {
+        "o": 117,
+        "a": 1528,
+        "HEADLESS": 1150,
+        "e": 30,
+        "k": 37,
+        "t": 13
+      },
+      "terminal": {
+        "bare": 670,
+        "n": 2121,
+        "r": 43,
+        "m": 9,
+        "h": 22,
+        "y": 1,
+        "l": 9
+      },
+      "frame_hazard": {
+        "HIGH": 1342,
+        "ZERO": 825,
+        "UNCLASSIFIED": 671,
+        "IMMUNE": 37
+      },
+      "section": {
+        "HERBAL": 414,
+        "TEXT": 73,
+        "BIO": 567,
+        "COSMO": 238,
+        "STARS": 1583
+      },
+      "prefix_top5": {
+        "BARE": 731,
+        "da": 561,
+        "ok": 347,
+        "ot": 243,
+        "sa": 205
+      },
+      "suffix_rate": 0.257,
+      "par_initial_rate": 0.0191,
+      "par_final_rate": 0.0254
+    },
+    "p": {
+      "n_tokens": 638,
+      "n_folios": 79,
+      "position": {
+        "medial": 527,
+        "final": 77,
+        "initial": 34
+      },
+      "category": {
+        "HEADLESS": 304,
+        "OPERATION": 263,
+        "TRANSITION": 9,
+        "THERMAL": 62
+      },
+      "head": {
+        "HEADLESS": 304,
+        "o": 263,
+        "a": 9,
+        "e": 61,
+        "k": 1
+      },
+      "terminal": {
+        "h": 275,
+        "bare": 341,
+        "l": 11,
+        "r": 9,
+        "m": 1,
+        "y": 1
+      },
+      "frame_hazard": {
+        "UNCLASSIFIED": 510,
+        "HIGH": 127,
+        "IMMUNE": 1
+      },
+      "section": {
+        "HERBAL": 84,
+        "TEXT": 25,
+        "BIO": 113,
+        "COSMO": 64,
+        "STARS": 352
+      },
+      "prefix_top5": {
+        "BARE": 338,
+        "qo": 145,
+        "ch": 94,
+        "sh": 25,
+        "ol": 12
+      },
+      "suffix_rate": 0.9326,
+      "par_initial_rate": 0.0408,
+      "par_final_rate": 0.0125
+    },
+    "s": {
+      "n_tokens": 560,
+      "n_folios": 82,
+      "position": {
+        "medial": 367,
+        "final": 77,
+        "initial": 116
+      },
+      "category": {
+        "OPERATION": 83,
+        "HEADLESS": 314,
+        "THERMAL": 125,
+        "FLOW": 22,
+        "TRANSITION": 16
+      },
+      "head": {
+        "o": 83,
+        "HEADLESS": 314,
+        "e": 72,
+        "t": 22,
+        "a": 16,
+        "k": 53
+      },
+      "terminal": {
+        "bare": 396,
+        "h": 158,
+        "l": 5,
+        "r": 1
+      },
+      "frame_hazard": {
+        "HIGH": 49,
+        "UNCLASSIFIED": 458,
+        "IMMUNE": 53
+      },
+      "section": {
+        "HERBAL": 107,
+        "TEXT": 28,
+        "BIO": 172,
+        "COSMO": 46,
+        "STARS": 207
+      },
+      "prefix_top5": {
+        "BARE": 188,
+        "qo": 92,
+        "ch": 35,
+        "sh": 33,
+        "ol": 32
+      },
+      "suffix_rate": 0.7161,
+      "par_initial_rate": 0.0804,
+      "par_final_rate": 0.0357
+    }
+  },
+  "pair_similarity": {
+    "c-d": {
+      "category": 0.0878,
+      "head": 0.1578,
+      "terminal": 0.5189,
+      "frame_hazard": 0.3557,
+      "section": 0.0018,
+      "position": 0.0046,
+      "mean": 0.1878
+    },
+    "c-f": {
+      "category": 0.0517,
+      "head": 0.0878,
+      "terminal": 0.0272,
+      "frame_hazard": 0.0781,
+      "section": 0.071,
+      "position": 0.0128,
+      "mean": 0.0548
+    },
+    "c-i": {
+      "category": 0.3784,
+      "head": 0.3791,
+      "terminal": 0.6378,
+      "frame_hazard": 0.4248,
+      "section": 0.0087,
+      "position": 0.0083,
+      "mean": 0.3062
+    },
+    "c-p": {
+      "category": 0.1056,
+      "head": 0.1304,
+      "terminal": 0.0135,
+      "frame_hazard": 0.0815,
+      "section": 0.0144,
+      "position": 0.0062,
+      "mean": 0.0586
+    },
+    "c-s": {
+      "category": 0.0109,
+      "head": 0.011,
+      "terminal": 0.0418,
+      "frame_hazard": 0.0029,
+      "section": 0.0084,
+      "position": 0.033,
+      "mean": 0.018
+    },
+    "d-f": {
+      "category": 0.188,
+      "head": 0.1882,
+      "terminal": 0.4656,
+      "frame_hazard": 0.2991,
+      "section": 0.0616,
+      "position": 0.0138,
+      "mean": 0.2027
+    },
+    "d-i": {
+      "category": 0.507,
+      "head": 0.5244,
+      "terminal": 0.6845,
+      "frame_hazard": 0.052,
+      "section": 0.0165,
+      "position": 0.0019,
+      "mean": 0.2977
+    },
+    "d-p": {
+      "category": 0.2822,
+      "head": 0.2827,
+      "terminal": 0.4982,
+      "frame_hazard": 0.306,
+      "section": 0.0236,
+      "position": 0.0106,
+      "mean": 0.2339
+    },
+    "d-s": {
+      "category": 0.127,
+      "head": 0.1927,
+      "terminal": 0.4524,
+      "frame_hazard": 0.3396,
+      "section": 0.0038,
+      "position": 0.0134,
+      "mean": 0.1882
+    },
+    "f-i": {
+      "category": 0.3423,
+      "head": 0.358,
+      "terminal": 0.5888,
+      "frame_hazard": 0.2953,
+      "section": 0.0761,
+      "position": 0.0257,
+      "mean": 0.281
+    },
+    "f-p": {
+      "category": 0.0158,
+      "head": 0.0159,
+      "terminal": 0.0102,
+      "frame_hazard": 0.0007,
+      "section": 0.0717,
+      "position": 0.0016,
+      "mean": 0.0193
+    },
+    "f-s": {
+      "category": 0.0424,
+      "head": 0.0788,
+      "terminal": 0.0218,
+      "frame_hazard": 0.0549,
+      "section": 0.0498,
+      "position": 0.0416,
+      "mean": 0.0482
+    },
+    "i-p": {
+      "category": 0.3755,
+      "head": 0.39,
+      "terminal": 0.6086,
+      "frame_hazard": 0.3053,
+      "section": 0.0023,
+      "position": 0.0206,
+      "mean": 0.2837
+    },
+    "i-s": {
+      "category": 0.3108,
+      "head": 0.3113,
+      "terminal": 0.5856,
+      "frame_hazard": 0.3957,
+      "section": 0.027,
+      "position": 0.01,
+      "mean": 0.2734
+    },
+    "p-s": {
+      "category": 0.089,
+      "head": 0.1147,
+      "terminal": 0.0264,
+      "frame_hazard": 0.0585,
+      "section": 0.0309,
+      "position": 0.0425,
+      "mean": 0.0603
+    }
+  },
+  "coherence": {
+    "avoid_mean_jsd": 0.1821,
+    "cooc_mean_jsd": 0.151,
+    "verdict_b": "REJECTED",
+    "per_dimension": {
+      "category": {
+        "avoid_mean": 0.238,
+        "cooc_mean": 0.1443,
+        "ratio": 1.6494,
+        "direction": "COOC_MORE_SIMILAR"
+      },
+      "head": {
+        "avoid_mean": 0.2498,
+        "cooc_mean": 0.1749,
+        "ratio": 1.4283,
+        "direction": "COOC_MORE_SIMILAR"
+      },
+      "terminal": {
+        "avoid_mean": 0.3682,
+        "cooc_mean": 0.3194,
+        "ratio": 1.1528,
+        "direction": "COOC_MORE_SIMILAR"
+      },
+      "frame_hazard": {
+        "avoid_mean": 0.1934,
+        "cooc_mean": 0.2147,
+        "ratio": 0.9011,
+        "direction": "AVOID_MORE_SIMILAR"
+      },
+      "section": {
+        "avoid_mean": 0.0337,
+        "cooc_mean": 0.0283,
+        "ratio": 1.1935,
+        "direction": "COOC_MORE_SIMILAR"
+      },
+      "position": {
+        "avoid_mean": 0.0095,
+        "cooc_mean": 0.0244,
+        "ratio": 0.3883,
+        "direction": "AVOID_MORE_SIMILAR"
+      }
+    }
+  },
+  "hypothesis_a": {
+    "within_pfi_mean": 0.1947,
+    "within_cd_mean": 0.1878,
+    "between_mean": 0.1923,
+    "s_to_pfi": 0.1273,
+    "s_to_cd": 0.1031,
+    "separation_ratio": 0.997,
+    "verdict": "REJECTED",
+    "s_bias": "CD"
+  },
+  "redundancy_incompatibility": {
+    "folio_jaccards": {
+      "c-d": 1.0,
+      "c-f": 0.8902,
+      "c-i": 1.0,
+      "c-p": 0.9634,
+      "c-s": 1.0,
+      "d-f": 0.8902,
+      "d-i": 1.0,
+      "d-p": 0.9634,
+      "d-s": 1.0,
+      "f-i": 0.8902,
+      "f-p": 0.8537,
+      "f-s": 0.8902,
+      "i-p": 0.9634,
+      "i-s": 1.0,
+      "p-s": 0.9634
+    },
+    "avoid_folio_mean": 0.9405,
+    "cooc_folio_mean": 0.9634,
+    "folio_verdict": "DIFFERENT_CONTEXT",
+    "head_jaccards": {
+      "c-d": 1.0,
+      "c-f": 1.0,
+      "c-i": 1.0,
+      "c-p": 0.8,
+      "c-s": 1.0,
+      "d-f": 1.0,
+      "d-i": 1.0,
+      "d-p": 0.8,
+      "d-s": 1.0,
+      "f-i": 1.0,
+      "f-p": 0.8,
+      "f-s": 1.0,
+      "i-p": 0.8,
+      "i-s": 1.0,
+      "p-s": 0.8
+    },
+    "avoid_head_mean": 0.9,
+    "cooc_head_mean": 0.9714,
+    "head_verdict": "DIFFERENT_HEADS"
+  },
+  "s_universality": {
+    "s_distances": {
+      "c": 0.018,
+      "d": 0.1882,
+      "f": 0.0482,
+      "i": 0.2734,
+      "p": 0.0603
+    },
+    "mean_s_distance": 0.1176,
+    "other_mean_distances": {
+      "c": 0.1518,
+      "d": 0.2305,
+      "f": 0.1394,
+      "i": 0.2922,
+      "p": 0.1489
+    },
+    "s_section_entropy": 2.022,
+    "other_section_entropies": {
+      "c": 1.857,
+      "d": 1.906,
+      "f": 2.101,
+      "i": 1.771,
+      "p": 1.817
+    },
+    "s_head_entropy": 1.909,
+    "other_head_entropies": {
+      "c": 2.076,
+      "d": 1.46,
+      "f": 1.696,
+      "i": 1.386,
+      "p": 1.462
+    },
+    "mechanisms": [
+      "FQ_MACRO_STATE"
+    ]
+  },
+  "head_term_compatibility": {
+    "chi2_head": 7929.0,
+    "v_head": 0.545,
+    "chi2_term": 13371.5,
+    "v_term": 0.498,
+    "head_profiles": {
+      "c": {
+        "o": 352,
+        "e": 375,
+        "a": 28,
+        "k": 248,
+        "t": 121
+      },
+      "d": {
+        "o": 283,
+        "e": 2659,
+        "a": 27,
+        "t": 54,
+        "k": 101
+      },
+      "f": {
+        "o": 71,
+        "a": 6,
+        "k": 1,
+        "e": 37,
+        "t": 1
+      },
+      "i": {
+        "o": 117,
+        "a": 1528,
+        "e": 30,
+        "k": 37,
+        "t": 13
+      },
+      "p": {
+        "o": 263,
+        "a": 9,
+        "e": 61,
+        "k": 1
+      },
+      "s": {
+        "o": 83,
+        "e": 72,
+        "t": 22,
+        "a": 16,
+        "k": 53
+      }
+    },
+    "term_profiles": {
+      "c": {
+        "h": 1063,
+        "bare": 1019,
+        "y": 7,
+        "l": 4,
+        "r": 3
+      },
+      "d": {
+        "bare": 1713,
+        "y": 2623,
+        "h": 32,
+        "l": 22,
+        "r": 11
+      },
+      "f": {
+        "bare": 129,
+        "h": 77,
+        "l": 1,
+        "m": 2,
+        "r": 5,
+        "y": 1
+      },
+      "i": {
+        "bare": 670,
+        "n": 2121,
+        "r": 43,
+        "m": 9,
+        "h": 22,
+        "y": 1,
+        "l": 9
+      },
+      "p": {
+        "h": 275,
+        "bare": 341,
+        "l": 11,
+        "r": 9,
+        "m": 1,
+        "y": 1
+      },
+      "s": {
+        "bare": 396,
+        "h": 158,
+        "l": 5,
+        "r": 1
+      }
+    },
+    "avoid_head_jsd": 0.4091,
+    "cooc_head_jsd": 0.2923,
+    "avoid_term_jsd": 0.5903,
+    "cooc_term_jsd": 0.538
+  },
+  "category_alignment": {
+    "known_categories": {
+      "p": "MARKING",
+      "f": "MARKING",
+      "c": "MARKING",
+      "d": "MARKING",
+      "i": "STAGING",
+      "s": "STAGING"
+    },
+    "headless_categories": {
+      "d": "CONTAINMENT",
+      "i": "STAGING",
+      "p": "MARKING",
+      "f": "MARKING"
+    },
+    "avoid_same_category": 3,
+    "avoid_diff_category": 5,
+    "cooc_same_category": 1,
+    "cooc_diff_category": 6,
+    "avoid_same_rate": 0.375,
+    "cooc_same_rate": 0.1429,
+    "marking_cross_boundary": 4,
+    "marking_within_boundary": 4
+  },
+  "pair_compound_summaries": {
+    "c+d": {
+      "total_tokens": 157,
+      "unique_types": 99,
+      "mean_middle_length": 5.01
+    },
+    "c+f": {
+      "total_tokens": 110,
+      "unique_types": 46,
+      "mean_middle_length": 4.04
+    },
+    "c+i": {
+      "total_tokens": 27,
+      "unique_types": 27,
+      "mean_middle_length": 5.63
+    },
+    "c+p": {
+      "total_tokens": 403,
+      "unique_types": 101,
+      "mean_middle_length": 3.98
+    },
+    "c+s": {
+      "total_tokens": 50,
+      "unique_types": 33,
+      "mean_middle_length": 3.9
+    },
+    "d+f": {
+      "total_tokens": 18,
+      "unique_types": 14,
+      "mean_middle_length": 5.11
+    },
+    "d+i": {
+      "total_tokens": 78,
+      "unique_types": 36,
+      "mean_middle_length": 4.38
+    },
+    "d+p": {
+      "total_tokens": 59,
+      "unique_types": 40,
+      "mean_middle_length": 5.12
+    },
+    "d+s": {
+      "total_tokens": 62,
+      "unique_types": 46,
+      "mean_middle_length": 4.77
+    },
+    "f+i": {
+      "total_tokens": 16,
+      "unique_types": 14,
+      "mean_middle_length": 4.69
+    },
+    "f+p": {
+      "total_tokens": 7,
+      "unique_types": 7,
+      "mean_middle_length": 6.71
+    },
+    "f+s": {
+      "total_tokens": 12,
+      "unique_types": 11,
+      "mean_middle_length": 4.5
+    },
+    "i+p": {
+      "total_tokens": 42,
+      "unique_types": 28,
+      "mean_middle_length": 4.55
+    },
+    "i+s": {
+      "total_tokens": 21,
+      "unique_types": 17,
+      "mean_middle_length": 4.29
+    },
+    "p+s": {
+      "total_tokens": 39,
+      "unique_types": 29,
+      "mean_middle_length": 4.69
+    }
+  },
+  "synthesis": {
+    "verdicts": {
+      "grouping": "REJECTED",
+      "mechanism": "REJECTED",
+      "folio_context": "DIFFERENT_CONTEXT",
+      "head_context": "DIFFERENT_HEADS"
+    },
+    "redundancy_evidence": 0,
+    "incompatibility_evidence": 5,
+    "overall": "INCOMPATIBILITY_DOMINANT"
+  }
+}

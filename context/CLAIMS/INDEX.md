@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1307 validated constraints | **Version:** 5.17 | **Date:** 2026-03-05
+**Total:** 1309 validated constraints | **Version:** 5.17 | **Date:** 2026-03-05
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5019,6 +5019,29 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - A7: 3+ modifier compliance with C1393 gradient: 49/115 = 42.6%.
 - A8: Per-modifier mean positions (multi-mod only): p=0.261, f=0.408, c=0.508, i=0.532, d=0.589, s=0.631.
 - A9: 63 i-repeat types (1,556 tokens), dominated by aiin (834) and iin (560).
+
+---
+
+### Modifier Functional Grouping (C1473-C1474) -- Phase: MODIFIER_FUNCTIONAL_GROUPING (Phase 532)
+
+> **Summary:** Phase 532 explains WHY specific modifier pairs avoid each other (C1472). Tested three hypotheses: (A) discrete functional groups {p,f,i} vs {c,d} vs {s}, (B) redundancy, (C) frame incompatibility. Result: Hypothesis A REJECTED (separation ratio 0.997), Hypothesis B REJECTED (0/5 redundancy signals), Hypothesis C SUPPORTED (5/5 incompatibility signals). Mechanism: modifiers with narrow HEAD selectivity (d=85.1% e-HEAD, i=88.6% a-HEAD) avoid each other because no single HEAD satisfies both demands. s is universal connector via behavioral centrality (lowest mean JSD 0.1176), broad HEAD, and FQ macro-state context. Modifier x HEAD V=0.545, Modifier x TERM V=0.498.
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1473 | Modifier avoidance is frame incompatibility | 2 | B, MIDDLE, atom, modifier, co-occurrence, avoidance, frame, HEAD, TERMINAL | HEAD selectivity conflict: d(85% e), i(89% a), p(79% o) narrow; c,s broad. 5/5 incompatibility, 0/5 redundancy. |
+| 1474 | s-modifier universal connector | 2 | B, MIDDLE, atom, modifier, s, co-occurrence, universality | s co-occurs with all 5 others. Lowest mean JSD (0.1176), broad HEAD (entropy 1.909), FQ macro-state (64.6%). |
+
+**Phase 532 findings (Modifier Functional Grouping, 10 analyses):**
+- T1: Per-modifier profiles across 6 dimensions (position, category, HEAD, TERMINAL, frame hazard, section) for 9,786 modifier-bearing tokens.
+- T2: Pairwise JSD matrix for all 15 modifier pairs. Closest: c-s (0.018), farthest: d-i (0.298).
+- T3: Avoiding pairs mean JSD 0.182 > co-occurring 0.151 (1.21x). Avoiding pairs are LESS similar, not more.
+- T4: Hypothesis A separation ratio 0.997 -- within-group = between-group behavioral distance. No discrete grouping.
+- T5: Folio Jaccard: avoid 0.941 vs cooc 0.963. HEAD Jaccard: avoid 0.900 vs cooc 0.971. Both favor incompatibility.
+- T6: Avoiding pairs have higher HEAD JSD (0.409 vs 0.292, 1.40x) and category JSD (0.238 vs 0.144, 1.65x).
+- T7: s universality: mean distance 0.1176 (centroid), HEAD entropy 1.909, FQ macro-state 64.6%.
+- T8: Modifier x HEAD chi2=7,929 V=0.545. Modifier x TERMINAL chi2=13,372 V=0.498. Both strongly structured.
+- T9: HEAD selectivity: d=85.1% e, i=88.6% a (narrow non-overlapping); c entropy 2.076, s entropy 1.909 (broad).
+- T10: Category alignment: avoid pairs more likely same-category (37.5% vs 14.3%) -- MARKING modifiers compete for same niche.
 
 ---
 

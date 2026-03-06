@@ -813,10 +813,15 @@ middle_instruction_encoding:
     Modifier stacking: statistical preference, not fixed rule (C1472).
     Best-fit order: p -> f -> c -> s -> d -> i (68.8% type accuracy).
     Co-occurrence avoidance dominant: 8/15 modifier pairs never co-occur.
+    Avoidance mechanism: HEAD x TERM frame incompatibility (C1473).
+      d(85% e-HEAD) and i(89% a-HEAD) have narrow non-overlapping HEAD demands.
+      c and s have broad HEAD distributions (entropy >1.9) enabling universal co-occurrence.
+    s is universal connector: co-occurs with all 5 others via centroid proximity,
+      broad HEAD, and FQ macro-state context (C1474).
     s reliably late, p reliably early; interior {c,d,f,i} weakly ordered.
     Frame predicts 64% of category; modifiers shift remaining 36%.
 
-  provenance: "C1393, C1394, C1472"
+  provenance: "C1393, C1394, C1472, C1473, C1474"
 
 # ============================================================
 

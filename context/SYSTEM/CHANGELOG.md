@@ -4,6 +4,26 @@
 
 ---
 
+## Version 5.21.123 (2026-03-05) - Phase 532: Modifier Functional Grouping
+
+### Summary
+
+Phase 532 explains WHY the 8 modifier pair avoidances from C1472 occur. Tested three hypotheses: (A) discrete functional groups {p,f,i} vs {c,d} vs {s}, (B) functional redundancy, (C) frame incompatibility. Result: Hypothesis A REJECTED (separation ratio 0.997 -- no between-group vs within-group behavioral difference), Hypothesis B REJECTED (0/5 redundancy signals; avoiding pairs are LESS similar than co-occurring pairs), Hypothesis C SUPPORTED (5/5 incompatibility signals). Mechanism: modifiers with narrow HEAD selectivity (d=85.1% e-HEAD, i=88.6% a-HEAD, p=78.7% o-HEAD) avoid each other because no single HEAD can satisfy both demands simultaneously. c and s have broad HEAD distributions (entropy >1.9) enabling them to co-occur with narrow modifiers. s is the universal connector -- co-occurs with all 5 others via behavioral centrality (lowest mean JSD 0.1176), broad HEAD, and FQ macro-state context (64.6%).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1473: Modifier avoidance is frame incompatibility (HEAD x TERM selectivity conflict; V_HEAD=0.545, V_TERM=0.498) |
+| **ADDED** | C1474: s-modifier universal connector (mean JSD 0.1176, HEAD entropy 1.909, FQ 64.6%) |
+| **ADDED** | `phases/MODIFIER_FUNCTIONAL_GROUPING/scripts/modifier_functional_grouping.py` |
+| **ADDED** | `phases/MODIFIER_FUNCTIONAL_GROUPING/results/modifier_functional_grouping.json` |
+| **ADDED** | `phases/MODIFIER_FUNCTIONAL_GROUPING/REPORT.md` |
+| **UPDATED** | INDEX.md -- +2 constraints (1318 total) |
+| **RESOLVED** | C1472 open question: why specific modifier pairs avoid each other |
+
+---
+
 ## Version 5.20.122 (2026-03-05) - Phase 531: Modifier Stacking Order
 
 ### Summary
