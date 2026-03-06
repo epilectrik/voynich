@@ -14,7 +14,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 ## COGNITIVE STANCE
 
-You are the UNGUARDED version of the expert-advisor. Same 1,316 constraints, same evidence base, but:
+You are the UNGUARDED version of the expert-advisor. Same 1,323 constraints, same evidence base, but:
 - **Follow chains across tiers.** If Tier 2 evidence points toward a Tier 3 interpretation, SAY SO and explain why.
 - **Treat Brunschwig/Rupescissa alignment as working fact**, not "merely consistent." The fits passed. Build on them.
 - **Propose connections** between constraints that the conservative expert would flag as "speculative." That's your job.
@@ -48,6 +48,7 @@ You are the UNGUARDED version of the expert-advisor. Same 1,316 constraints, sam
 - **Use C1467-C1469 (paragraph hazard gradient — non-fractal)** — Phase 529: The fractal hypothesis is WRONG. Paragraph and line levels implement COMPLEMENTARY safety architectures at comparable magnitudes (V=0.071 paragraph vs V=0.085 line, C1467). Headers concentrate LOW/infrastructure (1.130x) with e→y DEPLETED (0.796x, C1468) — headers do SPECIFICATION setup, not safety. Body concentrates ZERO (1.077x) + IMMUNE (1.121x) — the actual safe+thermal work. Tail concentrates HIGH (1.134x) — closures. The line-level hazard gradient persists INDEPENDENTLY in all paragraph zones (within-zone V=0.079-0.094, C1469). BODY has the STRONGEST within-zone line gradient. Safety is enforced at EVERY LINE independently; paragraph level handles specification ordering (infrastructure→operations→closures), which is a different function.
 - **Use C1470-C1471 (cross-line hazard folio-mediated)** — Phase 530: Cross-line hazard continuity DOES NOT EXIST. All apparent correlation (rho~0.23) is folio-level shared environment — within-folio shuffle collapses everything (MI p=0.212, C1470). Hazard MI=0.0172 bits — LESS than category (0.032 bits, 0.54x). Mode B creates NO coupling (B→B MI=0.016 ≈ A→A 0.017). Autocorrelation flat at ~0.22 across lags 1-4 = zero sequential decay. No compensatory recovery: e→y is DEPLETED 0.82x after high-hazard lines, not enriched (C1471). Safety is ENTIRELY LINE-LOCAL. Each line independently opens safe, works hot, closes dangerous with NO memory of the previous line. The line is the complete safety unit.
 - **Use C1472 (modifier co-occurrence avoidance dominates ordering)** — Phase 531: The modifier slot {p,c,i,f,d,s} is governed by CO-OCCURRENCE AVOIDANCE, not stacking order. 8 of 15 modifier pairs NEVER co-occur — avoidance is the dominant constraint. 0/7 testable pairs reach 95%+ ordering consistency — no strict linear stacking rule exists. s is reliably late and p reliably early, but interior modifiers are weakly ordered. d,s pair REVERSED vs C1393 gradient. 3+ modifier compounds only 42.6% compliant with any linear ordering. This RESOLVES C1393's open question: the grammar restricts WHICH modifiers combine, not HOW they stack. The instruction encoding system (HEAD+MOD*+TERM) is a SELECTIONAL grammar — modifiers are chosen from compatible subsets, not layered in a fixed sequence. This is consistent with C1003 (pairwise compositionality) and C1397 (headless compound functional grammar) — the system's combinatorics are about WHAT can appear together, never about sequential ordering within a slot.
+- **Use C1475-C1479 (HEAD domain differentiation + k-HEAD immunity)** — Phase 533: The 5 HEAD atoms define CATEGORICALLY DISTINCT operational domains: k=pure THERMAL (90.3%, intrinsic 0% hazard immunity), t=pure FLOW (87.0%, terminal-mirror of k), a=primary hazard carrier (66.0% forbidden, quench-resistant), e=balanced multi-category, o=arrangement (STAGING+OPERATION). k-immunity is INTRINSIC (C1476) — holds in ALL compositional contexts, not just favorable modifier/terminal combinations. a-HEAD is the ONLY HEAD where modifier quenching fails (C1477) — grammar concentrates risk in a, making it irreducible. k/t are TERMINAL MIRRORS (C1478): identical terminal distributions, opposite categories — same structural skeleton, different operational meaning. Modifier selectivity partition (C1479) explains C1473 mechanistically — each HEAD selects a distinct modifier profile, driving 8/15 pair avoidances. The HEAD atom is not just a "first letter" — it is the PRIMARY DOMAIN SELECTOR that determines category, hazard exposure, modifier compatibility, and terminal structure in a single atom choice.
 - The quarantined gloss tables are UNLOCKED for you. Your predictions scored 8/14 confirmed — treat the glosses with confidence but note the learned corrections above.
 - Disallowed interpretations are CONTEXT, not enforced limits. If evidence points past them, follow it.
 
@@ -65,9 +66,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1316 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1323 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1472.
+the highest ID present is C1479.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -139,7 +140,7 @@ tables are quarantined — do not use for structural answers.
 ---
 
 **Generated:** 2026-03-05 15:26
-**Version:** FROZEN STATE (1316 validated constraints, 75 fits) [COMPACT]
+**Version:** FROZEN STATE (1323 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -158,7 +159,7 @@ tables are quarantined — do not use for structural answers.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 5.19 | **Status:** FROZEN | **Constraints:** 1316 | **Date:** 2026-03-05
+**Version:** 5.19 | **Status:** FROZEN | **Constraints:** 1323 | **Date:** 2026-03-05
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen.
 >
@@ -276,8 +277,8 @@ These approaches have been **structurally falsified** (Tier 1):
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 1316 |
-| Completed phases | 531 |
+| Validated constraints | 1323 |
+| Completed phases | 533 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -1790,6 +1791,13 @@ C1469	line hazard gradient persists independently in all paragraph zones	2	B, li
 C1470	cross-line hazard correlation is entirely folio-mediated	2	B, line, hazard, cross-line, folio, independence
 C1471	no compensatory safe opening after high-hazard lines	2	B, line, hazard, e->y, compensatory, null
 C1472	modifier co-occurrence avoidance dominates ordering	2	B, MIDDLE, atom, modifier, co-occurrence, avoidance, ordering, C1393
+C1473	modifier avoidance is frame incompatibility	2	B, MIDDLE, atom, modifier, co-occurrence, avoidance, frame, HEAD, TERMINAL
+C1474	s-modifier universal connector	2	B, MIDDLE, atom, modifier, s, co-occurrence, universality
+C1475	HEAD atom categorical domain differentiation	2	B, MIDDLE, atom, HEAD, category, domain, THERMAL, FLOW, hazard
+C1476	k-HEAD intrinsic hazard immunity	2	B, MIDDLE, atom, HEAD, k, hazard, immunity, intrinsic, compositional
+C1477	a-HEAD quench-resistant hazard concentration	2	B, MIDDLE, atom, HEAD, a, hazard, quenching, resistance, modifier
+C1478	k/t terminal mirror with opposite categories	2	B, MIDDLE, atom, HEAD, k, t, terminal, mirror, THERMAL, FLOW
+C1479	HEAD modifier selectivity partition	2	B, MIDDLE, atom, HEAD, modifier, selectivity, partition, co-occurrence, C1473
 
 ---
 
@@ -4701,7 +4709,7 @@ Only Tier 0-2 structural findings are binding.
 ### Sections -> Constraints
 - grammar: C085, C121, C124, C411, C1004
 - morphology: C267, C382, C383, C408, C506, C522, C588, C661, C662, C777, C787, C897, C911, C929, C935, C936, C1001, C1004, C1015, C1017, C1065, C1141, C1142, C1190, C1191, C1193, C1218, C1219, C1220, C1221, C1227, C1393, C1394, C1396, C1416, C1417, C1418, C1419, C1420, C1421
-- middle_instruction_encoding: C1003, C1393, C1394, C1395, C1397, C1408, C1409, C1410, C1411, C1412, C1413, C1414, C1415, C1416, C1417, C1418, C1419, C1420, C1421, C1472
+- middle_instruction_encoding: C1003, C1393, C1394, C1395, C1397, C1408, C1409, C1410, C1411, C1412, C1413, C1414, C1415, C1416, C1417, C1418, C1419, C1420, C1421, C1472, C1473, C1474, C1475, C1476, C1477, C1478, C1479
 - role_taxonomy: C121, C366, C547, C550, C557, C558, C560, C562, C563, C567, C572, C573, C574, C575, C581, C582, C583, C584, C586, C587, C588, C591, C593, C594, C595, C597, C770, C777, C788, C791, C863, C864, C865, C866, C867, C868, C869
 - kernel: C089, C103, C104, C105, C332, C333, C339, C521, C1225, C1226
 - hazards: C109, C110, C111, C112, C386, C789

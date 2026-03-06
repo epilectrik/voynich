@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1309 validated constraints | **Version:** 5.17 | **Date:** 2026-03-05
+**Total:** 1323 validated constraints | **Version:** 5.22 | **Date:** 2026-03-05
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5042,6 +5042,34 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T8: Modifier x HEAD chi2=7,929 V=0.545. Modifier x TERMINAL chi2=13,372 V=0.498. Both strongly structured.
 - T9: HEAD selectivity: d=85.1% e, i=88.6% a (narrow non-overlapping); c entropy 2.076, s entropy 1.909 (broad).
 - T10: Category alignment: avoid pairs more likely same-category (37.5% vs 14.3%) -- MARKING modifiers compete for same niche.
+
+---
+
+### HEAD Domain Differentiation (C1475-C1479) -- Phase: HEAD_DOMAIN_DIFFERENTIATION (Phase 533)
+
+> **Summary:** Phase 533 characterizes the 5 HEAD atoms {a, e, o, k, t} as categorically distinct operational domains and resolves the mechanism of k-HEAD hazard immunity. Each HEAD defines a primary domain with extreme specialization: k=THERMAL (90.3%, 3.80x), t=FLOW (87.0%, 4.47x), a=FLOW+TRANSITION (54.2%+41.4%), e=THERMAL+OPERATION (34.7%+32.2%), o=STAGING+OPERATION (32.4%+25.6%), headless=CONTAINMENT+MARKING+STAGING. k-HEAD immunity is INTRINSIC (0% with or without modifiers) not compositional. a-HEAD is the primary hazard carrier (66.0%) and the ONLY HEAD where modifier quenching fails. k and t are terminal-identical (JSD=0.0017) but categorically opposed (JSD=0.784) -- parallel channels with opposite content. Each HEAD selects a distinct modifier profile creating a near-partition: a monopolizes i (4.08x), e monopolizes d (1.99x), o attracts p/f/c, k/t are modifier-depleted, headless is the universal modifier host.
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1475 | HEAD atom domain taxonomy | 2 | B, MIDDLE, atom, HEAD, category, domain, taxonomy | k=THERMAL 90.3%, t=FLOW 87.0%, a=FLOW+TRANSITION, e=THERMAL+OPERATION, o=STAGING+OPERATION. Category JSD 0.111-0.412. |
+| 1476 | k-HEAD immunity is intrinsic not compositional | 2 | B, MIDDLE, atom, HEAD, k, hazard, immunity, intrinsic, modifier | k bare 0/2,682; k with modifier 0/418; all 6 frames zero. Only HEAD immune independent of composition. |
+| 1477 | a-HEAD is the primary hazard carrier | 2 | B, MIDDLE, atom, HEAD, a, hazard, forbidden, modifier, quench-resistant | 66.0% forbidden (2,032/3,079). ONLY HEAD where quench fails (52.8% with mod). a->l 98.9%, a->r 98.5%, a->n 65.6%. |
+| 1478 | k/t terminal mirror with category opposition | 2 | B, MIDDLE, atom, HEAD, k, t, terminal, category, mirror, PREFIX | Terminal JSD=0.0017, Category JSD=0.784. Both bare-dominant, qo-selected, high suffix rate. Parallel channels. |
+| 1479 | HEAD-modifier selectivity partition | 2 | B, MIDDLE, atom, HEAD, modifier, selectivity, partition, co-occurrence | a monopolizes i (4.08x), e monopolizes d (1.99x), o attracts p/f/c. k/t modifier-depleted. Headless universal. |
+
+**Phase 533 findings (HEAD Domain Differentiation, 12 analyses):**
+- T1: Category profiles per HEAD. k THERMAL 3.80x, t FLOW 4.47x, a dual FLOW+TRANSITION, e multi-category, o STAGING+OPERATION.
+- T2: Modifier compatibility. a: i=78.5% (4.08x). e: d=38.1% (1.99x). o: p=3.51x, f=2.83x. k/t modifier-depleted.
+- T3: Terminal distributions. k/t bare-dominant (92.5%/90.2%), JSD=0.0017. a: n=41.3%, r=22.3%. e: y=49.6%, bare=42.9%.
+- T4: Frame hazard. k=0.0% all frames. a=66.0% (a->l 98.9%, a->r 98.5%). t=62.5%. o=30.7%.
+- T5: Line position. a most final (0.582), e most initial (0.451). k/o central.
+- T6: PREFIX selectivity. k/t both qo-selected (4.66x/5.00x). a ok/ot-selected. e ch/sh-selected.
+- T7: Suffix rates. k=96.9%, t=95.8% (highest). a=48.6% (lowest headed).
+- T8: e-depth. e-HEAD mean depth 1.217. Extended e (ee+) = 33.3% of e-HEAD tokens.
+- T9: Headless comparison. 6,277 tokens (27.2%). CONTAINMENT 2.70x, MARKING 2.51x, STAGING 2.38x. Universal modifier host.
+- T10: Population census. e=7,002 (30.3%), headless=6,277 (27.2%), k=3,100 (13.4%), a=3,079 (13.3%), o=2,717 (11.8%), t=921 (4.0%).
+- T11: k-immunity mechanism. k bare 0/2,682, k+mod 0/418, 0/6 frames nonzero, 0 forbidden pairs. INTRINSIC.
+- T12: Pairwise distances. Most distant: k vs a (0.494). Most similar: o vs headless (0.161).
 
 ---
 

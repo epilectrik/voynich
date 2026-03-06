@@ -3,7 +3,7 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.27"
+  version: "3.28"
   date: "2026-03-05"
   status: "ACTIVE"
   layer_type: "grammar contract"
@@ -189,8 +189,8 @@ guarantees:
     provenance: "C404, C935"
 
   - id: "MIDDLE_INSTRUCTION_ENCODING"
-    statement: "Compound MIDDLEs encode instructions as HEAD + MOD* + TERM: 18 atoms in 4 slot roles (5 HEAD, 6 MOD, 6 TERM, 2 dual). Fixed modifier ordering (p→f→i→c→d→s). Frame (HEAD+TERM) predicts 64% of operational category; modifiers shift remaining 36%. Headless compounds (20.6%) form a specialized infrastructure subgrammar. h-terminal is transparent (HEAD+MODS reach V=0.988). Suffix is an independent compositional domain using the same atom inventory (entropy 1.475 bits). TERMINAL atom gates suffix attachment via a three-tier opacity gradient (OPAQUE y/m/n <5%, SEMI-TRANSPARENT l/r 17-20%, TRANSPARENT h 99%; C1440) with active exclusion (C1441) and 17 forbidden TERMINAL x suffix-head pairs (C1443). TERMINAL and suffix encode complementary category information (3.6x MI ratio, 8.2% redundancy; C1442)."
-    provenance: "C1393, C1394, C1440, C1441, C1442, C1443"
+    statement: "Compound MIDDLEs encode instructions as HEAD + MOD* + TERM: 18 atoms in 4 slot roles (5 HEAD, 6 MOD, 6 TERM, 2 dual). Fixed modifier ordering (p→f→i→c→d→s). Frame (HEAD+TERM) predicts 64% of operational category; modifiers shift remaining 36%. HEAD atoms define distinct operational domains (C1475): k=THERMAL 90.3%, t=FLOW 87.0%, a=FLOW+TRANSITION, e=THERMAL+OPERATION, o=STAGING+OPERATION; headless=infrastructure. k-HEAD immunity is intrinsic (C1476, 0% in all contexts). a-HEAD is primary hazard carrier (C1477, 66%, quench-resistant). k/t are terminal-identical but categorically opposed (C1478). Each HEAD selects distinct modifiers creating a near-partition (C1479). Headless compounds (20.6%) form a specialized infrastructure subgrammar. h-terminal is transparent (HEAD+MODS reach V=0.988). Suffix is an independent compositional domain using the same atom inventory (entropy 1.475 bits). TERMINAL atom gates suffix attachment via a three-tier opacity gradient (OPAQUE y/m/n <5%, SEMI-TRANSPARENT l/r 17-20%, TRANSPARENT h 99%; C1440) with active exclusion (C1441) and 17 forbidden TERMINAL x suffix-head pairs (C1443). TERMINAL and suffix encode complementary category information (3.6x MI ratio, 8.2% redundancy; C1442)."
+    provenance: "C1393, C1394, C1440, C1441, C1442, C1443, C1475, C1476, C1477, C1478, C1479"
 
 # ============================================================
 invariants:
@@ -810,6 +810,22 @@ middle_instruction_encoding:
       MOD  in {p, f, i, c, d, s}*   — ordered parametrization stack
       TERM in {l, r, h, y, m, n, k*, t*} — exit state/condition
       * k, t are role-dual: HEAD when first, TERM when last
+    HEAD domain taxonomy (C1475):
+      k = THERMAL 90.3% (3.80x)   — pure thermal operator
+      t = FLOW 87.0% (4.47x)      — pure flow operator
+      a = FLOW+TRANSITION (54%+41%) — dual-category hazard carrier
+      e = THERMAL+OPERATION (35%+32%) — multi-category, most balanced
+      o = STAGING+OPERATION (32%+26%) — arrangement domain
+      headless = CONTAINMENT+MARKING+STAGING — infrastructure
+    k-HEAD immunity is INTRINSIC (C1476): 0.0% forbidden across all frames,
+      with or without modifiers. Not compositional — k is inherently safe.
+    a-HEAD is primary hazard carrier (C1477): 66.0% forbidden, only HEAD
+      where modifier quenching fails (52.8% with mod vs 79.9% without).
+    k/t terminal mirror (C1478): terminal JSD=0.0017 (identical packaging),
+      category JSD=0.784 (opposite content). Both qo-selected, high suffix rate.
+    HEAD-modifier selectivity partition (C1479):
+      a monopolizes i (4.08x), e monopolizes d (1.99x), o attracts p/f/c.
+      k/t modifier-depleted (13.5%/20.5%). Headless = universal modifier host (57.8%).
     Modifier stacking: statistical preference, not fixed rule (C1472).
     Best-fit order: p -> f -> c -> s -> d -> i (68.8% type accuracy).
     Co-occurrence avoidance dominant: 8/15 modifier pairs never co-occur.
@@ -821,7 +837,7 @@ middle_instruction_encoding:
     s reliably late, p reliably early; interior {c,d,f,i} weakly ordered.
     Frame predicts 64% of category; modifiers shift remaining 36%.
 
-  provenance: "C1393, C1394, C1472, C1473, C1474"
+  provenance: "C1393, C1394, C1472, C1473, C1474, C1475, C1476, C1477, C1478, C1479"
 
 # ============================================================
 

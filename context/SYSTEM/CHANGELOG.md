@@ -4,6 +4,32 @@
 
 ---
 
+## Version 5.22.124 (2026-03-05) - Phase 533: HEAD Domain Differentiation
+
+### Summary
+
+Phase 533 characterizes the 5 HEAD atoms {a, e, o, k, t} as categorically distinct operational domains and resolves the mechanism of k-HEAD hazard immunity (C1446). Each HEAD defines a primary domain with extreme specialization: k=THERMAL (90.3%, 3.80x), t=FLOW (87.0%, 4.47x), a=FLOW+TRANSITION dual-category, e=THERMAL+OPERATION multi-category, o=STAGING+OPERATION multi-category, headless=CONTAINMENT+MARKING+STAGING. k-HEAD immunity is INTRINSIC (0.0% forbidden rate with or without modifiers across all 6 frames) -- not a consequence of modifier quenching or terminal selection. a-HEAD is the primary hazard carrier (66.0% forbidden rate, 2,032/3,079 tokens) and the ONLY HEAD where modifier quenching fails (52.8% with modifiers vs 79.9% without). k and t are terminal-identical (JSD=0.0017) but categorically opposed (JSD=0.784) -- functionally parallel channels with identical structural packaging and opposite operational content. Each HEAD selects a distinct modifier profile creating a near-partition of the modifier space, directly explaining C1473 frame incompatibility.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1475: HEAD atom domain taxonomy (5 HEADs + headless define non-overlapping operational domains) |
+| **ADDED** | C1476: k-HEAD immunity is intrinsic not compositional (0% in all compositional contexts) |
+| **ADDED** | C1477: a-HEAD is primary hazard carrier (66.0%, only HEAD where quench fails) |
+| **ADDED** | C1478: k/t terminal mirror with category opposition (terminal JSD=0.0017, category JSD=0.784) |
+| **ADDED** | C1479: HEAD-modifier selectivity partition (a monopolizes i, e monopolizes d, o attracts p/f/c) |
+| **ADDED** | `phases/HEAD_DOMAIN_DIFFERENTIATION/scripts/head_domain_differentiation.py` |
+| **ADDED** | `phases/HEAD_DOMAIN_DIFFERENTIATION/results/head_domain_differentiation.json` |
+| **ADDED** | `phases/HEAD_DOMAIN_DIFFERENTIATION/REPORT.md` |
+| **UPDATED** | INDEX.md -- +5 constraints (1323 total) |
+| **DEEPENED** | C1446 (k-HEAD immunity): mechanism resolved as intrinsic |
+| **EXTENDED** | C1448 (frame hazard map): a-HEAD frames identified as primary hazard source |
+| **REFINED** | C1450 (modifier quenching): works for e/o/t, fails for a |
+| **EXPLAINED** | C1473 (modifier avoidance): HEAD domain partition is root cause |
+
+---
+
 ## Version 5.21.123 (2026-03-05) - Phase 532: Modifier Functional Grouping
 
 ### Summary

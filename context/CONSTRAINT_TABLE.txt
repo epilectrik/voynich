@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1316 constraints | 2026-03-05
+CONSTRAINT_REFERENCE v2.6 | 1323 constraints | 2026-03-05
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1320,5 +1320,10 @@ C1469	Line hazard gradient paragraph-independent	2	B, line, paragraph, zone, haz
 C1470	Cross-line hazard correlation is folio-mediated	2	B, line, hazard, cross-line, folio, independence	MI=0.0172 bits (0.54x category). Shuffle p=0.212 MI, p=0.098 rho. Lags 1-4 flat ~0.22. B->B = A->A.
 C1471	No compensatory safe opening after hazardous closure	2	B, line, hazard, cross-line, e->y, recovery, compensatory	e->y DEPLETED 0.82x after above-median HIGH (Fisher p=0.0001). IMMUNE 0.78x. Folio composition effect.
 C1472	Modifier co-occurrence avoidance dominates ordering	2	B, grammar, composition	8/15 pairs empty. 0 strict, 3 moderate (all s-late). d,s reversed. Best: p->f->c->s->d->i (68.8%). 3+ compliance 42.6%.
-C1473	Modifier avoidance is frame incompatibility	2	B, MIDDLE, atom, modifier, co-occurrence, avoidance, frame, HEAD, TERMINAL	HEAD selectivity conflict: d(85% e), i(89% a), p(79% o) narrow; c,s broad (entropy >1.9). 5/5 incompatibility, 0/5 redundancy. V_HEAD=0.545, V_TERM=0.498.
-C1474	s-modifier universal connector	2	B, MIDDLE, atom, modifier, s, co-occurrence, universality	s co-occurs with all 5 others. Lowest mean JSD (0.1176), broad HEAD (entropy 1.909), FQ macro-state (64.6% per C1391).
+C1473	Modifier avoidance is frame incompatibility	2	B, MIDDLE, atom, modifier, co-occurrence, avoidance, frame, HEAD, TERMINAL	HEAD selectivity conflict: d(85% e), i(89% a), p(79% o) narrow; c,s broad. 5/5 incompatibility, 0/5 redundancy.
+C1474	s-modifier universal connector	2	B, MIDDLE, atom, modifier, s, co-occurrence, universality	s co-occurs with all 5 others. Lowest mean JSD (0.1176), broad HEAD (entropy 1.909), FQ macro-state (64.6%).
+C1475	HEAD atom domain taxonomy	2	B, MIDDLE, atom, HEAD, category, domain, taxonomy	k=THERMAL 90.3%, t=FLOW 87.0%, a=FLOW+TRANSITION, e=THERMAL+OPERATION, o=STAGING+OPERATION. Category JSD 0.111-0.412.
+C1476	k-HEAD immunity is intrinsic not compositional	2	B, MIDDLE, atom, HEAD, k, hazard, immunity, intrinsic, modifier	k bare 0/2,682; k with modifier 0/418; all 6 frames zero. Only HEAD immune independent of composition.
+C1477	a-HEAD is the primary hazard carrier	2	B, MIDDLE, atom, HEAD, a, hazard, forbidden, modifier, quench-resistant	66.0% forbidden (2,032/3,079). ONLY HEAD where quench fails (52.8% with mod). a->l 98.9%, a->r 98.5%, a->n 65.6%.
+C1478	k/t terminal mirror with category opposition	2	B, MIDDLE, atom, HEAD, k, t, terminal, category, mirror, PREFIX	Terminal JSD=0.0017, Category JSD=0.784. Both bare-dominant, qo-selected, high suffix rate. Parallel channels.
+C1479	HEAD-modifier selectivity partition	2	B, MIDDLE, atom, HEAD, modifier, selectivity, partition, co-occurrence	a monopolizes i (4.08x), e monopolizes d (1.99x), o attracts p/f/c. k/t modifier-depleted. Headless universal.
