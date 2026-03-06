@@ -4,6 +4,34 @@
 
 ---
 
+## Version 5.28.144 (2026-03-06) - Phase 539: Bridge Atom Stability Across A and B
+
+### Summary
+
+Phase 539 tests whether the 85 bridge MIDDLEs preserve atom-role behavior across Currier A and Currier B. 11 tests plus a 10-prediction scorecard (5/10 confirmed). Each bridge MIDDLE decomposed via HEAD+MOD*+TERM. Token collections from A (9,391 tokens) and B (19,998 tokens) compared across slot dimensions, PREFIX/SUFFIX ecology, category profiles, and per-atom behavioral correlations. Verdict: PARTIAL_STABILITY -- internal structure preserved (mean JSD 0.046), deployment channels shifted (mean JSD 0.113). TERMINAL is the most stable slot (JSD=0.014, 5.4x more stable than HEAD). Categories are INTRINSIC (100% match rate) but token-weighted distribution shifts: THERMAL +10.1pp in B, STAGING -11.1pp in B. A is o-HEAD/HEADLESS dominant (arrangement); B is e/k-HEAD dominant (execution). Individual atoms partition into three behavioral stability tiers: 8 stable (corr>0.90), 6 moderate (0.70-0.90), 3 unstable (<0.70). d is extreme outlier (corr=0.062).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1506: Bridge terminal atom stability across A and B (TERMINAL JSD=0.014, most stable slot; tier JSD=0.005) |
+| **ADDED** | C1507: Bridge HEAD redistribution A vs B (A=o/HEADLESS, B=e/k; HEAD JSD=0.077, least stable slot) |
+| **ADDED** | C1508: Bridge category redistribution A vs B (100% intrinsic match; THERMAL +10.1pp B, STAGING -11.1pp B) |
+| **ADDED** | C1509: Three-tier atom behavioral stability (8 stable, 6 moderate, 3 unstable; d=0.062 outlier) |
+| **ADDED** | `phases/BRIDGE_ATOM_STABILITY/scripts/bridge_atom_stability.py` |
+| **ADDED** | `phases/BRIDGE_ATOM_STABILITY/results/bridge_atom_stability.json` |
+| **ADDED** | `phases/BRIDGE_ATOM_STABILITY/REPORT.md` |
+| **UPDATED** | INDEX.md -- +4 constraints (1353 total) |
+| **CONFIRMED** | C1499 (shared substrate): behaviorally stable at terminal level across systems |
+| **CONFIRMED** | C1500 (bridge e/k/t enrichment): confirmed as B-specific execution emphasis |
+| **CONFIRMED** | C1388 (o-atom arrangement domain): confirmed via A-enriched bridge HEAD profile |
+| **CONFIRMED** | C1487 (three-tier terminal taxonomy): preserved across systems with tier JSD=0.005 |
+| **EXTENDED** | C1503 (bridge redistribution): quantified at all slot dimensions, not just frequency |
+| **EXTENDED** | C1347 (B reshapes bridge usage): quantified THERMAL +10.1pp, STAGING -11.1pp |
+| **EXTENDED** | C1409 (atom cross-position divergence): extended to cross-system dimension |
+
+---
+
 ## Version 5.27.140 (2026-03-06) - Phase 538: Cross-Layer Atom Decomposition
 
 ### Summary

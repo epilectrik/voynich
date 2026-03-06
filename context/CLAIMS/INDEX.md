@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1349 validated constraints | **Version:** 5.27 | **Date:** 2026-03-06
+**Total:** 1353 validated constraints | **Version:** 5.28 | **Date:** 2026-03-06
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5206,6 +5206,32 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T-h: JSD matrices. Bridge outlier in all three (HEAD, TERM, MOD). Non-bridge cluster tightly.
 - T-i: Compound depth. Bridge mean 2.27 atoms (simplest). Dark 3.33, a_exclusive 4.52, b_only 4.50.
 - T-j: Atom Jaccard similarity. Min pairwise 0.895. All channels share same 18-atom core.
+
+---
+
+### Bridge Atom Stability Across A and B (C1506-C1509) -- Phase: BRIDGE_ATOM_STABILITY (Phase 539)
+
+> **Summary:** Phase 539 tests whether the 85 bridge MIDDLEs preserve atom-role behavior across Currier A and Currier B. 11 tests (T1-T11) plus a 10-prediction scorecard. Each bridge MIDDLE decomposed via HEAD+MOD*+TERM into slot dimensions. Token collections from A (9,391) and B (19,998) compared at each slot dimension plus PREFIX/SUFFIX ecology, category profiles, and per-atom behavioral correlations. Verdict: PARTIAL_STABILITY -- internal structure preserved (mean JSD 0.046), deployment channels shifted (mean JSD 0.113). TERMINAL is the most stable slot (JSD=0.014), HEAD the least stable (JSD=0.077). Categories are INTRINSIC (100% match rate, same category for same MIDDLE in both systems) but token-weighted distribution shifts: THERMAL +10.1pp in B, STAGING -11.1pp in B. A is o-HEAD/HEADLESS dominant (arrangement); B is e/k-HEAD dominant (execution). Individual atoms partition into three behavioral stability tiers: 8 stable (r/s/t/l/a/m/o/g, corr>0.90), 6 moderate (k/c/p/i/e/n, corr 0.70-0.90), 3 unstable (y/h/d, corr<0.70). d is extreme outlier (corr=0.062). Predictions: 5/10 confirmed.
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1506 | Bridge terminal atom stability across A and B | 2 | GLOBAL, A->B, MIDDLE, atom, bridge, terminal, stability, cross-system | TERMINAL JSD=0.014, most stable slot. Tier JSD=0.005. y-terminal 1.54x B-enriched, h-terminal 0.54x. All 7 terminals shared. |
+| 1507 | Bridge HEAD redistribution A vs B | 2 | GLOBAL, A->B, MIDDLE, atom, bridge, HEAD, redistribution, arrangement, execution | A: HEADLESS 38.6%, o 28.1%. B: e 31.1%, k 14.2%. HEAD JSD=0.077, least stable internal slot. A-enriched vs B-enriched population HEAD JSD=0.591. |
+| 1508 | Bridge category redistribution A vs B | 2 | GLOBAL, A->B, MIDDLE, atom, bridge, category, redistribution, THERMAL, STAGING | 100% category match (intrinsic). Token-weighted shift: THERMAL +10.1pp B, STAGING -11.1pp B. Category JSD=0.037. e-HEAD most unstable per-HEAD (JSD=0.166). |
+| 1509 | Three-tier atom behavioral stability across A and B | 2 | GLOBAL, A->B, MIDDLE, atom, behavioral, stability, correlation, cross-system | 8 stable (corr>0.90: r/s/t/l/a/m/o/g), 6 moderate (0.70-0.90: k/c/p/i/e/n), 3 unstable (<0.70: y/h/d). d=0.062 extreme outlier. Mean=0.789. |
+
+**Phase 539 findings (Bridge Atom Stability, 11 analyses):**
+- T1: Frequency redistribution. All 85 bridges in both systems. 30 A-enriched, 52 B-enriched, 3 balanced. Extremes: hy 0.077x, edy 277x, k 6.2x.
+- T2: Slot stability ranking. TERMINAL 0.014 > CATEGORY 0.037 > MODIFIER 0.048 > HEAD 0.077. Internal mean 0.046 vs external mean 0.113 (2.4x ratio).
+- T3: HEAD redistribution. A: HEADLESS+o dominant (66.7%). B: e+k dominant (45.3%). HEAD JSD A-enriched vs B-enriched = 0.591.
+- T4: Category intrinsicness. 100% match rate (same MIDDLE same category in both systems). Token-weighted JSD=0.037. THERMAL +10.1pp, STAGING -11.1pp.
+- T5: Per-HEAD category stability. o-HEAD JSD=0.004 (most stable), e-HEAD JSD=0.166 (most unstable, driven by edy 277x B-enrichment).
+- T6: PREFIX ecology. JSD=0.072, cosine=0.919. All PREFIXes shared except pe (1 B-only token). More similar than expected.
+- T7: SUFFIX ecology. JSD=0.153. Driven by -edy 50x B-enrichment. Most divergent external dimension.
+- T8: Terminal tier preservation. Tier JSD=0.005. Three-tier taxonomy (LOCKED/CHANNELED/DIFFUSE) preserved across systems.
+- T9: Terminal atom detail. y-terminal 1.54x B-enriched, h-terminal 0.54x (A-enriched). m-terminal 0.69x, r-terminal 0.80x.
+- T10: Atom behavioral tiers. 8 stable, 6 moderate, 3 unstable. Structural atoms (r/s/t/l/a/m/o) system-invariant; operational atoms (k/e/h) and boundary atoms (d/y) system-sensitive.
+- T11: Cross-system top-category agreement. 10/17 atoms same top category in both systems. 7 mismatches in Tier 2-3 atoms.
 
 ---
 

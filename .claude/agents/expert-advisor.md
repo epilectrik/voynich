@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1349 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1353 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1505.
+the highest ID present is C1509.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1349 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1353 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1349 validated constraints are present as canonical one-line claims with tier
+1353 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-06 13:53
-**Version:** FROZEN STATE (1349 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-06 14:16
+**Version:** FROZEN STATE (1353 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1778,6 +1778,10 @@ C1502	AZC o-HEAD domain enrichment (2.70x)	2	AZC, MIDDLE, atom, o-HEAD, enrichme
 C1503	Bridge atom redistribution across A/B	2	GLOBAL, A->B, MIDDLE, atom, bridge, redistribution, suffix, PREFIX
 C1504	Modifier grammar universality across channels	2	GLOBAL, MIDDLE, atom, modifier, universality, cross-system
 C1505	Dark pipeline MARKING-dominant category profile	2	B, A->B, MIDDLE, atom, dark, pipeline, category, MARKING, bridge, balanced
+C1506	Bridge terminal atom stability across A and B	2	GLOBAL, A->B, MIDDLE, atom, bridge, terminal, stability, cross-system
+C1507	Bridge HEAD redistribution A vs B	2	GLOBAL, A->B, MIDDLE, atom, bridge, HEAD, redistribution, arrangement, execution
+C1508	Bridge category redistribution A vs B	2	GLOBAL, A->B, MIDDLE, atom, bridge, category, redistribution, THERMAL, STAGING
+C1509	Three-tier atom behavioral stability across A and B	2	GLOBAL, A->B, MIDDLE, atom, behavioral, stability, correlation, cross-system
 
 ---
 
@@ -4622,7 +4626,7 @@ Only Tier 0-2 structural findings are binding.
 ---
 
 ## BCSC (Currier B Structural Contract)
-**Meta:** v3.31, ACTIVE, 61.9% of tokens, 83 folios
+**Meta:** v3.32, ACTIVE, 61.9% of tokens, 83 folios
 
 ### Guarantees (35)
 - GRAMMAR_UNIVERSAL: 49-class grammar applies to all 83 folios without exception [C121, C124]
@@ -4700,7 +4704,7 @@ Only Tier 0-2 structural findings are binding.
 - safety_buffer_architecture: C997, C1000, C1009, C1018
 - axm_internal_architecture: C979, C1006, C1007, C1008, C1009, C1016, C1017, C1023
 - macro_state_transition_matrix: C1015
-- three_compression_architecture: C986, C1000, C1003, C1004, C1010, C1013, C1019, C1020, C1021, C1139, C1141, C1190, C1191, C1499, C1500, C1501, C1503, C1504, C1505
+- three_compression_architecture: C986, C1000, C1003, C1004, C1010, C1013, C1019, C1020, C1021, C1139, C1141, C1190, C1191, C1499, C1500, C1501, C1503, C1504, C1505, C1506, C1507, C1508, C1509
 - design_freedom: C121, C458, C929, C1016, C1017, C1018, C1163, C1165, C1169, C1179, C1180, C1181, C1182, C1183, C1184, C1185, C1186, C1187, C1188, C1189
 - control_loop: C807, C810, C811, C813, C814, C815, C816, C873, C1204, C1205, C1225, C1226, C1234, C1235, C1237, C1238
 - section_profiles: C551, C552, C553, C554, C555, C909, C1049, C1134

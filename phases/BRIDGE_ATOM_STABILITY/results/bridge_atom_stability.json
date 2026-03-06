@@ -1,0 +1,1952 @@
+{
+  "phase": 539,
+  "name": "BRIDGE_ATOM_STABILITY",
+  "question": "Do bridge MIDDLEs preserve atom-role behavior across A and B?",
+  "tests": {
+    "T1_frequency_redistribution": {
+      "n_bridge_in_both": 85,
+      "a_enriched_count": 30,
+      "balanced_count": 3,
+      "b_enriched_count": 52,
+      "top10_a_enriched": [
+        [
+          "hy",
+          {
+            "a_count": 104,
+            "b_count": 8,
+            "b_over_a": 0.07692307692307693,
+            "total": 112
+          }
+        ],
+        [
+          "okc",
+          {
+            "a_count": 24,
+            "b_count": 4,
+            "b_over_a": 0.16666666666666666,
+            "total": 28
+          }
+        ],
+        [
+          "h",
+          {
+            "a_count": 220,
+            "b_count": 48,
+            "b_over_a": 0.21818181818181817,
+            "total": 268
+          }
+        ],
+        [
+          "n",
+          {
+            "a_count": 25,
+            "b_count": 7,
+            "b_over_a": 0.28,
+            "total": 32
+          }
+        ],
+        [
+          "tc",
+          {
+            "a_count": 57,
+            "b_count": 16,
+            "b_over_a": 0.2807017543859649,
+            "total": 73
+          }
+        ],
+        [
+          "tcho",
+          {
+            "a_count": 13,
+            "b_count": 4,
+            "b_over_a": 0.3076923076923077,
+            "total": 17
+          }
+        ],
+        [
+          "oct",
+          {
+            "a_count": 33,
+            "b_count": 14,
+            "b_over_a": 0.42424242424242425,
+            "total": 47
+          }
+        ],
+        [
+          "cp",
+          {
+            "a_count": 20,
+            "b_count": 10,
+            "b_over_a": 0.5,
+            "total": 30
+          }
+        ],
+        [
+          "om",
+          {
+            "a_count": 50,
+            "b_count": 25,
+            "b_over_a": 0.5,
+            "total": 75
+          }
+        ],
+        [
+          "sh",
+          {
+            "a_count": 10,
+            "b_count": 5,
+            "b_over_a": 0.5,
+            "total": 15
+          }
+        ]
+      ],
+      "top10_b_enriched": [
+        [
+          "k",
+          {
+            "a_count": 338,
+            "b_count": 2083,
+            "b_over_a": 6.162721893491124,
+            "total": 2421
+          }
+        ],
+        [
+          "pch",
+          {
+            "a_count": 11,
+            "b_count": 79,
+            "b_over_a": 7.181818181818182,
+            "total": 90
+          }
+        ],
+        [
+          "ain",
+          {
+            "a_count": 47,
+            "b_count": 420,
+            "b_over_a": 8.936170212765957,
+            "total": 467
+          }
+        ],
+        [
+          "te",
+          {
+            "a_count": 5,
+            "b_count": 87,
+            "b_over_a": 17.4,
+            "total": 92
+          }
+        ],
+        [
+          "ke",
+          {
+            "a_count": 22,
+            "b_count": 421,
+            "b_over_a": 19.136363636363637,
+            "total": 443
+          }
+        ],
+        [
+          "ect",
+          {
+            "a_count": 2,
+            "b_count": 47,
+            "b_over_a": 23.5,
+            "total": 49
+          }
+        ],
+        [
+          "keed",
+          {
+            "a_count": 1,
+            "b_count": 30,
+            "b_over_a": 30.0,
+            "total": 31
+          }
+        ],
+        [
+          "eck",
+          {
+            "a_count": 2,
+            "b_count": 90,
+            "b_over_a": 45.0,
+            "total": 92
+          }
+        ],
+        [
+          "ed",
+          {
+            "a_count": 4,
+            "b_count": 401,
+            "b_over_a": 100.25,
+            "total": 405
+          }
+        ],
+        [
+          "edy",
+          {
+            "a_count": 7,
+            "b_count": 1938,
+            "b_over_a": 276.85714285714283,
+            "total": 1945
+          }
+        ]
+      ],
+      "decompositions": {
+        "a": {
+          "head": "a",
+          "mod": "NONE",
+          "term": "bare",
+          "frame": "a->bare"
+        },
+        "ai": {
+          "head": "a",
+          "mod": "i",
+          "term": "bare",
+          "frame": "a->bare"
+        },
+        "aii": {
+          "head": "a",
+          "mod": "ii",
+          "term": "bare",
+          "frame": "a->bare"
+        },
+        "aiin": {
+          "head": "a",
+          "mod": "ii",
+          "term": "n",
+          "frame": "a->n"
+        },
+        "ain": {
+          "head": "a",
+          "mod": "i",
+          "term": "n",
+          "frame": "a->n"
+        },
+        "al": {
+          "head": "a",
+          "mod": "NONE",
+          "term": "l",
+          "frame": "a->l"
+        },
+        "am": {
+          "head": "a",
+          "mod": "NONE",
+          "term": "m",
+          "frame": "a->m"
+        },
+        "an": {
+          "head": "a",
+          "mod": "NONE",
+          "term": "n",
+          "frame": "a->n"
+        },
+        "ar": {
+          "head": "a",
+          "mod": "NONE",
+          "term": "r",
+          "frame": "a->r"
+        },
+        "ck": {
+          "head": "HEADLESS",
+          "mod": "ck",
+          "term": "bare",
+          "frame": "c->bare"
+        },
+        "ckh": {
+          "head": "HEADLESS",
+          "mod": "ck",
+          "term": "h",
+          "frame": "c->h"
+        },
+        "cp": {
+          "head": "HEADLESS",
+          "mod": "cp",
+          "term": "bare",
+          "frame": "c->bare"
+        },
+        "cph": {
+          "head": "HEADLESS",
+          "mod": "cp",
+          "term": "h",
+          "frame": "c->h"
+        },
+        "ct": {
+          "head": "HEADLESS",
+          "mod": "ct",
+          "term": "bare",
+          "frame": "c->bare"
+        },
+        "d": {
+          "head": "HEADLESS",
+          "mod": "d",
+          "term": "bare",
+          "frame": "d->bare"
+        },
+        "do": {
+          "head": "HEADLESS",
+          "mod": "do",
+          "term": "bare",
+          "frame": "d->bare"
+        },
+        "dy": {
+          "head": "HEADLESS",
+          "mod": "d",
+          "term": "y",
+          "frame": "d->y"
+        },
+        "e": {
+          "head": "e",
+          "mod": "NONE",
+          "term": "bare",
+          "frame": "e->bare"
+        },
+        "eck": {
+          "head": "e",
+          "mod": "ck",
+          "term": "bare",
+          "frame": "e->bare"
+        },
+        "ect": {
+          "head": "e",
+          "mod": "ct",
+          "term": "bare",
+          "frame": "e->bare"
+        },
+        "ed": {
+          "head": "e",
+          "mod": "d",
+          "term": "bare",
+          "frame": "e->bare"
+        },
+        "edy": {
+          "head": "e",
+          "mod": "d",
+          "term": "y",
+          "frame": "e->y"
+        },
+        "ee": {
+          "head": "e",
+          "mod": "e",
+          "term": "bare",
+          "frame": "e->bare"
+        },
+        "eek": {
+          "head": "e",
+          "mod": "ek",
+          "term": "bare",
+          "frame": "e->bare"
+        },
+        "eeo": {
+          "head": "e",
+          "mod": "eo",
+          "term": "bare",
+          "frame": "e->bare"
+        },
+        "eeol": {
+          "head": "e",
+          "mod": "eo",
+          "term": "l",
+          "frame": "e->l"
+        },
+        "eey": {
+          "head": "e",
+          "mod": "e",
+          "term": "y",
+          "frame": "e->y"
+        },
+        "ek": {
+          "head": "e",
+          "mod": "k",
+          "term": "bare",
+          "frame": "e->bare"
+        },
+        "eo": {
+          "head": "e",
+          "mod": "o",
+          "term": "bare",
+          "frame": "e->bare"
+        },
+        "eod": {
+          "head": "e",
+          "mod": "od",
+          "term": "bare",
+          "frame": "e->bare"
+        },
+        "eol": {
+          "head": "e",
+          "mod": "o",
+          "term": "l",
+          "frame": "e->l"
+        },
+        "et": {
+          "head": "e",
+          "mod": "t",
+          "term": "bare",
+          "frame": "e->bare"
+        },
+        "ey": {
+          "head": "e",
+          "mod": "NONE",
+          "term": "y",
+          "frame": "e->y"
+        },
+        "g": {
+          "head": "HEADLESS",
+          "mod": "g",
+          "term": "bare",
+          "frame": "g->bare"
+        },
+        "h": {
+          "head": "HEADLESS",
+          "mod": "NONE",
+          "term": "h",
+          "frame": "h->h"
+        },
+        "hy": {
+          "head": "HEADLESS",
+          "mod": "h",
+          "term": "y",
+          "frame": "h->y"
+        },
+        "i": {
+          "head": "HEADLESS",
+          "mod": "i",
+          "term": "bare",
+          "frame": "i->bare"
+        },
+        "ii": {
+          "head": "HEADLESS",
+          "mod": "ii",
+          "term": "bare",
+          "frame": "i->bare"
+        },
+        "iin": {
+          "head": "HEADLESS",
+          "mod": "ii",
+          "term": "n",
+          "frame": "i->n"
+        },
+        "im": {
+          "head": "HEADLESS",
+          "mod": "i",
+          "term": "m",
+          "frame": "i->m"
+        },
+        "in": {
+          "head": "HEADLESS",
+          "mod": "i",
+          "term": "n",
+          "frame": "i->n"
+        },
+        "k": {
+          "head": "k",
+          "mod": "NONE",
+          "term": "bare",
+          "frame": "k->bare"
+        },
+        "ka": {
+          "head": "k",
+          "mod": "a",
+          "term": "bare",
+          "frame": "k->bare"
+        },
+        "kai": {
+          "head": "k",
+          "mod": "ai",
+          "term": "bare",
+          "frame": "k->bare"
+        },
+        "kc": {
+          "head": "k",
+          "mod": "c",
+          "term": "bare",
+          "frame": "k->bare"
+        },
+        "kch": {
+          "head": "k",
+          "mod": "c",
+          "term": "h",
+          "frame": "k->h"
+        },
+        "ke": {
+          "head": "k",
+          "mod": "e",
+          "term": "bare",
+          "frame": "k->bare"
+        },
+        "kec": {
+          "head": "k",
+          "mod": "ec",
+          "term": "bare",
+          "frame": "k->bare"
+        },
+        "keed": {
+          "head": "k",
+          "mod": "eed",
+          "term": "bare",
+          "frame": "k->bare"
+        },
+        "keeo": {
+          "head": "k",
+          "mod": "eeo",
+          "term": "bare",
+          "frame": "k->bare"
+        },
+        "keo": {
+          "head": "k",
+          "mod": "eo",
+          "term": "bare",
+          "frame": "k->bare"
+        },
+        "l": {
+          "head": "HEADLESS",
+          "mod": "NONE",
+          "term": "l",
+          "frame": "l->l"
+        },
+        "lo": {
+          "head": "HEADLESS",
+          "mod": "lo",
+          "term": "bare",
+          "frame": "l->bare"
+        },
+        "ly": {
+          "head": "HEADLESS",
+          "mod": "l",
+          "term": "y",
+          "frame": "l->y"
+        },
+        "m": {
+          "head": "HEADLESS",
+          "mod": "NONE",
+          "term": "m",
+          "frame": "m->m"
+        },
+        "n": {
+          "head": "HEADLESS",
+          "mod": "NONE",
+          "term": "n",
+          "frame": "n->n"
+        },
+        "o": {
+          "head": "o",
+          "mod": "NONE",
+          "term": "bare",
+          "frame": "o->bare"
+        },
+        "ock": {
+          "head": "o",
+          "mod": "ck",
+          "term": "bare",
+          "frame": "o->bare"
+        },
+        "oct": {
+          "head": "o",
+          "mod": "ct",
+          "term": "bare",
+          "frame": "o->bare"
+        },
+        "od": {
+          "head": "o",
+          "mod": "d",
+          "term": "bare",
+          "frame": "o->bare"
+        },
+        "oiin": {
+          "head": "o",
+          "mod": "ii",
+          "term": "n",
+          "frame": "o->n"
+        },
+        "ok": {
+          "head": "o",
+          "mod": "k",
+          "term": "bare",
+          "frame": "o->bare"
+        },
+        "okc": {
+          "head": "o",
+          "mod": "kc",
+          "term": "bare",
+          "frame": "o->bare"
+        },
+        "ol": {
+          "head": "o",
+          "mod": "NONE",
+          "term": "l",
+          "frame": "o->l"
+        },
+        "om": {
+          "head": "o",
+          "mod": "NONE",
+          "term": "m",
+          "frame": "o->m"
+        },
+        "op": {
+          "head": "o",
+          "mod": "p",
+          "term": "bare",
+          "frame": "o->bare"
+        },
+        "opc": {
+          "head": "o",
+          "mod": "pc",
+          "term": "bare",
+          "frame": "o->bare"
+        },
+        "opch": {
+          "head": "o",
+          "mod": "pc",
+          "term": "h",
+          "frame": "o->h"
+        },
+        "or": {
+          "head": "o",
+          "mod": "NONE",
+          "term": "r",
+          "frame": "o->r"
+        },
+        "ot": {
+          "head": "o",
+          "mod": "t",
+          "term": "bare",
+          "frame": "o->bare"
+        },
+        "pc": {
+          "head": "HEADLESS",
+          "mod": "pc",
+          "term": "bare",
+          "frame": "p->bare"
+        },
+        "pch": {
+          "head": "HEADLESS",
+          "mod": "pc",
+          "term": "h",
+          "frame": "p->h"
+        },
+        "qo": {
+          "head": "HEADLESS",
+          "mod": "qo",
+          "term": "bare",
+          "frame": "q->bare"
+        },
+        "r": {
+          "head": "HEADLESS",
+          "mod": "NONE",
+          "term": "r",
+          "frame": "r->r"
+        },
+        "ry": {
+          "head": "HEADLESS",
+          "mod": "r",
+          "term": "y",
+          "frame": "r->y"
+        },
+        "s": {
+          "head": "HEADLESS",
+          "mod": "s",
+          "term": "bare",
+          "frame": "s->bare"
+        },
+        "sh": {
+          "head": "HEADLESS",
+          "mod": "s",
+          "term": "h",
+          "frame": "s->h"
+        },
+        "t": {
+          "head": "t",
+          "mod": "NONE",
+          "term": "bare",
+          "frame": "t->bare"
+        },
+        "tc": {
+          "head": "t",
+          "mod": "c",
+          "term": "bare",
+          "frame": "t->bare"
+        },
+        "tch": {
+          "head": "t",
+          "mod": "c",
+          "term": "h",
+          "frame": "t->h"
+        },
+        "tcho": {
+          "head": "t",
+          "mod": "cho",
+          "term": "bare",
+          "frame": "t->bare"
+        },
+        "te": {
+          "head": "t",
+          "mod": "e",
+          "term": "bare",
+          "frame": "t->bare"
+        },
+        "teo": {
+          "head": "t",
+          "mod": "eo",
+          "term": "bare",
+          "frame": "t->bare"
+        },
+        "y": {
+          "head": "HEADLESS",
+          "mod": "NONE",
+          "term": "y",
+          "frame": "y->y"
+        },
+        "yt": {
+          "head": "HEADLESS",
+          "mod": "yt",
+          "term": "bare",
+          "frame": "y->bare"
+        }
+      },
+      "freq_ratios": {
+        "a": {
+          "a_count": 44,
+          "b_count": 64,
+          "b_over_a": 1.4545,
+          "total": 108
+        },
+        "ai": {
+          "a_count": 32,
+          "b_count": 174,
+          "b_over_a": 5.4375,
+          "total": 206
+        },
+        "aii": {
+          "a_count": 14,
+          "b_count": 32,
+          "b_over_a": 2.2857,
+          "total": 46
+        },
+        "aiin": {
+          "a_count": 271,
+          "b_count": 834,
+          "b_over_a": 3.0775,
+          "total": 1105
+        },
+        "ain": {
+          "a_count": 47,
+          "b_count": 420,
+          "b_over_a": 8.9362,
+          "total": 467
+        },
+        "al": {
+          "a_count": 143,
+          "b_count": 521,
+          "b_over_a": 3.6434,
+          "total": 664
+        },
+        "am": {
+          "a_count": 56,
+          "b_count": 174,
+          "b_over_a": 3.1071,
+          "total": 230
+        },
+        "an": {
+          "a_count": 22,
+          "b_count": 18,
+          "b_over_a": 0.8182,
+          "total": 40
+        },
+        "ar": {
+          "a_count": 161,
+          "b_count": 677,
+          "b_over_a": 4.205,
+          "total": 838
+        },
+        "ck": {
+          "a_count": 81,
+          "b_count": 197,
+          "b_over_a": 2.4321,
+          "total": 278
+        },
+        "ckh": {
+          "a_count": 127,
+          "b_count": 127,
+          "b_over_a": 1.0,
+          "total": 254
+        },
+        "cp": {
+          "a_count": 20,
+          "b_count": 10,
+          "b_over_a": 0.5,
+          "total": 30
+        },
+        "cph": {
+          "a_count": 41,
+          "b_count": 36,
+          "b_over_a": 0.878,
+          "total": 77
+        },
+        "ct": {
+          "a_count": 35,
+          "b_count": 95,
+          "b_over_a": 2.7143,
+          "total": 130
+        },
+        "d": {
+          "a_count": 152,
+          "b_count": 337,
+          "b_over_a": 2.2171,
+          "total": 489
+        },
+        "do": {
+          "a_count": 14,
+          "b_count": 10,
+          "b_over_a": 0.7143,
+          "total": 24
+        },
+        "dy": {
+          "a_count": 183,
+          "b_count": 675,
+          "b_over_a": 3.6885,
+          "total": 858
+        },
+        "e": {
+          "a_count": 310,
+          "b_count": 867,
+          "b_over_a": 2.7968,
+          "total": 1177
+        },
+        "eck": {
+          "a_count": 2,
+          "b_count": 90,
+          "b_over_a": 45.0,
+          "total": 92
+        },
+        "ect": {
+          "a_count": 2,
+          "b_count": 47,
+          "b_over_a": 23.5,
+          "total": 49
+        },
+        "ed": {
+          "a_count": 4,
+          "b_count": 401,
+          "b_over_a": 100.25,
+          "total": 405
+        },
+        "edy": {
+          "a_count": 7,
+          "b_count": 1938,
+          "b_over_a": 276.8571,
+          "total": 1945
+        },
+        "ee": {
+          "a_count": 71,
+          "b_count": 151,
+          "b_over_a": 2.1268,
+          "total": 222
+        },
+        "eek": {
+          "a_count": 10,
+          "b_count": 54,
+          "b_over_a": 5.4,
+          "total": 64
+        },
+        "eeo": {
+          "a_count": 26,
+          "b_count": 133,
+          "b_over_a": 5.1154,
+          "total": 159
+        },
+        "eeol": {
+          "a_count": 34,
+          "b_count": 47,
+          "b_over_a": 1.3824,
+          "total": 81
+        },
+        "eey": {
+          "a_count": 204,
+          "b_count": 644,
+          "b_over_a": 3.1569,
+          "total": 848
+        },
+        "ek": {
+          "a_count": 41,
+          "b_count": 169,
+          "b_over_a": 4.122,
+          "total": 210
+        },
+        "eo": {
+          "a_count": 216,
+          "b_count": 359,
+          "b_over_a": 1.662,
+          "total": 575
+        },
+        "eod": {
+          "a_count": 51,
+          "b_count": 82,
+          "b_over_a": 1.6078,
+          "total": 133
+        },
+        "eol": {
+          "a_count": 224,
+          "b_count": 294,
+          "b_over_a": 1.3125,
+          "total": 518
+        },
+        "et": {
+          "a_count": 19,
+          "b_count": 58,
+          "b_over_a": 3.0526,
+          "total": 77
+        },
+        "ey": {
+          "a_count": 309,
+          "b_count": 889,
+          "b_over_a": 2.877,
+          "total": 1198
+        },
+        "g": {
+          "a_count": 11,
+          "b_count": 8,
+          "b_over_a": 0.7273,
+          "total": 19
+        },
+        "h": {
+          "a_count": 220,
+          "b_count": 48,
+          "b_over_a": 0.2182,
+          "total": 268
+        },
+        "hy": {
+          "a_count": 104,
+          "b_count": 8,
+          "b_over_a": 0.0769,
+          "total": 112
+        },
+        "i": {
+          "a_count": 82,
+          "b_count": 137,
+          "b_over_a": 1.6707,
+          "total": 219
+        },
+        "ii": {
+          "a_count": 24,
+          "b_count": 23,
+          "b_over_a": 0.9583,
+          "total": 47
+        },
+        "iin": {
+          "a_count": 654,
+          "b_count": 560,
+          "b_over_a": 0.8563,
+          "total": 1214
+        },
+        "im": {
+          "a_count": 8,
+          "b_count": 8,
+          "b_over_a": 1.0,
+          "total": 16
+        },
+        "in": {
+          "a_count": 115,
+          "b_count": 264,
+          "b_over_a": 2.2957,
+          "total": 379
+        },
+        "k": {
+          "a_count": 338,
+          "b_count": 2083,
+          "b_over_a": 6.1627,
+          "total": 2421
+        },
+        "ka": {
+          "a_count": 12,
+          "b_count": 25,
+          "b_over_a": 2.0833,
+          "total": 37
+        },
+        "kai": {
+          "a_count": 6,
+          "b_count": 24,
+          "b_over_a": 4.0,
+          "total": 30
+        },
+        "kc": {
+          "a_count": 47,
+          "b_count": 33,
+          "b_over_a": 0.7021,
+          "total": 80
+        },
+        "kch": {
+          "a_count": 45,
+          "b_count": 148,
+          "b_over_a": 3.2889,
+          "total": 193
+        },
+        "ke": {
+          "a_count": 22,
+          "b_count": 421,
+          "b_over_a": 19.1364,
+          "total": 443
+        },
+        "kec": {
+          "a_count": 3,
+          "b_count": 12,
+          "b_over_a": 4.0,
+          "total": 15
+        },
+        "keed": {
+          "a_count": 1,
+          "b_count": 30,
+          "b_over_a": 30.0,
+          "total": 31
+        },
+        "keeo": {
+          "a_count": 16,
+          "b_count": 38,
+          "b_over_a": 2.375,
+          "total": 54
+        },
+        "keo": {
+          "a_count": 26,
+          "b_count": 26,
+          "b_over_a": 1.0,
+          "total": 52
+        },
+        "l": {
+          "a_count": 355,
+          "b_count": 855,
+          "b_over_a": 2.4085,
+          "total": 1210
+        },
+        "lo": {
+          "a_count": 10,
+          "b_count": 33,
+          "b_over_a": 3.3,
+          "total": 43
+        },
+        "ly": {
+          "a_count": 17,
+          "b_count": 49,
+          "b_over_a": 2.8824,
+          "total": 66
+        },
+        "m": {
+          "a_count": 79,
+          "b_count": 76,
+          "b_over_a": 0.962,
+          "total": 155
+        },
+        "n": {
+          "a_count": 25,
+          "b_count": 7,
+          "b_over_a": 0.28,
+          "total": 32
+        },
+        "o": {
+          "a_count": 602,
+          "b_count": 388,
+          "b_over_a": 0.6445,
+          "total": 990
+        },
+        "ock": {
+          "a_count": 24,
+          "b_count": 13,
+          "b_over_a": 0.5417,
+          "total": 37
+        },
+        "oct": {
+          "a_count": 33,
+          "b_count": 14,
+          "b_over_a": 0.4242,
+          "total": 47
+        },
+        "od": {
+          "a_count": 198,
+          "b_count": 177,
+          "b_over_a": 0.8939,
+          "total": 375
+        },
+        "oiin": {
+          "a_count": 50,
+          "b_count": 32,
+          "b_over_a": 0.64,
+          "total": 82
+        },
+        "ok": {
+          "a_count": 99,
+          "b_count": 70,
+          "b_over_a": 0.7071,
+          "total": 169
+        },
+        "okc": {
+          "a_count": 24,
+          "b_count": 4,
+          "b_over_a": 0.1667,
+          "total": 28
+        },
+        "ol": {
+          "a_count": 831,
+          "b_count": 762,
+          "b_over_a": 0.917,
+          "total": 1593
+        },
+        "om": {
+          "a_count": 50,
+          "b_count": 25,
+          "b_over_a": 0.5,
+          "total": 75
+        },
+        "op": {
+          "a_count": 22,
+          "b_count": 36,
+          "b_over_a": 1.6364,
+          "total": 58
+        },
+        "opc": {
+          "a_count": 11,
+          "b_count": 9,
+          "b_over_a": 0.8182,
+          "total": 20
+        },
+        "opch": {
+          "a_count": 25,
+          "b_count": 107,
+          "b_over_a": 4.28,
+          "total": 132
+        },
+        "or": {
+          "a_count": 596,
+          "b_count": 446,
+          "b_over_a": 0.7483,
+          "total": 1042
+        },
+        "ot": {
+          "a_count": 76,
+          "b_count": 46,
+          "b_over_a": 0.6053,
+          "total": 122
+        },
+        "pc": {
+          "a_count": 5,
+          "b_count": 10,
+          "b_over_a": 2.0,
+          "total": 15
+        },
+        "pch": {
+          "a_count": 11,
+          "b_count": 79,
+          "b_over_a": 7.1818,
+          "total": 90
+        },
+        "qo": {
+          "a_count": 11,
+          "b_count": 18,
+          "b_over_a": 1.6364,
+          "total": 29
+        },
+        "r": {
+          "a_count": 342,
+          "b_count": 749,
+          "b_over_a": 2.1901,
+          "total": 1091
+        },
+        "ry": {
+          "a_count": 22,
+          "b_count": 33,
+          "b_over_a": 1.5,
+          "total": 55
+        },
+        "s": {
+          "a_count": 243,
+          "b_count": 144,
+          "b_over_a": 0.5926,
+          "total": 387
+        },
+        "sh": {
+          "a_count": 10,
+          "b_count": 5,
+          "b_over_a": 0.5,
+          "total": 15
+        },
+        "t": {
+          "a_count": 156,
+          "b_count": 576,
+          "b_over_a": 3.6923,
+          "total": 732
+        },
+        "tc": {
+          "a_count": 57,
+          "b_count": 16,
+          "b_over_a": 0.2807,
+          "total": 73
+        },
+        "tch": {
+          "a_count": 53,
+          "b_count": 65,
+          "b_over_a": 1.2264,
+          "total": 118
+        },
+        "tcho": {
+          "a_count": 13,
+          "b_count": 4,
+          "b_over_a": 0.3077,
+          "total": 17
+        },
+        "te": {
+          "a_count": 5,
+          "b_count": 87,
+          "b_over_a": 17.4,
+          "total": 92
+        },
+        "teo": {
+          "a_count": 5,
+          "b_count": 18,
+          "b_over_a": 3.6,
+          "total": 23
+        },
+        "y": {
+          "a_count": 605,
+          "b_count": 513,
+          "b_over_a": 0.8479,
+          "total": 1118
+        },
+        "yt": {
+          "a_count": 19,
+          "b_count": 12,
+          "b_over_a": 0.6316,
+          "total": 31
+        }
+      }
+    },
+    "T2_head_stability": {
+      "a_head_dist": {
+        "e": 1530,
+        "k": 516,
+        "a": 790,
+        "HEADLESS": 3625,
+        "t": 289,
+        "o": 2641
+      },
+      "b_head_dist": {
+        "e": 6223,
+        "k": 2840,
+        "a": 2914,
+        "HEADLESS": 5126,
+        "t": 766,
+        "o": 2129
+      },
+      "jsd_token_weighted": 0.0767,
+      "cosine": 0.8369,
+      "jsd_type_weighted": 0.0,
+      "p1_pass": false
+    },
+    "T3_terminal_stability": {
+      "a_term_dist": {
+        "bare": 3345,
+        "h": 532,
+        "n": 1184,
+        "r": 1099,
+        "y": 1451,
+        "l": 1587,
+        "m": 193
+      },
+      "b_term_dist": {
+        "bare": 7865,
+        "h": 615,
+        "n": 2135,
+        "r": 1872,
+        "y": 4749,
+        "l": 2479,
+        "m": 283
+      },
+      "jsd_token_weighted": 0.0143,
+      "cosine": 0.977,
+      "p2_pass": true
+    },
+    "T4_modifier_stability": {
+      "a_mod_dist": {
+        "t": 95,
+        "c": 202,
+        "ii": 1013,
+        "NONE": 5244,
+        "pc": 52,
+        "cp": 61,
+        "ct": 70,
+        "p": 22,
+        "r": 22,
+        "eo": 91,
+        "ck": 234,
+        "s": 253,
+        "cho": 13,
+        "qo": 11,
+        "d": 544,
+        "do": 14,
+        "yt": 19,
+        "k": 140,
+        "i": 284,
+        "ec": 3,
+        "ai": 6,
+        "o": 440,
+        "e": 302,
+        "od": 51,
+        "ek": 10,
+        "kc": 24,
+        "h": 104,
+        "eeo": 16,
+        "eed": 1,
+        "lo": 10,
+        "g": 11,
+        "l": 17,
+        "a": 12
+      },
+      "b_mod_dist": {
+        "t": 104,
+        "c": 262,
+        "ii": 1481,
+        "NONE": 9738,
+        "pc": 205,
+        "cp": 46,
+        "ct": 156,
+        "p": 36,
+        "r": 33,
+        "eo": 224,
+        "ck": 427,
+        "s": 149,
+        "cho": 4,
+        "qo": 18,
+        "d": 3528,
+        "do": 10,
+        "yt": 12,
+        "k": 239,
+        "i": 1003,
+        "ec": 12,
+        "ai": 24,
+        "o": 653,
+        "e": 1303,
+        "od": 82,
+        "ek": 54,
+        "kc": 4,
+        "h": 8,
+        "eeo": 38,
+        "eed": 30,
+        "lo": 33,
+        "g": 8,
+        "l": 49,
+        "a": 25
+      },
+      "jsd_token_weighted": 0.048,
+      "cosine": 0.9665,
+      "p3_pass": false
+    },
+    "T5_category_stability": {
+      "category_match_rate": 1.0,
+      "a_cat_dist": {
+        "STAGING": 2288,
+        "THERMAL": 1263,
+        "TRANSITION": 1796,
+        "FLOW": 1582,
+        "MARKING": 376,
+        "MONITORING": 488,
+        "CONTAINMENT": 490,
+        "OPERATION": 885
+      },
+      "b_cat_dist": {
+        "STAGING": 2641,
+        "THERMAL": 4692,
+        "TRANSITION": 3357,
+        "FLOW": 3971,
+        "MARKING": 736,
+        "MONITORING": 285,
+        "CONTAINMENT": 1067,
+        "OPERATION": 3022
+      },
+      "category_jsd": 0.0372,
+      "category_cosine": 0.9125,
+      "head_cat_jsds": {
+        "HEADLESS": 0.0375,
+        "a": 0.0126,
+        "e": 0.1657,
+        "k": 0.045,
+        "o": 0.0042,
+        "t": 0.0154
+      },
+      "mean_head_cat_jsd": 0.0467
+    },
+    "T6_prefix_ecology": {
+      "a_pfx_dist": {
+        "ch": 1850,
+        "BARE": 1366,
+        "ko": 92,
+        "qo": 852,
+        "sh": 1028,
+        "so": 117,
+        "yk": 209,
+        "ot": 423,
+        "dch": 141,
+        "pch": 66,
+        "tch": 163,
+        "ok": 557,
+        "or": 47,
+        "do": 177,
+        "to": 115,
+        "ol": 163,
+        "kch": 126,
+        "po": 24,
+        "de": 17,
+        "sch": 35,
+        "lch": 12,
+        "te": 62,
+        "al": 30,
+        "sa": 116,
+        "ke": 90,
+        "da": 1011,
+        "ka": 36,
+        "ta": 68,
+        "se": 7,
+        "ar": 16,
+        "lk": 4,
+        "ct": 339,
+        "fch": 19,
+        "rch": 9,
+        "lsh": 4
+      },
+      "b_pfx_dist": {
+        "BARE": 3010,
+        "ch": 2992,
+        "sh": 2065,
+        "lsh": 107,
+        "sch": 23,
+        "qo": 3493,
+        "kch": 93,
+        "ol": 790,
+        "so": 134,
+        "al": 161,
+        "ot": 1345,
+        "or": 158,
+        "ok": 1362,
+        "yk": 274,
+        "ar": 123,
+        "lk": 401,
+        "to": 86,
+        "do": 105,
+        "se": 8,
+        "lch": 303,
+        "tch": 158,
+        "po": 77,
+        "te": 272,
+        "da": 993,
+        "rch": 39,
+        "pch": 204,
+        "sa": 305,
+        "ka": 216,
+        "ko": 32,
+        "ta": 224,
+        "de": 16,
+        "fch": 50,
+        "ke": 234,
+        "dch": 93,
+        "ct": 51,
+        "pe": 1
+      },
+      "jsd": 0.072,
+      "cosine": 0.9192,
+      "a_only_prefixes": [],
+      "b_only_prefixes": [
+        "pe"
+      ],
+      "shared_prefixes": [
+        "BARE",
+        "al",
+        "ar",
+        "ch",
+        "ct",
+        "da",
+        "dch",
+        "de",
+        "do",
+        "fch",
+        "ka",
+        "kch",
+        "ke",
+        "ko",
+        "lch",
+        "lk",
+        "lsh",
+        "ok",
+        "ol",
+        "or",
+        "ot",
+        "pch",
+        "po",
+        "qo",
+        "rch",
+        "sa",
+        "sch",
+        "se",
+        "sh",
+        "so",
+        "ta",
+        "tch",
+        "te",
+        "to",
+        "yk"
+      ],
+      "p5_pass": false
+    },
+    "T7_suffix_ecology": {
+      "a_suffix_rate": 35.9493,
+      "b_suffix_rate": 42.2642,
+      "a_sfx_atoms": {
+        "y": 317,
+        "aiin": 325,
+        "ar": 175,
+        "an": 16,
+        "am": 50,
+        "al": 117,
+        "eey": 127,
+        "or": 381,
+        "ey": 168,
+        "ol": 278,
+        "s": 190,
+        "on": 1,
+        "ain": 62,
+        "edy": 13,
+        "eol": 77,
+        "iin": 26,
+        "dy": 370,
+        "hy": 339,
+        "eeol": 11,
+        "oiin": 24,
+        "om": 48,
+        "l": 15,
+        "g": 14,
+        "n": 1,
+        "r": 107,
+        "ry": 34,
+        "ly": 69,
+        "en": 7,
+        "er": 1,
+        "em": 1,
+        "im": 9,
+        "m": 3
+      },
+      "b_sfx_atoms": {
+        "edy": 1601,
+        "ey": 292,
+        "ar": 650,
+        "y": 481,
+        "s": 277,
+        "ain": 633,
+        "am": 167,
+        "dy": 704,
+        "aiin": 773,
+        "eey": 503,
+        "ol": 235,
+        "al": 550,
+        "or": 327,
+        "iin": 77,
+        "hy": 559,
+        "eol": 37,
+        "an": 18,
+        "oiin": 15,
+        "l": 73,
+        "eeol": 10,
+        "om": 25,
+        "r": 289,
+        "ly": 66,
+        "m": 6,
+        "g": 14,
+        "er": 7,
+        "en": 2,
+        "el": 3,
+        "ry": 35,
+        "ool": 2,
+        "oin": 3,
+        "im": 16,
+        "eiin": 1,
+        "em": 1
+      },
+      "suffix_atom_jsd": 0.1532,
+      "p6_pass": true
+    },
+    "T8_redistribution": {
+      "a_enriched_head": {
+        "a": 40,
+        "HEADLESS": 3529,
+        "k": 80,
+        "o": 4580,
+        "t": 90
+      },
+      "b_enriched_head": {
+        "a": 3664,
+        "HEADLESS": 4952,
+        "e": 7753,
+        "k": 3224,
+        "o": 190,
+        "t": 965
+      },
+      "head_jsd": 0.5913,
+      "a_enriched_term": {
+        "n": 1368,
+        "bare": 2496,
+        "h": 360,
+        "y": 1230,
+        "m": 230,
+        "l": 1593,
+        "r": 1042
+      },
+      "b_enriched_term": {
+        "bare": 8662,
+        "n": 1951,
+        "l": 2473,
+        "m": 230,
+        "r": 1929,
+        "y": 4970,
+        "h": 533
+      },
+      "term_jsd": 0.034,
+      "a_enriched_cat": {
+        "CONTAINMENT": 289,
+        "MARKING": 139,
+        "MONITORING": 594,
+        "TRANSITION": 1324,
+        "STAGING": 3323,
+        "OPERATION": 1065,
+        "FLOW": 1210
+      },
+      "b_enriched_cat": {
+        "TRANSITION": 3777,
+        "FLOW": 4343,
+        "OPERATION": 2842,
+        "MONITORING": 179,
+        "MARKING": 973,
+        "CONTAINMENT": 1014,
+        "THERMAL": 5955,
+        "STAGING": 1590
+      },
+      "cat_jsd": 0.2684,
+      "p7_pass": true
+    },
+    "T9_atom_behavioral_correlation": {
+      "atom_profiles": {
+        "a": {
+          "correlation": 0.9729,
+          "jsd": 0.0131,
+          "a_top": [
+            "TRANSITION",
+            403
+          ],
+          "b_top": [
+            "FLOW",
+            1618
+          ],
+          "a_count": 794,
+          "b_count": 2931
+        },
+        "c": {
+          "correlation": 0.8047,
+          "jsd": 0.052,
+          "a_top": [
+            "CONTAINMENT",
+            176
+          ],
+          "b_top": [
+            "OPERATION",
+            369
+          ],
+          "a_count": 659,
+          "b_count": 1116
+        },
+        "d": {
+          "correlation": 0.0619,
+          "jsd": 0.4046,
+          "a_top": [
+            "CONTAINMENT",
+            183
+          ],
+          "b_top": [
+            "OPERATION",
+            1938
+          ],
+          "a_count": 412,
+          "b_count": 3473
+        },
+        "e": {
+          "correlation": 0.72,
+          "jsd": 0.1466,
+          "a_top": [
+            "THERMAL",
+            868
+          ],
+          "b_top": [
+            "THERMAL",
+            2436
+          ],
+          "a_count": 1608,
+          "b_count": 6855
+        },
+        "g": {
+          "correlation": 1.0,
+          "jsd": 0.0,
+          "a_top": [
+            "TRANSITION",
+            11
+          ],
+          "b_top": [
+            "TRANSITION",
+            8
+          ],
+          "a_count": 11,
+          "b_count": 8
+        },
+        "h": {
+          "correlation": 0.3652,
+          "jsd": 0.1875,
+          "a_top": [
+            "MONITORING",
+            375
+          ],
+          "b_top": [
+            "OPERATION",
+            172
+          ],
+          "a_count": 649,
+          "b_count": 627
+        },
+        "i": {
+          "correlation": 0.7518,
+          "jsd": 0.0911,
+          "a_top": [
+            "STAGING",
+            824
+          ],
+          "b_top": [
+            "TRANSITION",
+            1008
+          ],
+          "a_count": 1289,
+          "b_count": 2476
+        },
+        "k": {
+          "correlation": 0.8708,
+          "jsd": 0.0902,
+          "a_top": [
+            "THERMAL",
+            420
+          ],
+          "b_top": [
+            "THERMAL",
+            2689
+          ],
+          "a_count": 924,
+          "b_count": 3564
+        },
+        "l": {
+          "correlation": 0.9789,
+          "jsd": 0.0222,
+          "a_top": [
+            "STAGING",
+            1186
+          ],
+          "b_top": [
+            "STAGING",
+            1617
+          ],
+          "a_count": 1614,
+          "b_count": 2561
+        },
+        "m": {
+          "correlation": 0.964,
+          "jsd": 0.0402,
+          "a_top": [
+            "TRANSITION",
+            135
+          ],
+          "b_top": [
+            "TRANSITION",
+            250
+          ],
+          "a_count": 193,
+          "b_count": 283
+        },
+        "n": {
+          "correlation": 0.7173,
+          "jsd": 0.0979,
+          "a_top": [
+            "STAGING",
+            704
+          ],
+          "b_top": [
+            "TRANSITION",
+            841
+          ],
+          "a_count": 1184,
+          "b_count": 2135
+        },
+        "o": {
+          "correlation": 0.9377,
+          "jsd": 0.0138,
+          "a_top": [
+            "STAGING",
+            897
+          ],
+          "b_top": [
+            "STAGING",
+            832
+          ],
+          "a_count": 3078,
+          "b_count": 2996
+        },
+        "p": {
+          "correlation": 0.7994,
+          "jsd": 0.0529,
+          "a_top": [
+            "MARKING",
+            47
+          ],
+          "b_top": [
+            "MARKING",
+            108
+          ],
+          "a_count": 135,
+          "b_count": 287
+        },
+        "r": {
+          "correlation": 1.0,
+          "jsd": 0.0001,
+          "a_top": [
+            "FLOW",
+            1099
+          ],
+          "b_top": [
+            "FLOW",
+            1872
+          ],
+          "a_count": 1121,
+          "b_count": 1905
+        },
+        "s": {
+          "correlation": 1.0,
+          "jsd": 0.0002,
+          "a_top": [
+            "STAGING",
+            243
+          ],
+          "b_top": [
+            "STAGING",
+            144
+          ],
+          "a_count": 253,
+          "b_count": 149
+        },
+        "t": {
+          "correlation": 0.9875,
+          "jsd": 0.0112,
+          "a_top": [
+            "FLOW",
+            288
+          ],
+          "b_top": [
+            "FLOW",
+            727
+          ],
+          "a_count": 473,
+          "b_count": 1038
+        },
+        "y": {
+          "correlation": 0.4755,
+          "jsd": 0.2643,
+          "a_top": [
+            "TRANSITION",
+            953
+          ],
+          "b_top": [
+            "OPERATION",
+            1938
+          ],
+          "a_count": 1470,
+          "b_count": 4761
+        }
+      },
+      "mean_correlation": 0.7887,
+      "min_correlation": 0.0619,
+      "mean_jsd": 0.0875,
+      "top_category_matches": 10,
+      "total_atoms": 17,
+      "p8_pass": false
+    },
+    "T10_register_test": {
+      "a_tier_dist": {
+        "BARE_TERM": 3345,
+        "DIFFUSE": 532,
+        "CHANNELED": 4222,
+        "LOCKED": 1292
+      },
+      "b_tier_dist": {
+        "BARE_TERM": 7865,
+        "DIFFUSE": 615,
+        "CHANNELED": 9363,
+        "LOCKED": 2155
+      },
+      "tier_jsd": 0.0049,
+      "terminal_enrichment": {
+        "bare": 1.1041,
+        "h": 0.5429,
+        "l": 0.7335,
+        "m": 0.6886,
+        "n": 0.8468,
+        "r": 0.7999,
+        "y": 1.537
+      },
+      "category_enrichment": {
+        "CONTAINMENT": 1.0098,
+        "FLOW": 1.164,
+        "MARKING": 0.9077,
+        "MONITORING": 0.2708,
+        "OPERATION": 1.5834,
+        "STAGING": 0.5353,
+        "THERMAL": 1.7227,
+        "TRANSITION": 0.8667
+      },
+      "p9_pass": true,
+      "p10_pass": false
+    },
+    "T11_summary": {
+      "slot_stability": {
+        "HEAD": 0.0767,
+        "MODIFIER": 0.048,
+        "TERMINAL": 0.0143,
+        "CATEGORY": 0.0372,
+        "PREFIX_ecology": 0.072,
+        "SUFFIX_ecology": 0.1532
+      },
+      "internal_mean_jsd": 0.0463,
+      "external_mean_jsd": 0.1126,
+      "ratio": 2.4305,
+      "verdict": "PARTIAL_STABILITY"
+    }
+  },
+  "bridge_census": {
+    "total_bridge": 85,
+    "bridge_in_a": 85,
+    "bridge_in_b": 85,
+    "bridge_in_both": 85,
+    "a_tokens_bridge": 9391,
+    "b_tokens_bridge": 19998
+  },
+  "prediction_scorecard": {
+    "predictions": {
+      "P1 HEAD stable (JSD<0.05)": false,
+      "P2 TERM stable (JSD<0.05)": true,
+      "P3 MOD universal (JSD<0.01)": false,
+      "P4 Category intrinsic": true,
+      "P5 PREFIX ecology divergent (JSD>0.20)": false,
+      "P6 A suffix rate < B": true,
+      "P7 A/B-enriched different HEADs": true,
+      "P8 Atom correlation all > 0.70": false,
+      "P9 A prefers l,h terminals": true,
+      "P10 B prefers y,m,r terminals": false
+    },
+    "pass_count": 5,
+    "total": 10
+  }
+}
