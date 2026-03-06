@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1295 constraints | 2026-03-05
+CONSTRAINT_REFERENCE v2.6 | 1300 constraints | 2026-03-05
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1299,3 +1299,8 @@ C1448	HEAD x TERM frame hazard map with k-neutralization	2	B, MIDDLE, atom, HEAD
 C1449	PREFIX channel hazard with sister parity	2	B, PREFIX, hazard, sister pair, ch, sh, ok, ot, channel	ok/ot 1.04x (32.1% vs 30.7%), ch/sh 1.29x (12.8% vs 9.9%). Sister choice NOT hazard mechanism. ch carries 45% of forbidden violations (5/11). qo safe at 17.8%.
 C1450	opacity tier hazard gradient	2	B, MIDDLE, atom, terminal, hazard, opacity, gradient, suffix	SEMI_TRANSPARENT 56.5% (2.5x OPAQUE 22.8%). TRANSPARENT (h) 0%. Suffixed 14.6% vs unsuffixed 35.6% (2.44x). Suffix attachment = hazard reduction mechanism.
 C1451	Mode B exclusive forbidden violation concentration	2	B, suffix, mode, hazard, forbidden, violation, Mode-B	Mode B: 30.8% hazard, 11/11 violations (100%). Mode A: 9.5% hazard, 0 violations. Mode A kernel-dominant (k+e=55.6%), Mode B yield-dominant (a+o=28.6%). Specification safe, execution hazardous.
+C1452	Non-monotonic i-extension hazard gradient	2	B, MIDDLE, atom, i-modifier, extension, hazard, non-monotonic	no-i=24.1%, single-i=39.8%, double-ii=0.0%. Single-i STAGING 53.3% + FLOW 39.8%. Double-ii TRANSITION 92.6% with zero FLOW. aiin (834 tokens) = 0% hazard.
+C1453	i-modifier frame selection, not inherent hazard	2	B, MIDDLE, atom, i-modifier, hazard, frame-selection	Marginal i-effect NEGATIVE (-0.0175). Within-frame weighted delta -0.407. 12/19 frames protective. i in (a,n) frame: 33.5% vs non-i 100%. Simpson's paradox.
+C1454	i-modifier anti-thermal category profile	2	B, MIDDLE, atom, i-modifier, category, anti-thermal	THERMAL 0.05% (0.002x baseline). STAGING 33.0% (2.58x), TRANSITION 41.0% (2.78x). qo/ch/sh avoid i (0.087-0.097x). da/sa/ok/or concentrate i (2.4-3.8x).
+C1455	Quenching modifier partial i-override	2	B, MIDDLE, atom, i-modifier, quenching, co-occurrence	i-only=22.6%, both i+quench=7.5%, quench-only=5.9%. Quenching dominates. N=40 co-occurrence. Residual ~1.6pp above quench-only.
+C1456	i-modifier suffix depletion	2	B, MIDDLE, atom, i-modifier, suffix, mode, n-terminal	Suffix rate 9.4% (vs 52.1% non-i, 0.18x). 95.7% Mode B. 90.5% n-terminal structure preempts suffix attachment.

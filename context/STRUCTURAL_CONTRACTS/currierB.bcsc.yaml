@@ -1051,7 +1051,8 @@ hazards:
     opacity_gradient: "SEMI_TRANSPARENT tier 56.5% hazard (2.5x OPAQUE); suffix reduces hazard 2.44x (C1450)"
     mode_b_violations: "Mode B carries 100% of forbidden violations (11/11); Mode A zero violations (C1451)"
     modifier_quenching: "All 5 modifiers {c,d,f,p,s} quench hazard to 0%; i-modifier boosts 1.69x"
-    provenance: "C1446, C1447, C1448, C1449, C1450, C1451"
+    i_modifier_anomaly: "i hazard boost is Simpson's paradox: selects hazardous frames (61.8% in high-hazard) but REDUCES within-frame hazard (delta -0.407, 12/19 protective). Non-monotonic: single-i=39.8%, double-ii=0.0%. Anti-thermal (THERMAL 0.002x). Suffix-depleted (9.4%, n-terminal). (C1452-C1456)"
+    provenance: "C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456"
 
   properties:
     asymmetric_rate: "65%"
@@ -2808,6 +2809,11 @@ provenance:
     - "C1449"  # PREFIX channel hazard with sister parity (ok/ot 1.04x, ch/sh 1.29x)
     - "C1450"  # Opacity tier hazard gradient (SEMI_TRANSPARENT 56.5%)
     - "C1451"  # Mode B exclusive forbidden violation concentration (11/11)
+    - "C1452"  # Non-monotonic i-extension hazard gradient (single-i=39.8%, double-ii=0.0%)
+    - "C1453"  # i-modifier frame selection not inherent hazard (Simpson's paradox, delta -0.407)
+    - "C1454"  # i-modifier anti-thermal category profile (THERMAL 0.002x)
+    - "C1455"  # Quenching modifier partial i-override (22.6% -> 7.5%)
+    - "C1456"  # i-modifier suffix depletion (9.4% suffix, 95.7% Mode B)
 
   program_line:
     - "C357"   # Lines deliberately chunked

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1295 validated constraints | **Version:** 5.14 | **Date:** 2026-03-05
+**Total:** 1300 validated constraints | **Version:** 5.15 | **Date:** 2026-03-05
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4878,6 +4878,32 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T8: SEMI_TRANSPARENT tier 56.5% hazard (2.5x OPAQUE). Suffixed tokens 2.44x safer than unsuffixed.
 - T9: Mode B carries 100% of forbidden violations (11/11). Mode A 9.5% vs Mode B 30.8% hazard.
 - T10: All 5 modifiers {c,d,f,p,s} quench hazard to 0%. i-modifier boosts 1.69x. Length 3 and 5+ MIDDLEs near-zero hazard.
+
+---
+
+### i-Modifier Hazard Anomaly (C1452-C1456) -- Phase: I_MODIFIER_HAZARD (Phase 524)
+
+> **Summary:** Phase 524 investigates WHY the i-modifier boosts hazard (C1450 found i boosts 1.69x while all other modifiers quench to 0%). 10 tests across 2,052 i-modified tokens (8.9% of corpus). Key findings: the hazard boost is a Simpson's paradox -- i selects into hazardous HEAD+TERM frames (61.8% in high-hazard frames vs 14.0% non-i) but REDUCES hazard within those frames (weighted delta -0.407, 12/19 frames protective). Non-monotonic extension gradient: single-i=39.8% hazard, double-ii=0.0% (aiin has exactly 0% hazard across 834 tokens). i is categorically anti-thermal (THERMAL 0.05%, 0.002x baseline), operating exclusively in STAGING/TRANSITION/FLOW space. Quenching modifiers partially override i (22.6% -> 7.5%). i-tokens are 90.6% suffix-free and 95.7% Mode B due to n-terminal structure.
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1452 | Non-monotonic i-extension hazard gradient | 2 | B, MIDDLE, atom, i-modifier, extension, hazard, non-monotonic | no-i=24.1%, single-i=39.8%, double-ii=0.0%. Single-i STAGING 53.3% + FLOW 39.8%. Double-ii TRANSITION 92.6% with zero FLOW. aiin (834 tokens) = 0% hazard. |
+| 1453 | i-modifier frame selection, not inherent hazard | 2 | B, MIDDLE, atom, i-modifier, hazard, frame-selection | Marginal i-effect NEGATIVE (-0.0175). Within-frame weighted delta -0.407. 12/19 frames protective. i in (a,n) frame: 33.5% vs non-i 100%. Simpson's paradox. |
+| 1454 | i-modifier anti-thermal category profile | 2 | B, MIDDLE, atom, i-modifier, category, anti-thermal | THERMAL 0.05% (0.002x baseline). STAGING 33.0% (2.58x), TRANSITION 41.0% (2.78x). qo/ch/sh avoid i (0.087-0.097x). da/sa/ok/or concentrate i (2.4-3.8x). |
+| 1455 | Quenching modifier partial i-override | 2 | B, MIDDLE, atom, i-modifier, quenching, co-occurrence | i-only=22.6%, both i+quench=7.5%, quench-only=5.9%. Quenching dominates. N=40 co-occurrence. Residual ~1.6pp above quench-only. |
+| 1456 | i-modifier suffix depletion | 2 | B, MIDDLE, atom, i-modifier, suffix, mode, n-terminal | Suffix rate 9.4% (vs 52.1% non-i, 0.18x). 95.7% Mode B. 90.5% n-terminal structure preempts suffix attachment. |
+
+**Phase 524 findings (i-Modifier Hazard Anomaly, 10 tests):**
+- T1: Single-i vs double-ii hazard split. Single-i=39.8%, double-ii=0.0%. Non-monotonic gradient.
+- T2: i vs non-i in same HEAD groups. Within HEAD a: i=32.6% vs non-i=71.2%. Within HEAD o: i=4.1% vs non-i=23.0%. i REDUCES within-frame hazard.
+- T3: Extension gradient. no-i=24.1%, single-i=39.8%, double-ii=0.0%. Single-i is STAGING/FLOW, double-ii is TRANSITION.
+- T4: Category profile. THERMAL 0.05% (0.002x). STAGING 33.0% (2.58x). TRANSITION 41.0% (2.78x). Anti-thermal.
+- T5: PREFIX avoidance. qo 0.089x, ch 0.087x, sh 0.097x. da 3.51x, sa 3.59x, or 3.77x, ok 2.43x.
+- T6: Section distribution. Bio 0.64x, Stars/Recipe 1.19x. Thermal sections avoid i.
+- T7: Suffix depletion. 9.4% suffix rate (0.18x non-i). 95.7% Mode B. 90.5% n-terminal.
+- T8: Quenching override. i-only=22.6%, both=7.5%, quench-only=5.9%. Quenching dominates.
+- T9: Macro-state interaction. i-tokens in AXM: 59.5% (vs 62.8% non-i). No strong macro-state effect.
+- T10: Simpson's paradox decomposition. Marginal delta=-0.0175. Frame selection +0.390. Within-frame -0.407. 12/19 frames protective.
 
 ---
 

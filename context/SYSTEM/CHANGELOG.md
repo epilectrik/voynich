@@ -4,6 +4,30 @@
 
 ---
 
+## Version 5.15.117 (2026-03-05) - Phase 524: i-Modifier Hazard Anomaly
+
+### Summary
+
+Phase 524 investigates WHY the i-modifier boosts hazard (C1450 found i boosts 1.69x while all other modifiers quench to 0%). 10 tests across 2,052 i-modified tokens (8.9% of corpus). Key findings: the hazard boost is a Simpson's paradox -- i selects into hazardous HEAD+TERM frames (61.8% in high-hazard frames vs 14.0% non-i) but REDUCES hazard within those frames (weighted delta -0.407, 12/19 frames protective). Non-monotonic extension gradient: single-i=39.8% hazard, double-ii=0.0% (aiin has exactly 0% hazard across 834 tokens). i is categorically anti-thermal (THERMAL 0.05%, 0.002x baseline), operating exclusively in STAGING/TRANSITION/FLOW space. Quenching modifiers partially override i (22.6% -> 7.5%). i-tokens are 90.6% suffix-free and 95.7% Mode B due to n-terminal structure.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1452: Non-monotonic i-extension hazard gradient (no-i=24.1%, single-i=39.8%, double-ii=0.0%) |
+| **ADDED** | C1453: i-modifier frame selection, not inherent hazard (Simpson's paradox, within-frame delta -0.407) |
+| **ADDED** | C1454: i-modifier anti-thermal category profile (THERMAL 0.05%, 0.002x baseline) |
+| **ADDED** | C1455: Quenching modifier partial i-override (22.6% -> 7.5%, N=40) |
+| **ADDED** | C1456: i-modifier suffix depletion (9.4% suffix rate, 95.7% Mode B, n-terminal) |
+| **ADDED** | `phases/I_MODIFIER_HAZARD/scripts/i_modifier_hazard.py` |
+| **ADDED** | `phases/I_MODIFIER_HAZARD/results/i_modifier_hazard.json` |
+| **ADDED** | `phases/I_MODIFIER_HAZARD/REPORT.md` |
+| **UPDATED** | INDEX.md -- +5 constraints (1300 total) |
+| **UPDATED** | CONSTRAINT_TABLE.txt regenerated (1300 constraints) |
+| **UPDATED** | currierB.bcsc.yaml -- added i-modifier hazard findings to hazard atom_level_decomposition |
+
+---
+
 ## Version 5.14.116 (2026-03-05) - Phase 523: Hazard Atom-Level Decomposition
 
 ### Summary
