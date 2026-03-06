@@ -22,7 +22,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1306 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1469.
+the highest ID present is C1471.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-05 21:19
+**Generated:** 2026-03-05 21:42
 **Version:** FROZEN STATE (1306 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -1742,6 +1742,8 @@ C1466	Zone-hazard pattern line-length invariance	2	B, line, position, zone, haza
 C1467	Paragraph zone x hazard interaction (non-fractal)	2	B, paragraph, zone, hazard, frame, routing
 C1468	Header infrastructure-first composition	2	B, paragraph, header, hazard, LOW, ZERO, composition
 C1469	Line hazard gradient paragraph-independent	2	B, line, paragraph, zone, hazard, independence, nested
+C1470	Cross-line hazard correlation is folio-mediated	2	B, line, hazard, cross-line, folio, independence
+C1471	No compensatory safe opening after hazardous closure	2	B, line, hazard, cross-line, e->y, recovery, compensatory
 
 ---
 
@@ -4657,7 +4659,7 @@ Only Tier 0-2 structural findings are binding.
 - role_taxonomy: C121, C366, C547, C550, C557, C558, C560, C562, C563, C567, C572, C573, C574, C575, C581, C582, C583, C584, C586, C587, C588, C591, C593, C594, C595, C597, C770, C777, C788, C791, C863, C864, C865, C866, C867, C868, C869
 - kernel: C089, C103, C104, C105, C332, C333, C339, C521, C1225, C1226
 - hazards: C109, C110, C111, C112, C386, C789, C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456, C1457, C1458, C1459, C1460, C1461, C1462
-- program_structure: C178, C357, C358, C359, C360, C531, C535, C556, C557, C561, C562, C670, C673, C677, C777, C815, C840, C841, C842, C843, C845, C855, C856, C857, C858, C859, C860, C861, C862, C864, C870, C897, C932, C933, C935, C956, C957, C958, C959, C960, C961, C962, C963, C964, C965, C966, C971, C972, C975, C1121, C1221, C1227, C1228, C1229, C1230, C1231, C1232, C1233, C1236, C1237, C1256, C1258, C1259, C1260, C1288, C1308, C1309, C1310, C1311, C1312, C1378, C1396, C1398, C1399, C1400, C1410, C1422, C1423, C1424, C1425, C1426, C1427, C1428, C1429, C1430, C1434, C1435, C1436, C1437, C1438, C1439, C1463, C1464, C1465, C1466, C1467, C1468, C1469
+- program_structure: C178, C357, C358, C359, C360, C531, C535, C556, C557, C561, C562, C670, C673, C677, C777, C815, C840, C841, C842, C843, C845, C855, C856, C857, C858, C859, C860, C861, C862, C864, C870, C897, C932, C933, C935, C956, C957, C958, C959, C960, C961, C962, C963, C964, C965, C966, C971, C972, C975, C1121, C1221, C1227, C1228, C1229, C1230, C1231, C1232, C1233, C1236, C1237, C1256, C1258, C1259, C1260, C1288, C1308, C1309, C1310, C1311, C1312, C1378, C1396, C1398, C1399, C1400, C1410, C1422, C1423, C1424, C1425, C1426, C1427, C1428, C1429, C1430, C1434, C1435, C1436, C1437, C1438, C1439, C1451, C1463, C1464, C1465, C1466, C1467, C1468, C1469, C1470, C1471
 - convergence: C079, C084, C323, C325, C1169, C1401, C1402, C1403, C1404, C1405, C1406, C1407, C1411, C1418, C1422, C1431, C1432, C1433
 - link_operator: C340, C365, C366, C609, C804, C805, C806, C807, C808, C809, C810, C1170, C1171, C1172, C1173, C1174
 - recovery: C105, C397, C398, C399, C601, C643, C645, C1457, C1458, C1459, C1462

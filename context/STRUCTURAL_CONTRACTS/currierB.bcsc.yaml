@@ -1196,8 +1196,12 @@ program_structure:
         statement: "Adjacent lines are categorically independent; each line is a fresh i.i.d. sample from the folio's operational profile"
         suffix_mode_MI: "0.003 bits"
         dominant_category_MI: "0.032 bits"
+        hazard_frame_MI: "0.0172 bits (0.54x category MI; folio-shuffle p=0.212 — entirely folio-mediated)"
         vocabulary_jaccard: "0.153"
-      provenance: "C1425, C1426, C1427, C1428, C1429, C1430, C1434-C1439, C1463-C1466"
+        hazard_autocorrelation: "rho ~0.22 flat across lags 1-4; all collapse under within-folio permutation (p=0.115-0.535)"
+        no_compensatory_recovery: "e->y DEPLETED 0.82x after above-median HIGH lines (Fisher p=0.0001); folio composition effect"
+        mode_b_no_hazard_memory: "B->B MI=0.016 = A->A MI=0.017; Mode B forbidden carrier status (C1451) creates no cross-line coupling"
+      provenance: "C1425, C1426, C1427, C1428, C1429, C1430, C1434-C1439, C1463-C1466, C1470, C1471"
     provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897, C1425-C1430, C1434-C1439, C1463-C1466"
 
   paragraph:

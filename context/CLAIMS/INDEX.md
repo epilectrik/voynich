@@ -4980,6 +4980,27 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 
 ---
 
+### Cross-Line Hazard Continuity (C1470-C1471) -- Phase: CROSS_LINE_HAZARD (Phase 530)
+
+> **Summary:** Phase 530 tests whether one line's closing hazard predicts the next line's opening safety. C1429 established cross-line category independence (MI=0.032 bits) and suffix mode independence (MI=0.003 bits). C1451 showed Mode B carries 100% of forbidden violations. C1463 showed lines route hazard to line-final. Does this create cross-line hazard memory? NO. Cross-line hazard MI is 0.0172 bits (0.54x of category MI), and ALL correlation (rho=0.238) collapses under within-folio shuffling (MI p=0.212, rho p=0.098). Autocorrelation is flat at ~0.22 across lags 1-4, confirming pure folio-level shared environment with zero sequential structure. Mode-stratified analysis shows B->B pairs (which carry 100% of forbidden violations per C1451) have NO elevated coupling vs A->A. The e->y safe pathway is DEPLETED (0.82x) after high-hazard lines, not enriched -- a folio composition effect, not an anti-recovery mechanism. Lines are independently composed safety units: each opens safe and closes hazardous without reference to predecessors.
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1470 | Cross-line hazard correlation is folio-mediated | 2 | B, line, hazard, cross-line, folio, independence | MI=0.0172 bits (0.54x category). Shuffle p=0.212 MI, p=0.098 rho. Lags 1-4 flat ~0.22. B->B = A->A. |
+| 1471 | No compensatory safe opening after hazardous closure | 2 | B, line, hazard, cross-line, e->y, recovery, compensatory | e->y DEPLETED 0.82x after above-median HIGH (Fisher p=0.0001). IMMUNE 0.78x. Folio composition effect. |
+
+**Phase 530 findings (Cross-Line Hazard Continuity, 7 tests + shuffle control):**
+- T1: Cross-line hazard MI=0.0172 bits, 0.54x of C1429 category MI (0.032). HIGH rho=0.238. p=0.0005 raw but collapses under folio shuffle.
+- T2: Mode-stratified: A->A rho=0.162, A->B=0.214, B->A=0.263, B->B=0.228. B->B MI=0.016 = A->A MI=0.017. No Mode B elevation.
+- T3: Closure-to-opening bridge V=0.042. Q4 HIGH -> Q0 ZERO rho=-0.019 (NS). Q4 HIGH -> Q0 HIGH rho=+0.059.
+- T4: After HIGH-ending line: ZERO 0.251 vs 0.262 baseline (0.96x). IMMUNE 0.108 vs 0.119 (0.91x). V=0.030.
+- T5: e->y at Q0 after above-median HIGH: 0.223 vs 0.271 (0.82x, Fisher p=0.0001). IMMUNE 0.103 vs 0.133 (0.78x). DEPLETION not enrichment.
+- T6: Within-paragraph rho=0.233, cross-paragraph rho=0.207. Difference 0.027 (negligible). No paragraph boundary effect.
+- T7: Autocorrelation lags 1-4: rho 0.233/0.222/0.217/0.208. Flat profile. Permutation p: 0.115/0.248/0.306/0.535. All folio-mediated.
+- Shuffle: MI p=0.212, rho p=0.098. Neither survives within-folio permutation at alpha=0.05.
+
+---
+
 ## Navigation
 
 ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)

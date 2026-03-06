@@ -4,6 +4,26 @@
 
 ---
 
+## Version 5.19.121 (2026-03-05) - Phase 530: Cross-Line Hazard Continuity
+
+### Summary
+
+Phase 530 tests whether one line's closing hazard predicts the next line's opening safety. C1429 established cross-line category independence (MI=0.032 bits) and C1451 showed Mode B carries 100% of forbidden violations. C1463 showed lines route hazard to line-final. Result: cross-line hazard MI is 0.0172 bits (0.54x of category MI), and ALL correlation (rho=0.238) collapses under within-folio shuffling (MI p=0.212, rho p=0.098). Autocorrelation is flat at ~0.22 across lags 1-4 with zero sequential decay. Mode-stratified analysis shows B->B pairs (100% forbidden carrier per C1451) have NO elevated coupling vs A->A. The e->y safe pathway is DEPLETED 0.82x (Fisher p=0.0001) after high-hazard lines, not enriched -- a folio composition effect. Lines are independently composed safety units.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1470: Cross-line hazard correlation is folio-mediated (MI=0.0172 bits, shuffle p=0.212) |
+| **ADDED** | C1471: No compensatory safe opening after hazardous closure (e->y DEPLETED 0.82x) |
+| **ADDED** | `phases/CROSS_LINE_HAZARD/scripts/cross_line_hazard.py` |
+| **ADDED** | `phases/CROSS_LINE_HAZARD/results/cross_line_hazard.json` |
+| **ADDED** | `phases/CROSS_LINE_HAZARD/REPORT.md` |
+| **UPDATED** | INDEX.md -- +2 constraints (1315 total) |
+| **UPDATED** | currierB.bcsc.yaml -- extended cross_line_independence with hazard-frame resolution |
+
+---
+
 ## Version 5.18.120 (2026-03-05) - Phase 529: Paragraph-Level Hazard Gradient
 
 ### Summary
