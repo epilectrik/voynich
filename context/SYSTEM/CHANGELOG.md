@@ -4,6 +4,33 @@
 
 ---
 
+## Version 5.26.133 (2026-03-06) - Phase 537: Displaced HEAD Grammar
+
+### Summary
+
+Phase 537 resolves C1493's finding that 35.7% of headless compound MIDDLEs contain HEAD-set atoms {a,e,o,k,t} at non-initial positions. The decisive test: pseudo-HEAD (first atom) predicts operational category 2.68x more accurately than the displaced HEAD atom (35.1% vs 13.1%, N=1,084). 0/5 displaced HEADs share the same dominant category as their canonical HEAD counterpart. k and t are massively enriched among displaced HEADs (5.31x and 6.90x respectively) while e is depleted (0.26x) -- k/t function as TERMINAL atoms per C1478 (k/t dual-role), not as domain selectors. The c-modifier is the primary displacement context (87.1% of c-initial headless tokens contain displaced HEADs), with ck (197 tokens) and ct (95 tokens) as the dominant patterns. Displaced-HEAD tokens have 89.8% suffix rate (vs 35.7% canonical, 24.0% genuine headless), explained by their bare-terminal dominance connecting to the transparent suffix tier (C1440). n-terminal and y-terminal categorically exclude displacement (0.36% and 0.39%) because their exclusive modifier partners (i and d per C1484) leave no compositional slot for HEAD atoms. Hazard exposure is near-zero (0.08% high-frame). Verdict: HEAD_SET_CHARACTER_NOT_FUNCTIONING_AS_HEAD.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1494: Displaced HEAD k/t enrichment with inverted frequency (k 5.31x, t 6.90x; e 0.26x depleted) |
+| **ADDED** | C1495: HEAD-set atoms do not function as domain selectors when displaced (pseudo-HEAD 2.68x better) |
+| **ADDED** | C1496: c-modifier primary displacement context (87.1% rate; ck/ct backbone) |
+| **ADDED** | C1497: Displaced HEAD extreme suffix rate (89.8% vs 35.7% canonical vs 24.0% genuine headless) |
+| **ADDED** | C1498: n/y-terminal categorical displacement exclusion (0.36-0.39% vs bare 83.9%) |
+| **ADDED** | `phases/DISPLACED_HEAD_GRAMMAR/scripts/displaced_head_grammar.py` |
+| **ADDED** | `phases/DISPLACED_HEAD_GRAMMAR/results/displaced_head_grammar.json` |
+| **ADDED** | `phases/DISPLACED_HEAD_GRAMMAR/REPORT.md` |
+| **UPDATED** | INDEX.md -- +5 constraints (1342 total) |
+| **UPDATED** | BCSC v3.30 -- headless internal_structure updated to note displaced HEADs are non-functional |
+| **RESOLVED** | C1493 open question: displaced HEADs are genuinely headless compounds with HEAD-set chars in non-HEAD roles |
+| **CONFIRMED** | C1478 (k/t terminal mirror): k/t function as terminals in displaced position, not HEADs |
+| **CONFIRMED** | C1484 (terminal-modifier exclusivity): n+i and y+d partnerships exclude HEAD displacement |
+| **CONFIRMED** | C1489 (pseudo-HEAD differentiation): first atom dominates category even when HEAD-set atoms present elsewhere |
+
+---
+
 ## Version 5.25.128 (2026-03-06) - Phase 536: Headless Compound Subgrammar
 
 ### Summary

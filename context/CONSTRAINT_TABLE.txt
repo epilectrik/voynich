@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1337 constraints | 2026-03-06
+CONSTRAINT_REFERENCE v2.6 | 1342 constraints | 2026-03-06
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1341,3 +1341,8 @@ C1490	Headless terminal profile shift	2	B, MIDDLE, headless, atom, terminal, pro
 C1491	Headless da-PREFIX near-exclusivity	2	B, MIDDLE, headless, PREFIX, da, selectivity, sa, ta	da 2284x enriched (17.8% vs ~0.008%). sa: 197 tokens 100% headless. ta: 107 tokens 100% headless. ok: 0.5% vs 7.5% headed. ot: 0.8% vs 7.2% headed.
 C1492	Headless suffix bifurcation	2	B, MIDDLE, headless, suffix, bifurcation, binary, parametric	BARE: d=14.9%, i=9.3% (binary ops). SUFFIXED: c=96.2%, p=96.8%, f=93.2% (parametric ops). Aggregate 47.5% vs headed 35.7%. Ordering grammar: 61.9% vs 70.1%.
 C1493	Headless internal structure with displaced HEAD	2	B, MIDDLE, headless, internal, structure, displaced, HEAD	MT 46.7%, T-only 19.3%, MMT 16.3%, MMMT+ 5.1%. 35.7% contain HEAD atoms in non-initial position. Nearest HEAD: o (JSD=0.302). Farthest: a (JSD=0.665).
+C1494	Displaced HEAD k/t enrichment with inverted frequency	2	B, MIDDLE, headless, displaced, HEAD, k, t, e, frequency, inversion	k 5.31x enriched (42.0% vs 7.9% canonical), t 6.90x (18.5% vs 2.7%), e 0.26x depleted (12.2% vs 47.8%). 1,182 tokens, 334 types. Maps to k/t dual-role (C1478).
+C1495	HEAD-set atoms do not function as domain selectors when displaced	2	B, MIDDLE, headless, displaced, HEAD, category, pseudo-HEAD, domain, prediction	Pseudo-HEAD accuracy 35.1% vs displaced HEAD 13.1% (2.68x ratio). 0/5 match canonical dominant. Same-pseudo-HEAD JSD=0.510 < same-HEAD JSD=0.529. No alternative MOD+HEAD+TERM order.
+C1496	c-modifier primary displacement context	2	B, MIDDLE, headless, displaced, HEAD, c-modifier, k, t, ck, ct, context	c-initial 87.1% displacement rate (533/612). c+k=365, c+t=167. Dominant MIDDLEs: ck=197, ckh=127, ct=95, cth=49. i-initial only 2.3%. c's modifier-terminal affinity (h-compatible) vs i's (n-exclusive) explains split.
+C1497	Displaced HEAD extreme suffix rate	2	B, MIDDLE, headless, displaced, HEAD, suffix, rate, morphology	89.8% suffix rate vs canonical 35.7% (2.51x) vs genuine headless 24.0% (3.74x). k-displaced 96.8%, t 95.4%. Driven by bare-terminal transparency (C1440). PARAMETRIC not BINARY (C1492).
+C1498	n/y-terminal categorical displacement exclusion	2	B, MIDDLE, headless, displaced, HEAD, terminal, n, y, bare, exclusion, gate	n 0.36% (3/828), y 0.39% (3/775) displacement rate. bare 83.9% (908/1082). 200x+ range. n/y exclusive modifier partnerships (C1484) leave no slot for HEAD atoms.

@@ -1,0 +1,1503 @@
+{
+  "a_census": {
+    "total_compound": 16153,
+    "canonical_headed": 12841,
+    "all_headless": 3312,
+    "displaced_head_tokens": 1182,
+    "displaced_head_types": 334,
+    "genuine_headless_tokens": 2130,
+    "genuine_headless_types": 135,
+    "displaced_fraction_of_headless_tokens": 0.3569,
+    "displaced_fraction_of_headless_types": 0.7122,
+    "multi_displaced_head_count": 166,
+    "displaced_head_by_atom": {
+      "k": {
+        "count": 497,
+        "fraction": 0.4205
+      },
+      "t": {
+        "count": 219,
+        "fraction": 0.1853
+      },
+      "o": {
+        "count": 173,
+        "fraction": 0.1464
+      },
+      "a": {
+        "count": 149,
+        "fraction": 0.1261
+      },
+      "e": {
+        "count": 144,
+        "fraction": 0.1218
+      }
+    },
+    "displaced_head_position_distribution": {
+      "1": 1019,
+      "2": 164,
+      "3": 132,
+      "4": 50,
+      "5": 16,
+      "6": 2
+    },
+    "top_20_displaced_middles": {
+      "ck": 197,
+      "ckh": 127,
+      "ct": 95,
+      "lk": 58,
+      "cth": 49,
+      "lo": 33,
+      "dai": 23,
+      "lke": 20,
+      "qo": 18,
+      "da": 13,
+      "ro": 13,
+      "rai": 12,
+      "yt": 12,
+      "yk": 11,
+      "do": 10,
+      "qek": 10,
+      "dal": 8,
+      "lod": 7,
+      "rod": 7,
+      "dyt": 7
+    }
+  },
+  "b_preceding": {
+    "preceding_atom_distribution": {
+      "c": {
+        "count": 533,
+        "fraction": 0.3854
+      },
+      "l": {
+        "count": 202,
+        "fraction": 0.1461
+      },
+      "h": {
+        "count": 102,
+        "fraction": 0.0738
+      },
+      "d": {
+        "count": 90,
+        "fraction": 0.0651
+      },
+      "r": {
+        "count": 79,
+        "fraction": 0.0571
+      },
+      "q": {
+        "count": 77,
+        "fraction": 0.0557
+      },
+      "y": {
+        "count": 66,
+        "fraction": 0.0477
+      },
+      "e": {
+        "count": 54,
+        "fraction": 0.039
+      },
+      "k": {
+        "count": 37,
+        "fraction": 0.0268
+      },
+      "s": {
+        "count": 35,
+        "fraction": 0.0253
+      },
+      "p": {
+        "count": 29,
+        "fraction": 0.021
+      },
+      "i": {
+        "count": 18,
+        "fraction": 0.013
+      },
+      "o": {
+        "count": 17,
+        "fraction": 0.0123
+      },
+      "f": {
+        "count": 12,
+        "fraction": 0.0087
+      },
+      "t": {
+        "count": 12,
+        "fraction": 0.0087
+      }
+    },
+    "preceding_class_distribution": {
+      "M": {
+        "count": 719,
+        "fraction": 0.5199
+      },
+      "T": {
+        "count": 452,
+        "fraction": 0.3268
+      },
+      "H": {
+        "count": 133,
+        "fraction": 0.0962
+      },
+      "?": {
+        "count": 79,
+        "fraction": 0.0571
+      }
+    },
+    "preceding_by_displaced_head": {
+      "a": {
+        "d": 63,
+        "r": 33,
+        "p": 21,
+        "l": 13,
+        "s": 10
+      },
+      "e": {
+        "h": 77,
+        "q": 49,
+        "k": 33,
+        "s": 12,
+        "t": 9
+      },
+      "k": {
+        "c": 365,
+        "l": 102,
+        "y": 21,
+        "e": 19,
+        "o": 7
+      },
+      "o": {
+        "l": 65,
+        "r": 43,
+        "e": 24,
+        "h": 21,
+        "q": 20
+      },
+      "t": {
+        "c": 167,
+        "y": 35,
+        "l": 15,
+        "e": 11,
+        "i": 9
+      }
+    },
+    "total_observed": 1383
+  },
+  "c_patterns": {
+    "pattern_distribution": {
+      "MH": {
+        "count": 342,
+        "fraction": 0.2893,
+        "examples": [
+          "ct",
+          "ck",
+          "da"
+        ]
+      },
+      "MHT": {
+        "count": 194,
+        "fraction": 0.1641,
+        "examples": [
+          "ckh",
+          "ckh",
+          "cth"
+        ]
+      },
+      "TH": {
+        "count": 145,
+        "fraction": 0.1227,
+        "examples": [
+          "lk",
+          "yk",
+          "yt"
+        ]
+      },
+      "THM": {
+        "count": 51,
+        "fraction": 0.0431,
+        "examples": [
+          "raii",
+          "rai",
+          "lod"
+        ]
+      },
+      "MHM": {
+        "count": 43,
+        "fraction": 0.0364,
+        "examples": [
+          "sed",
+          "dai",
+          "pai"
+        ]
+      },
+      "THH": {
+        "count": 36,
+        "fraction": 0.0305,
+        "examples": [
+          "loee",
+          "yek",
+          "heet"
+        ]
+      },
+      "?H": {
+        "count": 35,
+        "fraction": 0.0296,
+        "examples": [
+          "ge",
+          "qo",
+          "qe"
+        ]
+      },
+      "?HH": {
+        "count": 19,
+        "fraction": 0.0161,
+        "examples": [
+          "qak",
+          "qek",
+          "qek"
+        ]
+      },
+      "MHTH": {
+        "count": 16,
+        "fraction": 0.0135,
+        "examples": [
+          "dalo",
+          "ctho",
+          "ctho"
+        ]
+      },
+      "MMTH": {
+        "count": 15,
+        "fraction": 0.0127,
+        "examples": [
+          "cpho",
+          "fdyk",
+          "cfhe"
+        ]
+      },
+      "MTH": {
+        "count": 15,
+        "fraction": 0.0127,
+        "examples": [
+          "dyk",
+          "dyt",
+          "iro"
+        ]
+      },
+      "THMT": {
+        "count": 14,
+        "fraction": 0.0118,
+        "examples": [
+          "lkch",
+          "ytsh",
+          "lkch"
+        ]
+      },
+      "MHMT": {
+        "count": 11,
+        "fraction": 0.0093,
+        "examples": [
+          "faim",
+          "ctch",
+          "dksh"
+        ]
+      },
+      "MMTHM": {
+        "count": 11,
+        "fraction": 0.0093,
+        "examples": [
+          "fcheep",
+          "cphed",
+          "dched"
+        ]
+      },
+      "THT": {
+        "count": 10,
+        "fraction": 0.0085,
+        "examples": [
+          "lor",
+          "lar",
+          "rol"
+        ]
+      },
+      "MMTHH": {
+        "count": 10,
+        "fraction": 0.0085,
+        "examples": [
+          "cpheo",
+          "pcheeo",
+          "cpheo"
+        ]
+      },
+      "TMTHM": {
+        "count": 10,
+        "fraction": 0.0085,
+        "examples": [
+          "rshef",
+          "rcheed",
+          "lched"
+        ]
+      },
+      "TMH": {
+        "count": 9,
+        "fraction": 0.0076,
+        "examples": [
+          "yfo",
+          "hda",
+          "rio"
+        ]
+      },
+      "TMTH": {
+        "count": 9,
+        "fraction": 0.0076,
+        "examples": [
+          "lche",
+          "lshe",
+          "lche"
+        ]
+      },
+      "MHTM": {
+        "count": 8,
+        "fraction": 0.0068,
+        "examples": [
+          "ckhd",
+          "ckhd",
+          "ckhd"
+        ]
+      }
+    },
+    "pattern_families": {
+      "...+H_FINAL": {
+        "count": 594,
+        "fraction": 0.5025
+      },
+      "...+H_pos1+...": {
+        "count": 365,
+        "fraction": 0.3088
+      },
+      "MULTI_HEAD": {
+        "count": 166,
+        "fraction": 0.1404
+      },
+      "...+H_pos2+...": {
+        "count": 30,
+        "fraction": 0.0254
+      },
+      "...+H_pos3+...": {
+        "count": 24,
+        "fraction": 0.0203
+      },
+      "...+H_pos4+...": {
+        "count": 3,
+        "fraction": 0.0025
+      }
+    },
+    "unique_patterns": 125,
+    "total_tokens": 1182
+  },
+  "d_which_heads": {
+    "displaced_head_counts": {
+      "a": {
+        "count": 149,
+        "fraction": 0.1261
+      },
+      "e": {
+        "count": 144,
+        "fraction": 0.1218
+      },
+      "k": {
+        "count": 497,
+        "fraction": 0.4205
+      },
+      "o": {
+        "count": 173,
+        "fraction": 0.1464
+      },
+      "t": {
+        "count": 219,
+        "fraction": 0.1853
+      }
+    },
+    "canonical_head_counts": {
+      "a": {
+        "count": 3015,
+        "fraction": 0.2348
+      },
+      "e": {
+        "count": 6135,
+        "fraction": 0.4778
+      },
+      "k": {
+        "count": 1017,
+        "fraction": 0.0792
+      },
+      "o": {
+        "count": 2329,
+        "fraction": 0.1814
+      },
+      "t": {
+        "count": 345,
+        "fraction": 0.0269
+      }
+    },
+    "enrichment_displaced_vs_canonical": {
+      "a": {
+        "displaced_fraction": 0.1261,
+        "canonical_fraction": 0.2348,
+        "enrichment": 0.537
+      },
+      "t": {
+        "displaced_fraction": 0.1853,
+        "canonical_fraction": 0.0269,
+        "enrichment": 6.896
+      },
+      "o": {
+        "displaced_fraction": 0.1464,
+        "canonical_fraction": 0.1814,
+        "enrichment": 0.807
+      },
+      "e": {
+        "displaced_fraction": 0.1218,
+        "canonical_fraction": 0.4778,
+        "enrichment": 0.255
+      },
+      "k": {
+        "displaced_fraction": 0.4205,
+        "canonical_fraction": 0.0792,
+        "enrichment": 5.309
+      }
+    },
+    "position_by_head": {
+      "a": {
+        "1": 135,
+        "2": 15,
+        "3": 9,
+        "4": 1,
+        "5": 1
+      },
+      "e": {
+        "1": 77,
+        "2": 49,
+        "3": 68,
+        "4": 14,
+        "5": 3
+      },
+      "k": {
+        "1": 473,
+        "2": 42,
+        "3": 16,
+        "4": 7,
+        "5": 3,
+        "6": 1
+      },
+      "o": {
+        "1": 138,
+        "2": 26,
+        "3": 33,
+        "4": 24,
+        "5": 6,
+        "6": 1
+      },
+      "t": {
+        "1": 196,
+        "2": 32,
+        "3": 6,
+        "4": 4,
+        "5": 3
+      }
+    }
+  },
+  "e_category": {
+    "displaced_category_dist": {
+      "CONTAINMENT": 0.1171,
+      "FLOW": 0.1207,
+      "MARKING": 0.2378,
+      "MONITORING": 0.0968,
+      "OPERATION": 0.1871,
+      "STAGING": 0.1226,
+      "THERMAL": 0.0618,
+      "TRANSITION": 0.0562
+    },
+    "canonical_category_dist": {
+      "CONTAINMENT": 0.0235,
+      "FLOW": 0.2313,
+      "MARKING": 0.0452,
+      "MONITORING": 0.0143,
+      "OPERATION": 0.2065,
+      "STAGING": 0.0838,
+      "THERMAL": 0.1895,
+      "TRANSITION": 0.2059
+    },
+    "genuine_headless_category_dist": {
+      "CONTAINMENT": 0.3181,
+      "FLOW": 0.0231,
+      "MARKING": 0.2474,
+      "MONITORING": 0.0372,
+      "OPERATION": 0.0349,
+      "STAGING": 0.3002,
+      "THERMAL": 0.0,
+      "TRANSITION": 0.0391
+    },
+    "jsd_displaced_vs_canonical": 0.3474,
+    "jsd_displaced_vs_genuine_headless": 0.3454,
+    "jsd_genuine_vs_canonical": 0.5737,
+    "per_displaced_head_profiles": {
+      "a": {
+        "distribution": {
+          "CONTAINMENT": 0.0,
+          "FLOW": 0.2534,
+          "MARKING": 0.3493,
+          "MONITORING": 0.0,
+          "OPERATION": 0.0,
+          "STAGING": 0.226,
+          "THERMAL": 0.0068,
+          "TRANSITION": 0.1644
+        },
+        "dominant": "MARKING",
+        "n": 146
+      },
+      "e": {
+        "distribution": {
+          "CONTAINMENT": 0.0,
+          "FLOW": 0.0211,
+          "MARKING": 0.7053,
+          "MONITORING": 0.0211,
+          "OPERATION": 0.0,
+          "STAGING": 0.0947,
+          "THERMAL": 0.1579,
+          "TRANSITION": 0.0
+        },
+        "dominant": "MARKING",
+        "n": 95
+      },
+      "k": {
+        "distribution": {
+          "CONTAINMENT": 0.2629,
+          "FLOW": 0.0021,
+          "MARKING": 0.0787,
+          "MONITORING": 0.0062,
+          "OPERATION": 0.4079,
+          "STAGING": 0.147,
+          "THERMAL": 0.0932,
+          "TRANSITION": 0.0021
+        },
+        "dominant": "OPERATION",
+        "n": 483
+      },
+      "o": {
+        "distribution": {
+          "CONTAINMENT": 0.0,
+          "FLOW": 0.2566,
+          "MARKING": 0.3224,
+          "MONITORING": 0.0197,
+          "OPERATION": 0.0395,
+          "STAGING": 0.1053,
+          "THERMAL": 0.0329,
+          "TRANSITION": 0.2237
+        },
+        "dominant": "MARKING",
+        "n": 152
+      },
+      "t": {
+        "distribution": {
+          "CONTAINMENT": 0.0,
+          "FLOW": 0.2488,
+          "MARKING": 0.2536,
+          "MONITORING": 0.4641,
+          "OPERATION": 0.0,
+          "STAGING": 0.0191,
+          "THERMAL": 0.0048,
+          "TRANSITION": 0.0096
+        },
+        "dominant": "MONITORING",
+        "n": 209
+      }
+    },
+    "per_canonical_head_profiles": {
+      "a": {
+        "distribution": {
+          "CONTAINMENT": 0.006,
+          "FLOW": 0.5538,
+          "MARKING": 0.0121,
+          "MONITORING": 0.0013,
+          "OPERATION": 0.0017,
+          "STAGING": 0.0174,
+          "THERMAL": 0.006,
+          "TRANSITION": 0.4016
+        },
+        "dominant": "FLOW",
+        "n": 2983
+      },
+      "e": {
+        "distribution": {
+          "CONTAINMENT": 0.0235,
+          "FLOW": 0.0761,
+          "MARKING": 0.0321,
+          "MONITORING": 0.0143,
+          "OPERATION": 0.3674,
+          "STAGING": 0.0143,
+          "THERMAL": 0.2548,
+          "TRANSITION": 0.2174
+        },
+        "dominant": "OPERATION",
+        "n": 6135
+      },
+      "k": {
+        "distribution": {
+          "CONTAINMENT": 0.0324,
+          "FLOW": 0.0669,
+          "MARKING": 0.0324,
+          "MONITORING": 0.0256,
+          "OPERATION": 0.0197,
+          "STAGING": 0.0895,
+          "THERMAL": 0.706,
+          "TRANSITION": 0.0275
+        },
+        "dominant": "THERMAL",
+        "n": 1017
+      },
+      "o": {
+        "distribution": {
+          "CONTAINMENT": 0.0476,
+          "FLOW": 0.2373,
+          "MARKING": 0.134,
+          "MONITORING": 0.0294,
+          "OPERATION": 0.121,
+          "STAGING": 0.383,
+          "THERMAL": 0.0294,
+          "TRANSITION": 0.0182
+        },
+        "dominant": "STAGING",
+        "n": 2141
+      },
+      "t": {
+        "distribution": {
+          "CONTAINMENT": 0.0,
+          "FLOW": 0.6512,
+          "MARKING": 0.0494,
+          "MONITORING": 0.0,
+          "OPERATION": 0.1977,
+          "STAGING": 0.0174,
+          "THERMAL": 0.0843,
+          "TRANSITION": 0.0
+        },
+        "dominant": "FLOW",
+        "n": 344
+      }
+    },
+    "jsd_same_head_displaced_vs_canonical": {
+      "a": 0.4574,
+      "e": 0.6567,
+      "k": 0.5744,
+      "o": 0.3763,
+      "t": 0.5818
+    }
+  },
+  "f_prefix": {
+    "displaced_prefix_top10": {
+      "BARE": {
+        "count": 345,
+        "fraction": 0.2919
+      },
+      "ch": {
+        "count": 335,
+        "fraction": 0.2834
+      },
+      "sh": {
+        "count": 129,
+        "fraction": 0.1091
+      },
+      "qo": {
+        "count": 122,
+        "fraction": 0.1032
+      },
+      "da": {
+        "count": 42,
+        "fraction": 0.0355
+      },
+      "so": {
+        "count": 33,
+        "fraction": 0.0279
+      },
+      "po": {
+        "count": 30,
+        "fraction": 0.0254
+      },
+      "to": {
+        "count": 21,
+        "fraction": 0.0178
+      },
+      "pch": {
+        "count": 12,
+        "fraction": 0.0102
+      },
+      "sa": {
+        "count": 12,
+        "fraction": 0.0102
+      }
+    },
+    "genuine_prefix_top10": {
+      "da": {
+        "count": 547,
+        "fraction": 0.2568
+      },
+      "BARE": {
+        "count": 250,
+        "fraction": 0.1174
+      },
+      "sa": {
+        "count": 185,
+        "fraction": 0.0869
+      },
+      "ch": {
+        "count": 181,
+        "fraction": 0.085
+      },
+      "qo": {
+        "count": 175,
+        "fraction": 0.0822
+      },
+      "ka": {
+        "count": 115,
+        "fraction": 0.054
+      },
+      "ta": {
+        "count": 97,
+        "fraction": 0.0455
+      },
+      "te": {
+        "count": 76,
+        "fraction": 0.0357
+      },
+      "sh": {
+        "count": 63,
+        "fraction": 0.0296
+      },
+      "ke": {
+        "count": 53,
+        "fraction": 0.0249
+      }
+    },
+    "canonical_prefix_top10": {
+      "BARE": {
+        "count": 2478,
+        "fraction": 0.193
+      },
+      "ch": {
+        "count": 2410,
+        "fraction": 0.1877
+      },
+      "sh": {
+        "count": 1777,
+        "fraction": 0.1384
+      },
+      "qo": {
+        "count": 1262,
+        "fraction": 0.0983
+      },
+      "ok": {
+        "count": 1182,
+        "fraction": 0.092
+      },
+      "ot": {
+        "count": 1155,
+        "fraction": 0.0899
+      },
+      "ol": {
+        "count": 446,
+        "fraction": 0.0347
+      },
+      "lk": {
+        "count": 340,
+        "fraction": 0.0265
+      },
+      "yk": {
+        "count": 252,
+        "fraction": 0.0196
+      },
+      "lch": {
+        "count": 243,
+        "fraction": 0.0189
+      }
+    },
+    "jsd_displaced_vs_canonical": 0.3778,
+    "jsd_displaced_vs_genuine_headless": 0.41,
+    "displaced_patterns_with": "CANONICAL_HEADED",
+    "per_displaced_head_prefix": {
+      "a": {
+        "BARE": 0.3557,
+        "ch": 0.1141,
+        "po": 0.1007,
+        "qo": 0.0805,
+        "pch": 0.047
+      },
+      "e": {
+        "BARE": 0.5486,
+        "qo": 0.2083,
+        "da": 0.0347,
+        "ch": 0.0347,
+        "po": 0.0347
+      },
+      "k": {
+        "ch": 0.4225,
+        "sh": 0.165,
+        "BARE": 0.1288,
+        "qo": 0.1167,
+        "so": 0.0523
+      },
+      "o": {
+        "BARE": 0.6127,
+        "da": 0.0983,
+        "qo": 0.0405,
+        "ch": 0.0347,
+        "ta": 0.0289
+      },
+      "t": {
+        "ch": 0.4429,
+        "BARE": 0.1963,
+        "sh": 0.1644,
+        "qo": 0.0685,
+        "sa": 0.0183
+      }
+    },
+    "displaced_bare_rate": 0.2919,
+    "genuine_bare_rate": 0.1174,
+    "canonical_bare_rate": 0.193
+  },
+  "g_position": {
+    "canonical_position": {
+      "mean_pos": 0.4983,
+      "initial_rate": 0.093,
+      "final_rate": 0.0917,
+      "n": 12841
+    },
+    "displaced_position": {
+      "mean_pos": 0.5119,
+      "initial_rate": 0.1404,
+      "final_rate": 0.1294,
+      "n": 1182
+    },
+    "genuine_headless_position": {
+      "mean_pos": 0.5036,
+      "initial_rate": 0.1845,
+      "final_rate": 0.1418,
+      "n": 2130
+    },
+    "mw_displaced_vs_canonical_p": 0.18678813688589946,
+    "mw_displaced_vs_genuine_p": 0.5033564997999804
+  },
+  "h_hazard": {
+    "canonical_hazard": {
+      "n": 12841,
+      "high_frame_fraction": 0.2895,
+      "r_terminal_fraction": 0.0909
+    },
+    "displaced_hazard": {
+      "n": 1182,
+      "high_frame_fraction": 0.0008,
+      "r_terminal_fraction": 0.0144
+    },
+    "genuine_headless_hazard": {
+      "n": 2130,
+      "high_frame_fraction": 0.3174,
+      "r_terminal_fraction": 0.0136
+    },
+    "per_displaced_head_hazard": {
+      "a": {
+        "n": 149,
+        "high_frame_fraction": 0.0,
+        "r_terminal_fraction": 0.0805
+      },
+      "e": {
+        "n": 144,
+        "high_frame_fraction": 0.0,
+        "r_terminal_fraction": 0.0069
+      },
+      "k": {
+        "n": 497,
+        "high_frame_fraction": 0.0,
+        "r_terminal_fraction": 0.0
+      },
+      "o": {
+        "n": 173,
+        "high_frame_fraction": 0.0,
+        "r_terminal_fraction": 0.0231
+      },
+      "t": {
+        "n": 219,
+        "high_frame_fraction": 0.0046,
+        "r_terminal_fraction": 0.0
+      }
+    }
+  },
+  "i_suffix": {
+    "canonical_suffix": {
+      "n": 12841,
+      "suffix_rate": 0.3573
+    },
+    "displaced_suffix": {
+      "n": 1182,
+      "suffix_rate": 0.8976
+    },
+    "genuine_headless_suffix": {
+      "n": 2130,
+      "suffix_rate": 0.2404
+    },
+    "per_displaced_head_suffix": {
+      "a": {
+        "n": 149,
+        "suffix_rate": 0.9262
+      },
+      "e": {
+        "n": 144,
+        "suffix_rate": 0.8542
+      },
+      "k": {
+        "n": 497,
+        "suffix_rate": 0.9678
+      },
+      "o": {
+        "n": 173,
+        "suffix_rate": 0.6358
+      },
+      "t": {
+        "n": 219,
+        "suffix_rate": 0.9543
+      }
+    },
+    "per_pseudo_head_suffix": {
+      "c": {
+        "n": 533,
+        "suffix_rate": 0.9625
+      },
+      "d": {
+        "n": 104,
+        "suffix_rate": 0.8269
+      },
+      "f": {
+        "n": 14,
+        "suffix_rate": 0.7857
+      },
+      "g": {
+        "n": 1,
+        "suffix_rate": 1.0
+      },
+      "h": {
+        "n": 8,
+        "suffix_rate": 0.875
+      },
+      "i": {
+        "n": 21,
+        "suffix_rate": 0.9048
+      },
+      "l": {
+        "n": 216,
+        "suffix_rate": 0.838
+      },
+      "p": {
+        "n": 50,
+        "suffix_rate": 0.94
+      },
+      "q": {
+        "n": 96,
+        "suffix_rate": 0.7917
+      },
+      "r": {
+        "n": 67,
+        "suffix_rate": 0.8507
+      },
+      "s": {
+        "n": 21,
+        "suffix_rate": 0.8095
+      },
+      "x": {
+        "n": 1,
+        "suffix_rate": 1.0
+      },
+      "y": {
+        "n": 50,
+        "suffix_rate": 0.9
+      }
+    }
+  },
+  "j_predictors": {
+    "displacement_rate_by_pseudo_head": {
+      "c": {
+        "total": 612,
+        "displaced": 533,
+        "rate": 0.8709
+      },
+      "d": {
+        "total": 805,
+        "displaced": 104,
+        "rate": 0.1292
+      },
+      "f": {
+        "total": 44,
+        "displaced": 14,
+        "rate": 0.3182
+      },
+      "h": {
+        "total": 16,
+        "displaced": 8,
+        "rate": 0.5
+      },
+      "i": {
+        "total": 918,
+        "displaced": 21,
+        "rate": 0.0229
+      },
+      "l": {
+        "total": 428,
+        "displaced": 216,
+        "rate": 0.5047
+      },
+      "p": {
+        "total": 157,
+        "displaced": 50,
+        "rate": 0.3185
+      },
+      "q": {
+        "total": 104,
+        "displaced": 96,
+        "rate": 0.9231
+      },
+      "r": {
+        "total": 122,
+        "displaced": 67,
+        "rate": 0.5492
+      },
+      "s": {
+        "total": 32,
+        "displaced": 21,
+        "rate": 0.6562
+      },
+      "y": {
+        "total": 71,
+        "displaced": 50,
+        "rate": 0.7042
+      }
+    },
+    "displacement_rate_by_terminal": {
+      "bare": {
+        "total": 1082,
+        "displaced": 908,
+        "rate": 0.8392
+      },
+      "h": {
+        "total": 537,
+        "displaced": 233,
+        "rate": 0.4339
+      },
+      "l": {
+        "total": 33,
+        "displaced": 16,
+        "rate": 0.4848
+      },
+      "m": {
+        "total": 11,
+        "displaced": 2,
+        "rate": 0.1818
+      },
+      "n": {
+        "total": 828,
+        "displaced": 3,
+        "rate": 0.0036
+      },
+      "r": {
+        "total": 46,
+        "displaced": 17,
+        "rate": 0.3696
+      },
+      "y": {
+        "total": 775,
+        "displaced": 3,
+        "rate": 0.0039
+      }
+    },
+    "displacement_rate_by_prefix": {
+      "BARE": {
+        "total": 595,
+        "displaced": 345,
+        "rate": 0.5798
+      },
+      "al": {
+        "total": 16,
+        "displaced": 4,
+        "rate": 0.25
+      },
+      "ch": {
+        "total": 516,
+        "displaced": 335,
+        "rate": 0.6492
+      },
+      "ct": {
+        "total": 14,
+        "displaced": 8,
+        "rate": 0.5714
+      },
+      "da": {
+        "total": 589,
+        "displaced": 42,
+        "rate": 0.0713
+      },
+      "dch": {
+        "total": 11,
+        "displaced": 4,
+        "rate": 0.3636
+      },
+      "do": {
+        "total": 32,
+        "displaced": 11,
+        "rate": 0.3438
+      },
+      "ka": {
+        "total": 126,
+        "displaced": 11,
+        "rate": 0.0873
+      },
+      "kch": {
+        "total": 23,
+        "displaced": 1,
+        "rate": 0.0435
+      },
+      "ke": {
+        "total": 58,
+        "displaced": 5,
+        "rate": 0.0862
+      },
+      "ko": {
+        "total": 18,
+        "displaced": 6,
+        "rate": 0.3333
+      },
+      "lch": {
+        "total": 22,
+        "displaced": 2,
+        "rate": 0.0909
+      },
+      "ok": {
+        "total": 33,
+        "displaced": 3,
+        "rate": 0.0909
+      },
+      "ol": {
+        "total": 59,
+        "displaced": 9,
+        "rate": 0.1525
+      },
+      "ot": {
+        "total": 39,
+        "displaced": 4,
+        "rate": 0.1026
+      },
+      "pch": {
+        "total": 32,
+        "displaced": 12,
+        "rate": 0.375
+      },
+      "po": {
+        "total": 62,
+        "displaced": 30,
+        "rate": 0.4839
+      },
+      "qo": {
+        "total": 297,
+        "displaced": 122,
+        "rate": 0.4108
+      },
+      "sa": {
+        "total": 197,
+        "displaced": 12,
+        "rate": 0.0609
+      },
+      "sh": {
+        "total": 192,
+        "displaced": 129,
+        "rate": 0.6719
+      },
+      "so": {
+        "total": 69,
+        "displaced": 33,
+        "rate": 0.4783
+      },
+      "ta": {
+        "total": 107,
+        "displaced": 10,
+        "rate": 0.0935
+      },
+      "tch": {
+        "total": 30,
+        "displaced": 3,
+        "rate": 0.1
+      },
+      "te": {
+        "total": 84,
+        "displaced": 8,
+        "rate": 0.0952
+      },
+      "to": {
+        "total": 43,
+        "displaced": 21,
+        "rate": 0.4884
+      },
+      "yk": {
+        "total": 10,
+        "displaced": 3,
+        "rate": 0.3
+      }
+    },
+    "mean_length_displaced": 2.974,
+    "mean_length_genuine": 2.458,
+    "length_difference": 0.516
+  },
+  "k_alternative_mode": {
+    "total_testable": 1084,
+    "pseudo_head_correct": 380,
+    "pseudo_head_accuracy": 0.3506,
+    "displaced_head_correct": 142,
+    "displaced_head_accuracy": 0.131,
+    "both_correct": 3,
+    "neither_correct": 565,
+    "verdict": "PSEUDO_HEAD_DOMINATES",
+    "accuracy_ratio": 2.676
+  },
+  "l_displaced_vs_pseudo": {
+    "head_atom_comparisons": {
+      "a": {
+        "displaced_dominant": "MARKING",
+        "canonical_dominant": "FLOW",
+        "same_dominant": false,
+        "jsd": 0.4574,
+        "displaced_n": 146,
+        "canonical_n": 2983,
+        "displaced_dist": {
+          "FLOW": 0.2534,
+          "MARKING": 0.3493,
+          "STAGING": 0.226,
+          "THERMAL": 0.0068,
+          "TRANSITION": 0.1644
+        },
+        "canonical_dist": {
+          "CONTAINMENT": 0.006,
+          "FLOW": 0.5538,
+          "MARKING": 0.0121,
+          "MONITORING": 0.0013,
+          "OPERATION": 0.0017,
+          "STAGING": 0.0174,
+          "THERMAL": 0.006,
+          "TRANSITION": 0.4016
+        }
+      },
+      "e": {
+        "displaced_dominant": "MARKING",
+        "canonical_dominant": "OPERATION",
+        "same_dominant": false,
+        "jsd": 0.6567,
+        "displaced_n": 95,
+        "canonical_n": 6135,
+        "displaced_dist": {
+          "FLOW": 0.0211,
+          "MARKING": 0.7053,
+          "MONITORING": 0.0211,
+          "STAGING": 0.0947,
+          "THERMAL": 0.1579
+        },
+        "canonical_dist": {
+          "CONTAINMENT": 0.0235,
+          "FLOW": 0.0761,
+          "MARKING": 0.0321,
+          "MONITORING": 0.0143,
+          "OPERATION": 0.3674,
+          "STAGING": 0.0143,
+          "THERMAL": 0.2548,
+          "TRANSITION": 0.2174
+        }
+      },
+      "k": {
+        "displaced_dominant": "OPERATION",
+        "canonical_dominant": "THERMAL",
+        "same_dominant": false,
+        "jsd": 0.5745,
+        "displaced_n": 483,
+        "canonical_n": 1017,
+        "displaced_dist": {
+          "CONTAINMENT": 0.2629,
+          "FLOW": 0.0021,
+          "MARKING": 0.0787,
+          "MONITORING": 0.0062,
+          "OPERATION": 0.4079,
+          "STAGING": 0.147,
+          "THERMAL": 0.0932,
+          "TRANSITION": 0.0021
+        },
+        "canonical_dist": {
+          "CONTAINMENT": 0.0324,
+          "FLOW": 0.0669,
+          "MARKING": 0.0324,
+          "MONITORING": 0.0256,
+          "OPERATION": 0.0197,
+          "STAGING": 0.0895,
+          "THERMAL": 0.706,
+          "TRANSITION": 0.0275
+        }
+      },
+      "o": {
+        "displaced_dominant": "MARKING",
+        "canonical_dominant": "STAGING",
+        "same_dominant": false,
+        "jsd": 0.3763,
+        "displaced_n": 152,
+        "canonical_n": 2141,
+        "displaced_dist": {
+          "FLOW": 0.2566,
+          "MARKING": 0.3224,
+          "MONITORING": 0.0197,
+          "OPERATION": 0.0395,
+          "STAGING": 0.1053,
+          "THERMAL": 0.0329,
+          "TRANSITION": 0.2237
+        },
+        "canonical_dist": {
+          "CONTAINMENT": 0.0476,
+          "FLOW": 0.2373,
+          "MARKING": 0.134,
+          "MONITORING": 0.0294,
+          "OPERATION": 0.121,
+          "STAGING": 0.383,
+          "THERMAL": 0.0294,
+          "TRANSITION": 0.0182
+        }
+      },
+      "t": {
+        "displaced_dominant": "MONITORING",
+        "canonical_dominant": "FLOW",
+        "same_dominant": false,
+        "jsd": 0.5818,
+        "displaced_n": 209,
+        "canonical_n": 344,
+        "displaced_dist": {
+          "FLOW": 0.2488,
+          "MARKING": 0.2536,
+          "MONITORING": 0.4641,
+          "STAGING": 0.0191,
+          "THERMAL": 0.0048,
+          "TRANSITION": 0.0096
+        },
+        "canonical_dist": {
+          "FLOW": 0.6512,
+          "MARKING": 0.0494,
+          "OPERATION": 0.1977,
+          "STAGING": 0.0174,
+          "THERMAL": 0.0843
+        }
+      }
+    },
+    "pseudo_head_comparisons": {
+      "c": {
+        "displaced_dominant": "OPERATION",
+        "genuine_dominant": "MONITORING",
+        "same_dominant": false,
+        "jsd": 0.5466,
+        "displaced_n": 533,
+        "genuine_n": 79
+      },
+      "d": {
+        "displaced_dominant": "MARKING",
+        "genuine_dominant": "CONTAINMENT",
+        "same_dominant": false,
+        "jsd": 0.7865,
+        "displaced_n": 103,
+        "genuine_n": 701
+      },
+      "f": {
+        "displaced_dominant": "MARKING",
+        "genuine_dominant": "MARKING",
+        "same_dominant": true,
+        "jsd": 0.3331,
+        "displaced_n": 14,
+        "genuine_n": 30
+      },
+      "h": {
+        "displaced_dominant": "MONITORING",
+        "genuine_dominant": "MONITORING",
+        "same_dominant": true,
+        "jsd": 0.5388,
+        "displaced_n": 8,
+        "genuine_n": 8
+      },
+      "i": {
+        "displaced_dominant": "FLOW",
+        "genuine_dominant": "STAGING",
+        "same_dominant": false,
+        "jsd": 0.5036,
+        "displaced_n": 21,
+        "genuine_n": 897
+      },
+      "l": {
+        "displaced_dominant": "STAGING",
+        "genuine_dominant": "OPERATION",
+        "same_dominant": false,
+        "jsd": 0.4947,
+        "displaced_n": 216,
+        "genuine_n": 212
+      },
+      "p": {
+        "displaced_dominant": "MARKING",
+        "genuine_dominant": "MARKING",
+        "same_dominant": true,
+        "jsd": 0.316,
+        "displaced_n": 50,
+        "genuine_n": 107
+      },
+      "r": {
+        "displaced_dominant": "FLOW",
+        "genuine_dominant": "TRANSITION",
+        "same_dominant": false,
+        "jsd": 0.5016,
+        "displaced_n": 67,
+        "genuine_n": 55
+      },
+      "s": {
+        "displaced_dominant": "STAGING",
+        "genuine_dominant": "MONITORING",
+        "same_dominant": false,
+        "jsd": 0.5417,
+        "displaced_n": 21,
+        "genuine_n": 11
+      },
+      "y": {
+        "displaced_dominant": "FLOW",
+        "genuine_dominant": "MARKING",
+        "same_dominant": false,
+        "jsd": 0.5375,
+        "displaced_n": 50,
+        "genuine_n": 21
+      }
+    },
+    "summary": {
+      "same_dominant_head_matches": 0,
+      "total_head_comparisons": 5,
+      "mean_jsd_head": 0.5293,
+      "same_dominant_pseudo_matches": 3,
+      "total_pseudo_comparisons": 10,
+      "mean_jsd_pseudo": 0.51
+    }
+  },
+  "synthesis": {
+    "verdict": "HEAD_SET_CHARACTER_NOT_FUNCTIONING_AS_HEAD",
+    "explanation": "Displaced HEAD-set characters are NOT functioning as domain selectors. The first atom (pseudo-HEAD) determines category. The HEAD-set character in non-initial position carries a different functional role (modifier/terminal).",
+    "evidence_real_mode": [
+      "PREFIX profile patterns with canonical headed tokens"
+    ],
+    "evidence_coincidence": [
+      "Pseudo-HEAD predicts category 2.68x better than displaced HEAD (35.1% vs 13.1%)",
+      "Displaced tokens are MORE similar to same-pseudo-HEAD genuine tokens (JSD=0.5100) than to same-HEAD canonical tokens (JSD=0.5293)",
+      "Same dominant category: pseudo-HEAD 3/10 (30%) vs HEAD 0/5 (0%)"
+    ],
+    "scores": {
+      "real_mode": 1,
+      "coincidence": 3
+    }
+  }
+}

@@ -5152,6 +5152,34 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 
 ---
 
+### Displaced HEAD Grammar (C1494-C1498) -- Phase: DISPLACED_HEAD_GRAMMAR (Phase 537)
+
+> **Summary:** Phase 537 resolves C1493's finding that 35.7% of headless compound MIDDLEs contain HEAD atoms {a,e,o,k,t} at non-initial positions. The verdict is HEAD_SET_CHARACTER_NOT_FUNCTIONING_AS_HEAD: displaced HEAD-set atoms are NOT functioning as domain selectors. The pseudo-HEAD (first atom) predicts category 2.68x better than the displaced HEAD (35.1% vs 13.1%, N=1,084). 0/5 displaced HEADs match their canonical category dominant. k/t are enriched 5.3x/6.9x (functioning as TERMINALS per C1478), e is depleted 0.26x (almost never terminal). c-modifier is the primary displacement context (87.1%), with ck/ct as the structural backbone. Suffix rate is extreme (89.8% vs 24.0% genuine headless). n/y-terminals categorically exclude displacement (0.36-0.39% rate). There is no alternative MOD+HEAD+TERM compositional order -- the headless domain is genuinely headless.
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1494 | Displaced HEAD k/t enrichment with inverted frequency | 2 | B, MIDDLE, headless, displaced, HEAD, k, t, e, frequency, inversion | k 5.31x enriched (42.0% vs 7.9% canonical), t 6.90x (18.5% vs 2.7%), e 0.26x depleted (12.2% vs 47.8%). 1,182 tokens, 334 types. Maps to k/t dual-role (C1478). |
+| 1495 | HEAD-set atoms do not function as domain selectors when displaced | 2 | B, MIDDLE, headless, displaced, HEAD, category, pseudo-HEAD, domain, prediction | Pseudo-HEAD accuracy 35.1% vs displaced HEAD 13.1% (2.68x ratio). 0/5 match canonical dominant. Same-pseudo-HEAD JSD=0.510 < same-HEAD JSD=0.529. No alternative MOD+HEAD+TERM order. |
+| 1496 | c-modifier primary displacement context | 2 | B, MIDDLE, headless, displaced, HEAD, c-modifier, k, t, ck, ct, context | c-initial 87.1% displacement rate (533/612). c+k=365, c+t=167. Dominant MIDDLEs: ck=197, ckh=127, ct=95, cth=49. i-initial only 2.3%. c's modifier-terminal affinity (h-compatible) vs i's (n-exclusive) explains split. |
+| 1497 | Displaced HEAD extreme suffix rate | 2 | B, MIDDLE, headless, displaced, HEAD, suffix, rate, morphology | 89.8% suffix rate vs canonical 35.7% (2.51x) vs genuine headless 24.0% (3.74x). k-displaced 96.8%, t 95.4%. Driven by bare-terminal transparency (C1440). PARAMETRIC not BINARY (C1492). |
+| 1498 | n/y-terminal categorical displacement exclusion | 2 | B, MIDDLE, headless, displaced, HEAD, terminal, n, y, bare, exclusion, gate | n 0.36% (3/828), y 0.39% (3/775) displacement rate. bare 83.9% (908/1082). 200x+ range. n/y exclusive modifier partnerships (C1484) leave no slot for HEAD atoms. |
+
+**Phase 537 findings (Displaced HEAD Grammar, 12 analyses):**
+- T1: Census. 1,182 displaced-HEAD tokens (35.7% of headless), 334 types. k=42.0%, t=18.5%, o=14.6%, a=12.6%, e=12.2%.
+- T2: Preceding context. M(modifier) 52.0%, T(terminal) 32.7%, H(HEAD) 9.6%. c=38.5% dominant preceding atom.
+- T3: Patterns. MH 28.9%, MHT 16.4%, TH 12.3%. 125 unique patterns. H-final 50.3%.
+- T4: HEAD enrichment. k 5.31x, t 6.90x enriched. e 0.26x, a 0.54x depleted. Inverted vs canonical.
+- T5: Category. JSD displaced vs canonical 0.347. JSD displaced vs genuine 0.345. 0/5 same dominant.
+- T6: PREFIX. Displaced closer to canonical (JSD=0.378) than genuine headless (JSD=0.410). ch/sh/qo dominated.
+- T7: Position. Mean displaced 0.512, canonical 0.498, genuine 0.504. Not significant (p=0.187).
+- T8: Hazard. Displaced 0.08% high-frame vs 28.9% canonical. Categorically safe.
+- T9: Suffix. Displaced 89.8% vs canonical 35.7% vs genuine 24.0%. Strongest morphological signature.
+- T10: Predictors. c=87.1%, i=2.3% displacement rate. bare-terminal 83.9%, n/y <0.4%.
+- T11: Category prediction. Pseudo-HEAD 35.1% vs displaced HEAD 13.1% (2.68x). PSEUDO_HEAD_DOMINATES.
+- T12: Detailed comparison. 0/5 HEAD matches. 3/10 pseudo-HEAD matches. Pseudo controls category.
+
+---
+
 ## Navigation
 
 ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)

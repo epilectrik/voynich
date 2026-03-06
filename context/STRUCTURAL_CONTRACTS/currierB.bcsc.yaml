@@ -3,7 +3,7 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.29"
+  version: "3.30"
   date: "2026-03-06"
   status: "ACTIVE"
   layer_type: "grammar contract"
@@ -688,12 +688,12 @@ middle_instruction_encoding:
       ot: "0.8% of headless vs 7.2% headed (depleted)"
       provenance: "C1491"
     suffix_bifurcation: "d/i bare (<15% suffix, binary ops) vs c/p/f suffixed (>93%, parametric ops); C1492"
-    internal_structure: "MT 46.7%, T-only 19.3%, MMT 16.3%, MMMT+ 5.1%. 35.7% contain displaced HEAD atoms; C1493"
+    internal_structure: "MT 46.7%, T-only 19.3%, MMT 16.3%, MMMT+ 5.1%. 35.7% contain displaced HEAD atoms but Phase 537 proved these are NOT functioning as HEADs (pseudo-HEAD predicts category 2.68x better than displaced HEAD; C1493, C1494, C1495)"
     modifier_ordering: "Same grammar (61.9% vs 70.1% headed); c atom primary violator"
     q_exclusion: "104 q-initial tokens are non-grammar (98% BARE, 100% UNK) — exclude"
     not_abbreviations: "HEAD recovery rejected (C1395 T2: 9.1%). Genuinely headless"
     verdict: "HEADLESS_IS_COHERENT_DOMAIN (3 coherent vs 1 grab-bag evidence points)"
-    provenance: "C1394 T8, C1397, C1488, C1489, C1490, C1491, C1492, C1493"
+    provenance: "C1394 T8, C1397, C1488, C1489, C1490, C1491, C1492, C1493, C1494, C1495, C1496, C1497, C1498"
 
   h_terminal_transparency:
     statement: "h-terminal apparent chaos (27% purity) is resolved: h is transparent, not random"

@@ -22,7 +22,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1337 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1493.
+the highest ID present is C1498.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-06 08:42
+**Generated:** 2026-03-06 09:34
 **Version:** FROZEN STATE (1337 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -1766,6 +1766,11 @@ C1490	Headless terminal profile shift	2	B, MIDDLE, headless, atom, terminal, pro
 C1491	Headless da-PREFIX near-exclusivity	2	B, MIDDLE, headless, PREFIX, da, selectivity, sa, ta
 C1492	Headless suffix bifurcation	2	B, MIDDLE, headless, suffix, bifurcation, binary, parametric
 C1493	Headless internal structure with displaced HEAD	2	B, MIDDLE, headless, internal, structure, displaced, HEAD
+C1494	Displaced HEAD k/t enrichment with inverted frequency	2	B, MIDDLE, headless, displaced, HEAD, k, t, e, frequency, inversion
+C1495	HEAD-set atoms do not function as domain selectors when displaced	2	B, MIDDLE, headless, displaced, HEAD, category, pseudo-HEAD, domain, prediction
+C1496	c-modifier primary displacement context	2	B, MIDDLE, headless, displaced, HEAD, c-modifier, k, t, ck, ct, context
+C1497	Displaced HEAD extreme suffix rate	2	B, MIDDLE, headless, displaced, HEAD, suffix, rate, morphology
+C1498	n/y-terminal categorical displacement exclusion	2	B, MIDDLE, headless, displaced, HEAD, terminal, n, y, bare, exclusion, gate
 
 ---
 
@@ -4610,7 +4615,7 @@ Only Tier 0-2 structural findings are binding.
 ---
 
 ## BCSC (Currier B Structural Contract)
-**Meta:** v3.29, ACTIVE, 61.9% of tokens, 83 folios
+**Meta:** v3.30, ACTIVE, 61.9% of tokens, 83 folios
 
 ### Guarantees (35)
 - GRAMMAR_UNIVERSAL: 49-class grammar applies to all 83 folios without exception [C121, C124]
@@ -4677,7 +4682,7 @@ Only Tier 0-2 structural findings are binding.
 ### Sections -> Constraints
 - grammar: C085, C121, C124, C411, C1004
 - morphology: C267, C382, C383, C408, C506, C522, C588, C661, C662, C777, C787, C897, C911, C929, C935, C936, C1001, C1004, C1015, C1017, C1065, C1141, C1142, C1190, C1191, C1193, C1218, C1219, C1220, C1221, C1227, C1393, C1394, C1396, C1416, C1417, C1418, C1419, C1420, C1421
-- middle_instruction_encoding: C1003, C1393, C1394, C1395, C1397, C1408, C1409, C1410, C1411, C1412, C1413, C1414, C1415, C1416, C1417, C1418, C1419, C1420, C1421, C1440, C1441, C1442, C1443, C1444, C1445, C1472, C1473, C1474, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487, C1488, C1489, C1490, C1491, C1492, C1493
+- middle_instruction_encoding: C1003, C1393, C1394, C1395, C1397, C1408, C1409, C1410, C1411, C1412, C1413, C1414, C1415, C1416, C1417, C1418, C1419, C1420, C1421, C1440, C1441, C1442, C1443, C1444, C1445, C1472, C1473, C1474, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487, C1488, C1489, C1490, C1491, C1492, C1493, C1494, C1495, C1496, C1497, C1498
 - role_taxonomy: C121, C366, C547, C550, C557, C558, C560, C562, C563, C567, C572, C573, C574, C575, C581, C582, C583, C584, C586, C587, C588, C591, C593, C594, C595, C597, C770, C777, C788, C791, C863, C864, C865, C866, C867, C868, C869
 - kernel: C089, C103, C104, C105, C332, C333, C339, C521, C1225, C1226
 - hazards: C109, C110, C111, C112, C386, C789, C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456, C1457, C1458, C1459, C1460, C1461, C1462, C1477, C1479, C1480, C1481, C1482
