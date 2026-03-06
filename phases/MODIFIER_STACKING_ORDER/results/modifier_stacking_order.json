@@ -1,0 +1,971 @@
+{
+  "phase": "Phase 531: Modifier Stacking Order",
+  "total_b_tokens": 23096,
+  "unique_middles": 1293,
+  "middles_2plus_mods": 464,
+  "tokens_2plus_mods": 2466,
+  "modifier_count_distribution": {
+    "2": 349,
+    "3": 98,
+    "4": 16,
+    "5": 1
+  },
+  "pairwise_ordering": {
+    "p_f": {
+      "pair": [
+        "p",
+        "f"
+      ],
+      "a_before_b_types": 0,
+      "b_before_a_types": 0,
+      "total_types": 0,
+      "ratio_a_before_b_types": null,
+      "a_before_b_tokens": 0,
+      "b_before_a_tokens": 0,
+      "total_tokens": 0,
+      "ratio_a_before_b_tokens": null,
+      "p_value": 1.0,
+      "c1393_prediction": "p<f",
+      "prediction_correct": null,
+      "is_strict": false
+    },
+    "p_i": {
+      "pair": [
+        "p",
+        "i"
+      ],
+      "a_before_b_types": 0,
+      "b_before_a_types": 0,
+      "total_types": 0,
+      "ratio_a_before_b_types": null,
+      "a_before_b_tokens": 0,
+      "b_before_a_tokens": 0,
+      "total_tokens": 0,
+      "ratio_a_before_b_tokens": null,
+      "p_value": 1.0,
+      "c1393_prediction": "p<i",
+      "prediction_correct": null,
+      "is_strict": false
+    },
+    "p_c": {
+      "pair": [
+        "p",
+        "c"
+      ],
+      "a_before_b_types": 0,
+      "b_before_a_types": 0,
+      "total_types": 0,
+      "ratio_a_before_b_types": null,
+      "a_before_b_tokens": 0,
+      "b_before_a_tokens": 0,
+      "total_tokens": 0,
+      "ratio_a_before_b_tokens": null,
+      "p_value": 1.0,
+      "c1393_prediction": "p<c",
+      "prediction_correct": null,
+      "is_strict": false
+    },
+    "p_d": {
+      "pair": [
+        "p",
+        "d"
+      ],
+      "a_before_b_types": 0,
+      "b_before_a_types": 0,
+      "total_types": 0,
+      "ratio_a_before_b_types": null,
+      "a_before_b_tokens": 0,
+      "b_before_a_tokens": 0,
+      "total_tokens": 0,
+      "ratio_a_before_b_tokens": null,
+      "p_value": 1.0,
+      "c1393_prediction": "p<d",
+      "prediction_correct": null,
+      "is_strict": false
+    },
+    "p_s": {
+      "pair": [
+        "p",
+        "s"
+      ],
+      "a_before_b_types": 26,
+      "b_before_a_types": 3,
+      "total_types": 29,
+      "ratio_a_before_b_types": 0.8966,
+      "a_before_b_tokens": 36,
+      "b_before_a_tokens": 3,
+      "total_tokens": 39,
+      "ratio_a_before_b_tokens": 0.9231,
+      "p_value": 1.946e-05,
+      "c1393_prediction": "p<s",
+      "prediction_correct": true,
+      "is_strict": false
+    },
+    "f_i": {
+      "pair": [
+        "f",
+        "i"
+      ],
+      "a_before_b_types": 8,
+      "b_before_a_types": 6,
+      "total_types": 14,
+      "ratio_a_before_b_types": 0.5714,
+      "a_before_b_tokens": 8,
+      "b_before_a_tokens": 8,
+      "total_tokens": 16,
+      "ratio_a_before_b_tokens": 0.5,
+      "p_value": 0.79052734,
+      "c1393_prediction": "f<i",
+      "prediction_correct": true,
+      "is_strict": false
+    },
+    "f_c": {
+      "pair": [
+        "f",
+        "c"
+      ],
+      "a_before_b_types": 0,
+      "b_before_a_types": 0,
+      "total_types": 0,
+      "ratio_a_before_b_types": null,
+      "a_before_b_tokens": 0,
+      "b_before_a_tokens": 0,
+      "total_tokens": 0,
+      "ratio_a_before_b_tokens": null,
+      "p_value": 1.0,
+      "c1393_prediction": "f<c",
+      "prediction_correct": null,
+      "is_strict": false
+    },
+    "f_d": {
+      "pair": [
+        "f",
+        "d"
+      ],
+      "a_before_b_types": 0,
+      "b_before_a_types": 0,
+      "total_types": 0,
+      "ratio_a_before_b_types": null,
+      "a_before_b_tokens": 0,
+      "b_before_a_tokens": 0,
+      "total_tokens": 0,
+      "ratio_a_before_b_tokens": null,
+      "p_value": 1.0,
+      "c1393_prediction": "f<d",
+      "prediction_correct": null,
+      "is_strict": false
+    },
+    "f_s": {
+      "pair": [
+        "f",
+        "s"
+      ],
+      "a_before_b_types": 9,
+      "b_before_a_types": 2,
+      "total_types": 11,
+      "ratio_a_before_b_types": 0.8182,
+      "a_before_b_tokens": 10,
+      "b_before_a_tokens": 2,
+      "total_tokens": 12,
+      "ratio_a_before_b_tokens": 0.8333,
+      "p_value": 0.06542969,
+      "c1393_prediction": "f<s",
+      "prediction_correct": true,
+      "is_strict": false
+    },
+    "i_c": {
+      "pair": [
+        "i",
+        "c"
+      ],
+      "a_before_b_types": 0,
+      "b_before_a_types": 0,
+      "total_types": 0,
+      "ratio_a_before_b_types": null,
+      "a_before_b_tokens": 0,
+      "b_before_a_tokens": 0,
+      "total_tokens": 0,
+      "ratio_a_before_b_tokens": null,
+      "p_value": 1.0,
+      "c1393_prediction": "i<c",
+      "prediction_correct": null,
+      "is_strict": false
+    },
+    "i_d": {
+      "pair": [
+        "i",
+        "d"
+      ],
+      "a_before_b_types": 0,
+      "b_before_a_types": 0,
+      "total_types": 0,
+      "ratio_a_before_b_types": null,
+      "a_before_b_tokens": 0,
+      "b_before_a_tokens": 0,
+      "total_tokens": 0,
+      "ratio_a_before_b_tokens": null,
+      "p_value": 1.0,
+      "c1393_prediction": "i<d",
+      "prediction_correct": null,
+      "is_strict": false
+    },
+    "i_s": {
+      "pair": [
+        "i",
+        "s"
+      ],
+      "a_before_b_types": 10,
+      "b_before_a_types": 7,
+      "total_types": 17,
+      "ratio_a_before_b_types": 0.5882,
+      "a_before_b_tokens": 13,
+      "b_before_a_tokens": 8,
+      "total_tokens": 21,
+      "ratio_a_before_b_tokens": 0.619,
+      "p_value": 0.62905884,
+      "c1393_prediction": "i<s",
+      "prediction_correct": true,
+      "is_strict": false
+    },
+    "c_d": {
+      "pair": [
+        "c",
+        "d"
+      ],
+      "a_before_b_types": 71,
+      "b_before_a_types": 28,
+      "total_types": 99,
+      "ratio_a_before_b_types": 0.7172,
+      "a_before_b_tokens": 119,
+      "b_before_a_tokens": 38,
+      "total_tokens": 157,
+      "ratio_a_before_b_tokens": 0.758,
+      "p_value": 1.549e-05,
+      "c1393_prediction": "c<d",
+      "prediction_correct": true,
+      "is_strict": false
+    },
+    "c_s": {
+      "pair": [
+        "c",
+        "s"
+      ],
+      "a_before_b_types": 26,
+      "b_before_a_types": 7,
+      "total_types": 33,
+      "ratio_a_before_b_types": 0.7879,
+      "a_before_b_tokens": 43,
+      "b_before_a_tokens": 7,
+      "total_tokens": 50,
+      "ratio_a_before_b_tokens": 0.86,
+      "p_value": 0.00094141,
+      "c1393_prediction": "c<s",
+      "prediction_correct": true,
+      "is_strict": false
+    },
+    "d_s": {
+      "pair": [
+        "d",
+        "s"
+      ],
+      "a_before_b_types": 18,
+      "b_before_a_types": 28,
+      "total_types": 46,
+      "ratio_a_before_b_types": 0.3913,
+      "a_before_b_tokens": 22,
+      "b_before_a_tokens": 40,
+      "total_tokens": 62,
+      "ratio_a_before_b_tokens": 0.3548,
+      "p_value": 0.14036866,
+      "c1393_prediction": "d<s",
+      "prediction_correct": false,
+      "is_strict": false
+    }
+  },
+  "c1393_gradient": [
+    "p",
+    "f",
+    "i",
+    "c",
+    "d",
+    "s"
+  ],
+  "c1393_prediction_accuracy": "6/7",
+  "all_strict": false,
+  "best_type_ordering": [
+    "p",
+    "f",
+    "c",
+    "s",
+    "d",
+    "i"
+  ],
+  "best_type_score": "0.6880",
+  "best_token_ordering": [
+    "p",
+    "f",
+    "c",
+    "s",
+    "d",
+    "i"
+  ],
+  "best_token_score": "0.7593",
+  "c1393_is_best": false,
+  "tied_permutations": 1,
+  "transitivity_violations": 1,
+  "strict_pairs": [],
+  "near_strict_pairs": [],
+  "moderate_pairs": [
+    [
+      "p",
+      "s"
+    ],
+    [
+      "f",
+      "s"
+    ],
+    [
+      "c",
+      "s"
+    ]
+  ],
+  "weak_pairs": [
+    [
+      "f",
+      "i"
+    ],
+    [
+      "i",
+      "s"
+    ],
+    [
+      "c",
+      "d"
+    ]
+  ],
+  "reversed_pairs": [
+    [
+      "d",
+      "s"
+    ]
+  ],
+  "empty_pairs": [
+    [
+      "p",
+      "f"
+    ],
+    [
+      "p",
+      "i"
+    ],
+    [
+      "p",
+      "c"
+    ],
+    [
+      "p",
+      "d"
+    ],
+    [
+      "f",
+      "c"
+    ],
+    [
+      "f",
+      "d"
+    ],
+    [
+      "i",
+      "c"
+    ],
+    [
+      "i",
+      "d"
+    ]
+  ],
+  "three_plus_mods": {
+    "types": 115,
+    "gradient_compliant": 49,
+    "gradient_violations": 66
+  },
+  "i_repeat_compounds": {
+    "count": 63,
+    "examples": [
+      {
+        "middle": "odaii",
+        "mod_seq": [
+          "d",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "iin",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 560
+      },
+      {
+        "middle": "aiin",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 834
+      },
+      {
+        "middle": "raii",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 2
+      },
+      {
+        "middle": "ii",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 23
+      },
+      {
+        "middle": "aiict",
+        "mod_seq": [
+          "i",
+          "i",
+          "c"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "aii",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 32
+      },
+      {
+        "middle": "aiifcho",
+        "mod_seq": [
+          "i",
+          "i",
+          "f",
+          "c"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "iiin",
+        "mod_seq": [
+          "i",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "aiirch",
+        "mod_seq": [
+          "i",
+          "i",
+          "c"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "okaii",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "kaii",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 4
+      },
+      {
+        "middle": "oiin",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 32
+      },
+      {
+        "middle": "llaii",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "loii",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "oii",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 4
+      },
+      {
+        "middle": "iir",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 3
+      },
+      {
+        "middle": "olaiino",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "oiiin",
+        "mod_seq": [
+          "i",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "edaii",
+        "mod_seq": [
+          "d",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "aiino",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "raiiin",
+        "mod_seq": [
+          "i",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "iinl",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "taii",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 3
+      },
+      {
+        "middle": "opaii",
+        "mod_seq": [
+          "p",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "ofaiino",
+        "mod_seq": [
+          "f",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "aiiinro",
+        "mod_seq": [
+          "i",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "roii",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "aiisock",
+        "mod_seq": [
+          "i",
+          "i",
+          "s",
+          "c"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "aiiro",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "yaii",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "aiir",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 2
+      },
+      {
+        "middle": "paii",
+        "mod_seq": [
+          "p",
+          "i",
+          "i"
+        ],
+        "tokens": 2
+      },
+      {
+        "middle": "paiik",
+        "mod_seq": [
+          "p",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "iiil",
+        "mod_seq": [
+          "i",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "aiil",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "iii",
+        "mod_seq": [
+          "i",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "iish",
+        "mod_seq": [
+          "i",
+          "i",
+          "s"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "iiiolk",
+        "mod_seq": [
+          "i",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "aiik",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 2
+      },
+      {
+        "middle": "ofaii",
+        "mod_seq": [
+          "f",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "aiilo",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "aiic",
+        "mod_seq": [
+          "i",
+          "i",
+          "c"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "oaii",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 3
+      },
+      {
+        "middle": "aiiik",
+        "mod_seq": [
+          "i",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "opaiir",
+        "mod_seq": [
+          "p",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "irai",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "aiisod",
+        "mod_seq": [
+          "i",
+          "i",
+          "s",
+          "d"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "kii",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 2
+      },
+      {
+        "middle": "aiiikh",
+        "mod_seq": [
+          "i",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "faiir",
+        "mod_seq": [
+          "f",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "aiira",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "akaiik",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "kaiii",
+        "mod_seq": [
+          "i",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "dii",
+        "mod_seq": [
+          "d",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "aiip",
+        "mod_seq": [
+          "i",
+          "i",
+          "p"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "iri",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "liir",
+        "mod_seq": [
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "eodoiid",
+        "mod_seq": [
+          "d",
+          "i",
+          "i",
+          "d"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "ofchedaii",
+        "mod_seq": [
+          "f",
+          "c",
+          "d",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "aiisa",
+        "mod_seq": [
+          "i",
+          "i",
+          "s"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "paiino",
+        "mod_seq": [
+          "p",
+          "i",
+          "i"
+        ],
+        "tokens": 1
+      },
+      {
+        "middle": "iirch",
+        "mod_seq": [
+          "i",
+          "i",
+          "c"
+        ],
+        "tokens": 1
+      }
+    ]
+  },
+  "per_modifier_position_stats": {
+    "p": {
+      "mean_pos_type": 0.2613,
+      "n_type": 155,
+      "c1393_mean_pos": 0.38
+    },
+    "f": {
+      "mean_pos_type": 0.4077,
+      "n_type": 74,
+      "c1393_mean_pos": 0.5
+    },
+    "i": {
+      "mean_pos_type": 0.5319,
+      "n_type": 217,
+      "c1393_mean_pos": 0.44
+    },
+    "c": {
+      "mean_pos_type": 0.5075,
+      "n_type": 279,
+      "c1393_mean_pos": 0.4
+    },
+    "d": {
+      "mean_pos_type": 0.5887,
+      "n_type": 218,
+      "c1393_mean_pos": 0.54
+    },
+    "s": {
+      "mean_pos_type": 0.6314,
+      "n_type": 118,
+      "c1393_mean_pos": 0.64
+    }
+  }
+}

@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1306 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1307 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1471.
+the highest ID present is C1472.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1306 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1307 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1306 validated constraints are present as canonical one-line claims with tier
+1307 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-05 21:42
-**Version:** FROZEN STATE (1306 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-05 22:20
+**Version:** FROZEN STATE (1307 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1744,6 +1744,7 @@ C1468	Header infrastructure-first composition	2	B, paragraph, header, hazard, LO
 C1469	Line hazard gradient paragraph-independent	2	B, line, paragraph, zone, hazard, independence, nested
 C1470	Cross-line hazard correlation is folio-mediated	2	B, line, hazard, cross-line, folio, independence
 C1471	No compensatory safe opening after hazardous closure	2	B, line, hazard, cross-line, e->y, recovery, compensatory
+C1472	Modifier co-occurrence avoidance dominates ordering	2	B, grammar, composition
 
 ---
 
@@ -4655,7 +4656,7 @@ Only Tier 0-2 structural findings are binding.
 ### Sections -> Constraints
 - grammar: C085, C121, C124, C411, C1004
 - morphology: C267, C382, C383, C408, C506, C522, C588, C661, C662, C777, C787, C897, C911, C929, C935, C936, C1001, C1004, C1015, C1017, C1065, C1141, C1142, C1190, C1191, C1193, C1218, C1219, C1220, C1221, C1227, C1393, C1394, C1396, C1416, C1417, C1418, C1419, C1420, C1421
-- middle_instruction_encoding: C1003, C1393, C1394, C1395, C1397, C1408, C1409, C1410, C1411, C1412, C1413, C1414, C1415, C1416, C1417, C1418, C1419, C1420, C1421, C1440, C1441, C1442, C1443, C1444, C1445
+- middle_instruction_encoding: C1003, C1393, C1394, C1395, C1397, C1408, C1409, C1410, C1411, C1412, C1413, C1414, C1415, C1416, C1417, C1418, C1419, C1420, C1421, C1440, C1441, C1442, C1443, C1444, C1445, C1472
 - role_taxonomy: C121, C366, C547, C550, C557, C558, C560, C562, C563, C567, C572, C573, C574, C575, C581, C582, C583, C584, C586, C587, C588, C591, C593, C594, C595, C597, C770, C777, C788, C791, C863, C864, C865, C866, C867, C868, C869
 - kernel: C089, C103, C104, C105, C332, C333, C339, C521, C1225, C1226
 - hazards: C109, C110, C111, C112, C386, C789, C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456, C1457, C1458, C1459, C1460, C1461, C1462

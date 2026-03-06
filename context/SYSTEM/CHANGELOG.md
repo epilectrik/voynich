@@ -4,6 +4,26 @@
 
 ---
 
+## Version 5.20.122 (2026-03-05) - Phase 531: Modifier Stacking Order
+
+### Summary
+
+Phase 531 resolves C1393's open question: "When multiple modifiers appear in one compound, is their internal sub-order fixed?" Answer: NO -- co-occurrence avoidance is the dominant constraint (8/15 pairs never co-occur), and ordering is a statistical preference (best 68.8%), not a rule. The C1394 T4 "fixed stacking order p->f->i->c->d->s" is refined: d,s is reversed (s precedes d 60.9%), and the empirically best ordering is p->f->c->s->d->i. 3+ modifier sequences comply with any single ordering only 42.6% of the time. C1394 T10's characterization of "morphological convention with weak semantic coupling" is confirmed and quantified.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1472: Modifier co-occurrence avoidance dominates ordering (8/15 empty, 0 strict, d,s reversed) |
+| **ADDED** | `phases/MODIFIER_STACKING_ORDER/scripts/modifier_stacking_order.py` |
+| **ADDED** | `phases/MODIFIER_STACKING_ORDER/results/modifier_stacking_order.json` |
+| **ADDED** | `phases/MODIFIER_STACKING_ORDER/REPORT.md` |
+| **UPDATED** | INDEX.md -- +1 constraint (1316 total) |
+| **UPDATED** | currierB.bcsc.yaml -- refined modifier ordering from "fixed" to "statistical preference" |
+| **RESOLVED** | C1393 open question on modifier stacking order |
+
+---
+
 ## Version 5.19.121 (2026-03-05) - Phase 530: Cross-Line Hazard Continuity
 
 ### Summary

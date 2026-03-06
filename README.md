@@ -10,8 +10,8 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 
 | Metric | Value |
 |--------|-------|
-| Validated constraints | 1,315 |
-| Research phases completed | 530 |
+| Validated constraints | 1,316 |
+| Research phases completed | 531 |
 | Model fits tested | 75 |
 | Constraint tiers | 0 (frozen fact) through 4 (exploratory) |
 
@@ -41,7 +41,7 @@ We take the same approach with the Voynich Manuscript. We don't translate tokens
 | 8 operational categories | THERMAL, CONTAINMENT, FLOW, MONITORING, OPERATION, STAGING, MARKING, TRANSITION — organize all four systems (C1250) |
 | 6-state macro-automaton | 8.17x class compression; AXM attractor (self=0.697); 6 folio-level archetypes orthogonal to REGIMEs |
 | Generative closure | 49-class Markov + quintile position conditioning + symmetric forbidden suppression passes 21/21 metrics (M2.1 frontier; distributional, sequential, morphological, structural, positional, and directional tests all pass — C1025/C1034/C1364/C1365). See **[Markov Model Evolution](context/MARKOV_MODEL_EVOLUTION.md)** for the full progression from M0 (73%) to M2.1 (21/21). |
-| Instruction encoding | MIDDLEs decompose as HEAD+MOD*+TERM — frame predicts 64% of category, modifiers shift 36%. Fixed modifier order (p→f→i→c→d→s). 18 atoms, 5 HEAD domains, 6 exit conditions (C1393-C1394) |
+| Instruction encoding | MIDDLEs decompose as HEAD+MOD*+TERM — frame predicts 64% of category, modifiers shift 36%. Co-occurrence avoidance dominates ordering (8/15 pairs never co-occur; no strict stacking rule — C1472). 18 atoms, 5 HEAD domains, 6 exit conditions (C1393-C1394) |
 | Cross-system categories | A records are category-themed (d=9.7); AZC zones sort bridge vocabulary by category; categories predict B escape dynamics (THERMAL→escape rho=+0.780) |
 | Process control match | 5 PCs / 80% variance matches modern distillation, not Brunschwig recipes (3 PCs) |
 | Apparatus vocabulary | 5 apparatus profiles from marker MIDDLEs; REGIME encodes apparatus type; aii (unseal) 41x enriched in R3 (C1247-C1249) |

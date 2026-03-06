@@ -95,7 +95,7 @@ C1379 (Phase 494) independently discovered priority ordering within compound MID
 ## Open Questions
 
 - **l-anomaly:** l shifts from TERMINAL to INITIAL under po/so/to/da channels — may be semi-free like k/t
-- **Modifier stacking order:** When multiple modifiers appear in one compound, is their internal sub-order fixed?
+- **Modifier stacking order (resolved):** Not fixed. Co-occurrence avoidance is dominant (8/15 pairs never co-occur). Best-fit ordering p->f->c->s->d->i at 68.8% type accuracy. d,s pair reversed vs gradient. See C1472, `phases/MODIFIER_STACKING_ORDER/`.
 - **2-atom vs 3+ atom:** Does the grammar differ when no modifier slot exists?
 - **Suffix boundary (resolved):** Suffix is a parallel compound domain using the same atom inventory, not an artifact of TERMINAL atoms. 77% of MIDDLEs take 3+ different suffixes (entropy 1.475 bits), confirming independence. Compound MIDDLEs narrow suffix choice slightly (1.42 bits vs 1.99 for single-atom). See `phases/SUFFIX_BOUNDARY_TEST/`.
 

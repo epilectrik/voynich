@@ -810,10 +810,13 @@ middle_instruction_encoding:
       MOD  in {p, f, i, c, d, s}*   — ordered parametrization stack
       TERM in {l, r, h, y, m, n, k*, t*} — exit state/condition
       * k, t are role-dual: HEAD when first, TERM when last
-    Modifier stacking order: p -> f -> i -> c -> d -> s
+    Modifier stacking: statistical preference, not fixed rule (C1472).
+    Best-fit order: p -> f -> c -> s -> d -> i (68.8% type accuracy).
+    Co-occurrence avoidance dominant: 8/15 modifier pairs never co-occur.
+    s reliably late, p reliably early; interior {c,d,f,i} weakly ordered.
     Frame predicts 64% of category; modifiers shift remaining 36%.
 
-  provenance: "C1393, C1394"
+  provenance: "C1393, C1394, C1472"
 
 # ============================================================
 

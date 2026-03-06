@@ -51,7 +51,7 @@ All 5 MODIFIER atoms are pair-locked. Both non-e HEAD atoms (a, o) are pair-lock
 
 ### T4: Modifier Stack Ordering
 
-Modifiers follow a fixed internal ordering within compounds (p→f→i→c→d→s):
+Modifiers follow a statistical ordering preference within compounds (**REFINED by C1472**: not fixed; best-fit p→f→c→s→d→i at 68.8%; d,s reversed; 8/15 pairs never co-occur):
 
 | Modifier | Gloss | Mean stack position | Asymmetry examples |
 |----------|-------|--------------------|--------------------|

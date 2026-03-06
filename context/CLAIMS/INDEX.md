@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1306 validated constraints | **Version:** 5.16 | **Date:** 2026-03-05
+**Total:** 1307 validated constraints | **Version:** 5.17 | **Date:** 2026-03-05
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4998,6 +4998,27 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T6: Within-paragraph rho=0.233, cross-paragraph rho=0.207. Difference 0.027 (negligible). No paragraph boundary effect.
 - T7: Autocorrelation lags 1-4: rho 0.233/0.222/0.217/0.208. Flat profile. Permutation p: 0.115/0.248/0.306/0.535. All folio-mediated.
 - Shuffle: MI p=0.212, rho p=0.098. Neither survives within-folio permutation at alpha=0.05.
+
+---
+
+### Modifier Stacking Order (C1472) -- Phase: MODIFIER_STACKING_ORDER (Phase 531)
+
+> **Summary:** Phase 531 resolves C1393's open question on modifier internal ordering. Tested all 15 pairwise orderings of 6 modifier atoms {p,f,i,c,d,s} in 464 MIDDLE types with 2+ modifiers (2,466 tokens). Co-occurrence avoidance is the dominant constraint: 8/15 pairs NEVER co-occur in the modifier slot. Among 7 testable pairs, 0 are strict (100%) or near-strict (>=95%). Three moderate (75-90%) orderings all involve s as late element. The d,s pair is REVERSED vs C1393 gradient (s precedes d 60.9%). Best-fit ordering p->f->c->s->d->i achieves 68.8% type accuracy vs C1393 gradient's 65.9%. 3+ modifier compliance is only 42.6%. Refines C1394 T4 "fixed stacking order" to "statistical preference with co-occurrence avoidance as primary constraint."
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1472 | Modifier co-occurrence avoidance dominates ordering | 2 | B, grammar, composition | 8/15 pairs empty. 0 strict, 3 moderate (all s-late). d,s reversed. Best: p->f->c->s->d->i (68.8%). 3+ compliance 42.6%. |
+
+**Phase 531 findings (Modifier Stacking Order, 9 analyses):**
+- A1: 464 MIDDLE types with 2+ mod atoms (2,466 tokens). 349 2-mod, 98 3-mod, 16 4-mod, 1 5-mod.
+- A2: 8/15 modifier pairs never co-occur: {p,f}, {p,i}, {p,c}, {p,d}, {f,c}, {f,d}, {i,c}, {i,d}. p avoids all non-s modifiers.
+- A3: 7 testable pairs. 3 moderate: p<s (89.7%, p=1.95e-5), f<s (81.8%, p=0.065), c<s (78.8%, p=0.00094). 3 weak: f<i, i<s, c<d. 1 reversed: d,s.
+- A4: d,s reversed: s precedes d 60.9% types, 64.5% tokens (p=0.14 NS). C1393 predicts d<s.
+- A5: Best type ordering p->f->c->s->d->i (68.8%) beats C1393 gradient (65.9%). Token: 75.9% vs 69.4%. Unique winner.
+- A6: 1 transitivity violation in {c,d,s}: c<d and c<s but d>s.
+- A7: 3+ modifier compliance with C1393 gradient: 49/115 = 42.6%.
+- A8: Per-modifier mean positions (multi-mod only): p=0.261, f=0.408, c=0.508, i=0.532, d=0.589, s=0.631.
+- A9: 63 i-repeat types (1,556 tokens), dominated by aiin (834) and iin (560).
 
 ---
 
