@@ -1,6 +1,6 @@
 # Understanding the Voynich Manuscript: A Guide
 
-This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,300 constraint files. Everything here is grounded in statistical evidence from the transcript data.
+This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,306 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
 For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
 
@@ -217,7 +217,9 @@ When the system drifts toward a hazard, the grammar provides escape routes. The 
 
 This means the manuscript clamps risk uniformly while leaving operators free to adapt their recovery approach to local conditions. Recovery paths converge on the **e** operator (stable state) in 54.7% of cases.
 
-At the macro-state level, the forgiveness mechanism has a concrete realization: forgiving programs have a strong AXM attractor — the system stays in AXM longer, leaves less often, and returns faster when it does leave. Brittle programs have a weaker attractor and spend more time cycling through FQ interchange operations. The "design freedom" in recovery is specifically the freedom to tune how strong the AXM attractor is — how readily the system leaves and returns to its dominant operational state.
+The mechanical basis of this recovery is the **e→y safe pathway** — 3,475 tokens (the grammar's largest single frame) at 0% hazard across all modifier variants and all contexts (C1457-C1459). e→y is not a reactive recovery tool deployed after hazard; it's a preventive anchor concentrated early in lines (Q0-Q1) through monitoring channels like sh (C1460-C1461). Just three types (ey, edy, eey) dominate, giving the grammar a narrow, high-frequency stability vocabulary.
+
+At the macro-state level, the forgiveness mechanism has a concrete realization: forgiving programs have a strong AXM attractor — the system stays in AXM longer, leaves less often, and returns faster when it does leave. Brittle programs have a weaker attractor and spend more time cycling through FQ interchange operations. The "design freedom" in recovery is specifically the freedom to tune how strong the AXM attractor is — how readily the system leaves and returns to its dominant operational state. This now has a concrete mechanical basis: **e→y rate predicts folio forgiveness** — programs that front-load more e→y safety tokens have stronger AXM attractors (C1462).
 
 ### What B Cannot Tell You
 

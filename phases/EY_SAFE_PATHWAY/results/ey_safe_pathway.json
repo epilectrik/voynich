@@ -1,0 +1,968 @@
+{
+  "T1_ey_inventory": {
+    "ey_total_tokens": 3475,
+    "ey_unique_middles": 7,
+    "ey_fraction_of_corpus": 0.1505,
+    "top_ey_middles": [
+      {
+        "middle": "edy",
+        "count": 1938
+      },
+      {
+        "middle": "ey",
+        "count": 889
+      },
+      {
+        "middle": "eey",
+        "count": 644
+      },
+      {
+        "middle": "echy",
+        "count": 1
+      },
+      {
+        "middle": "ecty",
+        "count": 1
+      },
+      {
+        "middle": "eky",
+        "count": 1
+      },
+      {
+        "middle": "eoty",
+        "count": 1
+      }
+    ],
+    "e_depth_distribution": {
+      "1": 2831,
+      "2": 644
+    },
+    "bare_ey_count": 1533,
+    "modified_ey_count": 1942,
+    "modifier_counts": {
+      "d": 1938,
+      "c": 2,
+      "t": 2,
+      "h": 1,
+      "k": 1,
+      "o": 1
+    },
+    "e_head_terminal_dist": {
+      "y": 3475,
+      "None": 1032,
+      "d": 623,
+      "o": 544,
+      "k": 405,
+      "l": 356,
+      "t": 159,
+      "h": 147,
+      "c": 58,
+      "s": 40,
+      "a": 35,
+      "e": 30,
+      "p": 30,
+      "i": 24,
+      "f": 20,
+      "r": 15,
+      "ee": 5,
+      "x": 1,
+      "ii": 1,
+      "m": 1,
+      "n": 1
+    },
+    "e_head_total": 7002,
+    "ey_fraction_of_e_head": 0.4963
+  },
+  "T2_ey_category": {
+    "ey_category_enrichment": {
+      "CONTAINMENT": {
+        "ey_count": 0,
+        "ey_rate": 0.0,
+        "corpus_rate": 0.0476,
+        "enrichment": 0.0
+      },
+      "FLOW": {
+        "ey_count": 2,
+        "ey_rate": 0.0006,
+        "corpus_rate": 0.1915,
+        "enrichment": 0.003
+      },
+      "MARKING": {
+        "ey_count": 1,
+        "ey_rate": 0.0003,
+        "corpus_rate": 0.0767,
+        "enrichment": 0.004
+      },
+      "MONITORING": {
+        "ey_count": 0,
+        "ey_rate": 0.0,
+        "corpus_rate": 0.0179,
+        "enrichment": 0.0
+      },
+      "OPERATION": {
+        "ey_count": 1938,
+        "ey_rate": 0.5577,
+        "corpus_rate": 0.1416,
+        "enrichment": 3.938
+      },
+      "STAGING": {
+        "ey_count": 0,
+        "ey_rate": 0.0,
+        "corpus_rate": 0.1283,
+        "enrichment": 0.0
+      },
+      "THERMAL": {
+        "ey_count": 645,
+        "ey_rate": 0.1856,
+        "corpus_rate": 0.2342,
+        "enrichment": 0.793
+      },
+      "TRANSITION": {
+        "ey_count": 889,
+        "ey_rate": 0.2558,
+        "corpus_rate": 0.1477,
+        "enrichment": 1.732
+      }
+    },
+    "ey_hazard_count": 2,
+    "ey_hazard_rate": 0.0006,
+    "corpus_hazard_rate": 0.2391,
+    "e_frame_category_profiles": {
+      "e->a": {
+        "n": 35,
+        "cats": {
+          "THERMAL": 0.629,
+          "MARKING": 0.257,
+          "TRANSITION": 0.057,
+          "FLOW": 0.029,
+          "OPERATION": 0.029
+        },
+        "hazard_rate": 0.0286
+      },
+      "e->bare": {
+        "n": 1032,
+        "cats": {
+          "THERMAL": 1.0
+        },
+        "hazard_rate": 0.0
+      },
+      "e->c": {
+        "n": 58,
+        "cats": {
+          "MARKING": 0.638,
+          "THERMAL": 0.345,
+          "FLOW": 0.017
+        },
+        "hazard_rate": 0.0172
+      },
+      "e->d": {
+        "n": 623,
+        "cats": {
+          "FLOW": 0.647,
+          "THERMAL": 0.197,
+          "TRANSITION": 0.132,
+          "MARKING": 0.024
+        },
+        "hazard_rate": 0.6469
+      },
+      "e->e": {
+        "n": 30,
+        "cats": {
+          "THERMAL": 1.0
+        },
+        "hazard_rate": 0.0
+      },
+      "e->f": {
+        "n": 20,
+        "cats": {
+          "MARKING": 0.55,
+          "THERMAL": 0.45
+        },
+        "hazard_rate": 0.0
+      },
+      "e->h": {
+        "n": 147,
+        "cats": {
+          "MARKING": 0.429,
+          "MONITORING": 0.259,
+          "THERMAL": 0.15,
+          "FLOW": 0.143,
+          "STAGING": 0.02
+        },
+        "hazard_rate": 0.1429
+      },
+      "e->i": {
+        "n": 24,
+        "cats": {
+          "MARKING": 0.542,
+          "THERMAL": 0.375,
+          "STAGING": 0.083
+        },
+        "hazard_rate": 0.0
+      },
+      "e->k": {
+        "n": 405,
+        "cats": {
+          "OPERATION": 0.42,
+          "CONTAINMENT": 0.356,
+          "THERMAL": 0.222,
+          "MARKING": 0.002
+        },
+        "hazard_rate": 0.3556
+      },
+      "e->l": {
+        "n": 356,
+        "cats": {
+          "THERMAL": 0.966,
+          "STAGING": 0.02,
+          "MARKING": 0.014
+        },
+        "hazard_rate": 0.0
+      },
+      "e->o": {
+        "n": 544,
+        "cats": {
+          "TRANSITION": 0.66,
+          "OPERATION": 0.265,
+          "THERMAL": 0.051,
+          "MARKING": 0.017,
+          "MONITORING": 0.006,
+          "FLOW": 0.002
+        },
+        "hazard_rate": 0.0018
+      },
+      "e->p": {
+        "n": 30,
+        "cats": {
+          "MARKING": 0.933,
+          "THERMAL": 0.067
+        },
+        "hazard_rate": 0.0
+      },
+      "e->s": {
+        "n": 40,
+        "cats": {
+          "THERMAL": 0.475,
+          "STAGING": 0.425,
+          "MARKING": 0.075,
+          "OPERATION": 0.025
+        },
+        "hazard_rate": 0.0
+      },
+      "e->t": {
+        "n": 159,
+        "cats": {
+          "STAGING": 0.365,
+          "MONITORING": 0.296,
+          "THERMAL": 0.17,
+          "FLOW": 0.164,
+          "MARKING": 0.006
+        },
+        "hazard_rate": 0.1635
+      },
+      "e->y": {
+        "n": 3475,
+        "cats": {
+          "OPERATION": 0.558,
+          "TRANSITION": 0.256,
+          "THERMAL": 0.186,
+          "FLOW": 0.001,
+          "MARKING": 0.0
+        },
+        "hazard_rate": 0.0006
+      }
+    }
+  },
+  "T3_ey_recovery": {
+    "ey_rate_overall": {
+      "count": 3475,
+      "total": 23096,
+      "rate": 0.1505
+    },
+    "ey_rate_post_hazard": {
+      "count": 724,
+      "total": 4908,
+      "rate": 0.1475
+    },
+    "ey_rate_post_safe": {
+      "count": 2420,
+      "total": 15768,
+      "rate": 0.1535
+    },
+    "ey_rate_post_forbidden_source": {
+      "count": 383,
+      "total": 2328,
+      "rate": 0.1645
+    },
+    "post_hazard_enrichment": 0.98,
+    "post_safe_enrichment": 1.02,
+    "mann_whitney_stat": 38464008.0,
+    "mann_whitney_p": 0.3098,
+    "post_ey_category_dist": {
+      "THERMAL": 0.328,
+      "FLOW": 0.183,
+      "STAGING": 0.127,
+      "OPERATION": 0.117,
+      "TRANSITION": 0.102,
+      "MARKING": 0.064,
+      "CONTAINMENT": 0.046,
+      "null": 0.017,
+      "MONITORING": 0.017
+    },
+    "post_ey_hazard_rate": 0.2289,
+    "post_ey_total": 3276,
+    "pre_ey_category_dist": {
+      "THERMAL": 0.272,
+      "FLOW": 0.197,
+      "STAGING": 0.163,
+      "OPERATION": 0.126,
+      "TRANSITION": 0.117,
+      "MARKING": 0.063,
+      "CONTAINMENT": 0.033,
+      "MONITORING": 0.014,
+      "null": 0.014
+    },
+    "pre_ey_hazard_rate": 0.2303,
+    "pre_ey_total": 3144
+  },
+  "T4_ey_position": {
+    "quintile_enrichment": {
+      "Q0": {
+        "ey_count": 822,
+        "ey_rate": 0.2365,
+        "corpus_rate": 0.2174,
+        "enrichment": 1.088
+      },
+      "Q1": {
+        "ey_count": 714,
+        "ey_rate": 0.2055,
+        "corpus_rate": 0.1812,
+        "enrichment": 1.134
+      },
+      "Q2": {
+        "ey_count": 645,
+        "ey_rate": 0.1856,
+        "corpus_rate": 0.1793,
+        "enrichment": 1.035
+      },
+      "Q3": {
+        "ey_count": 656,
+        "ey_rate": 0.1888,
+        "corpus_rate": 0.1812,
+        "enrichment": 1.042
+      },
+      "Q4": {
+        "ey_count": 638,
+        "ey_rate": 0.1836,
+        "corpus_rate": 0.2408,
+        "enrichment": 0.763
+      }
+    },
+    "ey_mean_position": 0.4629,
+    "corpus_mean_position": 0.5,
+    "e_head_mean_position": 0.4508,
+    "y_term_mean_position": 0.4902,
+    "ey_initial_rate": 0.0953,
+    "corpus_initial_rate": 0.1048,
+    "ey_initial_enrichment": 0.909,
+    "ey_final_rate": 0.0573,
+    "corpus_final_rate": 0.1048,
+    "ey_final_enrichment": 0.547,
+    "ey_header_rate": 0.2063,
+    "corpus_header_rate": 0.2591,
+    "ey_header_enrichment": 0.796
+  },
+  "T5_ey_prefix": {
+    "prefix_enrichment": {
+      "BARE": {
+        "ey_count": 1,
+        "ey_rate": 0.0003,
+        "corpus_rate": 0.1673,
+        "enrichment": 0.002
+      },
+      "al": {
+        "ey_count": 11,
+        "ey_rate": 0.0032,
+        "corpus_rate": 0.0075,
+        "enrichment": 0.423
+      },
+      "ar": {
+        "ey_count": 2,
+        "ey_rate": 0.0006,
+        "corpus_rate": 0.0059,
+        "enrichment": 0.098
+      },
+      "ch": {
+        "ey_count": 915,
+        "ey_rate": 0.2633,
+        "corpus_rate": 0.1512,
+        "enrichment": 1.742
+      },
+      "ct": {
+        "ey_count": 0,
+        "ey_rate": 0.0,
+        "corpus_rate": 0.0026,
+        "enrichment": 0.0
+      },
+      "da": {
+        "ey_count": 0,
+        "ey_rate": 0.0,
+        "corpus_rate": 0.0469,
+        "enrichment": 0.0
+      },
+      "dch": {
+        "ey_count": 39,
+        "ey_rate": 0.0112,
+        "corpus_rate": 0.0045,
+        "enrichment": 2.492
+      },
+      "de": {
+        "ey_count": 6,
+        "ey_rate": 0.0017,
+        "corpus_rate": 0.0008,
+        "enrichment": 2.099
+      },
+      "do": {
+        "ey_count": 0,
+        "ey_rate": 0.0,
+        "corpus_rate": 0.0055,
+        "enrichment": 0.0
+      },
+      "fch": {
+        "ey_count": 22,
+        "ey_rate": 0.0063,
+        "corpus_rate": 0.0025,
+        "enrichment": 2.565
+      },
+      "ka": {
+        "ey_count": 1,
+        "ey_rate": 0.0003,
+        "corpus_rate": 0.0103,
+        "enrichment": 0.028
+      },
+      "kch": {
+        "ey_count": 32,
+        "ey_rate": 0.0092,
+        "corpus_rate": 0.0042,
+        "enrichment": 2.193
+      },
+      "ke": {
+        "ey_count": 88,
+        "ey_rate": 0.0253,
+        "corpus_rate": 0.0112,
+        "enrichment": 2.258
+      },
+      "lch": {
+        "ey_count": 177,
+        "ey_rate": 0.0509,
+        "corpus_rate": 0.0136,
+        "enrichment": 3.735
+      },
+      "lk": {
+        "ey_count": 107,
+        "ey_rate": 0.0308,
+        "corpus_rate": 0.019,
+        "enrichment": 1.624
+      },
+      "lsh": {
+        "ey_count": 70,
+        "ey_rate": 0.0201,
+        "corpus_rate": 0.005,
+        "enrichment": 4.011
+      },
+      "ok": {
+        "ey_count": 329,
+        "ey_rate": 0.0947,
+        "corpus_rate": 0.0639,
+        "enrichment": 1.481
+      },
+      "ol": {
+        "ey_count": 116,
+        "ey_rate": 0.0334,
+        "corpus_rate": 0.0379,
+        "enrichment": 0.881
+      },
+      "or": {
+        "ey_count": 7,
+        "ey_rate": 0.002,
+        "corpus_rate": 0.0075,
+        "enrichment": 0.269
+      },
+      "ot": {
+        "ey_count": 353,
+        "ey_rate": 0.1016,
+        "corpus_rate": 0.0627,
+        "enrichment": 1.62
+      },
+      "pch": {
+        "ey_count": 69,
+        "ey_rate": 0.0199,
+        "corpus_rate": 0.0106,
+        "enrichment": 1.872
+      },
+      "po": {
+        "ey_count": 3,
+        "ey_rate": 0.0009,
+        "corpus_rate": 0.0059,
+        "enrichment": 0.147
+      },
+      "qo": {
+        "ey_count": 23,
+        "ey_rate": 0.0066,
+        "corpus_rate": 0.1762,
+        "enrichment": 0.038
+      },
+      "rch": {
+        "ey_count": 21,
+        "ey_rate": 0.006,
+        "corpus_rate": 0.0018,
+        "enrichment": 3.404
+      },
+      "sa": {
+        "ey_count": 0,
+        "ey_rate": 0.0,
+        "corpus_rate": 0.0142,
+        "enrichment": 0.0
+      },
+      "sch": {
+        "ey_count": 8,
+        "ey_rate": 0.0023,
+        "corpus_rate": 0.0011,
+        "enrichment": 2.127
+      },
+      "sh": {
+        "ey_count": 859,
+        "ey_rate": 0.2472,
+        "corpus_rate": 0.1008,
+        "enrichment": 2.451
+      },
+      "so": {
+        "ey_count": 0,
+        "ey_rate": 0.0,
+        "corpus_rate": 0.0082,
+        "enrichment": 0.0
+      },
+      "ta": {
+        "ey_count": 0,
+        "ey_rate": 0.0,
+        "corpus_rate": 0.0103,
+        "enrichment": 0.0
+      },
+      "tch": {
+        "ey_count": 60,
+        "ey_rate": 0.0173,
+        "corpus_rate": 0.0074,
+        "enrichment": 2.318
+      },
+      "te": {
+        "ey_count": 86,
+        "ey_rate": 0.0247,
+        "corpus_rate": 0.0125,
+        "enrichment": 1.978
+      },
+      "to": {
+        "ey_count": 1,
+        "ey_rate": 0.0003,
+        "corpus_rate": 0.005,
+        "enrichment": 0.058
+      },
+      "yk": {
+        "ey_count": 66,
+        "ey_rate": 0.019,
+        "corpus_rate": 0.0136,
+        "enrichment": 1.397
+      }
+    },
+    "ey_thermal_prefix_rate": 0.7134,
+    "corpus_thermal_prefix_rate": 0.5548,
+    "thermal_enrichment": 1.286,
+    "ey_ch_count": 915,
+    "ey_sh_count": 859,
+    "ey_ch_sh_ratio": 1.065,
+    "corpus_ch_sh_ratio": 1.499
+  },
+  "T6_ey_suffix": {
+    "ey_suffix_rate": 0.0046,
+    "corpus_suffix_rate": 0.4828,
+    "suffix_rate_ratio": 0.01,
+    "ey_suffix_dist": {
+      "dy": 4,
+      "s": 3,
+      "l": 3,
+      "r": 3,
+      "or": 2,
+      "hy": 1
+    },
+    "ey_suffixed_count": 16,
+    "ey_total": 3475,
+    "ey_mode_A_rate": 0.0014,
+    "corpus_mode_A_rate": 0.25,
+    "mode_A_enrichment": 0.006,
+    "y_terminal_overall_suffix_rate": 0.0124,
+    "suffix_atom_counts": {
+      "y": 5,
+      "r": 5,
+      "d": 4,
+      "s": 3,
+      "l": 3,
+      "o": 2,
+      "h": 1
+    }
+  },
+  "T7_ey_stability": {
+    "macro_state_enrichment": {
+      "AXM": {
+        "ey_count": 2466,
+        "ey_rate": 0.7814,
+        "corpus_rate": 0.6767,
+        "enrichment": 1.155
+      },
+      "AXm": {
+        "ey_count": 141,
+        "ey_rate": 0.0447,
+        "corpus_rate": 0.0304,
+        "enrichment": 1.47
+      },
+      "CC": {
+        "ey_count": 0,
+        "ey_rate": 0.0,
+        "corpus_rate": 0.0458,
+        "enrichment": 0.0
+      },
+      "FL_HAZ": {
+        "ey_count": 0,
+        "ey_rate": 0.0,
+        "corpus_rate": 0.0595,
+        "enrichment": 0.0
+      },
+      "FL_SAFE": {
+        "ey_count": 0,
+        "ey_rate": 0.0,
+        "corpus_rate": 0.0076,
+        "enrichment": 0.0
+      },
+      "FQ": {
+        "ey_count": 549,
+        "ey_rate": 0.174,
+        "corpus_rate": 0.18,
+        "enrichment": 0.966
+      }
+    },
+    "pre_ey_macro_dist": {
+      "AXM": 0.676,
+      "FQ": 0.178,
+      "CC": 0.062,
+      "FL_HAZ": 0.059,
+      "AXm": 0.024,
+      "FL_SAFE": 0.001
+    },
+    "post_ey_macro_dist": {
+      "AXM": 0.77,
+      "FQ": 0.132,
+      "FL_HAZ": 0.035,
+      "CC": 0.032,
+      "AXm": 0.027,
+      "FL_SAFE": 0.003
+    },
+    "ey_self_chain_count": 445,
+    "ey_self_chain_rate": 0.1868,
+    "pre_ey_head_atoms": {
+      "e": 747,
+      "k": 524,
+      "a": 398,
+      "o": 362,
+      "l": 237,
+      "ee": 163,
+      "r": 121,
+      "t": 120
+    },
+    "post_ey_head_atoms": {
+      "k": 817,
+      "e": 661,
+      "l": 259,
+      "a": 249,
+      "o": 235,
+      "t": 226,
+      "d": 156,
+      "ee": 150
+    },
+    "pre_ey_term_atoms": {
+      "y": 517,
+      "n": 346,
+      "l": 299,
+      "d": 161,
+      "r": 142,
+      "h": 117,
+      "k": 112,
+      "e": 100
+    }
+  },
+  "T8_ey_vs_safe": {
+    "total_safe_frames_over_100": 21,
+    "total_safe_tokens_over_100": 9453,
+    "ey_safety_fraction": 0.0,
+    "ey_safe_tokens": 0,
+    "top_safe_frames": [
+      {
+        "frame": "k->bare",
+        "n": 2083,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "e->bare",
+        "n": 867,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "l->bare",
+        "n": 855,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "o->l",
+        "n": 777,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "ee->y",
+        "n": 644,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "ii->n",
+        "n": 560,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "y->bare",
+        "n": 513,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "k->e",
+        "n": 428,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "o->bare",
+        "n": 388,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "d->bare",
+        "n": 337,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      }
+    ],
+    "total_zero_hazard_frames_over_10": 78,
+    "total_zero_hazard_tokens": 11129,
+    "top_zero_hazard_frames": [
+      {
+        "frame": "k->bare",
+        "n": 2083,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "e->bare",
+        "n": 867,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "l->bare",
+        "n": 855,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "o->l",
+        "n": 777,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "ee->y",
+        "n": 644,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "ii->n",
+        "n": 560,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "y->bare",
+        "n": 513,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "k->e",
+        "n": 428,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "o->bare",
+        "n": 388,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "d->bare",
+        "n": 337,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "e->l",
+        "n": 306,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "i->n",
+        "n": 264,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "k->h",
+        "n": 202,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "c->k",
+        "n": 200,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      },
+      {
+        "frame": "a->i",
+        "n": 177,
+        "hazard_count": 0,
+        "hazard_rate": 0.0
+      }
+    ]
+  },
+  "T9_ey_paragraph": {
+    "para_line_position_rates": {
+      "header": {
+        "ey_count": 717,
+        "total": 5984,
+        "rate": 0.1198
+      },
+      "early_body": {
+        "ey_count": 1267,
+        "total": 8575,
+        "rate": 0.1478
+      },
+      "late_body": {
+        "ey_count": 1491,
+        "total": 8537,
+        "rate": 0.1747
+      }
+    },
+    "para_ordinal_rates": {
+      "first": {
+        "ey_count": 842,
+        "total": 5396,
+        "rate": 0.156
+      },
+      "middle": {
+        "ey_count": 2004,
+        "total": 13637,
+        "rate": 0.147
+      },
+      "last": {
+        "ey_count": 629,
+        "total": 4063,
+        "rate": 0.1548
+      }
+    },
+    "ey_axm_correlation": {
+      "spearman_rho": 0.2741,
+      "p_value": 0.0,
+      "n_paragraphs": 573
+    }
+  },
+  "T10_ey_forgiveness": {
+    "n_folios": 82,
+    "correlations": {
+      "ey_vs_axm_rate": {
+        "rho": 0.4713,
+        "p": 8e-06
+      },
+      "ey_vs_axm_self_transition": {
+        "rho": 0.5694,
+        "p": 0.0
+      },
+      "ey_vs_fq_rate": {
+        "rho": -0.3693,
+        "p": 0.00064
+      },
+      "ey_vs_hazard_rate": {
+        "rho": -0.4725,
+        "p": 7e-06
+      }
+    },
+    "quartile_analysis": {
+      "Q1_low_ey": {
+        "n_folios": 20,
+        "mean_ey_rate": 0.0663,
+        "mean_axm_rate": 0.5825,
+        "mean_axm_self_rate": 0.4063,
+        "mean_fq_rate": 0.2478,
+        "mean_hazard_rate": 0.2842
+      },
+      "Q2": {
+        "n_folios": 20,
+        "mean_ey_rate": 0.1104,
+        "mean_axm_rate": 0.6301,
+        "mean_axm_self_rate": 0.4554,
+        "mean_fq_rate": 0.2102,
+        "mean_hazard_rate": 0.2559
+      },
+      "Q3": {
+        "n_folios": 20,
+        "mean_ey_rate": 0.1556,
+        "mean_axm_rate": 0.6711,
+        "mean_axm_self_rate": 0.4981,
+        "mean_fq_rate": 0.1694,
+        "mean_hazard_rate": 0.229
+      },
+      "Q4_high_ey": {
+        "n_folios": 22,
+        "mean_ey_rate": 0.2112,
+        "mean_axm_rate": 0.7055,
+        "mean_axm_self_rate": 0.5498,
+        "mean_fq_rate": 0.1652,
+        "mean_hazard_rate": 0.2205
+      }
+    }
+  },
+  "summary": {
+    "total_b_tokens": 23096,
+    "ey_tokens": 3475,
+    "ey_fraction": 0.1505,
+    "ey_hazard_rate": 0.0006,
+    "ey_safety_fraction": 0.0,
+    "ey_axm_enrichment": 1.155,
+    "ey_post_hazard_enrichment": 0.98,
+    "ey_folio_axm_correlation": 0.5694
+  }
+}

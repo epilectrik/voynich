@@ -1052,7 +1052,9 @@ hazards:
     mode_b_violations: "Mode B carries 100% of forbidden violations (11/11); Mode A zero violations (C1451)"
     modifier_quenching: "All 5 modifiers {c,d,f,p,s} quench hazard to 0%; i-modifier boosts 1.69x"
     i_modifier_anomaly: "i hazard boost is Simpson's paradox: selects hazardous frames (61.8% in high-hazard) but REDUCES within-frame hazard (delta -0.407, 12/19 protective). Non-monotonic: single-i=39.8%, double-ii=0.0%. Anti-thermal (THERMAL 0.002x). Suffix-depleted (9.4%, n-terminal). (C1452-C1456)"
-    provenance: "C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456"
+    ey_safe_pathway: "e→y = 3,475 tokens (15.0%), 7 MIDDLEs (edy 55.8%, ey 25.6%, eey 18.5%), 0.06% hazard (400x reduction). NOT recovery-specific — ambient substrate at constant ~15% rate (post-hazard=14.75%, post-safe=15.35%, p=0.310). OPERATION 3.94x, CHSH-channel sh 2.45x, qo 0.04x excluded. Line-final 0.55x. Folio e→y rate predicts forgiveness: rho=+0.569 with AXM self-transition. Post-e→y AXM +9.4pp (one-way ratchet). (C1457-C1462)"
+    thermal_safety_envelope: "k-HEAD (3,100 tokens, 0% hazard) + e→y (3,475 tokens, 0.06% hazard) = ~5,558 tokens (24% of corpus) at effectively zero hazard. Energy input and energy output are both categorically safe; hazard concentrates in transitions between them (FLOW, CONTAINMENT). (C1446, C1457-C1462)"
+    provenance: "C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456, C1457, C1458, C1459, C1460, C1461, C1462"
 
   properties:
     asymmetric_rate: "65%"
@@ -1620,8 +1622,9 @@ recovery:
 
   stability_anchor:
     operator: "e"
-    function: "Anchors system to stable state"
-    provenance: "C105"
+    function: "Anchors system to stable state via e→y ambient substrate (15% of corpus, 0.06% hazard); NOT reactive recovery but omnipresent safe infrastructure"
+    ey_mechanism: "e→y rate = mechanical basis of forgiveness gradient (rho=+0.569 with AXM self-transition); post-e→y AXM +9.4pp one-way ratchet; context-independent deployment (p=0.310)"
+    provenance: "C105, C1457, C1458, C1459, C1462"
 
   safe_precedence:
     provenance: "C399"
@@ -2873,6 +2876,10 @@ provenance:
     - "C601"   # QO zero hazard participation
     - "C643"   # QO-CHSH rapid alternation
     - "C645"   # CHSH 75.2% post-hazard dominance
+    - "C1457"  # e→y narrow vocabulary dominance (15% of corpus)
+    - "C1458"  # e→y categorical safety (0.06% hazard, 400x reduction)
+    - "C1459"  # e→y context-independent deployment (ambient, not reactive)
+    - "C1462"  # e→y rate predicts folio forgiveness (rho=+0.569 with AXM self)
 
   design:
     - "C458"   # Execution design clamp

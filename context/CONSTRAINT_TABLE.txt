@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1300 constraints | 2026-03-05
+CONSTRAINT_REFERENCE v2.6 | 1306 constraints | 2026-03-05
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1304,3 +1304,9 @@ C1453	i-modifier frame selection, not inherent hazard	2	B, MIDDLE, atom, i-modif
 C1454	i-modifier anti-thermal category profile	2	B, MIDDLE, atom, i-modifier, category, anti-thermal	THERMAL 0.05% (0.002x baseline). STAGING 33.0% (2.58x), TRANSITION 41.0% (2.78x). qo/ch/sh avoid i (0.087-0.097x). da/sa/ok/or concentrate i (2.4-3.8x).
 C1455	Quenching modifier partial i-override	2	B, MIDDLE, atom, i-modifier, quenching, co-occurrence	i-only=22.6%, both i+quench=7.5%, quench-only=5.9%. Quenching dominates. N=40 co-occurrence. Residual ~1.6pp above quench-only.
 C1456	i-modifier suffix depletion	2	B, MIDDLE, atom, i-modifier, suffix, mode, n-terminal	Suffix rate 9.4% (vs 52.1% non-i, 0.18x). 95.7% Mode B. 90.5% n-terminal structure preempts suffix attachment.
+C1457	e→y narrow vocabulary dominance	2	B, MIDDLE, atom, e-HEAD, y-terminal, vocabulary, dominance	3,475 tokens (15.0% of corpus) from only 7 MIDDLEs. edy 55.8%, ey 25.6%, eey 18.5% = 99.9%. 49.6% of all e-HEAD tokens. d-modifier dominant.
+C1458	e→y categorical safety with OPERATION enrichment	2	B, MIDDLE, atom, e-HEAD, y-terminal, hazard, safety, category, OPERATION	0.06% hazard (2/3,475) vs corpus 23.9% — 400x reduction. OPERATION 3.94x, TRANSITION 1.73x. FLOW/CONTAINMENT/MARKING categorically excluded. Among e-HEAD frames, only e->l, e->bare, e->y are safe.
+C1459	e→y context-independent deployment (not recovery-specific)	2	B, MIDDLE, atom, e-HEAD, y-terminal, context, recovery, ambient	Post-hazard 14.75%, post-safe 15.35% (Mann-Whitney p=0.310 NS). Pre/post-e->y hazard both match corpus baseline (23%). Ambient safety substrate, not reactive recovery mechanism.
+C1460	e→y early-line concentration with final avoidance	2	B, MIDDLE, atom, e-HEAD, y-terminal, position, line, paragraph	Mean line position 0.463 (vs 0.500). Line-final 0.55x. Q0-Q1 enriched 1.09-1.13x. Paragraph: header 12.0% -> late body 17.5%. Thermal work zone, not closure.
+C1461	e→y CHSH-channel with sh enrichment and qo/BARE exclusion	2	B, PREFIX, MIDDLE, atom, e-HEAD, y-terminal, channel, sh, qo	sh 2.45x, ch 1.74x; ch/sh ratio 1.07 vs corpus 1.50 (sh-biased). qo 0.04x, BARE 0.002x, da 0.00x. Monitoring/verification channels, not heat source.
+C1462	e→y rate predicts folio forgiveness via AXM attractor	2	B, MIDDLE, atom, e-HEAD, y-terminal, AXM, forgiveness, folio, hazard	e->y vs AXM self-transition rho=+0.569, p<1e-7. e->y vs hazard rho=-0.473, p=7e-6. Q1 (6.6% e->y) = 40.6% AXM self; Q4 (21.1%) = 55.0%. Post-e->y AXM +9.4pp (one-way ratchet). Mechanical basis of forgiveness gradient.

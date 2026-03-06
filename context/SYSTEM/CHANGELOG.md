@@ -4,6 +4,31 @@
 
 ---
 
+## Version 5.16.118 (2026-03-05) - Phase 525: e→y Safe Pathway and Recovery Architecture
+
+### Summary
+
+Phase 525 investigates the e→y frame (HEAD=e, TERMINAL=y), identified in C1448 as the largest safe frame in the grammar at 3,475 tokens (15.0% of corpus). 10 tests reveal that e→y is NOT a reactive recovery mechanism — it is an ambient safety substrate deployed at a constant ~15% rate regardless of local context (Mann-Whitney p=0.310). Hazard rate 0.06% (400x below baseline). OPERATION-enriched (3.94x), CHSH-channel with sh enrichment (2.45x), qo/BARE categorically excluded. e→y rate is the strongest single predictor of folio-level program forgiveness (rho=+0.569 with AXM self-transition). Together, k-HEAD and e→y account for ~5,558 tokens (24% of corpus) at zero hazard — the grammar's thermal safety envelope.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1457: e→y narrow vocabulary dominance (3,475 tokens, 7 MIDDLEs, 15.0% of corpus) |
+| **ADDED** | C1458: e→y categorical safety with OPERATION enrichment (0.06% hazard, 400x reduction) |
+| **ADDED** | C1459: e→y context-independent deployment (post-hazard=14.75%, post-safe=15.35%, p=0.310 NS) |
+| **ADDED** | C1460: e→y early-line concentration with final avoidance (0.55x line-final, mean pos 0.463) |
+| **ADDED** | C1461: e→y CHSH-channel with sh enrichment (2.45x) and qo/BARE exclusion (0.04x/0.002x) |
+| **ADDED** | C1462: e→y rate predicts folio forgiveness (rho=+0.569 with AXM self-transition) |
+| **ADDED** | `phases/EY_SAFE_PATHWAY/scripts/ey_safe_pathway.py` |
+| **ADDED** | `phases/EY_SAFE_PATHWAY/results/ey_safe_pathway.json` |
+| **ADDED** | `phases/EY_SAFE_PATHWAY/REPORT.md` |
+| **UPDATED** | INDEX.md -- +6 constraints (1306 total) |
+| **UPDATED** | CONSTRAINT_TABLE.txt regenerated (1306 constraints) |
+| **UPDATED** | currierB.bcsc.yaml -- added e→y safe pathway findings to atom_level_decomposition and recovery sections |
+
+---
+
 ## Version 5.15.117 (2026-03-05) - Phase 524: i-Modifier Hazard Anomaly
 
 ### Summary

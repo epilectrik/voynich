@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1300 validated constraints | **Version:** 5.15 | **Date:** 2026-03-05
+**Total:** 1306 validated constraints | **Version:** 5.16 | **Date:** 2026-03-05
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -4904,6 +4904,33 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T8: Quenching override. i-only=22.6%, both=7.5%, quench-only=5.9%. Quenching dominates.
 - T9: Macro-state interaction. i-tokens in AXM: 59.5% (vs 62.8% non-i). No strong macro-state effect.
 - T10: Simpson's paradox decomposition. Marginal delta=-0.0175. Frame selection +0.390. Within-frame -0.407. 12/19 frames protective.
+
+---
+
+### e→y Safe Pathway (C1457-C1462) -- Phase: EY_SAFE_PATHWAY (Phase 525)
+
+> **Summary:** Phase 525 investigates the e→y frame (HEAD=e, TERMINAL=y), identified in C1448 as the largest safe frame in the grammar at 3,475 tokens (15.0% of corpus). 10 tests across 3,475 e→y tokens plus 82 folios. Key findings: e→y is NOT a reactive recovery mechanism — it is an ambient safety substrate deployed at a constant ~15% rate regardless of local context (Mann-Whitney p=0.310). Hazard rate 0.06% (400x below baseline). Categorically OPERATION-enriched (3.94x), CHSH-channel with sh enrichment (2.45x), qo/BARE categorically excluded. Line-final depleted (0.55x). e→y rate is the strongest single predictor of folio-level program forgiveness (rho=+0.569 with AXM self-transition, rho=-0.473 with hazard rate). Post-e→y, AXM rate increases +9.4pp (one-way ratchet). Together, k-HEAD and e→y account for ~5,558 tokens (24% of corpus) at effectively zero hazard — the grammar's thermal safety envelope.
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1457 | e→y narrow vocabulary dominance | 2 | B, MIDDLE, atom, e-HEAD, y-terminal, vocabulary, dominance | 3,475 tokens (15.0% of corpus) from only 7 MIDDLEs. edy 55.8%, ey 25.6%, eey 18.5% = 99.9%. 49.6% of all e-HEAD tokens. d-modifier dominant. |
+| 1458 | e→y categorical safety with OPERATION enrichment | 2 | B, MIDDLE, atom, e-HEAD, y-terminal, hazard, safety, category, OPERATION | 0.06% hazard (2/3,475) vs corpus 23.9% — 400x reduction. OPERATION 3.94x, TRANSITION 1.73x. FLOW/CONTAINMENT/MARKING categorically excluded. Among e-HEAD frames, only e→l, e→bare, e→y are safe. |
+| 1459 | e→y context-independent deployment (not recovery-specific) | 2 | B, MIDDLE, atom, e-HEAD, y-terminal, context, recovery, ambient | Post-hazard 14.75%, post-safe 15.35% (Mann-Whitney p=0.310 NS). Pre/post-e→y hazard both match corpus baseline (23%). Ambient safety substrate, not reactive recovery mechanism. |
+| 1460 | e→y early-line concentration with final avoidance | 2 | B, MIDDLE, atom, e-HEAD, y-terminal, position, line, paragraph | Mean line position 0.463 (vs 0.500). Line-final 0.55x. Q0-Q1 enriched 1.09-1.13x. Paragraph: header 12.0% → late body 17.5%. Thermal work zone, not closure. |
+| 1461 | e→y CHSH-channel with sh enrichment and qo/BARE exclusion | 2 | B, PREFIX, MIDDLE, atom, e-HEAD, y-terminal, channel, sh, qo | sh 2.45x, ch 1.74x; ch/sh ratio 1.07 vs corpus 1.50 (sh-biased). qo 0.04x, BARE 0.002x, da 0.00x. Monitoring/verification channels, not heat source. |
+| 1462 | e→y rate predicts folio forgiveness via AXM attractor | 2 | B, MIDDLE, atom, e-HEAD, y-terminal, AXM, forgiveness, folio, hazard | e→y vs AXM self-transition rho=+0.569, p<1e-7. e→y vs hazard rho=-0.473, p=7e-6. Q1 (6.6% e→y) = 40.6% AXM self; Q4 (21.1%) = 55.0%. Post-e→y AXM +9.4pp (one-way ratchet). Mechanical basis of forgiveness gradient. |
+
+**Phase 525 findings (e→y Safe Pathway, 10 tests):**
+- T1: 3,475 tokens, 7 MIDDLEs. edy 55.8%, ey 25.6%, eey 18.5%. 49.6% of e-HEAD.
+- T2: 0.06% hazard (400x reduction). OPERATION 3.94x, TRANSITION 1.73x. FLOW/CONTAINMENT/MARKING excluded.
+- T3: NOT recovery-specific. Post-hazard=14.75%, post-safe=15.35%, Mann-Whitney p=0.310. Ambient substrate.
+- T4: Mean position 0.463. Line-final 0.55x. Q0-Q1 enriched. Thermal work zone.
+- T5: sh 2.45x, ch 1.74x. qo 0.04x, BARE 0.002x. CHSH monitoring channel.
+- T6: Suffix rate 0.46% (0.01x corpus). Categorically Mode B. y-terminal suppresses suffix.
+- T7: AXM 78.1% (1.16x). FL_HAZ/FL_SAFE/CC = 0%. Post-e→y AXM +9.4pp. Self-chaining 18.7%.
+- T8: 21 safe frames with N>=100. k→bare (2,083), e→bare (867), l→bare (855), o→l (777), ee→y (644).
+- T9: Paragraph header 12.0% → late body 17.5%. Paragraph e→y rate vs AXM rho=+0.274.
+- T10: Folio e→y vs AXM self-transition rho=+0.569. vs hazard rho=-0.473. Q1→Q4: 40.6%→55.0% AXM self.
 
 ---
 
