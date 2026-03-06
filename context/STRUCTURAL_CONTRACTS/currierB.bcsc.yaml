@@ -189,8 +189,8 @@ guarantees:
     provenance: "C404, C935"
 
   - id: "MIDDLE_INSTRUCTION_ENCODING"
-    statement: "Compound MIDDLEs encode instructions as HEAD + MOD* + TERM: 18 atoms in 4 slot roles (5 HEAD, 6 MOD, 6 TERM, 2 dual). Fixed modifier ordering (p→f→i→c→d→s). Frame (HEAD+TERM) predicts 64% of operational category; modifiers shift remaining 36%. HEAD atoms define distinct operational domains (C1475): k=THERMAL 90.3%, t=FLOW 87.0%, a=FLOW+TRANSITION, e=THERMAL+OPERATION, o=STAGING+OPERATION; headless=infrastructure. k-HEAD immunity is intrinsic (C1476, 0% in all contexts). a-HEAD is primary hazard carrier (C1477, 66%, quench-resistant). k/t are terminal-identical but categorically opposed (C1478). Each HEAD selects distinct modifiers creating a near-partition (C1479). TERMINAL atoms define exit conditions in three functional tiers (C1483-C1487): LOCKED (r=FLOW 98.9%, m=TRANSITION 87.9%), CHANNELED (l=STAGING 64.5%, y=OPERATION 40.6%, n=TRANSITION 39.3%), DIFFUSE (h=6 categories, bare=6 categories). TERMINAL x CATEGORY V=0.463 (2nd after HEAD). TERMINAL gates modifier selection: n takes only i, y takes only d, h takes {c,p,f,s} (C1484). HEAD-TERMINAL affinity creates compositional frames: e->y (72.7%), a->n/m (59-60%), k/t avoid n/m (C1485). Opacity and category specificity are orthogonal design axes. Headless compounds (20.6%) form specialized infrastructure subgrammar. Suffix is an independent compositional domain using same atom inventory (entropy 1.475 bits). TERMINAL gates suffix attachment via three-tier opacity gradient (OPAQUE y/m/n <5%, SEMI-TRANSPARENT l/r 17-20%, TRANSPARENT h 99%; C1440) with active exclusion (C1441). TERMINAL and suffix encode complementary category information (3.6x MI ratio, 8.2% redundancy; C1442)."
-    provenance: "C1393, C1394, C1440, C1441, C1442, C1443, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487"
+    statement: "Compound MIDDLEs encode instructions as HEAD + MOD* + TERM: 18 atoms in 4 slot roles (5 HEAD, 6 MOD, 6 TERM, 2 dual). Fixed modifier ordering (p→f→i→c→d→s). Frame (HEAD+TERM) predicts 64% of operational category; modifiers shift remaining 36%. HEAD atoms define distinct operational domains (C1475): k=THERMAL 90.3%, t=FLOW 87.0%, a=FLOW+TRANSITION, e=THERMAL+OPERATION, o=STAGING+OPERATION. k-HEAD immunity is intrinsic (C1476, 0% in all contexts). a-HEAD is primary hazard carrier (C1477, 66%, quench-resistant). k/t are terminal-identical but categorically opposed (C1478). Each HEAD selects distinct modifiers creating a near-partition (C1479). TERMINAL atoms define exit conditions in three functional tiers (C1483-C1487): LOCKED (r=FLOW 98.9%, m=TRANSITION 87.9%), CHANNELED (l=STAGING 64.5%, y=OPERATION 40.6%, n=TRANSITION 39.3%), DIFFUSE (h=6 categories, bare=6 categories). TERMINAL x CATEGORY V=0.463 (2nd after HEAD). TERMINAL gates modifier selection: n takes only i, y takes only d, h takes {c,p,f,s} (C1484). HEAD-TERMINAL affinity creates compositional frames: e->y (72.7%), a->n/m (59-60%), k/t avoid n/m (C1485). Opacity and category specificity are orthogonal design axes. Headless compounds (20.5%, 3312 tokens, 469 types; C1488) form a coherent functional domain, NOT grab-bag infrastructure: initial atom acts as PSEUDO-HEAD (V=0.511; C1489) with d=CONTAINMENT 84%, i=STAGING 67%, p=MARKING 92%, f=MARKING 91%, r=FLOW 61%, c=OPERATION 32%. Headless terminal profile shifts: h 2.98x, n 2.45x enriched, LOCKED tier 6.2x depleted (structural hazard avoidance; C1490). PREFIX near-exclusive: da 2284x enriched, sa/ta headless-only, ok/ot near-absent (C1491). Suffix bifurcation: d/i bare (binary ops) vs c/p/f suffixed (parametric ops; C1492). 35.7% contain displaced HEAD atoms (C1493). Same modifier ordering grammar applies (61.9% vs 70.1%). Suffix is an independent compositional domain using same atom inventory (entropy 1.475 bits). TERMINAL gates suffix attachment via three-tier opacity gradient (OPAQUE y/m/n <5%, SEMI-TRANSPARENT l/r 17-20%, TRANSPARENT h 99%; C1440) with active exclusion (C1441). TERMINAL and suffix encode complementary category information (3.6x MI ratio, 8.2% redundancy; C1442)."
+    provenance: "C1393, C1394, C1440, C1441, C1442, C1443, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487, C1488, C1489, C1490, C1491, C1492, C1493"
 
 # ============================================================
 invariants:
@@ -655,21 +655,45 @@ middle_instruction_encoding:
     provenance: "C1394 T6"
 
   headless_compounds:
-    statement: "467 headless types (20.6%, 3,288 tokens) — NOT homogeneous. Initial atom acts as pseudo-HEAD with atom-specific functional domains (V=0.503)"
+    statement: "469 headless types (20.5%, 3,312 tokens) — COHERENT FUNCTIONAL DOMAIN (not grab-bag). Initial atom acts as pseudo-HEAD with atom-specific functional domains (V=0.511, chi2=5872, p=0.0; C1489). Categorically distinct from all 5 HEAD domains (nearest: o at JSD=0.302)."
+    population:
+      tokens: 3312
+      types: 469
+      fraction: "20.5%"
+      by_initial_class: "MOD-initial 77.5% (2,568), TERM-initial 19.3% (638), OTHER 3.2% (106)"
+      top_atoms: "i=918, d=805, c=612, l=428, p=157, r=122"
+      provenance: "C1488"
     category_by_initial:
-      d: "CONTAINMENT 83.9%, bare 85.1%, ch-channel, late-line — sealing/closing"
-      i: "STAGING 66.0%, bare 93.2%, da-channel (54%), line-initial 29.3% — cycle control"
-      c: "OPERATION 32.2% (most diverse), suffixed 96.2%, ch-channel (53%), interior-locked — process adjustment"
-      p: "MARKING 91.7%, suffixed 96.8%, qo-channel (71%) — pause/hold"
-      f: "MARKING 90.9%, suffixed 93.2%, qo-channel (61%) — flag/checkpoint"
-      r: "FLOW 60.7%, BARE-channel (39%), line-final 44.3% — response/routing"
-      l: "STAGING 27.8% (most versatile, 6 categories >6%), suffixed 77.3%, both boundaries — state annotation"
-    suffix_bifurcation: "d/i bare (85-93%) vs c/p/f suffixed (93-97%): binary ops vs parametric ops"
-    da_correction: "C1394 T8 da-enrichment is i-initial-specific (iin/in), NOT generic headless. d/c prefer ch/sh; p/f prefer qo"
+      d: "CONTAINMENT 84.0% (N=805) — sealing/closing"
+      i: "STAGING 66.9% (N=918) — cycle control via da-channel"
+      c: "OPERATION 32.2% (N=612, most diverse) — interior adjustment"
+      p: "MARKING 91.7% (N=157) — pause/hold"
+      f: "MARKING 90.9% (N=44) — flag/checkpoint"
+      r: "FLOW 60.7% (N=122) — response/routing"
+      l: "STAGING 27.8% (N=428, most versatile, 7 categories) — state annotation"
+    category_enrichment_vs_headed: "CONTAINMENT 10.6x, MARKING 5.4x, MONITORING 4.0x, STAGING 2.9x; THERMAL 0.11x, FLOW 0.24x, TRANSITION 0.22x"
+    terminal_profile_shift:
+      statement: "Systematic shift away from hazard-carrying LOCKED tier"
+      enriched: "h 2.98x (16.2% vs 5.4%), n 2.45x (25.0% vs 10.2%)"
+      depleted: "l 0.076x (1.0% vs 13.1%), r 0.153x (1.4% vs 9.1%), m 0.21x"
+      locked_tier: "headless 1.7% vs headed 10.7% (6.2x depletion)"
+      c1484_compliance: "n=100%, h=99.6%, y=99.6% — exclusivity rules hold"
+      provenance: "C1490"
+    prefix_selectivity:
+      statement: "Near-absolute PREFIX channel separation"
+      da: "2284x enriched (17.8% vs ~0.008%), i-initial-specific (iin/in)"
+      sa: "197 tokens, 100% headless (exclusive)"
+      ta: "107 tokens, 100% headless (exclusive)"
+      ok: "0.5% of headless vs 7.5% headed (depleted)"
+      ot: "0.8% of headless vs 7.2% headed (depleted)"
+      provenance: "C1491"
+    suffix_bifurcation: "d/i bare (<15% suffix, binary ops) vs c/p/f suffixed (>93%, parametric ops); C1492"
+    internal_structure: "MT 46.7%, T-only 19.3%, MMT 16.3%, MMMT+ 5.1%. 35.7% contain displaced HEAD atoms; C1493"
     modifier_ordering: "Same grammar (61.9% vs 70.1% headed); c atom primary violator"
     q_exclusion: "104 q-initial tokens are non-grammar (98% BARE, 100% UNK) — exclude"
     not_abbreviations: "HEAD recovery rejected (C1395 T2: 9.1%). Genuinely headless"
-    provenance: "C1394 T8, C1397"
+    verdict: "HEADLESS_IS_COHERENT_DOMAIN (3 coherent vs 1 grab-bag evidence points)"
+    provenance: "C1394 T8, C1397, C1488, C1489, C1490, C1491, C1492, C1493"
 
   h_terminal_transparency:
     statement: "h-terminal apparent chaos (27% purity) is resolved: h is transparent, not random"

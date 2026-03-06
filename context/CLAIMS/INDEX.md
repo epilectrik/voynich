@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1331 validated constraints | **Version:** 5.24 | **Date:** 2026-03-06
+**Total:** 1337 validated constraints | **Version:** 5.25 | **Date:** 2026-03-06
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5120,6 +5120,35 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T10: Pairwise distances. Most distant: m vs r (JSD=0.977). Most similar: bare vs h (0.220).
 - T11: Determination power. Overall V=0.463. r norm_entropy=0.036 (near-deterministic). h=0.844 (diffuse).
 - T12: HEAD x TERM frame matrix. 35 frames characterized, confirming C1448 at full resolution.
+
+---
+
+### Headless Compound Subgrammar (C1488-C1493) -- Phase: HEADLESS_COMPOUND_SUBGRAMMAR (Phase 536)
+
+> **Summary:** Phase 536 characterizes the ~20.5% of Currier B compound MIDDLE tokens whose initial atom is NOT a HEAD atom {a,e,o,k,t}. These "headless" compounds (3,312 tokens, 469 types) form a structurally coherent functional domain (verdict: HEADLESS_IS_COHERENT_DOMAIN). The initial atom acts as a PSEUDO-HEAD with V=0.511 category differentiation: d=CONTAINMENT 84%, i=STAGING 67%, p=MARKING 92%, f=MARKING 91%, r=FLOW 61%, c=OPERATION 32%. Terminal profile shifts systematically: h enriched 2.98x, n enriched 2.45x, while LOCKED tier (r+m) depleted 6.2x -- structural hazard avoidance. PREFIX selectivity is near-absolute: da 2284x enriched, sa/ta exclusive to headless, ok/ot near-absent. Suffix bifurcation: d/i bare (binary ops, <15% suffix) vs c/p/f suffixed (parametric ops, >93%). Same modifier ordering grammar applies (61.9% vs 70.1% compliance). 35.7% of headless types contain HEAD atoms in non-initial positions ("displaced HEAD"). The headless aggregate is categorically distinct from all 5 HEAD domains (nearest: o at JSD=0.302).
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1488 | Headless compound population structure | 2 | B, MIDDLE, headless, population, census, compound | 3,312 tokens (20.5%), 469 types. MOD-initial 77.5% (2,568), TERM-initial 19.3% (638), OTHER 3.2% (106). Top: i=918, d=805, c=612, l=428. Mean length 2.64 atoms. |
+| 1489 | Headless pseudo-HEAD category differentiation | 2 | B, MIDDLE, headless, atom, category, pseudo-HEAD, domain | V=0.511, chi2=5872, p=0.0. d=CONTAINMENT 84.0%, i=STAGING 66.9%, p=MARKING 91.7%, f=MARKING 90.9%, r=FLOW 60.7%, c=OPERATION 32.2%. CONTAINMENT 10.6x, THERMAL 0.11x vs headed. |
+| 1490 | Headless terminal profile shift | 2 | B, MIDDLE, headless, atom, terminal, profile, enrichment, hazard | h 2.98x (16.2% vs 5.4%), n 2.45x (25.0% vs 10.2%). l 0.076x, r 0.153x, m 0.21x. LOCKED tier 1.7% vs 10.7% (6.2x depletion). C1484 compliance: n=100%, h=99.6%, y=99.6%. |
+| 1491 | Headless da-PREFIX near-exclusivity | 2 | B, MIDDLE, headless, PREFIX, da, selectivity, sa, ta | da 2284x enriched (17.8% vs ~0.008%). sa: 197 tokens 100% headless. ta: 107 tokens 100% headless. ok: 0.5% vs 7.5% headed. ot: 0.8% vs 7.2% headed. |
+| 1492 | Headless suffix bifurcation | 2 | B, MIDDLE, headless, suffix, bifurcation, binary, parametric | BARE: d=14.9%, i=9.3% (binary ops). SUFFIXED: c=96.2%, p=96.8%, f=93.2% (parametric ops). Aggregate 47.5% vs headed 35.7%. Ordering grammar: 61.9% vs 70.1%. |
+| 1493 | Headless internal structure with displaced HEAD | 2 | B, MIDDLE, headless, internal, structure, displaced, HEAD | MT 46.7%, T-only 19.3%, MMT 16.3%, MMMT+ 5.1%. 35.7% contain HEAD atoms in non-initial position. Nearest HEAD: o (JSD=0.302). Farthest: a (JSD=0.665). |
+
+**Phase 536 findings (Headless Compound Subgrammar, 12 analyses):**
+- T1: Census. 3,312 headless tokens (20.5%), 469 types. MOD-initial 77.5%, TERM-initial 19.3%.
+- T2: Terminal shift. h 2.98x, n 2.45x enriched. r 0.153x, l 0.076x depleted. LOCKED 6.2x depletion.
+- T3: C1484 compliance. n=100% (828/828), h=99.6% (535/537), y=99.6% (772/775).
+- T4: Modifier distribution. i=27.7%, d=24.3%, c=18.5% dominant.
+- T5: Category. V=0.511. d=CONTAINMENT 84%, i=STAGING 67%, p=MARKING 92%, f=MARKING 91%.
+- T6: Hazard. r-terminal 1.4% vs 9.1% (0.153x). LOCKED tier 1.7% vs 10.7%.
+- T7: Position. Mean 0.491 vs 0.494. No dramatic headless-specific spatial pattern.
+- T8: PREFIX. da 2284x enriched. sa/ta exclusive. ok/ot near-absent.
+- T9: Suffix. d/i bare (<15%) vs c/p/f suffixed (>93%). Binary vs parametric split.
+- T10: JSD to HEADs. o=0.302, k=0.327, e=0.373, t=0.618, a=0.665.
+- T11: Internal structure. MT 46.7% dominant. 35.7% displaced HEAD atoms.
+- T12: Length. Mean 2.64 atoms (headless) vs 2.75 (headed). Practically similar.
 
 ---
 

@@ -1,0 +1,2870 @@
+{
+  "a_census": {
+    "total_compound_tokens": 16153,
+    "headless_tokens": 3312,
+    "headed_tokens": 12841,
+    "headless_fraction": 0.205,
+    "headless_types": 469,
+    "headed_types": 804,
+    "first_atom_distribution": {
+      "i": {
+        "tokens": 918,
+        "types": 35,
+        "class": "MODIFIER",
+        "fraction": 0.2772
+      },
+      "d": {
+        "tokens": 805,
+        "types": 59,
+        "class": "MODIFIER",
+        "fraction": 0.2431
+      },
+      "c": {
+        "tokens": 612,
+        "types": 61,
+        "class": "MODIFIER",
+        "fraction": 0.1848
+      },
+      "l": {
+        "tokens": 428,
+        "types": 92,
+        "class": "TERMINAL",
+        "fraction": 0.1292
+      },
+      "p": {
+        "tokens": 157,
+        "types": 48,
+        "class": "MODIFIER",
+        "fraction": 0.0474
+      },
+      "r": {
+        "tokens": 122,
+        "types": 43,
+        "class": "TERMINAL",
+        "fraction": 0.0368
+      },
+      "q": {
+        "tokens": 104,
+        "types": 46,
+        "class": "OTHER",
+        "fraction": 0.0314
+      },
+      "y": {
+        "tokens": 71,
+        "types": 36,
+        "class": "TERMINAL",
+        "fraction": 0.0214
+      },
+      "f": {
+        "tokens": 44,
+        "types": 19,
+        "class": "MODIFIER",
+        "fraction": 0.0133
+      },
+      "s": {
+        "tokens": 32,
+        "types": 19,
+        "class": "MODIFIER",
+        "fraction": 0.0097
+      },
+      "h": {
+        "tokens": 16,
+        "types": 8,
+        "class": "TERMINAL",
+        "fraction": 0.0048
+      },
+      "g": {
+        "tokens": 1,
+        "types": 1,
+        "class": "OTHER",
+        "fraction": 0.0003
+      },
+      "x": {
+        "tokens": 1,
+        "types": 1,
+        "class": "OTHER",
+        "fraction": 0.0003
+      },
+      "m": {
+        "tokens": 1,
+        "types": 1,
+        "class": "TERMINAL",
+        "fraction": 0.0003
+      }
+    },
+    "by_initial_class": {
+      "MODIFIER_tokens": 2568,
+      "MODIFIER_fraction": 0.7754,
+      "TERMINAL_tokens": 638,
+      "TERMINAL_fraction": 0.1926,
+      "OTHER_tokens": 106,
+      "OTHER_fraction": 0.032
+    }
+  },
+  "b_first_atom": {
+    "c": {
+      "tokens": 612,
+      "types": 61,
+      "category_distribution": {
+        "OPERATION": {
+          "count": 197,
+          "fraction": 0.3219
+        },
+        "MONITORING": {
+          "count": 137,
+          "fraction": 0.2239
+        },
+        "MARKING": {
+          "count": 135,
+          "fraction": 0.2206
+        },
+        "CONTAINMENT": {
+          "count": 127,
+          "fraction": 0.2075
+        },
+        "THERMAL": {
+          "count": 8,
+          "fraction": 0.0131
+        },
+        "FLOW": {
+          "count": 8,
+          "fraction": 0.0131
+        }
+      },
+      "dominant_category": "OPERATION",
+      "category_concentration": 0.3219,
+      "terminal_distribution": {
+        "e": {
+          "count": 376,
+          "fraction": 0.6144
+        },
+        "h": {
+          "count": 233,
+          "fraction": 0.3807
+        },
+        "y": {
+          "count": 2,
+          "fraction": 0.0033
+        },
+        "r": {
+          "count": 1,
+          "fraction": 0.0016
+        }
+      },
+      "suffix_rate": 0.9624,
+      "mean_length": 2.658,
+      "atom_class": "MODIFIER"
+    },
+    "d": {
+      "tokens": 805,
+      "types": 59,
+      "category_distribution": {
+        "CONTAINMENT": {
+          "count": 675,
+          "fraction": 0.8396
+        },
+        "MARKING": {
+          "count": 89,
+          "fraction": 0.1107
+        },
+        "FLOW": {
+          "count": 18,
+          "fraction": 0.0224
+        },
+        "TRANSITION": {
+          "count": 17,
+          "fraction": 0.0211
+        },
+        "STAGING": {
+          "count": 5,
+          "fraction": 0.0062
+        }
+      },
+      "dominant_category": "CONTAINMENT",
+      "category_concentration": 0.8396,
+      "terminal_distribution": {
+        "y": {
+          "count": 677,
+          "fraction": 0.841
+        },
+        "e": {
+          "count": 97,
+          "fraction": 0.1205
+        },
+        "h": {
+          "count": 14,
+          "fraction": 0.0174
+        },
+        "l": {
+          "count": 13,
+          "fraction": 0.0161
+        },
+        "r": {
+          "count": 4,
+          "fraction": 0.005
+        }
+      },
+      "suffix_rate": 0.1491,
+      "mean_length": 2.181,
+      "atom_class": "MODIFIER"
+    },
+    "f": {
+      "tokens": 44,
+      "types": 19,
+      "category_distribution": {
+        "MARKING": {
+          "count": 40,
+          "fraction": 0.9091
+        },
+        "TRANSITION": {
+          "count": 2,
+          "fraction": 0.0455
+        },
+        "THERMAL": {
+          "count": 1,
+          "fraction": 0.0227
+        },
+        "STAGING": {
+          "count": 1,
+          "fraction": 0.0227
+        }
+      },
+      "dominant_category": "MARKING",
+      "category_concentration": 0.9091,
+      "terminal_distribution": {
+        "h": {
+          "count": 26,
+          "fraction": 0.5909
+        },
+        "e": {
+          "count": 15,
+          "fraction": 0.3409
+        },
+        "m": {
+          "count": 2,
+          "fraction": 0.0455
+        },
+        "r": {
+          "count": 1,
+          "fraction": 0.0227
+        }
+      },
+      "suffix_rate": 0.9318,
+      "mean_length": 3.318,
+      "atom_class": "MODIFIER"
+    },
+    "g": {
+      "tokens": 1,
+      "types": 1,
+      "category_distribution": {
+        "THERMAL": {
+          "count": 1,
+          "fraction": 1.0
+        }
+      },
+      "dominant_category": "THERMAL",
+      "category_concentration": 1.0,
+      "terminal_distribution": {
+        "e": {
+          "count": 1,
+          "fraction": 1.0
+        }
+      },
+      "suffix_rate": 1.0,
+      "mean_length": 2.0,
+      "atom_class": "OTHER"
+    },
+    "h": {
+      "tokens": 16,
+      "types": 8,
+      "category_distribution": {
+        "MONITORING": {
+          "count": 11,
+          "fraction": 0.6875
+        },
+        "MARKING": {
+          "count": 2,
+          "fraction": 0.125
+        },
+        "THERMAL": {
+          "count": 1,
+          "fraction": 0.0625
+        },
+        "FLOW": {
+          "count": 1,
+          "fraction": 0.0625
+        },
+        "TRANSITION": {
+          "count": 1,
+          "fraction": 0.0625
+        }
+      },
+      "dominant_category": "MONITORING",
+      "category_concentration": 0.6875,
+      "terminal_distribution": {
+        "y": {
+          "count": 8,
+          "fraction": 0.5
+        },
+        "e": {
+          "count": 7,
+          "fraction": 0.4375
+        },
+        "h": {
+          "count": 1,
+          "fraction": 0.0625
+        }
+      },
+      "suffix_rate": 0.4375,
+      "mean_length": 2.812,
+      "atom_class": "TERMINAL"
+    },
+    "i": {
+      "tokens": 918,
+      "types": 35,
+      "category_distribution": {
+        "STAGING": {
+          "count": 614,
+          "fraction": 0.6688
+        },
+        "MARKING": {
+          "count": 269,
+          "fraction": 0.293
+        },
+        "FLOW": {
+          "count": 31,
+          "fraction": 0.0338
+        },
+        "MONITORING": {
+          "count": 2,
+          "fraction": 0.0022
+        },
+        "OPERATION": {
+          "count": 1,
+          "fraction": 0.0011
+        },
+        "THERMAL": {
+          "count": 1,
+          "fraction": 0.0011
+        }
+      },
+      "dominant_category": "STAGING",
+      "category_concentration": 0.6688,
+      "terminal_distribution": {
+        "n": {
+          "count": 825,
+          "fraction": 0.8987
+        },
+        "e": {
+          "count": 49,
+          "fraction": 0.0534
+        },
+        "r": {
+          "count": 22,
+          "fraction": 0.024
+        },
+        "h": {
+          "count": 9,
+          "fraction": 0.0098
+        },
+        "m": {
+          "count": 8,
+          "fraction": 0.0087
+        },
+        "l": {
+          "count": 4,
+          "fraction": 0.0044
+        },
+        "y": {
+          "count": 1,
+          "fraction": 0.0011
+        }
+      },
+      "suffix_rate": 0.0926,
+      "mean_length": 2.667,
+      "atom_class": "MODIFIER"
+    },
+    "l": {
+      "tokens": 428,
+      "types": 92,
+      "category_distribution": {
+        "STAGING": {
+          "count": 119,
+          "fraction": 0.278
+        },
+        "TRANSITION": {
+          "count": 84,
+          "fraction": 0.1963
+        },
+        "OPERATION": {
+          "count": 76,
+          "fraction": 0.1776
+        },
+        "MARKING": {
+          "count": 69,
+          "fraction": 0.1612
+        },
+        "THERMAL": {
+          "count": 32,
+          "fraction": 0.0748
+        },
+        "MONITORING": {
+          "count": 28,
+          "fraction": 0.0654
+        },
+        "FLOW": {
+          "count": 20,
+          "fraction": 0.0467
+        }
+      },
+      "dominant_category": "STAGING",
+      "category_concentration": 0.278,
+      "terminal_distribution": {
+        "e": {
+          "count": 243,
+          "fraction": 0.5678
+        },
+        "h": {
+          "count": 118,
+          "fraction": 0.2757
+        },
+        "y": {
+          "count": 51,
+          "fraction": 0.1192
+        },
+        "r": {
+          "count": 9,
+          "fraction": 0.021
+        },
+        "l": {
+          "count": 5,
+          "fraction": 0.0117
+        },
+        "m": {
+          "count": 1,
+          "fraction": 0.0023
+        },
+        "n": {
+          "count": 1,
+          "fraction": 0.0023
+        }
+      },
+      "suffix_rate": 0.7734,
+      "mean_length": 2.797,
+      "atom_class": "TERMINAL"
+    },
+    "m": {
+      "tokens": 1,
+      "types": 1,
+      "category_distribution": {
+        "MARKING": {
+          "count": 1,
+          "fraction": 1.0
+        }
+      },
+      "dominant_category": "MARKING",
+      "category_concentration": 1.0,
+      "terminal_distribution": {
+        "e": {
+          "count": 1,
+          "fraction": 1.0
+        }
+      },
+      "suffix_rate": 1.0,
+      "mean_length": 2.0,
+      "atom_class": "TERMINAL"
+    },
+    "p": {
+      "tokens": 157,
+      "types": 48,
+      "category_distribution": {
+        "MARKING": {
+          "count": 144,
+          "fraction": 0.9172
+        },
+        "FLOW": {
+          "count": 6,
+          "fraction": 0.0382
+        },
+        "STAGING": {
+          "count": 4,
+          "fraction": 0.0255
+        },
+        "THERMAL": {
+          "count": 2,
+          "fraction": 0.0127
+        },
+        "TRANSITION": {
+          "count": 1,
+          "fraction": 0.0064
+        }
+      },
+      "dominant_category": "MARKING",
+      "category_concentration": 0.9172,
+      "terminal_distribution": {
+        "h": {
+          "count": 87,
+          "fraction": 0.5541
+        },
+        "e": {
+          "count": 63,
+          "fraction": 0.4013
+        },
+        "r": {
+          "count": 5,
+          "fraction": 0.0318
+        },
+        "l": {
+          "count": 1,
+          "fraction": 0.0064
+        },
+        "y": {
+          "count": 1,
+          "fraction": 0.0064
+        }
+      },
+      "suffix_rate": 0.9682,
+      "mean_length": 3.427,
+      "atom_class": "MODIFIER"
+    },
+    "q": {
+      "tokens": 104,
+      "types": 46,
+      "category_distribution": {},
+      "dominant_category": null,
+      "category_concentration": 0,
+      "terminal_distribution": {
+        "e": {
+          "count": 79,
+          "fraction": 0.7596
+        },
+        "h": {
+          "count": 22,
+          "fraction": 0.2115
+        },
+        "l": {
+          "count": 1,
+          "fraction": 0.0096
+        },
+        "y": {
+          "count": 1,
+          "fraction": 0.0096
+        },
+        "r": {
+          "count": 1,
+          "fraction": 0.0096
+        }
+      },
+      "suffix_rate": 0.8077,
+      "mean_length": 3.365,
+      "atom_class": "OTHER"
+    },
+    "r": {
+      "tokens": 122,
+      "types": 43,
+      "category_distribution": {
+        "FLOW": {
+          "count": 74,
+          "fraction": 0.6066
+        },
+        "TRANSITION": {
+          "count": 35,
+          "fraction": 0.2869
+        },
+        "STAGING": {
+          "count": 9,
+          "fraction": 0.0738
+        },
+        "MARKING": {
+          "count": 2,
+          "fraction": 0.0164
+        },
+        "THERMAL": {
+          "count": 2,
+          "fraction": 0.0164
+        }
+      },
+      "dominant_category": "FLOW",
+      "category_concentration": 0.6066,
+      "terminal_distribution": {
+        "e": {
+          "count": 72,
+          "fraction": 0.5902
+        },
+        "y": {
+          "count": 34,
+          "fraction": 0.2787
+        },
+        "h": {
+          "count": 10,
+          "fraction": 0.082
+        },
+        "l": {
+          "count": 3,
+          "fraction": 0.0246
+        },
+        "n": {
+          "count": 2,
+          "fraction": 0.0164
+        },
+        "r": {
+          "count": 1,
+          "fraction": 0.0082
+        }
+      },
+      "suffix_rate": 0.6311,
+      "mean_length": 2.836,
+      "atom_class": "TERMINAL"
+    },
+    "s": {
+      "tokens": 32,
+      "types": 19,
+      "category_distribution": {
+        "MARKING": {
+          "count": 10,
+          "fraction": 0.3125
+        },
+        "STAGING": {
+          "count": 10,
+          "fraction": 0.3125
+        },
+        "MONITORING": {
+          "count": 5,
+          "fraction": 0.1562
+        },
+        "OPERATION": {
+          "count": 3,
+          "fraction": 0.0938
+        },
+        "THERMAL": {
+          "count": 2,
+          "fraction": 0.0625
+        },
+        "FLOW": {
+          "count": 1,
+          "fraction": 0.0312
+        },
+        "TRANSITION": {
+          "count": 1,
+          "fraction": 0.0312
+        }
+      },
+      "dominant_category": "MARKING",
+      "category_concentration": 0.3125,
+      "terminal_distribution": {
+        "e": {
+          "count": 25,
+          "fraction": 0.7812
+        },
+        "h": {
+          "count": 5,
+          "fraction": 0.1562
+        },
+        "l": {
+          "count": 1,
+          "fraction": 0.0312
+        },
+        "r": {
+          "count": 1,
+          "fraction": 0.0312
+        }
+      },
+      "suffix_rate": 0.625,
+      "mean_length": 2.625,
+      "atom_class": "MODIFIER"
+    },
+    "x": {
+      "tokens": 1,
+      "types": 1,
+      "category_distribution": {
+        "THERMAL": {
+          "count": 1,
+          "fraction": 1.0
+        }
+      },
+      "dominant_category": "THERMAL",
+      "category_concentration": 1.0,
+      "terminal_distribution": {
+        "e": {
+          "count": 1,
+          "fraction": 1.0
+        }
+      },
+      "suffix_rate": 1.0,
+      "mean_length": 7.0,
+      "atom_class": "OTHER"
+    },
+    "y": {
+      "tokens": 71,
+      "types": 36,
+      "category_distribution": {
+        "MARKING": {
+          "count": 22,
+          "fraction": 0.3099
+        },
+        "FLOW": {
+          "count": 21,
+          "fraction": 0.2958
+        },
+        "THERMAL": {
+          "count": 16,
+          "fraction": 0.2254
+        },
+        "STAGING": {
+          "count": 8,
+          "fraction": 0.1127
+        },
+        "TRANSITION": {
+          "count": 3,
+          "fraction": 0.0423
+        },
+        "MONITORING": {
+          "count": 1,
+          "fraction": 0.0141
+        }
+      },
+      "dominant_category": "MARKING",
+      "category_concentration": 0.3099,
+      "terminal_distribution": {
+        "e": {
+          "count": 53,
+          "fraction": 0.7465
+        },
+        "h": {
+          "count": 12,
+          "fraction": 0.169
+        },
+        "l": {
+          "count": 5,
+          "fraction": 0.0704
+        },
+        "r": {
+          "count": 1,
+          "fraction": 0.0141
+        }
+      },
+      "suffix_rate": 0.9014,
+      "mean_length": 2.859,
+      "atom_class": "TERMINAL"
+    }
+  },
+  "c_terminal": {
+    "headless_terminal_distribution": {
+      "e": {
+        "count": 1082,
+        "fraction": 0.3267
+      },
+      "n": {
+        "count": 828,
+        "fraction": 0.25
+      },
+      "y": {
+        "count": 775,
+        "fraction": 0.234
+      },
+      "h": {
+        "count": 537,
+        "fraction": 0.1621
+      },
+      "r": {
+        "count": 46,
+        "fraction": 0.0139
+      },
+      "l": {
+        "count": 33,
+        "fraction": 0.01
+      },
+      "m": {
+        "count": 11,
+        "fraction": 0.0033
+      }
+    },
+    "headed_terminal_distribution": {
+      "e": {
+        "count": 4289,
+        "fraction": 0.334
+      },
+      "y": {
+        "count": 3492,
+        "fraction": 0.2719
+      },
+      "l": {
+        "count": 1680,
+        "fraction": 0.1308
+      },
+      "n": {
+        "count": 1312,
+        "fraction": 0.1022
+      },
+      "r": {
+        "count": 1167,
+        "fraction": 0.0909
+      },
+      "h": {
+        "count": 699,
+        "fraction": 0.0544
+      },
+      "m": {
+        "count": 202,
+        "fraction": 0.0157
+      }
+    },
+    "headless_tier_distribution": {
+      "CHANNELED": 0.494,
+      "OTHER": 0.3267,
+      "DIFFUSE": 0.1621,
+      "LOCKED": 0.0172
+    },
+    "headed_tier_distribution": {
+      "CHANNELED": 0.5049,
+      "OTHER": 0.334,
+      "LOCKED": 0.1066,
+      "DIFFUSE": 0.0544
+    },
+    "enrichment_vs_headed": {
+      "n": 2.447,
+      "h": 2.979,
+      "m": 0.211,
+      "l": 0.076,
+      "r": 0.153,
+      "e": 0.978,
+      "y": 0.86
+    },
+    "per_first_atom": {
+      "c": {
+        "terminals": {
+          "e": 0.6144,
+          "h": 0.3807,
+          "y": 0.0033,
+          "r": 0.0016
+        },
+        "tiers": {
+          "OTHER": 0.6144,
+          "DIFFUSE": 0.3807,
+          "CHANNELED": 0.0033,
+          "LOCKED": 0.0016
+        },
+        "n": 612
+      },
+      "d": {
+        "terminals": {
+          "y": 0.841,
+          "e": 0.1205,
+          "h": 0.0174,
+          "l": 0.0161,
+          "r": 0.005
+        },
+        "tiers": {
+          "CHANNELED": 0.8571,
+          "OTHER": 0.1205,
+          "DIFFUSE": 0.0174,
+          "LOCKED": 0.005
+        },
+        "n": 805
+      },
+      "f": {
+        "terminals": {
+          "h": 0.5909,
+          "e": 0.3409,
+          "m": 0.0455,
+          "r": 0.0227
+        },
+        "tiers": {
+          "DIFFUSE": 0.5909,
+          "OTHER": 0.3409,
+          "LOCKED": 0.0682
+        },
+        "n": 44
+      },
+      "g": {
+        "terminals": {
+          "e": 1.0
+        },
+        "tiers": {
+          "OTHER": 1.0
+        },
+        "n": 1
+      },
+      "h": {
+        "terminals": {
+          "y": 0.5,
+          "e": 0.4375,
+          "h": 0.0625
+        },
+        "tiers": {
+          "CHANNELED": 0.5,
+          "OTHER": 0.4375,
+          "DIFFUSE": 0.0625
+        },
+        "n": 16
+      },
+      "i": {
+        "terminals": {
+          "n": 0.8987,
+          "e": 0.0534,
+          "r": 0.024,
+          "h": 0.0098,
+          "m": 0.0087,
+          "l": 0.0044,
+          "y": 0.0011
+        },
+        "tiers": {
+          "CHANNELED": 0.9041,
+          "OTHER": 0.0534,
+          "LOCKED": 0.0327,
+          "DIFFUSE": 0.0098
+        },
+        "n": 918
+      },
+      "l": {
+        "terminals": {
+          "e": 0.5678,
+          "h": 0.2757,
+          "y": 0.1192,
+          "r": 0.021,
+          "l": 0.0117,
+          "m": 0.0023,
+          "n": 0.0023
+        },
+        "tiers": {
+          "OTHER": 0.5678,
+          "DIFFUSE": 0.2757,
+          "CHANNELED": 0.1332,
+          "LOCKED": 0.0234
+        },
+        "n": 428
+      },
+      "m": {
+        "terminals": {
+          "e": 1.0
+        },
+        "tiers": {
+          "OTHER": 1.0
+        },
+        "n": 1
+      },
+      "p": {
+        "terminals": {
+          "h": 0.5541,
+          "e": 0.4013,
+          "r": 0.0318,
+          "l": 0.0064,
+          "y": 0.0064
+        },
+        "tiers": {
+          "DIFFUSE": 0.5541,
+          "OTHER": 0.4013,
+          "LOCKED": 0.0318,
+          "CHANNELED": 0.0127
+        },
+        "n": 157
+      },
+      "q": {
+        "terminals": {
+          "e": 0.7596,
+          "h": 0.2115,
+          "l": 0.0096,
+          "y": 0.0096,
+          "r": 0.0096
+        },
+        "tiers": {
+          "OTHER": 0.7596,
+          "DIFFUSE": 0.2115,
+          "CHANNELED": 0.0192,
+          "LOCKED": 0.0096
+        },
+        "n": 104
+      },
+      "r": {
+        "terminals": {
+          "e": 0.5902,
+          "y": 0.2787,
+          "h": 0.082,
+          "l": 0.0246,
+          "n": 0.0164,
+          "r": 0.0082
+        },
+        "tiers": {
+          "OTHER": 0.5902,
+          "CHANNELED": 0.3197,
+          "DIFFUSE": 0.082,
+          "LOCKED": 0.0082
+        },
+        "n": 122
+      },
+      "s": {
+        "terminals": {
+          "e": 0.7812,
+          "h": 0.1562,
+          "l": 0.0312,
+          "r": 0.0312
+        },
+        "tiers": {
+          "OTHER": 0.7812,
+          "DIFFUSE": 0.1562,
+          "CHANNELED": 0.0312,
+          "LOCKED": 0.0312
+        },
+        "n": 32
+      },
+      "x": {
+        "terminals": {
+          "e": 1.0
+        },
+        "tiers": {
+          "OTHER": 1.0
+        },
+        "n": 1
+      },
+      "y": {
+        "terminals": {
+          "e": 0.7465,
+          "h": 0.169,
+          "l": 0.0704,
+          "r": 0.0141
+        },
+        "tiers": {
+          "OTHER": 0.7465,
+          "DIFFUSE": 0.169,
+          "CHANNELED": 0.0704,
+          "LOCKED": 0.0141
+        },
+        "n": 71
+      }
+    }
+  },
+  "d_modifier": {
+    "headless_modifier_frequency": {
+      "i": {
+        "count": 1013,
+        "fraction": 0.3059
+      },
+      "c": {
+        "count": 967,
+        "fraction": 0.292
+      },
+      "d": {
+        "count": 940,
+        "fraction": 0.2838
+      },
+      "p": {
+        "count": 257,
+        "fraction": 0.0776
+      },
+      "s": {
+        "count": 170,
+        "fraction": 0.0513
+      },
+      "f": {
+        "count": 82,
+        "fraction": 0.0248
+      }
+    },
+    "headed_modifier_frequency": {
+      "d": {
+        "count": 3124,
+        "fraction": 0.2433
+      },
+      "i": {
+        "count": 1725,
+        "fraction": 0.1343
+      },
+      "c": {
+        "count": 1124,
+        "fraction": 0.0875
+      },
+      "p": {
+        "count": 334,
+        "fraction": 0.026
+      },
+      "s": {
+        "count": 246,
+        "fraction": 0.0192
+      },
+      "f": {
+        "count": 116,
+        "fraction": 0.009
+      }
+    },
+    "headless_modifier_pairs": {
+      "c+p": 199,
+      "c+d": 65,
+      "c+f": 56,
+      "c+s": 36,
+      "d+i": 34,
+      "d+s": 33,
+      "d+p": 26,
+      "i+p": 21,
+      "p+s": 19,
+      "i+s": 14,
+      "c+i": 12,
+      "d+f": 10,
+      "f+s": 6,
+      "f+i": 4,
+      "f+p": 3
+    },
+    "headed_modifier_pairs": {
+      "c+p": 204,
+      "c+d": 92,
+      "c+f": 54,
+      "d+i": 44,
+      "d+p": 33,
+      "d+s": 29,
+      "i+p": 21,
+      "p+s": 20,
+      "c+i": 15,
+      "c+s": 14,
+      "f+i": 12,
+      "d+f": 8,
+      "i+s": 7,
+      "f+s": 6,
+      "f+p": 4
+    },
+    "headless_mod_count_distribution": {
+      "0": 374,
+      "1": 2491,
+      "2": 406,
+      "3": 38,
+      "4": 3
+    },
+    "headed_mod_count_distribution": {
+      "0": 6680,
+      "1": 5703,
+      "2": 413,
+      "3": 40,
+      "4": 5
+    },
+    "C1484_exclusivity_compliance": {
+      "h": {
+        "total": 537,
+        "compliant": 535,
+        "rate": 0.9963,
+        "violations": 2,
+        "violation_examples": [
+          {
+            "middle": "ldsh",
+            "violating_mods": [
+              "d"
+            ],
+            "allowed": [
+              "p",
+              "f",
+              "c",
+              "s"
+            ]
+          },
+          {
+            "middle": "railch",
+            "violating_mods": [
+              "i"
+            ],
+            "allowed": [
+              "p",
+              "f",
+              "c",
+              "s"
+            ]
+          }
+        ]
+      },
+      "y": {
+        "total": 775,
+        "compliant": 772,
+        "rate": 0.9961,
+        "violations": 3,
+        "violation_examples": [
+          {
+            "middle": "qcthdy",
+            "violating_mods": [
+              "c"
+            ],
+            "allowed": [
+              "d"
+            ]
+          },
+          {
+            "middle": "cfhy",
+            "violating_mods": [
+              "f"
+            ],
+            "allowed": [
+              "d"
+            ]
+          },
+          {
+            "middle": "pchy",
+            "violating_mods": [
+              "c"
+            ],
+            "allowed": [
+              "d"
+            ]
+          }
+        ]
+      },
+      "n": {
+        "total": 828,
+        "compliant": 828,
+        "rate": 1.0,
+        "violations": 0,
+        "violation_examples": []
+      }
+    }
+  },
+  "e_category": {
+    "headless_category_distribution": {
+      "CONTAINMENT": {
+        "count": 802,
+        "fraction": 0.2501
+      },
+      "MARKING": {
+        "count": 783,
+        "fraction": 0.2442
+      },
+      "STAGING": {
+        "count": 770,
+        "fraction": 0.2401
+      },
+      "OPERATION": {
+        "count": 277,
+        "fraction": 0.0864
+      },
+      "MONITORING": {
+        "count": 184,
+        "fraction": 0.0574
+      },
+      "FLOW": {
+        "count": 180,
+        "fraction": 0.0561
+      },
+      "TRANSITION": {
+        "count": 144,
+        "fraction": 0.0449
+      },
+      "THERMAL": {
+        "count": 67,
+        "fraction": 0.0209
+      }
+    },
+    "headed_category_distribution": {
+      "FLOW": {
+        "count": 2919,
+        "fraction": 0.2313
+      },
+      "OPERATION": {
+        "count": 2606,
+        "fraction": 0.2065
+      },
+      "TRANSITION": {
+        "count": 2599,
+        "fraction": 0.2059
+      },
+      "THERMAL": {
+        "count": 2391,
+        "fraction": 0.1895
+      },
+      "STAGING": {
+        "count": 1057,
+        "fraction": 0.0838
+      },
+      "MARKING": {
+        "count": 570,
+        "fraction": 0.0452
+      },
+      "CONTAINMENT": {
+        "count": 297,
+        "fraction": 0.0235
+      },
+      "MONITORING": {
+        "count": 181,
+        "fraction": 0.0143
+      }
+    },
+    "enrichment_vs_headed": {
+      "CONTAINMENT": 10.626,
+      "FLOW": 0.243,
+      "MARKING": 5.406,
+      "MONITORING": 4.0,
+      "OPERATION": 0.418,
+      "STAGING": 2.867,
+      "THERMAL": 0.11,
+      "TRANSITION": 0.218
+    },
+    "pseudo_head_V": 0.5115,
+    "pseudo_head_chi2": 5872.44,
+    "pseudo_head_p": 0.0,
+    "pseudo_head_profiles": {
+      "c": {
+        "distribution": {
+          "OPERATION": 0.3219,
+          "MONITORING": 0.2239,
+          "MARKING": 0.2206,
+          "CONTAINMENT": 0.2075,
+          "THERMAL": 0.0131,
+          "FLOW": 0.0131
+        },
+        "dominant": "OPERATION",
+        "concentration": 0.3219,
+        "n": 612
+      },
+      "d": {
+        "distribution": {
+          "CONTAINMENT": 0.8396,
+          "MARKING": 0.1107,
+          "FLOW": 0.0224,
+          "TRANSITION": 0.0211,
+          "STAGING": 0.0062
+        },
+        "dominant": "CONTAINMENT",
+        "concentration": 0.8396,
+        "n": 804
+      },
+      "f": {
+        "distribution": {
+          "MARKING": 0.9091,
+          "TRANSITION": 0.0455,
+          "THERMAL": 0.0227,
+          "STAGING": 0.0227
+        },
+        "dominant": "MARKING",
+        "concentration": 0.9091,
+        "n": 44
+      },
+      "g": {
+        "distribution": {
+          "THERMAL": 1.0
+        },
+        "dominant": "THERMAL",
+        "concentration": 1.0,
+        "n": 1
+      },
+      "h": {
+        "distribution": {
+          "MONITORING": 0.6875,
+          "MARKING": 0.125,
+          "THERMAL": 0.0625,
+          "FLOW": 0.0625,
+          "TRANSITION": 0.0625
+        },
+        "dominant": "MONITORING",
+        "concentration": 0.6875,
+        "n": 16
+      },
+      "i": {
+        "distribution": {
+          "STAGING": 0.6688,
+          "MARKING": 0.293,
+          "FLOW": 0.0338,
+          "MONITORING": 0.0022,
+          "OPERATION": 0.0011,
+          "THERMAL": 0.0011
+        },
+        "dominant": "STAGING",
+        "concentration": 0.6688,
+        "n": 918
+      },
+      "l": {
+        "distribution": {
+          "STAGING": 0.278,
+          "TRANSITION": 0.1963,
+          "OPERATION": 0.1776,
+          "MARKING": 0.1612,
+          "THERMAL": 0.0748,
+          "MONITORING": 0.0654,
+          "FLOW": 0.0467
+        },
+        "dominant": "STAGING",
+        "concentration": 0.278,
+        "n": 428
+      },
+      "m": {
+        "distribution": {
+          "MARKING": 1.0
+        },
+        "dominant": "MARKING",
+        "concentration": 1.0,
+        "n": 1
+      },
+      "p": {
+        "distribution": {
+          "MARKING": 0.9172,
+          "FLOW": 0.0382,
+          "STAGING": 0.0255,
+          "THERMAL": 0.0127,
+          "TRANSITION": 0.0064
+        },
+        "dominant": "MARKING",
+        "concentration": 0.9172,
+        "n": 157
+      },
+      "r": {
+        "distribution": {
+          "FLOW": 0.6066,
+          "TRANSITION": 0.2869,
+          "STAGING": 0.0738,
+          "MARKING": 0.0164,
+          "THERMAL": 0.0164
+        },
+        "dominant": "FLOW",
+        "concentration": 0.6066,
+        "n": 122
+      },
+      "s": {
+        "distribution": {
+          "MARKING": 0.3125,
+          "STAGING": 0.3125,
+          "MONITORING": 0.1562,
+          "OPERATION": 0.0938,
+          "THERMAL": 0.0625,
+          "FLOW": 0.0312,
+          "TRANSITION": 0.0312
+        },
+        "dominant": "MARKING",
+        "concentration": 0.3125,
+        "n": 32
+      },
+      "x": {
+        "distribution": {
+          "THERMAL": 1.0
+        },
+        "dominant": "THERMAL",
+        "concentration": 1.0,
+        "n": 1
+      },
+      "y": {
+        "distribution": {
+          "MARKING": 0.3099,
+          "FLOW": 0.2958,
+          "THERMAL": 0.2254,
+          "STAGING": 0.1127,
+          "TRANSITION": 0.0423,
+          "MONITORING": 0.0141
+        },
+        "dominant": "MARKING",
+        "concentration": 0.3099,
+        "n": 71
+      }
+    },
+    "head_atom_profiles_for_comparison": {
+      "a": {
+        "FLOW": 0.5538,
+        "TRANSITION": 0.4016,
+        "STAGING": 0.0174,
+        "MARKING": 0.0121,
+        "THERMAL": 0.006,
+        "CONTAINMENT": 0.006,
+        "OPERATION": 0.0017,
+        "MONITORING": 0.0013
+      },
+      "e": {
+        "OPERATION": 0.3674,
+        "THERMAL": 0.2548,
+        "TRANSITION": 0.2174,
+        "FLOW": 0.0761,
+        "MARKING": 0.0321,
+        "CONTAINMENT": 0.0235,
+        "STAGING": 0.0143,
+        "MONITORING": 0.0143
+      },
+      "k": {
+        "THERMAL": 0.706,
+        "STAGING": 0.0895,
+        "FLOW": 0.0669,
+        "CONTAINMENT": 0.0324,
+        "MARKING": 0.0324,
+        "TRANSITION": 0.0275,
+        "MONITORING": 0.0256,
+        "OPERATION": 0.0197
+      },
+      "o": {
+        "STAGING": 0.383,
+        "FLOW": 0.2373,
+        "MARKING": 0.134,
+        "OPERATION": 0.121,
+        "CONTAINMENT": 0.0476,
+        "THERMAL": 0.0294,
+        "MONITORING": 0.0294,
+        "TRANSITION": 0.0182
+      },
+      "t": {
+        "FLOW": 0.6512,
+        "OPERATION": 0.1977,
+        "THERMAL": 0.0843,
+        "MARKING": 0.0494,
+        "STAGING": 0.0174
+      }
+    }
+  },
+  "f_hazard": {
+    "headless_r_terminal_fraction": 0.0139,
+    "headed_r_terminal_fraction": 0.0909,
+    "r_terminal_enrichment": 0.153,
+    "headless_quenched_fraction": 0.2104,
+    "headed_quenched_fraction": 0.3523,
+    "per_first_atom_hazard": {
+      "c": {
+        "tokens": 612,
+        "high_frame_matches": 0,
+        "high_frame_fraction": 0.0,
+        "r_terminal_count": 1,
+        "r_terminal_fraction": 0.0016,
+        "quenched_fraction": 0.1993
+      },
+      "d": {
+        "tokens": 805,
+        "high_frame_matches": 677,
+        "high_frame_fraction": 0.841,
+        "r_terminal_count": 4,
+        "r_terminal_fraction": 0.005,
+        "quenched_fraction": 0.0447
+      },
+      "f": {
+        "tokens": 44,
+        "high_frame_matches": 0,
+        "high_frame_fraction": 0.0,
+        "r_terminal_count": 1,
+        "r_terminal_fraction": 0.0227,
+        "quenched_fraction": 0.8636
+      },
+      "g": {
+        "tokens": 1,
+        "high_frame_matches": 0,
+        "high_frame_fraction": 0.0,
+        "r_terminal_count": 0,
+        "r_terminal_fraction": 0.0,
+        "quenched_fraction": 0.0
+      },
+      "h": {
+        "tokens": 16,
+        "high_frame_matches": 0,
+        "high_frame_fraction": 0.0,
+        "r_terminal_count": 0,
+        "r_terminal_fraction": 0.0,
+        "quenched_fraction": 0.3125
+      },
+      "i": {
+        "tokens": 918,
+        "high_frame_matches": 0,
+        "high_frame_fraction": 0.0,
+        "r_terminal_count": 22,
+        "r_terminal_fraction": 0.024,
+        "quenched_fraction": 0.0185
+      },
+      "l": {
+        "tokens": 428,
+        "high_frame_matches": 0,
+        "high_frame_fraction": 0.0,
+        "r_terminal_count": 9,
+        "r_terminal_fraction": 0.021,
+        "quenched_fraction": 0.4907
+      },
+      "m": {
+        "tokens": 1,
+        "high_frame_matches": 0,
+        "high_frame_fraction": 0.0,
+        "r_terminal_count": 0,
+        "r_terminal_fraction": 0.0,
+        "quenched_fraction": 1.0
+      },
+      "p": {
+        "tokens": 157,
+        "high_frame_matches": 0,
+        "high_frame_fraction": 0.0,
+        "r_terminal_count": 5,
+        "r_terminal_fraction": 0.0318,
+        "quenched_fraction": 0.8662
+      },
+      "q": {
+        "tokens": 104,
+        "high_frame_matches": 0,
+        "high_frame_fraction": 0.0,
+        "r_terminal_count": 1,
+        "r_terminal_fraction": 0.0096,
+        "quenched_fraction": 0.4135
+      },
+      "r": {
+        "tokens": 122,
+        "high_frame_matches": 0,
+        "high_frame_fraction": 0.0,
+        "r_terminal_count": 1,
+        "r_terminal_fraction": 0.0082,
+        "quenched_fraction": 0.3525
+      },
+      "s": {
+        "tokens": 32,
+        "high_frame_matches": 0,
+        "high_frame_fraction": 0.0,
+        "r_terminal_count": 1,
+        "r_terminal_fraction": 0.0312,
+        "quenched_fraction": 0.375
+      },
+      "x": {
+        "tokens": 1,
+        "high_frame_matches": 0,
+        "high_frame_fraction": 0.0,
+        "r_terminal_count": 0,
+        "r_terminal_fraction": 0.0,
+        "quenched_fraction": 0.0
+      },
+      "y": {
+        "tokens": 71,
+        "high_frame_matches": 0,
+        "high_frame_fraction": 0.0,
+        "r_terminal_count": 1,
+        "r_terminal_fraction": 0.0141,
+        "quenched_fraction": 0.4789
+      }
+    },
+    "top_headless_frames": {
+      "i->n": 825,
+      "d->y": 677,
+      "c->e": 376,
+      "l->e": 243,
+      "c->h": 233,
+      "l->h": 118,
+      "d->e": 97,
+      "p->h": 87,
+      "q->e": 79,
+      "r->e": 72,
+      "p->e": 63,
+      "y->e": 53,
+      "l->y": 51,
+      "i->e": 49,
+      "r->y": 34,
+      "f->h": 26,
+      "s->e": 25,
+      "i->r": 22,
+      "q->h": 22,
+      "f->e": 15
+    },
+    "note": "Headless tokens lack true HEAD atoms, so frame-hazard mapping is structural comparison, not direct hazard prediction"
+  },
+  "g_position": {
+    "headless_mean_pos": 0.491,
+    "headed_mean_pos": 0.5023,
+    "headless_initial_rate": 0.0088,
+    "headed_initial_rate": 0.0041,
+    "headless_final_rate": 0.0054,
+    "headed_final_rate": 0.005,
+    "mann_whitney_p": 0.04511635230575396,
+    "quintile_enrichment": {
+      "Q0": 1.064,
+      "Q1": 0.998,
+      "Q2": 1.006,
+      "Q3": 0.959,
+      "Q4": 0.974
+    },
+    "per_first_atom": {
+      "c": {
+        "mean_pos": 0.4887,
+        "std_pos": 0.2884,
+        "initial_rate": 0.0033,
+        "final_rate": 0.0065,
+        "n": 612
+      },
+      "d": {
+        "mean_pos": 0.4783,
+        "std_pos": 0.2964,
+        "initial_rate": 0.0137,
+        "final_rate": 0.0099,
+        "n": 805
+      },
+      "f": {
+        "mean_pos": 0.3809,
+        "std_pos": 0.2908,
+        "initial_rate": 0.0455,
+        "final_rate": 0.0,
+        "n": 44
+      },
+      "g": {
+        "mean_pos": 0.8,
+        "std_pos": 0.0,
+        "initial_rate": 0.0,
+        "final_rate": 0.0,
+        "n": 1
+      },
+      "h": {
+        "mean_pos": 0.4906,
+        "std_pos": 0.235,
+        "initial_rate": 0.0,
+        "final_rate": 0.0,
+        "n": 16
+      },
+      "i": {
+        "mean_pos": 0.5146,
+        "std_pos": 0.2916,
+        "initial_rate": 0.0011,
+        "final_rate": 0.0011,
+        "n": 918
+      },
+      "l": {
+        "mean_pos": 0.4835,
+        "std_pos": 0.2775,
+        "initial_rate": 0.0187,
+        "final_rate": 0.0023,
+        "n": 428
+      },
+      "m": {
+        "mean_pos": 0.9633,
+        "std_pos": 0.0,
+        "initial_rate": 0.0,
+        "final_rate": 0.0,
+        "n": 1
+      },
+      "p": {
+        "mean_pos": 0.4458,
+        "std_pos": 0.2945,
+        "initial_rate": 0.0191,
+        "final_rate": 0.0,
+        "n": 157
+      },
+      "q": {
+        "mean_pos": 0.5174,
+        "std_pos": 0.2919,
+        "initial_rate": 0.0,
+        "final_rate": 0.0,
+        "n": 104
+      },
+      "r": {
+        "mean_pos": 0.4954,
+        "std_pos": 0.3076,
+        "initial_rate": 0.0082,
+        "final_rate": 0.0246,
+        "n": 122
+      },
+      "s": {
+        "mean_pos": 0.5423,
+        "std_pos": 0.3053,
+        "initial_rate": 0.0312,
+        "final_rate": 0.0312,
+        "n": 32
+      },
+      "x": {
+        "mean_pos": 0.6067,
+        "std_pos": 0.0,
+        "initial_rate": 0.0,
+        "final_rate": 0.0,
+        "n": 1
+      },
+      "y": {
+        "mean_pos": 0.4818,
+        "std_pos": 0.2967,
+        "initial_rate": 0.0,
+        "final_rate": 0.0,
+        "n": 71
+      }
+    }
+  },
+  "h_prefix": {
+    "headless_prefix_distribution": {
+      "BARE": {
+        "count": 595,
+        "fraction": 0.1796
+      },
+      "da": {
+        "count": 589,
+        "fraction": 0.1778
+      },
+      "ch": {
+        "count": 516,
+        "fraction": 0.1558
+      },
+      "qo": {
+        "count": 297,
+        "fraction": 0.0897
+      },
+      "sa": {
+        "count": 197,
+        "fraction": 0.0595
+      },
+      "sh": {
+        "count": 192,
+        "fraction": 0.058
+      },
+      "ka": {
+        "count": 126,
+        "fraction": 0.038
+      },
+      "ta": {
+        "count": 107,
+        "fraction": 0.0323
+      },
+      "te": {
+        "count": 84,
+        "fraction": 0.0254
+      },
+      "so": {
+        "count": 69,
+        "fraction": 0.0208
+      },
+      "po": {
+        "count": 62,
+        "fraction": 0.0187
+      },
+      "ol": {
+        "count": 59,
+        "fraction": 0.0178
+      },
+      "ke": {
+        "count": 58,
+        "fraction": 0.0175
+      },
+      "to": {
+        "count": 43,
+        "fraction": 0.013
+      },
+      "ot": {
+        "count": 39,
+        "fraction": 0.0118
+      }
+    },
+    "headed_prefix_distribution": {
+      "BARE": {
+        "count": 2478,
+        "fraction": 0.193
+      },
+      "ch": {
+        "count": 2410,
+        "fraction": 0.1877
+      },
+      "sh": {
+        "count": 1777,
+        "fraction": 0.1384
+      },
+      "qo": {
+        "count": 1262,
+        "fraction": 0.0983
+      },
+      "ok": {
+        "count": 1182,
+        "fraction": 0.092
+      },
+      "ot": {
+        "count": 1155,
+        "fraction": 0.0899
+      },
+      "ol": {
+        "count": 446,
+        "fraction": 0.0347
+      },
+      "lk": {
+        "count": 340,
+        "fraction": 0.0265
+      },
+      "yk": {
+        "count": 252,
+        "fraction": 0.0196
+      },
+      "lch": {
+        "count": 243,
+        "fraction": 0.0189
+      },
+      "pch": {
+        "count": 176,
+        "fraction": 0.0137
+      },
+      "ke": {
+        "count": 157,
+        "fraction": 0.0122
+      },
+      "te": {
+        "count": 153,
+        "fraction": 0.0119
+      },
+      "or": {
+        "count": 140,
+        "fraction": 0.0109
+      },
+      "tch": {
+        "count": 119,
+        "fraction": 0.0093
+      }
+    },
+    "enrichment": {
+      "sa": "inf",
+      "ta": "inf",
+      "da": 2283.62,
+      "ka": 244.258,
+      "ct": 54.28,
+      "do": 41.356,
+      "so": 24.32,
+      "to": 23.817,
+      "ko": 17.447,
+      "po": 17.17,
+      "te": 2.129,
+      "sch": 1.789,
+      "kch": 1.564,
+      "ke": 1.432,
+      "de": 1.41
+    },
+    "headless_bare_rate": 0.1796,
+    "headed_bare_rate": 0.193,
+    "bare_enrichment": 0.931,
+    "per_first_atom_prefix": {
+      "c": {
+        "ch": 0.5327,
+        "sh": 0.1928,
+        "BARE": 0.1569,
+        "qo": 0.067,
+        "ol": 0.0065,
+        "to": 0.0065,
+        "lch": 0.0049,
+        "or": 0.0049,
+        "lsh": 0.0033,
+        "sch": 0.0033,
+        "tch": 0.0033,
+        "do": 0.0016,
+        "da": 0.0016,
+        "so": 0.0016,
+        "dch": 0.0016,
+        "yk": 0.0016,
+        "pch": 0.0016,
+        "fch": 0.0016,
+        "ar": 0.0016,
+        "de": 0.0016,
+        "ok": 0.0016,
+        "lk": 0.0016
+      },
+      "d": {
+        "ch": 0.195,
+        "BARE": 0.1863,
+        "te": 0.1031,
+        "sh": 0.0857,
+        "ke": 0.0696,
+        "ol": 0.0398,
+        "ot": 0.0398,
+        "tch": 0.0348,
+        "pch": 0.0335,
+        "ok": 0.0298,
+        "qo": 0.0286,
+        "kch": 0.0286,
+        "lch": 0.0224,
+        "to": 0.0186,
+        "al": 0.0124,
+        "dch": 0.0112,
+        "po": 0.0087,
+        "fch": 0.0075,
+        "yk": 0.0075,
+        "do": 0.0062,
+        "lk": 0.0062,
+        "sch": 0.005,
+        "ko": 0.005,
+        "lsh": 0.0037,
+        "ar": 0.0025,
+        "de": 0.0025,
+        "so": 0.0025,
+        "da": 0.0025,
+        "or": 0.0012
+      },
+      "f": {
+        "qo": 0.6136,
+        "BARE": 0.1818,
+        "ol": 0.1364,
+        "al": 0.0455,
+        "ch": 0.0227
+      },
+      "g": {
+        "BARE": 1.0
+      },
+      "h": {
+        "ct": 0.875,
+        "ok": 0.0625,
+        "yk": 0.0625
+      },
+      "i": {
+        "da": 0.5381,
+        "sa": 0.1928,
+        "ka": 0.1155,
+        "ta": 0.1013,
+        "so": 0.0142,
+        "BARE": 0.0109,
+        "do": 0.0098,
+        "qo": 0.0065,
+        "ok": 0.0044,
+        "po": 0.0033,
+        "ar": 0.0011,
+        "to": 0.0011,
+        "ot": 0.0011
+      },
+      "l": {
+        "BARE": 0.2407,
+        "qo": 0.1939,
+        "da": 0.1402,
+        "so": 0.1145,
+        "po": 0.1051,
+        "to": 0.0467,
+        "sa": 0.035,
+        "do": 0.0327,
+        "ko": 0.0257,
+        "ka": 0.0187,
+        "ta": 0.0164,
+        "ch": 0.0117,
+        "ol": 0.0047,
+        "al": 0.0047,
+        "or": 0.0023,
+        "sh": 0.0023,
+        "ot": 0.0023,
+        "lk": 0.0023
+      },
+      "m": {
+        "ka": 1.0
+      },
+      "p": {
+        "qo": 0.707,
+        "BARE": 0.1083,
+        "ch": 0.0892,
+        "ol": 0.0764,
+        "al": 0.0127,
+        "lch": 0.0064
+      },
+      "q": {
+        "BARE": 0.9808,
+        "qo": 0.0096,
+        "ol": 0.0096
+      },
+      "r": {
+        "BARE": 0.3934,
+        "da": 0.2541,
+        "ka": 0.0902,
+        "ta": 0.0574,
+        "po": 0.041,
+        "sa": 0.0328,
+        "do": 0.0246,
+        "ko": 0.0246,
+        "qo": 0.0246,
+        "to": 0.0246,
+        "so": 0.0164,
+        "de": 0.0082,
+        "ch": 0.0082
+      },
+      "s": {
+        "BARE": 0.3438,
+        "ch": 0.1562,
+        "pch": 0.0938,
+        "sh": 0.0625,
+        "ol": 0.0625,
+        "so": 0.0625,
+        "po": 0.0625,
+        "ke": 0.0625,
+        "ot": 0.0312,
+        "da": 0.0312,
+        "yk": 0.0312
+      },
+      "x": {
+        "BARE": 1.0
+      },
+      "y": {
+        "BARE": 0.6761,
+        "ch": 0.0986,
+        "ot": 0.0563,
+        "ok": 0.0423,
+        "qo": 0.0282,
+        "sh": 0.0282,
+        "sa": 0.0141,
+        "yk": 0.0141,
+        "dch": 0.0141,
+        "te": 0.0141,
+        "pch": 0.0141
+      }
+    },
+    "headless_only_prefixes": [
+      "sa",
+      "ta"
+    ],
+    "headed_only_prefixes": [
+      "pe",
+      "rch",
+      "se"
+    ]
+  },
+  "i_suffix_opacity": {
+    "headless_overall_suffix_rate": 0.4749,
+    "headed_overall_suffix_rate": 0.3573,
+    "headless_opacity_by_terminal": {
+      "n": {
+        "suffix_rate": 0.0072,
+        "n": 828
+      },
+      "h": {
+        "suffix_rate": 0.9777,
+        "n": 537
+      },
+      "m": {
+        "suffix_rate": 0.2727,
+        "n": 11
+      },
+      "l": {
+        "suffix_rate": 1.0,
+        "n": 33
+      },
+      "r": {
+        "suffix_rate": 1.0,
+        "n": 46
+      },
+      "e": {
+        "suffix_rate": 0.8688,
+        "n": 1082
+      },
+      "y": {
+        "suffix_rate": 0.0258,
+        "n": 775
+      }
+    },
+    "headed_opacity_by_terminal": {
+      "n": {
+        "suffix_rate": 0.0091,
+        "n": 1312
+      },
+      "h": {
+        "suffix_rate": 0.9928,
+        "n": 699
+      },
+      "m": {
+        "suffix_rate": 0.0347,
+        "n": 202
+      },
+      "l": {
+        "suffix_rate": 0.0786,
+        "n": 1680
+      },
+      "r": {
+        "suffix_rate": 0.078,
+        "n": 1167
+      },
+      "e": {
+        "suffix_rate": 0.8438,
+        "n": 4289
+      },
+      "y": {
+        "suffix_rate": 0.0095,
+        "n": 3492
+      }
+    },
+    "C1440_opacity_compliance": {
+      "m": {
+        "expected": "<5%",
+        "headless_rate": 0.2727,
+        "headed_rate": 0.0347,
+        "headless_n": 11,
+        "headed_n": 202
+      },
+      "n": {
+        "expected": "<5%",
+        "headless_rate": 0.0072,
+        "headed_rate": 0.0091,
+        "headless_n": 828,
+        "headed_n": 1312
+      },
+      "y": {
+        "expected": "<5%",
+        "headless_rate": 0.0258,
+        "headed_rate": 0.0095,
+        "headless_n": 775,
+        "headed_n": 3492
+      },
+      "l": {
+        "expected": "17-20%",
+        "headless_rate": 1.0,
+        "headed_rate": 0.0786,
+        "headless_n": 33,
+        "headed_n": 1680
+      },
+      "r": {
+        "expected": "17-20%",
+        "headless_rate": 1.0,
+        "headed_rate": 0.078,
+        "headless_n": 46,
+        "headed_n": 1167
+      },
+      "h": {
+        "expected": ">98%",
+        "headless_rate": 0.9777,
+        "headed_rate": 0.9928,
+        "headless_n": 537,
+        "headed_n": 699
+      }
+    },
+    "per_first_atom_suffix_rate": {
+      "c": 0.9624,
+      "d": 0.1491,
+      "f": 0.9318,
+      "g": 1.0,
+      "h": 0.4375,
+      "i": 0.0926,
+      "l": 0.7734,
+      "m": 1.0,
+      "p": 0.9682,
+      "q": 0.8077,
+      "r": 0.6311,
+      "s": 0.625,
+      "x": 1.0,
+      "y": 0.9014
+    }
+  },
+  "j_internal_structure": {
+    "pattern_distribution": {
+      "MT": 1546,
+      "MH": 342,
+      "MHT": 194,
+      "MMT": 158,
+      "TH": 145,
+      "TMT": 111,
+      "TT": 106,
+      "MM": 53,
+      "THM": 51,
+      "TM": 51,
+      "MHM": 43,
+      "THH": 36,
+      "?H": 35,
+      "?HH": 19,
+      "MHTH": 16,
+      "MMTH": 15,
+      "MTH": 15,
+      "THMT": 14,
+      "MHMT": 11,
+      "MMTHM": 11
+    },
+    "total_patterns": 157,
+    "internal_head_count": 1182,
+    "internal_head_fraction": 0.3569,
+    "internal_head_examples": [
+      {
+        "middle": "ct",
+        "atoms": [
+          "c",
+          "t"
+        ],
+        "internal_head": "t"
+      },
+      {
+        "middle": "sed",
+        "atoms": [
+          "s",
+          "e",
+          "d"
+        ],
+        "internal_head": "e"
+      },
+      {
+        "middle": "ge",
+        "atoms": [
+          "g",
+          "e"
+        ],
+        "internal_head": "e"
+      },
+      {
+        "middle": "ck",
+        "atoms": [
+          "c",
+          "k"
+        ],
+        "internal_head": "k"
+      },
+      {
+        "middle": "da",
+        "atoms": [
+          "d",
+          "a"
+        ],
+        "internal_head": "a"
+      },
+      {
+        "middle": "raii",
+        "atoms": [
+          "r",
+          "a",
+          "ii"
+        ],
+        "internal_head": "a"
+      },
+      {
+        "middle": "ckh",
+        "atoms": [
+          "c",
+          "k",
+          "h"
+        ],
+        "internal_head": "k"
+      },
+      {
+        "middle": "yckheo",
+        "atoms": [
+          "y",
+          "c",
+          "k",
+          "h",
+          "e",
+          "o"
+        ],
+        "internal_head": "k"
+      },
+      {
+        "middle": "ckh",
+        "atoms": [
+          "c",
+          "k",
+          "h"
+        ],
+        "internal_head": "k"
+      },
+      {
+        "middle": "qef",
+        "atoms": [
+          "q",
+          "e",
+          "f"
+        ],
+        "internal_head": "e"
+      }
+    ],
+    "dual_modifier_count": 464,
+    "dual_modifier_fraction": 0.1401,
+    "dual_terminal_count": 366,
+    "dual_terminal_fraction": 0.1105,
+    "note": "Pattern codes: H=HEAD atom, M=MODIFIER atom, T=TERMINAL atom"
+  },
+  "k_comparison": {
+    "head_domain_profiles": {
+      "a": {
+        "tokens": 3015,
+        "category": {
+          "FLOW": 0.5538,
+          "THERMAL": 0.006,
+          "TRANSITION": 0.4016,
+          "MARKING": 0.0121,
+          "STAGING": 0.0174,
+          "OPERATION": 0.0017,
+          "CONTAINMENT": 0.006,
+          "MONITORING": 0.0013
+        },
+        "terminal": {
+          "n": 0.4219,
+          "e": 0.1104,
+          "l": 0.1748,
+          "r": 0.2279,
+          "m": 0.0577,
+          "h": 0.007,
+          "y": 0.0003
+        },
+        "prefix_top5": {
+          "BARE": 0.3728,
+          "ok": 0.2003,
+          "ot": 0.1794,
+          "lk": 0.0468,
+          "ch": 0.0385
+        },
+        "suffix_rate": 0.1446,
+        "mean_pos": 0.5308,
+        "mean_length": 2.795
+      },
+      "e": {
+        "tokens": 6135,
+        "category": {
+          "THERMAL": 0.2548,
+          "OPERATION": 0.3674,
+          "TRANSITION": 0.2174,
+          "FLOW": 0.0761,
+          "STAGING": 0.0143,
+          "CONTAINMENT": 0.0235,
+          "MARKING": 0.0321,
+          "MONITORING": 0.0143
+        },
+        "terminal": {
+          "e": 0.3488,
+          "y": 0.5664,
+          "h": 0.024,
+          "l": 0.058,
+          "r": 0.0024,
+          "m": 0.0002,
+          "n": 0.0002
+        },
+        "prefix_top5": {
+          "ch": 0.3105,
+          "sh": 0.244,
+          "ok": 0.0866,
+          "ot": 0.0854,
+          "lch": 0.0365
+        },
+        "suffix_rate": 0.3105,
+        "mean_pos": 0.4994,
+        "mean_length": 2.759
+      },
+      "k": {
+        "tokens": 1017,
+        "category": {
+          "THERMAL": 0.706,
+          "OPERATION": 0.0197,
+          "TRANSITION": 0.0275,
+          "CONTAINMENT": 0.0324,
+          "STAGING": 0.0895,
+          "FLOW": 0.0669,
+          "MARKING": 0.0324,
+          "MONITORING": 0.0256
+        },
+        "terminal": {
+          "e": 0.7719,
+          "h": 0.1986,
+          "l": 0.0147,
+          "y": 0.0069,
+          "r": 0.0069,
+          "m": 0.001
+        },
+        "prefix_top5": {
+          "qo": 0.825,
+          "ol": 0.1308,
+          "ch": 0.0118,
+          "sh": 0.0118,
+          "al": 0.0088
+        },
+        "suffix_rate": 0.9145,
+        "mean_pos": 0.4816,
+        "mean_length": 2.739
+      },
+      "o": {
+        "tokens": 2329,
+        "category": {
+          "STAGING": 0.383,
+          "MARKING": 0.134,
+          "CONTAINMENT": 0.0476,
+          "FLOW": 0.2373,
+          "TRANSITION": 0.0182,
+          "OPERATION": 0.121,
+          "THERMAL": 0.0294,
+          "MONITORING": 0.0294
+        },
+        "terminal": {
+          "e": 0.3332,
+          "h": 0.1082,
+          "l": 0.3336,
+          "r": 0.1954,
+          "m": 0.0112,
+          "n": 0.0167,
+          "y": 0.0017
+        },
+        "prefix_top5": {
+          "BARE": 0.559,
+          "ch": 0.1584,
+          "sh": 0.0872,
+          "ot": 0.0382,
+          "ol": 0.0271
+        },
+        "suffix_rate": 0.4319,
+        "mean_pos": 0.4925,
+        "mean_length": 2.624
+      },
+      "t": {
+        "tokens": 345,
+        "category": {
+          "THERMAL": 0.0843,
+          "FLOW": 0.6512,
+          "OPERATION": 0.1977,
+          "MARKING": 0.0494,
+          "STAGING": 0.0174
+        },
+        "terminal": {
+          "e": 0.7391,
+          "h": 0.2232,
+          "y": 0.0145,
+          "r": 0.0087,
+          "l": 0.0145
+        },
+        "prefix_top5": {
+          "qo": 0.9014,
+          "ol": 0.0493,
+          "ch": 0.0232,
+          "ko": 0.0087,
+          "sh": 0.0058
+        },
+        "suffix_rate": 0.9014,
+        "mean_pos": 0.4331,
+        "mean_length": 2.965
+      }
+    },
+    "headless_aggregate_profile": {
+      "tokens": 3312,
+      "category": {
+        "MARKING": 0.2442,
+        "CONTAINMENT": 0.2501,
+        "MONITORING": 0.0574,
+        "STAGING": 0.2401,
+        "OPERATION": 0.0864,
+        "THERMAL": 0.0209,
+        "TRANSITION": 0.0449,
+        "FLOW": 0.0561
+      },
+      "terminal": {
+        "h": 0.1621,
+        "y": 0.234,
+        "e": 0.3267,
+        "n": 0.25,
+        "l": 0.01,
+        "r": 0.0139,
+        "m": 0.0033
+      },
+      "prefix_top5": {
+        "BARE": 0.1796,
+        "da": 0.1778,
+        "ch": 0.1558,
+        "qo": 0.0897,
+        "sa": 0.0595
+      },
+      "suffix_rate": 0.4749,
+      "mean_pos": 0.491,
+      "mean_length": 2.642
+    },
+    "category_jsd_headless_vs_head": {
+      "a": 0.6646,
+      "e": 0.5527,
+      "k": 0.5759,
+      "o": 0.3021,
+      "t": 0.6191
+    },
+    "nearest_head_domain": "o",
+    "farthest_head_domain": "a",
+    "per_pseudo_head_jsd": {
+      "c": {
+        "a": 0.7806,
+        "e": 0.5451,
+        "k": 0.684,
+        "o": 0.5478,
+        "t": 0.6364
+      },
+      "d": {
+        "a": 0.748,
+        "e": 0.7299,
+        "k": 0.7296,
+        "o": 0.6697,
+        "t": 0.7667
+      },
+      "f": {
+        "a": 0.7526,
+        "e": 0.7148,
+        "k": 0.7208,
+        "o": 0.6422,
+        "t": 0.7446
+      },
+      "g": {
+        "a": 0.8215,
+        "e": 0.6136,
+        "k": 0.3386,
+        "o": 0.7914,
+        "t": 0.7383
+      },
+      "h": {
+        "a": 0.6819,
+        "e": 0.6463,
+        "k": 0.6458,
+        "o": 0.6442,
+        "t": 0.6965
+      },
+      "i": {
+        "a": 0.7476,
+        "e": 0.7495,
+        "k": 0.6787,
+        "o": 0.3937,
+        "t": 0.713
+      },
+      "l": {
+        "a": 0.59,
+        "e": 0.3978,
+        "k": 0.5338,
+        "o": 0.3328,
+        "t": 0.5764
+      },
+      "m": {
+        "a": 0.8126,
+        "e": 0.7884,
+        "k": 0.7881,
+        "o": 0.698,
+        "t": 0.7704
+      },
+      "p": {
+        "a": 0.7438,
+        "e": 0.7304,
+        "k": 0.7193,
+        "o": 0.6079,
+        "t": 0.6989
+      },
+      "r": {
+        "a": 0.139,
+        "e": 0.5792,
+        "k": 0.6532,
+        "o": 0.5159,
+        "t": 0.4411
+      },
+      "s": {
+        "a": 0.7057,
+        "e": 0.5579,
+        "k": 0.5571,
+        "o": 0.3317,
+        "t": 0.618
+      },
+      "x": {
+        "a": 0.8215,
+        "e": 0.6136,
+        "k": 0.3386,
+        "o": 0.7914,
+        "t": 0.7383
+      },
+      "y": {
+        "a": 0.5304,
+        "e": 0.5384,
+        "k": 0.4353,
+        "o": 0.4043,
+        "t": 0.4593
+      }
+    }
+  },
+  "l_length": {
+    "headless_mean_length": 2.642,
+    "headed_mean_length": 2.747,
+    "headless_std": 0.854,
+    "headed_std": 0.874,
+    "headless_length_dist": {
+      "4": 185,
+      "2": 1732,
+      "3": 1244,
+      "6": 42,
+      "5": 100,
+      "7": 9
+    },
+    "headed_length_dist": {
+      "3": 4814,
+      "5": 220,
+      "6": 110,
+      "8": 16,
+      "2": 5955,
+      "4": 1685,
+      "7": 38,
+      "9": 3
+    },
+    "ks_stat": 0.0599,
+    "ks_p": 1.1738398637085932e-08,
+    "headless_atom_count_dist": {
+      "1": 24,
+      "2": 2284,
+      "3": 695,
+      "4": 173,
+      "5": 99,
+      "6": 31,
+      "7": 6
+    },
+    "headed_atom_count_dist": {
+      "1": 165,
+      "2": 6883,
+      "3": 4848,
+      "4": 641,
+      "5": 175,
+      "6": 89,
+      "7": 25,
+      "8": 13,
+      "9": 2
+    },
+    "per_first_atom": {
+      "c": {
+        "mean": 2.658,
+        "std": 0.896,
+        "min": 2,
+        "max": 7,
+        "n": 612,
+        "distribution": {
+          "2": 321,
+          "3": 227,
+          "5": 20,
+          "4": 31,
+          "6": 11,
+          "7": 2
+        }
+      },
+      "d": {
+        "mean": 2.181,
+        "std": 0.579,
+        "min": 2,
+        "max": 6,
+        "n": 805,
+        "distribution": {
+          "2": 712,
+          "3": 58,
+          "4": 21,
+          "5": 10,
+          "6": 4
+        }
+      },
+      "f": {
+        "mean": 3.318,
+        "std": 0.791,
+        "min": 2,
+        "max": 6,
+        "n": 44,
+        "distribution": {
+          "3": 29,
+          "5": 3,
+          "4": 8,
+          "6": 1,
+          "2": 3
+        }
+      },
+      "g": {
+        "mean": 2.0,
+        "std": 0.0,
+        "min": 2,
+        "max": 2,
+        "n": 1,
+        "distribution": {
+          "2": 1
+        }
+      },
+      "h": {
+        "mean": 2.812,
+        "std": 1.13,
+        "min": 2,
+        "max": 5,
+        "n": 16,
+        "distribution": {
+          "2": 10,
+          "3": 1,
+          "4": 3,
+          "5": 2
+        }
+      },
+      "i": {
+        "mean": 2.667,
+        "std": 0.528,
+        "min": 2,
+        "max": 6,
+        "n": 918,
+        "distribution": {
+          "3": 577,
+          "2": 326,
+          "4": 11,
+          "5": 3,
+          "6": 1
+        }
+      },
+      "l": {
+        "mean": 2.797,
+        "std": 0.951,
+        "min": 2,
+        "max": 7,
+        "n": 428,
+        "distribution": {
+          "3": 165,
+          "2": 195,
+          "4": 37,
+          "5": 24,
+          "6": 5,
+          "7": 2
+        }
+      },
+      "m": {
+        "mean": 2.0,
+        "std": 0.0,
+        "min": 2,
+        "max": 2,
+        "n": 1,
+        "distribution": {
+          "2": 1
+        }
+      },
+      "p": {
+        "mean": 3.427,
+        "std": 1.004,
+        "min": 2,
+        "max": 7,
+        "n": 157,
+        "distribution": {
+          "3": 93,
+          "5": 20,
+          "4": 21,
+          "6": 6,
+          "2": 16,
+          "7": 1
+        }
+      },
+      "q": {
+        "mean": 3.365,
+        "std": 1.256,
+        "min": 2,
+        "max": 7,
+        "n": 104,
+        "distribution": {
+          "3": 35,
+          "5": 13,
+          "6": 5,
+          "4": 19,
+          "7": 2,
+          "2": 30
+        }
+      },
+      "r": {
+        "mean": 2.836,
+        "std": 1.097,
+        "min": 2,
+        "max": 6,
+        "n": 122,
+        "distribution": {
+          "4": 17,
+          "3": 34,
+          "2": 62,
+          "5": 2,
+          "6": 7
+        }
+      },
+      "s": {
+        "mean": 2.625,
+        "std": 0.857,
+        "min": 2,
+        "max": 5,
+        "n": 32,
+        "distribution": {
+          "3": 10,
+          "2": 18,
+          "4": 2,
+          "5": 2
+        }
+      },
+      "x": {
+        "mean": 7.0,
+        "std": 0.0,
+        "min": 7,
+        "max": 7,
+        "n": 1,
+        "distribution": {
+          "7": 1
+        }
+      },
+      "y": {
+        "mean": 2.859,
+        "std": 1.117,
+        "min": 2,
+        "max": 7,
+        "n": 71,
+        "distribution": {
+          "4": 15,
+          "6": 2,
+          "2": 37,
+          "3": 15,
+          "7": 1,
+          "5": 1
+        }
+      }
+    }
+  },
+  "synthesis": {
+    "verdict": "HEADLESS_IS_COHERENT_DOMAIN",
+    "explanation": "Headless compounds form a structurally coherent group with distinctive properties",
+    "coherent_evidence": [
+      "Strong pseudo-HEAD category differentiation (V=0.5115)",
+      "Headless aggregate is distant from all HEAD domains (nearest JSD=0.3021)",
+      "Some internal HEAD atoms (35.7%) - mixed population"
+    ],
+    "grabbag_evidence": [
+      "Terminal opacity deviates from headed (3/6 compliant)"
+    ],
+    "scores": {
+      "coherent": 3,
+      "grabbag": 1
+    }
+  }
+}

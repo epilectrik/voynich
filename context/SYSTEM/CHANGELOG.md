@@ -4,6 +4,34 @@
 
 ---
 
+## Version 5.25.128 (2026-03-06) - Phase 536: Headless Compound Subgrammar
+
+### Summary
+
+Phase 536 characterizes the ~20.5% of Currier B compound MIDDLE tokens whose initial atom is NOT a HEAD atom {a,e,o,k,t}. These "headless" compounds (3,312 tokens, 469 types) form a structurally coherent functional domain (verdict: HEADLESS_IS_COHERENT_DOMAIN). The initial atom acts as a PSEUDO-HEAD with V=0.511 category differentiation: d=CONTAINMENT 84%, i=STAGING 67%, p=MARKING 92%, f=MARKING 91%, r=FLOW 61%, c=OPERATION 32%. Terminal profile shifts systematically: h enriched 2.98x, n enriched 2.45x, while LOCKED tier (r+m) depleted 6.2x -- structural hazard avoidance since r-terminal carries 92.58% of forbidden violations (C1447). PREFIX selectivity is near-absolute: da 2284x enriched, sa/ta exclusive to headless, ok/ot near-absent. Suffix bifurcation reveals binary vs parametric operations: d/i bare (<15% suffix rate, self-contained binary ops) vs c/p/f suffixed (>93%, parametric ops needing suffix specification). Same modifier ordering grammar applies (61.9% vs 70.1% compliance). 35.7% of headless types contain HEAD atoms in non-initial positions ("displaced HEAD"). The headless aggregate is categorically distinct from all 5 HEAD domains (nearest: o at JSD=0.302, farthest: a at JSD=0.665).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1488: Headless compound population structure (3,312 tokens 20.5%, 469 types, MOD-initial 77.5%) |
+| **ADDED** | C1489: Headless pseudo-HEAD category differentiation (V=0.511, d=CONTAINMENT 84%, i=STAGING 67%) |
+| **ADDED** | C1490: Headless terminal profile shift (h 2.98x, n 2.45x enriched; LOCKED 6.2x depleted) |
+| **ADDED** | C1491: Headless da-PREFIX near-exclusivity (da 2284x, sa/ta 100% exclusive) |
+| **ADDED** | C1492: Headless suffix bifurcation (d/i bare vs c/p/f suffixed, binary vs parametric split) |
+| **ADDED** | C1493: Headless internal structure with displaced HEAD (MT 46.7%, 35.7% displaced HEAD) |
+| **ADDED** | `phases/HEADLESS_COMPOUND_SUBGRAMMAR/scripts/headless_compound_subgrammar.py` |
+| **ADDED** | `phases/HEADLESS_COMPOUND_SUBGRAMMAR/results/headless_compound_subgrammar.json` |
+| **ADDED** | `phases/HEADLESS_COMPOUND_SUBGRAMMAR/REPORT.md` |
+| **UPDATED** | INDEX.md -- +6 constraints (1337 total) |
+| **UPDATED** | BCSC MIDDLE_INSTRUCTION_ENCODING guarantee -- headless characterization updated with C1488-C1493 |
+| **EXTENDED** | C1397 (headless compound functional grammar): fully quantified V=0.503→0.511, atom-level decomposition |
+| **CONFIRMED** | C1484 (terminal-modifier exclusivity): holds in headless at 99.6-100% compliance |
+| **CONFIRMED** | C1472 (modifier co-occurrence avoidance): same grammar applies in headless (61.9% vs 70.1%) |
+| **REFINED** | C1394 (instruction encoding architecture): da-enrichment is i-initial-specific, not generic headless |
+
+---
+
 ## Version 5.24.126 (2026-03-06) - Phase 535: TERMINAL Functional Taxonomy
 
 ### Summary
