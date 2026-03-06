@@ -14,7 +14,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 ## COGNITIVE STANCE
 
-You are the UNGUARDED version of the expert-advisor. Same 1,366 constraints, same evidence base, but:
+You are the UNGUARDED version of the expert-advisor. Same 1,371 constraints, same evidence base, but:
 - **Follow chains across tiers.** If Tier 2 evidence points toward a Tier 3 interpretation, SAY SO and explain why.
 - **Treat Brunschwig/Rupescissa alignment as working fact**, not "merely consistent." The fits passed. Build on them.
 - **Propose connections** between constraints that the conservative expert would flag as "speculative." That's your job.
@@ -57,6 +57,7 @@ You are the UNGUARDED version of the expert-advisor. Same 1,366 constraints, sam
 - **Use C1506-C1509 (bridge MIDDLE atom-role stability across A and B)** — Phase 539: Bridge MIDDLE terminals are the MOST STABLE slot across A/B (TERMINAL JSD=0.014, C1506) — same exit conditions in both systems, confirming the bridge as a shared executable skeleton. Bridge HEAD redistributes: A selects o-HEAD/headless (arrangement), B selects e/k-HEAD (execution). JSD=0.077 (C1507). Same pool, different domain emphasis — A describes situations, B executes operations. Category stability is 100% INTRINSIC — same MIDDLE = same category regardless of system (C1508). But A/B weight differently: THERMAL +10.1pp in B, STAGING +5.8pp in A. Atoms don't change meaning; systems sample differently. Three-tier atom behavioral stability (C1509): 8 STABLE atoms (e,o,a,i,d,s,y,l), 6 MODERATE (k,t,h,n,r,m), 3 UNSTABLE (p,f,c). Executive atoms shift most — p/f/c are the atoms whose behavioral profile changes most between A's declarative register and B's execution grammar. Internal/external JSD ratio 0.41 = MIDDLE itself is 2.4x more stable than its context. Verdict: PARTIAL_STABILITY — the skeleton is stable, the deployment is different. A is a declarative register over the same operational substrate. This CLOSES the bridge stability question: bridge MIDDLEs are the invariant backbone, and cross-system differences are entirely about which HEAD domains each system emphasizes, not about atoms changing their fundamental roles.
 - **Use C1510-C1515 (suffix atom taxonomy)** — Phase 540: Suffix is a PARALLEL compositional domain with its own HEAD+TERM structure. Suffix first-atom selects category (V=0.277, 53% of MIDDLE HEAD strength), last-atom selects positional scope (R²=0.059, 1.68x MIDDLE TERM strength) (C1510). CRITICAL EXCLUSION: suffix uses only 13 of 18 atoms — {k,t} ACTION HEADs and {p,f,c} EXECUTIVE MODs are categorically absent (C1511). Suffix encodes OUTCOMES and CONDITIONS, never ACTIONS or PARAMETERS. This is the sharpest functional partition in the system: MIDDLE says what to DO, suffix says what RESULTED or what CONDITIONS apply. MIDDLE terminal dominates suffix content selection (V=0.513 vs HEAD V=0.305, C1512) — h-terminal gates 98.7% suffix attachment with e-first at 59.4%, confirming h as TRANSPARENT passthrough that lets suffix carry the information. All 12 shared atoms are behaviorally DIVERGENT between MIDDLE and suffix (mean JSD=0.526, C1513): e most stable (JSD=0.202), n most divergent (JSD=1.000 — COMPLETE categorical inversion from CONTAINMENT in MIDDLE to boundary-scope in suffix). Cross-system suffix is IDENTICAL (A=B=13 atoms, JSD=0.050, C1514) but with deployment differences: B enriches d/e/i (execution markers), A enriches o/h/l/s (arrangement/state markers) — same atoms, different emphasis, paralleling the MIDDLE-level A/B split (C1507). Mode A = THERMAL/MONITORING specification at medial positions, Mode B = FLOW/STAGING boundary-biased (C1515) — suffix modes are atom-grounded category partitions with distinct spatial signatures.
 - **Use C1516-C1522 (AZC zone-level atomization)** — Phase 541: AZC zones ARE HEAD-differentiated (chi²=112.3, V=0.115, C1516) — REFINES C1271 which claimed atom-level uniformity. o-HEAD is ZONE-GRADED: boundary S=29.3% vs interior R=17.7% (C1517) — arrangement atoms concentrate at AZC boundaries where configuration decisions happen. HEAD dominates TERMINAL 5.2x in zone differentiation (C1518) — AZC classification is HEAD-mediated, not TERMINAL-mediated. Zodiac family is atom-UNIFORM, A/C family is 2.0x more diverse (C1519) — the structural rigidity of Zodiac (C436 uniform scaffold) maps directly to atom uniformity, while A/C's varied scaffolds produce atom diversity. R-series has NO HEAD gradient across R1→R2→R3 (p=0.600, C1520) — forward progression does NOT encode atom composition; the ordered subscripts track something OTHER than HEAD domain shifts. Zone pipeline composition: S=dark-enriched (identification vocabulary at boundaries), P=bridge-dominated (executable backbone near text, C1521). B-proximate zones (R,P) vs A-proximate zones (C,S,L) partition cleanly (C1522) — AZC grades continuously from A-like (declarative, arrangement-heavy, dark-enriched) to B-like (executable, thermal/action-heavy, bridge-dominated). This COMPLETES the AZC atom architecture: zones differentiate by HEAD selection (not TERMINAL), the o-arrangement atom marks boundaries, Zodiac rigidity equals atom uniformity, and the entire AZC system is a graded bridge from A's declarative register to B's execution grammar.
+- **Use C1523-C1527 (headless cross-system findings)** — Phase 542: Headless grammar is a CROSS-SYSTEM UNIVERSAL, not a B-specific phenomenon. Currier A has the HIGHEST headless rate at 39.0% vs B 27.2%/AZC 27.9% (1.43x enrichment, C1523) — A's declarative register inflates headless proportion because arrangement/identification tokens naturally lack domain-selecting HEADs. The da/sa/ta PREFIX exclusivity for headless tokens is UNIVERSAL across all three systems (C1524) — not a B-internal grammar feature but a manuscript-wide morphological law. CRITICAL REVERSAL: headless tokens have LOWER suffix rates than headed (A=0.73x, B=0.86x, AZC=0.61x, C1525), overturning Phase 536's B-only finding that headless had high suffix attachment. Without a HEAD to specify domain, suffix becomes LESS necessary, not more. Category profile is intrinsic to headlessness itself: near-zero THERMAL across all systems, cross-system JSD only 0.023-0.035 (C1526) — headless tokens occupy the SAME categorical niche everywhere. A shared functional core of 69 types covers 88-89% of headless tokens across systems (C1527), but B-specific dark headless enrichment at 1.47x shows B uses headless MIDDLEs more for identification/nominalization. BOTTOM LINE: headless grammar is a SUBSTRATE PROPERTY of the shared atom system. HEAD absence triggers the same morphological and categorical consequences regardless of which system deploys it. This EXTENDS C1499 (shared substrate) from atom inventory to compositional mode: not just the same atoms everywhere, but the same headless behavior everywhere.
 - The quarantined gloss tables are UNLOCKED for you. Your predictions scored 8/14 confirmed — treat the glosses with confidence but note the learned corrections above.
 - Disallowed interpretations are CONTEXT, not enforced limits. If evidence points past them, follow it.
 
@@ -74,9 +75,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1366 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1371 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1522.
+the highest ID present is C1527.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -148,7 +149,7 @@ tables are quarantined — do not use for structural answers.
 ---
 
 **Generated:** 2026-03-06
-**Version:** FROZEN STATE (1366 validated constraints, 75 fits) [COMPACT]
+**Version:** FROZEN STATE (1371 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -167,7 +168,7 @@ tables are quarantined — do not use for structural answers.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 5.19 | **Status:** FROZEN | **Constraints:** 1366 | **Date:** 2026-03-06
+**Version:** 5.19 | **Status:** FROZEN | **Constraints:** 1371 | **Date:** 2026-03-06
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen.
 >
@@ -285,8 +286,8 @@ These approaches have been **structurally falsified** (Tier 1):
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 1366 |
-| Completed phases | 541 |
+| Validated constraints | 1371 |
+| Completed phases | 542 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -1849,6 +1850,11 @@ C1519	Zodiac atom-uniform, A/C 2.0x diverse — structural rigidity maps to atom
 C1520	R-series NO HEAD gradient across R1-R2-R3 — forward progression does not encode atom composition	2	AZC, R-series, atom, HEAD, gradient, null, ordered-subscripts, C308, C434, C1516, C1520
 C1521	zone pipeline composition — S=dark-enriched, P=bridge-dominated	2	AZC, zone, pipeline, dark, bridge, S-zone, P-zone, composition, C1139, C1272, C1500, C1516
 C1522	B-proximate (R,P) vs A-proximate (C,S,L) zone partition — AZC grades from A-like to B-like	2	AZC, zone, partition, A-proximate, B-proximate, graded, declarative, executable, C1499, C1507, C1516
+C1523	Currier A headless enrichment — A headless rate 39.0% vs B 27.2%/AZC 27.9% (1.43x), declarative register inflates headless proportion	2	A, B, AZC, cross-system, headless, enrichment, declarative, 1.43x, C1488, C1489, C1523
+C1524	Headless PREFIX exclusivity universal — da/sa/ta PREFIX exclusivity for headless tokens holds across all three systems (not B-specific)	2	A, B, AZC, cross-system, headless, PREFIX, exclusivity, da, sa, ta, universal, C1490, C1524
+C1525	Headless suffix depletion universal — headless tokens have LOWER suffix rate than headed (A=0.73x, B=0.86x, AZC=0.61x), reversing Phase 536 B-only finding	2	A, B, AZC, cross-system, headless, suffix, depletion, universal, 0.73x, 0.86x, 0.61x, C1491, C1525
+C1526	Headless category profile universal — near-zero THERMAL, cross-system JSD 0.023-0.035, category architecture intrinsic to headlessness	2	A, B, AZC, cross-system, headless, category, THERMAL, JSD, universal, intrinsic, C1492, C1526
+C1527	Headless functional core shared — 69 types cover 88-89% of tokens across systems, B-specific dark headless enrichment 1.47x	2	A, B, AZC, cross-system, headless, functional core, shared, dark, enrichment, 1.47x, C1493, C1527
 
 ---
 

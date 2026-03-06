@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1353 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1371 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1515.
+the highest ID present is C1527.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1353 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1371 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1353 validated constraints are present as canonical one-line claims with tier
+1371 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-06 14:42
-**Version:** FROZEN STATE (1353 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-06 16:10
+**Version:** FROZEN STATE (1371 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1788,6 +1788,18 @@ C1512	MIDDLE terminal dominates suffix content (V=0.513)	2	B, MIDDLE, suffix, at
 C1513	Suffix atoms universally divergent from MIDDLE atoms	2	B, suffix, MIDDLE, atom, behavioral, divergence, JSD
 C1514	Cross-system suffix atom identity (A=B=13, JSD=0.050)	2	GLOBAL, suffix, atom, cross-system, identity
 C1515	Suffix mode category anatomy with positional asymmetry	2	B, suffix, mode, category, positional, THERMAL, FLOW
+C1516	AZC HEAD domain differentiation across zones	2	AZC, zone, HEAD, atom, differentiation, V=0.115, C1271-refinement, C1394
+C1517	o-HEAD enrichment is zone-graded not uniform	2	AZC, zone, o-HEAD, graded, arrangement, C1502, C1381, C1388
+C1518	HEAD differentiation dominates TERMINAL across zones	2	AZC, zone, HEAD, TERMINAL, JSD, domain-selection, C1487, C1501
+C1519	Zodiac HEAD uniformity vs A/C internal diversity	2	AZC, family, zodiac, AC, HEAD, diversity, C436, C1270
+C1520	R-series no HEAD gradient	2	AZC, R-series, HEAD, gradient, null, R4-anomalous, C434
+C1521	AZC zone pipeline composition varies	2	AZC, zone, pipeline, bridge, dark, exclusive, o-HEAD, C1139, C1272, C1500, C1505
+C1522	AZC zones partition B-proximate vs A-proximate by HEAD JSD	2	AZC, zone, HEAD, JSD, B, A, proximity, partition, C301, C1507, C1517
+C1523	Currier A headless rate 1.43x higher than B/AZC	2	GLOBAL, cross-system, headless, A, B, AZC, HEAD, rate, enrichment, C1488, C1507, C1519
+C1524	da/sa/ta PREFIX exclusivity universal across systems	2	GLOBAL, cross-system, headless, PREFIX, da, sa, ta, exclusivity, universal, C1491, C1394
+C1525	Headless suffix depletion universal across systems	2	GLOBAL, cross-system, headless, suffix, rate, depletion, universal, C1440, C1490, C1492
+C1526	Headless category profile universal across systems	2	GLOBAL, cross-system, headless, category, THERMAL, STAGING, MARKING, universal, C1488, C1489, C1505
+C1527	Headless functional core shared: 69 types cover 88-89%	2	GLOBAL, cross-system, headless, MIDDLE, overlap, shared, functional-core, type-exclusive, C1499, C1488
 
 ---
 
@@ -4699,7 +4711,7 @@ Only Tier 0-2 structural findings are binding.
 ### Sections -> Constraints
 - grammar: C085, C121, C124, C411, C1004
 - morphology: C267, C382, C383, C408, C506, C522, C588, C661, C662, C777, C787, C897, C911, C929, C935, C936, C1001, C1004, C1015, C1017, C1065, C1141, C1142, C1190, C1191, C1193, C1218, C1219, C1220, C1221, C1227, C1393, C1394, C1396, C1416, C1417, C1418, C1419, C1420, C1421
-- middle_instruction_encoding: C1003, C1393, C1394, C1395, C1397, C1408, C1409, C1410, C1411, C1412, C1413, C1414, C1415, C1416, C1417, C1418, C1419, C1420, C1421, C1440, C1441, C1442, C1443, C1444, C1445, C1472, C1473, C1474, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487, C1488, C1489, C1490, C1491, C1492, C1493, C1494, C1495, C1496, C1497, C1498, C1510, C1511, C1512, C1513, C1514, C1515
+- middle_instruction_encoding: C1003, C1393, C1394, C1395, C1397, C1408, C1409, C1410, C1411, C1412, C1413, C1414, C1415, C1416, C1417, C1418, C1419, C1420, C1421, C1440, C1441, C1442, C1443, C1444, C1445, C1472, C1473, C1474, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487, C1488, C1489, C1490, C1491, C1492, C1493, C1494, C1495, C1496, C1497, C1498, C1507, C1510, C1511, C1512, C1513, C1514, C1515, C1523, C1524, C1525, C1526, C1527
 - role_taxonomy: C121, C366, C547, C550, C557, C558, C560, C562, C563, C567, C572, C573, C574, C575, C581, C582, C583, C584, C586, C587, C588, C591, C593, C594, C595, C597, C770, C777, C788, C791, C863, C864, C865, C866, C867, C868, C869
 - kernel: C089, C103, C104, C105, C332, C333, C339, C521, C1225, C1226
 - hazards: C109, C110, C111, C112, C386, C789, C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456, C1457, C1458, C1459, C1460, C1461, C1462, C1477, C1479, C1480, C1481, C1482
@@ -4739,9 +4751,9 @@ Only Tier 0-2 structural findings are binding.
 ---
 
 ## AZC-ACT (AZC Positional Classification Contract)
-**Meta:** v1.3, ACTIVE, 
+**Meta:** v1.4, ACTIVE, 
 
-### Guarantees (9)
+### Guarantees (11)
 - VOCABULARY_ACTIVATED: AZC constraint activation is vocabulary-driven [C441]
 - COMPATIBILITY_GROUPING: AZC folios group vocabulary by compatibility signature [C442]
 - LEGALITY_CORRELATION: AZC positional vocabulary profiles correlate reliably with B behavior (28x escape rate difference) [C468]
@@ -4751,18 +4763,20 @@ Only Tier 0-2 structural findings are binding.
 - FAMILY_CATEGORY_DIVERGENCE: Zodiac and A/C families have distinct category profiles (V=0.122, p=0.000001) despite family-agnostic mechanism [C1270]
 - BRIDGE_DARK_ZONE_SORTING: AZC zones mediate bridge/dark category sorting; bridge sorted by category within zones (p=0.0003), dark not (p=0.198) [C1272]
 - EXCLUSIVE_VOCABULARY_SPECIALIZED: 356 AZC-exclusive MIDDLEs are MARKING/THERMAL enriched, TRANSITION-depleted (V=0.382 vs bridge) [C1273]
+- HEAD_DOMAIN_DIFFERENTIATION: AZC zones differentiate at HEAD domain level (chi2=112.3, V=0.115, p=5.81e-17) despite sharing raw atom proportions (C12 [C1516, C1517, C1518]
+- ZONE_SYSTEM_PROXIMITY_PARTITION: AZC zones partition into B-proximate (R, P: lower o-HEAD, more bridge) and A-proximate (C, S, L: higher o-HEAD, more dar [C1522]
 
 ### Invariants (7)
 - monotonicity: Survivor options never increase from earlier to later positions [C443, C444]
 - position_independence: The SAME A-type can appear in any position; position determines legality, not content [C444]
 - vocabulary_mediation: All A->B relationships are vocabulary-mediated, not addressable [C384, C441]
 - scaffold_independence: Legality zones are independent of scaffold presentation [C430-C436]
-- zone_atom_uniformity: AZC zones share the same atom-level (character) composition despite category-level specialization [C1271]
+- zone_atom_uniformity: AZC zones share the same raw atom-level (character) proportions (C1271) but differentiate at HEAD sl [C1271, C1516]
 - no_spatial_coherence: Category assignment is spatially random within zones; organization is zone-grain not line-grain [C1275]
 - pharma_atom_convergence: All AZC sections converge on Currier A Pharma section atom profile (r>0.916) [C1276]
 
 ### Sections -> Constraints
-- category_organization: C1269, C1270, C1271, C1272, C1273, C1276
+- category_organization: C1269, C1270, C1271, C1272, C1273, C1276, C1516, C1517, C1518, C1519, C1520, C1521, C1522
 - inputs: C482, C484
 - positional_zones: C306, C313, C317, C320, C432, C434, C435, C443
 - transformations: C442, C443, C444, C469, C475, C481, C502
@@ -4777,7 +4791,7 @@ Only Tier 0-2 structural findings are binding.
 - "AZC decides dynamically" [F-AZC-015]
 - "AZC expands vocabulary beyond A specification" [C481, C502]
 - "AZC diagram lines are thematically organized" [C1275]
-- "AZC zones differ at atom (character) level" [C1271]
+- "AZC zones differ at raw atom (character frequency) level" [C1271, C1516]
 
 ---
 

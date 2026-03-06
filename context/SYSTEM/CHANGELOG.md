@@ -4,6 +4,31 @@
 
 ---
 
+## Version 5.31.162 (2026-03-06) - Phase 542: Headless Compound Cross-System Distribution
+
+### Summary
+
+Phase 542 tests whether headless compound properties documented in B (C1488-C1498) are universal across all three systems (Currier A, Currier B, AZC). 10 tests on 37,497 tokens decomposed via HEAD/MOD/TERM slots. Key finding: headless is a MANUSCRIPT-WIDE structural domain. Category profile is universal (cross-system JSD=0.023-0.035, near-zero THERMAL 0.6-1.1%), suffix depletion is universal (A=0.73x, B=0.86x, AZC=0.61x), and da/sa/ta PREFIX exclusivity is universal (da enrichment 132.7x-1,448.3x). A has 1.43x higher headless rate than B/AZC (39.0% vs 27.2%/27.9%), consistent with A's declarative register (C1507). 69 shared types cover 88-89% of headless tokens across all systems (SHARED_SUBSTRATE_GRADED_SLOTS confirmed for headless subdomain). B-specific: dark pipeline headless enrichment 1.47x.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1523: Currier A headless rate 1.43x higher than B/AZC (A=39.0% vs B=27.2%/AZC=27.9%; B and AZC indistinguishable p=0.428) |
+| **ADDED** | C1524: da/sa/ta PREFIX exclusivity universal across all three systems (da enrichment: A=844.6x, B=1,448.3x, AZC=132.7x) |
+| **ADDED** | C1525: Headless suffix depletion universal (A=0.73x, B=0.86x, AZC=0.61x; terminal opacity mechanism) |
+| **ADDED** | C1526: Headless category profile universal (near-zero THERMAL 0.6-1.1%, cross-system JSD=0.023-0.035) |
+| **ADDED** | C1527: Headless functional core shared — 69 types cover 88-89%; B-specific dark headless enrichment (1.47x) |
+| **ADDED** | `phases/HEADLESS_CROSS_SYSTEM/scripts/headless_cross_system.py` |
+| **ADDED** | `phases/HEADLESS_CROSS_SYSTEM/results/headless_cross_system.json` |
+| **ADDED** | `phases/HEADLESS_CROSS_SYSTEM/REPORT.md` |
+| **UPDATED** | INDEX.md -- +5 constraints (1365 total) |
+| **UPDATED** | `currierB.bcsc.yaml` -- added cross_system_universality field to headless_compounds section, extended provenance |
+| **EXTENDED** | C1488 (headless coherent domain): coherence extends cross-system at token level (88-89% convergence on 69 types) |
+| **EXTENDED** | C1499 (shared substrate): SHARED_SUBSTRATE_GRADED_SLOTS architecture confirmed for headless subdomain |
+
+---
+
 ## Version 5.30.157 (2026-03-06) - Phase 541: AZC Zone-Level Atomization
 
 ### Summary

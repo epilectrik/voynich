@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1366 constraints | 2026-03-06
+CONSTRAINT_REFERENCE v2.6 | 1371 constraints | 2026-03-06
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1370,3 +1370,8 @@ C1519	Zodiac HEAD uniformity vs A/C internal diversity	2	AZC, family, zodiac, AC
 C1520	R-series no HEAD gradient	2	AZC, R-series, HEAD, gradient, null, R4-anomalous, C434	All Spearman p=0.600 (N=4). R1-R3 stable (JSD 0.001-0.009). R4 anomalous (N=39, 51.3% headless) but underpowered.
 C1521	AZC zone pipeline composition varies	2	AZC, zone, pipeline, bridge, dark, exclusive, o-HEAD, C1139, C1272, C1500, C1505	S-zone most dark/exclusive (16.8%/21.4%). P-zone most bridge (80.4%). Dark MIDDLEs 1.84x o-HEAD vs bridge across all zones.
 C1522	AZC zones partition B-proximate vs A-proximate by HEAD JSD	2	AZC, zone, HEAD, JSD, B, A, proximity, partition, C301, C1507, C1517	R/P closer to B (JSD 0.029-0.042). C/S/L closer to A (JSD 0.036-0.084). B-proximate = lower o-HEAD + more bridge.
+C1523	Currier A headless rate 1.43x higher than B/AZC	2	GLOBAL, cross-system, headless, A, B, AZC, HEAD, rate, enrichment, C1488, C1507, C1519	A=39.0%, B=27.2%, AZC=27.9%. A vs B chi2=487.73, p=4.44e-108. B vs AZC p=0.428 (NS). A pseudo-HEAD: i-dominant (21.3%). B: l/d-dominant (20.4%/18.2%).
+C1524	da/sa/ta PREFIX exclusivity universal across systems	2	GLOBAL, cross-system, headless, PREFIX, da, sa, ta, exclusivity, universal, C1491, C1394	da enrichment: A=844.6x, B=1,448.3x, AZC=132.7x. sa >98.2% headless, ta >94.4% headless in all systems. Manuscript-wide grammar rule.
+C1525	Headless suffix depletion universal across systems	2	GLOBAL, cross-system, headless, suffix, rate, depletion, universal, C1440, C1490, C1492	A=0.73x headed, B=0.86x, AZC=0.61x. All p<1e-22. AZC strongest effect. Terminal opacity mechanism (C1440).
+C1526	Headless category profile universal across systems	2	GLOBAL, cross-system, headless, category, THERMAL, STAGING, MARKING, universal, C1488, C1489, C1505	THERMAL: A=0.8%, B=1.1%, AZC=0.6%. STAGING: A=35.2%, B=30.9%, AZC=32.4%. Cross-system JSD=0.023-0.035, 6.7-13.8x smaller than within-system.
+C1527	Headless functional core shared: 69 types cover 88-89%	2	GLOBAL, cross-system, headless, MIDDLE, overlap, shared, functional-core, type-exclusive, C1499, C1488	Types: A=395, B=484, AZC=160. Triple-shared=69. Token coverage=88-89%. A-exclusive=63.3%, B-exclusive=68.0%. B dark headless 1.47x bridge (B-specific).

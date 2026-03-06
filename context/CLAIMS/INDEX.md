@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1360 validated constraints | **Version:** 5.30 | **Date:** 2026-03-06
+**Total:** 1371 validated constraints | **Version:** 5.31 | **Date:** 2026-03-06
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5292,6 +5292,34 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 
 ---
 
+### Headless Cross-System Distribution (C1523-C1527) -- Phase: HEADLESS_CROSS_SYSTEM (Phase 542)
+
+> **Summary:** Phase 542 tests whether headless compound properties documented in B (C1488-C1498) are universal across Currier A, Currier B, and AZC. 10 tests (T1-T10) on 37,497 tokens (A=11,174, B=23,096, AZC=3,227). Key findings: A has 1.43x higher headless rate than B/AZC (39.0% vs 27.2%/27.9%, chi2=504.49, C1523); B and AZC are statistically indistinguishable. da/sa/ta PREFIX exclusivity is UNIVERSAL (da enrichment A=844.6x, B=1,448.3x, AZC=132.7x, C1524). Headless suffix rate is LOWER than headed in all systems (A=0.73x, B=0.86x, AZC=0.61x, C1525). Category profile is near-identical cross-system (THERMAL 0.6-1.1%, STAGING 30.9-35.2%, cross-system JSD=0.023-0.035 vs within-system 0.226-0.317, C1526). 69 triple-shared headless types cover 88-89% of tokens despite 63-68% type exclusivity (C1527). B-specific dark headless enrichment (1.47x) does not hold in A or AZC. Verdict: headless is a MANUSCRIPT-WIDE structural domain following SHARED_SUBSTRATE_GRADED_SLOTS architecture (C1499).
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1523 | Currier A headless rate 1.43x higher than B/AZC | 2 | GLOBAL, cross-system, headless, A, B, AZC, HEAD, rate, enrichment, C1488, C1507, C1519 | A=39.0%, B=27.2%, AZC=27.9%. A vs B chi2=487.73, p=4.44e-108. B vs AZC p=0.428 (NS). A pseudo-HEAD: i-dominant (21.3%). B: l/d-dominant (20.4%/18.2%). |
+| 1524 | da/sa/ta PREFIX exclusivity universal across systems | 2 | GLOBAL, cross-system, headless, PREFIX, da, sa, ta, exclusivity, universal, C1491, C1394 | da enrichment: A=844.6x, B=1,448.3x, AZC=132.7x. sa >98.2% headless, ta >94.4% headless in all systems. Manuscript-wide grammar rule. |
+| 1525 | Headless suffix depletion universal across systems | 2 | GLOBAL, cross-system, headless, suffix, rate, depletion, universal, C1440, C1490, C1492 | A=0.73x headed, B=0.86x, AZC=0.61x. All p<1e-22. AZC strongest effect. Terminal opacity mechanism (C1440). |
+| 1526 | Headless category profile universal across systems | 2 | GLOBAL, cross-system, headless, category, THERMAL, STAGING, MARKING, universal, C1488, C1489, C1505 | THERMAL: A=0.8%, B=1.1%, AZC=0.6%. STAGING: A=35.2%, B=30.9%, AZC=32.4%. Cross-system JSD=0.023-0.035, 6.7-13.8x smaller than within-system. |
+| 1527 | Headless functional core shared: 69 types cover 88-89% | 2 | GLOBAL, cross-system, headless, MIDDLE, overlap, shared, functional-core, type-exclusive, C1499, C1488 | Types: A=395, B=484, AZC=160. Triple-shared=69. Token coverage=88-89%. A-exclusive=63.3%, B-exclusive=68.0%. B dark headless 1.47x bridge (B-specific). |
+
+**Phase 542 findings (Headless Cross-System Distribution, 10 analyses):**
+- T1: Headless rates. A=39.0%, B=27.2%, AZC=27.9%. Omnibus chi2=504.49, p=2.82e-110. A enriched 1.43x. B and AZC indistinguishable (p=0.428).
+- T2: Pseudo-HEAD profiles. A: i=21.3% (TRANSITION), y=16.4%. B: l=20.4% (STAGING), d=18.2% (OPERATION). AZC: y=22.1% (OPERATION). Category profiles nearly identical cross-system (JSD=0.023-0.035).
+- T3: da/sa/ta universality. da enrichment: A=844.6x, B=1,448.3x, AZC=132.7x. sa headless fraction: A=99.2%, B=99.7%, AZC=98.2%. ta: A=98.6%, B=100%, AZC=94.4%.
+- T4: Suffix rates. Headless LOWER than headed in all systems: A=0.73x, B=0.86x, AZC=0.61x. All chi2>92, all p<1e-21.
+- T5: AZC zones. Modest variation (V=0.075). S lowest (21.2%), P/L highest (~33%). Not a strong differentiator.
+- T6: Pipeline. B: dark 1.47x bridge headless (chi2=114.5, p=1.0e-26). A: dark 0.90x bridge. AZC: dark 0.73x bridge. B-specific dark-headless affinity.
+- T7: Terminal profiles. Cross-system headless terminal JSD=0.012-0.038. Universal shifts: bare depleted 0.56-0.58x, n enriched 1.55-3.15x, h enriched 1.36-2.66x.
+- T8: Category profiles. Near-zero THERMAL (0.6-1.1%), high STAGING (30.9-35.2%). Cross-system headless JSD 6.7-13.8x smaller than within-system headless-vs-headed JSD.
+- T9: MIDDLE length. Headless shorter in all systems. A: 1.93 vs 2.30. B: 1.87 vs 2.33. AZC: 1.71 vs 2.60. All p<1e-92.
+- T10: Type overlap. 69 triple-shared types. Token coverage: A=88.0%, B=89.0%, AZC=88.1%. Type exclusivity: A=63.3%, B=68.0%, AZC=39.4%. Jaccard: A&B=0.183.
+
+---
+
 ## Navigation
+
+↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)
 
 ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)
