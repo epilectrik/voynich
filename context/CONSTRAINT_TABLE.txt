@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1383 constraints | 2026-03-06
+CONSTRAINT_REFERENCE v2.6 | 1389 constraints | 2026-03-06
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1387,3 +1387,9 @@ C1536	Base-to-HEAD selection V=0.478 — each base selects a distinct operationa
 C1537	a-base is the universal headless gateway (94-96% headless regardless of modifier)	2	GLOBAL, PREFIX, atom, base, a-base, headless, gateway, modifier-independent, C1488, C1491, C1524, C1536	da=95.9%, sa=96.0%, ka=94.5%, ta=95.8%. Spread=1.5pp. Generalizes C1491 from da to entire a-base family.
 C1538	q-modifier uniquely activates THERMAL channel on o-base (64% k-HEAD vs 5-19% other modifiers)	2	B, PREFIX, atom, modifier, q, o-base, THERMAL, k-HEAD, compositional, qo, C1300, C1313, C1536, C1537	qo=64.0% k-HEAD, so=18.5%, to=15.7%, po=8.1%, do=4.8%. 3.5x gap. o-base is modifier-SENSITIVE (75pp spread). qo is compositionally transparent.
 C1539	Sister pairs decompose into SAME_BASE (ch/sh, da/sa) and SAME_MOD (ok/ot) structural types	2	GLOBAL, PREFIX, atom, sister-pair, ch, sh, ok, ot, da, sa, SAME_BASE, SAME_MOD, C408, C1478, C1534, C1536	All HEAD JSD<0.01 (content-equivalent). ch/sh non-content divergence: suffix 12.3pp, articulator 9.3pp. ok/ot and da/sa: near-identical on all dimensions.
+C1540	p/f/c behavioral non-divergence vs stable MODs	2	GLOBAL, atom, cross-system, instability, JSD, behavioral, C1509, C1499	Mean JSD UNSTABLE=0.0110 vs STABLE_MOD=0.0319, ratio 0.35x. p=0.0074, c=0.0116, f=0.0141. d most divergent at 0.0567.
+C1541	Suffix exclusion defines instruction-only atom tier	2	GLOBAL, atom, suffix, exclusion, instruction, tier, C1509, C1511, C1540	{k,t,p,f,c} = 0 suffix occurrences across all systems. Partition: 13 OUTCOME-accessible + 5 INSTRUCTION-ONLY. Exactly equals ACTION HEADs + UNSTABLE MODs.
+C1542	c-atom slot-switching between PREFIX and MIDDLE	2	B, MIDDLE, PREFIX, atom, c, slot-switching, HEAD, headless, e-HEAD, C1389, C1496, C1542	PREFIX: 61.0% e-HEAD, 21.2% headless. MIDDLE: 17.9% e-HEAD, 46.4% headless. JSD HIGH. Top MIDDLEs: ck(197), kch(148), ckh(127).
+C1543	p/f are o-HEAD arrangement-affiliated atoms	2	B, MIDDLE, atom, p, f, o-HEAD, arrangement, headless, C1388, C1502, C1543	p: 36.6-41.2% o-HEAD (stable A->B). f: 33.0-34.8% o-HEAD. vs i: 3.1-4.1% o-HEAD, 26.5-53.2% a-HEAD. Arrangement vs iteration modifier split.
+C1544	Unstable atoms increase Mode A suffix rate A->B	2	B, MIDDLE, atom, suffix, mode, UNSTABLE, Mode A, THERMAL, specification, C1509, C1515, C1229	c +25.3pp (58.2->83.4%), f +22.3pp (32.2->54.4%), p +15.5pp (41.4->56.9%). Stable MODs: i +0.7pp, d -3.4pp.
+C1545	f-atom anomalous B-exclusive vocabulary affinity	2	B, MIDDLE, atom, f, bridge, dark-pipeline, B-exclusive, vocabulary, rarity, C1139, C1499	f bridge rate 49.3% (lowest MOD). B-only 50.7%. Only 215 B tokens (rarest MOD, next: s=560). Top: fch(23), ofch(17), f(17).

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1383 validated constraints | **Version:** 5.33 | **Date:** 2026-03-06
+**Total:** 1389 validated constraints | **Version:** 5.34 | **Date:** 2026-03-06
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5356,6 +5356,26 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - Sister pair atom architecture: ch/sh and da/sa are SAME_BASE (shared base, different modifiers). ok/ot is SAME_MOD (shared modifier o, different bases k/t). All HEAD JSD<0.01. SAME_BASE pairs show non-content divergence (ch/sh: suffix 12.3pp, articulator 9.3pp). SAME_MOD pair is near-identical on all dimensions.
 - Cross-system substrate: Base distribution nearly identical across A/B/AZC (JSD 0.011-0.046). PREFIX atom grammar is truly manuscript-wide (extends C1499 shared substrate).
 - Base×Terminal interaction: chi2=12,798.8, V=0.308. h-base MIDDLEs strongly prefer y-terminal (48.3%), a-base prefers n-terminal (44.1%), o-base distributes across y/l/r. Extends C1485 HEAD×TERM affinity to PREFIX base level.
+
+### Phase 545: Executive Atom Instability (EXECUTIVE_ATOM_INSTABILITY)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1540 | p/f/c behavioral non-divergence vs stable MODs | 2 | GLOBAL, atom, cross-system, instability, JSD, behavioral, C1509, C1499 | Mean JSD UNSTABLE=0.0110 vs STABLE_MOD=0.0319, ratio 0.35x. p=0.0074, c=0.0116, f=0.0141. d most divergent at 0.0567. |
+| 1541 | Suffix exclusion defines instruction-only atom tier | 2 | GLOBAL, atom, suffix, exclusion, instruction, tier, C1509, C1511, C1540 | {k,t,p,f,c} = 0 suffix occurrences across all systems. Partition: 13 OUTCOME-accessible + 5 INSTRUCTION-ONLY. Exactly equals ACTION HEADs + UNSTABLE MODs. |
+| 1542 | c-atom slot-switching between PREFIX and MIDDLE | 2 | B, MIDDLE, PREFIX, atom, c, slot-switching, HEAD, headless, e-HEAD, C1389, C1496, C1542 | PREFIX: 61.0% e-HEAD, 21.2% headless. MIDDLE: 17.9% e-HEAD, 46.4% headless. JSD HIGH. Top MIDDLEs: ck(197), kch(148), ckh(127). |
+| 1543 | p/f are o-HEAD arrangement-affiliated atoms | 2 | B, MIDDLE, atom, p, f, o-HEAD, arrangement, headless, C1388, C1502, C1543 | p: 36.6-41.2% o-HEAD (stable A->B). f: 33.0-34.8% o-HEAD. vs i: 3.1-4.1% o-HEAD, 26.5-53.2% a-HEAD. Arrangement vs iteration modifier split. |
+| 1544 | Unstable atoms increase Mode A suffix rate A->B | 2 | B, MIDDLE, atom, suffix, mode, UNSTABLE, Mode A, THERMAL, specification, C1509, C1515, C1229 | c +25.3pp (58.2->83.4%), f +22.3pp (32.2->54.4%), p +15.5pp (41.4->56.9%). Stable MODs: i +0.7pp, d -3.4pp. |
+| 1545 | f-atom anomalous B-exclusive vocabulary affinity | 2 | B, MIDDLE, atom, f, bridge, dark-pipeline, B-exclusive, vocabulary, rarity, C1139, C1499 | f bridge rate 49.3% (lowest MOD). B-only 50.7%. Only 215 B tokens (rarest MOD, next: s=560). Top: fch(23), ofch(17), f(17). |
+
+**Phase 545 findings (Executive Atom Instability, 9 research questions, 8 analysis dimensions):**
+- MAJOR SURPRISE: C1509's "unstable" atoms {p,f,c} have LOWER cross-system behavioral divergence (JSD=0.0110) than "stable" MODs {i,d,s} (JSD=0.0319). Ratio 0.35x. Instability is functional niche specialization, not behavioral divergence.
+- Suffix exclusion partition: The 5 suffix-excluded atoms {k,t,p,f,c} exactly equal ACTION HEADs {k,t} + UNSTABLE MODs {p,f,c}. These atoms encode INSTRUCTIONS only; the 13 suffix-accessible atoms can additionally encode OUTCOMES and CONDITIONS.
+- c-atom slot-switching: Unique among MOD atoms. In PREFIX position, c selects e-HEAD at 61% (CHSH monitoring channel). In MIDDLE position, c concentrates in headless compounds at 46.4% and distributes broadly across HEAD domains. Explains C1496 displacement context.
+- p/f arrangement affiliation: Both 33-41% o-HEAD (arrangement domain, C1388). Contrasts sharply with i at 53% a-HEAD (iteration domain). p/f are ARRANGEMENT modifiers, i is an ITERATION modifier. Different domain affiliations explain different stability profiles.
+- Mode A enrichment gradient: All three unstable atoms shift TOWARD Mode A (specification/THERMAL) when moving from A to B. c: +25.3pp, f: +22.3pp, p: +15.5pp. Stable MODs show near-zero shift. B's execution grammar makes unstable atoms MORE specification-oriented.
+- f vocabulary anomaly: f has the lowest bridge rate of any MOD atom (49.3% shared, 50.7% B-exclusive). Also the rarest (215 tokens). f disproportionately participates in B's autonomous identification vocabulary (dark pipeline).
+- Expert predictions: c parameterization CONFIRMED (slot-switching, arrangement role). p/f register-sensitivity PARTIALLY CONFIRMED (Mode A shift, o-HEAD affiliation). Behavioral divergence prediction INVERTED (less divergent, not more).
 
 ---
 

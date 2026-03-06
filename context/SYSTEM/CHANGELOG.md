@@ -4,6 +4,35 @@
 
 ---
 
+## Version 5.34.170 (2026-03-06) - Phase 545: Executive Atom Instability
+
+### Summary
+
+Phase 545 investigates WHY the three atoms {p,f,c} are classified as "unstable" in C1509's three-tier behavioral stability hierarchy. 9 research questions across 8 behavioral dimensions on all B tokens containing MOD atoms {p,i,c,f,d,s}. MAJOR SURPRISE: "unstable" atoms have LOWER cross-system behavioral divergence (mean JSD=0.0110) than "stable" MODs (JSD=0.0319, ratio 0.35x). C1509 instability reflects functional niche specialization (context shifts around the atom), not behavioral divergence (the atom's own profile shifting). Suffix exclusion partition discovered: the 5 suffix-excluded atoms {k,t,p,f,c} exactly equal ACTION HEADs + UNSTABLE MODs = INSTRUCTION-ONLY tier. c is a unique slot-switcher (PREFIX: 61% e-HEAD; MIDDLE: 46.4% headless). p/f are arrangement-affiliated (33-41% o-HEAD), contrasting with i as iteration-affiliated (53% a-HEAD). All three unstable atoms shift toward Mode A (specification) when moving A->B. f has the lowest bridge rate of any MOD atom (49.3%, most B-exclusive).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1540: p/f/c behavioral non-divergence vs stable MODs (mean JSD 0.35x ratio, instability is niche specialization) |
+| **ADDED** | C1541: Suffix exclusion defines instruction-only atom tier ({k,t,p,f,c} = 0 suffix occurrences = ACTION+EXECUTIVE) |
+| **ADDED** | C1542: c-atom slot-switching between PREFIX and MIDDLE (PREFIX: 61% e-HEAD, MIDDLE: 46.4% headless) |
+| **ADDED** | C1543: p/f are o-HEAD arrangement-affiliated atoms (33-41% o-HEAD, stable across A/B) |
+| **ADDED** | C1544: Unstable atoms increase Mode A suffix rate A->B (c +25.3pp, f +22.3pp, p +15.5pp) |
+| **ADDED** | C1545: f-atom anomalous B-exclusive vocabulary affinity (49.3% bridge, lowest MOD) |
+| **ADDED** | `phases/EXECUTIVE_ATOM_INSTABILITY/scripts/executive_atom_instability.py` |
+| **ADDED** | `phases/EXECUTIVE_ATOM_INSTABILITY/results/executive_atom_instability.json` |
+| **ADDED** | `phases/EXECUTIVE_ATOM_INSTABILITY/REPORT.md` |
+| **UPDATED** | INDEX.md -- +6 constraints (1389 total) |
+| **REFINED** | C1509 (three-tier atom behavioral stability): "instability" reframed as functional niche specialization, not behavioral divergence |
+| **EXTENDED** | C1511 (suffix atom exclusion): connected to C1509 instability — suffix-excluded set exactly equals ACTION HEADs + UNSTABLE MODs |
+| **EXTENDED** | C1496 (c-modifier primary displacement context): explained by c's slot-switching behavior |
+| **EXTENDED** | C1388 (o-atom arrangement domain): p/f identified as o's modifier partners |
+| **EXTENDED** | C1139 (bridge/dark disjoint): f is the MOD atom most affiliated with dark pipeline (50.7% B-exclusive) |
+| **CONNECTED** | C1515 (suffix Mode A = THERMAL/MONITORING): unstable atoms preferentially receive specification suffixes in B |
+
+---
+
 ## Version 5.33.169 (2026-03-06) - Phase 544: PREFIX Atom Taxonomy
 
 ### Summary
