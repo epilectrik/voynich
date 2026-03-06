@@ -4,6 +4,36 @@
 
 ---
 
+## Version 5.30.157 (2026-03-06) - Phase 541: AZC Zone-Level Atomization
+
+### Summary
+
+Phase 541 tests whether AZC internal zones differentiate at HEAD+MOD*+TERM slot level (C1394), given that C1271 found null at raw atom level using AXIS clusters (C1207). 12 tests on 3,227 AZC tokens decomposed into HEAD/MOD/TERM slots. Key finding: HEAD domain differentiation IS significant (chi2=112.3, V=0.115, p=5.81e-17) -- zones differ in domain selection, not raw character inventory. o-HEAD enrichment is zone-graded (R=17.7% to S=29.3%, vs B=11.8%). HEAD is 5.2x more discriminating than TERMINAL across zones. AZC zones partition into B-proximate (R, P -- lower o-HEAD, more bridge) and A-proximate (C, S, L -- higher o-HEAD, more dark/exclusive). R-series shows no HEAD gradient. Zodiac HEAD is uniform; A/C is 2.0x more internally diverse.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1516: AZC HEAD domain differentiation across zones (chi2=112.3, V=0.115, p=5.81e-17) |
+| **ADDED** | C1517: o-HEAD enrichment is zone-graded not uniform (R 17.7% to S 29.3%, overall 1.90x B) |
+| **ADDED** | C1518: HEAD differentiation dominates TERMINAL across zones (5.2x JSD ratio) |
+| **ADDED** | C1519: Zodiac HEAD uniformity vs A/C internal diversity (2.0x ratio; extends C436) |
+| **ADDED** | C1520: R-series no HEAD gradient (all p=0.600, N=4) |
+| **ADDED** | C1521: AZC zone pipeline composition varies (S dark-enriched, P bridge-dominated) |
+| **ADDED** | C1522: AZC zones partition B-proximate (R, P) vs A-proximate (C, S, L) by HEAD JSD |
+| **ADDED** | `phases/AZC_ZONE_ATOMIZATION/scripts/azc_zone_atomization.py` |
+| **ADDED** | `phases/AZC_ZONE_ATOMIZATION/results/azc_zone_atomization.json` |
+| **ADDED** | `phases/AZC_ZONE_ATOMIZATION/REPORT.md` |
+| **UPDATED** | INDEX.md -- +7 constraints (1360 total) |
+| **REFINED** | C1271 (zone atom uniformity): raw atom null STANDS; HEAD slot differentiation is a NEW finding at different resolution |
+| **REFINED** | C1502 (o-HEAD 2.70x): HEAD-slot decomposition gives 1.90x; initial-atom level gives 2.70x; methodological difference |
+| **EXTENDED** | C436 (dual rigidity): extended to atom level -- Zodiac uniform, A/C diverse at HEAD |
+| **EXTENDED** | C1272 (bridge-dark zone sorting): atom-level confirmation -- dark MIDDLEs 1.84x o-HEAD vs bridge |
+| **EXTENDED** | C301 (AZC hybrid): hybridity is zone-graded -- R/P B-proximate, C/S/L A-proximate |
+| **UPDATED** | AZC-ACT contract v1.4: added HEAD_DOMAIN_DIFFERENTIATION guarantee, zone_head_atomization section, refined invariant and disallowed wording |
+
+---
+
 ## Version 5.29.150 (2026-03-06) - Phase 540: Suffix Atom Taxonomy
 
 ### Summary

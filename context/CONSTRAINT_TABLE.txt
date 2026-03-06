@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1359 constraints | 2026-03-06
+CONSTRAINT_REFERENCE v2.6 | 1366 constraints | 2026-03-06
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1363,3 +1363,10 @@ C1512	MIDDLE terminal dominates suffix content (V=0.513)	2	B, MIDDLE, suffix, at
 C1513	Suffix atoms universally divergent from MIDDLE atoms	2	B, suffix, MIDDLE, atom, behavioral, divergence, JSD	12/12 atoms divergent, mean JSD=0.526. Most stable: e (0.202). Most divergent: n (1.000, TRANSITION->FLOW inversion). Same alphabet, different category semantics.
 C1514	Cross-system suffix atom identity (A=B=13, JSD=0.050)	2	GLOBAL, suffix, atom, cross-system, identity	A=B=13 atoms, 0 exclusive. B enriches d (0.50x), e (0.41x), i (0.35x). A enriches o (3.31x), h (1.71x), l (1.67x), s (2.01x). Extends C1499 to suffix.
 C1515	Suffix mode category anatomy with positional asymmetry	2	B, suffix, mode, category, positional, THERMAL, FLOW	Mode A: MONITORING 5.08x, CONTAINMENT 2.93x, OPERATION 2.95x, THERMAL 1.20x; medial (0.491). Mode B: FLOW 2.13x, STAGING 2.15x, TRANSITION 2.17x; boundary (0.514).
+C1516	AZC HEAD domain differentiation across zones	2	AZC, zone, HEAD, atom, differentiation, V=0.115, C1271-refinement, C1394	chi2=112.3, V=0.115, p=5.81e-17 across 4 major zones. Refines C1271: differentiation at HEAD slot, not raw character level.
+C1517	o-HEAD enrichment is zone-graded not uniform	2	AZC, zone, o-HEAD, graded, arrangement, C1502, C1381, C1388	R=17.7% (1.51x B), P=19.1% (1.63x), C=26.2% (2.23x), S=29.3% (2.49x), L=30.9% (2.63x). Overall 1.90x B at HEAD-slot level.
+C1518	HEAD differentiation dominates TERMINAL across zones	2	AZC, zone, HEAD, TERMINAL, JSD, domain-selection, C1487, C1501	Mean pairwise HEAD JSD=0.0254, TERMINAL JSD=0.0049. HEAD 5.2x more discriminating. Zones select WHAT domain, not HOW to close.
+C1519	Zodiac HEAD uniformity vs A/C internal diversity	2	AZC, family, zodiac, AC, HEAD, diversity, C436, C1270	Between-family HEAD JSD=0.0158. Internal: Zodiac=0.0617, A/C=0.1265 (2.0x ratio). Extends C436 to atom level.
+C1520	R-series no HEAD gradient	2	AZC, R-series, HEAD, gradient, null, R4-anomalous, C434	All Spearman p=0.600 (N=4). R1-R3 stable (JSD 0.001-0.009). R4 anomalous (N=39, 51.3% headless) but underpowered.
+C1521	AZC zone pipeline composition varies	2	AZC, zone, pipeline, bridge, dark, exclusive, o-HEAD, C1139, C1272, C1500, C1505	S-zone most dark/exclusive (16.8%/21.4%). P-zone most bridge (80.4%). Dark MIDDLEs 1.84x o-HEAD vs bridge across all zones.
+C1522	AZC zones partition B-proximate vs A-proximate by HEAD JSD	2	AZC, zone, HEAD, JSD, B, A, proximity, partition, C301, C1507, C1517	R/P closer to B (JSD 0.029-0.042). C/S/L closer to A (JSD 0.036-0.084). B-proximate = lower o-HEAD + more bridge.

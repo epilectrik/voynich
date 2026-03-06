@@ -3,12 +3,12 @@
 meta:
   name: "AZC Positional Classification Contract"
   acronym: "AZC-ACT"
-  version: "1.3"
-  date: "2026-02-24"
+  version: "1.4"
+  date: "2026-03-06"
   status: "ACTIVE"
   layer_type: "mapping contract"
   derived_from: "Tier-2 constraints only"
-  audit_note: "v1.3: Category organization added (C1269-C1276, Phase 453). Zones specialize by category. Family category divergence. Bridge/dark sorting mechanism. THERMAL predicts escape. v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31)."
+  audit_note: "v1.4: Zone HEAD atomization added (C1516-C1522, Phase 541). Zones differentiate at HEAD slot level (V=0.115) despite raw atom uniformity (C1271). o-HEAD zone-graded. B/A proximity partition. v1.3: Category organization added (C1269-C1276, Phase 453). v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31)."
   governance: |
     AZC-ACT is NOT authoritative. Constraints are authoritative.
     AZC-ACT describes HOW vocabulary is positionally classified in AZC.
@@ -68,6 +68,14 @@ guarantees:
     statement: "356 AZC-exclusive MIDDLEs are MARKING/THERMAL enriched, TRANSITION-depleted (V=0.382 vs bridge)"
     provenance: "C1273"
 
+  - id: "HEAD_DOMAIN_DIFFERENTIATION"
+    statement: "AZC zones differentiate at HEAD domain level (chi2=112.3, V=0.115, p=5.81e-17) despite sharing raw atom proportions (C1271). o-HEAD is zone-graded (R=17.7% to S=29.3%). HEAD is 5.2x more discriminating than TERMINAL across zones."
+    provenance: "C1516, C1517, C1518"
+
+  - id: "ZONE_SYSTEM_PROXIMITY_PARTITION"
+    statement: "AZC zones partition into B-proximate (R, P: lower o-HEAD, more bridge) and A-proximate (C, S, L: higher o-HEAD, more dark/exclusive) by HEAD JSD"
+    provenance: "C1522"
+
 # ============================================================
 invariants:
   monotonicity:
@@ -87,8 +95,8 @@ invariants:
     provenance: "C430-C436"
 
   zone_atom_uniformity:
-    statement: "AZC zones share the same atom-level (character) composition despite category-level specialization"
-    provenance: "C1271"
+    statement: "AZC zones share the same raw atom-level (character) proportions (C1271) but differentiate at HEAD slot level (V=0.115, C1516). Uniformity is in character inventory; differentiation is in how atoms are deployed across functional slots."
+    provenance: "C1271, C1516"
 
   no_spatial_coherence:
     statement: "Category assignment is spatially random within zones; organization is zone-grain not line-grain"
@@ -130,10 +138,37 @@ category_organization:
     provenance: "C1273"
 
   atom_level:
-    zone_uniformity: "Zones do NOT differentiate at atom level (0/8 AXIS at Bonferroni)"
+    zone_uniformity: "Zones do NOT differentiate at raw atom level (0/8 AXIS at Bonferroni, C1271)"
+    head_slot_differentiation: "Zones DO differentiate at HEAD slot level (chi2=112.3, V=0.115, C1516)"
+    resolution: "Raw character proportions uniform; HEAD domain selection zone-graded"
     section_convergence: "All AZC sections converge on A Pharma atom profile (r>0.916)"
-    grain: "Category structure is MIDDLE-level, not character-level"
-    provenance: "C1271, C1276"
+    grain: "Category structure is MIDDLE-level; atom deployment structure is HEAD-slot-level"
+    provenance: "C1271, C1276, C1516, C1517, C1518"
+
+  zone_head_atomization:
+    provenance: "C1516-C1522"
+    head_differentiation:
+      statement: "HEAD domain profiles vary significantly across zones (V=0.115)"
+      o_head_gradient: "R=17.7%, P=19.1%, C=26.2%, S=29.3%, L=30.9% (overall 1.90x B)"
+      head_vs_terminal: "HEAD JSD 5.2x TERMINAL JSD -- zones select WHAT domain, not HOW to close"
+      provenance: "C1516, C1517, C1518"
+    family_head_diversity:
+      statement: "Zodiac internally uniform, A/C 2.0x more diverse at HEAD level"
+      between_family: "JSD=0.0158 (similar overall)"
+      provenance: "C1519"
+    r_series_null:
+      statement: "R-series subscripts show NO HEAD gradient (all p=0.600)"
+      provenance: "C1520"
+    pipeline_by_zone:
+      statement: "Zone pipeline composition varies; dark MIDDLEs 1.84x o-HEAD vs bridge"
+      s_zone: "Most dark/exclusive (16.8%/21.4%)"
+      p_zone: "Most bridge-dominated (80.4%)"
+      provenance: "C1521"
+    system_proximity:
+      statement: "Zones partition into B-proximate (R, P) and A-proximate (C, S, L)"
+      b_proximate: "Lower o-HEAD, higher bridge rate"
+      a_proximate: "Higher o-HEAD, more dark/exclusive"
+      provenance: "C1522"
 
 # ============================================================
 inputs:
@@ -327,9 +362,9 @@ disallowed:
     reason: "No within-line category coherence (C1275, p=0.568). Category structure is zone-grain, not line-grain."
     provenance: "C1275"
 
-  - interpretation: "AZC zones differ at atom (character) level"
-    reason: "0/8 AXIS clusters differentiate zones at Bonferroni (C1271). Category specialization is MIDDLE-level only."
-    provenance: "C1271"
+  - interpretation: "AZC zones differ at raw atom (character frequency) level"
+    reason: "0/8 AXIS clusters differentiate zones at Bonferroni (C1271). However, zones DO differ at HEAD slot level (V=0.115, C1516). The distinction: raw character proportions are uniform, but HEAD domain selection is zone-graded."
+    provenance: "C1271, C1516"
 
 # ============================================================
 
@@ -422,11 +457,20 @@ provenance:
   category_organization:
     - "C1269"  # Zone category specialization (V=0.084)
     - "C1270"  # Family category divergence (V=0.122)
-    - "C1271"  # Zone atom-level uniformity (null)
+    - "C1271"  # Zone raw atom-level uniformity (null at AXIS level)
     - "C1272"  # Bridge/dark zone sorting (V=0.117)
     - "C1273"  # AZC-exclusive MARKING/THERMAL vocabulary
     - "C1274"  # Category predicts B escape (THERMAL rho=+0.780)
     - "C1275"  # No within-zone spatial coherence (null)
     - "C1276"  # AZC sections converge on Pharma atom profile
+
+  zone_head_atomization:
+    - "C1516"  # HEAD domain differentiation across zones (V=0.115)
+    - "C1517"  # o-HEAD zone-graded (17.7-29.3%)
+    - "C1518"  # HEAD dominates TERMINAL across zones (5.2x)
+    - "C1519"  # Zodiac HEAD uniform, A/C 2.0x diverse
+    - "C1520"  # R-series no HEAD gradient
+    - "C1521"  # Zone pipeline composition varies
+    - "C1522"  # B-proximate vs A-proximate zone partition
 
 # ============================================================
