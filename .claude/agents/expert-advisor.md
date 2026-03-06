@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1371 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1377 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1527.
+the highest ID present is C1533.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1371 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1377 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1371 validated constraints are present as canonical one-line claims with tier
+1377 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-06 16:10
-**Version:** FROZEN STATE (1371 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-06 16:44
+**Version:** FROZEN STATE (1377 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1800,6 +1800,12 @@ C1524	da/sa/ta PREFIX exclusivity universal across systems	2	GLOBAL, cross-syste
 C1525	Headless suffix depletion universal across systems	2	GLOBAL, cross-system, headless, suffix, rate, depletion, universal, C1440, C1490, C1492
 C1526	Headless category profile universal across systems	2	GLOBAL, cross-system, headless, category, THERMAL, STAGING, MARKING, universal, C1488, C1489, C1505
 C1527	Headless functional core shared: 69 types cover 88-89%	2	GLOBAL, cross-system, headless, MIDDLE, overlap, shared, functional-core, type-exclusive, C1499, C1488
+C1528	Hazard classes map to near-orthogonal atom HEAD territories	2	B, MIDDLE, atom, HEAD, TERM, hazard, failure-class, territory, orthogonal, C109, C1446, C1447, C1448, C1475
+C1529	PHASE_ORDERING is headless y-terminal to a-HEAD transition failure	2	B, MIDDLE, atom, HEAD, TERM, hazard, PHASE_ORDERING, headless, y-terminal, a-HEAD, violation, C109, C1397, C1446, C1477, C1528
+C1530	CONTAINMENT_TIMING is l/r-terminal SEMI_TRANSPARENT class with 100% avoidance	2	B, MIDDLE, atom, TERM, hazard, CONTAINMENT_TIMING, l-terminal, r-terminal, SEMI_TRANSPARENT, avoidance, C109, C1440, C1447, C1487
+C1531	Forbidden MIDDLEs include 5 phantom types absent from corpus	2	B, MIDDLE, hazard, forbidden, phantom, construction, grammar, C109, C1178, C1394, C1528, C1529
+C1532	Hazard classes partition by line position (setup-early to closure-late)	2	B, MIDDLE, hazard, failure-class, line, position, zone, gradient, C109, C1463, C1464, C1465, C1528
+C1533	PHASE_ORDERING is CHSH-channel specific (28.4% CHSH, 7/11 violations)	2	B, MIDDLE, atom, PREFIX, hazard, PHASE_ORDERING, CHSH, channel, violation, C109, C929, C1449, C1451, C1529
 
 ---
 
@@ -4714,7 +4720,7 @@ Only Tier 0-2 structural findings are binding.
 - middle_instruction_encoding: C1003, C1393, C1394, C1395, C1397, C1408, C1409, C1410, C1411, C1412, C1413, C1414, C1415, C1416, C1417, C1418, C1419, C1420, C1421, C1440, C1441, C1442, C1443, C1444, C1445, C1472, C1473, C1474, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487, C1488, C1489, C1490, C1491, C1492, C1493, C1494, C1495, C1496, C1497, C1498, C1507, C1510, C1511, C1512, C1513, C1514, C1515, C1523, C1524, C1525, C1526, C1527
 - role_taxonomy: C121, C366, C547, C550, C557, C558, C560, C562, C563, C567, C572, C573, C574, C575, C581, C582, C583, C584, C586, C587, C588, C591, C593, C594, C595, C597, C770, C777, C788, C791, C863, C864, C865, C866, C867, C868, C869
 - kernel: C089, C103, C104, C105, C332, C333, C339, C521, C1225, C1226
-- hazards: C109, C110, C111, C112, C386, C789, C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456, C1457, C1458, C1459, C1460, C1461, C1462, C1477, C1479, C1480, C1481, C1482
+- hazards: C109, C110, C111, C112, C386, C789, C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456, C1457, C1458, C1459, C1460, C1461, C1462, C1477, C1479, C1480, C1481, C1482, C1528, C1529, C1530, C1531, C1532, C1533
 - program_structure: C178, C357, C358, C359, C360, C531, C535, C556, C557, C561, C562, C670, C673, C677, C777, C815, C840, C841, C842, C843, C845, C855, C856, C857, C858, C859, C860, C861, C862, C864, C870, C897, C932, C933, C935, C956, C957, C958, C959, C960, C961, C962, C963, C964, C965, C966, C971, C972, C975, C1121, C1221, C1227, C1228, C1229, C1230, C1231, C1232, C1233, C1236, C1237, C1256, C1258, C1259, C1260, C1288, C1308, C1309, C1310, C1311, C1312, C1378, C1396, C1398, C1399, C1400, C1410, C1422, C1423, C1424, C1425, C1426, C1427, C1428, C1429, C1430, C1434, C1435, C1436, C1437, C1438, C1439, C1451, C1463, C1464, C1465, C1466, C1467, C1468, C1469, C1470, C1471
 - convergence: C079, C084, C323, C325, C1169, C1401, C1402, C1403, C1404, C1405, C1406, C1407, C1411, C1418, C1422, C1431, C1432, C1433
 - link_operator: C340, C365, C366, C609, C804, C805, C806, C807, C808, C809, C810, C1170, C1171, C1172, C1173, C1174

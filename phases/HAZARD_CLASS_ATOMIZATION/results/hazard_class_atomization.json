@@ -1,0 +1,1536 @@
+{
+  "phase": 543,
+  "name": "HAZARD_CLASS_ATOMIZATION",
+  "total_tokens": 23096,
+  "total_adjacency_pairs": 20542,
+  "total_forbidden_violations": 11,
+  "hazard_class_assignments": {
+    "PHASE_ORDERING": [
+      "shey->aiin",
+      "shey->al",
+      "shey->c",
+      "dy->aiin",
+      "dy->chey",
+      "chey->chedy",
+      "chey->shedy"
+    ],
+    "COMPOSITION_JUMP": [
+      "chedy->ee",
+      "c->ee",
+      "shedy->aiin",
+      "shedy->o"
+    ],
+    "CONTAINMENT_TIMING": [
+      "chol->r",
+      "l->chol",
+      "or->dal",
+      "he->or"
+    ],
+    "RATE_MISMATCH": [
+      "ar->dal"
+    ],
+    "ENERGY_OVERSHOOT": [
+      "he->t"
+    ]
+  },
+  "dimension_a": {
+    "pair_decompositions": {
+      "shey->aiin": {
+        "hazard_class": "PHASE_ORDERING",
+        "source_middle": "shey",
+        "target_middle": "aiin",
+        "source_decomp": {
+          "head": "s",
+          "mods": [
+            "h",
+            "e"
+          ],
+          "term": "y",
+          "frame": "s->y",
+          "head_category": "headless",
+          "has_modifier": true
+        },
+        "target_decomp": {
+          "head": "a",
+          "mods": [
+            "i",
+            "i"
+          ],
+          "term": "n",
+          "frame": "a->n",
+          "head_category": "a",
+          "has_modifier": true
+        }
+      },
+      "shey->al": {
+        "hazard_class": "PHASE_ORDERING",
+        "source_middle": "shey",
+        "target_middle": "al",
+        "source_decomp": {
+          "head": "s",
+          "mods": [
+            "h",
+            "e"
+          ],
+          "term": "y",
+          "frame": "s->y",
+          "head_category": "headless",
+          "has_modifier": true
+        },
+        "target_decomp": {
+          "head": "a",
+          "mods": [],
+          "term": "l",
+          "frame": "a->l",
+          "head_category": "a",
+          "has_modifier": false
+        }
+      },
+      "shey->c": {
+        "hazard_class": "PHASE_ORDERING",
+        "source_middle": "shey",
+        "target_middle": "c",
+        "source_decomp": {
+          "head": "s",
+          "mods": [
+            "h",
+            "e"
+          ],
+          "term": "y",
+          "frame": "s->y",
+          "head_category": "headless",
+          "has_modifier": true
+        },
+        "target_decomp": {
+          "head": "c",
+          "mods": [],
+          "term": "c",
+          "frame": "c->bare",
+          "head_category": "headless",
+          "has_modifier": false
+        }
+      },
+      "dy->aiin": {
+        "hazard_class": "PHASE_ORDERING",
+        "source_middle": "dy",
+        "target_middle": "aiin",
+        "source_decomp": {
+          "head": "d",
+          "mods": [],
+          "term": "y",
+          "frame": "d->y",
+          "head_category": "headless",
+          "has_modifier": false
+        },
+        "target_decomp": {
+          "head": "a",
+          "mods": [
+            "i",
+            "i"
+          ],
+          "term": "n",
+          "frame": "a->n",
+          "head_category": "a",
+          "has_modifier": true
+        }
+      },
+      "dy->chey": {
+        "hazard_class": "PHASE_ORDERING",
+        "source_middle": "dy",
+        "target_middle": "chey",
+        "source_decomp": {
+          "head": "d",
+          "mods": [],
+          "term": "y",
+          "frame": "d->y",
+          "head_category": "headless",
+          "has_modifier": false
+        },
+        "target_decomp": {
+          "head": "c",
+          "mods": [
+            "h",
+            "e"
+          ],
+          "term": "y",
+          "frame": "c->y",
+          "head_category": "headless",
+          "has_modifier": true
+        }
+      },
+      "chey->chedy": {
+        "hazard_class": "PHASE_ORDERING",
+        "source_middle": "chey",
+        "target_middle": "chedy",
+        "source_decomp": {
+          "head": "c",
+          "mods": [
+            "h",
+            "e"
+          ],
+          "term": "y",
+          "frame": "c->y",
+          "head_category": "headless",
+          "has_modifier": true
+        },
+        "target_decomp": {
+          "head": "c",
+          "mods": [
+            "h",
+            "e",
+            "d"
+          ],
+          "term": "y",
+          "frame": "c->y",
+          "head_category": "headless",
+          "has_modifier": true
+        }
+      },
+      "chey->shedy": {
+        "hazard_class": "PHASE_ORDERING",
+        "source_middle": "chey",
+        "target_middle": "shedy",
+        "source_decomp": {
+          "head": "c",
+          "mods": [
+            "h",
+            "e"
+          ],
+          "term": "y",
+          "frame": "c->y",
+          "head_category": "headless",
+          "has_modifier": true
+        },
+        "target_decomp": {
+          "head": "s",
+          "mods": [
+            "h",
+            "e",
+            "d"
+          ],
+          "term": "y",
+          "frame": "s->y",
+          "head_category": "headless",
+          "has_modifier": true
+        }
+      },
+      "chedy->ee": {
+        "hazard_class": "COMPOSITION_JUMP",
+        "source_middle": "chedy",
+        "target_middle": "ee",
+        "source_decomp": {
+          "head": "c",
+          "mods": [
+            "h",
+            "e",
+            "d"
+          ],
+          "term": "y",
+          "frame": "c->y",
+          "head_category": "headless",
+          "has_modifier": true
+        },
+        "target_decomp": {
+          "head": "e",
+          "mods": [],
+          "term": "e",
+          "frame": "e->e",
+          "head_category": "e",
+          "has_modifier": false
+        }
+      },
+      "c->ee": {
+        "hazard_class": "COMPOSITION_JUMP",
+        "source_middle": "c",
+        "target_middle": "ee",
+        "source_decomp": {
+          "head": "c",
+          "mods": [],
+          "term": "c",
+          "frame": "c->bare",
+          "head_category": "headless",
+          "has_modifier": false
+        },
+        "target_decomp": {
+          "head": "e",
+          "mods": [],
+          "term": "e",
+          "frame": "e->e",
+          "head_category": "e",
+          "has_modifier": false
+        }
+      },
+      "shedy->aiin": {
+        "hazard_class": "COMPOSITION_JUMP",
+        "source_middle": "shedy",
+        "target_middle": "aiin",
+        "source_decomp": {
+          "head": "s",
+          "mods": [
+            "h",
+            "e",
+            "d"
+          ],
+          "term": "y",
+          "frame": "s->y",
+          "head_category": "headless",
+          "has_modifier": true
+        },
+        "target_decomp": {
+          "head": "a",
+          "mods": [
+            "i",
+            "i"
+          ],
+          "term": "n",
+          "frame": "a->n",
+          "head_category": "a",
+          "has_modifier": true
+        }
+      },
+      "shedy->o": {
+        "hazard_class": "COMPOSITION_JUMP",
+        "source_middle": "shedy",
+        "target_middle": "o",
+        "source_decomp": {
+          "head": "s",
+          "mods": [
+            "h",
+            "e",
+            "d"
+          ],
+          "term": "y",
+          "frame": "s->y",
+          "head_category": "headless",
+          "has_modifier": true
+        },
+        "target_decomp": {
+          "head": "o",
+          "mods": [],
+          "term": "o",
+          "frame": "o->bare",
+          "head_category": "o",
+          "has_modifier": false
+        }
+      },
+      "chol->r": {
+        "hazard_class": "CONTAINMENT_TIMING",
+        "source_middle": "chol",
+        "target_middle": "r",
+        "source_decomp": {
+          "head": "c",
+          "mods": [
+            "h",
+            "o"
+          ],
+          "term": "l",
+          "frame": "c->l",
+          "head_category": "headless",
+          "has_modifier": true
+        },
+        "target_decomp": {
+          "head": "r",
+          "mods": [],
+          "term": "r",
+          "frame": "r->bare",
+          "head_category": "headless",
+          "has_modifier": false
+        }
+      },
+      "l->chol": {
+        "hazard_class": "CONTAINMENT_TIMING",
+        "source_middle": "l",
+        "target_middle": "chol",
+        "source_decomp": {
+          "head": "l",
+          "mods": [],
+          "term": "l",
+          "frame": "l->bare",
+          "head_category": "headless",
+          "has_modifier": false
+        },
+        "target_decomp": {
+          "head": "c",
+          "mods": [
+            "h",
+            "o"
+          ],
+          "term": "l",
+          "frame": "c->l",
+          "head_category": "headless",
+          "has_modifier": true
+        }
+      },
+      "or->dal": {
+        "hazard_class": "CONTAINMENT_TIMING",
+        "source_middle": "or",
+        "target_middle": "dal",
+        "source_decomp": {
+          "head": "o",
+          "mods": [],
+          "term": "r",
+          "frame": "o->r",
+          "head_category": "o",
+          "has_modifier": false
+        },
+        "target_decomp": {
+          "head": "d",
+          "mods": [
+            "a"
+          ],
+          "term": "l",
+          "frame": "d->l",
+          "head_category": "headless",
+          "has_modifier": true
+        }
+      },
+      "he->or": {
+        "hazard_class": "CONTAINMENT_TIMING",
+        "source_middle": "he",
+        "target_middle": "or",
+        "source_decomp": {
+          "head": "h",
+          "mods": [],
+          "term": "e",
+          "frame": "h->e",
+          "head_category": "headless",
+          "has_modifier": false
+        },
+        "target_decomp": {
+          "head": "o",
+          "mods": [],
+          "term": "r",
+          "frame": "o->r",
+          "head_category": "o",
+          "has_modifier": false
+        }
+      },
+      "ar->dal": {
+        "hazard_class": "RATE_MISMATCH",
+        "source_middle": "ar",
+        "target_middle": "dal",
+        "source_decomp": {
+          "head": "a",
+          "mods": [],
+          "term": "r",
+          "frame": "a->r",
+          "head_category": "a",
+          "has_modifier": false
+        },
+        "target_decomp": {
+          "head": "d",
+          "mods": [
+            "a"
+          ],
+          "term": "l",
+          "frame": "d->l",
+          "head_category": "headless",
+          "has_modifier": true
+        }
+      },
+      "he->t": {
+        "hazard_class": "ENERGY_OVERSHOOT",
+        "source_middle": "he",
+        "target_middle": "t",
+        "source_decomp": {
+          "head": "h",
+          "mods": [],
+          "term": "e",
+          "frame": "h->e",
+          "head_category": "headless",
+          "has_modifier": false
+        },
+        "target_decomp": {
+          "head": "t",
+          "mods": [],
+          "term": "t",
+          "frame": "t->bare",
+          "head_category": "t",
+          "has_modifier": false
+        }
+      }
+    },
+    "class_frame_profiles": {
+      "PHASE_ORDERING": {
+        "n_pairs": 7,
+        "source_heads": {
+          "s": 3,
+          "d": 2,
+          "c": 2
+        },
+        "target_heads": {
+          "a": 3,
+          "c": 3,
+          "s": 1
+        },
+        "source_terms": {
+          "y": 7
+        },
+        "target_terms": {
+          "n": 2,
+          "l": 1,
+          "c": 1,
+          "y": 3
+        },
+        "source_frames": {
+          "s->y": 3,
+          "d->y": 2,
+          "c->y": 2
+        },
+        "target_frames": {
+          "a->n": 2,
+          "a->l": 1,
+          "c->bare": 1,
+          "c->y": 2,
+          "s->y": 1
+        },
+        "source_mods": {
+          "h": 5,
+          "e": 5
+        },
+        "target_mods": {
+          "i": 4,
+          "h": 3,
+          "e": 3,
+          "d": 2
+        },
+        "source_modifier_rate": 0.7142857142857143,
+        "target_modifier_rate": 0.7142857142857143
+      },
+      "COMPOSITION_JUMP": {
+        "n_pairs": 4,
+        "source_heads": {
+          "c": 2,
+          "s": 2
+        },
+        "target_heads": {
+          "e": 2,
+          "a": 1,
+          "o": 1
+        },
+        "source_terms": {
+          "y": 3,
+          "c": 1
+        },
+        "target_terms": {
+          "e": 2,
+          "n": 1,
+          "o": 1
+        },
+        "source_frames": {
+          "c->y": 1,
+          "c->bare": 1,
+          "s->y": 2
+        },
+        "target_frames": {
+          "e->e": 2,
+          "a->n": 1,
+          "o->bare": 1
+        },
+        "source_mods": {
+          "h": 3,
+          "e": 3,
+          "d": 3
+        },
+        "target_mods": {
+          "i": 2
+        },
+        "source_modifier_rate": 0.75,
+        "target_modifier_rate": 0.25
+      },
+      "CONTAINMENT_TIMING": {
+        "n_pairs": 4,
+        "source_heads": {
+          "c": 1,
+          "l": 1,
+          "o": 1,
+          "h": 1
+        },
+        "target_heads": {
+          "r": 1,
+          "c": 1,
+          "d": 1,
+          "o": 1
+        },
+        "source_terms": {
+          "l": 2,
+          "r": 1,
+          "e": 1
+        },
+        "target_terms": {
+          "r": 2,
+          "l": 2
+        },
+        "source_frames": {
+          "c->l": 1,
+          "l->bare": 1,
+          "o->r": 1,
+          "h->e": 1
+        },
+        "target_frames": {
+          "r->bare": 1,
+          "c->l": 1,
+          "d->l": 1,
+          "o->r": 1
+        },
+        "source_mods": {
+          "h": 1,
+          "o": 1
+        },
+        "target_mods": {
+          "h": 1,
+          "o": 1,
+          "a": 1
+        },
+        "source_modifier_rate": 0.25,
+        "target_modifier_rate": 0.5
+      },
+      "RATE_MISMATCH": {
+        "n_pairs": 1,
+        "source_heads": {
+          "a": 1
+        },
+        "target_heads": {
+          "d": 1
+        },
+        "source_terms": {
+          "r": 1
+        },
+        "target_terms": {
+          "l": 1
+        },
+        "source_frames": {
+          "a->r": 1
+        },
+        "target_frames": {
+          "d->l": 1
+        },
+        "source_mods": {},
+        "target_mods": {
+          "a": 1
+        },
+        "source_modifier_rate": 0.0,
+        "target_modifier_rate": 1.0
+      },
+      "ENERGY_OVERSHOOT": {
+        "n_pairs": 1,
+        "source_heads": {
+          "h": 1
+        },
+        "target_heads": {
+          "t": 1
+        },
+        "source_terms": {
+          "e": 1
+        },
+        "target_terms": {
+          "t": 1
+        },
+        "source_frames": {
+          "h->e": 1
+        },
+        "target_frames": {
+          "t->bare": 1
+        },
+        "source_mods": {},
+        "target_mods": {},
+        "source_modifier_rate": 0.0,
+        "target_modifier_rate": 0.0
+      }
+    },
+    "corpus_violations": {
+      "PHASE_ORDERING": 10,
+      "RATE_MISMATCH": 1
+    },
+    "near_miss_context": {
+      "PHASE_ORDERING": {
+        "source_appeared": 558,
+        "target_appeared": 1319
+      },
+      "COMPOSITION_JUMP": {
+        "source_appeared": 3,
+        "target_appeared": 1260
+      },
+      "CONTAINMENT_TIMING": {
+        "source_appeared": 1129,
+        "target_appeared": 1010
+      },
+      "ENERGY_OVERSHOOT": {
+        "source_appeared": 2,
+        "target_appeared": 553
+      },
+      "RATE_MISMATCH": {
+        "source_appeared": 624,
+        "target_appeared": 6
+      }
+    }
+  },
+  "dimension_b": {
+    "class_modifier_analysis": {
+      "PHASE_ORDERING": {
+        "heads_involved": [
+          "d",
+          "s",
+          "c"
+        ],
+        "head_results": {
+          "d": {
+            "with_modifier": {
+              "total": 93,
+              "near_forbidden": 0
+            },
+            "without_modifier": {
+              "total": 1049,
+              "near_forbidden": 675
+            }
+          },
+          "s": {
+            "with_modifier": {
+              "total": 14,
+              "near_forbidden": 0
+            },
+            "without_modifier": {
+              "total": 162,
+              "near_forbidden": 0
+            }
+          },
+          "c": {
+            "with_modifier": {
+              "total": 291,
+              "near_forbidden": 0
+            },
+            "without_modifier": {
+              "total": 326,
+              "near_forbidden": 0
+            }
+          }
+        }
+      },
+      "COMPOSITION_JUMP": {
+        "heads_involved": [
+          "s",
+          "c"
+        ],
+        "head_results": {
+          "s": {
+            "with_modifier": {
+              "total": 14,
+              "near_forbidden": 0
+            },
+            "without_modifier": {
+              "total": 162,
+              "near_forbidden": 0
+            }
+          },
+          "c": {
+            "with_modifier": {
+              "total": 291,
+              "near_forbidden": 0
+            },
+            "without_modifier": {
+              "total": 326,
+              "near_forbidden": 5
+            }
+          }
+        }
+      },
+      "CONTAINMENT_TIMING": {
+        "heads_involved": [
+          "l",
+          "o",
+          "h",
+          "c"
+        ],
+        "head_results": {
+          "l": {
+            "with_modifier": {
+              "total": 233,
+              "near_forbidden": 0
+            },
+            "without_modifier": {
+              "total": 1050,
+              "near_forbidden": 855
+            }
+          },
+          "o": {
+            "with_modifier": {
+              "total": 700,
+              "near_forbidden": 0
+            },
+            "without_modifier": {
+              "total": 2017,
+              "near_forbidden": 446
+            }
+          },
+          "h": {
+            "with_modifier": {
+              "total": 6,
+              "near_forbidden": 0
+            },
+            "without_modifier": {
+              "total": 58,
+              "near_forbidden": 2
+            }
+          },
+          "c": {
+            "with_modifier": {
+              "total": 291,
+              "near_forbidden": 0
+            },
+            "without_modifier": {
+              "total": 326,
+              "near_forbidden": 0
+            }
+          }
+        }
+      },
+      "RATE_MISMATCH": {
+        "heads_involved": [
+          "a"
+        ],
+        "head_results": {
+          "a": {
+            "with_modifier": {
+              "total": 1423,
+              "near_forbidden": 0
+            },
+            "without_modifier": {
+              "total": 1656,
+              "near_forbidden": 677
+            }
+          }
+        }
+      },
+      "ENERGY_OVERSHOOT": {
+        "heads_involved": [
+          "h"
+        ],
+        "head_results": {
+          "h": {
+            "with_modifier": {
+              "total": 6,
+              "near_forbidden": 0
+            },
+            "without_modifier": {
+              "total": 58,
+              "near_forbidden": 2
+            }
+          }
+        }
+      }
+    },
+    "modifier_in_forbidden": {
+      "h": 9,
+      "e": 7,
+      "d": 4,
+      "o": 2,
+      "i": 2,
+      "a": 1
+    },
+    "class_modifier_profile": {
+      "PHASE_ORDERING": {
+        "i": 2,
+        "h": 4,
+        "e": 4,
+        "d": 2
+      },
+      "COMPOSITION_JUMP": {
+        "i": 2,
+        "h": 2,
+        "e": 2,
+        "d": 2
+      },
+      "CONTAINMENT_TIMING": {
+        "h": 1,
+        "o": 1,
+        "a": 1
+      },
+      "RATE_MISMATCH": {
+        "a": 1
+      },
+      "ENERGY_OVERSHOOT": {}
+    },
+    "quench_by_class": {
+      "PHASE_ORDERING": {
+        "total_middles": 10,
+        "with_quench_mod": 2,
+        "rate": 0.2
+      },
+      "COMPOSITION_JUMP": {
+        "total_middles": 7,
+        "with_quench_mod": 2,
+        "rate": 0.2857142857142857
+      },
+      "CONTAINMENT_TIMING": {
+        "total_middles": 8,
+        "with_quench_mod": 0,
+        "rate": 0.0
+      },
+      "RATE_MISMATCH": {
+        "total_middles": 2,
+        "with_quench_mod": 0,
+        "rate": 0.0
+      },
+      "ENERGY_OVERSHOOT": {
+        "total_middles": 2,
+        "with_quench_mod": 0,
+        "rate": 0.0
+      }
+    }
+  },
+  "dimension_c": {
+    "violation_by_prefix_channel": {
+      "CHSH": {
+        "PHASE_ORDERING": 6,
+        "RATE_MISMATCH": 1
+      },
+      "PREP": {
+        "PHASE_ORDERING": 2
+      },
+      "OTHER": {
+        "PHASE_ORDERING": 1
+      },
+      "OL_FAMILY": {
+        "PHASE_ORDERING": 1
+      }
+    },
+    "total_by_prefix_channel": {
+      "CHSH": 5411,
+      "BARE": 3208,
+      "QO": 3815,
+      "PREP": 1042,
+      "OTHER": 2597,
+      "OL_FAMILY": 976,
+      "DA": 891,
+      "OKOT": 2602
+    },
+    "forbidden_source_prefix_distribution": {
+      "dy": {
+        "PREP": 144,
+        "BARE": 113,
+        "OL_FAMILY": 44,
+        "CHSH": 192,
+        "OKOT": 52,
+        "OTHER": 116,
+        "QO": 12,
+        "DA": 2
+      },
+      "l": {
+        "BARE": 199,
+        "OTHER": 284,
+        "DA": 165,
+        "OL_FAMILY": 9,
+        "QO": 157,
+        "CHSH": 34,
+        "OKOT": 5,
+        "PREP": 2
+      },
+      "or": {
+        "BARE": 250,
+        "OKOT": 35,
+        "CHSH": 72,
+        "OTHER": 17,
+        "OL_FAMILY": 49,
+        "QO": 2,
+        "PREP": 21
+      },
+      "ar": {
+        "BARE": 248,
+        "OL_FAMILY": 28,
+        "OKOT": 246,
+        "OTHER": 67,
+        "CHSH": 73,
+        "PREP": 8,
+        "QO": 6,
+        "DA": 1
+      },
+      "c": {
+        "BARE": 5
+      },
+      "he": {
+        "OTHER": 2
+      }
+    },
+    "class_prefix_profile": {
+      "PHASE_ORDERING": {
+        "total_tokens": 675,
+        "channel_distribution": {
+          "PREP": 0.21333333333333335,
+          "BARE": 0.1674074074074074,
+          "OL_FAMILY": 0.06518518518518518,
+          "CHSH": 0.28444444444444444,
+          "OKOT": 0.07703703703703704,
+          "OTHER": 0.17185185185185184,
+          "QO": 0.017777777777777778,
+          "DA": 0.002962962962962963
+        },
+        "channel_counts": {
+          "PREP": 144,
+          "BARE": 113,
+          "OL_FAMILY": 44,
+          "CHSH": 192,
+          "OKOT": 52,
+          "OTHER": 116,
+          "QO": 12,
+          "DA": 2
+        }
+      },
+      "COMPOSITION_JUMP": {
+        "total_tokens": 5,
+        "channel_distribution": {
+          "BARE": 1.0
+        },
+        "channel_counts": {
+          "BARE": 5
+        }
+      },
+      "CONTAINMENT_TIMING": {
+        "total_tokens": 1303,
+        "channel_distribution": {
+          "BARE": 0.34458940905602453,
+          "OTHER": 0.23254029163468917,
+          "DA": 0.12663085188027629,
+          "OL_FAMILY": 0.044512663085188024,
+          "QO": 0.12202609363008442,
+          "CHSH": 0.08135072908672294,
+          "OKOT": 0.03069838833461243,
+          "PREP": 0.017651573292402148
+        },
+        "channel_counts": {
+          "BARE": 449,
+          "OTHER": 303,
+          "DA": 165,
+          "OL_FAMILY": 58,
+          "QO": 159,
+          "CHSH": 106,
+          "OKOT": 40,
+          "PREP": 23
+        }
+      },
+      "RATE_MISMATCH": {
+        "total_tokens": 677,
+        "channel_distribution": {
+          "BARE": 0.3663220088626292,
+          "OL_FAMILY": 0.0413589364844904,
+          "OKOT": 0.36336779911373707,
+          "OTHER": 0.09896602658788774,
+          "CHSH": 0.10782865583456426,
+          "PREP": 0.011816838995568686,
+          "QO": 0.008862629246676515,
+          "DA": 0.0014771048744460858
+        },
+        "channel_counts": {
+          "BARE": 248,
+          "OL_FAMILY": 28,
+          "OKOT": 246,
+          "OTHER": 67,
+          "CHSH": 73,
+          "PREP": 8,
+          "QO": 6,
+          "DA": 1
+        }
+      },
+      "ENERGY_OVERSHOOT": {
+        "total_tokens": 2,
+        "channel_distribution": {
+          "OTHER": 1.0
+        },
+        "channel_counts": {
+          "OTHER": 2
+        }
+      }
+    },
+    "sister_pair_hazard": {
+      "ch": {
+        "total": 3181,
+        "violations": {
+          "PHASE_ORDERING": 4,
+          "RATE_MISMATCH": 1
+        }
+      },
+      "sh": {
+        "total": 2230,
+        "violations": {
+          "PHASE_ORDERING": 2
+        }
+      }
+    }
+  },
+  "dimension_d": {
+    "chi2_class_x_quintile": {
+      "chi2": 46.56826396250199,
+      "p": 7.94925243356362e-05,
+      "dof": 16,
+      "V": 0.06613190036521642,
+      "classes_tested": [
+        "PHASE_ORDERING",
+        "COMPOSITION_JUMP",
+        "CONTAINMENT_TIMING",
+        "RATE_MISMATCH",
+        "ENERGY_OVERSHOOT"
+      ]
+    },
+    "class_quintile_profile": {
+      "PHASE_ORDERING": {
+        "total_tokens": 675,
+        "quintile_distribution": {
+          "0": 0.13185185185185186,
+          "1": 0.1511111111111111,
+          "2": 0.21481481481481482,
+          "3": 0.2,
+          "4": 0.3022222222222222
+        },
+        "quintile_counts": {
+          "0": 89,
+          "1": 102,
+          "2": 145,
+          "3": 135,
+          "4": 204
+        },
+        "mean_position": 0.5807928693524202
+      },
+      "COMPOSITION_JUMP": {
+        "total_tokens": 5,
+        "quintile_distribution": {
+          "0": 0.4,
+          "1": 0.0,
+          "2": 0.4,
+          "3": 0.0,
+          "4": 0.2
+        },
+        "quintile_counts": {
+          "0": 2,
+          "1": 0,
+          "2": 2,
+          "3": 0,
+          "4": 1
+        },
+        "mean_position": 0.4022222222222222
+      },
+      "CONTAINMENT_TIMING": {
+        "total_tokens": 1303,
+        "quintile_distribution": {
+          "0": 0.22870299309286263,
+          "1": 0.15349194167306215,
+          "2": 0.17881811204911743,
+          "3": 0.1688411358403684,
+          "4": 0.2701458173445894
+        },
+        "quintile_counts": {
+          "0": 298,
+          "1": 200,
+          "2": 233,
+          "3": 220,
+          "4": 352
+        },
+        "mean_position": 0.5099954183444877
+      },
+      "RATE_MISMATCH": {
+        "total_tokens": 677,
+        "quintile_distribution": {
+          "0": 0.1757754800590842,
+          "1": 0.1447562776957164,
+          "2": 0.17134416543574593,
+          "3": 0.20236336779911374,
+          "4": 0.30576070901033975
+        },
+        "quintile_counts": {
+          "0": 119,
+          "1": 98,
+          "2": 116,
+          "3": 137,
+          "4": 207
+        },
+        "mean_position": 0.55138578274422
+      },
+      "ENERGY_OVERSHOOT": {
+        "total_tokens": 2,
+        "quintile_distribution": {
+          "0": 0.0,
+          "1": 0.0,
+          "2": 1.0,
+          "3": 0.0,
+          "4": 0.0
+        },
+        "quintile_counts": {
+          "0": 0,
+          "1": 0,
+          "2": 2,
+          "3": 0,
+          "4": 0
+        },
+        "mean_position": 0.4727272727272727
+      }
+    },
+    "class_mean_positions": {
+      "PHASE_ORDERING": 0.5807928693524202,
+      "COMPOSITION_JUMP": 0.4022222222222222,
+      "CONTAINMENT_TIMING": 0.5099954183444877,
+      "RATE_MISMATCH": 0.55138578274422,
+      "ENERGY_OVERSHOOT": 0.4727272727272727
+    },
+    "violation_positions": {
+      "PHASE_ORDERING": [
+        0.1,
+        0.5,
+        0.6666666666666666,
+        0.5714285714285714,
+        0.3333333333333333,
+        0.9090909090909091,
+        0.8,
+        0.9,
+        0.7777777777777778,
+        0.16666666666666666
+      ],
+      "RATE_MISMATCH": [
+        0.8
+      ]
+    },
+    "baseline_quintile": {
+      "0": 5022,
+      "1": 4186,
+      "2": 4141,
+      "3": 4186,
+      "4": 5561
+    }
+  },
+  "synthesis": {
+    "PHASE_ORDERING": {
+      "n_pairs": 7,
+      "dominant_source_frame": "s->y",
+      "dominant_target_frame": "a->n",
+      "dominant_source_head": "s",
+      "dominant_target_head": "a",
+      "source_modifier_rate": 0.7142857142857143,
+      "target_modifier_rate": 0.7142857142857143,
+      "modifiers_in_forbidden": {
+        "i": 2,
+        "h": 4,
+        "e": 4,
+        "d": 2
+      },
+      "dominant_prefix_channel": "CHSH",
+      "prefix_channel_distribution": {
+        "PREP": 0.21333333333333335,
+        "BARE": 0.1674074074074074,
+        "OL_FAMILY": 0.06518518518518518,
+        "CHSH": 0.28444444444444444,
+        "OKOT": 0.07703703703703704,
+        "OTHER": 0.17185185185185184,
+        "QO": 0.017777777777777778,
+        "DA": 0.002962962962962963
+      },
+      "mean_line_position": 0.5807928693524202,
+      "corpus_violations": 10
+    },
+    "COMPOSITION_JUMP": {
+      "n_pairs": 4,
+      "dominant_source_frame": "s->y",
+      "dominant_target_frame": "e->e",
+      "dominant_source_head": "c",
+      "dominant_target_head": "e",
+      "source_modifier_rate": 0.75,
+      "target_modifier_rate": 0.25,
+      "modifiers_in_forbidden": {
+        "i": 2,
+        "h": 2,
+        "e": 2,
+        "d": 2
+      },
+      "dominant_prefix_channel": "BARE",
+      "prefix_channel_distribution": {
+        "BARE": 1.0
+      },
+      "mean_line_position": 0.4022222222222222,
+      "corpus_violations": 0
+    },
+    "CONTAINMENT_TIMING": {
+      "n_pairs": 4,
+      "dominant_source_frame": "c->l",
+      "dominant_target_frame": "r->bare",
+      "dominant_source_head": "c",
+      "dominant_target_head": "r",
+      "source_modifier_rate": 0.25,
+      "target_modifier_rate": 0.5,
+      "modifiers_in_forbidden": {
+        "h": 1,
+        "o": 1,
+        "a": 1
+      },
+      "dominant_prefix_channel": "BARE",
+      "prefix_channel_distribution": {
+        "BARE": 0.34458940905602453,
+        "OTHER": 0.23254029163468917,
+        "DA": 0.12663085188027629,
+        "OL_FAMILY": 0.044512663085188024,
+        "QO": 0.12202609363008442,
+        "CHSH": 0.08135072908672294,
+        "OKOT": 0.03069838833461243,
+        "PREP": 0.017651573292402148
+      },
+      "mean_line_position": 0.5099954183444877,
+      "corpus_violations": 0
+    },
+    "RATE_MISMATCH": {
+      "n_pairs": 1,
+      "dominant_source_frame": "a->r",
+      "dominant_target_frame": "d->l",
+      "dominant_source_head": "a",
+      "dominant_target_head": "d",
+      "source_modifier_rate": 0.0,
+      "target_modifier_rate": 1.0,
+      "modifiers_in_forbidden": {
+        "a": 1
+      },
+      "dominant_prefix_channel": "BARE",
+      "prefix_channel_distribution": {
+        "BARE": 0.3663220088626292,
+        "OL_FAMILY": 0.0413589364844904,
+        "OKOT": 0.36336779911373707,
+        "OTHER": 0.09896602658788774,
+        "CHSH": 0.10782865583456426,
+        "PREP": 0.011816838995568686,
+        "QO": 0.008862629246676515,
+        "DA": 0.0014771048744460858
+      },
+      "mean_line_position": 0.55138578274422,
+      "corpus_violations": 1
+    },
+    "ENERGY_OVERSHOOT": {
+      "n_pairs": 1,
+      "dominant_source_frame": "h->e",
+      "dominant_target_frame": "t->bare",
+      "dominant_source_head": "h",
+      "dominant_target_head": "t",
+      "source_modifier_rate": 0.0,
+      "target_modifier_rate": 0.0,
+      "modifiers_in_forbidden": {},
+      "dominant_prefix_channel": "OTHER",
+      "prefix_channel_distribution": {
+        "OTHER": 1.0
+      },
+      "mean_line_position": 0.4727272727272727,
+      "corpus_violations": 0
+    },
+    "head_overlap": {
+      "PHASE_ORDERING_vs_COMPOSITION_JUMP": {
+        "jaccard": 0.6666666666666666,
+        "overlap": [
+          "s",
+          "c"
+        ],
+        "unique_1": [
+          "d"
+        ],
+        "unique_2": []
+      },
+      "PHASE_ORDERING_vs_CONTAINMENT_TIMING": {
+        "jaccard": 0.16666666666666666,
+        "overlap": [
+          "c"
+        ],
+        "unique_1": [
+          "d",
+          "s"
+        ],
+        "unique_2": [
+          "l",
+          "o",
+          "h"
+        ]
+      },
+      "PHASE_ORDERING_vs_RATE_MISMATCH": {
+        "jaccard": 0.0,
+        "overlap": [],
+        "unique_1": [
+          "d",
+          "s",
+          "c"
+        ],
+        "unique_2": [
+          "a"
+        ]
+      },
+      "PHASE_ORDERING_vs_ENERGY_OVERSHOOT": {
+        "jaccard": 0.0,
+        "overlap": [],
+        "unique_1": [
+          "d",
+          "s",
+          "c"
+        ],
+        "unique_2": [
+          "h"
+        ]
+      },
+      "COMPOSITION_JUMP_vs_CONTAINMENT_TIMING": {
+        "jaccard": 0.2,
+        "overlap": [
+          "c"
+        ],
+        "unique_1": [
+          "s"
+        ],
+        "unique_2": [
+          "l",
+          "o",
+          "h"
+        ]
+      },
+      "COMPOSITION_JUMP_vs_RATE_MISMATCH": {
+        "jaccard": 0.0,
+        "overlap": [],
+        "unique_1": [
+          "s",
+          "c"
+        ],
+        "unique_2": [
+          "a"
+        ]
+      },
+      "COMPOSITION_JUMP_vs_ENERGY_OVERSHOOT": {
+        "jaccard": 0.0,
+        "overlap": [],
+        "unique_1": [
+          "s",
+          "c"
+        ],
+        "unique_2": [
+          "h"
+        ]
+      },
+      "CONTAINMENT_TIMING_vs_RATE_MISMATCH": {
+        "jaccard": 0.0,
+        "overlap": [],
+        "unique_1": [
+          "l",
+          "o",
+          "h",
+          "c"
+        ],
+        "unique_2": [
+          "a"
+        ]
+      },
+      "CONTAINMENT_TIMING_vs_ENERGY_OVERSHOOT": {
+        "jaccard": 0.25,
+        "overlap": [
+          "h"
+        ],
+        "unique_1": [
+          "l",
+          "o",
+          "c"
+        ],
+        "unique_2": []
+      },
+      "RATE_MISMATCH_vs_ENERGY_OVERSHOOT": {
+        "jaccard": 0.0,
+        "overlap": [],
+        "unique_1": [
+          "a"
+        ],
+        "unique_2": [
+          "h"
+        ]
+      }
+    }
+  },
+  "predictions": {
+    "P1_PHASE_ORDERING_a_HEAD": {
+      "prediction": "PHASE_ORDERING concentrates in a-HEAD territory",
+      "source_a_fraction": 0.0,
+      "target_a_fraction": 0.42857142857142855,
+      "source_heads": {
+        "s": 3,
+        "d": 2,
+        "c": 2
+      },
+      "target_heads": {
+        "a": 3,
+        "c": 3,
+        "s": 1
+      },
+      "confirmed": true,
+      "note": "Checking both source and target HEAD involvement"
+    },
+    "P2_COMPOSITION_JUMP_o_HEAD": {
+      "prediction": "COMPOSITION_JUMP concentrates in o-HEAD or e-HEAD territory",
+      "source_o_fraction": 0.0,
+      "target_o_fraction": 0.25,
+      "source_heads": {
+        "c": 2,
+        "s": 2
+      },
+      "target_heads": {
+        "e": 2,
+        "a": 1,
+        "o": 1
+      },
+      "confirmed": false
+    },
+    "P3_CONTAINMENT_l_r_terminal": {
+      "prediction": "CONTAINMENT_TIMING concentrates in l/r-terminal frames",
+      "source_lr_fraction": 0.75,
+      "target_lr_fraction": 1.0,
+      "source_terms": {
+        "l": 2,
+        "r": 1,
+        "e": 1
+      },
+      "target_terms": {
+        "r": 2,
+        "l": 2
+      },
+      "confirmed": true
+    },
+    "P4_ENERGY_OVERSHOOT_kernel": {
+      "prediction": "ENERGY_OVERSHOOT involves k/e/h kernel atoms",
+      "source_keh_fraction": 1.0,
+      "target_keh_fraction": 0.0,
+      "source_heads": {
+        "h": 1
+      },
+      "target_heads": {
+        "t": 1
+      },
+      "confirmed": true
+    },
+    "P5_positional_differentiation": {
+      "prediction": "Hazard classes partition differently across line positions",
+      "position_range": 0.17857064713019805,
+      "positions": {
+        "COMPOSITION_JUMP": 0.4022222222222222,
+        "ENERGY_OVERSHOOT": 0.4727272727272727,
+        "CONTAINMENT_TIMING": 0.5099954183444877,
+        "RATE_MISMATCH": 0.55138578274422,
+        "PHASE_ORDERING": 0.5807928693524202
+      },
+      "confirmed": true
+    },
+    "P6_selective_quenching": {
+      "prediction": "Modifier quenching is hazard-class selective",
+      "quench_rates": {
+        "PHASE_ORDERING": 0.2,
+        "COMPOSITION_JUMP": 0.2857142857142857,
+        "CONTAINMENT_TIMING": 0.0,
+        "RATE_MISMATCH": 0.0,
+        "ENERGY_OVERSHOOT": 0.0
+      },
+      "range": 0.2857142857142857,
+      "confirmed": true
+    },
+    "P7_prefix_differentiates": {
+      "prediction": "PREFIX channel differentiates hazard classes",
+      "dominant_channels": {
+        "PHASE_ORDERING": null,
+        "COMPOSITION_JUMP": null,
+        "CONTAINMENT_TIMING": null,
+        "RATE_MISMATCH": null,
+        "ENERGY_OVERSHOOT": null
+      },
+      "n_distinct_channels": 1,
+      "confirmed": false
+    }
+  }
+}

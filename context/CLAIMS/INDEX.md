@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1371 validated constraints | **Version:** 5.31 | **Date:** 2026-03-06
+**Total:** 1377 validated constraints | **Version:** 5.32 | **Date:** 2026-03-06
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5315,6 +5315,26 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - T8: Category profiles. Near-zero THERMAL (0.6-1.1%), high STAGING (30.9-35.2%). Cross-system headless JSD 6.7-13.8x smaller than within-system headless-vs-headed JSD.
 - T9: MIDDLE length. Headless shorter in all systems. A: 1.93 vs 2.30. B: 1.87 vs 2.33. AZC: 1.71 vs 2.60. All p<1e-92.
 - T10: Type overlap. 69 triple-shared types. Token coverage: A=88.0%, B=89.0%, AZC=88.1%. Type exclusivity: A=63.3%, B=68.0%, AZC=39.4%. Jaccard: A&B=0.183.
+
+### Phase 543: Hazard-Class Atomization (HAZARD_CLASS_ATOMIZATION)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1528 | Hazard classes map to near-orthogonal atom HEAD territories | 2 | B, MIDDLE, atom, HEAD, TERM, hazard, failure-class, territory, orthogonal, C109, C1446, C1447, C1448, C1475 | PHASE_ORDERING=headless(57.1%), CONTAINMENT_TIMING=o-HEAD(50%), COMPOSITION_JUMP=e-HEAD(50%), RATE_MISMATCH=a-HEAD(100%), ENERGY_OVERSHOOT=e-HEAD(100%). 7/10 pairwise Jaccard=0. |
+| 1529 | PHASE_ORDERING is headless y-terminal to a-HEAD transition failure | 2 | B, MIDDLE, atom, HEAD, TERM, hazard, PHASE_ORDERING, headless, y-terminal, a-HEAD, violation, C109, C1397, C1446, C1477, C1528 | 10/11 corpus violations are dy->aiin (PHASE_ORDERING). Source: headless y-terminal (57.1%). Target: a-HEAD n-terminal (57.1%). Cross-domain boundary failure. |
+| 1530 | CONTAINMENT_TIMING is l/r-terminal SEMI_TRANSPARENT class with 100% avoidance | 2 | B, MIDDLE, atom, TERM, hazard, CONTAINMENT_TIMING, l-terminal, r-terminal, SEMI_TRANSPARENT, avoidance, C109, C1440, C1447, C1487 | Source 75% l/r-terminal. Target 100% l/r-terminal. 1,129 source appearances, 0 violations (100% avoidance). Strictest class. |
+| 1531 | Forbidden MIDDLEs include 5 phantom types absent from corpus | 2 | B, MIDDLE, hazard, forbidden, phantom, construction, grammar, C109, C1178, C1394, C1528, C1529 | shey, chey, chedy, shedy, chol = 0 occurrences. 11/17 transitions involve phantom. Construction-level prohibition. |
+| 1532 | Hazard classes partition by line position (setup-early to closure-late) | 2 | B, MIDDLE, hazard, failure-class, line, position, zone, gradient, C109, C1463, C1464, C1465, C1528 | Chi2=46.6, p=0.000079, V=0.066. COMPOSITION_JUMP=0.402, ENERGY_OVERSHOOT=0.473, CONTAINMENT_TIMING=0.510, RATE_MISMATCH=0.551, PHASE_ORDERING=0.581. |
+| 1533 | PHASE_ORDERING is CHSH-channel specific (28.4% CHSH, 7/11 violations) | 2 | B, MIDDLE, atom, PREFIX, hazard, PHASE_ORDERING, CHSH, channel, violation, C109, C929, C1449, C1451, C1529 | CHSH=28.4% of PO sources vs 0-12.2% other classes. 7/11 violations CHSH-prefixed. QO=0 violations. Other classes BARE-dominant. |
+
+**Phase 543 findings (Hazard-Class Atomization, 4 test dimensions, 5/7 predictions confirmed):**
+- Dimension A (HEAD x TERM frame): Hazard classes occupy near-orthogonal HEAD territories (7/10 pairwise Jaccard=0). PHASE_ORDERING=headless, CONTAINMENT_TIMING=o-HEAD, COMPOSITION_JUMP=e-HEAD, RATE_MISMATCH=a-HEAD, ENERGY_OVERSHOOT=e-HEAD. k-HEAD immunity confirmed universal across all 5 classes.
+- Dimension B (modifier quenching): All 5 modifiers {c,d,f,p,s} quench ALL classes to 0%. Only 2 modified forbidden MIDDLEs exist in the entire list (chedy, shedy — both phantoms). Modifier quenching is trivially complete.
+- Dimension C (PREFIX channel): PHASE_ORDERING uniquely CHSH-dominant (28.4%). Other classes BARE-dominant (34.5-100%). QO maintains zero participation across all 5 classes. 7/11 corpus violations in CHSH context.
+- Dimension D (line position): Classes partition early-to-late (chi2=46.6, p=0.000079). COMPOSITION_JUMP=0.402 (setup), PHASE_ORDERING=0.581 (closure). Gradient is physically coherent.
+- Phantom finding: 5 forbidden MIDDLEs (shey, chey, chedy, shedy, chol) have 0 corpus occurrences. 11/17 transitions involve phantoms. Forbidden list partially encodes construction-level prohibitions.
+- PHASE_ORDERING anatomy: 10/11 corpus violations are dy->aiin. Headless y-terminal to a-HEAD n-terminal = cross-domain boundary failure at closure. Concentrates in CHSH sensory checkpoint context.
+- CONTAINMENT_TIMING: Strictest class — 1,129 source appearances, 0 violations. l/r SEMI_TRANSPARENT terminals. Grammar enforces absolute avoidance.
 
 ---
 

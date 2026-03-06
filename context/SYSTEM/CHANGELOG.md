@@ -4,6 +4,36 @@
 
 ---
 
+## Version 5.32.168 (2026-03-06) - Phase 543: Hazard-Class Atomization
+
+### Summary
+
+Phase 543 decomposes the 5 hazard failure classes (PHASE_ORDERING 41%, COMPOSITION_JUMP 24%, CONTAINMENT_TIMING 24%, RATE_MISMATCH 6%, ENERGY_OVERSHOOT 6%) from C109 onto the atom-mechanical frame system (HEAD x TERM) established in Phases 523-535. 4 test dimensions (A: frame, B: modifier, C: PREFIX channel, D: line position) on 23,096 B tokens, 20,542 adjacency pairs, 11 forbidden violations. Key finding: hazard classes map to NEAR-ORTHOGONAL HEAD territories (7/10 pairwise Jaccard=0). PHASE_ORDERING = headless y-terminal to a-HEAD n-terminal cross-domain boundary failure, concentrating in CHSH checkpoint context (28.4% CHSH, 7/11 violations). CONTAINMENT_TIMING = l/r SEMI_TRANSPARENT class with 100% avoidance (0 violations in 1,129 appearances). 5 phantom MIDDLEs (shey, chey, chedy, shedy, chol) in 11/17 transitions reveal construction-level prohibitions. Hazard classes partition by line position (chi2=46.6, V=0.066): setup errors early, closure errors late. 5/7 predictions confirmed.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1528: Hazard classes map to near-orthogonal atom HEAD territories (7/10 pairwise Jaccard=0) |
+| **ADDED** | C1529: PHASE_ORDERING is headless y-terminal to a-HEAD transition failure (10/11 violations = dy->aiin) |
+| **ADDED** | C1530: CONTAINMENT_TIMING is l/r-terminal SEMI_TRANSPARENT class (100% avoidance, 0/1,129) |
+| **ADDED** | C1531: Forbidden MIDDLEs include 5 phantom types absent from corpus (11/17 transitions involve phantoms) |
+| **ADDED** | C1532: Hazard classes partition by line position (chi2=46.6, p=0.000079; setup early, closure late) |
+| **ADDED** | C1533: PHASE_ORDERING is CHSH-channel specific (28.4% CHSH, 7/11 violations; QO=0) |
+| **ADDED** | `phases/HAZARD_CLASS_ATOMIZATION/scripts/hazard_class_atomization.py` |
+| **ADDED** | `phases/HAZARD_CLASS_ATOMIZATION/results/hazard_class_atomization.json` |
+| **ADDED** | `phases/HAZARD_CLASS_ATOMIZATION/REPORT.md` |
+| **UPDATED** | INDEX.md -- +6 constraints (1377 total) |
+| **EXTENDED** | C109 (5 failure classes): each class now has atom-level HEAD territory, terminal profile, PREFIX channel, and line position characterization |
+| **EXTENDED** | C1446 (k-HEAD immunity): immunity confirmed universal across all 5 hazard classes |
+| **EXTENDED** | C1447 (terminal hazard partition): terminal role now differentiated by hazard class |
+| **EXTENDED** | C1449 (PREFIX channel hazard): CHSH specificity to PHASE_ORDERING resolved |
+| **EXTENDED** | C1451 (Mode B violations): all 11 violations concentrated in PHASE_ORDERING dy->aiin |
+| **CONNECTED** | C1178 (phantom dead naming): hazard phantoms parallel dark-pipeline phantoms (4/5 ch/sh-initial) |
+| **CONNECTED** | C1440 (three-tier opacity): CONTAINMENT_TIMING maps to SEMI_TRANSPARENT tier |
+
+---
+
 ## Version 5.31.162 (2026-03-06) - Phase 542: Headless Compound Cross-System Distribution
 
 ### Summary
