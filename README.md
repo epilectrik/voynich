@@ -152,6 +152,10 @@ python scripts/show_b_folio.py f76r --detail 4 # Full metadata dump (all classif
 
 Renders any Currier B folio with morphological parse, structural roles, interpretive glosses, 6-state macro classification, and hub/affordance metadata. See [`scripts/DECODER.md`](scripts/DECODER.md) for full documentation of all 6 rendering modes and flags.
 
+### AI Expert Mode
+
+Running [Claude Code](https://claude.ai/claude-code) in this repository automatically creates a Voynich expert with the full constraint system loaded as permanent context. The `CLAUDE.md` project instructions, progressive context architecture (`context/`), and embedded agent definitions (`.claude/agents/`) give the AI complete access to all 1,306 validated constraints, 6 structural contracts, and 75 model fits — no manual setup required. Ask it anything about manuscript structure and it will answer with constraint citations.
+
 ## Directory Structure
 
 ```
