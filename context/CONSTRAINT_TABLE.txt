@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1306 constraints | 2026-03-05
+CONSTRAINT_REFERENCE v2.6 | 1313 constraints | 2026-03-05
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1310,3 +1310,10 @@ C1459	e→y context-independent deployment (not recovery-specific)	2	B, MIDDLE, 
 C1460	e→y early-line concentration with final avoidance	2	B, MIDDLE, atom, e-HEAD, y-terminal, position, line, paragraph	Mean line position 0.463 (vs 0.500). Line-final 0.55x. Q0-Q1 enriched 1.09-1.13x. Paragraph: header 12.0% -> late body 17.5%. Thermal work zone, not closure.
 C1461	e→y CHSH-channel with sh enrichment and qo/BARE exclusion	2	B, PREFIX, MIDDLE, atom, e-HEAD, y-terminal, channel, sh, qo	sh 2.45x, ch 1.74x; ch/sh ratio 1.07 vs corpus 1.50 (sh-biased). qo 0.04x, BARE 0.002x, da 0.00x. Monitoring/verification channels, not heat source.
 C1462	e→y rate predicts folio forgiveness via AXM attractor	2	B, MIDDLE, atom, e-HEAD, y-terminal, AXM, forgiveness, folio, hazard	e->y vs AXM self-transition rho=+0.569, p<1e-7. e->y vs hazard rho=-0.473, p=7e-6. Q1 (6.6% e->y) = 40.6% AXM self; Q4 (21.1%) = 55.0%. Post-e->y AXM +9.4pp (one-way ratchet). Mechanical basis of forgiveness gradient.
+C1463	Zone-hazard routing at line level	2	B, line, position, zone, hazard, frame, routing	Chi2=336.3, V=0.085. ZERO enriched 1.236x at SPEC, IMMUNE 1.165x at WORK, HIGH 1.134x at CLOSURE. Monotonic hazard gradient across line.
+C1464	k-IMMUNE THERMAL_WORK onset concentration	2	B, MIDDLE, atom, k-HEAD, IMMUNE, line, position, zone	Q1 peak 1.311x, 63.1% in work zone. Mean pos 0.484. Energy modulator concentrates at onset of thermal work.
+C1465	HIGH frame positional heterogeneity	2	B, MIDDLE, atom, HEAD, TERM, frame, hazard, position, heterogeneity	KW H=68.8, p=1.83e-13, eta2=0.013. o-HEAD HIGH neutral (mean 0.491), a/d-HEAD HIGH closure-biased (mean 0.562). Spread 0.115.
+C1466	Zone-hazard pattern line-length invariance	2	B, line, position, zone, hazard, frame, length, invariance	V=0.081-0.091 across short/medium/long. Same enrichment pattern in all groups. Minor closure interaction: long lines +4pp HIGH at closure.
+C1467	Paragraph zone x hazard interaction (non-fractal)	2	B, paragraph, zone, hazard, frame, routing	Chi2=233.9, V=0.071. LOW-first (HEADER 1.130x), HIGH-last (TAIL 1.134x). DIFFERENT topology from line-level SAFE-first pattern.
+C1468	Header infrastructure-first composition	2	B, paragraph, header, hazard, LOW, ZERO, composition	HEADER LOW 51.6% (1.130x), ZERO 15.8% (0.784x depleted). e->y 0.796x at HEADER. Headers specify with infrastructure, not safety vocabulary.
+C1469	Line hazard gradient paragraph-independent	2	B, line, paragraph, zone, hazard, independence, nested	Within-zone line V: HEADER 0.079, BODY 0.094, TAIL 0.091. Line gradient persists independently in all paragraph zones. Two-level safety architecture.

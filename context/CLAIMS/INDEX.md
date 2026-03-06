@@ -4934,6 +4934,52 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 
 ---
 
+### Line Zone x Frame Hazard Interaction (C1463-C1466) -- Phase: LINE_ZONE_FRAME_HAZARD (Phase 528)
+
+> **Summary:** Phase 528 tests the interaction between the three-zone line model (C1425-C1430: SPECIFICATION/THERMAL_WORK/CLOSURE) and the frame hazard classification (C1448: 7 HIGH, 3 ZERO, k-IMMUNE). The two independently discovered systems are NOT independent -- they interact with a structured routing pattern. Safe (ZERO) frames enrich at SPECIFICATION (1.236x), immune (k-HEAD) frames enrich at THERMAL_WORK (1.165x, peaking at Q1=1.311x), and hazardous (HIGH) frames enrich at CLOSURE (1.134x). The pattern is universal across line lengths and sections. HIGH frames are NOT positionally homogeneous: o-HEAD HIGH is position-neutral while a/d-HEAD HIGH is closure-biased.
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1463 | Zone-hazard routing at line level | 2 | B, line, position, zone, hazard, frame, routing | Chi2=336.3, V=0.085. ZERO enriched 1.236x at SPEC, IMMUNE 1.165x at WORK, HIGH 1.134x at CLOSURE. Monotonic hazard gradient across line. |
+| 1464 | k-IMMUNE THERMAL_WORK onset concentration | 2 | B, MIDDLE, atom, k-HEAD, IMMUNE, line, position, zone | Q1 peak 1.311x, 63.1% in work zone. Mean pos 0.484. Energy modulator concentrates at onset of thermal work. |
+| 1465 | HIGH frame positional heterogeneity | 2 | B, MIDDLE, atom, HEAD, TERM, frame, hazard, position, heterogeneity | KW H=68.8, p=1.83e-13, eta2=0.013. o-HEAD HIGH neutral (mean 0.491), a/d-HEAD HIGH closure-biased (mean 0.562). Spread 0.115. |
+| 1466 | Zone-hazard pattern line-length invariance | 2 | B, line, position, zone, hazard, frame, length, invariance | V=0.081-0.091 across short/medium/long. Same enrichment pattern in all groups. Minor closure interaction: long lines +4pp HIGH at closure. |
+
+**Phase 528 findings (Line Zone x Frame Hazard, 6 tests + 1 extra):**
+- T1: Quintile x hazard. Chi2=371.8, V=0.073. KW eta2=0.010. Mean pos: HIGH=0.536, ZERO=0.444.
+- T2: Zone x hazard. Chi2=336.3, V=0.085. SPEC-CLOSURE V=0.135. WORK-CLOSURE V=0.106.
+- T3: e→y mean pos 0.463. Q4 depleted 0.762x. Mann-Whitney vs HIGH p=5.7e-26, r=0.136.
+- T4: k-HEAD Q1 peak 1.311x. Work zone 63.1% (1.165x). Mean pos 0.484.
+- T5: Among 6 HIGH frames: KW H=68.8, p=1.83e-13. o->bare=0.493, a->l=0.602. Spread 0.115.
+- T6: V invariant: short=0.091, medium=0.089, long=0.081. Closure hazard: short 22.7%, long 26.7%.
+- T-Extra: All 5 sections show SPEC→WORK→CLOSURE hazard increase (except C which is uniformly high).
+
+---
+
+### Paragraph-Level Hazard Gradient (C1467-C1469) -- Phase: PARAGRAPH_HAZARD_GRADIENT (Phase 529)
+
+> **Summary:** Phase 529 tests whether the line-level hazard gradient (C1463: safe operations first, hazardous last) repeats at paragraph scale. The answer is NO -- the paragraph and line levels implement COMPLEMENTARY architectures with comparable effect sizes (V=0.071 vs V=0.085, ratio 0.84) but DIFFERENT topologies. Paragraph headers concentrate LOW/infrastructure vocabulary (1.130x), not ZERO/safe vocabulary (0.784x depleted). Safe/immune vocabulary concentrates in the paragraph BODY (ZERO 1.077x, IMMUNE 1.121x). HIGH hazard concentrates at TAIL (1.134x). The line-level hazard gradient operates independently within ALL paragraph zones (V=0.079-0.094). Safety is enforced at line level; paragraphs enforce specification-first ordering.
+
+| # | Constraint | Tier | Tags | Details |
+|---|-----------|------|------|---------|
+| 1467 | Paragraph zone x hazard interaction (non-fractal) | 2 | B, paragraph, zone, hazard, frame, routing | Chi2=233.9, V=0.071. LOW-first (HEADER 1.130x), HIGH-last (TAIL 1.134x). DIFFERENT topology from line-level SAFE-first pattern. |
+| 1468 | Header infrastructure-first composition | 2 | B, paragraph, header, hazard, LOW, ZERO, composition | HEADER LOW 51.6% (1.130x), ZERO 15.8% (0.784x depleted). e->y 0.796x at HEADER. Headers specify with infrastructure, not safety vocabulary. |
+| 1469 | Line hazard gradient paragraph-independent | 2 | B, line, paragraph, zone, hazard, independence, nested | Within-zone line V: HEADER 0.079, BODY 0.094, TAIL 0.091. Line gradient persists independently in all paragraph zones. Two-level safety architecture. |
+
+**Phase 529 findings (Paragraph Hazard Gradient, 8 tests + 2 extra):**
+- T1: Zone x hazard. Chi2=233.9, V=0.071. HEADER vs BODY V=0.101 (strongest). LOW 1.130x at HEADER, ZERO+IMMUNE in BODY, HIGH at TAIL.
+- T2: e->y. HEADER 0.796x depleted, BODY 1.077x enriched. Para position 0.492 (later).
+- T3: k-IMMUNE. HEADER 0.793x depleted, BODY 1.121x enriched.
+- T4: HIGH. HEADER 1.057x, BODY 0.936x, TAIL 1.134x. Absolute: H=21.9%, B=19.4%, T=23.5%.
+- T5: No monotonic gradient. Spearman rho=0.600, p=0.285 (NS). First/last ratio 1.073.
+- T6: Fractal comparison. V=0.071 vs C1463 V=0.085, ratio 0.84. COMPARABLE magnitude, DIFFERENT topology.
+- T7: Length interaction. Long (6+) TAIL HIGH 1.274x vs short (2-3) 1.014x. Pattern strengthens with length.
+- T8: Header LOW-dominant (51.6% vs 43.8% body). Within-zone line gradients: Q4/Q0 ratio HEADER=1.16, BODY=1.42, TAIL=1.51.
+- T-Extra nested: Line gradient within zones: HEADER V=0.079, BODY V=0.094, TAIL V=0.091. All p<10^-11.
+- T-Extra sections: TAIL>HEADER HIGH rate in 4/5 sections. V=0.039-0.119 per section.
+
+---
+
 ## Navigation
 
 ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)

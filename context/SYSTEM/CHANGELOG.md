@@ -4,6 +4,49 @@
 
 ---
 
+## Version 5.18.120 (2026-03-05) - Phase 529: Paragraph-Level Hazard Gradient
+
+### Summary
+
+Phase 529 tests whether the line-level hazard gradient (C1463: safe operations first, hazardous last, V=0.085) repeats at paragraph scale. The answer is NO -- the paragraph implements a COMPLEMENTARY architecture with comparable magnitude (V=0.071, ratio 0.84) but DIFFERENT topology. Paragraph headers concentrate LOW/infrastructure vocabulary (1.130x enriched), NOT ZERO/safe vocabulary (0.784x depleted). Safe vocabulary (e->y, k-HEAD) concentrates in the paragraph BODY (ZERO 1.077x, IMMUNE 1.121x). HIGH hazard concentrates at TAIL (1.134x). Critically, the line-level hazard gradient operates INDEPENDENTLY within all paragraph zones (V=0.079-0.094), confirming that safety is enforced at line level while paragraphs enforce specification-first ordering. The two levels form a LAYERED architecture, not a fractal one.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1467: Paragraph zone x hazard interaction (non-fractal, V=0.071, different topology from line level) |
+| **ADDED** | C1468: Header infrastructure-first composition (LOW 1.130x, ZERO 0.784x depleted) |
+| **ADDED** | C1469: Line hazard gradient paragraph-independent (within-zone V=0.079-0.094) |
+| **ADDED** | `phases/PARAGRAPH_HAZARD_GRADIENT/scripts/paragraph_hazard_gradient.py` |
+| **ADDED** | `phases/PARAGRAPH_HAZARD_GRADIENT/results/paragraph_hazard_gradient.json` |
+| **ADDED** | `phases/PARAGRAPH_HAZARD_GRADIENT/REPORT.md` |
+| **UPDATED** | INDEX.md -- +3 constraints (1313 total) |
+| **UPDATED** | currierB.bcsc.yaml -- added paragraph_hazard_routing section |
+
+---
+
+## Version 5.17.119 (2026-03-05) - Phase 528: Line Zone x Frame Hazard Interaction
+
+### Summary
+
+Phase 528 tests the interaction between two independently discovered systems: the three-zone line model (C1425-C1430: SPECIFICATION/THERMAL_WORK/CLOSURE) and the frame hazard classification (C1448: 7 HIGH, 3 ZERO, k-IMMUNE). 23,090 tokens across 6 tests + 1 extra. Key findings: the systems are NOT independent -- they interact with structured routing (chi2=336.3, V=0.085). ZERO-hazard frames enrich at SPECIFICATION (1.236x), IMMUNE (k-HEAD) tokens concentrate at THERMAL_WORK onset (Q1 peak 1.311x), and HIGH-hazard frames concentrate at CLOSURE (1.134x). Lines create a monotonic hazard gradient: safe operations first, energy operations second, hazardous operations last. HIGH frames are positionally heterogeneous (KW H=68.8, p=1.83e-13): o-HEAD HIGH is position-neutral while a/d-HEAD HIGH is closure-biased. The pattern is universal across line lengths (V=0.081-0.091).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1463: Zone-hazard routing at line level (chi2=336.3, V=0.085, monotonic gradient) |
+| **ADDED** | C1464: k-IMMUNE THERMAL_WORK onset concentration (Q1 peak 1.311x, 63.1% in work zone) |
+| **ADDED** | C1465: HIGH frame positional heterogeneity (o-HEAD neutral, a/d-HEAD closure-biased, spread 0.115) |
+| **ADDED** | C1466: Zone-hazard pattern line-length invariance (V=0.081-0.091, universal) |
+| **ADDED** | `phases/LINE_ZONE_FRAME_HAZARD/scripts/line_zone_frame_hazard.py` |
+| **ADDED** | `phases/LINE_ZONE_FRAME_HAZARD/results/line_zone_frame_hazard.json` |
+| **ADDED** | `phases/LINE_ZONE_FRAME_HAZARD/REPORT.md` |
+| **UPDATED** | INDEX.md -- +4 constraints (1310 total) |
+| **UPDATED** | currierB.bcsc.yaml -- added zone-hazard interaction findings |
+
+---
+
 ## Version 5.16.118 (2026-03-05) - Phase 525: e→y Safe Pathway and Recovery Architecture
 
 ### Summary

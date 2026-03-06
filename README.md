@@ -10,8 +10,8 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 
 | Metric | Value |
 |--------|-------|
-| Validated constraints | 1,306 |
-| Research phases completed | 526 |
+| Validated constraints | 1,313 |
+| Research phases completed | 529 |
 | Model fits tested | 75 |
 | Constraint tiers | 0 (frozen fact) through 4 (exploratory) |
 
@@ -154,7 +154,7 @@ Renders any Currier B folio with morphological parse, structural roles, interpre
 
 ### AI Expert Mode
 
-Running [Claude Code](https://claude.ai/claude-code) in this repository automatically creates a Voynich expert with the full constraint system loaded as permanent context. The `CLAUDE.md` project instructions, progressive context architecture (`context/`), and embedded agent definitions (`.claude/agents/`) give the AI complete access to all 1,306 validated constraints, 6 structural contracts, and 75 model fits — no manual setup required. Ask it anything about manuscript structure and it will answer with constraint citations.
+Running [Claude Code](https://claude.ai/claude-code) in this repository automatically creates a Voynich expert with the full constraint system loaded as permanent context. The `CLAUDE.md` project instructions, progressive context architecture (`context/`), and embedded agent definitions (`.claude/agents/`) give the AI complete access to all 1,313 validated constraints, 6 structural contracts, and 75 model fits — no manual setup required. Ask it anything about manuscript structure and it will answer with constraint citations.
 
 ## Directory Structure
 
@@ -169,7 +169,7 @@ voynich/
     SPECULATIVE/      # Tier 3-4 interpretations
   data/               # Transcript, dictionaries, Brunschwig recipes
   scripts/            # voynich.py core library + analysis tools
-  phases/             # 526 completed research phases
+  phases/             # 529 completed research phases
   results/            # Legacy analysis outputs (early phases; new results go in phases/)
   folio_analysis/     # Per-folio hazard maps
   annotation_data/    # Folio annotation work

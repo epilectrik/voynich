@@ -1180,13 +1180,25 @@ program_structure:
             prefix_selectivity: "ch/sh 0.16-0.17x, qo 0.02x depleted; ar/al/or 4.6-6.5x enriched (LATE channel)"
             two_level_closure: "m-terminal (body-line closer) and -am suffix (paragraph terminator) are orthogonal: 1 token overlap, complementary scopes"
             provenance: "C1434, C1435, C1436, C1437, C1438, C1439"
+      zone_hazard_routing:
+        statement: "Three-zone model interacts with frame hazard classification: monotonic hazard gradient across line (C1463-C1466)"
+        routing_pattern:
+          SPECIFICATION: "ZERO enriched 1.236x, HIGH depleted 0.836x — safe operations open lines"
+          THERMAL_WORK: "IMMUNE (k-HEAD) enriched 1.165x, Q1 peak 1.311x — energy input at work onset"
+          CLOSURE: "HIGH enriched 1.134x, ZERO depleted 0.743x — hazardous operations close lines"
+        contingency: "chi2=336.3, V=0.085, p=1.38e-69 (zone x hazard class)"
+        k_immune_onset: "k-HEAD peaks at Q1 (1.311x), 63.1% in work zone; energy input at start of thermal work (C1464)"
+        high_frame_heterogeneity: "o-HEAD HIGH position-neutral (mean 0.491), a/d-HEAD HIGH closure-biased (mean 0.562); KW H=68.8, eta2=0.013 (C1465)"
+        line_length_invariance: "V=0.081-0.091 across short/medium/long lines; universal grammar property (C1466)"
+        section_universality: "All 5 sections show SPEC→WORK→CLOSURE hazard increase (except Section C which is uniformly high-hazard)"
+        provenance: "C1463, C1464, C1465, C1466"
       cross_line_independence:
         statement: "Adjacent lines are categorically independent; each line is a fresh i.i.d. sample from the folio's operational profile"
         suffix_mode_MI: "0.003 bits"
         dominant_category_MI: "0.032 bits"
         vocabulary_jaccard: "0.153"
-      provenance: "C1425, C1426, C1427, C1428, C1429, C1430, C1434-C1439"
-    provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897, C1425-C1430, C1434-C1439"
+      provenance: "C1425, C1426, C1427, C1428, C1429, C1430, C1434-C1439, C1463-C1466"
+    provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897, C1425-C1430, C1434-C1439, C1463-C1466"
 
   paragraph:
     # For comprehensive paragraph-as-unit model, see PSC (paragraph.psc.yaml)
@@ -1405,6 +1417,25 @@ program_structure:
         Ordering is driven neither by position (C1399) nor by terminal state (C1400).
         Folio specifies operational character; paragraphs sample from it independently.
       provenance: "C1400, C1399, C1398, C1260, C1288, C1121"
+
+    paragraph_hazard_routing:
+      statement: "Paragraph zones interact with frame hazard classification at comparable magnitude to line-level (V=0.071 vs 0.085) but with DIFFERENT topology — infrastructure-first, not safe-first (C1467-C1469)"
+      zone_enrichments:
+        HEADER: "LOW 1.130x enriched, ZERO 0.784x depleted, IMMUNE 0.793x depleted — infrastructure specification, not safety"
+        BODY: "ZERO 1.077x enriched, IMMUNE 1.121x enriched — safe/immune vocabulary concentrates in body"
+        TAIL: "HIGH 1.134x enriched — hazardous operations accumulate at paragraph close"
+      contingency: "chi2=233.9, dof=6, V=0.071, p=1.15e-47"
+      non_fractal_topology: |
+        Line level: ZERO-first (1.236x at SPEC), HIGH-last (1.134x at CLOSURE) — SAFE operations open.
+        Paragraph level: LOW-first (1.130x at HEADER), HIGH-last (1.134x at TAIL) — INFRASTRUCTURE opens.
+        Comparable magnitudes (ratio 0.84) but different organizing principles.
+        e->y depleted at HEADER (0.796x), enriched at BODY (1.077x). k-HEAD depleted at HEADER (0.793x).
+      line_gradient_independence: |
+        Line-level hazard gradient (C1463) persists independently within ALL paragraph zones (C1469):
+        HEADER V=0.079, BODY V=0.094, TAIL V=0.091 (all p<10^-11).
+        BODY has STRONGEST within-zone line gradient. Two safety levels are INDEPENDENT.
+      long_paragraph_effect: "LONG (6+ lines) TAIL HIGH enrichment 1.274x vs SHORT (2-3) 1.014x — longer paragraphs accumulate more tail hazard"
+      provenance: "C1467, C1468, C1469"
 
   folio_paragraph_architecture:
     # Paragraph-as-unit properties (C855-C862) are now owned by PSC (paragraph.psc.yaml)
