@@ -11,7 +11,7 @@ Systematic computational analysis of the Voynich Manuscript (Beinecke MS 408), a
 | Metric | Value |
 |--------|-------|
 | Validated constraints | 1,410 |
-| Research phases completed | 550 |
+| Research phases completed | 551 |
 | Model fits tested | 75 |
 | Constraint tiers | 0 (frozen fact) through 4 (exploratory) |
 
@@ -30,6 +30,8 @@ We take the same approach with the Voynich Manuscript. We don't translate tokens
 **[GUIDE.md](GUIDE.md)** provides a full walkthrough of all four manuscript systems and how they work together.
 
 **[ARCHITECTURE.md](phases/INSTRUCTION_WORD_FORMALISM/ARCHITECTURE.md)** is the definitive technical specification: the complete instruction word, three-level safety architecture, organizational model, and cross-register document stack — derived from all 1,410 constraints.
+
+**[OPERATOR_MODEL.md](phases/OPERATOR_USAGE_MODEL/OPERATOR_MODEL.md)** describes how a trained practitioner would have navigated and used the manuscript during actual work — the document-usage reconstruction.
 
 ## Key Results
 

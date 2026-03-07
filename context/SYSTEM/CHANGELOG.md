@@ -4,6 +4,33 @@
 
 ---
 
+## Version 5.40 (2026-03-06) - Phase 551: Operator/Document-Usage Model (SYNTHESIS)
+
+### Summary
+
+Phase 551 is a Tier 3 interpretive synthesis describing how a trained medieval practitioner would navigate and use the Voynich Manuscript's four-register document stack during a work session. No new empirical analysis was performed and no new constraints were added. The output is `phases/OPERATOR_USAGE_MODEL/OPERATOR_MODEL.md`, a practitioner-facing narrative (~4,500 words) that translates structural findings from 550 prior phases into a practical account of document usage.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/OPERATOR_USAGE_MODEL/OPERATOR_MODEL.md` -- Practitioner's guide (9 sections: operator profile, four registers, eight-step session model, comparisons, responsibility architecture, dark pipeline, parallel execution, negative space, summary) |
+| **ADDED** | `phases/OPERATOR_USAGE_MODEL/REPORT.md` -- Phase report documenting synthesis decisions and integrative findings |
+| **UPDATED** | INDEX.md -- +0 constraints (1410 total), Phase 551 synthesis section added |
+
+### Key Integrative Findings (narrative connections, not new claims)
+
+- Four registers form a coordinated working environment navigated as-needed during a single session, not sequentially
+- Eight-step session model emerges from combining program selection (C531), configuration checking (C502/C443), header reading (C747), paragraph selection (C1399/C864), line execution (C1425-C1430), between-line judgment (C1056), between-paragraph choice (C1399-C1400), and completion judgment (C197)
+- Negative space is collectively striking: no literacy (C132), no math (C287), no sequential memory (C1470-C1471), no cross-folio reference (C531), no grammar knowledge (C121) -- notation designed for maximum operational accessibility
+- Parallel execution model: paragraph self-containment (C845) + ordering null (C1399) + state-independence (C1400) + within-folio coherence (C1288) enables multiple operators working from same folio simultaneously
+
+### Status
+
+Operator usage model COMPLETE. Complements Phase 550 (technical specification) with a practitioner-facing view of the same architecture. 1,410 validated constraints across 551 phases.
+
+---
+
 ## Version 5.39 (2026-03-06) - Phase 550: Complete Control Architecture -- The Voynich Instruction Word (SYNTHESIS)
 
 ### Summary

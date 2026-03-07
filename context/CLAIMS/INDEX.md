@@ -5479,6 +5479,33 @@ This is the capstone synthesis of the characterization program. No new empirical
 
 ---
 
+### Phase 551: Operator/Document-Usage Model (SYNTHESIS)
+
+**Date:** 2026-03-06 | **Type:** SYNTHESIS (no new data analysis) | **Constraints added:** 0
+
+Tier 3 interpretive synthesis describing how a trained medieval practitioner would navigate and use the Voynich Manuscript's four-register document stack during a work session. Output is `phases/OPERATOR_USAGE_MODEL/OPERATOR_MODEL.md`, a practitioner-facing narrative (~4,500 words) translating structural findings into a usage model.
+
+**Nine sections covering:**
+1. **Who Is the Operator** -- Expert profile: what they know (materials, equipment, sensory cues, hazard recognition) and what the manuscript assumes (C197, C1056, C109)
+2. **What the Manuscript Contains** -- Four registers from the operator's perspective: A (specification registry, C240), AZC (legality bridge, C313/C443), B (execution grammar, C121/C531), HT (orientation layer, C740/C935)
+3. **A Work Session** -- Eight-step reconstruction: program selection (C531) -> configuration check (C502/C443) -> header reading (C747) -> paragraph choice (C1399/C864) -> line execution (C1425-C1430) -> between-line judgment (C1056) -> between-paragraph choice (C1399-C1400) -> completion
+4. **What Makes This Different** -- Not a recipe book, not a prose manual, not a codebook/cipher; control system specification analogy (C132, C130, C207)
+5. **The Responsibility Architecture** -- System handles safety (C109), specification (C121), legality (C313), hazard clamping (C458), discrimination (C475), orientation (C459). Operator supplies material identity (C120), sensory evaluation (C1056), timing, hazard recognition, monitoring, program selection, paragraph ordering (C1399-C1400), completion judgment, recovery strategy (C458)
+6. **The Dark Pipeline** -- 300 dark MIDDLEs as identification vocabulary within execution (C1137, C1141, C1146, C1505). Operator reads cues, supplies referents
+7. **Multiple Operators** -- Parallel subroutine execution from paragraph self-containment (C845), ordering null (C1399), within-folio coherence (C1288). Workshop setting interpretation
+8. **What the Operator Does NOT Need** -- No literacy (C132), no math (C287), no sequential memory (C1470-C1471), no cross-folio reference (C531), no grammar knowledge (C121)
+9. **Summary** -- Integrated four-register model with design philosophy
+
+**Key integrative findings (not new constraints):**
+- Four registers form a coordinated working environment navigated as-needed, not sequentially
+- Eight-step session model emerges from combining program selection, configuration, execution, and judgment findings
+- Negative space (Section 8) shows notation designed for maximum operational accessibility
+- Parallel execution model: multiple operators can work from same folio simultaneously (C845, C1399-C1400, C1288)
+
+**Verdict:** Operator usage model COMPLETE. Complements Phase 550 (technical specification) with a practitioner-facing view of the same architecture.
+
+---
+
 ## Navigation
 
 ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)
