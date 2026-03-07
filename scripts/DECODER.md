@@ -292,6 +292,14 @@ The decoder composes glosses from multiple data sources:
 | C1450 | Modifier quenching (c,d,f,p,s → 0% hazard) |
 | C1452-C1456 | i-modifier hazard (Simpson's paradox) |
 | C1457-C1462 | e→y safe pathway / stability anchor |
+| C1475 | HEAD domain taxonomy (k=THERMAL, e=STAB, etc.) |
+| C1482 | Double-ii safe pathway (a-HEAD + ii = 0% hazard) |
+| C1487 | Terminal functional tier (LOCKED/CHAN/DIFF) |
+| C1488-C1489 | Headless/headed classification + pseudo-HEAD domain |
+| C1528, C1547 | Hazard class type (terminal→failure class: PO/CT/CJ/RM/EO) |
+| C1546 | Universal headed source immunity (0/16,819 headed = source) |
+| C1556 | o-HEAD deterministic category (ol=STAGING, or=FLOW) |
+| C1563 | Cross-token routing hint (terminal→next HEAD affinity) |
 
 ---
 

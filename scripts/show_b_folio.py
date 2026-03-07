@@ -212,6 +212,14 @@ class IRToken:
     has_quenching_mod: bool = False
     has_i_mod: bool = False
     i_count: int = 0
+    # Phase 554 additions (C1475, C1487, C1488, C1546, C1547)
+    source_immune: bool = False
+    hazard_class_type: Optional[str] = None
+    head_domain: Optional[str] = None
+    is_headless: bool = False
+    pseudo_head_domain: Optional[str] = None
+    pseudo_head_atom: Optional[str] = None
+    terminal_tier: Optional[str] = None
 
     def role_tag(self) -> str:
         """Role-typed notation per BCSC census (C573, C581-C583, C563-C572).
@@ -496,30 +504,47 @@ def _ir_t3_gloss(t: IRToken) -> Optional[tuple]:
         sfx_exp = f' ({sfx_label})'
 
     # Category-hazard indicator (C1280: supplementary to C109 class-based hazard)
+    # o-HEAD deterministic category (C1556): ol=STAGING, or=FLOW, bare o=OPERATION
     _cat_abbrev = {'THERMAL': 'TH', 'FLOW': 'FL', 'CONTAINMENT': 'CN',
                    'STAGING': 'ST', 'OPERATION': 'OP', 'TRANSITION': 'TR',
                    'MARKING': 'MK', 'MONITORING': 'MN'}
+    _O_DET = {'l': 'STAGING', 'r': 'FLOW', 'bare': 'OPERATION'}
+    _O_DOMAIN = {'l': 'STAGING', 'r': 'FLOW', 'bare': 'OPER'}
     cat_ind = ''
+    o_det = (t.middle_head == 'o' and t.middle_term in _O_DET)
     if t.operational_category:
         ca = _cat_abbrev.get(t.operational_category, '??')
-        if t.hazard_category == 'HIGH':
+        if o_det:
+            pass  # deterministic category folded into frame domain (C1556)
+        elif t.hazard_category == 'HIGH':
             cat_ind = f' [{ca}!]'   # hazard-associated
         elif t.hazard_category == 'LOW':
             cat_ind = f' [{ca}.]'   # low-hazard
         else:
             cat_ind = f' [{ca}]'
 
-    # Frame annotation (C1448)
+    # Frame annotation with HEAD domain (C1448, C1475, C1556)
     frame_ind = ''
     if t.head_term_frame:
-        frame_ind = f' {{{t.head_term_frame}}}'
+        if o_det:
+            domain = _O_DOMAIN[t.middle_term]  # deterministic (C1556)
+        else:
+            domain = t.head_domain or t.pseudo_head_domain or 'HL'
+        frame_ind = f' {{{domain}:{t.head_term_frame}}}'
 
-    # Hazard refinement (C1448, C1446, C1457)
+    # Headless tag (C1488-C1489)
+    hl_ind = ''
+    if t.is_headless and t.pseudo_head_domain:
+        hl_ind = f' [HL:{t.pseudo_head_domain}]'
+    elif t.is_headless:
+        hl_ind = ' [HL]'
+
+    # Hazard refinement (C1546, C1448, C1457, C1482)
     haz_ind = ''
-    if t.frame_hazard == 'HIGH':
-        haz_ind = ' !!HAZ'
-    elif t.frame_hazard == 'IMMUNE':
-        haz_ind = ' ~IMMUNE'
+    if t.frame_hazard == 'HIGH' and not t.source_immune:
+        haz_ind = f' !!{t.hazard_class_type or "HAZ"}'
+    elif t.source_immune or t.frame_hazard == 'IMMUNE':
+        haz_ind = ' ~IMM'
     elif t.is_safe_pathway:
         haz_ind = ' ~SAFE'
 
@@ -534,9 +559,9 @@ def _ir_t3_gloss(t: IRToken) -> Optional[tuple]:
 
     if pfx:
         pfx_gloss = _PREFIX_GLOSS.get(pfx, pfx)
-        gloss = f"[{role_tag}] ({pfx_gloss}) {mid_exp}{sfx_exp}{cat_ind}{frame_ind}{haz_ind}{mod_ind}"
+        gloss = f"[{role_tag}] ({pfx_gloss}) {mid_exp}{sfx_exp}{hl_ind}{cat_ind}{frame_ind}{haz_ind}{mod_ind}"
     else:
-        gloss = f"[{role_tag}] {mid_exp}{sfx_exp}{cat_ind}{frame_ind}{haz_ind}{mod_ind}"
+        gloss = f"[{role_tag}] {mid_exp}{sfx_exp}{hl_ind}{cat_ind}{frame_ind}{haz_ind}{mod_ind}"
     return (t.word, gloss)
 
 
@@ -649,6 +674,13 @@ def compile_ir_block(la, d, middle_dict=None) -> IRBlock:
             has_quenching_mod=tok.has_quenching_mod,
             has_i_mod=tok.has_i_mod,
             i_count=tok.i_count,
+            source_immune=tok.source_immune,
+            hazard_class_type=tok.hazard_class_type,
+            head_domain=tok.head_domain,
+            is_headless=tok.is_headless,
+            pseudo_head_domain=tok.pseudo_head_domain,
+            pseudo_head_atom=tok.pseudo_head_atom,
+            terminal_tier=tok.terminal_tier,
         ))
 
     # Partition by zone (role-first for WORK: C574 lanes are EN-internal)
@@ -917,8 +949,10 @@ def display_ir(folio_id: str, line_num=None, para_num=None, use_color=True):
     print(f"cat: 8-category operational classification (C1250). Structural, not semantic translations.")
     print(f"  TH=thermal FL=flow CN=containment ST=staging OP=operation TR=transition MK=marking MN=monitoring")
     print(f"mode: A=specification (suffix-heavy) B=continuation (bare-heavy) per C1229-C1231.")
-    print(f"frame: HEAD->TERM positional decomposition (C1393). {{e->y}} = cool-to-end.")
-    print(f"fhaz: frame hazard (C1448). !!HAZ=high, ~IMMUNE=k-HEAD, ~SAFE=e->y pathway.")
+    print(f"frame: DOMAIN:HEAD->TERM decomposition (C1393, C1475). {{STAB:e->y}} = stability-to-end.")
+    print(f"  o-HEAD: terminal determines domain (C1556). {{STAGING:o->l}}, {{FLOW:o->r}}, {{OPER:o->bare}}.")
+    print(f"fhaz: source immunity (C1546). ~IMM=immune (headed/quenched). !!XX=exposed+class (C1547). ~SAFE=e->y or a+ii.")
+    print(f"[HL:DOMAIN]: headless token with pseudo-HEAD domain (C1488-C1489).")
     print(f"opacity: OPAQUE(m,n,y <5%) SEMI(l,r 17-20%) TRANSPARENT(h >98%) per C1440.")
     print(f"mods: [Q]=quenching(c,d,f,p,s), [i]=iteration, [ii]=bounded, [i+Q]=both (C1450-C1456).")
     print(f"{'=' * W}")
@@ -1068,8 +1102,8 @@ def display_flow(folio_id: str, line_num: int = None, para_num: int = None, use_
                 # Control-flow label (bright)
                 if fg['flow']:
                     s += f" {Style.BRIGHT}[{fg['flow']}]{reset}"
-                # Frame hazard markers (C1448, C1457)
-                if tok.frame_hazard == 'HIGH':
+                # Frame hazard markers (C1546, C1448, C1457)
+                if tok.frame_hazard == 'HIGH' and not tok.source_immune:
                     s += f" {Fore.RED}!!{reset}"
                 elif tok.is_safe_pathway:
                     s += f" {Fore.GREEN}~~{reset}"
@@ -1328,7 +1362,7 @@ def display_folio(folio_id: str,
                     meta_parts.append(f"bin:{tok.middle_affordance_bin}")
                 if tok.middle_affordance_family:
                     meta_parts.append(f"family:{tok.middle_affordance_family}")
-                if tok.prefix_zone:
+                if tok.prefix_zone and tok.prefix_zone != 'UNIFORM':
                     meta_parts.append(f"zone:{tok.prefix_zone}")
                 if tok.terminal_group:
                     meta_parts.append(f"tc:{tok.terminal_char}({tok.terminal_group})")
@@ -1350,14 +1384,29 @@ def display_folio(folio_id: str,
                     meta_parts.append(f"frame:{tok.head_term_frame}")
                 if tok.terminal_opacity:
                     meta_parts.append(f"opacity:{tok.terminal_opacity}")
+                if tok.terminal_tier:
+                    meta_parts.append(f"tier:{tok.terminal_tier}")
                 if tok.frame_hazard:
                     meta_parts.append(f"fhaz:{tok.frame_hazard}")
+                if tok.source_immune:
+                    meta_parts.append(f"src_immune:True")
+                if tok.hazard_class_type:
+                    meta_parts.append(f"haz_class:{tok.hazard_class_type}")
                 if tok.is_safe_pathway:
                     meta_parts.append(f"SAFE_PATH")
+                if tok.is_headless:
+                    dom = tok.pseudo_head_domain or tok.pseudo_head_atom or '?'
+                    meta_parts.append(f"headless:{dom}")
+                if tok.head_domain:
+                    meta_parts.append(f"head_dom:{tok.head_domain}")
                 if tok.has_i_mod:
                     meta_parts.append(f"i_mod:{tok.i_count}")
                 if tok.has_quenching_mod:
                     meta_parts.append(f"quench_mod:True")
+                # Cross-token routing hint (C1563)
+                _TERMINAL_ROUTES = {'r': 'a', 'y': 'k', 'h': 't', 'l': 'e', 'm': 'o'}
+                if tok.middle_term in _TERMINAL_ROUTES:
+                    meta_parts.append(f"route:->{_TERMINAL_ROUTES[tok.middle_term]}")
                 if meta_parts:
                     print(f"{'':>14}   {'  '.join(meta_parts)}")
 

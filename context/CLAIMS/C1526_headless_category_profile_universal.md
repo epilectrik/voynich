@@ -28,7 +28,7 @@ Headless compounds share a near-identical operational category profile across al
 ## Relationship to Prior Constraints
 
 - **Extends C1488**: Headless as coherent domain (V=0.511 in B). Now shown coherent ACROSS systems
-- **Extends C1489**: Pseudo-HEAD differentiation (d=OPERATION, i=TRANSITION, l=STAGING). Category signature is universal, pseudo-HEAD profiles differ by system (C1523)
+- **Extends C1489**: Pseudo-HEAD differentiation (d=CONTAINMENT 84%, i=STAGING 67%, p=MARKING 92%). Category signature is universal, pseudo-HEAD profiles differ by system (C1523)
 - **Connects C1505**: Dark pipeline MARKING-dominant (36.0%). Headless MARKING enrichment parallels dark pipeline's nominalization function — headless compounds are part of the identification/marking substrate
 - **Connects C1508**: Bridge category stability 100% intrinsic. Headless category stability is ALSO intrinsic — headless MIDDLEs produce the same category in every system
 - **Connects C1475**: k-HEAD=THERMAL, e-HEAD=balanced. Headless compounds' near-zero THERMAL is mechanistic: no k-HEAD means no THERMAL. Category is HEAD-determined (C1305)

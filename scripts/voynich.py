@@ -1475,8 +1475,23 @@ class BTokenAnalysis:
     # Frame hazard (C1448: HEAD x TERM hazard map)
     frame_hazard: Optional[str] = None             # HIGH, LOW, ZERO, IMMUNE
 
-    # Safe pathway (C1457-C1462: e->y stability anchor)
-    is_safe_pathway: bool = False                  # True for e->y frame
+    # Safe pathway (C1457-C1462: e->y stability anchor; C1482: a+ii)
+    is_safe_pathway: bool = False                  # True for e->y frame or a-HEAD+double-ii
+
+    # Source immunity (C1546: all headed tokens 0% source; C1450: quenching mods)
+    source_immune: bool = False                    # True if headed or quench-modified
+
+    # Hazard class type (C1528, C1547: terminal->failure class)
+    hazard_class_type: Optional[str] = None        # PO/CT/CJ/RM/EO (only on EXPOSED tokens)
+
+    # HEAD domain (C1475)
+    head_domain: Optional[str] = None              # THERMAL/FLOW/YIELD/STAB/ARRNG
+    is_headless: bool = False                      # True if no HEAD atom
+    pseudo_head_domain: Optional[str] = None       # Headless pseudo-HEAD domain (C1489)
+    pseudo_head_atom: Optional[str] = None          # Raw first atom of headless MIDDLE
+
+    # Terminal functional tier (C1487)
+    terminal_tier: Optional[str] = None            # LOCKED/CHAN/DIFF
 
     # Modifier hazard role (C1450, C1452-C1456)
     has_quenching_mod: bool = False                # True if mods contain {c,d,f,p,s}
@@ -3440,8 +3455,25 @@ class BFolioDecoder:
             analysis.middle_term = term
             analysis.head_term_frame = frame_str
 
+            # HEAD domain (C1475)
+            _HEAD_DOMAIN = {'k': 'THERMAL', 't': 'FLOW', 'a': 'YIELD',
+                            'e': 'STAB', 'o': 'ARRNG'}
+            _PSEUDO_HEAD_DOMAIN = {'d': 'CONTAIN', 'i': 'STAGE', 'p': 'MARK',
+                                   'f': 'MARK', 'r': 'FLOW', 'c': 'OPER'}
+            analysis.head_domain = _HEAD_DOMAIN.get(head)
+            analysis.is_headless = (head is None)
+            if analysis.is_headless and m.middle:
+                analysis.pseudo_head_atom = m.middle[0]
+                analysis.pseudo_head_domain = _PSEUDO_HEAD_DOMAIN.get(m.middle[0])
+
             # Terminal opacity (C1440)
             analysis.terminal_opacity = self.TERMINAL_OPACITY.get(term)
+
+            # Terminal functional tier (C1487)
+            _TERMINAL_TIER = {'r': 'LOCKED', 'm': 'LOCKED',
+                              'l': 'CHAN', 'y': 'CHAN', 'n': 'CHAN',
+                              'h': 'DIFF', 'bare': 'DIFF'}
+            analysis.terminal_tier = _TERMINAL_TIER.get(term)
 
             # Frame hazard (C1448): k-HEAD = IMMUNE, else map lookup, default LOW
             if head == 'k':
@@ -3462,6 +3494,23 @@ class BFolioDecoder:
                 if i_ct > 0:
                     analysis.has_i_mod = True
                     analysis.i_count = i_ct
+
+            # Double-ii safe pathway (C1482): a-HEAD + double-ii = 0% hazard
+            if head == 'a' and analysis.i_count >= 2:
+                analysis.is_safe_pathway = True
+
+            # Source immunity (C1546 + C1450)
+            if head is not None:                      # C1546: ALL headed = 0% source
+                analysis.source_immune = True
+            elif analysis.has_quenching_mod:           # C1450: {c,d,f,p,s} quench
+                analysis.source_immune = True
+
+            # Hazard class type (C1528, C1547) — only on EXPOSED tokens
+            if analysis.frame_hazard == 'HIGH' and not analysis.source_immune:
+                _TERMINAL_HAZARD_CLASS = {
+                    'y': 'PO', 'l': 'CT', 'r': 'CJ', 'bare': 'RM',
+                    'h': 'EO', 'm': 'PO', 'n': 'PO'}
+                analysis.hazard_class_type = _TERMINAL_HAZARD_CLASS.get(term)
 
         return analysis
 
