@@ -4,6 +4,39 @@
 
 ---
 
+## Version 5.35.171 (2026-03-06) - Phase 546: Hazard x PREFIX Integration
+
+### Summary
+
+Phase 546 joins the hazard-class atlas (C1528-C1533, Phase 543) with the PREFIX atom taxonomy (C1534-C1539, Phase 544) to determine whether PREFIX bases and modifiers actively route hazard exposure. 7 research questions across 11 analysis dimensions on 23,096 B tokens. STRONGEST FINDING: Universal HEAD atom hazard source immunity -- ALL 5 HEAD atoms {a,e,o,k,t} have exactly 0% source rate across 16,819 headed tokens (chi2=4411.9, V=0.219). EXTENDS C1446 from k-only to entire HEAD class. All 1,537 hazard source tokens are exclusively HEADLESS. TERMINAL atom determines hazard CLASS TYPE more strongly than HEAD (V=0.306 vs V=0.219): y->PHASE_ORDERING (100%), l->CONTAINMENT_TIMING (100%). PREFIX bases show significant hazard gradient (chi2=2038.0, V=0.133): e-base 3.37x enriched, k-base 0.30x depleted. q-modifier provides ~7x hazard protection on o-base (4.15% vs 27-52% for other modifiers) via k-HEAD routing (C1538). Sister pairs show 0.66-1.80x hazard asymmetry predictable from atom structure. COMPLETE hazard routing chain established: PREFIX base -> HEAD selection -> hazard immunity (binary) -> TERMINAL atom -> hazard class type (categorical).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1546: Universal HEAD atom hazard source immunity (all 5 HEADs at 0%, N=16,819, chi2=4411.9, V=0.219) |
+| **ADDED** | C1547: TERMINAL atom determines hazard class type (V=0.306, 1.40x stronger than HEAD; y->PHASE_ORDERING, l->CONTAINMENT_TIMING) |
+| **ADDED** | C1548: PREFIX base-level hazard differentiation (chi2=2038.0, V=0.133; e-base 3.37x, k-base 0.30x) |
+| **ADDED** | C1549: q-modifier hazard protection on o-base (qo 4.15% vs other o-modifiers 27-52%; ~7x protection via k-HEAD routing) |
+| **ADDED** | C1550: Sister pair hazard source asymmetry (ch/sh 1.80x, ok/ot 0.66x inverted, da/sa 1.54x) |
+| **ADDED** | C1551: PHASE_ORDERING exclusively headless y-terminal dy; CONTAINMENT_TIMING exclusively l-terminal |
+| **ADDED** | C1552: 5/9 hazard source MIDDLEs are phantom types absent from corpus (chey, shey, chedy, shedy, chol) |
+| **ADDED** | `phases/HAZARD_PREFIX_INTEGRATION/scripts/hazard_prefix_integration.py` |
+| **ADDED** | `phases/HAZARD_PREFIX_INTEGRATION/results/hazard_prefix_integration.json` |
+| **ADDED** | `phases/HAZARD_PREFIX_INTEGRATION/REPORT.md` |
+| **UPDATED** | INDEX.md -- +7 constraints (1396 total) |
+| **EXTENDED** | C1446 (k-HEAD complete hazard immunity): from k-only to ALL 5 HEAD atoms -- universal HEAD class property |
+| **EXTENDED** | C1476 (k-HEAD intrinsic immunity): intrinsic property applies to entire HEAD class, not k-specific |
+| **EXTENDED** | C1447 (terminal atom hazard partition): TERMINAL V=0.306 dominates HEAD V=0.219 in hazard class determination |
+| **EXTENDED** | C1449 (PREFIX channel hazard with sister parity): decomposed to atom-level asymmetry (modifier-driven vs base-driven) |
+| **EXTENDED** | C1529 (PHASE_ORDERING = headless y-terminal): confirmed at PREFIX-integrated resolution with 675 tokens across 10+ PREFIXes |
+| **EXTENDED** | C1530 (CONTAINMENT_TIMING = l/r SEMI_TRANSPARENT): confirmed exclusively l-terminal across 12+ PREFIXes |
+| **EXTENDED** | C1531 (phantom forbidden MIDDLEs): connected to C1178 dead naming pattern and C1546 HEAD immunity |
+| **EXTENDED** | C1538 (q-modifier THERMAL activation): hazard protection mechanism identified -- q routes to k-HEAD which is immune |
+| **CONNECTED** | C1475 (HEAD domain differentiation) + C1536 (base-to-HEAD selection) + C1528 (hazard atom territories): complete chain from PREFIX input to hazard output |
+
+---
+
 ## Version 5.34.170 (2026-03-06) - Phase 545: Executive Atom Instability
 
 ### Summary

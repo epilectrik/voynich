@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1389 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1396 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1539.
+the highest ID present is C1552.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1389 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1396 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1389 validated constraints are present as canonical one-line claims with tier
+1396 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-06 17:29
-**Version:** FROZEN STATE (1389 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-06 18:02
+**Version:** FROZEN STATE (1396 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1812,6 +1812,19 @@ C1536	Base-to-HEAD selection V=0.478 — each base selects a distinct operationa
 C1537	a-base is the universal headless gateway (94-96% headless regardless of modifier)	2	GLOBAL, PREFIX, atom, base, a-base, headless, gateway, modifier-independent, C1488, C1491, C1524, C1536
 C1538	q-modifier uniquely activates THERMAL channel on o-base (64% k-HEAD vs 5-19% other modifiers)	2	B, PREFIX, atom, modifier, q, o-base, THERMAL, k-HEAD, compositional, qo, C1300, C1313, C1536, C1537
 C1539	Sister pairs decompose into SAME_BASE (ch/sh, da/sa) and SAME_MOD (ok/ot) structural types	2	GLOBAL, PREFIX, atom, sister-pair, ch, sh, ok, ot, da, sa, SAME_BASE, SAME_MOD, C408, C1478, C1534, C1536
+C1540	p/f/c behavioral non-divergence vs stable MODs	2	GLOBAL, atom, cross-system, instability, JSD, behavioral, C1509, C1499
+C1541	Suffix exclusion defines instruction-only atom tier	2	GLOBAL, atom, suffix, exclusion, instruction, tier, C1509, C1511, C1540
+C1542	c-atom slot-switching between PREFIX and MIDDLE	2	B, MIDDLE, PREFIX, atom, c, slot-switching, HEAD, headless, e-HEAD, C1389, C1496, C1542
+C1543	p/f are o-HEAD arrangement-affiliated atoms	2	B, MIDDLE, atom, p, f, o-HEAD, arrangement, headless, C1388, C1502, C1543
+C1544	Unstable atoms increase Mode A suffix rate A->B	2	B, MIDDLE, atom, suffix, mode, UNSTABLE, Mode A, THERMAL, specification, C1509, C1515, C1229
+C1545	f-atom anomalous B-exclusive vocabulary affinity	2	B, MIDDLE, atom, f, bridge, dark-pipeline, B-exclusive, vocabulary, rarity, C1139, C1499
+C1546	Universal HEAD atom hazard source immunity	2	B, MIDDLE, atom, HEAD, hazard, immunity, universal, source, C1446, C1475, C1476, C1528
+C1547	TERMINAL atom determines hazard class type (stronger than HEAD)	2	B, MIDDLE, atom, terminal, hazard, class, PHASE_ORDERING, CONTAINMENT_TIMING, y, l, C1447, C1483, C1487, C1528
+C1548	PREFIX base-level hazard differentiation	2	B, PREFIX, base, hazard, source, enrichment, C1536, C1475, C1546
+C1549	q-modifier hazard protection on o-base (~7x vs other modifiers)	2	B, PREFIX, modifier, q, o-base, hazard, protection, qo, C1538, C1546, C1548, C1452
+C1550	Sister pair hazard source asymmetry	2	B, PREFIX, sister pair, hazard, asymmetry, ch, sh, ok, ot, da, sa, C1449, C1539, C1187
+C1551	PHASE_ORDERING exclusively headless y-terminal dy; CONTAINMENT_TIMING exclusively l-terminal	2	B, MIDDLE, hazard, PHASE_ORDERING, CONTAINMENT_TIMING, headless, y-terminal, l-terminal, dy, l, C1529, C1530, C1547
+C1552	5/9 hazard source MIDDLEs are phantom types absent from corpus	2	B, MIDDLE, hazard, phantom, forbidden, corpus, chey, shey, chedy, shedy, chol, C1531, C1178
 
 ---
 

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1389 validated constraints | **Version:** 5.34 | **Date:** 2026-03-06
+**Total:** 1396 validated constraints | **Version:** 5.35 | **Date:** 2026-03-06
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5376,6 +5376,30 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - Mode A enrichment gradient: All three unstable atoms shift TOWARD Mode A (specification/THERMAL) when moving from A to B. c: +25.3pp, f: +22.3pp, p: +15.5pp. Stable MODs show near-zero shift. B's execution grammar makes unstable atoms MORE specification-oriented.
 - f vocabulary anomaly: f has the lowest bridge rate of any MOD atom (49.3% shared, 50.7% B-exclusive). Also the rarest (215 tokens). f disproportionately participates in B's autonomous identification vocabulary (dark pipeline).
 - Expert predictions: c parameterization CONFIRMED (slot-switching, arrangement role). p/f register-sensitivity PARTIALLY CONFIRMED (Mode A shift, o-HEAD affiliation). Behavioral divergence prediction INVERTED (less divergent, not more).
+
+---
+
+### Phase 546: Hazard x PREFIX Integration (HAZARD_PREFIX_INTEGRATION)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1546 | Universal HEAD atom hazard source immunity | 2 | B, MIDDLE, atom, HEAD, hazard, immunity, universal, source, C1446, C1475, C1476, C1528 | ALL 5 HEADs at 0% source rate: e=0/7002, o=0/2717, a=0/3079, k=0/3100, t=0/921. Total headed: 0/16819. chi2=4411.9, V=0.219. HEADLESS: 1537/6277=24.49%. |
+| 1547 | TERMINAL atom determines hazard class type (stronger than HEAD) | 2 | B, MIDDLE, atom, terminal, hazard, class, PHASE_ORDERING, CONTAINMENT_TIMING, y, l, C1447, C1483, C1487, C1528 | chi2=8622.5, V=0.306 (vs HEAD V=0.219, 1.40x). y->PHASE_ORDERING 675/675, l->CONTAINMENT_TIMING 855/855, bare->RATE_MISMATCH 5/5, h->ENERGY_OVERSHOOT 2/2. |
+| 1548 | PREFIX base-level hazard differentiation | 2 | B, PREFIX, base, hazard, source, enrichment, C1536, C1475, C1546 | chi2=2038.0, V=0.133. e-base 3.37x (22.4%), a-base 2.00x (13.3%), o-base 1.20x (8.0%), h-base 0.71x (4.7%), k-base 0.30x (2.0%). |
+| 1549 | q-modifier hazard protection on o-base (~7x vs other modifiers) | 2 | B, PREFIX, modifier, q, o-base, hazard, protection, qo, C1538, C1546, C1548, C1452 | qo 4.15% (0.52x base) vs do 51.6%, so 28.0%, to 30.4%, po 27.2%, ko 31.3%. Protection via 64% k-HEAD routing (C1538). |
+| 1550 | Sister pair hazard source asymmetry | 2 | B, PREFIX, sister pair, hazard, asymmetry, ch, sh, ok, ot, da, sa, C1449, C1539, C1187 | ch/sh 1.804x (ch 4.73% vs sh 2.76%). ok/ot 0.664x INVERTED (ok 6.09% vs ot 9.17%). da/sa 1.537x. da/ta 1.354x. da/ka 1.529x. |
+| 1551 | PHASE_ORDERING exclusively headless y-terminal dy; CONTAINMENT_TIMING exclusively l-terminal | 2 | B, MIDDLE, hazard, PHASE_ORDERING, CONTAINMENT_TIMING, headless, y-terminal, l-terminal, dy, l, C1529, C1530, C1547 | dy=675 tokens across 10+ PREFIXes (100% PHASE_ORDERING). l=855 tokens across 12+ PREFIXes (100% CONTAINMENT_TIMING). Both MIDDLE-intrinsic not PREFIX-induced. |
+| 1552 | 5/9 hazard source MIDDLEs are phantom types absent from corpus | 2 | B, MIDDLE, hazard, phantom, forbidden, corpus, chey, shey, chedy, shedy, chol, C1531, C1178 | chey=0, shey=0, chedy=0, shedy=0, chol=0. All ch/sh-initial dead naming pattern. 4 corpus-present sources (dy,l,c,he) carry 100% of actual hazard. |
+
+**Phase 546 findings (Hazard x PREFIX Integration, 7 research questions, 11 analysis dimensions):**
+- STRONGEST FINDING: Universal HEAD atom hazard source immunity (C1546). ALL 5 HEAD atoms {a,e,o,k,t} have exactly 0% source rate across 16,819 headed tokens. EXTENDS C1446 from k-only to entire HEAD class. HEAD presence vs absence is the PRIMARY binary safety gate. Three-way base x HEAD x hazard decomposition confirms immunity is HEAD-INTRINSIC, not base-mediated.
+- TERMINAL > HEAD for hazard class selection: TERMINAL atom V=0.306 vs HEAD V=0.219 (1.40x). HEAD gates WHETHER hazard occurs (binary), TERMINAL selects WHAT TYPE (categorical). y->PHASE_ORDERING, l->CONTAINMENT_TIMING, bare->RATE_MISMATCH, h->ENERGY_OVERSHOOT. Two complementary information channels.
+- PREFIX base hazard gradient: e-base most enriched (3.37x, 22.4%), k-base most depleted (0.30x, 2.02%). Partly HEAD-mediated (bases with more headed tokens = lower aggregate hazard) and partly independent (headless hazard rates differ across bases from 2% to 22%).
+- q-modifier STRONGEST single-PREFIX protection: qo 4.15% vs other o-modifiers 27-52% (~7x safer). Mechanism: q activates k-HEAD at 64% on o-base (C1538); k-HEAD is categorically immune (C1546). Contrast: kch on h-base has 21.65% hazard — k as MODIFIER does not provide HEAD immunity. Slot position determines function.
+- Sister pair asymmetry predictable from atom structure: Same-base pairs (ch/sh, da/sa) diverge by modifier effect. Same-modifier pairs (ok/ot) diverge by base effect. ok/ot INVERTS ch/sh direction because the base difference (k vs t) dominates.
+- PHASE_ORDERING = exclusively headless y-terminal 'dy'; CONTAINMENT_TIMING = exclusively l-terminal 'l'. Both spread across 10-12+ PREFIXes. Hazard is MIDDLE-intrinsic, not PREFIX-induced. PREFIX modulates RATE, not EXISTENCE.
+- Conservative forbidden topology: 5/9 source MIDDLEs are phantom (0 corpus tokens). Grammar defines safety net broader than vocabulary requires. Defense-in-depth architecture.
+- COMPLETE hazard routing chain now established: PREFIX base -> HEAD selection -> hazard immunity (binary) -> TERMINAL atom -> hazard class type (categorical).
 
 ---
 
