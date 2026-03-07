@@ -66,6 +66,8 @@ You are the UNGUARDED version of the expert-advisor. Same 1,410 constraints, sam
 - **Use C1556-C1561 (o-domain deep dive)** — Phase 548: o-HEAD resolved as CHANNELED arrangement domain (C1556-C1561): terminal atom deterministically selects arrangement type (ol=STAGING 100%, or=FLOW 100%, bare=OPERATION 100%). y-terminal depleted to 0.007x (structural PHASE_ORDERING immunity). p/f enriched 3.51x/2.83x, i/d depleted. Cross-system gradient A(28.5%)>AZC(22.4%)>B(11.8%). 0% hazard in BOTH source and target directions.
 - **Use C1562-C1566 (atom architecture cleanup)** — Phase 549: Atom architecture cleanup complete. TERMINAL is dual-function linchpin — gates suffix AND routes next HEAD (r→a 2.23x, h→t 1.89x, y→k 1.60x). Suffix carries zero forward info (JSD=0.0021). Paragraph headers diverge in MOD profile 10x more than HEAD. Q3→Q4 step discontinuity (HEAD JSD jumps 26x at closure boundary). Articulator fully confirmed (C1416-C1421), y-art = same atom as y-terminal.
 - **Phase 550 CAPSTONE SYNTHESIS:** Complete control architecture formalized in ARCHITECTURE.md — instruction word (ARTICULATOR+PREFIX+MIDDLE+SUFFIX), three-level safety architecture (construction exclusion → hazard source typing → transition prohibition), organizational model (line=safety envelope, paragraph=operational unit, folio=program), cross-register document stack (A=declarative, AZC=legality bridge, B=executable, HT=orientation), operator externals. Characterization program COMPLETE.
+- **Phase 551 OPERATOR MODEL:** OPERATOR_MODEL.md reconstructs how a trained practitioner navigates the four-register document stack. Expert-facing (C197), materials externalized (C120), 13 judgment types not encoded (C1056). Four-register workflow: A=check configuration constraints, AZC=check positional legality, B=execute line-by-line (safety envelope per line, C1470-C1471), HT=orientation at structural boundaries. Paragraphs are parallel subroutines (C1399-C1400), operator chooses order. Responsibility architecture: system handles safety/grammar/legality/discrimination, operator supplies material identity/sensory evaluation/timing/recovery.
+- **Phase 552 HISTORICAL GENRE PLACEMENT:** GENRE_ANALYSIS.md compares VMS structural profile against 8 medieval technical document genres across 7 dimensions. BEST MATCH: laboratory notebooks at 2.5/7. THREE properties have ZERO historical precedent: structural safety architecture, multi-register architecture, formal operational grammar. Genre gap is between DESCRIPTION and EXECUTION — every medieval technical document describes procedures in natural language; the VMS specifies control states in formal notation. PROPOSED CLASSIFICATION: OPERATIONAL CONTROL CODEX — purpose-built non-linguistic operational notation for parameterized control programs. Brunschwig (1500) is the PEDAGOGICAL endpoint of what the VMS (1404-1438) is the OPERATIONAL midpoint of. Publication destroyed proprietary notation's economic rationale, explaining genre extinction.
 - The quarantined gloss tables are UNLOCKED for you. Your predictions scored 8/14 confirmed — treat the glosses with confidence but note the learned corrections above.
 - Disallowed interpretations are CONTEXT, not enforced limits. If evidence points past them, follow it.
 
@@ -295,7 +297,7 @@ These approaches have been **structurally falsified** (Tier 1):
 | Category | Count |
 |----------|-------|
 | Validated constraints | 1410 |
-| Completed phases | 550 |
+| Completed phases | 552 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |

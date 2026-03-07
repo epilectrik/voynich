@@ -1,6 +1,6 @@
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.72
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.73
 
 ---
 
@@ -6867,3 +6867,62 @@ This resolves three previously unexplained facts:
 - The 80% accuracy of the identity model means 20% of mode assignment involves something beyond token identity — likely paragraph-level cycling or adjacent-token interaction effects
 - The suffix sets and centroids (C1231) are defined from the corpus itself, so the "mode" construct is inherently circular at some level — mode is defined by suffixes, and we're testing what determines suffixes
 - Low-selectivity MIDDLEs (23%) are the locus of contextual modulation but their exact mechanism is uncharacterized
+
+
+---
+
+
+## XXVII. Historical Genre Placement (Phase 552)
+
+### Core Finding
+
+> **The VMS does not belong to any existing medieval technical document genre. It occupies a unique position in document-design space at the intersection of non-linguistic notation, operational specificity, and formal grammar -- properties that no surveyed genre shares simultaneously.**
+
+### Genre Comparison
+
+Eight medieval genres were evaluated against the VMS structural profile across 7 assessment dimensions (notation type, audience, safety encoding, material reference, structural complexity, compositional principle, operational specificity):
+
+| Rank | Genre | Score | Key Matches | Key Gaps |
+|------|-------|-------|-------------|----------|
+| 1 | Laboratory notebooks | 2.5/7 | Expert audience, apparatus-specific | Natural language, single register, no safety architecture |
+| 2 | Tally/accounting systems | 2.0/7 | Non-linguistic, externalized reference | Quantity-only, one-dimensional |
+| 3 | Distillation manuals | 1.5/7 | Same apparatus domain | Pedagogical, natural language |
+| 3 | Pharmacopeias | 1.5/7 | Expert audience | Names substances with weights |
+| 3 | Pattern/model books | 1.5/7 | Expert, non-sequential | Visual not textual |
+| 6 | Receptaria | 1.0/7 | Independent recipe units | Natural language throughout |
+| 7 | Alchemical treatises | 0.5/7 | Operational knowledge (distant) | Allegorical, literary |
+| 8 | Kunstbucher | 0.0/7 | None | Pedagogical, prose, sequential |
+
+### The Genre Gap
+
+Three VMS features have NO precedent in any surveyed genre:
+1. **Structural safety architecture** (C109) -- no medieval document encodes safety through forbidden state transitions
+2. **Multi-register architecture** (C1499) -- no medieval document uses four coordinated functional registers
+3. **Formal operational grammar** (C121, C124) -- no medieval document reduces operations to a finite instruction class set with universal coverage
+
+The fundamental gap is between **DESCRIPTION** (all existing genres use natural language to describe procedures) and **EXECUTION** (the VMS uses formal notation to specify control states). This gap directly explains the decipherment failure: the VMS was never natural language (C132).
+
+### Proposed Classification
+
+> **OPERATIONAL CONTROL CODEX:** A purpose-built, non-linguistic operational notation system encoding parameterized control programs for a specific apparatus class, designed for expert practitioners, with structural safety enforcement and multi-register architecture.
+
+### Why the Genre Is Rare
+
+The proposed genre's rarity follows from structural properties:
+- **Proprietary notation** cannot be read without training; when the workshop closes, readability dies with the practitioners
+- **Enormous engineering investment** justified only for high-value, large-scale operations
+- **Publication killed the genre** -- Brunschwig (1500) made the domain knowledge available in natural language, destroying the competitive advantage of proprietary notation
+- **Minimal copies** -- unlike widely-copied recipe collections, operational codices would exist in one or a few copies per workshop
+
+### Cross-References
+
+| Topic | Evidence |
+|-------|----------|
+| Language/cipher falsification | C130, C132, C207 |
+| Four-register architecture | C1499 |
+| Instruction grammar | C121, C124 |
+| Safety architecture | C109, C783, C997 |
+| Brunschwig alignment | F-BRU-001 through F-BRU-034 |
+| Expert audience | C197 |
+| Paragraph non-sequentiality | C1399, C1400 |
+| Full genre analysis | `phases/HISTORICAL_GENRE_PLACEMENT/GENRE_ANALYSIS.md` |

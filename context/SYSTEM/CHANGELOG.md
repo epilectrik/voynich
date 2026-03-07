@@ -4,6 +4,34 @@
 
 ---
 
+## Version 5.41 (2026-03-06) - Phase 552: Historical Genre Placement (SYNTHESIS)
+
+### Summary
+
+Phase 552 is a Tier 3 interpretive synthesis placing the Voynich Manuscript within the landscape of medieval technical document genres. No new empirical analysis was performed and no new constraints were added. The output is `phases/HISTORICAL_GENRE_PLACEMENT/GENRE_ANALYSIS.md`, a genre comparison document (~5,000 words) that evaluates 8 medieval document genres against the VMS structural profile across 7 assessment dimensions, identifies the genre gap, and proposes a new genre classification.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/HISTORICAL_GENRE_PLACEMENT/GENRE_ANALYSIS.md` -- Genre comparison (6 sections: Methodology, Genre Comparison Matrix, Closest Matches, Genre Gap, Proposed Genre Classification, Implications) |
+| **UPDATED** | INDEX.md -- +0 constraints (1410 total), Phase 552 synthesis section added |
+
+### Key Integrative Findings (narrative connections, not new claims)
+
+- No existing medieval genre scores above 2.5/7 compatibility with the VMS structural profile; laboratory notebooks are closest (2.5/7), tally systems second (2.0/7)
+- Three VMS features have NO historical precedent in any surveyed genre: structural safety architecture (C109), multi-register architecture (C1499), formal operational grammar (C121/C124)
+- The fundamental genre gap is between DESCRIPTION and EXECUTION: all surveyed genres describe procedures in natural language; the VMS encodes operational states in formal notation
+- Proposed genre classification: OPERATIONAL CONTROL CODEX -- a purpose-built non-linguistic operational notation encoding parameterized control programs with structural safety enforcement and multi-register architecture
+- The genre gap directly explains the decipherment failure: the VMS was never natural language (C132), so all cipher/language approaches are structurally misdirected
+- The VMS and Brunschwig serve opposite purposes within the same domain: proprietary execution (pre-1500) vs pedagogical publication (1500)
+
+### Status
+
+Historical genre placement COMPLETE. 1,410 validated constraints across 552 phases.
+
+---
+
 ## Version 5.40 (2026-03-06) - Phase 551: Operator/Document-Usage Model (SYNTHESIS)
 
 ### Summary

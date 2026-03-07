@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1410 validated constraints | **Version:** 5.38 | **Date:** 2026-03-06
+**Total:** 1410 validated constraints | **Version:** 5.39 | **Date:** 2026-03-06
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5503,6 +5503,37 @@ Tier 3 interpretive synthesis describing how a trained medieval practitioner wou
 - Parallel execution model: multiple operators can work from same folio simultaneously (C845, C1399-C1400, C1288)
 
 **Verdict:** Operator usage model COMPLETE. Complements Phase 550 (technical specification) with a practitioner-facing view of the same architecture.
+
+---
+
+### Phase 552: Historical Genre Placement (SYNTHESIS)
+
+**Date:** 2026-03-06 | **Type:** SYNTHESIS (no new data analysis) | **Constraints added:** 0
+
+Tier 3 interpretive synthesis placing the VMS within the landscape of medieval technical document genres based on 1,410 validated structural constraints. Output is `phases/HISTORICAL_GENRE_PLACEMENT/GENRE_ANALYSIS.md`, a genre comparison document (~5,000 words) evaluating 8 medieval document genres against the VMS structural profile across 7 assessment dimensions.
+
+**Eight genres compared:**
+1. Receptaria (recipe collections) -- e.g., *Mappae Clavicula*, *Compositiones variae*: 1/7 match
+2. Kunstbucher (craft manuals) -- e.g., Theophilus, Cennini: 0/7 match
+3. Distillation manuals -- e.g., Brunschwig: 1.5/7 match
+4. Pharmacopeias -- e.g., *Antidotarium Nicolai*: 1.5/7 match
+5. Alchemical treatises -- e.g., Pseudo-Geber, Ripley: 0.5/7 match
+6. Pattern/model books -- e.g., Villard de Honnecourt: 1.5/7 match
+7. Tally/accounting systems -- e.g., Exchequer tally sticks: 2/7 match
+8. Laboratory notebooks -- guild workshop records: 2.5/7 match (best match)
+
+**Seven assessment dimensions:** notation type, audience, safety encoding, material reference, structural complexity, compositional principle, operational specificity.
+
+**Key findings (not new constraints):**
+- No existing medieval genre scores above 2.5/7 compatibility with the VMS structural profile
+- Three VMS features have NO historical precedent: structural safety architecture (C109), multi-register architecture (C1499), formal operational grammar (C121/C124)
+- The fundamental genre gap is between DESCRIPTION (all existing genres) and EXECUTION (VMS): all medieval technical documents describe procedures in natural language; the VMS encodes operational states in a formal notation system
+- Proposed genre classification: OPERATIONAL CONTROL CODEX -- purpose-built non-linguistic operational notation encoding parameterized control programs with structural safety enforcement and multi-register architecture
+- The genre gap explains the decipherment failure: the VMS was never natural language (C132), so all cipher/language approaches are structurally misdirected
+- The VMS and Brunschwig serve opposite purposes: one executes (proprietary notation, pre-1500), the other explains (pedagogical publication, 1500)
+- The proposed genre's predicted rarity is structurally motivated: proprietary notation, enormous investment, publication obsolescence, minimal copies
+
+**Verdict:** Historical genre placement COMPLETE. VMS occupies a unique position in medieval document-design space: the intersection of non-linguistic notation, operational specificity, and formal grammar that no surveyed genre shares.
 
 ---
 

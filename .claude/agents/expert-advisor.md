@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-06 22:53
+**Generated:** 2026-03-06 23:31
 **Version:** FROZEN STATE (1410 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -1933,7 +1933,7 @@ F-RUP-001	Galenic Framework Directional Enhancement	F4	B	DIRECTIONAL_COHERENCE	C
 
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.72
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.73
 
 ---
 
@@ -4643,6 +4643,36 @@ Only Tier 0-2 structural findings are binding.
 - **C1267**: Mode distinction doesn't organize A records — because mode is a B-execution phenomenon that emerges from how B tokens are suffixed, not from which MIDDLEs are selected
 
 - The suffix sets and centroids (C1231) are defined from the corpus itself, so the "mode" construct is inherently circular at some level — mode is defined by suffixes, and we're testing what determines suffixes
+
+---
+
+
+## XXVII. Historical Genre Placement (Phase 552)
+### Core Finding
+
+> **The VMS does not belong to any existing medieval technical document genre. It occupies a unique position in document-design space at the intersection of non-linguistic notation, operational specificity, and formal grammar -- properties that no surveyed genre shares simultaneously.**
+
+
+| Rank | Genre | Score | Key Matches | Key Gaps |
+|------|-------|-------|-------------|----------|
+| 1 | Laboratory notebooks | 2.5/7 | Expert audience, apparatus-specific | Natural language, single register, no safety architecture |
+| 2 | Tally/accounting systems | 2.0/7 | Non-linguistic, externalized reference | Quantity-only, one-dimensional |
+
+
+> **OPERATIONAL CONTROL CODEX:** A purpose-built, non-linguistic operational notation system encoding parameterized control programs for a specific apparatus class, designed for expert practitioners, with structural safety enforcement and multi-register architecture.
+
+### Cross-References
+
+| Topic | Evidence |
+|-------|----------|
+| Language/cipher falsification | C130, C132, C207 |
+| Four-register architecture | C1499 |
+| Instruction grammar | C121, C124 |
+| Safety architecture | C109, C783, C997 |
+| Brunschwig alignment | F-BRU-001 through F-BRU-034 |
+| Expert audience | C197 |
+| Paragraph non-sequentiality | C1399, C1400 |
+| Full genre analysis | `phases/HISTORICAL_GENRE_PLACEMENT/GENRE_ANALYSIS.md` |
 
 
 ---
