@@ -4,6 +4,43 @@
 
 ---
 
+## Version 5.38.174 (2026-03-06) - Phase 549: Atom Architecture Cleanup
+
+### Summary
+
+Phase 549 closes remaining empirical gaps in atom-level characterization through four sub-analyses: articulator behavior across systems, sequential atom couplings, paragraph atom signatures, and line-position atom gradients. 4 research questions, 17 sub-analyses. Q1 (articulators) CONFIRMS all 6 existing constraints (C1416-C1421) at higher resolution with no new findings. Q2 (sequential couplings) produces THREE new constraints: HEAD self-transition rate hierarchy (C1562) revealing three-tier persistence where stability/identification domains sustain runs (e/headless ~28.5%) while thermal/arrangement domains switch quickly (k 16.7%, o 13.6%); terminal-to-next-HEAD routing grammar (C1563) completing the cross-token instruction chain -- TERM is a dual-function atom that simultaneously gates suffix attachment and routes the next token's HEAD domain (r->a 2.231x, y->k 1.597x, h->t 1.892x, l->e 1.246x, m->o 1.554x); and suffix zero forward HEAD information (C1564, JSD=0.0021), extending C1003 (pairwise compositionality) to the cross-token boundary. Q3 (paragraph signatures) produces ONE new constraint: header modifier divergence exceeds HEAD divergence 10x (C1565) -- paragraph specification operates through modifier selection (p 3.66x, f 3.90x enriched) not HEAD domain (JSD=0.008), resolving C1287's MARKING-enriched header mechanism. Q4 (line-position gradient) produces ONE new constraint: Q3->Q4 step discontinuity (C1566) -- HEAD JSD jumps 26x at closure boundary while Q1-Q3 interior remains homogeneous (JSD<0.003), refining C1425-C1430's three-zone model to a TWO-STEP architecture with uniform work zone.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1562: HEAD self-transition rate hierarchy (e/headless 28.5% >> k 16.7% >> o 13.6% >> t 9.1%; three-tier persistence) |
+| **ADDED** | C1563: Terminal-to-next-HEAD cross-token routing grammar (r->a 2.231x, y->k 1.597x, h->t 1.892x, l->e 1.246x, m->o 1.554x) |
+| **ADDED** | C1564: Suffix zero forward HEAD information (JSD=0.0021; suffix scope terminates at token edge) |
+| **ADDED** | C1565: Paragraph header modifier divergence 10x HEAD divergence (MOD JSD=0.085 vs HEAD JSD=0.008; p 3.66x, f 3.90x in headers) |
+| **ADDED** | C1566: Line position Q3-Q4 step discontinuity (HEAD JSD 26x jump, TERM JSD 20x jump; two-step line architecture) |
+| **ADDED** | `phases/ATOM_ARCHITECTURE_CLEANUP/scripts/atom_cleanup.py` |
+| **ADDED** | `phases/ATOM_ARCHITECTURE_CLEANUP/results/atom_cleanup.json` |
+| **ADDED** | `phases/ATOM_ARCHITECTURE_CLEANUP/REPORT.md` |
+| **UPDATED** | INDEX.md -- +5 constraints (1410 total) |
+| **EXTENDED** | C1212 (TERMINAL->INITIAL cross-token chaining): extended to HEAD-domain resolution via C1562/C1563 |
+| **EXTENDED** | C1003 (pairwise compositionality): extended to cross-token boundary via C1564 (suffix zero forward info) |
+| **EXTENDED** | C1402 (no sequential convergence at any scale): extended to paragraph atom composition (late body MORE divergent, ratio 1.393) |
+| **CONFIRMED** | C1416: Articulator rate 4.41% in B (exact match) |
+| **CONFIRMED** | C1417: Articulator line-initial concentration (4.518x enrichment) |
+| **CONFIRMED** | C1418: Articulator PREFIX-locked with BARE/qo exclusion (qo 0.016x, BARE 0.0x) |
+| **CONFIRMED** | C1419: Articulator e-HEAD selectivity / k-HEAD exclusion (e 1.807x, k 0.098x) |
+| **CONFIRMED** | C1420: Articulator suffix suppression (0.548x ratio) |
+| **CONFIRMED** | C1421: Articulator category full MIDDLE mediation (category JSD=0.030) |
+| **CONFIRMED** | C1428: THERMAL peak-then-decline positional gradient (Q1 peak at category level) |
+| **CONFIRMED** | C1434: m-terminal 196x line-final enrichment (37x at quintile resolution) |
+| **CONFIRMED** | C1464: k-IMMUNE thermal work onset at Q1 (k-HEAD peaks Q1 at 17.2%) |
+| **CONNECTED** | C1563 -> C1440 (terminal opacity): TERM atom now dual-function (suffix gating + HEAD routing) |
+| **CONNECTED** | C1565 -> C1287 (paragraph header MARKING-enriched): mechanism resolved -- modifier selection not HEAD domain |
+| **CONNECTED** | C1566 -> C1434 (m-terminal closure valve): m-terminal step at Q4 drives the sharp closure discontinuity |
+
+---
+
 ## Version 5.37.173 (2026-03-06) - Phase 548: o-Domain Deep Dive
 
 ### Summary

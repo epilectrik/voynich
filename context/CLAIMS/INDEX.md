@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1405 validated constraints | **Version:** 5.37 | **Date:** 2026-03-06
+**Total:** 1410 validated constraints | **Version:** 5.38 | **Date:** 2026-03-06
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5432,6 +5432,24 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - Inner atom composition: y at 0.023x is the most extreme single-atom divergence in the entire atom system (C1560). o-HEAD compounds built from CHANNELED terminal vocabulary (l, r, h) while excluding y and n.
 - Empirical hazard immunity: 0% source AND 0% target across 2,717 tokens (C1561). Three theoretical forbidden pairs involving o-HEAD MIDDLEs never fire in practice.
 - Additional (not constraint-worthy): o-HEAD is positionally flat in B lines (mean=0.497), contrasting with AZC boundary concentration. Self-transition rate 0.136 (1.14x, moderate). Suffix rate 0.480 (near baseline). Mode A rate 0.253 (below baseline). Compounds overwhelmingly 2-atom (59.9%). Category JSD vs e-HEAD = 0.365 (LARGE) -- maximally different operational domains.
+
+---
+
+### Phase 549: Atom Architecture Cleanup (ATOM_ARCHITECTURE_CLEANUP)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1562 | HEAD self-transition rate hierarchy | 2 | B, MIDDLE, atom, HEAD, self-transition, sequential, hierarchy, persistence, switching, C1212, C1384, C1475, C1478, C1521 | Three-tier: PERSISTENT (e 28.5%, headless 28.4%, a 25.2%), SWITCHING (k 16.7%, o 13.6%), RARE (t 9.1%). e->k 1.493x, a->k 0.528x. |
+| 1563 | Terminal-to-next-HEAD cross-token routing grammar | 2 | B, MIDDLE, atom, terminal, HEAD, routing, cross-token, sequential, instruction-phrases, C1212, C1440, C1475, C1483, C1484, C1487 | r->a 2.231x, y->k 1.597x, h->t 1.892x, l->e 1.246x, m->o 1.554x, bare neutral. TERM is dual-function: suffix-gating + HEAD routing. |
+| 1564 | Suffix carries zero forward information to next HEAD | 2 | B, suffix, HEAD, cross-token, information, null, compositionality, C1003, C1510, C1412, C1422 | JSD=0.0021 (smallest in phase). Suffix scope terminates at token edge. Extends C1003 to cross-token boundary. |
+| 1565 | Paragraph header modifier divergence exceeds HEAD divergence 10x | 2 | B, paragraph, header, atom, modifier, HEAD, divergence, specification, executive, C1287, C1396, C1468, C1479, C1543 | MOD JSD=0.085 vs HEAD JSD=0.008 (10.6x ratio). p 3.66x, f 3.90x enriched in headers; i 0.51x depleted. h-terminal 2.35x enriched. |
+| 1566 | Line position Q3-Q4 step discontinuity | 2 | B, line, position, gradient, quintile, closure, step, discontinuity, specification, work-zone, C1425, C1426, C1427, C1428, C1429, C1430, C1434, C1463 | Q3->Q4 HEAD JSD=0.0185 (26x Q2->Q3), TERM JSD=0.0200 (20x Q2->Q3). Q1-Q3 interior JSD<0.003. Two-step line architecture. |
+
+**Phase 549 findings (Atom Architecture Cleanup, 4 research questions, 17 sub-analyses):**
+- Q1 (ARTICULATORS): All 6 sub-analyses CONFIRM existing constraints C1416-C1421 at higher resolution. Articulator rate 4.41% in B (C1416 exact match), line-initial 4.518x (C1417), BARE/qo excluded (C1418), e-HEAD 1.807x enriched / k-HEAD 0.098x excluded (C1419), suffix suppression 0.548x (C1420), category JSD=0.030 confirming MIDDLE mediation (C1421). No new constraints from Q1.
+- Q2 (SEQUENTIAL COUPLINGS): Three new findings. HEAD self-transition hierarchy (C1562) reveals three-tier persistence: stability/identification domains sustain runs, thermal/arrangement domains switch quickly. Terminal-to-next-HEAD routing grammar (C1563) completes the cross-token instruction chain at atom resolution: TERM is a dual-function atom that simultaneously gates suffix attachment (C1440) and routes the next token's HEAD domain. Suffix zero forward information (C1564) -- JSD=0.0021 between suffixed and bare tokens' next-HEAD distributions, extending C1003 (pairwise compositionality) to the cross-token boundary.
+- Q3 (PARAGRAPH SIGNATURES): One new finding. Header modifier divergence 10x HEAD divergence (C1565) -- paragraphs specify through MODIFIER selection (p 3.66x, f 3.90x enriched) not HEAD domain (JSD=0.008). Resolves C1287 (MARKING-enriched header) mechanism. Convergence test extends C1402: late body lines are MORE divergent from headers (ratio 1.393), not convergent.
+- Q4 (LINE-POSITION GRADIENT): One new finding. Q3->Q4 step discontinuity (C1566) -- HEAD JSD jumps 26x at closure boundary while Q1-Q3 interior remains homogeneous (JSD<0.003). Refines C1425-C1430 three-zone model to TWO-STEP architecture: mild specification shift at Q0->Q1, uniform work zone Q1-Q3, sharp closure break at Q3->Q4. Additional confirmations: THERMAL Q1 peak (C1428), k-HEAD Q1 onset (C1464), m-terminal extreme Q4 enrichment (C1434).
 
 ---
 

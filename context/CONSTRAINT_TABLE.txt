@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1405 constraints | 2026-03-06
+CONSTRAINT_REFERENCE v2.6 | 1410 constraints | 2026-03-06
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1409,3 +1409,8 @@ C1558	o-HEAD p/f executive modifier enrichment with i/d depletion	2	B, MIDDLE, a
 C1559	o-HEAD cross-system gradient A(28.5%)>AZC(22.4%)>B(11.8%) with AZC S/R=1.66x	2	CROSS, A, B, AZC, MIDDLE, atom, HEAD, o-HEAD, cross-system, gradient, AZC-zone, boundary, C1381, C1388, C1502, C1507, C1517, C1522	A/B ratio 2.42x. AZC zones: L=30.9%, S=29.3%, C=26.2%, P=19.1%, R=17.7%. A-proximate zones high, B-proximate zones low.
 C1560	o-HEAD inner atom composition divergent (y 0.023x, l 2.74x, p 4.67x)	2	B, MIDDLE, atom, HEAD, o-HEAD, inner-atom, composition, divergent, y-depletion, l-enrichment, p-enrichment, CHANNELED, terminal, C1388, C1475, C1484, C1487, C1556	y 0.023x = most extreme single-atom divergence in system. l 2.74x, r 2.29x, h 2.24x, p 4.67x, f 3.65x enriched. n 0.19x, i 0.37x depleted.
 C1561	o-HEAD empirical hazard immunity (0% source AND 0% target)	2	B, MIDDLE, atom, HEAD, o-HEAD, hazard, immunity, source, target, double-protection, C1388, C1446, C1546, C1551, C1557	0/2717 in either direction. 3 theoretical forbidden pairs never fire (1 phantom source, 2 vanishingly rare). Safest HEAD domain.
+C1562	HEAD self-transition rate hierarchy	2	B, MIDDLE, atom, HEAD, self-transition, sequential, hierarchy, persistence, switching, C1212, C1384, C1475, C1478, C1521	Three-tier: PERSISTENT (e 28.5%, headless 28.4%, a 25.2%), SWITCHING (k 16.7%, o 13.6%), RARE (t 9.1%). e->k 1.493x, a->k 0.528x.
+C1563	Terminal-to-next-HEAD cross-token routing grammar	2	B, MIDDLE, atom, terminal, HEAD, routing, cross-token, sequential, instruction-phrases, C1212, C1440, C1475, C1483, C1484, C1487	r->a 2.231x, y->k 1.597x, h->t 1.892x, l->e 1.246x, m->o 1.554x, bare neutral. TERM is dual-function: suffix-gating + HEAD routing.
+C1564	Suffix carries zero forward information to next HEAD	2	B, suffix, HEAD, cross-token, information, null, compositionality, C1003, C1510, C1412, C1422	JSD=0.0021 (smallest in phase). Suffix scope terminates at token edge. Extends C1003 to cross-token boundary.
+C1565	Paragraph header modifier divergence exceeds HEAD divergence 10x	2	B, paragraph, header, atom, modifier, HEAD, divergence, specification, executive, C1287, C1396, C1468, C1479, C1543	MOD JSD=0.085 vs HEAD JSD=0.008 (10.6x ratio). p 3.66x, f 3.90x enriched in headers; i 0.51x depleted. h-terminal 2.35x enriched.
+C1566	Line position Q3-Q4 step discontinuity	2	B, line, position, gradient, quintile, closure, step, discontinuity, specification, work-zone, C1425, C1426, C1427, C1428, C1429, C1430, C1434, C1463	Q3->Q4 HEAD JSD=0.0185 (26x Q2->Q3), TERM JSD=0.0200 (20x Q2->Q3). Q1-Q3 interior JSD<0.003. Two-step line architecture.

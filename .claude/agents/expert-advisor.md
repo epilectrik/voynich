@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1405 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1410 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1555.
+the highest ID present is C1566.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1405 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1410 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1405 validated constraints are present as canonical one-line claims with tier
+1410 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-06 20:40
-**Version:** FROZEN STATE (1405 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-06 22:30
+**Version:** FROZEN STATE (1410 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1828,6 +1828,17 @@ C1552	5/9 hazard source MIDDLEs are phantom types absent from corpus	2	B, MIDDLE
 C1553	ch/sh-initial compound MIDDLE categorical absence	2	B, MIDDLE, atom, ch, sh, compound, positional-partition, PREFIX, C1178, C1394, C1534, C1552
 C1554	Phantom MIDDLEs are atom-legal but construction-dead (defense-in-depth)	2	B, MIDDLE, phantom, atom, slot, construction, defense-in-depth, hazard, C1552, C1553, C1178, C1209, C1546
 C1555	c-initial compound second-atom selectivity (c+h adjacency absent)	2	B, MIDDLE, atom, c-initial, h-atom, second-atom, selectivity, C1389, C1553, C1472
+C1556	o-HEAD terminal-to-category deterministic mapping	2	B, MIDDLE, atom, HEAD, o-HEAD, terminal, category, deterministic, STAGING, FLOW, OPERATION, C1388, C1475, C1483, C1485, C1487
+C1557	o-HEAD y-terminal near-complete depletion (0.007x)	2	B, MIDDLE, atom, HEAD, o-HEAD, y-terminal, depletion, safety, PHASE_ORDERING, hazard, C1388, C1475, C1546, C1551
+C1558	o-HEAD p/f executive modifier enrichment with i/d depletion	2	B, MIDDLE, atom, HEAD, o-HEAD, modifier, p, f, i, d, enrichment, depletion, arrangement, C1388, C1475, C1479, C1543
+C1559	o-HEAD cross-system gradient A(28.5%)>AZC(22.4%)>B(11.8%) with AZC S/R=1.66x	2	CROSS, A, B, AZC, MIDDLE, atom, HEAD, o-HEAD, cross-system, gradient, AZC-zone, boundary, C1381, C1388, C1502, C1507, C1517, C1522
+C1560	o-HEAD inner atom composition divergent (y 0.023x, l 2.74x, p 4.67x)	2	B, MIDDLE, atom, HEAD, o-HEAD, inner-atom, composition, divergent, y-depletion, l-enrichment, p-enrichment, CHANNELED, terminal, C1388, C1475, C1484, C1487, C1556
+C1561	o-HEAD empirical hazard immunity (0% source AND 0% target)	2	B, MIDDLE, atom, HEAD, o-HEAD, hazard, immunity, source, target, double-protection, C1388, C1446, C1546, C1551, C1557
+C1562	HEAD self-transition rate hierarchy	2	B, MIDDLE, atom, HEAD, self-transition, sequential, hierarchy, persistence, switching, C1212, C1384, C1475, C1478, C1521
+C1563	Terminal-to-next-HEAD cross-token routing grammar	2	B, MIDDLE, atom, terminal, HEAD, routing, cross-token, sequential, instruction-phrases, C1212, C1440, C1475, C1483, C1484, C1487
+C1564	Suffix carries zero forward information to next HEAD	2	B, suffix, HEAD, cross-token, information, null, compositionality, C1003, C1510, C1412, C1422
+C1565	Paragraph header modifier divergence exceeds HEAD divergence 10x	2	B, paragraph, header, atom, modifier, HEAD, divergence, specification, executive, C1287, C1396, C1468, C1479, C1543
+C1566	Line position Q3-Q4 step discontinuity	2	B, line, position, gradient, quintile, closure, step, discontinuity, specification, work-zone, C1425, C1426, C1427, C1428, C1429, C1430, C1434, C1463
 
 ---
 
