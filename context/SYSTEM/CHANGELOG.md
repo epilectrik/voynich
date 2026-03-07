@@ -4,6 +4,38 @@
 
 ---
 
+## Version 5.37.173 (2026-03-06) - Phase 548: o-Domain Deep Dive
+
+### Summary
+
+Phase 548 provides the first comprehensive characterization of the o-HEAD atom domain (2,717 tokens, 11.8% of Currier B), answering 10 research questions across 13 analytical tests. STRONGEST FINDING: o-HEAD terminal-to-category deterministic mapping (C1556) -- the terminal atom deterministically selects operational category at near-100% purity: ol=100% STAGING, or=100% FLOW, bare o=100% OPERATION. This is the sharpest terminal-category coupling for any HEAD atom, resolving C1388's vague "arrangement" label. o-HEAD depletes y-terminal to 0.007x (C1557), the strongest single-terminal depletion for any HEAD, creating structural PHASE_ORDERING immunity. Executive modifiers p (3.51x) and f (2.83x) are the strongest modifier enrichments for any single HEAD (C1558), confirming C1543. Cross-system gradient runs A (28.5%) > AZC (22.4%) > B (11.8%) with AZC zones grading from arrangement-heavy boundaries (S=29.3%) to execution-heavy interiors (R=17.7%), confirming C1517 and C1522 at full resolution (C1559). Inner atom composition shows y at 0.023x -- the most extreme single-atom divergence in the system (C1560). o-HEAD achieves 0% hazard source AND 0% target across all 2,717 tokens (C1561). Verdict: o-HEAD is an ARRANGEMENT SPECIFICATION SYSTEM using terminal atoms as categorical switches.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1556: o-HEAD terminal-to-category deterministic mapping (ol=100% STAGING, or=100% FLOW, bare o=100% OPERATION) |
+| **ADDED** | C1557: o-HEAD y-terminal near-complete depletion (0.007x; structural PHASE_ORDERING immunity) |
+| **ADDED** | C1558: o-HEAD p/f executive modifier enrichment (p 3.51x, f 2.83x; i 0.32x, d 0.55x depleted) |
+| **ADDED** | C1559: o-HEAD cross-system gradient A(28.5%)>AZC(22.4%)>B(11.8%) with AZC S/R=1.66x |
+| **ADDED** | C1560: o-HEAD inner atom composition divergent (y 0.023x most extreme in system; l 2.74x, p 4.67x) |
+| **ADDED** | C1561: o-HEAD empirical hazard immunity (0% source AND 0% target, N=2717) |
+| **ADDED** | `phases/O_DOMAIN_DEEP_DIVE/scripts/o_domain_deep_dive.py` |
+| **ADDED** | `phases/O_DOMAIN_DEEP_DIVE/results/o_domain_deep_dive.json` |
+| **ADDED** | `phases/O_DOMAIN_DEEP_DIVE/REPORT.md` |
+| **UPDATED** | INDEX.md -- +6 constraints (1405 total) |
+| **EXTENDED** | C1388 (o-atom arrangement domain marker): RESOLVED -- arrangement is CHANNELED through terminal atoms (l=staging, r=flow, bare=operation) |
+| **EXTENDED** | C1475 (HEAD domain differentiation): o domain shown more internally structured (terminal-deterministic) than other HEADs |
+| **EXTENDED** | C1485 (HEAD x TERM affinity): o-HEAD affinities are near-deterministic, not just enriched |
+| **EXTENDED** | C1517 (o-HEAD zone-graded in AZC): confirmed with full zone detail (L=30.9%, S=29.3%, C=26.2%, P=19.1%, R=17.7%) |
+| **EXTENDED** | C1507 (bridge HEAD redistributes A vs B): confirmed with token-level detail (A=28.5% o-HEAD, B=11.8%) |
+| **CONFIRMED** | C1543 (p/f o-HEAD arrangement affiliates): quantified at p 3.51x, f 2.83x |
+| **EXTENDED** | C1546 (HEAD hazard source immunity): extended to target immunity for o-HEAD (0% both directions) |
+| **CONNECTED** | C1557 -> C1551 (PHASE_ORDERING = y-terminal): o-HEAD avoids y at 0.007x, structurally immune to PHASE_ORDERING |
+| **CONNECTED** | C1556 -> C1483 (terminal category specificity): sharpened to near-deterministic within single HEAD |
+
+---
+
 ## Version 5.36.172 (2026-03-06) - Phase 547: Phantom MIDDLE Mechanism
 
 ### Summary

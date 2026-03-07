@@ -3,7 +3,7 @@
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.33"
+  version: "3.34"
   date: "2026-03-06"
   status: "ACTIVE"
   layer_type: "grammar contract"
@@ -850,6 +850,16 @@ middle_instruction_encoding:
       a = FLOW+TRANSITION (54%+41%) — dual-category hazard carrier
       e = THERMAL+OPERATION (35%+32%) — multi-category, most balanced
       o = STAGING+OPERATION (32%+26%) — arrangement domain
+        o-HEAD terminal→category is near-deterministic (C1556):
+          ol=100% STAGING, or=100% FLOW, bare o=100% OPERATION.
+        o-HEAD depletes y-terminal to 0.007x (C1557) — strongest single-terminal
+          depletion, creating structural PHASE_ORDERING immunity.
+        o-HEAD enriches executive modifiers p(3.51x) f(2.83x), depletes i(0.32x) d(0.55x) (C1558).
+        Cross-system gradient A(28.5%)>AZC(22.4%)>B(11.8%) (C1559) — arrangement
+          concentrates in declarative register.
+        Inner-atom composition divergent: y at 0.023x = most extreme single-atom
+          divergence in system; l(2.74x) r(2.29x) p(4.67x) enriched (C1560).
+        Double-protected: 0% hazard source AND 0% target (C1561).
       headless = CONTAINMENT+MARKING+STAGING — infrastructure
     k-HEAD immunity is INTRINSIC (C1476): 0.0% forbidden across all frames,
       with or without modifiers. Not compositional — k is inherently safe.
@@ -896,7 +906,7 @@ middle_instruction_encoding:
         k/t categorically avoid n,m terminals (0-1 tokens each).
       Hazard axis: y sources 90.9% of violations, n absorbs 90.9%.
 
-  provenance: "C1393, C1394, C1472, C1473, C1474, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487"
+  provenance: "C1393, C1394, C1472, C1473, C1474, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487, C1556, C1557, C1558, C1559, C1560, C1561"
 
 # ============================================================
 

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1399 validated constraints | **Version:** 5.36 | **Date:** 2026-03-06
+**Total:** 1405 validated constraints | **Version:** 5.37 | **Date:** 2026-03-06
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5410,6 +5410,28 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - REJECTED: A_CONSTRUCTION_PROHIBITION (all atoms legal in assigned slots per C1209/C1210) and B_SELECTIONAL_COLLAPSE (22-27 compatible PREFIXes each, suffix-compatible terminals).
 - c-initial compound second-atom selectivity (C1555): 49/55 c-initial compounds contain h, but h is ALWAYS at position 2+ (c+[k/t/f/p]+h pattern). c+h adjacency at positions 0-1 is categorically absent. Confirms bigram-level prohibition.
 - Defense-in-depth architecture confirmed (C1554): Phantom MIDDLEs pass every atomic legality test but are excluded by the ch/sh positional partition. The forbidden topology covers MIDDLEs that the vocabulary system already makes impossible -- structural insurance against revival of the dead naming pattern.
+
+---
+
+### Phase 548: o-Domain Deep Dive (O_DOMAIN_DEEP_DIVE)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1556 | o-HEAD terminal-to-category deterministic mapping | 2 | B, MIDDLE, atom, HEAD, o-HEAD, terminal, category, deterministic, STAGING, FLOW, OPERATION, C1388, C1475, C1483, C1485, C1487 | ol=100% STAGING (762 tokens), or=100% FLOW (446), bare o=100% OPERATION (388). l-terminal=92.9% STAGING (N=820), r-terminal=88.6% FLOW (N=508). Sharpest terminal-category coupling for any HEAD. |
+| 1557 | o-HEAD y-terminal near-complete depletion (0.007x) | 2 | B, MIDDLE, atom, HEAD, o-HEAD, y-terminal, depletion, safety, PHASE_ORDERING, hazard, C1388, C1475, C1546, C1551 | ~19/2717 y-terminal tokens. 0.007x enrichment. Strongest single-terminal depletion for any HEAD. Structural PHASE_ORDERING immunity via y-avoidance. |
+| 1558 | o-HEAD p/f executive modifier enrichment with i/d depletion | 2 | B, MIDDLE, atom, HEAD, o-HEAD, modifier, p, f, i, d, enrichment, depletion, arrangement, C1388, C1475, C1479, C1543 | p 3.51x (9.7%), f 2.83x (2.7%) enriched; i 0.32x (6.1%), d 0.55x (10.6%) depleted. p=strongest modifier enrichment for any single HEAD. |
+| 1559 | o-HEAD cross-system gradient A(28.5%)>AZC(22.4%)>B(11.8%) with AZC S/R=1.66x | 2 | CROSS, A, B, AZC, MIDDLE, atom, HEAD, o-HEAD, cross-system, gradient, AZC-zone, boundary, C1381, C1388, C1502, C1507, C1517, C1522 | A/B ratio 2.42x. AZC zones: L=30.9%, S=29.3%, C=26.2%, P=19.1%, R=17.7%. A-proximate zones high, B-proximate zones low. |
+| 1560 | o-HEAD inner atom composition divergent (y 0.023x, l 2.74x, p 4.67x) | 2 | B, MIDDLE, atom, HEAD, o-HEAD, inner-atom, composition, divergent, y-depletion, l-enrichment, p-enrichment, CHANNELED, terminal, C1388, C1475, C1484, C1487, C1556 | y 0.023x = most extreme single-atom divergence in system. l 2.74x, r 2.29x, h 2.24x, p 4.67x, f 3.65x enriched. n 0.19x, i 0.37x depleted. |
+| 1561 | o-HEAD empirical hazard immunity (0% source AND 0% target) | 2 | B, MIDDLE, atom, HEAD, o-HEAD, hazard, immunity, source, target, double-protection, C1388, C1446, C1546, C1551, C1557 | 0/2717 in either direction. 3 theoretical forbidden pairs never fire (1 phantom source, 2 vanishingly rare). Safest HEAD domain. |
+
+**Phase 548 findings (o-Domain Deep Dive, 10 research questions, 13 analytical tests):**
+- STRONGEST FINDING: o-HEAD terminal-to-category deterministic mapping (C1556). Within o-HEAD MIDDLEs (2,717 tokens), the terminal atom deterministically selects category: ol=100% STAGING, or=100% FLOW, bare o=100% OPERATION. Sharpest terminal-category coupling for any HEAD atom. RESOLVES C1388's vague "arrangement" label: o-HEAD is an arrangement domain BECAUSE it uses different terminals for different arrangement ASPECTS.
+- y-terminal near-complete depletion at 0.007x (C1557) -- strongest single-terminal depletion for any HEAD. Creates structural PHASE_ORDERING immunity since y-terminal is the exclusive PHASE_ORDERING hazard vector (C1551). Combined with C1546 (HEAD source immunity) = double protection.
+- Executive modifier enrichment: p 3.51x and f 2.83x are strongest modifier enrichments for any single HEAD (C1558). i depleted 0.32x. Confirms C1543 (p/f are o-HEAD arrangement-affiliated modifiers) quantitatively.
+- Cross-system A>AZC>B gradient (C1559): A=28.5%, AZC=22.4%, B=11.8% (A/B=2.42x). AZC zones grade from arrangement-heavy boundaries (S=29.3%) to execution-heavy interiors (R=17.7%), matching C1522 (A-proximate vs B-proximate zones).
+- Inner atom composition: y at 0.023x is the most extreme single-atom divergence in the entire atom system (C1560). o-HEAD compounds built from CHANNELED terminal vocabulary (l, r, h) while excluding y and n.
+- Empirical hazard immunity: 0% source AND 0% target across 2,717 tokens (C1561). Three theoretical forbidden pairs involving o-HEAD MIDDLEs never fire in practice.
+- Additional (not constraint-worthy): o-HEAD is positionally flat in B lines (mean=0.497), contrasting with AZC boundary concentration. Self-transition rate 0.136 (1.14x, moderate). Suffix rate 0.480 (near baseline). Mode A rate 0.253 (below baseline). Compounds overwhelmingly 2-atom (59.9%). Category JSD vs e-HEAD = 0.365 (LARGE) -- maximally different operational domains.
 
 ---
 

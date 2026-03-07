@@ -3,12 +3,12 @@
 meta:
   name: "AZC Positional Classification Contract"
   acronym: "AZC-ACT"
-  version: "1.4"
+  version: "1.5"
   date: "2026-03-06"
   status: "ACTIVE"
   layer_type: "mapping contract"
   derived_from: "Tier-2 constraints only"
-  audit_note: "v1.4: Zone HEAD atomization added (C1516-C1522, Phase 541). Zones differentiate at HEAD slot level (V=0.115) despite raw atom uniformity (C1271). o-HEAD zone-graded. B/A proximity partition. v1.3: Category organization added (C1269-C1276, Phase 453). v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31)."
+  audit_note: "v1.5: o-HEAD cross-system gradient A>AZC>B added (C1559, Phase 548). v1.4: Zone HEAD atomization added (C1516-C1522, Phase 541). Zones differentiate at HEAD slot level (V=0.115) despite raw atom uniformity (C1271). o-HEAD zone-graded. B/A proximity partition. v1.3: Category organization added (C1269-C1276, Phase 453). v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31)."
   governance: |
     AZC-ACT is NOT authoritative. Constraints are authoritative.
     AZC-ACT describes HOW vocabulary is positionally classified in AZC.
@@ -146,10 +146,11 @@ category_organization:
     provenance: "C1271, C1276, C1516, C1517, C1518"
 
   zone_head_atomization:
-    provenance: "C1516-C1522"
+    provenance: "C1516-C1522, C1559"
     head_differentiation:
       statement: "HEAD domain profiles vary significantly across zones (V=0.115)"
       o_head_gradient: "R=17.7%, P=19.1%, C=26.2%, S=29.3%, L=30.9% (overall 1.90x B)"
+      cross_system_gradient: "A(28.5%) > AZC(22.4%) > B(11.8%), A/B=2.42x (C1559)"
       head_vs_terminal: "HEAD JSD 5.2x TERMINAL JSD -- zones select WHAT domain, not HOW to close"
       provenance: "C1516, C1517, C1518"
     family_head_diversity:
@@ -472,5 +473,6 @@ provenance:
     - "C1520"  # R-series no HEAD gradient
     - "C1521"  # Zone pipeline composition varies
     - "C1522"  # B-proximate vs A-proximate zone partition
+    - "C1559"  # o-HEAD cross-system gradient A>AZC>B
 
 # ============================================================
