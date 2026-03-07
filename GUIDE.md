@@ -2,7 +2,7 @@
 
 This document explains the project's findings for readers who want to understand what the Voynich Manuscript encodes without navigating 1,410 constraint files. Everything here is grounded in statistical evidence from the transcript data.
 
-For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`.
+For the full constraint system and technical details, see `context/CLAUDE_INDEX.md`. For the definitive technical specification of the instruction word and safety architecture, see **[ARCHITECTURE.md](phases/INSTRUCTION_WORD_FORMALISM/ARCHITECTURE.md)**.
 
 ---
 

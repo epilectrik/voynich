@@ -29,6 +29,8 @@ We take the same approach with the Voynich Manuscript. We don't translate tokens
 
 **[GUIDE.md](GUIDE.md)** provides a full walkthrough of all four manuscript systems and how they work together.
 
+**[ARCHITECTURE.md](phases/INSTRUCTION_WORD_FORMALISM/ARCHITECTURE.md)** is the definitive technical specification: the complete instruction word, three-level safety architecture, organizational model, and cross-register document stack — derived from all 1,410 constraints.
+
 ## Key Results
 
 | Finding | Evidence |
