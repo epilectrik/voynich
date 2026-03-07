@@ -38,7 +38,7 @@ The document stack has four registers (C1499), each serving a distinct function.
 
 **114 folios, 11,415 tokens, entirely separate from the execution folios (C272)**
 
-Currier A is a declarative catalog. It describes what things *are*, not what to *do* with them (C240, C1395, C1507). Each folio contains entries organized by paragraph, where each entry specifies a material, preparation, or configuration using a vocabulary enriched in arrangement atoms (o-HEAD at 28.5%, headless at 39%, C1523, C1559).
+Currier A is a declarative catalog. It describes what things *are*, not what to *do* with them (C240, C1395, C1507). Each folio contains entries organized by paragraph, where each entry *discriminates* a material, preparation, or configuration from all others using a vocabulary enriched in arrangement atoms (o-HEAD at 28.5%, headless at 39%, C1523, C1559). The entries do not name substances -- they define unique positions in a vast discrimination space (95.7% pairwise incompatibility, C475). The operator must already know which physical referent corresponds to which position.
 
 The entries are built from the same atoms as the execution instructions (C1499, min Jaccard 0.895 across all systems), but deployed differently. Where execution instructions say "heat this" or "cool this," registry entries say "this is the kind of thing that gets heated" or "this is how this material differs from that one."
 
