@@ -322,11 +322,13 @@ The genre gap is not accidental. It follows from the VMS's design requirements:
 
 ### Taxonomy
 
-The VMS does not fit any existing medieval document genre. It requires a new classification:
+The VMS does not fit any existing medieval document genre. We propose a new analytical classification:
 
-> **Proposed genre: OPERATIONAL CONTROL CODEX**
+> **Proposed analytical classification: OPERATIONAL CONTROL CODEX**
 >
 > A purpose-built, non-linguistic operational notation system encoding parameterized control programs for a specific apparatus class, designed for expert practitioners, with structural safety enforcement and multi-register architecture.
+>
+> This is an analytical category derived from structural properties, not a recovered medieval native genre term. No medieval source describes such a genre.
 
 This classification is defined by the conjunction of properties that no existing genre possesses:
 
@@ -379,7 +381,7 @@ If the OPERATIONAL CONTROL CODEX was a viable genre, why is the VMS apparently u
 
 ### Historical Placement
 
-The OPERATIONAL CONTROL CODEX genre is predicted to have existed:
+If this genre existed, the structural evidence suggests it would have appeared:
 - **When:** 1350-1500 CE (post-Rupescissa, pre-Brunschwig publication)
 - **Where:** Guild workshops in Central Europe or Northern Italy
 - **Who:** Master distillers/apothecaries with sufficient scale to justify the engineering investment

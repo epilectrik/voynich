@@ -62,7 +62,7 @@ The zones encode *where* in the apparatus or process a given operation is legal:
 
 AZC constrains *when* intervention is legal, not *what* intervention to perform. At a given position, some operations are permitted and others are prohibited (C443). The prohibition is categorical -- an operation is either legal at a position or it is not (C469). There are no numeric thresholds, no "do this 70% of the time" instructions. Everything is binary: allowed or forbidden.
 
-**How the operator uses it:** The operator checks their current position against the AZC zones to determine which operations from the B grammar are currently legal. As the process progresses and conditions change, different zones become relevant, and the set of permitted operations shifts. This is like consulting a phase diagram -- you cannot choose freely; physics (encoded as positional legality) restricts your options.
+**How the operator uses it:** AZC is a static legality map (C313), not a dynamic dashboard. The operator checks the relevant zones to determine which operations from the B grammar are legal at a given position. Different zones apply to different stages of the apparatus or process, and the set of permitted operations varies accordingly — but this is learned through experience, not consulted in real time. It is like knowing a phase diagram rather than reading a live instrument.
 
 ### Register 3: The Execution Grammar (Currier B)
 
@@ -113,7 +113,7 @@ Here is what a typical work session might look like, reconstructed from the stru
 
 ### Step 1: Select the Program
 
-The operator has a task: process a specific material to produce a specific product. They select the appropriate B folio -- the program for that process. Each folio is a distinct procedure defined by unique vocabulary (C531, C532), so there is exactly one folio for each process/product combination. The selection is made by the operator based on external knowledge; nothing in the manuscript makes this choice for them.
+The operator has a task: process a specific material to produce a specific product. They select the appropriate B folio -- the program for that process. Each folio is a distinct procedure defined by unique vocabulary (C531, C532), so each folio defines a structurally distinct procedure. The selection is made by the operator based on external knowledge; nothing in the manuscript makes this choice for them.
 
 ### Step 2: Check Configuration
 
@@ -256,7 +256,7 @@ The evidence for this interpretation:
 - Paragraph count correlates with folio complexity (rho = 0.836, C858) -- more complex processes require more parallel subroutines
 - No inter-paragraph state dependencies exist (C1399-C1400) -- each paragraph can run independently
 
-This is consistent with a workshop setting where multiple apprentices or journeymen work under a master's supervision, each handling a different aspect of the same process. The folio would be open on a workbench, and each operator would consult their assigned paragraph.
+This would be consistent with a workshop setting where multiple trained practitioners work from the same folio simultaneously, each executing a different subroutine.
 
 ---
 
@@ -264,7 +264,7 @@ This is consistent with a workshop setting where multiple apprentices or journey
 
 The negative space is as informative as the positive. The operator does NOT need:
 
-- **Literacy.** The notation is not a natural language (C132). Reading it requires learning a compact operational symbology, not a writing system. The total vocabulary is 479 types collapsing to 49 effective classes (C121).
+- **Natural-language literacy.** The notation is not a natural language (C132). Reading it requires learning a compact operational symbology — its own form of literacy — but not alphabetic or natural-language reading ability. The total vocabulary is 479 types collapsing to 49 effective classes (C121).
 - **Mathematical ability.** No quantities, ratios, or proportions are encoded (C287, C288). Repetition in A entries is literal enumeration, not arithmetic (C289, C290).
 - **Access to the full manuscript.** Each B folio is a self-contained program (C531). The operator needs only the relevant folio, plus familiarity with the A entries for their materials and the AZC legality constraints for their equipment. Cross-folio reference is never required.
 - **Knowledge of the grammar.** The operator does not need to understand the 49-class taxonomy or the 6-state macro-automaton. They need to read the tokens and know what operations they indicate. The grammar is an analytical description of the system's regularities, not a prerequisite for using it.
