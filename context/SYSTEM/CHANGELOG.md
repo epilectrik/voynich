@@ -4,6 +4,31 @@
 
 ---
 
+## Version 5.36.172 (2026-03-06) - Phase 547: Phantom MIDDLE Mechanism
+
+### Summary
+
+Phase 547 investigates WHY the 5 phantom hazard source MIDDLEs (chey, shey, chedy, shedy, chol) identified in C1552 have exactly zero corpus occurrences despite being structurally conceivable. 4 candidate hypotheses tested across 10 analytical dimensions. PRIMARY MECHANISM: D_LEXICAL_CURATION confirmed -- ch/sh is a PREFIX-domain bigram that categorically does not extend to MIDDLE-initial position for compounds of length 3+ (C1553). PREFIX:MIDDLE ratio 5,821:0. Individual atoms c, s, h all appear freely in MIDDLE position; the prohibition operates at bigram granularity. SECONDARY: C_SAFETY_PRUNING contributing -- all 5 phantoms are hazard sources in the forbidden transition topology, providing defense-in-depth (C1554). REJECTED: A_CONSTRUCTION_PROHIBITION (all atoms legal in assigned slots) and B_SELECTIONAL_COLLAPSE (22-27 compatible PREFIXes each, suffix-compatible terminals). Additional finding: c-initial compound second-atom selectivity (C1555) -- 49/55 c-initial compounds (89.1%) contain h, but h is ALWAYS at position 2+ (c+[k/t/f/p]+h), never at position 1 (c+h). Confirms bigram-level positional partition between PREFIX domain and MIDDLE domain.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | C1553: ch/sh-initial compound MIDDLE categorical absence (0 types 3+ chars, PREFIX:MIDDLE ratio 5,821:0) |
+| **ADDED** | C1554: Phantom MIDDLEs atom-legal but construction-dead (defense-in-depth -- forbidden topology covers vocabulary-excluded MIDDLEs) |
+| **ADDED** | C1555: c-initial compound second-atom selectivity (c+h at positions 0-1 = 0, c+[k/t/f/p]+h = 49/55 types) |
+| **ADDED** | `phases/PHANTOM_MIDDLE_MECHANISM/scripts/phantom_middle_mechanism.py` |
+| **ADDED** | `phases/PHANTOM_MIDDLE_MECHANISM/results/phantom_middle_mechanism.json` |
+| **ADDED** | `phases/PHANTOM_MIDDLE_MECHANISM/REPORT.md` |
+| **UPDATED** | INDEX.md -- +3 constraints (1399 total) |
+| **EXTENDED** | C1178 (phantom MIDDLEs morphologically isolated): mechanism now identified as ch/sh positional partition (C1553) |
+| **EXTENDED** | C1552 (5/9 hazard sources are phantom): mechanism fully characterized -- not atom-level or selectional, but bigram-level positional partition |
+| **CONNECTED** | C1553 -> C1534 (PREFIX uses 15 chars in three-tier classification): ch/sh as PREFIX bases explains why the same bigram cannot serve as MIDDLE-initial |
+| **CONNECTED** | C1554 -> C109 (5 failure classes): forbidden topology designed at level of generality exceeding actual vocabulary -- structural insurance |
+| **CONNECTED** | C1555 -> C1389 (c-atom main-loop modifier): c+[k/t/f/p]+h pattern shows c as modifier requiring intervening HEAD before terminal h |
+
+---
+
 ## Version 5.35.171 (2026-03-06) - Phase 546: Hazard x PREFIX Integration
 
 ### Summary

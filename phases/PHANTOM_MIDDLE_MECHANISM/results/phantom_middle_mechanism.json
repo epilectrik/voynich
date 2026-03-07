@@ -1,0 +1,2977 @@
+{
+  "phase": "PHANTOM_MIDDLE_MECHANISM",
+  "phase_number": 547,
+  "date": "2026-03-06",
+  "phantoms_analyzed": [
+    "shey",
+    "chey",
+    "chedy",
+    "shedy",
+    "chol"
+  ],
+  "test1_atom_slot_legality": {
+    "shey": {
+      "decomposition": {
+        "atoms": [
+          "s",
+          "h",
+          "e",
+          "y"
+        ],
+        "head": "s",
+        "mods": [
+          "h",
+          "e"
+        ],
+        "term": "y",
+        "is_headed": false,
+        "frame": "s->y"
+      },
+      "slot_checks": [
+        {
+          "atom": "s",
+          "slot": "INITIAL/HEAD",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 176
+        },
+        {
+          "atom": "h",
+          "slot": "MEDIAL/MOD",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 352
+        },
+        {
+          "atom": "e",
+          "slot": "MEDIAL/MOD",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 2022
+        },
+        {
+          "atom": "y",
+          "slot": "TERMINAL/TERM",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 4267
+        }
+      ],
+      "all_slots_legal": true
+    },
+    "chey": {
+      "decomposition": {
+        "atoms": [
+          "c",
+          "h",
+          "e",
+          "y"
+        ],
+        "head": "c",
+        "mods": [
+          "h",
+          "e"
+        ],
+        "term": "y",
+        "is_headed": false,
+        "frame": "c->y"
+      },
+      "slot_checks": [
+        {
+          "atom": "c",
+          "slot": "INITIAL/HEAD",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 617
+        },
+        {
+          "atom": "h",
+          "slot": "MEDIAL/MOD",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 352
+        },
+        {
+          "atom": "e",
+          "slot": "MEDIAL/MOD",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 2022
+        },
+        {
+          "atom": "y",
+          "slot": "TERMINAL/TERM",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 4267
+        }
+      ],
+      "all_slots_legal": true
+    },
+    "chedy": {
+      "decomposition": {
+        "atoms": [
+          "c",
+          "h",
+          "e",
+          "d",
+          "y"
+        ],
+        "head": "c",
+        "mods": [
+          "h",
+          "e",
+          "d"
+        ],
+        "term": "y",
+        "is_headed": false,
+        "frame": "c->y"
+      },
+      "slot_checks": [
+        {
+          "atom": "c",
+          "slot": "INITIAL/HEAD",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 617
+        },
+        {
+          "atom": "h",
+          "slot": "MEDIAL/MOD",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 352
+        },
+        {
+          "atom": "e",
+          "slot": "MEDIAL/MOD",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 2022
+        },
+        {
+          "atom": "d",
+          "slot": "MEDIAL/MOD",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 2138
+        },
+        {
+          "atom": "y",
+          "slot": "TERMINAL/TERM",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 4267
+        }
+      ],
+      "all_slots_legal": true
+    },
+    "shedy": {
+      "decomposition": {
+        "atoms": [
+          "s",
+          "h",
+          "e",
+          "d",
+          "y"
+        ],
+        "head": "s",
+        "mods": [
+          "h",
+          "e",
+          "d"
+        ],
+        "term": "y",
+        "is_headed": false,
+        "frame": "s->y"
+      },
+      "slot_checks": [
+        {
+          "atom": "s",
+          "slot": "INITIAL/HEAD",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 176
+        },
+        {
+          "atom": "h",
+          "slot": "MEDIAL/MOD",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 352
+        },
+        {
+          "atom": "e",
+          "slot": "MEDIAL/MOD",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 2022
+        },
+        {
+          "atom": "d",
+          "slot": "MEDIAL/MOD",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 2138
+        },
+        {
+          "atom": "y",
+          "slot": "TERMINAL/TERM",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 4267
+        }
+      ],
+      "all_slots_legal": true
+    },
+    "chol": {
+      "decomposition": {
+        "atoms": [
+          "c",
+          "h",
+          "o",
+          "l"
+        ],
+        "head": "c",
+        "mods": [
+          "h",
+          "o"
+        ],
+        "term": "l",
+        "is_headed": false,
+        "frame": "c->l"
+      },
+      "slot_checks": [
+        {
+          "atom": "c",
+          "slot": "INITIAL/HEAD",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 617
+        },
+        {
+          "atom": "h",
+          "slot": "MEDIAL/MOD",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 352
+        },
+        {
+          "atom": "o",
+          "slot": "MEDIAL/MOD",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 842
+        },
+        {
+          "atom": "l",
+          "slot": "TERMINAL/TERM",
+          "observed_in_slot": true,
+          "corpus_count_in_slot": 1713
+        }
+      ],
+      "all_slots_legal": true
+    }
+  },
+  "test2_component_existence": {
+    "shey": {
+      "substrings_found": [
+        {
+          "substring": "sh",
+          "length": 2,
+          "position": "0-2",
+          "corpus_count": 19,
+          "in_B": true,
+          "in_A": true
+        },
+        {
+          "substring": "he",
+          "length": 2,
+          "position": "1-3",
+          "corpus_count": 11,
+          "in_B": true,
+          "in_A": true
+        },
+        {
+          "substring": "ey",
+          "length": 2,
+          "position": "2-4",
+          "corpus_count": 1295,
+          "in_B": true,
+          "in_A": true
+        }
+      ],
+      "substrings_missing": [
+        {
+          "substring": "she",
+          "length": 3,
+          "position": "0-3"
+        },
+        {
+          "substring": "hey",
+          "length": 3,
+          "position": "1-4"
+        }
+      ],
+      "found_count": 3,
+      "missing_count": 2,
+      "removal_tests": [
+        {
+          "removed_atom": "s",
+          "remaining": "hey",
+          "exists": false,
+          "corpus_count": 0
+        },
+        {
+          "removed_atom": "h",
+          "remaining": "sey",
+          "exists": false,
+          "corpus_count": 0
+        },
+        {
+          "removed_atom": "e",
+          "remaining": "shy",
+          "exists": false,
+          "corpus_count": 0
+        },
+        {
+          "removed_atom": "y",
+          "remaining": "she",
+          "exists": false,
+          "corpus_count": 0
+        }
+      ],
+      "any_reduction_exists": false
+    },
+    "chey": {
+      "substrings_found": [
+        {
+          "substring": "ch",
+          "length": 2,
+          "position": "0-2",
+          "corpus_count": 10,
+          "in_B": true,
+          "in_A": true
+        },
+        {
+          "substring": "he",
+          "length": 2,
+          "position": "1-3",
+          "corpus_count": 11,
+          "in_B": true,
+          "in_A": true
+        },
+        {
+          "substring": "ey",
+          "length": 2,
+          "position": "2-4",
+          "corpus_count": 1295,
+          "in_B": true,
+          "in_A": true
+        }
+      ],
+      "substrings_missing": [
+        {
+          "substring": "che",
+          "length": 3,
+          "position": "0-3"
+        },
+        {
+          "substring": "hey",
+          "length": 3,
+          "position": "1-4"
+        }
+      ],
+      "found_count": 3,
+      "missing_count": 2,
+      "removal_tests": [
+        {
+          "removed_atom": "c",
+          "remaining": "hey",
+          "exists": false,
+          "corpus_count": 0
+        },
+        {
+          "removed_atom": "h",
+          "remaining": "cey",
+          "exists": false,
+          "corpus_count": 0
+        },
+        {
+          "removed_atom": "e",
+          "remaining": "chy",
+          "exists": false,
+          "corpus_count": 0
+        },
+        {
+          "removed_atom": "y",
+          "remaining": "che",
+          "exists": false,
+          "corpus_count": 0
+        }
+      ],
+      "any_reduction_exists": false
+    },
+    "chedy": {
+      "substrings_found": [
+        {
+          "substring": "ch",
+          "length": 2,
+          "position": "0-2",
+          "corpus_count": 10,
+          "in_B": true,
+          "in_A": true
+        },
+        {
+          "substring": "he",
+          "length": 2,
+          "position": "1-3",
+          "corpus_count": 11,
+          "in_B": true,
+          "in_A": true
+        },
+        {
+          "substring": "ed",
+          "length": 2,
+          "position": "2-4",
+          "corpus_count": 425,
+          "in_B": true,
+          "in_A": true
+        },
+        {
+          "substring": "dy",
+          "length": 2,
+          "position": "3-5",
+          "corpus_count": 923,
+          "in_B": true,
+          "in_A": true
+        },
+        {
+          "substring": "edy",
+          "length": 3,
+          "position": "2-5",
+          "corpus_count": 1981,
+          "in_B": true,
+          "in_A": true
+        }
+      ],
+      "substrings_missing": [
+        {
+          "substring": "che",
+          "length": 3,
+          "position": "0-3"
+        },
+        {
+          "substring": "hed",
+          "length": 3,
+          "position": "1-4"
+        },
+        {
+          "substring": "ched",
+          "length": 4,
+          "position": "0-4"
+        },
+        {
+          "substring": "hedy",
+          "length": 4,
+          "position": "1-5"
+        }
+      ],
+      "found_count": 5,
+      "missing_count": 4,
+      "removal_tests": [
+        {
+          "removed_atom": "c",
+          "remaining": "hedy",
+          "exists": false,
+          "corpus_count": 0
+        },
+        {
+          "removed_atom": "h",
+          "remaining": "cedy",
+          "exists": false,
+          "corpus_count": 0
+        },
+        {
+          "removed_atom": "e",
+          "remaining": "chdy",
+          "exists": false,
+          "corpus_count": 0
+        },
+        {
+          "removed_atom": "d",
+          "remaining": "chey",
+          "exists": false,
+          "corpus_count": 0
+        },
+        {
+          "removed_atom": "y",
+          "remaining": "ched",
+          "exists": false,
+          "corpus_count": 0
+        }
+      ],
+      "any_reduction_exists": false
+    },
+    "shedy": {
+      "substrings_found": [
+        {
+          "substring": "sh",
+          "length": 2,
+          "position": "0-2",
+          "corpus_count": 19,
+          "in_B": true,
+          "in_A": true
+        },
+        {
+          "substring": "he",
+          "length": 2,
+          "position": "1-3",
+          "corpus_count": 11,
+          "in_B": true,
+          "in_A": true
+        },
+        {
+          "substring": "ed",
+          "length": 2,
+          "position": "2-4",
+          "corpus_count": 425,
+          "in_B": true,
+          "in_A": true
+        },
+        {
+          "substring": "dy",
+          "length": 2,
+          "position": "3-5",
+          "corpus_count": 923,
+          "in_B": true,
+          "in_A": true
+        },
+        {
+          "substring": "edy",
+          "length": 3,
+          "position": "2-5",
+          "corpus_count": 1981,
+          "in_B": true,
+          "in_A": true
+        }
+      ],
+      "substrings_missing": [
+        {
+          "substring": "she",
+          "length": 3,
+          "position": "0-3"
+        },
+        {
+          "substring": "hed",
+          "length": 3,
+          "position": "1-4"
+        },
+        {
+          "substring": "shed",
+          "length": 4,
+          "position": "0-4"
+        },
+        {
+          "substring": "hedy",
+          "length": 4,
+          "position": "1-5"
+        }
+      ],
+      "found_count": 5,
+      "missing_count": 4,
+      "removal_tests": [
+        {
+          "removed_atom": "s",
+          "remaining": "hedy",
+          "exists": false,
+          "corpus_count": 0
+        },
+        {
+          "removed_atom": "h",
+          "remaining": "sedy",
+          "exists": false,
+          "corpus_count": 0
+        },
+        {
+          "removed_atom": "e",
+          "remaining": "shdy",
+          "exists": false,
+          "corpus_count": 0
+        },
+        {
+          "removed_atom": "d",
+          "remaining": "shey",
+          "exists": false,
+          "corpus_count": 0
+        },
+        {
+          "removed_atom": "y",
+          "remaining": "shed",
+          "exists": false,
+          "corpus_count": 0
+        }
+      ],
+      "any_reduction_exists": false
+    },
+    "chol": {
+      "substrings_found": [
+        {
+          "substring": "ch",
+          "length": 2,
+          "position": "0-2",
+          "corpus_count": 10,
+          "in_B": true,
+          "in_A": true
+        },
+        {
+          "substring": "ho",
+          "length": 2,
+          "position": "1-3",
+          "corpus_count": 44,
+          "in_B": false,
+          "in_A": true
+        },
+        {
+          "substring": "ol",
+          "length": 2,
+          "position": "2-4",
+          "corpus_count": 1695,
+          "in_B": true,
+          "in_A": true
+        },
+        {
+          "substring": "hol",
+          "length": 3,
+          "position": "1-4",
+          "corpus_count": 3,
+          "in_B": false,
+          "in_A": true
+        }
+      ],
+      "substrings_missing": [
+        {
+          "substring": "cho",
+          "length": 3,
+          "position": "0-3"
+        }
+      ],
+      "found_count": 4,
+      "missing_count": 1,
+      "removal_tests": [
+        {
+          "removed_atom": "c",
+          "remaining": "hol",
+          "exists": true,
+          "corpus_count": 3
+        },
+        {
+          "removed_atom": "h",
+          "remaining": "col",
+          "exists": false,
+          "corpus_count": 0
+        },
+        {
+          "removed_atom": "o",
+          "remaining": "chl",
+          "exists": false,
+          "corpus_count": 0
+        },
+        {
+          "removed_atom": "l",
+          "remaining": "cho",
+          "exists": false,
+          "corpus_count": 0
+        }
+      ],
+      "any_reduction_exists": true
+    }
+  },
+  "test3_near_neighbors": {
+    "shey": {
+      "nearest_neighbors": [
+        {
+          "middle": "ey",
+          "edit_distance": 2,
+          "corpus_count": 889,
+          "is_headed": true,
+          "head": "e",
+          "term": "y"
+        },
+        {
+          "middle": "eey",
+          "edit_distance": 2,
+          "corpus_count": 644,
+          "is_headed": true,
+          "head": "e",
+          "term": "y"
+        },
+        {
+          "middle": "hy",
+          "edit_distance": 2,
+          "corpus_count": 8,
+          "is_headed": false,
+          "head": "h",
+          "term": "y"
+        },
+        {
+          "middle": "sh",
+          "edit_distance": 2,
+          "corpus_count": 5,
+          "is_headed": false,
+          "head": "s",
+          "term": "h"
+        },
+        {
+          "middle": "lshe",
+          "edit_distance": 2,
+          "corpus_count": 3,
+          "is_headed": false,
+          "head": "l",
+          "term": "e"
+        },
+        {
+          "middle": "he",
+          "edit_distance": 2,
+          "corpus_count": 2,
+          "is_headed": false,
+          "head": "h",
+          "term": "e"
+        },
+        {
+          "middle": "ksheo",
+          "edit_distance": 2,
+          "corpus_count": 2,
+          "is_headed": true,
+          "head": "k",
+          "term": "o"
+        },
+        {
+          "middle": "lshed",
+          "edit_distance": 2,
+          "corpus_count": 2,
+          "is_headed": false,
+          "head": "l",
+          "term": "d"
+        },
+        {
+          "middle": "sed",
+          "edit_distance": 2,
+          "corpus_count": 2,
+          "is_headed": false,
+          "head": "s",
+          "term": "d"
+        },
+        {
+          "middle": "esheo",
+          "edit_distance": 2,
+          "corpus_count": 1,
+          "is_headed": true,
+          "head": "e",
+          "term": "o"
+        }
+      ],
+      "same_frame_middles": [],
+      "same_frame_count": 0,
+      "min_edit_distance": 2
+    },
+    "chey": {
+      "nearest_neighbors": [
+        {
+          "middle": "ey",
+          "edit_distance": 2,
+          "corpus_count": 889,
+          "is_headed": true,
+          "head": "e",
+          "term": "y"
+        },
+        {
+          "middle": "eey",
+          "edit_distance": 2,
+          "corpus_count": 644,
+          "is_headed": true,
+          "head": "e",
+          "term": "y"
+        },
+        {
+          "middle": "hy",
+          "edit_distance": 2,
+          "corpus_count": 8,
+          "is_headed": false,
+          "head": "h",
+          "term": "y"
+        },
+        {
+          "middle": "tched",
+          "edit_distance": 2,
+          "corpus_count": 7,
+          "is_headed": true,
+          "head": "t",
+          "term": "d"
+        },
+        {
+          "middle": "lche",
+          "edit_distance": 2,
+          "corpus_count": 5,
+          "is_headed": false,
+          "head": "l",
+          "term": "e"
+        },
+        {
+          "middle": "pche",
+          "edit_distance": 2,
+          "corpus_count": 5,
+          "is_headed": false,
+          "head": "p",
+          "term": "e"
+        },
+        {
+          "middle": "tche",
+          "edit_distance": 2,
+          "corpus_count": 5,
+          "is_headed": true,
+          "head": "t",
+          "term": "e"
+        },
+        {
+          "middle": "ch",
+          "edit_distance": 2,
+          "corpus_count": 4,
+          "is_headed": false,
+          "head": "c",
+          "term": "h"
+        },
+        {
+          "middle": "lched",
+          "edit_distance": 2,
+          "corpus_count": 4,
+          "is_headed": false,
+          "head": "l",
+          "term": "d"
+        },
+        {
+          "middle": "pcheo",
+          "edit_distance": 2,
+          "corpus_count": 4,
+          "is_headed": false,
+          "head": "p",
+          "term": "o"
+        }
+      ],
+      "same_frame_middles": [
+        {
+          "middle": "cfhy",
+          "corpus_count": 1,
+          "mods": [
+            "f",
+            "h"
+          ],
+          "is_headed": false
+        },
+        {
+          "middle": "ckhy",
+          "corpus_count": 1,
+          "mods": [
+            "k",
+            "h"
+          ],
+          "is_headed": false
+        }
+      ],
+      "same_frame_count": 2,
+      "min_edit_distance": 2
+    },
+    "chedy": {
+      "nearest_neighbors": [
+        {
+          "middle": "edy",
+          "edit_distance": 2,
+          "corpus_count": 1938,
+          "is_headed": true,
+          "head": "e",
+          "term": "y"
+        },
+        {
+          "middle": "tched",
+          "edit_distance": 2,
+          "corpus_count": 7,
+          "is_headed": true,
+          "head": "t",
+          "term": "d"
+        },
+        {
+          "middle": "lched",
+          "edit_distance": 2,
+          "corpus_count": 4,
+          "is_headed": false,
+          "head": "l",
+          "term": "d"
+        },
+        {
+          "middle": "oched",
+          "edit_distance": 2,
+          "corpus_count": 3,
+          "is_headed": true,
+          "head": "o",
+          "term": "d"
+        },
+        {
+          "middle": "pched",
+          "edit_distance": 2,
+          "corpus_count": 3,
+          "is_headed": false,
+          "head": "p",
+          "term": "d"
+        },
+        {
+          "middle": "csed",
+          "edit_distance": 2,
+          "corpus_count": 2,
+          "is_headed": false,
+          "head": "c",
+          "term": "d"
+        },
+        {
+          "middle": "ckhed",
+          "edit_distance": 2,
+          "corpus_count": 1,
+          "is_headed": false,
+          "head": "c",
+          "term": "d"
+        },
+        {
+          "middle": "cphed",
+          "edit_distance": 2,
+          "corpus_count": 1,
+          "is_headed": false,
+          "head": "c",
+          "term": "d"
+        },
+        {
+          "middle": "cthed",
+          "edit_distance": 2,
+          "corpus_count": 1,
+          "is_headed": false,
+          "head": "c",
+          "term": "d"
+        },
+        {
+          "middle": "dched",
+          "edit_distance": 2,
+          "corpus_count": 1,
+          "is_headed": false,
+          "head": "d",
+          "term": "d"
+        }
+      ],
+      "same_frame_middles": [
+        {
+          "middle": "cfhy",
+          "corpus_count": 1,
+          "mods": [
+            "f",
+            "h"
+          ],
+          "is_headed": false
+        },
+        {
+          "middle": "ckhy",
+          "corpus_count": 1,
+          "mods": [
+            "k",
+            "h"
+          ],
+          "is_headed": false
+        }
+      ],
+      "same_frame_count": 2,
+      "min_edit_distance": 2
+    },
+    "shedy": {
+      "nearest_neighbors": [
+        {
+          "middle": "edy",
+          "edit_distance": 2,
+          "corpus_count": 1938,
+          "is_headed": true,
+          "head": "e",
+          "term": "y"
+        },
+        {
+          "middle": "lshed",
+          "edit_distance": 2,
+          "corpus_count": 2,
+          "is_headed": false,
+          "head": "l",
+          "term": "d"
+        },
+        {
+          "middle": "sed",
+          "edit_distance": 2,
+          "corpus_count": 2,
+          "is_headed": false,
+          "head": "s",
+          "term": "d"
+        },
+        {
+          "middle": "fshed",
+          "edit_distance": 2,
+          "corpus_count": 1,
+          "is_headed": false,
+          "head": "f",
+          "term": "d"
+        },
+        {
+          "middle": "kedy",
+          "edit_distance": 2,
+          "corpus_count": 1,
+          "is_headed": true,
+          "head": "k",
+          "term": "y"
+        },
+        {
+          "middle": "kshed",
+          "edit_distance": 2,
+          "corpus_count": 1,
+          "is_headed": true,
+          "head": "k",
+          "term": "d"
+        },
+        {
+          "middle": "lshedo",
+          "edit_distance": 2,
+          "corpus_count": 1,
+          "is_headed": false,
+          "head": "l",
+          "term": "o"
+        }
+      ],
+      "same_frame_middles": [],
+      "same_frame_count": 0,
+      "min_edit_distance": 2
+    },
+    "chol": {
+      "nearest_neighbors": [
+        {
+          "middle": "ol",
+          "edit_distance": 2,
+          "corpus_count": 762,
+          "is_headed": true,
+          "head": "o",
+          "term": "l"
+        },
+        {
+          "middle": "eol",
+          "edit_distance": 2,
+          "corpus_count": 294,
+          "is_headed": true,
+          "head": "e",
+          "term": "l"
+        },
+        {
+          "middle": "eeol",
+          "edit_distance": 2,
+          "corpus_count": 47,
+          "is_headed": true,
+          "head": "e",
+          "term": "l"
+        },
+        {
+          "middle": "ch",
+          "edit_distance": 2,
+          "corpus_count": 4,
+          "is_headed": false,
+          "head": "c",
+          "term": "h"
+        },
+        {
+          "middle": "ctho",
+          "edit_distance": 2,
+          "corpus_count": 4,
+          "is_headed": false,
+          "head": "c",
+          "term": "o"
+        },
+        {
+          "middle": "tcho",
+          "edit_distance": 2,
+          "corpus_count": 4,
+          "is_headed": true,
+          "head": "t",
+          "term": "o"
+        },
+        {
+          "middle": "cpho",
+          "edit_distance": 2,
+          "corpus_count": 3,
+          "is_headed": false,
+          "head": "c",
+          "term": "o"
+        },
+        {
+          "middle": "kcho",
+          "edit_distance": 2,
+          "corpus_count": 3,
+          "is_headed": true,
+          "head": "k",
+          "term": "o"
+        },
+        {
+          "middle": "ckho",
+          "edit_distance": 2,
+          "corpus_count": 2,
+          "is_headed": false,
+          "head": "c",
+          "term": "o"
+        },
+        {
+          "middle": "isol",
+          "edit_distance": 2,
+          "corpus_count": 2,
+          "is_headed": false,
+          "head": "i",
+          "term": "l"
+        }
+      ],
+      "same_frame_middles": [],
+      "same_frame_count": 0,
+      "min_edit_distance": 2
+    }
+  },
+  "test4_structural_patterns": {
+    "ch_initial_middles": {
+      "count": 1,
+      "total_tokens": 4,
+      "types": [
+        "ch"
+      ]
+    },
+    "sh_initial_middles": {
+      "count": 1,
+      "total_tokens": 5,
+      "types": [
+        "sh"
+      ]
+    },
+    "c_initial_compounds": {
+      "count": 55,
+      "total_tokens": 291,
+      "types": [
+        "cfh",
+        "cfhdor",
+        "cfhe",
+        "cfhekch",
+        "cfheo",
+        "cfhy",
+        "ckh",
+        "ckhc",
+        "ckhcfh",
+        "ckhch",
+        "ckhd",
+        "ckhdc",
+        "ckhdd",
+        "ckhe",
+        "ckhed",
+        "ckheed",
+        "ckhef",
+        "ckheo",
+        "ckhh",
+        "ckhhd",
+        "ckho",
+        "ckhoda",
+        "ckhy",
+        "ckhyd",
+        "ckhyfc",
+        "cks",
+        "cpc",
+        "cph",
+        "cphd",
+        "cphe",
+        "cphed",
+        "cphees",
+        "cpheo",
+        "cphh",
+        "cphhe",
+        "cphhof",
+        "cpho",
+        "cphoc",
+        "cphoit",
+        "cpholk",
+        "cpholro",
+        "cse",
+        "cseckh",
+        "csed",
+        "cseek",
+        "cseeod",
+        "cta",
+        "ctch",
+        "cth",
+        "cthd",
+        "cthe",
+        "cthed",
+        "ctheo",
+        "cthi",
+        "ctho"
+      ]
+    },
+    "s_initial_compounds": {
+      "count": 12,
+      "total_tokens": 14,
+      "types": [
+        "sai",
+        "sals",
+        "samok",
+        "sche",
+        "sco",
+        "scs",
+        "sed",
+        "see",
+        "sod",
+        "sop",
+        "sor",
+        "syoke"
+      ]
+    },
+    "ch_bigram_initial_3plus": {
+      "count": 0,
+      "total_tokens": 0,
+      "types": []
+    },
+    "sh_bigram_initial_3plus": {
+      "count": 0,
+      "total_tokens": 0,
+      "types": []
+    },
+    "phantom_common_features": {
+      "all_headless": true,
+      "all_contain_h_mod": true,
+      "all_ch_or_sh_initial": true,
+      "terminal_distribution": {
+        "y": 4,
+        "l": 1
+      },
+      "pseudo_head_distribution": {
+        "s": 2,
+        "c": 3
+      }
+    }
+  },
+  "test5_prefix_compatibility": {
+    "shey": {
+      "pseudo_head": "s",
+      "frame": "s->y",
+      "compatible_prefix_count": 27,
+      "compatible_prefixes": [
+        {
+          "prefix": "BARE",
+          "same_head_tokens": 75,
+          "same_frame_tokens": 0,
+          "headless_tokens": 1236,
+          "total_tokens": 3864
+        },
+        {
+          "prefix": "al",
+          "same_head_tokens": 5,
+          "same_frame_tokens": 0,
+          "headless_tokens": 53,
+          "total_tokens": 173
+        },
+        {
+          "prefix": "ch",
+          "same_head_tokens": 15,
+          "same_frame_tokens": 0,
+          "headless_tokens": 698,
+          "total_tokens": 3492
+        },
+        {
+          "prefix": "da",
+          "same_head_tokens": 7,
+          "same_frame_tokens": 0,
+          "headless_tokens": 1081,
+          "total_tokens": 1083
+        },
+        {
+          "prefix": "do",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 120,
+          "total_tokens": 126
+        },
+        {
+          "prefix": "fch",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 12,
+          "total_tokens": 57
+        },
+        {
+          "prefix": "ka",
+          "same_head_tokens": 5,
+          "same_frame_tokens": 0,
+          "headless_tokens": 236,
+          "total_tokens": 238
+        },
+        {
+          "prefix": "kch",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 32,
+          "total_tokens": 97
+        },
+        {
+          "prefix": "ke",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 73,
+          "total_tokens": 259
+        },
+        {
+          "prefix": "lch",
+          "same_head_tokens": 4,
+          "same_frame_tokens": 0,
+          "headless_tokens": 46,
+          "total_tokens": 315
+        },
+        {
+          "prefix": "lk",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 37,
+          "total_tokens": 438
+        },
+        {
+          "prefix": "ol",
+          "same_head_tokens": 16,
+          "same_frame_tokens": 0,
+          "headless_tokens": 167,
+          "total_tokens": 875
+        },
+        {
+          "prefix": "or",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 21,
+          "total_tokens": 173
+        },
+        {
+          "prefix": "ot",
+          "same_head_tokens": 5,
+          "same_frame_tokens": 0,
+          "headless_tokens": 128,
+          "total_tokens": 1448
+        },
+        {
+          "prefix": "pch",
+          "same_head_tokens": 3,
+          "same_frame_tokens": 0,
+          "headless_tokens": 52,
+          "total_tokens": 245
+        },
+        {
+          "prefix": "po",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 119,
+          "total_tokens": 136
+        },
+        {
+          "prefix": "qo",
+          "same_head_tokens": 5,
+          "same_frame_tokens": 0,
+          "headless_tokens": 573,
+          "total_tokens": 4069
+        },
+        {
+          "prefix": "rch",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 8,
+          "total_tokens": 41
+        },
+        {
+          "prefix": "sa",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 328,
+          "total_tokens": 329
+        },
+        {
+          "prefix": "sch",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 8,
+          "total_tokens": 25
+        },
+        {
+          "prefix": "sh",
+          "same_head_tokens": 8,
+          "same_frame_tokens": 0,
+          "headless_tokens": 283,
+          "total_tokens": 2329
+        },
+        {
+          "prefix": "so",
+          "same_head_tokens": 3,
+          "same_frame_tokens": 0,
+          "headless_tokens": 171,
+          "total_tokens": 189
+        },
+        {
+          "prefix": "ta",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 237,
+          "total_tokens": 237
+        },
+        {
+          "prefix": "tch",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 45,
+          "total_tokens": 172
+        },
+        {
+          "prefix": "te",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 112,
+          "total_tokens": 289
+        },
+        {
+          "prefix": "to",
+          "same_head_tokens": 3,
+          "same_frame_tokens": 0,
+          "headless_tokens": 98,
+          "total_tokens": 115
+        },
+        {
+          "prefix": "yk",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 22,
+          "total_tokens": 314
+        }
+      ],
+      "any_prefix_compatible": true
+    },
+    "chey": {
+      "pseudo_head": "c",
+      "frame": "c->y",
+      "compatible_prefix_count": 22,
+      "compatible_prefixes": [
+        {
+          "prefix": "BARE",
+          "same_head_tokens": 101,
+          "same_frame_tokens": 2,
+          "headless_tokens": 1236,
+          "total_tokens": 3864
+        },
+        {
+          "prefix": "ar",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 28,
+          "total_tokens": 136
+        },
+        {
+          "prefix": "ch",
+          "same_head_tokens": 326,
+          "same_frame_tokens": 0,
+          "headless_tokens": 698,
+          "total_tokens": 3492
+        },
+        {
+          "prefix": "da",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 1081,
+          "total_tokens": 1083
+        },
+        {
+          "prefix": "dch",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 17,
+          "total_tokens": 104
+        },
+        {
+          "prefix": "de",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 4,
+          "total_tokens": 19
+        },
+        {
+          "prefix": "do",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 120,
+          "total_tokens": 126
+        },
+        {
+          "prefix": "fch",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 12,
+          "total_tokens": 57
+        },
+        {
+          "prefix": "lch",
+          "same_head_tokens": 3,
+          "same_frame_tokens": 0,
+          "headless_tokens": 46,
+          "total_tokens": 315
+        },
+        {
+          "prefix": "lk",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 37,
+          "total_tokens": 438
+        },
+        {
+          "prefix": "lsh",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 10,
+          "total_tokens": 116
+        },
+        {
+          "prefix": "ok",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 117,
+          "total_tokens": 1476
+        },
+        {
+          "prefix": "ol",
+          "same_head_tokens": 4,
+          "same_frame_tokens": 0,
+          "headless_tokens": 167,
+          "total_tokens": 875
+        },
+        {
+          "prefix": "or",
+          "same_head_tokens": 3,
+          "same_frame_tokens": 0,
+          "headless_tokens": 21,
+          "total_tokens": 173
+        },
+        {
+          "prefix": "pch",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 52,
+          "total_tokens": 245
+        },
+        {
+          "prefix": "qo",
+          "same_head_tokens": 41,
+          "same_frame_tokens": 0,
+          "headless_tokens": 573,
+          "total_tokens": 4069
+        },
+        {
+          "prefix": "sch",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 8,
+          "total_tokens": 25
+        },
+        {
+          "prefix": "sh",
+          "same_head_tokens": 118,
+          "same_frame_tokens": 0,
+          "headless_tokens": 283,
+          "total_tokens": 2329
+        },
+        {
+          "prefix": "so",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 171,
+          "total_tokens": 189
+        },
+        {
+          "prefix": "tch",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 45,
+          "total_tokens": 172
+        },
+        {
+          "prefix": "to",
+          "same_head_tokens": 4,
+          "same_frame_tokens": 0,
+          "headless_tokens": 98,
+          "total_tokens": 115
+        },
+        {
+          "prefix": "yk",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 22,
+          "total_tokens": 314
+        }
+      ],
+      "any_prefix_compatible": true
+    },
+    "chedy": {
+      "pseudo_head": "c",
+      "frame": "c->y",
+      "compatible_prefix_count": 22,
+      "compatible_prefixes": [
+        {
+          "prefix": "BARE",
+          "same_head_tokens": 101,
+          "same_frame_tokens": 2,
+          "headless_tokens": 1236,
+          "total_tokens": 3864
+        },
+        {
+          "prefix": "ar",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 28,
+          "total_tokens": 136
+        },
+        {
+          "prefix": "ch",
+          "same_head_tokens": 326,
+          "same_frame_tokens": 0,
+          "headless_tokens": 698,
+          "total_tokens": 3492
+        },
+        {
+          "prefix": "da",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 1081,
+          "total_tokens": 1083
+        },
+        {
+          "prefix": "dch",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 17,
+          "total_tokens": 104
+        },
+        {
+          "prefix": "de",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 4,
+          "total_tokens": 19
+        },
+        {
+          "prefix": "do",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 120,
+          "total_tokens": 126
+        },
+        {
+          "prefix": "fch",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 12,
+          "total_tokens": 57
+        },
+        {
+          "prefix": "lch",
+          "same_head_tokens": 3,
+          "same_frame_tokens": 0,
+          "headless_tokens": 46,
+          "total_tokens": 315
+        },
+        {
+          "prefix": "lk",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 37,
+          "total_tokens": 438
+        },
+        {
+          "prefix": "lsh",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 10,
+          "total_tokens": 116
+        },
+        {
+          "prefix": "ok",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 117,
+          "total_tokens": 1476
+        },
+        {
+          "prefix": "ol",
+          "same_head_tokens": 4,
+          "same_frame_tokens": 0,
+          "headless_tokens": 167,
+          "total_tokens": 875
+        },
+        {
+          "prefix": "or",
+          "same_head_tokens": 3,
+          "same_frame_tokens": 0,
+          "headless_tokens": 21,
+          "total_tokens": 173
+        },
+        {
+          "prefix": "pch",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 52,
+          "total_tokens": 245
+        },
+        {
+          "prefix": "qo",
+          "same_head_tokens": 41,
+          "same_frame_tokens": 0,
+          "headless_tokens": 573,
+          "total_tokens": 4069
+        },
+        {
+          "prefix": "sch",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 8,
+          "total_tokens": 25
+        },
+        {
+          "prefix": "sh",
+          "same_head_tokens": 118,
+          "same_frame_tokens": 0,
+          "headless_tokens": 283,
+          "total_tokens": 2329
+        },
+        {
+          "prefix": "so",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 171,
+          "total_tokens": 189
+        },
+        {
+          "prefix": "tch",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 45,
+          "total_tokens": 172
+        },
+        {
+          "prefix": "to",
+          "same_head_tokens": 4,
+          "same_frame_tokens": 0,
+          "headless_tokens": 98,
+          "total_tokens": 115
+        },
+        {
+          "prefix": "yk",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 22,
+          "total_tokens": 314
+        }
+      ],
+      "any_prefix_compatible": true
+    },
+    "shedy": {
+      "pseudo_head": "s",
+      "frame": "s->y",
+      "compatible_prefix_count": 27,
+      "compatible_prefixes": [
+        {
+          "prefix": "BARE",
+          "same_head_tokens": 75,
+          "same_frame_tokens": 0,
+          "headless_tokens": 1236,
+          "total_tokens": 3864
+        },
+        {
+          "prefix": "al",
+          "same_head_tokens": 5,
+          "same_frame_tokens": 0,
+          "headless_tokens": 53,
+          "total_tokens": 173
+        },
+        {
+          "prefix": "ch",
+          "same_head_tokens": 15,
+          "same_frame_tokens": 0,
+          "headless_tokens": 698,
+          "total_tokens": 3492
+        },
+        {
+          "prefix": "da",
+          "same_head_tokens": 7,
+          "same_frame_tokens": 0,
+          "headless_tokens": 1081,
+          "total_tokens": 1083
+        },
+        {
+          "prefix": "do",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 120,
+          "total_tokens": 126
+        },
+        {
+          "prefix": "fch",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 12,
+          "total_tokens": 57
+        },
+        {
+          "prefix": "ka",
+          "same_head_tokens": 5,
+          "same_frame_tokens": 0,
+          "headless_tokens": 236,
+          "total_tokens": 238
+        },
+        {
+          "prefix": "kch",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 32,
+          "total_tokens": 97
+        },
+        {
+          "prefix": "ke",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 73,
+          "total_tokens": 259
+        },
+        {
+          "prefix": "lch",
+          "same_head_tokens": 4,
+          "same_frame_tokens": 0,
+          "headless_tokens": 46,
+          "total_tokens": 315
+        },
+        {
+          "prefix": "lk",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 37,
+          "total_tokens": 438
+        },
+        {
+          "prefix": "ol",
+          "same_head_tokens": 16,
+          "same_frame_tokens": 0,
+          "headless_tokens": 167,
+          "total_tokens": 875
+        },
+        {
+          "prefix": "or",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 21,
+          "total_tokens": 173
+        },
+        {
+          "prefix": "ot",
+          "same_head_tokens": 5,
+          "same_frame_tokens": 0,
+          "headless_tokens": 128,
+          "total_tokens": 1448
+        },
+        {
+          "prefix": "pch",
+          "same_head_tokens": 3,
+          "same_frame_tokens": 0,
+          "headless_tokens": 52,
+          "total_tokens": 245
+        },
+        {
+          "prefix": "po",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 119,
+          "total_tokens": 136
+        },
+        {
+          "prefix": "qo",
+          "same_head_tokens": 5,
+          "same_frame_tokens": 0,
+          "headless_tokens": 573,
+          "total_tokens": 4069
+        },
+        {
+          "prefix": "rch",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 8,
+          "total_tokens": 41
+        },
+        {
+          "prefix": "sa",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 328,
+          "total_tokens": 329
+        },
+        {
+          "prefix": "sch",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 8,
+          "total_tokens": 25
+        },
+        {
+          "prefix": "sh",
+          "same_head_tokens": 8,
+          "same_frame_tokens": 0,
+          "headless_tokens": 283,
+          "total_tokens": 2329
+        },
+        {
+          "prefix": "so",
+          "same_head_tokens": 3,
+          "same_frame_tokens": 0,
+          "headless_tokens": 171,
+          "total_tokens": 189
+        },
+        {
+          "prefix": "ta",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 237,
+          "total_tokens": 237
+        },
+        {
+          "prefix": "tch",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 45,
+          "total_tokens": 172
+        },
+        {
+          "prefix": "te",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 112,
+          "total_tokens": 289
+        },
+        {
+          "prefix": "to",
+          "same_head_tokens": 3,
+          "same_frame_tokens": 0,
+          "headless_tokens": 98,
+          "total_tokens": 115
+        },
+        {
+          "prefix": "yk",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 22,
+          "total_tokens": 314
+        }
+      ],
+      "any_prefix_compatible": true
+    },
+    "chol": {
+      "pseudo_head": "c",
+      "frame": "c->l",
+      "compatible_prefix_count": 22,
+      "compatible_prefixes": [
+        {
+          "prefix": "BARE",
+          "same_head_tokens": 101,
+          "same_frame_tokens": 0,
+          "headless_tokens": 1236,
+          "total_tokens": 3864
+        },
+        {
+          "prefix": "ar",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 28,
+          "total_tokens": 136
+        },
+        {
+          "prefix": "ch",
+          "same_head_tokens": 326,
+          "same_frame_tokens": 0,
+          "headless_tokens": 698,
+          "total_tokens": 3492
+        },
+        {
+          "prefix": "da",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 1081,
+          "total_tokens": 1083
+        },
+        {
+          "prefix": "dch",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 17,
+          "total_tokens": 104
+        },
+        {
+          "prefix": "de",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 4,
+          "total_tokens": 19
+        },
+        {
+          "prefix": "do",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 120,
+          "total_tokens": 126
+        },
+        {
+          "prefix": "fch",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 12,
+          "total_tokens": 57
+        },
+        {
+          "prefix": "lch",
+          "same_head_tokens": 3,
+          "same_frame_tokens": 0,
+          "headless_tokens": 46,
+          "total_tokens": 315
+        },
+        {
+          "prefix": "lk",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 37,
+          "total_tokens": 438
+        },
+        {
+          "prefix": "lsh",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 10,
+          "total_tokens": 116
+        },
+        {
+          "prefix": "ok",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 117,
+          "total_tokens": 1476
+        },
+        {
+          "prefix": "ol",
+          "same_head_tokens": 4,
+          "same_frame_tokens": 0,
+          "headless_tokens": 167,
+          "total_tokens": 875
+        },
+        {
+          "prefix": "or",
+          "same_head_tokens": 3,
+          "same_frame_tokens": 0,
+          "headless_tokens": 21,
+          "total_tokens": 173
+        },
+        {
+          "prefix": "pch",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 52,
+          "total_tokens": 245
+        },
+        {
+          "prefix": "qo",
+          "same_head_tokens": 41,
+          "same_frame_tokens": 0,
+          "headless_tokens": 573,
+          "total_tokens": 4069
+        },
+        {
+          "prefix": "sch",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 8,
+          "total_tokens": 25
+        },
+        {
+          "prefix": "sh",
+          "same_head_tokens": 118,
+          "same_frame_tokens": 0,
+          "headless_tokens": 283,
+          "total_tokens": 2329
+        },
+        {
+          "prefix": "so",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 171,
+          "total_tokens": 189
+        },
+        {
+          "prefix": "tch",
+          "same_head_tokens": 2,
+          "same_frame_tokens": 0,
+          "headless_tokens": 45,
+          "total_tokens": 172
+        },
+        {
+          "prefix": "to",
+          "same_head_tokens": 4,
+          "same_frame_tokens": 0,
+          "headless_tokens": 98,
+          "total_tokens": 115
+        },
+        {
+          "prefix": "yk",
+          "same_head_tokens": 1,
+          "same_frame_tokens": 0,
+          "headless_tokens": 22,
+          "total_tokens": 314
+        }
+      ],
+      "any_prefix_compatible": true
+    }
+  },
+  "test6_suffix_compatibility": {
+    "shey": {
+      "terminal": "y",
+      "opacity_tier": "OPAQUE",
+      "suffix_rate": 0.01242090461682681,
+      "suffix_distribution": {
+        "total": 4267,
+        "suffixed": 53,
+        "dy": 20,
+        "l": 8,
+        "s": 7,
+        "r": 9,
+        "ar": 1,
+        "ol": 1,
+        "or": 2,
+        "hy": 1,
+        "m": 1,
+        "aiin": 2,
+        "ly": 1
+      },
+      "suffix_compatible": true
+    },
+    "chey": {
+      "terminal": "y",
+      "opacity_tier": "OPAQUE",
+      "suffix_rate": 0.01242090461682681,
+      "suffix_distribution": {
+        "total": 4267,
+        "suffixed": 53,
+        "dy": 20,
+        "l": 8,
+        "s": 7,
+        "r": 9,
+        "ar": 1,
+        "ol": 1,
+        "or": 2,
+        "hy": 1,
+        "m": 1,
+        "aiin": 2,
+        "ly": 1
+      },
+      "suffix_compatible": true
+    },
+    "chedy": {
+      "terminal": "y",
+      "opacity_tier": "OPAQUE",
+      "suffix_rate": 0.01242090461682681,
+      "suffix_distribution": {
+        "total": 4267,
+        "suffixed": 53,
+        "dy": 20,
+        "l": 8,
+        "s": 7,
+        "r": 9,
+        "ar": 1,
+        "ol": 1,
+        "or": 2,
+        "hy": 1,
+        "m": 1,
+        "aiin": 2,
+        "ly": 1
+      },
+      "suffix_compatible": true
+    },
+    "shedy": {
+      "terminal": "y",
+      "opacity_tier": "OPAQUE",
+      "suffix_rate": 0.01242090461682681,
+      "suffix_distribution": {
+        "total": 4267,
+        "suffixed": 53,
+        "dy": 20,
+        "l": 8,
+        "s": 7,
+        "r": 9,
+        "ar": 1,
+        "ol": 1,
+        "or": 2,
+        "hy": 1,
+        "m": 1,
+        "aiin": 2,
+        "ly": 1
+      },
+      "suffix_compatible": true
+    },
+    "chol": {
+      "terminal": "l",
+      "opacity_tier": "SEMI_TRANSPARENT",
+      "suffix_rate": 0.09632224168126094,
+      "suffix_distribution": {
+        "total": 1713,
+        "suffixed": 165,
+        "dy": 57,
+        "al": 10,
+        "s": 20,
+        "eey": 1,
+        "or": 29,
+        "ol": 13,
+        "ain": 6,
+        "aiin": 9,
+        "om": 2,
+        "oin": 2,
+        "am": 3,
+        "ar": 5,
+        "r": 4,
+        "g": 1,
+        "m": 1,
+        "oiin": 1,
+        "an": 1
+      },
+      "suffix_compatible": true
+    }
+  },
+  "test7_cross_system": {
+    "shey": {
+      "in_B": false,
+      "in_A": false,
+      "in_AZC": false,
+      "in_any_system": false,
+      "superstrings": [
+        "opsheyt"
+      ],
+      "superstring_count": 1
+    },
+    "chey": {
+      "in_B": false,
+      "in_A": false,
+      "in_AZC": false,
+      "in_any_system": false,
+      "superstrings": [
+        "otcheytch"
+      ],
+      "superstring_count": 1
+    },
+    "chedy": {
+      "in_B": false,
+      "in_A": false,
+      "in_AZC": false,
+      "in_any_system": false,
+      "superstrings": [
+        "apchedyf",
+        "pchedyd"
+      ],
+      "superstring_count": 2
+    },
+    "shedy": {
+      "in_B": false,
+      "in_A": false,
+      "in_AZC": false,
+      "in_any_system": false,
+      "superstrings": [],
+      "superstring_count": 0
+    },
+    "chol": {
+      "in_B": false,
+      "in_A": false,
+      "in_AZC": false,
+      "in_any_system": false,
+      "superstrings": [
+        "opchol",
+        "ocholshod",
+        "tchol",
+        "ochol",
+        "orchols",
+        "opchold",
+        "opcholal"
+      ],
+      "superstring_count": 7
+    }
+  },
+  "test8_counterfactual_hazard": {
+    "shey": {
+      "forbidden_pair_count": 3,
+      "involved_pairs": [
+        {
+          "pair": "shey->aiin",
+          "role": "source",
+          "partner": "aiin",
+          "hazard_class": "PHASE_ORDERING",
+          "partner_corpus_count": 834,
+          "partner_is_phantom": false
+        },
+        {
+          "pair": "shey->al",
+          "role": "source",
+          "partner": "al",
+          "hazard_class": "PHASE_ORDERING",
+          "partner_corpus_count": 521,
+          "partner_is_phantom": false
+        },
+        {
+          "pair": "shey->c",
+          "role": "source",
+          "partner": "c",
+          "hazard_class": "PHASE_ORDERING",
+          "partner_corpus_count": 5,
+          "partner_is_phantom": false
+        }
+      ],
+      "active_partner_count": 3,
+      "would_create_active_forbidden": true,
+      "phantom_phantom_pairs": 0
+    },
+    "chey": {
+      "forbidden_pair_count": 3,
+      "involved_pairs": [
+        {
+          "pair": "dy->chey",
+          "role": "target",
+          "partner": "dy",
+          "hazard_class": "PHASE_ORDERING",
+          "partner_corpus_count": 675,
+          "partner_is_phantom": false
+        },
+        {
+          "pair": "chey->chedy",
+          "role": "source",
+          "partner": "chedy",
+          "hazard_class": "PHASE_ORDERING",
+          "partner_corpus_count": 0,
+          "partner_is_phantom": true
+        },
+        {
+          "pair": "chey->shedy",
+          "role": "source",
+          "partner": "shedy",
+          "hazard_class": "PHASE_ORDERING",
+          "partner_corpus_count": 0,
+          "partner_is_phantom": true
+        }
+      ],
+      "active_partner_count": 1,
+      "would_create_active_forbidden": true,
+      "phantom_phantom_pairs": 2
+    },
+    "chedy": {
+      "forbidden_pair_count": 2,
+      "involved_pairs": [
+        {
+          "pair": "chey->chedy",
+          "role": "target",
+          "partner": "chey",
+          "hazard_class": "PHASE_ORDERING",
+          "partner_corpus_count": 0,
+          "partner_is_phantom": true
+        },
+        {
+          "pair": "chedy->ee",
+          "role": "source",
+          "partner": "ee",
+          "hazard_class": "COMPOSITION_JUMP",
+          "partner_corpus_count": 151,
+          "partner_is_phantom": false
+        }
+      ],
+      "active_partner_count": 1,
+      "would_create_active_forbidden": true,
+      "phantom_phantom_pairs": 1
+    },
+    "shedy": {
+      "forbidden_pair_count": 3,
+      "involved_pairs": [
+        {
+          "pair": "chey->shedy",
+          "role": "target",
+          "partner": "chey",
+          "hazard_class": "PHASE_ORDERING",
+          "partner_corpus_count": 0,
+          "partner_is_phantom": true
+        },
+        {
+          "pair": "shedy->aiin",
+          "role": "source",
+          "partner": "aiin",
+          "hazard_class": "COMPOSITION_JUMP",
+          "partner_corpus_count": 834,
+          "partner_is_phantom": false
+        },
+        {
+          "pair": "shedy->o",
+          "role": "source",
+          "partner": "o",
+          "hazard_class": "COMPOSITION_JUMP",
+          "partner_corpus_count": 388,
+          "partner_is_phantom": false
+        }
+      ],
+      "active_partner_count": 2,
+      "would_create_active_forbidden": true,
+      "phantom_phantom_pairs": 1
+    },
+    "chol": {
+      "forbidden_pair_count": 2,
+      "involved_pairs": [
+        {
+          "pair": "chol->r",
+          "role": "source",
+          "partner": "r",
+          "hazard_class": "CONTAINMENT_TIMING",
+          "partner_corpus_count": 749,
+          "partner_is_phantom": false
+        },
+        {
+          "pair": "l->chol",
+          "role": "target",
+          "partner": "l",
+          "hazard_class": "CONTAINMENT_TIMING",
+          "partner_corpus_count": 855,
+          "partner_is_phantom": false
+        }
+      ],
+      "active_partner_count": 2,
+      "would_create_active_forbidden": true,
+      "phantom_phantom_pairs": 0
+    }
+  },
+  "test9_statistical_absence": {
+    "c_initial_headless": {
+      "type_count": 62,
+      "token_count": 617,
+      "length_distribution": {
+        "2": 6,
+        "3": 8,
+        "5": 16,
+        "4": 18,
+        "1": 1,
+        "6": 11,
+        "7": 2
+      },
+      "types": [
+        "c",
+        "cf",
+        "cfh",
+        "cfhdor",
+        "cfhe",
+        "cfhekch",
+        "cfheo",
+        "cfhy",
+        "ch",
+        "ck",
+        "ckh",
+        "ckhc",
+        "ckhcfh",
+        "ckhch",
+        "ckhd",
+        "ckhdc",
+        "ckhdd",
+        "ckhe",
+        "ckhed",
+        "ckheed",
+        "ckhef",
+        "ckheo",
+        "ckhh",
+        "ckhhd",
+        "ckho",
+        "ckhoda",
+        "ckhy",
+        "ckhyd",
+        "ckhyfc",
+        "cks",
+        "cp",
+        "cpc",
+        "cph",
+        "cphd",
+        "cphe",
+        "cphed",
+        "cphees",
+        "cpheo",
+        "cphh",
+        "cphhe",
+        "cphhof",
+        "cpho",
+        "cphoc",
+        "cphoit",
+        "cpholk",
+        "cpholro",
+        "cs",
+        "cse",
+        "cseckh",
+        "csed",
+        "cseek",
+        "cseeod",
+        "ct",
+        "cta",
+        "ctch",
+        "cth",
+        "cthd",
+        "cthe",
+        "cthed",
+        "ctheo",
+        "cthi",
+        "ctho"
+      ],
+      "max_length": 7
+    },
+    "s_initial_headless": {
+      "type_count": 20,
+      "token_count": 176,
+      "length_distribution": {
+        "1": 1,
+        "3": 8,
+        "2": 7,
+        "4": 2,
+        "5": 2
+      },
+      "types": [
+        "s",
+        "sa",
+        "sai",
+        "sals",
+        "samok",
+        "sche",
+        "sco",
+        "scs",
+        "sd",
+        "sed",
+        "see",
+        "sh",
+        "sk",
+        "sl",
+        "so",
+        "sod",
+        "sop",
+        "sor",
+        "sp",
+        "syoke"
+      ],
+      "max_length": 5
+    },
+    "ch_containing_in_c_headless": {
+      "count": 49,
+      "types": [
+        "cfh",
+        "cfhdor",
+        "cfhe",
+        "cfhekch",
+        "cfheo",
+        "cfhy",
+        "ch",
+        "ckh",
+        "ckhc",
+        "ckhcfh",
+        "ckhch",
+        "ckhd",
+        "ckhdc",
+        "ckhdd",
+        "ckhe",
+        "ckhed",
+        "ckheed",
+        "ckhef",
+        "ckheo",
+        "ckhh",
+        "ckhhd",
+        "ckho",
+        "ckhoda",
+        "ckhy",
+        "ckhyd",
+        "ckhyfc",
+        "cph",
+        "cphd",
+        "cphe",
+        "cphed",
+        "cphees",
+        "cpheo",
+        "cphh",
+        "cphhe",
+        "cphhof",
+        "cpho",
+        "cphoc",
+        "cphoit",
+        "cpholk",
+        "cpholro",
+        "cseckh",
+        "ctch",
+        "cth",
+        "cthd",
+        "cthe",
+        "cthed",
+        "ctheo",
+        "cthi",
+        "ctho"
+      ]
+    },
+    "sh_containing_in_s_headless": {
+      "count": 2,
+      "types": [
+        "sche",
+        "sh"
+      ]
+    },
+    "all_headless_by_initial": {
+      "y": {
+        "type_count": 37,
+        "token_count": 584
+      },
+      "d": {
+        "type_count": 60,
+        "token_count": 1142
+      },
+      "l": {
+        "type_count": 93,
+        "token_count": 1283
+      },
+      "c": {
+        "type_count": 62,
+        "token_count": 617
+      },
+      "g": {
+        "type_count": 2,
+        "token_count": 9
+      },
+      "i": {
+        "type_count": 36,
+        "token_count": 1055
+      },
+      "s": {
+        "type_count": 20,
+        "token_count": 176
+      },
+      "h": {
+        "type_count": 9,
+        "token_count": 64
+      },
+      "r": {
+        "type_count": 44,
+        "token_count": 871
+      },
+      "p": {
+        "type_count": 49,
+        "token_count": 204
+      },
+      "f": {
+        "type_count": 20,
+        "token_count": 61
+      },
+      "q": {
+        "type_count": 47,
+        "token_count": 114
+      },
+      "m": {
+        "type_count": 2,
+        "token_count": 77
+      },
+      "x": {
+        "type_count": 2,
+        "token_count": 13
+      },
+      "n": {
+        "type_count": 1,
+        "token_count": 7
+      }
+    },
+    "bigram_initial_fractions": {
+      "ch": 0.00024763201882003344,
+      "sh": 0.0003095400235250418,
+      "total_bigrams": 16153
+    },
+    "h_modifier_in_c_3plus": {
+      "total": 55,
+      "with_h": 48,
+      "fraction": 0.8727272727272727,
+      "types_with_h": [
+        "cfh",
+        "cfhdor",
+        "cfhe",
+        "cfhekch",
+        "cfheo",
+        "cfhy",
+        "ckh",
+        "ckhc",
+        "ckhcfh",
+        "ckhch",
+        "ckhd",
+        "ckhdc",
+        "ckhdd",
+        "ckhe",
+        "ckhed",
+        "ckheed",
+        "ckhef",
+        "ckheo",
+        "ckhh",
+        "ckhhd",
+        "ckho",
+        "ckhoda",
+        "ckhy",
+        "ckhyd",
+        "ckhyfc",
+        "cph",
+        "cphd",
+        "cphe",
+        "cphed",
+        "cphees",
+        "cpheo",
+        "cphh",
+        "cphhe",
+        "cphhof",
+        "cpho",
+        "cphoc",
+        "cphoit",
+        "cpholk",
+        "cpholro",
+        "cseckh",
+        "ctch",
+        "cth",
+        "cthd",
+        "cthe",
+        "cthed",
+        "ctheo",
+        "cthi",
+        "ctho"
+      ],
+      "types_without_h": [
+        "cks",
+        "cpc",
+        "cse",
+        "csed",
+        "cseek",
+        "cseeod",
+        "cta"
+      ]
+    },
+    "h_modifier_in_s_3plus": {
+      "total": 12,
+      "with_h": 1,
+      "fraction": 0.08333333333333333,
+      "types_with_h": [
+        "sche"
+      ],
+      "types_without_h": [
+        "sai",
+        "sals",
+        "samok",
+        "sco",
+        "scs",
+        "sed",
+        "see",
+        "sod",
+        "sop",
+        "sor",
+        "syoke"
+      ]
+    }
+  },
+  "test10_mechanism_identification": {
+    "mechanisms": {
+      "A_CONSTRUCTION_PROHIBITION": {
+        "description": "Atom grammar forbids the combination at slot level",
+        "evidence_for": [],
+        "evidence_against": [
+          "All atoms appear in their respective slots in other MIDDLEs (Test 1)"
+        ],
+        "verdict": "REJECTED"
+      },
+      "B_SELECTIONAL_COLLAPSE": {
+        "description": "PREFIX or suffix system categorically excludes these MIDDLEs",
+        "evidence_for": [],
+        "evidence_against": [
+          "All phantoms have at least one PREFIX that hosts MIDDLEs with the same pseudo-HEAD",
+          "All phantom terminals have standard suffix compatibility"
+        ],
+        "verdict": "REJECTED"
+      },
+      "C_SAFETY_PRUNING": {
+        "description": "Vocabulary system specifically excludes these to prevent hazard",
+        "evidence_for": [
+          "All 5 phantoms are hazard SOURCES in forbidden transitions",
+          "C1546: ALL headed tokens have 0% hazard \u2014 vocabulary prevents headed hazard sources",
+          "Phantoms are length 4-5, non-phantoms are length 1-2 \u2014 longer compounds are excluded"
+        ],
+        "evidence_against": [],
+        "verdict": "CONTRIBUTING"
+      },
+      "D_LEXICAL_CURATION": {
+        "description": "ch/sh-initial MIDDLE is a dead naming pattern \u2014 these were never instantiated",
+        "evidence_for": [
+          "C1178: ch/sh-initial MIDDLE is dead naming pattern (ch-initial 3+ char MIDDLEs: 0, sh-initial: 0)",
+          "All 5 phantoms are ch- or sh-initial MIDDLEs",
+          "36 initial bigrams have no 3+ char MIDDLEs vs 143 that do",
+          "Frequent initial bigrams with no 3+ extensions: []"
+        ],
+        "evidence_against": [],
+        "verdict": "CONFIRMED"
+      }
+    },
+    "phantom_bigram_analysis": {
+      "shey": {
+        "bigrams": [
+          {
+            "bigram": "sh",
+            "exists_in_corpus": true,
+            "corpus_count": 208
+          },
+          {
+            "bigram": "he",
+            "exists_in_corpus": true,
+            "corpus_count": 182
+          },
+          {
+            "bigram": "ey",
+            "exists_in_corpus": true,
+            "corpus_count": 1562
+          }
+        ],
+        "all_bigrams_exist": true,
+        "missing_bigrams": []
+      },
+      "chey": {
+        "bigrams": [
+          {
+            "bigram": "ch",
+            "exists_in_corpus": true,
+            "corpus_count": 932
+          },
+          {
+            "bigram": "he",
+            "exists_in_corpus": true,
+            "corpus_count": 182
+          },
+          {
+            "bigram": "ey",
+            "exists_in_corpus": true,
+            "corpus_count": 1562
+          }
+        ],
+        "all_bigrams_exist": true,
+        "missing_bigrams": []
+      },
+      "chedy": {
+        "bigrams": [
+          {
+            "bigram": "ch",
+            "exists_in_corpus": true,
+            "corpus_count": 932
+          },
+          {
+            "bigram": "he",
+            "exists_in_corpus": true,
+            "corpus_count": 182
+          },
+          {
+            "bigram": "ed",
+            "exists_in_corpus": true,
+            "corpus_count": 2711
+          },
+          {
+            "bigram": "dy",
+            "exists_in_corpus": true,
+            "corpus_count": 2667
+          }
+        ],
+        "all_bigrams_exist": true,
+        "missing_bigrams": []
+      },
+      "shedy": {
+        "bigrams": [
+          {
+            "bigram": "sh",
+            "exists_in_corpus": true,
+            "corpus_count": 208
+          },
+          {
+            "bigram": "he",
+            "exists_in_corpus": true,
+            "corpus_count": 182
+          },
+          {
+            "bigram": "ed",
+            "exists_in_corpus": true,
+            "corpus_count": 2711
+          },
+          {
+            "bigram": "dy",
+            "exists_in_corpus": true,
+            "corpus_count": 2667
+          }
+        ],
+        "all_bigrams_exist": true,
+        "missing_bigrams": []
+      },
+      "chol": {
+        "bigrams": [
+          {
+            "bigram": "ch",
+            "exists_in_corpus": true,
+            "corpus_count": 932
+          },
+          {
+            "bigram": "ho",
+            "exists_in_corpus": true,
+            "corpus_count": 57
+          },
+          {
+            "bigram": "ol",
+            "exists_in_corpus": true,
+            "corpus_count": 1271
+          }
+        ],
+        "all_bigrams_exist": true,
+        "missing_bigrams": []
+      }
+    },
+    "non_phantom_source_properties": {
+      "dy": {
+        "length": 2,
+        "is_headed": false,
+        "head": "d",
+        "corpus_count": 675
+      },
+      "l": {
+        "length": 1,
+        "is_headed": false,
+        "head": "l",
+        "corpus_count": 855
+      },
+      "c": {
+        "length": 1,
+        "is_headed": false,
+        "head": "c",
+        "corpus_count": 5
+      },
+      "he": {
+        "length": 2,
+        "is_headed": false,
+        "head": "h",
+        "corpus_count": 2
+      }
+    }
+  },
+  "synthesis": {
+    "primary_mechanism": "D_LEXICAL_CURATION",
+    "secondary_mechanism": "C_SAFETY_PRUNING",
+    "rejected_mechanisms": [
+      "A_CONSTRUCTION_PROHIBITION",
+      "B_SELECTIONAL_COLLAPSE"
+    ],
+    "key_finding": "ch/sh is a PREFIX-domain pattern that categorically does not extend to MIDDLE-initial position for compounds of length 3+. All 5 phantom MIDDLEs are instances of this dead pattern. The atoms (c,h,s,e,d,y,o,l) and their slot assignments are individually legal, but the ch/sh-initial compound MIDDLE construction was never instantiated in the corpus.",
+    "ch_sh_positional_partition": {
+      "ch_as_PREFIX": 3492,
+      "sh_as_PREFIX": 2329,
+      "ch_as_MIDDLE_initial_3plus": 0,
+      "sh_as_MIDDLE_initial_3plus": 0,
+      "ratio_PREFIX_to_MIDDLE": 5821.0
+    },
+    "defense_in_depth_confirmed": true,
+    "defense_in_depth_explanation": "The forbidden transition topology prohibits transitions involving ch/sh-initial MIDDLEs that the vocabulary system already prevents from existing. This provides a second layer of protection: even if the naming pattern were revived (e.g., in a variant manuscript or extended vocabulary), the hazard topology would still prevent dangerous transitions.",
+    "connection_to_C1178": "C1178 identified 15 phantom MIDDLEs as a dead ch/sh naming pattern in the dark pipeline. The 5 hazard phantoms are a SUBSET of this same pattern. The hazard topology was defined at a level of generality that includes this dead pattern, providing structural insurance against its revival.",
+    "connection_to_C1546": "C1546 established that ALL headed tokens have 0% hazard source rate. The phantoms contain HEAD-set atoms (e, o) at non-initial positions, making them \"displaced HEAD\" compounds per C1494. But C1494 proved displaced HEADs function as TERMINALS, not HEADs \u2014 so these phantoms would be headless compounds if they existed, consistent with hazard being exclusively a headless phenomenon."
+  },
+  "corpus_statistics": {
+    "b_middle_types": 1293,
+    "b_middle_tokens": 23096,
+    "a_middle_types": 972,
+    "azc_middle_types": 617,
+    "total_headless_types": 484,
+    "total_headless_tokens": 6277,
+    "headless_ttr": 0.07710689819977697
+  }
+}

@@ -14,7 +14,7 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 ## COGNITIVE STANCE
 
-You are the UNGUARDED version of the expert-advisor. Same 1,396 constraints, same evidence base, but:
+You are the UNGUARDED version of the expert-advisor. Same 1,399 constraints, same evidence base, but:
 - **Follow chains across tiers.** If Tier 2 evidence points toward a Tier 3 interpretation, SAY SO and explain why.
 - **Treat Brunschwig/Rupescissa alignment as working fact**, not "merely consistent." The fits passed. Build on them.
 - **Propose connections** between constraints that the conservative expert would flag as "speculative." That's your job.
@@ -62,6 +62,7 @@ You are the UNGUARDED version of the expert-advisor. Same 1,396 constraints, sam
 - **Use C1534-C1539 (PREFIX atom taxonomy)** — Phase 544: PREFIX decomposes into 15 characters in three-tier positional classification (MODIFIER/BASE/DUAL). Base-to-HEAD selection V=0.478 — each base selects a distinct operational domain. i-atom categorically excluded from PREFIX (iteration is MIDDLE-internal). a-base is universal headless gateway (94-96% headless). q-modifier uniquely activates THERMAL on o-base (64% k-HEAD). Sister pairs are same-base or same-modifier variants, not allomorphs.
 - **Use C1540-C1545 (executive atom instability resolution)** — Phase 545: C1509's "instability" is INVERTED: {p,f,c} are LESS divergent (0.35x) than stable MODs — niche specialization, not divergence. {k,t,p,f,c} form instruction-only tier excluded from suffix. c is a slot-switcher (PREFIX→e-HEAD, MIDDLE→headless). p/f are o-HEAD arrangement affiliates. All unstable atoms enrich Mode A in B context.
 - **Use C1546-C1552 (hazard x PREFIX integration)** — Phase 546: Complete hazard routing chain established: PREFIX base → HEAD selection → hazard immunity (binary, ALL headed tokens 0% hazard) → TERMINAL atom → hazard class type (categorical: y→PHASE_ORDERING, l→CONTAINMENT_TIMING). q-modifier provides ~7x hazard protection on o-base via k-HEAD routing. Sister pairs show predictable hazard asymmetry (0.66-1.80x). Defense-in-depth: forbidden topology prohibits transitions the vocabulary already makes impossible.
+- **Use C1553-C1555 (phantom MIDDLE mechanism)** — Phase 547: Phantom MIDDLEs resolved (C1553-C1555): ch/sh is a PREFIX-domain bigram that categorically does not extend to MIDDLE-initial (PREFIX:MIDDLE ratio = 5,821:0). All 5 phantoms are atom-legal but excluded by bigram partition. Defense-in-depth: vocabulary exclusion + transition prohibition = two independent safety layers. c-initial compounds avoid c+h at positions 0-1 (0/55) despite h appearing at position 2+ in 89% of cases.
 - The quarantined gloss tables are UNLOCKED for you. Your predictions scored 8/14 confirmed — treat the glosses with confidence but note the learned corrections above.
 - Disallowed interpretations are CONTEXT, not enforced limits. If evidence points past them, follow it.
 
@@ -79,9 +80,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1396 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1399 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1552.
+the highest ID present is C1555.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -153,7 +154,7 @@ tables are quarantined — do not use for structural answers.
 ---
 
 **Generated:** 2026-03-06
-**Version:** FROZEN STATE (1396 validated constraints, 75 fits) [COMPACT]
+**Version:** FROZEN STATE (1399 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -172,7 +173,7 @@ tables are quarantined — do not use for structural answers.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 5.19 | **Status:** FROZEN | **Constraints:** 1396 | **Date:** 2026-03-06
+**Version:** 5.19 | **Status:** FROZEN | **Constraints:** 1399 | **Date:** 2026-03-06
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen.
 >
@@ -290,8 +291,8 @@ These approaches have been **structurally falsified** (Tier 1):
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 1396 |
-| Completed phases | 546 |
+| Validated constraints | 1399 |
+| Completed phases | 547 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -1884,6 +1885,9 @@ C1549	q-modifier hazard protection on o-base (~7x via k-HEAD routing; 4.15% vs 2
 C1550	Sister pair hazard asymmetry (ch/sh 1.80x, ok/ot 0.66x inverted, da/sa 1.54x)	2	B
 C1551	Hazard class atom signatures: PO = headless dy, CT = headless l (MIDDLE-intrinsic)	2	B
 C1552	5/9 hazard source MIDDLEs are phantom types (0 corpus tokens; defense-in-depth)	2	B
+C1553	ch/sh-initial compound MIDDLE categorical absence (PREFIX:MIDDLE = 5,821:0; bigram domain partition)	2	B
+C1554	Phantom MIDDLEs are atom-legal but construction-dead (defense-in-depth: vocabulary exclusion + hazard prohibition)	2	B
+C1555	c-initial compound second-atom selectivity: c+h at pos 0-1 categorically absent (0/55) despite h at pos 2+ in 89%	2	B
 
 ---
 

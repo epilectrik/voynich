@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1396 validated constraints | **Version:** 5.35 | **Date:** 2026-03-06
+**Total:** 1399 validated constraints | **Version:** 5.36 | **Date:** 2026-03-06
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5390,6 +5390,9 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 | 1550 | Sister pair hazard source asymmetry | 2 | B, PREFIX, sister pair, hazard, asymmetry, ch, sh, ok, ot, da, sa, C1449, C1539, C1187 | ch/sh 1.804x (ch 4.73% vs sh 2.76%). ok/ot 0.664x INVERTED (ok 6.09% vs ot 9.17%). da/sa 1.537x. da/ta 1.354x. da/ka 1.529x. |
 | 1551 | PHASE_ORDERING exclusively headless y-terminal dy; CONTAINMENT_TIMING exclusively l-terminal | 2 | B, MIDDLE, hazard, PHASE_ORDERING, CONTAINMENT_TIMING, headless, y-terminal, l-terminal, dy, l, C1529, C1530, C1547 | dy=675 tokens across 10+ PREFIXes (100% PHASE_ORDERING). l=855 tokens across 12+ PREFIXes (100% CONTAINMENT_TIMING). Both MIDDLE-intrinsic not PREFIX-induced. |
 | 1552 | 5/9 hazard source MIDDLEs are phantom types absent from corpus | 2 | B, MIDDLE, hazard, phantom, forbidden, corpus, chey, shey, chedy, shedy, chol, C1531, C1178 | chey=0, shey=0, chedy=0, shedy=0, chol=0. All ch/sh-initial dead naming pattern. 4 corpus-present sources (dy,l,c,he) carry 100% of actual hazard. |
+| 1553 | ch/sh-initial compound MIDDLE categorical absence | 2 | B, MIDDLE, atom, ch, sh, compound, positional-partition, PREFIX, C1178, C1394, C1534, C1552 | 0 ch/sh-initial compound MIDDLEs (3+ chars) in entire corpus. PREFIX:MIDDLE ratio 5,821:0. c-initial compounds: 55 types/291 tokens. s-initial: 12/14. ch/sh bigram is PREFIX-domain only. |
+| 1554 | Phantom MIDDLEs are atom-legal but construction-dead (defense-in-depth) | 2 | B, MIDDLE, phantom, atom, slot, construction, defense-in-depth, hazard, C1552, C1553, C1178, C1209, C1546 | All 5 phantoms pass atom slot legality, PREFIX compatibility (22-27 each), suffix compatibility. Prohibition at BIGRAM level (C1553) not atom level. Forbidden topology covers vocabulary-excluded MIDDLEs. |
+| 1555 | c-initial compound second-atom selectivity (c+h adjacency absent) | 2 | B, MIDDLE, atom, c-initial, h-atom, second-atom, selectivity, C1389, C1553, C1472 | 49/55 c-initial compounds (89.1%) contain h, but h ALWAYS at position 2+ (c+[k/t/f/p]+h). c+h at positions 0-1 = 0 types. Bigram-level prohibition, not atom-level. |
 
 **Phase 546 findings (Hazard x PREFIX Integration, 7 research questions, 11 analysis dimensions):**
 - STRONGEST FINDING: Universal HEAD atom hazard source immunity (C1546). ALL 5 HEAD atoms {a,e,o,k,t} have exactly 0% source rate across 16,819 headed tokens. EXTENDS C1446 from k-only to entire HEAD class. HEAD presence vs absence is the PRIMARY binary safety gate. Three-way base x HEAD x hazard decomposition confirms immunity is HEAD-INTRINSIC, not base-mediated.
@@ -5400,6 +5403,13 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 - PHASE_ORDERING = exclusively headless y-terminal 'dy'; CONTAINMENT_TIMING = exclusively l-terminal 'l'. Both spread across 10-12+ PREFIXes. Hazard is MIDDLE-intrinsic, not PREFIX-induced. PREFIX modulates RATE, not EXISTENCE.
 - Conservative forbidden topology: 5/9 source MIDDLEs are phantom (0 corpus tokens). Grammar defines safety net broader than vocabulary requires. Defense-in-depth architecture.
 - COMPLETE hazard routing chain now established: PREFIX base -> HEAD selection -> hazard immunity (binary) -> TERMINAL atom -> hazard class type (categorical).
+
+**Phase 547 findings (Phantom MIDDLE Mechanism, 4 hypotheses tested, 10 analytical tests):**
+- PRIMARY MECHANISM: D_LEXICAL_CURATION confirmed. ch/sh is a PREFIX-domain bigram that categorically does not extend to MIDDLE-initial position for compounds of length 3+ (C1553). PREFIX:MIDDLE ratio 5,821:0. Individual atoms c, s, h all appear freely in MIDDLE position -- prohibition is at bigram level.
+- SECONDARY MECHANISM: C_SAFETY_PRUNING contributing. All 5 phantom MIDDLEs are hazard sources involved in 2-3 forbidden pairs each. Forbidden transition topology provides defense-in-depth: vocabulary exclusion (C1553) + transition prohibition (C109) = two independent safety layers.
+- REJECTED: A_CONSTRUCTION_PROHIBITION (all atoms legal in assigned slots per C1209/C1210) and B_SELECTIONAL_COLLAPSE (22-27 compatible PREFIXes each, suffix-compatible terminals).
+- c-initial compound second-atom selectivity (C1555): 49/55 c-initial compounds contain h, but h is ALWAYS at position 2+ (c+[k/t/f/p]+h pattern). c+h adjacency at positions 0-1 is categorically absent. Confirms bigram-level prohibition.
+- Defense-in-depth architecture confirmed (C1554): Phantom MIDDLEs pass every atomic legality test but are excluded by the ch/sh positional partition. The forbidden topology covers MIDDLEs that the vocabulary system already makes impossible -- structural insurance against revival of the dead naming pattern.
 
 ---
 
