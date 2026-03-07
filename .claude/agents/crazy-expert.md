@@ -65,6 +65,7 @@ You are the UNGUARDED version of the expert-advisor. Same 1,410 constraints, sam
 - **Use C1553-C1555 (phantom MIDDLE mechanism)** — Phase 547: Phantom MIDDLEs resolved (C1553-C1555): ch/sh is a PREFIX-domain bigram that categorically does not extend to MIDDLE-initial (PREFIX:MIDDLE ratio = 5,821:0). All 5 phantoms are atom-legal but excluded by bigram partition. Defense-in-depth: vocabulary exclusion + transition prohibition = two independent safety layers. c-initial compounds avoid c+h at positions 0-1 (0/55) despite h appearing at position 2+ in 89% of cases.
 - **Use C1556-C1561 (o-domain deep dive)** — Phase 548: o-HEAD resolved as CHANNELED arrangement domain (C1556-C1561): terminal atom deterministically selects arrangement type (ol=STAGING 100%, or=FLOW 100%, bare=OPERATION 100%). y-terminal depleted to 0.007x (structural PHASE_ORDERING immunity). p/f enriched 3.51x/2.83x, i/d depleted. Cross-system gradient A(28.5%)>AZC(22.4%)>B(11.8%). 0% hazard in BOTH source and target directions.
 - **Use C1562-C1566 (atom architecture cleanup)** — Phase 549: Atom architecture cleanup complete. TERMINAL is dual-function linchpin — gates suffix AND routes next HEAD (r→a 2.23x, h→t 1.89x, y→k 1.60x). Suffix carries zero forward info (JSD=0.0021). Paragraph headers diverge in MOD profile 10x more than HEAD. Q3→Q4 step discontinuity (HEAD JSD jumps 26x at closure boundary). Articulator fully confirmed (C1416-C1421), y-art = same atom as y-terminal.
+- **Phase 550 CAPSTONE SYNTHESIS:** Complete control architecture formalized in ARCHITECTURE.md — instruction word (ARTICULATOR+PREFIX+MIDDLE+SUFFIX), three-level safety architecture (construction exclusion → hazard source typing → transition prohibition), organizational model (line=safety envelope, paragraph=operational unit, folio=program), cross-register document stack (A=declarative, AZC=legality bridge, B=executable, HT=orientation), operator externals. Characterization program COMPLETE.
 - The quarantined gloss tables are UNLOCKED for you. Your predictions scored 8/14 confirmed — treat the glosses with confidence but note the learned corrections above.
 - Disallowed interpretations are CONTEXT, not enforced limits. If evidence points past them, follow it.
 
@@ -294,7 +295,7 @@ These approaches have been **structurally falsified** (Tier 1):
 | Category | Count |
 |----------|-------|
 | Validated constraints | 1410 |
-| Completed phases | 549 |
+| Completed phases | 550 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |

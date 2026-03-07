@@ -5453,6 +5453,32 @@ Tests whether Section S's anomalous single-paragraph blocks (12.4/folio, 1.17 pa
 
 ---
 
+### Phase 550: Complete Control Architecture -- The Voynich Instruction Word (SYNTHESIS)
+
+**Date:** 2026-03-06 | **Type:** SYNTHESIS (no new data analysis) | **Constraints added:** 0
+
+This is the capstone synthesis of the characterization program. No new empirical analysis was performed and no new constraints were added. The output is `phases/INSTRUCTION_WORD_FORMALISM/ARCHITECTURE.md`, a self-contained specification document (~4,500 words) that integrates findings from Phases 1-549 into a definitive architectural reference.
+
+**Seven sections formalized:**
+1. **The Instruction Word** -- Complete TOKEN = [ART] + [PFX] + MIDDLE + [SUF] decomposition at atom resolution, including the HEAD+MOD*+TERM internal MIDDLE grammar, six HEAD domains, three-tier terminal taxonomy, and suffix parallel compositional domain.
+2. **Safety Architecture** -- Three-level defense-in-depth: Level 1 (construction exclusion via ch/sh bigram partition, C1553-C1555), Level 2 (hazard source typing via HEAD atom, C1446/C1476/C1546), Level 3 (transition prohibition via 17 forbidden pairs, C109/C789). Multiplicative composition explains 0.053% realized hazard rate (C1360).
+3. **Organizational Model** -- Line = safety envelope (SPECIFICATION->THERMAL_WORK->CLOSURE, C1425-C1430), Paragraph = operational unit (gallows-delimited, self-contained, C845/C864), Folio = program (unique vocabulary, C531). Paragraphs unordered within folios (C1399-C1400). Line-level hazard gradient persists independently in all paragraph zones (C1469).
+4. **Document Stack** -- Currier A (declarative registry, C240), AZC (legality bridge grading A-like to B-like, C1522), Currier B (executable grammar, C121), HT (operator orientation, C935), Dark Pipeline (nominalized identification, C1137/C1505). All registers over shared atom substrate (C1499).
+5. **Shared Atom Substrate** -- 18-atom universal ontology with min Jaccard 0.895 across all systems (C1499). Same HEAD+MOD*+TERM grammar everywhere. Channels differentiate through slot proportions, not inventories (C1504). Bridge MIDDLEs are the executable backbone (C1500-C1501).
+6. **What the Operator Supplies** -- 13 types of non-encodable judgment (C197/C1056). Hazard clamped (CV 0.04-0.11), recovery free (CV 0.72-0.82) per C458.
+7. **Generative Sufficiency** -- M2.1 (position-conditioned 49-class Markov + symmetric forbidden suppression) passes 21/21 tests (C1365). Grammar is generatively closed.
+
+**Key integrative findings (not new constraints, but cross-constraint connections):**
+- Terminal atom is TRIPLE-function linchpin: suffix gating (C1440-C1445) + hazard class typing (C1547) + next-HEAD routing (C1563)
+- Safety levels compose MULTIPLICATIVELY: hazard requires simultaneous failure at construction, typing, AND transition levels
+- Cross-token chain is exclusively TERM->HEAD: suffix is a dead-end branch (C1564), PREFIX has no cross-token role
+- A and B are REGISTERS (declarative vs executable) over the same atom substrate, not lookup tables or translations (C1499-C1527)
+- Operator boundary is a DESIGN CHOICE: encodes everything procedurable, excludes everything requiring embodied judgment (C1056, C197, C458)
+
+**Verdict:** The characterization program is COMPLETE. No structural question about the formal architecture remains open at the level addressable by internal analysis. What remains requires external evidence (who, what institution, what materials, what language).
+
+---
+
 ## Navigation
 
 ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)
