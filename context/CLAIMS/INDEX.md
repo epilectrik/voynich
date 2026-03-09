@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1410 validated constraints | **Version:** 5.39 | **Date:** 2026-03-06
+**Total:** 1424 validated constraints | **Version:** 5.43 | **Date:** 2026-03-09
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5537,8 +5537,85 @@ Tier 3 interpretive synthesis placing the VMS within the landscape of medieval t
 
 ---
 
-## Navigation
+### Phase 560: Within-Domain Compositional Control (WITHIN_DOMAIN_COMPOSITIONAL_CONTROL)
 
-↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1567 | Within-domain structural spine validation | 2 | B, MIDDLE, atom, HEAD, domain, compositional, validation, structural, T2A, C1475, C1476, C1477, C1478, C1482, C1556, C1557, C1561, C1563, C1566 | 16/17 T2A spine tests pass. K1 0% THERMAL hazard, A5 100% double-ii safe, O1 98.1% STAGING, O2 98.9% FLOW, X1-X4 routing confirmed, X6 25.1x Q3-Q4 jump. O3 bare-o OPERATION 42.6% (only failure, classifier tension). |
+| 1568 | Within-domain cross-folio discriminability | 2 | B, MIDDLE, atom, HEAD, domain, compositional, cross-folio, discriminability, section, classification, random-forest, C1475, C1556, C1563 | D5a NN +6.1pp, D5b RF +8.8pp (both >5pp threshold). Top features: o_l_frac, xd_headless_frac, t_flow_purity, e_ey_frac, routing rates. D1 76.8% section accuracy (null 52.7%). |
+| 1569 | Section-level within-domain parameterization | 2 | B, MIDDLE, atom, HEAD, domain, compositional, section, parameterization, folio, within-section, C1475, C1556, C1563, C1567, C1568 | D2 15/32 features significant by section. D3 0/3 within-section folio resolution. D4 ARI=-0.024. D6a 28.8% paragraph differentiation (borderline). Two-level architecture: section-shared within-domain tuning + folio-specific domain mix. |
+
+**Phase 560 findings (Within-Domain Compositional Control, PARTIAL_PASS, corrects Phases 558-559):**
+- Hierarchical model validated: HEAD selects operational domain, subordinate features (PREFIX, TERM, MOD, SUFFIX) operate as within-domain control dials. 16/17 structural spine invariants confirmed (C1567). All four terminal-to-HEAD routing enrichments pass. Q3-Q4 closure step 25.1x.
+- Within-domain features add +6-9pp discriminative power beyond HEAD proportions (C1568). Both nearest-neighbor and random forest independently confirm. Top features span arrangement dispatch (o_l_frac), flow tuning (t_flow_purity, t_mod_rate), stability anchoring (e_ey_frac), and routing grammar (adj_r_to_a_rate, adj_y_to_k_rate).
+- Within-domain variation is primarily between-section, not between-folio-within-section (C1569). Herbal/Bio/Stars etc. have systematically different control dial settings, but folios within the same section share the same within-domain profile. Folio specificity lives in domain mix (HEAD proportions).
+- Paragraph differentiation borderline (28.8% of folios, threshold 30%) with gradient alignment in significant folios (8 folios, D6b). Suggestive but not confirmed.
+- Single T2A failure (O3: bare-o OPERATION purity 42.6%) reveals CategoryClassifier/C1556 tension for single-atom MIDDLE 'o'. All other arrangement dispatch tests pass cleanly.
+
+---
+
+### Phase 560b: Deployment and Routing Execution Texture (WITHIN_DOMAIN_COMPOSITIONAL_CONTROL)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1570 | Deployment features are section-level not folio-level discriminators | 2 | B, MIDDLE, atom, HEAD, domain, compositional, deployment, zone, routing, closure, headless, paragraph, section, folio, within-section, discrimination, C1463, C1464, C1466, C1486, C1563, C1567, C1568, C1569 | T2b 18/19 pass. RF COMBINED 90.4% (+6.1pp). D3b 0/18 within-section FAIL across 6 feature sets (6-94 dims). D7: 52/56 deployment features ratio>0.5. Folio specificity not in deployment packaging at folio-average resolution. |
+| 1571 | Deployment Ward clustering highest section ARI | 2 | B, MIDDLE, atom, HEAD, domain, compositional, deployment, clustering, Ward, ARI, section, C1567, C1568, C1569, C1570 | DEPLOYMENT Ward ARI=0.615 (highest). MARGINAL=0.443 (+0.172 gap). COMBINED=0.451 (diluted). Section identity encoded more in deployment packaging than domain proportions. |
+
+**Phase 560b findings (Deployment Execution Texture, DEPLOYMENT_PARTIAL):**
+- Deployment features (56: zone-conditioned, routing, closure, headless v2, paragraph) are valid instruments (T2b 18/19 pass) but do NOT recover within-section folio discrimination (D3b 0/18 across all feature sets, C1570).
+- Ward-linkage clustering on deployment features alone achieves highest ARI (0.615), exceeding marginals (0.443) and combined (0.451). Deployment grammar is the strongest section-level discriminator (C1571).
+- RF COMBINED reaches 90.4% section classification — project's highest. Paragraph features dominate (#1 para_iteration_emphasis_span, 6 in top 20). Headless and closure features also prominent.
+- D3b decisive negative: 0/18 section-set combinations pass. Real folios are MORE similar than shuffled versions. Folio-average features at ANY tested resolution cannot distinguish folios within sections.
+- NN degraded by NaN-heavy deployment dimensions (-11pp). Methodological caution: tree-based methods handle sparse deployment features; distance-based methods do not.
+- Architectural conclusion: section templates fix BOTH domain tuning AND deployment grammar. Folio individuality = HEAD proportions (domain mix) + stochastic token-level freedom within section-determined templates.
+
+### Phase 561: Hierarchical Trace Attribution (HIERARCHICAL_TRACE_ATTRIBUTION)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1572 | Hierarchical variance partition validates 4-layer nesting with selective layer loading | 2 | B, structural, hierarchy, variance, section, folio, paragraph, line, decomposition, ANOVA, template, C1570, C1571 | Section z=8.0 (8/9 sig). Folio z=7.1 (9/9 sig). Paragraph z=2.2 (4/9 sig). Line selective: hazard z=4.09, opacity z=4.53. LSI section=10.28, folio=7.06, paragraph=2.22 (3/4 supported). Residual ~85%. |
+| 1573 | Paragraph emphasis distributions recover within-section folio specificity that averaging destroyed | 2 | B, paragraph, distribution, folio, within-section, specificity, emphasis, EMD, C1398, C1570, domain, section | T2 C1 EMD: S z=6.21, H z=5.06, B z=2.34 (all PASS). T2 3/4 sub-tests PASS. T3 B1 variance ratio PASS (3/3 sections). ARI direct vs unsupervised = 0.287 (gradient confirmed). |
+| 1574 | Headless ecology is folio-specific not paragraph-specific | 2 | B, headless, ecology, folio, paragraph, section, hierarchy, C1398 | T4-B: 13/14 features VS_folio > VS_section. T4-C: 3.6% folios (FAIL, threshold 30%). hl_rate VS_section=0.192, VS_folio=0.258. Headless is folio-level infrastructure, not paragraph-subroutine dial. displaced_kt=0 provisional (pending C1494-C1497 reconciliation). |
+
+**Phase 561 findings (Hierarchical Trace Attribution, HIERARCHY_VALIDATED):**
+- All 4 hierarchy levels (section, folio, paragraph, line) are real structural layers with selective layer loading by feature family rather than universal dominance. Domain features load on section/folio; hazard/closure features load on line. Section is the strongest structurally (mean z=10.28), folio adds genuine budget beyond section (9/9 features z>2), paragraph subroutines are real (4/9 z>2), line safety packets confirmed for hazard/closure (C1572).
+- Paragraph emphasis DISTRIBUTIONS recover within-section folio specificity that folio-averaging missed (C1570). Folio identity below section level is represented less by average parameter values than by the distributional geometry of paragraph subroutines and line safety packets generated under a folio-specific domain budget. Continuous EMD z=6.21 (S), 5.06 (H), 2.34 (B). The folio-specificity signal lives in distributional shape, not means (C1573).
+- Headless ecology is folio-parameterized (13/14 features VS_folio > VS_section) but NOT paragraph-varying (T4-C 3.6% FAIL). Headless is a folio-level infrastructural regime, not a paragraph-subroutine accent. Paragraphs vary in operational emphasis; infrastructure style remains program-level (C1574). Displaced k/t = 0 noted but provisional pending C1494-C1497 reconciliation.
+- Mean total explained variance (non-residual) = 14.7%. The manuscript is highly stochastic within hierarchical templates. 85% of token-level variance is residual.
+- Trace attribution is not trace execution. This phase validates the architectural substrate; executor construction is the next phase's problem.
+
+### Phase 562: Section Template Trace Executor (SECTION_TEMPLATE_TRACE_EXECUTOR)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1575 | Hierarchical trace executor produces weakly monotonic improvement across 4 layers | 2 | B, structural, hierarchy, trace, executor, section, folio, paragraph, line, token, monotonic, C1572, C1573, C1574 | E1=-3.3635, E2=-3.2928, E3=-3.2928, E4=-3.2832. Improvement 2.39%. Wilcoxon E4 vs E1: z=-27.85, p=9.5e-171. E4>E1 in all 5 sections. All 3 ablations significant. |
+| 1576 | Paragraph cloud operates at aggregate geometric level not per-token level | 2 | B, paragraph, cloud, folio, recovery, distributional, geometry, C1573 | P2 cloud recovery: H=0.382, B=0.588 (2/3 PASS). E3 domain = E2 domain (kNN at any weight degrades). Paragraph specificity is shape, not per-token prior. |
+| 1577 | Four permutation null models confirm non-trivial hierarchical structure | 2 | B, null, permutation, hierarchy, token, domain, terminal, routing, C1563 | N1 z=14.07 (token-shuffle). N3 z=9.27 (line-shuffle). N4 z=8.77 (form-shuffle). N5 z=14.18 (terminal-shuffle). All >> thresholds. |
+| 1578 | E4 improvement sources are line-phase domain adjustment and hazard envelope | 2 | B, line, phase, domain, hazard, envelope, routing, closure, ablation | E5 ablation p=3.7e-58. E6 ablation p=2.8e-3. E7 ablation p~0. Closure mask disabled (WORK_SEMI 87% dominance). |
+
+**Phase 562 findings (Section Template Trace Executor, TRACE_EXECUTOR_VALIDATED):**
+- The 5-layer hierarchical model (section -> folio -> paragraph -> line -> token) produces real, validated trace execution for Currier B. 23,096 tokens scored on 5 axes (domain, hazard, routing, closure, headless) under 4 progressively enriched context modes. Multi-axis prediction improves weakly monotonically: E4 >= E3 >= E2 > E1 (C1575).
+- Folio budget is the primary improvement source: E1->E2 accounts for ~87% of total E1->E4 improvement. Folio domain fracs are the single most informative context beyond section membership.
+- Paragraph-level domain refinement is noise, not signal. kNN paragraph cloud estimation at ANY weight degrades per-token domain LL. Paragraph cloud information operates at the aggregate geometric level (P2 cloud recovery PASS), not at the token level (C1576). This constrains future executor design.
+- E4 improvement over E2 comes from line-phase domain adjustment (dampened SPEC/WORK/CLOSE modulation) and hazard envelope adjustment (SAFE_OPEN/THERMAL_INTERIOR/DANGEROUS_CLOSE). Closure phase gating is counterproductive with 87% WORK_SEMI dominance (C1578).
+- All 4 null models confirm non-trivial hierarchy. Token-shuffling (N1 z=14.07) destroys all structure. Within-domain form-shuffling (N4 z=8.77) confirms compositional token structure carries information beyond domain inventory. Terminal-shuffling (N5 z=14.18) confirms C1563 routing grammar is real and structurally productive (C1577).
+- Composite LL improvement is 2.4% — modest because the manuscript is highly stochastic within templates (85% residual variance per C1572). This validates the executor substrate, not a full simulator.
+
+### Phase 562b: Closure + Paragraph Cloud Mini-Audit
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1579 | CTS continuous closure encoding improves over categorical closure | 2 | B, closure, CTS, line, paragraph, Gaussian, encoding, C1434, C1440, C1566 | E3 closure 0.226 > E2 closure 0.187 (+0.039). CTS vs q4_opaque_rate r=0.81. q3→q4 discontinuity p=1.19e-29. V1 FAIL: SPEC > CLOSE > WORK. V2 FAIL: z=0.29 (section-driven). |
+| 1580 | Paragraph domain composition does NOT predict line hazard envelope | 2 | B, paragraph, hazard, envelope, cloud, blend, negative | E3 hazard -1.097 < E2 hazard -1.092 (blend hurts). Within-paragraph envelope std 0.563 >> between-paragraph 0.090. Paragraphs not envelope-consistent. |
+
+**Phase 562b findings (Closure + Paragraph Cloud Mini-Audit, CTS IMPROVED / hazard blend DISPROVED):**
+- Replacing 5-class categorical closure (87% WORK_SEMI) with continuous CTS scored by Gaussian LL activates paragraph-level closure modulation: E3 closure > E2 closure (+0.039). CTS captures q4_opaque_rate (r=0.81) and q3→q4 discontinuity (C1579).
+- Paragraph domain composition does NOT predict line-level hazard envelope distribution. E3 hazard with blend=0.3 is WORSE than E2 hazard (-0.005). Within-paragraph envelope variation far exceeds between-paragraph variation. Paragraph cloud is confirmed as aggregate distributional signature, not online hazard controller (C1580).
+- CTS is section-driven, not folio-individuated (V2 z=0.29), consistent with C1570 (deployment features are section discriminators).
+- For Phase 563: use CTS closure; treat paragraph cloud as offline trace validator only; drop paragraph hazard blend.
+
+---
+
+## Navigation
 
 ↑ [../CLAUDE_INDEX.md](../CLAUDE_INDEX.md)

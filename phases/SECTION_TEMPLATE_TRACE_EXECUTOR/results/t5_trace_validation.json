@@ -1,0 +1,266 @@
+{
+ "metadata": {
+  "phase": "562",
+  "task": "T5_trace_validation",
+  "timestamp": "2026-03-08T23:53:27",
+  "n_tokens": 23096,
+  "elapsed_seconds": 151.4
+ },
+ "tests": {
+  "P1_monotonic_improvement": {
+   "pass": true,
+   "weak_monotonic": true,
+   "mean_composite_LL": {
+    "E1": -3.363512,
+    "E2": -3.29281,
+    "E3": -3.29281,
+    "E4": -3.283247
+   },
+   "wilcoxon": {
+    "E4_vs_E1": {
+     "z": -27.8543,
+     "p": 9.542273876656555e-171
+    },
+    "E4_vs_E2": {
+     "z": -0.7305,
+     "p": 0.4651000609756993
+    },
+    "E2_vs_E1": {
+     "z": -32.0676,
+     "p": 1.2498446713839684e-225
+    }
+   },
+   "section_E4_gt_E1": {
+    "H": true,
+    "T": true,
+    "B": true,
+    "C": true,
+    "S": true
+   },
+   "n_sections_E4_gt_E1": 5,
+   "criteria": "weak_mono AND wilcoxon_E4_vs_E1 p<0.01 AND sec_E4>E1 in >=3/5"
+  },
+  "P2_paragraph_cloud_recovery": {
+   "pass": true,
+   "primary_pass": true,
+   "incremental_pass": true,
+   "primary_pass_sections": [
+    "H",
+    "B"
+   ],
+   "incremental_pass_sections": [
+    "S",
+    "H",
+    "B"
+   ],
+   "per_section": {
+    "S": {
+     "n_folios": 23,
+     "mean_ed_e1": 0.245665,
+     "mean_ed_e2": 0.194671,
+     "mean_ed_e4": 0.188447,
+     "ratio_e4_e1": 0.7671,
+     "ratio_e4_e2": 0.968,
+     "primary_met": false,
+     "incremental_met": true
+    },
+    "H": {
+     "n_folios": 31,
+     "mean_ed_e1": 0.295258,
+     "mean_ed_e2": 0.09863,
+     "mean_ed_e4": 0.112689,
+     "ratio_e4_e1": 0.3817,
+     "ratio_e4_e2": 1.1425,
+     "primary_met": true,
+     "incremental_met": true
+    },
+    "B": {
+     "n_folios": 20,
+     "mean_ed_e1": 0.148771,
+     "mean_ed_e2": 0.083122,
+     "mean_ed_e4": 0.087463,
+     "ratio_e4_e1": 0.5879,
+     "ratio_e4_e2": 1.0522,
+     "primary_met": true,
+     "incremental_met": true
+    }
+   },
+   "n_qualifying_folios": 80,
+   "criteria": "primary (ED E4 <= 0.7*E1) in >=2/3 major AND E4<=1.5*E2 in >=2/3"
+  },
+  "P3_routing_fidelity": {
+   "P3a_pass": true,
+   "P3a_within_15pct": 4,
+   "P3a_within_10pct": 3,
+   "P3a_results": {
+    "r": {
+     "target_domain": "ACTIVE",
+     "ref_enrichment": 2.231,
+     "observed_enrichment": 2.1279,
+     "deviation_pct": -4.6,
+     "n_transitions": 1435,
+     "within_15pct": true,
+     "within_10pct": true
+    },
+    "y": {
+     "target_domain": "THERMAL",
+     "ref_enrichment": 1.597,
+     "observed_enrichment": 1.729,
+     "deviation_pct": 8.3,
+     "n_transitions": 2934,
+     "within_15pct": true,
+     "within_10pct": true
+    },
+    "h": {
+     "target_domain": "FLOW",
+     "ref_enrichment": 1.892,
+     "observed_enrichment": 2.1235,
+     "deviation_pct": 12.2,
+     "n_transitions": 817,
+     "within_15pct": true,
+     "within_10pct": false
+    },
+    "m": {
+     "target_domain": "ARRANGEMENT",
+     "ref_enrichment": 1.554,
+     "observed_enrichment": 1.6765,
+     "deviation_pct": 7.9,
+     "n_transitions": 48,
+     "within_15pct": true,
+     "within_10pct": true
+    }
+   },
+   "P3b_results": {
+    "n": {
+     "target_domain": "ACTIVE",
+     "ref_enrichment": 1.424,
+     "observed_enrichment": 1.4037,
+     "deviation_pct": -1.4,
+     "n_transitions": 1580
+    },
+    "l": {
+     "target_domain": "STABILITY",
+     "ref_enrichment": 1.246,
+     "observed_enrichment": 1.2558,
+     "deviation_pct": 0.8,
+     "n_transitions": 1622
+    }
+   },
+   "marginal_domain_fracs": {
+    "THERMAL": 0.1843,
+    "FLOW": 0.0548,
+    "ACTIVE": 0.1831,
+    "STABILITY": 0.4163,
+    "ARRANGEMENT": 0.1615,
+    "HEADLESS": 0.0
+   },
+   "criteria": "all 4 core within +/-15%, at least 3/4 within +/-10%"
+  },
+  "P4_headless_regime_fidelity": {
+   "pass": true,
+   "n_folios_tested": 82,
+   "n_e4_closer": 82,
+   "pct_e4_closer": 100.0,
+   "wilcoxon_z": -7.8659,
+   "wilcoxon_p": 3.663890942678352e-15,
+   "criteria": "p<0.05 AND E4 closer for >=60% of folios"
+  },
+  "P5_ablation_necessity": {
+   "pass": true,
+   "n_significant_ablations": 3,
+   "e4_mean_ll": -3.283246,
+   "ablations": {
+    "E5_no_phase_adj": {
+     "mean_ll": -3.285122,
+     "wilcoxon_z": -16.0768,
+     "wilcoxon_p": 3.7106637353439076e-58,
+     "e4_better": true,
+     "significant": true
+    },
+    "E6_no_routing_mask": {
+     "mean_ll": -3.293728,
+     "wilcoxon_z": -2.9935,
+     "wilcoxon_p": 0.002758401919537507,
+     "e4_better": true,
+     "significant": true
+    },
+    "E7_no_hazard_envelope": {
+     "mean_ll": -3.285211,
+     "wilcoxon_z": -46.3013,
+     "wilcoxon_p": 0.0,
+     "e4_better": true,
+     "significant": true
+    }
+   },
+   "criteria": ">=2 of 3 ablations significantly worse than E4 (p<0.05)"
+  },
+  "null_models": {
+   "N1_token_shuffle": {
+    "n_permutations": 100,
+    "real_mean": -3.283246,
+    "null_mean": -3.325908,
+    "null_std": 0.003033,
+    "z_score": 14.0677,
+    "pass_threshold": 5.0,
+    "pass": true
+   },
+   "N3_line_shuffle": {
+    "n_permutations": 50,
+    "real_mean": -3.283246,
+    "null_mean": -3.289742,
+    "null_std": 0.000701,
+    "z_score": 9.2664,
+    "pass_threshold": 2.0,
+    "pass": true
+   },
+   "N4_domain_form_shuffle": {
+    "n_permutations": 100,
+    "real_mean_non_domain": -1.716987,
+    "null_mean": -1.756184,
+    "null_std": 0.004472,
+    "z_score": 8.7651,
+    "pass_threshold": 3.0,
+    "pass": true,
+    "axes_scored": [
+     "closure",
+     "hazard",
+     "headless",
+     "routing"
+    ]
+   },
+   "N5_terminal_shuffle": {
+    "n_permutations": 50,
+    "real_mean_domain": -1.566259,
+    "null_mean": -1.580771,
+    "null_std": 0.001024,
+    "z_score": 14.1766,
+    "pass_threshold": 2.0,
+    "pass": true,
+    "note": "exploratory, reported not phase-critical"
+   }
+  }
+ },
+ "overall": {
+  "status": "TRACE_EXECUTOR_VALIDATED",
+  "trace_validated": true,
+  "trace_partial": true,
+  "trace_failed": false,
+  "component_pass": {
+   "P1": true,
+   "P2": true,
+   "P2_primary": true,
+   "P3a": true,
+   "P4": true,
+   "P5": true,
+   "N1": true,
+   "N3": true,
+   "N4": true,
+   "N5": true
+  },
+  "criteria": {
+   "VALIDATED": "P1 AND P2 AND P3a AND >=2 of {P4,P5} AND N1 z>5 AND N4 z>3",
+   "PARTIAL": "P1 AND P2_primary AND >=1 of {P3a, P4}",
+   "FAILED": "P1 fails globally OR P2 primary fails"
+  }
+ }
+}

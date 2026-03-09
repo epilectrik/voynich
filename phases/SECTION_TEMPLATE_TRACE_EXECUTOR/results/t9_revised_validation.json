@@ -1,0 +1,160 @@
+{
+  "metadata": {
+    "phase": "562b",
+    "task": "T9_revised_validation",
+    "timestamp": "2026-03-09T00:54:18.116560",
+    "n_tokens": 23096,
+    "baseline": "t4_token_traces.json",
+    "revised": "t8_revised_traces.json"
+  },
+  "A_baseline_comparison": {
+    "A1_composite": {
+      "original_E4": -3.28325,
+      "revised_E4": -2.91064,
+      "delta": 0.3726,
+      "improved": true
+    },
+    "A2_per_axis": {
+      "domain": {
+        "original": -1.56626,
+        "revised": -1.56626,
+        "delta": 0.0
+      },
+      "hazard": {
+        "original": -1.08781,
+        "revised": -1.08781,
+        "delta": 0.0
+      },
+      "routing": {
+        "original": -1.41864,
+        "revised": -1.41864,
+        "delta": 0.0
+      },
+      "closure": {
+        "original": -0.52398,
+        "revised": 0.22122,
+        "delta": 0.7452
+      },
+      "headless": {
+        "original": -0.40355,
+        "revised": -0.40355,
+        "delta": 0.0
+      }
+    },
+    "A3_monotonicity": {
+      "E1": -3.02318,
+      "E2": -2.93734,
+      "E3": -2.92015,
+      "E4": -2.91064,
+      "holds": true
+    },
+    "A4_wilcoxon": {
+      "z": -85.84561,
+      "p": 0.0,
+      "effect_size_r": -0.56487,
+      "n": 23096,
+      "n_nonzero": 23096
+    }
+  },
+  "B_closure_diagnostics": {
+    "B1_cts_vs_phase": {
+      "phases": {
+        "CLOSE": {
+          "median": 0.20311,
+          "n": 463
+        },
+        "SPEC": {
+          "median": 0.23811,
+          "n": 1312
+        },
+        "WORK": {
+          "median": 0.18689,
+          "n": 531
+        }
+      },
+      "kw_H": 14.93836,
+      "kw_p": 0.00057,
+      "eta_squared": 0.00562,
+      "n_lines": 2306
+    },
+    "B2_folio_within_section": {
+      "z_score": 0.28859,
+      "verdict": "marginal"
+    },
+    "B3_paragraph_cts_modulation": {
+      "E2_closure_mean": 0.18697,
+      "E3_closure_mean": 0.22629,
+      "improved": true
+    },
+    "B4_cts_null_model": {
+      "real_E4_composite": -2.91064,
+      "note": "deferred - requires re-execution with shuffled CTS assignments"
+    },
+    "B5_line_level_reconstruction": {
+      "cts_vs_q4_opaque": {
+        "pearson_r": 0.80945,
+        "p": 0.0,
+        "n": 2306
+      },
+      "cts_vs_m_close_bias": {
+        "pearson_r": 0.39515,
+        "p": 0.0,
+        "n": 2306
+      },
+      "phase_separation": {
+        "CLOSE_mean": 0.29278,
+        "SPEC_mean": 0.31734,
+        "WORK_mean": 0.27599,
+        "eta_squared": 0.00562,
+        "kw_p": 0.00057
+      },
+      "q4_discontinuity": {
+        "high_shift_cts_mean": 0.33994,
+        "low_shift_cts_mean": 0.26821,
+        "n_high": 1115,
+        "n_low": 1191,
+        "mann_whitney_p": 0.0
+      }
+    }
+  },
+  "C_paragraph_cloud": {
+    "C1_e3_hazard": {
+      "E2_hazard_mean": -1.09174,
+      "E3_hazard_mean": -1.09669,
+      "improved": false
+    },
+    "C2_e3_overall": {
+      "E2_composite_mean": -2.93734,
+      "E3_composite_mean": -2.92015,
+      "e3_ne_e2": true
+    },
+    "C3_envelope_consistency": {
+      "within_para_entropy": 0.56317,
+      "between_para_entropy": 0.08993,
+      "consistent": false,
+      "n_paragraphs": 82
+    },
+    "C4_blend_sensitivity": {
+      "blend_0.3_E3_hazard": -1.09669,
+      "note": "informational; 0.2/0.4 deferred — require separate executor runs"
+    }
+  },
+  "D_null_models": {
+    "D1_token_shuffle": {
+      "original_z": 14.0677,
+      "note": "architecture unchanged; N1 z applies to both original and revised"
+    },
+    "D2_domain_form_shuffle": {
+      "original_z": 8.7651,
+      "note": "domain axis unchanged; N4 z applies to both original and revised"
+    },
+    "D_bootstrap_ci": {
+      "mean_delta": 0.37257,
+      "ci_95_low": 0.36401,
+      "ci_95_high": 0.38076,
+      "ci_excludes_zero": true
+    }
+  },
+  "verdict": "IMPROVED",
+  "summary": "Revised E4 composite -2.91064 vs original -3.28325 (delta=0.3726, 11.34858%). Improved axes: closure. Wilcoxon p=0.00e+00, effect r=-0.56487. Monotonicity E4>=E3>=E2>E1 holds."
+}
