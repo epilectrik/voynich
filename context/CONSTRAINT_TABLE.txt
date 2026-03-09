@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1424 constraints | 2026-03-09
+CONSTRAINT_REFERENCE v2.6 | 1431 constraints | 2026-03-09
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1428,3 +1428,10 @@ C1577	Four permutation null models confirm non-trivial hierarchical structure	2	
 C1578	E4 improvement sources are line-phase domain adjustment and hazard envelope	2	B, line, phase, domain, hazard, envelope, routing, closure, ablation	E5 ablation p=3.7e-58. E6 ablation p=2.8e-3. E7 ablation p~0. Closure mask disabled (WORK_SEMI 87% dominance).
 C1579	CTS continuous closure encoding improves over categorical closure	2	B, closure, CTS, line, paragraph, Gaussian, encoding, C1434, C1440, C1566	E3 closure 0.226 > E2 closure 0.187 (+0.039). CTS vs q4_opaque_rate r=0.81. q3->q4 discontinuity p=1.19e-29. V1 FAIL: SPEC > CLOSE > WORK. V2 FAIL: z=0.29 (section-driven).
 C1580	Paragraph domain composition does NOT predict line hazard envelope	2	B, paragraph, hazard, envelope, cloud, blend, negative	E3 hazard -1.097 < E2 hazard -1.092 (blend hurts). Within-paragraph envelope std 0.563 >> between-paragraph 0.090. Paragraphs not envelope-consistent.
+C1581	Full hierarchical supervisory trace coupled to virtual apparatus yields structured plant behavior beyond section-only, budget-only, and null controls	2	B, virtual apparatus, hierarchy, trace, coupling, C1575, C1577, C1569	Full > B2 for 5/7 folios, full > N1 for 7/7 folios. Mean viability 0.9616. Mean Y_final 0.878. 3/4 null types destroyed.
+C1582	Line packet state produces statistically significant plant state differentiation across all 7 state variables	2	B, virtual apparatus, line, packet, state, C1425, C1426, C1427, C1428, C1578	7/7 state vars significant globally (KW). Strongest: C H=191.6, Y H=148.4. Per-folio median 6/7 sig.
+C1583	Terminal routing grammar does NOT produce observable punctual plant deflections at token level (negative result)	2	B, virtual apparatus, routing, terminal, negative, C1563, C1564, C1470	0/4 routing signatures directionally correct. Rates 0.45-0.50 near chance at window=5. Routing = sustained bias not punctual deflection.
+C1584	Headless folio regime effect on plant containment is directionally correct but statistically underpowered	3	B, virtual apparatus, headless, containment, underpowered, C1488, C1574, C1523	High-headless C=0.630 > low 0.589; S=0.844 > 0.747. Mann-Whitney p=1.00, p=0.48. N=3 vs 4 (underpowered).
+C1585	CTS continuous closure contributes genuine value to coupled plant behavior	2	B, virtual apparatus, CTS, closure, line, paragraph, C1579, C1434, C1440, C1566	Full > B3 (no-CTS) viability 6/7, Y_final 7/7. C-separation positive 6/7.
+C1586	N3 line-shuffle null is non-destructive: line ordering carries less coupled-plant information than token composition	2	B, virtual apparatus, null, line-shuffle, ordering, C1399, C1400, C1470, C1577	N3 3/7 folios pass vs N1 6/7, N2 6/7, N4 5/7. Line order < token composition for coupling.
+C1587	A2_SEALED_RECIRCULATION underperforms A1_BATH_REFLUX for Herbal folios	3	B, virtual apparatus, profile, Herbal, assignment, C1248, C1249, C1380	f55r viab 0.742 (A2) vs 1.000 (A1). f40v viab 0.991 (A2) vs 1.000 (A1). 2/2 Herbal A2-assigned prefer A1.

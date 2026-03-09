@@ -1,0 +1,9646 @@
+{
+ "metadata": {
+  "phase": "563",
+  "task": "T4_null_and_ablation_executor",
+  "timestamp": "2026-03-09T09:16:18",
+  "n_pilot_folios": 8,
+  "pilot_folios": [
+   "f78r",
+   "f84r",
+   "f55r",
+   "f40v",
+   "f43v",
+   "f104r",
+   "f111r",
+   "f116v"
+  ],
+  "n_baselines": 5,
+  "n_nulls": 4,
+  "n_perms": 50,
+  "elapsed_seconds": 5.9
+ },
+ "reference": {
+  "f78r": {
+   "viability_fraction": 1.0,
+   "hazard_count": 0,
+   "Y_final": 0.828539,
+   "max_T": 0.606633,
+   "min_S": 0.551206,
+   "max_C": 0.660138,
+   "max_X": 0.525141,
+   "mean_state": [
+    0.530691,
+    0.510912,
+    0.928621,
+    0.540465,
+    0.503099,
+    0.473146,
+    0.766657
+   ]
+  },
+  "f84r": {
+   "viability_fraction": 1.0,
+   "hazard_count": 0,
+   "Y_final": 0.87466,
+   "max_T": 0.680466,
+   "min_S": 0.517519,
+   "max_C": 0.722755,
+   "max_X": 0.561927,
+   "mean_state": [
+    0.530811,
+    0.514192,
+    0.940249,
+    0.554792,
+    0.505743,
+    0.460687,
+    0.820501
+   ]
+  },
+  "f55r": {
+   "viability_fraction": 0.741935,
+   "hazard_count": 32,
+   "Y_final": 0.767451,
+   "max_T": 0.585391,
+   "min_S": 0.523987,
+   "max_C": 1.0,
+   "max_X": 0.62501,
+   "mean_state": [
+    0.529553,
+    0.493095,
+    0.662006,
+    0.796313,
+    0.495785,
+    0.54126,
+    0.65302
+   ]
+  },
+  "f40v": {
+   "viability_fraction": 0.990566,
+   "hazard_count": 1,
+   "Y_final": 0.695704,
+   "max_T": 0.62241,
+   "min_S": 0.524035,
+   "max_C": 0.887885,
+   "max_X": 0.680691,
+   "mean_state": [
+    0.546421,
+    0.504858,
+    0.702025,
+    0.678942,
+    0.497631,
+    0.560504,
+    0.63095
+   ]
+  },
+  "f43v": {
+   "viability_fraction": 1.0,
+   "hazard_count": 0,
+   "Y_final": 0.979461,
+   "max_T": 0.589733,
+   "min_S": 0.514826,
+   "max_C": 0.687773,
+   "max_X": 0.5,
+   "mean_state": [
+    0.465817,
+    0.498389,
+    0.782162,
+    0.572696,
+    0.50183,
+    0.269041,
+    0.878861
+   ]
+  },
+  "f104r": {
+   "viability_fraction": 1.0,
+   "hazard_count": 0,
+   "Y_final": 1.0,
+   "max_T": 0.721302,
+   "min_S": 0.522366,
+   "max_C": 0.757594,
+   "max_X": 0.510819,
+   "mean_state": [
+    0.5386,
+    0.505317,
+    0.687772,
+    0.577397,
+    0.513239,
+    0.285421,
+    0.967625
+   ]
+  },
+  "f111r": {
+   "viability_fraction": 0.998371,
+   "hazard_count": 1,
+   "Y_final": 1.0,
+   "max_T": 0.871779,
+   "min_S": 0.495212,
+   "max_C": 0.689604,
+   "max_X": 0.600285,
+   "mean_state": [
+    0.523419,
+    0.507356,
+    0.814448,
+    0.528557,
+    0.512458,
+    0.257065,
+    0.976612
+   ]
+  },
+  "f116v": {
+   "viability_fraction": 1.0,
+   "hazard_count": 0,
+   "Y_final": 0.5,
+   "max_T": 0.5,
+   "min_S": 0.5,
+   "max_C": 0.5,
+   "max_X": 0.5,
+   "mean_state": [
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5,
+    0.5
+   ]
+  }
+ },
+ "baselines": {
+  "B1_section_only": {
+   "f78r": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.837515,
+    "max_T": 0.530232,
+    "min_S": 0.530005,
+    "max_C": 0.533352,
+    "max_X": 0.508712,
+    "mean_state": [
+     0.529575,
+     0.516802,
+     0.979575,
+     0.532448,
+     0.50837,
+     0.464698,
+     0.799853
+    ]
+   },
+   "f84r": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.837554,
+    "max_T": 0.530232,
+    "min_S": 0.530005,
+    "max_C": 0.533352,
+    "max_X": 0.508712,
+    "mean_state": [
+     0.529697,
+     0.516929,
+     0.983366,
+     0.532616,
+     0.508419,
+     0.46283,
+     0.806848
+    ]
+   },
+   "f55r": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.712888,
+    "max_T": 0.511745,
+    "min_S": 0.521476,
+    "max_C": 0.759949,
+    "max_X": 0.522282,
+    "mean_state": [
+     0.510848,
+     0.501461,
+     0.812736,
+     0.711293,
+     0.499728,
+     0.496218,
+     0.662388
+    ]
+   },
+   "f40v": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.709248,
+    "max_T": 0.511744,
+    "min_S": 0.521476,
+    "max_C": 0.758151,
+    "max_X": 0.522282,
+    "mean_state": [
+     0.510695,
+     0.501426,
+     0.805111,
+     0.703156,
+     0.499731,
+     0.499845,
+     0.654076
+    ]
+   },
+   "f43v": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 1.0,
+    "max_T": 0.52504,
+    "min_S": 0.51909,
+    "max_C": 0.59343,
+    "max_X": 0.525298,
+    "mean_state": [
+     0.523153,
+     0.500601,
+     0.72069,
+     0.586408,
+     0.498962,
+     0.348967,
+     0.891316
+    ]
+   },
+   "f104r": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 1.0,
+    "max_T": 0.541198,
+    "min_S": 0.519082,
+    "max_C": 0.563939,
+    "max_X": 0.532625,
+    "mean_state": [
+     0.540102,
+     0.505149,
+     0.73226,
+     0.562373,
+     0.512584,
+     0.294153,
+     0.971113
+    ]
+   },
+   "f111r": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 1.0,
+    "max_T": 0.541198,
+    "min_S": 0.519082,
+    "max_C": 0.563939,
+    "max_X": 0.532625,
+    "mean_state": [
+     0.540416,
+     0.50518,
+     0.734055,
+     0.562746,
+     0.512718,
+     0.285193,
+     0.979393
+    ]
+   },
+   "f116v": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.5,
+    "max_T": 0.5,
+    "min_S": 0.5,
+    "max_C": 0.5,
+    "max_X": 0.5,
+    "mean_state": [
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "B2_section_folio_budget": {
+   "f78r": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.80342,
+    "max_T": 0.531245,
+    "min_S": 0.526217,
+    "max_C": 0.542194,
+    "max_X": 0.509926,
+    "mean_state": [
+     0.530594,
+     0.511187,
+     0.972642,
+     0.540948,
+     0.503297,
+     0.47255,
+     0.769859
+    ]
+   },
+   "f84r": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.854159,
+    "max_T": 0.531054,
+    "min_S": 0.529672,
+    "max_C": 0.556761,
+    "max_X": 0.509191,
+    "mean_state": [
+     0.530517,
+     0.513959,
+     0.983013,
+     0.55541,
+     0.505647,
+     0.46023,
+     0.822124
+    ]
+   },
+   "f55r": {
+    "viability_fraction": 0.306452,
+    "hazard_count": 86,
+    "Y_final": 0.717287,
+    "max_T": 0.530834,
+    "min_S": 0.511547,
+    "max_C": 0.937821,
+    "max_X": 0.556555,
+    "mean_state": [
+     0.528786,
+     0.492585,
+     0.668142,
+     0.855872,
+     0.495769,
+     0.531733,
+     0.666076
+    ]
+   },
+   "f40v": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.681498,
+    "max_T": 0.549638,
+    "min_S": 0.514107,
+    "max_C": 0.752671,
+    "max_X": 0.582276,
+    "mean_state": [
+     0.545335,
+     0.502492,
+     0.700419,
+     0.698844,
+     0.496734,
+     0.564559,
+     0.633924
+    ]
+   },
+   "f43v": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 1.0,
+    "max_T": 0.497249,
+    "min_S": 0.524317,
+    "max_C": 0.581589,
+    "max_X": 0.499906,
+    "mean_state": [
+     0.468025,
+     0.498454,
+     0.781115,
+     0.575543,
+     0.500951,
+     0.245666,
+     0.905108
+    ]
+   },
+   "f104r": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 1.0,
+    "max_T": 0.541816,
+    "min_S": 0.51523,
+    "max_C": 0.584181,
+    "max_X": 0.529281,
+    "mean_state": [
+     0.540702,
+     0.505358,
+     0.685374,
+     0.582184,
+     0.513109,
+     0.289134,
+     0.97192
+    ]
+   },
+   "f111r": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 1.0,
+    "max_T": 0.525179,
+    "min_S": 0.525373,
+    "max_C": 0.534096,
+    "max_X": 0.521161,
+    "mean_state": [
+     0.524693,
+     0.507295,
+     0.811219,
+     0.533084,
+     0.512045,
+     0.255136,
+     0.980414
+    ]
+   },
+   "f116v": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.5,
+    "max_T": 0.5,
+    "min_S": 0.5,
+    "max_C": 0.5,
+    "max_X": 0.5,
+    "mean_state": [
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "B3_full_minus_cts": {
+   "f78r": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.816854,
+    "max_T": 0.606633,
+    "min_S": 0.5495,
+    "max_C": 0.652454,
+    "max_X": 0.527031,
+    "mean_state": [
+     0.530691,
+     0.510912,
+     0.920664,
+     0.537673,
+     0.503099,
+     0.474766,
+     0.759805
+    ]
+   },
+   "f84r": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.858238,
+    "max_T": 0.680466,
+    "min_S": 0.517112,
+    "max_C": 0.701383,
+    "max_X": 0.563667,
+    "mean_state": [
+     0.530811,
+     0.514192,
+     0.934055,
+     0.551069,
+     0.505743,
+     0.463168,
+     0.810232
+    ]
+   },
+   "f55r": {
+    "viability_fraction": 0.798387,
+    "hazard_count": 25,
+    "Y_final": 0.746778,
+    "max_T": 0.585391,
+    "min_S": 0.524379,
+    "max_C": 1.0,
+    "max_X": 0.626619,
+    "mean_state": [
+     0.529553,
+     0.493095,
+     0.651299,
+     0.782332,
+     0.495785,
+     0.542857,
+     0.648194
+    ]
+   },
+   "f40v": {
+    "viability_fraction": 0.990566,
+    "hazard_count": 1,
+    "Y_final": 0.687795,
+    "max_T": 0.62241,
+    "min_S": 0.524768,
+    "max_C": 0.861805,
+    "max_X": 0.684036,
+    "mean_state": [
+     0.546421,
+     0.504858,
+     0.68604,
+     0.661207,
+     0.497631,
+     0.56223,
+     0.62598
+    ]
+   },
+   "f43v": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.977347,
+    "max_T": 0.589733,
+    "min_S": 0.514118,
+    "max_C": 0.666901,
+    "max_X": 0.5,
+    "mean_state": [
+     0.465817,
+     0.498389,
+     0.761841,
+     0.565531,
+     0.50183,
+     0.271933,
+     0.875257
+    ]
+   },
+   "f104r": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 1.0,
+    "max_T": 0.721302,
+    "min_S": 0.520301,
+    "max_C": 0.747659,
+    "max_X": 0.51134,
+    "mean_state": [
+     0.5386,
+     0.505317,
+     0.676974,
+     0.570646,
+     0.513239,
+     0.288319,
+     0.964073
+    ]
+   },
+   "f111r": {
+    "viability_fraction": 0.998371,
+    "hazard_count": 1,
+    "Y_final": 1.0,
+    "max_T": 0.871779,
+    "min_S": 0.495892,
+    "max_C": 0.66031,
+    "max_X": 0.600285,
+    "mean_state": [
+     0.523419,
+     0.507356,
+     0.795473,
+     0.524504,
+     0.512458,
+     0.259104,
+     0.974066
+    ]
+   },
+   "f116v": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.5,
+    "max_T": 0.5,
+    "min_S": 0.5,
+    "max_C": 0.5,
+    "max_X": 0.5,
+    "mean_state": [
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "B4_full_minus_routing": {
+   "f78r": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.830128,
+    "max_T": 0.598633,
+    "min_S": 0.551206,
+    "max_C": 0.678772,
+    "max_X": 0.536124,
+    "mean_state": [
+     0.527813,
+     0.510544,
+     0.923117,
+     0.544554,
+     0.503141,
+     0.471937,
+     0.770104
+    ]
+   },
+   "f84r": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.882219,
+    "max_T": 0.660086,
+    "min_S": 0.517519,
+    "max_C": 0.757823,
+    "max_X": 0.546154,
+    "mean_state": [
+     0.526553,
+     0.514067,
+     0.944678,
+     0.56148,
+     0.505773,
+     0.45801,
+     0.825286
+    ]
+   },
+   "f55r": {
+    "viability_fraction": 0.677419,
+    "hazard_count": 40,
+    "Y_final": 0.77194,
+    "max_T": 0.574422,
+    "min_S": 0.528623,
+    "max_C": 1.0,
+    "max_X": 0.61238,
+    "mean_state": [
+     0.528606,
+     0.493452,
+     0.667445,
+     0.816099,
+     0.496236,
+     0.539437,
+     0.656257
+    ]
+   },
+   "f40v": {
+    "viability_fraction": 0.990566,
+    "hazard_count": 1,
+    "Y_final": 0.698078,
+    "max_T": 0.601185,
+    "min_S": 0.528233,
+    "max_C": 0.898382,
+    "max_X": 0.684245,
+    "mean_state": [
+     0.541375,
+     0.504709,
+     0.702552,
+     0.69453,
+     0.497631,
+     0.562212,
+     0.632298
+    ]
+   },
+   "f43v": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.979931,
+    "max_T": 0.578663,
+    "min_S": 0.514826,
+    "max_C": 0.732889,
+    "max_X": 0.5,
+    "mean_state": [
+     0.466056,
+     0.498156,
+     0.785291,
+     0.587959,
+     0.500018,
+     0.265256,
+     0.877266
+    ]
+   },
+   "f104r": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 1.0,
+    "max_T": 0.708294,
+    "min_S": 0.522366,
+    "max_C": 0.776672,
+    "max_X": 0.532442,
+    "mean_state": [
+     0.539354,
+     0.504929,
+     0.685465,
+     0.584184,
+     0.511557,
+     0.288926,
+     0.968769
+    ]
+   },
+   "f111r": {
+    "viability_fraction": 0.998371,
+    "hazard_count": 1,
+    "Y_final": 1.0,
+    "max_T": 0.858679,
+    "min_S": 0.489618,
+    "max_C": 0.693426,
+    "max_X": 0.601548,
+    "mean_state": [
+     0.519795,
+     0.507055,
+     0.805436,
+     0.532851,
+     0.511263,
+     0.250185,
+     0.977135
+    ]
+   },
+   "f116v": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.5,
+    "max_T": 0.5,
+    "min_S": 0.5,
+    "max_C": 0.5,
+    "max_X": 0.5,
+    "mean_state": [
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5
+    ]
+   }
+  },
+  "B5_full_minus_headless": {
+   "f78r": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.854635,
+    "max_T": 0.613127,
+    "min_S": 0.551206,
+    "max_C": 0.603127,
+    "max_X": 0.524045,
+    "mean_state": [
+     0.54107,
+     0.516799,
+     0.944864,
+     0.529628,
+     0.504524,
+     0.475783,
+     0.777226
+    ]
+   },
+   "f84r": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.866939,
+    "max_T": 0.686236,
+    "min_S": 0.530005,
+    "max_C": 0.666063,
+    "max_X": 0.570345,
+    "mean_state": [
+     0.540502,
+     0.519724,
+     0.953174,
+     0.537222,
+     0.506827,
+     0.465345,
+     0.8209
+    ]
+   },
+   "f55r": {
+    "viability_fraction": 0.693548,
+    "hazard_count": 38,
+    "Y_final": 0.732508,
+    "max_T": 0.587111,
+    "min_S": 0.520524,
+    "max_C": 1.0,
+    "max_X": 0.624689,
+    "mean_state": [
+     0.533357,
+     0.493605,
+     0.66841,
+     0.782798,
+     0.495485,
+     0.547102,
+     0.656221
+    ]
+   },
+   "f40v": {
+    "viability_fraction": 0.990566,
+    "hazard_count": 1,
+    "Y_final": 0.714538,
+    "max_T": 0.625598,
+    "min_S": 0.535255,
+    "max_C": 0.868756,
+    "max_X": 0.677087,
+    "mean_state": [
+     0.549699,
+     0.505299,
+     0.729909,
+     0.674232,
+     0.496612,
+     0.56261,
+     0.648684
+    ]
+   },
+   "f43v": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.990313,
+    "max_T": 0.595434,
+    "min_S": 0.51909,
+    "max_C": 0.640848,
+    "max_X": 0.509041,
+    "mean_state": [
+     0.472717,
+     0.498568,
+     0.791735,
+     0.56177,
+     0.496408,
+     0.283595,
+     0.885355
+    ]
+   },
+   "f104r": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 1.0,
+    "max_T": 0.725163,
+    "min_S": 0.519082,
+    "max_C": 0.72976,
+    "max_X": 0.518289,
+    "mean_state": [
+     0.54736,
+     0.506441,
+     0.70287,
+     0.567031,
+     0.514353,
+     0.305365,
+     0.968323
+    ]
+   },
+   "f111r": {
+    "viability_fraction": 0.996743,
+    "hazard_count": 2,
+    "Y_final": 1.0,
+    "max_T": 0.876533,
+    "min_S": 0.495212,
+    "max_C": 0.677516,
+    "max_X": 0.600285,
+    "mean_state": [
+     0.530485,
+     0.508266,
+     0.832355,
+     0.525018,
+     0.511415,
+     0.269551,
+     0.980867
+    ]
+   },
+   "f116v": {
+    "viability_fraction": 1.0,
+    "hazard_count": 0,
+    "Y_final": 0.5,
+    "max_T": 0.5,
+    "min_S": 0.5,
+    "max_C": 0.5,
+    "max_X": 0.5,
+    "mean_state": [
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5
+    ]
+   }
+  }
+ },
+ "nulls": {
+  "N1_token_shuffle": {
+   "f78r": {
+    "viability_mean": 1.0,
+    "viability_std": 0.0,
+    "hazard_count_mean": 0.0,
+    "hazard_count_std": 0.0,
+    "Y_final_mean": 0.806127,
+    "Y_final_std": 0.015764,
+    "mean_state": [
+     0.530416,
+     0.511162,
+     0.916465,
+     0.540438,
+     0.50334,
+     0.472475,
+     0.769656
+    ],
+    "max_T_mean": 0.619239,
+    "min_S_mean": 0.527651,
+    "max_C_mean": 0.603094,
+    "max_X_mean": 0.525316,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.801836
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.783254
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.802445
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.792561
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.807677
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.795627
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.819747
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.792414
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.805841
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.821358
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.788291
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.797957
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.796723
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.801679
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.818445
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.81814
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.81345
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.820945
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.807929
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.837002
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.802589
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.805169
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.805795
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.812768
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.845725
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.811246
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.778893
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.810204
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.794031
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.824012
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.802842
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.80612
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.826171
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.798402
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.79718
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.831467
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.819327
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.796504
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.78146
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.805378
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.788173
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.824365
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.824112
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.841407
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.79822
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.799058
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.800458
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.77358
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.789835
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.788548
+     }
+    ]
+   },
+   "f84r": {
+    "viability_mean": 1.0,
+    "viability_std": 0.0,
+    "hazard_count_mean": 0.0,
+    "hazard_count_std": 0.0,
+    "Y_final_mean": 0.851301,
+    "Y_final_std": 0.020283,
+    "mean_state": [
+     0.530463,
+     0.513958,
+     0.936097,
+     0.554693,
+     0.505637,
+     0.460119,
+     0.822357
+    ],
+    "max_T_mean": 0.647627,
+    "min_S_mean": 0.520539,
+    "max_C_mean": 0.627101,
+    "max_X_mean": 0.530217,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.838423
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.862394
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.843392
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.84629
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.831308
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.86107
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.854333
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.875239
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.873955
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.838928
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.842825
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.881354
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.872174
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.817746
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.8864
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.826513
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.871471
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.858789
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.836294
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.840136
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.839716
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.848941
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.841578
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.873295
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.824521
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.823178
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.848467
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.834793
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.87122
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.815534
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.888793
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.844383
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.841256
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.908043
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.860452
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.82962
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.830998
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.831447
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.849906
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.871789
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.822964
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.86321
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.854257
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.867204
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.845821
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.868531
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.837039
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.851292
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.877082
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.840662
+     }
+    ]
+   },
+   "f55r": {
+    "viability_mean": 0.391774,
+    "viability_std": 0.087619,
+    "hazard_count_mean": 75.42,
+    "hazard_count_std": 10.8648,
+    "Y_final_mean": 0.717364,
+    "Y_final_std": 0.0123,
+    "mean_state": [
+     0.52887,
+     0.492353,
+     0.667902,
+     0.848681,
+     0.495659,
+     0.531923,
+     0.66589
+    ],
+    "max_T_mean": 0.582354,
+    "min_S_mean": 0.507433,
+    "max_C_mean": 0.998394,
+    "max_X_mean": 0.60929,
+    "per_perm": [
+     {
+      "viability_fraction": 0.524194,
+      "hazard_count": 59,
+      "Y_final": 0.714514
+     },
+     {
+      "viability_fraction": 0.41129,
+      "hazard_count": 73,
+      "Y_final": 0.726668
+     },
+     {
+      "viability_fraction": 0.427419,
+      "hazard_count": 71,
+      "Y_final": 0.711331
+     },
+     {
+      "viability_fraction": 0.282258,
+      "hazard_count": 89,
+      "Y_final": 0.703577
+     },
+     {
+      "viability_fraction": 0.395161,
+      "hazard_count": 75,
+      "Y_final": 0.718884
+     },
+     {
+      "viability_fraction": 0.483871,
+      "hazard_count": 64,
+      "Y_final": 0.722112
+     },
+     {
+      "viability_fraction": 0.322581,
+      "hazard_count": 84,
+      "Y_final": 0.692618
+     },
+     {
+      "viability_fraction": 0.427419,
+      "hazard_count": 71,
+      "Y_final": 0.724223
+     },
+     {
+      "viability_fraction": 0.58871,
+      "hazard_count": 51,
+      "Y_final": 0.717898
+     },
+     {
+      "viability_fraction": 0.330645,
+      "hazard_count": 83,
+      "Y_final": 0.728243
+     },
+     {
+      "viability_fraction": 0.233871,
+      "hazard_count": 95,
+      "Y_final": 0.744807
+     },
+     {
+      "viability_fraction": 0.33871,
+      "hazard_count": 82,
+      "Y_final": 0.730321
+     },
+     {
+      "viability_fraction": 0.362903,
+      "hazard_count": 79,
+      "Y_final": 0.721076
+     },
+     {
+      "viability_fraction": 0.459677,
+      "hazard_count": 67,
+      "Y_final": 0.693353
+     },
+     {
+      "viability_fraction": 0.266129,
+      "hazard_count": 91,
+      "Y_final": 0.720849
+     },
+     {
+      "viability_fraction": 0.298387,
+      "hazard_count": 87,
+      "Y_final": 0.730187
+     },
+     {
+      "viability_fraction": 0.370968,
+      "hazard_count": 78,
+      "Y_final": 0.710104
+     },
+     {
+      "viability_fraction": 0.467742,
+      "hazard_count": 66,
+      "Y_final": 0.743605
+     },
+     {
+      "viability_fraction": 0.306452,
+      "hazard_count": 86,
+      "Y_final": 0.708666
+     },
+     {
+      "viability_fraction": 0.41129,
+      "hazard_count": 73,
+      "Y_final": 0.724474
+     },
+     {
+      "viability_fraction": 0.403226,
+      "hazard_count": 74,
+      "Y_final": 0.7232
+     },
+     {
+      "viability_fraction": 0.443548,
+      "hazard_count": 69,
+      "Y_final": 0.728161
+     },
+     {
+      "viability_fraction": 0.443548,
+      "hazard_count": 69,
+      "Y_final": 0.721748
+     },
+     {
+      "viability_fraction": 0.306452,
+      "hazard_count": 86,
+      "Y_final": 0.716233
+     },
+     {
+      "viability_fraction": 0.443548,
+      "hazard_count": 69,
+      "Y_final": 0.700026
+     },
+     {
+      "viability_fraction": 0.346774,
+      "hazard_count": 81,
+      "Y_final": 0.704021
+     },
+     {
+      "viability_fraction": 0.443548,
+      "hazard_count": 69,
+      "Y_final": 0.703013
+     },
+     {
+      "viability_fraction": 0.354839,
+      "hazard_count": 80,
+      "Y_final": 0.719997
+     },
+     {
+      "viability_fraction": 0.379032,
+      "hazard_count": 77,
+      "Y_final": 0.70567
+     },
+     {
+      "viability_fraction": 0.580645,
+      "hazard_count": 52,
+      "Y_final": 0.706494
+     },
+     {
+      "viability_fraction": 0.233871,
+      "hazard_count": 95,
+      "Y_final": 0.720057
+     },
+     {
+      "viability_fraction": 0.370968,
+      "hazard_count": 78,
+      "Y_final": 0.698402
+     },
+     {
+      "viability_fraction": 0.459677,
+      "hazard_count": 67,
+      "Y_final": 0.733566
+     },
+     {
+      "viability_fraction": 0.540323,
+      "hazard_count": 57,
+      "Y_final": 0.724833
+     },
+     {
+      "viability_fraction": 0.475806,
+      "hazard_count": 65,
+      "Y_final": 0.739603
+     },
+     {
+      "viability_fraction": 0.354839,
+      "hazard_count": 80,
+      "Y_final": 0.700768
+     },
+     {
+      "viability_fraction": 0.419355,
+      "hazard_count": 72,
+      "Y_final": 0.71213
+     },
+     {
+      "viability_fraction": 0.467742,
+      "hazard_count": 66,
+      "Y_final": 0.716259
+     },
+     {
+      "viability_fraction": 0.370968,
+      "hazard_count": 78,
+      "Y_final": 0.736643
+     },
+     {
+      "viability_fraction": 0.306452,
+      "hazard_count": 86,
+      "Y_final": 0.713559
+     },
+     {
+      "viability_fraction": 0.225806,
+      "hazard_count": 96,
+      "Y_final": 0.694119
+     },
+     {
+      "viability_fraction": 0.435484,
+      "hazard_count": 70,
+      "Y_final": 0.723398
+     },
+     {
+      "viability_fraction": 0.427419,
+      "hazard_count": 71,
+      "Y_final": 0.720332
+     },
+     {
+      "viability_fraction": 0.346774,
+      "hazard_count": 81,
+      "Y_final": 0.713333
+     },
+     {
+      "viability_fraction": 0.451613,
+      "hazard_count": 68,
+      "Y_final": 0.707794
+     },
+     {
+      "viability_fraction": 0.524194,
+      "hazard_count": 59,
+      "Y_final": 0.712006
+     },
+     {
+      "viability_fraction": 0.403226,
+      "hazard_count": 74,
+      "Y_final": 0.728552
+     },
+     {
+      "viability_fraction": 0.387097,
+      "hazard_count": 76,
+      "Y_final": 0.718938
+     },
+     {
+      "viability_fraction": 0.322581,
+      "hazard_count": 84,
+      "Y_final": 0.723533
+     },
+     {
+      "viability_fraction": 0.209677,
+      "hazard_count": 98,
+      "Y_final": 0.71431
+     }
+    ]
+   },
+   "f40v": {
+    "viability_mean": 0.986792,
+    "viability_std": 0.024601,
+    "hazard_count_mean": 1.4,
+    "hazard_count_std": 2.6077,
+    "Y_final_mean": 0.68123,
+    "Y_final_std": 0.00488,
+    "mean_state": [
+     0.545218,
+     0.502287,
+     0.700899,
+     0.708277,
+     0.49669,
+     0.564409,
+     0.633939
+    ],
+    "max_T_mean": 0.628214,
+    "min_S_mean": 0.510471,
+    "max_C_mean": 0.835249,
+    "max_X_mean": 0.657816,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.680165
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.682338
+     },
+     {
+      "viability_fraction": 0.971698,
+      "hazard_count": 3,
+      "Y_final": 0.678354
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.680083
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.682665
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.682145
+     },
+     {
+      "viability_fraction": 0.990566,
+      "hazard_count": 1,
+      "Y_final": 0.679948
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.679208
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.6792
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.686781
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.687291
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.675504
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.671994
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.684844
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.682111
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.682627
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.679761
+     },
+     {
+      "viability_fraction": 0.95283,
+      "hazard_count": 5,
+      "Y_final": 0.680204
+     },
+     {
+      "viability_fraction": 0.924528,
+      "hazard_count": 8,
+      "Y_final": 0.687464
+     },
+     {
+      "viability_fraction": 0.95283,
+      "hazard_count": 5,
+      "Y_final": 0.677642
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.681871
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.690191
+     },
+     {
+      "viability_fraction": 0.990566,
+      "hazard_count": 1,
+      "Y_final": 0.671124
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.679537
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.682589
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.680957
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.671192
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.683517
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.678807
+     },
+     {
+      "viability_fraction": 0.933962,
+      "hazard_count": 7,
+      "Y_final": 0.685019
+     },
+     {
+      "viability_fraction": 0.990566,
+      "hazard_count": 1,
+      "Y_final": 0.686023
+     },
+     {
+      "viability_fraction": 0.915094,
+      "hazard_count": 9,
+      "Y_final": 0.667674
+     },
+     {
+      "viability_fraction": 0.90566,
+      "hazard_count": 10,
+      "Y_final": 0.682615
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.674346
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.689946
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.685324
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.692404
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.681222
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.68259
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.679527
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.681838
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.679459
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.680286
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.675344
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.689295
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.682226
+     },
+     {
+      "viability_fraction": 0.971698,
+      "hazard_count": 3,
+      "Y_final": 0.680972
+     },
+     {
+      "viability_fraction": 0.95283,
+      "hazard_count": 5,
+      "Y_final": 0.679025
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.683077
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.68318
+     }
+    ]
+   },
+   "f43v": {
+    "viability_mean": 1.0,
+    "viability_std": 0.0,
+    "hazard_count_mean": 0.0,
+    "hazard_count_std": 0.0,
+    "Y_final_mean": 0.99768,
+    "Y_final_std": 0.003149,
+    "mean_state": [
+     0.468085,
+     0.498426,
+     0.780977,
+     0.569623,
+     0.500847,
+     0.249416,
+     0.900627
+    ],
+    "max_T_mean": 0.573559,
+    "min_S_mean": 0.526398,
+    "max_C_mean": 0.6529,
+    "max_X_mean": 0.520368,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.989137
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.990627
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.989173
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.992503
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.996536
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.994719
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998111
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999641
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.988882
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.997953
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999776
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.996235
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.996263
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.995903
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998853
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.995677
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998296
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.996087
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.993288
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998827
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.997054
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.99693
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998154
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999273
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.996116
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.994538
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.995789
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999644
+     }
+    ]
+   },
+   "f104r": {
+    "viability_mean": 1.0,
+    "viability_std": 0.0,
+    "hazard_count_mean": 0.0,
+    "hazard_count_std": 0.0,
+    "Y_final_mean": 0.998787,
+    "Y_final_std": 0.002642,
+    "mean_state": [
+     0.540837,
+     0.505395,
+     0.685401,
+     0.579321,
+     0.513211,
+     0.290693,
+     0.970108
+    ],
+    "max_T_mean": 0.713293,
+    "min_S_mean": 0.504949,
+    "max_C_mean": 0.692108,
+    "max_X_mean": 0.569545,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.997058
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.990761
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999226
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.990632
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998691
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998646
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.99852
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.99769
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.99632
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.997149
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.989477
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999891
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.990716
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998637
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.997227
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999541
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999159
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     }
+    ]
+   },
+   "f111r": {
+    "viability_mean": 1.0,
+    "viability_std": 0.0,
+    "hazard_count_mean": 0.0,
+    "hazard_count_std": 0.0,
+    "Y_final_mean": 0.999449,
+    "Y_final_std": 0.001229,
+    "mean_state": [
+     0.524853,
+     0.50731,
+     0.810446,
+     0.531197,
+     0.512016,
+     0.256217,
+     0.97904
+    ],
+    "max_T_mean": 0.734798,
+    "min_S_mean": 0.520722,
+    "max_C_mean": 0.63773,
+    "max_X_mean": 0.587307,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.99957
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998465
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998569
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999553
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.996833
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.995827
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999291
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999339
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999269
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998671
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.994249
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.99907
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.997836
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.99592
+     }
+    ]
+   },
+   "f116v": {
+    "viability_mean": 1.0,
+    "viability_std": 0.0,
+    "hazard_count_mean": 0.0,
+    "hazard_count_std": 0.0,
+    "Y_final_mean": 0.5,
+    "Y_final_std": 0.0,
+    "mean_state": [
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5
+    ],
+    "max_T_mean": 0.5,
+    "min_S_mean": 0.5,
+    "max_C_mean": 0.5,
+    "max_X_mean": 0.5,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     }
+    ]
+   }
+  },
+  "N2_domain_preserve_shuffle": {
+   "f78r": {
+    "viability_mean": 1.0,
+    "viability_std": 0.0,
+    "hazard_count_mean": 0.0,
+    "hazard_count_std": 0.0,
+    "Y_final_mean": 0.809445,
+    "Y_final_std": 0.018962,
+    "mean_state": [
+     0.530955,
+     0.511387,
+     0.924634,
+     0.540317,
+     0.503292,
+     0.472765,
+     0.769185
+    ],
+    "max_T_mean": 0.621276,
+    "min_S_mean": 0.573013,
+    "max_C_mean": 0.607526,
+    "max_X_mean": 0.522328,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.824728
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.811858
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.816333
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.815555
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.812427
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.838698
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.78683
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.783153
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.841446
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.787862
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.80146
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.824815
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.823223
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.824382
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.821452
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.804247
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.826358
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.807154
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.792335
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.805005
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.794269
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.860415
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.816658
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.807767
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.819776
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.778375
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.809926
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.855337
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.812382
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.809423
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.776506
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.827668
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.807095
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.784178
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.78377
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.821488
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.790308
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.813391
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.798223
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.805651
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.813968
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.814856
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.792911
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.798322
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.806789
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.843234
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.795905
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.774647
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.812604
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.797106
+     }
+    ]
+   },
+   "f84r": {
+    "viability_mean": 1.0,
+    "viability_std": 0.0,
+    "hazard_count_mean": 0.0,
+    "hazard_count_std": 0.0,
+    "Y_final_mean": 0.8676,
+    "Y_final_std": 0.020123,
+    "mean_state": [
+     0.530716,
+     0.51407,
+     0.944515,
+     0.554819,
+     0.50574,
+     0.460329,
+     0.821127
+    ],
+    "max_T_mean": 0.641293,
+    "min_S_mean": 0.522288,
+    "max_C_mean": 0.637087,
+    "max_X_mean": 0.519203,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.843704
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.870481
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.851088
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.889049
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.845085
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.848279
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.850201
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.893524
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.852845
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.836761
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.892329
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.901486
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.895197
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.872329
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.896192
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.86081
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.873505
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.868135
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.84153
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.859987
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.878926
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.905439
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.851811
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.895568
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.89721
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.896234
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.870899
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.870839
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.853242
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.837242
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.868902
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.839701
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.851201
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.868024
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.857796
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.864904
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.848146
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.870655
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.866781
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.851144
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.871448
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.902855
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.840098
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.843413
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.875037
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.850533
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.866652
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.862242
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.874815
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.90574
+     }
+    ]
+   },
+   "f55r": {
+    "viability_mean": 0.368226,
+    "viability_std": 0.074046,
+    "hazard_count_mean": 78.34,
+    "hazard_count_std": 9.1817,
+    "Y_final_mean": 0.713235,
+    "Y_final_std": 0.008574,
+    "mean_state": [
+     0.529043,
+     0.493159,
+     0.671553,
+     0.851995,
+     0.495867,
+     0.528463,
+     0.667281
+    ],
+    "max_T_mean": 0.584018,
+    "min_S_mean": 0.513727,
+    "max_C_mean": 0.998868,
+    "max_X_mean": 0.628711,
+    "per_perm": [
+     {
+      "viability_fraction": 0.274194,
+      "hazard_count": 90,
+      "Y_final": 0.721128
+     },
+     {
+      "viability_fraction": 0.427419,
+      "hazard_count": 71,
+      "Y_final": 0.710925
+     },
+     {
+      "viability_fraction": 0.387097,
+      "hazard_count": 76,
+      "Y_final": 0.714646
+     },
+     {
+      "viability_fraction": 0.290323,
+      "hazard_count": 88,
+      "Y_final": 0.702756
+     },
+     {
+      "viability_fraction": 0.41129,
+      "hazard_count": 73,
+      "Y_final": 0.727726
+     },
+     {
+      "viability_fraction": 0.33871,
+      "hazard_count": 82,
+      "Y_final": 0.704786
+     },
+     {
+      "viability_fraction": 0.322581,
+      "hazard_count": 84,
+      "Y_final": 0.705091
+     },
+     {
+      "viability_fraction": 0.419355,
+      "hazard_count": 72,
+      "Y_final": 0.714067
+     },
+     {
+      "viability_fraction": 0.330645,
+      "hazard_count": 83,
+      "Y_final": 0.697409
+     },
+     {
+      "viability_fraction": 0.298387,
+      "hazard_count": 87,
+      "Y_final": 0.707908
+     },
+     {
+      "viability_fraction": 0.298387,
+      "hazard_count": 87,
+      "Y_final": 0.718805
+     },
+     {
+      "viability_fraction": 0.266129,
+      "hazard_count": 91,
+      "Y_final": 0.708427
+     },
+     {
+      "viability_fraction": 0.233871,
+      "hazard_count": 95,
+      "Y_final": 0.707146
+     },
+     {
+      "viability_fraction": 0.403226,
+      "hazard_count": 74,
+      "Y_final": 0.717509
+     },
+     {
+      "viability_fraction": 0.435484,
+      "hazard_count": 70,
+      "Y_final": 0.706235
+     },
+     {
+      "viability_fraction": 0.346774,
+      "hazard_count": 81,
+      "Y_final": 0.729966
+     },
+     {
+      "viability_fraction": 0.322581,
+      "hazard_count": 84,
+      "Y_final": 0.729304
+     },
+     {
+      "viability_fraction": 0.370968,
+      "hazard_count": 78,
+      "Y_final": 0.72401
+     },
+     {
+      "viability_fraction": 0.330645,
+      "hazard_count": 83,
+      "Y_final": 0.710583
+     },
+     {
+      "viability_fraction": 0.33871,
+      "hazard_count": 82,
+      "Y_final": 0.706161
+     },
+     {
+      "viability_fraction": 0.435484,
+      "hazard_count": 70,
+      "Y_final": 0.693105
+     },
+     {
+      "viability_fraction": 0.491935,
+      "hazard_count": 63,
+      "Y_final": 0.718254
+     },
+     {
+      "viability_fraction": 0.403226,
+      "hazard_count": 74,
+      "Y_final": 0.713592
+     },
+     {
+      "viability_fraction": 0.362903,
+      "hazard_count": 79,
+      "Y_final": 0.720196
+     },
+     {
+      "viability_fraction": 0.370968,
+      "hazard_count": 78,
+      "Y_final": 0.699783
+     },
+     {
+      "viability_fraction": 0.314516,
+      "hazard_count": 85,
+      "Y_final": 0.717798
+     },
+     {
+      "viability_fraction": 0.556452,
+      "hazard_count": 55,
+      "Y_final": 0.71255
+     },
+     {
+      "viability_fraction": 0.306452,
+      "hazard_count": 86,
+      "Y_final": 0.716683
+     },
+     {
+      "viability_fraction": 0.419355,
+      "hazard_count": 72,
+      "Y_final": 0.704587
+     },
+     {
+      "viability_fraction": 0.435484,
+      "hazard_count": 70,
+      "Y_final": 0.724557
+     },
+     {
+      "viability_fraction": 0.362903,
+      "hazard_count": 79,
+      "Y_final": 0.703087
+     },
+     {
+      "viability_fraction": 0.427419,
+      "hazard_count": 71,
+      "Y_final": 0.699053
+     },
+     {
+      "viability_fraction": 0.491935,
+      "hazard_count": 63,
+      "Y_final": 0.725542
+     },
+     {
+      "viability_fraction": 0.330645,
+      "hazard_count": 83,
+      "Y_final": 0.708235
+     },
+     {
+      "viability_fraction": 0.274194,
+      "hazard_count": 90,
+      "Y_final": 0.704408
+     },
+     {
+      "viability_fraction": 0.282258,
+      "hazard_count": 89,
+      "Y_final": 0.715004
+     },
+     {
+      "viability_fraction": 0.580645,
+      "hazard_count": 52,
+      "Y_final": 0.707107
+     },
+     {
+      "viability_fraction": 0.403226,
+      "hazard_count": 74,
+      "Y_final": 0.724981
+     },
+     {
+      "viability_fraction": 0.395161,
+      "hazard_count": 75,
+      "Y_final": 0.721278
+     },
+     {
+      "viability_fraction": 0.306452,
+      "hazard_count": 86,
+      "Y_final": 0.709277
+     },
+     {
+      "viability_fraction": 0.282258,
+      "hazard_count": 89,
+      "Y_final": 0.711798
+     },
+     {
+      "viability_fraction": 0.330645,
+      "hazard_count": 83,
+      "Y_final": 0.712474
+     },
+     {
+      "viability_fraction": 0.467742,
+      "hazard_count": 66,
+      "Y_final": 0.720991
+     },
+     {
+      "viability_fraction": 0.435484,
+      "hazard_count": 70,
+      "Y_final": 0.716089
+     },
+     {
+      "viability_fraction": 0.330645,
+      "hazard_count": 83,
+      "Y_final": 0.725663
+     },
+     {
+      "viability_fraction": 0.298387,
+      "hazard_count": 87,
+      "Y_final": 0.716841
+     },
+     {
+      "viability_fraction": 0.451613,
+      "hazard_count": 68,
+      "Y_final": 0.717686
+     },
+     {
+      "viability_fraction": 0.346774,
+      "hazard_count": 81,
+      "Y_final": 0.715033
+     },
+     {
+      "viability_fraction": 0.314516,
+      "hazard_count": 85,
+      "Y_final": 0.708285
+     },
+     {
+      "viability_fraction": 0.354839,
+      "hazard_count": 80,
+      "Y_final": 0.713212
+     }
+    ]
+   },
+   "f40v": {
+    "viability_mean": 0.997925,
+    "viability_std": 0.009489,
+    "hazard_count_mean": 0.22,
+    "hazard_count_std": 1.0058,
+    "Y_final_mean": 0.686021,
+    "Y_final_std": 0.004154,
+    "mean_state": [
+     0.54572,
+     0.503396,
+     0.701636,
+     0.700301,
+     0.497187,
+     0.563114,
+     0.63323
+    ],
+    "max_T_mean": 0.623044,
+    "min_S_mean": 0.543516,
+    "max_C_mean": 0.819444,
+    "max_X_mean": 0.65464,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.685492
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.687044
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.686042
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.688006
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.687645
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.679463
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.682803
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.687699
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.675496
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.690399
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.692524
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.682313
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.681404
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.6917
+     },
+     {
+      "viability_fraction": 0.990566,
+      "hazard_count": 1,
+      "Y_final": 0.69144
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.684597
+     },
+     {
+      "viability_fraction": 0.990566,
+      "hazard_count": 1,
+      "Y_final": 0.691638
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.678943
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.684326
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.688938
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.684265
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.682754
+     },
+     {
+      "viability_fraction": 0.990566,
+      "hazard_count": 1,
+      "Y_final": 0.691918
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.683847
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.688564
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.689084
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.684282
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.685871
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.67722
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.684483
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.68357
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.691307
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.689774
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.685453
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.684016
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.6814
+     },
+     {
+      "viability_fraction": 0.933962,
+      "hazard_count": 7,
+      "Y_final": 0.688877
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.688493
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.685337
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.687255
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.687176
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.682017
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.688908
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.682323
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.687756
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.687836
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.696301
+     },
+     {
+      "viability_fraction": 0.990566,
+      "hazard_count": 1,
+      "Y_final": 0.681255
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.682833
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.688963
+     }
+    ]
+   },
+   "f43v": {
+    "viability_mean": 1.0,
+    "viability_std": 0.0,
+    "hazard_count_mean": 0.0,
+    "hazard_count_std": 0.0,
+    "Y_final_mean": 0.995101,
+    "Y_final_std": 0.006006,
+    "mean_state": [
+     0.464325,
+     0.498487,
+     0.781595,
+     0.569339,
+     0.502475,
+     0.239135,
+     0.909658
+    ],
+    "max_T_mean": 0.575161,
+    "min_S_mean": 0.515257,
+    "max_C_mean": 0.647411,
+    "max_X_mean": 0.509067,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.995597
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.997458
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998726
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998219
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.991683
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.997303
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.99851
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.993783
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.983391
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.991255
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.987822
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.984289
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.995997
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.993501
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.97945
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.996324
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.99923
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.997375
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.986245
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.986912
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998439
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998211
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999458
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.995706
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.993187
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998436
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.997194
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.985054
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.996025
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.981774
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.983657
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.985148
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.9897
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     }
+    ]
+   },
+   "f104r": {
+    "viability_mean": 1.0,
+    "viability_std": 0.0,
+    "hazard_count_mean": 0.0,
+    "hazard_count_std": 0.0,
+    "Y_final_mean": 0.99979,
+    "Y_final_std": 0.000364,
+    "mean_state": [
+     0.538717,
+     0.505317,
+     0.687601,
+     0.578831,
+     0.513331,
+     0.284313,
+     0.968054
+    ],
+    "max_T_mean": 0.699264,
+    "min_S_mean": 0.512368,
+    "max_C_mean": 0.700419,
+    "max_X_mean": 0.523763,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999599
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999085
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998797
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.99926
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999483
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999368
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.99967
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999916
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999933
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999329
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999207
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998994
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999086
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999786
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998791
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999221
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     }
+    ]
+   },
+   "f111r": {
+    "viability_mean": 0.998925,
+    "viability_std": 0.002407,
+    "hazard_count_mean": 0.66,
+    "hazard_count_std": 1.478,
+    "Y_final_mean": 0.997449,
+    "Y_final_std": 0.004109,
+    "mean_state": [
+     0.522467,
+     0.507312,
+     0.813302,
+     0.529308,
+     0.512393,
+     0.250746,
+     0.976669
+    ],
+    "max_T_mean": 0.833356,
+    "min_S_mean": 0.494584,
+    "max_C_mean": 0.661259,
+    "max_X_mean": 0.595869,
+    "per_perm": [
+     {
+      "viability_fraction": 0.998371,
+      "hazard_count": 1,
+      "Y_final": 0.996733
+     },
+     {
+      "viability_fraction": 0.996743,
+      "hazard_count": 2,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998642
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998626
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.998371,
+      "hazard_count": 1,
+      "Y_final": 0.999877
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.997647
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.992433
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.984454
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.996744
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.989567
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.983587
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.995525
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.992889
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.995332
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998541
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.989046
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999333
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.99909
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999121
+     },
+     {
+      "viability_fraction": 0.991857,
+      "hazard_count": 5,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.993485,
+      "hazard_count": 4,
+      "Y_final": 0.998722
+     },
+     {
+      "viability_fraction": 0.993485,
+      "hazard_count": 4,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.996883
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999777
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999444
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.988599,
+      "hazard_count": 7,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998443
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998538
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.996151
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.986055
+     },
+     {
+      "viability_fraction": 0.996743,
+      "hazard_count": 2,
+      "Y_final": 0.9992
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999095
+     },
+     {
+      "viability_fraction": 0.995114,
+      "hazard_count": 3,
+      "Y_final": 0.997886
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.996414
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999108
+     },
+     {
+      "viability_fraction": 0.998371,
+      "hazard_count": 1,
+      "Y_final": 0.999554
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.998371,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.996743,
+      "hazard_count": 2,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     }
+    ]
+   },
+   "f116v": {
+    "viability_mean": 1.0,
+    "viability_std": 0.0,
+    "hazard_count_mean": 0.0,
+    "hazard_count_std": 0.0,
+    "Y_final_mean": 0.5,
+    "Y_final_std": 0.0,
+    "mean_state": [
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5
+    ],
+    "max_T_mean": 0.5,
+    "min_S_mean": 0.5,
+    "max_C_mean": 0.5,
+    "max_X_mean": 0.5,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     }
+    ]
+   }
+  },
+  "N3_line_shuffle": {
+   "f78r": {
+    "viability_mean": 1.0,
+    "viability_std": 0.0,
+    "hazard_count_mean": 0.0,
+    "hazard_count_std": 0.0,
+    "Y_final_mean": 0.832361,
+    "Y_final_std": 0.055996,
+    "mean_state": [
+     0.530639,
+     0.518337,
+     0.936746,
+     0.531351,
+     0.509423,
+     0.462341,
+     0.809712
+    ],
+    "max_T_mean": 0.651422,
+    "min_S_mean": 0.530603,
+    "max_C_mean": 0.62891,
+    "max_X_mean": 0.530912,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.889119
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.796319
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.811426
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.838625
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.944429
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.817731
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.738102
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.853614
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.831864
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.828078
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.942534
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.883475
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.832264
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.94328
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.878461
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.792694
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.766717
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.797306
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.789459
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.85868
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.798888
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.78059
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.802146
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.874279
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.771832
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.768546
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.780956
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.769733
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.954222
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.795726
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.796793
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.869302
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.795912
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.939373
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.893267
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.882357
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.818683
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.811576
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.830027
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.798356
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.780231
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.768846
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.743196
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.906464
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.837655
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.892886
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.895438
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.830535
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.8089
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.787141
+     }
+    ]
+   },
+   "f84r": {
+    "viability_mean": 1.0,
+    "viability_std": 0.0,
+    "hazard_count_mean": 0.0,
+    "hazard_count_std": 0.0,
+    "Y_final_mean": 0.831656,
+    "Y_final_std": 0.05265,
+    "mean_state": [
+     0.530078,
+     0.518124,
+     0.933259,
+     0.531031,
+     0.509447,
+     0.463972,
+     0.802723
+    ],
+    "max_T_mean": 0.647899,
+    "min_S_mean": 0.530603,
+    "max_C_mean": 0.625008,
+    "max_X_mean": 0.52981,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.800878
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.78899
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.74953
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.829254
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.891932
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.815936
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.843011
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.81964
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.854341
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.822725
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.804259
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.885333
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.857774
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.813667
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.838567
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.948311
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.88757
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.771909
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.777169
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.794425
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.81026
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.837853
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.799601
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.967545
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.75224
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.750975
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.833315
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.847339
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.810981
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.836056
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.837222
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.872291
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.796932
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.880031
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.776271
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.913737
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.79923
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.870481
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.857253
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.759108
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.774227
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.815101
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.743546
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.862101
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.839609
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.986738
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.852329
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.855277
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.808755
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.84116
+     }
+    ]
+   },
+   "f55r": {
+    "viability_mean": 0.838863,
+    "viability_std": 0.179821,
+    "hazard_count_mean": 19.3,
+    "hazard_count_std": 21.6197,
+    "Y_final_mean": 0.713728,
+    "Y_final_std": 0.042147,
+    "mean_state": [
+     0.51165,
+     0.500811,
+     0.807177,
+     0.710578,
+     0.499202,
+     0.497422,
+     0.662446
+    ],
+    "max_T_mean": 0.585992,
+    "min_S_mean": 0.522624,
+    "max_C_mean": 0.904372,
+    "max_X_mean": 0.593298,
+    "per_perm": [
+     {
+      "viability_fraction": 0.752066,
+      "hazard_count": 30,
+      "Y_final": 0.714929
+     },
+     {
+      "viability_fraction": 0.801802,
+      "hazard_count": 22,
+      "Y_final": 0.681347
+     },
+     {
+      "viability_fraction": 0.433071,
+      "hazard_count": 72,
+      "Y_final": 0.737008
+     },
+     {
+      "viability_fraction": 0.820755,
+      "hazard_count": 19,
+      "Y_final": 0.724455
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.713494
+     },
+     {
+      "viability_fraction": 0.991597,
+      "hazard_count": 1,
+      "Y_final": 0.659491
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.644054
+     },
+     {
+      "viability_fraction": 0.811321,
+      "hazard_count": 20,
+      "Y_final": 0.712938
+     },
+     {
+      "viability_fraction": 0.913793,
+      "hazard_count": 10,
+      "Y_final": 0.734123
+     },
+     {
+      "viability_fraction": 0.727273,
+      "hazard_count": 33,
+      "Y_final": 0.711521
+     },
+     {
+      "viability_fraction": 0.473214,
+      "hazard_count": 59,
+      "Y_final": 0.669995
+     },
+     {
+      "viability_fraction": 0.850394,
+      "hazard_count": 19,
+      "Y_final": 0.678804
+     },
+     {
+      "viability_fraction": 0.762295,
+      "hazard_count": 29,
+      "Y_final": 0.799054
+     },
+     {
+      "viability_fraction": 0.919355,
+      "hazard_count": 10,
+      "Y_final": 0.701916
+     },
+     {
+      "viability_fraction": 0.974138,
+      "hazard_count": 3,
+      "Y_final": 0.724736
+     },
+     {
+      "viability_fraction": 0.913793,
+      "hazard_count": 10,
+      "Y_final": 0.733751
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.654599
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.703247
+     },
+     {
+      "viability_fraction": 0.706897,
+      "hazard_count": 34,
+      "Y_final": 0.711131
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.711693
+     },
+     {
+      "viability_fraction": 0.944,
+      "hazard_count": 7,
+      "Y_final": 0.690643
+     },
+     {
+      "viability_fraction": 0.730769,
+      "hazard_count": 35,
+      "Y_final": 0.727901
+     },
+     {
+      "viability_fraction": 0.652542,
+      "hazard_count": 41,
+      "Y_final": 0.719823
+     },
+     {
+      "viability_fraction": 0.736842,
+      "hazard_count": 30,
+      "Y_final": 0.73635
+     },
+     {
+      "viability_fraction": 0.942857,
+      "hazard_count": 6,
+      "Y_final": 0.769392
+     },
+     {
+      "viability_fraction": 0.862069,
+      "hazard_count": 16,
+      "Y_final": 0.7997
+     },
+     {
+      "viability_fraction": 0.252336,
+      "hazard_count": 80,
+      "Y_final": 0.743732
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.709464
+     },
+     {
+      "viability_fraction": 0.546099,
+      "hazard_count": 64,
+      "Y_final": 0.712181
+     },
+     {
+      "viability_fraction": 0.890756,
+      "hazard_count": 13,
+      "Y_final": 0.683746
+     },
+     {
+      "viability_fraction": 0.398438,
+      "hazard_count": 77,
+      "Y_final": 0.856848
+     },
+     {
+      "viability_fraction": 0.826446,
+      "hazard_count": 21,
+      "Y_final": 0.765418
+     },
+     {
+      "viability_fraction": 0.830882,
+      "hazard_count": 23,
+      "Y_final": 0.70254
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.660469
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.664189
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.655898
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.656601
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.662629
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.713064
+     },
+     {
+      "viability_fraction": 0.596774,
+      "hazard_count": 50,
+      "Y_final": 0.73575
+     },
+     {
+      "viability_fraction": 0.864865,
+      "hazard_count": 15,
+      "Y_final": 0.738697
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.733353
+     },
+     {
+      "viability_fraction": 0.9375,
+      "hazard_count": 8,
+      "Y_final": 0.717125
+     },
+     {
+      "viability_fraction": 0.779661,
+      "hazard_count": 26,
+      "Y_final": 0.736763
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.676946
+     },
+     {
+      "viability_fraction": 0.876033,
+      "hazard_count": 15,
+      "Y_final": 0.67654
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.707548
+     },
+     {
+      "viability_fraction": 0.87069,
+      "hazard_count": 15,
+      "Y_final": 0.741964
+     },
+     {
+      "viability_fraction": 0.908333,
+      "hazard_count": 11,
+      "Y_final": 0.790791
+     },
+     {
+      "viability_fraction": 0.643478,
+      "hazard_count": 41,
+      "Y_final": 0.678049
+     }
+    ]
+   },
+   "f40v": {
+    "viability_mean": 0.833362,
+    "viability_std": 0.157217,
+    "hazard_count_mean": 28.74,
+    "hazard_count_std": 26.8937,
+    "Y_final_mean": 0.705443,
+    "Y_final_std": 0.031866,
+    "mean_state": [
+     0.51094,
+     0.500746,
+     0.820072,
+     0.721165,
+     0.499271,
+     0.488664,
+     0.677569
+    ],
+    "max_T_mean": 0.592236,
+    "min_S_mean": 0.522624,
+    "max_C_mean": 0.940371,
+    "max_X_mean": 0.595997,
+    "per_perm": [
+     {
+      "viability_fraction": 0.811429,
+      "hazard_count": 33,
+      "Y_final": 0.714442
+     },
+     {
+      "viability_fraction": 0.8625,
+      "hazard_count": 22,
+      "Y_final": 0.703094
+     },
+     {
+      "viability_fraction": 0.460674,
+      "hazard_count": 96,
+      "Y_final": 0.700205
+     },
+     {
+      "viability_fraction": 0.857143,
+      "hazard_count": 22,
+      "Y_final": 0.74098
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.695062
+     },
+     {
+      "viability_fraction": 0.99422,
+      "hazard_count": 1,
+      "Y_final": 0.651596
+     },
+     {
+      "viability_fraction": 0.836735,
+      "hazard_count": 24,
+      "Y_final": 0.732117
+     },
+     {
+      "viability_fraction": 0.801282,
+      "hazard_count": 31,
+      "Y_final": 0.716222
+     },
+     {
+      "viability_fraction": 0.854651,
+      "hazard_count": 25,
+      "Y_final": 0.710315
+     },
+     {
+      "viability_fraction": 0.819672,
+      "hazard_count": 33,
+      "Y_final": 0.663676
+     },
+     {
+      "viability_fraction": 0.480519,
+      "hazard_count": 80,
+      "Y_final": 0.712237
+     },
+     {
+      "viability_fraction": 0.892045,
+      "hazard_count": 19,
+      "Y_final": 0.681329
+     },
+     {
+      "viability_fraction": 0.837079,
+      "hazard_count": 29,
+      "Y_final": 0.718851
+     },
+     {
+      "viability_fraction": 0.944134,
+      "hazard_count": 10,
+      "Y_final": 0.696331
+     },
+     {
+      "viability_fraction": 0.795181,
+      "hazard_count": 34,
+      "Y_final": 0.709952
+     },
+     {
+      "viability_fraction": 0.94012,
+      "hazard_count": 10,
+      "Y_final": 0.683973
+     },
+     {
+      "viability_fraction": 0.923977,
+      "hazard_count": 13,
+      "Y_final": 0.695609
+     },
+     {
+      "viability_fraction": 0.805405,
+      "hazard_count": 36,
+      "Y_final": 0.764036
+     },
+     {
+      "viability_fraction": 0.798817,
+      "hazard_count": 34,
+      "Y_final": 0.677601
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.673386
+     },
+     {
+      "viability_fraction": 0.96,
+      "hazard_count": 7,
+      "Y_final": 0.69348
+     },
+     {
+      "viability_fraction": 0.808511,
+      "hazard_count": 36,
+      "Y_final": 0.700156
+     },
+     {
+      "viability_fraction": 0.619048,
+      "hazard_count": 64,
+      "Y_final": 0.744289
+     },
+     {
+      "viability_fraction": 0.802395,
+      "hazard_count": 33,
+      "Y_final": 0.679566
+     },
+     {
+      "viability_fraction": 0.891566,
+      "hazard_count": 18,
+      "Y_final": 0.677281
+     },
+     {
+      "viability_fraction": 0.689266,
+      "hazard_count": 55,
+      "Y_final": 0.821951
+     },
+     {
+      "viability_fraction": 0.365385,
+      "hazard_count": 99,
+      "Y_final": 0.689982
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.689795
+     },
+     {
+      "viability_fraction": 0.681159,
+      "hazard_count": 66,
+      "Y_final": 0.681477
+     },
+     {
+      "viability_fraction": 0.923077,
+      "hazard_count": 13,
+      "Y_final": 0.700514
+     },
+     {
+      "viability_fraction": 0.461538,
+      "hazard_count": 98,
+      "Y_final": 0.746389
+     },
+     {
+      "viability_fraction": 0.605556,
+      "hazard_count": 71,
+      "Y_final": 0.736726
+     },
+     {
+      "viability_fraction": 0.880829,
+      "hazard_count": 23,
+      "Y_final": 0.692084
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.725394
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.68764
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.725189
+     },
+     {
+      "viability_fraction": 0.942105,
+      "hazard_count": 11,
+      "Y_final": 0.693384
+     },
+     {
+      "viability_fraction": 0.972067,
+      "hazard_count": 5,
+      "Y_final": 0.699591
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.676084
+     },
+     {
+      "viability_fraction": 0.714286,
+      "hazard_count": 50,
+      "Y_final": 0.706262
+     },
+     {
+      "viability_fraction": 0.710059,
+      "hazard_count": 49,
+      "Y_final": 0.722715
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.686498
+     },
+     {
+      "viability_fraction": 0.802198,
+      "hazard_count": 36,
+      "Y_final": 0.72852
+     },
+     {
+      "viability_fraction": 0.789773,
+      "hazard_count": 37,
+      "Y_final": 0.678979
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.653903
+     },
+     {
+      "viability_fraction": 0.910714,
+      "hazard_count": 15,
+      "Y_final": 0.673662
+     },
+     {
+      "viability_fraction": 0.947977,
+      "hazard_count": 9,
+      "Y_final": 0.764612
+     },
+     {
+      "viability_fraction": 0.905882,
+      "hazard_count": 16,
+      "Y_final": 0.761222
+     },
+     {
+      "viability_fraction": 0.91018,
+      "hazard_count": 15,
+      "Y_final": 0.728463
+     },
+     {
+      "viability_fraction": 0.65896,
+      "hazard_count": 59,
+      "Y_final": 0.665339
+     }
+    ]
+   },
+   "f43v": {
+    "viability_mean": 0.995448,
+    "viability_std": 0.022481,
+    "hazard_count_mean": 0.68,
+    "hazard_count_std": 3.4202,
+    "Y_final_mean": 0.975862,
+    "Y_final_std": 0.027724,
+    "mean_state": [
+     0.523247,
+     0.500264,
+     0.722814,
+     0.587382,
+     0.496973,
+     0.365448,
+     0.871849
+    ],
+    "max_T_mean": 0.666016,
+    "min_S_mean": 0.519918,
+    "max_C_mean": 0.745975,
+    "max_X_mean": 0.592083,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.96314
+     },
+     {
+      "viability_fraction": 0.993631,
+      "hazard_count": 1,
+      "Y_final": 0.98224
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.991206
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.99594
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.907603
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.993546
+     },
+     {
+      "viability_fraction": 0.962963,
+      "hazard_count": 5,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.843137,
+      "hazard_count": 24,
+      "Y_final": 0.946719
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.926158
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.924085
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.989193
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.91683
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.956943
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.905822
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.961344
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.965557
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998204
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.966954
+     },
+     {
+      "viability_fraction": 0.985816,
+      "hazard_count": 2,
+      "Y_final": 0.99661
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999637
+     },
+     {
+      "viability_fraction": 0.993243,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.975872
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.979602
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.973647
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.943645
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.986278
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.98486
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.938464
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.9871
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.972611
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.989712
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999617
+     },
+     {
+      "viability_fraction": 0.993631,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998826
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.933994
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.959084
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.955322
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.986189
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.997983
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.942564
+     }
+    ]
+   },
+   "f104r": {
+    "viability_mean": 0.999596,
+    "viability_std": 0.001475,
+    "hazard_count_mean": 0.18,
+    "hazard_count_std": 0.6539,
+    "Y_final_mean": 0.993612,
+    "Y_final_std": 0.01107,
+    "mean_state": [
+     0.537612,
+     0.505109,
+     0.734992,
+     0.559563,
+     0.513237,
+     0.295055,
+     0.96557
+    ],
+    "max_T_mean": 0.743798,
+    "min_S_mean": 0.518559,
+    "max_C_mean": 0.714765,
+    "max_X_mean": 0.627376,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.989496
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.966737
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.988376
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.995573
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.980327
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.985382
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.986982
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.962573
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.997773,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.990971,
+      "hazard_count": 4,
+      "Y_final": 0.991209
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.981444
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.993985
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.986678
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.985989
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.993675
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.949403
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.976011
+     },
+     {
+      "viability_fraction": 0.997854,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998921
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.996032
+     },
+     {
+      "viability_fraction": 0.997768,
+      "hazard_count": 1,
+      "Y_final": 0.996
+     },
+     {
+      "viability_fraction": 0.995434,
+      "hazard_count": 2,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.975798
+     }
+    ]
+   },
+   "f111r": {
+    "viability_mean": 0.999661,
+    "viability_std": 0.001238,
+    "hazard_count_mean": 0.18,
+    "hazard_count_std": 0.6539,
+    "Y_final_mean": 0.996085,
+    "Y_final_std": 0.009199,
+    "mean_state": [
+     0.537969,
+     0.505223,
+     0.735269,
+     0.559599,
+     0.513586,
+     0.289501,
+     0.970664
+    ],
+    "max_T_mean": 0.746808,
+    "min_S_mean": 0.51818,
+    "max_C_mean": 0.722099,
+    "max_X_mean": 0.629042,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999075
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999014
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.990466
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.995859
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.997864
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.995458
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.993224
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.99805
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.998158,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.99241,
+      "hazard_count": 4,
+      "Y_final": 0.961251
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.971586
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.997566
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.982507
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999338
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.999681
+     },
+     {
+      "viability_fraction": 0.998168,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.997723
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.989673
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.956083
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.99812,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.99619,
+      "hazard_count": 2,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.989432
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.997341
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.994511
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.998556
+     }
+    ]
+   },
+   "f116v": {
+    "viability_mean": 1.0,
+    "viability_std": 0.0,
+    "hazard_count_mean": 0.0,
+    "hazard_count_std": 0.0,
+    "Y_final_mean": 0.5,
+    "Y_final_std": 0.0,
+    "mean_state": [
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5
+    ],
+    "max_T_mean": 0.5,
+    "min_S_mean": 0.5,
+    "max_C_mean": 0.5,
+    "max_X_mean": 0.5,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     }
+    ]
+   }
+  },
+  "N4_terminal_shuffle": {
+   "f78r": {
+    "viability_mean": 1.0,
+    "viability_std": 0.0,
+    "hazard_count_mean": 0.0,
+    "hazard_count_std": 0.0,
+    "Y_final_mean": 0.831272,
+    "Y_final_std": 0.001102,
+    "mean_state": [
+     0.530031,
+     0.510193,
+     0.926117,
+     0.540815,
+     0.502701,
+     0.4734,
+     0.765471
+    ],
+    "max_T_mean": 0.600142,
+    "min_S_mean": 0.525691,
+    "max_C_mean": 0.655544,
+    "max_X_mean": 0.525084,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.830406
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.832317
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.829418
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.830792
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.829994
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.829896
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.832326
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.831786
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.829695
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.831434
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.829781
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.830814
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.829205
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.831093
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.832741
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.83271
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.83044
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.829535
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.831879
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.831014
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.832193
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.83177
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.830135
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.832264
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.831003
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.832122
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.832022
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.833256
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.832054
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.831975
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.831684
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.829599
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.830566
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.830378
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.829749
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.83158
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.832481
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.830546
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.831852
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.83023
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.832356
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.831877
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.832349
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.831944
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.829492
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.832973
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.832186
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.832879
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.831685
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.831115
+     }
+    ]
+   },
+   "f84r": {
+    "viability_mean": 1.0,
+    "viability_std": 0.0,
+    "hazard_count_mean": 0.0,
+    "hazard_count_std": 0.0,
+    "Y_final_mean": 0.879699,
+    "Y_final_std": 0.000756,
+    "mean_state": [
+     0.530708,
+     0.514117,
+     0.939646,
+     0.554703,
+     0.505713,
+     0.460875,
+     0.819983
+    ],
+    "max_T_mean": 0.679365,
+    "min_S_mean": 0.524039,
+    "max_C_mean": 0.693537,
+    "max_X_mean": 0.549034,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879294
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879198
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879505
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.88086
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879591
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.880259
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879865
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.88031
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.88128
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.880212
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.878212
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879669
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879403
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.878972
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.880503
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879971
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.880089
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.878591
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.878968
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.878931
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879915
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.880266
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.880727
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.881289
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.878526
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.878213
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879907
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.880447
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879734
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879589
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.878882
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879685
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.880696
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.880976
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.878759
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.87879
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879641
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.880384
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879137
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879085
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879198
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879627
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.878655
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.880067
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879949
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.880252
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879494
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879212
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.880562
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.879589
+     }
+    ]
+   },
+   "f55r": {
+    "viability_mean": 0.763548,
+    "viability_std": 0.021786,
+    "hazard_count_mean": 29.32,
+    "hazard_count_std": 2.7014,
+    "Y_final_mean": 0.769167,
+    "Y_final_std": 0.001022,
+    "mean_state": [
+     0.529767,
+     0.493228,
+     0.659844,
+     0.794443,
+     0.495847,
+     0.541655,
+     0.652666
+    ],
+    "max_T_mean": 0.579807,
+    "min_S_mean": 0.515952,
+    "max_C_mean": 1.0,
+    "max_X_mean": 0.622826,
+    "per_perm": [
+     {
+      "viability_fraction": 0.75,
+      "hazard_count": 31,
+      "Y_final": 0.768553
+     },
+     {
+      "viability_fraction": 0.733871,
+      "hazard_count": 33,
+      "Y_final": 0.76827
+     },
+     {
+      "viability_fraction": 0.790323,
+      "hazard_count": 26,
+      "Y_final": 0.771218
+     },
+     {
+      "viability_fraction": 0.766129,
+      "hazard_count": 29,
+      "Y_final": 0.768132
+     },
+     {
+      "viability_fraction": 0.758065,
+      "hazard_count": 30,
+      "Y_final": 0.768074
+     },
+     {
+      "viability_fraction": 0.814516,
+      "hazard_count": 23,
+      "Y_final": 0.769825
+     },
+     {
+      "viability_fraction": 0.741935,
+      "hazard_count": 32,
+      "Y_final": 0.767526
+     },
+     {
+      "viability_fraction": 0.782258,
+      "hazard_count": 27,
+      "Y_final": 0.769392
+     },
+     {
+      "viability_fraction": 0.766129,
+      "hazard_count": 29,
+      "Y_final": 0.769214
+     },
+     {
+      "viability_fraction": 0.758065,
+      "hazard_count": 30,
+      "Y_final": 0.771414
+     },
+     {
+      "viability_fraction": 0.790323,
+      "hazard_count": 26,
+      "Y_final": 0.769463
+     },
+     {
+      "viability_fraction": 0.725806,
+      "hazard_count": 34,
+      "Y_final": 0.769643
+     },
+     {
+      "viability_fraction": 0.725806,
+      "hazard_count": 34,
+      "Y_final": 0.768343
+     },
+     {
+      "viability_fraction": 0.75,
+      "hazard_count": 31,
+      "Y_final": 0.768346
+     },
+     {
+      "viability_fraction": 0.758065,
+      "hazard_count": 30,
+      "Y_final": 0.767838
+     },
+     {
+      "viability_fraction": 0.790323,
+      "hazard_count": 26,
+      "Y_final": 0.770406
+     },
+     {
+      "viability_fraction": 0.790323,
+      "hazard_count": 26,
+      "Y_final": 0.769622
+     },
+     {
+      "viability_fraction": 0.774194,
+      "hazard_count": 28,
+      "Y_final": 0.770671
+     },
+     {
+      "viability_fraction": 0.725806,
+      "hazard_count": 34,
+      "Y_final": 0.768615
+     },
+     {
+      "viability_fraction": 0.741935,
+      "hazard_count": 32,
+      "Y_final": 0.769971
+     },
+     {
+      "viability_fraction": 0.733871,
+      "hazard_count": 33,
+      "Y_final": 0.766989
+     },
+     {
+      "viability_fraction": 0.75,
+      "hazard_count": 31,
+      "Y_final": 0.768264
+     },
+     {
+      "viability_fraction": 0.741935,
+      "hazard_count": 32,
+      "Y_final": 0.768798
+     },
+     {
+      "viability_fraction": 0.766129,
+      "hazard_count": 29,
+      "Y_final": 0.769067
+     },
+     {
+      "viability_fraction": 0.782258,
+      "hazard_count": 27,
+      "Y_final": 0.768594
+     },
+     {
+      "viability_fraction": 0.790323,
+      "hazard_count": 26,
+      "Y_final": 0.770149
+     },
+     {
+      "viability_fraction": 0.790323,
+      "hazard_count": 26,
+      "Y_final": 0.770252
+     },
+     {
+      "viability_fraction": 0.782258,
+      "hazard_count": 27,
+      "Y_final": 0.769815
+     },
+     {
+      "viability_fraction": 0.782258,
+      "hazard_count": 27,
+      "Y_final": 0.770099
+     },
+     {
+      "viability_fraction": 0.758065,
+      "hazard_count": 30,
+      "Y_final": 0.76774
+     },
+     {
+      "viability_fraction": 0.798387,
+      "hazard_count": 25,
+      "Y_final": 0.769401
+     },
+     {
+      "viability_fraction": 0.806452,
+      "hazard_count": 24,
+      "Y_final": 0.769022
+     },
+     {
+      "viability_fraction": 0.774194,
+      "hazard_count": 28,
+      "Y_final": 0.771142
+     },
+     {
+      "viability_fraction": 0.75,
+      "hazard_count": 31,
+      "Y_final": 0.769918
+     },
+     {
+      "viability_fraction": 0.758065,
+      "hazard_count": 30,
+      "Y_final": 0.768922
+     },
+     {
+      "viability_fraction": 0.766129,
+      "hazard_count": 29,
+      "Y_final": 0.769643
+     },
+     {
+      "viability_fraction": 0.758065,
+      "hazard_count": 30,
+      "Y_final": 0.768712
+     },
+     {
+      "viability_fraction": 0.75,
+      "hazard_count": 31,
+      "Y_final": 0.769724
+     },
+     {
+      "viability_fraction": 0.774194,
+      "hazard_count": 28,
+      "Y_final": 0.768103
+     },
+     {
+      "viability_fraction": 0.733871,
+      "hazard_count": 33,
+      "Y_final": 0.768175
+     },
+     {
+      "viability_fraction": 0.766129,
+      "hazard_count": 29,
+      "Y_final": 0.769191
+     },
+     {
+      "viability_fraction": 0.766129,
+      "hazard_count": 29,
+      "Y_final": 0.768582
+     },
+     {
+      "viability_fraction": 0.790323,
+      "hazard_count": 26,
+      "Y_final": 0.769002
+     },
+     {
+      "viability_fraction": 0.75,
+      "hazard_count": 31,
+      "Y_final": 0.769048
+     },
+     {
+      "viability_fraction": 0.733871,
+      "hazard_count": 33,
+      "Y_final": 0.771016
+     },
+     {
+      "viability_fraction": 0.774194,
+      "hazard_count": 28,
+      "Y_final": 0.769539
+     },
+     {
+      "viability_fraction": 0.758065,
+      "hazard_count": 30,
+      "Y_final": 0.768648
+     },
+     {
+      "viability_fraction": 0.766129,
+      "hazard_count": 29,
+      "Y_final": 0.767747
+     },
+     {
+      "viability_fraction": 0.741935,
+      "hazard_count": 32,
+      "Y_final": 0.768103
+     },
+     {
+      "viability_fraction": 0.75,
+      "hazard_count": 31,
+      "Y_final": 0.770432
+     }
+    ]
+   },
+   "f40v": {
+    "viability_mean": 0.972453,
+    "viability_std": 0.010307,
+    "hazard_count_mean": 2.92,
+    "hazard_count_std": 1.0925,
+    "Y_final_mean": 0.694363,
+    "Y_final_std": 0.000535,
+    "mean_state": [
+     0.547116,
+     0.504846,
+     0.700197,
+     0.67904,
+     0.497482,
+     0.560954,
+     0.631133
+    ],
+    "max_T_mean": 0.624741,
+    "min_S_mean": 0.520821,
+    "max_C_mean": 0.901952,
+    "max_X_mean": 0.690648,
+    "per_perm": [
+     {
+      "viability_fraction": 0.971698,
+      "hazard_count": 3,
+      "Y_final": 0.693573
+     },
+     {
+      "viability_fraction": 0.990566,
+      "hazard_count": 1,
+      "Y_final": 0.695456
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.693859
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.693747
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.694827
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.693831
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.694171
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.694829
+     },
+     {
+      "viability_fraction": 0.971698,
+      "hazard_count": 3,
+      "Y_final": 0.695051
+     },
+     {
+      "viability_fraction": 0.990566,
+      "hazard_count": 1,
+      "Y_final": 0.694847
+     },
+     {
+      "viability_fraction": 0.971698,
+      "hazard_count": 3,
+      "Y_final": 0.69458
+     },
+     {
+      "viability_fraction": 0.971698,
+      "hazard_count": 3,
+      "Y_final": 0.693909
+     },
+     {
+      "viability_fraction": 0.990566,
+      "hazard_count": 1,
+      "Y_final": 0.69529
+     },
+     {
+      "viability_fraction": 0.971698,
+      "hazard_count": 3,
+      "Y_final": 0.693901
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.693685
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.694388
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.693824
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.694322
+     },
+     {
+      "viability_fraction": 0.971698,
+      "hazard_count": 3,
+      "Y_final": 0.694615
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.693539
+     },
+     {
+      "viability_fraction": 0.971698,
+      "hazard_count": 3,
+      "Y_final": 0.694905
+     },
+     {
+      "viability_fraction": 0.990566,
+      "hazard_count": 1,
+      "Y_final": 0.694506
+     },
+     {
+      "viability_fraction": 0.971698,
+      "hazard_count": 3,
+      "Y_final": 0.694321
+     },
+     {
+      "viability_fraction": 0.990566,
+      "hazard_count": 1,
+      "Y_final": 0.694137
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.693859
+     },
+     {
+      "viability_fraction": 0.981132,
+      "hazard_count": 2,
+      "Y_final": 0.695015
+     },
+     {
+      "viability_fraction": 0.981132,
+      "hazard_count": 2,
+      "Y_final": 0.694889
+     },
+     {
+      "viability_fraction": 0.990566,
+      "hazard_count": 1,
+      "Y_final": 0.694641
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.693574
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.694174
+     },
+     {
+      "viability_fraction": 0.990566,
+      "hazard_count": 1,
+      "Y_final": 0.694445
+     },
+     {
+      "viability_fraction": 0.981132,
+      "hazard_count": 2,
+      "Y_final": 0.694023
+     },
+     {
+      "viability_fraction": 0.971698,
+      "hazard_count": 3,
+      "Y_final": 0.695355
+     },
+     {
+      "viability_fraction": 0.981132,
+      "hazard_count": 2,
+      "Y_final": 0.694437
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.694841
+     },
+     {
+      "viability_fraction": 0.971698,
+      "hazard_count": 3,
+      "Y_final": 0.694092
+     },
+     {
+      "viability_fraction": 0.981132,
+      "hazard_count": 2,
+      "Y_final": 0.694676
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.695042
+     },
+     {
+      "viability_fraction": 0.971698,
+      "hazard_count": 3,
+      "Y_final": 0.694556
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.693748
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.693454
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.694382
+     },
+     {
+      "viability_fraction": 0.981132,
+      "hazard_count": 2,
+      "Y_final": 0.695381
+     },
+     {
+      "viability_fraction": 0.971698,
+      "hazard_count": 3,
+      "Y_final": 0.693948
+     },
+     {
+      "viability_fraction": 0.971698,
+      "hazard_count": 3,
+      "Y_final": 0.694727
+     },
+     {
+      "viability_fraction": 0.971698,
+      "hazard_count": 3,
+      "Y_final": 0.694177
+     },
+     {
+      "viability_fraction": 0.981132,
+      "hazard_count": 2,
+      "Y_final": 0.694351
+     },
+     {
+      "viability_fraction": 0.981132,
+      "hazard_count": 2,
+      "Y_final": 0.694074
+     },
+     {
+      "viability_fraction": 0.990566,
+      "hazard_count": 1,
+      "Y_final": 0.694689
+     },
+     {
+      "viability_fraction": 0.962264,
+      "hazard_count": 4,
+      "Y_final": 0.693503
+     }
+    ]
+   },
+   "f43v": {
+    "viability_mean": 1.0,
+    "viability_std": 0.0,
+    "hazard_count_mean": 0.0,
+    "hazard_count_std": 0.0,
+    "Y_final_mean": 0.983308,
+    "Y_final_std": 0.002944,
+    "mean_state": [
+     0.466154,
+     0.498408,
+     0.782355,
+     0.572664,
+     0.501657,
+     0.269163,
+     0.879808
+    ],
+    "max_T_mean": 0.576636,
+    "min_S_mean": 0.517217,
+    "max_C_mean": 0.673562,
+    "max_X_mean": 0.499661,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.981674
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.983488
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.980793
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.979454
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.980732
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.986953
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.98136
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.987008
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.989277
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.97969
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.987764
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.980586
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.977631
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.984113
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.981637
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.97942
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.982873
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.988147
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.987997
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.979369
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.981096
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.985166
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.981739
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.981955
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.980211
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.980469
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.985216
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.981518
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.980787
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.981724
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.985505
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.982345
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.984365
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.987284
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.98591
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.982098
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.980977
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.98207
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.980724
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.987481
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.9885
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.98142
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.983511
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.984358
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.987004
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.986804
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.983337
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.982368
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.987355
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.982159
+     }
+    ]
+   },
+   "f104r": {
+    "viability_mean": 1.0,
+    "viability_std": 0.0,
+    "hazard_count_mean": 0.0,
+    "hazard_count_std": 0.0,
+    "Y_final_mean": 1.0,
+    "Y_final_std": 0.0,
+    "mean_state": [
+     0.539123,
+     0.505331,
+     0.686646,
+     0.577366,
+     0.513228,
+     0.28623,
+     0.96763
+    ],
+    "max_T_mean": 0.750653,
+    "min_S_mean": 0.530741,
+    "max_C_mean": 0.763827,
+    "max_X_mean": 0.506892,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     }
+    ]
+   },
+   "f111r": {
+    "viability_mean": 0.999186,
+    "viability_std": 0.001353,
+    "hazard_count_mean": 0.5,
+    "hazard_count_std": 0.8307,
+    "Y_final_mean": 1.0,
+    "Y_final_std": 0.0,
+    "mean_state": [
+     0.52345,
+     0.507352,
+     0.814223,
+     0.52874,
+     0.512438,
+     0.255692,
+     0.976734
+    ],
+    "max_T_mean": 0.83951,
+    "min_S_mean": 0.522421,
+    "max_C_mean": 0.675905,
+    "max_X_mean": 0.6034,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.998371,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.998371,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.998371,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.995114,
+      "hazard_count": 3,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.998371,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.998371,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.998371,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.998371,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.998371,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.998371,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.998371,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.996743,
+      "hazard_count": 2,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.998371,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.996743,
+      "hazard_count": 2,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.993485,
+      "hazard_count": 4,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.998371,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.998371,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 0.998371,
+      "hazard_count": 1,
+      "Y_final": 1.0
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 1.0
+     }
+    ]
+   },
+   "f116v": {
+    "viability_mean": 1.0,
+    "viability_std": 0.0,
+    "hazard_count_mean": 0.0,
+    "hazard_count_std": 0.0,
+    "Y_final_mean": 0.5,
+    "Y_final_std": 0.0,
+    "mean_state": [
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5,
+     0.5
+    ],
+    "max_T_mean": 0.5,
+    "min_S_mean": 0.5,
+    "max_C_mean": 0.5,
+    "max_X_mean": 0.5,
+    "per_perm": [
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     },
+     {
+      "viability_fraction": 1.0,
+      "hazard_count": 0,
+      "Y_final": 0.5
+     }
+    ]
+   }
+  }
+ }
+}

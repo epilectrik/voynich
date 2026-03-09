@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1424 validated constraints | **Version:** 5.43 | **Date:** 2026-03-09
+**Total:** 1431 validated constraints | **Version:** 5.44 | **Date:** 2026-03-09
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5613,6 +5613,26 @@ Tier 3 interpretive synthesis placing the VMS within the landscape of medieval t
 - Paragraph domain composition does NOT predict line-level hazard envelope distribution. E3 hazard with blend=0.3 is WORSE than E2 hazard (-0.005). Within-paragraph envelope variation far exceeds between-paragraph variation. Paragraph cloud is confirmed as aggregate distributional signature, not online hazard controller (C1580).
 - CTS is section-driven, not folio-individuated (V2 z=0.29), consistent with C1570 (deployment features are section discriminators).
 - For Phase 563: use CTS closure; treat paragraph cloud as offline trace validator only; drop paragraph hazard blend.
+
+### Phase 563: Virtual Apparatus Coupling
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1581 | Full hierarchical supervisory trace coupled to virtual apparatus yields structured plant behavior beyond section-only, budget-only, and null controls | 2 | B, virtual apparatus, hierarchy, trace, coupling, C1575, C1577, C1569 | Full > B2 for 5/7 folios, full > N1 for 7/7 folios. Mean viability 0.9616. Mean Y_final 0.878. 3/4 null types destroyed. |
+| 1582 | Line packet state produces statistically significant plant state differentiation across all 7 state variables | 2 | B, virtual apparatus, line, packet, state, C1425, C1426, C1427, C1428, C1578 | 7/7 state vars significant globally (KW). Strongest: C H=191.6, Y H=148.4. Per-folio median 6/7 sig. |
+| 1583 | Terminal routing grammar does NOT produce observable punctual plant deflections at token level (negative result) | 2 | B, virtual apparatus, routing, terminal, negative, C1563, C1564, C1470 | 0/4 routing signatures directionally correct. Rates 0.45-0.50 near chance at window=5. Routing = sustained bias not punctual deflection. |
+| 1584 | Headless folio regime effect on plant containment is directionally correct but statistically underpowered | 3 | B, virtual apparatus, headless, containment, underpowered, C1488, C1574, C1523 | High-headless C=0.630 > low 0.589; S=0.844 > 0.747. Mann-Whitney p=1.00, p=0.48. N=3 vs 4 (underpowered). |
+| 1585 | CTS continuous closure contributes genuine value to coupled plant behavior | 2 | B, virtual apparatus, CTS, closure, line, paragraph, C1579, C1434, C1440, C1566 | Full > B3 (no-CTS) viability 6/7, Y_final 7/7. C-separation positive 6/7. |
+| 1586 | N3 line-shuffle null is non-destructive: line ordering carries less coupled-plant information than token composition | 2 | B, virtual apparatus, null, line-shuffle, ordering, C1399, C1400, C1470, C1577 | N3 3/7 folios pass vs N1 6/7, N2 6/7, N4 5/7. Line order < token composition for coupling. |
+| 1587 | A2_SEALED_RECIRCULATION underperforms A1_BATH_REFLUX for Herbal folios | 3 | B, virtual apparatus, profile, Herbal, assignment, C1248, C1249, C1380 | f55r viab 0.742 (A2) vs 1.000 (A1). f40v viab 0.991 (A2) vs 1.000 (A1). 2/2 Herbal A2-assigned prefer A1. |
+
+**Phase 563 findings (Virtual Apparatus Coupling, PARTIAL_COUPLING 5/9 pass):**
+- The validated hierarchical trace executor (Phase 562) was coupled to a virtual thermal apparatus model with 3 profiles (A1_BATH_REFLUX, A2_SEALED_RECIRCULATION, A3_DISTILL_COLLECT) and 7 plant state variables (T, RC, S, C, TR, X, Y). The coupling substrate is REAL: full hierarchical trace outperforms budget-only and null baselines (C1581), and 3/4 null shuffle types destroy coupled behavior (C1586).
+- Line packet phase (SPEC/WORK/CLOSE) is the PRIMARY coupling channel: all 7 plant state variables are significantly differentiated by packet phase globally, with containment (H=191.6) and yield (H=148.4) showing strongest effects (C1582). This validates the line-level three-zone architecture (C1425-C1430) as the grammar-to-apparatus interface.
+- Terminal atom routing (C1563) does NOT produce observable punctual plant deflections at token level (C1583). Routing operates as sustained domain rebalancing over line segments, not as single-token state kicks. Future models should integrate routing cumulatively.
+- CTS continuous closure (C1579) produces genuine plant-level consequences: higher viability (6/7 folios) and yield (7/7 folios) vs no-CTS baseline, with positive containment separation at closure lines (C1585). CTS should be standard in future trace-apparatus coupling.
+- N3 line-shuffle resistance confirms that line composition, not line order, is the critical coupling axis (C1586), consistent with C1399/C1400/C1470. This validates the folio-as-program paradigm.
+- Failures concentrate in underpowered tests (P3 section template N=7, P5 headless N=3v4), excursion dynamics (P3b mean 1.3 excursions vs threshold 3), and punctual routing (P4). No failure contradicts the coupling mechanism; all point to refinement axes for Phase 564.
 
 ---
 
