@@ -1,0 +1,221 @@
+{
+  "metadata": {
+    "phase": 567,
+    "phase_title": "CLOSURE FIELD AUDIT + BURDEN METRIC REFACTOR",
+    "script": "t5_synthesis.py",
+    "timestamp": "2026-03-10T02:43:46.092095+00:00",
+    "input_files": [
+      "t1_closure_field_audit.json",
+      "t2_burden_runs.json",
+      "t3_burden_null_runs.json",
+      "t4_burden_validation.json"
+    ]
+  },
+  "verdict": {
+    "label": "PARTIAL_METRIC_REFACTOR",
+    "p2_result": "PASS",
+    "np_pass_count": 3,
+    "np_total": 7,
+    "tests_passed": [
+      "NP1",
+      "NP5",
+      "NP6"
+    ],
+    "tests_failed": [
+      "NP2",
+      "NP3",
+      "NP4",
+      "NP7"
+    ],
+    "logic": "PARTIAL: P2 PASS (7/7 SVs) + 3/7 NP pass (NP1, NP5, NP6). Readout reform partially works but S dominance and weak closure observability remain unresolved."
+  },
+  "t1_audit_summary": {
+    "A1_cts_distribution": {
+      "global_mean": 0.30289,
+      "global_median": 0.21715,
+      "close_frac_gt_03": 0.37365,
+      "section_B_deficit": -0.07891,
+      "section_B_mean": 0.2493,
+      "non_B_mean": 0.32821
+    },
+    "A2_close_windows": {
+      "n_folios_with_close": 76,
+      "total_close_lines": 463,
+      "mean_run_length": 1.26503,
+      "close_token_density_mean": 0.19039
+    },
+    "A3_closure_components": {
+      "significant_close_vs_work_p001": [],
+      "note": "No closure component discriminates CLOSE from WORK at p < 0.01"
+    },
+    "A4_cts_excursion_timing": {
+      "spearman_r": -0.01429,
+      "spearman_p": 0.8849412,
+      "frac_high_work_high_close": 0.14286,
+      "note": "CTS-excursion timing uncorrelated; only 14.3% are high-WORK->high-CTS-CLOSE"
+    },
+    "A5_s_asymmetry": {
+      "s_warning_plus_hard_stop": 0.57767,
+      "s_share_of_total": 0.9002,
+      "note": "S accounts for 90% of all warning+hard_stop contacts"
+    },
+    "A6_cof_family": {
+      "best_phase_discrimination": "cof2",
+      "cof2_p_value": 0.04492458,
+      "note": "COF_2 (CTS + q4_opaque + m_close_bias) has best phase discrimination (p=0.045) but still marginal"
+    },
+    "A7_closure_overlap": {
+      "useful_closure_fraction_cts": 0.0324,
+      "note": "Useful closure fraction is 3.2%"
+    }
+  },
+  "t4_validation_summary": {
+    "anchor": {
+      "P2": "PASS",
+      "n_significant_svs": 7
+    },
+    "primary_tests": {
+      "NP1": {
+        "result": "PASS",
+        "n_pass": 16,
+        "n_total": 20,
+        "threshold": 14
+      },
+      "NP2": {
+        "result": "FAIL",
+        "n_pass": 1,
+        "n_total": 20,
+        "threshold": 14
+      },
+      "NP3": {
+        "result": "FAIL",
+        "n_pass": 11,
+        "n_total": 20,
+        "threshold": 14
+      },
+      "NP4": {
+        "result": "FAIL",
+        "n_pass": 13,
+        "n_total": 20,
+        "threshold": 14
+      },
+      "NP5": {
+        "result": "PASS",
+        "n_pass": 16,
+        "n_total": 20,
+        "threshold": 14
+      },
+      "NP6": {
+        "result": "PASS",
+        "criteria": {
+          "abs_delta_gt_0.01": true,
+          "rel_delta_gt_2pct": true,
+          "cohens_d_gt_0.3": true
+        }
+      },
+      "NP7": {
+        "result": "FAIL",
+        "s_share_pct": 84.46
+      }
+    },
+    "comparative_diagnostics": {
+      "CD1_pcv_old_corr": {
+        "pearson_r": 0.3911,
+        "interpretation": "Low correlation: PCV and old_viability measure different things"
+      },
+      "CD2_s_fraction": {
+        "S_fraction": 0.8446
+      },
+      "CD3_qgy_inversion": {
+        "full_QGY": 0.230653,
+        "full_Y_final": 0.674919,
+        "N2_QGY": 0.180085,
+        "N2_Y_final": 0.734292,
+        "inversion": true
+      },
+      "CD5_b10_delta": {
+        "PCV_delta": 0.019748,
+        "QGY_delta": 0.139124,
+        "old_viability_delta": 0.003167
+      },
+      "CD7_qgy_ratio": {
+        "full": 0.318918,
+        "full_higher_than_all_nulls": true
+      }
+    }
+  },
+  "cross_phase_comparison": [
+    {
+      "phase": 563,
+      "score": "5/9",
+      "key_result": "Baseline apparatus coupling"
+    },
+    {
+      "phase": "563b",
+      "score": "3/9",
+      "key_result": "Sensitivity recalibration"
+    },
+    {
+      "phase": 564,
+      "score": "2/9",
+      "key_result": "Event-gated execution"
+    },
+    {
+      "phase": "564b",
+      "score": "2/9",
+      "key_result": "Selective restoration"
+    },
+    {
+      "phase": 565,
+      "score": "2/9",
+      "key_result": "Permeability calibration"
+    },
+    {
+      "phase": 566,
+      "score": "1/9",
+      "key_result": "CLOSE recovery"
+    },
+    {
+      "phase": 567,
+      "score": "P2 + 3/7 NP",
+      "key_result": "PARTIAL: readout reform partially works"
+    }
+  ],
+  "provisional_constraints": {
+    "C1605": {
+      "claim": "Packet-coherence viability (PCV) provides higher discrimination than binary hazard-threshold viability. PCV discriminates full from phase-shuffled null (NP1 16/20) while old viability could not. Low correlation (r=0.39) confirms they measure different constructs.",
+      "evidence": "NP1 PASS (16/20), CD1 pearson_r=0.391",
+      "tier": "provisional"
+    },
+    "C1606": {
+      "claim": "S scoring asymmetry (high-S as productive reserve) is necessary but insufficient. S still accounts for 84.5% of SAHB even after excluding high-S events. The remaining low-S burden dominates aggregate metrics.",
+      "evidence": "NP7 FAIL (S_share=84.5%), NP2 FAIL (1/20)",
+      "tier": "provisional"
+    },
+    "C1607": {
+      "claim": "Quality-gated Y (QGY) partially inverts the N2/N4 paradox. N2's QGY (0.180) is lower than full's QGY (0.231) despite N2's Y_final being higher (0.734 vs 0.675). The quality fraction (qgy_ratio) is highest for the full model (0.319). But the effect is not strong enough to pass the 14/20 folio gate (NP4 = 13/20).",
+      "evidence": "CD3 N2_paradox_inversion=true, CD7 full=0.319, NP4=13/20",
+      "tier": "provisional"
+    },
+    "C1608": {
+      "claim": "Closure opportunity on real traces is severely limited. Only 37.4% of CLOSE lines exceed CTS 0.3 threshold. Useful closure fraction (high excursion + high closure signal) is 3.2%. CTS-excursion timing correlation is zero (r=-0.014). Closure signal and excursion need are structurally uncoupled.",
+      "evidence": "A1 close_frac_gt_03=0.374, A7 useful_closure=0.032, A4 spearman_r=-0.014",
+      "tier": "provisional"
+    },
+    "C1609": {
+      "claim": "CLOSE recovery channels become load-bearing under PCV but not under binary viability. B10 delta under PCV = +0.020 (Cohen's d = 0.465) while B10 delta under old viability ~ 0.003. The plant mechanism works; the old readout couldn't detect it.",
+      "evidence": "NP6 PASS (all 3 criteria), CD5 PCV_delta=0.020 vs old_viability_delta=0.003",
+      "tier": "provisional"
+    }
+  },
+  "next_phase": {
+    "phase": 568,
+    "title": "S-ZONE GEOMETRY + COF INTEGRATION",
+    "recommendations": [
+      "S needs further treatment: possibly exclude S entirely from discrimination metrics, or redefine S zone geometry to separate productive reserve from genuinely dangerous excursion.",
+      "COF integration to strengthen closure interface: COF_2 was best (p=0.045) but still marginal. Composite closure observability may need section-specific normalization.",
+      "Lock PCV as the primary viability metric: NP1 validated it, CD1 shows it measures a different construct from old viability (r=0.39).",
+      "Strengthen QGY criterion or lower folio threshold: NP4 at 13/20, one short of the 14/20 gate. Explore whether the 6 folios with QGY=0 (no excursions) should be excluded from the denominator."
+    ]
+  }
+}

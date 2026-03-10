@@ -13,8 +13,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have ALL 1090 validated constraints and 71 explanatory fits loaded
-as permanent context.
+embedded below. You have all 1442 validated constraints and 75 explanatory fits loaded
+as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
+the highest ID present is C1629.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -54,8 +55,8 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # EMBEDDED EXPERT CONTEXT
 
-**Generated:** 2026-02-24 09:30
-**Version:** FROZEN STATE (1090 constraints, 71 fits) [FULL]
+**Generated:** 2026-03-10 11:20
+**Version:** FROZEN STATE (1442 validated constraints, 75 fits) [FULL]
 
 ---
 
@@ -79,7 +80,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 
 # Voynich Manuscript Analysis - Context Index
 
-**Version:** 4.47 | **Status:** FROZEN | **Constraints:** 1090 | **Date:** 2026-02-24
+**Version:** 4.64 | **Status:** FROZEN | **Constraints:** 1300 | **Date:** 2026-03-05
 
 > **STRUCTURE_FREEZE_v1 ACTIVE** — Structural inspection layer is frozen. See [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) for post-freeze paths.
 >
@@ -100,6 +101,9 @@ This is not language. This is not cipher. This is a control system reference man
 | Folios enumerated | 83 (75,248 instructions) |
 | Translation-eligible zones | 0 |
 | Forbidden transitions | 17 (in 5 hazard classes) |
+| Operational categories | 8 (span all 4 systems; C1250) |
+| Macro-automaton states | 6 (8.17x class compression; AXM attractor self=0.697; C1025) |
+| Generative sufficiency | 87% of measurable structure (M2 frontier; C1025/C1030/C1033/C1034) |
 
 ---
 
@@ -127,7 +131,7 @@ df = df[df['transcriber'] == 'H']  # PRIMARY track only
 
 ## How to Think About Tokens (Structural Layer)
 
-Voynich tokens function differently than words in natural language. The manuscript has three distinct vocabulary systems:
+Voynich tokens function differently than words in natural language. The manuscript has four distinct layers:
 
 ### Vocabulary by System
 
@@ -135,7 +139,8 @@ Voynich tokens function differently than words in natural language. The manuscri
 |--------|-------------|-------|
 | **Currier B** | 479 | 49 instruction classes (9.8x compression) |
 | **Currier A** | ~2,400 | Registry entries: 609 RI + 404 PP MIDDLEs |
-| **AZC** | ~800 | Hybrid (shares with both A and B) |
+| **AZC** | ~800 | Static positional lookup table (shares with both A and B) |
+| **HT** | ~1,200 | Compound specifications (morphological subset of B; C935) |
 | **Full H-track** | ~12,362 | All systems combined |
 
 ### Currier B: Execution Grammar
@@ -144,9 +149,13 @@ In B, tokens are **instruction operators**, not semantic words:
 
 1. **479 token types collapse to 49 instruction classes.** The functional behavior is determined by instruction class, not the specific token. (C121)
 
-2. **Tokens are interchangeable within their class.** Like assembly mnemonics (MOV, ADD, JMP), specific tokens are surface variants; the class determines behavior.
+2. **Token morphology: [ARTICULATOR] + [PREFIX] + MIDDLE + [SUFFIX].** PREFIX encodes operational channel AND line position via a base-modifier positional grammar (C929, C1218-C1219). MIDDLE encodes core action. SUFFIX encodes role-dependent markers.
 
-3. **High hapax rates are expected.** Compositional morphology (PREFIX + MIDDLE + SUFFIX) generates unique surface forms naturally. 35-39% hapax rate follows from productive combination.
+3. **8 operational categories** (THERMAL, CONTAINMENT, FLOW, MONITORING, OPERATION, STAGING, MARKING, TRANSITION) organize all four systems (C1250). Categories predict escape dynamics (C1274) and are structured in sequence (C1286).
+
+4. **6-state macro-automaton** compresses 49 classes into folio-level dynamics. AXM is the dominant attractor (self=0.697). 6 folio archetypes orthogonal to REGIMEs (C1025).
+
+5. **Paragraph body cycling:** Two universal suffix modes alternate within paragraphs — Mode A (specification/energy) and Mode B (continuation/equilibration). Cross-mode coupling is positional and paragraph-scoped, not sequential (C1229-C1231, C1308-C1312).
 
 ### Currier A: Registry Vocabulary
 
@@ -274,6 +283,8 @@ requires explicit authorization from the user.
 | **Validate B grammar (API)** | [STRUCTURAL_CONTRACTS/currierB.bcsc.yaml](STRUCTURAL_CONTRACTS/currierB.bcsc.yaml) |
 | **Understand A→AZC transform** | [STRUCTURAL_CONTRACTS/azc_activation.act.yaml](STRUCTURAL_CONTRACTS/azc_activation.act.yaml) |
 | **Understand AZC→B propagation** | [STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml](STRUCTURAL_CONTRACTS/azc_b_activation.act.yaml) |
+| **Validate HT properties (API)** | [STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml](STRUCTURAL_CONTRACTS/humanTrack.htsc.yaml) |
+| **Validate paragraph structure (API)** | [STRUCTURAL_CONTRACTS/paragraph.psc.yaml](STRUCTURAL_CONTRACTS/paragraph.psc.yaml) |
 | Work with Currier B grammar | [ARCHITECTURE/currier_B.md](ARCHITECTURE/currier_B.md) |
 | Work with Currier A registry | [ARCHITECTURE/currier_A.md](ARCHITECTURE/currier_A.md) |
 | Currier A characterization (detailed) | [ARCHITECTURE/currier_A_summary.md](ARCHITECTURE/currier_A_summary.md) |
@@ -322,6 +333,16 @@ See [CORE/falsifications.md](CORE/falsifications.md) for complete list with evid
 - LINK population (13.2% of tokens = ol-morphology, role-stratified; C609 density, C1174 morphological artifact)
 - Folio = complete program, Line = formal control block
 
+**Established (Tier 2):**
+- 6-state macro-automaton with AXM attractor (C1025)
+- 8 operational categories spanning all 4 systems (C1250)
+- PREFIX base-modifier positional grammar (C929, C1218-C1219)
+- Sister pairs achieve category divergence through vocabulary selection (C1303-C1307)
+- Paragraph body: suffix mode cycling within execution gradient envelope (C1229-C1232)
+- Cross-mode parallel tracks: positional alignment, B→A thermal feedback, no sequential coupling (C1308-C1312)
+- 5 apparatus profiles from marker MIDDLEs; REGIME encodes apparatus type (C1247-C1249)
+- Generative sufficiency: 49-class Markov + forbidden suppression reproduces 87% of structure (C1025/C1030)
+
 **Not encoded (operator provides externally):**
 - Sensory completion judgment (when to stop)
 - Material selection (what to process)
@@ -335,8 +356,8 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 | Category | Count |
 |----------|-------|
-| Validated constraints | 1090 |
-| Completed phases | 444 |
+| Validated constraints | 1156 |
+| Completed phases | 460 |
 | Folios enumerated | 83 |
 | Instructions cataloged | 75,248 |
 | Token types in grammar | 479 |
@@ -346,22 +367,26 @@ See [CORE/model_boundary.md](CORE/model_boundary.md) for complete boundary.
 
 ---
 
-## Three Text Systems
+## Four-Layer Architecture
 
-The manuscript contains three distinct systems sharing a **global morphological type system** (not grammar):
+The manuscript comprises four structurally distinct systems sharing a **global morphological type system** (not grammar):
 
-> **Important distinction:** The "single shared grammar" in the frozen conclusion applies to **Currier B only**. Currier A uses a different formal system (non-sequential). What IS shared across all three systems is the morphological TYPE system (prefix/suffix structure, compositional rules).
+> **Important distinction:** The "single shared grammar" in the frozen conclusion applies to **Currier B only**. Currier A uses a different formal system (non-sequential). What IS shared across all systems is the morphological TYPE system (prefix/suffix structure, compositional rules).
 
-| System | % Tokens | Folios | Function |
-|--------|----------|--------|----------|
-| **Currier B** | 61.9% | 83 | Sequential executable programs |
-| **Currier A** | 30.5% | 114 | Non-sequential categorical registry |
-| **AZC** | 8.7% | 30 | Hybrid diagram annotation (labeling) |
+| Layer | System | Tokens | Function |
+|-------|--------|--------|----------|
+| **Execution** | Currier B | 23,243 (61.9%) | Controls what you do over time |
+| **Distinction** | Currier A | 11,415 (30.5%) | Catalogs where distinctions matter |
+| **Context** | AZC | 3,299 (8.7%) | Static positional lookup table classifying vocabulary |
+| **Orientation** | HT | 7,042* | Compound specifications redundant with body lines; keeps operator oriented |
+
+*HT tokens are a morphological subset of Currier B — already counted in B total. They use the same morphology but do not participate in the 49-class grammar. (C935)
 
 - A and B are **FOLIO-DISJOINT** (0 shared folios)
 - A and B are **GRAMMAR-DISJOINT** (different formal systems)
 - A and B are **VOCABULARY-INTEGRATED** (69.8% shared types)
 - AZC bridges both with 60.5% shared vocabulary
+- 8 operational categories are the first organizing principle spanning all 4 systems (C1250)
 
 See [ARCHITECTURE/cross_system.md](ARCHITECTURE/cross_system.md) for details.
 
@@ -371,8 +396,8 @@ See [ARCHITECTURE/cross_system.md](ARCHITECTURE/cross_system.md) for details.
 
 - **Constraints (by topic):** [CLAIMS/INDEX.md](CLAIMS/INDEX.md) - Browse by category, follow links to details
 - **Architectural guide:** [MODEL_CONTEXT.md](MODEL_CONTEXT.md) - How to interpret the constraint system
-- **Structural contracts:** [STRUCTURAL_CONTRACTS/](STRUCTURAL_CONTRACTS/) - Derived API specifications (CASC, AZC-ACT, AZC-B-ACT, BCSC)
-- **Phases:** [MAPS/phase_index.md](MAPS/phase_index.md) - 118 phases with status
+- **Structural contracts:** [STRUCTURAL_CONTRACTS/](STRUCTURAL_CONTRACTS/) - Derived API specifications (CASC, AZC-ACT, AZC-B-ACT, BCSC, HTSC, PSC)
+- **Phases:** [MAPS/phase_index.md](MAPS/phase_index.md) - Phase index
 - **Methodology:** [SYSTEM/METHODOLOGY.md](SYSTEM/METHODOLOGY.md) - Warnings and patterns
 - **Changelog:** [SYSTEM/CHANGELOG.md](SYSTEM/CHANGELOG.md) - Context system updates
 
@@ -389,7 +414,7 @@ These files are for scripts and validation tools, NOT for reading in full:
 Fits are explanatory models that account for observed patterns. They do NOT constrain the model.
 
 - **Fits explain. Constraints bind.** See [SYSTEM/FIT_METHODOLOGY.md](SYSTEM/FIT_METHODOLOGY.md)
-- **Fit registry:** [MODEL_FITS/INDEX.md](MODEL_FITS/INDEX.md) (31 fits logged)
+- **Fit registry:** [MODEL_FITS/INDEX.md](MODEL_FITS/INDEX.md) (71 fits logged)
 - **Cross-reference:** [MAPS/fit_to_constraint.md](MAPS/fit_to_constraint.md)
 - **Epistemic layers:** [SYSTEM/epistemic_layers.md](SYSTEM/epistemic_layers.md) - Constraint vs Fit vs Speculation legend
 
@@ -431,7 +456,7 @@ See [README.md](README.md) and [SYSTEM/HOW_TO_READ.md](SYSTEM/HOW_TO_READ.md) fo
 
 ---
 
-*Context System v3.84 | Project v3.84 FROZEN STATE | ANALYSIS CLOSED | PCA-v1 CERTIFIED | 2026-02-14*
+*Context System v4.63 | Project v4.63 FROZEN STATE | ANALYSIS CLOSED | PCA-v1 CERTIFIED | 2026-02-25*
 
 
 ---
@@ -1828,13 +1853,12 @@ Nothing else is logically required.
 
 # All Constraints
 
-CONSTRAINT_REFERENCE v2.6 | 1091 constraints | 2026-02-24
+CONSTRAINT_REFERENCE v2.6 | 1442 constraints | 2026-03-10
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
 
 NUM	CONSTRAINT	TIER	SCOPE	LOCATION
-C001	A | **INVALIDATED** - depend on C250 |	266	~~Block vs non-block entry types~~	1
 C074	Dominant convergence to stable states (57.8% STATE-C terminal)	0	B	-> C074_dominant_convergence.md
 C079	Only STATE-C essential	0	B	in: tier0_core
 C084	System targets MONOSTATE (42.2% end in transitional)	0	B	in: tier0_core
@@ -2873,7 +2897,7 @@ C1191	**Position-Dependent Behavioral Composition** (atoms carry consistent iden
 C1192	**SUFFIX Additive Composition** (SUFFIX compounds compose additively from position-specific atom profiles; r=0.953, z=2.59, p=0.029; extends C1190 to SUFFIX; cross-position baseline r=0.676, improvement +0.277)	2	B, SUFFIX, composition	-> C1192_suffix_additive_composition.md
 C1193	**PREFIX Compositional Duality** (PREFIX compounds split into compositional class (ke/te/ka/po/pch, predictable from atom profiles) and emergent class (ch/sh/da/ot/ok/ol, opaque); maps to EXTENDED/CORE prefix classification; discrete role clustering k=2: {a,d,o,q} vs {c,e,f,h,k,l,p,r,s,t,y})	2	B, PREFIX, composition	-> C1193_prefix_compositional_duality.md
 C1194	**Position-Specific Pair Discrimination** (near-identical atom pairs separate under position-specific profiles: k-t 0.993->0.568, d-o 0.945->0.296, p-t 0.935->0.467, l-r 0.919->0.806; global identity was masking PREFIX distinctions; no true atom redundancy)	2	B, atoms, discrimination	-> C1194_position_specific_pair_discrimination.md
-C1195	**Atom Gloss Confidence Tiers** (18 atoms in 4 tiers: 8 LOCKED (k,e,h,y,i,n,a,m), 2 SOLID (d,t), 6 PLAUSIBLE (c,p,f,s,g,x), 3 WEAK (o,l,r); validated against 91 glossed compounds; 5 dictionary discrepancies fixed to match GLOSSING.md)	2	B, atoms, glossing	-> C1195_atom_gloss_confidence_tiers.md
+C1195	**Atom Gloss Confidence Tiers** (18 atoms in 4 tiers: 8 LOCKED (k,e,h,y,i,n,a,m), 6 SOLID (d,t,l,o,c,p), 5 PLAUSIBLE (f,s,g,x,r), 0 WEAK; validated against 91 glossed compounds; upgraded by Phases 496-500)	2	B, atoms, glossing	-> C1195_atom_gloss_confidence_tiers.md
 C1196	**Autogloss Composition Coverage** (1144/1273 compound MIDDLEs auto-glossed from atom decomposition; confidence: 72 LOCKED, 86 SOLID, 289 PLAUSIBLE, 768 WEAK; 58 incomplete (q); 67.1% WEAK driven by 3 generic atoms o/l/r)	2	B, compounds, glossing	-> C1196_autogloss_composition_coverage.md
 C1197	**Atom Extensibility Partition** (only e and i repeat consecutively at structural levels (1555/1554 tokens); 18 other atoms are binary (present once or absent); extends C901 from A to B; 129 ratio families exist)	2	B, atoms, extensibility	-> C1197_atom_extensibility_partition.md
 C1198	**MIDDLE Order Irrelevance** (reordered MIDDLEs with identical composition show near-identical behavioral profiles: ke/ek r=0.999, kch/ckh r=0.995, eek/kee r=0.997; mean within-group r=0.967 vs between r=0.957; order does not alter distributional behavior)	2	B, composition, order	-> C1198_middle_order_irrelevance.md
@@ -2925,6 +2949,358 @@ C1243	**sh/ch Cross-Lane Routing Split** (sh→QO(k) 32.0% vs ch→QO(k) 24.0% 1
 C1244	**aiin-ain Sequential Wind-Down** (aiin before ain 64.9% on co-occurring lines 98/151; adjacent aiin→ain 19 vs ain→aiin 11; loop-back 15.5% 2.05x baseline; 84.5% advance to different MIDDLE; sustained cycling to final pass)	2	B, suffix, aiin, ain, wind-down, iteration, ordering	-> C1244_aiin_ain_wind_down.md
 C1245	**Cross-Lane Selectivity Gradient** (QO MIDDLEs span 1.773-bit entropy range in CHSH partner selection; rare=selective common=promiscuous rho=0.665; 4 enriched pairs survive Bonferroni; e-depth matched at category OR=2.625 complementary within e-subset rho=-0.262; pair frequencies domain-specific refines C821)	2	B, cross-lane, selectivity, entropy, e-depth, pairing	-> C1245_cross_lane_selectivity_gradient.md
 C1246	**Mode-Differentiated Cross-Lane Pairing** (Mode A/B lines use different QO-CHSH pairings JSD z=4.60; Mode A MI=1.425 Mode B MI=0.978; A enriches energy+specific-measurement B enriches sustained+passive-monitoring; extends C1229/C1230 to cross-lane level)	2	B, cross-lane, mode, pairing, specification, execution	-> C1246_mode_differentiated_pairing.md
+C1247	**aii REGIME_3 Specificity** (aii "unseal" is 41x enriched in R3 vs R1; 14/20 R3 folios contain aii vs 1/32 R1; line context shows close→unseal→open transition; R3 = open-cycle batch apparatus)	2	B, REGIME, aii, apparatus, batch	-> C1247_aii_regime3_specificity.md
+C1248	**Apparatus-Marker Co-occurrence Architecture** (t+eol co-occur OR=16.27 p=0.0001; ke+eeol co-occur OR=inf p=0.0003; DISTILLATION vs PRECISION rho=-0.666; R1/R3=single-apparatus R2/R4=mixed-apparatus REGIMEs)	2	B, apparatus, co-occurrence, REGIME, profile	-> C1248_apparatus_marker_cooccurrence.md
+C1249	**Section-Conditioned Apparatus Diversity** (Herbal is most apparatus-diverse section; R2-SEALED 100% Herbal; R4-SEALED/SUSTAINED 100% Herbal; Section B overwhelmingly distillation 0.293 vs H 0.134; weakest signatures all Herbal)	2	B, section, apparatus, diversity, Herbal	-> C1249_section_apparatus_diversity.md
+C1250	**Gloss Category Structural Coherence** (8 operational categories on 90 MIDDLEs: 5/7 permutation tests PASS p<0.01; behavioral silhouette z=3.5, kernel alignment V=0.675, line position F=29.9 30x, apparatus rho=0.758, within-line MI 9x; affordance-family and REGIME-direction fail; v2 redesigned null models)	2	B, gloss, category, validation, corpus-scale	-> C1250_gloss_category_structural_coherence.md
+C1251	**Atom Gloss Compositional Validation** (atom->gloss validates through composition not position; composed atom glosses predict MIDDLE categories p=0.008; atoms differentiate REGIMEs 37x; 4/6 directional tests fail: line position rho=0.53, suffix mode rho=-0.06, kernel affinity 5/12, paragraph rho=0.17; confirms C1191 morphological grammar independent of semantic content)	2	B, atom, gloss, composition, C1191, positional-grammar	-> C1251_atom_gloss_compositional_validation.md
+C1252	**Folio Operational Specialization** (within-folio paragraph JSD 0.263 < between-folio 0.294, p=0.000; folios specialize operationally — paragraphs within a folio share similar gloss profiles; 74 multi-paragraph folios; extends C1041 folio=program)	2	B, folio, paragraph, specialization, gloss, JSD	-> C1252_folio_operational_specialization.md
+C1253	**Paragraph-Level Apparatus Correlation** (THERMAL fraction at paragraph level correlates with apparatus score rho=0.409 p=0.000; weaker than token-level 0.758 due to aggregation; confirms C1250 T6 scales to paragraph unit; shuffled null 0.257)	2	B, paragraph, apparatus, THERMAL, correlation	-> C1253_paragraph_apparatus_correlation.md
+C1254	**Dark Pipeline Category Generalization** (8 categories partially generalize to 1,144 dark MIDDLEs via atom plurality vote; 3/6 PASS; coverage 88.6%→99.5%; line position 10.8x, within-line MI 1.5x; behavioral silhouette FAIL overall but LOCKED+SOLID tier p=0.001; section divergence FAIL; confidence stratification is key: trust LOCKED/SOLID, WEAK atoms add noise)	2	B, dark-pipeline, gloss, generalization, HT, atom, coverage	-> C1254_dark_pipeline_category_generalization.md
+C1255	**Category-Section Universal Vocabulary** (8 categories are section-universal in vocabulary but section-parameterized in frequency; 2/5 WEAK_SIGNAL; Jaccard 0.676≈null 0.669 shared vocab; 34.3% MIDDLEs section-enriched >2x p=0.001; LOO section classification 76.8% +37.8pp p=0.001; conditioned JS adds nothing 1.13x p=0.603; WEAK dark compounds J=0.894 section-specific vs LOCKED/SOLID J=0.343 universal; unifies C1134+C1148+C1176)	2	B, section, category, vocabulary, frequency, universal, dark-pipeline	-> C1255_category_section_universal_vocabulary.md
+C1256	**Opener Mode Selection** (opener MIDDLE selects line suffix mode A/B; Cramer's V=0.30 1.76x p=0.000; does NOT predict kernel profile p=0.096 or FL distribution p=0.85; Mode-B-opening paragraphs have 28.9% Mode A lines vs 54.0% for Mode-A-opening; opener is mode selector not content router; refines C959)	2	B, opener, suffix-mode, paragraph-type, mode-selection	-> C1256_opener_mode_selection.md
+C1257	**Consecutive Paragraph Vocabulary Coupling** (consecutive paragraphs share elevated MIDDLE vocabulary Jaccard 0.226 vs 0.199 p=0.000; but NO kernel autocorrelation p>0.4 and NO suffix mode autocorrelation p=0.714; vocabulary-only coupling; qualifies C845 self-containment; adjacent paragraphs share equipment vocabulary not operational state)	2	B, paragraph, vocabulary, sequential, self-containment	-> C1257_consecutive_paragraph_vocabulary.md
+C1258	**Parallel Mode Tracks** (Mode A and B form coupled parallel sequential tracks within paragraphs; 5/5 tests PASS; Mode B = continuous track with vocabulary p=0.000 kernel p=0.000 FL p=0.001 continuity; Mode A = specification injections with weak/no within-track continuity; cross-mode coupling bidirectional A->B rho=0.189 B->A rho=0.208 both p=0.000; within-mode > cross-mode coupling Jaccard 0.188 vs 0.164 p=0.000; counterpoint architecture; resolves C670 adjacent-line null)	2	B, suffix-mode, parallel-tracks, counterpoint, line-structure, vocabulary, kernel, FL	-> C1258_parallel_mode_tracks.md
+C1259	**Gradient Decomposition by Suffix Mode** (Mode A proportion FLAT across paragraph body rho=-0.027 p=0.449; C933 prep verb concentration is ARTIFACT of Mode A vocabulary 77%; C1227 FL resets GENUINE within B-track B->B 49.7% > cross-mode 40.5%; C676 suffix trajectory GENUINE in Mode B bare rho=0.072 p=0.008; C1228 PREFIX switching MIXTURE within<cross p=0.002; C932 C965 NOT REPLICATED in aggregate)	2	B, gradient, suffix-mode, decomposition, mode-proportion, artifact, genuine	-> C1259_gradient_decomposition.md
+C1260	**Mode B Thermal State Tracking** (energy balance propagates through B-track: e_frac rho=0.376 ke_ratio rho=0.228 qo_frac rho=0.186 k_frac rho=0.139 all p=0.000; FL stage does NOT propagate rho=0.026 p=0.56; no ordinal progression in energy variables; ke_ratio lag-1 autocorrelation survives permutation p=0.002; B-track carries thermal context but independently assesses material state; line shortening rho=-0.243)	2	B, mode-b, thermal, state-tracking, energy-balance, propagation, FL, steady-state	-> C1260_mode_b_thermal_state_tracking.md
+C1261	**A Record Category Coherence** (A records draw PP MIDDLEs from fewer operational categories than random; mean entropy 1.810 vs null 1.886; d=9.7 p<0.001; 1539 records 10382 tokens; extends C475 into category dimension)	2	A, category, record, coherence, entropy	-> C1261_a_record_category_coherence.md
+C1262	**RI Extension Character Category Coupling** (RI extension character associated with PP base category; chi2=165.2 V=0.221 perm p=0.001; 486 decompositions 16 ext chars 8 categories; h-ext MARKING 50% k-ext OPERATION 42% o-ext MONITORING 26%; extensions are operationally coupled not arbitrary)	2	A, RI, extension, category, coupling, C913	-> C1262_ri_extension_category_coupling.md
+C1263	**A Paragraph Category Specialization** (A paragraphs specialize by operational category; entropy 2.533 vs null 2.623; d=12.5 p<0.001; 242 paragraphs; extends C1039 cluster selectivity into category space)	2	A, paragraph, category, specialization, entropy	-> C1263_a_paragraph_category_specialization.md
+C1264	**Bridge vs Dark Pipeline Category Divergence** (bridge and dark pipeline MIDDLEs have different category profiles; chi2=73.0 V=0.441 perm p=0.001; bridges TRANSITION-enriched 20% vs 2%; dark MARKING-dominated 36% vs 11%; survives length control short p=0.0002 medium p=0.001)	2	A->B, bridge, dark-pipeline, category, divergence	-> C1264_bridge_dark_category_divergence.md
+C1265	**A Record Atom-Profile Coherence Independent of Category** (within-record AXIS cosine 0.272 vs null 0.238 d=11.6 p<0.001; same-category pairs 0.529 vs null 0.238; atom coherence persists after category control; C1207 AXIS and C1250 categories are complementary organizational axes)	2	A, atom, coherence, AXIS, independent, record	-> C1265_a_record_atom_coherence.md
+C1266	**A Section Atom-Level Differentiation** (5/7 AXIS clusters differentiate H/P/T sections at Bonferroni; STABILITY H=30.2 FREE H=20.9 ENERGY H=20.2 MONITORING H=16.7 CLOSURE H=12.9; H CLOSURE/MONITORING-heavy P STABILITY/ENERGY-heavy T ITERATION/ENERGY-heavy; breaks C946 cosine-0.997 barrier at atom resolution)	2	A, section, atom, differentiation, AXIS, C946	-> C1266_a_section_atom_differentiation.md
+C1267	**Mode A/B Distinction is B-Execution Only** (B mode affinity does not cluster in A records; concentration 0.692 vs null 0.690 d=0.85 p=0.204; A is mode-agnostic; mode assignment happens at B execution time not A registry)	2	A, B, mode, null, orthogonality	-> C1267_mode_distinction_b_only.md
+C1268	**PREFIX Track and Category Track Orthogonal** (ch/sh contexts have identical category distributions; chi2=6.52 V=0.021 JSD=0.0002 p=0.480; 8669 ch-context vs 5473 sh-context tokens; prefix choice does not select category; confirms C410 scope)	2	A, prefix, category, orthogonal, ch, sh, null	-> C1268_prefix_category_orthogonality.md
+C1269	**AZC Zone Category Specialization** (AZC zones R/C/S/P have distinct category distributions; chi2=52.18 V=0.084 p=0.000180; R TRANSITION/FLOW-heavy C TRANSITION/OPERATION P TRANSITION/STAGING S TRANSITION/FLOW; position encodes category bias not just legality)	2	AZC, zone, category, specialization, C313	-> C1269_azc_zone_category_specialization.md
+C1270	**AZC Family Category Divergence** (Zodiac vs A/C families differ in category profile; chi2=40.23 V=0.122 p=0.000001; Zodiac TRANSITION/FLOW/THERMAL-enriched; A/C TRANSITION/STAGING/OPERATION-enriched; mechanism family-agnostic but content category-biased)	2	AZC, family, category, zodiac, divergence	-> C1270_azc_family_category_divergence.md
+C1271	**AZC Zone Atom-Level Uniformity** (AZC zones do NOT differentiate at atom level; 1/8 AXIS clusters at p<0.05 0/8 at Bonferroni; contrasts A sections C1266 5/7 axes; category-level zone differences not driven by atom composition)	2	AZC, zone, atom, uniformity, null, AXIS	-> C1271_azc_zone_atom_uniformity.md
+C1272	**AZC Mediates Bridge-Dark Category Sorting** (bridge and dark MIDDLEs occupy different AZC zones; chi2=33.45 V=0.117 p<0.001; bridge R-dominated 47.5% dark S-shifted 26.9%; category predicts zone within bridge p=0.0003 but NOT within dark p=0.198; AZC sorts bridge vocabulary by category)	2	AZC, A->B, bridge, dark-pipeline, sorting, zone	-> C1272_azc_mediates_bridge_dark_sorting.md
+C1273	**AZC-Exclusive Vocabulary is MARKING/THERMAL Enriched** (356 UNK MIDDLEs assigned by atom vote; MARKING 27.2% THERMAL 27.0% TRANSITION 6.5%; divergent from bridge V=0.382 dark V=0.210 PP V=0.192; AZC has categorically specialized private vocabulary)	2	AZC, exclusive, vocabulary, MARKING, THERMAL	-> C1273_azc_exclusive_vocabulary_profile.md
+C1274	**AZC Category Composition Predicts B Escape Rate** (THERMAL rho=+0.780 p<0.001 predicts high escape; TRANSITION rho=-0.598 p<0.001 predicts low escape; CONTAINMENT rho=-0.399 MARKING rho=-0.349; 82 B folios; category mix of AZC-shared vocabulary predicts B escape dynamics)	2	AZC, A->B, category, escape, THERMAL, TRANSITION, qo-prefix	-> C1274_azc_category_predicts_b_escape.md
+C1275	**No Within-Zone Spatial Category Coherence** (AZC diagram lines have no within-unit category clustering; entropy 1.464 vs null 1.461 d=-0.173 p=0.568; 264 groups 2626 tokens; category structure is zone-grain not line-grain; contrasts A record coherence C1261 d=9.7)	2	AZC, spatial, coherence, null, entropy	-> C1275_no_within_zone_spatial_coherence.md
+C1276	**AZC Sections Converge on A Pharma Atom Profile** (all AZC sections closest to A Pharma; AZC-A/P r=0.920 AZC-C/P r=0.916 AZC-Z/P r=0.928; no diverse mapping; AZC draws from Pharma-like atom pool; internal JSD=0.013)	2	AZC, A, section, atom, Pharma, convergence	-> C1276_azc_sections_converge_on_pharma.md
+C1277	**THERMAL Escape is PREFIX-Mediated** (THERMAL->escape rho=+0.780 fully mediated by qo-PREFIX; THERMAL 44.1% qo-prefixed vs 9.5% baseline; partial rho=-0.081 after control; chain: THERMAL->qo->QO lane->escape; category x PREFIX chi2=5845 V=0.291)	2	B, A->B, THERMAL, escape, PREFIX, qo, mediation	-> C1277_thermal_escape_prefix_mediation.md
+C1278	**Category Predicts Instruction Class Beyond PREFIX** (category reduces class entropy 1.207 bits 24.7%; adds 0.906 bits 18.6% BEYOND PREFIX; PREFIX 53.1% category 24.7% together 71.7%; complementary axes; perm p=0.001 d=1051; 16054 tokens)	2	B, category, instruction-class, entropy, PREFIX	-> C1278_category_class_prediction.md
+C1279	**Mode A/B Lines Differ by Category** (Mode A THERMAL-enriched 28.9% vs 19.9% MONITORING 2.2x; Mode B TRANSITION-enriched 17.4% vs 11.3% STAGING 1.3x; chi2=536.7 V=0.153 p<0.001; Mode A injects escape-capable vocabulary Mode B maintains transition baseline)	2	B, mode, category, THERMAL, TRANSITION	-> C1279_mode_category_differentiation.md
+C1280	**Hazard Concentrates in FLOW/CONTAINMENT** (hazard MIDDLEs 50.4% FLOW vs 8.8% safe; 11.5% CONTAINMENT vs 2.5%; THERMAL 2.6% vs 30.8% hazard-immune; chi2=7227.5 V=0.560; FLOW-hazard rho=+0.558 THERMAL-hazard rho=-0.602 at folio level)	2	B, hazard, FLOW, CONTAINMENT, THERMAL, category	-> C1280_hazard_category_concentration.md
+C1281	**TRANSITION Anti-Escape is PREFIX-Independent** (TRANSITION-escape rho=-0.582 survives ch/sh control partial=-0.586 p<0.001; TRANSITION ch/sh rate 25.7% = baseline 25.1%; hazard rate 24.2% moderate; mechanism unknown but real and strong)	2	B, TRANSITION, escape, PREFIX-independent, anti-escape	-> C1281_transition_independent_anti_escape.md
+C1282	**Category Predicts B Section Membership** (section x category chi2=759.8 V=0.106 p<0.001; 6/8 categories differentiate at Bonferroni; B=THERMAL-heavy C=FLOW-heavy H=FLOW/TRANSITION S=THERMAL/FLOW; compresses C1134 frequency modulation)	2	B, section, category, differentiation	-> C1282_category_section_differentiation.md
+C1283	**Category Differentiates Entry vs Exit Zones** (entry THERMAL-enriched 24.4% vs exit 17.1%; exit TRANSITION-enriched 20.2% vs entry 13.9%; entry vs exit chi2=183.6 V=0.141 p<0.001; lines begin thermal specification end transition convergence)	2	B, boundary, entry, exit, THERMAL, TRANSITION	-> C1283_category_boundary_divergence.md
+C1284	**Kernel-Category Calibration** (CALIBRATION not discovery; THERMAL-k +0.646 THERMAL-e +0.668 TRANSITION-k -0.606 MONITORING-h +0.378; 9/24 sig; expected by C1250 construction; confirms consistency)	2	B, kernel, calibration, category, circularity	-> C1284_kernel_category_calibration.md
+C1285	**TRANSITION Anti-Escape via Role Redirection** (TRANSITION sources redirect successors to AUX 1.24x/FQ 1.13x enriched; EN successor rate 0.403 vs 0.476 baseline 0.85x; EN->EN self-loop 0.474 vs 0.517; rejects self-loop hypothesis; per-token mechanism; chi2=47.7 V=0.057 p<0.001)	2	B, TRANSITION, anti-escape, role-redirection, AUX, FQ	-> C1285_transition_role_redirection.md
+C1286	**Category Transition Grammar is Structured** (8x8 category transition matrix chi2=526.1 V=0.060 p=3.75e-81; self-loops enriched MARKING +10.4 THERMAL +6.0 FLOW +4.6; FLOW->TRANSITION +6.7 OPERATION->THERMAL +6.5; THERMAL->TRANSITION -3.4 FLOW->THERMAL -7.3; directional operational sequencing)	2	B, category, transition-matrix, sequential, grammar	-> C1286_category_transition_grammar.md
+C1287	**Paragraph Headers are MARKING-Enriched** (header vs body chi2=128.0 V=0.075 p<0.001; MARKING 2.44x enriched headers 18.3% vs body 7.5%; STAGING 1.45x; THERMAL 0.46x suppressed; three-level hierarchy: paragraph=marking, line-entry=thermal, body=flow/transition)	2	B, paragraph, header, MARKING, STAGING, specification	-> C1287_paragraph_header_marking_enrichment.md
+C1288	**Within-Folio Paragraphs Share Category Profiles** (within-folio JSD=0.1086 vs null=0.1217 z=-4.92 p<0.001; across-folio JSD=0.1223; ratio=0.888; folio imposes category theme on paragraphs; N=484 paragraphs 74 folios)	2	B, paragraph, folio, coherence, category, JSD	-> C1288_within_folio_paragraph_coherence.md
+C1289	**Category Predicts AXM Self-Transition Rate** (THERMAL rho=+0.520 p<0.001 TRANSITION rho=-0.519 p<0.001; both Bonferroni; THERMAL=high AXM dwell TRANSITION=low AXM dwell; partially explains C1169 27% residual; N=82 folios)	2	B, AXM, category, THERMAL, TRANSITION, dwell, macro-state	-> C1289_category_predicts_axm_dwell.md
+C1290	**Paragraph Category Predicts Mode** (Mode A=THERMAL 28.8% TRANSITION 11.5%; Mode B=THERMAL 21.0% TRANSITION 16.7%; chi2=300.4 V=0.114 p<0.001; confirms C1279 at paragraph level; N=175 A 309 B paragraphs)	2	B, paragraph, mode, category, THERMAL, TRANSITION	-> C1290_paragraph_category_mode_prediction.md
+C1291	**Category-REGIME Association is Kernel-Mediated** (chi2=526 V=0.106 p=5.5e-98; but after kernel residualization Fisher p=0.061; THERMAL kernel R2=0.779 TRANSITION=0.546 FLOW=0.409; association runs through k/h/e atoms shared by both systems; N=72 folios)	2	B, category, REGIME, kernel, circularity, mediation	-> C1291_category_regime_kernel_mediation.md
+C1292	**Section-Independent Category-REGIME Association** (within-section stratified chi2=216.4 dof=49 p<1e-20; H chi2=67.4 S chi2=116.9 C chi2=32.1; section is not sole mediator; kernel is primary pathway)	2	B, category, REGIME, section, stratified	-> C1292_section_independent_regime_category.md
+C1293	**Categories Discriminate Beyond Role Profiles** (category JSD > role JSD in 5/6 REGIME pairs; role-residualized Fisher p=7.5e-8; 4/8 categories significant; mean JSD: role=0.0145 category=0.0228; categories not redundant with roles)	2	B, category, role, REGIME, resolution, discrimination	-> C1293_category_discriminates_beyond_roles.md
+C1294	**Category Fractions Do Not Extend C1169 AXM Model** (all 8 Spearman |rho|<0.14 with C1169 residuals; none Holm-significant; C1169 replication R2=0.853 LOO=0.726; 27% residual not reducible to categories; validates C1169 closure; N=65 folios)	2	B, AXM, category, C1169, residual, validation, negative	-> C1294_categories_do_not_extend_c1169.md
+C1295	**Paragraph Termination is Memoryless** (7/7 trigger hypotheses FAIL at Bonferroni p<0.00625: thermal level Fisher p=0.236, B-track Fisher p=0.178, thermal step perm p=0.822, thermal budget within-folio rho=-0.007 p=0.930, mode gate chi2=1.19 p=0.276, category shift perm p=0.400, folio prediction F-test p=0.365; no line-level feature predicts termination; -am is marker not trigger; N=257 paragraphs 3+ body lines)	2	B, paragraph, termination, memoryless, thermal, negative	-> C1295_paragraph_termination_memoryless.md
+C1296	**Tail Type Category Divergence** (3 tail product types C1232 have distinct 8-category profiles chi2=139.1 p<1e-22 perm p=0.001; Cluster 0 TRANSITION-enriched 20.1%, Cluster 2 THERMAL-dominant 33.5%; tail FORM covaries with category but tail TIMING does not C1295; N=257 paragraphs)	2	B, paragraph, termination, tail, category, divergence	-> C1296_tail_type_category_divergence.md
+C1297	**PREFIX-Category Structured Association** (32 x 8 contingency table chi2=15,598 dof=217 p~0 V=0.311; 32 qualifying PREFIXes N>=30; qo=59% THERMAL, ct=90% MONITORING, da=56% STAGING, ch/sh=OPERATION; structured selectivity not monolithic; N=23,086 tokens)	2	B, PREFIX, category, contingency	-> C1297_prefix_category_structured_association.md
+C1298	**ok-ot Category Divergence** (sister pair ok/ot diverge in 8-category profiles chi2=32.0 dof=7 p=4.0e-5 V=0.105 JSD=0.008; ok THERMAL-enriched 24.7% vs 20.2% and MONITORING 2.52x; ot OPERATION-enriched 17.3% vs 12.5%; different operational emphasis despite shared FLOW dominance; N=2,924)	2	B, PREFIX, sister pair, ok, ot, category, divergence	-> C1298_ok_ot_category_divergence.md
+C1299	**ch-sh B-Specific Category Divergence** (ch/sh diverge in B chi2=85.7 p=9.4e-16 V=0.121 despite A-identical C1268 V=0.021; survives section control Fisher p=3.4e-10 and position control; ch selects broader MIDDLE vocabulary FLOW/CONTAINMENT/MARKING; sh concentrates OPERATION/THERMAL; mechanism is MIDDLE-level not artifact; N=5,821)	2	B, PREFIX, sister pair, ch, sh, category, divergence, system-dependent	-> C1299_ch_sh_b_category_divergence.md
+C1300	**qo Near-Pure THERMAL Channel** (qo is 59.0% THERMAL 2.50x corpus baseline 23.6% rank 1/32 binomial p~0; only PREFIX exceeding 50% in single category; secondary FLOW 20.1%; OPERATION 3.2% TRANSITION 1.5% strongly suppressed; primary thermal injection channel; N=4,069)	2	B, PREFIX, qo, THERMAL, channel, purity	-> C1300_qo_near_pure_thermal_channel.md
+C1301	**PREFIX Category Information Beyond Base Group** (conditional MI I(CAT;PREFIX|BASE)=0.058 bits 2.1% of H(CAT)=2.742; Fisher-combined within-base p~0; t-base V=0.891 ct vs ot; o-base V=0.217 qo-driven; PREFIX is not tautological with base group; N=23,086 across 9 base groups)	2	B, PREFIX, base group, tautology, information theory, conditional MI	-> C1301_prefix_category_beyond_base_group.md
+C1302	**BARE Distinctive Category Profile** (BARE vs prefixed chi2=1,368 p~10^-291 V=0.243; BARE is FLOW-enriched 29.4% 1.68x STAGING-enriched 20.7% 1.83x THERMAL-depleted 4.1% 0.15x; inverse of qo C1300; bypasses base-MIDDLE-category chain; PREFIX slot is primary thermal injection mechanism; N=23,086)	2	B, PREFIX, BARE, category, THERMAL depletion, FLOW	-> C1302_bare_distinctive_category_profile.md
+C1303	**ch/sh Category Divergence Is Position-Independent** (V retention 98.3%; Fisher-combined p=1.17e-4; within-zone V stable 0.094-0.102 across EARLY/MID/LATE; CATEGORY_GENUINE; positional axis C929 orthogonal to categorical axis; N=5,821)	2	B, PREFIX, sister pair, ch, sh, category, position	-> C1303_chsh_position_independent_category.md
+C1304	**ok/ot Category Divergence Is Position-Independent** (V retention 124.1%; Fisher-combined p=4.62e-5; position was SUPPRESSING divergence; EARLY V=0.207 strongest; CATEGORY_GENUINE; ok STAGING-enriched, ot MARKING-enriched within zones; N=2,924)	2	B, PREFIX, sister pair, ok, ot, category, position	-> C1304_okot_position_independent_category.md
+C1305	**MIDDLE Determines Category** (0/33 qualifying MIDDLEs shift dominant category between ch/sh; binom p=1.0; sister pairs diverge via vocabulary SELECTION not TRANSFORMATION; MIDDLE category is intrinsic; mechanism is differential MIDDLE deployment)	2	B, PREFIX, MIDDLE, sister pair, category, mechanism	-> C1305_middle_determines_category.md
+C1306	**Cross-Lane Cargo Divergence** (ch->QO vs sh->QO cargo V=0.122 chi2=33.29 p=2.34e-5; ch routes STAGING 20.6% vs 12.9%; sh routes THERMAL 53.6% vs 45.0%; sister identity shapes downstream QO-lane category composition; N=2,220 transitions)	2	B, PREFIX, sister pair, ch, sh, QO lane, cross-lane, category	-> C1306_cross_lane_cargo_divergence.md
+C1307	**No Sister x Category x Position Interaction** (ch/sh V range=0.009 perm p=1.0; ok/ot V range=0.114 perm p=1.0; sister category effect is additive with position, not interactive; same category information regardless of line position)	2	B, PREFIX, sister pair, position, category, interaction	-> C1307_no_sister_position_category_interaction.md
+C1308	**Within-Paragraph Category Coherence** (within-para A-B JSD=0.141 < cross-para JSD=0.170 p=7.4e-6; both modes share paragraph's category key; 258 paragraphs with both modes)	2	B, paragraph, mode, category, coherence	-> C1308_within_paragraph_category_coherence.md
+C1309	**Mode Category Specialization** (A=THERMAL 32.5% MONITORING 2.6x; B=STAGING 1.37x TRANSITION 1.64x FLOW 1.22x; complementarity is mode-level not pair-specific; coverage perm p=1.0)	2	B, mode, category, specialization, THERMAL, TRANSITION	-> C1309_mode_category_specialization.md
+C1310	**Positional Category Alignment** (same-position same-category rate 21.4% vs 16.9% chance = 1.27x enrichment; perm p=0.001; NMI 0.042-0.063 across 5 position bins; THERMAL->THERMAL strongest at 7.6%)	2	B, mode, position, category, alignment, parallel tracks	-> C1310_positional_category_alignment.md
+C1311	**B-to-A Thermal Feedback Signal** (ke_ratio->MARKING rho=-0.198 p=0.0006; ke_ratio->THERMAL rho=+0.176 p=0.002; effect sizes small-to-moderate; feedback is B->A only, A->B shows no signal p>0.3; BA handoff TRANSITION->THERMAL at 12.0%; 300 BA pairs)	2	B, mode, thermal, feedback, cross-mode, MARKING	-> C1311_b_to_a_thermal_feedback.md
+C1312	**No Cross-Line Sequential Category Coupling** (zig-zag WEAKER than null Z=-3.39 perm p=0.999; no A->B prediction V=0.170 p=0.146; no cross-line transition grammar; 0 cross-line forbidden transitions; all interleaving ratios increase entropy; same-mode > cross-mode coupling AA r=0.463 vs BA r=0.328)	2	B, mode, cross-line, sequential, independence, forbidden	-> C1312_no_cross_line_sequential_coupling.md
+C1313	**Two-Channel Thermal Atom Separation** (qo k-frac=0.510 vs ok k-frac=0.001; ok e-frac=0.282 vs qo e-frac=0.102; MW p=0.0 both; perm p=0.0; sa neutral control p=0.999)	2	B, PREFIX, thermal, atom, qo, ok, separation	-> C1313_two_channel_thermal_atom_separation.md
+C1314	**Overshoot-Correct Bigram Enrichment** (qo-k->ok-e: 103 obs vs 72.0 null = 43% above chance p=0.0; reverse: 112 obs vs 72.1 null = 55% above chance p=0.0; da->sa neg ctrl p=0.996)	2	B, PREFIX, thermal, sequencing, bigram, cycling	-> C1314_overshoot_correct_bigram_enrichment.md
+C1315	**REGIME B Token Profile Discrimination** (6/7 metrics KW p<0.01 for B tokens by REGIME; A tokens 0/7 significant; B-specific discrimination in k-frac, e-frac, h-frac, THERMAL, MONITORING, CONTAINMENT rates)	2	B, REGIME, discrimination, category, atom, A-control	-> C1315_regime_b_token_profile_discrimination.md
+C1316	**O-PREFIX Categorical Distinction** (ok/ot/ol/or 4x8 chi-sq p<0.001; ok->ot asymmetry 1.18x vs 1.04x; trigram qo->ok->ot preferred; ok +4.4% THERMAL, ot +4.9% OPERATION; 3/4 distinct dominant category)	2	B, PREFIX, o-prefix, ok, ot, ol, or, category, sequential	-> C1316_o_prefix_categorical_distinction.md
+C1317	**Visual Text Block Census** (91.5% multi-block, 485 blocks/82 folios; S=12.4, B=4.6, H=2.3 blocks/folio; KW H=56.8/123.5 both p<0.001)	2	B, block, census, section, layout	-> C1317_visual_text_block_census.md
+C1318	**Block PREFIX Complementarity** (within-block JSD=0.276 > between-block 0.225; MW z=6.12 p<0.001; perm p=0.000; confirmed 4/5 sections: B p=0.006, C p=0.030, H p=0.017, S p<0.001)	2	B, block, PREFIX, complementarity, divergence, parallel	-> C1318_block_prefix_complementarity.md
+C1319	**Block-Initial Paragraph Enrichment** (HT: 7.3% vs 4.9% z=7.07 p<0.001; MARKING: 9.4% vs 7.0% z=4.81 p<0.001; 484 initial vs 190 internal paragraphs)	2	B, block, HT, MARKING, enrichment, header	-> C1319_block_initial_enrichment.md
+C1320	**Block Internal Diversity** (kernel cosine: within 0.888 vs between 0.920, p=0.104; category Jaccard: within 0.667 vs between 0.731, z=-3.96 p<0.001; thermal envelope hypothesis falsified; blocks maximize internal diversity)	2	B, block, kernel, category, diversity, falsified	-> C1320_block_internal_diversity.md
+C1321	**Gallows Within-Block Ordering** (t mean pos=0.700 vs k/f/p 0.255-0.319; transition chi-sq=64.88 df=9 p<0.001; perm p=0.002; k→t 77%, p→t 74%, t→t 72%; 131 blocks, 186 transitions)	2	B, gallows, block, ordering, transition, t-late	-> C1321_gallows_within_block_ordering.md
+C1322	**Gallows-Category Independence** (0/8 categories KW p<0.01 across gallows types; 1/3 kernel fracs sig but only 1 section; category range across gallows <0.024; gallows encode position not type)	2	B, gallows, category, independence, kernel, falsified	-> C1322_gallows_category_independence.md
+C1323	**Cross-Block Gallows Restart** (block-final t=39.8%, block-initial k/f/p=72.3%; chi-sq=14.82 df=3 p=0.002; 403 transitions; gallows cycle restarts at block boundaries)	2	B, gallows, block, restart, cross-block	-> C1323_cross_block_gallows_restart.md
+C1324	**Block-Final Termination Absence** (block-final -am DEPLETED 0.36x; suffix mode identical 58.9%=58.9%; 0/8 category shifts; boundaries are gallows-level not vocabulary-level)	2	B, block, termination, -am, suffix-mode, falsified	-> C1324_block_final_termination_absence.md
+C1325	**Folio REGIME Homogeneity** (within-folio block distance 0.056 < between-folio 0.065; MW z=-8.62 p<0.001; perm p<0.001; folio sets REGIME, blocks inherit)	2	B, block, folio, REGIME, kernel, homogeneity	-> C1325_folio_regime_homogeneity.md
+C1326	**Cross-Block Category Continuity** (cross-block JSD 0.071 < within-block 0.136; z=-8.98 p<0.001; block boundaries smooth not discontinuous; reinforces C1320 within-block diversity)	2	B, block, category, continuity, cross-block, diversity	-> C1326_cross_block_category_continuity.md
+C1327	**Section S Ordinal Progression** (OPERATION rho=-0.169 p<0.001; THERMAL rho=+0.123 p=0.003; TRANSITION rho=+0.160 p=0.002; 3/12 metrics significant; early=OPERATION, late=THERMAL/TRANSITION; falsifies exchangeability)	2	B, section-S, ordinal, category, progression, falsified	-> C1327_section_s_ordinal_progression.md
+C1328	**Section S p-Gallows Dominance** (p=59.8% of S blocks; p->p 69% self-continuation; chi-sq=61.58 p<0.001; distinct from k/f/p->t pattern in non-S; all "running mode")	2	B, section-S, gallows, p-dominance, transition	-> C1328_section_s_p_gallows_dominance.md
+C1329	**Section S Block Diversity** (within-folio block JSD 0.069 > non-S 0.052; z=7.20 p<0.001; S blocks MORE diverse, not less; kernel distance also higher than B/C; reverses parallel prediction)	2	B, section-S, block, diversity, category, REGIME, falsified	-> C1329_section_s_block_diversity.md
+C1330	**Block Vocabulary Narrowing** (later blocks use fewer distinct MIDDLEs; median rho=-0.248 perm p<0.001; 39/56 folios negative; universal across sections B/C/H/S; coverage of block 0 MIDDLEs drops to ~0.40 by block 3)	2	B, block, vocabulary, MIDDLE, ordinal, narrowing	-> C1330_block_vocabulary_narrowing.md
+C1331	**Iterative Refinement Falsified** (blocks do NOT show directional drift toward target: k not decreasing rho=+0.026 p=0.600; Mode A not decreasing rho=-0.038 p=0.199; FL not advancing rho=+0.021 p=0.435; only e marginal at p=0.033; section-specific sub-Bonferroni signals do not constitute universal mechanism)	1	B, block, refinement, falsified, kernel, suffix-mode, FL	-> C1331_iterative_refinement_falsified.md
+C1332	**Block-0 Marking Enrichment** (block-0-unique MIDDLEs are MARKING 2.48x enriched and MONITORING 1.57x enriched; OPERATION 0.65x and TRANSITION 0.64x depleted; STAGING+CONTAINMENT flat at 0.92x; chi2=212, V=0.136; holds in 3/3 sections; "setup block" prediction falsified)	2	B, block, MARKING, MONITORING, category, vocabulary, block-0	-> C1332_block0_marking_enrichment.md
+C1333	**Kernel Most Stable Dimension** (within-folio inter-block kernel distance 0.027 < category JSD 0.052 < PREFIX JSD 0.145; kernel lowest in all 5 sections; kernel < category in 36/56 folios MW p=0.007; kernel < PREFIX in 56/56 folios p<0.001)	2	B, block, kernel, stability, REGIME, dimension	-> C1333_kernel_most_stable_dimension.md
+C1334	**A Paragraph Dominance Structure** (43.6% of A paragraphs are STAGING-dominant at 1.89x base rate; CONTAINMENT/MONITORING/MARKING rarely or never dominate paragraphs; mean dominance 0.299 vs null 0.281, perm p<0.001; section-structured: H→STAGING, P→THERMAL, T→FLOW)	2	A, paragraph, category, dominance, STAGING, section	-> C1334_a_paragraph_dominance_structure.md
+C1335	**A Paragraph Category Taxonomy** (5 distinct category-based paragraph types: STAGING:105, FLOW:48, TRANSITION:42, THERMAL:33, OPERATION:12; within-type JSD 0.074 < between-type 0.108, MW z=-45.67 p<0.001; gap 0.034 vs null 0.0002; independent of C850 structural taxonomy)	2	A, paragraph, category, taxonomy, type	-> C1335_a_paragraph_category_taxonomy.md
+C1336	**MARKING Paragraph-Initial Concentration** (MARKING mean position 0.429 in A paragraphs, deviation 0.071, perm p<0.001; first-token MARKING rate 15.5% vs base 7.5% = 2.07x; sole exception to paragraph-level position-free behavior; parallels B C1287 header and C1332 block-0 enrichment)	2	A, paragraph, MARKING, positional, cross-system	-> C1336_marking_paragraph_initial_concentration.md
+C1337	**A Folio Paragraph Category Independence** (consecutive paragraph JSD 0.104 vs random 0.096, perm p=0.850; first-paragraph JSD from rest = 0.004, max enrichment 1.25x; confirms C240 NON_SEQUENTIAL extends to paragraph categories; contrasts with B C1326 block continuity and C1332 block-0 distinctness)	2	A, paragraph, folio, category, independence, NON_SEQUENTIAL	-> C1337_a_folio_paragraph_category_independence.md
+C1338	**MIDDLE Suffix Selectivity** (I(MIDDLE; suffix_cat) = 0.697 bits, 11.57x more than I(line_mode; suffix_cat) = 0.060; 60% of frequent MIDDLEs suffix-locked at >80%; 37.1% bare-locked, 22.9% terminal-locked; suffix is a MIDDLE property not a line property)	2	B, suffix, mode, MIDDLE, identity, mutual-information	-> C1338_middle_suffix_selectivity.md
+C1339	**MIDDLE Mode Flexibility** (only 7.7% of frequent MIDDLEs mode-locked >80%; 34.6% flexible 40-60%; MIDDLEs freely appear in both modes; THERMAL MIDDLEs lean Mode B 0.406 despite THERMAL enrichment in Mode A — suffix behavior not token selection)	2	B, suffix, mode, MIDDLE, flexibility, category	-> C1339_middle_mode_flexibility.md
+C1340	**Suffix Stability Across Modes** (same MIDDLE carries same suffix regardless of mode; median cross-mode JSD 0.020; only 12.1% show significant shift p<0.01; small real context effect perm p=0.003 mean JSD 0.035 vs null 0.026)	2	B, suffix, mode, stability, context	-> C1340_suffix_stability_across_modes.md
+C1341	**Suffix Mode Is Emergent Property** (token-identity-predicted mode matches actual 80.0% accuracy; baseline 59.7% lift 1.34x; Mode A recall 89.4%; mode emerges from token composition ~80%, contextual modulation ~20%; resolves C1256 opener mechanism and C1259 flat mode proportion)	2	B, suffix, mode, emergent, generative, identity	-> C1341_mode_emergent_property.md
+C1342	**PREFIX Modulates Suffix Choice** (PREFIX is dominant contextual suffix modulator for flexible MIDDLEs; conditional MI 0.097 bits 2.82x null perm p=0.001; V=0.23; da→93% bare qo→41% terminal ok_group→52% terminal BARE→41% bare; resolves C1339 THERMAL paradox)	2	B, PREFIX, suffix, modulation, context	-> C1342_prefix_suffix_modulation.md
+C1343	**Category Environment Suffix Effect** (THERMAL-rich line neighborhoods push flexible MIDDLEs toward terminal suffix; terminal tokens have mean 26.6% THERMAL neighbors vs 23.3% for bare; Mann-Whitney Z=5.87 p<0.001; conditional MI 0.057 bits)	2	B, category, environment, suffix, THERMAL	-> C1343_category_environment_suffix_effect.md
+C1344	**Position Suffix Modulation** (MID-line position boosts terminal suffix for flexible MIDDLEs; MID 40.6% terminal vs EARLY 34.6%; V=0.058 p<0.001; Spearman rho=0.095; conditional MI 0.024 bits; specification peaks at mid-line)	2	B, position, suffix, modulation	-> C1344_position_suffix_modulation.md
+C1345	**Opener Mode Weak Propagation** (paragraph opener mode weakly propagates to flexible MIDDLE suffix; A-opened 38.8% terminal vs B-opened 36.1%; V=0.048 p=0.018; conditional MI 0.016 bits; section-heterogeneous: Section C V=0.185 drives effect)	2	B, opener, mode, paragraph, propagation	-> C1345_opener_mode_weak_propagation.md
+C1346	**Contextual Modulation Decomposition** (20% contextual residual decomposes: PREFIX 0.097 bits 50% → environment 0.057 bits 29% → position 0.024 bits 12% → opener 0.016 bits 8%; factors largely non-redundant MI 0.003-0.006 bits between pairs; modulation is probabilistic not deterministic)	2	B, context, decomposition, PREFIX, suffix, mode	-> C1346_contextual_modulation_decomposition.md
+C1347	**B Reshapes Bridge Category Usage** (Bridge MIDDLEs carry same category in A and B but B reshapes usage; A delivers STAGING-heavy 25.0% B consumes THERMAL-heavy 23.7%; amplifies THERMAL 1.72x OPERATION 1.58x suppresses MONITORING 0.27x STAGING 0.54x; JSD=0.026 rho=0.64; consumption matches B total JSD=0.004; mode correlation Z=3.45 p=0.0004)	2	cross-system, bridge, category, reshaping, THERMAL	-> C1347_bridge_category_reshaping.md
+C1348	**A Sections Differentiate at Category Level** (Despite C1136 MIDDLE-level uniformity cosine 0.9997 A sections differentiate at category level chi2=380 V=0.144 perm p=0.001; P is THERMAL-heavy 25.1% T is FLOW-heavy 22.9% H is STAGING-heavy 26.0%; cross-system T→T rho=0.85 p=0.016; category-level parameterization via frequency weighting of shared MIDDLEs)	2	cross-system, section, category, differentiation	-> C1348_section_category_differentiation.md
+C1349	**Dark Pipeline Preserves Category Structure** (Dark pipeline 300 MIDDLEs preserves category structure A→B almost perfectly JSD=0.009 rho=0.976 p=0.005; MARKING dominates both sides A 40.0% B 33.1%; section-modulated in B chi2=184 V=0.166 perm p=0.001; bridge-dark category independence rho=0.19 p=0.57; dual-channel architecture confirmed)	2	cross-system, dark, category, preservation, independence	-> C1349_dark_pipeline_category_preservation.md
+C1350	**Dark MIDDLEs Atomistically Distributed** (No within-section co-occurrence structure 0/5 sections significant; dark-dark adjacency ratio=1.024 p=0.76 random; no combinatorial groups no material-list behavior; each dark MIDDLE operates independently)	2	B, dark, co-occurrence, adjacency, atomistic	-> C1350_dark_atomistic_distribution.md
+C1351	**Dark Successor Entropy Is Narrow** (Dark MIDDLEs have significantly narrower successor entropy than bridge; median 2.59 vs 4.18 bits Z=-7.45 p<0.001; each dark token constrains local grammar continuation to restricted instruction classes; contra material-referent prediction; consistent with context-setting parameters)	2	B, dark, entropy, successor, grammar, context	-> C1351_dark_successor_constraint.md
+C1352	**Dark Folio Span Frequency-Matched** (78.3% of reliable dark MIDDLEs span folios within ±2σ of frequency-controlled null; 21.7% concentrated 0% dispersed; no bimodal staples-vs-specialists split; unimodal median 8 folios mean 10.8; span is consequence of abundance not role)	2	B, dark, span, frequency, distribution	-> C1352_dark_span_frequency_matched.md
+C1353	**Dark Weak Positional Bias** (Dark tokens precede bridge 52.7% Z=3.0 perm p=0.004 but effect size trivial 2.7% above null; section-uniform 49-57%; no dedicated syntactic slot; freely interleaved with grammar tokens)	2	B, dark, position, ordering, weak	-> C1353_dark_weak_positional_bias.md
+C1354	**Dark Grammar Influence Is Local Not Contextual** (Dark presence does NOT condition bridge-to-bridge transitions MI=0.098 null=0.101 perm p=0.90; dark removal does not genericize transitions entropy diff 0.73 null 0.72 p=0.38; three-tier grammar model FALSIFIED; dark influence is next-token only)	2	B, dark, grammar, local, falsification	-> C1354_dark_local_not_contextual.md
+C1355	**Dark Entropy Difference Partially Frequency-Mediated** (Dark-bridge successor entropy difference survives frequency matching Z=-5.60 p<0.001 but collapses under subsampling to equal n Z=-0.55 p=0.50; dark MIDDLEs have restricted environments rather than inherently narrow entropy; C1351 magnitude is partially sampling artifact)	2	B, dark, entropy, frequency, artifact	-> C1355_dark_entropy_frequency_ambiguous.md
+C1356	**Dark MIDDLE Identity Beyond PREFIX** (Within each PREFIX group dark MIDDLE identity significantly predicts successor class conditional MI=2.761 null=2.683 Z=4.50 perm p<0.001; compound structure encodes specific grammar constraints PREFIX cannot explain; 13 PREFIX groups MI range 1.44-3.11 bits)	2	B, dark, PREFIX, MIDDLE, information	-> C1356_dark_middle_beyond_prefix.md
+C1357	**Dark Proximity Weakly Boosts Terminal Suffix** (Bridge tokens adjacent to dark have higher terminal rate 25.2% vs 20.7% Z=3.51 p<0.001 V=0.042; survives PREFIX control 12/16 groups show boost; effect real but tiny; dark proximity biases toward specification mode)	2	B, dark, suffix, terminal, proximity	-> C1357_dark_proximity_suffix_boost.md
+C1358	**Class Positional Specialization** (24/48 classes are positional specialists at quintile level p<0.001; FL_SAFE classes 38,40 peak Q4 entropy 1.38-1.81; AXM classes 4,26 peak Q0; half specialist half generalist; extends C556 role-level to full 49-class)	2	B, line, position, 49-class	-> C1358_class_positional_specialization.md
+C1359	**Transition Gradient Resolution** (49x49 matrix changes monotonically across 5 quintiles rho=0.639 p=0.045; Q0-Q4 JSD=0.355 vs Q0-Q1=0.147; AXM self drops 0.737→0.549; gradient accelerates at line-end; perm p<0.001; extends C1156 from 3 zones to smooth gradient)	2	B, line, transition, gradient, position	-> C1359_transition_gradient_resolution.md
+C1360	**Forbidden Transition Violations Dispersed and Rare** (11 violations in 20,676 transitions 0.053% rate; KS=0.232 p>=0.05 vs uniform; 10/11 are dy→aiin; hazard avoidance uniform across line positions; forbidden pairs nearly absolute at MIDDLE level)	2	B, line, forbidden, position	-> C1360_forbidden_transition_dispersed.md
+C1361	**No Positional Motifs** (1/1556 class bigrams significant after Bonferroni; class-class transitions not locked to positions; grammar same everywhere; positional gradient arises from shifting class FREQUENCIES not position-specific rules; confirms C964 free interior at 49-class)	2	B, line, bigrams, position, motifs	-> C1361_no_positional_motifs.md
+C1362	**Position-Conditioned Generative Improvement** (M2p quintile-conditioned wins 5/5 metrics vs stationary M2; class KL 2.4x better, transition JSD 1.7x, positional entropy 1.6x, AXM self 1.8x, specialist accuracy 2.5x; position is M2's primary blind spot; grammar unchanged but class frequencies shift across line)	2	B, line, generative, M2p, position	-> C1362_position_conditioned_generative_improvement.md
+C1363	**Gradient Steepness Universal** (within-line AXM self gradient 0.737→0.549 does not vary by folio; slope variance does not exceed permutation null p=0.105; delta-R²=0.010 beyond C1168; REGIME KW p=0.22; section KW p=0.13; gradient is universal property of shared grammar not tunable program parameter)	2	B, line, folio, gradient	-> C1363_gradient_steepness_universal.md
+C1364	**Position-Conditioned Generation M2.1** (quintile-conditioned 49-class Markov + symmetric forbidden passes 16/18 generative metrics; gains P1 P2 P3 with zero regressions vs M2-SF 13/18; P1 class KL 2.2x better P2 trans JSD 2.0x P3 specialist 2.4x; remaining failures B4 C2 are morphological not sequential; M2.1 is new generative frontier at 88.9%)	2	B, generative, position, M2.1	-> C1364_position_conditioned_generation.md
+C1365	**Corrected Evaluation Full Pass** (M2.1 passes 21/21 after correcting B4 test spec C1030 and C2 test spec C1033; adds C2a macro-CC C2b role-CC X1 PREFIX symmetry X2 MIDDLE asymmetry; PREFIX factoring proven unnecessary C1034; 49-class grammar generatively closed; remaining variance is stochastic not structural)	2	B, generative, evaluation, M2.1	-> C1365_corrected_evaluation_full_pass.md
+C1366	**M2.1 Generative Gap Characterization** (Per-folio accent concentrates in class distribution and sequential dynamics, not positional structure or vocabulary composition; 11/31 features show systematic gaps mean\|z\|>1.5; BIO most anomalous section, Archetype 1 highest anomaly; C458 asymmetry not confirmed at generative resolution; 76.5% feature-folio pairs within \|z\|<2)	2	B, folio, M2.1, design freedom, accent	-> C1366_generative_gap_characterization.md
+C1367	**Folio Accent Vector Analysis** (Accent is low-dimensional PC1=58.9%; weakly correlated with archetypes \|rho\|=0.274 → NEW_STRUCTURE; THERMAL category predicts accent beyond kernel partial rho=0.588; BIO accent section-intrinsic p=0.019; archetype 1 = BIO at maximum accent strength)	2	B, folio, accent, PCA, category, archetype	-> C1367_folio_accent_vector.md
+C1368	**Accent PC2/PC3 Decomposition** (PC2 sequential complexity predicted by THERMAL + folio position LOO R²=0.267; PC3 morphological texture dominated by STARS section eta²=0.457 + CONTAINMENT + sister pair LOO R²=0.496; 0/5 expert predictions confirmed; THERMAL extends accent across PC1+PC2 = 79.4% of variance)	2	B, folio, accent, PCA, section, category, sister pair	-> C1368_accent_pc23_decomposition.md
+C1369	**Accent Spatial Structure** (folio_position in C1368 PC2 is section confound, partial R²=0.010; within-section local coherence: Bio p=0.039, Stars p=0.024; no manuscript gradient; archetypes 1-2 spatially clustered via section concentration; boundary ratio 1.18 moderate)	2	B, folio, accent, spatial, section, archetype	-> C1369_accent_spatial_structure.md
+C1370	**Category Pipeline Trace A→AZC→B** (WEAKLY_RESHAPED pipeline JS=0.026; THERMAL +72% OPERATION +58% amplified A→B; STAGING -47% MONITORING -73% attenuated; AZC intermediate closer to A; BIO=max THERMAL 2.03x HERBAL=THERMAL-neutral 0.98x; dark 3x more stable than bridge; rank rho=0.644; 4/7 predictions confirmed)	2	A, AZC, B, cross-system, category, bridge, dark pipeline	-> C1370_category_pipeline_trace.md
+C1371	**Position-Conditioned Category Grammar** (Category transitions position-conditioned chi² p=4.5e-65 V=0.102; Q5 most deviant JS=0.016; THERMAL self-loops erode Q1→Q5 32.4%→19.1%; FLOW monotonic gradient rho=0.900 p=0.037; section-position additive confirming C1047; 5/8 self-transition rates vary; 4/6 predictions confirmed)	2	B, line, category, positional, transition	-> C1371_position_conditioned_category_grammar.md
+C1372	**Thermodynamic Arc Validation** (First-principles thermodynamic ordering model FAILS 0/7 tests; rho=0.286 p=0.493; 2/8 shapes correct; MSE 2.8x worse than uniform null; 6/7 directional predictions confirmed but partially circular; PREFIX confound COLLAPSES signal; CONTAINMENT is LATE not early; category gradient mediated by PREFIX positional grammar C1001)	2	B, line, category, positional, interpretation, PREFIX	-> C1372_thermodynamic_arc_validation.md
+C1373	**PREFIX Category-Position Decomposition** (Thermal arc NOT a PREFIX artifact; ch chi²=75.9 p=3e-6 THERMAL rho=-0.900; sh chi²=61.2 p=3e-4 rho=-0.800; 11/27 PREFIXes |rho|>0.50; weighted avg rho=-0.720; removing specialists STRENGTHENS gradient; qo creates Q2 bump; BARE anchors Q5 THERMAL depletion; H3 compositional artifact FALSIFIED; C1372 amendment)	2	B, PREFIX, line, category, positional, sister pair	-> C1373_prefix_category_position_decomposition.md
+C1374	**Within-PREFIX MIDDLE Positional Selection** (MIDDLE selection changes by position within every PREFIX 7/7 p<0.001; within ch top 2 MIDDLEs eey+eol explain 100% THERMAL decline; position specialists are PREFIX-generalists breadth 15.3 vs 8.3 p=0.0004; BARE equal positional selection JSD rank 14/27; ch/sh parallel moderate rho=0.468; QO/CHSH lane orthogonal to position; gradient is MIDDLE-level property not PREFIX-level)	2	B, PREFIX, MIDDLE, line, positional, category, sister pair	-> C1374_within_prefix_middle_position.md
+C1375	**Hebrew Cipher Cross-Validation** (Gatta Hebrew cipher decode INCREASES entropy +0.218 bits DECREASES MI -0.755 bits opposite of decipherment; 0/8 categories show Hebrew coherence ratio=0.991; 1/35 PREFIXes match Hebrew morpheme; T2 class clustering z=-15.5 is morphological confound; 3/7 control program 1/7 cipher 3/7 ambiguous = STRONG FALSIFICATION at grammar layer)	2	B, cross-validation, external, cipher, Hebrew, information theory	-> C1375_hebrew_cipher_cross_validation.md
+C1376	**Character-Level RTL Signal Is Grammar-Internal** (within-token RTL z=36.8 replicated; MIDDLE slot syntax INITIAL→MEDIAL→TERMINAL fully explains signal; slot-preserving shuffle preserves 102% of asymmetry z=-2.6; coarse 4-category explains 48.9% fine-grained slot structure explains rest; kernel opposes main gradient -10.3%; gallows reduce asymmetry -35.7%; no encoding design feature beyond C1209 grammar)	2	B, directionality, character-level, slot syntax, external, grammar	-> C1376_char_level_rtl_is_grammar.md
+C1377	**Puff-Voynich Structural Revisit (NULL)** (21 folios, 3 material types, category pseudo-F=0.90 p=0.51, apparatus pseudo-F=1.62 p=0.15; ceiling confirmed with modern tools)	2	B, Puff, material type, category, apparatus, NULL, ceiling	-> C1377_puff_structural_revisit_null.md
+C1378	**Paragraph-Level Material Differentiation (NULL)** (72 folios, dark-pipeline Jaccard within=0.972 between=0.963 ratio=1.009x p=0.98; header diversity PASS p=0.0001 ratio=1.11x; semantic ceiling extends to paragraph granularity)	2	B, paragraph, material, dark-pipeline, MIDDLE, NULL, header, ceiling	-> C1378_paragraph_material_differentiation_null.md
+C1379	**Two-Level Parallel Composition with Priority Ordering** (macro-atom r=0.797 vs individual r=0.760, z=5.98 p<0.001; 9 fused pairs from C1210; atom removal ratio 1.375 <1.5 PASS but initial dominates Kruskal p=0.004; reversed/different JSD ratio 0.904 rejects pure parallelism; T→I MI=0.079 > SET MI=0.025; T5 channel separation: ke/ct/ck 1.9-2.9x Mode A enriched, in 0.54x Mode B, thermal p=0.0000; macro-atoms have functional channel assignments)	2	B, MIDDLE, composition, macro-atom, parallel, priority, channel, suffix-mode, C1190, C1210, C1229	-> C1379_two_level_parallel_composition.md
+C1380	**Apparatus Profile Partially Explains AXM Residual** (Mantel r=0.224 p=0.002 5K perms; eta²=0.083 p=0.034; raw r=0.243 p=0.0002; SEALED_VESSEL +0.022 most repetitive, SUSTAINED_HEAT -0.018 most varied; ~8% of C1169 residual is apparatus parameterization, ~92% remains free)	2	B, AXM, residual, apparatus, design-freedom, Mantel, C1169, C1248	-> C1380_apparatus_parameterization_in_residual.md
+C1381	**o-Initial MIDDLE Enrichment in AZC** (AZC 22.4% vs B 11.8%, ratio=1.9x, chi2=281.3 p<0.0001; B-shared 13.5% vs B-exclusive 9.8%; Section C highest at 18.9%; smooth gradient from apparatus layer into execution layer)	2	CROSS, AZC, MIDDLE, atom, o-initial, apparatus, C496, C1269, C1273, C1274	-> C1381_o_initial_middle_azc_enrichment.md
+C1382	**k/a Atom-Initial Suffix Mode Polarization** (k-initial 0.583x depleted in Mode B vs Mode A, chi2=245 p<0.0001, all 5 sections consistent; a-initial 2.034x Mode B enriched; e-initial neutral 0.986x; atom-initial predicts suffix mode along same axis as C1309 THERMAL/TRANSITION)	2	B, MIDDLE, atom, suffix-mode, k-initial, a-initial, C1229, C1309, C908, C1381	-> C1382_k_a_atom_suffix_mode_polarization.md
+C1383	**n-Terminal MIDDLE Boundary Avoidance** (depleted at mode transitions 0.81x p<0.0001; depleted at line-final 0.694x p=0.000005; 4/5 sections consistent; mean position 0.479 vs 0.502; n is interior/steady-state, avoids all tested boundary types)	2	B, MIDDLE, atom, n-terminal, boundary, position, mode, C1208, C1209, C1210, C1382	-> C1383_n_terminal_boundary_avoidance.md
+C1384	**k-Initial MIDDLE Fraction Predicts AXM Self-Transition** (rho=+0.620 p<0.0001 72 folios; k is ONLY positive atom-initial; a=-0.503 o=-0.427 d=-0.411 all negative; survives within-section B rho=+0.496 H rho=+0.407; four-level chain: k-initial → Mode A → THERMAL → AXM dwell)	2	B, MIDDLE, atom, k-initial, AXM, dwell, folio, C1382, C1289, C1309, C1208	-> C1384_k_initial_axm_dwell_correlation.md
+C1385	**l-Terminal State/Condition Marker** (68.9% post-state-change rate vs 47.2% baseline; 77% kernel-before-l ordering on mixed lines; kernel contact rho=-0.197 p<0.000001; Mode B locked 72%; category redirection 0/5 match; STAGING 9.7x; 450 CHSH+l compositional tokens; 15-round investigation, 10 hypotheses falsified; upgrades l from WEAK to SOLID; German: Lage)	2	B, MIDDLE, atom, l-terminal, state, gloss, C1195, C1207, C1209, C1250, C1386	-> C1385_l_terminal_state_condition_marker.md
+C1386	**ACTOR/RESPONDER Terminal-Atom Timing Split** (terminal atoms partition by macro-state transition timing: ACTORS {e=18.4%, h=29.1%, k=31.8%, t=30.4%} precede changes; NEUTRAL {d=38.3%, o=42.4%, y=43.9%, i=48.7%}; RESPONDERS {n=63.6%, l=68.9%, r=72.6%, m=78.2%} follow changes; baseline 47.2%; orthogonal to C1208 carryover and C1209 positional grammar)	2	B, MIDDLE, atom, timing, macro-state, transition, C1200, C1209, C1208, C976	-> C1386_actor_responder_timing_split.md
+C1387	**r-Terminal Hazard-Response Partitioning** (ar monopolizes FL_HAZ 248:0 vs or, 4.910x enrichment chi-sq=1473.71; or concentrates in FQ 70.5%; only r/l/n at FL_HAZ = RESPONDER-exclusive; r anti-cycling rho=-0.334 p=0.003; r→a forward chain 2.142x; r exists only as ar and or; 10-round investigation, 4 hypotheses falsified; upgrades r from WEAK to PLAUSIBLE; gloss: respond)	2	B, MIDDLE, atom, r-terminal, FL_HAZ, macro-state, hazard, respond, C1195, C1207, C1208, C1386, C976	-> C1387_r_terminal_hazard_response_partitioning.md
+C1388	**o-Atom Arrangement Domain Marker** (o=arrange/ordnen; STAGING 2.49x OPERATION 1.78x THERMAL 0.105x depleted; #1 anti-AXM (rho=-0.614) #1 kernel interleaver (52.1%); C874 convergence — ol=LINK from structural analysis independently confirmed by o(arrange)+l(state) = 100% STAGING 7.68x; 100% compound determinism ol=STAGING ok=CONTAINMENT or=FLOW ot=MONITORING; temporal ordering falsified (48.6% chance) — domain marker not sequential verb; 23-test battery 8/23 confirmed; upgrades o from WEAK to SOLID; German: ordnen)	2	B, MIDDLE, atom, o-initial, o-terminal, arrange, ordnen, STAGING, OPERATION, anti-AXM, interleaving, domain-marker, C874, C1195, C1207, C1381, C1384, C1386, C1190, C1305	-> C1388_o_atom_apparatus_management_profile.md
+C1389	c-atom main-loop modifier profile	2	B	c=adjust upgraded PLAUSIBLE->SOLID; 6/6 compositional convergence, 93.5% AXM-confined, MONITORING 12.237x, 100% compound determinism across 61 c-MIDDLEs, CHSH+c MONITORING 23.09x, order-sensitive (ck=OPERATION vs kc=CONTAINMENT)
+C1390	p-atom marking pause profile	2	B	p=pause upgraded PLAUSIBLE->SOLID; #1 MARKING atom (12.033x, 93.63%), #1 carryover (8.126x), 3/4 compositional convergence, 4/4 MARKING injection +68.3pp, op gateway 95.5% INITIAL/TRANSITION, CHSH+p MON+MARK 87.4%, AXM 88.7%, line-boundary reset; 12-test battery 10/12
+C1391	s-atom staging sequence profile	2	B	s=sequence remains PLAUSIBLE; #1 STAGING atom (6.721x, 87.50%), 6/6 compound determinism at 100% purity, FQ macro-state (3.59x), sh compound-suffix (13.16x s->h junction), modifier cosine 0.966 (SM-8); combined 11/20 across Phases 501+503
+C1392	f-atom marking flag profile	2	B	f=flag remains PLAUSIBLE; #2 MARKING atom (12.009x), 100% HT/UN (never enters 49-class grammar), 90.9% compound MARKING uniformity, f->c junction 10.28x, CHSH+f 82.8% MARKING, H1 'flag' 4/4 discriminants, 5/5 convergence; 12-test battery 6/12 (data ceiling)
+C1393	compound MIDDLE composition grammar	2	B, grammar, composition	Head-initial three-slot grammar (V=0.593): HEAD (a,e,o) + MODIFIER (p,c,i,f,d,s) + TERMINAL (l,r,h,y,m,n) + FREE (k,t). First atom predicts category 74-76%. k/t role-dual: actor under qo, target under ch/sh. Replicates C1209 (15/19). Channel-specific slot modulation.
+C1394	instruction encoding architecture	2	GLOBAL, grammar, composition	HEAD+MOD*+TERM with variable-length ordered modifier stack (p->f->i->c->d->s). Frame predicts 64% of category; modifiers shift 36%. Fusion gradient: only dy hard-fused, most "macro-atoms" are adjacent slots. Suffix confirmed independent layer (entropy 1.475 bits). Scope upgraded to GLOBAL by C1395 (Phase 507).
+C1395	cross-system instruction encoding	2	GLOBAL, grammar, composition	HEAD+MOD*+TERM architecture is manuscript-wide: A-exclusive MIDDLEs follow same slot grammar (Fisher p=0.90, pair-lock 84.2%, V=0.114). Bridge MIDDLEs 100% category stable (V=0.562). A enriched in state terminals (l 1.84x), B in action terminals (dy 144x). A records show positional grammar: o-HEAD leads, headless trails.
+C1396	prep PREFIX structural differentiation	2	B, PREFIX, prep, position, REGIME, suffix, atom	Prep PREFIXes share MIDDLE content (C1221) but differentiate on 7/8 non-content dimensions: position, paragraph, suffix, REGIME, section, context, vocabulary. pch=paragraph-opener (41.2%), dch=line-initial (71.2%), lch=sustainer (REGIME_1 70.5%, 81.3% bare, 0% par-initial). Atom glosses align: pch=stage-test, tch=transfer-test, dch=mark-test, lch=hold-test. Revises C1221 collapse to generic "process."
+C1397	headless compound functional grammar	2	B, MIDDLE, headless, grammar, composition	Headless compounds (20.6%, 3,288 tokens) are NOT homogeneous infrastructure. Initial atom acts as pseudo-HEAD: d=CONTAINMENT 84%, p=MARKING 92%, f=MARKING 91%, i=STAGING 66%, r=FLOW 61%. V=0.503 category, V=0.459 PREFIX channels. Suffix bifurcation: d/i bare (85-93%) vs c/p/f suffixed (93-97%). da enrichment is i-initial specific, not generic headless. Same modifier ordering (61.9% vs 70.1%). q-initial (104 tokens) is non-grammar artifact.
+C1398	paragraph operational gradient	2	B, paragraph, clustering, section, REGIME	Paragraphs form a continuous operational variation space (silhouette 0.113), NOT discrete types. 4 gradient zones: THERMAL-QO (n=87, BIO/R1), CONTAINMENT-Sealing (n=68, HERBAL), OPERATION-Iteration (n=75, STARS_RECIPE/R3), MONITORING-Phase (n=34, STARS_RECIPE/R3). Section V=0.408, REGIME V=0.371. 50% of folios multi-type. Connects to C1378 (NULL material differentiation): same material, different operational emphases.
+C1399	paragraph ordering null	2	B, paragraph, ordering, folio, sequence	Paragraphs have NO preferred ordering within folios. 7/8 tests FAIL for sequential structure. Transition matrix (T4) is structured (V=0.424) but reveals zone INERTIA (self-transition O/E=2.02), not sequence. THERMAL↔MONITORING mutual avoidance (O/E=0.12/0.20). No monotonic ramp (rho=-0.052). Section-controlled: all FAIL. Folio specifies WHAT concerns and HOW MUCH, not in WHAT ORDER.
+C1400	paragraph state-independent ordering	2	B, paragraph, ordering, thermal, state	Terminal physical state does NOT predict next paragraph zone. 0/8 tests PASS after disambiguation. Raw thermal continuity (rho=+0.230) is entirely folio-level shared environment (shuffle p=0.565, adjacent≈non-adjacent p=0.690). Folio-residualized correlation flips to -0.161 (thermal anti-correlation). Folio-mode baseline (0.685) dominates all models. Combined state model DEGRADES prediction.
+C1401	C325 completion gradient is section confound	2	B, convergence, section, position	Raw folio-position vs AXM rate (rho=+0.226, p=0.041) collapses to zero within every section (B: -0.012, H: +0.084, S: -0.008; all p>0.6). Gradient arises because section B (74.5% AXM) occupies later manuscript positions (section-position rho=+0.391). C325 QUALIFIED.
+C1402	no sequential convergence to AXM at any scale	2	B, convergence, paragraph, line, AXM	Neither cross-paragraph (rho=-0.019, p=0.78; 16 increasing/15 decreasing/14 flat) nor within-paragraph (rho=-0.016, Wilcoxon p=0.535) shows sequential convergence. Adjacent paragraph AXM rates uncorrelated (rho=0.001, perm p=0.983). Position-aware model 29.6% WORSE than folio-mean baseline. AXM dominance is thematic, not sequential.
+C1403	MONOSTATE is thematic dominance not sequential convergence	2	B, convergence, MONOSTATE, AXM, reframe	C084's MONOSTATE describes AXM as dominant operational mode (59-75% by section), not sequential convergence endpoint. Folio ICC=0.286 (71% paragraph-level variation). Reframes C074/C079/C084 without contradicting Tier 0 facts — statistical findings remain true, dynamical "convergence" interpretation replaced by static "thematic dominance".
+C1404	Section structural differentiation is REGIME-dominated	2	B, section, REGIME, macro-state, kernel, hazard, morphology	REGIME composition V=0.573, 7.4x next effect (macro-state V=0.077). Section B=100% R1. Transition entropy 3.09-4.47 bits. Sections are primarily REGIME mixtures with modest independent kernel/morphological effects.
+C1405	Paragraph AXM driven by PREFIX not section	2	B, paragraph, AXM, PREFIX, variance decomposition	PREFIX alone CV R2=0.736; section alone -0.027. Full model 0.760, section marginal +0.017. Top: qo_frac +0.576, bare_frac -0.515, chsh_frac +0.508. 24% residual = design freedom. Extends C1023 (PREFIX routing load-bearing) to paragraph level.
+C1406	Section is REGIME composition at paragraph level	2	B, section, REGIME, paragraph, PREFIX	Chain: section -> REGIME (V=0.573) -> PREFIX availability -> AXM (CV R2=0.736). Neither section (-0.027) nor REGIME (-0.092) has positive paragraph-level CV R2. Section adds zero beyond PREFIX. Sections are REGIME allocation policies.
+C1407	PREFIX-AXM relationship universal across sections	2	B, PREFIX, AXM, section, universality	6/7 features show consistent sign across all sections. Only transition_frac inconsistent. Section modulates magnitude not direction. Extends C821 (syntax REGIME invariance) to paragraph-section interaction.
+C1408	suffix has HEAD→TERM compositional structure	2	B, suffix, atom, compositional, structure	16-atom subset of MIDDLE inventory (missing k,t,p,f,c). Strong HEAD->TERM ordering: 76.6% HEAD-initial, 100% TERM-terminal, zero violations. First atom predicts category (V=0.277), last atom predicts position (R²=0.059). Parallels MIDDLE's HEAD->MOD->TERM at reduced scale.
+C1409	suffix atoms diverge from MIDDLE-terminal atoms	2	B, suffix, atom, MIDDLE, cross-position, divergence	0/12 shared atoms maintain identical category profiles across suffix vs MIDDLE-terminal position. JSD range: h=0.004 (most stable) to m=0.560 (most divergent). Three tiers: near-stable (h,y,d), moderate shift (l,n,e,r,o,s), strong divergence (a,i,m). Same alphabet, position-dependent semantics.
+C1410	suffix modes are atom-level category partitions	2	B, suffix, atom, mode, paragraph, cycling	C1229's two modes decompose at atom level: Mode A (specification) = {d,e,ee,h,y} THERMAL/MONITORING atoms (1.68-2.38x enrichment). Mode B (continuation) = {a,i,ii,l,m,n,o,r,s} STAGING/TRANSITION/FLOW atoms. Near-equal balance (51.8%/48.2%). Not arbitrary clusters — operationally grounded atom partitions.
+C1411	PREFIX->MIDDLE selectivity hierarchy with sister pair atom identity	2	B, PREFIX, MIDDLE, atom, sister pair, selectivity	PREFIX->MIDDLE HEAD V=0.414 (MI=1.089 bits). Sister pairs nearly identical: ch/sh JSD=0.010, ok/ot JSD=0.010. BASE predicts HEAD better than modifier (V=0.494 vs 0.295). Sisters select same atoms, differ only in manner.
+C1412	MIDDLE dominates suffix determination via terminal atom	2	B, MIDDLE, suffix, atom, selectivity, terminal	Full MIDDLE->suffix mode V=0.678, MIDDLE TERM->mode V=0.503, PREFIX->mode V=0.169. MIDDLE TERM outpredicts PREFIX 3x. MIDDLE reduces suffix entropy 1.767 bits (45.1%) vs PREFIX 0.283 bits (7.2%). TERM is the suffix gatekeeper.
+C1413	PREFIX-SUFFIX coupling is MIDDLE-mediated	2	B, PREFIX, MIDDLE, suffix, independence, mediation	PREFIX-SUFFIX NMI=0.090 (weakest pair) vs MIDDLE-SUFFIX NMI=0.451, PREFIX-MIDDLE NMI=0.481. Three-way synergy: +0.047 bits mode, +0.009 bits identity (negligible). Instruction chain: PREFIX->MIDDLE->SUFFIX, confirming C1003 at atom level.
+C1414	Cross-slot atom co-occurrence exclusion rules	2	B, MIDDLE, suffix, atom, co-occurrence, exclusion	d REPELS (O/E=0.203, p=7.1e-81), a REPELS (0.465), h REPELS (0.509); e ATTRACTS (1.310, p=3.8e-50). Absolute: l-TERM x e-SUF_HEAD = 0 (exp=37), r-TERM x e-SUF_HEAD = 0 (exp=46). Complementary information principle; stability accumulates.
+C1415	83 forbidden PREFIX x MIDDLE HEAD combinations at atom level	2	B, PREFIX, MIDDLE, atom, forbidden, combinations	83 pairs with O/E < 0.10: qo x e (0.061), qo x o (0.037), ok x k (0.000), da x e (0.000), ch x i (0.000). Each PREFIX defines narrow atom window. Extends C911 to sub-MIDDLE atom level.
+C1416	ARTICULATOR rate and inventory	2	B	4.41% of B tokens (1,019/23,096). y=51.2%, d=11.6%, l=11.4%, r=7.0%, p=5.4%, t=5.2%, k=3.5%, s=3.3%, f=1.4%. Section-dependent: COSMO 8.31% highest, BIO 3.64% lowest.
+C1417	ARTICULATOR line-initial concentration	2	B, line, position	17.3% at line-initial vs 2.7% medial (6.48x). Paragraph headers 4.11x enriched. Two sub-groups: INITIAL (d,k,p,s,t,y at Q0 2.4-4.2x) and FINAL (l,r at Q4 2.4-2.6x). V=0.092, p < 1e-115.
+C1418	ARTICULATOR PREFIX-locked with BARE/qo exclusion	2	B, PREFIX, ARTICULATOR	29 forbidden ART x PREFIX pairs. BARE: 0/3,864 (zero). qo: 3/4,069 (0.07%). sh-locked: t 94%, k 94%, d 72%. y distributes across ch/te/ta/sh. V=0.196, p < 1e-300.
+C1419	ARTICULATOR e-HEAD selectivity and k-HEAD exclusion	2	B, MIDDLE, ARTICULATOR, atom	76-90% e-initial MIDDLE vs 40% baseline (1.9-2.3x). k-HEAD excluded from d,k,t (4 forbidden pairs). PREFIX mediates 68.3%. Articulators mark cooling not heating.
+C1420	ARTICULATOR suffix suppression	2	B, SUFFIX, ARTICULATOR	Suffix rate 16.7-27.2% vs 49.3% baseline (0.34-0.55x). Only p matches baseline (58.2%). Specification context suppresses execution-mode marking.
+C1421	ARTICULATOR category full MIDDLE mediation	2	B, ARTICULATOR, category	I(ART;CAT\
+C1422	suffix mode is MIDDLE-determined without sequential dependency	2	B, suffix, mode, MIDDLE, sequential, token-level	Joint token features (PREFIX+HEAD+TERM) explain 21.4% of mode entropy (accuracy 0.682, 1.33x). Previous token mode adds only 1.64% beyond features (CMI=0.016 bits). Raw sequential MI (0.003 bits, 0.3%) fully absorbed by token identity. No token-level sequential cycling mechanism.
+C1423	line-level mode persistence with weak inertia	2	B, suffix, mode, line, sequential, persistence	Consecutive lines: 60.6% same-mode (vs 50% random). CMI(prev_mode; curr_mode \
+C1424	mode switching is TERMINAL-independent at line level	2	B, suffix, mode, line, TERMINAL, independence	Switch rate 39.1% when same dominant TERMINAL vs 39.4% when different (delta 0.3pp, NS). TERMINAL determines each line's mode independently. Below-random interleaving (39.4% vs 49.9%) 100.6% captured by TERMINAL vocabulary effects. No TERMINAL alternation driver.
+C1425	line length unimodal distribution	2	B, line, length, distribution	Mean=9.54, median=10, CV=0.340. Mode at 10 tokens (19.9%). 94.7% within 3-13. Header 1.097x longer than body. BIO shortest (8.97), COSMO longest (11.65). Continuous unimodal, not discrete.
+C1426	line-initial specification profile	2	B, line, position, initial, specification	ARTICULATOR 3.93x, STAGING 1.57x, MARKING 1.42x. PREFIXes po/dch/so/to 5-8x enriched. Head atom e-dominant (53.7%). Lines open with specification vocabulary. Top words: daiin (3.5%), saiin (2.0%).
+C1427	line-final transition profile	2	B, line, position, final, transition, closure	TRANSITION 1.63x, THERMAL 0.56x depleted. Terminal m atom 196x increase pos1->final. Suffix -m 9.54x, -am 7.83x enriched. PREFIXes ar/al/or 3.4-4.6x. Lines close with state-change/closure vocabulary.
+C1428	THERMAL-peak-then-decline positional gradient	2	B, line, position, gradient, category, THERMAL	THERMAL peaks Q1 (29.4%) not Q0 (24.3%) because Q0 is specification zone. Declines to 17.6% Q4. FLOW rises monotonically (17.6%->22.6%). TRANSITION jumps Q4 (14.1%->19.1%). BARE rises Q0->Q4 (14.3%->21.9%).
+C1429	cross-line category independence	2	B, line, independence, category, cross-line	Suffix mode MI=0.003, category MI=0.032 bits, vocabulary Jaccard=0.153. Line length r=0.406 (folio-mediated). Extends C670/C673/C674/C1233. Lines are i.i.d. samples conditioned on folio identity.
+C1430	information U-shape at line boundaries	2	B, line, information, position, boundary	Token info U-shape: Q0=10.29, Q1-Q3=9.58-9.62, Q4=10.11 bits. Boundaries more informative than interior. Initial=specification (folio-specific), final=routing (closure markers), interior=routine thermal.
+C1431	non-PREFIX features add zero predictive power for paragraph AXM	2	B, paragraph, AXM, MIDDLE, suffix, articulator, line, design-freedom	41 features across 8 groups (HEAD, TERMINAL, suffix, line, articulator, kernel, MIDDLE props, interactions) all show negative or zero delta beyond PREFIX. Full model CV R2=0.707 vs PREFIX-only 0.711. All non-PREFIX features are PREFIX-mediated (C1411, C1418, C1422) or irrelevant.
+C1432	paragraph AXM residual is 85% measurement noise	2	B, paragraph, AXM, noise, design-freedom, C1169, C1405	29.4% residual = 25.2% binomial sampling noise + 4.2% genuine freedom. Noise = 85.5% of residual. Theoretical max R2=0.748; PREFIX achieves 0.706 (94.4% of max). Residuals normal (Shapiro-Wilk p=0.152), section-neutral (p=0.061), REGIME-neutral (p=0.444). Refines C1169.
+C1433	PREFIX-AXM mediation chain is complete at paragraph level	2	B, paragraph, AXM, PREFIX, mediation, C1405, C1411, C1418, C1422	PREFIX is sole load-bearing predictor. Complete mediation: PREFIX->HEAD (C1411), PREFIX->ART (C1418), MIDDLE->suffix (C1422). No interaction or structural feature carries independent signal. 4.2% genuine freedom is irreducible per-program variation.
+C1434	m-terminal low-diversity closure specialization	2	B, MIDDLE, atom, m-terminal, closure, diversity	10 types, 289 tokens, 1.25% of B. `am` 60.2% + `m` 26.3% = 86.5%. Lowest diversity of any terminal (10 vs y:33, l:48, r:49, h:188). 95.9% bare. Near-zero MOD stack.
+C1435	m-terminal body-line exclusivity	2	B, MIDDLE, atom, m-terminal, line, paragraph, body, header, position	10.45% body-line-final, 0.00% header-line-final, 3.26% par-final (Fisher p<0.000001). Categorically excluded from headers, depleted at paragraph boundaries. Scope = LINE BODY.
+C1436	m-terminal near-pure TRANSITION category	2	B, MIDDLE, atom, m-terminal, category, TRANSITION	87.9% TRANSITION (5.86x). Most category-concentrated terminal atom. 5 categories absent (THERMAL, MONITORING, FLOW, CONTAINMENT, MARKING). 7.4% of all TRANSITION tokens.
+C1437	m-terminal complete hazard exclusion	2	B, MIDDLE, atom, m-terminal, hazard, FLOW, CONTAINMENT	0% FLOW, 0% CONTAINMENT. 31.8% preceded by FLOW tokens -- closes hazard-containing sequences without being hazardous. Never source, target, or buffer.
+C1438	m-terminal categorical suffix suppression	2	B, MIDDLE, atom, m-terminal, suffix, suppression	4.2% suffix vs 48.3% overall = 11.5x suppression. Most extreme of any terminal. 6.8x stronger than ARTICULATOR suppression (C1420). Self-contained closure operators.
+C1439	m-terminal MIDDLE and -am suffix are orthogonal systems	2	B, MIDDLE, atom, m-terminal, suffix, -am, paragraph, line, closure	1 token overlap (`amam`). m-terminal: 289 tokens, TRANSITION 87.9%, body-line-final. -am suffix: 234 tokens, multi-category, par-final 5.19x. Two-level closure: m closes body lines, -am closes paragraphs.
+C1440	three-tier terminal opacity gradient	2	B, MIDDLE, atom, terminal, suffix, gradient, opacity	OPAQUE (n 0.84%, y 1.61%, m 4.15%), SEMI-TRANSPARENT (l 16.78%, r 19.52%), TRANSPARENT (h 98.68%). V=0.753, chi2=7384.7. NOT binary.
+C1441	active terminal-suffix exclusion grammar rule	2	B, MIDDLE, atom, terminal, suffix, exclusion, grammar, rule	y O/E=0.159, m O/E=0.105, n O/E=0.168 in matched body-line-final non-par-final population (N=1,439, baseline 45.8%). m/am Fisher p=0.000012. Active grammar rule, not distributional artifact.
+C1442	TERMINAL-suffix category information complementarity	2	B, MIDDLE, atom, terminal, suffix, information, complementarity, mutual-information, category	TERMINAL 1.261 bits vs suffix-head 0.347 bits (3.6x ratio). Joint 1.252 bits, redundancy 0.112 bits (8.2%). 88.5% of TERM x suffix-head pairs have different top categories. Layer ratio stable 3.2-3.5x across all line positions.
+C1443	17 forbidden TERMINAL x suffix-head pairs	2	B, MIDDLE, atom, terminal, suffix, forbidden, co-occurrence, exclusion	e-suffix blocked by all non-h terminals (5 pairs). r-terminal excludes 5 suffix heads. l-terminal excludes 4. h-terminal excludes 5. 8 enriched pairs (>3.0x): o-suffix universal attractor for l/r/m terminals.
+C1444	self-atom cross-layer repulsion	2	B, MIDDLE, atom, terminal, suffix, self-repulsion, cross-layer	y O/E=0.028 (Fisher p=0.0), n O/E=0.000 (p=0.0), r O/E=0.486 (p=0.0). l weak (0.621). h neutral (0.843). m neutral (1.048). Strongest repulsion at most opaque terminals.
+C1445	m-terminal and suffix anticorrelation at paragraph level	2	B, MIDDLE, atom, m-terminal, suffix, paragraph, anticorrelation, section	rho=-0.199, p=0.00001 across 486 paragraphs. Mean m-term 1.27%, suffix 49.7%, both 0.06%. Bio lowest m-term (0.57%), Stars/Recipe highest suffix (52.0%). Two closure layers are partial substitutes at paragraph scale.
+C1446	k-HEAD complete hazard immunity	2	B, MIDDLE, atom, k-initial, hazard, HEAD, immunity	0.0% hazard across 3,100 k-HEAD tokens. Zero source, zero target. All k-frames 0% including k+r (15 tokens). Kernel atoms collectively safest: k=0%, e=2.2%, h=3.1%.
+C1447	terminal atom hazard partition	2	B, MIDDLE, atom, terminal, hazard, partition, FLOW	HIGH (>30%): r 92.58%, n 38.97%, l 30.88%. LOW (1-20%): e 16.49%, y 15.82%. ZERO: k, m, h 0%. r-terminal is dominant hazard concentrator. Cross-cuts C1440 opacity gradient.
+C1448	HEAD x TERM frame hazard map with k-neutralization	2	B, MIDDLE, atom, HEAD, TERM, frame, hazard, k-neutralization	7 high-hazard frames (>50%): o->bare 100%, d->y 99.7%, a->l 98.9%, a->r 98.5%, o->r 98.0%, e->e 75.5%, a->n 65.6%. k neutralizes ALL terminal combinations. e->y safe pathway (3,475 tokens, 0%).
+C1449	PREFIX channel hazard with sister parity	2	B, PREFIX, hazard, sister pair, ch, sh, ok, ot, channel	ok/ot 1.04x (32.1% vs 30.7%), ch/sh 1.29x (12.8% vs 9.9%). Sister choice NOT hazard mechanism. ch carries 45% of forbidden violations (5/11). qo safe at 17.8%.
+C1450	opacity tier hazard gradient	2	B, MIDDLE, atom, terminal, hazard, opacity, gradient, suffix	SEMI_TRANSPARENT 56.5% (2.5x OPAQUE 22.8%). TRANSPARENT (h) 0%. Suffixed 14.6% vs unsuffixed 35.6% (2.44x). Suffix attachment = hazard reduction mechanism.
+C1451	Mode B exclusive forbidden violation concentration	2	B, suffix, mode, hazard, forbidden, violation, Mode-B	Mode B: 30.8% hazard, 11/11 violations (100%). Mode A: 9.5% hazard, 0 violations. Mode A kernel-dominant (k+e=55.6%), Mode B yield-dominant (a+o=28.6%). Specification safe, execution hazardous.
+C1452	Non-monotonic i-extension hazard gradient	2	B, MIDDLE, atom, i-modifier, extension, hazard, non-monotonic	no-i=24.1%, single-i=39.8%, double-ii=0.0%. Single-i STAGING 53.3% + FLOW 39.8%. Double-ii TRANSITION 92.6% with zero FLOW. aiin (834 tokens) = 0% hazard.
+C1453	i-modifier frame selection, not inherent hazard	2	B, MIDDLE, atom, i-modifier, hazard, frame-selection	Marginal i-effect NEGATIVE (-0.0175). Within-frame weighted delta -0.407. 12/19 frames protective. i in (a,n) frame: 33.5% vs non-i 100%. Simpson's paradox.
+C1454	i-modifier anti-thermal category profile	2	B, MIDDLE, atom, i-modifier, category, anti-thermal	THERMAL 0.05% (0.002x baseline). STAGING 33.0% (2.58x), TRANSITION 41.0% (2.78x). qo/ch/sh avoid i (0.087-0.097x). da/sa/ok/or concentrate i (2.4-3.8x).
+C1455	Quenching modifier partial i-override	2	B, MIDDLE, atom, i-modifier, quenching, co-occurrence	i-only=22.6%, both i+quench=7.5%, quench-only=5.9%. Quenching dominates. N=40 co-occurrence. Residual ~1.6pp above quench-only.
+C1456	i-modifier suffix depletion	2	B, MIDDLE, atom, i-modifier, suffix, mode, n-terminal	Suffix rate 9.4% (vs 52.1% non-i, 0.18x). 95.7% Mode B. 90.5% n-terminal structure preempts suffix attachment.
+C1457	e→y narrow vocabulary dominance	2	B, MIDDLE, atom, e-HEAD, y-terminal, vocabulary, dominance	3,475 tokens (15.0% of corpus) from only 7 MIDDLEs. edy 55.8%, ey 25.6%, eey 18.5% = 99.9%. 49.6% of all e-HEAD tokens. d-modifier dominant.
+C1458	e→y categorical safety with OPERATION enrichment	2	B, MIDDLE, atom, e-HEAD, y-terminal, hazard, safety, category, OPERATION	0.06% hazard (2/3,475) vs corpus 23.9% — 400x reduction. OPERATION 3.94x, TRANSITION 1.73x. FLOW/CONTAINMENT/MARKING categorically excluded. Among e-HEAD frames, only e->l, e->bare, e->y are safe.
+C1459	e→y context-independent deployment (not recovery-specific)	2	B, MIDDLE, atom, e-HEAD, y-terminal, context, recovery, ambient	Post-hazard 14.75%, post-safe 15.35% (Mann-Whitney p=0.310 NS). Pre/post-e->y hazard both match corpus baseline (23%). Ambient safety substrate, not reactive recovery mechanism.
+C1460	e→y early-line concentration with final avoidance	2	B, MIDDLE, atom, e-HEAD, y-terminal, position, line, paragraph	Mean line position 0.463 (vs 0.500). Line-final 0.55x. Q0-Q1 enriched 1.09-1.13x. Paragraph: header 12.0% -> late body 17.5%. Thermal work zone, not closure.
+C1461	e→y CHSH-channel with sh enrichment and qo/BARE exclusion	2	B, PREFIX, MIDDLE, atom, e-HEAD, y-terminal, channel, sh, qo	sh 2.45x, ch 1.74x; ch/sh ratio 1.07 vs corpus 1.50 (sh-biased). qo 0.04x, BARE 0.002x, da 0.00x. Monitoring/verification channels, not heat source.
+C1462	e→y rate predicts folio forgiveness via AXM attractor	2	B, MIDDLE, atom, e-HEAD, y-terminal, AXM, forgiveness, folio, hazard	e->y vs AXM self-transition rho=+0.569, p<1e-7. e->y vs hazard rho=-0.473, p=7e-6. Q1 (6.6% e->y) = 40.6% AXM self; Q4 (21.1%) = 55.0%. Post-e->y AXM +9.4pp (one-way ratchet). Mechanical basis of forgiveness gradient.
+C1463	Zone-hazard routing at line level	2	B, line, position, zone, hazard, frame, routing	Chi2=336.3, V=0.085. ZERO enriched 1.236x at SPEC, IMMUNE 1.165x at WORK, HIGH 1.134x at CLOSURE. Monotonic hazard gradient across line.
+C1464	k-IMMUNE THERMAL_WORK onset concentration	2	B, MIDDLE, atom, k-HEAD, IMMUNE, line, position, zone	Q1 peak 1.311x, 63.1% in work zone. Mean pos 0.484. Energy modulator concentrates at onset of thermal work.
+C1465	HIGH frame positional heterogeneity	2	B, MIDDLE, atom, HEAD, TERM, frame, hazard, position, heterogeneity	KW H=68.8, p=1.83e-13, eta2=0.013. o-HEAD HIGH neutral (mean 0.491), a/d-HEAD HIGH closure-biased (mean 0.562). Spread 0.115.
+C1466	Zone-hazard pattern line-length invariance	2	B, line, position, zone, hazard, frame, length, invariance	V=0.081-0.091 across short/medium/long. Same enrichment pattern in all groups. Minor closure interaction: long lines +4pp HIGH at closure.
+C1467	Paragraph zone x hazard interaction (non-fractal)	2	B, paragraph, zone, hazard, frame, routing	Chi2=233.9, V=0.071. LOW-first (HEADER 1.130x), HIGH-last (TAIL 1.134x). DIFFERENT topology from line-level SAFE-first pattern.
+C1468	Header infrastructure-first composition	2	B, paragraph, header, hazard, LOW, ZERO, composition	HEADER LOW 51.6% (1.130x), ZERO 15.8% (0.784x depleted). e->y 0.796x at HEADER. Headers specify with infrastructure, not safety vocabulary.
+C1469	Line hazard gradient paragraph-independent	2	B, line, paragraph, zone, hazard, independence, nested	Within-zone line V: HEADER 0.079, BODY 0.094, TAIL 0.091. Line gradient persists independently in all paragraph zones. Two-level safety architecture.
+C1470	Cross-line hazard correlation is folio-mediated	2	B, line, hazard, cross-line, folio, independence	MI=0.0172 bits (0.54x category). Shuffle p=0.212 MI, p=0.098 rho. Lags 1-4 flat ~0.22. B->B = A->A.
+C1471	No compensatory safe opening after hazardous closure	2	B, line, hazard, cross-line, e->y, recovery, compensatory	e->y DEPLETED 0.82x after above-median HIGH (Fisher p=0.0001). IMMUNE 0.78x. Folio composition effect.
+C1472	Modifier co-occurrence avoidance dominates ordering	2	B, grammar, composition	8/15 pairs empty. 0 strict, 3 moderate (all s-late). d,s reversed. Best: p->f->c->s->d->i (68.8%). 3+ compliance 42.6%.
+C1473	Modifier avoidance is frame incompatibility	2	B, MIDDLE, atom, modifier, co-occurrence, avoidance, frame, HEAD, TERMINAL	HEAD selectivity conflict: d(85% e), i(89% a), p(79% o) narrow; c,s broad. 5/5 incompatibility, 0/5 redundancy.
+C1474	s-modifier universal connector	2	B, MIDDLE, atom, modifier, s, co-occurrence, universality	s co-occurs with all 5 others. Lowest mean JSD (0.1176), broad HEAD (entropy 1.909), FQ macro-state (64.6%).
+C1475	HEAD atom domain taxonomy	2	B, MIDDLE, atom, HEAD, category, domain, taxonomy	k=THERMAL 90.3%, t=FLOW 87.0%, a=FLOW+TRANSITION, e=THERMAL+OPERATION, o=STAGING+OPERATION. Category JSD 0.111-0.412.
+C1476	k-HEAD immunity is intrinsic not compositional	2	B, MIDDLE, atom, HEAD, k, hazard, immunity, intrinsic, modifier	k bare 0/2,682; k with modifier 0/418; all 6 frames zero. Only HEAD immune independent of composition.
+C1477	a-HEAD is the primary hazard carrier	2	B, MIDDLE, atom, HEAD, a, hazard, forbidden, modifier, quench-resistant	66.0% forbidden (2,032/3,079). ONLY HEAD where quench fails (52.8% with mod). a->l 98.9%, a->r 98.5%, a->n 65.6%.
+C1478	k/t terminal mirror with category opposition	2	B, MIDDLE, atom, HEAD, k, t, terminal, category, mirror, PREFIX	Terminal JSD=0.0017, Category JSD=0.784. Both bare-dominant, qo-selected, high suffix rate. Parallel channels.
+C1479	HEAD-modifier selectivity partition	2	B, MIDDLE, atom, HEAD, modifier, selectivity, partition, co-occurrence	a monopolizes i (4.08x), e monopolizes d (1.99x), o attracts p/f/c. k/t modifier-depleted. Headless universal.
+C1480	i-modifier Simpson's paradox full resolution	2	B, MIDDLE, atom, i-modifier, Simpson, hazard, HEAD, selection, resolution	Total=-0.069 (i safer). Selection=+0.319, Conditional=-0.388. CF: avg HEAD dist -> 10.1%. Within a-HEAD: 5/5 protective, delta=-0.536.
+C1481	i-modifier terminal transformation within a-HEAD	2	B, MIDDLE, atom, i-modifier, a-HEAD, terminal, transformation, TRANSITION	n-term 1.2%->82.1% (70x). r-term 43.8%->0.5% (84x). FLOW->TRANSITION. Position 0.627->0.536. Category redirection not terminal avoidance.
+C1482	Double-ii safety via TRANSITION-locked n-terminal	2	B, MIDDLE, atom, i-modifier, double-ii, safety, n-terminal, TRANSITION, gradient	Gradient: no-i=79.3%, single-i=68.6%, ii=0.0% (N=887). ii is 94.0% n-terminal, 94.0% TRANSITION. All 5 terminals 0% hazard.
+C1483	TERMINAL category specificity gradient	2	B, MIDDLE, atom, terminal, category, specificity, gradient, V=0.463	V=0.463 (2nd after HEAD). r=FLOW 98.9% (norm_ent=0.036, 1 sig cat). m=TRANSITION 87.9% (0.211, 2 sig). l=STAGING 64.5% (0.456, 3 sig). y=OPERATION 40.6% (0.631, 4 sig). n=TRANSITION 39.3% (0.652, 4 sig). h=MARKING 30.0% (0.844, 6 sig). bare=THERMAL 43.2% (0.818, 6 sig).
+C1484	TERMINAL modifier exclusivity partition	2	B, MIDDLE, atom, terminal, modifier, exclusivity, partition, C1472, C1479	n: i=8.606x, all others 0.0x (3,553 i-mod, 0 others). y: d=2.868x, all <0.03x. h: c=9.1x, p=7.7x, f=6.4x, s=5.0x; i/d 0.1x. l/r/m: mod_rate <5%. HEAD+TERM jointly gate modifier palette.
+C1485	TERMINAL HEAD affinity partition	2	B, MIDDLE, atom, terminal, HEAD, affinity, partition, frame	e->y: 72.7% (2.40x, 3,475 tokens). a->n: 59.3% (4.44x). a->m: 60.2% (4.52x). o->l: 30.3% (2.57x). a->r: 35.0% (2.63x). h: no dominant HEAD (45.6% headless). k/t avoid n,m categorically (0-1 tokens).
+C1486	m-terminal line-final closure confirmation	2	B, MIDDLE, atom, terminal, m, line-final, closure, C1434	mean_pos=0.903 (all others <0.52). 73.7% line-final. 87.9% TRANSITION. 10 unique MIDDLEs only. 4.2% suffix rate (OPAQUE). Structural singularity. Confirms C1434-C1439.
+C1487	Six-terminal functional taxonomy	2	B, MIDDLE, atom, terminal, taxonomy, LOCKED, CHANNELED, DIFFUSE, opacity, orthogonal	Three tiers: LOCKED (r, m: 1-2 cats), CHANNELED (l, y, n: 3-4 cats), DIFFUSE (h, bare: 5-6 cats). Opacity orthogonal: r SEMI but LOCKED, h TRANSPARENT but DIFFUSE. Hazard axis: y sources 90.9%, n absorbs 90.9%. Symmetric counterpart to HEAD taxonomy (C1475).
+C1488	Headless compound population structure	2	B, MIDDLE, headless, population, census, compound	3,312 tokens (20.5%), 469 types. MOD-initial 77.5% (2,568), TERM-initial 19.3% (638), OTHER 3.2% (106). Top: i=918, d=805, c=612, l=428. Mean length 2.64 atoms.
+C1489	Headless pseudo-HEAD category differentiation	2	B, MIDDLE, headless, atom, category, pseudo-HEAD, domain	V=0.511, chi2=5872, p=0.0. d=CONTAINMENT 84.0%, i=STAGING 66.9%, p=MARKING 91.7%, f=MARKING 90.9%, r=FLOW 60.7%, c=OPERATION 32.2%. CONTAINMENT 10.6x, THERMAL 0.11x vs headed.
+C1490	Headless terminal profile shift	2	B, MIDDLE, headless, atom, terminal, profile, enrichment, hazard	h 2.98x (16.2% vs 5.4%), n 2.45x (25.0% vs 10.2%). l 0.076x, r 0.153x, m 0.21x. LOCKED tier 1.7% vs 10.7% (6.2x depletion). C1484 compliance: n=100%, h=99.6%, y=99.6%.
+C1491	Headless da-PREFIX near-exclusivity	2	B, MIDDLE, headless, PREFIX, da, selectivity, sa, ta	da 2284x enriched (17.8% vs ~0.008%). sa: 197 tokens 100% headless. ta: 107 tokens 100% headless. ok: 0.5% vs 7.5% headed. ot: 0.8% vs 7.2% headed.
+C1492	Headless suffix bifurcation	2	B, MIDDLE, headless, suffix, bifurcation, binary, parametric	BARE: d=14.9%, i=9.3% (binary ops). SUFFIXED: c=96.2%, p=96.8%, f=93.2% (parametric ops). Aggregate 47.5% vs headed 35.7%. Ordering grammar: 61.9% vs 70.1%.
+C1493	Headless internal structure with displaced HEAD	2	B, MIDDLE, headless, internal, structure, displaced, HEAD	MT 46.7%, T-only 19.3%, MMT 16.3%, MMMT+ 5.1%. 35.7% contain HEAD atoms in non-initial position. Nearest HEAD: o (JSD=0.302). Farthest: a (JSD=0.665).
+C1494	Displaced HEAD k/t enrichment with inverted frequency	2	B, MIDDLE, headless, displaced, HEAD, k, t, e, frequency, inversion	k 5.31x enriched (42.0% vs 7.9% canonical), t 6.90x (18.5% vs 2.7%), e 0.26x depleted (12.2% vs 47.8%). 1,182 tokens, 334 types. Maps to k/t dual-role (C1478).
+C1495	HEAD-set atoms do not function as domain selectors when displaced	2	B, MIDDLE, headless, displaced, HEAD, category, pseudo-HEAD, domain, prediction	Pseudo-HEAD accuracy 35.1% vs displaced HEAD 13.1% (2.68x ratio). 0/5 match canonical dominant. Same-pseudo-HEAD JSD=0.510 < same-HEAD JSD=0.529. No alternative MOD+HEAD+TERM order.
+C1496	c-modifier primary displacement context	2	B, MIDDLE, headless, displaced, HEAD, c-modifier, k, t, ck, ct, context	c-initial 87.1% displacement rate (533/612). c+k=365, c+t=167. Dominant MIDDLEs: ck=197, ckh=127, ct=95, cth=49. i-initial only 2.3%. c's modifier-terminal affinity (h-compatible) vs i's (n-exclusive) explains split.
+C1497	Displaced HEAD extreme suffix rate	2	B, MIDDLE, headless, displaced, HEAD, suffix, rate, morphology	89.8% suffix rate vs canonical 35.7% (2.51x) vs genuine headless 24.0% (3.74x). k-displaced 96.8%, t 95.4%. Driven by bare-terminal transparency (C1440). PARAMETRIC not BINARY (C1492).
+C1498	n/y-terminal categorical displacement exclusion	2	B, MIDDLE, headless, displaced, HEAD, terminal, n, y, bare, exclusion, gate	n 0.36% (3/828), y 0.39% (3/775) displacement rate. bare 83.9% (908/1082). 200x+ range. n/y exclusive modifier partnerships (C1484) leave no slot for HEAD atoms.
+C1499	Atom ontology manuscript-wide shared substrate	2	GLOBAL, MIDDLE, atom, substrate, cross-system, Jaccard	Min pairwise Jaccard 0.895. HEAD JSD mean 0.0197 between non-bridge channels. All 7 channels share 18 core atoms. MOD JSD < 0.007.
+C1500	Bridge-dark HEAD domain differentiation	2	B, A->B, MIDDLE, atom, bridge, dark, HEAD, differentiation	Bridge e/k/t 37.6% vs dark 31.0%. Dark o+headless 63.3% vs bridge 51.8%. HEAD JSD bridge-dark: 0.0237. Bridge = balanced execution; dark = arrangement/identification.
+C1501	Bridge terminal tier outlier	2	B, A->B, MIDDLE, atom, bridge, terminal, tier, outlier	Bridge LOCKED 8.2%, CHANNELED 23.5%, bare 58.8%. Dark bare 74.7%, DIFFUSE/h 15.7%. TERM JSD bridge-to-others 0.039-0.082 (5-20x non-bridge). Dark uses transparent terminals for identification.
+C1502	AZC o-HEAD domain enrichment (2.70x)	2	AZC, MIDDLE, atom, o-HEAD, enrichment, arrangement	o-HEAD 31.8% vs 11.8% B baseline (2.70x). k-HEAD 0.314x, t-HEAD 0.488x depleted. Extends C1381 to type level. AZC = arrangement-dominated, execution-depleted.
+C1503	Bridge atom redistribution across A/B	2	GLOBAL, A->B, MIDDLE, atom, bridge, redistribution, suffix, PREFIX	Same 85 bridge MIDDLEs wrapped differently: -edy ~50x B-enriched, ct ~12x A-enriched, qo ~2x B-enriched. HEAD JSD A-vs-B weighted: 0.0767.
+C1504	Modifier grammar universality across channels	2	GLOBAL, MIDDLE, atom, modifier, universality, cross-system	All channels same 6 modifiers {p,c,i,f,d,s}. c dominant everywhere. MOD JSD non-bridge < 0.007. Bridge outlier at 0.074-0.088 (lower rate 77.7%, f absent).
+C1505	Dark pipeline MARKING-dominant category profile	2	B, A->B, MIDDLE, atom, dark, pipeline, category, MARKING, bridge, balanced	Bridge balanced V=0.4427 across 8 categories. Dark MARKING-dominant 36.0%, FLOW 20.2%, TRANSITION depleted 2.1%. Confirms C1264 at atom level.
+C1506	Bridge terminal atom stability across A and B	2	GLOBAL, A->B, MIDDLE, atom, bridge, terminal, stability, cross-system	TERMINAL JSD=0.014, most stable slot. Tier JSD=0.005. y-terminal 1.54x B-enriched, h-terminal 0.54x. All 7 terminals shared.
+C1507	Bridge HEAD redistribution A vs B	2	GLOBAL, A->B, MIDDLE, atom, bridge, HEAD, redistribution, arrangement, execution	A: HEADLESS 38.6%, o 28.1%. B: e 31.1%, k 14.2%. HEAD JSD=0.077, least stable internal slot. A-enriched vs B-enriched population HEAD JSD=0.591.
+C1508	Bridge category redistribution A vs B	2	GLOBAL, A->B, MIDDLE, atom, bridge, category, redistribution, THERMAL, STAGING	100% category match (intrinsic). Token-weighted shift: THERMAL +10.1pp B, STAGING -11.1pp B. Category JSD=0.037. e-HEAD most unstable per-HEAD (JSD=0.166).
+C1509	Three-tier atom behavioral stability across A and B	2	GLOBAL, A->B, MIDDLE, atom, behavioral, stability, correlation, cross-system	8 stable (corr>0.90: r/s/t/l/a/m/o/g), 6 moderate (0.70-0.90: k/c/p/i/e/n), 3 unstable (<0.70: y/h/d). d=0.062 extreme outlier. Mean=0.789.
+C1510	Suffix parallel HEAD+TERM decomposition	2	B, suffix, atom, decomposition, HEAD, TERM, parallel	First-atom V=0.277 (53% of MIDDLE HEAD 0.520), last-atom R2=0.059 (1.68x MIDDLE TERM 0.035). 5 terminal atoms only: y 53.5%, n 19.5%, r 13.1%, l 10.8%, m 3.1%. m-terminal 7.89x line-final.
+C1511	Suffix excludes ACTION HEAD and EXECUTIVE MOD atoms	2	B, suffix, atom, missing, HEAD, MOD, exclusion	Missing {k,t} = 2 ACTION HEADs + {p,f,c} = 3 EXEC MODs. All 5 also 0 TERMINAL in MIDDLE. Suffix is systematically action-free and executive-free.
+C1512	MIDDLE terminal dominates suffix content (V=0.513)	2	B, MIDDLE, suffix, atom, terminal, gating, content	V(MIDDLE TERM x suffix first-atom) = 0.513 vs V(MIDDLE HEAD) = 0.305 (1.68x). h-terminal: 98.7% suffix, e-first 59.4%. r-terminal: a-first 72.8%. l-terminal: o-first 36.9%.
+C1513	Suffix atoms universally divergent from MIDDLE atoms	2	B, suffix, MIDDLE, atom, behavioral, divergence, JSD	12/12 atoms divergent, mean JSD=0.526. Most stable: e (0.202). Most divergent: n (1.000, TRANSITION->FLOW inversion). Same alphabet, different category semantics.
+C1514	Cross-system suffix atom identity (A=B=13, JSD=0.050)	2	GLOBAL, suffix, atom, cross-system, identity	A=B=13 atoms, 0 exclusive. B enriches d (0.50x), e (0.41x), i (0.35x). A enriches o (3.31x), h (1.71x), l (1.67x), s (2.01x). Extends C1499 to suffix.
+C1515	Suffix mode category anatomy with positional asymmetry	2	B, suffix, mode, category, positional, THERMAL, FLOW	Mode A: MONITORING 5.08x, CONTAINMENT 2.93x, OPERATION 2.95x, THERMAL 1.20x; medial (0.491). Mode B: FLOW 2.13x, STAGING 2.15x, TRANSITION 2.17x; boundary (0.514).
+C1516	AZC HEAD domain differentiation across zones	2	AZC, zone, HEAD, atom, differentiation, V=0.115, C1271-refinement, C1394	chi2=112.3, V=0.115, p=5.81e-17 across 4 major zones. Refines C1271: differentiation at HEAD slot, not raw character level.
+C1517	o-HEAD enrichment is zone-graded not uniform	2	AZC, zone, o-HEAD, graded, arrangement, C1502, C1381, C1388	R=17.7% (1.51x B), P=19.1% (1.63x), C=26.2% (2.23x), S=29.3% (2.49x), L=30.9% (2.63x). Overall 1.90x B at HEAD-slot level.
+C1518	HEAD differentiation dominates TERMINAL across zones	2	AZC, zone, HEAD, TERMINAL, JSD, domain-selection, C1487, C1501	Mean pairwise HEAD JSD=0.0254, TERMINAL JSD=0.0049. HEAD 5.2x more discriminating. Zones select WHAT domain, not HOW to close.
+C1519	Zodiac HEAD uniformity vs A/C internal diversity	2	AZC, family, zodiac, AC, HEAD, diversity, C436, C1270	Between-family HEAD JSD=0.0158. Internal: Zodiac=0.0617, A/C=0.1265 (2.0x ratio). Extends C436 to atom level.
+C1520	R-series no HEAD gradient	2	AZC, R-series, HEAD, gradient, null, R4-anomalous, C434	All Spearman p=0.600 (N=4). R1-R3 stable (JSD 0.001-0.009). R4 anomalous (N=39, 51.3% headless) but underpowered.
+C1521	AZC zone pipeline composition varies	2	AZC, zone, pipeline, bridge, dark, exclusive, o-HEAD, C1139, C1272, C1500, C1505	S-zone most dark/exclusive (16.8%/21.4%). P-zone most bridge (80.4%). Dark MIDDLEs 1.84x o-HEAD vs bridge across all zones.
+C1522	AZC zones partition B-proximate vs A-proximate by HEAD JSD	2	AZC, zone, HEAD, JSD, B, A, proximity, partition, C301, C1507, C1517	R/P closer to B (JSD 0.029-0.042). C/S/L closer to A (JSD 0.036-0.084). B-proximate = lower o-HEAD + more bridge.
+C1523	Currier A headless rate 1.43x higher than B/AZC	2	GLOBAL, cross-system, headless, A, B, AZC, HEAD, rate, enrichment, C1488, C1507, C1519	A=39.0%, B=27.2%, AZC=27.9%. A vs B chi2=487.73, p=4.44e-108. B vs AZC p=0.428 (NS). A pseudo-HEAD: i-dominant (21.3%). B: l/d-dominant (20.4%/18.2%).
+C1524	da/sa/ta PREFIX exclusivity universal across systems	2	GLOBAL, cross-system, headless, PREFIX, da, sa, ta, exclusivity, universal, C1491, C1394	da enrichment: A=844.6x, B=1,448.3x, AZC=132.7x. sa >98.2% headless, ta >94.4% headless in all systems. Manuscript-wide grammar rule.
+C1525	Headless suffix depletion universal across systems	2	GLOBAL, cross-system, headless, suffix, rate, depletion, universal, C1440, C1490, C1492	A=0.73x headed, B=0.86x, AZC=0.61x. All p<1e-22. AZC strongest effect. Terminal opacity mechanism (C1440).
+C1526	Headless category profile universal across systems	2	GLOBAL, cross-system, headless, category, THERMAL, STAGING, MARKING, universal, C1488, C1489, C1505	THERMAL: A=0.8%, B=1.1%, AZC=0.6%. STAGING: A=35.2%, B=30.9%, AZC=32.4%. Cross-system JSD=0.023-0.035, 6.7-13.8x smaller than within-system.
+C1527	Headless functional core shared: 69 types cover 88-89%	2	GLOBAL, cross-system, headless, MIDDLE, overlap, shared, functional-core, type-exclusive, C1499, C1488	Types: A=395, B=484, AZC=160. Triple-shared=69. Token coverage=88-89%. A-exclusive=63.3%, B-exclusive=68.0%. B dark headless 1.47x bridge (B-specific).
+C1528	Hazard classes map to near-orthogonal atom HEAD territories	2	B, MIDDLE, atom, HEAD, TERM, hazard, failure-class, territory, orthogonal, C109, C1446, C1447, C1448, C1475	PHASE_ORDERING=headless(57.1%), CONTAINMENT_TIMING=o-HEAD(50%), COMPOSITION_JUMP=e-HEAD(50%), RATE_MISMATCH=a-HEAD(100%), ENERGY_OVERSHOOT=e-HEAD(100%). 7/10 pairwise Jaccard=0.
+C1529	PHASE_ORDERING is headless y-terminal to a-HEAD transition failure	2	B, MIDDLE, atom, HEAD, TERM, hazard, PHASE_ORDERING, headless, y-terminal, a-HEAD, violation, C109, C1397, C1446, C1477, C1528	10/11 corpus violations are dy->aiin (PHASE_ORDERING). Source: headless y-terminal (57.1%). Target: a-HEAD n-terminal (57.1%). Cross-domain boundary failure.
+C1530	CONTAINMENT_TIMING is l/r-terminal SEMI_TRANSPARENT class with 100% avoidance	2	B, MIDDLE, atom, TERM, hazard, CONTAINMENT_TIMING, l-terminal, r-terminal, SEMI_TRANSPARENT, avoidance, C109, C1440, C1447, C1487	Source 75% l/r-terminal. Target 100% l/r-terminal. 1,129 source appearances, 0 violations (100% avoidance). Strictest class.
+C1531	Forbidden MIDDLEs include 5 phantom types absent from corpus	2	B, MIDDLE, hazard, forbidden, phantom, construction, grammar, C109, C1178, C1394, C1528, C1529	shey, chey, chedy, shedy, chol = 0 occurrences. 11/17 transitions involve phantom. Construction-level prohibition.
+C1532	Hazard classes partition by line position (setup-early to closure-late)	2	B, MIDDLE, hazard, failure-class, line, position, zone, gradient, C109, C1463, C1464, C1465, C1528	Chi2=46.6, p=0.000079, V=0.066. COMPOSITION_JUMP=0.402, ENERGY_OVERSHOOT=0.473, CONTAINMENT_TIMING=0.510, RATE_MISMATCH=0.551, PHASE_ORDERING=0.581.
+C1533	PHASE_ORDERING is CHSH-channel specific (28.4% CHSH, 7/11 violations)	2	B, MIDDLE, atom, PREFIX, hazard, PHASE_ORDERING, CHSH, channel, violation, C109, C929, C1449, C1451, C1529	CHSH=28.4% of PO sources vs 0-12.2% other classes. 7/11 violations CHSH-prefixed. QO=0 violations. Other classes BARE-dominant.
+C1534	PREFIX uses 15 characters in three-tier positional classification identical across all systems	2	GLOBAL, PREFIX, atom, positional, inventory, three-tier, MODIFIER, BASE, DUAL, C1218, C1499	15 chars: 7 MODIFIER {c,d,f,p,q,s,y}, 2 BASE {e,h}, 6 DUAL {a,k,l,o,r,t}. Cross-system Jaccard=1.000. Positional chi2=14,327.8, V=0.547.
+C1535	i-atom categorically excluded from PREFIX — iteration absent from channel selection	2	GLOBAL, PREFIX, MIDDLE, atom, i-atom, exclusion, iteration, C1197, C1204, C1394, C1499, C1511	PREFIX uses 15 of MIDDLE's 20 chars, excluding {i,m,n,g,x}. i is the ONLY MIDDLE MOD absent from PREFIX. PREFIX-MIDDLE Jaccard=0.750.
+C1536	Base-to-HEAD selection V=0.478 — each base selects a distinct operational domain	2	GLOBAL, PREFIX, atom, base, HEAD, domain, V=0.478, C1218, C1219, C1475, C1507	Chi2=21,946.2, V=0.478 (89% of C1475 V=0.511). o->THERMAL(k 57%), h->STABILITY(e 66%), a->HEADLESS(96%), k/t->STABILITY+CONTAINMENT.
+C1537	a-base is the universal headless gateway (94-96% headless regardless of modifier)	2	GLOBAL, PREFIX, atom, base, a-base, headless, gateway, modifier-independent, C1488, C1491, C1524, C1536	da=95.9%, sa=96.0%, ka=94.5%, ta=95.8%. Spread=1.5pp. Generalizes C1491 from da to entire a-base family.
+C1538	q-modifier uniquely activates THERMAL channel on o-base (64% k-HEAD vs 5-19% other modifiers)	2	B, PREFIX, atom, modifier, q, o-base, THERMAL, k-HEAD, compositional, qo, C1300, C1313, C1536, C1537	qo=64.0% k-HEAD, so=18.5%, to=15.7%, po=8.1%, do=4.8%. 3.5x gap. o-base is modifier-SENSITIVE (75pp spread). qo is compositionally transparent.
+C1539	Sister pairs decompose into SAME_BASE (ch/sh, da/sa) and SAME_MOD (ok/ot) structural types	2	GLOBAL, PREFIX, atom, sister-pair, ch, sh, ok, ot, da, sa, SAME_BASE, SAME_MOD, C408, C1478, C1534, C1536	All HEAD JSD<0.01 (content-equivalent). ch/sh non-content divergence: suffix 12.3pp, articulator 9.3pp. ok/ot and da/sa: near-identical on all dimensions.
+C1540	p/f/c behavioral non-divergence vs stable MODs	2	GLOBAL, atom, cross-system, instability, JSD, behavioral, C1509, C1499	Mean JSD UNSTABLE=0.0110 vs STABLE_MOD=0.0319, ratio 0.35x. p=0.0074, c=0.0116, f=0.0141. d most divergent at 0.0567.
+C1541	Suffix exclusion defines instruction-only atom tier	2	GLOBAL, atom, suffix, exclusion, instruction, tier, C1509, C1511, C1540	{k,t,p,f,c} = 0 suffix occurrences across all systems. Partition: 13 OUTCOME-accessible + 5 INSTRUCTION-ONLY. Exactly equals ACTION HEADs + UNSTABLE MODs.
+C1542	c-atom slot-switching between PREFIX and MIDDLE	2	B, MIDDLE, PREFIX, atom, c, slot-switching, HEAD, headless, e-HEAD, C1389, C1496, C1542	PREFIX: 61.0% e-HEAD, 21.2% headless. MIDDLE: 17.9% e-HEAD, 46.4% headless. JSD HIGH. Top MIDDLEs: ck(197), kch(148), ckh(127).
+C1543	p/f are o-HEAD arrangement-affiliated atoms	2	B, MIDDLE, atom, p, f, o-HEAD, arrangement, headless, C1388, C1502, C1543	p: 36.6-41.2% o-HEAD (stable A->B). f: 33.0-34.8% o-HEAD. vs i: 3.1-4.1% o-HEAD, 26.5-53.2% a-HEAD. Arrangement vs iteration modifier split.
+C1544	Unstable atoms increase Mode A suffix rate A->B	2	B, MIDDLE, atom, suffix, mode, UNSTABLE, Mode A, THERMAL, specification, C1509, C1515, C1229	c +25.3pp (58.2->83.4%), f +22.3pp (32.2->54.4%), p +15.5pp (41.4->56.9%). Stable MODs: i +0.7pp, d -3.4pp.
+C1545	f-atom anomalous B-exclusive vocabulary affinity	2	B, MIDDLE, atom, f, bridge, dark-pipeline, B-exclusive, vocabulary, rarity, C1139, C1499	f bridge rate 49.3% (lowest MOD). B-only 50.7%. Only 215 B tokens (rarest MOD, next: s=560). Top: fch(23), ofch(17), f(17).
+C1546	Universal HEAD atom hazard source immunity	2	B, MIDDLE, atom, HEAD, hazard, immunity, universal, source, C1446, C1475, C1476, C1528	ALL 5 HEADs at 0% source rate: e=0/7002, o=0/2717, a=0/3079, k=0/3100, t=0/921. Total headed: 0/16819. chi2=4411.9, V=0.219. HEADLESS: 1537/6277=24.49%.
+C1547	TERMINAL atom determines hazard class type (stronger than HEAD)	2	B, MIDDLE, atom, terminal, hazard, class, PHASE_ORDERING, CONTAINMENT_TIMING, y, l, C1447, C1483, C1487, C1528	chi2=8622.5, V=0.306 (vs HEAD V=0.219, 1.40x). y->PHASE_ORDERING 675/675, l->CONTAINMENT_TIMING 855/855, bare->RATE_MISMATCH 5/5, h->ENERGY_OVERSHOOT 2/2.
+C1548	PREFIX base-level hazard differentiation	2	B, PREFIX, base, hazard, source, enrichment, C1536, C1475, C1546	chi2=2038.0, V=0.133. e-base 3.37x (22.4%), a-base 2.00x (13.3%), o-base 1.20x (8.0%), h-base 0.71x (4.7%), k-base 0.30x (2.0%).
+C1549	q-modifier hazard protection on o-base (~7x vs other modifiers)	2	B, PREFIX, modifier, q, o-base, hazard, protection, qo, C1538, C1546, C1548, C1452	qo 4.15% (0.52x base) vs do 51.6%, so 28.0%, to 30.4%, po 27.2%, ko 31.3%. Protection via 64% k-HEAD routing (C1538).
+C1550	Sister pair hazard source asymmetry	2	B, PREFIX, sister pair, hazard, asymmetry, ch, sh, ok, ot, da, sa, C1449, C1539, C1187	ch/sh 1.804x (ch 4.73% vs sh 2.76%). ok/ot 0.664x INVERTED (ok 6.09% vs ot 9.17%). da/sa 1.537x. da/ta 1.354x. da/ka 1.529x.
+C1551	PHASE_ORDERING exclusively headless y-terminal dy; CONTAINMENT_TIMING exclusively l-terminal	2	B, MIDDLE, hazard, PHASE_ORDERING, CONTAINMENT_TIMING, headless, y-terminal, l-terminal, dy, l, C1529, C1530, C1547	dy=675 tokens across 10+ PREFIXes (100% PHASE_ORDERING). l=855 tokens across 12+ PREFIXes (100% CONTAINMENT_TIMING). Both MIDDLE-intrinsic not PREFIX-induced.
+C1552	5/9 hazard source MIDDLEs are phantom types absent from corpus	2	B, MIDDLE, hazard, phantom, forbidden, corpus, chey, shey, chedy, shedy, chol, C1531, C1178	chey=0, shey=0, chedy=0, shedy=0, chol=0. All ch/sh-initial dead naming pattern. 4 corpus-present sources (dy,l,c,he) carry 100% of actual hazard.
+C1553	ch/sh-initial compound MIDDLE categorical absence	2	B, MIDDLE, atom, ch, sh, compound, positional-partition, PREFIX, C1178, C1394, C1534, C1552	0 ch/sh-initial compound MIDDLEs (3+ chars) in entire corpus. PREFIX:MIDDLE ratio 5,821:0. c-initial compounds: 55 types/291 tokens. s-initial: 12/14. ch/sh bigram is PREFIX-domain only.
+C1554	Phantom MIDDLEs are atom-legal but construction-dead (defense-in-depth)	2	B, MIDDLE, phantom, atom, slot, construction, defense-in-depth, hazard, C1552, C1553, C1178, C1209, C1546	All 5 phantoms pass atom slot legality, PREFIX compatibility (22-27 each), suffix compatibility. Prohibition at BIGRAM level (C1553) not atom level. Forbidden topology covers vocabulary-excluded MIDDLEs.
+C1555	c-initial compound second-atom selectivity (c+h adjacency absent)	2	B, MIDDLE, atom, c-initial, h-atom, second-atom, selectivity, C1389, C1553, C1472	49/55 c-initial compounds (89.1%) contain h, but h ALWAYS at position 2+ (c+[k/t/f/p]+h). c+h at positions 0-1 = 0 types. Bigram-level prohibition, not atom-level.
+C1556	o-HEAD terminal-to-category deterministic mapping	2	B, MIDDLE, atom, HEAD, o-HEAD, terminal, category, deterministic, STAGING, FLOW, OPERATION, C1388, C1475, C1483, C1485, C1487	ol=100% STAGING (762 tokens), or=100% FLOW (446), bare o=100% OPERATION (388). l-terminal=92.9% STAGING (N=820), r-terminal=88.6% FLOW (N=508). Sharpest terminal-category coupling for any HEAD.
+C1557	o-HEAD y-terminal near-complete depletion (0.007x)	2	B, MIDDLE, atom, HEAD, o-HEAD, y-terminal, depletion, safety, PHASE_ORDERING, hazard, C1388, C1475, C1546, C1551	~19/2717 y-terminal tokens. 0.007x enrichment. Strongest single-terminal depletion for any HEAD. Structural PHASE_ORDERING immunity via y-avoidance.
+C1558	o-HEAD p/f executive modifier enrichment with i/d depletion	2	B, MIDDLE, atom, HEAD, o-HEAD, modifier, p, f, i, d, enrichment, depletion, arrangement, C1388, C1475, C1479, C1543	p 3.51x (9.7%), f 2.83x (2.7%) enriched; i 0.32x (6.1%), d 0.55x (10.6%) depleted. p=strongest modifier enrichment for any single HEAD.
+C1559	o-HEAD cross-system gradient A(28.5%)>AZC(22.4%)>B(11.8%) with AZC S/R=1.66x	2	CROSS, A, B, AZC, MIDDLE, atom, HEAD, o-HEAD, cross-system, gradient, AZC-zone, boundary, C1381, C1388, C1502, C1507, C1517, C1522	A/B ratio 2.42x. AZC zones: L=30.9%, S=29.3%, C=26.2%, P=19.1%, R=17.7%. A-proximate zones high, B-proximate zones low.
+C1560	o-HEAD inner atom composition divergent (y 0.023x, l 2.74x, p 4.67x)	2	B, MIDDLE, atom, HEAD, o-HEAD, inner-atom, composition, divergent, y-depletion, l-enrichment, p-enrichment, CHANNELED, terminal, C1388, C1475, C1484, C1487, C1556	y 0.023x = most extreme single-atom divergence in system. l 2.74x, r 2.29x, h 2.24x, p 4.67x, f 3.65x enriched. n 0.19x, i 0.37x depleted.
+C1561	o-HEAD empirical hazard immunity (0% source AND 0% target)	2	B, MIDDLE, atom, HEAD, o-HEAD, hazard, immunity, source, target, double-protection, C1388, C1446, C1546, C1551, C1557	0/2717 in either direction. 3 theoretical forbidden pairs never fire (1 phantom source, 2 vanishingly rare). Safest HEAD domain.
+C1562	HEAD self-transition rate hierarchy	2	B, MIDDLE, atom, HEAD, self-transition, sequential, hierarchy, persistence, switching, C1212, C1384, C1475, C1478, C1521	Three-tier: PERSISTENT (e 28.5%, headless 28.4%, a 25.2%), SWITCHING (k 16.7%, o 13.6%), RARE (t 9.1%). e->k 1.493x, a->k 0.528x.
+C1563	Terminal-to-next-HEAD cross-token routing grammar	2	B, MIDDLE, atom, terminal, HEAD, routing, cross-token, sequential, instruction-phrases, C1212, C1440, C1475, C1483, C1484, C1487	r->a 2.231x, y->k 1.597x, h->t 1.892x, l->e 1.246x, m->o 1.554x, bare neutral. TERM is dual-function: suffix-gating + HEAD routing.
+C1564	Suffix carries zero forward information to next HEAD	2	B, suffix, HEAD, cross-token, information, null, compositionality, C1003, C1510, C1412, C1422	JSD=0.0021 (smallest in phase). Suffix scope terminates at token edge. Extends C1003 to cross-token boundary.
+C1565	Paragraph header modifier divergence exceeds HEAD divergence 10x	2	B, paragraph, header, atom, modifier, HEAD, divergence, specification, executive, C1287, C1396, C1468, C1479, C1543	MOD JSD=0.085 vs HEAD JSD=0.008 (10.6x ratio). p 3.66x, f 3.90x enriched in headers; i 0.51x depleted. h-terminal 2.35x enriched.
+C1566	Line position Q3-Q4 step discontinuity	2	B, line, position, gradient, quintile, closure, step, discontinuity, specification, work-zone, C1425, C1426, C1427, C1428, C1429, C1430, C1434, C1463	Q3->Q4 HEAD JSD=0.0185 (26x Q2->Q3), TERM JSD=0.0200 (20x Q2->Q3). Q1-Q3 interior JSD<0.003. Two-step line architecture.
+C1567	Within-domain structural spine validation	2	B, MIDDLE, atom, HEAD, domain, compositional, validation, structural, T2A, C1475, C1476, C1477, C1478, C1482, C1556, C1557, C1561, C1563, C1566	16/17 T2A spine tests pass. K1 0% THERMAL hazard, A5 100% double-ii safe, O1 98.1% STAGING, O2 98.9% FLOW, X1-X4 routing confirmed, X6 25.1x Q3-Q4 jump. O3 bare-o OPERATION 42.6% (only failure, classifier tension).
+C1568	Within-domain cross-folio discriminability	2	B, MIDDLE, atom, HEAD, domain, compositional, cross-folio, discriminability, section, classification, random-forest, C1475, C1556, C1563	D5a NN +6.1pp, D5b RF +8.8pp (both >5pp threshold). Top features: o_l_frac, xd_headless_frac, t_flow_purity, e_ey_frac, routing rates. D1 76.8% section accuracy (null 52.7%).
+C1569	Section-level within-domain parameterization	2	B, MIDDLE, atom, HEAD, domain, compositional, section, parameterization, folio, within-section, C1475, C1556, C1563, C1567, C1568	D2 15/32 features significant by section. D3 0/3 within-section folio resolution. D4 ARI=-0.024. D6a 28.8% paragraph differentiation (borderline). Two-level architecture: section-shared within-domain tuning + folio-specific domain mix.
+C1570	Deployment features are section-level not folio-level discriminators	2	B, MIDDLE, atom, HEAD, domain, compositional, deployment, zone, routing, closure, headless, paragraph, section, folio, within-section, discrimination, C1463, C1464, C1466, C1486, C1563, C1567, C1568, C1569	T2b 18/19 pass. RF COMBINED 90.4% (+6.1pp). D3b 0/18 within-section FAIL across 6 feature sets (6-94 dims). D7: 52/56 deployment features ratio>0.5. Folio specificity not in deployment packaging at folio-average resolution.
+C1571	Deployment Ward clustering highest section ARI	2	B, MIDDLE, atom, HEAD, domain, compositional, deployment, clustering, Ward, ARI, section, C1567, C1568, C1569, C1570	DEPLOYMENT Ward ARI=0.615 (highest). MARGINAL=0.443 (+0.172 gap). COMBINED=0.451 (diluted). Section identity encoded more in deployment packaging than domain proportions.
+C1572	Hierarchical variance partition validates 4-layer nesting with selective layer loading	2	B, structural, hierarchy, variance, section, folio, paragraph, line, decomposition, ANOVA, template, C1570, C1571	Section z=8.0 (8/9 sig). Folio z=7.1 (9/9 sig). Paragraph z=2.2 (4/9 sig). Line selective: hazard z=4.09, opacity z=4.53. LSI section=10.28, folio=7.06, paragraph=2.22 (3/4 supported). Residual ~85%.
+C1573	Paragraph emphasis distributions recover within-section folio specificity that averaging destroyed	2	B, paragraph, distribution, folio, within-section, specificity, emphasis, EMD, C1398, C1570, domain, section	T2 C1 EMD: S z=6.21, H z=5.06, B z=2.34 (all PASS). T2 3/4 sub-tests PASS. T3 B1 variance ratio PASS (3/3 sections). ARI direct vs unsupervised = 0.287 (gradient confirmed).
+C1574	Headless ecology is folio-specific not paragraph-specific	2	B, headless, ecology, folio, paragraph, section, hierarchy, C1398	T4-B: 13/14 features VS_folio > VS_section. T4-C: 3.6% folios (FAIL, threshold 30%). hl_rate VS_section=0.192, VS_folio=0.258. Headless is folio-level infrastructure, not paragraph-subroutine dial. displaced_kt=0 provisional (pending C1494-C1497 reconciliation).
+C1575	Hierarchical trace executor produces weakly monotonic improvement across 4 layers	2	B, structural, hierarchy, trace, executor, section, folio, paragraph, line, token, monotonic, C1572, C1573, C1574	E1=-3.3635, E2=-3.2928, E3=-3.2928, E4=-3.2832. Improvement 2.39%. Wilcoxon E4 vs E1: z=-27.85, p=9.5e-171. E4>E1 in all 5 sections. All 3 ablations significant.
+C1576	Paragraph cloud operates at aggregate geometric level not per-token level	2	B, paragraph, cloud, folio, recovery, distributional, geometry, C1573	P2 cloud recovery: H=0.382, B=0.588 (2/3 PASS). E3 domain = E2 domain (kNN at any weight degrades). Paragraph specificity is shape, not per-token prior.
+C1577	Four permutation null models confirm non-trivial hierarchical structure	2	B, null, permutation, hierarchy, token, domain, terminal, routing, C1563	N1 z=14.07 (token-shuffle). N3 z=9.27 (line-shuffle). N4 z=8.77 (form-shuffle). N5 z=14.18 (terminal-shuffle). All >> thresholds.
+C1578	E4 improvement sources are line-phase domain adjustment and hazard envelope	2	B, line, phase, domain, hazard, envelope, routing, closure, ablation	E5 ablation p=3.7e-58. E6 ablation p=2.8e-3. E7 ablation p~0. Closure mask disabled (WORK_SEMI 87% dominance).
+C1579	CTS continuous closure encoding improves over categorical closure	2	B, closure, CTS, line, paragraph, Gaussian, encoding, C1434, C1440, C1566	E3 closure 0.226 > E2 closure 0.187 (+0.039). CTS vs q4_opaque_rate r=0.81. q3->q4 discontinuity p=1.19e-29. V1 FAIL: SPEC > CLOSE > WORK. V2 FAIL: z=0.29 (section-driven).
+C1580	Paragraph domain composition does NOT predict line hazard envelope	2	B, paragraph, hazard, envelope, cloud, blend, negative	E3 hazard -1.097 < E2 hazard -1.092 (blend hurts). Within-paragraph envelope std 0.563 >> between-paragraph 0.090. Paragraphs not envelope-consistent.
+C1581	Full hierarchical supervisory trace coupled to virtual apparatus yields structured plant behavior beyond section-only, budget-only, and null controls	2	B, virtual apparatus, hierarchy, trace, coupling, C1575, C1577, C1569	Full > B2 for 5/7 folios, full > N1 for 7/7 folios. Mean viability 0.9616. Mean Y_final 0.878. 3/4 null types destroyed.
+C1582	Line packet state produces statistically significant plant state differentiation across all 7 state variables	2	B, virtual apparatus, line, packet, state, C1425, C1426, C1427, C1428, C1578	7/7 state vars significant globally (KW). Strongest: C H=191.6, Y H=148.4. Per-folio median 6/7 sig.
+C1583	Terminal routing grammar does NOT produce observable punctual plant deflections at token level (negative result)	2	B, virtual apparatus, routing, terminal, negative, C1563, C1564, C1470	0/4 routing signatures directionally correct. Rates 0.45-0.50 near chance at window=5. Routing = sustained bias not punctual deflection.
+C1584	Headless folio regime effect on plant containment is directionally correct but statistically underpowered	3	B, virtual apparatus, headless, containment, underpowered, C1488, C1574, C1523	High-headless C=0.630 > low 0.589; S=0.844 > 0.747. Mann-Whitney p=1.00, p=0.48. N=3 vs 4 (underpowered).
+C1585	CTS continuous closure contributes genuine value to coupled plant behavior	2	B, virtual apparatus, CTS, closure, line, paragraph, C1579, C1434, C1440, C1566	Full > B3 (no-CTS) viability 6/7, Y_final 7/7. C-separation positive 6/7.
+C1586	N3 line-shuffle null is non-destructive: line ordering carries less coupled-plant information than token composition	2	B, virtual apparatus, null, line-shuffle, ordering, C1399, C1400, C1470, C1577	N3 3/7 folios pass vs N1 6/7, N2 6/7, N4 5/7. Line order < token composition for coupling.
+C1587	A2_SEALED_RECIRCULATION underperforms A1_BATH_REFLUX for Herbal folios	3	B, virtual apparatus, profile, Herbal, assignment, C1248, C1249, C1380	f55r viab 0.742 (A2) vs 1.000 (A1). f40v viab 0.991 (A2) vs 1.000 (A1). 2/2 Herbal A2-assigned prefer A1.
+C1605	PCV discrimination exceeds binary viability	2	B, virtual apparatus, PCV, viability, discrimination, C1581	NP1 PASS 16/20. PCV-viability r=0.391 (different constructs). Phase-shuffle null destroyed under PCV.
+C1606	S asymmetry insufficiency in burden metric	2	B, virtual apparatus, S, asymmetry, burden, SAHB	S accounts for 84.5% of SAHB even after excluding high-S events. NP7 FAIL, NP2 FAIL (1/20). Low-S burden dominates.
+C1607	QGY partial paradox inversion	2	B, virtual apparatus, QGY, yield, quality, paradox, inversion	N2 QGY 0.180 < full QGY 0.231 despite N2 Y_final 0.734 > full 0.675. NP4=13/20 (one folio short).
+C1608	Closure opportunity scarcity	2	B, virtual apparatus, closure, CTS, opportunity, scarcity, C1566, C1579	37.4% CLOSE lines > CTS 0.3. Useful closure fraction 3.2%. CTS-excursion r=-0.014 (uncorrelated).
+C1609	PCV-visible CLOSE recovery	2	B, virtual apparatus, PCV, CLOSE, recovery, B10, C1585	B10 delta under PCV=+0.020 (d=0.465) vs old viability delta=0.003. Plant mechanism works; old readout missed it.
+C1612	Unresolved excursion burden inverts SAHB	2	B, virtual apparatus, UEB, burden, SAHB, inversion, C1606	UEB restricts burden to CLOSE-phase + line-end residual. Full model burden < null burden under UEB. Axis inversion was measurement artifact.
+C1614	Packet coherence discriminates supervised traces	2	B, virtual apparatus, WCP, coherence, discrimination, C1582, C1605	WCP discriminates full from null (EP6 PASS). Phase-aware sub-scores (SPEC basin, WORK corridor, CLOSE convergence) are genuine trace properties.
+C1625	Folio-specific apparatus parameterization improves demanded-event ERM	2	B, virtual apparatus, folio-specific, F1-F5, demanded, ERM, C1569, C1574, C1380	AP1 3/4 PASS. f108v +0.007, f86v6 +0.024, f84r +0.001. f111r -0.003 (FAIL). Folio-specific tuning produces real improvement over generic apparatus.
+C1627	B10 sensitivity increases under folio-specific config	2	B, virtual apparatus, folio-specific, B10, sensitivity, CLOSE, recovery, C1609, C1612	AP3 3/4 PASS. (M1-M2b) eventive delta > (M0-M2a) for f108v, f86v6, f84r. Close-recovery channel more load-bearing when tuned to folio.
+C1628	Existing anchors survive folio-specific parameterization	2	B, virtual apparatus, folio-specific, anchor, P2, UEB, WCP, stability, C1605	AP4 PASS. P2 by reference. UEB improves 3/4. WCP drops < 0.01 per folio (F1 attractor compression, benign).
+C1629	Folio-specific parameters align with structural proxies	2	B, virtual apparatus, folio-specific, F1-F5, structural, proxy, monotone, interpretability, C1380, C1574, C1569	AP5 5/5 PASS. All F1-F5 axes preserve intended structural ordering across pilot folios. F1 (AXM occ), F2 (closure exploitability), F3 (THERMAL frac), F4 (hl_rate), F5 (SEALED_VESSEL).
 
 ---
 
@@ -2932,8 +3308,8 @@ C1246	**Mode-Differentiated Cross-Lane Pairing** (Mode A/B lines use different Q
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-02-24
-# Total: 71 fits
+# Generated: 2026-03-10
+# Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 
 ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
@@ -2945,13 +3321,17 @@ F-A-005	Scarcity-Weighted Registry Effort	F1	A	NULL	C293	in: fits_currier_a
 F-A-007	Forbidden-Zone Attraction	F1	A	NULL	C281	in: fits_currier_a
 F-A-008	Repetition as Relational Stabilizer	F1	A	INVALIDATED	(none - artifact)	in: fits_currier_a
 F-A-009	Comparability Window	F2	A	SUCCESS	C424	in: fits_currier_a
-F-B-001	LINK Operator as Sustained Monitoring Interval	F2	B	SUCCESS	C366, C609, C190	in: fits_currier_b
+F-B-001	LINK Operator as Sustained Monitoring Interval	F2	B	SUPERSEDED	C366, C609, C190 | **Superseded by:** C1174	in: fits_currier_b
 F-B-002	QO Lane as Safe Energy Pathway	F3	B	SUCCESS	C601, C574, C600	in: fits_currier_b
 F-B-003	Pre-Operational Configuration via A→AZC→B Pipeline	F2	B	SUCCESS	C473, C506, C468	in: fits_currier_b
 F-B-004	Lane Hysteresis Control Model	F2	B	SUCCESS	C643, C549, C577, C608	in: fits_currier_b
 F-B-005	PP-Lane MIDDLE Discrimination	F2	B	SUCCESS	C646, C576, C642	in: fits_currier_b
 F-B-006	Energy/Stabilization Lane Assignment	F3	B	PARTIAL	C647, C645, C601, C521	in: fits_currier_b
 F-B-007	Extensible Atom Scaling: Intensity and Duration Dimensions	F3	B	CONSISTENT	C1197, C1204, C1205, C1242, C1244	in: fits_currier_b
+F-B-008	Two-Channel Thermal Architecture	F3	B	SUCCESS	C647, C601, C1207	in: fits_currier_b
+F-B-009	Overshoot-Correct Cycling	F3	B	SUCCESS	C643, C647	in: fits_currier_b
+F-B-010	REGIME Token Profile Discrimination	F3	B	SUCCESS	C643, REGIME system	in: fits_currier_b
+F-B-012	E-Compound Cooling Taxonomy	F4	B	SUCCESS	C1197, REGIME system	in: fits_currier_b
 F-AZC-001	Placement Prediction Model	F4	AZC	NEGATIVE	C466-C467	in: fits_azc
 F-AZC-002	Zodiac Positional Grammar	F2	AZC	SUCCESS	C467	in: fits_azc
 F-AZC-005	A/C Positional Grammar Test (DECISIVE)	F2	AZC	SUCCESS	C430-C436, C467	in: fits_azc
@@ -3015,7 +3395,7 @@ F-RUP-001	Galenic Framework Directional Enhancement	F4	B	DIRECTIONAL_COHERENCE	C
 
 # Speculative Interpretation Summary
 
-**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.70
+**Status:** SPECULATIVE | **Tier:** 3-4 | **Version:** 4.73
 
 ---
 
@@ -3053,7 +3433,7 @@ This project does not attempt to translate the Voynich Manuscript. The structura
 
 A researcher who discovers musical scores without knowing the notation cannot translate notes into words, because notes are not words. But structural analysis reveals patterns that match the harmonic series: forbidden combinations correspond to dissonant intervals, positional rules match musical form. The researcher proves the documents encode music without ever hearing a note.
 
-Similarly, the Voynich Manuscript's 49 instruction classes, 17 forbidden transitions (in 5 hazard classes), kernel-centric convergence behavior, and bounded recovery architecture are structural constraints that map onto the physics of controlled distillation. The forbidden transitions correspond to physical failure modes. The convergence behavior matches thermodynamic equilibrium-seeking. The recovery architecture matches historical practice (Brunschwig's bounded reinfusion). The Galenic organizational framework (3/4 structural tests pass, Phase 376) provides the intellectual genealogy.
+Similarly, the Voynich Manuscript's 49 instruction classes, 17 forbidden transitions (in 5 hazard classes), kernel-centric convergence behavior, and bounded recovery architecture are structural constraints that map onto the physics of controlled distillation. The forbidden transitions correspond to physical failure modes. The convergence behavior matches thermodynamic equilibrium-seeking. The recovery architecture matches historical practice (Brunschwig's bounded reinfusion). The Galenic organizational framework (6/6 directional coherence at organizational level, but 0/4 at grammar level; Phase 376-384) provides the intellectual genealogy — as training background, not design principle (F-RUP-001).
 
 This framing applies to ALL interpretations below: each section explores what specific aspects of the structure might correspond to in the physical domain, given that the structural fit has already been established.
 
@@ -9133,6 +9513,815 @@ E-depth shows a **two-scale pattern**: at the category level, e-containing token
 
 **Mode A (specification) and Mode B (execution) use different pairings** (JSD z=4.60). Mode A enriches energy+specific-measurement pairs (k-ck 5.1x, ke-ey 3.7x) with MI=1.425 bits. Mode B enriches sustained+passive pairs (k-eol 6.5x, l-edy 3.3x) with MI=0.978 bits. Specification lines lock energy to targeted checks; execution lines pair routine operations with generic monitoring.
 
+### Apparatus Vocabulary Classification (C1247-C1249)
+
+REGIME encodes apparatus type via vocabulary signatures. Five apparatus profiles (DISTILLATION, SEALED_VESSEL, SUSTAINED_HEAT, PRECISION, DIRECT_FIRE) defined from Brunschwig-grounded MIDDLE glosses score each folio against apparatus-specific vocabulary.
+
+**Key structural findings:**
+
+- **aii (unseal) is the strongest single-MIDDLE REGIME discriminator**: 41x enriched in REGIME_3 vs REGIME_1. 14/20 R3 folios contain aii (70%) vs 1/32 R1 folios (3.1%). Line context shows close→unseal→open transition pattern. R3 operates as open-cycle batch processing; R1 as continuous-run.
+
+- **Distillation cycle signature**: t+eol co-occur at OR=16.27 (p=0.0001). If a program drives off volatiles, it sustains output. Sustained heat cycle: every folio with eeol also has ke (OR=inf, p=0.0003).
+
+- **DISTILLATION vs PRECISION anti-correlate** at rho=-0.666 (p<0.0001) — the strongest inter-profile axis. Folios specialize: either distillation vocabulary or precision vocabulary, not both.
+
+- **R1/R3 are single-apparatus REGIMEs** (97%/95% distillation-dominant). **R2/R4 mix apparatus types** within the same fire degree — consistent with Brunschwig's description of applying the same temperature via different apparatus. R2 splits 60% sealed vessel / 40% distillation; R4 splits three ways.
+
+- **R3 vs R1 vocabulary differentiation**: R3-enriched = aii 41x, eo "cool-open" 7.6x, od "collect" 6.9x. R1-enriched = ke "sustained heat" 3.2x, ck "direct heat" 2.7x, lk "L-compound energy" 4.3x. R3 programs include unsealing, collecting, and cooling-with-opening. R1 emphasizes sustained energy management without interruption.
+
+- **Section H (Herbal) is the most apparatus-diverse section**: all non-distillation folios in R2 and R4 are Herbal. Section B is overwhelmingly distillation (0.293 vs H 0.134). Herbal procedures reflect material-specific processing requirements.
+
+**Methodological note**: An initial top-down approach (PCA on 2587 PREFIX-MIDDLE pair vectors residualized against REGIME) found no clean structure (NOT_SUPPORTED). The bottom-up approach — defining apparatus profiles from domain knowledge and scoring folios against them — found the real signal. The lesson: apparatus is a domain-specific category that requires domain-specific feature engineering, not unsupervised discovery.
+
+---
+
+## XVI. 8-Category Operational System (Phases 452-456)
+
+**Phases:** A_CATEGORY_SCATTERSHOT (452) | AZC_CATEGORY_SCATTERSHOT (453) | CATEGORY_B_EXECUTION (454) | CATEGORY_MECHANISM_DECOMPOSITION (455) | CATEGORY_REGIME_INTEGRATION (456)
+**Constraints:** C1261-C1294 | **Date:** 2026-02-24
+
+### Core Finding
+
+91 human-glossed MIDDLEs plus ~1,144 dark-auto-assigned MIDDLEs (via atom plurality vote) partition into 8 operational categories: THERMAL, CONTAINMENT, FLOW, MONITORING, OPERATION, TRANSITION, STAGING, MARKING. This system organizes the manuscript at every level — Currier A records, AZC diagram positions, B execution grammar, paragraph structure, and macro-state dynamics. It is the strongest cross-system organizing principle discovered to date (C1250).
+
+### The 8 Categories
+
+| Category | Gloss Examples | Role |
+|----------|---------------|------|
+| THERMAL | heat, fire, cool, sustain, pulse | Energy management: heating, cooling, temperature maintenance |
+| CONTAINMENT | seal, hold, lock, bind, rigid | Physical constraint: sealing vessels, maintaining closure |
+| FLOW | transfer, gather, discharge, route, input | Material movement: transferring, collecting, dispensing |
+| MONITORING | watch, check, verify, scan, measure | Observation: temperature checks, quality verification |
+| OPERATION | work, operate, batch, pound, strip | Active processing: physical manipulation of materials |
+| TRANSITION | start, open, close, end, finish, halt | State changes: beginning/ending phases, opening/closing |
+| STAGING | frame, step, iterate, sequence, cycle | Process organization: iteration, sequencing, cycling |
+| MARKING | mark, flag, note, pause, adjust, hazard | Annotation: flagging conditions, noting adjustments |
+
+### Cross-System Organization (Phases 452-453)
+
+**Currier A (Phase 452):** Categories organize A at every tested grain. Records cluster by category (C1261, d=9.7). Paragraphs specialize: THERMAL dominates long paragraphs, MARKING dominates short ones (C1263, d=12.5). The bridge/dark pipeline split aligns with category: bridge MIDDLEs are TRANSITION-enriched, dark-pipeline MIDDLEs are MARKING-dominated (C1264, V=0.441). A sections differentiate at the atom level by category-aligned AXIS clusters (C1266).
+
+**AZC (Phase 453):** AZC zones (R, C, S, P) specialize by category (C1269, V=0.084). Bridge MIDDLEs are sorted by category within AZC zones (C1272, p=0.0003) while dark MIDDLEs are not (p=0.198) — AZC mediates the bridge sorting. AZC-exclusive vocabulary has a distinctive category profile: MARKING/THERMAL-enriched, TRANSITION-depleted (C1273, V=0.382). All AZC sections converge on A Pharma atom profiles (C1276).
+
+**The headline cross-system finding (C1274):** THERMAL category fraction predicts high B escape rate (rho=+0.780), TRANSITION fraction predicts low escape (rho=-0.598). Category composition in AZC/A directly predicts B dynamics.
+
+### B Execution Grammar (Phase 454)
+
+Phase 454 proved categories organize B's internal execution with 7/7 PASS:
+
+**Escape architecture solved:**
+- THERMAL escape is fully PREFIX-mediated (C1277): THERMAL MIDDLEs are 44.1% qo-prefixed (vs 9.5% baseline). Partial correlation collapses to rho=-0.081 after controlling for qo. Chain: THERMAL MIDDLE -> qo-PREFIX selection -> zero-hazard QO lane (C601) -> escape.
+- TRANSITION anti-escape is PREFIX-independent (C1281): partial=-0.586 survives ch/sh control. Mechanism initially unknown.
+
+**Category adds information beyond PREFIX (C1278):** Category reduces instruction class entropy by 24.7% (1.207 bits). PREFIX reduces it by 53.1% (2.589 bits). Together they explain 71.7% (3.496 bits). Category adds 18.6% beyond what PREFIX already provides — they are complementary organizational axes.
+
+**Mode differentiation (C1279):** Mode A lines (terminal-suffix dominant) are THERMAL-enriched (28.9%), injecting escape-capable vocabulary. Mode B lines (bare-suffix dominant) are TRANSITION-enriched (17.4%), maintaining escape restriction. The suffix mode system and category system, derived independently, converge on the same operational axis.
+
+**Hazard concentration (C1280):** Hazard MIDDLEs concentrate in FLOW (50.4%) and CONTAINMENT (11.5%). THERMAL is essentially hazard-immune (2.6%). V=0.560 — the strongest category effect measured. In process terms: transferring material and maintaining seals are dangerous; heating is safe (consistent with distillation physics where the fire is controlled but the transfer/seal failure modes are catastrophic).
+
+### Category Mechanism Decomposition (Phase 455)
+
+Phase 455 decomposed three open mechanisms with 6/8 PASS:
+
+**TRANSITION anti-escape mechanism solved (C1285):** The expert hypothesized EN->EN self-loops. **Rejected.** TRANSITION sources actually have *lower* EN successor rates (0.403 vs 0.476 baseline) and *lower* EN->EN self-loop rates (0.474 vs 0.517). Instead, TRANSITION redirects successors toward AUXILIARY (1.24x enriched) and FREQUENT_OPERATOR (1.13x enriched) — roles that lack escape capacity because qo-prefix tokens concentrate in ENERGY_OPERATOR. Each TRANSITION token independently redirects its successor (no sequential clustering, T2 FAIL). The anti-escape property is baked into the vocabulary, not into sequential patterns.
+
+**Asymmetric escape architecture:** THERMAL enables escape via PREFIX routing (qo). TRANSITION prevents escape via role redirection (AUX/FQ). Same category system, opposite mechanisms at different layers — PREFIX for enabling, role for suppressing.
+
+**Category transition grammar (C1286):** The 8x8 category-to-category bigram matrix is massively structured (chi2=526, V=0.060, p~10^-81). Key features:
+
+| Pattern | Residual | Process Interpretation |
+|---------|----------|----------------------|
+| MARKING -> MARKING | +10.4 | Annotation persists in theme |
+| FLOW -> TRANSITION | +6.7 | Transfer leads to closing/finalizing |
+| OPERATION -> THERMAL | +6.5 | Work leads to heating |
+| THERMAL -> THERMAL | +6.0 | Sustained heating persists |
+| FLOW -> FLOW | +4.6 | Sustained transfer persists |
+| FLOW -> THERMAL | -7.3 | No direct flow-to-heat (strongest avoidance) |
+| OPERATION -> TRANSITION | -4.7 | No direct work-to-close |
+| THERMAL -> MARKING | -4.5 | No direct heat-to-mark |
+| THERMAL -> TRANSITION | -3.4 | No direct heat-to-close |
+
+The system follows process control logic: you heat (and keep heating), then transfer (and keep transferring), then close. You don't jump from heating to closing or from flow to heating. The pathways are also directional: FLOW->TRANSITION (779) vs TRANSITION->FLOW (525).
+
+**Forbidden transitions are cross-category (T3 FAIL):** 15/17 forbidden transitions cross category boundaries (only 2 within-category, both MARKING->MARKING). MARKING is the dominant target/source in forbidden pairs (10/17 involve MARKING). Forbidden transitions operate below category level — they enforce specific MIDDLE-level constraints, not category boundaries.
+
+**Paragraph architecture (C1287-C1290):**
+
+- **Headers are MARKING-enriched (C1287):** Paragraph headers (first token) are 2.44x enriched for MARKING and 1.45x for STAGING, while THERMAL is suppressed (0.46x). This contrasts with line entries, which are THERMAL-enriched (C1283). Three-level specification hierarchy: paragraph header = marking/staging specification -> line entry = thermal specification -> line body = flow/transition execution.
+
+- **Within-folio paragraph coherence (C1288):** Paragraphs within the same folio are more category-similar than cross-folio paragraphs (within JSD=0.109 vs null=0.122, z=-4.92). The folio (= program) imposes a category theme on all its paragraphs. Paragraph independence (C891-C893) is structural (grammar, kernel access) but not thematic (category composition).
+
+- **Category predicts AXM dwell (C1289):** THERMAL fraction predicts high AXM self-transition (rho=+0.520), TRANSITION fraction predicts low AXM self-transition (rho=-0.519). Both survive Bonferroni. AXM is the dominant macro-state where 33/49 classes reside. THERMAL vocabulary keeps the system in its main operational loop; TRANSITION vocabulary moves it through state changes. This partially resolves the C1169 27% AXM residual variance.
+
+- **Paragraph mode = category emphasis (C1290):** Mode A paragraphs are THERMAL-enriched (28.8% vs 21.0%), Mode B are TRANSITION-enriched (16.7% vs 11.5%). Chi2=300.4, V=0.114. Confirms C1279 at paragraph granularity.
+
+### Relationship to Galenic Framework
+
+The 8-category system is NOT an extension of the Galenic framework (F-RUP-001). The Galenic framework uses 4 qualities (hot/cold/wet/dry) x 4 degrees. Phase 384 showed that Galenic predictions fail at the grammar level (0/4 tests pass) — the Galenic framework is the author's training background, not the system's design principle.
+
+The 8-category system is derived from Brunschwig process glosses and validated structurally. It succeeds where Galenic fails: organizing the grammar's sequential flow, paragraph structure, macro-state dynamics, and escape architecture. The categories are operational (what you DO in distillation) rather than qualitative (what properties materials HAVE). The Voynich author encoded process control, not natural philosophy.
+
+### Interpretation (Tier 3)
+
+In distillation context, the 8-category transition grammar describes a process control language where:
+
+1. **The folio sets an operational theme.** A THERMAL-heavy folio is a heating-focused program. A TRANSITION-heavy folio manages state changes. All paragraphs within the folio follow this theme.
+
+2. **Each paragraph begins with marking/staging annotation** (what to note, what to adjust) before executing its operational content. This matches recipe structure: "Note: check the seal. Then heat at sustained temperature, transfer the distillate, close the vessel."
+
+3. **Sequential operations follow preferred pathways.** You heat and keep heating. You transfer and then close. You don't jump from heating to closing (THERMAL->TRANSITION depleted). You don't jump from flow to heating (FLOW->THERMAL depleted). The grammar enforces physically reasonable process sequences.
+
+4. **The escape/anti-escape architecture maps to process control authority.** THERMAL operations (via qo-PREFIX) can exit the main operational loop — because changing temperature is a fundamental control action. TRANSITION operations suppress exit — because when you're in a close/finalize sequence, you need to complete it before the system can change state. This is feedback control: heating gives you options, closing locks you in until done.
+
+5. **AXM dwell = sustained processing.** THERMAL vocabulary keeps the system in its dominant macro-state (the main processing loop). TRANSITION vocabulary breaks out of it. High-THERMAL folios are sustained processing programs; high-TRANSITION folios manage state changes and transitions between processing phases.
+
+### REGIME-Category Relationship (Phase 456)
+
+Phase 456 tested whether categories integrate with the 4-REGIME classification (C179/C494, GMM k=4 on 15 folio features). The association is strong (chi2=526, V=0.106) but **kernel-mediated**: after residualizing on k/h/e atom composition, the signal drops to non-significant (Fisher p=0.061). THERMAL's kernel R2=0.779 means ~78% of its folio-level variance is explained by k/e atom prevalence alone.
+
+**Key findings:**
+- **REGIME_1** (thermal-control-intensive, 32 folios) = THERMAL-dominant (29.7%)
+- **REGIME_2** (output-intensive, 15 folios) = FLOW-dominant (28.1%)
+- **REGIME_4** (precision-constrained, 15 folios) = OPERATION/TRANSITION-dominant
+- Categories survive section control but not kernel residualization -- kernel atoms are the primary pathway (C1291-C1292)
+- Categories add genuine resolution beyond role profiles (Fisher p=7.5e-8) -- not a relabeling of existing class/role structure (C1293)
+- **Categories do NOT extend C1169 AXM model** (C1294) -- the raw correlations (C1289, rho=+/-0.52) are fully absorbed by existing predictors. The 27% AXM residual is validated as irreducible design freedom.
+
+**Interpretation:** REGIMEs and categories are not independently designed classification systems. Both express the same underlying kernel chemistry at different scales. REGIMEs are the macro view (this folio is a heating program because its k-ratio is high). Categories are the micro view (this token does heating work because its MIDDLE contains k-atoms). They converge because the author's system is coherent: the program type determines the vocabulary.
+
+---
+
+## XVII. Paragraph Termination Mechanism (Phase 457)
+
+**Phase:** PARAGRAPH_TERMINATION_TRIGGER (457)
+**Constraints:** C1295-C1296 | **Date:** 2026-02-24
+
+### Core Finding
+
+Paragraph termination is **memoryless**: no line-level feature predicts when a paragraph ends. An exhaustive 8-test battery (Bonferroni p<0.00625) tested every plausible trigger mechanism — thermal threshold, thermal budget, thermal step, B-track signature, suffix mode gate, category shutdown sequence, folio-level prediction extension — and ALL failed (C1295). The sole PASS: tail product types (C1232's 3 clusters) have distinct category profiles (C1296, chi2=139.1), meaning the *form* of shutdown varies by operational theme but the *decision* to stop shows no precursor.
+
+### What Was Tested and Failed
+
+| Hypothesis | Test | Result |
+|------------|------|--------|
+| Thermal threshold (high e_frac triggers stop) | T1: e_frac last vs interior, length-controlled | FAIL (Fisher p=0.236, raw signal = length confound) |
+| B-track terminal cooling | T2: terminal B-line vs interior B-line e_frac | FAIL (Fisher p=0.178) |
+| Thermal step into final line | T3: delta_e_frac terminal vs interior pairs | FAIL (perm p=0.822) |
+| Thermal budget (hotter = shorter) | T4: mean e_frac vs body length, within-folio | FAIL (rho=-0.007, p=0.930) |
+| Mode gate (A or B mode triggers stop) | T5: Mode A fraction last 2 vs earlier | FAIL (chi2=1.19, p=0.276) |
+| Category shutdown sequence | T6: 8-category profile last 2 vs earlier | FAIL (perm p=0.400) |
+| Folio-level thermal/category prediction | T7: extended OLS vs section+REGIME baseline | FAIL (F p=0.365, LOO decreases) |
+
+### Interpretation (Tier 3)
+
+The paragraph body is genuinely homogeneous until -am fires the termination signal (C1237, 5.19x enriched). This extends C963's body homogeneity finding from role fractions to thermal, modal, and categorical grain. The T1 result is particularly instructive: the apparent thermal enrichment in last lines is entirely a line-length confound (last lines are shorter, short lines have different e_frac distributions).
+
+In distillation terms: a paragraph is a batch operation that runs for a predetermined duration. The operator does not look at the material's state to decide when to stop — the duration was decided when the program was written (at the folio level, C1239). The -am suffix is the "batch complete" stamp, not a "conditions met" sensor. This is consistent with a reference manual rather than a real-time control system: the manual specifies HOW LONG to run each operation, not WHEN to stop based on observations.
+
+The T8 finding (tail type category divergence) adds nuance: while the timing is memoryless, the vocabulary used in the final lines reflects the paragraph's operational theme. A THERMAL-heavy paragraph ends with heating vocabulary (Cluster 2, THERMAL 33.5%). A TRANSITION-heavy paragraph ends with state-change vocabulary (Cluster 0, TRANSITION 20.1%). The shutdown vocabulary is thematically appropriate even though its placement is not state-triggered.
+
+---
+
+## XVIII. PREFIX Category Anatomy (Phase 458)
+
+**Phase:** PREFIX_CATEGORY_ANATOMY (458)
+**Constraints:** C1297-C1302 | **Date:** 2026-02-24
+
+### Core Finding
+
+Individual PREFIXes predict operational categories with structured selectivity (V=0.311, chi2=15,598). This is not tautological with base-group membership: PREFIX adds 0.058 bits (2.1%) of category information beyond base group (C1301). The association is concentrated in specific pairs, particularly t-base (ct vs ot, V=0.891) and o-base (qo vs others, V=0.217).
+
+### Channel Architecture
+
+Two parallel channels organize PREFIX-category flow, each with a sister pair plus a categorically pure third member:
+
+| Channel | Sister Pair | Third Member | Third's Purity |
+|---------|-------------|-------------|----------------|
+| EN | ch/sh (OPERATION) | qo | 59% THERMAL |
+| AX | ok/ot (FLOW) | ct | 90% MONITORING |
+
+The third members are the most categorically pure PREFIXes in the system. qo injects thermal content; ct provides monitoring operations. The asymmetry is striking: qo is common in B (4,069 tokens, 17.6%) while ct is rare (60 tokens, 0.26%), reflecting ct's primary A-system role (C282, 0.14x B frequency).
+
+### Sister Pair Divergence in B
+
+ch/sh are category-identical in Currier A (C1268, V=0.021) but diverge in B (C1299, V=0.121, p=9.4e-16). This survives section control (Fisher p=3.4e-10) and position control. The mechanism is MIDDLE-level: ch selects a broader vocabulary including minority MIDDLEs (ot MIDDLE 91.9% ch, ckh 76.4% ch), while sh concentrates on high-frequency MIDDLEs in OPERATION (edy at 21.2%). B's richer vocabulary reveals selectivity differences invisible in A's more uniform token set.
+
+ok/ot likewise diverge (C1298, V=0.105): ok is THERMAL-enriched (24.7% vs 20.2%) and MONITORING-enriched (2.52x), while ot is OPERATION-enriched (17.3% vs 12.5%).
+
+### BARE as Anti-Thermal Anchor
+
+BARE tokens (no PREFIX) are THERMAL-depleted at 4.1% (vs 27.5% prefixed), establishing the PREFIX slot as the primary mechanism for thermal injection (C1302). BARE tokens concentrate in FLOW (29.4%) and STAGING (20.7%) -- infrastructure and preparation operations that do not carry thermal parameters.
+
+### Interpretation (Tier 3)
+
+The PREFIX is not merely a passive label or a redundant echo of base-group identity. It selects the operational channel through which a token contributes to the program. In distillation terms:
+
+- **qo-prefixed tokens** are primarily heating/cooling instructions (THERMAL)
+- **ct-prefixed tokens** are temperature/flow monitoring checkpoints (MONITORING)
+- **a-base prefixed tokens** (da, sa, ka, ta) are setup/preparation instructions (STAGING)
+- **h-base prefixed tokens** (ch, sh, etc.) are the primary execution vocabulary (OPERATION)
+- **BARE tokens** are routing and flow infrastructure
+
+The channel symmetry (EN and AX each having a sister pair + pure third) suggests the PREFIX system is organized around two complementary operational channels, each providing general-purpose execution via the sister pair and specialized single-purpose injection via the third member. The qo/ct asymmetry (thermal injection is common, monitoring is rare) is consistent with a system that spends most of its time executing thermal operations and only occasionally pauses to check monitoring conditions.
+
+---
+
+## XIX. Sister Category Mechanism (Phase 459)
+
+**Phase:** SISTER_CATEGORY_MECHANISM (459)
+**Constraints:** C1303-C1307 | **Date:** 2026-02-24
+
+### Core Finding
+
+Sister pair category divergence (ch/sh and ok/ot) is position-independent and mechanistically driven by vocabulary selection, not vocabulary transformation. Position explains almost none (ch/sh) or actually masks (ok/ot) the true category signal. The MIDDLE's category is intrinsic -- it does not change based on which sister PREFIX selects it.
+
+### Position Independence
+
+ch/sh category divergence retains 98.3% of its V after position control (C1303). The category profiles are remarkably stable across EARLY/MID/LATE zones (V=0.094 to 0.102). C929's positional axis (ch later, sh earlier) is genuinely orthogonal to the category axis (ch selects different MIDDLEs than sh).
+
+ok/ot shows 124.1% V retention (C1304) -- position was actually *suppressing* the true divergence. C1184's opposite positional polarity (ok early, ot late) was a confounder masking the category signal. Within EARLY positions alone, the divergence is V=0.207, nearly double the raw V=0.114.
+
+### Mechanism: Vocabulary Selection
+
+0 of 33 qualifying MIDDLEs shift dominant category between ch and sh (C1305). When the same MIDDLE (e.g., "e", "dy", "ck") appears after ch vs after sh, it keeps the same category (THERMAL, CONTAINMENT, MARKING respectively). The sister pair achieves its category divergence entirely by selecting DIFFERENT MIDDLEs at different rates, not by changing what any individual MIDDLE means.
+
+This is the resolution: PREFIX is a vocabulary selector (which words to deploy) not a vocabulary transformer (what words mean). In process control terms: ch and sh send different instructions (different MIDDLEs), but any given instruction has the same meaning regardless of which sister dispatched it.
+
+### Cross-Lane Category Routing
+
+When ch and sh tokens transition to QO-lane tokens, the QO token's category differs (C1306, V=0.122, p=2.34e-5). ch routes more STAGING cargo (20.6% vs 12.9%) to the QO lane, while sh routes more THERMAL cargo (53.6% vs 45.0%). Sister identity shapes not just the token's own category but the categorical composition of the downstream execution channel.
+
+### Two-Atom PREFIX Instructions (Tier 3)
+
+The results support reading PREFIXes as two-atom instructions with a [VERB] + [TARGET] format:
+
+| PREFIX | Verb | Target | Dominant Category | Reading |
+|--------|------|--------|-------------------|---------|
+| ok | o (set/execute) | k (heat) | STAGING/THERMAL | "set heat parameters" |
+| ot | o (set/execute) | t (transfer) | MARKING/OPERATION | "set transfer routing" |
+| ch | c (adjust/calibrate) | h (watch) | OPERATION | "adjust monitoring" |
+| sh | s (sequence/step) | h (watch) | THERMAL/MARKING | "sequence monitoring" |
+| qo | q (?) | o (operate) | THERMAL (59%) | "thermal operation" |
+| ct | c (adjust) | t (transfer) | MONITORING (90%) | "calibrate transfer" |
+
+The verb distinction maps to control system operations: you SET a temperature (ok), you ADJUST a thermometer (ch). Different verbs on different subsystems. The base atom (k, t, h) determines WHICH subsystem the instruction targets; the lead atom determines WHAT action to take on that subsystem.
+
+### Additivity
+
+No three-way interaction exists between sister identity, category, and position (C1307). The sister category effect is additive with position: knowing the sister identity gives the same category information regardless of where in the line you are. This rules out models where sister pairs modulate category differently at different line positions (e.g., "ch selects THERMAL early but FLOW late").
+
+## XX. Cross-Mode Category Coupling (Phase 460)
+
+**Phase:** CROSS_MODE_CATEGORY_COUPLING (460)
+**Constraints:** C1308-C1312 | **Date:** 2026-02-25
+
+### Core Finding
+
+Mode A and Mode B parallel tracks are coordinated by shared paragraph context and positional synchronization, not by sequential dependency. The two tracks read from the same "key signature" (paragraph category profile) and are synchronized by position within the line, but play their parts independently — like two instruments reading from the same measure of sheet music.
+
+### Paragraph Category Coherence
+
+Both modes within a paragraph share a common category "key" (C1308). Within-paragraph A-B divergence (JSD=0.141) is significantly less than cross-paragraph (JSD=0.170, p=7.4e-6). A THERMAL-heavy paragraph has THERMAL content in both its Mode A and Mode B lines. The paragraph sets the operational domain; both voices contribute to it.
+
+### Mode Specialization
+
+Mode A is the specification/parameter voice: THERMAL (32.5% vs 20.7%) and MONITORING (2.6x enriched). Mode B is the execution/process voice: TRANSITION (1.64x), STAGING (1.37x), FLOW (1.22x). Together they cover 6.1 of 8 categories vs 4.8 alone (C1309). This maps directly onto suffix mode characterization: A (terminal-heavy = endpoint specification) encodes WHAT to achieve thermally; B (bare-heavy = continuation) encodes HOW to execute flow and transitions.
+
+### Positional Synchronization
+
+At the same relative position within adjacent A/B lines, categories align 1.27x above chance (perm p=0.001, C1310). NMI is consistent across all 5 position bins (0.042-0.063), peaking at MID-LATE. THERMAL->THERMAL is the strongest pairing (7.6%). The two tracks are synchronized by position — working on the same operational domain at the same point in the line.
+
+### B-to-A Thermal Feedback
+
+B's thermal state feeds back to the next A line through a narrow channel (C1311): ke_ratio -> MARKING (rho=-0.198, p=0.0006) and ke_ratio -> THERMAL (rho=+0.176, p=0.002). Hot B lines suppress marking content and boost thermal content in the next A line. The feedback is directional — A->B shows no signal (p>0.3). In control system terms: the execution voice reports back, and the specification voice adjusts.
+
+### No Sequential Coupling
+
+All sequential coupling tests are negative (C1312): zig-zag coupling is weaker than random (Z=-3.39), A's category doesn't predict B's (p=0.146), no cross-line transition grammar, 0 cross-line forbidden transitions, and all token-interleaving ratios increase entropy. Same-mode pairs show stronger coupling than cross-mode pairs (AA r=0.463 > BA r=0.328). Lines are operationally self-contained.
+
+### BA Handoff Pattern
+
+The BA boundary shows a characteristic handoff: TRANSITION->THERMAL at 12.0%, dominating all other transitions. B lines exit through TRANSITION, A lines re-enter with THERMAL specification. This makes physical sense: an execution phase completes a state change, then the specification voice sets new thermal parameters for the next cycle.
+
+### Cross-Mode Sheet Music Principle (Tier 3 Synthesis)
+
+The Phase 460 findings collectively establish a named structural principle: Mode A and Mode B lines read from the same paragraph-level "key signature" (C1308), are synchronized by relative position within the line (C1310), and play complementary parts — A carries specification/THERMAL, B carries execution/TRANSITION (C1309). But they compose their individual contributions independently (C1312). B's thermal state feeds back to A's category selection (C1311) as the only detectable cross-mode signal. Like two staves of sheet music, the voices are in the same key, coordinated by measure, and playing different roles — but each part is written as a self-contained line.
+
+## XXI. Distillation Terminology Mapping (Phase 461)
+
+**Phase:** DISTILLATION_TERMINOLOGY_MAPPING (461)
+**Constraints:** C1313-C1316 | **Fits:** F-B-008 through F-B-012 | **Date:** 2026-02-25
+**Tier:** 3-4 (intentionally interpretive, extending GLOSSING.md)
+
+### Purpose
+
+Systematic test of whether distillation physics maps directly to the manuscript's structural patterns. 10 tests with negative controls, producing the authoritative Tier 3-4 reference mapping that survives context loss. 9/10 tests pass.
+
+### Two-Channel Thermal Architecture (C1313, F-B-008)
+
+qo and ok access completely non-overlapping thermal atom pools:
+
+| PREFIX | k-fraction | e-fraction | Role |
+|--------|-----------|-----------|------|
+| qo | **0.510** | 0.102 | Heat source (k-dominant) |
+| ok | 0.001 | **0.282** | Vessel temperature (e-dominant) |
+| sa (control) | 0.005 | 0.003 | Neutral (no thermal bias) |
+
+In distillation terms: qo manages the fire/furnace (adding energy), ok manages the vessel/still (cooling/stabilization). Two physically independent thermal channels. Brunschwig confirms: fire managed via air holes (lines 2038-2055) vs vessel tested by finger (lines 1880-1893).
+
+### Overshoot-Correct Cycling (C1314, F-B-009)
+
+Within lines, qo-k tokens transition to ok-e tokens 43% above chance (103 observed vs 72 null, p=0.0). The reverse (ok-e to qo-k) is 55% above chance (112 vs 72, p=0.0). This is consistent with heat overshoot followed by vessel correction — the standard problem in distillation where heat always overshoots and must be corrected.
+
+### Control Flow Loop
+
+Within-line bigram analysis reveals a preferred PREFIX sequencing:
+
+```
+sh (watch) -> qo (stoke fire) -> ok (check vessel temp) -> ot (check output) -> sh (watch)
+   1.98x          1.08x              1.18x
+```
+
+- **sh -> qo (1.98x):** Passive monitoring is the primary trigger for heat action
+- **qo -> ok (1.08x):** Heat action triggers vessel thermal check
+- **ok -> ot (1.18x):** Vessel check leads to operations check (coarse then fine)
+- **ok/ot -> qo (0.84/0.88x):** Neither verification leads back to heat directly
+
+**What triggers heat:** 36.7% of sh tokens precede qo. sh-before-qo is enriched in edy (batch, 1.32x OPERATION) and depleted in ar (close, 0.29x FLOW) and ol (continue, 0.58x STAGING). The monitor watches the ongoing batch and triggers heat when it needs energy — not after flow endpoints or staging transitions.
+
+**Loop scope:** Cross-line, not intra-line. Full sh->qo->ok->ot within a single line: only 3.3% of sh->qo starts (48 of 2,417 lines). Each line executes one or two steps, not a complete cycle. Forward/reverse directionality: 6.0x.
+
+### ok vs ot: Two-Stage Verification (C1316)
+
+ok and ot are e-sisters (both e-dominant: 0.282 and 0.258) but serve sequential roles:
+
+| Property | ok (coarse) | ot (fine) |
+|----------|------------|----------|
+| THERMAL | 24.7% | 20.2% |
+| OPERATION | 12.5% | 17.3% |
+| Top MIDDLE | aiin (settling) | edy (batching) |
+| Enriched MIDDLEs | ee (extended cool) | od (collect), or (portion) |
+
+ok checks **thermal state** (is the temperature right?), ot checks **operational state** (is the process running correctly?). The operator would not fine-tune flow rate if temperature was not stable yet.
+
+### REGIME Token Profile Discrimination (C1315, F-B-010)
+
+The 4 REGIMEs produce statistically different B token profiles (6/7 metrics significant at p<0.01). Currier A tokens show 0/7 — discrimination is entirely B-specific. This confirms REGIMEs capture real B-internal variation.
+
+### Luting-CONTAINMENT Association (F-B-011)
+
+CONTAINMENT category tokens show REGIME discrimination (dy-MIDDLE: p=0.015, d=-0.753). However, the direction was reversed from prediction: REGIME_1 (balneum) shows MORE sealing than REGIME_3 (direct fire). Physical explanation: balneum vessels immersed in water baths require more vessel-sealing, distinct from joint-luting.
+
+### E-Compound Cooling Taxonomy (F-B-012)
+
+Different e-compound MIDDLEs distribute non-randomly across REGIMEs (chi-sq p<0.01):
+- **eeol** (extended cool + continue): Enriched in REGIME_2 (sustained operation, overnight standing)
+- **eo** (cool + work): Enriched in REGIME_2 (monitored cooling)
+- **e** (basic cool): More uniform distribution
+
+### MIDPROCESS Action Mapping
+
+13 modern distillation MIDPROCESS actions each map to distinguishable PREFIX + category patterns. All 13 significant at Bonferroni-corrected p < 0.005. Mean pairwise cosine distance = 0.73 (random mapping: 0.003). The real mapping dramatically outperforms random assignment (p < 0.001).
+
+### PREFIX-to-Distillation Domain Table (Tier 3-4)
+
+| PREFIX | Domain | Physical Referent | Evidence |
+|--------|--------|-------------------|----------|
+| qo | Heat source | Fire/furnace management | C1313, C1314 |
+| ok | Vessel temperature | Thermal verification (coarse) | C1313, C1316 |
+| ot | Vessel operations | Operational verification (fine) | C1316 |
+| ch | Active testing | Discrete physical tests | C929, T7 |
+| sh | Passive monitoring | Continuous observation | C929, T7, T9 |
+| ol | Continuation | Maintaining during active process | T8 |
+| da | Setup/infrastructure | Apparatus preparation | T4 |
+| sa | Scaffold | Supporting infrastructure | T1 neg ctrl |
+
+### REGIME-to-Fire-Degree Mapping (Tier 3)
+
+| REGIME | Proposed Method | Characteristic | Evidence |
+|--------|----------------|----------------|----------|
+| REGIME_1 | Balneum marie (water bath) | Gentle, e-rich, more sealing, highest alternation rate | T4, T5, T6, T10 |
+| REGIME_2 | Sustained operation | High iteration, overnight cooling | T4, T10 |
+| REGIME_3 | Ash/sand (per ignem) | Direct fire, rapid gathering | T4, T5, T7 |
+| REGIME_4 | Precision operation | h-rich monitoring, tight tolerance | T4, T7 |
+
+### Test Summary
+
+| Test | Topic | Result | p-value |
+|------|-------|--------|---------|
+| T1 | Two-channel thermal model | PASS | 0.0 |
+| T2 | Overshoot-correct cycling | PASS | 0.0 |
+| T3 | MIDPROCESS action mapping | PASS | all 13 sig |
+| T4 | REGIME token profiles | PASS | 6/7 p<0.01 |
+| T5 | Luting discrimination | PASS | dy p=0.015 |
+| T6 | Cooling mode differentiation | PASS | chi-sq p<0.01 |
+| T7 | Monitoring PREFIX x REGIME | PASS | 3/4 predictions |
+| T8 | O-PREFIX differentiation | PASS | chi-sq p<0.001 |
+| T9 | Thermal shock prevention | PASS | THERMAL enriched |
+| T10 | Bang-bang rate by REGIME | FAIL | ordering reversed |
+
+### What This Means
+
+The Voynich B text's structural patterns — PREFIX selection, atom composition, within-line sequencing, REGIME variation — map systematically onto the physics of controlled distillation. This is not translation; it is structural alignment at the level of operational roles. The manuscript's control programs are consistent with managing heat input, monitoring vessel state, verifying output, and cycling through these operations with precision appropriate to the fire degree. Token coverage: 99.5% of B tokens receive a mapping.
+
+## XXII. Parallel Operator Hypothesis (Session Analysis, 2026-02-25)
+
+### Context
+
+Following Phase 461's control loop characterization (sh→qo→ok→ot), analysis of paragraph-level prefix profiles revealed that paragraphs within a folio have distinct operational emphasis — some are heat-dominant (qo-heavy), others watch-heavy (sh), others verification-focused (ot), others low-heat or test-only. This raised the question: are paragraphs parallel task assignments for multiple operators rather than sequential steps in a single procedure?
+
+### Findings (Statistical)
+
+**1. Shared vs Divergent MIDDLE Category Profiles (chi-squared = 2604, p < 0.001, 73 folios, 2721 paragraph pairs)**
+
+MIDDLEs shared between paragraphs on the same folio have a significantly different category profile from MIDDLEs unique to individual paragraphs:
+
+| Category | Shared | Divergent | Ratio | Interpretation |
+|----------|--------|-----------|-------|----------------|
+| THERMAL | 23.7% | 18.5% | 1.28x | Shared: batch identity |
+| TRANSITION | 18.8% | 13.3% | 1.41x | Shared: state changes |
+| OPERATION | 13.8% | 11.4% | 1.21x | Shared: operation type |
+| MONITORING | 0.6% | 3.0% | 0.20x | Divergent: task-specific |
+| MARKING | 3.8% | 15.1% | 0.25x | Divergent: task-specific |
+| CONTAINMENT | 3.8% | 5.3% | 0.71x | Divergent: vessel handling |
+
+Paragraphs share what batch they're processing (THERMAL, TRANSITION identity) but diverge on what each operator does (MONITORING station, MARKING checkpoints, CONTAINMENT responsibility).
+
+PREFIX profile of shared vs divergent MIDDLEs shows `ot` (verify) enriched in shared vocabulary (1.21x) while `ch` (test) and `da` (setup) are enriched in divergent vocabulary — verification is common, testing and setup are task-specific.
+
+**2. No Ordinal Complexity Gradient (74 folios with 3+ paragraphs)**
+
+If paragraphs were a training curriculum (simple→complex), first paragraphs should be simplest and last paragraphs most complex. Tested: completeness (control elements present) shows no ordinal trend. P1 mean completeness = 5.11/6, last paragraph = 4.97/6. Largest paragraph position: 31% first, 41% middle, 28% last (no preferred position). Rules out strict sequential training model.
+
+**3. "Master" Paragraph is Not a Combiner (59 folios with 4+ paragraphs)**
+
+The most complete paragraph (highest control element count, then largest) covers 55.6% of each specialist's MIDDLEs vs 36.3% inter-specialist coverage (1.53x lift). However, size-controlled test: master is 2.83x bigger than average specialist, so coverage/size = 0.54x. Master coverage is fully explained by size alone — it is not actively combining specialist vocabularies. 36.9% of master's MIDDLEs are unique to master.
+
+**4. Paragraph Count Distribution**
+
+82 B folios range from 1 to 20 paragraphs (mean 7.1). High-paragraph folios (≥8, n=32) average 3.8 lines/paragraph; low-paragraph folios (≤3, n=25) average 8.1 lines/paragraph. REGIME_3 concentrates in high-paragraph group (13 vs 3). REGIME_4 concentrates in low-paragraph group (9 vs 1). REGIME_1 appears in both.
+
+### Interpretation (Tier 3-4)
+
+The data is consistent with a **parallel operator model** where paragraphs on a folio represent task assignments for different workers at a shared apparatus:
+
+- Each operator has their own instructions (self-contained paragraphs, C845)
+- All operators work the same batch (shared THERMAL/TRANSITION MIDDLEs)
+- Each operator has distinct responsibilities (divergent MONITORING/MARKING/CONTAINMENT)
+- The "biggest" paragraph is the busiest station, not a master compilation
+- No fixed ordering (no ordinal gradient) — task assignments don't follow page order
+
+This is consistent with historical documentation of 14th-15th century distillation workshops, which show labor division: furnace tenders, condenser watchers, quality checkers, material handlers, and a master overseeing (Brunschwig woodcuts, 1500; Italian apothecary frescoes, 15th c.). The emergence of the professional *Wasserbrenner* (water burner/distiller) in 14th century German cities, with Frankfurt regulating the profession from 1361, confirms commercial-scale multi-person operations in the Voynich's time period.
+
+High-paragraph folios (many short paragraphs) may represent high-volume products requiring more workers/stations; low-paragraph folios (few long paragraphs) may represent simpler procedures handled by fewer people. The coexistence of both formats within the same REGIME supports this — same process type, different operational scale.
+
+### Caveats
+
+- The parallel operator interpretation is Tier 4 speculation consistent with the statistical findings
+- Alternative: paragraphs are parallel *variants* of the same recipe (different configurations), not parallel *workers*
+- Alternative: high-paragraph folios are training/reference documents, low-paragraph folios are production documents
+- The statistical findings (shared THERMAL, divergent MONITORING/MARKING) are Tier 2 data; only the "operator" interpretation is speculative
+- C1121 (domain irrecoverability) still applies — we cannot identify what product was being made
+
+## XXIII. Block Architecture: Gallows-Delimited Processing Stages (Phases 462-465)
+
+**Phases:** TEXT_BLOCK_PARALLEL_OPERATORS (462) | BLOCK_GALLOWS_ORDERING (463) | BLOCK_EXECUTION_CYCLE (464) | SECTION_S_BLOCK_ARCHITECTURE (465)
+**Constraints:** C1317-C1329 | **Date:** 2026-02-25 to 2026-02-26
+
+### Context
+
+Previous work (Phases 457-461, Section XXII) established the paragraph as the primary operational unit — self-contained, gallows-initiated, independently executable. But paragraphs cluster into larger units on each folio. Phases 462-465 discovered and characterized a previously unrecognized structural layer: the **block**.
+
+### What Blocks Are (Phase 462, C1317)
+
+A block is a contiguous group of paragraphs on a folio. Blocks are detected by visual text-block boundaries in the manuscript layout. Currier B has 357 blocks across 82 folios (mean 4.3 blocks/folio, range 1-18).
+
+| Section | Blocks/folio | Paras/block | Tokens/block |
+|---------|-------------|-------------|--------------|
+| B | 3.1 | 3.16 | 190 |
+| H | 5.3 | 2.24 | 186 |
+| C | 1.5 | 3.33 | 229 |
+| T | 2.4 | 2.52 | 126 |
+| **S** | **12.4** | **1.17** | **49** |
+
+Section S is the anomaly: 3x more blocks than any other section, almost all single-paragraph, a quarter the size. This motivated the Section S deep dive (Phase 465).
+
+### Gallows Within-Block Ordering (Phase 463, C1321-C1322)
+
+Within multi-paragraph blocks, gallows follow a structured cycle: **k/f/p → t**. First paragraphs are enriched in k, f, and p gallows (initiation types); later paragraphs shift toward t (continuation). The transition matrix is non-random (chi-sq=64.88, p<0.001) with k→t at 55%, f→t at 45%, p→t at 35%.
+
+Gallows type is independent of operational category (C1322, V=0.045). A paragraph's gallows marks its role in the block sequence (initiating vs continuing), not what operational domain it covers. The gallows cycle is a **structural clock** running orthogonally to content.
+
+### Cross-Block Restart Without Shutdown (Phase 464, C1323-C1324)
+
+At block boundaries, the gallows cycle restarts: block-initial paragraphs are 72.3% k/f/p, block-final paragraphs are 39.8% t (chi-sq=14.82, p=0.002). The new block re-initiates a fresh k/f/p→t cycle.
+
+But there is no termination signal at block-final position. Block-final paragraphs show:
+- -am suffix **depleted** 0.36x (opposite of enrichment)
+- Identical suffix mode distribution to block-internal (58.9% = 58.9%)
+- 0/8 category shifts between block-final and block-internal
+
+Blocks don't "close" — they just stop, and the next block starts fresh. In process terms: a processing stage runs until completed, then a new stage begins with a fresh gallows initiation. There is no explicit handoff protocol.
+
+### Folio = REGIME Container, Block = Processing Stage (Phase 464, C1325-C1326)
+
+Within-folio between-block kernel distance (0.056) is significantly less than between-folio distance (0.065, perm p<0.001). All blocks on a folio share the same thermal mode. The folio sets the REGIME; blocks inherit it.
+
+Adjacent blocks are more category-similar (JSD 0.071) than within-block paragraph pairs (JSD 0.136, z=-8.98). Blocks are not category-independent — they share operational themes with their neighbors while their internal paragraphs diversify.
+
+### PREFIX Complementarity (Phase 462, C1318)
+
+Adjacent blocks on the same folio have complementary PREFIX profiles. Block-initial paragraphs are enriched in prefixes that block-final paragraphs lack, and vice versa. This means consecutive blocks don't duplicate each other's operational focus — they do different but complementary jobs.
+
+### Internal Diversity (Phase 462, C1320)
+
+Within each block, paragraphs maximize categorical diversity. Each paragraph within a block covers a different operational domain. Combined with PREFIX complementarity between blocks: the system maximizes coverage at every level. Within a block, paragraphs diversify. Between blocks, operational emphasis shifts.
+
+### Section S: Ordered Monitoring Checkpoints (Phase 465, C1327-C1329)
+
+Section S's 12 single-paragraph blocks per folio initially suggested "parallel monitoring stations" — exchangeable snapshots of vessel status under the same fire regime. This was tested and **falsified**.
+
+**Ordinal progression (C1327):** Later blocks on an S folio shift from OPERATION-focused (rho=-0.169, p<0.001) to THERMAL/TRANSITION-focused (rho=+0.123/+0.160, p<0.003). Early blocks describe active setup/manipulation; later blocks describe thermal monitoring and state changes.
+
+**p-gallows dominance (C1328):** S blocks are 59.8% p-gallows, with p→p self-continuation at 69%. The k/f/p→t cycle collapses when blocks have only one paragraph — everything is "continuation." There's no initiation→continuation transition because each block is already mid-process.
+
+**Categorical diversity (C1329):** S blocks within a folio are MORE categorically diverse than in other sections (JSD 0.069 vs 0.052, z=7.20). Each block does a different job using different vocabulary. They are vocabulary-independent (Jaccard 0.327 < 0.438) AND categorically diverse — different words doing different things.
+
+### Interpretation: Three-Level Operational Hierarchy (Tier 3)
+
+Phases 462-465 establish a three-level organizational hierarchy for Currier B:
+
+| Level | Unit | Sets | Inherits | Internal Structure |
+|-------|------|------|----------|-------------------|
+| **Folio** | Program | REGIME (thermal mode) | — | Blocks inherit REGIME |
+| **Block** | Processing stage | Operational emphasis (PREFIX) | REGIME from folio | Paragraphs diversify within |
+| **Paragraph** | Operator task | Specific instruction sequence | Emphasis from block | Gallows-initiated, self-contained |
+
+In distillation terms:
+- The **folio** specifies what kind of fire and apparatus setup you're running (water bath, direct fire, etc.)
+- Each **block** is a processing stage within that setup — first you prepare, then you heat, then you monitor, then you collect. Adjacent blocks do complementary jobs.
+- Each **paragraph** within a block is one operator's task assignment for that stage — the sealer, the temperature watcher, the material handler.
+
+The gallows cycle (k/f/p→t) is the block's structural clock: it initiates a new processing stage and progresses through it. At block boundaries, the clock restarts. No shutdown signal is needed because the next stage simply begins.
+
+Section S represents a different operational deployment: instead of multi-paragraph stages with internal task division, S folios lay out a sequence of single-task monitoring checkpoints. Each checkpoint has one paragraph doing one job. The sequence progresses from active manipulation to thermal monitoring as the process matures — consistent with a procedure where the operator walks through a checklist, each item a different aspect of an ongoing process.
+
+### Relationship to Section XXII (Parallel Operator Hypothesis)
+
+Section XXII proposed that paragraphs on a folio are parallel task assignments for different workers. Phases 462-465 refine this: paragraphs within a **block** are parallel task assignments. Blocks themselves are **sequential stages** — adjacent blocks do complementary, ordered work. The "parallel stations" metaphor applies within blocks (multiple workers at one stage) but not between blocks (stages are ordered).
+
+### Caveats
+
+- The three-level hierarchy is a Tier 3 interpretation. The structural facts (gallows restart, REGIME homogeneity, PREFIX complementarity, ordinal progression) are Tier 2.
+- Block boundaries are detected from visual layout, not from text-internal signals. If block segmentation is unreliable, within-block paragraph relationships may be artifacts.
+- Section S ordinal progression is statistically significant (3/12 metrics at p<0.01) but explains modest variance (rho ~0.12-0.17). Most variation is not ordinal.
+- The "no shutdown signal" finding (C1324) could mean blocks truly lack termination, or that the termination signal uses a channel we haven't tested (e.g., visual markers, spacing).
+
+---
+
+## XXIV. Block Vocabulary Drift and Multiplexing (Phases 466-467)
+
+**Phases:** BLOCK_VOCABULARY_DRIFT (466) | MULTIPLEXED_PROCEDURE_TEST (467)
+**Constraints:** C1330-C1333 | **Date:** 2026-02-26
+
+### Context
+
+Section XXIII established the three-level hierarchy (folio→block→paragraph). Two natural follow-up questions: (1) Do blocks within a folio show directional drift consistent with iterative refinement? (2) Does block 0 serve a special "setup" role in a multiplexed procedure?
+
+### Iterative Refinement: Falsified (Phase 466, C1331)
+
+The hypothesis that consecutive blocks re-run a procedure with progressive refinement was tested with 4 metrics: kernel k→e drift, vocabulary narrowing, Mode A decrease, and FL stage progression. **Only vocabulary narrowing passed** — 3/4 directional signals are absent:
+
+| Test | Metric | Result | Verdict |
+|------|--------|--------|---------|
+| Kernel drift (k→e) | Spearman rho | +0.026, p=0.600 | **FAIL** |
+| Vocabulary narrowing | Spearman rho | **-0.248, p<0.001** | **PASS** |
+| Mode A decrease | Spearman rho | -0.038, p=0.199 | **FAIL** |
+| FL stage progression | Spearman rho | +0.021, p=0.435 | **FAIL** |
+
+The vocabulary narrowing is universal: later blocks use fewer distinct MIDDLEs (C1330). Coverage drops from 1.0 to ~0.40 by block 3 across 39/56 eligible folios. But this is not accompanied by any directional shift in operational parameters. Blocks don't converge toward a target — they simply use fewer words.
+
+### Block 0 Is a Marking Context, Not a Setup Block (Phase 467, C1332-C1333)
+
+The multiplexed procedure model predicted block 0 would be a "setup block" enriched in STAGING/CONTAINMENT vocabulary (shared apparatus preparation). This was **falsified**:
+
+- Block-0-unique MIDDLEs are **MARKING 2.48x** and **MONITORING 1.57x** enriched
+- STAGING+CONTAINMENT are flat (0.92x)
+- OPERATION 0.65x and TRANSITION 0.64x depleted
+
+Block 0's special role is providing **marking/annotation context** — what to watch for, what to flag — not documenting apparatus setup. Later blocks focus on operational execution without repeating these annotations.
+
+The kernel (k/h/e distribution) is the most stable inter-block dimension (distance 0.027 < category JSD 0.052 < PREFIX JSD 0.145), confirming that blocks share the same thermal mode while varying in other dimensions (C1333).
+
+### Interpretation: Vocabulary Narrowing as Shared Context (Tier 3)
+
+In distillation terms: a folio describes a procedure with multiple processing stages (blocks). The first block documents the full operational context including annotations and monitoring notes. Later blocks can skip this shared preamble — the operator already knows what to watch for. This explains vocabulary narrowing without directional drift: later blocks aren't refining toward a target, they're just assuming prior context.
+
+The "multiplexed" model (one fire, multiple vessels) is partially supported by REGIME homogeneity (C1325) and vocabulary narrowing (C1330), but the specific "setup block" prediction failed. The correct model is not shared apparatus setup but shared annotation context.
+
+### Caveats
+
+- Section-specific signals exist (B and C show partial drift on some metrics) but no universal mechanism operates across all sections
+- Section S shows near-zero effects on all drift tests, consistent with its independent-checkpoint architecture
+
+---
+
+## XXV. A Paragraph Category Architecture (Phase 468)
+
+**Phase:** A_PARAGRAPH_CATEGORY_ARCHITECTURE (468)
+**Constraints:** C1334-C1337 | **Date:** 2026-02-26
+
+### Context
+
+Phase 452's scattershot confirmed the 8-category system works in A (C1261: record coherence d=9.7, C1263: paragraph specialization d=12.5). Phase 468 goes deeper: not just "paragraphs specialize" but HOW they specialize, what types exist, and whether there's internal or folio-level organization.
+
+### A Registry Has 5 Paragraph Types (C1334-C1335)
+
+A paragraphs form 5 distinct category-based types, defined by their dominant operational category:
+
+| Type | Count | % | Section bias |
+|------|-------|---|-------------|
+| STAGING | 105 | 43.6% | H-dominant (88/105) |
+| FLOW | 48 | 19.9% | T-dominant (7/48) |
+| TRANSITION | 42 | 17.4% | H-dominant (34/42) |
+| THERMAL | 33 | 13.7% | P-dominant (21/33) |
+| OPERATION | 12 | 5.0% | H-dominant (11/12) |
+
+Three categories — CONTAINMENT, MONITORING, MARKING — never or essentially never dominate a paragraph. They appear as supporting vocabulary within paragraphs but never organize one. This creates a **two-tier architecture**: 5 dominating categories that structure paragraphs, and 3 supporting categories that contribute within but don't lead.
+
+Within-type JSD (0.074) < between-type JSD (0.108), MW z=-45.67, surviving all three sections. This taxonomy is independent of and complementary to C850's 5 structural types (short, standard, long, only, metadata — based on size, not category).
+
+The section specialization is striking: **H catalogs procedures** (STAGING 48%), **P catalogs thermal specifications** (THERMAL 45%), **T catalogs flow operations** (FLOW 64%).
+
+### MARKING Is Front-Loaded: A Cross-System Pattern (C1336)
+
+MARKING tokens (mark, flag, note, pause, diagram, hazard, danger, link, adjust) concentrate toward the beginning of A paragraphs: mean normalized position 0.429 (vs 0.5 expected), deviation 0.071, p<0.001. First-token MARKING rate is 15.5% vs base 7.5% (2.07x enrichment). All other categories are within 0.03 of center — position-free for 7 of 8 categories.
+
+This is now a confirmed cross-system pattern:
+
+| System | Location | MARKING Signal |
+|--------|----------|---------------|
+| **Currier A** | Paragraph beginnings (C1336) | Position 0.429, 2.07x first-token |
+| **Currier B** | Paragraph headers (C1287) | Header enrichment |
+| **Currier B** | Block 0 unique vocabulary (C1332) | 2.48x enrichment |
+
+Across both systems, the documentation practice is the same: **tell them what to watch for before telling them what to do.**
+
+### No Folio-Level Paragraph Sequencing (C1337)
+
+A paragraph types are NOT organized within folios. Consecutive paragraphs are no more categorically similar than random pairs (JSD 0.104 vs 0.096, p=0.850). The first paragraph has no distinct category profile (JSD=0.004 from rest).
+
+This confirms C240 (NON_SEQUENTIAL_CATEGORICAL_REGISTRY) extends to paragraph category organization. The contrast with B is sharp: B blocks ARE sequenced (C1326 adjacent similarity) and block 0 IS special (C1332 marking enrichment). A paragraphs within a folio are a catalog — unordered, independently accessible.
+
+### Interpretation: A as the Reference Manual (Tier 3)
+
+The A registry is organized like a reference manual for an operational practice:
+
+- **STAGING paragraphs** (43.6%) = procedural sequences — step-by-step instructions, iteration protocols, continuation rules. This is the operational backbone of the catalog.
+- **FLOW paragraphs** (19.9%) = transfer and discharge operations — what moves where, when to gather or release.
+- **TRANSITION paragraphs** (17.4%) = start/stop/endpoint specifications — when to begin, when a stage is complete.
+- **THERMAL paragraphs** (13.7%) = heat management specifications — temperatures, durations, fire types.
+- **OPERATION paragraphs** (5.0%) = specific work instructions — physical manipulations, precise handling.
+
+Section H (herbal) is overwhelmingly procedural (STAGING), consistent with recipes or protocols for preparing botanical materials. Section P (pharmaceutical) is overwhelmingly thermal, consistent with heat-intensive preparation (distillation, sublimation). Section T focuses on flow operations.
+
+The MARKING front-loading means each catalog entry begins with annotations: what hazards to watch for, what to flag, what adjustments might be needed. Only after the cautionary context does the operational content follow. This matches historical practice: medieval recipe manuscripts often begin entries with warnings or notes before the instructions proper.
+
+### Caveats
+
+- Category assignments depend on the Phase 446 gloss→category mapping — systematic bias in the mapping would affect all findings
+- The C171 semantic ceiling means we cannot confirm that "STAGING-dominant" paragraphs actually describe procedural sequences — the category labels are structural metaphors, not translations
+- Section T has only 11 paragraphs; FLOW dominance (64%) is based on small n
+
+---
+
+## XXVI. Suffix Mode as Emergent Property (Phase 469)
+
+**Phase:** SUFFIX_MODE_ASSIGNMENT (469)
+**Constraints:** C1338-C1341 | **Date:** 2026-02-26
+
+### Context
+
+The alternating suffix modes (C1229: Mode A = terminal-heavy/specification, Mode B = bare-heavy/continuation) are a universal B grammar property. They form coupled parallel tracks (C1258) with B→A thermal feedback (C1311). The opener MIDDLE selects mode (C1256, V=0.30). But what fundamentally determines whether a line is Mode A or Mode B? Two competing models:
+
+1. **Identity model**: Each MIDDLE has a preferred suffix; mode emerges from which tokens happen to be on the line.
+2. **Context model**: The line is assigned a mode, and tokens receive suffixes accordingly.
+
+### MIDDLE Identity Determines Suffix (C1338)
+
+The identity model wins decisively. MIDDLE identity carries **11.57x more mutual information** about suffix category than line mode:
+
+- I(MIDDLE; suffix_cat) = **0.697 bits**
+- I(line_mode; suffix_cat) = 0.060 bits
+
+60% of frequent MIDDLEs (70 with 20+ occurrences) are suffix-locked — they carry the same suffix category >80% of the time regardless of context. The population splits:
+
+| Band | Count | % |
+|------|-------|---|
+| Bare-locked (>80% bare) | 26 | 37.1% |
+| Terminal-locked (>80% terminal) | 16 | 22.9% |
+| Moderate (60-80%) | 12 | 17.1% |
+| Low selectivity (<60%) | 16 | 22.9% |
+
+The high-frequency backbone of the B grammar — edy (n=1545), ey (n=727), eey (n=558) — is intrinsically bare. The k-family MIDDLEs — eck (n=78), ect (n=43), kc (n=24) — are intrinsically terminal. These are MIDDLE properties, not line properties.
+
+### MIDDLEs Are Mode-Flexible (C1339)
+
+Despite having strong suffix preferences, MIDDLEs are NOT locked to modes. Only 7.7% of frequent MIDDLEs appear >80% in one mode. The same MIDDLE freely appears on both Mode A and Mode B lines.
+
+The category→mode lean is consistent with C1279/C1309 but weak: MONITORING MIDDLEs lean Mode A (0.586), TRANSITION lean Mode B (0.328). Notably, THERMAL MIDDLEs lean Mode B (0.406) even though Mode A lines are THERMAL-enriched (C1279: 1.45x). The paradox resolves: THERMAL MIDDLEs carry terminal suffixes more often than average — when they do, they boost Mode A classification; when they appear bare, they blend into Mode B. The enrichment is about suffix behavior, not token selection.
+
+### Suffix Stable Across Modes (C1340)
+
+When the same MIDDLE appears in Mode A and Mode B lines, its suffix distribution barely changes (median cross-mode JSD = 0.020). Only 12.1% of dual-mode MIDDLEs show significant suffix shift (p<0.01). A small but real contextual modulation exists (mean JSD 0.035 vs null 0.026, perm p=0.003), but the dominant pattern is stability.
+
+### Mode Is ~80% Emergent (C1341)
+
+If each token is assigned its most common suffix (the "modal suffix" — the suffix this MIDDLE usually carries), the resulting predicted mode matches actual mode with **80.0% accuracy** (baseline 59.7%, lift 1.34x). Mode A is especially predictable: 89.4% recall.
+
+The ~20% accuracy gap represents genuine contextual modulation: some MIDDLEs (the 23% "low selectivity" group) have flexible suffixes that respond to line-level or paragraph-level context. This minority contextual channel likely drives the cross-mode coupling (C1258) and thermal feedback (C1311).
+
+### Interpretation: Mode as Compositional Emergence (Tier 3)
+
+The generative mechanism for suffix modes is now clear:
+
+1. A B body line is assembled from MIDDLEs (drawn from the paragraph's vocabulary pool)
+2. Each MIDDLE brings its intrinsic suffix preference: edy → always bare, eck → always terminal, od → usually bare but sometimes terminal
+3. The aggregate suffix profile of the line determines mode classification: if enough terminal-preferring MIDDLEs accumulate, the line is Mode A; if bare-preferring MIDDLEs dominate, Mode B
+4. The opener MIDDLE (C1256) seeds the profile — not by imposing mode, but because its own suffix preference influences whether subsequent tokens reinforce or dilute that tendency
+
+In distillation terms: Mode A lines ("specification") are lines that happen to contain MIDDLEs requiring explicit parameter-setting suffixes — measurements, energy settings, tight tolerances. Mode B lines ("continuation") contain MIDDLEs that need no such specification — they describe ongoing processes, equilibrium states, steady conditions. The distinction between "set a parameter" and "maintain a state" is intrinsic to the vocabulary, not imposed by a line-level grammar.
+
+This resolves three previously unexplained facts:
+- **C1259**: Mode proportion is flat across body position (rho=-0.027) — because the vocabulary pool doesn't change position
+- **C1233**: Mode alternation has near-random entropy (97.8%) — because mode is a consequence of vocabulary sampling, not a deterministic sequence
+- **C1267**: Mode distinction doesn't organize A records — because mode is a B-execution phenomenon that emerges from how B tokens are suffixed, not from which MIDDLEs are selected
+
+### Caveats
+
+- The 80% accuracy of the identity model means 20% of mode assignment involves something beyond token identity — likely paragraph-level cycling or adjacent-token interaction effects
+- The suffix sets and centroids (C1231) are defined from the corpus itself, so the "mode" construct is inherently circular at some level — mode is defined by suffixes, and we're testing what determines suffixes
+- Low-selectivity MIDDLEs (23%) are the locus of contextual modulation but their exact mechanism is uncharacterized
+
+
+---
+
+
+## XXVII. Historical Genre Placement (Phase 552)
+
+### Core Finding
+
+> **The VMS does not belong to any existing medieval technical document genre. It occupies a unique position in document-design space at the intersection of non-linguistic notation, operational specificity, and formal grammar -- properties that no surveyed genre shares simultaneously.**
+
+### Genre Comparison
+
+Eight medieval genres were evaluated against the VMS structural profile across 7 assessment dimensions (notation type, audience, safety encoding, material reference, structural complexity, compositional principle, operational specificity):
+
+| Rank | Genre | Score | Key Matches | Key Gaps |
+|------|-------|-------|-------------|----------|
+| 1 | Laboratory notebooks | 2.5/7 | Expert audience, apparatus-specific | Natural language, single register, no safety architecture |
+| 2 | Tally/accounting systems | 2.0/7 | Non-linguistic, externalized reference | Quantity-only, one-dimensional |
+| 3 | Distillation manuals | 1.5/7 | Same apparatus domain | Pedagogical, natural language |
+| 3 | Pharmacopeias | 1.5/7 | Expert audience | Names substances with weights |
+| 3 | Pattern/model books | 1.5/7 | Expert, non-sequential | Visual not textual |
+| 6 | Receptaria | 1.0/7 | Independent recipe units | Natural language throughout |
+| 7 | Alchemical treatises | 0.5/7 | Operational knowledge (distant) | Allegorical, literary |
+| 8 | Kunstbucher | 0.0/7 | None | Pedagogical, prose, sequential |
+
+### The Genre Gap
+
+Three VMS features have NO precedent in any surveyed genre:
+1. **Structural safety architecture** (C109) -- no medieval document encodes safety through forbidden state transitions
+2. **Multi-register architecture** (C1499) -- no medieval document uses four coordinated functional registers
+3. **Formal operational grammar** (C121, C124) -- no medieval document reduces operations to a finite instruction class set with universal coverage
+
+The fundamental gap is between **DESCRIPTION** (all existing genres use natural language to describe procedures) and **EXECUTION** (the VMS uses formal notation to specify control states). This gap directly explains the decipherment failure: the VMS was never natural language (C132).
+
+### Proposed Classification
+
+> **OPERATIONAL CONTROL CODEX:** A purpose-built, non-linguistic operational notation system encoding parameterized control programs for a specific apparatus class, designed for expert practitioners, with structural safety enforcement and multi-register architecture.
+
+### Why the Genre Is Rare
+
+The proposed genre's rarity follows from structural properties:
+- **Proprietary notation** cannot be read without training; when the workshop closes, readability dies with the practitioners
+- **Enormous engineering investment** justified only for high-value, large-scale operations
+- **Publication killed the genre** -- Brunschwig (1500) made the domain knowledge available in natural language, destroying the competitive advantage of proprietary notation
+- **Minimal copies** -- unlike widely-copied recipe collections, operational codices would exist in one or a few copies per workshop
+
+### Cross-References
+
+| Topic | Evidence |
+|-------|----------|
+| Language/cipher falsification | C130, C132, C207 |
+| Four-register architecture | C1499 |
+| Instruction grammar | C121, C124 |
+| Safety architecture | C109, C783, C997 |
+| Brunschwig alignment | F-BRU-001 through F-BRU-034 |
+| Expert audience | C197 |
+| Paragraph non-sequentiality | C1399, C1400 |
+| Full genre analysis | `phases/HISTORICAL_GENRE_PLACEMENT/GENRE_ANALYSIS.md` |
+
 
 ---
 
@@ -9144,8 +10333,8 @@ E-depth shows a **two-scale pattern**: at the category level, e-containing token
 meta:
   name: "Currier A Structural Contract"
   acronym: "CASC"
-  version: "2.0"
-  date: "2026-02-14"
+  version: "2.2"
+  date: "2026-03-04"
   status: "ACTIVE"
   derived_from: "Tier-2 constraints only"
   governance: |
@@ -9168,16 +10357,20 @@ guarantees:
     provenance: "C233"
 
   - id: "POSITION_FREE"
-    statement: "No positional grammar within lines"
-    provenance: "C234"
+    statement: "No token-to-token positional grammar within lines (but HEAD-type positional tendencies exist: o-HEAD leads, headless trails)"
+    provenance: "C234, C1395"
 
   - id: "NON_SEQUENTIAL"
     statement: "No generative grammar exists"
     provenance: "C225, C230, C231, C240"
 
   - id: "FLAT_REGISTRY"
-    statement: "Not hierarchical"
-    provenance: "C236"
+    statement: "Not hierarchical between tokens (no sequential grammar); tokens are internally structured via HEAD+MOD*+TERM"
+    provenance: "C236, C1395"
+
+  - id: "MIDDLE_INSTRUCTION_ENCODING"
+    statement: "A MIDDLEs follow the same HEAD+MOD*+TERM instruction encoding as B (modifier ordering Fisher p=0.90, pair-lock 84.2%)"
+    provenance: "C1393, C1394, C1395"
 
 # ============================================================
 record_types:
@@ -9218,7 +10411,8 @@ morphology:
     function: "Control-flow participation / functional type marker"
     mutual_exclusion: true
     semantic_meaning: false  # Markers, not categories
-    provenance: "C235, C466-C467"
+    category_orthogonal: true  # C1268: ch/sh context categories identical (JSD=0.0002, p=0.480)
+    provenance: "C235, C466-C467, C1268"
 
   sister:
     pairs:
@@ -9239,6 +10433,36 @@ morphology:
     essentiality: "Primary discriminator (402 unique distinctions)"
     entropy: "6.70 bits (65.6% of maximum)"
     incompatibility_rate: "95.7% of pairs are illegal"  # C475
+
+    # MIDDLE internal encoding structure (C1393, C1394, C1395)
+    internal_encoding:
+      architecture: "HEAD + MOD* + TERM (same as B)"
+      statement: |
+        MIDDLEs are not opaque identifiers — they decompose into HEAD (domain marker),
+        zero or more MOD atoms (parametrization), and TERM (exit/terminal). A-exclusive
+        MIDDLEs follow the same slot grammar as B (modifier ordering Fisher p=0.90,
+        pair-lock 84.2% agreement, atom distribution V=0.114).
+      a_exclusive_count: 579
+      modifier_ordering_agreement: "61.5% (A) vs 62.5% (B), Fisher p=0.90"
+      pair_lock_agreement: "84.2% (16/19 atoms)"
+      atom_distribution_divergence: "V=0.114 (small)"
+      clean_decomposition_rate: "8.6% (A) vs 20.3% (B) — lower in A due to o in medial positions"
+      verdict: "SHARED_GRAMMAR — encoding is manuscript-wide"
+      terminal_divergence:  # C1395 T5
+        statement: "A and B use the same encoding with different functional emphasis"
+        a_enriched:
+          l_terminal: "1.84x enriched (state-describing)"
+          o_frames: "2.5-2.8x enriched (arrangement)"
+        a_depleted:
+          dy_terminal: "0.1% in A vs 14.4% in B (144x B-enriched)"
+        b_enriched:
+          dy_terminal: "14.4% (action-sealing)"
+          execution_frames: "edy, aiin, ar, am (B-only)"
+        a_exclusive_frames: 2  # k+n, k+t (both k-initial)
+        b_only_frames: 17
+        interpretation: "A = state-describing terminals, B = action-performing terminals"
+        provenance: "C1395 T5"
+      provenance: "C1393, C1394, C1395 T1, C1395 T5"
     two_track_structure:
       # REGENERATED 2026-01-24: Atomic-suffix parser (voynich.py)
       shared_with_b:
@@ -9352,10 +10576,44 @@ morphology:
             strongest_output: ["-ry (0.20x = 5x OUTPUT bias)"]
             provenance: "C839"
 
-          provenance: "C831, C832, C833, C835, C836, C837, C838, C839"
+          extension_category_coupling:  # C1262
+            statement: "RI extension characters predict the operational category of the PP base"
+            chi_squared: 165.2
+            cramers_v: 0.221
+            p_value: 0.001
+            n_decomposed: 486
+            top_associations:
+              h: "MARKING (50%)"
+              k: "OPERATION (42%)"
+              o: "MONITORING (26%)"
+              e: "THERMAL (24%)"
+            interpretation: "Extensions are operationally coupled, not arbitrary identity markers"
+            provenance: "C1262"
+
+          provenance: "C831, C832, C833, C835, C836, C837, C838, C839, C1262"
 
       provenance: "C498, C498.a, C498.b, C498.c, C498.d, C513-NOTE-B, C528, C831-C839"
       revision_date: "2026-01-29"
+
+    # Operational category organization (C1261, C1265)
+    category_organization:
+      statement: "PP MIDDLEs within records and paragraphs cluster by operational category"
+      categories: ["THERMAL", "CONTAINMENT", "FLOW", "MONITORING", "OPERATION", "TRANSITION", "STAGING", "MARKING"]
+      record_coherence:  # C1261
+        obs_entropy: 1.810
+        null_entropy: 1.886
+        cohen_d: 9.7
+        p_value: "<0.001"
+        n_records: 1539
+      atom_coherence:  # C1265
+        statement: "Atom-profile coherence within records is INDEPENDENT of category"
+        obs_cosine: 0.272
+        null_cosine: 0.238
+        cohen_d: 11.6
+        same_category_residual: 0.291  # atom coherence persists after category control
+        interpretation: "AXIS clusters and categories are complementary organizational axes"
+      category_coverage: "99.8% of PP tokens assigned to one of 8 categories"
+      provenance: "C1261, C1265"
 
     # Gallows patterns (C529-C530)
     gallows:
@@ -9485,6 +10743,56 @@ line_structure:
     provenance: "C422"
 
 # ============================================================
+# NOTE ON "FLAT" STRUCTURE:
+# A records are flat BETWEEN tokens — no sequential grammar (C240, transition validity 2.1%).
+# But individual tokens are internally structured via HEAD+MOD*+TERM (C1393/C1394/C1395).
+# The "flat registry" guarantee (C236) applies to inter-token ordering, not intra-token encoding.
+
+record_internal_grammar:
+  # Within-record positional grammar discovered in C1395 T3 and T7 (P10)
+  # NOTE: This is token-TYPE positional grammar (HEAD-type → position), NOT sequential grammar.
+  # C240 (no sequential grammar) remains valid — there is no token-to-token transition rule.
+
+  positional_structure:
+    statement: "Records exhibit internal positional grammar by HEAD-type"
+    o_head:
+      position: "leads"
+      first_position_rate: "37.5%"
+      mean_normalized_position: 0.439
+    l_terminal:
+      position: "medial"
+      mean_normalized_position: 0.487
+      highest_medial_fraction: 0.513
+    headless:
+      position: "trails"
+      last_position_rate: "55.5%"
+      mean_normalized_position: 0.563
+    m_terminal:
+      position: "most final-biased"
+      mean_normalized_position: 0.779
+    all_p_values: "≈0"
+    provenance: "C1395 T3, T7 (P10)"
+
+  domain_coherence:
+    statement: "Records are domain-coherent beyond chance"
+    z_score: -17.4
+    entropy_reduction: "7.7%"
+    a_vs_b: "A records MORE coherent than B lines (7.7% vs 5.2%)"
+    typical_heads_per_record: "3+ (mixed but coherent)"
+    all_same_head_records: "2.4%"
+    provenance: "C1395 T3"
+
+  within_folio_compatibility:  # C1395 T7 (P8)
+    statement: "Within-folio PP MIDDLE Jaccard exceeds between-folio"
+    jaccard_ratio: "1.22x"
+    z_score: "+20.9"
+    section_p_compatibility: 0.134  # Section P highest
+    interpretation: "Folio is a designed compatibility unit"
+    provenance: "C1395 T7 (P8)"
+
+  provenance: "C1395 T3, C1395 T7"
+
+# ============================================================
 paragraph_structure:
   # For comprehensive paragraph-as-unit model, see PSC (paragraph.psc.yaml)
   # PSC owns: definition (C827), independence model, A-B correspondence, stability
@@ -9558,9 +10866,19 @@ paragraph_structure:
         extends: "C476 coverage optimality"
         provenance: "C1041"
 
+      category_specialization:  # C1263
+        statement: "Paragraphs specialize by operational category (entropy below null)"
+        obs_entropy: 2.533
+        null_entropy: 2.623
+        cohen_d: 12.5
+        p_value: "<0.001"
+        n_paragraphs: 242
+        interpretation: "Paragraphs are category-themed, not just cluster-selective"
+        provenance: "C1263"
+
       ordering_not_compositional: true  # H4 FAIL (p=0.223)
       linkers_not_compositional: true  # H7 FAIL (p=0.151)
-      provenance: "C1039, C1040, C1041"
+      provenance: "C1039, C1040, C1041, C1263"
 
   ab_relationship:  # C846
     model: "Pool-based, not address-based"
@@ -9697,8 +11015,17 @@ participation:
           bridge_disjoint: "0 shared MIDDLEs with bridge set (C1139)"
           atom_substrate: "Built from bridge atoms (86% of atom types, C1141)"
           bridge_anticorrelation: "Folio-level dark-pipeline and bridge token rates anti-correlate (r=-0.865, within-section r=-0.82 to -0.88); complementary distribution across the A->B pipeline (C1146)"
+          category_divergence:  # C1264
+            statement: "Bridge and dark pipeline MIDDLEs have divergent category profiles"
+            cramers_v: 0.441
+            p_value: 0.001
+            bridge_enriched: "TRANSITION (20% vs 2%), CONTAINMENT (8% vs 1%), MONITORING (7% vs 2%)"
+            dark_enriched: "MARKING (36% vs 11%), THERMAL (19% vs 12%)"
+            length_controlled: true  # survives short (p=0.0002) and medium (p=0.001) bins
+            interpretation: "Pipeline channel is category-structured -- bridges carry state-change vocab, dark carries annotation vocab"
+            provenance: "C1264"
           note: "B-side behavioral characterization (C1134 frequency modulation, C1137 HT substrate, C1138 distinct grammar, C1147 interior enrichment, C1148 hyper-modulation) lives in BCSC"
-          provenance: "C1135, C1136, C1139, C1140, C1141, C1146"
+          provenance: "C1135, C1136, C1139, C1140, C1141, C1146, C1264"
 
     provenance: "C299, C384, C384.a, C502.a, C824, C825, C826, C1013, C1014, C1016, C1135, C1136, C1139, C1140, C1141, C1146"
 
@@ -9730,7 +11057,17 @@ positional:
     suppression: "2.42x lower overlap at boundaries"
     cross_section_overlap: "9.7% Jaccard"
     hard_discontinuity: true
-    provenance: "C260, C421"
+    atom_level_differentiation:  # C1266
+      statement: "Sections differ at atom level despite MIDDLE-level uniformity (C946 cosine 0.997)"
+      significant_axes: 5  # of 7 AXIS clusters
+      profiles:
+        H: "CLOSURE/MONITORING-heavy (closure 0.129, monitoring 0.111)"
+        P: "STABILITY/ENERGY-heavy (stability 0.198, energy 0.175)"
+        T: "ITERATION/ENERGY-heavy (iteration 0.336, energy 0.183)"
+      universal_axes: ["ITERATION (p=0.069)", "STRUCTURAL (p=0.276)"]
+      interpretation: "Atom decomposition breaks C946 barrier -- sections were always specialized at sub-MIDDLE resolution"
+      provenance: "C1266"
+    provenance: "C260, C421, C1266"
 
   control_operator_boundary_bias:
     boundary_proximity_p: 0.0099
@@ -9752,8 +11089,8 @@ disallowed:
     reason: "Magnitude has no downstream effect"
     status: "FALSIFIED"
 
-  - interpretation: "A has sequential grammar"
-    reason: "Transition validity is 2.1%"
+  - interpretation: "A has sequential grammar (token-to-token)"
+    reason: "Transition validity is 2.1%. No token-to-token transition rules exist. (Note: HEAD-type positional tendencies DO exist per C1395 — this is type-level bias, not sequential grammar.)"
     status: "FALSIFIED"
 
   - interpretation: "Prefixes are semantic categories"
@@ -9776,6 +11113,16 @@ disallowed:
     reason: "A is maintained, not produced"
     status: "FALSIFIED"
 
+  - interpretation: "B mode A/B distinction organizes A records"
+    reason: "Mode affinity shows no within-record clustering (p=0.204, d=0.85)"
+    status: "FALSIFIED"
+    provenance: "C1267"
+
+  - interpretation: "Prefix family (ch/sh) selects operational category context"
+    reason: "Identical category distributions (JSD=0.0002, V=0.021, p=0.480)"
+    status: "FALSIFIED"
+    provenance: "C1268"
+
 # ============================================================
 
 provenance:
@@ -9791,8 +11138,11 @@ provenance:
     - "C231"  # Regular not grammatical
     - "C233"  # Line atomic
     - "C234"  # Position free
-    - "C236"  # Flat
+    - "C236"  # Flat (between tokens)
     - "C240"  # Non-sequential registry
+    - "C1393"  # Compound MIDDLE composition grammar (HEAD+MOD*+TERM)
+    - "C1394"  # Instruction encoding architecture
+    - "C1395"  # Cross-system instruction encoding (A follows same slot grammar as B)
 
   record_types:
     - "C482"  # Batch semantics
@@ -9833,6 +11183,18 @@ provenance:
     - "C888"  # Section-specific WITHOUT-RI function
     - "C889"  # ct-ho reserved PP vocabulary
     - "C898"  # A PP internal structure (positional preferences)
+    - "C1261"  # Record category coherence (d=9.7)
+    - "C1262"  # RI extension category coupling (V=0.221)
+    - "C1265"  # Atom-profile coherence independent of category (d=11.6)
+    - "C1268"  # PREFIX-category orthogonality (null)
+    - "C1393"  # Compound MIDDLE composition grammar (HEAD+MOD*+TERM)
+    - "C1394"  # Instruction encoding architecture
+    - "C1395"  # Cross-system instruction encoding (MIDDLE internal encoding, terminal divergence)
+    - "C1534"  # PREFIX 15-char three-tier positional classification (identical across all systems)
+    - "C1535"  # i-atom excluded from PREFIX (iteration is MIDDLE-internal)
+    - "C1536"  # Base-to-HEAD selection V=0.478 (each base selects distinct domain)
+    - "C1537"  # a-base universal headless gateway (94-96% headless)
+    - "C1539"  # Sister pair SAME_BASE/SAME_MOD atom architecture
 
   line_structure:
     - "C250"  # INVALIDATED (was 64.1% repetition - transcriber artifact)
@@ -9844,6 +11206,9 @@ provenance:
     - "C482"  # Batch semantics
     - "C483"  # Ordinal repetition
     - "C484"  # Minimum sizes
+
+  record_internal_grammar:
+    - "C1395"  # Cross-system instruction encoding (record positional grammar, domain coherence, within-folio compatibility)
 
   paragraph_structure:
     - "C827"  # Paragraph operational unit
@@ -9861,6 +11226,7 @@ provenance:
     - "C1039"  # Paragraph cluster selectivity
     - "C1040"  # Folio-level paragraph compatibility coherence
     - "C1041"  # Paragraph complementary diversification
+    - "C1263"  # Paragraph category specialization (d=12.5)
 
   participation:
     - "C299"  # Section distribution in B
@@ -9884,6 +11250,8 @@ provenance:
     - "C1139"  # Bridge-dark pipeline MIDDLE-level disjointness
     - "C1140"  # PP pipeline four-way partition (85+4+300+15=404)
     - "C1141"  # Bridge atom substrate for dark-pipeline compounds (86% types, 96.5% coverage)
+    - "C1264"  # Bridge vs dark pipeline category divergence (V=0.441)
+    - "C1267"  # Mode A/B distinction is B-execution only (null)
 
   positional:
     - "C260"  # Section isolation
@@ -9892,6 +11260,7 @@ provenance:
     - "C421"  # Boundary suppression
     - "C424"  # Clustered adjacency
     - "C484"  # Control operator bias
+    - "C1266"  # Section atom-level differentiation (5/7 axes, breaks C946 barrier)
 
   disallowed:
     - "C225"  # No grammar
@@ -9905,6 +11274,8 @@ provenance:
     - "C476"  # Maintained not produced
     - "C483"  # Ordinal only
     - "C484"  # No header interpretation
+    - "C1267"  # Mode A/B distinction B-execution only
+    - "C1268"  # PREFIX-category orthogonal
 
 # ============================================================
 
@@ -9920,8 +11291,8 @@ provenance:
 meta:
   name: "Currier B Structural Contract"
   acronym: "BCSC"
-  version: "3.12"
-  date: "2026-02-23"
+  version: "3.34"
+  date: "2026-03-06"
   status: "ACTIVE"
   layer_type: "grammar contract"
   derived_from: "Tier 0-2 constraints (structural); Tier 3 operational layer clearly marked"
@@ -9959,6 +11330,7 @@ ownership:
     - execution_syntax
     - morphological_architecture  # Added v3.0: TOKEN decomposition, PREFIX/MIDDLE/SUFFIX roles
     - prefix_internal_grammar  # Added v3.12: Base-modifier decomposition within PREFIX (C1218-C1221)
+    - middle_instruction_encoding  # Added v3.16: HEAD+MOD*+TERM decomposition, 18-atom slot grammar (C1393-C1394)
     - paragraph_execution_model  # Added v3.0: spec→exec gradient, startup patterns
     - paragraph_cycling_model  # Added v3.12: Two alternating suffix modes, FL cross-line resets, tail signatures (C1227-C1232)
     - operational_layer  # Added v3.0: Tier 3 behavioral glosses for context grounding
@@ -9981,8 +11353,8 @@ guarantees:
     provenance: "C115, C124"
 
   - id: "CONVERGENT_ARCHITECTURE"
-    statement: "Grammar targets single stable state (STATE-C)"
-    provenance: "C074, C079, C084"
+    statement: "Grammar targets single stable state (STATE-C) — reframed as AXM thematic dominance, not sequential convergence (C1403)"
+    provenance: "C074, C079, C084, C1403"
 
   - id: "HAZARD_TOPOLOGY_FIXED"
     statement: "17 forbidden transitions in 5 classes are DISFAVORED (~65% compliance, not absolute)"
@@ -10081,8 +11453,8 @@ guarantees:
     provenance: "C267, C382, C383"
 
   - id: "PREFIX_INTERNAL_GRAMMAR"
-    statement: "PREFIX characters have an internal base-modifier positional grammar: dedicated modifiers (q,d,f,p,y — POS-0, 96-100%), dedicated bases (h,e — POS-1, 100%), dual-role (o,k,l,t,c). Base character determines MIDDLE content (within-base cosine 0.950 vs between-base 0.515, ratio 1.84). Modifier consistency varies: high (o=0.836, l=0.794), moderate (t,p), base-dependent (c=0.380, d=0.345). Prep PREFIXes are h-base variants, not distinct operations (shuffle p=0.998)."
-    provenance: "C1218, C1219, C1220, C1221"
+    statement: "PREFIX uses 15 characters (identical inventory across A/B/AZC, Jaccard=1.000) in a three-tier positional grammar: 7 MODIFIER {c,d,f,p,q,s,y} at POS-0, 2 BASE {e,h} at POS-1+, 6 DUAL {a,k,l,o,r,t} at both (chi2=14,327.8, V=0.547). Base character predicts MIDDLE HEAD atom domain (V=0.478, 89% of C1475 HEAD specificity): o→THERMAL(k), h→STABILITY(e), a→HEADLESS(94-96%), k/t→STABILITY+CONTAINMENT. q-modifier uniquely activates THERMAL channel on o-base (64% k-HEAD vs 5-19% other modifiers). i-atom categorically absent from PREFIX (iteration is MIDDLE-internal). Sister pairs are SAME_BASE (ch/sh, da/sa) or SAME_MOD (ok/ot), all HEAD JSD<0.01. Prep PREFIXes are h-base variants, not distinct operations (shuffle p=0.998)."
+    provenance: "C1218, C1219, C1220, C1221, C1534, C1535, C1536, C1537, C1538, C1539"
 
   - id: "PAIRWISE_COMPOSITIONALITY"
     statement: "TOKEN information is fully captured by pairwise component interactions (PREFIX x MIDDLE, PREFIX x SUFFIX, MIDDLE x SUFFIX); no three-way synergy exists (Co-I < 0.02 bits on all 4 targets; R-squared increment = 0)"
@@ -10097,12 +11469,16 @@ guarantees:
     provenance: "C932, C933, C934"
 
   - id: "PARAGRAPH_SUFFIX_CYCLING"
-    statement: "100% of paragraphs with 8+ body lines contain two alternating suffix modes (k=2, silhouette 0.459, 80% interleaved). Mode A (terminal-heavy): k-family 1.62x, prep 2.86x, qo 1.48x. Mode B (bare-heavy): e-family elevated. Universal centroids across all 55 qualifying paragraphs (global silhouette 0.428, F=4.56). Tail lines cluster into k=3 product signatures, section-correlated (chi2=31.73). FL partially resets between body lines (36.4%, LATE->MEDIAL dominant). PREFIX channels switch in 73.2% of paragraphs."
-    provenance: "C1227, C1228, C1229, C1230, C1231, C1232"
+    statement: "100% of paragraphs with 8+ body lines contain two suffix modes (k=2, silhouette 0.459). Mode A (THERMAL/MONITORING atoms: {d,e,ee,h,y}), Mode B (STAGING/FLOW atoms: {a,i,ii,l,m,n,o,r,s}). 80% of qualifying paragraphs classified as interleaved (containing non-trivial mixture of both modes). NOTE: consecutive-line switch rate is 39.4% (BELOW random 49.9%) — lines mildly persist in mode (C1423). Token mode is ~80% MIDDLE-determined (C1422), with TERMINAL atom as primary gatekeeper (V=0.503). No token-level sequential dependency (CMI=1.64%). TERMINAL switching does NOT drive mode switching (C1424). Universal centroids across all 55 qualifying paragraphs (global silhouette 0.428, F=4.56)."
+    provenance: "C1227, C1228, C1229, C1230, C1231, C1232, C1422, C1423, C1424"
 
   - id: "HT_OPERATIONAL_REDUNDANCY"
     statement: "HT/compound tokens contain operational content that is redundant with body simple MIDDLEs (71.6% atom hit rate vs 59.2% random). Removal doesn't change outcomes because of redundancy, not emptiness."
     provenance: "C404, C935"
+
+  - id: "MIDDLE_INSTRUCTION_ENCODING"
+    statement: "Compound MIDDLEs encode instructions as HEAD + MOD* + TERM: 18 atoms in 4 slot roles (5 HEAD, 6 MOD, 6 TERM, 2 dual). Fixed modifier ordering (p→f→i→c→d→s). Frame (HEAD+TERM) predicts 64% of operational category; modifiers shift remaining 36%. HEAD atoms define distinct operational domains (C1475): k=THERMAL 90.3%, t=FLOW 87.0%, a=FLOW+TRANSITION, e=THERMAL+OPERATION, o=STAGING+OPERATION. k-HEAD immunity is intrinsic (C1476, 0% in all contexts). a-HEAD is primary hazard carrier (C1477, 66%, quench-resistant). k/t are terminal-identical but categorically opposed (C1478). Each HEAD selects distinct modifiers creating a near-partition (C1479). TERMINAL atoms define exit conditions in three functional tiers (C1483-C1487): LOCKED (r=FLOW 98.9%, m=TRANSITION 87.9%), CHANNELED (l=STAGING 64.5%, y=OPERATION 40.6%, n=TRANSITION 39.3%), DIFFUSE (h=6 categories, bare=6 categories). TERMINAL x CATEGORY V=0.463 (2nd after HEAD). TERMINAL gates modifier selection: n takes only i, y takes only d, h takes {c,p,f,s} (C1484). HEAD-TERMINAL affinity creates compositional frames: e->y (72.7%), a->n/m (59-60%), k/t avoid n/m (C1485). Opacity and category specificity are orthogonal design axes. Headless compounds (20.5%, 3312 tokens, 469 types; C1488) form a coherent functional domain, NOT grab-bag infrastructure: initial atom acts as PSEUDO-HEAD (V=0.511; C1489) with d=CONTAINMENT 84%, i=STAGING 67%, p=MARKING 92%, f=MARKING 91%, r=FLOW 61%, c=OPERATION 32%. Headless terminal profile shifts: h 2.98x, n 2.45x enriched, LOCKED tier 6.2x depleted (structural hazard avoidance; C1490). PREFIX near-exclusive: da 2284x enriched, sa/ta headless-only, ok/ot near-absent (C1491). Suffix bifurcation: d/i bare (binary ops) vs c/p/f suffixed (parametric ops; C1492). 35.7% contain displaced HEAD atoms (C1493). Same modifier ordering grammar applies (61.9% vs 70.1%). Suffix is an independent compositional domain using same atom inventory (entropy 1.475 bits). TERMINAL gates suffix attachment via three-tier opacity gradient (OPAQUE y/m/n <5%, SEMI-TRANSPARENT l/r 17-20%, TRANSPARENT h 99%; C1440) with active exclusion (C1441). TERMINAL and suffix encode complementary category information (3.6x MI ratio, 8.2% redundancy; C1442)."
+    provenance: "C1393, C1394, C1440, C1441, C1442, C1443, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487, C1488, C1489, C1490, C1491, C1492, C1493, C1510, C1511, C1512, C1513, C1514, C1515"
 
 # ============================================================
 invariants:
@@ -10111,8 +11487,8 @@ invariants:
     provenance: "C124"
 
   convergence_dominance:
-    statement: "Majority of programs terminate in STATE-C"
-    provenance: "C074, C084, C323"
+    statement: "Majority of programs terminate in STATE-C (AXM thematic dominance, not sequential convergence — C1403)"
+    provenance: "C074, C084, C323, C1403"
 
   hazard_asymmetry:
     statement: "Most forbidden transitions are directional"
@@ -10139,8 +11515,8 @@ invariants:
     provenance: "C535"
 
   execution_syntax:
-    statement: "Lines follow SETUP→WORK→CHECK→CLOSE positional grammar"
-    provenance: "C556, C562"
+    statement: "Lines follow SPECIFICATION→THERMAL_WORK→CLOSURE positional grammar with category-level resolution"
+    provenance: "C556, C562, C1425, C1426, C1427, C1428, C1429, C1430"
 
   energy_flow_anticorrelation:
     statement: "ENERGY and FLOW roles are anticorrelated across sections"
@@ -10175,12 +11551,12 @@ invariants:
     provenance: "C1001"
 
   prefix_base_modifier_grammar:
-    statement: "PREFIX characters partition into modifiers (POS-0) and bases (POS-1/final); base character determines MIDDLE content domain (within-base cosine 0.950 vs between-base 0.515)"
-    provenance: "C1218, C1219"
+    statement: "PREFIX characters partition into three tiers: 7 MODIFIER (POS-0), 2 BASE (POS-1+), 6 DUAL (both); base character predicts MIDDLE HEAD domain (V=0.478); a-base is universal headless gateway (94-96%); q-modifier uniquely activates THERMAL on o-base (64% k-HEAD); i-atom excluded from PREFIX"
+    provenance: "C1218, C1219, C1534, C1535, C1536, C1537, C1538"
 
   suffix_mode_universality:
-    statement: "Two alternating suffix modes (specification/continuation) are universal across all paragraphs with sufficient body lines; global silhouette 0.428, F=4.56, 80% interleaved"
-    provenance: "C1229, C1231"
+    statement: "Two suffix modes (specification/continuation) are universal across all paragraphs with sufficient body lines; global silhouette 0.428, F=4.56. 80% of paragraphs contain interleaved modes, but consecutive-line switch rate is 39.4% (below random) — lines persist in mode. Mode is MIDDLE-determined (C1422), not sequentially driven."
+    provenance: "C1229, C1231, C1422, C1423"
 
   pairwise_interaction_sufficiency:
     statement: "Pairwise morphological component interactions capture all exploitable TOKEN structure; no three-way synergy"
@@ -10233,10 +11609,11 @@ morphology:
     components:
       ARTICULATOR:
         required: false
-        count: "~9 forms"
-        function: "Optional refinement layer"
+        count: "9 forms (y, d, l, r, p, t, k, s, f)"
+        rate: "4.41% of B tokens"
+        function: "Line-initial specification marker — selects e-HEAD MIDDLEs, suppresses suffix, locks to sh-family PREFIXes"
         example: "y- in ychody"
-        provenance: "C267"
+        provenance: "C267, C1416, C1417, C1418, C1419, C1420, C1421"
       PREFIX:
         required: true  # Most tokens have a prefix; unprefixed tokens exist but are a specific category
         common_prefixes: ["qo", "ch", "sh", "da", "sa", "ok", "ot", "ol", "lk", "lch", "te", "pch", "tch"]
@@ -10265,15 +11642,16 @@ morphology:
         total_unique: 1339
         function: "Primary operational vocabulary — determines WHAT happens"
         compound_structure: |
-          MIDDLEs can be simple (single atom: k, e, ch, edy) or compound
-          (multiple atoms: opcheodai = op+ch+e+od+ai). 100% of compounds
-          decompose into core atoms. Compound rate: 31.5% (grammar types),
-          45.8% (HT/UN types). Dark-pipeline compounds are built from
-          bridge atoms (86% of atom types, 91.6% of occurrences, 96.5%
-          compound coverage) using a modified construction grammar (50%
-          agreement with C1065 atom ordering, gateway/terminal positioning
-          preserved). C935, C1141, C1142.
-        provenance: "C267, C506.b, C935, C1141, C1142"
+          Compound MIDDLEs decompose as HEAD + MOD* + TERM (C1393, C1394):
+          18 atoms in 4 slot roles. HEAD sets operational domain, an ordered
+          modifier stack parametrizes the action, TERMINAL sets exit condition.
+          Frame (HEAD+TERM) predicts 64% of category; modifiers shift 36%.
+          See middle_instruction_encoding section for full architecture.
+          Dark-pipeline compounds are built from bridge atoms (86% of atom
+          types, 91.6% of occurrences, 96.5% compound coverage) using a
+          modified construction grammar (50% agreement with C1065 atom
+          ordering, gateway/terminal positioning preserved). C935, C1141, C1142.
+        provenance: "C267, C506.b, C935, C1141, C1142, C1393, C1394"
       behavioral_atomicity:
         statement: |
           Single characters are genuine behavioral atoms of MIDDLE composition.
@@ -10355,13 +11733,22 @@ morphology:
         k_base: {dominant_axis: "ITERATION+STABILITY (68%)", prefixes: ["ok", "lk", "yk"]}
       provenance: "C1219"
     prep_prefix_reinterpretation:
-      statement: "Prep PREFIXes (pch, tch, dch, te, lch) are NOT distinct operation types"
-      evidence: "Mean pairwise cosine 0.963, shuffle p=0.998 (random groups of 5 achieve equal or greater similarity)"
-      explanation: "Similarity fully explained by shared h-base (4 of 5 are h-based)"
-      reinterpretation: "Prep PREFIXes are h-base mode variants differentiated by modifier character and line position, not by operational content"
-      challenges: "F-BRU-012 distinct operation assignment (CHOP, POUND, STRIP, GATHER) — does not falsify fit, but specific glosses are challenged"
-      provenance: "C1221"
-    provenance: "C911, C661, C662, C936, C1015, C1219, C1221"
+      statement: "Prep PREFIXes (pch, tch, dch, te, lch) share MIDDLE content (C1221) but are structurally differentiated on 7/8 non-content dimensions (C1396)"
+      content_similarity: "Mean pairwise cosine 0.963, shuffle p=0.998 — MIDDLE content identical (C1221 HOLDS)"
+      structural_differentiation: "7/8 tests DIFFERENTIATED: position, paragraph, suffix, REGIME, section, context, bare-ch comparison"
+      three_tiers:
+        opener: "pch (41.2% par-initial), dch (71.2% line-initial), tch (52.9% line-initial) — open sequences"
+        body: "te — mid-line, mid-paragraph, distributed REGIMEs"
+        sustainer: "lch — interior (0% par-initial), REGIME_1 (70.5%), 81.3% bare, Section B (40%)"
+      atom_glosses:
+        pch: "stage-test (p=pause + ch=test)"
+        tch: "transfer-test (t=transfer + ch=test)"
+        dch: "mark-test (d=mark + ch=test)"
+        lch: "hold-test (l=state + ch=test)"
+        te: "transfer-cool (t=transfer + e=cool)"
+      challenges: "F-BRU-012 specific action verbs (CHOP, POUND, STRIP, GATHER) replaced by atom-grounded glosses"
+      provenance: "C1221, C1396"
+    provenance: "C911, C661, C662, C936, C1015, C1219, C1221, C1396"
 
   prefix_positional_zones:
     # Tier 2 structural fact: PREFIX encodes line position (dual encoding with content)
@@ -10459,6 +11846,355 @@ morphology:
       interpretation: "Each body line is one processing cycle. FL partially resets between cycles (typically to MEDIAL, not EARLY) because the next cycle picks up from current process state rather than starting fresh."
       provenance: "C1227"
     provenance: "C777, C897, C1015, C1227"
+
+# ============================================================
+# Added v3.16: MIDDLE instruction encoding architecture (C1393, C1394)
+middle_instruction_encoding:
+
+  statement: |
+    Compound MIDDLEs encode instructions as HEAD + MOD* + TERM — fixed endpoints
+    with a variable-length, internally ordered modifier stack. The frame (HEAD+TERM)
+    predicts 64% of instruction category; modifiers account for the remaining 36%.
+
+  atom_inventory:
+    total: 18
+    slot_assignments:
+      HEAD: {atoms: ["a", "e", "o", "k*", "t*"], note: "k/t are role-dual: HEAD when first, TERM when last"}
+      MODIFIER: {atoms: ["p", "f", "i", "c", "d", "s"], note: "All 6 are pair-locked (standalone <10%)"}
+      TERMINAL: {atoms: ["l", "r", "h", "y", "m", "n", "k*", "t*"], note: "k/t dual; h is transparent"}
+    provenance: "C1393, C1394 T3"
+
+  pair_locked_atoms:
+    statement: "9/18 atoms have standalone MIDDLE rate <10% — they require compound context"
+    atoms:
+      - {atom: "c", role: "MODIFIER", standalone_pct: 0.2}
+      - {atom: "n", role: "TERMINAL", standalone_pct: 0.3}
+      - {atom: "a", role: "HEAD", standalone_pct: 1.8}
+      - {atom: "h", role: "TERMINAL", standalone_pct: 2.9}
+      - {atom: "i", role: "MODIFIER", standalone_pct: 4.8}
+      - {atom: "p", role: "MODIFIER", standalone_pct: 7.4}
+      - {atom: "d", role: "MODIFIER", standalone_pct: 7.7}
+      - {atom: "f", role: "MODIFIER", standalone_pct: 7.9}
+      - {atom: "o", role: "HEAD", standalone_pct: 9.0}
+    free_atoms: "k (47%), t (39%), e (33%), r (35%), y (25%)"
+    provenance: "C1394 T3"
+
+  fusion_gradient:
+    statement: "Candidate macro-atoms fall on a gradient, not a binary fused/separate distinction"
+    categories:
+      hard_fused: {pairs: ["dy"], evidence: "Never separated (0.15%), 97.7% LAST, O/E 5.75x"}
+      soft_fused: {pairs: ["ed", "ol", "op", "ck", "ch", "in"], evidence: "Rarely separated, high O/E (2.8-8.6x), but components substitute independently"}
+      adjacent_slots: {pairs: ["ke", "ee", "od", "ey"], evidence: "Separate freely; ke 25% separation, od O/E=1.08 (chance)"}
+    implication: "Most apparent macro-atoms are adjacent slots with HEAD-modifier affinity, not fused units"
+    provenance: "C1394 T2"
+
+  modifier_stack:
+    ordering: ["p", "f", "i", "c", "d", "s"]
+    ordering_glosses: ["pause", "flag", "iterate", "adjust", "mark", "sequence"]
+    mean_positions: {p: 0.225, f: 0.395, i: 0.519, c: 0.532, d: 0.696, s: 0.713}
+    ordering_nature: "Morphological convention with weak semantic coupling, not procedural pipeline"
+    first_modifier_dominance: "66.5% decisive — modifier closest to HEAD carries most category weight"
+    multi_stage_collapse: "Compounds spanning 3+ pipeline stages converge 97-100% on MARKING — identification vocabulary, not procedural pipeline"
+    co_occurrence_avoidance: ["c/i (0.40x)", "c/s (0.48x)", "i/s (0.52x)", "d/f (0.50x)"]
+    provenance: "C1394 T4, T10"
+
+  compound_size_distribution:
+    zero_modifiers: "24.1% of tokens"
+    one_modifier: "47.0% of tokens (modal)"
+    two_plus_modifiers: "28.9% of tokens"
+    note: "4+ atoms = 35% of types but only 15% of tokens"
+    provenance: "C1394 T7"
+
+  frame_matrix:
+    statement: "HEAD × TERM frame predicts 64% of operational category"
+    dominant_frames:
+      - {frame: "e→y", tokens: 3475, category: "OPERATION", purity: "55.8%"}
+      - {frame: "a→n", tokens: 1272, category: "TRANSITION", purity: "65.6%"}
+      - {frame: "k→(open)", tokens: 779, category: "THERMAL", purity: "69.1%"}
+      - {frame: "o→l", tokens: 777, category: "STAGING", purity: "98.1%"}
+      - {frame: "a→r", tokens: 687, category: "FLOW", purity: "99.4%"}
+      - {frame: "o→r", tokens: 455, category: "FLOW", purity: "~99%"}
+    head_category_dominance:
+      k: "71% THERMAL"
+      t: "65% FLOW"
+      a: "55% FLOW"
+      e: "37% OPERATION (most versatile HEAD)"
+      o: "35% STAGING"
+    terminal_category_dominance:
+      r: "98.9% FLOW (LOCKED, norm_entropy=0.036)"
+      m: "87.9% TRANSITION (LOCKED, norm_entropy=0.211)"
+      l: "64.5% STAGING (CHANNELED, norm_entropy=0.456)"
+      y: "40.6% OPERATION (CHANNELED, norm_entropy=0.631)"
+      n: "39.3% TRANSITION (CHANNELED, norm_entropy=0.652)"
+      h: "30.0% MARKING, DIFFUSE across 6 categories (norm_entropy=0.844)"
+      bare: "43.2% THERMAL, DIFFUSE across 6 categories (norm_entropy=0.818)"
+    provenance: "C1394 T5, C1483, C1487"
+
+  modifier_category_effects:
+    statement: "Each modifier has a consistent, statistically significant effect on instruction category"
+    effects:
+      d: {V: 0.657, strongest_shift: "+55.6% OPERATION", note: "strongest modifier overall"}
+      c: {V: 0.505, strongest_shift: "+30.1% MARKING"}
+      i: {V: 0.418, strongest_shift: "+44.7% TRANSITION; kills OPERATION/THERMAL"}
+      p: {V: 0.368, strongest_shift: "+45.6% MARKING"}
+      f: {V: 0.351, strongest_shift: "+76.4% MARKING", note: "most concentrated (80.2% MARKING)"}
+      s: {V: 0.245, strongest_shift: "boosts MONITORING/STAGING", note: "weakest modifier"}
+    hierarchy: "d > c > i > p > f > s by effect size"
+    provenance: "C1394 T6"
+
+  headless_compounds:
+    statement: "469 headless types (20.5%, 3,312 tokens) — COHERENT FUNCTIONAL DOMAIN (not grab-bag). Initial atom acts as pseudo-HEAD with atom-specific functional domains (V=0.511, chi2=5872, p=0.0; C1489). Categorically distinct from all 5 HEAD domains (nearest: o at JSD=0.302)."
+    population:
+      tokens: 3312
+      types: 469
+      fraction: "20.5%"
+      by_initial_class: "MOD-initial 77.5% (2,568), TERM-initial 19.3% (638), OTHER 3.2% (106)"
+      top_atoms: "i=918, d=805, c=612, l=428, p=157, r=122"
+      provenance: "C1488"
+    category_by_initial:
+      d: "CONTAINMENT 84.0% (N=805) — sealing/closing"
+      i: "STAGING 66.9% (N=918) — cycle control via da-channel"
+      c: "OPERATION 32.2% (N=612, most diverse) — interior adjustment"
+      p: "MARKING 91.7% (N=157) — pause/hold"
+      f: "MARKING 90.9% (N=44) — flag/checkpoint"
+      r: "FLOW 60.7% (N=122) — response/routing"
+      l: "STAGING 27.8% (N=428, most versatile, 7 categories) — state annotation"
+    category_enrichment_vs_headed: "CONTAINMENT 10.6x, MARKING 5.4x, MONITORING 4.0x, STAGING 2.9x; THERMAL 0.11x, FLOW 0.24x, TRANSITION 0.22x"
+    terminal_profile_shift:
+      statement: "Systematic shift away from hazard-carrying LOCKED tier"
+      enriched: "h 2.98x (16.2% vs 5.4%), n 2.45x (25.0% vs 10.2%)"
+      depleted: "l 0.076x (1.0% vs 13.1%), r 0.153x (1.4% vs 9.1%), m 0.21x"
+      locked_tier: "headless 1.7% vs headed 10.7% (6.2x depletion)"
+      c1484_compliance: "n=100%, h=99.6%, y=99.6% — exclusivity rules hold"
+      provenance: "C1490"
+    prefix_selectivity:
+      statement: "Near-absolute PREFIX channel separation"
+      da: "2284x enriched (17.8% vs ~0.008%), i-initial-specific (iin/in)"
+      sa: "197 tokens, 100% headless (exclusive)"
+      ta: "107 tokens, 100% headless (exclusive)"
+      ok: "0.5% of headless vs 7.5% headed (depleted)"
+      ot: "0.8% of headless vs 7.2% headed (depleted)"
+      provenance: "C1491"
+    suffix_bifurcation: "d/i bare (<15% suffix, binary ops) vs c/p/f suffixed (>93%, parametric ops); C1492"
+    internal_structure: "MT 46.7%, T-only 19.3%, MMT 16.3%, MMMT+ 5.1%. 35.7% contain displaced HEAD atoms but Phase 537 proved these are NOT functioning as HEADs (pseudo-HEAD predicts category 2.68x better than displaced HEAD; C1493, C1494, C1495)"
+    modifier_ordering: "Same grammar (61.9% vs 70.1% headed); c atom primary violator"
+    q_exclusion: "104 q-initial tokens are non-grammar (98% BARE, 100% UNK) — exclude"
+    not_abbreviations: "HEAD recovery rejected (C1395 T2: 9.1%). Genuinely headless"
+    cross_system_universality: "Phase 542 confirmed headless properties are MANUSCRIPT-WIDE: category profile universal (cross-system JSD=0.023-0.035, near-zero THERMAL 0.6-1.1%; C1526), suffix depletion universal (A=0.73x, B=0.86x, AZC=0.61x; C1525), da/sa/ta exclusivity universal (C1524), 69 shared types cover 88-89% of tokens (C1527). A has higher headless rate (39.0% vs B 27.2%; C1523) consistent with A's declarative register (C1507). B-specific: dark pipeline headless enrichment 1.47x (C1527)."
+    verdict: "HEADLESS_IS_COHERENT_DOMAIN (3 coherent vs 1 grab-bag evidence points)"
+    provenance: "C1394 T8, C1397, C1488, C1489, C1490, C1491, C1492, C1493, C1494, C1495, C1496, C1497, C1498, C1523, C1524, C1525, C1526, C1527"
+
+  h_terminal_transparency:
+    statement: "h-terminal apparent chaos (27% purity) is resolved: h is transparent, not random"
+    head_plus_mods_V: 0.988
+    head_alone_V: 0.541
+    prefix_compensation: "V(PREFIX,category) = 0.389 for h-terminal vs 0.223 non-h (delta +0.166)"
+    ch_substructure: "70.7% of h-terminal tokens end in ...ch; within ch-ending, HEAD is highly predictive (k→96% THERMAL, t→98% OPERATION)"
+    open_monitor_ratio: 0.916
+    interpretation: "h lets HEAD signal pass through — consistent with h='watch' (keep monitoring whatever HEAD specifies)"
+    provenance: "C1394 T9"
+
+  e_atom_domain:
+    statement: "e is a genuine domain-specific HEAD (cooling), not a transparent default"
+    e_modifier_dominance: "V=0.672 (LOWEST of all HEADs — opposite of transparent default)"
+    o_is_most_versatile: "o entropy 2.396 vs e 2.191"
+    e_stripping_changes_category: "91% of cases"
+    e_depth_saturation:
+      single_e: "diverse (entropy 2.250)"
+      double_e: "84.3% THERMAL (entropy 0.789)"
+      triple_e: "100% THERMAL (entropy 0.0)"
+    e_as_modifier: "64.2% THERMAL (more focused than as HEAD)"
+    e_k_thermal_polarity: "Both map to THERMAL from opposite directions (cool vs heat)"
+    provenance: "C1394 T11"
+
+  suffix_independence:
+    statement: "Suffix is a genuine independent compositional domain, not an artifact of terminal atoms being stripped from compound MIDDLEs"
+    evidence: "77.1% of MIDDLEs appear with 3+ different suffixes; entropy 1.475 bits of suffix freedom given MIDDLE"
+    same_atom_inventory: "94.7% of suffixes follow C1393 slot grammar"
+    compound_narrowing: "Compound MIDDLEs narrow suffix choice slightly (1.42 bits vs 1.99 for single-atom)"
+    provenance: "C1394 T1"
+
+  suffix_compositional_structure:
+    statement: "Suffix is a PARALLEL compositional domain -- same HEAD+TERM grammar as MIDDLE but compressed (13 vs 18 atoms), with attenuated HEAD and amplified TERM"
+    atom_inventory: "13 single-char atoms {a,d,e,g,h,i,l,m,n,o,r,s,y}; MISSING {k,t} ACTION HEADs + {p,f,c} EXECUTIVE MODs; suffix is systematically action-free"
+    doubled_atoms: "ee, ii, oo (extensible atoms only)"
+    ordering: "76.6% HEAD-initial, 100% TERM-terminal, zero violations"
+    first_atom_category_V: 0.277
+    first_atom_attenuation: "53% of MIDDLE HEAD V=0.520 — category selection is present but weaker"
+    last_atom_position_R2: 0.059
+    last_atom_amplification: "1.68x MIDDLE TERM R2=0.035 — positional scope is amplified"
+    terminal_atoms: "5 only: y (53.5%), n (19.5%), r (13.1%), l (10.8%), m (3.1%); m-terminal 7.89x line-final"
+    middle_terminal_gating: "MIDDLE TERM atom V=0.513 dominates suffix content; HEAD V=0.305 (1.68x weaker); h-terminal 98.7% suffix (e-first 59.4%)"
+    cross_position_divergence: "ALL 12 shared atoms divergent MIDDLE vs suffix (mean JSD=0.526); e most stable (0.202), n most divergent (1.000 — complete categorical inversion)"
+    cross_system_identity: "A=B=13 atoms, 0 exclusive, JSD=0.050; B enriches d/e/i (execution), A enriches o/h/l/s (arrangement)"
+    mode_partition: "Mode A={d,e,ee,h,y} THERMAL/MONITORING/CONTAINMENT (medial 0.491); Mode B={a,i,ii,l,m,n,o,r,s} FLOW/STAGING/TRANSITION (boundary 0.514)"
+    mode_category_ratios: "Mode A vs B: MONITORING 5.08x, CONTAINMENT 2.93x, OPERATION 2.95x, THERMAL 1.20x; FLOW 0.47x, STAGING 0.46x, TRANSITION 0.46x"
+    provenance: "C1408, C1409, C1410, C1510, C1511, C1512, C1513, C1514, C1515"
+
+  # Added v3.27: Two-level closure architecture (C1440-C1445)
+  two_level_closure:
+    statement: "MIDDLE terminal atom and suffix encode complementary category information with active exclusion grammar"
+    terminal_opacity_gradient:
+      statement: "Three-tier suffix rate gradient (NOT binary)"
+      tiers:
+        OPAQUE: {atoms: ["n", "y", "m"], suffix_rates: ["0.84%", "1.61%", "4.15%"], note: "Active suffix suppression"}
+        SEMI_TRANSPARENT: {atoms: ["l", "r"], suffix_rates: ["16.78%", "19.52%"], note: "Selective suffix gating"}
+        TRANSPARENT: {atoms: ["h"], suffix_rate: "98.68%", note: "h freely passes through — HEAD+MODS determine category (V=0.988)"}
+      effect_size: "V=0.753, chi2=7384.7"
+      provenance: "C1440"
+    active_exclusion:
+      statement: "Opaque terminals suppress suffix via active grammar rule, not distributional separation"
+      matched_population: "Body-line-final, non-paragraph-final (N=1,439, baseline suffix rate 45.8%)"
+      suppression_rates: {y: "O/E=0.159", m: "O/E=0.105", n: "O/E=0.168"}
+      neutral: {l: "O/E=0.948", r: "O/E=1.217", h: "O/E=2.184 (always suffixed)"}
+      m_am_exclusion: "Fisher OR=0.06, p=0.000012 (13.5x depletion)"
+      provenance: "C1441"
+    information_complementarity:
+      statement: "TERMINAL and suffix-head encode different category information with minimal redundancy"
+      terminal_MI: "1.261 bits"
+      suffix_head_MI: "0.347 bits"
+      ratio: "3.6x"
+      joint_MI: "1.252 bits"
+      redundancy: "0.112 bits (8.2%)"
+      functional_partitioning: "88.5% of TERMINAL x suffix-head pairs have different top categories"
+      position_invariance: "Layer ratio stable 3.2-3.5x across all 5 line-position quintiles"
+      provenance: "C1442"
+    forbidden_pairs:
+      count: 17
+      key_patterns:
+        - pattern: "e-suffix blocked by all non-h terminals (5 pairs)"
+          note: "h is exclusive gateway for e-suffixed tokens"
+        - pattern: "r-terminal broadest exclusion (5 suffix heads blocked)"
+        - pattern: "o-suffix universal attractor for l/r/m terminals (3.5-5.4x)"
+      self_repulsion:
+        statement: "Same atom avoids repeating across MIDDLE-terminal → suffix-head boundary"
+        values: {y: "O/E=0.028", n: "O/E=0.000", r: "O/E=0.486", l: "O/E=0.621", h: "neutral", m: "neutral"}
+        interpretation: "Strongest repulsion at most opaque terminals"
+      provenance: "C1443, C1444"
+    paragraph_budget:
+      statement: "m-terminal closure and suffix attachment anticorrelate at paragraph level"
+      correlation: "Spearman rho=-0.199, p=0.00001 (486 paragraphs)"
+      section_variation: "Bio lowest m-term (0.57%), Stars/Recipe highest suffix (52.0%)"
+      co_occurrence: "Mean both fraction 0.06% (near-zero)"
+      provenance: "C1445"
+    provenance: "C1440, C1441, C1442, C1443, C1444, C1445"
+
+  # Added v3.25: Cross-slot interaction grammar (C1411-C1415)
+  cross_slot_interaction:
+    statement: "Instruction encoding chain is PREFIX->MIDDLE->SUFFIX (not three-way)"
+    prefix_to_middle_head_V: 0.414
+    prefix_to_middle_head_MI: "1.089 bits"
+    middle_to_suffix_mode_V: 0.678
+    middle_term_to_suffix_mode_V: 0.503
+    prefix_to_suffix_NMI: 0.090
+    sister_pair_atom_identity: "ch/sh JSD=0.010, ok/ot JSD=0.010 — sisters select identical MIDDLE atoms"
+    suffix_gatekeeper: "MIDDLE TERM atom is the primary suffix selector (0.910 bits reduction vs HEAD 0.366)"
+    three_way_synergy: "negligible (+0.009 bits identity, +0.047 bits mode); confirms C1003 at atom level"
+    cross_slot_repulsion: "d O/E=0.203 (REPEL), e O/E=1.310 (ATTRACT); complementary information principle"
+    absolute_prohibitions: "l-TERM x e-SUF_HEAD = 0, r-TERM x e-SUF_HEAD = 0"
+    forbidden_prefix_head_pairs: 83
+    provenance: "C1411, C1412, C1413, C1414, C1415"
+
+  # Added v3.26: ARTICULATOR deep dive (C1416-C1421)
+  articulator_architecture:
+    statement: "ARTICULATOR is a peripheral line-opening specification marker, not a fourth independent morphological axis"
+    rate: "4.41% of B tokens (1,019/23,096)"
+    inventory: "9 articulators: y (51.2%), d (11.6%), l (11.4%), r (7.0%), p (5.4%), t (5.2%), k (3.5%), s (3.3%), f (1.4%)"
+    line_initial_concentration: "17.3% at initial vs 2.7% medial (6.48x enrichment)"
+    paragraph_header_enrichment: "4.11x (16.8% vs 4.1%)"
+    positional_sub_groups:
+      INITIAL: {members: ["d", "k", "p", "s", "t", "y"], Q0_enrichment: "2.4-4.2x"}
+      FINAL: {members: ["l", "r"], Q4_enrichment: "2.4-2.6x"}
+    prefix_selectivity:
+      cramers_v: 0.196
+      bare_exclusion: "0/3,864 (categorical)"
+      qo_exclusion: "3/4,069 (0.07%)"
+      sh_locking: "t: 94%, k: 94%, d: 72%"
+      forbidden_pairs: 29
+    middle_selectivity:
+      e_head_enrichment: "76-90% vs 40% baseline (1.9-2.3x)"
+      k_head_exclusion: "4 forbidden ART x k-HEAD pairs"
+      prefix_mediation: "68.3%"
+    suffix_suppression: "0.34-0.55x baseline rate (16.7-27.2% vs 49.3%); p sole exception (58.2%)"
+    category_mediation: "I(ART;CAT|MIDDLE) = 0.000 bits — 100% MIDDLE-mediated"
+    information_hierarchy:
+      art_prefix_MI: "0.111 bits"
+      art_middle_MI: "0.060 bits"
+      art_suffix_MI: "0.015 bits"
+      main_chain_range: "0.290-1.666 bits (10-100x larger)"
+    provenance: "C1416, C1417, C1418, C1419, C1420, C1421"
+
+  encoding_model: |
+    TOKEN = PREFIX + MIDDLE + SUFFIX
+    MIDDLE = HEAD + MOD* + TERM
+    Where:
+      HEAD in {a, e, o, k*, t*}     — operational domain
+      MOD  in {p, f, i, c, d, s}*   — ordered parametrization stack
+      TERM in {l, r, h, y, m, n, k*, t*} — exit state/condition
+      * k, t are role-dual: HEAD when first, TERM when last
+    HEAD domain taxonomy (C1475):
+      k = THERMAL 90.3% (3.80x)   — pure thermal operator
+      t = FLOW 87.0% (4.47x)      — pure flow operator
+      a = FLOW+TRANSITION (54%+41%) — dual-category hazard carrier
+      e = THERMAL+OPERATION (35%+32%) — multi-category, most balanced
+      o = STAGING+OPERATION (32%+26%) — arrangement domain
+        o-HEAD terminal→category is near-deterministic (C1556):
+          ol=100% STAGING, or=100% FLOW, bare o=100% OPERATION.
+        o-HEAD depletes y-terminal to 0.007x (C1557) — strongest single-terminal
+          depletion, creating structural PHASE_ORDERING immunity.
+        o-HEAD enriches executive modifiers p(3.51x) f(2.83x), depletes i(0.32x) d(0.55x) (C1558).
+        Cross-system gradient A(28.5%)>AZC(22.4%)>B(11.8%) (C1559) — arrangement
+          concentrates in declarative register.
+        Inner-atom composition divergent: y at 0.023x = most extreme single-atom
+          divergence in system; l(2.74x) r(2.29x) p(4.67x) enriched (C1560).
+        Double-protected: 0% hazard source AND 0% target (C1561).
+      headless = CONTAINMENT+MARKING+STAGING — infrastructure
+    k-HEAD immunity is INTRINSIC (C1476): 0.0% forbidden across all frames,
+      with or without modifiers. Not compositional — k is inherently safe.
+    a-HEAD is primary hazard carrier (C1477): 66.0% forbidden, only HEAD
+      where modifier quenching fails (52.8% with mod vs 79.9% without).
+    k/t terminal mirror (C1478): terminal JSD=0.0017 (identical packaging),
+      category JSD=0.784 (opposite content). Both qo-selected, high suffix rate.
+    HEAD-modifier selectivity partition (C1479):
+      a monopolizes i (4.08x), e monopolizes d (1.99x), o attracts p/f/c.
+      k/t modifier-depleted (13.5%/20.5%). Headless = universal modifier host (57.8%).
+    Modifier stacking: statistical preference, not fixed rule (C1472).
+    Best-fit order: p -> f -> c -> s -> d -> i (68.8% type accuracy).
+    Co-occurrence avoidance dominant: 8/15 modifier pairs never co-occur.
+    Avoidance mechanism: HEAD x TERM frame incompatibility (C1473).
+      d(85% e-HEAD) and i(89% a-HEAD) have narrow non-overlapping HEAD demands.
+      c and s have broad HEAD distributions (entropy >1.9) enabling universal co-occurrence.
+    s is universal connector: co-occurs with all 5 others via centroid proximity,
+      broad HEAD, and FQ macro-state context (C1474).
+    s reliably late, p reliably early; interior {c,d,f,i} weakly ordered.
+    Frame predicts 64% of category; modifiers shift remaining 36%.
+    TERMINAL functional taxonomy (C1483-C1487):
+      Three functional tiers by category specificity:
+        LOCKED (1-2 categories):
+          r = FLOW 98.9% (norm_entropy 0.036) — flow routing terminal
+          m = TRANSITION 87.9% (norm_entropy 0.211) — closure valve terminal
+        CHANNELED (3-4 categories):
+          l = STAGING 64.5% — staging/state terminal
+          y = OPERATION 40.6% + CONTAINMENT + TRANSITION — work completion terminal
+          n = TRANSITION 39.3% + STAGING + MARKING — iteration binding terminal
+        DIFFUSE (5-6 categories):
+          h = MARKING 30.0% across 6 categories — transparent monitoring terminal
+          bare = THERMAL 43.2% across 6 categories — default operational terminal
+      TERMINAL x CATEGORY V=0.463 (2nd strongest after HEAD).
+      Opacity is ORTHOGONAL to category specificity:
+        r is SEMI-TRANSPARENT (19.3% suffix) but LOCKED to FLOW.
+        h is TRANSPARENT (98.7% suffix) but DIFFUSE across 6 categories.
+      TERMINAL modifier exclusivity (C1484):
+        n takes ONLY i (8.606x, zero others). y takes ONLY d (2.868x).
+        h takes {c,p,f,s} (5-9x each). l/r/m resist modification (<5%).
+        HEAD + TERMINAL jointly gate the modifier palette.
+      HEAD-TERMINAL affinity partition (C1485):
+        e locks to y-terminal (72.7%, 3,475 tokens).
+        a locks to n/m-terminal (59-60%).
+        k/t categorically avoid n,m terminals (0-1 tokens each).
+      Hazard axis: y sources 90.9% of violations, n absorbs 90.9%.
+
+  provenance: "C1393, C1394, C1472, C1473, C1474, C1475, C1476, C1477, C1478, C1479, C1483, C1484, C1485, C1486, C1487, C1556, C1557, C1558, C1559, C1560, C1561"
 
 # ============================================================
 
@@ -10662,31 +12398,84 @@ hazards:
       15/15 glossed forbidden transitions map to recognizable failures;
       8/8 asymmetric pairs have coherent physical explanations (reverse = safe).
       Provenance: F-BRU-023 (THERMODYNAMIC_COHERENCE, Phase 334)
+    head_territory_orthogonality: |
+      Hazard classes map to near-orthogonal HEAD atom territories (7/10 pairwise Jaccard=0).
+      Each class has a distinct atom-mechanical signature.
+      Provenance: C1528 (Phase 543)
+    line_position_gradient: |
+      Classes partition early-to-late: COMPOSITION_JUMP=0.402, ENERGY_OVERSHOOT=0.473,
+      CONTAINMENT_TIMING=0.510, RATE_MISMATCH=0.551, PHASE_ORDERING=0.581.
+      Chi2=46.6, p=0.000079, V=0.066. Setup errors early, closure errors late.
+      Provenance: C1532 (Phase 543)
+    phantom_middles: |
+      5 forbidden MIDDLEs absent from corpus (shey, chey, chedy, shedy, chol).
+      11/17 transitions involve phantoms. Construction-level prohibitions.
+      Provenance: C1531 (Phase 543)
 
     PHASE_ORDERING:
       count: 7
       percentage: "41%"
-      provenance: "C110"
+      head_territory: "headless (57.1% sources), a-HEAD (57.1% targets)"
+      terminal_profile: "y-terminal sources, n-terminal targets"
+      prefix_channel: "CHSH-dominant (28.4%); 7/11 corpus violations in CHSH context"
+      line_position: "late/closure (mean=0.581)"
+      corpus_violations: "10/11 total violations; all dy→aiin"
+      provenance: "C110, C1529, C1533"
 
     COMPOSITION_JUMP:
       count: 4
       percentage: "24%"
-      provenance: "C109"
+      head_territory: "e-HEAD (50% sources)"
+      terminal_profile: "mixed"
+      prefix_channel: "BARE-dominant (100%)"
+      line_position: "early/setup (mean=0.402)"
+      provenance: "C109, C1528, C1532"
 
     CONTAINMENT_TIMING:
       count: 4
       percentage: "24%"
-      provenance: "C109"
+      head_territory: "o-HEAD (50% sources)"
+      terminal_profile: "l/r SEMI_TRANSPARENT (source 75%, target 100%)"
+      prefix_channel: "BARE-dominant (34.5%)"
+      line_position: "medial (mean=0.510)"
+      avoidance_rate: "100% (0/1,129 source appearances)"
+      provenance: "C109, C1530"
 
     RATE_MISMATCH:
       count: 1
       percentage: "6%"
-      provenance: "C109"
+      head_territory: "a-HEAD (100% sources)"
+      prefix_channel: "BARE-dominant (36.6%)"
+      line_position: "late (mean=0.551)"
+      provenance: "C109, C1528, C1532"
 
     ENERGY_OVERSHOOT:
       count: 1
       percentage: "6%"
-      provenance: "C109"
+      head_territory: "e-HEAD (100% sources)"
+      line_position: "medial (mean=0.473)"
+      provenance: "C109, C1528, C1532"
+
+  atom_level_decomposition:
+    k_head_immunity: "k as HEAD atom = 0.0% hazard across 3,100 tokens, all frames neutralized (C1446)"
+    terminal_hazard_partition: "HIGH: r 92.58%, n 38.97%, l 30.88%; LOW: e 16.49%, y 15.82%; ZERO: k, m, h 0% (C1447)"
+    frame_map: "7 frames >50% hazard; k neutralizes ALL terminals to 0%; e→y safe pathway 3,475 tokens (C1448)"
+    sister_parity: "ok/ot 1.04x, ch/sh 1.29x — sister choice NOT hazard mechanism (C1449)"
+    opacity_gradient: "SEMI_TRANSPARENT tier 56.5% hazard (2.5x OPAQUE); suffix reduces hazard 2.44x (C1450)"
+    mode_b_violations: "Mode B carries 100% of forbidden violations (11/11); Mode A zero violations (C1451)"
+    modifier_quenching: "All 5 modifiers {c,d,f,p,s} quench hazard to 0% globally; within a-HEAD rare modifiers reduce but only f quenches to 0% (N=6). i-modifier is NET SAFER (17.9% vs 24.8% other modifiers). (C1450, C1480)"
+    i_modifier_paradox_resolved: "RESOLVED (C1480-C1482). i selects a-HEAD at 88.6% (C1479); a-HEAD is primary hazard carrier (C1477). Oaxaca-Blinder: selection +0.319, conditional -0.388, net -0.069 (i safer). Within a-HEAD, i transforms terminals: n-term 1.2%→82.1%, FLOW→TRANSITION. Double-ii = 0.0% hazard via 94% n-terminal TRANSITION lock-in. Monotonic gradient: no-i=79.3%, single-i=68.6%, ii=0.0%. (C1480, C1481, C1482)"
+    ey_safe_pathway: "e→y = 3,475 tokens (15.0%), 7 MIDDLEs (edy 55.8%, ey 25.6%, eey 18.5%), 0.06% hazard (400x reduction). NOT recovery-specific — ambient substrate at constant ~15% rate (post-hazard=14.75%, post-safe=15.35%, p=0.310). OPERATION 3.94x, CHSH-channel sh 2.45x, qo 0.04x excluded. Line-final 0.55x. Folio e→y rate predicts forgiveness: rho=+0.569 with AXM self-transition. Post-e→y AXM +9.4pp (one-way ratchet). (C1457-C1462)"
+    thermal_safety_envelope: "k-HEAD (3,100 tokens, 0% hazard) + e→y (3,475 tokens, 0.06% hazard) = ~5,558 tokens (24% of corpus) at effectively zero hazard. Energy input and energy output are both categorically safe; hazard concentrates in transitions between them (FLOW, CONTAINMENT). (C1446, C1457-C1462)"
+    hazard_class_decomposition: |
+      Each of the 5 hazard classes has a distinct atom-mechanical signature:
+      PHASE_ORDERING: headless y→a-HEAD n cross-domain boundary failure, CHSH-specific (C1529, C1533)
+      CONTAINMENT_TIMING: l/r SEMI_TRANSPARENT tier, strictest class 100% avoidance (C1530)
+      COMPOSITION_JUMP: e-HEAD early/setup, BARE-dominant (C1528, C1532)
+      RATE_MISMATCH: a-HEAD late, BARE-dominant (C1528, C1532)
+      ENERGY_OVERSHOOT: e-HEAD medial (C1528, C1532)
+      5 phantom MIDDLEs encode construction-level prohibitions (C1531)
+    provenance: "C1446, C1447, C1448, C1449, C1450, C1451, C1452, C1453, C1454, C1455, C1456, C1457, C1458, C1459, C1460, C1461, C1462, C1480, C1481, C1482, C1528, C1529, C1530, C1531, C1532, C1533"
 
   properties:
     asymmetric_rate: "65%"
@@ -10781,13 +12570,66 @@ program_structure:
           LINK_to_FL: "0.659 (moderately ordered)"
         interpretation: "Phases are positional tendencies, not rigid blocks — consistent with C815 (eta-squared=0.015)"
       provenance: "C556, C557, C561, C562, C956-C964"
-    provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897"
+    category_gradient:
+      statement: "Category-level resolution reveals three-zone architecture: SPECIFICATION→THERMAL_WORK→CLOSURE"
+      zones:
+        - zone: "SPECIFICATION"
+          quintile: "Q0 (initial)"
+          enriched: ["STAGING 1.57x", "MARKING 1.42x", "ARTICULATOR 3.93x"]
+          depleted: ["THERMAL 0.73x"]
+          prefixes: "po/dch/so/to 5-8x enriched; paragraph/folio-specific vocabulary"
+          information: "10.29 bits (highest)"
+        - zone: "THERMAL_WORK"
+          quintile: "Q1-Q3 (interior)"
+          enriched: ["THERMAL peaks Q1 at 29.4% then declines"]
+          character: "Routine operations using common MIDDLEs"
+          information: "9.58-9.62 bits (lowest)"
+        - zone: "CLOSURE"
+          quintile: "Q4 (final)"
+          enriched: ["TRANSITION 1.63x", "m-terminal 196x", "-am 7.83x"]
+          depleted: ["THERMAL 0.56x"]
+          character: "Routing and state-change markers"
+          information: "10.11 bits (second highest)"
+          m_terminal_anatomy:
+            statement: "m-terminal is a dedicated body-line closure operator (C1434-C1439)"
+            inventory: "10 types, 289 tokens (1.25%); am 60.2%, m 26.3% = 86.5%"
+            positional_polarity: "7.0x concentration at line-final (next: l 1.1x); 0.04% line-initial"
+            scope: "Body-line-final (10.45%); header-line-final 0.00%; paragraph-final depleted (3.26%)"
+            category: "87.9% TRANSITION (5.86x); 5 categories completely absent (THERMAL, MONITORING, FLOW, CONTAINMENT, MARKING)"
+            hazard: "0% in hazard categories; 31.8% preceded by FLOW (closes hazard sequences safely)"
+            suffix: "4.2% suffix rate vs 48.3% overall (11.5x suppression); self-contained operators"
+            prefix_selectivity: "ch/sh 0.16-0.17x, qo 0.02x depleted; ar/al/or 4.6-6.5x enriched (LATE channel)"
+            two_level_closure: "m-terminal (body-line closer) and -am suffix (paragraph terminator) are orthogonal: 1 token overlap, complementary scopes"
+            provenance: "C1434, C1435, C1436, C1437, C1438, C1439"
+      zone_hazard_routing:
+        statement: "Three-zone model interacts with frame hazard classification: monotonic hazard gradient across line (C1463-C1466)"
+        routing_pattern:
+          SPECIFICATION: "ZERO enriched 1.236x, HIGH depleted 0.836x — safe operations open lines"
+          THERMAL_WORK: "IMMUNE (k-HEAD) enriched 1.165x, Q1 peak 1.311x — energy input at work onset"
+          CLOSURE: "HIGH enriched 1.134x, ZERO depleted 0.743x — hazardous operations close lines"
+        contingency: "chi2=336.3, V=0.085, p=1.38e-69 (zone x hazard class)"
+        k_immune_onset: "k-HEAD peaks at Q1 (1.311x), 63.1% in work zone; energy input at start of thermal work (C1464)"
+        high_frame_heterogeneity: "o-HEAD HIGH position-neutral (mean 0.491), a/d-HEAD HIGH closure-biased (mean 0.562); KW H=68.8, eta2=0.013 (C1465)"
+        line_length_invariance: "V=0.081-0.091 across short/medium/long lines; universal grammar property (C1466)"
+        section_universality: "All 5 sections show SPEC→WORK→CLOSURE hazard increase (except Section C which is uniformly high-hazard)"
+        provenance: "C1463, C1464, C1465, C1466"
+      cross_line_independence:
+        statement: "Adjacent lines are categorically independent; each line is a fresh i.i.d. sample from the folio's operational profile"
+        suffix_mode_MI: "0.003 bits"
+        dominant_category_MI: "0.032 bits"
+        hazard_frame_MI: "0.0172 bits (0.54x category MI; folio-shuffle p=0.212 — entirely folio-mediated)"
+        vocabulary_jaccard: "0.153"
+        hazard_autocorrelation: "rho ~0.22 flat across lags 1-4; all collapse under within-folio permutation (p=0.115-0.535)"
+        no_compensatory_recovery: "e->y DEPLETED 0.82x after above-median HIGH lines (Fisher p=0.0001); folio composition effect"
+        mode_b_no_hazard_memory: "B->B MI=0.016 = A->A MI=0.017; Mode B forbidden carrier status (C1451) creates no cross-line coupling"
+      provenance: "C1425, C1426, C1427, C1428, C1429, C1430, C1434-C1439, C1463-C1466, C1470, C1471"
+    provenance: "C357, C358, C359, C360, C556, C557, C561, C562, C777, C897, C1425-C1430, C1434-C1439, C1463-C1466"
 
   paragraph:
     # For comprehensive paragraph-as-unit model, see PSC (paragraph.psc.yaml)
     # PSC owns: definition, independence model, folio organization, A-B correspondence, stability
     # BCSC retains: B-specific execution patterns below (HT enrichment, spec->exec gradient, gallows dynamics)
-    function: "Self-contained mini-program with header/specification/execution architecture"
+    function: "Self-contained mini-program with header/body architecture and parallel Mode A/B tracks"
     mean_per_folio: 7.1
     mean_lines_per_paragraph: 4.4
 
@@ -10809,50 +12651,60 @@ program_structure:
       length_progression: "rho = -0.229, p = 0.001"
       composition_after_control: "EN/FL/CC fractions collapse to rho ~ 0 after controlling for line length"
       suffix_mode_cycling: |
-        Two universal suffix modes alternate within bodies (C1229):
-        Mode A (terminal=0.430, bare=0.466): k-family 1.62x, prep 2.86x, qo 1.48x
-        Mode B (terminal=0.155, bare=0.741): e-family elevated (0.824x)
-        80% interleaved (not sequential), continuous gradient (3.3% breakpoints)
+        Two universal suffix modes present in bodies (C1229):
+        Mode A = {d,e,ee,h,y} THERMAL/MONITORING atoms (C1410)
+        Mode B = {a,i,ii,l,m,n,o,r,s} STAGING/FLOW atoms (C1410)
+        80% of paragraphs classified as containing interleaved mixture of both modes.
+        BUT: consecutive-line switch rate = 39.4% (BELOW random 49.9%) — mode PERSISTENCE (C1423).
+        Token mode ~80% MIDDLE-determined (C1422), no sequential dependency (CMI=1.64%).
+        Mode switching is TERMINAL-independent at line level (C1424).
         Universal centroids: silhouette 0.428, F=4.56 (C1231)
-      reconciliation: "C963 homogeneity is at role-fraction level (EN/FL/CC); cycling operates at suffix-category/MIDDLE-family level — a finer grain below role resolution. Both are true simultaneously."
-      provenance: "C963, C677, C1229, C1230, C1231"
+      reconciliation: "C963 homogeneity is at role-fraction level (EN/FL/CC); mode variation operates at suffix-atom level — a finer grain below role resolution. Both are true simultaneously. The 'cycling' is vocabulary mixture, not sequential alternation."
+      provenance: "C963, C677, C1229, C1230, C1231, C1410, C1422, C1423, C1424"
 
     execution_gradient:
-      statement: "Body lines follow a specification->execution gradient"
-      spec_exec_vocabulary:
-        rare_middle_trend: "r=-0.97 (Q0→Q4)"
-        universal_middle_trend: "r=+0.92 (Q0→Q4)"
-        tokens_per_line: "10.3→8.7 (r=-0.97)"
-        terminal_suffix_trend: "r=-0.89 (declining — parameter setting is early)"
-        bare_suffix_trend: "r=+0.90 (increasing — continuation is late)"
-        iterate_suffix_trend: "r=+0.83 (increasing — looping is late)"
-        provenance: "C932"
-      prep_verb_concentration:
-        statement: "Prep verbs (pch, lch, tch, te) concentrate 2-3x in Q0 vs Q4"
-        te_ratio: "2.7x (Q0/Q4)"
-        pch_ratio: "2.8x"
-        tch_ratio: "1.9x"
-        lch_ratio: "1.3x"
-        all_avg_position: "<0.45 (early half)"
-        provenance: "C933"
-      parallel_startup:
-        statement: "Heat operations appear before prep operations in 65% of paragraphs"
-        first_heat_position: 0.079
-        first_prep_position: 0.212
-        heat_first_rate: "65%"
-        heat_prep_cooccurrence_trend: "r=-0.94 (Q0→Q4)"
-        provenance: "C934"
+      # REVISED Phase 451 (C1259): The spec->exec vocabulary gradient (C932) did NOT
+      # replicate. Prep verb concentration (C933) is an ARTIFACT of Mode A vocabulary.
+      # Kernel composition shift (C965) is directionally real but sub-Bonferroni.
+      # The body is NOT a specification->execution ramp. It is a steady-state cycling
+      # architecture with two coupled parallel tracks.
+      statement: "Body lines form a steady-state cycling architecture with parallel Mode A/B tracks"
+      retracted_claims:
+        c932_vocabulary_gradient: "NOT REPLICATED — original script included header in Q0; body-only shows RARE r=-0.054 (was -0.97), UNIVERSAL r=-0.893 (was +0.92). C1259 T2."
+        c933_prep_verb_concentration: "ARTIFACT — 77% of prep verbs are Mode A tokens; within Mode B no positional bias (p=0.639). C1259 T3."
+        c934_parallel_startup: "WEAKENED — both pillars (C933, C965) undermined. C1259."
+        c965_kernel_composition: "WEAKENED — PREFIX-based retest: h rho=+0.058 (p=0.037), same direction but sub-Bonferroni (was +0.10, p=0.0004). Fragile, not an artifact."
+      surviving_body_signals:
+        line_shortening: "rho=-0.243 (p=0.000) — lines get shorter through body (C677, C1260 S4)"
+        bare_suffix_increase: "Mode B bare rho=+0.072 (p=0.008) — genuine within-track trend (C1259 T7)"
+        fl_reset_genuine: "B->B regression 49.7% > cross-mode 40.5% — FL cycling is B-track internal (C1259 T5)"
+        prefix_switching_mixture: "Within-mode JSD 0.326 < cross-mode 0.352 (p=0.002) — partly mode alternation (C1259 T6)"
       prep_reinterpretation: |
-        C1221 shows prep PREFIXes are NOT distinct operation verbs but h-base
-        variants (mean pairwise cosine 0.963, shuffle p=0.998). Their early
-        concentration (C933) reflects position-based phase differences within
-        the stability/closure domain, not different physical operations. Prep
-        MIDDLEs appear throughout paragraphs (2.86x enriched in Mode A lines,
-        C1230), serving position-dependent purposes: prepare material (early),
-        agitate between extraction passes (mid), process final product (late).
-      prep_reinterpretation_provenance: "C1221, C1230"
+        Prep PREFIXes share MIDDLE content (C1221: cosine 0.963, p=0.998) but
+        are structurally differentiated on 7/8 non-content dimensions (C1396).
+        Three positional tiers: OPENER (pch/dch/tch), BODY (te), SUSTAINER (lch).
+        Atom-grounded glosses: pch=stage-test, tch=transfer-test, dch=mark-test,
+        lch=hold-test. Prep MIDDLEs are overwhelmingly Mode A vocabulary (77%,
+        C1259 T3). Their apparent early concentration was a Mode A property.
+      prep_reinterpretation_provenance: "C1221, C1230, C1259, C1396"
+      parallel_tracks:
+        statement: "Mode A and B lines form coupled parallel sequential tracks within paragraphs (C1258, 5/5 PASS)"
+        mode_b_track: "Continuous track — vocabulary (p=0.000), kernel (p=0.000), FL (p=0.001) continuity across interleaved A-line interruptions"
+        mode_a_track: "Specification injections — weak/no within-track continuity (vocab p=0.692, FL p=0.991)"
+        cross_mode_coupling: "Bidirectional — A->B rho=0.189, B->A rho=0.208 (both p=0.000)"
+        within_vs_cross: "Within-mode coupling > cross-mode (Jaccard 0.188 vs 0.164, p=0.000)"
+        mode_proportion: "FLAT across body (rho=-0.027, p=0.449) — Mode A does NOT concentrate early (C1259 T1)"
+        provenance: "C1258, C1259"
+      thermal_state_tracking:
+        statement: "B-track carries sequential thermal state (C1260)"
+        energy_propagation: "e_frac rho=0.376, ke_ratio rho=0.228, qo_frac rho=0.186, k_frac rho=0.139 (all p=0.000)"
+        fl_independence: "FL does NOT propagate between B lines (rho=0.026, p=0.56)"
+        steady_state: "No ordinal drift in energy variables — thermal equilibrium maintained"
+        line_shortening: "n_toks rho=-0.243 (p=0.000) — only monotonic signal"
+        autocorrelation: "ke_ratio lag-1 survives permutation (p=0.002)"
+        provenance: "C1260"
       cycling_architecture:
-        statement: "Body lines are independently composed extraction passes within a monotonic gradient envelope. Cross-line sequencing is near-random; structure lives within each line, not between lines."
+        statement: "Body lines are independently composed extraction passes. Cross-line sequencing is near-random; structure lives within each line, not between lines."
         cross_line_independence: |
           FL regression (40.7%), mode alternation (45.7%), and channel switching
           (41.7%) are statistically independent AND near-random. Mode transition
@@ -10861,10 +12713,10 @@ program_structure:
           independently composed extraction pass. (C1233)
           Supported by: C670 (vocabulary null), C673 (CC independence),
           C972 (stronger than random Markov), C966 (no cross-line memory).
-        fl_cross_line_reset: "36.4% of cross-line FL pairs show regression, mainly LATE->MEDIAL (73.9%) — each line is one processing cycle, FL partially resets between cycles (C1227)"
-        prefix_channel_switching: "73.2% of paragraphs have interior PREFIX divergence >= opening divergence (JSD 0.470 vs 0.504) — lines routinely change operational mode, confirming cycling not apparatus switching (C1228)"
-        suffix_mode_alternation: "100% of long paragraphs show k=2 suffix clusters (silhouette 0.459), 80% interleaved — two modes alternate but sequence is near-random (entropy 97.8%), not structured (C1229, C1233)"
-        mode_functional_basis: "Mode A = specification (terminal suffixes 2.5-3.0x, ee tokens 1.56x); Mode B = execution (bare 62.0%). Not a cycling dimension — line-level property determined by process state (C1230, C1236)"
+        fl_cross_line_reset: "B->B regression rate 49.7%, cross-mode 40.5% — FL cycling is B-track internal, not mode-transition-driven (C1227, C1259 T5)"
+        prefix_channel_switching: "Within-mode JSD 0.326 < cross-mode 0.352 (p=0.002) — PREFIX switching is partly mode alternation, partly genuine within-track (C1228, C1259 T6)"
+        suffix_mode_alternation: "100% of long paragraphs show k=2 suffix clusters (silhouette 0.459), 80% interleaved — two coupled parallel tracks, not random alternation (C1229, C1258)"
+        mode_functional_basis: "Mode A = specification (terminal suffixes 2.5-3.0x, ee tokens 1.56x); Mode B = execution (bare 62.0%). Opener MIDDLE selects line mode (Cramer's V=0.30, 1.76x, C1256)"
         mode_universality: "Global centroids converge across all 55 qualifying paragraphs (F=4.56, silhouette 0.428) — modes are universal B grammar property (C1231)"
         tail_product_signatures: "Last 2 body lines cluster into k=3 product types, section-correlated (chi2=31.73, p=0.0001) — different paragraphs produce different output types (C1232)"
         steady_state: |
@@ -10874,39 +12726,44 @@ program_structure:
           (5.19x enriched at paragraph-final token). Last body lines are
           shortened (7.3 vs 10.0 tokens) and cooling-enriched (e-kernel
           60.8% vs 57.0%). (C1237)
-        gradient_cycling_reconciliation: |
-          The spec->exec gradient (C932) provides the ENVELOPE (terminal
-          fraction declines monotonically r=-0.89). Within that envelope,
-          each line is independently composed as Mode A (specification) or
-          Mode B (execution) — the sequence is near-random (C1233), but
-          the balance shifts from specification-heavy early to
-          continuation-heavy late.
-        provenance: "C1227, C1228, C1229, C1230, C1231, C1232, C1233, C1236, C1237"
+        provenance: "C1227, C1228, C1229, C1230, C1231, C1232, C1233, C1236, C1237, C1256, C1258, C1259, C1260"
+      cross_mode_category_coupling:
+        statement: "Mode A and B are category-specialized, positionally synchronized parallel tracks with B->A thermal feedback, but no sequential coupling."
+        paragraph_coherence: "Both modes share paragraph's category key — within-para A-B JSD=0.141 < cross-para 0.170 (p=7.4e-6, C1308)"
+        mode_specialization: "A = THERMAL 32.5% + MONITORING 2.57x; B = TRANSITION 1.64x + STAGING 1.37x + FLOW 1.22x. Complementarity is mode-level, not pair-specific (C1309)"
+        positional_alignment: "Same relative position in adjacent A/B lines: same-category 1.27x enrichment (perm p=0.001). NMI 0.042-0.063 across 5 position bins (C1310)"
+        thermal_feedback: "B->A only: ke_ratio->MARKING rho=-0.198 (p=0.0006), ke_ratio->THERMAL rho=+0.176 (p=0.002). Effect sizes small-to-moderate. A->B shows no signal (p>0.3). Asymmetric feedback signal (C1311)"
+        no_sequential_coupling: |
+          All sequential coupling tests negative (C1312):
+          - Zig-zag WEAKER than null (Z=-3.39, perm p=0.999)
+          - No A->B category prediction (V=0.170, p=0.146)
+          - No cross-line transition grammar (all mode pairs p>0.05 except BB WEAK)
+          - 0 cross-line forbidden transitions (0/1384)
+          - All interleaving ratios increase entropy
+          - Same-mode coupling > cross-mode (AA r=0.463 > BA r=0.328)
+        ba_handoff: "TRANSITION->THERMAL dominates BA boundary (12.0%) — B exits through transition, A re-enters with thermal specification"
+        provenance: "C1308, C1309, C1310, C1311, C1312"
 
     paragraph_zones:
-      # Descriptive model of paragraph architecture
-      statement: "Each paragraph has three functional zones"
+      # REVISED Phase 451: Two zones, not three. The body-internal
+      # SPECIFICATION/EXECUTION split (C932) did not replicate.
+      statement: "Each paragraph has two functional zones: HEADER and BODY"
       zones:
         - zone: "HEADER"
           lines: "Line 1"
           content: "Compound MIDDLEs (specification + identification)"
           unique_to_folio: "85.9% of line-1 HT tokens are folio-singletons"
           provenance: "C840, C870, C935"
-        - zone: "SPECIFICATION"
-          lines: "Early body (Q0-Q1)"
-          content: "Rare/unique vocabulary, prep operations, parameter setting"
-          provenance: "C932, C933"
-        - zone: "EXECUTION"
-          lines: "Late body (Q3-Q4)"
-          content: "Universal vocabulary, iterate suffixes, generic control loop"
-          provenance: "C932, C934"
-      cycling_layer_note: |
-        The three zones describe the monotonic ENVELOPE of vocabulary
-        gradient (C932). Beneath this, body lines cycle through Mode A
-        (specification/agitation) and Mode B (continuation/stabilization)
-        at every position — the zones label where each mode DOMINATES,
-        but neither is absent anywhere. See execution_gradient.cycling_architecture.
-      cycling_layer_provenance: "C1229, C1231"
+        - zone: "BODY"
+          lines: "Lines 2+"
+          content: "Steady-state cycling — two parallel tracks (Mode A specification, Mode B execution) interleaved throughout, no positional gradient"
+          mode_proportion_flat: "Mode A fraction ~42% at all positions (rho=-0.027, p=0.449)"
+          thermal_continuity: "B-track carries energy state (e_frac rho=0.376) but not FL state"
+          provenance: "C963, C1258, C1259, C1260"
+      retracted_zones:
+        specification_zone: "RETRACTED — C932's early-body specification zone was an artifact of header contamination in Q0"
+        execution_zone: "RETRACTED — C932's late-body execution zone is not distinguishable from early body after proper header exclusion"
+      provenance: "C840, C870, C935, C963, C1258, C1259, C1260"
 
     gallows_initial:
       paragraph_initial_rate: "8.6% vs 2.7% body"
@@ -10920,6 +12777,90 @@ program_structure:
     self_containment:
       provenance: "C845"
     provenance: "C840-C845, C932-C935"
+
+    operational_gradient:
+      statement: "Paragraphs form a continuous operational variation space (silhouette 0.113), not discrete types"
+      gradient_zones:
+        zone_0_thermal_qo:
+          n: 87
+          signature: "THERMAL +0.69z, qo_frac +0.80z, k_kernel +0.68z"
+          section_bias: "BIO (55/87)"
+          regime_bias: "REGIME_1 (80/87)"
+        zone_1_containment_sealing:
+          n: 68
+          signature: "dy_frac +1.23z, headless_d +1.01z, CONTAINMENT +0.90z"
+          section_bias: "HERBAL (29/68)"
+          regime_bias: "Mixed"
+        zone_2_operation_iteration:
+          n: 75
+          signature: "OPERATION +0.88z, bare_frac +0.83z, headless_i +0.65z"
+          section_bias: "STARS_RECIPE (54/75)"
+          regime_bias: "REGIME_3 (34/75)"
+        zone_3_monitoring_phase:
+          n: 34
+          signature: "h_kernel +1.72z, MONITORING +1.61z, mean_middle_len +1.11z"
+          section_bias: "STARS_RECIPE (24/34)"
+          regime_bias: "REGIME_3 (23/34)"
+      section_correspondence: "V=0.408 (chi2=131.9, p=2.6e-22)"
+      regime_correspondence: "V=0.371 (chi2=108.8, p=2.5e-19)"
+      multi_type_folios: "50% (40/80 folios contain multiple zones)"
+      connection_to_c1378: |
+        Phase 492 (C1378) showed paragraphs do NOT differentiate by material
+        (dark-pipeline Jaccard 0.972 within folio). Phase 510 shows they
+        differentiate by OPERATIONAL EMPHASIS instead. Combined: same material,
+        same role proportions, different operational subroutines. Paragraphs
+        are aspects of one job, not different jobs on shared equipment.
+      top_discriminator: "dy_frac (F=0.532) — the d-initial headless containment seal token"
+      stability: "ARI=0.765 (100 bootstrap runs) — real tendencies, fuzzy boundaries"
+      provenance: "C1398, C1378, C862, C1288"
+
+    ordering_null:
+      statement: "Paragraphs have NO preferred ordering within folios (7/8 tests FAIL)"
+      zone_ordinals: "All zones cluster at ~0.5 (KW p=0.289, epsilon-squared=0.016)"
+      monotonicity: "rho=-0.052, p=0.611 — no thermal-first/monitoring-last ramp"
+      zone_inertia: |
+        Transition matrix is structured (V=0.424) but reveals INERTIA, not sequence.
+        Self-transition O/E=2.02 (103 observed vs 50.9 expected).
+        Folios run consecutive paragraphs of the same operational type.
+        THERMAL↔MONITORING mutual avoidance (O/E=0.12/0.20) reflects different
+        program types, not sequential incompatibility.
+      section_controlled: "All within-section ordering tests FAIL (all p>0.17)"
+      interpretation: "Folio specifies WHAT concerns and HOW MUCH of each, not in WHAT ORDER"
+      provenance: "C1399, C1398, C845, C862"
+
+    state_independent_ordering:
+      statement: "Terminal physical state does NOT predict next paragraph zone (0/8 PASS after disambiguation)"
+      folio_mode_baseline: "0.685 — just knowing folio's most common zone beats all state models"
+      thermal_continuity_disambiguated: |
+        Raw consecutive e_frac rho=+0.230 is entirely folio-level shared environment:
+        shuffle p=0.565, adjacent≈non-adjacent (p=0.690), lag gradient flat.
+        Folio-residualized: rho flips to -0.161 (p=0.029) — weak thermal
+        anti-correlation (compensatory cycling, not heat carryover).
+      combined_model: "Adding state features DEGRADES prediction (0.484 vs zone-only 0.566)"
+      interpretation: |
+        Paragraphs are independently composed within the folio's thematic envelope.
+        Ordering is driven neither by position (C1399) nor by terminal state (C1400).
+        Folio specifies operational character; paragraphs sample from it independently.
+      provenance: "C1400, C1399, C1398, C1260, C1288, C1121"
+
+    paragraph_hazard_routing:
+      statement: "Paragraph zones interact with frame hazard classification at comparable magnitude to line-level (V=0.071 vs 0.085) but with DIFFERENT topology — infrastructure-first, not safe-first (C1467-C1469)"
+      zone_enrichments:
+        HEADER: "LOW 1.130x enriched, ZERO 0.784x depleted, IMMUNE 0.793x depleted — infrastructure specification, not safety"
+        BODY: "ZERO 1.077x enriched, IMMUNE 1.121x enriched — safe/immune vocabulary concentrates in body"
+        TAIL: "HIGH 1.134x enriched — hazardous operations accumulate at paragraph close"
+      contingency: "chi2=233.9, dof=6, V=0.071, p=1.15e-47"
+      non_fractal_topology: |
+        Line level: ZERO-first (1.236x at SPEC), HIGH-last (1.134x at CLOSURE) — SAFE operations open.
+        Paragraph level: LOW-first (1.130x at HEADER), HIGH-last (1.134x at TAIL) — INFRASTRUCTURE opens.
+        Comparable magnitudes (ratio 0.84) but different organizing principles.
+        e->y depleted at HEADER (0.796x), enriched at BODY (1.077x). k-HEAD depleted at HEADER (0.793x).
+      line_gradient_independence: |
+        Line-level hazard gradient (C1463) persists independently within ALL paragraph zones (C1469):
+        HEADER V=0.079, BODY V=0.094, TAIL V=0.091 (all p<10^-11).
+        BODY has STRONGEST within-zone line gradient. Two safety levels are INDEPENDENT.
+      long_paragraph_effect: "LONG (6+ lines) TAIL HIGH enrichment 1.274x vs SHORT (2-3) 1.014x — longer paragraphs accumulate more tail hazard"
+      provenance: "C1467, C1468, C1469"
 
   folio_paragraph_architecture:
     # Paragraph-as-unit properties (C855-C862) are now owned by PSC (paragraph.psc.yaml)
@@ -10959,19 +12900,68 @@ program_structure:
 convergence:
 
   target:
-    state: "STATE-C"
-    type: "MONOSTATE"
-    provenance: "C079, C084"
+    state: "STATE-C (= AXM macro-state)"
+    type: "MONOSTATE — thematic dominance, not sequential convergence (C1403)"
+    mechanism: "AXM is the dominant operational mode at section-determined rates (59-75%), not a terminal state that programs converge toward"
+    provenance: "C079, C084, C1403"
 
   terminal_distribution:
     state_c: "57.8%"
     transitional: "38.6%"
     initial_reset: "3.6%"
-    provenance: "C323"
+    note: "57.8% is corpus-wide average of section-level AXM thematic profiles"
+    provenance: "C323, C1403"
 
   gradient:
-    direction: "STATE-C increases with position"
-    provenance: "C325"
+    direction: "SECTION CONFOUND — raw rho=+0.226 collapses to zero within every section (C1401)"
+    mechanism: "Section B (74.5% AXM) occupies later manuscript positions (section-position rho=+0.391)"
+    within_section: "B: -0.012, H: +0.084, S: -0.008 (all p>0.6)"
+    provenance: "C325 (QUALIFIED by C1401)"
+
+  sequential_convergence:
+    across_paragraphs: "rho=-0.019, p=0.78 (16 increasing/15 decreasing/14 flat)"
+    within_paragraphs: "rho=-0.016, Wilcoxon p=0.535"
+    adjacent_independence: "rho=0.001, perm p=0.983"
+    position_predictive_value: "Position-aware model 29.6% WORSE than folio-mean baseline"
+    verdict: "NO_SEQUENTIAL_CONVERGENCE_AT_ANY_SCALE"
+    provenance: "C1402"
+
+  section_characterization:
+    dominant_differentiator: "REGIME composition (V=0.573, 7.4x next effect)"
+    section_B: "100% REGIME_1, highest AXM (74.5%), qo-dominated, lowest FL_HAZ"
+    section_H: "REGIMEs 2/3/4, ch-dominant, AXM=58.9%"
+    section_S: "REGIMEs 1/3, balanced ch/qo/BARE, AXM=66.8%, loosest grammar (4.47 bits)"
+    section_C: "REGIMEs 2/3/4, BARE-dominant, AXM=58.2%"
+    section_T: "REGIMEs 3/4, sh-dominant, tightest grammar (3.09 bits)"
+    verdict: "Sections are REGIME allocation policies, not grammar variants"
+    provenance: "C1404"
+
+  paragraph_axm_drivers:
+    dominant_predictor: "PREFIX composition (CV R2=0.706-0.736)"
+    section_only: "CV R2=-0.027 (worse than grand mean)"
+    full_model: "CV R2=0.707 (41 features WORSE than PREFIX-only 0.711)"
+    section_marginal: "+1.7% (effectively zero)"
+    top_predictors: "qo_frac (+0.576), staging_frac (-0.525), bare_frac (-0.515), chsh_frac (+0.508)"
+    universality: "PREFIX-AXM mapping consistent across all sections (6/7 features sign-consistent)"
+    chain: "section -> REGIME -> PREFIX -> AXM (section fully mediated)"
+    residual_decomposition:
+      total_residual: "29.4%"
+      measurement_noise: "25.2% (binomial sampling variance from finite tokens per paragraph)"
+      genuine_freedom: "4.2% (irreducible per-program design choice)"
+      noise_in_residual: "85.5%"
+      theoretical_max_r2: 0.748
+      prefix_fraction_of_max: "94.4%"
+      note: "Refines C1169's 27% to ~4% genuine + ~25% noise at paragraph level"
+    mediation_completeness:
+      statement: "PREFIX is sole load-bearing predictor. All non-PREFIX features fully mediated."
+      head_atoms_delta: "-0.005 (mediated by C1411)"
+      suffix_delta: "-0.003 (mediated by C1422)"
+      articulator_delta: "-0.002 (mediated by C1418)"
+      kernel_delta: "0.000"
+      line_structure_delta: "+0.0004"
+      interactions_delta: "-0.155 (overfitting)"
+      note: "Instruction grammar has ONE dynamical control point: PREFIX composition"
+    provenance: "C1405, C1406, C1407, C1431, C1432, C1433"
 
 # ============================================================
 link_operator:
@@ -11088,8 +13078,9 @@ recovery:
 
   stability_anchor:
     operator: "e"
-    function: "Anchors system to stable state"
-    provenance: "C105"
+    function: "Anchors system to stable state via e→y ambient substrate (15% of corpus, 0.06% hazard); NOT reactive recovery but omnipresent safe infrastructure"
+    ey_mechanism: "e→y rate = mechanical basis of forgiveness gradient (rho=+0.569 with AXM self-transition); post-e→y AXM +9.4pp one-way ratchet; context-independent deployment (p=0.310)"
+    provenance: "C105, C1457, C1458, C1459, C1462"
 
   safe_precedence:
     provenance: "C399"
@@ -11238,6 +13229,27 @@ three_compression_architecture:
     (C1141) — dark-pipeline compounds are built FROM bridge atoms but share no
     complete MIDDLEs with bridges.
 
+    Phase 538 (C1499-C1505) established that the atom ontology is MANUSCRIPT-WIDE:
+    all 7 pipeline channels share the same 18-atom core (min Jaccard 0.895, C1499).
+    Modifier grammar is universal (JSD < 0.007 between non-bridge channels, C1504).
+    Channels differentiate through slot PROPORTIONS, not inventories. Bridge is the
+    systematic outlier across HEAD (enriched e/k/t 37.6% vs dark 31.0%, C1500),
+    TERMINAL (LOCKED 8.2% vs dark 3.7%, C1501), and MODIFIER distributions
+    (f absent, i elevated 30.2%, C1504). Same bridge MIDDLEs undergo dramatic
+    morphological redistribution between A and B contexts: -edy ~50x B-enriched,
+    ct ~12x A-enriched (C1503).
+
+    Phase 539 (C1506-C1509) quantified cross-system stability: INTERNAL structure
+    preserved (mean JSD 0.046), EXTERNAL deployment shifted (mean JSD 0.113, 2.4x
+    ratio). TERMINAL atoms are the most stable slot across A and B (JSD=0.014,
+    C1506); HEAD atoms are the least stable (JSD=0.077, C1507). A preferentially
+    uses o-HEAD/HEADLESS bridges (arrangement); B preferentially uses e/k-HEAD
+    bridges (execution). Categories are INTRINSIC -- 100% same category for same
+    MIDDLE in both systems -- but token-weighted emphasis shifts THERMAL +10.1pp
+    in B, STAGING -11.1pp (C1508). Individual atoms partition into three stability
+    tiers: 8 stable (r/s/t/l/a/m/o/g, corr>0.90), 6 moderate (k/c/p/i/e/n),
+    3 unstable (y/h/d, corr<0.70) (C1509).
+
   atom_behavioral_basis: |
     Bridge atoms serve as building blocks (C1141) BECAUSE they carry genuine
     behavioral profiles that compose additively in MIDDLE position (C1190).
@@ -11249,7 +13261,7 @@ three_compression_architecture:
     atom substrates through behavioral composition, not arbitrary string
     concatenation.
 
-  provenance: "C1019, C1020, C1021, C1003, C1004, C1010, C1013, C1139, C1141, C1190, C1191"
+  provenance: "C1019, C1020, C1021, C1003, C1004, C1010, C1013, C1139, C1141, C1190, C1191, C1499, C1500, C1501, C1503, C1504, C1506, C1507, C1508, C1509"
 
 # ============================================================
 design_freedom:
@@ -11695,7 +13707,7 @@ vocabulary_architecture:
       c1035_trajectory: "~57% → ~49% → ~32% → ~27% irreducible"
       provenance: "C1168"
     residual_freedom_closure:
-      statement: "AXM residual CLOSED at ~27% — genuine per-program design freedom"
+      statement: "AXM residual CLOSED at ~27% folio-level — refined to ~4% genuine + ~25% noise at paragraph level (C1432)"
       exhaustive_battery: "5 tests, 23 candidate predictors"
       univariate_holm_sig: 0  # out of 23
       rf_cv_r2: -0.141  # permutation p=0.375
@@ -11703,8 +13715,9 @@ vocabulary_architecture:
       regime_kw_p: 0.998  # perfect homogeneity
       c458_asymmetry: "SYMMETRIC — freedom not preferentially in recovery space"
       c1035_final_trajectory: "~57% → ~49% → ~32% → ~27% CLOSED"
-      interpretation: "73% structurally determined (dual boundary model), 27% genuine per-program design freedom"
-      provenance: "C1169"
+      interpretation: "73% structurally determined (dual boundary model), 27% folio-level residual. At paragraph level: 70.6% PREFIX + 25.2% noise + 4.2% genuine freedom (C1432)"
+      paragraph_noise_decomposition: "C1432 shows 85.5% of paragraph residual is binomial sampling noise. True design freedom ~4.2%"
+      provenance: "C1169, C1431, C1432, C1433"
     dark_pipeline_profile:
       compound_rate: "66.7%"
       section_concentration: "Herf 0.716 (strongly section-specific)"
@@ -11881,7 +13894,49 @@ ht_un_integration:
       curation_parallel: "Parallels C1028 (0.9% PREFIX×MIDDLE×SUFFIX occupancy)"
       phantom_middles: "15 B-absent ch/sh-initial MIDDLEs — morphologically isolated, dead naming pattern (C1178)"
       provenance: "C1175, C1176, C1177, C1178"
-    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1175, C1176, C1177, C1178"
+    atom_level_category:
+      # Phase 538: CROSS_LAYER_ATOM_DECOMPOSITION (C1505)
+      statement: "Dark pipeline is MARKING-dominant (36.0%) with secondary FLOW (20.2%), depleted TRANSITION (2.1%)"
+      bridge_contrast: "Bridge balanced across 8 categories (V=0.4427); dark concentrated in 3"
+      head_profile: "Dark o+headless 63.3% vs bridge 51.8% — arrangement/identification dominated (C1500)"
+      terminal_profile: "Dark bare 74.7% + DIFFUSE/h 15.7% — transparent terminals for identification (C1501)"
+      azc_enrichment: "AZC o-HEAD 2.70x (strongest HEAD enrichment any channel, C1502)"
+      provenance: "C1499, C1500, C1501, C1502, C1505"
+
+    category_generalization:
+      # Phase 448: DARK_PIPELINE_CHARACTERIZATION (C1254)
+      statement: "8 operational categories partially generalize to dark pipeline via atom plurality vote"
+      verdict: "PARTIALLY_GENERALIZES (3/6 tests pass)"
+      auto_assignment_coverage: "95.2% of dark MIDDLEs (1,144/1,202)"
+      total_token_coverage: "99.5% (88.6% human-glossed + 10.8% auto-assigned, 127 tokens remain)"
+      line_position_differentiation: "10.8x over null (p=0.001)"
+      within_line_mi: "1.5x over null (p=0.001), human↔dark cross MI=0.071"
+      behavioral_silhouette: "FAIL overall (p=0.155), but LOCKED+SOLID tier PASS (p=0.001)"
+      section_divergence: "FAIL — categories don't concentrate by section (selection-level, not category-level)"
+      confidence_stratification: |
+        LOCKED+SOLID (133 MIDDLEs, ~12%): structurally valid behavioral clustering
+        PLAUSIBLE (269 MIDDLEs, ~24%): borderline
+        WEAK (742 MIDDLEs, ~65%): noise-level (driven by o=work, l=frame, r=input atoms)
+      key_finding: |
+        Atom-level operational encoding penetrates the HT layer. The 49-class grammar
+        boundary is a classification boundary, not a semantic boundary. The same atoms
+        encode the same operational categories whether in core MIDDLEs or dark compounds.
+      provenance: "C1254"
+    section_universality:
+      # Phase 449: CATEGORY_SECTION_VOCABULARY (C1255)
+      statement: "Core grammar vocabulary is section-universal; dark compounds carry section identity"
+      verdict: "WEAK_SIGNAL (2/5 tests pass)"
+      vocabulary_shared: "Jaccard 0.676 ≈ null 0.669 — same MIDDLEs used across all sections within each category"
+      frequency_specific: "34.3% of MIDDLEs section-enriched >2x (null 13.4%, p=0.001); LOO classification 76.8% (+37.8pp, p=0.001)"
+      category_orthogonal: "Conditioned JS 1.13x raw JS, p=0.603 — category partition orthogonal to section identity"
+      dark_vs_core: "WEAK dark compounds Jaccard=0.894 (nearly disjoint across sections) vs LOCKED/SOLID Jaccard=0.343 (universal)"
+      unification: |
+        Unifies C1134 (frequency modulation), C1148 (3.9x hyper-modulation), C1176 (atom-selection-dominated):
+        - Core grammar = equipment-independent operational toolkit (shared across all sections)
+        - Dark compounds = equipment-specific identification vocabulary (section-specific selection)
+        - Frequency modulation bridges the two layers
+      provenance: "C1255"
+    provenance: "C1137, C1138, C1141, C1142, C1143, C1144, C1145, C1146, C1147, C1148, C1175, C1176, C1177, C1178, C1254, C1255"
 
 # ============================================================
 robustness:
@@ -11964,6 +14019,40 @@ operational_layer:
       s: {gloss: "break", freq: 429, pct: "1.9%"}
       or: {gloss: "portion", freq: 418, pct: "1.8%"}
     provenance: "C382, C588, MIDDLE_SEMANTIC_MAPPING"
+
+  gloss_categories:
+    # Phase 446: GLOSS_SCALE_VALIDATION (C1250, C1251)
+    description: |
+      75 core MIDDLEs organize into 8 operational categories validated at
+      corpus scale. These are NOT semantic labels — they are distributional
+      clusters confirmed by behavioral, positional, and compositional tests.
+    tier: 2  # Category STRUCTURE is Tier 2; individual glosses remain Tier 3
+    categories:
+      THERMAL: {count: 12, key_middles: "k, e, ke, ek, kee, eey", role: "Temperature management (heat/cool cycles)"}
+      CONTAINMENT: {count: 6, key_middles: "ar, am, or", role: "Vessel operations (seal/unseal/portion)"}
+      FLOW: {count: 8, key_middles: "t, ain, aiin", role: "Material transfer and intake"}
+      MONITORING: {count: 8, key_middles: "h, ch, sh", role: "Sensory checks and verification"}
+      OPERATION: {count: 10, key_middles: "ol, ok", role: "Active process operations"}
+      TRANSITION: {count: 15, key_middles: "edy, ey, y, dy", role: "State transitions and batch processing"}
+      STAGING: {count: 9, key_middles: "aiin, s", role: "Iteration and sequencing"}
+      MARKING: {count: 7, key_middles: "d, p, f, c", role: "Checkpoints and flags"}
+    validation_battery:
+      coherence: "5/7 categories COHERENT (intra > inter behavioral similarity, p<0.05)"
+      coverage: "88.6% of B tokens covered by 90 human-glossed MIDDLEs"
+      line_position: "30.5x differentiation over null (p=0.001)"
+      section_profile: "8.2x divergence over null (p=0.001)"
+      folio_specialization: "Within-folio JSD 0.263 < between-folio 0.294 (p=0.000, C1252)"
+      apparatus_correlation: "THERMAL fraction rho=0.409 at paragraph level (p=0.000, C1253)"
+    atom_compositionality:
+      # C1251: Atom compositional validation
+      statement: |
+        Compound MIDDLEs inherit category from constituent atoms via plurality vote.
+        Atom-level semantics compose predictably: heat-cool-check compounds behave
+        as THERMAL because their atoms are THERMAL. This confirms the atom glosses
+        are not arbitrary labels but structurally real operational primitives.
+      atom_count: 18
+      compound_prediction: "Plurality vote over atoms predicts behavioral category"
+    provenance: "C1250, C1251, C1252, C1253"
 
   token_reading_pattern:
     description: |
@@ -12065,13 +14154,19 @@ annotations:
     asymmetric_rate: "65%"
     distant_from_kernel: "59%"
     phase_ordering_dominant: "41%"
-    provenance: "C109, C110, C111, C112"
+    head_territory_orthogonality: "7/10 pairwise Jaccard=0 across 5 classes (C1528)"
+    phantom_middles: "5/17 forbidden MIDDLEs absent from corpus (C1531)"
+    containment_strictest: "100% avoidance, 0/1,129 appearances (C1530)"
+    line_position_range: "0.402 (COMPOSITION_JUMP) to 0.581 (PHASE_ORDERING) (C1532)"
+    provenance: "C109, C110, C111, C112, C1528, C1529, C1530, C1531, C1532, C1533"
 
   convergence_statistics:
     state_c_terminal: "57.8%"
     transitional_terminal: "38.6%"
-    completion_gradient_rho: "+0.24"
-    provenance: "C323, C325"
+    completion_gradient_rho: "+0.24 (SECTION CONFOUND — C1401)"
+    sequential_convergence: "NONE at any scale (C1402)"
+    monostate_reframe: "Thematic dominance, not sequential convergence (C1403)"
+    provenance: "C323, C325, C1401, C1402, C1403"
 
   link_statistics:
     density: "38%"
@@ -12201,6 +14296,22 @@ provenance:
     - "C111"   # 65% asymmetric
     - "C112"   # 59% distant from kernel
     - "C386"   # Additional suppressed transitions
+    - "C1446"  # k-HEAD complete hazard immunity (0.0% across 3,100 tokens)
+    - "C1447"  # Terminal atom hazard partition (HIGH r/n/l, LOW e/y, ZERO k/m/h)
+    - "C1448"  # HEAD x TERM frame hazard map with k-neutralization
+    - "C1449"  # PREFIX channel hazard with sister parity (ok/ot 1.04x, ch/sh 1.29x)
+    - "C1450"  # Opacity tier hazard gradient (SEMI_TRANSPARENT 56.5%)
+    - "C1451"  # Mode B exclusive forbidden violation concentration (11/11)
+    - "C1452"  # Non-monotonic i-extension hazard gradient (single-i=39.8%, double-ii=0.0%)
+    - "C1453"  # i-modifier frame selection not inherent hazard (Simpson's paradox, delta -0.407)
+    - "C1454"  # i-modifier anti-thermal category profile (THERMAL 0.002x)
+    - "C1455"  # Quenching modifier partial i-override (22.6% -> 7.5%)
+    - "C1456"  # i-modifier suffix depletion (9.4% suffix, 95.7% Mode B)
+    - "C1480"  # i-modifier Simpson's paradox full resolution (selection +0.319, conditional -0.388)
+    - "C1481"  # i-modifier terminal transformation within a-HEAD (n-term 1.2%→82.1%)
+    - "C1482"  # Double-ii safety via TRANSITION-locked n-terminal (0.0%, monotonic gradient)
+    - "C1483"  # TERMINAL category specificity gradient (hazard axis: y=source 90.9%, n=target 90.9%)
+    - "C1485"  # HEAD-TERMINAL affinity partition (k/t avoid hazard-carrying n/m terminals)
 
   program_line:
     - "C357"   # Lines deliberately chunked
@@ -12225,6 +14336,30 @@ provenance:
     - "C1219"  # Base character determines MIDDLE content (within-base cosine 0.950)
     - "C1220"  # Modifier consistency varies by character (high o=0.836, low d=0.345)
     - "C1221"  # Prep PREFIX similarity base-driven (shuffle p=0.998, challenges F-BRU-012)
+    - "C1396"  # Prep PREFIX structural differentiation (7/8 non-content dimensions, atom-grounded glosses)
+    - "C1397"  # Headless compound functional grammar (pseudo-HEAD, V=0.503, suffix bifurcation, da=i-initial)
+    - "C1398"  # Paragraph operational gradient (continuous space, 4 zones, section V=0.408, REGIME V=0.371, C1378 connection)
+    - "C1399"  # Paragraph ordering null (7/8 FAIL, zone inertia O/E=2.02, no sequence)
+    - "C1400"  # Paragraph state-independent ordering (0/8 PASS, thermal continuity is shared environment, folio-mode baseline 0.685)
+    - "C1472"  # Modifier co-occurrence avoidance dominates ordering (8/15 pairs never co-occur)
+    - "C1473"  # Modifier avoidance is frame incompatibility (HEAD+TERM gate modifier palette)
+    - "C1474"  # s-modifier universal connector (co-occurs with all other modifiers)
+    - "C1475"  # HEAD atom categorical domain differentiation (V=0.553, 5 HEAD atoms)
+    - "C1476"  # k-HEAD intrinsic hazard immunity (0.0% across all compositional contexts)
+    - "C1477"  # a-HEAD quench-resistant hazard concentration (66.0% forbidden)
+    - "C1478"  # k/t terminal mirror (identical terminals, opposite categories)
+    - "C1479"  # HEAD modifier selectivity partition (each HEAD selects distinct modifier profile)
+    - "C1483"  # TERMINAL category specificity gradient (V=0.463, r=FLOW 98.9% to h=diffuse 6 categories)
+    - "C1484"  # TERMINAL modifier exclusivity (n=i-only, y=d-only, h={c,p,f,s}, l/r/m resist modification)
+    - "C1485"  # TERMINAL HEAD affinity partition (e->y 72.7%, a->n/m 59-60%, k/t avoid n/m)
+    - "C1486"  # m-terminal line-final closure (73.7% line-final, 87.9% TRANSITION, confirms C1434-C1439)
+    - "C1487"  # Six-terminal functional taxonomy (LOCKED r/m, CHANNELED l/y/n, DIFFUSE h/bare)
+    - "C1534"  # PREFIX 15-char three-tier positional classification (MODIFIER/BASE/DUAL, V=0.547)
+    - "C1535"  # i-atom excluded from PREFIX (iteration is MIDDLE-internal)
+    - "C1536"  # Base-to-HEAD selection V=0.478 (89% of HEAD specificity)
+    - "C1537"  # a-base universal headless gateway (94-96% regardless of modifier)
+    - "C1538"  # q-modifier thermal activation on o-base (64% k-HEAD, 3.5x gap)
+    - "C1539"  # Sister pair SAME_BASE/SAME_MOD atom architecture (all HEAD JSD<0.01)
 
   link:
     - "C334"   # LINK section conditioning
@@ -12236,7 +14371,17 @@ provenance:
   convergence:
     - "C323"   # Terminal distribution
     - "C324"   # Section-dependent terminals
-    - "C325"   # Completion gradient
+    - "C325"   # Completion gradient (QUALIFIED by C1401: section confound)
+    - "C1401"  # C325 completion gradient is section confound
+    - "C1402"  # No sequential convergence to AXM at any scale
+    - "C1403"  # MONOSTATE is thematic dominance not sequential convergence
+    - "C1404"  # Section structural differentiation is REGIME-dominated
+    - "C1405"  # Paragraph AXM rate driven by PREFIX not section
+    - "C1406"  # Section is REGIME composition at paragraph level
+    - "C1407"  # PREFIX-AXM relationship universal across sections
+    - "C1431"  # Non-PREFIX features add zero AXM power (41 features, 8 groups, all redundant)
+    - "C1432"  # Paragraph AXM residual = 85% noise + 4.2% genuine freedom
+    - "C1433"  # PREFIX-AXM mediation chain complete (sole load-bearing predictor)
 
   recovery:
     - "C397"   # qo-prefix post-source frequency (REVISED: lane transition, not escape)
@@ -12245,6 +14390,10 @@ provenance:
     - "C601"   # QO zero hazard participation
     - "C643"   # QO-CHSH rapid alternation
     - "C645"   # CHSH 75.2% post-hazard dominance
+    - "C1457"  # e→y narrow vocabulary dominance (15% of corpus)
+    - "C1458"  # e→y categorical safety (0.06% hazard, 400x reduction)
+    - "C1459"  # e→y context-independent deployment (ambient, not reactive)
+    - "C1462"  # e→y rate predicts folio forgiveness (rho=+0.569 with AXM self)
 
   design:
     - "C458"   # Execution design clamp
@@ -12360,6 +14509,19 @@ provenance:
       - "QO MIDDLEs span 1.773-bit selectivity gradient; rare=selective common=promiscuous rho=0.665 (C1245)"
       - "E-depth matched at category (OR=2.625) but complementary within e-subset rho=-0.262; i null (C1245)"
       - "Mode A enriches energy+specific-measurement pairs MI=1.425; Mode B enriches sustained+passive MI=0.978 JSD z=4.60 (C1246)"
+
+  apparatus_vocabulary_classification:
+    description: "REGIME encodes apparatus type via vocabulary signatures; R1/R3 single-apparatus, R2/R4 mixed"
+    constraints: [C1247, C1248, C1249]
+    findings:
+      - "aii (unseal) is 41x enriched in REGIME_3 vs REGIME_1; 14/20 R3 folios vs 1/32 R1; R3=open-cycle batch apparatus (C1247)"
+      - "Line context: close/check → aii → open/continue; aii sits at batch transition points (C1247)"
+      - "Distillation cycle: t+eol co-occur OR=16.27 p=0.0001; sustained heat cycle: ke+eeol always co-occur OR=inf p=0.0003 (C1248)"
+      - "DISTILLATION vs PRECISION profiles anti-correlate rho=-0.666 p<0.0001: folios specialize (C1248)"
+      - "R1/R3 are single-apparatus REGIMEs (97%/95% distillation); R2/R4 mix apparatus types within fire degree (C1248)"
+      - "R3 batch vocabulary: aii 41x, eo cool-open 7.6x, od collect 6.9x; R1 continuous vocabulary: ke 3.2x, ck 2.7x, lk 4.3x (C1248)"
+      - "Section H (Herbal) is most apparatus-diverse: R2-SEALED 100% Herbal, R4-non-distillation 100% Herbal (C1249)"
+      - "Top-down PCA (5-test battery) returned NOT_SUPPORTED; bottom-up profile scoring from Brunschwig markers found the signal"
 
   small_role_anatomy:
     - "C581"   # CC definitive census
@@ -12509,6 +14671,8 @@ provenance:
     - "C860"   # Section paragraph organization (BIO large, PHARMA small)
     - "C861"   # LINK/hazard paragraph neutrality
     - "C862"   # Role template verdict (PARALLEL_PROGRAMS)
+    - "C1252"  # Folio operational specialization (within-folio JSD 0.263 < between 0.294, p=0.000)
+    - "C1253"  # Paragraph-level apparatus correlation (rho=0.409, attenuated from token-level 0.758)
 
   gallows_paragraph_dynamics:
     - "C863"   # Paragraph-ordinal EN subfamily gradient
@@ -12640,6 +14804,218 @@ provenance:
     - "C1223"  # MIDPROCESS sub-type split matches Voynich at 5 PCs exactly
     - "C1224"  # Voynich axis distribution transforms plant distillation profiles (ITER 7.0x, FREE 6.3x deflated)
 
+  category_execution:
+    - "C1277"  # THERMAL escape fully PREFIX-mediated (partial rho=-0.081 after qo control)
+    - "C1278"  # Category reduces class entropy 24.7%, adds 18.6% beyond PREFIX
+    - "C1279"  # Mode A THERMAL-enriched 28.9%, Mode B TRANSITION-enriched 17.4%
+    - "C1280"  # Hazard concentrates in FLOW 50.4% / CONTAINMENT 11.5% (V=0.560)
+    - "C1281"  # TRANSITION anti-escape PREFIX-independent (partial=-0.586)
+    - "C1282"  # Category predicts section (6/8 Bonferroni)
+    - "C1283"  # Entry THERMAL-enriched, exit TRANSITION-enriched (V=0.141)
+    - "C1284"  # Kernel-category calibration (consistency check only)
+
+  category_mechanism_decomposition:
+    - "C1285"  # TRANSITION anti-escape via role redirection to AUX/FQ
+    - "C1286"  # Category transition grammar structured (chi2=526, p~10^-81)
+    - "C1287"  # Paragraph headers MARKING-enriched 2.44x, THERMAL-suppressed 0.46x
+    - "C1288"  # Within-folio paragraphs share category profiles (z=-4.92)
+    - "C1289"  # THERMAL/TRANSITION predict AXM dwell (rho=+/-0.52)
+    - "C1290"  # Paragraph mode predicted by category (V=0.114)
+  category_regime_integration:
+    - "C1291"  # Category-REGIME association is kernel-mediated (chi2=526, V=0.106, but kernel-residualized p=0.061)
+    - "C1292"  # Section-independent category-REGIME association (within-section chi2=216.4)
+    - "C1293"  # Categories discriminate beyond role profiles (Fisher p=7.5e-8)
+    - "C1294"  # Categories do NOT extend C1169 AXM model (validates closure)
+  prefix_category_anatomy:
+    - "C1297"  # PREFIX-category structured association (V=0.311, 32 PREFIXes, chi2=15,598)
+    - "C1298"  # ok-ot category divergence (V=0.105, ok THERMAL-enriched, ot OPERATION-enriched)
+    - "C1299"  # ch-sh B-specific category divergence (V=0.121, survives section/position controls)
+    - "C1300"  # qo near-pure THERMAL channel (59.0%, rank 1/32)
+    - "C1301"  # PREFIX category info beyond base group (CMI=0.058 bits, t-base V=0.891)
+    - "C1302"  # BARE distinctive category profile (V=0.243, THERMAL-depleted, FLOW/STAGING-enriched)
+  sister_category_mechanism:
+    - "C1303"  # ch/sh category divergence position-independent (V retention 98.3%, CATEGORY_GENUINE)
+    - "C1304"  # ok/ot category divergence position-independent (V retention 124.1%, position masking)
+    - "C1305"  # MIDDLE determines category (0/33 shift, vocabulary selection not transformation)
+    - "C1306"  # Cross-lane cargo divergence (ch->STAGING, sh->THERMAL to QO lane, V=0.122)
+    - "C1307"  # No sister x category x position interaction (additive, not interactive)
+
+# ============================================================
+category_execution:
+  provenance: "C1277-C1294"
+  audit_note: "v3.15: Phase 456 category-REGIME integration (C1291-C1294): kernel-mediated, validates C1169 closure"
+
+  escape_mechanism:
+    statement: "THERMAL escape is fully PREFIX-mediated: THERMAL->qo(44.1%)->QO lane->escape"
+    thermal_qo_rate: "44.1% (vs 9.5% baseline, 4.6x)"
+    transition_qo_rate: "1.7% (26x lower than THERMAL)"
+    partial_after_control: "rho=-0.081 (p=0.468) -- mediation complete"
+    chain: "THERMAL MIDDLEs -> qo-PREFIX selection -> zero-hazard QO lane (C601) -> escape"
+    provenance: "C1277"
+
+  anti_escape_mechanism:
+    statement: "TRANSITION anti-escape via role redirection: successors routed to AUX (1.24x) and FQ (1.13x), away from EN (0.85x)"
+    mechanism: "Role redirection, not EN self-loop (expert hypothesis rejected)"
+    en_successor_rate: "0.403 for TRANSITION vs 0.476 baseline"
+    en_en_selfloop: "0.474 for TRANSITION EN sources vs 0.517 baseline (suppressed)"
+    sequential_clustering: "None (per-token mechanism, T2 FAIL z=-1.48)"
+    asymmetry: "Escape = PREFIX routing (THERMAL), anti-escape = role redirection (TRANSITION)"
+    provenance: "C1285, C1281"
+
+  category_transition_grammar:
+    statement: "8x8 category transition matrix is strongly structured (chi2=526, V=0.060, p~10^-81)"
+    self_loops_enriched: "MARKING +10.4, THERMAL +6.0, FLOW +4.6 (operations persist in theme)"
+    key_pathways: "FLOW->TRANSITION +6.7 (transfer->close), OPERATION->THERMAL +6.5 (work->heat)"
+    depleted: "FLOW->THERMAL -7.3, THERMAL->TRANSITION -3.4 (no direct heat->close)"
+    directional: "Asymmetric -- FLOW->TRANSITION (779) vs TRANSITION->FLOW (525)"
+    provenance: "C1286"
+
+  class_prediction:
+    statement: "Category and PREFIX are complementary axes for instruction class prediction"
+    category_ig: "1.207 bits (24.7%)"
+    prefix_ig: "2.589 bits (53.1%)"
+    combined_ig: "3.496 bits (71.7%)"
+    category_beyond_prefix: "0.906 bits (18.6%)"
+    provenance: "C1278"
+
+  mode_category:
+    statement: "Mode A injects THERMAL/escape-capable vocabulary; Mode B maintains TRANSITION baseline"
+    mode_a_thermal: "28.9%"
+    mode_b_thermal: "19.9%"
+    mode_a_transition: "11.3%"
+    mode_b_transition: "17.4%"
+    paragraph_level: "Confirmed at paragraph level: Mode A THERMAL 28.8%, Mode B THERMAL 21.0% (C1290, V=0.114)"
+    provenance: "C1279, C1290"
+
+  hazard_categories:
+    statement: "Hazard concentrates in FLOW/CONTAINMENT; THERMAL is hazard-immune"
+    flow_hazard_rate: "50.4% (vs 8.8% safe)"
+    containment_hazard_rate: "11.5% (vs 2.5% safe)"
+    thermal_hazard_rate: "2.6% (vs 30.8% safe)"
+    cramers_v: "0.560"
+    forbidden_transitions: "17 forbidden pairs are cross-category (15/17), MARKING-target dominated -- below category level"
+    provenance: "C1280"
+
+  boundary_categories:
+    statement: "Entry zones THERMAL/STAGING-enriched; exit zones TRANSITION/FLOW-enriched"
+    entry_thermal: "24.4%"
+    exit_thermal: "17.1%"
+    entry_transition: "13.9%"
+    exit_transition: "20.2%"
+    provenance: "C1283"
+
+  section_prediction:
+    statement: "Category predicts section membership (6/8 categories Bonferroni-significant)"
+    cramers_v: "0.106"
+    provenance: "C1282"
+
+  paragraph_architecture:
+    header_specification:
+      statement: "Paragraph headers are MARKING-enriched (2.44x) and STAGING-enriched (1.45x); THERMAL suppressed (0.46x)"
+      three_level_hierarchy: "Paragraph header = marking/staging, Line entry = thermal, Line body = flow/transition"
+      provenance: "C1287"
+    folio_coherence:
+      statement: "Within-folio paragraphs share category profiles (within JSD=0.109 vs null=0.122, z=-4.92)"
+      interpretation: "Folio imposes category theme on paragraphs; independence is structural not thematic"
+      provenance: "C1288"
+
+  axm_category_prediction:
+    statement: "Category composition predicts raw AXM self-transition rate but NOT C1169 residuals"
+    thermal_rho: "+0.520 (p<0.001) -- THERMAL = high AXM dwell"
+    transition_rho: "-0.519 (p<0.001) -- TRANSITION = low AXM dwell"
+    c1169_residual: "No category fraction correlates with C1169 residuals (all |rho|<0.14) -- signal fully absorbed by REGIME+boundary model"
+    interpretation: "Raw correlation is real but mediated by kernel composition; existing C1169 predictors capture all category-level AXM information"
+    provenance: "C1289, C1294"
+
+  regime_category_integration:
+    statement: "Category-REGIME association exists but is kernel-mediated -- not an independent organizational axis"
+    raw_association: "chi2=526, V=0.106, p=5.5e-98"
+    kernel_residualized: "Fisher p=0.061 (non-significant after removing k/h/e pathway)"
+    kernel_r2: "THERMAL=0.779, TRANSITION=0.546, FLOW=0.409, CONTAINMENT=0.201"
+    regime_profiles: "REGIME_1=THERMAL-dominant(29.7%), REGIME_2=FLOW-dominant(28.1%), REGIME_4=OPERATION/TRANSITION-dominant"
+    section_control: "Survives section stratification (within-section chi2=216.4) -- section is not sole mediator"
+    beyond_roles: "Categories add resolution beyond role profiles (Fisher p=7.5e-8, cat JSD > role JSD in 5/6 pairs)"
+    c1169_closure: "Categories do NOT extend C1169 -- 27% residual validated as irreducible design freedom"
+    provenance: "C1291, C1292, C1293, C1294"
+
+  prefix_category_anatomy:
+    statement: "Individual PREFIXes predict 8-category labels with structured selectivity (V=0.311)"
+    audit_note: "v3.16: Phase 458 PREFIX_CATEGORY_ANATOMY (C1297-C1302): PREFIX-category association structured, tautology gate passed"
+    full_table: "32 x 8 contingency table, chi2=15,598, dof=217, V=0.311 -- not monolithic"
+    dominant_profiles:
+      qo: "59.0% THERMAL (rank 1/32, near-pure channel)"
+      ct: "90.0% MONITORING (only 60 tokens but highest purity)"
+      a_base: "da 56.3%, sa 52.3%, ka 42.9%, ta 46.0% -- all STAGING-dominant"
+      ok: "27.6% FLOW + 26.5% TRANSITION + 24.7% THERMAL (balanced)"
+      ot: "27.9% FLOW + 25.2% TRANSITION + 20.2% THERMAL (balanced but OPERATION-enriched vs ok)"
+      ch: "25.9% OPERATION + 20.9% THERMAL + 13.8% TRANSITION"
+      sh: "30.8% OPERATION + 24.0% THERMAL + 17.3% TRANSITION"
+      BARE: "29.4% FLOW + 20.7% STAGING + 19.3% TRANSITION (THERMAL-depleted 4.1%)"
+    sister_pair_ok_ot:
+      statement: "ok/ot diverge at category grain (V=0.105, p=4.0e-5)"
+      ok_enrichment: "THERMAL 1.22x, MONITORING 2.52x"
+      ot_enrichment: "OPERATION 0.72x, STAGING 0.65x"
+      interpretation: "ok skews monitoring/measurement, ot skews execution/staging"
+    sister_pair_ch_sh:
+      statement: "ch/sh diverge in B (V=0.121, p=9.4e-16) but NOT in A (C1268 V=0.021)"
+      section_control: "Survives section stratification (Fisher p=3.4e-10)"
+      position_control: "Present in both line halves"
+      mechanism: "ch selects broader MIDDLE vocabulary (FLOW/CONTAINMENT/MARKING minorities)"
+      scope_note: "C1268 remains valid in A -- system-dependent effect"
+    qo_purity:
+      statement: "qo is the primary thermal injection channel (59.0% THERMAL, 2.50x baseline)"
+      suppressed: "OPERATION 3.2%, TRANSITION 1.5% -- strongly excluded from non-thermal operations"
+    tautology_gate:
+      statement: "PREFIX adds genuine category info beyond base group (CMI=0.058 bits, 2.1%)"
+      v_base: 0.258
+      v_prefix: 0.311
+      cmi_bits: 0.058
+      key_within_base: "t-base V=0.891 (ct vs ot), o-base V=0.217 (qo vs others)"
+      conclusion: "Not tautological -- PREFIX identity matters beyond base membership"
+    bare_profile:
+      statement: "BARE tokens are THERMAL-depleted (4.1% vs 27.5%) and FLOW/STAGING-enriched"
+      implication: "PREFIX slot is the primary mechanism for injecting thermal content"
+      anti_qo: "BARE is the categorical inverse of qo -- no prefix = no thermal channel"
+    channel_symmetry:
+      statement: "EN channel (ch/sh + qo) parallels AX channel (ok/ot + ct)"
+      pattern: "Sister pair + categorically pure third member in each channel"
+      en_third: "qo = 59% THERMAL"
+      ax_third: "ct = 90% MONITORING"
+      asymmetry: "ct is rare in B (60 tokens, 0.26%) while qo is common (4,069, 17.6%)"
+    provenance: "C1297, C1298, C1299, C1300, C1301, C1302"
+
+  sister_category_mechanism:
+    statement: "Sister pair category divergence is position-independent and driven by vocabulary selection"
+    audit_note: "v3.17: Phase 459 SISTER_CATEGORY_MECHANISM (C1303-C1307): position-controlled V retention, MIDDLE stability, cross-lane cargo"
+    position_independence:
+      ch_sh:
+        V_retention: "98.3% -- position explains almost none of category divergence"
+        fisher_p: "1.17e-4"
+        zone_V: "EARLY=0.094, MID=0.097, LATE=0.102 (stable across zones)"
+        interpretation: "CATEGORY_GENUINE -- C929 positional axis orthogonal to category axis"
+      ok_ot:
+        V_retention: "124.1% -- position was SUPPRESSING divergence"
+        fisher_p: "4.62e-5"
+        zone_V: "EARLY=0.207, MID=0.125, LATE=0.093"
+        interpretation: "CATEGORY_GENUINE -- C1184 positional polarity was hiding category signal"
+    mechanism:
+      statement: "0/33 qualifying MIDDLEs shift dominant category between ch and sh (binom p=1.0)"
+      interpretation: "MIDDLE_DETERMINES_CATEGORY -- MIDDLE category is intrinsic, not context-dependent"
+      implication: "Sister pairs diverge by choosing DIFFERENT MIDDLEs, not by changing what the same MIDDLE means"
+      analogy: "PREFIX is a vocabulary selector (which words to use), not a vocabulary transformer (what words mean)"
+    cross_lane_cargo:
+      statement: "ch->QO and sh->QO transitions carry different category cargo (V=0.122, p=2.34e-5)"
+      ch_routing: "STAGING 20.6% vs 12.9% (1.59x)"
+      sh_routing: "THERMAL 53.6% vs 45.0% (1.19x)"
+      self_category: "ch/sh tokens themselves also differ at transition points (V=0.115)"
+      interpretation: "Sister identity shapes downstream QO-lane category composition"
+    no_interaction:
+      statement: "No sister x category x position three-way interaction"
+      ch_sh_V_range: "0.009 (perm p=1.0)"
+      ok_ot_V_range: "0.114 (perm p=1.0)"
+      interpretation: "Sister category effect is additive with position, not interactive"
+    provenance: "C1303, C1304, C1305, C1306, C1307"
+
 # ============================================================
 disallowed:
   - interpretation: "B grammar varies by Currier A source"
@@ -12708,12 +15084,12 @@ disallowed:
 meta:
   name: "AZC Positional Classification Contract"
   acronym: "AZC-ACT"
-  version: "1.2"
-  date: "2026-02-06"
+  version: "1.5"
+  date: "2026-03-06"
   status: "ACTIVE"
   layer_type: "mapping contract"
   derived_from: "Tier-2 constraints only"
-  audit_note: "v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31) finding that AZC is static lookup table with no independent positional effect."
+  audit_note: "v1.5: o-HEAD cross-system gradient A>AZC>B added (C1559, Phase 548). v1.4: Zone HEAD atomization added (C1516-C1522, Phase 541). Zones differentiate at HEAD slot level (V=0.115) despite raw atom uniformity (C1271). o-HEAD zone-graded. B/A proximity partition. v1.3: Category organization added (C1269-C1276, Phase 453). v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31)."
   governance: |
     AZC-ACT is NOT authoritative. Constraints are authoritative.
     AZC-ACT describes HOW vocabulary is positionally classified in AZC.
@@ -12757,6 +15133,30 @@ guarantees:
     statement: "AZC legality mechanism is family-agnostic"
     provenance: "C430-C436, C441-C443"
 
+  - id: "ZONE_CATEGORY_SPECIALIZATION"
+    statement: "AZC zones (R, C, S, P) have statistically distinct operational category profiles (V=0.084, p=0.000180)"
+    provenance: "C1269"
+
+  - id: "FAMILY_CATEGORY_DIVERGENCE"
+    statement: "Zodiac and A/C families have distinct category profiles (V=0.122, p=0.000001) despite family-agnostic mechanism"
+    provenance: "C1270"
+
+  - id: "BRIDGE_DARK_ZONE_SORTING"
+    statement: "AZC zones mediate bridge/dark category sorting; bridge sorted by category within zones (p=0.0003), dark not (p=0.198)"
+    provenance: "C1272"
+
+  - id: "EXCLUSIVE_VOCABULARY_SPECIALIZED"
+    statement: "356 AZC-exclusive MIDDLEs are MARKING/THERMAL enriched, TRANSITION-depleted (V=0.382 vs bridge)"
+    provenance: "C1273"
+
+  - id: "HEAD_DOMAIN_DIFFERENTIATION"
+    statement: "AZC zones differentiate at HEAD domain level (chi2=112.3, V=0.115, p=5.81e-17) despite sharing raw atom proportions (C1271). o-HEAD is zone-graded (R=17.7% to S=29.3%). HEAD is 5.2x more discriminating than TERMINAL across zones."
+    provenance: "C1516, C1517, C1518"
+
+  - id: "ZONE_SYSTEM_PROXIMITY_PARTITION"
+    statement: "AZC zones partition into B-proximate (R, P: lower o-HEAD, more bridge) and A-proximate (C, S, L: higher o-HEAD, more dark/exclusive) by HEAD JSD"
+    provenance: "C1522"
+
 # ============================================================
 invariants:
   monotonicity:
@@ -12774,6 +15174,83 @@ invariants:
   scaffold_independence:
     statement: "Legality zones are independent of scaffold presentation"
     provenance: "C430-C436"
+
+  zone_atom_uniformity:
+    statement: "AZC zones share the same raw atom-level (character) proportions (C1271) but differentiate at HEAD slot level (V=0.115, C1516). Uniformity is in character inventory; differentiation is in how atoms are deployed across functional slots."
+    provenance: "C1271, C1516"
+
+  no_spatial_coherence:
+    statement: "Category assignment is spatially random within zones; organization is zone-grain not line-grain"
+    provenance: "C1275"
+
+  pharma_atom_convergence:
+    statement: "All AZC sections converge on Currier A Pharma section atom profile (r>0.916)"
+    provenance: "C1276"
+
+# ============================================================
+category_organization:
+  provenance: "C1269-C1276"
+
+  zone_category_profiles:
+    statement: "Zones specialize by operational category (chi2=52.18, V=0.084, p=0.000180)"
+    R: "TRANSITION/FLOW-heavy"
+    C: "TRANSITION/OPERATION-enriched"
+    P: "TRANSITION/STAGING-heavy"
+    S: "TRANSITION/FLOW/OPERATION"
+    provenance: "C1269"
+
+  family_category_profiles:
+    statement: "Zodiac vs A/C families differ in category content despite identical mechanism"
+    zodiac: "TRANSITION/FLOW/THERMAL-enriched"
+    ac: "TRANSITION/STAGING/OPERATION-enriched"
+    provenance: "C1270"
+
+  sorting_mechanism:
+    statement: "AZC zones mediate bridge/dark category sorting"
+    bridge: "Category-zone coupled (p=0.0003), R-dominated (47.5%)"
+    dark: "Category-zone uncoupled (p=0.198), S-shifted (26.9%)"
+    implication: "AZC positional structure sorts bridge vocabulary by category for B grammar channel"
+    provenance: "C1272"
+
+  exclusive_vocabulary:
+    statement: "356 AZC-exclusive MIDDLEs form categorically specialized population"
+    profile: "MARKING 27.2%, THERMAL 27.0%, TRANSITION 6.5%"
+    divergence: "V=0.382 vs bridge, V=0.210 vs dark"
+    provenance: "C1273"
+
+  atom_level:
+    zone_uniformity: "Zones do NOT differentiate at raw atom level (0/8 AXIS at Bonferroni, C1271)"
+    head_slot_differentiation: "Zones DO differentiate at HEAD slot level (chi2=112.3, V=0.115, C1516)"
+    resolution: "Raw character proportions uniform; HEAD domain selection zone-graded"
+    section_convergence: "All AZC sections converge on A Pharma atom profile (r>0.916)"
+    grain: "Category structure is MIDDLE-level; atom deployment structure is HEAD-slot-level"
+    provenance: "C1271, C1276, C1516, C1517, C1518"
+
+  zone_head_atomization:
+    provenance: "C1516-C1522, C1559"
+    head_differentiation:
+      statement: "HEAD domain profiles vary significantly across zones (V=0.115)"
+      o_head_gradient: "R=17.7%, P=19.1%, C=26.2%, S=29.3%, L=30.9% (overall 1.90x B)"
+      cross_system_gradient: "A(28.5%) > AZC(22.4%) > B(11.8%), A/B=2.42x (C1559)"
+      head_vs_terminal: "HEAD JSD 5.2x TERMINAL JSD -- zones select WHAT domain, not HOW to close"
+      provenance: "C1516, C1517, C1518"
+    family_head_diversity:
+      statement: "Zodiac internally uniform, A/C 2.0x more diverse at HEAD level"
+      between_family: "JSD=0.0158 (similar overall)"
+      provenance: "C1519"
+    r_series_null:
+      statement: "R-series subscripts show NO HEAD gradient (all p=0.600)"
+      provenance: "C1520"
+    pipeline_by_zone:
+      statement: "Zone pipeline composition varies; dark MIDDLEs 1.84x o-HEAD vs bridge"
+      s_zone: "Most dark/exclusive (16.8%/21.4%)"
+      p_zone: "Most bridge-dominated (80.4%)"
+      provenance: "C1521"
+    system_proximity:
+      statement: "Zones partition into B-proximate (R, P) and A-proximate (C, S, L)"
+      b_proximate: "Lower o-HEAD, higher bridge rate"
+      a_proximate: "Higher o-HEAD, more dark/exclusive"
+      provenance: "C1522"
 
 # ============================================================
 inputs:
@@ -12963,6 +15440,14 @@ disallowed:
     reason: "AZC restricts, does not expand. Only A-record MIDDLEs are legal for B execution."
     provenance: "C481, C502"
 
+  - interpretation: "AZC diagram lines are thematically organized"
+    reason: "No within-line category coherence (C1275, p=0.568). Category structure is zone-grain, not line-grain."
+    provenance: "C1275"
+
+  - interpretation: "AZC zones differ at raw atom (character frequency) level"
+    reason: "0/8 AXIS clusters differentiate zones at Bonferroni (C1271). However, zones DO differ at HEAD slot level (V=0.115, C1516). The distinction: raw character proportions are uniform, but HEAD domain selection is zone-graded."
+    provenance: "C1271, C1516"
+
 # ============================================================
 
 annotations:
@@ -13051,6 +15536,26 @@ provenance:
     - "C443"  # Monotonicity source
     - "C444"  # Position independence
 
+  category_organization:
+    - "C1269"  # Zone category specialization (V=0.084)
+    - "C1270"  # Family category divergence (V=0.122)
+    - "C1271"  # Zone raw atom-level uniformity (null at AXIS level)
+    - "C1272"  # Bridge/dark zone sorting (V=0.117)
+    - "C1273"  # AZC-exclusive MARKING/THERMAL vocabulary
+    - "C1274"  # Category predicts B escape (THERMAL rho=+0.780)
+    - "C1275"  # No within-zone spatial coherence (null)
+    - "C1276"  # AZC sections converge on Pharma atom profile
+
+  zone_head_atomization:
+    - "C1516"  # HEAD domain differentiation across zones (V=0.115)
+    - "C1517"  # o-HEAD zone-graded (17.7-29.3%)
+    - "C1518"  # HEAD dominates TERMINAL across zones (5.2x)
+    - "C1519"  # Zodiac HEAD uniform, A/C 2.0x diverse
+    - "C1520"  # R-series no HEAD gradient
+    - "C1521"  # Zone pipeline composition varies
+    - "C1522"  # B-proximate vs A-proximate zone partition
+    - "C1559"  # o-HEAD cross-system gradient A>AZC>B
+
 # ============================================================
 
 ```
@@ -13065,12 +15570,12 @@ provenance:
 meta:
   name: "AZC-B Vocabulary Correlation Contract"
   acronym: "AZC-B-ACT"
-  version: "1.2"
-  date: "2026-02-06"
+  version: "1.5"
+  date: "2026-02-24"
   status: "ACTIVE"
   layer_type: "correlation contract"
   derived_from: "Tier-2 constraints only"
-  audit_note: "v1.2: Pipeline framing removed per AZC_POSITION_VOCABULARY (2026-01-31) finding that AZC is static lookup table with no independent positional effect."
+  audit_note: "v1.5: TRANSITION anti-escape mechanism solved (C1285, Phase 455). Role redirection to AUX/FQ, NOT EN self-loop. Category transition grammar structured (C1286, chi2=526). THERMAL/TRANSITION predict AXM dwell (C1289, rho=+/-0.52). v1.4: THERMAL escape mechanism solved (C1277). v1.3: Category-escape correlation (C1274). v1.2: Pipeline framing removed."
   governance: |
     AZC-B-ACT is NOT authoritative. Constraints are authoritative.
     AZC-B-ACT describes HOW vocabulary classified in AZC co-varies with B behavior.
@@ -13126,6 +15631,10 @@ guarantees:
   - id: "CATEGORICAL_RESOLUTION"
     statement: "Resolution via vocabulary availability, not parameters"
     provenance: "C469"
+
+  - id: "CATEGORY_ESCAPE_CORRELATION"
+    statement: "Operational category composition of AZC-shared vocabulary predicts B escape rate: THERMAL (rho=+0.780) high escape, TRANSITION (rho=-0.598) low escape, across 82 B folios"
+    provenance: "C1274"
 
 # ============================================================
 invariants:
@@ -13184,6 +15693,35 @@ correlation:
     effect: "Fine distinctions encoded in which tokens are legal"
     frequency_dimension: "Section differentiation also manifests as frequency variation of shared PP vocabulary (74% of section JS divergence from PP frequency modulation, C1134)"
     provenance: "C469, C1134"
+
+  category_escape_mechanism:
+    statement: "Category composition of AZC-shared vocabulary predicts B escape dynamics"
+    thermal_effect: "THERMAL rho=+0.780 (p<0.001) -- high THERMAL = high escape"
+    transition_effect: "TRANSITION rho=-0.598 (p<0.001) -- high TRANSITION = low escape"
+    containment_effect: "CONTAINMENT rho=-0.399 (p<0.001) -- anti-escape"
+    marking_effect: "MARKING rho=-0.349 (p=0.001) -- anti-escape"
+    n_folios: 82
+    bonferroni_survivors: "4/8 categories"
+    provenance: "C1274"
+
+  thermal_escape_mediation:
+    statement: "THERMAL escape is fully PREFIX-mediated: THERMAL MIDDLEs -> qo-PREFIX (44.1%) -> QO lane (zero hazard) -> escape"
+    thermal_qo_rate: "44.1% (vs 9.5% baseline)"
+    partial_after_qo_control: "rho=-0.081 (p=0.468) -- mediation complete"
+    provenance: "C1277"
+
+  transition_anti_escape:
+    statement: "TRANSITION anti-escape via role redirection: successors routed to AUX (1.24x) and FQ (1.13x), away from EN (0.85x). PREFIX-independent (partial=-0.586 survives), NOT hazard-mediated (24.2%), NOT sequential (no clustering)."
+    mechanism: "Role redirection -- TRANSITION MIDDLEs produce AUX/FQ successors that lack escape capacity"
+    en_en_selfloop: "Rejected (0.474 vs 0.517 baseline, suppressed not enriched)"
+    per_token: "Each TRANSITION token independently redirects; no sequential persistence"
+    asymmetry: "Escape = PREFIX routing (THERMAL->qo), anti-escape = role redirection (TRANSITION->AUX/FQ)"
+    provenance: "C1285, C1281"
+
+  hazard_category_concentration:
+    statement: "Hazard concentrates in FLOW (50.4%) and CONTAINMENT (11.5%). THERMAL is hazard-immune (2.6%)."
+    cramers_v: "0.560"
+    provenance: "C1280"
 
   vanishing_semantics:
     statement: "Illegality manifests as absence, not marking"
@@ -13318,6 +15856,10 @@ disallowed:
     reason: "AZC restricts, does not expand. Only A-record MIDDLEs are legal for B."
     provenance: "C481, C502"
 
+  - interpretation: "Category composition is orthogonal to B escape dynamics"
+    reason: "THERMAL (rho=+0.780) and TRANSITION (rho=-0.598) strongly predict escape rate. Category is the mechanism connecting AZC classification to B behavior."
+    provenance: "C1274"
+
 # ============================================================
 
 annotations:
@@ -13348,6 +15890,15 @@ annotations:
     recovery_cv: "0.72-0.82"
     provenance: "C458"
 
+  category_escape_statistics:
+    thermal_rho: "+0.780 (p<0.001)"
+    transition_rho: "-0.598 (p<0.001)"
+    containment_rho: "-0.399 (p<0.001)"
+    marking_rho: "-0.349 (p=0.001)"
+    n_b_folios: 82
+    mean_escape_rate: "15.6%"
+    provenance: "C1274"
+
 # ============================================================
 provenance:
   vocabulary_correlation:
@@ -13375,6 +15926,15 @@ provenance:
     - "C468"  # Causal transfer
     - "C470"  # Restriction preservation
     - "C469"  # Non-parametric
+
+  category_escape:
+    - "C1274"  # Category composition predicts B escape rate
+    - "C1277"  # THERMAL escape fully PREFIX-mediated (partial=-0.081)
+    - "C1280"  # Hazard concentrates FLOW/CONTAINMENT (V=0.560)
+    - "C1281"  # TRANSITION anti-escape PREFIX-independent (partial=-0.586)
+    - "C1285"  # TRANSITION anti-escape via role redirection to AUX/FQ
+    - "C1286"  # Category transition grammar structured (chi2=526)
+    - "C1289"  # THERMAL/TRANSITION predict AXM dwell (rho=+/-0.52)
 
 # ============================================================
 
@@ -13956,8 +16516,8 @@ summary: |
 meta:
   name: "Paragraph Structural Contract"
   acronym: "PSC"
-  version: "1.1"
-  date: "2026-02-15"
+  version: "1.2"
+  date: "2026-02-24"
   status: "ACTIVE"
   layer_type: "cross-system structural unit contract"
   derived_from: "Tier 0-2 constraints (structural)"
@@ -13991,7 +16551,7 @@ ownership:
     - a_b_correspondence       # pool relationship, structural parallel
     - cross_system_manifestation  # A vs B paragraph properties
   psc_does_not_describe:
-    - b_execution_gradient: "-> BCSC (spec->exec vocabulary C932-C934, prep verb concentration)"
+    - b_execution_gradient: "-> BCSC (parallel tracks C1258-C1260, thermal state tracking; C932-C934 retracted/weakened)"
     - b_ht_paragraph_structure: "-> BCSC (HT enrichment C840-C844, step function, prefix markers)"
     - a_internal_profiling: "-> CASC (size distribution C847, RI variance C848, section profile C849)"
     - a_combinatorial_grammar: "-> CASC (C1039-C1041 cluster selectivity, diversification)"
@@ -14074,7 +16634,9 @@ guarantees:
       EN fraction rho: -0.023 (p=0.350). FL fraction rho: -0.050 (p=0.068).
       CC fraction rho: -0.049 (p=0.076). All collapse to ~0 after length control.
       Only length progression (rho=-0.229, p=0.001) is systematic.
-    provenance: "C963"
+      Extended to thermal/category grain (C1295): e_frac, ke_ratio, suffix mode,
+      and 8-category profile are all position-independent in the body.
+    provenance: "C963, C1295"
 
   - id: "POOL_RELATIONSHIP"
     statement: |
@@ -14116,6 +16678,19 @@ guarantees:
       Effect is tiny and driven by gallows tokens (87.7% AXM).
       Macro-dynamics operate at folio/section scale, not paragraph scale.
     provenance: "C1022"
+
+  - id: "TERMINATION_MEMORYLESS"
+    statement: |
+      Paragraph termination has no detectable line-level trigger.
+      7/7 trigger hypotheses fail (Bonferroni p<0.00625): thermal level
+      (length confound), B-track thermal, thermal step, thermal budget
+      (within-folio rho=-0.007), mode gate, category shift, folio prediction.
+      -am (C1237, 5.19x enriched) is the termination MARKER but nothing
+      in the body predicts WHEN it fires. Termination is folio-programmed
+      (C1239), not state-triggered. The 3 tail product types (C1232)
+      have distinct category profiles (C1296, chi2=139.1) -- the FORM
+      of shutdown varies by operational theme but the DECISION is memoryless.
+    provenance: "C1295, C1296, C1237, C1239"
 
   - id: "CLUSTER_SELECTIVE"
     statement: |
@@ -14168,6 +16743,10 @@ invariants:
     statement: "Lines shrink toward paragraph end: rho=-0.229, p=0.001 — sole systematic body progression"
     provenance: "C963"
 
+  - id: "TERMINATION_NO_TRIGGER"
+    statement: "No line-level feature predicts termination: thermal (7 tests FAIL), modal, categorical all non-significant. Folio-programmed via C1239."
+    provenance: "C1295"
+
 # ============================================================
 cross_system_manifestation:
 
@@ -14206,11 +16785,10 @@ cross_system_manifestation:
     ht_prefix_markers: "pch- 16.9% + po- 16.6% = 33.5% of initiators (C843, BCSC)"
     gallows_initial: "71.5% p/t/k/f initial (C841, BCSC)"
     execution_gradient:
-      statement: "Spec->exec vocabulary gradient (BCSC-owned)"
-      rare_middle_trend: "r=-0.97 (Q0->Q4)"
-      universal_middle_trend: "r=+0.92 (Q0->Q4)"
-      provenance: "C932 (BCSC)"
-    prep_verb_concentration: "te 2.7x, pch 2.8x enrichment in Q0 vs Q4 (C933, BCSC)"
+      statement: "REVISED: No spec->exec vocabulary gradient. Body is steady-state with parallel Mode A/B tracks (BCSC-owned)"
+      retracted: "C932 NOT REPLICATED (header contamination), C933 ARTIFACT (Mode A vocabulary), C934 WEAKENED"
+      surviving: "Line shortening (rho=-0.243), bare suffix increase in Mode B (rho=0.072), thermal state tracking (C1260)"
+      provenance: "C1258, C1259, C1260 (BCSC)"
     kernel_signature:
       statement: "HIGH_K=2x FQ (p<0.0001); HIGH_H EN (p=0.036)"
       provenance: "C893 (BCSC)"
@@ -14389,6 +16967,14 @@ disallowed_interpretations:
     claim: "Paragraphs cluster hazard violations"
     refutation: "C1027: paragraph clustering p=0.320; folio p=0.688; no spatial concentration"
 
+  - id: "NOT_THERMAL_TRIGGERED_TERMINATION"
+    claim: "Paragraph termination is triggered by thermal state (cooling threshold, budget, or step)"
+    refutation: "C1295: All thermal triggers fail -- level (length confound), step (perm p=0.822), budget (within-folio rho=-0.007). Termination is folio-programmed, not state-driven."
+
+  - id: "NOT_CATEGORY_SHUTDOWN_SEQUENCE"
+    claim: "Paragraph termination is preceded by a distinctive category or mode sequence"
+    refutation: "C1295: Category profile at termination (perm p=0.400) and mode at termination (chi2=1.19, p=0.276) are both non-significant. Body lines are structurally equivalent until -am."
+
 # ============================================================
 provenance:
 
@@ -14417,6 +17003,9 @@ provenance:
       - {id: "C963", topic: "Body homogeneity (length only rho=-0.229)"}
       - {id: "C1022", topic: "Macro-dynamics neutral (AXM delta +0.028, gallows-driven)"}
       - {id: "C1027", topic: "Hazard archaeology (no paragraph clustering p=0.320)"}
+    termination:
+      - {id: "C1295", topic: "Paragraph termination memoryless (7/7 triggers FAIL, no line-level predictor)"}
+      - {id: "C1296", topic: "Tail type category divergence (chi2=139.1, form varies but timing does not)"}
     combinatorial:
       - {id: "C1052", topic: "B paragraph cluster selectivity (z=-2.614, p=0.007)"}
       - {id: "C1054", topic: "Affordance bin gradient invariance (HUB ~64% all quintiles)"}
@@ -14439,10 +17028,13 @@ provenance:
         - {id: "C867", topic: "P-T transition paragraph dynamics"}
         - {id: "C869", topic: "Gallows function as paragraph/section delimiters"}
       execution_gradient:
-        - {id: "C932", topic: "Body vocabulary gradient (rare r=-0.97, universal r=+0.92)"}
-        - {id: "C933", topic: "Prep verb early concentration (te 2.7x, pch 2.8x)"}
-        - {id: "C934", topic: "Parallel startup (65% heat-first)"}
-        - {id: "C935", topic: "Compound specification dual purpose (71.6% hit, 1.21x lift)"}
+        - {id: "C932", topic: "Body vocabulary gradient -- NOT REPLICATED (header contamination)"}
+        - {id: "C933", topic: "Prep verb early concentration -- ARTIFACT (Mode A vocabulary)"}
+        - {id: "C934", topic: "Parallel startup -- WEAKENED (pillars undermined)"}
+        - {id: "C935", topic: "Compound specification dual purpose (71.6% hit, 1.21x lift) -- SURVIVES"}
+        - {id: "C1258", topic: "Parallel mode tracks (5/5 PASS, counterpoint architecture)"}
+        - {id: "C1259", topic: "Gradient decomposition (Mode A flat, FL/suffix genuine)"}
+        - {id: "C1260", topic: "Mode B thermal state tracking (energy propagates, FL does not)"}
       kernel_and_other:
         - {id: "C893", topic: "Paragraph kernel signature prediction (HIGH_K=2x FQ)"}
         - {id: "C894", topic: "REGIME_4 recovery specialization concentration"}
@@ -14472,9 +17064,9 @@ provenance:
       ht_related:
         - {id: "C927", topic: "HT elevation in label contexts (2.42x vs paragraphs)"}
 
-  total_owned: 20
+  total_owned: 22
   total_referenced: 36
-  total_coverage: 56
+  total_coverage: 58
 
 # ============================================================
 # Summary statement
@@ -14485,8 +17077,11 @@ summary: |
   In Currier A: paragraphs are material specification pools — groups of
   complementary entries that diversify within selected compatibility clusters.
   In Currier B: paragraphs are independent mini-programs with header-body
-  architecture, specification-to-execution vocabulary gradients, and
-  kernel-predicted operation types.
+  architecture, parallel Mode A/B tracks with thermal state continuity, and
+  kernel-predicted operation types. Termination is memoryless: no line-level
+  thermal, modal, or categorical feature predicts when -am fires. The
+  decision to stop is folio-programmed (C1239), though the form of shutdown
+  varies by operational category (C1296).
 
   Both systems show matching 5-cluster taxonomy, header-body enrichment,
   and pool-based vocabulary correspondence. Paragraphs operate independently

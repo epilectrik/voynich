@@ -1,0 +1,148 @@
+{
+  "metadata": {
+    "phase": 569,
+    "script": "t5_synthesis.py",
+    "timestamp": "2026-03-10T13:25:27.747357+00:00"
+  },
+  "verdict": "EVENTIVE_CLOSURE_INSUFFICIENT",
+  "p2_result": "PASS",
+  "pt_pass_count": 1,
+  "pt_results": {
+    "PT1": "FAIL",
+    "PT2": "FAIL",
+    "PT3": "PASS",
+    "PT4": "FAIL",
+    "PT5": "FAIL"
+  },
+  "priority_event_type": "E_any",
+  "full_model_summary": {
+    "PCV": 0.865372,
+    "SAHB": 0.126849,
+    "WCU": 0.515735,
+    "SLR_mean": 0.156982,
+    "UEB": 7.275,
+    "WCP": 0.851852,
+    "EWP": 0.750558,
+    "CCY": 0.25235,
+    "QGY": 0.16925,
+    "old_viability": 0.998829,
+    "old_y_final": 0.643354,
+    "n_tokens": 6225
+  },
+  "event_summary": {
+    "E_any": {
+      "total_global": 463,
+      "fraction_global": 1.0,
+      "pilot_count": 123,
+      "pilot_mean_ERM": 0.021919,
+      "pilot_EIR": 0.699187
+    },
+    "E_opaque": {
+      "total_global": 148,
+      "fraction_global": 0.3197,
+      "pilot_count": 40,
+      "pilot_mean_ERM": -0.193853,
+      "pilot_EIR": 0.675
+    },
+    "E_opaque_decisive": {
+      "total_global": 111,
+      "fraction_global": 0.2397,
+      "pilot_count": 33,
+      "pilot_mean_ERM": -0.09479,
+      "pilot_EIR": 0.69697
+    },
+    "E_compound": {
+      "total_global": 170,
+      "fraction_global": 0.3672,
+      "pilot_count": 40,
+      "pilot_mean_ERM": -0.04178,
+      "pilot_EIR": 0.725
+    },
+    "E_armed": {
+      "total_global": 134,
+      "fraction_global": 0.2894,
+      "pilot_count": 32,
+      "pilot_mean_ERM": -0.11941,
+      "pilot_EIR": 0.6875
+    },
+    "E_cts50": {
+      "total_global": 84,
+      "fraction_global": 0.1814,
+      "pilot_count": 23,
+      "pilot_mean_ERM": -0.244292,
+      "pilot_EIR": 0.73913
+    },
+    "E_mcb": {
+      "total_global": 57,
+      "fraction_global": 0.1231,
+      "pilot_count": 17,
+      "pilot_mean_ERM": 0.299574,
+      "pilot_EIR": 0.764706
+    },
+    "E_decisive": {
+      "total_global": 36,
+      "fraction_global": 0.0778,
+      "pilot_count": 12,
+      "pilot_mean_ERM": 0.280328,
+      "pilot_EIR": 0.666667
+    }
+  },
+  "key_findings": [
+    "ERM axis inversion: full model ERM negative, null ERM positive",
+    "UEB and WCP anchors stable (PT3 PASS)",
+    "No selective event type reached Tier 2 threshold",
+    "Plant dynamics problem, not readout/averaging problem"
+  ],
+  "confirmed_constraints": [
+    "C1612",
+    "C1614"
+  ],
+  "new_constraints": [],
+  "cross_phase": [
+    {
+      "phase": 563,
+      "score": "5/9",
+      "key_result": "Baseline apparatus coupling"
+    },
+    {
+      "phase": "563b",
+      "score": "3/9",
+      "key_result": "Sensitivity recalibration"
+    },
+    {
+      "phase": 564,
+      "score": "2/9",
+      "key_result": "Event-gated execution"
+    },
+    {
+      "phase": "564b",
+      "score": "2/9",
+      "key_result": "Selective restoration"
+    },
+    {
+      "phase": 565,
+      "score": "2/9",
+      "key_result": "Permeability calibration"
+    },
+    {
+      "phase": 566,
+      "score": "1/9",
+      "key_result": "CLOSE recovery"
+    },
+    {
+      "phase": 567,
+      "score": "P2 + 3/7 NP",
+      "key_result": "PARTIAL: readout reform partially works"
+    },
+    {
+      "phase": 568,
+      "score": "P2 + 3/7 EP",
+      "key_result": "PARTIAL: controlled excursion metrics partially work"
+    },
+    {
+      "phase": 569,
+      "score": "P2 + 1/5 PT",
+      "key_result": "EVENTIVE_CLOSURE_INSUFFICIENT"
+    }
+  ]
+}

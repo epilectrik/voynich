@@ -1,0 +1,246 @@
+{
+ "metadata": {
+  "phase": 568,
+  "script": "t3_cof_observability.py",
+  "timestamp": "2026-03-10T03:45:41.690067+00:00",
+  "elapsed_seconds": 0.01,
+  "n_t1_folios": 20,
+  "n_t2_folios": 20,
+  "ccy_variants": [
+   "CCY",
+   "CCY_cof1",
+   "CCY_cof2",
+   "CCY_cof3"
+  ],
+  "variant_labels": {
+   "CCY": "CTS (base threshold)",
+   "CCY_cof1": "COF1 (0.6*CTS + 0.4*q4)",
+   "CCY_cof2": "COF2 (0.5*CTS + 0.25*q4 + 0.25*mcb)",
+   "CCY_cof3": "COF3 (0.3*CTS + 0.2*q4s + 0.2*cob + 0.3*mcb)"
+  }
+ },
+ "OA1_ccy_variant_comparison": {
+  "per_folio": {
+   "f104r": {
+    "CCY": 0.402773,
+    "CCY_cof1": 0.402773,
+    "CCY_cof2": 0.402773,
+    "CCY_cof3": 0.402773
+   },
+   "f105r": {
+    "CCY": 0.339773,
+    "CCY_cof1": 0.602333,
+    "CCY_cof2": 0.339773,
+    "CCY_cof3": 0.523193
+   },
+   "f108v": {
+    "CCY": 0.523303,
+    "CCY_cof1": 0.70107,
+    "CCY_cof2": 0.523303,
+    "CCY_cof3": 0.586617
+   },
+   "f111r": {
+    "CCY": 0.63599,
+    "CCY_cof1": 0.892687,
+    "CCY_cof2": 0.63599,
+    "CCY_cof3": 0.63599
+   },
+   "f116r": {
+    "CCY": 0.381967,
+    "CCY_cof1": 0.516443,
+    "CCY_cof2": 0.381967,
+    "CCY_cof3": 0.381967
+   },
+   "f31r": {
+    "CCY": 0.0,
+    "CCY_cof1": 0.0,
+    "CCY_cof2": 0.0,
+    "CCY_cof3": 0.0
+   },
+   "f34r": {
+    "CCY": 0.0,
+    "CCY_cof1": 0.0,
+    "CCY_cof2": 0.0,
+    "CCY_cof3": 0.0
+   },
+   "f39v": {
+    "CCY": 0.0,
+    "CCY_cof1": 0.0,
+    "CCY_cof2": 0.0,
+    "CCY_cof3": 0.0
+   },
+   "f40v": {
+    "CCY": 0.0,
+    "CCY_cof1": 0.0,
+    "CCY_cof2": 0.0,
+    "CCY_cof3": 0.0
+   },
+   "f43v": {
+    "CCY": 0.28879,
+    "CCY_cof1": 0.28879,
+    "CCY_cof2": 0.28879,
+    "CCY_cof3": 0.28879
+   },
+   "f55r": {
+    "CCY": 0.187393,
+    "CCY_cof1": 0.187393,
+    "CCY_cof2": 0.187393,
+    "CCY_cof3": 0.187393
+   },
+   "f66r": {
+    "CCY": 0.0,
+    "CCY_cof1": 0.0,
+    "CCY_cof2": 0.0,
+    "CCY_cof3": 0.0
+   },
+   "f78r": {
+    "CCY": 0.17329,
+    "CCY_cof1": 0.17329,
+    "CCY_cof2": 0.079483,
+    "CCY_cof3": 0.17329
+   },
+   "f79r": {
+    "CCY": 0.0,
+    "CCY_cof1": 0.0,
+    "CCY_cof2": 0.0,
+    "CCY_cof3": 0.0
+   },
+   "f81v": {
+    "CCY": 0.0,
+    "CCY_cof1": 0.0,
+    "CCY_cof2": 0.0,
+    "CCY_cof3": 0.0
+   },
+   "f84r": {
+    "CCY": 0.161563,
+    "CCY_cof1": 0.161563,
+    "CCY_cof2": 0.161563,
+    "CCY_cof3": 0.161563
+   },
+   "f85r1": {
+    "CCY": 0.7585,
+    "CCY_cof1": 0.841023,
+    "CCY_cof2": 0.601687,
+    "CCY_cof3": 0.7585
+   },
+   "f86v5": {
+    "CCY": 0.31517,
+    "CCY_cof1": 0.31517,
+    "CCY_cof2": 0.31517,
+    "CCY_cof3": 0.31517
+   },
+   "f86v6": {
+    "CCY": 0.285413,
+    "CCY_cof1": 0.285413,
+    "CCY_cof2": 0.285413,
+    "CCY_cof3": 0.285413
+   },
+   "f95r1": {
+    "CCY": 0.0,
+    "CCY_cof1": 0.0,
+    "CCY_cof2": 0.0,
+    "CCY_cof3": 0.0
+   }
+  },
+  "summary": {
+   "n_folios": 20,
+   "means": {
+    "CCY": 0.222696,
+    "CCY_cof1": 0.268398,
+    "CCY_cof2": 0.210165,
+    "CCY_cof3": 0.235033
+   },
+   "n_nonzero": {
+    "CCY": 12,
+    "CCY_cof1": 12,
+    "CCY_cof2": 12,
+    "CCY_cof3": 12
+   },
+   "best_variant_by_mean": "CCY_cof1",
+   "best_variant_by_coverage": "CCY"
+  }
+ },
+ "OA2_closure_excursion_overlap": {
+  "slr_threshold": 0.7,
+  "per_variant": {
+   "CTS": {
+    "n_high_slr": 20,
+    "n_overlap": 12,
+    "overlap_frac": 0.6
+   },
+   "COF1": {
+    "n_high_slr": 20,
+    "n_overlap": 12,
+    "overlap_frac": 0.6
+   },
+   "COF2": {
+    "n_high_slr": 20,
+    "n_overlap": 12,
+    "overlap_frac": 0.6
+   },
+   "COF3": {
+    "n_high_slr": 20,
+    "n_overlap": 12,
+    "overlap_frac": 0.6
+   }
+  }
+ },
+ "OA3_b10_sensitivity": {
+  "per_variant": {
+   "CCY": {
+    "full_mean": 0.25257,
+    "b10_mean": 0.146535,
+    "delta": 0.106035,
+    "cohens_d": 0.44848,
+    "n_pairs": 20
+   },
+   "CCY_cof1": {
+    "full_mean": 0.169321,
+    "b10_mean": 0.099806,
+    "delta": 0.069515,
+    "cohens_d": 0.399755,
+    "n_pairs": 20
+   },
+   "CCY_cof2": {
+    "full_mean": 0.155173,
+    "b10_mean": 0.091149,
+    "delta": 0.064024,
+    "cohens_d": 0.399082,
+    "n_pairs": 20
+   },
+   "CCY_cof3": {
+    "full_mean": 0.153106,
+    "b10_mean": 0.08853,
+    "delta": 0.064576,
+    "cohens_d": 0.422597,
+    "n_pairs": 20
+   }
+  },
+  "best_variant": "CCY"
+ },
+ "OA4_section_specific": {
+  "note": "Section data not available in run outputs; T1 and T2 store folio-level aggregate metrics only. Section-specific COF analysis requires per-line results not stored in aggregate outputs. To obtain section-specific COF performance, re-run the executor with per-line metric output enabled, or extract section assignment from line_section_map and compute per-section CCY variants inline."
+ },
+ "OA5_eligibility_expansion": {
+  "per_variant": {
+   "CCY": {
+    "n_nonzero": 12
+   },
+   "CCY_cof1": {
+    "n_nonzero": 12
+   },
+   "CCY_cof2": {
+    "n_nonzero": 12
+   },
+   "CCY_cof3": {
+    "n_nonzero": 12
+   }
+  },
+  "base_ccy_nonzero": 12,
+  "expansion_from_ccy": {
+   "cof1": 0,
+   "cof2": 0,
+   "cof3": 0
+  }
+ }
+}

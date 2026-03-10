@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1431 constraints | 2026-03-09
+CONSTRAINT_REFERENCE v2.6 | 1442 constraints | 2026-03-10
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1435,3 +1435,14 @@ C1584	Headless folio regime effect on plant containment is directionally correct
 C1585	CTS continuous closure contributes genuine value to coupled plant behavior	2	B, virtual apparatus, CTS, closure, line, paragraph, C1579, C1434, C1440, C1566	Full > B3 (no-CTS) viability 6/7, Y_final 7/7. C-separation positive 6/7.
 C1586	N3 line-shuffle null is non-destructive: line ordering carries less coupled-plant information than token composition	2	B, virtual apparatus, null, line-shuffle, ordering, C1399, C1400, C1470, C1577	N3 3/7 folios pass vs N1 6/7, N2 6/7, N4 5/7. Line order < token composition for coupling.
 C1587	A2_SEALED_RECIRCULATION underperforms A1_BATH_REFLUX for Herbal folios	3	B, virtual apparatus, profile, Herbal, assignment, C1248, C1249, C1380	f55r viab 0.742 (A2) vs 1.000 (A1). f40v viab 0.991 (A2) vs 1.000 (A1). 2/2 Herbal A2-assigned prefer A1.
+C1605	PCV discrimination exceeds binary viability	2	B, virtual apparatus, PCV, viability, discrimination, C1581	NP1 PASS 16/20. PCV-viability r=0.391 (different constructs). Phase-shuffle null destroyed under PCV.
+C1606	S asymmetry insufficiency in burden metric	2	B, virtual apparatus, S, asymmetry, burden, SAHB	S accounts for 84.5% of SAHB even after excluding high-S events. NP7 FAIL, NP2 FAIL (1/20). Low-S burden dominates.
+C1607	QGY partial paradox inversion	2	B, virtual apparatus, QGY, yield, quality, paradox, inversion	N2 QGY 0.180 < full QGY 0.231 despite N2 Y_final 0.734 > full 0.675. NP4=13/20 (one folio short).
+C1608	Closure opportunity scarcity	2	B, virtual apparatus, closure, CTS, opportunity, scarcity, C1566, C1579	37.4% CLOSE lines > CTS 0.3. Useful closure fraction 3.2%. CTS-excursion r=-0.014 (uncorrelated).
+C1609	PCV-visible CLOSE recovery	2	B, virtual apparatus, PCV, CLOSE, recovery, B10, C1585	B10 delta under PCV=+0.020 (d=0.465) vs old viability delta=0.003. Plant mechanism works; old readout missed it.
+C1612	Unresolved excursion burden inverts SAHB	2	B, virtual apparatus, UEB, burden, SAHB, inversion, C1606	UEB restricts burden to CLOSE-phase + line-end residual. Full model burden < null burden under UEB. Axis inversion was measurement artifact.
+C1614	Packet coherence discriminates supervised traces	2	B, virtual apparatus, WCP, coherence, discrimination, C1582, C1605	WCP discriminates full from null (EP6 PASS). Phase-aware sub-scores (SPEC basin, WORK corridor, CLOSE convergence) are genuine trace properties.
+C1625	Folio-specific apparatus parameterization improves demanded-event ERM	2	B, virtual apparatus, folio-specific, F1-F5, demanded, ERM, C1569, C1574, C1380	AP1 3/4 PASS. f108v +0.007, f86v6 +0.024, f84r +0.001. f111r -0.003 (FAIL). Folio-specific tuning produces real improvement over generic apparatus.
+C1627	B10 sensitivity increases under folio-specific config	2	B, virtual apparatus, folio-specific, B10, sensitivity, CLOSE, recovery, C1609, C1612	AP3 3/4 PASS. (M1-M2b) eventive delta > (M0-M2a) for f108v, f86v6, f84r. Close-recovery channel more load-bearing when tuned to folio.
+C1628	Existing anchors survive folio-specific parameterization	2	B, virtual apparatus, folio-specific, anchor, P2, UEB, WCP, stability, C1605	AP4 PASS. P2 by reference. UEB improves 3/4. WCP drops < 0.01 per folio (F1 attractor compression, benign).
+C1629	Folio-specific parameters align with structural proxies	2	B, virtual apparatus, folio-specific, F1-F5, structural, proxy, monotone, interpretability, C1380, C1574, C1569	AP5 5/5 PASS. All F1-F5 axes preserve intended structural ordering across pilot folios. F1 (AXM occ), F2 (closure exploitability), F3 (THERMAL frac), F4 (hl_rate), F5 (SEALED_VESSEL).

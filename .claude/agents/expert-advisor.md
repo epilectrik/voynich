@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1424 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1442 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1580.
+the highest ID present is C1629.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1424 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1442 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1424 validated constraints are present as canonical one-line claims with tier
+1442 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-09 00:57
-**Version:** FROZEN STATE (1424 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-10 11:20
+**Version:** FROZEN STATE (1442 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1853,6 +1853,24 @@ C1577	Four permutation null models confirm non-trivial hierarchical structure	2	
 C1578	E4 improvement sources are line-phase domain adjustment and hazard envelope	2	B, line, phase, domain, hazard, envelope, routing, closure, ablation
 C1579	CTS continuous closure encoding improves over categorical closure	2	B, closure, CTS, line, paragraph, Gaussian, encoding, C1434, C1440, C1566
 C1580	Paragraph domain composition does NOT predict line hazard envelope	2	B, paragraph, hazard, envelope, cloud, blend, negative
+C1581	Full hierarchical supervisory trace coupled to virtual apparatus yields structured plant behavior beyond section-only, budget-only, and null controls	2	B, virtual apparatus, hierarchy, trace, coupling, C1575, C1577, C1569
+C1582	Line packet state produces statistically significant plant state differentiation across all 7 state variables	2	B, virtual apparatus, line, packet, state, C1425, C1426, C1427, C1428, C1578
+C1583	Terminal routing grammar does NOT produce observable punctual plant deflections at token level (negative result)	2	B, virtual apparatus, routing, terminal, negative, C1563, C1564, C1470
+C1584	Headless folio regime effect on plant containment is directionally correct but statistically underpowered	3	B, virtual apparatus, headless, containment, underpowered, C1488, C1574, C1523
+C1585	CTS continuous closure contributes genuine value to coupled plant behavior	2	B, virtual apparatus, CTS, closure, line, paragraph, C1579, C1434, C1440, C1566
+C1586	N3 line-shuffle null is non-destructive: line ordering carries less coupled-plant information than token composition	2	B, virtual apparatus, null, line-shuffle, ordering, C1399, C1400, C1470, C1577
+C1587	A2_SEALED_RECIRCULATION underperforms A1_BATH_REFLUX for Herbal folios	3	B, virtual apparatus, profile, Herbal, assignment, C1248, C1249, C1380
+C1605	PCV discrimination exceeds binary viability	2	B, virtual apparatus, PCV, viability, discrimination, C1581
+C1606	S asymmetry insufficiency in burden metric	2	B, virtual apparatus, S, asymmetry, burden, SAHB
+C1607	QGY partial paradox inversion	2	B, virtual apparatus, QGY, yield, quality, paradox, inversion
+C1608	Closure opportunity scarcity	2	B, virtual apparatus, closure, CTS, opportunity, scarcity, C1566, C1579
+C1609	PCV-visible CLOSE recovery	2	B, virtual apparatus, PCV, CLOSE, recovery, B10, C1585
+C1612	Unresolved excursion burden inverts SAHB	2	B, virtual apparatus, UEB, burden, SAHB, inversion, C1606
+C1614	Packet coherence discriminates supervised traces	2	B, virtual apparatus, WCP, coherence, discrimination, C1582, C1605
+C1625	Folio-specific apparatus parameterization improves demanded-event ERM	2	B, virtual apparatus, folio-specific, F1-F5, demanded, ERM, C1569, C1574, C1380
+C1627	B10 sensitivity increases under folio-specific config	2	B, virtual apparatus, folio-specific, B10, sensitivity, CLOSE, recovery, C1609, C1612
+C1628	Existing anchors survive folio-specific parameterization	2	B, virtual apparatus, folio-specific, anchor, P2, UEB, WCP, stability, C1605
+C1629	Folio-specific parameters align with structural proxies	2	B, virtual apparatus, folio-specific, F1-F5, structural, proxy, monotone, interpretability, C1380, C1574, C1569
 
 ---
 
@@ -1860,7 +1878,7 @@ C1580	Paragraph domain composition does NOT predict line hazard envelope	2	B, pa
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-03-09
+# Generated: 2026-03-10
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 

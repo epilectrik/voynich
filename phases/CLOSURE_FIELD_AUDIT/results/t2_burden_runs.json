@@ -1,0 +1,7283 @@
+{
+ "metadata": {
+  "phase": 567,
+  "script": "t2_burden_executor.py",
+  "n_runs": 90,
+  "timestamp": "2026-03-09T21:29:49.183404"
+ },
+ "primary_runs": {
+  "f78r": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.6143,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.93537,
+      "corridor": 0.06463,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.9966,
+      "corridor": 0.0034,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.0102,
+      "corridor": 0.28912,
+      "warning": 0.45238,
+      "hard_stop": 0.2483
+     },
+     "C": {
+      "basin": 0.95918,
+      "corridor": 0.04082,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.9966,
+      "corridor": 0.0034,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.68367,
+      "corridor": 0.31633,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 133,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 73,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 294,
+    "n_hazard_events": 0,
+    "PCV": 0.93177,
+    "SAHB": 0.22378,
+    "REF_mean": 0.37302,
+    "REF_eligible_fraction": 0.5,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.13991,
+    "qgy_ratio": 0.22775,
+    "CRE_strict": 0.17949,
+    "CRE_soft": 0.12821,
+    "MPZF": 0.91383
+   },
+   "A2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.59909,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.90816,
+      "corridor": 0.09184,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.9966,
+      "corridor": 0.0034,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.0102,
+      "corridor": 0.44558,
+      "warning": 0.39116,
+      "hard_stop": 0.15306
+     },
+     "C": {
+      "basin": 0.56463,
+      "corridor": 0.43537,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.98639,
+      "corridor": 0.01361,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.71429,
+      "corridor": 0.28571,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 115,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 45,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 294,
+    "n_hazard_events": 0,
+    "PCV": 0.92687,
+    "SAHB": 0.38273,
+    "REF_mean": 0.57571,
+    "REF_eligible_fraction": 0.5,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.17103,
+    "qgy_ratio": 0.28548,
+    "CRE_strict": 0.14286,
+    "CRE_soft": 0.11429,
+    "MPZF": 0.85714
+   },
+   "A3": {
+    "old_viability": 1.0,
+    "old_y_final": 0.71662,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.58163,
+      "corridor": 0.41837,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.0102,
+      "corridor": 0.64626,
+      "warning": 0.27211,
+      "hard_stop": 0.07143
+     },
+     "C": {
+      "basin": 0.85034,
+      "corridor": 0.14966,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.98639,
+      "corridor": 0.01361,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.88776,
+      "corridor": 0.11224,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.43537,
+      "corridor": 0.53401,
+      "warning": 0.03061,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 80,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 9
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 21,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 294,
+    "n_hazard_events": 0,
+    "PCV": 0.92679,
+    "SAHB": 0.40533,
+    "REF_mean": 0.65567,
+    "REF_eligible_fraction": 0.5,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.19481,
+    "qgy_ratio": 0.27184,
+    "CRE_strict": 0.10714,
+    "CRE_soft": 0.17857,
+    "MPZF": 0.839
+   }
+  },
+  "f84r": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.63607,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.81163,
+      "corridor": 0.18837,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.93906,
+      "corridor": 0.06094,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00831,
+      "corridor": 0.27147,
+      "warning": 0.39612,
+      "hard_stop": 0.3241
+     },
+     "C": {
+      "basin": 0.82271,
+      "corridor": 0.17729,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.98615,
+      "corridor": 0.01385,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.98892,
+      "corridor": 0.01108,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.33241,
+      "corridor": 0.66759,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 143,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 117,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 361,
+    "n_hazard_events": 0,
+    "PCV": 0.89808,
+    "SAHB": 0.40714,
+    "REF_mean": 0.56397,
+    "REF_eligible_fraction": 0.9,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.09342,
+    "qgy_ratio": 0.14688,
+    "CRE_strict": 0.25806,
+    "CRE_soft": 0.16129,
+    "MPZF": 0.85549
+   },
+   "A2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.63951,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.72853,
+      "corridor": 0.27147,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.93629,
+      "corridor": 0.06371,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.01385,
+      "corridor": 0.38781,
+      "warning": 0.37673,
+      "hard_stop": 0.22161
+     },
+     "C": {
+      "basin": 0.51524,
+      "corridor": 0.43213,
+      "warning": 0.04155,
+      "hard_stop": 0.01108
+     },
+     "TR": {
+      "basin": 0.99723,
+      "corridor": 0.00277,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.96122,
+      "corridor": 0.03878,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.40443,
+      "corridor": 0.59557,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 136,
+     "C": 15,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 80,
+     "C": 4,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 361,
+    "n_hazard_events": 0,
+    "PCV": 0.89144,
+    "SAHB": 76.1832,
+    "REF_mean": 0.68654,
+    "REF_eligible_fraction": 0.9,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.12012,
+    "qgy_ratio": 0.18783,
+    "CRE_strict": 0.24138,
+    "CRE_soft": 0.13793,
+    "MPZF": 0.81163
+   },
+   "A3": {
+    "old_viability": 1.0,
+    "old_y_final": 0.79894,
+    "excursion_count": 3,
+    "bounded_excursion_count": 1,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.57618,
+      "corridor": 0.38504,
+      "warning": 0.03878,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.99169,
+      "corridor": 0.00831,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.02493,
+      "corridor": 0.57618,
+      "warning": 0.29363,
+      "hard_stop": 0.10526
+     },
+     "C": {
+      "basin": 0.70083,
+      "corridor": 0.29917,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.93075,
+      "corridor": 0.06925,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.78393,
+      "corridor": 0.21607,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.15512,
+      "corridor": 0.74238,
+      "warning": 0.06094,
+      "hard_stop": 0.04155
+     }
+    },
+    "warning_contacts": {
+     "T": 14,
+     "RC": 0,
+     "S": 106,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 22
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 38,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 15
+    },
+    "n_tokens": 361,
+    "n_hazard_events": 0,
+    "PCV": 0.90572,
+    "SAHB": 41.11221,
+    "REF_mean": 0.64508,
+    "REF_eligible_fraction": 0.9,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.11646,
+    "qgy_ratio": 0.14577,
+    "CRE_strict": 0.25,
+    "CRE_soft": 0.21429,
+    "MPZF": 0.82087
+   }
+  },
+  "f79r": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.57785,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.92031,
+      "corridor": 0.07969,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.92288,
+      "corridor": 0.07712,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00514,
+      "corridor": 0.14396,
+      "warning": 0.42159,
+      "hard_stop": 0.42931
+     },
+     "C": {
+      "basin": 0.89974,
+      "corridor": 0.10026,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.94859,
+      "corridor": 0.05141,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.99743,
+      "corridor": 0.00257,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.42159,
+      "corridor": 0.57841,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 164,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 167,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 389,
+    "n_hazard_events": 0,
+    "PCV": 0.87322,
+    "SAHB": 0.36129,
+    "REF_mean": 0.44096,
+    "REF_eligible_fraction": 0.75,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.06977,
+    "CRE_soft": 0.06977,
+    "MPZF": 0.81919
+   },
+   "A2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.56722,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.8946,
+      "corridor": 0.1054,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.90488,
+      "corridor": 0.09512,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.01028,
+      "corridor": 0.19794,
+      "warning": 0.46272,
+      "hard_stop": 0.32905
+     },
+     "C": {
+      "basin": 0.26478,
+      "corridor": 0.65296,
+      "warning": 0.07712,
+      "hard_stop": 0.00514
+     },
+     "TR": {
+      "basin": 0.98201,
+      "corridor": 0.01799,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.98201,
+      "corridor": 0.01799,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.5964,
+      "corridor": 0.4036,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 180,
+     "C": 30,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 128,
+     "C": 2,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 389,
+    "n_hazard_events": 0,
+    "PCV": 0.87072,
+    "SAHB": 45.08814,
+    "REF_mean": 0.48321,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.09302,
+    "CRE_soft": 0.13953,
+    "MPZF": 0.75107
+   },
+   "A3": {
+    "old_viability": 1.0,
+    "old_y_final": 0.68519,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.62982,
+      "corridor": 0.35733,
+      "warning": 0.01285,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.01285,
+      "corridor": 0.34704,
+      "warning": 0.46272,
+      "hard_stop": 0.17738
+     },
+     "C": {
+      "basin": 0.80977,
+      "corridor": 0.19023,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.70951,
+      "corridor": 0.29049,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.84833,
+      "corridor": 0.15167,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.12082,
+      "corridor": 0.81748,
+      "warning": 0.05656,
+      "hard_stop": 0.00514
+     }
+    },
+    "warning_contacts": {
+     "T": 5,
+     "RC": 0,
+     "S": 180,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 22
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 69,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 2
+    },
+    "n_tokens": 389,
+    "n_hazard_events": 0,
+    "PCV": 0.87646,
+    "SAHB": 8.07836,
+    "REF_mean": 0.48172,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.05,
+    "CRE_soft": 0.2,
+    "MPZF": 0.75793
+   }
+  },
+  "f81v": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.56574,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.91085,
+      "corridor": 0.08915,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.01163,
+      "corridor": 0.12791,
+      "warning": 0.4186,
+      "hard_stop": 0.44186
+     },
+     "C": {
+      "basin": 0.82171,
+      "corridor": 0.17829,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.99612,
+      "corridor": 0.00388,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.95736,
+      "corridor": 0.04264,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 108,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 114,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 258,
+    "n_hazard_events": 0,
+    "PCV": 0.90242,
+    "SAHB": 0.34422,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.0,
+    "CRE_soft": 0.0,
+    "MPZF": 0.86563
+   },
+   "A2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.54472,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.89147,
+      "corridor": 0.10853,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.01163,
+      "corridor": 0.1938,
+      "warning": 0.46899,
+      "hard_stop": 0.32558
+     },
+     "C": {
+      "basin": 0.0814,
+      "corridor": 0.87984,
+      "warning": 0.03876,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.98837,
+      "corridor": 0.01163,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.99612,
+      "corridor": 0.00388,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 121,
+     "C": 10,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 84,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 258,
+    "n_hazard_events": 0,
+    "PCV": 0.88569,
+    "SAHB": 49.59363,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.0,
+    "CRE_soft": 0.0,
+    "MPZF": 0.75517
+   },
+   "A3": {
+    "old_viability": 1.0,
+    "old_y_final": 0.58114,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.6938,
+      "corridor": 0.29457,
+      "warning": 0.01163,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.0155,
+      "corridor": 0.32946,
+      "warning": 0.49225,
+      "hard_stop": 0.16279
+     },
+     "C": {
+      "basin": 0.63566,
+      "corridor": 0.36434,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.87984,
+      "corridor": 0.12016,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.53876,
+      "corridor": 0.46124,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 3,
+     "RC": 0,
+     "S": 127,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 42,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 258,
+    "n_hazard_events": 0,
+    "PCV": 0.9074,
+    "SAHB": 6.53898,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.0,
+    "CRE_soft": 0.07407,
+    "MPZF": 0.823
+   }
+  },
+  "f55r": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.69139,
+    "excursion_count": 5,
+    "bounded_excursion_count": 4,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.91129,
+      "corridor": 0.08871,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.09677,
+      "corridor": 0.59677,
+      "warning": 0.23387,
+      "hard_stop": 0.07258
+     },
+     "C": {
+      "basin": 0.5,
+      "corridor": 0.5,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.96774,
+      "corridor": 0.03226,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.84677,
+      "corridor": 0.15323,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 29,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 9,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 124,
+    "n_hazard_events": 0,
+    "PCV": 0.9002,
+    "SAHB": 0.37359,
+    "REF_mean": 0.56583,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.08958,
+    "qgy_ratio": 0.12957,
+    "CRE_strict": 0.28571,
+    "CRE_soft": 0.57143,
+    "MPZF": 0.83468
+   },
+   "A2": {
+    "old_viability": 0.99194,
+    "old_y_final": 0.74054,
+    "excursion_count": 2,
+    "bounded_excursion_count": 1,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.91935,
+      "corridor": 0.08065,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.18548,
+      "corridor": 0.62097,
+      "warning": 0.16129,
+      "hard_stop": 0.03226
+     },
+     "C": {
+      "basin": 0.15323,
+      "corridor": 0.58871,
+      "warning": 0.14516,
+      "hard_stop": 0.1129
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.8871,
+      "corridor": 0.1129,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.85484,
+      "corridor": 0.14516,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 20,
+     "C": 18,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 4,
+     "C": 14,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 124,
+    "n_hazard_events": 1,
+    "PCV": 0.88165,
+    "SAHB": 69.20354,
+    "REF_mean": 0.70594,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.15228,
+    "qgy_ratio": 0.20563,
+    "CRE_strict": 0.0,
+    "CRE_soft": 0.33333,
+    "MPZF": 0.7836
+   },
+   "A3": {
+    "old_viability": 1.0,
+    "old_y_final": 0.71808,
+    "excursion_count": 3,
+    "bounded_excursion_count": 2,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.41935,
+      "corridor": 0.58065,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.29032,
+      "corridor": 0.62097,
+      "warning": 0.08065,
+      "hard_stop": 0.00806
+     },
+     "C": {
+      "basin": 0.16935,
+      "corridor": 0.74194,
+      "warning": 0.08871,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.6371,
+      "corridor": 0.3629,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.80645,
+      "corridor": 0.19355,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 10,
+     "C": 11,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 1,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 124,
+    "n_hazard_events": 0,
+    "PCV": 0.90517,
+    "SAHB": 12.52472,
+    "REF_mean": 0.75016,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.19287,
+    "qgy_ratio": 0.26859,
+    "CRE_strict": 0.0,
+    "CRE_soft": 0.4,
+    "MPZF": 0.73656
+   }
+  },
+  "f40v": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.58008,
+    "excursion_count": 3,
+    "bounded_excursion_count": 2,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.66981,
+      "corridor": 0.33019,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.10377,
+      "corridor": 0.36792,
+      "warning": 0.36792,
+      "hard_stop": 0.16038
+     },
+     "C": {
+      "basin": 0.58491,
+      "corridor": 0.41509,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.92453,
+      "corridor": 0.07547,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 39,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 17,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 106,
+    "n_hazard_events": 0,
+    "PCV": 0.79261,
+    "SAHB": 0.34379,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.0,
+    "CRE_soft": 0.23077,
+    "MPZF": 0.68239
+   },
+   "A2": {
+    "old_viability": 0.99057,
+    "old_y_final": 0.57537,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.66981,
+      "corridor": 0.33019,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.12264,
+      "corridor": 0.4717,
+      "warning": 0.25472,
+      "hard_stop": 0.15094
+     },
+     "C": {
+      "basin": 0.06604,
+      "corridor": 0.66038,
+      "warning": 0.18868,
+      "hard_stop": 0.08491
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.77358,
+      "corridor": 0.22642,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 27,
+     "C": 20,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 16,
+     "C": 9,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 106,
+    "n_hazard_events": 1,
+    "PCV": 0.79112,
+    "SAHB": 56.21292,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.0,
+    "CRE_soft": 0.09091,
+    "MPZF": 0.63208
+   },
+   "A3": {
+    "old_viability": 1.0,
+    "old_y_final": 0.56582,
+    "excursion_count": 3,
+    "bounded_excursion_count": 2,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.31132,
+      "corridor": 0.65094,
+      "warning": 0.0283,
+      "hard_stop": 0.00943
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.15094,
+      "corridor": 0.56604,
+      "warning": 0.24528,
+      "hard_stop": 0.03774
+     },
+     "C": {
+      "basin": 0.19811,
+      "corridor": 0.78302,
+      "warning": 0.01887,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.41509,
+      "corridor": 0.56604,
+      "warning": 0.01887,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 3,
+     "RC": 0,
+     "S": 26,
+     "C": 2,
+     "TR": 0,
+     "X": 2,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 1,
+     "RC": 0,
+     "S": 4,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 106,
+    "n_hazard_events": 0,
+    "PCV": 0.81344,
+    "SAHB": 24.08973,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.0,
+    "CRE_soft": 0.44444,
+    "MPZF": 0.60692
+   }
+  },
+  "f43v": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.57562,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.98039,
+      "corridor": 0.01961,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.03268,
+      "corridor": 0.08497,
+      "warning": 0.39216,
+      "hard_stop": 0.4902
+     },
+     "C": {
+      "basin": 0.87582,
+      "corridor": 0.12418,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.99346,
+      "corridor": 0.00654,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.54248,
+      "corridor": 0.45752,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 60,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 75,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 153,
+    "n_hazard_events": 0,
+    "PCV": 0.78894,
+    "SAHB": 0.23015,
+    "REF_mean": 0.44498,
+    "REF_eligible_fraction": 0.5,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.18838,
+    "qgy_ratio": 0.32727,
+    "CRE_strict": 0.06667,
+    "CRE_soft": 0.06667,
+    "MPZF": 0.7146
+   },
+   "A2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.57665,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.98693,
+      "corridor": 0.01307,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.03922,
+      "corridor": 0.11111,
+      "warning": 0.40523,
+      "hard_stop": 0.44444
+     },
+     "C": {
+      "basin": 0.30065,
+      "corridor": 0.6732,
+      "warning": 0.02614,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.96078,
+      "corridor": 0.03922,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.54248,
+      "corridor": 0.45752,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 62,
+     "C": 4,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 68,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 153,
+    "n_hazard_events": 0,
+    "PCV": 0.79619,
+    "SAHB": 3.56886,
+    "REF_mean": 0.53959,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.26533,
+    "qgy_ratio": 0.46013,
+    "CRE_strict": 0.06667,
+    "CRE_soft": 0.06667,
+    "MPZF": 0.67647
+   },
+   "A3": {
+    "old_viability": 1.0,
+    "old_y_final": 0.67121,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.86928,
+      "corridor": 0.13072,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.04575,
+      "corridor": 0.21569,
+      "warning": 0.47712,
+      "hard_stop": 0.26144
+     },
+     "C": {
+      "basin": 0.69935,
+      "corridor": 0.30065,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.79085,
+      "corridor": 0.20915,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.37255,
+      "corridor": 0.52941,
+      "warning": 0.0915,
+      "hard_stop": 0.00654
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 73,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 14
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 40,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 1
+    },
+    "n_tokens": 153,
+    "n_hazard_events": 0,
+    "PCV": 0.81808,
+    "SAHB": 0.32996,
+    "REF_mean": 0.56902,
+    "REF_eligible_fraction": 0.5,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.27572,
+    "qgy_ratio": 0.41078,
+    "CRE_strict": 0.06667,
+    "CRE_soft": 0.2,
+    "MPZF": 0.73203
+   }
+  },
+  "f34r": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.58538,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.99306,
+      "corridor": 0.00694,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.03472,
+      "corridor": 0.32639,
+      "warning": 0.42361,
+      "hard_stop": 0.21528
+     },
+     "C": {
+      "basin": 0.97917,
+      "corridor": 0.02083,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.45833,
+      "corridor": 0.54167,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 61,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 31,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 144,
+    "n_hazard_events": 0,
+    "PCV": 0.87622,
+    "SAHB": 0.18718,
+    "REF_mean": 0.4766,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.14375,
+    "qgy_ratio": 0.24556,
+    "CRE_strict": 0.07143,
+    "CRE_soft": 0.14286,
+    "MPZF": 0.84144
+   },
+   "A2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.58304,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.03472,
+      "corridor": 0.48611,
+      "warning": 0.3125,
+      "hard_stop": 0.16667
+     },
+     "C": {
+      "basin": 0.4375,
+      "corridor": 0.5625,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.55556,
+      "corridor": 0.44444,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 45,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 24,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 144,
+    "n_hazard_events": 0,
+    "PCV": 0.88322,
+    "SAHB": 0.34849,
+    "REF_mean": 0.6221,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.13112,
+    "qgy_ratio": 0.22488,
+    "CRE_strict": 0.07143,
+    "CRE_soft": 0.21429,
+    "MPZF": 0.80208
+   },
+   "A3": {
+    "old_viability": 1.0,
+    "old_y_final": 0.6558,
+    "excursion_count": 2,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.81944,
+      "corridor": 0.18056,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.04167,
+      "corridor": 0.66667,
+      "warning": 0.1875,
+      "hard_stop": 0.10417
+     },
+     "C": {
+      "basin": 0.96528,
+      "corridor": 0.03472,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.95139,
+      "corridor": 0.04861,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.86111,
+      "corridor": 0.13889,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.13889,
+      "corridor": 0.86111,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 27,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 15,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 144,
+    "n_hazard_events": 0,
+    "PCV": 0.88733,
+    "SAHB": 0.23462,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.24828,
+    "qgy_ratio": 0.37859,
+    "CRE_strict": 0.09091,
+    "CRE_soft": 0.27273,
+    "MPZF": 0.82639
+   }
+  },
+  "f31r": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.5949,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.97,
+      "corridor": 0.03,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.02,
+      "corridor": 0.09,
+      "warning": 0.38,
+      "hard_stop": 0.51
+     },
+     "C": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.46,
+      "corridor": 0.54,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 38,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 51,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 100,
+    "n_hazard_events": 0,
+    "PCV": 0.78967,
+    "SAHB": 0.23016,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.06667,
+    "CRE_soft": 0.13333,
+    "MPZF": 0.715
+   },
+   "A2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.58561,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.99,
+      "corridor": 0.01,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.03,
+      "corridor": 0.15,
+      "warning": 0.38,
+      "hard_stop": 0.44
+     },
+     "C": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.98,
+      "corridor": 0.02,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.64,
+      "corridor": 0.36,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 38,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 44,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 100,
+    "n_hazard_events": 0,
+    "PCV": 0.78967,
+    "SAHB": 0.18375,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.07143,
+    "CRE_soft": 0.14286,
+    "MPZF": 0.715
+   },
+   "A3": {
+    "old_viability": 1.0,
+    "old_y_final": 0.65331,
+    "excursion_count": 2,
+    "bounded_excursion_count": 1,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.9,
+      "corridor": 0.1,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.04,
+      "corridor": 0.3,
+      "warning": 0.3,
+      "hard_stop": 0.36
+     },
+     "C": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.82,
+      "corridor": 0.18,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.23,
+      "corridor": 0.77,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 30,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 36,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 100,
+    "n_hazard_events": 0,
+    "PCV": 0.8115,
+    "SAHB": 0.39292,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.0,
+    "CRE_soft": 0.09091,
+    "MPZF": 0.73833
+   }
+  },
+  "f39v": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.58117,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.96479,
+      "corridor": 0.03521,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.97887,
+      "corridor": 0.02113,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.0493,
+      "corridor": 0.52817,
+      "warning": 0.29577,
+      "hard_stop": 0.12676
+     },
+     "C": {
+      "basin": 0.61268,
+      "corridor": 0.35915,
+      "warning": 0.02817,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.97887,
+      "corridor": 0.02113,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.92958,
+      "corridor": 0.07042,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 42,
+     "C": 4,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 18,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 142,
+    "n_hazard_events": 0,
+    "PCV": 0.85927,
+    "SAHB": 1.98467,
+    "REF_mean": 0.52088,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.18182,
+    "CRE_soft": 0.36364,
+    "MPZF": 0.79343
+   },
+   "A2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.58278,
+    "excursion_count": 2,
+    "bounded_excursion_count": 1,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.97887,
+      "corridor": 0.02113,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.98592,
+      "corridor": 0.01408,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.09155,
+      "corridor": 0.60563,
+      "warning": 0.23239,
+      "hard_stop": 0.07042
+     },
+     "C": {
+      "basin": 0.3169,
+      "corridor": 0.38732,
+      "warning": 0.21127,
+      "hard_stop": 0.08451
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.92254,
+      "corridor": 0.07746,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.84507,
+      "corridor": 0.15493,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 33,
+     "C": 30,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 10,
+     "C": 12,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 142,
+    "n_hazard_events": 0,
+    "PCV": 0.84014,
+    "SAHB": 83.66217,
+    "REF_mean": 0.66189,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.11111,
+    "CRE_soft": 0.33333,
+    "MPZF": 0.74883
+   },
+   "A3": {
+    "old_viability": 1.0,
+    "old_y_final": 0.56411,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.57746,
+      "corridor": 0.42254,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.1338,
+      "corridor": 0.71831,
+      "warning": 0.14789,
+      "hard_stop": 0.0
+     },
+     "C": {
+      "basin": 0.4507,
+      "corridor": 0.44366,
+      "warning": 0.09155,
+      "hard_stop": 0.01408
+     },
+     "TR": {
+      "basin": 0.83099,
+      "corridor": 0.16901,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.73944,
+      "corridor": 0.25352,
+      "warning": 0.0,
+      "hard_stop": 0.00704
+     },
+     "Y": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 21,
+     "C": 13,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 0,
+     "C": 2,
+     "TR": 0,
+     "X": 1,
+     "Y": 0
+    },
+    "n_tokens": 142,
+    "n_hazard_events": 0,
+    "PCV": 0.88462,
+    "SAHB": 20.57776,
+    "REF_mean": 0.73994,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.0,
+    "CRE_soft": 0.5,
+    "MPZF": 0.76291
+   }
+  },
+  "f95r1": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.5951,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.90291,
+      "corridor": 0.09709,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.03883,
+      "corridor": 0.43689,
+      "warning": 0.3301,
+      "hard_stop": 0.19417
+     },
+     "C": {
+      "basin": 0.8835,
+      "corridor": 0.1165,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.72816,
+      "corridor": 0.27184,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 34,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 20,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 103,
+    "n_hazard_events": 0,
+    "PCV": 0.94296,
+    "SAHB": 0.35089,
+    "REF_mean": 0.53161,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.11111,
+    "CRE_soft": 0.11111,
+    "MPZF": 0.94337
+   },
+   "A2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.58741,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.90291,
+      "corridor": 0.09709,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.04854,
+      "corridor": 0.5534,
+      "warning": 0.27184,
+      "hard_stop": 0.12621
+     },
+     "C": {
+      "basin": 0.30097,
+      "corridor": 0.69903,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.73786,
+      "corridor": 0.26214,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 28,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 13,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 103,
+    "n_hazard_events": 0,
+    "PCV": 0.93172,
+    "SAHB": 0.4743,
+    "REF_mean": 0.66585,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.25,
+    "CRE_soft": 0.375,
+    "MPZF": 0.85922
+   },
+   "A3": {
+    "old_viability": 1.0,
+    "old_y_final": 0.65839,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.59223,
+      "corridor": 0.39806,
+      "warning": 0.00971,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.07767,
+      "corridor": 0.65049,
+      "warning": 0.20388,
+      "hard_stop": 0.06796
+     },
+     "C": {
+      "basin": 0.75728,
+      "corridor": 0.24272,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.92233,
+      "corridor": 0.07767,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.71845,
+      "corridor": 0.28155,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 1,
+     "RC": 0,
+     "S": 21,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 7,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 103,
+    "n_hazard_events": 0,
+    "PCV": 0.94239,
+    "SAHB": 3.56286,
+    "REF_mean": 0.73002,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.16667,
+    "CRE_soft": 0.16667,
+    "MPZF": 0.8932
+   }
+  },
+  "f104r": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.7223,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.86758,
+      "corridor": 0.13242,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.90868,
+      "corridor": 0.09132,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00457,
+      "corridor": 0.25342,
+      "warning": 0.42922,
+      "hard_stop": 0.31279
+     },
+     "C": {
+      "basin": 0.96575,
+      "corridor": 0.03425,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.95434,
+      "corridor": 0.04566,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.98174,
+      "corridor": 0.01826,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.3653,
+      "corridor": 0.6347,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 188,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 137,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 438,
+    "n_hazard_events": 0,
+    "PCV": 0.86952,
+    "SAHB": 0.33333,
+    "REF_mean": 0.60833,
+    "REF_eligible_fraction": 0.125,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.28208,
+    "qgy_ratio": 0.39053,
+    "CRE_strict": 0.14286,
+    "CRE_soft": 0.35714,
+    "MPZF": 0.81393
+   },
+   "A2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.72142,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.83562,
+      "corridor": 0.16438,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.89041,
+      "corridor": 0.10959,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00457,
+      "corridor": 0.38813,
+      "warning": 0.39041,
+      "hard_stop": 0.21689
+     },
+     "C": {
+      "basin": 0.36758,
+      "corridor": 0.5411,
+      "warning": 0.06621,
+      "hard_stop": 0.02511
+     },
+     "TR": {
+      "basin": 0.99087,
+      "corridor": 0.00913,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.94292,
+      "corridor": 0.05708,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.41324,
+      "corridor": 0.58676,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 171,
+     "C": 29,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 95,
+     "C": 11,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 438,
+    "n_hazard_events": 0,
+    "PCV": 0.87949,
+    "SAHB": 34.08865,
+    "REF_mean": 0.5647,
+    "REF_eligible_fraction": 0.75,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.38975,
+    "qgy_ratio": 0.54026,
+    "CRE_strict": 0.13514,
+    "CRE_soft": 0.40541,
+    "MPZF": 0.77816
+   },
+   "A3": {
+    "old_viability": 1.0,
+    "old_y_final": 0.90106,
+    "excursion_count": 3,
+    "bounded_excursion_count": 1,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.74886,
+      "corridor": 0.23059,
+      "warning": 0.02055,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.98402,
+      "corridor": 0.01598,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00913,
+      "corridor": 0.56621,
+      "warning": 0.33105,
+      "hard_stop": 0.09361
+     },
+     "C": {
+      "basin": 0.70548,
+      "corridor": 0.29452,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.89041,
+      "corridor": 0.10959,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.88128,
+      "corridor": 0.11872,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.15525,
+      "corridor": 0.81735,
+      "warning": 0.02511,
+      "hard_stop": 0.00228
+     }
+    },
+    "warning_contacts": {
+     "T": 9,
+     "RC": 0,
+     "S": 145,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 11
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 41,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 1
+    },
+    "n_tokens": 438,
+    "n_hazard_events": 0,
+    "PCV": 0.8872,
+    "SAHB": 15.56733,
+    "REF_mean": 0.56222,
+    "REF_eligible_fraction": 0.625,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.42719,
+    "qgy_ratio": 0.47409,
+    "CRE_strict": 0.10714,
+    "CRE_soft": 0.53571,
+    "MPZF": 0.81012
+   }
+  },
+  "f111r": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.65365,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.80619,
+      "corridor": 0.18078,
+      "warning": 0.01303,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.89088,
+      "corridor": 0.10912,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00814,
+      "corridor": 0.15961,
+      "warning": 0.31596,
+      "hard_stop": 0.51629
+     },
+     "C": {
+      "basin": 0.99186,
+      "corridor": 0.00814,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.943,
+      "corridor": 0.057,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.96417,
+      "corridor": 0.03583,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.24919,
+      "corridor": 0.75081,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 8,
+     "RC": 0,
+     "S": 194,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 317,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 614,
+    "n_hazard_events": 0,
+    "PCV": 0.79788,
+    "SAHB": 12.56605,
+    "REF_mean": 0.50663,
+    "REF_eligible_fraction": 0.41667,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.34688,
+    "qgy_ratio": 0.53069,
+    "CRE_strict": 0.17647,
+    "CRE_soft": 0.27451,
+    "MPZF": 0.7196
+   },
+   "A2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.68054,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.79153,
+      "corridor": 0.18893,
+      "warning": 0.01792,
+      "hard_stop": 0.00163
+     },
+     "RC": {
+      "basin": 0.88274,
+      "corridor": 0.11726,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00814,
+      "corridor": 0.17752,
+      "warning": 0.36156,
+      "hard_stop": 0.45277
+     },
+     "C": {
+      "basin": 0.68404,
+      "corridor": 0.2785,
+      "warning": 0.03583,
+      "hard_stop": 0.00163
+     },
+     "TR": {
+      "basin": 0.97394,
+      "corridor": 0.02606,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.88762,
+      "corridor": 0.11238,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.32573,
+      "corridor": 0.67427,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 11,
+     "RC": 0,
+     "S": 222,
+     "C": 22,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 1,
+     "RC": 0,
+     "S": 278,
+     "C": 1,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 614,
+    "n_hazard_events": 0,
+    "PCV": 0.81604,
+    "SAHB": 34.61352,
+    "REF_mean": 0.5923,
+    "REF_eligible_fraction": 0.66667,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.47069,
+    "qgy_ratio": 0.69165,
+    "CRE_strict": 0.18,
+    "CRE_soft": 0.28,
+    "MPZF": 0.7253
+   },
+   "A3": {
+    "old_viability": 1.0,
+    "old_y_final": 0.77454,
+    "excursion_count": 2,
+    "bounded_excursion_count": 1,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.61401,
+      "corridor": 0.32899,
+      "warning": 0.04072,
+      "hard_stop": 0.01629
+     },
+     "RC": {
+      "basin": 0.93811,
+      "corridor": 0.06189,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00977,
+      "corridor": 0.27362,
+      "warning": 0.38274,
+      "hard_stop": 0.33388
+     },
+     "C": {
+      "basin": 0.89577,
+      "corridor": 0.10423,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.88762,
+      "corridor": 0.11238,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.7671,
+      "corridor": 0.22964,
+      "warning": 0.00326,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.03583,
+      "corridor": 0.89414,
+      "warning": 0.01954,
+      "hard_stop": 0.05049
+     }
+    },
+    "warning_contacts": {
+     "T": 25,
+     "RC": 0,
+     "S": 235,
+     "C": 0,
+     "TR": 0,
+     "X": 2,
+     "Y": 12
+    },
+    "hard_stop_contacts": {
+     "T": 10,
+     "RC": 0,
+     "S": 205,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 31
+    },
+    "n_tokens": 614,
+    "n_hazard_events": 0,
+    "PCV": 0.82163,
+    "SAHB": 96.17271,
+    "REF_mean": 0.51701,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.65028,
+    "qgy_ratio": 0.83958,
+    "CRE_strict": 0.19608,
+    "CRE_soft": 0.45098,
+    "MPZF": 0.72856
+   }
+  },
+  "f116r": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.59669,
+    "excursion_count": 2,
+    "bounded_excursion_count": 1,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.84916,
+      "corridor": 0.15084,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.94786,
+      "corridor": 0.05214,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00559,
+      "corridor": 0.19367,
+      "warning": 0.39665,
+      "hard_stop": 0.4041
+     },
+     "C": {
+      "basin": 0.88454,
+      "corridor": 0.11546,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.99069,
+      "corridor": 0.00931,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.97207,
+      "corridor": 0.02793,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.34264,
+      "corridor": 0.65736,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 213,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 217,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 537,
+    "n_hazard_events": 0,
+    "PCV": 0.82561,
+    "SAHB": 0.4719,
+    "REF_mean": 0.38254,
+    "REF_eligible_fraction": 0.83333,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.29712,
+    "qgy_ratio": 0.49795,
+    "CRE_strict": 0.14583,
+    "CRE_soft": 0.125,
+    "MPZF": 0.75233
+   },
+   "A2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.6153,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.80633,
+      "corridor": 0.19181,
+      "warning": 0.00186,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.93855,
+      "corridor": 0.06145,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00931,
+      "corridor": 0.24022,
+      "warning": 0.4432,
+      "hard_stop": 0.30726
+     },
+     "C": {
+      "basin": 0.35196,
+      "corridor": 0.58473,
+      "warning": 0.05959,
+      "hard_stop": 0.00372
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.89944,
+      "corridor": 0.10056,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.44693,
+      "corridor": 0.55307,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 1,
+     "RC": 0,
+     "S": 238,
+     "C": 32,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 165,
+     "C": 2,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 537,
+    "n_hazard_events": 0,
+    "PCV": 0.8351,
+    "SAHB": 46.60896,
+    "REF_mean": 0.50708,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.39514,
+    "qgy_ratio": 0.64218,
+    "CRE_strict": 0.125,
+    "CRE_soft": 0.16667,
+    "MPZF": 0.71074
+   },
+   "A3": {
+    "old_viability": 1.0,
+    "old_y_final": 0.65044,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.65549,
+      "corridor": 0.31844,
+      "warning": 0.01862,
+      "hard_stop": 0.00745
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00931,
+      "corridor": 0.39851,
+      "warning": 0.4581,
+      "hard_stop": 0.13408
+     },
+     "C": {
+      "basin": 0.7784,
+      "corridor": 0.21788,
+      "warning": 0.00372,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.87896,
+      "corridor": 0.12104,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.77467,
+      "corridor": 0.22533,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.08939,
+      "corridor": 0.85289,
+      "warning": 0.05773,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 10,
+     "RC": 0,
+     "S": 246,
+     "C": 2,
+     "TR": 0,
+     "X": 0,
+     "Y": 31
+    },
+    "hard_stop_contacts": {
+     "T": 4,
+     "RC": 0,
+     "S": 72,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 537,
+    "n_hazard_events": 0,
+    "PCV": 0.83883,
+    "SAHB": 50.62956,
+    "REF_mean": 0.46847,
+    "REF_eligible_fraction": 0.83333,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.46482,
+    "qgy_ratio": 0.71462,
+    "CRE_strict": 0.17021,
+    "CRE_soft": 0.29787,
+    "MPZF": 0.72967
+   }
+  },
+  "f105r": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.57625,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.97297,
+      "corridor": 0.02703,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.01622,
+      "corridor": 0.18378,
+      "warning": 0.41081,
+      "hard_stop": 0.38919
+     },
+     "C": {
+      "basin": 0.95676,
+      "corridor": 0.04324,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.9973,
+      "corridor": 0.0027,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.33784,
+      "corridor": 0.66216,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 152,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 144,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 370,
+    "n_hazard_events": 0,
+    "PCV": 0.85831,
+    "SAHB": 0.2635,
+    "REF_mean": 0.31762,
+    "REF_eligible_fraction": 0.18182,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.17516,
+    "qgy_ratio": 0.30397,
+    "CRE_strict": 0.28571,
+    "CRE_soft": 0.31429,
+    "MPZF": 0.81396
+   },
+   "A2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.57591,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.98378,
+      "corridor": 0.01622,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.01622,
+      "corridor": 0.25676,
+      "warning": 0.41351,
+      "hard_stop": 0.31351
+     },
+     "C": {
+      "basin": 0.53784,
+      "corridor": 0.43784,
+      "warning": 0.00811,
+      "hard_stop": 0.01622
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.98378,
+      "corridor": 0.01622,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.36757,
+      "corridor": 0.63243,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 153,
+     "C": 3,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 116,
+     "C": 6,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 370,
+    "n_hazard_events": 0,
+    "PCV": 0.86901,
+    "SAHB": 17.59757,
+    "REF_mean": 0.47762,
+    "REF_eligible_fraction": 0.18182,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.1866,
+    "qgy_ratio": 0.32401,
+    "CRE_strict": 0.29412,
+    "CRE_soft": 0.32353,
+    "MPZF": 0.79955
+   },
+   "A3": {
+    "old_viability": 1.0,
+    "old_y_final": 0.6038,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.88378,
+      "corridor": 0.11622,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.01622,
+      "corridor": 0.43514,
+      "warning": 0.38378,
+      "hard_stop": 0.16486
+     },
+     "C": {
+      "basin": 0.80541,
+      "corridor": 0.19459,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.85405,
+      "corridor": 0.14595,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.13784,
+      "corridor": 0.80811,
+      "warning": 0.05405,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 142,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 20
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 61,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 370,
+    "n_hazard_events": 0,
+    "PCV": 0.87764,
+    "SAHB": 0.40501,
+    "REF_mean": 0.50418,
+    "REF_eligible_fraction": 0.18182,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.25023,
+    "qgy_ratio": 0.41443,
+    "CRE_strict": 0.31034,
+    "CRE_soft": 0.58621,
+    "MPZF": 0.82162
+   }
+  },
+  "f108v": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.67349,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.83509,
+      "corridor": 0.16491,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.84561,
+      "corridor": 0.15439,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00526,
+      "corridor": 0.15263,
+      "warning": 0.37368,
+      "hard_stop": 0.46842
+     },
+     "C": {
+      "basin": 0.97544,
+      "corridor": 0.02456,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.97018,
+      "corridor": 0.02982,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.98421,
+      "corridor": 0.01579,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.16316,
+      "corridor": 0.83684,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 213,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 267,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 570,
+    "n_hazard_events": 0,
+    "PCV": 0.76925,
+    "SAHB": 0.47497,
+    "REF_mean": 0.44997,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.39914,
+    "qgy_ratio": 0.59265,
+    "CRE_strict": 0.22642,
+    "CRE_soft": 0.35849,
+    "MPZF": 0.67807
+   },
+   "A2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.64694,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.81053,
+      "corridor": 0.18947,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.83333,
+      "corridor": 0.16667,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00526,
+      "corridor": 0.20877,
+      "warning": 0.40351,
+      "hard_stop": 0.38246
+     },
+     "C": {
+      "basin": 0.78947,
+      "corridor": 0.19298,
+      "warning": 0.01754,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.95439,
+      "corridor": 0.04561,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.21404,
+      "corridor": 0.78596,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 230,
+     "C": 10,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 218,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 570,
+    "n_hazard_events": 0,
+    "PCV": 0.78067,
+    "SAHB": 5.03285,
+    "REF_mean": 0.53879,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.40401,
+    "qgy_ratio": 0.62449,
+    "CRE_strict": 0.25,
+    "CRE_soft": 0.32692,
+    "MPZF": 0.68596
+   },
+   "A3": {
+    "old_viability": 0.99825,
+    "old_y_final": 0.79388,
+    "excursion_count": 2,
+    "bounded_excursion_count": 1,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.70175,
+      "corridor": 0.27018,
+      "warning": 0.02281,
+      "hard_stop": 0.00526
+     },
+     "RC": {
+      "basin": 0.97544,
+      "corridor": 0.02456,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00702,
+      "corridor": 0.3193,
+      "warning": 0.40175,
+      "hard_stop": 0.27193
+     },
+     "C": {
+      "basin": 0.86491,
+      "corridor": 0.13509,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.85263,
+      "corridor": 0.14737,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.75614,
+      "corridor": 0.24211,
+      "warning": 0.00175,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.02807,
+      "corridor": 0.67895,
+      "warning": 0.21754,
+      "hard_stop": 0.07544
+     }
+    },
+    "warning_contacts": {
+     "T": 13,
+     "RC": 0,
+     "S": 229,
+     "C": 0,
+     "TR": 0,
+     "X": 1,
+     "Y": 124
+    },
+    "hard_stop_contacts": {
+     "T": 3,
+     "RC": 0,
+     "S": 155,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 43
+    },
+    "n_tokens": 570,
+    "n_hazard_events": 1,
+    "PCV": 0.80409,
+    "SAHB": 42.21334,
+    "REF_mean": 0.5454,
+    "REF_eligible_fraction": 0.91667,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.5751,
+    "qgy_ratio": 0.72442,
+    "CRE_strict": 0.25,
+    "CRE_soft": 0.48077,
+    "MPZF": 0.71754
+   }
+  },
+  "f66r": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.57915,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.94529,
+      "corridor": 0.05471,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.01216,
+      "corridor": 0.1155,
+      "warning": 0.40122,
+      "hard_stop": 0.47112
+     },
+     "C": {
+      "basin": 0.87234,
+      "corridor": 0.12766,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.74468,
+      "corridor": 0.25532,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 132,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 155,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 329,
+    "n_hazard_events": 0,
+    "PCV": 0.87204,
+    "SAHB": 0.29173,
+    "REF_mean": 0.42113,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.05882,
+    "CRE_soft": 0.05882,
+    "MPZF": 0.82877
+   },
+   "A2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.56068,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.96353,
+      "corridor": 0.03647,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.01216,
+      "corridor": 0.19453,
+      "warning": 0.48328,
+      "hard_stop": 0.31003
+     },
+     "C": {
+      "basin": 0.16109,
+      "corridor": 0.82067,
+      "warning": 0.01824,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.99392,
+      "corridor": 0.00608,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.82371,
+      "corridor": 0.17629,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 159,
+     "C": 6,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 102,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 329,
+    "n_hazard_events": 0,
+    "PCV": 0.8636,
+    "SAHB": 20.63788,
+    "REF_mean": 0.56334,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.06061,
+    "CRE_soft": 0.06061,
+    "MPZF": 0.73708
+   },
+   "A3": {
+    "old_viability": 1.0,
+    "old_y_final": 0.61491,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.69909,
+      "corridor": 0.30091,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.01216,
+      "corridor": 0.38298,
+      "warning": 0.45897,
+      "hard_stop": 0.1459
+     },
+     "C": {
+      "basin": 0.769,
+      "corridor": 0.231,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.96657,
+      "corridor": 0.03343,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.93921,
+      "corridor": 0.06079,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.30395,
+      "corridor": 0.69605,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 151,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 48,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 329,
+    "n_hazard_events": 0,
+    "PCV": 0.87761,
+    "SAHB": 0.40053,
+    "REF_mean": 0.55261,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.03226,
+    "CRE_soft": 0.09677,
+    "MPZF": 0.79483
+   }
+  },
+  "f85r1": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.64235,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.997,
+      "corridor": 0.003,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.99399,
+      "corridor": 0.00601,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00901,
+      "corridor": 0.25826,
+      "warning": 0.45946,
+      "hard_stop": 0.27327
+     },
+     "C": {
+      "basin": 0.94595,
+      "corridor": 0.05405,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.3964,
+      "corridor": 0.6036,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 153,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 91,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 333,
+    "n_hazard_events": 0,
+    "PCV": 0.89657,
+    "SAHB": 0.20969,
+    "REF_mean": 0.4278,
+    "REF_eligible_fraction": 0.3,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.42567,
+    "qgy_ratio": 0.66267,
+    "CRE_strict": 0.28571,
+    "CRE_soft": 0.2,
+    "MPZF": 0.87387
+   },
+   "A2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.61244,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00901,
+      "corridor": 0.42943,
+      "warning": 0.39339,
+      "hard_stop": 0.16817
+     },
+     "C": {
+      "basin": 0.56456,
+      "corridor": 0.43544,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.40541,
+      "corridor": 0.58859,
+      "warning": 0.00601,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 131,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 2
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 56,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 333,
+    "n_hazard_events": 0,
+    "PCV": 0.89412,
+    "SAHB": 1.98447,
+    "REF_mean": 0.49705,
+    "REF_eligible_fraction": 0.8,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.52519,
+    "qgy_ratio": 0.85754,
+    "CRE_strict": 0.24242,
+    "CRE_soft": 0.18182,
+    "MPZF": 0.83183
+   },
+   "A3": {
+    "old_viability": 1.0,
+    "old_y_final": 0.78651,
+    "excursion_count": 3,
+    "bounded_excursion_count": 1,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.95495,
+      "corridor": 0.04505,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.01802,
+      "corridor": 0.60961,
+      "warning": 0.30931,
+      "hard_stop": 0.06306
+     },
+     "C": {
+      "basin": 0.83784,
+      "corridor": 0.16216,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.97598,
+      "corridor": 0.02402,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.91291,
+      "corridor": 0.08709,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.15015,
+      "corridor": 0.7988,
+      "warning": 0.02703,
+      "hard_stop": 0.02402
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 103,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 9
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 21,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 8
+    },
+    "n_tokens": 333,
+    "n_hazard_events": 0,
+    "PCV": 0.90033,
+    "SAHB": 0.26716,
+    "REF_mean": 0.4426,
+    "REF_eligible_fraction": 0.5,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.74021,
+    "qgy_ratio": 0.94113,
+    "CRE_strict": 0.2069,
+    "CRE_soft": 0.34483,
+    "MPZF": 0.85836
+   }
+  },
+  "f86v5": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.57336,
+    "excursion_count": 8,
+    "bounded_excursion_count": 6,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.99738,
+      "corridor": 0.00262,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.04987,
+      "corridor": 0.44882,
+      "warning": 0.34646,
+      "hard_stop": 0.15486
+     },
+     "C": {
+      "basin": 0.7664,
+      "corridor": 0.2336,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.99738,
+      "corridor": 0.00262,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.54068,
+      "corridor": 0.45932,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 132,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 59,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 381,
+    "n_hazard_events": 0,
+    "PCV": 0.91724,
+    "SAHB": 0.4281,
+    "REF_mean": 0.44838,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.198,
+    "qgy_ratio": 0.34534,
+    "CRE_strict": 0.07143,
+    "CRE_soft": 0.42857,
+    "MPZF": 0.89108
+   },
+   "A2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.5748,
+    "excursion_count": 4,
+    "bounded_excursion_count": 2,
+    "zone_occupancy": {
+     "T": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.09449,
+      "corridor": 0.53806,
+      "warning": 0.27034,
+      "hard_stop": 0.09711
+     },
+     "C": {
+      "basin": 0.31759,
+      "corridor": 0.52493,
+      "warning": 0.09974,
+      "hard_stop": 0.05774
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.96325,
+      "corridor": 0.03675,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.54593,
+      "corridor": 0.45407,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 103,
+     "C": 38,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 37,
+     "C": 22,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 381,
+    "n_hazard_events": 0,
+    "PCV": 0.90413,
+    "SAHB": 87.15987,
+    "REF_mean": 0.5592,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.26364,
+    "qgy_ratio": 0.45867,
+    "CRE_strict": 0.075,
+    "CRE_soft": 0.3,
+    "MPZF": 0.82677
+   },
+   "A3": {
+    "old_viability": 1.0,
+    "old_y_final": 0.57449,
+    "excursion_count": 7,
+    "bounded_excursion_count": 5,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.89764,
+      "corridor": 0.10236,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.14436,
+      "corridor": 0.64829,
+      "warning": 0.16535,
+      "hard_stop": 0.04199
+     },
+     "C": {
+      "basin": 0.58268,
+      "corridor": 0.38058,
+      "warning": 0.0315,
+      "hard_stop": 0.00525
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.91601,
+      "corridor": 0.08399,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.34908,
+      "corridor": 0.65092,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 63,
+     "C": 12,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 16,
+     "C": 2,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 381,
+    "n_hazard_events": 0,
+    "PCV": 0.91894,
+    "SAHB": 8.03961,
+    "REF_mean": 0.57987,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.24387,
+    "qgy_ratio": 0.4245,
+    "CRE_strict": 0.05882,
+    "CRE_soft": 0.64706,
+    "MPZF": 0.85914
+   }
+  },
+  "f86v6": {
+   "A1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.60007,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.85595,
+      "corridor": 0.14405,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.99582,
+      "corridor": 0.00418,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00418,
+      "corridor": 0.53445,
+      "warning": 0.31106,
+      "hard_stop": 0.15031
+     },
+     "C": {
+      "basin": 0.75783,
+      "corridor": 0.24217,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.9666,
+      "corridor": 0.0334,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.38205,
+      "corridor": 0.61795,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 149,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 72,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 479,
+    "n_hazard_events": 0,
+    "PCV": 0.86159,
+    "SAHB": 0.41628,
+    "REF_mean": 0.55671,
+    "REF_eligible_fraction": 0.90909,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.21593,
+    "qgy_ratio": 0.35985,
+    "CRE_strict": 0.24242,
+    "CRE_soft": 0.57576,
+    "MPZF": 0.81698
+   },
+   "A2": {
+    "old_viability": 0.99582,
+    "old_y_final": 0.58579,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.84551,
+      "corridor": 0.15449,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.99582,
+      "corridor": 0.00418,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00835,
+      "corridor": 0.65553,
+      "warning": 0.26514,
+      "hard_stop": 0.07098
+     },
+     "C": {
+      "basin": 0.39666,
+      "corridor": 0.47182,
+      "warning": 0.08351,
+      "hard_stop": 0.04802
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.91023,
+      "corridor": 0.08977,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.41545,
+      "corridor": 0.58455,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 127,
+     "C": 40,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 34,
+     "C": 23,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 479,
+    "n_hazard_events": 2,
+    "PCV": 0.85976,
+    "SAHB": 128.70758,
+    "REF_mean": 0.65189,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.2356,
+    "qgy_ratio": 0.40219,
+    "CRE_strict": 0.13793,
+    "CRE_soft": 0.37931,
+    "MPZF": 0.78775
+   },
+   "A3": {
+    "old_viability": 1.0,
+    "old_y_final": 0.69576,
+    "excursion_count": 6,
+    "bounded_excursion_count": 3,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.57203,
+      "corridor": 0.39875,
+      "warning": 0.02923,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.08768,
+      "corridor": 0.74322,
+      "warning": 0.16075,
+      "hard_stop": 0.00835
+     },
+     "C": {
+      "basin": 0.62422,
+      "corridor": 0.35491,
+      "warning": 0.02088,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.97286,
+      "corridor": 0.02714,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.83299,
+      "corridor": 0.16493,
+      "warning": 0.00209,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.14196,
+      "corridor": 0.78914,
+      "warning": 0.02923,
+      "hard_stop": 0.03967
+     }
+    },
+    "warning_contacts": {
+     "T": 14,
+     "RC": 0,
+     "S": 77,
+     "C": 10,
+     "TR": 0,
+     "X": 1,
+     "Y": 14
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 4,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 19
+    },
+    "n_tokens": 479,
+    "n_hazard_events": 0,
+    "PCV": 0.87604,
+    "SAHB": 33.55484,
+    "REF_mean": 0.65932,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.28812,
+    "qgy_ratio": 0.41411,
+    "CRE_strict": 0.07692,
+    "CRE_soft": 0.57692,
+    "MPZF": 0.80097
+   }
+  }
+ },
+ "config_ablation_runs": {
+  "f78r": {
+   "H0": {
+    "old_viability": 1.0,
+    "old_y_final": 0.61424,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.93537,
+      "corridor": 0.06463,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.9966,
+      "corridor": 0.0034,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.0102,
+      "corridor": 0.18367,
+      "warning": 0.4898,
+      "hard_stop": 0.31633
+     },
+     "C": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.9966,
+      "corridor": 0.0034,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.68367,
+      "corridor": 0.31633,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 144,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 93,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 294,
+    "n_hazard_events": 0,
+    "PCV": 0.93039,
+    "SAHB": 0.22378,
+    "REF_mean": 0.30721,
+    "REF_eligible_fraction": 0.5,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.12732,
+    "qgy_ratio": 0.20728,
+    "CRE_strict": 0.18421,
+    "CRE_soft": 0.23684,
+    "MPZF": 0.91497
+   },
+   "H1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.61378,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.93537,
+      "corridor": 0.06463,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.9966,
+      "corridor": 0.0034,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.0102,
+      "corridor": 0.20068,
+      "warning": 0.5068,
+      "hard_stop": 0.28231
+     },
+     "C": {
+      "basin": 0.9898,
+      "corridor": 0.0102,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.9966,
+      "corridor": 0.0034,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.68367,
+      "corridor": 0.31633,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 149,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 83,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 294,
+    "n_hazard_events": 0,
+    "PCV": 0.93013,
+    "SAHB": 0.22378,
+    "REF_mean": 0.32056,
+    "REF_eligible_fraction": 0.5,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.12894,
+    "qgy_ratio": 0.21007,
+    "CRE_strict": 0.15385,
+    "CRE_soft": 0.10256,
+    "MPZF": 0.91327
+   },
+   "H2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.6143,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.93537,
+      "corridor": 0.06463,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.9966,
+      "corridor": 0.0034,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.0102,
+      "corridor": 0.28912,
+      "warning": 0.45238,
+      "hard_stop": 0.2483
+     },
+     "C": {
+      "basin": 0.95918,
+      "corridor": 0.04082,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.9966,
+      "corridor": 0.0034,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.68367,
+      "corridor": 0.31633,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 133,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 73,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 294,
+    "n_hazard_events": 0,
+    "PCV": 0.93177,
+    "SAHB": 0.22378,
+    "REF_mean": 0.37302,
+    "REF_eligible_fraction": 0.5,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.13991,
+    "qgy_ratio": 0.22775,
+    "CRE_strict": 0.17949,
+    "CRE_soft": 0.12821,
+    "MPZF": 0.91383
+   }
+  },
+  "f84r": {
+   "H0": {
+    "old_viability": 1.0,
+    "old_y_final": 0.63531,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.81163,
+      "corridor": 0.18837,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.93906,
+      "corridor": 0.06094,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00831,
+      "corridor": 0.16066,
+      "warning": 0.44598,
+      "hard_stop": 0.38504
+     },
+     "C": {
+      "basin": 0.91136,
+      "corridor": 0.08864,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.98615,
+      "corridor": 0.01385,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.98892,
+      "corridor": 0.01108,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.33241,
+      "corridor": 0.66759,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 161,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 139,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 361,
+    "n_hazard_events": 0,
+    "PCV": 0.8901,
+    "SAHB": 0.40714,
+    "REF_mean": 0.53643,
+    "REF_eligible_fraction": 0.9,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.08028,
+    "qgy_ratio": 0.12636,
+    "CRE_strict": 0.3125,
+    "CRE_soft": 0.28125,
+    "MPZF": 0.84626
+   },
+   "H1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.63563,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.81163,
+      "corridor": 0.18837,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.93906,
+      "corridor": 0.06094,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00831,
+      "corridor": 0.17729,
+      "warning": 0.45706,
+      "hard_stop": 0.35734
+     },
+     "C": {
+      "basin": 0.88643,
+      "corridor": 0.11357,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.98615,
+      "corridor": 0.01385,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.98892,
+      "corridor": 0.01108,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.33241,
+      "corridor": 0.66759,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 165,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 129,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 361,
+    "n_hazard_events": 0,
+    "PCV": 0.89222,
+    "SAHB": 0.40714,
+    "REF_mean": 0.54017,
+    "REF_eligible_fraction": 0.9,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.09364,
+    "qgy_ratio": 0.14732,
+    "CRE_strict": 0.28125,
+    "CRE_soft": 0.1875,
+    "MPZF": 0.84857
+   },
+   "H2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.63607,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.81163,
+      "corridor": 0.18837,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.93906,
+      "corridor": 0.06094,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00831,
+      "corridor": 0.27147,
+      "warning": 0.39612,
+      "hard_stop": 0.3241
+     },
+     "C": {
+      "basin": 0.82271,
+      "corridor": 0.17729,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.98615,
+      "corridor": 0.01385,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.98892,
+      "corridor": 0.01108,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.33241,
+      "corridor": 0.66759,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 143,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 117,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 361,
+    "n_hazard_events": 0,
+    "PCV": 0.89808,
+    "SAHB": 0.40714,
+    "REF_mean": 0.56397,
+    "REF_eligible_fraction": 0.9,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.09342,
+    "qgy_ratio": 0.14688,
+    "CRE_strict": 0.25806,
+    "CRE_soft": 0.16129,
+    "MPZF": 0.85549
+   }
+  },
+  "f79r": {
+   "H0": {
+    "old_viability": 1.0,
+    "old_y_final": 0.57785,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.92031,
+      "corridor": 0.07969,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.92288,
+      "corridor": 0.07712,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00514,
+      "corridor": 0.12082,
+      "warning": 0.43702,
+      "hard_stop": 0.43702
+     },
+     "C": {
+      "basin": 0.90231,
+      "corridor": 0.09769,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.94859,
+      "corridor": 0.05141,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.99743,
+      "corridor": 0.00257,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.42159,
+      "corridor": 0.57841,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 170,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 170,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 389,
+    "n_hazard_events": 0,
+    "PCV": 0.87329,
+    "SAHB": 0.36129,
+    "REF_mean": 0.49912,
+    "REF_eligible_fraction": 0.5,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.09302,
+    "CRE_soft": 0.16279,
+    "MPZF": 0.81962
+   },
+   "H1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.57785,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.92031,
+      "corridor": 0.07969,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.92288,
+      "corridor": 0.07712,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00514,
+      "corridor": 0.14396,
+      "warning": 0.42159,
+      "hard_stop": 0.42931
+     },
+     "C": {
+      "basin": 0.89974,
+      "corridor": 0.10026,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.94859,
+      "corridor": 0.05141,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.99743,
+      "corridor": 0.00257,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.42159,
+      "corridor": 0.57841,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 164,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 167,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 389,
+    "n_hazard_events": 0,
+    "PCV": 0.87322,
+    "SAHB": 0.36129,
+    "REF_mean": 0.44096,
+    "REF_eligible_fraction": 0.75,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.06977,
+    "CRE_soft": 0.06977,
+    "MPZF": 0.81919
+   },
+   "H2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.57785,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.92031,
+      "corridor": 0.07969,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.92288,
+      "corridor": 0.07712,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.00514,
+      "corridor": 0.17481,
+      "warning": 0.41902,
+      "hard_stop": 0.40103
+     },
+     "C": {
+      "basin": 0.88175,
+      "corridor": 0.11825,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.94859,
+      "corridor": 0.05141,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.99743,
+      "corridor": 0.00257,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.42159,
+      "corridor": 0.57841,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 163,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 156,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 389,
+    "n_hazard_events": 0,
+    "PCV": 0.87423,
+    "SAHB": 0.36129,
+    "REF_mean": 0.37012,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.04651,
+    "CRE_soft": 0.04651,
+    "MPZF": 0.81962
+   }
+  },
+  "f81v": {
+   "H0": {
+    "old_viability": 1.0,
+    "old_y_final": 0.56574,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.91085,
+      "corridor": 0.08915,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.01163,
+      "corridor": 0.0969,
+      "warning": 0.4031,
+      "hard_stop": 0.48837
+     },
+     "C": {
+      "basin": 0.96124,
+      "corridor": 0.03876,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.99612,
+      "corridor": 0.00388,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.95736,
+      "corridor": 0.04264,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 104,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 126,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 258,
+    "n_hazard_events": 0,
+    "PCV": 0.89383,
+    "SAHB": 0.34422,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.0,
+    "CRE_soft": 0.07407,
+    "MPZF": 0.86047
+   },
+   "H1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.56574,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.91085,
+      "corridor": 0.08915,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.01163,
+      "corridor": 0.1124,
+      "warning": 0.42636,
+      "hard_stop": 0.44961
+     },
+     "C": {
+      "basin": 0.89922,
+      "corridor": 0.10078,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.99612,
+      "corridor": 0.00388,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.95736,
+      "corridor": 0.04264,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 110,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 116,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 258,
+    "n_hazard_events": 0,
+    "PCV": 0.89887,
+    "SAHB": 0.34422,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.0,
+    "CRE_soft": 0.0,
+    "MPZF": 0.86563
+   },
+   "H2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.56574,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.91085,
+      "corridor": 0.08915,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.01163,
+      "corridor": 0.12791,
+      "warning": 0.4186,
+      "hard_stop": 0.44186
+     },
+     "C": {
+      "basin": 0.82171,
+      "corridor": 0.17829,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.99612,
+      "corridor": 0.00388,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.95736,
+      "corridor": 0.04264,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 108,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 114,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 258,
+    "n_hazard_events": 0,
+    "PCV": 0.90242,
+    "SAHB": 0.34422,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.0,
+    "CRE_soft": 0.0,
+    "MPZF": 0.86563
+   }
+  },
+  "f55r": {
+   "H0": {
+    "old_viability": 1.0,
+    "old_y_final": 0.73935,
+    "excursion_count": 2,
+    "bounded_excursion_count": 1,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.91935,
+      "corridor": 0.08065,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.16935,
+      "corridor": 0.6129,
+      "warning": 0.17742,
+      "hard_stop": 0.04032
+     },
+     "C": {
+      "basin": 0.15323,
+      "corridor": 0.56452,
+      "warning": 0.1371,
+      "hard_stop": 0.14516
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.8871,
+      "corridor": 0.1129,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.85484,
+      "corridor": 0.14516,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 22,
+     "C": 17,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 5,
+     "C": 18,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 124,
+    "n_hazard_events": 0,
+    "PCV": 0.88629,
+    "SAHB": 55.6659,
+    "REF_mean": 0.68532,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.13891,
+    "qgy_ratio": 0.18788,
+    "CRE_strict": 0.0,
+    "CRE_soft": 0.4,
+    "MPZF": 0.78629
+   },
+   "H1": {
+    "old_viability": 0.99194,
+    "old_y_final": 0.74054,
+    "excursion_count": 2,
+    "bounded_excursion_count": 1,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.91935,
+      "corridor": 0.08065,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.18548,
+      "corridor": 0.62097,
+      "warning": 0.16129,
+      "hard_stop": 0.03226
+     },
+     "C": {
+      "basin": 0.15323,
+      "corridor": 0.58871,
+      "warning": 0.14516,
+      "hard_stop": 0.1129
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.8871,
+      "corridor": 0.1129,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.85484,
+      "corridor": 0.14516,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 20,
+     "C": 18,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 4,
+     "C": 14,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 124,
+    "n_hazard_events": 1,
+    "PCV": 0.88165,
+    "SAHB": 69.20354,
+    "REF_mean": 0.70594,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.15228,
+    "qgy_ratio": 0.20563,
+    "CRE_strict": 0.0,
+    "CRE_soft": 0.33333,
+    "MPZF": 0.7836
+   },
+   "H2": {
+    "old_viability": 0.96774,
+    "old_y_final": 0.74207,
+    "excursion_count": 2,
+    "bounded_excursion_count": 1,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.91935,
+      "corridor": 0.08065,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.21774,
+      "corridor": 0.62097,
+      "warning": 0.12903,
+      "hard_stop": 0.03226
+     },
+     "C": {
+      "basin": 0.16129,
+      "corridor": 0.60484,
+      "warning": 0.12097,
+      "hard_stop": 0.1129
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.8871,
+      "corridor": 0.1129,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.85484,
+      "corridor": 0.14516,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 16,
+     "C": 15,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 4,
+     "C": 14,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 124,
+    "n_hazard_events": 4,
+    "PCV": 0.86956,
+    "SAHB": 106.24917,
+    "REF_mean": 0.75672,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.15796,
+    "qgy_ratio": 0.21286,
+    "CRE_strict": 0.0,
+    "CRE_soft": 0.0,
+    "MPZF": 0.77823
+   }
+  },
+  "f40v": {
+   "H0": {
+    "old_viability": 1.0,
+    "old_y_final": 0.57537,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.66981,
+      "corridor": 0.33019,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.12264,
+      "corridor": 0.40566,
+      "warning": 0.30189,
+      "hard_stop": 0.16981
+     },
+     "C": {
+      "basin": 0.06604,
+      "corridor": 0.63208,
+      "warning": 0.21698,
+      "hard_stop": 0.08491
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.77358,
+      "corridor": 0.22642,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 32,
+     "C": 23,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 18,
+     "C": 9,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 106,
+    "n_hazard_events": 0,
+    "PCV": 0.79717,
+    "SAHB": 38.17651,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.0,
+    "CRE_soft": 0.27273,
+    "MPZF": 0.63679
+   },
+   "H1": {
+    "old_viability": 0.99057,
+    "old_y_final": 0.57537,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.66981,
+      "corridor": 0.33019,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.12264,
+      "corridor": 0.4717,
+      "warning": 0.25472,
+      "hard_stop": 0.15094
+     },
+     "C": {
+      "basin": 0.06604,
+      "corridor": 0.66038,
+      "warning": 0.18868,
+      "hard_stop": 0.08491
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.77358,
+      "corridor": 0.22642,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 27,
+     "C": 20,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 16,
+     "C": 9,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 106,
+    "n_hazard_events": 1,
+    "PCV": 0.79112,
+    "SAHB": 56.21292,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.0,
+    "CRE_soft": 0.09091,
+    "MPZF": 0.63208
+   },
+   "H2": {
+    "old_viability": 0.99057,
+    "old_y_final": 0.57537,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.66981,
+      "corridor": 0.33019,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.12264,
+      "corridor": 0.5,
+      "warning": 0.24528,
+      "hard_stop": 0.13208
+     },
+     "C": {
+      "basin": 0.06604,
+      "corridor": 0.73585,
+      "warning": 0.13208,
+      "hard_stop": 0.06604
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.77358,
+      "corridor": 0.22642,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 26,
+     "C": 14,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 14,
+     "C": 7,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 106,
+    "n_hazard_events": 1,
+    "PCV": 0.77854,
+    "SAHB": 92.76651,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.0,
+    "CRE_soft": 0.08333,
+    "MPZF": 0.62107
+   }
+  },
+  "f43v": {
+   "H0": {
+    "old_viability": 1.0,
+    "old_y_final": 0.67112,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.86928,
+      "corridor": 0.13072,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.04575,
+      "corridor": 0.16993,
+      "warning": 0.45752,
+      "hard_stop": 0.3268
+     },
+     "C": {
+      "basin": 0.72549,
+      "corridor": 0.27451,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.79085,
+      "corridor": 0.20915,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.37255,
+      "corridor": 0.52941,
+      "warning": 0.0915,
+      "hard_stop": 0.00654
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 70,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 14
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 50,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 1
+    },
+    "n_tokens": 153,
+    "n_hazard_events": 0,
+    "PCV": 0.81596,
+    "SAHB": 0.32303,
+    "REF_mean": 0.58225,
+    "REF_eligible_fraction": 0.5,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.29086,
+    "qgy_ratio": 0.43339,
+    "CRE_strict": 0.06667,
+    "CRE_soft": 0.46667,
+    "MPZF": 0.72985
+   },
+   "H1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.67121,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.86928,
+      "corridor": 0.13072,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.04575,
+      "corridor": 0.21569,
+      "warning": 0.47712,
+      "hard_stop": 0.26144
+     },
+     "C": {
+      "basin": 0.69935,
+      "corridor": 0.30065,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.79085,
+      "corridor": 0.20915,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.37255,
+      "corridor": 0.52941,
+      "warning": 0.0915,
+      "hard_stop": 0.00654
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 73,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 14
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 40,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 1
+    },
+    "n_tokens": 153,
+    "n_hazard_events": 0,
+    "PCV": 0.81808,
+    "SAHB": 0.32996,
+    "REF_mean": 0.56902,
+    "REF_eligible_fraction": 0.5,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.27572,
+    "qgy_ratio": 0.41078,
+    "CRE_strict": 0.06667,
+    "CRE_soft": 0.2,
+    "MPZF": 0.73203
+   },
+   "H2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.67097,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.86928,
+      "corridor": 0.13072,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.04575,
+      "corridor": 0.30719,
+      "warning": 0.44444,
+      "hard_stop": 0.20261
+     },
+     "C": {
+      "basin": 0.67974,
+      "corridor": 0.32026,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.79085,
+      "corridor": 0.20915,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.37255,
+      "corridor": 0.52941,
+      "warning": 0.0915,
+      "hard_stop": 0.00654
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 68,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 14
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 31,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 1
+    },
+    "n_tokens": 153,
+    "n_hazard_events": 0,
+    "PCV": 0.81759,
+    "SAHB": 0.33498,
+    "REF_mean": 0.49877,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.29057,
+    "qgy_ratio": 0.43306,
+    "CRE_strict": 0.06667,
+    "CRE_soft": 0.06667,
+    "MPZF": 0.72876
+   }
+  },
+  "f34r": {
+   "H0": {
+    "old_viability": 1.0,
+    "old_y_final": 0.65563,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.81944,
+      "corridor": 0.18056,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.03472,
+      "corridor": 0.54861,
+      "warning": 0.29167,
+      "hard_stop": 0.125
+     },
+     "C": {
+      "basin": 0.97917,
+      "corridor": 0.02083,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.95139,
+      "corridor": 0.04861,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.86111,
+      "corridor": 0.13889,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.13889,
+      "corridor": 0.86111,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 42,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 18,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 144,
+    "n_hazard_events": 0,
+    "PCV": 0.88669,
+    "SAHB": 0.23462,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.12902,
+    "qgy_ratio": 0.19678,
+    "CRE_strict": 0.125,
+    "CRE_soft": 0.375,
+    "MPZF": 0.82639
+   },
+   "H1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.65572,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.81944,
+      "corridor": 0.18056,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.03472,
+      "corridor": 0.60417,
+      "warning": 0.25,
+      "hard_stop": 0.11111
+     },
+     "C": {
+      "basin": 0.97917,
+      "corridor": 0.02083,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.95139,
+      "corridor": 0.04861,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.86111,
+      "corridor": 0.13889,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.13889,
+      "corridor": 0.86111,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 36,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 16,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 144,
+    "n_hazard_events": 0,
+    "PCV": 0.88669,
+    "SAHB": 0.23462,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.1624,
+    "qgy_ratio": 0.24766,
+    "CRE_strict": 0.1,
+    "CRE_soft": 0.3,
+    "MPZF": 0.82639
+   },
+   "H2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.6558,
+    "excursion_count": 2,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.81944,
+      "corridor": 0.18056,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.04167,
+      "corridor": 0.66667,
+      "warning": 0.1875,
+      "hard_stop": 0.10417
+     },
+     "C": {
+      "basin": 0.96528,
+      "corridor": 0.03472,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 0.95139,
+      "corridor": 0.04861,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.86111,
+      "corridor": 0.13889,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.13889,
+      "corridor": 0.86111,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 27,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 15,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 144,
+    "n_hazard_events": 0,
+    "PCV": 0.88733,
+    "SAHB": 0.23462,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.24828,
+    "qgy_ratio": 0.37859,
+    "CRE_strict": 0.09091,
+    "CRE_soft": 0.27273,
+    "MPZF": 0.82639
+   }
+  },
+  "f31r": {
+   "H0": {
+    "old_viability": 1.0,
+    "old_y_final": 0.5949,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.97,
+      "corridor": 0.03,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.02,
+      "corridor": 0.09,
+      "warning": 0.38,
+      "hard_stop": 0.51
+     },
+     "C": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.46,
+      "corridor": 0.54,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 38,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 51,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 100,
+    "n_hazard_events": 0,
+    "PCV": 0.78967,
+    "SAHB": 0.23016,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.06667,
+    "CRE_soft": 0.13333,
+    "MPZF": 0.715
+   },
+   "H1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.5949,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.97,
+      "corridor": 0.03,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.02,
+      "corridor": 0.11,
+      "warning": 0.37,
+      "hard_stop": 0.5
+     },
+     "C": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.46,
+      "corridor": 0.54,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 37,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 50,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 100,
+    "n_hazard_events": 0,
+    "PCV": 0.78967,
+    "SAHB": 0.23016,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.06667,
+    "CRE_soft": 0.0,
+    "MPZF": 0.715
+   },
+   "H2": {
+    "old_viability": 1.0,
+    "old_y_final": 0.5949,
+    "excursion_count": 1,
+    "bounded_excursion_count": 0,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.97,
+      "corridor": 0.03,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.02,
+      "corridor": 0.18,
+      "warning": 0.32,
+      "hard_stop": 0.48
+     },
+     "C": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.46,
+      "corridor": 0.54,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 32,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 48,
+     "C": 0,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 100,
+    "n_hazard_events": 0,
+    "PCV": 0.78967,
+    "SAHB": 0.23016,
+    "REF_mean": 0.0,
+    "REF_eligible_fraction": 0.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.06667,
+    "CRE_soft": 0.0,
+    "MPZF": 0.715
+   }
+  },
+  "f39v": {
+   "H0": {
+    "old_viability": 1.0,
+    "old_y_final": 0.5826,
+    "excursion_count": 2,
+    "bounded_excursion_count": 1,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.97887,
+      "corridor": 0.02113,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.98592,
+      "corridor": 0.01408,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.09155,
+      "corridor": 0.57042,
+      "warning": 0.26056,
+      "hard_stop": 0.07746
+     },
+     "C": {
+      "basin": 0.33803,
+      "corridor": 0.3662,
+      "warning": 0.20423,
+      "hard_stop": 0.09155
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.92254,
+      "corridor": 0.07746,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.84507,
+      "corridor": 0.15493,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 37,
+     "C": 29,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 11,
+     "C": 13,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 142,
+    "n_hazard_events": 0,
+    "PCV": 0.84419,
+    "SAHB": 68.63442,
+    "REF_mean": 0.64664,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.11111,
+    "CRE_soft": 0.33333,
+    "MPZF": 0.75587
+   },
+   "H1": {
+    "old_viability": 1.0,
+    "old_y_final": 0.58278,
+    "excursion_count": 2,
+    "bounded_excursion_count": 1,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.97887,
+      "corridor": 0.02113,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.98592,
+      "corridor": 0.01408,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.09155,
+      "corridor": 0.60563,
+      "warning": 0.23239,
+      "hard_stop": 0.07042
+     },
+     "C": {
+      "basin": 0.3169,
+      "corridor": 0.38732,
+      "warning": 0.21127,
+      "hard_stop": 0.08451
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.92254,
+      "corridor": 0.07746,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.84507,
+      "corridor": 0.15493,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 33,
+     "C": 30,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 10,
+     "C": 12,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 142,
+    "n_hazard_events": 0,
+    "PCV": 0.84014,
+    "SAHB": 83.66217,
+    "REF_mean": 0.66189,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.11111,
+    "CRE_soft": 0.33333,
+    "MPZF": 0.74883
+   },
+   "H2": {
+    "old_viability": 0.97887,
+    "old_y_final": 0.58293,
+    "excursion_count": 2,
+    "bounded_excursion_count": 1,
+    "zone_occupancy": {
+     "T": {
+      "basin": 0.97887,
+      "corridor": 0.02113,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "RC": {
+      "basin": 0.98592,
+      "corridor": 0.01408,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "S": {
+      "basin": 0.08451,
+      "corridor": 0.66901,
+      "warning": 0.21127,
+      "hard_stop": 0.03521
+     },
+     "C": {
+      "basin": 0.3169,
+      "corridor": 0.39437,
+      "warning": 0.21127,
+      "hard_stop": 0.07746
+     },
+     "TR": {
+      "basin": 1.0,
+      "corridor": 0.0,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "X": {
+      "basin": 0.92254,
+      "corridor": 0.07746,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     },
+     "Y": {
+      "basin": 0.84507,
+      "corridor": 0.15493,
+      "warning": 0.0,
+      "hard_stop": 0.0
+     }
+    },
+    "warning_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 30,
+     "C": 30,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "hard_stop_contacts": {
+     "T": 0,
+     "RC": 0,
+     "S": 5,
+     "C": 11,
+     "TR": 0,
+     "X": 0,
+     "Y": 0
+    },
+    "n_tokens": 142,
+    "n_hazard_events": 3,
+    "PCV": 0.82711,
+    "SAHB": 128.21859,
+    "REF_mean": 0.70391,
+    "REF_eligible_fraction": 1.0,
+    "REF_worsened_fraction": 0.0,
+    "QGY": 0.0,
+    "qgy_ratio": 0.0,
+    "CRE_strict": 0.1,
+    "CRE_soft": 0.3,
+    "MPZF": 0.73357
+   }
+  }
+ },
+ "summary": {
+  "mean_preferred_PCV": 0.86537,
+  "mean_preferred_SAHB": 32.75192,
+  "mean_preferred_REF": 0.43576,
+  "mean_preferred_QGY": 0.21508,
+  "mean_preferred_CRE_strict": 0.12518,
+  "mean_preferred_MPZF": 0.79132,
+  "mean_preferred_old_viability": 0.99883,
+  "mean_preferred_old_y_final": 0.64335,
+  "n_hazard_events": 5
+ }
+}

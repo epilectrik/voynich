@@ -1,0 +1,811 @@
+{
+ "metadata": {
+  "phase": "570a",
+  "script": "t5_validation_synthesis.py",
+  "timestamp": "2026-03-10T15:47:05.627799+00:00",
+  "selected_folios": [
+   "f108v",
+   "f86v6",
+   "f111r",
+   "f84r"
+  ],
+  "gate_threshold": ">= 3/4 folios"
+ },
+ "verdict": "PARTIAL_FOLIO_PARAM_PILOT",
+ "test_results": {
+  "AP1": {
+   "description": "M1 demanded-event ERM > M0 demanded-event ERM",
+   "gate": ">= 3/4 folios",
+   "pass_count": 3,
+   "passed": true,
+   "per_folio": {
+    "f108v": {
+     "M0_demanded_ERM": 0.343364,
+     "M1_demanded_ERM": 0.350597,
+     "delta": 0.007233,
+     "passed": true
+    },
+    "f86v6": {
+     "M0_demanded_ERM": 0.523113,
+     "M1_demanded_ERM": 0.546943,
+     "delta": 0.02383,
+     "passed": true
+    },
+    "f111r": {
+     "M0_demanded_ERM": 0.355944,
+     "M1_demanded_ERM": 0.353302,
+     "delta": -0.002642,
+     "passed": false
+    },
+    "f84r": {
+     "M0_demanded_ERM": 0.396492,
+     "M1_demanded_ERM": 0.397466,
+     "delta": 0.000974,
+     "passed": true
+    }
+   }
+  },
+  "AP2": {
+   "description": "M1 demanded-event ERM > M4f mean E_any ERM (CENTRAL GO/NO-GO)",
+   "gate": ">= 3/4 folios",
+   "pass_count": 2,
+   "passed": false,
+   "per_folio": {
+    "f108v": {
+     "M1_demanded_ERM": 0.350597,
+     "M4f_mean_E_any_ERM": 0.369289,
+     "delta": -0.018692,
+     "passed": false
+    },
+    "f86v6": {
+     "M1_demanded_ERM": 0.546943,
+     "M4f_mean_E_any_ERM": 0.530244,
+     "delta": 0.016699,
+     "passed": true
+    },
+    "f111r": {
+     "M1_demanded_ERM": 0.353302,
+     "M4f_mean_E_any_ERM": 0.41615,
+     "delta": -0.062848,
+     "passed": false
+    },
+    "f84r": {
+     "M1_demanded_ERM": 0.397466,
+     "M4f_mean_E_any_ERM": 0.192447,
+     "delta": 0.205019,
+     "passed": true
+    }
+   }
+  },
+  "AP3": {
+   "description": "B10 sensitivity increases under folio-specific config",
+   "gate": ">= 3/4 folios",
+   "pass_count": 3,
+   "passed": true,
+   "per_folio": {
+    "f108v": {
+     "M0_E_any_ERM": 0.217809,
+     "M1_E_any_ERM": 0.226878,
+     "M2a_E_any_ERM": 0.086089,
+     "M2b_E_any_ERM": 0.093696,
+     "delta_M0": 0.13172,
+     "delta_M1": 0.133182,
+     "sensitivity_gain": 0.001462,
+     "passed": true
+    },
+    "f86v6": {
+     "M0_E_any_ERM": 0.421238,
+     "M1_E_any_ERM": 0.443482,
+     "M2a_E_any_ERM": 0.119323,
+     "M2b_E_any_ERM": 0.145387,
+     "delta_M0": 0.301915,
+     "delta_M1": 0.298095,
+     "sensitivity_gain": -0.00382,
+     "passed": false
+    },
+    "f111r": {
+     "M0_E_any_ERM": 0.233968,
+     "M1_E_any_ERM": 0.229484,
+     "M2a_E_any_ERM": 0.055911,
+     "M2b_E_any_ERM": 0.047449,
+     "delta_M0": 0.178057,
+     "delta_M1": 0.182035,
+     "sensitivity_gain": 0.003978,
+     "passed": true
+    },
+    "f84r": {
+     "M0_E_any_ERM": 0.127741,
+     "M1_E_any_ERM": 0.131164,
+     "M2a_E_any_ERM": 0.018435,
+     "M2b_E_any_ERM": 0.000566,
+     "delta_M0": 0.109306,
+     "delta_M1": 0.130598,
+     "sensitivity_gain": 0.021292,
+     "passed": true
+    }
+   }
+  },
+  "AP4": {
+   "description": "Anchor stability (P2, UEB, WCP)",
+   "gate": "P2 passes AND at most 1 secondary regression",
+   "passed": true,
+   "P2": {
+    "passed": true,
+    "note": "By reference to Phase 569 (9 consecutive passes)"
+   },
+   "UEB": {
+    "pass_count": 3,
+    "passed": true,
+    "per_folio": {
+     "f108v": {
+      "M0_UEB": 7.5,
+      "M1_UEB": 6.0,
+      "delta": -1.5,
+      "passed": true
+     },
+     "f86v6": {
+      "M0_UEB": 23.5,
+      "M1_UEB": 28.5,
+      "delta": 5.0,
+      "passed": false
+     },
+     "f111r": {
+      "M0_UEB": 7.5,
+      "M1_UEB": 7.5,
+      "delta": 0.0,
+      "passed": true
+     },
+     "f84r": {
+      "M0_UEB": 0.0,
+      "M1_UEB": 0.0,
+      "delta": 0.0,
+      "passed": true
+     }
+    }
+   },
+   "WCP": {
+    "pass_count": 0,
+    "passed": false,
+    "per_folio": {
+     "f108v": {
+      "M0_WCP": 0.791812,
+      "M1_WCP": 0.785245,
+      "delta": -0.006567,
+      "passed": false
+     },
+     "f86v6": {
+      "M0_WCP": 0.858899,
+      "M1_WCP": 0.857267,
+      "delta": -0.001632,
+      "passed": false
+     },
+     "f111r": {
+      "M0_WCP": 0.825646,
+      "M1_WCP": 0.823677,
+      "delta": -0.001969,
+      "passed": false
+     },
+     "f84r": {
+      "M0_WCP": 0.906563,
+      "M1_WCP": 0.898368,
+      "delta": -0.008195,
+      "passed": false
+     }
+    }
+   },
+   "n_secondary_fails": 1
+  },
+  "AP5": {
+   "description": "Monotone structural ordering (F1-F5 vs proxies)",
+   "gate": "All 5 axes monotone",
+   "pass_count": 5,
+   "passed": true,
+   "per_axis": {
+    "F1": {
+     "proxy": "axm_occ",
+     "proxy_values": {
+      "f108v": 0.690594,
+      "f86v6": 0.652866,
+      "f111r": 0.670823,
+      "f84r": 0.674912
+     },
+     "f_values": {
+      "f108v": 1.2892,
+      "f86v6": 1.1464,
+      "f111r": 1.2144,
+      "f84r": 1.2299
+     },
+     "proxy_ranks": {
+      "f108v": 3,
+      "f86v6": 0,
+      "f111r": 1,
+      "f84r": 2
+     },
+     "f_ranks": {
+      "f108v": 3,
+      "f86v6": 0,
+      "f111r": 1,
+      "f84r": 2
+     },
+     "monotone": true
+    },
+    "F3": {
+     "proxy": "thermal_frac",
+     "proxy_values": {
+      "f108v": 0.17895,
+      "f86v6": 0.15658,
+      "f111r": 0.14495,
+      "f84r": 0.1662
+     },
+     "f_values": {
+      "f108v": 1.3942,
+      "f86v6": 1.254,
+      "f111r": 1.181,
+      "f84r": 1.3143
+     },
+     "proxy_ranks": {
+      "f108v": 3,
+      "f86v6": 1,
+      "f111r": 0,
+      "f84r": 2
+     },
+     "f_ranks": {
+      "f108v": 3,
+      "f86v6": 1,
+      "f111r": 0,
+      "f84r": 2
+     },
+     "monotone": true
+    },
+    "F4": {
+     "proxy": "hl_rate",
+     "proxy_values": {
+      "f108v": 0.16316,
+      "f86v6": 0.30271,
+      "f111r": 0.17915,
+      "f84r": 0.3241
+     },
+     "f_values": {
+      "f108v": 0.0,
+      "f86v6": 0.5922,
+      "f111r": 0.0038,
+      "f84r": 0.694
+     },
+     "proxy_ranks": {
+      "f108v": 0,
+      "f86v6": 2,
+      "f111r": 1,
+      "f84r": 3
+     },
+     "f_ranks": {
+      "f108v": 0,
+      "f86v6": 2,
+      "f111r": 1,
+      "f84r": 3
+     },
+     "monotone": true
+    },
+    "F5": {
+     "proxy": "sealed_vessel_score",
+     "proxy_values": {
+      "f108v": 0.177193,
+      "f86v6": 0.058455,
+      "f111r": 0.135179,
+      "f84r": 0.060942
+     },
+     "f_values": {
+      "f108v": 1.4,
+      "f86v6": 0.7031,
+      "f111r": 1.1817,
+      "f84r": 0.7186
+     },
+     "proxy_ranks": {
+      "f108v": 3,
+      "f86v6": 0,
+      "f111r": 2,
+      "f84r": 1
+     },
+     "f_ranks": {
+      "f108v": 3,
+      "f86v6": 0,
+      "f111r": 2,
+      "f84r": 1
+     },
+     "monotone": true
+    },
+    "F2": {
+     "proxy": "closure_exploitability_composite",
+     "proxy_values": {
+      "f108v": 0.653675,
+      "f86v6": 0.429719,
+      "f111r": 0.583927,
+      "f84r": 0.713539
+     },
+     "f_values": {
+      "f108v": 1.1576,
+      "f86v6": 1.0008,
+      "f111r": 1.1087,
+      "f84r": 1.1995
+     },
+     "proxy_ranks": {
+      "f108v": 2,
+      "f86v6": 0,
+      "f111r": 1,
+      "f84r": 3
+     },
+     "f_ranks": {
+      "f108v": 2,
+      "f86v6": 0,
+      "f111r": 1,
+      "f84r": 3
+     },
+     "monotone": true
+    }
+   }
+  }
+ },
+ "diagnostics": {
+  "D1_ERM_decomposition": {
+   "f108v": {
+    "M0_ERM": 0.217809,
+    "M1_ERM": 0.226878,
+    "M2a_ERM": 0.086089,
+    "M2b_ERM": 0.093696,
+    "N1_N4_mean_ERM": 0.330166,
+    "M4_mean_ERM": 0.34939,
+    "M4f_mean_ERM": 0.369289,
+    "null_detail": {
+     "N1": 0.316797,
+     "N2": 0.277454,
+     "N3": 0.359922,
+     "N4": 0.36649
+    }
+   },
+   "f86v6": {
+    "M0_ERM": 0.421238,
+    "M1_ERM": 0.443482,
+    "M2a_ERM": 0.119323,
+    "M2b_ERM": 0.145387,
+    "N1_N4_mean_ERM": 0.438597,
+    "M4_mean_ERM": 0.502481,
+    "M4f_mean_ERM": 0.530244,
+    "null_detail": {
+     "N1": 0.45526,
+     "N2": 0.515826,
+     "N3": 0.369062,
+     "N4": 0.414241
+    }
+   },
+   "f111r": {
+    "M0_ERM": 0.233968,
+    "M1_ERM": 0.229484,
+    "M2a_ERM": 0.055911,
+    "M2b_ERM": 0.047449,
+    "N1_N4_mean_ERM": 0.381729,
+    "M4_mean_ERM": 0.402203,
+    "M4f_mean_ERM": 0.41615,
+    "null_detail": {
+     "N1": 0.358843,
+     "N2": 0.321967,
+     "N3": 0.458568,
+     "N4": 0.387536
+    }
+   },
+   "f84r": {
+    "M0_ERM": 0.127741,
+    "M1_ERM": 0.131164,
+    "M2a_ERM": 0.018435,
+    "M2b_ERM": 0.000566,
+    "N1_N4_mean_ERM": 0.204017,
+    "M4_mean_ERM": 0.199449,
+    "M4f_mean_ERM": 0.192447,
+    "null_detail": {
+     "N1": 0.238292,
+     "N2": 0.221551,
+     "N3": 0.202112,
+     "N4": 0.154111
+    }
+   }
+  },
+  "D2_demanded_vs_undemanded": {
+   "f108v": {
+    "M0_all_ERM": 0.217809,
+    "M1_all_ERM": 0.226878,
+    "all_delta": 0.009069,
+    "M0_demanded_ERM": 0.343364,
+    "M1_demanded_ERM": 0.350597,
+    "demanded_delta": 0.007233,
+    "demanded_count": 7,
+    "demanded_improvement_larger": false
+   },
+   "f86v6": {
+    "M0_all_ERM": 0.421238,
+    "M1_all_ERM": 0.443482,
+    "all_delta": 0.022244,
+    "M0_demanded_ERM": 0.523113,
+    "M1_demanded_ERM": 0.546943,
+    "demanded_delta": 0.02383,
+    "demanded_count": 7,
+    "demanded_improvement_larger": true
+   },
+   "f111r": {
+    "M0_all_ERM": 0.233968,
+    "M1_all_ERM": 0.229484,
+    "all_delta": -0.004484,
+    "M0_demanded_ERM": 0.355944,
+    "M1_demanded_ERM": 0.353302,
+    "demanded_delta": -0.002642,
+    "demanded_count": 3,
+    "demanded_improvement_larger": true
+   },
+   "f84r": {
+    "M0_all_ERM": 0.127741,
+    "M1_all_ERM": 0.131164,
+    "all_delta": 0.003423,
+    "M0_demanded_ERM": 0.396492,
+    "M1_demanded_ERM": 0.397466,
+    "demanded_delta": 0.000974,
+    "demanded_count": 1,
+    "demanded_improvement_larger": false
+   }
+  },
+  "D3_parameter_sensitivity": {
+   "f108v": {
+    "F1": {
+     "delta_PCV": 0.006521,
+     "delta_UEB": 1.5,
+     "delta_CCY": -0.000596,
+     "delta_demanded_ERM": -0.004842
+    },
+    "F2": {
+     "delta_PCV": 0.00038,
+     "delta_UEB": 0.0,
+     "delta_CCY": -0.009912,
+     "delta_demanded_ERM": -0.009265
+    },
+    "F3": {
+     "delta_PCV": 0.000702,
+     "delta_UEB": 0.0,
+     "delta_CCY": -0.000576,
+     "delta_demanded_ERM": 0.002643
+    },
+    "F4": {
+     "delta_PCV": 0.000526,
+     "delta_UEB": 0.0,
+     "delta_CCY": 0.001962,
+     "delta_demanded_ERM": 0.015653
+    },
+    "F5": {
+     "delta_PCV": 0.0,
+     "delta_UEB": 0.0,
+     "delta_CCY": 0.001591,
+     "delta_demanded_ERM": 0.005554
+    }
+   },
+   "f86v6": {
+    "F1": {
+     "delta_PCV": 0.000469,
+     "delta_UEB": 0.0,
+     "delta_CCY": 0.001331,
+     "delta_demanded_ERM": -0.00122
+    },
+    "F2": {
+     "delta_PCV": 0.0,
+     "delta_UEB": 0.0,
+     "delta_CCY": -2.9e-05,
+     "delta_demanded_ERM": -6.3e-05
+    },
+    "F3": {
+     "delta_PCV": 0.0,
+     "delta_UEB": 0.0,
+     "delta_CCY": 4.7e-05,
+     "delta_demanded_ERM": 0.000487
+    },
+    "F4": {
+     "delta_PCV": 0.000487,
+     "delta_UEB": 0.0,
+     "delta_CCY": -0.000894,
+     "delta_demanded_ERM": -0.00031
+    },
+    "F5": {
+     "delta_PCV": 0.000556,
+     "delta_UEB": 0.0,
+     "delta_CCY": -0.004452,
+     "delta_demanded_ERM": -0.004233
+    }
+   },
+   "f111r": {
+    "F1": {
+     "delta_PCV": 0.002226,
+     "delta_UEB": 0.0,
+     "delta_CCY": 0.022854,
+     "delta_demanded_ERM": -0.000557
+    },
+    "F2": {
+     "delta_PCV": 0.000204,
+     "delta_UEB": 0.0,
+     "delta_CCY": -0.017136,
+     "delta_demanded_ERM": 0.00413
+    },
+    "F3": {
+     "delta_PCV": 0.00019,
+     "delta_UEB": 0.0,
+     "delta_CCY": -5.7e-05,
+     "delta_demanded_ERM": 0.002604
+    },
+    "F4": {
+     "delta_PCV": 0.000489,
+     "delta_UEB": 0.0,
+     "delta_CCY": 0.009862,
+     "delta_demanded_ERM": 0.014092
+    },
+    "F5": {
+     "delta_PCV": -0.000231,
+     "delta_UEB": 0.0,
+     "delta_CCY": 0.005416,
+     "delta_demanded_ERM": 0.000791
+    }
+   },
+   "f84r": {
+    "F1": {
+     "delta_PCV": 0.005748,
+     "delta_UEB": 0.0,
+     "delta_CCY": 0.003601,
+     "delta_demanded_ERM": 0.016085
+    },
+    "F2": {
+     "delta_PCV": -0.000185,
+     "delta_UEB": 0.0,
+     "delta_CCY": -0.004402,
+     "delta_demanded_ERM": -0.014218
+    },
+    "F3": {
+     "delta_PCV": -6.9e-05,
+     "delta_UEB": 0.0,
+     "delta_CCY": -1.4e-05,
+     "delta_demanded_ERM": 0.000861
+    },
+    "F4": {
+     "delta_PCV": -0.000254,
+     "delta_UEB": 0.0,
+     "delta_CCY": -0.000277,
+     "delta_demanded_ERM": -0.004337
+    },
+    "F5": {
+     "delta_PCV": 0.000185,
+     "delta_UEB": 0.0,
+     "delta_CCY": -0.000854,
+     "delta_demanded_ERM": -0.004198
+    }
+   }
+  },
+  "D4_event_frequency_stability": {
+   "f108v": {
+    "M0_event_count": 13,
+    "M1_event_count": 13,
+    "M4f_mean_event_count": 12.5,
+    "M0_M1_identical": true,
+    "note": "Event detection is topology-driven (close-line positions), not apparatus-dependent"
+   },
+   "f86v6": {
+    "M0_event_count": 11,
+    "M1_event_count": 11,
+    "M4f_mean_event_count": 10.8,
+    "M0_M1_identical": true,
+    "note": "Event detection is topology-driven (close-line positions), not apparatus-dependent"
+   },
+   "f111r": {
+    "M0_event_count": 12,
+    "M1_event_count": 12,
+    "M4f_mean_event_count": 11.95,
+    "M0_M1_identical": true,
+    "note": "Event detection is topology-driven (close-line positions), not apparatus-dependent"
+   },
+   "f84r": {
+    "M0_event_count": 11,
+    "M1_event_count": 11,
+    "M4f_mean_event_count": 9.85,
+    "M0_M1_identical": true,
+    "note": "Event detection is topology-driven (close-line positions), not apparatus-dependent"
+   }
+  },
+  "D5_residual_map": {
+   "f108v": {
+    "M0_final_aggregate_dev": 0.12249,
+    "M0_viability": 0.998246,
+    "M0_y_final": 0.793878,
+    "M1_viability": 1.0,
+    "M1_y_final": 0.789686,
+    "M4f_mean_viability": 1.0,
+    "M4f_mean_y_final": 0.757588,
+    "M1_vs_M0_viability_delta": 0.001754,
+    "M1_vs_M0_y_final_delta": -0.004192
+   },
+   "f86v6": {
+    "M0_final_aggregate_dev": 0.105115,
+    "M0_viability": 0.995825,
+    "M0_y_final": 0.585788,
+    "M1_viability": 0.995825,
+    "M1_y_final": 0.585257,
+    "M4f_mean_viability": 0.966388,
+    "M4f_mean_y_final": 0.611241,
+    "M1_vs_M0_viability_delta": 0.0,
+    "M1_vs_M0_y_final_delta": -0.000531
+   },
+   "f111r": {
+    "M0_final_aggregate_dev": 0.053841,
+    "M0_viability": 1.0,
+    "M0_y_final": 0.774536,
+    "M1_viability": 1.0,
+    "M1_y_final": 0.777421,
+    "M4f_mean_viability": 1.0,
+    "M4f_mean_y_final": 0.670293,
+    "M1_vs_M0_viability_delta": 0.0,
+    "M1_vs_M0_y_final_delta": 0.002885
+   },
+   "f84r": {
+    "M0_final_aggregate_dev": 0.064436,
+    "M0_viability": 1.0,
+    "M0_y_final": 0.636066,
+    "M1_viability": 1.0,
+    "M1_y_final": 0.636247,
+    "M4f_mean_viability": 1.0,
+    "M4f_mean_y_final": 0.607724,
+    "M1_vs_M0_viability_delta": 0.0,
+    "M1_vs_M0_y_final_delta": 0.000181
+   }
+  },
+  "D6_demanded_trajectories": {
+   "f108v": {
+    "M0_demanded": {
+     "count": 7,
+     "mean_ERM": 0.343364,
+     "mean_EIR": 1.0,
+     "mean_CLR": 0.547079,
+     "individual_ERMs": [
+      0.222367,
+      0.37732,
+      0.42537,
+      0.163055,
+      0.378937,
+      0.519345,
+      0.317154
+     ]
+    },
+    "M1_demanded": {
+     "count": 7,
+     "mean_ERM": 0.350597,
+     "mean_EIR": 1.0,
+     "mean_CLR": 0.563551,
+     "individual_ERMs": [
+      0.232933,
+      0.396091,
+      0.370474,
+      0.173596,
+      0.40205,
+      0.539992,
+      0.339042
+     ]
+    },
+    "M4_demanded_mean_ERM": 0.574394,
+    "M4_demanded_n_perms_with_wp": 20,
+    "M4f_demanded_mean_ERM": 0.605903,
+    "M4f_demanded_n_perms_with_wp": 20
+   },
+   "f86v6": {
+    "M0_demanded": {
+     "count": 7,
+     "mean_ERM": 0.523113,
+     "mean_EIR": 1.0,
+     "mean_CLR": 0.643195,
+     "individual_ERMs": [
+      0.569183,
+      0.443632,
+      0.731598,
+      0.420346,
+      0.364873,
+      0.538556,
+      0.593603
+     ]
+    },
+    "M1_demanded": {
+     "count": 7,
+     "mean_ERM": 0.546943,
+     "mean_EIR": 1.0,
+     "mean_CLR": 0.663851,
+     "individual_ERMs": [
+      0.57564,
+      0.482499,
+      0.764035,
+      0.452572,
+      0.357917,
+      0.574194,
+      0.621746
+     ]
+    },
+    "M4_demanded_mean_ERM": 0.653351,
+    "M4_demanded_n_perms_with_wp": 20,
+    "M4f_demanded_mean_ERM": 0.673884,
+    "M4f_demanded_n_perms_with_wp": 20
+   },
+   "f111r": {
+    "M0_demanded": {
+     "count": 3,
+     "mean_ERM": 0.355944,
+     "mean_EIR": 1.0,
+     "mean_CLR": 0.536493,
+     "individual_ERMs": [
+      0.269475,
+      0.332908,
+      0.465449
+     ]
+    },
+    "M1_demanded": {
+     "count": 3,
+     "mean_ERM": 0.353302,
+     "mean_EIR": 1.0,
+     "mean_CLR": 0.546548,
+     "individual_ERMs": [
+      0.296054,
+      0.314467,
+      0.449384
+     ]
+    },
+    "M4_demanded_mean_ERM": 0.591294,
+    "M4_demanded_n_perms_with_wp": 20,
+    "M4f_demanded_mean_ERM": 0.597379,
+    "M4f_demanded_n_perms_with_wp": 20
+   },
+   "f84r": {
+    "M0_demanded": {
+     "count": 1,
+     "mean_ERM": 0.396492,
+     "mean_EIR": 1.0,
+     "mean_CLR": 0.494512,
+     "individual_ERMs": [
+      0.396492
+     ]
+    },
+    "M1_demanded": {
+     "count": 1,
+     "mean_ERM": 0.397466,
+     "mean_EIR": 1.0,
+     "mean_CLR": 0.489123,
+     "individual_ERMs": [
+      0.397466
+     ]
+    },
+    "M4_demanded_mean_ERM": null,
+    "M4_demanded_n_perms_with_wp": 0,
+    "M4f_demanded_mean_ERM": null,
+    "M4f_demanded_n_perms_with_wp": 0
+   }
+  }
+ },
+ "provisional_constraints": [
+  {
+   "id": "C1625",
+   "text": "Folio-specific apparatus parameterization improves demanded-event ERM vs generic apparatus (3/4 pilot folios).",
+   "tier": 2,
+   "source": "AP1"
+  },
+  {
+   "id": "C1627",
+   "text": "B10 sensitivity increases under folio-specific config (3/4 pilot folios).",
+   "tier": 2,
+   "source": "AP3"
+  },
+  {
+   "id": "C1628",
+   "text": "Existing anchors (P2, UEB, WCP) survive folio-specific parameterization without material regression.",
+   "tier": 2,
+   "source": "AP4"
+  },
+  {
+   "id": "C1629",
+   "text": "Folio-specific parameters F1-F5 align with structural proxies (5/5 monotone).",
+   "tier": 2,
+   "source": "AP5"
+  }
+ ]
+}

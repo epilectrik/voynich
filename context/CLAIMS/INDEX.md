@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1431 validated constraints | **Version:** 5.44 | **Date:** 2026-03-09
+**Total:** 1442 validated constraints | **Version:** 5.45 | **Date:** 2026-03-10
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5633,6 +5633,66 @@ Tier 3 interpretive synthesis placing the VMS within the landscape of medieval t
 - CTS continuous closure (C1579) produces genuine plant-level consequences: higher viability (6/7 folios) and yield (7/7 folios) vs no-CTS baseline, with positive containment separation at closure lines (C1585). CTS should be standard in future trace-apparatus coupling.
 - N3 line-shuffle resistance confirms that line composition, not line order, is the critical coupling axis (C1586), consistent with C1399/C1400/C1470. This validates the folio-as-program paradigm.
 - Failures concentrate in underpowered tests (P3 section template N=7, P5 headless N=3v4), excursion dynamics (P3b mean 1.3 excursions vs threshold 3), and punctual routing (P4). No failure contradicts the coupling mechanism; all point to refinement axes for Phase 564.
+
+### Phases 563b-566: Virtual Apparatus Iterations (no new constraints)
+
+Phases 563b (sensitivity recalibration, 3/9), 564 (event-gated execution, 2/9), 564b (selective restoration, 2/9), 565 (permeability calibration, 2/9), and 566 (CLOSE recovery, 1/9) were progressive apparatus-tuning iterations. All scored below the pass threshold. No new constraints issued. Phase 563 constraints C1581-C1587 remain valid. The progressive negative results collectively established that the discrimination failure was NOT a plant-law deficiency but a readout/scoring problem (confirmed in Phase 567).
+
+### Phase 567: Closure Field Audit + Burden Metric Refactor (PARTIAL_METRIC_REFACTOR)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1605 | PCV discrimination exceeds binary viability | 2 | B, virtual apparatus, PCV, viability, discrimination, C1581 | NP1 PASS 16/20. PCV-viability r=0.391 (different constructs). Phase-shuffle null destroyed under PCV. |
+| 1606 | S asymmetry insufficiency in burden metric | 2 | B, virtual apparatus, S, asymmetry, burden, SAHB | S accounts for 84.5% of SAHB even after excluding high-S events. NP7 FAIL, NP2 FAIL (1/20). Low-S burden dominates. |
+| 1607 | QGY partial paradox inversion | 2 | B, virtual apparatus, QGY, yield, quality, paradox, inversion | N2 QGY 0.180 < full QGY 0.231 despite N2 Y_final 0.734 > full 0.675. NP4=13/20 (one folio short). |
+| 1608 | Closure opportunity scarcity | 2 | B, virtual apparatus, closure, CTS, opportunity, scarcity, C1566, C1579 | 37.4% CLOSE lines > CTS 0.3. Useful closure fraction 3.2%. CTS-excursion r=-0.014 (uncorrelated). |
+| 1609 | PCV-visible CLOSE recovery | 2 | B, virtual apparatus, PCV, CLOSE, recovery, B10, C1585 | B10 delta under PCV=+0.020 (d=0.465) vs old viability delta=0.003. Plant mechanism works; old readout missed it. |
+
+**Phase 567 findings (Closure Field Audit, PARTIAL_METRIC_REFACTOR, P2 + 3/7 NP):**
+- PCV replaces binary viability for discrimination (C1605). Phase-shuffle null (NP1) now discriminated at 16/20 folios.
+- Closure signal is structurally scarce: only 37.4% of CLOSE lines exceed CTS 0.3, useful closure fraction is 3.2%, and CTS-excursion timing is uncorrelated (C1608).
+- CLOSE recovery is load-bearing under PCV but invisible under old metrics (C1609). B10 delta = +0.020 under PCV vs ~0.003 under old viability.
+- S dominance remains incompletely resolved (C1606). QGY partially inverts the N2/N4 paradox but falls one folio short (C1607).
+
+### Phase 568: Controlled Excursion Metrics (PARTIAL_CONTROLLED_EXCURSION)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1612 | Unresolved excursion burden inverts SAHB | 2 | B, virtual apparatus, UEB, burden, SAHB, inversion, C1606 | UEB restricts burden to CLOSE-phase + line-end residual. Full model burden < null burden under UEB. Axis inversion was measurement artifact. |
+| 1614 | Packet coherence discriminates supervised traces | 2 | B, virtual apparatus, WCP, coherence, discrimination, C1582, C1605 | WCP discriminates full from null (EP6 PASS). Phase-aware sub-scores (SPEC basin, WORK corridor, CLOSE convergence) are genuine trace properties. |
+
+**Phase 568 findings (Controlled Excursion Metrics, PARTIAL_CONTROLLED_EXCURSION, P2 + 3/7 EP):**
+- Six new metrics (WCU, SLR, UEB, CCY, WCP, EWP) address Phase 567's burden axis inversion by redirecting burden measurement to CLOSE-phase residual (UEB) and conditioning yield on corridor improvement (CCY).
+- UEB fixes the SAHB axis inversion (C1612): full model burden is now lower than null burden when measured only in CLOSE phase.
+- WCP is a stable discriminator (C1614): phase-aware coherence is a genuine property of supervised traces.
+- EP1 (WCU), EP2 (SLR), EP4 (CCY), EP7 (EWP) still fail. Remaining gaps suggest per-event resolution analysis needed (leading to Phase 569).
+
+### Phase 569: Eventive Closure Packets (EVENTIVE_CLOSURE_INSUFFICIENT)
+
+No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
+
+**Phase 569 findings (Eventive Closure Packets, EVENTIVE_CLOSURE_INSUFFICIENT):**
+- Event taxonomy classifies 463 closure lines into 7 overlapping types based on opacity grammar (C1440-C1445). Structurally well-grounded but the plant cannot exploit event types.
+- Critical finding: ERM axis inversion. Full model ERM is negative during CLOSE events (deviation increases) while null ERM is positive (~0.34-0.43). Nulls achieve higher ERM because shuffled phase assignments create regression-to-mean artifacts.
+- Confirms C1612 (UEB) and C1614 (WCP) from Phase 568. PT3 PASS: UEB discriminates 15/14 folios, WCP discriminates 19/14 folios.
+- Expert diagnosis: apparatus coarseness (all folios in same section+REGIME get identical plant physics) is the leading hypothesis for the ERM inversion. Leads to Phase 570a.
+
+### Phase 570a: Folio-Specific Apparatus Pilot (PARTIAL_FOLIO_PARAM_PILOT)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1625 | Folio-specific apparatus parameterization improves demanded-event ERM | 2 | B, virtual apparatus, folio-specific, F1-F5, demanded, ERM, C1569, C1574, C1380 | AP1 3/4 PASS. f108v +0.007, f86v6 +0.024, f84r +0.001. f111r -0.003 (FAIL). Folio-specific tuning produces real improvement over generic apparatus. |
+| 1627 | B10 sensitivity increases under folio-specific config | 2 | B, virtual apparatus, folio-specific, B10, sensitivity, CLOSE, recovery, C1609, C1612 | AP3 3/4 PASS. (M1-M2b) eventive delta > (M0-M2a) for f108v, f86v6, f84r. Close-recovery channel more load-bearing when tuned to folio. |
+| 1628 | Existing anchors survive folio-specific parameterization | 2 | B, virtual apparatus, folio-specific, anchor, P2, UEB, WCP, stability, C1605 | AP4 PASS. P2 by reference. UEB improves 3/4. WCP drops < 0.01 per folio (F1 attractor compression, benign). |
+| 1629 | Folio-specific parameters align with structural proxies | 2 | B, virtual apparatus, folio-specific, F1-F5, structural, proxy, monotone, interpretability, C1380, C1574, C1569 | AP5 5/5 PASS. All F1-F5 axes preserve intended structural ordering across pilot folios. F1 (AXM occ), F2 (closure exploitability), F3 (THERMAL frac), F4 (hl_rate), F5 (SEALED_VESSEL). |
+
+**Phase 570a findings (Folio-Specific Apparatus Pilot, PARTIAL_FOLIO_PARAM_PILOT, AP1:3/4 AP2:2/4 AP3:3/4):**
+- Folio-specific apparatus parameters F1-F5 (scalar multipliers [0.7, 1.4] derived from structural proxies) improve demanded-event ERM over generic apparatus (AP1: 3/4 folios, C1625) and make B10 close-recovery more load-bearing (AP3: 3/4, C1627).
+- Central go/no-go test AP2 FAILS (2/4): folio-specific full model does not reliably beat demand-matched nulls. The ERM axis inversion from Phase 569 persists because the metric rewards undirected recovery, giving shuffled nulls a structural advantage.
+- ERM axis inversion is diagnosed as a metric-framework problem, not a model-architecture problem. Folio-specific tuning addresses parametric variation but cannot fix the fundamental measurement asymmetry.
+- F1-F5 parameter assignments faithfully track structural proxies (AP5: 5/5 monotone, C1629). Anchors survive (AP4, C1628).
+- 4-folio pilot: f108v (S/A3), f86v6 (C/A2), f111r (S/A3), f84r (B/A1). Total 496 runs across M0/M1/M2a/M2b + M3 standard nulls + M4/M4f demand-matched nulls.
+- Key lesson: retain folio-specific parameterization (F1-F5) going forward. Next phase should reform the comparison metric to distinguish demand-specific recovery from undirected recovery.
 
 ---
 
