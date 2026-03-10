@@ -22,7 +22,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1442 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1638.
+the highest ID present is C1642.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-10 16:48
+**Generated:** 2026-03-10 18:31
 **Version:** FROZEN STATE (1442 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -1878,6 +1878,10 @@ C1635	Productive disruption efficiency (DYE advantage > 0) generalizes beyond ha
 C1636	Productive disruption efficiency is a broad apparatus property of Currier B: real closure tokens produce greater per-step disruption than demand-matched nulls and convert it into Y more efficiently across the full 76-folio eligible set, with strongest validation in demand-strong folios and systematic attenuation concentrated in the A2/section C stratum	2	B, virtual apparatus, folio-specific, DYE, DVA, expansion, productive disruption, 76-folio, sections, profiles, A2 forgivingness, C1633, C1634, C1635
 C1637	WCP (whole-closure-packet coherence) is demoted from apparatus success criterion to legacy continuity diagnostic; endpoint packet coherence does not discriminate grammar advantage at scale (38% pass at Tier A) because the restoring force that makes the apparatus stable masks token-level differences at endpoints	2	B, virtual apparatus, WCP, demotion, legacy, endpoint, restoring force, C1614, C1636
 C1638	The primary apparatus-side success family is DYE (dV-to-Y efficiency), DVA (dV advantage), and YGA (Y-gain advantage) — process-quality metrics that measure execution dynamics during closure, not endpoint state	2	B, virtual apparatus, DYE, DVA, YGA, success family, process quality, productive disruption, C1632, C1633, C1634, C1636, C1637
+C1639	A2_SEALED_RECIRCULATION excess forgivingness mechanism identified: CLOSE recovery channels (R1-R5) account for 159.5% of A2's excess CCS1. Removing close recovery drops A2 null DYE from 0.114 to near zero. Within-A2, CCS1 correlates rho=0.963 with close recovery ablation effect. The mechanism is single-channel dominant, not distributed	2	B, virtual apparatus, A2, mechanism, CCS, close recovery, R1-R5, ablation, forgivingness, C1636
+C1640	Currier B apparatus family partition: response-only clustering finds real but sub-threshold structure. Two-cluster split isolates 12 forgiving folios (9 A2 + 3 A3) from 64 productive folios. Response-surface clustering recovers profiles better at k=3 (ARI=0.348) but with low silhouette (0.126). Families are gradient-like, not crisp	2	B, virtual apparatus, clustering, family partition, Ward, silhouette, ARI, C1636, C1639
+C1641	Within-A2 structure is weakly structured: section does not explain CCS1 variance (F-ratio=0.055), but 44% of A2 folios are boundary cases (4 A2→A1, 4 A2→A3). T\|A2 anomalously good (EPV=0.90). Only 6/18 A2 folios pass EPV≥0.80. Core A2 mean CCS1=0.180, boundary-to-A1 mean=0.013	2	B, virtual apparatus, A2, internal structure, conformity, boundary, C1636, C1639
+C1642	A2 grammar-strength forgivingness is strength-dependent: only STRONG-grammar A2 events beat the null, while WEAK events lose to the null. Grammar strength modulates whether real closure outcompetes A2's generous close-recovery physics. This rules out uniform recirculation and confirms strength-gated conversion	2	B, virtual apparatus, A2, grammar, forgivingness, CCS, strength-dependent, C1636, C1639
 
 ---
 
