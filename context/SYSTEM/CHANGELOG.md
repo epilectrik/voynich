@@ -4,6 +4,37 @@
 
 ---
 
+## Version 5.46 (2026-03-10) - Phase 573: A2 Forgivingness Mechanism + Apparatus Family Partition
+
+### Summary
+
+Phase 573 investigates WHY the A2_SEALED_RECIRCULATION apparatus profile has 9x higher Forgivingness Index than A1, using counterfactual ablation across 5 physics channels on 76 eligible Currier B folios. The phase identifies close recovery (R1-R5) as the single dominant mechanism (159.5% of excess CCS1), discovers that grammar strength modulates whether real closure beats the forgiving null, and tests unsupervised family partition of the folio set.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/A2_FORGIVINGNESS_MECHANISM_APPARATUS_FAMILIES/` -- Phase 573 directory with 6 scripts (T0-T5), 6 result files, REPORT_573.md |
+| **ADDED** | C1639: A2 mechanism identified — NO_CLOSE_RECOVERY accounts for 159.5% of excess CCS1 |
+| **ADDED** | C1640: Family partition inconclusive — real structure (sil=0.361, ARI=0.385) but below thresholds |
+| **ADDED** | C1641: Within-A2 weakly structured — 44% boundary folios, no section sub-profiles |
+| **ADDED** | C1642: Grammar pattern strength-dependent — only STRONG events beat the null (+0.021), WEAK events lose (-0.014) |
+| **UPDATED** | INDEX.md -- +4 constraints (1642 total), Phase 573 section added |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (1642 constraints, Phase 573) |
+
+### Key Findings
+
+- **Mechanism (C1639):** Close recovery channels (R1-R5) are THE mechanism. Ablating them drops A2 null DYE from 0.114 → ~0. Within-A2, CCS1 correlates rho=0.963 with close recovery ablation effect.
+- **Grammar (C1642):** A2 forgivingness is NOT uniform. STRONG-grammar events beat the null; WEAK events lose. The apparatus physics (R1-R5) are so generous that only strong grammar can outcompete them.
+- **Families (C1640):** 2-cluster partition separates 12 forgiving folios (9 A2 + 3 A3) from 64 productive folios. Structure is gradient-like, not crisp.
+- **A2 structure (C1641):** No section-based sub-profiles (F-ratio=0.055). But 44% boundary folios: 4 resemble A1 (CCS1=0.013), 4 resemble A3. Core A2 (n=5) has CCS1=0.180.
+
+### Status
+
+A2 mechanism analysis COMPLETE. 1,642 validated constraints across 573 phases.
+
+---
+
 ## Version 5.41 (2026-03-06) - Phase 552: Historical Genre Placement (SYNTHESIS)
 
 ### Summary

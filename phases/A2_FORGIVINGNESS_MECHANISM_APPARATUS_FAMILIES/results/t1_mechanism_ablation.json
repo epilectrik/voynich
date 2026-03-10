@@ -1,0 +1,3718 @@
+{
+ "metadata": {
+  "phase": "573",
+  "script": "t1_mechanism_ablation.py",
+  "timestamp": "2026-03-10T23:18:58.838037+00:00",
+  "n_folios": 76,
+  "n_ablations": 5,
+  "ablation_names": [
+   "NO_CROSS_COUPLING",
+   "NO_CLOSE_RECOVERY",
+   "NO_CONTAINMENT",
+   "NO_TR_TO_Y",
+   "NO_Y_SENSITIVITY"
+  ],
+  "n_null_perms": 5,
+  "elapsed_seconds": 56.44
+ },
+ "profile_results": {
+  "A1_BATH_REFLUX": {
+   "n_folios": 21,
+   "mean_m1_dye": 0.12875477439561678,
+   "mean_m4f_dye": 0.013122895639784941,
+   "mean_crr_m1": 0.7353232243481058,
+   "mean_crr_m4f": 0.41384610660303617,
+   "mean_nri_m1": 0.16412383077257697,
+   "mean_nri_m4f": 0.01154679023153103,
+   "ablation_effects": {
+    "NO_CROSS_COUPLING": {
+     "mean_delta_m1_dye": 0.013453,
+     "mean_delta_m4f_dye": 0.014411,
+     "mean_delta_dye_advantage": -0.000958,
+     "excess_fi_share": 0.3879
+    },
+    "NO_CLOSE_RECOVERY": {
+     "mean_delta_m1_dye": 0.00259,
+     "mean_delta_m4f_dye": 0.000692,
+     "mean_delta_dye_advantage": 0.001898,
+     "excess_fi_share": 0.9181
+    },
+    "NO_CONTAINMENT": {
+     "mean_delta_m1_dye": 0.005289,
+     "mean_delta_m4f_dye": 0.005635,
+     "mean_delta_dye_advantage": -0.000346,
+     "excess_fi_share": 0.3414
+    },
+    "NO_TR_TO_Y": {
+     "mean_delta_m1_dye": 0.013205,
+     "mean_delta_m4f_dye": 0.014475,
+     "mean_delta_dye_advantage": -0.00127,
+     "excess_fi_share": 0.1867
+    },
+    "NO_Y_SENSITIVITY": {
+     "mean_delta_m1_dye": 0.0,
+     "mean_delta_m4f_dye": -0.001522,
+     "mean_delta_dye_advantage": 0.001522,
+     "excess_fi_share": -0.0308
+    }
+   }
+  },
+  "A2_SEALED_RECIRCULATION": {
+   "n_folios": 18,
+   "mean_m1_dye": 0.1260361962584988,
+   "mean_m4f_dye": 0.1140273645615548,
+   "mean_crr_m1": 0.6389574810506412,
+   "mean_crr_m4f": 0.388837068623534,
+   "mean_nri_m1": 0.23900528352559203,
+   "mean_nri_m4f": 0.054115479656462497,
+   "ablation_effects": {
+    "NO_CROSS_COUPLING": {
+     "mean_delta_m1_dye": 0.002368,
+     "mean_delta_m4f_dye": -0.002464,
+     "mean_delta_dye_advantage": 0.004832,
+     "excess_fi_share": -0.57
+    },
+    "NO_CLOSE_RECOVERY": {
+     "mean_delta_m1_dye": 0.034392,
+     "mean_delta_m4f_dye": 0.132902,
+     "mean_delta_dye_advantage": -0.098511,
+     "excess_fi_share": 1.5947
+    },
+    "NO_CONTAINMENT": {
+     "mean_delta_m1_dye": 0.026714,
+     "mean_delta_m4f_dye": 0.087924,
+     "mean_delta_dye_advantage": -0.06121,
+     "excess_fi_share": 1.1595
+    },
+    "NO_TR_TO_Y": {
+     "mean_delta_m1_dye": -0.000407,
+     "mean_delta_m4f_dye": -0.006375,
+     "mean_delta_dye_advantage": 0.005968,
+     "excess_fi_share": -0.492
+    },
+    "NO_Y_SENSITIVITY": {
+     "mean_delta_m1_dye": 0.0,
+     "mean_delta_m4f_dye": -0.001861,
+     "mean_delta_dye_advantage": 0.001861,
+     "excess_fi_share": 0.0165
+    }
+   }
+  },
+  "A3_DISTILL_COLLECT": {
+   "n_folios": 37,
+   "mean_m1_dye": 0.18997687014167317,
+   "mean_m4f_dye": 0.07962867286897787,
+   "mean_crr_m1": 0.5737170158108209,
+   "mean_crr_m4f": 0.3078526967881464,
+   "mean_nri_m1": 0.2703422215964601,
+   "mean_nri_m4f": 0.05711618393759734,
+   "ablation_effects": {
+    "NO_CROSS_COUPLING": {
+     "mean_delta_m1_dye": 0.016715,
+     "mean_delta_m4f_dye": 0.040208,
+     "mean_delta_dye_advantage": -0.023493,
+     "excess_fi_share": 0.3879
+    },
+    "NO_CLOSE_RECOVERY": {
+     "mean_delta_m1_dye": 0.031691,
+     "mean_delta_m4f_dye": 0.061752,
+     "mean_delta_dye_advantage": -0.030061,
+     "excess_fi_share": 0.9181
+    },
+    "NO_CONTAINMENT": {
+     "mean_delta_m1_dye": 0.019467,
+     "mean_delta_m4f_dye": 0.028338,
+     "mean_delta_dye_advantage": -0.00887,
+     "excess_fi_share": 0.3414
+    },
+    "NO_TR_TO_Y": {
+     "mean_delta_m1_dye": 0.0099,
+     "mean_delta_m4f_dye": 0.026889,
+     "mean_delta_dye_advantage": -0.016989,
+     "excess_fi_share": 0.1867
+    },
+    "NO_Y_SENSITIVITY": {
+     "mean_delta_m1_dye": 0.0,
+     "mean_delta_m4f_dye": -0.003568,
+     "mean_delta_dye_advantage": 0.003568,
+     "excess_fi_share": -0.0308
+    }
+   }
+  }
+ },
+ "per_folio": {
+  "f103r": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.13303601923208425,
+   "baseline_m4f_dye": 0.08659124101597912,
+   "crr_m1": 0.5069227382979635,
+   "crr_m4f": 0.2668691278743645,
+   "nri_m1": 0.12558260084502976,
+   "nri_m4f": 0.06613497080581614,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.12106164469885121,
+     "abl_m4f_dye": -0.0070799758074691545,
+     "delta_m1_dye": 0.011974374533233037,
+     "delta_m4f_dye": 0.09367121682344827,
+     "delta_dye_advantage": -0.08169684229021523
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.11899685118233938,
+     "abl_m4f_dye": 0.021233977465438827,
+     "delta_m1_dye": 0.014039168049744866,
+     "delta_m4f_dye": 0.06535726355054029,
+     "delta_dye_advantage": -0.05131809550079543
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.1284800191856737,
+     "abl_m4f_dye": 0.05588901421819292,
+     "delta_m1_dye": 0.004556000046410547,
+     "delta_m4f_dye": 0.030702226797786197,
+     "delta_dye_advantage": -0.02614622675137565
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.1273410791387298,
+     "abl_m4f_dye": 0.014074957283538936,
+     "delta_m1_dye": 0.005694940093354445,
+     "delta_m4f_dye": 0.07251628373244018,
+     "delta_dye_advantage": -0.06682134363908573
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.13303601923208425,
+     "abl_m4f_dye": 0.06960119229790415,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.016990048718074968,
+     "delta_dye_advantage": -0.016990048718074968
+    }
+   }
+  },
+  "f103v": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.11317653948435279,
+   "baseline_m4f_dye": 0.04609167924187075,
+   "crr_m1": 0.4207501313735241,
+   "crr_m4f": 0.5657059342704666,
+   "nri_m1": 0.1504133375008299,
+   "nri_m4f": 0.028780126571702664,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.1279595572552783,
+     "abl_m4f_dye": -0.03288106028926771,
+     "delta_m1_dye": -0.014783017770925513,
+     "delta_m4f_dye": 0.07897273953113845,
+     "delta_dye_advantage": -0.09375575730206398
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.06352154079827392,
+     "abl_m4f_dye": -0.07953433012633875,
+     "delta_m1_dye": 0.049654998686078866,
+     "delta_m4f_dye": 0.1256260093682095,
+     "delta_dye_advantage": -0.07597101068213064
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.10414190814225217,
+     "abl_m4f_dye": -0.031067224763589224,
+     "delta_m1_dye": 0.009034631342100613,
+     "delta_m4f_dye": 0.07715890400545997,
+     "delta_dye_advantage": -0.06812427266335938
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.12629117660937358,
+     "abl_m4f_dye": 0.03093088348610859,
+     "delta_m1_dye": -0.013114637125020798,
+     "delta_m4f_dye": 0.015160795755762159,
+     "delta_dye_advantage": -0.028275432880782964
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.11317653948435279,
+     "abl_m4f_dye": 0.018078824057309796,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.028012855184560953,
+     "delta_dye_advantage": -0.028012855184560953
+    }
+   }
+  },
+  "f104r": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.19126014307664427,
+   "baseline_m4f_dye": 0.09732022930221154,
+   "crr_m1": 0.8542933540004883,
+   "crr_m4f": 0.3709391356534008,
+   "nri_m1": 0.29769990918229516,
+   "nri_m4f": 0.061317622760443544,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.18774754040909836,
+     "abl_m4f_dye": 0.056929263899622794,
+     "delta_m1_dye": 0.003512602667545911,
+     "delta_m4f_dye": 0.04039096540258875,
+     "delta_dye_advantage": -0.03687836273504283
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.17666795082701545,
+     "abl_m4f_dye": -0.01875075424815961,
+     "delta_m1_dye": 0.014592192249628821,
+     "delta_m4f_dye": 0.11607098355037115,
+     "delta_dye_advantage": -0.10147879130074233
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.17612996662763036,
+     "abl_m4f_dye": 0.019024090218769673,
+     "delta_m1_dye": 0.015130176449013905,
+     "delta_m4f_dye": 0.07829613908344187,
+     "delta_dye_advantage": -0.06316596263442797
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.1848148818561624,
+     "abl_m4f_dye": 0.05060882990084553,
+     "delta_m1_dye": 0.006445261220481863,
+     "delta_m4f_dye": 0.04671139940136601,
+     "delta_dye_advantage": -0.04026613818088415
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.19126014307664427,
+     "abl_m4f_dye": 0.05965931442080931,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.03766091488140223,
+     "delta_dye_advantage": -0.03766091488140222
+    }
+   }
+  },
+  "f104v": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.1644516760826193,
+   "baseline_m4f_dye": 0.07025577259817617,
+   "crr_m1": 0.563168537768126,
+   "crr_m4f": 0.246250247900952,
+   "nri_m1": 0.15250571551193337,
+   "nri_m4f": 0.06014937118498206,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.119872010285441,
+     "abl_m4f_dye": 0.015601660074392473,
+     "delta_m1_dye": 0.044579665797178286,
+     "delta_m4f_dye": 0.054654112523783695,
+     "delta_dye_advantage": -0.010074446726605416
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.17860176457016588,
+     "abl_m4f_dye": 0.024931973265763147,
+     "delta_m1_dye": -0.014150088487546592,
+     "delta_m4f_dye": 0.045323799332413026,
+     "delta_dye_advantage": -0.0594738878199596
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.16127013833264878,
+     "abl_m4f_dye": 0.0596129194026104,
+     "delta_m1_dye": 0.0031815377499705144,
+     "delta_m4f_dye": 0.010642853195565773,
+     "delta_dye_advantage": -0.007461315445595251
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.13978997173215665,
+     "abl_m4f_dye": 0.026814206115835792,
+     "delta_m1_dye": 0.024661704350462638,
+     "delta_m4f_dye": 0.04344156648234038,
+     "delta_dye_advantage": -0.01877986213187774
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.1644516760826193,
+     "abl_m4f_dye": 0.07367225911471968,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.0034164865165435127,
+     "delta_dye_advantage": 0.0034164865165435127
+    }
+   }
+  },
+  "f105r": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.09612649601750034,
+   "baseline_m4f_dye": -0.0021201246505608918,
+   "crr_m1": 0.29279965780141154,
+   "crr_m4f": 0.2696705316108128,
+   "nri_m1": 0.1555146819321425,
+   "nri_m4f": -0.003951578100777173,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.11732848947157566,
+     "abl_m4f_dye": -0.006513237641804483,
+     "delta_m1_dye": -0.02120199345407532,
+     "delta_m4f_dye": 0.004393112991243591,
+     "delta_dye_advantage": -0.025595106445318913
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.05879216200658949,
+     "abl_m4f_dye": -0.12115794101168267,
+     "delta_m1_dye": 0.03733433401091085,
+     "delta_m4f_dye": 0.11903781636112178,
+     "delta_dye_advantage": -0.08170348235021092
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.0798950718179972,
+     "abl_m4f_dye": -0.04385677314321645,
+     "delta_m1_dye": 0.016231424199503144,
+     "delta_m4f_dye": 0.041736648492655556,
+     "delta_dye_advantage": -0.025505224293152398
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.11322462772972734,
+     "abl_m4f_dye": 0.02612910148986114,
+     "delta_m1_dye": -0.017098131712227002,
+     "delta_m4f_dye": -0.02824922614042203,
+     "delta_dye_advantage": 0.011151094428195035
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.09612649601750034,
+     "abl_m4f_dye": -0.0030948983694969907,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.000974773718936099,
+     "delta_dye_advantage": -0.0009747737189360894
+    }
+   }
+  },
+  "f105v": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.23618955020538268,
+   "baseline_m4f_dye": -0.05541788685861756,
+   "crr_m1": 0.31377228701583615,
+   "crr_m4f": 0.17890013205370742,
+   "nri_m1": 0.19628546248010947,
+   "nri_m4f": -0.022327977457648897,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.22229421615970896,
+     "abl_m4f_dye": -0.015238535832040606,
+     "delta_m1_dye": 0.013895334045673724,
+     "delta_m4f_dye": -0.04017935102657695,
+     "delta_dye_advantage": 0.05407468507225066
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.1220756657272081,
+     "abl_m4f_dye": -0.16935642988832939,
+     "delta_m1_dye": 0.11411388447817458,
+     "delta_m4f_dye": 0.11393854302971182,
+     "delta_dye_advantage": 0.00017534144846270694
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.1810700676847486,
+     "abl_m4f_dye": -0.09762324060997438,
+     "delta_m1_dye": 0.05511948252063409,
+     "delta_m4f_dye": 0.04220535375135682,
+     "delta_dye_advantage": 0.012914128769277278
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.23380047321305208,
+     "abl_m4f_dye": -0.0297324037115964,
+     "delta_m1_dye": 0.0023890769923305966,
+     "delta_m4f_dye": -0.025685483147021158,
+     "delta_dye_advantage": 0.028074560139351723
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.23618955020538268,
+     "abl_m4f_dye": -0.06878866166709832,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.013370774808480763,
+     "delta_dye_advantage": -0.013370774808480757
+    }
+   }
+  },
+  "f106r": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.15764242079448842,
+   "baseline_m4f_dye": 0.09204876144562893,
+   "crr_m1": 0.5913907040013259,
+   "crr_m4f": 0.19459633139696067,
+   "nri_m1": 0.17919829444030697,
+   "nri_m4f": 0.06003735098783812,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.1609381583007473,
+     "abl_m4f_dye": 0.0659080783412315,
+     "delta_m1_dye": -0.003295737506258889,
+     "delta_m4f_dye": 0.026140683104397433,
+     "delta_dye_advantage": -0.029436420610656322
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.12461045865771705,
+     "abl_m4f_dye": -0.0495506905642145,
+     "delta_m1_dye": 0.03303196213677137,
+     "delta_m4f_dye": 0.14159945200984342,
+     "delta_dye_advantage": -0.10856748987307205
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.13787769253358725,
+     "abl_m4f_dye": 0.021289058566236283,
+     "delta_m1_dye": 0.01976472826090117,
+     "delta_m4f_dye": 0.07075970287939265,
+     "delta_dye_advantage": -0.05099497461849148
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.15834512529839045,
+     "abl_m4f_dye": 0.08449846230286495,
+     "delta_m1_dye": -0.0007027045039020297,
+     "delta_m4f_dye": 0.007550299142763978,
+     "delta_dye_advantage": -0.008253003646666007
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.15764242079448842,
+     "abl_m4f_dye": 0.07989620728679413,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.012152554158834802,
+     "delta_dye_advantage": -0.012152554158834802
+    }
+   }
+  },
+  "f106v": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.14051805149368599,
+   "baseline_m4f_dye": 0.060726079170510774,
+   "crr_m1": 0.4486980414481306,
+   "crr_m4f": 0.22742050092852187,
+   "nri_m1": 0.18871257952000917,
+   "nri_m4f": 0.030783652628887197,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.13234793614860363,
+     "abl_m4f_dye": 0.04122435253496019,
+     "delta_m1_dye": 0.008170115345082357,
+     "delta_m4f_dye": 0.01950172663555058,
+     "delta_dye_advantage": -0.011331611290468224
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.129833687760126,
+     "abl_m4f_dye": -0.002062525707974139,
+     "delta_m1_dye": 0.010684363733559993,
+     "delta_m4f_dye": 0.06278860487848491,
+     "delta_dye_advantage": -0.052104241144924915
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.12970474181538427,
+     "abl_m4f_dye": 0.010711671121447648,
+     "delta_m1_dye": 0.010813309678301714,
+     "delta_m4f_dye": 0.050014408049063125,
+     "delta_dye_advantage": -0.03920109837076141
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.13159593299297737,
+     "abl_m4f_dye": 0.02981208568830927,
+     "delta_m1_dye": 0.00892211850070862,
+     "delta_m4f_dye": 0.030913993482201505,
+     "delta_dye_advantage": -0.02199187498149288
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.14051805149368599,
+     "abl_m4f_dye": 0.06019527532408655,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.0005308038464242257,
+     "delta_dye_advantage": -0.0005308038464242187
+    }
+   }
+  },
+  "f107r": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.2631275151605618,
+   "baseline_m4f_dye": 0.027594116960745478,
+   "crr_m1": 0.17177667768879598,
+   "crr_m4f": 0.1637880376827488,
+   "nri_m1": 0.2490055611534038,
+   "nri_m4f": 0.016796473312532596,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.2608823346913996,
+     "abl_m4f_dye": -0.03413176935024417,
+     "delta_m1_dye": 0.0022451804691622224,
+     "delta_m4f_dye": 0.06172588631098965,
+     "delta_dye_advantage": -0.05948070584182741
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.2017065658810113,
+     "abl_m4f_dye": 0.01997123477659155,
+     "delta_m1_dye": 0.061420949279550524,
+     "delta_m4f_dye": 0.007622882184153929,
+     "delta_dye_advantage": 0.053798067095396584
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.2508893542143864,
+     "abl_m4f_dye": 0.033645874098314245,
+     "delta_m1_dye": 0.012238160946175414,
+     "delta_m4f_dye": -0.006051757137568767,
+     "delta_dye_advantage": 0.018289918083744167
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.28477379723965907,
+     "abl_m4f_dye": -0.04364681757476522,
+     "delta_m1_dye": -0.021646282079097245,
+     "delta_m4f_dye": 0.0712409345355107,
+     "delta_dye_advantage": -0.09288721661460797
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.2631275151605618,
+     "abl_m4f_dye": 0.043523602031559236,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.015929485070813758,
+     "delta_dye_advantage": 0.015929485070813765
+    }
+   }
+  },
+  "f107v": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.18812266616937043,
+   "baseline_m4f_dye": 0.16649908058365542,
+   "crr_m1": 0.19733830313045989,
+   "crr_m4f": 0.0987131395361411,
+   "nri_m1": 0.176553839865861,
+   "nri_m4f": 0.07172747300437622,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.1720321023566915,
+     "abl_m4f_dye": 0.15771152304438388,
+     "delta_m1_dye": 0.016090563812678926,
+     "delta_m4f_dye": 0.008787557539271545,
+     "delta_dye_advantage": 0.007303006273407381
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.12801453177230093,
+     "abl_m4f_dye": -0.0038536207172949048,
+     "delta_m1_dye": 0.060108134397069496,
+     "delta_m4f_dye": 0.17035270130095032,
+     "delta_dye_advantage": -0.11024456690388082
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.1852523129155333,
+     "abl_m4f_dye": 0.10106286284613161,
+     "delta_m1_dye": 0.002870353253837138,
+     "delta_m4f_dye": 0.06543621773752381,
+     "delta_dye_advantage": -0.06256586448368667
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.2003263650444037,
+     "abl_m4f_dye": 0.2027445124420356,
+     "delta_m1_dye": -0.012203698875033281,
+     "delta_m4f_dye": -0.03624543185838017,
+     "delta_dye_advantage": 0.024041732983346886
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.18812266616937043,
+     "abl_m4f_dye": 0.1795214073466937,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.013022326763038272,
+     "delta_dye_advantage": 0.013022326763038272
+    }
+   }
+  },
+  "f108r": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.13501360523892603,
+   "baseline_m4f_dye": 0.07663324964023296,
+   "crr_m1": 0.49819676156424486,
+   "crr_m4f": 0.15859536896767262,
+   "nri_m1": 0.13813733765182734,
+   "nri_m4f": 0.03470546410894486,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.15883217301096592,
+     "abl_m4f_dye": 0.08087564297687991,
+     "delta_m1_dye": -0.02381856777203989,
+     "delta_m4f_dye": -0.0042423933366469435,
+     "delta_dye_advantage": -0.019576174435392946
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.11377879259148532,
+     "abl_m4f_dye": -0.014122895834586377,
+     "delta_m1_dye": 0.021234812647440704,
+     "delta_m4f_dye": 0.09075614547481935,
+     "delta_dye_advantage": -0.06952133282737863
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.08932062816349565,
+     "abl_m4f_dye": 0.008525018844223381,
+     "delta_m1_dye": 0.04569297707543038,
+     "delta_m4f_dye": 0.06810823079600958,
+     "delta_dye_advantage": -0.022415253720579204
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.15434598577808945,
+     "abl_m4f_dye": 0.06313431256819978,
+     "delta_m1_dye": -0.01933238053916342,
+     "delta_m4f_dye": 0.013498937072033187,
+     "delta_dye_advantage": -0.032831317611196606
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.13501360523892603,
+     "abl_m4f_dye": 0.07170554822929107,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.004927701410941898,
+     "delta_dye_advantage": -0.004927701410941898
+    }
+   }
+  },
+  "f108v": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.1123961656232676,
+   "baseline_m4f_dye": 0.03330096007551545,
+   "crr_m1": 0.5271046775884828,
+   "crr_m4f": 0.2871002343517885,
+   "nri_m1": 0.15495329323652718,
+   "nri_m4f": 0.03478372240840446,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.10783918040415312,
+     "abl_m4f_dye": 0.018120274942439958,
+     "delta_m1_dye": 0.004556985219114476,
+     "delta_m4f_dye": 0.015180685133075494,
+     "delta_dye_advantage": -0.010623699913961004
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.09665306508885427,
+     "abl_m4f_dye": -0.0007302936278391034,
+     "delta_m1_dye": 0.01574310053441333,
+     "delta_m4f_dye": 0.03403125370335455,
+     "delta_dye_advantage": -0.018288153168941224
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.10642713098283299,
+     "abl_m4f_dye": 0.02345807129051722,
+     "delta_m1_dye": 0.005969034640434606,
+     "delta_m4f_dye": 0.009842888784998234,
+     "delta_dye_advantage": -0.003873854144563621
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.11887695315179007,
+     "abl_m4f_dye": 0.019321098357729476,
+     "delta_m1_dye": -0.0064807875285224775,
+     "delta_m4f_dye": 0.013979861717785976,
+     "delta_dye_advantage": -0.020460649246308443
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.1123961656232676,
+     "abl_m4f_dye": 0.033303028233499406,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -2.0681579839532116e-06,
+     "delta_dye_advantage": 2.0681579839532116e-06
+    }
+   }
+  },
+  "f111r": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.12781248909411738,
+   "baseline_m4f_dye": 0.06873266317861032,
+   "crr_m1": 0.22174457108631151,
+   "crr_m4f": 0.34663645638162316,
+   "nri_m1": 0.15378939634058444,
+   "nri_m4f": 0.06754955819693785,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.14385431645273208,
+     "abl_m4f_dye": 0.011855214582375373,
+     "delta_m1_dye": -0.016041827358614702,
+     "delta_m4f_dye": 0.05687744859623495,
+     "delta_dye_advantage": -0.07291927595484965
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.09249232562224284,
+     "abl_m4f_dye": -0.002770037671139103,
+     "delta_m1_dye": 0.03532016347187454,
+     "delta_m4f_dye": 0.07150270084974943,
+     "delta_dye_advantage": -0.036182537377874885
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.11084350773058578,
+     "abl_m4f_dye": 0.03777017989777024,
+     "delta_m1_dye": 0.0169689813635316,
+     "delta_m4f_dye": 0.03096248328084008,
+     "delta_dye_advantage": -0.01399350191730847
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.1382326432327288,
+     "abl_m4f_dye": 0.022600517582244045,
+     "delta_m1_dye": -0.010420154138611415,
+     "delta_m4f_dye": 0.046132145596366275,
+     "delta_dye_advantage": -0.05655229973497769
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.12781248909411738,
+     "abl_m4f_dye": 0.053053727741570675,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.015678935437039646,
+     "delta_dye_advantage": -0.015678935437039646
+    }
+   }
+  },
+  "f111v": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.1692972133819563,
+   "baseline_m4f_dye": 0.08653339107236696,
+   "crr_m1": 0.6948397090596122,
+   "crr_m4f": 0.3518855577336807,
+   "nri_m1": 0.3814680388213438,
+   "nri_m4f": 0.035750689932841945,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.10932048130172012,
+     "abl_m4f_dye": 0.070921542137328,
+     "delta_m1_dye": 0.059976732080236184,
+     "delta_m4f_dye": 0.01561184893503896,
+     "delta_dye_advantage": 0.04436488314519722
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.08903163412961397,
+     "abl_m4f_dye": 0.036132732478705576,
+     "delta_m1_dye": 0.08026557925234233,
+     "delta_m4f_dye": 0.050400658593661385,
+     "delta_dye_advantage": 0.029864920658680946
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.10694092749392939,
+     "abl_m4f_dye": 0.08396918554143827,
+     "delta_m1_dye": 0.06235628588802691,
+     "delta_m4f_dye": 0.00256420553092869,
+     "delta_dye_advantage": 0.05979208035709822
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.14756294494976646,
+     "abl_m4f_dye": 0.09727075377723568,
+     "delta_m1_dye": 0.02173426843218984,
+     "delta_m4f_dye": -0.01073736270486872,
+     "delta_dye_advantage": 0.03247163113705856
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.1692972133819563,
+     "abl_m4f_dye": 0.1348205788139596,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.04828718774159263,
+     "delta_dye_advantage": 0.04828718774159263
+    }
+   }
+  },
+  "f112r": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.15445469630224753,
+   "baseline_m4f_dye": 0.10810511629103839,
+   "crr_m1": 0.6640927943913464,
+   "crr_m4f": 0.13454913032993215,
+   "nri_m1": 0.2195935700036544,
+   "nri_m4f": 0.04878616498144027,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.14661928766825472,
+     "abl_m4f_dye": 0.10492035716590853,
+     "delta_m1_dye": 0.007835408633992819,
+     "delta_m4f_dye": 0.00318475912512986,
+     "delta_dye_advantage": 0.0046506495088629585
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.12365511339436501,
+     "abl_m4f_dye": -0.011191445047011557,
+     "delta_m1_dye": 0.030799582907882525,
+     "delta_m4f_dye": 0.11929656133804994,
+     "delta_dye_advantage": -0.08849697843016743
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.14351915124973547,
+     "abl_m4f_dye": 0.06194966697771911,
+     "delta_m1_dye": 0.010935545052512069,
+     "delta_m4f_dye": 0.04615544931331928,
+     "delta_dye_advantage": -0.035219904260807205
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.15514192345924066,
+     "abl_m4f_dye": 0.15728913484495444,
+     "delta_m1_dye": -0.0006872271569931254,
+     "delta_m4f_dye": -0.04918401855391605,
+     "delta_dye_advantage": 0.04849679139692292
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.15445469630224753,
+     "abl_m4f_dye": 0.12885664991747348,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.020751533626435087,
+     "delta_dye_advantage": 0.020751533626435087
+    }
+   }
+  },
+  "f112v": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.17603741348315058,
+   "baseline_m4f_dye": 0.08228267544271972,
+   "crr_m1": 0.4526607989348709,
+   "crr_m4f": 0.3002707346157386,
+   "nri_m1": 0.26651094703783185,
+   "nri_m4f": 0.04269657737692864,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.13321184414918347,
+     "abl_m4f_dye": 0.013044767227111847,
+     "delta_m1_dye": 0.04282556933396711,
+     "delta_m4f_dye": 0.06923790821560788,
+     "delta_dye_advantage": -0.026412338881640768
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.14893891993899708,
+     "abl_m4f_dye": 0.020894088253308865,
+     "delta_m1_dye": 0.0270984935441535,
+     "delta_m4f_dye": 0.061388587189410856,
+     "delta_dye_advantage": -0.03429009364525734
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.16688776194446492,
+     "abl_m4f_dye": 0.04705015021679203,
+     "delta_m1_dye": 0.00914965153868566,
+     "delta_m4f_dye": 0.035232525225927694,
+     "delta_dye_advantage": -0.026082873687242034
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.14278177586502902,
+     "abl_m4f_dye": 0.016025153808924837,
+     "delta_m1_dye": 0.03325563761812156,
+     "delta_m4f_dye": 0.06625752163379489,
+     "delta_dye_advantage": -0.03300188401567333
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.17603741348315058,
+     "abl_m4f_dye": 0.06226041507238726,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.02002226037033246,
+     "delta_dye_advantage": -0.02002226037033246
+    }
+   }
+  },
+  "f113r": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.16686532827475586,
+   "baseline_m4f_dye": 0.027775672476083202,
+   "crr_m1": 0.4703424623124703,
+   "crr_m4f": 0.3272688458210649,
+   "nri_m1": 0.2442980423935317,
+   "nri_m4f": 0.02420108221787275,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.18163538204407967,
+     "abl_m4f_dye": 0.036469552495185596,
+     "delta_m1_dye": -0.014770053769323804,
+     "delta_m4f_dye": -0.008693880019102394,
+     "delta_dye_advantage": -0.006076173750221403
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.10743179035124752,
+     "abl_m4f_dye": -0.051891103130306225,
+     "delta_m1_dye": 0.05943353792350835,
+     "delta_m4f_dye": 0.07966677560638943,
+     "delta_dye_advantage": -0.020233237682881072
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.14128273904987268,
+     "abl_m4f_dye": -0.007023200227178089,
+     "delta_m1_dye": 0.025582589224883184,
+     "delta_m4f_dye": 0.03479887270326129,
+     "delta_dye_advantage": -0.009216283478378107
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.18005180835880094,
+     "abl_m4f_dye": 0.06598947354621733,
+     "delta_m1_dye": -0.013186480084045077,
+     "delta_m4f_dye": -0.038213801070134126,
+     "delta_dye_advantage": 0.02502732098608905
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.16686532827475586,
+     "abl_m4f_dye": 0.04714400449867805,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.019368332022594845,
+     "delta_dye_advantage": 0.019368332022594845
+    }
+   }
+  },
+  "f113v": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.1841419222193544,
+   "baseline_m4f_dye": 0.05073841265645999,
+   "crr_m1": 0.28553453155284275,
+   "crr_m4f": 0.2419081055305988,
+   "nri_m1": 0.19842263801208868,
+   "nri_m4f": 0.013558630552174544,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.12179866076987043,
+     "abl_m4f_dye": 0.04989122946734172,
+     "delta_m1_dye": 0.062343261449483975,
+     "delta_m4f_dye": 0.0008471831891182641,
+     "delta_dye_advantage": 0.06149607826036571
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.18697868492410974,
+     "abl_m4f_dye": 0.06253654408562352,
+     "delta_m1_dye": -0.00283676270475533,
+     "delta_m4f_dye": -0.011798131429163534,
+     "delta_dye_advantage": 0.008961368724408211
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.1804446073692663,
+     "abl_m4f_dye": 0.0903192506554438,
+     "delta_m1_dye": 0.003697314850088118,
+     "delta_m4f_dye": -0.03958083799898381,
+     "delta_dye_advantage": 0.04327815284907194
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.12413461896379645,
+     "abl_m4f_dye": 0.01462196487929961,
+     "delta_m1_dye": 0.06000730325555796,
+     "delta_m4f_dye": 0.036116447777160374,
+     "delta_dye_advantage": 0.023890855478397588
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.1841419222193544,
+     "abl_m4f_dye": 0.1093711727054368,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.05863276004897681,
+     "delta_dye_advantage": 0.058632760048976815
+    }
+   }
+  },
+  "f114r": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.15634267133891802,
+   "baseline_m4f_dye": 0.06890414208793648,
+   "crr_m1": 0.6070967669378902,
+   "crr_m4f": 0.2384328130325828,
+   "nri_m1": 0.14601211553410975,
+   "nri_m4f": 0.038903669394043994,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.23033576369679865,
+     "abl_m4f_dye": -0.001627671364481316,
+     "delta_m1_dye": -0.07399309235788062,
+     "delta_m4f_dye": 0.0705318134524178,
+     "delta_dye_advantage": -0.14452490581029842
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.11190690993998882,
+     "abl_m4f_dye": 0.01777878899908098,
+     "delta_m1_dye": 0.0444357613989292,
+     "delta_m4f_dye": 0.0511253530888555,
+     "delta_dye_advantage": -0.006689591689926291
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.13112319259655883,
+     "abl_m4f_dye": 0.04301058494480712,
+     "delta_m1_dye": 0.02521947874235919,
+     "delta_m4f_dye": 0.02589355714312936,
+     "delta_dye_advantage": -0.0006740784007701756
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.21644298916697935,
+     "abl_m4f_dye": 0.01388190791582149,
+     "delta_m1_dye": -0.06010031782806133,
+     "delta_m4f_dye": 0.05502223417211499,
+     "delta_dye_advantage": -0.1151225520001763
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.15634267133891802,
+     "abl_m4f_dye": 0.06733103436670719,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.0015731077212292888,
+     "delta_dye_advantage": -0.0015731077212292888
+    }
+   }
+  },
+  "f114v": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.2629998401646939,
+   "baseline_m4f_dye": 0.1363430635598502,
+   "crr_m1": 0.5157788992741026,
+   "crr_m4f": 0.49086498181651184,
+   "nri_m1": 0.21867148953657511,
+   "nri_m4f": 0.08118770657677699,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.169484852749887,
+     "abl_m4f_dye": 0.013549884683541642,
+     "delta_m1_dye": 0.0935149874148069,
+     "delta_m4f_dye": 0.12279317887630857,
+     "delta_dye_advantage": -0.02927819146150165
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.2538701731358489,
+     "abl_m4f_dye": 0.14094046854784348,
+     "delta_m1_dye": 0.00912966702884499,
+     "delta_m4f_dye": -0.00459740498799327,
+     "delta_dye_advantage": 0.01372707201683826
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.257805135768255,
+     "abl_m4f_dye": 0.12742103594699078,
+     "delta_m1_dye": 0.005194704396438932,
+     "delta_m4f_dye": 0.008922027612859429,
+     "delta_dye_advantage": -0.0037273232164204972
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.17409855637957772,
+     "abl_m4f_dye": 0.02822475319929733,
+     "delta_m1_dye": 0.08890128378511619,
+     "delta_m4f_dye": 0.10811831036055287,
+     "delta_dye_advantage": -0.019217026575436696
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.2629998401646939,
+     "abl_m4f_dye": 0.1375507260664532,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.00120766250660298,
+     "delta_dye_advantage": 0.00120766250660298
+    }
+   }
+  },
+  "f115r": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.17067872161583214,
+   "baseline_m4f_dye": 0.08322541378303194,
+   "crr_m1": 1.0092625573373044,
+   "crr_m4f": 0.5700642557381614,
+   "nri_m1": 0.3321350803314709,
+   "nri_m4f": 0.0556297364318565,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.152086093202014,
+     "abl_m4f_dye": 0.006258203537524157,
+     "delta_m1_dye": 0.018592628413818146,
+     "delta_m4f_dye": 0.07696721024550779,
+     "delta_dye_advantage": -0.05837458183168964
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.16839331562102533,
+     "abl_m4f_dye": 0.06870404863581661,
+     "delta_m1_dye": 0.0022854059948068106,
+     "delta_m4f_dye": 0.014521365147215332,
+     "delta_dye_advantage": -0.012235959152408521
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.16457337817259154,
+     "abl_m4f_dye": 0.07395170273802226,
+     "delta_m1_dye": 0.006105343443240596,
+     "delta_m4f_dye": 0.00927371104500968,
+     "delta_dye_advantage": -0.0031683676017690843
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.15528974004871798,
+     "abl_m4f_dye": 0.009104060873932056,
+     "delta_m1_dye": 0.015388981567114157,
+     "delta_m4f_dye": 0.07412135290909988,
+     "delta_dye_advantage": -0.05873237134198572
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.17067872161583214,
+     "abl_m4f_dye": 0.08278463459104296,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.0004407791919889825,
+     "delta_dye_advantage": -0.0004407791919889825
+    }
+   }
+  },
+  "f115v": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.25945641337889824,
+   "baseline_m4f_dye": 0.17584269959369264,
+   "crr_m1": 0.679989585535478,
+   "crr_m4f": 0.5865882968338424,
+   "nri_m1": 0.37316223324008946,
+   "nri_m4f": 0.12996829738712806,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.18621953025202076,
+     "abl_m4f_dye": 0.03878670311645177,
+     "delta_m1_dye": 0.07323688312687748,
+     "delta_m4f_dye": 0.13705599647724087,
+     "delta_dye_advantage": -0.06381911335036339
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.26048427056141243,
+     "abl_m4f_dye": 0.13375818864646832,
+     "delta_m1_dye": -0.0010278571825141913,
+     "delta_m4f_dye": 0.04208451094722432,
+     "delta_dye_advantage": -0.04311236812973851
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.2545287074932072,
+     "abl_m4f_dye": 0.16472908665783764,
+     "delta_m1_dye": 0.004927705885691025,
+     "delta_m4f_dye": 0.011113612935855,
+     "delta_dye_advantage": -0.006185907050163975
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.1824927406733595,
+     "abl_m4f_dye": 0.039415793132904456,
+     "delta_m1_dye": 0.07696367270553875,
+     "delta_m4f_dye": 0.1364269064607882,
+     "delta_dye_advantage": -0.05946323375524942
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.25945641337889824,
+     "abl_m4f_dye": 0.17792548173962502,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.0020827821459323825,
+     "delta_dye_advantage": 0.0020827821459323825
+    }
+   }
+  },
+  "f116r": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "S",
+   "baseline_m1_dye": 0.2065290987045509,
+   "baseline_m4f_dye": 0.11618375477012566,
+   "crr_m1": 0.7360202642259902,
+   "crr_m4f": 0.317551395388989,
+   "nri_m1": 0.34857863752159957,
+   "nri_m4f": 0.10198526534946369,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.17212400606881645,
+     "abl_m4f_dye": 0.03810785814176223,
+     "delta_m1_dye": 0.03440509263573446,
+     "delta_m4f_dye": 0.07807589662836342,
+     "delta_dye_advantage": -0.04367080399262896
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.18918400734801968,
+     "abl_m4f_dye": 0.08099034062515673,
+     "delta_m1_dye": 0.017345091356531228,
+     "delta_m4f_dye": 0.03519341414496893,
+     "delta_dye_advantage": -0.017848322788437704
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.1940567979411581,
+     "abl_m4f_dye": 0.10303741926024212,
+     "delta_m1_dye": 0.012472300763392813,
+     "delta_m4f_dye": 0.013146335509883533,
+     "delta_dye_advantage": -0.0006740347464907204
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.17276527925575408,
+     "abl_m4f_dye": 0.013401631141299303,
+     "delta_m1_dye": 0.033763819448796834,
+     "delta_m4f_dye": 0.10278212362882636,
+     "delta_dye_advantage": -0.06901830418002952
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.2065290987045509,
+     "abl_m4f_dye": 0.12182790107438576,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.005644146304260106,
+     "delta_dye_advantage": 0.005644146304260106
+    }
+   }
+  },
+  "f26r": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "baseline_m1_dye": 0.19686585021555028,
+   "baseline_m4f_dye": 0.014668251591015776,
+   "crr_m1": 0.2081853146325989,
+   "crr_m4f": 0.3467123981219214,
+   "nri_m1": 0.27884437602879025,
+   "nri_m4f": 0.018207237616454913,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.1858583257817597,
+     "abl_m4f_dye": 0.04651465227743212,
+     "delta_m1_dye": 0.011007524433790578,
+     "delta_m4f_dye": -0.031846400686416344,
+     "delta_dye_advantage": 0.042853925120206915
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.1782740565643706,
+     "abl_m4f_dye": -0.021228483113018202,
+     "delta_m1_dye": 0.01859179365117969,
+     "delta_m4f_dye": 0.03589673470403398,
+     "delta_dye_advantage": -0.017304941052854295
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.18664209453336564,
+     "abl_m4f_dye": 0.004796691126773683,
+     "delta_m1_dye": 0.010223755682184643,
+     "delta_m4f_dye": 0.009871560464242094,
+     "delta_dye_advantage": 0.0003521952179425525
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.1919892959748086,
+     "abl_m4f_dye": 0.056597863025486916,
+     "delta_m1_dye": 0.004876554240741682,
+     "delta_m4f_dye": -0.04192961143447114,
+     "delta_dye_advantage": 0.04680616567521281
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.19686585021555028,
+     "abl_m4f_dye": 0.021542448515595315,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.006874196924579539,
+     "delta_dye_advantage": 0.006874196924579523
+    }
+   }
+  },
+  "f26v": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "baseline_m1_dye": 0.26379757518919505,
+   "baseline_m4f_dye": 0.14300688041487827,
+   "crr_m1": 0.3917551890401347,
+   "crr_m4f": 0.3560265945395459,
+   "nri_m1": 0.4036221585066657,
+   "nri_m4f": 0.14611609178749316,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.17161373144790476,
+     "abl_m4f_dye": 0.031806893976410906,
+     "delta_m1_dye": 0.0921838437412903,
+     "delta_m4f_dye": 0.11119998643846737,
+     "delta_dye_advantage": -0.01901614269717708
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.21838929404971097,
+     "abl_m4f_dye": 0.08975960412286343,
+     "delta_m1_dye": 0.045408281139484086,
+     "delta_m4f_dye": 0.05324727629201484,
+     "delta_dye_advantage": -0.007838995152530753
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.2519535128360477,
+     "abl_m4f_dye": 0.14940159268191067,
+     "delta_m1_dye": 0.011844062353147333,
+     "delta_m4f_dye": -0.006394712267032393,
+     "delta_dye_advantage": 0.018238774620179726
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.17947051509287112,
+     "abl_m4f_dye": 0.04949368248216712,
+     "delta_m1_dye": 0.08432706009632393,
+     "delta_m4f_dye": 0.09351319793271115,
+     "delta_dye_advantage": -0.00918613783638722
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.26379757518919505,
+     "abl_m4f_dye": 0.1716972449248096,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.028690364509931315,
+     "delta_dye_advantage": 0.028690364509931315
+    }
+   }
+  },
+  "f31r": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "H",
+   "baseline_m1_dye": 0.15703364966560382,
+   "baseline_m4f_dye": 0.011744764559377587,
+   "crr_m1": 1.4403164262376833,
+   "crr_m4f": 0.4357078113551177,
+   "nri_m1": 0.1405538581025249,
+   "nri_m4f": 0.009771069384865844,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.14876978983448536,
+     "abl_m4f_dye": -0.003526583263206874,
+     "delta_m1_dye": 0.008263859831118464,
+     "delta_m4f_dye": 0.015271347822584462,
+     "delta_dye_advantage": -0.007007487991465999
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.15628908367739516,
+     "abl_m4f_dye": 0.00396908643519564,
+     "delta_m1_dye": 0.0007445659882086564,
+     "delta_m4f_dye": 0.007775678124181947,
+     "delta_dye_advantage": -0.007031112135973294
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.15523151770084806,
+     "abl_m4f_dye": 0.0038444256917072707,
+     "delta_m1_dye": 0.0018021319647557599,
+     "delta_m4f_dye": 0.007900338867670317,
+     "delta_dye_advantage": -0.006098206902914571
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.14876050148982672,
+     "abl_m4f_dye": -0.004571647988032492,
+     "delta_m1_dye": 0.008273148175777095,
+     "delta_m4f_dye": 0.016316412547410078,
+     "delta_dye_advantage": -0.008043264371632997
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.15703364966560382,
+     "abl_m4f_dye": 0.00908783898279211,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.0026569255765854765,
+     "delta_dye_advantage": -0.0026569255765854782
+    }
+   }
+  },
+  "f31v": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "baseline_m1_dye": 0.14107562626417033,
+   "baseline_m4f_dye": 0.012017667721011963,
+   "crr_m1": 0.5378188238320074,
+   "crr_m4f": 0.28199796606464933,
+   "nri_m1": 0.2567004014181435,
+   "nri_m4f": 0.033626369350871835,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.11814137103827212,
+     "abl_m4f_dye": 0.020614884821548607,
+     "delta_m1_dye": 0.022934255225898217,
+     "delta_m4f_dye": -0.008597217100536644,
+     "delta_dye_advantage": 0.03153147232643487
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.11722782593669179,
+     "abl_m4f_dye": -0.015600876834247884,
+     "delta_m1_dye": 0.023847800327478547,
+     "delta_m4f_dye": 0.027618544555259847,
+     "delta_dye_advantage": -0.0037707442277812864
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.13338067487979846,
+     "abl_m4f_dye": 0.0023591610937156583,
+     "delta_m1_dye": 0.007694951384371873,
+     "delta_m4f_dye": 0.009658506627296304,
+     "delta_dye_advantage": -0.0019635552429244363
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.14502899933125232,
+     "abl_m4f_dye": 0.023548793107220373,
+     "delta_m1_dye": -0.003953373067081989,
+     "delta_m4f_dye": -0.01153112538620841,
+     "delta_dye_advantage": 0.007577752319126427
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.14107562626417033,
+     "abl_m4f_dye": 0.013861653537375947,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.0018439858163639845,
+     "delta_dye_advantage": 0.0018439858163639966
+    }
+   }
+  },
+  "f33r": {
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "baseline_m1_dye": 0.17798341595927203,
+   "baseline_m4f_dye": 0.06485831872241651,
+   "crr_m1": 0.1348622640236801,
+   "crr_m4f": 0.1457088223057364,
+   "nri_m1": 0.22263833352283266,
+   "nri_m4f": 0.035161158296921104,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.16372856304347855,
+     "abl_m4f_dye": 0.04944690284709273,
+     "delta_m1_dye": 0.014254852915793481,
+     "delta_m4f_dye": 0.015411415875323783,
+     "delta_dye_advantage": -0.0011565629595303023
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.12350968095514318,
+     "abl_m4f_dye": -0.011601990567215021,
+     "delta_m1_dye": 0.054473735004128845,
+     "delta_m4f_dye": 0.07646030928963153,
+     "delta_dye_advantage": -0.021986574285502686
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.1359915705851233,
+     "abl_m4f_dye": 0.011671215718621192,
+     "delta_m1_dye": 0.04199184537414874,
+     "delta_m4f_dye": 0.053187103003795325,
+     "delta_dye_advantage": -0.011195257629646585
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.16660172851737287,
+     "abl_m4f_dye": 0.051561816918288574,
+     "delta_m1_dye": 0.011381687441899158,
+     "delta_m4f_dye": 0.01329650180412794,
+     "delta_dye_advantage": -0.0019148143622287894
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.17798341595927203,
+     "abl_m4f_dye": 0.05444832343239927,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.010409995290017245,
+     "delta_dye_advantage": -0.010409995290017238
+    }
+   }
+  },
+  "f33v": {
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "baseline_m1_dye": 0.12382099987052697,
+   "baseline_m4f_dye": -0.04290464784654157,
+   "crr_m1": 1.0447018673067157,
+   "crr_m4f": 0.7645577442285457,
+   "nri_m1": 0.291197366485743,
+   "nri_m4f": -0.048084481943518234,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.11618802616473567,
+     "abl_m4f_dye": -0.03880268539272505,
+     "delta_m1_dye": 0.007632973705791302,
+     "delta_m4f_dye": -0.00410196245381652,
+     "delta_dye_advantage": 0.011734936159607828
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.0925792798075932,
+     "abl_m4f_dye": -0.06438931250545026,
+     "delta_m1_dye": 0.03124172006293377,
+     "delta_m4f_dye": 0.021484664658908685,
+     "delta_dye_advantage": 0.009757055404025106
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.10063890444942003,
+     "abl_m4f_dye": -0.06304416232696336,
+     "delta_m1_dye": 0.02318209542110694,
+     "delta_m4f_dye": 0.02013951448042179,
+     "delta_dye_advantage": 0.003042580940685158
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.12200079823039833,
+     "abl_m4f_dye": -0.043030829606852776,
+     "delta_m1_dye": 0.001820201640128638,
+     "delta_m4f_dye": 0.00012618176031120587,
+     "delta_dye_advantage": 0.0016940198798174322
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.12382099987052697,
+     "abl_m4f_dye": -0.042904647846541556,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -1.3877787807814457e-17,
+     "delta_dye_advantage": 2.7755575615628914e-17
+    }
+   }
+  },
+  "f34r": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "baseline_m1_dye": 0.28915733684924483,
+   "baseline_m4f_dye": 0.18326571550055695,
+   "crr_m1": 1.0203129242114697,
+   "crr_m4f": 0.48546097901350016,
+   "nri_m1": 0.6559353066284777,
+   "nri_m4f": 0.12377360616352184,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.23688456657894086,
+     "abl_m4f_dye": 0.07580308354864632,
+     "delta_m1_dye": 0.05227277027030397,
+     "delta_m4f_dye": 0.10746263195191064,
+     "delta_dye_advantage": -0.05518986168160667
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.2723500233397928,
+     "abl_m4f_dye": 0.1874324399255535,
+     "delta_m1_dye": 0.016807313509452027,
+     "delta_m4f_dye": -0.0041667244249965485,
+     "delta_dye_advantage": 0.020974037934448575
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.2657438585658365,
+     "abl_m4f_dye": 0.1717026144659575,
+     "delta_m1_dye": 0.02341347828340834,
+     "delta_m4f_dye": 0.011563101034599454,
+     "delta_dye_advantage": 0.011850377248808885
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.23604670502170408,
+     "abl_m4f_dye": 0.11168209616983735,
+     "delta_m1_dye": 0.05311063182754075,
+     "delta_m4f_dye": 0.0715836193307196,
+     "delta_dye_advantage": -0.018472987503178856
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.28915733684924483,
+     "abl_m4f_dye": 0.19830893547084155,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.0150432199702846,
+     "delta_dye_advantage": 0.0150432199702846
+    }
+   }
+  },
+  "f34v": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "baseline_m1_dye": 0.24770940090144108,
+   "baseline_m4f_dye": 0.03472640762166527,
+   "crr_m1": 1.6869066966130344,
+   "crr_m4f": 0.4371147309236261,
+   "nri_m1": 0.9081584700781722,
+   "nri_m4f": 0.03240181250503686,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.23987742598290923,
+     "abl_m4f_dye": 0.053256373582985406,
+     "delta_m1_dye": 0.007831974918531853,
+     "delta_m4f_dye": -0.018529965961320137,
+     "delta_dye_advantage": 0.026361940879851997
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.19341964137444237,
+     "abl_m4f_dye": -0.05536966701158206,
+     "delta_m1_dye": 0.054289759526998715,
+     "delta_m4f_dye": 0.09009607463324733,
+     "delta_dye_advantage": -0.0358063151062486
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.21016957814289583,
+     "abl_m4f_dye": -0.0023334467181657425,
+     "delta_m1_dye": 0.037539822758545255,
+     "delta_m4f_dye": 0.037059854339831014,
+     "delta_dye_advantage": 0.000479968418714255
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.25187929654894314,
+     "abl_m4f_dye": 0.06584383221454979,
+     "delta_m1_dye": -0.004169895647502059,
+     "delta_m4f_dye": -0.031117424592884517,
+     "delta_dye_advantage": 0.026947528945382465
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.24770940090144108,
+     "abl_m4f_dye": 0.03445703858817366,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.00026936903349161073,
+     "delta_dye_advantage": -0.00026936903349161767
+    }
+   }
+  },
+  "f39r": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "baseline_m1_dye": 0.24438215129754998,
+   "baseline_m4f_dye": 0.04492443782490023,
+   "crr_m1": 0.8219216628361619,
+   "crr_m4f": 0.20189936864753144,
+   "nri_m1": 0.20764308093047432,
+   "nri_m4f": 0.030943386811171137,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.24175365638119758,
+     "abl_m4f_dye": 0.03028575281187505,
+     "delta_m1_dye": 0.002628494916352392,
+     "delta_m4f_dye": 0.01463868501302518,
+     "delta_dye_advantage": -0.012010190096672813
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.18214810163399703,
+     "abl_m4f_dye": -0.031210933879751667,
+     "delta_m1_dye": 0.06223404966355295,
+     "delta_m4f_dye": 0.0761353717046519,
+     "delta_dye_advantage": -0.013901322041098951
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.20054436307275098,
+     "abl_m4f_dye": 0.010663729032339411,
+     "delta_m1_dye": 0.043837788224799,
+     "delta_m4f_dye": 0.034260708792560816,
+     "delta_dye_advantage": 0.009577079432238178
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.24725305678419252,
+     "abl_m4f_dye": 0.044398796738234825,
+     "delta_m1_dye": -0.0028709054866425388,
+     "delta_m4f_dye": 0.0005256410866654043,
+     "delta_dye_advantage": -0.003396546573307957
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.24438215129754998,
+     "abl_m4f_dye": 0.03597364669818973,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.008950791126710496,
+     "delta_dye_advantage": -0.008950791126710517
+    }
+   }
+  },
+  "f39v": {
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "baseline_m1_dye": 0.09914061161973536,
+   "baseline_m4f_dye": 0.16876282179733043,
+   "crr_m1": 1.3183487677176806,
+   "crr_m4f": 0.25641198338426535,
+   "nri_m1": 0.13267221884707772,
+   "nri_m4f": 0.1158641705600558,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.10224089847581311,
+     "abl_m4f_dye": 0.19184759264946727,
+     "delta_m1_dye": -0.003100286856077744,
+     "delta_m4f_dye": -0.023084770852136838,
+     "delta_dye_advantage": 0.019984483996059094
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.06853384534125018,
+     "abl_m4f_dye": -0.02865354194792178,
+     "delta_m1_dye": 0.030606766278485187,
+     "delta_m4f_dye": 0.1974163637452522,
+     "delta_dye_advantage": -0.16680959746676702
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.08168516513091302,
+     "abl_m4f_dye": 0.046989416760111605,
+     "delta_m1_dye": 0.017455446488822343,
+     "delta_m4f_dye": 0.12177340503721883,
+     "delta_dye_advantage": -0.10431795854839648
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.10225408443944493,
+     "abl_m4f_dye": 0.1957932135003188,
+     "delta_m1_dye": -0.00311347281970957,
+     "delta_m4f_dye": -0.027030391702988377,
+     "delta_dye_advantage": 0.023916918883278807
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.09914061161973536,
+     "abl_m4f_dye": 0.18934518198285682,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.020582360185526394,
+     "delta_dye_advantage": 0.020582360185526394
+    }
+   }
+  },
+  "f40r": {
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "baseline_m1_dye": 0.1256019883685638,
+   "baseline_m4f_dye": 0.14759810736304863,
+   "crr_m1": 0.37814382207706376,
+   "crr_m4f": 0.3844109308326308,
+   "nri_m1": 0.14659973222893538,
+   "nri_m4f": 0.0553538176727564,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.12393378628707645,
+     "abl_m4f_dye": 0.16931876279179367,
+     "delta_m1_dye": 0.0016682020814873383,
+     "delta_m4f_dye": -0.021720655428745045,
+     "delta_dye_advantage": 0.023388857510232383
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.09960585837843378,
+     "abl_m4f_dye": -0.024657234961380788,
+     "delta_m1_dye": 0.025996129990130012,
+     "delta_m4f_dye": 0.1722553423244294,
+     "delta_dye_advantage": -0.1462592123342994
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.10760531098075164,
+     "abl_m4f_dye": 0.07453161276859248,
+     "delta_m1_dye": 0.017996677387812146,
+     "delta_m4f_dye": 0.07306649459445615,
+     "delta_dye_advantage": -0.055069817206644
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.12751251331223762,
+     "abl_m4f_dye": 0.20744550222261418,
+     "delta_m1_dye": -0.0019105249436738303,
+     "delta_m4f_dye": -0.059847394859565556,
+     "delta_dye_advantage": 0.057936869915891726
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.1256019883685638,
+     "abl_m4f_dye": 0.2017766555020466,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.05417854813899797,
+     "delta_dye_advantage": 0.05417854813899797
+    }
+   }
+  },
+  "f41r": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "baseline_m1_dye": 0.23814779520421778,
+   "baseline_m4f_dye": 0.08046827951993935,
+   "crr_m1": 0.7858517195941608,
+   "crr_m4f": 0.41343862963839806,
+   "nri_m1": 0.44060360364766915,
+   "nri_m4f": 0.0858930819014794,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.19079368240268943,
+     "abl_m4f_dye": -0.014390981303015537,
+     "delta_m1_dye": 0.04735411280152835,
+     "delta_m4f_dye": 0.09485926082295489,
+     "delta_dye_advantage": -0.047505148021426524
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.20989644570947125,
+     "abl_m4f_dye": 0.06215144978539504,
+     "delta_m1_dye": 0.02825134949474653,
+     "delta_m4f_dye": 0.018316829734544307,
+     "delta_dye_advantage": 0.009934519760202237
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.22476755249973204,
+     "abl_m4f_dye": 0.07119818382402651,
+     "delta_m1_dye": 0.013380242704485734,
+     "delta_m4f_dye": 0.009270095695912833,
+     "delta_dye_advantage": 0.004110147008572901
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.21060233378361254,
+     "abl_m4f_dye": 0.014806048870965852,
+     "delta_m1_dye": 0.02754546142060524,
+     "delta_m4f_dye": 0.06566223064897349,
+     "delta_dye_advantage": -0.038116769228368264
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.23814779520421778,
+     "abl_m4f_dye": 0.0822095248643836,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.0017412453444442533,
+     "delta_dye_advantage": 0.0017412453444442533
+    }
+   }
+  },
+  "f41v": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "baseline_m1_dye": 0.1474946091425288,
+   "baseline_m4f_dye": 0.12061395665298343,
+   "crr_m1": 0.4369138614502538,
+   "crr_m4f": 0.2525867276157637,
+   "nri_m1": 0.22278752035790195,
+   "nri_m4f": 0.08965432840256912,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.13856333648392236,
+     "abl_m4f_dye": 0.04717713067498896,
+     "delta_m1_dye": 0.008931272658606437,
+     "delta_m4f_dye": 0.07343682597799447,
+     "delta_dye_advantage": -0.06450555331938802
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.11872136424226981,
+     "abl_m4f_dye": -0.004050833218599699,
+     "delta_m1_dye": 0.028773244900258982,
+     "delta_m4f_dye": 0.12466478987158312,
+     "delta_dye_advantage": -0.09589154497132414
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.1337352322484952,
+     "abl_m4f_dye": 0.07546867133017134,
+     "delta_m1_dye": 0.013759376894033587,
+     "delta_m4f_dye": 0.04514528532281209,
+     "delta_dye_advantage": -0.0313859084287785
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.14156314308310347,
+     "abl_m4f_dye": 0.08381440866841673,
+     "delta_m1_dye": 0.005931466059425322,
+     "delta_m4f_dye": 0.036799547984566694,
+     "delta_dye_advantage": -0.030868081925141372
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.1474946091425288,
+     "abl_m4f_dye": 0.11354532300585966,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.007068633647123762,
+     "delta_dye_advantage": -0.007068633647123762
+    }
+   }
+  },
+  "f43v": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "baseline_m1_dye": 0.22086180750020085,
+   "baseline_m4f_dye": 0.14828708321704037,
+   "crr_m1": 0.20539177143190285,
+   "crr_m4f": 0.2279524231123351,
+   "nri_m1": 0.3087208627005221,
+   "nri_m4f": 0.08097659582464901,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.1931361258496015,
+     "abl_m4f_dye": 0.05874755853391036,
+     "delta_m1_dye": 0.027725681650599354,
+     "delta_m4f_dye": 0.08953952468313,
+     "delta_dye_advantage": -0.06181384303253065
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.2663678557415335,
+     "abl_m4f_dye": 0.1806008885317217,
+     "delta_m1_dye": -0.04550604824133264,
+     "delta_m4f_dye": -0.03231380531468134,
+     "delta_dye_advantage": -0.013192242926651304
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.1853020614642673,
+     "abl_m4f_dye": 0.08661731309520825,
+     "delta_m1_dye": 0.03555974603593354,
+     "delta_m4f_dye": 0.061669770121832126,
+     "delta_dye_advantage": -0.02611002408589859
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.22584766562094233,
+     "abl_m4f_dye": 0.137372041531518,
+     "delta_m1_dye": -0.004985858120741482,
+     "delta_m4f_dye": 0.010915041685522375,
+     "delta_dye_advantage": -0.015900899806263857
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.22086180750020085,
+     "abl_m4f_dye": 0.14695371868673113,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.0013333645303092445,
+     "delta_dye_advantage": -0.0013333645303092445
+    }
+   }
+  },
+  "f46r": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "baseline_m1_dye": 0.17167173318010343,
+   "baseline_m4f_dye": 0.027860913317434725,
+   "crr_m1": 1.0002116375264145,
+   "crr_m4f": 0.34594092404557697,
+   "nri_m1": 0.3247474607129063,
+   "nri_m4f": 0.05277674600590156,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.17187271802267706,
+     "abl_m4f_dye": 0.020269584583432077,
+     "delta_m1_dye": -0.00020098484257363713,
+     "delta_m4f_dye": 0.007591328734002648,
+     "delta_dye_advantage": -0.007792313576576282
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.15823586553856164,
+     "abl_m4f_dye": 0.0422450417727878,
+     "delta_m1_dye": 0.013435867641541782,
+     "delta_m4f_dye": -0.014384128455353078,
+     "delta_dye_advantage": 0.027819996096894853
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.15927510621970284,
+     "abl_m4f_dye": 0.03592750079838432,
+     "delta_m1_dye": 0.012396626960400586,
+     "delta_m4f_dye": -0.008066587480949593,
+     "delta_dye_advantage": 0.020463214441350172
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.17240571055932738,
+     "abl_m4f_dye": 0.022505119379680433,
+     "delta_m1_dye": -0.0007339773792239546,
+     "delta_m4f_dye": 0.005355793937754292,
+     "delta_dye_advantage": -0.006089771316978243
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.17167173318010343,
+     "abl_m4f_dye": 0.040972827363102995,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.01311191404566827,
+     "delta_dye_advantage": 0.01311191404566825
+    }
+   }
+  },
+  "f46v": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "baseline_m1_dye": 0.14039762263016017,
+   "baseline_m4f_dye": 0.14973564473225465,
+   "crr_m1": 0.25119461220588063,
+   "crr_m4f": 0.17182842463465103,
+   "nri_m1": 0.251110302305788,
+   "nri_m4f": 0.09189943551666152,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.123181693415194,
+     "abl_m4f_dye": 0.09847887635618846,
+     "delta_m1_dye": 0.017215929214966175,
+     "delta_m4f_dye": 0.051256768376066186,
+     "delta_dye_advantage": -0.03404083916110001
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.1389358981465589,
+     "abl_m4f_dye": 0.04468973564164705,
+     "delta_m1_dye": 0.0014617244836012677,
+     "delta_m4f_dye": 0.1050459090906076,
+     "delta_dye_advantage": -0.10358418460700633
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.1368587605183678,
+     "abl_m4f_dye": 0.10113300975780071,
+     "delta_m1_dye": 0.0035388621117923846,
+     "delta_m4f_dye": 0.04860263497445394,
+     "delta_dye_advantage": -0.045063772862661555
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.12438365743007103,
+     "abl_m4f_dye": 0.10605464332175311,
+     "delta_m1_dye": 0.016013965200089145,
+     "delta_m4f_dye": 0.04368100141050153,
+     "delta_dye_advantage": -0.027667036210412388
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.14039762263016017,
+     "abl_m4f_dye": 0.12525586665526428,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.024479778076990366,
+     "delta_dye_advantage": -0.024479778076990366
+    }
+   }
+  },
+  "f48r": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "baseline_m1_dye": 0.2217324507221848,
+   "baseline_m4f_dye": 0.08713789342383724,
+   "crr_m1": 1.0,
+   "crr_m4f": 0.45410011205929923,
+   "nri_m1": 0.0,
+   "nri_m4f": 0.0728669514880725,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.22048957354654047,
+     "abl_m4f_dye": 0.04132242197411707,
+     "delta_m1_dye": 0.0012428771756443358,
+     "delta_m4f_dye": 0.04581547144972017,
+     "delta_dye_advantage": -0.04457259427407584
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.18542904459612167,
+     "abl_m4f_dye": 0.0655218738517454,
+     "delta_m1_dye": 0.03630340612606314,
+     "delta_m4f_dye": 0.021616019572091832,
+     "delta_dye_advantage": 0.01468738655397131
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.19183104276860002,
+     "abl_m4f_dye": 0.06911858989731476,
+     "delta_m1_dye": 0.029901407953584785,
+     "delta_m4f_dye": 0.01801930352652248,
+     "delta_dye_advantage": 0.011882104427062307
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.22367035476441388,
+     "abl_m4f_dye": 0.049326228315933196,
+     "delta_m1_dye": -0.0019379040422290716,
+     "delta_m4f_dye": 0.03781166510790404,
+     "delta_dye_advantage": -0.03974956915013311
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.2217324507221848,
+     "abl_m4f_dye": 0.11156379821986251,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.024425904796025272,
+     "delta_dye_advantage": 0.024425904796025272
+    }
+   }
+  },
+  "f48v": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "baseline_m1_dye": 0.19813184648919666,
+   "baseline_m4f_dye": 0.0930139823619198,
+   "crr_m1": 0.4091016557005776,
+   "crr_m4f": 0.25066620138659934,
+   "nri_m1": 0.35710925092090884,
+   "nri_m4f": 0.09652334445542747,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.21305486821271785,
+     "abl_m4f_dye": 0.12291407931537437,
+     "delta_m1_dye": -0.014923021723521196,
+     "delta_m4f_dye": -0.02990009695345458,
+     "delta_dye_advantage": 0.014977075229933384
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.14944599854122148,
+     "abl_m4f_dye": -0.02402239704982986,
+     "delta_m1_dye": 0.048685847947975175,
+     "delta_m4f_dye": 0.11703637941174966,
+     "delta_dye_advantage": -0.06835053146377448
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.170339670383364,
+     "abl_m4f_dye": 0.04940262312994111,
+     "delta_m1_dye": 0.02779217610583265,
+     "delta_m4f_dye": 0.04361135923197868,
+     "delta_dye_advantage": -0.015819183126146025
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.20351440391421985,
+     "abl_m4f_dye": 0.12598539620102603,
+     "delta_m1_dye": -0.005382557425023193,
+     "delta_m4f_dye": -0.032971413839106234,
+     "delta_dye_advantage": 0.02758885641408304
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.19813184648919666,
+     "abl_m4f_dye": 0.11465797102162592,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.021643988659706126,
+     "delta_dye_advantage": 0.021643988659706126
+    }
+   }
+  },
+  "f50r": {
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "baseline_m1_dye": 0.18168551896069754,
+   "baseline_m4f_dye": 0.07496848078233545,
+   "crr_m1": 2.4518375417365195,
+   "crr_m4f": 0.3409017903436294,
+   "nri_m1": 1.1647710437368348,
+   "nri_m4f": 0.03253271087625627,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.18704703526882402,
+     "abl_m4f_dye": 0.028631988697507004,
+     "delta_m1_dye": -0.005361516308126479,
+     "delta_m4f_dye": 0.04633649208482844,
+     "delta_dye_advantage": -0.051698008392954936
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.10410274174119881,
+     "abl_m4f_dye": -0.007855104544493983,
+     "delta_m1_dye": 0.07758277721949873,
+     "delta_m4f_dye": 0.08282358532682943,
+     "delta_dye_advantage": -0.0052408081073306995
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.11109019226827926,
+     "abl_m4f_dye": -0.0012082428212629183,
+     "delta_m1_dye": 0.07059532669241828,
+     "delta_m4f_dye": 0.07617672360359837,
+     "delta_dye_advantage": -0.005581396911180092
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.18517851650294018,
+     "abl_m4f_dye": 0.027936818603131075,
+     "delta_m1_dye": -0.0034929975422426374,
+     "delta_m4f_dye": 0.047031662179204375,
+     "delta_dye_advantage": -0.05052465972144701
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.18168551896069754,
+     "abl_m4f_dye": 0.024136882259972285,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.050831598522363165,
+     "delta_dye_advantage": -0.05083159852236316
+    }
+   }
+  },
+  "f50v": {
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "baseline_m1_dye": 0.1457900883308125,
+   "baseline_m4f_dye": 0.18238834324160585,
+   "crr_m1": 0.030606730922187703,
+   "crr_m4f": 0.14606382147881386,
+   "nri_m1": 0.12196170808941387,
+   "nri_m4f": 0.1123117736869701,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.15232232067807955,
+     "abl_m4f_dye": 0.13957142814450718,
+     "delta_m1_dye": -0.006532232347267047,
+     "delta_m4f_dye": 0.04281691509709867,
+     "delta_dye_advantage": -0.04934914744436572
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.10686056574321992,
+     "abl_m4f_dye": -0.017995924629292122,
+     "delta_m1_dye": 0.03892952258759258,
+     "delta_m4f_dye": 0.20038426787089797,
+     "delta_dye_advantage": -0.1614547452833054
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.11996778768063536,
+     "abl_m4f_dye": 0.03211576551517441,
+     "delta_m1_dye": 0.02582230065017714,
+     "delta_m4f_dye": 0.15027257772643143,
+     "delta_dye_advantage": -0.1244502770762543
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.15309859596641148,
+     "abl_m4f_dye": 0.15498584782800512,
+     "delta_m1_dye": -0.007308507635598982,
+     "delta_m4f_dye": 0.027402495413600736,
+     "delta_dye_advantage": -0.03471100304919972
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.1457900883308125,
+     "abl_m4f_dye": 0.14972568687439175,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.032662656367214105,
+     "delta_dye_advantage": -0.032662656367214105
+    }
+   }
+  },
+  "f55r": {
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "baseline_m1_dye": 0.15064090545314834,
+   "baseline_m4f_dye": 0.10828542069008298,
+   "crr_m1": 0.8285704770472012,
+   "crr_m4f": 0.3110502487465204,
+   "nri_m1": 0.13980788956777077,
+   "nri_m4f": 0.03838582219344654,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.1578103330061263,
+     "abl_m4f_dye": 0.11760234482338647,
+     "delta_m1_dye": -0.007169427552977947,
+     "delta_m4f_dye": -0.009316924133303484,
+     "delta_dye_advantage": 0.0021474965803255364
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.08499628220307119,
+     "abl_m4f_dye": -0.015932835835367577,
+     "delta_m1_dye": 0.06564462325007715,
+     "delta_m4f_dye": 0.12421825652545056,
+     "delta_dye_advantage": -0.058573633275373405
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.0973337645610343,
+     "abl_m4f_dye": 0.046118142005320426,
+     "delta_m1_dye": 0.05330714089211404,
+     "delta_m4f_dye": 0.06216727868476256,
+     "delta_dye_advantage": -0.00886013779264852
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.15500779670794754,
+     "abl_m4f_dye": 0.12574373791320073,
+     "delta_m1_dye": -0.004366891254799193,
+     "delta_m4f_dye": -0.017458317223117747,
+     "delta_dye_advantage": 0.013091425968318554
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.15064090545314834,
+     "abl_m4f_dye": 0.12036163411254153,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.012076213422458543,
+     "delta_dye_advantage": 0.012076213422458543
+    }
+   }
+  },
+  "f55v": {
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "baseline_m1_dye": 0.08483016290838305,
+   "baseline_m4f_dye": 0.20044103792479176,
+   "crr_m1": 0.24073666148342526,
+   "crr_m4f": 0.26990962693267695,
+   "nri_m1": 0.16586200214195268,
+   "nri_m4f": 0.0822770652245594,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.08971858237121483,
+     "abl_m4f_dye": 0.31018537870381696,
+     "delta_m1_dye": -0.004888419462831778,
+     "delta_m4f_dye": -0.1097443407790252,
+     "delta_dye_advantage": 0.10485592131619342
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.061726282218563605,
+     "abl_m4f_dye": -0.03311031038571609,
+     "delta_m1_dye": 0.023103880689819445,
+     "delta_m4f_dye": 0.23355134831050783,
+     "delta_dye_advantage": -0.2104474676206884
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.06922092394926546,
+     "abl_m4f_dye": 0.09018911226900007,
+     "delta_m1_dye": 0.015609238959117588,
+     "delta_m4f_dye": 0.11025192565579169,
+     "delta_dye_advantage": -0.0946426866966741
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.08937846932793131,
+     "abl_m4f_dye": 0.2981494337437474,
+     "delta_m1_dye": -0.004548306419548259,
+     "delta_m4f_dye": -0.09770839581895566,
+     "delta_dye_advantage": 0.0931600893994074
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.08483016290838305,
+     "abl_m4f_dye": 0.28040729892599037,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.07996626100119861,
+     "delta_dye_advantage": 0.07996626100119861
+    }
+   }
+  },
+  "f66r": {
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "T",
+   "baseline_m1_dye": 0.1395129167598091,
+   "baseline_m4f_dye": 0.02857824415892436,
+   "crr_m1": 0.30590085030425085,
+   "crr_m4f": 0.09515984141676226,
+   "nri_m1": 0.16853677810072076,
+   "nri_m4f": 0.015154260845799716,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.1352930186604563,
+     "abl_m4f_dye": 0.03325845863225696,
+     "delta_m1_dye": 0.0042198980993528035,
+     "delta_m4f_dye": -0.004680214473332601,
+     "delta_dye_advantage": 0.0089001125726854
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.11609053993118766,
+     "abl_m4f_dye": 0.0009317111533336106,
+     "delta_m1_dye": 0.02342237682862143,
+     "delta_m4f_dye": 0.027646533005590748,
+     "delta_dye_advantage": -0.004224156176969321
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.1187926236999766,
+     "abl_m4f_dye": 0.0012075221579385788,
+     "delta_m1_dye": 0.020720293059832487,
+     "delta_m4f_dye": 0.02737072200098578,
+     "delta_dye_advantage": -0.006650428941153294
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.13608418442604406,
+     "abl_m4f_dye": 0.031420811689724173,
+     "delta_m1_dye": 0.0034287323337650333,
+     "delta_m4f_dye": -0.0028425675307998145,
+     "delta_dye_advantage": 0.006271299864564844
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.1395129167598091,
+     "abl_m4f_dye": 0.03671083724907784,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.008132593090153479,
+     "delta_dye_advantage": 0.008132593090153475
+    }
+   }
+  },
+  "f75r": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "baseline_m1_dye": 0.12105427162542977,
+   "baseline_m4f_dye": 0.0061617765675246045,
+   "crr_m1": 0.32832971888190093,
+   "crr_m4f": 0.4414871095831366,
+   "nri_m1": 0.13682653433697556,
+   "nri_m4f": 0.004281416436409536,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.104445930027762,
+     "abl_m4f_dye": -0.006402222091928908,
+     "delta_m1_dye": 0.016608341597667775,
+     "delta_m4f_dye": 0.012563998659453512,
+     "delta_dye_advantage": 0.004044342938214263
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.1136860033045985,
+     "abl_m4f_dye": 0.004337244318889063,
+     "delta_m1_dye": 0.007368268320831262,
+     "delta_m4f_dye": 0.0018245322486355412,
+     "delta_dye_advantage": 0.005543736072195715
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.11590022181255984,
+     "abl_m4f_dye": 0.0028201960853928196,
+     "delta_m1_dye": 0.005154049812869932,
+     "delta_m4f_dye": 0.003341580482131785,
+     "delta_dye_advantage": 0.0018124693307381423
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.1069008304217236,
+     "abl_m4f_dye": -0.005310473837577023,
+     "delta_m1_dye": 0.014153441203706166,
+     "delta_m4f_dye": 0.011472250405101627,
+     "delta_dye_advantage": 0.0026811907986045436
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.12105427162542977,
+     "abl_m4f_dye": 0.006962147700047541,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.0008003711325229364,
+     "delta_dye_advantage": 0.0008003711325229312
+    }
+   }
+  },
+  "f75v": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "baseline_m1_dye": 0.1096990875916358,
+   "baseline_m4f_dye": 0.029390937746061302,
+   "crr_m1": 0.3295764387041269,
+   "crr_m4f": 0.3659959602250072,
+   "nri_m1": 0.112782408549256,
+   "nri_m4f": 0.02277808611441955,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.11357140378648642,
+     "abl_m4f_dye": 0.015567057018198754,
+     "delta_m1_dye": -0.0038723161948506224,
+     "delta_m4f_dye": 0.013823880727862548,
+     "delta_dye_advantage": -0.017696196922713167
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.08238194872391966,
+     "abl_m4f_dye": 0.02359035940664577,
+     "delta_m1_dye": 0.02731713886771614,
+     "delta_m4f_dye": 0.005800578339415531,
+     "delta_dye_advantage": 0.02151656052830061
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.0853520409047697,
+     "abl_m4f_dye": 0.023252506756944662,
+     "delta_m1_dye": 0.024347046686866103,
+     "delta_m4f_dye": 0.0061384309891166396,
+     "delta_dye_advantage": 0.018208615697749467
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.11227207804745323,
+     "abl_m4f_dye": 0.01681870189763974,
+     "delta_m1_dye": -0.0025729904558174366,
+     "delta_m4f_dye": 0.012572235848421563,
+     "delta_dye_advantage": -0.015145226304239007
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.1096990875916358,
+     "abl_m4f_dye": 0.029929513044875167,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.0005385752988138655,
+     "delta_dye_advantage": 0.000538575298813862
+    }
+   }
+  },
+  "f76r": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "baseline_m1_dye": 0.0961482889253661,
+   "baseline_m4f_dye": -0.004129549195075332,
+   "crr_m1": 0.21578101986200524,
+   "crr_m4f": 0.1454191066224204,
+   "nri_m1": 0.1641698743967599,
+   "nri_m4f": -0.004713939293946547,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.09257051015217321,
+     "abl_m4f_dye": -0.010062842607910143,
+     "delta_m1_dye": 0.0035777787731928884,
+     "delta_m4f_dye": 0.005933293412834811,
+     "delta_dye_advantage": -0.0023555146396419258
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.08324074920100843,
+     "abl_m4f_dye": -0.01554080801990923,
+     "delta_m1_dye": 0.012907539724357667,
+     "delta_m4f_dye": 0.011411258824833898,
+     "delta_dye_advantage": 0.0014962808995237636
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.08943752465314019,
+     "abl_m4f_dye": -0.012673404566338572,
+     "delta_m1_dye": 0.006710764272225916,
+     "delta_m4f_dye": 0.00854385537126324,
+     "delta_dye_advantage": -0.001833091099037329
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.09259588344785909,
+     "abl_m4f_dye": -0.011546701158070893,
+     "delta_m1_dye": 0.0035524054775070146,
+     "delta_m4f_dye": 0.00741715196299556,
+     "delta_dye_advantage": -0.0038647464854885544
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.0961482889253661,
+     "abl_m4f_dye": -0.0021813163063056254,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.001948232888769707,
+     "delta_dye_advantage": 0.0019482328887697048
+    }
+   }
+  },
+  "f76v": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "baseline_m1_dye": 0.12909274397623866,
+   "baseline_m4f_dye": 0.011855046398255919,
+   "crr_m1": 0.6155880257043442,
+   "crr_m4f": 0.3444645405769629,
+   "nri_m1": 0.23281298094068079,
+   "nri_m4f": 0.013372891429429445,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.11843322270860157,
+     "abl_m4f_dye": 0.006729514113726601,
+     "delta_m1_dye": 0.010659521267637084,
+     "delta_m4f_dye": 0.005125532284529318,
+     "delta_dye_advantage": 0.0055339889831077654
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.12524486768224383,
+     "abl_m4f_dye": 0.012450987071159953,
+     "delta_m1_dye": 0.0038478762939948286,
+     "delta_m4f_dye": -0.0005959406729040342,
+     "delta_dye_advantage": 0.004443816966898856
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.12496461913104474,
+     "abl_m4f_dye": 0.012576768486213372,
+     "delta_m1_dye": 0.004128124845193912,
+     "delta_m4f_dye": -0.0007217220879574531,
+     "delta_dye_advantage": 0.004849846933151367
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.11806551457269486,
+     "abl_m4f_dye": 0.009426083483071144,
+     "delta_m1_dye": 0.011027229403543795,
+     "delta_m4f_dye": 0.002428962915184775,
+     "delta_dye_advantage": 0.008598266488359013
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.12909274397623866,
+     "abl_m4f_dye": 0.018890463938844297,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.007035417540588378,
+     "delta_dye_advantage": 0.007035417540588382
+    }
+   }
+  },
+  "f77r": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "baseline_m1_dye": 0.19911070958116078,
+   "baseline_m4f_dye": 0.036781487923109105,
+   "crr_m1": 0.9633487781363655,
+   "crr_m4f": 0.5699003970995301,
+   "nri_m1": 0.19354881275510596,
+   "nri_m4f": 0.023541550817075055,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.16686808644858733,
+     "abl_m4f_dye": 0.00012653055467921957,
+     "delta_m1_dye": 0.03224262313257345,
+     "delta_m4f_dye": 0.036654957368429886,
+     "delta_dye_advantage": -0.004412334235856408
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.2061698468535293,
+     "abl_m4f_dye": 0.04937295852374859,
+     "delta_m1_dye": -0.00705913727236851,
+     "delta_m4f_dye": -0.012591470600639483,
+     "delta_dye_advantage": 0.005532333328270994
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.19734290139300803,
+     "abl_m4f_dye": 0.03276083305875566,
+     "delta_m1_dye": 0.001767808188152753,
+     "delta_m4f_dye": 0.0040206548643534415,
+     "delta_dye_advantage": -0.0022528466762006816
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.16563843265191155,
+     "abl_m4f_dye": -0.0018129060519308468,
+     "delta_m1_dye": 0.03347227692924923,
+     "delta_m4f_dye": 0.03859439397503995,
+     "delta_dye_advantage": -0.005122117045790714
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.19911070958116078,
+     "abl_m4f_dye": 0.03428520800625485,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.0024962799168542563,
+     "delta_dye_advantage": -0.0024962799168542493
+    }
+   }
+  },
+  "f77v": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "baseline_m1_dye": 0.12380833805722516,
+   "baseline_m4f_dye": 0.0017256842223445814,
+   "crr_m1": 0.5322507491437929,
+   "crr_m4f": 0.2911526895844938,
+   "nri_m1": 0.13595091587113725,
+   "nri_m4f": -0.0012564506905693724,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.11178965212567835,
+     "abl_m4f_dye": -0.01226952189949775,
+     "delta_m1_dye": 0.012018685931546813,
+     "delta_m4f_dye": 0.013995206121842333,
+     "delta_dye_advantage": -0.001976520190295511
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.11947208982405128,
+     "abl_m4f_dye": -0.003838122313247978,
+     "delta_m1_dye": 0.004336248233173884,
+     "delta_m4f_dye": 0.005563806535592559,
+     "delta_dye_advantage": -0.001227558302418677
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.11849292510600973,
+     "abl_m4f_dye": -0.006152648026957562,
+     "delta_m1_dye": 0.005315412951215431,
+     "delta_m4f_dye": 0.007878332249302143,
+     "delta_dye_advantage": -0.002562919298086705
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.11202246042851458,
+     "abl_m4f_dye": -0.010003500575432155,
+     "delta_m1_dye": 0.011785877628710584,
+     "delta_m4f_dye": 0.011729184797776737,
+     "delta_dye_advantage": 5.669283093384658e-05
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.12380833805722516,
+     "abl_m4f_dye": -0.0014212164641911362,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.0031469006865357174,
+     "delta_dye_advantage": -0.0031469006865357113
+    }
+   }
+  },
+  "f78r": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "baseline_m1_dye": 0.11657918219032062,
+   "baseline_m4f_dye": 0.011392653262774938,
+   "crr_m1": 0.9449908814397049,
+   "crr_m4f": 0.4188902261655717,
+   "nri_m1": 0.14606339432711196,
+   "nri_m4f": 0.009156113843571689,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.11835022313291847,
+     "abl_m4f_dye": 0.005686746382361692,
+     "delta_m1_dye": -0.0017710409425978485,
+     "delta_m4f_dye": 0.005705906880413246,
+     "delta_dye_advantage": -0.007476947823011101
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.1067018397357117,
+     "abl_m4f_dye": -0.009678142581237899,
+     "delta_m1_dye": 0.009877342454608917,
+     "delta_m4f_dye": 0.021070795844012835,
+     "delta_dye_advantage": -0.011193453389403918
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.10756281910117974,
+     "abl_m4f_dye": -0.00561702109008839,
+     "delta_m1_dye": 0.009016363089140889,
+     "delta_m4f_dye": 0.017009674352863328,
+     "delta_dye_advantage": -0.00799331126372245
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.11999993950022875,
+     "abl_m4f_dye": 0.005321445636804688,
+     "delta_m1_dye": -0.0034207573099081234,
+     "delta_m4f_dye": 0.00607120762597025,
+     "delta_dye_advantage": -0.00949196493587838
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.11657918219032062,
+     "abl_m4f_dye": 0.007573361430937402,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.003819291831837536,
+     "delta_dye_advantage": -0.0038192918318375457
+    }
+   }
+  },
+  "f78v": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "baseline_m1_dye": 0.15047354201018381,
+   "baseline_m4f_dye": 0.005280087082128748,
+   "crr_m1": 0.512082531245641,
+   "crr_m4f": 0.35646046355907546,
+   "nri_m1": 0.15969172443494994,
+   "nri_m4f": 0.006602334191434987,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.14707313057166663,
+     "abl_m4f_dye": 0.004760477164664648,
+     "delta_m1_dye": 0.003400411438517187,
+     "delta_m4f_dye": 0.0005196099174641002,
+     "delta_dye_advantage": 0.0028808015210531057
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.13779994580205684,
+     "abl_m4f_dye": -0.006165014253355602,
+     "delta_m1_dye": 0.01267359620812697,
+     "delta_m4f_dye": 0.011445101335484351,
+     "delta_dye_advantage": 0.0012284948726426215
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.14147587291471178,
+     "abl_m4f_dye": -0.0005737974734118325,
+     "delta_m1_dye": 0.008997669095472033,
+     "delta_m4f_dye": 0.005853884555540581,
+     "delta_dye_advantage": 0.0031437845399314712
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.1475542924531389,
+     "abl_m4f_dye": 0.005937405535508244,
+     "delta_m1_dye": 0.002919249557044923,
+     "delta_m4f_dye": -0.0006573184533794959,
+     "delta_dye_advantage": 0.0035765680104244413
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.15047354201018381,
+     "abl_m4f_dye": 0.006219736120615518,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.0009396490384867692,
+     "delta_dye_advantage": 0.0009396490384867839
+    }
+   }
+  },
+  "f79r": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "baseline_m1_dye": 0.13314613542527978,
+   "baseline_m4f_dye": 0.03143640356845246,
+   "crr_m1": 1.4284252340084493,
+   "crr_m4f": 0.41169374171964535,
+   "nri_m1": 0.1852458129008701,
+   "nri_m4f": 0.03162763567440557,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.10841169687763093,
+     "abl_m4f_dye": 0.01730210157620346,
+     "delta_m1_dye": 0.024734438547648854,
+     "delta_m4f_dye": 0.014134301992249,
+     "delta_dye_advantage": 0.010600136555399861
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.13912477256746097,
+     "abl_m4f_dye": 0.04363029485842176,
+     "delta_m1_dye": -0.005978637142181192,
+     "delta_m4f_dye": -0.012193891289969297,
+     "delta_dye_advantage": 0.0062152541477881185
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.13168303869384995,
+     "abl_m4f_dye": 0.028867444188804207,
+     "delta_m1_dye": 0.0014630967314298304,
+     "delta_m4f_dye": 0.002568959379648253,
+     "delta_dye_advantage": -0.0011058626482184086
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.10721495675673402,
+     "abl_m4f_dye": 0.014626030504344745,
+     "delta_m1_dye": 0.02593117866854576,
+     "delta_m4f_dye": 0.016810373064107716,
+     "delta_dye_advantage": 0.009120805604438051
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.13314613542527978,
+     "abl_m4f_dye": 0.0354743239129502,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.004037920344497736,
+     "delta_dye_advantage": 0.004037920344497736
+    }
+   }
+  },
+  "f79v": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "baseline_m1_dye": 0.1359618125699712,
+   "baseline_m4f_dye": 0.012916534336237281,
+   "crr_m1": 0.34885747628271846,
+   "crr_m4f": 0.3098431455716394,
+   "nri_m1": 0.13838430102765625,
+   "nri_m4f": 0.008478509590399098,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.08617625265328734,
+     "abl_m4f_dye": -0.003585878985577101,
+     "delta_m1_dye": 0.04978555991668386,
+     "delta_m4f_dye": 0.01650241332181438,
+     "delta_dye_advantage": 0.03328314659486947
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.13608801927971617,
+     "abl_m4f_dye": 0.012650453668581136,
+     "delta_m1_dye": -0.00012620670974497483,
+     "delta_m4f_dye": 0.0002660806676561458,
+     "delta_dye_advantage": -0.0003922873774011154
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.13476687473271173,
+     "abl_m4f_dye": 0.009091866407758232,
+     "delta_m1_dye": 0.0011949378372594632,
+     "delta_m4f_dye": 0.003824667928479049,
+     "delta_dye_advantage": -0.002629730091219598
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.08683882389561547,
+     "abl_m4f_dye": -0.0014659663119892447,
+     "delta_m1_dye": 0.04912298867435573,
+     "delta_m4f_dye": 0.014382500648226526,
+     "delta_dye_advantage": 0.03474048802612921
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.1359618125699712,
+     "abl_m4f_dye": 0.0159388907514844,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.0030223564152471183,
+     "delta_dye_advantage": 0.0030223564152471183
+    }
+   }
+  },
+  "f80r": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "baseline_m1_dye": 0.1065846057907733,
+   "baseline_m4f_dye": 0.010971119957547034,
+   "crr_m1": 0.5710987942570654,
+   "crr_m4f": 0.4567991899953351,
+   "nri_m1": 0.14849563971650037,
+   "nri_m4f": 0.01969448377867018,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.09446546024885082,
+     "abl_m4f_dye": -0.007235928146790889,
+     "delta_m1_dye": 0.01211914554192249,
+     "delta_m4f_dye": 0.018207048104337924,
+     "delta_dye_advantage": -0.006087902562415426
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.1068612633371039,
+     "abl_m4f_dye": 0.02543717669070637,
+     "delta_m1_dye": -0.0002766575463305915,
+     "delta_m4f_dye": -0.014466056733159335,
+     "delta_dye_advantage": 0.014189399186828752
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.10152327973963624,
+     "abl_m4f_dye": 0.009333809924673721,
+     "delta_m1_dye": 0.005061326051137072,
+     "delta_m4f_dye": 0.001637310032873313,
+     "delta_dye_advantage": 0.0034240160182637674
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.09650840718604092,
+     "abl_m4f_dye": -0.007843471783843833,
+     "delta_m1_dye": 0.010076198604732384,
+     "delta_m4f_dye": 0.018814591741390867,
+     "delta_dye_advantage": -0.008738393136658473
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.1065846057907733,
+     "abl_m4f_dye": 0.012288099406372084,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.0013169794488250494,
+     "delta_dye_advantage": 0.0013169794488250564
+    }
+   }
+  },
+  "f80v": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "baseline_m1_dye": 0.14399785154049605,
+   "baseline_m4f_dye": 0.034605188194339075,
+   "crr_m1": 0.7808527879564385,
+   "crr_m4f": 0.4579155418196283,
+   "nri_m1": 0.1949887039985257,
+   "nri_m4f": 0.026072141201257525,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.11865064248279679,
+     "abl_m4f_dye": 0.009249065469901716,
+     "delta_m1_dye": 0.025347209057699258,
+     "delta_m4f_dye": 0.02535612272443736,
+     "delta_dye_advantage": -8.91366673810845e-06
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.15177897825279985,
+     "abl_m4f_dye": 0.041671800270049054,
+     "delta_m1_dye": -0.007781126712303799,
+     "delta_m4f_dye": -0.00706661207570998,
+     "delta_dye_advantage": -0.0007145146365938326
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.13822880085369466,
+     "abl_m4f_dye": 0.03208023305207843,
+     "delta_m1_dye": 0.005769050686801391,
+     "delta_m4f_dye": 0.002524955142260643,
+     "delta_dye_advantage": 0.0032440955445407482
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.12100060089867097,
+     "abl_m4f_dye": 0.011134879862063032,
+     "delta_m1_dye": 0.022997250641825076,
+     "delta_m4f_dye": 0.023470308332276042,
+     "delta_dye_advantage": -0.0004730576904509731
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.14399785154049605,
+     "abl_m4f_dye": 0.04121543920582177,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.006610251011482694,
+     "delta_dye_advantage": 0.006610251011482687
+    }
+   }
+  },
+  "f81r": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "baseline_m1_dye": 0.10886731441749675,
+   "baseline_m4f_dye": 0.023014234535583496,
+   "crr_m1": 0.920180704133675,
+   "crr_m4f": 0.47130978602912926,
+   "nri_m1": 0.12969090287414006,
+   "nri_m4f": 0.010669952337585987,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.10099364415991212,
+     "abl_m4f_dye": 0.0019335276181436105,
+     "delta_m1_dye": 0.007873670257584633,
+     "delta_m4f_dye": 0.021080706917439886,
+     "delta_dye_advantage": -0.013207036659855245
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.11391824561532486,
+     "abl_m4f_dye": 0.017070619220424885,
+     "delta_m1_dye": -0.00505093119782811,
+     "delta_m4f_dye": 0.00594361531515861,
+     "delta_dye_advantage": -0.010994546512986716
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.1039213976009158,
+     "abl_m4f_dye": 0.009568019817080454,
+     "delta_m1_dye": 0.00494591681658095,
+     "delta_m4f_dye": 0.013446214718503042,
+     "delta_dye_advantage": -0.008500297901922083
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.10004470887283193,
+     "abl_m4f_dye": -0.0021773699682333214,
+     "delta_m1_dye": 0.008822605544664824,
+     "delta_m4f_dye": 0.025191604503816818,
+     "delta_dye_advantage": -0.01636899895915199
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.10886731441749675,
+     "abl_m4f_dye": 0.024848692380844088,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.0018344578452605918,
+     "delta_dye_advantage": 0.0018344578452605953
+    }
+   }
+  },
+  "f82r": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "baseline_m1_dye": 0.13746449830115862,
+   "baseline_m4f_dye": 0.01867909687481368,
+   "crr_m1": 0.844415823524606,
+   "crr_m4f": 0.6410113078604239,
+   "nri_m1": 0.21559347238941498,
+   "nri_m4f": 0.014855662888687154,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.11956924454129031,
+     "abl_m4f_dye": 0.002597049150503648,
+     "delta_m1_dye": 0.017895253759868307,
+     "delta_m4f_dye": 0.01608204772431003,
+     "delta_dye_advantage": 0.0018132060355582763
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.13819963500500418,
+     "abl_m4f_dye": 0.017035526912839185,
+     "delta_m1_dye": -0.0007351367038455625,
+     "delta_m4f_dye": 0.001643569961974494,
+     "delta_dye_advantage": -0.002378706665820046
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.1354963272309228,
+     "abl_m4f_dye": 0.014799720267485623,
+     "delta_m1_dye": 0.001968171070235808,
+     "delta_m4f_dye": 0.0038793766073280563,
+     "delta_dye_advantage": -0.0019112055370922448
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.11838439361030582,
+     "abl_m4f_dye": 0.0028695521881393414,
+     "delta_m1_dye": 0.019080104690852792,
+     "delta_m4f_dye": 0.015809544686674337,
+     "delta_dye_advantage": 0.003270560004178455
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.13746449830115862,
+     "abl_m4f_dye": 0.016825845577045848,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.0018532512977678314,
+     "delta_dye_advantage": -0.0018532512977678245
+    }
+   }
+  },
+  "f82v": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "baseline_m1_dye": 0.14638343797788833,
+   "baseline_m4f_dye": 0.017351022443616585,
+   "crr_m1": 0.7019499024411269,
+   "crr_m4f": 0.5595012231388216,
+   "nri_m1": 0.24395386225581345,
+   "nri_m4f": 0.012474790230864813,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.1162222966515695,
+     "abl_m4f_dye": -0.0063164410421632095,
+     "delta_m1_dye": 0.030161141326318835,
+     "delta_m4f_dye": 0.023667463485779795,
+     "delta_dye_advantage": 0.006493677840539044
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.1537453200642737,
+     "abl_m4f_dye": 0.033531944034234346,
+     "delta_m1_dye": -0.007361882086385357,
+     "delta_m4f_dye": -0.01618092159061776,
+     "delta_dye_advantage": 0.008819039504232407
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.1446384374005464,
+     "abl_m4f_dye": 0.01644435194997401,
+     "delta_m1_dye": 0.0017450005773419208,
+     "delta_m4f_dye": 0.0009066704936425765,
+     "delta_dye_advantage": 0.0008383300836993512
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.11609873872840118,
+     "abl_m4f_dye": -0.005239755607394296,
+     "delta_m1_dye": 0.03028469924948715,
+     "delta_m4f_dye": 0.022590778051010882,
+     "delta_dye_advantage": 0.0076939211984762695
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.14638343797788833,
+     "abl_m4f_dye": 0.01912012297053767,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.0017691005269210858,
+     "delta_dye_advantage": 0.0017691005269210858
+    }
+   }
+  },
+  "f83r": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "baseline_m1_dye": 0.13351114539151912,
+   "baseline_m4f_dye": -0.006640896578673715,
+   "crr_m1": 0.6448304746718979,
+   "crr_m4f": 0.481088813122221,
+   "nri_m1": 0.1639656741512997,
+   "nri_m4f": -0.00042835073900595867,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.1180032422876199,
+     "abl_m4f_dye": -0.015254133612665454,
+     "delta_m1_dye": 0.015507903103899226,
+     "delta_m4f_dye": 0.00861323703399174,
+     "delta_dye_advantage": 0.00689466606990749
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.13776304384372612,
+     "abl_m4f_dye": -0.003084490076759137,
+     "delta_m1_dye": -0.004251898452206998,
+     "delta_m4f_dye": -0.0035564065019145783,
+     "delta_dye_advantage": -0.0006954919502924206
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.1296589877929404,
+     "abl_m4f_dye": -0.0124151648466817,
+     "delta_m1_dye": 0.0038521575985787093,
+     "delta_m4f_dye": 0.005774268268007985,
+     "delta_dye_advantage": -0.0019221106694292667
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.11739903457748355,
+     "abl_m4f_dye": -0.019772819335679752,
+     "delta_m1_dye": 0.016112110814035574,
+     "delta_m4f_dye": 0.013131922757006037,
+     "delta_dye_advantage": 0.0029801880570295425
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.13351114539151912,
+     "abl_m4f_dye": 0.0005624375158693868,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.007203334094543102,
+     "delta_dye_advantage": 0.007203334094543101
+    }
+   }
+  },
+  "f83v": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "baseline_m1_dye": 0.10624885207843746,
+   "baseline_m4f_dye": 0.005770844216652489,
+   "crr_m1": 0.7058695265728975,
+   "crr_m4f": 0.4616891268998682,
+   "nri_m1": 0.11382212265130964,
+   "nri_m4f": 0.0050868832387556085,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.09205533649568429,
+     "abl_m4f_dye": -0.02128199994129929,
+     "delta_m1_dye": 0.014193515582753169,
+     "delta_m4f_dye": 0.02705284415795178,
+     "delta_dye_advantage": -0.0128593285751986
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.1141000813740558,
+     "abl_m4f_dye": 0.016121559686818592,
+     "delta_m1_dye": -0.00785122929561835,
+     "delta_m4f_dye": -0.010350715470166104,
+     "delta_dye_advantage": 0.0024994861745477603
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.10969854399701225,
+     "abl_m4f_dye": 0.0033973939270818903,
+     "delta_m1_dye": -0.0034496919185747904,
+     "delta_m4f_dye": 0.002373450289570599,
+     "delta_dye_advantage": -0.005823142208145379
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.09185882648530058,
+     "abl_m4f_dye": -0.02067322887745008,
+     "delta_m1_dye": 0.014390025593136874,
+     "delta_m4f_dye": 0.026444073094102568,
+     "delta_dye_advantage": -0.012054047500965684
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.10624885207843746,
+     "abl_m4f_dye": 0.006198245649789349,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.0004274014331368597,
+     "delta_dye_advantage": 0.0004274014331368675
+    }
+   }
+  },
+  "f84r": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "baseline_m1_dye": 0.12115332777995684,
+   "baseline_m4f_dye": -0.004827305419045908,
+   "crr_m1": 1.0298023863579255,
+   "crr_m4f": 0.3626475529792338,
+   "nri_m1": 0.2070280562551092,
+   "nri_m4f": -0.006667511697070605,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.1120209321481073,
+     "abl_m4f_dye": -0.03221186730215324,
+     "delta_m1_dye": 0.009132395631849546,
+     "delta_m4f_dye": 0.027384561883107332,
+     "delta_dye_advantage": -0.01825216625125778
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.11908614227974018,
+     "abl_m4f_dye": -0.003881329403926549,
+     "delta_m1_dye": 0.002067185500216659,
+     "delta_m4f_dye": -0.0009459760151193587,
+     "delta_dye_advantage": 0.0030131615153360103
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.11306005599105323,
+     "abl_m4f_dye": -0.013857381308463224,
+     "delta_m1_dye": 0.008093271788903608,
+     "delta_m4f_dye": 0.009030075889417316,
+     "delta_dye_advantage": -0.0009368041005137218
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.11277937821271174,
+     "abl_m4f_dye": -0.03314116000386756,
+     "delta_m1_dye": 0.008373949567245104,
+     "delta_m4f_dye": 0.028313854584821656,
+     "delta_dye_advantage": -0.01993990501757656
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.12115332777995684,
+     "abl_m4f_dye": -0.006828193342780132,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.0020008879237342243,
+     "delta_dye_advantage": -0.0020008879237342347
+    }
+   }
+  },
+  "f84v": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "B",
+   "baseline_m1_dye": 0.11361156384075244,
+   "baseline_m4f_dye": -0.00261960044341096,
+   "crr_m1": 1.0703997375925245,
+   "crr_m4f": 0.38087698456725405,
+   "nri_m1": 0.11234182852424714,
+   "nri_m4f": 0.0007769389494054072,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.11331393126682289,
+     "abl_m4f_dye": -0.005329417636472234,
+     "delta_m1_dye": 0.0002976325739295488,
+     "delta_m4f_dye": 0.0027098171930612738,
+     "delta_dye_advantage": -0.0024121846191317298
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.10693746280907279,
+     "abl_m4f_dye": -0.014694364811608638,
+     "delta_m1_dye": 0.006674101031679647,
+     "delta_m4f_dye": 0.012074764368197677,
+     "delta_dye_advantage": -0.005400663336518036
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.10724710028742297,
+     "abl_m4f_dye": -0.013312188201965053,
+     "delta_m1_dye": 0.006364463553329466,
+     "delta_m4f_dye": 0.010692587758554093,
+     "delta_dye_advantage": -0.004328124205224632
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.11387937697614131,
+     "abl_m4f_dye": -0.004675180813817991,
+     "delta_m1_dye": -0.0002678131353888724,
+     "delta_m4f_dye": 0.0020555803704070314,
+     "delta_dye_advantage": -0.002323393505795898
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.11361156384075244,
+     "abl_m4f_dye": -0.0032612588326505427,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.0006416583892395827,
+     "delta_dye_advantage": -0.0006416583892395883
+    }
+   }
+  },
+  "f85r1": {
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "T",
+   "baseline_m1_dye": 0.1626563672073342,
+   "baseline_m4f_dye": 0.0885218179622887,
+   "crr_m1": 0.37992303894996793,
+   "crr_m4f": 0.5127465414611652,
+   "nri_m1": 0.2569650390683008,
+   "nri_m4f": 0.025202068300474122,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.1214730555572167,
+     "abl_m4f_dye": 0.07206283293800049,
+     "delta_m1_dye": 0.0411833116501175,
+     "delta_m4f_dye": 0.016458985024288206,
+     "delta_dye_advantage": 0.024724326625829296
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.12280155031167703,
+     "abl_m4f_dye": 0.0037729150358795697,
+     "delta_m1_dye": 0.039854816895657175,
+     "delta_m4f_dye": 0.08474890292640913,
+     "delta_dye_advantage": -0.044894086030751956
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.13442620400263322,
+     "abl_m4f_dye": 0.02217696535316685,
+     "delta_m1_dye": 0.02823016320470098,
+     "delta_m4f_dye": 0.06634485260912185,
+     "delta_dye_advantage": -0.038114689404420865
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.1604854650138059,
+     "abl_m4f_dye": 0.07687938658818169,
+     "delta_m1_dye": 0.002170902193528307,
+     "delta_m4f_dye": 0.011642431374107004,
+     "delta_dye_advantage": -0.009471529180578697
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.1626563672073342,
+     "abl_m4f_dye": 0.08383588779174597,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.004685930170542724,
+     "delta_dye_advantage": -0.004685930170542724
+    }
+   }
+  },
+  "f85r2": {
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "C",
+   "baseline_m1_dye": 0.14516049430827482,
+   "baseline_m4f_dye": 0.1538088345346945,
+   "crr_m1": 0.4012800034810929,
+   "crr_m4f": 0.18486894201037063,
+   "nri_m1": 0.11413273791083829,
+   "nri_m4f": 0.04119784887266577,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.14562227944053854,
+     "abl_m4f_dye": 0.137706707435377,
+     "delta_m1_dye": -0.0004617851322637201,
+     "delta_m4f_dye": 0.016102127099317493,
+     "delta_dye_advantage": -0.016563912231581213
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.11187558947930977,
+     "abl_m4f_dye": -0.05690288277451905,
+     "delta_m1_dye": 0.03328490482896505,
+     "delta_m4f_dye": 0.21071171730921354,
+     "delta_dye_advantage": -0.17742681248024847
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.12074811068914187,
+     "abl_m4f_dye": -0.002745823949712506,
+     "delta_m1_dye": 0.02441238361913295,
+     "delta_m4f_dye": 0.156554658484407,
+     "delta_dye_advantage": -0.13214227486527405
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.14666229949176246,
+     "abl_m4f_dye": 0.14087562877280171,
+     "delta_m1_dye": -0.0015018051834876367,
+     "delta_m4f_dye": 0.012933205761892774,
+     "delta_dye_advantage": -0.014435010945380411
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.14516049430827482,
+     "abl_m4f_dye": 0.12672484492896388,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.027083989605730607,
+     "delta_dye_advantage": -0.027083989605730607
+    }
+   }
+  },
+  "f86v3": {
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "C",
+   "baseline_m1_dye": 0.03549520665392807,
+   "baseline_m4f_dye": -5.655266743544015e-05,
+   "crr_m1": 0.8884269732178173,
+   "crr_m4f": 0.9650351109042008,
+   "nri_m1": 0.05031437780192905,
+   "nri_m4f": -0.004410673303839685,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.03467631027869812,
+     "abl_m4f_dye": 0.0004745065570477897,
+     "delta_m1_dye": 0.0008188963752299508,
+     "delta_m4f_dye": -0.0005310592244832298,
+     "delta_dye_advantage": 0.0013499555997131818
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.03233729434011771,
+     "abl_m4f_dye": -0.009942388956945668,
+     "delta_m1_dye": 0.0031579123138103654,
+     "delta_m4f_dye": 0.009885836289510229,
+     "delta_dye_advantage": -0.006727923975699858
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.031548515416585765,
+     "abl_m4f_dye": -0.009140528733327316,
+     "delta_m1_dye": 0.003946691237342308,
+     "delta_m4f_dye": 0.009083976065891876,
+     "delta_dye_advantage": -0.005137284828549568
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.034860671333059194,
+     "abl_m4f_dye": 0.00032618750629525087,
+     "delta_m1_dye": 0.0006345353208688786,
+     "delta_m4f_dye": -0.00038274017373069103,
+     "delta_dye_advantage": 0.0010172754945995746
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.03549520665392807,
+     "abl_m4f_dye": 0.002738766382910584,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.0027953190503460243,
+     "delta_dye_advantage": 0.0027953190503460235
+    }
+   }
+  },
+  "f86v4": {
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "C",
+   "baseline_m1_dye": 0.055247997617064934,
+   "baseline_m4f_dye": 0.030063911928610847,
+   "crr_m1": 0.19090736974607872,
+   "crr_m4f": 0.6257115737168442,
+   "nri_m1": 0.22253218834961522,
+   "nri_m4f": 0.09875635196162867,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.04904246359286709,
+     "abl_m4f_dye": 0.01994419126651656,
+     "delta_m1_dye": 0.006205534024197844,
+     "delta_m4f_dye": 0.010119720662094288,
+     "delta_dye_advantage": -0.003914186637896444
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.047668313538456075,
+     "abl_m4f_dye": -0.00038299983744271015,
+     "delta_m1_dye": 0.007579684078608859,
+     "delta_m4f_dye": 0.030446911766053558,
+     "delta_dye_advantage": -0.022867227687444695
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.048956178444137396,
+     "abl_m4f_dye": 0.007923204095169537,
+     "delta_m1_dye": 0.0062918191729275375,
+     "delta_m4f_dye": 0.02214070783344131,
+     "delta_dye_advantage": -0.015848888660513774
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.052139238580748676,
+     "abl_m4f_dye": 0.027751698069653098,
+     "delta_m1_dye": 0.003108759036316258,
+     "delta_m4f_dye": 0.002312213858957749,
+     "delta_dye_advantage": 0.000796545177358509
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.055247997617064934,
+     "abl_m4f_dye": 0.027264654727974492,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.002799257200636354,
+     "delta_dye_advantage": -0.002799257200636354
+    }
+   }
+  },
+  "f86v5": {
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "C",
+   "baseline_m1_dye": 0.1268083094286795,
+   "baseline_m4f_dye": 0.2739347637029585,
+   "crr_m1": 0.6132702958239886,
+   "crr_m4f": 0.4907113961808663,
+   "nri_m1": 0.2207262929418078,
+   "nri_m4f": 0.05343100767602025,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.13067655124684094,
+     "abl_m4f_dye": 0.2651234656648664,
+     "delta_m1_dye": -0.0038682418181614497,
+     "delta_m4f_dye": 0.008811298038092108,
+     "delta_dye_advantage": -0.012679539856253558
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.07549952346888483,
+     "abl_m4f_dye": -0.0585916341116533,
+     "delta_m1_dye": 0.051308785959794656,
+     "delta_m4f_dye": 0.3325263978146118,
+     "delta_dye_advantage": -0.28121761185481714
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.08751381856588332,
+     "abl_m4f_dye": 0.04044109049164709,
+     "delta_m1_dye": 0.03929449086279617,
+     "delta_m4f_dye": 0.2334936732113114,
+     "delta_dye_advantage": -0.19419918234851524
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.12962256613258705,
+     "abl_m4f_dye": 0.2633918398288643,
+     "delta_m1_dye": -0.0028142567039075583,
+     "delta_m4f_dye": 0.010542923874094168,
+     "delta_dye_advantage": -0.013357180578001726
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.1268083094286795,
+     "abl_m4f_dye": 0.24938950018480063,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.02454526351815786,
+     "delta_dye_advantage": -0.02454526351815786
+    }
+   }
+  },
+  "f86v6": {
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "C",
+   "baseline_m1_dye": 0.12074591366099255,
+   "baseline_m4f_dye": 0.12041399089641588,
+   "crr_m1": 0.19809271579488544,
+   "crr_m4f": 0.12943834607332322,
+   "nri_m1": 0.13293237307957143,
+   "nri_m4f": 0.07530569336334933,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.11809872399990048,
+     "abl_m4f_dye": 0.1332332832550326,
+     "delta_m1_dye": 0.002647189661092064,
+     "delta_m4f_dye": -0.012819292358616702,
+     "delta_dye_advantage": 0.015466482019708766
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.07649734253855613,
+     "abl_m4f_dye": -0.008358176410448965,
+     "delta_m1_dye": 0.04424857112243642,
+     "delta_m4f_dye": 0.12877216730686486,
+     "delta_dye_advantage": -0.08452359618442842
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.08426302763101103,
+     "abl_m4f_dye": 0.028467782161966194,
+     "delta_m1_dye": 0.03648288602998152,
+     "delta_m4f_dye": 0.0919462087344497,
+     "delta_dye_advantage": -0.05546332270446817
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.11718114110717222,
+     "abl_m4f_dye": 0.13334365619003047,
+     "delta_m1_dye": 0.0035647725538203306,
+     "delta_m4f_dye": -0.012929665293614584,
+     "delta_dye_advantage": 0.016494437847434915
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.12074591366099255,
+     "abl_m4f_dye": 0.12631116781731327,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.00589717692089739,
+     "delta_dye_advantage": 0.00589717692089739
+    }
+   }
+  },
+  "f94r": {
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "baseline_m1_dye": 0.1610690454911808,
+   "baseline_m4f_dye": 0.09084265180885061,
+   "crr_m1": 0.8915933285246456,
+   "crr_m4f": 0.5357731160678153,
+   "nri_m1": 0.41354587509315127,
+   "nri_m4f": 0.07845584267490631,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.16431656704855999,
+     "abl_m4f_dye": 0.06827065687266844,
+     "delta_m1_dye": -0.003247521557379174,
+     "delta_m4f_dye": 0.02257199493618217,
+     "delta_dye_advantage": -0.025819516493561345
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.1321784212377292,
+     "abl_m4f_dye": 0.010603124880637457,
+     "delta_m1_dye": 0.028890624253451624,
+     "delta_m4f_dye": 0.08023952692821315,
+     "delta_dye_advantage": -0.051348902674761526
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.13770937621650664,
+     "abl_m4f_dye": 0.03228709444253241,
+     "delta_m1_dye": 0.023359669274674172,
+     "delta_m4f_dye": 0.0585555573663182,
+     "delta_dye_advantage": -0.03519588809164402
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.16385428472737326,
+     "abl_m4f_dye": 0.07284032766785459,
+     "delta_m1_dye": -0.0027852392361924494,
+     "delta_m4f_dye": 0.01800232414099602,
+     "delta_dye_advantage": -0.02078756337718847
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.1610690454911808,
+     "abl_m4f_dye": 0.07147679918458458,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.01936585262426603,
+     "delta_dye_advantage": -0.01936585262426603
+    }
+   }
+  },
+  "f94v": {
+   "profile": "A3_DISTILL_COLLECT",
+   "section": "H",
+   "baseline_m1_dye": 0.34204173311880337,
+   "baseline_m4f_dye": 0.10234361881547997,
+   "crr_m1": 0.7483889035987623,
+   "crr_m4f": 0.2302550059077595,
+   "nri_m1": 0.3394746027394492,
+   "nri_m4f": 0.07848576724882436,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.32964412624340755,
+     "abl_m4f_dye": 0.1030524588956238,
+     "delta_m1_dye": 0.012397606875395817,
+     "delta_m4f_dye": -0.0007088400801438244,
+     "delta_dye_advantage": 0.013106446955539641
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.22211714271518482,
+     "abl_m4f_dye": 0.03761667474368013,
+     "delta_m1_dye": 0.11992459040361855,
+     "delta_m4f_dye": 0.06472694407179985,
+     "delta_dye_advantage": 0.0551976463318187
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.275844799704086,
+     "abl_m4f_dye": 0.08545467798425617,
+     "delta_m1_dye": 0.06619693341471738,
+     "delta_m4f_dye": 0.016888940831223803,
+     "delta_dye_advantage": 0.049307992583493554
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.346679220148447,
+     "abl_m4f_dye": 0.10742169844650326,
+     "delta_m1_dye": -0.004637487029643617,
+     "delta_m4f_dye": -0.005078079631023288,
+     "delta_dye_advantage": 0.00044059260137965794
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.34204173311880337,
+     "abl_m4f_dye": 0.12706736056536355,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.02472374174988358,
+     "delta_dye_advantage": 0.024723741749883565
+    }
+   }
+  },
+  "f95r1": {
+   "profile": "A1_BATH_REFLUX",
+   "section": "H",
+   "baseline_m1_dye": 0.11391990357105757,
+   "baseline_m4f_dye": 0.02472127818287082,
+   "crr_m1": 0.5128402941553339,
+   "crr_m4f": 0.326913520189244,
+   "nri_m1": 0.1706895657647276,
+   "nri_m4f": 0.03630838717550663,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.11957945601821295,
+     "abl_m4f_dye": 0.032466527537973106,
+     "delta_m1_dye": -0.00565955244715538,
+     "delta_m4f_dye": -0.007745249355102287,
+     "delta_dye_advantage": 0.00208569690794691
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.10087731409453016,
+     "abl_m4f_dye": 0.017060835024559164,
+     "delta_m1_dye": 0.013042589476527408,
+     "delta_m4f_dye": 0.007660443158311655,
+     "delta_dye_advantage": 0.00538214631821575
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.10708886493195928,
+     "abl_m4f_dye": 0.023006062082618017,
+     "delta_m1_dye": 0.006831038639098286,
+     "delta_m4f_dye": 0.0017152161002528012,
+     "delta_dye_advantage": 0.005115822538845488
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.12073640449128636,
+     "abl_m4f_dye": 0.033707789679796034,
+     "delta_m1_dye": -0.006816500920228799,
+     "delta_m4f_dye": -0.008986511496925215,
+     "delta_dye_advantage": 0.0021700105766964267
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.11391990357105757,
+     "abl_m4f_dye": 0.035805939194799075,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.011084661011928256,
+     "delta_dye_advantage": 0.01108466101192826
+    }
+   }
+  },
+  "f95r2": {
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "baseline_m1_dye": 0.1172848112793968,
+   "baseline_m4f_dye": 0.29822522921834466,
+   "crr_m1": 0.3439600151526387,
+   "crr_m4f": 0.1248934261438236,
+   "nri_m1": 0.134328679754661,
+   "nri_m4f": 0.10548074051965195,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.12260742554749024,
+     "abl_m4f_dye": 0.3384410517974357,
+     "delta_m1_dye": -0.00532261426809344,
+     "delta_m4f_dye": -0.040215822579091065,
+     "delta_dye_advantage": 0.034893208310997625
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.09531227426697148,
+     "abl_m4f_dye": 0.006996664464956545,
+     "delta_m1_dye": 0.021972537012425325,
+     "delta_m4f_dye": 0.2912285647533881,
+     "delta_dye_advantage": -0.2692560277409628
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.10121674041333688,
+     "abl_m4f_dye": 0.09986030708889751,
+     "delta_m1_dye": 0.016068070866059922,
+     "delta_m4f_dye": 0.19836492212944715,
+     "delta_dye_advantage": -0.18229685126338724
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.1232957385759609,
+     "abl_m4f_dye": 0.3564791405114819,
+     "delta_m1_dye": -0.006010927296564106,
+     "delta_m4f_dye": -0.05825391129313723,
+     "delta_dye_advantage": 0.05224298399657312
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.1172848112793968,
+     "abl_m4f_dye": 0.3320289853829979,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": -0.033803756164653254,
+     "delta_dye_advantage": 0.033803756164653254
+    }
+   }
+  },
+  "f95v2": {
+   "profile": "A2_SEALED_RECIRCULATION",
+   "section": "H",
+   "baseline_m1_dye": 0.11517677877517812,
+   "baseline_m4f_dye": 0.06376178788926365,
+   "crr_m1": 0.8600719356017028,
+   "crr_m4f": 0.7157139729956221,
+   "nri_m1": 0.20257046673950052,
+   "nri_m4f": 0.06170345633822105,
+   "ablations": {
+    "NO_CROSS_COUPLING": {
+     "abl_m1_dye": 0.11123379834207213,
+     "abl_m4f_dye": 0.06053009341577502,
+     "delta_m1_dye": 0.003942980433105994,
+     "delta_m4f_dye": 0.0032316944734886305,
+     "delta_dye_advantage": 0.0007112859596173637
+    },
+    "NO_CLOSE_RECOVERY": {
+     "abl_m1_dye": 0.09742822913352563,
+     "abl_m4f_dye": -0.023675333955515864,
+     "delta_m1_dye": 0.017748549641652497,
+     "delta_m4f_dye": 0.08743712184477952,
+     "delta_dye_advantage": -0.06968857220312702
+    },
+    "NO_CONTAINMENT": {
+     "abl_m1_dye": 0.0990896116863485,
+     "abl_m4f_dye": 0.01202551380970395,
+     "delta_m1_dye": 0.016087167088829624,
+     "delta_m4f_dye": 0.0517362740795597,
+     "delta_dye_advantage": -0.03564910699073008
+    },
+    "NO_TR_TO_Y": {
+     "abl_m1_dye": 0.11076749534433801,
+     "abl_m4f_dye": 0.045356291286144886,
+     "delta_m1_dye": 0.0044092834308401135,
+     "delta_m4f_dye": 0.018405496603118764,
+     "delta_dye_advantage": -0.013996213172278643
+    },
+    "NO_Y_SENSITIVITY": {
+     "abl_m1_dye": 0.11517677877517812,
+     "abl_m4f_dye": 0.05221585433028234,
+     "delta_m1_dye": 0.0,
+     "delta_m4f_dye": 0.011545933558981307,
+     "delta_dye_advantage": -0.011545933558981314
+    }
+   }
+  }
+ },
+ "non_a2_baseline_fi": 0.0555489949066839
+}

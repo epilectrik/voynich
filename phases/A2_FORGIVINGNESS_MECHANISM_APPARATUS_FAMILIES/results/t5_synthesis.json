@@ -1,0 +1,176 @@
+{
+ "metadata": {
+  "phase": "573",
+  "script": "t5_synthesis.py",
+  "timestamp": "2026-03-10T23:22:42.195483+00:00",
+  "elapsed_seconds": 0.007085561752319336
+ },
+ "verdicts": {
+  "mechanism": {
+   "verdict": "A2_MECHANISM_IDENTIFIED_STRONG",
+   "explanation": "Single ablation NO_CLOSE_RECOVERY accounts for 159.5% of A2 excess CCS1",
+   "details": {
+    "a2_profile": "A2_SEALED_RECIRCULATION",
+    "ranked_shares": [
+     [
+      "NO_CLOSE_RECOVERY",
+      1.5947
+     ],
+     [
+      "NO_CONTAINMENT",
+      1.1595
+     ],
+     [
+      "NO_CROSS_COUPLING",
+      -0.57
+     ],
+     [
+      "NO_TR_TO_Y",
+      -0.492
+     ],
+     [
+      "NO_Y_SENSITIVITY",
+      0.0165
+     ]
+    ],
+    "top1_name": "NO_CLOSE_RECOVERY",
+    "top1_share": 1.5947,
+    "top2_name": "NO_CONTAINMENT",
+    "top2_share": 1.1595,
+    "top2_coherent": true,
+    "mean_crr_m4f": 0.388837068623534,
+    "mean_nri_m4f": 0.054115479656462497
+   }
+  },
+  "family": {
+   "verdict": "FAMILY_PARTITION_INCONCLUSIVE",
+   "explanation": "No stable cluster structure. Silhouettes: 0.361, 0.148. Bootstrap: 0.589, 0.410. Best ARI: 0.385.",
+   "details": {
+    "best_k_response": "2",
+    "best_k_surface": "2",
+    "silhouette_response": 0.3614,
+    "silhouette_surface": 0.1481,
+    "ari_profile_response": 0.1173,
+    "ari_profile_surface": 0.2307,
+    "ari_2family_response": 0.3853,
+    "bootstrap_response": 0.5886,
+    "bootstrap_surface": 0.4101,
+    "max_ari": 0.3853
+   }
+  },
+  "a2_structure": {
+   "verdict": "A2_WEAKLY_STRUCTURED",
+   "explanation": "Section F-ratio=0.05 (sig=False), boundary 44%, anomalous 0%. Some internal variation but not enough for sub-profiles",
+   "details": {
+    "f_ratio": 0.0549,
+    "section_significant": false,
+    "n_core_a2": 5,
+    "n_boundary": 8,
+    "n_anomalous": 0,
+    "boundary_fraction": 0.4444444444444444,
+    "section_ccs1": {
+     "C": 0.1156,
+     "H": 0.1234,
+     "T": 0.0586
+    }
+   }
+  },
+  "grammar_pattern": {
+   "verdict": "GRAMMAR_PATTERN_STRENGTH_DEPENDENT",
+   "explanation": "A2 grammar advantage varies by strength: STRONG adv=+0.0209 (n=11), WEAK adv=-0.0140 (n=40). Range=0.0349, CCS1=0.1208. Only strong-grammar events reliably beat the forgiving null. Weak events lose the null.",
+   "details": {
+    "a2_profile": "A2_SEALED_RECIRCULATION",
+    "overall_ccs1": 0.120805,
+    "m1_dye_strong": 0.141676,
+    "m1_dye_medium": 0.129812,
+    "m1_dye_weak": 0.106796,
+    "adv_strong": 0.020871,
+    "adv_medium": 0.009007000000000015,
+    "adv_weak": -0.014008999999999994
+   }
+  }
+ },
+ "constraints": {
+  "C1639": {
+   "id": "C1639",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "A2",
+    "mechanism",
+    "CCS"
+   ],
+   "claim": "A2_SEALED_RECIRCULATION excess forgivingness mechanism: A2_MECHANISM_IDENTIFIED_STRONG. Single ablation NO_CLOSE_RECOVERY accounts for 159.5% of A2 excess CCS1",
+   "verdict": "A2_MECHANISM_IDENTIFIED_STRONG",
+   "evidence": {
+    "source": "Phase 573 T1 counterfactual ablation",
+    "top_channel": "NO_CLOSE_RECOVERY",
+    "top_share": 1.5947,
+    "crr_m4f": 0.388837068623534,
+    "nri_m4f": 0.054115479656462497
+   },
+   "phase": 573
+  },
+  "C1640": {
+   "id": "C1640",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "clustering",
+    "family_partition"
+   ],
+   "claim": "Currier B apparatus family partition: FAMILY_PARTITION_INCONCLUSIVE. No stable cluster structure. Silhouettes: 0.361, 0.148. Bootstrap: 0.589, 0.410. Best ARI: 0.385.",
+   "verdict": "FAMILY_PARTITION_INCONCLUSIVE",
+   "evidence": {
+    "source": "Phase 573 T3 two-layer clustering",
+    "best_k_response": "2",
+    "silhouette_response": 0.3614,
+    "max_ari": 0.3853,
+    "bootstrap_response": 0.5886
+   },
+   "phase": 573
+  },
+  "C1641": {
+   "id": "C1641",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "A2",
+    "internal_structure"
+   ],
+   "claim": "Within-A2 structure: A2_WEAKLY_STRUCTURED. Section F-ratio=0.05 (sig=False), boundary 44%, anomalous 0%. Some internal variation but not enough for sub-profiles",
+   "verdict": "A2_WEAKLY_STRUCTURED",
+   "evidence": {
+    "source": "Phase 573 T4 A2 folio decomposition",
+    "f_ratio": 0.0549,
+    "boundary_fraction": 0.4444444444444444,
+    "n_core": 5
+   },
+   "phase": 573
+  },
+  "C1642": {
+   "id": "C1642",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "A2",
+    "grammar",
+    "forgivingness"
+   ],
+   "claim": "A2 event-type x grammar-strength forgivingness pattern: GRAMMAR_PATTERN_STRENGTH_DEPENDENT. A2 grammar advantage varies by strength: STRONG adv=+0.0209 (n=11), WEAK adv=-0.0140 (n=40). Range=0.0349, CCS1=0.1208. Only strong-grammar events reliably beat the forgiving null. Weak events lose the null.",
+   "verdict": "GRAMMAR_PATTERN_STRENGTH_DEPENDENT",
+   "evidence": {
+    "source": "Phase 573 T2 grammar strength forgivingness",
+    "overall_ccs1": 0.120805,
+    "adv_strong": 0.020871,
+    "adv_weak": -0.014008999999999994,
+    "a2_profile": "A2_SEALED_RECIRCULATION"
+   },
+   "phase": 573
+  }
+ }
+}

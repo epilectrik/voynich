@@ -5761,6 +5761,23 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - WCP formally demoted (C1637): endpoint packet coherence does not discriminate grammar advantage at scale. The restoring force that makes the apparatus stable also masks token-level differences at endpoints. WCP remains useful as a structural continuity diagnostic but is no longer an apparatus success criterion.
 - Primary apparatus success family frozen (C1638): DYE (dV-to-Y efficiency), DVA (dV advantage), YGA (Y-gain advantage). These process-quality metrics measure execution dynamics during closure, not endpoint state. Validated across phases 570b-572 at full 76-folio scale. The closure grammar advantage is "uses demanded disturbance more productively during closure," not "looks more orderly at the end."
 
+### Phase 573: A2 Forgivingness Mechanism + Apparatus Family Partition
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1639 | A2_SEALED_RECIRCULATION excess forgivingness mechanism identified: CLOSE recovery channels (R1-R5) account for 159.5% of A2's excess CCS1. Removing close recovery drops A2 null DYE from 0.114 to near zero. Within-A2, CCS1 correlates rho=0.963 with close recovery ablation effect. The mechanism is single-channel dominant, not distributed | 2 | B, virtual apparatus, A2, mechanism, CCS, close recovery, R1-R5, ablation, forgivingness, C1636 | NO_CLOSE_RECOVERY excess_fi_share=159.5%. NO_CONTAINMENT=116.0%. CRR_M4f=0.389. NRI_M4f=0.054. rho(CCS1,abl_CR)=0.963. |
+| 1640 | Currier B apparatus family partition: response-only clustering finds real but sub-threshold structure (silhouette=0.361, ARI_2family=0.385, bootstrap=0.589). Two-cluster split isolates 12 forgiving folios (9 A2 + 3 A3) from 64 productive folios. Response-surface clustering recovers profiles better at k=3 (ARI=0.348) but with low silhouette (0.126). Families are gradient-like, not crisp | 2 | B, virtual apparatus, clustering, family partition, Ward, silhouette, ARI, C1636, C1639 | T3a k=2 sil=0.361 ARI_2fam=0.385. T3b k=3 ARI_prof=0.348. Bootstrap=0.589. Combined profile prediction 82.9%. |
+| 1641 | Within-A2 structure is weakly structured: section does not explain CCS1 variance (F-ratio=0.055), but 44% of A2 folios are boundary cases (4 A2→A1, 4 A2→A3). T\|A2 (n=2) anomalously good (EPV=0.90). Only 6/18 A2 folios pass EPV≥0.80. Core A2 mean CCS1=0.180, boundary-to-A1 mean=0.013 | 2 | B, virtual apparatus, A2, internal structure, conformity, boundary, C1636, C1639 | F-ratio=0.055. Boundary 8/18=44%. Core_A2 n=5 CCS1=0.180. A2→A1 n=4 CCS1=0.013. T\|A2 EPV=0.90. |
+| 1642 | A2 grammar-strength forgivingness is strength-dependent: only STRONG-grammar A2 events beat the null (advantage +0.021, n=11), while WEAK events lose to the null (-0.014, n=40). Grammar strength modulates whether real closure outcompetes A2's generous close-recovery physics. This rules out uniform recirculation and confirms strength-gated conversion | 2 | B, virtual apparatus, A2, grammar, forgivingness, CCS, strength-dependent, C1636, C1639 | STRONG adv=+0.021 (n=11). MEDIUM adv=+0.009 (n=12). WEAK adv=-0.014 (n=40). Overall CCS1=0.121. Range=0.035. |
+
+**Phase 573 findings (A2 Forgivingness Mechanism + Apparatus Family Partition, A2_MECHANISM_IDENTIFIED_STRONG + GRAMMAR_PATTERN_STRENGTH_DEPENDENT):**
+- Counterfactual ablation across 5 physics channels on 76 eligible Currier B folios identifies close recovery (R1-R5) as the single dominant mechanism for A2's excess forgivingness (C1639).
+- Removing close recovery eliminates A2's null DYE entirely (drops from 0.114 to ~0). The containment ablation (alpha_XC=0, R1-C=0, R3=0) also substantial at 116.0%, overlapping with close recovery channels.
+- A2's forgivingness is NOT uniform across grammar strength bands (C1642): STRONG-grammar events reliably beat the null, WEAK events lose. This rules out "soft closure acceptance" — the apparatus physics (R1-R5) are generous enough that only strong grammar can outcompete them.
+- Within-A2 CCS1 correlates rho=0.963 with close recovery ablation effect and rho=0.944 with containment ablation — near-perfect mechanistic tracking.
+- Two-layer clustering (C1640): response-only clustering at k=2 separates 12 forgiving folios (9 A2 + 3 A3, CCS1=0.169) from 64 productive folios (CCS1=0.051). Structure is real but gradient-like (below confirmation thresholds).
+- A2 is weakly structured internally (C1641): no section-based sub-profiles, but 44% boundary folios. Core A2 folios (n=5, CCS1=0.180) are distinctly forgiving; A2→A1 boundary folios (n=4, CCS1=0.013) behave like A1. T|A2 (n=2) is the best-performing A2 section (EPV=0.90).
+
 ---
 
 ## Navigation
