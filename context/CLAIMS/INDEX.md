@@ -5742,7 +5742,9 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 
 | C# | Claim | Tier | Scope | Key Metrics |
 |---|-----------|------|------|---------|
-| 1636 | Productive disruption efficiency (DYE advantage > 0) expands to the full 76-folio eligible Currier B set spanning 5 sections and 3 apparatus profiles (Tier C: 15/17 demand-strong pass GP2, Tier A: 68/76 pass GP1, 75/76 pass GP3) | 2 | B, virtual apparatus, folio-specific, DYE, DVA, expansion, productive disruption, 76-folio, sections, profiles, C1633, C1634, C1635 | Tier C GP2: 15/17=88% PASS. Tier A GP1: 68/76=89%. DVA: 75/76=99%. |
+| 1636 | Productive disruption efficiency is a broad apparatus property of Currier B: real closure tokens produce greater per-step disruption than demand-matched nulls and convert it into Y more efficiently across the full 76-folio eligible set, with strongest validation in demand-strong folios and systematic attenuation concentrated in the A2/section C stratum | 2 | B, virtual apparatus, folio-specific, DYE, DVA, expansion, productive disruption, 76-folio, sections, profiles, A2 forgivingness, C1633, C1634, C1635 | Tier C GP2: 15/17=88% PASS. Tier A GP1: 68/76=89%. DVA: 75/76=99%. A1 21/21, A3 36/37, A2 11/18. |
+| 1637 | WCP (whole-closure-packet coherence) is demoted from apparatus success criterion to legacy continuity diagnostic; endpoint packet coherence does not discriminate grammar advantage at scale (38% pass at Tier A) because the restoring force that makes the apparatus stable masks token-level differences at endpoints | 2 | B, virtual apparatus, WCP, demotion, legacy, endpoint, restoring force, C1614, C1636 | WCP pass 29/76=38%. DYE/DVA pass 68-75/76. Restoring force dominates endpoints. |
+| 1638 | The primary apparatus-side success family is DYE (dV-to-Y efficiency), DVA (dV advantage), and YGA (Y-gain advantage) — process-quality metrics that measure execution dynamics during closure, not endpoint state | 2 | B, virtual apparatus, DYE, DVA, YGA, success family, process quality, productive disruption, C1632, C1633, C1634, C1636, C1637 | DYE/DVA validated at 76-folio scale. Process > outcome confirmed across phases 570b-572. |
 
 **Phase 572 findings (Productive Disruption Expansion, PROCESS_QUALITY_EXPANDED, Tier C GP2:15/17, Tier A GP1:68/76, GP3:75/76):**
 - Expands 571 productive disruption from 18-folio pilot to full 76-folio eligible Currier B set (82 total minus 6 with zero CLOSE lines). F-parameters renormalized from 20-folio to 82-folio bounds.
@@ -5756,6 +5758,8 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - GD8 (F-parameter renormalization): all Spearman rho > 0.93 across F-axes. Rank-order fully preserved.
 - GP4 demoted to legacy continuity check per expert guidance. WCP fails broadly (38%) as expected — restoring force dominates endpoints.
 - Dilution curve (GD7) confirms smooth degradation from 100% at high-event folios down to 80-89% at full set. Mechanism is real and opportunity-limited.
+- WCP formally demoted (C1637): endpoint packet coherence does not discriminate grammar advantage at scale. The restoring force that makes the apparatus stable also masks token-level differences at endpoints. WCP remains useful as a structural continuity diagnostic but is no longer an apparatus success criterion.
+- Primary apparatus success family frozen (C1638): DYE (dV-to-Y efficiency), DVA (dV advantage), YGA (Y-gain advantage). These process-quality metrics measure execution dynamics during closure, not endpoint state. Validated across phases 570b-572 at full 76-folio scale. The closure grammar advantage is "uses demanded disturbance more productively during closure," not "looks more orderly at the end."
 
 ---
 

@@ -1010,7 +1010,7 @@ GP4 is reported for legacy continuity but is NOT gated per expert guidance.
 
 ## 7. Provisional Constraints
 
-**C1636** (Tier 2, B_apparatus): Productive disruption efficiency (DYE advantage > 0) expands to the full 76-folio eligible Currier B set spanning 5 sections and 3 apparatus profiles (Tier C: 15/17 demand-strong pass GP2, Tier A: 68/76 pass GP1, 75/76 pass GP3)
+**C1636** (Tier 2, B_apparatus): Productive disruption efficiency is a broad apparatus property of Currier B: real closure tokens produce greater per-step disruption than demand-matched nulls and convert it into Y more efficiently across the full 76-folio eligible set, with strongest validation in demand-strong folios and systematic attenuation concentrated in the A2/section C stratum (Tier C GP2: 15/17=88%, Tier A GP1: 68/76=89%, DVA: 75/76=99%, A1 21/21, A3 36/37, A2 11/18)
 
 ## 8. Cross-Phase Comparison
 

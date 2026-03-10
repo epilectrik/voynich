@@ -22,7 +22,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1442 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1636.
+the highest ID present is C1638.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -93,7 +93,7 @@ tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-10 16:30
+**Generated:** 2026-03-10 16:48
 **Version:** FROZEN STATE (1442 validated constraints, 75 fits) [COMPACT]
 
 ---
@@ -1875,7 +1875,9 @@ C1632	Real closure tokens produce greater Y accumulation at demanded events than
 C1633	Real closure tokens convert disruption to Y with higher efficiency than state-matched nulls	2	B, virtual apparatus, folio-specific, DYE, efficiency, disruption, Y-gain, productive, closure, M1, M4f, C1632
 C1634	Real closure tokens produce higher per-step disruption than random tokens at CLOSE positions	2	B, virtual apparatus, folio-specific, DVA, disruption, dV, CLOSE, productive, M1, M4f, C1633
 C1635	Productive disruption efficiency (DYE advantage > 0) generalizes beyond hand-selected pilot folios to the broader 18-folio pilot set spanning 5 sections and 3 apparatus profiles	2	B, virtual apparatus, folio-specific, DYE, DVA, generalization, productive disruption, 18-folio, sections, profiles, C1633, C1634
-C1636	Productive disruption efficiency (DYE advantage > 0) expands to the full 76-folio eligible Currier B set spanning 5 sections and 3 apparatus profiles (Tier C: 15/17 demand-strong pass GP2, Tier A: 68/76 pass GP1, 75/76 pass GP3)	2	B, virtual apparatus, folio-specific, DYE, DVA, expansion, productive disruption, 76-folio, sections, profiles, C1633, C1634, C1635
+C1636	Productive disruption efficiency is a broad apparatus property of Currier B: real closure tokens produce greater per-step disruption than demand-matched nulls and convert it into Y more efficiently across the full 76-folio eligible set, with strongest validation in demand-strong folios and systematic attenuation concentrated in the A2/section C stratum	2	B, virtual apparatus, folio-specific, DYE, DVA, expansion, productive disruption, 76-folio, sections, profiles, A2 forgivingness, C1633, C1634, C1635
+C1637	WCP (whole-closure-packet coherence) is demoted from apparatus success criterion to legacy continuity diagnostic; endpoint packet coherence does not discriminate grammar advantage at scale (38% pass at Tier A) because the restoring force that makes the apparatus stable masks token-level differences at endpoints	2	B, virtual apparatus, WCP, demotion, legacy, endpoint, restoring force, C1614, C1636
+C1638	The primary apparatus-side success family is DYE (dV-to-Y efficiency), DVA (dV advantage), and YGA (Y-gain advantage) — process-quality metrics that measure execution dynamics during closure, not endpoint state	2	B, virtual apparatus, DYE, DVA, YGA, success family, process quality, productive disruption, C1632, C1633, C1634, C1636, C1637
 
 ---
 
