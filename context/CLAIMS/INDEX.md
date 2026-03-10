@@ -5694,6 +5694,69 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - 4-folio pilot: f108v (S/A3), f86v6 (C/A2), f111r (S/A3), f84r (B/A1). Total 496 runs across M0/M1/M2a/M2b + M3 standard nulls + M4/M4f demand-matched nulls.
 - Key lesson: retain folio-specific parameterization (F1-F5) going forward. Next phase should reform the comparison metric to distinguish demand-specific recovery from undirected recovery.
 
+### Phase 570b: Demand-Specific Recovery Metric Refactor (PARTIAL_DEMAND_METRIC)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1632 | Real closure tokens produce greater Y accumulation at demanded events than state-matched nulls | 2 | B, virtual apparatus, folio-specific, YGA, Y-gain, demanded, closure, M1, M4f, C1625, C1629 | BP3 4/4 PASS. YGA: f108v +0.076, f86v6 +0.037, f111r +0.056, f84r +0.075. All positive including 3/3 demand-strong. |
+
+**Phase 570b findings (Demand-Specific Recovery Metric Refactor, PARTIAL_DEMAND_METRIC, BP1:0/4 BP2:1/4 BP3:4/4 BP4:PASS):**
+- Six new demand-specific metrics (TRA, nTRA, DRS, SCP, YGA, DBP) tested on 4-folio pilot with folio-specific apparatus (F1-F5 from 570a).
+- Recovery-outcome metrics (TRA, nTRA, DRS, SCP) all fail: the restoring force dominates endpoint state regardless of token identity, so both M1 and M4f arrive at similar final positions. BP1 FAIL (0/4), BP2 FAIL (1/4).
+- Y-Gain Advantage (YGA) is the sole discriminator (BP3 4/4 PASS, C1632): real closure tokens accumulate more Y during execution than state-matched nulls. Token identity manifests as execution quality, not recovery outcome.
+- Anchor survival confirmed (BP4 PASS): P2 by reference, UEB and WCP stable.
+- Key insight: the discriminating signal is in the process (during execution), not the outcome (endpoint state). Leads to Phase 570c process metrics.
+
+### Phase 570c: Process Quality Metric Validation (PROCESS_QUALITY_VALIDATED)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1633 | Real closure tokens convert disruption to Y with higher efficiency than state-matched nulls | 2 | B, virtual apparatus, folio-specific, DYE, efficiency, disruption, Y-gain, productive, closure, M1, M4f, C1632 | CP1 4/4 PASS. DYE advantage: f108v +0.078, f86v6 +0.002, f111r +0.061, f84r +0.128. CP2 (EPV >= 0.80): 3/4 PASS (f86v6 fails at 12/20). |
+| 1634 | Real closure tokens produce higher per-step disruption than random tokens at CLOSE positions | 2 | B, virtual apparatus, folio-specific, DVA, disruption, dV, CLOSE, productive, M1, M4f, C1633 | CP3 4/4 PASS. DVA: f108v +0.023, f86v6 +0.015, f111r +0.034, f84r +0.029. All positive. |
+
+**Phase 570c findings (Process Quality Metric Validation, PROCESS_QUALITY_VALIDATED, CP1:4/4 CP2:3/4 CP3:4/4 CP4:inherited):**
+- First fully validated phase in the apparatus series (phases 563-570c). Pure re-analysis of 570b trace data with three new process metrics: DVA, DYE, DYC.
+- Central discovery: real closure tokens create MORE per-step disruption (higher dV) than null tokens, overturning the naive 'smoother execution' hypothesis. The mechanism is productive disruption: grammar-aligned perturbation activates recovery channels productively (C1634).
+- DYE (dV-to-Y Efficiency = Y_gain / dV_sum) is the central metric: real tokens get high return-on-disruption because their perturbation flows through designed recovery channels; null tokens' disruption is unstructured (C1633).
+- Three-part productive disruption characterization: C1634 (real tokens disrupt more) + C1633 (real tokens convert disruption more efficiently) + C1632 (real tokens accumulate more Y).
+- f86v6 is structurally forgiving: its recovery architecture converts even random disruption to Y reasonably well, reducing the M1/M4f DYE contrast (EPV 12/20).
+- Process metrics capture what outcome metrics miss: the restoring force that makes the apparatus stable also masks token-level differences at endpoints.
+
+### Phase 571: Process Quality Generalization (PROCESS_QUALITY_GENERALIZED)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1635 | Productive disruption efficiency (DYE advantage > 0) generalizes beyond hand-selected pilot folios to the broader 18-folio pilot set spanning 5 sections and 3 apparatus profiles | 2 | B, virtual apparatus, folio-specific, DYE, DVA, generalization, productive disruption, 18-folio, sections, profiles, C1633, C1634 | Tier C GP2: 3/4=75% PASS. Tier A GP1: 16/18=89%. DVA universal: 18/18. DYE failures: f39v (A2), f86v5 (A2). |
+
+**Phase 571 findings (Process Quality Generalization, PROCESS_QUALITY_GENERALIZED, Tier C GP2:3/4, Tier A GP1:16/18, GP3:18/18):**
+- Expands 570c productive disruption from 4 hand-selected folios to the full 18-folio pilot set (20 minus f40v, f81v with zero CLOSE lines). Covers sections B(3), C(2), H(6), S(5), T(2) and profiles A1(5), A2(6), A3(7).
+- Three-tiered evaluation: Tier A (all 18), Tier B (demand-eligible, 5), Tier C (demand-strong, 4). Primary gate on Tier C.
+- DVA is universal: 18/18 folios show real closure tokens disrupt more than nulls. No exceptions across any section or profile (C1635).
+- DYE advantage positive in 16/18 folios. Central GP2 test passes on Tier C (3/4=75%), Tier B (4/5=80%), and Tier A (14/18=78%).
+- DYE failures concentrate in A2_SEALED_RECIRCULATION profile (f39v, f86v5): A2 apparatus converts even random disruption to Y relatively well, diluting the M1/M4f efficiency contrast.
+- Dilution curve (GD7) confirms mechanism is real but opportunity-limited: pass rates start at 100% for high-event folios, degrade smoothly as sparse-close folios enter. Not a cherry-pick artifact.
+- GP4 UNSTABLE: WCP fails 12/18 — restoring force dominates endpoints, reinforcing 570c's lesson that process metrics succeed where outcome metrics fail.
+- 4-folio consistency check: 570c values reproduced exactly (zero delta, deterministic traces).
+
+### Phase 572: Productive Disruption Expansion (PROCESS_QUALITY_EXPANDED)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1636 | Productive disruption efficiency (DYE advantage > 0) expands to the full 76-folio eligible Currier B set spanning 5 sections and 3 apparatus profiles (Tier C: 15/17 demand-strong pass GP2, Tier A: 68/76 pass GP1, 75/76 pass GP3) | 2 | B, virtual apparatus, folio-specific, DYE, DVA, expansion, productive disruption, 76-folio, sections, profiles, C1633, C1634, C1635 | Tier C GP2: 15/17=88% PASS. Tier A GP1: 68/76=89%. DVA: 75/76=99%. |
+
+**Phase 572 findings (Productive Disruption Expansion, PROCESS_QUALITY_EXPANDED, Tier C GP2:15/17, Tier A GP1:68/76, GP3:75/76):**
+- Expands 571 productive disruption from 18-folio pilot to full 76-folio eligible Currier B set (82 total minus 6 with zero CLOSE lines). F-parameters renormalized from 20-folio to 82-folio bounds.
+- Three-tiered evaluation formalized: Tier C (demand-strong, 17 folios — primary mechanistic truth layer), Tier B (demand-eligible+strong, 25), Tier A (all 76 eligible). Tier C is the primary gate.
+- DVA near-universal: 75/76 folios show real closure tokens disrupt more than nulls. Only exception: f86v4 (sparse, 1 CLOSE line).
+- DYE advantage positive in 68/76 folios (89%). Central GP2 (EPV>=0.80): Tier C 15/17=88% PASS, Tier B 23/25=92%, Tier A 61/76=80%.
+- Per-profile: A1_BATH_REFLUX perfect (21/21 DYE, 21/21 EPV). A3_DISTILL_COLLECT near-perfect (36/37, 34/37). A2_SEALED_RECIRCULATION weakest (11/18, 6/18).
+- A2 forgivingness audit (Track B): Forgivingness Index FI=0.1184 (9x A1=0.0131). A2 nulls convert random disruption to Y too easily, washing out grammar advantage. Weakness is profile-intrinsic (persists after controlling for event count and demand class). Mechanism operates at conversion stage, not disruption stage.
+- Section C weakness (DYE 60%, EPV 20%) maps entirely to A2 profile assignment — all 5 section C folios are A2.
+- GD6 (18-folio consistency): mean |delta DYE_M1| = 0.0011. Phase 571 results survive intact under 82-folio renormalization.
+- GD8 (F-parameter renormalization): all Spearman rho > 0.93 across F-axes. Rank-order fully preserved.
+- GP4 demoted to legacy continuity check per expert guidance. WCP fails broadly (38%) as expected — restoring force dominates endpoints.
+- Dilution curve (GD7) confirms smooth degradation from 100% at high-event folios down to 80-89% at full set. Mechanism is real and opportunity-limited.
+
 ---
 
 ## Navigation

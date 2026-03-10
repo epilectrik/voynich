@@ -1,0 +1,261 @@
+{
+  "metadata": {
+    "phase": "570b",
+    "script": "t4_metric_computation.py",
+    "timestamp": "2026-03-10T13:56:03.183431",
+    "folios": [
+      "f108v",
+      "f86v6",
+      "f111r",
+      "f84r"
+    ],
+    "n_folios": 4,
+    "metrics_computed": [
+      "TRA",
+      "nTRA",
+      "DRS",
+      "SCP",
+      "YGA",
+      "DBP"
+    ],
+    "inputs": {
+      "t2": "t2_full_model_runs.json",
+      "t3": "t3_null_runs.json"
+    }
+  },
+  "per_folio": {
+    "f108v": {
+      "event_selection": "work_preceded",
+      "demand_fallback": false,
+      "n_m1_demanded_events": 7,
+      "TRA": {
+        "TRA": -0.01151193,
+        "M1_mean_recovery": 0.05751303,
+        "M4f_mean_recovery": 0.06902496,
+        "n_m1_events": 7,
+        "n_perms": 20
+      },
+      "nTRA": {
+        "nTRA": -0.10856407,
+        "M1_mean_nrecovery": 0.53103393,
+        "M4f_mean_nrecovery": 0.63959801
+      },
+      "DRS": {
+        "DRS_mag_M1": 0.8056648,
+        "DRS_rank_M1": 0.72244898,
+        "DRS_combined_M1": 0.77237847,
+        "DRS_mag_M4f": 0.91353622,
+        "DRS_rank_M4f": 0.86671429,
+        "DRS_combined_M4f": 0.89480745,
+        "DRS_advantage": -0.12242898,
+        "DRS_mag_advantage": -0.10787142,
+        "DRS_rank_advantage": -0.14426531
+      },
+      "SCP": {
+        "SCP_strict": 0.0,
+        "SCP_loose": 1.0,
+        "SCP_delta": 0.0,
+        "M1_mean_zone": 4.0,
+        "M4f_mean_zone": 4.0
+      },
+      "YGA": {
+        "YGA": 0.07607454,
+        "M1_mean_ygain": 0.09280622,
+        "M4f_mean_ygain": 0.01673168
+      },
+      "DBP": {
+        "DBP": -0.00354499,
+        "M1_recovery": 0.05751303,
+        "M2b_recovery": 0.03726298,
+        "M0_recovery": 0.05771139,
+        "M2a_recovery": 0.03391635,
+        "M1_B10_delta": 0.02025005,
+        "M0_B10_delta": 0.02379504,
+        "mask_size": 7
+      },
+      "old_metrics": {
+        "M1_demanded_ERM": 0.350597,
+        "M1_E_any_ERM": 0.226878,
+        "M4f_mean_E_any_ERM": 0.33038785,
+        "AP2_delta": 0.02020915
+      },
+      "demand_strong": true
+    },
+    "f86v6": {
+      "event_selection": "work_preceded",
+      "demand_fallback": false,
+      "n_m1_demanded_events": 7,
+      "TRA": {
+        "TRA": -0.00298095,
+        "M1_mean_recovery": 0.07730138,
+        "M4f_mean_recovery": 0.08028234,
+        "n_m1_events": 7,
+        "n_perms": 20
+      },
+      "nTRA": {
+        "nTRA": -0.01511088,
+        "M1_mean_nrecovery": 0.65878576,
+        "M4f_mean_nrecovery": 0.67389664
+      },
+      "DRS": {
+        "DRS_mag_M1": 0.92510773,
+        "DRS_rank_M1": 0.66530612,
+        "DRS_combined_M1": 0.82118709,
+        "DRS_mag_M4f": 0.90673899,
+        "DRS_rank_M4f": 0.885,
+        "DRS_combined_M4f": 0.8980434,
+        "DRS_advantage": -0.07685631,
+        "DRS_mag_advantage": 0.01836874,
+        "DRS_rank_advantage": -0.21969388
+      },
+      "SCP": {
+        "SCP_strict": 0.0,
+        "SCP_loose": 0.0,
+        "SCP_delta": -0.02380952,
+        "M1_mean_zone": 3.97619048,
+        "M4f_mean_zone": 4.0
+      },
+      "YGA": {
+        "YGA": 0.0374084,
+        "M1_mean_ygain": 0.0913425,
+        "M4f_mean_ygain": 0.0539341
+      },
+      "DBP": {
+        "DBP": -0.00126783,
+        "M1_recovery": 0.07730138,
+        "M2b_recovery": 0.03013573,
+        "M0_recovery": 0.07641055,
+        "M2a_recovery": 0.02797708,
+        "M1_B10_delta": 0.04716565,
+        "M0_B10_delta": 0.04843348,
+        "mask_size": 7
+      },
+      "old_metrics": {
+        "M1_demanded_ERM": 0.546943,
+        "M1_E_any_ERM": 0.443482,
+        "M4f_mean_E_any_ERM": 0.43456375,
+        "AP2_delta": 0.11237925
+      },
+      "demand_strong": true
+    },
+    "f111r": {
+      "event_selection": "work_preceded",
+      "demand_fallback": false,
+      "n_m1_demanded_events": 3,
+      "TRA": {
+        "TRA": 0.00253453,
+        "M1_mean_recovery": 0.05277781,
+        "M4f_mean_recovery": 0.05024328,
+        "n_m1_events": 3,
+        "n_perms": 20
+      },
+      "nTRA": {
+        "nTRA": -0.02092871,
+        "M1_mean_nrecovery": 0.54125227,
+        "M4f_mean_nrecovery": 0.56218098
+      },
+      "DRS": {
+        "DRS_mag_M1": 0.7998207,
+        "DRS_rank_M1": 0.65714286,
+        "DRS_combined_M1": 0.74274956,
+        "DRS_mag_M4f": 0.82863049,
+        "DRS_rank_M4f": 0.74142857,
+        "DRS_combined_M4f": 0.79374972,
+        "DRS_advantage": -0.05100016,
+        "DRS_mag_advantage": -0.02880979,
+        "DRS_rank_advantage": -0.08428571
+      },
+      "SCP": {
+        "SCP_strict": 0.0,
+        "SCP_loose": 1.0,
+        "SCP_delta": 0.0,
+        "M1_mean_zone": 4.0,
+        "M4f_mean_zone": 4.0
+      },
+      "YGA": {
+        "YGA": 0.05582591,
+        "M1_mean_ygain": 0.09020842,
+        "M4f_mean_ygain": 0.03438251
+      },
+      "DBP": {
+        "DBP": -0.00131498,
+        "M1_recovery": 0.05277781,
+        "M2b_recovery": 0.02966908,
+        "M0_recovery": 0.05370728,
+        "M2a_recovery": 0.02928357,
+        "M1_B10_delta": 0.02310873,
+        "M0_B10_delta": 0.02442371,
+        "mask_size": 3
+      },
+      "old_metrics": {
+        "M1_demanded_ERM": 0.353302,
+        "M1_E_any_ERM": 0.229484,
+        "M4f_mean_E_any_ERM": 0.3312602,
+        "AP2_delta": 0.0220418
+      },
+      "demand_strong": true
+    },
+    "f84r": {
+      "event_selection": "E_any",
+      "demand_fallback": true,
+      "n_m1_demanded_events": 11,
+      "TRA": {
+        "TRA": -0.01108126,
+        "M1_mean_recovery": 0.0097465,
+        "M4f_mean_recovery": 0.02082776,
+        "n_m1_events": 11,
+        "n_perms": 20
+      },
+      "nTRA": {
+        "nTRA": -0.08562734,
+        "M1_mean_nrecovery": 0.14261353,
+        "M4f_mean_nrecovery": 0.22824086
+      },
+      "DRS": {
+        "DRS_mag_M1": 0.3727565,
+        "DRS_rank_M1": 0.53766234,
+        "DRS_combined_M1": 0.43871884,
+        "DRS_mag_M4f": 0.23881008,
+        "DRS_rank_M4f": 0.52433333,
+        "DRS_combined_M4f": 0.35301938,
+        "DRS_advantage": 0.08569945,
+        "DRS_mag_advantage": 0.13394642,
+        "DRS_rank_advantage": 0.013329
+      },
+      "SCP": {
+        "SCP_strict": 0.0,
+        "SCP_loose": 0.0,
+        "SCP_delta": -0.01515152,
+        "M1_mean_zone": 3.98484848,
+        "M4f_mean_zone": 4.0
+      },
+      "YGA": {
+        "YGA": 0.07498941,
+        "M1_mean_ygain": 0.07194962,
+        "M4f_mean_ygain": -0.00303979
+      },
+      "DBP": {
+        "DBP": 0.0009986,
+        "M1_recovery": 0.0097465,
+        "M2b_recovery": 0.00064668,
+        "M0_recovery": 0.01070275,
+        "M2a_recovery": 0.00260154,
+        "M1_B10_delta": 0.00909982,
+        "M0_B10_delta": 0.00810122,
+        "mask_size": 11
+      },
+      "old_metrics": {
+        "M1_demanded_ERM": 0.397466,
+        "M1_E_any_ERM": 0.131164,
+        "M4f_mean_E_any_ERM": 0.19928965,
+        "AP2_delta": 0.19817635
+      },
+      "demand_strong": false
+    }
+  },
+  "demand_strong_folios": [
+    "f108v",
+    "f86v6",
+    "f111r"
+  ]
+}

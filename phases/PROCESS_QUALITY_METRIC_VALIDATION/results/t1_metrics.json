@@ -1,0 +1,533 @@
+{
+  "metadata": {
+    "phase": "570c",
+    "script": "t1_process_quality_metrics.py",
+    "timestamp": "2026-03-10T19:26:50.486930+00:00",
+    "folios": [
+      "f108v",
+      "f86v6",
+      "f111r",
+      "f84r"
+    ],
+    "n_folios": 4,
+    "metrics_computed": [
+      "DVA",
+      "DYE",
+      "DYE_EPV",
+      "DYC"
+    ],
+    "inputs": {
+      "t2": "t2_full_model_runs.json",
+      "t3": "t3_null_runs.json",
+      "t4": "t4_metrics.json"
+    }
+  },
+  "verdict": "PROCESS_QUALITY_VALIDATED",
+  "test_battery": {
+    "CP1": {
+      "description": "DYE_advantage > 0",
+      "gate": ">= 3/4 folios",
+      "pass_count": 4,
+      "total": 4,
+      "passed": true,
+      "per_folio": {
+        "f108v": {
+          "value": 0.07832266915987263,
+          "passed": true
+        },
+        "f86v6": {
+          "value": 0.0018146083745152614,
+          "passed": true
+        },
+        "f111r": {
+          "value": 0.06050778510713822,
+          "passed": true
+        },
+        "f84r": {
+          "value": 0.12751409130411287,
+          "passed": true
+        }
+      }
+    },
+    "CP2": {
+      "description": "DYE EPV >= 0.80 (16+/20 perms)",
+      "gate": ">= 3/4 folios",
+      "central": true,
+      "pass_count": 3,
+      "total": 4,
+      "passed": true,
+      "per_folio": {
+        "f108v": {
+          "value": 1.0,
+          "epv_count": 20,
+          "n_perms": 20,
+          "passed": true
+        },
+        "f86v6": {
+          "value": 0.6,
+          "epv_count": 12,
+          "n_perms": 20,
+          "passed": false
+        },
+        "f111r": {
+          "value": 1.0,
+          "epv_count": 20,
+          "n_perms": 20,
+          "passed": true
+        },
+        "f84r": {
+          "value": 1.0,
+          "epv_count": 20,
+          "n_perms": 20,
+          "passed": true
+        }
+      }
+    },
+    "CP3": {
+      "description": "DVA > 0 (supporting)",
+      "gate": ">= 3/4 folios",
+      "pass_count": 4,
+      "total": 4,
+      "passed": true,
+      "per_folio": {
+        "f108v": {
+          "value": 0.023277364096023004,
+          "passed": true
+        },
+        "f86v6": {
+          "value": 0.014713960050775347,
+          "passed": true
+        },
+        "f111r": {
+          "value": 0.03389482000174129,
+          "passed": true
+        },
+        "f84r": {
+          "value": 0.02878069137671549,
+          "passed": true
+        }
+      }
+    },
+    "CP4": {
+      "description": "Anchor survival (inherited from 570b BP4)",
+      "passed": true
+    }
+  },
+  "per_folio": {
+    "f108v": {
+      "event_selection": "work_preceded",
+      "demand_strong": true,
+      "n_m1_events": 7,
+      "DVA": 0.023277364096023004,
+      "mean_dV_M1": 0.07301324508348794,
+      "mean_dV_M4f": 0.04973588098746494,
+      "DYE_M1": 0.11132895371046883,
+      "DYE_M4f": 0.033006284550596204,
+      "DYE_advantage": 0.07832266915987263,
+      "EPV": 1.0,
+      "EPV_count": 20,
+      "demand_magnitude": 0.10505601404761906,
+      "z_DYE": 0.7455324654176492,
+      "z_YGA": 0.7241331273573491,
+      "DYC": 0.7348327963874992,
+      "YGA": 0.07607454
+    },
+    "f86v6": {
+      "event_selection": "work_preceded",
+      "demand_strong": true,
+      "n_m1_events": 7,
+      "DVA": 0.014713960050775347,
+      "mean_dV_M1": 0.06896053394026609,
+      "mean_dV_M4f": 0.054246573889490744,
+      "DYE_M1": 0.12020243918122749,
+      "DYE_M4f": 0.11838783080671222,
+      "DYE_advantage": 0.0018146083745152614,
+      "EPV": 0.6,
+      "EPV_count": 12,
+      "demand_magnitude": 0.11579073595238096,
+      "z_DYE": 0.01567144693908432,
+      "z_YGA": 0.32306902354765443,
+      "DYC": 0.1693702352433694,
+      "YGA": 0.0374084
+    },
+    "f111r": {
+      "event_selection": "work_preceded",
+      "demand_strong": true,
+      "n_m1_events": 3,
+      "DVA": 0.03389482000174129,
+      "mean_dV_M1": 0.07915731522366522,
+      "mean_dV_M4f": 0.04526249522192393,
+      "DYE_M1": 0.1262189712117899,
+      "DYE_M4f": 0.06571118610465168,
+      "DYE_advantage": 0.06050778510713822,
+      "EPV": 1.0,
+      "EPV_count": 20,
+      "demand_magnitude": 0.09733046333333334,
+      "z_DYE": 0.6216736573000138,
+      "z_YGA": 0.5735707823439588,
+      "DYC": 0.5976222198219863,
+      "YGA": 0.05582591
+    },
+    "f84r": {
+      "event_selection": "E_any",
+      "demand_strong": false,
+      "n_m1_events": 11,
+      "DVA": 0.02878069137671549,
+      "mean_dV_M1": 0.06962770533744032,
+      "mean_dV_M4f": 0.040847013960724834,
+      "DYE_M1": 0.12027717167708238,
+      "DYE_M4f": -0.007236919627030487,
+      "DYE_advantage": 0.12751409130411287,
+      "EPV": 1.0,
+      "EPV_count": 20,
+      "demand_magnitude": 0.05821372363636364,
+      "z_DYE": 2.190447257774458,
+      "z_YGA": 1.2881740819128311,
+      "DYC": 1.7393106698436447,
+      "YGA": 0.07498941
+    }
+  },
+  "diagnostics": {
+    "CD1_metric_table": {
+      "f108v": {
+        "DVA": 0.023277364096023004,
+        "mean_dV_M1": 0.07301324508348794,
+        "mean_dV_M4f": 0.04973588098746494,
+        "DYE_M1": 0.11132895371046883,
+        "DYE_M4f": 0.033006284550596204,
+        "DYE_advantage": 0.07832266915987263,
+        "EPV": 1.0,
+        "EPV_count": 20,
+        "DYC": 0.7348327963874992,
+        "YGA": 0.07607454,
+        "demand_strong": true,
+        "demand_magnitude": 0.10505601404761906
+      },
+      "f86v6": {
+        "DVA": 0.014713960050775347,
+        "mean_dV_M1": 0.06896053394026609,
+        "mean_dV_M4f": 0.054246573889490744,
+        "DYE_M1": 0.12020243918122749,
+        "DYE_M4f": 0.11838783080671222,
+        "DYE_advantage": 0.0018146083745152614,
+        "EPV": 0.6,
+        "EPV_count": 12,
+        "DYC": 0.1693702352433694,
+        "YGA": 0.0374084,
+        "demand_strong": true,
+        "demand_magnitude": 0.11579073595238096
+      },
+      "f111r": {
+        "DVA": 0.03389482000174129,
+        "mean_dV_M1": 0.07915731522366522,
+        "mean_dV_M4f": 0.04526249522192393,
+        "DYE_M1": 0.1262189712117899,
+        "DYE_M4f": 0.06571118610465168,
+        "DYE_advantage": 0.06050778510713822,
+        "EPV": 1.0,
+        "EPV_count": 20,
+        "DYC": 0.5976222198219863,
+        "YGA": 0.05582591,
+        "demand_strong": true,
+        "demand_magnitude": 0.09733046333333334
+      },
+      "f84r": {
+        "DVA": 0.02878069137671549,
+        "mean_dV_M1": 0.06962770533744032,
+        "mean_dV_M4f": 0.040847013960724834,
+        "DYE_M1": 0.12027717167708238,
+        "DYE_M4f": -0.007236919627030487,
+        "DYE_advantage": 0.12751409130411287,
+        "EPV": 1.0,
+        "EPV_count": 20,
+        "DYC": 1.7393106698436447,
+        "YGA": 0.07498941,
+        "demand_strong": false,
+        "demand_magnitude": 0.05821372363636364
+      }
+    },
+    "CD2_per_event_decomposition": {
+      "f108v": [
+        {
+          "line_key": "f108v|16",
+          "dv_magnitude_sum": 0.988364,
+          "n_close_tokens": 11,
+          "y_gain_event": 0.10709741,
+          "DYE": 0.10835826679239632,
+          "demand_magnitude": 0.07539102166666667
+        },
+        {
+          "line_key": "f108v|22",
+          "dv_magnitude_sum": 0.7765899,
+          "n_close_tokens": 12,
+          "y_gain_event": 0.1651234,
+          "DYE": 0.2126262522857946,
+          "demand_magnitude": 0.08955890166666669
+        },
+        {
+          "line_key": "f108v|28",
+          "dv_magnitude_sum": 0.4979366,
+          "n_close_tokens": 7,
+          "y_gain_event": 0.05147821,
+          "DYE": 0.10338306121703045,
+          "demand_magnitude": 0.10218708166666664
+        },
+        {
+          "line_key": "f108v|33",
+          "dv_magnitude_sum": 0.9643167,
+          "n_close_tokens": 12,
+          "y_gain_event": 0.08863644,
+          "DYE": 0.09191631753344102,
+          "demand_magnitude": 0.09983986166666668
+        },
+        {
+          "line_key": "f108v|38",
+          "dv_magnitude_sum": 0.9966305,
+          "n_close_tokens": 14,
+          "y_gain_event": 0.16917114,
+          "DYE": 0.16974308933952956,
+          "demand_magnitude": 0.12824286833333334
+        },
+        {
+          "line_key": "f108v|44",
+          "dv_magnitude_sum": 0.7878788,
+          "n_close_tokens": 11,
+          "y_gain_event": 0.0327296,
+          "DYE": 0.041541414745516696,
+          "demand_magnitude": 0.1325328716666667
+        },
+        {
+          "line_key": "f108v|47",
+          "dv_magnitude_sum": 0.6844074,
+          "n_close_tokens": 11,
+          "y_gain_event": 0.03540732,
+          "DYE": 0.05173427405957329,
+          "demand_magnitude": 0.10763949166666668
+        }
+      ],
+      "f86v6": [
+        {
+          "line_key": "f86v6|6",
+          "dv_magnitude_sum": 0.79722,
+          "n_close_tokens": 11,
+          "y_gain_event": 0.07595517,
+          "DYE": 0.09527504327538196,
+          "demand_magnitude": 0.12588666499999998
+        },
+        {
+          "line_key": "f86v6|13",
+          "dv_magnitude_sum": 0.6890501,
+          "n_close_tokens": 9,
+          "y_gain_event": 0.0701316,
+          "DYE": 0.1017801172948092,
+          "demand_magnitude": 0.13411335166666669
+        },
+        {
+          "line_key": "f86v6|17",
+          "dv_magnitude_sum": 0.8793147,
+          "n_close_tokens": 13,
+          "y_gain_event": 0.16721706,
+          "DYE": 0.190167479288132,
+          "demand_magnitude": 0.12430634166666667
+        },
+        {
+          "line_key": "f86v6|19",
+          "dv_magnitude_sum": 0.5258019,
+          "n_close_tokens": 7,
+          "y_gain_event": 0.03583108,
+          "DYE": 0.0681455886713228,
+          "demand_magnitude": 0.08846274666666669
+        },
+        {
+          "line_key": "f86v6|21",
+          "dv_magnitude_sum": 0.8401173,
+          "n_close_tokens": 12,
+          "y_gain_event": 0.13440188,
+          "DYE": 0.15997989804518964,
+          "demand_magnitude": 0.09200654166666668
+        },
+        {
+          "line_key": "f86v6|35",
+          "dv_magnitude_sum": 0.72567,
+          "n_close_tokens": 12,
+          "y_gain_event": 0.06613398,
+          "DYE": 0.0911350613915416,
+          "demand_magnitude": 0.11684836833333334
+        },
+        {
+          "line_key": "f86v6|39",
+          "dv_magnitude_sum": 0.6649681,
+          "n_close_tokens": 11,
+          "y_gain_event": 0.08972673,
+          "DYE": 0.13493388630221512,
+          "demand_magnitude": 0.12891113666666665
+        }
+      ],
+      "f111r": [
+        {
+          "line_key": "f111r|5",
+          "dv_magnitude_sum": 0.5586726,
+          "n_close_tokens": 7,
+          "y_gain_event": 0.1151425,
+          "DYE": 0.2061001380772925,
+          "demand_magnitude": 0.09437362333333334
+        },
+        {
+          "line_key": "f111r|22",
+          "dv_magnitude_sum": 0.8841874,
+          "n_close_tokens": 12,
+          "y_gain_event": 0.08756799,
+          "DYE": 0.09903781709624,
+          "demand_magnitude": 0.09625298666666669
+        },
+        {
+          "line_key": "f111r|26",
+          "dv_magnitude_sum": 0.9237722,
+          "n_close_tokens": 11,
+          "y_gain_event": 0.06791477,
+          "DYE": 0.07351895846183723,
+          "demand_magnitude": 0.10136477999999999
+        }
+      ],
+      "f84r": [
+        {
+          "line_key": "f84r|2",
+          "dv_magnitude_sum": 1.1610988,
+          "n_close_tokens": 16,
+          "y_gain_event": 0.13148456,
+          "DYE": 0.113241491593997,
+          "demand_magnitude": 0.04976759499999999
+        },
+        {
+          "line_key": "f84r|12",
+          "dv_magnitude_sum": 0.9572462,
+          "n_close_tokens": 13,
+          "y_gain_event": 0.08691885,
+          "DYE": 0.09080093501546416,
+          "demand_magnitude": 0.08925530999999999
+        },
+        {
+          "line_key": "f84r|14",
+          "dv_magnitude_sum": 0.4125462,
+          "n_close_tokens": 8,
+          "y_gain_event": 0.10814296,
+          "DYE": 0.2621353923512082,
+          "demand_magnitude": 0.06374219833333333
+        },
+        {
+          "line_key": "f84r|15",
+          "dv_magnitude_sum": 0.6261769,
+          "n_close_tokens": 10,
+          "y_gain_event": 0.0498167,
+          "DYE": 0.07955691115402053,
+          "demand_magnitude": 0.04616136500000001
+        },
+        {
+          "line_key": "f84r|16",
+          "dv_magnitude_sum": 0.7449227,
+          "n_close_tokens": 12,
+          "y_gain_event": 0.0777167,
+          "DYE": 0.10432854308238962,
+          "demand_magnitude": 0.04723375000000001
+        },
+        {
+          "line_key": "f84r|23",
+          "dv_magnitude_sum": 0.5502166,
+          "n_close_tokens": 9,
+          "y_gain_event": 0.08489714,
+          "DYE": 0.15429767113533108,
+          "demand_magnitude": 0.06934968666666669
+        },
+        {
+          "line_key": "f84r|24",
+          "dv_magnitude_sum": 1.1387221,
+          "n_close_tokens": 14,
+          "y_gain_event": 0.05074192,
+          "DYE": 0.04456040679284261,
+          "demand_magnitude": 0.04890120166666667
+        },
+        {
+          "line_key": "f84r|26",
+          "dv_magnitude_sum": 0.5385684,
+          "n_close_tokens": 8,
+          "y_gain_event": 0.05520192,
+          "DYE": 0.10249751006557385,
+          "demand_magnitude": 0.061338614999999985
+        },
+        {
+          "line_key": "f84r|27",
+          "dv_magnitude_sum": 0.621847,
+          "n_close_tokens": 6,
+          "y_gain_event": 0.02353165,
+          "DYE": 0.037841543016208165,
+          "demand_magnitude": 0.047854219999999975
+        },
+        {
+          "line_key": "f84r|30",
+          "dv_magnitude_sum": 0.3018861,
+          "n_close_tokens": 6,
+          "y_gain_event": 0.0626952,
+          "DYE": 0.20767832636216113,
+          "demand_magnitude": 0.056775830000000006
+        },
+        {
+          "line_key": "f84r|34",
+          "dv_magnitude_sum": 0.4781392,
+          "n_close_tokens": 6,
+          "y_gain_event": 0.06029821,
+          "DYE": 0.1261101578787098,
+          "demand_magnitude": 0.05997118833333335
+        }
+      ]
+    },
+    "CD3_n_close_comparison": {
+      "f108v": {
+        "m1_mean_n_close": 11.142857142857142,
+        "m4f_mean_n_close": 11.369047619047619,
+        "ratio": 0.9801047120418848
+      },
+      "f86v6": {
+        "m1_mean_n_close": 10.714285714285714,
+        "m4f_mean_n_close": 9.507042253521126,
+        "ratio": 1.126984126984127
+      },
+      "f111r": {
+        "m1_mean_n_close": 10.0,
+        "m4f_mean_n_close": 11.335877862595419,
+        "ratio": 0.8821548821548822
+      },
+      "f84r": {
+        "m1_mean_n_close": 9.818181818181818,
+        "m4f_mean_n_close": 9.515723270440251,
+        "ratio": 1.031785134891546
+      }
+    },
+    "CD4_dye_vs_demand_correlation": {
+      "f108v": -0.2788837638315035,
+      "f86v6": 0.13649856442369382,
+      "f111r": -0.824165619134921,
+      "f84r": 0.27401510418938363
+    },
+    "CD5_cross_metric_coherence": {
+      "DVA_vs_DYE_advantage_spearman": 0.3999999999999999,
+      "DVA_vs_YGA_spearman": 0.19999999999999996,
+      "DYE_advantage_vs_YGA_spearman": 0.7999999999999998
+    }
+  },
+  "provisional_constraints": [
+    {
+      "id": "C1633",
+      "text": "Real closure tokens convert disruption to Y with higher efficiency than state-matched nulls (DYE advantage > 0, 4/4 folios including all demand-strong)",
+      "tier": 2,
+      "scope": "B_apparatus",
+      "phase": "570c"
+    },
+    {
+      "id": "C1634",
+      "text": "Real closure tokens produce higher per-step disruption than random tokens at CLOSE positions (DVA > 0, 4/4 folios)",
+      "tier": 2,
+      "scope": "B_apparatus",
+      "phase": "570c"
+    }
+  ]
+}

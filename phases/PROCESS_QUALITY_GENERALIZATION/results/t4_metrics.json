@@ -1,0 +1,1822 @@
+{
+  "metadata": {
+    "phase": "571",
+    "script": "t4_process_quality_validation.py",
+    "timestamp": "2026-03-10T20:17:48.901311+00:00",
+    "folios": [
+      "f104r",
+      "f105r",
+      "f108v",
+      "f111r",
+      "f116r",
+      "f31r",
+      "f34r",
+      "f39v",
+      "f43v",
+      "f55r",
+      "f66r",
+      "f78r",
+      "f79r",
+      "f84r",
+      "f85r1",
+      "f86v5",
+      "f86v6",
+      "f95r1"
+    ],
+    "n_folios": 18,
+    "metrics_computed": [
+      "DVA",
+      "DYE",
+      "DYE_EPV",
+      "DYC",
+      "YGA"
+    ],
+    "inputs": {
+      "t1": "t1_setup.json",
+      "t2": "t2_full_model_runs.json",
+      "t3": "t3_null_runs.json"
+    }
+  },
+  "verdict": "PROCESS_QUALITY_GENERALIZED",
+  "test_battery": {
+    "tier_A": {
+      "folios": [
+        "f104r",
+        "f105r",
+        "f108v",
+        "f111r",
+        "f116r",
+        "f31r",
+        "f34r",
+        "f39v",
+        "f43v",
+        "f55r",
+        "f66r",
+        "f78r",
+        "f79r",
+        "f84r",
+        "f85r1",
+        "f86v5",
+        "f86v6",
+        "f95r1"
+      ],
+      "n_folios": 18,
+      "GP1": {
+        "description": "DYE_advantage > 0",
+        "gate": 0.75,
+        "pass_count": 16,
+        "total": 18,
+        "rate": 0.8888888888888888,
+        "passed": true,
+        "per_folio": {
+          "f104r": {
+            "value": 0.09760252173443264,
+            "passed": true
+          },
+          "f105r": {
+            "value": 0.10582819535403157,
+            "passed": true
+          },
+          "f108v": {
+            "value": 0.07832266915987263,
+            "passed": true
+          },
+          "f111r": {
+            "value": 0.06050778510713822,
+            "passed": true
+          },
+          "f116r": {
+            "value": 0.09165729193688231,
+            "passed": true
+          },
+          "f31r": {
+            "value": 0.14556689523363306,
+            "passed": true
+          },
+          "f34r": {
+            "value": 0.10563098611326388,
+            "passed": true
+          },
+          "f39v": {
+            "value": -0.07635865431903384,
+            "passed": false
+          },
+          "f43v": {
+            "value": 0.07381039281924037,
+            "passed": true
+          },
+          "f55r": {
+            "value": 0.03848470658993988,
+            "passed": true
+          },
+          "f66r": {
+            "value": 0.11066615792279974,
+            "passed": true
+          },
+          "f78r": {
+            "value": 0.10539721503284573,
+            "passed": true
+          },
+          "f79r": {
+            "value": 0.10299209083665917,
+            "passed": true
+          },
+          "f84r": {
+            "value": 0.12751409130411287,
+            "passed": true
+          },
+          "f85r1": {
+            "value": 0.06776410090557722,
+            "passed": true
+          },
+          "f86v5": {
+            "value": -0.1136527628187202,
+            "passed": false
+          },
+          "f86v6": {
+            "value": 0.0018146083745152614,
+            "passed": true
+          },
+          "f95r1": {
+            "value": 0.08886552639390483,
+            "passed": true
+          }
+        }
+      },
+      "GP2": {
+        "description": "DYE EPV >= 0.80",
+        "central": true,
+        "gate": 0.5,
+        "pass_count": 14,
+        "total": 18,
+        "rate": 0.7777777777777778,
+        "passed": true,
+        "per_folio": {
+          "f104r": {
+            "value": 1.0,
+            "epv_count": 20,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f105r": {
+            "value": 1.0,
+            "epv_count": 20,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f108v": {
+            "value": 1.0,
+            "epv_count": 20,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f111r": {
+            "value": 1.0,
+            "epv_count": 20,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f116r": {
+            "value": 1.0,
+            "epv_count": 20,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f31r": {
+            "value": 1.0,
+            "epv_count": 20,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f34r": {
+            "value": 1.0,
+            "epv_count": 20,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f39v": {
+            "value": 0.05,
+            "epv_count": 1,
+            "n_perms": 20,
+            "passed": false
+          },
+          "f43v": {
+            "value": 0.9,
+            "epv_count": 18,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f55r": {
+            "value": 0.65,
+            "epv_count": 13,
+            "n_perms": 20,
+            "passed": false
+          },
+          "f66r": {
+            "value": 1.0,
+            "epv_count": 20,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f78r": {
+            "value": 1.0,
+            "epv_count": 20,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f79r": {
+            "value": 1.0,
+            "epv_count": 20,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f84r": {
+            "value": 1.0,
+            "epv_count": 20,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f85r1": {
+            "value": 0.8,
+            "epv_count": 16,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f86v5": {
+            "value": 0.25,
+            "epv_count": 5,
+            "n_perms": 20,
+            "passed": false
+          },
+          "f86v6": {
+            "value": 0.6,
+            "epv_count": 12,
+            "n_perms": 20,
+            "passed": false
+          },
+          "f95r1": {
+            "value": 1.0,
+            "epv_count": 20,
+            "n_perms": 20,
+            "passed": true
+          }
+        }
+      },
+      "GP3": {
+        "description": "DVA > 0",
+        "gate": 0.75,
+        "pass_count": 18,
+        "total": 18,
+        "rate": 1.0,
+        "passed": true,
+        "per_folio": {
+          "f104r": {
+            "value": 0.02436434189001123,
+            "passed": true
+          },
+          "f105r": {
+            "value": 0.034933120194552914,
+            "passed": true
+          },
+          "f108v": {
+            "value": 0.023277364096023004,
+            "passed": true
+          },
+          "f111r": {
+            "value": 0.03389482000174129,
+            "passed": true
+          },
+          "f116r": {
+            "value": 0.0323681828428768,
+            "passed": true
+          },
+          "f31r": {
+            "value": 0.018461589811239826,
+            "passed": true
+          },
+          "f34r": {
+            "value": 0.03892350169891221,
+            "passed": true
+          },
+          "f39v": {
+            "value": 0.03676702798763913,
+            "passed": true
+          },
+          "f43v": {
+            "value": 0.03698061699404763,
+            "passed": true
+          },
+          "f55r": {
+            "value": 0.044530847920634914,
+            "passed": true
+          },
+          "f66r": {
+            "value": 0.03591654471536796,
+            "passed": true
+          },
+          "f78r": {
+            "value": 0.028768636759807877,
+            "passed": true
+          },
+          "f79r": {
+            "value": 0.025374381836741053,
+            "passed": true
+          },
+          "f84r": {
+            "value": 0.02878069137671549,
+            "passed": true
+          },
+          "f85r1": {
+            "value": 0.039038089002568166,
+            "passed": true
+          },
+          "f86v5": {
+            "value": 0.03870466166854109,
+            "passed": true
+          },
+          "f86v6": {
+            "value": 0.014713960050775347,
+            "passed": true
+          },
+          "f95r1": {
+            "value": 0.02320407053787879,
+            "passed": true
+          }
+        }
+      },
+      "GP4": {
+        "description": "Anchor stability (P2 ref, UEB M1<=M0, WCP M1>=M0)",
+        "P2_pass": true,
+        "UEB_count": 14,
+        "UEB_rate": 0.7777777777777778,
+        "UEB_pass": true,
+        "WCP_count": 6,
+        "WCP_rate": 0.3333333333333333,
+        "WCP_pass": false,
+        "stable": false
+      }
+    },
+    "tier_B": {
+      "folios": [
+        "f105r",
+        "f108v",
+        "f111r",
+        "f85r1",
+        "f86v6"
+      ],
+      "n_folios": 5,
+      "GP1": {
+        "description": "DYE_advantage > 0",
+        "gate": "N/A",
+        "pass_count": 5,
+        "total": 5,
+        "rate": 1.0,
+        "passed": true,
+        "per_folio": {
+          "f105r": {
+            "value": 0.10582819535403157,
+            "passed": true
+          },
+          "f108v": {
+            "value": 0.07832266915987263,
+            "passed": true
+          },
+          "f111r": {
+            "value": 0.06050778510713822,
+            "passed": true
+          },
+          "f85r1": {
+            "value": 0.06776410090557722,
+            "passed": true
+          },
+          "f86v6": {
+            "value": 0.0018146083745152614,
+            "passed": true
+          }
+        }
+      },
+      "GP2": {
+        "description": "DYE EPV >= 0.80",
+        "central": true,
+        "gate": "N/A",
+        "pass_count": 4,
+        "total": 5,
+        "rate": 0.8,
+        "passed": true,
+        "per_folio": {
+          "f105r": {
+            "value": 1.0,
+            "epv_count": 20,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f108v": {
+            "value": 1.0,
+            "epv_count": 20,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f111r": {
+            "value": 1.0,
+            "epv_count": 20,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f85r1": {
+            "value": 0.8,
+            "epv_count": 16,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f86v6": {
+            "value": 0.6,
+            "epv_count": 12,
+            "n_perms": 20,
+            "passed": false
+          }
+        }
+      },
+      "GP3": {
+        "description": "DVA > 0",
+        "gate": "N/A",
+        "pass_count": 5,
+        "total": 5,
+        "rate": 1.0,
+        "passed": true,
+        "per_folio": {
+          "f105r": {
+            "value": 0.034933120194552914,
+            "passed": true
+          },
+          "f108v": {
+            "value": 0.023277364096023004,
+            "passed": true
+          },
+          "f111r": {
+            "value": 0.03389482000174129,
+            "passed": true
+          },
+          "f85r1": {
+            "value": 0.039038089002568166,
+            "passed": true
+          },
+          "f86v6": {
+            "value": 0.014713960050775347,
+            "passed": true
+          }
+        }
+      },
+      "GP4": {
+        "description": "Anchor stability (P2 ref, UEB M1<=M0, WCP M1>=M0)",
+        "P2_pass": true,
+        "UEB_count": 4,
+        "UEB_rate": 0.8,
+        "UEB_pass": true,
+        "WCP_count": 2,
+        "WCP_rate": 0.4,
+        "WCP_pass": false,
+        "stable": false
+      }
+    },
+    "tier_C": {
+      "folios": [
+        "f105r",
+        "f108v",
+        "f111r",
+        "f86v6"
+      ],
+      "n_folios": 4,
+      "GP1": {
+        "description": "DYE_advantage > 0",
+        "gate": 0.75,
+        "pass_count": 4,
+        "total": 4,
+        "rate": 1.0,
+        "passed": true,
+        "per_folio": {
+          "f105r": {
+            "value": 0.10582819535403157,
+            "passed": true
+          },
+          "f108v": {
+            "value": 0.07832266915987263,
+            "passed": true
+          },
+          "f111r": {
+            "value": 0.06050778510713822,
+            "passed": true
+          },
+          "f86v6": {
+            "value": 0.0018146083745152614,
+            "passed": true
+          }
+        }
+      },
+      "GP2": {
+        "description": "DYE EPV >= 0.80",
+        "central": true,
+        "gate": 0.75,
+        "pass_count": 3,
+        "total": 4,
+        "rate": 0.75,
+        "passed": true,
+        "per_folio": {
+          "f105r": {
+            "value": 1.0,
+            "epv_count": 20,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f108v": {
+            "value": 1.0,
+            "epv_count": 20,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f111r": {
+            "value": 1.0,
+            "epv_count": 20,
+            "n_perms": 20,
+            "passed": true
+          },
+          "f86v6": {
+            "value": 0.6,
+            "epv_count": 12,
+            "n_perms": 20,
+            "passed": false
+          }
+        }
+      },
+      "GP3": {
+        "description": "DVA > 0",
+        "gate": 0.75,
+        "pass_count": 4,
+        "total": 4,
+        "rate": 1.0,
+        "passed": true,
+        "per_folio": {
+          "f105r": {
+            "value": 0.034933120194552914,
+            "passed": true
+          },
+          "f108v": {
+            "value": 0.023277364096023004,
+            "passed": true
+          },
+          "f111r": {
+            "value": 0.03389482000174129,
+            "passed": true
+          },
+          "f86v6": {
+            "value": 0.014713960050775347,
+            "passed": true
+          }
+        }
+      },
+      "GP4": {
+        "description": "Anchor stability (P2 ref, UEB M1<=M0, WCP M1>=M0)",
+        "P2_pass": true,
+        "UEB_count": 3,
+        "UEB_rate": 0.75,
+        "UEB_pass": true,
+        "WCP_count": 1,
+        "WCP_rate": 0.25,
+        "WCP_pass": false,
+        "stable": false
+      }
+    }
+  },
+  "per_folio": {
+    "f104r": {
+      "section": "S",
+      "profile": "A3_DISTILL_COLLECT",
+      "n_close_lines": 9,
+      "eligibility_class": "fallback_only",
+      "event_selection": "E_any",
+      "demand_strong": false,
+      "n_m1_events": 9,
+      "n_m1_total": 9,
+      "DVA": 0.02436434189001123,
+      "mean_dV_M1": 0.0631235003968254,
+      "mean_dV_M4f": 0.038759158506814176,
+      "DYE_M1": 0.1903522738605138,
+      "DYE_M4f": 0.09274975212608115,
+      "DYE_advantage": 0.09760252173443264,
+      "EPV": 1.0,
+      "EPV_count": 20,
+      "demand_magnitude": 0.062299615,
+      "z_DYE": 1.5666633210242573,
+      "z_YGA": 1.6700193082163413,
+      "DYC": 1.6183413146202992,
+      "YGA": 0.1040415599444444,
+      "M0_UEB": 1.5,
+      "M1_UEB": 1.5,
+      "M0_WCP": 0.871813,
+      "M1_WCP": 0.870568
+    },
+    "f105r": {
+      "section": "S",
+      "profile": "A3_DISTILL_COLLECT",
+      "n_close_lines": 12,
+      "eligibility_class": "demand_strong",
+      "event_selection": "work_preceded",
+      "demand_strong": true,
+      "n_m1_events": 3,
+      "n_m1_total": 12,
+      "DVA": 0.034933120194552914,
+      "mean_dV_M1": 0.07001153333333333,
+      "mean_dV_M4f": 0.03507841313878042,
+      "DYE_M1": 0.09666975803551814,
+      "DYE_M4f": -0.009158437318513426,
+      "DYE_advantage": 0.10582819535403157,
+      "EPV": 1.0,
+      "EPV_count": 20,
+      "demand_magnitude": 0.08006220722222224,
+      "z_DYE": 1.3218246039644241,
+      "z_YGA": 0.9763835320387859,
+      "DYC": 1.1491040680016051,
+      "YGA": 0.07817142067045454,
+      "M0_UEB": 0.0,
+      "M1_UEB": 0.0,
+      "M0_WCP": 0.858105,
+      "M1_WCP": 0.859192
+    },
+    "f108v": {
+      "section": "S",
+      "profile": "A3_DISTILL_COLLECT",
+      "n_close_lines": 13,
+      "eligibility_class": "demand_strong",
+      "event_selection": "work_preceded",
+      "demand_strong": true,
+      "n_m1_events": 7,
+      "n_m1_total": 13,
+      "DVA": 0.023277364096023004,
+      "mean_dV_M1": 0.07301324508348794,
+      "mean_dV_M4f": 0.04973588098746494,
+      "DYE_M1": 0.11132895371046883,
+      "DYE_M4f": 0.033006284550596204,
+      "DYE_advantage": 0.07832266915987263,
+      "EPV": 1.0,
+      "EPV_count": 20,
+      "demand_magnitude": 0.10505601404761906,
+      "z_DYE": 0.7455324654176492,
+      "z_YGA": 0.7241331220540559,
+      "DYC": 0.7348327937358525,
+      "YGA": 0.07607453944285715,
+      "M0_UEB": 7.5,
+      "M1_UEB": 6.0,
+      "M0_WCP": 0.791812,
+      "M1_WCP": 0.785245
+    },
+    "f111r": {
+      "section": "S",
+      "profile": "A3_DISTILL_COLLECT",
+      "n_close_lines": 12,
+      "eligibility_class": "demand_strong",
+      "event_selection": "work_preceded",
+      "demand_strong": true,
+      "n_m1_events": 3,
+      "n_m1_total": 12,
+      "DVA": 0.03389482000174129,
+      "mean_dV_M1": 0.07915731522366522,
+      "mean_dV_M4f": 0.04526249522192393,
+      "DYE_M1": 0.1262189712117899,
+      "DYE_M4f": 0.06571118610465168,
+      "DYE_advantage": 0.06050778510713822,
+      "EPV": 1.0,
+      "EPV_count": 20,
+      "demand_magnitude": 0.09733046333333334,
+      "z_DYE": 0.6216736573000138,
+      "z_YGA": 0.5728712420253214,
+      "DYC": 0.5972724496626676,
+      "YGA": 0.05575782341666667,
+      "M0_UEB": 7.5,
+      "M1_UEB": 7.5,
+      "M0_WCP": 0.825646,
+      "M1_WCP": 0.823677
+    },
+    "f116r": {
+      "section": "S",
+      "profile": "A3_DISTILL_COLLECT",
+      "n_close_lines": 8,
+      "eligibility_class": "fallback_only",
+      "event_selection": "E_any",
+      "demand_strong": false,
+      "n_m1_events": 8,
+      "n_m1_total": 8,
+      "DVA": 0.0323681828428768,
+      "mean_dV_M1": 0.07256360839646464,
+      "mean_dV_M4f": 0.04019542555358784,
+      "DYE_M1": 0.20422440314421111,
+      "DYE_M4f": 0.1125671112073288,
+      "DYE_advantage": 0.09165729193688231,
+      "EPV": 1.0,
+      "EPV_count": 20,
+      "demand_magnitude": 0.07415713416666667,
+      "z_DYE": 1.2359875144431065,
+      "z_YGA": 1.3407495793195265,
+      "DYC": 1.2883685468813164,
+      "YGA": 0.09942614643750002,
+      "M0_UEB": 8.0,
+      "M1_UEB": 6.5,
+      "M0_WCP": 0.840877,
+      "M1_WCP": 0.84169
+    },
+    "f31r": {
+      "section": "H",
+      "profile": "A1_BATH_REFLUX",
+      "n_close_lines": 2,
+      "eligibility_class": "sparse_close",
+      "event_selection": "E_any",
+      "demand_strong": false,
+      "n_m1_events": 2,
+      "n_m1_total": 2,
+      "DVA": 0.018461589811239826,
+      "mean_dV_M1": 0.06323341944444444,
+      "mean_dV_M4f": 0.04477182963320461,
+      "DYE_M1": 0.15706453208488264,
+      "DYE_M4f": 0.01149763685124958,
+      "DYE_advantage": 0.14556689523363306,
+      "EPV": 1.0,
+      "EPV_count": 20,
+      "demand_magnitude": 0.029700515,
+      "z_DYE": 4.901157277361455,
+      "z_YGA": 2.433276914558552,
+      "DYC": 3.6672170959600034,
+      "YGA": 0.0722695775,
+      "M0_UEB": 0.0,
+      "M1_UEB": 0.0,
+      "M0_WCP": 0.746354,
+      "M1_WCP": 0.746354
+    },
+    "f34r": {
+      "section": "H",
+      "profile": "A3_DISTILL_COLLECT",
+      "n_close_lines": 2,
+      "eligibility_class": "sparse_close",
+      "event_selection": "E_any",
+      "demand_strong": false,
+      "n_m1_events": 2,
+      "n_m1_total": 2,
+      "DVA": 0.03892350169891221,
+      "mean_dV_M1": 0.07143976818181819,
+      "mean_dV_M4f": 0.032516266482905974,
+      "DYE_M1": 0.2897316739938657,
+      "DYE_M4f": 0.1841006878806018,
+      "DYE_advantage": 0.10563098611326388,
+      "EPV": 1.0,
+      "EPV_count": 20,
+      "demand_magnitude": 0.06733006500000001,
+      "z_DYE": 1.5688531729958062,
+      "z_YGA": 2.580564941530949,
+      "DYC": 2.0747090572633775,
+      "YGA": 0.17374960525000002,
+      "M0_UEB": 0.0,
+      "M1_UEB": 0.0,
+      "M0_WCP": 0.884737,
+      "M1_WCP": 0.886885
+    },
+    "f39v": {
+      "section": "H",
+      "profile": "A2_SEALED_RECIRCULATION",
+      "n_close_lines": 2,
+      "eligibility_class": "sparse_close",
+      "event_selection": "E_any",
+      "demand_strong": false,
+      "n_m1_events": 2,
+      "n_m1_total": 2,
+      "DVA": 0.03676702798763913,
+      "mean_dV_M1": 0.06417277727272727,
+      "mean_dV_M4f": 0.027405749285088137,
+      "DYE_M1": 0.09962501949527115,
+      "DYE_M4f": 0.175983673814305,
+      "DYE_advantage": -0.07635865431903384,
+      "EPV": 0.05,
+      "EPV_count": 1,
+      "demand_magnitude": 0.08739993,
+      "z_DYE": -0.8736695134542309,
+      "z_YGA": 0.19499474141455272,
+      "DYC": -0.3393373860198391,
+      "YGA": 0.01704252675000001,
+      "M0_UEB": 11.0,
+      "M1_UEB": 21.0,
+      "M0_WCP": 0.833975,
+      "M1_WCP": 0.826843
+    },
+    "f43v": {
+      "section": "H",
+      "profile": "A3_DISTILL_COLLECT",
+      "n_close_lines": 2,
+      "eligibility_class": "sparse_close",
+      "event_selection": "E_any",
+      "demand_strong": false,
+      "n_m1_events": 2,
+      "n_m1_total": 2,
+      "DVA": 0.03698061699404763,
+      "mean_dV_M1": 0.07523050136363638,
+      "mean_dV_M4f": 0.038249884369588746,
+      "DYE_M1": 0.22304411015900202,
+      "DYE_M4f": 0.14923371733976165,
+      "DYE_advantage": 0.07381039281924037,
+      "EPV": 0.9,
+      "EPV_count": 18,
+      "demand_magnitude": 0.09548576750000001,
+      "z_DYE": 0.7729988955604338,
+      "z_YGA": 1.41288242773982,
+      "DYC": 1.092940661650127,
+      "YGA": 0.13491016300000003,
+      "M0_UEB": 0.0,
+      "M1_UEB": 0.0,
+      "M0_WCP": 0.809921,
+      "M1_WCP": 0.809948
+    },
+    "f55r": {
+      "section": "H",
+      "profile": "A2_SEALED_RECIRCULATION",
+      "n_close_lines": 3,
+      "eligibility_class": "fallback_only",
+      "event_selection": "E_any",
+      "demand_strong": false,
+      "n_m1_events": 3,
+      "n_m1_total": 3,
+      "DVA": 0.044530847920634914,
+      "mean_dV_M1": 0.07109119359788359,
+      "mean_dV_M4f": 0.026560345677248673,
+      "DYE_M1": 0.14994782850913907,
+      "DYE_M4f": 0.11146312191919919,
+      "DYE_advantage": 0.03848470658993988,
+      "EPV": 0.65,
+      "EPV_count": 13,
+      "demand_magnitude": 0.054326882222222206,
+      "z_DYE": 0.7083915920762679,
+      "z_YGA": 1.2202176980358859,
+      "DYC": 0.9643046450560768,
+      "YGA": 0.06629062316666667,
+      "M0_UEB": 14.5,
+      "M1_UEB": 17.5,
+      "M0_WCP": 0.889125,
+      "M1_WCP": 0.878787
+    },
+    "f66r": {
+      "section": "T",
+      "profile": "A2_SEALED_RECIRCULATION",
+      "n_close_lines": 2,
+      "eligibility_class": "sparse_close",
+      "event_selection": "E_any",
+      "demand_strong": false,
+      "n_m1_events": 2,
+      "n_m1_total": 2,
+      "DVA": 0.03591654471536796,
+      "mean_dV_M1": 0.07006773598484849,
+      "mean_dV_M4f": 0.034151191269480526,
+      "DYE_M1": 0.13958964026411505,
+      "DYE_M4f": 0.028923482341315303,
+      "DYE_advantage": 0.11066615792279974,
+      "EPV": 1.0,
+      "EPV_count": 20,
+      "demand_magnitude": 0.1133668525,
+      "z_DYE": 0.9761773876786404,
+      "z_YGA": 0.8884104394624522,
+      "DYC": 0.9322939135705464,
+      "YGA": 0.10071629525,
+      "M0_UEB": 6.5,
+      "M1_UEB": 6.5,
+      "M0_WCP": 0.844258,
+      "M1_WCP": 0.843723
+    },
+    "f78r": {
+      "section": "B",
+      "profile": "A1_BATH_REFLUX",
+      "n_close_lines": 8,
+      "eligibility_class": "fallback_only",
+      "event_selection": "E_any",
+      "demand_strong": false,
+      "n_m1_events": 8,
+      "n_m1_total": 8,
+      "DVA": 0.028768636759807877,
+      "mean_dV_M1": 0.06403391256944445,
+      "mean_dV_M4f": 0.03526527580963657,
+      "DYE_M1": 0.11691150002172429,
+      "DYE_M4f": 0.011514284988878559,
+      "DYE_advantage": 0.10539721503284573,
+      "EPV": 1.0,
+      "EPV_count": 20,
+      "demand_magnitude": 0.058197117916666666,
+      "z_DYE": 1.8110383951274975,
+      "z_YGA": 0.8642084595497904,
+      "DYC": 1.337623427338644,
+      "YGA": 0.050294441625000005,
+      "M0_UEB": 0.0,
+      "M1_UEB": 0.0,
+      "M0_WCP": 0.904054,
+      "M1_WCP": 0.902727
+    },
+    "f79r": {
+      "section": "B",
+      "profile": "A1_BATH_REFLUX",
+      "n_close_lines": 5,
+      "eligibility_class": "fallback_only",
+      "event_selection": "E_any",
+      "demand_strong": false,
+      "n_m1_events": 5,
+      "n_m1_total": 5,
+      "DVA": 0.025374381836741053,
+      "mean_dV_M1": 0.06941420975468976,
+      "mean_dV_M4f": 0.04403982791794871,
+      "DYE_M1": 0.12892068573809096,
+      "DYE_M4f": 0.02592859490143179,
+      "DYE_advantage": 0.10299209083665917,
+      "EPV": 1.0,
+      "EPV_count": 20,
+      "demand_magnitude": 0.06838277833333332,
+      "z_DYE": 1.5061115290551959,
+      "z_YGA": 0.9337501978751133,
+      "DYC": 1.2199308634651547,
+      "YGA": 0.0638524328,
+      "M0_UEB": 0.0,
+      "M1_UEB": 0.0,
+      "M0_WCP": 0.858756,
+      "M1_WCP": 0.854633
+    },
+    "f84r": {
+      "section": "B",
+      "profile": "A1_BATH_REFLUX",
+      "n_close_lines": 11,
+      "eligibility_class": "fallback_only",
+      "event_selection": "E_any",
+      "demand_strong": false,
+      "n_m1_events": 11,
+      "n_m1_total": 11,
+      "DVA": 0.02878069137671549,
+      "mean_dV_M1": 0.06962770533744032,
+      "mean_dV_M4f": 0.040847013960724834,
+      "DYE_M1": 0.12027717167708238,
+      "DYE_M4f": -0.007236919627030487,
+      "DYE_advantage": 0.12751409130411287,
+      "EPV": 1.0,
+      "EPV_count": 20,
+      "demand_magnitude": 0.05821372363636364,
+      "z_DYE": 2.190447257774458,
+      "z_YGA": 1.246166465328725,
+      "DYC": 1.7183068615515915,
+      "YGA": 0.07254399021755052,
+      "M0_UEB": 0.0,
+      "M1_UEB": 0.0,
+      "M0_WCP": 0.906563,
+      "M1_WCP": 0.898368
+    },
+    "f85r1": {
+      "section": "T",
+      "profile": "A2_SEALED_RECIRCULATION",
+      "n_close_lines": 10,
+      "eligibility_class": "demand_eligible",
+      "event_selection": "work_preceded",
+      "demand_strong": false,
+      "n_m1_events": 2,
+      "n_m1_total": 10,
+      "DVA": 0.039038089002568166,
+      "mean_dV_M1": 0.0732253009090909,
+      "mean_dV_M4f": 0.03418721190652274,
+      "DYE_M1": 0.16422320539841595,
+      "DYE_M4f": 0.09645910449283873,
+      "DYE_advantage": 0.06776410090557722,
+      "EPV": 0.8,
+      "EPV_count": 16,
+      "demand_magnitude": 0.08352741583333333,
+      "z_DYE": 0.8112797484455944,
+      "z_YGA": 1.2421901505612443,
+      "DYC": 1.0267349495034193,
+      "YGA": 0.10375693324999999,
+      "M0_UEB": 1.5,
+      "M1_UEB": 1.5,
+      "M0_WCP": 0.875232,
+      "M1_WCP": 0.876044
+    },
+    "f86v5": {
+      "section": "C",
+      "profile": "A2_SEALED_RECIRCULATION",
+      "n_close_lines": 9,
+      "eligibility_class": "fallback_only",
+      "event_selection": "E_any",
+      "demand_strong": false,
+      "n_m1_events": 9,
+      "n_m1_total": 9,
+      "DVA": 0.03870466166854109,
+      "mean_dV_M1": 0.06607236999999999,
+      "mean_dV_M4f": 0.0273677083314589,
+      "DYE_M1": 0.12814783858577608,
+      "DYE_M4f": 0.24180060140449627,
+      "DYE_advantage": -0.1136527628187202,
+      "EPV": 0.25,
+      "EPV_count": 5,
+      "demand_magnitude": 0.06611374814814815,
+      "z_DYE": -1.719048851443822,
+      "z_YGA": 0.9304886641216328,
+      "DYC": -0.3942800936610946,
+      "YGA": 0.06151809319444444,
+      "M0_UEB": 45.0,
+      "M1_UEB": 61.0,
+      "M0_WCP": 0.845946,
+      "M1_WCP": 0.840969
+    },
+    "f86v6": {
+      "section": "C",
+      "profile": "A2_SEALED_RECIRCULATION",
+      "n_close_lines": 11,
+      "eligibility_class": "demand_strong",
+      "event_selection": "work_preceded",
+      "demand_strong": true,
+      "n_m1_events": 7,
+      "n_m1_total": 11,
+      "DVA": 0.014713960050775347,
+      "mean_dV_M1": 0.06896053394026609,
+      "mean_dV_M4f": 0.054246573889490744,
+      "DYE_M1": 0.12020243918122749,
+      "DYE_M4f": 0.11838783080671222,
+      "DYE_advantage": 0.0018146083745152614,
+      "EPV": 0.6,
+      "EPV_count": 12,
+      "demand_magnitude": 0.11579073595238096,
+      "z_DYE": 0.01567144693908432,
+      "z_YGA": 0.3230689937525247,
+      "DYC": 0.1693702203458045,
+      "YGA": 0.03740839655,
+      "M0_UEB": 23.5,
+      "M1_UEB": 28.5,
+      "M0_WCP": 0.858899,
+      "M1_WCP": 0.857267
+    },
+    "f95r1": {
+      "section": "H",
+      "profile": "A1_BATH_REFLUX",
+      "n_close_lines": 2,
+      "eligibility_class": "sparse_close",
+      "event_selection": "E_any",
+      "demand_strong": false,
+      "n_m1_events": 2,
+      "n_m1_total": 2,
+      "DVA": 0.02320407053787879,
+      "mean_dV_M1": 0.06147734777777778,
+      "mean_dV_M4f": 0.03827327723989899,
+      "DYE_M1": 0.1144165440287184,
+      "DYE_M4f": 0.025551017634813572,
+      "DYE_advantage": 0.08886552639390483,
+      "EPV": 1.0,
+      "EPV_count": 20,
+      "demand_magnitude": 0.0696725625,
+      "z_DYE": 1.275473776264578,
+      "z_YGA": 0.8183200524596752,
+      "DYC": 1.0468969143621267,
+      "YGA": 0.05701445499999999,
+      "M0_UEB": 0.0,
+      "M1_UEB": 0.0,
+      "M0_WCP": 0.945551,
+      "M1_WCP": 0.937424
+    }
+  },
+  "diagnostics": {
+    "GD1_full_metric_table": {
+      "f104r": {
+        "section": "S",
+        "profile": "A3_DISTILL_COLLECT",
+        "DVA": 0.02436434189001123,
+        "DYE_M1": 0.1903522738605138,
+        "DYE_M4f": 0.09274975212608115,
+        "DYE_advantage": 0.09760252173443264,
+        "EPV": 1.0,
+        "EPV_count": 20,
+        "DYC": 1.6183413146202992,
+        "YGA": 0.1040415599444444,
+        "demand_strong": false
+      },
+      "f105r": {
+        "section": "S",
+        "profile": "A3_DISTILL_COLLECT",
+        "DVA": 0.034933120194552914,
+        "DYE_M1": 0.09666975803551814,
+        "DYE_M4f": -0.009158437318513426,
+        "DYE_advantage": 0.10582819535403157,
+        "EPV": 1.0,
+        "EPV_count": 20,
+        "DYC": 1.1491040680016051,
+        "YGA": 0.07817142067045454,
+        "demand_strong": true
+      },
+      "f108v": {
+        "section": "S",
+        "profile": "A3_DISTILL_COLLECT",
+        "DVA": 0.023277364096023004,
+        "DYE_M1": 0.11132895371046883,
+        "DYE_M4f": 0.033006284550596204,
+        "DYE_advantage": 0.07832266915987263,
+        "EPV": 1.0,
+        "EPV_count": 20,
+        "DYC": 0.7348327937358525,
+        "YGA": 0.07607453944285715,
+        "demand_strong": true
+      },
+      "f111r": {
+        "section": "S",
+        "profile": "A3_DISTILL_COLLECT",
+        "DVA": 0.03389482000174129,
+        "DYE_M1": 0.1262189712117899,
+        "DYE_M4f": 0.06571118610465168,
+        "DYE_advantage": 0.06050778510713822,
+        "EPV": 1.0,
+        "EPV_count": 20,
+        "DYC": 0.5972724496626676,
+        "YGA": 0.05575782341666667,
+        "demand_strong": true
+      },
+      "f116r": {
+        "section": "S",
+        "profile": "A3_DISTILL_COLLECT",
+        "DVA": 0.0323681828428768,
+        "DYE_M1": 0.20422440314421111,
+        "DYE_M4f": 0.1125671112073288,
+        "DYE_advantage": 0.09165729193688231,
+        "EPV": 1.0,
+        "EPV_count": 20,
+        "DYC": 1.2883685468813164,
+        "YGA": 0.09942614643750002,
+        "demand_strong": false
+      },
+      "f31r": {
+        "section": "H",
+        "profile": "A1_BATH_REFLUX",
+        "DVA": 0.018461589811239826,
+        "DYE_M1": 0.15706453208488264,
+        "DYE_M4f": 0.01149763685124958,
+        "DYE_advantage": 0.14556689523363306,
+        "EPV": 1.0,
+        "EPV_count": 20,
+        "DYC": 3.6672170959600034,
+        "YGA": 0.0722695775,
+        "demand_strong": false
+      },
+      "f34r": {
+        "section": "H",
+        "profile": "A3_DISTILL_COLLECT",
+        "DVA": 0.03892350169891221,
+        "DYE_M1": 0.2897316739938657,
+        "DYE_M4f": 0.1841006878806018,
+        "DYE_advantage": 0.10563098611326388,
+        "EPV": 1.0,
+        "EPV_count": 20,
+        "DYC": 2.0747090572633775,
+        "YGA": 0.17374960525000002,
+        "demand_strong": false
+      },
+      "f39v": {
+        "section": "H",
+        "profile": "A2_SEALED_RECIRCULATION",
+        "DVA": 0.03676702798763913,
+        "DYE_M1": 0.09962501949527115,
+        "DYE_M4f": 0.175983673814305,
+        "DYE_advantage": -0.07635865431903384,
+        "EPV": 0.05,
+        "EPV_count": 1,
+        "DYC": -0.3393373860198391,
+        "YGA": 0.01704252675000001,
+        "demand_strong": false
+      },
+      "f43v": {
+        "section": "H",
+        "profile": "A3_DISTILL_COLLECT",
+        "DVA": 0.03698061699404763,
+        "DYE_M1": 0.22304411015900202,
+        "DYE_M4f": 0.14923371733976165,
+        "DYE_advantage": 0.07381039281924037,
+        "EPV": 0.9,
+        "EPV_count": 18,
+        "DYC": 1.092940661650127,
+        "YGA": 0.13491016300000003,
+        "demand_strong": false
+      },
+      "f55r": {
+        "section": "H",
+        "profile": "A2_SEALED_RECIRCULATION",
+        "DVA": 0.044530847920634914,
+        "DYE_M1": 0.14994782850913907,
+        "DYE_M4f": 0.11146312191919919,
+        "DYE_advantage": 0.03848470658993988,
+        "EPV": 0.65,
+        "EPV_count": 13,
+        "DYC": 0.9643046450560768,
+        "YGA": 0.06629062316666667,
+        "demand_strong": false
+      },
+      "f66r": {
+        "section": "T",
+        "profile": "A2_SEALED_RECIRCULATION",
+        "DVA": 0.03591654471536796,
+        "DYE_M1": 0.13958964026411505,
+        "DYE_M4f": 0.028923482341315303,
+        "DYE_advantage": 0.11066615792279974,
+        "EPV": 1.0,
+        "EPV_count": 20,
+        "DYC": 0.9322939135705464,
+        "YGA": 0.10071629525,
+        "demand_strong": false
+      },
+      "f78r": {
+        "section": "B",
+        "profile": "A1_BATH_REFLUX",
+        "DVA": 0.028768636759807877,
+        "DYE_M1": 0.11691150002172429,
+        "DYE_M4f": 0.011514284988878559,
+        "DYE_advantage": 0.10539721503284573,
+        "EPV": 1.0,
+        "EPV_count": 20,
+        "DYC": 1.337623427338644,
+        "YGA": 0.050294441625000005,
+        "demand_strong": false
+      },
+      "f79r": {
+        "section": "B",
+        "profile": "A1_BATH_REFLUX",
+        "DVA": 0.025374381836741053,
+        "DYE_M1": 0.12892068573809096,
+        "DYE_M4f": 0.02592859490143179,
+        "DYE_advantage": 0.10299209083665917,
+        "EPV": 1.0,
+        "EPV_count": 20,
+        "DYC": 1.2199308634651547,
+        "YGA": 0.0638524328,
+        "demand_strong": false
+      },
+      "f84r": {
+        "section": "B",
+        "profile": "A1_BATH_REFLUX",
+        "DVA": 0.02878069137671549,
+        "DYE_M1": 0.12027717167708238,
+        "DYE_M4f": -0.007236919627030487,
+        "DYE_advantage": 0.12751409130411287,
+        "EPV": 1.0,
+        "EPV_count": 20,
+        "DYC": 1.7183068615515915,
+        "YGA": 0.07254399021755052,
+        "demand_strong": false
+      },
+      "f85r1": {
+        "section": "T",
+        "profile": "A2_SEALED_RECIRCULATION",
+        "DVA": 0.039038089002568166,
+        "DYE_M1": 0.16422320539841595,
+        "DYE_M4f": 0.09645910449283873,
+        "DYE_advantage": 0.06776410090557722,
+        "EPV": 0.8,
+        "EPV_count": 16,
+        "DYC": 1.0267349495034193,
+        "YGA": 0.10375693324999999,
+        "demand_strong": false
+      },
+      "f86v5": {
+        "section": "C",
+        "profile": "A2_SEALED_RECIRCULATION",
+        "DVA": 0.03870466166854109,
+        "DYE_M1": 0.12814783858577608,
+        "DYE_M4f": 0.24180060140449627,
+        "DYE_advantage": -0.1136527628187202,
+        "EPV": 0.25,
+        "EPV_count": 5,
+        "DYC": -0.3942800936610946,
+        "YGA": 0.06151809319444444,
+        "demand_strong": false
+      },
+      "f86v6": {
+        "section": "C",
+        "profile": "A2_SEALED_RECIRCULATION",
+        "DVA": 0.014713960050775347,
+        "DYE_M1": 0.12020243918122749,
+        "DYE_M4f": 0.11838783080671222,
+        "DYE_advantage": 0.0018146083745152614,
+        "EPV": 0.6,
+        "EPV_count": 12,
+        "DYC": 0.1693702203458045,
+        "YGA": 0.03740839655,
+        "demand_strong": true
+      },
+      "f95r1": {
+        "section": "H",
+        "profile": "A1_BATH_REFLUX",
+        "DVA": 0.02320407053787879,
+        "DYE_M1": 0.1144165440287184,
+        "DYE_M4f": 0.025551017634813572,
+        "DYE_advantage": 0.08886552639390483,
+        "EPV": 1.0,
+        "EPV_count": 20,
+        "DYC": 1.0468969143621267,
+        "YGA": 0.05701445499999999,
+        "demand_strong": false
+      }
+    },
+    "GD2_folio_eligibility": {
+      "f104r": {
+        "n_close_lines": 9,
+        "n_events": 9,
+        "selection_tier": "E_any",
+        "eligibility_class": "fallback_only"
+      },
+      "f105r": {
+        "n_close_lines": 12,
+        "n_events": 3,
+        "selection_tier": "work_preceded",
+        "eligibility_class": "demand_strong"
+      },
+      "f108v": {
+        "n_close_lines": 13,
+        "n_events": 7,
+        "selection_tier": "work_preceded",
+        "eligibility_class": "demand_strong"
+      },
+      "f111r": {
+        "n_close_lines": 12,
+        "n_events": 3,
+        "selection_tier": "work_preceded",
+        "eligibility_class": "demand_strong"
+      },
+      "f116r": {
+        "n_close_lines": 8,
+        "n_events": 8,
+        "selection_tier": "E_any",
+        "eligibility_class": "fallback_only"
+      },
+      "f31r": {
+        "n_close_lines": 2,
+        "n_events": 2,
+        "selection_tier": "E_any",
+        "eligibility_class": "sparse_close"
+      },
+      "f34r": {
+        "n_close_lines": 2,
+        "n_events": 2,
+        "selection_tier": "E_any",
+        "eligibility_class": "sparse_close"
+      },
+      "f39v": {
+        "n_close_lines": 2,
+        "n_events": 2,
+        "selection_tier": "E_any",
+        "eligibility_class": "sparse_close"
+      },
+      "f43v": {
+        "n_close_lines": 2,
+        "n_events": 2,
+        "selection_tier": "E_any",
+        "eligibility_class": "sparse_close"
+      },
+      "f55r": {
+        "n_close_lines": 3,
+        "n_events": 3,
+        "selection_tier": "E_any",
+        "eligibility_class": "fallback_only"
+      },
+      "f66r": {
+        "n_close_lines": 2,
+        "n_events": 2,
+        "selection_tier": "E_any",
+        "eligibility_class": "sparse_close"
+      },
+      "f78r": {
+        "n_close_lines": 8,
+        "n_events": 8,
+        "selection_tier": "E_any",
+        "eligibility_class": "fallback_only"
+      },
+      "f79r": {
+        "n_close_lines": 5,
+        "n_events": 5,
+        "selection_tier": "E_any",
+        "eligibility_class": "fallback_only"
+      },
+      "f84r": {
+        "n_close_lines": 11,
+        "n_events": 11,
+        "selection_tier": "E_any",
+        "eligibility_class": "fallback_only"
+      },
+      "f85r1": {
+        "n_close_lines": 10,
+        "n_events": 2,
+        "selection_tier": "work_preceded",
+        "eligibility_class": "demand_eligible"
+      },
+      "f86v5": {
+        "n_close_lines": 9,
+        "n_events": 9,
+        "selection_tier": "E_any",
+        "eligibility_class": "fallback_only"
+      },
+      "f86v6": {
+        "n_close_lines": 11,
+        "n_events": 7,
+        "selection_tier": "work_preceded",
+        "eligibility_class": "demand_strong"
+      },
+      "f95r1": {
+        "n_close_lines": 2,
+        "n_events": 2,
+        "selection_tier": "E_any",
+        "eligibility_class": "sparse_close"
+      }
+    },
+    "GD3_n_close_comparison": {
+      "f104r": {
+        "m1_mean_n_close": 11.555555555555555,
+        "m4f_mean_n_close": 9.555555555555555,
+        "ratio": 1.2093023255813953
+      },
+      "f105r": {
+        "m1_mean_n_close": 11.0,
+        "m4f_mean_n_close": 10.0,
+        "ratio": 1.1
+      },
+      "f108v": {
+        "m1_mean_n_close": 11.142857142857142,
+        "m4f_mean_n_close": 11.369047619047619,
+        "ratio": 0.9801047120418848
+      },
+      "f111r": {
+        "m1_mean_n_close": 10.0,
+        "m4f_mean_n_close": 11.335877862595419,
+        "ratio": 0.8821548821548822
+      },
+      "f116r": {
+        "m1_mean_n_close": 10.375,
+        "m4f_mean_n_close": 11.363636363636363,
+        "ratio": 0.913
+      },
+      "f31r": {
+        "m1_mean_n_close": 7.5,
+        "m4f_mean_n_close": 7.216216216216216,
+        "ratio": 1.0393258426966292
+      },
+      "f34r": {
+        "m1_mean_n_close": 11.0,
+        "m4f_mean_n_close": 9.55,
+        "ratio": 1.1518324607329842
+      },
+      "f39v": {
+        "m1_mean_n_close": 10.0,
+        "m4f_mean_n_close": 10.461538461538462,
+        "ratio": 0.9558823529411764
+      },
+      "f43v": {
+        "m1_mean_n_close": 10.5,
+        "m4f_mean_n_close": 9.1,
+        "ratio": 1.153846153846154
+      },
+      "f55r": {
+        "m1_mean_n_close": 8.666666666666666,
+        "m4f_mean_n_close": 10.166666666666666,
+        "ratio": 0.8524590163934426
+      },
+      "f66r": {
+        "m1_mean_n_close": 11.5,
+        "m4f_mean_n_close": 11.175,
+        "ratio": 1.029082774049217
+      },
+      "f78r": {
+        "m1_mean_n_close": 7.0,
+        "m4f_mean_n_close": 7.8875,
+        "ratio": 0.8874801901743264
+      },
+      "f79r": {
+        "m1_mean_n_close": 8.8,
+        "m4f_mean_n_close": 9.48,
+        "ratio": 0.9282700421940928
+      },
+      "f84r": {
+        "m1_mean_n_close": 9.818181818181818,
+        "m4f_mean_n_close": 9.515723270440251,
+        "ratio": 1.031785134891546
+      },
+      "f85r1": {
+        "m1_mean_n_close": 10.5,
+        "m4f_mean_n_close": 9.696428571428571,
+        "ratio": 1.0828729281767957
+      },
+      "f86v5": {
+        "m1_mean_n_close": 10.333333333333334,
+        "m4f_mean_n_close": 5.643790849673203,
+        "ratio": 1.8309206716850028
+      },
+      "f86v6": {
+        "m1_mean_n_close": 10.714285714285714,
+        "m4f_mean_n_close": 9.507042253521126,
+        "ratio": 1.126984126984127
+      },
+      "f95r1": {
+        "m1_mean_n_close": 9.5,
+        "m4f_mean_n_close": 8.625,
+        "ratio": 1.1014492753623188
+      }
+    },
+    "GD4_section_breakdown": {
+      "B": {
+        "n": 3,
+        "dye_pass": 3,
+        "epv_pass": 3,
+        "mean_dye_adv": 0.11196779905787257,
+        "dye_rate": 1.0,
+        "epv_rate": 1.0
+      },
+      "C": {
+        "n": 2,
+        "dye_pass": 1,
+        "epv_pass": 0,
+        "mean_dye_adv": -0.055919077222102466,
+        "dye_rate": 0.5,
+        "epv_rate": 0.0
+      },
+      "H": {
+        "n": 6,
+        "dye_pass": 5,
+        "epv_pass": 4,
+        "mean_dye_adv": 0.06266664213849137,
+        "dye_rate": 0.8333333333333334,
+        "epv_rate": 0.6666666666666666
+      },
+      "S": {
+        "n": 5,
+        "dye_pass": 5,
+        "epv_pass": 5,
+        "mean_dye_adv": 0.08678369265847148,
+        "dye_rate": 1.0,
+        "epv_rate": 1.0
+      },
+      "T": {
+        "n": 2,
+        "dye_pass": 2,
+        "epv_pass": 2,
+        "mean_dye_adv": 0.08921512941418848,
+        "dye_rate": 1.0,
+        "epv_rate": 1.0
+      }
+    },
+    "GD5_profile_breakdown": {
+      "A1_BATH_REFLUX": {
+        "n": 5,
+        "dye_pass": 5,
+        "epv_pass": 5,
+        "mean_dye_adv": 0.11406716376023111,
+        "dye_rate": 1.0,
+        "epv_rate": 1.0
+      },
+      "A2_SEALED_RECIRCULATION": {
+        "n": 6,
+        "dye_pass": 4,
+        "epv_pass": 2,
+        "mean_dye_adv": 0.004786359442513014,
+        "dye_rate": 0.6666666666666666,
+        "epv_rate": 0.3333333333333333
+      },
+      "A3_DISTILL_COLLECT": {
+        "n": 7,
+        "dye_pass": 7,
+        "epv_pass": 7,
+        "mean_dye_adv": 0.08762283460355166,
+        "dye_rate": 1.0,
+        "epv_rate": 1.0
+      }
+    },
+    "GD6_pilot_consistency": {
+      "f108v": {
+        "DYE_M1_571": 0.11132895371046883,
+        "DYE_M1_570c": 0.1113,
+        "delta_DYE_M1": 2.895371046883477e-05,
+        "DYE_M4f_571": 0.033006284550596204,
+        "DYE_M4f_570c": 0.033,
+        "delta_DYE_M4f": 6.284550596202809e-06,
+        "DVA_571": 0.023277364096023004,
+        "DVA_570c": 0.023277,
+        "delta_DVA": 3.640960230047452e-07
+      },
+      "f86v6": {
+        "DYE_M1_571": 0.12020243918122749,
+        "DYE_M1_570c": 0.1202,
+        "delta_DYE_M1": 2.4391812274843216e-06,
+        "DYE_M4f_571": 0.11838783080671222,
+        "DYE_M4f_570c": 0.1184,
+        "delta_DYE_M4f": -1.2169193287780988e-05,
+        "DVA_571": 0.014713960050775347,
+        "DVA_570c": 0.014714,
+        "delta_DVA": -3.9949224652294224e-08
+      },
+      "f111r": {
+        "DYE_M1_571": 0.1262189712117899,
+        "DYE_M1_570c": 0.1262,
+        "delta_DYE_M1": 1.897121178989769e-05,
+        "DYE_M4f_571": 0.06571118610465168,
+        "DYE_M4f_570c": 0.0657,
+        "delta_DYE_M4f": 1.1186104651686457e-05,
+        "DVA_571": 0.03389482000174129,
+        "DVA_570c": 0.033895,
+        "delta_DVA": -1.7999825871473085e-07
+      },
+      "f84r": {
+        "DYE_M1_571": 0.12027717167708238,
+        "DYE_M1_570c": 0.1203,
+        "delta_DYE_M1": -2.282832291762571e-05,
+        "DYE_M4f_571": -0.007236919627030487,
+        "DYE_M4f_570c": -0.0072,
+        "delta_DYE_M4f": -3.691962703048727e-05,
+        "DVA_571": 0.02878069137671549,
+        "DVA_570c": 0.028781,
+        "delta_DVA": -3.0862328451175536e-07
+      }
+    },
+    "GD7_dilution_curve": [
+      {
+        "rank": 1,
+        "folio": "f84r",
+        "n_events": 11,
+        "eligibility": "fallback_only",
+        "DYE_advantage": 0.12751409130411287,
+        "EPV": 1.0,
+        "cum_dye_pass_rate": 1.0,
+        "cum_epv_pass_rate": 1.0
+      },
+      {
+        "rank": 2,
+        "folio": "f104r",
+        "n_events": 9,
+        "eligibility": "fallback_only",
+        "DYE_advantage": 0.09760252173443264,
+        "EPV": 1.0,
+        "cum_dye_pass_rate": 1.0,
+        "cum_epv_pass_rate": 1.0
+      },
+      {
+        "rank": 3,
+        "folio": "f86v5",
+        "n_events": 9,
+        "eligibility": "fallback_only",
+        "DYE_advantage": -0.1136527628187202,
+        "EPV": 0.25,
+        "cum_dye_pass_rate": 0.6666666666666666,
+        "cum_epv_pass_rate": 0.6666666666666666
+      },
+      {
+        "rank": 4,
+        "folio": "f116r",
+        "n_events": 8,
+        "eligibility": "fallback_only",
+        "DYE_advantage": 0.09165729193688231,
+        "EPV": 1.0,
+        "cum_dye_pass_rate": 0.75,
+        "cum_epv_pass_rate": 0.75
+      },
+      {
+        "rank": 5,
+        "folio": "f78r",
+        "n_events": 8,
+        "eligibility": "fallback_only",
+        "DYE_advantage": 0.10539721503284573,
+        "EPV": 1.0,
+        "cum_dye_pass_rate": 0.8,
+        "cum_epv_pass_rate": 0.8
+      },
+      {
+        "rank": 6,
+        "folio": "f108v",
+        "n_events": 7,
+        "eligibility": "demand_strong",
+        "DYE_advantage": 0.07832266915987263,
+        "EPV": 1.0,
+        "cum_dye_pass_rate": 0.8333333333333334,
+        "cum_epv_pass_rate": 0.8333333333333334
+      },
+      {
+        "rank": 7,
+        "folio": "f86v6",
+        "n_events": 7,
+        "eligibility": "demand_strong",
+        "DYE_advantage": 0.0018146083745152614,
+        "EPV": 0.6,
+        "cum_dye_pass_rate": 0.8571428571428571,
+        "cum_epv_pass_rate": 0.7142857142857143
+      },
+      {
+        "rank": 8,
+        "folio": "f79r",
+        "n_events": 5,
+        "eligibility": "fallback_only",
+        "DYE_advantage": 0.10299209083665917,
+        "EPV": 1.0,
+        "cum_dye_pass_rate": 0.875,
+        "cum_epv_pass_rate": 0.75
+      },
+      {
+        "rank": 9,
+        "folio": "f105r",
+        "n_events": 3,
+        "eligibility": "demand_strong",
+        "DYE_advantage": 0.10582819535403157,
+        "EPV": 1.0,
+        "cum_dye_pass_rate": 0.8888888888888888,
+        "cum_epv_pass_rate": 0.7777777777777778
+      },
+      {
+        "rank": 10,
+        "folio": "f111r",
+        "n_events": 3,
+        "eligibility": "demand_strong",
+        "DYE_advantage": 0.06050778510713822,
+        "EPV": 1.0,
+        "cum_dye_pass_rate": 0.9,
+        "cum_epv_pass_rate": 0.8
+      },
+      {
+        "rank": 11,
+        "folio": "f55r",
+        "n_events": 3,
+        "eligibility": "fallback_only",
+        "DYE_advantage": 0.03848470658993988,
+        "EPV": 0.65,
+        "cum_dye_pass_rate": 0.9090909090909091,
+        "cum_epv_pass_rate": 0.7272727272727273
+      },
+      {
+        "rank": 12,
+        "folio": "f31r",
+        "n_events": 2,
+        "eligibility": "sparse_close",
+        "DYE_advantage": 0.14556689523363306,
+        "EPV": 1.0,
+        "cum_dye_pass_rate": 0.9166666666666666,
+        "cum_epv_pass_rate": 0.75
+      },
+      {
+        "rank": 13,
+        "folio": "f34r",
+        "n_events": 2,
+        "eligibility": "sparse_close",
+        "DYE_advantage": 0.10563098611326388,
+        "EPV": 1.0,
+        "cum_dye_pass_rate": 0.9230769230769231,
+        "cum_epv_pass_rate": 0.7692307692307693
+      },
+      {
+        "rank": 14,
+        "folio": "f39v",
+        "n_events": 2,
+        "eligibility": "sparse_close",
+        "DYE_advantage": -0.07635865431903384,
+        "EPV": 0.05,
+        "cum_dye_pass_rate": 0.8571428571428571,
+        "cum_epv_pass_rate": 0.7142857142857143
+      },
+      {
+        "rank": 15,
+        "folio": "f43v",
+        "n_events": 2,
+        "eligibility": "sparse_close",
+        "DYE_advantage": 0.07381039281924037,
+        "EPV": 0.9,
+        "cum_dye_pass_rate": 0.8666666666666667,
+        "cum_epv_pass_rate": 0.7333333333333333
+      },
+      {
+        "rank": 16,
+        "folio": "f66r",
+        "n_events": 2,
+        "eligibility": "sparse_close",
+        "DYE_advantage": 0.11066615792279974,
+        "EPV": 1.0,
+        "cum_dye_pass_rate": 0.875,
+        "cum_epv_pass_rate": 0.75
+      },
+      {
+        "rank": 17,
+        "folio": "f85r1",
+        "n_events": 2,
+        "eligibility": "demand_eligible",
+        "DYE_advantage": 0.06776410090557722,
+        "EPV": 0.8,
+        "cum_dye_pass_rate": 0.8823529411764706,
+        "cum_epv_pass_rate": 0.7647058823529411
+      },
+      {
+        "rank": 18,
+        "folio": "f95r1",
+        "n_events": 2,
+        "eligibility": "sparse_close",
+        "DYE_advantage": 0.08886552639390483,
+        "EPV": 1.0,
+        "cum_dye_pass_rate": 0.8888888888888888,
+        "cum_epv_pass_rate": 0.7777777777777778
+      }
+    ]
+  },
+  "provisional_constraints": [
+    {
+      "id": "C1635",
+      "text": "Productive disruption efficiency (DYE advantage > 0) generalizes beyond hand-selected pilot folios to the broader 18-folio pilot set spanning 5 sections and 3 apparatus profiles (Tier C: 3/4 demand-strong pass GP2, Tier A: 16/18 pass GP1)",
+      "tier": 2,
+      "scope": "B_apparatus",
+      "phase": "571"
+    }
+  ]
+}
