@@ -1,0 +1,10 @@
+{
+ "metadata": {
+  "phase": "559",
+  "task": "T3_plant_coupling",
+  "folio": "f43v"
+ },
+ "result": "STAGE_1_FAILED",
+ "stage_1_outcome": "FAIL",
+ "stage_1_verdict": "FAIL (failure conditions: FC4)"
+}

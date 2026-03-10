@@ -1,0 +1,132 @@
+{
+ "metadata": {
+  "phase": "563b",
+  "task": "T6b_synthesis",
+  "timestamp": "2026-03-09T10:42:19",
+  "verdict": "COUPLING_FAILED",
+  "n_tests_total": 9,
+  "n_tests_pass": 3,
+  "n_tests_fail": 6,
+  "n_constraints_proposed": 0,
+  "pilot_folios": [
+   "f78r",
+   "f84r",
+   "f79r",
+   "f81v",
+   "f55r",
+   "f40v",
+   "f43v",
+   "f34r",
+   "f31r",
+   "f39v",
+   "f95r1",
+   "f104r",
+   "f111r",
+   "f116r",
+   "f105r",
+   "f108v",
+   "f66r",
+   "f85r1",
+   "f86v5",
+   "f86v6"
+  ]
+ },
+ "verdict_rationale": "COUPLING_FAILED: 3/9 tests pass (down from 5/9 in Phase 563). The three targeted refinements (routing accumulator, decay reduction, headless modulation) did not improve the overall coupling verdict. P4 improved from 0/4 to 2/4, but P1 and P7 regressed from PASS to FAIL. P3b excursions remained at 1.3 (decay reduction had no effect on oscillation dynamics). P5 remains underpowered. The recalibration is a documented negative result: parametric tuning of the current architecture cannot produce the oscillatory dynamics required by P3b.",
+ "comparison_563_vs_563b": {
+  "P1": {
+   "563": "PASS (5/7 B2, 7/7 N1)",
+   "563b": "FAIL (12/20 B2, 15/20 N1)"
+  },
+  "P2": {
+   "563": "PASS (7/7 sig)",
+   "563b": "PASS (7/7 sig)"
+  },
+  "P3": {
+   "563": "FAIL (0/7 sig, N=7)",
+   "563b": "FAIL (3/7 sig, N=20, SECONDARY)"
+  },
+  "P3b": {
+   "563": "FAIL (excursions=1.3)",
+   "563b": "FAIL (excursions=1.3)"
+  },
+  "P4": {
+   "563": "FAIL (0/4)",
+   "563b": "FAIL (2/4, improved)"
+  },
+  "P5": {
+   "563": "FAIL (p>0.05, N=3v4)",
+   "563b": "FAIL (P5a 11/20 C, P5b p>0.05)"
+  },
+  "P6": {
+   "563": "PASS",
+   "563b": "PASS"
+  },
+  "P7": {
+   "563": "PASS (3/4)",
+   "563b": "FAIL (2/4)"
+  },
+  "P8": {
+   "563": "PASS (5/7)",
+   "563b": "PASS (14/20)"
+  }
+ },
+ "regressions": [
+  "P1",
+  "P7"
+ ],
+ "improvements": [],
+ "composite_metrics": {
+  "mean_viability": 0.9635,
+  "mean_Y_final": 0.8478,
+  "total_hazard_events": 255,
+  "n_folios_perfect_viab": 12,
+  "n_folios": 20
+ },
+ "summary_table": {
+  "P1_viable_envelope": {
+   "pass": false,
+   "key_metric": "full>B2: 12/20, full>N1: 15/20"
+  },
+  "P2_packet_shape": {
+   "pass": true,
+   "key_metric": "global KW sig: 7/7 vars"
+  },
+  "P3_section_template": {
+   "pass": false,
+   "key_metric": "KW sig: 3/7 vars (5 sections, SECONDARY)"
+  },
+  "P3b_productive_diversity": {
+   "pass": false,
+   "key_metric": "nontrivial pass: 20/20, mean excursions: 1.3, mean bounded: 0.0"
+  },
+  "P4_routing_consequence": {
+   "pass": false,
+   "key_metric": "correct routes: 2/4 (h, m)"
+  },
+  "P5_headless_regime": {
+   "pass": false,
+   "key_metric": "P5a C_better=11/20, S_better=1/20; P5b C p=0.151"
+  },
+  "P6_cts_closure": {
+   "pass": true,
+   "key_metric": "viab better: 14/20, sep+: 15/20"
+  },
+  "P7_null_destruction": {
+   "pass": false,
+   "key_metric": "2/4 nulls destroyed (N1, N2)"
+  },
+  "P8_preferred_profile": {
+   "pass": true,
+   "key_metric": "preferred best on >=1 metric: 14/20"
+  }
+ },
+ "constraints_note": "COUPLING_FAILED verdict: no new constraints created. Phase 563 constraints C1581-C1587 remain valid for the original 563 configuration. The recalibration attempt is a documented negative result.",
+ "lessons_learned": [
+  "Decay reduction (30-40% on T/X) did NOT produce oscillation. Mean excursions stayed at 1.3 (identical to 563). The monotonic drift is structural, not a matter of parameter magnitude \u2014 the update equation itself cannot produce oscillation under the current architecture.",
+  "Routing accumulator improved P4 from 0/4 to 2/4. m\u2192C is strongly significant (p~0, delta=+0.065) and h\u2192TR passes (p=0.007). The cumulative approach is directionally correct but r\u2192X and y\u2192T remain undetectable. The routing effect is domain-modulated, not purely terminal-dependent.",
+  "A2 profile is systematically hostile: f55r, f39v, f66r, f85r1, f86v5, f86v6 all show hazard exposure under their preferred A2 profile. A1 achieves perfect viability for all 20 folios regardless of assignment. The A2/A3 profiles may have structural sensitivity misalignment with the supervisory signal distribution.",
+  "P7 regressed from 3/4 to 2/4 null types passing. N3 (line shuffle) and N4 (within-line shuffle) both fail at the 14/20 threshold. The routing accumulator adds within-line structure that the original model lacked, making N4 more destructive \u2014 but the 14/20 threshold is harder to reach than 5/7.",
+  "P2 packet shape is robust: 7/7 state variables significant in both 563 and 563b. This is the most stable result across configurations, confirming line-level SPEC/WORK/CLOSE as the primary grammar-to-apparatus coupling channel.",
+  "Headless modulation at folio level (C1574 compliance) produces weak effects. P5a shows C_better for 11/20 but S_better for only 1/20. The modulation direction is inconsistent \u2014 higher headless rate should increase both C and S sensitivity, but the effect on S is inverted (lower S in full model vs B6). This suggests the headless modulation function needs retuning or the relationship is non-monotonic."
+ ]
+}

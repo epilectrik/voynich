@@ -1,0 +1,214 @@
+{
+  "H1": {
+    "empirical_quintile_actions": [
+      [
+        0.23943555355072021,
+        0.00043014620314352214,
+        0.006706010550260544,
+        0.15848134458065033,
+        0.012722144834697247,
+        0.5100086331367493,
+        0.07217440754175186
+      ],
+      [
+        0.1939951330423355,
+        0.0006301069515757263,
+        0.016966084018349648,
+        0.19115732610225677,
+        0.025902898982167244,
+        0.5018264651298523,
+        0.06940250843763351
+      ],
+      [
+        0.17273803055286407,
+        0.0008292679558508098,
+        0.021590450778603554,
+        0.19825688004493713,
+        0.030356990173459053,
+        0.49048763513565063,
+        0.08563348650932312
+      ],
+      [
+        0.1662003993988037,
+        0.0005327258259057999,
+        0.01830107346177101,
+        0.20138338208198547,
+        0.025174815207719803,
+        0.49536827206611633,
+        0.09294740855693817
+      ],
+      [
+        0.21220429241657257,
+        0.00035870421561412513,
+        0.007468519266694784,
+        0.16260738670825958,
+        0.012752091512084007,
+        0.5069767236709595,
+        0.09757813066244125
+      ]
+    ],
+    "empirical_ib_profile": [
+      0.23943555355072021,
+      0.1939951330423355,
+      0.17273803055286407,
+      0.1662003993988037,
+      0.21220429241657257
+    ],
+    "q1_peak": false,
+    "q1_peak_quintile": 0,
+    "closure_ratio": 14.567597547832397,
+    "adjacent_jsds": [
+      0.004294516001427041,
+      0.0010327261086413243,
+      0.0003238551016060509,
+      0.004717790784009319
+    ],
+    "ib_asymmetry": 0.02751299738883972,
+    "da_asymmetry": 0.0010487493127584457,
+    "voynich_jsd": 0.1663102255615086,
+    "position_jsd": 0.4117111846784095,
+    "flat_jsd": 0.16570948121933413,
+    "voynich_lite_jsd": 0.16611328506980994,
+    "equal_complexity_jsd": 0.16513559230765423,
+    "voynich_beats_position": true,
+    "voynich_beats_lite": false,
+    "voynich_beats_ec": false,
+    "permutation_p": 0.864,
+    "ablation_jsd": 0.4117111846784095,
+    "ablation_degradation": 0.2454009591169009,
+    "oos_train_jsd": 0.1631959574988137,
+    "oos_test_jsd": 0.16987324211438698,
+    "n_cycles": 336324
+  },
+  "H2": {
+    "hmm_k_distribution": {
+      "6": 40,
+      "5": 9,
+      "4": 1
+    },
+    "n_hmm_cycles": 3320,
+    "mean_interleaving": 0.6171512007713318,
+    "nc_fraction": 0.9885542168674699,
+    "mean_persistence": 0.382848858833313,
+    "n_macro_cycles": 3320,
+    "mean_macro_interleaving": 0.05992789566516876,
+    "macro_nc_fraction": 0.16566265060240964,
+    "mean_macro_persistence": 0.9400721788406372,
+    "persistence_in_range": false,
+    "permutation_p": 1.0,
+    "ablation_degradation": 0.44007210433483124,
+    "significant": false
+  },
+  "H3": {
+    "passive_mean_pos": 0.46227818727493286,
+    "active_mean_pos": 0.5107995867729187,
+    "delta": 0.04852139949798584,
+    "delta_positive": true,
+    "delta_sufficient": true,
+    "passive_to_increase_below": 0.1528681367635727,
+    "passive_next_entropy": 1.7999399900436401,
+    "active_next_entropy": 1.636961817741394,
+    "active_higher_entropy": false,
+    "split_error": 0.003963220213800659,
+    "merged_error": 0.0008051787948790645,
+    "split_advantage": -0.0031580414189215948,
+    "split_outperforms": false,
+    "permutation_p": 0.0,
+    "oos_train_delta": 0.05005514621734619,
+    "oos_test_delta": 0.04694947600364685,
+    "significant": true,
+    "sup_monitoring_mean_pos": 0.48830172604436484,
+    "sup_checking_mean_pos": 0.4930818697026871,
+    "sup_monitoring_frac": 0.04431004449725151,
+    "sup_checking_frac": 0.003054881002753973,
+    "sup_delta": 0.0047801436583222445,
+    "check_event_mean_pos": 0.40227508544921875,
+    "check_event_mean_dur": 2.763270616531372,
+    "check_event_n_post_states": 1.0597189664840698
+  },
+  "H4": {
+    "existence_frac": 0.8640328968494666,
+    "db_frac": 0.17801093967260762,
+    "mean_position": 0.47282901406288147,
+    "early_biased": true,
+    "context_diff": 0.0700625896240315,
+    "context_independent": false,
+    "correction_rho": -0.0856748744640615,
+    "correction_p": 0.0,
+    "q4_enrichment": 0.8915990591049194,
+    "q4_depleted": false,
+    "permutation_p": 0.0,
+    "significant": false
+  },
+  "H5": {
+    "raw_lag1": 0.5228216457548882,
+    "shuffle_mean_lag1": 0.3971172543122316,
+    "shuffle_p": 1.0,
+    "shuffle_collapses": true,
+    "compensatory_ratio": 0.6313098456882839,
+    "no_compensatory": true,
+    "significant": true,
+    "n_lag1_pairs": 335824
+  },
+  "H6": {
+    "mean_ib_to_da": 0.019624341279268265,
+    "mean_check_to_da": 0.021599464118480682,
+    "da_ratio": 1.1006465802395617,
+    "transition_immune": true,
+    "check_more_dangerous": false,
+    "stab_enrichment": 1.117474184398413,
+    "stability_enriched": false,
+    "phase_depletion": 0.9250056929282217,
+    "phase_depleted": false,
+    "ib_low_stab": 0.2078748643398285,
+    "ib_high_stab": 0.1860220730304718,
+    "permutation_p": 0.256,
+    "significant": false
+  },
+  "apparatus": {
+    "SLOW_SUSTAINED": {
+      "n_cycles": 60172,
+      "h1_voynich_jsd": 0.22070665799489397,
+      "h1_position_jsd": 0.4802008681651482,
+      "h1_beats_position": true,
+      "h1_q1_peak": false,
+      "h1_closure_ratio": 31.525989840858404
+    },
+    "MODERATE": {
+      "n_cycles": 217671,
+      "h1_voynich_jsd": 0.19881639232891524,
+      "h1_position_jsd": 0.4524956220261295,
+      "h1_beats_position": true,
+      "h1_q1_peak": false,
+      "h1_closure_ratio": 22.611632217161397
+    },
+    "FAST_AGGRESSIVE": {
+      "n_cycles": 58481,
+      "h1_voynich_jsd": 0.0967758735332312,
+      "h1_position_jsd": 0.28856199668625104,
+      "h1_beats_position": true,
+      "h1_q1_peak": false,
+      "h1_closure_ratio": 6.714122904978604
+    }
+  },
+  "null_supervisor": {
+    "available": true,
+    "n_cycles": 86963,
+    "H1_voynich_jsd": 0.14320834764584797,
+    "H1_q1_peak": false,
+    "H1_q1_peak_quintile": 0,
+    "H1_closure_ratio": 13.150014493193495,
+    "H2_mean_macro_persistence": 0.9177722334861755,
+    "H2_persistence_in_range": false,
+    "H3_delta": 0.052488237619400024,
+    "H3_split_advantage": -0.0028983702566627054,
+    "H3_active_higher_entropy": false,
+    "H6_mean_ib_to_da": 0.037653639912605286,
+    "H6_transition_immune": true,
+    "H6_da_ratio": 0.9722913673036413,
+    "full_beats_null_on": [
+      "H1_closure",
+      "H6_ib_da"
+    ]
+  }
+}

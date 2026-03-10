@@ -1,0 +1,166 @@
+{
+ "metadata": {
+  "phase": "560b",
+  "task": "T2b_constraint_validation",
+  "timestamp": "2026-03-08T20:29:13"
+ },
+ "T2bA": {
+  "tests": [
+   {
+    "test": "Z1",
+    "constraint": "C1463",
+    "description": "ZERO-hazard enriched at SPEC > 1.1x",
+    "value": 1.158,
+    "threshold": 1.1,
+    "pass": true
+   },
+   {
+    "test": "Z2",
+    "constraint": "C1463",
+    "description": "IMMUNE enriched at WORK > 1.1x",
+    "value": 1.038,
+    "threshold": 1.1,
+    "pass": false
+   },
+   {
+    "test": "Z3",
+    "constraint": "C1463",
+    "description": "HIGH enriched at CLOSE > 1.05x",
+    "value": 1.1312,
+    "threshold": 1.05,
+    "pass": true
+   },
+   {
+    "test": "Z4",
+    "constraint": "C1464",
+    "description": "THERMAL at Q1 > overall Q1 rate",
+    "value": 0.2387,
+    "baseline": 0.1802,
+    "pass": true
+   },
+   {
+    "test": "Z5",
+    "constraint": "C1466",
+    "description": "Zone-hazard V stable across line-length halves (ratio > 0.7)",
+    "v_short": 0.0869,
+    "v_long": 0.0828,
+    "ratio": 0.9525,
+    "pass": true
+   },
+   {
+    "test": "M1",
+    "constraint": "C1486",
+    "description": "m-terminal mean line_pos > 0.85",
+    "value": 0.9202,
+    "n": 289,
+    "pass": true
+   },
+   {
+    "test": "M2",
+    "constraint": "C1486",
+    "description": "m-terminal line_pos > 0.9 rate > 60%",
+    "value": 0.7958,
+    "pass": true
+   },
+   {
+    "test": "R1",
+    "constraint": "C1563",
+    "description": "r->a enrichment > 1.8x",
+    "value": 2.014,
+    "threshold": 1.8,
+    "pass": true
+   },
+   {
+    "test": "R2",
+    "constraint": "C1563",
+    "description": "y->k enrichment > 1.3x",
+    "value": 1.716,
+    "threshold": 1.3,
+    "pass": true
+   },
+   {
+    "test": "R3",
+    "constraint": "C1563",
+    "description": "h->t enrichment > 1.5x",
+    "value": 2.039,
+    "threshold": 1.5,
+    "pass": true
+   },
+   {
+    "test": "R4",
+    "constraint": "C1563",
+    "description": "m->o enrichment > 1.3x",
+    "value": 1.701,
+    "threshold": 1.3,
+    "pass": true
+   }
+  ],
+  "pass_count": 10,
+  "total": 11,
+  "threshold": 10,
+  "pass": true
+ },
+ "T2bB": {
+  "tests": [
+   {
+    "test": "H1",
+    "description": "Headless CLOSE > SPEC rate",
+    "spec": 0.2404,
+    "close": 0.2861,
+    "pass": true
+   },
+   {
+    "test": "P1",
+    "description": "HEADER LOW/ZERO enrichment > 1.0x (C1467)",
+    "value": 1.023,
+    "pass": true
+   },
+   {
+    "test": "P2",
+    "description": "TAIL HIGH enrichment > 1.0x (C1467)",
+    "value": 1.1242,
+    "pass": true
+   },
+   {
+    "test": "P3",
+    "description": "Headless rate differs HEADER vs BODY (diff > 0.02)",
+    "header_rate": 0.3024,
+    "body_rate": 0.2693,
+    "diff": 0.0331,
+    "pass": true
+   },
+   {
+    "test": "P4",
+    "description": "No paragraph ordering preference (|rho| < 0.15, C1399)",
+    "rho": -0.0658,
+    "pass": true
+   },
+   {
+    "test": "CL1",
+    "description": "Q4 OPAQUE terminal rate > Q1-Q3 rate",
+    "q4": 0.3396,
+    "q13": 0.3034,
+    "pass": true
+   },
+   {
+    "test": "CL2",
+    "description": "Q3->Q4 HEAD JSD > Q2->Q3 HEAD JSD",
+    "jsd_q2q3": 0.000489,
+    "jsd_q3q4": 0.011082,
+    "ratio": 22.68,
+    "pass": true
+   },
+   {
+    "test": "CL3",
+    "description": "m-terminal type diversity <= 15 (C1434)",
+    "n_types": 10,
+    "pass": true
+   }
+  ],
+  "pass_count": 8,
+  "total": 8,
+  "threshold": 6,
+  "pass": true
+ },
+ "overall_pass": true
+}

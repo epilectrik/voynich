@@ -1,0 +1,122 @@
+{
+  "verdict": {
+    "verdict": "WEAK_PASS",
+    "reason": "Anchor + 1 secondary"
+  },
+  "hypothesis_table": [
+    {
+      "hypothesis": "H1",
+      "name": "Safety-Envelope (Operator Scheduling)",
+      "p_value": 0.0,
+      "significant": true,
+      "metrics": {
+        "jsd": 0.11054617133831778,
+        "auc": 0.6314033805959591,
+        "mean_rho": 0.8944271909999159,
+        "contrasts": {
+          "risk_Q4_gt_Q0": true,
+          "risk_Q3_gt_Q0": true,
+          "risk_monotone_Q0_to_Q4": true,
+          "risk_Q0_lowest": true
+        }
+      }
+    },
+    {
+      "hypothesis": "H2",
+      "name": "Two-State Supervisory Decomposition",
+      "p_value": 0.4855144855144855,
+      "significant": false,
+      "metrics": {
+        "cosine": 0.6969571164287178,
+        "silhouette": 0.18244557315998963,
+        "interleaving": 0.49075544133919524
+      }
+    },
+    {
+      "hypothesis": "H3",
+      "name": "Dual Feedback Channel",
+      "p_value": 0.000999000999000999,
+      "significant": true,
+      "metrics": {
+        "delta": 0.02041353145049507,
+        "split_advantage": -0.004544819857762811
+      }
+    },
+    {
+      "hypothesis": "H4",
+      "name": "Thermal-Work Neutralization",
+      "p_value": 0.14885114885114886,
+      "significant": false,
+      "metrics": {
+        "jsd": 0.1306411951262505,
+        "rho": -0.6,
+        "k_aligned": false
+      }
+    },
+    {
+      "hypothesis": "H5",
+      "name": "Closure Containment (Operator)",
+      "p_value": 0.0,
+      "significant": true,
+      "metrics": {
+        "rho": 0.8944271909999159,
+        "closure_biased": true,
+        "cross_indep": "False"
+      }
+    }
+  ],
+  "failure_conditions": {
+    "FC1": {
+      "triggered": false,
+      "desc": "Voynich does not beat random on ANY hypothesis"
+    },
+    "FC2": {
+      "triggered": true,
+      "desc": "Mode A/B decomposition not significant"
+    },
+    "FC3": {
+      "triggered": true,
+      "desc": "Merged model >= split model"
+    },
+    "FC4": {
+      "triggered": true,
+      "desc": "k-domain aligns with HOT_UNSTABLE"
+    },
+    "FC5": {
+      "triggered": false,
+      "desc": "Risk start-biased not closure-biased"
+    },
+    "FC6": {
+      "triggered": false,
+      "desc": "Voynich loses to permuted-Voynich (overfitting)"
+    },
+    "FC7": {
+      "triggered": false,
+      "desc": "No ablation shows degradation"
+    }
+  },
+  "non_circularity": {
+    "T1_voynich_input": "NONE \u2014 zero Voynich-derived values in T1",
+    "operator_labels": "PROACTIVE/NEUTRAL/REACTIVE from control error sign",
+    "verdict": "CLEAN"
+  },
+  "ablations": {
+    "baseline": {
+      "H1_jsd": 0.11054617133831778,
+      "H5_rho": 0.8944271909999159
+    },
+    "no_line_zone": {
+      "H1_jsd": 0.03442000315475355,
+      "degradation": -0.07612616818356423
+    }
+  },
+  "out_of_sample": {
+    "n_train": 38003,
+    "n_test": 38238,
+    "H1_train_jsd": 0.09410647445464833,
+    "H1_test_jsd": 0.13443793065414744,
+    "H5_train_rho": 0.8944271909999159,
+    "H5_test_rho": 0.8944271909999159
+  },
+  "design_note": "v3b: Ascending half-cycle segmentation (trough \u2192 peak). Full trough-to-trough cycles give symmetric overshoot risk (inverted-U). The Voynich predicts monotonically increasing danger (Q0=safe, Q4=dangerous). The ascending half (trough\u2192peak) matches: overshoot risk increases monotonically from zero (trough) to maximum (peak). Primary test variable: overshoot risk = max(0, T - T_target)."
+}

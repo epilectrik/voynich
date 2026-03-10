@@ -1,0 +1,268 @@
+{
+  "metadata": {
+    "phase": "HIERARCHICAL_TRACE_ATTRIBUTION",
+    "task": "T5",
+    "elapsed_seconds": 0.0
+  },
+  "layer_support_indices": {
+    "section": {
+      "value": 10.28,
+      "supported": true,
+      "feature_zs": {
+        "head_k": 11.73,
+        "head_e": 3.46,
+        "head_a": 9.44,
+        "is_headless": 17.43,
+        "compound_depth": 9.32
+      }
+    },
+    "folio": {
+      "value": 7.06,
+      "supported": true,
+      "feature_zs": {
+        "head_k": 7.03,
+        "head_e": 9.99,
+        "head_a": 9.71,
+        "is_headless": 4.75,
+        "compound_depth": 3.81
+      }
+    },
+    "paragraph": {
+      "value": 2.22,
+      "supported": true,
+      "feature_zs": {
+        "head_k": 0.95,
+        "head_e": 4.39,
+        "head_a": 6.53,
+        "is_headless": 4.71,
+        "hazard_ord": 2.8,
+        "opacity_ord": 0.31,
+        "compound_depth": 1.55,
+        "is_safe_pathway": -0.03,
+        "routing_match": -1.25
+      }
+    },
+    "line": {
+      "value": 1.15,
+      "supported": false,
+      "feature_zs": {
+        "hazard_ord": 4.09,
+        "opacity_ord": 4.53,
+        "is_safe_pathway": -0.67,
+        "routing_match": -3.36
+      }
+    }
+  },
+  "n_supported": 3,
+  "total_explained": 0.147,
+  "sub_folio_resolution": {
+    "verdict": "YES",
+    "T2_pass": true,
+    "T3_pass": true,
+    "detail": "Distributional shape carries folio information beyond averages. Both paragraph (T2) and line (T3) distributions show folio specificity."
+  },
+  "headless_independence": {
+    "level": "FOLIO_SPECIFIC",
+    "section_strong": true,
+    "folio_specific": true,
+    "paragraph_varying": false,
+    "within_section_discriminable": true,
+    "detail": "Headless ecology has folio-specific component beyond section template. Different folios deploy headless tokens differently.",
+    "T4-A": {
+      "pass": true,
+      "count": 5,
+      "threshold": 5,
+      "details": {
+        "hl_rate": 0.19204,
+        "pseudo_d_frac": 0.08112,
+        "pseudo_i_frac": 0.00312,
+        "pseudo_l_frac": 0.11172,
+        "pseudo_cpf_frac": 0.06409,
+        "sfx_bifurc": 0.136,
+        "displaced_kt_rate": 0.0,
+        "displaced_nonkt_rate": 0.01923,
+        "hl_term_y_frac": 0.00106,
+        "hl_term_n_frac": 0.00916,
+        "hl_close_rate": 0.00889,
+        "hl_spec_rate": 0.01426,
+        "hl_headed_adj_rate": 0.02008,
+        "hl_compound_rate": 0.00814
+      }
+    },
+    "T4-B": {
+      "pass": true,
+      "count": 13,
+      "threshold": 3,
+      "details": {
+        "hl_rate": {
+          "folio": 0.25737,
+          "section": 0.19204,
+          "folio_gt_section": true
+        },
+        "pseudo_d_frac": {
+          "folio": 0.26162,
+          "section": 0.08112,
+          "folio_gt_section": true
+        },
+        "pseudo_i_frac": {
+          "folio": 0.12103,
+          "section": 0.00312,
+          "folio_gt_section": true
+        },
+        "pseudo_l_frac": {
+          "folio": 0.25777,
+          "section": 0.11172,
+          "folio_gt_section": true
+        },
+        "pseudo_cpf_frac": {
+          "folio": 0.19367,
+          "section": 0.06409,
+          "folio_gt_section": true
+        },
+        "sfx_bifurc": {
+          "folio": 0.15569,
+          "section": 0.136,
+          "folio_gt_section": true
+        },
+        "displaced_kt_rate": {
+          "folio": 0.0,
+          "section": 0.0,
+          "folio_gt_section": false
+        },
+        "displaced_nonkt_rate": {
+          "folio": 0.15857,
+          "section": 0.01923,
+          "folio_gt_section": true
+        },
+        "hl_term_y_frac": {
+          "folio": 0.13272,
+          "section": 0.00106,
+          "folio_gt_section": true
+        },
+        "hl_term_n_frac": {
+          "folio": 0.15543,
+          "section": 0.00916,
+          "folio_gt_section": true
+        },
+        "hl_close_rate": {
+          "folio": 0.15348,
+          "section": 0.00889,
+          "folio_gt_section": true
+        },
+        "hl_spec_rate": {
+          "folio": 0.24129,
+          "section": 0.01426,
+          "folio_gt_section": true
+        },
+        "hl_headed_adj_rate": {
+          "folio": 0.28354,
+          "section": 0.02008,
+          "folio_gt_section": true
+        },
+        "hl_compound_rate": {
+          "folio": 0.15444,
+          "section": 0.00814,
+          "folio_gt_section": true
+        }
+      }
+    },
+    "T4-C": {
+      "pass": false,
+      "n_qualifying_folios": 55,
+      "n_exceeding": 2,
+      "fraction_exceeding": 0.0364,
+      "threshold": 0.3
+    },
+    "T4-D": {
+      "pass": true,
+      "pass_count": 1,
+      "tested_count": 3,
+      "threshold": 1
+    }
+  },
+  "narrative_synthesis": {
+    "layer_ordering": {
+      "raw_vs_order": "line(0.095) > paragraph(0.028) > folio(0.014) > section(0.009)",
+      "significance_order": "section(z=8.0) > folio(z=7.1) > paragraph(z=2.2) > line(z=1.1)",
+      "consistent_with_5layer": true,
+      "note": "Raw VS ordering shows line > paragraph > folio > section, reflecting that finer groupings mechanically capture more variance. Significance ordering (z-scores against level-specific nulls) is the correct measure of structural reality at each level."
+    },
+    "headless_ecology": {
+      "level": "FOLIO_SPECIFIC",
+      "detail": "Headless ecology has folio-specific component beyond section template. Different folios deploy headless tokens differently."
+    },
+    "section_specifics": {
+      "S": {
+        "T2_z": 6.21,
+        "T2_pass": "True",
+        "T3_pass_count": 0,
+        "T3_B2_pass": true
+      },
+      "H": {
+        "T2_z": 5.06,
+        "T2_pass": "True",
+        "T3_pass_count": 0,
+        "T3_B2_pass": false
+      },
+      "B": {
+        "T2_z": 2.34,
+        "T2_pass": "True",
+        "T3_pass_count": 0,
+        "T3_B2_pass": false
+      }
+    },
+    "paragraph_as_subroutine": {
+      "headless_varies_by_paragraph": false,
+      "detail": "Headless ecology has folio-specific component beyond section template. Different folios deploy headless tokens differently."
+    },
+    "executor_implication": "Executor must model paragraph-level emphasis distributions. Section templates are real but not sufficient \u2014 folio-specific paragraph deployment patterns add genuine structural information."
+  },
+  "verdict": "HIERARCHY_VALIDATED",
+  "criteria_used": {
+    "T1-A_z (section sig >=5/9)": {
+      "pass": true,
+      "count": 8
+    },
+    "T1-B_z (folio sig >=4/9)": {
+      "pass": true,
+      "count": 9
+    },
+    "T1-C_z (para sig >=3/9)": {
+      "pass": true,
+      "count": 4
+    },
+    "T1-E_z (line hazard sig >=2/4)": {
+      "pass": true,
+      "count": 2
+    },
+    "T2 pass": {
+      "pass": true
+    },
+    "T3 pass": {
+      "pass": true
+    },
+    "LSIs supported (>=3/4)": {
+      "pass": true,
+      "count": 3
+    },
+    "LSIs supported (>=2/4)": {
+      "pass": true,
+      "count": 3
+    }
+  },
+  "scope_note": "Trace attribution is not trace execution. Phase 561 validates the nested execution hierarchy as the correct architectural decomposition. It does NOT prove token-for-token executor fidelity, local path specificity, or simulation recoverability. That is the next phase's problem (executor construction).",
+  "sub_test_summary": {
+    "T1_overall": false,
+    "T1_section_sig_count": 8,
+    "T1_folio_sig_count": 9,
+    "T2_overall": true,
+    "T2_pass_count": 3,
+    "T3_overall": true,
+    "T4_criteria": {
+      "T4-A": true,
+      "T4-B": true,
+      "T4-C": false,
+      "T4-D": true
+    }
+  }
+}

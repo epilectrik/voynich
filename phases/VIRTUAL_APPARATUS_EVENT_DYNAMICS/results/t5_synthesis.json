@@ -1,0 +1,143 @@
+{
+ "metadata": {
+  "phase": "564",
+  "task": "T5_synthesis",
+  "timestamp": "2026-03-09T13:04:06",
+  "verdict": "EVENT_GATING_FAILED",
+  "n_tests_total": 9,
+  "n_tests_pass": 2,
+  "n_tests_fail": 7,
+  "n_constraints_proposed": 0
+ },
+ "verdict_rationale": "EVENT_GATING_FAILED: Only 2/9 tests pass (P2, P8), down from 5/9 in Phase 563 and 3/9 in Phase 563b. The nonlinear restoring force (cubic stiffening d_nonlinear=1.0-1.5) combined with original linear decay parameters creates an impenetrable equilibrium basin. Universal viability=1.0 collapses all viability-based discrimination: P1 (full=B2=N1=1.0), P6 (full=B3 identical), P7 (0/4 null types destroyed, all viab=1.0 with std=0). P3 bounded cycles (mean=2.8, bounded_frac=0.126) show only A3 profile folios oscillate. P4 routing (1/4 correct) regressed from 563b (2/4): only m->C survives (p~0, delta=+0.063). The event-gated architecture adds too many restoring mechanisms (linear + cubic + threshold + phase multiplier), each individually reasonable but combined creating over-stabilization that kills all discriminability.",
+ "comparison_563_vs_563b_vs_564": {
+  "P1": {
+   "563": "PASS",
+   "563b": "FAIL",
+   "564": "FAIL"
+  },
+  "P2": {
+   "563": "PASS",
+   "563b": "PASS",
+   "564": "PASS"
+  },
+  "P3": {
+   "563": "FAIL",
+   "563b": "FAIL",
+   "564": "FAIL"
+  },
+  "P4": {
+   "563": "FAIL",
+   "563b": "FAIL",
+   "564": "FAIL"
+  },
+  "P5": {
+   "563": "FAIL",
+   "563b": "FAIL",
+   "564": "FAIL"
+  },
+  "P6": {
+   "563": "PASS",
+   "563b": "PASS",
+   "564": "FAIL"
+  },
+  "P7": {
+   "563": "PASS",
+   "563b": "FAIL",
+   "564": "FAIL"
+  },
+  "P8": {
+   "563": "PASS",
+   "563b": "PASS",
+   "564": "PASS"
+  },
+  "P9": {
+   "563": "SEC",
+   "563b": "SEC",
+   "564": "SEC"
+  }
+ },
+ "regressions_from_563": [
+  "P1",
+  "P6",
+  "P7"
+ ],
+ "regressions_from_563b": [
+  "P6"
+ ],
+ "improvements_from_563": [],
+ "improvements_from_563b": [],
+ "summary_table": {
+  "P1_viable_envelope": {
+   "pass": false,
+   "key_metric": "full_gt_B2=0/20, full_gt_N1=0/20; all viabilities=1.0 (full=B2=N1)"
+  },
+  "P2_packet_shape": {
+   "pass": true,
+   "key_metric": "n_significant=7/7 SVs; strongest H=1791.9 (Y)"
+  },
+  "P3_bounded_cycles": {
+   "pass": false,
+   "key_metric": "mean_cycles=2.8, bounded_frac=0.126, n_meeting_both=5/20"
+  },
+  "P4_routing_consequence": {
+   "pass": false,
+   "key_metric": "P4a: 1/4 correct (m->C only, delta=+0.063, p~0); r->X wrong dir, y->T wrong dir, h->TR wrong dir"
+  },
+  "P5_headless_config": {
+   "pass": false,
+   "key_metric": "P5a: n_c_better=5/20, n_s_better=3/20; P5b: C p=0.083, S p=0.139"
+  },
+  "P6_cts_closure": {
+   "pass": false,
+   "key_metric": "viab_better=0/20, sep_positive=2/20; full=B3 identical (CTS has no effect under over-stiffened plant)"
+  },
+  "P7_null_destruction": {
+   "pass": false,
+   "key_metric": "null_types_pass=0/4; all null viab=1.0 with std=0 (plant cannot distinguish structured from random)"
+  },
+  "P8_profile_superiority": {
+   "pass": true,
+   "key_metric": "preferred_best=20/20 (trivially true: all viab=1.0, discrimination on Y_final only)"
+  },
+  "P9_section_template": {
+   "pass": null,
+   "key_metric": "n_significant=2/7 SVs (S, Y); SECONDARY"
+  }
+ },
+ "composite_metrics": {
+  "mean_viability": 1.0,
+  "mean_Y_final": 0.7366,
+  "total_hazard_events": 0,
+  "folios_with_perfect_viability": "20/20",
+  "comparison": {
+   "563": {
+    "mean_viability": 0.9616,
+    "mean_Y_final": 0.878,
+    "total_hazard": 34,
+    "perfect_viab": "4/7"
+   },
+   "563b": {
+    "mean_viability": 0.9635,
+    "mean_Y_final": 0.848,
+    "total_hazard": 255,
+    "perfect_viab": "12/20"
+   },
+   "564": {
+    "mean_viability": 1.0,
+    "mean_Y_final": 0.7366,
+    "total_hazard": 0,
+    "perfect_viab": "20/20"
+   }
+  }
+ },
+ "lessons_learned": [
+  "Over-stabilization is as fatal as under-stabilization. Phase 563 had too little decay leading to hazard violations. Phase 564 has too much restoring force \u2014 universal viability=1.0 kills all discrimination. The cubic restoring force (d_nonlinear=1.0-1.5) combined with the original 563 linear decay parameters absorbs all supervisory signal variation before it can reach hazard boundaries.",
+  "Self-test V7 is a necessary but not sufficient gate. Synthetic inputs (dV=0.08-0.15) produce oscillation; real supervisory traces (dV~0.01-0.05) do not. Future self-tests must calibrate dV magnitudes against actual supervisory signal distributions.",
+  "A3 profile CAN oscillate (5/20 folios meet P3 criterion). The architecture is not wrong \u2014 the parametric regime is. Linear decay needs reduction (not increase) when cubic stiffening is added. Profile-dependent oscillation confirms the mechanism: A3 (DISTILL_COLLECT, highest sensitivity) produces 5-13 cycles in S-section folios; A1 (BATH_REFLUX, lowest sensitivity) produces 0 cycles.",
+  "P2 packet shape (7/7 significant) is the most robust coupling signal across all three phases (563, 563b, 564). It survived over-stabilization, under-stabilization, and parametric recalibration. Line-level SPEC/WORK/CLOSE remains the primary grammar-to-apparatus coupling channel.",
+  "m->C routing remains the strongest and most robust routing signal. It passed in 563b (delta=+0.065, p~0) and 564 (delta=+0.063, p~0). All other routes (r->X, y->T, h->TR) failed in 564, regressing from 563b where h->TR also passed.",
+  "The additive architecture (linear + cubic + threshold + phase multiplier) layers too many restoring mechanisms. Each is individually reasonable; combined they create an impenetrable equilibrium basin. D1 shows B7 (minus thresholds) has identical outcomes. D2 shows B8 (fixed WORK law) has identical outcomes. Both confirm the restoring force dominates all other dynamics."
+ ],
+ "constraints_note": "EVENT_GATING_FAILED: no new constraints. Phase 563 constraints C1581-C1587 remain valid for the original 563 configuration. This phase is a documented negative result."
+}

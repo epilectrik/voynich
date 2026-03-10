@@ -1,0 +1,272 @@
+{
+  "description": "Voynich structural predictions \u2014 OPERATOR SCHEDULING LAYER",
+  "tier_discipline": "A positive result validates architecture-level alignment only; it does not validate lexical glosses.",
+  "redesign_rationale": "V1 tested raw physical risk against Voynich zones \u2014 wrong layer. The Voynich describes OPERATOR CONTROL SCHEDULING: where the operator places setup/work/containment actions within the control cycle. V2 maps Voynich hazard classes to operator action types: ZERO\u2192PROACTIVE, IMMUNE\u2192NEUTRAL, HIGH\u2192REACTIVE.",
+  "hypotheses": {
+    "H1_safety_envelope": {
+      "zone_hazard_enrichment": {
+        "Q0": {
+          "HIGH": 0.836,
+          "LOW": 1.021,
+          "ZERO": 1.236,
+          "IMMUNE": 0.826,
+          "N": 5022
+        },
+        "Q1-Q3": {
+          "HIGH": 1.006,
+          "LOW": 0.94,
+          "ZERO": 1.019,
+          "IMMUNE": 1.165,
+          "N": 12507
+        },
+        "Q4": {
+          "HIGH": 1.134,
+          "LOW": 1.116,
+          "ZERO": 0.743,
+          "IMMUNE": 0.786,
+          "N": 5561
+        }
+      },
+      "quintile_hazard": {
+        "Q0": {
+          "HIGH": 0.836,
+          "ZERO": 1.236,
+          "IMMUNE": 0.826
+        },
+        "Q1": {
+          "HIGH": 1.006,
+          "ZERO": 1.019,
+          "IMMUNE": 1.311
+        },
+        "Q2": {
+          "HIGH": 1.006,
+          "ZERO": 1.019,
+          "IMMUNE": 1.113
+        },
+        "Q3": {
+          "HIGH": 1.006,
+          "ZERO": 1.019,
+          "IMMUNE": 1.069
+        },
+        "Q4": {
+          "HIGH": 1.134,
+          "ZERO": 0.743,
+          "IMMUNE": 0.786
+        }
+      },
+      "operator_mapping": {
+        "ZERO": "PROACTIVE",
+        "IMMUNE": "NEUTRAL",
+        "HIGH": "REACTIVE"
+      },
+      "predicted_operator_profile": {
+        "Q0": {
+          "PROACTIVE": 1.236,
+          "NEUTRAL": 0.826,
+          "REACTIVE": 0.836
+        },
+        "Q1": {
+          "PROACTIVE": 1.019,
+          "NEUTRAL": 1.311,
+          "REACTIVE": 1.006
+        },
+        "Q2": {
+          "PROACTIVE": 1.019,
+          "NEUTRAL": 1.113,
+          "REACTIVE": 1.006
+        },
+        "Q3": {
+          "PROACTIVE": 1.019,
+          "NEUTRAL": 1.069,
+          "REACTIVE": 1.006
+        },
+        "Q4": {
+          "PROACTIVE": 0.743,
+          "NEUTRAL": 0.786,
+          "REACTIVE": 1.134
+        }
+      },
+      "ordered_contrasts": {
+        "PROACTIVE_peaks_Q0": true,
+        "NEUTRAL_peaks_Q1": true,
+        "REACTIVE_peaks_Q4": true,
+        "PROACTIVE_Q0_gt_Q4": true,
+        "REACTIVE_Q4_gt_Q0": true
+      },
+      "rationale": "The Voynich zone-hazard profile predicts operator action scheduling, not raw physical risk. ZERO at Q0 = planned setup. IMMUNE at Q1 = stable work onset. HIGH at Q4 = reactive correction (delayed response to overshoot).",
+      "sources": [
+        "C1463",
+        "C1464",
+        "C1426",
+        "C1427",
+        "C1428",
+        "C1566"
+      ]
+    },
+    "H2_mode_decomposition": {
+      "centroids": {
+        "A": [
+          0.43,
+          0.019,
+          0.086,
+          0.466
+        ],
+        "B": [
+          0.155,
+          0.031,
+          0.072,
+          0.741
+        ]
+      },
+      "clustering": {
+        "k2_win_rate": 0.965,
+        "mean_silhouette_k2": 0.459,
+        "non_contiguous_interleaving": 0.8
+      },
+      "category_profile": {
+        "A": {
+          "THERMAL": 0.429,
+          "OPERATION": 0.148,
+          "MONITORING": 0.058,
+          "CONTAINMENT": 0.055,
+          "STAGING": 0.053
+        },
+        "B": {
+          "THERMAL": 0.358,
+          "FLOW": 0.227,
+          "STAGING": 0.114,
+          "TRANSITION": 0.088,
+          "MONITORING": 0.011
+        }
+      },
+      "operator_analogues": {
+        "A": {
+          "intervention_density": "HIGH",
+          "active_frac": "HIGH",
+          "proactive_frac": "HIGH",
+          "reactive_frac": "HIGH",
+          "Q_var": "HIGH",
+          "dQ_var": "HIGH",
+          "boundary_frac": "HIGH",
+          "passive_frac": "LOW"
+        },
+        "B": {
+          "intervention_density": "LOW",
+          "active_frac": "LOW",
+          "proactive_frac": "LOW",
+          "reactive_frac": "LOW",
+          "Q_var": "LOW",
+          "dQ_var": "LOW",
+          "boundary_frac": "LOW",
+          "passive_frac": "HIGH",
+          "phi_accum": "HIGH",
+          "neutral_frac": "HIGH"
+        }
+      },
+      "emergence": {
+        "token_identity_prediction": 0.8,
+        "source": "C1341"
+      },
+      "sources": [
+        "C1229",
+        "C1231",
+        "C1309",
+        "C1341",
+        "C1410",
+        "C1515"
+      ]
+    },
+    "H3_feedback_channels": {
+      "positions": {
+        "sh_mean_position": 0.396,
+        "ch_mean_position": 0.515,
+        "delta": 0.12
+      },
+      "sh_following": {
+        "heat": 0.183,
+        "sustained_heat": 0.04,
+        "close": 0.043,
+        "check": 0.038,
+        "bare": 0.59
+      },
+      "ch_following": {
+        "heat": 0.106,
+        "close": 0.066,
+        "input": 0.042,
+        "iterate": 0.031,
+        "check": 0.058,
+        "bare": 0.469
+      },
+      "operator_mapping": {
+        "sh": {
+          "role": "PASSIVE_MONITORING",
+          "physical": "low |dQ|, observation window"
+        },
+        "ch": {
+          "role": "ACTIVE_CHECKING",
+          "physical": "high |dQ|, deliberate adjustment"
+        }
+      },
+      "split_prediction": {
+        "split_outperforms_merged": true,
+        "positional_separation": 0.12
+      },
+      "sources": [
+        "C929",
+        "C1203",
+        "C1243",
+        "C1299"
+      ]
+    },
+    "H4_thermal_work": {
+      "k_hazard": {
+        "any_hazard": 0.0,
+        "N": 3100
+      },
+      "k_category": {
+        "THERMAL": 0.903,
+        "THERMAL_enrichment": 3.8
+      },
+      "k_quintile": {
+        "Q0": 0.826,
+        "Q1": 1.311,
+        "Q2": 1.113,
+        "Q3": 1.069,
+        "Q4": 0.786
+      },
+      "operator_mapping": {
+        "target_state": "HOT_STABLE",
+        "Q1_peak_rationale": "k-HEAD peaks at Q1 because that is where the operator ENTERS the stable thermal work zone. The system has just reached operating temperature. The operator transitions from PROACTIVE heating to NEUTRAL steady-state work."
+      },
+      "sources": [
+        "C1446",
+        "C1464",
+        "C1475",
+        "C1476",
+        "C1477"
+      ]
+    },
+    "H5_closure_containment": {
+      "closure_risk": {
+        "Q0_HIGH_enrichment": 0.836,
+        "Q4_HIGH_enrichment": 1.134,
+        "closure_danger_ratio": 1.3564593301435406
+      },
+      "cross_line": {
+        "shuffle_p_value": 0.212,
+        "interpretation": "No significant cross-line memory after folio control"
+      },
+      "operator_mapping": {
+        "prediction": "REACTIVE operator actions (corrective, containment) concentrate at Q4. This is the delayed response to Q2-Q3 overshoot. The operator delay creates a natural lag: danger at Q3, correction at Q4.",
+        "cross_cycle_independence": true,
+        "test": "REACTIVE fraction at Q4 > Q0, matching HIGH enrichment pattern"
+      },
+      "sources": [
+        "C1434",
+        "C1463",
+        "C1470",
+        "C1471"
+      ]
+    }
+  }
+}

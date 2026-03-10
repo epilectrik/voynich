@@ -1,0 +1,174 @@
+{
+  "verdict": {
+    "verdict": "FAIL",
+    "reason": "H1 fails core criteria"
+  },
+  "hypothesis_results": {
+    "H1": {
+      "name": "Three-Phase Operator Scheduling + Closure Discontinuity",
+      "pass": false,
+      "voynich_jsd": 0.03529767204527638,
+      "position_jsd": 0.20943766552328982,
+      "beats_position": true,
+      "q1_peak": false,
+      "closure_ratio": 10.95041466644329,
+      "permutation_p": 0.75,
+      "ablation_degradation": 0.17413999347801346,
+      "beats_lite": false,
+      "beats_ec": false
+    },
+    "H2": {
+      "name": "Inferred Supervisory Decomposition (Dominant Two-Way)",
+      "pass": false,
+      "nc_fraction": 0.9589499420923948,
+      "mean_persistence": 0.3974483907222748,
+      "persistence_in_range": false,
+      "permutation_p": 1.0,
+      "ablation_degradation": -0.10255163908004761
+    },
+    "H3": {
+      "name": "Dual Feedback Channels (Passive Before Active)",
+      "pass": false,
+      "delta": 0.030220240354537964,
+      "delta_positive": true,
+      "split_advantage": -0.004092946048090174,
+      "split_outperforms": false,
+      "active_higher_entropy": false,
+      "permutation_p": 0.0
+    },
+    "H4": {
+      "name": "Preventive Stabilization Channel",
+      "pass": false,
+      "db_frac": 0.06658674627637873,
+      "mean_position": 0.43794679641723633,
+      "early_biased": true,
+      "context_independent": false,
+      "q4_depleted": false,
+      "correction_rho": -0.22894801715310836
+    },
+    "H5": {
+      "name": "Instruction-Profile Locality (Cross-Cycle Independence)",
+      "pass": true,
+      "raw_lag1": 0.27604250966765853,
+      "shuffle_p": 1.0,
+      "shuffle_collapses": true,
+      "compensatory_ratio": 0.38164290414393126,
+      "no_compensatory": true
+    },
+    "H6": {
+      "name": "Hazard Immunity of Energy Operations",
+      "pass": false,
+      "mean_ib_to_da": 0.25104764103889465,
+      "mean_check_to_da": 0.16816774010658264,
+      "da_ratio": 0.669863852974936,
+      "transition_immune": false,
+      "check_more_dangerous": false,
+      "stability_enriched": false,
+      "phase_depleted": false
+    }
+  },
+  "failure_conditions": {
+    "FC1": {
+      "triggered": false,
+      "desc": "Voynich does not beat random on ANY hypothesis"
+    },
+    "FC2": {
+      "triggered": false,
+      "desc": "Position-only beats Voynich on H1 JSD",
+      "voynich_jsd": 0.03529767204527638,
+      "position_jsd": 0.20943766552328982
+    },
+    "FC3": {
+      "triggered": true,
+      "desc": "Ablation improves ANY metric",
+      "improved_hypotheses": [
+        "H2"
+      ]
+    },
+    "FC4": {
+      "triggered": true,
+      "desc": "H1 Q1 peak test fails (INCREASE_BELOW doesnt peak at Q1)",
+      "actual_peak": 0
+    },
+    "FC5": {
+      "triggered": true,
+      "desc": "H3 merged >= split",
+      "split_advantage": -0.004092946048090174
+    },
+    "FC6": {
+      "triggered": false,
+      "desc": "H5 shuffle p < 0.01 at operator level",
+      "shuffle_p": 1.0
+    },
+    "FC7": {
+      "triggered": true,
+      "desc": "H6 INCREASE_BELOW -> DECREASE_ABOVE rate > 20%",
+      "rate": 0.25104764103889465
+    },
+    "FC8": {
+      "triggered": false,
+      "desc": "BIC selects k=1 for HMM OR no dominant 2-way bundling exists",
+      "hmm_k_distribution": {
+        "6": 79,
+        "5": 20,
+        "4": 1
+      },
+      "nc_fraction": 0.9589499420923948
+    }
+  },
+  "n_secondary_pass": 1,
+  "non_circularity": {
+    "T1_physical_plant": "NONE \u2014 thermodynamic ODE, no Voynich parameters",
+    "T1_controller": "NONE \u2014 P-controller from control theory",
+    "T1_LHS_sweep": "NONE \u2014 statistical design of experiments",
+    "T1_level_A_primitives": "NONE \u2014 controller state algebra (dQ \u00d7 error sign)",
+    "T1_compound_categories": "NONE \u2014 2 binary features + condition triggers",
+    "T1_operator_params": "NONE \u2014 generic swept parameters",
+    "T1_check_triggers": "NONE \u2014 plant state conditions (swept thresholds)",
+    "T1_apparatus_families": "NONE \u2014 k-means on run-level dynamics",
+    "T1_level_B_HMM": "NONE \u2014 unsupervised BIC-selected state count",
+    "T1_level_B_clustering": "NONE \u2014 unsupervised regime detection",
+    "T2_predictions": "ALL \u2014 35+ Tier 2 constraints",
+    "verdict": "CLEAN \u2014 T1 is entirely Voynich-free at both levels"
+  },
+  "out_of_sample": {
+    "H1": {
+      "train_jsd": 0.03406471639735989,
+      "test_jsd": 0.03758334387484256
+    },
+    "H3": {
+      "train_delta": 0.02508684992790222,
+      "test_delta": 0.035301536321640015
+    },
+    "H5": {
+      "train_lag1": null,
+      "test_lag1": null
+    }
+  },
+  "apparatus": {
+    "SLOW_SUSTAINED": {
+      "n_cycles": 212236,
+      "h1_voynich_jsd": 0.08692906977059259,
+      "h1_position_jsd": 0.2855844261266949,
+      "h1_beats_position": true,
+      "h1_q1_peak": false,
+      "h1_closure_ratio": 6.63041298499547
+    },
+    "MODERATE": {
+      "n_cycles": 294266,
+      "h1_voynich_jsd": 0.04394711700965069,
+      "h1_position_jsd": 0.1797154615882848,
+      "h1_beats_position": true,
+      "h1_q1_peak": false,
+      "h1_closure_ratio": 9.386438712247354
+    },
+    "FAST_AGGRESSIVE": {
+      "n_cycles": 268250,
+      "h1_voynich_jsd": 0.03621265189072874,
+      "h1_position_jsd": 0.20123034531332928,
+      "h1_beats_position": true,
+      "h1_q1_peak": false,
+      "h1_closure_ratio": 13.44254955133647
+    }
+  }
+}

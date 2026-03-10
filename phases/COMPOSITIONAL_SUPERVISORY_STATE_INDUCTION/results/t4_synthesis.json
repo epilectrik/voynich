@@ -1,0 +1,48 @@
+{
+ "metadata": {
+  "phase": "559",
+  "task": "T4_synthesis",
+  "folio": "f43v",
+  "timestamp": "2026-03-08T18:41:55.043434"
+ },
+ "stage_1": {
+  "outcome": "FAIL",
+  "verdict": "FAIL (failure conditions: FC4)",
+  "criteria_passed": [],
+  "criteria_failed": [
+   "S1",
+   "S2",
+   "S3",
+   "S4",
+   "S5"
+  ],
+  "failure_conditions_triggered": [
+   "FC4"
+  ],
+  "key_numbers": {
+   "full_entropy": 2.3284013659918155,
+   "head_only_entropy": 1.4897648383024722,
+   "zone_only_entropy": 1.4512240959574834,
+   "head_matched_effect_size": 0.5061159613497354,
+   "zone_alignment": 0.43790849673202614
+  }
+ },
+ "stage_2": {
+  "result": "STAGE_1_FAILED"
+ },
+ "phase_verdict": "FAIL",
+ "constraints_proposed": [],
+ "constraints_referenced": [
+  "C1003",
+  "C1475",
+  "C1429",
+  "C1431",
+  "C1432",
+  "C1433",
+  "C1566",
+  "C1563",
+  "C1411",
+  "C1415"
+ ],
+ "interpretation": "Compositional pairwise evidence accumulation produces higher-entropy (less certain) state assignments than HEAD atom alone. The additional channels dilute rather than sharpen the signal. HEAD is the primary and near-sufficient domain selector (C1475). No supervisory state structure exists at the within-folio token level beyond what HEAD already provides."
+}

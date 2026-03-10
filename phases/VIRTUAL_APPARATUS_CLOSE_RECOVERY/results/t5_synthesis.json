@@ -1,0 +1,392 @@
+{
+ "metadata": {
+  "phase": "566",
+  "task": "T5_synthesis",
+  "phase_name": "VIRTUAL_APPARATUS_CLOSE_RECOVERY",
+  "timestamp": "2026-03-09T18:43:50",
+  "verdict": "CLOSE_RECOVERY_FAILED",
+  "n_tests_total": 9,
+  "n_tests_pass": 1,
+  "n_tests_fail": 8,
+  "n_constraints_proposed": 0
+ },
+ "verdict_rationale": "CLOSE_RECOVERY_FAILED: 1/9 tests pass (P2 only), regression from 565's 2/9 (lost P8). CLOSE recovery channels (K_CLOSE, CTS-weighted discharge, profile-specific multipliers) were added with ladder pack '566-Mid' (K_CTS_CLOSE=6.0). V10-V12 synthetic preflights all pass, confirming the recovery mechanism WORKS in principle. However, on real folios: mean viability=0.996562, 5/20 folios with viability<1.0 (need >=8). Total hazard events: 3. The B2 paradox persists: zero-input baseline still produces higher/equal viability. N2/N4 paradox: contribution-shuffled (composite=0.920) and random-walk (composite=0.920) nulls beat the full model (composite=0.891). B10 delta is only -0.00018 -- removing CLOSE recovery makes virtually no difference. D5 confirms CLOSE recovery is ~4x weaker than WORK push (work=+0.0027, close=-0.0006). Real folio CTS values are too low/sparse for CTS-weighted channels to fire strongly.",
+ "comparison_563_thru_566": {
+  "P1": {
+   "563": "PASS",
+   "563b": "FAIL",
+   "564": "FAIL",
+   "564b": "FAIL",
+   "565": "FAIL",
+   "566": "FAIL"
+  },
+  "P2": {
+   "563": "PASS",
+   "563b": "PASS",
+   "564": "PASS",
+   "564b": "PASS",
+   "565": "PASS",
+   "566": "PASS"
+  },
+  "P3": {
+   "563": "FAIL",
+   "563b": "FAIL",
+   "564": "FAIL",
+   "564b": "FAIL",
+   "565": "FAIL",
+   "566": "FAIL"
+  },
+  "P4": {
+   "563": "FAIL",
+   "563b": "FAIL",
+   "564": "FAIL",
+   "564b": "FAIL",
+   "565": "FAIL",
+   "566": "FAIL"
+  },
+  "P5": {
+   "563": "FAIL",
+   "563b": "FAIL",
+   "564": "FAIL",
+   "564b": "FAIL",
+   "565": "FAIL",
+   "566": "FAIL"
+  },
+  "P6": {
+   "563": "PASS",
+   "563b": "PASS",
+   "564": "FAIL",
+   "564b": "FAIL",
+   "565": "FAIL",
+   "566": "FAIL"
+  },
+  "P7": {
+   "563": "PASS",
+   "563b": "FAIL",
+   "564": "FAIL",
+   "564b": "FAIL",
+   "565": "FAIL",
+   "566": "FAIL"
+  },
+  "P8": {
+   "563": "PASS",
+   "563b": "PASS",
+   "564": "PASS",
+   "564b": "PASS",
+   "565": "PASS",
+   "566": "FAIL"
+  },
+  "P9": {
+   "563": "SEC",
+   "563b": "SEC",
+   "564": "SEC",
+   "564b": "SEC",
+   "565": "SEC",
+   "566": "SEC"
+  }
+ },
+ "regressions": {
+  "from_563": [
+   "P1",
+   "P6",
+   "P7",
+   "P8"
+  ],
+  "from_563b": [
+   "P6",
+   "P8"
+  ],
+  "from_564": [
+   "P8"
+  ],
+  "from_564b": [
+   "P8"
+  ],
+  "from_565": [
+   "P8"
+  ]
+ },
+ "improvements": {
+  "from_563": [],
+  "from_563b": [],
+  "from_564": [],
+  "from_564b": [],
+  "from_565": []
+ },
+ "summary_table": {
+  "P1_viable_envelope": {
+   "pass": false,
+   "key_metric": "full_gt_N1=4/20; mean_viab=0.996562, folios_lt_1=5/20 (need >=8)"
+  },
+  "P2_packet_shape": {
+   "pass": true,
+   "key_metric": "n_significant=7/7 SVs; strongest H=3683.5 (Y)"
+  },
+  "P3_bounded_cycles": {
+   "pass": false,
+   "key_metric": "mean_cycles=1.50, bounded_frac=0.142, n_meeting_both=2/20"
+  },
+  "P4_routing_consequence": {
+   "pass": false,
+   "key_metric": "P4a: 0/4 correct; P4b: viab_delta=-0.00066"
+  },
+  "P5_headless_config": {
+   "pass": false,
+   "key_metric": "P5a: C_differs=8/20, S_differs=10/20; P5b: C: H=1.6789,p=0.432; S: H=3.7767,p=0.151"
+  },
+  "P6_cts_closure": {
+   "pass": false,
+   "key_metric": "viab_better=0/20, C_sep_positive=1/20; full=B3 nearly identical (CTS has negligible effect on real folios)"
+  },
+  "P7_null_destruction": {
+   "pass": false,
+   "key_metric": "null_types_destroyed=0/4; N1 mean_delta=-0.002476, N2 mean_delta=-0.002447 (nulls have HIGHER viability than full model for some folios)"
+  },
+  "P8_profile_superiority": {
+   "pass": false,
+   "key_metric": "preferred_best=15/20 (threshold=16)"
+  },
+  "P9_section_template": {
+   "pass": null,
+   "key_metric": "n_significant=2/7 SVs; SECONDARY"
+  }
+ },
+ "composite_metrics": {
+  "mean_viability": 0.999336,
+  "mean_Y_final": 0.6399,
+  "total_hazard_events": 3,
+  "folios_with_perfect_viability": "17/20",
+  "mean_corridor_occupancy": 0.1622,
+  "mean_corridor_signal_ratio": 6.05,
+  "B9_mean_viab_delta": 0.041,
+  "B10_mean_viab_delta": -0.00018,
+  "t2_summary": {
+   "mean_preferred_viability": 0.99883,
+   "total_hazard_events": 5,
+   "mean_Y_final": 0.6433,
+   "mean_close_recovery_total": 2.01093
+  },
+  "comparison": {
+   "563": {
+    "mean_viability": 0.9616,
+    "mean_Y_final": 0.878,
+    "total_hazard": 34,
+    "perfect_viab": "4/7"
+   },
+   "563b": {
+    "mean_viability": 0.9635,
+    "mean_Y_final": 0.848,
+    "total_hazard": 255,
+    "perfect_viab": "12/20"
+   },
+   "564": {
+    "mean_viability": 1.0,
+    "mean_Y_final": 0.7366,
+    "total_hazard": 0,
+    "perfect_viab": "20/20"
+   },
+   "564b": {
+    "mean_viability": 0.99985,
+    "mean_Y_final": 0.5686,
+    "total_hazard": 1,
+    "perfect_viab": "19/20",
+    "corridor_occupancy": 0.1867,
+    "signal_ratio": 6.05,
+    "B9_delta": 0.125
+   },
+   "565": {
+    "mean_viability": 0.9967,
+    "mean_Y_final": 0.6281,
+    "total_hazard": 17,
+    "perfect_viab": "14/20",
+    "corridor_occupancy": 0.19,
+    "signal_ratio": 6.05,
+    "B9_delta": 0.122
+   },
+   "566": {
+    "mean_viability": 0.999336,
+    "mean_Y_final": 0.6399,
+    "total_hazard": 3,
+    "perfect_viab": "17/20",
+    "corridor_occupancy": 0.1622,
+    "signal_ratio": 6.05,
+    "B9_delta": 0.041,
+    "B10_delta": -0.00018
+   }
+  }
+ },
+ "diagnostic_status": {
+  "D1_signal_ratio": {
+   "status": "OK",
+   "value": 6.05,
+   "quasi_gate": "PASS",
+   "per_sv": {
+    "T": 13.125,
+    "RC": 1.5,
+    "S": 15.7778,
+    "C": 5.5556,
+    "TR": 2.5926,
+    "X": 0.9333,
+    "Y": 2.8889
+   }
+  },
+  "D2_corridor_occupancy": {
+   "status": "OK",
+   "value": 0.1622,
+   "quasi_gate": "PASS",
+   "per_sv": {
+    "T": 0.1374,
+    "RC": 0.0131,
+    "S": 0.4027,
+    "C": 0.296,
+    "TR": 0.0302,
+    "X": 0.094,
+    "Y": 0.4981
+   }
+  },
+  "D3_B9_comparison": {
+   "status": "BELOW_THRESHOLD",
+   "mean_delta": 0.041,
+   "n_full_gt_B9": 8,
+   "expectation_threshold": 0.05,
+   "above_threshold": false,
+   "B10_analysis": {
+    "mean_viab_delta": -0.00018,
+    "n_full_gt_B10": 5,
+    "finding": "B10 delta is -0.00018 -- removing CLOSE recovery makes virtually no difference to viability. CLOSE recovery is not load-bearing."
+   },
+   "largest_drops": [
+    {
+     "folio": "f39v",
+     "full_viab": 0.97887,
+     "B9_viab": 0.6338,
+     "viab_delta": 0.345
+    },
+    {
+     "folio": "f55r",
+     "full_viab": 0.96774,
+     "B9_viab": 0.70968,
+     "viab_delta": 0.258
+    },
+    {
+     "folio": "f111r",
+     "full_viab": 1.0,
+     "B9_viab": 0.93648,
+     "viab_delta": 0.064
+    },
+    {
+     "folio": "f40v",
+     "full_viab": 0.99057,
+     "B9_viab": 0.93396,
+     "viab_delta": 0.057
+    },
+    {
+     "folio": "f86v5",
+     "full_viab": 1.0,
+     "B9_viab": 0.958,
+     "viab_delta": 0.042
+    }
+   ]
+  },
+  "D4_edge_contact_audit": {
+   "status": "OK",
+   "quasi_gate": "PASS",
+   "full_model_mean_contacts_per_folio": 212.3,
+   "null_grand_mean_contacts_per_folio": 160.75,
+   "full_null_ratio": 1.321,
+   "cond1_not_all_zero": true,
+   "cond2_not_indiscriminate": true,
+   "finding": "Edge contact ratio=1.321. Full model: 212.3/folio, nulls: 160.8/folio. cond2=PASS."
+  },
+  "D5_close_recovery_asymmetry": {
+   "status": "FAILED",
+   "quasi_gate": "FAIL",
+   "full_work_grand_mean": 0.00272,
+   "full_close_grand_mean": -0.000626,
+   "finding": "WORK push=+0.0027, CLOSE recovery=-0.0006. CLOSE is ~4.3x weaker than WORK. Recovery is too weak to create meaningful discrimination."
+  },
+  "D6_composite_scoring": {
+   "status": "DIAGNOSTIC",
+   "full_composite": 0.891,
+   "B2_composite": 0.85,
+   "N2_composite": 0.92,
+   "N4_composite": 0.92,
+   "finding": "Full composite=0.891, B2=0.850, but N2=0.920 and N4=0.920 beat full. Contribution-shuffled and random-walk nulls produce MORE Y than full model."
+  },
+  "D7_corridor_return_latency": {
+   "status": "OK",
+   "quasi_gate": "PASS",
+   "full_mean_latency": 2.34,
+   "finding": "Corridor return latency=2.34 tokens. CLOSE recovery channels produce rapid corridor returns."
+  }
+ },
+ "folios_with_viab_lt_1": {
+  "f108v": {
+   "viability": 0.99825,
+   "profile": "A3",
+   "n1_viab_mean": 0.99979
+  },
+  "f39v": {
+   "viability": 0.97887,
+   "profile": "A2",
+   "n1_viab_mean": 0.99845
+  },
+  "f40v": {
+   "viability": 0.99057,
+   "profile": "A2",
+   "n1_viab_mean": 0.99943
+  },
+  "f55r": {
+   "viability": 0.96774,
+   "profile": "A2",
+   "n1_viab_mean": 0.99081
+  },
+  "f86v6": {
+   "viability": 0.99582,
+   "profile": "A2",
+   "n1_viab_mean": 0.99712
+  }
+ },
+ "b2_paradox": {
+  "description": "B2 (zero contributions) still achieves viability=1.0 for ALL folios. The supervisory signal continues to CAUSE hazard events rather than preventing them. Despite CLOSE recovery channels being added (K_CLOSE, CTS-weighted discharge), the recovery magnitude is too small to offset WORK excursion.",
+  "full_model_mean_viab": 0.999336,
+  "b2_composite": 0.85,
+  "full_composite": 0.891,
+  "b10_viab_delta": -0.00018,
+  "implication": "CLOSE recovery works mechanistically (V10-V12 pass in synthetic preflights) but real folio CTS values are too low/sparse for CTS-weighted channels to fire strongly enough. The B10 delta of -0.00018 confirms: removing CLOSE recovery makes virtually no difference. The recovery channels exist but do not fire with sufficient magnitude on real data."
+ },
+ "n2_n4_paradox": {
+  "description": "Contribution-shuffled (N2) and random-walk (N4) nulls produce HIGHER composite scores than the full model. N2 composite=0.920, N4 composite=0.920, full=0.891. This means the full model's supervisory routing CONSTRAINS Y accumulation rather than enabling it. Random contributions actually produce more Y.",
+  "full_composite": 0.891,
+  "N2_composite": 0.92,
+  "N4_composite": 0.92,
+  "B2_composite": 0.85,
+  "implication": "The supervisory signal routing is counterproductive. Proper SPEC->WORK->CLOSE phase alignment constrains how much Y can accumulate, while contribution-shuffled nulls (which break phase alignment) allow Y to grow more freely. This is the deepest paradox in the apparatus line: the very structure meant to enable Y accumulation actually limits it."
+ },
+ "s_instability": {
+  "s_warning_pct": 0.3462,
+  "s_hard_stop_pct": 0.212,
+  "s_total_danger_pct": 0.5582,
+  "s_basin_pct": 0.0391,
+  "finding": "S spends 55.8% of time in warning+hard_stop zones (warning=34.6%, hard_stop=21.2%). Only 3.9% in basin. gamma_basin_S may be too low to maintain S stability."
+ },
+ "lessons_learned": [
+  "P2 packet-shape coupling (7/7 significant) passes for the SIXTH consecutive phase (563, 563b, 564, 564b, 565, 566). This is the most robust coupling signal in the entire apparatus line, surviving six different parametric regimes and three architectural changes. SPEC/WORK/CLOSE differentiation is architecture-independent.",
+  "CTS-weighted recovery works mechanistically: V11 passes (recovery ratio=1.25, residual with CTS=0.013 vs without CTS=0.056). V12a passes (safety margin ratio=1.10). The CLOSE recovery mechanism functions correctly in synthetic preflights.",
+  "Safety inversion achievable under synthetic conditions: V12 passes all sub-tests (V12a, V12b, V12c) with the 566-Mid ladder pack. Aligned traces achieve lower hazard burden (561 vs 617 for random), higher Y (0.911 vs 0.910), and higher composite (0.796 vs 0.715).",
+  "B9 remains the strongest ablation signal (delta=0.041) but is below the 0.05 threshold for the first time (was +0.122 in 565, +0.125 in 564b). Zone architecture is weakening as a discriminator under the CLOSE recovery regime.",
+  "Recovery magnitudes commensurate with P90 dV are still insufficient for real folio discrimination. B10 delta=-0.00018 -- removing CLOSE recovery entirely makes virtually no difference. Real folio CTS values are too low/sparse for CTS-weighted channels to fire strongly enough.",
+  "The contribution-shuffled null paradox: N2 and N4 beat the full model on both Y_final and composite score (N2=0.920, N4=0.920 vs full=0.891). This suggests the full model's supervisory routing CONSTRAINS Y accumulation rather than enabling it.",
+  "The viability scoring function may need fundamental revision. Viability remains near-universal (0.997-1.0) for all models including nulls. Zone-occupancy-based scoring produces insufficient dynamic range for discrimination. Consider hazard-burden-based viability instead.",
+  "S instability: S spends 55.8% of time in warning+hard_stop zones. gamma_basin_S=0.025 may be too low to maintain S stability. This contributes to the high warning/hard_stop contact counts.",
+  "P8 regressed from PASS (17/20 in 565) to FAIL (15/20 in 566, threshold=16). The CLOSE recovery channels shifted profile dynamics enough that the preferred profile is no longer best for 5 folios."
+ ],
+ "constraints_note": "CLOSE_RECOVERY_FAILED: no new constraints. This phase proves CTS-weighted CLOSE recovery works mechanistically (V10-V12 pass in synthetic preflights) but real supervisory signals are too weak for the recovery channels to create meaningful discrimination. B10 delta=-0.00018 confirms CLOSE recovery is not load-bearing on real folios.",
+ "implications_for_next_phase": [
+  "The viability metric itself may be the bottleneck, not the plant architecture. Zone-occupancy-based viability scoring produces insufficient dynamic range. Consider hazard-burden-based viability: penalize proportionally to HOW MUCH time is spent in hazard, not just whether hazard is ever contacted.",
+  "Real CTS values need empirical characterization. The CTS-weighted channels work in synthetic preflights (where CTS is artificially controlled) but real folio CTS values may be too low, too sparse, or too uniform across tokens for the weighting to produce meaningful differentiation.",
+  "The S instability needs attention. gamma_basin_S may be too low. S spends 55.8% in warning+hard_stop, dominating the edge contact statistics and masking discrimination signal from other SVs.",
+  "The N2/N4 paradox suggests a fundamental problem: supervisory routing CONSTRAINS Y accumulation. The phase-differentiated contribution scaling (SPEC low, WORK full, CLOSE recovery) may limit Y's growth path more than random contributions do. The Y pathway may need to be decoupled from viability-related dynamics.",
+  "Cross-phase score trajectory: 5/9 -> 3/9 -> 2/9 -> 2/9 -> 2/9 -> 1/9. The score has declined to its lowest point. The apparatus line has exhausted incremental parametric refinement. The next step requires either a fundamentally different viability scoring function or a different relationship between supervisory signal and plant dynamics."
+ ]
+}

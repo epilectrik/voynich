@@ -1,0 +1,324 @@
+{
+ "metadata": {
+  "phase": "565",
+  "task": "T5_synthesis",
+  "phase_name": "VIRTUAL_APPARATUS_PERMEABILITY_CALIBRATION",
+  "timestamp": "2026-03-09T16:39:22",
+  "verdict": "PERMEABILITY_FAILED",
+  "n_tests_total": 9,
+  "n_tests_pass": 2,
+  "n_tests_fail": 7,
+  "n_constraints_proposed": 0
+ },
+ "verdict_rationale": "PERMEABILITY_FAILED: 2/9 tests pass (P2, P8), same score as Phase 564b. The graduated edge calibration (BETA1_X=8.0, BETA2_X=24.0, down from 564b's BETA_X=80.0) successfully made the edge permeable: 17 total hazard events (vs 1 in 564b, 0 in 564). Mean viability=0.996594, 6/20 folios with viability<1.0 (need >=8). D1 OK (ratio=6.05), D2 OK (occupancy=19.0%), D3 OK (B9 delta=+0.122). However, P1 fails: mean viability 0.9966 exceeds the 0.995 ceiling, full_gt_B2=0/20 (threshold 14). The B2 paradox: zero-contribution baseline achieves viability=1.0 for ALL folios. The supervisory signal CAUSES hazard events rather than preventing them. P7 fails: 0/4 null types destroyed; null viabilities are actually HIGHER than reference for many folios because shuffling disrupts constructive alignment, producing FEWER hazard events. D4 fails: edge contact is indiscriminate (full/null ratio=1.064). The discrimination axis is inverted: stronger signals produce MORE hazard, not less.",
+ "comparison_563_vs_563b_vs_564_vs_564b_vs_565": {
+  "P1": {
+   "563": "PASS",
+   "563b": "FAIL",
+   "564": "FAIL",
+   "564b": "FAIL",
+   "565": "FAIL"
+  },
+  "P2": {
+   "563": "PASS",
+   "563b": "PASS",
+   "564": "PASS",
+   "564b": "PASS",
+   "565": "PASS"
+  },
+  "P3": {
+   "563": "FAIL",
+   "563b": "FAIL",
+   "564": "FAIL",
+   "564b": "FAIL",
+   "565": "FAIL"
+  },
+  "P4": {
+   "563": "FAIL",
+   "563b": "FAIL",
+   "564": "FAIL",
+   "564b": "FAIL",
+   "565": "FAIL"
+  },
+  "P5": {
+   "563": "FAIL",
+   "563b": "FAIL",
+   "564": "FAIL",
+   "564b": "FAIL",
+   "565": "FAIL"
+  },
+  "P6": {
+   "563": "PASS",
+   "563b": "PASS",
+   "564": "FAIL",
+   "564b": "FAIL",
+   "565": "FAIL"
+  },
+  "P7": {
+   "563": "PASS",
+   "563b": "FAIL",
+   "564": "FAIL",
+   "564b": "FAIL",
+   "565": "FAIL"
+  },
+  "P8": {
+   "563": "PASS",
+   "563b": "PASS",
+   "564": "PASS",
+   "564b": "PASS",
+   "565": "PASS"
+  },
+  "P9": {
+   "563": "SEC",
+   "563b": "SEC",
+   "564": "SEC",
+   "564b": "SEC",
+   "565": "SEC"
+  }
+ },
+ "regressions": {
+  "from_563": [
+   "P1",
+   "P6",
+   "P7"
+  ],
+  "from_563b": [
+   "P6"
+  ],
+  "from_564": [],
+  "from_564b": []
+ },
+ "improvements": {
+  "from_563": [],
+  "from_563b": [],
+  "from_564": [],
+  "from_564b": []
+ },
+ "summary_table": {
+  "P1_viable_envelope": {
+   "pass": false,
+   "key_metric": "full_gt_B2=0/20, full_gt_N1=3/20; mean_viab=0.996594, folios_lt_1=6/20 (need >=8)"
+  },
+  "P2_packet_shape": {
+   "pass": true,
+   "key_metric": "n_significant=7/7 SVs; strongest H=3683.5 (Y)"
+  },
+  "P3_bounded_cycles": {
+   "pass": false,
+   "key_metric": "mean_cycles=1.25, bounded_frac=0.125, n_meeting_both=0/20"
+  },
+  "P4_routing_consequence": {
+   "pass": false,
+   "key_metric": "P4a: 0/4 correct; P4b: viab_delta=0.00152"
+  },
+  "P5_headless_config": {
+   "pass": false,
+   "key_metric": "P5a: C_differs=9/10, S_differs=10/10; P5b: C: H=0.2168,p=0.897; S: H=2.1781,p=0.337"
+  },
+  "P6_cts_closure": {
+   "pass": false,
+   "key_metric": "viab_better=0/20, C_sep_positive=0/20; full=B3 identical (CTS has no effect when edge contact is indiscriminate)"
+  },
+  "P7_null_destruction": {
+   "pass": false,
+   "key_metric": "null_types_destroyed=0/4; N1 mean_delta=-0.002001, N3 mean_delta=0.000544 (nulls have HIGHER viability than full model for some folios)"
+  },
+  "P8_profile_superiority": {
+   "pass": true,
+   "key_metric": "preferred_best=17/20 (threshold=16)"
+  },
+  "P9_section_template": {
+   "pass": null,
+   "key_metric": "n_significant=2/7 SVs; SECONDARY"
+  }
+ },
+ "composite_metrics": {
+  "mean_viability": 0.996746,
+  "mean_Y_final": 0.6281,
+  "total_hazard_events": 17,
+  "folios_with_perfect_viability": "14/20",
+  "mean_corridor_occupancy": 0.1898,
+  "mean_corridor_signal_ratio": 6.05,
+  "B9_mean_viab_delta": 0.122,
+  "comparison": {
+   "563": {
+    "mean_viability": 0.9616,
+    "mean_Y_final": 0.878,
+    "total_hazard": 34,
+    "perfect_viab": "4/7"
+   },
+   "563b": {
+    "mean_viability": 0.9635,
+    "mean_Y_final": 0.848,
+    "total_hazard": 255,
+    "perfect_viab": "12/20"
+   },
+   "564": {
+    "mean_viability": 1.0,
+    "mean_Y_final": 0.7366,
+    "total_hazard": 0,
+    "perfect_viab": "20/20"
+   },
+   "564b": {
+    "mean_viability": 0.99985,
+    "mean_Y_final": 0.5686,
+    "total_hazard": 1,
+    "perfect_viab": "19/20",
+    "corridor_occupancy": 0.1867,
+    "signal_ratio": 6.05,
+    "B9_delta": 0.125
+   },
+   "565": {
+    "mean_viability": 0.996746,
+    "mean_Y_final": 0.6281,
+    "total_hazard": 17,
+    "perfect_viab": "14/20",
+    "corridor_occupancy": 0.1898,
+    "signal_ratio": 6.05,
+    "B9_delta": 0.122
+   }
+  }
+ },
+ "diagnostic_status": {
+  "D1_signal_ratio": {
+   "status": "OK",
+   "value": 6.05,
+   "quasi_gate": "PASS",
+   "per_sv": {
+    "T": 13.125,
+    "RC": 1.5,
+    "S": 15.7778,
+    "C": 5.5556,
+    "TR": 2.5926,
+    "X": 0.9333,
+    "Y": 2.8889
+   }
+  },
+  "D2_corridor_occupancy": {
+   "status": "OK",
+   "value": 0.1898,
+   "quasi_gate": "PASS",
+   "per_sv": {
+    "T": 0.1748,
+    "RC": 0.0258,
+    "S": 0.3876,
+    "C": 0.3968,
+    "TR": 0.0447,
+    "X": 0.1093,
+    "Y": 0.4759
+   }
+  },
+  "D3_B9_comparison": {
+   "status": "INFORMATIVE",
+   "mean_delta": 0.122,
+   "n_full_gt_B9": 10,
+   "expectation_threshold": 0.05,
+   "above_threshold": true,
+   "largest_drops": [
+    {
+     "folio": "f86v5",
+     "full_viab": 1.0,
+     "B9_viab": 0.44094,
+     "viab_delta": 0.559
+    },
+    {
+     "folio": "f39v",
+     "full_viab": 1.0,
+     "B9_viab": 0.44366,
+     "viab_delta": 0.556
+    },
+    {
+     "folio": "f55r",
+     "full_viab": 0.97581,
+     "B9_viab": 0.47581,
+     "viab_delta": 0.5
+    },
+    {
+     "folio": "f86v6",
+     "full_viab": 0.98539,
+     "B9_viab": 0.5762,
+     "viab_delta": 0.409
+    },
+    {
+     "folio": "f85r1",
+     "full_viab": 0.99099,
+     "B9_viab": 0.8018,
+     "viab_delta": 0.189
+    }
+   ]
+  },
+  "D4_edge_contact_audit": {
+   "status": "FAILED",
+   "quasi_gate": "FAIL",
+   "full_model_mean_contacts_per_folio": 242.1,
+   "null_grand_mean_contacts_per_folio": 227.51,
+   "full_null_ratio": 1.064,
+   "cond1_not_all_zero": true,
+   "cond2_not_indiscriminate": false,
+   "finding": "Edge contact IS happening (cond1 pass) but is indiscriminate between full model (242.1/folio) and nulls (227.5/folio). Full/null ratio=1.064 -- packet alignment does not determine who reaches the edge."
+  }
+ },
+ "folios_with_viab_lt_1": {
+  "f108v": {
+   "viability": 0.99825,
+   "profile": "A3",
+   "b2_viab": 1.0,
+   "n1_viab_mean": 0.99979
+  },
+  "f40v": {
+   "viability": 0.99057,
+   "profile": "A2",
+   "b2_viab": 1.0,
+   "n1_viab_mean": 0.99943
+  },
+  "f55r": {
+   "viability": 0.97581,
+   "profile": "A2",
+   "b2_viab": 1.0,
+   "n1_viab_mean": 0.98984
+  },
+  "f66r": {
+   "viability": 0.99088,
+   "profile": "A2",
+   "b2_viab": 1.0,
+   "n1_viab_mean": 0.99957
+  },
+  "f85r1": {
+   "viability": 0.99099,
+   "profile": "A2",
+   "b2_viab": 1.0,
+   "n1_viab_mean": 0.99153
+  },
+  "f86v6": {
+   "viability": 0.98539,
+   "profile": "A2",
+   "b2_viab": 1.0,
+   "n1_viab_mean": 0.99399
+  }
+ },
+ "b2_paradox": {
+  "description": "B2 (zero contributions) achieves viability=1.0 for ALL folios. The supervisory signal CAUSES hazard events rather than preventing them. The plant currently penalizes strong signals rather than rewarding aligned ones. The model with no input is the safest.",
+  "full_model_mean_viab": 0.996746,
+  "b2_viab_all_folios": 1.0,
+  "folios_where_full_lt_b2": 6,
+  "implication": "The discrimination axis is inverted. Structured input produces MORE excursion and MORE hazard than zero input. For P1/P7 to work, the plant needs a mechanism where structured input REDUCES hazard exposure compared to random/absent input."
+ },
+ "lessons_learned": [
+  "The graduated edge IS now permeable: 17 hazard events vs 1 in 564b vs 0 in 564. BETA1_X=8.0/BETA2_X=24.0 (down from 564b's BETA_X=80.0) allow state variables to reach and breach hazard boundaries. The edge permeability calibration succeeded in its primary objective.",
+  "B9 ablation delta remains strong at +0.122 (vs +0.125 in 564b). Zone architecture is confirmed across two parametric regimes: the selective restoration geometry is load-bearing regardless of edge stiffness.",
+  "P2 packet shape (7/7 significant) passes for the fifth consecutive phase (563, 563b, 564, 564b, 565). This is the most robust coupling signal in the entire apparatus line, surviving five different parametric regimes and two architectural changes. SPEC/WORK/CLOSE differentiation is genuinely architecture-independent.",
+  "The B2 paradox reveals a fundamental calibration problem: the supervisory signal CAUSES hazard events rather than preventing them. B2 (zero contributions) achieves viability=1.0 for ALL folios while the full model produces hazard events in 6/20. The discrimination axis is inverted: stronger signals produce MORE hazard, not less.",
+  "P7 null failure has a specific mechanism: shuffled nulls produce WEAKER effective signals (because shuffling disrupts constructive alignment between supervisory contributions) which means FEWER hazard events. Null viabilities are actually HIGHER than reference for many folios. To make P7 work, the plant needs a mechanism where structured input REDUCES hazard exposure compared to random input.",
+  "D4 edge contact is indiscriminate: full model and nulls contact edges at similar rates (ratio=1.064). The graduated edge is being reached, but packet alignment does not determine WHO reaches it.",
+  "The fundamental calibration challenge is now clear. 563 was too loose (viab=0.96), 564/564b were impenetrable (viab=1.0), and 565 is in between (viab=0.997) but the discrimination axis is wrong. The needed insight: packet-aligned signals should produce bounded excursions that AVOID hazard through coordinated CLOSE recovery, while misaligned signals should produce unbounded excursions that hit hazard boundaries. Currently the CLOSE recovery mechanism (discharge events, thermal recovery) is too weak to differentiate.",
+  "What must change: discharge events during CLOSE need to be strong enough that a properly aligned trace (SPEC->WORK->CLOSE) recovers from WORK excursions before hitting hazard, while a misaligned trace (WORK during CLOSE, etc.) does not recover. This means discharge rates need to increase significantly, or the relationship between packet phase and edge approach needs to change."
+ ],
+ "constraints_note": "PERMEABILITY_FAILED: no new constraints. This phase proves the edge IS now permeable (17 hazard events) but reveals that the discrimination axis is inverted: structured supervisory input produces MORE hazard than absent or random input. The CLOSE recovery mechanism needs strengthening to invert this relationship.",
+ "implications_for_next_phase": [
+  "Strengthen CLOSE recovery mechanism: discharge events during CLOSE must be powerful enough that a properly aligned trace (SPEC->WORK->CLOSE) recovers from WORK excursions before hitting hazard boundaries. Currently discharge magnitudes are too small to produce measurable recovery.",
+  "Invert the discrimination axis: the plant must reward packet alignment, not penalize signal strength. A well-aligned trace should produce BOUNDED excursions (WORK pushes out, CLOSE pulls back) that stay below hazard. A misaligned trace should produce UNBOUNDED excursions (WORK pushes out, CLOSE fails to recover) that breach hazard.",
+  "Consider phase-asymmetric edge stiffness: during CLOSE, increase effective restoring force (helping recovery). During WORK, decrease it (allowing exploration). This creates a natural asymmetry where CLOSE phases pull state back from edges while WORK phases allow approach.",
+  "The basin/corridor/edge geometry is confirmed correct across two parametric regimes. Do NOT change zone boundaries or D1/D2 corridor dynamics. The problem is exclusively in how CLOSE recovery interacts with edge approach.",
+  "Cross-phase score trajectory: 5/9 -> 3/9 -> 2/9 -> 2/9 -> 2/9. The score has plateaued but the nature of failure has changed from 'everything wrong' (564) to 'edge impenetrable' (564b) to 'edge permeable but discrimination inverted' (565). Each phase narrows the problem."
+ ]
+}

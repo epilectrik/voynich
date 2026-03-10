@@ -1,0 +1,105 @@
+{
+ "metadata": {
+  "phase": "560b",
+  "task": "T4b_synthesis",
+  "timestamp": "2026-03-08T20:35:18"
+ },
+ "verdict": "DEPLOYMENT_PARTIAL",
+ "interpretation": "Deployment features add real section-level discriminative power beyond marginals, but do NOT recover within-section folio specificity. The primary D3b test fails across all feature sets. Within-section folio variation in averaged features is indistinguishable from within-domain token shuffle null. Folio individuality likely resides in HEAD proportions (domain mix) plus stochastic freedom within section templates, not in deployment grammar.",
+ "T2b_valid": true,
+ "D3b_primary": {
+  "any_pass": false,
+  "detail": "All 18 section-set combinations FAIL. Real < null in most cases."
+ },
+ "D4b_clustering": {
+  "deployment_ari": 0.615,
+  "marginal_ari": 0.4434,
+  "deployment_better": true
+ },
+ "D5b_gain": {
+  "rf_gain_560b": 0.0125,
+  "rf_gain_combined": 0.0611,
+  "nn_gain_560b": -0.1098,
+  "pass": true
+ },
+ "D7_variance": true,
+ "category_signals": {
+  "zone": {
+   "n_in_top20": 1,
+   "total_importance": 0.0466,
+   "top_feature": "t_spec_frac"
+  },
+  "adjacency": {
+   "n_in_top20": 2,
+   "total_importance": 0.0466,
+   "top_feature": "q3q4_routing_break_strength"
+  },
+  "closure": {
+   "n_in_top20": 2,
+   "total_importance": 0.0668,
+   "top_feature": "q3q4_head_jsd_local"
+  },
+  "headless": {
+   "n_in_top20": 2,
+   "total_importance": 0.0881,
+   "top_feature": "hl_l_frac"
+  },
+  "paragraph": {
+   "n_in_top20": 6,
+   "total_importance": 0.2123,
+   "top_feature": "para_iteration_emphasis_span"
+  }
+ },
+ "findings": [
+  {
+   "id": "F1",
+   "finding": "Within-section folio discrimination fails for ALL feature sets including deployment",
+   "implication": "Folio-average features (marginal or deployment) cannot distinguish folios within sections",
+   "strength": "Strong negative (0/18 section-set combinations pass)"
+  },
+  {
+   "id": "F2",
+   "finding": "Deployment features have highest Ward ARI (0.615 vs marginal 0.443)",
+   "implication": "Deployment grammar is a BETTER section discriminator than marginal domain profiles",
+   "strength": "ARI improvement: +0.172"
+  },
+  {
+   "id": "F3",
+   "finding": "RF COMBINED (90.4%) > FULL_560 (84.3%), +6.1%",
+   "implication": "Deployment features add real discriminative power for section classification",
+   "strength": "+0.0611 RF gain"
+  },
+  {
+   "id": "F4",
+   "finding": "NN FULL_560b (68.3%) < FULL_560 (79.3%): deployment HURTS NN",
+   "implication": "Deployment features introduce NaN-heavy dimensions that degrade nearest-neighbor; RF handles this via tree-based feature selection, NN does not",
+   "strength": "Methodological caution for future simulation"
+  },
+  {
+   "id": "F5",
+   "finding": "Paragraph features dominate RF importances (#1 para_iteration_emphasis_span, #4 para_close_hazard_span)",
+   "implication": "Paragraph subroutine structure is the strongest deployment-level signal, consistent with C1398-C1400",
+   "strength": "Top 3 deployment categories by RF importance: paragraph > headless > closure"
+  },
+  {
+   "id": "F6",
+   "finding": "D7: 52/56 deployment features have within-section ratio > 0.5 (vs 31/32 marginal)",
+   "implication": "Both feature types have mostly within-section variance (ratios near 1.0), meaning almost NO between-section structure in raw values. Section discrimination comes from PATTERNS across features, not individual feature levels.",
+   "strength": "Informative architectural finding"
+  }
+ ],
+ "constraints_proposed": [
+  {
+   "id": "C1570_proposed",
+   "tier": 2,
+   "scope": "B",
+   "statement": "Deployment features (zone-conditioned, routing, closure, headless, paragraph) are valid structural instruments (T2b 18/19 pass) and improve section-level classification (RF +6.1pp) but do NOT recover within-section folio discrimination (D3b 0/18). Folio specificity is not in deployment packaging at folio-average resolution."
+  },
+  {
+   "id": "C1571_proposed",
+   "tier": 2,
+   "scope": "B",
+   "statement": "Ward-linkage clustering on deployment features achieves highest section ARI (0.615) of any tested feature set, confirming deployment grammar is a stronger section-level discriminator than within-domain marginals (ARI=0.443). Section identity is encoded more in HOW domains are deployed than in domain proportions alone."
+  }
+ ]
+}

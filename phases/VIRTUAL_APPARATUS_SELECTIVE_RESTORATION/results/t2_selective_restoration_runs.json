@@ -1,0 +1,10386 @@
+{
+ "metadata": {
+  "phase": "564b",
+  "task": "T2",
+  "timestamp": "2026-03-09T15:02:13.248387",
+  "n_primary": 60,
+  "n_config_ablation": 30,
+  "n_total": 90
+ },
+ "primary_runs": [
+  {
+   "folio": "f78r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 294,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.53587,
+   "mean_state": [
+    0.51963,
+    0.53713,
+    0.75937,
+    0.53559,
+    0.50606,
+    0.50252,
+    0.52741
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.9932,
+     "corridor": 0.0068,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.0102,
+     "corridor": 0.56463,
+     "edge": 0.42517
+    },
+    "C": {
+     "basin": 0.90476,
+     "corridor": 0.09524,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.87415,
+     "corridor": 0.12585,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.48899,
+     "max": 0.57748,
+     "mean": 0.51963,
+     "std": 0.01781
+    },
+    "RC": {
+     "min": 0.5,
+     "max": 0.58944,
+     "mean": 0.53713,
+     "std": 0.01499
+    },
+    "S": {
+     "min": 0.55121,
+     "max": 0.85896,
+     "mean": 0.75937,
+     "std": 0.04677
+    },
+    "C": {
+     "min": 0.4989,
+     "max": 0.60962,
+     "mean": 0.53559,
+     "std": 0.0259
+    },
+    "TR": {
+     "min": 0.48823,
+     "max": 0.55884,
+     "mean": 0.50606,
+     "std": 0.01207
+    },
+    "X": {
+     "min": 0.4926,
+     "max": 0.5691,
+     "mean": 0.50252,
+     "std": 0.00742
+    },
+    "Y": {
+     "min": 0.49922,
+     "max": 0.68897,
+     "mean": 0.52741,
+     "std": 0.04383
+    }
+   }
+  },
+  {
+   "folio": "f78r",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 294,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.52507,
+   "mean_state": [
+    0.52514,
+    0.54202,
+    0.74737,
+    0.66374,
+    0.50427,
+    0.50599,
+    0.51373
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.98639,
+     "corridor": 0.01361,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.0102,
+     "corridor": 0.62585,
+     "edge": 0.36395
+    },
+    "C": {
+     "basin": 0.17007,
+     "corridor": 0.7483,
+     "edge": 0.08163
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.9932,
+     "corridor": 0.0068,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.49022,
+     "max": 0.57858,
+     "mean": 0.52514,
+     "std": 0.01665
+    },
+    "RC": {
+     "min": 0.5,
+     "max": 0.59177,
+     "mean": 0.54202,
+     "std": 0.01509
+    },
+    "S": {
+     "min": 0.5419,
+     "max": 0.84358,
+     "mean": 0.74737,
+     "std": 0.04955
+    },
+    "C": {
+     "min": 0.49779,
+     "max": 0.81378,
+     "mean": 0.66374,
+     "std": 0.07564
+    },
+    "TR": {
+     "min": 0.49127,
+     "max": 0.54366,
+     "mean": 0.50427,
+     "std": 0.00892
+    },
+    "X": {
+     "min": 0.48865,
+     "max": 0.61032,
+     "mean": 0.50599,
+     "std": 0.01201
+    },
+    "Y": {
+     "min": 0.49976,
+     "max": 0.57508,
+     "mean": 0.51373,
+     "std": 0.02015
+    }
+   }
+  },
+  {
+   "folio": "f78r",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 294,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.66479,
+   "mean_state": [
+    0.56813,
+    0.5182,
+    0.7239,
+    0.55878,
+    0.5125,
+    0.51276,
+    0.57169
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.60884,
+     "corridor": 0.39116,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.0102,
+     "corridor": 0.77891,
+     "edge": 0.21088
+    },
+    "C": {
+     "basin": 0.68367,
+     "corridor": 0.31633,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.98639,
+     "corridor": 0.01361,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.95918,
+     "corridor": 0.04082,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.62585,
+     "corridor": 0.37415,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 10,
+     "total_magnitude": 0.01081
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.48216,
+     "max": 0.67648,
+     "mean": 0.56813,
+     "std": 0.04488
+    },
+    "RC": {
+     "min": 0.5,
+     "max": 0.54808,
+     "mean": 0.5182,
+     "std": 0.00828
+    },
+    "S": {
+     "min": 0.53724,
+     "max": 0.83538,
+     "mean": 0.7239,
+     "std": 0.05692
+    },
+    "C": {
+     "min": 0.49842,
+     "max": 0.66026,
+     "mean": 0.55878,
+     "std": 0.0431
+    },
+    "TR": {
+     "min": 0.47972,
+     "max": 0.60192,
+     "mean": 0.5125,
+     "std": 0.0208
+    },
+    "X": {
+     "min": 0.45491,
+     "max": 0.66999,
+     "mean": 0.51276,
+     "std": 0.02897
+    },
+    "Y": {
+     "min": 0.5003,
+     "max": 0.83077,
+     "mean": 0.57169,
+     "std": 0.08614
+    }
+   }
+  },
+  {
+   "folio": "f84r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 361,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.56875,
+   "mean_state": [
+    0.53261,
+    0.54933,
+    0.75774,
+    0.55203,
+    0.51665,
+    0.50425,
+    0.56184
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.86427,
+     "corridor": 0.13573,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.92521,
+     "corridor": 0.07479,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.00831,
+     "corridor": 0.55956,
+     "edge": 0.43213
+    },
+    "C": {
+     "basin": 0.80886,
+     "corridor": 0.19114,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.98615,
+     "corridor": 0.01385,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.99723,
+     "corridor": 0.00277,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.67036,
+     "corridor": 0.32964,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.48123,
+     "max": 0.68853,
+     "mean": 0.53261,
+     "std": 0.0449
+    },
+    "RC": {
+     "min": 0.48794,
+     "max": 0.65598,
+     "mean": 0.54933,
+     "std": 0.02605
+    },
+    "S": {
+     "min": 0.50876,
+     "max": 0.85926,
+     "mean": 0.75774,
+     "std": 0.04972
+    },
+    "C": {
+     "min": 0.49839,
+     "max": 0.66383,
+     "mean": 0.55203,
+     "std": 0.03725
+    },
+    "TR": {
+     "min": 0.47775,
+     "max": 0.60535,
+     "mean": 0.51665,
+     "std": 0.02059
+    },
+    "X": {
+     "min": 0.48402,
+     "max": 0.58573,
+     "mean": 0.50425,
+     "std": 0.01142
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.75125,
+     "mean": 0.56184,
+     "std": 0.06379
+    }
+   }
+  },
+  {
+   "folio": "f84r",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 361,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.54045,
+   "mean_state": [
+    0.54143,
+    0.55378,
+    0.74775,
+    0.69996,
+    0.51128,
+    0.51089,
+    0.52987
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.81717,
+     "corridor": 0.18283,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.88643,
+     "corridor": 0.11357,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.01385,
+     "corridor": 0.57618,
+     "edge": 0.40997
+    },
+    "C": {
+     "basin": 0.03601,
+     "corridor": 0.83102,
+     "edge": 0.13296
+    },
+    "TR": {
+     "basin": 0.99723,
+     "corridor": 0.00277,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.99169,
+     "corridor": 0.00831,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.9169,
+     "corridor": 0.0831,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.48747,
+     "max": 0.67012,
+     "mean": 0.54143,
+     "std": 0.04446
+    },
+    "RC": {
+     "min": 0.48894,
+     "max": 0.65452,
+     "mean": 0.55378,
+     "std": 0.02687
+    },
+    "S": {
+     "min": 0.50717,
+     "max": 0.84606,
+     "mean": 0.74775,
+     "std": 0.05109
+    },
+    "C": {
+     "min": 0.49861,
+     "max": 0.83965,
+     "mean": 0.69996,
+     "std": 0.06033
+    },
+    "TR": {
+     "min": 0.48302,
+     "max": 0.58056,
+     "mean": 0.51128,
+     "std": 0.01544
+    },
+    "X": {
+     "min": 0.48563,
+     "max": 0.63199,
+     "mean": 0.51089,
+     "std": 0.01878
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.67126,
+     "mean": 0.52987,
+     "std": 0.03649
+    }
+   }
+  },
+  {
+   "folio": "f84r",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 361,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.78563,
+   "mean_state": [
+    0.5832,
+    0.52792,
+    0.7285,
+    0.57696,
+    0.53434,
+    0.50549,
+    0.67994
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.57341,
+     "corridor": 0.39058,
+     "edge": 0.03601
+    },
+    "RC": {
+     "basin": 0.99169,
+     "corridor": 0.00831,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.03878,
+     "corridor": 0.69252,
+     "edge": 0.2687
+    },
+    "C": {
+     "basin": 0.60665,
+     "corridor": 0.39058,
+     "edge": 0.00277
+    },
+    "TR": {
+     "basin": 0.9169,
+     "corridor": 0.0831,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.90582,
+     "corridor": 0.09418,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.23823,
+     "corridor": 0.64543,
+     "edge": 0.11634
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 1,
+     "total_magnitude": 0.00018
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.47599,
+     "max": 0.79307,
+     "mean": 0.5832,
+     "std": 0.07581
+    },
+    "RC": {
+     "min": 0.49298,
+     "max": 0.59201,
+     "mean": 0.52792,
+     "std": 0.01638
+    },
+    "S": {
+     "min": 0.50637,
+     "max": 0.83562,
+     "mean": 0.7285,
+     "std": 0.05862
+    },
+    "C": {
+     "min": 0.47925,
+     "max": 0.7657,
+     "mean": 0.57696,
+     "std": 0.06567
+    },
+    "TR": {
+     "min": 0.46447,
+     "max": 0.67215,
+     "mean": 0.53434,
+     "std": 0.0349
+    },
+    "X": {
+     "min": 0.42929,
+     "max": 0.68593,
+     "mean": 0.50549,
+     "std": 0.04806
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.90249,
+     "mean": 0.67994,
+     "std": 0.11913
+    }
+   }
+  },
+  {
+   "folio": "f79r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 389,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50753,
+   "mean_state": [
+    0.51673,
+    0.55031,
+    0.75424,
+    0.51954,
+    0.53342,
+    0.50312,
+    0.54
+   ],
+   "excursion_count": 2,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.94087,
+     "corridor": 0.05913,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.88432,
+     "corridor": 0.11568,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.00771,
+     "corridor": 0.4653,
+     "edge": 0.52699
+    },
+    "C": {
+     "basin": 0.94087,
+     "corridor": 0.05913,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.95887,
+     "corridor": 0.04113,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.77378,
+     "corridor": 0.22622,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.45606,
+     "max": 0.65919,
+     "mean": 0.51673,
+     "std": 0.03123
+    },
+    "RC": {
+     "min": 0.4897,
+     "max": 0.63739,
+     "mean": 0.55031,
+     "std": 0.02987
+    },
+    "S": {
+     "min": 0.50646,
+     "max": 0.87208,
+     "mean": 0.75424,
+     "std": 0.048
+    },
+    "C": {
+     "min": 0.47632,
+     "max": 0.62197,
+     "mean": 0.51954,
+     "std": 0.0287
+    },
+    "TR": {
+     "min": 0.48281,
+     "max": 0.6376,
+     "mean": 0.53342,
+     "std": 0.027
+    },
+    "X": {
+     "min": 0.47928,
+     "max": 0.56216,
+     "mean": 0.50312,
+     "std": 0.00894
+    },
+    "Y": {
+     "min": 0.49986,
+     "max": 0.67061,
+     "mean": 0.54,
+     "std": 0.04553
+    }
+   }
+  },
+  {
+   "folio": "f79r",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 389,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50287,
+   "mean_state": [
+    0.52263,
+    0.5543,
+    0.75018,
+    0.66259,
+    0.52291,
+    0.50775,
+    0.51517
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.92545,
+     "corridor": 0.07455,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.84576,
+     "corridor": 0.15424,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.01285,
+     "corridor": 0.45758,
+     "edge": 0.52956
+    },
+    "C": {
+     "basin": 0.10283,
+     "corridor": 0.80206,
+     "edge": 0.09512
+    },
+    "TR": {
+     "basin": 0.98715,
+     "corridor": 0.01285,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.99486,
+     "corridor": 0.00514,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.46436,
+     "max": 0.64868,
+     "mean": 0.52263,
+     "std": 0.03215
+    },
+    "RC": {
+     "min": 0.49045,
+     "max": 0.63442,
+     "mean": 0.5543,
+     "std": 0.02931
+    },
+    "S": {
+     "min": 0.50529,
+     "max": 0.8451,
+     "mean": 0.75018,
+     "std": 0.04371
+    },
+    "C": {
+     "min": 0.49522,
+     "max": 0.81056,
+     "mean": 0.66259,
+     "std": 0.06386
+    },
+    "TR": {
+     "min": 0.48503,
+     "max": 0.60021,
+     "mean": 0.52291,
+     "std": 0.01994
+    },
+    "X": {
+     "min": 0.46741,
+     "max": 0.59839,
+     "mean": 0.50775,
+     "std": 0.0156
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.56412,
+     "mean": 0.51517,
+     "std": 0.01754
+    }
+   }
+  },
+  {
+   "folio": "f79r",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 389,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.69051,
+   "mean_state": [
+    0.55106,
+    0.5304,
+    0.74007,
+    0.51778,
+    0.56291,
+    0.49814,
+    0.6681
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.67095,
+     "corridor": 0.31877,
+     "edge": 0.01028
+    },
+    "RC": {
+     "basin": 0.99743,
+     "corridor": 0.00257,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.01285,
+     "corridor": 0.56041,
+     "edge": 0.42674
+    },
+    "C": {
+     "basin": 0.82005,
+     "corridor": 0.17995,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.67609,
+     "corridor": 0.32391,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.96144,
+     "corridor": 0.03856,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.17995,
+     "corridor": 0.75321,
+     "edge": 0.06684
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 7,
+     "total_magnitude": 0.00304
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.41526,
+     "max": 0.77174,
+     "mean": 0.55106,
+     "std": 0.07073
+    },
+    "RC": {
+     "min": 0.49406,
+     "max": 0.58152,
+     "mean": 0.5304,
+     "std": 0.01958
+    },
+    "S": {
+     "min": 0.5047,
+     "max": 0.82979,
+     "mean": 0.74007,
+     "std": 0.04415
+    },
+    "C": {
+     "min": 0.43225,
+     "max": 0.70744,
+     "mean": 0.51778,
+     "std": 0.06232
+    },
+    "TR": {
+     "min": 0.48269,
+     "max": 0.71716,
+     "mean": 0.56291,
+     "std": 0.04399
+    },
+    "X": {
+     "min": 0.38264,
+     "max": 0.64694,
+     "mean": 0.49814,
+     "std": 0.03697
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.90608,
+     "mean": 0.6681,
+     "std": 0.10406
+    }
+   }
+  },
+  {
+   "folio": "f81v",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 258,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50261,
+   "mean_state": [
+    0.51556,
+    0.52164,
+    0.77952,
+    0.5298,
+    0.50729,
+    0.50178,
+    0.50541
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.94186,
+     "corridor": 0.05814,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.01163,
+     "corridor": 0.41085,
+     "edge": 0.57752
+    },
+    "C": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.46186,
+     "max": 0.64684,
+     "mean": 0.51556,
+     "std": 0.03011
+    },
+    "RC": {
+     "min": 0.48249,
+     "max": 0.57375,
+     "mean": 0.52164,
+     "std": 0.02255
+    },
+    "S": {
+     "min": 0.51051,
+     "max": 0.8633,
+     "mean": 0.77952,
+     "std": 0.04147
+    },
+    "C": {
+     "min": 0.50233,
+     "max": 0.57273,
+     "mean": 0.5298,
+     "std": 0.017
+    },
+    "TR": {
+     "min": 0.48517,
+     "max": 0.53936,
+     "mean": 0.50729,
+     "std": 0.01425
+    },
+    "X": {
+     "min": 0.48548,
+     "max": 0.55304,
+     "mean": 0.50178,
+     "std": 0.00664
+    },
+    "Y": {
+     "min": 0.49941,
+     "max": 0.52975,
+     "mean": 0.50541,
+     "std": 0.00556
+    }
+   }
+  },
+  {
+   "folio": "f81v",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 258,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50162,
+   "mean_state": [
+    0.52068,
+    0.52301,
+    0.77402,
+    0.67093,
+    0.505,
+    0.50409,
+    0.50413
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.9031,
+     "corridor": 0.0969,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.0155,
+     "corridor": 0.43411,
+     "edge": 0.55039
+    },
+    "C": {
+     "basin": 0.10078,
+     "corridor": 0.86434,
+     "edge": 0.03488
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.99612,
+     "corridor": 0.00388,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.46428,
+     "max": 0.63,
+     "mean": 0.52068,
+     "std": 0.03284
+    },
+    "RC": {
+     "min": 0.48396,
+     "max": 0.57277,
+     "mean": 0.52301,
+     "std": 0.02386
+    },
+    "S": {
+     "min": 0.5086,
+     "max": 0.85149,
+     "mean": 0.77402,
+     "std": 0.03979
+    },
+    "C": {
+     "min": 0.50465,
+     "max": 0.79425,
+     "mean": 0.67093,
+     "std": 0.0619
+    },
+    "TR": {
+     "min": 0.48828,
+     "max": 0.52904,
+     "mean": 0.505,
+     "std": 0.01038
+    },
+    "X": {
+     "min": 0.47602,
+     "max": 0.58657,
+     "mean": 0.50409,
+     "std": 0.01246
+    },
+    "Y": {
+     "min": 0.49982,
+     "max": 0.52508,
+     "mean": 0.50413,
+     "std": 0.00449
+    }
+   }
+  },
+  {
+   "folio": "f81v",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 258,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.51042,
+   "mean_state": [
+    0.54465,
+    0.51102,
+    0.7629,
+    0.54727,
+    0.51513,
+    0.51356,
+    0.51116
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.7907,
+     "corridor": 0.20155,
+     "edge": 0.00775
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.0155,
+     "corridor": 0.56202,
+     "edge": 0.42248
+    },
+    "C": {
+     "basin": 0.78295,
+     "corridor": 0.21705,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.98062,
+     "corridor": 0.01938,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.43548,
+     "max": 0.74669,
+     "mean": 0.54465,
+     "std": 0.06427
+    },
+    "RC": {
+     "min": 0.48977,
+     "max": 0.54039,
+     "mean": 0.51102,
+     "std": 0.01165
+    },
+    "S": {
+     "min": 0.50764,
+     "max": 0.83915,
+     "mean": 0.7629,
+     "std": 0.04075
+    },
+    "C": {
+     "min": 0.49156,
+     "max": 0.62708,
+     "mean": 0.54727,
+     "std": 0.0342
+    },
+    "TR": {
+     "min": 0.48041,
+     "max": 0.57025,
+     "mean": 0.51513,
+     "std": 0.02658
+    },
+    "X": {
+     "min": 0.45835,
+     "max": 0.63397,
+     "mean": 0.51356,
+     "std": 0.02579
+    },
+    "Y": {
+     "min": 0.49788,
+     "max": 0.5404,
+     "mean": 0.51116,
+     "std": 0.00952
+    }
+   }
+  },
+  {
+   "folio": "f55r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 124,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.56003,
+   "mean_state": [
+    0.51741,
+    0.48366,
+    0.65597,
+    0.58432,
+    0.4851,
+    0.51039,
+    0.51385
+   ],
+   "excursion_count": 2,
+   "bounded_excursion_count": 1,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.29839,
+     "corridor": 0.53226,
+     "edge": 0.16935
+    },
+    "C": {
+     "basin": 0.42742,
+     "corridor": 0.57258,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.48831,
+     "max": 0.56937,
+     "mean": 0.51741,
+     "std": 0.01688
+    },
+    "RC": {
+     "min": 0.44853,
+     "max": 0.51115,
+     "mean": 0.48366,
+     "std": 0.01274
+    },
+    "S": {
+     "min": 0.52312,
+     "max": 0.80546,
+     "mean": 0.65597,
+     "std": 0.08337
+    },
+    "C": {
+     "min": 0.50538,
+     "max": 0.653,
+     "mean": 0.58432,
+     "std": 0.03758
+    },
+    "TR": {
+     "min": 0.4576,
+     "max": 0.5,
+     "mean": 0.4851,
+     "std": 0.01014
+    },
+    "X": {
+     "min": 0.49624,
+     "max": 0.56976,
+     "mean": 0.51039,
+     "std": 0.01497
+    },
+    "Y": {
+     "min": 0.49795,
+     "max": 0.5734,
+     "mean": 0.51385,
+     "std": 0.02019
+    }
+   }
+  },
+  {
+   "folio": "f55r",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 124,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.55559,
+   "mean_state": [
+    0.51985,
+    0.48319,
+    0.62193,
+    0.72381,
+    0.48971,
+    0.52,
+    0.51259
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.47581,
+     "corridor": 0.43548,
+     "edge": 0.08871
+    },
+    "C": {
+     "basin": 0.04032,
+     "corridor": 0.51613,
+     "edge": 0.44355
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.95968,
+     "corridor": 0.04032,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.4936,
+     "max": 0.56064,
+     "mean": 0.51985,
+     "std": 0.01535
+    },
+    "RC": {
+     "min": 0.45139,
+     "max": 0.50811,
+     "mean": 0.48319,
+     "std": 0.01243
+    },
+    "S": {
+     "min": 0.48418,
+     "max": 0.78803,
+     "mean": 0.62193,
+     "std": 0.09105
+    },
+    "C": {
+     "min": 0.51292,
+     "max": 0.82862,
+     "mean": 0.72381,
+     "std": 0.04996
+    },
+    "TR": {
+     "min": 0.46864,
+     "max": 0.50115,
+     "mean": 0.48971,
+     "std": 0.00753
+    },
+    "X": {
+     "min": 0.49704,
+     "max": 0.61128,
+     "mean": 0.52,
+     "std": 0.02375
+    },
+    "Y": {
+     "min": 0.49942,
+     "max": 0.56601,
+     "mean": 0.51259,
+     "std": 0.01772
+    }
+   }
+  },
+  {
+   "folio": "f55r",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 124,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.55429,
+   "mean_state": [
+    0.5634,
+    0.49142,
+    0.59992,
+    0.65508,
+    0.46929,
+    0.54255,
+    0.5138
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.66129,
+     "corridor": 0.33871,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.48387,
+     "corridor": 0.46774,
+     "edge": 0.04839
+    },
+    "C": {
+     "basin": 0.09677,
+     "corridor": 0.81452,
+     "edge": 0.08871
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.82258,
+     "corridor": 0.17742,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.99194,
+     "corridor": 0.00806,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 2,
+     "total_magnitude": 0.00018
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.4888,
+     "max": 0.63249,
+     "mean": 0.5634,
+     "std": 0.03449
+    },
+    "RC": {
+     "min": 0.4708,
+     "max": 0.5075,
+     "mean": 0.49142,
+     "std": 0.00709
+    },
+    "S": {
+     "min": 0.48262,
+     "max": 0.78573,
+     "mean": 0.59992,
+     "std": 0.08183
+    },
+    "C": {
+     "min": 0.5082,
+     "max": 0.76433,
+     "mean": 0.65508,
+     "std": 0.05503
+    },
+    "TR": {
+     "min": 0.4261,
+     "max": 0.5,
+     "mean": 0.46929,
+     "std": 0.0184
+    },
+    "X": {
+     "min": 0.49601,
+     "max": 0.66401,
+     "mean": 0.54255,
+     "std": 0.03661
+    },
+    "Y": {
+     "min": 0.49109,
+     "max": 0.58149,
+     "mean": 0.5138,
+     "std": 0.02283
+    }
+   }
+  },
+  {
+   "folio": "f40v",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 106,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.52304,
+   "mean_state": [
+    0.53321,
+    0.5105,
+    0.70309,
+    0.54131,
+    0.49049,
+    0.51626,
+    0.50627
+   ],
+   "excursion_count": 2,
+   "bounded_excursion_count": 1,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.89623,
+     "corridor": 0.10377,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.10377,
+     "corridor": 0.58491,
+     "edge": 0.31132
+    },
+    "C": {
+     "basin": 0.99057,
+     "corridor": 0.00943,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.99057,
+     "corridor": 0.00943,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.463,
+     "max": 0.60131,
+     "mean": 0.53321,
+     "std": 0.03076
+    },
+    "RC": {
+     "min": 0.48477,
+     "max": 0.53249,
+     "mean": 0.5105,
+     "std": 0.01185
+    },
+    "S": {
+     "min": 0.53059,
+     "max": 0.84073,
+     "mean": 0.70309,
+     "std": 0.07409
+    },
+    "C": {
+     "min": 0.49268,
+     "max": 0.61287,
+     "mean": 0.54131,
+     "std": 0.02025
+    },
+    "TR": {
+     "min": 0.46867,
+     "max": 0.5,
+     "mean": 0.49049,
+     "std": 0.00507
+    },
+    "X": {
+     "min": 0.48282,
+     "max": 0.58557,
+     "mean": 0.51626,
+     "std": 0.02133
+    },
+    "Y": {
+     "min": 0.50044,
+     "max": 0.52304,
+     "mean": 0.50627,
+     "std": 0.0053
+    }
+   }
+  },
+  {
+   "folio": "f40v",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 106,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.52045,
+   "mean_state": [
+    0.5386,
+    0.51042,
+    0.68704,
+    0.6945,
+    0.4934,
+    0.53067,
+    0.50569
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.86792,
+     "corridor": 0.13208,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.15094,
+     "corridor": 0.63208,
+     "edge": 0.21698
+    },
+    "C": {
+     "basin": 0.06604,
+     "corridor": 0.70755,
+     "edge": 0.22642
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.89623,
+     "corridor": 0.10377,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.4696,
+     "max": 0.60935,
+     "mean": 0.5386,
+     "std": 0.03105
+    },
+    "RC": {
+     "min": 0.48595,
+     "max": 0.53174,
+     "mean": 0.51042,
+     "std": 0.01156
+    },
+    "S": {
+     "min": 0.51365,
+     "max": 0.81848,
+     "mean": 0.68704,
+     "std": 0.0788
+    },
+    "C": {
+     "min": 0.48498,
+     "max": 0.81735,
+     "mean": 0.6945,
+     "std": 0.06265
+    },
+    "TR": {
+     "min": 0.47701,
+     "max": 0.50019,
+     "mean": 0.4934,
+     "std": 0.00372
+    },
+    "X": {
+     "min": 0.47321,
+     "max": 0.63816,
+     "mean": 0.53067,
+     "std": 0.03377
+    },
+    "Y": {
+     "min": 0.50082,
+     "max": 0.52045,
+     "mean": 0.50569,
+     "std": 0.00454
+    }
+   }
+  },
+  {
+   "folio": "f40v",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 106,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.52507,
+   "mean_state": [
+    0.61321,
+    0.50567,
+    0.66156,
+    0.60426,
+    0.48071,
+    0.56905,
+    0.5069
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.34906,
+     "corridor": 0.62264,
+     "edge": 0.0283
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.25472,
+     "corridor": 0.60377,
+     "edge": 0.14151
+    },
+    "C": {
+     "basin": 0.33962,
+     "corridor": 0.65094,
+     "edge": 0.00943
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.64151,
+     "corridor": 0.34906,
+     "edge": 0.00943
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.44624,
+     "max": 0.7913,
+     "mean": 0.61321,
+     "std": 0.07587
+    },
+    "RC": {
+     "min": 0.49117,
+     "max": 0.51788,
+     "mean": 0.50567,
+     "std": 0.00655
+    },
+    "S": {
+     "min": 0.48708,
+     "max": 0.81094,
+     "mean": 0.66156,
+     "std": 0.08426
+    },
+    "C": {
+     "min": 0.48945,
+     "max": 0.77338,
+     "mean": 0.60426,
+     "std": 0.0494
+    },
+    "TR": {
+     "min": 0.44255,
+     "max": 0.5,
+     "mean": 0.48071,
+     "std": 0.00964
+    },
+    "X": {
+     "min": 0.45786,
+     "max": 0.74794,
+     "mean": 0.56905,
+     "std": 0.05233
+    },
+    "Y": {
+     "min": 0.49789,
+     "max": 0.5251,
+     "mean": 0.5069,
+     "std": 0.00642
+    }
+   }
+  },
+  {
+   "folio": "f43v",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 153,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50267,
+   "mean_state": [
+    0.4884,
+    0.4865,
+    0.74714,
+    0.53847,
+    0.50108,
+    0.49778,
+    0.52088
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.03268,
+     "corridor": 0.37255,
+     "edge": 0.59477
+    },
+    "C": {
+     "basin": 0.93464,
+     "corridor": 0.06536,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.43647,
+     "max": 0.56051,
+     "mean": 0.4884,
+     "std": 0.01928
+    },
+    "RC": {
+     "min": 0.45835,
+     "max": 0.52057,
+     "mean": 0.4865,
+     "std": 0.0156
+    },
+    "S": {
+     "min": 0.51019,
+     "max": 0.83259,
+     "mean": 0.74714,
+     "std": 0.05739
+    },
+    "C": {
+     "min": 0.50763,
+     "max": 0.60402,
+     "mean": 0.53847,
+     "std": 0.02369
+    },
+    "TR": {
+     "min": 0.47827,
+     "max": 0.52809,
+     "mean": 0.50108,
+     "std": 0.01214
+    },
+    "X": {
+     "min": 0.47215,
+     "max": 0.54221,
+     "mean": 0.49778,
+     "std": 0.00976
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.57859,
+     "mean": 0.52088,
+     "std": 0.02303
+    }
+   }
+  },
+  {
+   "folio": "f43v",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 153,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50245,
+   "mean_state": [
+    0.48569,
+    0.48588,
+    0.74138,
+    0.68002,
+    0.50067,
+    0.4957,
+    0.5172
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.05229,
+     "corridor": 0.37255,
+     "edge": 0.57516
+    },
+    "C": {
+     "basin": 0.03922,
+     "corridor": 0.79085,
+     "edge": 0.16993
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.43782,
+     "max": 0.54725,
+     "mean": 0.48569,
+     "std": 0.01933
+    },
+    "RC": {
+     "min": 0.45965,
+     "max": 0.51728,
+     "mean": 0.48588,
+     "std": 0.01478
+    },
+    "S": {
+     "min": 0.50834,
+     "max": 0.8142,
+     "mean": 0.74138,
+     "std": 0.05725
+    },
+    "C": {
+     "min": 0.51966,
+     "max": 0.8186,
+     "mean": 0.68002,
+     "std": 0.05013
+    },
+    "TR": {
+     "min": 0.48358,
+     "max": 0.52166,
+     "mean": 0.50067,
+     "std": 0.00921
+    },
+    "X": {
+     "min": 0.44924,
+     "max": 0.56607,
+     "mean": 0.4957,
+     "std": 0.01699
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.56432,
+     "mean": 0.5172,
+     "std": 0.0191
+    }
+   }
+  },
+  {
+   "folio": "f43v",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 153,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.61952,
+   "mean_state": [
+    0.46538,
+    0.49301,
+    0.73264,
+    0.58764,
+    0.5031,
+    0.47819,
+    0.58047
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.81046,
+     "corridor": 0.18954,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.05882,
+     "corridor": 0.44444,
+     "edge": 0.49673
+    },
+    "C": {
+     "basin": 0.43137,
+     "corridor": 0.56863,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.87582,
+     "corridor": 0.12418,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.57516,
+     "corridor": 0.42484,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 1,
+     "total_magnitude": 0.00031
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 6,
+     "total_magnitude": 0.00874
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.35541,
+     "max": 0.58304,
+     "mean": 0.46538,
+     "std": 0.0452
+    },
+    "RC": {
+     "min": 0.47685,
+     "max": 0.5128,
+     "mean": 0.49301,
+     "std": 0.00886
+    },
+    "S": {
+     "min": 0.50741,
+     "max": 0.8019,
+     "mean": 0.73264,
+     "std": 0.05724
+    },
+    "C": {
+     "min": 0.51342,
+     "max": 0.70732,
+     "mean": 0.58764,
+     "std": 0.05147
+    },
+    "TR": {
+     "min": 0.46585,
+     "max": 0.54484,
+     "mean": 0.5031,
+     "std": 0.01981
+    },
+    "X": {
+     "min": 0.36619,
+     "max": 0.57399,
+     "mean": 0.47819,
+     "std": 0.0411
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.75039,
+     "mean": 0.58047,
+     "std": 0.08235
+    }
+   }
+  },
+  {
+   "folio": "f34r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 144,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.51817,
+   "mean_state": [
+    0.5051,
+    0.53611,
+    0.7472,
+    0.53139,
+    0.52311,
+    0.50168,
+    0.5536
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.03472,
+     "corridor": 0.55556,
+     "edge": 0.40972
+    },
+    "C": {
+     "basin": 0.94444,
+     "corridor": 0.05556,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.63889,
+     "corridor": 0.36111,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.451,
+     "max": 0.57178,
+     "mean": 0.5051,
+     "std": 0.02168
+    },
+    "RC": {
+     "min": 0.48992,
+     "max": 0.57148,
+     "mean": 0.53611,
+     "std": 0.01971
+    },
+    "S": {
+     "min": 0.54548,
+     "max": 0.85097,
+     "mean": 0.7472,
+     "std": 0.05814
+    },
+    "C": {
+     "min": 0.49705,
+     "max": 0.59839,
+     "mean": 0.53139,
+     "std": 0.02584
+    },
+    "TR": {
+     "min": 0.4923,
+     "max": 0.57528,
+     "mean": 0.52311,
+     "std": 0.01854
+    },
+    "X": {
+     "min": 0.47544,
+     "max": 0.54558,
+     "mean": 0.50168,
+     "std": 0.00885
+    },
+    "Y": {
+     "min": 0.50023,
+     "max": 0.68791,
+     "mean": 0.5536,
+     "std": 0.05613
+    }
+   }
+  },
+  {
+   "folio": "f34r",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 144,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.51481,
+   "mean_state": [
+    0.5079,
+    0.53866,
+    0.73344,
+    0.67324,
+    0.5152,
+    0.50568,
+    0.52206
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.03472,
+     "corridor": 0.64583,
+     "edge": 0.31944
+    },
+    "C": {
+     "basin": 0.14583,
+     "corridor": 0.79167,
+     "edge": 0.0625
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.91667,
+     "corridor": 0.08333,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.46506,
+     "max": 0.57166,
+     "mean": 0.5079,
+     "std": 0.02158
+    },
+    "RC": {
+     "min": 0.4906,
+     "max": 0.56762,
+     "mean": 0.53866,
+     "std": 0.01971
+    },
+    "S": {
+     "min": 0.53665,
+     "max": 0.83368,
+     "mean": 0.73344,
+     "std": 0.06273
+    },
+    "C": {
+     "min": 0.49755,
+     "max": 0.809,
+     "mean": 0.67324,
+     "std": 0.06595
+    },
+    "TR": {
+     "min": 0.49227,
+     "max": 0.55611,
+     "mean": 0.5152,
+     "std": 0.01369
+    },
+    "X": {
+     "min": 0.46417,
+     "max": 0.56731,
+     "mean": 0.50568,
+     "std": 0.01422
+    },
+    "Y": {
+     "min": 0.50033,
+     "max": 0.63025,
+     "mean": 0.52206,
+     "std": 0.03068
+    }
+   }
+  },
+  {
+   "folio": "f34r",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 144,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.65985,
+   "mean_state": [
+    0.5108,
+    0.51826,
+    0.70908,
+    0.52625,
+    0.54948,
+    0.48825,
+    0.66499
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.92361,
+     "corridor": 0.07639,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.0625,
+     "corridor": 0.73611,
+     "edge": 0.20139
+    },
+    "C": {
+     "basin": 0.82639,
+     "corridor": 0.17361,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.86111,
+     "corridor": 0.13889,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.99306,
+     "corridor": 0.00694,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.14583,
+     "corridor": 0.85417,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.41897,
+     "max": 0.62249,
+     "mean": 0.5108,
+     "std": 0.0438
+    },
+    "RC": {
+     "min": 0.49422,
+     "max": 0.54045,
+     "mean": 0.51826,
+     "std": 0.01079
+    },
+    "S": {
+     "min": 0.53157,
+     "max": 0.82388,
+     "mean": 0.70908,
+     "std": 0.07086
+    },
+    "C": {
+     "min": 0.46215,
+     "max": 0.6215,
+     "mean": 0.52625,
+     "std": 0.04596
+    },
+    "TR": {
+     "min": 0.48824,
+     "max": 0.62873,
+     "mean": 0.54948,
+     "std": 0.03078
+    },
+    "X": {
+     "min": 0.4147,
+     "max": 0.53862,
+     "mean": 0.48825,
+     "std": 0.02839
+    },
+    "Y": {
+     "min": 0.50059,
+     "max": 0.7974,
+     "mean": 0.66499,
+     "std": 0.0816
+    }
+   }
+  },
+  {
+   "folio": "f31r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 100,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.5266,
+   "mean_state": [
+    0.49921,
+    0.53995,
+    0.73854,
+    0.50227,
+    0.51311,
+    0.49485,
+    0.51895
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.03,
+     "corridor": 0.31,
+     "edge": 0.66
+    },
+    "C": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.42041,
+     "max": 0.57731,
+     "mean": 0.49921,
+     "std": 0.02761
+    },
+    "RC": {
+     "min": 0.5,
+     "max": 0.57036,
+     "mean": 0.53995,
+     "std": 0.02053
+    },
+    "S": {
+     "min": 0.56599,
+     "max": 0.82134,
+     "mean": 0.73854,
+     "std": 0.05068
+    },
+    "C": {
+     "min": 0.48269,
+     "max": 0.53442,
+     "mean": 0.50227,
+     "std": 0.00899
+    },
+    "TR": {
+     "min": 0.5,
+     "max": 0.5237,
+     "mean": 0.51311,
+     "std": 0.0078
+    },
+    "X": {
+     "min": 0.45993,
+     "max": 0.50858,
+     "mean": 0.49485,
+     "std": 0.00867
+    },
+    "Y": {
+     "min": 0.50087,
+     "max": 0.57147,
+     "mean": 0.51895,
+     "std": 0.01733
+    }
+   }
+  },
+  {
+   "folio": "f31r",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 100,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.52066,
+   "mean_state": [
+    0.50261,
+    0.54059,
+    0.72921,
+    0.53512,
+    0.509,
+    0.49074,
+    0.51452
+   ],
+   "excursion_count": 2,
+   "bounded_excursion_count": 1,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.05,
+     "corridor": 0.36,
+     "edge": 0.59
+    },
+    "C": {
+     "basin": 0.93,
+     "corridor": 0.07,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.42775,
+     "max": 0.5619,
+     "mean": 0.50261,
+     "std": 0.025
+    },
+    "RC": {
+     "min": 0.5,
+     "max": 0.57037,
+     "mean": 0.54059,
+     "std": 0.02139
+    },
+    "S": {
+     "min": 0.55399,
+     "max": 0.80741,
+     "mean": 0.72921,
+     "std": 0.05261
+    },
+    "C": {
+     "min": 0.47783,
+     "max": 0.59893,
+     "mean": 0.53512,
+     "std": 0.02633
+    },
+    "TR": {
+     "min": 0.5,
+     "max": 0.51683,
+     "mean": 0.509,
+     "std": 0.00554
+    },
+    "X": {
+     "min": 0.43402,
+     "max": 0.51354,
+     "mean": 0.49074,
+     "std": 0.01419
+    },
+    "Y": {
+     "min": 0.50071,
+     "max": 0.55636,
+     "mean": 0.51452,
+     "std": 0.01382
+    }
+   }
+  },
+  {
+   "folio": "f31r",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 100,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.64967,
+   "mean_state": [
+    0.50014,
+    0.52114,
+    0.71729,
+    0.49649,
+    0.52693,
+    0.47646,
+    0.60898
+   ],
+   "excursion_count": 2,
+   "bounded_excursion_count": 1,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.92,
+     "corridor": 0.08,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.05,
+     "corridor": 0.45,
+     "edge": 0.5
+    },
+    "C": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.97,
+     "corridor": 0.03,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.26,
+     "corridor": 0.74,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.33048,
+     "max": 0.59483,
+     "mean": 0.50014,
+     "std": 0.05167
+    },
+    "RC": {
+     "min": 0.5,
+     "max": 0.53798,
+     "mean": 0.52114,
+     "std": 0.01068
+    },
+    "S": {
+     "min": 0.54219,
+     "max": 0.80307,
+     "mean": 0.71729,
+     "std": 0.05604
+    },
+    "C": {
+     "min": 0.46064,
+     "max": 0.54978,
+     "mean": 0.49649,
+     "std": 0.01826
+    },
+    "TR": {
+     "min": 0.5,
+     "max": 0.54619,
+     "mean": 0.52693,
+     "std": 0.01548
+    },
+    "X": {
+     "min": 0.38343,
+     "max": 0.51955,
+     "mean": 0.47646,
+     "std": 0.02784
+    },
+    "Y": {
+     "min": 0.50251,
+     "max": 0.66747,
+     "mean": 0.60898,
+     "std": 0.05289
+    }
+   }
+  },
+  {
+   "folio": "f39v",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 142,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.51329,
+   "mean_state": [
+    0.51156,
+    0.46689,
+    0.68454,
+    0.583,
+    0.47553,
+    0.50753,
+    0.50724
+   ],
+   "excursion_count": 3,
+   "bounded_excursion_count": 2,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.99296,
+     "corridor": 0.00704,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.12676,
+     "corridor": 0.62676,
+     "edge": 0.24648
+    },
+    "C": {
+     "basin": 0.59155,
+     "corridor": 0.40141,
+     "edge": 0.00704
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.99296,
+     "corridor": 0.00704,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.48298,
+     "max": 0.57698,
+     "mean": 0.51156,
+     "std": 0.01681
+    },
+    "RC": {
+     "min": 0.41966,
+     "max": 0.50534,
+     "mean": 0.46689,
+     "std": 0.0227
+    },
+    "S": {
+     "min": 0.5089,
+     "max": 0.84007,
+     "mean": 0.68454,
+     "std": 0.07328
+    },
+    "C": {
+     "min": 0.50086,
+     "max": 0.73315,
+     "mean": 0.583,
+     "std": 0.05769
+    },
+    "TR": {
+     "min": 0.43899,
+     "max": 0.50287,
+     "mean": 0.47553,
+     "std": 0.0179
+    },
+    "X": {
+     "min": 0.49133,
+     "max": 0.5937,
+     "mean": 0.50753,
+     "std": 0.01404
+    },
+    "Y": {
+     "min": 0.49317,
+     "max": 0.53768,
+     "mean": 0.50724,
+     "std": 0.01071
+    }
+   }
+  },
+  {
+   "folio": "f39v",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 142,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.51231,
+   "mean_state": [
+    0.51204,
+    0.46438,
+    0.66242,
+    0.68711,
+    0.48346,
+    0.51583,
+    0.50791
+   ],
+   "excursion_count": 2,
+   "bounded_excursion_count": 1,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.26761,
+     "corridor": 0.57042,
+     "edge": 0.16197
+    },
+    "C": {
+     "basin": 0.16901,
+     "corridor": 0.49296,
+     "edge": 0.33803
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.97183,
+     "corridor": 0.02817,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.48532,
+     "max": 0.56579,
+     "mean": 0.51204,
+     "std": 0.01557
+    },
+    "RC": {
+     "min": 0.42062,
+     "max": 0.50455,
+     "mean": 0.46438,
+     "std": 0.02321
+    },
+    "S": {
+     "min": 0.50728,
+     "max": 0.80975,
+     "mean": 0.66242,
+     "std": 0.08157
+    },
+    "C": {
+     "min": 0.50171,
+     "max": 0.80625,
+     "mean": 0.68711,
+     "std": 0.07518
+    },
+    "TR": {
+     "min": 0.45507,
+     "max": 0.50252,
+     "mean": 0.48346,
+     "std": 0.01287
+    },
+    "X": {
+     "min": 0.48934,
+     "max": 0.63978,
+     "mean": 0.51583,
+     "std": 0.02397
+    },
+    "Y": {
+     "min": 0.49741,
+     "max": 0.5373,
+     "mean": 0.50791,
+     "std": 0.0098
+    }
+   }
+  },
+  {
+   "folio": "f39v",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 142,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50753,
+   "mean_state": [
+    0.547,
+    0.48257,
+    0.64065,
+    0.63168,
+    0.45223,
+    0.53494,
+    0.50044
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.76056,
+     "corridor": 0.23944,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.28169,
+     "corridor": 0.61268,
+     "edge": 0.10563
+    },
+    "C": {
+     "basin": 0.27465,
+     "corridor": 0.66197,
+     "edge": 0.06338
+    },
+    "TR": {
+     "basin": 0.83803,
+     "corridor": 0.16197,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.88028,
+     "corridor": 0.11268,
+     "edge": 0.00704
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.48936,
+     "max": 0.64898,
+     "mean": 0.547,
+     "std": 0.04052
+    },
+    "RC": {
+     "min": 0.4553,
+     "max": 0.50332,
+     "mean": 0.48257,
+     "std": 0.01262
+    },
+    "S": {
+     "min": 0.49976,
+     "max": 0.77532,
+     "mean": 0.64065,
+     "std": 0.07875
+    },
+    "C": {
+     "min": 0.50122,
+     "max": 0.7621,
+     "mean": 0.63168,
+     "std": 0.06926
+    },
+    "TR": {
+     "min": 0.39367,
+     "max": 0.50321,
+     "mean": 0.45223,
+     "std": 0.03071
+    },
+    "X": {
+     "min": 0.49785,
+     "max": 0.71863,
+     "mean": 0.53494,
+     "std": 0.0389
+    },
+    "Y": {
+     "min": 0.47728,
+     "max": 0.52595,
+     "mean": 0.50044,
+     "std": 0.01148
+    }
+   }
+  },
+  {
+   "folio": "f95r1",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 103,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.51836,
+   "mean_state": [
+    0.52241,
+    0.51189,
+    0.72696,
+    0.54633,
+    0.49571,
+    0.50249,
+    0.5244
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.94175,
+     "corridor": 0.05825,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.03883,
+     "corridor": 0.66019,
+     "edge": 0.30097
+    },
+    "C": {
+     "basin": 0.85437,
+     "corridor": 0.14563,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.86408,
+     "corridor": 0.13592,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 1,
+     "total_magnitude": 0.00045
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.48945,
+     "max": 0.64415,
+     "mean": 0.52241,
+     "std": 0.02886
+    },
+    "RC": {
+     "min": 0.48643,
+     "max": 0.54527,
+     "mean": 0.51189,
+     "std": 0.01326
+    },
+    "S": {
+     "min": 0.51101,
+     "max": 0.85949,
+     "mean": 0.72696,
+     "std": 0.06817
+    },
+    "C": {
+     "min": 0.49981,
+     "max": 0.64718,
+     "mean": 0.54633,
+     "std": 0.03339
+    },
+    "TR": {
+     "min": 0.47762,
+     "max": 0.50751,
+     "mean": 0.49571,
+     "std": 0.00644
+    },
+    "X": {
+     "min": 0.49593,
+     "max": 0.51969,
+     "mean": 0.50249,
+     "std": 0.00474
+    },
+    "Y": {
+     "min": 0.49941,
+     "max": 0.62599,
+     "mean": 0.5244,
+     "std": 0.03641
+    }
+   }
+  },
+  {
+   "folio": "f95r1",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 103,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50097,
+   "mean_state": [
+    0.5256,
+    0.51188,
+    0.69945,
+    0.65453,
+    0.49705,
+    0.50488,
+    0.51414
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.93204,
+     "corridor": 0.06796,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.18447,
+     "corridor": 0.60194,
+     "edge": 0.21359
+    },
+    "C": {
+     "basin": 0.09709,
+     "corridor": 0.73786,
+     "edge": 0.16505
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 2,
+     "total_magnitude": 0.00034
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.492,
+     "max": 0.62687,
+     "mean": 0.5256,
+     "std": 0.02611
+    },
+    "RC": {
+     "min": 0.48738,
+     "max": 0.54313,
+     "mean": 0.51188,
+     "std": 0.01298
+    },
+    "S": {
+     "min": 0.50901,
+     "max": 0.84058,
+     "mean": 0.69945,
+     "std": 0.08107
+    },
+    "C": {
+     "min": 0.49972,
+     "max": 0.82908,
+     "mean": 0.65453,
+     "std": 0.08017
+    },
+    "TR": {
+     "min": 0.48324,
+     "max": 0.50628,
+     "mean": 0.49705,
+     "std": 0.00494
+    },
+    "X": {
+     "min": 0.49402,
+     "max": 0.52999,
+     "mean": 0.50488,
+     "std": 0.0073
+    },
+    "Y": {
+     "min": 0.49987,
+     "max": 0.57524,
+     "mean": 0.51414,
+     "std": 0.02214
+    }
+   }
+  },
+  {
+   "folio": "f95r1",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 103,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.60256,
+   "mean_state": [
+    0.55516,
+    0.50637,
+    0.66882,
+    0.5789,
+    0.49112,
+    0.51342,
+    0.5363
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.78641,
+     "corridor": 0.20388,
+     "edge": 0.00971
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.25243,
+     "corridor": 0.58252,
+     "edge": 0.16505
+    },
+    "C": {
+     "basin": 0.6699,
+     "corridor": 0.3301,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.99029,
+     "corridor": 0.00971,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.80583,
+     "corridor": 0.19417,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 7,
+     "total_magnitude": 0.03084
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.486,
+     "max": 0.74779,
+     "mean": 0.55516,
+     "std": 0.04912
+    },
+    "RC": {
+     "min": 0.4922,
+     "max": 0.52543,
+     "mean": 0.50637,
+     "std": 0.0073
+    },
+    "S": {
+     "min": 0.50801,
+     "max": 0.82689,
+     "mean": 0.66882,
+     "std": 0.08404
+    },
+    "C": {
+     "min": 0.49976,
+     "max": 0.73561,
+     "mean": 0.5789,
+     "std": 0.05549
+    },
+    "TR": {
+     "min": 0.46186,
+     "max": 0.50915,
+     "mean": 0.49112,
+     "std": 0.0104
+    },
+    "X": {
+     "min": 0.49035,
+     "max": 0.58163,
+     "mean": 0.51342,
+     "std": 0.01837
+    },
+    "Y": {
+     "min": 0.49769,
+     "max": 0.67232,
+     "mean": 0.5363,
+     "std": 0.05326
+    }
+   }
+  },
+  {
+   "folio": "f104r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 438,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.63591,
+   "mean_state": [
+    0.51714,
+    0.53065,
+    0.72321,
+    0.53059,
+    0.51212,
+    0.50575,
+    0.53069
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.92237,
+     "corridor": 0.07763,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.90868,
+     "corridor": 0.09132,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.00457,
+     "corridor": 0.49087,
+     "edge": 0.50457
+    },
+    "C": {
+     "basin": 0.94521,
+     "corridor": 0.05479,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.9589,
+     "corridor": 0.0411,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.99543,
+     "corridor": 0.00457,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.90639,
+     "corridor": 0.09361,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 2,
+     "total_magnitude": 0.00438
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.43417,
+     "max": 0.64682,
+     "mean": 0.51714,
+     "std": 0.03465
+    },
+    "RC": {
+     "min": 0.46723,
+     "max": 0.65277,
+     "mean": 0.53065,
+     "std": 0.03213
+    },
+    "S": {
+     "min": 0.51538,
+     "max": 0.81916,
+     "mean": 0.72321,
+     "std": 0.03956
+    },
+    "C": {
+     "min": 0.48039,
+     "max": 0.62986,
+     "mean": 0.53059,
+     "std": 0.02445
+    },
+    "TR": {
+     "min": 0.4663,
+     "max": 0.62382,
+     "mean": 0.51212,
+     "std": 0.02824
+    },
+    "X": {
+     "min": 0.46503,
+     "max": 0.58086,
+     "mean": 0.50575,
+     "std": 0.01533
+    },
+    "Y": {
+     "min": 0.49966,
+     "max": 0.63591,
+     "mean": 0.53069,
+     "std": 0.031
+    }
+   }
+  },
+  {
+   "folio": "f104r",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 438,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.56743,
+   "mean_state": [
+    0.52109,
+    0.53428,
+    0.71566,
+    0.69734,
+    0.5092,
+    0.51126,
+    0.52004
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.92237,
+     "corridor": 0.07763,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.88813,
+     "corridor": 0.11187,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.00457,
+     "corridor": 0.55936,
+     "edge": 0.43607
+    },
+    "C": {
+     "basin": 0.01142,
+     "corridor": 0.71918,
+     "edge": 0.26941
+    },
+    "TR": {
+     "basin": 0.99315,
+     "corridor": 0.00685,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.96804,
+     "corridor": 0.03196,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.99772,
+     "corridor": 0.00228,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 1,
+     "total_magnitude": 0.00312
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 3,
+     "total_magnitude": 0.00448
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.4432,
+     "max": 0.64102,
+     "mean": 0.52109,
+     "std": 0.03559
+    },
+    "RC": {
+     "min": 0.46928,
+     "max": 0.65444,
+     "mean": 0.53428,
+     "std": 0.03361
+    },
+    "S": {
+     "min": 0.51258,
+     "max": 0.80377,
+     "mean": 0.71566,
+     "std": 0.03836
+    },
+    "C": {
+     "min": 0.50671,
+     "max": 0.80293,
+     "mean": 0.69734,
+     "std": 0.03477
+    },
+    "TR": {
+     "min": 0.47625,
+     "max": 0.59427,
+     "mean": 0.5092,
+     "std": 0.02192
+    },
+    "X": {
+     "min": 0.44109,
+     "max": 0.63318,
+     "mean": 0.51126,
+     "std": 0.02538
+    },
+    "Y": {
+     "min": 0.50066,
+     "max": 0.58264,
+     "mean": 0.52004,
+     "std": 0.01959
+    }
+   }
+  },
+  {
+   "folio": "f104r",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 438,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.88954,
+   "mean_state": [
+    0.54471,
+    0.51855,
+    0.69682,
+    0.5611,
+    0.52494,
+    0.5084,
+    0.64404
+   ],
+   "excursion_count": 2,
+   "bounded_excursion_count": 1,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.73973,
+     "corridor": 0.24886,
+     "edge": 0.01142
+    },
+    "RC": {
+     "basin": 0.99087,
+     "corridor": 0.00913,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.01598,
+     "corridor": 0.6621,
+     "edge": 0.32192
+    },
+    "C": {
+     "basin": 0.69635,
+     "corridor": 0.29909,
+     "edge": 0.00457
+    },
+    "TR": {
+     "basin": 0.88813,
+     "corridor": 0.11187,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.91553,
+     "corridor": 0.08447,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.33105,
+     "corridor": 0.6484,
+     "edge": 0.02055
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 2,
+     "total_magnitude": 0.01309
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 15,
+     "total_magnitude": 0.09276
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.37706,
+     "max": 0.77909,
+     "mean": 0.54471,
+     "std": 0.07482
+    },
+    "RC": {
+     "min": 0.48129,
+     "max": 0.59582,
+     "mean": 0.51855,
+     "std": 0.02301
+    },
+    "S": {
+     "min": 0.51118,
+     "max": 0.79906,
+     "mean": 0.69682,
+     "std": 0.04569
+    },
+    "C": {
+     "min": 0.4404,
+     "max": 0.72576,
+     "mean": 0.5611,
+     "std": 0.05312
+    },
+    "TR": {
+     "min": 0.43603,
+     "max": 0.70244,
+     "mean": 0.52494,
+     "std": 0.0501
+    },
+    "X": {
+     "min": 0.4052,
+     "max": 0.71277,
+     "mean": 0.5084,
+     "std": 0.04654
+    },
+    "Y": {
+     "min": 0.4928,
+     "max": 0.88954,
+     "mean": 0.64404,
+     "std": 0.10125
+    }
+   }
+  },
+  {
+   "folio": "f111r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 614,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.55273,
+   "mean_state": [
+    0.51556,
+    0.55438,
+    0.73631,
+    0.50985,
+    0.51518,
+    0.50564,
+    0.53281
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.82573,
+     "corridor": 0.16287,
+     "edge": 0.0114
+    },
+    "RC": {
+     "basin": 0.86971,
+     "corridor": 0.13029,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.00814,
+     "corridor": 0.42671,
+     "edge": 0.56515
+    },
+    "C": {
+     "basin": 0.99023,
+     "corridor": 0.00977,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.94625,
+     "corridor": 0.05375,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.99023,
+     "corridor": 0.00977,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.94137,
+     "corridor": 0.05863,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 1,
+     "total_magnitude": 0.0002
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.33456,
+     "max": 0.76934,
+     "mean": 0.51556,
+     "std": 0.07009
+    },
+    "RC": {
+     "min": 0.488,
+     "max": 0.74793,
+     "mean": 0.55438,
+     "std": 0.04351
+    },
+    "S": {
+     "min": 0.48549,
+     "max": 0.85528,
+     "mean": 0.73631,
+     "std": 0.05126
+    },
+    "C": {
+     "min": 0.47538,
+     "max": 0.62015,
+     "mean": 0.50985,
+     "std": 0.01945
+    },
+    "TR": {
+     "min": 0.46592,
+     "max": 0.64923,
+     "mean": 0.51518,
+     "std": 0.02837
+    },
+    "X": {
+     "min": 0.43969,
+     "max": 0.60926,
+     "mean": 0.50564,
+     "std": 0.02272
+    },
+    "Y": {
+     "min": 0.50061,
+     "max": 0.64397,
+     "mean": 0.53281,
+     "std": 0.02768
+    }
+   }
+  },
+  {
+   "folio": "f111r",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 614,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.54286,
+   "mean_state": [
+    0.5255,
+    0.56355,
+    0.73265,
+    0.6133,
+    0.51007,
+    0.51129,
+    0.52259
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.86971,
+     "corridor": 0.11238,
+     "edge": 0.01792
+    },
+    "RC": {
+     "basin": 0.83713,
+     "corridor": 0.16287,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.00977,
+     "corridor": 0.42182,
+     "edge": 0.5684
+    },
+    "C": {
+     "basin": 0.30456,
+     "corridor": 0.64169,
+     "edge": 0.05375
+    },
+    "TR": {
+     "basin": 0.9772,
+     "corridor": 0.0228,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.93811,
+     "corridor": 0.06189,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 1,
+     "total_magnitude": 0.01695
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.40041,
+     "max": 0.77426,
+     "mean": 0.5255,
+     "std": 0.06724
+    },
+    "RC": {
+     "min": 0.489,
+     "max": 0.75664,
+     "mean": 0.56355,
+     "std": 0.04537
+    },
+    "S": {
+     "min": 0.48787,
+     "max": 0.83109,
+     "mean": 0.73265,
+     "std": 0.04561
+    },
+    "C": {
+     "min": 0.46694,
+     "max": 0.79468,
+     "mean": 0.6133,
+     "std": 0.0676
+    },
+    "TR": {
+     "min": 0.47312,
+     "max": 0.61024,
+     "mean": 0.51007,
+     "std": 0.0206
+    },
+    "X": {
+     "min": 0.41215,
+     "max": 0.66095,
+     "mean": 0.51129,
+     "std": 0.03538
+    },
+    "Y": {
+     "min": 0.50052,
+     "max": 0.57347,
+     "mean": 0.52259,
+     "std": 0.01862
+    }
+   }
+  },
+  {
+   "folio": "f111r",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 614,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.66435,
+   "mean_state": [
+    0.51516,
+    0.53007,
+    0.72416,
+    0.50225,
+    0.53588,
+    0.4846,
+    0.70326
+   ],
+   "excursion_count": 2,
+   "bounded_excursion_count": 1,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.69381,
+     "corridor": 0.2671,
+     "edge": 0.03909
+    },
+    "RC": {
+     "basin": 0.93485,
+     "corridor": 0.06515,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.00977,
+     "corridor": 0.47231,
+     "edge": 0.51792
+    },
+    "C": {
+     "basin": 0.86156,
+     "corridor": 0.13844,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.88436,
+     "corridor": 0.11564,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.86808,
+     "corridor": 0.12866,
+     "edge": 0.00326
+    },
+    "Y": {
+     "basin": 0.09772,
+     "corridor": 0.82736,
+     "edge": 0.07492
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 2,
+     "total_magnitude": 0.03191
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 9,
+     "total_magnitude": 0.01263
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.1984,
+     "max": 0.79864,
+     "mean": 0.51516,
+     "std": 0.10593
+    },
+    "RC": {
+     "min": 0.493,
+     "max": 0.63228,
+     "mean": 0.53007,
+     "std": 0.02397
+    },
+    "S": {
+     "min": 0.48879,
+     "max": 0.80723,
+     "mean": 0.72416,
+     "std": 0.04654
+    },
+    "C": {
+     "min": 0.36624,
+     "max": 0.68521,
+     "mean": 0.50225,
+     "std": 0.04795
+    },
+    "TR": {
+     "min": 0.45429,
+     "max": 0.77081,
+     "mean": 0.53588,
+     "std": 0.05275
+    },
+    "X": {
+     "min": 0.27813,
+     "max": 0.71394,
+     "mean": 0.4846,
+     "std": 0.0566
+    },
+    "Y": {
+     "min": 0.50865,
+     "max": 0.93678,
+     "mean": 0.70326,
+     "std": 0.09748
+    }
+   }
+  },
+  {
+   "folio": "f116r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 537,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.51796,
+   "mean_state": [
+    0.52438,
+    0.55,
+    0.74471,
+    0.51972,
+    0.52198,
+    0.50959,
+    0.54166
+   ],
+   "excursion_count": 2,
+   "bounded_excursion_count": 1,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.9162,
+     "corridor": 0.0838,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.92179,
+     "corridor": 0.07821,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.00559,
+     "corridor": 0.50838,
+     "edge": 0.48603
+    },
+    "C": {
+     "basin": 0.97765,
+     "corridor": 0.02235,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.99441,
+     "corridor": 0.00559,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.99814,
+     "corridor": 0.00186,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.78771,
+     "corridor": 0.21229,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.46256,
+     "max": 0.72441,
+     "mean": 0.52438,
+     "std": 0.04002
+    },
+    "RC": {
+     "min": 0.49147,
+     "max": 0.61447,
+     "mean": 0.55,
+     "std": 0.0261
+    },
+    "S": {
+     "min": 0.50857,
+     "max": 0.85549,
+     "mean": 0.74471,
+     "std": 0.04761
+    },
+    "C": {
+     "min": 0.4676,
+     "max": 0.598,
+     "mean": 0.51972,
+     "std": 0.026
+    },
+    "TR": {
+     "min": 0.47578,
+     "max": 0.59233,
+     "mean": 0.52198,
+     "std": 0.02484
+    },
+    "X": {
+     "min": 0.4802,
+     "max": 0.5915,
+     "mean": 0.50959,
+     "std": 0.01653
+    },
+    "Y": {
+     "min": 0.49913,
+     "max": 0.66661,
+     "mean": 0.54166,
+     "std": 0.04573
+    }
+   }
+  },
+  {
+   "folio": "f116r",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 537,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.51623,
+   "mean_state": [
+    0.53561,
+    0.55551,
+    0.74164,
+    0.65971,
+    0.51439,
+    0.52153,
+    0.51933
+   ],
+   "excursion_count": 2,
+   "bounded_excursion_count": 1,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.84544,
+     "corridor": 0.1527,
+     "edge": 0.00186
+    },
+    "RC": {
+     "basin": 0.88641,
+     "corridor": 0.11359,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.01117,
+     "corridor": 0.52328,
+     "edge": 0.46555
+    },
+    "C": {
+     "basin": 0.13594,
+     "corridor": 0.75419,
+     "edge": 0.10987
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.94041,
+     "corridor": 0.05959,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.97393,
+     "corridor": 0.02607,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.47207,
+     "max": 0.74452,
+     "mean": 0.53561,
+     "std": 0.04785
+    },
+    "RC": {
+     "min": 0.49228,
+     "max": 0.61951,
+     "mean": 0.55551,
+     "std": 0.02764
+    },
+    "S": {
+     "min": 0.50701,
+     "max": 0.84364,
+     "mean": 0.74164,
+     "std": 0.04312
+    },
+    "C": {
+     "min": 0.49962,
+     "max": 0.81681,
+     "mean": 0.65971,
+     "std": 0.06223
+    },
+    "TR": {
+     "min": 0.482,
+     "max": 0.56637,
+     "mean": 0.51439,
+     "std": 0.01751
+    },
+    "X": {
+     "min": 0.47645,
+     "max": 0.64704,
+     "mean": 0.52153,
+     "std": 0.02939
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.59356,
+     "mean": 0.51933,
+     "std": 0.02133
+    }
+   }
+  },
+  {
+   "folio": "f116r",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 537,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.52162,
+   "mean_state": [
+    0.55905,
+    0.52881,
+    0.73032,
+    0.5272,
+    0.54411,
+    0.51356,
+    0.68825
+   ],
+   "excursion_count": 2,
+   "bounded_excursion_count": 1,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.71695,
+     "corridor": 0.26629,
+     "edge": 0.01676
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.02048,
+     "corridor": 0.58845,
+     "edge": 0.39106
+    },
+    "C": {
+     "basin": 0.7635,
+     "corridor": 0.2365,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.8175,
+     "corridor": 0.1825,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.83985,
+     "corridor": 0.16015,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.1378,
+     "corridor": 0.78026,
+     "edge": 0.08194
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 4,
+     "total_magnitude": 0.00066
+    },
+    "thermal_recovery": {
+     "count": 6,
+     "total_magnitude": 0.0112
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.43547,
+     "max": 0.80851,
+     "mean": 0.55905,
+     "std": 0.07371
+    },
+    "RC": {
+     "min": 0.49495,
+     "max": 0.56445,
+     "mean": 0.52881,
+     "std": 0.01593
+    },
+    "S": {
+     "min": 0.50623,
+     "max": 0.82825,
+     "mean": 0.73032,
+     "std": 0.04463
+    },
+    "C": {
+     "min": 0.4058,
+     "max": 0.72534,
+     "mean": 0.5272,
+     "std": 0.06942
+    },
+    "TR": {
+     "min": 0.46261,
+     "max": 0.6627,
+     "mean": 0.54411,
+     "std": 0.04352
+    },
+    "X": {
+     "min": 0.38206,
+     "max": 0.70943,
+     "mean": 0.51356,
+     "std": 0.05611
+    },
+    "Y": {
+     "min": 0.49662,
+     "max": 0.89208,
+     "mean": 0.68825,
+     "std": 0.09887
+    }
+   }
+  },
+  {
+   "folio": "f105r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 370,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50973,
+   "mean_state": [
+    0.49868,
+    0.49761,
+    0.72515,
+    0.53911,
+    0.49343,
+    0.50112,
+    0.56194
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.01622,
+     "corridor": 0.4973,
+     "edge": 0.48649
+    },
+    "C": {
+     "basin": 0.90811,
+     "corridor": 0.09189,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.9973,
+     "corridor": 0.0027,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.65676,
+     "corridor": 0.34324,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.43583,
+     "max": 0.57404,
+     "mean": 0.49868,
+     "std": 0.02124
+    },
+    "RC": {
+     "min": 0.47534,
+     "max": 0.54354,
+     "mean": 0.49761,
+     "std": 0.0149
+    },
+    "S": {
+     "min": 0.51883,
+     "max": 0.83647,
+     "mean": 0.72515,
+     "std": 0.04837
+    },
+    "C": {
+     "min": 0.48494,
+     "max": 0.63879,
+     "mean": 0.53911,
+     "std": 0.02767
+    },
+    "TR": {
+     "min": 0.47389,
+     "max": 0.5352,
+     "mean": 0.49343,
+     "std": 0.01148
+    },
+    "X": {
+     "min": 0.46919,
+     "max": 0.60329,
+     "mean": 0.50112,
+     "std": 0.01286
+    },
+    "Y": {
+     "min": 0.49881,
+     "max": 0.6956,
+     "mean": 0.56194,
+     "std": 0.06211
+    }
+   }
+  },
+  {
+   "folio": "f105r",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 370,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50913,
+   "mean_state": [
+    0.49862,
+    0.49798,
+    0.72033,
+    0.69533,
+    0.49558,
+    0.50451,
+    0.52839
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.01622,
+     "corridor": 0.51351,
+     "edge": 0.47027
+    },
+    "C": {
+     "basin": 0.01081,
+     "corridor": 0.67568,
+     "edge": 0.31351
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.98108,
+     "corridor": 0.01892,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.94054,
+     "corridor": 0.05946,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 1,
+     "total_magnitude": 0.00262
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.43727,
+     "max": 0.55059,
+     "mean": 0.49862,
+     "std": 0.02013
+    },
+    "RC": {
+     "min": 0.47676,
+     "max": 0.54239,
+     "mean": 0.49798,
+     "std": 0.01509
+    },
+    "S": {
+     "min": 0.51541,
+     "max": 0.81898,
+     "mean": 0.72033,
+     "std": 0.04453
+    },
+    "C": {
+     "min": 0.5314,
+     "max": 0.81399,
+     "mean": 0.69533,
+     "std": 0.04243
+    },
+    "TR": {
+     "min": 0.48154,
+     "max": 0.52681,
+     "mean": 0.49558,
+     "std": 0.00846
+    },
+    "X": {
+     "min": 0.44629,
+     "max": 0.65041,
+     "mean": 0.50451,
+     "std": 0.02103
+    },
+    "Y": {
+     "min": 0.49953,
+     "max": 0.62149,
+     "mean": 0.52839,
+     "std": 0.02835
+    }
+   }
+  },
+  {
+   "folio": "f105r",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 370,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.51909,
+   "mean_state": [
+    0.49236,
+    0.49862,
+    0.70781,
+    0.60494,
+    0.48505,
+    0.4909,
+    0.62484
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.90541,
+     "corridor": 0.09459,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.02432,
+     "corridor": 0.6027,
+     "edge": 0.37297
+    },
+    "C": {
+     "basin": 0.33784,
+     "corridor": 0.64595,
+     "edge": 0.01622
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.95405,
+     "corridor": 0.04595,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.34595,
+     "corridor": 0.65405,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 1,
+     "total_magnitude": 0.01374
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 1,
+     "total_magnitude": 2e-05
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.34558,
+     "max": 0.58291,
+     "mean": 0.49236,
+     "std": 0.04454
+    },
+    "RC": {
+     "min": 0.4858,
+     "max": 0.52409,
+     "mean": 0.49862,
+     "std": 0.00798
+    },
+    "S": {
+     "min": 0.5137,
+     "max": 0.80694,
+     "mean": 0.70781,
+     "std": 0.04725
+    },
+    "C": {
+     "min": 0.48834,
+     "max": 0.73668,
+     "mean": 0.60494,
+     "std": 0.05406
+    },
+    "TR": {
+     "min": 0.44987,
+     "max": 0.5555,
+     "mean": 0.48505,
+     "std": 0.0206
+    },
+    "X": {
+     "min": 0.39346,
+     "max": 0.69009,
+     "mean": 0.4909,
+     "std": 0.03409
+    },
+    "Y": {
+     "min": 0.49341,
+     "max": 0.77035,
+     "mean": 0.62484,
+     "std": 0.08487
+    }
+   }
+  },
+  {
+   "folio": "f108v",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 570,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.67065,
+   "mean_state": [
+    0.52807,
+    0.55927,
+    0.7348,
+    0.50931,
+    0.5207,
+    0.50194,
+    0.59651
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.86667,
+     "corridor": 0.13333,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.75439,
+     "corridor": 0.24561,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.00526,
+     "corridor": 0.47544,
+     "edge": 0.5193
+    },
+    "C": {
+     "basin": 0.99649,
+     "corridor": 0.00351,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.97895,
+     "corridor": 0.02105,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.99474,
+     "corridor": 0.00526,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.5386,
+     "corridor": 0.4614,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 11,
+     "total_magnitude": 0.04636
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.43842,
+     "max": 0.73183,
+     "mean": 0.52807,
+     "std": 0.04839
+    },
+    "RC": {
+     "min": 0.49801,
+     "max": 0.67085,
+     "mean": 0.55927,
+     "std": 0.03356
+    },
+    "S": {
+     "min": 0.54286,
+     "max": 0.85322,
+     "mean": 0.7348,
+     "std": 0.0498
+    },
+    "C": {
+     "min": 0.46711,
+     "max": 0.58317,
+     "mean": 0.50931,
+     "std": 0.02013
+    },
+    "TR": {
+     "min": 0.49041,
+     "max": 0.5963,
+     "mean": 0.5207,
+     "std": 0.02288
+    },
+    "X": {
+     "min": 0.46718,
+     "max": 0.60473,
+     "mean": 0.50194,
+     "std": 0.0166
+    },
+    "Y": {
+     "min": 0.50107,
+     "max": 0.75837,
+     "mean": 0.59651,
+     "std": 0.08275
+    }
+   }
+  },
+  {
+   "folio": "f108v",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 570,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.54954,
+   "mean_state": [
+    0.53805,
+    0.56566,
+    0.73263,
+    0.62026,
+    0.51389,
+    0.51121,
+    0.54212
+   ],
+   "excursion_count": 2,
+   "bounded_excursion_count": 1,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.80702,
+     "corridor": 0.19298,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.70702,
+     "corridor": 0.29298,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.00702,
+     "corridor": 0.46491,
+     "edge": 0.52807
+    },
+    "C": {
+     "basin": 0.23509,
+     "corridor": 0.70702,
+     "edge": 0.05789
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.97193,
+     "corridor": 0.02807,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.87719,
+     "corridor": 0.12281,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 1,
+     "total_magnitude": 0.00188
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 20,
+     "total_magnitude": 0.0694
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.44835,
+     "max": 0.70474,
+     "mean": 0.53805,
+     "std": 0.04884
+    },
+    "RC": {
+     "min": 0.49923,
+     "max": 0.67181,
+     "mean": 0.56566,
+     "std": 0.03439
+    },
+    "S": {
+     "min": 0.53424,
+     "max": 0.83603,
+     "mean": 0.73263,
+     "std": 0.04204
+    },
+    "C": {
+     "min": 0.46012,
+     "max": 0.80511,
+     "mean": 0.62026,
+     "std": 0.06498
+    },
+    "TR": {
+     "min": 0.49255,
+     "max": 0.57233,
+     "mean": 0.51389,
+     "std": 0.01722
+    },
+    "X": {
+     "min": 0.44448,
+     "max": 0.67977,
+     "mean": 0.51121,
+     "std": 0.02621
+    },
+    "Y": {
+     "min": 0.50067,
+     "max": 0.68983,
+     "mean": 0.54212,
+     "std": 0.04623
+    }
+   }
+  },
+  {
+   "folio": "f108v",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 570,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.82048,
+   "mean_state": [
+    0.55808,
+    0.53945,
+    0.72395,
+    0.49141,
+    0.5482,
+    0.47851,
+    0.76054
+   ],
+   "excursion_count": 2,
+   "bounded_excursion_count": 1,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.66667,
+     "corridor": 0.31053,
+     "edge": 0.02281
+    },
+    "RC": {
+     "basin": 0.9614,
+     "corridor": 0.0386,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.01404,
+     "corridor": 0.52807,
+     "edge": 0.45789
+    },
+    "C": {
+     "basin": 0.8193,
+     "corridor": 0.17193,
+     "edge": 0.00877
+    },
+    "TR": {
+     "basin": 0.82105,
+     "corridor": 0.17895,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.88246,
+     "corridor": 0.11579,
+     "edge": 0.00175
+    },
+    "Y": {
+     "basin": 0.05965,
+     "corridor": 0.64386,
+     "edge": 0.29649
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 1,
+     "total_magnitude": 0.00958
+    },
+    "containment_resolution": {
+     "count": 11,
+     "total_magnitude": 0.10946
+    },
+    "thermal_recovery": {
+     "count": 31,
+     "total_magnitude": 0.21323
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.40778,
+     "max": 0.84358,
+     "mean": 0.55808,
+     "std": 0.07964
+    },
+    "RC": {
+     "min": 0.49598,
+     "max": 0.61083,
+     "mean": 0.53945,
+     "std": 0.02585
+    },
+    "S": {
+     "min": 0.52897,
+     "max": 0.82157,
+     "mean": 0.72395,
+     "std": 0.04141
+    },
+    "C": {
+     "min": 0.26896,
+     "max": 0.66529,
+     "mean": 0.49141,
+     "std": 0.06445
+    },
+    "TR": {
+     "min": 0.48501,
+     "max": 0.67387,
+     "mean": 0.5482,
+     "std": 0.04011
+    },
+    "X": {
+     "min": 0.38253,
+     "max": 0.73363,
+     "mean": 0.47851,
+     "std": 0.04985
+    },
+    "Y": {
+     "min": 0.50153,
+     "max": 0.93123,
+     "mean": 0.76054,
+     "std": 0.10987
+    }
+   }
+  },
+  {
+   "folio": "f66r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 329,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.5078,
+   "mean_state": [
+    0.50349,
+    0.52002,
+    0.77421,
+    0.53657,
+    0.51129,
+    0.49839,
+    0.51669
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.9696,
+     "corridor": 0.0304,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.01216,
+     "corridor": 0.37082,
+     "edge": 0.61702
+    },
+    "C": {
+     "basin": 0.89362,
+     "corridor": 0.10638,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.94833,
+     "corridor": 0.05167,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.43936,
+     "max": 0.64637,
+     "mean": 0.50349,
+     "std": 0.03112
+    },
+    "RC": {
+     "min": 0.44545,
+     "max": 0.57652,
+     "mean": 0.52002,
+     "std": 0.02999
+    },
+    "S": {
+     "min": 0.51261,
+     "max": 0.8729,
+     "mean": 0.77421,
+     "std": 0.04389
+    },
+    "C": {
+     "min": 0.48322,
+     "max": 0.65995,
+     "mean": 0.53657,
+     "std": 0.03209
+    },
+    "TR": {
+     "min": 0.47649,
+     "max": 0.54917,
+     "mean": 0.51129,
+     "std": 0.01607
+    },
+    "X": {
+     "min": 0.4693,
+     "max": 0.52812,
+     "mean": 0.49839,
+     "std": 0.00818
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.65007,
+     "mean": 0.51669,
+     "std": 0.02721
+    }
+   }
+  },
+  {
+   "folio": "f66r",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 329,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50392,
+   "mean_state": [
+    0.50464,
+    0.523,
+    0.76654,
+    0.67548,
+    0.50768,
+    0.49711,
+    0.51105
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.97568,
+     "corridor": 0.02432,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.01216,
+     "corridor": 0.40426,
+     "edge": 0.58359
+    },
+    "C": {
+     "basin": 0.03647,
+     "corridor": 0.90881,
+     "edge": 0.05471
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.98176,
+     "corridor": 0.01824,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.44194,
+     "max": 0.61262,
+     "mean": 0.50464,
+     "std": 0.02953
+    },
+    "RC": {
+     "min": 0.45122,
+     "max": 0.57572,
+     "mean": 0.523,
+     "std": 0.02887
+    },
+    "S": {
+     "min": 0.51032,
+     "max": 0.85906,
+     "mean": 0.76654,
+     "std": 0.04376
+    },
+    "C": {
+     "min": 0.51031,
+     "max": 0.84423,
+     "mean": 0.67548,
+     "std": 0.0501
+    },
+    "TR": {
+     "min": 0.4817,
+     "max": 0.53504,
+     "mean": 0.50768,
+     "std": 0.0118
+    },
+    "X": {
+     "min": 0.44896,
+     "max": 0.53901,
+     "mean": 0.49711,
+     "std": 0.01362
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.59992,
+     "mean": 0.51105,
+     "std": 0.01771
+    }
+   }
+  },
+  {
+   "folio": "f66r",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 329,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.52577,
+   "mean_state": [
+    0.50857,
+    0.50981,
+    0.7531,
+    0.55153,
+    0.52486,
+    0.49258,
+    0.54814
+   ],
+   "excursion_count": 2,
+   "bounded_excursion_count": 1,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.73556,
+     "corridor": 0.26444,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.0152,
+     "corridor": 0.55623,
+     "edge": 0.42857
+    },
+    "C": {
+     "basin": 0.76596,
+     "corridor": 0.23404,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.97872,
+     "corridor": 0.02128,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.98176,
+     "corridor": 0.01824,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.75684,
+     "corridor": 0.24316,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 1,
+     "total_magnitude": 0.00011
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.37101,
+     "max": 0.68457,
+     "mean": 0.50857,
+     "std": 0.0665
+    },
+    "RC": {
+     "min": 0.46877,
+     "max": 0.54145,
+     "mean": 0.50981,
+     "std": 0.01653
+    },
+    "S": {
+     "min": 0.50917,
+     "max": 0.84651,
+     "mean": 0.7531,
+     "std": 0.04749
+    },
+    "C": {
+     "min": 0.44081,
+     "max": 0.75491,
+     "mean": 0.55153,
+     "std": 0.05831
+    },
+    "TR": {
+     "min": 0.46195,
+     "max": 0.59086,
+     "mean": 0.52486,
+     "std": 0.02745
+    },
+    "X": {
+     "min": 0.40712,
+     "max": 0.54273,
+     "mean": 0.49258,
+     "std": 0.02481
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.73543,
+     "mean": 0.54814,
+     "std": 0.05536
+    }
+   }
+  },
+  {
+   "folio": "f85r1",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 333,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.62738,
+   "mean_state": [
+    0.50426,
+    0.51002,
+    0.75777,
+    0.55282,
+    0.50464,
+    0.50005,
+    0.56263
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.99399,
+     "corridor": 0.00601,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.00901,
+     "corridor": 0.53453,
+     "edge": 0.45646
+    },
+    "C": {
+     "basin": 0.78679,
+     "corridor": 0.21321,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.62462,
+     "corridor": 0.37538,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.45055,
+     "max": 0.5734,
+     "mean": 0.50426,
+     "std": 0.01727
+    },
+    "RC": {
+     "min": 0.47839,
+     "max": 0.58469,
+     "mean": 0.51002,
+     "std": 0.01732
+    },
+    "S": {
+     "min": 0.51265,
+     "max": 0.86501,
+     "mean": 0.75777,
+     "std": 0.04597
+    },
+    "C": {
+     "min": 0.50588,
+     "max": 0.64129,
+     "mean": 0.55282,
+     "std": 0.03024
+    },
+    "TR": {
+     "min": 0.48654,
+     "max": 0.56679,
+     "mean": 0.50464,
+     "std": 0.0129
+    },
+    "X": {
+     "min": 0.47694,
+     "max": 0.55674,
+     "mean": 0.50005,
+     "std": 0.00778
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.71978,
+     "mean": 0.56263,
+     "std": 0.06364
+    }
+   }
+  },
+  {
+   "folio": "f85r1",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 333,
+   "viability": 0.997,
+   "n_hazard_events": 1,
+   "Y_final": 0.59049,
+   "mean_state": [
+    0.50553,
+    0.51098,
+    0.74734,
+    0.70066,
+    0.50326,
+    0.50252,
+    0.53996
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.00901,
+     "corridor": 0.6036,
+     "edge": 0.38739
+    },
+    "C": {
+     "basin": 0.04505,
+     "corridor": 0.78979,
+     "edge": 0.16517
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.76877,
+     "corridor": 0.23123,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.45787,
+     "max": 0.56796,
+     "mean": 0.50553,
+     "std": 0.01659
+    },
+    "RC": {
+     "min": 0.48074,
+     "max": 0.57993,
+     "mean": 0.51098,
+     "std": 0.01689
+    },
+    "S": {
+     "min": 0.51035,
+     "max": 0.84572,
+     "mean": 0.74734,
+     "std": 0.04604
+    },
+    "C": {
+     "min": 0.51721,
+     "max": 0.85425,
+     "mean": 0.70066,
+     "std": 0.06498
+    },
+    "TR": {
+     "min": 0.48969,
+     "max": 0.55197,
+     "mean": 0.50326,
+     "std": 0.00972
+    },
+    "X": {
+     "min": 0.46277,
+     "max": 0.60167,
+     "mean": 0.50252,
+     "std": 0.01303
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.64086,
+     "mean": 0.53996,
+     "std": 0.04357
+    }
+   }
+  },
+  {
+   "folio": "f85r1",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 333,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.75671,
+   "mean_state": [
+    0.5118,
+    0.50522,
+    0.72253,
+    0.58866,
+    0.50945,
+    0.49226,
+    0.63208
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.95195,
+     "corridor": 0.04805,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.02102,
+     "corridor": 0.73273,
+     "edge": 0.24625
+    },
+    "C": {
+     "basin": 0.50751,
+     "corridor": 0.49249,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.97598,
+     "corridor": 0.02402,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.2973,
+     "corridor": 0.7027,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 4,
+     "total_magnitude": 0.00046
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.41996,
+     "max": 0.63616,
+     "mean": 0.5118,
+     "std": 0.03452
+    },
+    "RC": {
+     "min": 0.48751,
+     "max": 0.54847,
+     "mean": 0.50522,
+     "std": 0.01008
+    },
+    "S": {
+     "min": 0.5092,
+     "max": 0.83021,
+     "mean": 0.72253,
+     "std": 0.0567
+    },
+    "C": {
+     "min": 0.50142,
+     "max": 0.72096,
+     "mean": 0.58866,
+     "std": 0.05112
+    },
+    "TR": {
+     "min": 0.47793,
+     "max": 0.60393,
+     "mean": 0.50945,
+     "std": 0.02059
+    },
+    "X": {
+     "min": 0.43317,
+     "max": 0.59508,
+     "mean": 0.49226,
+     "std": 0.023
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.82914,
+     "mean": 0.63208,
+     "std": 0.08785
+    }
+   }
+  },
+  {
+   "folio": "f86v5",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 381,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50467,
+   "mean_state": [
+    0.50961,
+    0.48354,
+    0.68122,
+    0.5624,
+    0.49337,
+    0.50621,
+    0.52445
+   ],
+   "excursion_count": 5,
+   "bounded_excursion_count": 3,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.14698,
+     "corridor": 0.58793,
+     "edge": 0.26509
+    },
+    "C": {
+     "basin": 0.70079,
+     "corridor": 0.29659,
+     "edge": 0.00262
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.90026,
+     "corridor": 0.09974,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.47511,
+     "max": 0.56455,
+     "mean": 0.50961,
+     "std": 0.01388
+    },
+    "RC": {
+     "min": 0.42313,
+     "max": 0.52716,
+     "mean": 0.48354,
+     "std": 0.0271
+    },
+    "S": {
+     "min": 0.50499,
+     "max": 0.82732,
+     "mean": 0.68122,
+     "std": 0.0689
+    },
+    "C": {
+     "min": 0.49884,
+     "max": 0.71241,
+     "mean": 0.5624,
+     "std": 0.05078
+    },
+    "TR": {
+     "min": 0.45645,
+     "max": 0.5307,
+     "mean": 0.49337,
+     "std": 0.01751
+    },
+    "X": {
+     "min": 0.48859,
+     "max": 0.54548,
+     "mean": 0.50621,
+     "std": 0.0094
+    },
+    "Y": {
+     "min": 0.49681,
+     "max": 0.62551,
+     "mean": 0.52445,
+     "std": 0.03279
+    }
+   }
+  },
+  {
+   "folio": "f86v5",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 381,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50504,
+   "mean_state": [
+    0.51054,
+    0.4818,
+    0.66475,
+    0.68748,
+    0.49562,
+    0.51337,
+    0.51666
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.2021,
+     "corridor": 0.58793,
+     "edge": 0.20997
+    },
+    "C": {
+     "basin": 0.09186,
+     "corridor": 0.53281,
+     "edge": 0.37533
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.99738,
+     "corridor": 0.00262,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.97113,
+     "corridor": 0.02887,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.47974,
+     "max": 0.55627,
+     "mean": 0.51054,
+     "std": 0.01325
+    },
+    "RC": {
+     "min": 0.42227,
+     "max": 0.52675,
+     "mean": 0.4818,
+     "std": 0.02846
+    },
+    "S": {
+     "min": 0.4855,
+     "max": 0.80447,
+     "mean": 0.66475,
+     "std": 0.07522
+    },
+    "C": {
+     "min": 0.50146,
+     "max": 0.80849,
+     "mean": 0.68748,
+     "std": 0.06476
+    },
+    "TR": {
+     "min": 0.46643,
+     "max": 0.52346,
+     "mean": 0.49562,
+     "std": 0.01255
+    },
+    "X": {
+     "min": 0.48204,
+     "max": 0.58285,
+     "mean": 0.51337,
+     "std": 0.01706
+    },
+    "Y": {
+     "min": 0.49888,
+     "max": 0.60363,
+     "mean": 0.51666,
+     "std": 0.02189
+    }
+   }
+  },
+  {
+   "folio": "f86v5",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 381,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50398,
+   "mean_state": [
+    0.52776,
+    0.49188,
+    0.64427,
+    0.62141,
+    0.48535,
+    0.5197,
+    0.57159
+   ],
+   "excursion_count": 3,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.95538,
+     "corridor": 0.04462,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.24934,
+     "corridor": 0.6168,
+     "edge": 0.13386
+    },
+    "C": {
+     "basin": 0.27297,
+     "corridor": 0.63255,
+     "edge": 0.09449
+    },
+    "TR": {
+     "basin": 0.98163,
+     "corridor": 0.01837,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.979,
+     "corridor": 0.021,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.58268,
+     "corridor": 0.41732,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.4724,
+     "max": 0.62338,
+     "mean": 0.52776,
+     "std": 0.02765
+    },
+    "RC": {
+     "min": 0.45908,
+     "max": 0.51499,
+     "mean": 0.49188,
+     "std": 0.01416
+    },
+    "S": {
+     "min": 0.47742,
+     "max": 0.79423,
+     "mean": 0.64427,
+     "std": 0.07729
+    },
+    "C": {
+     "min": 0.49968,
+     "max": 0.75927,
+     "mean": 0.62141,
+     "std": 0.06799
+    },
+    "TR": {
+     "min": 0.41536,
+     "max": 0.55073,
+     "mean": 0.48535,
+     "std": 0.03292
+    },
+    "X": {
+     "min": 0.47959,
+     "max": 0.63332,
+     "mean": 0.5197,
+     "std": 0.0221
+    },
+    "Y": {
+     "min": 0.48837,
+     "max": 0.76708,
+     "mean": 0.57159,
+     "std": 0.07937
+    }
+   }
+  },
+  {
+   "folio": "f86v6",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 479,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.52476,
+   "mean_state": [
+    0.53097,
+    0.52818,
+    0.70987,
+    0.57117,
+    0.50826,
+    0.51049,
+    0.54884
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.91023,
+     "corridor": 0.08977,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.96242,
+     "corridor": 0.03758,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.00418,
+     "corridor": 0.74322,
+     "edge": 0.25261
+    },
+    "C": {
+     "basin": 0.63883,
+     "corridor": 0.35491,
+     "edge": 0.00626
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.98747,
+     "corridor": 0.01253,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.76618,
+     "corridor": 0.23382,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 11,
+     "total_magnitude": 0.03969
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.46036,
+     "max": 0.6841,
+     "mean": 0.53097,
+     "std": 0.03634
+    },
+    "RC": {
+     "min": 0.47615,
+     "max": 0.59882,
+     "mean": 0.52818,
+     "std": 0.0262
+    },
+    "S": {
+     "min": 0.57604,
+     "max": 0.82787,
+     "mean": 0.70987,
+     "std": 0.04813
+    },
+    "C": {
+     "min": 0.4971,
+     "max": 0.74641,
+     "mean": 0.57117,
+     "std": 0.05888
+    },
+    "TR": {
+     "min": 0.45833,
+     "max": 0.56784,
+     "mean": 0.50826,
+     "std": 0.02371
+    },
+    "X": {
+     "min": 0.4831,
+     "max": 0.59778,
+     "mean": 0.51049,
+     "std": 0.01862
+    },
+    "Y": {
+     "min": 0.49956,
+     "max": 0.77032,
+     "mean": 0.54884,
+     "std": 0.05666
+    }
+   }
+  },
+  {
+   "folio": "f86v6",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 479,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.5197,
+   "mean_state": [
+    0.53693,
+    0.53113,
+    0.69143,
+    0.71118,
+    0.5055,
+    0.52145,
+    0.52672
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.89562,
+     "corridor": 0.10438,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.94781,
+     "corridor": 0.05219,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.01253,
+     "corridor": 0.78497,
+     "edge": 0.20251
+    },
+    "C": {
+     "basin": 0.01044,
+     "corridor": 0.63257,
+     "edge": 0.35699
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.93946,
+     "corridor": 0.06054,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.93528,
+     "corridor": 0.06472,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 1,
+     "total_magnitude": 0.00087
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 18,
+     "total_magnitude": 0.04369
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.46436,
+     "max": 0.67469,
+     "mean": 0.53693,
+     "std": 0.03462
+    },
+    "RC": {
+     "min": 0.47842,
+     "max": 0.60153,
+     "mean": 0.53113,
+     "std": 0.02635
+    },
+    "S": {
+     "min": 0.56221,
+     "max": 0.81544,
+     "mean": 0.69143,
+     "std": 0.05616
+    },
+    "C": {
+     "min": 0.4942,
+     "max": 0.83004,
+     "mean": 0.71118,
+     "std": 0.05139
+    },
+    "TR": {
+     "min": 0.46958,
+     "max": 0.54905,
+     "mean": 0.5055,
+     "std": 0.0168
+    },
+    "X": {
+     "min": 0.47711,
+     "max": 0.65867,
+     "mean": 0.52145,
+     "std": 0.03
+    },
+    "Y": {
+     "min": 0.49967,
+     "max": 0.66794,
+     "mean": 0.52672,
+     "std": 0.03191
+    }
+   }
+  },
+  {
+   "folio": "f86v6",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 479,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.70059,
+   "mean_state": [
+    0.58576,
+    0.51604,
+    0.65038,
+    0.61094,
+    0.51354,
+    0.53229,
+    0.62324
+   ],
+   "excursion_count": 3,
+   "bounded_excursion_count": 1,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.50313,
+     "corridor": 0.46973,
+     "edge": 0.02714
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.26931,
+     "corridor": 0.61169,
+     "edge": 0.119
+    },
+    "C": {
+     "basin": 0.39248,
+     "corridor": 0.52401,
+     "edge": 0.08351
+    },
+    "TR": {
+     "basin": 0.91858,
+     "corridor": 0.08142,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.86013,
+     "corridor": 0.13779,
+     "edge": 0.00209
+    },
+    "Y": {
+     "basin": 0.39666,
+     "corridor": 0.55741,
+     "edge": 0.04593
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 3,
+     "total_magnitude": 0.028
+    },
+    "containment_resolution": {
+     "count": 8,
+     "total_magnitude": 0.02459
+    },
+    "thermal_recovery": {
+     "count": 46,
+     "total_magnitude": 0.30679
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.43686,
+     "max": 0.79327,
+     "mean": 0.58576,
+     "std": 0.06393
+    },
+    "RC": {
+     "min": 0.4842,
+     "max": 0.56333,
+     "mean": 0.51604,
+     "std": 0.01708
+    },
+    "S": {
+     "min": 0.50139,
+     "max": 0.80469,
+     "mean": 0.65038,
+     "std": 0.08044
+    },
+    "C": {
+     "min": 0.48076,
+     "max": 0.78813,
+     "mean": 0.61094,
+     "std": 0.0811
+    },
+    "TR": {
+     "min": 0.42566,
+     "max": 0.62041,
+     "mean": 0.51354,
+     "std": 0.04147
+    },
+    "X": {
+     "min": 0.44146,
+     "max": 0.74574,
+     "mean": 0.53229,
+     "std": 0.05122
+    },
+    "Y": {
+     "min": 0.499,
+     "max": 0.93282,
+     "mean": 0.62324,
+     "std": 0.10298
+    }
+   }
+  }
+ ],
+ "config_ablation_runs": [
+  {
+   "folio": "f78r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 294,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.53587,
+   "mean_state": [
+    0.51963,
+    0.53713,
+    0.72744,
+    0.52148,
+    0.50606,
+    0.50252,
+    0.52741
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.9932,
+     "corridor": 0.0068,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.0102,
+     "corridor": 0.5034,
+     "edge": 0.48639
+    },
+    "C": {
+     "basin": 0.97959,
+     "corridor": 0.02041,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.87415,
+     "corridor": 0.12585,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.48899,
+     "max": 0.57748,
+     "mean": 0.51963,
+     "std": 0.01781
+    },
+    "RC": {
+     "min": 0.5,
+     "max": 0.58944,
+     "mean": 0.53713,
+     "std": 0.01499
+    },
+    "S": {
+     "min": 0.55121,
+     "max": 0.82008,
+     "mean": 0.72744,
+     "std": 0.04094
+    },
+    "C": {
+     "min": 0.49785,
+     "max": 0.59832,
+     "mean": 0.52148,
+     "std": 0.0212
+    },
+    "TR": {
+     "min": 0.48823,
+     "max": 0.55884,
+     "mean": 0.50606,
+     "std": 0.01207
+    },
+    "X": {
+     "min": 0.4926,
+     "max": 0.5691,
+     "mean": 0.50252,
+     "std": 0.00742
+    },
+    "Y": {
+     "min": 0.49922,
+     "max": 0.68897,
+     "mean": 0.52741,
+     "std": 0.04383
+    }
+   }
+  },
+  {
+   "folio": "f78r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 294,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.53587,
+   "mean_state": [
+    0.51963,
+    0.53713,
+    0.74461,
+    0.52913,
+    0.50606,
+    0.50252,
+    0.52741
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.9932,
+     "corridor": 0.0068,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.0102,
+     "corridor": 0.51701,
+     "edge": 0.47279
+    },
+    "C": {
+     "basin": 0.91156,
+     "corridor": 0.08844,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.87415,
+     "corridor": 0.12585,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.48899,
+     "max": 0.57748,
+     "mean": 0.51963,
+     "std": 0.01781
+    },
+    "RC": {
+     "min": 0.5,
+     "max": 0.58944,
+     "mean": 0.53713,
+     "std": 0.01499
+    },
+    "S": {
+     "min": 0.55121,
+     "max": 0.83962,
+     "mean": 0.74461,
+     "std": 0.04311
+    },
+    "C": {
+     "min": 0.4989,
+     "max": 0.61173,
+     "mean": 0.52913,
+     "std": 0.02626
+    },
+    "TR": {
+     "min": 0.48823,
+     "max": 0.55884,
+     "mean": 0.50606,
+     "std": 0.01207
+    },
+    "X": {
+     "min": 0.4926,
+     "max": 0.5691,
+     "mean": 0.50252,
+     "std": 0.00742
+    },
+    "Y": {
+     "min": 0.49922,
+     "max": 0.68897,
+     "mean": 0.52741,
+     "std": 0.04383
+    }
+   }
+  },
+  {
+   "folio": "f78r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 294,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.53587,
+   "mean_state": [
+    0.51963,
+    0.53713,
+    0.75937,
+    0.53559,
+    0.50606,
+    0.50252,
+    0.52741
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.9932,
+     "corridor": 0.0068,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.0102,
+     "corridor": 0.56463,
+     "edge": 0.42517
+    },
+    "C": {
+     "basin": 0.90476,
+     "corridor": 0.09524,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.87415,
+     "corridor": 0.12585,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.48899,
+     "max": 0.57748,
+     "mean": 0.51963,
+     "std": 0.01781
+    },
+    "RC": {
+     "min": 0.5,
+     "max": 0.58944,
+     "mean": 0.53713,
+     "std": 0.01499
+    },
+    "S": {
+     "min": 0.55121,
+     "max": 0.85896,
+     "mean": 0.75937,
+     "std": 0.04677
+    },
+    "C": {
+     "min": 0.4989,
+     "max": 0.60962,
+     "mean": 0.53559,
+     "std": 0.0259
+    },
+    "TR": {
+     "min": 0.48823,
+     "max": 0.55884,
+     "mean": 0.50606,
+     "std": 0.01207
+    },
+    "X": {
+     "min": 0.4926,
+     "max": 0.5691,
+     "mean": 0.50252,
+     "std": 0.00742
+    },
+    "Y": {
+     "min": 0.49922,
+     "max": 0.68897,
+     "mean": 0.52741,
+     "std": 0.04383
+    }
+   }
+  },
+  {
+   "folio": "f84r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 361,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.56875,
+   "mean_state": [
+    0.53261,
+    0.54933,
+    0.72728,
+    0.53485,
+    0.51665,
+    0.50425,
+    0.56184
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.86427,
+     "corridor": 0.13573,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.92521,
+     "corridor": 0.07479,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.00831,
+     "corridor": 0.50416,
+     "edge": 0.48753
+    },
+    "C": {
+     "basin": 0.88643,
+     "corridor": 0.1108,
+     "edge": 0.00277
+    },
+    "TR": {
+     "basin": 0.98615,
+     "corridor": 0.01385,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.99723,
+     "corridor": 0.00277,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.67036,
+     "corridor": 0.32964,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.48123,
+     "max": 0.68853,
+     "mean": 0.53261,
+     "std": 0.0449
+    },
+    "RC": {
+     "min": 0.48794,
+     "max": 0.65598,
+     "mean": 0.54933,
+     "std": 0.02605
+    },
+    "S": {
+     "min": 0.50876,
+     "max": 0.82382,
+     "mean": 0.72728,
+     "std": 0.04342
+    },
+    "C": {
+     "min": 0.49157,
+     "max": 0.68839,
+     "mean": 0.53485,
+     "std": 0.03622
+    },
+    "TR": {
+     "min": 0.47775,
+     "max": 0.60535,
+     "mean": 0.51665,
+     "std": 0.02059
+    },
+    "X": {
+     "min": 0.48402,
+     "max": 0.58573,
+     "mean": 0.50425,
+     "std": 0.01142
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.75125,
+     "mean": 0.56184,
+     "std": 0.06379
+    }
+   }
+  },
+  {
+   "folio": "f84r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 361,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.56875,
+   "mean_state": [
+    0.53261,
+    0.54933,
+    0.74432,
+    0.54504,
+    0.51665,
+    0.50425,
+    0.56184
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.86427,
+     "corridor": 0.13573,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.92521,
+     "corridor": 0.07479,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.00831,
+     "corridor": 0.52632,
+     "edge": 0.46537
+    },
+    "C": {
+     "basin": 0.80886,
+     "corridor": 0.19114,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.98615,
+     "corridor": 0.01385,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.99723,
+     "corridor": 0.00277,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.67036,
+     "corridor": 0.32964,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.48123,
+     "max": 0.68853,
+     "mean": 0.53261,
+     "std": 0.0449
+    },
+    "RC": {
+     "min": 0.48794,
+     "max": 0.65598,
+     "mean": 0.54933,
+     "std": 0.02605
+    },
+    "S": {
+     "min": 0.50876,
+     "max": 0.84018,
+     "mean": 0.74432,
+     "std": 0.04517
+    },
+    "C": {
+     "min": 0.49398,
+     "max": 0.68103,
+     "mean": 0.54504,
+     "std": 0.04033
+    },
+    "TR": {
+     "min": 0.47775,
+     "max": 0.60535,
+     "mean": 0.51665,
+     "std": 0.02059
+    },
+    "X": {
+     "min": 0.48402,
+     "max": 0.58573,
+     "mean": 0.50425,
+     "std": 0.01142
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.75125,
+     "mean": 0.56184,
+     "std": 0.06379
+    }
+   }
+  },
+  {
+   "folio": "f84r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 361,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.56875,
+   "mean_state": [
+    0.53261,
+    0.54933,
+    0.75774,
+    0.55203,
+    0.51665,
+    0.50425,
+    0.56184
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.86427,
+     "corridor": 0.13573,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.92521,
+     "corridor": 0.07479,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.00831,
+     "corridor": 0.55956,
+     "edge": 0.43213
+    },
+    "C": {
+     "basin": 0.80886,
+     "corridor": 0.19114,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.98615,
+     "corridor": 0.01385,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.99723,
+     "corridor": 0.00277,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.67036,
+     "corridor": 0.32964,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.48123,
+     "max": 0.68853,
+     "mean": 0.53261,
+     "std": 0.0449
+    },
+    "RC": {
+     "min": 0.48794,
+     "max": 0.65598,
+     "mean": 0.54933,
+     "std": 0.02605
+    },
+    "S": {
+     "min": 0.50876,
+     "max": 0.85926,
+     "mean": 0.75774,
+     "std": 0.04972
+    },
+    "C": {
+     "min": 0.49839,
+     "max": 0.66383,
+     "mean": 0.55203,
+     "std": 0.03725
+    },
+    "TR": {
+     "min": 0.47775,
+     "max": 0.60535,
+     "mean": 0.51665,
+     "std": 0.02059
+    },
+    "X": {
+     "min": 0.48402,
+     "max": 0.58573,
+     "mean": 0.50425,
+     "std": 0.01142
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.75125,
+     "mean": 0.56184,
+     "std": 0.06379
+    }
+   }
+  },
+  {
+   "folio": "f79r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 389,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50753,
+   "mean_state": [
+    0.51673,
+    0.55031,
+    0.7359,
+    0.5154,
+    0.53342,
+    0.50312,
+    0.54
+   ],
+   "excursion_count": 2,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.94087,
+     "corridor": 0.05913,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.88432,
+     "corridor": 0.11568,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.01285,
+     "corridor": 0.44473,
+     "edge": 0.54242
+    },
+    "C": {
+     "basin": 0.9563,
+     "corridor": 0.0437,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.95887,
+     "corridor": 0.04113,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.77378,
+     "corridor": 0.22622,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.45606,
+     "max": 0.65919,
+     "mean": 0.51673,
+     "std": 0.03123
+    },
+    "RC": {
+     "min": 0.4897,
+     "max": 0.63739,
+     "mean": 0.55031,
+     "std": 0.02987
+    },
+    "S": {
+     "min": 0.50646,
+     "max": 0.85357,
+     "mean": 0.7359,
+     "std": 0.04681
+    },
+    "C": {
+     "min": 0.47736,
+     "max": 0.60783,
+     "mean": 0.5154,
+     "std": 0.02467
+    },
+    "TR": {
+     "min": 0.48281,
+     "max": 0.6376,
+     "mean": 0.53342,
+     "std": 0.027
+    },
+    "X": {
+     "min": 0.47928,
+     "max": 0.56216,
+     "mean": 0.50312,
+     "std": 0.00894
+    },
+    "Y": {
+     "min": 0.49986,
+     "max": 0.67061,
+     "mean": 0.54,
+     "std": 0.04553
+    }
+   }
+  },
+  {
+   "folio": "f79r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 389,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50753,
+   "mean_state": [
+    0.51673,
+    0.55031,
+    0.75424,
+    0.51954,
+    0.53342,
+    0.50312,
+    0.54
+   ],
+   "excursion_count": 2,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.94087,
+     "corridor": 0.05913,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.88432,
+     "corridor": 0.11568,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.00771,
+     "corridor": 0.4653,
+     "edge": 0.52699
+    },
+    "C": {
+     "basin": 0.94087,
+     "corridor": 0.05913,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.95887,
+     "corridor": 0.04113,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.77378,
+     "corridor": 0.22622,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.45606,
+     "max": 0.65919,
+     "mean": 0.51673,
+     "std": 0.03123
+    },
+    "RC": {
+     "min": 0.4897,
+     "max": 0.63739,
+     "mean": 0.55031,
+     "std": 0.02987
+    },
+    "S": {
+     "min": 0.50646,
+     "max": 0.87208,
+     "mean": 0.75424,
+     "std": 0.048
+    },
+    "C": {
+     "min": 0.47632,
+     "max": 0.62197,
+     "mean": 0.51954,
+     "std": 0.0287
+    },
+    "TR": {
+     "min": 0.48281,
+     "max": 0.6376,
+     "mean": 0.53342,
+     "std": 0.027
+    },
+    "X": {
+     "min": 0.47928,
+     "max": 0.56216,
+     "mean": 0.50312,
+     "std": 0.00894
+    },
+    "Y": {
+     "min": 0.49986,
+     "max": 0.67061,
+     "mean": 0.54,
+     "std": 0.04553
+    }
+   }
+  },
+  {
+   "folio": "f79r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 389,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50753,
+   "mean_state": [
+    0.51673,
+    0.55031,
+    0.77119,
+    0.52619,
+    0.53342,
+    0.50312,
+    0.54
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.94087,
+     "corridor": 0.05913,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 0.88432,
+     "corridor": 0.11568,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.00514,
+     "corridor": 0.47815,
+     "edge": 0.51671
+    },
+    "C": {
+     "basin": 0.89974,
+     "corridor": 0.10026,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.95887,
+     "corridor": 0.04113,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.77378,
+     "corridor": 0.22622,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.45606,
+     "max": 0.65919,
+     "mean": 0.51673,
+     "std": 0.03123
+    },
+    "RC": {
+     "min": 0.4897,
+     "max": 0.63739,
+     "mean": 0.55031,
+     "std": 0.02987
+    },
+    "S": {
+     "min": 0.50646,
+     "max": 0.89043,
+     "mean": 0.77119,
+     "std": 0.05025
+    },
+    "C": {
+     "min": 0.47636,
+     "max": 0.63764,
+     "mean": 0.52619,
+     "std": 0.03333
+    },
+    "TR": {
+     "min": 0.48281,
+     "max": 0.6376,
+     "mean": 0.53342,
+     "std": 0.027
+    },
+    "X": {
+     "min": 0.47928,
+     "max": 0.56216,
+     "mean": 0.50312,
+     "std": 0.00894
+    },
+    "Y": {
+     "min": 0.49986,
+     "max": 0.67061,
+     "mean": 0.54,
+     "std": 0.04553
+    }
+   }
+  },
+  {
+   "folio": "f81v",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 258,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50261,
+   "mean_state": [
+    0.51556,
+    0.52164,
+    0.74241,
+    0.51649,
+    0.50729,
+    0.50178,
+    0.50541
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.94186,
+     "corridor": 0.05814,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.01163,
+     "corridor": 0.38372,
+     "edge": 0.60465
+    },
+    "C": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.46186,
+     "max": 0.64684,
+     "mean": 0.51556,
+     "std": 0.03011
+    },
+    "RC": {
+     "min": 0.48249,
+     "max": 0.57375,
+     "mean": 0.52164,
+     "std": 0.02255
+    },
+    "S": {
+     "min": 0.51051,
+     "max": 0.82467,
+     "mean": 0.74241,
+     "std": 0.03827
+    },
+    "C": {
+     "min": 0.49834,
+     "max": 0.55364,
+     "mean": 0.51649,
+     "std": 0.01266
+    },
+    "TR": {
+     "min": 0.48517,
+     "max": 0.53936,
+     "mean": 0.50729,
+     "std": 0.01425
+    },
+    "X": {
+     "min": 0.48548,
+     "max": 0.55304,
+     "mean": 0.50178,
+     "std": 0.00664
+    },
+    "Y": {
+     "min": 0.49941,
+     "max": 0.52975,
+     "mean": 0.50541,
+     "std": 0.00556
+    }
+   }
+  },
+  {
+   "folio": "f81v",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 258,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50261,
+   "mean_state": [
+    0.51556,
+    0.52164,
+    0.76109,
+    0.52121,
+    0.50729,
+    0.50178,
+    0.50541
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.94186,
+     "corridor": 0.05814,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.01163,
+     "corridor": 0.41085,
+     "edge": 0.57752
+    },
+    "C": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.46186,
+     "max": 0.64684,
+     "mean": 0.51556,
+     "std": 0.03011
+    },
+    "RC": {
+     "min": 0.48249,
+     "max": 0.57375,
+     "mean": 0.52164,
+     "std": 0.02255
+    },
+    "S": {
+     "min": 0.51051,
+     "max": 0.84394,
+     "mean": 0.76109,
+     "std": 0.03978
+    },
+    "C": {
+     "min": 0.49993,
+     "max": 0.55903,
+     "mean": 0.52121,
+     "std": 0.01437
+    },
+    "TR": {
+     "min": 0.48517,
+     "max": 0.53936,
+     "mean": 0.50729,
+     "std": 0.01425
+    },
+    "X": {
+     "min": 0.48548,
+     "max": 0.55304,
+     "mean": 0.50178,
+     "std": 0.00664
+    },
+    "Y": {
+     "min": 0.49941,
+     "max": 0.52975,
+     "mean": 0.50541,
+     "std": 0.00556
+    }
+   }
+  },
+  {
+   "folio": "f81v",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 258,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.50261,
+   "mean_state": [
+    0.51556,
+    0.52164,
+    0.77952,
+    0.5298,
+    0.50729,
+    0.50178,
+    0.50541
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.94186,
+     "corridor": 0.05814,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.01163,
+     "corridor": 0.41085,
+     "edge": 0.57752
+    },
+    "C": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.46186,
+     "max": 0.64684,
+     "mean": 0.51556,
+     "std": 0.03011
+    },
+    "RC": {
+     "min": 0.48249,
+     "max": 0.57375,
+     "mean": 0.52164,
+     "std": 0.02255
+    },
+    "S": {
+     "min": 0.51051,
+     "max": 0.8633,
+     "mean": 0.77952,
+     "std": 0.04147
+    },
+    "C": {
+     "min": 0.50233,
+     "max": 0.57273,
+     "mean": 0.5298,
+     "std": 0.017
+    },
+    "TR": {
+     "min": 0.48517,
+     "max": 0.53936,
+     "mean": 0.50729,
+     "std": 0.01425
+    },
+    "X": {
+     "min": 0.48548,
+     "max": 0.55304,
+     "mean": 0.50178,
+     "std": 0.00664
+    },
+    "Y": {
+     "min": 0.49941,
+     "max": 0.52975,
+     "mean": 0.50541,
+     "std": 0.00556
+    }
+   }
+  },
+  {
+   "folio": "f55r",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 124,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.55559,
+   "mean_state": [
+    0.51985,
+    0.48319,
+    0.61449,
+    0.70923,
+    0.48971,
+    0.52,
+    0.51259
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.47581,
+     "corridor": 0.40323,
+     "edge": 0.12097
+    },
+    "C": {
+     "basin": 0.04032,
+     "corridor": 0.49194,
+     "edge": 0.46774
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.95968,
+     "corridor": 0.04032,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.4936,
+     "max": 0.56064,
+     "mean": 0.51985,
+     "std": 0.01535
+    },
+    "RC": {
+     "min": 0.45139,
+     "max": 0.50811,
+     "mean": 0.48319,
+     "std": 0.01243
+    },
+    "S": {
+     "min": 0.48145,
+     "max": 0.76943,
+     "mean": 0.61449,
+     "std": 0.08745
+    },
+    "C": {
+     "min": 0.51249,
+     "max": 0.81204,
+     "mean": 0.70923,
+     "std": 0.04638
+    },
+    "TR": {
+     "min": 0.46864,
+     "max": 0.50115,
+     "mean": 0.48971,
+     "std": 0.00753
+    },
+    "X": {
+     "min": 0.49704,
+     "max": 0.61128,
+     "mean": 0.52,
+     "std": 0.02375
+    },
+    "Y": {
+     "min": 0.49942,
+     "max": 0.56601,
+     "mean": 0.51259,
+     "std": 0.01772
+    }
+   }
+  },
+  {
+   "folio": "f55r",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 124,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.55559,
+   "mean_state": [
+    0.51985,
+    0.48319,
+    0.62193,
+    0.72381,
+    0.48971,
+    0.52,
+    0.51259
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.47581,
+     "corridor": 0.43548,
+     "edge": 0.08871
+    },
+    "C": {
+     "basin": 0.04032,
+     "corridor": 0.51613,
+     "edge": 0.44355
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.95968,
+     "corridor": 0.04032,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.4936,
+     "max": 0.56064,
+     "mean": 0.51985,
+     "std": 0.01535
+    },
+    "RC": {
+     "min": 0.45139,
+     "max": 0.50811,
+     "mean": 0.48319,
+     "std": 0.01243
+    },
+    "S": {
+     "min": 0.48418,
+     "max": 0.78803,
+     "mean": 0.62193,
+     "std": 0.09105
+    },
+    "C": {
+     "min": 0.51292,
+     "max": 0.82862,
+     "mean": 0.72381,
+     "std": 0.04996
+    },
+    "TR": {
+     "min": 0.46864,
+     "max": 0.50115,
+     "mean": 0.48971,
+     "std": 0.00753
+    },
+    "X": {
+     "min": 0.49704,
+     "max": 0.61128,
+     "mean": 0.52,
+     "std": 0.02375
+    },
+    "Y": {
+     "min": 0.49942,
+     "max": 0.56601,
+     "mean": 0.51259,
+     "std": 0.01772
+    }
+   }
+  },
+  {
+   "folio": "f55r",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 124,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.55559,
+   "mean_state": [
+    0.51985,
+    0.48319,
+    0.62813,
+    0.74461,
+    0.48971,
+    0.52,
+    0.51259
+   ],
+   "excursion_count": 2,
+   "bounded_excursion_count": 1,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.45968,
+     "corridor": 0.45161,
+     "edge": 0.08871
+    },
+    "C": {
+     "basin": 0.04032,
+     "corridor": 0.58871,
+     "edge": 0.37097
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.95968,
+     "corridor": 0.04032,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.4936,
+     "max": 0.56064,
+     "mean": 0.51985,
+     "std": 0.01535
+    },
+    "RC": {
+     "min": 0.45139,
+     "max": 0.50811,
+     "mean": 0.48319,
+     "std": 0.01243
+    },
+    "S": {
+     "min": 0.49009,
+     "max": 0.80666,
+     "mean": 0.62813,
+     "std": 0.09228
+    },
+    "C": {
+     "min": 0.51335,
+     "max": 0.84967,
+     "mean": 0.74461,
+     "std": 0.05492
+    },
+    "TR": {
+     "min": 0.46864,
+     "max": 0.50115,
+     "mean": 0.48971,
+     "std": 0.00753
+    },
+    "X": {
+     "min": 0.49704,
+     "max": 0.61128,
+     "mean": 0.52,
+     "std": 0.02375
+    },
+    "Y": {
+     "min": 0.49942,
+     "max": 0.56601,
+     "mean": 0.51259,
+     "std": 0.01772
+    }
+   }
+  },
+  {
+   "folio": "f40v",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 106,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.52045,
+   "mean_state": [
+    0.5386,
+    0.51042,
+    0.67486,
+    0.68364,
+    0.4934,
+    0.53067,
+    0.50569
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.86792,
+     "corridor": 0.13208,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.15094,
+     "corridor": 0.61321,
+     "edge": 0.23585
+    },
+    "C": {
+     "basin": 0.06604,
+     "corridor": 0.68868,
+     "edge": 0.24528
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.89623,
+     "corridor": 0.10377,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.4696,
+     "max": 0.60935,
+     "mean": 0.5386,
+     "std": 0.03105
+    },
+    "RC": {
+     "min": 0.48595,
+     "max": 0.53174,
+     "mean": 0.51042,
+     "std": 0.01156
+    },
+    "S": {
+     "min": 0.51004,
+     "max": 0.80053,
+     "mean": 0.67486,
+     "std": 0.07324
+    },
+    "C": {
+     "min": 0.48506,
+     "max": 0.79791,
+     "mean": 0.68364,
+     "std": 0.05778
+    },
+    "TR": {
+     "min": 0.47701,
+     "max": 0.50019,
+     "mean": 0.4934,
+     "std": 0.00372
+    },
+    "X": {
+     "min": 0.47321,
+     "max": 0.63816,
+     "mean": 0.53067,
+     "std": 0.03377
+    },
+    "Y": {
+     "min": 0.50082,
+     "max": 0.52045,
+     "mean": 0.50569,
+     "std": 0.00454
+    }
+   }
+  },
+  {
+   "folio": "f40v",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 106,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.52045,
+   "mean_state": [
+    0.5386,
+    0.51042,
+    0.68704,
+    0.6945,
+    0.4934,
+    0.53067,
+    0.50569
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.86792,
+     "corridor": 0.13208,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.15094,
+     "corridor": 0.63208,
+     "edge": 0.21698
+    },
+    "C": {
+     "basin": 0.06604,
+     "corridor": 0.70755,
+     "edge": 0.22642
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.89623,
+     "corridor": 0.10377,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.4696,
+     "max": 0.60935,
+     "mean": 0.5386,
+     "std": 0.03105
+    },
+    "RC": {
+     "min": 0.48595,
+     "max": 0.53174,
+     "mean": 0.51042,
+     "std": 0.01156
+    },
+    "S": {
+     "min": 0.51365,
+     "max": 0.81848,
+     "mean": 0.68704,
+     "std": 0.0788
+    },
+    "C": {
+     "min": 0.48498,
+     "max": 0.81735,
+     "mean": 0.6945,
+     "std": 0.06265
+    },
+    "TR": {
+     "min": 0.47701,
+     "max": 0.50019,
+     "mean": 0.4934,
+     "std": 0.00372
+    },
+    "X": {
+     "min": 0.47321,
+     "max": 0.63816,
+     "mean": 0.53067,
+     "std": 0.03377
+    },
+    "Y": {
+     "min": 0.50082,
+     "max": 0.52045,
+     "mean": 0.50569,
+     "std": 0.00454
+    }
+   }
+  },
+  {
+   "folio": "f40v",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 106,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.52045,
+   "mean_state": [
+    0.5386,
+    0.51042,
+    0.6992,
+    0.70998,
+    0.4934,
+    0.53067,
+    0.50569
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.86792,
+     "corridor": 0.13208,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.15094,
+     "corridor": 0.65094,
+     "edge": 0.19811
+    },
+    "C": {
+     "basin": 0.06604,
+     "corridor": 0.78302,
+     "edge": 0.15094
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.89623,
+     "corridor": 0.10377,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.4696,
+     "max": 0.60935,
+     "mean": 0.5386,
+     "std": 0.03105
+    },
+    "RC": {
+     "min": 0.48595,
+     "max": 0.53174,
+     "mean": 0.51042,
+     "std": 0.01156
+    },
+    "S": {
+     "min": 0.51768,
+     "max": 0.83632,
+     "mean": 0.6992,
+     "std": 0.08425
+    },
+    "C": {
+     "min": 0.48491,
+     "max": 0.84644,
+     "mean": 0.70998,
+     "std": 0.07024
+    },
+    "TR": {
+     "min": 0.47701,
+     "max": 0.50019,
+     "mean": 0.4934,
+     "std": 0.00372
+    },
+    "X": {
+     "min": 0.47321,
+     "max": 0.63816,
+     "mean": 0.53067,
+     "std": 0.03377
+    },
+    "Y": {
+     "min": 0.50082,
+     "max": 0.52045,
+     "mean": 0.50569,
+     "std": 0.00454
+    }
+   }
+  },
+  {
+   "folio": "f43v",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 153,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.61951,
+   "mean_state": [
+    0.46538,
+    0.49301,
+    0.71672,
+    0.5869,
+    0.5031,
+    0.4782,
+    0.58046
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.81046,
+     "corridor": 0.18954,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.05882,
+     "corridor": 0.40523,
+     "edge": 0.53595
+    },
+    "C": {
+     "basin": 0.43791,
+     "corridor": 0.56209,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.87582,
+     "corridor": 0.12418,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.57516,
+     "corridor": 0.42484,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 1,
+     "total_magnitude": 0.00025
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 6,
+     "total_magnitude": 0.00874
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.35541,
+     "max": 0.58304,
+     "mean": 0.46538,
+     "std": 0.0452
+    },
+    "RC": {
+     "min": 0.47685,
+     "max": 0.5128,
+     "mean": 0.49301,
+     "std": 0.00886
+    },
+    "S": {
+     "min": 0.50741,
+     "max": 0.78281,
+     "mean": 0.71672,
+     "std": 0.05348
+    },
+    "C": {
+     "min": 0.50705,
+     "max": 0.7178,
+     "mean": 0.5869,
+     "std": 0.05711
+    },
+    "TR": {
+     "min": 0.46585,
+     "max": 0.54484,
+     "mean": 0.5031,
+     "std": 0.01981
+    },
+    "X": {
+     "min": 0.3662,
+     "max": 0.57399,
+     "mean": 0.4782,
+     "std": 0.0411
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.75036,
+     "mean": 0.58046,
+     "std": 0.08234
+    }
+   }
+  },
+  {
+   "folio": "f43v",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 153,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.61952,
+   "mean_state": [
+    0.46538,
+    0.49301,
+    0.73264,
+    0.58764,
+    0.5031,
+    0.47819,
+    0.58047
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.81046,
+     "corridor": 0.18954,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.05882,
+     "corridor": 0.44444,
+     "edge": 0.49673
+    },
+    "C": {
+     "basin": 0.43137,
+     "corridor": 0.56863,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.87582,
+     "corridor": 0.12418,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.57516,
+     "corridor": 0.42484,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 1,
+     "total_magnitude": 0.00031
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 6,
+     "total_magnitude": 0.00874
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.35541,
+     "max": 0.58304,
+     "mean": 0.46538,
+     "std": 0.0452
+    },
+    "RC": {
+     "min": 0.47685,
+     "max": 0.5128,
+     "mean": 0.49301,
+     "std": 0.00886
+    },
+    "S": {
+     "min": 0.50741,
+     "max": 0.8019,
+     "mean": 0.73264,
+     "std": 0.05724
+    },
+    "C": {
+     "min": 0.51342,
+     "max": 0.70732,
+     "mean": 0.58764,
+     "std": 0.05147
+    },
+    "TR": {
+     "min": 0.46585,
+     "max": 0.54484,
+     "mean": 0.5031,
+     "std": 0.01981
+    },
+    "X": {
+     "min": 0.36619,
+     "max": 0.57399,
+     "mean": 0.47819,
+     "std": 0.0411
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.75039,
+     "mean": 0.58047,
+     "std": 0.08235
+    }
+   }
+  },
+  {
+   "folio": "f43v",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 153,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.61954,
+   "mean_state": [
+    0.46538,
+    0.49301,
+    0.74613,
+    0.58474,
+    0.5031,
+    0.47819,
+    0.58048
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.81046,
+     "corridor": 0.18954,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.05229,
+     "corridor": 0.47059,
+     "edge": 0.47712
+    },
+    "C": {
+     "basin": 0.55556,
+     "corridor": 0.44444,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.87582,
+     "corridor": 0.12418,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.57516,
+     "corridor": 0.42484,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 1,
+     "total_magnitude": 0.0004
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 6,
+     "total_magnitude": 0.00874
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.35541,
+     "max": 0.58304,
+     "mean": 0.46538,
+     "std": 0.0452
+    },
+    "RC": {
+     "min": 0.47685,
+     "max": 0.5128,
+     "mean": 0.49301,
+     "std": 0.00886
+    },
+    "S": {
+     "min": 0.50741,
+     "max": 0.82099,
+     "mean": 0.74613,
+     "std": 0.06141
+    },
+    "C": {
+     "min": 0.51404,
+     "max": 0.6982,
+     "mean": 0.58474,
+     "std": 0.04171
+    },
+    "TR": {
+     "min": 0.46585,
+     "max": 0.54484,
+     "mean": 0.5031,
+     "std": 0.01981
+    },
+    "X": {
+     "min": 0.36617,
+     "max": 0.57399,
+     "mean": 0.47819,
+     "std": 0.04111
+    },
+    "Y": {
+     "min": 0.5,
+     "max": 0.75044,
+     "mean": 0.58048,
+     "std": 0.08237
+    }
+   }
+  },
+  {
+   "folio": "f34r",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 144,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.65985,
+   "mean_state": [
+    0.5108,
+    0.51826,
+    0.69068,
+    0.52241,
+    0.54948,
+    0.48825,
+    0.66499
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.92361,
+     "corridor": 0.07639,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.07639,
+     "corridor": 0.65278,
+     "edge": 0.27083
+    },
+    "C": {
+     "basin": 0.84722,
+     "corridor": 0.15278,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.86111,
+     "corridor": 0.13889,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.99306,
+     "corridor": 0.00694,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.14583,
+     "corridor": 0.85417,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.41897,
+     "max": 0.62249,
+     "mean": 0.5108,
+     "std": 0.0438
+    },
+    "RC": {
+     "min": 0.49422,
+     "max": 0.54045,
+     "mean": 0.51826,
+     "std": 0.01079
+    },
+    "S": {
+     "min": 0.52957,
+     "max": 0.78696,
+     "mean": 0.69068,
+     "std": 0.05774
+    },
+    "C": {
+     "min": 0.46145,
+     "max": 0.62284,
+     "mean": 0.52241,
+     "std": 0.04313
+    },
+    "TR": {
+     "min": 0.48824,
+     "max": 0.62873,
+     "mean": 0.54948,
+     "std": 0.03078
+    },
+    "X": {
+     "min": 0.4147,
+     "max": 0.53862,
+     "mean": 0.48825,
+     "std": 0.02839
+    },
+    "Y": {
+     "min": 0.50059,
+     "max": 0.7974,
+     "mean": 0.66499,
+     "std": 0.0816
+    }
+   }
+  },
+  {
+   "folio": "f34r",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 144,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.65985,
+   "mean_state": [
+    0.5108,
+    0.51826,
+    0.70226,
+    0.52496,
+    0.54948,
+    0.48825,
+    0.66499
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.92361,
+     "corridor": 0.07639,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.07639,
+     "corridor": 0.69444,
+     "edge": 0.22917
+    },
+    "C": {
+     "basin": 0.81944,
+     "corridor": 0.18056,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.86111,
+     "corridor": 0.13889,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.99306,
+     "corridor": 0.00694,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.14583,
+     "corridor": 0.85417,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.41897,
+     "max": 0.62249,
+     "mean": 0.5108,
+     "std": 0.0438
+    },
+    "RC": {
+     "min": 0.49422,
+     "max": 0.54045,
+     "mean": 0.51826,
+     "std": 0.01079
+    },
+    "S": {
+     "min": 0.53057,
+     "max": 0.80543,
+     "mean": 0.70226,
+     "std": 0.06373
+    },
+    "C": {
+     "min": 0.46123,
+     "max": 0.62537,
+     "mean": 0.52496,
+     "std": 0.04522
+    },
+    "TR": {
+     "min": 0.48824,
+     "max": 0.62873,
+     "mean": 0.54948,
+     "std": 0.03078
+    },
+    "X": {
+     "min": 0.4147,
+     "max": 0.53862,
+     "mean": 0.48825,
+     "std": 0.02839
+    },
+    "Y": {
+     "min": 0.50059,
+     "max": 0.7974,
+     "mean": 0.66499,
+     "std": 0.0816
+    }
+   }
+  },
+  {
+   "folio": "f34r",
+   "profile": "A3_DISTILL_COLLECT",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 144,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.65985,
+   "mean_state": [
+    0.5108,
+    0.51826,
+    0.70908,
+    0.52625,
+    0.54948,
+    0.48825,
+    0.66499
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 0.92361,
+     "corridor": 0.07639,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.0625,
+     "corridor": 0.73611,
+     "edge": 0.20139
+    },
+    "C": {
+     "basin": 0.82639,
+     "corridor": 0.17361,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 0.86111,
+     "corridor": 0.13889,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.99306,
+     "corridor": 0.00694,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 0.14583,
+     "corridor": 0.85417,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.41897,
+     "max": 0.62249,
+     "mean": 0.5108,
+     "std": 0.0438
+    },
+    "RC": {
+     "min": 0.49422,
+     "max": 0.54045,
+     "mean": 0.51826,
+     "std": 0.01079
+    },
+    "S": {
+     "min": 0.53157,
+     "max": 0.82388,
+     "mean": 0.70908,
+     "std": 0.07086
+    },
+    "C": {
+     "min": 0.46215,
+     "max": 0.6215,
+     "mean": 0.52625,
+     "std": 0.04596
+    },
+    "TR": {
+     "min": 0.48824,
+     "max": 0.62873,
+     "mean": 0.54948,
+     "std": 0.03078
+    },
+    "X": {
+     "min": 0.4147,
+     "max": 0.53862,
+     "mean": 0.48825,
+     "std": 0.02839
+    },
+    "Y": {
+     "min": 0.50059,
+     "max": 0.7974,
+     "mean": 0.66499,
+     "std": 0.0816
+    }
+   }
+  },
+  {
+   "folio": "f31r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 100,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.5266,
+   "mean_state": [
+    0.49921,
+    0.53995,
+    0.73854,
+    0.50227,
+    0.51311,
+    0.49485,
+    0.51895
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.03,
+     "corridor": 0.31,
+     "edge": 0.66
+    },
+    "C": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.42041,
+     "max": 0.57731,
+     "mean": 0.49921,
+     "std": 0.02761
+    },
+    "RC": {
+     "min": 0.5,
+     "max": 0.57036,
+     "mean": 0.53995,
+     "std": 0.02053
+    },
+    "S": {
+     "min": 0.56599,
+     "max": 0.82134,
+     "mean": 0.73854,
+     "std": 0.05068
+    },
+    "C": {
+     "min": 0.48269,
+     "max": 0.53442,
+     "mean": 0.50227,
+     "std": 0.00899
+    },
+    "TR": {
+     "min": 0.5,
+     "max": 0.5237,
+     "mean": 0.51311,
+     "std": 0.0078
+    },
+    "X": {
+     "min": 0.45993,
+     "max": 0.50858,
+     "mean": 0.49485,
+     "std": 0.00867
+    },
+    "Y": {
+     "min": 0.50087,
+     "max": 0.57147,
+     "mean": 0.51895,
+     "std": 0.01733
+    }
+   }
+  },
+  {
+   "folio": "f31r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 100,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.5266,
+   "mean_state": [
+    0.49921,
+    0.53995,
+    0.7559,
+    0.50338,
+    0.51311,
+    0.49485,
+    0.51895
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.03,
+     "corridor": 0.35,
+     "edge": 0.62
+    },
+    "C": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.42041,
+     "max": 0.57731,
+     "mean": 0.49921,
+     "std": 0.02761
+    },
+    "RC": {
+     "min": 0.5,
+     "max": 0.57036,
+     "mean": 0.53995,
+     "std": 0.02053
+    },
+    "S": {
+     "min": 0.56599,
+     "max": 0.84072,
+     "mean": 0.7559,
+     "std": 0.05386
+    },
+    "C": {
+     "min": 0.48118,
+     "max": 0.53779,
+     "mean": 0.50338,
+     "std": 0.01029
+    },
+    "TR": {
+     "min": 0.5,
+     "max": 0.5237,
+     "mean": 0.51311,
+     "std": 0.0078
+    },
+    "X": {
+     "min": 0.45993,
+     "max": 0.50858,
+     "mean": 0.49485,
+     "std": 0.00867
+    },
+    "Y": {
+     "min": 0.50087,
+     "max": 0.57147,
+     "mean": 0.51895,
+     "std": 0.01733
+    }
+   }
+  },
+  {
+   "folio": "f31r",
+   "profile": "A1_BATH_REFLUX",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 100,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.5266,
+   "mean_state": [
+    0.49921,
+    0.53995,
+    0.77181,
+    0.50562,
+    0.51311,
+    0.49485,
+    0.51895
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.03,
+     "corridor": 0.4,
+     "edge": 0.57
+    },
+    "C": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.42041,
+     "max": 0.57731,
+     "mean": 0.49921,
+     "std": 0.02761
+    },
+    "RC": {
+     "min": 0.5,
+     "max": 0.57036,
+     "mean": 0.53995,
+     "std": 0.02053
+    },
+    "S": {
+     "min": 0.56599,
+     "max": 0.86007,
+     "mean": 0.77181,
+     "std": 0.05801
+    },
+    "C": {
+     "min": 0.4792,
+     "max": 0.54237,
+     "mean": 0.50562,
+     "std": 0.01218
+    },
+    "TR": {
+     "min": 0.5,
+     "max": 0.5237,
+     "mean": 0.51311,
+     "std": 0.0078
+    },
+    "X": {
+     "min": 0.45993,
+     "max": 0.50858,
+     "mean": 0.49485,
+     "std": 0.00867
+    },
+    "Y": {
+     "min": 0.50087,
+     "max": 0.57147,
+     "mean": 0.51895,
+     "std": 0.01733
+    }
+   }
+  },
+  {
+   "folio": "f39v",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H0_LOW_INFRA",
+   "n_tokens": 142,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.51231,
+   "mean_state": [
+    0.51204,
+    0.46438,
+    0.65192,
+    0.67341,
+    0.48346,
+    0.51583,
+    0.50791
+   ],
+   "excursion_count": 2,
+   "bounded_excursion_count": 1,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.26761,
+     "corridor": 0.54225,
+     "edge": 0.19014
+    },
+    "C": {
+     "basin": 0.19014,
+     "corridor": 0.4507,
+     "edge": 0.35915
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.97183,
+     "corridor": 0.02817,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.48532,
+     "max": 0.56579,
+     "mean": 0.51204,
+     "std": 0.01557
+    },
+    "RC": {
+     "min": 0.42062,
+     "max": 0.50455,
+     "mean": 0.46438,
+     "std": 0.02321
+    },
+    "S": {
+     "min": 0.50272,
+     "max": 0.79543,
+     "mean": 0.65192,
+     "std": 0.0774
+    },
+    "C": {
+     "min": 0.50171,
+     "max": 0.79141,
+     "mean": 0.67341,
+     "std": 0.07073
+    },
+    "TR": {
+     "min": 0.45507,
+     "max": 0.50252,
+     "mean": 0.48346,
+     "std": 0.01287
+    },
+    "X": {
+     "min": 0.48934,
+     "max": 0.63978,
+     "mean": 0.51583,
+     "std": 0.02397
+    },
+    "Y": {
+     "min": 0.49741,
+     "max": 0.5373,
+     "mean": 0.50791,
+     "std": 0.0098
+    }
+   }
+  },
+  {
+   "folio": "f39v",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H1_MEDIUM_INFRA",
+   "n_tokens": 142,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.51231,
+   "mean_state": [
+    0.51204,
+    0.46438,
+    0.66242,
+    0.68711,
+    0.48346,
+    0.51583,
+    0.50791
+   ],
+   "excursion_count": 2,
+   "bounded_excursion_count": 1,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.26761,
+     "corridor": 0.57042,
+     "edge": 0.16197
+    },
+    "C": {
+     "basin": 0.16901,
+     "corridor": 0.49296,
+     "edge": 0.33803
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.97183,
+     "corridor": 0.02817,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.48532,
+     "max": 0.56579,
+     "mean": 0.51204,
+     "std": 0.01557
+    },
+    "RC": {
+     "min": 0.42062,
+     "max": 0.50455,
+     "mean": 0.46438,
+     "std": 0.02321
+    },
+    "S": {
+     "min": 0.50728,
+     "max": 0.80975,
+     "mean": 0.66242,
+     "std": 0.08157
+    },
+    "C": {
+     "min": 0.50171,
+     "max": 0.80625,
+     "mean": 0.68711,
+     "std": 0.07518
+    },
+    "TR": {
+     "min": 0.45507,
+     "max": 0.50252,
+     "mean": 0.48346,
+     "std": 0.01287
+    },
+    "X": {
+     "min": 0.48934,
+     "max": 0.63978,
+     "mean": 0.51583,
+     "std": 0.02397
+    },
+    "Y": {
+     "min": 0.49741,
+     "max": 0.5373,
+     "mean": 0.50791,
+     "std": 0.0098
+    }
+   }
+  },
+  {
+   "folio": "f39v",
+   "profile": "A2_SEALED_RECIRCULATION",
+   "config_mode": "H2_HIGH_INFRA",
+   "n_tokens": 142,
+   "viability": 1.0,
+   "n_hazard_events": 0,
+   "Y_final": 0.51231,
+   "mean_state": [
+    0.51204,
+    0.46438,
+    0.67092,
+    0.70422,
+    0.48346,
+    0.51583,
+    0.50791
+   ],
+   "excursion_count": 1,
+   "bounded_excursion_count": 0,
+   "zone_occupancy": {
+    "T": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "RC": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "S": {
+     "basin": 0.26761,
+     "corridor": 0.59155,
+     "edge": 0.14085
+    },
+    "C": {
+     "basin": 0.11972,
+     "corridor": 0.58451,
+     "edge": 0.29577
+    },
+    "TR": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    },
+    "X": {
+     "basin": 0.97183,
+     "corridor": 0.02817,
+     "edge": 0.0
+    },
+    "Y": {
+     "basin": 1.0,
+     "corridor": 0.0,
+     "edge": 0.0
+    }
+   },
+   "discharge_events": {
+    "cts_discharge": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "containment_resolution": {
+     "count": 0,
+     "total_magnitude": 0.0
+    },
+    "thermal_recovery": {
+     "count": 0,
+     "total_magnitude": 0.0
+    }
+   },
+   "state_trajectory_summary": {
+    "T": {
+     "min": 0.48532,
+     "max": 0.56579,
+     "mean": 0.51204,
+     "std": 0.01557
+    },
+    "RC": {
+     "min": 0.42062,
+     "max": 0.50455,
+     "mean": 0.46438,
+     "std": 0.02321
+    },
+    "S": {
+     "min": 0.50728,
+     "max": 0.82197,
+     "mean": 0.67092,
+     "std": 0.08442
+    },
+    "C": {
+     "min": 0.50171,
+     "max": 0.82932,
+     "mean": 0.70422,
+     "std": 0.08237
+    },
+    "TR": {
+     "min": 0.45507,
+     "max": 0.50252,
+     "mean": 0.48346,
+     "std": 0.01287
+    },
+    "X": {
+     "min": 0.48934,
+     "max": 0.63978,
+     "mean": 0.51583,
+     "std": 0.02397
+    },
+    "Y": {
+     "min": 0.49741,
+     "max": 0.5373,
+     "mean": 0.50791,
+     "std": 0.0098
+    }
+   }
+  }
+ ],
+ "preferred_profile_map": {
+  "f78r": "A1_BATH_REFLUX",
+  "f84r": "A1_BATH_REFLUX",
+  "f79r": "A1_BATH_REFLUX",
+  "f81v": "A1_BATH_REFLUX",
+  "f55r": "A2_SEALED_RECIRCULATION",
+  "f40v": "A2_SEALED_RECIRCULATION",
+  "f43v": "A3_DISTILL_COLLECT",
+  "f34r": "A3_DISTILL_COLLECT",
+  "f31r": "A1_BATH_REFLUX",
+  "f39v": "A2_SEALED_RECIRCULATION",
+  "f95r1": "A1_BATH_REFLUX",
+  "f104r": "A3_DISTILL_COLLECT",
+  "f111r": "A3_DISTILL_COLLECT",
+  "f116r": "A3_DISTILL_COLLECT",
+  "f105r": "A3_DISTILL_COLLECT",
+  "f108v": "A3_DISTILL_COLLECT",
+  "f66r": "A2_SEALED_RECIRCULATION",
+  "f85r1": "A2_SEALED_RECIRCULATION",
+  "f86v5": "A2_SEALED_RECIRCULATION",
+  "f86v6": "A2_SEALED_RECIRCULATION"
+ }
+}

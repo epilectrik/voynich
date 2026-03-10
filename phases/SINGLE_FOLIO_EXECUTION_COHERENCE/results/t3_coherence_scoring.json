@@ -1,0 +1,243 @@
+{
+  "metadata": {
+    "phase": "558",
+    "task": "T3_coherence_scoring",
+    "folio": "f43v",
+    "t1_path": "C:\\git\\voynich\\phases\\SINGLE_FOLIO_EXECUTION_COHERENCE\\results\\t1_folio_decomposition.json",
+    "t2_path": "C:\\git\\voynich\\phases\\SINGLE_FOLIO_EXECUTION_COHERENCE\\results\\t2_plant_execution.json"
+  },
+  "C1": {
+    "verdict": "PASS",
+    "runs": {
+      "INTERSECTION_P": {
+        "viability": 1.0,
+        "total_nan": 0,
+        "total_contradiction": 0,
+        "pass": true
+      },
+      "INTERSECTION_MPC": {
+        "viability": 1.0,
+        "total_nan": 0,
+        "total_contradiction": 0,
+        "pass": true
+      },
+      "SCHEDULER_P": {
+        "viability": 1.0,
+        "total_nan": 0,
+        "total_contradiction": 0,
+        "pass": true
+      },
+      "SCHEDULER_MPC": {
+        "viability": 1.0,
+        "total_nan": 0,
+        "total_contradiction": 0,
+        "pass": true
+      }
+    }
+  },
+  "C2": {
+    "verdict": "FAIL",
+    "spearman_rho": 0.00757592105157573,
+    "spearman_p": 0.9259497902813035,
+    "closure_rates": {
+      "INTERSECTION_P": 1.0,
+      "INTERSECTION_MPC": 1.0,
+      "SCHEDULER_P": 1.0,
+      "SCHEDULER_MPC": 1.0
+    },
+    "c2a_pass": 0,
+    "c2b_pass": true
+  },
+  "C3": {
+    "verdict": "FAIL",
+    "mean_pairwise_jsd": 0.011363912637590722,
+    "pairwise_jsds": [
+      0.019027342172881177,
+      0.005619591829716103,
+      0.009444803910174887
+    ],
+    "permutation_p": 0.887,
+    "null_jsd_mean": 0.020831193144050474,
+    "null_jsd_std": 0.008398753883921002,
+    "n_paragraphs": 3
+  },
+  "C4": {
+    "verdict": "FAIL",
+    "tests_passed": 1,
+    "tests_total": 6,
+    "D1_thermal_gradient": {
+      "pass": false,
+      "effect": 0.0,
+      "p": 1.0
+    },
+    "D2_close_within_line": {
+      "pass": 0,
+      "effect": 0.0005555555555555591,
+      "p": 0.334411490935533
+    },
+    "D3_deny_hazard_frame": {
+      "pass": 1,
+      "effect": 0.2519055944055944,
+      "p": 7.035344354528794e-11
+    },
+    "D4_block_headless": {
+      "pass": 0,
+      "effect": -0.0018148148148148142,
+      "p": 0.2673802307594867
+    },
+    "D5_commit_close_para": {
+      "pass": 0,
+      "effect": 0.020666666666666663,
+      "p": 0.14840065509691508
+    },
+    "D6_allow_para_init": {
+      "pass": 0,
+      "effect": -0.10133659439450038,
+      "p": 0.9672931174482295
+    }
+  },
+  "C5": {
+    "verdict": "FAIL",
+    "c5a_viab_pass": true,
+    "c5b_error_pass": true,
+    "c5c_closure_pass": false,
+    "c5d_directional_pass": false,
+    "null_summaries": {
+      "token_shuffle_P": {
+        "n_seeds": 50,
+        "mean_viability": 0.98375,
+        "std_viability": 0.021542109924517605,
+        "mean_error": 0.767105716108474,
+        "mean_closure": 1.0,
+        "full_viab_better": 1,
+        "full_error_better": 1,
+        "full_closure_better": 0
+      },
+      "token_shuffle_MPC": {
+        "n_seeds": 50,
+        "mean_viability": 0.98375,
+        "std_viability": 0.021542109924517605,
+        "mean_error": 0.7671323436697931,
+        "mean_closure": 1.0,
+        "full_viab_better": 1,
+        "full_error_better": 1,
+        "full_closure_better": 0
+      },
+      "line_shuffle_P": {
+        "n_seeds": 50,
+        "mean_viability": 0.99225,
+        "std_viability": 0.011696687565289583,
+        "mean_error": 0.7478596232342859,
+        "mean_closure": 1.0,
+        "full_viab_better": 1,
+        "full_error_better": 0,
+        "full_closure_better": 0
+      },
+      "line_shuffle_MPC": {
+        "n_seeds": 50,
+        "mean_viability": 0.99225,
+        "std_viability": 0.011696687565289583,
+        "mean_error": 0.7478882350894699,
+        "mean_closure": 1.0,
+        "full_viab_better": 1,
+        "full_error_better": 0,
+        "full_closure_better": 0
+      },
+      "cross_paragraph_P": {
+        "n_seeds": 50,
+        "mean_viability": 0.9902500000000001,
+        "std_viability": 0.015670433944214815,
+        "mean_error": 0.7503954859805282,
+        "mean_closure": 1.0,
+        "full_viab_better": 1,
+        "full_error_better": 0,
+        "full_closure_better": 0
+      },
+      "cross_paragraph_MPC": {
+        "n_seeds": 50,
+        "mean_viability": 0.9902500000000001,
+        "std_viability": 0.015670433944214815,
+        "mean_error": 0.7504223131549754,
+        "mean_closure": 1.0,
+        "full_viab_better": 1,
+        "full_error_better": 0,
+        "full_closure_better": 0
+      },
+      "random_token_P": {
+        "n_seeds": 50,
+        "mean_viability": 0.99225,
+        "std_viability": 0.011960873713905685,
+        "mean_error": 0.7513803774897552,
+        "mean_closure": 1.0,
+        "full_viab_better": 1,
+        "full_error_better": 0,
+        "full_closure_better": 0
+      },
+      "random_token_MPC": {
+        "n_seeds": 50,
+        "mean_viability": 0.99225,
+        "std_viability": 0.011960873713905685,
+        "mean_error": 0.7514011968179954,
+        "mean_closure": 1.0,
+        "full_viab_better": 1,
+        "full_error_better": 0,
+        "full_closure_better": 0
+      },
+      "token_shuffle_INTERSECTION_concurrent": {
+        "n_seeds": 10,
+        "mean_viability": 0.9964761904761904,
+        "std_viability": 0.007203551656133585,
+        "mean_error": 0.7100526209681599,
+        "mean_closure": 1.0,
+        "full_viab_better": 1,
+        "full_error_better": 0,
+        "full_closure_better": 0
+      },
+      "token_shuffle_SCHEDULER_concurrent": {
+        "n_seeds": 10,
+        "mean_viability": 0.9985714285714286,
+        "std_viability": 0.0028650683726650257,
+        "mean_error": 0.6918477321278068,
+        "mean_closure": 1.0,
+        "full_viab_better": 1,
+        "full_error_better": 0,
+        "full_closure_better": 0
+      },
+      "random_token_INTERSECTION_concurrent": {
+        "n_seeds": 10,
+        "mean_viability": 0.998,
+        "std_viability": 0.005689629345235764,
+        "mean_error": 0.6822708396240273,
+        "mean_closure": 1.0,
+        "full_viab_better": 1,
+        "full_error_better": 0,
+        "full_closure_better": 0
+      },
+      "random_token_SCHEDULER_concurrent": {
+        "n_seeds": 10,
+        "mean_viability": 0.999904761904762,
+        "std_viability": 0.000285714285714278,
+        "mean_error": 0.6750480019622902,
+        "mean_closure": 1.0,
+        "full_viab_better": 1,
+        "full_error_better": 0,
+        "full_closure_better": 0
+      }
+    },
+    "null_directional": {}
+  },
+  "overall": {
+    "verdict": "FAIL",
+    "required_met": false,
+    "optional_met": 0,
+    "optional_needed": 2,
+    "formula": "C1 AND C5a AND C5c AND (>=2 of {C2,C3,C4})"
+  },
+  "honest_assessment": {
+    "null_viab_diff": 0.007503968253968253,
+    "null_error_diff": 0.031114401025713518,
+    "max_temperature": 0.5515828568076885,
+    "plant_too_constrained": true,
+    "nulls_indistinguishable": true
+  }
+}

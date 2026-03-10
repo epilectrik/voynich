@@ -1,0 +1,178 @@
+{
+ "metadata": {
+  "phase": "560",
+  "task": "T4_synthesis",
+  "timestamp": "2026-03-08T19:52:18"
+ },
+ "phase_verdict": "PARTIAL_PASS",
+ "verdict_detail": "Hierarchical model validated. D5 confirms within-domain features add discriminative power (+6-9pp). But secondary cross-folio tests (D3, D4) indicate within-domain variation is primarily between-section. Paragraph differentiation at 28.8% (threshold 30%) \u2014 very close.",
+ "summary": {
+  "T2": {
+   "pass": true,
+   "T2A": "16/17",
+   "T2A_only_failure": "O3 (bare-o OPERATION purity)",
+   "T2B": "22/30"
+  },
+  "T3": {
+   "class": "PARTIAL",
+   "D1": {
+    "pass": true,
+    "accuracy": 0.7683
+   },
+   "D2": {
+    "pass": true,
+    "n_significant": 15
+   },
+   "D3": {
+    "pass": false
+   },
+   "D4": {
+    "pass": false,
+    "ari": -0.0242
+   },
+   "D5": {
+    "pass": true,
+    "D5a_gain": 0.061,
+    "D5b_gain": 0.0875
+   },
+   "D6a": {
+    "pass": false,
+    "fraction": 0.2881
+   },
+   "D6b": {
+    "pass": true
+   }
+  }
+ },
+ "constraints_proposed": [
+  {
+   "id": "C1567",
+   "tier": 2,
+   "text": "Within-domain subordinate features validate constraint predictions per domain: 16/17 structural spine tests pass (T2A). The single failure (O3: bare-o OPERATION purity 42.6% vs 95%) reflects a CategoryClassifier/C1556 tension, not a decomposition error."
+  },
+  {
+   "id": "C1568",
+   "tier": 2,
+   "text": "Cross-folio within-domain profiles add discriminative power beyond HEAD distribution alone: +6.1% (NN), +8.8% (RF) accuracy gain. Top features: o_l_frac, xd_headless_frac, hl_frac, t_flow_purity, e_ey_frac."
+  },
+  {
+   "id": "C1569",
+   "tier": 2,
+   "text": "Folio specificity extends into within-domain parameterization at section level (D1: 76.8% section classification from within-domain features alone, D2: 15/32 features with significant section variance). Within-section folio resolution is not established (D3, D4 fail)."
+  }
+ ],
+ "constraints_referenced": [
+  "C1003",
+  "C1475",
+  "C1429",
+  "C1431",
+  "C1432",
+  "C1433",
+  "C1446",
+  "C1448",
+  "C1457",
+  "C1461",
+  "C1476",
+  "C1477",
+  "C1478",
+  "C1479",
+  "C1480",
+  "C1481",
+  "C1482",
+  "C1486",
+  "C1487",
+  "C1488",
+  "C1489",
+  "C1492",
+  "C1494",
+  "C1497",
+  "C1510",
+  "C1536",
+  "C1537",
+  "C1538",
+  "C1546",
+  "C1556",
+  "C1557",
+  "C1558",
+  "C1561",
+  "C1563",
+  "C1564",
+  "C1566"
+ ],
+ "domain_dial_cards": {
+  "THERMAL": {
+   "actuation": "Thermal raise/hold",
+   "safety": "Intrinsically immune (K1: 0% hazard all frames)",
+   "routing_inputs": "y->k incoming (X2: 1.72x), qo PREFIX activation (K5: 4.66x)",
+   "packaging": "Bare-terminal 93%, suffix rate 97%",
+   "folio_dials": "k_suffix_entropy, k_bare_term_frac, k_thermal_purity",
+   "category_purity": "90.3%"
+  },
+  "FLOW": {
+   "actuation": "Flow transition/routing",
+   "safety": "Modifier gate (T3: with-mod=0.0, without=0.0)",
+   "mirror": "Terminal mirrors THERMAL (T1 JSD=0.0017), category opposes (T2 JSD=0.7842)",
+   "folio_dials": "t_mod_rate, t_flow_purity",
+   "category_purity": "86.9%"
+  },
+  "ACTIVE": {
+   "actuation": "Active transformation, risk-carrying iteration",
+   "safety": "i-modifier + terminal transformation: i-rate=49.6%, double-ii safe (A5: 100%)",
+   "hazard": "Highest headed domain (A9). a->l: 100%, a->r: 100%, a->bare: 0%",
+   "controls": "i-count -> terminal -> category mediation chain",
+   "folio_dials": "a_i_rate, a_ii_rate, a_n_term_rate, a_hazard_rate"
+  },
+  "STABILITY": {
+   "actuation": "Stabilization, preventive anchoring",
+   "safety": "e->y ambient safe substrate (E1: 49.6% of e-HEAD, E2: 0% hazard)",
+   "vocabulary": "e->y uses 7 unique MIDDLEs",
+   "modifiers": "d-mod enrichment: 38.0%",
+   "saturation": "ee->THERMAL: 84.8%",
+   "folio_dials": "e_ey_frac, e_d_mod_rate, e_ey_vocab, e_ey_zone_bias, e_edy_dominance"
+  },
+  "ARRANGEMENT": {
+   "actuation": "Configuration dispatch",
+   "dispatch": "o->l=STAGING (98.1%), o->r=FLOW (98.9%)",
+   "safety": "Source immune, no hazard class assigned (O6: effective 0%)",
+   "exclusion": "y-terminal excluded (0.15%)",
+   "tension": "O3: bare-o OPERATION purity only 42.6% (CategoryClassifier tension)",
+   "folio_dials": "o_l_frac, o_r_frac, o_exec_mod_rate"
+  },
+  "HEADLESS": {
+   "actuation": "Infrastructure, containment, marking",
+   "subtypes": "PSEUDO_HEAD_CORE (d/i/l), PARAMETRIC (c/p/f), OTHER",
+   "pseudo_head": "Cramer V=0.644",
+   "suffix_bifurcation": "d/i sfx=28.8%, c/p/f sfx=95.2%",
+   "displaced": "1182 tokens with displaced head terminal",
+   "folio_dials": "hl_pseudo_entropy, hl_mod_rate, hl_core_ratio, hl_suffix_bifurc"
+  }
+ },
+ "routing_summary": {
+  "within_line": {
+   "r->a": 2.014,
+   "y->k": 1.716,
+   "h->t": 2.039,
+   "m->o": 1.701
+  },
+  "Q3_Q4_jump": 25.09,
+  "suffix_forward_info": 0.002093,
+  "cross_line_collapse": 1.85,
+  "cross_line_hazard_memory": 0.859
+ },
+ "interpretation": {
+  "what_passed": "T2A confirms the within-domain structural spine: 16/17 invariants hold. Domain decomposition is correct. D5 proves within-domain features carry folio-discriminative information beyond HEAD proportions (+6-9pp). D1 shows 76.8% section classification from within-domain features alone.",
+  "what_failed": "D3/D4: Within-section folio resolution absent. Folios within the same section have nearly identical within-domain profiles after domain-count adjustment. The discriminative power is section-level, not folio-level. D6a: Paragraph differentiation at 28.8%, just below 30% threshold.",
+  "what_this_means": "HEAD selects domain (confirmed). Within-domain features are real control dials that vary systematically across sections (confirmed). But the folio-to-folio variation WITHIN sections is indistinguishable from shuffled tokens within domains. This means either: (a) folio-level specificity lives in domain MIX not within-domain tuning, (b) within-domain variation exists but is too subtle for 32-feature profiles to capture, or (c) folios within sections really do share the same within-domain control settings.",
+  "phase_561_guidance": "Phase 561 can use: (1) domain dial cards as validated section-level control parameters, (2) HEAD proportions for folio-level specificity, (3) within-domain features for section-discriminative behavior. Paragraph-level emphasis differences (D6a at 28.8%, D6b shows gradient alignment) should be explored but not assumed. The simulator should be hierarchical: section -> folio (HEAD mix) -> domain dials."
+ },
+ "non_circularity": {
+  "HEAD_domain_assignment": "DIRECT (structural partition, unavoidable)",
+  "constraint_predictions": "NONE (testing published predictions)",
+  "CategoryClassifier": "INDIRECT (MIDDLE property, independent of HEAD)",
+  "headless_subtyping": "DIRECT (first atom of MIDDLE, unavoidable)",
+  "permutation_nulls": "NONE (random shuffling)",
+  "section_labels": "NONE (illustration-based, external to text)",
+  "folio_features": "DIRECT (computed from token decomposition, unavoidable)",
+  "random_forest": "NONE (sklearn, no Voynich tuning)"
+ }
+}

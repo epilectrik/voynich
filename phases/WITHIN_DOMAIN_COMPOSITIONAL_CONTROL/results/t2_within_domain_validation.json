@@ -1,0 +1,347 @@
+{
+ "t2a": {
+  "tests": {
+   "K1": {
+    "desc": "THERMAL 0% hazard in ALL frames",
+    "max_hazard_rate": 0,
+    "pass": true
+   },
+   "K6": {
+    "desc": "THERMAL category purity > 85%",
+    "purity": 0.9035,
+    "pass": true
+   },
+   "A5": {
+    "desc": "ACTIVE double-ii safe pathway > 99%",
+    "safe_rate": 1.0,
+    "n_tokens": 887,
+    "pass": true
+   },
+   "A7": {
+    "desc": "a->l > 93% hazard",
+    "hazard_rate": 1.0,
+    "n": 527,
+    "pass": true
+   },
+   "A8": {
+    "desc": "a->r > 93% hazard",
+    "hazard_rate": 1.0,
+    "n": 687,
+    "pass": true
+   },
+   "A9": {
+    "desc": "ACTIVE highest headed hazard",
+    "domain_hazards": {
+     "THERMAL": 0,
+     "FLOW": 0,
+     "ACTIVE": 0.8074,
+     "STABILITY": 0,
+     "ARRANGEMENT": 0.5959
+    },
+    "pass": true
+   },
+   "E2": {
+    "desc": "e->y hazard < 1%",
+    "hazard_rate": 0.0,
+    "n": 3475,
+    "pass": true
+   },
+   "O1": {
+    "desc": "o->l STAGING purity > 98%",
+    "purity": 0.9806949806949807,
+    "n": 777,
+    "pass": true
+   },
+   "O2": {
+    "desc": "o->r FLOW purity > 98%",
+    "purity": 0.989010989010989,
+    "n": 455,
+    "pass": true
+   },
+   "O3": {
+    "desc": "bare-o OPERATION purity > 95%",
+    "purity": 0.4261168384879725,
+    "n": 1164,
+    "pass": false
+   },
+   "O4": {
+    "desc": "o-HEAD y-terminal < 1%",
+    "y_frac": 0.001472211998527788,
+    "pass": true
+   },
+   "O6": {
+    "desc": "ARRANGEMENT 0% effective hazard",
+    "source_exposed_rate": 0.0,
+    "hazard_class_set_rate": 0.0,
+    "frame_hazard_high_rate": 0.5958778064041222,
+    "note": "frame_hazard is pre-immunity; effective exposure checks source_immune + hazard_class",
+    "pass": true
+   },
+   "X1": {
+    "desc": "r\u2192a enrichment > 1.8x",
+    "enrichment": 2.014,
+    "pass": true
+   },
+   "X2": {
+    "desc": "y\u2192k enrichment > 1.3x",
+    "enrichment": 1.716,
+    "pass": true
+   },
+   "X3": {
+    "desc": "h\u2192t enrichment > 1.5x",
+    "enrichment": 2.039,
+    "pass": true
+   },
+   "X4": {
+    "desc": "m\u2192o enrichment > 1.3x",
+    "enrichment": 1.701,
+    "pass": true
+   },
+   "X6": {
+    "desc": "Q3\u2192Q4 HEAD JSD jump > 10x Q2\u2192Q3",
+    "jsd_23": 0.000413,
+    "jsd_34": 0.010367,
+    "ratio": 25.09,
+    "pass": true
+   }
+  },
+  "n_failures": 1,
+  "n_tests": 17,
+  "pass": true
+ },
+ "t2b": {
+  "tests": {
+   "K2": {
+    "desc": "k bare-terminal > 85%",
+    "value": 0.9252,
+    "threshold": 0.85,
+    "pass": true
+   },
+   "K3": {
+    "desc": "k modifier < 20%",
+    "value": 0.3261,
+    "threshold": 0.2,
+    "pass": false
+   },
+   "K4": {
+    "desc": "k suffix > 90%",
+    "value": 0.969,
+    "threshold": 0.9,
+    "pass": true
+   },
+   "K5": {
+    "desc": "k qo-PREFIX enrichment > 3x",
+    "enrichment": 4.66,
+    "threshold": 3.0,
+    "pass": true
+   },
+   "T1": {
+    "desc": "k-t terminal JSD < 0.01",
+    "jsd": 0.001655,
+    "threshold": 0.01,
+    "pass": true
+   },
+   "T2": {
+    "desc": "k-t category JSD > 0.5",
+    "jsd": 0.78418,
+    "threshold": 0.5,
+    "pass": true
+   },
+   "T3": {
+    "desc": "t-domain modifier quenches hazard",
+    "haz_with_mod": 0.0,
+    "haz_without_mod": 0.0,
+    "pass": false
+   },
+   "T5": {
+    "desc": "t FLOW purity > 80%",
+    "value": 0.8686,
+    "threshold": 0.8,
+    "pass": true
+   },
+   "A1": {
+    "desc": "a i-mod > 65%",
+    "value": 0.4963,
+    "threshold": 0.65,
+    "pass": false
+   },
+   "A2": {
+    "desc": "a no-i r/l > 60%",
+    "value": 0.7743391360412637,
+    "threshold": 0.6,
+    "pass": true
+   },
+   "A3": {
+    "desc": "a with-i n-term > 70%",
+    "value": 0.8206806282722513,
+    "threshold": 0.7,
+    "pass": true
+   },
+   "A4": {
+    "desc": "a monotonic i-count hazard",
+    "h0": 0.7859445519019987,
+    "h1": 0.6708268330733229,
+    "h2": 0.943630214205186,
+    "monotonic": false,
+    "pass": false
+   },
+   "A6": {
+    "desc": "a->bare hazard < 5%",
+    "hazard": 0.0,
+    "n": 397,
+    "threshold": 0.05,
+    "pass": true
+   },
+   "E1": {
+    "desc": "e->y fraction > 40%",
+    "value": 0.4963,
+    "threshold": 0.4,
+    "pass": true
+   },
+   "E3": {
+    "desc": "e->y unique MIDDLEs <= 12",
+    "count": 7,
+    "middles": [
+     "echy",
+     "ecty",
+     "edy",
+     "eey",
+     "eky",
+     "eoty",
+     "ey"
+    ],
+    "pass": true
+   },
+   "E4": {
+    "desc": "e d-mod > 28%",
+    "value": 0.3797,
+    "threshold": 0.28,
+    "pass": true
+   },
+   "E5": {
+    "desc": "ee THERMAL > 70%",
+    "value": 0.8484375,
+    "n": 1280,
+    "threshold": 0.7,
+    "pass": true
+   },
+   "E6": {
+    "desc": "e->y qo depletion < 0.20x",
+    "ratio": 0.478,
+    "threshold": 0.2,
+    "pass": false
+   },
+   "E7": {
+    "desc": "e with d-modifier hazardous > 50%",
+    "hazard_d_mod": 0.0,
+    "n_d_mod": 2659,
+    "hazard_e_d_frame": null,
+    "n_e_d_frame": 0,
+    "note": "d is not a terminal; checking d-modifier tokens instead",
+    "pass": false
+   },
+   "O5": {
+    "desc": "o p/f mod enrichment",
+    "p_enrich": 3.5,
+    "f_enrich": 2.81,
+    "pass": true
+   },
+   "H1": {
+    "desc": "a-base PREFIX > 85% headless",
+    "value": 0.9973502914679385,
+    "n": 1887,
+    "threshold": 0.85,
+    "pass": true
+   },
+   "H2": {
+    "desc": "headless pseudo-HEAD V > 0.25",
+    "cramers_v": 0.6444,
+    "pass": true
+   },
+   "HL4": {
+    "desc": "headless THERMAL < 5%",
+    "value": 0.0107,
+    "threshold": 0.05,
+    "pass": true
+   },
+   "HL5": {
+    "desc": "headless r/m depletion < 0.5x",
+    "headed_rm": 0.08139604019263928,
+    "headless_rm": 0.14051298390951092,
+    "ratio": 1.726,
+    "pass": false
+   },
+   "HL6": {
+    "desc": "d/i suffix < c/p/f suffix",
+    "di_suffix_rate": 0.2881201638598088,
+    "cpf_suffix_rate": 0.9523809523809523,
+    "pass": true
+   },
+   "HL7": {
+    "desc": "headless displaced head terminal fraction",
+    "fraction": 0.1883,
+    "count": 1182,
+    "pass": true
+   },
+   "X5": {
+    "desc": "Suffix zero forward info JSD < 0.015",
+    "jsd": 0.002093,
+    "pass": true
+   },
+   "X7": {
+    "desc": "Within/cross-line routing ratio > 2.5x",
+    "within_avg_enr": 1.868,
+    "cross_avg_enr": 1.009,
+    "ratio": 1.85,
+    "pass": false
+   },
+   "X8": {
+    "desc": "Zone-conditioned routing (info)",
+    "zone_routing": {
+     "SPEC": {
+      "r\u2192a": 2.08,
+      "y\u2192k": 1.85,
+      "h\u2192t": 1.76,
+      "m\u2192o": 0.0
+     },
+     "WORK": {
+      "r\u2192a": 2.09,
+      "y\u2192k": 1.65,
+      "h\u2192t": 2.03,
+      "m\u2192o": 1.96
+     },
+     "CLOSE": {
+      "r\u2192a": 1.77,
+      "y\u2192k": 1.83,
+      "h\u2192t": 2.12,
+      "m\u2192o": 1.51
+     }
+    },
+    "pass": true
+   },
+   "X9": {
+    "desc": "No cross-line hazard recovery memory (ratio <= 1.1)",
+    "safe_after_high_haz": 0.1732,
+    "safe_after_safe": 0.2015,
+    "ratio": 0.859,
+    "n_after_high": 552,
+    "n_after_safe": 674,
+    "pass": true
+   }
+  },
+  "n_pass": 22,
+  "n_total": 30
+ },
+ "metadata": {
+  "phase": "560",
+  "task": "T2_within_domain_validation",
+  "timestamp": "2026-03-08T19:43:14"
+ },
+ "verdict": {
+  "pass": true,
+  "t2a_pass": true,
+  "t2a_failures": 1,
+  "t2b_pass_count": 22,
+  "t2b_total": 30
+ }
+}

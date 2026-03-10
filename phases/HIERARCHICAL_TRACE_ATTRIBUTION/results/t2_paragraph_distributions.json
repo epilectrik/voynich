@@ -1,0 +1,346 @@
+{
+  "metadata": {
+    "phase": "HIERARCHICAL_TRACE_ATTRIBUTION",
+    "task": "T2",
+    "n_qualifying_paragraphs": 283,
+    "test_sections": [
+      "S",
+      "H",
+      "B"
+    ],
+    "n_perms_emd": 500,
+    "elapsed_seconds": 109.2
+  },
+  "zone_assignment": {
+    "ari": 0.2867,
+    "centroids_6d": {
+      "1": [
+        0.10955470073327561,
+        0.027518619925815047,
+        0.1347198468344861,
+        0.23600374096437313,
+        0.14549590314825997,
+        0.3467071883937904
+      ],
+      "0": [
+        0.1692925561434739,
+        0.04281609919876751,
+        0.10104529751216436,
+        0.3530707028942228,
+        0.07464761474158246,
+        0.2591277295097889
+      ],
+      "2": [
+        0.10231438048305674,
+        0.03518257122404237,
+        0.17607070375367265,
+        0.28557054235966306,
+        0.14479665378831663,
+        0.25606514839124855
+      ],
+      "3": [
+        0.08762131179988271,
+        0.05022710278770027,
+        0.12777917236335906,
+        0.33416070379326857,
+        0.1323002769809318,
+        0.2679114322748576
+      ]
+    },
+    "n_direct": 147,
+    "n_centroid_assigned": 136
+  },
+  "C1_continuous_emd": {
+    "per_section": {
+      "S": {
+        "status": "TESTED",
+        "real_mean_ed": 0.15117,
+        "null_mean": 0.102215,
+        "null_std": 0.007884,
+        "z_score": 6.21,
+        "pass": "True",
+        "n_folios": 23,
+        "n_paragraphs": 119,
+        "n_pairs": 253
+      },
+      "H": {
+        "status": "TESTED",
+        "real_mean_ed": 0.339787,
+        "null_mean": 0.254455,
+        "null_std": 0.016849,
+        "z_score": 5.06,
+        "pass": "True",
+        "n_folios": 22,
+        "n_paragraphs": 47,
+        "n_pairs": 231
+      },
+      "B": {
+        "status": "TESTED",
+        "real_mean_ed": 0.144384,
+        "null_mean": 0.12023,
+        "null_std": 0.010324,
+        "z_score": 2.34,
+        "pass": "True",
+        "n_folios": 20,
+        "n_paragraphs": 81,
+        "n_pairs": 190
+      }
+    },
+    "pass_count": 3,
+    "pass": true
+  },
+  "C2_zone_inventory": {
+    "per_test": {
+      "direct_S": {
+        "status": "TESTED",
+        "real_chi2": 123.0476,
+        "null_mean": 70.4512,
+        "p_value": 0.0,
+        "pass": "True",
+        "n_folios": 23,
+        "n_paragraphs": 119
+      },
+      "direct_H": {
+        "status": "TESTED",
+        "real_chi2": 140.2362,
+        "null_mean": 97.6178,
+        "p_value": 0.0,
+        "pass": "True",
+        "n_folios": 31,
+        "n_paragraphs": 56
+      },
+      "direct_B": {
+        "status": "TESTED",
+        "real_chi2": 98.4775,
+        "null_mean": 72.2754,
+        "p_value": 0.014,
+        "pass": "True",
+        "n_folios": 20,
+        "n_paragraphs": 81
+      },
+      "unsupervised_S": {
+        "status": "TESTED",
+        "real_chi2": 99.5011,
+        "null_mean": 70.1119,
+        "p_value": 0.006,
+        "pass": "True",
+        "n_folios": 23,
+        "n_paragraphs": 119
+      },
+      "unsupervised_H": {
+        "status": "TESTED",
+        "real_chi2": 156.1269,
+        "null_mean": 97.4889,
+        "p_value": 0.0,
+        "pass": "True",
+        "n_folios": 31,
+        "n_paragraphs": 56
+      },
+      "unsupervised_B": {
+        "status": "TESTED",
+        "real_chi2": 92.6652,
+        "null_mean": 72.0738,
+        "p_value": 0.034,
+        "pass": "True",
+        "n_folios": 20,
+        "n_paragraphs": 81
+      }
+    },
+    "pass": true
+  },
+  "C3_paragraph_ecology": {
+    "per_test": {
+      "direct_S_zone_entropy": {
+        "status": "TESTED",
+        "mean": 1.0757,
+        "std": 0.5873,
+        "cv": 0.546,
+        "n_folios": 23,
+        "pass": "True"
+      },
+      "direct_S_same_zone_inertia": {
+        "status": "TESTED",
+        "mean": 0.4478,
+        "std": 0.3435,
+        "cv": 0.767,
+        "n_folios": 23,
+        "pass": "True"
+      },
+      "direct_S_dominant_fraction": {
+        "status": "TESTED",
+        "mean": 0.6513,
+        "std": 0.2063,
+        "cv": 0.3167,
+        "n_folios": 23,
+        "pass": "True"
+      },
+      "direct_H_zone_entropy": {
+        "status": "TESTED",
+        "mean": 0.2653,
+        "std": 0.4337,
+        "cv": 1.6348,
+        "n_folios": 22,
+        "pass": "True"
+      },
+      "direct_H_same_zone_inertia": {
+        "status": "TESTED",
+        "mean": 0.75,
+        "std": 0.4197,
+        "cv": 0.5596,
+        "n_folios": 22,
+        "pass": "True"
+      },
+      "direct_H_dominant_fraction": {
+        "status": "TESTED",
+        "mean": 0.8788,
+        "std": 0.2021,
+        "cv": 0.23,
+        "n_folios": 22,
+        "pass": "True"
+      },
+      "direct_B_zone_entropy": {
+        "status": "TESTED",
+        "mean": 0.4557,
+        "std": 0.5373,
+        "cv": 1.1791,
+        "n_folios": 20,
+        "pass": "True"
+      },
+      "direct_B_same_zone_inertia": {
+        "status": "TESTED",
+        "mean": 0.7819,
+        "std": 0.274,
+        "cv": 0.3505,
+        "n_folios": 20,
+        "pass": "True"
+      },
+      "direct_B_dominant_fraction": {
+        "status": "TESTED",
+        "mean": 0.8393,
+        "std": 0.2005,
+        "cv": 0.2388,
+        "n_folios": 20,
+        "pass": "True"
+      },
+      "unsupervised_S_zone_entropy": {
+        "status": "TESTED",
+        "mean": 1.1006,
+        "std": 0.564,
+        "cv": 0.5125,
+        "n_folios": 23,
+        "pass": "True"
+      },
+      "unsupervised_S_same_zone_inertia": {
+        "status": "TESTED",
+        "mean": 0.4399,
+        "std": 0.343,
+        "cv": 0.7798,
+        "n_folios": 23,
+        "pass": "True"
+      },
+      "unsupervised_S_dominant_fraction": {
+        "status": "TESTED",
+        "mean": 0.6147,
+        "std": 0.2051,
+        "cv": 0.3337,
+        "n_folios": 23,
+        "pass": "True"
+      },
+      "unsupervised_H_zone_entropy": {
+        "status": "TESTED",
+        "mean": 0.269,
+        "std": 0.4396,
+        "cv": 1.6341,
+        "n_folios": 22,
+        "pass": "True"
+      },
+      "unsupervised_H_same_zone_inertia": {
+        "status": "TESTED",
+        "mean": 0.75,
+        "std": 0.4197,
+        "cv": 0.5596,
+        "n_folios": 22,
+        "pass": "True"
+      },
+      "unsupervised_H_dominant_fraction": {
+        "status": "TESTED",
+        "mean": 0.8712,
+        "std": 0.2128,
+        "cv": 0.2443,
+        "n_folios": 22,
+        "pass": "True"
+      },
+      "unsupervised_B_zone_entropy": {
+        "status": "TESTED",
+        "mean": 0.7895,
+        "std": 0.5708,
+        "cv": 0.7229,
+        "n_folios": 20,
+        "pass": "True"
+      },
+      "unsupervised_B_same_zone_inertia": {
+        "status": "TESTED",
+        "mean": 0.5388,
+        "std": 0.3651,
+        "cv": 0.6776,
+        "n_folios": 20,
+        "pass": "True"
+      },
+      "unsupervised_B_dominant_fraction": {
+        "status": "TESTED",
+        "mean": 0.7211,
+        "std": 0.2148,
+        "cv": 0.2979,
+        "n_folios": 20,
+        "pass": "True"
+      }
+    },
+    "pass_count": 18,
+    "total_tested": 18,
+    "pass": true
+  },
+  "C4_continuous_variance": {
+    "per_section": {
+      "S": {
+        "status": "TESTED",
+        "real_dispersion_var": 0.00192895,
+        "null_mean": 0.0020608,
+        "null_std": 0.00061161,
+        "z_score": -0.22,
+        "pass": "False",
+        "mean_dispersion": 0.220995,
+        "n_folios": 23
+      },
+      "H": {
+        "status": "TESTED",
+        "real_dispersion_var": 0.00514903,
+        "null_mean": 0.01192806,
+        "null_std": 0.00356482,
+        "z_score": -1.9,
+        "pass": "False",
+        "mean_dispersion": 0.188508,
+        "n_folios": 22
+      },
+      "B": {
+        "status": "TESTED",
+        "real_dispersion_var": 0.00210063,
+        "null_mean": 0.00349937,
+        "null_std": 0.00148799,
+        "z_score": -0.94,
+        "pass": "False",
+        "mean_dispersion": 0.167727,
+        "n_folios": 20
+      }
+    },
+    "pass_count": 0,
+    "pass": false
+  },
+  "sub_test_results": {
+    "C1": true,
+    "C2": true,
+    "C3": true,
+    "C4": false
+  },
+  "pass_count": 3,
+  "overall_pass": true
+}

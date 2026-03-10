@@ -1,0 +1,234 @@
+{
+ "metadata": {
+  "phase": "564b",
+  "task": "T5_synthesis",
+  "timestamp": "2026-03-09T15:21:49",
+  "verdict": "SELECTIVE_RESTORATION_FAILED",
+  "n_tests_total": 9,
+  "n_tests_pass": 2,
+  "n_tests_fail": 7,
+  "n_constraints_proposed": 0
+ },
+ "verdict_rationale": "SELECTIVE_RESTORATION_FAILED: Only 2/9 tests pass (P2, P8), identical score to Phase 564. The piecewise 3-zone selective restoration architecture IS mechanistically correct: D1 confirms supervisory signal dominates restoring in the corridor (mean ratio=6.05), D2 confirms substantial corridor occupancy (18.7%), and D3/B9 (uniform restoring) produces the strongest ablation signal in the entire apparatus line (mean viability delta=+0.125, with individual folios dropping to 0.44-0.48). However, the edge barrier (BETA values 2-5x higher than planned, especially BETA_X=80.0) creates an impenetrable boundary that prevents viability loss for all models including nulls. Mean viability=0.99985, only 1/20 folios have viability<1.0 (need >=8). P7 null destruction fails: 0/4 null types destroyed. This is a PROGRESSIVE negative result: unlike 564 which was a universal absorber everywhere, 564b proves the zone geometry is correct and identifies edge barrier strength as the specific remaining free parameter.",
+ "comparison_563_vs_563b_vs_564_vs_564b": {
+  "P1": {
+   "563": "PASS",
+   "563b": "FAIL",
+   "564": "FAIL",
+   "564b": "FAIL"
+  },
+  "P2": {
+   "563": "PASS",
+   "563b": "PASS",
+   "564": "PASS",
+   "564b": "PASS"
+  },
+  "P3": {
+   "563": "FAIL",
+   "563b": "FAIL",
+   "564": "FAIL",
+   "564b": "FAIL"
+  },
+  "P4": {
+   "563": "FAIL",
+   "563b": "FAIL",
+   "564": "FAIL",
+   "564b": "FAIL"
+  },
+  "P5": {
+   "563": "FAIL",
+   "563b": "FAIL",
+   "564": "FAIL",
+   "564b": "FAIL"
+  },
+  "P6": {
+   "563": "PASS",
+   "563b": "PASS",
+   "564": "FAIL",
+   "564b": "FAIL"
+  },
+  "P7": {
+   "563": "PASS",
+   "563b": "FAIL",
+   "564": "FAIL",
+   "564b": "FAIL"
+  },
+  "P8": {
+   "563": "PASS",
+   "563b": "PASS",
+   "564": "PASS",
+   "564b": "PASS"
+  },
+  "P9": {
+   "563": "SEC",
+   "563b": "SEC",
+   "564": "SEC",
+   "564b": "SEC"
+  }
+ },
+ "regressions_from_563": [
+  "P1",
+  "P6",
+  "P7"
+ ],
+ "regressions_from_564": [],
+ "improvements_from_564": [],
+ "summary_table": {
+  "P1_viable_envelope": {
+   "pass": false,
+   "key_metric": "full_gt_B2=0/20, full_gt_N1=2/20; mean_viab=0.99985, folios_lt_1=1/20 (need >=8)"
+  },
+  "P2_packet_shape": {
+   "pass": true,
+   "key_metric": "n_significant=7/7 SVs; strongest H=3683.5 (Y)"
+  },
+  "P3_bounded_cycles": {
+   "pass": false,
+   "key_metric": "mean_cycles=1.3, bounded_frac=0.125, n_meeting_both=0/20"
+  },
+  "P4_routing_consequence": {
+   "pass": false,
+   "key_metric": "P4a: 0/4 correct; P4b: viab_delta=0.00015"
+  },
+  "P5_headless_config": {
+   "pass": false,
+   "key_metric": "P5a: C_better=0/20, S_better=0/20; P5b: H=1.8571, p=0.395"
+  },
+  "P6_cts_closure": {
+   "pass": false,
+   "key_metric": "viab_better=0/20, C_sep_positive=0/20; full=B3 identical (CTS has no effect under impenetrable edge barrier)"
+  },
+  "P7_null_destruction": {
+   "pass": false,
+   "key_metric": "null_types_pass=0/4; all null viab~1.0 with std~0 (edge barrier prevents viability loss for all inputs)"
+  },
+  "P8_profile_superiority": {
+   "pass": true,
+   "key_metric": "preferred_best=20/20 (trivially true: all viab~1.0, discrimination on Y_final only)"
+  },
+  "P9_section_template": {
+   "pass": null,
+   "key_metric": "n_significant=2/7 SVs; SECONDARY"
+  }
+ },
+ "composite_metrics": {
+  "mean_viability": 0.99985,
+  "mean_Y_final": 0.5686,
+  "total_hazard_events": 1,
+  "folios_with_perfect_viability": "19/20",
+  "mean_corridor_occupancy": 0.1867,
+  "mean_corridor_signal_ratio": 6.05,
+  "B9_mean_viab_delta": 0.125,
+  "comparison": {
+   "563": {
+    "mean_viability": 0.9616,
+    "mean_Y_final": 0.878,
+    "total_hazard": 34,
+    "perfect_viab": "4/7"
+   },
+   "563b": {
+    "mean_viability": 0.9635,
+    "mean_Y_final": 0.848,
+    "total_hazard": 255,
+    "perfect_viab": "12/20"
+   },
+   "564": {
+    "mean_viability": 1.0,
+    "mean_Y_final": 0.7366,
+    "total_hazard": 0,
+    "perfect_viab": "20/20"
+   },
+   "564b": {
+    "mean_viability": 0.99985,
+    "mean_Y_final": 0.5686,
+    "total_hazard": 1,
+    "perfect_viab": "19/20",
+    "corridor_occupancy": 0.1867,
+    "signal_ratio": 6.05
+   }
+  }
+ },
+ "diagnostic_status": {
+  "D1_signal_ratio": {
+   "status": "OK",
+   "value": 6.05,
+   "quasi_gate": "PASS",
+   "per_sv": {
+    "T": 13.12,
+    "RC": 1.5,
+    "S": 15.78,
+    "C": 5.56,
+    "TR": 2.59,
+    "X": 0.93,
+    "Y": 2.89
+   }
+  },
+  "D2_corridor_occupancy": {
+   "status": "OK",
+   "value": 0.1867,
+   "quasi_gate": "PASS",
+   "per_sv": {
+    "T": 0.1013,
+    "RC": 0.0181,
+    "S": 0.5512,
+    "C": 0.3653,
+    "TR": 0.0391,
+    "X": 0.0452,
+    "Y": 0.2997
+   }
+  },
+  "D3_B9_comparison": {
+   "status": "INFORMATIVE",
+   "mean_delta": 0.125,
+   "n_full_gt_B9": 10,
+   "largest_drops": [
+    {
+     "folio": "f86v5",
+     "full_viab": 1.0,
+     "B9_viab": 0.44094,
+     "viab_delta": 0.559
+    },
+    {
+     "folio": "f39v",
+     "full_viab": 1.0,
+     "B9_viab": 0.44366,
+     "viab_delta": 0.556
+    },
+    {
+     "folio": "f55r",
+     "full_viab": 1.0,
+     "B9_viab": 0.47581,
+     "viab_delta": 0.524
+    },
+    {
+     "folio": "f86v6",
+     "full_viab": 1.0,
+     "B9_viab": 0.5762,
+     "viab_delta": 0.424
+    },
+    {
+     "folio": "f85r1",
+     "full_viab": 0.997,
+     "B9_viab": 0.8018,
+     "viab_delta": 0.195
+    }
+   ]
+  }
+ },
+ "lessons_learned": [
+  "The piecewise zone architecture IS correct (D1 OK, D2 OK, B9 proves zones matter). 564b establishes that the 563-564 bracket can be resolved with spatially selective restoration. The corridor functions exactly as designed: signal dominates restoring (ratio 6.05), and state regularly enters the corridor (18.7% occupancy).",
+  "The edge barrier is now the discriminability bottleneck. BETA values (especially BETA_X=80.0, up from spec's 16.0) create an impenetrable boundary that prevents viability loss for all models including nulls. T1's V5 self-test drove these values up to ensure P99 input resilience, but this made the edge too strong for real-world supervisory signals.",
+  "B9 (uniform restoring) produced the strongest ablation signal in the entire apparatus line: mean viability delta +0.125, with individual folios dropping to 0.44-0.48. This is the first ablation to produce large, consistent viability differences. It proves that the zone geometry (not just overall strength) matters for viability outcomes.",
+  "P2 packet shape (7/7 significant) remains the most robust coupling signal across all four phases (563, 563b, 564, 564b). It survived over-stabilization, under-stabilization, parametric recalibration, and zone restructuring. Line-level SPEC/WORK/CLOSE differentiation is architecture-independent.",
+  "The basin calibration (gamma_basin values 2-8x higher than spec for some SVs) contributes to over-stiffness near equilibrium but is partially offset by the corridor signal ratio. The basin is too stiff and the edge is impenetrable, but the corridor in between works correctly.",
+  "Unlike Phase 564 where the cubic restoring force was a universal absorber everywhere, 564b's failure is localized: the edge barrier specifically. The basin and corridor zones show appropriate dynamics. This makes 564b a progressive negative result: it narrows the parametric space to a single identified parameter."
+ ],
+ "constraints_note": "SELECTIVE_RESTORATION_FAILED: no new constraints. This phase is a documented negative result that narrows the parametric space: zone geometry confirmed correct, edge barrier strength identified as the remaining free parameter.",
+ "implications_for_next_phase": [
+  "Reduce BETA values by 50-70% (especially X: 80.0 -> 25-30). The edge should resist P95 inputs but NOT make viability universal. Allow occasional P99 breaches.",
+  "Reduce basin gamma values (S: 0.25 -> 0.10, X: 0.18 -> 0.08, Y: 0.25 -> 0.05). The basin should be genuinely soft -- state should drift within the basin with minimal restoring force.",
+  "Target viability regime: full model ~0.92-0.97, baselines ~0.88-0.94, nulls ~0.80-0.90. This gives room for P1 (viability envelope), P7 (null destruction), and P6 (CTS closure) to discriminate.",
+  "V5 self-test should be relaxed: edge barrier should prevent hazard violation under P95 input, not P99. Allow occasional P99 breaches to create viability variation.",
+  "Cross-coupling may need attention if routing (P4) remains undetectable after edge recalibration. With softer edges, routing effects that currently cannot reach boundaries may become visible."
+ ]
+}
