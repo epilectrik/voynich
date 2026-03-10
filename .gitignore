@@ -56,6 +56,11 @@ vee/
 data/scans/
 temp_images/
 
+# Large generated result files (regenerate from scripts)
+*.npz
+phases/OPERATOR_CONTROL_ALIGNMENT/results/t1_operator_events.json
+phases/VOYNICH_CONTROL_ARCHITECTURE_PHYSICAL_ALIGNMENT/results/t1_physical_process.json
+
 # Misc screenshots
 *.PNG
 
