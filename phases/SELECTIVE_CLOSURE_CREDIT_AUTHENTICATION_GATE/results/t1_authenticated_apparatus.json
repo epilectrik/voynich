@@ -1,0 +1,60 @@
+{
+ "metadata": {
+  "phase": "575",
+  "script": "t1_authenticated_apparatus.py",
+  "timestamp": "2026-03-11T02:52:31.538317+00:00",
+  "elapsed_seconds": 0.31,
+  "test_folio": "f33r",
+  "test_profile": "A2_SEALED_RECIRCULATION"
+ },
+ "verification": {
+  "identity_check": {
+   "folio": "f33r",
+   "baseline_y": 0.552639,
+   "auth_y": 0.552639,
+   "diff": 0.0,
+   "pass": true
+  },
+  "zero_auth_check": {
+   "folio": "f33r",
+   "baseline_y": 0.552639,
+   "zero_auth_y": 0.552921,
+   "y_reduction": -0.000282,
+   "pass": false
+  },
+  "layer1_only": {
+   "folio": "f33r",
+   "y": 0.552639,
+   "reduction": 0.0
+  },
+  "both_layers": {
+   "folio": "f33r",
+   "y": 0.552639,
+   "reduction": 0.0,
+   "layer1_reduction": 0.0,
+   "synergy": false
+  },
+  "high_penalty": {
+   "folio": "f33r",
+   "y": 0.552639,
+   "reduction": 0.0,
+   "monotone": true
+  }
+ },
+ "apparatus_config": {
+  "acs_threshold_tested": [
+   0.0,
+   999.0,
+   0.35,
+   0.35,
+   0.35
+  ],
+  "cleanliness_penalty_tested": [
+   0.0,
+   10.0,
+   0.0,
+   10.0,
+   15.0
+  ]
+ }
+}

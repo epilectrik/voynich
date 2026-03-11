@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1446 validated constraints | **Version:** 5.46 | **Date:** 2026-03-10
+**Total:** 1650 validated constraints | **Version:** 5.48 | **Date:** 2026-03-10
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5792,6 +5792,22 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Counterfeit threshold (C1644): A2 requires CTS=0.18 for grammar advantage to emerge, vs CTS=0.04 for A1. The +0.138 CTS shift means A2 folios need substantially more closure specificity before grammar outcompetes the forgiving null. Transition is gradual, not sharp.
 - Morphology selectivity (C1645): Counterfeiting is selective, not universal. Armed+headless+high-CTS closure packets resist counterfeiting even in A2; low-signal packets (e.g., bare e-HEAD, low-opacity) are counterfeitable. The protective hierarchy (headless > high_cts > armed) maps onto the known grammar architecture.
 - Three-pole landscape (C1646): The continuous response manifold has three descriptive poles (amplifier/threshold-dependent/forgiving). A2 dominates the forgiving pole (8/9 folios). The classification partially cross-cuts profile assignment (25% cross-cut), confirming the gradient nature reported in C1640.
+
+### Phase 575: Selective Closure Credit + Authentication Gate
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1647 | ACS configuration: CONFIGURATION_ACS_VALIDATED. Signature offset table covers 86.6% of events, CTS-ACS Spearman rho=0.8045 (correlated but non-redundant), RESISTANT mean ACS=0.6311 vs COUNTERFEITABLE=0.2241, ACS discrimination gap (0.2704) > CTS gap (0.1012). Empirical thresholds differ between profiles (A1=0.116, A2=0.324, A3=0.154) | 2 | B, apparatus, ACS, configuration, morphology, C1645 | Coverage=86.6%. Rho=0.8045. ACS_gap=0.2704. CTS_gap=0.1012. |
+| 1648 | Two-layer gate: TWO_LAYER_GATE_SYNERGISTIC. Layer 1 (Y-credit gating) delta=0.003021, Layer 2 (cleanliness gain modulation) incremental=0.000538, combined=0.003560. Both layers contribute with synergy. A2 CCS1 reduction=1.6%. Non-A2 degradation within tolerance (A1=1.4%, A3=3.4%) | 2 | B, apparatus, gate, two_layer, Y_credit, cleanliness, C1643 | L1_delta=0.003. L2_incr=0.0005. Both=0.0036. Synergy=True. |
+| 1649 | Event-band stratification: STRATIFIED_SELECTIVITY_REJECTED. SSI=0.0 across all 5 gate configurations. No false intelligence reduction achieved. Gate is too permissive: counterfeitable signature auth_mult ranges 0.83-1.00 (all >0.5, none correctly starved). CTS weight (alpha=0.60) in ACS formula dominates, drowning out morphological configuration signal | 2 | B, apparatus, stratification, event_band, SSI, NEGATIVE, C1645, C1647 | SSI=0.0. TP=0, FN=5, TN=5. Auth_mult range [0.83,1.0]. |
+| 1650 | Landscape shift: LANDSCAPE_POLE_AGGRAVATED. A2 FORGIVING unchanged (8→8). Total FORGIVING increased by 1 (9→10, one new A1/A3 folio). Gate produces uniform advantage reduction, not surgical selectivity. Descriptive landscape classification is too sensitive to small advantage changes in borderline folios | 2 | B, apparatus, landscape, pole_reduction, NEGATIVE, C1646, C1647 | FR: 8→8 (A2). FR_total: 9→10. New_A1A3=1. |
+
+**Phase 575 findings (Selective Closure Credit + Authentication Gate, MIXED — ACS validated, gate synergistic, but selectivity rejected and landscape aggravated):**
+- ACS configuration (C1647): The authentication closure score successfully discriminates RESISTANT from COUNTERFEITABLE signatures (mean ACS gap=0.407). The 10-signature offset table covers 86.6% of events. CTS-ACS Spearman rho=0.8045 confirms ACS adds signal beyond CTS alone.
+- Two-layer gate (C1648): Both layers contribute with synergy. Layer 1 (Y-credit gating) provides ~85% of the effect, Layer 2 (cleanliness gain modulation) adds ~15%. The combined M1 DYE reduction for A2 is 0.0036 — detectable but very small.
+- Selectivity REJECTED (C1649): The gate fails the surgical selectivity test. SSI=0 because no counterfeitable signatures are correctly starved (auth_mult 0.83-1.0, all above the 0.5 classification threshold). Root cause: CTS dominates the ACS formula (alpha=0.60), so even low-config_score events have ACS above the empirical A2 threshold (0.3242) if their CTS is moderate. The configuration signal is present but drowned.
+- Landscape aggravated (C1650): The gate produces uniform advantage reduction (not selective), causing 9 STABLE_AMPLIFIER folios to shift to THRESHOLD_DEPENDENT, and one A3 folio to shift to FORGIVING_RECIRCULATOR. The gate uniformly suppresses rather than surgically discriminating.
+- **Implication for next iteration:** Reduce alpha (CTS weight) substantially or use a non-linear ACS formula where config_score can dominate at low values. The current 60/40 CTS/config split is too CTS-dominant to achieve surgical selectivity.
 
 ---
 

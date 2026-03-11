@@ -1,0 +1,119 @@
+{
+ "metadata": {
+  "phase": "575",
+  "script": "t5_synthesis.py",
+  "timestamp": "2026-03-11T02:57:27.431146+00:00",
+  "elapsed_seconds": 0.01
+ },
+ "verdicts": {
+  "acs_configuration": {
+   "verdict": "CONFIGURATION_ACS_VALIDATED",
+   "explanation": "Signature coverage=86.6% (>60%: True). CTS-ACS rho=0.8045 (in [0.3,0.85]: True). RESISTANT mean ACS=0.6311 > COUNTERFEITABLE=0.2241: True. Thresholds differ: A1=0.1155, A2=0.3242, A3=0.1543 (True). ACS gap=0.2704 vs CTS gap=0.1012, ACS better=True."
+  },
+  "two_layer_gate": {
+   "verdict": "TWO_LAYER_GATE_SYNERGISTIC",
+   "explanation": "Layer1 delta=0.003021, Layer2 incremental=0.000538, Both=0.003560. Synergy=True. L1 contributes=True, L2 contributes=True. A2 CCS1 reduction=1.6%. A1 change=1.4%, A3 change=3.4% (non-A2 degraded >5%: False)."
+  },
+  "event_band_stratification": {
+   "verdict": "STRATIFIED_SELECTIVITY_REJECTED",
+   "explanation": "Best config: CONSERVATIVE. SSI=0.0000. FI reduction=0.000000, Strong-band loss=0.005717. "
+  },
+  "landscape_shift": {
+   "verdict": "LANDSCAPE_POLE_AGGRAVATED",
+   "explanation": "A2 FORGIVING: ungated=8, gated=8, reduction=0.0%. Total FORGIVING: ungated=9, gated=10. New A1/A3 FORGIVING: 1."
+  }
+ },
+ "constraints": {
+  "C1647": {
+   "id": "C1647",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "ACS",
+    "configuration",
+    "morphology"
+   ],
+   "claim": "ACS configuration verdict: CONFIGURATION_ACS_VALIDATED. Signature coverage=86.6% (>60%: True). CTS-ACS rho=0.8045 (in [0.3,0.85]: True). RESISTANT mean ACS=0.6311 > COUNTERFEITABLE=0.2241: True. Thresholds differ: A1=0.1155, A2=0.3242, A3=0.1543 (True). ACS gap=0.2704 vs CTS gap=0.1012, ACS better=True.",
+   "verdict": "CONFIGURATION_ACS_VALIDATED",
+   "evidence": {
+    "source": "Phase 575 T0 ACS assembly + T3 per-signature analysis",
+    "signature_coverage_pct": 86.6,
+    "cts_acs_rho": 0.8045,
+    "resistant_mean_acs": 0.6311,
+    "counterfeitable_mean_acs": 0.2241,
+    "acs_gap": 0.2704,
+    "cts_gap": 0.1012
+   },
+   "phase": 575
+  },
+  "C1648": {
+   "id": "C1648",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "gate",
+    "two_layer",
+    "Y_credit",
+    "cleanliness"
+   ],
+   "claim": "Two-layer gate verdict: TWO_LAYER_GATE_SYNERGISTIC. Layer1 delta=0.003021, Layer2 incremental=0.000538, Both=0.003560. Synergy=True. L1 contributes=True, L2 contributes=True. A2 CCS1 reduction=1.6%. A1 change=1.4%, A3 change=3.4% (non-A2 degraded >5%: False).",
+   "verdict": "TWO_LAYER_GATE_SYNERGISTIC",
+   "evidence": {
+    "source": "Phase 575 T1 verification + T3 layer decomposition",
+    "layer1_delta": 0.003021,
+    "layer2_delta": 0.000538,
+    "both_delta": 0.00356,
+    "synergy": true,
+    "a2_ccs1_reduction_pct": 1.6
+   },
+   "phase": 575
+  },
+  "C1649": {
+   "id": "C1649",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "stratification",
+    "event_band",
+    "SSI"
+   ],
+   "claim": "Event-band stratification verdict: STRATIFIED_SELECTIVITY_REJECTED. Best config: CONSERVATIVE. SSI=0.0000. FI reduction=0.000000, Strong-band loss=0.005717. ",
+   "verdict": "STRATIFIED_SELECTIVITY_REJECTED",
+   "evidence": {
+    "source": "Phase 575 T3 surgical selectivity analysis",
+    "best_config": "CONSERVATIVE",
+    "SSI": 0.0,
+    "fi_reduction": 0,
+    "strong_loss": 0.005717
+   },
+   "phase": 575
+  },
+  "C1650": {
+   "id": "C1650",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "landscape",
+    "pole_reduction",
+    "folio_classification"
+   ],
+   "claim": "Landscape shift verdict: LANDSCAPE_POLE_AGGRAVATED. A2 FORGIVING: ungated=8, gated=8, reduction=0.0%. Total FORGIVING: ungated=9, gated=10. New A1/A3 FORGIVING: 1.",
+   "verdict": "LANDSCAPE_POLE_AGGRAVATED",
+   "evidence": {
+    "source": "Phase 575 T4 landscape remapping",
+    "n_forgiving_ungated": 8,
+    "n_forgiving_gated": 8,
+    "pole_reduction_pct": 0.0,
+    "new_a1a3_forgiving": 1,
+    "best_config_used": "CONSERVATIVE"
+   },
+   "phase": 575
+  }
+ },
+ "all_validated": false,
+ "best_config": "CONSERVATIVE"
+}

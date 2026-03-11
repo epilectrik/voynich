@@ -4,6 +4,38 @@
 
 ---
 
+## Version 5.48 (2026-03-10) - Phase 575: Selective Closure Credit + Authentication Gate
+
+### Summary
+
+Phase 575 internalizes Phase 574's counterfeit-closure threshold as an online apparatus gate. A two-layer AuthenticatedRecoveryApparatus gates Y-credit (Layer 1) and modulates cleanliness gain (Layer 2) based on an Authentication Closure Score (ACS). The ACS configuration is validated (C1647) and both layers contribute synergistically (C1648). However, the gate fails the surgical selectivity test (C1649: SSI=0, no counterfeitable signatures correctly starved) because CTS dominates the ACS formula, drowning out the morphological configuration signal. The landscape is mildly aggravated (C1650).
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/SELECTIVE_CLOSURE_CREDIT_AUTHENTICATION_GATE/` -- Phase 575 directory with 5 scripts (T0-T5), 5 result files, REPORT_575.md |
+| **ADDED** | C1647: ACS configuration validated — 86.6% signature coverage, rho=0.8045, ACS gap 2.7x CTS gap |
+| **ADDED** | C1648: Two-layer gate synergistic — L1 delta=0.003, L2 incremental=0.0005, combined=0.0036 |
+| **ADDED** | C1649: Stratified selectivity REJECTED — SSI=0, auth_mult 0.83-1.0 for all counterfeitable sigs |
+| **ADDED** | C1650: Landscape pole aggravated — FORGIVING unchanged A2, +1 total (new A3 FORGIVING) |
+| **UPDATED** | INDEX.md -- +4 constraints (1650 total), Phase 575 section added |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (1650 constraints, Phase 575) |
+
+### Key Findings
+
+- **ACS validation (C1647):** The authentication closure score (ACS = 0.60*CTS + 0.40*config_score) successfully discriminates RESISTANT (mean ACS=0.631) from COUNTERFEITABLE (mean ACS=0.224) signatures. The configuration-based scoring adds signal beyond CTS alone (ACS gap=0.270 vs CTS gap=0.101).
+- **Gate architecture (C1648):** Layer 1 (Y-credit gating by auth_mult) contributes ~85% of the gate's M1 DYE reduction. Layer 2 (cleanliness gain modulation) adds ~15%. Combined M1 delta=0.0036 for A2 folios, confirming both layers work.
+- **Selectivity failure (C1649):** No counterfeitable signature achieves auth_mult < 0.5 under any configuration. Root cause: alpha=0.60 weight on CTS in the ACS formula means even low-config_score events have ACS above the A2 threshold (0.324) if their CTS > ~0.4. The configuration signal exists but is overwhelmed.
+- **Landscape aggravation (C1650):** The gate uniformly reduces DYE advantage rather than selectively discriminating. 9 STABLE_AMPLIFIER folios shift to THRESHOLD_DEPENDENT; 1 new FORGIVING_RECIRCULATOR appears in A3.
+- **Next iteration guidance:** Reduce alpha substantially (e.g., 0.30-0.40), or use non-linear ACS where config_score dominates at low values, or apply gate only to A2 events below the CTS threshold identified in C1644 (CTS < 0.18).
+
+### Status
+
+Authentication gate tested, ACS validated, selectivity NEGATIVE. 1,650 validated constraints across 575 phases.
+
+---
+
 ## Version 5.47 (2026-03-10) - Phase 574: Counterfeit Closure Threshold + Recovery Gate Map
 
 ### Summary
