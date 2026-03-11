@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1658 validated constraints | **Version:** 5.50 | **Date:** 2026-03-11
+**Total:** 1662 validated constraints | **Version:** 5.51 | **Date:** 2026-03-11
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5836,6 +5836,24 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 | 1656 | Strong-band rescue: RESCUE_REJECTED. Best config=NO_STRENGTH (=P576 AMB_PESSIMISTIC). Strong preserved=69.1% (<80% target). Weak guardrail=SAFE (null wins not increased). A2 delta=0.0635 (matches P576). STRENGTH_RESCUE achieves 76.8% strong but A2 delta drops to 0.0475. The strength dimension does not improve performance | 2 | B, apparatus, rescue, strength, decisive, NEGATIVE, C1653, C1652 | Best=NO_STRENGTH. Strong=69.1%. A2_delta=0.0635. SSI=86.5. |
 | 1657 | Configuration robustness: SPECIFIC. 0/3 strength configs beat NO_STRENGTH. 3/3 beat CREDIT_ONLY_4D. Architecture not robust for the strength dimension — result is config-specific (only NO_STRENGTH works). Per-config SSI: NO_STRENGTH=86.5, RESCUE=92.4, CAUTIOUS=77.8, AMB_ONLY=86.8, CREDIT_ONLY_4D=93.5 | 2 | B, apparatus, robustness, configuration, closure | Beat_NS=0/3. Beat_CO=3/3. Robust=False. |
 | 1658 | Landscape migration: MIGRATION_ABSENT. A2 FORGIVING pole unchanged (8→8). 0 migrating folios. No new A1/A3 FORGIVING. Pole reduction 0.0%. No regression. Landscape identical to Phase 576 | 2 | B, apparatus, landscape, migration, closure | FR: 8→8. Migrating=0. Red=0.0%. Regressed=False. |
+
+### Phase 578: Event-Local Closure Adjudicator (C1659-C1662)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1659 | Event-local feature coverage: COVERAGE_VALIDATED. 463 events classified into 4 tiers (AUTHENTIC_RESOLVER=128, PARTIAL_RESOLVER=174, NONRESOLVING_COUNTERFEIT=161, INERT_PSEUDO=0). 2323 total lines. burden_frac_resolved range [-3.46, 1.00]. Y_gain NOT used in classification (outcome leakage avoidance) | 2 | B, apparatus, event_local, coverage, closure | Events=463. Lines=2323. Classes=3/4. |
+| 1660 | Event legitimacy gating: EVENT_GATING_REJECTED. Best config=LINE_CLASS_CONTROL (Phase 576 AMB_PESSIMISTIC). EVENT_CLASS_FULL A2 delta=-0.0185 (vs LCC +0.0635). All event configs produce negative A2 delta. Null wins: ECF 7→8 vs LCC 7→2. Event-class gating strictly worse than morphological gating | 2 | B, apparatus, event_gating, decisive, NEGATIVE, C1652, C1656 | Best=LCC. ECF_delta=-0.0185. LCC_delta=+0.0635. |
+| 1661 | Burden resolution discriminator: DISCRIMINATOR_WEAK. AUTHENTIC mean DYE_adv=0.119 > COUNTERFEIT=0.098 (direction OK). Cohen's d=0.267 (<0.3 threshold). COUNTERFEIT has 90.1% positive DYE rate — burden non-resolution does NOT mean lack of M1 advantage. Resolution coherence: AUTH 68.8% vs CF 7.5% (stark but doesn't predict DYE) | 2 | B, apparatus, burden_resolution, discriminator, closure | AUTH_adv=0.119. CF_adv=0.098. d=0.267. CF_pos=90.1%. |
+| 1662 | Landscape migration: MIGRATION_ABSENT. A2 FORGIVING pole unchanged (8→8). 0 migrating folios. No regression. Landscape identical to Phase 576/577 | 2 | B, apparatus, landscape, migration, closure | FR: 8→8. Migrating=0. Red=0.0%. |
+
+**Phase 578 findings (Event-Local Closure Adjudicator, REJECTED — event-class gating worse than morphological gating):**
+- Decisive test fails (C1660): EVENT_CLASS_FULL A2 delta=-0.0185 vs LINE_CLASS_CONTROL +0.0635. All event-class configs produce negative A2 delta advantage, increasing null wins. Morphological classification (Phase 576) strictly outperforms event-level execution classification.
+- Root cause — COUNTERFEIT events have genuine positive DYE: NONRESOLVING_COUNTERFEIT mean DYE_adv=0.098, 90.1% positive rate. Suppressing burden-non-resolving events reduces M1 DYE because these events still have genuine M1 advantage from other mechanisms (CTS-mediated Y transfer).
+- Root cause — M4f null inflation: Event classes only cover CLOSE lines (463/2323=20%). Under M4f, non-CLOSE positions get full admission (NON_CLOSE→(1.0,1.0)), inflating null DYE. Phase 576 morphological classes cover 100% of lines, suppressing null events at counterfeitable positions.
+- Burden resolution is real but not sufficient: Resolution coherence is dramatically different (AUTH 68.8% vs CF 7.5%), confirming burden resolution is a genuine structural feature. But it doesn't discriminate DYE well enough (d=0.267) because COUNTERFEIT events achieve Y gain through non-burden pathways.
+- Strong-band preservation improves: EVENT_CLASS_FULL preserves 64.8% of strong DYE (vs LCC 58.7%), but at the cost of negative delta advantage.
+
+---
 
 **Phase 577 findings (Authenticity-Strength Regime Gate, REJECTED -- strength dimension does not improve performance):**
 - Decisive test fails (C1656): Adding authenticity strength as a 4th gate input does NOT rescue strong-band DYE. The best configuration is NO_STRENGTH, identical to Phase 576 AMB_PESSIMISTIC. All rescue configs underperform the control.

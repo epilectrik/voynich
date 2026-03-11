@@ -1,0 +1,59 @@
+{
+ "metadata": {
+  "phase": "578",
+  "script": "t1_event_local_apparatus.py",
+  "timestamp": "2026-03-11T14:05:01.839565+00:00",
+  "elapsed_seconds": 0.34,
+  "test_folio": "f33r",
+  "test_profile": "A2_SEALED_RECIRCULATION"
+ },
+ "verification": {
+  "identity_check": {
+   "pass": true,
+   "baseline_y": 0.552639,
+   "identity_y": 0.552639,
+   "rel_diff": 0.0
+  },
+  "full_rejection_check": {
+   "pass": true,
+   "baseline_y": 0.552639,
+   "reject_y": 0.555786
+  },
+  "no_strength_check": {
+   "pass": true,
+   "lcc_y": 0.552639,
+   "p576_amb_stored_dye": 0.177983
+  },
+  "strength_effect_check": {
+   "pass": false,
+   "ecf_y": 0.552639,
+   "lcc_y": 0.552639,
+   "diff": 0.0
+  },
+  "credit_only_check": {
+   "pass": true,
+   "co_y": 0.552639
+  },
+  "burden_conditioning": {
+   "pass": true,
+   "partial_high": [
+    0.85,
+    0.75
+   ],
+   "partial_low": [
+    0.7,
+    0.6
+   ],
+   "n_high_burden": 11,
+   "n_low_burden": 0
+  }
+ },
+ "gate_configs": [
+  "LINE_CLASS_CONTROL",
+  "EVENT_CLASS_FULL",
+  "EVENT_CLASS_BINARY",
+  "BURDEN_RESOLVED_ONLY",
+  "CREDIT_ONLY_EVENT"
+ ],
+ "burden_threshold": 0.05
+}

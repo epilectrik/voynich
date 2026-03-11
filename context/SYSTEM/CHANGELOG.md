@@ -4,6 +4,40 @@
 
 ---
 
+## Version 5.51 (2026-03-11) - Phase 578: Event-Local Closure Adjudicator
+
+### Summary
+
+Phase 578 replaces Phase 576's line-level morphological classifier with an event-level execution+anatomy classifier. Phase 577 falsified line-level strength (21.6% surrogate agreement). Expert diagnosis: closure legitimacy is event-local, not line-local. The key discriminator is burden resolution — whether the CLOSE event actually reduced max(|C-0.5|, |X-0.5|) — combined with event-level packet strength signals. 4 event classes: AUTHENTIC_RESOLVER (128, 27.6%), PARTIAL_RESOLVER (174, 37.6%), NONRESOLVING_COUNTERFEIT (161, 34.8%), INERT_PSEUDO (0). Decisive test (C1660) REJECTED: all event-class configs perform worse than LINE_CLASS_CONTROL (Phase 576 AMB_PESSIMISTIC). Event-class gate suppresses COUNTERFEIT events that have positive DYE advantage (90.1% positive), and gives null events full admission at non-CLOSE positions under M4f.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/EVENT_LOCAL_CLOSURE_ADJUDICATOR/` -- Phase 578 directory with 6 scripts (T0-T5), 6 result files, REPORT_578.md |
+| **ADDED** | C1659: Event-local feature coverage COVERAGE_VALIDATED — 463 events, 2323 lines, 3/4 classes populated, burden range [-3.46, 1.00] |
+| **ADDED** | C1660: Event legitimacy gating EVENT_GATING_REJECTED — LINE_CLASS_CONTROL wins (A2 delta=0.0635), all event configs negative A2 delta, null wins increase |
+| **ADDED** | C1661: Burden resolution discriminator DISCRIMINATOR_WEAK — direction OK (AUTH DYE_adv=0.119 > CF=0.098) but Cohen's d=0.267 < 0.3 threshold |
+| **ADDED** | C1662: Landscape migration MIGRATION_ABSENT — A2 FORGIVING 8→8, 0 migrating folios, no regression |
+| **UPDATED** | INDEX.md -- +4 constraints (1662 total), Phase 578 section added |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (1662 constraints, Phase 578) |
+
+### Key Findings
+
+- **Decisive test fails (C1660):** EVENT_CLASS_FULL A2 delta=-0.0185 (vs LINE_CLASS_CONTROL +0.0635). All event-class configs produce negative A2 delta, increasing null wins from 7→8 (vs 7→2 for LINE_CLASS_CONTROL). Event-class gating is strictly worse than morphological gating.
+- **Root cause 1 — COUNTERFEIT has positive DYE:** NONRESOLVING_COUNTERFEIT events have mean DYE_adv=0.098 with 90.1% positive rate. Suppressing these events REDUCES M1 DYE. Burden non-resolution does NOT mean the event lacks genuine M1 advantage.
+- **Root cause 2 — M4f null inflation:** Event classes only cover CLOSE lines (463/2323 = 20%). Under M4f, non-CLOSE positions get NON_CLOSE → (1.0, 1.0) full admission. This inflates null DYE. Phase 576 morphological classes cover ALL lines (100%), suppressing null events at counterfeitable positions.
+- **Burden resolution direction confirmed (C1661):** AUTHENTIC mean DYE_adv (0.119) > COUNTERFEIT (0.098), but effect size weak (d=0.267). Resolution coherence is dramatically different: AUTHENTIC 68.8% coherent vs COUNTERFEIT 7.5% — but this doesn't translate to DYE suppression.
+- **Event classification well-formed (C1659):** 463 events correctly classified, 3/4 classes populated (INERT_PSEUDO=0 expected), burden distribution well-profiled.
+- **Landscape unchanged (C1662):** A2 FORGIVING 8→8. No improvement over Phase 576.
+- **Strong-band preservation slightly better:** EVENT_CLASS_FULL preserves 64.8% of strong DYE (vs LINE_CLASS_CONTROL 58.7%), but this comes at the cost of negative delta advantage.
+
+### Status
+
+Phase 578 event-local gating REJECTED. Burden resolution is a real feature (coherence signature is stark) but it doesn't predict DYE advantage well enough to gate on. COUNTERFEIT events have genuine positive DYE, and the event-class framework gives null events full admission at non-CLOSE positions. 1,662 validated constraints across 578 phases.
+
+---
+
 ## Version 5.50 (2026-03-11) - Phase 577: Authenticity-Strength Regime Gate
 
 ### Summary

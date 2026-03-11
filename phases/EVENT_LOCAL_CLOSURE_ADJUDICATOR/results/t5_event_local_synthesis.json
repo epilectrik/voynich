@@ -1,0 +1,141 @@
+{
+ "metadata": {
+  "phase": "578",
+  "script": "t5_event_local_synthesis.py",
+  "timestamp": "2026-03-11T14:08:09.230986+00:00",
+  "elapsed_seconds": 0.01
+ },
+ "verdicts": {
+  "event_local_coverage": {
+   "verdict": "COVERAGE_VALIDATED",
+   "explanation": "Events=463 (==463: True). Total lines=2323 (==2323: True). Classes populated=3/4 (>=3: True). Burden range=[-3.4565, 0.9960]."
+  },
+  "event_legitimacy_gating": {
+   "verdict": "EVENT_GATING_REJECTED",
+   "explanation": "Best config=LINE_CLASS_CONTROL. A2 delta=0.0635 vs LCC=0.0635: beats=True. Strong preserved=58.7% (>=80%: False). Null wins: LCC=2, best=2."
+  },
+  "burden_resolution_discriminator": {
+   "verdict": "DISCRIMINATOR_WEAK",
+   "explanation": "AUTHENTIC mean DYE_adv=0.119078, COUNTERFEIT=0.098315. Direction (AUTH>CF): True. Cohen's d=0.2669 (>=0.3: False). n_auth=128, n_cf=161."
+  },
+  "landscape_migration": {
+   "verdict": "MIGRATION_ABSENT",
+   "explanation": "Migrating folios=0 (>=1: False). A2 FORGIVING: 8->8. Pole reduction=0.0%. Regressed: False."
+  }
+ },
+ "constraints": {
+  "C1659": {
+   "id": "C1659",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "event_local",
+    "coverage",
+    "closure"
+   ],
+   "claim": "Event-local feature coverage verdict: COVERAGE_VALIDATED. Events=463 (==463: True). Total lines=2323 (==2323: True). Classes populated=3/4 (>=3: True). Burden range=[-3.4565, 0.9960].",
+   "verdict": "COVERAGE_VALIDATED",
+   "evidence": {
+    "source": "Phase 578 T0 event-local classification",
+    "n_events": 463,
+    "n_total_lines": 2323,
+    "n_classes_populated": 3,
+    "class_distribution": {
+     "NONRESOLVING_COUNTERFEIT": 161,
+     "PARTIAL_RESOLVER": 174,
+     "AUTHENTIC_RESOLVER": 128
+    }
+   },
+   "phase": 578
+  },
+  "C1660": {
+   "id": "C1660",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "event_gating",
+    "decisive",
+    "closure"
+   ],
+   "claim": "Event legitimacy gating verdict: EVENT_GATING_REJECTED. Best config=LINE_CLASS_CONTROL. A2 delta=0.0635 vs LCC=0.0635: beats=True. Strong preserved=58.7% (>=80%: False). Null wins: LCC=2, best=2.",
+   "verdict": "EVENT_GATING_REJECTED",
+   "evidence": {
+    "source": "Phase 578 T3 event-local anatomy",
+    "best_config": "LINE_CLASS_CONTROL",
+    "best_a2_delta": 0.063503,
+    "lcc_a2_delta": 0.063503,
+    "best_strong_preserved_pct": 58.7,
+    "best_SSI": 63.504
+   },
+   "phase": 578
+  },
+  "C1661": {
+   "id": "C1661",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "burden_resolution",
+    "discriminator",
+    "closure"
+   ],
+   "claim": "Burden resolution discriminator verdict: DISCRIMINATOR_WEAK. AUTHENTIC mean DYE_adv=0.119078, COUNTERFEIT=0.098315. Direction (AUTH>CF): True. Cohen's d=0.2669 (>=0.3: False). n_auth=128, n_cf=161.",
+   "verdict": "DISCRIMINATOR_WEAK",
+   "evidence": {
+    "source": "Phase 578 T3 burden-DYE analysis",
+    "auth_mean_dye_adv": 0.119078,
+    "cf_mean_dye_adv": 0.098315,
+    "cohens_d": 0.2669,
+    "direction_ok": true,
+    "effect_size_ok": false
+   },
+   "phase": 578
+  },
+  "C1662": {
+   "id": "C1662",
+   "tier": 2,
+   "scope": "B",
+   "tags": [
+    "apparatus",
+    "landscape",
+    "migration",
+    "closure"
+   ],
+   "claim": "Landscape migration verdict: MIGRATION_ABSENT. Migrating folios=0 (>=1: False). A2 FORGIVING: 8->8. Pole reduction=0.0%. Regressed: False.",
+   "verdict": "MIGRATION_ABSENT",
+   "evidence": {
+    "source": "Phase 578 T4 landscape remap",
+    "n_forgiving_ungated": 8,
+    "n_forgiving_gated": 8,
+    "pole_reduction_pct": 0.0,
+    "n_migrating": 0,
+    "a1a3_new_forgiving": 0
+   },
+   "phase": 578
+  }
+ },
+ "all_validated": false,
+ "best_config": "LINE_CLASS_CONTROL",
+ "best_SSI": 63.504,
+ "best_a2_delta": 0.063503,
+ "best_strong_preserved_pct": 58.7,
+ "config_robustness": {
+  "assessment": "SPECIFIC",
+  "per_config_SSI": {
+   "LINE_CLASS_CONTROL": 63.504,
+   "EVENT_CLASS_FULL": 0.0,
+   "EVENT_CLASS_BINARY": 0.0,
+   "BURDEN_RESOLVED_ONLY": 0.0,
+   "CREDIT_ONLY_EVENT": 0.0
+  },
+  "n_beat_lcc": 0,
+  "n_beat_credit": 1
+ },
+ "p576_comparison": {
+  "p576_a2_delta": 0.063503,
+  "p578_a2_delta": 0.063503,
+  "improvement": 0.0
+ }
+}
