@@ -4,6 +4,41 @@
 
 ---
 
+## Version 5.55 (2026-03-11) - Phase 582: Apparatus Atlas Bridge Design
+
+### Summary
+
+Phase 582 bridges the abstract apparatus response manifold (5.88 dimensions, 76 folios, 1,674 prior constraints) to physical apparatus specifications. Pure synthesis/documentation phase -- no new corpus analysis or simulation. Centers on manifold-to-knob mapping as core deliverable (per expert revision), with intervention packet library, physical metrics schema, counterfeit closure atlas, and staged experiments. Instruction-to-action translation is explicitly secondary/heuristic.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/APPARATUS_ATLAS_BRIDGE_DESIGN/` -- Phase 582 directory with 8 scripts (T0-T7), 8 result files, 5 output documents |
+| **ADDED** | C1675: Component atlas coverage ATLAS_COMPLETE -- 5 knob axes, 11 packet types, 5 metrics |
+| **ADDED** | C1676: Instruction translation coverage TRANSLATION_COMPLETE -- 6 macro-states, 3 zones, 4 REGIMEs, 13 judgments |
+| **ADDED** | C1677: Safety protocol derivability SAFETY_DERIVABLE -- 5 hazard classes, 3 safety levels, judgment boundaries |
+| **ADDED** | C1678: Validation experiment feasibility EXPERIMENTS_FEASIBLE -- 7/7 experiments, 61 minimum runs |
+| **ADDED** | C1679: Metric bridge adequacy METRIC_BRIDGE_COMPLETE -- DVA/YGA/DYE/CTS/forgivingness physical analogs |
+| **ADDED** | C1680: Manifold knob identifiability KNOB_MAPPING_IDENTIFIABLE -- 5/5 F-axes to physical knobs |
+| **ADDED** | APPARATUS_ATLAS.md -- manifold atlas with family analogs and knob maps |
+| **ADDED** | INTERVENTION_PACKET_LIBRARY.md -- 11 physical packet types, counterfeit closure atlas |
+| **ADDED** | PHYSICAL_METRICS_SCHEMA.md -- sensor mappings, formulas, 7 hardware nulls |
+| **ADDED** | OPERATOR_BRIDGE_MANUAL.md -- heuristic interpretations, safety, operator judgment |
+| **ADDED** | VALIDATION_PROTOCOL.md -- staged experiments E0-E6 |
+| **UPDATED** | INDEX.md -- +6 constraints (1680 total), Phase 582 section added |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.55, 1680 constraints, 582 phases) |
+
+### Key Findings
+
+- **Manifold-to-knob mapping (C1680):** All 5 F-axes mapped to physical control surfaces. F1 (forgiveness) -> reflux ratio. F2 (closure exploitability) -> valve timing. F3 (thermal accent) -> bath temperature. F4 (headless infrastructure) -> plumbing complexity. F5 (containment) -> gasket quality. PC1 (30.0%) led by abl_CLOSE_RECOVERY, confirming seal/recirculation as primary apparatus axis.
+- **Metric bridge (C1679):** All 5 virtual process metrics given operational physical definitions. CTS_phys uses weighted composite with seal_completion at highest weight (0.35), consistent with containment-coupled recovery dominating A2. 7 hardware null conditions predesigned to control for timing, thermal, routing, attention, delay, and phase effects.
+- **Component atlas (C1675):** 11 physical packet types span the full closure strength spectrum from sub-threshold counterfeit to full hard closure. Counterfeit closure atlas maps per-family acceptance: A1 low, A2 moderate (strength-dependent), A3 intermediate.
+- **Validation protocol (C1678):** 7 staged experiments (E0-E6) with 61 total minimum runs. E0 rig characterization is prerequisite. 3-level rig specification: MVP ($560) -> recirculatory ($735) -> pelican ($1235).
+- **Expert corrections integrated:** a-HEAD = "active transformation domain" (not "yield"), paragraph = "operational subroutine" (not "complete run"), manifold-to-knob is core bridge (not instruction translation).
+
+---
+
 ## Version 5.54 (2026-03-11) - Phase 581: Line-Internal Atom Gradient Decomposition
 
 ### Summary

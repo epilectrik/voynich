@@ -1,0 +1,90 @@
+{
+  "metadata": {
+    "phase": "582",
+    "script": "t7_synthesis.py",
+    "n_documents_generated": 5,
+    "n_constraints_decided": 6
+  },
+  "constraints": {
+    "C1675": {
+      "verdict": "ATLAS_COMPLETE",
+      "claim": "Component atlas coverage",
+      "n_knob_axes": 5,
+      "n_packet_types": 11,
+      "n_metrics": 5,
+      "n_total_components": 21,
+      "rationale": "21 total atlas components: 5 knob axes, 11 packet types, 5 metrics",
+      "tier": 3
+    },
+    "C1676": {
+      "verdict": "TRANSLATION_COMPLETE",
+      "n_macro_states_mapped": 6,
+      "n_zones_mapped": 3,
+      "n_regimes_mapped": 4,
+      "n_judgment_types": 13,
+      "rationale": "13/13 structural elements mapped as heuristics; 13 non-encodable judgment types identified",
+      "tier": 3
+    },
+    "C1677": {
+      "verdict": "SAFETY_DERIVABLE",
+      "n_hazard_classes_mapped": 5,
+      "n_safety_levels": 3,
+      "has_judgment_boundaries": true,
+      "rationale": "5/5 hazard classes mapped, 3 safety levels translated, judgment boundaries defined",
+      "tier": 3
+    },
+    "C1678": {
+      "verdict": "EXPERIMENTS_FEASIBLE",
+      "n_feasible": 7,
+      "n_total": 7,
+      "feasible_experiments": [
+        "E0_rig_characterization",
+        "E1_family_analog_calibration",
+        "E2_closure_threshold_mapping",
+        "E3_counterfeit_closure_probe",
+        "E4_productive_disruption_assay",
+        "E5_sister_mode_observation",
+        "E6_subroutine_independence"
+      ],
+      "nulls_used": [
+        "N1_matched_time_no_seal",
+        "N2_matched_heat_no_routing",
+        "N4_random_timing_matched_energy",
+        "N5_sham_intervention",
+        "N6_delayed_intervention"
+      ],
+      "rationale": "7/7 experiments have available materials, defined measurements, and clear pass/fail criteria; 61 total minimum runs",
+      "tier": 3
+    },
+    "C1679": {
+      "verdict": "METRIC_BRIDGE_COMPLETE",
+      "n_metrics_defined": 5,
+      "n_metrics_total": 5,
+      "rationale": "5/5 virtual metrics have operational physical definitions with sensors and formulas",
+      "tier": 3
+    },
+    "C1680": {
+      "verdict": "KNOB_MAPPING_IDENTIFIABLE",
+      "n_axes_mapped": 5,
+      "n_axes_total": 5,
+      "rationale": "5/5 F-axes mapped to physical knob candidates with directional predictions",
+      "tier": 3
+    }
+  },
+  "documents": {
+    "APPARATUS_ATLAS": "C:\\git\\voynich\\phases\\APPARATUS_ATLAS_BRIDGE_DESIGN\\APPARATUS_ATLAS.md",
+    "INTERVENTION_PACKET_LIBRARY": "C:\\git\\voynich\\phases\\APPARATUS_ATLAS_BRIDGE_DESIGN\\INTERVENTION_PACKET_LIBRARY.md",
+    "PHYSICAL_METRICS_SCHEMA": "C:\\git\\voynich\\phases\\APPARATUS_ATLAS_BRIDGE_DESIGN\\PHYSICAL_METRICS_SCHEMA.md",
+    "OPERATOR_BRIDGE_MANUAL": "C:\\git\\voynich\\phases\\APPARATUS_ATLAS_BRIDGE_DESIGN\\OPERATOR_BRIDGE_MANUAL.md",
+    "VALIDATION_PROTOCOL": "C:\\git\\voynich\\phases\\APPARATUS_ATLAS_BRIDGE_DESIGN\\VALIDATION_PROTOCOL.md"
+  },
+  "summary": {
+    "knob_axes_mapped": "5/5",
+    "packet_types_defined": 11,
+    "metrics_bridged": "5/5",
+    "experiments_feasible": "7/7",
+    "hazard_classes_mapped": 5,
+    "safety_levels": 3,
+    "total_folios": 76
+  }
+}

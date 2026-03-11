@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1674 validated constraints | **Version:** 5.54 | **Date:** 2026-03-11
+**Total:** 1680 validated constraints | **Version:** 5.55 | **Date:** 2026-03-11
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5860,6 +5860,26 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Channel (C1664 CHANNEL_CONCENTRATED): R1 (per-SV CLOSE drawdown) dominates 6/8, R4 (quality-conditioned Y accumulation) dominates 2/8. Pre-gate = post-gate -- the regime admission gate from Phase 576 did not change which recovery channel drives residual forgivingness. The residual conversion pathway is the same one the gate cannot reach.
 - Opportunity (C1665 OPPORTUNITY_NEUTRAL): Event count has zero explanatory power (R-sq=0.0001). Forgiving folios have structurally weaker closure events: lower CTS, higher WEAK grammar fraction, far less E_armed. These are intrinsic folio properties that cause forgivingness, not sampling confounds that explain it away.
 - Endpoint (C1666 MIXED_BOUNDARY_STRATUM): The decisive grid search finds NO folios with displacement < 0.3 (zero PARAMETER_UNDERFIT). 4 folios pass at extreme F-params (displacement 0.75-1.17), classified as PARAMETER_ACHIEVABLE. 4 folios cannot pass at any grid point even with 3rd-axis extension, classified as STRUCTURAL_ENDPOINT. The boundary between forgiving and passing A2 is a gradient with some folios genuinely unreachable by F-axis retuning.
+
+---
+
+### Phase 582: Apparatus Atlas Bridge Design (C1675-C1680)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1675 | Component atlas coverage: ATLAS_COMPLETE. 21 total atlas components: 5 knob axes, 11 packet types, 5 metrics. Full coverage of manifold-to-hardware bridge | 3 | B_APPARATUS, bridge, atlas | knob_axes=5. packets=11. metrics=5. total=21. |
+| 1676 | Instruction translation coverage: TRANSLATION_COMPLETE. All 6 macro-states, 3 line zones, 4 REGIMEs mapped as heuristics. 13 non-encodable judgment types identified. Explicitly secondary to manifold-to-knob mapping | 3 | B_APPARATUS, bridge, heuristic | macro_states=6. zones=3. regimes=4. judgments=13. |
+| 1677 | Safety protocol derivability: SAFETY_DERIVABLE. All 5 hazard classes mapped to physical failure modes with prevention protocols. 3 safety levels translated from structural mechanisms. Operator judgment boundaries defined | 3 | B_APPARATUS, bridge, safety, hazard | hazard_classes=5. safety_levels=3. |
+| 1678 | Validation experiment feasibility: EXPERIMENTS_FEASIBLE. 7/7 experiments have available materials, defined measurements, and clear pass/fail criteria. 61 total minimum runs. 5 hardware nulls used | 3 | B_APPARATUS, bridge, validation, experiment | feasible=7/7. min_runs=61. nulls=5. |
+| 1679 | Metric bridge adequacy: METRIC_BRIDGE_COMPLETE. All 5 virtual process metrics (DVA, YGA, DYE, CTS, forgivingness) have operational physical definitions with specified sensors and formulas | 3 | B_APPARATUS, bridge, metrics, DYE, DVA, YGA, CTS | metrics=5/5. |
+| 1680 | Manifold knob identifiability: KNOB_MAPPING_IDENTIFIABLE. All 5 F-axes (F1-F5) mapped to physical control surface candidates with directional predictions. PC1 led by abl_CLOSE_RECOVERY, PC5 led by F2 | 3 | B_APPARATUS, bridge, manifold, knob | axes=5/5. PC1_top=abl_CLOSE_RECOVERY(+0.445). |
+
+**Phase 582 findings (Apparatus Atlas Bridge Design, ATLAS_COMPLETE/TRANSLATION_COMPLETE/SAFETY_DERIVABLE/EXPERIMENTS_FEASIBLE/METRIC_BRIDGE_COMPLETE/KNOB_MAPPING_IDENTIFIABLE):**
+- Manifold-to-knob mapping (C1680 KNOB_MAPPING_IDENTIFIABLE): F1 (attractor/forgiveness) -> reflux ratio, recirculation tightness. F2 (closure exploitability) -> valve timing, seal completion speed. F3 (thermal accent) -> bath temperature, heater slew rate. F4 (headless infrastructure) -> plumbing complexity, passive paths. F5 (containment responsiveness) -> gasket quality, seal completeness. PC1 (30.0% variance) led by abl_CLOSE_RECOVERY (+0.445), PC5 (8.6%) led by F2 (+0.856). Family positions computed: A1/A2/A3 centroids in PC space.
+- Metric bridge (C1679 METRIC_BRIDGE_COMPLETE): DVA_phys = sqrt(delta_T_body^2 + delta_T_head^2 + delta_flow_rate^2 + delta_gradient^2). YGA_phys = delta_condensate_rate * quality_score. DYE_phys = YGA_phys / DVA_phys. CTS_phys = weighted composite (seal_completion 0.35, heat_reduction_slope 0.25, gradient_collapse_rate 0.25, flow_change_magnitude 0.15). Forgivingness_phys = YGA_phys(null) / YGA_phys(grammar). 7 hardware null conditions defined (N1-N7).
+- Component atlas (C1675 ATLAS_COMPLETE): 11 physical packet types (soft/hard/armed/headless/strong/weak CTS closures, recirculatory, containment-reset, thermal-onset, productive-disruption, counterfeit-probe). Counterfeit closure atlas per family (A1 low acceptance, A2 moderate with strength threshold, A3 intermediate). 4-level closure strength spectrum.
+- Safety and operator bridge (C1676/C1677): 5 hazard classes mapped (PHASE_ORDERING 41%, CONTAINMENT_TIMING 24%, COMPOSITION_JUMP 24%, EQUIPMENT_OVERCOMMIT 6%, RECYCLE_CONTAMINATION 6%). 3 safety levels from structural mechanisms. 13 non-encodable operator judgments prevent over-automation. Expert-corrected labels: a-HEAD = "active transformation domain" (not "yield"), paragraph = "operational subroutine" (not "complete run").
+- Validation protocol (C1678 EXPERIMENTS_FEASIBLE): E0 rig characterization (prerequisite) -> E1 family calibration -> E2 closure threshold mapping -> E3 counterfeit closure probe -> E4 productive disruption assay -> E5 sister-mode observation -> E6 subroutine independence. 3-level rig: MVP ($560, A1/A3 only) -> recirculatory ($735, all families) -> pelican ($1235, historical convergence).
 
 ---
 

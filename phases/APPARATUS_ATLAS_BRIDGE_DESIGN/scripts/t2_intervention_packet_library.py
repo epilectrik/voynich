@@ -1,0 +1,212 @@
+"""T2: Intervention Packet Library for Phase 582.
+
+Define physical packet types corresponding to grammar's closure and
+intervention packets. Includes counterfeit closure atlas.
+"""
+import json
+import os
+
+PHASE_DIR = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
+RESULTS_DIR = os.path.join(PHASE_DIR, 'results')
+
+# 11 physical packet type definitions
+PACKET_TYPES = {
+    'soft_closure': {
+        'grammar_origin': 'Low-CTS m-terminal, DIFFUSE terminal tier (h, bare)',
+        'physical_analog': 'Gradual heat reduction, partial seal, slow flow diversion',
+        'expected_effect': 'Modest process shift, low DYE_phys',
+        'closure_strength': 'low',
+        'constraint_basis': ['C1440 (terminal opacity)', 'C1434 (m-terminal line-final)'],
+        'tier': 3,
+    },
+    'hard_closure': {
+        'grammar_origin': 'High-CTS m-terminal, OPAQUE tier, paragraph-final',
+        'physical_analog': 'Sharp heat cutoff, full seal completion, complete collection diversion',
+        'expected_effect': 'Strong process shift, high DYE_phys',
+        'closure_strength': 'high',
+        'constraint_basis': ['C1434 (196x line-final)', 'C1237 (-am 5.19x para-final)'],
+        'tier': 3,
+    },
+    'armed_closure': {
+        'grammar_origin': 'Strong CTS + HIGH-hazard frame at Q4',
+        'physical_analog': 'Closure under risky conditions: active vapor, high pressure, or unstable state',
+        'expected_effect': 'High DYE_phys but risk-coupled; requires verification before and after',
+        'closure_strength': 'high',
+        'constraint_basis': ['C1463 (HIGH enriched 1.134x at Q4)', 'C1673 (hazard-position coupled)'],
+        'tier': 3,
+    },
+    'headless_infrastructure_closure': {
+        'grammar_origin': 'Headless tokens at Q4 (C1671 surge), da/sa/ta PREFIX',
+        'physical_analog': 'Closure assisted by structural/passive mechanisms: gravity return, '
+                          'passive condensation, natural cooling without active intervention',
+        'expected_effect': 'Closure without overt thermal action; apparatus completes on its own',
+        'closure_strength': 'medium',
+        'constraint_basis': ['C1671 (headless Q4 surge)', 'C1488-C1498 (headless infrastructure domain)'],
+        'tier': 3,
+    },
+    'strong_cts_closure': {
+        'grammar_origin': 'Above CTS strength threshold (C1642)',
+        'physical_analog': 'Complete seal + recirculation interruption + thermal reduction + '
+                          'condensate flow arrest',
+        'expected_effect': 'Productive in A2; grammar advantage positive (+0.0209)',
+        'closure_strength': 'high',
+        'constraint_basis': ['C1642 (STRONG adv=+0.0209)', 'C1639 (close-recovery 159.5%)'],
+        'tier': 2,
+    },
+    'weak_cts_closure': {
+        'grammar_origin': 'Below CTS strength threshold (C1642)',
+        'physical_analog': 'Partial/incomplete closure maneuver: slow seal, incomplete heat reduction',
+        'expected_effect': 'Loses to null in A2; grammar advantage negative (-0.0140)',
+        'closure_strength': 'low',
+        'constraint_basis': ['C1642 (WEAK adv=-0.0140)'],
+        'tier': 2,
+    },
+    'recirculatory_closure': {
+        'grammar_origin': 'A2-specific, close-recovery channels R1_C and R4_C',
+        'physical_analog': 'Seal completion triggers containment-coupled yield recovery loop: '
+                          'sealing increases pressure -> drives condensate return -> product improves',
+        'expected_effect': 'A2 forgivingness mechanism; CCS1 excess explained by this channel',
+        'closure_strength': 'high',
+        'constraint_basis': ['C1639 (NO_CLOSE_RECOVERY = 159.5%)', 'C1643 (R1_C/R4_C coupled)'],
+        'tier': 2,
+    },
+    'containment_reset_packet': {
+        'grammar_origin': 'CONTAINMENT_TIMING hazard region, l/r SEMI-TRANSPARENT terminal class',
+        'physical_analog': 'Re-establish seal integrity after partial opening: re-lute joints, '
+                          'tighten fittings, verify no leaks',
+        'expected_effect': 'Prevents CONTAINMENT_TIMING failure (24% of hazard topology)',
+        'closure_strength': 'medium',
+        'constraint_basis': ['C1530 (100% avoidance across 1,129 opportunities)', 'C216 (29% apparatus hazard)'],
+        'tier': 3,
+    },
+    'thermal_onset_packet': {
+        'grammar_origin': 'k-HEAD at Q1, THERMAL peak (C1671, C1464)',
+        'physical_analog': 'Initiate or intensify heating: open damper, increase fire, '
+                          'raise bath temperature',
+        'expected_effect': 'Work-zone entry; process begins active transformation',
+        'closure_strength': None,
+        'constraint_basis': ['C1464 (k-IMMUNE 1.311x at Q1)', 'C1446 (k complete hazard immunity)'],
+        'tier': 3,
+    },
+    'productive_disruption_packet': {
+        'grammar_origin': 'Disruption event per DYE/DVA definition (C1632-C1634)',
+        'physical_analog': 'Deliberate process perturbation that yields quality gain: '
+                          'targeted seal-break-and-reseal, rapid temperature excursion, '
+                          'condensate diversion and return',
+        'expected_effect': 'Core of DYE > 0 mechanism; disturbance produces net positive yield',
+        'closure_strength': 'variable',
+        'constraint_basis': ['C1632 (YGA validated)', 'C1633 (DYE validated)', 'C1634 (DVA validated)'],
+        'tier': 2,
+    },
+    'counterfeit_closure_probe': {
+        'grammar_origin': 'Morphologically closure-like but physically incomplete (C1645)',
+        'physical_analog': 'Apparent closure that does not fully arrest process: '
+                          'slow damper movement without completion, partial seal without luting, '
+                          'heat reduction without full arrest',
+        'expected_effect': 'Tests A2 threshold sensitivity; A2 may accept productively, A1 will not',
+        'closure_strength': 'sub-threshold',
+        'constraint_basis': ['C1645 (morphology-selective counterfeiting)', 'C1650 (AGGRAVATED pole)'],
+        'tier': 3,
+    },
+}
+
+# Counterfeit closure atlas -- per family
+COUNTERFEIT_ATLAS = {
+    'A1_BATH_REFLUX': {
+        'acceptance': 'Low. A1 lacks self-correction; counterfeit closures produce '
+                     'near-zero or negative DYE.',
+        'distinguishing_sensors': [
+            'Temperature probe at body: real closure shows sharp T drop, counterfeit shows gradual',
+            'FLIR: real closure shows rapid gradient collapse, counterfeit maintains gradient',
+        ],
+        'minimum_cts_phys': 'High. Nearly all closures must be genuine to produce positive DYE.',
+        'tuning_direction': 'Making A1 more forgiving requires adding recirculation path (moves toward A3)',
+    },
+    'A2_SEALED_RECIRCULATION': {
+        'acceptance': 'Moderate. A2 accepts STRONG counterfeit closures productively via '
+                     'close-recovery channel, but rejects WEAK counterfeits (C1642).',
+        'distinguishing_sensors': [
+            'Pressure gauge: real closure stabilizes pressure, counterfeit leaves residual drift',
+            'Condensate flow meter: real closure arrests flow, counterfeit allows continued dripping',
+            'FLIR: counterfeit shows incomplete thermal gradient collapse',
+        ],
+        'minimum_cts_phys': 'Medium-high. Threshold exists: above it counterfeit = productive, '
+                           'below it counterfeit = worse than doing nothing.',
+        'tuning_direction': 'Improving seal quality moves threshold lower (more forgiving); '
+                           'degrading seals moves threshold higher (less forgiving)',
+    },
+    'A3_DISTILL_COLLECT': {
+        'acceptance': 'Intermediate. A3 bridges A1-A2 behavior; some counterfeit closures '
+                     'productive depending on collection state.',
+        'distinguishing_sensors': [
+            'Collection flask mass: real closure completes fraction, counterfeit leaves partial',
+            'Temperature: intermediate gradient collapse timing',
+        ],
+        'minimum_cts_phys': 'Medium. Between A1 and A2 thresholds.',
+        'tuning_direction': 'Sealing the collection arm moves toward A2; opening it moves toward A1',
+    },
+}
+
+
+def main():
+    with open(os.path.join(RESULTS_DIR, 't0_data_assembly.json')) as f:
+        t0 = json.load(f)
+
+    n_folios = t0['metadata']['n_folios']
+
+    # Build closure strength spectrum
+    strength_spectrum = [
+        {'level': 'sub-threshold', 'packets': ['counterfeit_closure_probe'],
+         'expected_dye': 'negative (A1), variable (A2)', 'a2_productive': 'only if above CTS threshold'},
+        {'level': 'low', 'packets': ['soft_closure', 'weak_cts_closure'],
+         'expected_dye': 'low positive (A1/A3), negative (A2 WEAK)', 'a2_productive': 'no'},
+        {'level': 'medium', 'packets': ['headless_infrastructure_closure', 'containment_reset_packet'],
+         'expected_dye': 'moderate', 'a2_productive': 'marginal'},
+        {'level': 'high', 'packets': ['hard_closure', 'strong_cts_closure', 'armed_closure',
+                                       'recirculatory_closure'],
+         'expected_dye': 'high', 'a2_productive': 'yes'},
+    ]
+
+    # Packet-to-experiment mapping
+    packet_experiments = {
+        'soft_closure': 'E2 (closure threshold mapping)',
+        'hard_closure': 'E2 (closure threshold mapping)',
+        'armed_closure': 'E4 (productive disruption assay)',
+        'headless_infrastructure_closure': 'E4 (productive disruption assay)',
+        'strong_cts_closure': 'E2 (closure threshold mapping), E3 (counterfeit probe)',
+        'weak_cts_closure': 'E2 (closure threshold mapping), E3 (counterfeit probe)',
+        'recirculatory_closure': 'E3 (counterfeit closure probe)',
+        'containment_reset_packet': 'E4 (productive disruption assay)',
+        'thermal_onset_packet': 'E1 (family analog calibration)',
+        'productive_disruption_packet': 'E4 (productive disruption assay)',
+        'counterfeit_closure_probe': 'E3 (counterfeit closure probe)',
+    }
+
+    output = {
+        'metadata': {
+            'phase': '582',
+            'script': 't2_intervention_packet_library.py',
+            'n_packet_types': len(PACKET_TYPES),
+            'n_folios': n_folios,
+        },
+        'packet_types': PACKET_TYPES,
+        'counterfeit_closure_atlas': COUNTERFEIT_ATLAS,
+        'closure_strength_spectrum': strength_spectrum,
+        'packet_experiment_mapping': packet_experiments,
+    }
+
+    out_path = os.path.join(RESULTS_DIR, 't2_intervention_packet_library.json')
+    with open(out_path, 'w') as f:
+        json.dump(output, f, indent=2)
+
+    print("T2: Intervention packet library complete")
+    print(f"  Packet types: {len(PACKET_TYPES)}")
+    for name, info in PACKET_TYPES.items():
+        print(f"    {name}: strength={info['closure_strength']}, tier={info['tier']}")
+    print(f"  Counterfeit atlas: {list(COUNTERFEIT_ATLAS.keys())}")
+    print(f"  Strength spectrum levels: {len(strength_spectrum)}")
+    print(f"  Output: {out_path}")
+
+
+if __name__ == '__main__':
+    main()

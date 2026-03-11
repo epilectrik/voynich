@@ -106,9 +106,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1642 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1648 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1674.
+the highest ID present is C1680.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -2000,6 +2000,12 @@ C1671	Atom positional gradient structure: GRADIENT_HETEROGENEOUS. HEAD chi2=659,
 C1672	Q3->Q4 atom decomposition: CLOSURE_DISTRIBUTED. m-terminal alone=77.4% of TERM JSD. HEAD distributed: e-collapse 36%, headless-surge 22%, a-surge 22%. Closure and specification mechanistically distinct (TERM cosine=0.084). Interior transitions near-zero confirming C1566	2	B, line, atom, closure, Q3Q4, JSD, m-terminal	m_share=0.774. HEAD_top2=0.585. TERM_cos_Q0Q1=0.084.
 C1673	Hazard x atom x position: HAZARD_POSITION_COUPLED. Interaction chi2=337, 16 zone-specific pairs >1.5x. a-HEAD intrinsically hazardous in ALL zones (2.8-4.6x). Work-zone safety k-LED (k WORK=63.2%). ZERO frames concentrate in SPECIFICATION	2	B, line, atom, hazard, zone, safety, k-HEAD	chi2=337. pairs=16. k_WORK=0.632.
 C1674	Section-conditioned atom gradients: SECTION_MODULATES_GRADIENT. Sections preserve three-zone scaffold (TERM corr>0.96) but modulate HEAD deployment amplitudes. C section HEAD corr=0.76. Q3Q4 JSD ratio=2.2x. m-terminal surge universal	2	B, line, atom, section, gradient, modulation	C_corr=0.761. ratio=2.205.
+C1675	Component atlas coverage: ATLAS_COMPLETE. 21 total atlas components: 5 knob axes, 11 packet types, 5 metrics. Full manifold-to-hardware bridge coverage	3	B_APPARATUS, bridge, atlas	knob_axes=5. packets=11. metrics=5. total=21.
+C1676	Instruction translation coverage: TRANSLATION_COMPLETE. 6 macro-states, 3 line zones, 4 REGIMEs mapped as heuristics. 13 non-encodable judgment types. Explicitly secondary to manifold-to-knob mapping	3	B_APPARATUS, bridge, heuristic	states=6. zones=3. regimes=4. judgments=13.
+C1677	Safety protocol derivability: SAFETY_DERIVABLE. 5 hazard classes mapped to physical failure modes. 3 safety levels from structural mechanisms. Operator judgment boundaries defined	3	B_APPARATUS, bridge, safety, hazard	hazard_classes=5. safety_levels=3.
+C1678	Validation experiment feasibility: EXPERIMENTS_FEASIBLE. 7/7 experiments feasible with materials, measurements, pass/fail criteria. 61 total minimum runs. E0-E6 staged protocol	3	B_APPARATUS, bridge, validation, experiment	feasible=7/7. min_runs=61. nulls=5.
+C1679	Metric bridge adequacy: METRIC_BRIDGE_COMPLETE. All 5 virtual metrics (DVA, YGA, DYE, CTS, forgivingness) have operational physical definitions with sensors and formulas. 7 hardware nulls	3	B_APPARATUS, bridge, metrics, DYE, DVA, YGA, CTS	metrics=5/5. nulls=7.
+C1680	Manifold knob identifiability: KNOB_MAPPING_IDENTIFIABLE. All 5 F-axes mapped to physical control surfaces. F1->reflux, F2->valve timing, F3->bath temp, F4->plumbing, F5->gasket quality. PC1 led by abl_CLOSE_RECOVERY	3	B_APPARATUS, bridge, manifold, knob	axes=5/5. PC1_top=CLOSE_RECOVERY(+0.445).
 
 ---
 

@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1674 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1680 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1674.
+the highest ID present is C1680.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1674 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1680 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1674 validated constraints are present as canonical one-line claims with tier
+1680 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-11 16:42
-**Version:** FROZEN STATE (1674 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-11 18:02
+**Version:** FROZEN STATE (1680 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1914,6 +1914,12 @@ C1671	Atom positional gradient structure: GRADIENT_HETEROGENEOUS. HEAD and TERMI
 C1672	Q3->Q4 atom decomposition: CLOSURE_DISTRIBUTED. Closure step is TERMINAL-concentrated (m-terminal alone = 77% of TERM JSD) but HEAD-distributed (e-collapse + headless/a-surge). Closure and specification are mechanistically distinct (TERM cosine=0.08)	2	B, line, atom, position, closure, Q3Q4, JSD, m-terminal
 C1673	Hazard x atom x position: HAZARD_POSITION_COUPLED. Safety architecture operates through specific atom-position couplings, not aggregate rates. 16 zone-specific pairs at >1.5x enrichment. Work-zone safety is k-LED (k WORK=63.2% vs t 61.2% vs e 56.1%)	2	B, line, atom, position, hazard, zone, safety, k-HEAD
 C1674	Section-conditioned atom gradients: SECTION_MODULATES_GRADIENT. Sections preserve the three-zone scaffold but modulate atom deployment amplitudes. C section HEAD corr=0.76 (below 0.80). Q3Q4 JSD ratio across sections=2.2x	2	B, line, atom, position, section, gradient, modulation
+C1675	Component atlas coverage: ATLAS_COMPLETE. 21 total atlas components: 5 knob axes, 11 packet types, 5 metrics. Full coverage of manifold-to-hardware bridge	3	B_APPARATUS, bridge, atlas
+C1676	Instruction translation coverage: TRANSLATION_COMPLETE. All 6 macro-states, 3 line zones, 4 REGIMEs mapped as heuristics. 13 non-encodable judgment types identified. Explicitly secondary to manifold-to-knob mapping	3	B_APPARATUS, bridge, heuristic
+C1677	Safety protocol derivability: SAFETY_DERIVABLE. All 5 hazard classes mapped to physical failure modes with prevention protocols. 3 safety levels translated from structural mechanisms. Operator judgment boundaries defined	3	B_APPARATUS, bridge, safety, hazard
+C1678	Validation experiment feasibility: EXPERIMENTS_FEASIBLE. 7/7 experiments have available materials, defined measurements, and clear pass/fail criteria. 61 total minimum runs. 5 hardware nulls used	3	B_APPARATUS, bridge, validation, experiment
+C1679	Metric bridge adequacy: METRIC_BRIDGE_COMPLETE. All 5 virtual process metrics (DVA, YGA, DYE, CTS, forgivingness) have operational physical definitions with specified sensors and formulas	3	B_APPARATUS, bridge, metrics, DYE, DVA, YGA, CTS
+C1680	Manifold knob identifiability: KNOB_MAPPING_IDENTIFIABLE. All 5 F-axes (F1-F5) mapped to physical control surface candidates with directional predictions. PC1 led by abl_CLOSE_RECOVERY, PC5 led by F2	3	B_APPARATUS, bridge, manifold, knob
 
 ---
 

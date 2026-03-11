@@ -1,0 +1,470 @@
+{
+  "metadata": {
+    "phase": "582",
+    "script": "t1_manifold_knob_mapping.py",
+    "n_folios": 76,
+    "n_pcs_analyzed": 5,
+    "effective_rank": 5.8829
+  },
+  "knob_map": {
+    "F1": {
+      "name": "Attractor / Forgiveness",
+      "virtual_proxy": "AXM occupancy, null recovery ease",
+      "physical_knobs": [
+        "Reflux ratio (condensate return vs collection)",
+        "Recirculation tightness (return path diameter)",
+        "Condensate return fraction",
+        "Thermal inertia (bath mass, vessel wall thickness)"
+      ],
+      "expected_readout_shift": "Higher retention after disturbance, higher null productivity",
+      "knob_class": "geometry",
+      "tier": 3
+    },
+    "F2": {
+      "name": "Closure Exploitability",
+      "virtual_proxy": "Closure gain sensitivity",
+      "physical_knobs": [
+        "Valve timing precision (stop/start sharpness)",
+        "Seal completion speed",
+        "Collection diversion response time",
+        "Damper closure gradient"
+      ],
+      "expected_readout_shift": "Stronger closure threshold behavior, higher DYE contrast",
+      "knob_class": "performance",
+      "tier": 3
+    },
+    "F3": {
+      "name": "Thermal Accent",
+      "virtual_proxy": "THERMAL fraction",
+      "physical_knobs": [
+        "Bath temperature setpoint",
+        "Heater power slew rate",
+        "Heat transfer coefficient (medium: water vs sand vs direct)",
+        "Thermal ramp rate"
+      ],
+      "expected_readout_shift": "Stronger thermal-phase signatures, more work-zone sensitivity",
+      "knob_class": "geometry",
+      "tier": 3
+    },
+    "F4_raw": {
+      "name": "Headless Infrastructure",
+      "virtual_proxy": "hl_rate, infrastructural mediation",
+      "physical_knobs": [
+        "Plumbing complexity (number of passive paths)",
+        "Passive recirculation paths (side arms, auxiliary condensers)",
+        "Condensate routing topology (valves, tees)",
+        "Staging subloops (pre-heat, pre-cool circuits)"
+      ],
+      "expected_readout_shift": "Stronger closure assistance without overt thermal action",
+      "knob_class": "geometry",
+      "tier": 4
+    },
+    "F5": {
+      "name": "Containment Responsiveness",
+      "virtual_proxy": "SEALED_VESSEL proxy",
+      "physical_knobs": [
+        "Gasket quality (ground glass vs wax vs PTFE)",
+        "Seal completeness (number of sealed joints)",
+        "Backpressure tolerance",
+        "Headspace coupling (vapor communication between chambers)"
+      ],
+      "expected_readout_shift": "Stronger containment-coupled recovery, A2-like forgivingness",
+      "knob_class": "performance",
+      "tier": 3
+    }
+  },
+  "knob_classes": {
+    "geometry": "Moves you in Space A (apparatus configuration). Changing these changes what the apparatus IS.",
+    "performance": "Changes Space B outcomes (process quality). Changing these changes what the apparatus DOES.",
+    "readout": "Changes only observability, not behavior. Changing these changes what you can SEE."
+  },
+  "pc_knob_clusters": {
+    "PC1": {
+      "variance_explained": 0.2997,
+      "top_features": [
+        [
+          "abl_CLOSE_RECOVERY",
+          0.445
+        ],
+        [
+          "F1",
+          -0.4298
+        ],
+        [
+          "abl_TR_TO_Y",
+          -0.4065
+        ]
+      ],
+      "physical_knob_cluster": [
+        {
+          "feature": "abl_CLOSE_RECOVERY",
+          "loading": 0.445,
+          "direction": "positive",
+          "physical_knobs": [
+            "Ablation channel: abl_CLOSE_RECOVERY"
+          ],
+          "knob_class": "performance"
+        },
+        {
+          "feature": "F1",
+          "loading": -0.4298,
+          "direction": "negative",
+          "physical_knobs": [
+            "Reflux ratio (condensate return vs collection)",
+            "Recirculation tightness (return path diameter)",
+            "Condensate return fraction",
+            "Thermal inertia (bath mass, vessel wall thickness)"
+          ],
+          "knob_class": "geometry"
+        },
+        {
+          "feature": "abl_TR_TO_Y",
+          "loading": -0.4065,
+          "direction": "negative",
+          "physical_knobs": [
+            "Ablation channel: abl_TR_TO_Y"
+          ],
+          "knob_class": "performance"
+        }
+      ]
+    },
+    "PC2": {
+      "variance_explained": 0.1722,
+      "top_features": [
+        [
+          "abl_CROSS_COUPLING",
+          0.4768
+        ],
+        [
+          "abl_TR_TO_Y",
+          0.4119
+        ],
+        [
+          "F3",
+          -0.3654
+        ]
+      ],
+      "physical_knob_cluster": [
+        {
+          "feature": "abl_CROSS_COUPLING",
+          "loading": 0.4768,
+          "direction": "positive",
+          "physical_knobs": [
+            "Ablation channel: abl_CROSS_COUPLING"
+          ],
+          "knob_class": "performance"
+        },
+        {
+          "feature": "abl_TR_TO_Y",
+          "loading": 0.4119,
+          "direction": "positive",
+          "physical_knobs": [
+            "Ablation channel: abl_TR_TO_Y"
+          ],
+          "knob_class": "performance"
+        },
+        {
+          "feature": "F3",
+          "loading": -0.3654,
+          "direction": "negative",
+          "physical_knobs": [
+            "Bath temperature setpoint",
+            "Heater power slew rate",
+            "Heat transfer coefficient (medium: water vs sand vs direct)",
+            "Thermal ramp rate"
+          ],
+          "knob_class": "geometry"
+        }
+      ]
+    },
+    "PC3": {
+      "variance_explained": 0.134,
+      "top_features": [
+        [
+          "abl_Y_SENSITIVITY",
+          -0.5173
+        ],
+        [
+          "abl_CONTAINMENT",
+          -0.4693
+        ],
+        [
+          "mean_CTS",
+          0.4388
+        ]
+      ],
+      "physical_knob_cluster": [
+        {
+          "feature": "abl_Y_SENSITIVITY",
+          "loading": -0.5173,
+          "direction": "negative",
+          "physical_knobs": [
+            "Ablation channel: abl_Y_SENSITIVITY"
+          ],
+          "knob_class": "performance"
+        },
+        {
+          "feature": "abl_CONTAINMENT",
+          "loading": -0.4693,
+          "direction": "negative",
+          "physical_knobs": [
+            "Ablation channel: abl_CONTAINMENT"
+          ],
+          "knob_class": "performance"
+        },
+        {
+          "feature": "mean_CTS",
+          "loading": 0.4388,
+          "direction": "positive",
+          "physical_knobs": [
+            "Ablation channel: mean_CTS"
+          ],
+          "knob_class": "performance"
+        }
+      ]
+    },
+    "PC4": {
+      "variance_explained": 0.1311,
+      "top_features": [
+        [
+          "F4_raw",
+          -0.7166
+        ],
+        [
+          "F5",
+          0.5616
+        ],
+        [
+          "F3",
+          0.2506
+        ]
+      ],
+      "physical_knob_cluster": [
+        {
+          "feature": "F4_raw",
+          "loading": -0.7166,
+          "direction": "negative",
+          "physical_knobs": [
+            "Plumbing complexity (number of passive paths)",
+            "Passive recirculation paths (side arms, auxiliary condensers)",
+            "Condensate routing topology (valves, tees)",
+            "Staging subloops (pre-heat, pre-cool circuits)"
+          ],
+          "knob_class": "geometry"
+        },
+        {
+          "feature": "F5",
+          "loading": 0.5616,
+          "direction": "positive",
+          "physical_knobs": [
+            "Gasket quality (ground glass vs wax vs PTFE)",
+            "Seal completeness (number of sealed joints)",
+            "Backpressure tolerance",
+            "Headspace coupling (vapor communication between chambers)"
+          ],
+          "knob_class": "performance"
+        },
+        {
+          "feature": "F3",
+          "loading": 0.2506,
+          "direction": "positive",
+          "physical_knobs": [
+            "Bath temperature setpoint",
+            "Heater power slew rate",
+            "Heat transfer coefficient (medium: water vs sand vs direct)",
+            "Thermal ramp rate"
+          ],
+          "knob_class": "geometry"
+        }
+      ]
+    },
+    "PC5": {
+      "variance_explained": 0.0863,
+      "top_features": [
+        [
+          "F2",
+          0.8562
+        ],
+        [
+          "mean_CTS",
+          0.411
+        ],
+        [
+          "abl_Y_SENSITIVITY",
+          0.2412
+        ]
+      ],
+      "physical_knob_cluster": [
+        {
+          "feature": "F2",
+          "loading": 0.8562,
+          "direction": "positive",
+          "physical_knobs": [
+            "Valve timing precision (stop/start sharpness)",
+            "Seal completion speed",
+            "Collection diversion response time",
+            "Damper closure gradient"
+          ],
+          "knob_class": "performance"
+        },
+        {
+          "feature": "mean_CTS",
+          "loading": 0.411,
+          "direction": "positive",
+          "physical_knobs": [
+            "Ablation channel: mean_CTS"
+          ],
+          "knob_class": "performance"
+        },
+        {
+          "feature": "abl_Y_SENSITIVITY",
+          "loading": 0.2412,
+          "direction": "positive",
+          "physical_knobs": [
+            "Ablation channel: abl_Y_SENSITIVITY"
+          ],
+          "knob_class": "performance"
+        }
+      ]
+    }
+  },
+  "family_analogs": {
+    "A1_BATH_REFLUX": {
+      "physical_analog": "Moderated bath/reflux with open or loosely sealed head",
+      "key_differentiators": [
+        "Sensitive to operator precision (low self-correction)",
+        "Water bath provides thermal buffer but not error correction",
+        "Open head allows vapor escape (no pressure feedback)",
+        "Requires careful fire management"
+      ],
+      "ccs1_typical": 0.013,
+      "dominant_knob_axis": "F1 (low attractor strength)",
+      "tier": 3
+    },
+    "A2_SEALED_RECIRCULATION": {
+      "physical_analog": "Sealed forgiving recirculation with tight joints",
+      "key_differentiators": [
+        "Self-correcting via close-recovery (R1_C/R4_C channels)",
+        "Sealed system creates pressure feedback loop",
+        "Overheat -> increased vapor pressure -> faster condensation -> self-correction",
+        "Strength-dependent: STRONG closures productive, WEAK closures lose to null (C1642)"
+      ],
+      "ccs1_typical": 0.114,
+      "dominant_knob_axis": "F5 (high containment responsiveness)",
+      "tier": 3
+    },
+    "A3_DISTILL_COLLECT": {
+      "physical_analog": "Distill-collect bridge, intermediate configuration",
+      "key_differentiators": [
+        "Spans A1-A2 geometry (54% are bridge folios)",
+        "Standard collection operations with partial seal",
+        "Intermediate self-correction capability",
+        "Most common family (37/76 folios)"
+      ],
+      "ccs1_typical": 0.053,
+      "dominant_knob_axis": "F2 (intermediate closure exploitability)",
+      "tier": 3
+    }
+  },
+  "family_manifold_positions": {
+    "A1": {
+      "n_folios": 21,
+      "mean_pc_coordinates": {
+        "PC1": -1.3344,
+        "PC2": -1.4409,
+        "PC3": -0.2929,
+        "PC4": 0.1034,
+        "PC5": 0.1304
+      },
+      "mean_features": {
+        "F1": 1.2286,
+        "F2": 1.091,
+        "F3": 1.2467,
+        "F4_raw": 0.4862,
+        "F5": 0.8546,
+        "abl_CROSS_COUPLING": 0.0144,
+        "abl_CLOSE_RECOVERY": 0.0007,
+        "abl_CONTAINMENT": 0.0056,
+        "abl_TR_TO_Y": 0.0145,
+        "abl_Y_SENSITIVITY": -0.0015,
+        "mean_CTS": 0.2227
+      }
+    },
+    "A2": {
+      "n_folios": 18,
+      "mean_pc_coordinates": {
+        "PC1": 1.9727,
+        "PC2": 0.1812,
+        "PC3": -0.4694,
+        "PC4": -0.5249,
+        "PC5": -0.0694
+      },
+      "mean_features": {
+        "F1": 0.8657,
+        "F2": 0.977,
+        "F3": 0.9041,
+        "F4_raw": 0.5869,
+        "F5": 0.9686,
+        "abl_CROSS_COUPLING": -0.0025,
+        "abl_CLOSE_RECOVERY": 0.1329,
+        "abl_CONTAINMENT": 0.0879,
+        "abl_TR_TO_Y": -0.0064,
+        "abl_Y_SENSITIVITY": -0.0019,
+        "mean_CTS": 0.2544
+      }
+    },
+    "A3": {
+      "n_folios": 37,
+      "mean_pc_coordinates": {
+        "PC1": -0.2023,
+        "PC2": 0.7297,
+        "PC3": 0.3946,
+        "PC4": 0.1967,
+        "PC5": -0.0403
+      },
+      "mean_features": {
+        "F1": 1.0467,
+        "F2": 0.9984,
+        "F3": 0.9529,
+        "F4_raw": 0.3701,
+        "F5": 1.0274,
+        "abl_CROSS_COUPLING": 0.0402,
+        "abl_CLOSE_RECOVERY": 0.0618,
+        "abl_CONTAINMENT": 0.0283,
+        "abl_TR_TO_Y": 0.0269,
+        "abl_Y_SENSITIVITY": -0.0036,
+        "mean_CTS": 0.3554
+      }
+    }
+  },
+  "landscape_classes": {
+    "SA": {
+      "name": "Stable Attractor",
+      "physical_regime": "Self-sustaining equilibrium operation",
+      "observable_behavior": "Minimal intervention needed, consistent output",
+      "operator_experience": "Routine monitoring, apparatus maintains itself",
+      "tier": 3
+    },
+    "TD": {
+      "name": "Transition Domain",
+      "physical_regime": "Threshold-dependent behavior",
+      "observable_behavior": "Small perturbations can tip into different operating modes",
+      "operator_experience": "Requires attention, decisions matter, errors have consequences",
+      "tier": 3
+    },
+    "FR": {
+      "name": "Forgiving Region",
+      "physical_regime": "Error-tolerant recirculation",
+      "observable_behavior": "Apparatus self-corrects moderate operator errors",
+      "operator_experience": "Relaxed operation, system compensates for mistakes",
+      "tier": 3
+    }
+  },
+  "C1680": {
+    "verdict": "KNOB_MAPPING_IDENTIFIABLE",
+    "n_axes_mapped": 5,
+    "n_axes_total": 5,
+    "rationale": "5/5 F-axes mapped to physical knob candidates with directional predictions",
+    "tier": 3
+  }
+}
