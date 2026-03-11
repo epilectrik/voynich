@@ -4,6 +4,34 @@
 
 ---
 
+## Version 5.52 (2026-03-11) - Phase 579: Forgiving Pole Residual Audit
+
+### Summary
+
+Phase 579 audits the 8 stubborn A2 forgiving folios (f39v, f40r, f50v, f55v, f85r2, f86v5, f86v6, f95r2) that survive all closure-gating improvements from Phases 574-578. Four diagnostic tracks determine whether these represent a structural endpoint or parameter underfit. C1666 (DECISIVE): MIXED_BOUNDARY_STRATUM -- 4 structural endpoints (f39v, f55v, f86v5, f95r2) and 4 parameter-achievable (f40r, f50v, f85r2, f86v6). The forgiving/passing boundary is a gradient, not a clean partition, consistent with C1641.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/FORGIVING_POLE_RESIDUAL_AUDIT/` -- Phase 579 directory with 6 scripts (T0-T5), 6 result files, REPORT_579.md |
+| **ADDED** | C1663: Pole coherence GRADIENT_TAIL -- LOO 33.3%, 0/5 sig F-axes, 2/5 sig ablation channels, tight lobe but inseparable |
+| **ADDED** | C1664: Channel concentration CHANNEL_CONCENTRATED -- 8/8 >60% share, NO_R1 dominates 6/8, NO_R4 2/8, pre=post gate |
+| **ADDED** | C1665: Opportunity confound OPPORTUNITY_NEUTRAL -- event count R-sq=0.0001, CTS lower in forgiving, not a confound |
+| **ADDED** | C1666: Structural endpoint MIXED_BOUNDARY_STRATUM -- 4 STRUCTURAL_ENDPOINT, 4 PARAMETER_ACHIEVABLE, 0 PARAMETER_UNDERFIT |
+| **UPDATED** | INDEX.md -- +4 constraints (1666 total), Phase 579 section added |
+| **UPDATED** | CLAUDE.md -- Quick reference updated (v5.52, 1666 constraints, 579 phases) |
+
+### Key Findings
+
+- **Coherence (C1663 GRADIENT_TAIL):** The 8 form a tight lobe (within-similarity=0.919) but LOO nearest-centroid only 33.3% -- not separable from passing A2. They are the tail of A2's continuous gradient, not a distinct subfamily.
+- **Channel (C1664 CHANNEL_CONCENTRATED):** R1 (per-SV CLOSE drawdown) dominates 6/8 folios, R4 (quality-conditioned Y accumulation) dominates 2/8 (f86v5, f86v6). Pre-gate and post-gate identical -- regime gating didn't change the residual conversion mechanism.
+- **Opportunity (C1665 OPPORTUNITY_NEUTRAL):** Event count R-sq=0.0001 on CCS1. Forgiving folios have weaker closure events (CTS 0.200 vs 0.350, 80% WEAK grammar vs 48.5%, 6.7% E_armed vs 39.4%). These are intrinsic properties, not sampling artifacts.
+- **Endpoint (C1666 MIXED_BOUNDARY_STRATUM):** F1xF2 grid search (144 per folio) + conditional 3rd-axis (F3/F5) finds 4 folios can pass but only with displacement >= 0.5 (PARAMETER_ACHIEVABLE), 4 cannot pass at any point (STRUCTURAL_ENDPOINT). All best points cluster at grid extreme (F1=1.6, F2=0.5). Zero PARAMETER_UNDERFIT (none pass with displacement < 0.3).
+- **7,488 total simulation runs in 121s.** T4a=6,912 (F1xF2 sweep), T4b=576 (3rd-axis extension), T2=336 (sub-ablation).
+
+---
+
 ## Version 5.51 (2026-03-11) - Phase 578: Event-Local Closure Adjudicator
 
 ### Summary

@@ -20,9 +20,9 @@ searching within THIS document only. If you use file tools, you are doing it wro
 
 You are the **internal expert** for the Voynich Manuscript Currier B analysis project.
 Your job is to provide constraint-grounded answers using the complete knowledge base
-embedded below. You have all 1446 validated constraints and 75 explanatory fits loaded
+embedded below. You have all 1666 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1646.
+the highest ID present is C1666.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -66,7 +66,7 @@ When constraints are ambiguous or don't cover the question, say so explicitly.
 ## Cognitive Operating Stance
 
 This is a structurally closed system with:
-- Tier 0-2 binding constraints (1446 validated, with tier and scope metadata)
+- Tier 0-2 binding constraints (1666 validated, with tier and scope metadata)
 - Tier 3-4 explanatory frameworks (non-binding, discardable)
 - No substance-level semantic recovery possible (C171, C120)
 - High-dimensional discrimination manifold (C973, C982)
@@ -86,15 +86,15 @@ When reasoning:
 
 **Note:** This is a compact agent build. Full structural contracts have been replaced
 with contract signatures (topic heading + constraint IDs + key parameters). All
-1446 validated constraints are present as canonical one-line claims with tier
+1666 validated constraints are present as canonical one-line claims with tier
 and scope metadata. 75 fits are complete. Tier 3-4 interpretive sections are
 condensed but all section headers and constraint references are preserved. Gloss/etymology
 tables are quarantined — do not use for structural answers.
 
 ---
 
-**Generated:** 2026-03-10 19:50
-**Version:** FROZEN STATE (1446 validated constraints, 75 fits) [COMPACT]
+**Generated:** 2026-03-11 10:26
+**Version:** FROZEN STATE (1666 validated constraints, 75 fits) [COMPACT]
 
 ---
 
@@ -1886,6 +1886,26 @@ C1643	A2 recovery gate sub-channel decomposition: RECOVERY_GATE_R1_C_DOMINANT. B
 C1644	Counterfeit closure threshold: THRESHOLD_A2_SHIFTED_GRADUAL. A2 requires CTS=0.18 for positive magnitude advantage vs CTS=0.04 for A1 (+0.138 shift). Transition is gradual (width=0.327 CTS). A2 needs minimum 1 strong grammar signal; A1/A3 need 0. A2 counterfeit susceptibility 64% at CTS<0.2, 0% above CTS=0.6	2	B, virtual apparatus, threshold, closure, CTS, counterfeiting, C1639, C1642
 C1645	Closure packet morphology selectivity: MORPHOLOGY_SELECTIVE_COUNTERFEITING. 5 packet signatures resistant (armed+headless+high_cts types), 5 A2-counterfeitable (low-signal types). Top A2 protective features: headless_involved (+0.126), high_cts (+0.107), armed (+0.092). Counterfeiting is selective, not universal	2	B, virtual apparatus, morphology, closure packet, counterfeiting, C1639, C1644
 C1646	Apparatus response landscape: LANDSCAPE_THREE_POLE. 25% STABLE_AMPLIFIER (12 A3 + 6 A1 + 1 A2), 63% THRESHOLD_DEPENDENT (24 A3 + 15 A1 + 9 A2), 12% FORGIVING_RECIRCULATOR (8 A2 + 1 A3). Classification partially cross-cuts profile (cross-cut=0.25). NOTE: classes are descriptive convenience overlays, not ontological species	2	B, virtual apparatus, landscape, folio classification, continuous, C1639, C1640
+C1647	ACS configuration: CONFIGURATION_ACS_VALIDATED. Signature offset table covers 86.6% of events, CTS-ACS Spearman rho=0.8045 (correlated but non-redundant), RESISTANT mean ACS=0.6311 vs COUNTERFEITABLE=0.2241, ACS discrimination gap (0.2704) > CTS gap (0.1012). Empirical thresholds differ between profiles (A1=0.116, A2=0.324, A3=0.154)	2	B, apparatus, ACS, configuration, morphology, C1645
+C1648	Two-layer gate: TWO_LAYER_GATE_SYNERGISTIC. Layer 1 (Y-credit gating) delta=0.003021, Layer 2 (cleanliness gain modulation) incremental=0.000538, combined=0.003560. Both layers contribute with synergy. A2 CCS1 reduction=1.6%. Non-A2 degradation within tolerance (A1=1.4%, A3=3.4%)	2	B, apparatus, gate, two_layer, Y_credit, cleanliness, C1643
+C1649	Event-band stratification: STRATIFIED_SELECTIVITY_REJECTED. SSI=0.0 across all 5 gate configurations. No false intelligence reduction achieved. Gate is too permissive: counterfeitable signature auth_mult ranges 0.83-1.00 (all >0.5, none correctly starved). CTS weight (alpha=0.60) in ACS formula dominates, drowning out morphological configuration signal	2	B, apparatus, stratification, event_band, SSI, NEGATIVE, C1645, C1647
+C1650	Landscape shift: LANDSCAPE_POLE_AGGRAVATED. A2 FORGIVING unchanged (8→8). Total FORGIVING increased by 1 (9→10, one new A1/A3 folio). Gate produces uniform advantage reduction, not surgical selectivity. Descriptive landscape classification is too sensitive to small advantage changes in borderline folios	2	B, apparatus, landscape, pole_reduction, NEGATIVE, C1646, C1647
+C1651	Tiered classification: CLASSIFICATION_PARTIAL. 6-class tiered classifier (AUTH_RESISTANT through AUTH_AMBIGUOUS) covers 2323 lines, all 6 classes populated, AUTH_AMBIGUOUS only 5.4%. M1 signature agreement 76% (below 90% target) due to armed/unarmed proxy differences vs Phase 574. Class-level agreement higher	2	B, apparatus, classification, tiered_classifier, closure
+C1652	Regime admission selectivity: ADMISSION_SELECTIVE. Best config REGIME_AMB_PESSIMISTIC SSI=63.5. REGIME_GATED A2 delta_adv=0.0605 > CREDIT_ONLY=0.0561, proving regime admission (gating R1-R5) outperforms credit-only (gating Y). Architecture robust: 4/4 regime configs beat credit-only control. Decisive test: gating Layer 2 (closure regime admission) works where Layer 3 (Y-credit, Phase 575) failed	2	B, apparatus, regime_admission, gate, SSI, decisive, POSITIVE, C1649, C1643
+C1653	Event-band discrimination: DISCRIMINATION_PARTIAL. TP=4/5 CF signatures suppressed, TN=4/4 RESISTANT preserved, FP=0. Strong-band DYE preserved 58.7% (target 90%). Weak CF null suppression 71.4%. Gate correctly discriminates CF from RESISTANT at signature level but reduces strong-band DYE because some STRONG events land on non-RESISTANT lines (AUTH_PROTECTIVE, AUTH_THRESHOLD)	2	B, apparatus, discrimination, event_band, confusion_matrix, C1645
+C1654	Landscape + CCS1: LANDSCAPE_STABLE. A2 FORGIVING pole unchanged (8→8) despite 66.2% CCS1 reduction. No new A1/A3 FORGIVING. DYE improvement does not translate to classification shifts. A2 null wins reduced 7→2. Landscape classification may be too insensitive to capture the gate's discriminative improvement	2	B, apparatus, landscape, CCS1, pole_reduction, C1646
+C1655	Authenticity strength coverage: COVERAGE_PARTIAL. 2323 lines receive strength bands, all 3 bands populated (STRONG=460, MED=1729, WEAK=134). 4 structural zeros documented (AUTH_THRESHOLD+WEAK/MED, AUTH_PROTECTIVE+WEAK, AUTH_PRONE+WEAK). Surrogate agreement with Phase 574 event bands only 21.6%. Signal alignment changes: 1782 lines changed opaque, 572 changed armed	2	B, apparatus, strength, coverage, closure
+C1656	Strong-band rescue: RESCUE_REJECTED. Best config=NO_STRENGTH (=P576 AMB_PESSIMISTIC). Strong preserved=69.1% (<80% target). Weak guardrail=SAFE (null wins not increased). A2 delta=0.0635 (matches P576). STRENGTH_RESCUE achieves 76.8% strong but A2 delta drops to 0.0475. The strength dimension does not improve performance	2	B, apparatus, rescue, strength, decisive, NEGATIVE, C1653, C1652
+C1657	Configuration robustness: SPECIFIC. 0/3 strength configs beat NO_STRENGTH. 3/3 beat CREDIT_ONLY_4D. Architecture not robust for the strength dimension — result is config-specific (only NO_STRENGTH works). Per-config SSI: NO_STRENGTH=86.5, RESCUE=92.4, CAUTIOUS=77.8, AMB_ONLY=86.8, CREDIT_ONLY_4D=93.5	2	B, apparatus, robustness, configuration, closure
+C1658	Landscape migration: MIGRATION_ABSENT. A2 FORGIVING pole unchanged (8→8). 0 migrating folios. No new A1/A3 FORGIVING. Pole reduction 0.0%. No regression. Landscape identical to Phase 576	2	B, apparatus, landscape, migration, closure
+C1659	Event-local feature coverage: COVERAGE_VALIDATED. 463 events classified into 4 tiers (AUTHENTIC_RESOLVER=128, PARTIAL_RESOLVER=174, NONRESOLVING_COUNTERFEIT=161, INERT_PSEUDO=0). 2323 total lines. burden_frac_resolved range [-3.46, 1.00]. Y_gain NOT used in classification (outcome leakage avoidance)	2	B, apparatus, event_local, coverage, closure
+C1660	Event legitimacy gating: EVENT_GATING_REJECTED. Best config=LINE_CLASS_CONTROL (Phase 576 AMB_PESSIMISTIC). EVENT_CLASS_FULL A2 delta=-0.0185 (vs LCC +0.0635). All event configs produce negative A2 delta. Null wins: ECF 7→8 vs LCC 7→2. Event-class gating strictly worse than morphological gating	2	B, apparatus, event_gating, decisive, NEGATIVE, C1652, C1656
+C1661	Burden resolution discriminator: DISCRIMINATOR_WEAK. AUTHENTIC mean DYE_adv=0.119 > COUNTERFEIT=0.098 (direction OK). Cohen's d=0.267 (<0.3 threshold). COUNTERFEIT has 90.1% positive DYE rate — burden non-resolution does NOT mean lack of M1 advantage. Resolution coherence: AUTH 68.8% vs CF 7.5% (stark but doesn't predict DYE)	2	B, apparatus, burden_resolution, discriminator, closure
+C1662	Landscape migration: MIGRATION_ABSENT. A2 FORGIVING pole unchanged (8→8). 0 migrating folios. No regression. Landscape identical to Phase 576/577	2	B, apparatus, landscape, migration, closure
+C1663	Pole coherence: GRADIENT_TAIL. LOO nearest-centroid accuracy=33.3% (INSEPARABLE). 0/5 significant F-axes, 2/5 significant ablation channels. Within-forgiving cosine similarity=0.919, between-group=0.891. Lobe tightness=TIGHT. The 8 are the tail of A2's continuous gradient, not a distinct subfamily	2	B, apparatus, A2_forgiving, coherence, closure
+C1664	Channel concentration: CHANNEL_CONCENTRATED. 8/8 folios have >60% share in single recovery channel. NO_R1 dominates 6/8 (f39v,f40r,f50v,f55v,f85r2,f95r2). NO_R4 dominates 2/8 (f86v5,f86v6). Pre-gate and post-gate dominant channels identical -- regime admission gating did not alter residual conversion mechanism	2	B, apparatus, A2_forgiving, channel, sub_ablation, closure
+C1665	Opportunity confound: OPPORTUNITY_NEUTRAL. Event count R-sq=0.0001 on CCS1 (no explanatory power). Forgiving CTS=0.200 vs passing=0.350. Grammar bands: forgiving 80% WEAK vs passing 48.5%. E_armed: 6.7% vs 39.4%. Weaker closure events are intrinsic folio properties, not sampling artifacts	2	B, apparatus, A2_forgiving, opportunity, confound, closure
+C1666	Structural endpoint: MIXED_BOUNDARY_STRATUM. F1xF2 grid (144pts/folio) + conditional 3rd-axis (F3/F5). 4 STRUCTURAL_ENDPOINT (f39v,f55v,f86v5,f95r2): no passing config. 4 PARAMETER_ACHIEVABLE (f40r,f50v,f85r2,f86v6): pass with displacement>=0.5. 0 PARAMETER_UNDERFIT. All best points at grid extreme (F1=1.6,F2=0.5). 7488 total runs	2	B, apparatus, A2_forgiving, endpoint, DECISIVE, retuning, closure
 
 ---
 
@@ -1893,7 +1913,7 @@ C1646	Apparatus response landscape: LANDSCAPE_THREE_POLE. 25% STABLE_AMPLIFIER (
 
 # FIT_TABLE.txt - Programmatic Fit Index
 # WARNING: No entry in this file constrains the model.
-# Generated: 2026-03-10
+# Generated: 2026-03-11
 # Total: 75 fits
 # Format: ID	FIT	TIER	SCOPE	RESULT	SUPPORTS	FILE
 

@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1662 validated constraints | **Version:** 5.51 | **Date:** 2026-03-11
+**Total:** 1666 validated constraints | **Version:** 5.52 | **Date:** 2026-03-11
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5846,7 +5846,24 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 | 1661 | Burden resolution discriminator: DISCRIMINATOR_WEAK. AUTHENTIC mean DYE_adv=0.119 > COUNTERFEIT=0.098 (direction OK). Cohen's d=0.267 (<0.3 threshold). COUNTERFEIT has 90.1% positive DYE rate — burden non-resolution does NOT mean lack of M1 advantage. Resolution coherence: AUTH 68.8% vs CF 7.5% (stark but doesn't predict DYE) | 2 | B, apparatus, burden_resolution, discriminator, closure | AUTH_adv=0.119. CF_adv=0.098. d=0.267. CF_pos=90.1%. |
 | 1662 | Landscape migration: MIGRATION_ABSENT. A2 FORGIVING pole unchanged (8→8). 0 migrating folios. No regression. Landscape identical to Phase 576/577 | 2 | B, apparatus, landscape, migration, closure | FR: 8→8. Migrating=0. Red=0.0%. |
 
-**Phase 578 findings (Event-Local Closure Adjudicator, REJECTED — event-class gating worse than morphological gating):**
+### Phase 579: Forgiving Pole Residual Audit (C1663-C1666)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|---|-----------|------|------|---------|
+| 1663 | Pole coherence: GRADIENT_TAIL. LOO nearest-centroid accuracy=33.3% (INSEPARABLE). 0/5 significant F-axes, 2/5 significant ablation channels (NO_CLOSE_RECOVERY p=0.0004, NO_CONTAINMENT p=0.0005). Within-forgiving cosine similarity=0.919, between-group=0.891. Lobe tightness=TIGHT. The 8 are the tail of A2's continuous gradient, not a distinct subfamily | 2 | B, apparatus, A2_forgiving, coherence, closure | LOO=33.3%. Sig_F=0/5. Sig_abl=2/5. Sim=0.919. |
+| 1664 | Channel concentration: CHANNEL_CONCENTRATED. 8/8 folios have >60% share in single recovery channel. NO_R1 dominates 6/8 (f39v,f40r,f50v,f55v,f85r2,f95r2). NO_R4 dominates 2/8 (f86v5,f86v6). Pre-gate and post-gate dominant channels identical -- regime admission gating did not alter residual conversion mechanism | 2 | B, apparatus, A2_forgiving, channel, sub_ablation, closure | Concentrated=8/8. R1=6/8. R4=2/8. Gate_change=0. |
+| 1665 | Opportunity confound: OPPORTUNITY_NEUTRAL. Event count R-sq=0.0001 on CCS1 (no explanatory power). Forgiving CTS=0.200 vs passing=0.350 (p=0.021). Grammar bands: forgiving 80% WEAK vs passing 48.5%. E_armed: 6.7% vs 39.4%. Weaker closure events are intrinsic folio properties, not sampling artifacts | 2 | B, apparatus, A2_forgiving, opportunity, confound, closure | R_sq=0.0001. CTS_fg=0.200. CTS_pa=0.350. |
+| 1666 | Structural endpoint: MIXED_BOUNDARY_STRATUM. F1xF2 grid (144pts/folio) + conditional 3rd-axis (F3/F5). 4 STRUCTURAL_ENDPOINT (f39v,f55v,f86v5,f95r2): no passing config. 4 PARAMETER_ACHIEVABLE (f40r,f50v,f85r2,f86v6): pass with displacement>=0.5. 0 PARAMETER_UNDERFIT. All best points at grid extreme (F1=1.6,F2=0.5). 7488 total runs | 2 | B, apparatus, A2_forgiving, endpoint, DECISIVE, retuning, closure | SE=4. PA=4. PU=0. Runs=7488. |
+
+**Phase 579 findings (Forgiving Pole Residual Audit, MIXED_BOUNDARY_STRATUM -- 4 structural endpoints, 4 parameter-achievable):**
+- Coherence (C1663 GRADIENT_TAIL): The 8 form a tight lobe in feature space but LOO accuracy only 33.3% -- completely inseparable from passing A2. They are the tail of A2's continuous gradient (C1641), not a distinct subfamily. 0/5 F-axes significant, 2/5 ablation channels significant (both close-recovery-related).
+- Channel (C1664 CHANNEL_CONCENTRATED): R1 (per-SV CLOSE drawdown) dominates 6/8, R4 (quality-conditioned Y accumulation) dominates 2/8. Pre-gate = post-gate -- the regime admission gate from Phase 576 did not change which recovery channel drives residual forgivingness. The residual conversion pathway is the same one the gate cannot reach.
+- Opportunity (C1665 OPPORTUNITY_NEUTRAL): Event count has zero explanatory power (R-sq=0.0001). Forgiving folios have structurally weaker closure events: lower CTS, higher WEAK grammar fraction, far less E_armed. These are intrinsic folio properties that cause forgivingness, not sampling confounds that explain it away.
+- Endpoint (C1666 MIXED_BOUNDARY_STRATUM): The decisive grid search finds NO folios with displacement < 0.3 (zero PARAMETER_UNDERFIT). 4 folios pass at extreme F-params (displacement 0.75-1.17), classified as PARAMETER_ACHIEVABLE. 4 folios cannot pass at any grid point even with 3rd-axis extension, classified as STRUCTURAL_ENDPOINT. The boundary between forgiving and passing A2 is a gradient with some folios genuinely unreachable by F-axis retuning.
+
+---
+
+**Phase 578 findings (Event-Local Closure Adjudicator, REJECTED -- event-class gating worse than morphological gating):**
 - Decisive test fails (C1660): EVENT_CLASS_FULL A2 delta=-0.0185 vs LINE_CLASS_CONTROL +0.0635. All event-class configs produce negative A2 delta advantage, increasing null wins. Morphological classification (Phase 576) strictly outperforms event-level execution classification.
 - Root cause — COUNTERFEIT events have genuine positive DYE: NONRESOLVING_COUNTERFEIT mean DYE_adv=0.098, 90.1% positive rate. Suppressing burden-non-resolving events reduces M1 DYE because these events still have genuine M1 advantage from other mechanisms (CTS-mediated Y transfer).
 - Root cause — M4f null inflation: Event classes only cover CLOSE lines (463/2323=20%). Under M4f, non-CLOSE positions get full admission (NON_CLOSE→(1.0,1.0)), inflating null DYE. Phase 576 morphological classes cover 100% of lines, suppressing null events at counterfeitable positions.
