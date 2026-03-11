@@ -1,0 +1,370 @@
+{
+  "metadata": {
+    "phase": "581",
+    "script": "t3_hazard_atom_position.py",
+    "n_tokens": 23074
+  },
+  "three_way_enrichment": {
+    "HIGH_a_SPEC": 2.816,
+    "HIGH_a_WORK": 4.0,
+    "HIGH_a_CLOSURE": 4.648,
+    "HIGH_e_SPEC": 0.0,
+    "HIGH_e_WORK": 0.0,
+    "HIGH_e_CLOSURE": 0.0,
+    "HIGH_k_SPEC": 0.0,
+    "HIGH_k_WORK": 0.0,
+    "HIGH_k_CLOSURE": 0.0,
+    "HIGH_o_SPEC": 3.183,
+    "HIGH_o_WORK": 2.762,
+    "HIGH_o_CLOSURE": 2.859,
+    "HIGH_t_SPEC": 0.0,
+    "HIGH_t_WORK": 0.0,
+    "HIGH_t_CLOSURE": 0.0,
+    "HIGH_headless_SPEC": 0.315,
+    "HIGH_headless_WORK": 0.544,
+    "HIGH_headless_CLOSURE": 0.656,
+    "IMMUNE_a_SPEC": 0.0,
+    "IMMUNE_a_WORK": 0.0,
+    "IMMUNE_a_CLOSURE": 0.0,
+    "IMMUNE_e_SPEC": 0.0,
+    "IMMUNE_e_WORK": 0.0,
+    "IMMUNE_e_CLOSURE": 0.0,
+    "IMMUNE_k_SPEC": 6.155,
+    "IMMUNE_k_WORK": 8.681,
+    "IMMUNE_k_CLOSURE": 5.848,
+    "IMMUNE_o_SPEC": 0.0,
+    "IMMUNE_o_WORK": 0.0,
+    "IMMUNE_o_CLOSURE": 0.0,
+    "IMMUNE_t_SPEC": 0.0,
+    "IMMUNE_t_WORK": 0.0,
+    "IMMUNE_t_CLOSURE": 0.0,
+    "IMMUNE_headless_SPEC": 0.0,
+    "IMMUNE_headless_WORK": 0.0,
+    "IMMUNE_headless_CLOSURE": 0.0,
+    "LOW_a_SPEC": 0.183,
+    "LOW_a_WORK": 0.294,
+    "LOW_a_CLOSURE": 0.922,
+    "LOW_e_SPEC": 1.233,
+    "LOW_e_WORK": 0.995,
+    "LOW_e_CLOSURE": 0.762,
+    "LOW_k_SPEC": 0.0,
+    "LOW_k_WORK": 0.0,
+    "LOW_k_CLOSURE": 0.0,
+    "LOW_o_SPEC": 0.809,
+    "LOW_o_WORK": 0.916,
+    "LOW_o_CLOSURE": 0.881,
+    "LOW_t_SPEC": 1.29,
+    "LOW_t_WORK": 2.472,
+    "LOW_t_CLOSURE": 2.359,
+    "LOW_headless_SPEC": 1.753,
+    "LOW_headless_WORK": 1.446,
+    "LOW_headless_CLOSURE": 2.076,
+    "ZERO_a_SPEC": 0.0,
+    "ZERO_a_WORK": 0.0,
+    "ZERO_a_CLOSURE": 0.0,
+    "ZERO_e_SPEC": 3.101,
+    "ZERO_e_WORK": 2.879,
+    "ZERO_e_CLOSURE": 1.996,
+    "ZERO_k_SPEC": 0.0,
+    "ZERO_k_WORK": 0.0,
+    "ZERO_k_CLOSURE": 0.0,
+    "ZERO_o_SPEC": 0.0,
+    "ZERO_o_WORK": 0.0,
+    "ZERO_o_CLOSURE": 0.0,
+    "ZERO_t_SPEC": 0.0,
+    "ZERO_t_WORK": 0.0,
+    "ZERO_t_CLOSURE": 0.0,
+    "ZERO_headless_SPEC": 1.092,
+    "ZERO_headless_WORK": 0.541,
+    "ZERO_headless_CLOSURE": 0.506
+  },
+  "zone_specific_pairs": [
+    {
+      "hazard": "HIGH",
+      "head": "a",
+      "zone": "SPEC",
+      "enrichment": 2.816,
+      "count": 390
+    },
+    {
+      "hazard": "HIGH",
+      "head": "a",
+      "zone": "WORK",
+      "enrichment": 4.0,
+      "count": 1382
+    },
+    {
+      "hazard": "HIGH",
+      "head": "a",
+      "zone": "CLOSURE",
+      "enrichment": 4.648,
+      "count": 713
+    },
+    {
+      "hazard": "HIGH",
+      "head": "o",
+      "zone": "SPEC",
+      "enrichment": 3.183,
+      "count": 389
+    },
+    {
+      "hazard": "HIGH",
+      "head": "o",
+      "zone": "WORK",
+      "enrichment": 2.762,
+      "count": 842
+    },
+    {
+      "hazard": "HIGH",
+      "head": "o",
+      "zone": "CLOSURE",
+      "enrichment": 2.859,
+      "count": 387
+    },
+    {
+      "hazard": "IMMUNE",
+      "head": "k",
+      "zone": "SPEC",
+      "enrichment": 6.155,
+      "count": 556
+    },
+    {
+      "hazard": "IMMUNE",
+      "head": "k",
+      "zone": "WORK",
+      "enrichment": 8.681,
+      "count": 1956
+    },
+    {
+      "hazard": "IMMUNE",
+      "head": "k",
+      "zone": "CLOSURE",
+      "enrichment": 5.848,
+      "count": 585
+    },
+    {
+      "hazard": "LOW",
+      "head": "t",
+      "zone": "WORK",
+      "enrichment": 2.472,
+      "count": 564
+    },
+    {
+      "hazard": "LOW",
+      "head": "t",
+      "zone": "CLOSURE",
+      "enrichment": 2.359,
+      "count": 239
+    },
+    {
+      "hazard": "LOW",
+      "head": "headless",
+      "zone": "SPEC",
+      "enrichment": 1.753,
+      "count": 1092
+    },
+    {
+      "hazard": "LOW",
+      "head": "headless",
+      "zone": "CLOSURE",
+      "enrichment": 2.076,
+      "count": 1432
+    },
+    {
+      "hazard": "ZERO",
+      "head": "e",
+      "zone": "SPEC",
+      "enrichment": 3.101,
+      "count": 950
+    },
+    {
+      "hazard": "ZERO",
+      "head": "e",
+      "zone": "WORK",
+      "enrichment": 2.879,
+      "count": 2200
+    },
+    {
+      "hazard": "ZERO",
+      "head": "e",
+      "zone": "CLOSURE",
+      "enrichment": 1.996,
+      "count": 677
+    }
+  ],
+  "n_zone_specific_pairs": 16,
+  "high_frame_profiles": {
+    "a": {
+      "n": 2485,
+      "mean_frac_pos": 0.5524,
+      "quintile_dist": {
+        "0": 390,
+        "1": 408,
+        "2": 477,
+        "3": 497,
+        "4": 713
+      },
+      "quintile_rates": {
+        "0": 0.1569,
+        "1": 0.1642,
+        "2": 0.192,
+        "3": 0.2,
+        "4": 0.2869
+      }
+    },
+    "o": {
+      "n": 1618,
+      "mean_frac_pos": 0.4909,
+      "quintile_dist": {
+        "0": 389,
+        "1": 277,
+        "2": 278,
+        "3": 287,
+        "4": 387
+      },
+      "quintile_rates": {
+        "0": 0.2404,
+        "1": 0.1712,
+        "2": 0.1718,
+        "3": 0.1774,
+        "4": 0.2392
+      }
+    },
+    "headless": {
+      "n": 677,
+      "mean_frac_pos": 0.5815,
+      "quintile_dist": {
+        "0": 89,
+        "1": 102,
+        "2": 145,
+        "3": 136,
+        "4": 205
+      },
+      "quintile_rates": {
+        "0": 0.1315,
+        "1": 0.1507,
+        "2": 0.2142,
+        "3": 0.2009,
+        "4": 0.3028
+      }
+    }
+  },
+  "thermal_cluster_comparison": {
+    "k_vs_t_vs_e": {
+      "k": {
+        "n": 3097,
+        "mean_frac_pos": 0.4835,
+        "zone_fractions": {
+          "SPEC": 0.1795,
+          "WORK": 0.6316,
+          "CLOSURE": 0.1889
+        },
+        "quintile_rates": {
+          "0": 0.1795,
+          "1": 0.238,
+          "2": 0.1995,
+          "3": 0.1941,
+          "4": 0.1889
+        }
+      },
+      "t": {
+        "n": 921,
+        "mean_frac_pos": 0.5455,
+        "zone_fractions": {
+          "SPEC": 0.1281,
+          "WORK": 0.6124,
+          "CLOSURE": 0.2595
+        },
+        "quintile_rates": {
+          "0": 0.1281,
+          "1": 0.1954,
+          "2": 0.2161,
+          "3": 0.2009,
+          "4": 0.2595
+        }
+      },
+      "e": {
+        "n": 6992,
+        "mean_frac_pos": 0.4509,
+        "zone_fractions": {
+          "SPEC": 0.2583,
+          "WORK": 0.5611,
+          "CLOSURE": 0.1806
+        },
+        "quintile_rates": {
+          "0": 0.2583,
+          "1": 0.2002,
+          "2": 0.1782,
+          "3": 0.1826,
+          "4": 0.1806
+        }
+      }
+    },
+    "work_zone_interpretation": "K_LED"
+  },
+  "zero_frame_profiles": {
+    "e->l": {
+      "n": 355,
+      "mean_frac_pos": 0.3683,
+      "spec_fraction": 0.3634,
+      "quintile_rates": {
+        "0": 0.3634,
+        "1": 0.2028,
+        "2": 0.1831,
+        "3": 0.1352,
+        "4": 0.1155
+      }
+    },
+    "e->y": {
+      "n": 3472,
+      "mean_frac_pos": 0.4627,
+      "spec_fraction": 0.2365,
+      "quintile_rates": {
+        "0": 0.2365,
+        "1": 0.2056,
+        "2": 0.1858,
+        "3": 0.1889,
+        "4": 0.1832
+      }
+    },
+    "i->n": {
+      "n": 825,
+      "mean_frac_pos": 0.3992,
+      "spec_fraction": 0.3636,
+      "quintile_rates": {
+        "0": 0.3636,
+        "1": 0.137,
+        "2": 0.1576,
+        "3": 0.1552,
+        "4": 0.1867
+      }
+    }
+  },
+  "interaction_test": {
+    "chi_squared": 337.17,
+    "df": 6,
+    "p_value": 0.0,
+    "standardized_residuals": {
+      "HIGH_SPEC": -5.296,
+      "HIGH_WORK": 0.315,
+      "HIGH_CLOSURE": 4.559,
+      "IMMUNE_SPEC": -4.509,
+      "IMMUNE_WORK": 6.768,
+      "IMMUNE_CLOSURE": -5.873,
+      "LOW_SPEC": 1.014,
+      "LOW_WORK": -4.534,
+      "LOW_CLOSURE": 5.841,
+      "ZERO_SPEC": 7.521,
+      "ZERO_WORK": 0.984,
+      "ZERO_CLOSURE": -8.624
+    }
+  },
+  "C1673": {
+    "verdict": "HAZARD_POSITION_COUPLED",
+    "interaction_chi2": 337.17,
+    "interaction_p": 0.0,
+    "n_zone_specific_pairs": 16,
+    "work_zone_interpretation": "K_LED",
+    "rationale": "Interaction chi2=337.17, p=0.0, 16 zone-specific pairs (>1.5x enrichment)"
+  }
+}

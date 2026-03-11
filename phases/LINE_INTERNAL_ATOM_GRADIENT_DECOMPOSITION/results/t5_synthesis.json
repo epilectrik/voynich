@@ -1,0 +1,47 @@
+{
+  "metadata": {
+    "phase": "581",
+    "script": "t5_synthesis.py",
+    "n_tokens": 23074,
+    "n_lines": 2406
+  },
+  "constraints": {
+    "C1671": {
+      "verdict": "GRADIENT_HETEROGENEOUS",
+      "head_chi2": 659.08,
+      "head_p": 0.0,
+      "term_chi2": 663.31,
+      "term_p": 0.0,
+      "min_head_cosine": 0.929,
+      "rationale": "HEAD chi2=659.08 p=0.0, TERM chi2=663.31 p=0.0, min cosine=0.9290"
+    },
+    "C1672": {
+      "verdict": "CLOSURE_DISTRIBUTED",
+      "head_top2_share": 0.5848,
+      "term_top2_share": 0.8485,
+      "head_gini": 0.4163,
+      "term_gini": 0.7067,
+      "q3q4_head_jsd": 0.011384,
+      "q3q4_term_jsd": 0.015721,
+      "q3q4_vs_q0q1_head_cosine": 0.6272,
+      "q3q4_vs_q2q3_head_cosine": 0.3967,
+      "rationale": "HEAD top2=0.585, TERM top2=0.849, HEAD JSD=0.011384, TERM JSD=0.015721"
+    },
+    "C1673": {
+      "verdict": "HAZARD_POSITION_COUPLED",
+      "interaction_chi2": 337.17,
+      "interaction_p": 0.0,
+      "n_zone_specific_pairs": 16,
+      "work_zone_interpretation": "K_LED",
+      "rationale": "Interaction chi2=337.17, p=0.0, 16 zone-specific pairs (>1.5x enrichment)"
+    },
+    "C1674": {
+      "verdict": "SECTION_MODULATES_GRADIENT",
+      "min_head_corr": 0.7614,
+      "min_term_corr": 0.9653,
+      "q3q4_jsd_ratio": 2.205,
+      "major_low_corr": true,
+      "rationale": "Min HEAD corr=0.7614, min TERM corr=0.9653, Q3Q4 JSD ratio=2.205"
+    }
+  }
+}

@@ -4,6 +4,34 @@
 
 ---
 
+## Version 5.54 (2026-03-11) - Phase 581: Line-Internal Atom Gradient Decomposition
+
+### Summary
+
+Phase 581 decomposes the validated three-zone line architecture (C1425-C1430) at individual atom resolution. 23,074 Currier B tokens across 2,406 lines analyzed for HEAD/TERMINAL/MODIFIER x quintile deployment profiles, Q3->Q4 closure mechanism, hazard x atom x position interaction, and section-conditioned gradients. Pure corpus analysis, no simulation.
+
+### Changes
+
+| Action | Details |
+|--------|---------|
+| **ADDED** | `phases/LINE_INTERNAL_ATOM_GRADIENT_DECOMPOSITION/` — Phase 581 directory with 6 scripts (T0-T5), 5 result files, REPORT_581.md |
+| **ADDED** | C1671: Atom positional gradient structure GRADIENT_HETEROGENEOUS — e/headless most positional, o flat |
+| **ADDED** | C1672: Q3->Q4 atom decomposition CLOSURE_DISTRIBUTED — m-terminal=77% of TERM JSD, HEAD distributed |
+| **ADDED** | C1673: Hazard x atom x position HAZARD_POSITION_COUPLED — chi2=337, 16 zone-specific pairs, k-LED work zone |
+| **ADDED** | C1674: Section-conditioned gradients SECTION_MODULATES_GRADIENT — scaffold preserved, amplitudes modulated |
+| **UPDATED** | INDEX.md — +4 constraints (1674 total), Phase 581 section added |
+| **UPDATED** | CLAUDE.md — Quick reference updated (v5.54, 1674 constraints, 581 phases) |
+
+### Key Findings
+
+- **Gradient heterogeneity (C1671 GRADIENT_HETEROGENEOUS):** HEAD chi2=659 (p<0.001), TERM chi2=663 (p<0.001). Atoms do NOT gradient uniformly: e-HEAD and headless have 12x the gradient magnitude of o-HEAD. Min pairwise cosine=0.929 among HEAD profiles. 5/6 predictions passed (P5 failed: r-terminal not depleted at Q0). Headless internal split significant: d-pseudo-HEAD closure-enriched, i-pseudo-HEAD specification-enriched.
+- **Closure decomposition (C1672 CLOSURE_DISTRIBUTED):** The Q3->Q4 step is overwhelmingly an m-terminal event (77.4% of TERM JSD). HEAD closure is distributed: e-collapse (36%), headless-surge (22%), a-surge (22%). Closure and specification are mechanistically distinct: TERM cosine=0.08 (completely different atoms drive each). Interior transitions confirm C1566 work-zone homogeneity.
+- **Hazard-position coupling (C1673 HAZARD_POSITION_COUPLED):** Interaction chi2=337 with 16 zone-specific pairs. Safety architecture operates through specific atom-position couplings. a-HEAD is intrinsically hazardous everywhere (2.8-4.6x enrichment in all zones). Work-zone safety is k-LED (k 63.2% in WORK vs t 61.2%, e 56.1%). ZERO frames concentrate in SPECIFICATION zone.
+- **Section modulation (C1674 SECTION_MODULATES_GRADIENT):** All sections preserve the three-zone scaffold (TERM correlations all >0.96). But HEAD deployment amplitudes vary: C section HEAD corr=0.76, Q3Q4 JSD varies 2.2x across sections. m-terminal Q4 surge is universal. Matches expert prediction: "same scaffold, different emphases."
+- **Carryover cross-reference:** Position-sensitive atoms are predominantly POSITIVE carryover (50% of top-6), suggesting gradient is driven by deployment choices, not chaining bias.
+
+---
+
 ## Version 5.53 (2026-03-11) - Phase 580: Apparatus Response Manifold Synthesis
 
 ### Summary

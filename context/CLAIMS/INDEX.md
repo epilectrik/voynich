@@ -1,6 +1,6 @@
 # Constraint Index
 
-**Total:** 1670 validated constraints | **Version:** 5.53 | **Date:** 2026-03-11
+**Total:** 1674 validated constraints | **Version:** 5.54 | **Date:** 2026-03-11
 
 > **Architectural Context:** [../MODEL_CONTEXT.md](../MODEL_CONTEXT.md) - Read this FIRST to understand how constraints work
 
@@ -5862,6 +5862,21 @@ No new constraints issued (INSUFFICIENT verdict). P2 PASS + 1/5 PT.
 - Endpoint (C1666 MIXED_BOUNDARY_STRATUM): The decisive grid search finds NO folios with displacement < 0.3 (zero PARAMETER_UNDERFIT). 4 folios pass at extreme F-params (displacement 0.75-1.17), classified as PARAMETER_ACHIEVABLE. 4 folios cannot pass at any grid point even with 3rd-axis extension, classified as STRUCTURAL_ENDPOINT. The boundary between forgiving and passing A2 is a gradient with some folios genuinely unreachable by F-axis retuning.
 
 ---
+
+### Phase 581: Line-Internal Atom Gradient Decomposition (C1671-C1674)
+
+| C# | Claim | Tier | Scope | Key Metrics |
+|----|-------|------|-------|-------------|
+| 1671 | Atom positional gradient structure: GRADIENT_HETEROGENEOUS. HEAD and TERMINAL atoms gradient heterogeneously across quintiles — some atoms are sharply position-bound, others nearly flat. e/headless most position-sensitive, o nearly position-neutral | 2 | B, line, atom, position, gradient, HEAD, TERMINAL | HEAD chi2=659 p<0.001. TERM chi2=663 p<0.001. min_cosine=0.929. 5/6 predictions passed. |
+| 1672 | Q3->Q4 atom decomposition: CLOSURE_DISTRIBUTED. Closure step is TERMINAL-concentrated (m-terminal alone = 77% of TERM JSD) but HEAD-distributed (e-collapse + headless/a-surge). Closure and specification are mechanistically distinct (TERM cosine=0.08) | 2 | B, line, atom, position, closure, Q3Q4, JSD, m-terminal | HEAD top2=58.5%. TERM top2=84.9%. m alone=77.4%. Q3Q4_vs_Q0Q1 TERM cosine=0.084. |
+| 1673 | Hazard x atom x position: HAZARD_POSITION_COUPLED. Safety architecture operates through specific atom-position couplings, not aggregate rates. 16 zone-specific pairs at >1.5x enrichment. Work-zone safety is k-LED (k WORK=63.2% vs t 61.2% vs e 56.1%) | 2 | B, line, atom, position, hazard, zone, safety, k-HEAD | interaction chi2=337 p<0.001. 16 zone-specific pairs. k_WORK=0.632. |
+| 1674 | Section-conditioned atom gradients: SECTION_MODULATES_GRADIENT. Sections preserve the three-zone scaffold but modulate atom deployment amplitudes. C section HEAD corr=0.76 (below 0.80). Q3Q4 JSD ratio across sections=2.2x | 2 | B, line, atom, position, section, gradient, modulation | C_HEAD_corr=0.761. Q3Q4_ratio=2.205. All TERM corr>0.96. |
+
+**Phase 581 findings (Line-Internal Atom Gradient Decomposition, GRADIENT_HETEROGENEOUS/CLOSURE_DISTRIBUTED/HAZARD_POSITION_COUPLED/SECTION_MODULATES_GRADIENT):**
+- Gradient heterogeneity (C1671): HEAD chi2=659 (df=20), TERMINAL chi2=663 (df=24), both p<0.001. Min pairwise cosine among HEAD quintile profiles = 0.929 (below 0.95 but above 0.90). e-HEAD and headless are the most position-sensitive (gradient magnitude 0.168, 0.170); o-HEAD is nearly flat (0.014). For terminals, bare and m are most positional, n is least. 5/6 structural predictions passed. P5 failed: r-terminal is NOT depleted at Q0 (enrichment 1.044 not <0.85). Headless internal split significant (chi2=73.7): d-pseudo-HEAD enriched at Q4, i-pseudo-HEAD enriched at Q0.
+- Closure decomposition (C1672): Q3->Q4 TERM JSD=0.0157, HEAD JSD=0.0114. For TERMINAL: m-terminal alone contributes 77.4% of JSD (0.0122/0.0157), making closure overwhelmingly an m-terminal event. HEAD closure is more distributed: e-collapse (36.0%), headless-surge (22.4%), a-surge (22.5%). Cross-transition cosines prove closure is mechanistically unique: Q3Q4 vs Q0Q1 TERM cosine=0.084 (totally different atoms), HEAD cosine=0.627 (partly overlapping with specification). Interior transitions are near-zero JSD (Q2Q3 HEAD=0.0004, confirming C1566 work-zone homogeneity).
+- Hazard-position coupling (C1673): Interaction chi2=337 (df=6, p<0.001). 16 HEAD x hazard x zone enrichment pairs above 1.5x. HIGH hazard enriched in a-HEAD across ALL zones (SPEC 2.8x, WORK 4.0x, CLOSURE 4.6x) — a-HEAD is intrinsically hazardous regardless of position. k-LED work-zone: k-IMMUNE tokens concentrate in WORK zone (63.2%), more than t (61.2%) or e (56.1%). ZERO frames (e->y, e->l, i->n) show SPEC enrichment (e->l 0.363, i->n 0.364).
+- Section modulation (C1674): All 5 qualifying sections (S, B, H, C, T) preserve the three-zone scaffold (TERM correlations all >0.96). But HEAD profiles vary: C section HEAD corr=0.76 (below 0.80), Q3Q4 HEAD JSD varies 2.2x across sections (C=0.024 vs B=0.011). m-terminal Q4 surge is universal across all sections (range 0.014-0.059). This matches expert prediction: "same scaffold, different emphases."
 
 ### Phase 580: Apparatus Response Manifold Synthesis (C1667-C1670)
 

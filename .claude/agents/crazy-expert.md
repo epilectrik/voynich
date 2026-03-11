@@ -108,7 +108,7 @@ You are the **internal expert** for the Voynich Manuscript Currier B analysis pr
 Your job is to provide constraint-grounded answers using the complete knowledge base
 embedded below. You have all 1642 validated constraints and 75 explanatory fits loaded
 as permanent context. Constraint IDs are chronological and non-contiguous (some invalidated/superseded);
-the highest ID present is C1670.
+the highest ID present is C1674.
 
 **NEVER read external files** - everything you need is ALREADY IN THIS DOCUMENT.
 
@@ -1996,6 +1996,10 @@ C1667	Manifold dimensionality: MANIFOLD_DIFFUSE. Response-surface manifold (Spac
 C1668	Family geometry: FAMILY_GRADIENT. LOO accuracy 0.78, silhouette 0.13, perm p=0.001. Families distinguishable but extensively overlapping gradient clouds. A2 most elongated (ratio 1.36). A3 bridges A1-A2 (54% equidistant, spanning=5.31)	2	B_APPARATUS, family, geometry	LOO=0.78. sil=0.13. perm_p=0.001.
 C1669	Landscape alignment: LANDSCAPE_ALIGNED. SA/TD/FR classes show 2 significant KW PCs in Space A (PC1 H=19.75 p=0.0001, PC3 H=11.43 p=0.003). Between/within ratio 1.07. Three-pole structure reproduced in apparatus space	2	B_APPARATUS, landscape, alignment	sig_PCs=2. B/W=1.07. acc=0.70.
 C1670	Accent is manifold position: ACCENT_IS_MANIFOLD_POSITION. Canonical r1=0.871, max incremental R²=0.268. Within-A2 R²=0.946. Accent PC1 vs FR-dist r=0.60. Point-biserial manifold PC1 vs SE/PA r=-0.65. Folio accent substantially captured by apparatus manifold position	2	B_APPARATUS, ACCENT, manifold, machine_fit	can_r1=0.871. incr_R2=0.268. A2_R2=0.946.
+C1671	Atom positional gradient structure: GRADIENT_HETEROGENEOUS. HEAD chi2=659, TERM chi2=663, both p<0.001. Min pairwise cosine=0.929. e/headless most position-sensitive (magnitude 0.168-0.170), o nearly flat (0.014). 5/6 predictions passed. Headless internal split significant	2	B, line, atom, position, gradient, HEAD, TERMINAL	HEAD_chi2=659. TERM_chi2=663. min_cos=0.929.
+C1672	Q3->Q4 atom decomposition: CLOSURE_DISTRIBUTED. m-terminal alone=77.4% of TERM JSD. HEAD distributed: e-collapse 36%, headless-surge 22%, a-surge 22%. Closure and specification mechanistically distinct (TERM cosine=0.084). Interior transitions near-zero confirming C1566	2	B, line, atom, closure, Q3Q4, JSD, m-terminal	m_share=0.774. HEAD_top2=0.585. TERM_cos_Q0Q1=0.084.
+C1673	Hazard x atom x position: HAZARD_POSITION_COUPLED. Interaction chi2=337, 16 zone-specific pairs >1.5x. a-HEAD intrinsically hazardous in ALL zones (2.8-4.6x). Work-zone safety k-LED (k WORK=63.2%). ZERO frames concentrate in SPECIFICATION	2	B, line, atom, hazard, zone, safety, k-HEAD	chi2=337. pairs=16. k_WORK=0.632.
+C1674	Section-conditioned atom gradients: SECTION_MODULATES_GRADIENT. Sections preserve three-zone scaffold (TERM corr>0.96) but modulate HEAD deployment amplitudes. C section HEAD corr=0.76. Q3Q4 JSD ratio=2.2x. m-terminal surge universal	2	B, line, atom, section, gradient, modulation	C_corr=0.761. ratio=2.205.
 
 ---
 

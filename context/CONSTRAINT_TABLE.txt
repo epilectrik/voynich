@@ -1,4 +1,4 @@
-CONSTRAINT_REFERENCE v2.6 | 1481 constraints | 2026-03-11
+CONSTRAINT_REFERENCE v2.6 | 1485 constraints | 2026-03-11
 TIER: 0=frozen 1=falsified 2=established 3=speculative 4=exploratory
 SCOPE: A=CurrierA B=CurrierB AZC=diagrams HT=HumanTrack GLOBAL=cross-system
 LOCATION: ->=individual_file in:=grouped_registry
@@ -1485,3 +1485,7 @@ C1667	Response-surface manifold dimensionality: MANIFOLD_DIFFUSE. Space A (11 ap
 C1668	Family geometry in manifold: FAMILY_GRADIENT. LOO accuracy 0.78, silhouette 0.13. Families distinguishable but extensively overlapping. A2 most elongated (ratio 1.36). A3 bridges A1-A2 (54% equidistant)	2	B_APPARATUS	LOO=0.78. sil=0.13. perm_p=0.001.
 C1669	Landscape alignment: LANDSCAPE_ALIGNED. SA/TD/FR classes show 2 significant KW PCs in Space A with between/within ratio 1.07. Three-pole structure reproduced in apparatus space	2	B_APPARATUS	sig_PCs=2. B/W=1.07. acc=0.70.
 C1670	Accent is manifold position: ACCENT_IS_MANIFOLD_POSITION. Canonical r1=0.871, max incremental R²=0.268. Folio accent is substantially captured by apparatus manifold position. Within-A2 R²=0.946	2	B_APPARATUS, ACCENT	can_r1=0.871. incr_R2=0.268.
+C1671	Atom positional gradient structure: GRADIENT_HETEROGENEOUS. HEAD and TERMINAL atoms gradient heterogeneously across quintiles — some atoms are sharply position-bound, others nearly flat. e/headless most position-sensitive, o nearly position-neutral	2	B, line, atom, position, gradient, HEAD, TERMINAL	HEAD chi2=659 p<0.001. TERM chi2=663 p<0.001. min_cosine=0.929. 5/6 predictions passed.
+C1672	Q3->Q4 atom decomposition: CLOSURE_DISTRIBUTED. Closure step is TERMINAL-concentrated (m-terminal alone = 77% of TERM JSD) but HEAD-distributed (e-collapse + headless/a-surge). Closure and specification are mechanistically distinct (TERM cosine=0.08)	2	B, line, atom, position, closure, Q3Q4, JSD, m-terminal	HEAD top2=58.5%. TERM top2=84.9%. m alone=77.4%. Q3Q4_vs_Q0Q1 TERM cosine=0.084.
+C1673	Hazard x atom x position: HAZARD_POSITION_COUPLED. Safety architecture operates through specific atom-position couplings, not aggregate rates. 16 zone-specific pairs at >1.5x enrichment. Work-zone safety is k-LED (k WORK=63.2% vs t 61.2% vs e 56.1%)	2	B, line, atom, position, hazard, zone, safety, k-HEAD	interaction chi2=337 p<0.001. 16 zone-specific pairs. k_WORK=0.632.
+C1674	Section-conditioned atom gradients: SECTION_MODULATES_GRADIENT. Sections preserve the three-zone scaffold but modulate atom deployment amplitudes. C section HEAD corr=0.76 (below 0.80). Q3Q4 JSD ratio across sections=2.2x	2	B, line, atom, position, section, gradient, modulation	C_HEAD_corr=0.761. Q3Q4_ratio=2.205. All TERM corr>0.96.
